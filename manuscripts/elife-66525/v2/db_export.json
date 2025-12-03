@@ -1,0 +1,1675 @@
+{
+  "submission": {
+    "id": "dfc3db96-ec57-44e6-be73-271f4c8c6d56",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:04:20.900210Z",
+    "updated_at": "2025-12-03T07:04:20.900210Z"
+  },
+  "content": [
+    {
+      "id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "submission_id": "dfc3db96-ec57-44e6-be73-271f4c8c6d56",
+      "content_type": "manuscript",
+      "content_text": "# Parallel evolution between genomic segments of seasonal human influenza viruses reveals RNA-RNA relationships\n\n## Authors\n\n- Jennifer E Jones<sup>1</sup> ([ORCID: 0000-0002-9970-1063](https://orcid.org/0000-0002-9970-1063))\n- Valerie Le Sage<sup>1</sup>\n- Gabriella H Padovani<sup>1</sup>\n- Michael Calderon<sup>4</sup>\n- Erik S Wright<sup>2</sup> ([ORCID: 0000-0002-1457-4019](https://orcid.org/0000-0002-1457-4019)) \u2020\n- Seema S Lakdawala<sup>1</sup> ([ORCID: 0000-0002-7679-2150](https://orcid.org/0000-0002-7679-2150)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology & Molecular Genetics, University of Pittsburgh Pittsburgh United States\n2. Center for Evolutionary Biology and Medicine, University of Pittsburgh Pittsburgh United States\n3. Center for Vaccine Research, University of Pittsburgh School of Medicine Pittsburgh United States\n4. Department of Cell Biology, Center for Biologic Imaging, University of Pittsburgh Pittsburgh United States\n5. Department of Biomedical Informatics, University of Pittsburgh Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe influenza A virus (IAV) genome consists of eight negative-sense viral RNA (vRNA) segments that are selectively assembled into progeny virus particles through RNA-RNA interactions. To explore putative intersegmental RNA-RNA relationships, we quantified similarity between phylogenetic trees comprising each vRNA segment from seasonal human IAV. Intersegmental tree similarity differed between subtype and lineage. While intersegmental relationships were largely conserved over time in H3N2 viruses, they diverged in H1N1 strains isolated before and after the 2009 pandemic. Surprisingly, intersegmental relationships were not driven solely by protein sequence, suggesting that IAV evolution could also be driven by RNA-RNA interactions. Finally, we used confocal microscopy to determine that colocalization of highly coevolved vRNA segments is enriched over other assembly intermediates at the nuclear periphery during productive viral infection. This study illustrates how putative RNA interactions underlying selective assembly of IAV can be interrogated with phylogenetics.\n\n## Introduction\n\nInordinately high genetic variation is a hallmark of RNA viruses. The rapid evolution underlying this variation can occur as a result of mutation, recombination, or reassortment, with major consequences for human disease (Andino and Domingo, 2015). In the case of influenza virus, these consequences include poor vaccine efficacy rates, immune escape, antiviral resistance, and the emergence of novel strains (Lyons and Lauring, 2018). Within the past century, influenza A virus (IAV) pandemics occurred in 1918 (H1N1), 1957 (H2N2), 1968 (H3N2), and 2009 (H1N1) (Neumann et al., 2009; Paules and Subbarao, 2017; Short et al., 2018). Each of the last three influenza pandemics was attributable to a reassortant strain composed of a novel combination of the eight viral RNA (vRNA) segments of the influenza virus genome (Neumann et al., 2009). Thus, the emergence of pandemic strains is marked by a concomitant alteration in the influenza virus genome.\n\nPublic health measures to limit the impact of influenza virus outbreaks prioritize emerging viruses based on perceived risk factors such as the potential for reassortment between circulating influenza viruses. Reassortment of vRNA segments must occur during selective assembly of all eight genomic segments, which occurs after export of vRNA segments from the nucleus (Lakdawala et al., 2014). Genomic assembly contributes to heterogeneity in progeny viruses and could determine the fitness of reassortant strains after coinfection (Brooke, 2017; Lowen, 2017). Selective assembly is thought to be facilitated by intersegmental RNA-RNA interactions. Each vRNA segment encodes packaging signals that must be compatible for reassortment to occur (Lowen, 2017; Richard et al., 2018). Although much remains unknown about the role of RNA-RNA interactions in genomic assembly, it is evident that disruption of interactions between two vRNA segments can alter interactions with other segments, leading to a model in which hierarchical interactions between vRNA segments ensure selective assembly (Dadonaite et al., 2019; Le Sage et al., 2020; Marsh et al., 2008). Such complexity among vRNA interactions poses a significant hurdle to reassortment (Gavazzi et al., 2013; Noda et al., 2006). It is consequently imperative to identify the evolutionary constraints imposed by intersegmental vRNA interactions, as this may improve risk assessment efforts for emerging influenza viruses.\n\nComplex intersegmental RNA-RNA interactions could be governed by epistasis, the phenomenon by which a mutation in one gene is impacted by the presence or absence of mutations in other genes (Sardi and Gasch, 2018). A number of tools exist to examine the shared evolutionary trajectories resulting from epistatic interactions between genes, yet the current focus surrounds constraints on indirect interactions between proteins that may function together rather than on interactions between viral RNA (Escalera-Zamudio et al., 2020). Previous work with probabilistic models revealed that several mutations in the influenza virus nucleoprotein (NP) that are destabilizing on their own became fixed as a result of counterbalancing compensatory mutations that improve the overall protein stability of NP (Gong et al., 2013). These destabilizing mutations occur within T cell epitopes of NP that may be important for immune escape (Gong et al., 2013). Stabilizing epistasis was similarly instrumental to the emergence of oseltamivir resistance mutations in the influenza neuraminidase (NA) (Bloom et al., 2010). The rise of oseltamivir resistance mutations in NA spurred investigation of shared evolutionary trajectories, or parallel evolution, between NA and hemagglutinin (HA), demonstrating that mutations in HA may have facilitated acquisition of oseltamivir resistance mutations in NA (Jang and Bae, 2018; Kryazhimskiy et al., 2011; Neverov et al., 2015). We propose that phylogenetics could be further employed to investigate epistasis arising from direct RNA-RNA interactions between IAV segments. Therefore, shared evolutionary trajectories, or parallel evolution, between vRNA segments could reveal epistatic constraints on genomic assembly and reassortment.\n\nIn this study, we set out to combine phylogenetics and molecular biology to examine parallel evolution across vRNA segments genome-wide in seasonal human influenza viruses to identify potential epistatic relationships. Unlike previous studies, our objective was to identify relationships between vRNA segments that might play key roles specifically in genomic assembly. To evaluate phylogenetic relationships among vRNA segments, we relied upon the Robinson-Foulds distance (RF), a widely used measure of topological distance between trees (Robinson and Foulds, 1981). This method determines the number of branch partitions that are not shared between two trees (Robinson and Foulds, 1981) and is therefore a quantitative measure of the topological distance between trees. We combined the conventional RF with the clustering information distance (CID), a recently described measure of tree similarity with greater sensitivity for distinguishing between trees (Smith, 2020). Lower RF/CID corresponds with greater tree similarity, with a tree distance of 0 indicating that two trees are topologically equivalent. Our approach relies upon the assumption that tree distance would be inversely correlated with the degree of parallel evolution between genome segments arising from either RNA-RNA or protein-protein interactions. Incompatible polymerase subunits exhibit replication deficiencies and are known restriction factors in reassortment (Li et al., 2008). Accordingly, we would predict that trees built from PB2, PB1, and PA would have high similarity, reflective of a shared evolutionary trajectory. Likewise, mounting evidence from our group and others suggests that direct intermolecular interactions between vRNA segments coordinate selective assembly (Dadonaite et al., 2019; Le Sage et al., 2020). Highly similar trees could therefore also be reflective of direct interactions between vRNA segments that may facilitate selective packaging. To distinguish between the roles of RNA and protein, we further examine tree similarity in viral proteins, choosing gene segments with high gene tree similarity, but not high protein tree similarity, to probe for RNA-RNA interactions. Since genomic assembly occurs in the cytoplasm after nuclear export (Lakdawala et al., 2014), we reasoned that assembly intermediates found in close proximity to the nucleus could serve as scaffolds for genomic assembly and sought to visualize this by confocal microscopy. Therefore, our approach systematically identifies putative epistatic relationships between vRNA segments to elucidate mechanisms of selective vRNA assembly.\n\n## Results\n\n### Tree similarity between vRNA segments is not uniform in H3N2 viruses\n\nH1N1 and H3N2 viruses have cocirculated in the human population since 1977 (Neumann et al., 2009). In order to identify shared evolutionary trajectories between vRNA segments in seasonal human IAV strains over time, we examined parallel evolution between vRNA segments in viruses representative of each subtype from multiple time periods (Table 1). Bracketing H3N2 viruses into two time intervals permitted investigation of conserved vRNA relationships over time in antigenically drifted H3N2 viruses. We took a similar approach with human H1N1 viruses, bracketing instead on the antigenic shift event in 2009 and the emergence of the pandemic swine-origin H1N1 virus in the human population. Comparison of vRNA relationships in pre-pandemic (2000\u20132008) and post-pandemic (2010\u20132018) human H1N1 viruses could reveal distinct vRNA relationships from viruses of two distinct lineages or alternatively, uncover vRNA relationships that remain conserved despite swapping of vRNA segments across multiple host species.\n\n**Table 1.**\n Influenza A virus strain datasets.Human H1N1 or H3N2 virus sequences for which full-length sequences are available (Influenza Research Database). Representative sequences were selected for further analyses by clustering. \u2018Final clusters\u2019 indicates the number of clusters after small clusters were collapsed or omitted.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Subtype</th>\n      <th>Time period</th>\n      <th>Total strains</th>\n      <th>Clusters with &gt;97% identity</th>\n      <th>Final clusters</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">H3N2</td>\n      <td>1995\u20132004</td>\n      <td>1026</td>\n      <td>16</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>2005\u20132014</td>\n      <td>3879</td>\n      <td>17</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">H1N1</td>\n      <td>2000\u20132008</td>\n      <td>821</td>\n      <td>11</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>2010\u20132018</td>\n      <td>4072</td>\n      <td>14</td>\n      <td>9</td>\n    </tr>\n  </tbody>\n</table>\n\nOur approach outlined in Figure 1 examines evolutionary relationships between vRNA segments. We began our investigation with all seasonal human H3N2 viruses for which full-length sequence information was available in the Influenza Research Database (IRD), yielding 1026 H3N2 viruses from 1995 to 2004 and 3879 H3N2 viruses from 2005 to 2014 (Table 1). Reconstructing phylogenetic trees from all available sequences was disadvantageous, as a preliminary analysis of 300 sequences suggested that a great deal of phylogenetic variation could not be statistically supported by bootstrapping (branch support less than 70). This lack of bootstrap support was problematic for our downstream analysis of tree similarity, since topological distance can result from misleading phylogenetic signal when branches are poorly supported. Thus, reliance upon larger, poorly resolved trees would lead to uninterpretable tree distances. To address this, we used a clustering approach to select representative strains that would produce more statistically robust trees. We first concatenated sequences from all strains into full-length genomes from which we built alignments (Figure 1A) and clustered into operational taxonomic units on a neighbor-joining species tree (Figure 1B). Despite the fact that fewer full-length influenza virus genomic sequences were available prior to the 2000s, our approach resulted in a similar number of clusters within a subtype (Table 1), consistent with the notion that increased sequencing has led to more closely related sequences in public databases.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig1-v2.jpg)\n\n**Figure 1.:** (A) Human H3N2 or H1N1 virus sequences were downloaded from the Influenza Research Database and subset into two time periods each: 1995 to 2004 and 2005 to 2014 (H3N2 viruses); 2000 to 2008 and 2010 to 2018 (H1N1 viruses). The H3N2 virus dataset (1995 to 2004) is illustrated here. All eight viral RNA (vRNA) segments from each strain were concatenated into a full-length genome from which alignments were made. (B) A species tree was built clustering strains into operational taxonomic unit with at least 97% sequence identity. Arrowheads denote clusters 1\u201312. Seven replicate strains were randomly selected from each cluster for further analysis. (C) Full-length genomic sequences were partitioned into individual vRNA gene sequence alignments and maximum-likelihood phylogenetic trees were reconstructed from each vRNA gene segment in each replicate. Tree similarity was determined by the Robinson-Foulds distance (RF) and clustering information distance (CID) in each pair of trees. Left, a pair of highly similar trees with a low tree distance plotted in a tanglegram (e.g. back-to-back trees), with intersecting blue lines matching tips. Right, a tanglegram of a pair of dissimilar trees with a high tree distance. Scale bars indicate substitutions per site. (D) Colocalization of vRNA segments exhibiting high and low tree similarity were assessed by fluorescence in situ hybridization (FISH). Cells were infected with viruses representative of those analyzed in (A\u2013C) and fixed and stained with FISH probes specific for vRNA segments of interest. Cells were imaged using confocal microscopy and colocalization between vRNA segments was quantified.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Maximum-likelihood phylogenetic reconstruction of each vRNA segment from H3N2 and H1N1 virus sequences shown in Supplementary files 1-4. Representative trees from replicate 2 for H3N2 viruses from 1995 to 2004 (A), replicate 7 for H3N2 viruses from 2005 to 2014 (B), replicate 6 for H1N1 viruses from 2000 to 2008 (C), and replicate 3 for H1N1 viruses from 2010 to 2018 (D). Sequences are coded by cluster. Bootstrapping was performed with 100 replicates (bootstrap values greater than 70 are shown in red). Scale bars indicate substitutions per site.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Maximum-likelihood phylogenetic reconstruction of full-length H3N2 virus (A\u2013B) and H1N1 virus (C\u2013D) genomic sequences shown in Supplementary files 1-4. Sequences are coded by cluster. The numbers 1\u20137 in bold indicate replicates. Bootstrapping was performed with 1000 replicates (bootstrap values greater than 70 are shown in red). Scale bars indicate substitutions per site.\n\nThe primary objective behind clustering was to minimize variation between trees that was not statistically supported by bootstrapping. The cutoff for sequence identity during clustering of the species tree was therefore an important consideration because it controlled how much unsupported variation remained in our trees. Higher cutoffs (98\u201399% sequence identity) yielded species trees with more clusters containing fewer members while lower cutoffs (95\u201396% sequence identity) contained increasingly fewer clusters with more members grouped in each cluster. We selected a cutoff of 97% sequence identity based on the observation that it produced vRNA trees with an intermediate number of clusters (16\u201317 clusters in each species tree). We selected several high-quality sequences from each cluster to build replicate vRNA trees for comparison (Supplementary files 1 and 2). Using this approach, more than half of all branches were consistently supported in PB2, PB1, and HA trees; however, NS trees remained largely unsupported regardless of the sequence identity cutoff selected. Branch support varied between replicate trees of PA, NP, and NA, with no single replicate yielding consistently high branch support across vRNA trees. Therefore, we analyzed all seven replicate trees for each of the eight vRNA segments, for a total of 56 trees analyzed from each set of H3N2 viruses (Figure 1C, Figure 1\u2014figure supplement 1, and Supplementary files 1 and 2).\n\nTree similarity among different vRNA segments is expected to be highest when there are strong epistatic interactions between encoded protein and/or RNA complexes (Kryazhimskiy et al., 2011; Neverov et al., 2015; Nshogozabahizi et al., 2017). We expected to observe such epistasis between protein subunits of the heterotrimeric polymerase complex such as the PB1 and PA segments (Fodor, 2013), whereas we did not expect to observe epistasis between PB1 and HA, which do not share any known protein function. Therefore, we examined the extent of similarity between the PB1 tree and the PA and HA trees in H3N2 viruses from 2005 to 2014. Trees built from the PB1 and PA segments had low tree distances (RF = 6 and CID = 0.25) (Figure 2A), suggesting that these genes evolve in parallel. PB1 and HA trees from the same set of H3N2 strains had higher tree distances (RF = 14 and CID = 0.44) (Figure 2B), suggesting that parallel evolution between PB1 and HA is weaker than that of PB1 and PA. These data are consistent with known protein interactions between PB1 and PA and suggest that tree similarity can be used to identify direct intermolecular interactions that constrain evolution, leading to converging evolutionary trajectories in the trees. Thus, pairwise tree distances recapitulate anticipated protein-driven parallel evolution between two influenza proteins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig2-v2.jpg)\n\n**Figure 2.:** Seven replicate maximum-likelihood trees were reconstructed for each vRNA gene segment from human H3N2 virus sequences (2005 to 2014) as described in Figure 1. (A\u2013B) Highly similar (PB1 and PA gene segments) (A) or dissimilar (PB1 and HA gene segments) trees (B) from replicate one were plotted as tanglegrams with discrepancies in branch topology highlighted in green. Robinson-Foulds distances (RF) and clustering information distances (CID) are shown above the tanglegram. Intersecting lines map leaves on the left tree to the corresponding leaves on the right. Strains are coded by cluster number; strain identities can be found in Supplementary file 2. Bootstrap values greater than 70 are shown in red. Scale bars indicate substitutions per site. (C) Pairwise RF were calculated between each pair of trees in each replicate. Mean tree distances were visualized in a heatmap. Refer to Figure 2\u2014figure supplement 1 for the standard error of the mean RF of each pair of trees.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The SEM of all pairwise RF was determined for H3N2 viruses from 2005 to 2014 (corresponding to the mean tree distances shown in Figure 2C).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The pairwise CID was calculated between each replicate vRNA tree from human H3N2 viruses from 2005 to 2014. The mean CID (A) and standard error of the mean (SEM) of all pairwise CID (B) were visualized in a heatmap.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) The null distribution of RF in sets of 1000 randomly sampled, unrooted trees with either 8 (gray diamonds, corresponding to the number of tips in tree distance networks), 9 (gray squares, the number of tips in each H1N1 tree), or 12 (black circles, the number of tips in each H3N2 tree) leaf tips was determined. A dashed line demarcates the threshold for the 95% confidence interval. (B\u2013D) The null distributions shown in (A) were log-transformed (B, C) or Yeo-Johnson-transformed (Yeo and Johnson, 2000) (D) and fit to a linear regression model to establish the cutoff for the first five percentiles (shaded region), which was set as the 95% confidence interval cutoff. The distance at which 95% confidence is exceeded is indicated.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Overall viral RNA (vRNA) relationships corresponding to H3N2 viruses from 2005 to 2014 were assessed with UPGMA trees derived from the mean Robinson-Foulds distance (RF) corresponding to Figure 2C (A) or the mean clustering information distance (CID) corresponding to Figure 2\u2014figure supplement 2A (B). Scale bar corresponds to either RF or CID. The point at which edges merge is equivalent to 1/2 RF or 1/2 CID.\n\nGenome-wide inferences of tree similarity can distinguish the relative degree of parallel evolution of all eight genomic segments to each other and capture the strongest overall relationships between segments. To examine the extent of parallel evolution between all vRNA segments, we measured tree distances in all sets of vRNA trees from H3N2 viruses from 2005 to 2014. Figure 2C shows the overall mean tree distances between each pair of vRNA segments as determined by RF (refer to Figure 2\u2014figure supplement 1 for the standard error of the mean, or SEM, between sets of trees). To establish a threshold for significance of tree distances, we determined a 95% confidence interval for RF using a null dataset of randomly generated trees with an equivalent number of leaves (12 in this case, Figure 2\u2014figure supplement 3A,D). Low tree distances rarely occurred by chance, with the vast majority of tree distances being greater than 15 in null trees. By comparison, the mean RF of vRNA trees ranged from 6.5 (PB1 and PA) to 15 (PA and NS). Surprisingly, the PB2 tree shared the highest similarity with the NA tree rather than the PB1 or PA trees, suggesting that the relationship between PB2 and NA may supercede the essential role of the PB2 protein in the polymerase complex. In contrast, the mean RF of the NS trees with most other vRNA trees were 14\u201315, approaching the 95% confidence threshold of 15.3. However, distances between the NS tree and the other vRNA trees were difficult to interpret, owing to a lack of branch support in NS trees (Figure 1\u2014figure supplement 1B). Pairwise intersegmental relationships determined by RF were remarkably reproducible when compared to CID (Figure 2\u2014figure supplement 2). To further visualize relationships between all eight vRNA segments, we assembled networks of the pairwise tree distances (Figure 2\u2014figure supplement 4). These networks reveal robust parallel evolution between PB1, PA, NP, and NA in H3N2 viruses.\n\n### Evolutionary relationships are largely conserved over time within H3N2 viruses\n\nRecent studies have identified a highly plastic and redundant network of interactions between vRNA segments in influenza virus particles produced during productive infection, many of which may be transient (Dadonaite et al., 2019; Le Sage et al., 2020). Based on these observations, it is plausible that vRNA relationships identified using our methods might change over time. To examine whether the shared evolutionary trajectories we observed in H3N2 viruses are conserved, we estimated tree distances between all pairs of vRNA trees in H3N2 viruses from an earlier time period (1995\u20132004) (mean RF: Figure 3A; SEM of RF: Figure 3\u2014figure supplement 1; mean CID: Figure 3\u2014figure supplement 2A; SEM of CID: Figure 3\u2014figure supplement 2B). As was seen in H3N2 viruses from 2005 to 2014, tree distances ranged widely, with the highest tree similarity found between PB1, PA, NP, and NA trees of this time period. Networks constructed from pairwise distances that visualize the overall relatedness of vRNA segments confirm that PB1, PA, NA, and NP share the closest distances overall (Figure 3\u2014figure supplement 3). Statistical differences between RF from each time period were only found for the NS segment (Figure 3C; refer to Supplementary file 6 for exact p-values). However, NS trees had consistently low bootstrap support (Figure 1\u2014figure supplement 1A,B), so these differences may be attributable to insufficient resolution in the underlying trees. Finally, tree distances for H3N2 viruses from 1995 to 2004 were positively correlated with those from 2005 to 2014 (Figure 3B and Figure 3\u2014figure supplement 4). Taken together, we conclude that phylogenetic relationships between vRNA segments in H3N2 viruses are largely conserved across these two time periods.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig3-v2.jpg)\n\n**Figure 3.:** (A) Seven replicate maximum-likelihood trees were reconstructed for each vRNA gene segment from human H3N2 virus sequences (1995 to 2004) as described in Figure 1. Pairwise Robinson-Foulds distances (RF) were calculated between each pair of trees in each replicate. Mean tree distances were visualized in a heatmap. Refer to Figure 3\u2014figure supplement 1 for the standard error of the mean (SEM) of each pair. (B) Mean RF of replicate trees from H3N2 viruses from 1995 to 2004 were plotted against those from 2005 to 2014. The line of best fit was determined by linear regression (solid line). The R2 and p-value are indicated. Error bars indicate the SEM of all replicates. (C) Replicate tree distances were plotted comparing H3N2 viruses from 1995 to 2004 (black) to H3N2 viruses from 2005 to 2014 (turquoise). \u2018Dissimilar\u2019 pairs are grouped where p < 0.05 (Mann-Whitney U test with Benjamini-Hochberg correction; exact p-values reported in Supplementary file 6). Dashed line, 95% confidence interval for tree similarity (determined by a null dataset; refer to Figure 2\u2014figure supplement 3).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The SEM of all pairwise RF was determined for H3N2 viruses from 1995 to 2004 (corresponding to the mean tree distances shown in Figure 3A).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The pairwise CID was calculated between each replicate vRNA tree from human H3N2 viruses from 1995 to 2004. The mean CID (A) and standard error of the mean (SEM) of all pairwise CID (B) were visualized in a heatmap.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Overall viral RNA (vRNA) relationships corresponding to H3N2 viruses from 1995 to 2004 were assessed with UPGMA trees derived from the mean Robinson-Foulds distance (RF) corresponding to Figure 3A (A) or the mean clustering information distance (CID) corresponding to Figure 3\u2014figure supplement 2A (B). Scale bar corresponds to either RF or CID. The point at which edges merge is equivalent to 1/2 RF or 1/2 CID.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Mean CID values of replicate trees from H3N2 viruses from 1995 to 2004 were plotted against those from H3N2 viruses from 2005 to 2014. The line of best fit was determined by linear regression (solid line). The R2 and p-value are indicated. Error bars indicate the SEM of all replicates.\n\n### Evolutionary relationships between vRNA segments are dependent upon subtype and lineage\n\nOur results suggest that vRNA relationships are remarkably consistent across H3N2 viruses from a period spanning two decades. To examine whether our approach captures anticipated changes in vRNA relationships in seasonal human influenza viruses of other subtypes and lineages, we assessed these relationships in H1N1 viruses from 2000 to 2008 and 2010 to 2018. Human H1N1 viruses from these time periods represent distinct lineages before and after the 2009 pandemic. This pandemic was caused by an antigenically shifted H1N1 virus that emerged from reassortment of two swine-origin viruses, the North American triple reassortant swine H1N1 virus and Eurasian swine H1N1 virus (Garten et al., 2009). Therefore, different evolutionary relationships between vRNA segments would be expected for each lineage.\n\nSpecies trees comprising full-length concatenated H1N1 virus genomes from 2000 to 2008 or 2010 to 2018 were constructed and clusters were defined using the same approach described for H3N2 viruses (Figure 1A\u2013B). While this method produced a similar number of clusters for both sets of H1N1 viruses (Table 1), there were fewer clusters than in H3N2 viruses, owing to the higher rate of evolution observed in H3N2 viruses (Bedford et al., 2015). Seven strains were selected from each cluster (Supplementary files 3 and 4) and replicate vRNA trees were built as in Figure 1C, Figure 1\u2014figure supplement 1C,D. Figures 4A and 5A show the mean RF for each pair of vRNA segments in H1N1 viruses from 2000 to 2008 and 2010 to 2018, respectively (SEM: Figure 4\u2014figure supplement 1 and Figure 5\u2014figure supplement 1). These heatmaps suggested that tree distances were very different for H1N1 viruses when compared to H3N2 viruses. Using linear regression, we found that tree distances from H1N1 viruses shared either a modest negative correlation or none at all with H3N2 viruses from either time period (Figure 4B and C, and Figure 5\u2014figure supplement 3). Tree distances determined by CID (2000\u20132008 mean and SEM: Figure 4\u2014figure supplement 2A,B, respectively; 2010\u20132018 mean and SEM: Figure 5\u2014figure supplement 2A,B, respectively) likewise indicated similar trends (Figure 4\u2014figure supplement 3 and Figure 5\u2014figure supplement 4A,B). This is further supported by networks constructed from the pairwise distances for H1N1 viruses as compared to those from H3N2 viruses. The distance networks from H3N2 viruses suggest highest overall tree similarity between PB1, NP, PA, and NA (Figure 2\u2014figure supplement 4, Figure 3\u2014figure supplement 3). In contrast, the networks from pre-pandemic H1N1 viruses indicate highest tree similarity between PB1, NP, M, and NS (Figure 4\u2014figure supplement 4). Networks from post-pandemic H1N1 viruses likewise reflect a different pattern in tree relatedness from that seen in H3N2 virus networks (Figure 5\u2014figure supplement 5). Therefore, our data suggest that parallel evolution between vRNA segments overall have significantly diverged between seasonal human influenza H1N1 and H3N2 viruses from similar time scales.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig4-v2.jpg)\n\n**Figure 4.:** (A) Seven replicate maximum-likelihood trees were reconstructed for each vRNA gene segment from human H1N1 virus sequences from 2000 to 2008 as described in Figure 1. The pairwise Robinson-Foulds distance (RF) between trees was calculated for each set of replicate trees. Mean distances were visualized in a heatmap. Refer to Figure 4\u2014figure supplement 1 for the standard error of the mean (SEM) of each pair. (B\u2013C) Mean RF of replicate trees from H1N1 viruses from 2000 to 2008 were plotted against those from H3N2 viruses from 1995 to 2004 (B) and H3N2 viruses from 2005 to 2014 (C). The line of best fit was determined by linear regression (solid line). The R2 and p-value are indicated. Error bars indicate the SEM of all replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The SEM of all pairwise RF was determined for H1N1 viruses from 2000 to 2008 (corresponding to the mean tree distances from Figure 4A).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The pairwise CID was calculated between each replicate vRNA tree from human H1N1 viruses from 2000 to 2008. The mean CID (A) and standard error of the mean (SEM) of all pairwise CID (B) were visualized in a heatmap.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Mean CID values of replicate trees from H1N1 viruses from 2000 to 2008 were plotted against those from H3N2 viruses from 1995 to 2004 (A), or H3N2 viruses from 2005 to 2014 (B). The line of best fit was determined by linear regression (solid line). The R2 and p-value are indicated. Error bars indicate the standard error of the mean (SEM) of all replicates.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Overall viral RNA (vRNA) relationships corresponding to H1N1 viruses from 2000 to 2008 were assessed with UPGMA trees derived from the mean Robinson-Foulds distance (RF) corresponding to Figure 4A (A) or the mean clustering information distance (CID) corresponding to Figure 4\u2014figure supplement 2A (B). Scale bar corresponds to either RF or CID. The point at which edges merge is equivalent to 1/2 RF or 1/2 CID.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig5-v2.jpg)\n\n**Figure 5.:** (A) Seven replicate maximum-likelihood trees were reconstructed for each vRNA gene segment from human H1N1 virus sequences from 2010 to 2018 as described in Figure 1. The pairwise Robinson-Foulds distance (RF) between trees was calculated for each set of replicate trees. Mean tree distances were visualized in a heatmap. Refer to Figure 5\u2014figure supplement 1 for the standard error of the mean (SEM) of each pair. (B) Mean RF of replicate trees from H1N1 viruses from 2000 to 2008 were plotted against those from 2010 to 2018. The line of best fit was determined by linear regression (solid line). The R2 and p-value are indicated. Error bars indicate the SEM of all replicates. (C) Replicate RF were plotted comparing H1N1 viruses from 2000 to 2008 (black) to H1N1 viruses from 2010 to 2018 (turquoise). \u2018Low similarity\u2019 pairs are grouped where p < 0.05 (Mann-Whitney U test with Benjamini-Hochberg correction; exact p-values reported in Supplementary file 6). Dashed line, 95% confidence interval for tree similarity (determined by a null dataset; refer to Figure 2\u2014figure supplement 3).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The SEM of all pairwise RF was determined for H1N1 viruses from 2010 to 2018 (corresponding to the mean tree distances from Figure 5A).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The pairwise CID was calculated between each replicate vRNA tree from human H1N1 viruses from 2010 to 2018. The mean CID (A) and standard error of the mean (SEM) of all pairwise CID (B) were visualized in a heatmap.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Mean RF of replicate trees from H1N1 viruses from 2010 to 2018 were plotted against those from H3N2 viruses from 1995 to 2004 (A) and H3N2 viruses from 2005 to 2014 (B). The line of best fit was determined by linear regression (solid line). The R2 and p-value are indicated. Error bars indicate the standard error of the mean (SEM) of all replicates.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Mean CID values of replicate trees from H1N1 viruses from 2010 to 2018 were plotted against those from H3N2 viruses from 1995 to 2004 (A), H3N2 viruses from 2005 to 2014 (B), or H1N1 viruses from 2000 to 2008 (C). The line of best fit was determined by linear regression (solid line). The R2 and p-value are indicated. Error bars indicate the standard error of the mean (SEM) of all replicates.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** Overall viral RNA (vRNA) relationships corresponding to H1N1 viruses from 2010 to 2018 were assessed with UPGMA trees derived from the mean Robinson-Foulds distance (RF) corresponding to Figure 5A (A) or the clustering information distance (CID) corresponding to Figure 5\u2014figure supplement 2A (B). Scale bar corresponds to either RF or CID. The point at which edges merge is equivalent to 1/2 RF or 1/2 CID.\n\nHeatmaps comparing tree distances between vRNA pairs further suggested that vRNA relationships are not conserved across H1N1 viruses of different lineages (Figure 4A vs. Figure 5A). Linear regression comparing tree distances between vRNA segments from pre-pandemic and post-pandemic H1N1 viruses confirmed no correlation between these trees (Figure 5B and Figure 5\u2014figure supplement 4C). To examine individual differences between pairs of vRNA trees in H1N1 viruses of different lineages, we plotted RF from pre-pandemic H1N1 viruses alongside RF from post-pandemic H1N1 viruses (Figure 5C; refer to Supplementary file 6 for exact p-values). The 95% confidence interval cutoff for RF corresponding to trees with nine leaves was 8.6 (Figure 2\u2014figure supplement 3C) and is the threshold used for statistical comparison of parallel evolution in vRNA segments from pre-pandemic and post-pandemic H1N1 strains. In stark contrast to the relatively conserved vRNA relationships observed in H3N2 viruses over time, many relationships between vRNA segments were disrupted in post-pandemic H1N1 viruses. Parallel evolution between PB1 and NP observed in pre-pandemic H1N1 viruses (mean RF increased from 1 to 5) was notably displaced by stronger coevolution of PB1 with NA in post-pandemic H1N1 viruses (mean RF decreased from 9 to 3). The M and NS trees shared similar topologies across H1N1 lineages, but each one was significantly more coevolved with the HA and NA trees in post-pandemic viruses. The PB2 trees diverged significantly from the PA trees in favor of greater parallel evolution with the NP and NS trees in post-pandemic H1N1 viruses. Some of these data can be explained by weaker bootstrap support in H1N1 trees, particularly those from H1N1 viruses from 2010 to 2018 (Figure 1\u2014figure supplement 1C,D). However, these data imply that shared evolutionary trajectories have significantly diverged between H1N1 lineages. The genomic segments of the swine-origin 2009 pandemic H1N1 virus were contributed by human, avian, and swine hosts (Garten et al., 2009). Therefore, our data suggest that host origin may impact the evolutionary trajectory of emerging reassortant viruses from different lineages and the resultant relationships between genomic segments of contemporary H1N1 viruses in humans.\n\n### Parallel evolution in H3N2 viruses is not driven solely by protein-coding mutations\n\nAs discussed previously, shared evolutionary trajectories could arise from either protein-protein or RNA-RNA interactions. We have already shown that known protein relationships between PB1 and PA, two members of the polymerase complex, are captured by our approach (Figure 2A). However, the observation that PB2, another member of the polymerase complex, is more coevolved with NA than with either PB1 or PA (Figure 2C) suggests that our method also reveals protein-independent parallel evolution, since these proteins are not known to function together during infection. Using H3N2 viruses from 2005 to 2014, which yielded vRNA trees with the highest overall bootstrap support (Figure 1\u2014figure supplement 1B), we explored the extent to which parallel evolution between vRNA segments is driven by protein-coding mutations. To do so, we converted the vRNA sequence alignments, which are negative-sense, into positive-sense RNA (i.e. coding sense) and translated the coding sequences into amino acid alignments. For the M and NS sequence alignments that encode two splice variants each, the M1/M2 and NS1/NS2 amino acid alignments were both translated. Neighbor-joining trees were reconstructed from the amino acid alignments and the evolutionary relationships between H3N2 proteins were analyzed by RF. We constructed a network from the resultant RF between all pairs of protein trees as was previously done with vRNA trees (Figure 6\u2014figure supplement 1). This network appears distinct from networks built from the corresponding gene (vRNA) trees (Figure 2\u2014figure supplement 4). As might be expected, the greatest degree of parallel evolution lying at the core of this network was between HA and NA, two viral glycoproteins with coordinated functions in attachment, motility, and entry (Bloom et al., 2010; Sakai et al., 2017).\n\nTo compare parallel evolution between influenza proteins to that of the parent vRNA segments, the mean RF from the gene trees were plotted against the mean RF from the protein trees (Figure 6). In the case of the M and NS segments, the mean RF of all protein trees derived from the same gene (i.e. M1/M2 or NS1/NS2) were plotted against the mean RF of the corresponding gene trees. Many vRNA pairs, such as the polymerase subunits PB2 and PB1, lie along the identity line, indicating that protein interactions are more likely to drive parallel evolution in those vRNA segments. Interestingly, HA and NA were the only pair of vRNA segments that lay significantly above the identity line, strongly supporting the observation made by others that epistatic interactions between these proteins constrain their evolution (Jang and Bae, 2018; Kryazhimskiy et al., 2011; Neverov et al., 2015). Of particular interest was that several vRNA segments, such as PB2 and NA (Figure 6, open diamond), lay significantly below the identity line. This could be indicative of either purifying selection or of greater parallel evolution between the vRNA segments than the proteins encoded. While this is not altogether unexpected, considering that the mutation rate of a protein is unlikely to be as high as the mutation rate of the corresponding gene, we would expect conserved RNA interactions to also have this effect. These observations suggest that parallel evolution may identify putative RNA interactions between vRNA segments that could facilitate selective assembly and packaging.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig6-v2.jpg)\n\n**Figure 6.:** H3N2 virus viral RNA (vRNA) gene sequence alignments from 2005 to 2014 were translated into the corresponding amino acid alignments. Neighbor-joining trees were reconstructed from these alignments and the Robinson-Foulds distance (RF) was tabulated for all protein tree pairs. The mean tree distance of each pair of protein trees was plotted against the mean tree distance of the corresponding gene trees. For the M and NS gene segments, which encode multiple protein products, tree distances were calculated for each protein tree individually and the average distances are shown. Error bars indicate the standard error of the mean (SEM) of replicate trees. Dashed horizontal and vertical lines, 95% confidence interval (CI) for tree similarity, as determined by a null dataset (refer to Figure 2\u2014figure supplement 3). The region shaded yellow lies within the 95% CI for both gene and protein trees with the identity line plotted. The region shaded blue lies within the 95% CI for gene trees but not protein trees. The region shaded gray lies outside the 95% CI for both gene and protein trees.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** H3N2 virus viral RNA (vRNA) gene sequence alignments were translated into the corresponding amino acid alignments. Neighbor-joining trees were reconstructed from these alignments and the Robinson-Foulds distance (RF) was tabulated for all protein tree pairs. An RF network was constructed using a UPGMA tree. Scale bar corresponds to RF.\n\n### PB2 and NA viral ribonucleoprotein complexes preferentially colocalize at the nuclear periphery in vitro\n\nTo address whether parallel evolution between the PB2 and NA segments corresponds with their behavior during influenza virus infection, we examined whether these vRNA segments preferentially colocalize in infected cells (Figure 1D). During influenza virus infection, vRNA are synthesized in the nucleus, bound by NP in viral ribonucleoprotein (vRNP) complexes, and then transported to the plasma membrane for packaging on endocytic vesicles (Lakdawala et al., 2016). Direct RNA-RNA interactions are thought to drive selective assembly of all eight vRNA segments into virus particles, with a hierarchy existing between interactions (Dadonaite et al., 2019; Le Sage et al., 2020; Le Sage et al., 2018; Lee et al., 2017; Marsh et al., 2008). Previous studies examining the intracellular localization of vRNA segments demonstrated that after genomic replication, vRNA segments are exported from the nucleus as incomplete subcomplexes, or assembly intermediates (Lakdawala et al., 2014). The formation of complete complexes containing all eight segments occurs en route to the plasma membrane through dynamic fusion or fission of vRNA segments (Bhagwat et al., 2020; Lakdawala et al., 2014). Taken together, these data suggest that interactions between some vRNA segments may serve as a scaffold that facilitates formation of complete complexes of all eight vRNA segments. Our network analyses suggest a putative hierarchy that could in part reflect the proposed hierarchical nature of genomic assembly (Figure 2\u2014figure supplement 4). We theorized that those vRNA segments that exhibit high gene tree similarity might preferentially form subcomplexes soon after nuclear synthesis. Using our extensive expertise in visualizing intracellular localization of vRNA segments (Lakdawala et al., 2014; Nturibi et al., 2017), we examined the localization of three vRNA segments (PB2, NA, and NS) in the context of H3N2 virus infection. These segments encompass a pair with high gene-based parallel evolution (PB2-NA) as well as pairs with less evidence of parallel evolution (PB2-NS; NA-NS) (Figures 2C and 6, open diamonds).\n\nQuantification of colocalized vRNA segments was performed using fluorescence in situ hybridization (FISH) and immunofluorescence (IF) in productively infected cells (Lakdawala et al., 2014; Nturibi et al., 2017). Lung epithelial A549 cells were infected for 8 hr with a seasonal human H3N2 virus representative of the time period analyzed (A/Perth/16/2009) and stained for three vRNA segments, NP, and nuclei. The NP antibody stain was used to normalize pairwise colocalization data to the total number of vRNP foci present in cells. Entire cell volumes were captured and the nucleus was masked to analyze colocalization of vRNA segments specifically within the cytoplasm. A representative image of an infected cell from one of three independently performed experiments is shown after processing (Figure 7A) and at various stages of image analysis (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66525/elife-66525-fig7-v2.jpg)\n\n**Figure 7.:** A549 cells were infected with A/Perth/16/2009 (H3N2) at a multiplicity of infection (MOI) of 2 or mock-infected. Cells were fixed at 8 hr post-infection and combination fluorescence in situ hybridization/immunofluorescence (FISH and IF, respectively) was performed. FISH probes targeting the NS, NA, and PB2 vRNA segments were labeled with Alexa Fluor 488, Quasar 570, and Quasar 670, respectively. Antibodies targeting nucleoprotein (NP) were used with an anti-mouse Alexa Fluor 594 secondary antibody. Nuclei were labeled with DAPI. Coverslips were mounted and volumetric imaging was performed to obtain Nyquist sampling. (A) A maximum projection image of a representative cell is shown after cell segmentation. Scale bar corresponds to 5 \u00b5m. (B) A 3D rendering of the cell after analysis. (C) Colocalization of vRNA segments was assessed in 15 individual infected cells. (D) Quantification of each pair of vRNA segments within 300 nm of the nuclear border. Each point represents an individual cell (n = 15). Aggregate data from three independently performed experiments are shown. Asterisks (*) indicate p-adj < 0.05 (Mann-Whitney U test with Benjamini-Hochberg correction).\n\nWhole cytoplasmic analysis of vRNP colocalization in 15 individually analyzed cells revealed that the majority of cytoplasmic foci contained all three vRNA segments (Figure 7C). These data may represent heterogeneity in genomic assembly: whole cytoplasmic analysis is likely to capture vRNP subcomplexes at various stages of assembly, regardless of whether direct RNA-RNA interactions underlie colocalization (Lakdawala et al., 2014). In contrast, perinuclear assembly intermediates are more likely to reflect essential RNA-RNA interactions (Majarian et al., 2018). Therefore, we assessed the potential for PB2, NA, and NS to colocalize at the nuclear periphery, where assembly intermediates first begin to form. We defined localization at the nuclear periphery to within 300 nm, the limit of resolution in this system. Examination of newly exported vRNP complexes within 300 nm of the nuclear periphery revealed an enrichment of PB2-NA vRNP complexes over either NA-NS or PB2-NS vRNP complexes (Figure 7D). These data indicate that PB2 and NA preferentially colocalize with each other after nuclear synthesis and support the hypothesis that parallel evolution between segments can reveal putative RNA-RNA interactions. Moreover, these data implicate RNA-RNA interactions, in addition to protein interactions, as novel drivers of parallel evolution between vRNA segments in seasonal human influenza viruses.\n\n## Discussion\n\nIn this study, we used phylogenetics and molecular biology methods to investigate genome-wide relationships between vRNA segments in seasonal human IAV. We found that parallel evolution varies considerably between vRNA segments, with distinct relationships forming in different influenza virus subtypes (H1N1 vs. H3N2) and between H1N1 virus lineages arising from distinct evolutionary paths. We further demonstrate that evolutionary relatedness between vRNA segments in H3N2 viruses is largely conserved over time. Importantly, our data suggest that parallel evolution cannot be attributed solely to protein interactions, and we successfully predicted intracellular colocalization between two coevolved vRNA segments during infection with an H3N2 virus. Thus, we present a phylogenetic approach for interrogating putative RNA associations that could be broadly applied toward the study of genomic assembly and reassortment in segmented viruses.\n\nSelective assembly of all eight genomic segments is fundamental to the production of fully infectious virus particles. We and others have used a variety of biochemical approaches to investigate the mechanisms that promote selective assembly (Dadonaite et al., 2019; Le Sage et al., 2020). We previously demonstrated that binding of vRNA segments by NP is non-uniform and non-random (Le Sage et al., 2018; Lee et al., 2017), supporting the model that intersegmental RNA interactions facilitate selective assembly. Biochemical approaches to define bona fide intersegmental RNA-RNA interactions demonstrated that the interaction network is highly flexible and varies between H1N1 and H3N2 viruses (Dadonaite et al., 2019; Le Sage et al., 2020). These observations are consistent with our conclusion that RNA interactions constrain parallel evolution between vRNA segments in a manner sensitive to the genetic context studied.\n\nThe approach we present here differs from other experimental approaches in that we identify a novel, conserved RNA-driven relationship between vRNA segments in H3N2 viruses. For example, we found that relationships between PB1, PA, NP, and NA are enriched over other segments in H3N2 viruses and conserved over time. One might expect PB1, PA, and NP to coevolve because of the functions of the proteins they encode: the polymerase subunits PB2, PB1, and PA form a supramolecular complex around each vRNA segment with NP (Fodor, 2013). However, this explanation does not account for the parallel evolution observed between vRNP components and NA, and our microscopy data demonstrates that the NA segment preferentially colocalizes with the vRNA of one such vRNP component, supporting the possibility that parallel evolution of NA with PB1, PA, and NP could also be driven by RNA-RNA interactions. These observations suggest that RNA relationships with the NA segment may facilitate selective assembly of vRNA segments. Further work should be directed at determining the underlying nature driving the novel relationship between these segments and whether similar assembly intermediates can be identified in H1N1 viruses.\n\nPrevious pandemic influenza viruses emerged through reassortment (Neumann et al., 2009). Risk assessment for future influenza pandemics relies on understanding assembly of vRNA segments within a cell. As we have discussed, experimental investigations of intersegmental RNA interactions indicate that the vRNA interactome is distinct among virus strains and highly plastic (Dadonaite et al., 2019; Le Sage et al., 2020). Therefore, experimental approaches are unlikely to provide the holistic view necessary to assess reassortment outcomes of two circulating influenza strains. In contrast, we identified several conserved relationships between vRNA segments in H3N2 viruses that could impose constraints on reassortment. In addition, we identified several key differences between the evolutionary trajectories of vRNA segments in pre-pandemic and post-pandemic H1N1 viruses of different lineages. Experimental investigation of the differences we present here may reveal key vRNA relationships that dictate reassortment and pandemic potential of influenza viruses. Thus, investigation of epistatic relationships between vRNA segments through phylogenetics could inform sequence-based implementation of barriers to reassortment in emerging influenza viruses.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (influenza A virus)</td>\n      <td>Seasonal human influenza A virus sequences</td>\n      <td>Influenza Research Database</td>\n      <td>Accession numbers provided in Supplementary files 1\u20134</td>\n      <td>See Materials and methods, Data mining and subsampling section</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NP (mouse monoclonal)</td>\n      <td>Millipore</td>\n      <td>Cat# MAB8251, RRID:AB_95293</td>\n      <td>IF (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse IgG Alexa Fluor 594 (goat polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat# A-11005, RRID:AB_2534073</td>\n      <td>IF (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>A/Perth/16/2009 (H3N2) reverse genetics plasmids</td>\n      <td>PMID:33919124</td>\n      <td></td>\n      <td>Bidirectional pHW2000 backbone</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Trypsin, TPCK-treated</td>\n      <td>Worthington Biochemical</td>\n      <td>Cat# LS003750</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>A549 cells</td>\n      <td>ATCC</td>\n      <td>Cat# CCL-185, RRID:CVCL_0023</td>\n      <td>Validation performed by U. of Arizona Genetics Core</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>H3N2 PB2 FISH probes conjugated to Quasar 670</td>\n      <td>This paper</td>\n      <td>FISH probes</td>\n      <td>Oligo sequences provided in Supplementary file 6</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>H3N2 NA FISH probes conjugated to Quasar 570</td>\n      <td>This paper</td>\n      <td>FISH probes</td>\n      <td>Oligo sequences provided in Supplementary file 6</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Amine-labeled H3N2 NS FISH probes</td>\n      <td>This paper</td>\n      <td>FISH probes</td>\n      <td>Oligo sequences provided in Supplementary file 6</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Alexa Fluor 488 Oligonucleotide Amine Labeling Kit</td>\n      <td>Invitrogen</td>\n      <td>Cat# A20191</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI</td>\n      <td>Sigma</td>\n      <td>Cat# D9542</td>\n      <td>0.2 \u00b5g/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ProLong Diamond antifade mountant</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# P36965</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>CRAN</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Parallel Evolution Of Influenza Viral RNA (custom script)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Materials and methods, Code availability section</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Huygens</td>\n      <td>Scientific Volume Imaging B.V.</td>\n      <td>RRID:SCR_014237</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris</td>\n      <td>Bitplane</td>\n      <td>RRID:SCR_007370</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>MathWorks</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab extension</td>\n      <td>PMID:28724771</td>\n      <td></td>\n      <td>See Materials and methods, Validation of vRNA relationships section</td>\n    </tr>\n  </tbody>\n</table>\n\n### Data mining and subsampling\n\nFASTA files of each genomic segment of human IAV sequences of H1N1 and H3N2 viruses were downloaded from the IRD (http://www.fludb.org) (Zhang et al., 2017) on June 22, 2018, and July 3, 2018, respectively. Strains lacking full-length genomic sequence data were excluded.\n\nSequences were read into R (version 3.5.2) using the DECIPHER (version 2.18.1) package (Wright, 2015) and subset into the time periods 1995\u20132004 and 2005\u20132014 (H3N2 strains) or 2000\u20132008 and 2010\u20132018 (H1N1 strains). Time periods were selected in part to ensure a similar level of genetic diversity between strains. In each strain, all eight vRNA segments were concatenated into a full-length genome from which alignments were constructed (Figure 1A). A neighbor-joining species tree was built by clustering strains into operational taxonomic units with sequence identity cutoffs ranging from 95% to 99% (Figure 1B). In H3N2 viruses from 1995 to 2004, there were 3, 7, 16, 53, and 259 clusters corresponding to cutoffs of 95%, 96%, 97%, 98%, and 99 % sequence identity, respectively. The 95\u201396% sequence identity cutoffs were discarded, as these produced trees with an insufficient number of branches for comparison by RF. However, as the cutoff for sequence identity was increased from 97% to 99%, we observed a corresponding decrease in bootstrap support for trees built from representative sequences. A sequence identity cutoff of 97% was therefore selected to ensure the greatest degree of robustness in tree topologies. Small clusters occurred infrequently and were either omitted or collapsed into a single cluster. Seven replicate strains were randomly chosen from each cluster for further study and visually inspected for sequencing ambiguities. A list of all strains analyzed and the corresponding accession numbers can be found in Supplementary files 1-4.\n\n### Analysis of tree similarity\n\nMaximum-likelihood trees were reconstructed under the Hasegawa et al., 1985 model for either full-length genomes or individual vRNA segments with 100 or 1000 bootstrap replicates, as indicated, using the DECIPHER package in R (Figure 1C). The phangorn package (version 2.5.5) (Schliep, 2011) was used to identify an appropriate model of evolution for phylogenetic reconstruction. Strain names are coded by cluster number in all trees. Phylogenetic trees of full-length concatenated genomes are shown in Figure 1\u2014figure supplement 2. Neighbor-joining protein trees were built from amino acid alignments after translation of the corresponding coding sequence alignments. Networks visualizing overall vRNA relatedness with mean tree distances between vRNA segments were built using the UPGMA method.\n\nTanglegrams, or back-to-back trees with intersecting lines matching tips from the left tree to the right tree, were built from pairs of vRNA phylogenies within replicates using the phytools package (version 0.7\u201370) (Revell, 2012). RF was calculated for each pair of trees using the ape package (version 5.4\u20131) (Paradis and Schliep, 2019). CID was calculated with the TreeDist package (version 2.0.3) (Smith, 2020).\n\nLinear regression was used to determine the overall association between tree distances from different sets of viruses (RF or CID). A set of 1000 randomly sampled, unrooted trees with 8, 9, or 12 tips were built using the ape package to determine confidence intervals for the RF between phylogenetic trees. RF was calculated for all pairs of trees and these were fit to a linear regression model. For visualization purposes, null RF values were either log-transformed or transformed by the Yeo-Johnson method (Yeo and Johnson, 2000), as indicated. Mean RF calculated for pairs of vRNA trees were considered significant if they fell within the first five percentiles as compared to null RF from random trees with the same number of tips (i.e. 95% of null RF were greater than the mean RF for a given pair of vRNA trees). A Mann-Whitney U test with a Benjamini-Hochberg post hoc correction was used to identify statistically significant differences between RF from two time periods.\n\n### Validation of vRNA relationships\n\nHuman adenocarcinoma alveolar basal epithelial cells (A549, ATCC) were maintained in high-glucose Dulbecco\u2019s modified Eagle medium (Sigma) supplemented with 10% fetal bovine serum (HyClone), 2% L-glutamine, and 1% penicillin/streptomycin. Recombinant virus was rescued as previously described (Lakdawala et al., 2011). Virus titers were determined by 50% tissue culture infectious dose (TCID50) using the endpoint titration method (Reed and Muench, 1938). Validation of cell lines was performed on a routine basis for mycoplasma contamination and cell line purity and identity. Mycoplasma screening was performed by the vendor and annually thereafter. Cell lines tested negative for mycoplasma at time of purchase (Hoechst stain, agar culture, and PCR-based assays) and mycoplasma status is confirmed negative annually using the MycoAlert Mycoplasma Detection Kit (Lonza). The identity and purity of cell lines were verified at the time of purchase (ATCC) and annually thereafter by short tandem repeat profiling (University of Arizona Genetics Core). Documentation of the A549 cell line purity and identity in these studies is available upon request. Low-passage stocks were maintained for no more than 20 passages after thawing to ensure maintenance of a pure cell population.\n\nCustom Stellaris RNA FISH oligonucleotide probes specific for the H3N2 virus NS, NA, and PB2 vRNA segments were purchased from BioSearch Technologies (refer to Supplementary file 5 for FISH probe sequences). Each custom probe mix comprises 2040 20-mers that span the length of the vRNA segment of interest. Probes with high complementarity against other vRNA segments or positive-sense RNA were excluded during the design process. The NS probe was purchased with a terminal amine group and manually conjugated to the Alexa Fluor 488 fluorophore using the Alexa Fluor 488 Oligonucleotide Amine Labeling Kit (Invitrogen). The NA and PB2 probes were labeled by the manufacturer with the Quasar 570 and Quasar 670 fluorophores, respectively.\n\nThree independent FISH-IF experiments were performed (Figure 1D). A549 cells were seeded directly onto 1.5 mm circular coverslips (Fisher Scientific) in tissue culture dishes. The next day, cells were infected at a multiplicity of infection of 2 with A/Perth/16/2009 (H3N2) or mock-infected in diluent. Cells were fixed at 8 hr post-infection with 4% paraformaldehyde and permeabilized overnight in ice cold 70% ethanol. Prior to hybridization, cells were rehydrated in wash buffer (10% formamide and 2\u00d7 saline sodium citrate [SSC] in DEPC-treated H2O) and then incubated at 28\u00b0C overnight in hybridization buffer (10% dextran sulfate, 2 mM vanadyl-ribonucleoside complex, 0.02% RNA-free BSA, 1 mg/ml Escherichia coli tRNA, 2\u00d7 SSC, and 10% formamide in DEPC-treated H2O) with anti-IAV NP antibody (Millipore, 1:2000) and FISH probes. After hybridization, cells were washed and incubated with Alexa Fluor 594 goat anti-mouse (Invitrogen, 1:2000) and DAPI (Sigma, 1:5000) in wash buffer. Coverslips were mounted on slides in ProLong Diamond antifade mountant (Thermo Fisher).\n\nMicroscope slides were imaged on a Leica SP8 confocal microscope equipped with a pulsed white light laser as an excitation source and an acousto-optical beam splitter and Leica Hybrid Detectors. All imaging was performed with a 100\u00d7 oil immersion objective with a numerical aperture of 1.4. Sequential scanning with a line averaging of 3 between frames was used. To obtain Nyquist sampling, z-stacks of each cell were taken with a step size of 170 nm to achieve a pixel size of 45 nm \u00d7 45 nm \u00d7 170 nm. The following custom parameters were established using single-color infected controls for sensitive detection of all five fluorophores: 405 nm excitation wavelength (\u03bbex) with 0.5% laser power and a detection range of 415\u2013470 nm (PMT1; DAPI), 488 nm \u03bbex with 10% laser power and a detection range of 493\u2013540 nm with time gating of 1\u20136 nanoseconds (ns) (HyD4; Alexa Fluor 488), 582 \u03bbex with 15% laser power and a detection range of 590\u2013635 nm with time gating of 1.5\u20136 ns (HyD4; Cal Fluor Red 590), 545 nm \u03bbex with 5% laser power and a detection range of 545\u2013568 nm with time gating of 1.5\u20136 ns (HyD4; Quasar 570), 647 nm \u03bbex with 5% laser power and a detection range of 670\u2013730 nm with time gating of 1.5\u20136 ns (HyD5; Quasar 670). In each experiment, five volumetric z-stacks were imaged of infected cells and one z-stack was imaged of mock-infected cells.\n\nBackground subtraction and deconvolution of confocal images were performed manually for each channel using Huygens Essential software (version 19.04, Scientific Volume Imaging B.V.). In each experiment, images taken of mock-infected cells were deconvolved using the same parameters as those of infected cells. 3D reconstruction and colocalization analysis of the resulting images were performed using Imaris software (version 8.4.2, Bitplane AG) as previously described (Lakdawala et al., 2014; Nturibi et al., 2017). Briefly, the cell of interest in each image was segmented using the \u2018Surfaces\u2019 and \u2018Cell\u2019 tools in Imaris software. DAPI signal was used to mask nuclear signal from the remaining channels. The \u2018Spots\u2019 tool was then used to populate the reconstructed cell with four different sets of Spots corresponding to foci from each of the remaining channels. In each experiment, the mock infected cell was analyzed in an identical manner and the fluorescence intensity for each channel of the mock-infected cell was used to establish fluorescence intensity thresholds at which 97% or more of the background signal was removed prior to Spot generation. A modified Matlab extension was then used to quantify spot colocalization using a distance threshold of 300 nm as previously described (Nturibi et al., 2017). Colocalization data was imported into the Cell and all data was exported and analyzed in R. A Mann-Whitney U test was used to determine statistical significance of FISH-IF colocalization data.\n\n### Code availability\n\nCustom code for analysis of parallel evolution in concatenated, full-length genomic influenza virus sequences is available on GitHub (https://github.com/Lakdawala-Lab/Parallel-Evolution-Of-Influenza-Viral-RNA/ (copy Jones, 2020 archived at swh:1:rev:27dc83b8eec1f461bbf9ef3f1dbeba61f0514fb3)).\n",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "f23244df-6c01-458b-86c4-260425aa5121",
+      "submission_id": "dfc3db96-ec57-44e6-be73-271f4c8c6d56",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Imroze Khan, Ashoka University India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66525.sa1](https://doi.org/10.7554/eLife.66525.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis interesting study provides phylogenetic and molecular evidence for novel RNA-RNA interactions driving the genomic coevolution of Influenza virus subtypes. The authors make important contributions towards understanding how certain genetic combinations can lead to emerging pathogen variants with the possibility of new antigenic properties and spillover.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Parallel evolution between genomic segments of seasonal human influenza viruses reveals RNA-RNA relationships\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by George Perry as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Debapriyo Chakraborty (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nIn this study, the authors combined phylogenetics and molecular assays to demonstrate parallel evolution across vRNA segments in influenza A virus subtypes, highlighting the importance of RNA-RNA interaction as a novel driver of viral genomic evolution. While reviewers agree that the work is important and likely to have implications for pathogen evolution and emerging infections, there are several major concerns that have been raised in terms of clarity of working hypotheses, methods and interpretations.\n\nTo cite a few, for example, the rationale behind (1) leaving out sequences that did not resolve well in the phylogenic analyses; (2) relating RNA segment co-localization to similar phylogenetic patterns was unclear and thus, requires more qualification.\n\nUnless all the queries raised by the reviewers are addressed, at present, it is difficult to truly judge on its content and what is supported by the data produced.\n\nReviewer #1 (Recommendations for the authors ):\n\nIn this paper, authors did a fine job of combining phylogenetics and molecular methods to demonstrate the parallel evolution across vRNA segments in two seasonal influenza A virus subtypes. They first estimated phylogenetic relationships between vRNA segments using Robinson-Foulds distance and identified the possibility of parallel evolution of RNA-RNA interactions driving the genomic assembly. This is indeed an interesting mechanism in addition to the traditional role for proteins for the same. Subsequently, they used molecular biology to validate such RNA-RNA driven interaction by demonstrating co-localization of vRNA segments in infected cells. They also showed that the parallel evolution between vRNA segments might vary across subtypes and virus lineages isolated from distinct host origins. Overall, I find this to be excellent work with major implications for genome evolution of infectious viruses; emergence of new strains with altered genome combination.\n\nI am wondering if leaving out sequences (not resolving well) in the phylogenic analysis interferes with the true picture of the proposed associations. What if they reflect the evolutionary intermediates, with important implications for the pathogen evolution which is lost in the analyses?\n\nLines 50-51: Can you please elaborate? I think this might be useful for the reader to better understand the context. Also, a brief description on functional association between different known fragments might instigate curiosity among the readers from the very beginning. At present, it largely caters to people already familiar with the biology of influenza virus.\n\nLines 95-96 Were these strains all swine-origin? More details on these lineages will be useful for the readers.\n\nLines 128-132: I think it will be nice to talk about these hypotheses well in advance, may be in the Introduction, with more functional details of viral segments.\n\nLines 134-136: Please rephrase this sentence to make it more direct and explain the why. E.g. \"\u2026 parallel evolution between PB1 and HA is likely to be weaker than that of PB1 and PA\".\n\nLines 222-223: Please include a set of hypotheses to explain you results? Please add a perspective in the discussion on how this contribute might to the pandemic potential of H1N!?.\n\nLines 287-288: I am wondering how likely is this to be true for H1N1.\n\nReviewer #2 (Recommendations for the authors):\n\nAbstract: Please define parallel evolution and mention the methods used, without details, at the beginning.\n\nLine 29: \"Genetic variation is ubiquitious in RNA viruses.\" I find this sentence vague. I would prefer a clear statement about high genetic variation in RNA viruses.\n\nLine 38: Typo, concomitant\n\nLine 38: \"Thus, the emergence of pandemic strains is marked by a concommittent alteration in the influenza virus genome triggered by new genetic diversity.\" \u2013 This is a very complex sentence; either simplify or break it into two, please.\n\nLine 41: \"Genetic mutation is driven by stochastic processes and is therefore difficult to predict (Andino & Domingo, 2015).\" \u2013 The relevance is not clear. Either remove or provide more context.\n\nLine 50-52: \"It is consequently imperative to identify the evolutionary constraints imposed by intersegmental vRNA interactions, as this may help predict future influenza pandemics.\" \u2013 This is a huge jump of reductionism. It's highly unlikely that we will be able to predict future influenza pandemics even after knowing all the evolutionary constraints of its genome.\n\nLine 53: Please, define epistasis.\n\nLine 61: Please define parallel evolution.\n\nLines 76-84: Authors should keep the hypothesis and predictions in the intro but the methodological details such as the actual RF measure should go to methods section.\n\nLine 425: What is a tanglegram? What substitution model was used to reconstruct phylogenies for each vRNA segment? Same model for all?\n\nReviewer #3 (Recommendations for the authors):\n\nI have no further specific suggestions or critiques that are not in the other sections.\n",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "710b9044-4239-4e94-bee2-f96fe02ea096",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C1",
+      "claim": "The influenza A virus (IAV) genome consists of eight negative-sense viral RNA (vRNA) segments.",
+      "claim_type": "EXPLICIT",
+      "source": "The influenza A virus (IAV) genome consists of eight negative-sense viral RNA (vRNA) segments that are selectively assembled into progeny virus particles through RNA-RNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about IAV genome structure stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "d2539807-6f07-4ab1-8c49-14d7f4eaccc0",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C2",
+      "claim": "IAV vRNA segments are selectively assembled into progeny virus particles through RNA-RNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The influenza A virus (IAV) genome consists of eight negative-sense viral RNA (vRNA) segments that are selectively assembled into progeny virus particles through RNA-RNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known mechanism in the abstract and is supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "c7749413-c547-4447-9c2b-f8911dae1d02",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C3",
+      "claim": "Intersegmental tree similarity differed between subtype and lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Intersegmental tree similarity differed between subtype and lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figures 2-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "edbeda18-d078-4fd0-aaad-94d06dfb862c",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C4",
+      "claim": "Intersegmental relationships were largely conserved over time in H3N2 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "While intersegmental relationships were largely conserved over time in H3N2 viruses, they diverged in H1N1 strains isolated before and after the 2009 pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "6a175553-9a72-4e4b-b5b3-71656be221d7",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C5",
+      "claim": "Intersegmental relationships diverged in H1N1 strains isolated before and after the 2009 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "While intersegmental relationships were largely conserved over time in H3N2 viruses, they diverged in H1N1 strains isolated before and after the 2009 pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "d7849286-9049-44ce-84c8-da4d7096ac01",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C6",
+      "claim": "Intersegmental relationships were not driven solely by protein sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, intersegmental relationships were not driven solely by protein sequence, suggesting that IAV evolution could also be driven by RNA-RNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by data in Figure 6 comparing gene and protein tree distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "42f728b7-cbd6-4895-8aeb-865824face47",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C7",
+      "claim": "IAV evolution could be driven by RNA-RNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, intersegmental relationships were not driven solely by protein sequence, suggesting that IAV evolution could also be driven by RNA-RNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an inference from the finding that gene tree similarity is not solely explained by protein tree similarity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "4ecca7bb-a199-48aa-9d10-a2b3e2479834",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C8",
+      "claim": "Colocalization of highly coevolved vRNA segments is enriched over other assembly intermediates at the nuclear periphery during productive viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we used confocal microscopy to determine that colocalization of highly coevolved vRNA segments is enriched over other assembly intermediates at the nuclear periphery during productive viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by microscopy data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "a5c6bd0f-7341-4d1d-abcd-0240cb646a1c",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C9",
+      "claim": "Rapid evolution of RNA viruses can occur as a result of mutation, recombination, or reassortment.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid evolution underlying this variation can occur as a result of mutation, recombination, or reassortment, with major consequences for human disease (Andino and Domingo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "96109fcb-2858-498f-8575-011796d917a5",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C10",
+      "claim": "Influenza A virus pandemics occurred in 1918 (H1N1), 1957 (H2N2), 1968 (H3N2), and 2009 (H1N1).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the past century, influenza A virus (IAV) pandemics occurred in 1918 (H1N1), 1957 (H2N2), 1968 (H3N2), and 2009 (H1N1) (Neumann et al., 2009; Paules and Subbarao, 2017; Short et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is historical fact supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "eae05256-7d38-4eb6-afad-05274ebd353a",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C11",
+      "claim": "Each of the last three influenza pandemics was attributable to a reassortant strain composed of a novel combination of the eight vRNA segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the last three influenza pandemics was attributable to a reassortant strain composed of a novel combination of the eight viral RNA (vRNA) segments of the influenza virus genome (Neumann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "6eff510f-c7ab-46c7-914e-b24843d44528",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C12",
+      "claim": "Reassortment of vRNA segments must occur during selective assembly of all eight genomic segments, which occurs after export of vRNA segments from the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Reassortment of vRNA segments must occur during selective assembly of all eight genomic segments, which occurs after export of vRNA segments from the nucleus (Lakdawala et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "428007bd-37fd-4d22-a503-2d68fbf2761f",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C13",
+      "claim": "Selective assembly is thought to be facilitated by intersegmental RNA-RNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective assembly is thought to be facilitated by intersegmental RNA-RNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "1d44e6bd-33b9-42f7-b77e-1cc5160c1860",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C14",
+      "claim": "Each vRNA segment encodes packaging signals that must be compatible for reassortment to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Each vRNA segment encodes packaging signals that must be compatible for reassortment to occur (Lowen, 2017; Richard et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "bf5724de-079f-487c-ae99-04b9e171de26",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C15",
+      "claim": "Disruption of interactions between two vRNA segments can alter interactions with other segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Although much remains unknown about the role of RNA-RNA interactions in genomic assembly, it is evident that disruption of interactions between two vRNA segments can alter interactions with other segments, leading to a model in which hierarchical interactions between vRNA segments ensure selective assembly (Dadonaite et al., 2019; Le Sage et al., 2020; Marsh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "860ac5c6-1fe2-42a9-aed8-8d184c9ba080",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C16",
+      "claim": "Hierarchical interactions between vRNA segments ensure selective assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Although much remains unknown about the role of RNA-RNA interactions in genomic assembly, it is evident that disruption of interactions between two vRNA segments can alter interactions with other segments, leading to a model in which hierarchical interactions between vRNA segments ensure selective assembly (Dadonaite et al., 2019; Le Sage et al., 2020; Marsh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "64d2771a-2e42-4079-b789-90cdfe4fd828",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C17",
+      "claim": "The Robinson-Foulds distance (RF) is a widely used measure of topological distance between trees.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate phylogenetic relationships among vRNA segments, we relied upon the Robinson-Foulds distance (RF), a widely used measure of topological distance between trees (Robinson and Foulds, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "0f4707ad-b164-4e8d-9ebc-ddde800b2de0",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C18",
+      "claim": "The Robinson-Foulds distance determines the number of branch partitions that are not shared between two trees.",
+      "claim_type": "EXPLICIT",
+      "source": "This method determines the number of branch partitions that are not shared between two trees (Robinson and Foulds, 1981) and is therefore a quantitative measure of the topological distance between trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the RF method with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "ad6a611b-688d-4267-8775-d439f1e4ac0d",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C19",
+      "claim": "Lower RF/CID corresponds with greater tree similarity, with a tree distance of 0 indicating that two trees are topologically equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower RF/CID corresponds with greater tree similarity, with a tree distance of 0 indicating that two trees are topologically equivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the distance metrics are interpreted.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "f72ee66e-36cd-4de0-a506-d224ead4675f",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C20",
+      "claim": "Incompatible polymerase subunits exhibit replication deficiencies and are known restriction factors in reassortment.",
+      "claim_type": "EXPLICIT",
+      "source": "Incompatible polymerase subunits exhibit replication deficiencies and are known restriction factors in reassortment (Li et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "2a8a2989-a08d-4c95-83a7-80246a081705",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C21",
+      "claim": "Trees built from PB2, PB1, and PA would have high similarity, reflective of a shared evolutionary trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we would predict that trees built from PB2, PB1, and PA would have high similarity, reflective of a shared evolutionary trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction based on known protein interactions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "85a08651-a3aa-4681-8867-4e4fd9ae5f6a",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C22",
+      "claim": "Direct intermolecular interactions between vRNA segments coordinate selective assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, mounting evidence from our group and others suggests that direct intermolecular interactions between vRNA segments coordinate selective assembly (Dadonaite et al., 2019; Le Sage et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as mounting evidence with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "37c50cb5-348d-4a57-a54a-2fb8de1933e2",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C23",
+      "claim": "Genomic assembly occurs in the cytoplasm after nuclear export.",
+      "claim_type": "EXPLICIT",
+      "source": "Since genomic assembly occurs in the cytoplasm after nuclear export (Lakdawala et al., 2014), we reasoned that assembly intermediates found in close proximity to the nucleus could serve as scaffolds for genomic assembly and sought to visualize this by confocal microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "e8cd92f4-b531-4e57-92b4-c79db79fbb53",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C24",
+      "claim": "H1N1 and H3N2 viruses have cocirculated in the human population since 1977.",
+      "claim_type": "EXPLICIT",
+      "source": "H1N1 and H3N2 viruses have cocirculated in the human population since 1977 (Neumann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical fact with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "de3e3c5d-29f8-4941-892f-75cacbaf4086",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C25",
+      "claim": "1026 H3N2 viruses from 1995 to 2004 were available in the Influenza Research Database.",
+      "claim_type": "EXPLICIT",
+      "source": "We began our investigation with all seasonal human H3N2 viruses for which full-length sequence information was available in the Influenza Research Database (IRD), yielding 1026 H3N2 viruses from 1995 to 2004 and 3879 H3N2 viruses from 2005 to 2014 (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "7d2145e6-c75e-4cbc-83a3-85adf8268d3c",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C26",
+      "claim": "3879 H3N2 viruses from 2005 to 2014 were available in the Influenza Research Database.",
+      "claim_type": "EXPLICIT",
+      "source": "We began our investigation with all seasonal human H3N2 viruses for which full-length sequence information was available in the Influenza Research Database (IRD), yielding 1026 H3N2 viruses from 1995 to 2004 and 3879 H3N2 viruses from 2005 to 2014 (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "eef82120-d8b6-4675-9780-a5ea5210ee7b",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C27",
+      "claim": "A preliminary analysis of 300 sequences suggested that a great deal of phylogenetic variation could not be statistically supported by bootstrapping (branch support less than 70).",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstructing phylogenetic trees from all available sequences was disadvantageous, as a preliminary analysis of 300 sequences suggested that a great deal of phylogenetic variation could not be statistically supported by bootstrapping (branch support less than 70).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from preliminary analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "1a7b75fb-58e8-430f-8912-40db28124aa3",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C28",
+      "claim": "Trees built from the PB1 and PA segments had low tree distances (RF = 6 and CID = 0.25) in H3N2 viruses from 2005 to 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Trees built from the PB1 and PA segments had low tree distances (RF = 6 and CID = 0.25) (Figure 2A), suggesting that these genes evolve in parallel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "a3f38a8d-9e0c-4a6b-8101-51e1f32c4697",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C29",
+      "claim": "PB1 and PA genes evolve in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "Trees built from the PB1 and PA segments had low tree distances (RF = 6 and CID = 0.25) (Figure 2A), suggesting that these genes evolve in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the low tree distance data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "a330a774-ded8-4abf-8140-4891caf75963",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C30",
+      "claim": "PB1 and HA trees from H3N2 viruses from 2005 to 2014 had higher tree distances (RF = 14 and CID = 0.44).",
+      "claim_type": "EXPLICIT",
+      "source": "PB1 and HA trees from the same set of H3N2 strains had higher tree distances (RF = 14 and CID = 0.44) (Figure 2B), suggesting that parallel evolution between PB1 and HA is weaker than that of PB1 and PA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "07b893ba-a601-4cd5-a28c-13f426dc0716",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C31",
+      "claim": "Parallel evolution between PB1 and HA is weaker than that of PB1 and PA.",
+      "claim_type": "EXPLICIT",
+      "source": "PB1 and HA trees from the same set of H3N2 strains had higher tree distances (RF = 14 and CID = 0.44) (Figure 2B), suggesting that parallel evolution between PB1 and HA is weaker than that of PB1 and PA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the tree distance comparison.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "c030c85c-e9f1-44dc-93fb-ab4268047b3d",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C32",
+      "claim": "Tree similarity can be used to identify direct intermolecular interactions that constrain evolution, leading to converging evolutionary trajectories in the trees.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with known protein interactions between PB1 and PA and suggest that tree similarity can be used to identify direct intermolecular interactions that constrain evolution, leading to converging evolutionary trajectories in the trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the PB1-PA tree similarity data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "0705b5cc-22f1-4a28-9a82-f1c3fa801e2e",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C33",
+      "claim": "The mean RF of vRNA trees from H3N2 viruses from 2005 to 2014 ranged from 6.5 (PB1 and PA) to 15 (PA and NS).",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, the mean RF of vRNA trees ranged from 6.5 (PB1 and PA) to 15 (PA and NS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "0cfbb077-80b7-467b-9c26-01ae2385e275",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C34",
+      "claim": "The PB2 tree shared the highest similarity with the NA tree rather than the PB1 or PA trees in H3N2 viruses from 2005 to 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the PB2 tree shared the highest similarity with the NA tree rather than the PB1 or PA trees, suggesting that the relationship between PB2 and NA may supercede the essential role of the PB2 protein in the polymerase complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "7a701e54-ab0c-43f1-93d5-d81495bd03b1",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C35",
+      "claim": "The relationship between PB2 and NA may supercede the essential role of the PB2 protein in the polymerase complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the PB2 tree shared the highest similarity with the NA tree rather than the PB1 or PA trees, suggesting that the relationship between PB2 and NA may supercede the essential role of the PB2 protein in the polymerase complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the tree similarity data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "23ea8f10-36d4-49bb-9d81-d3a78babe5f2",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C36",
+      "claim": "Pairwise intersegmental relationships determined by RF were remarkably reproducible when compared to CID.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairwise intersegmental relationships determined by RF were remarkably reproducible when compared to CID (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "d3f1601b-9782-4892-96a3-7d72b655332d",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C37",
+      "claim": "There is robust parallel evolution between PB1, PA, NP, and NA in H3N2 viruses from 2005 to 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "These networks reveal robust parallel evolution between PB1, PA, NP, and NA in H3N2 viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the network analysis shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "3977b45e-0127-461f-b1d2-1756402c895c",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C38",
+      "claim": "Tree distances ranged widely in H3N2 viruses from 1995 to 2004, with the highest tree similarity found between PB1, PA, NP, and NA trees.",
+      "claim_type": "EXPLICIT",
+      "source": "As was seen in H3N2 viruses from 2005 to 2014, tree distances ranged widely, with the highest tree similarity found between PB1, PA, NP, and NA trees of this time period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "be7a27cf-b3ea-48db-85e7-ffea14cedbed",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C39",
+      "claim": "Statistical differences between RF from each time period were only found for the NS segment in H3N2 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical differences between RF from each time period were only found for the NS segment (Figure 3C; refer to Supplementary file 6 for exact p-values).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "c3ca9059-9a23-4d29-a37d-0bb84b9d0f00",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C40",
+      "claim": "Tree distances for H3N2 viruses from 1995 to 2004 were positively correlated with those from 2005 to 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, tree distances for H3N2 viruses from 1995 to 2004 were positively correlated with those from 2005 to 2014 (Figure 3B and Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3B and Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "d7a6f3a5-cbee-4d31-9733-add2399c1e12",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C41",
+      "claim": "Phylogenetic relationships between vRNA segments in H3N2 viruses are largely conserved across the two time periods (1995-2004 and 2005-2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we conclude that phylogenetic relationships between vRNA segments in H3N2 viruses are largely conserved across these two time periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "73969ede-cd23-4e8a-8aed-fd4f440372f4",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C42",
+      "claim": "The 2009 pandemic was caused by an antigenically shifted H1N1 virus that emerged from reassortment of two swine-origin viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "This pandemic was caused by an antigenically shifted H1N1 virus that emerged from reassortment of two swine-origin viruses, the North American triple reassortant swine H1N1 virus and Eurasian swine H1N1 virus (Garten et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical fact with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "8e66f8b2-2a77-4981-8b66-c3fc146b2d1d",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C43",
+      "claim": "Tree distances from H1N1 viruses shared either a modest negative correlation or none at all with H3N2 viruses from either time period.",
+      "claim_type": "EXPLICIT",
+      "source": "Using linear regression, we found that tree distances from H1N1 viruses shared either a modest negative correlation or none at all with H3N2 viruses from either time period (Figure 4B and C, and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "7361e66a-689b-44c9-a237-7f98525834ae",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C44",
+      "claim": "Parallel evolution between vRNA segments overall have significantly diverged between seasonal human influenza H1N1 and H3N2 viruses from similar time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data suggest that parallel evolution between vRNA segments overall have significantly diverged between seasonal human influenza H1N1 and H3N2 viruses from similar time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the comparison of tree distances between H1N1 and H3N2 viruses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "4a45c705-65c2-45cf-9954-2eb62a40943b",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C45",
+      "claim": "Many relationships between vRNA segments were disrupted in post-pandemic H1N1 viruses compared to pre-pandemic H1N1 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast to the relatively conserved vRNA relationships observed in H3N2 viruses over time, many relationships between vRNA segments were disrupted in post-pandemic H1N1 viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "c6fe03ec-ceb9-4381-b798-f6bb2d365999",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C46",
+      "claim": "Parallel evolution between PB1 and NP observed in pre-pandemic H1N1 viruses (mean RF increased from 1 to 5) was notably displaced by stronger coevolution of PB1 with NA in post-pandemic H1N1 viruses (mean RF decreased from 9 to 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel evolution between PB1 and NP observed in pre-pandemic H1N1 viruses (mean RF increased from 1 to 5) was notably displaced by stronger coevolution of PB1 with NA in post-pandemic H1N1 viruses (mean RF decreased from 9 to 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "8e8a01a8-56de-44c2-832a-66b8aaadcf80",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C47",
+      "claim": "The M and NS trees shared similar topologies across H1N1 lineages, but each one was significantly more coevolved with the HA and NA trees in post-pandemic viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The M and NS trees shared similar topologies across H1N1 lineages, but each one was significantly more coevolved with the HA and NA trees in post-pandemic viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "636b1f80-0646-4283-8725-2d6e6f51fcfb",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C48",
+      "claim": "The PB2 trees diverged significantly from the PA trees in favor of greater parallel evolution with the NP and NS trees in post-pandemic H1N1 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The PB2 trees diverged significantly from the PA trees in favor of greater parallel evolution with the NP and NS trees in post-pandemic H1N1 viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "928bbf05-3835-48a1-95de-7bf76d9963dd",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C49",
+      "claim": "Shared evolutionary trajectories have significantly diverged between H1N1 lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these data imply that shared evolutionary trajectories have significantly diverged between H1N1 lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the data comparing pre- and post-pandemic H1N1 viruses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "2ed3cf5d-07d4-4bc3-a857-36b96ae2d8a3",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C50",
+      "claim": "The genomic segments of the swine-origin 2009 pandemic H1N1 virus were contributed by human, avian, and swine hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomic segments of the swine-origin 2009 pandemic H1N1 virus were contributed by human, avian, and swine hosts (Garten et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "57480277-bb6f-499d-b84c-414e36568c1f",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C51",
+      "claim": "Host origin may impact the evolutionary trajectory of emerging reassortant viruses from different lineages and the resultant relationships between genomic segments of contemporary H1N1 viruses in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data suggest that host origin may impact the evolutionary trajectory of emerging reassortant viruses from different lineages and the resultant relationships between genomic segments of contemporary H1N1 viruses in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the observation that H1N1 lineages with different host origins have different vRNA relationships.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "04777a00-4c0b-4ae9-958b-48b078fdc072",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C52",
+      "claim": "Known protein relationships between PB1 and PA, two members of the polymerase complex, are captured by the phylogenetic tree similarity approach.",
+      "claim_type": "EXPLICIT",
+      "source": "We have already shown that known protein relationships between PB1 and PA, two members of the polymerase complex, are captured by our approach (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "60db63bd-6f5f-453b-b378-b3a7788a2239",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C53",
+      "claim": "PB2 is more coevolved with NA than with either PB1 or PA in H3N2 viruses from 2005 to 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the observation that PB2, another member of the polymerase complex, is more coevolved with NA than with either PB1 or PA (Figure 2C) suggests that our method also reveals protein-independent parallel evolution, since these proteins are not known to function together during infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "ec2accd4-0a4e-408d-b066-133a7edd8f8d",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C54",
+      "claim": "The phylogenetic tree similarity method reveals protein-independent parallel evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the observation that PB2, another member of the polymerase complex, is more coevolved with NA than with either PB1 or PA (Figure 2C) suggests that our method also reveals protein-independent parallel evolution, since these proteins are not known to function together during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the PB2-NA tree similarity data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "9c8b42f2-cdcc-4263-a403-d72f5c52e9e8",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C55",
+      "claim": "The greatest degree of parallel evolution in protein trees was between HA and NA in H3N2 viruses from 2005 to 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "As might be expected, the greatest degree of parallel evolution lying at the core of this network was between HA and NA, two viral glycoproteins with coordinated functions in attachment, motility, and entry (Bloom et al., 2010; Sakai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "1bd1f1e0-0ba0-42ca-9e61-3e8b7ed505b6",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C56",
+      "claim": "HA and NA are two viral glycoproteins with coordinated functions in attachment, motility, and entry.",
+      "claim_type": "EXPLICIT",
+      "source": "As might be expected, the greatest degree of parallel evolution lying at the core of this network was between HA and NA, two viral glycoproteins with coordinated functions in attachment, motility, and entry (Bloom et al., 2010; Sakai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "78923f47-5e0c-492f-829f-42fe8dd55717",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C57",
+      "claim": "HA and NA were the only pair of vRNA segments that lay significantly above the identity line when comparing gene and protein tree distances.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HA and NA were the only pair of vRNA segments that lay significantly above the identity line, strongly supporting the observation made by others that epistatic interactions between these proteins constrain their evolution (Jang and Bae, 2018; Kryazhimskiy et al., 2011; Neverov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "81b8eaeb-1a2d-452c-9c76-7d9481e6295e",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C58",
+      "claim": "Epistatic interactions between HA and NA proteins constrain their evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HA and NA were the only pair of vRNA segments that lay significantly above the identity line, strongly supporting the observation made by others that epistatic interactions between these proteins constrain their evolution (Jang and Bae, 2018; Kryazhimskiy et al., 2011; Neverov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "d53671c5-e62e-405f-b6b3-f8f5c9c5b317",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C59",
+      "claim": "Several vRNA segments, such as PB2 and NA, lay significantly below the identity line when comparing gene and protein tree distances.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest was that several vRNA segments, such as PB2 and NA (Figure 6, open diamond), lay significantly below the identity line.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "3ec9b4df-c948-4b28-a4df-6baa3f5e623b",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C60",
+      "claim": "vRNA segments lying below the identity line could be indicative of either purifying selection or of greater parallel evolution between the vRNA segments than the proteins encoded.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be indicative of either purifying selection or of greater parallel evolution between the vRNA segments than the proteins encoded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the data in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "44825188-a885-4857-a1b8-7473de805ce0",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C61",
+      "claim": "Parallel evolution may identify putative RNA interactions between vRNA segments that could facilitate selective assembly and packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that parallel evolution may identify putative RNA interactions between vRNA segments that could facilitate selective assembly and packaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the observation that some vRNA pairs show greater gene tree similarity than protein tree similarity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "b9a1b3f2-4b1d-441b-b88a-c91fec94dd1e",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C62",
+      "claim": "During influenza virus infection, vRNA are synthesized in the nucleus, bound by NP in vRNP complexes, and then transported to the plasma membrane for packaging on endocytic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "During influenza virus infection, vRNA are synthesized in the nucleus, bound by NP in viral ribonucleoprotein (vRNP) complexes, and then transported to the plasma membrane for packaging on endocytic vesicles (Lakdawala et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "5768ebe1-46b3-44de-abea-755676374d71",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C63",
+      "claim": "Direct RNA-RNA interactions are thought to drive selective assembly of all eight vRNA segments into virus particles, with a hierarchy existing between interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct RNA-RNA interactions are thought to drive selective assembly of all eight vRNA segments into virus particles, with a hierarchy existing between interactions (Dadonaite et al., 2019; Le Sage et al., 2020; Le Sage et al., 2018; Lee et al., 2017; Marsh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "82154faa-6c61-4d63-bfa6-a6d25deb22ac",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C64",
+      "claim": "After genomic replication, vRNA segments are exported from the nucleus as incomplete subcomplexes, or assembly intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies examining the intracellular localization of vRNA segments demonstrated that after genomic replication, vRNA segments are exported from the nucleus as incomplete subcomplexes, or assembly intermediates (Lakdawala et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "9fa33782-dded-4ace-ae80-9a4255bdb095",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C65",
+      "claim": "The formation of complete complexes containing all eight segments occurs en route to the plasma membrane through dynamic fusion or fission of vRNA segments.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of complete complexes containing all eight segments occurs en route to the plasma membrane through dynamic fusion or fission of vRNA segments (Bhagwat et al., 2020; Lakdawala et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "4cbab4eb-f6ff-4f67-98f6-677ec7798be2",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C66",
+      "claim": "Interactions between some vRNA segments may serve as a scaffold that facilitates formation of complete complexes of all eight vRNA segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that interactions between some vRNA segments may serve as a scaffold that facilitates formation of complete complexes of all eight vRNA segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the cited studies on vRNA assembly.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "ba67223d-4096-45d0-aff1-6df313b44fca",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C67",
+      "claim": "The majority of cytoplasmic foci contained all three vRNA segments (PB2, NA, and NS) in H3N2 virus-infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole cytoplasmic analysis of vRNP colocalization in 15 individually analyzed cells revealed that the majority of cytoplasmic foci contained all three vRNA segments (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "d85617a1-fc69-4b7f-b5fa-0d51f058ca7d",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C68",
+      "claim": "PB2-NA vRNP complexes are enriched over either NA-NS or PB2-NS vRNP complexes within 300 nm of the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of newly exported vRNP complexes within 300 nm of the nuclear periphery revealed an enrichment of PB2-NA vRNP complexes over either NA-NS or PB2-NS vRNP complexes (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "83ad2c5b-5f75-4907-8d31-a2e902542295",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C69",
+      "claim": "PB2 and NA preferentially colocalize with each other after nuclear synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that PB2 and NA preferentially colocalize with each other after nuclear synthesis and support the hypothesis that parallel evolution between segments can reveal putative RNA-RNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the microscopy data in Figure 7D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "d950a591-3dc1-4c58-bace-be71b8b1e92f",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C70",
+      "claim": "Parallel evolution between segments can reveal putative RNA-RNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that PB2 and NA preferentially colocalize with each other after nuclear synthesis and support the hypothesis that parallel evolution between segments can reveal putative RNA-RNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion supported by the PB2-NA colocalization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "fdbcb467-38ba-406a-911a-cf9ac941df93",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C71",
+      "claim": "RNA-RNA interactions, in addition to protein interactions, are novel drivers of parallel evolution between vRNA segments in seasonal human influenza viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these data implicate RNA-RNA interactions, in addition to protein interactions, as novel drivers of parallel evolution between vRNA segments in seasonal human influenza viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the combined phylogenetic and microscopy data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "7292cfcd-d7e4-4ba8-b395-a2980f4bb3f9",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C72",
+      "claim": "Parallel evolution varies considerably between vRNA segments, with distinct relationships forming in different influenza virus subtypes (H1N1 vs. H3N2) and between H1N1 virus lineages arising from distinct evolutionary paths.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that parallel evolution varies considerably between vRNA segments, with distinct relationships forming in different influenza virus subtypes (H1N1 vs. H3N2) and between H1N1 virus lineages arising from distinct evolutionary paths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a primary finding in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "e5688b19-aea0-4024-8fed-fa2294ec5a60",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C73",
+      "claim": "Evolutionary relatedness between vRNA segments in H3N2 viruses is largely conserved over time.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that evolutionary relatedness between vRNA segments in H3N2 viruses is largely conserved over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a primary finding in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "3185cf18-ba97-43fb-8185-4919781f273d",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C74",
+      "claim": "Parallel evolution cannot be attributed solely to protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data suggest that parallel evolution cannot be attributed solely to protein interactions, and we successfully predicted intracellular colocalization between two coevolved vRNA segments during infection with an H3N2 virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a primary finding in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "e40a9954-b558-4a7c-9e9e-6fa1defdd721",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C75",
+      "claim": "The authors successfully predicted intracellular colocalization between two coevolved vRNA segments (PB2 and NA) during infection with an H3N2 virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data suggest that parallel evolution cannot be attributed solely to protein interactions, and we successfully predicted intracellular colocalization between two coevolved vRNA segments during infection with an H3N2 virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a primary finding in the Discussion, supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "88f00090-5622-40e8-ad01-0bfb53fc0215",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C76",
+      "claim": "Binding of vRNA segments by NP is non-uniform and non-random.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that binding of vRNA segments by NP is non-uniform and non-random (Le Sage et al., 2018; Lee et al., 2017), supporting the model that intersegmental RNA interactions facilitate selective assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous finding with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "14ca639c-4acb-40c5-bff7-bbde7ffc4dce",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C77",
+      "claim": "The interaction network between vRNA segments is highly flexible and varies between H1N1 and H3N2 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical approaches to define bona fide intersegmental RNA-RNA interactions demonstrated that the interaction network is highly flexible and varies between H1N1 and H3N2 viruses (Dadonaite et al., 2019; Le Sage et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "6ba15aac-e4fb-465a-83bd-eb7f3216961f",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C78",
+      "claim": "Relationships between PB1, PA, NP, and NA are enriched over other segments in H3N2 viruses and conserved over time.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we found that relationships between PB1, PA, NP, and NA are enriched over other segments in H3N2 viruses and conserved over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "f8fd26eb-39eb-4c0a-aec1-00cc572c8756",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C79",
+      "claim": "The polymerase subunits PB2, PB1, and PA form a supramolecular complex around each vRNA segment with NP.",
+      "claim_type": "EXPLICIT",
+      "source": "One might expect PB1, PA, and NP to coevolve because of the functions of the proteins they encode: the polymerase subunits PB2, PB1, and PA form a supramolecular complex around each vRNA segment with NP (Fodor, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "c010dc6d-166f-47ff-8e32-e5892e7410c0",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C80",
+      "claim": "Parallel evolution of NA with PB1, PA, and NP could be driven by RNA-RNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this explanation does not account for the parallel evolution observed between vRNP components and NA, and our microscopy data demonstrates that the NA segment preferentially colocalizes with the vRNA of one such vRNP component, supporting the possibility that parallel evolution of NA with PB1, PA, and NP could also be driven by RNA-RNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the tree similarity and microscopy data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "fa786bdb-f5e0-4a0c-8e80-89aefec40c75",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C81",
+      "claim": "RNA relationships with the NA segment may facilitate selective assembly of vRNA segments.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that RNA relationships with the NA segment may facilitate selective assembly of vRNA segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "16f3fb0c-6177-41ee-b6ee-634d8c1ff95d",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C82",
+      "claim": "Previous pandemic influenza viruses emerged through reassortment.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous pandemic influenza viruses emerged through reassortment (Neumann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical fact with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "34a66ae5-42c3-407c-bde3-a772fe73b03b",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C83",
+      "claim": "The vRNA interactome is distinct among virus strains and highly plastic.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have discussed, experimental investigations of intersegmental RNA interactions indicate that the vRNA interactome is distinct among virus strains and highly plastic (Dadonaite et al., 2019; Le Sage et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "fbd65d08-b0a9-43a3-a8c3-57b0c312229a",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C84",
+      "claim": "Investigation of epistatic relationships between vRNA segments through phylogenetics could inform sequence-based implementation of barriers to reassortment in emerging influenza viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, investigation of epistatic relationships between vRNA segments through phylogenetics could inform sequence-based implementation of barriers to reassortment in emerging influenza viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "73007b2c-7852-44fa-9da6-ae9c24fb1a49",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C85",
+      "claim": "A549 cells were infected with A/Perth/16/2009 (H3N2) at a multiplicity of infection of 2.",
+      "claim_type": "EXPLICIT",
+      "source": "A549 cells were infected with A/Perth/16/2009 (H3N2) at a multiplicity of infection (MOI) of 2 or mock-infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Figure 7 legend as an experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "45d63f2b-d789-412a-a16f-8027fb05e429",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C86",
+      "claim": "Cells were fixed at 8 hr post-infection for FISH-IF analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were fixed at 8 hr post-infection and combination fluorescence in situ hybridization/immunofluorescence (FISH and IF, respectively) was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Figure 7 legend as an experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "0aa24409-f0c3-4481-8bc4-0cf76c379759",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C87",
+      "claim": "A cutoff of 97% sequence identity was selected for clustering based on the observation that it produced vRNA trees with an intermediate number of clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected a cutoff of 97% sequence identity based on the observation that it produced vRNA trees with an intermediate number of clusters (16\u201317 clusters in each species tree).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological decision in the Results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "bd622e24-83e1-43e5-9f85-5506238144a9",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C88",
+      "claim": "More than half of all branches were consistently supported in PB2, PB1, and HA trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, more than half of all branches were consistently supported in PB2, PB1, and HA trees; however, NS trees remained largely unsupported regardless of the sequence identity cutoff selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "892dfa78-cace-4378-871a-b734de5811aa",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C89",
+      "claim": "NS trees remained largely unsupported regardless of the sequence identity cutoff selected.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, more than half of all branches were consistently supported in PB2, PB1, and HA trees; however, NS trees remained largely unsupported regardless of the sequence identity cutoff selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "5b809497-bcd1-4a20-97fc-8ec41882d074",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C90",
+      "claim": "The 95% confidence interval for RF corresponding to trees with 12 leaves was 15.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Low tree distances rarely occurred by chance, with the vast majority of tree distances being greater than 15 in null trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "4c0b54bb-f059-4576-a341-38c82315ead7",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "claim_id": "C91",
+      "claim": "The 95% confidence interval for RF corresponding to trees with 9 leaves was 8.6.",
+      "claim_type": "EXPLICIT",
+      "source": "The 95% confidence interval cutoff for RF corresponding to trees with nine leaves was 8.6 (Figure 2\u2014figure supplement 3C) and is the threshold used for statistical comparison of parallel evolution in vRNA segments from pre-pandemic and post-pandemic H1N1 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "efa311b0-90b2-41bc-8e21-f523d3338ced",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In H3N2 viruses from 2005-2014, phylogenetic tree similarity between vRNA segments varies widely, with PB1-PA showing the highest similarity (RF=6, CID=0.25) and robust parallel evolution observed between PB1, PA, NP, and NA segments. Surprisingly, PB2 showed highest similarity with NA rather than with other polymerase subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C37 provide consistent evidence from multiple distance metrics (RF and CID) showing specific patterns of vRNA segment relationships. The data are well-supported by Figure 2 with appropriate statistical thresholds established via null distributions. The unexpected PB2-NA relationship is clearly documented and reproducible across metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "5e370d4b-1062-4880-8af1-b02dc340373e",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenetic relationships between vRNA segments in H3N2 viruses are largely conserved across two time periods (1995-2004 and 2005-2014), with tree distances showing positive correlation between time periods and only the NS segment showing statistical differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 demonstrate temporal conservation through positive correlation (Figure 3B) and statistical comparison showing only NS differences. However, the authors acknowledge NS trees have consistently low bootstrap support, which weakens interpretation of NS-related findings. The overall conclusion of conservation is well-supported for other segments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "37750941-5b16-4137-854e-0feea35c50ee",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Parallel evolution between vRNA segments differs significantly between H1N1 and H3N2 subtypes, with tree distances from H1N1 viruses showing either modest negative correlation or no correlation with H3N2 viruses from either time period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by linear regression analyses (Figures 4B-C, 5\u2014figure supplement 3) showing lack of correlation between subtypes. This demonstrates subtype-specific vRNA relationships, though the biological mechanisms underlying these differences remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "77b7f51c-46b4-4b99-8719-882b0aaa280f",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Intersegmental relationships diverged significantly between pre-pandemic (2000-2008) and post-pandemic (2010-2018) H1N1 lineages, with specific shifts including displacement of PB1-NP parallel evolution by PB1-NA coevolution and increased coevolution of M and NS with HA and NA in post-pandemic viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 document specific changes in vRNA relationships between H1N1 lineages with statistical support (Figure 5C). The authors appropriately note that some findings may be affected by weaker bootstrap support in post-pandemic H1N1 trees, but the overall pattern of divergence is clear and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "775b578d-51a0-4c77-b1f7-21112167bd64",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Parallel evolution between vRNA segments cannot be attributed solely to protein-coding mutations, as several vRNA segment pairs (including PB2-NA) show significantly greater gene tree similarity than protein tree similarity, suggesting RNA-RNA interactions drive some evolutionary relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C61 are supported by systematic comparison of gene vs protein tree distances (Figure 6). The observation that some pairs lie significantly below the identity line provides evidence for protein-independent evolution. However, alternative explanations like purifying selection are acknowledged but not definitively ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "8b52659b-c562-4161-a223-82180834da64",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PB2 and NA vRNA segments preferentially colocalize at the nuclear periphery during H3N2 virus infection, with PB2-NA vRNP complexes enriched over NA-NS or PB2-NS complexes within 300 nm of the nucleus, validating the phylogenetic prediction of RNA-RNA interactions between these segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are supported by quantitative microscopy data (Figure 7D) showing statistically significant enrichment of PB2-NA colocalization (p<0.05). The experimental design appropriately focuses on perinuclear regions where assembly intermediates form. This provides direct experimental validation of the phylogenetic predictions, though causality between colocalization and evolutionary constraint is inferred rather than proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "b59b094d-f4f9-466e-8d8c-9edd899a535b",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA-RNA interactions, in addition to protein interactions, are drivers of parallel evolution between vRNA segments in seasonal human influenza viruses, with implications for understanding selective assembly mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C7, C80-C81 represent the main conclusions integrating phylogenetic and experimental evidence. The conclusion is well-supported by the combination of protein-independent tree similarity patterns and experimental validation of PB2-NA colocalization. However, the mechanistic link between RNA interactions and evolutionary constraint remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "cf4d89fb-2343-4ce3-8372-f70bddd31258",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A clustering approach using 97% sequence identity cutoff was developed to select representative strains that produce phylogenetic trees with improved bootstrap support, though NS trees remained largely unsupported regardless of cutoff.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C87-C89 describe methodological decisions that are clearly justified. The 97% cutoff balanced cluster number with bootstrap support. The persistent lack of NS tree support is acknowledged as a limitation and appropriately affects interpretation of NS-related findings throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "2b049310-ebee-488c-8aef-631940a2cbdf",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Statistical thresholds for tree similarity were established using null distributions of randomly generated trees, with 95% confidence intervals of RF=15.3 for 12-leaf trees (H3N2) and RF=8.6 for 9-leaf trees (H1N1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 and C17-C19 describe the statistical framework using Robinson-Foulds distance and establish appropriate null distributions (Figure 2\u2014figure supplement 3). This provides a rigorous basis for determining which tree similarities are unlikely to occur by chance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "766c1908-3a8b-42a5-9a3f-da3a94ed00af",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The phylogenetic tree similarity approach successfully captures known protein-protein interactions, as demonstrated by high similarity between PB1 and PA trees (RF=6), which encode interacting polymerase subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C21, C28-C29 demonstrate that the method can detect expected relationships based on known protein interactions. This serves as a positive control validating the approach, though it is a relatively straightforward validation of an established relationship.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "f590e428-fa1e-4398-b763-393b374de6fb",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Whole cytoplasmic analysis of H3N2-infected A549 cells at 8 hours post-infection revealed that the majority of cytoplasmic foci contained all three vRNA segments (PB2, NA, NS) analyzed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C85-C86 describe experimental observations from FISH-IF microscopy. The finding is clearly stated and supported by Figure 7C, though the authors appropriately note this likely represents heterogeneity in assembly stages and is less informative than the perinuclear analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "2a21bace-8764-492a-bee6-70cb5299b8b0",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In protein tree analysis of H3N2 viruses, HA and NA showed the greatest parallel evolution and were the only vRNA pair lying significantly above the identity line when comparing gene and protein distances, supporting known epistatic interactions between these proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 confirm expected HA-NA protein coevolution, which is well-established in the literature. This serves as another validation of the approach but represents confirmation of known biology rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    },
+    {
+      "id": "fac8c8d6-71ef-4455-bab9-eedf2e905139",
+      "content_id": "7d263bd6-c071-4bc7-b9b5-2950906157c9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Relationships between PB1, PA, NP, and NA are enriched over other segments in H3N2 viruses and conserved over time, suggesting these may represent core assembly relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78 and C37 summarize a key pattern observed in H3N2 viruses. This is well-supported by the data in Figures 2-3 and network analyses, representing a novel finding about conserved vRNA relationships in H3N2 viruses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:20.900210Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1a7b75fb-58e8-430f-8912-40db28124aa3",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "a3f38a8d-9e0c-4a6b-8101-51e1f32c4697",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "a330a774-ded8-4abf-8140-4891caf75963",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "07b893ba-a601-4cd5-a28c-13f426dc0716",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "c030c85c-e9f1-44dc-93fb-ab4268047b3d",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "0705b5cc-22f1-4a28-9a82-f1c3fa801e2e",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "0cfbb077-80b7-467b-9c26-01ae2385e275",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "7a701e54-ab0c-43f1-93d5-d81495bd03b1",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "23ea8f10-36d4-49bb-9d81-d3a78babe5f2",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "d3f1601b-9782-4892-96a3-7d72b655332d",
+      "result_id": "efa311b0-90b2-41bc-8e21-f523d3338ced"
+    },
+    {
+      "claim_id": "3977b45e-0127-461f-b1d2-1756402c895c",
+      "result_id": "5e370d4b-1062-4880-8af1-b02dc340373e"
+    },
+    {
+      "claim_id": "be7a27cf-b3ea-48db-85e7-ffea14cedbed",
+      "result_id": "5e370d4b-1062-4880-8af1-b02dc340373e"
+    },
+    {
+      "claim_id": "c3ca9059-9a23-4d29-a37d-0bb84b9d0f00",
+      "result_id": "5e370d4b-1062-4880-8af1-b02dc340373e"
+    },
+    {
+      "claim_id": "d7a6f3a5-cbee-4d31-9733-add2399c1e12",
+      "result_id": "5e370d4b-1062-4880-8af1-b02dc340373e"
+    },
+    {
+      "claim_id": "edbeda18-d078-4fd0-aaad-94d06dfb862c",
+      "result_id": "5e370d4b-1062-4880-8af1-b02dc340373e"
+    },
+    {
+      "claim_id": "e5688b19-aea0-4024-8fed-fa2294ec5a60",
+      "result_id": "5e370d4b-1062-4880-8af1-b02dc340373e"
+    },
+    {
+      "claim_id": "8e66f8b2-2a77-4981-8b66-c3fc146b2d1d",
+      "result_id": "37750941-5b16-4137-854e-0feea35c50ee"
+    },
+    {
+      "claim_id": "7361e66a-689b-44c9-a237-7f98525834ae",
+      "result_id": "37750941-5b16-4137-854e-0feea35c50ee"
+    },
+    {
+      "claim_id": "c7749413-c547-4447-9c2b-f8911dae1d02",
+      "result_id": "37750941-5b16-4137-854e-0feea35c50ee"
+    },
+    {
+      "claim_id": "7292cfcd-d7e4-4ba8-b395-a2980f4bb3f9",
+      "result_id": "37750941-5b16-4137-854e-0feea35c50ee"
+    },
+    {
+      "claim_id": "4a45c705-65c2-45cf-9954-2eb62a40943b",
+      "result_id": "77b7f51c-46b4-4b99-8719-882b0aaa280f"
+    },
+    {
+      "claim_id": "c6fe03ec-ceb9-4381-b798-f6bb2d365999",
+      "result_id": "77b7f51c-46b4-4b99-8719-882b0aaa280f"
+    },
+    {
+      "claim_id": "8e8a01a8-56de-44c2-832a-66b8aaadcf80",
+      "result_id": "77b7f51c-46b4-4b99-8719-882b0aaa280f"
+    },
+    {
+      "claim_id": "636b1f80-0646-4283-8725-2d6e6f51fcfb",
+      "result_id": "77b7f51c-46b4-4b99-8719-882b0aaa280f"
+    },
+    {
+      "claim_id": "928bbf05-3835-48a1-95de-7bf76d9963dd",
+      "result_id": "77b7f51c-46b4-4b99-8719-882b0aaa280f"
+    },
+    {
+      "claim_id": "6a175553-9a72-4e4b-b5b3-71656be221d7",
+      "result_id": "77b7f51c-46b4-4b99-8719-882b0aaa280f"
+    },
+    {
+      "claim_id": "57480277-bb6f-499d-b84c-414e36568c1f",
+      "result_id": "77b7f51c-46b4-4b99-8719-882b0aaa280f"
+    },
+    {
+      "claim_id": "60db63bd-6f5f-453b-b378-b3a7788a2239",
+      "result_id": "775b578d-51a0-4c77-b1f7-21112167bd64"
+    },
+    {
+      "claim_id": "ec2accd4-0a4e-408d-b066-133a7edd8f8d",
+      "result_id": "775b578d-51a0-4c77-b1f7-21112167bd64"
+    },
+    {
+      "claim_id": "d53671c5-e62e-405f-b6b3-f8f5c9c5b317",
+      "result_id": "775b578d-51a0-4c77-b1f7-21112167bd64"
+    },
+    {
+      "claim_id": "3ec9b4df-c948-4b28-a4df-6baa3f5e623b",
+      "result_id": "775b578d-51a0-4c77-b1f7-21112167bd64"
+    },
+    {
+      "claim_id": "44825188-a885-4857-a1b8-7473de805ce0",
+      "result_id": "775b578d-51a0-4c77-b1f7-21112167bd64"
+    },
+    {
+      "claim_id": "d7849286-9049-44ce-84c8-da4d7096ac01",
+      "result_id": "775b578d-51a0-4c77-b1f7-21112167bd64"
+    },
+    {
+      "claim_id": "3185cf18-ba97-43fb-8185-4919781f273d",
+      "result_id": "775b578d-51a0-4c77-b1f7-21112167bd64"
+    },
+    {
+      "claim_id": "d85617a1-fc69-4b7f-b5fa-0d51f058ca7d",
+      "result_id": "8b52659b-c562-4161-a223-82180834da64"
+    },
+    {
+      "claim_id": "83ad2c5b-5f75-4907-8d31-a2e902542295",
+      "result_id": "8b52659b-c562-4161-a223-82180834da64"
+    },
+    {
+      "claim_id": "d950a591-3dc1-4c58-bace-be71b8b1e92f",
+      "result_id": "8b52659b-c562-4161-a223-82180834da64"
+    },
+    {
+      "claim_id": "4ecca7bb-a199-48aa-9d10-a2b3e2479834",
+      "result_id": "8b52659b-c562-4161-a223-82180834da64"
+    },
+    {
+      "claim_id": "e40a9954-b558-4a7c-9e9e-6fa1defdd721",
+      "result_id": "8b52659b-c562-4161-a223-82180834da64"
+    },
+    {
+      "claim_id": "fdbcb467-38ba-406a-911a-cf9ac941df93",
+      "result_id": "b59b094d-f4f9-466e-8d8c-9edd899a535b"
+    },
+    {
+      "claim_id": "42f728b7-cbd6-4895-8aeb-865824face47",
+      "result_id": "b59b094d-f4f9-466e-8d8c-9edd899a535b"
+    },
+    {
+      "claim_id": "c010dc6d-166f-47ff-8e32-e5892e7410c0",
+      "result_id": "b59b094d-f4f9-466e-8d8c-9edd899a535b"
+    },
+    {
+      "claim_id": "fa786bdb-f5e0-4a0c-8e80-89aefec40c75",
+      "result_id": "b59b094d-f4f9-466e-8d8c-9edd899a535b"
+    },
+    {
+      "claim_id": "eef82120-d8b6-4675-9780-a5ea5210ee7b",
+      "result_id": "cf4d89fb-2343-4ce3-8372-f70bddd31258"
+    },
+    {
+      "claim_id": "0aa24409-f0c3-4481-8bc4-0cf76c379759",
+      "result_id": "cf4d89fb-2343-4ce3-8372-f70bddd31258"
+    },
+    {
+      "claim_id": "bd622e24-83e1-43e5-9f85-5506238144a9",
+      "result_id": "cf4d89fb-2343-4ce3-8372-f70bddd31258"
+    },
+    {
+      "claim_id": "892dfa78-cace-4378-871a-b734de5811aa",
+      "result_id": "cf4d89fb-2343-4ce3-8372-f70bddd31258"
+    },
+    {
+      "claim_id": "5b809497-bcd1-4a20-97fc-8ec41882d074",
+      "result_id": "2b049310-ebee-488c-8aef-631940a2cbdf"
+    },
+    {
+      "claim_id": "4c0b54bb-f059-4576-a341-38c82315ead7",
+      "result_id": "2b049310-ebee-488c-8aef-631940a2cbdf"
+    },
+    {
+      "claim_id": "64d2771a-2e42-4079-b789-90cdfe4fd828",
+      "result_id": "2b049310-ebee-488c-8aef-631940a2cbdf"
+    },
+    {
+      "claim_id": "0f4707ad-b164-4e8d-9ebc-ddde800b2de0",
+      "result_id": "2b049310-ebee-488c-8aef-631940a2cbdf"
+    },
+    {
+      "claim_id": "ad6a611b-688d-4267-8775-d439f1e4ac0d",
+      "result_id": "2b049310-ebee-488c-8aef-631940a2cbdf"
+    },
+    {
+      "claim_id": "04777a00-4c0b-4ae9-958b-48b078fdc072",
+      "result_id": "766c1908-3a8b-42a5-9a3f-da3a94ed00af"
+    },
+    {
+      "claim_id": "2a8a2989-a08d-4c95-83a7-80246a081705",
+      "result_id": "766c1908-3a8b-42a5-9a3f-da3a94ed00af"
+    },
+    {
+      "claim_id": "1a7b75fb-58e8-430f-8912-40db28124aa3",
+      "result_id": "766c1908-3a8b-42a5-9a3f-da3a94ed00af"
+    },
+    {
+      "claim_id": "a3f38a8d-9e0c-4a6b-8101-51e1f32c4697",
+      "result_id": "766c1908-3a8b-42a5-9a3f-da3a94ed00af"
+    },
+    {
+      "claim_id": "ba67223d-4096-45d0-aff1-6df313b44fca",
+      "result_id": "f590e428-fa1e-4398-b763-393b374de6fb"
+    },
+    {
+      "claim_id": "73007b2c-7852-44fa-9da6-ae9c24fb1a49",
+      "result_id": "f590e428-fa1e-4398-b763-393b374de6fb"
+    },
+    {
+      "claim_id": "45d63f2b-d789-412a-a16f-8027fb05e429",
+      "result_id": "f590e428-fa1e-4398-b763-393b374de6fb"
+    },
+    {
+      "claim_id": "9c8b42f2-cdcc-4263-a403-d72f5c52e9e8",
+      "result_id": "2a21bace-8764-492a-bee6-70cb5299b8b0"
+    },
+    {
+      "claim_id": "1bd1f1e0-0ba0-42ca-9e61-3e8b7ed505b6",
+      "result_id": "2a21bace-8764-492a-bee6-70cb5299b8b0"
+    },
+    {
+      "claim_id": "78923f47-5e0c-492f-829f-42fe8dd55717",
+      "result_id": "2a21bace-8764-492a-bee6-70cb5299b8b0"
+    },
+    {
+      "claim_id": "81b8eaeb-1a2d-452c-9c76-7d9481e6295e",
+      "result_id": "2a21bace-8764-492a-bee6-70cb5299b8b0"
+    },
+    {
+      "claim_id": "6ba15aac-e4fb-465a-83bd-eb7f3216961f",
+      "result_id": "fac8c8d6-71ef-4455-bab9-eedf2e905139"
+    },
+    {
+      "claim_id": "d3f1601b-9782-4892-96a3-7d72b655332d",
+      "result_id": "fac8c8d6-71ef-4455-bab9-eedf2e905139"
+    }
+  ],
+  "comparisons": []
+}

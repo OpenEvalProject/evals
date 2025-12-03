@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C84"
+    ],
+    "result": "H2B-GFP fluorescence intensity correlates with chromatin compaction states, where high intensity indicates heterochromatin, lower intensity indicates euchromatin, and lowest intensity indicates nucleoli. TSA treatment disrupts these intensity differences, validating the method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 demonstrate colocalization of H2B-GFP with known chromatin markers (H3K9me3, RNA Pol II, Nucleolin) through immunofluorescence. C7 shows TSA treatment disrupts chromatin compaction patterns, providing functional validation. C84 cites established literature supporting the H2B-GFP system. The validation is comprehensive with both correlative and perturbative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C86"
+    ],
+    "result": "Basal stem cells exhibit heterogeneous chromatin compaction states that are independent of cell cycle status. Cell cycle arrest via p27 overexpression does not eliminate chromatin compaction heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C8 documents heterogeneity in basal cells. C10-C11 show that p27-induced G1 arrest does not change population-level chromatin compaction or eliminate heterogeneity in PHATE analysis. C12 synthesizes these findings. However, the claim relies on a single perturbation (p27) and does not rule out other cell cycle-related factors. The statistical test used (permutation test) is appropriate but sample sizes per condition are not clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Basal stem cells and differentiated spinous cells have distinct chromatin compaction profiles, with differentiated cells showing a shift toward lower fluorescence intensity bins, indicating increased nuclear lamina/nucleoli regions and decreased euchromatin/heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C16 presents quantitative chromatin compaction differences between basal and spinous cells. C15 provides qualitative observations supporting structural differences. C17 interprets the shift based on the normalization method. The interpretation in C17 is logical given the normalization approach, but alternative explanations (e.g., changes in histone density, H2B-GFP expression levels) are not explicitly ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Loss of SRF causes transcriptional identity shifts in the epidermis and corresponding changes in chromatin compaction. Spinous cells in SRF heterozygous mice adopt more basal-like chromatin compaction states, reflecting breakdown of transcriptional identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C19 shows SRF loss causes K14 expansion into spinous layers. C21-C22 demonstrate corresponding chromatin compaction changes. C20 provides an important control showing Cre expression alone doesn't affect chromatin. However, only heterozygous SRF knockout is tested, and the mechanism linking SRF to chromatin changes is not established. The result demonstrates correlation between transcriptional and chromatin changes but not causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Chromatin compaction in basal stem cells is stable over 3 hours. Delaminating cells exhibit chromatin spinning without changes in compaction state over the same timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C24-C25 show stability in basal cells over 3 hours with both visual and quantitative evidence. C26 documents chromatin spinning in delaminating cells, and C28 shows no compaction changes despite spinning. C27 is an inference about nuclear rotation based on other systems. The 3-hour timeframe is appropriate for the claim but relatively short; longer timescales are addressed in other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Chromatin compaction transitions occur gradually over days during differentiation. Delaminating cells show intermediate chromatin states, and tracked cells demonstrate progressive chromatin changes as they move from basal to spinous layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C31-C32 provide longitudinal tracking data showing gradual chromatin changes over 4 days correlated with cell position. C29 shows delaminating cells have intermediate states. C33 synthesizes these findings. The tracking approach is rigorous, though the number of tracked cells and tracking success rate are not clearly stated. The correlation between distance from collagen and differentiation state is assumed but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Chromatin compaction changes begin within the basal stem cell layer prior to delamination. K10-positive basal cells show intermediate chromatin compaction profiles compared to K10-negative cells, indicating chromatin remodeling coincides with differentiation commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C37-C38 show K10+ basal cells have distinct, intermediate chromatin states. C36 establishes K10 expression as a commitment marker (from cited work). C39 synthesizes the conclusion. The K10rtTA reporter system requires multiple steps (transcription, translation, recombination), so there may be a temporal lag between K10 transcription initiation and reporter detection. This limitation is acknowledged in C44 but doesn't invalidate the finding of chromatin changes in committed basal cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PHATE analysis and Louvain clustering of basal stem cells reveal five distinct chromatin compaction clusters representing a differentiation trajectory from basal-like to nearly differentiated states. K10+ cells are enriched in more differentiated clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C40 documents five clusters from unsupervised analysis. C41 shows clusters represent a differentiation trajectory. C42 shows K10 status correlates with cluster position. The unsupervised nature of the clustering strengthens the finding. However, the choice of clustering parameters (k=50 nearest neighbors) and validation of cluster stability are not discussed. The interpretation of clusters as a trajectory is reasonable but assumes a linear differentiation path.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Live imaging of endogenous Keratin-10 transcription reveals dynamic transcriptional bursting in basal stem cells. Approximately 15% of basal cells actively transcribe K10 at any time, with 75% showing dynamic on/off behavior over 1 hour. Burst duration ranges from 3 minutes to 1.25 hours, and burst frequency ranges from 1 to >4 events per hour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C47-C50 provide quantitative characterization of K10 transcription dynamics. C46 validates that transcription occurs in euchromatic regions. C44 explains the MS2/MCP system captures earlier transcription than K10rtTA. The temporal resolution (3 min intervals) is appropriate for capturing bursting dynamics. However, the heterozygous K10-MS2 allele means only one allele is visualized, potentially missing biallelic transcription dynamics. The comparison to cell culture studies (C51) is appropriate but in vivo dynamics may differ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C70"
+    ],
+    "result": "Keratin-10 transcriptional activity is flexibly dynamic across days. Only 40% of K10 'on' cells remain 'on' the next day, and 60% of 'dynamic' cells remain 'dynamic', with remaining cells showing varied behaviors including complete transcriptional cessation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C52-C53 provide longitudinal data showing transcriptional flexibility over 24 hours. C54 and C70 interpret this as evidence for flexible commitment to differentiation. The day-to-day tracking is technically challenging and the data support the claim. However, the interpretation of transcriptional cessation as 'flexibility' in differentiation commitment (C70) is somewhat speculative\u2014cells may still be committed but show variable transcription. Alternative explanations like transcriptional pausing are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Cells actively transcribing Keratin-10 have chromatin compaction states similar to non-transcribing cells, suggesting chromatin remodeling occurs after K10 transcription initiation. K10 'on' and 'dynamic' cells have nearly identical chromatin states despite different transcriptional behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C55 shows K10-transcribing cells have similar chromatin to non-transcribing cells, though trending toward K10rtTA+ cells. C57 shows 'on' and 'dynamic' cells are nearly identical in chromatin state. C56 and C58 interpret these findings as chromatin changes following transcription initiation. The interpretation is logical given the MS2 system captures earlier events than K10rtTA. However, 'similar' chromatin states may still include subtle differences not detected by this global method. The trending toward K10rtTA+ states (C55) suggests changes may be beginning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study discovers chromatin compaction heterogeneity in epidermal stem cells arising from gradual differentiation-associated shifts beginning before delamination. Most global chromatin reorganization occurs between K10 transcription initiation and delamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the major findings. C61-C63 summarize key observations. C64 presents the temporal model. The model is well-supported by the combined evidence from K10 transcription dynamics (early, with minimal chromatin changes) and K10rtTA reporter data (later, with significant chromatin changes). However, the model is based on population-level inferences and snapshots rather than continuous tracking of individual cells through the entire process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C34",
+      "C59",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Background and context claims establishing epidermal biology, chromatin architecture principles, and gaps in current knowledge that motivate the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge (C1, C75-C76, C79) and cite relevant literature (C2-C3, C13, C34, C59, C77-C78, C80, C82). C81 and C83 identify knowledge gaps. All are appropriately supported by citations or represent standard knowledge in the field. These are contextual rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Discussion claims contextualizing findings within existing literature, proposing mechanistic interpretations, and suggesting future applications of the chromatin compaction method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C60, C65, C71 cite relevant literature for context. C66 speculates about mechanisms linking local and global chromatin dynamics. C67-C69 discuss flexibility in early differentiation based on cited work and current findings. C72 claims the study enriches understanding but is self-assessment. C73-C74 propose future applications but are speculative. These discussion points are reasonable but mix established facts, interpretations, and speculation without clear experimental support for mechanistic claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C18",
+      "C35",
+      "C36",
+      "C85"
+    ],
+    "result": "Citations to prior work establishing relevant background facts about epidermal cell biology, chromatin heterogeneity, and differentiation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite published literature to establish context. C14 cites nuclear morphology differences, C18 cites SRF function, C35-C36 cite K10 as a commitment marker, and C85 cites chromatin heterogeneity at finer scales. All are appropriate uses of prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Control experiment showing Cre expression alone does not affect chromatin compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C20 provides an important negative control for the SRF experiment, showing the genetic manipulation system itself doesn't cause chromatin changes. This is essential for interpreting the SRF results but is a methodological control rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Inference that entire nuclei of delaminating cells rotate based on observations in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C27 is an inference based on literature from other systems (Kumar et al., 2014; Zhu et al., 2018). The H2B-GFP system only visualizes chromatin, not the entire nucleus. While the inference is reasonable, it is not directly demonstrated in this study. Nuclear membrane markers would be needed to confirm whole-nucleus rotation.",
+    "result_type": "MINOR"
+  }
+]

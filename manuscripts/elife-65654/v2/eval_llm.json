@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Under amplitude modulation (AM) light induction, the LightOn system exhibits a bell-shaped noise profile with maximum noise (CV ~2.5) at intermediate light intensities (~10 \u03bcW/cm\u00b2), and single-cell distributions show bimodal patterns. Similar bimodality was observed in the Tet-On system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are directly supported by flow cytometry data (Figures 1C-F, Figure 2\u2014supplement 1B) showing dose-dependent mean expression, bell-shaped CV profiles, and bimodal distributions at intermediate induction levels. The observations are consistent across multiple cell lines and induction systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C96"
+    ],
+    "result": "Pulse-width modulation (PWM) with periods \u2265400 min significantly reduces gene expression noise at intermediate light intensities while maintaining mean expression levels, by eliminating bimodal distributions and generating intermediate expression states. This effect is period-dependent and generalizable across mammalian cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C96 are well-supported by extensive flow cytometry data (Figures 1C-F, supplements) showing PWM-dependent noise reduction across HeLa and F9 cells. The period-dependence is clearly demonstrated, and the elimination of bimodal distributions is evident in distribution plots. The phenomenological approach for independent modulation is validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C108"
+    ],
+    "result": "Bimodality in the LightOn system is robust and independent of transgene copy number (3-11 copies), and narrow GFP-GAVPO input (CV <<0.05) can still generate bimodal mRuby expression with high noise (CV ~1.7), indicating that transcriptional activator concentration variation alone cannot explain the observed bimodality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C108 are supported by data from multiple HeLa-A1B1B3 clones with different copy numbers (Figure 1\u2014supplement 5) and analysis of narrow GFP-GAVPO subpopulations (Figure 1\u2014supplement 2C). This effectively rules out simple noise propagation from activator concentration and supports a more complex mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Among tested histone modification inhibitors, only LMK-235 (HDAC4/5 inhibitor) significantly increased mRuby expression and steepened the GAVPO-mRuby response curve, but had minimal impact on noise reduction. This effect was observed across multiple cell lines and induction systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by flow cytometry data comparing multiple inhibitors (Figures 2A-C, supplements). The specificity of LMK-235 effect and its limited impact on noise are clearly demonstrated. However, the mechanism by which HDAC4/5 inhibition increases expression without reducing noise requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Single-cell tracking reveals that cells maintain relatively stable high or low mRuby expression states over 40 hours with low transition probabilities, despite similar GFP-GAVPO levels between states. This is consistent with bistability involving stochastic state switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by live-cell imaging data (Figure 2G-H) showing state persistence and rare transitions. The similar GAVPO levels between states support the bistability hypothesis. However, the limited tracking duration (40 hr) and protein half-life constraints prevent full quantification of transition rates, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Priming cells with high-intensity light produces only minor shifts toward high expression states after 48 hours of intermediate AM induction, which the authors attribute to rapid CBP/p300 H3K27 acetylation kinetics increasing stochastic transitions between states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 show visible but minor priming effects (Figures 2I-J). However, the interpretation that rapid acetylation kinetics prevent stronger priming effects is speculative and not directly tested. Alternative explanations (e.g., mCardinal-PEST half-life, incomplete priming) are not fully excluded. Additional experiments with varied priming durations or acetylation kinetics modulation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "Inhibition of CBP/p300 HAT activity with A-485 eliminates bimodal expression and reduces noise by generating intermediate expression states, while simultaneously reducing mean expression. Combined inhibition of CBP/p300 and HDAC4/5 restores mean expression while maintaining noise reduction, demonstrating that p65-CBP/p300 interaction and CBP/p300 activity are necessary for transcriptional bimodality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C50 are well-supported by flow cytometry data with A-485 alone and combined with LMK-235 (Figures 3A-F). The elimination of bimodality and noise reduction are clearly demonstrated. The combined inhibitor approach effectively decouples mean expression from noise, supporting the proposed mechanism involving HAT/HDAC balance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "A GAVPO mutant (L449A/F473A) that disrupts direct p65AD-CBP/p300 interaction eliminates bimodal expression and produces narrow intermediate expression distributions. Further HDAC4/5 inhibition increases expression and light sensitivity in these mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by flow cytometry data from HeLa-A3B2 cells (Figures 3G-H). The mutant phenotype provides genetic evidence complementing the pharmacological inhibition results, strengthening the conclusion that direct p65AD-CBP/p300 interaction is required for bimodality. The specificity of the mutation is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ChIP-seq and ATAC-seq analyses reveal that mRuby-high cells have ~4-fold higher H3K27ac levels than mRuby-low and dark control cells, with a hierarchy of chromatin accessibility (high > low > dark) near the TSS. H3K27ac correlates with LightOn gene expression state, consistent with a critical role for CBP/p300.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by ChIP-seq and ATAC-seq data from sorted cell populations (Figures 3J-K). The quantitative differences in H3K27ac and chromatin accessibility between expression states provide direct epigenetic evidence for the proposed mechanism. The correlation between histone acetylation and expression state is clear, though causality requires additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Single-cell ATAC-seq during PWM light induction reveals that chromatin accessibility gradually increases with each light cycle, with high initial heterogeneity (CV=3.8) that rapidly decreases after 150 min of illumination (CV=2.6). Cells maintain partial epigenetic 'memory' during 'off' periods, with accessibility not returning to baseline, resulting in incremental reduction in variability across cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C66 are supported by single-cell ATAC-seq time course data (Figures 4B-E) showing dynamic changes in chromatin accessibility. The quantitative measurements of mean reads and CV across time points clearly demonstrate the proposed dynamics. The observation of epigenetic memory during 'off' periods is particularly important for understanding PWM noise reduction. However, the limited number of time points (6) constrains detailed kinetic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Single-cell mRNA imaging reveals that AM induction produces high initial variation that decreases over time, while PWM generates clear pulsatile nuclear mRNA counts (200 min period) with steady, intermediate heterogeneity levels. The mRNA heterogeneity during PWM remains consistently lower than AM at 25 \u03bcW/cm\u00b2, suggesting cells alternate between epigenetic states rather than being trapped in the bistable region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 are supported by single-cell mRNA imaging data (Figures 5B-G) showing distinct dynamics between AM and PWM conditions. The pulsatile mRNA dynamics during PWM and steady intermediate noise levels provide strong evidence for the proposed mechanism. The observation that noise remains steady during both 'on' and 'off' phases supports the alternating states model. Technical challenges with long-term imaging are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C78"
+    ],
+    "result": "Periodic fluctuations in chromatin accessibility during PWM do not directly translate to single-cell protein dynamics, which lack periodic oscillations, likely due to the longer half-life of mRuby protein acting as a low-pass filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C78 are supported by comparison of ATAC-seq dynamics (Figure 4) with protein tracking data (Figure 5\u2014supplement 1). The absence of protein oscillations despite chromatin and mRNA oscillations is consistent with known protein stability properties. This observation is important for understanding how molecular dynamics at different levels integrate to produce the observed phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C94"
+    ],
+    "result": "In mES cells, the Rex1-GFP/Oct4-mCherry knock-in line exhibits bimodal Rex1-GFP expression (97% high, 3% low). Treatment with A-485 and LMK-235 converges expression to an intermediate state, suggesting CBP/p300 may contribute to heterogeneous expression states in embryonic stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85, C94 are supported by flow cytometry data from mES cells (Figures 6A-B). The convergence of bimodal Rex1 expression to intermediate levels with inhibitor treatment parallels the LightOn system results. However, the authors appropriately note that global CBP/p300 inhibition may have indirect effects, limiting mechanistic conclusions. This result extends the findings beyond synthetic systems to endogenous gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "scRNA-seq analysis reveals that combined CBP/p300 and HDAC4/5 inhibition produces a large, significant reduction in CV (3.49 to 2.55) for high-CV genes in HeLa and F9 cells, with similar effects for CBP/p300 or p65 target genes. Low-CV genes show a slight increase in CV (1.30 to 1.45). This provides evidence that CBP/p300 positively contributes to noise in global gene expression, especially for highly heterogeneous genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 are supported by scRNA-seq data from HeLa-AB1 and F9-AB2 cells (Figures 6C-G, supplement 1). The differential effects on high-CV versus low-CV genes are clearly demonstrated with appropriate statistical analysis. The use of human-mouse mixed samples as internal controls strengthens the analysis. However, the indirect nature of the evidence (pharmacological inhibition) and potential off-target effects limit mechanistic certainty. The claim that this is 'first indirect evidence' is appropriate given these limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C99",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose a mechanistic model where light-activated GAVPO recruits CBP/p300, which both facilitates transcription initiation and acetylates nearby histones, creating a positive feedback loop that generates bistability at intermediate GAVPO concentrations. The time scales of PWM noise reduction overlap with epigenetic regulation by HDAC4 and CBP/p300, and p65AD/VP16 interactions with CBP/p300 are widely used in synthetic and endogenous systems, suggesting this could be a general noise modulation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C33-C35, C99, C115-C116 integrate experimental findings with literature knowledge to propose a coherent mechanistic model. The model is supported by: (1) inhibitor and mutant experiments showing CBP/p300 requirement, (2) ChIP-seq/ATAC-seq showing epigenetic state differences, (3) time scale matching between PWM effects and known CBP/p300 kinetics, and (4) literature on p65AD/VP16-CBP/p300 interactions. While the positive feedback loop is inferred rather than directly demonstrated, the convergent evidence from multiple experimental approaches strongly supports this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Time course analysis shows mRuby expression increases from 2-300 min, reaching plateau at ~2000 min (PWM) or ~2800 min (AM), with noise levels remaining constant from 1000 min onwards. The delayed onset is partially due to mRuby maturation time (~150 min), and PWM with long periods is needed to maintain low noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by time course flow cytometry data (Figures 1I-J). The kinetic measurements provide important context for understanding the dynamics of noise reduction. The interpretation regarding mRuby maturation time is reasonable based on known protein properties. The observation that long PWM periods are required for sustained noise reduction is important for practical applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The PWM noise reduction mechanism in this study differs from Benzinger and Khammash's yeast system, as no sigmoidal GAVPO-mRuby response curve was observed, and noise levels under AM induction are too high to be explained by their noise propagation hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 appropriately distinguish this work from prior studies. The absence of a sigmoidal response curve is clearly shown (Figures 1G-H), and the quantitative analysis demonstrates that the Benzinger and Khammash model cannot explain the observed bimodality and high noise levels. This comparison strengthens the novelty of the proposed epigenetic bistability mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The T2A peptide linker ensures tetR-GFP and GAVPO undergo transcription and translation together, with minimal intrinsic variation between 2A-linked proteins in mammalian cells. A GFP-GAVPO fusion would enable direct quantification but would reduce GAVPO activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 address an important experimental design consideration. The use of T2A-linked GFP as a proxy for GAVPO is justified by citation to recent work (Quarton et al., 2020) showing minimal variation. The authors appropriately acknowledge the limitation that post-translational processes may differ, and explain why direct fusion was not used. This transparency strengthens confidence in the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors propose a model where each of nine genomic insertion sites in HeLa-AB1 cells independently exhibits high and low expression states, with the nine high expression peaks compounding into a broad 'high' peak that is well-separated from the 'low' peak, generating apparent bimodal distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by whole genome sequencing identifying nine insertion sites (Figure 3\u2014supplement 1B) and modeling showing that independent site behavior can generate observed distributions (Figure 3\u2014supplement 2). This model reconciles the observation of bimodality with multiple insertion sites. However, direct single-cell measurement of individual loci would provide stronger evidence, as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The study establishes a comprehensive picture of noise modulation dynamics from chromatin accessibility to mRNA and protein levels using single-cell analysis, with noise reduction exhibiting dose-response to PWM period, enabling independent modulation of mean expression and noise for future cell-fate control studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 accurately summarize the multi-level single-cell analyses performed (flow cytometry, live-cell imaging, ATAC-seq, mRNA imaging, scRNA-seq). The integration of these approaches provides unprecedented detail on noise modulation mechanisms. The period-dependent dose-response is clearly demonstrated, supporting the practical application claim. This represents a significant technical and conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors acknowledge that the mechanism reducing temporal fluctuations may limit direct validation of bistability, with quantification of state transitions hindered by mRuby's long half-life and slow maturation. They suggest future experiments with shorter-lived reporters could better assess bistability dynamics, and note that additional epigenetic modifiers may contribute to more complex dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 represent appropriate acknowledgment of experimental limitations and suggestions for future work. The authors correctly identify technical constraints preventing full bistability validation and propose reasonable solutions. This transparency about limitations and speculation about additional mechanisms demonstrates scientific rigor and provides direction for future research.",
+    "result_type": "MINOR"
+  }
+]

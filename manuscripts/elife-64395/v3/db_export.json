@@ -1,0 +1,1813 @@
+{
+  "submission": {
+    "id": "fe81674c-76f5-4abb-a7da-e627bf7742ba",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:20:58.066536Z",
+    "updated_at": "2025-12-03T02:20:58.066536Z"
+  },
+  "content": [
+    {
+      "id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "submission_id": "fe81674c-76f5-4abb-a7da-e627bf7742ba",
+      "content_type": "manuscript",
+      "content_text": "# Complex structures of Rsu1 and PINCH1 reveal a regulatory mechanism of the ILK/PINCH/Parvin complex for F-actin dynamics\n\n## Authors\n\n- Haibin Yang<sup>1</sup> ([ORCID: 0000-0002-6902-6941](https://orcid.org/0000-0002-6902-6941))\n- Leishu Lin<sup>1</sup> ([ORCID: 0000-0002-1214-4760](https://orcid.org/0000-0002-1214-4760))\n- Kang Sun<sup>1</sup>\n- Ting Zhang<sup>1</sup>\n- Wan Chen<sup>1</sup>\n- Lianghui Li<sup>1</sup>\n- Yuchen Xie<sup>1</sup>\n- Chuanyue Wu<sup>4</sup> \u2020\n- Zhiyi Wei<sup>1</sup> ([ORCID: 0000-0002-4446-6502](https://orcid.org/0000-0002-4446-6502)) \u2020\n- Cong Yu<sup>1</sup> ([ORCID: 0000-0003-2912-6347](https://orcid.org/0000-0003-2912-6347)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Southern University of Science and Technology Shenzhen China\n2. Faculty of Health Sciences, University of Macau Macau China\n3. Academy for Advanced Interdisciplinary Studies, Southern University of Science and Technology Shenzhen China\n4. Department of Pathology, School of Medicine and University of Pittsburgh Cancer Institute, University of Pittsburgh Pittsburgh United States\n5. Guangdong Provincial Key Laboratory of Cell Microenvironment and Disease Research, and Shenzhen Key Laboratory of Cell Microenvironment Shenzhen China\n\n\u2020 Corresponding author\n\n## Abstract\n\nCommunications between actin filaments and integrin-mediated focal adhesion (FA) are crucial for cell adhesion and migration. As a core platform to organize FA proteins, the tripartite ILK/PINCH/Parvin (IPP) complex interacts with actin filaments to regulate the cytoskeleton-FA crosstalk. Rsu1, a Ras suppressor, is enriched in FA through PINCH1 and plays important roles in regulating F-actin structures. Here, we solved crystal structures of the Rsu1/PINCH1 complex, in which the leucine-rich-repeats of Rsu1 form a solenoid structure to tightly associate with the C-terminal region of PINCH1. Further structural analysis uncovered that the interaction between Rsu1 and PINCH1 blocks the IPP-mediated F-actin bundling by disrupting the binding of PINCH1 to actin. Consistently, overexpressing Rsu1 in HeLa cells impairs stress fiber formation and cell spreading. Together, our findings demonstrated that Rsu1 is critical for tuning the communication between F-actin and FA by interacting with the IPP complex and negatively modulating the F-actin bundling.\n\n## Introduction\n\nF-actin cytoskeleton regulation is complicated and is critical for various cellular processes, including cell spreading, migration, proliferation, and apoptosis. Integrin-mediated focal adhesions (FAs) link the extracellular matrix (ECM) to intracellular integrin adhesion complex (IAC) and regulate F-actin dynamics (Calderwood et al., 2000; Geiger et al., 2001). Among the IAC components, tripartite integrin-linked kinase (ILK) associates with another two key players PINCH and Parvin to form the ILK/PINCH/Parvin (IPP) complex, which acts as an essential platform to recruit many proteins for the FA formation and signaling and provide a linkage between FA and actin cytoskeleton (Legate et al., 2006; Qin and Wu, 2012; Tu et al., 2001; Wickstr\u00f6m et al., 2010; Wu, 2004). As a pseudokinase, ILK connects PINCH and Parvin through its N-terminal ankyrin repeat domain and C-terminal kinase domain, respectively (Chiswell et al., 2008; Fukuda et al., 2009; Tu et al., 2001; Velyvis et al., 2001). Dysfunctions of the three IPP proteins result in a number of diseases including different types of cancers, diabetes, and heart failure (Cabodi et al., 2010; Hannigan et al., 2005; Qin and Wu, 2012). Despite having been intensively investigated over the past two decades, the molecular mechanism underlying the function and regulation of the IPP complex remains elusive.\n\nRas suppressor protein 1 (Rsu1), a leucine-rich repeat (LRR)-containing protein conserved from human to worms (Figure 1\u2014figure supplement 1), was recognized as a major FA component (Horton et al., 2015) and is important for FA formation and cell motility (Simpson et al., 2008; Winograd-Katz et al., 2009). Rsu1 was first identified to suppress Ras-dependent oncogenic transformation, during which the cells show typical anchorage-independent growth and morphological change (Cutler et al., 1992; Masuelli and Cutler, 1996). However, Rsu1 appears to possess multiple functions in cancer, as its expression level is upregulated in certain types of cancer cells and abnormally high expression level of Rsu1 may also contribute to cancer metastasis (Gkretsi et al., 2017; Louca et al., 2020; Zacharia et al., 2017).\n\nVertebrates express two PINCH proteins, PINCH1 and PINCH2, each consisting of a tandem array of five LIM domains (Figure 1\u2014figure supplement 2). Rsu1 was reported to interact with the C-terminal LIM (LIM5) domain of PINCH1 (Dougherty et al., 2005; Kadrmas et al., 2004). By integrating Ras and integrin signaling, Rsu1 and PINCH1 concert to control cell adhesion, migration and apoptosis (Dougherty et al., 2005; Dougherty et al., 2008; Kadrmas et al., 2004; Montanez et al., 2012). Depletion of Rsu1 in cultured cells and Drosophila led to the reduced expression of PINCH1 and ILK, thus impairing the FA formation and the F-actin organization (Dougherty et al., 2005; Gonzalez-Nieves et al., 2013; Kadrmas et al., 2004). However, although Rsu1 was suggested to maintain the cellular protein level of the IPP complex that is important for the F-actin organization at the FA (Legate et al., 2006; Wickstr\u00f6m et al., 2010), overexpressing Rsu1 damaged stress fibers, the cross-linked F-actin bundles anchored at the FAs in cells (Masuelli and Cutler, 1996). In addition, a recent study in Drosophila indicated that Rsu1 negatively regulates F-actin organization in muscle by inhibiting PINCH\u2019s activity (Green et al., 2018). Because the IPP complex was shown to promote F-actin bundling by using two actin-binding motifs from PINCH and Parvin respectively (Vaynberg et al., 2018), it is intriguing to unveil how Rsu1 coordinates its reversed effects in the destabilization of F-actin and the stabilization of the IPP complex.\n\nHere, we solved the crystal structures of the Rsu1/PINCH1 complex and found that Rsu1 strongly binds to PINCH1 through a large concave surface on its LRR solenoid. The structural analysis revealed that the Rsu1-binding region and the actin-binding motif in PINCH1 are largely overlapped with each other. Consistently, the binding of Rsu1 to PINCH1 blocks the F-actin bundling activity of the IPP complex in vitro. In support of the inhibitory role of Rsu1 on the IPP-mediated actin-bundling, we overexpressed Rsu1 in HeLa cells and observed the impaired formation of stress fibers and the decreased cell spreading. Fusing the actin-binding motif in PINCH1 to Rsu1 eliminates the inhibitory effect of Rsu1, further validating that Rsu1 negatively regulates actin-bundling through specifically masking the actin-binding site on PINCH1. Together, our data demonstrated that Rsu1 through binding to PINCH1 modulates the actin-bundling function of the IPP complex for controlling FA dynamics and stress fiber formation for cell motility.\n\n## Results\n\n### Biochemical characterization of the interaction between Rsu1 and PINCH1\n\nWe investigated the binding of Rsu1 to PINCH1 by purifying various boundaries of both proteins (Figure 1A,B). The interaction between PINCH1 and RSU1 was confirmed by using isothermal titration calorimetry (ITC). The C-terminal region of PINCH1 containing either the LIM4 and LIM5 domains (LIM45C, aa.188\u2013325) or the LIM5 domain (LIM5C, aa.249\u2013325) shows the strong binding affinity to Rsu1 with a dissociation constant of\u00a0~15 nM (Figure 1C,D). Interestingly, the very C-terminal sequence (aa.308\u2013325) in PINCH1 is indispensable for the binding of PINCH1 to Rsu1, as the LIM5 domain alone without this C-terminal sequence lost the Rsu1-binding ability (Figure 1E). On the other hand, the removal of the C-terminal region (aa.216\u2013277) of Rsu1 (Rsu1\u0394C) that does not belong to the LRR motif (Kobe and Deisenhofer, 1994) affected little to the complex formation of Rsu1 and PINCH1 (Figure 1\u2014figure supplement 3), suggesting that the LRR-region is sufficient for the Rsu1/PINCH1 interaction.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig1-v3.jpg)\n\n**Figure 1.:** (A and B) Schematic domain organization of Rsu1 (A) and PINCH1 (B). The fragments used in this study are indicated. The color coding of the regions is applied in all figures as otherwise indicated. (C\u2013E) Isothermal titration calorimetry (ITC) analysis of the interactions between Rsu1 and different PINCH1 boundaries.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** \u2018XENTR\u2019, \u2018DANRE\u2019, \u2018DROME\u2019, and \u2018CAEEL\u2019 indicate Xenopus tropicalis, Danio rerio, Drosophila melanogaster, and C.\u00a0elegans, respectively. The secondary structure elements of Rsu1 are labeled above the alignment. Residues that are identical and highly similar are highlighted in red box and colored in red, respectively. Residues that are involved in the PINCH1-binding are indicated by triangles. Residues capping the LRR-solenoid at N- and C-caps are indicated by open rectangles and circles, respectively.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The secondary structure elements are labeled above the alignment using the same color coding as used in Figure 1. Residues interacting with Rsu1 are indicated by triangles. Residues chelating Zn2+ ions are indicated by blue circles.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A\u00a0-\u00a0C) Rsu1 or Rsu1\u0394C mixed with PINCH1_LIM45C, or LIM5C. (D) Rsu1 mixed with PINCH2_LIM5C. (E) Rsu1 mutant mixed with PINCH1_LIM45C. (F) Rsu1 mixed with PINCH1_LIM45C mutant. The concentration of each protein is around 70 \u03bcM.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The curves were captured by titrating 200 \u03bcM Rsu1 to 20 \u03bcM PINCH2_LIM5C or PINCH1_LIM5C on a PEAQ-ITC Microcal calorimeter (Malvern). The binding affinity between PINCH2 and Rsu1 was largely decreased compared with PINCH1.\n\n### Overall structure of the Rsu1/PINCH1 complex\n\nWe prepared the Rsu1/PINCH1 complex by combinatorial usage of the purified fragments that contains the elements necessary and sufficient for the Rsu1/PINCH1 interaction and successfully obtained the crystals of the Rsu1\u0394C/PINCH1_LIM5C and Rsu1/PINCH1_LIM45C complexes. The complex structures of Rsu1\u0394C/PINCH1_LIM5C with one crystal form at 1.65 \u00c5 resolution and Rsu1/PINCH1_LIM45C with two different crystal forms at 2.2 \u00c5 and 3.15 \u00c5 resolution respectively were determined by the molecular replacement method (Table 1).\n\n**Table 1.**\n Statistics of data collection and model refinement.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Rsu1\u0394C/PINCH1_LIM5 (PDB id: 7D2S)</th>\n      <th colspan=\"2\">Rsu1/PINCH1_LIM45 (7D2T/7D2U)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Data collection</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>I 4</td>\n      <td>P 21</td>\n      <td>I 2 2 2</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>124.6, 124.6, 50.5</td>\n      <td>114.6, 51.3, 119.6</td>\n      <td>51.4, 144.4, 185.0</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90, 90, 90</td>\n      <td>90, 101.6, 90</td>\n      <td>90, 90, 90</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50\u20131.65 (1.68\u20131.65)</td>\n      <td>50\u20132.20 (2.24\u20132.20)</td>\n      <td>50\u20133.15 (3.20\u20133.15)</td>\n    </tr>\n    <tr>\n      <td>Rmerge*</td>\n      <td>0.089 (0.931)</td>\n      <td>0.152 (1.204)</td>\n      <td>0.131 (0.967)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3I</td>\n      <td>31.2 (2.8)</td>\n      <td>14.1 (1.4)</td>\n      <td>26.0 (1.9)</td>\n    </tr>\n    <tr>\n      <td>CC1/2\u2020</td>\n      <td>(0.823)</td>\n      <td>(0.687)</td>\n      <td>(0.885)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>100 (100)</td>\n      <td>100 (100)</td>\n      <td>99.9 (100)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>13.4 (12.9)</td>\n      <td>6.7 (6.9)</td>\n      <td>12.9 (12.4)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50\u20131.65 (1.69\u20131.65)</td>\n      <td>50\u20132.20 (2.25\u20132.20)</td>\n      <td>50\u20133.15 (3.44\u20133.15)</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>46570 (2695)</td>\n      <td>70228 (4880)</td>\n      <td>12487 (3033)</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree\u2021</td>\n      <td>0.166 (0.241) / 0.185 (0.271)</td>\n      <td>0.170 (0.281) / 0.198 (0.308)</td>\n      <td>0.192 (0.262) / 0.216 (0.316)</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>2236</td>\n      <td>6055</td>\n      <td>2980</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>14</td>\n      <td>74</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>187</td>\n      <td>358</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Mean B (\u00c5)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>32.4</td>\n      <td>53.1</td>\n      <td>134.2</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>32.2</td>\n      <td>78.1</td>\n      <td>151.2</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>38.8</td>\n      <td>52.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>r.m.s. deviations</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.006</td>\n      <td>0.003</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.01</td>\n      <td>0.74</td>\n      <td>0.55</td>\n    </tr>\n    <tr>\n      <td>Ramachandran analysis</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored region (%)</td>\n      <td>96.1</td>\n      <td>96.7</td>\n      <td>95.4</td>\n    </tr>\n    <tr>\n      <td>Allowed region (%)</td>\n      <td>3.9</td>\n      <td>3.3</td>\n      <td>4.6</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n_The numbers in parentheses represent values for the highest resolution shell.\ufeff*Rmerge = \u2211|Ii\u2212 Im|/\u2211Ii, where Ii is the intensity of the measured reflection and Im is the mean intensity of all symmetry related reflections.\u2020CC1/2 is the correlation coefficient of the half data\u00a0sets.\u2021Rwork = \u03a3||Fobs| \u2212 |Fcalc||/\u03a3|Fobs|, where Fobs and Fcalc are observed and calculated structure factors.Rfree = \u03a3T||Fobs| \u2212 |Fcalc||/\u03a3T|Fobs|, where T is the\u00a0test data set of about 4\u20135% of the total reflections randomly chosen and set aside prior to refinement._\n\nIn the Rsu1/PINCH1_LIM45C complex, the nine LRRs of Rsu1 form a curved solenoid capped by the helical regions in the both N- and C-termini, named N-cap and C-cap, respectively (Figure 2A,B and Figure 2\u2014figure supplement 1A). The N-cap consists of the \u03b11-helix while the C-cap contains three \u03b1-helices (\u03b12\u20134). Both the two helical regions cap the LRR-solenoid by forming extensive hydrophobic interactions with LRR1\u20132 and LRR8\u20139, respectively (Figure 2C,D). All\u00a0the nine LRRs adopt the typical LRR-folding by using conserved leucine residues to form the hydrophobic core except for a few short loops inserted in LRR1, 5, and 9 (Figure 2E,F). Although lacking the C-terminal half of the LRR-motif, LRR9 remains folded presumably due to the presence of the C-cap. Consistently, the deletion of C-cap results in the disruption of LRR9 in the Rsu1\u0394C/PINCH1_LIM5C complex (Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig2-v3.jpg)\n\n**Figure 2.:** (A and B) Ribbon representations of Rsu1/PINCH1-LIM45C complex structure with two different views. Four Zn2+ ions are indicated by blue spheres. (C and D) Molecular details of the C-terminal (C) and N-terminal (D) helices in Rsu1 capping the LRR-solenoid. Hydrogen bonds and salt bridges are indicated by dashed lines. (E) Structural alignment of the nine LRRs in Rsu1. The loops inserted in LRR1, LRR5, and LRR9 are indicated and the seven conserved hydrophobic residues that are mostly leucine and involved in forming the hydrophobic core of the LRR-solenoid are shown as sticks. (F) Sequence alignment of the nine LRRs in Rsu1. Identical and highly conserved residues are boxed in black and gray, respectively. The conserved hydrophobic residues are boxed in green and the amino acids involving in PINCH1\u00a0interaction are colored in magenta. The regions forming \u03b2-strands in the LRRs are indicated by a green arrow above the alignment.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Structural superposition of the Rsu1/PINCH1_LIM45C complex in different crystal forms. The structural difference is highlighted by a red dashed circle. (B) Structural superposition of the Rsu1/PINCH1_LIM45C and Rsu1\u0394C/PINCH1_LIM5C complexes. The LIM4 domain of PINCH1_LIM45C was omitted from the comparison. The structural differences are highlighted by blue dashed circles. The LRR9 is misfolded in the Rsu1\u0394C structure as indicated by a blue arrow.\n\nConsistent with our biochemical finding, the LRR-solenoid of Rsu1 interacts with both the LIM5 domain and the C-terminal tail (C-tail, folded as a \u03b1-helix) of PINCH1 through the concave surface of the solenoid, mainly formed by the parallel \u03b2-sheet and the flanking loop regions (Figure 2A,B,F). In all three complex structures that we solved, the LIM5C fragment in PINCH1 and the LRRs in Rsu1 showed the essentially same conformation with the overall RMSD of\u00a0~0.3 \u00c5 (Figure 2\u2014figure supplement 1). However, the LIM4 domain in PINCH1 adopts different orientations as observed in the two crystal forms of the Rsu1/PINCH1_LIM45C complex (Figure 2\u2014figure supplement 1A), indicating the intrinsic, structural flexibility between the LIM4 and LIM5 domains.\n\n### Molecular details of the Rsu1/PINCH1 interaction\n\nIn line with the nM-scale binding affinity, the Rsu1/PINCH1 interaction buries a large surface area of\u00a0~1100 \u00c52 for each protein. The PINCH1-binding surface on Rsu1 is conserved from human to worm (Figure 3A and Figure 1\u2014figure supplement 1). Given the highly conserved feature of the LIM45C region in all PINCH homologues (Figure 1\u2014figure supplement 2), it is very likely that both PINCH1 and PINCH2 interacts with Rsu1 in different species using the same binding mode found in our structures. However, although the analytical gel filtration analysis showed that PINCH2_LIM5C forms a stable complex with Rsu1 in solution (Figure 1\u2014figure supplement 3D), the binding of PINCH2_LIM5C to Rsu1 showed an affinity 100-fold weaker than the binding of PINCH1_LIM5C to Rsu1 (Figure 1\u2014figure supplement 4), presumably due to the substitution of a few interface residues, such as F253 and H254 in PINCH1 replaced by a tyrosine and an asparagine in PINCH2, respectively. Upon binding to Rsu1, the C-terminal \u03b1-helix in PINCH1 undergoes a substantial conformational change as compared with the apo structure of PINCH1_LIM5C (Figure 3B; Vaynberg et al., 2018), while the conformation of the LIM5 domain remains largely unchanged.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig3-v3.jpg)\n\n**Figure 3.:** (A) Surface representations of Rsu1. The protein surface of Rsu1 is rendered with the amino acid conservation (Figure 1\u2014figure supplement 1). (B) Structural superposition of the PINCH1_LIM5C structures in the apo (PDB id: 6MIF) and Rsu1-bounded forms. (C) Stereoview of the Rsu1/PINCH1 interface. Hydrogen bonds and salt bridges are indicated by dashed lines. (D) Polar interactions in the Rsu1/PINCH1 interface. These interactions are organized together through a hydrogen-bond network coordinately by three buried water molecules that are indicated as red balls. (E\u00a0and\u00a0F) Mutations of interfacial residues in either Rsu1 (E) or PINCH1 (F) impair the interaction between Rsu1 and PINCH1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The 2Fo-Fc densities are contoured at 2.0\u03c3 with the structures superimposed. The black arrows indicate the densities of the water molecules.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The Rsu1 proteins used in the ITC experiments were checked by SDS-PAGE analysis.\n\nThe large PINCH1-binding surface on Rsu1 extends from LRR2 to LRR9 (Figure 2F), in which 22 surface residues form hydrogen bonds, salt bridges, and hydrophobic interactions with PINCH1_LIM5C (Figure 3C). These polar and hydrophobic interactions are interlaced with each other to provide the complementary binding required for the highly specific recognition between Rsu1 and PINCH1. Interestingly, although separately distributed at the interface, the polar interactions are well organized together by forming a hydrogen-bond network (Figure 3D). In this network, two buried water molecules, conserved in both the Rsu1\u0394C/PINCH1_LIM5C and Rsu1/PINCH1_LIM45C complex structures (Figure 3\u2014figure supplement 1), critically coordinate three clusters of the polar interactions as highlighted in Figure 3D.\n\nHighly consistent with our structure analysis, interface mutations at either Rsu1 or PINCH1 disrupted the interaction between Rsu1 and PINCH1. In Rsu1, the Y140K mutation that disrupts the cation-\u03c0 interaction between Y140Rsu1 and K297PINCH1, decreased the binding affinity by\u00a0~100 fold as indicated by ITC (Figure 3E), and the D115K/Y140K (DY/KK) double mutation further diminished the Rsu1/PINCH1 interaction (Figure 3E and Figure 1\u2014figure supplement 3E) presumably due to the introduction of an additional charge repulsion in the binding interface. Likewise, the charge-reversing mutations (K297D and D295K) in PINCH1 either dramatically weakened or abolished the binding of PINCH1 to Rsu1 (Figure 3E and Figure 1\u2014figure supplement 3E). In addition, several interface mutations of Rsu1 that disrupt the hydrogen-bonding, charge\u2013charge interaction, or hydrophobic interaction between Rsu1 and PINCH1 showed decreased binding affinity (Figure 3\u2014figure supplement 2).\n\n### The PINCH1/Rsu1 interaction blocks the F-actin bundle formation promoted by the IPP complex\n\nPreviously, the C-terminal \u03b1-helix of PINCH1 has been shown to directly interact with actin and is required for the IPP-mediated bundling of F-actin, a process important for cell spreading and migration (Vaynberg et al., 2018). By comparing the Rsu1 and actin binding surfaces on PINCH1_LIM5C, we found that these two binding surfaces largely overlap with each other (Figure 4A), suggesting that the binding of Rsu1 to PINCH1 interferes with the binding of actin to PINCH1. Hence, we hypothesized that Rsu1 attenuates the IPP-mediated F-actin bundling by blocking the interaction between PINCH1 and actin (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig4-v3.jpg)\n\n**Figure 4.:** (A) Surfaces on PINCH1_LIM5C that are involved in the Rsu1-binding or actin-binding. (B) Schematic cartoon showing the inhibitory role of Rsu1 in the IPP-mediated F-actin bundling. (C) Rsu1 but not its DY/KK mutation can co-migrate with the IPP complex in size exclusion chromatography. The concentration for each protein is 20 \u03bcM. (D) The IPP-induced F-actin bundling is blocked by wild-type Rsu1 but not the PINCH1-binding defective mutations of Rsu1. The protein concentration of the IPP complex is 10 \u03bcM. 0.1\u00d7, 1\u00d7, and 3\u00d7 indicate that the protein concentrations are 1 \u03bcM, 10 \u03bcM, and 30 \u03bcM, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Analytical gel filtration of IPP complex, and the multiangle static light scattering analysis showed that the molecular weight of IPP is 134 kDa (the theoretical molecular weight of IPP is 132 kDa). The SDS-PAGE gel stained by Coomassie Blue showed the purified IPP proteins. (B) Actin bundling assay showed that Rsu1 is not capable of bundling F-actins. The protein concentration of Rsu1 or its mutants is 30 \u03bcM.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Represented images of bundled F-actins by ILK/PINCH/Parvin (IPP) complex or IPP mixed with different Rsu1 proteins. The images here were about one quarter of the images used for the quantitative analysis shown in the panel B. (B\u00a0and\u00a0C) The quantification of the number (B) and length (C) of bundled F-actins as shown in A. For each sample, 20 images were used for the quantification of the bundle number and 100 bundles from five\u00a0to\u00a0eight images were used for the quantification of the bundle length.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The white arrowhead in the middle panel indicated the actin bundle.\n\nTo test our hypothesis, we first purified the IPP complex (Figure 4\u2014figure supplement 1A) and confirmed that Rsu1 binds to the IPP complex in a PINCH1-dependent way, as the wild-type Rsu1 but not the DY/KK mutant of Rsu1 forms a complex with IPP (Figure 4C). Next, we performed the actin bundling assay by adding either the purified IPP complex or the IPP/Rsu1 mixture to the polymerized actin, stained with Alexa488-phalloidin (Vaynberg et al., 2018). Consistent with our hypothesis, the actin-bundling ability of IPP complex was inhibited with the presence of Rsu1 in a concentration-dependent manner (Figure 4D). In contrast, the PINCH1-binding deficient mutants of Rsu1, Y140K, and DY/KK, even with a much higher concentration than wild-type Rsu1, were unable to interfere with the IPP-mediated F-actin bundling (Figure 4D). The detailed quantification further indicated that either the length or the number of bundled actins was decreased by the addition of wild-type Rsu1, but not the Y140K or DY/KK mutants (Figure 4\u2014figure supplement 2). As a control, Rsu1 or its Y140K mutant could not bundle F-actin by itself, while the DY/KK mutant of Rsu1 weakly promotes F-actin bundling (Figure 4\u2014figure supplement 1B), presumably induced by the artificial interaction between the introduced positively charged residues and actin. In addition, the electron microscopic analysis showed some large actin bundles in the F-actin sample with the IPP complex, but not in the F-actin sample with the IPP/Rsu1 mixture (Figure 4\u2014figure supplement 3).\n\n### The PINCH1/Rsu1 interaction regulates stress fibers and FA dynamics in cells\n\nAs previously reported, the IPP-induced F-actin bundling plays important roles in FA dynamics and stress fibers formation (Vaynberg et al., 2018). Since Rsu1 inhibits the F-actin bundling through the PINCH1 binding, it is likely that the interaction between Rsu1 and PINCH1 at the FA may regulate the FA-actin related cellular processes. To validate the cellular effect of Rsu1 on F-actin bundling, we overexpressed different Rsu1 variants in HeLa cells, the immortal human cervical cancer cells, and found that the wild-type Rsu1 localized to the FA while the PINCH1-binding deficient mutants (Y140K and DY/KK) failed to accumulate at the FA (Figure 5A). Since the stress fibers formation requires the IPP-mediated actin bundling (Vaynberg et al., 2018), we analyzed the cells transfected with Rsu1 or its mutants with a comparable expression level (Figure 5\u2014figure supplement 1). Consistent with the inhibitory role of Rsu1 in the IPP-mediated actin bundling, stress fibers were significantly decreased in the cells transfected with Rsu1 while those remained largely unchanged in the cells transfected with the Y140K and DY/KK mutants (Figure 5A,B). In addition, cell spreading was inhibited by overexpressing the wild-type Rsu1 (Figure 5C). In contrast, the overexpression of either Y140K or DY/KK in cells showed no decrease on cell spreading (Figure 5C). Thus, our cellular analysis supports that the binding of Rsu1 to PINCH1 attenuates the IPP\u2019s function on the actin-bundling.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig5-v3.jpg)\n\n**Figure 5.:** (A) Confocal images of HeLa cells transiently expressed of GFP, Rsu1-GFP, or Rsu1 mutations with a GFP tag. Focal adhesions\u00a0(FAs) and stress fibers were stained by paxillin and phalloidin, respectively. (B) Quantification of the percentage of HeLa cells containing normal stress fiber formation as shown in A. Data was collected from 10 images in each sample. In each image, more than 10 cells were quantified. Significance was calculated by using Student's t-test in GraphPad Prism. ***p<0.001, *p<0.05. (C) Quantitative analysis of cell area in HeLa cells as imaged by Leica DMI6000B microscope. The areas of GFP-positive cells were measured using Image-Pro Plus. 300 cells were quantified in each sample. **p<0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig5-figsupp1-v3.jpg)\n\n### The inhibitory effect of Rsu1 is released by the fusion of the PINCH1-WH2 motif\n\nThe FA localization of Rsu1 largely relies on its binding to PINCH1 (Figure 5A). As the PINCH1-binding defective mutants of Rsu1 failed to accumulate at the FA (Figure 5A), these Rsu1 mutants may not interfere with the F-actin bundles at the FA. To further confirm the inhibitory effect of Rsu1 on the IPP-mediated actin-bundling, we designed a Rsu1-WH2 chimaera, in which the WH2 motif of PINCH1 was fused to the C-terminus of Rsu1 (Figure 6A). Such a chimeric protein likely remains the PINCH1 association without inhibiting actin-bundling by providing another WH2 motif in the Rsu1/IPP complex (Figure 6A). In line with our hypothesis, Rsu1-WH2 bound to PINCH1_LIM45C with the nM-binding affinity, comparable to that of Rsu1 (Figure 6B). Meanwhile, contrasting to the inhibition of the actin-bundling by Rsu1, the IPP complex mixed with Rsu1-WH2 highly promoted the actin-bundling (Figure 6C). These results confirm that Rsu1 inhibits the IPP-mediated actin-bundling by masking the WH2 motif in PINCH1, as supplying the additional WH2 motif restores the decreased actin-bundling.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig6-v3.jpg)\n\n**Figure 6.:** (A) Design of the Rsu1-WH2 chimera, in which the WH2 motif (308\u2013325) of PINCH1 was fused to the C-terminus of Rsu1. This chimera provides an additional WH2 motif for F-actin bundling as indicated by the schematic cartoon in the right panel. (B) Isothermal titration calorimetry (ITC) analysis showing that Rsu1-WH2 binds to PINCH1 with an affinity comparable to wild-type Rsu1. (C) Actin bundling assay showing the bundling effect of the IPP complex in the\u00a0presence of Rsu1-WH2. Unlike wild-type Rsu1, Rsu1-WH2 cannot block the IPP-mediated actin bundling. The 1\u00d7 protein concentration is 10 \u03bcM. (D) Confocal images of HeLa cells transfected with Rsu1 or Rsu1-WH2. Similar to wild-type Rsu1, Rsu1-WH2 was localized at the focal adhesions\u00a0(FAs). However, the formation of stress fibers was not impaired in the cells transfected with Rsu1-WH2.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64395/elife-64395-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Left panel: surface representations of Rsu1 to show the convex surface. The view is related to that in Figure 3A by rotating 180\u00b0 along the y-axis. Right panel: cartoon representations of Rsu1 to show the convex side.\n\nBy overexpressing the Rsu1-WH2 chimaera in HeLa cells, we found that the chimeric protein accumulated at the FA (Figure 6D). To investigate whether the fused WH2 motif releases the inhibition of Rsu1 on actin bundling during the stress fiber formation, we quantitatively measured the numbers of the cells with normal stress fibers formation in HeLa cells transfected with either Rsu1 or Rsu1-WH2 with a comparable expression level (Figure 5\u2014figure supplement 1). Compared with the decreased stress fiber formation in the cells overexpressing Rsu1, the cells overexpressing Rsu1-WH2 showed a normal level of stress fibers (Figure 6D and Figure 5B), suggesting that the inhibitory effect of Rsu1 on the actin bundles formation was eliminated by the fused WH2 motif.\n\n## Discussion\n\nAlthough Rsu1 was identified as the suppressor of Ras, the widely characterized oncogene, Rsu1 is upregulated in various cancers. The depletion of Rsu1 in the different cancer cells led to different influences on the cell motility (Gkretsi and Bogdanos, 2015; Gkretsi et al., 2019; Louca et al., 2020; Simpson et al., 2008), raising a more puzzling question about the Rsu1\u2019s role in regulating cell behaviors. In this study, we solved the complex structure of Rsu1 and PINCH1 and revealed that Rsu1 inhibits the IPP\u2019s function on actin bundling in vitro. The cellular data supported the inhibitory effect of Rsu1 on the IPP complex. These results indicated that Rsu1, by interacting with PINCH1 and preventing PINCH1 from binding to actin, modulates actin dynamics at the FA and thereby regulates the stress fiber formation and cell adhesion dynamics. Our findings provide a plausible mechanism to explain the possible oncogenic effect induced by the abnormally high protein level of Rsu1, which damaged the F-actin organization as we observed in cells. It is likely that cells tightly control the Rsu1 level for the homeostasis of actin dynamics, as either depleting Rsu1, which reduces the cellular protein level of the IPP complex and thereby impairs IPP-mediated actin bundling (Kadrmas et al., 2004; Gonzalez-Nieves et al., 2013), or elevating the Rsu1 level, which disrupts F-actin bundles, would interfere with the actin-dependent cell motility. In addition, Rsu1 binds to F-actin organizers, such as Rac1 and \u03b1-actinin (Ojelade et al., 2015; Wang et al., 2020), and regulates several downstream kinases of Ras oncogene, including JNK, ERK, and mitogen activated protein kinase 14 (p38) signaling (Dougherty et al., 2008; Gonzalez-Nieves et al., 2013; Kim et al., 2019; Louca et al., 2020; Montanez et al., 2012). Therefore, alterations of Rsu1 level may deregulate cell adhesion and migration and influence cancer cell behavior through multiple factors.\n\nThe high binding affinity between Rsu1 and PINCH1 ensures the inhibitory effect of even small amount of Rsu1 on the IPP-mediated actin organization. The nM-scale binding affinity is achieved through a large PINCH1-binding surface on the concave part of the LRR-solenoid in Rsu1 (Figure 3A), the most common protein interaction surface on the LRR proteins (Kobe and Kajava, 2001). Interestingly, two water molecules play important roles in mediating the Rsu1/PINCH1 interaction by integrating the hydrogen bond network that connects most polar residues in the interface (Figure 3D). Such a water-involved interaction network contributes to the binding energy. Disrupting the hydrogen bonding to one of the water molecules, like the Y140K or K297D mutation, cannot eliminate the binding of Rsu1 to PINCH1, as the interaction network may be partially maintained by the other water molecule. However, removing the linkages to both of the two water molecules by the DY/KK or D295K mutation destroyed the Rsu1/PINCH1 interaction.\n\nThe full-length structure of Rsu1 that we solved also provides a valuable information to uncover other binding partner(s) of Rsu1. Interestingly, in addition to the PINCH1-binding surface, we found an additional evolutionally conserved surface on Rsu1 on the convex side of the LRR-solenoid (Figure 6\u2014figure supplement 1), implicating that Rsu1 may interact with its binding partner via this surface. Notably, Rsu1 binds to the IPP complex with an affinity higher than those of other IPP-binding proteins (Figure 1C; Fukuda et al., 2014; Stiegler et al., 2012; Vaynberg et al., 2005). Considering that the IPP complex interacts with many actin-associated proteins (e.g. kindlin2, paxillin,\u00a0and Thymosin-\u03b24) at the FAs (Bledzka et al., 2016; Legate et al., 2006; Wickstr\u00f6m et al., 2010), it is worthwhile to investigate the relationship between these proteins and Rsu1 in the regulation of the IPP-mediated actin organization and how these proteins and Rsu1 function together to regulate the integrin-actin crosstalk and consequently cell adhesion and migration.\n\n## Materials and methods\n\n### Cloning, protein expression, and purification\n\nThe human Rsu1 was expressed in insect cell expression system. The DNA sequence of Rsu1 or its mutants was amplified based on PCR and inserted into pFastBac\u00a0HTB vectors. The constructs were transfected into DH10Bac competent cells for preparing Baculovirus genome (bacmid). The recombinant bacmid was then transfected into Sf9 for generating P1 virus and further amplified after two passages. The high tilter P3 virus was used to infect Sf9 cells for 72 hr. The infected cells were harvested and lysed by high-pressure homogenizers in the buffer (20 mM Tris-Cl pH\u00a08.0, 500 mM NaCl, 5 mM imidazole, 1 mM PMSF freshly supplemented). The supernatant isolated from lysates by centrifuging at 20,000 rpm for 30 min was loaded to Ni2+-NTA column. The eluted proteins were further purified by size-exclusion chromatography (GE Healthcare) with the buffer (50 mM Tris-Cl, pH\u00a07.5, 100 mM NaCl, 2 mM DTT). The DNA sequence of human PINCH1_LIM45C (aa.188\u2013325), LIM5C (aa.249\u2013325) or mutants, and human PINCH2_LIM5C (aa.276\u2013363) were amplified by PCR methods and inserted into pET32a vector with an N-terminal thioredoxin (Trx)-His for expression in BL21(DE3) E. coli cells. The purification procedure was essentially the same as used for Rsu1.\n\nFor preparing the complex samples, Rsu1 and PINCH1 protein were mixed at 1:1.5 molar ratio, incubation with TEV and PreScission protease to cut the tags, and further isolated by Superdex75 size exclusion column (GE Healthcare). For the expression of IPP complex, the pETDuet vector contained His-SUMO-tagged human ILK (residues 1\u2013452) and His-tagged human \u03b1-parvin (residues 1\u2013372) was co-transformed with the pRSF-SUMO vector inserted with human PINCH1(residues 1\u2013325) in Rosetta (DE3). The cells were expressed in 16\u00b0C for\u00a0~18 hr and then were harvested for the purification. The complex protein was purified by Ni2+-NTA column, followed by adding sumo protease to the elution to remove the SUMO-tag. The protein sample was further purified by size-exclusion chromatography (GE Healthcare) with the buffer (50 mM Tris-Cl, pH 7.5, 150 mM NaCl, 2 mM DTT). The IPP complex fractions after size-exclusion chromatography was verified by SDS-Page gel and collected. The proteins were refrigerated in \u221280\u00b0C for the following applications.\n\n### Crystallization and data collection\n\nCrystals of Rsu1/PINCH1 complex were obtained by the sitting drop vapor diffusion method in 16\u00b0C. To set up a sitting drop, 1 \u03bcl of concentrated protein solution (~25 mg/ml) was mixed with 1 \u03bcl of crystallization solution with 0.1 M sodium malonate pH\u00a07.0, 12% w/v polyethylene glycol 3350 or 0.1\u00a0M Tris\u00a08.0, 8% w/v PEG8000 for Rsu1/PINCH1_LIM45C, and 0.1\u00a0M Bicine pH\u00a08.5, 20% w/v PEG10000 for Rsu1\u0394C/PINCH1_LIM5C. Glycerol was gradually added into the crystal solution to 30% as the cryo-protectant before X-ray diffraction.\n\nThe diffraction data for structure determination was collected at Shanghai Synchrotron Radiation Facility beamlines BL17U1 (Wang et al., 2018), BL18U1, and BL19U1 (Zhang et al., 2019), and indexed and scaled by HKL2000 software package (Otwinowski and Minor, 1997). The structure of Leptospira interrogans LRR protein LIC10831 (PDB id: 4U06) was used as the search model in Phaser (Storoni et al., 2004) for phase determination of the Rsu1\u0394C/PINCH1_LIM5C crystals by molecular replacement. LIM5C was manually built based on the electron density calculated by using the improved phase. The two structures of Rsu1/PINCH1_LIM45C were also solved by molecular replacement, which used the Rsu1\u0394C/PINCH1_LIM5C structural model as the search model. These models were refined again in PHENIX (Adams et al., 2010). COOT was used for model rebuilding and adjustments (Emsley and Cowtan, 2004). In the final stage, an additional TLS refinement was performed in PHENIX. The model quality was check by MolProbity (Davis et al., 2007). The final refinement statistics are listed in Table 1. All structure figures were prepared by PyMOL (http://www.pymol.org/).\n\n### Isothermal titration calorimeters\n\nITC experiments were performed on a PEAQ-ITC Microcal calorimeter (Malvern) at 25\u00b0C. Protein samples (in 50 mM Tris-Cl, pH\u00a07.5, 100 mM NaCl) were prepared for titrations (13 or 19 titrations in total for each measurement). PINCH1_LIM45C or LIM5C and corresponding mutants with the concentration of 200 \u03bcM in the syringe were injected into the sample well containing 20 \u03bcM Rsu1 protein with the titration speed 0.5 \u03bcl/s. A time interval of 150 s between two titration points was applied to ensure that the titration peak returned to the baseline. The titration data were processed by MicroCal PEAQ-ITC Analysis Software and fitted by the one-site binding model.\n\n### Analytical gel filtration chromatography and multi-angle static light scattering\n\nAnalytical gel filtration chromatography was carried out on an \u00c4KTA Pure system (GE Healthcare). Protein samples at indicated concentration were loaded onto a Superdex 200 Increase 10/300 GL column (GE Healthcare) equilibrated with 50 mM Tris-HCl buffer, pH 7.5, containing 100 mM NaCl.\n\nThe static light-scattering detector and differential refractive index detector (Wyatt) were coupled to the analytical gel filtration chromatography system. Data were analyzed with ASTRA6 provided by Wyatt.\n\n### Actin bundling assay\n\nRabbit skeletal muscle globular actin (G-actin) was resuspended in GAB buffer (5 mM Tris-HCl pH\u00a08.0, 0.2 mM CaCl2, 0.5 mM DTT, 0.2 mM ATP) as prescribed (Cytoskeleton). G-actin concentration was determined by absorbance at 290 nm (with the extinction co-efficiency of 26,600). We polymerized 4 \u03bcM G-actin by addition of salts (50 mM KCl, 2 mM MgCl2, 1 mM ATP) for half an hour at room temperature. Actin bundling assay was performed by mixing F-actin with tested proteins at indicated concentration and stayed in room temperature for 1\u00a0hr. Before observation by fluorescence microscopy, the mixture was labeled by AlexaFluor 488-Phalloidin (Thermo Fisher Scientific) and transferred to a coverslip. Images were taken by M2 upright microscope (Zeiss).\n\nThe quantification of the length and number of actin bundles was performed followed the previous description (Breitsprecher et al., 2008). Briefly, we polymerized 1 \u03bcM G-actin by the addition of salts (50 mM KCl, 2 mM MgCl2, 1 mM ATP) for 10 min at room temperature and then mixed with buffer, 5 \u03bcM IPP protein, or the IPP/Rsu1 mixture. After labeling by AlexaFluor 488-Phalloidin, the samples were diluted 20 times with the GAB buffer plus salts (50 mM KCl, 2 mM MgCl2, 1 mM ATP), and 5 \u03bcl samples were loaded to the coverslip for observation. Twenty images were taken for each sample by M2 upright microscope (Zeiss). The number and length of actin bundles were measured in ImageJ using Multi-point and Freehand Line tools.\n\n### EM negative staining of F-actin\n\nActin bundles for TEM were prepared by mixing F-actin polymerized from 4 \u03bcM G-actin with 1 \u03bcM IPP or IPP/Rsu1, and stayed in room temperature for 1 hr. Mixture was dropped to glow discharged, carbon coated copper net (300 mesh), absorbing for 1 min, followed by negatively staining with 1% (w/v) uranium acetate for 30 s. Pictures were captured on TEM (HT7700, HITACHI).\n\n### Cell lines\n\nHeLa cell (serial number: TCHu187) was bought from National Collection of Authenticated Cell Cultures, Shanghai, China. The cells have been authenticated by STR profiling and have passed the mycoplasma contamination testing.\n\n### Cell culture\n\nHeLa cells were maintained in Dulbecco\u2019s modified eagle\u2019s medium supplemented with 10% fetal bovine serum and 1% penicillin\u2013streptomycin solution. All cells were cultured at 37\u00b0C in incubator with 5% CO2.\n\n### Immunofluorescence and cell spreading assay\n\nHeLa cells were transfected with pEGFP-N3-tagged constructs and GFP-positive cells were sorted by FACSAria Sorter (BD) after 24 hr to obtain the cells with a comparable expression level of GFP-constructs, and then were transferred to fibronectin (12.5 \u03bcg/ml)-coated coverslips. After 2 hr, the cells were fixed with 4% paraformaldehyde (PFA, for\u00a015 min at 37\u00b0C). After washing with PBS, the cells were treated with 0.1 Triton X-100 for 10 min at room temperature and blocked in 2% bovine serum albumin. The FAs were stained by anti-Paxillin antibody (Mouse, BD Bioscience), followed by Alexa Fluor 594 donkey anti-mouse secondary antibody (Thermo Fisher Scientific) and the F-actin was stained by Alexa Fluor 647 phalloidin (Thermo Fisher Scientific). The cells were visualized with 100\u00d7 objective using a Nikon A1R HD25 Confocal Microscope.\n\nIn cell spreading assays, the cells were stained by Alexa Fluor 594 phalloidin (Thermo Fisher Scientific) for the quantification of cell area, and the cells were visualized with 20\u00d7 objective using a Leica DMI6000B microscope. The cell areas of GFP-signaling positive cells were analyzed.\n\n### Western blotting\n\nCells were lysed in lysis buffer (20 mM Tris, 100 mM KCl, 5 mM MgCl2, 0.5% NP\u00b740) and applied for protein quantification (Pierce TM BCA protein assay kit, Thermo Fisher Scientific). The lysates were mixed with loading buffer and subjected to SDS-PAGE. Proteins were then transferred to PVDF and blocked with 5% bovine serum albumin. The proteins were probed with primary antibodies (Rabbit anti-Rsu1, Thermo Fisher Scientific; Mouse anti-GFP, TRANS; Mouse anti-GAPDH, TRANS) and secondary antibodies (Anti-mouse HPR, Cell Signaling; Anti-mouse HPR, Cell Signaling).\n\n### Statistics\n\nImage pro plus was used to calculate the area of cells. The data was imported into Microsoft Excel and performed significance test of difference in GraphPad Prism software. Statistical significance was calculated by Student\u2019s t-test, and the differences were considered to be significant when p-value was less than 0.05. Line analysis of fluorescent intensity was conducted using Image pro plus and used GraphPad Prism for visualization.\n",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "a03ef16f-7d8b-4945-b69b-5bb5b5d5385c",
+      "submission_id": "fe81674c-76f5-4abb-a7da-e627bf7742ba",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Reinhard F\u00e4ssler, Max Planck Institute of Biochemistry Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64395.sa1](https://doi.org/10.7554/eLife.64395.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nRSU1 is a member of a quaternary protein complex, which consists of RSU1, a pseudokinase (ILK) and two F-actin binding proteins (PINCH and Parvin). The complex plays fundamental roles during development, postnatal homeostasis and disease. RSU1 is the least investigated member of this protein complex, and has been postulated to modulate actin dynamics. The paper by Yang et al. sheds light on the mechanism of this elusive RSU1 function. The finding reported by Yang and co-workers will have a significant impact on the adhesion field.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Complex structures of Rsu1 and PINCH1 reveal a regulatory mechanism of the ILK/PINCH/Parvin complex for F-actin dynamics\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Reinhard F\u00e4ssler as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by John Kuriyan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ben Goult (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nRSU1 is a member of a quaternary protein complex, which consists of RSU1, a pseudokinase (ILK) and two F-actin binding proteins (PINCH and Parvin). The complex plays fundamental roles during development, postnatal homeostasis and disease. RSU1 is the least investigated member of this protein complex. It is best known for controlling Ras GTPase activity. While RSU1 has been postulated to modulate actin dynamics, the underlying mechanisms were never seriously investigated. The paper by Yang et al. sheds light on the mechanism, which will have a significant impact on the adhesion field.\n\nEssential revisions:\n\n1) The quality of the actin bundling assays is not convincing and the assays therefore require considerable improvement. Specifically, the number and size of bundles should be quantified. An example of acceptable in vitro actin assembly/bundling assays can be found, for example, in EMBO J (2008)27:2943-2954.\n\n2) The effects of RSU1 mutations were studied by overexpressing RSU1 and its mutants in cultured cells. Since the authors themselves in the Discussion section that \"It is likely that cells tightly control the Rsu1 level for the homeostasis of actin dynamics, [\u2026] would interfere with the actin-dependent cell motility\", it is very important to perform the analyses with \"rescue experiments\" in RNAi-depleted or CRISPR/Cas9-mediated knockout cells.\n\n3) The authors used only RSU1 and PINCH1 mutants (RSU1 Y140K or D115K/Y140K, and PINCH1 K297D or D395K) that disrupt the polar interactions shown in Figure 3D. The authors identified 22 surface residues in RSU1 that formed H-bonds, salt bridges, and hydrophobic interactions, and the C-tail of PINCH1 (=WH2 motif) for binding to RSU1. We propose to extend the binding studies with mutants that inhibit the binding of RSU1 to PINCH1 to better demonstrate the mechanism of complex formation more strongly.\n\n4) The quality of the HeLa immunostaining is not convincing and should also be improved. Particularly the high background (Figure 5) is problematic, FAs and stress fibers are not well visible. Also, the GFP-RSU1 should be in FAs but looks uniformly distributed, similarly like the RSU1 mutants., FAs and stress fibers are not well visible. The authors should show that wild type and mutant RSU1 are expressed at similar/comparable levels.\n\n5) RSU1 was shown to bind PINCH1 but not PINCH2. The binding of PINCH2 to RSU1 reported in the present manuscript should therefore, be confirmed with an orthogonal assay (e.g. MST).\n",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6311557f-789f-4df2-8f92-b5ba07efc179",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C1",
+      "claim": "The ILK/PINCH/Parvin (IPP) complex interacts with actin filaments to regulate the cytoskeleton-FA crosstalk.",
+      "claim_type": "EXPLICIT",
+      "source": "As a core platform to organize FA proteins, the tripartite ILK/PINCH/Parvin (IPP) complex interacts with actin filaments to regulate the cytoskeleton-FA crosstalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to established knowledge in the field and citations to prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "71c072c0-908a-4856-9b6a-8d7cac40d32b",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C2",
+      "claim": "Rsu1 is enriched in FA through PINCH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsu1, a Ras suppressor, is enriched in FA through PINCH1 and plays important roles in regulating F-actin structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior research and established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "90c07bdc-364c-4a05-8c98-38c6b709eeb3",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C3",
+      "claim": "Rsu1 plays important roles in regulating F-actin structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsu1, a Ras suppressor, is enriched in FA through PINCH1 and plays important roles in regulating F-actin structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior research and established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "3f85e5f8-371a-4264-8180-3ef6f2450c44",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C4",
+      "claim": "The leucine-rich-repeats of Rsu1 form a solenoid structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we solved crystal structures of the Rsu1/PINCH1 complex, in which the leucine-rich-repeats of Rsu1 form a solenoid structure to tightly associate with the C-terminal region of PINCH1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the crystal structure data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "fbc24ae9-0119-410f-be51-36e177d38e30",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C5",
+      "claim": "The leucine-rich-repeats of Rsu1 tightly associate with the C-terminal region of PINCH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we solved crystal structures of the Rsu1/PINCH1 complex, in which the leucine-rich-repeats of Rsu1 form a solenoid structure to tightly associate with the C-terminal region of PINCH1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the crystal structure data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "71b3824b-b51e-47ee-bfbd-b9a40cb0540e",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C6",
+      "claim": "The interaction between Rsu1 and PINCH1 blocks the IPP-mediated F-actin bundling by disrupting the binding of PINCH1 to actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Further structural analysis uncovered that the interaction between Rsu1 and PINCH1 blocks the IPP-mediated F-actin bundling by disrupting the binding of PINCH1 to actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis and inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "ba90ec3e-39e6-4877-99aa-ce8f165b819c",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C7",
+      "claim": "Overexpressing Rsu1 in HeLa cells impairs stress fiber formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, overexpressing Rsu1 in HeLa cells impairs stress fiber formation and cell spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from cell-based assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "c11fe67d-81f7-4575-bc37-b1ccfd700186",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C8",
+      "claim": "Overexpressing Rsu1 in HeLa cells impairs cell spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, overexpressing Rsu1 in HeLa cells impairs stress fiber formation and cell spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from cell-based assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "3d645857-0408-4fbc-8cb6-1773027c4ec7",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C9",
+      "claim": "Rsu1 is critical for tuning the communication between F-actin and FA by interacting with the IPP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings demonstrated that Rsu1 is critical for tuning the communication between F-actin and FA by interacting with the IPP complex and negatively modulating the F-actin bundling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the combined structural and cellular data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "df8333d6-bf13-4abc-a4b5-673f5610b1a5",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C10",
+      "claim": "Rsu1 negatively modulates F-actin bundling.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings demonstrated that Rsu1 is critical for tuning the communication between F-actin and FA by interacting with the IPP complex and negatively modulating the F-actin bundling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the combined structural and cellular data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "6bed9e85-1525-421f-83b0-eb9777187dde",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C11",
+      "claim": "Integrin-mediated focal adhesions link the extracellular matrix to intracellular integrin adhesion complex and regulate F-actin dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrin-mediated focal adhesions (FAs) link the extracellular matrix (ECM) to intracellular integrin adhesion complex (IAC) and regulate F-actin dynamics (Calderwood et al., 2000; Geiger et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "fe5805f3-3492-4d6d-b429-c049adda4e27",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C12",
+      "claim": "The IPP complex acts as an essential platform to recruit many proteins for FA formation and signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the IAC components, tripartite integrin-linked kinase (ILK) associates with another two key players PINCH and Parvin to form the ILK/PINCH/Parvin (IPP) complex, which acts as an essential platform to recruit many proteins for the FA formation and signaling and provide a linkage between FA and actin cytoskeleton (Legate et al., 2006; Qin and Wu, 2012; Tu et al., 2001; Wickstr\u00f6m et al., 2010; Wu, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "8b2c78e0-c209-4982-a0bb-f14956e67cf3",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C13",
+      "claim": "The IPP complex provides a linkage between FA and actin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the IAC components, tripartite integrin-linked kinase (ILK) associates with another two key players PINCH and Parvin to form the ILK/PINCH/Parvin (IPP) complex, which acts as an essential platform to recruit many proteins for the FA formation and signaling and provide a linkage between FA and actin cytoskeleton (Legate et al., 2006; Qin and Wu, 2012; Tu et al., 2001; Wickstr\u00f6m et al., 2010; Wu, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "4938c625-85ac-473c-b3f7-f6d6bb942e91",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C14",
+      "claim": "ILK is a pseudokinase.",
+      "claim_type": "EXPLICIT",
+      "source": "As a pseudokinase, ILK connects PINCH and Parvin through its N-terminal ankyrin repeat domain and C-terminal kinase domain, respectively (Chiswell et al., 2008; Fukuda et al., 2009; Tu et al., 2001; Velyvis et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "7645a14c-4a60-43ce-bda0-66c852fc3c7b",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C15",
+      "claim": "ILK connects PINCH and Parvin through its N-terminal ankyrin repeat domain and C-terminal kinase domain, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "As a pseudokinase, ILK connects PINCH and Parvin through its N-terminal ankyrin repeat domain and C-terminal kinase domain, respectively (Chiswell et al., 2008; Fukuda et al., 2009; Tu et al., 2001; Velyvis et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "401b719f-6f6b-4b51-ae50-10ed8ba63d0b",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C16",
+      "claim": "Dysfunctions of the three IPP proteins result in a number of diseases including different types of cancers, diabetes, and heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysfunctions of the three IPP proteins result in a number of diseases including different types of cancers, diabetes, and heart failure (Cabodi et al., 2010; Hannigan et al., 2005; Qin and Wu, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "22f80899-caa8-448f-868e-585725091884",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C17",
+      "claim": "Rsu1 is a leucine-rich repeat (LRR)-containing protein conserved from human to worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Ras suppressor protein 1 (Rsu1), a leucine-rich repeat (LRR)-containing protein conserved from human to worms (Figure 1\u2014figure supplement 1), was recognized as a major FA component (Horton et al., 2015) and is important for FA formation and cell motility (Simpson et al., 2008; Winograd-Katz et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a reference to a figure showing sequence conservation and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "9508cfe7-23da-4a18-85e3-99322c90b7a5",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C18",
+      "claim": "Rsu1 was recognized as a major FA component.",
+      "claim_type": "EXPLICIT",
+      "source": "Ras suppressor protein 1 (Rsu1), a leucine-rich repeat (LRR)-containing protein conserved from human to worms (Figure 1\u2014figure supplement 1), was recognized as a major FA component (Horton et al., 2015) and is important for FA formation and cell motility (Simpson et al., 2008; Winograd-Katz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "2ad9ea4b-caa8-4dfb-8b86-bf49313256db",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C19",
+      "claim": "Rsu1 is important for FA formation and cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Ras suppressor protein 1 (Rsu1), a leucine-rich repeat (LRR)-containing protein conserved from human to worms (Figure 1\u2014figure supplement 1), was recognized as a major FA component (Horton et al., 2015) and is important for FA formation and cell motility (Simpson et al., 2008; Winograd-Katz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "2855b3c9-f4fb-455d-9b0c-f25297ca583c",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C20",
+      "claim": "Rsu1 was first identified to suppress Ras-dependent oncogenic transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsu1 was first identified to suppress Ras-dependent oncogenic transformation, during which the cells show typical anchorage-independent growth and morphological change (Cutler et al., 1992; Masuelli and Cutler, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "afe0114a-9bff-4608-b5b8-7002a8de5b50",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C21",
+      "claim": "Rsu1 expression level is upregulated in certain types of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Rsu1 appears to possess multiple functions in cancer, as its expression level is upregulated in certain types of cancer cells and abnormally high expression level of Rsu1 may also contribute to cancer metastasis (Gkretsi et al., 2017; Louca et al., 2020; Zacharia et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "7ba5bafa-dec0-42ae-a05a-c986fe15257b",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C22",
+      "claim": "Abnormally high expression level of Rsu1 may contribute to cancer metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Rsu1 appears to possess multiple functions in cancer, as its expression level is upregulated in certain types of cancer cells and abnormally high expression level of Rsu1 may also contribute to cancer metastasis (Gkretsi et al., 2017; Louca et al., 2020; Zacharia et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "89b302f7-ae07-4a8e-92b5-b5e051b4688d",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C23",
+      "claim": "Vertebrates express two PINCH proteins, PINCH1 and PINCH2, each consisting of a tandem array of five LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrates express two PINCH proteins, PINCH1 and PINCH2, each consisting of a tandem array of five LIM domains (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a reference to a figure and established knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "08271c22-fa83-4788-a9fe-7f36cfa559be",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C24",
+      "claim": "Rsu1 was reported to interact with the C-terminal LIM (LIM5) domain of PINCH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsu1 was reported to interact with the C-terminal LIM (LIM5) domain of PINCH1 (Dougherty et al., 2005; Kadrmas et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "9353ee2e-50be-4303-98bc-ea1a707d2842",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C25",
+      "claim": "Rsu1 and PINCH1 concert to control cell adhesion, migration and apoptosis by integrating Ras and integrin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "By integrating Ras and integrin signaling, Rsu1 and PINCH1 concert to control cell adhesion, migration and apoptosis (Dougherty et al., 2005; Dougherty et al., 2008; Kadrmas et al., 2004; Montanez et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "3c396153-41c2-41c1-af5d-d596d93c418a",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C26",
+      "claim": "Depletion of Rsu1 in cultured cells and Drosophila led to the reduced expression of PINCH1 and ILK.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of Rsu1 in cultured cells and Drosophila led to the reduced expression of PINCH1 and ILK, thus impairing the FA formation and the F-actin organization (Dougherty et al., 2005; Gonzalez-Nieves et al., 2013; Kadrmas et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "a575a901-e131-4153-a33b-26469ceea115",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C27",
+      "claim": "Depletion of Rsu1 impairs FA formation and F-actin organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of Rsu1 in cultured cells and Drosophila led to the reduced expression of PINCH1 and ILK, thus impairing the FA formation and the F-actin organization (Dougherty et al., 2005; Gonzalez-Nieves et al., 2013; Kadrmas et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "674437fa-052b-45c4-9479-ef992ae4c5d5",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C28",
+      "claim": "Overexpressing Rsu1 damaged stress fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although Rsu1 was suggested to maintain the cellular protein level of the IPP complex that is important for the F-actin organization at the FA (Legate et al., 2006; Wickstr\u00f6m et al., 2010), overexpressing Rsu1 damaged stress fibers, the cross-linked F-actin bundles anchored at the FAs in cells (Masuelli and Cutler, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "b56ad9c7-06f5-40ab-b778-fa92e3af220d",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C29",
+      "claim": "Rsu1 negatively regulates F-actin organization in muscle by inhibiting PINCH's activity in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a recent study in Drosophila indicated that Rsu1 negatively regulates F-actin organization in muscle by inhibiting PINCH's activity (Green et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "7fca55ea-7268-4a2d-a512-295fb2bf2bff",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C30",
+      "claim": "The IPP complex promotes F-actin bundling by using two actin-binding motifs from PINCH and Parvin respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the IPP complex was shown to promote F-actin bundling by using two actin-binding motifs from PINCH and Parvin respectively (Vaynberg et al., 2018), it is intriguing to unveil how Rsu1 coordinates its reversed effects in the destabilization of F-actin and the stabilization of the IPP complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "07871c82-bb92-4f24-92b8-ce219799386f",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C31",
+      "claim": "The C-terminal region of PINCH1 containing either the LIM4 and LIM5 domains (LIM45C, aa.188\u2013325) or the LIM5 domain (LIM5C, aa.249\u2013325) shows strong binding affinity to Rsu1 with a dissociation constant of ~15 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal region of PINCH1 containing either the LIM4 and LIM5 domains (LIM45C, aa.188\u2013325) or the LIM5 domain (LIM5C, aa.249\u2013325) shows the strong binding affinity to Rsu1 with a dissociation constant of ~15 nM (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "a76da5db-e592-4411-93ed-0bc732d918f7",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C32",
+      "claim": "The very C-terminal sequence (aa.308\u2013325) in PINCH1 is indispensable for the binding of PINCH1 to Rsu1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the very C-terminal sequence (aa.308\u2013325) in PINCH1 is indispensable for the binding of PINCH1 to Rsu1, as the LIM5 domain alone without this C-terminal sequence lost the Rsu1-binding ability (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "fcd45beb-3abf-4733-aa75-7146cec127b7",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C33",
+      "claim": "The removal of the C-terminal region (aa.216\u2013277) of Rsu1 (Rsu1\u0394C) affected little to the complex formation of Rsu1 and PINCH1.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the removal of the C-terminal region (aa.216\u2013277) of Rsu1 (Rsu1\u0394C) that does not belong to the LRR motif (Kobe and Deisenhofer, 1994) affected little to the complex formation of Rsu1 and PINCH1 (Figure 1\u2014figure supplement 3), suggesting that the LRR-region is sufficient for the Rsu1/PINCH1 interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "86732a6c-c780-46b9-8cfa-a8044654a779",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C34",
+      "claim": "The LRR-region is sufficient for the Rsu1/PINCH1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the removal of the C-terminal region (aa.216\u2013277) of Rsu1 (Rsu1\u0394C) that does not belong to the LRR motif (Kobe and Deisenhofer, 1994) affected little to the complex formation of Rsu1 and PINCH1 (Figure 1\u2014figure supplement 3), suggesting that the LRR-region is sufficient for the Rsu1/PINCH1 interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the data showing that removal of the C-terminal region does not affect binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "82880899-6238-40df-af2c-a9430caefce0",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C35",
+      "claim": "The complex structures of Rsu1\u0394C/PINCH1_LIM5C with one crystal form at 1.65 \u00c5 resolution and Rsu1/PINCH1_LIM45C with two different crystal forms at 2.2 \u00c5 and 3.15 \u00c5 resolution respectively were determined by the molecular replacement method.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex structures of Rsu1\u0394C/PINCH1_LIM5C with one crystal form at 1.65 \u00c5 resolution and Rsu1/PINCH1_LIM45C with two different crystal forms at 2.2 \u00c5 and 3.15 \u00c5 resolution respectively were determined by the molecular replacement method (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystallographic data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "fe34d0ad-19ee-4de0-83db-c697d1fc3841",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C36",
+      "claim": "The nine LRRs of Rsu1 form a curved solenoid capped by the helical regions in the both N- and C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Rsu1/PINCH1_LIM45C complex, the nine LRRs of Rsu1 form a curved solenoid capped by the helical regions in the both N- and C-termini, named N-cap and C-cap, respectively (Figure 2A,B and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystal structure data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "68681f03-bfc1-4bc4-9be0-3e98c13eb9e4",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C37",
+      "claim": "The N-cap consists of the \u03b11-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-cap consists of the \u03b11-helix while the C-cap contains three \u03b1-helices (\u03b12\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "eec3146e-9a43-4d11-a6dc-563b25647325",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C38",
+      "claim": "The C-cap contains three \u03b1-helices (\u03b12\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "The N-cap consists of the \u03b11-helix while the C-cap contains three \u03b1-helices (\u03b12\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "eac4a51f-9d0b-46c9-9d2c-f6b91e9b9336",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C39",
+      "claim": "Both the N-cap and C-cap cap the LRR-solenoid by forming extensive hydrophobic interactions with LRR1\u20132 and LRR8\u20139, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the two helical regions cap the LRR-solenoid by forming extensive hydrophobic interactions with LRR1\u20132 and LRR8\u20139, respectively (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystal structure data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "8d02b1ae-739a-4ab0-b47c-a71010c0ef16",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C40",
+      "claim": "All the nine LRRs adopt the typical LRR-folding by using conserved leucine residues to form the hydrophobic core except for a few short loops inserted in LRR1, 5, and 9.",
+      "claim_type": "EXPLICIT",
+      "source": "All the nine LRRs adopt the typical LRR-folding by using conserved leucine residues to form the hydrophobic core except for a few short loops inserted in LRR1, 5, and 9 (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystal structure data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "2ce2c26e-dae2-4f70-b4dd-04fc402db487",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C41",
+      "claim": "The deletion of C-cap results in the disruption of LRR9 in the Rsu1\u0394C/PINCH1_LIM5C complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the deletion of C-cap results in the disruption of LRR9 in the Rsu1\u0394C/PINCH1_LIM5C complex (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystal structure data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "5c9f3ec9-b946-4150-adc7-9f8806d305ad",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C42",
+      "claim": "The LRR-solenoid of Rsu1 interacts with both the LIM5 domain and the C-terminal tail of PINCH1 through the concave surface of the solenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our biochemical finding, the LRR-solenoid of Rsu1 interacts with both the LIM5 domain and the C-terminal tail (C-tail, folded as a \u03b1-helix) of PINCH1 through the concave surface of the solenoid, mainly formed by the parallel \u03b2-sheet and the flanking loop regions (Figure 2A,B,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystal structure data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "bce1cc03-f463-4545-ae53-9dd5a233cd2c",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C43",
+      "claim": "The LIM5C fragment in PINCH1 and the LRRs in Rsu1 showed the essentially same conformation with the overall RMSD of ~0.3 \u00c5 in all three complex structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In all three complex structures that we solved, the LIM5C fragment in PINCH1 and the LRRs in Rsu1 showed the essentially same conformation with the overall RMSD of ~0.3 \u00c5 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "24f8100c-d541-4022-a7e4-43a9ef65bda8",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C44",
+      "claim": "The LIM4 domain in PINCH1 adopts different orientations as observed in the two crystal forms of the Rsu1/PINCH1_LIM45C complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the LIM4 domain in PINCH1 adopts different orientations as observed in the two crystal forms of the Rsu1/PINCH1_LIM45C complex (Figure 2\u2014figure supplement 1A), indicating the intrinsic, structural flexibility between the LIM4 and LIM5 domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "49e3d229-6ade-4db2-ad51-871f6698e91f",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C45",
+      "claim": "There is intrinsic structural flexibility between the LIM4 and LIM5 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the LIM4 domain in PINCH1 adopts different orientations as observed in the two crystal forms of the Rsu1/PINCH1_LIM45C complex (Figure 2\u2014figure supplement 1A), indicating the intrinsic, structural flexibility between the LIM4 and LIM5 domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation of different orientations in different crystal forms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "fb5024f9-9e33-49f1-bdf6-e9d6e8619f6c",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C46",
+      "claim": "The Rsu1/PINCH1 interaction buries a large surface area of ~1100 \u00c52 for each protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the nM-scale binding affinity, the Rsu1/PINCH1 interaction buries a large surface area of ~1100 \u00c52 for each protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis of the complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "b2a7c273-d723-4784-aeeb-da8d2938e017",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C47",
+      "claim": "The PINCH1-binding surface on Rsu1 is conserved from human to worm.",
+      "claim_type": "EXPLICIT",
+      "source": "The PINCH1-binding surface on Rsu1 is conserved from human to worm (Figure 3A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence conservation analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "3f08dcd4-6fc8-4ed7-b36e-5486e640c44e",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C48",
+      "claim": "Both PINCH1 and PINCH2 interact with Rsu1 in different species using the same binding mode.",
+      "claim_type": "IMPLICIT",
+      "source": "Given the highly conserved feature of the LIM45C region in all PINCH homologues (Figure 1\u2014figure supplement 2), it is very likely that both PINCH1 and PINCH2 interacts with Rsu1 in different species using the same binding mode found in our structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the high conservation of the LIM45C region across PINCH homologues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "1881a0b6-db4e-4aa5-a91a-0a5982658ec7",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C49",
+      "claim": "PINCH2_LIM5C forms a stable complex with Rsu1 in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although the analytical gel filtration analysis showed that PINCH2_LIM5C forms a stable complex with Rsu1 in solution (Figure 1\u2014figure supplement 3D), the binding of PINCH2_LIM5C to Rsu1 showed an affinity 100-fold weaker than the binding of PINCH1_LIM5C to Rsu1 (Figure 1\u2014figure supplement 4), presumably due to the substitution of a few interface residues, such as F253 and H254 in PINCH1 replaced by a tyrosine and an asparagine in PINCH2, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gel filtration data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "bd464500-ec4d-4f0e-ac16-87e9ca3cf3b8",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C50",
+      "claim": "The binding of PINCH2_LIM5C to Rsu1 showed an affinity 100-fold weaker than the binding of PINCH1_LIM5C to Rsu1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although the analytical gel filtration analysis showed that PINCH2_LIM5C forms a stable complex with Rsu1 in solution (Figure 1\u2014figure supplement 3D), the binding of PINCH2_LIM5C to Rsu1 showed an affinity 100-fold weaker than the binding of PINCH1_LIM5C to Rsu1 (Figure 1\u2014figure supplement 4), presumably due to the substitution of a few interface residues, such as F253 and H254 in PINCH1 replaced by a tyrosine and an asparagine in PINCH2, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "c314e757-1f81-40c9-a010-c4f4f907f834",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C51",
+      "claim": "The weaker binding of PINCH2 to Rsu1 is presumably due to the substitution of a few interface residues, such as F253 and H254 in PINCH1 replaced by a tyrosine and an asparagine in PINCH2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although the analytical gel filtration analysis showed that PINCH2_LIM5C forms a stable complex with Rsu1 in solution (Figure 1\u2014figure supplement 3D), the binding of PINCH2_LIM5C to Rsu1 showed an affinity 100-fold weaker than the binding of PINCH1_LIM5C to Rsu1 (Figure 1\u2014figure supplement 4), presumably due to the substitution of a few interface residues, such as F253 and H254 in PINCH1 replaced by a tyrosine and an asparagine in PINCH2, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is speculative reasoning based on structural and binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "cade5ec1-c779-48ee-8c9f-a5d3d0ff673c",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C52",
+      "claim": "Upon binding to Rsu1, the C-terminal \u03b1-helix in PINCH1 undergoes a substantial conformational change as compared with the apo structure of PINCH1_LIM5C.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon binding to Rsu1, the C-terminal \u03b1-helix in PINCH1 undergoes a substantial conformational change as compared with the apo structure of PINCH1_LIM5C (Figure 3B; Vaynberg et al., 2018), while the conformation of the LIM5 domain remains largely unchanged.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison data shown in the referenced figure and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "d1a7dc24-16a3-4145-953b-8ae67a592c8a",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C53",
+      "claim": "The conformation of the LIM5 domain remains largely unchanged upon binding to Rsu1.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon binding to Rsu1, the C-terminal \u03b1-helix in PINCH1 undergoes a substantial conformational change as compared with the apo structure of PINCH1_LIM5C (Figure 3B; Vaynberg et al., 2018), while the conformation of the LIM5 domain remains largely unchanged.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "6b976e7e-c1db-4042-9908-8ace888230e5",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C54",
+      "claim": "The large PINCH1-binding surface on Rsu1 extends from LRR2 to LRR9.",
+      "claim_type": "EXPLICIT",
+      "source": "The large PINCH1-binding surface on Rsu1 extends from LRR2 to LRR9 (Figure 2F), in which 22 surface residues form hydrogen bonds, salt bridges, and hydrophobic interactions with PINCH1_LIM5C (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "8302f4ad-e297-41f9-8bab-d67469e8df93",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C55",
+      "claim": "22 surface residues on Rsu1 form hydrogen bonds, salt bridges, and hydrophobic interactions with PINCH1_LIM5C.",
+      "claim_type": "EXPLICIT",
+      "source": "The large PINCH1-binding surface on Rsu1 extends from LRR2 to LRR9 (Figure 2F), in which 22 surface residues form hydrogen bonds, salt bridges, and hydrophobic interactions with PINCH1_LIM5C (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "9771a953-08ff-427d-a72a-a79d9f2814eb",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C56",
+      "claim": "Two buried water molecules conserved in both the Rsu1\u0394C/PINCH1_LIM5C and Rsu1/PINCH1_LIM45C complex structures critically coordinate three clusters of the polar interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this network, two buried water molecules, conserved in both the Rsu1\u0394C/PINCH1_LIM5C and Rsu1/PINCH1_LIM45C complex structures (Figure 3\u2014figure supplement 1), critically coordinate three clusters of the polar interactions as highlighted in Figure 3D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "6d3ce40b-5e7c-468a-a129-bfca0eba7372",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C57",
+      "claim": "The Y140K mutation in Rsu1 decreased the binding affinity by ~100 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In Rsu1, the Y140K mutation that disrupts the cation-\u03c0 interaction between Y140Rsu1 and K297PINCH1, decreased the binding affinity by ~100 fold as indicated by ITC (Figure 3E), and the D115K/Y140K (DY/KK) double mutation further diminished the Rsu1/PINCH1 interaction (Figure 3E and Figure 1\u2014figure supplement 3E) presumably due to the introduction of an additional charge repulsion in the binding interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "c4ebb496-87c2-4e9c-ab18-be5cbb7eb33a",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C58",
+      "claim": "The D115K/Y140K (DY/KK) double mutation further diminished the Rsu1/PINCH1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In Rsu1, the Y140K mutation that disrupts the cation-\u03c0 interaction between Y140Rsu1 and K297PINCH1, decreased the binding affinity by ~100 fold as indicated by ITC (Figure 3E), and the D115K/Y140K (DY/KK) double mutation further diminished the Rsu1/PINCH1 interaction (Figure 3E and Figure 1\u2014figure supplement 3E) presumably due to the introduction of an additional charge repulsion in the binding interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "172792c0-e216-4908-9048-52809d34dbc8",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C59",
+      "claim": "The charge-reversing mutations (K297D and D295K) in PINCH1 either dramatically weakened or abolished the binding of PINCH1 to Rsu1.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the charge-reversing mutations (K297D and D295K) in PINCH1 either dramatically weakened or abolished the binding of PINCH1 to Rsu1 (Figure 3E and Figure 1\u2014figure supplement 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "06d7bbe6-2b23-454f-837f-8e77dd051b3c",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C60",
+      "claim": "The C-terminal \u03b1-helix of PINCH1 has been shown to directly interact with actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the C-terminal \u03b1-helix of PINCH1 has been shown to directly interact with actin and is required for the IPP-mediated bundling of F-actin, a process important for cell spreading and migration (Vaynberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "61817281-5b82-477e-a438-f76579360d78",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C61",
+      "claim": "The C-terminal \u03b1-helix of PINCH1 is required for the IPP-mediated bundling of F-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the C-terminal \u03b1-helix of PINCH1 has been shown to directly interact with actin and is required for the IPP-mediated bundling of F-actin, a process important for cell spreading and migration (Vaynberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "73514ab4-21c8-4d8e-8b42-a0e94388e889",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C62",
+      "claim": "The Rsu1 and actin binding surfaces on PINCH1_LIM5C largely overlap with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the Rsu1 and actin binding surfaces on PINCH1_LIM5C, we found that these two binding surfaces largely overlap with each other (Figure 4A), suggesting that the binding of Rsu1 to PINCH1 interferes with the binding of actin to PINCH1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "b67cbf13-94ad-4802-a0b9-da955ddcd336",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C63",
+      "claim": "The binding of Rsu1 to PINCH1 interferes with the binding of actin to PINCH1.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the Rsu1 and actin binding surfaces on PINCH1_LIM5C, we found that these two binding surfaces largely overlap with each other (Figure 4A), suggesting that the binding of Rsu1 to PINCH1 interferes with the binding of actin to PINCH1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the structural overlap of binding surfaces.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "caee9675-f902-4714-8e28-f6d8c79a965f",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C64",
+      "claim": "Wild-type Rsu1 but not the DY/KK mutant of Rsu1 forms a complex with IPP.",
+      "claim_type": "EXPLICIT",
+      "source": "To test our hypothesis, we first purified the IPP complex (Figure 4\u2014figure supplement 1A) and confirmed that Rsu1 binds to the IPP complex in a PINCH1-dependent way, as the wild-type Rsu1 but not the DY/KK mutant of Rsu1 forms a complex with IPP (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gel filtration data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "4fd65b36-0391-4bd7-9979-32d12a6f0fc0",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C65",
+      "claim": "Rsu1 binds to the IPP complex in a PINCH1-dependent way.",
+      "claim_type": "EXPLICIT",
+      "source": "To test our hypothesis, we first purified the IPP complex (Figure 4\u2014figure supplement 1A) and confirmed that Rsu1 binds to the IPP complex in a PINCH1-dependent way, as the wild-type Rsu1 but not the DY/KK mutant of Rsu1 forms a complex with IPP (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that the PINCH1-binding deficient mutant does not bind IPP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "583dc33b-e1ae-4a4b-8f6e-1f6bc56e4b1e",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C66",
+      "claim": "The actin-bundling ability of IPP complex was inhibited with the presence of Rsu1 in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, the actin-bundling ability of IPP complex was inhibited with the presence of Rsu1 in a concentration-dependent manner (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by actin bundling assay data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "cd00655b-6627-4d9a-80f1-fc1563e3ff85",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C67",
+      "claim": "The PINCH1-binding deficient mutants of Rsu1, Y140K, and DY/KK, were unable to interfere with the IPP-mediated F-actin bundling.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the PINCH1-binding deficient mutants of Rsu1, Y140K, and DY/KK, even with a much higher concentration than wild-type Rsu1, were unable to interfere with the IPP-mediated F-actin bundling (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by actin bundling assay data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "371277c6-b666-48e0-8cbd-36cfeb7e154d",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C68",
+      "claim": "Either the length or the number of bundled actins was decreased by the addition of wild-type Rsu1, but not the Y140K or DY/KK mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The detailed quantification further indicated that either the length or the number of bundled actins was decreased by the addition of wild-type Rsu1, but not the Y140K or DY/KK mutants (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "e3628951-a54c-412d-988c-8f08dfe8f1ee",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C69",
+      "claim": "Rsu1 or its Y140K mutant could not bundle F-actin by itself.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, Rsu1 or its Y140K mutant could not bundle F-actin by itself, while the DY/KK mutant of Rsu1 weakly promotes F-actin bundling (Figure 4\u2014figure supplement 1B), presumably induced by the artificial interaction between the introduced positively charged residues and actin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by actin bundling assay data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "9b4c22ec-9f02-4541-bcc2-bf6855a2876d",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C70",
+      "claim": "The DY/KK mutant of Rsu1 weakly promotes F-actin bundling.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, Rsu1 or its Y140K mutant could not bundle F-actin by itself, while the DY/KK mutant of Rsu1 weakly promotes F-actin bundling (Figure 4\u2014figure supplement 1B), presumably induced by the artificial interaction between the introduced positively charged residues and actin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by actin bundling assay data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "7c1dfdc0-b88f-48a5-bbd9-0896aec9f899",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C71",
+      "claim": "The electron microscopic analysis showed some large actin bundles in the F-actin sample with the IPP complex, but not in the F-actin sample with the IPP/Rsu1 mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the electron microscopic analysis showed some large actin bundles in the F-actin sample with the IPP complex, but not in the F-actin sample with the IPP/Rsu1 mixture (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "2139cd23-25ad-4f27-8fb0-78400e454ea9",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C72",
+      "claim": "Wild-type Rsu1 localized to the FA while the PINCH1-binding deficient mutants (Y140K and DY/KK) failed to accumulate at the FA.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate the cellular effect of Rsu1 on F-actin bundling, we overexpressed different Rsu1 variants in HeLa cells, the immortal human cervical cancer cells, and found that the wild-type Rsu1 localized to the FA while the PINCH1-binding deficient mutants (Y140K and DY/KK) failed to accumulate at the FA (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "324ce09a-0aaa-4d2a-8a5b-4e1c67a3f152",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C73",
+      "claim": "Stress fibers were significantly decreased in the cells transfected with Rsu1 while those remained largely unchanged in the cells transfected with the Y140K and DY/KK mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the inhibitory role of Rsu1 in the IPP-mediated actin bundling, stress fibers were significantly decreased in the cells transfected with Rsu1 while those remained largely unchanged in the cells transfected with the Y140K and DY/KK mutants (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy and quantitative data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "53bfb76e-f9fa-42fb-aedf-3b5aac07a644",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C74",
+      "claim": "Cell spreading was inhibited by overexpressing the wild-type Rsu1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cell spreading was inhibited by overexpressing the wild-type Rsu1 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell spreading assay data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "f40f4726-fa24-4957-b42c-a894110b101a",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C75",
+      "claim": "The overexpression of either Y140K or DY/KK in cells showed no decrease on cell spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the overexpression of either Y140K or DY/KK in cells showed no decrease on cell spreading (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell spreading assay data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "dba8caa5-521e-4b58-98fb-3293086706df",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C76",
+      "claim": "The binding of Rsu1 to PINCH1 attenuates the IPP's function on the actin-bundling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our cellular analysis supports that the binding of Rsu1 to PINCH1 attenuates the IPP's function on the actin-bundling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined cellular data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "cd30bdf2-5928-4dff-bc7f-ecaf81f33d66",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C77",
+      "claim": "The FA localization of Rsu1 largely relies on its binding to PINCH1.",
+      "claim_type": "EXPLICIT",
+      "source": "The FA localization of Rsu1 largely relies on its binding to PINCH1 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that PINCH1-binding deficient mutants do not localize to FA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "11d6b1dc-a792-4ead-9228-2b964bed5cce",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C78",
+      "claim": "Rsu1-WH2 bound to PINCH1_LIM45C with the nM-binding affinity, comparable to that of Rsu1.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our hypothesis, Rsu1-WH2 bound to PINCH1_LIM45C with the nM-binding affinity, comparable to that of Rsu1 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "0e5195f3-f77c-4d87-9d6f-1d51f981d5e1",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C79",
+      "claim": "The IPP complex mixed with Rsu1-WH2 highly promoted the actin-bundling.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, contrasting to the inhibition of the actin-bundling by Rsu1, the IPP complex mixed with Rsu1-WH2 highly promoted the actin-bundling (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by actin bundling assay data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "169110dd-3970-4aea-866f-bd4943bc3346",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C80",
+      "claim": "Rsu1 inhibits the IPP-mediated actin-bundling by masking the WH2 motif in PINCH1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that Rsu1 inhibits the IPP-mediated actin-bundling by masking the WH2 motif in PINCH1, as supplying the additional WH2 motif restores the decreased actin-bundling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that adding a WH2 motif to Rsu1 restores actin bundling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "abcea683-79e3-4546-bee8-c678562a473b",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C81",
+      "claim": "Rsu1-WH2 accumulated at the FA.",
+      "claim_type": "EXPLICIT",
+      "source": "By overexpressing the Rsu1-WH2 chimaera in HeLa cells, we found that the chimeric protein accumulated at the FA (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "ef75805e-3fa2-40cc-abc7-0af374459fee",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C82",
+      "claim": "The cells overexpressing Rsu1-WH2 showed a normal level of stress fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the decreased stress fiber formation in the cells overexpressing Rsu1, the cells overexpressing Rsu1-WH2 showed a normal level of stress fibers (Figure 6D and Figure 5B), suggesting that the inhibitory effect of Rsu1 on the actin bundles formation was eliminated by the fused WH2 motif.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy and quantitative data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "dc9722e8-a126-4e22-8c59-cdb87f49452d",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C83",
+      "claim": "The inhibitory effect of Rsu1 on the actin bundles formation was eliminated by the fused WH2 motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the decreased stress fiber formation in the cells overexpressing Rsu1, the cells overexpressing Rsu1-WH2 showed a normal level of stress fibers (Figure 6D and Figure 5B), suggesting that the inhibitory effect of Rsu1 on the actin bundles formation was eliminated by the fused WH2 motif.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that Rsu1-WH2 does not decrease stress fibers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "1ac2a060-bfd5-4226-947d-3a77d9970116",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C84",
+      "claim": "Cells tightly control the Rsu1 level for the homeostasis of actin dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that cells tightly control the Rsu1 level for the homeostasis of actin dynamics, as either depleting Rsu1, which reduces the cellular protein level of the IPP complex and thereby impairs IPP-mediated actin bundling (Kadrmas et al., 2004; Gonzalez-Nieves et al., 2013), or elevating the Rsu1 level, which disrupts F-actin bundles, would interfere with the actin-dependent cell motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the data and prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "7f9c079c-13aa-460d-af3b-ef829ef951e6",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C85",
+      "claim": "Rsu1 binds to F-actin organizers, such as Rac1 and \u03b1-actinin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Rsu1 binds to F-actin organizers, such as Rac1 and \u03b1-actinin (Ojelade et al., 2015; Wang et al., 2020), and regulates several downstream kinases of Ras oncogene, including JNK, ERK, and mitogen activated protein kinase 14 (p38) signaling (Dougherty et al., 2008; Gonzalez-Nieves et al., 2013; Kim et al., 2019; Louca et al., 2020; Montanez et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "92aec866-a181-4c01-a036-25e0abe6d593",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C86",
+      "claim": "Rsu1 regulates several downstream kinases of Ras oncogene, including JNK, ERK, and mitogen activated protein kinase 14 (p38) signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Rsu1 binds to F-actin organizers, such as Rac1 and \u03b1-actinin (Ojelade et al., 2015; Wang et al., 2020), and regulates several downstream kinases of Ras oncogene, including JNK, ERK, and mitogen activated protein kinase 14 (p38) signaling (Dougherty et al., 2008; Gonzalez-Nieves et al., 2013; Kim et al., 2019; Louca et al., 2020; Montanez et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "5c88c205-71d3-4d19-bb82-4af737506452",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C87",
+      "claim": "Alterations of Rsu1 level may deregulate cell adhesion and migration and influence cancer cell behavior through multiple factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, alterations of Rsu1 level may deregulate cell adhesion and migration and influence cancer cell behavior through multiple factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the data and prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "d216e1c2-6a41-4cb4-af22-8eb220c247eb",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C88",
+      "claim": "The nM-scale binding affinity is achieved through a large PINCH1-binding surface on the concave part of the LRR-solenoid in Rsu1.",
+      "claim_type": "EXPLICIT",
+      "source": "The high binding affinity between Rsu1 and PINCH1 ensures the inhibitory effect of even small amount of Rsu1 on the IPP-mediated actin organization. The nM-scale binding affinity is achieved through a large PINCH1-binding surface on the concave part of the LRR-solenoid in Rsu1 (Figure 3A), the most common protein interaction surface on the LRR proteins (Kobe and Kajava, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis and citation to prior knowledge.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "23938755-3065-4aff-b64b-8bad74acbfdc",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C89",
+      "claim": "Two water molecules play important roles in mediating the Rsu1/PINCH1 interaction by integrating the hydrogen bond network that connects most polar residues in the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, two water molecules play important roles in mediating the Rsu1/PINCH1 interaction by integrating the hydrogen bond network that connects most polar residues in the interface (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "1474c88d-e754-4af0-8508-9f5b0445578a",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C90",
+      "claim": "Such a water-involved interaction network contributes to the binding energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a water-involved interaction network contributes to the binding energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the structural analysis of the water-mediated interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "561ec711-8f92-468f-a3c4-3640a173ec94",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C91",
+      "claim": "There is an additional evolutionally conserved surface on Rsu1 on the convex side of the LRR-solenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in addition to the PINCH1-binding surface, we found an additional evolutionally conserved surface on Rsu1 on the convex side of the LRR-solenoid (Figure 6\u2014figure supplement 1), implicating that Rsu1 may interact with its binding partner via this surface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "9a2dd660-007c-4673-a6ff-cca290b8d9fd",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C92",
+      "claim": "Rsu1 may interact with its binding partner via the conserved surface on the convex side of the LRR-solenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in addition to the PINCH1-binding surface, we found an additional evolutionally conserved surface on Rsu1 on the convex side of the LRR-solenoid (Figure 6\u2014figure supplement 1), implicating that Rsu1 may interact with its binding partner via this surface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is speculative reasoning based on the presence of a conserved surface.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "db25c60d-9c7b-40fa-a29f-b255a85f0d62",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "claim_id": "C93",
+      "claim": "Rsu1 binds to the IPP complex with an affinity higher than those of other IPP-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Rsu1 binds to the IPP complex with an affinity higher than those of other IPP-binding proteins (Figure 1C; Fukuda et al., 2014; Stiegler et al., 2012; Vaynberg et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "75638a69-78d4-421d-ba31-baa0970ff82f",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structures of Rsu1/PINCH1 complexes were solved at high resolution, revealing that Rsu1 forms a curved LRR solenoid structure capped by N- and C-terminal helical regions, which interacts with the LIM5 domain and C-terminal tail of PINCH1 through its concave surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C35-C45 collectively describe the structural determination and characterization of the Rsu1/PINCH1 complex. The crystallographic data (C35) at high resolution (1.65-3.15 \u00c5), detailed structural descriptions (C36-C42), and structural comparisons (C43-C45) provide strong, converging evidence for the overall architecture and binding mode. The structural data is internally consistent across multiple crystal forms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rsu1 binds to the C-terminal region of PINCH1 (LIM45C or LIM5C) with high affinity (~15 nM Kd), requiring the very C-terminal sequence (aa.308-325) of PINCH1, while the LRR region of Rsu1 is sufficient for binding. The binding interface is highly conserved across species, though PINCH2 binds ~100-fold weaker than PINCH1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34, C46-C51 describe the biochemical characterization of the Rsu1/PINCH1 interaction. The ITC data (C31, C32, C50) provides quantitative binding measurements, gel filtration data (C33, C49) confirms complex formation, and sequence conservation analysis (C47) supports evolutionary conservation. The weaker PINCH2 binding (C50) is experimentally demonstrated, though the mechanistic explanation (C51) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "69e9df22-bc7b-4418-9b49-903846fc1db7",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Rsu1/PINCH1 interface involves 22 surface residues on Rsu1 (extending from LRR2 to LRR9) forming hydrogen bonds, salt bridges, and hydrophobic interactions with PINCH1. Two conserved buried water molecules critically coordinate polar interactions, and interface mutations dramatically reduce or abolish binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59, C88-C90 describe the molecular details of the binding interface. The structural analysis (C54-C56, C89) is supported by high-resolution crystal structures, and the functional importance is validated by mutagenesis experiments (C57-C59) showing 100-fold or greater reductions in binding affinity. The role of water molecules (C56, C89, C90) is well-documented in the structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "e1793008-5ea5-498d-b4f1-ca32810b32fb",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Upon binding to Rsu1, the C-terminal \u03b1-helix of PINCH1 undergoes substantial conformational change while the LIM5 domain remains largely unchanged. The Rsu1 and actin binding surfaces on PINCH1 largely overlap, suggesting that Rsu1 binding interferes with actin binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C53, C62, C63 describe conformational changes and binding surface overlap. The conformational change (C52) is supported by structural comparison with apo PINCH1 structure. The overlap of binding surfaces (C62, C63) is demonstrated by structural analysis, providing a mechanistic basis for competitive binding. The inference about interference (C63) is logical given the structural overlap.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "4b88c068-1eba-4af5-bb6c-d761355bbabd",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Rsu1 inhibits IPP-mediated F-actin bundling in vitro in a concentration-dependent manner by binding to PINCH1 and masking the WH2 motif. PINCH1-binding deficient mutants (Y140K, DY/KK) cannot inhibit actin bundling, and Rsu1 itself does not bundle actin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C64-C71, C76, C80 describe the in vitro functional consequences of Rsu1/PINCH1 interaction. The actin bundling assays (C66-C68, C71) demonstrate concentration-dependent inhibition by wild-type Rsu1 but not by binding-deficient mutants. Gel filtration (C64) confirms PINCH1-dependent IPP binding. Control experiments (C69, C70) show Rsu1 alone does not bundle actin. The mechanism (C80) is well-supported by the rescue experiment with Rsu1-WH2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "1d574315-b1f4-4ebf-8920-5f0c7e6eba28",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Overexpression of wild-type Rsu1 in HeLa cells impairs stress fiber formation and cell spreading, while PINCH1-binding deficient mutants (Y140K, DY/KK) do not show these effects. Wild-type Rsu1 localizes to focal adhesions while the mutants fail to accumulate at FAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C72-C75, C77 describe cellular phenotypes. Confocal microscopy data (C72, C73) shows differential localization and stress fiber formation, and quantitative analysis (C73) demonstrates statistical significance. Cell spreading assays (C74, C75) show specific effects of wild-type but not mutant Rsu1. The FA localization dependence on PINCH1 binding (C77) is well-demonstrated by the mutant analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "393354d7-a665-4d32-b2e6-9f4997b60e77",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A Rsu1-WH2 chimera (Rsu1 fused to the WH2 motif from PINCH1) binds PINCH1 with similar affinity to wild-type Rsu1 but promotes rather than inhibits actin bundling when mixed with IPP. In cells, Rsu1-WH2 localizes to FAs but does not impair stress fiber formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C79, C81-C83 describe a rescue experiment that validates the mechanism. ITC data (C78) confirms maintained PINCH1 binding, actin bundling assays (C79) show restored bundling activity, and cellular data (C81, C82) demonstrate FA localization without stress fiber impairment. This elegant experiment strongly supports the proposed mechanism that Rsu1 inhibits actin bundling by masking the WH2 motif.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "ba28689a-2c44-4a55-8b97-2e0edab80c66",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Rsu1 is critical for tuning the communication between F-actin and focal adhesions by interacting with the IPP complex and negatively modulating F-actin bundling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10 represent the main conclusions of the study. These are well-supported by the combined structural (crystal structures showing binding mode), biochemical (binding affinity, actin bundling assays), and cellular (stress fiber formation, cell spreading, FA localization) data presented in the manuscript. The mechanism is validated by both loss-of-function (binding-deficient mutants) and gain-of-function (WH2 fusion) experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "8d52c839-97d4-45dc-ad34-fbef5bed177d",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background information on the IPP complex, Rsu1, and PINCH proteins, including their roles in focal adhesion, cell motility, and disease, as well as prior findings on Rsu1's effects on F-actin organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C11-C30 provide background context from prior literature. These are appropriately cited and represent established knowledge in the field. While important for context, these are not novel findings from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "77621c22-2a8a-4a09-9821-ef652372d0d9",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The C-terminal \u03b1-helix of PINCH1 directly interacts with actin and is required for IPP-mediated F-actin bundling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C61 describe prior findings from Vaynberg et al., 2018 that provide essential context for the current study's mechanism. These are appropriately cited and form the basis for understanding how Rsu1 inhibits actin bundling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "f85759c9-59f2-4e07-9330-61d8cabf4bf1",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cells likely tightly control Rsu1 levels for actin dynamics homeostasis, and alterations in Rsu1 levels may deregulate cell adhesion and migration through multiple factors including interactions with F-actin organizers and regulation of Ras signaling pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84, C85-C87 are largely speculative (C84, C87) or cite prior work (C85, C86). While the speculation is reasonable given the data, these claims represent hypotheses about broader cellular regulation rather than direct findings from the current study. The manuscript does not test these broader regulatory mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "47aac9a1-5c29-4382-9e98-df135f4cf937",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "An additional evolutionarily conserved surface exists on the convex side of the Rsu1 LRR-solenoid, suggesting Rsu1 may interact with other binding partners via this surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91, C92 identify a conserved surface (C91, supported by structural data) but the functional implication (C92) is purely speculative. No experimental evidence is provided for additional binding partners or the functional relevance of this surface. This represents an interesting observation for future work but is not validated in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    },
+    {
+      "id": "18939aa5-ab33-4328-af9b-9daa7e1e7da5",
+      "content_id": "6e72c188-f389-42ff-8779-b3b659ef9c14",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Rsu1 binds to the IPP complex with higher affinity than other IPP-binding proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 compares Rsu1's binding affinity to other IPP-binding proteins based on ITC data (Figure 1C) and citations to prior work. The ~15 nM Kd for Rsu1/PINCH1 is indeed stronger than the \u03bcM-range affinities reported for other IPP interactions in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:20:58.066536Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3f85e5f8-371a-4264-8180-3ef6f2450c44",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "fbc24ae9-0119-410f-be51-36e177d38e30",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "82880899-6238-40df-af2c-a9430caefce0",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "fe34d0ad-19ee-4de0-83db-c697d1fc3841",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "68681f03-bfc1-4bc4-9be0-3e98c13eb9e4",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "eec3146e-9a43-4d11-a6dc-563b25647325",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "eac4a51f-9d0b-46c9-9d2c-f6b91e9b9336",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "8d02b1ae-739a-4ab0-b47c-a71010c0ef16",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "2ce2c26e-dae2-4f70-b4dd-04fc402db487",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "5c9f3ec9-b946-4150-adc7-9f8806d305ad",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "bce1cc03-f463-4545-ae53-9dd5a233cd2c",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "24f8100c-d541-4022-a7e4-43a9ef65bda8",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "49e3d229-6ade-4db2-ad51-871f6698e91f",
+      "result_id": "75638a69-78d4-421d-ba31-baa0970ff82f"
+    },
+    {
+      "claim_id": "07871c82-bb92-4f24-92b8-ce219799386f",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "a76da5db-e592-4411-93ed-0bc732d918f7",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "fcd45beb-3abf-4733-aa75-7146cec127b7",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "86732a6c-c780-46b9-8cfa-a8044654a779",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "fb5024f9-9e33-49f1-bdf6-e9d6e8619f6c",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "b2a7c273-d723-4784-aeeb-da8d2938e017",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "3f08dcd4-6fc8-4ed7-b36e-5486e640c44e",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "1881a0b6-db4e-4aa5-a91a-0a5982658ec7",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "bd464500-ec4d-4f0e-ac16-87e9ca3cf3b8",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "c314e757-1f81-40c9-a010-c4f4f907f834",
+      "result_id": "b31e34c9-c5ac-47cc-b591-7f4ac54a6a22"
+    },
+    {
+      "claim_id": "6b976e7e-c1db-4042-9908-8ace888230e5",
+      "result_id": "69e9df22-bc7b-4418-9b49-903846fc1db7"
+    },
+    {
+      "claim_id": "8302f4ad-e297-41f9-8bab-d67469e8df93",
+      "result_id": "69e9df22-bc7b-4418-9b49-903846fc1db7"
+    },
+    {
+      "claim_id": "9771a953-08ff-427d-a72a-a79d9f2814eb",
+      "result_id": "69e9df22-bc7b-4418-9b49-903846fc1db7"
+    },
+    {
+      "claim_id": "6d3ce40b-5e7c-468a-a129-bfca0eba7372",
+      "result_id": "69e9df22-bc7b-4418-9b49-903846fc1db7"
+    },
+    {
+      "claim_id": "c4ebb496-87c2-4e9c-ab18-be5cbb7eb33a",
+      "result_id": "69e9df22-bc7b-4418-9b49-903846fc1db7"
+    },
+    {
+      "claim_id": "172792c0-e216-4908-9048-52809d34dbc8",
+      "result_id": "69e9df22-bc7b-4418-9b49-903846fc1db7"
+    },
+    {
+      "claim_id": "d216e1c2-6a41-4cb4-af22-8eb220c247eb",
+      "result_id": "69e9df22-bc7b-4418-9b49-903846fc1db7"
+    },
+    {
+      "claim_id": "23938755-3065-4aff-b64b-8bad74acbfdc",
+      "result_id": "69e9df22-bc7b-4418-9b49-903846fc1db7"
+    },
+    {
+      "claim_id": "1474c88d-e754-4af0-8508-9f5b0445578a",
+      "result_id": "69e9df22-bc7b-4418-9b49-903846fc1db7"
+    },
+    {
+      "claim_id": "cade5ec1-c779-48ee-8c9f-a5d3d0ff673c",
+      "result_id": "e1793008-5ea5-498d-b4f1-ca32810b32fb"
+    },
+    {
+      "claim_id": "d1a7dc24-16a3-4145-953b-8ae67a592c8a",
+      "result_id": "e1793008-5ea5-498d-b4f1-ca32810b32fb"
+    },
+    {
+      "claim_id": "73514ab4-21c8-4d8e-8b42-a0e94388e889",
+      "result_id": "e1793008-5ea5-498d-b4f1-ca32810b32fb"
+    },
+    {
+      "claim_id": "b67cbf13-94ad-4802-a0b9-da955ddcd336",
+      "result_id": "e1793008-5ea5-498d-b4f1-ca32810b32fb"
+    },
+    {
+      "claim_id": "71b3824b-b51e-47ee-bfbd-b9a40cb0540e",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "caee9675-f902-4714-8e28-f6d8c79a965f",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "4fd65b36-0391-4bd7-9979-32d12a6f0fc0",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "583dc33b-e1ae-4a4b-8f6e-1f6bc56e4b1e",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "cd00655b-6627-4d9a-80f1-fc1563e3ff85",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "371277c6-b666-48e0-8cbd-36cfeb7e154d",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "e3628951-a54c-412d-988c-8f08dfe8f1ee",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "9b4c22ec-9f02-4541-bcc2-bf6855a2876d",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "7c1dfdc0-b88f-48a5-bbd9-0896aec9f899",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "dba8caa5-521e-4b58-98fb-3293086706df",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "169110dd-3970-4aea-866f-bd4943bc3346",
+      "result_id": "4b88c068-1eba-4af5-bb6c-d761355bbabd"
+    },
+    {
+      "claim_id": "ba90ec3e-39e6-4877-99aa-ce8f165b819c",
+      "result_id": "1d574315-b1f4-4ebf-8920-5f0c7e6eba28"
+    },
+    {
+      "claim_id": "c11fe67d-81f7-4575-bc37-b1ccfd700186",
+      "result_id": "1d574315-b1f4-4ebf-8920-5f0c7e6eba28"
+    },
+    {
+      "claim_id": "2139cd23-25ad-4f27-8fb0-78400e454ea9",
+      "result_id": "1d574315-b1f4-4ebf-8920-5f0c7e6eba28"
+    },
+    {
+      "claim_id": "324ce09a-0aaa-4d2a-8a5b-4e1c67a3f152",
+      "result_id": "1d574315-b1f4-4ebf-8920-5f0c7e6eba28"
+    },
+    {
+      "claim_id": "53bfb76e-f9fa-42fb-aedf-3b5aac07a644",
+      "result_id": "1d574315-b1f4-4ebf-8920-5f0c7e6eba28"
+    },
+    {
+      "claim_id": "f40f4726-fa24-4957-b42c-a894110b101a",
+      "result_id": "1d574315-b1f4-4ebf-8920-5f0c7e6eba28"
+    },
+    {
+      "claim_id": "cd30bdf2-5928-4dff-bc7f-ecaf81f33d66",
+      "result_id": "1d574315-b1f4-4ebf-8920-5f0c7e6eba28"
+    },
+    {
+      "claim_id": "11d6b1dc-a792-4ead-9228-2b964bed5cce",
+      "result_id": "393354d7-a665-4d32-b2e6-9f4997b60e77"
+    },
+    {
+      "claim_id": "0e5195f3-f77c-4d87-9d6f-1d51f981d5e1",
+      "result_id": "393354d7-a665-4d32-b2e6-9f4997b60e77"
+    },
+    {
+      "claim_id": "abcea683-79e3-4546-bee8-c678562a473b",
+      "result_id": "393354d7-a665-4d32-b2e6-9f4997b60e77"
+    },
+    {
+      "claim_id": "ef75805e-3fa2-40cc-abc7-0af374459fee",
+      "result_id": "393354d7-a665-4d32-b2e6-9f4997b60e77"
+    },
+    {
+      "claim_id": "dc9722e8-a126-4e22-8c59-cdb87f49452d",
+      "result_id": "393354d7-a665-4d32-b2e6-9f4997b60e77"
+    },
+    {
+      "claim_id": "3d645857-0408-4fbc-8cb6-1773027c4ec7",
+      "result_id": "ba28689a-2c44-4a55-8b97-2e0edab80c66"
+    },
+    {
+      "claim_id": "df8333d6-bf13-4abc-a4b5-673f5610b1a5",
+      "result_id": "ba28689a-2c44-4a55-8b97-2e0edab80c66"
+    },
+    {
+      "claim_id": "6311557f-789f-4df2-8f92-b5ba07efc179",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "71c072c0-908a-4856-9b6a-8d7cac40d32b",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "90c07bdc-364c-4a05-8c98-38c6b709eeb3",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "6bed9e85-1525-421f-83b0-eb9777187dde",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "fe5805f3-3492-4d6d-b429-c049adda4e27",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "8b2c78e0-c209-4982-a0bb-f14956e67cf3",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "4938c625-85ac-473c-b3f7-f6d6bb942e91",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "7645a14c-4a60-43ce-bda0-66c852fc3c7b",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "401b719f-6f6b-4b51-ae50-10ed8ba63d0b",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "22f80899-caa8-448f-868e-585725091884",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "9508cfe7-23da-4a18-85e3-99322c90b7a5",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "2ad9ea4b-caa8-4dfb-8b86-bf49313256db",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "2855b3c9-f4fb-455d-9b0c-f25297ca583c",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "afe0114a-9bff-4608-b5b8-7002a8de5b50",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "7ba5bafa-dec0-42ae-a05a-c986fe15257b",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "89b302f7-ae07-4a8e-92b5-b5e051b4688d",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "08271c22-fa83-4788-a9fe-7f36cfa559be",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "9353ee2e-50be-4303-98bc-ea1a707d2842",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "3c396153-41c2-41c1-af5d-d596d93c418a",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "a575a901-e131-4153-a33b-26469ceea115",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "674437fa-052b-45c4-9479-ef992ae4c5d5",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "b56ad9c7-06f5-40ab-b778-fa92e3af220d",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "7fca55ea-7268-4a2d-a512-295fb2bf2bff",
+      "result_id": "8d52c839-97d4-45dc-ad34-fbef5bed177d"
+    },
+    {
+      "claim_id": "06d7bbe6-2b23-454f-837f-8e77dd051b3c",
+      "result_id": "77621c22-2a8a-4a09-9821-ef652372d0d9"
+    },
+    {
+      "claim_id": "61817281-5b82-477e-a438-f76579360d78",
+      "result_id": "77621c22-2a8a-4a09-9821-ef652372d0d9"
+    },
+    {
+      "claim_id": "1ac2a060-bfd5-4226-947d-3a77d9970116",
+      "result_id": "f85759c9-59f2-4e07-9330-61d8cabf4bf1"
+    },
+    {
+      "claim_id": "7f9c079c-13aa-460d-af3b-ef829ef951e6",
+      "result_id": "f85759c9-59f2-4e07-9330-61d8cabf4bf1"
+    },
+    {
+      "claim_id": "92aec866-a181-4c01-a036-25e0abe6d593",
+      "result_id": "f85759c9-59f2-4e07-9330-61d8cabf4bf1"
+    },
+    {
+      "claim_id": "5c88c205-71d3-4d19-bb82-4af737506452",
+      "result_id": "f85759c9-59f2-4e07-9330-61d8cabf4bf1"
+    },
+    {
+      "claim_id": "561ec711-8f92-468f-a3c4-3640a173ec94",
+      "result_id": "47aac9a1-5c29-4382-9e98-df135f4cf937"
+    },
+    {
+      "claim_id": "9a2dd660-007c-4673-a6ff-cca290b8d9fd",
+      "result_id": "47aac9a1-5c29-4382-9e98-df135f4cf937"
+    },
+    {
+      "claim_id": "db25c60d-9c7b-40fa-a29f-b255a85f0d62",
+      "result_id": "18939aa5-ab33-4328-af9b-9daa7e1e7da5"
+    }
+  ],
+  "comparisons": []
+}

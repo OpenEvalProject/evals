@@ -1,0 +1,405 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Two monkeys were trained to perform a cycling task at different speeds, with natural within-trial speed variation creating a continuous range of speeds. Neural recordings from 49-52 neurons per monkey showed nearly all neurons were task-modulated during cycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design, behavioral task, and neural recording procedures are clearly described with specific quantitative details (C1-C6, C101-C109). The methods are standard for motor cortex studies and the behavioral paradigm successfully generated the desired range of cycling speeds for analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C110"
+    ],
+    "result": "Neural and muscle responses were heterogeneous across neurons, speeds, and cycling directions, with neurons showing diverse speed-dependent modulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heterogeneity of responses is documented with specific counts of neurons showing different speed relationships (C8) and supported by figures showing diverse response patterns (C7). This establishes the complexity of the neural data that the modeling approach must explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "Recurrent neural networks were successfully trained to generate empirical muscle activity patterns across speeds, with 96 out of 100 networks achieving high performance (R\u00b2>0.99) using a simple static speed-instructing input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The network training procedure is well-documented with specific architectural details, training parameters, and success criteria (C9-C13, C111-C117). The high success rate (96%) and stringent performance criterion (R\u00b2>0.99) demonstrate the robustness of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C37"
+    ],
+    "result": "Neural responses were better accounted for by network factors than by muscle factors at both single-neuron and population levels, with statistically significant improvements in 90 out of 96 networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between network and muscle factors is quantitative and statistically rigorous (C14-C15), with specific p-values and effect sizes reported. This provides strong evidence that network-level dynamics better explain neural activity than simple muscle encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C32"
+    ],
+    "result": "All trained networks adopted a stacked-elliptical solution where trajectories for each speed formed stable limit cycles that were elliptical in the dominant two dimensions and separated by translation in a third dimension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stacked-elliptical structure is consistently observed across all successful networks (C16-C17) and verified through perturbation experiments demonstrating stability (C19). The consistency of this solution across 96 networks with different initializations provides strong evidence for this being a fundamental computational strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Network solutions exhibited dramatically lower trajectory tangling than muscle trajectories (p<10\u207b\u00b9\u2070), reflecting the principle that smooth dynamics require low tangling, with elliptical limit cycles ensuring low within-speed tangling and trajectory separation ensuring low between-speed tangling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tangling analysis is quantitative with extremely strong statistical significance (C21). The theoretical framework linking low tangling to smooth dynamics is clearly articulated (C43-C48) and the network solutions demonstrate this principle empirically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C49",
+      "C50"
+    ],
+    "result": "Networks could continuously adjust speed within the trained range and even change speed on-the-fly with ramping inputs, demonstrating that training on eight speeds was sufficient to produce a unified solution with continuous speed control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The generalization to untrained speeds is demonstrated empirically (C22) and the consistency of the solution across all networks (C50) supports the claim that this is a robust computational strategy that naturally emerges from the training procedure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Neural trajectories were approximately elliptical for every condition (all speeds, both directions, both monkeys) and were significantly more elliptical than muscle trajectories (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The elliptical structure of neural trajectories is demonstrated across all conditions with statistical significance (C23-C24). This provides strong empirical support for the key prediction from the network models that neural trajectories should be elliptical regardless of muscle trajectory shape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Neural trajectory tangling was much lower than muscle trajectory tangling for every condition and both monkeys (p<0.001 for every comparison).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison of tangling between neural and muscle trajectories is quantitative and statistically rigorous across all conditions (C25). This confirms a key prediction from the network models and demonstrates that motor cortex activity exhibits the low-tangling property expected of dynamical systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Neural trajectories had similar shapes in the dominant two dimensions across speeds, while muscle trajectory shapes were speed-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The path similarity analysis (C26) demonstrates that neural trajectories maintain consistent shape across speeds in the dominant dimensions, contrasting with muscle trajectories. This supports the network prediction that the dominant neural structure should be invariant to output details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Neural population trajectories across speeds formed stacked ellipses with consistently low across-speed tangling, while muscle trajectories had less clear organization and high tangling. Trajectories were separated along a speed axis capturing ~4-5% of variance, with no trajectory coming close to another at any phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stacked-elliptical organization is demonstrated with multiple complementary analyses (C27-C31), including visualization in 3D PC space, tangling analysis, and phase-dependent distance measurements. The quantitative characterization of the speed axis and trajectory separation provides strong support for the network-predicted organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The top two PCs from the slowest-speed neural trajectory captured >75% of variance for that trajectory, but variance explained declined monotonically with increasing speed to ~40% for the fastest speed, indicating trajectories tilt into different dimensions across speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of variance explained across speeds (C33-C34) provides quantitative evidence for trajectory tilting. This demonstrates an additional form of separation between speed conditions beyond simple translation, consistent with network solutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Networks exhibited stacked-elliptical structure for a variety of forms of feedback, remaining realistic unless feedback influence became so strong that it dominated network dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The robustness of the stacked-elliptical solution to different feedback conditions (C35-C36) demonstrates that this is a general computational strategy that persists across different assumptions about sensory feedback, strengthening the biological plausibility of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Neural trajectories had the same within-speed and across-speed organization as network trajectories, demonstrating that the dominant structure of motor cortex activity closely matches network solutions that employ dynamics to generate muscle activity, and that features of good network-level solutions can provide strong predictions regarding empirical neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis claim (C38-C40) is well-supported by the multiple lines of evidence presented throughout the manuscript, including trajectory shape, tangling, separation, and tilting analyses. The convergence of multiple independent analyses provides strong support for the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The stacked-elliptical structure consistently emerged regardless of training with noise, but did not emerge with unrelated inputs for each speed and showed variable emergence with rhythmic inputs, indicating it is not inevitable but emerges as a strong prediction under assumptions of solution continuity and motor cortex as central participant in dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control simulations (C51-C53) demonstrate the conditions under which the stacked-elliptical solution does and does not emerge, providing important constraints on when this computational strategy is expected. This strengthens the theoretical framework by showing the solution is not trivial but depends on specific computational requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The stacked-elliptical structure is a computational motif that serves as a scaffolding for generating outputs rather than instantiating the full computation. The elliptical trajectory sets the basic rhythm and phase, while muscle-encoding signals occupy orthogonal dimensions, with the dominant structure ensuring low tangling rather than having straightforward representational interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of the stacked-elliptical structure as a scaffolding (C63-C64) is supported by perturbation experiments and analysis of how outputs are generated from network activity (C56-C58). The distinction between the dominant low-tangling structure and representational signals in other dimensions (C65-C66) provides important insight into the computational architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Stacking of elliptical trajectories is a natural strategy for adjusting speed because networks lack mechanisms for additive inputs to scale flow-field magnitude and because target outputs change in both magnitude and temporal pattern with speed. This structure persisted across networks trained on four different sets of muscle activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical explanation for why stacking is a natural solution (C60) is well-reasoned and supported by the empirical observation that this structure persists across diverse output targets (C61). This demonstrates the generality of the computational principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The presence of low tangling in motor cortex across many tasks supports the hypothesis that dynamics rely in part on internal sources of recurrence adjusted during learning to provide low-tangled solutions, rather than being purely driven by sensory feedback which exhibits high tangling in somatosensory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The argument about the source of dynamics (C67-C73) is well-supported by citations to prior work and logical reasoning. The contrast with somatosensory cortex (C70) and the observation of preparatory dynamics (C71) provide evidence against purely feedback-driven dynamics. However, this remains somewhat speculative (C72) as it cannot be definitively proven from the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Low trajectory tangling is neither always desirable nor always expected, even in dynamical systems. It is desirable at the level of the full dynamical system but not necessarily within any given brain area. Motor cortex likely shows low tangling because it forms a hub where overall dynamics are close to fully observable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nuanced discussion of when low tangling is expected (C74-C81) is well-reasoned and supported by citations to prior work showing task-dependent differences (C76) and area-dependent differences (C79). This provides important context for interpreting the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "During locomotion, cortical activity shows stacked-elliptical structure with far less trajectory separation (<1% of variance) and minimal speed-based modulation, possibly reflecting cortex playing a less central role in locomotion compared to cycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with locomotion (C84-C86) is supported by citations to prior work and provides useful context for understanding when the stacked-elliptical solution with strong separation is expected versus when it is not. This strengthens the theoretical framework by identifying boundary conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Stacked-elliptical structure is likely a common solution to adjusting speed across processes and computations, observed in multiple artificial network architectures and in both motor and cognitive domains, reflecting the nature of computational problems rather than specific input-output functions or domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The generalization to other tasks and domains (C87-C91) is well-supported by citations to prior work. This places the current findings in a broader context and suggests general computational principles that transcend specific implementations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Certain trajectory motifs like helical structures are broadly useful across different brain areas and computational purposes, constraining but not fully specifying the underlying computation. The model predicts helical trajectories in motor cortex when speed steadily increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The discussion of trajectory motifs (C92-C94) is conceptually interesting and the prediction about helical trajectories (C93) is noted as informally observed but not rigorously tested. This represents a testable prediction for future work rather than a fully supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "There is no single strategy for speed control across all behaviors (reaching, sequences, cycling), but the network-dynamics perspective is helpful in comprehending computational strategies across these different cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion of different speed control strategies (C96-C100) is well-supported by citations to prior work and provides important context for understanding the scope and limitations of the current findings. This demonstrates appropriate scientific nuance in interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The network-dynamics perspective seeks to explain neural activity in terms of underlying computational mechanisms, with the hypothesis that dominant aspects of neural activity are shaped by computational needs rather than simply representing outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical framework (C41-C42) is clearly articulated and provides the conceptual foundation for the study. This represents an established perspective in the field that is being tested and extended by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Network trajectories are stable only when speed-instructing input is present and return to baseline when input is extinguished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This property of network dynamics (C59) is stated as observed but not shown in detail. It represents an expected property of the network architecture and is consistent with the overall framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "The median number of trials per speed bin was 84 and 80 for monkeys C and D, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological detail (C118) is clearly stated and indicates adequate statistical power for the analyses performed.",
+    "result_type": "MINOR"
+  }
+]

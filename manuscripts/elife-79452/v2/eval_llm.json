@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "UBQLN2 is necessary and sufficient for the specific regulation of PEG10 gag-pol protein levels. Only UBQLN2 knockout (not UBQLN1 or UBQLN4) increases PEG10 gag-pol protein, and only the gag-pol form accumulates while gag remains unchanged. Re-expression of UBQLN2 in knockout cells restores normal PEG10 gag-pol levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 are well-supported by western blot data from multiple cell lines (hESCs and HEK293 TKO cells) showing selective accumulation of gag-pol upon UBQLN2 loss and rescue upon UBQLN2 re-expression. The specificity for UBQLN2 among the UBQLN family and for gag-pol over gag is clearly demonstrated with quantification across multiple independent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C39"
+    ],
+    "result": "Disease-associated UBQLN2 mutations (P497H and P506T) show partial loss of function in restraining PEG10 gag-pol levels. Both mutants retain some degradative capacity compared to complete UBQLN2 loss, but P506T shows significantly impaired function compared to wild-type UBQLN2, while P497H function is indistinguishable from wild-type in endogenous assays but impaired in overexpression assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C39 are supported by quantitative western blot and flow cytometry data comparing mutant and wild-type UBQLN2 rescue in TKO cells. The allele-specific differences are demonstrated with statistical significance, though the discrepancy between endogenous and overexpression assays for P497H suggests context-dependent effects that warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "PEG10 gag-pol accumulation in UBQLN-deficient cells reflects defects in proteasome-mediated degradation. The half-life of gag-pol is extended beyond 8 hours in TKO cells compared to 4-8 hours in wild-type cells, and proteasome inhibition reduces UBQLN-dependence for gag-pol accumulation. In contrast, gag protein shows a long half-life (>8 hours) in both cell types and does not accumulate in TKO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C42 are based on cycloheximide chase and proteasome inhibitor experiments, but the authors acknowledge that differences in half-life did not reach statistical significance (p=0.0595 for gag-pol at 8hr). The proteasome inhibitor data (C40-C42) support proteasome involvement, but the incomplete rescue suggests additional degradation pathways. The long half-lives (>8hr) make kinetic measurements challenging and limit definitive conclusions about degradation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The C-terminal polyproline repeat (PPR) region of PEG10 pol is necessary but not sufficient for UBQLN-dependent degradation. Deletion of the PPR abolishes UBQLN-dependence in human PEG10. Evolutionary analysis shows the PPR is unique to eutherian mammals (which have UBQLN2), while marsupial PEG10 (lacking PPR and UBQLN2) does not depend on UBQLNs. Appending the human PPR to marsupial PEG10 decreases abundance but does not fully confer UBQLN-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 and C51-C56 are well-supported by flow cytometry data showing loss of UBQLN-dependence upon PPR deletion and by comparative analysis of mammalian PEG10 variants. The evolutionary correlation between PPR presence and UBQLN2 presence across species provides strong supporting evidence. However, the observation that PPR addition to marsupial PEG10 is not sufficient for complete UBQLN-dependence (C56) indicates additional sequence determinants are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C71"
+    ],
+    "result": "PEG10 gag-pol undergoes protease-dependent self-cleavage at two sites (AA114-115 and AA260-261) to generate multiple fragments including a liberated nucleocapsid (NC) fragment. Mutation of the protease active site abolishes cleavage products. PEG10 can also cleave gag in trans, potentially generating a large pool of proteolytic products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 and C71 are supported by western blot data showing protease-dependent cleavage products, biochemical analysis with truncation mutants, and bioinformatic prediction of cleavage sites. The trans-cleavage activity is demonstrated by co-transfection experiments. The cleavage sites are identified through multiple complementary approaches (molecular weight estimation, hydropathy analysis, structure prediction), providing convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Self-cleavage is not required for PEG10 virus-like particle (VLP) release. Both gag and protease-inactive gag-pol (gag-polASG) release VLPs with similar efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by VLP isolation experiments using ultracentrifugation followed by western blot analysis. This finding contradicts the expected behavior based on ancestral retrotransposons (C67) and suggests PEG10 has evolved distinct functions from its retrotransposon ancestors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The PEG10 nucleocapsid (NC) fragment uniquely localizes to the nucleus, while other PEG10 proteins (gag, gag-pol, CA) remain cytoplasmic. Both HA-tagged and untagged NC fragments show nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by confocal microscopy data showing distinct nuclear localization of NC compared to other PEG10 proteins. The observation holds for both tagged and untagged NC, ruling out tag-dependent artifacts. This finding suggests novel nuclear functions for the NC fragment, though the mechanism of nuclear import and specific nuclear functions remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "PEG10 nucleocapsid expression induces transcriptional changes similar to full-length gag-pol, particularly affecting neuronal genes involved in axon guidance and extension. Gag-pol induces the most gene expression changes, followed by nucleocapsid, while gag shows minimal effects. Genes upregulated by nucleocapsid and gag-pol (but not gag) include DCLK1, an axon remodeling gene. Similar transcriptional changes (elevated TXNIP and DCLK1) are observed in ALS patient spinal cord tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 are supported by RNA-seq data from transfected cells and analysis of the Target ALS dataset. The cluster profiling clearly shows nucleocapsid induces similar transcriptional changes to gag-pol, and GO-term enrichment demonstrates overrepresentation of neuronal pathways. The observation of similar changes in ALS patient tissue provides translational relevance, though causality cannot be established from correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PEG10 nucleocapsid and gag-pol expression alter splicing of 150-200 genes, but do not cause global changes to splicing patterns or mRNA trafficking. The transcriptional changes appear to be gene-specific rather than reflecting global disruption of RNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by MAJIQ splicing analysis and oligo-dT FISH experiments. While specific genes show altered splicing, the lack of global pattern changes and normal mRNA trafficking suggest targeted rather than widespread effects on RNA metabolism. This specificity supports a regulatory rather than toxic mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PEG10 protein is expressed in gray matter of human spinal cord, enriched in posterior horn somatosensory neurons and anterior horn motor neurons. Immunofluorescence shows no dramatic differences between sporadic ALS cases and non-neurological controls, but this approach cannot distinguish gag from gag-pol due to antibody limitations and the predominance of gag protein (~60-80%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by immunofluorescence data from human spinal cord sections. The authors appropriately acknowledge the methodological limitation that available antibodies detect both gag and gag-pol, and that gag predominates. This limitation motivates the subsequent mass spectrometry approach to specifically quantify gag-pol. The lack of IF differences between ALS and controls is consistent with the need for more specific detection methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C113"
+    ],
+    "result": "PEG10 pol protein is significantly elevated in ALS patient spinal cord tissue compared to healthy controls, while gag protein and PEG10 transcript levels are unchanged. PEG10 pol is the fifth most significantly upregulated protein among >7000 proteins quantified. PEG10 pol abundance correlates with decreased levels of neurological disease biomarkers (neurogranin and neurofilament medium).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 and C113 are supported by TMT-based mass spectrometry analysis of human spinal cord tissue using a spike-in approach to enhance detection of low-abundance PEG10. The specific elevation of pol-derived peptides without changes in gag or transcript levels strongly supports post-translational accumulation. The correlation with disease biomarkers provides additional evidence for pathological relevance. However, the small sample size (n=2 controls, n=7 ALS) limits statistical power and generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "UBQLN2 is the most recent UBQLN gene duplication, found only in eutherian mammals and uniquely enriched in neural and muscle tissues. PEG10 inserted into the mammalian genome just before the marsupial-eutherian split. The evolutionary correlation between UBQLN2 and the PEG10 PPR suggests UBQLN2 may have evolved specifically to restrain PEG10, potentially resolving a genetic conflict between PEG10's requirement for placental development and pathological roles in neural tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C50 and C101-C105 regarding evolutionary history are well-supported by citations and phylogenetic data. However, claims C106-C107 proposing that UBQLN2 evolved specifically to restrain PEG10 are speculative hypotheses based on evolutionary correlation and the magnitude of PEG10 dysregulation in UBQLN2 loss. While the evolutionary timing is suggestive, alternative explanations (e.g., UBQLN2 evolved for other neural functions and happens to regulate PEG10) cannot be excluded. The genetic conflict hypothesis is interesting but requires additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "PEG10 has potential utility as a novel biomarker for ALS progression. The disease-wide accumulation of PEG10 gag-pol in sporadic ALS may result from UBQLN2 sequestration in protein aggregates, leading to functional loss despite normal expression. PEG10 gag-pol accumulation may represent a shared hallmark of familial and sporadic ALS alongside TDP43, FUS, and UBQLN2 aggregation. Elevated PEG10 in human tissues may induce transcriptional disruption similar to that observed in cell culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C116 and C118 are speculative conclusions and hypotheses extending beyond the presented data. While the significant elevation of PEG10 pol in ALS tissue (C113) supports biomarker potential, clinical validation studies are needed. The hypothesis that UBQLN2 sequestration in aggregates causes PEG10 accumulation in sporadic ALS (C115) is plausible but not directly tested. The proposal that PEG10 accumulation is a shared ALS hallmark (C116) requires demonstration in additional patient cohorts and functional validation of pathological consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C27",
+      "C28"
+    ],
+    "result": "Background information on ALS, UBQLN2, and PEG10 from prior literature. ALS is characterized by motor neuron loss, with 90% sporadic and 10% familial cases. Familial ALS can result from UBQLN2 mutations. PEG10 is a domesticated retrotransposon necessary for placental development that has been implicated in cancer and Angelman's syndrome. Prior work showed PEG10 accumulation in UBQLN2-deficient animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C20, and C27-C28 represent well-established background information supported by appropriate citations to prior literature. These claims provide necessary context but do not constitute novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C67",
+      "C68",
+      "C75",
+      "C76",
+      "C79",
+      "C100",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C117"
+    ],
+    "result": "Additional background information on PEG10 structure, retrotransposon biology, and related proteins from prior literature. PEG10 contains a retroviral aspartic protease domain and has been reported to self-cleave. The nucleocapsid contains a zinc finger that binds DNA and RNA. TXNIP is elevated in neurodegenerative conditions. PEG10 has been linked to Angelman's syndrome. Knowledge gaps regarding ubiquitination requirements and E3 ligases are acknowledged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C67-C68, C75-C76, C79, C100, C108-C112, and C117 represent background information from prior literature or acknowledged knowledge gaps. These are appropriately cited and provide context for the current findings.",
+    "result_type": "MINOR"
+  }
+]

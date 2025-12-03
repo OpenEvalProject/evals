@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The dLck-Cre system initiates HDAC3 deletion at different stages in CD4+ versus CD8+ T cells. In CD8+ T cells, deletion occurs as early as the CD8 SP thymocyte stage, while in CD4+ T cells, deletion begins after thymic egress with ~25% of RTEs and >75% of mature naive T cells being HDAC3-deficient. Only 25% of memory CD4+ T cells are HDAC3-deficient, suggesting a competitive disadvantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 are well-supported by flow cytometry data in Figure 1. The differential timing of deletion between CD4+ and CD8+ lineages is clearly demonstrated, and the progressive enrichment of HDAC3-deficient cells from RTEs to MNTs, followed by depletion in memory populations, provides strong evidence for the competitive disadvantage interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "HDAC3-deficient helper T cell populations (Th1, Th2, Th17, Treg, Tfh) are severely reduced in dLck-Cre HDAC3 cKO mice in vivo, but can differentiate normally in non-competitive environments as demonstrated by CD4-Cre HDAC3 cKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by Figure 2 data showing dramatic reductions in HDAC3-deficient differentiated T cell populations in the competitive dLck-Cre environment, while CD4-Cre mice (non-competitive) maintain similar frequencies to WT. This demonstrates that HDAC3-deficient cells can differentiate but have a competitive disadvantage in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "HDAC3-deficient CD4+ T cells differentiate normally in vitro, expressing appropriate lineage-defining transcription factors and cytokines under polarizing conditions. However, total cell output after 4 days is >4-fold lower than WT for Th1, Th2, and Th17 lineages, while Treg output is maintained with increased Foxp3 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are well-supported by Figure 3 data showing normal frequencies of transcription factor and cytokine expression but dramatically reduced total cell numbers. The Treg exception with increased Foxp3 MFI is particularly interesting and well-documented. This demonstrates that the defect is in proliferation/expansion rather than differentiation capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "HDAC3-deficient CD4+ T cells exhibit severe proliferation defects upon TCR/CD28 stimulation despite maintaining the ability to respond to TCR signals (>80% CD69 upregulation). The defect is associated with reduced IL-2 production (50% reduction), decreased CD25 expression, and increased cell death, but not with altered P2RX7 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 are strongly supported by Figure 4a-f data. The dissociation between early activation markers (CD69) and proliferation/survival demonstrates that HDAC3-deficient cells can sense TCR signals but fail in downstream events. The IL-2/CD25 axis defect provides a mechanistic link, though the causal relationship requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "HDAC3-deficient CD4+ T cells show disrupted metabolic reprogramming after activation, including reduced Egr2 MFI, decreased phosphorylation of ribosomal protein S6 (indicating diminished mTORC1 activity), and reduced basal and maximal respiratory capacity as well as extracellular acidification rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are well-supported by Figure 4g-i and supplement data. The Seahorse metabolic profiling provides robust evidence for metabolic defects. However, the interpretation that mTORC1 activity is diminished (C62) based solely on p-S6 levels should be considered with caution as S6 phosphorylation can be regulated by multiple kinases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "HDAC3-deficient CD4+ T cells exhibit defective blasting with reduced cell size (FSC-A) and granularity (SSC-A), along with significantly reduced cellular cholesterol levels (measured by volume-adjusted Filipin III signal) both before and after activation. Lipid raft concentration is also reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by Figure 5a-c data. The Filipin III measurements are appropriately volume-adjusted, strengthening the cholesterol quantification. The CTB staining for lipid rafts is consistent with reduced cholesterol. However, Filipin III is a semi-quantitative method and the interpretation of 'cellular cholesterol concentrations' should be considered with this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "HDAC3-deficient CD4+ T cells maintain normal expression of cholesterol synthesis genes (Srebf1, Srebf2, Hmgcr, Dhcr7, Sult2b1, Abcc1, Idi1, Sqle, Nr1h2) and can increase cholesterol synthesis after TCR stimulation despite reduced mTORC1 activation, indicating that TCR/CD28 signaling is sufficient to drive cholesterol biosynthesis gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by Figure 5d RT-qPCR data and the increase in Filipin III signal after stimulation. This is a critical finding showing that the cholesterol deficiency is not due to impaired synthesis. However, the claim that cells are 'capable of increasing cholesterol synthesis' (C77) is inferred from Filipin III signal rather than direct synthesis measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "HDAC3-deficient mature naive CD4+ T cells show 3.4-fold and 3.5-fold increases in Abcg1 and Abca1 transcript expression at baseline, respectively. After 12 hours of activation, these increases expand to 8.1-fold and 7.1-fold compared to WT activated T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are well-supported by Figure 5e RT-qPCR data from FACS-sorted Rag1-GFP- mature naive T cells. The use of the Rag1-GFP reporter system to enrich for HDAC3-deficient MNTs is methodologically sound. The fold-changes are substantial and statistically significant, providing strong evidence for dysregulated cholesterol efflux transporter expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Addition of exogenous cholesterol (5 \u03bcg/ml MBCD-Chol) completely rescues proliferation and substantially restores blasting and cell size in HDAC3-deficient CD4+ T cells, though granularity remains reduced. WT cells also show enhanced proliferation with cholesterol supplementation, demonstrating that cholesterol regulates the rate of CD4+ T cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 are strongly supported by Figure 6a-b rescue experiments. The complete restoration of proliferation is compelling evidence that cholesterol availability is the primary limiting factor. The incomplete rescue of granularity (C87) and the speculation about other HDAC3 functions (C88) are appropriately cautious. The effect on WT cells (C89) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Cholesterol supplementation increases Filipin III signal and restores CD25 expression in HDAC3-deficient cells, but does not rescue lipid raft concentration, p-S6, or Egr2 expression. Despite persistent mTORC1 signaling defects, the residual signal is sufficient to drive normal proliferation with exogenous cholesterol, demonstrating that cholesterol efflux repression is the primary function of HDAC3 during T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by Figure 6c-g data. The dissociation between proliferation rescue and persistent mTORC1/Egr2 defects is important for understanding HDAC3's primary function. However, the conclusion that cholesterol efflux repression is the 'primary function' (C98) is a strong interpretive claim that, while well-supported by the rescue data, should acknowledge that other HDAC3 functions may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "HDAC3 cKO thymocytes show significant upregulation of Abca1 and Abcg1 mRNA with substantial increases in H3K27 and H3K9 histone acetylation at their promoter regions, while Hmgcr expression is unaffected. HDAC3 ChIP-Seq in human CD4+ T cells shows enrichment at five sites within the Abcg1 locus and one site ~50kb upstream of Abca1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by Figure 7a-b RNA-Seq and ChIP-Seq data from thymocytes and Figure 7 supplement 1 showing HDAC3 binding in human cells. The hyperacetylation at promoter regions provides strong mechanistic evidence for direct HDAC3 regulation. The cross-species conservation (mouse thymocytes and human CD4+ T cells) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Pharmacological inhibition of HDAC3 with RGFP966 produces profound upregulation of Abca1 and Abcg1 expression in both 16610D9 thymocytes (after 24 and 48 hr) and primary WT CD4+ T cells (after 24 hr), demonstrating that HDAC3 deacetylase activity is required to repress these genes during T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are well-supported by Figure 7c-d RT-qPCR data. The pharmacological approach complements the genetic deletion studies and demonstrates that enzymatic activity is required. However, RGFP966 selectivity for HDAC3 over other Class I HDACs should be considered, though it is reported as a selective HDAC3 inhibitor in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "HDAC3 is critical for activation of murine peripheral CD4+ T cells. HDAC3-deficient cells fail to proliferate and blast after TCR/CD28 stimulation, have reduced cellular cholesterol levels, upregulate cholesterol synthesis appropriately but fail to repress cholesterol efflux (overexpressing ABCA1 and ABCG1), and proliferation is restored by exogenous cholesterol. This demonstrates HDAC3 is essential to repress cholesterol efflux during CD4+ T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the main conclusion of the manuscript, synthesizing claims C1-C11 from the abstract. All component claims are well-supported by the experimental data presented throughout the manuscript. The logical flow from phenotype (proliferation defect) to mechanism (cholesterol efflux dysregulation) to rescue (exogenous cholesterol) provides strong support for the central thesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C113",
+      "C114",
+      "C117"
+    ],
+    "result": "HDAC3 regulates cholesterol availability in CD4+ T cells by transcriptionally repressing cholesterol efflux through ABCA1 and ABCG1 during T cell activation. This regulation is the limiting factor blocking proliferation of HDAC3-deficient cells. HDAC3 serves as a specific regulator rather than a generic regulator of gene expression, as cholesterol synthesis pathway components are unaltered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C117 represent the discussion's synthesis of findings. These interpretive claims are well-supported by the collective experimental evidence. The specificity argument (C114) is strengthened by the selective effects on efflux versus synthesis genes. The conclusion about HDAC3 as a 'direct regulator' (C117) is supported by ChIP-Seq, hyperacetylation, and inhibitor data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C110"
+    ],
+    "result": "Upon T cell activation, genes involved in cholesterol biosynthesis are upregulated while genes promoting cholesterol efflux are repressed. Both increased cholesterol synthesis and decreased cholesterol efflux are required for successful proliferation and blast formation. T cells are uniquely sensitive to cholesterol concentration changes shortly after activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C18-C20, and C110 describe established knowledge about T cell cholesterol metabolism, supported by multiple citations. The manuscript's data (Figure 5e showing WT downregulation of Abca1/Abcg1) confirm these general principles. These claims provide important context for understanding HDAC3's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "After activation, CD4+ T cells must pass through metabolic checkpoints characterized by cell growth, IL-2 signaling, increased anabolic metabolism, and mitochondrial reprogramming. mTORC1 directs metabolic reprogramming including lipid synthesis through SREBPs. Disruptions in cholesterol metabolism impair T cell function, and T cells require optimal cholesterol levels to exit quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C24 represent background knowledge from the introduction, supported by appropriate citations. These establish the scientific context for the study. The claim about ACAT1 deletion (C23) showing differential effects between CD4+ and CD8+ T cells is particularly relevant for justifying CD4+ T cell-focused studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "HDAC3 is a Class I HDAC that deacetylates histones H3 and H4 to repress gene expression. Previous work shows HDAC3 serves as a targeted regulator during T cell development, including downregulation of ROR\u03b3t during positive selection, suppression of P2RX7 in double positive thymocytes, and inhibition of the cytotoxicity program in CD8+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 provide background on HDAC3 function with appropriate citations to prior work. These establish the rationale for investigating HDAC3 in peripheral CD4+ T cells and support the concept of HDAC3 as a specific rather than generic regulator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Previous work showed that HDAC3 deletion in the thymus leads to a block at the recent thymic emigrant (RTE) stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 cites prior work (Hsu et al., 2015) and provides context for interpreting the current findings. This is appropriately cited background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C115",
+      "C116"
+    ],
+    "result": "Previous studies show that loss of LXR\u03b2 activity alters T cell fitness during activation, genetic deletion of Abcg1 increases CD4+ T cell proliferation, and components of the SMRT/NCOR complex (including HDAC3) regulate ABCG1 expression in macrophages with HDAC3 localizing to ABCA1 and ABCG1 promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 and C115-C116 cite relevant prior work that contextualizes the current findings. The macrophage studies (C115-C116) are particularly relevant as they establish precedent for HDAC3 regulation of these transporters in another cell type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "HDAC3-deficient memory CD4+ T cells from dLck-Cre HDAC3 cKO mice that undergo differentiation in vivo are not functionally impaired, as demonstrated by normal IFN\u03b3 production after PMA/ionomycin stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by Figure 3 supplement 2 showing similar frequencies of IFN\u03b3+ cells in HDAC3-deficient memory cells. This is an important control demonstrating that cells that successfully differentiate in vivo retain function, supporting the interpretation that the defect is in the activation/expansion phase rather than in effector function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Methodological and background claims including: Filipin III binds cholesterol and can probe cellular cholesterol levels; CTB can probe lipid rafts; cholesterol is implicated in lipid raft formation; GFP half-life is ~56 hr in vivo; Rag1-GFP- naive CD4+ T cells are mature naive T cells; Egr2 is mTORC1-S6K1-dependent; mTORC1 plays a pivotal role in lipid synthesis; cell growth/blasting depends on lipid production/retention; IL-2R signaling is critical for T cell proliferation; ABCA1/ABCG1 are pivotal cholesterol efflux players.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C132 represent methodological details and established biological knowledge, all appropriately cited. These provide necessary context for interpreting the experimental approaches and results. The Rag1-GFP system explanation (C122-C124) is particularly important for understanding the cell sorting strategy.",
+    "result_type": "MINOR"
+  }
+]

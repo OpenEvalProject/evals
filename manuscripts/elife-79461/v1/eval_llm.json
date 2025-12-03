@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8"
+    ],
+    "result": "C4da neurons in Drosophila larvae exhibit increased dendritic complexity on low-yeast diet (LYD) compared to high-yeast diet (HYD), with both the number of branch terminals and terminal density being significantly higher on LYD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, and C8 are directly supported by quantitative morphological data using automated terminal detection software (DeTerm) shown in Figure 1C-E. The measurements demonstrate statistically significant increases in both absolute terminal numbers and terminal density on LYD versus HYD, establishing the hyperarborization phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The hyperarborization phenotype is caused by a concurrent deficiency in vitamins, metal ions, and cholesterol (VMC), not by amino acid deficiency. All three components (V, M, and C) are required together to rescue the phenotype, while the 'other ingredients' fraction is dispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9-C13 are well-supported by systematic nutrient supplementation experiments (Figure 1). The data show that amino acid supplementation does not rescue hyperarborization (C9), while VMC supplementation does (C10, C12). Critically, removal of any single VMC component prevents rescue (C11), demonstrating the requirement for all three nutrients together.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C87",
+      "C88"
+    ],
+    "result": "The hyperarborization phenotype is not simply a consequence of prolonged larval development. VMC supplementation rescues hyperarborization without affecting developmental timing, and other interventions that delay development (high sucrose diet, dlip8 overexpression) do not cause hyperarborization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20, C87-C88 are supported by multiple control experiments (Figure 1\u2014figure supplement 1A, Figure 1\u2014figure supplement 2). The data show that LYD+VMC has comparable developmental timing to LYD but reduced hyperarborization (C14-C15), and that developmental delay alone (via sucrose or dlip8) does not induce hyperarborization (C16-C19), establishing that the phenotype is nutrient-specific rather than time-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C30"
+    ],
+    "result": "Akt signaling in C4da neurons is required for hyperarborization on LYD. Mild Akt knockdown (v2902 line) selectively reduces hyperarborization while maintaining overall dendritic architecture, whereas strong Akt knockdown (BL33615 line) causes severe diet-independent dendritic defects. TOR pathway components downstream of Akt also contribute to the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26, C30 are supported by RNAi experiments with multiple lines and validation of knockdown efficiency (Figure 2A-J, Figure 2\u2014figure supplement 1Q-AJ, Figure 2\u2014figure supplement 3). The differential effects of two Akt RNAi lines with different knockdown strengths provide strong evidence for Akt's role, with the milder knockdown specifically affecting hyperarborization while the stronger knockdown impairs general branch growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The receptor tyrosine kinase Ror is required in C4da neurons for hyperarborization on LYD. Ror knockdown and Ror null mutants both suppress hyperarborization, with Ror having a more restricted role in nutrient-dependent branching compared to Akt's broader role in branch growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by both RNAi knockdown and genetic null mutant data (Figure 2K-V, Figure 2\u2014figure supplement 2E-F). The convergence of evidence from two independent genetic approaches (KD and null mutant) strongly supports Ror's requirement. The differential effects on dendrite length across diets (C31-C32) suggest Ror's specific role in nutrient sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Wingless (Wg) expression in body wall muscles is upregulated on LYD and is suppressed by VMC supplementation. Muscle-derived Wg is necessary and sufficient to promote dendritic hyperarborization of C4da neurons. Wg expression is tissue-specific (muscles but not epidermis) and is regulated at the transcriptional level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 are supported by multiple complementary approaches: tissue-specific RNAi (C33-C35), genetic mutants (C36), immunostaining (C37-C38, C41), transcriptional reporter analysis (C39), and gain-of-function experiments (C40). The convergence of loss-of-function, gain-of-function, and expression data provides strong support for muscle-derived Wg as a key mediator of the hyperarborization phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Fz2 cooperates with Ror as a Wnt co-receptor to transduce the Wg signal in C4da neurons. Both fz2 knockdown and fz2 null mutants suppress hyperarborization. Other Wnt signaling components (fz, dsh, Axn, Bsk) also affect the phenotype, though their mechanisms may differ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by RNAi and mutant data (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2). The fz2 data are particularly strong with both KD and null mutant showing consistent effects (C43-C44). However, the authors appropriately note uncertainty about whether all downstream components share the same mechanism (C46-C47), as some show different phenotypic patterns than Ror.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Muscle-derived Wg activates Akt signaling in C4da neurons through Ror. p-Akt levels are higher on LYD, reduced by Ror knockdown, and increased by muscle-specific wg overexpression. Constitutively active Akt (myr-Akt) is sufficient to increase terminal density independent of Ror, indicating Akt acts downstream of Ror.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by immunostaining data for p-Akt levels under various genetic and dietary conditions (Figure 4A-J) and epistasis experiments with myr-Akt (Figure 4K-W). The data establish a clear signaling hierarchy: Wg \u2192 Ror \u2192 Akt \u2192 hyperarborization. The myr-Akt bypass experiment (C53) is particularly strong evidence that Akt acts downstream of Ror.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "JAK/STAT signaling in muscles partially suppresses Wg expression and hyperarborization on HYD. Stat92E is more highly expressed on HYD, and knockdown of Stat92E or hop (JAK) in muscles increases Wg levels and promotes hyperarborization on HYD, while hop overexpression ameliorates hyperarborization on LYD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C64-C69 are supported by RNA-seq data (C62), reporter expression (C64), immunostaining for Wg (C65), and genetic manipulation experiments (C66-C68). The convergence of expression data and functional genetic experiments provides strong support for JAK/STAT's role in regulating Wg expression in a diet-dependent manner.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Upd2 from fat body and hemocytes may activate JAK/STAT signaling in muscles through Dome receptor to suppress hyperarborization on HYD. upd2 knockdown in fat body/hemocytes increases terminal density on HYD, and one of three dome RNAi lines shows enhanced branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 are based on limited and inconsistent data. While upd2 KD shows an effect (C72), only one of three dome RNAi lines shows the expected phenotype (C73), and the authors explicitly acknowledge the need for further verification (C74). The evidence is suggestive but insufficient to definitively establish this inter-organ signaling pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "An additional unknown molecular mechanism beyond JAK/STAT signaling contributes to VMC-mediated downregulation of Wg in muscles. VMC supplementation does not increase Stat92E reporter expression, and Stat92E knockdown causes only marginal Wg increase compared to the diet-dependent difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by negative data (VMC does not affect Stat92E reporter) and quantitative comparison of effect sizes (Figure 5F, H, J). The logic is sound: if JAK/STAT were the sole mechanism, VMC should affect Stat92E levels and Stat92E KD should fully phenocopy LYD. Since neither is true, an additional mechanism must exist. This is appropriately presented as speculation requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "C4da neurons on LYD show altered electrophysiological properties: increased spontaneous firing frequency but decreased light-evoked responses (firing frequency, change amount, and change rate), indicating reduced sensitivity to light stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by extracellular electrophysiological recordings (Figure 6A-G) with clear quantification of multiple parameters. The data show statistically significant differences between HYD and LYD for both spontaneous and evoked activity, establishing that the morphological changes are accompanied by functional changes in neuronal excitability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Larvae reared on LYD show reduced light avoidance behavior compared to HYD-reared larvae. Ror knockdown in C4da neurons reduces the diet-dependent difference in light avoidance, suggesting that hyperarborization is associated with blunted light avoidance behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by behavioral assays in both foraging and wandering larvae (Figure 6H-I). The Ror KD experiment (C83) provides genetic evidence linking the morphological phenotype to behavior, though the authors appropriately note that Ror KD might affect neuronal function through mechanisms beyond morphology (C84). The correlation between hyperarborization and behavior is established, though causation is not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C41",
+      "C42"
+    ],
+    "result": "The concurrent deficiency in vitamins, metal ions, and cholesterol on LYD upregulates Wingless expression in body wall muscles, and this muscle-derived Wingless activates Akt through Ror in C4da neurons to promote dendritic branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C41, C42 integrate the nutrient sensing, inter-organ signaling, and intracellular signaling components into a unified model. Each component is individually well-supported (Wg upregulation by nutrient deficiency: Figure 3M-P; Wg-Ror-Akt signaling: Figure 4A-J), and the model is consistent with all experimental observations. This represents the central mechanistic finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "The hyperarborization phenotype and p-Akt upregulation are not observed in C1da neurons (ddaE) but are observed in C3da neurons (ddaF), suggesting that C3da and C4da neurons may share the Akt-driven branching mechanism in response to low-nutrient conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C60 are supported by immunostaining and morphological data (Figure 4\u2014figure supplement 3). The differential response among neuron classes is clearly demonstrated. However, C60 is appropriately presented as speculation ('raises the possibility') since the mechanistic similarity between C3da and C4da neurons has not been directly tested beyond the correlation of p-Akt levels and branching.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "RNA-seq analysis of whole larvae identified 3854 differentially expressed genes between HYD and LYD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by RNA-seq data (Figure 5A, Supplementary file 3). This is a straightforward descriptive result from a standard genomic analysis. The data are appropriately deposited in public repositories and the analysis methods are described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C101",
+      "C102"
+    ],
+    "result": "The low-yeast diet blunts neuronal light responsiveness and light avoidance behavior, which may help larvae optimize survival strategies under low-nutritional conditions by promoting risk-taking behavior to search for better food sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C101, C102 combine well-supported observations (reduced light responsiveness and avoidance) with speculative interpretation about adaptive significance. While the behavioral changes are clearly demonstrated (Figure 6), the adaptive interpretation is not directly tested. The authors appropriately present this as speculation ('may help', 'raises the possibility'), but the evolutionary/ecological significance remains uncertain without additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27",
+      "C55",
+      "C59",
+      "C63",
+      "C70",
+      "C71",
+      "C85",
+      "C86",
+      "C90",
+      "C92",
+      "C94",
+      "C95",
+      "C98",
+      "C99",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Multiple prior studies support various aspects of the current findings, including roles of Tor in hyperarborization, Akt in dendrite growth, Ror in regeneration, JAK/STAT in inter-organ signaling, C4da neuron sensory functions, and risk-taking behavior in hungry animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C55, C59, C63, C70, C71, C85, C86, C90, C92, C94, C95, C98, C99, C100, C103-C106 are all supported by appropriate citations to published literature. These claims establish the context for the current work and show how it builds on and integrates with prior findings. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C93",
+      "C96",
+      "C97"
+    ],
+    "result": "Ror is mainly expressed in the nervous system and shows no morphological abnormalities under standard conditions, but is required under stress conditions (nutrient deficiency, injury). Muscle may function as a metabolic mediator throughout the life cycle, with Wnt signaling playing a pivotal role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91, C93, C96, C97 integrate current findings with prior knowledge to propose broader biological principles. C89 and C91 are supported by citations and current data (Figure 2L, R). C93, C96, and C97 are appropriately presented as speculation based on the convergence of evidence from larval and adult studies, though they extend beyond what is directly demonstrated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "M75 mutations in AncSR2 do not significantly alter global secondary structure but reduce thermodynamic stability in some variants. CD spectroscopy shows all mutants retain \u03b1-helical characteristics, though M75A, M75F, and M75I exhibit reduced melting temperatures (2.3-10.9\u00b0C lower than WT), suggesting local structural effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are well-supported by biophysical characterization data including gel filtration, CD spectroscopy, and thermal denaturation measurements (Figures 1C-D and supplements). The data demonstrate that mutations preserve global fold while affecting local stability, consistent with the position of M75 away from the protein core.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "M75 mutations produce AncSR2 variants with diverse transcriptional profiles spanning from inactive (M75I) to constitutively active (M75L). M75L uniquely activates both aromatized and non-aromatized hormones but with drastically reduced efficacy, while M75F shows reduced potency for all ligands and M75A largely recapitulates WT activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C44 are strongly supported by luciferase reporter assays (Figure 2) and western blot data confirming comparable protein expression. The dose-response curves, EC50 values, and basal activity measurements provide comprehensive functional characterization across multiple cell lines, establishing the diverse phenotypes of M75 variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Fluorescence polarization binding assays using 11-DOC-FAM reveal that M75 mutations differentially affect ligand binding affinity. M75I shows no detectable binding, while M75L, M75A, and M75F display reduced affinity compared to WT. AncSR2 preferentially binds 3-ketosteroids over aromatized hormones, with C17 acetyl substituents potentially conferring binding advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C54 are supported by systematic fluorescence polarization binding data (Figure 3) showing Kd and Ki values for multiple receptor-ligand combinations. The novel 11-DOC-FAM probe is validated through competition assays, and the binding data correlate well with functional activity patterns, particularly for M75I and M75L variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "HDX-MS reveals that M75L mutation increases conformational dynamics in the ligand binding pocket (H3, H6, H7, H10) and distant regions (H9) in the apo state. Unlike WT AncSR2, M75L shows minimal dynamic changes upon ligand binding, suggesting the mutation shifts the ensemble toward a ligand-bound-like state that explains constitutive activity and reduced ligand responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 are well-supported by HDX-MS data (Figure 4) showing differential deuterium uptake patterns between WT and M75L in both apo and ligand-bound states. The observation that WT shows dramatic dynamics changes upon progesterone binding while M75L does not provides strong mechanistic evidence for the conformational pre-organization hypothesis. The HDX-MS data directly correlate with functional observations of constitutive activity and reduced binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Classical MD simulations reveal that M75 mutations preserve hormone contacts but modulate H3-H5 interhelical distances. M75A and M75I show the smallest distances, M75F the largest, while M75L shows intermediate values. In M75A, reduced bulk at position 75 allows Trp71 and Gln41 to gain proximity to hormones, with Q41A mutation abolishing 3-ketosteroid activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by distance analysis from MD simulations (Figure 5) and validated by experimental mutagenesis (Q41A in M75A background, Figure 5\u2014supplement 3). The structural predictions from MD correlate with functional data and provide mechanistic explanations for retained activity in M75A despite loss of H3-H5 contacts. However, the MD simulations are relatively short (500 ns) for making definitive structural claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "MD simulations predict that M75F distinguishes between aromatized and non-aromatized hormones through pi-stacking interactions. Phe75 engages Trp71 in pi-stacking ~40% of the time with estradiol (forming a triad with the aromatic A-ring) but <9% with 3-ketosteroids, similar to WT Met75 behavior. The increased H3-H5 distance in M75F may explain reduced potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by pi-stacking occupancy analysis from MD simulations (Figure 5\u2014supplement 4) and structural visualization (Figure 5F). The computational predictions align with functional data showing M75F activates 3-ketosteroids but not estrogens, similar to WT. However, the hypothesis about H3-H5 distance causing reduced potency (C76) is speculative and acknowledged as requiring future testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "MD simulations predict that the \u03b2-branched Ile sidechain in M75I is positioned to enter the binding pocket and interfere with ligand binding, explaining the complete loss of binding and activation observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by MD simulation structural analysis (Figure 5G) that directly correlates with experimental observations of no ligand binding (C47, C54) and no transcriptional activation (C38) for M75I. The structural prediction provides a clear mechanistic explanation for the functional phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Clustering analysis of accelerated MD trajectories reveals mutation-specific effects on conformational ensembles. M75A shows substantial overlap with WT, M75F shows no overlap (large conformational effect), while M75I and M75L stabilize minor WT conformational states. Ligand binding differentially shifts ensembles: M75A and M75L show ligand-dependent shifts, while M75F shows persistent overlap with apo state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 are supported by systematic clustering analysis of accelerated MD trajectories (Figure 6A-E). The clustering methodology is clearly described with appropriate cutoffs, and patterns are consistent across multiple ligands. The observation that M75L shows consistent apo cluster patterns regardless of ligand (C84-C85) is intriguing but the speculation about ligand-independent conformational response requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The 'overlap fraction' metric from clustering analysis correlates with experimental ligand activity measured by EC50 (R=0.63) and fractional fold activation at 10 nM (R=0.56) and 100 nM (R=0.55). This suggests that the ability of ligands to shift conformational ensembles predicts their in vitro transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by correlation analysis between computational overlap fractions and experimental activity measurements (Figure 6F-H). The moderate correlations (R=0.55-0.63) across multiple activity metrics provide evidence for the predictive utility of MD-generated ensembles. However, the correlations are moderate, not strong, and the sample size is limited. The claim of predictive ability (C89) is somewhat overstated given the correlation strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Ensemblator analysis reveals that M75 mutations induce subtle conformational changes (local DI <0.3, global DI <0.5) originating at H5 that propagate to H8 and H8-H9/H9-H10 loops. M75F shows largest effects in H8, H10, and H3; M75I affects nearly all helices; M75L is most affected at H6, H7, H8, and H9/H10, with some regions coinciding with HDX-MS destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 are supported by Ensemblator analysis of MD ensembles (Figure 7 and supplements) comparing mutants to WT. The analysis identifies specific structural regions affected by mutations, and the agreement between computational predictions (M75L effects on H6, H7, H9) and HDX-MS data (C97) provides cross-validation. The subtle nature of changes (low DI values) is consistent with M75 being distant from the AF-2 surface.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MD simulations demonstrate a strong relationship between ligand potency and population shifts in conformational ensembles. Active ligands show minimal overlap with apo conformations while inactive ligands show high overlap. The sensitivity to detect subtle changes originating at H5 (distant from AF-2) highlights the utility of this computational approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 represent summary conclusions supported by the collective evidence from clustering (C99), correlation analysis (C87-C89), and Ensemblator analysis (C91, C100-C101). The claims accurately synthesize the major findings, though the characterization of the relationship as 'strong' (C98) is somewhat overstated given the moderate correlation coefficients (R=0.55-0.63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Mechanistic explanations for variant phenotypes emerge from MD analysis: M75A retains activity through compensatory Trp71/Gln41 interactions and increased pocket volume; M75F shows reduced potency potentially due to increased H3-H5 distance but distinguishes ligands via pi-interactions that cause A-ring frustration with estrogens; N37 interactions with steroid D-rings may play compensatory roles in impaired variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C108 represent mechanistic hypotheses based on MD simulations and literature. While C102 is supported by distance analysis (C69) and mutagenesis (C70), and C105-C106 are supported by pi-stacking analysis (C72-C73), several claims are explicitly speculative (C103, C104, C108). The hypotheses are reasonable and consistent with data, but many require additional experimental validation beyond what is presented. C107 is supported by citations but not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The M75L mutation affects ligand binding through increased conformational dynamics in the apo state (HDX-MS), resulting in reduced Ki values. The absence of \u0394HDX changes upon ligand addition supports a model where M75L adopts a partially-active state mimicking ligand-bound AncSR2, explaining constitutive activity and reduced ligand responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 integrate HDX-MS data (C55-C60) with binding data (C52-C53) to provide a coherent mechanistic model for M75L constitutive activity. The inference is well-supported by multiple lines of evidence including dynamics, binding affinity, and functional data. The model is internally consistent and explains the unusual phenotype of M75L.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "This work demonstrates that MD-generated conformational ensembles can describe ligand-specific conformational changes in nuclear receptors and have inherent promise as predictive tools for ligand design. Analysis of MD trajectories provides structural descriptions of ensembles and elucidates mechanisms of ligand-induced conformational effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 represent appropriate summary conclusions supported by the correlation between computational ensembles and experimental activity (C87-C89), mechanistic insights from structural analysis (C63-C77, C92-C97), and successful explanation of variant phenotypes (C102-C110). However, the claim of 'inherent promise as predictive tools' (C112) is somewhat overstated given the moderate correlation coefficients and limited validation on novel ligands not used in the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "M75 mutations induce dynamic effects at distant regions including helices 9 and 10, which will be explored in future work to determine potential for functional modulation via novel mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is supported by HDX-MS data showing deprotection in H9 and H10 regions (C57) and Ensemblator analysis showing effects in these regions (C95-C96). The observation of long-range effects is well-documented, though the functional significance remains to be determined as acknowledged by the authors.",
+    "result_type": "MINOR"
+  }
+]

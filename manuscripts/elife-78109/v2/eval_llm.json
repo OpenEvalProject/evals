@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Nine patients with refractory epilepsy completed 40 sessions of an associative episodic memory task with 75.43% (s.d.: 13.3) correct recall, significantly above the 16.6% chance level. Patients had temporal lobe epilepsy with varied foci, and reaction times did not differ between hits and misses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C55-C62 provide comprehensive demographic, behavioral, and task performance data with appropriate statistical comparisons to chance levels. The behavioral results are well-documented with means, standard deviations, and statistical tests, establishing a solid foundation for subsequent neural analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Neural recordings yielded 218 units (82 single-units, 136 multi-units) from 232 recorded units, with 73% of electrodes located in the hippocampus. Units were classified using an automatic procedure based on waveshape homogeneity and inter-spike intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C63-C69 provide detailed methodological information about neural recordings, electrode locations, and unit classification procedures with appropriate citations. The classification criteria are explicitly stated and validated by prior work (Tankus et al., 2009).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Neural firing rates during the time window of interest (2-3 s) were not modulated by memory, though hits showed sustained increases at later time windows (>3 s). LFP measures (ERPs, inter-trial phase coherence) also showed no memory-related differences, but broadband power showed expected patterns with decreased low-frequency and increased high-frequency power for hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 document null findings for firing rates and some LFP measures during the critical time window, while showing expected power effects. These findings are important controls that rule out simple rate-coding or evoked response explanations for subsequent spike-LFP coupling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Local spike-LFP coupling in the gamma range (40-80 Hz) showed 53 significant pairs with a pronounced peak at ~65 Hz. Critically, hits showed coupling at faster gamma frequencies (~70 Hz) compared to misses (~62 Hz), with this frequency shift confirmed by peak detection analysis (t36=1.96; p=0.029; Cohen's d=0.32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 demonstrate a key finding with appropriate statistical tests, FDR correction, and effect sizes. The frequency shift is supported by both spectral analysis and peak detection. Control analyses address potential confounds from spike interpolation and selection bias, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Distal spike-LFP coupling in the theta range (2-40 Hz) identified 387 significant pairs peaking at 8-9 Hz. Hits showed stronger coupling at fast theta (8-10 Hz) while misses showed stronger coupling at slow theta (5 Hz), with hits exhibiting significantly faster peak theta frequencies (t206=3.49; p=2.99\u00d710\u207b\u2074; Cohen's d=0.24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 parallel the gamma findings but for distal theta coupling. The statistical evidence is robust with FDR correction and appropriate effect sizes. The frequency shift pattern mirrors the gamma results, suggesting a consistent mechanism across frequency bands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Phase slope index (PSI) analysis revealed that hits showed significantly positive PSIs peaking at ~8 Hz in the fast theta band, indicating directional information flow from spike-providing to LFP-providing regions. Misses showed PSIs not different from zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 provide directional connectivity evidence supporting the interpretation that spikes drive LFP activity during successful memory formation. The PSI method is appropriate for assessing directionality and the memory-dependent difference strengthens the functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Cross-frequency coupling analysis showed that 58% of electrodes exhibited both local gamma and distal theta coupling. Hits demonstrated stronger theta phase to gamma amplitude coupling compared to misses (Wilcoxon test; z=3.7; p=8.92\u00d710\u207b\u2075, Cohen's d=0.39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 demonstrate coordination between theta and gamma oscillations during successful memory formation. The analysis appropriately adjusts for peak frequency differences between conditions and includes control analyses for potential confounds (harmonic artifacts, waveshape asymmetry).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Co-firing analysis of 24 pairs of upstream and downstream units showed that hits exhibited significant co-firing at 20-40 ms lags while misses peaked at 60 ms. Hits showed significantly earlier peak co-firing compared to misses (t21=-3.201; p=0.004292; Cohen's d=-0.68). This effect was specific to pairs with both local gamma and distal theta coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 provide the critical link between oscillatory coupling and neural communication timing. The shorter co-firing latencies for hits are consistent with STDP principles. The specificity to gamma-theta coupled pairs (C29-C30) strengthens the mechanistic interpretation that oscillations coordinate efficient neural communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The manuscript situates the work within established theoretical frameworks showing that theta and gamma oscillations in the MTL support memory formation through neural synchronization, with prior evidence from both human and animal studies demonstrating phase-coupling and cross-frequency coupling effects during successful encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 accurately represent prior literature with appropriate citations. The background establishes the theoretical motivation for investigating oscillatory mechanisms in memory formation and provides context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The manuscript presents a theoretical framework where faster oscillations integrate spikes over shorter time windows, making neural assemblies more likely to drive downstream targets. This principle is supported by prior work showing that fast gamma (not slow gamma) predicts memory encoding in rodents and humans, and that oscillations can modulate short-latency co-firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 provide the theoretical rationale linking oscillation frequency to neural communication efficiency. The logic is sound and supported by appropriate citations to prior work in multiple species, establishing the mechanistic hypothesis tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The discussion contextualizes findings within prior literature on theta frequency variations, inter-areal synchronization, cross-frequency coupling, and bidirectional hippocampal-MTL communication during memory formation. The authors acknowledge recent challenges to the causal role of oscillations while noting their results provide correlational support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 appropriately situate the findings within broader literature and acknowledge limitations regarding causality (C52). The discussion accurately represents prior work and provides balanced interpretation of the current results' implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The manuscript provides detailed methodological descriptions for spike density normalization, LFP preprocessing, spike-field coupling analysis, directionality assessment, cross-frequency coupling, power analysis, and co-firing analysis. Methods include appropriate statistical corrections (FDR), baseline normalization procedures, and control analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C91 document comprehensive methodological details with appropriate citations and justifications for parameter choices. The methods are generally sound, though some concerns exist about the complexity of selection criteria for co-firing analysis (C86-C87) which may limit generalizability.",
+    "result_type": "MINOR"
+  }
+]

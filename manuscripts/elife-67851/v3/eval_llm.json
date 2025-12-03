@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "UV-cone ribbon ultrastructure differs systematically across three retinal regions (acute zone, nasal, dorsal). Dorsal ribbons are smaller and less numerous than AZ or nasal ribbons. Nasal UV-cones have the lowest vesicle density immediately adjacent to ribbons, while dorsal UV-cones have the lowest vesicle density further from ribbons and AZ UV-cones have the highest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by electron microscopy data with appropriate statistical analysis (Figure 1d-h, GAM analysis). The structural differences are quantified with statistical significance indicated, and the overall complement of ribbon number, geometry, and vesicle distributions is shown to differ markedly across regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "UV-cone synaptic transfer functions differ across retinal regions. Different eye regions exhibit different glutamate signals during light offsets despite similar calcium signals. Dorsal cone glutamate release is more transient than nasal, with AZ intermediate. Nasal UV-cones show small peak amplitudes at both calcium and glutamate levels. Dorsal UV-cones exhibit the most pronounced within-pulse adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 are supported by simultaneous dual-color two-photon imaging data (Figures 2-3) with appropriate sample sizes (n=30, 16, 9 for AZ, dorsal, nasal from 3-4 fish) and statistical testing (shuffling tests with Bonferroni correction). The functional differences are quantified through multiple indices and shown to be statistically significant where claimed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Calcium response kinetics are generally similar across zones with subtle differences. Rise kinetics are similar across all zones. The AZ calcium response is weakly but significantly advanced (occurs earlier) compared to nasal or dorsal. Decay kinetics are significantly faster in AZ cones compared to dorsal cones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by reanalysis of previously published GCaMP6f data (Figure 3k-n) with appropriate statistical testing. The subtle differences in timing and decay are quantified and shown to be statistically significant where claimed, though the authors note these differences are unlikely to explain the glutamate dynamics differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A biophysical model of ribbon synapse function was developed using simulation-based Bayesian inference. The model fits functional data well and reveals region-specific differences in parameters. The nasal model shows markedly increased calcium offset and smallest RRP sizes/refill rates. Parameter posteriors are mostly uncorrelated, suggesting little room for compensatory mechanisms. Region-specific models outperform when evaluated on their own data versus other regions' data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are supported by comprehensive modeling analysis (Figure 4) using simulation-based inference with appropriate validation. The model fitting is demonstrated visually and quantitatively (Figure 4c, 4e), parameter posteriors are shown (Figure 4e, supplement 1a), and model specificity is validated through cross-region comparisons (Figure 4f-h, supplement 1b-c). The modeling approach is well-described methodologically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Sensitivity analysis using Sobol indices reveals that calcium parameters (x0 and k) have high influence during UV-bright periods and light-dark transitions. Pool sizes play minor roles beyond initial RRP contribution. The rates of vesicle transfer between pools, rather than pool sizes or calcium dependence, may underpin region-wise differences in release properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by systematic sensitivity analysis using first-order Sobol indices (Figure 5) computed from posterior distributions. The analysis appropriately quantifies parameter influence on model variance and reveals zone-dependent, biologically interpretable patterns. The inference about vesicle transfer rates being key (C51) follows logically from the sensitivity analysis results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A simplified generalized model reproduces in vivo trends and reveals general principles of ribbon tuning. Maximal activation and sustained components can be tuned by varying pool sizes with negligible contributions from release rate or calcium offset. Transient components primarily depend on maximal release rate. Transient and sustained responses can be defined by largely non-overlapping ribbon properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by systematic exploration of a simplified model (Figure 6d-f). The model successfully reproduces experimental trends (Figure 6a-c) and the parameter space exploration reveals interpretable patterns about how different ribbon properties control different aspects of synaptic response. The inference about independent tuning (C55) follows from the non-overlapping parameter dependencies shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Model exploration reveals principles for event detection. Calcium offset (x0) is key for dark event detection, with additional benefits from increasing RRP size. Beyond inverse calcium baseline dependence, ribbon parameters for on- and off-event detection are virtually identical. This is consistent with previous findings that AZ has high calcium baseline and enhanced UV-on event detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by systematic model exploration using defined detection indices (Figure 7a-h). The parameter dependencies are shown through heatmaps with appropriate controls. The connection to previous work (C59) appropriately cites prior findings and shows consistency rather than claiming new experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "High-frequency transmission primarily depends on calcium kinetics rather than ribbon properties. Beyond calcium dynamics, calcium offset and balanced medium-sized RRP and IP pools provide additional support for encoding high-frequency components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by model exploration using a high-frequency index (Figure 7i-k). The analysis appropriately isolates the contribution of calcium kinetics by fixing tau and then examining ribbon parameter effects. The results clearly show calcium kinetics as the primary determinant with ribbon properties providing fine-tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "General principles of ribbon tuning emerge from model exploration. Calcium baseline and dynamics are critical for all investigated properties, with ribbon properties allowing fine-tuning. Calcium baseline shows bimodal influence on high-frequency detection, suggesting it enables trade-offs between high-frequency transmission and balanced on/off responses. Calcium decay time course is pivotal for high-frequency transmission range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 are supported by comprehensive model exploration (Figure 7). The bimodal distribution (C99) is clearly shown in Figure 7j. The inferences about trade-offs (C100-C102) follow logically from the combined analysis of on/off detection and high-frequency transmission. The role of calcium decay (C103) is demonstrated through systematic parameter variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "UV-cone ribbon ultrastructure and synaptic transfer systematically differ between regions, supporting a link between structure and function. However, building a direct bridge remains difficult. Ribbon size alone is insufficient to predict pool sizes; joint consideration of ribbon area and vesicle density is more informative, as supported by model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 synthesize findings from structural (Figure 1) and functional (Figures 2-3) data with model predictions (Figure 4e). The authors appropriately acknowledge the difficulty in making definitive structure-function links (C63) while drawing reasonable inferences. The suggestion about joint consideration (C66) is supported by the observation that model predictions align better when both ribbon size and vesicle density are considered together.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Model IP sizes stayed near prior with low Sobol indices, suggesting this property was not critical for the test stimulus used. Regionally distinct IP-size estimates might emerge with different stimuli. Elevated vesicle density further from ribbons in AZ UV-cones is potentially indicative of increased RP, though the model showed minor differences in IP refill rates in reversed order. Direct links between RP vesicle density and function remain outstanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C73 acknowledge limitations and uncertainties in the analysis. The observation about IP sizes (C68) is supported by model results (Figures 4e, 5), but the speculation about different stimuli (C69) is appropriately cautious. The disconnect between structural observations of vesicle density (C70) and model predictions (C71) is honestly reported but not fully resolved. The speculative interpretation (C73) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Dorsal cones show particularly transient release suited for pulsatile transmission, potentially supported by small densely populated ribbons. The model predicted faster RRP refill in dorsal cones. Nasal UV-cones show effective absence of transient component, with the model predicting lowest RRP refill rate, which paired with small RRP produces sustained behavior. The nasal model predicts smallest RRP but largest release rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 integrate functional observations (Figure 3) with model predictions and structural data. The transient nature of dorsal release (C74) is well-supported by data. The interpretations linking structure to function (C75-C76) are appropriately speculative. The model predictions about nasal cones (C77-C79) are supported by model results (Figures 4e-f) and provide mechanistic insight, though the counterintuitive nature is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Most functional differences across regions appear at the glutamate level with only subtle calcium differences. The faster AZ decay is linked to horizontal cells. Temporally advanced AZ calcium signals cannot explain glutamate dynamics differences. Potential iGluSnFR distortions are unlikely to strongly affect conclusions as they would apply equally across regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide important context for interpreting the results. The observation about glutamate vs calcium differences (C80) is supported by the data (Figures 2-3). The connection to horizontal cells (C81) appropriately cites previous work. The inference about calcium timing (C82) is reasonable given the data. The discussion of potential artifacts (C83) appropriately acknowledges limitations while explaining why they don't undermine conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The modeling approach extends previous work by combining simulation-based inference with simultaneous calcium and glutamate recordings. The continuous model enables use of available software toolboxes. Full posterior distributions rather than point estimates avoid overconfident conclusions. Sobol indices show zone-dependent, biologically interpretable time courses, indicating that simple step stimuli can reveal anatomical property influences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 describe methodological contributions. The extension of previous work (C90-C91) is appropriately cited. The advantages of the continuous model (C92) and posterior distributions (C93) are standard benefits of the chosen approach. The sensitivity analysis results (C95-C96) are supported by Figure 5 and represent a meaningful methodological advance in understanding parameter influences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Fast calcium decay (<100 ms, associated with nanodomains) strongly affects high-frequency transmission. Whether nano- or microdomain signaling dominates in larval zebrafish UV-cones remains untested, though similarity to mammalian rods suggests micromolar calcium can evoke substantial release. The local calcium environment is a primary determinant for high-frequency response, though large pool sizes with high release rate are generally preferable once calcium is set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 synthesize model findings with biological knowledge. The effect of calcium decay (C104) is supported by model exploration (Figure 7i). The acknowledgment of uncertainty (C105) is appropriate. The inference about microdomains (C106) is reasonable given structural similarity and appropriate citations. The summary statements (C107-C109) appropriately synthesize the modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Local variation in calcium channels within individual synaptic compartments can lead to different transfer functions at different release sites in inner hair cells, potentially helping to diversify sensory signals for downstream neurons, similar to the UV-cone differences presented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 draw appropriate parallels to other systems. The statement about inner hair cells (C110) is supported by citation to \u00d6z\u00e7ete and Moser, 2021. The speculation about functional significance (C111) is appropriately qualified and draws a reasonable parallel to the current findings.",
+    "result_type": "MINOR"
+  }
+]

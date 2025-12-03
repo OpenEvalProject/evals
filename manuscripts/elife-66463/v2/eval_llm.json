@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The GABA-switch from excitatory to inhibitory input is crucial for functional integration of newborn DGCs. During the early excitatory phase, cooperativity drives newborn cells to become sensitive to stimuli similar to mature cells. After the switch to inhibitory input, competition pushes newborn cells toward novel but similar stimuli, enabling them to code for concepts that are novel yet similar to familiar ones and promoting separation of similar but not distinct patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively present the core theoretical finding supported by computational modeling (C1), simulation results showing early-phase similarity to mature cells (C2), late-phase selectivity for novel patterns (C3), and the ability to code for novel-yet-similar concepts (C4-C5). The model simulations with MNIST digits and mathematical analysis provide converging evidence for this two-phase integration mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The computational model consists of 100 DGCs and 25 GABAergic interneurons (SST-INs from HIPP category), with each DGC receiving input from 144 EC cells and connecting to interneurons with probability 0.9. This architecture is justified by biological data showing an expansion factor of about 5 from EC to dentate gyrus in rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 describe the model architecture with explicit parameter values (C38, C40, C41) and biological justification from cited literature (C39, C42, C43). The model design choices are clearly stated and supported by anatomical data, though the model is acknowledged to be simplified (e.g., omitting expansion factor in standard version).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The plasticity rule implements biologically plausible Hebbian learning with LTP above threshold \u03b8, LTD below threshold, and heterosynaptic plasticity that provides homeostatic weight regulation. Mathematical analysis shows this ensures convergence to stable, bounded weights where receptive fields represent weighted averages of input patterns, with unresponsive units having weak connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 describe the plasticity rule and its mathematical properties. The rule is explicitly defined (C46, C48), supported by experimental literature (C47, C49), and analyzed mathematically to show weight boundedness (C52-C53) and receptive field properties (C54-C55). The mathematical analysis in Materials and methods provides rigorous support for these properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "After pretraining with MNIST digits 3 and 4, the model network achieves 99.25% classification performance, with DGCs developing receptive fields corresponding to different writing styles of the pretrained digits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 report specific simulation results showing successful pretraining. The receptive field visualization (Figure 1e) and quantitative classification performance demonstrate that the model can learn to represent input patterns effectively before neurogenesis is introduced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "During maturation, newborn DGCs show mixed receptive fields at the end of the early phase but become selective for novel digit 5 patterns by the end of the late phase. The L2-norm of feedforward weights increases during maturation, while firing rate distributions shift to lower values, reflecting development from broad to narrow tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe the maturation trajectory supported by simulation results in Figures 2a-e. The progression from mixed selectivity (C58) to novel pattern selectivity (C59), accompanied by weight growth (C60), firing rate changes (C61), and tuning narrowing (C62) is demonstrated through model simulations and consistent with cited experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66",
+      "C67"
+    ],
+    "result": "The neurogenesis model achieves 94.56% classification performance for three digits, outperforming control models. Control 1 (simultaneous learning) achieves 92.09%, control 2 (unresponsive units stay plastic without GABA-switch) fails to learn the novel digit, and control 3 (all units plastic) shows 90.92% with catastrophic forgetting of pretrained patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 present comparative results across different model variants. The neurogenesis model's superior performance is demonstrated through simulation results (Figures 2-3), with statistical analysis showing significant differences (Supplementary file 1). The control experiments effectively isolate the contribution of the GABA-switch mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Pattern separation of novel digit 5 from pretrained digits 3 and 4 improves from the early to late phase of maturation, as shown by discriminatory axis projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by Fisher discriminant analysis visualizations in Figure 4a-b showing improved separation of digit representations after the late phase compared to the early phase of maturation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The model results are robust to network size (700 DGCs yield similar results), timing of novel stimulus introduction (earlier introduction improves learning), and plasticity in mature cells (with 35 newborn DGCs, plastic mature cells improve performance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 report robustness analyses. The larger network results (C69, Supplementary file 3), timing effects (C70), and mature cell plasticity effects (C72, Supplementary file 4) are supported by additional simulations. However, C71 is a prediction rather than a demonstrated result, making it somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In the simplified model, newborn DGCs become selective for novel stimuli only when they are similar to pretrained stimuli. For similar clusters, the weight vector at the end of early phase lies at the center of mass of all three clusters; for distinct clusters, it lies at the center of mass of only the two pretrained clusters, preventing learning of distinct novel patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 present results from the simplified analytical model. The mathematical analysis (Materials and methods) and simulations with artificial datasets (Figure 5) demonstrate the similarity-dependent learning mechanism. The geometric analysis provides clear theoretical support for why newborn DGCs learn similar but not distinct novel patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The neurogenesis model outperforms random initialization across all input dimensionalities up to 97 dimensions. The two-phase model is advantageous because feedforward weights can start at arbitrarily small values and grow in relevant directions during the cooperative phase before specializing in the competitive phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 report dimensionality analysis results (Supplementary file 5) showing the neurogenesis model's advantage over random initialization. The reconstruction error comparisons across different participation ratios demonstrate robustness to input dimensionality, supporting the theoretical advantage of the two-phase mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The modeling work explains how the experimentally observed GABA-switch enables newborn DGCs to become selective for novel stimuli similar to familiar representations, linking channel properties to pattern separation behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 connect the model results to experimental literature. The model provides a mechanistic explanation for how the GABA-switch (documented in C80's cited studies) leads to pattern separation function (C81), bridging the gap between cellular properties and behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The current model differs from previous computational models by implementing unsupervised biologically plausible plasticity (rather than supervised rules), modeling the GABA-switch to grow weights from small values (rather than random initialization), using intrinsic weight bounds through heterosynaptic plasticity (rather than algorithmic normalization), and distinguishing similar from distinct patterns (rather than treating all patterns equally).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 compare the current work to prior modeling studies through extensive citations. The distinctions are clearly articulated and supported by the model implementation details. This represents a fair assessment of how the current work advances beyond previous computational approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The early cooperative phase corresponds to unsupervised learning where receptive fields represent the center of mass of activating patterns. The late competitive phase shifts receptive fields toward novel features. This mechanism agrees with experimental observations of broad early tuning and narrow late tuning, and provides a biological solution to the 'unresponsive units' problem in unsupervised learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 provide computational and theoretical interpretation of the model mechanism. The characterization as cooperative/competitive learning (C86, C88) is supported by mathematical analysis (C87) and consistent with experimental data (C89). The connection to unsupervised learning theory (C90-C91) provides valuable theoretical context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The model results align with the classic view that dentate gyrus decorrelates inputs and with experimental observations that dentate gyrus lesions impair discrimination of similar but not distinct stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 connect model results to established theory and experimental findings through appropriate citations. The model's similarity-dependent pattern separation is consistent with both theoretical predictions and lesion studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The model predicts that NKCC1-knockout mice would be impaired in discriminating similar contexts due to lack of indirect activation of newborn cells, but that discrimination could be restored by artificial activation (light-induced or electrical stimulation) of newborn cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are explicit predictions from the model but lack experimental validation. While the predictions follow logically from the model mechanism, they remain speculative until tested. The predictions are testable and specific, but their validity depends on whether the model accurately captures the relevant biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Experimental evidence supports the importance of the GABA-switch: NKCC1 knockout affects synapse formation and dendritic development, KCC2 reduction is associated with epilepsy, proper timing is crucial for sensorimotor gating and cognition, the switch occurs within a single day, and KCC2 expression is upregulated by GABAergic but not glutamatergic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 summarize experimental literature supporting the biological relevance of the GABA-switch. Each claim is backed by appropriate citations. This provides important context for why the modeled mechanism is biologically plausible and functionally important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The theory suggests newborn cells have a coding rather than modulatory role in dentate gyrus pattern separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 presents the main theoretical conclusion. This is supported by the model results showing that newborn cells develop specific selectivity for novel patterns (coding) rather than simply modulating the activity of mature cells. The classification performance improvements and receptive field analyses support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background biological context: Adult neurogenesis in mammals is restricted to specific brain areas including dentate gyrus. Adult-born DGCs undergo maturation over ~8 weeks with changing properties including enhanced excitability, stronger plasticity, and a GABA-switch from excitatory to inhibitory at ~3 weeks. These cells are critical for behavioral pattern separation, particularly for similar stimuli, despite representing only 3-6% of the DGC population per month.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C37 provide biological background supported by extensive citations to experimental literature. These establish the empirical foundation for the modeling work. The claims accurately represent the cited literature and provide appropriate context for understanding the model's biological basis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The model's replacement of unresponsive neurons with newborn DGCs reflects both their weak synaptic connections in the model and experimental evidence that lack of NMDA receptor activation is deleterious for newborn DGC survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 justifies a modeling choice (replacing unresponsive units) by connecting it to both model properties (weak connections) and experimental observations (NMDA-dependent survival). This provides biological plausibility for the modeling approach.",
+    "result_type": "MINOR"
+  }
+]

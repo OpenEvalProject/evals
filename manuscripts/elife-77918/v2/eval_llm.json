@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "An EM time series of C. elegans embryogenesis was generated at four developmental stages (bean, comma, 1.5-fold, 2-fold) spanning 150 minutes, using FIB-SEM for early stages and AT for later stages, with lateral resolution 8.5-19.4 nm and z-spacing 25-85 nm, imaging entire embryos containing 576-601 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide comprehensive technical details about the EM time series acquisition that are directly stated and supported by figures and supplementary data. The imaging parameters, developmental stages, and cell counts are explicitly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "FM time series were acquired from four-cell stage through 1.75-fold stage (~8 hours) with 60-75 second temporal resolution, using nuclear labels to trace complete cell lineages and provide position and identity of every cell at every time point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 describe the FM imaging protocol with explicit temporal parameters and the use of nuclear labels for lineage tracing, supported by citations and figure references. These are standard, well-established methods in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The aligned EM datasets were temporally staged at approximately 320, 345, and 380 minutes post first cell division, during which 75 cell divisions and 76 deaths occurred while cell counts remained virtually constant (576-601).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 describe temporal alignment results and developmental dynamics. The timing is based on known developmental events (C11) and the cell division/death counts are directly stated with figure support (C12-C13), providing internally consistent developmental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The ensemble FM model for each EM stage contains 39 labeled embryos, each generating 5838-6170 pairwise adjacencies with 439-504 (~8%) consistent and 27-34 (~5%) inconsistent landmarks, with only 146 adjacencies observed at all three stages due to developmental dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 provide quantitative characterization of the ensemble model with specific numbers for embryos, adjacencies, and consistency metrics. These are directly stated with supplementary data references and explained in context of developmental variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The co-optimization algorithm achieved single-cell accuracy of 71-78% and tissue-level accuracy of 79-95%, with decreasing accuracy at later stages. For head neurons specifically, accuracy was 69-78%, exceeding prior adult alignment methods (50-68%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 report accuracy metrics with appropriate comparisons to prior work. The accuracy assessment is based on manual curation (described in C24-C26) and the comparison to prior work (C23) is properly cited, providing context for the achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "56-70% of cells have manually curated identities, including 25-40% as specific cell identities and 16-34% as tissue/organ identities, reducing potential errors in automated predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 document the extent of manual curation used for validation and error reduction. These percentages are directly stated with figure and supplementary data references, providing transparency about the ground truth used for accuracy assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The excretory system shows developmental progression from stacked pore/canal/duct cells at bean and comma stages to a continuous tube connecting to the exterior at 1.5-fold stage, formed through concerted auto-fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe a specific developmental sequence with clear morphological transitions supported by figure references. This demonstrates the utility of the time series for tracking organogenesis and is consistent with cited prior work on excretory system development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The nerve ring establishes through eight entry points (dorsal midline, ventral midline, and three bilateral pairs: supralateral, lateral, sublateral). Sublateral neurons SIAD and SMDD initiate first outgrowth at bean stage, with all entry points populated within 30 minutes by comma stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 describe the spatial organization and temporal sequence of nerve ring formation with specific neuron identities and timing. The eight entry points are clearly documented with EM images (C34-C35), pioneer neurons are identified (C36-C38), and the rapid population of all entry points is temporally defined (C39-C43). This is consistent with prior FM observations (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Cross-modality synthesis reveals that outgrowths observed by bean stage in EM span ~30 minutes in FM, comma stage outgrowths span ~1 hour in FM, and neurite counts in the nerve ring increase rapidly from 12 at comma to 51 at twofold stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate the power of cross-modality synthesis to provide both spatial (EM) and temporal (FM) resolution. The temporal spans are explicitly stated with data references (C44-C45) and the neurite count progression is quantified from cross-sections (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Amphid commissure neurons ASH, RIB, and AWC show initial outgrowth at bean stage as early pioneers, but pause near the sublateral entry point before entering the nerve ring by 1.5-fold stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe a specific developmental behavior (pause after initial outgrowth) for identified neurons. This is supported by EM observations with figure references and is consistent with cited prior FM work documenting this pausing behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Neurite outgrowth shows remarkable left-right precision: contralateral sublateral pairs SIADL/R and SMDDL/R reach the dorsal midline simultaneously at comma stage, meeting precisely beneath the ALA nucleus, with length differences <2 \u03bcm (~few percent). Similar precision is observed for lateral and supralateral pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 document precise bilateral coordination with quantitative measurements. The simultaneous arrival and precise meeting point are shown in figures (C51-C52), extended to other neuron pairs (C53), and quantified (C54). This level of spatial resolution is unique to EM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "At bean stage, amphid neuron protrusions cluster in a rosette lodged in an epidermal dent, with the socket cell not engaged at this location. The sheath cell starts anteriorly, moves dorsal-posteriorly with lamellipodia-like protrusions, and wraps dendrite tips by comma stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 describe early amphid assembly with specific cellular behaviors and positions documented by 3D reconstructions (figure references provided). The observations are consistent with prior FM work on amphid development and provide new ultrastructural detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The socket cell migrates posteriorly with transient protrusions, wraps over the sheath cell (complete by 1.5-fold), makes elongated protrusions contacting advancing epidermis, and is positioned like a plug between epidermal cells before being fully surrounded by epidermis. This suggests a successive wrapping strategy for amphid sensory end assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 describe complex socket cell behaviors and interactions with multiple cell types, supported by figure references and consistent with cited prior work. The successive wrapping interpretation (C73) is a reasonable synthesis of the observed sequence of events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Centrioles move to dendrite tips between bean and comma stages, then disappear by twofold stage when microtubule bundles (9 per dendrite) appear in proto-dendrite tips with adult-like appearance. Dendrite tip morphology remains simple until 1.5-fold, then diversifies by twofold with some (ADF, ADL) showing bifurcated tips with separate microtubule sets, though not yet individually embedded in sheath cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 document the ultrastructural elaboration of amphid dendrites with specific organelle dynamics and morphological changes. The observations are supported by figure references and citations to prior work, showing progression from simple to complex morphology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The ensemble model contains three components (labeled data, consistent adjacency graph, inconsistent landmarks) designed to capture anatomical regularity and developmental variation. The adjacency graph is insensitive to size/posture variation and is biologically motivated by physical cell adhesion, with consistent adjacencies enriching for true regularity and inconsistent landmarks enabling data-driven handling of discrepancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 describe the conceptual framework and biological motivation for the ensemble model approach. The three components are clearly defined (C107), the properties of the adjacency graph are explained (C108), and the biological rationale is provided (C109-C111). This is a coherent methodological framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Ablation studies show that removing all unique components reduces accuracy to 43-66% (prior LAP method), while removing only the co-optimization of inconsistent landmarks reduces accuracy to 67-75%, demonstrating the significant contribution of this novel component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 provide ablation study results that validate the algorithmic contributions. The comparison to prior methods and component-wise ablation are appropriate validation approaches, though more extensive ablation of individual components would strengthen the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The co-optimization algorithm achieves unprecedented accuracy in cell identification by using relative position through adjacency graphs. It provides a general, modality- and scale-free solution for cross-modality alignment, with consistent adjacencies at optimal landmark density providing an effective implicit anatomical model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 make broad claims about the algorithm's performance and generalizability. The accuracy claim (C83) is supported by the reported results (C19-C23). The generalizability claims (C84-C85) are reasonable given the point cloud representation, though broader validation would strengthen them. The postulate about optimal landmark density (C86) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "FIB-SEM excels in axial resolution and avoids alignment artifacts but has exacting preparation requirements and slow acquisition. AT is more artifact-prone but more flexible and forgiving, allowing post-sectioning sample selection. AT was found more reliable in yielding useful data due to reduced acquisition failure risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide practical insights on EM methods based on the authors' experience. The trade-offs between FIB-SEM and AT are clearly articulated (C88-C91) and the conclusion about AT reliability (C92) is based on their empirical experience, which is valuable for the community.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Most automated alignment methods focus on appearance-based approaches, but cross-modality applications have little shared appearance. Landmark-based methods with dense landmarks achieve limited accuracy (50-60%), though multi-color labeling can improve performance to 81-86%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 provide context by reviewing prior alignment approaches with appropriate citations. This establishes the challenge addressed by the current work and positions the achieved accuracy (71-78%) relative to prior methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Developmental data present challenges from heterochrony (variation in developmental speed) causing landmark presence mismatches between samples. Manual landmark selection partially bypasses these challenges, while methods ignoring heterochrony achieve limited accuracy (<50%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 describe the heterochrony challenge in developmental alignment with appropriate citations. This establishes a key problem that the co-optimization approach addresses through inconsistent landmark handling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Post-hoc correlation of EM and FM data provides a useful alternative to true correlative EM for targeted imaging based on fluorescence marker expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 positions the approach relative to correlative EM methods with appropriate citation. The demonstration of successful cross-modality alignment supports this as a viable alternative approach, though direct comparison would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The nerve ring is the primary C. elegans neuropil consisting of 181 neurites in adults, emerging in late embryogenesis with first neurites appearing around bean stage and a visible ring by comma stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide established background knowledge about the nerve ring with appropriate citations. This contextualizes the developmental observations made in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The amphid is a major sensory organ with 12 neurons and two glial cells (socket and sheath). The adult sensory end contains ciliated dendrite endings with diverse morphologies in a tube-shaped glial channel. Dendrites grow via collective retrograde extension from a rosette towed by migrating epidermis, with opening formation and morphology elaboration occurring in embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 provide established background on amphid structure and development with appropriate citations. This contextualizes the detailed observations of amphid assembly made in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Prior EM studies in C. elegans focused on larval/adult nervous system, making embryonic neuron identification challenging since neurons are typically identified by adult morphologies. FM lineage tracing establishes definitive identities via ancestry and light sheet microscopy extends imaging into embryonic motion, but FM lacks spatial resolution for individual cell shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 provide context on prior work and establish the complementary strengths/limitations of EM and FM that motivate the cross-modality approach. All claims are supported by appropriate citations.",
+    "result_type": "MINOR"
+  }
+]

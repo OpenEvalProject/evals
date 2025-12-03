@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C7",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors performed single-cell RNA sequencing of Drosophila ovaries with Lgl-knockdown (Lgl-KD) to characterize transcriptomic changes upon polarity loss. They integrated 14,537 Lgl-KD follicle cells with 17,875 wildtype (w1118) follicle cells, identifying 20 clusters with distinct stage- and cell-type-specific marker expression. This comprehensive transcriptomic analysis at single-cell resolution revealed cells specific to various discernible phenotypes in the follicle cell tumor model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C7, C31, C32, C35, C60-C63 collectively describe a well-executed scRNA-seq experimental design with appropriate integration analysis. The methodology is clearly described with specific cell numbers, clustering parameters, and marker-based annotation. The data processing pipeline using established tools (Seurat, Cell Ranger) and the integration of control and experimental datasets provide robust support for characterizing transcriptomic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Lgl-knockdown in follicle cells for 72 hours resulted in premature oogenesis failure with multiple phenotypes: multilayering at midoogenesis (83.25% of ovarioles), fused egg chambers at early oogenesis (6.05%), and degenerated egg chambers at late oogenesis (51.86%). Multilayered cells showed decreased Hindsight expression, increased Cut expression, and gradually decreasing Shg/Arm enrichment along the apical-basal axis with elevated F-actin at the invasive front.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C50 provide comprehensive phenotypic characterization with quantitative data from five independent experiments (n=280 egg chambers from 1250 ovarioles). The phenotypic observations are supported by confocal imaging, marker staining (Hnt, Cut, Shg, Arm, pH3), and quantitative measurements of protein enrichment along the apical-basal axis. The statistical rigor and reproducibility support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Whole-tissue RNA-seq analysis at 24h and 96h post-Lgl-KD induction showed that 96h-Lgl-KD samples exhibited significant transcriptomic differences (77% variance on PC1) compared to controls. The 96h-Lgl-KD samples showed reduced expression of late-stage oogenesis genes and elevated expression of genes involved in actin binding, locomotion, and cell periphery. Apoptotic cell clearance genes (crq, drpr) were upregulated, likely in response to increased germline cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 describe bulk RNA-seq results with appropriate statistical analysis (PCA, GO enrichment with significant p-values). The temporal comparison (24h vs 96h) provides insight into phenotype progression. The correlation between phenotypic observations (germline cell death) and gene expression changes (apoptotic clearance genes) strengthens the interpretation. However, bulk RNA-seq has inherent limitations in resolving cellular heterogeneity, which the authors acknowledge and address with scRNA-seq.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Integration analysis identified five clusters (7, 8, 13, 16, 17) unique to the Lgl-KD dataset. RNA velocity analysis revealed that clusters 7, 13, 16, and 17 transition linearly into cluster 8, with clusters 13, 16, and near-terminal cluster 7 cells representing stable endpoints. Cluster 7 displayed highly dynamic transcriptional transition, and the unique clusters represent a mix of stable terminal and transitioning cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 describe sophisticated computational analysis using RNA velocity (scVelo) to infer lineage relationships. The integration approach successfully separated dataset-specific clusters, and the velocity analysis provides temporal ordering of cell states. The interpretation is appropriately cautious, acknowledging mixed populations and transcriptional dynamics. The methodology is sound, though RNA velocity has known limitations with mixed populations that the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Unique Lgl-KD clusters were characterized by specific marker expression: cluster 8 expressed apoptotic clearance markers (drpr, crq), cluster 17 expressed polar/border cell markers (upd1, slbo, sn), and clusters 13 and 16 represented immature (mitotic) and mature (endocycling) follicle cells based on differential Stg expression. Cluster 7 showed few specific markers, sharing expression with main body follicle cells and other clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 provide marker-based cluster annotation validated by antibody staining (C74). The differential expression analysis identifies biologically meaningful markers consistent with known cell types. The observation that cluster 7 lacks highly specific markers (C77) is honestly reported and leads to the regulon analysis approach described in subsequent claims. The validation experiments strengthen the computational findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SCENIC regulon analysis of unique Lgl-KD clusters revealed that cluster 7 is transcriptionally more similar to cluster 8 than cluster 13. The five most enriched regulons in cluster 7 included crc, Xbp1, Pdp1, BEAF-32, and CrebA, alongside AP-1 TFs Jra and kay known to drive tumorigenic JNK signaling. Cluster 7 cells exhibit dynamic gene expression and are derived from both mitotic and endocycling cells, representing a transcriptomic state preceding cluster 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 describe comprehensive regulon analysis using SCENIC with appropriate metrics (RSS scores). The hierarchical clustering of regulon activity provides quantitative support for cluster relationships. The connection to known tumorigenic pathways (JNK signaling via Jra/kay) is supported by literature citations (C83). The integration of multiple analytical approaches (marker expression, RNA velocity, regulon activity) provides converging evidence for the dynamic nature of cluster 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "JNK signaling components were enriched in Lgl-KD cells. qRT-PCR showed significant upregulation of grnd, Jra, and Mmp1, with noticeable upregulation of Ets21C and kay in Lgl-KD ovaries. Mapping to specific clusters revealed that both clusters 7 and 8 exhibit Jra, kay, and grnd enrichment, while Ets21C is specifically detected in cluster 7, with terminal states overlapping with dynamic Mmp1 expression. Cluster 7 consists of heterogeneous tumorigenic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 combine qRT-PCR validation (C88-C89) with scRNA-seq cluster-specific expression mapping (C90-C92). The qRT-PCR provides quantitative validation with appropriate statistics (p-values, standard errors, N\u226510 samples). The cluster-specific mapping of JNK pathway components is supported by gene enrichment plots and RNA velocity analysis. The conclusion about cluster 7 heterogeneity (C93) is a reasonable inference supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Subclustering of cluster 7 into five neighborhoods revealed lineage structure with clusters 7_0 and 7_2 as roots terminating into cluster 7_1, and clusters 7_3 and 7_4 as intermediate states. Regulon analysis identified two highly correlated clusters: one containing AP-1 TFs (Jra, kay) with Usf, ftz-f1, and srp; another containing Atf3, Hr4, Hnf4, hairy, CrebA, and Ets21C. Cooperative regulons showed similar enrichment patterns across subclusters, with Jra/kay showing progressive activity increase and Ets21C showing opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C103 describe sophisticated subclustering and regulon cooperation analysis using CSI metrics. The RNA velocity analysis on subclusters provides finer temporal resolution. The identification of two regulon modules with distinct patterns (C97-C99) and their temporal dynamics (C100-C102) is well-supported by the heatmaps and quantitative metrics. This comprehensive approach successfully resolves cluster 7 heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Cluster 7 subclusters were annotated based on marker expression: cluster 7_0 as mature postmitotic cells (Yp1-3+, Vm26Ab+), cluster 7_2 as immature mitotic cells (stg+, Myc+, HmgD+), and cluster 7_1 as cells expressing apoptotic clearance markers (drpr+, crq+). Cluster 7_3, transitioning from cluster 7_0, showed enriched markers associated with actomyosin cytoskeleton, glutathione metabolism, Rab signaling, and lysosomal trafficking, likely representing multilayered cells at the leading edge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 provide marker-based annotation of cluster 7 subclusters with biological interpretation. The marker expression patterns (C104-C106) are consistent with known cell types. The inference that cluster 7_3 represents leading-edge cells (C108-C109) is reasonable given the lineage analysis and marker enrichment. The identification of glutathione metabolism genes (C110) sets up the subsequent Keap1-Nrf2 pathway analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Cluster 7_3 showed elevated activation of the Keap1-Nrf2 signaling pathway. Glutathione S-transferase (Gst) genes are controlled by cnc (Drosophila Nrf2), which was present in regulons of Jra, kay, Usf, and Atf3. Enrichment of cnc and Keap1 was detected in clusters 7 and 8, with RNA velocity showing dynamic behavior of Keap1 and Gst genes. GstD-lacZ reporter validation showed infrequent \u03b2-gal activity in subsets of multilayer cells, confirming that cluster 7 represents heterogeneous multilayer cells with dynamic Keap1-Nrf2 activation in a subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 establish Keap1-Nrf2 pathway activation through multiple lines of evidence: marker enrichment (C110, C114), regulon analysis (C112), RNA velocity (C115), and experimental validation with GstD-lacZ reporter (C116). The integration of computational and experimental approaches provides strong support. The conclusion about dynamic activation in a subset of cells (C117) is appropriately cautious and consistent with the infrequent reporter activity observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Genetic manipulation of Keap1-Nrf2 pathway components affected multilayering: Lgl-KD alone showed 86.35% multilayering, while Lgl-KD+Cnc-KD showed only 27.2% and Lgl-KD+Keap1-KD showed 35.46% multilayering. Both knockdowns delayed germline cell death and allowed development to stage 10, but border cell migration defects persisted, indicating that Cnc/Keap1 knockdown negatively regulates multilayer growth without rescuing cell-autonomous defects. The reduction was not due to increased cytotoxicity as apoptosis was rarely observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 describe genetic epistasis experiments with substantial sample sizes (N=793-964 ovarioles). The quantitative phenotypic analysis shows clear rescue effects. The observation that border cell migration defects persist (C122) is important for interpreting the mechanism. The inference that the rescue is not due to cytotoxicity (C124) is supported by the absence of apoptosis markers, though the claim that Dcp-1 staining was 'not shown' is a minor weakness in documentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Keap1 manipulation showed context-dependent effects on Keap1-Nrf2 signaling. Without Lgl-KD, Keap1 overexpression or knockdown decreased GstD2 levels without affecting cnc. With Lgl-KD, Keap1 overexpression increased GstD2 to levels comparable to Lgl-KD alone and worsened the phenotype, causing multilayering, fusion, and epithelial 'bridging' (119/185 egg chambers). CncC overexpression enhanced multilayering and fusion at early stages but not bridging at midoogenesis. The increased invasiveness is likely controlled by noncanonical Keap1-Nrf2 functions outside oxidative stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C135 describe complex genetic interactions with qRT-PCR validation (C125-C126) and phenotypic analysis (C127-C132). The context-dependent effects of Keap1 manipulation are well-documented with appropriate sample sizes. The distinction between Keap1-OE and CncC-OE phenotypes (C129-C130) is important for mechanistic interpretation. The inference about noncanonical functions (C135) is reasonable given the genetic epistasis results, though additional experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Keap1 overexpression in Lgl-KD cells enhanced invasive behavior. Gaps appeared in multilayers with decreased Shg/Arm enrichment at apical junctions, but cells maintained junctions explaining collective invasion. Keap1 overexpression significantly increased delaminated epithelial volume (40.3% vs 21.8%, p=0.02, N=9-10 egg chambers). The increase was not due to overproliferation as pH3 was not detected in invading cells, but rather due to enhanced invasive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C143 describe enhanced invasiveness with multiple supporting observations: altered cell-cell adhesion (C136-C139), quantitative volume measurements with statistics (C140), and exclusion of proliferation as mechanism (C141-C142). The sample sizes are modest (N=9-10) but appropriate for volumetric analysis. The inference about enhanced invasive behavior (C143) is well-supported by the converging evidence, though the p-value of 0.02 is just at the significance threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Lgl-KD+Keap1-OE cells showed enhanced F-actin enrichment at the leading edge. Quantification revealed increased F-actin in multilayers compared to monolayers, with highly significant enhancement in Lgl-KD+Keap1-OE multilayers compared to Lgl-KD alone (p=0.00053, N=13-18 multilayers). The presence of a defined actin-rich leading edge with multiple cells at the tip indicates polarized collective invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 provide quantitative analysis of F-actin distribution with strong statistical support (p=0.00053) and adequate sample sizes (N=13-18 multilayers from 10 egg chambers). The F-actin staining and quantification are well-documented in figures. The inference about polarized collective invasion (C148) is reasonable based on the F-actin distribution pattern, though the authors appropriately note in the Discussion that constraints of available space limit definitive conclusions about invasion mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "RNA velocity analysis detected dynamic behavior of genes involved in cytoskeletal regulation in cluster 7 cells, including genes mediating integrin-actin interactions (\u03b1-Catenin, Vinculin, cofilin) and regulating actin polymerization (Cortactin, flr, DAAM). Enrichment of genes supporting leading-edge protrusion (WASp, Cortactin, Vinculin, tsr, Act5C, Act42A, Arp2/3 complex genes) was detected. This dynamic regulation supports the conclusion that delaminating Lgl-KD cells exhibit leading-edge invasion, with Keap1 overexpression promoting invasiveness through actin cytoskeleton remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 connect scRNA-seq findings to the invasive phenotype through analysis of cytoskeletal gene expression. The RNA velocity analysis identifies dynamic genes (C149-C150), and the enrichment of leading-edge genes (C152) is well-supported by the data and literature citations (C151). The inference that Keap1 promotes invasiveness through cytoskeletal remodeling (C154) integrates multiple lines of evidence from genetic manipulation, F-actin quantification, and gene expression analysis, providing a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript provides extensive background on polarity loss, EMT, and tumorigenesis, establishing the scientific context for the study. Key points include: polarity loss as a founding event in EMT and tumorigenesis (C1), the role of polarity proteins in cancer (C18-C19), the causative link between polarity loss and tumorigenesis in Drosophila (C20-C21), and the limitations of current understanding due to bulk approaches and model system constraints (C23-C25). The Lgl-KD follicle cell model provides an opportunity to study discrete dysplastic cells with reduced oncogenic complexity (C26-C28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C29 establish the scientific background through literature citations and knowledge statements. These claims are appropriately supported by references to prior work and represent accurate characterizations of the field. The identification of knowledge gaps (C17, C23) and the rationale for the experimental model (C26-C28) provide clear motivation for the study. These are primarily contextual claims that frame the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "The study identifies a previously unappreciated link between Keap1-Nrf2 signaling and cell plasticity at early tumorigenesis. Keap1-Nrf2 signaling has a genetic requirement in promoting multilayer formation of Lgl-KD cells. Ectopic Keap1 expression increased delaminated follicle cell volume and enhanced invasive behavior with significant cytoskeletal changes, identifying novel regulatory pathways determining plasticity in the invading tumor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C8, C33-C34, C36 represent the major conclusions of the study. These are well-supported by the comprehensive experimental evidence including: genetic manipulation experiments showing Keap1-Nrf2 pathway requirement (C4, C118-C120), quantitative measurements of enhanced invasiveness (C5, C140), F-actin analysis showing cytoskeletal changes (C6, C146-C147), and scRNA-seq identification of pathway enrichment (C33). The claim of a 'previously unappreciated link' (C8, C36) is justified given the novel connection between Keap1-Nrf2 and collective invasion in this context.",
+    "result_type": "MAJOR"
+  }
+]

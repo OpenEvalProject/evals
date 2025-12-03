@@ -1,0 +1,1668 @@
+{
+  "submission": {
+    "id": "fd52d81a-bf97-442a-963f-72bda9324440",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:45:46.794355Z",
+    "updated_at": "2025-12-03T11:45:46.794355Z"
+  },
+  "content": [
+    {
+      "id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "submission_id": "fd52d81a-bf97-442a-963f-72bda9324440",
+      "content_type": "manuscript",
+      "content_text": "# Risk of heart disease following treatment for breast cancer \u2013 results from a population-based cohort study\n\n## Authors\n\n- Haomin Yang<sup>1</sup> ([ORCID: 0000-0002-2252-2606](https://orcid.org/0000-0002-2252-2606)) \u2020\n- Nirmala Bhoo-Pathy<sup>3</sup> ([ORCID: 0000-0003-0568-8863](https://orcid.org/0000-0003-0568-8863))\n- Judith S Brand<sup>4</sup>\n- Elham Hedayati<sup>5</sup>\n- Felix Grassmann<sup>2</sup> ([ORCID: 0000-0003-1390-7528](https://orcid.org/0000-0003-1390-7528))\n- Erwei Zeng<sup>2</sup>\n- Jonas Bergh<sup>5</sup>\n- Weiwei Bian<sup>2</sup>\n- Jonas F Ludvigsson<sup>2</sup>\n- Per Hall<sup>2</sup> ([ORCID: 0000-0002-5640-9126](https://orcid.org/0000-0002-5640-9126))\n- Kamila Czene<sup>2</sup>\n\n### Affiliations\n\n1. Department of Epidemiology and Health Statistics, School of Public Health, Fujian Medical University Fuzhou China ([ROR:050s6ns64](https://ror.org/050s6ns64))\n2. Department of Medical Epidemiology and Biostatistics, Karolinska Institutet Stockholm Sweden ([ROR:04hmgwg30](https://ror.org/04hmgwg30))\n3. Centre for Epidemiology and Evidence-Based Practice, Faculty of Medicine, University of Malaya Kuala Lumpur Malaysia ([ROR:00rzspn62](https://ror.org/00rzspn62))\n4. Clinical Epidemiology and Biostatistics, School of Medical Sciences, \u00d6rebro University \u00d6rebro Sweden ([ROR:05kytsw45](https://ror.org/05kytsw45))\n5. Department of Oncology-Pathology, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n6. Health and Medical University Potsdam Germany\n7. Breast Cancer Center, Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))\n8. Karolinska Comprehensive Cancer Center Stockholm Sweden\n9. Department of Pediatrics, \u00d6rebro University Hospital \u00d6rebro Sweden ([ROR:02m62qy71](https://ror.org/02m62qy71))\n10. Department of Oncology, S\u00f6dersjukhuset Stockholm Sweden ([ROR:00ncfk576](https://ror.org/00ncfk576))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:There is a rising concern about treatment-associated cardiotoxicities in breast cancer patients. This study aimed to determine the time- and treatment-specific incidence of arrhythmia, heart failure, and ischemic heart disease in women diagnosed with breast cancer.Methods:A register-based matched cohort study was conducted including 8015 breast cancer patients diagnosed from 2001 to 2008 in the Stockholm-Gotland region and followed up until 2017. Time-dependent risks of arrhythmia, heart failure, and ischemic heart disease in breast cancer patients were assessed using flexible parametric models as compared to matched controls from general population. Treatment-specific effects were estimated in breast cancer patients using Cox model.Results:Time-dependent analyses revealed long-term increased risks of arrhythmia and heart failure following breast cancer diagnosis. Hazard ratios (HRs) within the first year of diagnosis were 2.14 (95% CI = 1.63\u20132.81) for arrhythmia and 2.71 (95% CI = 1.70\u20134.33) for heart failure. HR more than 10 years following diagnosis was 1.42 (95% CI = 1.21\u20131.67) for arrhythmia and 1.28 (95% CI = 1.03\u20131.59) for heart failure. The risk for ischemic heart disease was significantly increased only during the first year after diagnosis (HR = 1.45, 95% CI = 1.03\u20132.04). Trastuzumab and anthracyclines were associated with increased risk of heart failure. Aromatase inhibitors, but not tamoxifen, were associated with risk of ischemic heart disease. No increased risk of heart disease was identified following locoregional radiotherapy.Conclusions:Administration of systemic adjuvant therapies appears to be associated with increased risks of heart disease. The risk estimates observed in this study may aid adjuvant therapy decision-making and patient counseling in oncology practices.Funding:This work was supported by the Swedish Research Council (grant no: 2018-02547); Swedish Cancer Society (grant no: CAN-19-0266); and FORTE (grant no: 2016-00081).\n\n## Introduction\n\nThe use of adjuvant systemic therapies at least halves the risk of dying from breast cancer (Early Breast Cancer Trialists\u2019 Collaborative Group (EBCTCG), 2005; Dowsett et al., 2015; Goldvaser et al., 2019; Gray et al., 2019). Nowadays, 80% of the breast cancer patients survive for at least 10 years and many will become long-term survivors. There are, however, concerns about therapy-associated late adverse health effects, including cardiovascular events (Khouri et al., 2012). Use of common (neo-)adjuvant therapies for breast cancer has been associated with an increased risk of heart diseases including heart failure, arrhythmias, and ischemic heart disease (Darby et al., 2013; Doyle et al., 2005; Harris et al., 2006; Hooning et al., 2007; Pinder et al., 2007; Taylor et al., 2017; Yeh and Bickford, 2009). However, this evidence mostly comes from studies focusing on specific subgroups of patients based on age, cancer stage, or treatment regimen.\n\nAlthough the benefits of radiotherapy far outweigh the risk of heart diseases, some studies have found increased incidence of and mortality due to heart disease in women subjected to radiotherapy techniques (Darby et al., 2013; Taylor et al., 2017). Knowledge on cardiotoxic effects of anthracycline-based chemotherapy regimens have led to lowering of doses and less use of bolus injections to reduce peak concentrations of anthracyclines (Foukakis et al., 2016), but it is estimated that the risk of heart failure associated with anthracyclines remains increased for standard low-dose group as compared to non-users (Chung et al., 2020). While trastuzumab has been shown to reduce the risk of breast cancer mortality at 11 years of follow-up (Cameron et al., 2017), evidence on its cardiotoxicity is conflicting (Bowles et al., 2012; Papakonstantinou et al., 2020). In addition, recent evidence suggests that use of aromatase inhibitors in women with hormone receptor positive breast cancer may increase the risk of heart failure, compared to tamoxifen (Khosrow-Khavar et al., 2020).\n\nRisk assessment of immediate and later occurring heart disease events following breast cancer is important for the planning of cardiac surveillance programs and possible prophylactic pharmacotherapy. Here, we report the risks of heart diseases in a cohort representative of the general breast cancer population with long-term follow-up. We specifically aimed to assess risks of heart diseases by time since diagnosis, and according to adjuvant treatments.\n\n## Materials and methods\n\n### Breast cancer cohort\n\nThis study took advantage of the Stockholm-Gotland Breast Cancer Register comprising all women diagnosed with primary invasive breast cancer between 2001 and 2008 in the Stockholm-Gotland region. The Stockholm-Gotland Breast Cancer Register has about 99% completeness and provides detailed information on tumor and treatment characteristics, as well as routine follow-up on locoregional recurrences and distant metastases (Colzani et al., 2011; Wigertz et al., 2012). Detailed description of the breast cancer cohort can be found elsewhere (Holm et al., 2016). We included all patients diagnosed with non-metastatic breast cancer (stages I\u2013III) and without prior diagnosis of heart disease at age 25\u201375 years (N = 8015). To compare the risk of heart diseases after breast cancer diagnosis, we randomly sampled up to 10 women from the general female population in Stockholm-Gotland region matched on year of birth (Appendix 1\u2014figure 1). Each reference individual was alive and free of breast cancer on the date of the matched patient\u2019s diagnosis of breast cancer (the index date).\n\nThe matched cohort was linked through the unique personal identity number to the Swedish Cancer Register, Patient Register, Cause of Death Register and Migration Register, and follow-up started from the index date until the date of heart disease diagnosis, emigration, death, breast cancer relapse, or end of follow-up (December 31, 2017), whichever occurred first. We also performed linkage with the Prescribed Drug Register which contains data on all drugs dispensed from Swedish pharmacies from July 2005 onward to validate the use of hormone therapy.\n\nThe study was approved by the Regional Ethical Review Board in Stockholm.\n\n### Heart diseases\n\nWe identified the following heart diseases according to relevant ICD (International Classification of Disease) codes in the Swedish Patient Register and the Cause of Death Register (Appendix 2\u2014table 1): heart failure (ICD-10: I50, ICD-9: 428A, 428B, 428X), arrhythmias (ICD-10: I47\u2013I49, ICD-9: 427), and ischemic heart disease (ICD-10: I20\u2013I25, ICD-9: 410\u2013414). We included both inpatient and outpatient diagnoses, as well as cause of death records in our outcome definition, except for myocardial infarction, which was based on inpatient and cause of death records solely. To ensure specificity of the outcomes studied, only primary, and not underlying, diagnoses were considered for analyses.\n\n### Breast cancer treatment specifics\n\nWe extracted the treatment data from the Stockholm-Gotland Breast Cancer Register. As ~90% of HER-2 positive cancers were treated with trastuzumab between 2005 and 2008 in the Stockholm-Gotland region and the Swedish Prescribed Drug Register does not cover data on treatment with trastuzumab, HER-2 positivity was used as a proxy when no registry data on trastuzumab was available during this time period (30% of the HER-2 positive patients had missing information on trastuzumab). Data on adjuvant endocrine therapy was verified against the Prescribed Drug Register and categorized into tamoxifen and/or aromatase inhibitor use. Since radiotherapy to the left breast has, in particular, been implicated in heart complications, radiotherapy was categorized according to tumor laterality (left vs. right). Bilateral tumors were coded separately in this analysis. Chemotherapy was coded as anthracycline-based, anthracycline plus taxane-based, cyclophosphamide, methotrexate, and fluorouracil (CMF)-based regimens.\n\n### Covariates\n\nThe Stockholm Breast Cancer Register contains data on date of diagnosis, menopausal status at diagnosis, and type of surgery (breast conserving surgery vs. mastectomy). Tumor characteristics were also retrieved from this register, including tumor size (T), regional lymph node involvement (N), and presence of metastases (M), all from pathology records and summarized in TNM stage as defined according to the American Joint Committee on Cancer, 2010. Information on inpatient comorbidities at diagnosis was extracted through the Swedish Patient Register and summarized into the Charlson comorbidity index (CCI) score, a widely used method for classifying chronic comorbid conditions (Charlson et al., 1987). To account for the potential confounding effect from tobacco abuse, chronic pulmonary disease, and hypertension in the associations, we further identified associated diagnoses before cancer using ICD codes from the patient register (Appendix 2\u2014table 1).\n\n### Statistical analyses\n\nWe compared the risk of heart diseases in breast cancer patients with that observed in the matched cohort, using flexible parametric model (FPM) with time since index date as underlying time scale. The FPM is similar to the Cox proportional hazards model in that it provides a hazard ratio (HR) as measure of association. In our analysis, a restricted cubic spline with four internal and two boundary knots (five degrees of freedom) placed at quintiles of the event times was used in the FPM for the baseline hazard. The key advantage of FPM is that non-proportional hazards can easily be fitted by adding a second spline for the interaction with time. Considering the correlation within the matched clusters, a shared frailty term (as random effects) was incorporated into the model and the maximum (penalized) marginal likelihood method was used to estimate the regression coefficients and the variance for the frailty. Aalen-Johansen estimation was used to assess the cumulative incidences of heart diseases in breast cancer patients and matched reference individuals, while other causes of death were considered as competing events.\n\nNext, we studied the association of adjuvant breast cancer therapy with heart disease risk in breast cancer patients using Cox proportional hazards models. We adjusted these analyses for age and year of diagnosis (model 1), and additionally for menopausal status at diagnosis, cancer stage, type of surgery, CCI score, hypertension, chronic pulmonary disease, and tobacco abuse. All treatment-specific models were mutually adjusted for adjuvant therapies. Considering the possible selection bias in the administration of radiotherapy (Wadsten et al., 2018), the analysis for radiotherapy only included patients receiving radiotherapy, making a comparison between left-sided, right-sided, and both-sided breast cancer. Multiple imputation with chained equations was used to deal with the treatment categories with missing information. We replaced the missing data with 10 rounds of imputations and all the covariates were included in the imputation model. Considering the time-dependent effect of treatment, we separated the analysis according to different follow-up periods, within 10 years after breast cancer diagnosis and beyond, respectively.\n\nAll statistical analyses were performed using STATA version 15.1.\n\n## Results\n\nDescriptive characteristics of the study population are described in Table 1. The median age at breast cancer diagnosis was 59 years, with 74.3% of patients aged less than 65 years (Table 1). Approximately 40% of all patients received adjuvant chemotherapy, with anthracyline-based regimens being most frequently administered. Endocrine therapy was received by more than 80% of patients (constituting mainly of tamoxifen). Of all patients diagnosed between mid-2005 and 2008, 13% were coded as receivers of trastuzumab.\n\n**Table 1.**\n Descriptive characteristics of the study population.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristics</th>\n      <th>Overall (N = 8015)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Year of diagnosis % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2001\u20132002</td>\n      <td>25.6 (2072)</td>\n    </tr>\n    <tr>\n      <td>2003\u20132004</td>\n      <td>24.4 (1952)</td>\n    </tr>\n    <tr>\n      <td>2005\u20132006</td>\n      <td>25.8 (2064)</td>\n    </tr>\n    <tr>\n      <td>2007\u20132008</td>\n      <td>24.0 (1927)</td>\n    </tr>\n    <tr>\n      <td>Age at diagnosis % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>&lt;50 years</td>\n      <td>23.0 (1842)</td>\n    </tr>\n    <tr>\n      <td>50\u201365 years</td>\n      <td>51.3 (4111)</td>\n    </tr>\n    <tr>\n      <td>&gt;65 years</td>\n      <td>25.7 (2062)</td>\n    </tr>\n    <tr>\n      <td>Menopausal status % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Premenopausal</td>\n      <td>30.4 (2289)</td>\n    </tr>\n    <tr>\n      <td>Postmenopausal</td>\n      <td>69.6 (5251)</td>\n    </tr>\n    <tr>\n      <td>Missing (N)</td>\n      <td>475</td>\n    </tr>\n    <tr>\n      <td>Stage % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stage I</td>\n      <td>48.2 (3690)</td>\n    </tr>\n    <tr>\n      <td>Stage II</td>\n      <td>39.4 (3014)</td>\n    </tr>\n    <tr>\n      <td>Stage III</td>\n      <td>12.4 (948)</td>\n    </tr>\n    <tr>\n      <td>Missing (N)</td>\n      <td>363</td>\n    </tr>\n    <tr>\n      <td>Tumor size % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u22642 cm</td>\n      <td>25.7 (2000)</td>\n    </tr>\n    <tr>\n      <td>2\u20135 cm</td>\n      <td>44.0 (3418)</td>\n    </tr>\n    <tr>\n      <td>&gt; 5 cm</td>\n      <td>30.3 (2351)</td>\n    </tr>\n    <tr>\n      <td>Missing (N)</td>\n      <td>246</td>\n    </tr>\n    <tr>\n      <td>Comorbidity % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>None</td>\n      <td>90.1 (7222)</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>5.5 (439)</td>\n    </tr>\n    <tr>\n      <td>\u22652</td>\n      <td>4.4 (354)</td>\n    </tr>\n    <tr>\n      <td>History of hypertension</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>94.6 (7579)</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>5.4 (436)</td>\n    </tr>\n    <tr>\n      <td>History of chronic pulmonary disease or tobacco abuse</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>96.6 (7746)</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>3.4 (269)</td>\n    </tr>\n    <tr>\n      <td>Surgery % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>1.0 (79)</td>\n    </tr>\n    <tr>\n      <td>Yes, breast-conserving</td>\n      <td>60.7 (4852)</td>\n    </tr>\n    <tr>\n      <td>Yes, mastectomy</td>\n      <td>38.3 (3058)</td>\n    </tr>\n    <tr>\n      <td>Missing (N)</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>Radiotherapy % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>22.5 (1774)</td>\n    </tr>\n    <tr>\n      <td>Yes, left-sided</td>\n      <td>37.5 (2962)</td>\n    </tr>\n    <tr>\n      <td>Yes, right-sided</td>\n      <td>39.1 (3088)</td>\n    </tr>\n    <tr>\n      <td>Yes, both-sided</td>\n      <td>0.85 (67)</td>\n    </tr>\n    <tr>\n      <td>Missing (N)</td>\n      <td>124</td>\n    </tr>\n    <tr>\n      <td>Chemotherapy % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>58.5 (4604)</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>41.5 (3262)</td>\n    </tr>\n    <tr>\n      <td>Missing (N)</td>\n      <td>149</td>\n    </tr>\n    <tr>\n      <td>Hormone therapy % (N)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>18.10 (1424)</td>\n    </tr>\n    <tr>\n      <td>Yes, tamoxifen</td>\n      <td>53.0 (4247)</td>\n    </tr>\n    <tr>\n      <td>Yes, aromatase inhibitors</td>\n      <td>19.3 (1550)</td>\n    </tr>\n    <tr>\n      <td>Yes, type unknown</td>\n      <td>8.1 (645)</td>\n    </tr>\n    <tr>\n      <td>Missing (N)</td>\n      <td>149</td>\n    </tr>\n    <tr>\n      <td>Trastuzumab therapy % (N) *</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>87.3 (2180)</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>12.7 (316)</td>\n    </tr>\n    <tr>\n      <td>Missing (N)</td>\n      <td>1497</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Missingness on individual variables is less than 5%, except for menopausal status (5.9%, N = 488). Treatment-specific analysis of trastuzumab was restricted to patients diagnosed between 2005 and 2008 (missingness = 37.5%, N = 1497)._\n\nOver a median follow-up of 10.8 years (interquartile range = 6.5 years), arrhythmias were the most frequently reported heart disease (n = 570), followed by ischemic heart disease (n = 307) and heart failure (n = 243). The cumulative incidence of arrhythmias, ischemic heart disease, and heart failure in the breast cancer patients cohort was 11.0%, 5.7%, and 4.8% after 15 years of follow-up, while the cumulative incidence was 8.2%, 5.9%, and 3.8% in the matched cohort, respectively (Appendix 2\u2014table 2 and Appendix 3\u2014figure 1).\n\nFigure 1 shows the time-dependent risks of heart diseases in breast cancer patients compared to the reference population. A short-term increase in risks of arrhythmia and heart failure was found in breast cancer patients (Table 2, Figure 1, HR at first year for arrhythmia = 2.14; 95% CI = 1.63\u20132.81, for heart failure = 2.71; 95% CI = 1.70\u20134.33, respectively). An elevated risk of ischemic heart disease was also observed in the first year after diagnosis (HR = 1.45; 95% CI = 1.03\u20132.04), followed by a decline with increasing follow-up time. Interestingly, increased risks for arrhythmia and heart failure were noted beyond 10 years (Table 2, Figure 1, HR for arrhythmia = 1.42; 95% CI = 1.21\u20131.67; HR for heart failure = 1.28; 95% CI = 1.03\u20131.59).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71562/elife-71562-fig1-v2.jpg)\n\n**Figure 1.:** In all models, time since index date was the underlying time scale and a restricted cubic spline with four internal and two boundary knots (five degrees of freedom) placed at quintiles of the event times was used for the baseline hazard. Time-dependent effects were modelled by adding interaction terms with time using a second spline with three degrees of freedom.\n\n**Table 2.**\n Hazard ratios for heart diseases in breast cancer patients compared to the matched cohort.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Arrhythmia</th>\n      <th></th>\n      <th>Heart failure</th>\n      <th></th>\n      <th>Ischemic heart disease</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>No.</th>\n      <th>HR (95% CI)</th>\n      <th>No.</th>\n      <th>HR (95% CI)</th>\n      <th>No.</th>\n      <th>HR (95% CI)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Time since diagnosis</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>&lt;1 year</td>\n      <td>64</td>\n      <td>2.14 (1.63\u20132.81)</td>\n      <td>22</td>\n      <td>2.71 (1.70\u20134.33)</td>\n      <td>38</td>\n      <td>1.45 (1.03\u20132.04)</td>\n    </tr>\n    <tr>\n      <td>1\u20132 years</td>\n      <td>34</td>\n      <td>1.08 (0.76\u20131.53)</td>\n      <td>19</td>\n      <td>2.07 (1.27\u20133.37)</td>\n      <td>34</td>\n      <td>1.12 (0.79\u20131.61)</td>\n    </tr>\n    <tr>\n      <td>2\u20135 years</td>\n      <td>107</td>\n      <td>1.07 (0.88\u20131.30)</td>\n      <td>38</td>\n      <td>1.14 (0.82\u20131.59)</td>\n      <td>72</td>\n      <td>0.84 (0.66\u20131.07)</td>\n    </tr>\n    <tr>\n      <td>5\u201310 years</td>\n      <td>204</td>\n      <td>1.13 (0.98\u20131.30)</td>\n      <td>78</td>\n      <td>1.02 (0.81\u20131.29)</td>\n      <td>104</td>\n      <td>0.82 (0.67\u20131.00)</td>\n    </tr>\n    <tr>\n      <td>10\u201317 years</td>\n      <td>161</td>\n      <td>1.42 (1.21\u20131.67)</td>\n      <td>86</td>\n      <td>1.28 (1.03\u20131.59)</td>\n      <td>59</td>\n      <td>0.79 (0.61\u20131.03)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Abbreviations: No. = number of cases. HR = hazard ratio. CI = confidence interval. The HRs are estimated using flexible parametric model and conditioned on matching criteria (year of birth). In all models, time since index date was the underlying time scale and a restricted cubic spline with four internal and two boundary knots (five degrees of freedom) placed at quintiles of the event times was used for the baseline hazard. All analyses were stratified by time since index date. Statistically significant results with p-value<0.05 are bolded._\n\nTable 3 presents the HRs in breast cancer patients by adjuvant therapy. Patients treated with chemotherapy and trastuzumab had an increased risk of heart failure compared to patients not receiving these treatments (for patients receiving anthracyclines-based chemotherapy, HR = 1.74, 95% CI = 1.20\u20132.52; for patients receiving trastuzumab, HR = 2.34, 95% CI = 1.05\u20135.22) (Table 3). The risk of heart failure in patients receiving anthracyclines potentially persisted for 10 years beyond the diagnosis of breast cancer (HR = 1.66, 95% CI = 0.86\u20133.19, Appendix 2\u2014table 3). Receipt of aromatase inhibitors was associated with risk of ischemic heart disease (HR = 1.52, 95% CI = 1.03\u20132.26 compared to patients without hormonal therapy), but not with risk of heart failure or arrhythmias (Table 3). A direct comparison between left-sided and right-sided radiotherapy showed no evidence of an association of radiotherapy with heart disease except for a somewhat increased risk of ischemic heart disease in women with left-sided breast cancer, particularly after 10 years after cancer diagnosis, although not statistically significant (Appendix 2\u2014table 3, HR = 1.16, 95% CI = 0.89\u20131.51; HR for the risk beyond 10 years = 1.29, 95% CI = 0.70\u20132.37).\n\n**Table 3.**\n Hazard ratios for heart diseases in breast cancer patients by different adjuvant therapies.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Total No.</th>\n      <th colspan=\"3\">HR (95% CI) for arrhythmia</th>\n      <th colspan=\"3\">HR (95% CI) for heart failure</th>\n      <th colspan=\"3\">HR (95% CI) for ischemic heart disease</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Treatment variables</td>\n      <td></td>\n      <td>N</td>\n      <td>Model 1</td>\n      <td>Model 2</td>\n      <td>N</td>\n      <td>Model 1</td>\n      <td>Model 2</td>\n      <td>N</td>\n      <td>Model 1</td>\n      <td>Model 2</td>\n    </tr>\n    <tr>\n      <td>Radiotherapy</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Right-sided</td>\n      <td>2948</td>\n      <td>216</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n      <td>80</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n      <td>99</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n    </tr>\n    <tr>\n      <td>Left-sided</td>\n      <td>3075</td>\n      <td>213</td>\n      <td>0.93 (0.77\u20131.13)</td>\n      <td>0.93 (0.77\u20131.13)</td>\n      <td>87</td>\n      <td>1.03 (0.76\u20131.40)</td>\n      <td>1.07 (0.79\u20131.45)</td>\n      <td>119</td>\n      <td>1.14 (0.87\u20131.49)</td>\n      <td>1.16 (0.89\u20131.51)</td>\n    </tr>\n    <tr>\n      <td>Both-sided</td>\n      <td>67</td>\n      <td>4</td>\n      <td>0.65 (0.24\u20131.76)</td>\n      <td>0.63 (0.23\u20131.70)</td>\n      <td>4</td>\n      <td>1.81 (0.66\u20134.95)</td>\n      <td>1.75 (0.63\u20134.85)</td>\n      <td>3</td>\n      <td>1.08 (0.34\u20133.40)</td>\n      <td>0.98 (0.31\u20133.11)</td>\n    </tr>\n    <tr>\n      <td>Chemotherapy</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No.</td>\n      <td>4604</td>\n      <td>376</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n      <td>133</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n      <td>207</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n    </tr>\n    <tr>\n      <td>Anthracyclines-based</td>\n      <td>1426</td>\n      <td>83</td>\n      <td>1.18 (0.97\u20131.45)</td>\n      <td>1.08 (0.84\u20131.39)</td>\n      <td>51</td>\n      <td>2.30 (1.70\u20133.10)</td>\n      <td>1.74 (1.20\u20132.52)</td>\n      <td>44</td>\n      <td>1.31 (0.99\u20131.72)</td>\n      <td>1.29 (0.92\u20131.81)</td>\n    </tr>\n    <tr>\n      <td>Anthracyclines + taxanes</td>\n      <td>286</td>\n      <td>10</td>\n      <td>1.15 (0.63\u20132.10)</td>\n      <td>1.01 (0.53\u20131.92)</td>\n      <td>13</td>\n      <td>4.71 (2.57\u20138.63)</td>\n      <td>3.09 (1.55\u20136.14)</td>\n      <td>6</td>\n      <td>1.36 (0.63\u20132.93)</td>\n      <td>1.29 (0.57\u20132.95)</td>\n    </tr>\n    <tr>\n      <td>CMF</td>\n      <td>96</td>\n      <td>6</td>\n      <td>1.08 (0.55\u20132.14)</td>\n      <td>1.04 (0.51\u20132.12)</td>\n      <td>3</td>\n      <td>1.21 (0.36\u20134.00)</td>\n      <td>0.90 (0.27\u20133.04)</td>\n      <td>2</td>\n      <td>1.11 (0.49\u20132.51)</td>\n      <td>1.04 (0.46\u20132.36)</td>\n    </tr>\n    <tr>\n      <td>Hormone therapy</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No.</td>\n      <td>1424</td>\n      <td>89</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n      <td>49</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n      <td>43</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n    </tr>\n    <tr>\n      <td>Tamoxifen</td>\n      <td>4247</td>\n      <td>298</td>\n      <td>0.91 (0.72\u20131.15)</td>\n      <td>0.95 (0.74\u20131.23)</td>\n      <td>99</td>\n      <td>0.57 (0.41\u20130.79)</td>\n      <td>0.84 (0.58\u20131.20)</td>\n      <td>142</td>\n      <td>0.91 (0.65\u20131.27)</td>\n      <td>1.03 (0.71\u20131.48)</td>\n    </tr>\n    <tr>\n      <td>Aromatase inhibitors</td>\n      <td>1550</td>\n      <td>119</td>\n      <td>1.02 (0.77\u20131.35)</td>\n      <td>0.99 (0.74\u20131.32)</td>\n      <td>61</td>\n      <td>1.05 (0.71\u20131.56)</td>\n      <td>1.08 (0.72\u20131.61)</td>\n      <td>85</td>\n      <td>1.53 (1.05\u20132.24)</td>\n      <td>1.52 (1.03\u20132.26)</td>\n    </tr>\n    <tr>\n      <td>Trastuzumab*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No.</td>\n      <td>2137</td>\n      <td>126</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n      <td>38</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n      <td>60</td>\n      <td>REF (1.00)</td>\n      <td>REF (1.00)</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>304</td>\n      <td>17</td>\n      <td>1.15 (0.70\u20131.92)</td>\n      <td>1.50 (0.79\u20132.83)</td>\n      <td>13</td>\n      <td>3.05 (1.62\u20135.76)</td>\n      <td>2.34 (1.05\u20135.22)</td>\n      <td>12</td>\n      <td>1.75 (0.94\u20133.27)</td>\n      <td>1.83 (0.85\u20133.96)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Total No. refers to the total number of patients. N events refers to the number of observed cases. HR = hazard ratio; CI = confidence interval; CMF = cyclophosphamide, methotrexate, and fluorouracil; REF: reference women in the matched controls from the general population. Hazard ratios are estimated from Cox proportional hazards models with time since diagnosis as underlying time scale. Hazard ratios for model 1 are adjusted for age and calendar period. Hazard ratios for model 2 are multivariable adjusted including age at diagnosis, year of diagnosis, menopausal status, Charlson comorbidity index, clinical stage, tumor size, type of surgery, history of hypertension, chronic pulmonary disease and tobacco abuse, and all treatment variables listed in the table.*Treatment-specific analysis of trastuzumab was restricted to patients diagnosed between 2005 and 2008._\n\n## Discussion\n\nIn a population-based setting, we demonstrated that the incidence of heart disease in breast cancer patients was significantly higher than the incidence observed in matched reference individuals from the general population. The risks of arrhythmia and heart failure were increased even beyond 10 years after diagnosis. Receipt of trastuzumab, as well as administration of anthracycline\u00b1taxane-based regimens, was independently associated with an increased risk of heart failure, while receipt of aromatase inhibitor therapy was associated with an increased risk of ischemic heart disease.\n\nWe found an increased risk of arrhythmia and heart failure in breast cancer patients as compared with the matched reference individuals from the general population, which is similar to the risk of heart failure reported by a previous Dutch study (Hooning et al., 2007), indicating the generalizability of our findings to European countries. However, as patients in our cohort were aged between 25 and 75 years, caution is needed when generalizing these findings to older patients, who may have more comorbidities.\n\nAnalysis by time since diagnosis revealed long-term increased risks of arrhythmia and heart failure following breast cancer diagnosis, suggesting that a longitudinal cardiac monitoring schedule might be helpful to improve cardiac health in breast cancer patients. As the long-term risk was observed for heart failure but not ischemic heart disease, the cardiotoxic effect of chemotherapy might be mainly on the myocardium mediated by the effect of DNA double-strand breaks through topoisomerase (Top) 2\u03b2, but not the cardiac vessels (Lyu et al., 2007). The finding that risk of ischemic heart disease in breast cancer patients was only transiently elevated after diagnosis is not unexpected, considering the emotional distress of dealing with a new cancer diagnosis in the patients, which may lead to higher short-term rates of ischemic heart disease (Fang et al., 2012; Schoormans et al., 2016). In addition, surgery after breast cancer diagnosis might increase the risk of arterial thromboembolism (Gervaso et al., 2021), which includes myocardial infarction, and the effect appears to attenuate 1 year after diagnosis (Navi et al., 2017; Navi et al., 2019). The long-term lower risk of ischemic heart disease in breast cancer patients compared to age-matched women might be explained by the opposite role of reproductive factors in breast cancer and ischemic heart disease. Women with younger age at menarche and older age at menopause were associated with increased risk of breast cancer, while decreased risk of ischemic heart disease were found among these women (Collaborative Group on Hormonal Factors in Breast, 2012; Okoth et al., 2020).\n\nThe findings that administration of anthracycline\u00b1taxanes, as well as trastuzumab, is associated with increased risks of heart failure are in agreement with previous observational studies (Bowles et al., 2012; Chavez-MacGregor et al., 2013; Doyle et al., 2005; Du et al., 2009; Goldhar et al., 2016; Thavendiranathan et al., 2016) and clinical trials (Chen et al., 2011) in specific subgroups of breast cancer patients. While (poly)chemotherapy is thought to lead to heart failure through a plethora of mechanisms that damage cardiomyocytes (Yeh and Bickford, 2009), taxanes may also interrupt the metabolism and excretion of anthracyclines, hence accentuating their toxicity (Bird and Swain, 2008). The cardiotoxic effect of trastuzumab meanwhile may be explained by inhibition of the HER-2 receptors in myocytes, which activates the mitochondrial apoptosis pathway through modulation of Bcl-xL and -xS, which regulates cell development and growth (Grazette et al., 2004; Yeh and Bickford, 2009). As there is no cardiac monitoring for chemotherapy in routine clinical practice and cardiac assessment is only performed prior to and during the treatment period for HER-2 positive patients in Sweden, a longer-term cardiac monitoring program might be helpful for these patients.\n\nPopulation-based estimates of incidence of ischemic heart disease following treatment with aromatase inhibitors have not been extensively reported in the literature (Matthews et al., 2018). Abdel-Qadir et al. also found an increased risk of myocardial infarction in patients treated with aromatase inhibitors, as compared to those treated with tamoxifen (Abdel-Qadir et al., 2016). It has been posited that this apparent increase in risk of ischemic heart disease might in fact be attributed to reduced risk of heart disease following tamoxifen treatment (Hackshaw et al., 2011; Rosell et al., 2013). Nonetheless, given that in the present study, an increased risk of ischemic heart disease was observed in patients treated with aromatase inhibitors compared to patients not receiving hormone treatment, the protective effect from tamoxifen could not fully explain the previously reported risk increase of ischemic heart disease in patients treated with aromatase inhibitors.\n\nWhile several previous studies have shown that radiotherapy for breast cancer increase the risk of ischemic heart disease and heart failure (Darby et al., 2013; Harris et al., 2006; Pinder et al., 2007), some studies, particularly those including patients diagnosed in recent decades, have not seen such an increase (Boekel et al., 2014; Wadsten et al., 2018; Wennstig et al., 2020). Indeed, the time trends of heart dose improvement and the use of modern heart dose sparing techniques, together with individualized doses of therapy, may result in lower doses of radiation to the heart (Taylor et al., 2017; Taylor and Kirby, 2015; Taylor et al., 2009). Another reason for inconsistent results in the literature could be that patients with a left-sided breast cancer who are susceptible to cardiovascular diseases are less likely to be selected for radiotherapy (Darby et al., 2013; Taylor and Kirby, 2015). Therefore, in our study, we compared risk of ischemic heart disease in patients treated with radiotherapy for left-sided to those treated for right-sided breast cancer. We found slightly increased non-significant risk of ischemic heart disease, this risk appeared (as expected) more pronounced in the follow-up period after 10 years. Overall, our results indicate only small risk of heart disease due to radiotherapy in women treated in Sweden after year 2000. Further studies with detailed information on the mean heart dose of radiation or total cumulative radiation dose administered are therefore needed to confirm and provide more context to this finding.\n\nA major strength of our study is that we were able to investigate risks of heart disease by time since diagnosis and adjuvant treatment. The risk estimates presented in this study therefore provide an insight into the short-term and long-term effects of adjuvant breast cancer therapy in routine clinical practice. Notably, all breast cancer patients were followed-up for a relatively long period. The population-based nature of the study and linkage to registry-based data further minimized the risk of selection and information biases.\n\nWe acknowledge several limitations. The Swedish Patient Register has high validity for heart failure, arrhythmia, and ischemic heart disease (with positive predictive value between 88% and 98%) (Hammar et al., 2001; Ludvigsson et al., 2011), by analyzing main diagnoses only. However, misclassification of heart diseases may still have occurred. In addition, pre-existing comorbidities extracted from the patient register may not include those patients with mild symptoms. Second, we did not have complete data on trastuzumab during the study period and relied on HER-2 status as proxy, which may have resulted in some misclassification. The numbers of heart disease after treatment with trastuzumab and taxane were also relatively small in our study, and might have resulted in limited power or chance finding when identifying an association between trastuzumab/taxane and the relevant cardiac events. Besides, the Stockholm-Gotland Breast Cancer Register only records intended treatment, not whether patients actually received these therapies. However, the agreement between the intended and administered breast cancer treatment in Sweden has been previously reported to be about 95% (L\u00f6fgren et al., 2019). Finally, it should be noted that cancer patients are subject to increased medical surveillance, especially in the initial period after diagnosis. This could explain the increased rates of heart disease events especially within the first year of follow-up, although psychological distress following recent diagnosis with cancer represents an alternative plausible explanation for this observation (Fang et al., 2012; Schoormans et al., 2016).\n\nThrough this study, we demonstrate that compared to the general population, women with breast cancer have increased risks of heart disease including heart failure and arrhythmia. The short-term risk of ischemic heart disease diminished after 1 year post diagnosis. The increased risk of arrhythmia and heart failure however appears to persist long-term, beyond the first decade after diagnosis. Administration of systemic adjuvant therapies is associated with risks of heart disease. The risk estimates observed in this study may serve as reference to aid adjuvant therapy decision-making and patient counselling in oncology practices.\n",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "310f1bb5-be1f-4385-aea6-83f24ecbe45d",
+      "submission_id": "fd52d81a-bf97-442a-963f-72bda9324440",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wadih Arap, Rutgers Cancer Institute of New Jersey United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71562.sa0](https://doi.org/10.7554/eLife.71562.sa0)\n\nWe feel that your work will be of interest to breast medical oncologists, cardiologists, and primary care providers who treat patients with breast cancer. We commend you for this study, which achieves its goal of identifying the incidence and hazard ratio of cardio-toxicity associated with breast cancer treatment within a general breast cancer population. The international nature of your collaborative study along with its large patient cohort size and long horizontal follow up are quite attractive features in solidifying previous findings and discovering future areas of exploration.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wadih Arap, Rutgers Cancer Institute of New Jersey United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71562.sa1](https://doi.org/10.7554/eLife.71562.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you very much for submitting your work to eLife. Your article has been reviewed by 3 peer reviewers and the evaluation has been overseen by Eduardo Franco as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Philip Boonstra (Reviewer #3).\n\nAs you will see in the attached reviews, while the Referees generally recognized the merits of your draft, several technical points of concern in your methodology and findings were also highlighted. Thus, we remain interested potentially publishing an extensively revised version of your manuscript. However, we would like you to specifically address the following perceived weaknesses of your work, in particular the biostatistical methodology, as follows:\n\nEssential revisions:\n\n1. The title of the draft suggests the risk of heart disease is associated with breast cancer itself, but the content of the manuscript and conclusions emphasize the risk based upon treatment effects. Please, modify the title to reflect the risk of breast cancer therapy.\n\n2. For Table 1: In addition to Charlson Comorbidity Index (CCI score), please include CVD risk factors (e.g., HTN, HLD, DM2, BMI, tobacco-smoking) to help readers understand the baseline cardiovascular risk of your patients. This criticism assumes importance as these risk factors were used in the risk models, and independent of cancer treatment are known to be associated with risk of arrhythmias, ischemic heart disease, and congestive heart failure.\n\n3. For Table 2: Please add the word \"Ratio\" i.e. \"Hazard ratio for heart diseases\" in the title.\n\n4. The finding of no significant increased risk of ischemic heart disease after left breast radiation is quite interesting. This provocative result would become more powerful (and better supported) if estimates of mean heart dose of radiation or even total cumulative radiation dose administered were included. If those may not be available from the registry data, please discuss this potentially counterintuitive finding.\n\n5. Regarding hypotheses made in the Discussion section: The authors appropriately provide citations regarding early increased risk of ischemic heart disease due to emotional distress, however there are several other factors that could potentially increase this risk that warrant consideration, namely: surgery for breast cancer (98.9% of patients in this cohort) typically takes place within the first year of diagnosis and may increase risk of arrhythmia, ischemic event; patients with cancer are at increased risk of arterial thromboembolism (ATE) which includes myocardial infarction 150 days prior to cancer diagnosis and this risk appears to attenuate 1 year after diagnosis. (Navi, B. B., et al., (2017). \"Risk of Arterial Thromboembolism in Patients with Cancer.\" J Am Coll Cardiol 70(8): 926-938) (Navi, B. B., et al., (2019). \"Arterial thromboembolic events preceding the diagnosis of cancer in older persons.\" Blood 133(8): 781-789.)\n\n6. Please discuss the fact that while the results are generally interesting and hypothesis-generating, the patient population is overall young and healthy (median age 59, majority CCI = 0); thus, one should be cautious to extrapolate results to guide individual therapy decisions in clinical practice.\n\n7. It is also unclear whether there was any protocol in place for cardiac monitoring for patients receiving cardiotoxic chemotherapy or Anti Her2neu agents. Please clarify it in the revised draft, either way.\n\n8. With regard to the matched analysis of time to heart disease diagnosis: For the breast cancer cohort, were patients with a diagnosis of heart disease prior to cancer diagnosis included in the analysis? If so, how was the event (which precedes time = 0) incorporated into the analysis? If not, please make sure to make note of this important restriction. Please, keep in mind that Referee 3 clearly favors the latter approach.\n\n9. Moreover, for the matched cohort: What is time = 0 for these persons? i.e. how does one interpret \"Time since diagnosis\" on Figure 1 for a patient who has not been diagnosed with breast cancer?\n\n10. Finally, for the matched cohort: How was the matching incorporated into the FPM? Presumably there should be a frailty term of some sort to indicate the matched groups, within which there is expected to be correlation.\n\n11. Kaplan-Meier curves were used to estimate the cumulative incidence of heart disease. How was death of the patient prior to diagnosis of heart disease handled? Of note, Referee #3 argues that Kaplan-Meier is not the best analytical approach here because Kaplan-Meier tends to overestimate the event rate when competing events are counted as censoring. In this setting, Referee #3 favors an Aaalen-Johansen-type estimator, which treats death as a competing event. For instance, please see: https://pubmed.ncbi.nlm.nih.gov/10204198/\n\n12. Please address and correct: The sentence \"Missing indicators were included for the analysis of these covariates in the model\" and the results in Table 3 suggest that some missing values were analyzed \"as is\", meaning that \"missingness\" was used as a category itself. This, of course, is not desirable and there exists methodology+software for more appropriately handling these data, e.g. multiple imputation with chained equations. For example, how does one interpret that \"unknown chemotherapy\" status is positively associated with heart failure but less so than anthracycline-based chemotherapy.\n\n13. Please address and correct: The reported HRs (at the top of p. 10) seem incongruous with the FPM model demonstrated in Figure 1, since there is clearly a non-linear relationship between the hazard and the outcome.\n\n14. Please address and correct: It seems unlikely that breast cancer diagnosis could ever be \"protective\" for ischemic heart disease. A more constrained model that does not allow for the possibility of HR < 1 could provide a more sensible estimate of this time-dependent HR.\n\n15. Please address and correct: As an alternative to a four-category radiotherapy variable, which (as the authors note) requires assuming that bilateral radiotherapy is equivalent to left-sided radiotherapy, it would seem sensible to create two separate binary variables (left, y vs. no and right, y vs. no).\n\n16. Please double-check rows two and three of the first column of Table 2. One would expect the HRs for disease history (No, 1.28 and Yes, 1.30) to fall on either side of the overall HR (1.27), but they don't: Is this Simpson's paradox or a mistake or something else? Please verify and clarify.\n\nReviewer #1 (Recommendations for the authors):\n\nThank you for the opportunity to review this manuscript.\n\n\u2013 The title of the paper suggests the risk of heart disease is associated with breast cancer itself, but the content of the manuscript and conclusions emphasize the risk based upon treatment effects. I would consider changing the title to reflect the risk of breast cancer therapy.\n\n\u2013 For Table 1: In addition to Charlson Comorbidity Index (CCI score), would also include CVD risk factors (HTN, HLD, DM2, BMI, tobacco smoking) to better understand patients' baseline cardiovascular risk, particularly as these risk factors were used in the risk models, and independent of cancer treatment are known to be associated with risk of arrhythmias, ischemic heart disease, and congestive heart failure.\n\n\u2013 For Table 2: Would add the word \"Ratio\" ie \"Hazard ratio for heart diseases\" in the title.\n\n\u2013 The finding of no significant increased risk of ischemic heart disease after left breast radiation is quite interesting. This finding would be more powerful and better supported if estimates of mean heart dose of radiation or even total cumulative radiation dose administered was included (which may not be possible from the available registry data).\n\n\u2013 Regarding hypotheses made in the Discussion section: the authors appropriately provide citations regarding early increased risk of ischemic heart disease due to emotional distress, however there are several other factors that could potentially increase this risk that warrant consideration: surgery for breast cancer (98.9% of patients in this cohort) typically takes place within the first year of diagnosis and may increase risk of arrhythmia, ischemic event; patients with cancer are at increased risk of arterial thromboembolism (ATE) which includes myocardial infarction 150 days prior to cancer diagnosis and this risk appears to attenuate 1 year after diagnosis. (Navi, B. B., et al., (2017). \"Risk of Arterial Thromboembolism in Patients With Cancer.\" J Am Coll Cardiol 70(8): 926-938) (Navi, B. B., et al., (2019). \"Arterial thromboembolic events preceding the diagnosis of cancer in older persons.\" Blood 133(8): 781-789.)\n\n\u2013 While the results are interesting and hypothesis generating, the patient population is overall young and healthy (median age 59, majority CCI = 0) therefore would be cautious to recommend extrapolating results to guide individual therapy decisions in clinical practice.\n\nReviewer #3 (Recommendations for the authors):\n\nAs an alternative to a four-category radiotherapy variable, which as the authors note requires assuming that bilateral radiotherapy is equivalent to leftsided radiotherapy, it would seem sensible to create two separate binary variables (left, y vs. no and right, y vs. no).\n\nCan the authors double check rows two and three of the first column of Table 2? Intuitively, I would expect the HRs for disease history (No, 1.28 and Yes, 1.30) to fall on either side of the overall HR (1.27), but they don't. Is this Simpsons paradox or a mistake or something else?\n",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f04f46e9-6a3a-475a-a607-a2d5ddab456c",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C1",
+      "claim": "The use of adjuvant systemic therapies at least halves the risk of dying from breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of adjuvant systemic therapies at least halves the risk of dying from breast cancer (Early Breast Cancer Trialists' Collaborative Group (EBCTCG), 2005; Dowsett et al., 2015; Goldvaser et al., 2019; Gray et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "fd98e531-7f1a-42fc-945f-062542b88a7f",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C2",
+      "claim": "80% of breast cancer patients survive for at least 10 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Nowadays, 80% of the breast cancer patients survive for at least 10 years and many will become long-term survivors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement presented as established fact in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "888ea77b-0366-4588-aad6-c5e0f9b323e6",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C3",
+      "claim": "Use of common (neo-)adjuvant therapies for breast cancer has been associated with an increased risk of heart diseases including heart failure, arrhythmias, and ischemic heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of common (neo-)adjuvant therapies for breast cancer has been associated with an increased risk of heart diseases including heart failure, arrhythmias, and ischemic heart disease (Darby et al., 2013; Doyle et al., 2005; Harris et al., 2006; Hooning et al., 2007; Pinder et al., 2007; Taylor et al., 2017; Yeh and Bickford, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "5f43989b-ed4c-4b0d-acb4-4af4f5c1cf9f",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C4",
+      "claim": "Some studies have found increased incidence of and mortality due to heart disease in women subjected to radiotherapy techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the benefits of radiotherapy far outweigh the risk of heart diseases, some studies have found increased incidence of and mortality due to heart disease in women subjected to radiotherapy techniques (Darby et al., 2013; Taylor et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "34d602c6-db5a-440a-aeaa-d707c33d67b8",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C5",
+      "claim": "Knowledge on cardiotoxic effects of anthracycline-based chemotherapy regimens have led to lowering of doses and less use of bolus injections to reduce peak concentrations of anthracyclines.",
+      "claim_type": "EXPLICIT",
+      "source": "Knowledge on cardiotoxic effects of anthracycline-based chemotherapy regimens have led to lowering of doses and less use of bolus injections to reduce peak concentrations of anthracyclines (Foukakis et al., 2016), but it is estimated that the risk of heart failure associated with anthracyclines remains increased for standard low-dose group as compared to non-users (Chung et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "8a261253-abae-4106-896d-9347c1a9ab68",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C6",
+      "claim": "The risk of heart failure associated with anthracyclines remains increased for standard low-dose group as compared to non-users.",
+      "claim_type": "EXPLICIT",
+      "source": "Knowledge on cardiotoxic effects of anthracycline-based chemotherapy regimens have led to lowering of doses and less use of bolus injections to reduce peak concentrations of anthracyclines (Foukakis et al., 2016), but it is estimated that the risk of heart failure associated with anthracyclines remains increased for standard low-dose group as compared to non-users (Chung et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "ee354e9c-89f4-49c2-a015-3d6d00fa8c8d",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C7",
+      "claim": "Trastuzumab has been shown to reduce the risk of breast cancer mortality at 11 years of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "While trastuzumab has been shown to reduce the risk of breast cancer mortality at 11 years of follow-up (Cameron et al., 2017), evidence on its cardiotoxicity is conflicting (Bowles et al., 2012; Papakonstantinou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "6913456b-a2e0-43dd-9e81-416154bb884d",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C8",
+      "claim": "Evidence on trastuzumab's cardiotoxicity is conflicting.",
+      "claim_type": "EXPLICIT",
+      "source": "While trastuzumab has been shown to reduce the risk of breast cancer mortality at 11 years of follow-up (Cameron et al., 2017), evidence on its cardiotoxicity is conflicting (Bowles et al., 2012; Papakonstantinou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research showing conflicting results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "ff5a8048-d853-4bd4-b2b6-2aecb9e3cba5",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C9",
+      "claim": "Use of aromatase inhibitors in women with hormone receptor positive breast cancer may increase the risk of heart failure, compared to tamoxifen.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent evidence suggests that use of aromatase inhibitors in women with hormone receptor positive breast cancer may increase the risk of heart failure, compared to tamoxifen (Khosrow-Khavar et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "b4a2a13e-8cc4-4ebd-b14c-96689059d128",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C10",
+      "claim": "The study included 8015 breast cancer patients diagnosed from 2001 to 2008 in the Stockholm-Gotland region and followed up until 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "A register-based matched cohort study was conducted including 8015 breast cancer patients diagnosed from 2001 to 2008 in the Stockholm-Gotland region and followed up until 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the study population and design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "d90b34f7-4ff7-4282-ba34-ea440328fc28",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C11",
+      "claim": "Hazard ratios within the first year of diagnosis were 2.14 (95% CI = 1.63\u20132.81) for arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "Hazard ratios (HRs) within the first year of diagnosis were 2.14 (95% CI = 1.63\u20132.81) for arrhythmia and 2.71 (95% CI = 1.70\u20134.33) for heart failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "9f5089d3-ccf8-4d2a-9de0-49d275b5edc4",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C12",
+      "claim": "Hazard ratios within the first year of diagnosis were 2.71 (95% CI = 1.70\u20134.33) for heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Hazard ratios (HRs) within the first year of diagnosis were 2.14 (95% CI = 1.63\u20132.81) for arrhythmia and 2.71 (95% CI = 1.70\u20134.33) for heart failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "ea7bc00a-b64d-4b52-8c9a-612dc6f8f530",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C13",
+      "claim": "HR more than 10 years following diagnosis was 1.42 (95% CI = 1.21\u20131.67) for arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "HR more than 10 years following diagnosis was 1.42 (95% CI = 1.21\u20131.67) for arrhythmia and 1.28 (95% CI = 1.03\u20131.59) for heart failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "4a4c8882-c7c0-4046-93d9-cac4fa37df66",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C14",
+      "claim": "HR more than 10 years following diagnosis was 1.28 (95% CI = 1.03\u20131.59) for heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "HR more than 10 years following diagnosis was 1.42 (95% CI = 1.21\u20131.67) for arrhythmia and 1.28 (95% CI = 1.03\u20131.59) for heart failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "236553be-44ce-4a20-95aa-6c748620278b",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C15",
+      "claim": "The risk for ischemic heart disease was significantly increased only during the first year after diagnosis (HR = 1.45, 95% CI = 1.03\u20132.04).",
+      "claim_type": "EXPLICIT",
+      "source": "The risk for ischemic heart disease was significantly increased only during the first year after diagnosis (HR = 1.45, 95% CI = 1.03\u20132.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "5521e671-935a-4c05-b6af-5fcb5961674f",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C16",
+      "claim": "Trastuzumab and anthracyclines were associated with increased risk of heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Trastuzumab and anthracyclines were associated with increased risk of heart failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "12d802a2-58d1-4f7c-9a22-87f4e3bfa598",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C17",
+      "claim": "Aromatase inhibitors, but not tamoxifen, were associated with risk of ischemic heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Aromatase inhibitors, but not tamoxifen, were associated with risk of ischemic heart disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "d6895bef-66d8-4606-bed6-1c3f60259b27",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C18",
+      "claim": "No increased risk of heart disease was identified following locoregional radiotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "No increased risk of heart disease was identified following locoregional radiotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "216583c7-578b-4691-80cc-043e2622b011",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C19",
+      "claim": "The Stockholm-Gotland Breast Cancer Register has about 99% completeness.",
+      "claim_type": "EXPLICIT",
+      "source": "The Stockholm-Gotland Breast Cancer Register has about 99% completeness and provides detailed information on tumor and treatment characteristics, as well as routine follow-up on locoregional recurrences and distant metastases (Colzani et al., 2011; Wigertz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research describing the register",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "2c7af7a3-1148-4cff-b786-ec4adc2255d9",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C20",
+      "claim": "The study included all patients diagnosed with non-metastatic breast cancer (stages I\u2013III) and without prior diagnosis of heart disease at age 25\u201375 years (N = 8015).",
+      "claim_type": "EXPLICIT",
+      "source": "We included all patients diagnosed with non-metastatic breast cancer (stages I\u2013III) and without prior diagnosis of heart disease at age 25\u201375 years (N = 8015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of study inclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "76c8773a-0e32-4197-b998-a7702d186667",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C21",
+      "claim": "Up to 10 women from the general female population in Stockholm-Gotland region were randomly sampled and matched on year of birth as reference individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "To compare the risk of heart diseases after breast cancer diagnosis, we randomly sampled up to 10 women from the general female population in Stockholm-Gotland region matched on year of birth (Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "f25d0a20-b2fc-4ff2-850f-0276e0e0e208",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C22",
+      "claim": "~90% of HER-2 positive cancers were treated with trastuzumab between 2005 and 2008 in the Stockholm-Gotland region.",
+      "claim_type": "EXPLICIT",
+      "source": "As ~90% of HER-2 positive cancers were treated with trastuzumab between 2005 and 2008 in the Stockholm-Gotland region and the Swedish Prescribed Drug Register does not cover data on treatment with trastuzumab, HER-2 positivity was used as a proxy when no registry data on trastuzumab was available during this time period (30% of the HER-2 positive patients had missing information on trastuzumab).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about treatment patterns in the study region",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "f5e6de2e-fa3f-4936-a7b1-d723f148c7d2",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C23",
+      "claim": "30% of the HER-2 positive patients had missing information on trastuzumab.",
+      "claim_type": "EXPLICIT",
+      "source": "As ~90% of HER-2 positive cancers were treated with trastuzumab between 2005 and 2008 in the Stockholm-Gotland region and the Swedish Prescribed Drug Register does not cover data on treatment with trastuzumab, HER-2 positivity was used as a proxy when no registry data on trastuzumab was available during this time period (30% of the HER-2 positive patients had missing information on trastuzumab).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data completeness in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "fe2bc603-9a2c-4703-b8ef-c2da4dc4a746",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C24",
+      "claim": "The median age at breast cancer diagnosis was 59 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The median age at breast cancer diagnosis was 59 years, with 74.3% of patients aged less than 65 years (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "e1383886-f9a7-4ed8-8eb4-9a0615795067",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C25",
+      "claim": "74.3% of patients were aged less than 65 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The median age at breast cancer diagnosis was 59 years, with 74.3% of patients aged less than 65 years (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "c4ba6528-0b95-40ac-9c14-d2f94bf44296",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C26",
+      "claim": "Approximately 40% of all patients received adjuvant chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 40% of all patients received adjuvant chemotherapy, with anthracyline-based regimens being most frequently administered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "758e6149-25f0-4c28-85a5-113523555dc2",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C27",
+      "claim": "Anthracyline-based regimens were most frequently administered among chemotherapy patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 40% of all patients received adjuvant chemotherapy, with anthracyline-based regimens being most frequently administered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "02e6df7c-79a1-4630-aed0-4c17e3874995",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C28",
+      "claim": "Endocrine therapy was received by more than 80% of patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Endocrine therapy was received by more than 80% of patients (constituting mainly of tamoxifen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "fe7fa3a2-42c4-4635-b970-959f142254f8",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C29",
+      "claim": "Of all patients diagnosed between mid-2005 and 2008, 13% were coded as receivers of trastuzumab.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all patients diagnosed between mid-2005 and 2008, 13% were coded as receivers of trastuzumab.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "3a67cc52-a15c-4225-943c-a11464ae0bf9",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C30",
+      "claim": "Over a median follow-up of 10.8 years (interquartile range = 6.5 years), arrhythmias were the most frequently reported heart disease (n = 570).",
+      "claim_type": "EXPLICIT",
+      "source": "Over a median follow-up of 10.8 years (interquartile range = 6.5 years), arrhythmias were the most frequently reported heart disease (n = 570), followed by ischemic heart disease (n = 307) and heart failure (n = 243).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study outcomes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "a2930b54-f243-49d6-a641-c0affee77625",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C31",
+      "claim": "Ischemic heart disease was the second most frequently reported heart disease (n = 307).",
+      "claim_type": "EXPLICIT",
+      "source": "Over a median follow-up of 10.8 years (interquartile range = 6.5 years), arrhythmias were the most frequently reported heart disease (n = 570), followed by ischemic heart disease (n = 307) and heart failure (n = 243).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study outcomes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "7ac02789-ebc7-450f-83b4-02296d93dc50",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C32",
+      "claim": "Heart failure was reported in 243 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a median follow-up of 10.8 years (interquartile range = 6.5 years), arrhythmias were the most frequently reported heart disease (n = 570), followed by ischemic heart disease (n = 307) and heart failure (n = 243).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study outcomes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "6e697787-32ea-4563-977c-a20a09501a98",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C33",
+      "claim": "The cumulative incidence of arrhythmias in the breast cancer patients cohort was 11.0% after 15 years of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "The cumulative incidence of arrhythmias, ischemic heart disease, and heart failure in the breast cancer patients cohort was 11.0%, 5.7%, and 4.8% after 15 years of follow-up, while the cumulative incidence was 8.2%, 5.9%, and 3.8% in the matched cohort, respectively (Appendix 2\u2014table 2 and Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "fc0a97f8-040d-4191-b066-ff76e188fc8b",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C34",
+      "claim": "The cumulative incidence of ischemic heart disease in the breast cancer patients cohort was 5.7% after 15 years of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "The cumulative incidence of arrhythmias, ischemic heart disease, and heart failure in the breast cancer patients cohort was 11.0%, 5.7%, and 4.8% after 15 years of follow-up, while the cumulative incidence was 8.2%, 5.9%, and 3.8% in the matched cohort, respectively (Appendix 2\u2014table 2 and Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "e1449d00-ae2b-44ff-b90e-c2aaf521062c",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C35",
+      "claim": "The cumulative incidence of heart failure in the breast cancer patients cohort was 4.8% after 15 years of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "The cumulative incidence of arrhythmias, ischemic heart disease, and heart failure in the breast cancer patients cohort was 11.0%, 5.7%, and 4.8% after 15 years of follow-up, while the cumulative incidence was 8.2%, 5.9%, and 3.8% in the matched cohort, respectively (Appendix 2\u2014table 2 and Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "803e83c3-3894-4568-b764-17b1b82cf848",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C36",
+      "claim": "The cumulative incidence of arrhythmias in the matched cohort was 8.2% after 15 years of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "The cumulative incidence of arrhythmias, ischemic heart disease, and heart failure in the breast cancer patients cohort was 11.0%, 5.7%, and 4.8% after 15 years of follow-up, while the cumulative incidence was 8.2%, 5.9%, and 3.8% in the matched cohort, respectively (Appendix 2\u2014table 2 and Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "cf640681-da8e-4e34-9155-4999cb557b2b",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C37",
+      "claim": "The cumulative incidence of ischemic heart disease in the matched cohort was 5.9% after 15 years of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "The cumulative incidence of arrhythmias, ischemic heart disease, and heart failure in the breast cancer patients cohort was 11.0%, 5.7%, and 4.8% after 15 years of follow-up, while the cumulative incidence was 8.2%, 5.9%, and 3.8% in the matched cohort, respectively (Appendix 2\u2014table 2 and Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "284bd873-212b-4f4e-bea0-a628810f91f9",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C38",
+      "claim": "The cumulative incidence of heart failure in the matched cohort was 3.8% after 15 years of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "The cumulative incidence of arrhythmias, ischemic heart disease, and heart failure in the breast cancer patients cohort was 11.0%, 5.7%, and 4.8% after 15 years of follow-up, while the cumulative incidence was 8.2%, 5.9%, and 3.8% in the matched cohort, respectively (Appendix 2\u2014table 2 and Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "e04b4df7-1b5e-4e94-a4e1-3bcb8c47c552",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C39",
+      "claim": "Patients treated with chemotherapy and trastuzumab had an increased risk of heart failure compared to patients not receiving these treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients treated with chemotherapy and trastuzumab had an increased risk of heart failure compared to patients not receiving these treatments (for patients receiving anthracyclines-based chemotherapy, HR = 1.74, 95% CI = 1.20\u20132.52; for patients receiving trastuzumab, HR = 2.34, 95% CI = 1.05\u20135.22) (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "bec17022-d0f7-4348-8114-cad07ff47faf",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C40",
+      "claim": "For patients receiving anthracyclines-based chemotherapy, HR for heart failure = 1.74, 95% CI = 1.20\u20132.52.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients treated with chemotherapy and trastuzumab had an increased risk of heart failure compared to patients not receiving these treatments (for patients receiving anthracyclines-based chemotherapy, HR = 1.74, 95% CI = 1.20\u20132.52; for patients receiving trastuzumab, HR = 2.34, 95% CI = 1.05\u20135.22) (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "36fc5513-141b-466c-a6dd-0513334a4ba6",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C41",
+      "claim": "For patients receiving trastuzumab, HR for heart failure = 2.34, 95% CI = 1.05\u20135.22.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients treated with chemotherapy and trastuzumab had an increased risk of heart failure compared to patients not receiving these treatments (for patients receiving anthracyclines-based chemotherapy, HR = 1.74, 95% CI = 1.20\u20132.52; for patients receiving trastuzumab, HR = 2.34, 95% CI = 1.05\u20135.22) (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "61c09253-5df1-4b20-80da-632f9a1e655e",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C42",
+      "claim": "The risk of heart failure in patients receiving anthracyclines potentially persisted for 10 years beyond the diagnosis of breast cancer (HR = 1.66, 95% CI = 0.86\u20133.19).",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of heart failure in patients receiving anthracyclines potentially persisted for 10 years beyond the diagnosis of breast cancer (HR = 1.66, 95% CI = 0.86\u20133.19, Appendix 2\u2014table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "d5f9ac63-f5f3-4316-90e1-f18884952d78",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C43",
+      "claim": "Receipt of aromatase inhibitors was associated with risk of ischemic heart disease (HR = 1.52, 95% CI = 1.03\u20132.26 compared to patients without hormonal therapy).",
+      "claim_type": "EXPLICIT",
+      "source": "Receipt of aromatase inhibitors was associated with risk of ischemic heart disease (HR = 1.52, 95% CI = 1.03\u20132.26 compared to patients without hormonal therapy), but not with risk of heart failure or arrhythmias (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "16c9ddaa-906d-45b8-98bf-93a5b7302e42",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C44",
+      "claim": "Receipt of aromatase inhibitors was not associated with risk of heart failure or arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "Receipt of aromatase inhibitors was associated with risk of ischemic heart disease (HR = 1.52, 95% CI = 1.03\u20132.26 compared to patients without hormonal therapy), but not with risk of heart failure or arrhythmias (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "9c0fc89c-8e10-4d9a-9d64-7e98d2b29dc9",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C45",
+      "claim": "A direct comparison between left-sided and right-sided radiotherapy showed no evidence of an association of radiotherapy with heart disease except for a somewhat increased risk of ischemic heart disease in women with left-sided breast cancer, particularly after 10 years after cancer diagnosis, although not statistically significant (HR = 1.16, 95% CI = 0.89\u20131.51; HR for the risk beyond 10 years = 1.29, 95% CI = 0.70\u20132.37).",
+      "claim_type": "EXPLICIT",
+      "source": "A direct comparison between left-sided and right-sided radiotherapy showed no evidence of an association of radiotherapy with heart disease except for a somewhat increased risk of ischemic heart disease in women with left-sided breast cancer, particularly after 10 years after cancer diagnosis, although not statistically significant (Appendix 2\u2014table 3, HR = 1.16, 95% CI = 0.89\u20131.51; HR for the risk beyond 10 years = 1.29, 95% CI = 0.70\u20132.37).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "4843a3ff-1dd1-472e-912f-f25b87472ea7",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C46",
+      "claim": "The incidence of heart disease in breast cancer patients was significantly higher than the incidence observed in matched reference individuals from the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "In a population-based setting, we demonstrated that the incidence of heart disease in breast cancer patients was significantly higher than the incidence observed in matched reference individuals from the general population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "64429298-bce0-416c-a87f-ba414cee1293",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C47",
+      "claim": "The risks of arrhythmia and heart failure were increased even beyond 10 years after diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The risks of arrhythmia and heart failure were increased even beyond 10 years after diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "553c32f7-2a6d-4d97-8735-cc064c90040c",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C48",
+      "claim": "Receipt of trastuzumab, as well as administration of anthracycline\u00b1taxane-based regimens, was independently associated with an increased risk of heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Receipt of trastuzumab, as well as administration of anthracycline\u00b1taxane-based regimens, was independently associated with an increased risk of heart failure, while receipt of aromatase inhibitor therapy was associated with an increased risk of ischemic heart disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "84e4dd16-0eed-4944-820b-4bae971262a1",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C49",
+      "claim": "Receipt of aromatase inhibitor therapy was associated with an increased risk of ischemic heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Receipt of trastuzumab, as well as administration of anthracycline\u00b1taxane-based regimens, was independently associated with an increased risk of heart failure, while receipt of aromatase inhibitor therapy was associated with an increased risk of ischemic heart disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "8277baf1-7947-4636-8c60-39eca272dc07",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C50",
+      "claim": "The increased risk of arrhythmia and heart failure in breast cancer patients is similar to the risk of heart failure reported by a previous Dutch study.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an increased risk of arrhythmia and heart failure in breast cancer patients as compared with the matched reference individuals from the general population, which is similar to the risk of heart failure reported by a previous Dutch study (Hooning et al., 2007), indicating the generalizability of our findings to European countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with prior research supported by citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "3cec7668-872e-4b98-a5c7-3975ee51bcc8",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C51",
+      "claim": "The cardiotoxic effect of chemotherapy might be mainly on the myocardium mediated by the effect of DNA double-strand breaks through topoisomerase (Top) 2\u03b2, but not the cardiac vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "As the long-term risk was observed for heart failure but not ischemic heart disease, the cardiotoxic effect of chemotherapy might be mainly on the myocardium mediated by the effect of DNA double-strand breaks through topoisomerase (Top) 2\u03b2, but not the cardiac vessels (Lyu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from study results supported by citation to mechanistic research",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "22e9dbc8-ce57-4c4d-8aec-8e26101d3744",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C52",
+      "claim": "The finding that risk of ischemic heart disease in breast cancer patients was only transiently elevated after diagnosis is not unexpected, considering the emotional distress of dealing with a new cancer diagnosis in the patients, which may lead to higher short-term rates of ischemic heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that risk of ischemic heart disease in breast cancer patients was only transiently elevated after diagnosis is not unexpected, considering the emotional distress of dealing with a new cancer diagnosis in the patients, which may lead to higher short-term rates of ischemic heart disease (Fang et al., 2012; Schoormans et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of study results supported by citations to prior research",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "a657c5db-a362-4112-b278-e47461338c6c",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C53",
+      "claim": "Surgery after breast cancer diagnosis might increase the risk of arterial thromboembolism, which includes myocardial infarction, and the effect appears to attenuate 1 year after diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, surgery after breast cancer diagnosis might increase the risk of arterial thromboembolism (Gervaso et al., 2021), which includes myocardial infarction, and the effect appears to attenuate 1 year after diagnosis (Navi et al., 2017; Navi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "01d6bf10-f89e-4a7a-8285-4750185fdde5",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C54",
+      "claim": "Women with younger age at menarche and older age at menopause were associated with increased risk of breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Women with younger age at menarche and older age at menopause were associated with increased risk of breast cancer, while decreased risk of ischemic heart disease were found among these women (Collaborative Group on Hormonal Factors in Breast, 2012; Okoth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "75054bc1-3ff4-49aa-8cba-c1ba8b8b3852",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C55",
+      "claim": "Women with younger age at menarche and older age at menopause had decreased risk of ischemic heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Women with younger age at menarche and older age at menopause were associated with increased risk of breast cancer, while decreased risk of ischemic heart disease were found among these women (Collaborative Group on Hormonal Factors in Breast, 2012; Okoth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "417b9328-88ac-4bee-ba43-c594b29e3c41",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C56",
+      "claim": "The findings that administration of anthracycline\u00b1taxanes, as well as trastuzumab, is associated with increased risks of heart failure are in agreement with previous observational studies and clinical trials in specific subgroups of breast cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings that administration of anthracycline\u00b1taxanes, as well as trastuzumab, is associated with increased risks of heart failure are in agreement with previous observational studies (Bowles et al., 2012; Chavez-MacGregor et al., 2013; Doyle et al., 2005; Du et al., 2009; Goldhar et al., 2016; Thavendiranathan et al., 2016) and clinical trials (Chen et al., 2011) in specific subgroups of breast cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with prior research supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "9b9d4402-2ffa-45bc-83cd-94c5dba37500",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C57",
+      "claim": "(Poly)chemotherapy is thought to lead to heart failure through a plethora of mechanisms that damage cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "While (poly)chemotherapy is thought to lead to heart failure through a plethora of mechanisms that damage cardiomyocytes (Yeh and Bickford, 2009), taxanes may also interrupt the metabolism and excretion of anthracyclines, hence accentuating their toxicity (Bird and Swain, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "56bcc0d7-b6ac-4995-9109-f8297ba9ec73",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C58",
+      "claim": "Taxanes may interrupt the metabolism and excretion of anthracyclines, hence accentuating their toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "While (poly)chemotherapy is thought to lead to heart failure through a plethora of mechanisms that damage cardiomyocytes (Yeh and Bickford, 2009), taxanes may also interrupt the metabolism and excretion of anthracyclines, hence accentuating their toxicity (Bird and Swain, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "3c15eb61-3140-4122-a876-7c7bd1c63b08",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C59",
+      "claim": "The cardiotoxic effect of trastuzumab may be explained by inhibition of the HER-2 receptors in myocytes, which activates the mitochondrial apoptosis pathway through modulation of Bcl-xL and -xS, which regulates cell development and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The cardiotoxic effect of trastuzumab meanwhile may be explained by inhibition of the HER-2 receptors in myocytes, which activates the mitochondrial apoptosis pathway through modulation of Bcl-xL and -xS, which regulates cell development and growth (Grazette et al., 2004; Yeh and Bickford, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "b5b36f51-197e-4b50-9dab-3874eb3d0ac0",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C60",
+      "claim": "Abdel-Qadir et al. found an increased risk of myocardial infarction in patients treated with aromatase inhibitors, as compared to those treated with tamoxifen.",
+      "claim_type": "EXPLICIT",
+      "source": "Abdel-Qadir et al. also found an increased risk of myocardial infarction in patients treated with aromatase inhibitors, as compared to those treated with tamoxifen (Abdel-Qadir et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "e39eee90-8937-42c3-921e-924d85f108e5",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C61",
+      "claim": "This apparent increase in risk of ischemic heart disease might in fact be attributed to reduced risk of heart disease following tamoxifen treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been posited that this apparent increase in risk of ischemic heart disease might in fact be attributed to reduced risk of heart disease following tamoxifen treatment (Hackshaw et al., 2011; Rosell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "c4de58f5-2635-4757-b5c3-5b987684915c",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C62",
+      "claim": "Several previous studies have shown that radiotherapy for breast cancer increase the risk of ischemic heart disease and heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "While several previous studies have shown that radiotherapy for breast cancer increase the risk of ischemic heart disease and heart failure (Darby et al., 2013; Harris et al., 2006; Pinder et al., 2007), some studies, particularly those including patients diagnosed in recent decades, have not seen such an increase (Boekel et al., 2014; Wadsten et al., 2018; Wennstig et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "6b2172ca-8e2a-4cf0-b3df-169bfb3c849a",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C63",
+      "claim": "Some studies, particularly those including patients diagnosed in recent decades, have not seen an increase in risk of ischemic heart disease and heart failure from radiotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "While several previous studies have shown that radiotherapy for breast cancer increase the risk of ischemic heart disease and heart failure (Darby et al., 2013; Harris et al., 2006; Pinder et al., 2007), some studies, particularly those including patients diagnosed in recent decades, have not seen such an increase (Boekel et al., 2014; Wadsten et al., 2018; Wennstig et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "1e2e5d0a-3353-4326-ac3c-3d6af623b8c3",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C64",
+      "claim": "The time trends of heart dose improvement and the use of modern heart dose sparing techniques, together with individualized doses of therapy, may result in lower doses of radiation to the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the time trends of heart dose improvement and the use of modern heart dose sparing techniques, together with individualized doses of therapy, may result in lower doses of radiation to the heart (Taylor et al., 2017; Taylor and Kirby, 2015; Taylor et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "bc3bb13f-e570-49d6-be7c-6ee01f099405",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C65",
+      "claim": "Patients with a left-sided breast cancer who are susceptible to cardiovascular diseases are less likely to be selected for radiotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Another reason for inconsistent results in the literature could be that patients with a left-sided breast cancer who are susceptible to cardiovascular diseases are less likely to be selected for radiotherapy (Darby et al., 2013; Taylor and Kirby, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "24271a4f-3f91-4ded-87bc-e8e73e626f68",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C66",
+      "claim": "The Swedish Patient Register has high validity for heart failure, arrhythmia, and ischemic heart disease (with positive predictive value between 88% and 98%).",
+      "claim_type": "EXPLICIT",
+      "source": "The Swedish Patient Register has high validity for heart failure, arrhythmia, and ischemic heart disease (with positive predictive value between 88% and 98%) (Hammar et al., 2001; Ludvigsson et al., 2011), by analyzing main diagnoses only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior validation studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "5e8c9923-cc1b-41cf-9183-6ecfcc034881",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C67",
+      "claim": "The agreement between the intended and administered breast cancer treatment in Sweden has been previously reported to be about 95%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the agreement between the intended and administered breast cancer treatment in Sweden has been previously reported to be about 95% (L\u00f6fgren et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "9bdea3a8-6a6d-4586-be2b-93b40ebe4646",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C68",
+      "claim": "Cancer patients are subject to increased medical surveillance, especially in the initial period after diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it should be noted that cancer patients are subject to increased medical surveillance, especially in the initial period after diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on general knowledge of clinical practice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "6158c1d6-dc81-402d-9b18-3222d6f6903c",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C69",
+      "claim": "Increased medical surveillance could explain the increased rates of heart disease events especially within the first year of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "This could explain the increased rates of heart disease events especially within the first year of follow-up, although psychological distress following recent diagnosis with cancer represents an alternative plausible explanation for this observation (Fang et al., 2012; Schoormans et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from study results with citations supporting alternative explanation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "5f3719c5-6533-4e4c-a9c0-c175d3c1ca1e",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C70",
+      "claim": "Women with breast cancer have increased risks of heart disease including heart failure and arrhythmia compared to the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this study, we demonstrate that compared to the general population, women with breast cancer have increased risks of heart disease including heart failure and arrhythmia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "9c0c8e0c-c5f2-4d9d-a801-7fb0df39e398",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C71",
+      "claim": "The short-term risk of ischemic heart disease diminished after 1 year post diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The short-term risk of ischemic heart disease diminished after 1 year post diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "70b1ed28-b0da-4970-a2b7-2937f8619a08",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C72",
+      "claim": "The increased risk of arrhythmia and heart failure appears to persist long-term, beyond the first decade after diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased risk of arrhythmia and heart failure however appears to persist long-term, beyond the first decade after diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "2fae551d-844e-47d0-88f1-ce973f3aaebb",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C73",
+      "claim": "Administration of systemic adjuvant therapies is associated with risks of heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of systemic adjuvant therapies is associated with risks of heart disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "f4128da0-0a5d-49b9-989a-c072baef9c18",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C74",
+      "claim": "A longitudinal cardiac monitoring schedule might be helpful to improve cardiac health in breast cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis by time since diagnosis revealed long-term increased risks of arrhythmia and heart failure following breast cancer diagnosis, suggesting that a longitudinal cardiac monitoring schedule might be helpful to improve cardiac health in breast cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference and recommendation based on study findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "e11a7918-571a-44e7-82e6-95566dff8e2e",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C75",
+      "claim": "A longer-term cardiac monitoring program might be helpful for patients receiving chemotherapy or HER-2 positive patients.",
+      "claim_type": "EXPLICIT",
+      "source": "As there is no cardiac monitoring for chemotherapy in routine clinical practice and cardiac assessment is only performed prior to and during the treatment period for HER-2 positive patients in Sweden, a longer-term cardiac monitoring program might be helpful for these patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference and recommendation based on study findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "e8656280-a79b-47cd-a827-7c584c8944b8",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C76",
+      "claim": "The long-term lower risk of ischemic heart disease in breast cancer patients compared to age-matched women might be explained by the opposite role of reproductive factors in breast cancer and ischemic heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The long-term lower risk of ischemic heart disease in breast cancer patients compared to age-matched women might be explained by the opposite role of reproductive factors in breast cancer and ischemic heart disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from study results with supporting citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "8836b2c4-87a9-4b0d-92b0-58607e19ed63",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C77",
+      "claim": "The protective effect from tamoxifen could not fully explain the previously reported risk increase of ischemic heart disease in patients treated with aromatase inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, given that in the present study, an increased risk of ischemic heart disease was observed in patients treated with aromatase inhibitors compared to patients not receiving hormone treatment, the protective effect from tamoxifen could not fully explain the previously reported risk increase of ischemic heart disease in patients treated with aromatase inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from study results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "2804a0f6-f164-42ae-af93-998c8323bbd1",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C78",
+      "claim": "The results indicate only small risk of heart disease due to radiotherapy in women treated in Sweden after year 2000.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results indicate only small risk of heart disease due to radiotherapy in women treated in Sweden after year 2000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study's data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "76b7f8e6-3116-434c-88b6-9e450cf2ddac",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C79",
+      "claim": "The risk estimates observed in this study may serve as reference to aid adjuvant therapy decision-making and patient counselling in oncology practices.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk estimates observed in this study may serve as reference to aid adjuvant therapy decision-making and patient counselling in oncology practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about potential application of study findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "e4421404-1c76-40f9-b48a-49afff4acdd4",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C80",
+      "claim": "Time-dependent analyses revealed long-term increased risks of arrhythmia and heart failure following breast cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-dependent analyses revealed long-term increased risks of arrhythmia and heart failure following breast cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of statistical results from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "17a8411e-cc68-42af-b2bd-86d551875445",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C81",
+      "claim": "Administration of systemic adjuvant therapies appears to be associated with increased risks of heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of systemic adjuvant therapies appears to be associated with increased risks of heart disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study's data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "5723e8ca-5370-4cc2-a696-f707e35f0d50",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "claim_id": "C82",
+      "claim": "The risk estimates observed in this study may aid adjuvant therapy decision-making and patient counseling in oncology practices.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk estimates observed in this study may aid adjuvant therapy decision-making and patient counseling in oncology practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about potential application of study findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "041f53f8-6d0d-477c-a394-9b8689a251f5",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study included 8015 breast cancer patients diagnosed 2001-2008 in Stockholm-Gotland, matched with up to 10 reference individuals from the general population, with median age 59 years and median follow-up of 10.8 years. Approximately 40% received chemotherapy (mostly anthracycline-based), >80% received endocrine therapy (mainly tamoxifen), and 13% of patients diagnosed 2005-2008 received trastuzumab, though 30% of HER-2 positive patients had missing trastuzumab data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C19-C29 provide comprehensive descriptive statistics of the study population and design. The data sources are well-characterized with high completeness (99% for the cancer register, C19), appropriate matching design (C21), and clear demographic and treatment distributions (C24-C29). The acknowledgment of missing trastuzumab data (C23) demonstrates transparency about data limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Over median follow-up of 10.8 years, arrhythmias were most frequent (n=570), followed by ischemic heart disease (n=307) and heart failure (n=243). At 15 years, cumulative incidence in breast cancer patients was 11.0% for arrhythmias, 5.7% for ischemic heart disease, and 4.8% for heart failure, compared to 8.2%, 5.9%, and 3.8% respectively in matched controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C38 present clear descriptive outcome data with appropriate comparison between cases and controls. The cumulative incidence estimates account for competing risks (as stated in methods) and show consistent patterns across outcomes. The data demonstrate higher cardiac event rates in breast cancer patients for arrhythmias and heart failure, but similar rates for ischemic heart disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "1d007151-5acb-4852-85df-f8313933f871",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Breast cancer patients had significantly elevated risks of arrhythmia (HR=2.14, 95%CI=1.63-2.81) and heart failure (HR=2.71, 95%CI=1.70-4.33) within the first year after diagnosis. These risks persisted long-term, with HRs >10 years of 1.42 (95%CI=1.21-1.67) for arrhythmia and 1.28 (95%CI=1.03-1.59) for heart failure. Ischemic heart disease risk was elevated only in the first year (HR=1.45, 95%CI=1.03-2.04) and diminished thereafter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15, C46-C47, C70-C72, C80 present the primary time-dependent risk findings with appropriate statistical measures and confidence intervals. The flexible parametric modeling approach accounts for non-proportional hazards, and the pattern of short-term elevation followed by persistent long-term risk for arrhythmia/heart failure versus transient risk for ischemic heart disease is internally consistent and well-supported by the data presented in Table 2 and Figure 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "f59c9d5d-76a4-468b-8971-61912adeab31",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Anthracycline-based chemotherapy (HR=1.74, 95%CI=1.20-2.52) and trastuzumab (HR=2.34, 95%CI=1.05-5.22) were independently associated with increased risk of heart failure in multivariable models adjusting for age, year, menopausal status, stage, surgery type, comorbidities, and other treatments. These findings align with prior observational studies and clinical trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C39-C41, C48, C56, C73, C81 demonstrate treatment-specific associations with heart failure using appropriate multivariable Cox models. The hazard ratios have confidence intervals excluding 1.0, indicating statistical significance. The mutual adjustment for different therapies (stated in methods) strengthens causal inference. Comparison with prior literature (C56) supports generalizability, though the wide CI for trastuzumab (C41: 1.05-5.22) suggests limited precision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "b79474bf-c575-4c57-a839-9876a96665af",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The risk of heart failure associated with anthracyclines potentially persisted for 10 years beyond diagnosis (HR=1.66, 95%CI=0.86-3.19).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 presents a hazard ratio with a confidence interval that crosses 1.0 (0.86-3.19), indicating the result is not statistically significant. The use of \"potentially\" acknowledges this uncertainty, but the claim cannot be considered definitively supported. The point estimate suggests a possible effect, but the data are insufficient to confirm persistence beyond 10 years.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "05a615aa-10d7-4022-ae92-6a26a0c11906",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Aromatase inhibitors were associated with increased risk of ischemic heart disease (HR=1.52, 95%CI=1.03-2.26 vs. no hormone therapy) but not with heart failure or arrhythmias. This association remained after accounting for potential protective effects of tamoxifen, as the comparison was made to patients receiving no hormone therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C43-C44, C49, C77 present treatment-specific associations for aromatase inhibitors with appropriate statistical evidence. The HR for ischemic heart disease has a confidence interval just excluding 1.0 (1.03-2.26), indicating borderline statistical significance. The comparison to no hormone therapy (rather than tamoxifen) addresses potential confounding from tamoxifen's protective effects (C77), strengthening the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "0b2b5570-9ce0-43c2-b28d-1a383235fd32",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "No statistically significant increased risk of heart disease was identified following locoregional radiotherapy. Direct comparison of left-sided versus right-sided radiotherapy showed a non-significant trend toward increased ischemic heart disease risk (HR=1.16, 95%CI=0.89-1.51; HR beyond 10 years=1.29, 95%CI=0.70-2.37), indicating only small risk in women treated in Sweden after 2000.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C45, C78 appropriately report null findings with confidence intervals crossing 1.0. The methodological approach of comparing left-sided to right-sided radiotherapy addresses selection bias concerns. The conclusion of \"only small risk\" (C78) is justified given the non-significant findings and narrow confidence intervals for the overall comparison, though the wide CI for the >10 year period (0.70-2.37) indicates substantial uncertainty for long-term effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "3598821a-e940-4333-a832-9e6a9f4e847e",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The increased risk of arrhythmia and heart failure in breast cancer patients is similar to risks reported by a previous Dutch study, indicating generalizability to European countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 appropriately contextualizes findings within prior literature through citation to Hooning et al., 2007. The comparison supports external validity, though the claim would be strengthened by quantitative comparison of effect sizes. The inference about generalizability to European countries is reasonable but somewhat speculative given differences in healthcare systems and treatment protocols.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "3ef4c382-8cf3-4ca2-a3f6-f8c9abd593b6",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The cardiotoxic effects of chemotherapy may primarily affect the myocardium through topoisomerase 2\u03b2-mediated DNA double-strand breaks rather than cardiac vessels, while trastuzumab may act through HER-2 receptor inhibition activating mitochondrial apoptosis pathways. Taxanes may accentuate anthracycline toxicity by interrupting their metabolism and excretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C57-C59 present mechanistic interpretations supported by appropriate citations to prior mechanistic research. The inference that chemotherapy primarily affects myocardium (C51) is reasonably drawn from the observation of heart failure but not ischemic heart disease risk. However, these are interpretations of mechanisms rather than direct experimental findings from this observational study, and alternative mechanisms cannot be excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "d04e4915-aaff-41d9-842b-fd3588a4ea93",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The transient elevation in ischemic heart disease risk in the first year may be explained by emotional distress from cancer diagnosis, surgical effects on arterial thromboembolism risk, or increased medical surveillance leading to detection bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C68-C69 provide plausible alternative explanations for the short-term ischemic heart disease risk elevation, supported by citations to relevant literature. The authors appropriately acknowledge multiple potential mechanisms rather than claiming definitive causation. The discussion of surveillance bias (C68-C69) demonstrates critical awareness of methodological limitations, though the relative contributions of these mechanisms cannot be quantified from the available data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "472ed0c0-af20-410f-bb3d-dc20319296cf",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The long-term lower risk of ischemic heart disease in breast cancer patients compared to age-matched women might be explained by opposite roles of reproductive factors, as younger age at menarche and older age at menopause are associated with increased breast cancer risk but decreased ischemic heart disease risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55, C76 present a plausible explanation for the unexpected long-term pattern, supported by citations to prior epidemiological research on reproductive factors. This represents reasonable inference from established associations, though it remains speculative as the study did not directly measure reproductive factors or test this hypothesis. The explanation is biologically plausible but represents one of potentially multiple contributing factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "e5aec80e-e0d0-493c-b3a6-26f5725b93aa",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior research found increased myocardial infarction risk with aromatase inhibitors versus tamoxifen, which has been attributed to protective effects of tamoxifen rather than harmful effects of aromatase inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 accurately summarize prior literature with appropriate citations. These claims provide context for interpreting the current study's findings but do not represent new results from this manuscript. The characterization of prior hypotheses about tamoxifen's protective effects is appropriately presented as one interpretation rather than established fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "14c2b41d-df3c-44cb-89aa-2bba6f6fb369",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior studies show conflicting evidence on radiotherapy-associated cardiac risk, with older studies showing increased risk but recent studies showing no increase. This may reflect improvements in heart-sparing techniques and lower radiation doses, as well as selection bias against radiotherapy in high-risk patients with left-sided cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 provide appropriate literature context with citations supporting both the conflicting findings and potential explanations. The discussion acknowledges temporal trends in treatment techniques (C64) and selection bias (C65) as important considerations for interpreting radiotherapy findings. This contextualizes why the current study found minimal radiotherapy effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "b37700ef-e9b2-41d2-b865-950a30d3d410",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Swedish Patient Register has high validity for cardiac outcomes (PPV 88-98%), and agreement between intended and administered breast cancer treatment in Sweden is approximately 95%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 provide important validation data for the study's data sources, supported by citations to prior validation studies. These claims address potential concerns about outcome misclassification and treatment exposure measurement error. The high validity and agreement rates support the reliability of the study's findings, though some misclassification remains possible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "10699798-33a5-4053-86a5-e63feadf39b5",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The findings suggest that longitudinal cardiac monitoring schedules might be helpful for breast cancer patients, particularly those receiving chemotherapy or HER-2 targeted therapy, and the risk estimates may aid adjuvant therapy decision-making and patient counseling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75, C79, C82 present reasonable clinical implications based on the study's findings of long-term cardiac risks. However, these are recommendations and speculations about potential applications rather than tested interventions. The use of \"might\" and \"may\" appropriately conveys uncertainty. Implementation would require additional research on monitoring strategies, cost-effectiveness, and patient outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    },
+    {
+      "id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0",
+      "content_id": "62fce1e0-fca0-4f14-92f3-141061046ef0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior research establishes that adjuvant therapies halve breast cancer mortality and 80% of patients survive \u226510 years, but these therapies are associated with increased cardiac risks. Anthracyclines increase heart failure risk even at low doses, trastuzumab's cardiotoxicity evidence is conflicting, and aromatase inhibitors may increase heart failure risk versus tamoxifen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide appropriate background context from prior literature with multiple supporting citations. These claims establish the rationale for the current study by documenting both the benefits of adjuvant therapy and concerns about cardiac toxicity. The characterization of conflicting evidence for trastuzumab (C8) and the conditional language for aromatase inhibitors (C9) appropriately reflect uncertainty in prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:45:46.794355Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b4a2a13e-8cc4-4ebd-b14c-96689059d128",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "216583c7-578b-4691-80cc-043e2622b011",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "2c7af7a3-1148-4cff-b786-ec4adc2255d9",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "76c8773a-0e32-4197-b998-a7702d186667",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "f25d0a20-b2fc-4ff2-850f-0276e0e0e208",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "f5e6de2e-fa3f-4936-a7b1-d723f148c7d2",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "fe2bc603-9a2c-4703-b8ef-c2da4dc4a746",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "e1383886-f9a7-4ed8-8eb4-9a0615795067",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "c4ba6528-0b95-40ac-9c14-d2f94bf44296",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "758e6149-25f0-4c28-85a5-113523555dc2",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "02e6df7c-79a1-4630-aed0-4c17e3874995",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "fe7fa3a2-42c4-4635-b970-959f142254f8",
+      "result_id": "041f53f8-6d0d-477c-a394-9b8689a251f5"
+    },
+    {
+      "claim_id": "3a67cc52-a15c-4225-943c-a11464ae0bf9",
+      "result_id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b"
+    },
+    {
+      "claim_id": "a2930b54-f243-49d6-a641-c0affee77625",
+      "result_id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b"
+    },
+    {
+      "claim_id": "7ac02789-ebc7-450f-83b4-02296d93dc50",
+      "result_id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b"
+    },
+    {
+      "claim_id": "6e697787-32ea-4563-977c-a20a09501a98",
+      "result_id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b"
+    },
+    {
+      "claim_id": "fc0a97f8-040d-4191-b066-ff76e188fc8b",
+      "result_id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b"
+    },
+    {
+      "claim_id": "e1449d00-ae2b-44ff-b90e-c2aaf521062c",
+      "result_id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b"
+    },
+    {
+      "claim_id": "803e83c3-3894-4568-b764-17b1b82cf848",
+      "result_id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b"
+    },
+    {
+      "claim_id": "cf640681-da8e-4e34-9155-4999cb557b2b",
+      "result_id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b"
+    },
+    {
+      "claim_id": "284bd873-212b-4f4e-bea0-a628810f91f9",
+      "result_id": "c7b9ff88-22c6-40ec-b2c9-c14930cf320b"
+    },
+    {
+      "claim_id": "d90b34f7-4ff7-4282-ba34-ea440328fc28",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "9f5089d3-ccf8-4d2a-9de0-49d275b5edc4",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "ea7bc00a-b64d-4b52-8c9a-612dc6f8f530",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "4a4c8882-c7c0-4046-93d9-cac4fa37df66",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "236553be-44ce-4a20-95aa-6c748620278b",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "4843a3ff-1dd1-472e-912f-f25b87472ea7",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "64429298-bce0-416c-a87f-ba414cee1293",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "5f3719c5-6533-4e4c-a9c0-c175d3c1ca1e",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "9c0c8e0c-c5f2-4d9d-a801-7fb0df39e398",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "70b1ed28-b0da-4970-a2b7-2937f8619a08",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "e4421404-1c76-40f9-b48a-49afff4acdd4",
+      "result_id": "1d007151-5acb-4852-85df-f8313933f871"
+    },
+    {
+      "claim_id": "5521e671-935a-4c05-b6af-5fcb5961674f",
+      "result_id": "f59c9d5d-76a4-468b-8971-61912adeab31"
+    },
+    {
+      "claim_id": "e04b4df7-1b5e-4e94-a4e1-3bcb8c47c552",
+      "result_id": "f59c9d5d-76a4-468b-8971-61912adeab31"
+    },
+    {
+      "claim_id": "bec17022-d0f7-4348-8114-cad07ff47faf",
+      "result_id": "f59c9d5d-76a4-468b-8971-61912adeab31"
+    },
+    {
+      "claim_id": "36fc5513-141b-466c-a6dd-0513334a4ba6",
+      "result_id": "f59c9d5d-76a4-468b-8971-61912adeab31"
+    },
+    {
+      "claim_id": "553c32f7-2a6d-4d97-8735-cc064c90040c",
+      "result_id": "f59c9d5d-76a4-468b-8971-61912adeab31"
+    },
+    {
+      "claim_id": "417b9328-88ac-4bee-ba43-c594b29e3c41",
+      "result_id": "f59c9d5d-76a4-468b-8971-61912adeab31"
+    },
+    {
+      "claim_id": "2fae551d-844e-47d0-88f1-ce973f3aaebb",
+      "result_id": "f59c9d5d-76a4-468b-8971-61912adeab31"
+    },
+    {
+      "claim_id": "17a8411e-cc68-42af-b2bd-86d551875445",
+      "result_id": "f59c9d5d-76a4-468b-8971-61912adeab31"
+    },
+    {
+      "claim_id": "61c09253-5df1-4b20-80da-632f9a1e655e",
+      "result_id": "b79474bf-c575-4c57-a839-9876a96665af"
+    },
+    {
+      "claim_id": "12d802a2-58d1-4f7c-9a22-87f4e3bfa598",
+      "result_id": "05a615aa-10d7-4022-ae92-6a26a0c11906"
+    },
+    {
+      "claim_id": "d5f9ac63-f5f3-4316-90e1-f18884952d78",
+      "result_id": "05a615aa-10d7-4022-ae92-6a26a0c11906"
+    },
+    {
+      "claim_id": "16c9ddaa-906d-45b8-98bf-93a5b7302e42",
+      "result_id": "05a615aa-10d7-4022-ae92-6a26a0c11906"
+    },
+    {
+      "claim_id": "84e4dd16-0eed-4944-820b-4bae971262a1",
+      "result_id": "05a615aa-10d7-4022-ae92-6a26a0c11906"
+    },
+    {
+      "claim_id": "8836b2c4-87a9-4b0d-92b0-58607e19ed63",
+      "result_id": "05a615aa-10d7-4022-ae92-6a26a0c11906"
+    },
+    {
+      "claim_id": "d6895bef-66d8-4606-bed6-1c3f60259b27",
+      "result_id": "0b2b5570-9ce0-43c2-b28d-1a383235fd32"
+    },
+    {
+      "claim_id": "9c0fc89c-8e10-4d9a-9d64-7e98d2b29dc9",
+      "result_id": "0b2b5570-9ce0-43c2-b28d-1a383235fd32"
+    },
+    {
+      "claim_id": "2804a0f6-f164-42ae-af93-998c8323bbd1",
+      "result_id": "0b2b5570-9ce0-43c2-b28d-1a383235fd32"
+    },
+    {
+      "claim_id": "8277baf1-7947-4636-8c60-39eca272dc07",
+      "result_id": "3598821a-e940-4333-a832-9e6a9f4e847e"
+    },
+    {
+      "claim_id": "3cec7668-872e-4b98-a5c7-3975ee51bcc8",
+      "result_id": "3ef4c382-8cf3-4ca2-a3f6-f8c9abd593b6"
+    },
+    {
+      "claim_id": "9b9d4402-2ffa-45bc-83cd-94c5dba37500",
+      "result_id": "3ef4c382-8cf3-4ca2-a3f6-f8c9abd593b6"
+    },
+    {
+      "claim_id": "56bcc0d7-b6ac-4995-9109-f8297ba9ec73",
+      "result_id": "3ef4c382-8cf3-4ca2-a3f6-f8c9abd593b6"
+    },
+    {
+      "claim_id": "3c15eb61-3140-4122-a876-7c7bd1c63b08",
+      "result_id": "3ef4c382-8cf3-4ca2-a3f6-f8c9abd593b6"
+    },
+    {
+      "claim_id": "22e9dbc8-ce57-4c4d-8aec-8e26101d3744",
+      "result_id": "d04e4915-aaff-41d9-842b-fd3588a4ea93"
+    },
+    {
+      "claim_id": "a657c5db-a362-4112-b278-e47461338c6c",
+      "result_id": "d04e4915-aaff-41d9-842b-fd3588a4ea93"
+    },
+    {
+      "claim_id": "9bdea3a8-6a6d-4586-be2b-93b40ebe4646",
+      "result_id": "d04e4915-aaff-41d9-842b-fd3588a4ea93"
+    },
+    {
+      "claim_id": "6158c1d6-dc81-402d-9b18-3222d6f6903c",
+      "result_id": "d04e4915-aaff-41d9-842b-fd3588a4ea93"
+    },
+    {
+      "claim_id": "01d6bf10-f89e-4a7a-8285-4750185fdde5",
+      "result_id": "472ed0c0-af20-410f-bb3d-dc20319296cf"
+    },
+    {
+      "claim_id": "75054bc1-3ff4-49aa-8cba-c1ba8b8b3852",
+      "result_id": "472ed0c0-af20-410f-bb3d-dc20319296cf"
+    },
+    {
+      "claim_id": "e8656280-a79b-47cd-a827-7c584c8944b8",
+      "result_id": "472ed0c0-af20-410f-bb3d-dc20319296cf"
+    },
+    {
+      "claim_id": "b5b36f51-197e-4b50-9dab-3874eb3d0ac0",
+      "result_id": "e5aec80e-e0d0-493c-b3a6-26f5725b93aa"
+    },
+    {
+      "claim_id": "e39eee90-8937-42c3-921e-924d85f108e5",
+      "result_id": "e5aec80e-e0d0-493c-b3a6-26f5725b93aa"
+    },
+    {
+      "claim_id": "c4de58f5-2635-4757-b5c3-5b987684915c",
+      "result_id": "14c2b41d-df3c-44cb-89aa-2bba6f6fb369"
+    },
+    {
+      "claim_id": "6b2172ca-8e2a-4cf0-b3df-169bfb3c849a",
+      "result_id": "14c2b41d-df3c-44cb-89aa-2bba6f6fb369"
+    },
+    {
+      "claim_id": "1e2e5d0a-3353-4326-ac3c-3d6af623b8c3",
+      "result_id": "14c2b41d-df3c-44cb-89aa-2bba6f6fb369"
+    },
+    {
+      "claim_id": "bc3bb13f-e570-49d6-be7c-6ee01f099405",
+      "result_id": "14c2b41d-df3c-44cb-89aa-2bba6f6fb369"
+    },
+    {
+      "claim_id": "24271a4f-3f91-4ded-87bc-e8e73e626f68",
+      "result_id": "b37700ef-e9b2-41d2-b865-950a30d3d410"
+    },
+    {
+      "claim_id": "5e8c9923-cc1b-41cf-9183-6ecfcc034881",
+      "result_id": "b37700ef-e9b2-41d2-b865-950a30d3d410"
+    },
+    {
+      "claim_id": "f4128da0-0a5d-49b9-989a-c072baef9c18",
+      "result_id": "10699798-33a5-4053-86a5-e63feadf39b5"
+    },
+    {
+      "claim_id": "e11a7918-571a-44e7-82e6-95566dff8e2e",
+      "result_id": "10699798-33a5-4053-86a5-e63feadf39b5"
+    },
+    {
+      "claim_id": "76b7f8e6-3116-434c-88b6-9e450cf2ddac",
+      "result_id": "10699798-33a5-4053-86a5-e63feadf39b5"
+    },
+    {
+      "claim_id": "5723e8ca-5370-4cc2-a696-f707e35f0d50",
+      "result_id": "10699798-33a5-4053-86a5-e63feadf39b5"
+    },
+    {
+      "claim_id": "f04f46e9-6a3a-475a-a607-a2d5ddab456c",
+      "result_id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0"
+    },
+    {
+      "claim_id": "fd98e531-7f1a-42fc-945f-062542b88a7f",
+      "result_id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0"
+    },
+    {
+      "claim_id": "888ea77b-0366-4588-aad6-c5e0f9b323e6",
+      "result_id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0"
+    },
+    {
+      "claim_id": "5f43989b-ed4c-4b0d-acb4-4af4f5c1cf9f",
+      "result_id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0"
+    },
+    {
+      "claim_id": "34d602c6-db5a-440a-aeaa-d707c33d67b8",
+      "result_id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0"
+    },
+    {
+      "claim_id": "8a261253-abae-4106-896d-9347c1a9ab68",
+      "result_id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0"
+    },
+    {
+      "claim_id": "ee354e9c-89f4-49c2-a015-3d6d00fa8c8d",
+      "result_id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0"
+    },
+    {
+      "claim_id": "6913456b-a2e0-43dd-9e81-416154bb884d",
+      "result_id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0"
+    },
+    {
+      "claim_id": "ff5a8048-d853-4bd4-b2b6-2aecb9e3cba5",
+      "result_id": "a20f2ccb-b0de-43f3-8a2e-4617f2791fe0"
+    }
+  ],
+  "comparisons": []
+}

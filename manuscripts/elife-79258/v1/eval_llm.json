@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C29",
+      "C30",
+      "C33",
+      "C50"
+    ],
+    "result": "In Marchantia embryos, 98% of genes show maternally biased transcription, with paternal chromosomes repressed by H3K27me3 enrichment. This maternal bias is genome-wide, consistent across different accessions, and correlates with paternal H3K27me3 marking, resulting in functional haploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C18-C23, C29-C30, C33, and C50 collectively demonstrate maternal transcriptional bias through RNA-seq data (C18-C22), H3K27me3 enrichment on paternal alleles via CUT&RUN (C29-C30), and correlation between these marks (C30, C33). The data are internally consistent across multiple crosses and methodologies, with appropriate statistical testing (exact binomial tests with Bonferroni correction). The conclusion of functional haploidy (C2, C50) is well-supported by the convergence of transcriptomic and chromatin profiling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The paternal genome in Marchantia embryos is organized into large heterochromatic compartments marked by H3K27me3. Immunofluorescence reveals that eight of sixteen autosomes are densely coated with H3K27me3 in mitotic embryonic cells, corresponding to the paternal chromosome set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C40, C42-C44 are supported by immunofluorescence microscopy showing distinct H3K27me3 compartments in embryonic nuclei (C35-C36) that differ from vegetative cells (C34), with quantification showing 44% of H3K27me3 signal in these compartments (C36). Mitotic cell analysis directly demonstrates eight H3K27me3-coated chromosomes (C42), matching the expected paternal chromosome number. The consistency across different male accessions (C37) strengthens the conclusion. However, the image analysis methods are complex and could benefit from independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Sex chromosomes in Marchantia embryos are excluded from H3K27me3 compartments and instead associate with H3K9me1 heterochromatin. Despite this, the male V chromosome shows H3K27me3 enrichment and reduced expression compared to the female U chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by immuno-FISH data showing sex chromosomes do not colocalize with H3K27me3 foci (C45) but do associate with H3K9me1 (C46). Gene expression data (C48) and H3K27me3 enrichment analysis (C49) demonstrate male chromosome repression. The apparent contradiction between chromosome-level exclusion from H3K27me3 compartments (C45) and gene-level H3K27me3 enrichment (C49) is not fully explained, suggesting either technical limitations in FISH resolution or biological complexity in sex chromosome organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "H3K27me3 is deposited on the paternal pronucleus at 3 days after fertilization (daf), before pronuclear fusion at 4 daf. This timing allows parent-of-origin-specific marking while pronuclei remain spatially separated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by immunofluorescence time-course data showing H3 presence at 2 daf (C53) and H3K27me3 appearance at 3 daf (C54) in paternal pronuclei, before fusion at 4 daf (C52). The absence of histones in sperm (C51) necessitates post-fertilization deposition. However, C108 acknowledges that H3K27me3 below detection limits at 2 daf cannot be excluded, introducing some uncertainty about precise timing. The proposed propagation mechanism (C58) is inferred from prior work rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C71"
+    ],
+    "result": "Maternal PRC2 activity (E(z)2/E(z)3) is required for paternal H3K27me3 deposition and gene repression. Loss of maternal E(z)2/E(z)3 reduces paternal H3K27me3, increases biallelic transcription, and causes paternal allele derepression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66, C68, C71 are supported by genetic analysis of e(z)2/e(z)3 mutants showing reduced H3K27me3 (C60-C61), loss of paternal bias (C61-C62), and increased biallelic expression (C64-C65). The correlation between H3K27me3 loss and paternal allele expression (C66) provides mechanistic support. Statistical analyses show large effect sizes (Cohen's d = 1.03, C61, C64). However, C110-C111 acknowledge residual H3K27me3 from E(z)1 and potentially paternal E(z)2/E(z)3, complicating interpretation of complete maternal control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C15",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C113"
+    ],
+    "result": "Paternal chromosome repression is essential for embryonic development in Marchantia. Loss of PCR in e(z)2/e(z)3 mutants causes reduced growth, 80% embryonic lethality, and complete sterility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C15, C72-C76 are supported by dramatic phenotypic data showing reduced embryo size (C72), 20% survival versus 95% wild-type (C73), and no viable spores (C75). However, C76 and C113 explicitly acknowledge that ectopic gene expression due to loss of PRC2 activity, rather than loss of imprinting per se, could cause lethality. This alternative explanation cannot be excluded without additional experiments (e.g., rescue with paternal E(z)2/E(z)3 or analysis of specific gene dosage effects). The causal link between PCR loss and lethality remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C77",
+      "C78",
+      "C79",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Paternal chromosome repression (PCR) represents a novel form of genomic imprinting distinct from known mechanisms in flowering plants, mammals, and insects. PCR is characterized by post-fertilization H3K27me3 deposition, whole-genome paternal silencing, and maternal control of embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C77-C79, C89-C92 are supported by comparison to known imprinting mechanisms. The three distinguishing features (post-fertilization marking C89, whole-genome silencing C90, maternal control C91) are well-documented in the data. Differences from insect paternal genome elimination (C78) and mammalian XCI (C79) are clearly articulated. The claim of novelty (C14, C77) is justified by the unique combination of features. However, the breadth of comparison is limited to well-studied systems, and C88 notes that genome-wide searches in other viviparous organisms have not been conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C86",
+      "C87"
+    ],
+    "result": "Viviparity is sufficient for the evolution of imprinting in Marchantia. The haploid-dominant life cycle with maternal embryo support selected for maintaining haploid gene dosage through paternal chromosome repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82, C86-C87 are inferred from the data and supported by citations to theoretical work (C87). The presence of imprinting in viviparous Marchantia is consistent with theoretical predictions, but C82's claim that viviparity is \"sufficient\" is not directly tested. The evolutionary inference (C86) is reasonable but speculative, as it requires comparative data from non-viviparous bryophytes or other haploid-dominant organisms. C88 notes the absence of imprinting searches in other viviparous non-therian animals, limiting the generalizability of the sufficiency claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Pure embryonic transcriptomes were obtained through hand-dissection and washing of individual embryos at 13 days after fertilization. Principal component analysis confirms embryonic samples are distinct from vegetative and sexual organ tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C95-C97 are supported by methodological descriptions (C95-C96) and PCA results (C17). The sample preparation protocol includes multiple washes to remove maternal contamination (C96), and the distinctness of embryonic transcriptomes (C17) validates sample purity. The consistency of maternal bias across different collection methods (C20-C21) further supports purity. However, the reliance on a single embryo per replicate (C96) may introduce biological variability, though this is partially addressed by the number of replicates (n=11 for wild-type).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C100",
+      "C101"
+    ],
+    "result": "Embryos show differential expression of 3879 upregulated and 3466 downregulated genes compared to parents. Upregulated genes include 151 chromatin-related genes, notably embryo-specific PRC2 catalytic subunits E(z)2 and E(z)3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C100-C101 are supported by differential expression analysis with appropriate statistical methods. The identification of embryo-specific E(z)2 and E(z)3 expression (C27) is well-documented in Figure 2A. The maternal bias in upregulated genes (C25, Cohen's d = 0.276) provides additional support for maternal control. The enrichment of chromatin-related genes (C26) is clearly quantified. These results provide important context for the mechanistic studies but are primarily descriptive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C38",
+      "C39"
+    ],
+    "result": "Other histone modifications (H3K9me1, H3, H3K36me3) do not show paternal bias in Marchantia embryos. H3K9me1 marks constitutive heterochromatin on repetitive regions, while H3K36me3 associates with expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C38-C39 are supported by CUT&RUN data showing only 2-5% of genes with paternal bias for these marks (C32), and quantification showing low overlap with heterochromatic compartments (C38). The functional annotations (C39) are supported by citation to prior work. These negative controls strengthen the specificity of H3K27me3 findings, though the lower statistical power of CUT&RUN experiments (C105) should be considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C112"
+    ],
+    "result": "In e(z)2/e(z)3 mutants, 3824 genes are upregulated and 2003 downregulated. Downregulated genes significantly overlap with residual H3K27me3 peaks, while the majority of misregulated genes are upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C112 are supported by differential expression analysis and statistical testing (\u03c7\u00b2 test, p = 3.616e-15, C70). The predominance of upregulation (C112) is consistent with loss of repression. The overlap of downregulated genes with H3K27me3 peaks (C70) suggests residual PRC2 activity from E(z)1 (C110), though this interpretation is somewhat speculative. The data support the conclusion that E(z)2/E(z)3 primarily function in repression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C98",
+      "C99"
+    ],
+    "result": "The maternal transcription bias is genome-wide and independent of gene expression level. Genes resolved by SNP analysis are representative of all genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C98-C99 are supported by correlation analyses showing no relationship between maternal ratio and expression level (C22) or chromosomal position (C98). The inference of representativeness (C99) is reasonable given these distributions. However, the requirement for sufficient SNPs (\u226550 reads) may introduce some bias toward more highly expressed or polymorphic genes, though the authors address this concern adequately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "CUT&RUN chromatin profiling was performed on sorted diploid embryonic nuclei, with SNPs used to distinguish parental allele origin. Fewer genes were statistically resolved compared to RNA-seq due to fewer replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 describe the CUT&RUN methodology and acknowledge its limitations. The use of flow-sorted nuclei (C103) ensures diploid embryonic cells are analyzed. The SNP-based allele assignment (C104) is appropriate. The acknowledgment of reduced statistical power (C105) is honest and appropriate, though it does limit the comprehensiveness of chromatin profiling results. The methods are sound but the reduced power should be considered when interpreting negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Paternal H3K27me3 and maternal transcription do not correlate with absolute gene expression levels in e(z)2/e(z)3 mutants, suggesting expression level does not influence paternal allele repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by correlation analyses shown in Figure 5\u2014figure supplement 2B, E-G. This negative result is important for ruling out expression-dependent mechanisms of repression. However, the interpretation that \"absolute gene expression levels did not influence paternal allele repression\" is somewhat circular, as the mutant state already has altered expression. The analysis would be stronger if performed in wild-type embryos.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims about gene dosage control: Multi-subunit complexes require balanced production; misregulation causes defects; sex chromosome dosage compensation mechanisms vary across species; ploidy changes must be programmed; mammals manage dosage through meiotic and post-meiotic silencing; haploid species show limited dosage control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 are background knowledge supported by appropriate citations to prior work. These claims establish the context for the study and are not novel findings. The citations appear appropriate and the claims are generally accepted in the field. These provide important framing but are not results of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C39",
+      "C51",
+      "C83",
+      "C84",
+      "C93"
+    ],
+    "result": "Additional background claims: PRC2 deposits H3K27me3 and silences genes; H3K9me1 marks constitutive heterochromatin; Marchantia sperm lack histones; Arabidopsis shows equal parental expression; brown algae show epigenetic changes without Polycomb; rice zygotes show maternal dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C39, C51, C83-C84, C93 are background information supported by citations. These establish relevant prior knowledge about chromatin biology (C28, C39), Marchantia reproduction (C51), and comparative systems (C83-C84, C93). The citations appear appropriate and these claims are not contested. They provide important context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C41",
+      "C94"
+    ],
+    "result": "Marchantia polymorpha is a haploid-dominant plant with a short-lived diploid embryo. The diploid embryo has 2n=18 chromosomes (16 autosomes + 2 sex chromosomes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C41, C94 describe basic biological facts about Marchantia that are well-established in the literature. These are accurate descriptions of the study organism and provide essential context. C41 specifically states the karyotype, which is important for interpreting the immunofluorescence results showing eight H3K27me3-coated chromosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The formation of H3K27me3 heterochromatic foci in Marchantia is reminiscent of X chromosome compaction during mammalian XCI or meiotic sex chromosome inactivation. Similar mechanisms may mediate whole-chromosome compaction across taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 draw comparisons to known mechanisms (C80, supported by citations) but C81 is explicitly speculative (\"may be at play\"). While the morphological similarity is apparent, the molecular mechanisms underlying compartmentalization are not investigated in this study. The comparison is reasonable but the claim of similar mechanisms (C81) is not directly tested and remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C88"
+    ],
+    "result": "Sex chromosomes provide a paradigm for gene dosage control, but this phenomenon evolved multiple times. Imprinting has not been found in viviparous non-therian animals, but only orthologous mammalian loci were investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C88 are discussion points supported by citations. C85 makes a reasonable inference about the diversity of dosage control mechanisms. C88 correctly notes the limitation of prior searches for imprinting in non-therian animals. These are fair assessments of the field but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Various methodological considerations and limitations: H3K27me3 might be present on paternal alleles (hypothesis); pronuclei remain separated (prior work); H3K27me3 deposited after fertilization (hypothesis); timing uncertainty at 2 daf; maternal pronucleus difficult to image; E(z)1 accounts for residual H3K27me3; paternal E(z)2/E(z)3 may contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C106-C111 are methodological notes, hypotheses, and acknowledgments of limitations. These demonstrate appropriate scientific caution and transparency. C108 acknowledges detection limits, C109 explains missing data, and C110-C111 discuss alternative explanations for residual H3K27me3. These are important for interpreting results but are not findings themselves.",
+    "result_type": "MINOR"
+  }
+]

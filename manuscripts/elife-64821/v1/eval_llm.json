@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MPC inhibition with UK5099 leads to cytosolic pyruvate accumulation and severely impairs mitochondrial NADH production. The NAD(P)H overshoot was reduced ~7-fold, baseline NAD(P)H decreased by 8.3\u00b12.9%, and baseline O2 levels increased by 25\u00b116%, indicating reduced TCA cycle activity and O2 consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 provide converging evidence from multiple readouts (Pyronic sensor for pyruvate, NAD(P)H autofluorescence, O2 measurements) that MPC inhibition disrupts mitochondrial metabolism. The quantitative measurements are internally consistent and support the conclusion that pyruvate entry into mitochondria is essential for maintaining mitochondrial NADH production during neuronal activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Cytosolic NADH transients develop independently from mitochondrial NADH transients. MPC inhibition reduced cytosolic NADH transients by ~40%, but this effect was abolished when LDH was also inhibited, indicating the reduction was due to pyruvate-driven NADH re-oxidation rather than dependence on mitochondrial metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 demonstrate independence of cytosolic and mitochondrial NADH responses through a well-designed experiment using sequential inhibition. The key control (C33) showing that LDH inhibition prevents the MPC inhibition effect on cytosolic NADH is critical and well-executed. The logic is sound and the conclusion (C36) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Mitochondrial Ca2+ uptake via MCU is essential for the NAD(P)H overshoot but contributes minimally to the initial dip. MCU knockdown strongly attenuated the reductive phase while only marginally affecting the oxidative phase (~21% reduction in dip). Removing extracellular Ca2+ recapitulated these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 use both genetic (MCU knockdown) and pharmacological (Ca2+ removal) approaches that yield consistent results, strengthening the conclusions. The differential effects on the dip versus overshoot are clearly quantified and support the interpretation that Ca2+ activates TCA dehydrogenases rather than primarily affecting mitochondrial depolarization. The inference in C40 is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Despite elimination of the NAD(P)H overshoot, oxygen utilization was only slightly diminished by MCU knockdown, suggesting OXPHOS is maintained through alternative mechanisms. Potential compensatory mechanisms include increased malate-aspartate shuttle activity and use of alternative fuels like glutamate/glutamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C43 presents clear data on preserved O2 consumption, claims C44-C47 are largely speculative about compensatory mechanisms. The preservation of FADH2 signals (C46) provides some support, but direct evidence for increased MAS activity or alternative fuel usage is not provided. These remain plausible hypotheses requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Ca2+ elevation through multiple channel types is a major contributor to glycolytic NADH responses. Sequential inhibition with isradipine (L-type blocker), CdCl2 (non-selective blocker), EGTA-AM (intracellular chelator), and Ca2+-free ACSF all reduced cytosolic NADH transients by 71-73%, but did not abolish them completely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 use multiple orthogonal approaches (channel blockers, chelators, Ca2+ removal) that yield remarkably consistent reductions (~70-73%) in NADH transients. The convergence of results from different manipulations strongly supports the conclusion (C88) that Ca2+ is a major but not strictly required contributor. The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C4"
+    ],
+    "result": "Inhibition of Ca2+/calmodulin signaling with E6-berbamine or calmidazolium did not prevent glycolytic NADH transients. Instead, the NADHCYT transient relative to the Ca2+ spike was even higher with inhibition, indicating this pathway is not responsible for the acute glycolytic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C4 present clear negative results with two different inhibitors showing consistent effects. The observation that the normalized response actually increased (C54) is particularly compelling evidence against Ca2+/calmodulin involvement. The interpretation is straightforward and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C5",
+      "C56",
+      "C57"
+    ],
+    "result": "AMPK inhibition with dorsomorphin did not prevent glycolytic NADH transients in DGC somata, though it affected transient kinetics. AMPK appears irrelevant for neuronal lactate production in somata but may promote glucose uptake in synaptic terminals during prolonged activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 presents clear experimental evidence that AMPK is not required for acute glycolytic responses. Claims C56-C57 appropriately cite previous work to contextualize the findings and note compartment-specific differences. The conclusion is well-supported, though the mechanistic explanation for the kinetic changes could be explored further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Neuronal glycolysis can be driven by ATP hydrolysis from Na+ pumping in the absence of Ca2+. Application of \u03b1-pompilidotoxin (which increases Na+ influx) in Ca2+-free conditions induced a ~3.8-fold increase in cytosolic NADH transients, recovering ~81% of the control response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C89-C91 provide direct experimental evidence that Ca2+ is not strictly necessary for glycolytic activation. The \u03b1-pompilidotoxin experiment is well-designed to test the ATP hydrolysis hypothesis by increasing energy demand through Na+ pumping. The quantitative recovery of the response is impressive and strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C92",
+      "C93"
+    ],
+    "result": "Inhibition of Na+/K+-ATPase with strophanthidin reversed the increases in NADH transients produced by \u03b1-pompilidotoxin, confirming that ATP hydrolysis by ion pumping is the main trigger for neuronal glycolysis in response to stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C92, and C93 complete the logic of the ATP hydrolysis hypothesis by showing that blocking the ATP-consuming pump reverses the metabolic response. This is a critical control that strengthens the causal interpretation. The experimental design is sound and the conclusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The effectiveness of low-dose strophanthidin (10 \u00b5M) suggests the NKA \u03b13 isoform mediates coupling between neuronal activity and glycolysis. This isoform is highly expressed in neurons and confers high sensitivity to cardiotonic steroids, though its low Na+ affinity (K0.5=30-70 mM) suggests it acts primarily during strong activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 makes an inference about the specific NKA isoform based on drug sensitivity, supported by expression data (C65-C66) and kinetic properties (C67) from the literature. However, this remains indirect evidence. Direct demonstration of \u03b13 involvement (e.g., through isoform-specific knockdown) would be needed to definitively support this claim. The speculation is reasonable but requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Despite Ca2+ likely not accounting for most ion pumping, it is surprisingly important for promoting glycolysis. This may reflect better coupling of Ca2+ extrusion to glycolysis than Na+ extrusion, possibly through interactions between PMCAs and glycolytic enzymes, potentially involving the calmodulin-insensitive PMCA2 isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 presents an interesting observation, but claims C69-C71 are largely speculative about mechanisms. The cited literature supports the possibility of PMCA-glycolytic enzyme interactions, but direct evidence for this coupling in the current system is not provided. The speculation about PMCA2 (C70) is consistent with the calmidazolium results but remains indirect. Further experiments are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Ca2+ orchestrates increases in both glycolysis and the TCA cycle through compartmentalized dynamics. Ca2+ influx through voltage-gated channels promotes cytosolic glycolysis via energy demand from ion gradient restoration, while Ca2+ uptake into mitochondria is required for increasing mitochondrial NADH production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the major findings of the paper. Claims C2-C3 and C74-C77 are well-supported by the extensive experimental evidence presented throughout the manuscript, including MPC inhibition, MCU knockdown, Ca2+ manipulations, and \u03b1-pompilidotoxin experiments. The compartmentalized model is a logical integration of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Aerobic glycolysis in neurons is triggered mainly by energy demand from Na+ or Ca2+ extrusion, with Ca2+ creating the majority of this demand in mouse dentate granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are supported by the experiments showing that both Na+ and Ca2+ manipulations affect glycolytic responses, with Ca2+ manipulations having larger effects (~70-73% reduction) compared to the residual Na+-driven response. The conclusion that Ca2+ creates the majority of demand in DGCs is justified by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The preservation of O2 transients in DGC somata contrasts with impaired ATP production in MCU-deficient axon terminals. The contributions of MCU and the NAD(P)H overshoot to OXPHOS may differ among cellular compartments, especially under high energy demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 appropriately compares the current findings to previous work (Ashrafi et al., 2020), noting an important difference. Claim C49 offers a reasonable speculation about compartment-specific differences, though it remains to be tested. The comparison is valid and highlights an important consideration for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Cytosolic Ca2+ can activate the malate-aspartate shuttle, which may provide NADH to the mitochondrial matrix when intramitochondrial Ca2+ is low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by appropriate citations to previous work. While not directly tested in this manuscript, this mechanism is invoked to explain how OXPHOS can be maintained despite loss of the NAD(P)H overshoot. The logic is sound and consistent with established biochemistry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "During neuronal activity, Na+ and Ca2+ enter through voltage-gated channels, accelerating ion pumping and ATP consumption, which is replenished by OXPHOS and glycolysis. Energy demand is proportional to action potential frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C8-C11 represent established knowledge in neuroscience, appropriately cited and used as background for the study. These are not novel findings but provide necessary context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The mechanisms triggering ATP synthesis upregulation during neuronal activity are not fully understood. Possibilities include ATP degradation (ADP increases), feedforward signals (Ca2+, AMP via AMPK or direct PFK activation), or both. Ca2+ is a strong candidate for coordinating fast metabolic responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 appropriately frame the research questions addressed by the manuscript. These represent the state of knowledge prior to the current work and are supported by appropriate citations. The speculation (C17) is reasonable and motivates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Ca2+ handling is metabolically expensive and compartmentalized. Ca2+ uptake into mitochondria can dissipate membrane potential, increase OXPHOS, and activate TCA dehydrogenases. Cytosolic Ca2+ can modulate enzyme activity through Ca2+/calmodulin signaling or direct allosteric regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 represent established knowledge about Ca2+ metabolism and signaling, appropriately cited. These provide the mechanistic framework for interpreting the experimental findings and are well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The NAD(P)H autofluorescence signal in neurons predominantly reflects mitochondrial NADH changes because mitochondrial NADH concentration and protein-bound fraction are higher than in the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by citations to review articles and represents the accepted interpretation of NAD(P)H autofluorescence in neurons. This is important for interpreting the autofluorescence measurements throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "ADP and AMP can directly activate phosphofructokinase (PFK) to drive glycolysis. These mechanisms could operate in neurons despite low Pfkfb3 levels, as demonstrated in skeletal muscle where AMP/ADP compensate for lack of F2,6BP increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are well-supported by citations to previous work and provide a plausible mechanism for how ATP hydrolysis could drive glycolysis. The analogy to skeletal muscle (C60) is appropriate and strengthens the argument that this mechanism could operate in neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Glycolysis may provide fast, localized ATP supply near sites of high energy demand and additional ATP from oxidation of reducing equivalents shuttled to mitochondria. The NADHCYT transients may also reflect pentose phosphate pathway contributions, providing antioxidant capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73 present reasonable speculations about the functional significance of the glycolytic responses, supported by general knowledge of metabolism. However, these remain hypotheses that are not directly tested in the manuscript. The speculation is plausible but requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

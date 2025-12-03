@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "NompC is a mechanosensitive TRP ion channel with 29 ankyrin repeats that plays crucial roles in mechanosensation in Drosophila and other organisms. The cryo-EM structure shows four AR chains forming a ~15-nm-long supercoiled helix connecting to the transmembrane pore domain via a linker helix region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C18 establish the background and structural context for NompC based on well-cited prior work. These claims accurately represent established knowledge about NompC's function, structure, and evolutionary distribution, supported by appropriate citations to cryo-EM structures and functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "NompC opens under intracellular pushing/compression forces but not under pulling/stretching forces. MD simulations show pore dilation only under pushing conditions, with increased water molecules and ion permeation. Electrophysiological experiments confirm that NompC-expressing cells respond to positive pressure (compression) but not negative pressure (stretch).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19-C32 present converging evidence from MD simulations (pore radius analysis, water molecule counts, ion permeation) and patch-clamp electrophysiology (positive vs. negative pressure responses, GdCl3 blocking) that consistently demonstrate push-to-open gating. The complementary computational and experimental approaches provide strong support for this central finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Under pushing force, the TRP domain undergoes clockwise rotation and upward tilt, which induces S6 helices to rotate clockwise, pulling the gate residue I1554 away from the channel axis and leading to pore dilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 describe the conformational changes during gating based on PCA analysis and structural comparisons from MD simulations. The clockwise rotation and upward tilt of the TRP domain are well-documented in the figures, and the connection to S6 helix movement and I1554 displacement is mechanistically coherent and consistent with prior TRP channel structural studies cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Hydrogen bonds between the TRP and LH domains are critical for mechanosensitivity. Four stable hydrogen bonds were identified in MD simulations, and mutagenesis experiments show that mutations of five out of seven residues forming these bonds (W1572A, S1577A, R1581A, K1244A, Q1253A) result in significant loss-of-function, while S1421A does not affect function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C49 combine MD simulation identification of hydrogen bonds with systematic mutagenesis and electrophysiological validation. The loss-of-function phenotypes for most mutants (C43, C47) and the mechanistic explanation for why S1421A does not affect function (C46) provide strong support. The identification of W1572 as a rotation pivot (C44) is consistent with the structural analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The AR region acts as a spring with a force constant of ~13 pN nm\u207b\u00b9 for the whole bundle (~3.3 pN nm\u207b\u00b9 per chain). The AR region also generates a torque of ~13 pN\u00b7nm on the LH domain under compression, which helps rotate the TRP domain clockwise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50-C58 present mechanical characterization of the AR spring from MD simulations. The spring constant values are consistent with prior experimental (C54) and computational (C55, C56) measurements for single AR chains, and the finding that the four AR helices are not tightly coupled (C57) is well-supported by the comparison. The torque calculation (C50) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Forces are transferred through the AR region at a speed of 1.8 \u00b1 0.2 nm ps\u207b\u00b9, which is comparable to or slightly faster than force propagation through membranes (1.4 \u00b1 0.5 nm ps\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C59-C62 describe force transfer kinetics calculated from high-frequency MD simulations. The deviation time of ~7-8 ps (C59) and the resulting speed calculation (C60) are clearly described in the methods and figures. The comparison to membrane force propagation (C61, C62) provides useful context and is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The interface between AR and LH regions is crucial for force transduction. Two stable hydrogen bonds (W1115-D1142 and R1127-E1163) were identified in MD simulations. Mutations D1142A, R1127A, and E1163A cause significant loss-of-function, while W1115A does not, likely because Y1109 can compensate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63-C67 identify critical residues at the AR-LH interface through MD simulations and validate their importance through mutagenesis. The loss-of-function phenotypes (C64) and the compensatory mechanism for W1115A (C66) are well-supported by both simulations and experiments, strengthening the conclusion about the importance of this interface (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Compression of cells compresses the AR spring, generating both a pushing force and a torque on the TRP domain. The pushing force alone may be sufficient to generate clockwise rotation of the TRP domain, with critical residues (R1581, W1572, Q1253, S1577, K1244) ensuring proper rotation around pivot W1572.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 synthesize the mechanistic model from the simulation and mutagenesis data. The torque generation by the supercoiled AR structure is supported by citation to a mechanics study (C69), and the sufficiency of pushing force (C70) is consistent with the simulation results. The role of critical residues (C71) is well-supported by the mutagenesis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The push-to-open mechanism may be a universal gating mechanism for tethered mechanosensitive TRP channels with ankyrin repeats, enabling cells to sense compression and shrinkage, complementary to stretch-to-open mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C9, C72-C74 extrapolate the findings to other TRP channels and propose a general sensing mechanism. While the TRPV1 mutant study (C72) provides some support, these claims are largely speculative (C8, C73) and would require additional experimental validation in other channel systems to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Lipid molecules may play a synergistic role in NompC gating. H1423 can stably interact with POPC lipids in MD simulations, and OAG addition to the intracellular monolayer activates NompC while extracellular OAG has the opposite effect, suggesting a synergetic gating mechanism involving both force-from-tether and force-from-lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 present evidence for lipid involvement in gating from both MD simulations (lipid-protein interactions) and experiments (asymmetric OAG effects). The unidirectional OAG activation (C79, C80) is consistent with prior TRPC6 studies (C81), and the proposed synergetic mechanism (C82, C83) is a reasonable interpretation, though somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Despite limitations in simulation timescale preventing observation of full gating, a clear opening trend under pushing forces was observed in MD simulations and supported by electrophysiological experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 acknowledge the limitations of the MD simulations while emphasizing the consistency between computational and experimental results. This is an appropriate assessment of the study's scope and the complementary nature of the two approaches.",
+    "result_type": "MINOR"
+  }
+]

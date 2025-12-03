@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background claims establish that subcortical structures perform critical speech processing functions and that ABR/MLR waves reflect activity from distinct subcortical structures with characteristic latencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 are all supported by appropriate citations to prior literature. These establish the scientific foundation for the study by documenting known roles of subcortical structures in speech processing and the anatomical origins of ABR/MLR waves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior methods using continuous speech stimuli produce temporally broad responses with limited ability to distinguish early subcortical components, motivating the need for the peaky speech approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 accurately characterize limitations of existing methods through appropriate citations. The cross-correlation method (C12-C13) produces responses at ~9 ms from inferior colliculus, deconvolution (C14-C15) shows wave V, and cheech stimuli (C16-C17) show wave V but not earlier waves, establishing the gap this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Broadband peaky speech evokes canonical ABR waves I, III, and V in adults with normal hearing, with inter-wave latencies consistent with brainstem responses but absolute latencies later than standard click ABRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 are well-supported by data from 22 subjects showing identifiable waves I and V in all subjects and wave III in 19/22 subjects (C19-C20). Quantitative latency measurements (C21-C22) and comparisons to literature norms (C23-C24) provide convergent evidence. Figure 1 visually confirms the presence of canonical waves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Broadband peaky speech evokes more component waves (I, III, P0) than unaltered speech, with wave V being more robust and sharper but with longer peak latencies for all common waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by direct comparison data shown in Figure 2A and statistical analysis (C27). The morphological differences are clearly visible in the waveforms, and the latency differences are statistically significant with large effect sizes (d = 3.22, 3.44, 0.52 for waves V, Na, Pa respectively).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A pre-stimulus component in broadband peaky speech responses, present in both linear and auditory nerve models, suggests nonlinear response components not accounted for by pulse train deconvolution, which can be mitigated by high-pass filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by simulation results shown in Figure 3. The presence of the pre-stimulus component in both models (C28) supports the inference about nonlinearities (C29), and the effectiveness of filtering is demonstrated empirically (C30). However, the interpretation relies on computational models whose accuracy depends on their assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "EEG from broadband peaky speech can be flexibly analyzed with either pulse train or half-wave rectified regressors, but unaltered speech requires half-wave rectification to produce robust responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by data in Figure 4 showing high correlation (median 0.84) between peaky and unaltered speech when using half-wave rectified regressor (C31), but poor response morphology when using pulse train with unaltered speech (C32). This demonstrates the methodological flexibility of peaky speech.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Female-narrated broadband peaky speech produces smaller, later ABR responses compared to male-narrated speech, with fewer subjects showing clear wave III and significant latency delays for waves III and V.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by data from 11 subjects shown in Figure 5. The morphological similarities and differences are visible in waveforms (C33), subject counts are reported (C34), and statistical analysis confirms significant latency differences for waves III (p=0.007) and V (p<0.001) but not wave I (C35). The effect is attributed to the ~77 Hz difference in fundamental frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Frequency-specific responses to multiband peaky speech show characteristic ABR and MLR waves with frequency-dependent latencies, with early waves visible in higher frequency bands and MLR waves prominent in lower frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by data from 22 subjects shown in Figure 6. The frequency-dependent latency pattern (C36, C39) is consistent with cochlear physiology and confirmed by statistical analysis (p<0.001). The distribution of wave visibility across frequency bands (C37-C38) is documented with subject counts. Power law modeling parameters fall within expected ranges from literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The summed multiband response is strikingly similar to the broadband peaky speech response, with high correlation coefficients for both ABR and MLR lags.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by data in Figure 7 showing median correlation coefficients of 0.90 for ABR lags and 0.66 for MLR lags. This validates that frequency-specific responses sum linearly to reconstruct the broadband response, confirming minimal overlap in cochlear regions and the validity of the multiband approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Multiband responses to female-narrated speech are smaller and more variable than male-narrated speech, with better male-female correlations for higher frequency bands and ABR compared to MLR lags.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by data from 11 subjects shown in Figure 8. The morphological differences are visible (C41), and correlation coefficients are quantified across frequency bands (C42-C43). The pattern of better correlations for higher frequencies and ABR versus MLR is consistent with the signal quality differences between narrators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Dichotic multiband speech yields ear-specific frequency responses with waves I and III visible in higher frequency bands, showing moderate left-right ear and male-female correlations that improve with increasing frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by data from 11 subjects shown in Figure 9. Wave visibility is documented with subject percentages (C44), and correlation coefficients are quantified (C45-C46). The frequency-dependent pattern of correlations is consistent with signal quality, though the smaller response amplitudes limit the strength of conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Male-narrated broadband peaky speech achieves 0 dB SNR rapidly (2-5 min for ABR in all subjects), with acquisition times similar to unaltered speech for MLR but faster for ABR, while female-narrated speech requires 2.1-10\u00d7 longer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by SNR analysis shown in Figure 10. The acquisition times are quantified for different conditions and filtering approaches (C47-C48), and the dramatic narrator effect is documented (C49). The SNR calculation methodology is described in detail in Methods, though the choice of 0 dB threshold is somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Multiband peaky speech requires significantly longer recording times than broadband speech, with 72% vs 45% of subjects achieving 0 dB SNR for all bands by 32 min for male vs female narrators (diotic), and 45% vs 27% of ears by 64 min (dichotic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by SNR analysis shown in Figure 11. The acquisition times are quantified for different multiband configurations (C50-C54), showing the trade-off between frequency specificity and recording time. The data clearly demonstrate that multiband approaches require substantially longer sessions (30-60+ min) than broadband approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study used appropriate methods including normal-hearing subjects aged 18-32 years, 65 dB SPL presentation, 10 kHz EEG sampling, and demonstrated excellent reliability (ICC \u22650.90) for peak latency measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe methodological details that are clearly documented in the Methods section. The fundamental frequencies (C55), subject demographics (C56-C57), stimulus presentation parameters (C58), EEG recording parameters (C59), and reliability analysis (C60) are all appropriately reported and support the validity of the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

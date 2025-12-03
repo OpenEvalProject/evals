@@ -1,0 +1,1493 @@
+{
+  "submission": {
+    "id": "6ed079dd-5906-4bc9-9529-9aead19d646d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:21:36.328333Z",
+    "updated_at": "2025-12-03T20:21:36.328333Z"
+  },
+  "content": [
+    {
+      "id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "submission_id": "6ed079dd-5906-4bc9-9529-9aead19d646d",
+      "content_type": "manuscript",
+      "content_text": "# Spike-phase coupling patterns reveal laminar identity in primate cortex\n\n## Authors\n\n- Zachary W Davis<sup>1</sup> ([ORCID: 0000-0003-4440-9011](https://orcid.org/0000-0003-4440-9011)) \u2020\n- Nicholas M Dotson<sup>1</sup> ([ORCID: 0000-0002-0885-2182](https://orcid.org/0000-0002-0885-2182))\n- Tom P Franken<sup>1</sup> ([ORCID: 0000-0001-7160-5152](https://orcid.org/0000-0001-7160-5152))\n- Lyle Muller<sup>3</sup> ([ORCID: 0000-0001-5165-9890](https://orcid.org/0000-0001-5165-9890)) \u2020\n- John H Reynolds<sup>1</sup> \u2020\n\n### Affiliations\n\n1. The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))\n2. Department of Neuroscience, Washington University in St. Louis School of Medicine St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n3. Department of Mathematics, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n4. Brain and Mind Institute, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe cortical column is one of the fundamental computational circuits in the brain. In order to understand the role neurons in different layers of this circuit play in cortical function it is necessary to identify the boundaries that separate the laminar compartments. While histological approaches can reveal ground truth they are not a practical means of identifying cortical layers in vivo. The gold standard for identifying laminar compartments in electrophysiological recordings is current-source density (CSD) analysis. However, laminar CSD analysis requires averaging across reliably evoked responses that target the input layer in cortex, which may be difficult to generate in less well-studied cortical regions. Further, the analysis can be susceptible to noise on individual channels resulting in errors in assigning laminar boundaries. Here, we have analyzed linear array recordings in multiple cortical areas in both the common marmoset and the rhesus macaque. We describe a pattern of laminar spike\u2013field phase relationships that reliably identifies the transition between input and deep layers in cortical recordings from multiple cortical areas in two different non-human primate species. This measure corresponds well to estimates of the location of the input layer using CSDs, but does not require averaging or specific evoked activity. Laminar identity can be estimated rapidly with as little as a minute of ongoing data and is invariant to many experimental parameters. This method may serve to validate CSD measurements that might otherwise be unreliable or to estimate laminar boundaries when other methods are not practical.\n\n## Introduction\n\nLinear array electrodes have become a ubiquitous electrophysiological tool for understanding the functional roles of neural populations across the layers of the cortex, their interactions, and the computations they perform. This understanding requires reliable assignment of neurons to their respective laminar compartments. Precise localization of individual neurons can be obtained by electrolytic lesion to mark the position of an electrode; however, this procedure is not practical in experiments where the same animal is used in multiple experimental sessions as is nearly always the case in experiments involving non-human primates. The gold standard for identifying laminar compartments from functional recordings is current-source density (CSD) analysis (Mitzdorf, 1985; Mitzdorf and Singer, 1978; Schroeder et al., 1998). The CSD represents the second spatial derivative of local field potential (LFP) activity averaged to repeated events. These events are often sensory-evoked stimulation as in flashed visual stimuli in visual cortex (Maier et al., 2010; Schroeder et al., 1991; Wang et al., 2020) or short duration sounds in auditory cortex (Happel et al., 2010; Lakatos et al., 2007; Szymanski et al., 2011) which produce feedforward activation of the canonical cortical columnar circuit via activation of the input layer (Gratiy et al., 2011; Mitzdorf, 1985; Mitzdorf and Singer, 1978). Laminar compartments can then be assigned from the timing of subsequent patterns of current sources and sinks across electrode contacts on the linear array (Mitzdorf, 1985). The earliest current sink reflects the feedforward activation of the input layers (Mitzdorf, 1987; Mitzdorf, 1985), and the current sources above and below are used to estimate the boundaries with respect to superficial (layers 1\u20133) and deep (layers 5 and 6) cortical layers (Self et al., 2013). CSD analysis has been validated histologically (Mitzdorf and Singer, 1979; Schroeder et al., 1991; Takeuchi et al., 2011) and reliably captures known laminar differences in the functional properties of cortical layers, such as differences in evoked latencies across layers in response to driving input (Bode-Greuel et al., 1987; Einevoll et al., 2013; Plomp et al., 2017).\n\nThere are some limitations on the use of CSD for identifying cortical layers in electrophysiology recordings. CSD analysis has largely been limited to primary sensory areas where the types of sensory stimuli that can robustly and reliably generate the evoked responses necessary for averaging CSDs are well established. Although CSD analysis has been used in higher-order cortical areas where sensory-evoked responses are apparent, such as visual responses in frontal cortex (Bastos et al., 2018; Godlove et al., 2014), it is less clear what to use as a triggering event in non-sensory cortical areas to reveal similar laminar patterns. Another limitation of CSD analysis is that depth estimates can only be taken as the average across the period of sensory response collection, making it difficult to track electrode drift during a recording. Further, noise in recordings due to bad channels, variability in filtering parameters, or ambiguity in the identifying source\u2013sink pattern could potentially lead to the elimination of otherwise useful data or inaccurate laminar assignment. Without an alternative means of estimating the depth of electrode contacts, analyses of cortical circuit function are at risk of using biased definitions of laminar identity resulting in spurious conclusions about layer-dependent neuronal features.\n\nHere, we present a new method for determining laminar boundaries in cortical recordings based on spike-phase coupling patterns across linear array electrodes. Previous work has shown ongoing spiking activity is strongly coupled to the phase of LFP fluctuations in the cortex (Davis et al., 2022; Destexhe et al., 1999; Dotson et al., 2014; Eeckman and Freeman, 1990; Esghaei et al., 2018; Haegens et al., 2011) and these spike\u2013field relationships can be diagnostic of circuit interactions in cortical systems (Safavi et al., 2023). We hypothesized that, as phase shifts occur across the layers of the cortex, the preferred phase angle of this spike\u2013LFP relationship should be influenced by or reflect changes in laminar circuitry that contribute to differences in sources and sinks. We find that there is a phase reversal in spike\u2013field coupling that reliably corresponds to the laminar boundary between input and deep layers as estimated by CSD. We therefore propose a novel methodology, called laminar-phase coupling (LPC), for identifying the laminar boundary between input and deep cortical layers. This pattern reliably reversed in awake recordings from both common marmosets and rhesus macaque in multiple cortical areas including extrastriate visual and prefrontal cortex. This method can be applied to the same data used for CSD analysis, but can also be applied to any cortical linear array recording data without the need for specific sensory stimuli as with CSD analysis. Data recorded under a variety of conditions, such as during behavioral tasks, spontaneous activity during fixation, or continuous data recorded in the dark all reliably reveal the same pattern of laminar-phase separation. LPC is largely invariant to filtering or referencing, and can be done on single- or multi-unit activity. The analysis does not require averaging and can be calculated online to estimate recording depth throughout the duration of an experiment. The preferred phase angle in the spike\u2013field relationship is a simple yet effective measure for estimating contact depth in linear array recordings with respect to laminar boundaries and may help inform the study of cortical circuits in situations where CSD measurements are ambiguous or where CSD methods are impractical or ineffective.\n\n## Results\n\nWe recorded electrophysiology data from 32-channel linear probes (Atlas Neuroengineering) inserted perpendicular to the cortical surface into cortical regions V4 in two macaque monkeys and middle temporal (MT) or pre-frontal cortex (PFC) in two marmoset monkeys performing head-fixed visual tasks under various experimental conditions (Figure 1a). CSD analyses were performed using stimulus-locked LFP epochs (Figure 1b). These epochs were locked to stimulus flashes in the case of V4 and MT recordings or full field flashes in the case of PFC recordings. As standard in CSD analysis (Franken and Reynolds, 2021; Nandy et al., 2017; Schroeder et al., 1998; Self et al., 2013; Westerberg et al., 2022), we took from the resulting evoked source\u2013sink patterns the earliest sink (red) as the location of the input layers and assigned our reference depth relative to the input layer as the bottom of the current sink, with the boundaries to the sources (blue) above and below identifying the boundaries of the superficial and deep cortical layers (Figure 1c, d).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of recording locations in two marmosets (PFC or MT) and two macaques (V4). Recordings were made with a 32-channel linear silicon probe in an acute recording chamber penetrating through a silicone artificial dura (AD). (b) Average evoked local field potential (LFP) responses to a stimulus flash (N = 141 trials) in an example macaque recording session in area V4. Each line is the response measured on a single contact. The depth is in absolute distance from the most proximal contact. (c) CSD measurement from the example recording session in b. The input layer is defined as the bottom and top of the earliest current sink (red), with the superficial and deep layers defined as above and below the input layer, respectively. Depth is measured relative to the bottom of the input layer. (d) Same as c, but in an example marmoset MT recording session (N = 225 trials).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Power spectral density for 10 s of continuous LFP recorded from a marmoset during CSD mapping. Plotted are the power spectral density (PSD) from three channels based on their laminar compartment (superficial layers, blue; input layer, red; deep layers, yellow). (b) Same as in a, but from a macaque recording. (c) The average PSD for 10-s segments across all recording sessions in a single marmoset (N = 8; error bars denote standard error of the mean [SEM]). (d) Same as c, but for the sessions across one macaque (N = 6).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) One second of local field potential (LFP; black) overlaid with the signal after filtering from 5 to 50 Hz (left) or alpha band (8\u201314 Hz, right). In pseudo color is the phase of the filtered signal using GP. (b) Comparison between phase measured using the Hilbert Transform (red line) and GP (blue line) for the 1 s 5\u201350 Hz (left) or 8\u201314 Hz (right) filtered LFP in a. (c) Instantaneous frequency of the 5\u201350 Hz (left) or 8\u201314 Hz (right) filtered LFP. Note the phase reversals for the Hilbert Transform in b occur where the instantaneous frequency becomes negative. These are targeted and replaced by the GP algorithm.\n\nIn order to test the relationship between spiking and LFP phase across the layers of the cortex, we first identified multi-unit spike times and measured the generalized phase (GP) of the LFP filtered from 5 to 50 Hz (Davis et al., 2022; Davis et al., 2020a). The use of a wider filter than traditionally used (i.e. 4\u20138 or 8\u201315 Hz) helps reduce phase distortions that occur when applying narrowband filters to signals that have broad spectral content (Figure 1\u2014figure supplement 1). GP provides a measure of wideband phase that corrects for errors that may arise from applying the Hilbert Transform to signals with broader spectral content (Figure 1\u2014figure supplement 2), although our results did not depend on our specific use of these techniques. We binned electrodes into superficial, input, and deep layers depending on their location relative to the source\u2013sink pattern defined in the CSD analysis.\n\nWe first calculated the degree of spike coupling on each channel to the LFP phase measured on the same channel grouped by cortical layer (Figure 2a). This was done by taking the length of the circular resultant of the spike-phase distribution, which we call the spike-phase index (SPI). This index value ranged from 0 (perfectly uniform spike-phase distribution) to 1 (all spikes occur at a single phase). The superficial channels had an average SPI value of 0.162 \u00b1 0.012 (mean \u00b1 standard error of the mean [SEM]; N = 34 sessions; Figure 2b). This was significantly greater than the input layer (SPI = 0.122 \u00b1 0.010 mean \u00b1 SEM; p = 0.0003, Wilcoxon signed-rank test; Figure 2c), and both were significantly greater than the deep layers (SPI = 0.073 \u00b1 0.009 SEM; p = 0.000003 S. v. D. and p = 0.000009 I. v. D.; Figure 2d, e). The preferred LFP phase angle (i.e. the circular mean of the phase distribution) for spiking in the superficial and input layers was 2.86 and \u22122.68 rad, respectively, which corresponds toward the trough of ongoing LFP fluctuations. This was significantly different from the preferred phase angle for deep layer spiking (\u22121.44 rad; F = 38.52, p < 1 \u00d7 10\u22127 and F = 21.15, p = 0.00002, respectively; Watson\u2013Williams test; Figure 2f) suggesting that indeed the deeper layers may be distinguished by a change in the preferred spike\u2013LFP phase angle relative to the superficial electrodes and this could be read out from the spike\u2013LFP relationship across the depth of the cortex.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig2-v2.jpg)\n\n**Figure 2.:** (a) Spike\u2013LFP phase coupling was measured by taking the phase of the LFP on a contact at the times when multi-unit spikes were detected on the same contact. (b) Spike-phase distribution for superficial contacts averaged across all recordings sessions (N = 34 sessions across 4 monkeys; error bars denote standard error of the mean [SEM]). The spike-phase distribution was strongly peaked toward \u00b1\u03c0 rad. (c, d) Same as b, but for contacts in the input and deep layers. (e) The average spike-phase index (SPI) was significantly weaker for input and deep layers relative to the superficial layer (0.16 vs. 0.12 and 0.07; p = 0.017 S. v. I. and p < 1 \u00d7 10\u22127 S. v D.; Wilcoxon signed-rank test; *p < 0.05, ***p < 0.0001). (f) There was no difference in the preferred LFP phase angle between superficial and input layers, but a significant difference between these layers and deep layers (\u22122.86 and \u22122.68 vs. \u22121.44 rad; F = 38.52, p < 1 \u00d7 10\u22127 and F = 21.15, p = 0.00002, respectively; Watson\u2013Williams test).\n\nWhile the previous analysis examined the spike-phase relationship on each channel as a function of cortical depth on average, because of variability in the preferred mean phase on each channel (due to factors such as the strength of spike\u2013LFP coupling and the number of spikes recorded), there was no significant correlation between the preferred phase angle and the depth of the electrode as measured with CSD (circular\u2013linear correlation r = 0.28; p = 0.24). A more sensitive measure is to relate the preferred phase angle in the spike\u2013LFP relationship across the depths of all channels in the cortex. This was achieved by calculating the SPI from the multi-unit spiking activity on a given channel relative to the LFP phase angle measured on each contact across the depth of the recording (Figure 3a). We call the resulting matrix the cross-channel LPC. As an example, the first matrix row is derived from the spikes recorded on the first channel compared against the phase measured from the LFP on each of the 32 channels. The second row is derived from the spikes on the second channel compared against the phase measured from the LFP on each channel, and so on. The result is a 32-by-32 matrix where each cell represents the relation between the spikes on one channel and the LFP phase on another channel. However, not all of these channels are in the cortex, so we realigned the matrix based on estimates of cortical depth from the bottom of the input layer as identified from CSD analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic displaying cross-channel phase coupling analysis. The spike times on each channel are compared against the phase of the LFP on each other channel, yielding a matrix of spike-phase coupling. (b) Example recording session cross-channel spike-phase index (SPI) values from marmoset MT. Red dashed lines indicate the estimated depth of the bottom of the input layer from current-source density (CSD) analysis. (c) Preferred phase angles for the cross-channel spike-phase relationships in b. Spikes across all channels preferred \u00b1\u03c0 rad phase angles from LFP measure on superficial and input electrodes, but preferred 0 rad phase angles from LFP measured on deep phase angles. The LFP phase reversal aligns well to the estimate of the input layer from CSD analysis (red dashed line). (d) Grand average cross-channel SPI across all recording sessions in MT, V4, and PFC aligned to the putative input layer from CSD analysis (N = 34 sessions). (e) Grand average of the preferred phase angle for the data in d. (f) Scatter plot shows a significant correlation between the depth of the bottom of the input layer estimated from CSD analysis (x-axis) and the depth of the phase reversal (y-axis; Pearson\u2019s r = 0.64, p = 0.00005).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Grand average cross-channel spike-phase index (SPI) measurements for sessions recorded in marmoset PFC (a; N = 14), macaque V4 (b; N = 12), and marmoset MT (c; N = 8). The depth measurements are relative to the estimate of the bottom of the input layer from current-source density (CSD) analysis. (d\u2013f) Grand average cross-channel preferred spike-phase angles for the cortical areas as in a\u2013c. The phase reversal is well aligned to the putative input layer estimated from CSD analysis.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Example cross-channel laminar-phase coupling (LPC) from marmoset MT after filtering local field potential (LFP) from 5 to 50 Hz calculated using Generalized Phase (GP). (b\u2013e) Same as in a, but after filtering in theta (4\u20138 Hz), alpha (8\u201314 Hz), beta (15\u201330 Hz), or low gamma (30\u201350 Hz) frequency bands and measuring phase with the Hilbert Transform. The LPC reversal occurs at the same depth regardless of filter bandwidth. (f) Scatter plot showing the lack of dispersion from unity between depth estimates made using the 5\u201350 Hz filter or each of the tested narrowband filters.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Laminar-phase coupling (LPC) grand average across all sessions (N = 34) for well-isolated single units. Units were aligned across sessions relative to their index from the median index. The use of single-unit spiking instead of MUA produces qualitatively similar results.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Example cross-channel laminar-phase coupling (LPC) measurements for different experimental conditions during the same recording session. The spike-phase reversal is consistent across receptive field mapping, free viewing in total darkness, fixation on a blank screen during a visual detection task, or freely viewing naturalistic images. Example data from marmoset MT.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Cross-channel laminar-phase coupling (LPC) measurements from the same recording session with the integrated reference contact, re-referencing to the top most contact, the bottom most contact, or a common average reference (CAR) from top to bottom, respectively. The presence of the laminar-phase reversal is not dependent on referencing. Example data from macaque V4.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (a\u2013c) Cross-channel LPC measurements from three example sessions generated from 1 min of recorded data. The phase reversal in these sessions is well aligned to the estimate from the entire recording. (d) LPC measurement from the first 3 min of a different linear probe recording. (e\u2013h) LPC measurements of the subsequent 3 min of the same recording in d. The location of the phase reversal drifts over the course of the first 15 min of the recording. (i) Scatter plot comparing the estimated depth of the phase reversal based on the first (x-axis) or last (y-axis) 2 min of the recording session (N = 19). Drift of 100\u2013300 \u03bcm is consistently observed across recordings.\n\nWe first looked at the SPI values across the cross-channel LPC matrix. Figure 3b shows an example from a single recording (note that the diagonal in this matrix, from top left to bottom right, represents the approach in Figure 2). In this recording, we found that superficial spiking activity (defined based on CSD analysis) was strongly coupled to the LFP phase recorded on other superficial channels, which dropped off sharply below the input layer, and recovered when computed relative to the LFP phase on deeper channels. We next looked at the preferred phase angle for spiking activity on each channel relative to the LFP phase measured for different laminar compartments (Figure 3c). We found that spiking activity on all channels, regardless of cortical depth, tended to spike during \u00b1\u03c0 radian LFP phase angles measured on superficial channels. This phase relationship flipped such that spiking on all channels, regardless of cortical depth, tended to spike during 0 radian phase angles for LFP measured on deep channels. This phase reversal occurred about the channel we identified from CSD analysis as the boundary between the input and deep layers in the cortical column.\n\nIn order to see if this pattern held across our recordings, we then aligned all of our recordings (N = 34) relative to the boundary that separated input and deep layers (from each recording\u2019s CSD) and computed grand averages for SPI (Figure 3d) and preferred phase angle (Figure 3e). The average pattern across recordings showed the laminar-phase reversal was well aligned to the estimate of the input layer from the CSDs across recordings. This was also true when we broke out the recordings to only average across sessions in each cortical area (MT, V4, PFC; Figure 3\u2014figure supplement 1). To quantify how well the cross-channel LPC and CSD aligned on each individual recording session, we compared the depth of the laminar boundary estimated from CSD analysis to the depth at which the preferred spiking phase angle reversed (Figure 3f). There was a significant correlation between the depth estimated from the CSD and the phase reversal (r = 0.64, p = 0.00005; Pearson\u2019s correlation) and no significant difference between the estimated depth values (mean difference = 271 \u00b1 49 \u03bcm SEM; p = 0.98, Wilcoxon signed-rank test).\n\nWe next asked whether the observed phase relationship was parameter dependent. We first asked whether or not the specific use of a 5\u201350 Hz filter or the calculation of GP was necessary to see the laminar-phase reversal. To test this we filtered the data in a variety of commonly used frequency bands (4\u20138, 8\u201314, 15\u201330, and 30\u201350 Hz) and calculated phase using the Hilbert Transform (Figure 3\u2014figure supplement 2). We found that the observed phase reversal was apparent in each case, indicating the results were not dependent on the filter or the method used to compute phase. We also tested whether the results depended on the use of multi-unit spiking activity. We performed the same analysis aligning cross-channel LPC from single units across recording sessions based on CSD depth (Figure 3\u2014figure supplement 3). We observed the same relationship between laminar depth and preferred phase angle as when using multi-unit spiking activity. We also separated out different conditions during the same recording session where the electrode placement was unchanged (Figure 3\u2014figure supplement 4). These included fixation during a visual task, freely viewing natural scene images, freely viewing in total darkness, and fixation during receptive field mapping. The cross-channel LPC revealed qualitatively similar depths for the laminar-phase reversal across experimental conditions within the same penetration. Finally, we explored the impact of referencing on the presence of the phase reversal. In our recordings, the electrode probe had a reference contact at the base of the shaft. In order to test whether our results depended on the location of the reference contact we re-referenced the LFP data to the shallowest contact, the deepest contact, or a common average reference (Figure 3\u2014figure supplement 5). The phase reversal persisted under all referencing conditions. These results indicate the phase relationship is a robust feature of columnar recordings and not dependent on a particular set of parameters.\n\nOne of the advantages of the LPC method is it can be done without the need for a triggering event, like a stimulus onset. Further, as little as a minute of continuously recorded data is sufficient to recover the phase reversal across channels. We find estimates can be derived from as few as hundreds of multi-unit spikes on each channel, although estimates are more reliable when spikes number in the thousands. As a result, depth estimates can be sampled at arbitrary points during recording sessions making this technique sensitive to tracking putative electrode drift over the course of a recording. To demonstrate this, we calculated LPC on sequential 3-min epochs during the first 15 min of an example recording session (Figure 3\u2014figure supplement 6). We found the depth of the phase reversal moved over the course of 15 min. When comparing the depth after the first or last 2 min across all recordings, we found a significant difference in the estimated depth of the input layer from the spike-phase reversal (p = 0.005, Wilcoxon signed-rank test) such that the estimate of input layer depth consistently drifted deeper across recording sessions by an average of 132 \u00b1 26 \u03bcm (SEM). This change in the depth estimate across the recording is consistent with electrode drift from movement of the probe relative to the cortex as the tissue settles at the start of the recording.\n\nThe cross-channel LPC relies on both spikes and LFP, but if a similar phase pattern can be observed in the LFP alone, it may not require spiking activity to detect the laminar boundary. To test this we measured the circular\u2013circular cross-correlation between LFP phase on each channel and LFP phase on each other channel. On many recording sessions we found a characteristic phase correlation pattern that seemed to align well with both CSD and LPC depth estimates (Figure 4a\u2013c), and across many recordings the phase correlations within layers could dissociate laminar compartments. However, this was not always the case. Some sessions yielded phase correlation patterns that were noisy and difficult to interpret, although knowing where the boundary was made it easier to identify the characteristic pattern (Figure 4d, e). While, on average, LFP phase correlations can be informative (Figure 4f), the spike\u2013LFP phase relationship appears to provide a more robust measure of contact depth.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig4-v2.jpg)\n\n**Figure 4.:** (a) Preferred phase angle across all 32 channels from an example marmoset recording. The red dashed line indicates the current-source density (CSD) estimate of the bottom of the input layer. (b) Circular LFP phase correlation across channels. There is a strong within compartment correlation that aligns with the boundary between channels above and below the input/deep boundary (red dashed lines). (c, d) Same as panels a and b, but for a macaque recording. (e, f) Same as above, but an example of poor phase correlation within compartments despite strong phase reversal alignment with CSD. (g, h) Grand averages for preferred phase angle and LFP phase correlations across all recording sessions (N = 34). Plots were aligned to the putative input/deep layer boundary identified by CSD analysis.\n\nAcross our recordings there were some instances (14/34) where there was 200 \u03bcm or more disagreement between CSD and LPC estimates for the location of the input layer relative to the probe contacts. Figure 5a shows an example CSD that has the characteristic source\u2013sink pattern used to identify the input layer. This estimate was well aligned to the cross-channel LPC pattern previously described (Figure 5b, c). However, Figure 5d shows an example of a CSD profile with a similar source\u2013sink pattern that is not well aligned to the cross-channel LPC pattern, which shows the characteristic phase reversal 600 \u03bcm below the CSD estimate (Figure 5d, e). In order to determine which measurement was more accurate in identifying cortical depth in these cases of disagreement, we sought to use each measure to replicate two findings from the literature that varied with cortical depth.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig5-v2.jpg)\n\n**Figure 5.:** (a) Example CSD from macaque V4 with estimate of input layer boundaries indicated by red dashed lines (N = 81 trials). (b) Cross-channel spike-phase index (SPI) for the same example recording as the CSD in a. Red line is the CSD estimate of the bottom of the input layer. Green line is the estimate from the phase reversal. (c) Cross-channel spike-phase pattern for same recording as in a and b. The phase reversal is well aligned to the CSD estimate of the input layer. (d) CSD from a different example recording session in marmoset MT (N = 661 trials). Laminar depth estimated the same as in a. (e, f) Cross-channel SPI and phase angle as in b and c. The CSD and phase reversal estimates do not align.\n\nFirst, previous work in multiple cortical areas has shown that the superficial layers have lower firing rates as compared to the input and deep layers (de Kock and Sakmann, 2009; Haegens et al., 2015; Lakatos et al., 2005; Leszczy\u0144ski et al., 2020). We identified recording sessions where the CSD and LPC estimate of input depth differed by more than 200 \u03bcm (N = 14 sessions) and we measured the average firing rate as a function of depth relative to either the CSD or LPC estimate of the input layer (Figure 6a). We found that on these sessions, the CSD aligned firing rates failed to recapitulate the finding of higher firing rates in the input and deeper layers (p = 0.09, Wilcoxon signed-rank test). Conversely, we did find significantly stronger input firing rates when aligned to the LPC estimate (p = 0.0003, Wilcoxon signed-rank test), suggesting the LPC estimate on these sessions was better aligned than the CSD to the ground truth.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84512/elife-84512-fig6-v2.jpg)\n\n**Figure 6.:** (a) Normalized spontaneous firing rates across sessions when CSD and LPC disagreed as a function of contact depth by more than 200 \u03bcm (N = 14; shaded regions denote standard error of the mean [SEM]). LPC captures the expected higher spontaneous firing rates around the input layer. (b) Mean z-scored LFP power across sessions in lower frequencies (8\u201330 Hz, blue line) and higher frequencies (65\u2013100 Hz, red line) as a function of electrode depth referenced to the CSD estimate for sessions. (c) Same as in a, but referenced to the depth estimate from the LPC phase reversal across sessions. The laminar power relationship is more pronounced when using the phase reversal instead of CSD estimate. (d) Scatter plot showing the disagreement in the depth of the input layer estimated from CSD (x-axis) and the depth from LPC (y-axis) in this subset of recording sessions. (e) Scatter plot showing the alignment of the CSD input depth (x-axis) crossover in LFP power (y-axis). (f) Same as e, but for LPC. The LPC depth measure was more correlated with the LFP power reversal than the CSD measure (Pearson\u2019s r = 0.65 vs. 0.87 CSD vs. LPC).\n\nWe next examined a second previously reported finding that varied with laminar depth. Previous groups have reported an inversion in the spectral content of the LFP across layers, with the superficial layers exhibiting more high-frequency power (e.g. 80\u2013200 Hz) and the deep layers exhibiting more low-frequency power (8\u201320 Hz) (Maier et al., 2011; Maier et al., 2010). The crossover between the power in higher and lower frequencies was reported to occur around the input layers defined from CSD measurements (Bastos et al., 2018), and validated histologically in multiple cortical areas (Mendoza-Halliday et al., 2022). To test whether we could identify a similar relationship in these ambiguous recordings, and whether that relationship was stronger when aligned to CSD or LPC estimates of depth, we calculated low- and high-frequency power on each channel in each session and aligned them to each depth estimate (Figure 6b, c). The depth estimate from the LPC measure was significantly correlated with the high/low power inversion (Pearson\u2019s r = 0.87, p = 0.00005) whereas the CSD estimate was more weakly, although still significantly correlated (Pearson\u2019s r = 0.65, p = 0.012), indicating that on the recording sessions where there was some disparity between the CSD and LPC estimate (Figure 6d), the LPC better captured the power inversion than the CSD measure (Figure 6e, f). These results suggest that when noise or error in assigning laminar compartments based on CSD analysis occur, the LPC phase reversal is a more reliable measure of laminar depth.\n\n## Discussion\n\nThe cortical column is one of the fundamental computational circuits in the brain. In order to understand the function of disparate cortical areas and the contribution various cell types play in processing information through the columnar circuit, it is often necessary to identify and segregate the responses of neuronal populations based on their position in the layers of the cortex. Traditionally, for electrophysiological measurements, this has been achieved using CSD analysis of sensory-evoked responses. However, CSD analysis requires averaging across repeated discrete sensory events that may be difficult to generate in less well-studied cortical areas where the response selectivity is not apparent. While CSDs can also be calculated from intrinsic events such as up/down state transitions (Senzai et al., 2019) or bursts of oscillatory power (Bollimunta et al., 2008), it is less clear how reliable their patterns reflect the laminar organization of the underlying circuitry with respect to distinct anatomical boundaries \u2013 although methods have been proposed to recover spatial information from spontaneous activity (Chand and Dhamala, 2014). Further, because CSDs are measured across electrodes, a single noisy channel corrupts the contribution of the channel above and below potentially leading to an errant assignment of cortical layer boundaries. As histological approaches to recover individual recording tracts can be impractical, particularly in experiments in non-human primate where multiple recordings in the same area are the norm, it can be difficult to validate CSD measures or recover laminar information.\n\nHere, we describe an alternative estimate of laminar boundary, LPC, that can supplement or in some cases replace CSD analysis. Using laminar boundaries defined by CSD, we find that spike-phase coupling inverts at the boundary between the input and deep layers of the cortex. This reversal provides a reliable and robust measure of the depth of linear array electrodes in cortex across a variety of analysis parameters and experimental conditions. Using LPC to identify laminar compartments, we are able to replicate the pattern of LFP power reversing across the input layer observed in multiple cortical areas and has been validated histologically (Bastos et al., 2018; Maier et al., 2010; Mendoza-Halliday et al., 2022). This measure is robust to different LFP filter settings with either single- and multi-unit data and can be applied to any arbitrary recording epoch so long as there are sufficient spikes across electrodes. Failing that, patterns of phase\u2013phase correlation across channels may also help identify laminar boundaries. The ability to identify cortical depth across linear electrodes quickly and robustly permits the online identification of electrode positions relative to cortical layers and the tracking of electrode drift as the cortex settles following electrode penetration.\n\nWhile the number of spikes necessary to recover the spike-phase inversion can be counted in the hundreds, the LPC measurement is more reliable in epochs in which thousands of spikes have occurred. It would be convenient if LFP phase alone were sufficient to identify cortical layers as this would eliminate the requirement for measuring multi-unit spiking on multiple electrodes, and indeed we find there are occasions where correlations in LFP phase are sufficient to provide strong evidence of the location of laminar boundaries. This is consistent with previous reports of dissociable patterns of LFP coherence between superficial and deep domains that show particular separation at the bottom of the input layer (Maier et al., 2010). However, we find the reliability of this pattern of LFP phase correlation varies across the recordings in our dataset, although the reason why is unclear. We do find measures of cortical depth are improved when LFP phase is combined with the preferred timing of spiking activity across the cortical layers. However, if multi-unit data is only weakly apparent in a linear array recording, depth information might still be recovered from LFP phase relationships across channels without requiring CSD analysis.\n\nOne interesting observation is that the superficial and input layers of cortex show stronger spike\u2013LFP coupling than the deeper layers. Why might this be the case? It may be that the LFP is largely reflecting the shared synaptic inputs in the numerous connections in these cortical layers (Buzs\u00e1ki et al., 2012). This is consistent with measurements of correlated variability in V2 where spike-count correlations were observed to be stronger in the superficial and input layers and weaker in the deep layers (Smith et al., 2013), or in V4 where the strongest correlations were observed in the input layers relative to the superficial or deep layers (Nandy et al., 2017). A different pattern has been observed in V1, where the superficial and deep layers showed stronger spike-count correlations and in the input layers showed weaker correlations (Hansen et al., 2012). One might predict that a different pattern of spike-phase coupling would occur in V1, although the contribution of an anesthetized state is unclear.\n\nWe find reliable patterns across V4, MT, and PFC, and across two species of monkey performing visually guided tasks. Our findings may be limited to these conditions, as we do not yet know if the same observations hold in cortical areas with non-sensory responses, under conditions of sleep or anesthesia, or in other species. The answer may rely on what generates the observed pattern of spike\u2013LFP phase relationship. While our purpose here is to provide an empirically determined alternative or supplement to CSD analysis, we can speculate about why this observed LPC reversal occurs at the transition from input to deep layers. One possibility stems from the hypothesis that the predominantly radial architecture of cortical fibers between superficial and deep layers forms an electrical dipole that spans across the layers of the cortex (Buzs\u00e1ki et al., 2012). This hypothesis underlies the generation of electrical fields parallel to the dipole measured with EEG recordings at the scalp, and the generation of magnetic fields orthogonal to the dipole measured in MEG recordings. The prediction, therefore, is that the observed spike-phase reversal occurs due to the sources of LFP phase inverting across a dipole generated by the structure of the parallel radial processes of pyramidal cells that arborize in the superficial layers (however see Riera et al., 2012). Future experiments dissociating the laminar contribution of cell populations to the LFP at different cortical depths may reveal the degree to which the observed phase reversal is due to the dipole hypothesis or some other circuit mechanism. While the network mechanism responsible for the observed phase reversal remains unclear, our results indicate the reversal is well aligned to the boundary that separates the input and deep layers in multiple cortical areas.\n\nThe LPC method for estimating laminar depth described here could be a useful supplement to CSD analysis as it provides a source of cross-validation for potentially noisy or ambiguous CSD patterns. It could also serve as an alternative source of laminar information when CSD analysis is impractical given experimental limitations. The advantages of the LPC method are that it is fast and simple, making it well suited to online depth estimation from unsorted multi-unit spiking activity. LPC can be estimated from ongoing activity in a variety of experimental conditions, cortical areas, and analysis parameters, and may help relate the function of neural populations to the fundamental computation of information processing in the columnar cortical circuit.\n\n## Materials and methods\n\n### Surgical approach\n\nData from two adult male marmoset monkeys (2 and 3 years of age; Callithrix jacchus) and two adult male rhesus macaques (13 and 15 years of age; Macaca mulatta) were used in this study. Data from the macaques were previously published in Franken and Reynolds, 2021. Macaque surgical procedures have been described before in Nandy et al., 2017. Similar techniques were used in the marmoset monkeys. Monkeys were surgically implanted with headposts for head stabilization and eye tracking using cranial screws and dental acrylic or cement. In subsequent surgical sessions a titanium recording chamber was installed in a craniotomy made over area MT or PFC in one marmoset, respectively, or area V4 in both macaques, according to stereotactic coordinates. The dura mater within the chamber was removed, and replaced with a silicone-based optically clear artificial dura, establishing an optical window over the cortex. All surgical procedures were performed with the monkeys under general anesthesia in an aseptic environment in accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All experimental methods were approved by the Institutional Animal Care and Use Committee (IACUC) of the Salk Institute for Biological Studies and conformed with NIH guidelines (protocol 14-00014).\n\n### Electrophysiological recordings\n\nElectrode voltages were recorded from a 32-channel linear silicone electrode array (Atlas Neuroengineering; Leuven, Belgium) connected to an Intan RHD2000 USB interface board (Intan Technologies LLC, Los Angeles, USA) controlled by a Windows computer. The probe was inserted through the artificial dura using a hydraulic microdrive mounted on the chamber using an adjustable x\u2013y stage (MO-972A, Narashige, Japan). The probe was lowered until spiking and LFP could be observed on most of the electrode contacts. Then, the probe was retracted typically by several 100 \u00b5m to ease dimpling of the cortex. Data were sampled at 30 kHz from all channels. Neural data were broken into two streams for offline processing of spikes (single- and multi-unit activity) and LFPs. Spike data were high-pass filtered at 500 Hz and candidate spike waveforms were defined as exceeding 4 standard deviations of a sliding 1-s window of ongoing voltage fluctuations. Sorted units were classified as single- or multi-units and single units were validated by the presence of a clear refractory period in the autocorrelogram. LFP data were low-pass filtered at 300 Hz and down-sampled to 1000 Hz.\n\n### Behavioral tasks\n\nMarmosets were trained to enter a custom-built marmoset chair that was placed inside a faraday box with an LCD monitor (ASUS VG248QE) at a distance of 40 cm. The monitor was set to a refresh rate of 100 Hz and gamma corrected with a mean gray luminance of 75 candelas/m2. For the macaques visual stimuli were presented using a LED projector, back-projected on a rear-projection screen that was positioned at a distance of 52 cm from the animal\u2019s eyes (PROPixx, VPixx Technologies, Saint-Bruno, Canada). The marmosets and macaques were headfixed by a headpost for all recordings. Eye position was measured with an IScan CCD infrared camera. The MonkeyLogic software package developed in MATLAB (https://www.brown.edu/Research/monkeylogic/; https://monkeylogic.nimh.nih.gov/) (Asaad et al., 2013) was used for stimulus presentation, behavioral control, and recording of eye position. Digital and analog signals were coordinated through National Instrument DAQ cards (NI PCI6621) and BNC breakout boxes (NI BNC2090A).\n\n### Inclusions and exclusion criteria\n\nOngoing data while marmosets and macaques performed a variety of tasks and viewing conditions were used in this study. These conditions included fixation of a fixation point, receptive field mapping, freely viewing natural images, freely viewing in a darkened room, and performing previously described visual tasks (marmoset [Davis et al., 2020a], macaque [Franken and Reynolds, 2021]). Not all tasks were included in each monkey\u2019s experimental battery. Sessions were only included if CSD analysis revealed a recognizable source\u2013sink pattern consistent with reversals across superficial and deep layers. All data unless stated otherwise were collapsed across applicable conditions as the results did not depend on sensory conditions (Figure 3\u2014figure supplement 4 ). Six recording sessions from V4 in each macaque, 8 recording sessions in marmoset MT, and 14 recording sessions from marmoset PFC were used in the analyses across recordings.\n\n### CSD analysis\n\nA CSD mapping procedure on evoked LFPs was used to estimate the laminar position of recorded channels (Franken and Reynolds, 2021; Nandy et al., 2017). Mapping stimuli varied across recording locations. For macaque recordings in V4, monkeys maintained fixation while dark gray ring stimuli were flashed (32-ms stimulus duration, 94% luminance contrast, sized and positioned to fall within the cRF of the probe position). For marmoset recordings in MT, monkeys maintained fixation while drifting Gabor stimuli (spatial frequency = 0.5 cycles per degree; temporal frequency = 10 cycles per second, 50% luminance contrast) were presented. For marmoset recordings in PFC, monkeys maintained fixation while full field 100% luminance flashes (background luminance 0.5 candelas/m2; 20-ms flash at 150 candelas/m2) were presented. The CSD was calculated as the second spatial derivative of the stimulus-triggered LFP and visualized as spatial maps after smoothing using bicubic (2D) interpolation (MATLAB function interp2 with option cubic), although the laminar analysis did not critically depend on this particular method of smoothing. Red regions depict current sinks, blue regions depict current sources. We identified the earliest current sink as the input layer. By comparing this position with the range of contacts in the input layer, we could locate channels to superficial, input, or deep layers.\n\n### Generalized Phase\n\nWe calculated GP as described previously (Davis et al., 2022; Davis et al., 2020a). During ongoing spontaneous activity in the visual cortex, LFP signals are composed of fluctuations that vary in amplitude and frequency moment-by-moment, rather than being dominated by a single narrowband oscillation. Instead of applying a narrowband filter that may distort the underlying signal as the frequency content of the signal changes, we use a wideband filter from 5 to 50 Hz (fourth-order Butterworth forward-reverse filter), which preserves the overall waveform of the LFP as it varies in frequency content from moment to moment. The high-pass serves to eliminate low-frequency fluctuations associated with changes in arousal while the low-pass helps mitigate contamination by spike artifacts in the LFP that would yield spurious spike\u2013LFP coupling relationships. The wideband filtered signal proves a challenge for the standard Hilbert Transform which produces a phase estimate that breaks down quickly for non-narrowband signals, and for this reason it is used strictly in the context of signals pre-treated with a tight narrowband filter (Le Van Quyen et al., 2001). The purpose of GP is to mitigate this breakdown of the analytic signal representation for spectrally broad signals by addressing two technical limitations in the Hilbert Transform that occur when applied to broadband signals, described below, and introducing numerical guarantees for the resulting phase representation. GP thus represents an improvement on previous techniques to estimate \u2018instantaneous phase\u2019, as first defined by Denis Gabor (Gabor, 1946).\n\nConsider a real-valued signal xn \u2208 \u211d for n \u2208 [1,2,...,Ns], where Ns is the number of samples in one recorded trial obtained at a sampling frequency Fs. Given xn, its analytic signal representation (Xn) is:\n\n$$\nX_{n}=x_{n}+iH[x_{n}]\n$$\n\nwhere i is the imaginary unit and H[yn] is the Hilbert Transform (HT) of the signal yn. This representation can be obtained by implementing the HT operator as an FIR filter in time domain (Oppenheim et al., 1999), or by using a single-sided Fourier transform approach (Marple, 1999). The technical limitations in the analytic signal framework occur for two principal reasons. The first limitation is that low-frequency fluctuations effectively shift the representation by a complex constant, which has the critical effect of highly distorting phase angles estimated by the arctangent. As an initial step in the GP representation, then, we filter the signal with a high-pass that excludes low-frequency content. In this work, we also use a low-pass filter at 50 Hz to exclude potential spike waveform artifacts (Ray and Maunsell, 2011). After filtering, we then use the single-sided Fourier transform approach (Marple, 1999) on the wideband signal and compute phase derivatives as finite differences, which are calculated by multiplications in the complex plane (Feldman, 2011; Muller et al., 2016; Muller et al., 2014). The second limitation is that high-frequency intrusions appear in the analytic signal representation as complex riding cycles (Feldman, 2011), which manifest as periods of negative frequencies. As a secondary step in the GP representation, then, we numerically detect these complex riding cycles \u2013 namely, Nc points of negative frequency in the phase sequence Arg[Xn] \u2013 and utilize shape-preserving piecewise cubic interpolation on the next 2Nc points of Arg[Xn] following the detected negative frequency epoch. The resulting representation captures the phase of the dominant fluctuation on the recording electrode at any moment in time, without the distortions due to the large, low-frequency intrusions or the smaller, high-frequency intrusions characteristic of the 1/f-type fluctuations in cortical LFP (Linkenkaer-Hansen et al., 2001; Milstein et al., 2009; Pereda et al., 1998).\n\n### Laminar analyses\n\nThe degree of spike-phase coupling was measured as the mean resultant vector length for the LFP phase distribution collected at the time of observed spikes. This measure was calculated using the circ_r function in the Circular Statistics Toolbox for MATLAB (Berens, 2009). The mean phase angle of the spike-phase distribution was calculated using the circ_mean function in the Circular Statistics Toolbox. To generate the cross-channel LPC, the phase of the LFP on each channel was collected for the spike train on each channel. The mean spike-phase angle for each combination of spike and LFP channel was plotted, and the channel that best separated the preferred phase angle was selected by eye as the boundary between the input and deep layers. This process was done blind to the CSD estimate of laminar depth.\n\nFor laminar analyses comparing firing rates and LFP power across cortical layers N = 14 sessions were selected based on a difference in laminar alignment between CSD and LPC analyses of more than 200 \u03bcm. Each channel was aligned to the estimate of the boundary between the input and deep layers in each session based on either the bottom of the earliest current sink in the CSD or the channel preceding the change in the pattern of LPC phase coupling. Mean spike rates at each channel depth were normalized to the mean spike rate on all channels in each session. LFP power in low (8\u201330 Hz) and high (65\u2013100 Hz) frequency bands were calculated by taking the average power spectral density in the frequency range of interest at each electrode depth normalized by the average power spectral density in both frequency ranges across all channels. The values were then z-scored across channels.\n\nStatistical differences were determined by Wilcoxon signed-rank tests for pairwise differences in the distributions across superficial, input, or deep layers within CSD or LPC conditions, as well as across CSD and LPC conditions. No explicit power analysis was used to determine appropriate sample sizes. Data were curated based on inclusion/exclusion criteria and analyzed across appropriate comparisons (i.e. within/across samples). Differences in circular distributions were computed by Watson\u2013Williams test of homogeneity of means. Linear correlations were calculated using Pearson\u2019s r. Circular correlations were calculated using the circ_corrcc function for circular\u2013circular correlations and the circ_corrcl function for circular\u2013linear correlations in the MATLAB Circular Statistics Toolbox.\n",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "9a7d6a19-3800-4431-88f2-651210070654",
+      "submission_id": "6ed079dd-5906-4bc9-9529-9aead19d646d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alicia Izquierdo, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84512.sa0](https://doi.org/10.7554/eLife.84512.sa0)\n\nAuthors demonstrate powerful methods that can be applied across species to find reliable markers that characterize activity in different cortical layers. Authors provide compelling evidence for these methods that enable systematic comparisons between slow extracellular voltage fluctuations and spiking across cortical columns. The results are timely since linear multielectrode array recordings have become a state-of-the-art technique.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alicia Izquierdo, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84512.sa1](https://doi.org/10.7554/eLife.84512.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spike-phase coupling patterns reveal laminar identity in primate cortex\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Huguenard as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Alexander Thiele (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Authors should define the 'generalized phase' of a 45 Hz-wide signal and the power spectra of the LFP in the analysis.\n\n2) Include Mendoza-Halliday et al. https://www.biorxiv.org/content/10.1101/2022.09.30.510398v1 reference with a discussion of this relevant paper to the present report.\n\n3) Include sample sizes in all Figures.\n\nReviewer #2 (Recommendations for the authors):\n\nThe only comment I have is that the authors might want to reference the recent SFN abstract by Andre Bastos about spectral power cross-over in layer IV of different cortical areas.\n",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "be78d441-42ef-4203-ad1e-af6ed725e966",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C1",
+      "claim": "Linear array electrodes have become a ubiquitous electrophysiological tool for understanding the functional roles of neural populations across the layers of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear array electrodes have become a ubiquitous electrophysiological tool for understanding the functional roles of neural populations across the layers of the cortex, their interactions, and the computations they perform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the widespread use of linear array electrodes in neuroscience research, drawing from established scientific practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "4695083a-bd6e-4771-bb9d-c7694d53a85a",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C2",
+      "claim": "The gold standard for identifying laminar compartments from functional recordings is current-source density (CSD) analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The gold standard for identifying laminar compartments from functional recordings is current-source density (CSD) analysis (Mitzdorf, 1985; Mitzdorf and Singer, 1978; Schroeder et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work establishing CSD as the standard method.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "aabb3880-de95-4402-9c51-e6a8e0d25bec",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C3",
+      "claim": "The CSD represents the second spatial derivative of local field potential (LFP) activity averaged to repeated events.",
+      "claim_type": "EXPLICIT",
+      "source": "The CSD represents the second spatial derivative of local field potential (LFP) activity averaged to repeated events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of CSD based on established methodology in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "6793b719-8b7c-4146-9ecb-02bbd6d02426",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C4",
+      "claim": "Sensory-evoked stimulation produces feedforward activation of the canonical cortical columnar circuit via activation of the input layer.",
+      "claim_type": "EXPLICIT",
+      "source": "These events are often sensory-evoked stimulation as in flashed visual stimuli in visual cortex (Maier et al., 2010; Schroeder et al., 1991; Wang et al., 2020) or short duration sounds in auditory cortex (Happel et al., 2010; Lakatos et al., 2007; Szymanski et al., 2011) which produce feedforward activation of the canonical cortical columnar circuit via activation of the input layer (Gratiy et al., 2011; Mitzdorf, 1985; Mitzdorf and Singer, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "73e5267e-0276-40fc-9265-04b4848814fe",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C5",
+      "claim": "The earliest current sink in CSD reflects the feedforward activation of the input layers.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest current sink reflects the feedforward activation of the input layers (Mitzdorf, 1987; Mitzdorf, 1985), and the current sources above and below are used to estimate the boundaries with respect to superficial (layers 1\u20133) and deep (layers 5 and 6) cortical layers (Self et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "3c60174a-7234-4eb4-b9fd-2b4f007910c0",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C6",
+      "claim": "CSD analysis has been validated histologically.",
+      "claim_type": "EXPLICIT",
+      "source": "CSD analysis has been validated histologically (Mitzdorf and Singer, 1979; Schroeder et al., 1991; Takeuchi et al., 2011) and reliably captures known laminar differences in the functional properties of cortical layers, such as differences in evoked latencies across layers in response to driving input (Bode-Greuel et al., 1987; Einevoll et al., 2013; Plomp et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous histological validation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "3faf0696-14f6-44a5-9fe8-08cdffc844d4",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C7",
+      "claim": "CSD analysis has largely been limited to primary sensory areas where the types of sensory stimuli that can robustly and reliably generate the evoked responses necessary for averaging CSDs are well established.",
+      "claim_type": "EXPLICIT",
+      "source": "CSD analysis has largely been limited to primary sensory areas where the types of sensory stimuli that can robustly and reliably generate the evoked responses necessary for averaging CSDs are well established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of CSD analysis based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "a005791f-3035-414f-9f21-dcc0e5ac258d",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C8",
+      "claim": "CSD analysis has been used in higher-order cortical areas where sensory-evoked responses are apparent, such as visual responses in frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CSD analysis has been used in higher-order cortical areas where sensory-evoked responses are apparent, such as visual responses in frontal cortex (Bastos et al., 2018; Godlove et al., 2014), it is less clear what to use as a triggering event in non-sensory cortical areas to reveal similar laminar patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "2915afe7-147e-4453-a577-6fcf0687e0e7",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C9",
+      "claim": "Ongoing spiking activity is strongly coupled to the phase of LFP fluctuations in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown ongoing spiking activity is strongly coupled to the phase of LFP fluctuations in the cortex (Davis et al., 2022; Destexhe et al., 1999; Dotson et al., 2014; Eeckman and Freeman, 1990; Esghaei et al., 2018; Haegens et al., 2011) and these spike\u2013field relationships can be diagnostic of circuit interactions in cortical systems (Safavi et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "b5495c4f-2ee9-4677-8752-1156ee9fef5c",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C10",
+      "claim": "Spike-field relationships can be diagnostic of circuit interactions in cortical systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown ongoing spiking activity is strongly coupled to the phase of LFP fluctuations in the cortex (Davis et al., 2022; Destexhe et al., 1999; Dotson et al., 2014; Eeckman and Freeman, 1990; Esghaei et al., 2018; Haegens et al., 2011) and these spike\u2013field relationships can be diagnostic of circuit interactions in cortical systems (Safavi et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "03266b0a-e588-4e4b-876d-e6f74531e2e8",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C11",
+      "claim": "There is a phase reversal in spike-field coupling that reliably corresponds to the laminar boundary between input and deep layers as estimated by CSD.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that there is a phase reversal in spike\u2013field coupling that reliably corresponds to the laminar boundary between input and deep layers as estimated by CSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "91393d97-f4f6-4a5b-82aa-5b69d449cf51",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C12",
+      "claim": "The phase reversal pattern reliably reversed in awake recordings from both common marmosets and rhesus macaque in multiple cortical areas including extrastriate visual and prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern reliably reversed in awake recordings from both common marmosets and rhesus macaque in multiple cortical areas including extrastriate visual and prefrontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from multiple species and cortical areas presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "b70e45b4-efef-4710-b05e-64624f0d15ff",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C13",
+      "claim": "Electrophysiology data were recorded from 32-channel linear probes inserted perpendicular to the cortical surface into cortical regions V4 in two macaque monkeys and middle temporal (MT) or pre-frontal cortex (PFC) in two marmoset monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded electrophysiology data from 32-channel linear probes (Atlas Neuroengineering) inserted perpendicular to the cortical surface into cortical regions V4 in two macaque monkeys and middle temporal (MT) or pre-frontal cortex (PFC) in two marmoset monkeys performing head-fixed visual tasks under various experimental conditions (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "655de04d-7eee-44b6-9d73-a9dbff19505e",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C15",
+      "claim": "The superficial channels had an average SPI value of 0.162 \u00b1 0.012.",
+      "claim_type": "EXPLICIT",
+      "source": "The superficial channels had an average SPI value of 0.162 \u00b1 0.012 (mean \u00b1 standard error of the mean [SEM]; N = 34 sessions; Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "0443dd9f-bd4b-4044-bfb1-e45e0a558288",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C16",
+      "claim": "The superficial layer SPI was significantly greater than the input layer SPI (0.122 \u00b1 0.010).",
+      "claim_type": "EXPLICIT",
+      "source": "This was significantly greater than the input layer (SPI = 0.122 \u00b1 0.010 mean \u00b1 SEM; p = 0.0003, Wilcoxon signed-rank test; Figure 2c), and both were significantly greater than the deep layers (SPI = 0.073 \u00b1 0.009 SEM; p = 0.000003 S. v. D. and p = 0.000009 I. v. D.; Figure 2d, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of measurements from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "438483e5-882a-40d8-96c6-b506b2ddbd6a",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C17",
+      "claim": "Both superficial and input layer SPI were significantly greater than the deep layer SPI (0.073 \u00b1 0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "This was significantly greater than the input layer (SPI = 0.122 \u00b1 0.010 mean \u00b1 SEM; p = 0.0003, Wilcoxon signed-rank test; Figure 2c), and both were significantly greater than the deep layers (SPI = 0.073 \u00b1 0.009 SEM; p = 0.000003 S. v. D. and p = 0.000009 I. v. D.; Figure 2d, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of measurements from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "266f090b-804a-448a-ad0b-0c9e8790a3fc",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C18",
+      "claim": "The preferred LFP phase angle for spiking in the superficial and input layers was 2.86 and \u22122.68 rad, respectively, which corresponds toward the trough of ongoing LFP fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "The preferred LFP phase angle (i.e. the circular mean of the phase distribution) for spiking in the superficial and input layers was 2.86 and \u22122.68 rad, respectively, which corresponds toward the trough of ongoing LFP fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "00bb50fe-26ca-44c5-b80f-b2288569a96a",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C19",
+      "claim": "The preferred phase angle for deep layer spiking (\u22121.44 rad) was significantly different from the preferred phase angle for superficial and input layer spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "This was significantly different from the preferred phase angle for deep layer spiking (\u22121.44 rad; F = 38.52, p < 1 \u00d7 10\u22127 and F = 21.15, p = 0.00002, respectively; Watson\u2013Williams test; Figure 2f) suggesting that indeed the deeper layers may be distinguished by a change in the preferred spike\u2013LFP phase angle relative to the superficial electrodes and this could be read out from the spike\u2013LFP relationship across the depth of the cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of measurements from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "c275306a-a53c-4b35-a7b0-bd21f29be54b",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C20",
+      "claim": "There was a significant correlation between the depth of the bottom of the input layer estimated from CSD analysis and the depth of the phase reversal (r = 0.64, p = 0.00005).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant correlation between the depth estimated from the CSD and the phase reversal (r = 0.64, p = 0.00005; Pearson's correlation) and no significant difference between the estimated depth values (mean difference = 271 \u00b1 49 \u03bcm SEM; p = 0.98, Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis comparing two methods of depth estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "e6bfec0b-201f-4982-87f2-2f71c52053a9",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C21",
+      "claim": "There was no significant difference between the estimated depth values from CSD and phase reversal (mean difference = 271 \u00b1 49 \u03bcm SEM; p = 0.98).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant correlation between the depth estimated from the CSD and the phase reversal (r = 0.64, p = 0.00005; Pearson's correlation) and no significant difference between the estimated depth values (mean difference = 271 \u00b1 49 \u03bcm SEM; p = 0.98, Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison of measurements from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "9e56365f-6ca3-4642-9364-424feec15dce",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C22",
+      "claim": "The observed phase reversal was apparent in multiple frequency bands (4\u20138, 8\u201314, 15\u201330, and 30\u201350 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "To test this we filtered the data in a variety of commonly used frequency bands (4\u20138, 8\u201314, 15\u201330, and 30\u201350 Hz) and calculated phase using the Hilbert Transform (Figure 3\u2014figure supplement 2). We found that the observed phase reversal was apparent in each case, indicating the results were not dependent on the filter or the method used to compute phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes testing the robustness of the finding across different analysis parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "c8f3d813-8b67-4184-9812-c5ffc31e5c6f",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C23",
+      "claim": "The results were not dependent on the filter or the method used to compute phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the observed phase reversal was apparent in each case, indicating the results were not dependent on the filter or the method used to compute phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from testing multiple analysis parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "f59a0f17-774a-491d-bb65-036d8444429a",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C24",
+      "claim": "The same relationship between laminar depth and preferred phase angle was observed when using single-unit spiking activity as when using multi-unit spiking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed the same analysis aligning cross-channel LPC from single units across recording sessions based on CSD depth (Figure 3\u2014figure supplement 3). We observed the same relationship between laminar depth and preferred phase angle as when using multi-unit spiking activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes testing the robustness of the finding using different spike sorting approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "49c7d346-1e0b-447a-8724-be7665b4ad98",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C25",
+      "claim": "The cross-channel LPC revealed qualitatively similar depths for the laminar-phase reversal across experimental conditions within the same penetration.",
+      "claim_type": "EXPLICIT",
+      "source": "We also separated out different conditions during the same recording session where the electrode placement was unchanged (Figure 3\u2014figure supplement 4). These included fixation during a visual task, freely viewing natural scene images, freely viewing in total darkness, and fixation during receptive field mapping. The cross-channel LPC revealed qualitatively similar depths for the laminar-phase reversal across experimental conditions within the same penetration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes testing the robustness of the finding across different behavioral conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "f80a418a-70a2-4d23-ad7d-7fdb79ca9e44",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C26",
+      "claim": "The phase reversal persisted under all referencing conditions tested (shallowest contact, deepest contact, or common average reference).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test whether our results depended on the location of the reference contact we re-referenced the LFP data to the shallowest contact, the deepest contact, or a common average reference (Figure 3\u2014figure supplement 5). The phase reversal persisted under all referencing conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes testing the robustness of the finding across different referencing schemes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "cdc013fe-cf48-4c6c-bd57-76833d30e47d",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C27",
+      "claim": "As little as a minute of continuously recorded data is sufficient to recover the phase reversal across channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, as little as a minute of continuously recorded data is sufficient to recover the phase reversal across channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the minimum data requirements for the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "49568917-93e3-4401-acf5-c0e8cfe9faf8",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C28",
+      "claim": "The depth of the phase reversal moved over the course of 15 min in an example recording session.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate this, we calculated LPC on sequential 3-min epochs during the first 15 min of an example recording session (Figure 3\u2014figure supplement 6). We found the depth of the phase reversal moved over the course of 15 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observation from tracking the phase reversal over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "d7402e42-39ad-47e6-a450-854f0a245f9e",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C29",
+      "claim": "There was a significant difference in the estimated depth of the input layer from the spike-phase reversal between the first and last 2 min across all recordings (p = 0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the depth after the first or last 2 min across all recordings, we found a significant difference in the estimated depth of the input layer from the spike-phase reversal (p = 0.005, Wilcoxon signed-rank test) such that the estimate of input layer depth consistently drifted deeper across recording sessions by an average of 132 \u00b1 26 \u03bcm (SEM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of depth changes over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "d5770f12-2166-4283-9a3c-4d9d57939843",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C30",
+      "claim": "The estimate of input layer depth consistently drifted deeper across recording sessions by an average of 132 \u00b1 26 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the depth after the first or last 2 min across all recordings, we found a significant difference in the estimated depth of the input layer from the spike-phase reversal (p = 0.005, Wilcoxon signed-rank test) such that the estimate of input layer depth consistently drifted deeper across recording sessions by an average of 132 \u00b1 26 \u03bcm (SEM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of electrode drift.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "417813f9-13de-4886-9baf-bc78b1eae087",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C31",
+      "claim": "This change in the depth estimate across the recording is consistent with electrode drift from movement of the probe relative to the cortex as the tissue settles at the start of the recording.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in the depth estimate across the recording is consistent with electrode drift from movement of the probe relative to the cortex as the tissue settles at the start of the recording.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed depth changes over time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "3f502564-007a-4d7c-8c52-52e550f5da4d",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C32",
+      "claim": "On many recording sessions a characteristic phase correlation pattern was found that seemed to align well with both CSD and LPC depth estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "On many recording sessions we found a characteristic phase correlation pattern that seemed to align well with both CSD and LPC depth estimates (Figure 4a\u2013c), and across many recordings the phase correlations within layers could dissociate laminar compartments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observation from analyzing LFP phase correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "f2e7088f-eb11-4343-93ac-e6261f8e6096",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C33",
+      "claim": "Some sessions yielded phase correlation patterns that were noisy and difficult to interpret.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this was not always the case. Some sessions yielded phase correlation patterns that were noisy and difficult to interpret, although knowing where the boundary was made it easier to identify the characteristic pattern (Figure 4d, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes variability in the reliability of LFP phase correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "5782e2f7-ccb0-4d06-ad20-17e13f9ce53d",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C34",
+      "claim": "The spike\u2013LFP phase relationship appears to provide a more robust measure of contact depth than LFP phase correlations alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While, on average, LFP phase correlations can be informative (Figure 4f), the spike\u2013LFP phase relationship appears to provide a more robust measure of contact depth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative assessment of two methods based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "4de5ada3-11c3-4745-b0a0-3f98272be90b",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C35",
+      "claim": "There were 14 out of 34 instances where there was 200 \u03bcm or more disagreement between CSD and LPC estimates for the location of the input layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Across our recordings there were some instances (14/34) where there was 200 \u03bcm or more disagreement between CSD and LPC estimates for the location of the input layer relative to the probe contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of disagreement between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "505495c1-d459-4bd2-a3c1-4f377ee2a8b5",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C36",
+      "claim": "Previous work in multiple cortical areas has shown that the superficial layers have lower firing rates as compared to the input and deep layers.",
+      "claim_type": "EXPLICIT",
+      "source": "First, previous work in multiple cortical areas has shown that the superficial layers have lower firing rates as compared to the input and deep layers (de Kock and Sakmann, 2009; Haegens et al., 2015; Lakatos et al., 2005; Leszczy\u0144ski et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "473c8756-eff4-461e-b7bb-7ec184b918f8",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C37",
+      "claim": "On sessions where CSD and LPC estimates differed by more than 200 \u03bcm, the CSD aligned firing rates failed to recapitulate the finding of higher firing rates in the input and deeper layers (p = 0.09).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that on these sessions, the CSD aligned firing rates failed to recapitulate the finding of higher firing rates in the input and deeper layers (p = 0.09, Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis comparing firing rates aligned to CSD estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "4ada17d9-9734-43b6-ae7b-4ecf152c234e",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C38",
+      "claim": "When aligned to the LPC estimate, significantly stronger input firing rates were found (p = 0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we did find significantly stronger input firing rates when aligned to the LPC estimate (p = 0.0003, Wilcoxon signed-rank test), suggesting the LPC estimate on these sessions was better aligned than the CSD to the ground truth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis comparing firing rates aligned to LPC estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "b4b4fbc4-83ab-4893-9a9e-70e3518a1d93",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C39",
+      "claim": "The LPC estimate on sessions with disagreement was better aligned than the CSD to the ground truth.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we did find significantly stronger input firing rates when aligned to the LPC estimate (p = 0.0003, Wilcoxon signed-rank test), suggesting the LPC estimate on these sessions was better aligned than the CSD to the ground truth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the firing rate analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "2ddbdfc6-8352-4c02-9082-bc08429460b0",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C40",
+      "claim": "Previous groups have reported an inversion in the spectral content of the LFP across layers, with the superficial layers exhibiting more high-frequency power (e.g. 80\u2013200 Hz) and the deep layers exhibiting more low-frequency power (8\u201320 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined a second previously reported finding that varied with laminar depth. Previous groups have reported an inversion in the spectral content of the LFP across layers, with the superficial layers exhibiting more high-frequency power (e.g. 80\u2013200 Hz) and the deep layers exhibiting more low-frequency power (8\u201320 Hz) (Maier et al., 2011; Maier et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "2576f438-c97f-44dc-8647-38e82746ec70",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C41",
+      "claim": "The crossover between the power in higher and lower frequencies was reported to occur around the input layers defined from CSD measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The crossover between the power in higher and lower frequencies was reported to occur around the input layers defined from CSD measurements (Bastos et al., 2018), and validated histologically in multiple cortical areas (Mendoza-Halliday et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "22fb0373-f17e-4409-b263-a6022c821e7f",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C42",
+      "claim": "The depth estimate from the LPC measure was significantly correlated with the high/low power inversion (Pearson's r = 0.87, p = 0.00005).",
+      "claim_type": "EXPLICIT",
+      "source": "The depth estimate from the LPC measure was significantly correlated with the high/low power inversion (Pearson's r = 0.87, p = 0.00005) whereas the CSD estimate was more weakly, although still significantly correlated (Pearson's r = 0.65, p = 0.012), indicating that on the recording sessions where there was some disparity between the CSD and LPC estimate (Figure 6d), the LPC better captured the power inversion than the CSD measure (Figure 6e, f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis comparing depth estimates to LFP power patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "df6db4f7-3da9-4aef-9090-f7deafe0d94f",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C43",
+      "claim": "The CSD estimate was more weakly, although still significantly correlated with the high/low power inversion (Pearson's r = 0.65, p = 0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "The depth estimate from the LPC measure was significantly correlated with the high/low power inversion (Pearson's r = 0.87, p = 0.00005) whereas the CSD estimate was more weakly, although still significantly correlated (Pearson's r = 0.65, p = 0.012), indicating that on the recording sessions where there was some disparity between the CSD and LPC estimate (Figure 6d), the LPC better captured the power inversion than the CSD measure (Figure 6e, f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis comparing depth estimates to LFP power patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "28b5ea7f-b1ca-4e64-97aa-7e8d9370f097",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C44",
+      "claim": "On recording sessions where there was disparity between the CSD and LPC estimate, the LPC better captured the power inversion than the CSD measure.",
+      "claim_type": "EXPLICIT",
+      "source": "The depth estimate from the LPC measure was significantly correlated with the high/low power inversion (Pearson's r = 0.87, p = 0.00005) whereas the CSD estimate was more weakly, although still significantly correlated (Pearson's r = 0.65, p = 0.012), indicating that on the recording sessions where there was some disparity between the CSD and LPC estimate (Figure 6d), the LPC better captured the power inversion than the CSD measure (Figure 6e, f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative assessment based on statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "9f4ab172-b96d-4664-a179-7f649338bc2e",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C45",
+      "claim": "When noise or error in assigning laminar compartments based on CSD analysis occur, the LPC phase reversal is a more reliable measure of laminar depth.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that when noise or error in assigning laminar compartments based on CSD analysis occur, the LPC phase reversal is a more reliable measure of laminar depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative analyses of CSD and LPC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "a5d83ea2-34f8-4650-91aa-9e23c8ffb115",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C46",
+      "claim": "CSD analysis requires averaging across repeated discrete sensory events that may be difficult to generate in less well-studied cortical areas where the response selectivity is not apparent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CSD analysis requires averaging across repeated discrete sensory events that may be difficult to generate in less well-studied cortical areas where the response selectivity is not apparent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of CSD analysis based on methodological requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "472df12f-f889-4b2d-8930-072bad4baba6",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C47",
+      "claim": "CSDs can be calculated from intrinsic events such as up/down state transitions or bursts of oscillatory power.",
+      "claim_type": "EXPLICIT",
+      "source": "While CSDs can also be calculated from intrinsic events such as up/down state transitions (Senzai et al., 2019) or bursts of oscillatory power (Bollimunta et al., 2008), it is less clear how reliable their patterns reflect the laminar organization of the underlying circuitry with respect to distinct anatomical boundaries \u2013 although methods have been proposed to recover spatial information from spontaneous activity (Chand and Dhamala, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "aa11e15d-eaca-460d-81a0-a50ccd4d9220",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C48",
+      "claim": "Using LPC to identify laminar compartments, the pattern of LFP power reversing across the input layer observed in multiple cortical areas and validated histologically was replicated.",
+      "claim_type": "EXPLICIT",
+      "source": "Using LPC to identify laminar compartments, we are able to replicate the pattern of LFP power reversing across the input layer observed in multiple cortical areas and has been validated histologically (Bastos et al., 2018; Maier et al., 2010; Mendoza-Halliday et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes replicating a previously validated finding using the new method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "79d24058-8082-4a95-9b22-73753f7f7937",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C49",
+      "claim": "The LPC measurement is more reliable in epochs in which thousands of spikes have occurred compared to hundreds of spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the number of spikes necessary to recover the spike-phase inversion can be counted in the hundreds, the LPC measurement is more reliable in epochs in which thousands of spikes have occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data requirements for reliable LPC measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "31dd0694-0288-4b0e-a4eb-228726a7699c",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C50",
+      "claim": "There are occasions where correlations in LFP phase are sufficient to provide strong evidence of the location of laminar boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be convenient if LFP phase alone were sufficient to identify cortical layers as this would eliminate the requirement for measuring multi-unit spiking on multiple electrodes, and indeed we find there are occasions where correlations in LFP phase are sufficient to provide strong evidence of the location of laminar boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes observations about the utility of LFP phase correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "c15c5c49-bc70-47a3-8413-e38bdc36d404",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C51",
+      "claim": "The reliability of the pattern of LFP phase correlation varies across the recordings in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find the reliability of this pattern of LFP phase correlation varies across the recordings in our dataset, although the reason why is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes variability in the reliability of LFP phase correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "75ce55b7-c4c0-4296-8fbe-ab9194f8c881",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C52",
+      "claim": "Measures of cortical depth are improved when LFP phase is combined with the preferred timing of spiking activity across the cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "We do find measures of cortical depth are improved when LFP phase is combined with the preferred timing of spiking activity across the cortical layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing different analysis approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "5e6f4d02-1492-4b74-b676-eea3fab91805",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C53",
+      "claim": "The superficial and input layers of cortex show stronger spike\u2013LFP coupling than the deeper layers.",
+      "claim_type": "EXPLICIT",
+      "source": "One interesting observation is that the superficial and input layers of cortex show stronger spike\u2013LFP coupling than the deeper layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "cb09019e-3e32-47be-a259-6783f0cfd8d2",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C54",
+      "claim": "The LFP may be largely reflecting the shared synaptic inputs in the numerous connections in the superficial and input cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be that the LFP is largely reflecting the shared synaptic inputs in the numerous connections in these cortical layers (Buzs\u00e1ki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed pattern, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "81a01880-5d87-4ef3-8830-fe5e9d998f9c",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C55",
+      "claim": "Spike-count correlations were observed to be stronger in the superficial and input layers and weaker in the deep layers in V2.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with measurements of correlated variability in V2 where spike-count correlations were observed to be stronger in the superficial and input layers and weaker in the deep layers (Smith et al., 2013), or in V4 where the strongest correlations were observed in the input layers relative to the superficial or deep layers (Nandy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "286faa94-4ed1-4859-afd1-440962506d9c",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C56",
+      "claim": "In V4, the strongest correlations were observed in the input layers relative to the superficial or deep layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with measurements of correlated variability in V2 where spike-count correlations were observed to be stronger in the superficial and input layers and weaker in the deep layers (Smith et al., 2013), or in V4 where the strongest correlations were observed in the input layers relative to the superficial or deep layers (Nandy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "e9dd7372-904e-4c94-9e06-df2a712a3d12",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C57",
+      "claim": "In V1, the superficial and deep layers showed stronger spike-count correlations and the input layers showed weaker correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "A different pattern has been observed in V1, where the superficial and deep layers showed stronger spike-count correlations and in the input layers showed weaker correlations (Hansen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "dafe8994-218a-43f3-b48a-3b2665dd372c",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C58",
+      "claim": "One might predict that a different pattern of spike-phase coupling would occur in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "One might predict that a different pattern of spike-phase coupling would occur in V1, although the contribution of an anesthetized state is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on previous findings in V1.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "075aacc0-e693-4d7a-be57-3139bcffd8e1",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C59",
+      "claim": "Reliable patterns were found across V4, MT, and PFC, and across two species of monkey performing visually guided tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We find reliable patterns across V4, MT, and PFC, and across two species of monkey performing visually guided tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the generalizability of the findings across areas and species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "93d4aef8-aa37-4e27-9179-e337dfebfab3",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C60",
+      "claim": "It is not yet known if the same observations hold in cortical areas with non-sensory responses, under conditions of sleep or anesthesia, or in other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings may be limited to these conditions, as we do not yet know if the same observations hold in cortical areas with non-sensory responses, under conditions of sleep or anesthesia, or in other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges limitations and unknowns about the generalizability of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "82a821b8-e514-43dc-b02f-7edb6c7bc7ef",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C61",
+      "claim": "The predominantly radial architecture of cortical fibers between superficial and deep layers may form an electrical dipole that spans across the layers of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility stems from the hypothesis that the predominantly radial architecture of cortical fibers between superficial and deep layers forms an electrical dipole that spans across the layers of the cortex (Buzs\u00e1ki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the mechanism underlying the observed pattern, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "28e4d6c2-3ac2-46a2-80d0-b8b510aab6a7",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C62",
+      "claim": "The observed spike-phase reversal may occur due to the sources of LFP phase inverting across a dipole generated by the structure of the parallel radial processes of pyramidal cells that arborize in the superficial layers.",
+      "claim_type": "EXPLICIT",
+      "source": "The prediction, therefore, is that the observed spike-phase reversal occurs due to the sources of LFP phase inverting across a dipole generated by the structure of the parallel radial processes of pyramidal cells that arborize in the superficial layers (however see Riera et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the mechanism, with a citation noting alternative views.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "723ec6bd-4660-418d-a1a0-141cd09cd56e",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C63",
+      "claim": "The reversal is well aligned to the boundary that separates the input and deep layers in multiple cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "While the network mechanism responsible for the observed phase reversal remains unclear, our results indicate the reversal is well aligned to the boundary that separates the input and deep layers in multiple cortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding across cortical areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "e694b45f-7d7d-4172-93ff-8244783bf38b",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C64",
+      "claim": "The LPC method could be a useful supplement to CSD analysis as it provides a source of cross-validation for potentially noisy or ambiguous CSD patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The LPC method for estimating laminar depth described here could be a useful supplement to CSD analysis as it provides a source of cross-validation for potentially noisy or ambiguous CSD patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of the method based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "b319ba6e-5003-4906-b45f-67574d0d7e72",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C65",
+      "claim": "LPC is fast and simple, making it well suited to online depth estimation from unsorted multi-unit spiking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantages of the LPC method are that it is fast and simple, making it well suited to online depth estimation from unsorted multi-unit spiking activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes practical advantages of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "cf59c9a7-0b19-4833-921e-107e834f1608",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C66",
+      "claim": "LPC can be estimated from ongoing activity in a variety of experimental conditions, cortical areas, and analysis parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "LPC can be estimated from ongoing activity in a variety of experimental conditions, cortical areas, and analysis parameters, and may help relate the function of neural populations to the fundamental computation of information processing in the columnar cortical circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the robustness and potential utility of the method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "2d3a7578-0fbf-4b39-a429-ab9c73ac74ea",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C67",
+      "claim": "Data from two adult male marmoset monkeys (2 and 3 years of age) and two adult male rhesus macaques (13 and 15 years of age) were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from two adult male marmoset monkeys (2 and 3 years of age; Callithrix jacchus) and two adult male rhesus macaques (13 and 15 years of age; Macaca mulatta) were used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "62ac3705-a732-4abc-b99f-795c08125dca",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C68",
+      "claim": "Data from the macaques were previously published in Franken and Reynolds, 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from the macaques were previously published in Franken and Reynolds, 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This indicates that some data were from a previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "25e7e746-d151-415d-bade-db5e5887d6ee",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C69",
+      "claim": "All surgical procedures were performed with the monkeys under general anesthesia in an aseptic environment in accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health.",
+      "claim_type": "EXPLICIT",
+      "source": "All surgical procedures were performed with the monkeys under general anesthesia in an aseptic environment in accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical standards followed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "03501c32-b1d8-4049-9dfa-52227b133596",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C70",
+      "claim": "All experimental methods were approved by the Institutional Animal Care and Use Committee (IACUC) of the Salk Institute for Biological Studies and conformed with NIH guidelines (protocol 14-00014).",
+      "claim_type": "EXPLICIT",
+      "source": "All experimental methods were approved by the Institutional Animal Care and Use Committee (IACUC) of the Salk Institute for Biological Studies and conformed with NIH guidelines (protocol 14-00014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "3bf3809f-26dd-4af9-84c0-a5a536b3a48c",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C71",
+      "claim": "Electrode voltages were recorded from a 32-channel linear silicone electrode array connected to an Intan RHD2000 USB interface board.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrode voltages were recorded from a 32-channel linear silicone electrode array (Atlas Neuroengineering; Leuven, Belgium) connected to an Intan RHD2000 USB interface board (Intan Technologies LLC, Los Angeles, USA) controlled by a Windows computer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "2b37a172-fdde-477b-8a9e-5fd613a575d0",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C72",
+      "claim": "Data were sampled at 30 kHz from all channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were sampled at 30 kHz from all channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling rate used for data acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "683da53b-f2c2-4d53-9559-53387836eb7a",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C73",
+      "claim": "Spike data were high-pass filtered at 500 Hz and candidate spike waveforms were defined as exceeding 4 standard deviations of a sliding 1-s window of ongoing voltage fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike data were high-pass filtered at 500 Hz and candidate spike waveforms were defined as exceeding 4 standard deviations of a sliding 1-s window of ongoing voltage fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spike detection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "696a6ac8-2912-449d-971a-918e80f120fd",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C74",
+      "claim": "LFP data were low-pass filtered at 300 Hz and down-sampled to 1000 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "LFP data were low-pass filtered at 300 Hz and down-sampled to 1000 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LFP processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "594bac2f-afe2-4090-b9db-18b9533349f0",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C75",
+      "claim": "Sessions were only included if CSD analysis revealed a recognizable source\u2013sink pattern consistent with reversals across superficial and deep layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Sessions were only included if CSD analysis revealed a recognizable source\u2013sink pattern consistent with reversals across superficial and deep layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for recording sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "f7d57b45-f240-429c-a85e-a0a18e695713",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "claim_id": "C76",
+      "claim": "Six recording sessions from V4 in each macaque, 8 recording sessions in marmoset MT, and 14 recording sessions from marmoset PFC were used in the analyses across recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Six recording sessions from V4 in each macaque, 8 recording sessions in marmoset MT, and 14 recording sessions from marmoset PFC were used in the analyses across recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample sizes for different cortical areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b440b021-60ac-4ffa-8b6f-1290783fae2c",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate a phase reversal in spike-field coupling that reliably corresponds to the laminar boundary between input and deep cortical layers. This pattern was observed across multiple cortical areas (V4, MT, PFC) in two primate species (marmosets and macaques), with significant differences in spike-phase index (SPI) and preferred phase angles across layers. The depth estimates from this laminar-phase coupling (LPC) method correlated significantly with CSD-based estimates (r=0.64, p=0.00005) with no significant difference in absolute depth values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C21 provide converging evidence for the main finding through quantitative measurements, statistical comparisons, and cross-validation with the gold-standard CSD method. The statistical tests are appropriate (Wilcoxon signed-rank, Watson-Williams, Pearson correlation), sample sizes are adequate (N=34 sessions), and the finding replicates across species and cortical areas. The correlation between methods and lack of significant difference in depth estimates provide strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "3de42968-784a-4bf0-bd17-dd795058a14b",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The phase reversal pattern is robust across multiple analysis parameters including different frequency bands (4-8, 8-14, 15-30, 30-50 Hz), phase computation methods (Generalized Phase vs. Hilbert Transform), spike sorting approaches (single-unit vs. multi-unit), experimental conditions (fixation, free viewing, darkness, receptive field mapping), and referencing schemes (shallowest, deepest, or common average reference).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 systematically test the robustness of the main finding across multiple methodological variations. The authors provide appropriate controls and demonstrate consistency across parameters, which strengthens confidence in the generalizability of the method. The testing is comprehensive and addresses potential confounds related to signal processing choices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "8d4edd82-f02a-4729-9482-fd04d8d90ec3",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The LPC method can detect laminar boundaries from as little as one minute of continuous recording data and can track electrode drift over time. Across recordings, the estimated input layer depth drifted deeper by an average of 132\u00b126 \u03bcm between the first and last 2 minutes of recording (p=0.005), consistent with tissue settling after electrode insertion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 demonstrate practical advantages of the LPC method for online depth estimation and drift tracking. The statistical evidence for drift (p=0.005) is significant, and the interpretation as tissue settling is reasonable. However, the claim about 'as little as a minute' being sufficient is somewhat qualitative - more systematic analysis of minimum data requirements would strengthen this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "f46e97e0-2c9b-47a2-b27d-31c78bbe0362",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LFP phase correlations alone can sometimes identify laminar boundaries, but this pattern is variable across recording sessions. The spike-LFP phase relationship (LPC) provides a more robust measure of contact depth than LFP phase correlations alone, with improved reliability when combining LFP phase with spiking activity timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34, C50-C52 acknowledge limitations of using LFP phase alone while demonstrating the added value of incorporating spiking data. The comparative assessment is honest about variability and provides a balanced evaluation of different approaches. This strengthens confidence in the proposed LPC method by showing it outperforms simpler alternatives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "75413654-98f9-41fd-b9fb-9cab2071ea1f",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In cases where CSD and LPC estimates disagreed by >200 \u03bcm (14/34 sessions), the LPC method better captured known laminar features including higher firing rates in input/deep layers (p=0.0003 for LPC vs. p=0.09 for CSD) and the inversion of high/low frequency LFP power (r=0.87 for LPC vs. r=0.65 for CSD). This suggests LPC provides more reliable depth estimates when CSD analysis is noisy or ambiguous.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C45 provide critical validation by comparing both methods against independent ground-truth features (firing rates and spectral power patterns) from prior literature. The statistical evidence favoring LPC in ambiguous cases is compelling. However, the analysis is somewhat circular since 'disagreement' sessions were selected post-hoc, and true histological validation is absent. The inference that LPC is 'better aligned to ground truth' (C39, C45) is reasonable but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "368b84da-9101-4d05-80d2-4799286e4373",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Superficial and input layers show stronger spike-LFP coupling than deep layers, which may reflect shared synaptic inputs in these layers. This pattern is consistent with spike-count correlation measurements in V2 and V4, though different patterns have been observed in V1, suggesting potential area-specific differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C58 present an interesting observation about laminar differences in coupling strength, but the mechanistic explanation (C54) is speculative. The comparison to prior spike-count correlation studies (C55-C57) provides some support, but these are different measures. The prediction about V1 (C58) is untested speculation. This result identifies an interesting pattern but lacks sufficient mechanistic validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "186efdff-0d7a-4f0d-864e-71372b91013b",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The LPC pattern was reliable across V4, MT, and PFC in two primate species performing visually guided tasks, but generalizability to non-sensory cortical areas, sleep/anesthesia conditions, or other species remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 appropriately summarize the scope and limitations of the findings. The authors are transparent about what has been tested (awake, sensory areas, two primate species) and what remains unknown. This honest assessment of generalizability is appropriate given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "ae6d1ad8-28f8-4b78-9f0d-4535017cb0a7",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that the observed spike-phase reversal may result from LFP phase inversion across an electrical dipole generated by radial pyramidal cell architecture spanning cortical layers. While the mechanism remains unclear, the reversal consistently aligns with the input/deep layer boundary across multiple cortical areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C63 present a mechanistic hypothesis but acknowledge it as speculative. The dipole hypothesis (C61-C62) is plausible and cited, but not tested in this study. The empirical observation (C63) is well-supported, but the mechanistic explanation requires future experimental validation. The authors appropriately distinguish between demonstrated patterns and proposed mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "65c03a77-07a7-467f-87b6-8e60c47a6bbd",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The LPC method provides a fast, simple supplement or alternative to CSD analysis for estimating laminar depth. It can be applied to ongoing activity across various experimental conditions and analysis parameters, and successfully replicates the histologically-validated pattern of LFP power inversion across the input layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66, C48 summarize the practical utility and validation of the method. The replication of the power inversion pattern (C48) provides important validation against a histologically-confirmed feature. The practical advantages (speed, simplicity, no stimulus requirement) are well-demonstrated. These claims appropriately synthesize the main contributions of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study used appropriate methods including 32-channel linear probes in V4 (macaques) and MT/PFC (marmosets), with proper surgical procedures, ethical approvals, and data acquisition parameters. Recording sessions were included only if CSD analysis revealed recognizable laminar patterns, yielding 34 total sessions across areas and species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C67-C76 describe standard methodological details that are appropriate for this type of study. The inclusion criteria (C75) introduce potential selection bias by requiring 'recognizable' CSD patterns, which could exclude difficult cases where the LPC method might be most valuable. However, this is a reasonable approach for initial validation. Sample sizes are adequate though modest (N=34 sessions total).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "cd785220-c7fe-45f8-9337-a400d2d59883",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors establish the context and limitations of current methods for identifying cortical layers. CSD analysis is the gold standard but requires averaging across repeated sensory-evoked responses, limiting its application to well-characterized sensory areas. Spike-field coupling is known to be diagnostic of circuit interactions, motivating the investigation of spike-phase relationships for laminar identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10, C46-C47 accurately represent prior work through appropriate citations and establish the scientific rationale for the study. The characterization of CSD limitations (C7, C46) and spike-field coupling properties (C9-C10) is well-supported by literature. This provides appropriate context for the novel contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    },
+    {
+      "id": "fb1ff768-d203-4249-bcf6-0b5a037aac72",
+      "content_id": "82876675-2bea-445b-a7b6-3c36200ca123",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has established that superficial layers exhibit higher high-frequency LFP power (80-200 Hz) while deep layers show more low-frequency power (8-20 Hz), with crossover at the input layer. Additionally, superficial layers have lower firing rates compared to input and deep layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C40-C41 accurately cite prior findings that serve as validation benchmarks in this study. These are well-established patterns in the literature with histological validation, making them appropriate ground-truth features for comparing CSD and LPC methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:21:36.328333Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "03266b0a-e588-4e4b-876d-e6f74531e2e8",
+      "result_id": "b440b021-60ac-4ffa-8b6f-1290783fae2c"
+    },
+    {
+      "claim_id": "91393d97-f4f6-4a5b-82aa-5b69d449cf51",
+      "result_id": "b440b021-60ac-4ffa-8b6f-1290783fae2c"
+    },
+    {
+      "claim_id": "655de04d-7eee-44b6-9d73-a9dbff19505e",
+      "result_id": "b440b021-60ac-4ffa-8b6f-1290783fae2c"
+    },
+    {
+      "claim_id": "0443dd9f-bd4b-4044-bfb1-e45e0a558288",
+      "result_id": "b440b021-60ac-4ffa-8b6f-1290783fae2c"
+    },
+    {
+      "claim_id": "438483e5-882a-40d8-96c6-b506b2ddbd6a",
+      "result_id": "b440b021-60ac-4ffa-8b6f-1290783fae2c"
+    },
+    {
+      "claim_id": "266f090b-804a-448a-ad0b-0c9e8790a3fc",
+      "result_id": "b440b021-60ac-4ffa-8b6f-1290783fae2c"
+    },
+    {
+      "claim_id": "00bb50fe-26ca-44c5-b80f-b2288569a96a",
+      "result_id": "b440b021-60ac-4ffa-8b6f-1290783fae2c"
+    },
+    {
+      "claim_id": "c275306a-a53c-4b35-a7b0-bd21f29be54b",
+      "result_id": "b440b021-60ac-4ffa-8b6f-1290783fae2c"
+    },
+    {
+      "claim_id": "e6bfec0b-201f-4982-87f2-2f71c52053a9",
+      "result_id": "b440b021-60ac-4ffa-8b6f-1290783fae2c"
+    },
+    {
+      "claim_id": "9e56365f-6ca3-4642-9364-424feec15dce",
+      "result_id": "3de42968-784a-4bf0-bd17-dd795058a14b"
+    },
+    {
+      "claim_id": "c8f3d813-8b67-4184-9812-c5ffc31e5c6f",
+      "result_id": "3de42968-784a-4bf0-bd17-dd795058a14b"
+    },
+    {
+      "claim_id": "f59a0f17-774a-491d-bb65-036d8444429a",
+      "result_id": "3de42968-784a-4bf0-bd17-dd795058a14b"
+    },
+    {
+      "claim_id": "49c7d346-1e0b-447a-8724-be7665b4ad98",
+      "result_id": "3de42968-784a-4bf0-bd17-dd795058a14b"
+    },
+    {
+      "claim_id": "f80a418a-70a2-4d23-ad7d-7fdb79ca9e44",
+      "result_id": "3de42968-784a-4bf0-bd17-dd795058a14b"
+    },
+    {
+      "claim_id": "cdc013fe-cf48-4c6c-bd57-76833d30e47d",
+      "result_id": "8d4edd82-f02a-4729-9482-fd04d8d90ec3"
+    },
+    {
+      "claim_id": "49568917-93e3-4401-acf5-c0e8cfe9faf8",
+      "result_id": "8d4edd82-f02a-4729-9482-fd04d8d90ec3"
+    },
+    {
+      "claim_id": "d7402e42-39ad-47e6-a450-854f0a245f9e",
+      "result_id": "8d4edd82-f02a-4729-9482-fd04d8d90ec3"
+    },
+    {
+      "claim_id": "d5770f12-2166-4283-9a3c-4d9d57939843",
+      "result_id": "8d4edd82-f02a-4729-9482-fd04d8d90ec3"
+    },
+    {
+      "claim_id": "417813f9-13de-4886-9baf-bc78b1eae087",
+      "result_id": "8d4edd82-f02a-4729-9482-fd04d8d90ec3"
+    },
+    {
+      "claim_id": "3f502564-007a-4d7c-8c52-52e550f5da4d",
+      "result_id": "f46e97e0-2c9b-47a2-b27d-31c78bbe0362"
+    },
+    {
+      "claim_id": "f2e7088f-eb11-4343-93ac-e6261f8e6096",
+      "result_id": "f46e97e0-2c9b-47a2-b27d-31c78bbe0362"
+    },
+    {
+      "claim_id": "5782e2f7-ccb0-4d06-ad20-17e13f9ce53d",
+      "result_id": "f46e97e0-2c9b-47a2-b27d-31c78bbe0362"
+    },
+    {
+      "claim_id": "31dd0694-0288-4b0e-a4eb-228726a7699c",
+      "result_id": "f46e97e0-2c9b-47a2-b27d-31c78bbe0362"
+    },
+    {
+      "claim_id": "c15c5c49-bc70-47a3-8413-e38bdc36d404",
+      "result_id": "f46e97e0-2c9b-47a2-b27d-31c78bbe0362"
+    },
+    {
+      "claim_id": "75ce55b7-c4c0-4296-8fbe-ab9194f8c881",
+      "result_id": "f46e97e0-2c9b-47a2-b27d-31c78bbe0362"
+    },
+    {
+      "claim_id": "4de5ada3-11c3-4745-b0a0-3f98272be90b",
+      "result_id": "75413654-98f9-41fd-b9fb-9cab2071ea1f"
+    },
+    {
+      "claim_id": "505495c1-d459-4bd2-a3c1-4f377ee2a8b5",
+      "result_id": "75413654-98f9-41fd-b9fb-9cab2071ea1f"
+    },
+    {
+      "claim_id": "473c8756-eff4-461e-b7bb-7ec184b918f8",
+      "result_id": "75413654-98f9-41fd-b9fb-9cab2071ea1f"
+    },
+    {
+      "claim_id": "4ada17d9-9734-43b6-ae7b-4ecf152c234e",
+      "result_id": "75413654-98f9-41fd-b9fb-9cab2071ea1f"
+    },
+    {
+      "claim_id": "b4b4fbc4-83ab-4893-9a9e-70e3518a1d93",
+      "result_id": "75413654-98f9-41fd-b9fb-9cab2071ea1f"
+    },
+    {
+      "claim_id": "22fb0373-f17e-4409-b263-a6022c821e7f",
+      "result_id": "75413654-98f9-41fd-b9fb-9cab2071ea1f"
+    },
+    {
+      "claim_id": "df6db4f7-3da9-4aef-9090-f7deafe0d94f",
+      "result_id": "75413654-98f9-41fd-b9fb-9cab2071ea1f"
+    },
+    {
+      "claim_id": "28b5ea7f-b1ca-4e64-97aa-7e8d9370f097",
+      "result_id": "75413654-98f9-41fd-b9fb-9cab2071ea1f"
+    },
+    {
+      "claim_id": "9f4ab172-b96d-4664-a179-7f649338bc2e",
+      "result_id": "75413654-98f9-41fd-b9fb-9cab2071ea1f"
+    },
+    {
+      "claim_id": "5e6f4d02-1492-4b74-b676-eea3fab91805",
+      "result_id": "368b84da-9101-4d05-80d2-4799286e4373"
+    },
+    {
+      "claim_id": "cb09019e-3e32-47be-a259-6783f0cfd8d2",
+      "result_id": "368b84da-9101-4d05-80d2-4799286e4373"
+    },
+    {
+      "claim_id": "81a01880-5d87-4ef3-8830-fe5e9d998f9c",
+      "result_id": "368b84da-9101-4d05-80d2-4799286e4373"
+    },
+    {
+      "claim_id": "286faa94-4ed1-4859-afd1-440962506d9c",
+      "result_id": "368b84da-9101-4d05-80d2-4799286e4373"
+    },
+    {
+      "claim_id": "e9dd7372-904e-4c94-9e06-df2a712a3d12",
+      "result_id": "368b84da-9101-4d05-80d2-4799286e4373"
+    },
+    {
+      "claim_id": "dafe8994-218a-43f3-b48a-3b2665dd372c",
+      "result_id": "368b84da-9101-4d05-80d2-4799286e4373"
+    },
+    {
+      "claim_id": "075aacc0-e693-4d7a-be57-3139bcffd8e1",
+      "result_id": "186efdff-0d7a-4f0d-864e-71372b91013b"
+    },
+    {
+      "claim_id": "93d4aef8-aa37-4e27-9179-e337dfebfab3",
+      "result_id": "186efdff-0d7a-4f0d-864e-71372b91013b"
+    },
+    {
+      "claim_id": "82a821b8-e514-43dc-b02f-7edb6c7bc7ef",
+      "result_id": "ae6d1ad8-28f8-4b78-9f0d-4535017cb0a7"
+    },
+    {
+      "claim_id": "28e4d6c2-3ac2-46a2-80d0-b8b510aab6a7",
+      "result_id": "ae6d1ad8-28f8-4b78-9f0d-4535017cb0a7"
+    },
+    {
+      "claim_id": "723ec6bd-4660-418d-a1a0-141cd09cd56e",
+      "result_id": "ae6d1ad8-28f8-4b78-9f0d-4535017cb0a7"
+    },
+    {
+      "claim_id": "e694b45f-7d7d-4172-93ff-8244783bf38b",
+      "result_id": "65c03a77-07a7-467f-87b6-8e60c47a6bbd"
+    },
+    {
+      "claim_id": "b319ba6e-5003-4906-b45f-67574d0d7e72",
+      "result_id": "65c03a77-07a7-467f-87b6-8e60c47a6bbd"
+    },
+    {
+      "claim_id": "cf59c9a7-0b19-4833-921e-107e834f1608",
+      "result_id": "65c03a77-07a7-467f-87b6-8e60c47a6bbd"
+    },
+    {
+      "claim_id": "aa11e15d-eaca-460d-81a0-a50ccd4d9220",
+      "result_id": "65c03a77-07a7-467f-87b6-8e60c47a6bbd"
+    },
+    {
+      "claim_id": "b70e45b4-efef-4710-b05e-64624f0d15ff",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "2d3a7578-0fbf-4b39-a429-ab9c73ac74ea",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "62ac3705-a732-4abc-b99f-795c08125dca",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "25e7e746-d151-415d-bade-db5e5887d6ee",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "03501c32-b1d8-4049-9dfa-52227b133596",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "3bf3809f-26dd-4af9-84c0-a5a536b3a48c",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "2b37a172-fdde-477b-8a9e-5fd613a575d0",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "683da53b-f2c2-4d53-9559-53387836eb7a",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "696a6ac8-2912-449d-971a-918e80f120fd",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "594bac2f-afe2-4090-b9db-18b9533349f0",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "f7d57b45-f240-429c-a85e-a0a18e695713",
+      "result_id": "26f77aa2-126c-4ec9-83d5-e12ff5f89cd8"
+    },
+    {
+      "claim_id": "be78d441-42ef-4203-ad1e-af6ed725e966",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "4695083a-bd6e-4771-bb9d-c7694d53a85a",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "aabb3880-de95-4402-9c51-e6a8e0d25bec",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "6793b719-8b7c-4146-9ecb-02bbd6d02426",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "73e5267e-0276-40fc-9265-04b4848814fe",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "3c60174a-7234-4eb4-b9fd-2b4f007910c0",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "3faf0696-14f6-44a5-9fe8-08cdffc844d4",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "a005791f-3035-414f-9f21-dcc0e5ac258d",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "2915afe7-147e-4453-a577-6fcf0687e0e7",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "b5495c4f-2ee9-4677-8752-1156ee9fef5c",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "a5d83ea2-34f8-4650-91aa-9e23c8ffb115",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "472df12f-f889-4b2d-8930-072bad4baba6",
+      "result_id": "cd785220-c7fe-45f8-9337-a400d2d59883"
+    },
+    {
+      "claim_id": "2ddbdfc6-8352-4c02-9082-bc08429460b0",
+      "result_id": "fb1ff768-d203-4249-bcf6-0b5a037aac72"
+    },
+    {
+      "claim_id": "2576f438-c97f-44dc-8647-38e82746ec70",
+      "result_id": "fb1ff768-d203-4249-bcf6-0b5a037aac72"
+    },
+    {
+      "claim_id": "505495c1-d459-4bd2-a3c1-4f377ee2a8b5",
+      "result_id": "fb1ff768-d203-4249-bcf6-0b5a037aac72"
+    }
+  ],
+  "comparisons": []
+}

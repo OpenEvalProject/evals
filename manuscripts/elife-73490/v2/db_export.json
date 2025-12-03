@@ -1,0 +1,1714 @@
+{
+  "submission": {
+    "id": "94dfe26c-a864-4ace-a7c9-a5a47faeaad1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:23:17.716817Z",
+    "updated_at": "2025-12-03T10:23:17.716817Z"
+  },
+  "content": [
+    {
+      "id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "submission_id": "94dfe26c-a864-4ace-a7c9-a5a47faeaad1",
+      "content_type": "manuscript",
+      "content_text": "# Comprehensive characterization of the antibody responses to SARS-CoV-2 Spike protein finds additional vaccine-induced epitopes beyond those for mild infection\n\n## Authors\n\n- Meghan E Garrett<sup>1</sup>\n- Jared G Galloway<sup>2</sup>\n- Caitlin Wolf<sup>3</sup>\n- Jennifer K Logue<sup>3</sup>\n- Nicholas Franko<sup>3</sup> ([ORCID: 0000-0001-8165-6332](https://orcid.org/0000-0001-8165-6332))\n- Helen Y Chu<sup>3</sup>\n- Frederick A Matsen<sup>4</sup> ([ORCID: 0000-0003-0607-6025](https://orcid.org/0000-0003-0607-6025)) \u2020\n- Julie M Overbaugh<sup>1</sup> ([ORCID: 0000-0002-0239-9444](https://orcid.org/0000-0002-0239-9444)) \u2020\n\n### Affiliations\n\n1. Division of Human Biology, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))\n2. Division of Public Health Sciences, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))\n3. Department of Medicine, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n4. Computational Biology Program, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Control of the COVID-19 pandemic will rely on SARS-CoV-2 vaccine-elicited antibodies to protect against emerging and future variants; an understanding of the unique features of the humoral responses to infection and vaccination, including different vaccine platforms, is needed to achieve this goal.Methods:The epitopes and pathways of escape for Spike-specific antibodies in individuals with diverse infection and vaccination history were profiled using Phage-DMS. Principal component analysis was performed to identify regions of antibody binding along the Spike protein that differentiate the samples from one another. Within these epitope regions, we determined potential sites of escape by comparing antibody binding of peptides containing wild-type residues versus peptides containing a mutant residue.Results:Individuals with mild infection had antibodies that bound to epitopes in the S2 subunit within the fusion peptide and heptad-repeat regions, whereas vaccinated individuals had antibodies that additionally bound to epitopes in the N- and C-terminal domains of the S1 subunit, a pattern that was also observed in individuals with severe disease due to infection. Epitope binding appeared to change over time after vaccination, but other covariates such as mRNA vaccine dose, mRNA vaccine type, and age did not affect antibody binding to these epitopes. Vaccination induced a relatively uniform escape profile across individuals for some epitopes, whereas there was much more variation in escape pathways in mildly infected individuals. In the case of antibodies targeting the fusion peptide region, which was a common response to both infection and vaccination, the escape profile after infection was not altered by subsequent vaccination.Conclusions:The finding that SARS-CoV-2 mRNA vaccination resulted in binding to additional epitopes beyond what was seen after infection suggests that protection could vary depending on the route of exposure to Spike antigen. The relatively conserved escape pathways to vaccine-induced antibodies relative to infection-induced antibodies suggests that if escape variants emerge they may be readily selected for across vaccinated individuals. Given that the majority of people will be first exposed to Spike via vaccination and not infection, this work has implications for predicting the selection of immune escape variants at a population level.Funding:This work was supported by NIH grants AI138709 (PI JMO) and AI146028 (PI FAM). JMO received support as the Endowed Chair for Graduate Education (FHCRC). The research of FAM was supported in part by a Faculty Scholar grant from the Howard Hughes Medical Institute and the Simons Foundation. Scientific Computing Infrastructure at Fred Hutch was funded by ORIP grant S10OD028685.\n\n## Introduction\n\nThe future of the COVID-19 pandemic will be determined in large part by the ability of vaccine-elicited immunity to protect against current and future variants of the SARS-CoV-2 virus. Several vaccines have now been approved for use in multiple countries, including two that are based on mRNA technology: BNT162b2 (Pfizer/BioNTech) and mRNA-1273 (Moderna). In the United States, over half of adults are now vaccinated against SARS-CoV-2, the majority of whom have received one of these mRNA vaccines. While these vaccines have been shown to effectively guard against infection, severe disease, and death related to SARS-CoV-2 (Polack et al., 2020; Keehner et al., 2021; Amit et al., 2021; Angel et al., 2021; Thompson et al., 2021; Haas et al., 2021; Baden et al., 2021), less is known about how effective they will be against emerging and future variants. One example is the recent surge of the Delta variant coupled with reports of reduced potency of vaccine-elicited antibodies against this variant, highlighting this concerning ongoing dynamic (Planas et al., 2021; Lopez Bernal et al., 2021) \u2013 a situation that is playing out in an even more significant way with the Omicron variant. Evidence from related endemic coronaviruses indicates that evolution in the Spike protein results in escape from neutralizing antibodies elicited by prior infection (Eguia et al., 2021), potentially contributing to why endemic coronaviruses can reinfect the same host (Edridge et al., 2020; Hendley et al., 1972; Schmidt et al., 1986). Without immunity that is robust in the face of antigenic drift, continual updates of the vaccine to combat new SARS-CoV-2 variants will likely be necessary to provide optimal protection against symptomatic infection.\n\nPrior infection with SARS-CoV-2 also provides some immunity against subsequent reinfection, and several studies have characterized the epitopes targeted by convalescent sera (Hanrath et al., 2021; Greaney et al., 2021a; Shrock et al., 2020; Li et al., 2021; Stoddard et al., 2021). It is currently unknown whether SARS-CoV-2 infection and vaccination result in antibodies that bind to similar epitopes, an important point to consider given that most people have acquired antibodies through immunization and not infection. The Spike protein encoded by the mRNA in both SARS-CoV-2 vaccines is stabilized in the prefusion conformation by addition of two proline substitutions (Corbett et al., 2020). This change in sequence and fixed conformation of the Spike protein could result in altered antibody targeting when compared to antibodies elicited during infection, where Spike undergoes several conformational changes. It is also possible that differences in antibody specificity could be due to the amount of antigen or type of immune response stimulated in the context of infection versus vaccination. We know that vaccines drive higher neutralization titers and more Spike binding IgG antibodies than infection (Goel et al., 2021; Prendecki et al., 2021; Edara et al., 2021), indicating some differences in the B cell response compared to infection. A recent study showed that antibodies against the receptor binding domain (RBD) of Spike differ between infected and vaccinated individuals; they are generally less sensitive to mutation and bind more broadly across the domain in the context of vaccination as compared to infection (Greaney et al., 2021b).\n\nAlthough the majority of the serum binding response in SARS-CoV-2-infected and -vaccinated people is directed towards regions of the protein outside of the RBD epitopes (Greaney et al., 2021a; Greaney et al., 2021b; Garrett et al., 2021; Piccoli et al., 2020), few studies have examined the prevalence and escape pathways of these antibodies, especially in the setting of vaccination. Antibodies to linear epitopes in the S2 domain of Spike overlapping the fusion peptide (FP), and in the stem helix region just upstream of heptad repeat 2 (SH-H) region are found in serum from COVID-19 patients, and some studies suggest that these antibodies may be neutralizing (Poh et al., 2020; Li et al., 2020). These non-RBD responses may also be important contributors to non-neutralizing antibody activities, which have been associated with protection and therapeutic benefit in experimental SARS-CoV-2 models and with vaccine protection (Sch\u00e4fer et al., 2021; Tauzin et al., 2021; Winkler, 2021; Ullah et al., 2021). Importantly, these epitopes lie in more conserved regions of Spike than RBD where functional constraints on variation may counter the selective pressure for viral escape.\n\nTo compare antibody immunity elicited by SARS-CoV-2 infection and vaccination, we used a high-resolution Spike-specific deep mutational scanning phage display library to profile the epitopes and sites of escape for serum antibodies from people who had been infected, vaccinated, or a combination of both. This approach, called Phage-DMS, identified four non-RBD antibody binding epitopes across all samples: the FP and SH-H region in the S2 subunit, and the N-terminal domain (NTD) and C-terminal domain (CTD) in the S1 subunit of Spike. Antibodies to NTD and CTD were uniquely present in the setting of mRNA vaccination or severe infection, but mostly absent in mild COVID-19 cases. In vaccinated individuals, the magnitude of the response varied over time both to the CTD and SH-H epitopes. Other covariates, such as age, dose, and vaccine type, had no significant differences in the binding profiles observed. Of particular relevance to protection against emerging variants, infection and vaccination appear to shape the pathways of escape differently in different epitopes. In the FP epitope, which is a dominant response after infection, the escape pathway was maintained after subsequent vaccination; in the SH-H epitope, infection resulted in antibodies with diverse pathways of escape, whereas vaccination induced a highly uniform escape profile across individuals. Overall, these findings indicate that vaccination induced a broader antibody response across the Spike protein but induced a singular antibody response at the SH-H epitope, which could favor variants that emerge with these mutations.\n\n## Results\n\n### Samples from individuals with varying SARS-CoV-2 infection and mRNA vaccination histories profiled using high-resolution Spike Phage-DMS library\n\nWe collected serum samples from two cohorts, termed the Moderna Trial Cohort and the Hospitalized or Ambulatory Adults with Respiratory Viral Infections (HAARVI) Cohort (Garrett et al., 2021; Jackson et al., 2020). The Moderna Trial Cohort were participants in a Phase I trial and consisted of 49 individuals, 34 who received the 100 \u00b5g dose of mRNA-1273 (Moderna) and 15 who received the 250 \u00b5g dose. Serum samples were taken at days 36 and 119 post first dose (7 and 90 days post second dose, respectively; Jackson et al., 2020). The HAARVI Cohort included 64 individuals, 44 who had confirmed SARS-CoV-2 infection and 20 who had no reported infection; among this group, 44 were also vaccinated. Those with infection history were stratified by severity based on hospitalization status (39 nonhospitalized/mild vs. 5 hospitalized/severe), and serum was sampled at timepoints ranging from 8 to 309 days post symptom onset. Of these 44 individuals, 24 were also sampled after vaccination with two doses of either mRNA-1273 (Moderna, n = 8) or BNT162b2 (Pfizer/BioNTech, n = 15), with 23 from the nonhospitalized group and one from the hospitalized group. All 20 SARS-CoV-2-na\u00efve individuals were sampled post vaccination, with 18 having an additional sample taken pre vaccination (0\u201398 days). Post-vaccination timepoints for all na\u00efve and convalescent individuals ranged from 23 to 65 days after the first dose (5\u201342 days after the second dose, respectively). Figure 1 provides an illustration of the two cohorts and their respective samples\u2019 infection and vaccination statuses. Additional details are available in Supplementary file 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig1-v2.jpg)\n\n**Figure 1.:** Characteristics of individual participants sampled as part of the Moderna Trial Cohort (left) or the Hospitalized or Ambulatory Adults with Respiratory Viral Infections (HAARVI) Cohort (right). Sample sizes of unique individuals in each group are designated below each figure.\n\nWe used a previously described Spike Phage-DMS library to profile the epitopes bound by serum antibodies in the samples described above (Garrett et al., 2021). This library consists of peptides displayed on the surface of T7 bacteriophage that are 31 amino acids long, tiling across the length of Spike in one amino acid increments. Peptides in the library correspond to the wild-type Wuhan Hu-1 Spike sequence as well as sequences that contain every possible single amino acid mutation at the central position of the peptide. Serum samples were screened with this library by performing immunoprecipitation (IP) followed by sequencing of the pool of phage enriched by the serum antibodies as previously described (Garrett et al., 2021; Garrett et al., 2020; Mohan et al., 2018).\n\n### Serum antibodies bind to distinct epitopes in infected and vaccinated individuals\n\nWe first examined the wild-type peptides in the Spike Phage-DMS library that were enriched by each serum sample to determine the epitopes bound by antibodies in each sample from these cohorts (Figure 2A). The major targeted epitopes across all the cohorts were in the NTD, CTD, FP, and SH-H regions. Serum from nonvaccinated infected individuals who were not hospitalized mostly bound to immunodominant epitopes in the FP and SH-H, both of which are epitopes previously identified in infected individuals using Phage-DMS (Garrett et al., 2021). Samples from hospitalized/severe COVID-19 cases and vaccinated individuals also bound to the FP and SH-H regions, but additionally bound to epitopes within the NTD and CTD regions. In na\u00efve serum samples, there were antibodies that occasionally bound to the FP and SH-H peptides. These findings likely reflect that some individuals have preexisting cross-reactive antibodies that bind to these conserved regions between SARS-CoV-2 and endemic coronaviruses, as suggested by previous studies (Shrock et al., 2020; Stoddard et al., 2021).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig2-v2.jpg)\n\n**Figure 2.:** (A) Heatmap with a sample in each row and groups of samples colored on the left. Columns represent peptide locations, with each square on the heatmap indicating the summed enrichment value within a 10-peptide interval. Darker purple indicates higher enrichment values, and values above 150 were capped. Transparent boxes above the heatmap annotate the Spike protein domains, while the smaller gray boxes indicate epitope binding regions defined in this analysis (B) The loading vectors from the principal component analysis with the four epitope sites highlighted; enrichments in each of these regions are summed together for subsequent analysis. (C) Boxplots describing the distribution of summed wild-type enrichment values for each sample within each of the four epitope sites, each named according to its associated protein domain. Color indicates the sample group. The bars between boxplots give statistical significance (p-value) tests using a Mann\u2013Whitney\u2013Wilcoxon test. All sample group comparisons with the nonhospitalized infected group were performed, and only significant values are shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scatterplot depicting the unit scaled sample \u2018scores\u2019 represented by the columns to visualize sample relationship in principal component space. Colors represent the group that each sample belongs to. (B) Vector plots showing the component loadings, scaled by the square root of the respective eigenvalues in the eigendecomposition. Colors represent the genomic location of each component loading score. (C) Line plots showing the first three principal axes/directions in feature space, plotted as a function of the wild-type peptide feature location on Spike.\n\nA principal component analysis (PCA) was used to further investigate differences between the infected and/or vaccinated groups (Figure 2\u2014figure supplement 1). This analysis indicated that binding to epitopes in the NTD, CTD, FP, and SH-H regions was the driving difference between samples (Figure 2B). To quantify differences in antibody binding between groups, for each sample we summed together the enrichment values within each identified epitope region and performed pairwise comparisons between nonhospitalized infected people and all other groups (Figure 2C). Most strikingly, we found nontrivial group differences in the magnitude of humoral responses to these major epitopes on the Spike protein. Specifically, antibodies from both hospitalized infected and vaccinated individuals had significantly higher binding to the NTD, CTD, and SH-H regions compared to nonhospitalized infected individuals. However, antibodies from nonhospitalized infected individuals displayed significantly higher binding to the FP epitope than samples from hospitalized or vaccinated individuals. There was no significant difference in any epitope binding in these four regions between vaccinated samples with and without prior infection (p>0.05, Mann\u2013Whitney\u2013Wilcoxon [MWW]).\n\n### Effect of age, dose, vaccine type, and timepoint on epitope binding\n\nIn order to determine if there were covariates that contributed to differences in antibody binding, we examined the effect of participant age, vaccine dose and type, and timepoint post infection or vaccination on binding to the four epitopes identified above (Figure 3). For samples in the Moderna Trial Cohort, there was significantly decreased binding to the CTD epitope and SH-H epitope (p=0.008, p=0.011, Wilcoxon rank-sum test with Bonferroni correction) at the later timepoint post first dose (day 119) compared to the earlier timepoint (day 36) (Figure 3A). To examine the effect of dosage, we compared 100 \u00b5g and 250 \u00b5g mRNA-1273 groups for those between the age of 18\u201355, as that was the only age group included for the 250 \u00b5g dose (Figure 3B). There was no significant difference by vaccine dosage for any of the four epitope regions (NTD, CTD, FP, or SH-H). Participant age was also examined as a variable; there appeared to be a difference in epitope binding in the SH-H region, but this did not survive multiple testing correction (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig3-v2.jpg)\n\n**Figure 3.:** Boxplots of summed wild-type enrichment within epitope binding regions for samples grouped by (A) timepoint post vaccination, (B) vaccine dose, or (C) participant age. Samples were taken either at 36 (n = 64) or 119 (n = 64) days post vaccination. (B) and (C) are additionally separated by timepoint post vaccination. Results of a Wilcoxon rank-sum test between the groups appear only where p<0.05 after Bonferroni multiple testing correction (36 group comparisons). Figures containing all p-values for both replicate batches are available at https://github.com/matsengrp/phage-dms-vacc-analysis (swh:1:rev:d4c770ad49ed2f8ab31e499265dd02273cff6f86, Matsen, 2022).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Boxplots of summed wild-type enrichment within epitope binding regions for samples grouped by (A) timepoint post symptom onset or (B) vaccine type (Pfizer/BioNTech BNT162b2 or Moderna mRNA-1273). Results of a Mann\u2013Whitney test between the groups are shown. p-Values were adjusted for multiple testing using Bonferroni correction. *p<0.05, ns, not significant.\n\nIn infected individuals, the effect of time post symptom onset on epitope binding was examined using nonhospitalized infected individuals in the HAARVI Cohort, who were sampled between 26 and 309 days post symptom onset (Figure 3\u2014figure supplement 1). Samples were binned into three groups: 0\u201360, 60\u2013180, and 180\u2013360 days post symptom onset. At all times post symptom onset, there was no significant difference in binding to the four identified epitopes (p>0.05, MWW). Individuals in the HAARVI Cohort were given either the Moderna mRNA-1273 or Pfizer/BioNTech BNT162b2 mRNA vaccine, and comparison of the epitope binding response between the two vaccine types revealed no significant differences in all epitope regions (Figure 3\u2014figure supplement 1B, p>0.05, MWW).\n\n### Infection and vaccination shape pathways of escape\n\nThe Spike Phage-DMS library contains peptides with every possible single amino acid substitution in addition to the wild-type sequence, enabling us to assay the impact of mutations on antibody binding. The effect of site-specific substitutions in critical antibody binding regions not only provides a high-resolution picture of the likely epitope intervals, but also identifies mutations that confer escape within the binding region. The effect of each mutation on serum antibody binding was quantified by calculating its scaled differential selection value, a metric that reports log-fold change of mutant peptide binding over wild-type peptide binding at any given site (see \u2018Materials and methods\u2019) (Garrett et al., 2020). Site mutations that cause a loss of binding when compared to the wild-type peptide centered at that same site are reported as having negative differential selection values, whereas those that bind better than the wild-type peptide have positive differential selection values. In order for differential selection to be meaningful, however, we must ensure that we do not include weak or sporadic signals that may be due to nonspecific binding. Accordingly, we set a threshold of summed wild-type peptide binding in any one region. By doing so, we lose samples in the analysis but can be confident in the results presented by samples passing this curation step (Figure 4\u2014figure supplement 1). For samples that passed this threshold, we compared the effect of prior infection and/or time post vaccination on the pathways of escape in each epitope region as follows. Plots depicting the effect of mutations for all samples are publicly explorable at https://github.com/matsengrp/vacc-dms-view-host-repo (copy archived at swh:1:rev:6519940a17ea2489f445b897485e621d8c6b781d, Galloway, 2022a).\n\n### N-terminal domain (NTD) and C-terminal domain (CTD)\n\nWe examined the sites of escape within the NTD and CTD epitope regions, focusing on vaccinated individuals from the Moderna Trial Cohort because these epitopes were notable targets of the vaccine response and not commonly found in infected individuals. Vaccination elicited antibodies with a strikingly uniform escape profile in the NTD epitope across samples (Figure 4A), with the majority of samples being sensitive to mutation at sites 291, 294\u2013297, 300\u2013302, and 304, which are in the very C-terminal portion of NTD as well as the region between NTD and RBD. The CTD region appeared to consist of multiple epitopes, the dominant being located at the N-terminal region between positions 545\u2013580 (termed CTD-N). Antibodies that bound to this dominant CTD epitope had a less uniform escape profile, but sites 561 and 562 were common sites of escape in most samples (Figure 4B). For antibodies to both the NTD and CTD-N epitopes, the pathways of escape tended to drift over time and were different at 119 days post vaccination as compared to 36 days post vaccination.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Logo plots depicting the effect of mutations on epitope binding in either the NTD (A) or CTD-N (B) epitope for paired samples from the Moderna Trial Cohort. The height of the letters corresponds to the magnitude of the effect of that mutation on epitope binding, that is, its scaled differential selection value. Letters below zero indicate mutations that cause poorer antibody binding as compared to wild-type peptide, and letters above zero indicate mutations that bind better than the wild-type peptide. Letter colors denote the chemical property of the amino acids. Logo plots on the left and right are paired samples from the same individual, with the participant ID noted on the left.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Histogram showing the summed enrichment values within each epitope region for every sample in the Moderna Trial Cohort (left two panels) or Hospitalized or Ambulatory Adults with Respiratory Viral Infections (HAARVI) Cohort (right two panels). Blue line delineates the threshold chosen for each epitope region. Samples above the line were included in the escape profile analyses.\n\n### Fusion peptide (FP)\n\nAntibodies against the FP epitope are strongly stimulated after infection but are less strongly induced after subsequent vaccination (Figure 2). Thus, we investigated whether the pathways of escape for serum antibodies also changed after vaccination within samples from previously infected individuals in the HAARVI Cohort. The escape profiles of antibodies in paired samples that strongly bound to the FP epitope both after infection and after subsequent vaccination are shown as a logo plot (Figure 5A). The major sites of escape within the FP epitope for these samples were sites 819, 820, 822, and 823, and these sites of escape did not appear to change after vaccination, although we noted that there was more variability in the escape profiles after vaccination.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig5-v2.jpg)\n\n**Figure 5.:** (A, B) Logo plots depicting the effect of mutations on epitope binding within the FP epitope region for paired samples from the (A) Hospitalized or Ambulatory Adults with Respiratory Viral Infections (HAARVI) Cohort or (B) Moderna Trial Cohort. Details are as described in Figure 4.\n\nWe next examined the pathways of escape for FP binding antibodies in vaccinated individuals from the Moderna Trial Cohort. In people with no prior infection, vaccination induced diverse pathways of escape in the FP region (Figure 5B). For example, for participant M10 escape was focused on sites 814, 816, and 818, whereas for participant M38 escape was focused on 819, 820, and 823. There appeared to be some differences in the escape profile at 119 days as compared to 36 days post vaccination, as exemplified by participants M15, M17, and M20. However, in general many of the major sites of escape were shared at both timepoints within each individual and as a group.\n\n### Stem helix-heptad repeat 2 (SH-H)\n\nIn order to determine the effect of prior infection on the binding profiles of antibodies after vaccination within the SH-H epitope region, we explored the pathways of escape for paired samples from patients with prior infection in the HAARVI Cohort before and after vaccination as was done for the FP region. Samples from previously infected individuals with no vaccination history had diverse pathways of escape within the SH-H epitope (Figure 6A). For example, site 1149 was only sensitive to mutation for participant 217C, and site 1157 was only sensitive to mutations for participants 120C and 146C. In contrast, the samples from vaccinated individuals, regardless of infection history, tended to have a uniform pathway of escape. The most prominent and consistent sites of escape for vaccinated individuals, both with and without prior infection, were at sites 1148, 1152, 1155, and 1,156. Of note, the pre-vaccination sample from an individual with prior infection requiring hospitalization (participant 6C) displayed an escape profile highly similar to those from vaccinated individuals, and this escape profile did not change after vaccination.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig6-v2.jpg)\n\n**Figure 6.:** (A, B) Logo plots depicting the effect of mutations on epitope binding within the SH-H epitope region for paired samples from the (A) Hospitalized or Ambulatory Adults with Respiratory Viral Infections (HAARVI) Cohort or (B) Moderna Trial Cohort. Details are as described in Figure 4.\n\nTo see whether the pathways of escape changed over time after vaccination, we visualized the escape mutations within the SH-H epitope for the samples in the Moderna Trial Cohort at 36 and 119 days after the first dose of vaccine (Figure 6B). We saw a highly uniform pattern of escape for most samples at days 36 and 119, again with escape mainly occurring at sites 1148, 1152, 1155, and 1156. For some participants, such as M11, M34, and M35, the escape mutations appeared to drift over time, but the major sites of escape remained the same.\n\n## Discussion\n\nIn this study, we comprehensively profiled the antibody response to the SARS-CoV-2 Spike protein, including pathways of escape from sera in individuals with diverse infection and vaccination histories. We identified four major targets of antibody responses outside of the core RBD domains, in the NTD, CTD, FP, and stem helix-HR2 regions. Vaccinated individuals as well as individuals with severe infection requiring hospitalization both had antibodies to these four epitope regions, whereas individuals with mild infection that did not require hospitalization preferentially targeted only FP and SH-H. One explanation for why vaccination and severely infected individuals share this antibody binding profile is that it is a result of the high antigenic load experienced by both groups. In previously infected cases, the epitope binding patterns changed over time after vaccination, with decreased binding to both the CTD and SH-H epitopes. However, there was not uniform decay across all four epitopes, indicating that waning antibody titers may not occur for all epitopes equally. Other factors such as vaccine dose (100 \u00b5g or 250 \u00b5g), vaccine type (BNT162b2 or mRNA-1273), and participant age did not significantly affect the specificity of the antibody response.\n\nWe explored the pathways of escape for antibodies binding to these key regions in infected and vaccinated people. We defined for the first time the escape pathways for NTD and CTD-N binding antibodies, epitopes that were commonly found in vaccinated individuals but not in infected individuals. In the case of the NTD epitope, which was located at the C-terminal end of the NTD, escape mutations were uniform and consistent amongst vaccinees, while pathways of escape were more diverse for CTD-N antibodies. Individuals with antibodies that strongly bound the FP epitope had focused escape profiles, with the majority of escape occurring at sites 819, 820, 822, and 823, although the sample size of this group is small (N = 3). Vaccination did not greatly alter the escape profile in previously infected individuals, nor did vaccination alone induce a strong or uniform response at the FP epitope. In contrast, antibodies that bind in the SH-H epitope region after infection have diverse pathways of escape, while after vaccination they appear to converge on a more uniform pathway of escape that includes mutations at sites 1148, 1152, 1155, and 1156. Interestingly, these are also the sites of contact for a cross-reactive HR2-specific antibody isolated from a mouse sequentially immunized with the MERS and SARS Spike proteins (Sauer et al., 2021). This hints that a singular antibody clonotype could be elicited when exposed to a stabilized Spike protein, dominating the response in the SH-H region.\n\nWe also observed some drift in the pathways of escape within a single person over time after vaccination. This mirrors findings from a recent study that examined sites of escape for RBD-specific antibodies in serum samples from the same Moderna Trial Cohort as used in this study (Greaney et al., 2021b). Together, these results suggest that the B cell response after vaccination with Spike mRNA continues to evolve over time. Multiple studies have demonstrated that SARS-CoV-2-specific B cells undergo continued somatic hypermutation in the months after infection, likely due to antigen persistence (Gaebler et al., 2021; Sakharkar et al., 2021). Spike antigen has been detected in the lymph nodes at least 3 months after vaccination with BNT162b2, and continued maturation of germinal center B cells could be a possible explanation for the changes in epitope binding we observed (Turner et al., 2021). Alternatively, turnover of short-term plasma cells and memory B cells could account for loss of antibody binding to certain epitopes.\n\nOur study has important limitations worth noting. Because the Spike Phage-DMS library displays 31 amino acid peptides, we are unable to detect antibodies that bind to conformational epitopes and/or glycosylated epitopes. This is demonstrated by the lack of observable binding to the RBD region, a domain with complex folding and known target of antibodies from infected and vaccinated individuals. However, prior studies of RBD epitopes have already been reported using an overlapping set of samples from the HAARVI Cohort, and together these results paint a more complete picture of epitopes across the Spike protein (Greaney et al., 2021a; Greaney et al., 2021b). Finally, we only have five individuals within the hospitalized group and this small sample size limits our ability to make conclusions about epitope binding in those with severe infection.\n\nOur finding that vaccinated individuals have a broader response across the Spike protein than infected individuals may have important implications for immune durability against future SARS-CoV-2 variants. Evidence suggests that a polyclonal antibody response that is resistant in the face of multiple mutations is necessary for long-lasting immunity against a mutating viral pathogen (Greaney et al., 2021c). Thus, the polyclonal response to vaccination may provide greater protection from infection than the more focused response after infection. However, the number of epitopes targeted provides just one benchmark and the ability to escape at the population level could also be influenced by the diversity of individuals\u2019 antibody responses at each epitope and thus the likelihood that a single escape mutation could be widely selected. At one S2-domain epitope region (SH-H), vaccination induced uniform sites of escape that may be due to a singular type of antibody that would allow escape by the same mutations for all vaccinated people. However, epitopes in the S2 domain tend to be in highly conserved regions with important functions that constrain the virus\u2019 ability to mutate, making escape from these antibodies less likely than for RBD, where escape is already common. Indeed, mutations in the FP and SH-H epitopes are not arising in the global population of SARS-CoV-2 (Garrett et al., 2021), providing some suggestion that these regions may be constrained (Walls et al., 2020; Jaroszewski et al., 2021). Overall, further studies of the functional capacity of these vaccine-elicited antibodies targeting epitopes outside of RBD are warranted to provide a path towards a polyclonal response to epitopes across the full Spike potein. This comprehensive view may further the goal of a more universal coronavirus vaccine that elimin/ates the need for continual updates of the SARS-CoV-2 vaccine strain due to mutations in variable regions on Spike.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Other</td>\n      <td>Protein A Dynabeads</td>\n      <td>Invitrogen</td>\n      <td>10001D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Protein G Dynabeads</td>\n      <td>Invitrogen</td>\n      <td>10003D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Q5 High-Fidelity 2X Master Mix</td>\n      <td>NEB</td>\n      <td>M0492L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>AMPure XP beads</td>\n      <td>Beckman Coulter</td>\n      <td>A63881</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Quant-iT PicoGreen dsDNA Assay Kit</td>\n      <td>Invitrogen</td>\n      <td>P11496</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KAPA Library Quantification Kit</td>\n      <td>Roche</td>\n      <td>KK4824</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Sample collection\n\n#### Moderna Trial Cohort\n\nWe obtained post-vaccination serum samples via the National Institute of Allergy and Infection Disease that were taken as part of a phase I clinical trial testing the safety and efficacy of the Moderna mRNA-1273 vaccine (NCT04283461) (Jackson et al., 2020). All samples were de-identified, and thus all work was approved by the Fred Hutchinson Cancer Research Center Institutional Review Board as nonhuman subjects research. Trial participants were given either 100 \u00b5g or 250 \u00b5g doses of the mRNA-1273 vaccine, and serum was sampled from all trial participants at 36 days and 119 days post vaccination. See Supplementary file 1 for detailed metadata related to each participant and serum sample.\n\n#### HAARVI Cohort\n\nWe obtained plasma samples from individuals enrolled in the HAARVI study conducted in Seattle (Garrett et al., 2021). Individuals were either enrolled upon PCR-confirmed diagnosis with SARS-CoV-2 infection or as control subjects prior to receiving vaccination with either BNT162b2 (Pfizer/BioNTech) or mRNA-1273 (Moderna). See Supplementary file 1 for detailed metadata related to each participant and plasma sample. For convenience, all plasma and serum samples in this study are referred to as serum. This study was approved by the University of Washington Institutional Review Board.\n\n#### Spike Phage-DMS assay\n\nThe Spike Phage-DMS library used in this study contained 24,820 designed peptides that tile across the length of the Spike protein. Peptides are each 31 amino acids long and tile by one amino acid increments, and correspond to either the wild-type sequence or a sequence containing a single mutation. Serum samples were profiled using the Spike Phage-DMS library as previously described (Garrett et al., 2021). Following this method, the Spike Phage-DMS library was diluted in Phage Extraction Buffer (20 mM Tris-HCl, pH 8.0, 100 mM NaCl, 6 mM MgSO4) to a concentration of 2.964 \u00d7 109 plaque-forming units/mL, which corresponds to approximately 200,000-fold coverage of each peptide. 10 \u00b5L of serum or plasma was added to 1 mL of the diluted library and incubated in a deep 96-well plate overnight at 4\u00b0C on a rotator. 40 \u00b5L of a 1:1 mixture of Protein A and Protein G Dynabeads (Invitrogen) were added to each well and then incubated at 4\u00b0C for 4 hr on a rotator. Beads bound to the antibody-phage complex were magnetically separated and washed 3\u00d7 with 400 \u00b5L wash buffer (150 mM NaCl, 50 mM Tris-HCl, 0.1% [vol/vol] NP-40, pH 7.5). Beads were resuspended in 40 \u00b5L of water and lysed at 95\u00b0C for 10 min. The diluted Spike Phage-DMS library was also lysed to capture the starting frequencies of peptides. All samples were run twice, once each with two independently generated Spike Phage-DMS libraries.\n\nDNA from lysed samples were amplified and sequenced as previously described (Garrett et al., 2021). Two rounds of PCR were performed using Q5 High-Fidelity 2X Master Mix (NEB). For the first round of PCR, 10 \u00b5L of lysed phage was used as the template in a 25 \u00b5L reaction using the primers described in Garrett et al., 2021. For the second round of PCR, 2 \u00b5L of the round 1 PCR product was then used as the template in a 50 \u00b5L reaction, with primers that add dual indexing sequences on either side of the insert. PCR products were then cleaned using AMPure XP beads (Beckman Coulter) and eluted in 50 \u00b5L water. DNA concentrations were quantified via Quant-iT PicoGreen dsDNA Assay Kit (Invitrogen). Equimolar amounts of DNA from the samples, along with 10\u00d7 the amount of the input library samples, was pooled, gel purified, and the final library was quantified using the KAPA Library Quantification Kit (Roche). Pools were sequenced on an Illumina HiSeq 2500 machine using the rapid run setting with single end reads.\n\n#### Sample curation and replicate structure\n\nAll sample IPs and downstream analysis were run in duplicate across two separate phage display library batches to ensure reproducibility, with the exception of the four acute samples from hospitalized HAARVI participants that were run in singlicate. All results were cross-checked with the set of batch replicates to ensure significance fell within one order of magnitude where applicable. For brevity, we present only figures resulting from the single complete set of batch-specific replicates; however, all figures using the second set of library batch replicates are available (see \u2018Code availability\u2019 and \u2018Data availability\u2019). Additionally, some samples were run with \u2018in-line\u2019 technical replicates within the same batch. In the case with more than one technical replicate, we selected the sample with the highest reads mapped from each set of batch replicates for our downstream analysis.\n\n#### Short-read alignment and peptide counts processing\n\nSamples were aliquoted and sequenced targeting 10\u00d7 coverage of total sample reads to the peptide library reference. We demultiplexed samples using Illumina MiSeq Reporter software. Post sample demultiplexing, we used a Nextflow pipeline to process the peptide counts as well as alignment stats for all samples (Di Tommaso et al., 2017). The tools and parameters describing the workflow are as follows. The index creation and short-read alignment step were done using Bowtie2. During alignment, we allowed for zero mismatches in the default seed length of each read (20, very sensitive) after trimming 32 bases from the 3\u2032 end of each 125 bp read to match the 93 bp peptides in our reference library (Langmead and Salzberg, 2012). Samtools was subsequently used to gather sequencing statistics as well as produce the final peptide counts using the stats and idxstats modules. Finally, the pipeline collected all reference peptide alignment counts and merged them into a single xarray dataset coupling sample and peptide metadata with their respective count.\n\nEach of the processing steps described here, as well as downstream analysis and plotting, was run using static and freely available Docker containers for reproducibility. We provide an automated workflow and the configuration scripts defining exact parameters. See \u2018Code availability\u2019 and \u2018Data availability\u2019 section for more information.\n\n#### Epitope binding region identification\n\nPCA via singular value decomposition was performed on each set of batch replicates using the scikit-learn package (Pedregosa et al., 2011). We first subset our dataset to only include wild-type peptide count enrichments from either infected or vaccinated individuals as input. This curation resulted in the matrix, X of size $n\\timesp$ with $n$ biologically distinct replicates and $p$ enrichment features across the spike protein. All enrichment values were calculated as a fold change in the frequency for any one sample enrichment over the library control enrichment at the same sites. Each feature was mean centered before performing the PCA such that the covariance matrix of $X$ is equivalent to $X^{T}X/n-1$ . We can then use the eigendecomposition, $X=USV^{T}$, to describe the data. The principal axes in feature space are then represented by the columns of $V$ and represent the direction of maximum variance in the data. Figure 2\u2014figure supplement 1 shows three facets of this decomposition; Figure 2\u2014figure supplement 1A shows the unit scaled sample \u2018scores\u2019 represented by the columns to visualize sample relationship in principal component space; Figure 2\u2014figure supplement 1B shows the component loadings (scaled by the square root of the respective eigenvalues in S); and Figure 2\u2014figure supplement 1C shows the first three principal axes/directions in feature space plotted as a function of the WT peptide feature location on the Spike protein. Together, these provide a visualization of key features in the data used in our downstream analysis. We chose our epitope regions as contiguous regions of nonzero value in the loadings in the first three principal axes.\n\n#### Identifying high-resolution pathways of escape\n\nIn order to ensure reliable measurements of differential selection of single AA variants compared to the ancestral sequence variant, we threw out samples whose respective sum of wild-type enrichment was below a threshold set for each of the defined binding regions (Figure 4\u2014figure supplement 1). Once curated, we computed the log-fold change in each of the 19 possible variant substitutions at each site. This metric was then scaled by the average of the wild-type sequence enrichment coupled with both the preceding and following wild-type peptide enrichments at any given site. To evaluate escape at each site, we then sum the differential selection metric as described for each variant at a site to examine a more complete picture of the data defining escape patterns in each sample group.\n\n#### Code availability\n\nWe provide a fully reproducible automated workflow that ingests raw sequencing data and performs all analyses presented in the paper. The workflow defines and runs the processing steps within publicly available and static Docker software containers, including phippery and phip-flow described in the \u2018Materials and methods\u2019 section. The source code, Nextflow script, software dependencies, and instructions for rerunning the analysis can be found at https://github.com/matsengrp/phage-dms-vacc-analysis (copy archived at swh:1:rev:d4c770ad49ed2f8ab31e499265dd02273cff6f86, Matsen, 2022).\n\nThe generalized PhIP-Seq alignment and count generation pipeline script can be found at https://github.com/matsengrp/phip-flow (copy archived at swh:1:rev:2bffd776688efa13a9953a5fe5cba47a17590578, Galloway, 2022c). A template and documentation for the alignment pipeline configuration are available at https://github.com/matsengrp/phip-flow-template (copy archived at swh:1:rev:c35d2c9532ff5ef450783f52f850207de8ad87fb, Galloway, 2022b). Finally, we provide a Python API, phippery, to query the resulting dataset post alignment that can be found at https://github.com/matsengrp/phippery (copy archived at swh:1:rev:871c65fe331ebabbb48338f1d9a0d518a399cc78; Galloway, 2022d).\n\nAll raw sequencing data was submitted to the NCBI SRA under PRJNA765705. Preprocessed enrichment data is available upon request. Additionally, differential selection data and more can be explored interactively using the dms-view toolkit available at https://github.com/matsengrp/vacc-dms-view-host-repo (copy archived at swh:1:rev:6519940a17ea2489f445b897485e621d8c6b781d, Galloway, 2022a).\n\nFor more information regarding code and data availability, please email jgallowa@fredhutch.org. For original data from the NIH Moderna trial, please see Jackson et al., 2020; and for information on the HAARVI Cohort, please contact HYC.\n\n#### Statistical analysis\n\nEstimates of significance presented between group continuous distributions of wild-type enrichment were reported using a Mann\u2013Whitney\u2013Wilcoxon test with the exception of analysis that included only paired longitudinal samples \u2013 such as the comparison of 36 and 119 days post vaccination \u2013 in this case, we used a Wilcoxon signed-rank test. Bonferroni correction was applied where applicable, and adjusted p-values 0.05 were presented as significant. All statistical analyses were done using Python 3.6 and plotted using the statannot package found at https://github.com/webermarcolivier/statannot, Weber, 2022. The static Docker container used for all statistical analyses is publicly hosted at https://quay.io/repository/matsengrp/vacc-ms-analysis.\n",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "758fc34a-da3a-474f-a683-1596ec4637e7",
+      "submission_id": "94dfe26c-a864-4ace-a7c9-a5a47faeaad1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jos W Van der Meer, https://ror.org/05wg1m734 Radboud University Medical Centre Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73490.sa0](https://doi.org/10.7554/eLife.73490.sa0)\n\nIn this paper, antibody responses to SARS-CoV-2 Spike protein were investigated in mRNA vaccinated, SARS-CoV-2 infected with mild or severe COVID-19 and vaccinated individuals with prior infection. Key findings of the study are that severe COVID-19 and vaccinated individuals had higher binding to Spike protein regions NTD, CTD, and SH-H compared to individuals with mild COVID-19; while mild COVID-19 infections had higher binding to FP than vaccinated or severe COVID-19 individuals. Individuals with or without prior infection were not different and that covariates did not appear to impact the antibody recognition profiles. The authors identified potential escape pathways in these epitope regions, some of which differed between vaccination and infection or drifted over time. The authors acknowledge that this approach is limited to linear epitopes and does not include receptor-binding domain epitopes. The study provides novel insight into the major epitope regions targeted by polyclonal antibodies elicited by vaccination vs. infection, as well as potential pathways for the virus to escape recognition.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jos W Van der Meer, https://ror.org/05wg1m734 Radboud University Medical Centre Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73490.sa1](https://doi.org/10.7554/eLife.73490.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Comprehensive characterization of the antibody responses to SARS-CoV-2 Spike protein after infection and/or vaccination\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos Van der Meer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Bonnie Gunn (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. We are curious about the potential decay in CTD-binding antibodies, especially given that non-hospitalized infection-induced antibodies show limited binding to CTD and the reduced levels of CTD binding in vaccinees at D119 compared with D36 post-vaccination. Is it possible that humoral immunity against CTD may be an early signature that decays and may be undetectable at later convalescent time points in infected individuals? The data presented in Supplemental Figure 2 shows that a subset of people between make CTD antibodies. Is there longitudinal data (or patients within the HAARVI cohort that the authors have analyzed) from acute or early convalescence to determine if CTD binding antibodies persist or decline? Alternatively, as the hospitalized individuals also developed responses against CTD, could the development of these antibodies be dependent on level of antigen load (either in infection or through vaccination)?\n\n2. The finding that non-hospitalized infected individuals have elevated binding to the FP peptide compared with the other groups is an interesting finding that may contribute our understanding of immune responses that prevent hospitalization. Do these individuals have elevated neutralizing activity if the amount of spike-binding antibodies is normalized?\n\n3. Is there high sequence similarity in the FP epitope between the HCoVs and SARS-CoV-2 that could explain the high levels of binding in the na\u00efve sera?\n",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aa7fccc9-0b73-4ecb-a0da-6d582a3954c2",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C1",
+      "claim": "The Moderna Trial Cohort consisted of 49 individuals, 34 who received the 100 \u00b5g dose of mRNA-1273 (Moderna) and 15 who received the 250 \u00b5g dose.",
+      "claim_type": "EXPLICIT",
+      "source": "The Moderna Trial Cohort were participants in a Phase I trial and consisted of 49 individuals, 34 who received the 100 \u00b5g dose of mRNA-1273 (Moderna) and 15 who received the 250 \u00b5g dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the composition of the Moderna Trial Cohort with specific numbers and dosages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "605c66e1-87a7-45ac-b066-d3feece125de",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C2",
+      "claim": "Serum samples from the Moderna Trial Cohort were taken at days 36 and 119 post first dose (7 and 90 days post second dose, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Serum samples were taken at days 36 and 119 post first dose (7 and 90 days post second dose, respectively; Jackson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the timepoints for serum sample collection with citation to the original trial.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "f7ff2f9e-78c8-40a4-9491-c59e53a0bfc4",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C3",
+      "claim": "The HAARVI Cohort included 64 individuals, 44 who had confirmed SARS-CoV-2 infection and 20 who had no reported infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The HAARVI Cohort included 64 individuals, 44 who had confirmed SARS-CoV-2 infection and 20 who had no reported infection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the composition of the HAARVI Cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "def1b8c8-64df-4979-9865-67507100e9b9",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C4",
+      "claim": "Among the HAARVI Cohort, those with infection history were stratified by severity based on hospitalization status (39 nonhospitalized/mild vs. 5 hospitalized/severe).",
+      "claim_type": "EXPLICIT",
+      "source": "Those with infection history were stratified by severity based on hospitalization status (39 nonhospitalized/mild vs. 5 hospitalized/severe)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the stratification of infected individuals by disease severity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "fb076ff9-5077-4144-92ed-58de2a783f0c",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C5",
+      "claim": "The Spike Phage-DMS library consists of peptides displayed on the surface of T7 bacteriophage that are 31 amino acids long, tiling across the length of Spike in one amino acid increments.",
+      "claim_type": "EXPLICIT",
+      "source": "This library consists of peptides displayed on the surface of T7 bacteriophage that are 31 amino acids long, tiling across the length of Spike in one amino acid increments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the technical specifications of the Phage-DMS library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "32774282-3b97-4351-b80c-8bb102454272",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C6",
+      "claim": "The Spike Phage-DMS library contains peptides corresponding to the wild-type Wuhan Hu-1 Spike sequence as well as sequences that contain every possible single amino acid mutation at the central position of the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptides in the library correspond to the wild-type Wuhan Hu-1 Spike sequence as well as sequences that contain every possible single amino acid mutation at the central position of the peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the composition of the peptide library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "fd6815ab-3835-4b86-90ff-d34528074583",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C7",
+      "claim": "The major targeted epitopes across all cohorts were in the NTD, CTD, FP, and SH-H regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The major targeted epitopes across all the cohorts were in the NTD, CTD, FP, and SH-H regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this finding and Figure 2A shows the heatmap of epitope binding across these regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "bd76e7f4-d54b-4afa-95dc-be90874dd61d",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C8",
+      "claim": "Serum from nonvaccinated infected individuals who were not hospitalized mostly bound to immunodominant epitopes in the FP and SH-H.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum from nonvaccinated infected individuals who were not hospitalized mostly bound to immunodominant epitopes in the FP and SH-H, both of which are epitopes previously identified in infected individuals using Phage-DMS (Garrett et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding with citation to prior work, and Figure 2A shows the binding patterns.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "52f1aa0e-400e-4324-af0a-4cbf287945de",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C9",
+      "claim": "Samples from hospitalized/severe COVID-19 cases and vaccinated individuals bound to the FP and SH-H regions, but additionally bound to epitopes within the NTD and CTD regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples from hospitalized/severe COVID-19 cases and vaccinated individuals also bound to the FP and SH-H regions, but additionally bound to epitopes within the NTD and CTD regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and Figure 2A shows the differential binding patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "62a7accb-a746-479d-9282-d8fcaf35a84e",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C10",
+      "claim": "In na\u00efve serum samples, there were antibodies that occasionally bound to the FP and SH-H peptides, likely reflecting preexisting cross-reactive antibodies that bind to conserved regions between SARS-CoV-2 and endemic coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In na\u00efve serum samples, there were antibodies that occasionally bound to the FP and SH-H peptides. These findings likely reflect that some individuals have preexisting cross-reactive antibodies that bind to these conserved regions between SARS-CoV-2 and endemic coronaviruses, as suggested by previous studies (Shrock et al., 2020; Stoddard et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the observation and provides an interpretation supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "507aa546-b0b7-4585-879a-c1d49015f3f7",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C11",
+      "claim": "Antibodies from both hospitalized infected and vaccinated individuals had significantly higher binding to the NTD, CTD, and SH-H regions compared to nonhospitalized infected individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, antibodies from both hospitalized infected and vaccinated individuals had significantly higher binding to the NTD, CTD, and SH-H regions compared to nonhospitalized infected individuals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and Figure 2C shows the statistical comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "edde159e-6427-4f20-bf3f-85da1367d9f1",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C12",
+      "claim": "Antibodies from nonhospitalized infected individuals displayed significantly higher binding to the FP epitope than samples from hospitalized or vaccinated individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, antibodies from nonhospitalized infected individuals displayed significantly higher binding to the FP epitope than samples from hospitalized or vaccinated individuals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and Figure 2C shows the statistical comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "0fa23370-85dc-457e-b011-19c7698a7f66",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C13",
+      "claim": "There was no significant difference in any epitope binding in the four regions between vaccinated samples with and without prior infection (p>0.05, Mann\u2013Whitney\u2013Wilcoxon).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in any epitope binding in these four regions between vaccinated samples with and without prior infection (p>0.05, Mann\u2013Whitney\u2013Wilcoxon [MWW]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly reports the statistical test result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "167054ed-f0e8-44c3-97d1-7a6e2b7257dc",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C14",
+      "claim": "For samples in the Moderna Trial Cohort, there was significantly decreased binding to the CTD epitope and SH-H epitope (p=0.008, p=0.011, Wilcoxon rank-sum test with Bonferroni correction) at the later timepoint post first dose (day 119) compared to the earlier timepoint (day 36).",
+      "claim_type": "EXPLICIT",
+      "source": "For samples in the Moderna Trial Cohort, there was significantly decreased binding to the CTD epitope and SH-H epitope (p=0.008, p=0.011, Wilcoxon rank-sum test with Bonferroni correction) at the later timepoint post first dose (day 119) compared to the earlier timepoint (day 36) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly reports the statistical findings with p-values and Figure 3A shows the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "101af3f7-ece0-41fd-a795-c97f5874b6d3",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C15",
+      "claim": "There was no significant difference by vaccine dosage (100 \u00b5g vs 250 \u00b5g mRNA-1273) for any of the four epitope regions (NTD, CTD, FP, or SH-H).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference by vaccine dosage for any of the four epitope regions (NTD, CTD, FP, or SH-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and Figure 3B shows the comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "f0678bcf-1456-494b-b07f-35999f43d10f",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C16",
+      "claim": "In infected individuals, at all times post symptom onset (0-60, 60-180, and 180-360 days), there was no significant difference in binding to the four identified epitopes (p>0.05, MWW).",
+      "claim_type": "EXPLICIT",
+      "source": "At all times post symptom onset, there was no significant difference in binding to the four identified epitopes (p>0.05, MWW).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly reports the statistical finding and Figure 3\u2014figure supplement 1 shows the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "6495992e-7aab-4172-b0e5-6bed05363fe2",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C17",
+      "claim": "Comparison of the epitope binding response between Moderna mRNA-1273 and Pfizer/BioNTech BNT162b2 mRNA vaccines revealed no significant differences in all epitope regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals in the HAARVI Cohort were given either the Moderna mRNA-1273 or Pfizer/BioNTech BNT162b2 mRNA vaccine, and comparison of the epitope binding response between the two vaccine types revealed no significant differences in all epitope regions (Figure 3\u2014figure supplement 1B, p>0.05, MWW).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly reports the statistical finding with reference to the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "4dd15d1a-9275-43b7-905f-6d172cd77d0e",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C18",
+      "claim": "Vaccination elicited antibodies with a strikingly uniform escape profile in the NTD epitope across samples, with the majority of samples being sensitive to mutation at sites 291, 294\u2013297, 300\u2013302, and 304.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination elicited antibodies with a strikingly uniform escape profile in the NTD epitope across samples (Figure 4A), with the majority of samples being sensitive to mutation at sites 291, 294\u2013297, 300\u2013302, and 304, which are in the very C-terminal portion of NTD as well as the region between NTD and RBD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the escape profile and Figure 4A shows the logo plots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "de3639c8-9b12-42ef-8d35-fcc48a186d49",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C19",
+      "claim": "The CTD region appeared to consist of multiple epitopes, the dominant being located at the N-terminal region between positions 545\u2013580 (termed CTD-N).",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD region appeared to consist of multiple epitopes, the dominant being located at the N-terminal region between positions 545\u2013580 (termed CTD-N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the location of the dominant CTD epitope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "50de83c2-c71f-413b-b263-6fa5e8065e91",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C20",
+      "claim": "Antibodies that bound to the dominant CTD epitope had a less uniform escape profile, but sites 561 and 562 were common sites of escape in most samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies that bound to this dominant CTD epitope had a less uniform escape profile, but sites 561 and 562 were common sites of escape in most samples (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the escape profile and Figure 4B shows the logo plots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "94eafb4c-de76-4230-b395-5528398c0385",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C21",
+      "claim": "For antibodies to both the NTD and CTD-N epitopes, the pathways of escape tended to drift over time and were different at 119 days post vaccination as compared to 36 days post vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "For antibodies to both the NTD and CTD-N epitopes, the pathways of escape tended to drift over time and were different at 119 days post vaccination as compared to 36 days post vaccination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this observation and Figure 4 shows paired samples over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "3794f9bb-1b65-49ff-be7f-1dfc3be7d9d2",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C22",
+      "claim": "The major sites of escape within the FP epitope for samples from previously infected individuals were sites 819, 820, 822, and 823, and these sites of escape did not appear to change after vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "The major sites of escape within the FP epitope for these samples were sites 819, 820, 822, and 823, and these sites of escape did not appear to change after vaccination, although we noted that there was more variability in the escape profiles after vaccination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the escape sites and Figure 5A shows the logo plots for paired samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "321a5588-29a7-4343-a0ec-8f17bae07ab7",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C23",
+      "claim": "In people with no prior infection, vaccination induced diverse pathways of escape in the FP region.",
+      "claim_type": "EXPLICIT",
+      "source": "In people with no prior infection, vaccination induced diverse pathways of escape in the FP region (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and Figure 5B shows the diverse escape profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "15d31a48-99e2-4502-84a6-ecdef12d73dd",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C24",
+      "claim": "Samples from previously infected individuals with no vaccination history had diverse pathways of escape within the SH-H epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples from previously infected individuals with no vaccination history had diverse pathways of escape within the SH-H epitope (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and Figure 6A shows the diverse escape profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "51f88ab1-560e-4ac5-9b7b-9183e7037264",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C25",
+      "claim": "Samples from vaccinated individuals, regardless of infection history, tended to have a uniform pathway of escape in the SH-H epitope, with the most prominent and consistent sites of escape at sites 1148, 1152, 1155, and 1156.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the samples from vaccinated individuals, regardless of infection history, tended to have a uniform pathway of escape. The most prominent and consistent sites of escape for vaccinated individuals, both with and without prior infection, were at sites 1148, 1152, 1155, and 1,156.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the uniform escape profile and Figure 6 shows the logo plots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "a16a18fd-a9d3-48f3-8a55-9eaf30c063da",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C26",
+      "claim": "The pre-vaccination sample from an individual with prior infection requiring hospitalization (participant 6C) displayed an escape profile highly similar to those from vaccinated individuals, and this escape profile did not change after vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the pre-vaccination sample from an individual with prior infection requiring hospitalization (participant 6C) displayed an escape profile highly similar to those from vaccinated individuals, and this escape profile did not change after vaccination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly notes this observation and Figure 6A shows the escape profile for participant 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "1bf9ae39-ca00-429e-9731-4532d86b54d5",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C27",
+      "claim": "A highly uniform pattern of escape was seen for most samples in the Moderna Trial Cohort at days 36 and 119 in the SH-H epitope, with escape mainly occurring at sites 1148, 1152, 1155, and 1156.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw a highly uniform pattern of escape for most samples at days 36 and 119, again with escape mainly occurring at sites 1148, 1152, 1155, and 1156.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the uniform escape pattern and Figure 6B shows the logo plots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "7ccfa538-0150-4cfb-8da2-1d01f3140f00",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C28",
+      "claim": "Vaccinated individuals as well as individuals with severe infection requiring hospitalization both had antibodies to the NTD, CTD, FP, and SH-H epitope regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccinated individuals as well as individuals with severe infection requiring hospitalization both had antibodies to these four epitope regions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "dfac2b22-fc61-490e-a54c-da0b77f84604",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C29",
+      "claim": "Individuals with mild infection that did not require hospitalization preferentially targeted only FP and SH-H epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas individuals with mild infection that did not require hospitalization preferentially targeted only FP and SH-H.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "f98967d8-7044-4439-8ca8-8edcdc1836e8",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C30",
+      "claim": "One explanation for why vaccination and severely infected individuals share the same antibody binding profile is that it is a result of the high antigenic load experienced by both groups.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation for why vaccination and severely infected individuals share this antibody binding profile is that it is a result of the high antigenic load experienced by both groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this explanation in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "dd540760-0355-434e-82a4-28098c757e65",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C31",
+      "claim": "In previously infected cases, the epitope binding patterns changed over time after vaccination, with decreased binding to both the CTD and SH-H epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "In previously infected cases, the epitope binding patterns changed over time after vaccination, with decreased binding to both the CTD and SH-H epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "ee80cc5e-166a-49c7-8418-388895516455",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C32",
+      "claim": "There was not uniform decay across all four epitopes, indicating that waning antibody titers may not occur for all epitopes equally.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was not uniform decay across all four epitopes, indicating that waning antibody titers may not occur for all epitopes equally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this interpretation based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "eaeb219d-765b-4e94-897c-63ad44c818de",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C33",
+      "claim": "Vaccine dose (100 \u00b5g or 250 \u00b5g), vaccine type (BNT162b2 or mRNA-1273), and participant age did not significantly affect the specificity of the antibody response.",
+      "claim_type": "EXPLICIT",
+      "source": "Other factors such as vaccine dose (100 \u00b5g or 250 \u00b5g), vaccine type (BNT162b2 or mRNA-1273), and participant age did not significantly affect the specificity of the antibody response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "3892e951-a275-46c6-99c5-a5841d97e676",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C34",
+      "claim": "In the case of the NTD epitope, which was located at the C-terminal end of the NTD, escape mutations were uniform and consistent amongst vaccinees.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the NTD epitope, which was located at the C-terminal end of the NTD, escape mutations were uniform and consistent amongst vaccinees",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "eba7750f-c91f-4e9e-81c5-3be5d0266f3a",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C35",
+      "claim": "Pathways of escape were more diverse for CTD-N antibodies compared to NTD antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "while pathways of escape were more diverse for CTD-N antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "7ad93a71-e8cd-4e75-b1ed-3ccbb28f7356",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C36",
+      "claim": "Vaccination did not greatly alter the escape profile in previously infected individuals for the FP epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination did not greatly alter the escape profile in previously infected individuals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the Discussion section regarding the FP epitope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "e19d6bbf-c3b2-467e-9bd7-bc8ab5df8b7e",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C37",
+      "claim": "Vaccination alone did not induce a strong or uniform response at the FP epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "nor did vaccination alone induce a strong or uniform response at the FP epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "aae358fc-7a44-4bca-b788-4a7708106276",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C38",
+      "claim": "Sites 1148, 1152, 1155, and 1156 in the SH-H epitope are also the sites of contact for a cross-reactive HR2-specific antibody isolated from a mouse sequentially immunized with the MERS and SARS Spike proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these are also the sites of contact for a cross-reactive HR2-specific antibody isolated from a mouse sequentially immunized with the MERS and SARS Spike proteins (Sauer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding with citation to the relevant study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "31113b76-4803-46bd-8d19-6ee909660655",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C39",
+      "claim": "A singular antibody clonotype could be elicited when exposed to a stabilized Spike protein, dominating the response in the SH-H region.",
+      "claim_type": "EXPLICIT",
+      "source": "This hints that a singular antibody clonotype could be elicited when exposed to a stabilized Spike protein, dominating the response in the SH-H region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this interpretation based on the observed uniform escape profile.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "156dee9b-eda2-4613-9460-8fad43462246",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C40",
+      "claim": "Some drift in the pathways of escape within a single person over time after vaccination was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed some drift in the pathways of escape within a single person over time after vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this observation in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "d52b6027-f442-4248-82f1-8ed1ccad3a42",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C41",
+      "claim": "SARS-CoV-2-specific B cells undergo continued somatic hypermutation in the months after infection, likely due to antigen persistence.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies have demonstrated that SARS-CoV-2-specific B cells undergo continued somatic hypermutation in the months after infection, likely due to antigen persistence (Gaebler et al., 2021; Sakharkar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies demonstrating this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "511bd43f-f088-4f6d-89e3-b9fc0b9e6ee3",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C42",
+      "claim": "Spike antigen has been detected in the lymph nodes at least 3 months after vaccination with BNT162b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike antigen has been detected in the lymph nodes at least 3 months after vaccination with BNT162b2, and continued maturation of germinal center B cells could be a possible explanation for the changes in epitope binding we observed (Turner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing antigen persistence and proposes it as a possible explanation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "001c7ffe-f8f0-42c8-a6f4-7c38ef25207d",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C43",
+      "claim": "Because the Spike Phage-DMS library displays 31 amino acid peptides, the study is unable to detect antibodies that bind to conformational epitopes and/or glycosylated epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the Spike Phage-DMS library displays 31 amino acid peptides, we are unable to detect antibodies that bind to conformational epitopes and/or glycosylated epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly acknowledges this limitation of the methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "14a69362-00ec-4de4-a831-fba330452f49",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C44",
+      "claim": "The lack of observable binding to the RBD region demonstrates the limitation of the Phage-DMS library in detecting conformational epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is demonstrated by the lack of observable binding to the RBD region, a domain with complex folding and known target of antibodies from infected and vaccinated individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly uses the RBD as an example of the limitation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "fe495f4c-4990-4fb3-acb0-21eeb102c3af",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C45",
+      "claim": "The finding that vaccinated individuals have a broader response across the Spike protein than infected individuals may have important implications for immune durability against future SARS-CoV-2 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that vaccinated individuals have a broader response across the Spike protein than infected individuals may have important implications for immune durability against future SARS-CoV-2 variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "1d983bb5-bf59-4b52-abd4-5a7ff077c0f1",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C46",
+      "claim": "A polyclonal antibody response that is resistant in the face of multiple mutations is necessary for long-lasting immunity against a mutating viral pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence suggests that a polyclonal antibody response that is resistant in the face of multiple mutations is necessary for long-lasting immunity against a mutating viral pathogen (Greaney et al., 2021c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites evidence supporting this principle.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "686ee427-9c0f-48e6-9a4b-e8a79afc60d1",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C47",
+      "claim": "The polyclonal response to vaccination may provide greater protection from infection than the more focused response after infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the polyclonal response to vaccination may provide greater protection from infection than the more focused response after infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this interpretation based on the breadth of the vaccine response.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "c908bfa3-9fcc-4f18-b88a-37e05f145dd1",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C48",
+      "claim": "At the SH-H epitope region, vaccination induced uniform sites of escape that may be due to a singular type of antibody that would allow escape by the same mutations for all vaccinated people.",
+      "claim_type": "EXPLICIT",
+      "source": "At one S2-domain epitope region (SH-H), vaccination induced uniform sites of escape that may be due to a singular type of antibody that would allow escape by the same mutations for all vaccinated people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding and its potential implication.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "79ceedf9-0910-4a15-90c8-7fbbebc509d2",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C49",
+      "claim": "Epitopes in the S2 domain tend to be in highly conserved regions with important functions that constrain the virus' ability to mutate, making escape from these antibodies less likely than for RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, epitopes in the S2 domain tend to be in highly conserved regions with important functions that constrain the virus' ability to mutate, making escape from these antibodies less likely than for RBD, where escape is already common.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this principle about S2 domain epitopes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "3714f870-cef6-4967-9a7f-6a3203161090",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C50",
+      "claim": "Mutations in the FP and SH-H epitopes are not arising in the global population of SARS-CoV-2, providing some suggestion that these regions may be constrained.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutations in the FP and SH-H epitopes are not arising in the global population of SARS-CoV-2 (Garrett et al., 2021), providing some suggestion that these regions may be constrained (Walls et al., 2020; Jaroszewski et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing the lack of mutations in these regions and their potential functional constraints.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "d2c2477b-60ba-4376-b59d-e804fcb65637",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C51",
+      "claim": "The Spike protein encoded by the mRNA in both SARS-CoV-2 vaccines is stabilized in the prefusion conformation by addition of two proline substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The Spike protein encoded by the mRNA in both SARS-CoV-2 vaccines is stabilized in the prefusion conformation by addition of two proline substitutions (Corbett et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the study describing the vaccine design.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "485a9e3d-8daf-4b64-99d8-71f10f502460",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C52",
+      "claim": "This change in sequence and fixed conformation of the Spike protein could result in altered antibody targeting when compared to antibodies elicited during infection, where Spike undergoes several conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in sequence and fixed conformation of the Spike protein could result in altered antibody targeting when compared to antibodies elicited during infection, where Spike undergoes several conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this as a potential mechanism for differences in antibody responses.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "77741697-e150-4a67-b2d3-203d3257d0f5",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C53",
+      "claim": "Vaccines drive higher neutralization titers and more Spike binding IgG antibodies than infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We know that vaccines drive higher neutralization titers and more Spike binding IgG antibodies than infection (Goel et al., 2021; Prendecki et al., 2021; Edara et al., 2021), indicating some differences in the B cell response compared to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies demonstrating this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "8fd34162-061c-4728-9761-6821e15c52b2",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C54",
+      "claim": "Antibodies against the receptor binding domain (RBD) of Spike differ between infected and vaccinated individuals; they are generally less sensitive to mutation and bind more broadly across the domain in the context of vaccination as compared to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that antibodies against the receptor binding domain (RBD) of Spike differ between infected and vaccinated individuals; they are generally less sensitive to mutation and bind more broadly across the domain in the context of vaccination as compared to infection (Greaney et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a recent study showing this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "e6bcf487-fa5c-4d23-846f-3393aea7b067",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C55",
+      "claim": "The majority of the serum binding response in SARS-CoV-2-infected and -vaccinated people is directed towards regions of the protein outside of the RBD epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the majority of the serum binding response in SARS-CoV-2-infected and -vaccinated people is directed towards regions of the protein outside of the RBD epitopes (Greaney et al., 2021a; Greaney et al., 2021b; Garrett et al., 2021; Piccoli et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies demonstrating this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "115abf24-bee8-430a-8fa8-2fdbf96ee1d0",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C56",
+      "claim": "Few studies have examined the prevalence and escape pathways of antibodies outside the RBD, especially in the setting of vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "few studies have examined the prevalence and escape pathways of these antibodies, especially in the setting of vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "6c17ea28-30af-4f5c-98ee-eeacb0198e0b",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C57",
+      "claim": "Antibodies to linear epitopes in the S2 domain of Spike overlapping the fusion peptide (FP), and in the stem helix region just upstream of heptad repeat 2 (SH-H) region are found in serum from COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies to linear epitopes in the S2 domain of Spike overlapping the fusion peptide (FP), and in the stem helix region just upstream of heptad repeat 2 (SH-H) region are found in serum from COVID-19 patients, and some studies suggest that these antibodies may be neutralizing (Poh et al., 2020; Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing the presence of these antibodies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "5cc22c68-16eb-42b0-a0bc-c7becd666665",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C58",
+      "claim": "Non-RBD responses may be important contributors to non-neutralizing antibody activities, which have been associated with protection and therapeutic benefit in experimental SARS-CoV-2 models and with vaccine protection.",
+      "claim_type": "EXPLICIT",
+      "source": "These non-RBD responses may also be important contributors to non-neutralizing antibody activities, which have been associated with protection and therapeutic benefit in experimental SARS-CoV-2 models and with vaccine protection (Sch\u00e4fer et al., 2021; Tauzin et al., 2021; Winkler, 2021; Ullah et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies showing the importance of non-neutralizing antibody activities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "aef379f2-70c1-48d1-9710-e12bcc97d883",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C59",
+      "claim": "The FP and SH-H epitopes lie in more conserved regions of Spike than RBD where functional constraints on variation may counter the selective pressure for viral escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these epitopes lie in more conserved regions of Spike than RBD where functional constraints on variation may counter the selective pressure for viral escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this characteristic of these epitopes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "b626ec4f-f6a1-4879-95b5-31c2060679b5",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C60",
+      "claim": "In the United States, over half of adults are now vaccinated against SARS-CoV-2, the majority of whom have received one of the mRNA vaccines (BNT162b2 or mRNA-1273).",
+      "claim_type": "EXPLICIT",
+      "source": "In the United States, over half of adults are now vaccinated against SARS-CoV-2, the majority of whom have received one of these mRNA vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this fact about vaccination rates in the US.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "528d3678-3cb4-4e4e-8a01-08efb80e594d",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C61",
+      "claim": "mRNA vaccines have been shown to effectively guard against infection, severe disease, and death related to SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "While these vaccines have been shown to effectively guard against infection, severe disease, and death related to SARS-CoV-2 (Polack et al., 2020; Keehner et al., 2021; Amit et al., 2021; Angel et al., 2021; Thompson et al., 2021; Haas et al., 2021; Baden et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies demonstrating vaccine efficacy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "4ea9b618-ffbb-4c31-9ce6-2c8859313d3f",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C62",
+      "claim": "Less is known about how effective mRNA vaccines will be against emerging and future SARS-CoV-2 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "less is known about how effective they will be against emerging and future variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "d2eb1476-3e48-49f3-9212-d1ebac777a2b",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C63",
+      "claim": "The recent surge of the Delta variant coupled with reports of reduced potency of vaccine-elicited antibodies against this variant highlights the concerning ongoing dynamic of viral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "One example is the recent surge of the Delta variant coupled with reports of reduced potency of vaccine-elicited antibodies against this variant, highlighting this concerning ongoing dynamic (Planas et al., 2021; Lopez Bernal et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing reduced vaccine efficacy against the Delta variant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "9115506b-3e02-4a01-abe1-2b5158f6e4f7",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C64",
+      "claim": "Evidence from related endemic coronaviruses indicates that evolution in the Spike protein results in escape from neutralizing antibodies elicited by prior infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence from related endemic coronaviruses indicates that evolution in the Spike protein results in escape from neutralizing antibodies elicited by prior infection (Eguia et al., 2021), potentially contributing to why endemic coronaviruses can reinfect the same host (Edridge et al., 2020; Hendley et al., 1972; Schmidt et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies on endemic coronaviruses showing immune escape.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "c35e52fc-9094-4278-97b4-2f1cbce668c8",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C65",
+      "claim": "Without immunity that is robust in the face of antigenic drift, continual updates of the vaccine to combat new SARS-CoV-2 variants will likely be necessary to provide optimal protection against symptomatic infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Without immunity that is robust in the face of antigenic drift, continual updates of the vaccine to combat new SARS-CoV-2 variants will likely be necessary to provide optimal protection against symptomatic infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this implication of immune escape.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "4724317e-35cc-40b1-8556-61dad68d34ea",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C66",
+      "claim": "Prior infection with SARS-CoV-2 provides some immunity against subsequent reinfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior infection with SARS-CoV-2 also provides some immunity against subsequent reinfection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this established fact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "f7870dbb-c3f3-4a2e-9635-b583ad56f7b9",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C67",
+      "claim": "Several studies have characterized the epitopes targeted by convalescent sera.",
+      "claim_type": "EXPLICIT",
+      "source": "and several studies have characterized the epitopes targeted by convalescent sera (Hanrath et al., 2021; Greaney et al., 2021a; Shrock et al., 2020; Li et al., 2021; Stoddard et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies characterizing epitopes in convalescent sera.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "38ff6a35-dcd9-4f10-9f78-d9e826f17122",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C68",
+      "claim": "It is currently unknown whether SARS-CoV-2 infection and vaccination result in antibodies that bind to similar epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is currently unknown whether SARS-CoV-2 infection and vaccination result in antibodies that bind to similar epitopes, an important point to consider given that most people have acquired antibodies through immunization and not infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "c3b751db-f913-4956-a6f2-3e323c8eb20d",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C69",
+      "claim": "The Spike Phage-DMS library contained 24,820 designed peptides that tile across the length of the Spike protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The Spike Phage-DMS library used in this study contained 24,820 designed peptides that tile across the length of the Spike protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the library composition in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "90697e6e-3e89-45c6-98ae-4354a0f6b3be",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C70",
+      "claim": "All samples were run twice, once each with two independently generated Spike Phage-DMS libraries, with the exception of the four acute samples from hospitalized HAARVI participants that were run in singlicate.",
+      "claim_type": "EXPLICIT",
+      "source": "All sample IPs and downstream analysis were run in duplicate across two separate phage display library batches to ensure reproducibility, with the exception of the four acute samples from hospitalized HAARVI participants that were run in singlicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the replicate structure in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "713f5a61-5735-4739-81a0-c7b18143ffe9",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C71",
+      "claim": "Principal component analysis via singular value decomposition was performed on each set of batch replicates using the scikit-learn package.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA via singular value decomposition was performed on each set of batch replicates using the scikit-learn package (Pedregosa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the PCA methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "e8a3f1d6-d9ed-4160-b559-ad769917c6f1",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C72",
+      "claim": "Epitope regions were chosen as contiguous regions of nonzero value in the loadings in the first three principal axes.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose our epitope regions as contiguous regions of nonzero value in the loadings in the first three principal axes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the method for defining epitope regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "e96f21c6-bf2e-4647-a471-2c0c7be7e5f1",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C73",
+      "claim": "Samples whose respective sum of wild-type enrichment was below a threshold set for each of the defined binding regions were excluded from differential selection analysis to ensure reliable measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to ensure reliable measurements of differential selection of single AA variants compared to the ancestral sequence variant, we threw out samples whose respective sum of wild-type enrichment was below a threshold set for each of the defined binding regions (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the curation step with reference to the figure showing thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "06de9bda-cb9c-421b-abfe-5164ecb11513",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "claim_id": "C74",
+      "claim": "All raw sequencing data was submitted to the NCBI SRA under PRJNA765705.",
+      "claim_type": "EXPLICIT",
+      "source": "All raw sequencing data was submitted to the NCBI SRA under PRJNA765705.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the data deposition information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9f4f3f3b-3c0b-44f2-8e7a-df5773e2111f",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study characterized two cohorts: the Moderna Trial Cohort (49 individuals receiving 100 or 250 \u00b5g mRNA-1273 vaccine, sampled at days 36 and 119 post-first dose) and the HAARVI Cohort (64 individuals including 44 with confirmed SARS-CoV-2 infection stratified by hospitalization status and 20 without infection, with various vaccination histories).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide clear cohort descriptions with specific sample sizes, dosages, timepoints, and stratification criteria. These are straightforward descriptive data about study design that are well-documented in the manuscript and figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "6b50bc8a-7561-4462-8a54-e4d8c5a1d7f8",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Spike Phage-DMS library used in this study consists of 24,820 peptides that are 31 amino acids long, displayed on T7 bacteriophage, tiling across the Spike protein in one amino acid increments, and containing both wild-type Wuhan Hu-1 sequences and all possible single amino acid mutations at the central position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C69 describe the technical specifications of the Phage-DMS library. These are methodological details that are clearly stated in the manuscript and are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "85e655e3-373c-4e27-ad3b-84ced506b25c",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The major antibody-targeted epitopes across all cohorts were in the NTD, CTD, FP, and SH-H regions. Nonhospitalized infected individuals primarily bound to FP and SH-H epitopes, while vaccinated individuals and hospitalized/severe cases bound to all four regions (NTD, CTD, FP, and SH-H).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C28-C29 describe the primary epitope binding patterns observed across different groups. These findings are supported by Figure 2A heatmap data and are consistent with the PCA analysis. The pattern is clearly demonstrated and represents a core finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "c607c38a-47f4-4781-a1f1-6ec6c110cc97",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Na\u00efve serum samples occasionally showed antibodies binding to FP and SH-H peptides, likely reflecting preexisting cross-reactive antibodies from endemic coronaviruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 reports an observation of occasional binding in na\u00efve samples and provides a reasonable interpretation supported by citations to prior work on cross-reactive antibodies. The interpretation is appropriately qualified as 'likely' and is consistent with established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "a8c243c0-6004-432c-accd-d0de2953e72f",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Antibodies from hospitalized infected and vaccinated individuals showed significantly higher binding to NTD, CTD, and SH-H regions compared to nonhospitalized infected individuals, while nonhospitalized infected individuals showed significantly higher binding to the FP epitope.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 report statistically significant differences in epitope binding between groups, supported by Figure 2C showing statistical comparisons. The manuscript explicitly states these findings with appropriate statistical tests (Mann-Whitney-Wilcoxon).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "2324815a-7870-43f4-8a9d-0a681d7afc7d",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "There was no significant difference in epitope binding between vaccinated samples with and without prior infection across the four epitope regions (p>0.05, Mann-Whitney-Wilcoxon test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 reports a negative finding with appropriate statistical testing. This is clearly stated in the manuscript and represents an important observation about the similarity of vaccine responses regardless of prior infection status.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "2ad39514-7eda-460b-974d-39c7bdfa3210",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In the Moderna Trial Cohort, there was significantly decreased binding to CTD and SH-H epitopes at day 119 compared to day 36 post-vaccination (p=0.008, p=0.011, Wilcoxon rank-sum test with Bonferroni correction), but decay was not uniform across all epitopes, indicating differential waning of antibody titers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C31-C32 report temporal changes in epitope binding with appropriate statistical tests and Bonferroni correction for multiple testing. Figure 3A supports these findings. The interpretation about non-uniform decay is reasonable given the data showing selective decrease in only some epitopes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "947331e0-e1cb-4ed1-bb50-4b2aa2861251",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Vaccine dose (100 vs 250 \u00b5g mRNA-1273), vaccine type (BNT162b2 vs mRNA-1273), and participant age did not significantly affect the specificity of the antibody response across the four epitope regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C17, C33 report negative findings for multiple covariates. These are supported by Figures 3B-C and Figure 3\u2014figure supplement 1B showing no significant differences. The statistical tests appear appropriate, though the manuscript notes that an age effect in SH-H did not survive multiple testing correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "1dc95659-1ebe-4f28-8c3f-c2fea99e6ab8",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In infected individuals, there was no significant difference in binding to the four epitopes at different times post symptom onset (0-60, 60-180, and 180-360 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 reports a negative finding about temporal stability of epitope binding in infected individuals. This is supported by Figure 3\u2014figure supplement 1 and appropriate statistical testing (p>0.05, MWW).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "13af61c9-5113-459b-8841-c05d7f9b48bf",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Vaccination elicited antibodies with a strikingly uniform escape profile in the NTD epitope across samples, with the majority being sensitive to mutations at sites 291, 294-297, 300-302, and 304 in the C-terminal portion of NTD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18 and C34 describe the uniform escape profile for NTD antibodies after vaccination. This is supported by Figure 4A showing logo plots with consistent escape patterns across individuals. The finding represents a key observation about vaccine-induced antibody responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "968796d9-abdb-4fc2-89b1-bb532e51657a",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The CTD region contains multiple epitopes, with the dominant CTD-N epitope located at positions 545-580. Antibodies to CTD-N had a less uniform escape profile than NTD antibodies, though sites 561 and 562 were common escape sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20, C35 describe the CTD epitope structure and escape patterns. Figure 4B supports the observation of less uniform escape compared to NTD, with some common sites. The characterization is appropriately qualified and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "0deefbe9-356d-4918-af79-d7784ee83ec0",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "For antibodies to NTD and CTD-N epitopes, the pathways of escape drifted over time within individuals, differing at 119 days compared to 36 days post-vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C40 describe temporal drift in escape pathways. Figure 4 shows paired samples over time supporting this observation. The finding is consistent with ongoing B cell maturation and is appropriately discussed in context of prior work on somatic hypermutation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "2c421dcd-26c5-40eb-a28b-c9142be9cae5",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In previously infected individuals, the major sites of escape within the FP epitope were sites 819, 820, 822, and 823, and these sites did not appear to change after subsequent vaccination, though there was more variability in escape profiles post-vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C36 describe the stability of FP escape profiles in infected individuals after vaccination. Figure 5A shows paired samples supporting this observation. The finding is appropriately qualified regarding increased variability, and the sample size limitation (N=3) is acknowledged in the Discussion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "cac8bd29-0898-45bc-a79e-2f7f17b2259b",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In people with no prior infection, vaccination induced diverse pathways of escape in the FP region and did not induce a strong or uniform response at the FP epitope.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C37 describe the diverse and weak FP response after vaccination alone. Figure 5B shows the diverse escape profiles across vaccinated individuals without prior infection. This contrasts with the focused response seen after infection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "861468ff-7dfc-4851-aeff-9435313bcfa6",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previously infected individuals without vaccination had diverse pathways of escape within the SH-H epitope.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 describes diverse escape pathways in the SH-H epitope after infection. Figure 6A shows varied escape profiles across different infected individuals, supporting this observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "f8ffee7f-47c7-49a2-b60c-74a0756c76bc",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Vaccinated individuals, regardless of infection history, had a uniform pathway of escape in the SH-H epitope, with consistent escape at sites 1148, 1152, 1155, and 1156, which may be due to a singular antibody type that would allow escape by the same mutations across all vaccinated people.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C27, C48 describe the striking uniformity of SH-H escape profiles after vaccination. Figures 6A-B show consistent escape patterns across vaccinated individuals. The interpretation about a singular antibody type is appropriately qualified as speculative ('may be due to') and is supported by citation to a cross-reactive antibody study (C38).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "706e838b-3d2e-4fc6-aa83-84ef211654da",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "One hospitalized individual (participant 6C) showed a pre-vaccination escape profile in the SH-H epitope that was highly similar to vaccinated individuals, and this profile did not change after vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 describes an interesting observation about one severely infected individual having a vaccine-like escape profile. Figure 6A shows this individual's data. This is a single case observation that is appropriately noted but should be interpreted cautiously given the small sample size of hospitalized individuals (N=5).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "3a608e93-3829-42b0-a801-49687eb007b5",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "One explanation for why vaccination and severely infected individuals share the same antibody binding profile is that it results from the high antigenic load experienced by both groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C30 proposes a mechanistic explanation for the similarity between vaccine and severe infection responses. This is explicitly presented as speculation ('One explanation') without direct experimental evidence. While plausible, this hypothesis is not tested in the study and remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "7a6bb123-e0fd-402a-bca9-9f11f36e625d",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Sites 1148, 1152, 1155, and 1156 in the SH-H epitope are also contact sites for a cross-reactive HR2-specific antibody from a mouse immunized with MERS and SARS Spike proteins, suggesting that a singular antibody clonotype could be elicited by stabilized Spike protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 cites prior work showing these sites are contact points for a cross-reactive antibody. Claim C39 proposes an interpretation based on this observation. The citation is appropriate and the interpretation is reasonably qualified as a suggestion ('hints that'), though it remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "d7b2ffb7-17cf-4e69-9e0f-0d6be2d7b142",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "SARS-CoV-2-specific B cells undergo continued somatic hypermutation after infection due to antigen persistence, and Spike antigen has been detected in lymph nodes at least 3 months after BNT162b2 vaccination, which could explain the observed changes in epitope binding over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 cite prior work on B cell maturation and antigen persistence to explain the observed temporal drift in escape pathways. The citations are appropriate and the proposed mechanism is reasonable, though it remains speculative for the current dataset.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "4aac5d61-b549-4339-8d9d-cdf81a1f3d66",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The Spike Phage-DMS library cannot detect antibodies binding to conformational or glycosylated epitopes, as demonstrated by the lack of observable binding to the RBD region despite it being a known target of antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 acknowledge a key limitation of the methodology. This is an important and accurate limitation statement. The use of RBD as an example is appropriate since RBD antibodies are well-documented but not detected by this linear peptide approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "ec2b067a-d6cb-4b00-9668-3a229953df71",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The broader antibody response across the Spike protein in vaccinated individuals compared to infected individuals may have important implications for immune durability against future variants, as polyclonal responses resistant to multiple mutations are necessary for long-lasting immunity, potentially providing greater protection from infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45-C47 propose implications of the findings for protection against variants. While C46 cites evidence for the principle that polyclonal responses are beneficial, the actual protective capacity of the broader vaccine response is not directly tested. This remains an inference that requires functional validation studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "6947de03-32af-44fa-a0e1-9dbf5584ddad",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Epitopes in the S2 domain are in highly conserved regions with functional constraints that limit viral mutation, and mutations in FP and SH-H epitopes are not arising in the global SARS-CoV-2 population, suggesting these regions may be constrained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 cite prior work showing conservation of S2 epitopes and lack of mutations in these regions in circulating variants. The citations are appropriate and the interpretation about functional constraints is reasonable and well-supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "5ec4c279-8680-4d12-b9f6-f645626e552f",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The Spike protein in both mRNA vaccines is stabilized in prefusion conformation by two proline substitutions, which could result in altered antibody targeting compared to infection where Spike undergoes conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 cites the vaccine design feature (proline substitutions). Claim C52 proposes this as a potential mechanism for differences in antibody responses. The citation is appropriate and the proposed mechanism is plausible, though it is appropriately presented as speculative ('could result').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "c5524d7d-a055-46a1-9d50-0be56cc7bf61",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Vaccines drive higher neutralization titers and more Spike binding IgG than infection, and RBD antibodies from vaccination are less sensitive to mutation and bind more broadly than those from infection, though the majority of serum binding is directed outside the RBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 cite multiple prior studies establishing differences between vaccine and infection responses. These are appropriate citations to prior work that provide context for the current study. The claims accurately represent the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "8a138bc8-34f1-4d39-a701-10403c64c6a2",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Few studies have examined non-RBD antibody prevalence and escape pathways, especially after vaccination. Antibodies to FP and SH-H epitopes are found in COVID-19 patients, may be neutralizing, and may contribute to non-neutralizing antibody activities associated with protection. These epitopes lie in conserved regions where functional constraints may counter selective pressure for escape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 provide background on non-RBD antibodies with appropriate citations. These claims accurately represent the literature and establish the rationale for the current study. The characterization of the knowledge gap and the properties of these epitopes is well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "e9a9f013-b989-4a52-9424-37d9acff38fc",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Over half of US adults are vaccinated with mRNA vaccines that effectively protect against infection, severe disease, and death, but less is known about efficacy against emerging variants like Delta. Evidence from endemic coronaviruses shows Spike evolution enables escape from neutralizing antibodies, suggesting continual vaccine updates may be necessary without robust immunity against antigenic drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 provide background context with appropriate citations about vaccine coverage, efficacy, and the challenge of viral evolution. These claims accurately represent the state of knowledge and establish the motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "385678ef-c827-46af-b70b-d0f88af36492",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Prior SARS-CoV-2 infection provides some immunity against reinfection, and several studies have characterized epitopes in convalescent sera, but it is unknown whether infection and vaccination result in antibodies binding to similar epitopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 establish background on infection-induced immunity and identify the knowledge gap addressed by the study. The citations are appropriate and the characterization of the unknown is accurate, representing a key question the study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    },
+    {
+      "id": "06be6635-3423-4913-9a6f-e8a40c1a376f",
+      "content_id": "d3e8727c-21fd-4fd6-a4f5-78e454eba2d3",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "Samples were run in duplicate across two independent library batches (except four hospitalized samples run in singlicate). PCA via singular value decomposition was performed using scikit-learn, epitope regions were defined as contiguous nonzero loadings in the first three principal axes, and samples below binding thresholds were excluded from escape analysis. Raw data was deposited in NCBI SRA under PRJNA765705.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 describe methodological details and data availability. These are clearly stated in the Materials and methods section. The replicate structure is appropriate, the PCA methodology is standard, and the data deposition is properly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:23:17.716817Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aa7fccc9-0b73-4ecb-a0da-6d582a3954c2",
+      "result_id": "9f4f3f3b-3c0b-44f2-8e7a-df5773e2111f"
+    },
+    {
+      "claim_id": "605c66e1-87a7-45ac-b066-d3feece125de",
+      "result_id": "9f4f3f3b-3c0b-44f2-8e7a-df5773e2111f"
+    },
+    {
+      "claim_id": "f7ff2f9e-78c8-40a4-9491-c59e53a0bfc4",
+      "result_id": "9f4f3f3b-3c0b-44f2-8e7a-df5773e2111f"
+    },
+    {
+      "claim_id": "def1b8c8-64df-4979-9865-67507100e9b9",
+      "result_id": "9f4f3f3b-3c0b-44f2-8e7a-df5773e2111f"
+    },
+    {
+      "claim_id": "fb076ff9-5077-4144-92ed-58de2a783f0c",
+      "result_id": "6b50bc8a-7561-4462-8a54-e4d8c5a1d7f8"
+    },
+    {
+      "claim_id": "32774282-3b97-4351-b80c-8bb102454272",
+      "result_id": "6b50bc8a-7561-4462-8a54-e4d8c5a1d7f8"
+    },
+    {
+      "claim_id": "c3b751db-f913-4956-a6f2-3e323c8eb20d",
+      "result_id": "6b50bc8a-7561-4462-8a54-e4d8c5a1d7f8"
+    },
+    {
+      "claim_id": "fd6815ab-3835-4b86-90ff-d34528074583",
+      "result_id": "85e655e3-373c-4e27-ad3b-84ced506b25c"
+    },
+    {
+      "claim_id": "bd76e7f4-d54b-4afa-95dc-be90874dd61d",
+      "result_id": "85e655e3-373c-4e27-ad3b-84ced506b25c"
+    },
+    {
+      "claim_id": "52f1aa0e-400e-4324-af0a-4cbf287945de",
+      "result_id": "85e655e3-373c-4e27-ad3b-84ced506b25c"
+    },
+    {
+      "claim_id": "7ccfa538-0150-4cfb-8da2-1d01f3140f00",
+      "result_id": "85e655e3-373c-4e27-ad3b-84ced506b25c"
+    },
+    {
+      "claim_id": "dfac2b22-fc61-490e-a54c-da0b77f84604",
+      "result_id": "85e655e3-373c-4e27-ad3b-84ced506b25c"
+    },
+    {
+      "claim_id": "62a7accb-a746-479d-9282-d8fcaf35a84e",
+      "result_id": "c607c38a-47f4-4781-a1f1-6ec6c110cc97"
+    },
+    {
+      "claim_id": "507aa546-b0b7-4585-879a-c1d49015f3f7",
+      "result_id": "a8c243c0-6004-432c-accd-d0de2953e72f"
+    },
+    {
+      "claim_id": "edde159e-6427-4f20-bf3f-85da1367d9f1",
+      "result_id": "a8c243c0-6004-432c-accd-d0de2953e72f"
+    },
+    {
+      "claim_id": "0fa23370-85dc-457e-b011-19c7698a7f66",
+      "result_id": "2324815a-7870-43f4-8a9d-0a681d7afc7d"
+    },
+    {
+      "claim_id": "167054ed-f0e8-44c3-97d1-7a6e2b7257dc",
+      "result_id": "2ad39514-7eda-460b-974d-39c7bdfa3210"
+    },
+    {
+      "claim_id": "dd540760-0355-434e-82a4-28098c757e65",
+      "result_id": "2ad39514-7eda-460b-974d-39c7bdfa3210"
+    },
+    {
+      "claim_id": "ee80cc5e-166a-49c7-8418-388895516455",
+      "result_id": "2ad39514-7eda-460b-974d-39c7bdfa3210"
+    },
+    {
+      "claim_id": "101af3f7-ece0-41fd-a795-c97f5874b6d3",
+      "result_id": "947331e0-e1cb-4ed1-bb50-4b2aa2861251"
+    },
+    {
+      "claim_id": "6495992e-7aab-4172-b0e5-6bed05363fe2",
+      "result_id": "947331e0-e1cb-4ed1-bb50-4b2aa2861251"
+    },
+    {
+      "claim_id": "eaeb219d-765b-4e94-897c-63ad44c818de",
+      "result_id": "947331e0-e1cb-4ed1-bb50-4b2aa2861251"
+    },
+    {
+      "claim_id": "f0678bcf-1456-494b-b07f-35999f43d10f",
+      "result_id": "1dc95659-1ebe-4f28-8c3f-c2fea99e6ab8"
+    },
+    {
+      "claim_id": "4dd15d1a-9275-43b7-905f-6d172cd77d0e",
+      "result_id": "13af61c9-5113-459b-8841-c05d7f9b48bf"
+    },
+    {
+      "claim_id": "3892e951-a275-46c6-99c5-a5841d97e676",
+      "result_id": "13af61c9-5113-459b-8841-c05d7f9b48bf"
+    },
+    {
+      "claim_id": "de3639c8-9b12-42ef-8d35-fcc48a186d49",
+      "result_id": "968796d9-abdb-4fc2-89b1-bb532e51657a"
+    },
+    {
+      "claim_id": "50de83c2-c71f-413b-b263-6fa5e8065e91",
+      "result_id": "968796d9-abdb-4fc2-89b1-bb532e51657a"
+    },
+    {
+      "claim_id": "eba7750f-c91f-4e9e-81c5-3be5d0266f3a",
+      "result_id": "968796d9-abdb-4fc2-89b1-bb532e51657a"
+    },
+    {
+      "claim_id": "94eafb4c-de76-4230-b395-5528398c0385",
+      "result_id": "0deefbe9-356d-4918-af79-d7784ee83ec0"
+    },
+    {
+      "claim_id": "156dee9b-eda2-4613-9460-8fad43462246",
+      "result_id": "0deefbe9-356d-4918-af79-d7784ee83ec0"
+    },
+    {
+      "claim_id": "3794f9bb-1b65-49ff-be7f-1dfc3be7d9d2",
+      "result_id": "2c421dcd-26c5-40eb-a28b-c9142be9cae5"
+    },
+    {
+      "claim_id": "7ad93a71-e8cd-4e75-b1ed-3ccbb28f7356",
+      "result_id": "2c421dcd-26c5-40eb-a28b-c9142be9cae5"
+    },
+    {
+      "claim_id": "321a5588-29a7-4343-a0ec-8f17bae07ab7",
+      "result_id": "cac8bd29-0898-45bc-a79e-2f7f17b2259b"
+    },
+    {
+      "claim_id": "e19d6bbf-c3b2-467e-9bd7-bc8ab5df8b7e",
+      "result_id": "cac8bd29-0898-45bc-a79e-2f7f17b2259b"
+    },
+    {
+      "claim_id": "15d31a48-99e2-4502-84a6-ecdef12d73dd",
+      "result_id": "861468ff-7dfc-4851-aeff-9435313bcfa6"
+    },
+    {
+      "claim_id": "51f88ab1-560e-4ac5-9b7b-9183e7037264",
+      "result_id": "f8ffee7f-47c7-49a2-b60c-74a0756c76bc"
+    },
+    {
+      "claim_id": "1bf9ae39-ca00-429e-9731-4532d86b54d5",
+      "result_id": "f8ffee7f-47c7-49a2-b60c-74a0756c76bc"
+    },
+    {
+      "claim_id": "c908bfa3-9fcc-4f18-b88a-37e05f145dd1",
+      "result_id": "f8ffee7f-47c7-49a2-b60c-74a0756c76bc"
+    },
+    {
+      "claim_id": "a16a18fd-a9d3-48f3-8a55-9eaf30c063da",
+      "result_id": "706e838b-3d2e-4fc6-aa83-84ef211654da"
+    },
+    {
+      "claim_id": "f98967d8-7044-4439-8ca8-8edcdc1836e8",
+      "result_id": "3a608e93-3829-42b0-a801-49687eb007b5"
+    },
+    {
+      "claim_id": "aae358fc-7a44-4bca-b788-4a7708106276",
+      "result_id": "7a6bb123-e0fd-402a-bca9-9f11f36e625d"
+    },
+    {
+      "claim_id": "31113b76-4803-46bd-8d19-6ee909660655",
+      "result_id": "7a6bb123-e0fd-402a-bca9-9f11f36e625d"
+    },
+    {
+      "claim_id": "d52b6027-f442-4248-82f1-8ed1ccad3a42",
+      "result_id": "d7b2ffb7-17cf-4e69-9e0f-0d6be2d7b142"
+    },
+    {
+      "claim_id": "511bd43f-f088-4f6d-89e3-b9fc0b9e6ee3",
+      "result_id": "d7b2ffb7-17cf-4e69-9e0f-0d6be2d7b142"
+    },
+    {
+      "claim_id": "001c7ffe-f8f0-42c8-a6f4-7c38ef25207d",
+      "result_id": "4aac5d61-b549-4339-8d9d-cdf81a1f3d66"
+    },
+    {
+      "claim_id": "14a69362-00ec-4de4-a831-fba330452f49",
+      "result_id": "4aac5d61-b549-4339-8d9d-cdf81a1f3d66"
+    },
+    {
+      "claim_id": "fe495f4c-4990-4fb3-acb0-21eeb102c3af",
+      "result_id": "ec2b067a-d6cb-4b00-9668-3a229953df71"
+    },
+    {
+      "claim_id": "1d983bb5-bf59-4b52-abd4-5a7ff077c0f1",
+      "result_id": "ec2b067a-d6cb-4b00-9668-3a229953df71"
+    },
+    {
+      "claim_id": "686ee427-9c0f-48e6-9a4b-e8a79afc60d1",
+      "result_id": "ec2b067a-d6cb-4b00-9668-3a229953df71"
+    },
+    {
+      "claim_id": "79ceedf9-0910-4a15-90c8-7fbbebc509d2",
+      "result_id": "6947de03-32af-44fa-a0e1-9dbf5584ddad"
+    },
+    {
+      "claim_id": "3714f870-cef6-4967-9a7f-6a3203161090",
+      "result_id": "6947de03-32af-44fa-a0e1-9dbf5584ddad"
+    },
+    {
+      "claim_id": "d2c2477b-60ba-4376-b59d-e804fcb65637",
+      "result_id": "5ec4c279-8680-4d12-b9f6-f645626e552f"
+    },
+    {
+      "claim_id": "485a9e3d-8daf-4b64-99d8-71f10f502460",
+      "result_id": "5ec4c279-8680-4d12-b9f6-f645626e552f"
+    },
+    {
+      "claim_id": "77741697-e150-4a67-b2d3-203d3257d0f5",
+      "result_id": "c5524d7d-a055-46a1-9d50-0be56cc7bf61"
+    },
+    {
+      "claim_id": "8fd34162-061c-4728-9761-6821e15c52b2",
+      "result_id": "c5524d7d-a055-46a1-9d50-0be56cc7bf61"
+    },
+    {
+      "claim_id": "e6bcf487-fa5c-4d23-846f-3393aea7b067",
+      "result_id": "c5524d7d-a055-46a1-9d50-0be56cc7bf61"
+    },
+    {
+      "claim_id": "115abf24-bee8-430a-8fa8-2fdbf96ee1d0",
+      "result_id": "8a138bc8-34f1-4d39-a701-10403c64c6a2"
+    },
+    {
+      "claim_id": "6c17ea28-30af-4f5c-98ee-eeacb0198e0b",
+      "result_id": "8a138bc8-34f1-4d39-a701-10403c64c6a2"
+    },
+    {
+      "claim_id": "5cc22c68-16eb-42b0-a0bc-c7becd666665",
+      "result_id": "8a138bc8-34f1-4d39-a701-10403c64c6a2"
+    },
+    {
+      "claim_id": "aef379f2-70c1-48d1-9710-e12bcc97d883",
+      "result_id": "8a138bc8-34f1-4d39-a701-10403c64c6a2"
+    },
+    {
+      "claim_id": "b626ec4f-f6a1-4879-95b5-31c2060679b5",
+      "result_id": "e9a9f013-b989-4a52-9424-37d9acff38fc"
+    },
+    {
+      "claim_id": "528d3678-3cb4-4e4e-8a01-08efb80e594d",
+      "result_id": "e9a9f013-b989-4a52-9424-37d9acff38fc"
+    },
+    {
+      "claim_id": "4ea9b618-ffbb-4c31-9ce6-2c8859313d3f",
+      "result_id": "e9a9f013-b989-4a52-9424-37d9acff38fc"
+    },
+    {
+      "claim_id": "d2eb1476-3e48-49f3-9212-d1ebac777a2b",
+      "result_id": "e9a9f013-b989-4a52-9424-37d9acff38fc"
+    },
+    {
+      "claim_id": "9115506b-3e02-4a01-abe1-2b5158f6e4f7",
+      "result_id": "e9a9f013-b989-4a52-9424-37d9acff38fc"
+    },
+    {
+      "claim_id": "c35e52fc-9094-4278-97b4-2f1cbce668c8",
+      "result_id": "e9a9f013-b989-4a52-9424-37d9acff38fc"
+    },
+    {
+      "claim_id": "4724317e-35cc-40b1-8556-61dad68d34ea",
+      "result_id": "385678ef-c827-46af-b70b-d0f88af36492"
+    },
+    {
+      "claim_id": "f7870dbb-c3f3-4a2e-9635-b583ad56f7b9",
+      "result_id": "385678ef-c827-46af-b70b-d0f88af36492"
+    },
+    {
+      "claim_id": "38ff6a35-dcd9-4f10-9f78-d9e826f17122",
+      "result_id": "385678ef-c827-46af-b70b-d0f88af36492"
+    },
+    {
+      "claim_id": "90697e6e-3e89-45c6-98ae-4354a0f6b3be",
+      "result_id": "06be6635-3423-4913-9a6f-e8a40c1a376f"
+    },
+    {
+      "claim_id": "713f5a61-5735-4739-81a0-c7b18143ffe9",
+      "result_id": "06be6635-3423-4913-9a6f-e8a40c1a376f"
+    },
+    {
+      "claim_id": "e8a3f1d6-d9ed-4160-b559-ad769917c6f1",
+      "result_id": "06be6635-3423-4913-9a6f-e8a40c1a376f"
+    },
+    {
+      "claim_id": "e96f21c6-bf2e-4647-a471-2c0c7be7e5f1",
+      "result_id": "06be6635-3423-4913-9a6f-e8a40c1a376f"
+    },
+    {
+      "claim_id": "06de9bda-cb9c-421b-abfe-5164ecb11513",
+      "result_id": "06be6635-3423-4913-9a6f-e8a40c1a376f"
+    }
+  ],
+  "comparisons": []
+}

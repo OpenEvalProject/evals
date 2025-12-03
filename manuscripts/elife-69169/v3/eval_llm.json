@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The authors identified approximately 6000 unique AHL synthase-receptor pairs from genomic databases by searching for co-located genes (within two coding sequences) and filtering for sequence identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36, C37, C142-C145 provide consistent quantitative data on the identification and filtering of synthase-receptor pairs. The methodology (C142) is clearly described, and the numbers are internally consistent (14,980 total pairs representing 6360 non-identical systems, filtered to 3489 at 90% identity). This represents a straightforward bioinformatics result with appropriate documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "GREMLIN covariation analysis with average product correction identified covarying residues between synthase-receptor pairs, with top-scoring residues having GREMLIN scores >0.09 compared to 0.08 in randomized controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C41-C44 describe the computational methodology and provide quantitative thresholds for distinguishing signal from noise. The randomized control (C44) provides an appropriate baseline, and the overlap between LasI/R and LuxI/R analyses (C42: 62.5% overlap) supports the robustness of the method. The statistical approach is well-established and properly applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C107",
+      "C108"
+    ],
+    "result": "Top-scoring covarying residues cluster near ligand-binding sites in both LasI and LasR, being 3-4 times closer to ligands (3.7-5.0 \u00c5) than randomized control residues (12-18 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45-C51, C107-C108 provide consistent structural evidence with specific distance measurements. The comparison to randomized controls (C47-C48, C51) strengthens the conclusion. The clustering pattern is visualized in Figure 2 and quantitatively supported. The 3-4 fold difference in distances provides strong evidence that the method identifies functionally relevant residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C109"
+    ],
+    "result": "Single amino acid substitutions in top-scoring covarying residues of LasR alter signal selectivity, with variants showing changed response profiles to different AHL signals in both E. coli and P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34, C54-C61, C109 demonstrate experimental validation of the covariation predictions. Multiple variants (G38V, R61L, A127L, L130F) show altered selectivity patterns (C54-C56), and the effects are consistent between E. coli and P. aeruginosa (C58). The data in Figures 3-4 support these conclusions. This provides strong functional validation of the computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C113",
+      "C114"
+    ],
+    "result": "Some LasR variants (A127L, L130F) show increased sensitivity to the native signal 3OC12-HSL (2-3 fold) but with decreased selectivity, suggesting LasR is not optimized for maximal sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C113-C114 present a clear sensitivity-selectivity trade-off with quantitative data. The 2-3 fold increases in sensitivity (C66-C67) are accompanied by reduced selectivity (C68-C69), supporting the interpretation that wild-type LasR balances these properties (C113-C114). Figure 4E provides supporting EC50 measurements. This is a well-supported observation about evolutionary optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Soluble LasR protein levels were not substantially changed in most variants (A127L, L130F) compared to wild-type, though R61L showed somewhat reduced abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by immunoblotting data in Figure 4\u2014figure supplement 2. This control experiment addresses whether altered selectivity is due to protein stability changes. The finding that most variants have similar protein levels suggests the selectivity changes are due to altered ligand binding rather than protein expression/stability, strengthening the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Single amino acid substitution L157W in LasI alters signal production, generating equal amounts of 3OC10-HSL and 3OC8-HSL along with reduced 3OC12-HSL, demonstrating that single substitutions can significantly alter synthase selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 describe experimental characterization of LasI variants using TLC and HPLC. The L157W variant shows clear altered product distribution (C75), supported by Figure 5. The structural rationalization (C76-C77) is reasonable though speculative. The conclusion that single substitutions alter selectivity (C78) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Three amino acid substitutions (L125F, A127M, L130F) in LasR, derived from MupR covarying residues, increase sensitivity to 3OC10-HSL over 20-fold, with L125F being the primary driver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 describe rational engineering based on covariation analysis. The choice of MupI/R as a target system is justified (C81-C83), and the experimental results show clear increases in 3OC10-HSL sensitivity (C87: >20-fold). The identification of L125F as the primary driver (C88) is supported by Figure 6B-C. This demonstrates successful application of the covariation approach for protein engineering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The engineered 'MupR-like' LasR variant (L125F, A127M, L130F) responds to 3OC10-HSL at concentrations as low as 1 \u00b5M in P. aeruginosa while maintaining 3OC12-HSL activity, and stimulates protease production in response to 3OC10-HSL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 demonstrate that the engineered receptor functions in the native P. aeruginosa context. The variant responds to 3OC10-HSL at physiologically relevant concentrations (C95: 1 \u00b5M), maintains native signal activity (C96), and drives downstream phenotypes like protease production (C97). Figure 6D provides visual evidence. This shows the engineered system is functional in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Engineering LasI with MupI-derived substitutions (M125I, T145S, M152L) alters signal production to favor 3OC10-HSL over 3OC12-HSL (2:1 ratio), with M125I alone sufficient to produce equal amounts of both signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 describe successful engineering of the synthase component. The triple mutant produces 2:1 3OC10-HSL:3OC12-HSL (C100), and M125I alone produces equal amounts (C101). The comparison to MupI (C104: 9:1 ratio) provides context. Figure 7 and supplementary data support these findings. This completes the engineering of both components of the QS system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "By changing covarying residues in LasI/R to their MupI/R identities, the authors improved LasR sensitivity to 3OC10-HSL over 20-fold and increased LasI production of 3OC10-HSL roughly 15-fold, with single substitutions being primary drivers in both proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 summarize the engineering achievements with quantitative improvements. The 20-fold improvement in receptor sensitivity (C118) and 15-fold increase in synthase production (C119) are supported by the experimental data. The finding that single substitutions drive the changes (C120) is consistent with the detailed characterization. This represents a successful proof-of-concept for rational QS engineering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C139",
+      "C146"
+    ],
+    "result": "This study validates covariation analysis as a method for identifying selectivity determinants in proteins that interact indirectly through small molecules rather than direct binding, and supports the coevolution of AHL synthases and receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111, C139, C146 represent the major methodological contribution. The successful identification of functionally important residues (structural clustering, experimental validation) and their use in rational engineering demonstrate that covariation methods can be extended beyond direct protein-protein interactions. This is a novel application with broad implications for studying protein-ligand systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C78"
+    ],
+    "result": "For both LasI and LasR, single amino acid substitutions are sufficient to significantly alter signal selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C78 are supported by multiple experimental examples: LasR variants (G38V, L130F, A127L) and LasI variants (L157W, M125I) all show altered selectivity from single substitutions. This finding is somewhat surprising given the low sequence identity between Las and Mup systems (C121) and contrasts with the general requirement for multiple changes (C79), making it a significant observation about QS system evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The engineered LasI/R variants represent promiscuous systems with broadened selectivity that respond to both native and non-native signals, consistent with evolutionary intermediates observed in other protein systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 place the findings in an evolutionary context. The retention of native activity (C125) while gaining new activity (C126) is consistent with promiscuous intermediates observed in directed evolution of LuxR (C127) and other systems (C128). The interpretation that systems evolve through promiscuous intermediates (C129-C131) is well-supported by cited literature and consistent with the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C122"
+    ],
+    "result": "QS systems may evolve to balance sensitivity and selectivity, as increased sensitivity could lead to premature activation and decreased fitness, and new QS systems might evolve with relative ease given that single substitutions can alter selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C116, C122 are speculative interpretations. While the sensitivity-selectivity trade-off is observed experimentally (C114), the evolutionary implications (C115) and fitness consequences (C116) are not directly tested. The suggestion that new QS systems evolve easily (C122) is plausible given the single-substitution findings but requires additional evolutionary or fitness studies to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C135"
+    ],
+    "result": "Further work is needed to fully rewire LasI/R to exclusively use a non-native signal, as the large sequence differences between Las and Mup systems suggest additional 'supporting' residues must be changed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133, C135 acknowledge limitations and future directions. The incomplete selectivity swap (variants retain native activity) is clearly documented. The discussion of supporting residues (C134-C135) is supported by citations and provides a reasonable explanation for why complete rewiring was not achieved. This represents appropriate scientific caution about the scope of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C77",
+      "C90",
+      "C103"
+    ],
+    "result": "Mechanistic explanations for altered selectivity involve changes in binding pocket volume and hydrophobic interactions, though these remain speculative without structural validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C77, C90, C103 provide structural rationalizations for observed effects but are explicitly speculative (using 'may' and 'could'). While these explanations are reasonable based on residue positions in crystal structures, they lack direct experimental validation through structural studies of the variants or binding affinity measurements. These remain plausible hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  }
+]

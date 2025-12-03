@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Neurodegenerative diseases, particularly AD and bvFTD, represent a growing global health burden with rising prevalence in aging and underrepresented populations, where access to biomarkers and treatments is limited. These diseases are characterized by heterogeneous manifestations that hinder detection and diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide well-cited background on the epidemiological and clinical context of neurodegenerative diseases. These are established facts from the literature and appropriately set the stage for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Neuroimaging methods including PET, fMRI, and EEG have been extensively used to profile AD and bvFTD based on whole-brain activity patterns and to develop automated classifiers for clinical decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are well-supported by multiple citations to prior work. These claims establish the existing neuroimaging approaches and their applications, providing appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C16",
+      "C21"
+    ],
+    "result": "Current limitations in understanding large-scale network mechanisms of neurodegenerative dementias hinder intervention development. Purely data-driven metrics can be heterogeneous and difficult to interpret, and transcranial stimulation studies often lack principled methods for determining stimulation parameters. The use of whole-brain models to infer and reverse mechanisms in AD and bvFTD remains largely unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C16, and C21 identify gaps in current knowledge and methodology that motivate the present study. These assessments are reasonable given the cited literature and the authors' expertise, establishing the rationale for their modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Various transcranial stimulation techniques (TMS, tDCS, tACS, ultrasound) have been proposed to treat AD and bvFTD, but have yielded mixed results with only some studies reporting promising outcomes in restoring cognitive impairments and functional abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 summarize the state of transcranial stimulation research with appropriate citations. The characterization of 'mixed results' is a fair assessment of the cited literature and provides context for the need for model-guided approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Whole-brain models incorporating multiple experimental data sources can reproduce realistic brain dynamics and functional connectivity, and after optimization can be used to test external perturbations. Previous work has demonstrated feasibility of fitting such models to AD patient data, suggesting mechanistic explanations for functional network changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are well-supported by citations to prior modeling work. These establish the foundation and feasibility of the modeling approach used in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Computational models of brain activity present a trade-off between interpretability and accuracy, with the latter related to the number of optimized parameters. Increasing parameter space is necessary to model spatially heterogeneous changes in neural dynamics characteristic of neurodegenerative disorders, where atrophy is linked to alterations in local excitation/inhibition balance. The heterogeneity in AD and bvFTD challenges spatially homogeneous biomarker models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 provide well-cited theoretical and empirical justification for the modeling approach. The relationship between model complexity, spatial heterogeneity, and disease pathophysiology is appropriately established through citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study implemented a whole-brain model using Hopf bifurcation dynamics at AAL-parcellated nodes, coupled by DTI-derived anatomical connectivity. The model simulated phenomenological BOLD time series, from which functional connectivity matrices were computed and encoded into 2D latent space using a VAE. Regional bifurcation parameters were constrained by anatomical priors (RSN, atrophy maps, etc.) and optimized using a genetic algorithm. Three in silico perturbation protocols were explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C41 describe the core methodology of the study. The approach is clearly described and builds appropriately on cited prior work (Deco et al., Ipina et al., Perl et al.). The methods are technically sound and well-established in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Wave stimulation (periodic perturbation at dominant BOLD frequency) was designed to imitate tACS characteristics, based on reports of oscillation synchronization by in-phase tACS (though this mechanism is disputed). Sync/Noise stimulation modulates bifurcation parameters to alter nodal excitability, resembling tDCS effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C46 describe the rationale for the perturbation protocols. While the authors appropriately cite supporting literature and acknowledge controversy (C44), the mapping between in silico perturbations and actual transcranial stimulation techniques involves significant assumptions. The phenomenological nature of the model limits direct biophysical interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Model fitting achieved best results using RSN prior for controls, AD+FTD atrophy maps or RSN for AD, and AD+FTD atrophy maps for bvFTD, with GoF values (~0.6) similar to previous publications. Atrophy maps contain meaningful spatial heterogeneities that improve fit to empirical FC. AD and FTD atrophy maps showed high correlation (R=0.75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 present key model fitting results. The GoF values are comparable to prior work, and the finding that disease-specific atrophy maps improve fit is logical and well-demonstrated. The high correlation between AD and FTD atrophy maps (C52) justifies combining them, though this also suggests limited disease specificity in the spatial patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "AD patients were stratified by WMHI scores into AD- and AD+ subgroups. AD- showed shifts toward dynamical instability in posterior cingulate and right insula, while AD+ additionally showed shifts toward stable fixed-point dynamics in bilateral hippocampus and frontal cortex. bvFTD showed shifts toward synchronized regime in bilateral insula. These changes relate to region-specific shifts away from complex dynamics near the bifurcation point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 present important findings on disease-specific dynamical changes. The use of WMHI for stratification is well-justified (C54-C55). The regional patterns align with known pathophysiology of these diseases. However, the interpretation relies on the validity of the Hopf bifurcation model and its relationship to E/I balance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "VAE encoding achieved good reconstruction (SSIM 0.71-0.86) and separated AD and bvFTD in different latent space directions. AD- and AD+ were encoded along the same direction at different distances from controls, with the latent space organization being sensitive to disease severity and suggestive of different pathophysiological mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 demonstrate successful dimensionality reduction and disease separation in latent space. The SSIM values indicate reasonable reconstruction quality. The separation of diseases and sensitivity to severity are important findings, though the 2D representation necessarily loses information from the higher-dimensional FC matrices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Wave and Sync stimulations produced similar perturbational landscapes. For AD, stimulation of visual/temporal regions (especially hippocampus) displaced dynamics toward controls, with temporo-posterior involvement systematic across stimulation types. For bvFTD, frontal regions involved in social cognition were important for Wave/Sync, while frontal regions were most relevant for Noise stimulation. bvFTD showed few trajectories approaching control state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 present the perturbation analysis results. The findings are internally consistent and align with known disease pathophysiology. However, the clinical relevance depends on whether the in silico perturbations accurately model real transcranial stimulation, which remains uncertain (see C42-C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "AD is linked to altered cellular energy metabolism, E/I ratio, and neurotrophic factor release, impairing neural microcircuit function. TMS studies show that E/I imbalances correlate with symptoms in bvFTD and distinguish between bvFTD and AD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 provide well-cited background on the pathophysiology of AD and bvFTD, particularly regarding E/I balance. This supports the interpretation of the bifurcation parameter in terms of E/I ratio.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Temporo-posterior atrophy including hippocampus is indicative of AD and predicts disease progression. These regions show altered FC and hemodynamic responses in navigation and memory tasks. The expansion to frontal regions in AD+ is consistent with disease progression models. The shift toward stable fixed-point hippocampal dynamics is consistent with MTL functional uncoupling and increased cortical inhibition in AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 connect the model findings to established AD pathophysiology with appropriate citations. The interpretation of model parameters in terms of known functional and anatomical changes is reasonable and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "bvFTD presents disruptions in a fronto-insular-temporal network involved in social cognition, with salience network breakdown including anterior insula degeneration impacting emotional, social, and interoceptive deficits. These abnormalities manifest as increases in low-frequency oscillation power in fMRI, consistent with the model's finding of shifts toward synchronous dynamics in bilateral insula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 connect model findings to established bvFTD pathophysiology with appropriate citations. The consistency between the model prediction (shift toward synchronous dynamics) and empirical observations (increased low-frequency power) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Using RSN prior resulted in GoF values comparable to AD atrophy maps, compatible with observations that disrupted whole-brain dynamics and FC in AD follows the outline of major RSN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 provide an interesting finding about the relationship between RSN and disease-specific patterns. This is well-supported by the data and appropriately cited literature (Brier et al., 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The high dimensionality of whole-brain FC has hampered global analysis in previous modeling studies. Despite clinical overlap between AD and bvFTD that can complicate diagnosis, the model learned FC patterns that mapped to clearly separated latent space regions, suggesting future single-subject modeling could contribute to classification and mechanistic biomarker development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by the VAE results showing disease separation. However, C93 is speculative about future single-subject applications. The current group-level analysis doesn't directly demonstrate single-subject classification capability, though it provides a proof of principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "WMHI are highly prevalent and associated with AD disease severity but weakly associated with bvFTD severity. Small-vessel cerebrovascular disease severity is increased in AD patients, predicts future development and cognitive decline, and correlates with atrophy progression. The results support recent evidence of major vascular contribution to AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 are well-supported by citations and justify the use of WMHI for AD stratification. The connection to vascular contributions to AD is appropriately made, though the model itself doesn't directly test vascular mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "AD- and AD+ severity groups were encoded in the same latent space direction at different distances from controls, suggesting disease progression could be described as a one-dimensional manifold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by the VAE results. Claim C101 is a reasonable interpretation but somewhat speculative, as it extrapolates from two severity levels to a continuous progression model. More severity levels would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Brain regions important for reverting abnormal FC did not match those with different bifurcation parameters, implying simulated perturbation causes complex downstream effects beyond normalizing local parameter differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 present an important finding about the non-local effects of perturbations. This is well-demonstrated by comparing Figures 3 and 6, and the interpretation is reasonable given the network nature of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Low inter-hemispheric simulated FC was observed, related to known underestimation of homotopic fiber tracts by DTI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 acknowledges a known limitation of DTI-based connectivity matrices. This is appropriately cited and represents an honest assessment of model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The therapeutic effect of transcranial stimulation depends on individual characteristics of brain anatomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is well-supported by citations and provides important context for why single-subject modeling would be valuable, though the current study doesn't demonstrate this directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study included 94 participants (39 AD, 18 bvFTD, 57 controls) with no significant age differences between groups. Patients were diagnosed by expert neurologists following standard criteria, with diagnoses supported by extensive examinations per ReDLat protocol. Appropriate exclusion criteria and ethical approvals were obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C115 describe the participant characteristics and study procedures. The sample is reasonably sized for a modeling study, diagnostic criteria are appropriate, and ethical procedures are properly documented. The lack of age differences between groups is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Anatomical connectivity was obtained from DTI on 16 healthy participants, yielding 90\u00d790 AAL connectivity matrices. fMRI data were preprocessed using standard procedures (DPARSF), with appropriate quality control for head motion and bandpass filtering in 0.04-0.07 Hz range chosen for reliability and functional relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 describe standard neuroimaging acquisition and preprocessing procedures. The methods are appropriate and well-documented. However, using DTI from a separate young healthy cohort rather than from the patient groups themselves is a limitation, as structural connectivity may differ in disease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The model used Hopf bifurcation dynamics at each AAL region, assuming neural mass dynamics range from synchronous to asynchronous states that fMRI can capture. The SC matrix was scaled to 0.2 for weak coupling. Equations were integrated using Euler-Maruyama algorithm. Regional parameter variations were introduced based on prior work. Model fitting maximized similarity between simulated and empirical FC using SSIM metric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C134 describe the model implementation and fitting procedures. The methods are clearly described and build on established prior work. The choice of SSIM as a metric balances different aspects of FC similarity. The weak coupling assumption is standard for this type of model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "A genetic algorithm was implemented for parameter optimization, starting with 10 randomly initialized parameter sets and using 20% elite selection, 60% crossover, and 20% mutation to generate new generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 describe the optimization procedure. Genetic algorithms are appropriate for this type of optimization problem with multiple parameters and non-convex objective functions. The implementation details are clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C140",
+      "C146",
+      "C147"
+    ],
+    "result": "Stimulations were applied to homotopic node pairs. VAE training used 80/20 train/test split, 128-sample batches, 50 epochs, and Adam optimizer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140, C146-C147 describe implementation details for perturbations and VAE training. The procedures are standard and appropriately specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "The study did not report p-values or statistical power metrics since these can be artificially increased by computing additional model realizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 represents a reasonable methodological choice for a modeling study where the number of simulations is arbitrary. The use of effect sizes (Cohen's d) is appropriate. However, this approach makes it difficult to assess the reliability of differences, and some statistical testing would strengthen the conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C37",
+      "C40",
+      "C42",
+      "C71"
+    ],
+    "result": "Oct4 depletion leads to rapid loss of Oct4 binding to chromatin and immediate decrease in mRNA synthesis from target genes. Chromatin binding of Oct4 was reduced after 3 hr of DOX treatment, decreasing to 87.5% at 3 hr and progressively to 2.5% at 15 hr. Changes in mRNA synthesis were observed as early as 3 hr of DOX treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C37, C40, C42, and C71 are well-supported by multiple orthogonal datasets including western blots of chromatin fractions (Figure 1A), ChIP-seq (Figure 4E), and TT-seq (Figure 2\u2014figure supplement 1A). The temporal kinetics are consistent across methods, showing Oct4 binding decreases before substantial protein depletion, and transcriptional changes occur rapidly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Oct4 depletion causes rapid downregulation of pluripotency genes, particularly SE-controlled genes. After 15 hr of DOX treatment, 769 genes were downregulated, with early downregulated genes (446) enriched for stem cell maintenance and showing strongest decrease at 6-9 hr. SE-controlled genes (60/150) were particularly sensitive to Oct4 depletion, with key pluripotency factors downregulated at specific timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C55 are strongly supported by TT-seq differential expression analysis (Figure 2A-H), k-means clustering, GO analysis, and statistical testing (Fisher's exact test p=2.6e-24 for SE enrichment). The temporal progression and functional enrichment are internally consistent and supported by appropriate statistical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Oct4-bound transcribed enhancers are characterized by high eRNA synthesis, active histone marks, and enrichment of pluripotency factors. 2221 eRNAs overlapped with 2231 Oct4-bound sites, with 90% marked by H3K4me1. These enhancers showed higher H3K27ac, H3K4me3, chromatin accessibility, and occupancy of Oct4, Sox2, Nanog, Klf4, and Esrrb compared to nontranscribed enhancers. Half of Oct4-bound sites within SEs produced eRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 are well-supported by integrative analysis of TT-seq, ATAC-seq, and multiple ChIP-seq datasets (Figure 3). The characterization uses appropriate overlap analysis, metagene plots, and statistical comparisons (Wilcoxon rank sum test p<2.2e-16). The multi-omics approach provides strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C73"
+    ],
+    "result": "Oct4 is required for eRNA synthesis at approximately one-third of Oct4-bound transcribed enhancers. 782 Oct4-regulated eRNAs were significantly downregulated after 15 hr of DOX treatment, with synthesis decreasing as early as 3 hr. SE eRNAs were more strongly downregulated compared to TE eRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 are supported by DESeq2 differential expression analysis of eRNAs (Figure 4A-D) with appropriate statistical thresholds (adjusted p<0.01). The temporal kinetics (Figure 4B) and SE vs TE comparison (Figure 4C-D) are consistent with Oct4 ChIP-seq occupancy data (Figure 4E-F). The proportion calculation (782/2221 \u2248 1/3) is mathematically correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Oct4 activates both enhancer transcription and mRNA synthesis from target genes. About half of SE-nearest genes (62 enhancer-gene pairs) showed downregulated mRNA synthesis when their associated SEs were transcriptionally downregulated, with mRNA synthesis decreasing after 3 hr of DOX treatment. Oct4 occupancy and eRNA synthesis changes at SEs correlate with target gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by paired analysis of SE-gene relationships (Figure 4G-I, Figure 4\u2014figure supplement 3A). The temporal coordination between Oct4 occupancy, eRNA synthesis, and mRNA synthesis is demonstrated. However, only ~50% of SE-nearest genes show coordinated downregulation, suggesting either incorrect gene assignment or additional regulatory complexity not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Chromatin accessibility changes are delayed relative to Oct4 binding loss and transcriptional changes. Chromatin accessibility remained largely unchanged at 3 hr of DOX treatment despite decreased Oct4 binding and eRNA synthesis. Significant changes in chromatin accessibility started after 6 hr, with 726 enhancers showing decreased accessibility after 15 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C78-C83 are strongly supported by temporal comparison of ATAC-seq (Figure 5A-B), TT-seq (Figure 4B), and ChIP-seq (Figure 4E) data. The delayed chromatin accessibility changes relative to transcriptional changes are consistently demonstrated across multiple enhancer-gene pairs (Figure 4G-I). PCA analysis (Figure 5\u2014figure supplement 1A) confirms the temporal progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Oct4-bound transcribed enhancers can be classified into Oct4-sensitive and Oct4-insensitive based on chromatin accessibility changes. At Oct4-sensitive enhancers, eRNA synthesis decrease precedes chromatin accessibility loss. At Oct4-insensitive enhancers, eRNA synthesis decreases without chromatin accessibility changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by classification analysis and temporal profiling (Figure 5C-E). The differential behavior of the two enhancer classes is demonstrated with appropriate boxplots showing Oct4 occupancy, eRNA synthesis, and chromatin accessibility. The classification is based on objective criteria (presence/absence of chromatin accessibility changes) and is illustrated with specific genomic examples (Figure 5F-G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Oct4-sensitive enhancers are distinguished by higher Oct4 occupancy (~1.5-fold enrichment), higher H3K27ac levels, and strong enrichment for SoxOct composite motifs. These enhancers are enriched for stem cell population maintenance functions, while Oct4-insensitive enhancers are enriched for neural differentiation and development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are well-supported by metagene analysis (Figure 6A, Figure 6\u2014figure supplement 1B), motif analysis (Figure 6B), and GO enrichment analysis (Figure 6\u2014figure supplement 1C-D). The ~1.5-fold enrichment is quantitatively shown, and the SoxOct motif enrichment specifically at Oct4-sensitive enhancers provides mechanistic insight. The functional enrichment differences are statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Sox2 binding dynamics differ between Oct4-sensitive and Oct4-insensitive enhancers during Oct4 depletion. At Oct4-sensitive enhancers, Sox2 remained bound from 0-6 hr and decreased after 9 hr. At Oct4-insensitive, -independent, and -unbound enhancers, Sox2 occupancy was stable throughout the time course. Sox2 binding and chromatin accessibility change with similar kinetics at Oct4-bound enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by Sox2 ChIP-seq time course data (Figure 6C-D, Figure 6\u2014figure supplement 2A-E, Figure 6\u2014figure supplement 3). The temporal coordination between Sox2 binding and chromatin accessibility is demonstrated. The use of consensus peaks from biological replicates strengthens the analysis. Analysis of published 24 hr data (King and Klose, 2017) provides independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C123"
+    ],
+    "result": "Partial recovery of Oct4 rapidly increases chromatin accessibility but does not fully restore enhancer transcription. After 15 hr DOX treatment, most ESCs could regain pluripotency. During recovery, chromatin accessibility at Oct4-sensitive enhancers increased strongly after 4.5 hr (when Oct4 was only ~9%) and was mostly completed by 9 hr, while eRNA synthesis showed only weak upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C108-C115, C123 are supported by recovery experiments with ATAC-seq and TT-seq (Figure 8A-G). The temporal dissociation between chromatin accessibility recovery and eRNA synthesis recovery is clearly demonstrated. AP staining (Figure 8B) validates functional pluripotency recovery. The quantification of Oct4 protein levels during recovery (Figure 8A) provides critical context for interpreting the low-concentration effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C106",
+      "C107",
+      "C125",
+      "C126",
+      "C128"
+    ],
+    "result": "Oct4 has differential concentration-dependent activities: normal ESC levels are required for enhancer transcription, while low levels are sufficient for chromatin accessibility. During depletion, enhancer and gene transcription were sensitive to small Oct4 reductions, while chromatin accessibility was affected later. During partial recovery, chromatin accessibility restored rapidly at low Oct4 levels, but eRNA synthesis could not be fully reactivated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C106-C107, C125-C126, C128 represent the main conclusion and are well-supported by the totality of depletion and recovery experiments. The differential sensitivity is demonstrated by temporal dissociation in both directions (depletion and recovery). The concentration-dependence is supported by quantitative western blot data showing Oct4 levels at each timepoint. This is the central mechanistic insight of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Low levels of Oct4 may cooperate with Sox2 to temporarily retain enhancers accessible, and Oct4 may inhibit Sox2 binding at normal levels in ESCs. Sox2 remained bound at Oct4-sensitive enhancers during the first 6 hr when Oct4 levels were reduced but not depleted, and Sox2 binding increased slightly at 3 hr of DOX treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 are inferred from Sox2 ChIP-seq data (Figure 6C-D, C41) and supported by citation to Biddle et al., 2019. However, the mechanistic interpretation is speculative. The slight increase in Sox2 binding at 3 hr could have alternative explanations (e.g., technical variation, indirect effects). Direct evidence for Oct4-Sox2 cooperation at low Oct4 concentrations or Oct4 inhibition of Sox2 binding is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C118"
+    ],
+    "result": "Klf transcription factors are enriched at later stages of Oct4 recovery. TF footprinting analysis detected significant enrichment for Klf footprints after 9 hr of Oct4 recovery, suggesting Oct4 creates an open chromatin environment to prepare for Klf TF binding to support pluripotency network maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102, C118 are supported by TOBIAS footprinting analysis (Figure 8\u2014figure supplement 1I). The temporal progression from SoxOct/Oct footprints (4.5 hr) to Klf footprints (9 hr) is demonstrated. However, the mechanistic interpretation about Oct4 'preparing' for Klf binding is somewhat speculative and would benefit from additional validation (e.g., Klf ChIP-seq during recovery).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "TF footprinting analysis confirms that chromatin accessibility changes are driven by Oct4 and Sox2 binding. At 15 hr DOX treatment, SoxOct and Oct footprints were most significantly depleted. After 4.5 hr of recovery, SoxOct and Oct footprints were most significantly enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by TOBIAS footprinting analysis (Figure 8\u2014figure supplement 1G-H). The footprinting provides orthogonal validation of the ChIP-seq results and confirms that the ATAC-seq signal changes reflect actual TF binding changes rather than other chromatin alterations. The consistency with motif analysis (Figure 6B) strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "During Oct4 recovery, previously downregulated genes showed increased mRNA synthesis while previously upregulated genes decreased only slightly. For most SE-controlled downregulated genes, mRNA synthesis increased, accompanied by increased chromatin accessibility and eRNA synthesis at paired enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 are supported by TT-seq and ATAC-seq analysis during recovery (Figure 8E-G). The coordinated recovery of chromatin accessibility, eRNA synthesis, and mRNA synthesis at SE-gene pairs demonstrates functional restoration of the regulatory circuitry. However, the incomplete recovery of eRNA synthesis despite chromatin accessibility restoration is notable and consistent with the concentration-dependent model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C41"
+    ],
+    "result": "Oct4, Sox2, and Nanog show distinct temporal dynamics during Oct4 depletion. Oct4 protein was reduced after 6 hr and substantially decreased after 9 hr, with complete depletion at 24 hr. Sox2 and Nanog protein levels remained mostly unchanged before eventually decreasing. In chromatin fractions, Sox2 binding decreased after 9 hr while Nanog binding remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C38-C39, C41 are supported by western blot analysis of whole cell lysate and chromatin fractions (Figure 1A, Figure 1\u2014figure supplement 1A). The quantification is provided in the figure legend. The differential kinetics of the three pluripotency factors provide important context for interpreting the downstream effects. The stability of Nanog binding is particularly notable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The proportion of downregulated eRNAs was ~fivefold lower for Oct4-unbound transcribed enhancers compared to Oct4-bound transcribed enhancers, with changes observed later, likely representing secondary effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by comparison analysis (Figure 4\u2014figure supplement 2F). The fivefold difference and delayed kinetics provide evidence that the effects at Oct4-bound enhancers are direct while effects at Oct4-unbound enhancers are indirect. This control analysis strengthens the specificity of the Oct4-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Full depletion of Oct4 using an auxin-inducible degron system leads to rapid downregulation of key pluripotency factors, consistent with the results in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by citation to Bates et al., 2021 and comparison to Figure 2H. This cross-validation with an independent Oct4 depletion system strengthens confidence in the findings. The consistency despite different depletion methods (Tet-off vs auxin-degron) and different kinetics (gradual vs rapid) suggests the transcriptional effects are robust.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The ZHBTc4 cells used in this study were contaminated with mycoplasma (~0.3% of reads), but exhibited normal growth patterns and morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by analysis of TT-seq data using OpenContami and immunofluorescence images (Figure 1\u2014figure supplement 1A). The authors appropriately disclose this contamination. While mycoplasma contamination is a concern, the low level (~0.3%), normal cell morphology, and consistency with published results using uncontaminated cells (Friman et al., 2019; King and Klose, 2017; Bates et al., 2021) suggest the conclusions are likely valid. However, this remains a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C127",
+      "C129"
+    ],
+    "result": "Background claims about Oct4 function, enhancer biology, and prior studies on Oct4 depletion and chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C33, C127, C129 are background/literature claims supported by appropriate citations. These establish the context for the current study. The citations appear accurate and relevant. These claims are not novel findings of this study but provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Early upregulated genes showed enrichment for carbohydrate metabolic processes, and late upregulated genes were enriched for in utero embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by GO analysis (Figure 2\u2014figure supplement 1H-I). These findings are consistent with ESC differentiation toward trophectoderm upon Oct4 loss. However, these upregulated genes are less central to the main conclusions about Oct4's role in maintaining pluripotency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Loss of Oct4 from enhancers goes along with a decrease in mRNA synthesis from Oct4 target genes crucial for maintaining pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is a summary statement supported by the coordinated analysis of ChIP-seq and TT-seq data throughout the manuscript. This represents a key finding but is essentially a restatement of results already captured in other result groups (particularly the result about Oct4 activating enhancer and gene transcription).",
+    "result_type": "MAJOR"
+  }
+]

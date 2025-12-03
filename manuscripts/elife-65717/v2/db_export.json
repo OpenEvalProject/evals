@@ -1,0 +1,1645 @@
+{
+  "submission": {
+    "id": "1c4a5a48-3b06-4f72-ab7f-701548e7b1d8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:41:04.841933Z",
+    "updated_at": "2025-12-03T02:41:04.841933Z"
+  },
+  "content": [
+    {
+      "id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "submission_id": "1c4a5a48-3b06-4f72-ab7f-701548e7b1d8",
+      "content_type": "manuscript",
+      "content_text": "# Latrophilin GPCR signaling mediates synapse formation\n\n## Authors\n\n- Richard Sando<sup>1</sup> ([ORCID: 0000-0002-1797-2346](https://orcid.org/0000-0002-1797-2346)) \u2020\n- Thomas C S\u00fcdhof<sup>1</sup> ([ORCID: 0000-0003-3361-9275](https://orcid.org/0000-0003-3361-9275))\n\n### Affiliations\n\n1. Department of Molecular & Cellular Physiology and Howard Hughes Medical Institute, Stanford University School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeural circuit assembly in the brain requires precise establishment of synaptic connections, but the mechanisms of synapse assembly remain incompletely understood. Latrophilins are postsynaptic adhesion-GPCRs that engage in trans-synaptic complexes with presynaptic teneurins and FLRTs. In mouse CA1-region neurons, Latrophilin-2 and Latrophilin-3 are essential for formation of entorhinal-cortex-derived and Schaffer-collateral-derived synapses, respectively. However, it is unknown whether latrophilins function as GPCRs in synapse formation. Here, we show that Latrophilin-2 and Latrophilin-3 exhibit constitutive GPCR activity that increases cAMP levels, which was blocked by a mutation interfering with G-protein and arrestin interactions of GPCRs. The same mutation impaired the ability of Latrophilin-2 and Latrophilin-3 to rescue the synapse-loss phenotype in Latrophilin-2 and Latrophilin-3 knockout neurons in vivo. Our results suggest that Latrophilin-2 and Latrophilin-3 require GPCR signaling in synapse formation, indicating that latrophilins promote synapse formation in the hippocampus by activating a classical GPCR-signaling pathway.\n\n## Introduction\n\nAlthough many proteins that shape synaptic functions have been identified, little is known about how synapses are generated. Few proteins are known to be essential for synapse formation in vertebrates or invertebrates. Increasing evidence supports the notion that bi-directional trans-synaptic signaling by adhesion molecules promotes synapse formation (Sanes and Yamagata, 2009; Nusser, 2018; Ribic and Biederer, 2019; Ara\u00e7 and Li, 2019; Lie et al., 2018;\u00a0Chubykin et al., 2007; de Wit and Ghosh, 2016; S\u00fcdhof, 2018). However, nearly all the candidate synaptic adhesion molecules that have been tested by rigorous genetic approaches are not required for synapse formation per se. Instead, some of these candidate synaptic adhesion molecules, such as SYG1 in Caenorhabditis elegans (Shen et al., 2004) or cadherins in the retina (Duan et al., 2018), direct neuronal processes to the correct position of future synapses. Other candidate synaptic adhesion molecules, such as neurexins and their ligands (reviewed in S\u00fcdhof, 2018) or the SALM/Lrfn family (reviewed in Lie et al., 2018), specify the properties of synapses\u00a0(Missler et al., 2003; Nair et al., 2013; Varoqueaux et al., 2006). A case in point are cerebellins, which connect presynaptic neurexins to postsynaptic GluD and DCC/neogenin adhesion molecules. Although deletion of cerebellin-1 or GluD2 causes robust parallel-fiber synapse loss in the cerebellum, synapses are only eliminated secondarily after they were established. Moreover, only a fraction of parallel-fiber synapses is lost, whereas all parallel-fiber synapses exhibit altered synaptic plasticity (reviewed in Yuzaki, 2018). In other parts of the brain, cerebellin-1 and \u22122 deletions also do not hinder initial synapse formation, but impair synapse function and also lead to secondary synapse elimination (Rong et al., 2012; Seigneur and S\u00fcdhof, 2018; Seigneur et al., 2018). Only few adhesion molecules appear to be actually required for the initial establishment of synapses. Among these molecules are two families of adhesion-GPCRs, latrophilins and BAIs, that are essential for establishing synapses in all brain regions in which they have been tested (Kakegawa et al., 2015; Sigoillot et al., 2015; Anderson et al., 2017; Sando et al., 2019; Wang et al., 2020). Studying the mechanism of action of these adhesion-GPCRs offers an avenue for understanding the basic processes underlying initial synapse formation.\n\nAdhesion-GPCRs characteristically contain large extracellular sequences with multiple potential ligand-binding domains and a canonical GAIN domain that is coupled to the seven-transmembrane region module characteristic of GPCRs (reviewed in Vizurraga et al., 2020; Morgan et al., 2019; Folts et al., 2019; Purcell and Hall, 2018). Most adhesion-GPCRs additionally have a long cytoplasmic region. The three mammalian latrophilins (Lphn1-3) follow the same design principle as other adhesion-GPCRs. They feature N-terminal lectin- and olfactomedin-like ligand-binding domains, a serine-threonine rich and \u2018hormone binding\u2019 domain of unknown function, and a canonical GAIN domain (Figure 1A; Sugita et al., 1998). These domains are attached to a classical seven-transmembrane region GPCR module, followed by a long cytoplasmic region that interacts at the C-terminus with the PDZ-domain of SHANKs (Kreienkamp et al., 2000; Tobaben et al., 2000). The N-terminal lectin- and olfactomedin-like domains of latrophilins engage in transcellular interactions with multiple presynaptic ligands, including teneurins and FLRTs (Sugita et al., 1998; O'Sullivan et al., 2012; Silva et al., 2011; Boucard et al., 2014). Multiple latrophilin isoforms are generally co-expressed in the same neurons. CA1 pyramidal neurons of the hippocampus co-express Lphn2 and Lphn3 that are targeted to distinct dendritic domains of the same neuron and are essential for formation of different excitatory synaptic inputs (Anderson et al., 2017; Sando et al., 2019). Moreover, Lphn2 and Lphn3 are redundantly required in the cerebellum for parallel-fiber synapse formation (Zhang et al., 2020). The function of postsynaptic Lphn3 in hippocampal synapse formation requires intact binding sites for both presynaptic teneurins and FLRTs, indicating that latrophilins may mediate synapse specificity by acting as coincidence detectors that respond to two input signals (Sando et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain structures of wild-type and mutant Lphn2 and Lphn3. Mutants contain either only the extracellular Lphn3 domains attached to the membrane via a GPI-anchor (Lphn3-ECD), block G-protein coupling (Lphn2-T4L and Lphn3-T4L), or truncate the intracellular C-terminal tail of Lphn3 (Lphn3-\u0394Ct). (B) Wild-type and mutant Lphn2 and Lphn3 proteins are robustly expressed on the cell surface of HEK293 cells and efficiently mediate trans-cellular adhesion by binding to FLRT3 and Ten2 ligands (left, representative images of transcellular aggregation assays as indicated (Ctrl = empty plasmid); right, quantification of the aggregation efficiency for Lphn2 and Lphn3 constructs). (C and D) Wild-type and mutant Lphn2 (C) and Lphn3 proteins (D) are robustly expressed on the cell surface of hippocampal neurons (left, representative images of dendritic segments of surface-labeled cultured hippocampal neurons infected with lentiviruses expressing the indicated proteins); right, summary graphs of the surface levels of FLAG-tagged Lphn3 forms relative to MAP2 signal, as well as the FLAG puncta area. Numerical data are means \u00b1 SEM. Statistical significance was assessed by two-tailed t-test (For C, puncta area) or one-way ANOVA with post-hoc Tukey tests for multiple comparisons (For B, C and D) (*** denotes p<0.001; * denotes p<0.05). For additional images and control experiments, see Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Wild-type and mutant Lphn3 proteins used in rescue experiments are robustly expressed on the cell surface of transfected HEK293 cells and efficiently mediate trans-cellular adhesion by binding to FLRT3 and Ten2 ligands. Representative images show trans-cellular aggregation assays using the indicated Lphn3 proteins and either FLRT3 or Ten2 as ligands; for summary graph, see Figure 1B. (B) Cell fixation with 4% PFA/4% sucrose/PBS alone produced minor membrane permeability and exposure of intracellular antigens. Primary hippocampal cultures infected with lentiviral FLAG-WT Lphn3 or control cells were fixed with 4% PFA/4% sucrose/PBS for 20 min at 4\u00b0C and either un-permeabilized or treated with 0.2% Triton X-100/PBS for 5 min. Cells were subsequently labeled for FLAG together with the intracellular synaptic protein Homer1. Permeabilization exposed a substantial amount of Homer1 signal, thereby supporting that non-permeabilized conditions sample predominately surface protein.\n\nThe central role of latrophilins as postsynaptic adhesion-GPCRs in synapse formation raises the question whether latrophilins actually function as GPCRs in synapse formation. An intrinsic GPCR signaling activity was suggested for several adhesion-GPCRs, including latrophilins (Purcell and Hall, 2018; Nazarko et al., 2018; M\u00fcller et al., 2015; Ovando-Zambrano et al., 2019; Scholz et al., 2017; Ara\u00e7 et al., 2016;\u00a0Kishore et al., 2016; Liebscher et al., 2014; Vizurraga et al., 2020). However, few data exist for the physiological role of mammalian adhesion-GPCRs in general, and for their GPCR activity in particular. Whether latrophilins physiologically act as GPCRs remains unclear. Given the ubiquity of GPCRs in all cells, especially in neurons, and the relative non-specificity of GPCR signaling, a GPCR-signaling mechanism in synapse formation would be surprising and imply a tight spatial segregation of such signals in neurons\u00a0(Ellisdon and Halls, 2016; Patriarchi et al., 2018). Indeed, other potential mechanisms for the function of latrophilins in synapse formation are equally plausible, for example a pure adhesion mechanism. To address this question, we here examined the GPCR signaling functions of latrophilins in cultured neurons and in vivo, testing this question using multiple independent approaches for two different latrophilins to ensure validity. Our data show that latrophilin-dependent synapse formation requires their GPCR-signaling activity that may have been adapted to synapses as a unique intercellular junction by use of a high degree of spatial compartmentalization.\n\n## Results\n\n### Design and validation of Lphn2 and Lphn3 mutations\n\nTo examine whether latrophilins act as GPCRs in synapse formation, we generated three types of mutants (Figure 1A). The Lphn3-ECD mutant deletes all transmembrane regions and cytoplasmic sequences of Lphn3 and attaches its extracellular domains to the membrane using a GPI-anchor, thereby preserving only the Lphn3 adhesion function and deleting all of its potential signaling capacity\u00a0(Gokce and S\u00fcdhof, 2013). The Lphn2-T4L and Lphn3-T4L mutants contain an insertion of a T4 lysozyme (T4L) sequence into the 3rd intracellular loop of Lphn2 or Lphn3, which abolishes G-protein coupling and impairs arrestin signaling to these GPCRs (Rosenbaum et al., 2007; Cherezov et al., 2007; Thorsen et al., 2014). The Lphn3-\u0394Ct mutant truncates most of the cytoplasmic C-terminal sequences, thereby ablating cytoplasmic interactions (Figure 1A). Of these three types of mutants, the Lphn3-ECD mutant asks whether Lphn3 might simply act as an adhesion molecule, the Lphn2-T4L and Lphn3-T4L mutants test whether GPCR-signaling is involved in latrophilin function, and the Lphn3-\u0394Ct mutant examines the possible role of binding partners for the cytoplasmic tail, such as Shanks (Kreienkamp et al., 2000; Tobaben et al., 2000). All wild-type (WT) and mutant Lphn2 and Lphn3 proteins were encoded with an N-terminal FLAG epitope tag to enable their detection on the cell surface (Figure 1A).\n\nWe first investigated whether the Lphn2 and Lphn3 mutants are transported properly to the cell surface of transfected HEK293 cells, and whether they are competent to engage in the normal trans-cellular adhesion interactions of Lphn2 and Lphn3 with FLRTs and teneurins. To test this question, we measured the ability of the mutants to support cell-aggregation mediated by these interactions. We generated two populations of HEK293 cells that co-expressed either FLRT3 or teneurin-2 (Ten2) with EGFP, or WT or mutant Lphn2 or Lphn3 with tdTomato, using transfections with empty plasmid DNA as a control. We then mixed the two cell populations of HEK293 cells and measured cell aggregation (Boucard et al., 2014). The mutations had no effect on the surface transport of Lphn2 or Lphn3, nor did they impair the ability of Lphn2 or Lphn3 to form trans-cellular adhesion complexes with FLRT3 or Ten2, suggesting that the mutant latrophilins are folded and functional in protein-protein interactions (Figure 1B; Figure 1\u2014figure supplement 1).\n\nWe next expressed the WT and mutant Lphn2 and Lphn3 proteins in cultured hippocampal neurons by lentiviral delivery. Using immunocytochemistry for the surface FLAG-epitope present in all latrophilin proteins and for the dendritic marker MAP2, we visualized the surface transport and subcellular localization of WT and mutant Lphn2 and Lphn3 proteins in the neurons (Figure 1C and D). All Lphn2 and Lphn3 proteins were localized to the cell surface of neurons, with no apparent difference in localization between WT and mutant proteins. Quantifications documented that all mutant proteins were as well expressed on the surface as WT proteins (Figure 1C and D). Only the levels of the GPI-anchored Lphn3-ECD protein were slightly lower on the cell surface than those of the other proteins (Figure 1C and D). We performed an additional control experiment to test if the fixation procedure used permeabilizes cells in the absence of detergent. Primary hippocampal cultures were infected with lentiviral FLAG-Lphn3 WT vs. uninfected controls at 3DIV and labeled for FLAG together with the intracellular excitatory postsynaptic scaffold protein Homer1 at 12DIV. All conditions were subjected to the same fixation procedure utilized in our cell-surface labeling experiments (4% PFA/4% sucrose/PBS for 20 min at 4\u00b0C) followed by either permeabilization with 0.2% Triton X-100/PBS for 5 min or non-permeabilization. Permeabilization with 0.2% Triton X-100/PBS exposed robust Homer1 signal, suggesting that our fixation procedure alone generates minor membrane permeability (Figure 1\u2014figure supplement 1B). This control supports that our assay is sampling predominately surface FLAG-tagged protein in non-permeabilized conditions (Figure 1\u2014figure supplement 1B). Viewed together, these results show that the various Lphn2 and Lphn3 mutations do not impair their surface transport and extracellular ligand interactions.\n\n### Lphn2 and Lphn3 are constitutively active GPCRs whose signaling is blocked by the T4L mutation\n\nTo test whether latrophilins exhibit GPCR activity and how such activity is altered by the Lphn2 and Lphn3 T4L mutations, we examined whether latrophilins alter cellular cAMP levels. We co-transfected HEK293T cells with the fluorescent cAMP indicator (\u2018pink Flamindo\u2019; Harada et al., 2017), EGFP as an internal fluorescence standard, G\u03b1s (a G-protein) together with G\u03b21\u03b32, and various WT and mutant Lphn2 and Lphn3 constructs. In addition, we co-transfected subsets of cells with the high affinity cAMP-specific phosphodiesterase PDE7b as a negative control (Hetman et al., 2000). Overexpressed PDE7b should eliminate all cytoplasmic cAMP, enabling us to estimate the background fluorescence signal. Imaging revealed that without latrophilins, PDE7b had no effect on pink Flamindo fluorescence, suggesting that the observed signal represents background and that the basal levels of cAMP in HEK293T cells are undetectably low at these acquisition settings (Figure 2A; Figure 2\u2014figure supplement 1). Expression of WT Lphn2 and Lphn3 caused a constitutive elevation of pink Flamindo fluorescence. This fluorescence increase was blocked by PDE7b, demonstrating that the pink Flamindo signal is specific for cAMP and that Lphn2 and Lphn3 increase cAMP levels (Figure 2A). The T4L mutation completely abolished the specific pink Flamindo signal, suggesting that it blocks the GPCR activity of Lphn2 and Lphn3 (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Expression of wild-type Lphn2 or Lphn3 in HEK293T cells together with G\u03b1s and G\u03b2\u03b3 constitutively induces cAMP accumulation. The T4L mutation and co-expression of the cAMP-specific phosphodiesterase PDE7b prevent cAMP increases by Lphn2 or Lphn3. The Pink Flamindo cAMP reporter (Odaka et al., 2014; Harada et al., 2017) was used to measure cAMP levels in live cells, and was quantified relative to the GFP signal as an internal standard. (B) Design of a new phospho-PKA indicator to measure PKA activation (top, plasmid design; bottom, sequences of the N-terminal PKA phospho-peptide substrate (blue) that was fused to the N-terminus of tdTomato (red) via a glycine-rich linker (green)). (C) Characterization of the phospho-PKA indicator in HEK293T cells. Treatment of cells with 100 \u00b5M Forskolin (FSK)/100 \u00b5M IBMX induces rapid phosphorylation of the phospho-PKA substrate (left, representative images; right, quantification of the immunocytochemical phospho-PKA signal relative to the tdTomato signal as an internal standard as a function of FSK/IBMX). (D) Lphn2 and Lphn3 constitutively activate PKA signaling in a manner blocked by the T4L-mutation. Experiments were performed as in A, but with the PKA-indicator described in B and C (left, representative images; right, summary graph). Numerical data are means \u00b1 SEM (number of analyzed ROIs/experiments in bars). Statistical significance was assessed by one-way ANOVA with post-hoc Tukey tests for multiple comparisons (For A, C and D) (*** denotes p<0.001; ** denotes p<0.01; * denotes p<0.05). For more representative images, see Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Further representative images for the green GFP used as an internal control and the red pink Flamindo signal during the cAMP measurements shown in Figure 2A. (B) Further representative images for the green phospho-peptide and the red tdTomato signal used as an internal control during the PKA measurements shown in Figure 2D.\n\nA potential problem of the cAMP measurements with pink Flamindo is the rather high background signal of pink Flamindo that is cAMP-independent (Figure 2A). To further ensure specificity of the measurements, we designed an indicator construct for measuring the activity of cAMP-dependent protein kinase A (PKA). In this construct, a PKA-phosphorylation sequence for which a phospho-specific-antibody is available is fused N-terminally to tdTomato, which functions as an internal fluorescent control (Figure 2B). Immunocytochemical analysis of the PKA-indicator protein in HEK293T cells as a function of stimulation with forskolin and IBMX revealed a strong cAMP-dependent signal with a much better signal-to-noise ratio than the fluorescent pink Flamindo indicator (Figure 2C).\n\nWe then used the newly constructed PKA-indicator to examine the effect of WT and mutant Lphn2 and Lphn3 proteins on PKA activity. Co-expression of the PKA indicator with G\u03b1s and various Lphn2 and Lphn3 proteins, without or with PDE7b, confirmed that Lphn2 and Lphn3 both activate cAMP signaling (Figure 2D). The Lphn2- and Lphn3-induced PKA-indicator signal was greatly attenuated by PDE7b, confirming that it is due to cAMP. The T4L-mutations of Lphn2 and Lphn3 similarly suppressed the PKA-indicator signal induced by Lphn2 or Lphn3, and PDE7b had no additional effect (Figure 2D). Together, these data suggest that Lphn2 and Lphn3 stimulate cAMP production in cells in a manner dependent on a GPCR transduction mechanism.\n\n### Lphn3 function in cultured hippocampal neurons requires both its GPCR activity and its cytoplasmic sequence\n\nWe infected hippocampal neurons cultured from Lphn3 conditional KO mice with lentiviruses encoding \u0394Cre (control) or Cre, without or with addition of Lphn3 rescue constructs. We measured synapse density by immunolabeling the neurons for vGluT1 and PSD-95, which are pre- and postsynaptic markers of excitatory synapses, respectively (Figure 3A). As shown previously (Sando et al., 2019), the Lphn3 deletion robustly decreased (~40%) the excitatory synapse density in cultured hippocampal neurons. This decrease was fully rescued by WT Lphn3 but not by any of the three Lphn3 mutants (Lphn3-ECD, Lphn3-T4L, and Lphn3-\u0394Ct) (Figure 3A). This result suggests that Lphn3 functions as a GPCR in synapse formation and that this function depends additionally on the cytoplasmic sequences of Lphn3.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Mutations of Lphn3 that delete its transmembrane regions (Lphn3-ECD), block GPCR signal transduction (Lphn3-T4L), or delete its cytoplasmic tail (Lphn3-\u0394Ct) abolish the ability of Lphn3 to rescue the decreased excitatory synapse density of Lphn3-deficient neurons despite engaging in surface-ligand interactions. Hippocampal neurons cultured from Lphn3 cKO mice were infected at DIV3 with lentiviruses encoding \u0394Cre (control) or Cre without or with co-expression of the indicated Lphn3 rescue proteins, and were analyzed at DIV14-16. (B\u2013D) The same mutations as analyzed in A also abolish the ability of Lphn3 to rescue the decreased mEPSC frequency of Lphn3-deficient cultured hippocampal neurons. Data are means \u00b1 SEM (numbers of analyzed cells/experiments are indicated in bars). Statistical significance was assessed by one-way ANOVA with post hoc Tukey tests for multiple comparisons (For A, C and D) (** denotes p<0.01; * denotes p<0.05). See Figure 3\u2014figure supplement 1 for additional expression controls and image data.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A and B) Immunoblotting for indicated FLAG-tagged Lphn2 (A) and Lphn3 proteins (B) in primary hippocampal cultures. \u03b2-Actin was used as a loading control. Wild-type and mutant Lphn2 and Lphn3 proteins used in rescue experiments are expressed at the expected molecular weight. (C) Representative high-magnification images of synapse morphology from Lphn3 rescue experiments shown in Figure 3.\n\nTo confirm this conclusion, we performed whole-cell patch-clamp recordings of mEPSCs (Figure 3B). The Lphn3 deletion caused a\u00a0~40% decrease in mEPSC frequency, which corroborates the decrease in synapse density, but had only minor effects on the mEPSC amplitude (Figure 3C and D). Again, this phenotype was fully rescued by WT Lphn3 but not by the three Lphn3 mutants tested, which were inactive even though they were fully transported to the surface of dendritic spines (Figures 1, 3C and D). These results suggest that Lphn3 functions as a GPCR in synapse formation in cultured neurons, and that this function additionally requires their long cytoplasmic tail region.\n\n### Lphn2 and Lphn3 function as GPCRs in the hippocampus in vivo\n\nDo Lphn3 \u2013\u00a0and by extension, Lphn2\u00a0\u2013 function as GPCRs in vivo? To address this question, we sparsely infected pyramidal neurons in the CA1 region of the hippocampus of newborn Lphn2 or Lphn3 conditional KO mice with lentiviruses encoding Cre, without or with co-expression of WT or G-protein-binding deficient Lphn2 (Lphn2-T4L) or Lphn3 (Lphn3-T4L). Three weeks later, we measured synaptic connectivity via Schaffer-collateral and entorhinal inputs in infected CA1 pyramidal neurons using whole-cell patch-clamp recordings in acute slices (Figures 4 and 5). We monitored AMPA-receptor-mediated synaptic responses in input-output curves to control for differences in stimulus strength, using a dual stimulation approach that enables separate measurements of Schaffer collateral- and entorhinal cortex-derived synapses (Anderson et al., 2017; Sando et al., 2019). As a control, we measured uninfected neurons in acute slices from the contralateral side of the same mice.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig4-v2.jpg)\n\n**Figure 4.:** Data are from patch-clamp whole-cell recordings in acute hippocampal slice from Lphn2 conditional KO mice at P21-25. The CA1 region of the mice was injected at P0 with low titers of lentiviruses expressing either Cre alone, or Cre together with the indicated rescue constructs to induce sparse infection of CA1 pyramidal neurons (Sando et al., 2019). Control recordings were from uninfected cells in slices in the opposite uninfected hemisphere. (A\u2013C) Sparse conditional KO of Lphn2 in CA1-region neurons has no effect on the synaptic responses mediated by Schaffer-collateral inputs, and overexpression of wild-type or T4L-mutant Lphn2 does not alter these responses (A, sample traces; B, input-output curves; C, summary graph of the slopes of the input-output curves). (D\u2013F) Sparse conditional KO of Lphn2 in CA1-region neurons impairs synaptic responses mediated by entorhinal cortex inputs in a manner that can be rescued by wild-type but not T4L-mutant Lphn2 (D, sample traces; E, input-output curves; F, summary graph of the slopes of the input-output curves). Data are means \u00b1\u00a0SEM (numbers of cells/mice are indicated in bars). Statistical significance was assessed by one-way (For C and F) or two-way ANOVA with post hoc Tukey tests for multiple comparisons (For B and E) (**** denotes p<0.0001; * denotes p<0.05). See Figure 4\u2014figure supplement 1 for cellular capacitance and membrane resistance measurements.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Diagrams of the lentiviral shuttle plasmids used for in vivo rescue experiments. (B) Capacitance (left) and input resistance measurements (right) of neurons analyzed in acute slices for the Lphn2 in vivo rescue experiments shown in Figure 4. (C) Same as B, except that the data are from neurons analyzed in the Lphn3 in vivo rescue experiments shown in Figure 5. Data are means \u00b1\u00a0SEM (numbers of cells/mice are indicated in bars). Statistical significance was assessed by one-way ANOVA with post hoc Tukey tests for multiple comparisons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig5-v2.jpg)\n\n**Figure 5.:** Data are from patch-clamp whole-cell recordings in acute hippocampal slice from Lphn3 conditional KO mice at P21-25. The CA1 region of the mice was injected at P0 with low titers of lentiviruses expressing either Cre alone, or Cre together with the indicated rescue constructs to induce sparse infection of CA1 pyramidal neurons (Sando et al., 2019). Control recordings were from uninfected cells in slices in the opposite uninfected hemisphere. (A\u2013C) Sparse conditional KO of Lphn3 in CA1-region neurons impairs synaptic responses mediated by Schaffer-collateral inputs in a manner that can be rescued by wild-type but not T4L-mutant Lphn3 (A, sample traces; B, input-output curves; C, summary graph of the slopes of the input-output curves). (D\u2013F) Sparse conditional KO of Lphn3 in CA1-region neurons has no effect on the synaptic responses mediated by perforant pathway inputs, and overexpression of wild-type or T4L-mutant Lphn3 does not alter these responses (D, sample traces; E, input-output curves; F, summary graph of the slopes of the input-output curves). Data are means \u00b1\u00a0SEM (numbers of cells/mice are indicated in bars). Statistical significance was assessed by one-way (For C and F) or two-way ANOVA with post hoc Tukey tests for multiple comparisons (For B and E) (**** denotes p<0.0001; * denotes p<0.05). See Figure 4\u2014figure supplement 1 for cellular capacitance and membrane resistance measurements.\n\nThe Lphn2 deletion selectively impaired entorhinal cortical synaptic inputs but not Schaffer-collateral synaptic inputs, confirming previous conclusions (Anderson et al., 2017). This phenotype was rescued by WT but not by T4L-mutant Lphn2 that is unable to mediate GPCR signaling (Figure 4). The Lphn3 deletion, conversely, selectively impaired Schaffer collateral- but not entorhinal cortex-derived synaptic inputs, again confirming previous findings (Sando et al., 2019). This phenotype was also rescued by WT but not by T4L-mutant Lphn3 (Figure 5), confirming that GPCR signaling is essential for latrophilin function in synapse formation.\n\nThe fact that the input-output curves in the electrophysiological recordings (Figures 4 and 5) are superimposable in these experiments attests to the solidity of the findings and the validity of the approach for measuring synaptic connectivity. However, a decrease in synaptic strength might be due to other causes than a loss of synaptic connectivity. To independently test these results, we used retrograde tracing of synaptic connections with pseudo-rabies viruses (Callaway, 2008; Figure 6A). Quantitative retrograde monosynaptic rabies tracing allows in vivo analyses of synaptic connections formed by a specific postsynaptic neuron (Sando et al., 2019). We employed a sparse rabies virus tracing strategy to assess the abundance of synaptic inputs onto hippocampal CA1 neurons of Lphn3 cKO mice expressing Cre without or with co-expression of WT Lphn3 or T4L Lphn3. Postnatal day 0 (P0) WT or Lphn3 cKO mice were sparsely infected monolaterally with low titer (1 \u00d7 107 IU/mL) lentiviruses expressing Cre or Cre together with WT Lphn3 or T4L Lphn3. The same CA1 region was subsequently infected with Cre-inducible rabies complementing AAVs necessary for rabies infection (AAV2/5 CAG-FLEX-TCB-mCherry and AAV2/8 CAG-FLEX-RG) at P21. The same CA1 region was subsequently infected with pseudotyped rabies RbV-CVS-N2c-deltaG-GFP (EnvA) at P35. Mice were perfused 5 days after rabies infection to diminish the possibility of rabies toxicity, sectioned, and counter-stained with DAPI. Images of the CA1, ipsilateral/contralateral CA3 and ipsilateral entorhinal cortex were collected with a 20X objective and the ratio of infected cells/DAPI quantified. Again, the Lphn3 conditional KO impaired synaptic connectivity (Figure 6B and C). This phenotype of rescued by expression of WT Lphn3, but not by the T4L-mutant Lphn3 unable to mediate GPCR signaling (Figure 6B and C). Viewed together, these data indicate that latrophilins function as postsynaptic GPCRs that control input-specific excitatory synapse formation in the hippocampus via a GPCR-dependent mechanism.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65717/elife-65717-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0Schematic of the experimental approach. The CA1 region of the hippocampus of Lphn3 conditional KO or control mice was injected at P0 with lentiviruses encoding Cre without or with the indicated rescue constructs, at P21 with AAVs encoding Cre-dependent AAVs of rabies-complementing proteins, and at P35 with pseudotyped rabies virus. Mice were analyzed by imaging at P40. (B) Representative images of monosynaptic rabies-virus tracing experiments from the four conditions analyzed. (C) Synaptic connectivity quantifications for the indicated synaptic inputs to CA1 region pyramidal neurons starter cells in the hippocampal CA1 region. Rabies virus tracing demonstrates that the impairment of Schaffer-collateral synaptic connectivity induced by deletion of Lphn3 is rescued by wild-type Lphn3 but not by T4L-mutant Lphn3. Data are means \u00b1 SEM (numbers of mice are indicated in bars). Statistical significance was assessed by one-way ANOVA with post hoc Tukey tests for multiple comparisons (For C) (** denotes p<0.01; * denotes p<0.05).\n\n## Discussion\n\nHere, we demonstrate that Lphn2 and Lphn3 are constitutively active GPCRs that enhance cAMP levels when expressed in HEK293 cells, and that the GPCR activity of Lphn2 and Lphn3 is essential for their ability to promote synapse formation in vivo. In addition, we show that Lphn3 requires its cytoplasmic sequences for supporting synapse formation. Based on these findings, we propose that latrophilins act in synapse formation by transmitting a GPCR-mediated signal, possibly by elevating cAMP. This is a surprising finding given that GPCRs are present in many neuronal subcompartments where they mediate multifarious regulatory functions\u00a0(Patriarchi et al., 2018; Sanderson et al., 2018; Scott et al., 2013;\u00a0Torres-Quesada et al., 2017). Thus, the latrophilin GPCR signal most likely is translated into specific organizational activities during synapse formation in a context- dependent manner, either via interactions of latrophilins with postsynaptic proteins such as SHANKs that are mediated by their cytoplasmic sequences, or via parallel signals induced by other trans-synaptic adhesion complexes.\n\nThree lines of evidence support our conclusions. First, analysis of WT and mutant Lphn2 and Lphn3 in HEK293 cells demonstrated that WT Lphn2 and Lphn3 exhibit constitutively active GPCR activity that elevates cAMP levels, and that this activity is blocked by the T4L mutation, which is known to abolish GPCR signaling. Second, analysis of cultured neurons demonstrated that the Lphn2 and Lphn3 mutations do not impair surface transport of Lphn2 and Lphn3 or targeting to dendritic spines, but that the Lphn3 mutations abolish its ability to rescue the decrease in synapse formation induced by conditional KO of Lphn3. Lphn2 was not tested in these experiments because they are labor-intensive and it was more relevant to examine its function in vivo. Third, analysis of the in vivo activity of WT and mutant Lphn2 and Lphn3 using sparse postsynaptic deletions of these molecules in hippocampal CA1 neurons in conditional KO mice demonstrated that WT Lphn2 and Lphn3 restored only the loss of synaptic connectivity of their cognate synapses, but had no effect on those synapses for which these latrophilins normally are not required. More importantly, these experiments established that mutant Lphn2 and Lphn3 that is unable to mediate GPCR signaling is incompetent to rescue the conditional KO phenotype. Together, these lines of evidence show that Lphn2 and Lphn3 function in synapse formation as GPCRs.\n\nHowever, the present study has inherent limitations. Most importantly, our results do not identify the nature of the GPCR signal that is activated by latrophilins in synapse formation. Latrophilins have been reported to increase or decrease cAMP levels in cells in a constitutive manner (Nazarko et al., 2018; M\u00fcller et al., 2015; Ovando-Zambrano et al., 2019; Scholz et al., 2017). Our results support a function in increasing cAMP (Figure 2), but the physiological signaling activities of GPCRs are complex and what the precise type of signaling of latrophilins is in vivo may depend on the specific context. Although our results establish that latrophilins act as GPCRs in synapse formation, they do not reveal what type of GPCR signaling drives synapse formation. The notion that this signaling may consist of increases in cAMP is attractive since pharmacological blockage of cAMP signaling impairs induction of spine synapses by glutamate (Kwon and Sabatini, 2011), but no other evidence currently shows that cAMP signaling \u2013\u00a0or any other GPCR signaling\u00a0\u2013 mediates synapse formation. Thus, this question remains a challenge for future studies that will require new tools and approaches.\n\nMoreover, the role of the cytoplasmic sequences of latrophilins remains unclear. These long sequences contain multiple highly conserved regions, including a C-terminal PDZ-domain binding motif (Sugita et al., 1998). What the function of these sequences is remains uncharacterized, although it is tempting to speculate that these sequences confer context specificity to the general GPCR activity of latrophilins by binding to specific interacting partners. Such partners remain to be identified, although SHANKs are prime candidates since they are postsynaptic scaffolding proteins that bind to latrophilins (Kreienkamp et al., 2000; Tobaben et al., 2000).\n\nIn summary, we here establish that Lphn2 and Lphn3 function as GPCRs in synapse formation, suggesting the possibility that compartmentalization of a canonical signaling pathway widely used in biology and controlled by GPCRs may be instrumental in driving the assembly of synaptic connections into circuits and control their specificity.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Lphn2 cKO</td>\n      <td>PMID:28972101</td>\n      <td>JAX ID 023401</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>HA-Lphn3 cKO</td>\n      <td>PMID:30792275</td>\n      <td>JAX ID 026684</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>CD-1</td>\n      <td>Charles River Laboratory</td>\n      <td></td>\n      <td>Pure CD-1 background mice used to generate primary hippocampal cultures for surface expression experiments.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>CRL-11268</td>\n      <td>Mycoplasma testing was not performed since cells were maintained for a maximum of 10 passages.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293F</td>\n      <td>Thermo Fisher</td>\n      <td>R79007</td>\n      <td>Mycoplasma testing was not performed since cells were maintained for a maximum of 10 passages.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn NLS-GFP-\u0394cre</td>\n      <td>PMID:21241895</td>\n      <td></td>\n      <td>Also used in PMID:30792275</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn NLS-GFP-CRE</td>\n      <td>PMID:21241895</td>\n      <td></td>\n      <td>Also used in PMID:30792275</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV WT hLphn3</td>\n      <td>PMID:30792275, 26235030</td>\n      <td></td>\n      <td>N-terminal IgK signal peptide followed by FLAG</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV hFLRT3</td>\n      <td>PMID:30792275, 26235030</td>\n      <td></td>\n      <td>N-terminal preprotrypsin signal peptide followed by MYC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA hTen2</td>\n      <td>PMID:30792275, 26235030</td>\n      <td></td>\n      <td>C-terminal FLAG; extracellular HA prior to transmembrane region</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG WT rLphn2</td>\n      <td>PMID:28972101, 30792275</td>\n      <td></td>\n      <td>N-terminal preprotrypsin signal peptide followed by FLAG; intracellular mVenus</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV Lphn3-ECD</td>\n      <td>This paper</td>\n      <td></td>\n      <td>hLphn3 residues 20\u2013923 with an N-terminal NCAM1 signal peptide and a C-terminal NCAM1 GPI-anchoring sequence</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV Lphn3-\u0394Ct</td>\n      <td>This paper</td>\n      <td></td>\n      <td>hLphn3 with a stop codon at residue 1117, causing deletion of the C-terminal tail (amino acids 1117\u20131447)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV Lphn3-T4L</td>\n      <td>This paper</td>\n      <td></td>\n      <td>hLphn3 with T4 lysozyme peptide inserted at Ile1039 in intracellular loop 3</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG Lphn2-T4L</td>\n      <td>This paper</td>\n      <td></td>\n      <td>rLphn2 with T4 lysozyme peptide inserted at Gly1045 in intracellular loop 3</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn WT Lphn3</td>\n      <td>PMID:30792275</td>\n      <td></td>\n      <td>Lentiviral shuttle plasmid containing FLAG-tagged hLphn3</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn Lphn3-ECD</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentiviral shuttle plasmid containing Lphn3-ECD for rescue experiments in primary cultures</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn Lphn3-\u0394Ct</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentiviral shuttle plasmid containing Lphn3-\u0394Ct for rescue experiments in primary cultures</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn Lphn3-T4L</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentiviral shuttle plasmid containing Lphn3-T4L for rescue experiments in primary cultures</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn NLS-GFP-CRE p2a WT Lphn3</td>\n      <td>PMID:30792275</td>\n      <td></td>\n      <td>Lentiviral shuttle plasmid co-expressing NLS-GFP-Cre and WT hLphn3 for in vivo rescue experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn NLS-GFP-CRE p2a Lphn3-T4L</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentiviral shuttle plasmid co-expressing NLS-GFP-Cre and hLphn3-T4L for in vivo rescue experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn NLS-GFP-CRE p2a WT Lphn2</td>\n      <td>PMID:30792275</td>\n      <td></td>\n      <td>Lentiviral shuttle plasmid co-expressing NLS-GFP-Cre and WT rLphn2 for in vivo rescue experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral Syn NLS-GFP-CRE p2a Lphn2-T4L</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentiviral shuttle plasmid co-expressing NLS-GFP-Cre and rLphn2-T4L for in vivo rescue experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral EF1a phospho-PKA tdTomato</td>\n      <td>This paper</td>\n      <td></td>\n      <td>A PKA phosphopeptide substrate (MRKVSKGEGGRRVSN) was fused to the N-terminus of tdTomato separated by a linker (GGSGGGSGG) and was detected with the PKA phosphopeptide substrate antibody (sc-56941)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pink Flamindo cAMP reporter</td>\n      <td>PMID:28779099; Addgene</td>\n      <td>RRID:addgene_102356</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV CAG FLEX TVA-mCherry</td>\n      <td>PMID:26232228; Addgene</td>\n      <td>RRID:addgene_48332</td>\n      <td>Rabies complementing AAV shuttle plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV CAG FLEX rG</td>\n      <td>PMID:26232228; Addgene</td>\n      <td>RRID:addgene_48333</td>\n      <td>Rabies complementing AAV shuttle plasmid</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA mouse monoclonal</td>\n      <td>Covance</td>\n      <td>#MMS101R</td>\n      <td>1:500 IHC; 1:1,000 ICC; 1:2,000 IB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA rabbit monoclonal</td>\n      <td>Cell Signaling Technologies</td>\n      <td>#3724</td>\n      <td>1:2,000 ICC; 1:1,000 IHC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-FLAG mouse monclonal</td>\n      <td>Sigma</td>\n      <td>#F3165</td>\n      <td>1:2,000 IB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-beta Actin mouse monoclonal</td>\n      <td>Sigma</td>\n      <td>#A1978</td>\n      <td>1:10,000 IB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MAP2 chicken polyclonal</td>\n      <td>Encor</td>\n      <td>#CPCA MAP2</td>\n      <td>1:2,000 ICC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PSD95 mouse monoclonal</td>\n      <td>Synaptic Systems</td>\n      <td>#124011</td>\n      <td>1:2,000 ICC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-vGLUT1 guinea pig polyclonal</td>\n      <td>Millipore</td>\n      <td>#AB5905</td>\n      <td>1:2,000 ICC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Homer1 rabbit polyclonal</td>\n      <td>Synaptic Systems</td>\n      <td>#160003</td>\n      <td>1:2,000 ICC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PKA phosphopeptide substrate mouse monoclonal</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>#sc-56941</td>\n      <td>1:1,000 ICC</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Papain</td>\n      <td>Worthington</td>\n      <td>#LS003127</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Matrigel</td>\n      <td>Corning</td>\n      <td>#356235</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>B-27 supplement</td>\n      <td>Gibco</td>\n      <td>#17504044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cytosine arabinofuranoside</td>\n      <td>Sigma</td>\n      <td>#C6645</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>Roche</td>\n      <td>#10236276001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>QX-314</td>\n      <td>Tocris</td>\n      <td>#1014</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Picrotoxin</td>\n      <td>Tocris</td>\n      <td>#1128</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetrodotoxin</td>\n      <td>Tocris</td>\n      <td>#1069</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Freestyle MAX reagent</td>\n      <td>Life Technologies</td>\n      <td>#16447100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SnapGene</td>\n      <td>GSL Biotech</td>\n      <td></td>\n      <td>previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClamp10</td>\n      <td>Molecular Devices</td>\n      <td></td>\n      <td>previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clampfit10</td>\n      <td>Molecular Devices</td>\n      <td></td>\n      <td>previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NIS-Elements AR</td>\n      <td>Nikon</td>\n      <td></td>\n      <td>previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>National Institutes of Health</td>\n      <td></td>\n      <td>previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop</td>\n      <td>Adobe</td>\n      <td></td>\n      <td>previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator</td>\n      <td>Adobe</td>\n      <td></td>\n      <td>previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Graphpad Prism 8.0</td>\n      <td>Graphpad software</td>\n      <td></td>\n      <td>previously existing</td>\n    </tr>\n  </tbody>\n</table>\n\n*For antibody dilutions: IHC \u2013 immunohistochemistry; ICC \u2013 immunocytochemistry; IB \u2013 immunoblotting.\n\n### Mice\n\nHA-Lphn3 cKO and Lphn2 cKO mice were previously described12,13. Overexpression studies were conducted in primary hippocampal cultures from CD1 mice. Mice were weaned at 18\u201321 days of age and housed in groups of 2 to 5 on a 12 hr light/dark cycle with food and water ad libidum. Stanford Animal Housing Facility: All procedures conformed to National Institutes of Health Guidelines for the Care and Use of Laboratory Mice and were approved by the Stanford University Administrative Panel on Laboratory Animal Care.\n\n### Plasmids\n\nSchematic designs of all constructs utilized in this study are shown in Extended Data Figure 1. Lentiviruses expressing NLS-GFP-\u2206Cre or NLS-GFP-Cre driven by the synapsin-1 promoter were described previously\u00a0(Kaeser et al., 2011) and were used for all Lphn3 cKO experiments in cultured neurons or in in vivo manipulations. Lphn2 expression plasmids were based on rat Lphn2 lacking SSA, with an exogenous N-terminal signal peptide from preprotrypsin followed by a FLAG epitope (sequence: MSALLILALVGAAVADYKDDDDKLFSRAALPFGLVRRE\u2026; signal peptide bolded and FLAG epitope underlined), while the Lphn3 expression plasmids were based on human Lphn3 containing an insert in SSA, with an exogenous N-terminal signal peptide from IgKappa followed by a FLAG epitope (sequence: METDTLLLWVLLLWVPGSTGDAGAQDYKDDDDKFSRAPIPMAVVRRE\u2026).\n\nAll latrophilin expression experiments in HEK293T cells were conducted with pCMV5 or pcDNA3 vectors using the CMV or CAG promoter, and all experiments in neurons and in vivo with lentiviruses in which latrophilin expression was driven by the rat synapsin-1 promoter. For Lphn2 and Lphn3 rescue experiments, the following mutations and truncations were generated:\n\n### Lphn3-ECD\n\nEncodes the Lphn3 extracellular sequence (residues 20\u2013923) with an N-terminal NCAM1 signal peptide and the C-terminal NCAM1 GPI-anchoring sequence.\n\n### Lphn2-T4L and Lphn3-T4L\n\nEncodes Lphn2 or Lphn3 with an insertion of the T4 lysozyme sequence into the intracellular loop three at Gly1045 of Lphn2 or at Ile1039 of Lphn3 (T4 lysozyme sequence:\u00a0LENIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAY).\n\n### Lphn3-\u0394Ct\n\nEncodes Lphn3 with a stop codon at residue 1117, causing deletion of the C-terminal tail (amino acids 1117\u20131447). VRKEYGKCLR*\u00a0For phosphodiesterase PDE7b expression experiments, human PDE7b cDNA was used, with HEK293T cell expression mediated by pCMV5 or pcDNA3 vectors.\n\n### Phospho-PKA tdTomato reporter\n\nA PKA phosphopeptide substrate (MRKVSKGEGGRRVSN) was fused to the N-terminus of tdTomato, separated by a linker (GGSGGGSGG) and was detected via ICC with the PKA Phosphopeptide Substrate Antibody (Santa Cruz Biotechnology, BDI251, Cat# sc-56941; 1:1,000 ICC).\n\nPink Flamindo cAMP Reporter:\u00a0This plasmid was a gift from Tetsuya Kitaguchi (Addgene plasmid #102356).\n\nRabies complementing AAVs:\u00a0AAV CAG FLEX TVA-mCherry and AAV CAG FLEX RG were gifts from Liqun Luo (Addgene #48332 and #48333).\n\n### Cell lines\n\nHEK293T from ATCC (CRL-11268). HEK293F cells from ThermoFisher (R79007). Mycoplasma testing was not routinely performed since cells were only passaged for a maximum of 10 passages before utilizing a fresh aliquot from the supplier. Cells were passaged at 90% confluency (for HEK293T cells) or at 4 million cells/mL (for HEK293F cells) and counted using Trypan blue to assess viability. Unhealthy cultures (viability\u00a0<90%) were discarded and replaced with fresh aliquots of the respective cell lines.\n\n### Antibodies\n\nThe following antibodies were used at the indicated concentrations (IHC-immunohistochemistry; ICC-immunocytochemistry; IB-immunoblot): anti-HA mouse (Covance Cat# MMS101R; 1:1,000 ICC, 1:2,000 IB), anti-HA rabbit (Cell Signaling Technologies Cat# 3724; 1:2,000 ICC), anti-FLAG mouse (Sigma Cat#F3165; 1:2,000 IB), anti-\u03b2actin mouse (Sigma Cat#A1978; 1:10,000 IB), anti-Map2 chicken (Encor Cat# CPCA MAP2; 1:2,000 ICC), anti-PSD95 mouse (Synaptic Systems Cat# 124011; 1:2,000 ICC), anti-vGLUT1 guinea pig (Millipore Cat# AB5905; 1:2,000 ICC), anti-Homer1 rabbit (Synaptic Systems Cat#160003; 1:2,000 ICC); PKA Phosphopeptide Substrate Antibody (Santa Cruz Biotechnology, BDI251, Cat# sc-56941; 1:1,000 ICC), fluorescently-conjugated goat secondary antibodies from Life Technologies.\n\n### Cultured hippocampal neurons\n\nHippocampi were dissected from P0 Lphn3fl/fl or CD-1 mice, and cells were dissociated by papain (Worthington, Cat# LS003127) digestion for 20 min at 37\u00b0C, filtered through a 70 \u03bcm cell strainer (Falcon Cat# 352350), and plated on Matrigel (Corning Cat# 356235)-coated 0 thickness glass coverslips (Assistent Cat# 01105209) in 24-well plates. Plating media contained 5% fetal bovine serum (Atlanta), B27 (Gibco Cat# 17504044), 0.4% glucose (Sigma), 2 mM glutamine (Gibco Cat# 25030164), in 1x MEM (Gibco Cat# 51200038). Culture media was exchanged to Growth media 24 hr later (1 DIV), which contained 5% fetal bovine serum (Atlanta), B27 (Gibco), 2 mM glutamine (Gibco) in Neurobasal A (Gibco Cat# 10888022).Cytosine \u03b2-D-arabinofuranoside hydrochloride (Sigma Cat#C6645) was added at a final concentration of 4 \u03bcM on 3 DIV in a 50% growth media exchange, and neurons were analyzed 14\u201316 DIV.\n\n### Virus production\n\nFor production of lentiviruses, the lentiviral expression shuttle vector and three helper plasmids (pRSV-REV, pMDLg/pRRE and vesicular stomatitis virus G protein (VSVG)) were co-transfected into HEK293T cells (ATCC), at 5 \u03bcg of each plasmid per 25 cm2 culture area, respectively. Control conditions aside from GFP-\u2206Cre or GFP-infected controls were lentivirus produced with empty shuttle vector. Transfections were performed using the calcium-phosphate method. Media with viruses was collected at 48 hr after transfection, centrifuged at 5000 x g for 5 min to pellet cellular debris, filtered (0.45 \u03bcm pore size), and added directly to primary cultures for in vitro experiments. For in vivo injections, virus was produced at the Janelia Farm Virus Core Facility where infectious titer was determined, and equal numbers of viral particles were injected for each experiment.\n\n### Immunocytochemistry\n\nAll solutions were made fresh and filtered via a 0.2 \u03bcm filter prior to starting experiments. Cells were washed briefly 1 x with PBS, fixed with 4% PFA (Electron Microscopy Science Cat# 15714)/4% sucrose/PBS for 20 min at 4\u00b0C, washed 3 \u00d7 5 min in PBS, and permeabilized in 0.2% Triton x100/PBS for 5 min at room temperature. Cells were subsequently placed in blocking buffer (4% BSA (Sigma Cat# 10735086001)/3% goat serum(Sigma Cat# G9023)/PBS) 1 hr, incubated with diluted primary antibodies in blocking buffer overnight at 4\u00b0C, washed 3 \u00d7 5 min in PBS, incubated with diluted fluorescently-conjugated secondary antibodies in blocking buffer for 1 hr, counterstained with DAPI in PBS for 15 mins at room temperature (Sigma Cat# 10236276001), washed 3 x in PBS, and mounted on UltraClear microscope slides (Denville Scientific Cat# M1021) using Fluoromount-G (Southern Biotech Cat#0100\u201301). For surface labeling of FLAG-tagged Lphn constructs, cultures were immunolabeled for surface FLAG by staining without permeabilization, and subsequently permeabilized in 0.2% Triton X-100/PBS and immunolabeled for MAP2.\n\n### Immunoblotting\n\nSamples were collected in sample buffer containing 312.5 mM Tris-HCl pH 6.8, 10% SDS, 50% glycerol, 12.5% 2-mercaptoethanol, bromophenol blue, and protease inhibitors (Sigma Cat#5056489001) and run on SDS-PAGE gels (8% PAGE gels for FLAG-Lphn immunoblots and 12% PAGE gels \u03b2-actin immunoblots) at 30 mA/gel constant current. The Precision Plus Protein Dual Color Protein Standard (BioRad Cat# 1610374) was used as a protein molecular weight ladder. Protein was transferred onto nitrocellulose transfer membrane in transfer buffer (25.1 mM Tris, 192 mM glycine, 20% methanol) at 200 mA constant current for 2 hr at 4\u00b0C. Membranes were blocked in 5% non-fat dry milk/TBST (20 mM Tris-HCl pH 7.4, 150 mM NaCl, 0.05% Tween-20) for 1 hr at room temperature, incubated in primary antibodies diluted into 5% milk/TBST overnight at 4\u00b0C, washed 3 \u00d7 5 min in TBST, incubated in corresponding secondary antibodies (Licor IRDye 800CW donkey anti-mouse Cat#92632212; IRDye 800CW Donkey anti-rabbit Cat#92632213) diluted into TBST, washed 5 \u00d7 5 min in TBST, and imaged on a Licor Odyssey system.\n\n### Electrophysiology of cultured neurons\n\nFor whole-cell patch clamp physiology experiments, the patch pipettes were pulled from borosilicate glass capillary tubes (World Precision Instruments, Cat# TW150-4) using a PC-10 pipette puller (Narishige). The resistance of pipettes filled with intracellular solution varied between 2\u20134 MOhm. Synaptic currents were monitored with a Multiclamp 700B amplifier (Molecular Devices). The frequency, duration, and magnitude of the extracellular stimulation were controlled with a Model 2100 Isolated Pulse Stimulator (A-M Systems, Inc) synchronized with Clampex 10 data acquisition software (Molecular Devices). For excitatory voltage-clamp recordings, a whole-cell pipette solution was used containing (in mM) 135 Cs-Methanesulfonate, 8 CsCl, 10 HEPES, 0.25 EGTA, 0.3 Na2GTP, 2 MgATP, seven phosphocreatine, and 10 QX-314 (Tocris Cat#1014) (pH 7.3, adjusted with CsOH and 303 Osm). The external bath solution contained (in mM) 140 NaCl, 5 KCl, 2 CaCl2, 0.8 MgCl2, 10 HEPES, 10 glucose (pH 7.4, adjusted with NaOH). AMPAR- and NMDAR-EPSC postsynaptic currents were pharmacologically isolated by adding the GABAA receptor blocker picrotoxin (50 \u03bcM) (Tocris Cat#1128) to the extracellular bath solution. AMPAR-EPSCs and mEPSC recordings were performed while holding the cell at \u221270 mV, and NMDAR-EPSCs at +40 mV. Spontaneous miniature excitatory postsynaptic currents (mEPSCs) were monitored in the presence of tetrodotoxin (1 \u00b5M) (Tocris Cat#1069) to block action potentials, at \u221270 mV holding potential. Synaptic currents were sampled at 10 kHz and analyzed offline using Clampfit 10 (Molecular Devices) software. Miniature events were analyzed using the template matching search and a minimal threshold of 5 pA and each event was visually inspected for inclusion or rejection by an experimenter blind to the recording condition.\n\n### Slice electrophysiology\n\nFor acute slice electrophysiology, lentiviruses were injected into P0 mice, and infected CA1 pyramidal neurons were analyzed at P21-25. Transverse hippocampal slices (300 \u03bcm) were prepared by cutting in ice-cold solution containing (in mM): 228 Sucrose, 2.5 KCl, 1 NaH2PO4, 26 NaHCO3, 0.5 CaCl2, 7 MgSO4, 11 D-Glucose saturated with 95% O2/5% CO2. Slices were transferred to a holding chamber containing artificial cerebrospinal fluid (ACSF, in mM): 119 NaCl, 2.5 KCl, 1 NaH2PO4, 26 NaHCO3, 2.5 CaCl2, 1.3 MgSO4, 11 D-Glucose, \u223c290 mOsm. Slices recovered at 32\u00b0C for 30 min, followed by holding at room temperature for 1 hr. Acute slices were transferred to a recording chamber continuously superfused with oxygenated ACSF (1.5 ml/min) maintained at 32\u00b0C. Neurons were clamped at \u221270 mV, and two-pathways of extracellular-evoked EPSCs in hippocampal slices were monitored. AMPAR-EPSCs were evoked by electrical stimulation using tungsten electrodes (Matrix electrode, 2 \u00d7 1, FHC Cat# MX21AEW(RT2)) positioned at the S. radiatum 150 \u00b5m proximal to CA3, and the S. lacunosum-moleculare proximal to the molecular layer of the dentate gyrus.\n\n### Sparse lentiviral infections in vivo\n\nP0 Lphn2 fl/fl orLphn3 fl/fl pups were anesthetized on ice for 5 min and subsequently placed in a homemade clay mold. Lentivirus was loaded and injected with a glass pipette connected to an infusion pump (Harvard Apparatus) completely continuous with mineral oil. A stereotactic injection rig (Kopf) was used to target injections. Lentiviruses were diluted to a 1 \u00d7 107 IU/mL titer and 0.3 \u00b5L were injected at the following stereotactic coordinates from the lambda at a 1 \u00b5L/min rate: A-P 1.0, M-L 0.9, D-V three subsequent injections at 1.4, 1.2, 1.0. Pups then recovered in a clean cage placed on a heating pad, and were transferred back to their home cage after completely recovering.\n\n### Monosynaptic retrograde rabies tracing\n\nLentiviral injections were performed at P0 as described above. Complementing AAVs containing CAG-FLEX-TCB-mCherry and CAG-FLEX-RG were generated at the Janelia Farm Viral Core Facility in capsid 2/5 and 2/8, respectively, and injected in P21 mice. Adult mice were stereotactically injected mice by anesthetizing with an intraperitoneal injection of tribromoethanol (Avertin) (250 mg/kg). Mouse heads were shaved, the shaved area was cleaned with Betadine, lubricant was placed on eyes (Puralube Vet Ointment), and heads were secured in a stereotactic injection rig (Kopf) and a small incision was made through the scalp with sterilized tools. Viral solution was injected with a glass pipette at a flow rate of 0.15 \u00b5L/min and 0.5 \u00b5L volume per injection. Coordinates used for unilateral CA1 injections were AP \u22121.80 mm, ML +/\u2212\u00a01.35 mm, DV \u22121.25 mm. The injection pipette was left at the injection site for five mins after the injection to prevent the spread of virus into neighboring brain regions. Incisions were sutured and sealed with Vetbond tissue adhesive (1469 SB), and mice were subsequently removed from the stereotactic injection rig. Mice were monitored in a warmed recovery cage until full recovery. RbV-CVS-N2c-deltaG-GFP (EnvA) was produced at the Janelia Farm Viral core facility and injected 2 weeks after AAV injections at an infectious titer of 1 \u00d7 108 IU/mL and 0.5 \u00b5L volume as described above. Mice were subsequently perfused and analyzed 5 days later. Brains were post-fixed overnight in 4% PFA/PBS and sliced on a vibratome in 50 \u00b5m sections. Sections were labeled with DAPI, washed with PBS, mounted and imaged using a Nikon A1 confocal microscope with a 20x objective.\n\n### Imaging\n\nImages were acquired using a Nikon A1 Eclipse Ti confocal microscope with a 10x, 20x, and 60x objective, operated by NIS-Elements AR v4.5 acquisition software. Laser intensities and acquisition settings were established for individual channels and applied to entire experiments. Image analysis was conducted using Nikon Elements, ImageJ, and Adobe Photoshop.\n\n### In vitro synapse imaging\n\nPrimary hippocampal cultures infected with lentiviruses encoding GFP-\u0394Cre or GFP-Cre with or without co-expression of indicated rescue cDNAs were immunolabeled for vGluT1 (guinea pig, Millipore Cat# AB5905; 1:2,000 ICC; in 488 channel), PSD-95 (mouse, Synaptic Systems Cat# 124011; 1:2,000 ICC; in 546 channel), and MAP2 (chicken, Encor Cat# CPCA MAP2; 1:2,000 ICC; in 647 channel). Images were collected as described above with a 60x objective at 0.1 \u00b5m/pixel resolution and 0.2 \u00b5m z-stack intervals. Overlapping vGLUT1/PSD-95 puncta were automatically quantified along measured distances of MAP2-labeled primary and secondary dendrites using Nikon NIS-Elements AR software.\n\n### Cell aggregation assay\n\nFreeStyle HEK293F cells (Life Technologies Cat# R79007) grown to a density of 1 \u00d7 106 cells/mL in a 30 mL volume were co-transfected with 30 \u03bcg of either pCMV5-Emerald or pCMV5-tdTomato and 30 \u03bcg of the indicated construct using a FreeStyle Max reagent (Life Technologies Cat# 16447100). All cDNAs were encoded in the pCMV5 vector. FreeStyle HEK293F cells were grown at 37\u00b0C/8%CO2 with shaking at 125 rpms. Transfected cells were mixed in non-coated 12-well plates at a 1:1 ratio 2-days post-transfection and subsequently incubated for an additional 2 hr. Live cells were imaged in 12-well plates using a Nikon A1 confocal microscope. Aggregation index was calculated using ImageJ, measuring the percentage of signal/frame occupied by cells forming complexes of two or more cells relative to the total signal of the frame.\n\n### Statistics\n\nExperiments were performed in a blinded manner whenever possible by coding viral solutions. All data are expressed as means \u00b1 SEM and represent the results of at least three independent biological replicates. Statistical significance was determined using the two-tailed Student\u2019s t-test, one-way ANOVA, or two-way ANOVA with post hoc Tukey tests for multiple comparisons, as indicated in the Figure Legends. Data analysis and statistics were performed with Microsoft Excel and GraphPad Prism 8.0. All numerical data and statistical parameters within this study can be located in the Source Data file.\n",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "ac522ce4-5c70-4b94-b7b3-3260fcdb78e4",
+      "submission_id": "1c4a5a48-3b06-4f72-ab7f-701548e7b1d8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graeme W Davis, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65717.sa1](https://doi.org/10.7554/eLife.65717.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe main finding that GPCR activity is necessary for latrophilins' role in synapse formation is both surprising and important. This work will inspire new research on compartmentalized GPCR signaling at the synapse.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Latrophilin GPCR Signaling Mediates Synapse Formation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Graeme W Davis as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gary Westbrook as the Senior Editor. The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1) The manuscript was viewed as largely ready for acceptance \u201cas is\u201d. There are two related points, however, raised by two of the reviewers, that should be addressed. The first point concerns the \u201ctrafficking\u201d of the mutant proteins to spines. There was discussion among the reviewers on this point and it was agreed that \u201ctrafficking\u201d per se is a loaded term that might justify additional experimentation to quantify intracellular versus extracellular tagged proteins, among other variables. However, this would be tangential to the main conclusions of the work. The reviewers suggest a rephrasing of the text, referring to experimental \u201ccontrols\u201d for the presence of the transgenic proteins at spines, or some similar modification.\n\n2) The reviewers thought that additional verification of the cellular assay for cell permeability in PFA treated samples was necessary. Is the PFA treated sample truly impermeable? This control could be performed easily. Alternatively, if the protocol has been routinely used and verified, this could be stated as such, though we think it in the interest of the authors to provide a quick experimental control here. One reviewer writes, \"A key argument is that only surface labeled latrophilin is visualized, but it is possible that 4% PFA itself permeabilizes neurons to some extent and some intracellular antigens may be stained. The methods sound as though surface labeling was done after PFA fixation, but uncertainty remains whether cells were fixed or not before surface labeling. Finally, the quantification of the signal itself is not described at all (in the Materials and methods or main text), and it is difficult to assess what the ratio of surface flag/Map2 signal means. The authors should clarify these concerns by better describing what was done and how the labeling was quantified. Additional controls for the surface labeling (for example that non-surface antigens in the same compartment \u2013 PSD-95 comes to mind \u2013 are not labeled under these conditions)\"\n\n3) Some additional text corrections are noted:\n\n\u2013 Introduction: Wang et al., 2020, is not listed in the reference list.\n\n\u2013 Subsection \u201cLphn2 and Lphn3 function as GPCRs in the hippocampus in vivo\u201d and Figures 4/5: the expression system for rescue is not described at all in the main text and figures. Maps of the 2A-mediated bicistronic expression in the figure and explanations in the text would make the experiment more understandable.\n\n\u2013 Subsection \u201cLphn2 and Lphn3 function as GPCRs in the hippocampus in vivo\u201d and on: the logic and approach of the retrograde tracing can be patched together from the cited literature, Materials and methods and figures, but it would be very helpful to add a couple of sentences on how this experiment was done and quantified. The description in the main text is so short that it cannot be followed by a broader audience.\n\n\u2013 Figure 1 legend and other figure legends: no statistics are listed for Figure 1C and D, but they should be performed and listed. In general, how the statistics were done is difficult to understand from the information that is provided, and more precision in figure legends etc is necessary. For example, Figures 4B, E and 5B, E list ANOVA testing and four stars****, but there is no explanation what p-value the four stars**** stand for, and it is unclear whether the ANOVA result (for both variables and interaction) or the post-test result is reported (and if so, why).\n",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ed37dc4d-fa1c-481b-92e4-427dba249a0b",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C1",
+      "claim": "Latrophilins are postsynaptic adhesion-GPCRs that engage in trans-synaptic complexes with presynaptic teneurins and FLRTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Latrophilins are postsynaptic adhesion-GPCRs that engage in trans-synaptic complexes with presynaptic teneurins and FLRTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by citations to prior work throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "be5ddf41-7395-42ce-84a4-105eb305d32b",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C2",
+      "claim": "In mouse CA1-region neurons, Latrophilin-2 and Latrophilin-3 are essential for formation of entorhinal-cortex-derived and Schaffer-collateral-derived synapses, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse CA1-region neurons, Latrophilin-2 and Latrophilin-3 are essential for formation of entorhinal-cortex-derived and Schaffer-collateral-derived synapses, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and is supported by prior published work (Anderson et al., 2017; Sando et al., 2019) as cited in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "f549eed8-98ed-4468-9642-1d4a5b20b3bf",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C3",
+      "claim": "Latrophilin-2 and Latrophilin-3 exhibit constitutive GPCR activity that increases cAMP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Latrophilin-2 and Latrophilin-3 exhibit constitutive GPCR activity that increases cAMP levels, which was blocked by a mutation interfering with G-protein and arrestin interactions of GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2, where expression of WT Lphn2 and Lphn3 in HEK293T cells caused constitutive elevation of pink Flamindo fluorescence (cAMP indicator) and PKA activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "23bf3865-ac10-4dbb-84f5-282c58f2f288",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C4",
+      "claim": "The T4L mutation blocks the GPCR activity of Latrophilin-2 and Latrophilin-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Latrophilin-2 and Latrophilin-3 exhibit constitutive GPCR activity that increases cAMP levels, which was blocked by a mutation interfering with G-protein and arrestin interactions of GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 2A and 2D showing that the T4L mutation completely abolished the specific pink Flamindo signal and PKA-indicator signal induced by Lphn2 and Lphn3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "532be4fd-f4ad-44f4-9e05-fa76ce581d16",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C5",
+      "claim": "The T4L mutation impaired the ability of Latrophilin-2 and Latrophilin-3 to rescue the synapse-loss phenotype in Latrophilin-2 and Latrophilin-3 knockout neurons in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The same mutation impaired the ability of Latrophilin-2 and Latrophilin-3 to rescue the synapse-loss phenotype in Latrophilin-2 and Latrophilin-3 knockout neurons in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data in Figures 4 and 5 showing that T4L-mutant Lphn2 and Lphn3 failed to rescue synaptic connectivity deficits in conditional knockout neurons, and by rabies tracing data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "4b9270f5-c5f9-4c72-b488-a5461d129e9c",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C6",
+      "claim": "Latrophilin-2 and Latrophilin-3 require GPCR signaling in synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that Latrophilin-2 and Latrophilin-3 require GPCR signaling in synapse formation, indicating that latrophilins promote synapse formation in the hippocampus by activating a classical GPCR-signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the combined evidence that latrophilins exhibit GPCR activity (Figure 2) and that blocking this activity with the T4L mutation prevents rescue of synapse formation deficits (Figures 3-6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "183fdca5-302b-465e-bfd7-cbea1754aa5a",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C7",
+      "claim": "Few proteins are known to be essential for synapse formation in vertebrates or invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Few proteins are known to be essential for synapse formation in vertebrates or invertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field supported by the review of literature in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "7df60688-f9ac-4533-9b21-8649e29a5295",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C8",
+      "claim": "Nearly all candidate synaptic adhesion molecules tested by rigorous genetic approaches are not required for synapse formation per se.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nearly all the candidate synaptic adhesion molecules that have been tested by rigorous genetic approaches are not required for synapse formation per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies (Shen et al., 2004; Duan et al., 2018; Missler et al., 2003; Nair et al., 2013; Varoqueaux et al., 2006) discussed in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "b968e66f-91c9-491b-ba23-11578cddd0a0",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C9",
+      "claim": "Some candidate synaptic adhesion molecules direct neuronal processes to the correct position of future synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, some of these candidate synaptic adhesion molecules, such as SYG1 in Caenorhabditis elegans (Shen et al., 2004) or cadherins in the retina (Duan et al., 2018), direct neuronal processes to the correct position of future synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to specific studies on SYG1 and cadherins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "6412b34e-beda-48f0-a5f5-f82af7d0b4f9",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C10",
+      "claim": "Other candidate synaptic adhesion molecules specify the properties of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Other candidate synaptic adhesion molecules, such as neurexins and their ligands (reviewed in S\u00fcdhof, 2018) or the SALM/Lrfn family (reviewed in Lie et al., 2018), specify the properties of synapses (Missler et al., 2003; Nair et al., 2013; Varoqueaux et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to reviews and specific studies on neurexins and SALM/Lrfn proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "5c399be4-e928-4ead-a74b-365b3b3f35b5",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C11",
+      "claim": "Deletion of cerebellin-1 or GluD2 causes robust parallel-fiber synapse loss in the cerebellum, but synapses are only eliminated secondarily after they were established.",
+      "claim_type": "EXPLICIT",
+      "source": "Although deletion of cerebellin-1 or GluD2 causes robust parallel-fiber synapse loss in the cerebellum, synapses are only eliminated secondarily after they were established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is supported by a citation to a review (Yuzaki, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "6e12a632-4d56-4092-940e-9885d9e7b961",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C12",
+      "claim": "Only a fraction of parallel-fiber synapses is lost after cerebellin-1 or GluD2 deletion, whereas all parallel-fiber synapses exhibit altered synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, only a fraction of parallel-fiber synapses is lost, whereas all parallel-fiber synapses exhibit altered synaptic plasticity (reviewed in Yuzaki, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is supported by a citation to a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "09bc6a49-5548-4588-ac7a-3f3dd94f47cc",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C13",
+      "claim": "Cerebellin-1 and -2 deletions do not hinder initial synapse formation in other parts of the brain, but impair synapse function and lead to secondary synapse elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "In other parts of the brain, cerebellin-1 and \u22122 deletions also do not hinder initial synapse formation, but impair synapse function and also lead to secondary synapse elimination (Rong et al., 2012; Seigneur and S\u00fcdhof, 2018; Seigneur et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "e229fab9-1fd7-4be2-bea9-d83d3b2a7e03",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C14",
+      "claim": "Latrophilins and BAIs are adhesion-GPCRs that are essential for establishing synapses in all brain regions in which they have been tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these molecules are two families of adhesion-GPCRs, latrophilins and BAIs, that are essential for establishing synapses in all brain regions in which they have been tested (Kakegawa et al., 2015; Sigoillot et al., 2015; Anderson et al., 2017; Sando et al., 2019; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "35b2210f-d27f-4c9a-86b4-e1dcc86f1f03",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C15",
+      "claim": "Adhesion-GPCRs characteristically contain large extracellular sequences with multiple potential ligand-binding domains and a canonical GAIN domain that is coupled to the seven-transmembrane region module characteristic of GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Adhesion-GPCRs characteristically contain large extracellular sequences with multiple potential ligand-binding domains and a canonical GAIN domain that is coupled to the seven-transmembrane region module characteristic of GPCRs (reviewed in Vizurraga et al., 2020; Morgan et al., 2019; Folts et al., 2019; Purcell and Hall, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about adhesion-GPCRs supported by citations to reviews.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "aadbe7a1-b5bb-44d4-8159-1453294325e9",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C16",
+      "claim": "Most adhesion-GPCRs have a long cytoplasmic region.",
+      "claim_type": "EXPLICIT",
+      "source": "Most adhesion-GPCRs additionally have a long cytoplasmic region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about adhesion-GPCRs based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "8a857b83-63c1-4564-be9e-bc3d08500108",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C17",
+      "claim": "The three mammalian latrophilins (Lphn1-3) feature N-terminal lectin- and olfactomedin-like ligand-binding domains, a serine-threonine rich and 'hormone binding' domain of unknown function, and a canonical GAIN domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The three mammalian latrophilins (Lphn1-3) follow the same design principle as other adhesion-GPCRs. They feature N-terminal lectin- and olfactomedin-like ligand-binding domains, a serine-threonine rich and 'hormone binding' domain of unknown function, and a canonical GAIN domain (Figure 1A; Sugita et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1A showing the domain structure and by a citation to Sugita et al., 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "23507a2d-07be-4c1f-b4a9-be20bcc831ed",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C18",
+      "claim": "Latrophilin domains are attached to a classical seven-transmembrane region GPCR module, followed by a long cytoplasmic region that interacts at the C-terminus with the PDZ-domain of SHANKs.",
+      "claim_type": "EXPLICIT",
+      "source": "These domains are attached to a classical seven-transmembrane region GPCR module, followed by a long cytoplasmic region that interacts at the C-terminus with the PDZ-domain of SHANKs (Kreienkamp et al., 2000; Tobaben et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies showing the interaction with SHANKs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "f505e89d-ae38-4bcc-89ce-93001efa2a0e",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C19",
+      "claim": "The N-terminal lectin- and olfactomedin-like domains of latrophilins engage in transcellular interactions with multiple presynaptic ligands, including teneurins and FLRTs.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal lectin- and olfactomedin-like domains of latrophilins engage in transcellular interactions with multiple presynaptic ligands, including teneurins and FLRTs (Sugita et al., 1998; O'Sullivan et al., 2012; Silva et al., 2011; Boucard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "96761ba5-8125-4261-85bb-9d86c57777cb",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C20",
+      "claim": "Multiple latrophilin isoforms are generally co-expressed in the same neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple latrophilin isoforms are generally co-expressed in the same neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "f83bfa19-3ed5-4158-a163-c2752376b4a0",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C21",
+      "claim": "CA1 pyramidal neurons of the hippocampus co-express Lphn2 and Lphn3 that are targeted to distinct dendritic domains of the same neuron and are essential for formation of different excitatory synaptic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "CA1 pyramidal neurons of the hippocampus co-express Lphn2 and Lphn3 that are targeted to distinct dendritic domains of the same neuron and are essential for formation of different excitatory synaptic inputs (Anderson et al., 2017; Sando et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "a1e5e5c5-17af-4299-b8b3-e5feb12e45c8",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C22",
+      "claim": "Lphn2 and Lphn3 are redundantly required in the cerebellum for parallel-fiber synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Lphn2 and Lphn3 are redundantly required in the cerebellum for parallel-fiber synapse formation (Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zhang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "15cb3aba-8861-43d7-8c9a-12c69a4dbc1a",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C23",
+      "claim": "The function of postsynaptic Lphn3 in hippocampal synapse formation requires intact binding sites for both presynaptic teneurins and FLRTs.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of postsynaptic Lphn3 in hippocampal synapse formation requires intact binding sites for both presynaptic teneurins and FLRTs, indicating that latrophilins may mediate synapse specificity by acting as coincidence detectors that respond to two input signals (Sando et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sando et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "af57b545-6fa1-403d-968c-0b7d6e3edc59",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C24",
+      "claim": "Latrophilins may mediate synapse specificity by acting as coincidence detectors that respond to two input signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of postsynaptic Lphn3 in hippocampal synapse formation requires intact binding sites for both presynaptic teneurins and FLRTs, indicating that latrophilins may mediate synapse specificity by acting as coincidence detectors that respond to two input signals (Sando et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the requirement for both ligands, as indicated by the word 'indicating'.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "7e5f9ee7-1870-4ce6-91c9-4c897021f91a",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C25",
+      "claim": "The Lphn2 and Lphn3 mutations do not impair their surface transport and extracellular ligand interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Viewed together, these results show that the various Lphn2 and Lphn3 mutations do not impair their surface transport and extracellular ligand interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 1B-D showing that mutant proteins are expressed on the cell surface and mediate trans-cellular adhesion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "30a59fd9-0ca8-4d8d-9ae6-09e82067b9aa",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C28",
+      "claim": "All mutant Lphn2 and Lphn3 proteins were as well expressed on the surface as WT proteins in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifications documented that all mutant proteins were as well expressed on the surface as WT proteins (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "1fb0e4d6-94f0-4ee7-9301-2a7df7306750",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C29",
+      "claim": "The levels of the GPI-anchored Lphn3-ECD protein were slightly lower on the cell surface than those of the other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the levels of the GPI-anchored Lphn3-ECD protein were slightly lower on the cell surface than those of the other proteins (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification data in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "73297414-5387-4702-bf56-97c040e4695e",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C30",
+      "claim": "The fixation procedure used produces minor membrane permeability and exposure of intracellular antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell fixation with 4% PFA/4% sucrose/PBS alone produced minor membrane permeability and exposure of intracellular antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1B where permeabilization with Triton X-100 exposed substantial Homer1 signal, suggesting that fixation alone generates minor permeability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "88b69248-ec49-4ee3-99a3-efcc12d36346",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C32",
+      "claim": "The T4L mutation and co-expression of the cAMP-specific phosphodiesterase PDE7b prevent cAMP increases by Lphn2 or Lphn3.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4L mutation and co-expression of the cAMP-specific phosphodiesterase PDE7b prevent cAMP increases by Lphn2 or Lphn3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A where both T4L mutation and PDE7b co-expression blocked the Pink Flamindo signal increase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "58f6f6c5-f113-462c-9f9f-bdfb0235dc2b",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C33",
+      "claim": "Without latrophilins, PDE7b had no effect on pink Flamindo fluorescence, suggesting that the observed signal represents background and that the basal levels of cAMP in HEK293T cells are undetectably low at these acquisition settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging revealed that without latrophilins, PDE7b had no effect on pink Flamindo fluorescence, suggesting that the observed signal represents background and that the basal levels of cAMP in HEK293T cells are undetectably low at these acquisition settings (Figure 2A; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A control conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "9b17bb52-77db-4d2f-9714-967741914cf3",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C34",
+      "claim": "Expression of WT Lphn2 and Lphn3 caused a constitutive elevation of pink Flamindo fluorescence that was blocked by PDE7b, demonstrating that the pink Flamindo signal is specific for cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of WT Lphn2 and Lphn3 caused a constitutive elevation of pink Flamindo fluorescence. This fluorescence increase was blocked by PDE7b, demonstrating that the pink Flamindo signal is specific for cAMP and that Lphn2 and Lphn3 increase cAMP levels (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A with quantification of the Pink Flamindo signal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "9f1541a6-8deb-4a3a-9ba9-30f4943b0b66",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C35",
+      "claim": "The T4L mutation completely abolished the specific pink Flamindo signal, suggesting that it blocks the GPCR activity of Lphn2 and Lphn3.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4L mutation completely abolished the specific pink Flamindo signal, suggesting that it blocks the GPCR activity of Lphn2 and Lphn3 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A where T4L mutants showed no increase in Pink Flamindo signal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "d2bc5825-82bf-4d07-a266-4187deda6731",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C38",
+      "claim": "Co-expression of the PKA indicator with G\u03b1s and various Lphn2 and Lphn3 proteins confirmed that Lphn2 and Lphn3 both activate cAMP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used the newly constructed PKA-indicator to examine the effect of WT and mutant Lphn2 and Lphn3 proteins on PKA activity. Co-expression of the PKA indicator with G\u03b1s and various Lphn2 and Lphn3 proteins, without or with PDE7b, confirmed that Lphn2 and Lphn3 both activate cAMP signaling (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D with quantification of phospho-PKA signal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "d30c4e49-b75a-43cd-9f2d-6e92163515fb",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C39",
+      "claim": "The Lphn2- and Lphn3-induced PKA-indicator signal was greatly attenuated by PDE7b, confirming that it is due to cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lphn2- and Lphn3-induced PKA-indicator signal was greatly attenuated by PDE7b, confirming that it is due to cAMP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D where PDE7b co-expression reduced the phospho-PKA signal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "9548e857-bacb-423e-8f99-f373e1bbd27b",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C40",
+      "claim": "The T4L-mutations of Lphn2 and Lphn3 suppressed the PKA-indicator signal induced by Lphn2 or Lphn3, and PDE7b had no additional effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4L-mutations of Lphn2 and Lphn3 similarly suppressed the PKA-indicator signal induced by Lphn2 or Lphn3, and PDE7b had no additional effect (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D where T4L mutants showed reduced phospho-PKA signal similar to PDE7b conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "c346878a-7d7f-431a-a576-cd60a4e56b03",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C41",
+      "claim": "Lphn2 and Lphn3 stimulate cAMP production in cells in a manner dependent on a GPCR transduction mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that Lphn2 and Lphn3 stimulate cAMP production in cells in a manner dependent on a GPCR transduction mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined data in Figure 2 showing cAMP and PKA activation by latrophilins that is blocked by the T4L mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "acadb31e-1ef9-4137-a60d-c5fad02b08ae",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C42",
+      "claim": "The Lphn3 deletion robustly decreased (~40%) the excitatory synapse density in cultured hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown previously (Sando et al., 2019), the Lphn3 deletion robustly decreased (~40%) the excitatory synapse density in cultured hippocampal neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A with immunolabeling for vGluT1 and PSD-95 and quantification of synapse density.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "e4ebf77c-315a-460c-86b9-c9f1f9f7da29",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C43",
+      "claim": "The decrease in excitatory synapse density caused by Lphn3 deletion was fully rescued by WT Lphn3 but not by any of the three Lphn3 mutants (Lphn3-ECD, Lphn3-T4L, and Lphn3-\u0394Ct).",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease was fully rescued by WT Lphn3 but not by any of the three Lphn3 mutants (Lphn3-ECD, Lphn3-T4L, and Lphn3-\u0394Ct) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A with quantification of synapse density across different rescue conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "aa70ee7a-36fe-4920-9de9-0b968be2eef1",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C44",
+      "claim": "Lphn3 functions as a GPCR in synapse formation and this function depends additionally on the cytoplasmic sequences of Lphn3.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that Lphn3 functions as a GPCR in synapse formation and that this function depends additionally on the cytoplasmic sequences of Lphn3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that both the T4L mutation (blocking GPCR signaling) and the \u0394Ct mutation (deleting cytoplasmic sequences) prevent rescue of the synapse density phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "620dbfeb-2cd2-4a3e-a30f-6baffd450a18",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C45",
+      "claim": "The Lphn3 deletion caused a ~40% decrease in mEPSC frequency, which corroborates the decrease in synapse density.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lphn3 deletion caused a ~40% decrease in mEPSC frequency, which corroborates the decrease in synapse density, but had only minor effects on the mEPSC amplitude (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B-D with representative traces and quantification of mEPSC frequency and amplitude.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "5b6d4481-4b31-4180-adca-d45f011b0ea4",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C46",
+      "claim": "The decrease in mEPSC frequency caused by Lphn3 deletion was fully rescued by WT Lphn3 but not by the three Lphn3 mutants tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, this phenotype was fully rescued by WT Lphn3 but not by the three Lphn3 mutants tested, which were inactive even though they were fully transported to the surface of dendritic spines (Figures 1, 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C and D with quantification of mEPSC frequency across different rescue conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "e27397de-6046-43c7-a761-a1f92845a553",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C47",
+      "claim": "Lphn3 functions as a GPCR in synapse formation in cultured neurons, and this function additionally requires their long cytoplasmic tail region.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Lphn3 functions as a GPCR in synapse formation in cultured neurons, and that this function additionally requires their long cytoplasmic tail region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined synapse density and mEPSC data showing that both GPCR signaling and cytoplasmic sequences are required for Lphn3 function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "2654af48-f813-489d-818e-4035432da48e",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C48",
+      "claim": "The Lphn2 deletion selectively impaired entorhinal cortical synaptic inputs but not Schaffer-collateral synaptic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lphn2 deletion selectively impaired entorhinal cortical synaptic inputs but not Schaffer-collateral synaptic inputs, confirming previous conclusions (Anderson et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 with electrophysiological recordings showing reduced perforant path responses but normal Schaffer collateral responses in Lphn2 KO neurons.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "36ece6ba-b8a8-4a24-a547-bb1b7fdad78f",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C49",
+      "claim": "The impairment of entorhinal cortical synaptic inputs caused by Lphn2 deletion was rescued by WT but not by T4L-mutant Lphn2.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was rescued by WT but not by T4L-mutant Lphn2 that is unable to mediate GPCR signaling (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4D-F with input-output curves and quantification showing that WT Lphn2 but not T4L-mutant Lphn2 rescues the deficit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "e84d466a-8bc4-4cc6-9d6e-a13ff59a787e",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C50",
+      "claim": "The Lphn3 deletion selectively impaired Schaffer collateral- but not entorhinal cortex-derived synaptic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lphn3 deletion, conversely, selectively impaired Schaffer collateral- but not entorhinal cortex-derived synaptic inputs, again confirming previous findings (Sando et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 with electrophysiological recordings showing reduced Schaffer collateral responses but normal perforant path responses in Lphn3 KO neurons.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "4ee738f5-ff1c-4bec-aaef-e66c4e3771d3",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C51",
+      "claim": "The impairment of Schaffer collateral synaptic inputs caused by Lphn3 deletion was rescued by WT but not by T4L-mutant Lphn3.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was also rescued by WT but not by T4L-mutant Lphn3 (Figure 5), confirming that GPCR signaling is essential for latrophilin function in synapse formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A-C with input-output curves and quantification showing that WT Lphn3 but not T4L-mutant Lphn3 rescues the deficit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "75882c5d-db9d-4de7-beb3-94fe31b5a107",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C52",
+      "claim": "GPCR signaling is essential for latrophilin function in synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was also rescued by WT but not by T4L-mutant Lphn3 (Figure 5), confirming that GPCR signaling is essential for latrophilin function in synapse formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the in vivo rescue experiments showing that blocking GPCR signaling with the T4L mutation prevents rescue of synaptic connectivity deficits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "cf79ba24-eb49-41cc-bf69-18cba1ee2ed2",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C53",
+      "claim": "The Lphn3 conditional KO impaired synaptic connectivity as measured by retrograde rabies tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the Lphn3 conditional KO impaired synaptic connectivity (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B and C with representative images and quantification of rabies-labeled presynaptic neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "129f191c-d588-4885-8598-ed3c61e54c11",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C54",
+      "claim": "The impairment of synaptic connectivity caused by Lphn3 conditional KO was rescued by expression of WT Lphn3, but not by the T4L-mutant Lphn3.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype of rescued by expression of WT Lphn3, but not by the T4L-mutant Lphn3 unable to mediate GPCR signaling (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6C with quantification of connected neurons showing that WT Lphn3 but not T4L-mutant Lphn3 rescues the deficit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "9dc503b7-94b4-4087-97f6-534ee4000f23",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C55",
+      "claim": "Latrophilins function as postsynaptic GPCRs that control input-specific excitatory synapse formation in the hippocampus via a GPCR-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Viewed together, these data indicate that latrophilins function as postsynaptic GPCRs that control input-specific excitatory synapse formation in the hippocampus via a GPCR-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, drawn from the combined evidence that latrophilins exhibit GPCR activity and that this activity is required for their function in synapse formation both in vitro and in vivo.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "3d5be6d2-2661-4e96-a915-df9aa5af931d",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C56",
+      "claim": "Lphn2 and Lphn3 are constitutively active GPCRs that enhance cAMP levels when expressed in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that Lphn2 and Lphn3 are constitutively active GPCRs that enhance cAMP levels when expressed in HEK293 cells, and that the GPCR activity of Lphn2 and Lphn3 is essential for their ability to promote synapse formation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the main findings, supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "61ba696a-26a6-4d8c-8312-431d0269d064",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C57",
+      "claim": "The GPCR activity of Lphn2 and Lphn3 is essential for their ability to promote synapse formation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that Lphn2 and Lphn3 are constitutively active GPCRs that enhance cAMP levels when expressed in HEK293 cells, and that the GPCR activity of Lphn2 and Lphn3 is essential for their ability to promote synapse formation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the main findings, supported by data in Figures 4-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "e683b329-1037-4613-be61-fcc987eb5122",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C58",
+      "claim": "Lphn3 requires its cytoplasmic sequences for supporting synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that Lphn3 requires its cytoplasmic sequences for supporting synapse formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of findings, supported by data in Figure 3 showing that the Lphn3-\u0394Ct mutant fails to rescue the synapse formation deficit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "a9dbd80b-1afd-4b25-8819-2676cb56d541",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C59",
+      "claim": "Latrophilins act in synapse formation by transmitting a GPCR-mediated signal, possibly by elevating cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we propose that latrophilins act in synapse formation by transmitting a GPCR-mediated signal, possibly by elevating cAMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the combined findings that latrophilins increase cAMP and require GPCR signaling for synapse formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "0917a389-1668-41ef-83bf-df473a5e1e0a",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C60",
+      "claim": "The latrophilin GPCR signal is likely translated into specific organizational activities during synapse formation in a context-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the latrophilin GPCR signal most likely is translated into specific organizational activities during synapse formation in a context- dependent manner, either via interactions of latrophilins with postsynaptic proteins such as SHANKs that are mediated by their cytoplasmic sequences, or via parallel signals induced by other trans-synaptic adhesion complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of how latrophilin GPCR signaling might achieve specificity in synapse formation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "d033fc9b-d125-414c-ae94-6db774a69003",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C61",
+      "claim": "Analysis of WT and mutant Lphn2 and Lphn3 in HEK293 cells demonstrated that WT Lphn2 and Lphn3 exhibit constitutively active GPCR activity that elevates cAMP levels, and that this activity is blocked by the T4L mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, analysis of WT and mutant Lphn2 and Lphn3 in HEK293 cells demonstrated that WT Lphn2 and Lphn3 exhibit constitutively active GPCR activity that elevates cAMP levels, and that this activity is blocked by the T4L mutation, which is known to abolish GPCR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of evidence supporting the main conclusion, referring to data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "34147ecd-72f9-4cca-8977-30bd0de4d9c9",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C62",
+      "claim": "Analysis of cultured neurons demonstrated that the Lphn2 and Lphn3 mutations do not impair surface transport of Lphn2 and Lphn3 or targeting to dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, analysis of cultured neurons demonstrated that the Lphn2 and Lphn3 mutations do not impair surface transport of Lphn2 and Lphn3 or targeting to dendritic spines, but that the Lphn3 mutations abolish its ability to rescue the decrease in synapse formation induced by conditional KO of Lphn3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of evidence, referring to data in Figures 1 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "fc353a4f-e2ce-4dd6-83e3-85c4b537f960",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C63",
+      "claim": "The Lphn3 mutations abolish its ability to rescue the decrease in synapse formation induced by conditional KO of Lphn3 in cultured neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, analysis of cultured neurons demonstrated that the Lphn2 and Lphn3 mutations do not impair surface transport of Lphn2 and Lphn3 or targeting to dendritic spines, but that the Lphn3 mutations abolish its ability to rescue the decrease in synapse formation induced by conditional KO of Lphn3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of evidence, referring to data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "33b5a609-d010-4a65-8af6-33a3a1869610",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C64",
+      "claim": "Analysis of the in vivo activity of WT and mutant Lphn2 and Lphn3 using sparse postsynaptic deletions demonstrated that WT Lphn2 and Lphn3 restored only the loss of synaptic connectivity of their cognate synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, analysis of the in vivo activity of WT and mutant Lphn2 and Lphn3 using sparse postsynaptic deletions of these molecules in hippocampal CA1 neurons in conditional KO mice demonstrated that WT Lphn2 and Lphn3 restored only the loss of synaptic connectivity of their cognate synapses, but had no effect on those synapses for which these latrophilins normally are not required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of evidence, referring to data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "ae2539d2-454c-48a4-9a50-9fcc719e90ba",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C65",
+      "claim": "WT Lphn2 and Lphn3 had no effect on synapses for which these latrophilins normally are not required.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, analysis of the in vivo activity of WT and mutant Lphn2 and Lphn3 using sparse postsynaptic deletions of these molecules in hippocampal CA1 neurons in conditional KO mice demonstrated that WT Lphn2 and Lphn3 restored only the loss of synaptic connectivity of their cognate synapses, but had no effect on those synapses for which these latrophilins normally are not required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of evidence, referring to data in Figures 4 and 5 showing input-specific effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "24b345c5-e907-4a74-a4a5-43a4ae39ed43",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C66",
+      "claim": "Mutant Lphn2 and Lphn3 that is unable to mediate GPCR signaling is incompetent to rescue the conditional KO phenotype in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, these experiments established that mutant Lphn2 and Lphn3 that is unable to mediate GPCR signaling is incompetent to rescue the conditional KO phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of evidence, referring to data in Figures 4-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "a08d3432-225c-4626-bcc3-e4c83d070e54",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C67",
+      "claim": "Lphn2 and Lphn3 function in synapse formation as GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these lines of evidence show that Lphn2 and Lphn3 function in synapse formation as GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the Discussion, based on the combined evidence from all experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "1ac34351-913d-4d5a-a303-36d18f1e452f",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C68",
+      "claim": "The present study does not identify the nature of the GPCR signal that is activated by latrophilins in synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the present study has inherent limitations. Most importantly, our results do not identify the nature of the GPCR signal that is activated by latrophilins in synapse formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a limitation of the study in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "421f79eb-d383-4cc1-b5ac-191034f7ffdb",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C69",
+      "claim": "Latrophilins have been reported to increase or decrease cAMP levels in cells in a constitutive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Latrophilins have been reported to increase or decrease cAMP levels in cells in a constitutive manner (Nazarko et al., 2018; M\u00fcller et al., 2015; Ovando-Zambrano et al., 2019; Scholz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "2bdf40a8-1fb0-4508-9bfc-1bdc4d40a085",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C70",
+      "claim": "The results support a function of latrophilins in increasing cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support a function in increasing cAMP (Figure 2), but the physiological signaling activities of GPCRs are complex and what the precise type of signaling of latrophilins is in vivo may depend on the specific context.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and is supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "bb94afb4-b650-49e9-8dab-8e60b32fec8e",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C71",
+      "claim": "The physiological signaling activities of GPCRs are complex and what the precise type of signaling of latrophilins is in vivo may depend on the specific context.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support a function in increasing cAMP (Figure 2), but the physiological signaling activities of GPCRs are complex and what the precise type of signaling of latrophilins is in vivo may depend on the specific context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about GPCR signaling complexity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "2cd02b26-5be3-4a02-827f-449578972e42",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C72",
+      "claim": "The results establish that latrophilins act as GPCRs in synapse formation, but do not reveal what type of GPCR signaling drives synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our results establish that latrophilins act as GPCRs in synapse formation, they do not reveal what type of GPCR signaling drives synapse formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a limitation in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "81a2ba45-88df-4c53-88ca-b840efe7d127",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C73",
+      "claim": "Pharmacological blockage of cAMP signaling impairs induction of spine synapses by glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that this signaling may consist of increases in cAMP is attractive since pharmacological blockage of cAMP signaling impairs induction of spine synapses by glutamate (Kwon and Sabatini, 2011), but no other evidence currently shows that cAMP signaling \u2013 or any other GPCR signaling \u2013 mediates synapse formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by a citation to Kwon and Sabatini, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "6d438198-06db-498d-989d-82be07efd6d3",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C74",
+      "claim": "No evidence currently shows that cAMP signaling \u2013 or any other GPCR signaling \u2013 mediates synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that this signaling may consist of increases in cAMP is attractive since pharmacological blockage of cAMP signaling impairs induction of spine synapses by glutamate (Kwon and Sabatini, 2011), but no other evidence currently shows that cAMP signaling \u2013 or any other GPCR signaling \u2013 mediates synapse formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a limitation of current knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "3426eedb-2709-4dbd-aea5-d280edd09baf",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C75",
+      "claim": "The role of the cytoplasmic sequences of latrophilins remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the role of the cytoplasmic sequences of latrophilins remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a limitation in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "65c07a50-28a8-42dd-a6ff-d7c5af2d0d4f",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C76",
+      "claim": "The long cytoplasmic sequences of latrophilins contain multiple highly conserved regions, including a C-terminal PDZ-domain binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "These long sequences contain multiple highly conserved regions, including a C-terminal PDZ-domain binding motif (Sugita et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by a citation to Sugita et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "7823ab94-c5e3-4d45-9709-37bfff1e467e",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C77",
+      "claim": "It is tempting to speculate that the cytoplasmic sequences of latrophilins confer context specificity to the general GPCR activity of latrophilins by binding to specific interacting partners.",
+      "claim_type": "EXPLICIT",
+      "source": "What the function of these sequences is remains uncharacterized, although it is tempting to speculate that these sequences confer context specificity to the general GPCR activity of latrophilins by binding to specific interacting partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation in the Discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "aa05d2e8-909f-4be7-9578-b0365741efbf",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C78",
+      "claim": "SHANKs are prime candidates for interacting partners of latrophilins since they are postsynaptic scaffolding proteins that bind to latrophilins.",
+      "claim_type": "EXPLICIT",
+      "source": "Such partners remain to be identified, although SHANKs are prime candidates since they are postsynaptic scaffolding proteins that bind to latrophilins (Kreienkamp et al., 2000; Tobaben et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by citations to studies showing the interaction.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "3edabc5d-3abe-4f6a-a60c-ef9c58de8938",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C79",
+      "claim": "Lphn2 and Lphn3 function as GPCRs in synapse formation, suggesting that compartmentalization of a canonical signaling pathway controlled by GPCRs may be instrumental in driving the assembly of synaptic connections into circuits and control their specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we here establish that Lphn2 and Lphn3 function as GPCRs in synapse formation, suggesting the possibility that compartmentalization of a canonical signaling pathway widely used in biology and controlled by GPCRs may be instrumental in driving the assembly of synaptic connections into circuits and control their specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the concluding statement of the Discussion, summarizing the main finding and its implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "140908a7-1c5b-481c-b1de-2d99eda81a9f",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C80",
+      "claim": "The Lphn3-ECD mutant deletes all transmembrane regions and cytoplasmic sequences of Lphn3 and attaches its extracellular domains to the membrane using a GPI-anchor.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lphn3-ECD mutant deletes all transmembrane regions and cytoplasmic sequences of Lphn3 and attaches its extracellular domains to the membrane using a GPI-anchor, thereby preserving only the Lphn3 adhesion function and deleting all of its potential signaling capacity (Gokce and S\u00fcdhof, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the design of mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "596209c4-e787-4d95-af7d-68022df35848",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C81",
+      "claim": "The Lphn2-T4L and Lphn3-T4L mutants contain an insertion of a T4 lysozyme sequence into the 3rd intracellular loop of Lphn2 or Lphn3, which abolishes G-protein coupling and impairs arrestin signaling to these GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lphn2-T4L and Lphn3-T4L mutants contain an insertion of a T4 lysozyme (T4L) sequence into the 3rd intracellular loop of Lphn2 or Lphn3, which abolishes G-protein coupling and impairs arrestin signaling to these GPCRs (Rosenbaum et al., 2007; Cherezov et al., 2007; Thorsen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the design of mutants and is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "3cdd1f1f-4f52-45d4-9a47-8a7eb17835e0",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C82",
+      "claim": "The Lphn3-\u0394Ct mutant truncates most of the cytoplasmic C-terminal sequences, thereby ablating cytoplasmic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lphn3-\u0394Ct mutant truncates most of the cytoplasmic C-terminal sequences, thereby ablating cytoplasmic interactions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section describing the design of mutants and is shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "957b7e28-d958-4c1d-a9e0-3c8d0c507c49",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C83",
+      "claim": "The mutations had no effect on the surface transport of Lphn2 or Lphn3, nor did they impair the ability of Lphn2 or Lphn3 to form trans-cellular adhesion complexes with FLRT3 or Ten2.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations had no effect on the surface transport of Lphn2 or Lphn3, nor did they impair the ability of Lphn2 or Lphn3 to form trans-cellular adhesion complexes with FLRT3 or Ten2, suggesting that the mutant latrophilins are folded and functional in protein-protein interactions (Figure 1B; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and is supported by data in Figure 1B showing cell aggregation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "24aff343-f0a1-43d8-9ab4-76fe1e9b76f3",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C84",
+      "claim": "All Lphn2 and Lphn3 proteins were localized to the cell surface of neurons, with no apparent difference in localization between WT and mutant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "All Lphn2 and Lphn3 proteins were localized to the cell surface of neurons, with no apparent difference in localization between WT and mutant proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and is supported by immunocytochemistry data in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "43bd126b-3a93-4ff6-8281-a55f2be3b9ae",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C86",
+      "claim": "The fixation procedure supports that the assay is sampling predominately surface FLAG-tagged protein in non-permeabilized conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This control supports that our assay is sampling predominately surface FLAG-tagged protein in non-permeabilized conditions (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and is supported by the control experiment shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "3486f458-703b-4110-982b-3bd0482014d0",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C87",
+      "claim": "A potential problem of the cAMP measurements with pink Flamindo is the rather high background signal of pink Flamindo that is cAMP-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "A potential problem of the cAMP measurements with pink Flamindo is the rather high background signal of pink Flamindo that is cAMP-independent (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as a limitation of the pink Flamindo indicator.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "cfc8340e-0983-4b1c-9ce2-842b767a947d",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C88",
+      "claim": "The PKA-indicator construct has a much better signal-to-noise ratio than the fluorescent pink Flamindo indicator.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunocytochemical analysis of the PKA-indicator protein in HEK293T cells as a function of stimulation with forskolin and IBMX revealed a strong cAMP-dependent signal with a much better signal-to-noise ratio than the fluorescent pink Flamindo indicator (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and is supported by data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "963212ac-2fe7-46b0-9f97-89149c6e6a7d",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C89",
+      "claim": "The fact that the input-output curves in the electrophysiological recordings are superimposable attests to the solidity of the findings and the validity of the approach for measuring synaptic connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the input-output curves in the electrophysiological recordings (Figures 4 and 5) are superimposable in these experiments attests to the solidity of the findings and the validity of the approach for measuring synaptic connectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as an assessment of data quality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "caf5b4bd-46e1-4d5d-a92c-5894c506d11e",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C90",
+      "claim": "A decrease in synaptic strength might be due to other causes than a loss of synaptic connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a decrease in synaptic strength might be due to other causes than a loss of synaptic connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a potential alternative interpretation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "8e7109f4-27b9-4f4b-b083-70833573c66b",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "claim_id": "C91",
+      "claim": "Quantitative retrograde monosynaptic rabies tracing allows in vivo analyses of synaptic connections formed by a specific postsynaptic neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative retrograde monosynaptic rabies tracing allows in vivo analyses of synaptic connections formed by a specific postsynaptic neuron (Sando et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e5521735-b9ea-4047-ba58-e4a737c25119",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Latrophilins are adhesion-GPCRs with characteristic domain structures that engage in trans-synaptic interactions with presynaptic ligands (teneurins and FLRTs) and are essential for synapse formation in specific brain regions, including input-specific synapse formation in hippocampal CA1 neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C14-C23 collectively establish the structural and functional properties of latrophilins based on prior published work. These claims are well-supported by multiple citations to established literature and represent accepted knowledge in the field that provides essential context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "3decb6d7-ea68-4a6e-90fc-20a2b7dee828",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Most candidate synaptic adhesion molecules tested by rigorous genetic approaches are not required for initial synapse formation per se, but rather direct neuronal processes to correct positions, specify synaptic properties, or lead to secondary synapse elimination after initial formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 summarize prior work on synaptic adhesion molecules and are supported by multiple citations to published studies. This background establishes the novelty of latrophilins as molecules actually required for initial synapse formation, distinguishing them from other adhesion molecules.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutant Lphn2 and Lphn3 proteins (Lphn3-ECD, Lphn2/3-T4L, and Lphn3-\u0394Ct) are properly expressed on the cell surface, localize to dendritic spines, and maintain the ability to form trans-cellular adhesion complexes with FLRT3 and Ten2 ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 demonstrate that the mutations do not impair protein folding, trafficking, or ligand binding. This is supported by cell aggregation assays (Figure 1B), surface expression quantification in neurons (Figure 1C-D), and control experiments showing minimal membrane permeabilization (Figure 1\u2014figure supplement 1B). These controls are essential for interpreting the functional deficits observed with mutant proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "cd676e48-7746-4a94-9797-9cd4cc4050d6",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Lphn2 and Lphn3 exhibit constitutive GPCR activity that increases cAMP levels and activates PKA signaling in HEK293T cells, and this activity is blocked by the T4L mutation that interferes with G-protein coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C32-C41, C56, C61, C87-C88 are supported by two independent assays in Figure 2: the pink Flamindo cAMP indicator and a newly developed PKA phosphorylation indicator. Both assays show constitutive activity of WT Lphn2/3 that is abolished by T4L mutation and blocked by PDE7b. The use of two independent methods with appropriate controls (PDE7b, forskolin/IBMX) strengthens the conclusion. However, the experiments are performed in HEK293T cells, which may not fully recapitulate the neuronal context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In cultured hippocampal neurons, Lphn3 deletion reduces excitatory synapse density and mEPSC frequency by ~40%, and this deficit is rescued by WT Lphn3 but not by Lphn3-ECD, Lphn3-T4L, or Lphn3-\u0394Ct mutants, indicating that Lphn3 requires both GPCR signaling and cytoplasmic sequences for synapse formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47, C58, C62-C63 are supported by synapse density measurements (Figure 3A) and electrophysiological recordings (Figure 3B-D) in cultured neurons. The failure of all three mutants to rescue the phenotype, despite proper surface expression, provides strong evidence that both GPCR signaling and cytoplasmic sequences are required. The ~40% reduction in both synapse density and mEPSC frequency is internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "d1cbd11c-b170-4694-a8c0-e701932c4034",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In vivo, Lphn2 deletion selectively impairs entorhinal cortical synaptic inputs to CA1 neurons but not Schaffer collateral inputs, and this deficit is rescued by WT Lphn2 but not by T4L-mutant Lphn2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49, C64-C65 are supported by dual-pathway electrophysiological recordings in acute hippocampal slices (Figure 4). The input-output curves are superimposable across conditions, demonstrating technical rigor. The input-specific effect (perforant path but not Schaffer collateral) and the failure of T4L-mutant rescue provide strong evidence for GPCR-dependent, input-specific function of Lphn2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "7fd73b60-1acd-4b57-963c-5ed505230dbb",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In vivo, Lphn3 deletion selectively impairs Schaffer collateral synaptic inputs to CA1 neurons but not entorhinal cortical inputs, and this deficit is rescued by WT Lphn3 but not by T4L-mutant Lphn3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51, C66 are supported by dual-pathway electrophysiological recordings in acute hippocampal slices (Figure 5). The complementary input-specificity to Lphn2 (Schaffer collateral vs. perforant path) and the failure of T4L-mutant rescue provide strong evidence for GPCR-dependent, input-specific function of Lphn3. The superimposable input-output curves demonstrate technical quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "83669882-1ac8-4895-aedd-34b5d2bd9e28",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Retrograde rabies virus tracing demonstrates that Lphn3 deletion impairs synaptic connectivity in CA1 neurons, and this deficit is rescued by WT Lphn3 but not by T4L-mutant Lphn3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54, C91 are supported by monosynaptic rabies tracing experiments (Figure 6). This independent method confirms the electrophysiological findings and demonstrates that the observed deficits reflect actual changes in synaptic connectivity rather than just synaptic strength. The failure of T4L-mutant rescue corroborates the GPCR-dependence observed in electrophysiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "6814a58e-494d-4f51-8094-9fd807d5c7ef",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Latrophilins function as postsynaptic GPCRs that control input-specific excitatory synapse formation in the hippocampus, and GPCR signaling is essential for their function in synapse formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C52, C55, C57, C67 represent the main conclusion of the study. This conclusion is well-supported by converging evidence from multiple experimental approaches: (1) demonstration of GPCR activity in HEK293T cells (Figure 2), (2) failure of GPCR-deficient mutants to rescue synapse formation deficits in cultured neurons (Figure 3), (3) failure of GPCR-deficient mutants to rescue input-specific synaptic connectivity deficits in vivo (Figures 4-5), and (4) confirmation by rabies tracing (Figure 6). The use of two different latrophilins (Lphn2 and Lphn3) strengthens the generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study proposes that latrophilins act as coincidence detectors responding to multiple ligands and that GPCR signaling (possibly via cAMP elevation) is translated into specific organizational activities during synapse formation, but the precise nature of the GPCR signal, the role of cytoplasmic sequences, and the mechanism of context-specificity remain unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24, C59-C60, C68-C79 represent speculative interpretations and acknowledged limitations. While the study demonstrates that GPCR signaling is required, it does not definitively identify the downstream signaling pathway, the specific role of cytoplasmic sequences, or how spatial specificity is achieved. The authors appropriately acknowledge these limitations and propose testable hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    },
+    {
+      "id": "a59afdbf-62d6-48e5-8339-1bb91746ebf8",
+      "content_id": "1c387300-c844-4eee-8ed3-9067534cd3ae",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Technical considerations regarding experimental methods: the fixation procedure produces minor membrane permeability, the superimposable input-output curves attest to data quality, and decreases in synaptic strength might have alternative explanations beyond loss of connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C89-C90 represent methodological considerations and quality assessments. The permeabilization control (Figure 1\u2014figure supplement 1B) supports the validity of surface labeling experiments. The superimposable input-output curves demonstrate experimental rigor. The acknowledgment of alternative interpretations for synaptic strength changes is appropriately addressed by the rabies tracing experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:41:04.841933Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ed37dc4d-fa1c-481b-92e4-427dba249a0b",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "be5ddf41-7395-42ce-84a4-105eb305d32b",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "e229fab9-1fd7-4be2-bea9-d83d3b2a7e03",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "35b2210f-d27f-4c9a-86b4-e1dcc86f1f03",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "aadbe7a1-b5bb-44d4-8159-1453294325e9",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "8a857b83-63c1-4564-be9e-bc3d08500108",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "23507a2d-07be-4c1f-b4a9-be20bcc831ed",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "f505e89d-ae38-4bcc-89ce-93001efa2a0e",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "96761ba5-8125-4261-85bb-9d86c57777cb",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "f83bfa19-3ed5-4158-a163-c2752376b4a0",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "a1e5e5c5-17af-4299-b8b3-e5feb12e45c8",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "15cb3aba-8861-43d7-8c9a-12c69a4dbc1a",
+      "result_id": "e5521735-b9ea-4047-ba58-e4a737c25119"
+    },
+    {
+      "claim_id": "183fdca5-302b-465e-bfd7-cbea1754aa5a",
+      "result_id": "3decb6d7-ea68-4a6e-90fc-20a2b7dee828"
+    },
+    {
+      "claim_id": "7df60688-f9ac-4533-9b21-8649e29a5295",
+      "result_id": "3decb6d7-ea68-4a6e-90fc-20a2b7dee828"
+    },
+    {
+      "claim_id": "b968e66f-91c9-491b-ba23-11578cddd0a0",
+      "result_id": "3decb6d7-ea68-4a6e-90fc-20a2b7dee828"
+    },
+    {
+      "claim_id": "6412b34e-beda-48f0-a5f5-f82af7d0b4f9",
+      "result_id": "3decb6d7-ea68-4a6e-90fc-20a2b7dee828"
+    },
+    {
+      "claim_id": "5c399be4-e928-4ead-a74b-365b3b3f35b5",
+      "result_id": "3decb6d7-ea68-4a6e-90fc-20a2b7dee828"
+    },
+    {
+      "claim_id": "6e12a632-4d56-4092-940e-9885d9e7b961",
+      "result_id": "3decb6d7-ea68-4a6e-90fc-20a2b7dee828"
+    },
+    {
+      "claim_id": "09bc6a49-5548-4588-ac7a-3f3dd94f47cc",
+      "result_id": "3decb6d7-ea68-4a6e-90fc-20a2b7dee828"
+    },
+    {
+      "claim_id": "140908a7-1c5b-481c-b1de-2d99eda81a9f",
+      "result_id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857"
+    },
+    {
+      "claim_id": "596209c4-e787-4d95-af7d-68022df35848",
+      "result_id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857"
+    },
+    {
+      "claim_id": "3cdd1f1f-4f52-45d4-9a47-8a7eb17835e0",
+      "result_id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857"
+    },
+    {
+      "claim_id": "7e5f9ee7-1870-4ce6-91c9-4c897021f91a",
+      "result_id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857"
+    },
+    {
+      "claim_id": "30a59fd9-0ca8-4d8d-9ae6-09e82067b9aa",
+      "result_id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857"
+    },
+    {
+      "claim_id": "1fb0e4d6-94f0-4ee7-9301-2a7df7306750",
+      "result_id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857"
+    },
+    {
+      "claim_id": "957b7e28-d958-4c1d-a9e0-3c8d0c507c49",
+      "result_id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857"
+    },
+    {
+      "claim_id": "24aff343-f0a1-43d8-9ab4-76fe1e9b76f3",
+      "result_id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857"
+    },
+    {
+      "claim_id": "43bd126b-3a93-4ff6-8281-a55f2be3b9ae",
+      "result_id": "f01c5f54-8df1-444c-9ed0-ef0307fe3857"
+    },
+    {
+      "claim_id": "f549eed8-98ed-4468-9642-1d4a5b20b3bf",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "23bf3865-ac10-4dbb-84f5-282c58f2f288",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "88b69248-ec49-4ee3-99a3-efcc12d36346",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "58f6f6c5-f113-462c-9f9f-bdfb0235dc2b",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "9b17bb52-77db-4d2f-9714-967741914cf3",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "9f1541a6-8deb-4a3a-9ba9-30f4943b0b66",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "d2bc5825-82bf-4d07-a266-4187deda6731",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "d30c4e49-b75a-43cd-9f2d-6e92163515fb",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "9548e857-bacb-423e-8f99-f373e1bbd27b",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "c346878a-7d7f-431a-a576-cd60a4e56b03",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "3d5be6d2-2661-4e96-a915-df9aa5af931d",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "d033fc9b-d125-414c-ae94-6db774a69003",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "3486f458-703b-4110-982b-3bd0482014d0",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "cfc8340e-0983-4b1c-9ce2-842b767a947d",
+      "result_id": "cd676e48-7746-4a94-9797-9cd4cc4050d6"
+    },
+    {
+      "claim_id": "acadb31e-1ef9-4137-a60d-c5fad02b08ae",
+      "result_id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3"
+    },
+    {
+      "claim_id": "e4ebf77c-315a-460c-86b9-c9f1f9f7da29",
+      "result_id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3"
+    },
+    {
+      "claim_id": "aa70ee7a-36fe-4920-9de9-0b968be2eef1",
+      "result_id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3"
+    },
+    {
+      "claim_id": "620dbfeb-2cd2-4a3e-a30f-6baffd450a18",
+      "result_id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3"
+    },
+    {
+      "claim_id": "5b6d4481-4b31-4180-adca-d45f011b0ea4",
+      "result_id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3"
+    },
+    {
+      "claim_id": "e27397de-6046-43c7-a761-a1f92845a553",
+      "result_id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3"
+    },
+    {
+      "claim_id": "e683b329-1037-4613-be61-fcc987eb5122",
+      "result_id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3"
+    },
+    {
+      "claim_id": "34147ecd-72f9-4cca-8977-30bd0de4d9c9",
+      "result_id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3"
+    },
+    {
+      "claim_id": "fc353a4f-e2ce-4dd6-83e3-85c4b537f960",
+      "result_id": "4363c10c-ddab-4e50-90f9-d51e9c5c4fc3"
+    },
+    {
+      "claim_id": "2654af48-f813-489d-818e-4035432da48e",
+      "result_id": "d1cbd11c-b170-4694-a8c0-e701932c4034"
+    },
+    {
+      "claim_id": "36ece6ba-b8a8-4a24-a547-bb1b7fdad78f",
+      "result_id": "d1cbd11c-b170-4694-a8c0-e701932c4034"
+    },
+    {
+      "claim_id": "33b5a609-d010-4a65-8af6-33a3a1869610",
+      "result_id": "d1cbd11c-b170-4694-a8c0-e701932c4034"
+    },
+    {
+      "claim_id": "ae2539d2-454c-48a4-9a50-9fcc719e90ba",
+      "result_id": "d1cbd11c-b170-4694-a8c0-e701932c4034"
+    },
+    {
+      "claim_id": "e84d466a-8bc4-4cc6-9d6e-a13ff59a787e",
+      "result_id": "7fd73b60-1acd-4b57-963c-5ed505230dbb"
+    },
+    {
+      "claim_id": "4ee738f5-ff1c-4bec-aaef-e66c4e3771d3",
+      "result_id": "7fd73b60-1acd-4b57-963c-5ed505230dbb"
+    },
+    {
+      "claim_id": "24b345c5-e907-4a74-a4a5-43a4ae39ed43",
+      "result_id": "7fd73b60-1acd-4b57-963c-5ed505230dbb"
+    },
+    {
+      "claim_id": "cf79ba24-eb49-41cc-bf69-18cba1ee2ed2",
+      "result_id": "83669882-1ac8-4895-aedd-34b5d2bd9e28"
+    },
+    {
+      "claim_id": "129f191c-d588-4885-8598-ed3c61e54c11",
+      "result_id": "83669882-1ac8-4895-aedd-34b5d2bd9e28"
+    },
+    {
+      "claim_id": "8e7109f4-27b9-4f4b-b083-70833573c66b",
+      "result_id": "83669882-1ac8-4895-aedd-34b5d2bd9e28"
+    },
+    {
+      "claim_id": "4b9270f5-c5f9-4c72-b488-a5461d129e9c",
+      "result_id": "6814a58e-494d-4f51-8094-9fd807d5c7ef"
+    },
+    {
+      "claim_id": "75882c5d-db9d-4de7-beb3-94fe31b5a107",
+      "result_id": "6814a58e-494d-4f51-8094-9fd807d5c7ef"
+    },
+    {
+      "claim_id": "9dc503b7-94b4-4087-97f6-534ee4000f23",
+      "result_id": "6814a58e-494d-4f51-8094-9fd807d5c7ef"
+    },
+    {
+      "claim_id": "61ba696a-26a6-4d8c-8312-431d0269d064",
+      "result_id": "6814a58e-494d-4f51-8094-9fd807d5c7ef"
+    },
+    {
+      "claim_id": "a08d3432-225c-4626-bcc3-e4c83d070e54",
+      "result_id": "6814a58e-494d-4f51-8094-9fd807d5c7ef"
+    },
+    {
+      "claim_id": "af57b545-6fa1-403d-968c-0b7d6e3edc59",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "a9dbd80b-1afd-4b25-8819-2676cb56d541",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "0917a389-1668-41ef-83bf-df473a5e1e0a",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "1ac34351-913d-4d5a-a303-36d18f1e452f",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "421f79eb-d383-4cc1-b5ac-191034f7ffdb",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "2bdf40a8-1fb0-4508-9bfc-1bdc4d40a085",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "bb94afb4-b650-49e9-8dab-8e60b32fec8e",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "2cd02b26-5be3-4a02-827f-449578972e42",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "81a2ba45-88df-4c53-88ca-b840efe7d127",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "6d438198-06db-498d-989d-82be07efd6d3",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "3426eedb-2709-4dbd-aea5-d280edd09baf",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "65c07a50-28a8-42dd-a6ff-d7c5af2d0d4f",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "7823ab94-c5e3-4d45-9709-37bfff1e467e",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "aa05d2e8-909f-4be7-9578-b0365741efbf",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "3edabc5d-3abe-4f6a-a60c-ef9c58de8938",
+      "result_id": "9e32ee9a-3501-4ae6-924b-75938b8d7c6b"
+    },
+    {
+      "claim_id": "73297414-5387-4702-bf56-97c040e4695e",
+      "result_id": "a59afdbf-62d6-48e5-8339-1bb91746ebf8"
+    },
+    {
+      "claim_id": "963212ac-2fe7-46b0-9f97-89149c6e6a7d",
+      "result_id": "a59afdbf-62d6-48e5-8339-1bb91746ebf8"
+    },
+    {
+      "claim_id": "caf5b4bd-46e1-4d5d-a92c-5894c506d11e",
+      "result_id": "a59afdbf-62d6-48e5-8339-1bb91746ebf8"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2263 @@
+{
+  "submission": {
+    "id": "b780f4c2-fa3d-4ccc-8043-abbcae54623a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:31:08.792165Z",
+    "updated_at": "2025-12-03T19:31:08.792165Z"
+  },
+  "content": [
+    {
+      "id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "submission_id": "b780f4c2-fa3d-4ccc-8043-abbcae54623a",
+      "content_type": "manuscript",
+      "content_text": "# Identification of a weight loss-associated causal eQTL in MTIF3 and the effects of MTIF3 deficiency on human adipocyte function\n\n## Authors\n\n- Mi Huang<sup>1</sup> ([ORCID: 0000-0001-6938-5322](https://orcid.org/0000-0001-6938-5322))\n- Daniel Coral<sup>1</sup>\n- Hamidreza Ardalani<sup>2</sup>\n- Peter Spegel<sup>2</sup>\n- Alham Saadat<sup>3</sup>\n- Melina Claussnitzer<sup>3</sup>\n- Hindrik Mulder<sup>4</sup> ([ORCID: 0000-0002-6593-8417](https://orcid.org/0000-0002-6593-8417))\n- Paul W Franks<sup>1</sup> \u2020\n- Sebastian Kalamajski<sup>1</sup> ([ORCID: 0000-0002-6600-9302](https://orcid.org/0000-0002-6600-9302)) \u2020\n\n### Affiliations\n\n1. Genetic and Molecular Epidemiology Unit, Department of Clinical Sciences, Clinical Research Centre, Lund University Malm\u00f6 Sweden ([ROR:012a77v79](https://ror.org/012a77v79))\n2. Department of Chemistry, Centre for Analysis and Synthesis, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))\n3. Metabolism Program, Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))\n4. Unit of Molecular Metabolism, Department of Clinical Sciences, Clinical Research Centre, Lund University Malmo\u0308 Sweden ([ROR:012a77v79](https://ror.org/012a77v79))\n5. Department of Nutrition, Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenetic variation at the MTIF3 (Mitochondrial Translational Initiation Factor 3) locus has been robustly associated with obesity in humans, but the functional basis behind this association is not known. Here, we applied luciferase reporter assay to map potential functional variants in the haplotype block tagged by rs1885988 and used CRISPR-Cas9 to edit the potential functional variants to confirm the regulatory effects on MTIF3 expression. We further conducted functional studies on MTIF3-deficient differentiated human white adipocyte cell line (hWAs-iCas9), generated through inducible expression of CRISPR-Cas9 combined with delivery of synthetic MTIF3-targeting guide RNA. We demonstrate that rs67785913-centered DNA fragment (in LD with rs1885988, r2 > 0.8) enhances transcription in a luciferase reporter assay, and CRISPR-Cas9-edited rs67785913 CTCT cells show significantly higher MTIF3 expression than rs67785913 CT cells. Perturbed MTIF3 expression led to reduced mitochondrial respiration and endogenous fatty acid oxidation, as well as altered expression of mitochondrial DNA-encoded genes and proteins, and disturbed mitochondrial OXPHOS complex assembly. Furthermore, after glucose restriction, the MTIF3 knockout cells retained more triglycerides than control cells. This study demonstrates an adipocyte function-specific role of MTIF3, which originates in the maintenance of mitochondrial function, providing potential explanations for why MTIF3 genetic variation at rs67785913 is associated with body corpulence and response to weight loss interventions.\n\n## Introduction\n\nOver 650 million people are obese and often suffer from metabolic abnormalities, including dyslipidemia, type 2 diabetes, and hypertension (Adams et al., 2006; May et al., 2020). It is widely believed that obesity results from an interplay between genetic and environmental factors (Thomas, 2010), but the biological mechanisms behind these interactions are poorly understood.\n\nGenetic variation (rs12016871) at MTIF3 (encoding the Mitochondrial Translation Initiation Factor 3 protein [Kuzmenko et al., 2014]) has been robustly associated with body mass index (BMI) in humans (Locke et al., 2015). Several subsequent studies have linked MTIF3 genetic variation with the response to weight loss interventions, including diet, exercise, and bariatric surgery (Papandonatos et al., 2015; Rasmussen-Torvik et al., 2015), and with weight-related effects of habitual diet (Nettleton et al., 2015). For example, analyses in two of the world\u2019s largest randomized controlled weight loss trials (Diabetes Prevention Program [DPP] and Look AHEAD) found that homozygous minor allele carriers (rs1885988) were slightly more prone to weight gain in the control arm, yet achieved significantly greater weight loss at 12-month post-randomization and retained lost weight longer (18\u201336 months) than major allele carriers (Papandonatos et al., 2015). Elsewhere, the same locus has been associated with greater and more sustained weight loss following bariatric surgery (Rasmussen-Torvik et al., 2015).\n\nMtif3 loss in the mouse results in cardiomyopathy owing to impaired translation initiation from mitochondrial mRNAs and uncoordinated assembly of OXPHOS complexes in heart and skeletal muscle (Rudler et al., 2019). In the human hepatocyte-like HepG2 cell line, MTIF3 loss decreases the translation of the mitochondrial-encoded ATP synthase membrane subunit 6 (ATP6) mRNA without affecting cellular proliferation (Chicherin et al., 2020). No human genomic mutations leading to total MTIF3 deficiency have been reported, but the studies outlined above suggest that MTIF3 may influence obesity predisposition and weight loss potential by modulating mitochondrial function; thus, MTIF3 may play a key role in adipose tissue metabolic homeostasis, as adipocyte mitochondria not only provide ATP, but also impact adipocyte-specific biological processes such as adipogenesis, lipid metabolism, thermogenesis, and regulation of whole-body energy homeostasis (Gregoire et al., 1998; Boudina and Graham, 2014).\n\nIn this study, we aimed to experimentally dissect the molecular mechanisms that could underlie the correlation between MTIF3 genetic variation and weight loss intervention outcomes. We hypothesized that among the common genetic variants in MTIF3, one (or more) is causal for altered MTIF3 expression. Secondly, we hypothesized that MTIF3 content in human white adipocytes influences adipocyte-specific, obesity-related traits under basal and perturbed metabolic conditions. For the latter, we used glucose restriction to mimic the effects of in vivo lifestyle interventions focused on energy restriction and expenditure.\n\n## Results\n\n### rs67785913 is a regulatory variant for MTIF3 expression\n\nThe MTIF3 rs1885988 C allele is associated with enhanced weight loss and weight retention following lifestyle intervention trials in DPP and Look AHEAD cohorts (Papandonatos et al., 2015). In the GTEx database, the rs1885988 associates with an eQTL in subcutaneous fat (Figure 1A), with C allele carriers having significantly higher MTIF3 expression (normalized effect size: 0.15, p = 0.0000032).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig1-v2.jpg)\n\n**Figure 1.:** (A) Violin plot of MTIF3 expression in subcutaneous adipose tissue for rs1885988 from Genotype-Tissue Expression (GTEx) Project eQTL. (B) Same as in (A), but for rs67785913. (C) Representative Sanger sequencing traces of rs67785913 CTCT/CTCT and CT/CT clones obtained after CRISPR/Cas9-mediated allele editing and single-cell cloning. (D) Normalized Z-score plot of luciferase reporter assays using vectors carrying different DNA fragments of the MTIF3 gene cloned into pGL4.23 luciferase reporter vector. Hypothesis testing was performed by comparing the transcriptional enhancer activity of each of the 12 vectors (F1\u201312) to the empty vector (minP). All data were plotted as mean\u202f\u00b1\u202fstandard deviation (SD), n = 4 independent experiments, p values are presented in each graph; ordinary one-way analysis of variance (ANOVA) was used for statistical analysis. (E) Relative MTIF3 expression (mRNA) in rs67785913 allele-edited cells 2 days before, at, or 2 days post-differentiation induction (day \u22122, 0, and 2, respectively). n = 3 clonal populations for CTCT/CTCT genotype, n = 5 clonal populations for CT/CT genotype, error bars show SD. (F) as in (E), but for GTF3A (mRNA) expression. Two-tailed Student\u2019s t-test was used; p values are presented in each graph.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** We then used qPCR to quantify adipogenesis marker gene expression and mitochondrial content (mtDNA). Neither PPARG, ADIPOQ, CEBPA, SREBF1, and FABP4 gene expression (panels A\u2013E) or mitochondrial content (panel F) were significantly different between the two rs67785913 genotypes. n = 3 clonal cell lines with CTCT/CTCT genotype, n = 5 clonal cell lines for CT/CT genotype. Error bars show standard deviation. Statistical analyses were performed using paired Student\u2019s t-test, and p values are presented in the graphs.\n\nTo experimentally validate and fine map the potential causal DNA variation in the haplotype block tagged by rs1885988, we looked up all tightly linked (r2 > 0.8) single-nucleotide polymorphisms (SNPs) in HaploReg database v4.1 (Ward and Kellis, 2012). We then PCR-amplified and cloned 12 DNA fragments from that haploblock, altogether comprising the linked SNP loci, into luciferase reporter plasmids. As shown in Figure 1D, by comparing the luciferase signals with minimal promoter (minP) construct, only one DNA fragment (F11), encompassing the rs67785913 locus, could enhance luciferase transcription. Coincidentally, the rs67785913 also shows an eQTL effect on MTIF3 expression in subcutaneous adipose tissue in GTEx database, with the major CT allele associated with lower expression than the minor CTCT allele (normalized effect size: \u22120.16, p = 3.0 \u00d7 10\u22128) (Figure 1B). To demonstrate an allele-specific regulatory effect on MTIF3 expression, we then used CRISPR-Cas9 to substitute the major CT for the minor CTCT allele at the rs67785913 locus in the pre-adipocyte hWAs cell line. Due to rather low CRISPR editing efficiency of that locus, we needed to genotype over 700 single-cell clones to obtain five CT/CT and three CTCT/CTCT clones without random indels, as confirmed by Sanger sequencing (Figure 1C). We then examined MTIF3 expression in these clones at pre- and post-adipogenic differentiation induction, and found rs67785913 CTCT/CTCT to confer higher MTIF3 expression at all time points (Figure 1E), although without apparent change on adipogenic differentiation markers (Figure 1\u2014figure supplement 1). As rs67785913 also correlates with an altered GTF3A expression in other tissues (e.g., muscle, lung), we also detected, but found no apparent difference in GTF3A expression in rs67785913-edited cells (Figure 1F).\n\n### Generating inducible Cas9-expressing pre-adipocyte cell line (hWas-iCas9)\n\nNext, we intended to use the rs67785913-edited cells in functional genomics experiments to examine the phenotypic consequences of the eQTL. To conduct meaningful studies of gene \u00d7 environment interaction, it is desirable to use similarly differentiated cells with comparable baselines (e.g., similar triglyceride or mitochondrial content). Unfortunately, marginally different passage numbers between control and experimental groups can confound adipogenic differentiation. This problem can originate during single-cell cloning to create genetic knockouts/knockins, and became apparent with our rs67785913 allele-edited cells. While the mean values of adipogenic markers were similar in both rs67785913 genotypes (Figure 1\u2014figure supplement 1), the variation between clones of the same genotype precluded the use of these cells in gene \u00d7 environment studies. To circumvent this, we instead established an inducible Cas9-expressing pre-adipocyte cell line that allowed us to knockout MTIF3 after completed adipogenic differentiation. As illustrated in Figure 2, we co-transfected hWAs with two plasmids: one encoding piggyBac transposase, and the other carrying piggyBac transposon-flanked doxycycline-inducible Cas9 and constitutively expressed puromycin resistance genes. In this setup, piggyBac transposase drives the integration of the piggyBac-transposon-flanked genes, and transgenic cells are then selected and expanded in puromycin-supplemented culture medium. We have thus obtained an hWAs cell line with doxycycline-inducible Cas9 expression and maintained adipogenic differentiation capacity (henceforth called hWAs-iCas9). The Cas9-expressing differentiated cells could then be transfected with relatively low molecular weight synthetic single guide RNAs (sgRNAs) that complex with intracellularly expressed Cas9 and target the gene exon of interest to generate random indels (in essence, gene knockouts). We used this method here to determine the functional role of MTIF3 in adipocyte biology.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig2-v2.jpg)\n\n### Generation of MTIF3 knockout in hWAs-iCas9 mature adipocytes\n\nTo investigate the role of MTIF3 in human adipocyte development and energy metabolism we generated stable MTIF3 knockouts in differentiated hWAs-iCas9 adipocytes. We designed Cas9-specific sgRNA to generate random indels in the exon expressed in all three MTIF3 protein-encoding transcripts (Figure 3A) and obtained a >80% reduction in MTIF3 protein levels in every experiment, as assessed by western blotting (Figure 3B\u2013D, Figure 3\u2014figure supplement 1, and Figure 4A, B). To assess off-target effects of CRISPR-Cas9, we also performed T7EI assays on PCR-amplified top 5 predicted off-target sites and did not observe any detectable off-targeting (data are not shown).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig3-v2.jpg)\n\n**Figure 3.:** (A) An illustration of Cas9-specific single guide RNA (sgRNA)-binding site in the exon expressed in all three MTIF3 protein-encoding transcripts. (B) Representative Sanger sequencing of control and knockout hWAs mature adipocytes. (C) Immunoblots of adipocyte markers in scrambled control and MTIF3 knockout adipocytes, n = 5 independent experiments. (D) Quantitative analysis of MTIF3 band densities in (C). (E) Quantitative analysis of ACC, FABP4, and FAS band densities in (C). (F) Representative Oil-red O staining images of control and MTIF3 knockout in hWAs mature adipocytes. Scale bar is 200 \u00b5m. (G) Total triglyceride content in scrambled control (SC) and MTIF3 knockout (KO) cells. n = 3 independent experiments. Error bars show standard deviation in all plots. Statistical analysis was performed using two-tailed Student\u2019s t-test, p values are presented in each graph. Uncropped blot images for (C) and raw.scn data files can be found in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** After 12 days of differentiation, we assessed MTIF3 knockout efficiency using western blots, and examined adipogenic marker gene expression by RT-qPCR. MTIF3 expression was efficiently decreased in the knockout cells in n = 6 independent experiments (panels A, B). There were no significant differences between scrambled control and MTIF3 knockout cells on adipogenesis markers PPARG, ADIPOQ, CEBPA, SREBF1, and FABP4 expression (panel C); n = 5 independent experiments. Error bars show standard deviation. Statistical analyses were performed using paired Student\u2019s t-test, and p values are presented in the graphs. Uncropped blot images for panel A and raw.scn data files can be found in Figure 3\u2014figure supplement 1\u2014source data 1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig4-v2.jpg)\n\n**Figure 4.:** (A) Immunoblots of mitochondrial genome-encoded proteins in scrambled control and MTIF3 knockout adipocytes. (B) Quantitative analysis of band densities in (A). (C) qPCR for mitochondrial gene expression in scrambled control and MTIF3 knockout adipocytes, n = 5 independent experiments. (D) Relative mitochondrial DNA content in scrambled control and MTIF3 knockout adipocytes, n = 5 independent experiments. (E) Immunoblots of mitochondrial OXPHOS complex assembly after Blue Native-PAGE electrophoresis, n = 4 independent experiments. (F) Quantitative analysis of band densities in (E). Error bars show standard deviation in all plots. Statistical analysis was performed using two-tailed Student\u2019s t-test, p values are presented in each graph. Uncropped blot images for (A) and raw.scn data files can be found in Figure 4\u2014source data 1. Uncropped blot images for (E) and raw.scn data files can be found in Figure 4\u2014source data 2.\n\n### MTIF3 knockout in mature adipocytes does not affect adipogenic marker or lipid content\n\nAlthough the MTIF3 knockout in hWAs-iCas9 cells was generated after the cells were differentiated, we wanted to ensure the genetic perturbation did not affect adipogenic markers or triglyceride content, as that could confound results from downstream functional studies. Incidentally, we observed that the quantities of the adipogenic markers, including ACC, FABP4, and FAS were comparable in control and MTIF3 knockout cells (Figure 3C, E; see also Figure 3\u2014figure supplement 1). Similarly, there were no apparent differences in Oil-red O or total triglyceride content (Figure 3F, G).\n\n### MTIF3 knockout disrupts mitochondrial DNA-encoding gene and protein expression, mitochondrial content, as well as mitochondrial OXPHOS assembly in hWAs-iCas9 adipocytes\n\nMTIF3 is a mitochondrial translation initiation factor; thus, we examined the effects of MTIF3 ablation on differentiated hWAs adipocyte mitochondrial respiration chain. Assessed by western blotting, the MTIF3 knockout cells had significantly decreased COX II (subunit of OXPHOS complex IV) and ND2 (subunit of OXPHOS complex I), trending decrease of CYTB (subunit of OXPHOS complex III), and unchanged ATP8 (subunit of OXPHOS complex V) content (Figure 4A , B). Moreover, using qPCR, we observed an altered expression of several mitochondrial DNA-encoding genes. Specifically, MTIF3 deficiency led to higher expression of MT-ND1, MT-ND2, a trending increase of MT-ND4, and lower expression of MT-ND3, and MT-CO3 (Figure 4C). In addition, we also found significantly reduced mitochondrial content in MTIF3 knockout adipocytes (Figure 4D). Taken together, the above data suggest MTIF3 knockout disrupts mitochondrial DNA-encoding gene and protein expression.\n\nNext, we hypothesized the above observations could have originated from the insufficient MTIF3 supply during OXPHOS complex assembly (a role previously ascribed to MTIF3 [Rudler et al., 2019]). To test this, we used Blue Native-PAGE to examine OXPHOS complexes in mitochondria isolated from MTIF3 knockout adipocytes. MTIF3 deficiency led to decreased complex III2/IV2 and IV1, and a trending decreased complex V/III2 + IV1 assembly. In contrast, OXPHOS complex II assembly was significantly increased in MTIF3 knockout cells (Figure 4E, F). Interestingly, we also observed faster-migrating undefined bands in MTIF3 knockout adipocytes (Figure 4E), which could be single chain proteins, or mistranslation or degradation products. Lastly, The OXPHOS complex I + III2 + IVn appeared to be less abundant in MTIF3 knockout mitochondria, although the bands appeared more diffuse and could not be quantified (Figure 4E).\n\n### MTIF3 knockout affects mitochondrial respiration in hWAs-iCas9 adipocytes\n\nHaving established the role of MTIF3 in adipocyte mitochondria OXPHOS complex assembly, and in mitochondrial gene expression, we then investigated the mitochondrial function in MTIF3-ablated differentiated hWAs adipocytes using Seahorse Mito Stress Test. Additionally, to avoid potential cofounders caused by the high glucose content in the differentiation medium, we adapted the cells to 1 g/l glucose growth medium for 3 days before running the assay. As shown in Figure 3, MTIF3 knockout cells exhibited lower basal oxygen consumption rate (OCR), as well as lower ATP-forming capacity, the latter estimated by calculating OCR decrease after blocking ATP synthase with oligomycin (Figure 5A\u2013C). MTIF3 knockout cells also showed a trending decrease in maximal respiration OCR (Figure 5D). Furthermore, both MTIF3 knockout and control cells, had comparable proton leak OCR, non-mitochondrial respiration OCR and coupling efficiency (Figure 5E\u2013G).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig5-v2.jpg)\n\n**Figure 5.:** (A) The average oxygen consumption rate (OCR) traces during basal respiration, and after addition of oligomycin, FCCP, and rotenone/antimycin A. (B) Basal respiration OCR, n = 4 different cell passages. (C) ATP production OCR, n = 4 different cell passages. (D) Maximal respiration OCR, n = 4 different cell passages. (E) Proton leak OCR, n = 4 different cell passages. (F) Non-mitochondrial respiration OCR, n = 4 different cell passages. (G) Coupling efficiency, n = 4 different cell passages. Error bars show standard deviation. Statistical analyses were performed using paired Student\u2019s t-test in each condition, p values are presented in each graph.\n\n### MTIF3 knockout affects hWAs-iCas9 adipocyte endogenous fatty acid oxidation\n\nNext, we used Seahorse to assess the endogenous fatty acid oxidation in MTIF3 knockout versus control cells treated with etomoxir (an inhibitor of carnitine palmitoyl transferase). We found that MTIF3 ablation mimics the effect of etomoxir on basal endogenous fatty acid oxidation OCR. Furthermore, while etomoxir decreases basal fatty acid oxidation OCR in control cells, it does not markedly decrease it in MTIF3 knockout cells (Figure 6A, B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig6-v2.jpg)\n\n**Figure 6.:** (A) A representative Seahorse oxygen consumption rate (OCR) trace for endogenous fatty acid oxidation assay. MTIF3 knockout and scrambled control adipocytes were treated with or without etomoxir for 15 min before the assay. Following the basal OCR measurement, oligomycin, FCCP (carbonyl cyanide-p-trifluoromethoxyphenylhydrazone), and rotenone + antimycin A were added sequentially to measure the detection of ATP production OCR, maximal respiration OCR and non-mitochondrial respiration OCR. (B) Basal endogenous fatty acid oxidation OCR in scrambled control (SC) and MTIF3 knockout (KO) adipocytes, n = 4 independent experiments. (C) Upper panel: workflow of glucose restriction in differentiated adipocytes; Lower left panel: total triglyceride content in scrambled control (SC) and MTIF3 knockout (KO) adipocytes in 25 mM glucose conditions; Lower right panel: triglyceride content in adipocytes cultured in glucose-restricted conditions (5, 3, and 1 mM) relative to adipocytes cultured in 25 mM glucose, n = 4 independent experiments. (D) Z-score-normalized data for glycerol release in scrambled control and MTIF3 knockout adipocytes under basal, insulin-stimulated, and isoproterenol-stimulated conditions, n = 4 independent experiments. (E) qPCR for mitochondrial and adipocyte-related gene expression in scrambled control and MTIF3 knockout adipocytes. Error bars show standard deviation in all plots. Statistical analysis was performed using two-tailed Student\u2019s t-test, p values are presented in each graph.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** To assay this, we incubated the differentiated adipocytes in glycerol release assay medium supplemented with either 25 or 1 mM glucose. We then determined glycerol content in each sample after 2-hr incubation. We found no differences in glycerol release between scrambled control and MTIF3 knockout cells cultured in the same glucose concentration. Notably, both scrambled control and MTIF3 knockout cells had significantly decreased glycerol release in 1 mM glucose restriction condition. n = 3 independent experiments, with 3 replicates per group and experiment. Error bars show standard deviation. Statistical analyses were performed using paired Student\u2019s t-test, and p values are presented in the graph.\n\n### MTIF3 knockout affects hWAs-iCas9 adipocyte triglyceride content after glucose restriction challenge\n\nTo mimic the interactions between MTIF3 content and dietary intervention on weight change, we generated hypertrophic control and MTIF3 knockout hWAs-iCas9 adipocytes and then used glucose-limited medium, not supplemented with free fatty acids (FFAs), to mimic energy restriction in vivo (schematic shown in Figure 6C). Triglyceride content decreased both in control and MTIF3 knockout cells after 3 days of different levels of glucose restriction when compared with 25 mM glucose medium. Interestingly, a more extensive decrease in triglyceride content occurred in control cells cultured in 1 mM glucose medium (p = 0.053), and a similar trending decrease, albeit with higher coefficient of variation, occurred in 3 and 5 mM glucose medium (Figure 6C).\n\n### MTIF3 knockout does not affect lipolysis-mediated glycerol release in hWAs adipocytes\n\nOwing to the effects of MTIF3 ablation on triglyceride content and on fatty acid oxidation, described above, we then examined the effects of MTIF3 knockout on lipolysis. We measured basal, insulin-attenuated, and isoproterenol-stimulated glycerol release in differentiated hWAs cells. As shown in Figure 6D, in all three conditions, glycerol release in control and MTIF3 knockout cells was comparable. In addition, basal glycerol release in glucose-restricted conditions was similar (Figure 6\u2014figure supplement 1), and significantly reduced in low glucose versus high glucose assay medium.\n\n### MTIF3 knockout affects mitochondrial function- and fatty acid oxidation-related gene expression\n\nNext, we examined how MTIF3 ablation affects the gene expression programmes pertinent to mitochondrial function, fatty acid oxidation, lipolysis and lipid catabolism. As shown in Figure 6E, MTIF3 knockout cells had decreased expression of the mitochondria-related MT-CO1, and the fatty acid oxidation-related ACADM and ACAT1, but unchanged expression of other genes involved in mitochondrial function and lipid metabolism (TFAM, TOMM20, PRDM16, CPT1B, ABHD5, PNPLA2, and ACACB).\n\n### MTIF3 knockout results in glucose level-depending alterations in metabolism\n\nConsidering the observed effect of MTIF3 ablation on mitochondrial function and fatty acid oxidation, we assessed the metabolite profile in MTIF3 knockout cells. Using combined GC/MS and LC/MS metabolite profiling resulted in relative quantification of 110 metabolites. First, we analyzed metabolite profiles at a global level using PCA. The score plot reveals a clear systematic difference in the metabolite profile between cells in 25 mM glucose versus in glucose restriction (Figure 7A). Interestingly, differences between MTIF3 knockout and control cells at 25 mM glucose are observed along principal component 1 (PC1), whereas differences between genotypes at glucose restriction are observed along PC2, suggesting the effect of MTIF3 ablation to depend on the calorie level. Next, to identify alterations in metabolite levels underlying this differential response, we analyzed data using orthogonal projections to latent structures discriminant analysis (OPLS-DA) separately at 25 mM glucose condition (two components R2 = 0.82, Q2 = 0.66) and at glucose restriction (two components, R2 = 0.95, Q2 = 0.52). These analyses revealed systematic differences between genotypes at both growth conditions (Figure 7 B, C). Next, to examine whether the differences between genotype depended on growth condition, we combined the correlations from the two OPLS-DA models into a shared and unique structures plot (Figure 7D). These analyses revealed levels of intermediates in cytosolic metabolic pathways connected to the glycolysis, such as glycerate 3-phosphate, glycerol 2-phosphate, UDP-N-acetylglucosamine, and ribose 5-phosphate, to be lower in MTIF3 knockout cells at both glucose concentrations. Interestingly, levels of fatty acids, ranging from 9 to 17 carbons and including several odd-chain fatty acids, were lower in the MTIF3 knockout cells only at 25 mM glucose condition. At glucose-restricted conditions, levels of both essential and non-essential amino acids were lower in the knockout. Finally, we analyzed data using two-way analysis of variance (ANOVA), incorporating glucose concentration and genotype, thereby providing information on effects at the individual metabolite level. These analyses revealed 18 and 20 significantly different metabolites between control and MTIF3 knockout cells at 25 mM glucose condition and glucose-restricted conditions, respectively (q <0.05). These included ribose 5-phosphate, glycerate 3-phosphate, glycerol 2-phosphate, and glycerol 3-phosphate (Figure 7E).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/84168/elife-84168-fig7-v2.jpg)\n\n**Figure 7.:** (A) Principal component analysis (PCA) score plot displaying the discrimination between MTIF3 knockout and control cells in normal and glucose-restricted conditions (PC1: 28%, PC2: 19%). (B) Orthogonal projections to latent structures discriminant analysis (OPLS-DA) score plot showing classification of MTIF3 knockout and control cells in 25 mM glucose condition. (C) OPLS-DA score plots showing classification of MTIF3 knockout and control cells in glucose-restricted condition. (D) Shared and unique structures (SUS) plot, based on OPLS-DA models in (B, C), showing glucose concentration-dependent differences between MTIF3 knockout and control cells. (E) Box plots showing the abundance of some of the significantly altered metabolites in normal and MTIF3 knockout cells in normal and glucose-restricted conditions. Statistical analysis was performed using two-way analysis of variance (ANOVA) test, p values are presented in each graph.\n\n## Discussion\n\nExcessive weight gain caused by dietary excess, and its effects on adipocyte lipid metabolism, can cause life-threatening disease (Appleton et al., 2013; Denis and Obin, 2013; Chu et al., 2017; Lotta et al., 2018). Findings from clinical trials (Papandonatos et al., 2015), a bariatric surgery case series (Rasmussen-Torvik et al., 2015) and epidemiological cohorts (Nettleton et al., 2015) showed the MTIF3 variation modulates weight loss-promoting exposures on body weight (see also UK Biobank analysis in Supplementary file 1b). Here, we validated MTIF3 rs1885988 C allele correlates with higher MTIF3 expression in subcutaneous fat tissue, and our in vitro luciferase reporter assay and CRISPR-Cas9 genome editing results revealed that the tightly linked rs67785913 variant is likely to be the actual eQTL for MTIF3 expression (Figure 1).\n\nPre-adipocyte cell lines have been used extensively for studying adipogenic differentiation (Ruiz-Ojeda et al., 2016), but their application for lipid metabolism studies has been limited, especially in the context of gene\u2013environment interaction. This is largely due to the variation of differentiation capacity across cell passages (Poulos et al., 2010) and differential genetic effects on adipocyte differentiation (Kamble et al., 2020), which can alter baseline phenotypes in differentiated cells. Therefore, we established an inducible Cas9-expressing human pre-adipocyte cell line (hWAs-iCas9), which enabled us to generate gene knockout of interest in differentiated adipocytes, thus circumventing these limitations (Figure 2). Using the inducible knockout cell model, we then tested interactions between MTIF3 and environmental changes (lifestyle mimetics). Our data reveal that MTIF3 deficiency mediated disrupted mitochondrial respiration, probably as a consequence of decreased OXPHOS complex assembly. This led to perturbed cellular functions, including reduced fatty acid oxidation and a trending increase in intracellular triglyceride content. These data indicate that MTIF3 plays an important role in lipid metabolism in human adipocytes.\n\nIn adipose tissue, mitochondria play an essential role not only by ensuring ATP supply but also by triggering cellular signaling pathways that require reactive oxygen species generated by OXPHOS complexes I and III (Tormos et al., 2011). These, and complexes IV and V, are partially encoded by mitochondrial DNA (Maechler and Wollheim, 2001). The post-transcriptional rate-limiting translation step can be promoted by MTIF3, as it facilitates initiation complex formation on mitochondrial 55S ribosomes in the presence of MTIF2, fMet-tRNA, and poly(A,U,G) (Bhargava and Spremulli, 2005). Previous studies have shown that loss of MTIF3 results in an imbalanced assembly of OXPHOS complexes in muscle and heart in mouse (Rudler et al., 2019) and decreased translation of ATP6 mRNA in hepatocyte-like HepG2 cells (Chicherin et al., 2020). Our data show that in adipocytes MTIF3 deficiency results in lower content of mitochondrial DNA-encoding proteins and altered expression of several mitochondrial DNA-encoding genes. Furthermore, it leads to disassembly of mitochondrial respiration OXPHOS complex, along with impaired mitochondrial respiration rate (Figures 4 and 5). Altogether, our results suggest that MTIF3 vastly affects the mitochondrial electron transport chain.\n\nMitochondrial dysfunction in white adipose tissue has been frequently associated with obesity (Kaaman et al., 2007), with the presumed mechanisms being decreased fatty acid oxidation and ATP production (reviewed in Heinonen et al., 2020). We have found that one causal link connecting these factors may be the MTIF3 content (Figures 5 and 6). Furthermore, a previous study described an inverse relationship between mitochondrial capacity and weight change (Jokinen et al., 2018); thus, conceivably, any genetic variation-modulated change in MTIF3 expression could influence a dietary intervention outcome. We attempted to test this hypothesis in vitro, exposing hypertrophic adipocytes to glucose restriction, thereby mimicking weight loss-promoting exposures in vivo. We found that MTIF3-deficient adipocytes exposed to glucose restriction challenge responded less through changed triglyceride content, indicating limited capacity for lipid metabolism under glucose restriction (Figure 6). Intriguingly, we did not observe altered lipolysis (glycerol release) in MTIF3 knockouts, either in the presence or absence of insulin and isoproterenol, or during glucose restriction. Here, we speculate that MTIF3 knockouts, having reduced fatty acid oxidation, re-esterify the released fatty acids to triglycerides, and thus retain more triglycerides during glucose restriction.\n\nMitochondrial function is robustly associated with insulin sensitivity (B\u00f6hm et al., 2020; Pietil\u00e4inen et al., 2008; Heinonen et al., 2015), both of which can be improved through lifestyle intervention aiming at weight loss (Phielix et al., 2010; Toledo et al., 2007; Larson-Meyer et al., 2006; Civitarese et al., 2007). Furthermore, impaired adipocyte differentiation derived from mitochondrial dysfunction in adipose tissue often associates with insulin resistance in humans and animal models (Sakers et al., 2022; Zhu et al., 2022). In our study, we did not observe impaired adipocyte differentiation due to MTIF3 deficiency or rs67785913 eQTL. These results, however, may not be directly translatable to in vivo conditions, in part because in vitro differentiation protocols employ relatively highly concentrated adipogenic compounds. Further in vivo studies are therefore needed to establish any link between MTIF3 content and insulin resistance. Similarly, long-term in vivo studies on the effect of altered MTIF3 expression on body weight are warranted to illuminate the translatability of the short-term or low effect size in vitro experiments (e.g., Figures 5 and 6). We envisage that the MTIF3 effect on adipocyte metabolism, while not dramatic in some of the presented data, could translate into larger effect size over time in vivo. Here, MTIF3 effect on metabolism in other tissues (e.g., muscle) would further contribute to body weight regulation. Lastly, one should bear in mind that our in vitro data were generated in cells highly depleted of MTIF3, and the extent to which a more moderate MTIF3 deficiency in vivo (e.g., conferred by common genetic variants) influences adipogenic differentiation or long-term diet-induced weight loss is currently unknown.\n\nFinally, the metabolomic analysis added another dimension to the role of MTIF3 in regulating adipocyte metabolism (Figure 7). The lower content of glycolysis intermediates and odd-chain fatty acids in MTIF3 knockout adipocytes could indicate blunted lipogenesis, while the decreased essential and non-essential amino acid level in MTIF3 knockout cells under glucose restriction could be an adaption to the lower energy supply owing to impaired mitochondrial function (Hansson et al., 2004). The metabolite data, and the earlier described lower fatty acid oxidation capacity of MTIF3-deficient cells, suggest that MTIF3 plays a vital role in triglyceride metabolism in adipocytes, and provides further insight into the previously reported role of this protein on weight loss induced by dietary intervention (Papandonatos et al., 2015).\n\nIn summary, we experimentally demonstrated that the common genetic variant rs67785913 is a functional polymorphism that causes modulated MTIF3 expression. Our functional genomics studies demonstrate that MTIF3 is essential for mitochondrial electron transport chain complex assembly, mitochondrial function, and lipid metabolism in human adipocyte cell lines. MTIF3 content may also influence adipocyte triglyceride content in conditions that mimic dietary restriction, reflecting a gene x environment interaction. Since our findings show that higher MTIF3 content in adipocytes increases mitochondrial function, this helps explain the previously observed interaction between MTIF3 locus and weight loss interventions. Furthermore, this suggests, although it remains to be demonstrated, that people who carry genetic variants that increase MTIF3 expression (e.g., the rs67785913 CTCT allele) may benefit more from lifestyle interventions targeting weight loss.\n\nLastly, we established a novel, efficient, and simple method to generate gene knockouts in differentiated adipocyte cell lines, and the method should be suitable for generating other gene knockouts.\n\n## Materials and methods\n\n### Allele-specific MTIF3 expression in subcutaneous adipose tissue\n\nData and plots presented in this manuscript for allele-specific MTIF3 expression in subcutaneous adipose tissue were obtained from GTEx Portal (https://www.gtexportal.org/home/) on 10/5/2022.\n\n### Cell culture\n\nA human white pre-adipocyte cell line (hWAs) was previously isolated and immortalized from human subcutaneous white adipose tissue of a female subject, aged 56 with a BMI of 30.8. The generation and characterization of hWAs were described previously (Xue et al., 2015), and the cell line was kindly shared by Professor Yu-Hua Tseng (Joslin Diabetes Center, Harvard Medical School, USA). hWAS cells. For expansion, cells were cultured in 25 mM Dulbecco\u2019s Modified Eagle Medium (DMEM) with GlutaMAX (10566016, Thermo Fisher Scientific), 10% fetal bovine serum (FBS; HyClone, GE Healthcare, Uppsala, Sweden), and 1% (100 U/ml) penicillin/streptomycin (15140122, Thermo Fisher Scientific). The cells were passaged at 90% confluence, and tested negative for mycoplasma.\n\n### DNA isolation and luciferase reporter assays\n\nGenomic DNA was isolated from hWAs cells using DNeasy Blood and Tissue kit (69506, QIAGEN) according to the manufacturer\u2019s manual. To fine map the transcriptional regulatory regions in the MTIF3 locus, we first identified the common genetic variants which were in tight linkage disequilibrium (r2 \u2265 0.8) with the lead variant rs1885988 in HaploReg v4.1 (Ward and Kellis, 2012). The thus identified 31 SNPs were tiled down into 12 DNA segments of the MTIF3 gene, as shown in Supplementary file 1a. These segments were then PCR amplified from hWAs DNA, all ranging from 700 to 1600 bp in size (depending on PCR primer design constraints), and with all SNP loci located several hundred bp from the ends of each fragment. The PCR primers were also designed to include flanking KpnI and EcoRV sites to allow cloning into the pGL4.23 minimal promoter luc2 luciferase reporter vector (Promega). For the reporter assays, hWAs were seeded into 96-well plates, and on the following day transfected with 95 ng of the pGL4.23 vectors and 5 ng pGL4.75 CMV-Renilla reporter vectors (for normalization), using Lipofectamine 3000 (Thermo Fisher Scientific), in technical duplicates. Two days after transfection, the luc2 and Renilla signals were detected using Dual-Glo Stop&Glo reagents (E2920, Promega). The averages of technical duplicates were used to calculate luc2:Renilla ratios, which were then Z-score normalized to allow statistical evaluation across four independent experiments.\n\n### gRNAs and ssDNA design for CRISPR/Cas9 mediated editing of rs67785913 in hWAs cells\n\nTo edit the rs67785913 CT allele to the minor CTCT allele in hWAs cell genome, CRISPR/Cas9 D10A nickase (Alt-R S.p. Cas9 D10A Nickase V3, IDT) and two sgRNAs, and an ssDNA donor template were used. The sgRNA spacer sequences were: 5\u2032-TTCAATAAGAAATTCCTCAA-3\u2032 and 5\u2032-GAAGAAAAAGGGGGGACACG-3\u2032. The ssDNA sequence was 5\u2032-TGTGGACTCGCAGTCTGCCCTTGAGGAATTTCTTATTGAAGAAGAAAAAGAGGGGGGACACGGGGCCCAGACCCCCAGCACCCGGCTTTCGAGCAGGCTC-3\u2032. All oligonucleotides, sgRNAs, and ssDNA were purchased from Integrated DNA Technologies. The transfection was performed using Nucleofector 2b device (program A-033) (Lonza, Sweden) in nucleofector reagent L (Lonza, Sweden) mixed with 5 \u00d7 105 hWAs cells, 120 pmol Cas9 nickase, 104 pmol sgRNA, and 300 pmol ssDNA. To increase the homology directed repair (HDR) editing efficiency, cells were incubated at 32\u00b0C for 2 days in growth medium containing 30 \u03bcM HDR enhancer (Alt-R HDR Enhancer V2, IDT). Subsequently, cells were transferred to 37\u00b0C for 3 days. For single-cell cloning, the hWAs cells were seeded at low density (2 cells/well in a 96-well plate) and allowed to expand for 3 weeks. Then the genomic DNA was extracted using QuickExtract DNA Extraction Solution (Lucigen) from the apparent single-cell clonal populations. To identify the allele-edited homozygous clones, PCR was used to amplify the DNA fragment surrounding rs67785913 using primer pairs as below: Forward 5\u2032\u20133\u2032 GATTTGCAGGTGAGCAGACA, Reverse 5\u2032\u20133\u2032 ACTTGGAAATGGCCAAGATG; the amplicon was then subjected to Sanger sequencing to confirm the DNA sequence of each clone.\n\n### Generation of inducible CRISPR/Cas9-expressing hWAs cell line (hWAs-iCas9)\n\nhWAs cells were first seeded at 80,000 cells/well in 6-well plates and transfected with 200 ng Super PiggyBac transposase (PB210PA-1, System Biosciences) and 500 ng pPB-rtTA-hCas9-puro-PB plasmid (kind gift from Dr. William Pu) (Wang et al., 2017) using Lipofectamine 3000 (Thermo Fisher Scientific). The plasmid carries a doxycycline-inducible promoter driving the expression of Cas9, and a puromycin resistance gene, all flanked by piggyBac transposon integration sequences. After 2 days, the transfected cells were selected and expanded for 3 weeks in growth medium with 1 \u03bcg/ml puromycin, to obtain cells with genomically integrated inducible Cas9 construct.\n\n### Differentiation of hWAs-iCas9 pre-adipocytes into mature adipocytes\n\nhWAs-iCas9 pre-adipocytes were seeded into 24- or 96-well plates at the density of 40,000 or 8000 cells/well, respectively. After 3 days, the cells reached confluency and were then incubated for 12 days with the differentiation cocktail, with medium changes every 3 days, as described before (Shamsi and Tseng, 2017). To increase the accumulation of lipid droplets, 30 \u03bcM FFA (Linoleic Acid-Oleic Acid-Albumin) (L9655, Sigma-Aldrich) was added to the differentiation medium (Aprile et al., 2020).\n\n### CRISPR/Cas9 guide RNA design and off-targeting check\n\nTo generate MTIF3 knockout adipocytes, guide RNA spacer sequence targeting MTIF3 exon 5, expressed in all known MTIF3 protein-encoding transcripts (as reported at https://www.ensembl.org), was selected. The spacer sequence was 5\u2032-GCAATAGGGGACAACTGTGC-3\u2032, and full-length sgRNA was purchased from IDT. Furthermore, the hWAs genomic sequence surrounding the gRNA-binding site was amplified by PCR using the primers 5\u2032-CCACTTGTCTTGGGGACAGT-3\u2032 and 5\u2032-CTGGGAATGGTGGTTGAATC-3\u2032, then analyzed by Sanger sequencing to ensure sequence match between gRNA spacer and the intended target locus. The potential off-target sites were predicted using CRISPR-Cas9 guide RNA design checker (https://eu.idtdna.com), and the genomic regions surrounding the top 5 off-target sites were PCR amplified from the genomic DNA extracted from MTIF3-knockout and scramble control cells. The amplicons were then analyzed for any heteroduplexes generated by off-targeting using T7EI assay (IDT, Alt-R Genome Editing Detection Kit).\n\n### sgRNA transfection and MTIF3 knockout in mature adipocytes\n\nAfter 12 days of differentiation, Cas9 expression was induced in mature adipocytes by adding 2 \u03bcg/ml doxycycline to the growth medium. On the following day, 30 nM pre-designed sgRNA was delivered into the cells using Lipofectamine RNAiMAX (13778075, Thermo Fisher Scientific) according to the manufacturer\u2019s protocol; in parallel, 30 nM negative control crRNA (1072544, IDT) was used to transfect the scrambled control cells. One day post-transfection, cells were washed with phosphate-buffered saline (PBS) and incubated in normal growth medium for at least 3 days before functional assays carried out.\n\n### Oil-red O staining\n\nAfter MTIF3 knockout, the differentiated white adipocytes were washed twice with PBS and fixed for 10\u201320 min with 4% buffered formalin at room temperature. The cells were then stained with Oil-red O solution for 30 min at room temperature, followed by five washes with distilled water. The stained cells were visualized using light microscopy.\n\n### Glucose restriction challenge for hWAs-iCas9 adipocytes\n\nThe hWAs-iCas9 adipocytes were firstly differentiated to mature adipocytes as described above (in FFA-supplemented medium), then the MTIF3 knockouts and scrambled controls were generated, also as described above. After 3 days, the mature adipocytes were incubated in DMEM medium (11966025, Thermo Fisher Scientific) without FFA, and supplemented with different glucose concentrations (5, 3, and 1 mM) for the glucose restriction test. The cells were then incubated for 3 days, and the triglyceride content was determined as described above.\n\n### RNA isolation and qPCR gene expression assays\n\nTotal RNA was extracted from cells using RNeasy plus Kit (74034, QIAGEN) together with Qiazol reagent (79306, QIAGEN). RNA purity was assessed using Nanodrop (Nanodrop, Wilmington, USA), and cDNA was synthesized using SuperScript IV VILO Master Mix (11756500, Thermo Fisher Scientific). Then, RT-qPCR was performed on ViiA7 qRT-PCR system (PE Applied Biosystems, Foster City, CA, USA), using predesigned Taqman assays following the manufacturer\u2019s instructions. The Taqman assays (Thermo Fisher Scientific, Uppsala, Sweden) were: MTIF3 (Hs00794538_m1), GTF3A (Hs00157851_m1), ADIPOQ (Hs00977214_m1), PPARG (Hs01115513_m1), CEBPA (Hs00269972_s1), SREBF1 (Hs02561944_s1), FASN (Hs01005622_m1), TFAM (Hs01073348_g1), MT-CO1 (Hs02596864_g1), PRDM16 (Hs00223161_m1), TOMM20 (Hs03276810_g1), CPT1B (Hs00189258_m1), ACADM (Hs00936584_m1), ACAT1 (Hs00608002_m1), ABHD5 (Hs01104373_m1), PNP1A2 (Hs00386101_m1), ACACB (Hs01565914_m1), MT-ND1 (Hs02596873_s1), MT-ND2 (Hs02596874_g1), MT-ND3 (Hs02596875_s1), MT-ND4 (Hs02596876_g1), MT-CO2 (Hs02596865_g1), MT-CO3 (Hs02596866_g1), HPRT-1 (Hs99999909_m1), TBP (Hs00427620_m1), and RPL13A (Hs03043885_g1). The relative gene expression was calculated using the delta Ct method, and the target gene expression was normalized to the mean Ct of three reference genes HPRT-1, TBP, and RPL13A.\n\n### Western blotting\n\nCells were washed twice with ice-cold PBS and lysed in 1% sodium dodecyl sulfate buffer for 10 min, then passed through a QIAshredder (79654, QIAGEN) and centrifuged for 15 min at 14,000 \u00d7 g. The supernatant was subsequently collected and protein concentration quantified using the BCA assays (23225, Thermo Fisher Scientific). To assess target protein expression, 10 \u03bcg lysates were loaded into 4\u201320% Mini-PROTEAN TGX Stain-Free Protein Gels (Bio-Rad Laboratories AB, Solna, Sweden) and separated, followed by transfer of polyvinylidene difluoride (PVDF) membranes (1704156, Bio-Rad Laboratories AB). After blocking in 5% bovine serum albumin (BSA) solution for 1 hr, the membranes were incubated with primary antibodies against MTIF3 (14219-1-AP, Proteintech), OXPHOS complex (45-8199, Thermo Fisher Scientific), FABP4, ACC, FAS (12589, Cell Signalling Technology), ATP8 (26723-1-AP, Proteintech), ND2 (19704-1-AP, Proteintech), CYTB (55090-1-AP, Proteintech), and corresponding horseradish peroxidase (HRP)-conjugated secondary antibodies (anti-mouse IgG, Cell Signalling Technology; anti-rabbit IgG, Cell Signaling Technology). TBS with 0.1% (vol/vol) Tween-20 was used for membrane washing, and TBS with 2% BSA was used for antibody incubation. To visualize the blots, Clarity western ECL substrate was added to the membrane and a CCD camera used to acquire images and Image Lab software (Bio-Rad Laboratories AB, Solna, Sweden) were used to develop the images. ImageJ software was used to quantify the protein bands. After detection of the protein targets, the membranes were stripped using Restore Western Blot Stripping Buffer (21059, Thermo Fisher Scientific) and blotted using anti-\u03b2-Actin antibody (4967, Cell Signaling Technology) or anti-GAPDH antibody (ab37168, Abcam).\n\n### Blue Native polyacrylamide gel electrophoresis and immunoblotting\n\nDifferentiated scrambled control and MTIF3 knockout hWAs-iCas9 cells were adapted to 5.5 mM glucose growth medium for 3 days to mimic the physiological glucose concentration. The Blue Native polyacrylamide gel electrophoresis (BN-PAGE) was performed as described previously (Singh and Duchen, 2022). Briefly, mitochondria were isolated using Mitochondria Isolation Kit (89874, Thermo Fisher Scientific). NativePAGE Sample Prep Kit (BN2008, Invitrogen) was then used for mitochondrial protein extraction and BN-PAGE sample preparation. For native gel electrophoresis, 20 \u00b5g mitochondrial protein was loaded to precast 3\u201312% gradient Blue Native gels (BN1001, Invitrogen) and separated according to the manufacturer\u2019s instructions. The proteins were then electroblotted onto PVDF membrane and probed with anti-OXPHOS antibody cocktail (45-8199, Thermo Fisher Scientific) and a corresponding secondary antibody. The blots were then imaged and analyzed as described above.\n\n### Relative mitochondrial content measurement\n\nTo examine the effects of MTIF3 knockout on mitochondrial biogenesis in white adipocytes, relative amount of mtDNA was quantified using a qPCR-based method described previously (Ajaz et al., 2015). Briefly, total DNA was extracted and quantified using QIAamp DNA Mini Kit (catalogue number: 56304, QIAGEN) from scrambled control and MTIF3 knockout cells. For qPCR, equal amounts of total DNA from each sample were mixed with SYBR Green master mix (catalogue number: A25742, Thermo Fisher Scientific) and with primers targeting mitochondrial and nuclear genes, then the samples were run on ViiA7 qRT-PCR system (PE Applied Biosystems, Foster City, CA, USA). The relative mtDNA content was calculated as \u0394Ct (Ct of nuclear target \u2212 Ct of mitochondrial target).\n\n### Mitochondrial function in MTIF3 knockout adipocytes\n\nTo directly assess the effects of MTIF3 on mitochondrial respiration in adipocytes we used the Seahorse XF (Seahorse Bioscience, North Billerica, MA) to measure cellular respiration OCR under different conditions. hWAs-iCas9 cells were seeded at 8000 cells/well in a Seahorse 24-well plate, then differentiated and induced for MTIF3 knockout or with scrambled control, as described above. Then, cells were adapted in 1 g/l growth medium (31885049, Thermo Fisher Scientific) for 3 days. Mitochondrial function was then assessed using the Seahorse XF-24 instrument according to a protocol optimized for the adipocyte cell line. Briefly, to measure OCR independent of oxidative phosphorylation, 2 \u03bcM oligomycin (O4876, Sigma-Aldrich) was added to the cells. Subsequently, 2 \u03bcM FCCP (carbonyl cyanide-p-trifluoromethoxyphenylhydrazone) (C2920, Sigma-Aldrich) and 5 \u03bcM respiratory chain inhibitors: rotenone (R8875, Sigma-Aldrich) and antimycin A (A8674, Sigma-Aldrich) were added to measure maximal respiration and basal rates of non-mitochondrial respiration. Cells were then frozen at \u221280\u00b0C for at least 4 hr, then the plate was dried, and DNA was extracted with CyQUANT Cell Lysis Buffer (C7027, Thermo Fisher Scientific). Total DNA was then quantified by Quant-iT PicoGreen dsDNA Assay Kit (P7589, Thermo Fisher Scientific) against a lambda DNA-generated standard curve.\n\n### Endogenous long chain fatty acid oxidation in adipocytes\n\nThe Seahorse mitochondrial analyzer was used to test the effects of MTIF3 loss on endogenous long chain fatty acid oxidation in adipocytes. Prior to the assay, adipocytes were incubated overnight with substrate-limited medium: DMEM (A14430, Thermo Fisher Scientific); 0.5 mM glucose (103577-100, Angilent); 1.0 mM glutamine (103579-100, Angilent); 0.5 mM carnitine (C0283, Sigma-Aldrich); 1% FBS (SV30160.03, HyClone). On day of the assay, the substrate-limited medium was replaced with FAO assay medium: 1\u00d7 Krebs-Henseleit Buffer (KHB) was supplemented with 2.5 mM glucose, 0.5 mM carnitine, and 5 mM N-2-hydroxyethylpiperazine-N-2-ethane sulfonic acid (HEPES), and the pH was adjusted to pH 7.4 with NaOH. The cells were then treated for 15 min with either 40 \u03bcM etomoxir (E1905, Sigma-Aldrich) or only with the solvent (dimethyl sulfoxide, DMSO). Etomoxir inhibits carnitine palmitoyltransferase (CPT)-1 and diglyceride acyltransferase (DGAT) activity in mitochondria, and thus inhibits mitochondrial fatty acid oxidation (Xu et al., 2003; Griesel et al., 2010). The OCR was then measured as described above.\n\n### Mass spectrometry-based metabolite profiling\n\nThe mature hWAs-iCas9 adipocytes were firstly induced for MTIF3 knockout, followed by glucose restriction challenge as described above. The cells were quenched on dry ice and metabolites were extracted using a previously optimized protocol (Danielsson et al., 2010).\n\nFor analysis of low molecular weight metabolites, extracts were reconstituted in 100 \u00b5l of MeOH/water (8/2, vol/vol) and 60 \u00b5l was transferred to new Eppendorf tubes and evaporated to dryness using a miVac concentrator (SP Scientific, NY) for 3 hr at 30\u00b0C. Dried samples were methoximated using 20 \u00b5l of methoxyamine hydrochloride in pyridine (Thermo Scientific, MA) by shaking at 3000 rpm for 30 min at room temperature (VWR, PA). Afterward, 20 \u00b5l of N-methyl-N-(trimethylsilyl) trifluoroacetamide (MSTFA) + 1% trimethylsilyl chloride (Thermo Scientific, MA) was added to each sample and shaken at 3000 rpm at room temperature for 1 hr. Samples were transferred to glass vials and immediately analyzed using an Agilent 6890 gas chromatograph connected to an Agilent 5975CL VL MSD mass spectrometer controlled by MassHunter Workstation software 10.0 (Agilent, Atlanta, GA). One \u00b5l sample was injected at 270\u00b0C on an HP-5MS column (30 m length, 250 \u00b5m ID, 0.25 \u00b5m phase thickness). with a helium gas flow rate of 1 ml/min and a temperature gradient starting at 70\u00b0C for 2 min, increasing 15\u00b0C/min to 320\u00b0C and held for 2 min. Data were acquired using electron ionization at 70 eV in either full scan (50\u2013550 m/z) or single ion monitoring mode. The MS-DIAL version 4.7 was used for raw peak extraction, peak alignment, deconvolution, peak annotation, and integration of peaks.\n\nAmino acids and free fatty acids were chemically derivatized and analyzed using a previously described method (Meng et al., 2021). Briefly, 40 \u00b5l of the samples were mixed with 20 \u00b5l of 3-nitrophenylhydrazine (3-NPH) (Sigma-Aldrich, MO), followed by addition of 20 \u00b5l of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride (EDC) (Thermo Scientific, MA) and shaking at 3000 rpm at room temperature for 1 hr. Samples were analyzed using an Agilent 1260 ultra-performance liquid chromatograph coupled with an Agilent 6495 tandem mass spectrometer and controlled by MassHunter version 8.0 (Agilent Technologies, CA). Three \u00b5l sample was injected on an Agilent Eclipse RRHD C18 column (2.1 \u00d7 150 mm, 1.8 \u00b5m) (Agilent Technologies, CA) with a flow rate of 0.6 ml/min and a column oven temperature of 50\u00b0C. The mobile phases A and B were 0.1% formic acid (Fisher Chemical, Prague, Czech Republic) in Milli-Q water (Merck, Millipore, MO) and acetonitrile (VWR, Paris, France), respectively. Gradient elution was performed as follows: held at 5% B from 0 to 1 min, changed linearly to 90% B in 10 min, changed from 90% B to 100% B in 13 min, held at 100% B for 2 min, returned to 5% B (initial condition) in 0.1 min, and held at 5% B for 2 min. Analyses were conducted in negative electrospray ionization mode (ESI) mode with the nebulizer gas pressure set at 20 psi, ion capillary voltage at 2500 V, gas temperature at 150\u00b0C, and sheath gas temperature at 250\u00b0C. Data were recorded in multiple reaction monitoring (MRM) mode, with two transitions for each analyte.\n\n### Lipolysis quantification in differentiated hWAs cells\n\nDifferentiated scrambled control or MTIF3 knockout cells were washed twice with PBS and then incubated with DMEM containing 2% free fatty acid-free BSA for 2 hr. For the insulin or isoproterenol-stimulated lipolysis, 100 nM insulin (I2643, Sigma-Aldrich) or 10 \u03bcM isoproterenol (1351005, Sigma-Aldrich) was added in the medium separately. After the incubation, the medium was collected, and the glycerol content was measured using Glycerol-Glo Assay (J3150, Promega).\n\n### Total triglyceride measurement\n\nTriglyceride-Glo Assay kit (J3161, Promega) was used to quantify total triglyceride content in scrambled control or MTIF3 knockout cells cultured either in 25 mM glucose or glucose restriction medium. Briefly, cells were collected in 50 \u03bcl kit lysis buffer at room temperature for 1 hr. Then 2 \u03bcl lysate was mixed with 8 \u03bcl glycerol lysis solution with lipase, and incubated at 37\u00b0C for 30 min. Subsequently, 10 \u03bcl glycerol solution was mixed with 10 \u03bcl glycerol detection solution supplemented with reductase substrate and kinetic enhancer, and transferred into a 384-well plate. After 1-hr incubation at room temperature, the luminescence was detected using CLARIOstar plate reader (BMG Labtech, Germany), and the triglyceride concentration was calculated using a standard curve generated from glycerol standards and normalized to total protein measured using BCA assays (23227, Thermo Fisher Scientific).\n\n### Statistics\n\nFor each assay, the number of biological and technical replicates, standard deviation and statistical significance are reported in the figure legends. Hypothesis tests were performed using two-tailed Student\u2019s t-test, one-way ANOVA, or paired t-test. A nominal p value of <0.05 was considered statistically significant. All analyses were undertaken using Prism GraphPad 9.0 software (La Jolla California, USA), SIMCA 17.0 (Sartorius Stedim Data Analytics, Malm\u00f6, Sweden), Rstudio 1.4, and Microsoft Excel 365. For the metabolome data, ANOVA (aov) was performed in R with genotype and glucose concentration as independent variables with Tukey\u2019s test post hoc (TukeyHSD). Significance was defined as q < 0.05 using multiple testing adjustment according to the false discovery rate (p.adjust).\n",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "256f80ac-e864-4914-8160-3c3d354911f8",
+      "submission_id": "b780f4c2-fa3d-4ccc-8043-abbcae54623a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marcus M Seldin, https://ror.org/04gyf1771 University of California Irvine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84168.sa0](https://doi.org/10.7554/eLife.84168.sa0)\n\nIn this study, Huang et al. perform detailed functional genomics assays in cultured adipocytes to provide mechanistic insight underlying an important obesity GWAS locus. These studies not only demonstrate allele-specific effects of MITF3 as a potential causal gene for variations in rs67785913 and rs1885988 alleles, but further provide a foundational framework from bridging GWAS associations to actionable pathways. The study strengths include genetic manipulation followed by detailed biochemical characterization to mimic and test the impacts of association, where future studies potentially involving in vivo characterizations could further inform the metabolic consequences of these observations.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marcus M Seldin, https://ror.org/04gyf1771 University of California Irvine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84168.sa1](https://doi.org/10.7554/eLife.84168.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Identification of a weight loss-associated causal eQTL in MTIF3 and the effects of MTIF3 deficiency on human adipocyte function\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David James as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Sean M. Hartig (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. We all remain enthusiastic about the implications of these functional genomics experiments characterizing the locus and most requested revisions surround more detailed evaluation primarily in cell culture models used.\n\nEssential revisions:\n\nAs you will see below, the primary suggestions for improving the study lie in more detailed molecular and functional characterization of MTIF3 and the effects of the locus. A few of these include protein quantification and staining (oil red O) for adipocytes where MTIF3 is perturbed. In addition, the reviewers requested a few text-based clarifications regarding the interpretation of the locus, listed below. Obviously, if you have any questions feel, please free to reach out.\n\nReviewer #1 (Recommendations for the authors):\n\nIt is important to point out that adipocyte differentiation and the expression of the associated metabolic programs critically contribute to the maintenance of insulin sensitivity in obesity. Defects in adipocyte differentiation derived from mitochondrial functions that reduce ATP synthesis and storage of surfeit carbons in fat tissue almost always associate with insulin resistance in animal models and people (see Trends Cell Biol 32:351-364, 2022; Cell. 185:419-446, 2022). The in vitro studies can add to understanding the important roles of MTIF3, but the authors should use more caution when extrapolating to in vivo effects of the eQTL.\n\nReviewer #2 (Recommendations for the authors):\n\n1. The authors should give their hypothesis and interpretation of their results in the manuscript. There are no clear connections between results, which makes it difficult to understand the rationale of their experiments.\n\n2. The labels of Figure 1 do not match the figure legends.\n\n3. In figure 1F, what is the readout of the relative MTIF3expression? Are they based on western blot? If yes, it would be better to include the blog images.\n\n4. In the method, the authors also added extra lipids in the differentiated medium to increase the lipid droplets. I'm curious about the effect of lipid deprivation in KO cells rather than glucose deprivation. The metabolomics showed the change of fatty acids at full medium. There might be some changes in fatty acid utilization in KO cells.\n",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "370da6da-e62b-4bcf-b2d1-b86a65516a3c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C1",
+      "claim": "Genetic variation at the MTIF3 locus has been robustly associated with obesity in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variation at the MTIF3 (Mitochondrial Translational Initiation Factor 3) locus has been robustly associated with obesity in humans, but the functional basis behind this association is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature establishing the association between MTIF3 genetic variation and obesity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "7d8f0a3d-2509-4d0e-83d4-450e9d5fdf32",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C2",
+      "claim": "The rs67785913-centered DNA fragment (in LD with rs1885988, r2 > 0.8) enhances transcription in a luciferase reporter assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that rs67785913-centered DNA fragment (in LD with rs1885988, r2 > 0.8) enhances transcription in a luciferase reporter assay",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from luciferase reporter assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "309e9dcb-56dc-438a-beb3-ebf1cc9bd882",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C3",
+      "claim": "CRISPR-Cas9-edited rs67785913 CTCT cells show significantly higher MTIF3 expression than rs67785913 CT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-Cas9-edited rs67785913 CTCT cells show significantly higher MTIF3 expression than rs67785913 CT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from CRISPR-Cas9 editing experiments and gene expression measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "17790900-02a9-46e4-a36c-59e319618942",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C4",
+      "claim": "Perturbed MTIF3 expression led to reduced mitochondrial respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbed MTIF3 expression led to reduced mitochondrial respiration and endogenous fatty acid oxidation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from Seahorse mitochondrial respiration assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "ef11a0e5-8c95-41fb-8f9a-cea0ed50528d",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C5",
+      "claim": "Perturbed MTIF3 expression led to reduced endogenous fatty acid oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbed MTIF3 expression led to reduced mitochondrial respiration and endogenous fatty acid oxidation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from Seahorse fatty acid oxidation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "42a10832-7867-4290-822d-d8f4ce23b823",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C6",
+      "claim": "Perturbed MTIF3 expression led to altered expression of mitochondrial DNA-encoded genes and proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbed MTIF3 expression led to reduced mitochondrial respiration and endogenous fatty acid oxidation, as well as altered expression of mitochondrial DNA-encoded genes and proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from qPCR and western blotting experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "3065d177-eb2d-4d27-bf6e-5a12a4cedd3c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C7",
+      "claim": "Perturbed MTIF3 expression led to disturbed mitochondrial OXPHOS complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbed MTIF3 expression led to reduced mitochondrial respiration and endogenous fatty acid oxidation, as well as altered expression of mitochondrial DNA-encoded genes and proteins, and disturbed mitochondrial OXPHOS complex assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from Blue Native-PAGE experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "e80daac0-7d91-4fe0-a646-096e8130996c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C8",
+      "claim": "After glucose restriction, the MTIF3 knockout cells retained more triglycerides than control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, after glucose restriction, the MTIF3 knockout cells retained more triglycerides than control cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from triglyceride content measurements under glucose restriction conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "7a84e029-8f80-487f-b9ff-f6ce035ca450",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C9",
+      "claim": "Over 650 million people are obese.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 650 million people are obese and often suffer from metabolic abnormalities, including dyslipidemia, type 2 diabetes, and hypertension (Adams et al., 2006; May et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "22c60008-7a18-4d1a-8e0d-650345624bc7",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C10",
+      "claim": "Obese people often suffer from metabolic abnormalities, including dyslipidemia, type 2 diabetes, and hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 650 million people are obese and often suffer from metabolic abnormalities, including dyslipidemia, type 2 diabetes, and hypertension (Adams et al., 2006; May et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "444a8d19-338f-448c-a54d-9d029df7ef38",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C11",
+      "claim": "Obesity results from an interplay between genetic and environmental factors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely believed that obesity results from an interplay between genetic and environmental factors (Thomas, 2010), but the biological mechanisms behind these interactions are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and represents established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "81c26bcd-76fb-43e9-ae76-6d95c8bcf7db",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C12",
+      "claim": "Genetic variation (rs12016871) at MTIF3 has been robustly associated with body mass index (BMI) in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variation (rs12016871) at MTIF3 (encoding the Mitochondrial Translation Initiation Factor 3 protein [Kuzmenko et al., 2014]) has been robustly associated with body mass index (BMI) in humans (Locke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Locke et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "15ecf046-6d45-4159-8707-520c873e7389",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C13",
+      "claim": "MTIF3 encodes the Mitochondrial Translation Initiation Factor 3 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variation (rs12016871) at MTIF3 (encoding the Mitochondrial Translation Initiation Factor 3 protein [Kuzmenko et al., 2014]) has been robustly associated with body mass index (BMI) in humans (Locke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Kuzmenko et al., 2014) and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "b32f8d45-6257-407d-a563-28b6ab31c3e5",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C14",
+      "claim": "MTIF3 genetic variation has been linked with the response to weight loss interventions, including diet, exercise, and bariatric surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "Several subsequent studies have linked MTIF3 genetic variation with the response to weight loss interventions, including diet, exercise, and bariatric surgery (Papandonatos et al., 2015; Rasmussen-Torvik et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Papandonatos et al., 2015; Rasmussen-Torvik et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "63cd7a54-4996-4139-af98-68f8b92f70b8",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C15",
+      "claim": "MTIF3 genetic variation has been linked with weight-related effects of habitual diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Several subsequent studies have linked MTIF3 genetic variation with the response to weight loss interventions, including diet, exercise, and bariatric surgery (Papandonatos et al., 2015; Rasmussen-Torvik et al., 2015), and with weight-related effects of habitual diet (Nettleton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Nettleton et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "b0d49da5-cd52-4cd2-9c7a-fe55e3b4187e",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C16",
+      "claim": "Homozygous minor allele carriers (rs1885988) were slightly more prone to weight gain in the control arm of DPP and Look AHEAD trials.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, analyses in two of the world's largest randomized controlled weight loss trials (Diabetes Prevention Program [DPP] and Look AHEAD) found that homozygous minor allele carriers (rs1885988) were slightly more prone to weight gain in the control arm, yet achieved significantly greater weight loss at 12-month post-randomization and retained lost weight longer (18\u201336 months) than major allele carriers (Papandonatos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Papandonatos et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "ce566b3e-1915-4236-8afb-ca7fab04a668",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C17",
+      "claim": "Homozygous minor allele carriers (rs1885988) achieved significantly greater weight loss at 12-month post-randomization than major allele carriers in DPP and Look AHEAD trials.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, analyses in two of the world's largest randomized controlled weight loss trials (Diabetes Prevention Program [DPP] and Look AHEAD) found that homozygous minor allele carriers (rs1885988) were slightly more prone to weight gain in the control arm, yet achieved significantly greater weight loss at 12-month post-randomization and retained lost weight longer (18\u201336 months) than major allele carriers (Papandonatos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Papandonatos et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "78e3589d-24fa-4afb-a6ae-30ac6ead93bd",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C18",
+      "claim": "Homozygous minor allele carriers (rs1885988) retained lost weight longer (18\u201336 months) than major allele carriers in DPP and Look AHEAD trials.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, analyses in two of the world's largest randomized controlled weight loss trials (Diabetes Prevention Program [DPP] and Look AHEAD) found that homozygous minor allele carriers (rs1885988) were slightly more prone to weight gain in the control arm, yet achieved significantly greater weight loss at 12-month post-randomization and retained lost weight longer (18\u201336 months) than major allele carriers (Papandonatos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Papandonatos et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "34c28219-f201-493b-bb3a-cf4d996ba435",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C19",
+      "claim": "The MTIF3 locus has been associated with greater and more sustained weight loss following bariatric surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "Elsewhere, the same locus has been associated with greater and more sustained weight loss following bariatric surgery (Rasmussen-Torvik et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Rasmussen-Torvik et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "999ba5c3-66e3-4e91-a46e-355b5498c4e1",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C20",
+      "claim": "Mtif3 loss in the mouse results in cardiomyopathy owing to impaired translation initiation from mitochondrial mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtif3 loss in the mouse results in cardiomyopathy owing to impaired translation initiation from mitochondrial mRNAs and uncoordinated assembly of OXPHOS complexes in heart and skeletal muscle (Rudler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Rudler et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "4dd85df3-acc2-4bb4-91e4-24a626ab68ad",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C21",
+      "claim": "Mtif3 loss in the mouse results in uncoordinated assembly of OXPHOS complexes in heart and skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtif3 loss in the mouse results in cardiomyopathy owing to impaired translation initiation from mitochondrial mRNAs and uncoordinated assembly of OXPHOS complexes in heart and skeletal muscle (Rudler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Rudler et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "38fe38ae-53ab-47f0-bf71-01056c73fc3c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C22",
+      "claim": "In the human hepatocyte-like HepG2 cell line, MTIF3 loss decreases the translation of the mitochondrial-encoded ATP synthase membrane subunit 6 (ATP6) mRNA without affecting cellular proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human hepatocyte-like HepG2 cell line, MTIF3 loss decreases the translation of the mitochondrial-encoded ATP synthase membrane subunit 6 (ATP6) mRNA without affecting cellular proliferation (Chicherin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Chicherin et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "6bfb9b7f-104f-4adf-b0bf-4988f6893df9",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C23",
+      "claim": "No human genomic mutations leading to total MTIF3 deficiency have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "No human genomic mutations leading to total MTIF3 deficiency have been reported",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the absence of reports in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "673ed117-8788-49ef-a84f-18518cd24400",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C24",
+      "claim": "MTIF3 may influence obesity predisposition and weight loss potential by modulating mitochondrial function.",
+      "claim_type": "EXPLICIT",
+      "source": "but the studies outlined above suggest that MTIF3 may influence obesity predisposition and weight loss potential by modulating mitochondrial function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from cited studies and represents a hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "19625461-f01e-46cc-b98d-aa86d0f29325",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C25",
+      "claim": "MTIF3 may play a key role in adipose tissue metabolic homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, MTIF3 may play a key role in adipose tissue metabolic homeostasis, as adipocyte mitochondria not only provide ATP, but also impact adipocyte-specific biological processes such as adipogenesis, lipid metabolism, thermogenesis, and regulation of whole-body energy homeostasis (Gregoire et al., 1998; Boudina and Graham, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from cited studies about adipocyte mitochondria function.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "b427c790-6d5e-4d95-8dee-eac49dc9aa13",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C26",
+      "claim": "Adipocyte mitochondria not only provide ATP, but also impact adipocyte-specific biological processes such as adipogenesis, lipid metabolism, thermogenesis, and regulation of whole-body energy homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "as adipocyte mitochondria not only provide ATP, but also impact adipocyte-specific biological processes such as adipogenesis, lipid metabolism, thermogenesis, and regulation of whole-body energy homeostasis (Gregoire et al., 1998; Boudina and Graham, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Gregoire et al., 1998; Boudina and Graham, 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "94b0b4bb-26ff-40a2-bbb2-23ac68f6fcdb",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C27",
+      "claim": "The rs1885988 C allele is associated with enhanced weight loss and weight retention following lifestyle intervention trials in DPP and Look AHEAD cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "The MTIF3 rs1885988 C allele is associated with enhanced weight loss and weight retention following lifestyle intervention trials in DPP and Look AHEAD cohorts (Papandonatos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Papandonatos et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "1ad7efeb-7b2d-4eec-81df-73395d44a61b",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C28",
+      "claim": "In the GTEx database, the rs1885988 associates with an eQTL in subcutaneous fat.",
+      "claim_type": "EXPLICIT",
+      "source": "In the GTEx database, the rs1885988 associates with an eQTL in subcutaneous fat (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the GTEx database shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "c08563d7-badd-46f7-af15-1fd7c3155cd1",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C29",
+      "claim": "rs1885988 C allele carriers have significantly higher MTIF3 expression in subcutaneous fat (normalized effect size: 0.15, p = 0.0000032).",
+      "claim_type": "EXPLICIT",
+      "source": "with C allele carriers having significantly higher MTIF3 expression (normalized effect size: 0.15, p = 0.0000032).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the GTEx database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "53ea6887-867b-448e-808d-15f67c7ccf10",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C30",
+      "claim": "Only one DNA fragment (F11), encompassing the rs67785913 locus, could enhance luciferase transcription compared to minimal promoter (minP) construct.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1D, by comparing the luciferase signals with minimal promoter (minP) construct, only one DNA fragment (F11), encompassing the rs67785913 locus, could enhance luciferase transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "ecedd72a-1b5f-41f3-ba02-3764d7a4d406",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C31",
+      "claim": "The rs67785913 shows an eQTL effect on MTIF3 expression in subcutaneous adipose tissue in GTEx database.",
+      "claim_type": "EXPLICIT",
+      "source": "Coincidentally, the rs67785913 also shows an eQTL effect on MTIF3 expression in subcutaneous adipose tissue in GTEx database, with the major CT allele associated with lower expression than the minor CTCT allele (normalized effect size: \u22120.16, p = 3.0 \u00d7 10\u22128) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the GTEx database shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "73615f29-53f6-4112-aa3c-247bce58bdd8",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C32",
+      "claim": "The major CT allele of rs67785913 is associated with lower MTIF3 expression than the minor CTCT allele (normalized effect size: \u22120.16, p = 3.0 \u00d7 10\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "Coincidentally, the rs67785913 also shows an eQTL effect on MTIF3 expression in subcutaneous adipose tissue in GTEx database, with the major CT allele associated with lower expression than the minor CTCT allele (normalized effect size: \u22120.16, p = 3.0 \u00d7 10\u22128) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the GTEx database shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "300f6a0c-52de-4016-b895-5d0b463c13db",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C33",
+      "claim": "rs67785913 CTCT/CTCT genotype confers higher MTIF3 expression at all time points (pre- and post-adipogenic differentiation induction) compared to CT/CT genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We then examined MTIF3 expression in these clones at pre- and post-adipogenic differentiation induction, and found rs67785913 CTCT/CTCT to confer higher MTIF3 expression at all time points (Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "4feb94d0-a138-46af-b1ae-aba9644a1b31",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C34",
+      "claim": "rs67785913 correlates with altered GTF3A expression in other tissues (e.g., muscle, lung).",
+      "claim_type": "EXPLICIT",
+      "source": "As rs67785913 also correlates with an altered GTF3A expression in other tissues (e.g., muscle, lung), we also detected, but found no apparent difference in GTF3A expression in rs67785913-edited cells (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on data from other tissues, likely from GTEx or similar databases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "d8bfcff4-a17b-430a-ab4e-507d9b314788",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C35",
+      "claim": "There is no apparent difference in GTF3A expression in rs67785913-edited cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As rs67785913 also correlates with an altered GTF3A expression in other tissues (e.g., muscle, lung), we also detected, but found no apparent difference in GTF3A expression in rs67785913-edited cells (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "3f55079c-ade0-430c-a464-7f0b775cf016",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C36",
+      "claim": "MTIF3 knockout cells had >80% reduction in MTIF3 protein levels in every experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed Cas9-specific sgRNA to generate random indels in the exon expressed in all three MTIF3 protein-encoding transcripts (Figure 3A) and obtained a >80% reduction in MTIF3 protein levels in every experiment, as assessed by western blotting (Figure 3B\u2013D, Figure 3\u2014figure supplement 1, and Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "7886194a-249e-4f6c-b73b-6e2974e23e5c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C37",
+      "claim": "T7EI assays on PCR-amplified top 5 predicted off-target sites did not show any detectable off-targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess off-target effects of CRISPR-Cas9, we also performed T7EI assays on PCR-amplified top 5 predicted off-target sites and did not observe any detectable off-targeting (data are not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from T7EI assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "485c6ab1-77b2-4b74-9bb0-7712492e46dd",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C38",
+      "claim": "The quantities of the adipogenic markers, including ACC, FABP4, and FAS were comparable in control and MTIF3 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidentally, we observed that the quantities of the adipogenic markers, including ACC, FABP4, and FAS were comparable in control and MTIF3 knockout cells (Figure 3C, E; see also Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C, E and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "f229187c-18da-4088-8067-33cfc31c9893",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C39",
+      "claim": "There were no apparent differences in Oil-red O or total triglyceride content between control and MTIF3 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there were no apparent differences in Oil-red O or total triglyceride content (Figure 3F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "17a83299-bd18-407d-a3fc-fdd3e9a48ff9",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C40",
+      "claim": "MTIF3 knockout cells had significantly decreased COX II (subunit of OXPHOS complex IV).",
+      "claim_type": "EXPLICIT",
+      "source": "Assessed by western blotting, the MTIF3 knockout cells had significantly decreased COX II (subunit of OXPHOS complex IV) and ND2 (subunit of OXPHOS complex I), trending decrease of CYTB (subunit of OXPHOS complex III), and unchanged ATP8 (subunit of OXPHOS complex V) content (Figure 4A , B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "dbd12cef-106b-4ae8-9857-0bd1c73ddc39",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C41",
+      "claim": "MTIF3 knockout cells had significantly decreased ND2 (subunit of OXPHOS complex I).",
+      "claim_type": "EXPLICIT",
+      "source": "Assessed by western blotting, the MTIF3 knockout cells had significantly decreased COX II (subunit of OXPHOS complex IV) and ND2 (subunit of OXPHOS complex I), trending decrease of CYTB (subunit of OXPHOS complex III), and unchanged ATP8 (subunit of OXPHOS complex V) content (Figure 4A , B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "1ded88ec-e4f6-4dca-9c16-b8e23cd3b21a",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C42",
+      "claim": "MTIF3 knockout cells had trending decrease of CYTB (subunit of OXPHOS complex III).",
+      "claim_type": "EXPLICIT",
+      "source": "Assessed by western blotting, the MTIF3 knockout cells had significantly decreased COX II (subunit of OXPHOS complex IV) and ND2 (subunit of OXPHOS complex I), trending decrease of CYTB (subunit of OXPHOS complex III), and unchanged ATP8 (subunit of OXPHOS complex V) content (Figure 4A , B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "884c0f03-621f-463e-aac0-887a877f2eb6",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C43",
+      "claim": "MTIF3 knockout cells had unchanged ATP8 (subunit of OXPHOS complex V) content.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessed by western blotting, the MTIF3 knockout cells had significantly decreased COX II (subunit of OXPHOS complex IV) and ND2 (subunit of OXPHOS complex I), trending decrease of CYTB (subunit of OXPHOS complex III), and unchanged ATP8 (subunit of OXPHOS complex V) content (Figure 4A , B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "68eeafd9-9ade-4d51-a1dc-43d04f62240f",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C44",
+      "claim": "MTIF3 deficiency led to higher expression of MT-ND1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using qPCR, we observed an altered expression of several mitochondrial DNA-encoding genes. Specifically, MTIF3 deficiency led to higher expression of MT-ND1, MT-ND2, a trending increase of MT-ND4, and lower expression of MT-ND3, and MT-CO3 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "1f6f6fd5-8850-48fd-9161-01bc4d3fa532",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C45",
+      "claim": "MTIF3 deficiency led to higher expression of MT-ND2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using qPCR, we observed an altered expression of several mitochondrial DNA-encoding genes. Specifically, MTIF3 deficiency led to higher expression of MT-ND1, MT-ND2, a trending increase of MT-ND4, and lower expression of MT-ND3, and MT-CO3 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "073edd13-d353-48d9-9c97-c9a9239d1cbf",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C46",
+      "claim": "MTIF3 deficiency led to a trending increase of MT-ND4.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using qPCR, we observed an altered expression of several mitochondrial DNA-encoding genes. Specifically, MTIF3 deficiency led to higher expression of MT-ND1, MT-ND2, a trending increase of MT-ND4, and lower expression of MT-ND3, and MT-CO3 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "59d3055f-3502-43d2-831a-7dee6d788ab0",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C47",
+      "claim": "MTIF3 deficiency led to lower expression of MT-ND3.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using qPCR, we observed an altered expression of several mitochondrial DNA-encoding genes. Specifically, MTIF3 deficiency led to higher expression of MT-ND1, MT-ND2, a trending increase of MT-ND4, and lower expression of MT-ND3, and MT-CO3 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "35e5efbe-a1ea-4895-a3df-1fa263b27486",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C48",
+      "claim": "MTIF3 deficiency led to lower expression of MT-CO3.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using qPCR, we observed an altered expression of several mitochondrial DNA-encoding genes. Specifically, MTIF3 deficiency led to higher expression of MT-ND1, MT-ND2, a trending increase of MT-ND4, and lower expression of MT-ND3, and MT-CO3 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "14dc8241-9c81-4a3d-b831-72937297bf40",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C49",
+      "claim": "Significantly reduced mitochondrial content was found in MTIF3 knockout adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also found significantly reduced mitochondrial content in MTIF3 knockout adipocytes (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "59a49de2-6646-408f-a5cd-b190cbe0f4fb",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C50",
+      "claim": "MTIF3 deficiency led to decreased complex III2/IV2 assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "MTIF3 deficiency led to decreased complex III2/IV2 and IV1, and a trending decreased complex V/III2 + IV1 assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from Blue Native-PAGE experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "c0fb54c0-d809-4182-bf28-fe3903efa984",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C51",
+      "claim": "MTIF3 deficiency led to decreased complex IV1 assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "MTIF3 deficiency led to decreased complex III2/IV2 and IV1, and a trending decreased complex V/III2 + IV1 assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from Blue Native-PAGE experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "0a62e633-301a-4215-a1aa-c6ac9f90b556",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C52",
+      "claim": "MTIF3 deficiency led to a trending decreased complex V/III2 + IV1 assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "MTIF3 deficiency led to decreased complex III2/IV2 and IV1, and a trending decreased complex V/III2 + IV1 assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from Blue Native-PAGE experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "8db2b8a6-6a56-4cb2-9769-72a755ae563f",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C53",
+      "claim": "OXPHOS complex II assembly was significantly increased in MTIF3 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, OXPHOS complex II assembly was significantly increased in MTIF3 knockout cells (Figure 4E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "f176665d-d7ba-486a-bcb1-dc8052e50e58",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C54",
+      "claim": "Faster-migrating undefined bands were observed in MTIF3 knockout adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also observed faster-migrating undefined bands in MTIF3 knockout adipocytes (Figure 4E), which could be single chain proteins, or mistranslation or degradation products.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "6df49007-f970-4945-a948-5183eae8df65",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C55",
+      "claim": "The OXPHOS complex I + III2 + IVn appeared to be less abundant in MTIF3 knockout mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, The OXPHOS complex I + III2 + IVn appeared to be less abundant in MTIF3 knockout mitochondria, although the bands appeared more diffuse and could not be quantified (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "833e3165-7bb8-4149-8cd5-b3482663a3bf",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C56",
+      "claim": "MTIF3 knockout cells exhibited lower basal oxygen consumption rate (OCR).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, MTIF3 knockout cells exhibited lower basal oxygen consumption rate (OCR), as well as lower ATP-forming capacity, the latter estimated by calculating OCR decrease after blocking ATP synthase with oligomycin (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "7b2765fd-b196-424e-a584-c5c4c2d90fd7",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C57",
+      "claim": "MTIF3 knockout cells exhibited lower ATP-forming capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, MTIF3 knockout cells exhibited lower basal oxygen consumption rate (OCR), as well as lower ATP-forming capacity, the latter estimated by calculating OCR decrease after blocking ATP synthase with oligomycin (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "f2b152d3-674e-429a-a4d5-321d3e4c8fc5",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C58",
+      "claim": "MTIF3 knockout cells showed a trending decrease in maximal respiration OCR.",
+      "claim_type": "EXPLICIT",
+      "source": "MTIF3 knockout cells also showed a trending decrease in maximal respiration OCR (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "deb4452c-bb2c-440f-a103-da5d0e1eba74",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C59",
+      "claim": "Both MTIF3 knockout and control cells had comparable proton leak OCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both MTIF3 knockout and control cells, had comparable proton leak OCR, non-mitochondrial respiration OCR and coupling efficiency (Figure 5E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "af5c9fda-9163-4b82-901d-7fdf309e5439",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C60",
+      "claim": "Both MTIF3 knockout and control cells had comparable non-mitochondrial respiration OCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both MTIF3 knockout and control cells, had comparable proton leak OCR, non-mitochondrial respiration OCR and coupling efficiency (Figure 5E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "a1cd437e-3716-4670-b9a7-0776f4021d9c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C61",
+      "claim": "Both MTIF3 knockout and control cells had comparable coupling efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both MTIF3 knockout and control cells, had comparable proton leak OCR, non-mitochondrial respiration OCR and coupling efficiency (Figure 5E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "1367ed1c-3b1b-42e0-a493-42011d33df73",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C62",
+      "claim": "MTIF3 ablation mimics the effect of etomoxir on basal endogenous fatty acid oxidation OCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MTIF3 ablation mimics the effect of etomoxir on basal endogenous fatty acid oxidation OCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from Seahorse fatty acid oxidation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "de6bbefb-1f5d-4c4c-bc74-a14a8a37c19e",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C63",
+      "claim": "Etomoxir decreases basal fatty acid oxidation OCR in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while etomoxir decreases basal fatty acid oxidation OCR in control cells, it does not markedly decrease it in MTIF3 knockout cells (Figure 6A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "dbe18720-1d3e-4ded-ac4a-853551c8abfe",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C64",
+      "claim": "Etomoxir does not markedly decrease basal fatty acid oxidation OCR in MTIF3 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while etomoxir decreases basal fatty acid oxidation OCR in control cells, it does not markedly decrease it in MTIF3 knockout cells (Figure 6A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "76509583-6b29-49c4-a813-20dd868ed28d",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C65",
+      "claim": "Triglyceride content decreased both in control and MTIF3 knockout cells after 3 days of different levels of glucose restriction when compared with 25 mM glucose medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Triglyceride content decreased both in control and MTIF3 knockout cells after 3 days of different levels of glucose restriction when compared with 25 mM glucose medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from triglyceride content measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "451531f7-9689-4294-a7d9-cc8e5ddf2058",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C66",
+      "claim": "A more extensive decrease in triglyceride content occurred in control cells cultured in 1 mM glucose medium (p = 0.053).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a more extensive decrease in triglyceride content occurred in control cells cultured in 1 mM glucose medium (p = 0.053), and a similar trending decrease, albeit with higher coefficient of variation, occurred in 3 and 5 mM glucose medium (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "61ee1343-519f-41bc-bb58-2b724418343c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C67",
+      "claim": "Glycerol release in control and MTIF3 knockout cells was comparable in all three conditions (basal, insulin-attenuated, and isoproterenol-stimulated).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6D, in all three conditions, glycerol release in control and MTIF3 knockout cells was comparable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "ac58695d-8ad0-46f9-9f8d-974239ee977c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C68",
+      "claim": "Basal glycerol release in glucose-restricted conditions was similar between control and MTIF3 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, basal glycerol release in glucose-restricted conditions was similar (Figure 6\u2014figure supplement 1), and significantly reduced in low glucose versus high glucose assay medium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "6e6a8b1b-bb24-4415-96df-61e41248e665",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C69",
+      "claim": "Basal glycerol release was significantly reduced in low glucose versus high glucose assay medium.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, basal glycerol release in glucose-restricted conditions was similar (Figure 6\u2014figure supplement 1), and significantly reduced in low glucose versus high glucose assay medium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "15c5caaf-703d-42e3-9628-52459b7b97cc",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C70",
+      "claim": "MTIF3 knockout cells had decreased expression of MT-CO1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6E, MTIF3 knockout cells had decreased expression of the mitochondria-related MT-CO1, and the fatty acid oxidation-related ACADM and ACAT1, but unchanged expression of other genes involved in mitochondrial function and lipid metabolism (TFAM, TOMM20, PRDM16, CPT1B, ABHD5, PNPLA2, and ACACB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "05c621da-e5fe-491d-8f6f-ccb45296deab",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C71",
+      "claim": "MTIF3 knockout cells had decreased expression of ACADM.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6E, MTIF3 knockout cells had decreased expression of the mitochondria-related MT-CO1, and the fatty acid oxidation-related ACADM and ACAT1, but unchanged expression of other genes involved in mitochondrial function and lipid metabolism (TFAM, TOMM20, PRDM16, CPT1B, ABHD5, PNPLA2, and ACACB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "a7a5a2c6-f6a3-4a48-89bc-d7d09d806551",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C72",
+      "claim": "MTIF3 knockout cells had decreased expression of ACAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6E, MTIF3 knockout cells had decreased expression of the mitochondria-related MT-CO1, and the fatty acid oxidation-related ACADM and ACAT1, but unchanged expression of other genes involved in mitochondrial function and lipid metabolism (TFAM, TOMM20, PRDM16, CPT1B, ABHD5, PNPLA2, and ACACB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "c0fcd7be-ae20-438a-b8bf-bfed2acee994",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C73",
+      "claim": "MTIF3 knockout cells had unchanged expression of TFAM, TOMM20, PRDM16, CPT1B, ABHD5, PNPLA2, and ACACB.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6E, MTIF3 knockout cells had decreased expression of the mitochondria-related MT-CO1, and the fatty acid oxidation-related ACADM and ACAT1, but unchanged expression of other genes involved in mitochondrial function and lipid metabolism (TFAM, TOMM20, PRDM16, CPT1B, ABHD5, PNPLA2, and ACACB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "d38aba10-4098-4609-b04e-c1408bb1f322",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C74",
+      "claim": "The PCA score plot reveals a clear systematic difference in the metabolite profile between cells in 25 mM glucose versus in glucose restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "The score plot reveals a clear systematic difference in the metabolite profile between cells in 25 mM glucose versus in glucose restriction (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "35b99e7f-3a88-4093-8bff-ec05e8f91248",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C75",
+      "claim": "Differences between MTIF3 knockout and control cells at 25 mM glucose are observed along principal component 1 (PC1).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, differences between MTIF3 knockout and control cells at 25 mM glucose are observed along principal component 1 (PC1), whereas differences between genotypes at glucose restriction are observed along PC2, suggesting the effect of MTIF3 ablation to depend on the calorie level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from PCA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "4870f367-13bb-48a5-a258-5fe1984d482f",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C76",
+      "claim": "Differences between genotypes at glucose restriction are observed along PC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, differences between MTIF3 knockout and control cells at 25 mM glucose are observed along principal component 1 (PC1), whereas differences between genotypes at glucose restriction are observed along PC2, suggesting the effect of MTIF3 ablation to depend on the calorie level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from PCA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "66cdad3f-6abd-4078-860f-a1b857851888",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C77",
+      "claim": "The effect of MTIF3 ablation depends on the calorie level.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, differences between MTIF3 knockout and control cells at 25 mM glucose are observed along principal component 1 (PC1), whereas differences between genotypes at glucose restriction are observed along PC2, suggesting the effect of MTIF3 ablation to depend on the calorie level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from PCA analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "cf933087-d5d2-41c0-b09e-6e088dea56ab",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C78",
+      "claim": "OPLS-DA analyses revealed systematic differences between genotypes at both growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed systematic differences between genotypes at both growth conditions (Figure 7 B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "17c05bc2-2d42-41b6-992c-96290b6f8481",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C79",
+      "claim": "Levels of intermediates in cytosolic metabolic pathways connected to the glycolysis, such as glycerate 3-phosphate, glycerol 2-phosphate, UDP-N-acetylglucosamine, and ribose 5-phosphate, are lower in MTIF3 knockout cells at both glucose concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed levels of intermediates in cytosolic metabolic pathways connected to the glycolysis, such as glycerate 3-phosphate, glycerol 2-phosphate, UDP-N-acetylglucosamine, and ribose 5-phosphate, to be lower in MTIF3 knockout cells at both glucose concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from metabolomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "821696b0-0fc3-4834-ad3c-45320b46105b",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C80",
+      "claim": "Levels of fatty acids, ranging from 9 to 17 carbons and including several odd-chain fatty acids, were lower in the MTIF3 knockout cells only at 25 mM glucose condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, levels of fatty acids, ranging from 9 to 17 carbons and including several odd-chain fatty acids, were lower in the MTIF3 knockout cells only at 25 mM glucose condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from metabolomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "385b1d3c-f922-49fa-a7c2-fe754fa828db",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C81",
+      "claim": "At glucose-restricted conditions, levels of both essential and non-essential amino acids were lower in the knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "At glucose-restricted conditions, levels of both essential and non-essential amino acids were lower in the knockout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from metabolomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "a8d99423-8ad0-42bf-bf3d-47e0f664cce7",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C82",
+      "claim": "Two-way ANOVA revealed 18 significantly different metabolites between control and MTIF3 knockout cells at 25 mM glucose condition (q <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we analyzed data using two-way analysis of variance (ANOVA), incorporating glucose concentration and genotype, thereby providing information on effects at the individual metabolite level. These analyses revealed 18 and 20 significantly different metabolites between control and MTIF3 knockout cells at 25 mM glucose condition and glucose-restricted conditions, respectively (q <0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from two-way ANOVA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "1363f42e-5fca-4cef-ab27-b2fc2ef0b619",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C83",
+      "claim": "Two-way ANOVA revealed 20 significantly different metabolites between control and MTIF3 knockout cells at glucose-restricted conditions (q <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we analyzed data using two-way analysis of variance (ANOVA), incorporating glucose concentration and genotype, thereby providing information on effects at the individual metabolite level. These analyses revealed 18 and 20 significantly different metabolites between control and MTIF3 knockout cells at 25 mM glucose condition and glucose-restricted conditions, respectively (q <0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from two-way ANOVA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "16e3168a-8755-4ef1-b7a6-acd4fec8d6d5",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C84",
+      "claim": "Significantly different metabolites between control and MTIF3 knockout cells included ribose 5-phosphate, glycerate 3-phosphate, glycerol 2-phosphate, and glycerol 3-phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "These included ribose 5-phosphate, glycerate 3-phosphate, glycerol 2-phosphate, and glycerol 3-phosphate (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "d553bb0d-1b45-433c-abe9-19f01967b440",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C85",
+      "claim": "Excessive weight gain caused by dietary excess can cause life-threatening disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive weight gain caused by dietary excess, and its effects on adipocyte lipid metabolism, can cause life-threatening disease (Appleton et al., 2013; Denis and Obin, 2013; Chu et al., 2017; Lotta et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "2c931c5c-9645-4cce-b88f-a73cd04f201d",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C86",
+      "claim": "The effects of excessive weight gain on adipocyte lipid metabolism can cause life-threatening disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive weight gain caused by dietary excess, and its effects on adipocyte lipid metabolism, can cause life-threatening disease (Appleton et al., 2013; Denis and Obin, 2013; Chu et al., 2017; Lotta et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "298045cf-bb57-4eeb-acda-02bf3f0fa957",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C87",
+      "claim": "Findings from clinical trials showed the MTIF3 variation modulates weight loss-promoting exposures on body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings from clinical trials (Papandonatos et al., 2015), a bariatric surgery case series (Rasmussen-Torvik et al., 2015) and epidemiological cohorts (Nettleton et al., 2015) showed the MTIF3 variation modulates weight loss-promoting exposures on body weight (see also UK Biobank analysis in Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "e8b91ac4-084e-4b5f-9e14-a36986f89bad",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C88",
+      "claim": "The MTIF3 rs1885988 C allele correlates with higher MTIF3 expression in subcutaneous fat tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we validated MTIF3 rs1885988 C allele correlates with higher MTIF3 expression in subcutaneous fat tissue",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental validation of GTEx data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "c543005c-df84-4209-83bb-da8f63de8b97",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C89",
+      "claim": "The tightly linked rs67785913 variant is likely to be the actual eQTL for MTIF3 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "and our in vitro luciferase reporter assay and CRISPR-Cas9 genome editing results revealed that the tightly linked rs67785913 variant is likely to be the actual eQTL for MTIF3 expression (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from luciferase assays and CRISPR-Cas9 editing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "fa350bcd-1cb2-4b85-9efb-30e82f5c5d67",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C90",
+      "claim": "Pre-adipocyte cell lines have been used extensively for studying adipogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-adipocyte cell lines have been used extensively for studying adipogenic differentiation (Ruiz-Ojeda et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "1471901a-21d8-445f-b641-1d5d9e8e286f",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C91",
+      "claim": "The application of pre-adipocyte cell lines for lipid metabolism studies has been limited, especially in the context of gene\u2013environment interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "but their application for lipid metabolism studies has been limited, especially in the context of gene\u2013environment interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' assessment of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "b4ca4b6c-65d5-4810-90a1-d850abca2272",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C92",
+      "claim": "Variation of differentiation capacity across cell passages can alter baseline phenotypes in differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is largely due to the variation of differentiation capacity across cell passages (Poulos et al., 2010) and differential genetic effects on adipocyte differentiation (Kamble et al., 2020), which can alter baseline phenotypes in differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "cd30ed67-ff80-4b41-bf11-d94a36360bea",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C93",
+      "claim": "Differential genetic effects on adipocyte differentiation can alter baseline phenotypes in differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is largely due to the variation of differentiation capacity across cell passages (Poulos et al., 2010) and differential genetic effects on adipocyte differentiation (Kamble et al., 2020), which can alter baseline phenotypes in differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "15ce77c5-6ce2-4d23-a4ee-85a294053a9b",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C94",
+      "claim": "MTIF3 deficiency results in lower content of mitochondrial DNA-encoding proteins in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that in adipocytes MTIF3 deficiency results in lower content of mitochondrial DNA-encoding proteins and altered expression of several mitochondrial DNA-encoding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from western blotting and qPCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "10c0251f-9ec9-4ec5-853e-366ff0206610",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C95",
+      "claim": "MTIF3 deficiency results in altered expression of several mitochondrial DNA-encoding genes in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that in adipocytes MTIF3 deficiency results in lower content of mitochondrial DNA-encoding proteins and altered expression of several mitochondrial DNA-encoding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from qPCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "f5b842d1-6b7b-4dd6-8948-3fbd09726c2e",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C96",
+      "claim": "MTIF3 deficiency leads to disassembly of mitochondrial respiration OXPHOS complex in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it leads to disassembly of mitochondrial respiration OXPHOS complex, along with impaired mitochondrial respiration rate (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "85d72b2d-aa65-4271-a2dc-2bd805a52ca2",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C97",
+      "claim": "MTIF3 deficiency leads to impaired mitochondrial respiration rate in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it leads to disassembly of mitochondrial respiration OXPHOS complex, along with impaired mitochondrial respiration rate (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "e96c849b-e51f-4f31-bc78-341c811b1b05",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C98",
+      "claim": "MTIF3 vastly affects the mitochondrial electron transport chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results suggest that MTIF3 vastly affects the mitochondrial electron transport chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "3f6189b5-4f8f-47ed-996d-de9a5cb2d5dc",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C99",
+      "claim": "Mitochondrial dysfunction in white adipose tissue has been frequently associated with obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial dysfunction in white adipose tissue has been frequently associated with obesity (Kaaman et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "48abb14f-a13a-4289-a1bd-901afe62361e",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C100",
+      "claim": "The presumed mechanisms of mitochondrial dysfunction association with obesity are decreased fatty acid oxidation and ATP production.",
+      "claim_type": "EXPLICIT",
+      "source": "with the presumed mechanisms being decreased fatty acid oxidation and ATP production (reviewed in Heinonen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "dd2d4cdd-8bdc-4553-8522-25fe3b852538",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C101",
+      "claim": "One causal link connecting mitochondrial dysfunction and obesity may be the MTIF3 content.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that one causal link connecting these factors may be the MTIF3 content (Figures 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from experimental data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "7502529e-df85-4401-9a9a-7758ff52f345",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C102",
+      "claim": "A previous study described an inverse relationship between mitochondrial capacity and weight change.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a previous study described an inverse relationship between mitochondrial capacity and weight change (Jokinen et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "d3357e8a-97c9-4098-b621-c9013c51abdc",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C103",
+      "claim": "Any genetic variation-modulated change in MTIF3 expression could influence a dietary intervention outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, conceivably, any genetic variation-modulated change in MTIF3 expression could influence a dietary intervention outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from prior studies and current findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "1d69e45c-d2aa-4ea8-8a15-75ac75235fa0",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C104",
+      "claim": "MTIF3-deficient adipocytes exposed to glucose restriction challenge responded less through changed triglyceride content.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MTIF3-deficient adipocytes exposed to glucose restriction challenge responded less through changed triglyceride content, indicating limited capacity for lipid metabolism under glucose restriction (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "3361dde0-c19f-47cf-9a7f-1fd8f863f767",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C105",
+      "claim": "MTIF3-deficient adipocytes have limited capacity for lipid metabolism under glucose restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MTIF3-deficient adipocytes exposed to glucose restriction challenge responded less through changed triglyceride content, indicating limited capacity for lipid metabolism under glucose restriction (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "b5f3d71d-8d24-4899-849c-88777186c1bf",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C106",
+      "claim": "MTIF3 knockouts, having reduced fatty acid oxidation, re-esterify the released fatty acids to triglycerides, and thus retain more triglycerides during glucose restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we speculate that MTIF3 knockouts, having reduced fatty acid oxidation, re-esterify the released fatty acids to triglycerides, and thus retain more triglycerides during glucose restriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is explicitly stated as speculation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "b3b594e7-d003-46eb-8bf8-130fb26b9e17",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C107",
+      "claim": "Mitochondrial function is robustly associated with insulin sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial function is robustly associated with insulin sensitivity (B\u00f6hm et al., 2020; Pietil\u00e4inen et al., 2008; Heinonen et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "f9615634-5c9c-4b4b-a5aa-5c8da4ca7385",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C108",
+      "claim": "Both mitochondrial function and insulin sensitivity can be improved through lifestyle intervention aiming at weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "both of which can be improved through lifestyle intervention aiming at weight loss (Phielix et al., 2010; Toledo et al., 2007; Larson-Meyer et al., 2006; Civitarese et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "7e0c3d54-5cd5-4d12-a2b5-e666852c303f",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C109",
+      "claim": "Impaired adipocyte differentiation derived from mitochondrial dysfunction in adipose tissue often associates with insulin resistance in humans and animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, impaired adipocyte differentiation derived from mitochondrial dysfunction in adipose tissue often associates with insulin resistance in humans and animal models (Sakers et al., 2022; Zhu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "d6b6a94f-65a8-4ee4-b25c-075a8bf0378a",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C110",
+      "claim": "We did not observe impaired adipocyte differentiation due to MTIF3 deficiency or rs67785913 eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we did not observe impaired adipocyte differentiation due to MTIF3 deficiency or rs67785913 eQTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from adipogenic marker measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "5c06e560-7eb8-4f66-94e5-c249601601d7",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C111",
+      "claim": "The lower content of glycolysis intermediates and odd-chain fatty acids in MTIF3 knockout adipocytes could indicate blunted lipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower content of glycolysis intermediates and odd-chain fatty acids in MTIF3 knockout adipocytes could indicate blunted lipogenesis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from metabolomics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "68b34db4-8ded-48b9-8b36-8b492223ad1f",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C112",
+      "claim": "The decreased essential and non-essential amino acid level in MTIF3 knockout cells under glucose restriction could be an adaption to the lower energy supply owing to impaired mitochondrial function.",
+      "claim_type": "EXPLICIT",
+      "source": "while the decreased essential and non-essential amino acid level in MTIF3 knockout cells under glucose restriction could be an adaption to the lower energy supply owing to impaired mitochondrial function (Hansson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from metabolomics data and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "f7267296-b22f-4941-a993-c0ac97ec600f",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C113",
+      "claim": "MTIF3 plays a vital role in triglyceride metabolism in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The metabolite data, and the earlier described lower fatty acid oxidation capacity of MTIF3-deficient cells, suggest that MTIF3 plays a vital role in triglyceride metabolism in adipocytes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from metabolomics and fatty acid oxidation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "138669e0-2c0a-4b75-917b-02b7448e535e",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C114",
+      "claim": "The common genetic variant rs67785913 is a functional polymorphism that causes modulated MTIF3 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we experimentally demonstrated that the common genetic variant rs67785913 is a functional polymorphism that causes modulated MTIF3 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from luciferase assays and CRISPR-Cas9 editing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "b5b50556-e923-4dce-b7c2-196a917c9800",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C115",
+      "claim": "MTIF3 is essential for mitochondrial electron transport chain complex assembly in human adipocyte cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our functional genomics studies demonstrate that MTIF3 is essential for mitochondrial electron transport chain complex assembly, mitochondrial function, and lipid metabolism in human adipocyte cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from Blue Native-PAGE and other assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "a373bb3d-de38-4ec9-831e-7479d46a4984",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C116",
+      "claim": "MTIF3 is essential for mitochondrial function in human adipocyte cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our functional genomics studies demonstrate that MTIF3 is essential for mitochondrial electron transport chain complex assembly, mitochondrial function, and lipid metabolism in human adipocyte cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from Seahorse assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "a3041119-dbd0-4d68-895a-2201f7008710",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C117",
+      "claim": "MTIF3 is essential for lipid metabolism in human adipocyte cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our functional genomics studies demonstrate that MTIF3 is essential for mitochondrial electron transport chain complex assembly, mitochondrial function, and lipid metabolism in human adipocyte cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from fatty acid oxidation and triglyceride content assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "447b6c11-f623-40dd-83cd-ed2f8ec1bd36",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C118",
+      "claim": "MTIF3 content may influence adipocyte triglyceride content in conditions that mimic dietary restriction, reflecting a gene x environment interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "MTIF3 content may also influence adipocyte triglyceride content in conditions that mimic dietary restriction, reflecting a gene x environment interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from glucose restriction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "ca0c62c1-9fb0-4d4f-9892-266dcfa46e20",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C119",
+      "claim": "Higher MTIF3 content in adipocytes increases mitochondrial function.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our findings show that higher MTIF3 content in adipocytes increases mitochondrial function, this helps explain the previously observed interaction between MTIF3 locus and weight loss interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data showing reduced mitochondrial function in MTIF3 knockout cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "3cd6ecd6-6d12-4dc6-a240-3540d0bf2e35",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C120",
+      "claim": "Higher MTIF3 content in adipocytes helps explain the previously observed interaction between MTIF3 locus and weight loss interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our findings show that higher MTIF3 content in adipocytes increases mitochondrial function, this helps explain the previously observed interaction between MTIF3 locus and weight loss interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from current findings and prior literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "0f4eb1a6-666b-4e3a-a5e3-f33a8db96f3a",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C121",
+      "claim": "People who carry genetic variants that increase MTIF3 expression (e.g., the rs67785913 CTCT allele) may benefit more from lifestyle interventions targeting weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this suggests, although it remains to be demonstrated, that people who carry genetic variants that increase MTIF3 expression (e.g., the rs67785913 CTCT allele) may benefit more from lifestyle interventions targeting weight loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is explicitly stated as speculation that remains to be demonstrated.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "58f3b0cc-43b8-4e6b-a0df-f975b3c5fa5c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C122",
+      "claim": "A human white pre-adipocyte cell line (hWAs) was previously isolated and immortalized from human subcutaneous white adipose tissue of a female subject, aged 56 with a BMI of 30.8.",
+      "claim_type": "EXPLICIT",
+      "source": "A human white pre-adipocyte cell line (hWAs) was previously isolated and immortalized from human subcutaneous white adipose tissue of a female subject, aged 56 with a BMI of 30.8. The generation and characterization of hWAs were described previously (Xue et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature describing the cell line.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "d4bb6553-8cb9-40ec-b5e4-715522b519e7",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C123",
+      "claim": "MTIF3 is a mitochondrial translation initiation factor.",
+      "claim_type": "EXPLICIT",
+      "source": "MTIF3 is a mitochondrial translation initiation factor; thus, we examined the effects of MTIF3 ablation on differentiated hWAs adipocyte mitochondrial respiration chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge about MTIF3 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "fd22e62f-6239-429b-b243-94734ec5588c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C124",
+      "claim": "MTIF3 has a role previously ascribed to it in OXPHOS complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we hypothesized the above observations could have originated from the insufficient MTIF3 supply during OXPHOS complex assembly (a role previously ascribed to MTIF3 [Rudler et al., 2019]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Rudler et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "180b24f1-8bdb-4196-9c7d-777c6ec987dc",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "claim_id": "C125",
+      "claim": "MTIF3 facilitates initiation complex formation on mitochondrial 55S ribosomes in the presence of MTIF2, fMet-tRNA, and poly(A,U,G).",
+      "claim_type": "EXPLICIT",
+      "source": "The post-transcriptional rate-limiting translation step can be promoted by MTIF3, as it facilitates initiation complex formation on mitochondrial 55S ribosomes in the presence of MTIF2, fMet-tRNA, and poly(A,U,G) (Bhargava and Spremulli, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Bhargava and Spremulli, 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6a30bec0-b680-4527-b7ed-4d001dbcdf5c",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The rs67785913 variant is a functional eQTL that regulates MTIF3 expression. Luciferase reporter assays showed that only the DNA fragment containing rs67785913 enhanced transcription (C2, C30). GTEx data and CRISPR-edited cells confirmed that the CTCT allele is associated with higher MTIF3 expression than the CT allele (C31, C32, C33).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple converging lines of evidence support this result: luciferase assays identified rs67785913 as the regulatory element (C2, C30), GTEx database showed eQTL effects (C31, C32), and CRISPR-edited cells validated allele-specific expression differences (C33). The experimental approaches are appropriate and the data are consistent across methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "651b4a1c-59ad-4d59-bd38-d53119b37d89",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MTIF3 knockout in mature adipocytes achieved >80% protein reduction without affecting adipogenic differentiation markers or baseline triglyceride content. Off-target effects were not detected by T7EI assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The knockout efficiency is well-documented by western blotting (C36), and multiple adipogenic markers (ACC, FABP4, FAS) and triglyceride measurements confirm no effect on differentiation (C38, C39, C110). Off-target analysis was performed (C37), though data were not shown. This establishes a clean experimental system for downstream functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "91b0e30b-88aa-492f-83b2-89c40cb8425f",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MTIF3 deficiency disrupts mitochondrial DNA-encoded protein and gene expression in adipocytes. Western blotting showed decreased COX II and ND2 proteins, trending decrease in CYTB, and unchanged ATP8 (C40-C43). qPCR revealed altered expression of multiple mitochondrial genes (C44-C48), and mitochondrial content was significantly reduced (C49).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are supported by appropriate experimental methods (western blotting and qPCR) with consistent results showing disrupted mitochondrial gene/protein expression (C40-C48, C94, C95). The reduced mitochondrial content (C49) provides additional supporting evidence. Statistical significance is reported for key findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "75a26b0a-8ca5-40d7-a2f0-07ddcf21718e",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MTIF3 deficiency disrupts OXPHOS complex assembly in adipocytes. Blue Native-PAGE showed decreased assembly of complexes III2/IV2 and IV1, trending decrease in complex V/III2+IV1, but increased complex II assembly (C50-C53). Undefined faster-migrating bands were observed (C54), and complex I+III2+IVn appeared less abundant (C55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Blue Native-PAGE data demonstrate clear effects on OXPHOS complex assembly (C50-C53, C96, C115). The increased complex II (C53) is interesting as it's nuclear-encoded, suggesting compensatory mechanisms. The undefined bands (C54) and qualitative observation about complex I+III2+IVn (C55) add descriptive detail but lack quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "c677eefe-4eaa-4f6b-8af6-89e36cd302bb",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MTIF3 knockout impairs mitochondrial respiration in adipocytes. Seahorse assays showed significantly lower basal OCR and ATP-forming capacity (C56, C57), trending decrease in maximal respiration (C58), but comparable proton leak, non-mitochondrial respiration, and coupling efficiency (C59-C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Seahorse data provide direct functional evidence of impaired mitochondrial respiration (C56, C57, C97, C116). The statistical significance for basal OCR and ATP production is clear, while maximal respiration shows a trend. The unchanged proton leak and coupling efficiency (C59-C61) suggest the defect is in respiratory capacity rather than mitochondrial coupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "6602fdeb-a4cd-4ccc-8bee-a32371817535",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MTIF3 deficiency reduces endogenous fatty acid oxidation in adipocytes. MTIF3 ablation mimicked the effect of etomoxir (CPT1 inhibitor) on fatty acid oxidation (C62). Etomoxir decreased fatty acid oxidation in control cells but not in MTIF3 knockout cells (C63, C64).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Seahorse fatty acid oxidation data demonstrate reduced fatty acid oxidation in MTIF3 knockout cells (C62-C64, C5, C117). The etomoxir experiment provides mechanistic insight, suggesting MTIF3 knockout cells have already maximally impaired fatty acid oxidation. The experimental design is appropriate for assessing endogenous fatty acid oxidation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "d7451846-b9f8-4499-94d1-572dc4cd2621",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MTIF3 knockout cells retain more triglycerides than control cells under glucose restriction. Both genotypes showed decreased triglyceride content after glucose restriction (C65), but control cells showed a more extensive decrease at 1 mM glucose (C66, p=0.053). This suggests MTIF3-deficient adipocytes have limited capacity for lipid metabolism under glucose restriction (C104, C105).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The key finding (C66) has borderline statistical significance (p=0.053), and the effect shows high coefficient of variation at 3 and 5 mM glucose. While the trend supports the hypothesis (C8, C104, C105, C118), the marginal statistical support and lack of mechanistic validation (e.g., lipolysis was unchanged C67) make this result uncertain. Additional replicates or complementary assays would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "a563b46f-cc8a-43f3-891b-bbb0d4f4acad",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MTIF3 knockout does not affect lipolysis-mediated glycerol release. Glycerol release was comparable between control and knockout cells under basal, insulin-attenuated, and isoproterenol-stimulated conditions (C67, C68). Glycerol release was significantly reduced in low versus high glucose medium (C69).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The glycerol release assays provide clear evidence that lipolysis is not affected by MTIF3 knockout (C67, C68). The glucose-dependent reduction in glycerol release (C69) is an expected metabolic response. This result helps rule out altered lipolysis as an explanation for the triglyceride retention phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "20572e62-e87c-41e3-8a3a-5c6de875e324",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MTIF3 knockout selectively affects expression of mitochondrial and fatty acid oxidation genes. Knockout cells showed decreased expression of MT-CO1, ACADM, and ACAT1 (C70-C72), but unchanged expression of TFAM, TOMM20, PRDM16, CPT1B, ABHD5, PNPLA2, and ACACB (C73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The qPCR data show selective effects on gene expression (C70-C73), with decreased expression of genes related to mitochondrial function and fatty acid oxidation, while other metabolic genes remain unchanged. This supports the specificity of MTIF3's role in mitochondrial function and fatty acid metabolism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Metabolomic profiling reveals glucose-dependent effects of MTIF3 ablation. PCA showed clear separation by glucose condition and genotype-specific differences along different principal components (C74-C77). OPLS-DA and ANOVA identified metabolites altered in MTIF3 knockout cells, including glycolysis intermediates (lower at both glucose levels), fatty acids (lower only at 25 mM glucose), and amino acids (lower under glucose restriction) (C78-C84).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The metabolomics data are comprehensive and analyzed with appropriate multivariate and univariate statistical methods (C74-C84). The glucose-dependent effects (C77) are particularly interesting and well-supported by the PCA showing different separation patterns. The ANOVA with FDR correction (q<0.05) provides robust statistical support for individual metabolite differences (C82-C84).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "38a5f584-983f-4b28-9be3-e888ab5990ee",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that MTIF3 knockout cells re-esterify released fatty acids to triglycerides during glucose restriction, explaining triglyceride retention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is explicitly stated as speculation (C106) without experimental validation. While it's a reasonable hypothesis given the reduced fatty acid oxidation and unchanged lipolysis, no direct evidence for increased re-esterification is provided. This remains an untested mechanistic explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "5a9b62d9-33d8-4c03-ad29-9a7a348131ce",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors infer that lower glycolysis intermediates and odd-chain fatty acids indicate blunted lipogenesis (C111), decreased amino acids reflect adaptation to lower energy supply (C112), and MTIF3 plays a vital role in triglyceride metabolism (C113).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are interpretations of the metabolomics data (C111-C113) but lack direct experimental validation. While the inferences are reasonable given the metabolite profiles, they remain speculative without measurements of lipogenesis rates, energy status markers, or direct triglyceride metabolism assays. The claims are based on inference rather than direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "5e7b7778-bd6c-4a75-9ce7-4785731c00b9",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors conclude that higher MTIF3 content increases mitochondrial function (C119), explaining the interaction between MTIF3 locus and weight loss interventions (C120), and suggest that carriers of variants increasing MTIF3 expression may benefit more from lifestyle interventions (C121).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the in vitro data show that MTIF3 knockout reduces mitochondrial function, the inverse inference that higher MTIF3 increases function (C119) is not directly tested. The connection to weight loss interventions (C120) is reasonable but indirect. The clinical prediction (C121) is explicitly stated as speculation requiring demonstration. These claims extrapolate beyond the experimental data to in vivo and clinical contexts without validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "535f743d-f31f-41cf-b421-5474dceb8b59",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior literature establishes that MTIF3 genetic variation is associated with obesity, BMI, and response to weight loss interventions in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C12, C14-C19, C27, C87) are well-supported by citations to multiple prior studies including large clinical trials (DPP, Look AHEAD) and epidemiological cohorts. The associations are described as robust and replicated across different intervention types. This provides the rationale for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "92e9a210-b4d9-450e-b8c6-1aa7e643523f",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The rs1885988 C allele is associated with higher MTIF3 expression in subcutaneous fat tissue according to GTEx database and experimental validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The GTEx eQTL data (C28, C29) provide population-level evidence with statistical significance (p=0.0000032), and the authors validated this association experimentally (C88). The convergence of database and experimental evidence supports this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    },
+    {
+      "id": "5f3bee33-a34b-4742-b216-c5b4c33c4ea7",
+      "content_id": "22ec67f1-b20c-4ddd-8b62-414ef869621d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "While rs67785913 correlates with altered GTF3A expression in other tissues, no difference in GTF3A expression was found in rs67785913-edited adipocyte cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental data (C35) show no difference in GTF3A expression in the edited cells, despite correlations in other tissues (C34). This suggests tissue-specific regulatory effects and helps establish that the observed MTIF3 effects are not confounded by GTF3A changes in adipocytes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:08.792165Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7d8f0a3d-2509-4d0e-83d4-450e9d5fdf32",
+      "result_id": "6a30bec0-b680-4527-b7ed-4d001dbcdf5c"
+    },
+    {
+      "claim_id": "53ea6887-867b-448e-808d-15f67c7ccf10",
+      "result_id": "6a30bec0-b680-4527-b7ed-4d001dbcdf5c"
+    },
+    {
+      "claim_id": "ecedd72a-1b5f-41f3-ba02-3764d7a4d406",
+      "result_id": "6a30bec0-b680-4527-b7ed-4d001dbcdf5c"
+    },
+    {
+      "claim_id": "73615f29-53f6-4112-aa3c-247bce58bdd8",
+      "result_id": "6a30bec0-b680-4527-b7ed-4d001dbcdf5c"
+    },
+    {
+      "claim_id": "300f6a0c-52de-4016-b895-5d0b463c13db",
+      "result_id": "6a30bec0-b680-4527-b7ed-4d001dbcdf5c"
+    },
+    {
+      "claim_id": "c543005c-df84-4209-83bb-da8f63de8b97",
+      "result_id": "6a30bec0-b680-4527-b7ed-4d001dbcdf5c"
+    },
+    {
+      "claim_id": "138669e0-2c0a-4b75-917b-02b7448e535e",
+      "result_id": "6a30bec0-b680-4527-b7ed-4d001dbcdf5c"
+    },
+    {
+      "claim_id": "3f55079c-ade0-430c-a464-7f0b775cf016",
+      "result_id": "651b4a1c-59ad-4d59-bd38-d53119b37d89"
+    },
+    {
+      "claim_id": "7886194a-249e-4f6c-b73b-6e2974e23e5c",
+      "result_id": "651b4a1c-59ad-4d59-bd38-d53119b37d89"
+    },
+    {
+      "claim_id": "485c6ab1-77b2-4b74-9bb0-7712492e46dd",
+      "result_id": "651b4a1c-59ad-4d59-bd38-d53119b37d89"
+    },
+    {
+      "claim_id": "f229187c-18da-4088-8067-33cfc31c9893",
+      "result_id": "651b4a1c-59ad-4d59-bd38-d53119b37d89"
+    },
+    {
+      "claim_id": "d6b6a94f-65a8-4ee4-b25c-075a8bf0378a",
+      "result_id": "651b4a1c-59ad-4d59-bd38-d53119b37d89"
+    },
+    {
+      "claim_id": "17a83299-bd18-407d-a3fc-fdd3e9a48ff9",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "dbd12cef-106b-4ae8-9857-0bd1c73ddc39",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "1ded88ec-e4f6-4dca-9c16-b8e23cd3b21a",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "884c0f03-621f-463e-aac0-887a877f2eb6",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "68eeafd9-9ade-4d51-a1dc-43d04f62240f",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "1f6f6fd5-8850-48fd-9161-01bc4d3fa532",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "073edd13-d353-48d9-9c97-c9a9239d1cbf",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "59d3055f-3502-43d2-831a-7dee6d788ab0",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "35e5efbe-a1ea-4895-a3df-1fa263b27486",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "14dc8241-9c81-4a3d-b831-72937297bf40",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "15ce77c5-6ce2-4d23-a4ee-85a294053a9b",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "10c0251f-9ec9-4ec5-853e-366ff0206610",
+      "result_id": "91b0e30b-88aa-492f-83b2-89c40cb8425f"
+    },
+    {
+      "claim_id": "59a49de2-6646-408f-a5cd-b190cbe0f4fb",
+      "result_id": "75a26b0a-8ca5-40d7-a2f0-07ddcf21718e"
+    },
+    {
+      "claim_id": "c0fb54c0-d809-4182-bf28-fe3903efa984",
+      "result_id": "75a26b0a-8ca5-40d7-a2f0-07ddcf21718e"
+    },
+    {
+      "claim_id": "0a62e633-301a-4215-a1aa-c6ac9f90b556",
+      "result_id": "75a26b0a-8ca5-40d7-a2f0-07ddcf21718e"
+    },
+    {
+      "claim_id": "8db2b8a6-6a56-4cb2-9769-72a755ae563f",
+      "result_id": "75a26b0a-8ca5-40d7-a2f0-07ddcf21718e"
+    },
+    {
+      "claim_id": "f176665d-d7ba-486a-bcb1-dc8052e50e58",
+      "result_id": "75a26b0a-8ca5-40d7-a2f0-07ddcf21718e"
+    },
+    {
+      "claim_id": "6df49007-f970-4945-a948-5183eae8df65",
+      "result_id": "75a26b0a-8ca5-40d7-a2f0-07ddcf21718e"
+    },
+    {
+      "claim_id": "f5b842d1-6b7b-4dd6-8948-3fbd09726c2e",
+      "result_id": "75a26b0a-8ca5-40d7-a2f0-07ddcf21718e"
+    },
+    {
+      "claim_id": "b5b50556-e923-4dce-b7c2-196a917c9800",
+      "result_id": "75a26b0a-8ca5-40d7-a2f0-07ddcf21718e"
+    },
+    {
+      "claim_id": "833e3165-7bb8-4149-8cd5-b3482663a3bf",
+      "result_id": "c677eefe-4eaa-4f6b-8af6-89e36cd302bb"
+    },
+    {
+      "claim_id": "7b2765fd-b196-424e-a584-c5c4c2d90fd7",
+      "result_id": "c677eefe-4eaa-4f6b-8af6-89e36cd302bb"
+    },
+    {
+      "claim_id": "f2b152d3-674e-429a-a4d5-321d3e4c8fc5",
+      "result_id": "c677eefe-4eaa-4f6b-8af6-89e36cd302bb"
+    },
+    {
+      "claim_id": "deb4452c-bb2c-440f-a103-da5d0e1eba74",
+      "result_id": "c677eefe-4eaa-4f6b-8af6-89e36cd302bb"
+    },
+    {
+      "claim_id": "af5c9fda-9163-4b82-901d-7fdf309e5439",
+      "result_id": "c677eefe-4eaa-4f6b-8af6-89e36cd302bb"
+    },
+    {
+      "claim_id": "a1cd437e-3716-4670-b9a7-0776f4021d9c",
+      "result_id": "c677eefe-4eaa-4f6b-8af6-89e36cd302bb"
+    },
+    {
+      "claim_id": "85d72b2d-aa65-4271-a2dc-2bd805a52ca2",
+      "result_id": "c677eefe-4eaa-4f6b-8af6-89e36cd302bb"
+    },
+    {
+      "claim_id": "a373bb3d-de38-4ec9-831e-7479d46a4984",
+      "result_id": "c677eefe-4eaa-4f6b-8af6-89e36cd302bb"
+    },
+    {
+      "claim_id": "1367ed1c-3b1b-42e0-a493-42011d33df73",
+      "result_id": "6602fdeb-a4cd-4ccc-8bee-a32371817535"
+    },
+    {
+      "claim_id": "de6bbefb-1f5d-4c4c-bc74-a14a8a37c19e",
+      "result_id": "6602fdeb-a4cd-4ccc-8bee-a32371817535"
+    },
+    {
+      "claim_id": "dbe18720-1d3e-4ded-ac4a-853551c8abfe",
+      "result_id": "6602fdeb-a4cd-4ccc-8bee-a32371817535"
+    },
+    {
+      "claim_id": "ef11a0e5-8c95-41fb-8f9a-cea0ed50528d",
+      "result_id": "6602fdeb-a4cd-4ccc-8bee-a32371817535"
+    },
+    {
+      "claim_id": "a3041119-dbd0-4d68-895a-2201f7008710",
+      "result_id": "6602fdeb-a4cd-4ccc-8bee-a32371817535"
+    },
+    {
+      "claim_id": "76509583-6b29-49c4-a813-20dd868ed28d",
+      "result_id": "d7451846-b9f8-4499-94d1-572dc4cd2621"
+    },
+    {
+      "claim_id": "451531f7-9689-4294-a7d9-cc8e5ddf2058",
+      "result_id": "d7451846-b9f8-4499-94d1-572dc4cd2621"
+    },
+    {
+      "claim_id": "e80daac0-7d91-4fe0-a646-096e8130996c",
+      "result_id": "d7451846-b9f8-4499-94d1-572dc4cd2621"
+    },
+    {
+      "claim_id": "1d69e45c-d2aa-4ea8-8a15-75ac75235fa0",
+      "result_id": "d7451846-b9f8-4499-94d1-572dc4cd2621"
+    },
+    {
+      "claim_id": "3361dde0-c19f-47cf-9a7f-1fd8f863f767",
+      "result_id": "d7451846-b9f8-4499-94d1-572dc4cd2621"
+    },
+    {
+      "claim_id": "447b6c11-f623-40dd-83cd-ed2f8ec1bd36",
+      "result_id": "d7451846-b9f8-4499-94d1-572dc4cd2621"
+    },
+    {
+      "claim_id": "61ee1343-519f-41bc-bb58-2b724418343c",
+      "result_id": "a563b46f-cc8a-43f3-891b-bbb0d4f4acad"
+    },
+    {
+      "claim_id": "ac58695d-8ad0-46f9-9f8d-974239ee977c",
+      "result_id": "a563b46f-cc8a-43f3-891b-bbb0d4f4acad"
+    },
+    {
+      "claim_id": "6e6a8b1b-bb24-4415-96df-61e41248e665",
+      "result_id": "a563b46f-cc8a-43f3-891b-bbb0d4f4acad"
+    },
+    {
+      "claim_id": "15c5caaf-703d-42e3-9628-52459b7b97cc",
+      "result_id": "20572e62-e87c-41e3-8a3a-5c6de875e324"
+    },
+    {
+      "claim_id": "05c621da-e5fe-491d-8f6f-ccb45296deab",
+      "result_id": "20572e62-e87c-41e3-8a3a-5c6de875e324"
+    },
+    {
+      "claim_id": "a7a5a2c6-f6a3-4a48-89bc-d7d09d806551",
+      "result_id": "20572e62-e87c-41e3-8a3a-5c6de875e324"
+    },
+    {
+      "claim_id": "c0fcd7be-ae20-438a-b8bf-bfed2acee994",
+      "result_id": "20572e62-e87c-41e3-8a3a-5c6de875e324"
+    },
+    {
+      "claim_id": "d38aba10-4098-4609-b04e-c1408bb1f322",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "35b99e7f-3a88-4093-8bff-ec05e8f91248",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "4870f367-13bb-48a5-a258-5fe1984d482f",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "66cdad3f-6abd-4078-860f-a1b857851888",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "cf933087-d5d2-41c0-b09e-6e088dea56ab",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "17c05bc2-2d42-41b6-992c-96290b6f8481",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "821696b0-0fc3-4834-ad3c-45320b46105b",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "385b1d3c-f922-49fa-a7c2-fe754fa828db",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "a8d99423-8ad0-42bf-bf3d-47e0f664cce7",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "1363f42e-5fca-4cef-ab27-b2fc2ef0b619",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "16e3168a-8755-4ef1-b7a6-acd4fec8d6d5",
+      "result_id": "9f2cfd1e-bd2a-4eb6-a94f-55661ca83beb"
+    },
+    {
+      "claim_id": "b5f3d71d-8d24-4899-849c-88777186c1bf",
+      "result_id": "38a5f584-983f-4b28-9be3-e888ab5990ee"
+    },
+    {
+      "claim_id": "5c06e560-7eb8-4f66-94e5-c249601601d7",
+      "result_id": "5a9b62d9-33d8-4c03-ad29-9a7a348131ce"
+    },
+    {
+      "claim_id": "68b34db4-8ded-48b9-8b36-8b492223ad1f",
+      "result_id": "5a9b62d9-33d8-4c03-ad29-9a7a348131ce"
+    },
+    {
+      "claim_id": "f7267296-b22f-4941-a993-c0ac97ec600f",
+      "result_id": "5a9b62d9-33d8-4c03-ad29-9a7a348131ce"
+    },
+    {
+      "claim_id": "ca0c62c1-9fb0-4d4f-9892-266dcfa46e20",
+      "result_id": "5e7b7778-bd6c-4a75-9ce7-4785731c00b9"
+    },
+    {
+      "claim_id": "3cd6ecd6-6d12-4dc6-a240-3540d0bf2e35",
+      "result_id": "5e7b7778-bd6c-4a75-9ce7-4785731c00b9"
+    },
+    {
+      "claim_id": "0f4eb1a6-666b-4e3a-a5e3-f33a8db96f3a",
+      "result_id": "5e7b7778-bd6c-4a75-9ce7-4785731c00b9"
+    },
+    {
+      "claim_id": "370da6da-e62b-4bcf-b2d1-b86a65516a3c",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "81c26bcd-76fb-43e9-ae76-6d95c8bcf7db",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "b32f8d45-6257-407d-a563-28b6ab31c3e5",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "63cd7a54-4996-4139-af98-68f8b92f70b8",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "b0d49da5-cd52-4cd2-9c7a-fe55e3b4187e",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "ce566b3e-1915-4236-8afb-ca7fab04a668",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "78e3589d-24fa-4afb-a6ae-30ac6ead93bd",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "34c28219-f201-493b-bb3a-cf4d996ba435",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "94b0b4bb-26ff-40a2-bbb2-23ac68f6fcdb",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "298045cf-bb57-4eeb-acda-02bf3f0fa957",
+      "result_id": "535f743d-f31f-41cf-b421-5474dceb8b59"
+    },
+    {
+      "claim_id": "1ad7efeb-7b2d-4eec-81df-73395d44a61b",
+      "result_id": "92e9a210-b4d9-450e-b8c6-1aa7e643523f"
+    },
+    {
+      "claim_id": "c08563d7-badd-46f7-af15-1fd7c3155cd1",
+      "result_id": "92e9a210-b4d9-450e-b8c6-1aa7e643523f"
+    },
+    {
+      "claim_id": "e8b91ac4-084e-4b5f-9e14-a36986f89bad",
+      "result_id": "92e9a210-b4d9-450e-b8c6-1aa7e643523f"
+    },
+    {
+      "claim_id": "4feb94d0-a138-46af-b1ae-aba9644a1b31",
+      "result_id": "5f3bee33-a34b-4742-b216-c5b4c33c4ea7"
+    },
+    {
+      "claim_id": "d8bfcff4-a17b-430a-ab4e-507d9b314788",
+      "result_id": "5f3bee33-a34b-4742-b216-c5b4c33c4ea7"
+    }
+  ],
+  "comparisons": []
+}

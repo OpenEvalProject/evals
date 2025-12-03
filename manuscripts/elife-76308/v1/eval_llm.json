@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Prior COLD method limitations are described, including reliance on intensity fluctuations from fluorophore blinking, restriction to cases with different brightness emitters, and significantly lowered measurement yield.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 accurately characterize the limitations of the prior COLD method based on cited work (C1) and established understanding of the technique's operational principles (C2-C4). These are background claims setting up the motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C28"
+    ],
+    "result": "polarCOLD employs partial labeling combined with polarization encoding and particle classification to determine distances and arrangements of protein complexes from under-sampled structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C28 describe the core methodological innovation of polarCOLD. The approach is demonstrated experimentally on PCNA and ClpB (C7-C8), providing strong support for these methodological claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "polarCOLD resolves the trimer arrangement of PCNA with Angstrom resolution (4.9 \u00c5 by FSC), achieving a reconstructed side length of 9.9\u00b10.6 nm from 119 particles with high correlation (0.96) to simulated accessible volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33-C42, and C50-C55 collectively demonstrate successful application of polarCOLD to PCNA. The experimental data (photon counts C37-C38, polarization assignment C39-C42, 3D reconstruction C50-C51) and quantitative metrics (FSC resolution C52, side length C53, particle number C54) provide strong evidence. The control experiment (C42) validates the assignment procedure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "polarCOLD resolves six different sites of the hexamer protein ClpB with Angstrom resolution using partial labeling (50% efficiency), supervised classification (98% accuracy), and reconstruction from 232, 100, and 135 particles for three classes with resolutions of 4.0, 7.9, and 6.4 \u00c5 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C60-C72 demonstrate successful application to the more complex ClpB hexamer. The partial labeling strategy (C61), classification approach (C65-C66), quantitative results (C67-C68, C70, C72), and control experiment (C71) provide comprehensive support. The high correlation scores (0.98, 0.96, 0.86) between reconstructed and simulated volumes (C70) validate the structural accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Model selection using Akaike information criterion on unclassified particle distance histograms correctly identifies the hexamer structure as the best fit, with classification remaining robust for deviations \u22641 nm from perfect symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 demonstrate that polarCOLD can identify correct oligomeric symmetry without complete prior knowledge. The AIC analysis (C74-C76) and simulation studies (C77) provide quantitative support. However, C78 acknowledges a limitation requiring complete labeling for completely disordered structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The number of resolvable fluorophores depends on blinking dynamics and shot noise-limited angular resolution, with experimental 5\u00b0 resolution theoretically enabling resolution of 70% of 3-fluorophore particles and 15% of 6-fluorophore particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide theoretical analysis of method limitations supported by experimental measurements (Figure 1\u2014figure supplements 5-6). The quantitative predictions (C46-C47) are based on Monte Carlo simulations using measured angular resolution, providing a sound theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Future improvements including additional polarization bases, polarized illumination, and full 3D dipole characterization could enhance the capacity for identifying different polarization states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49 are theoretical predictions about potential improvements supported by citations but not experimentally validated in this study. These represent reasonable extrapolations but remain speculative without experimental demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "polarCOLD achieves good results from 119 particles (2-3 orders of magnitude fewer than typical cryoEM) because each 2D projection directly contributes to 3D reconstruction, unlike cryoEM which requires averaging to establish 2D classes first.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 make a valid comparison between polarCOLD and cryoEM requirements. The high SNR of polarCOLD (C55) and direct contribution of 2D projections (C57) are demonstrated experimentally. The comparison to cryoEM particle requirements is supported by citation (C55-C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Existing algorithms for template-free particle reconstruction do not provide satisfactory solutions for the polarCOLD data due to random 3D orientations, strong under-labeling, and similar classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by testing existing algorithms (Figure 4\u2014figure supplement 1) and providing a reasonable explanation for their failure. This justifies the supervised classification approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C81",
+      "C82",
+      "C83",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "polarCOLD shows promise for combination with cryoEM to study heterogeneities in biomolecular structures, with potential applications in membrane protein studies, cellular imaging, and conformational analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C81-C83, and C88-C92 are prospective statements about future applications. While the demonstrated Angstrom resolution (C83) supports the potential, these applications have not been experimentally validated in this study. The claims about existing combined cryo-light/cryoEM work (C89-C90) are supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "polarCOLD is fully compatible with fluorescent protein labeling for use in cell and membrane biology studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C10 states compatibility with fluorescent protein labeling, but this is not experimentally demonstrated in the study. The work uses only organic dyes (ATTO647N). This claim is an inference based on the method's principles but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Detailed experimental methods are provided including protein labeling procedures, microscope specifications, imaging parameters, and image analysis achieving residual drift <1 nm and median registration error <2 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C103 provide comprehensive methodological details supported by experimental data. The quantitative metrics for drift correction and registration (C102-C103) demonstrate high technical quality. These are essential supporting details for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C58",
+      "C59",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background context on protein structural biology, existing techniques (X-ray crystallography, NMR, cryoEM, fluorescence microscopy), and specific proteins studied (PCNA, ClpB) is provided with appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C27, C29-C32, C58-C59, and C84-C87 provide background information supported by appropriate citations to prior literature. These establish the scientific context and motivation for the work but do not represent novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

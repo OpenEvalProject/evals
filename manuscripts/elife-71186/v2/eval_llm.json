@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8"
+    ],
+    "result": "The pial arterial vasculature is the sole blood supply to the neocortex, with arteries ranging from 280 to 50 \u03bcm in diameter, covering approximately 17% of the human cortex, and exhibiting a distinctive right-angled branching pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, and C8 are well-supported by citations to established literature (Mchedlishvili and Kuridze, 1984; Duvernoy, 1999; Rowbotham and Little, 1965) and data analysis from Duvernoy, 1999. These anatomical characteristics provide the foundation for understanding the imaging challenges addressed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Blood velocities in pial arteries range from approximately 40-50 mm/s based on measurements in cats, human retina, and human basal ganglia, with arterial transit times in healthy grey matter estimated between 500-1500 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 are supported by citations to multiple independent studies using different measurement techniques (Kobari et al., 1984; Nagaoka and Yoshida, 2006; Bouvy et al., 2016; Alsop et al., 2015). While the authors acknowledge potential measurement biases between optical and MRI-based methods, the convergent evidence from multiple sources provides reasonable support for these velocity estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C12",
+      "C13"
+    ],
+    "result": "This study represents the first targeted, comprehensive account of imaging pial arteries in vivo using TOF-MRA, challenging the prevailing sentiment that slow blood flow in small arteries significantly diminishes the TOF effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C12, and C13 are supported by established knowledge about TOF-MRA principles and multiple citations documenting the prevailing view about slow flow limitations. The novelty claim (C13) is reasonable given the targeted, systematic approach and the comprehensive theoretical framework presented, though the authors acknowledge some larger pial arteries have been visualized incidentally before.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "For voxel sizes of 50-300 \u03bcm relevant to pial arteries, blood dwell times are well below commonly used repetition times, allowing the use of a simplified plug-flow model without multiple velocity segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 are supported by data presented in Figure 2 and theoretical analysis. The blood dwell time calculations are straightforward and the conclusion that multiple velocity segments are unnecessary for these voxel sizes is a logical inference from the data, simplifying the theoretical treatment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Flow-related enhancement (FRE) depends exponentially on blood delivery times and quadratically on voxel size, with these non-linear relationships explaining previous over- and underestimation of these effects in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 are supported by theoretical analysis and data presented in Figures 3 and 4. The mathematical derivations (Equations 1-6) clearly demonstrate these relationships, and the non-linear dependencies provide a plausible explanation for previous discrepancies in the literature regarding voxel size effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Reducing voxel size from 0.8 to 0.3 mm increases FRE by 2900%, with smaller reductions yielding 165% (0.5\u21920.3 mm) and 85% (0.4\u21920.3 mm) increases. These empirical values align with theoretical predictions from the partial-volume FRE model, and FRE remains constant once vessels are larger than voxels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by empirical data in Figure 5 and theoretical predictions. The close agreement between observed FRE increases and model predictions (C22: 611%, 178%, 78% vs. observed 2900%, 165%, 85%) demonstrates the model captures the key physics, though the magnitude differences suggest additional factors. The observation that FRE plateaus for vessels larger than voxels (C23) is consistent with the partial-volume model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C32"
+    ],
+    "result": "Reducing voxel size progressively increases detected vessel skeleton length: 44% (0.8\u21920.5 mm), 28% (0.5\u21920.4 mm), 31% (0.4\u21920.3 mm), and 14% (0.16\u21920.14 mm), demonstrating increased sensitivity to small arteries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C32 are supported by data in Figure 5\u2014figure supplement 1. The progressive increases in skeleton length with decreasing voxel size provide quantitative evidence for improved detection of small vessels. However, the authors acknowledge that the skeletonization procedure has errors, particularly in sinuses and large veins, which may affect absolute values though relative changes should be consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C33",
+      "C34",
+      "C42",
+      "C43",
+      "C55"
+    ],
+    "result": "When imaging small pial arteries, voxel size rather than blood delivery time (slow blood flow) is the primary limiting factor, with partial-volume effects being the main contributor to FRE loss. This contradicts previous assumptions and demonstrates that reducing voxel size increases vessel contrast up to at least 0.14 mm isotropic resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C33, C34, C42, C43, and C55 represent the central conclusion of the study, supported by converging evidence from theoretical analysis (Figures 3-4), empirical voxel size comparisons (Figure 5), and high-resolution imaging (Figures 6-7). The theoretical framework, experimental validation, and consistency across multiple participants provide strong support for this paradigm shift in understanding TOF-MRA of small vessels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Pial arteries were successfully imaged at 0.16 mm isotropic resolution using 7T MRI, revealing numerous right-angled branches and high vessel density compared to conventional resolutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by data presented in Figure 6 and figure supplements, with visual evidence of right-angled branches (a known anatomical feature from C8) and comparison to cited literature at conventional resolutions. The detection of these characteristic branching patterns serves as an important quality marker for sensitivity to small arteries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C48",
+      "C49"
+    ],
+    "result": "Using prospective motion correction at 7T, pial arteries were imaged at 140 \u03bcm isotropic resolution with acquisition times exceeding 20 minutes per slab. The 33% reduction in voxel volume from 0.16 to 0.14 mm revealed additional small branches, and motion correction successfully corrected approximately 1 mm of head motion over 60 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, C48, and C49 are supported by data in Figure 7 and methodological descriptions. The use of prospective motion correction enabled the longest acquisition times and highest resolution achieved in the study. The detection of additional branches at 0.14 mm (Figure 7\u2014figure supplement 2) provides direct evidence that further resolution improvements continue to reveal smaller vessels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Vessel displacement artifacts due to blood motion were observed in all visible arteries, with displacements of approximately 2 mm (corresponding to 200 mm/s velocity) in larger arteries and 1 voxel/0.4 mm (40 mm/s) in smallest arteries. For high-resolution acquisitions, displacements of 0.2 mm (1-2 voxels) are predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by data in Figure 8 and calculations using the vessel displacement equation. The observed displacements are consistent with expected blood velocities from Figure 2, and the ubiquity of displacement across all visible vessels confirms high blood velocities throughout the pial vasculature. The prediction for high-resolution data (C38) is a straightforward calculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Inflow in large pial veins and dural sinuses causes flow-related enhancement in these non-arterial vessels, which can be identified and removed using T2* estimates from two-echo acquisitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by data in Figure 9 demonstrating the vein removal approach. The method successfully removes large venous structures based on T2* differences between oxygenated arterial blood and deoxygenated venous blood. However, the authors acknowledge limitations in the segmentation quality that prevented full application to high-resolution data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Previous work by Du et al. (1996) concluded that larger voxel sizes increase absolute vessel-background contrast, opposite to the current finding that smaller voxels increase relative FRE for small arteries. Numerous empirical observations support the benefit of smaller voxel sizes for visualizing and segmenting small arteries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 are supported by citations to Du et al., 1996 and multiple empirical studies, as well as data from Figures 5-7. The distinction between absolute and relative FRE definitions explains the apparent contradiction, and the authors provide a clear theoretical framework for understanding when each definition is more appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "TOF data at 0.16 mm isotropic resolution can be acquired in under 12 minutes per slab without motion correction in experienced participants, though approximately 1 in 4 scans required repetition due to motion artifacts. Motion correction will generally be necessary for higher resolutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by direct statements about the study results and practical experience. The 25% failure rate even with experienced participants highlights the challenge of motion artifacts at these resolutions and justifies the conclusion that motion correction is necessary for higher resolutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Imaging acceleration techniques undersample data and reduce SNR, though acquiring data at higher field strengths could boost SNR to partially compensate for acceleration losses and enable faster imaging or smaller voxels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by established knowledge about acceleration techniques and field strength effects, with appropriate citations. These are reasonable inferences about future directions based on well-understood MRI physics principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Four healthy adult males aged 30-46 participated in the study. Experiments were conducted at 7T using a Siemens MAGNETOM scanner with SC72 gradients. TONE pulses were not used because the complex branching pattern of pial arteries on the folded cortex means no preferential flow direction exists. Anonymized data are available at https://osf.io/nr6gc/.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are direct statements about study methods and data availability, supported by the Materials and methods section. The decision not to use TONE pulses (C58) is well-justified based on the anatomical characteristics of pial arteries established earlier in the paper.",
+    "result_type": "MINOR"
+  }
+]

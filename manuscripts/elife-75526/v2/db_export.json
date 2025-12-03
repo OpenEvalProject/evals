@@ -1,0 +1,1497 @@
+{
+  "submission": {
+    "id": "c0ce1f35-52b7-405f-8e18-6a5a927ff0bc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:59:54.406597Z",
+    "updated_at": "2025-12-03T12:59:54.406597Z"
+  },
+  "content": [
+    {
+      "id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "submission_id": "c0ce1f35-52b7-405f-8e18-6a5a927ff0bc",
+      "content_type": "manuscript",
+      "content_text": "# Regulation of protein complex partners as a compensatory mechanism in aneuploid tumors\n\n## Authors\n\n- G\u00f6k\u00e7e Senger<sup>1</sup>\n- Stefano Santaguida<sup>1</sup> ([ORCID: 0000-0002-1501-6190](https://orcid.org/0000-0002-1501-6190))\n- Martin H Schaefer<sup>1</sup> ([ORCID: 0000-0001-7503-6364](https://orcid.org/0000-0001-7503-6364)) \u2020\n\n### Affiliations\n\n1. Department of Experimental Oncology, IEO European Institute of Oncology IRCCS Milan Italy ([ROR:02vr0ne26](https://ror.org/02vr0ne26))\n2. Department of Oncology and Hemato-Oncology, University of Milan Milan Italy ([ROR:00wjc7c48](https://ror.org/00wjc7c48))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAneuploidy, a state of chromosome imbalance, is a hallmark of human tumors, but its role in cancer still remains to be fully elucidated. To understand the consequences of whole-chromosome-level aneuploidies on the proteome, we integrated aneuploidy, transcriptomic, and proteomic data from hundreds of The Cancer Genome Atlas/Clinical Proteomic Tumor Analysis Consortium tumor samples. We found a surprisingly large number of expression changes happened on other, non-aneuploid chromosomes. Moreover, we identified an association between those changes and co-complex members of proteins from aneuploid chromosomes. This co-abundance association is tightly regulated for aggregation-prone aneuploid proteins and those involved in a smaller number of complexes. On the other hand, we observed that complexes of the cellular core machinery are under functional selection to maintain their stoichiometric balance in aneuploid tumors. Ultimately, we provide evidence that those compensatory and functional maintenance mechanisms are established through post-translational control, and that the degree of success of a tumor to deal with aneuploidy-induced stoichiometric imbalance impacts the activation of cellular protein degradation programs and patient survival.\n\n## Introduction\n\nAneuploidy, whole-chromosome- or chromosome-arm-level alterations, affects expression of a large number of genes simultaneously - most directly by providing additional or diminished copies of genes in - or decreasing their transcription. Typically, aneuploidy is detrimental for normal cells, among other reasons as it causes stoichiometric imbalances in protein complexes involving proteins encoded on the aneuploid chromosome (Brennan et al., 2019; Santaguida and Amon, 2015a). However, around 90% of solid tumors have aneuploid karyotypes (Ben-David et al., 2019; Taylor et al., 2018), raising the question of how cancer cells can tolerate the massive amount of transcriptomic and proteomic changes.\n\nPrevious studies demonstrated correlated expression between gene copy number and transcriptome level for genes on aneuploid chromosomes while there is a buffering effect at the proteome level adjusting protein levels, especially for protein complex subunits (Stingele et al., 2012; Dephoure et al., 2014). This post-transcriptional compensatory mechanism preventing excess translation of complex members has also been characterized for copy number alterations (CNAs) in different contexts such as yeast (Ishikawa et al., 2017) and cancer (Gon\u00e7alves et al., 2017). Structural properties of proteins have an effect on the degree of post-transcriptional buffering on changes induced by CNAs, for example, proteins with larger interface size showed larger degree of buffering (Sousa et al., 2019). Recently, post-translational regulation has also been identified as a dosage compensation mechanism in response to aneuploidy in cancer cell lines (Schukken and Sheltzer, 2021).\n\nTranscriptome analysis revealed that aneuploidy largely affects expression of genes on other chromosomes too (Nawata et al., 2011; Upender et al., 2004). For CNAs, a correlated increase in the abundance of co-complex members encoded by genes outside the copy number amplified region has been shown (Gon\u00e7alves et al., 2017) raising the question of whether this could contribute to the expression changes in aneuploid cells even on diploid chromosomes. Together these results suggest the importance of compensation mechanisms to buffer differentially expressed transcripts in response to the amplification or loss of genomic regions and in particular to mitigate stoichiometric imbalances in protein complexes. However, we still lack a global understanding on the effects of aneuploidy on the expression of genes on other, non-aneuploid chromosomes in a cancer context.\n\nHere, we study transcriptomic and proteomic changes induced by aneuploidy in cancer patients (Figure 1A) and extend the scope of previous studies by focusing on expression and abundance changes on other, non-aneuploid chromosomes. We show that protein complex subunits of other chromosomes tend to maintain their abundance levels unless they form a complex with differentially abundant proteins encoded by genes located on the aneuploid chromosome. We further demonstrate that this co-abundance regulation is dependent on aggregation propensity and promiscuity of the aneuploid complex partners and controlled by post-translational mechanisms. Our findings highlight a complementary mechanism acting to deal with the excess amount of expression changes induced by aneuploidy: Coordinated abundance changes of complex partners might prevent aggregation of unpaired complex members.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig1-v2.jpg)\n\n**Figure 1.:** (A) Data used in this study and schematic representation of the performed analyses. (B) Cancer-type-specific, whole-chromosome-level alterations across 32 cancer types. The color encodes the degree of their enrichment (standard residuals of the chi-square test multiplied by the alteration score [\u20131 in the case of deletion and 1 in the case of amplifications]). (C) Average percentage of differentially expressed genes or abundant proteins on aneuploid and other, non-aneuploid chromosomes (among the detected genes on the respective chromosomes).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The number of genes covered by transcriptomic and proteomic data for The Cancer Genome Atlas cancer patients comprising colorectal adenocarcinoma (COREAD), breast (BRCA), and ovarian (OV) cancer types. (B) Average percentage of differentially expressed genes on co-amplified and non-co-amplified chromosomes across 60 whole-chromosome-level amplifications. Paired Wilcoxon test was used to test differences between the groups. (C) Average percentage of differentially expressed genes on the aneuploid chromosome and other, non-aneuploid chromosomes (left), and percentages of differentially expressed genes on other chromosomes (right) in thyroid cancer (THCA) chromosome 7 amplification. Percentage was calculated as the ratio of differentially expressed genes from each chromosome to the total number of expressed genes on that chromosome. Red bars show the percentage for chromosome 5, 16, and 20 which are strongly co-amplified with chromosome 7 in THCA.\n\n## Results\n\n### Widespread transcriptome and proteome deregulation in aneuploid tumors\n\nTo study the effect of whole chromosomal alterations on cancer transcriptomes and proteomes, we first identified cancer-type-specific, whole-chromosome-level amplifications and deletions that occurred at higher frequencies than would be expected by chance in 10,522 samples analyzed in The Cancer Genome Atlas (TCGA) by using a previously established cancer aneuploidy estimate (Taylor et al., 2018). In total, we detected 203 whole-chromosome-level alterations including 86 amplifications and 117 deletions for 32 cancer types (Figure 1B, Supplementary file 1). Then, for each detected aneuploidy case, we split the set of samples into those containing the respective chromosome number aberration and those diploid for the respective chromosome and then tested for differential expression of all genes between the sets. We found that on average 41% and 48% of the genes located on amplified and deleted chromosomes, respectively, changed expression (Figure 1C). Besides those intuitively expected gene expression changes on the aneuploid chromosomes, we observed a surprisingly large number of expression changes happening on other, typically diploid chromosomes (15 and 18% of genes on average for amplification and deletion cases, respectively; Figure 1C).\n\nWe observed that often chromosomes tend to be co-amplified. We therefore tested for statistical dependence between amplification events of chromosomes. For the 86 cancer-type-specific amplifications, we identified 305 co-amplifications that occurred more frequently than expected by chance covering 60 out of 86 cancer-type-specific amplifications (adjusted p-value <0.01, chi-square test; Supplementary file 1). We wondered if this could explain the relatively high number of differentially expressed genes on other chromosomes. To test this, we quantified the contribution of each chromosome to the transcriptional dysregulation by dividing the number of differentially expressed genes from each chromosome to the total number of genes on that chromosome. We then compared the average contribution of co-amplified chromosomes to that of non-co-amplified chromosomes across the 60 cancer-type-specific amplifications. We found that there is no significant difference between the medians of these chromosome groups (p=0.4, paired Wilcoxon test; Figure 1\u2014figure supplement 1B, C) suggesting that they do not substantially contribute to the overall transcriptional dysregulation on other chromosomes.\n\nTo further understand the effect of those expression changes in response to aneuploidy on the proteome, we collected corresponding proteome abundance data, which is available from the Clinical Proteomic Tumor Analysis Consortium (CPTAC) for 298 TCGA tumor samples comprising breast (BRCA) (Cancer Genome Atlas Network, 2012; Mertins et al., 2016), ovarian (OV) (Cancer Genome Atlas Research Network, 2011; Zhang et al., 2016), and colorectal adenocarcinoma (COREAD) (The Cancer Genome Atlas Network, 2012; the NCI CPTAC et al., 2014) cancer types. Then, for 13 and 20 cancer-type-specific, whole-chromosome-level amplifications and deletions, respectively (found in above mentioned 3 cancer types), we detected protein abundance changes between aneuploid samples (with the amplified/deleted chromosome) and diploid samples. We observed that a smaller number of proteins showed abundance changes compared to our observations at the transcriptome level (after normalizing for the largely different gene coverage between the transcriptomics and proteomics datasets) both for amplification and deletion cases (Figure 1C).\n\nOne of the major consequences of aneuploidy is its impact on cell proliferation (Santaguida and Amon, 2015a). We, therefore, investigated the molecular pathways associated with frequently dysregulated genes and proteins of other chromosomes in aneuploid tumors. Indeed, we found gene ontology (GO) terms belonging to cell cycle and cell cycle processes to be among the top dysregulated gene sets (Supplementary file 2).\n\nTogether these observations suggest that attenuation mechanisms are in place, and we observe regulation both on transcription and translation level which prevent that all genes located on the aneuploid chromosomes are deregulated. This effect is stronger on protein than on RNA level indicating that on top of regulation of transcription, translation control or protein degradation might play a role. At the same time, we observed a surprisingly large number of dysregulation events on chromosomes other than the aneuploid one raising the question of the purpose of the up- and downregulation of hundreds of genes in response to specific aneuploidies.\n\n### Complex members tend to be co-deregulated\n\nTo test if the vast changes on the cellular proteome in aneuploid cells outside the aneuploid chromosome could be explained by compensation mechanisms for changes in complex stoichiometry induced by aneuploidy, we performed an association test between co-complex members of differentially abundant proteins encoded on aneuploid chromosomes and differentially abundant proteins encoded on other chromosomes by using human complex information from the mammalian protein complex database CORUM (Giurgiu et al., 2019). We observed a general tendency for the differentially abundant proteins of other chromosomes to be complex partners of differentially abundant proteins from the aneuploid chromosome for both whole-chromosome-level amplifications and deletions (p<0.05, chi-square test; Figure 2A). We found a moderate percentage (in average 4.47%; Supplementary file 3) of differentially abundant proteins on other chromosomes being partners of those on aneuploid proteins. However, the coverage of proteins with CORUM complex information is rather limited (22% of proteins form part of at least one complex in CORUM). When only proteins participating in at least one complex were considered, the average fraction of partner proteins among differentially abundant proteins increased to 12.61% (Supplementary file 3). Moreover, comparing protein abundance correlations between differentially abundant proteins on aneuploid chromosomes and their co-complex members with non-complex members showed significantly stronger correlations between proteins of same complexes (p<2.2e-16, Wilcoxon test; Figure 2B). Those observations are in line with previous findings claiming that complex organization shapes protein abundance changes in response to CNAs (Sousa et al., 2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig2-v2.jpg)\n\n**Figure 2.:** (A) Standard residuals and p-values for the overlap between co-complex members of differentially abundant proteins on aneuploid chromosomes and differentially abundant proteins on other chromosomes for 13 amplifications and 20 deletions. (B) Protein abundance correlations between differentially abundant proteins on aneuploid chromosomes and their co-complex and non-complex subunits. Correlations were calculated across cancer samples, separately for each cancer type, and then pooled. Wilcoxon test was used to determine whether two distributions are significantly different. (C) The number of protein-protein interactions (PPIs; n=701) between differentially abundant proteins of aneuploid chromosomes and those on other chromosomes against the background distribution for COREAD chromosome 7 amplification. (D) Standard residuals and p-values for the overlap between CORUM complex subunits and differentially abundant proteins on other chromosomes for 13 amplifications and 20 deletions.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Standard residuals and adjusted p-values for the overlap between (A) co-complex members of differentially expressed genes on aneuploid chromosomes and differentially expressed genes on other chromosomes, for 203 detected cancer-type-specific aneuploidies; 86 amplifications and 117 deletions, and (B) CORUM complex subunits and differentially expressed genes on other chromosomes.\n\nTo investigate whether our observations can be generalized to binary protein-protein interactions (PPIs), we used PPI data from the human PPI database HIPPIE (v2.2) (Alanis-Lobato et al., 2017) to test if the number of interactions between differentially abundant proteins encoded on the aneuploid and those on other chromosomes is higher than expected by chance. Indeed, we found an enrichment of interactions between those protein sets in 9 out of 13 cancer-type-specific amplifications and 8 of the 20 deletions (p<0.05, randomization test; Figure 2C, Supplementary file 4). Given the higher coverage of PPI data, we asked again which percentage of differentially abundant proteins on other chromosomes could be potentially explained by their interactions with complex members on aneuploid chromosomes. We found that on average 27.5% of the differentially abundant proteins on other chromosomes interact with those on the aneuploid chromosomes (Supplementary file 4). For example, for chromosome 7 in COREAD and chromosome 12 in OV, more than 40%, and for chromosome 5 in BRCA, more than 30% of the differentially abundant proteins interacted with proteins on the amplified chromosomes.\n\nWe hypothesized that these abundance changes should only affect co-complex members of differentially abundant proteins on aneuploid chromosomes, but that non-partner complex members should maintain their abundance level to prevent stoichiometric imbalances. To test this, we performed an association test for the overlap between differentially abundant proteins on other chromosomes and all known human complex members curated from CORUM. As a result of this, we found a significant depletion of complex subunits in differentially abundant proteins on other chromosomes for amplification cases (p<0.05, chi-square test; Figure 2D). This suggests that complex members overall are stably expressed to prevent disruption of complex stoichiometry upon chromosomal amplification. This effect was not observed in the case of chromosomal deletions in which differentially abundant proteins of other chromosomes are significantly enriched in complex proteins (p<0.05, chi-square test; Figure 2D).\n\nIn contrast to our observations at the proteome level where we observed a consistent pattern of enrichment for co-regulation of co-complex members, we observed both strong enrichments and depletions of co-complex members of proteins encoded by differentially expressed genes on aneuploid chromosomes in the differentially expressed genes on other chromosomes (adjusted p-value <0.01, chi-square test; Figure 2\u2014figure supplement 1A). In addition, we observed a significant enrichment of protein complex subunits among the differentially expressed genes on other chromosomes for 19 out of 28, and 20 out of 31 significant associations for amplification and deletion cases, respectively, at the transcriptome level (adjusted p-value <0.01, chi-square test; Figure 2\u2014figure supplement 1B). The lack of consistency for co-regulation of co-complex members at the transcriptome level suggests post-transcriptional compensatory mechanisms to control abundance changes induced by aneuploidy.\n\n### Epigenetic and transcriptional control cannot fully explain the dysregulation on other chromosomes\n\nPrevious studies have revealed the role of epigenetic and transcriptional regulatory mechanisms in cancer. Differential DNA methylation and dysregulation of transcription factors (TFs) mediate aberrant gene expression in cancer (Baylin and Herman, 2000; Ehrlich, 2002; Bushweller, 2019). Thus, we further aimed to disentangle the different regulatory layers underlying expression changes (Figure 3A) on other chromosomes induced by aneuploidy. We first tested if those expression changes could be explained by epigenetic silencing via differential DNA methylation of the promoters of genes changing expression in aneuploid samples. Therefore, we compared average DNA methylation levels of differentially expressed genes in aneuploid samples to diploid samples, separately for up- and downregulated genes. We found that downregulated genes are significantly related to higher methylation levels in aneuploid samples in only 6 amplification cases out of 86 (~7%) and in 5 deletion cases out of 117 (~4%; Figure 3\u2014figure supplement 1A). We observed significant associations between lower methylation level and upregulated genes in aneuploid samples for few cases (10 out of 86 amplification cases and 16 out of 117 deletion cases) (Figure 3\u2014figure supplement 1B). This suggests that epigenetic regulation does not have a substantial contribution to the described genome-wide changes in gene expression induced by aneuploidy.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig3-v2.jpg)\n\n**Figure 3.:** (A) Overall representation of different levels of gene regulation. (B) Number of ubiquitination sites of all, human complex, and top positively and negatively correlated proteins. Wilcoxon test was used to test differences between groups. TF, transcription factors.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Average methylation level of (A) downregulated and (B) upregulated genes in aneuploid vs diploid samples. Wilcoxon test was used to test differences in methylation level of genes between aneuploid and diploid samples (*: p<0.05). (C) The number of targets of differentially abundant transcription factors on aneuploid chromosomes among differentially expressed genes on chromosomes. Expected value and p-value were calculated using a randomization test (*: p<0.05).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Average methylation level of down- and upregulated genes in tumor vs normal samples. (B) The number of targets of differentially expressed transcription factors (TFs) in tumors vs normal among differentially expressed genes. (C) Average methylation level of up- and downregulated co-complex members of aneuploid proteins on other chromosomes in aneuploid vs diploid samples. (D) The number of targets of differentially expressed TFs on aneuploid chromosomes among differentially expressed co-complex members of aneuploid proteins on other chromosomes. Wilcoxon test was used to test differences in methylation levels between sample groups, and expected value and p-value in B and D were calculated using a randomization test (*: p<0.05, n.s: not significant).\n\nWe then asked if differential expression of TFs on the aneuploid chromosome could explain the large transcriptional changes on other chromosomes. We therefore tested for a large list of ENCODE gene-TF associations if there is an enrichment of targets of differentially expressed TFs on the aneuploid chromosome among differentially expressed genes on the other chromosomes. Performing a randomization test did not reveal an excess of targets for any of the tested, cancer-type-specific chromosomes (Figure 3\u2014figure supplement 1C).\n\nAs a control, we computed the differentially expressed genes between tumor and healthy samples for 21 TCGA cancer types, where we have tumor vs normal samples. In those downregulated genes are often hypermethylated in cancer (Figure 3\u2014figure supplement 2A) suggesting that DNA methylation plays an important role in regulating gene expression during carcinogenesis. Even though not significant we observed a higher number of targets of differentially expressed TFs among differentially expressed genes for 76% of cancer types (Figure 3\u2014figure supplement 2B) as compared to 62% in aneuploid tumors. In addition, we observed a higher absolute difference between the number of observed and expected targets in tumor vs normal samples (353.71 and 663.34, respectively, for aneuploid tumors and tumor vs normal). Lastly, we tested the regulatory impact of the differential expression of the well-known cancer-related TF MYC on the expression of its target genes. We found MYC differentially expressed in 14 out of 21 cancer types, and in those cancer types its targets are significantly enriched among differentially expressed genes (p<0.05, chi-square test). Together these observations show that our measures of transcriptional regulation can capture some regulatory activity in cancer but the absence of signals in aneuploid tumors suggests that transcriptional regulation cannot fully explain the expression changes on other chromosomes.\n\n### Post-translational regulation of partner co-abundance\n\nWe observed a stronger association between complex partner co-regulation on proteome as compared to transcriptome level (Figure 2A; Figure 2\u2014figure supplement 1A) suggesting a central role for translational or post-translational regulation in maintaining complex protein abundance balance in aneuploid cells. To further validate this, we looked at the transcript levels of co-complex members of aneuploid proteins and asked if the corresponding changes could be explained by differential methylation or differential activation of TFs encoded on aneuploid chromosomes. Indeed, we did not observe an overall significant association further supporting the role of translational or post-translational mechanisms on co-abundance regulation (Figure 3\u2014figure supplement 2C, D).\n\nPrevious studies have suggested that ubiquitination at multiple sites is an efficient signal for degradation (Dimova et al., 2012) and further increase in the number of ubiquitination sites is related to higher binding affinity between protein and proteasome (Lu et al., 2015). We therefore hypothesized that post-translational ubiquitination of proteins could regulate co-abundance changes of partners of aneuploid proteins on other chromosomes. To test this, we retrieved ubiquitination data from PhosphoSitePlus (Hornbeck et al., 2015) and tested if top correlated co-complex members of aneuploid proteins tend to have higher number of ubiquitination sites (as a proxy to identify proteins that can be more easily targeted for degradation). Indeed we found that top correlated partners have significantly higher numbers of ubiquitination sites (p<0.05, Wilcoxon test; Figure 3B). This suggests that a primary mechanism for keeping protein complex stoichiometry in check seems to be indeed post-translational regulation (such as ubiquitin-mediated degradation).\n\n### Differential protein abundance of complex partners as a compensatory mechanism to prevent complex imbalance and aggregation\n\nThe main expected detrimental effect of chromosomal amplifications is an excess of protein abundance of complex members leading to an aggregation of the orphan proteins (rather than a loss of function of the complex as would be expected for insufficient expression for complex assembly as a consequence of chromosome deletion) (Santaguida et al., 2015b). We therefore tested if aggregation-prone proteins on the amplified chromosome show a higher tendency for strong correlations with their complex partners on other chromosomes. We grouped aneuploid proteins as aggregating and non-aggregating based on the data from M\u00e4\u00e4tt\u00e4 et al., 2020 and compared their protein-level abundance correlations with partners. Indeed, we observed stronger correlations for aggregation-prone proteins as compared to their non-aggregating counterparts (p<2.2e-16, Wilcoxon test; Figure 4A). This suggests that upregulating the protein expression of genes on chromosomes not affected by aneuploidy themselves serves as a compensatory mechanism to prevent proteotoxicity triggered by the aggregation of non-paired complex members located on the aneuploid chromosome.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig4-v2.jpg)\n\n**Figure 4.:** Protein abundance correlations between differentially abundant proteins on aneuploid chromosomes and their co-complex members on other chromosomes when aneuploid proteins are grouped as (A) aggregation-prone and non-aggregation-prone and (B) promiscuous and non-promiscuous. (C) Co-occurrence frequency of differentially abundant proteins on aneuploid chromosomes and their co-complex members on other chromosomes in different correlation groups, positively and negatively correlated and non-correlated co-complex members of aneuploid proteins. Wilcoxon test was used to test the differences between groups.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Protein abundance correlations between differentially abundant proteins on aneuploid chromosomes and their co-complex members on other chromosomes when co-complex proteins are grouped as aggregation-prone and non-aggregation-prone, in deletion cases. Wilcoxon test was used to test the difference between two groups.\n\nWe hypothesized that in the case of chromosomal deletions, the aggregation propensity of downregulated proteins on the aneuploid chromosome should not affect the degree of correlation with complex partners. Indeed, we observed aggregation-prone proteins to be not related to stronger correlations with their complex partners on other chromosomes when they are encoded on deleted chromosomes (Figure 4A). This is likely the case as downregulating those proteins would not leave them as orphan subunits and hence increase their risk of aggregation. However, one would expect that aggregation propensity of co-complex members of downregulated proteins of the deleted chromosomes should have an effect on the co-abundance correlations as this will leave them as orphan subunits. To test this, we compared the co-abundance correlation of proteins of deleted chromosomes with their aggregating co-complex members to non-aggregating ones. We found that deleted aneuploid proteins have significantly stronger correlations with their aggregating co-complex members (p=0.045, Wilcoxon test; Figure 4\u2014figure supplement 1).\n\nAssuming that the regulation of proteins on other, non-aneuploid chromosomes serves to prevent stoichiometric imbalance of protein complexes, we speculated that for proteins that are in many complexes there are more ways of being abundance-compensated by a complex partner compared to those proteins participating in few complexes and therefore each single partner should be under less stringent control for co-expression with the aneuploid protein. We therefore classified each aneuploid protein into promiscuous (participating in more than five complexes) and non-promiscuous (involved only in five or less than five complexes). As expected, we observed weaker correlations for promiscuous proteins of amplified chromosomes (p=6e-16, Wilcoxon test; Figure 4B) further supporting the model in which differential abundance of proteins on other chromosomes is a compensatory mechanism. We did not observe the same association in the case of chromosomal deletions (Figure 4B).\n\nFinally, we hypothesized that proteins co-occurring in many complexes should show stronger correlation than proteins found only in a few cases together in the same complex. Indeed, we found significant differences in the number of times aneuploid proteins and their positively correlated co-complex members were found together in the same complex vs their uncorrelated or negatively correlated co-complex members (p=2.2e-12 and p=2.8e-14 for chromosomal amplifications, p=0.004 and p=7.4e-05 for deletions; Figure 4C). This, again, illustrates how complex organization shapes the co-abundance patterns between differentially abundant proteins from the aneuploid chromosome and those located on other chromosomes.\n\n### Functional selection acting on protein stoichiometric imbalance\n\nIn the previous sections, we proposed that co-abundance change of protein complex partners is a compensation mechanism to prevent stoichiometric imbalance in protein complexes to avoid proteotoxicity of orphan subunits. We next wondered if besides biophysical (such as aggregation propensity) any functional properties would protect complexes and complex subunits from abundance imbalance in aneuploid cancer cells. To this end, we first retrieved the most strongly correlated co-complex members of differentially abundant aneuploid proteins and identified the complexes they are involved in. Then, we obtained functional annotations of the complexes from the CORUM database. To identify functions under stronger protection from protein abundance imbalance in complexes, we computed the enrichment of these functions compared to a random set of complexes under relaxed stoichiometric protection. The analysis revealed that top correlated proteins form complexes that are frequently involved in translation (mainly driven by ribosomal proteins; see Materials and methods section), RNA splicing, RNA processing, and protein complex assembly (Figure 5A; Supplementary file 6). Interestingly, the functional enrichment is consistent for amplifications and deletions suggesting that not just compensatory mechanisms to prevent proteotoxicity contribute to the dysregulation of proteins on other chromosomes but also functional selection is in place, acting on important cancer-essential functions up- or downregulating entire protein complexes while keeping their stoichiometry in check.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig5-v2.jpg)\n\n**Figure 5.:** A) Most frequently enriched terms in the amplification and deletion cases. Frequency shows the number of aneuploidy cases in which the corresponding term is significantly enriched (* Enrichment is mostly driven by ribosomal genes). (B) Enrichment scores of enriched terms both in amplification and deletion cases. For the functional term that is enriched in more than one amplification/deletion cases, the enrichment score of the ones with the lowest p-value is displayed.\n\nTo quantitatively compare the degree of enrichment between the functional terms associated with balance-protected complexes, we devised an enrichment score (see Materials and methods section) and compared it for the top enriched or depleted functions between amplifications and deletions. We observed that top correlations in the deletion cases are related to stronger enrichment scores when compared to their counterparts in the amplification cases (Figure 5B).\n\n### Phenotypic consequences of stoichiometric compensation success\n\nThe previous results suggest co-regulation of co-complex members as a compensation mechanism to balance protein abundance changes caused by whole chromosomal alterations and thus to keep protein complex stoichiometry in check. We reasoned that different tumors might be able to compensate for the dysregulation of proteins on the aneuploid chromosome with a different degree of success and hypothesized that tumors that can better compensate for protein abundance changes will be associated with better survival rates while those that fail to compensate should upregulate components of the protein degradation machinery to clear the cell from the orphan complex subunits. To test this, we first calculated a stoichiometry deviation score for each sample by using correlations between co-complex members in aneuploid tumors as a measure of failure of keeping the complex stoichiometry balance (Figure 6A). Then, we performed a survival analysis by grouping samples based on their stoichiometry deviation scores (Figure 6A). While not significant in every single case we observed a tendency that samples with low stoichiometry deviation scores are related to lower survival probabilities in all three tissue types (Figure 6B) showing that compensation for protein abundance indeed provides a survival advantage to tumors.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig6-v2.jpg)\n\n**Figure 6.:** (A) Graphical representation for the calculation of stoichiometric deviation score for each sample (n=30 referring top 30 correlations). (B) Survival analysis results within each tissue. Survival analysis was done once with overall survival and once with disease-free survival. (C) Correlations between the stoichiometric deviation scores and protein abundance/mRNA expression of all proteins, and proteasome complex - ubiquitin binding proteins. Wilcoxon test was used to test differences between groups. BRCA, breast cancer; OV, ovarian cancer; COREAD, colorectal adenocarcinoma cancer.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75526/elife-75526-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Correlations between the mean stoichiometric deviation scores across samples when different number of highly correlated protein pairs were considered. (B) Mean abundances of proteasome complex and ubiquitin-binding proteins in high and low samples. Samples were grouped once based on overall survival, and once based on disease-free survival. (C) Cutpoints to group samples as high and low based on stoichiometry deviation scores. (D) Correlations between the stoichiometric deviation scores and protein abundance/mRNA expression of all proteins, and proteasome complex - ubiquitin binding proteins when samples were separated as amplification and deletion groups. Wilcoxon test was used to test differences between groups. BRCA, breast cancer; OV, ovarian cancer; COREAD, colorectal adenocarcinoma cancer.\n\nWe further investigated if the proteins that play a role in protein degradation have higher abundances in the tumors that cannot compensate for abundance changes and thus have to deal with the excess amount of orphan subunits. We indeed found that ubiquitin-binding proteins and components of the proteasome show significantly higher correlations between their abundances and the stoichiometry deviation scores in two out of three tissues (Figure 6C; Figure 6\u2014figure supplement 1B), and this tendency still applies when samples are divided into amplification and deletion groups (Figure 6\u2014figure supplement 1D). This likely is a consequence of proteotoxic stress resulting from the inability of some tumors to keep protein complexes balanced.\n\n## Discussion\n\nHere, we conduct an extensive characterization of the transcriptome and proteome in aneuploid human cancers. We show that 47\u201363% and 24\u201333% of genes on aneuploid chromosomes show expression changes at the transcriptome and proteome level (Figure 1C), respectively. A similar degree of the effect of aneuploidy on expression changes has been previously found in human cancer cells: 50% and 25% of genes showed copy-number-correlated expression changes at the transcriptome and proteome level, respectively (Schukken and Sheltzer, 2021). In yeasts, aneuploidy affects a larger fraction of genes. Up to 70\u201380% of genes on aneuploid chromosomes changed levels of transcripts and proteins by the degree expected based on chromosome number (Dephoure et al., 2014; Gasch et al., 2016). The different degree of expression changes induced by aneuploidy depends on many factors including the cellular environment (Kojima and Cimini, 2019). However, independently from the study system, the stronger buffering at the proteome level than transcriptome level is consistently observed (Stingele et al., 2012; Dephoure et al., 2014). On the other hand, we find that genes on other chromosomes show a surprising degree of differential expression. Further, comparison of transcriptome and proteome data reveals that proteomic changes from aneuploid chromosomes could primarily be explained by differential expression of their corresponding genes at the transcriptome level; however, this is not the case for proteomic changes of other, non-aneuploid chromosomes (in amplification cases, 76.5% and 26.2% of proteomic changes, and in deletion cases, 89.9% and 36.2% of the differentially abundant proteins show also differential abundance of the corresponding transcript for aneuploid and other chromosomes, respectively). Together, these observations suggest different levels of control for dosage compensation for aneuploid and other chromosomes. Transcriptional control plays a major role for aneuploid chromosomes while translational or post-translational control has a comparably stronger importance for gene regulation of other chromosomes.\n\nWe propose that a large fraction of differential expression events on other, non-aneuploid chromosomes might serve a compensatory purpose by binding aggregation-prone proteins upregulated due to their location on the aneuploid chromosome. We observe that up to 40% of the typically hundreds and sometimes more than 1000 differentially abundant proteins physically interact either in a complex or in a binary manner with their partners on the aneuploid chromosome. Given the still incomplete understanding of the nature of the human interactome (and in particular the limits on the available protein complex information), this is a remarkably high number. We expect that with an increase of protein complex measurements, this number will substantially grow.\n\nThis novel compensatory mechanism complements the previously described dosage compensation addressing the differential expression of complex subunits directly on the aneuploid chromosomes (Stingele et al., 2012; Schukken and Sheltzer, 2021). Together they might largely prevent the otherwise detrimental overexpression of orphan complex subunits. Correlated abundance patterns to compensate for aggregation-prone orphan proteins (differentially abundant aggregation-prone proteins of amplified chromosomes and aggregation-prone co-complex members of differentially abundant proteins of deleted chromosomes, respectively, for amplification and deletion cases) are detectable for both chromosome amplification and deletion cases. Furthermore, we observed stronger enrichments for specific, cancer-essential functions suggesting that here functional selection is a stronger driving force to shape the global co-abundance pattern. Among these terms, enrichment of translation is mostly driven by a relatively larger fraction of ribosomal genes among our gene sets (which might not be surprising given that 23% of the translation-related genes are ribosomal genes).\n\nSimilar compensatory mechanisms have been previously identified to be induced by focal CNAs (Gon\u00e7alves et al., 2017; Sousa et al., 2019). We demonstrate here that this observation holds for large genomic amplifications of entire chromosomes and likely serves the prevention of proteotoxic aggregation of orphan subunits as suggested by the stronger abundance correlations formed by aggregation-prone proteins. Considering that around 90% of solid tumors are aneuploid, our work addresses the question of how the vast gene expression changes induced by the amplification of large genomic regions can be tolerated by the majority of cancer cells.\n\nOne surprising observation is the presence of strong negative correlations between aneuploid proteins and co-complex partners on other chromosomes. We could not substantiate our initial intuition that those could be indicative of protein-binding competition relationships. We used different approaches to predict overlap in protein-binding interfaces to estimate competition events but did not observe an agreement with the negative abundance correlations. Future research will need to clarify the reason for the existence of the negative correlations.\n\nOur findings describe the need for compensation mechanisms to deal with stoichiometric imbalances in protein complexes induced by aneuploidy and highlight the role of components of proteasome complex and ubiquitin-binding proteins in keeping the complex stoichiometry and better tumor fitness. It has been shown that targeting essential genes in aneuploid cells eventually results in proliferation defects and activation of cell death pathways (Cohen-Sharir et al., 2021). Taken together, our results could serve for the identification potential drug targets for clinical use. Ultimately, given the high number of aneuploid tumors, studying and understanding compensatory mechanisms and the potential vulnerabilities they create in aneuploid tumors will have profound implications for both basic cell biology as well as cancer biology.\n\n## Materials and methods\n\n### Calculating whole-chromosome-level aneuploidy scores\n\nArm-level aneuploidy scores for 10,522 TCGA samples, comprising 33 cancer types, were obtained from Taylor et al., 2018. Whole-chromosome-level aneuploidy scores were calculated as follows: If both p and q arms for chromosomes 1\u201312 and 16\u201320 are amplified, deleted, or not changed, the entire chromosome was considered as amplified, deleted, or diploid, respectively. For acrocentric chromosomes, 13\u201315 and 21\u201322, q arm aneuploidy scores were considered as representative for whole-chromosome-level aneuploidy scores (Supplementary file 1). TCGA samples that have conflicting events (amplification, deletion, or no change) on different arms or missing data for one or both arms were removed from further analyses. In this study, colon (COAD) and rectum adenocarcinoma (READ) were considered as one cancer type as COREAD.\n\n### Detecting cancer-type-specific whole-chromosome-level aneuploidies\n\nChi-square test was performed to test the occurrence of a whole-chromosome-level aneuploidy within each cancer type against random expectation. Then multiple testing correction was applied on the p-values by using Holm\u2019s method. Cancer-type-specific, whole-chromosome-level aneuploidies were selected based on the criteria that adjusted p-value lower than or equal to 0.05 and chi-square standard residual equal to or higher than 2, resulting in 86 and 117 whole-chromosome-level amplifications and deletions, respectively (Supplementary file 1).\n\nFor each of the 86 cancer-type-specific amplifications, co-amplification frequency with other chromosomes was tested by using chi-square test. Then multiple testing correction was applied on the p-values by using Holm\u2019s method. 305 significant combinations were identified as co-amplified events in 60 out of the 86 cancer-type-specific amplifications based on the criteria that the adjusted p-value was lower than 0.01 (Supplementary file 1). Then the contribution of each chromosome to the transcriptional dysregulation on other, non-aneuploid chromosomes was calculated as the percentage of differentially expressed genes by dividing the number of differentially expressed genes to the total number of genes on that chromosome. A paired Wilcoxon test was used to compare mean contribution of co-amplified chromosomes to that of non-co-amplified chromosomes across 60 cancer-type-specific events.\n\n### Data processing\n\nRNA-seq fragments per kilobase of exon per million reads mapped (FPKM) values for 11,007 TCGA samples, comprising 32 cancer types, were downloaded from the NCI Genomic Data Commons (GDC) (Grossman et al., 2016). Then FPKM values were converted to transcripts per million (TPM) values, and primary tumor samples (n=9830) were selected. Ensembl gene IDs were mapped to gene symbols based on the mapping obtained from ensembl BioMart (Human genome version GRCh38.p13 - downloaded on May, 2019) (Howe et al., 2021), and the mean value was taken when multiple Ensembl IDs mapped to one gene symbol. Mitochondrial and non-expressed (zero values in all samples) genes were removed.\n\nProteomics data used in this publication were generated by the CPTAC (NCI/NIH). Proteomics measurements for the available TCGA projects were downloaded from the CPTAC, covering three cancer types, spectral counts for COREAD (The Cancer Genome Atlas Network, 2012; the NCI CPTAC et al., 2014) (90 samples and 5561 genes), and relative abundances for OV (Cancer Genome Atlas Research Network, 2011; Zhang et al., 2016) (174 samples and 7169 genes), and BRCA (Cancer Genome Atlas Network, 2012; Mertins et al., 2016) (105 samples and 10,625 genes). For the replicated samples, the mean value was considered. Primary samples covered by the transcriptomic data and genes that are expressed at transcriptome level (genes having TPM value in at least one sample) were selected, which gave us 88 samples and 5353 genes, 119 samples and 7062 genes, 105 samples, and 10,467 genes for COREAD, OV, and BRCA, respectively (Figure 1\u2014figure supplement 1A). Spectral counts for COREAD were normalized by quantile normalization followed by log2 transformation.\n\n### Detecting transcriptomic and proteomic changes\n\nTo detect transcriptomic and proteomic changes, samples covered by aneuploidy, transcriptomic, and proteomic data were selected, which resulted in 9266 samples for transcriptome analysis and 298 samples for proteome analysis.\n\nFor each of the 203 cancer-type-specific, whole-chromosome-level aneuploidies covering 86 amplifications and 117 deletions, we first grouped TCGA samples as the ones with chromosome amplification/deletion and the ones diploid for the respective chromosome. After selecting the samples, genes having zero TPM in all samples were filtered out. Differentially expressed genes between the samples with diploid and those with an altered chromosome were identified by using Wilcoxon test (we consistently used Wilcoxon test to identify transcriptomic and proteomic changes to avoid detection biases introduced by applying different methods to different data types) and then multiple testing correction was performed on the p-values by using the Benjamini and Hochberg method. Significantly, differentially expressed genes were selected based on the criteria that the adjusted p-value is lower than 0.1. For the cases where we were left with less than 250 differentially expressed protein coding genes after adjusted p-value cutoff, the uncorrected p-value was used (p<0.05) in order to have a sufficient number of genes to perform the enrichment tests (described below).\n\nFor the 13 cancer-type-specific, whole-chromosome-level amplifications and 20 cancer-type-specific, whole-chromosome-level deletions covering COREAD, OV, and BRCA cancer types, for which the corresponding proteome data is available, differentially abundant proteins between the samples with diploid- and amplified/deleted chromosome were detected by using Wilcoxon test. Proteins with a p-value lower than 0.1 were considered as significantly differentially abundant (again, using a relaxed statistical cutoff in order to perform the subsequent analyses of the protein set).\n\nTo dissect frequently dysregulated genes in aneuploidy and their associated molecular functions, we, first, counted how many times a gene was dysregulated across different aneuploidy cases (203 and 33 detected cancer-type-specific, whole-chromosome-level aneuploidies, respectively, for transcriptomic and proteomic data). Then we performed GO analysis on the most frequently dysregulated 150 genes in amplification and deletion cases by using WebGestalt (Liao et al., 2019). The GO analysis was performed separately for the gene sets from transcriptomic and proteomic data. All protein coding genes were used as a background.\n\n### Grouping proteins and protein pairs\n\nAggregation-prone proteins (n=300) were obtained from M\u00e4\u00e4tt\u00e4 et al., 2020. The known human protein complexes (n=2916) were downloaded from the CORUM database (Giurgiu et al., 2019) (CORUM 3.0; September, 2018). The number of complexes a protein is involved in was calculated by considering the CORUM complexes, and then proteins were grouped as promiscuous if they are involved in more than five complexes, otherwise as non-promiscuous. To calculate co-occurrence frequencies, for each protein pair, we first counted the number of complexes in which the two proteins were found together and then divided it by the number of complexes in which at least one of them is found.\n\n### Statistical analyses\n\nChi-square test was used to assess the relationship between differentially abundant proteins on other chromosomes and (i) complex members obtained from the CORUM database, and (ii) co-complex members of differentially abundant proteins on aneuploid chromosomes for the 13 cancer-type-specific amplifications and 20 deletions. The same association tests were repeated by using transcriptome-level changes - differentially expressed genes on other chromosomes - for 86 amplifications and 117 deletions, and then multiple testing correction was performed (only for transcriptome-level analysis as here a much larger number of tests was performed) on p-values by using Holm\u2019s method.\n\nCancer-type-specific protein abundance correlations were calculated between all possible pairs across primary tumor samples for the cancer types BRCA, COREAD, and OV (for which we have proteomic measurements) by using the Spearman method. Comparing correlations between co-complex members and non-complex members was done by considering differentially abundant proteins on aneuploid chromosomes and their correlations with all CORUM complex subunits. The Wilcoxon test was used to compare the correlation distributions. To this end, correlations from three cancer types were pooled.\n\nTo compare the protein-level correlations between different protein feature groups, correlations between differentially abundant proteins on aneuploid chromosomes (the ones that showed an increase in abundance for amplifications or a decrease for deletions) and their co-complex members were considered. To obtain a unique set, correlations from three cancer types were pooled. For the pairs for which we could compute a correlation in more than one cancer type, the maximum correlation value was considered, which left us with 2772 and 3818 correlations for amplifications and deletions, respectively (Supplementary file 5).\n\n### Network randomization\n\nTo assess if there is an enrichment between differentially abundant proteins encoded on the aneuploid and those on other chromosomes, we employed a randomization test. We retrieved PPI data from HIPPIE (v2.2) (Alanis-Lobato et al., 2017) and counted the number of physical PPIs between the two protein sets. In each randomization, we replaced the set of aneuploid differentially abundant proteins by a protein set of equal size. To avoid biases, we additionally enforced the same degree distribution as in the original set by replacing each differentially abundant aneuploid protein by a protein of the same or similar degree (forming as many interactions as the replaced protein). We then recounted the number of PPIs between the random set and differentially abundant proteins encoded on other chromosomes to construct a background distribution from which we estimated the p-value by counting how often the original observed value was smaller than or equal to a randomized value (Supplementary file 4).\n\n### Functional annotation of protein complexes\n\nTo investigate functional relevance of co-abundance regulation, we first classified abundance correlations between differentially abundant proteins of aneuploid chromosomes and their co-complex members of other chromosomes into two groups: Top correlated ones including 20 strongest positive and negative correlations (40 in total) and non-correlated ones including correlations between \u20130.2 and 0.2. The latter was used as background in the association test. Then we obtained protein complexes and their functional annotations - associated GO terms - from the CORUM human protein complex data. For each GO term, a chi-square test was performed in which the number of complexes related to the corresponding term in the top correlated group was tested against that of in the background group. An enrichment score was calculated by dividing the difference of the observed complex number and the expected one obtained from the chi-square test by the square root of the expected value. GO terms with p-value lower than 0.05 were considered as significantly associated. The analysis was done separately for each detected cancer-type-specific aneuploidy case (13 amplifications and 20 deletions covering BRCA, OV, and COREAD cancer types for which we have proteomic measurements).\n\nAs we observed an enrichment of post-transcriptional- and translation-related functions, which often involve larger complexes, we further aimed to test how much this enrichment is driven by larger complexes and a large number of ribosomal genes. To end this, we repeated the test for functional enrichment once after removing ribosomal genes downloaded from the HGNC database (Tweedie et al., 2021), and once after removing large complexes (complexes that include more than 10 subunits). This did not change the results much indicating that the observed enrichment did not depend on large complexes only.\n\n### DNA methylation analysis\n\nPromoter-level methylation measurements calculated from probe-level methylation data in TCGA were used in this analysis (Heery and Schaefer, 2021). For each gene, the most upstream promoter was considered for the analysis. Average methylation level of genes was calculated by taking the mean of methylation levels across aneuploid samples and diploid samples, separately. Wilcoxon tests were performed for the statistical comparison between up- and downregulated genes.\n\n### TF - target randomization test\n\nTo test if differential expression of TFs on aneuploid chromosomes could explain the vast expression changes on other chromosomes, we performed a randomization test for 203 detected cancer-type-specific aneuploidies. We first retrieved 1651393 ENCODE gene-TF associations detected by ChIP-Seq experiments from the Harmonizome database (ENCODE Project Consortium, 2004; Rouillard et al., 2016) and then counted the number of targets of differentially expressed TFs on aneuploid chromosomes among differentially expressed genes on other chromosomes. To compute a background distribution, we recounted the number of targets for random TF sets for 100 iterations. In each iteration, the random TF set size was equal to the number of differentially expressed TFs on the aneuploid chromosome of the corresponding cancer-type-specific aneuploidy case. The p-value was calculated using the background distribution by conducting a two-tailed test.\n\nTo quantify the degree of TF regulation on the transcript changes of co-complex members in aneuploid tumors, we counted the number of targets among differentially expressed co-complex members of aneuploid proteins on other chromosomes. The aneuploidy cases in BRCA, COREAD, and OV (where we have both transcriptomic and proteomic data) were considered for the analysis to make the results comparable. To test the degree of TF regulation on overall dysregulation in tumor vs normal, targets were counted among all dysregulated genes in tumor vs normal.\n\n### Ubiquitination analysis\n\nExperimentally observed ubiquitination sites for human proteins were downloaded from PhosphoSitePlus (Hornbeck et al., 2015). The unique set of abundance correlations between differentially abundant proteins of aneuploid chromosomes and their co-complex members of other chromosomes was used for this analysis (See Materials and methods section: Statistical analyses; Supplementary file 5). For each co-complex member protein, the total number of ubiquitination sites was calculated as the sum of all ubiquitination sites. The proteins not covered by the ubiquitination dataset were removed from the analysis. Abundance correlations equal to or higher than 0.4 and lower than or equal to \u20130.4 were considered as top positive and top negative correlations, respectively. Wilcoxon test was used for statistical comparison.\n\n### Calculation of the stoichiometry deviation score and survival analysis\n\nTo calculate the stoichiometry deviation score for each TCGA sample, the top 30 strongest tissue-specific correlation pairs (aneuploid protein and its partner) in amplification cases were taken. For each pair, a linear regression model was performed in which protein abundance of partner protein was dependent variable, and that of aneuploid protein was independent variable. Then the stoichiometry deviation score of a sample was calculated as the mean of absolute residuals in the regression models.\n\nTo perform survival analysis, we first grouped samples into two sets (high and low) based on their stoichiometry deviation scores by using the survminer package (version 0.4.8) in R, which is using the maximally selected rank statistics to determine the optimal cutpoint. Samples with the deviation scores lower than or equal to the cutpoint were assigned as the low group; otherwise they were assigned to the high group (Figure 6\u2014figure supplement 1C). Then, we performed survival analysis once with overall survival and once with disease-free survival by using Kaplan Meier method in the survival package (version 3.1.8) in R.\n\nGO annotations were retrieved from the UniProt database, and proteins with GO terms related to proteasome complex and ubiquitin-binding were selected. Then, the correlation between protein abundances and stoichiometry deviation scores was calculated once across all samples and once for amplification and deletion groups, separately by using the Spearman method. Samples were separated into amplification and deletion groups if they are with at least one detected cancer-type-specific chromosomal amplification and deletion, respectively. Then, the Wilcoxon test was used for the comparison.\n\n### Availability of data and materials\n\nThe code performing all analyses in this study is available at https://github.com/SengerG/Coregulation-of-complexes-in-Aneuploidtumors.git, (copy archived at swh:1:rev:b9ef349854c073044c2ecbf743819e12abb17923, Senger, 2022).\n",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "10f20f2b-2501-4c76-bd3c-37b1ef8e4274",
+      "submission_id": "c0ce1f35-52b7-405f-8e18-6a5a927ff0bc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Elana J Fertig, https://ror.org/00za53h95 Sidney Kimmel Comprehensive Cancer Center, Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75526.sa0](https://doi.org/10.7554/eLife.75526.sa0)\n\nThis paper will be of interest to the cancer biology community. The study leverages high-throughput genomic and proteomic data to evaluate the role of aneuploidy on functional pathway changes in cancer.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Elana J Fertig, https://ror.org/00za53h95 Sidney Kimmel Comprehensive Cancer Center, Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75526.sa1](https://doi.org/10.7554/eLife.75526.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Regulation of protein complex partners as a compensatory mechanism in aneuploid tumors\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Elana J Fertig as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Erik McShane (Reviewer #2); Elsa Logarinho (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Dissect for specific genes / proteins in the differential expression / abundance in Figure 1.\n\n2) Define clearly the threshold used in survival analysis.\n\n3) Consider more standard genomics analysis tools in the analysis.\n\n4) Enhance analysis methods, including as examples the suggestions below:\n\n\u2013 Exclude ribosomal subunits in the functional analysis.\n\n\u2013 Look at the transcript levels to assess the degree of impact on the expression changes of complex partners in figure 5.\n\n\u2013 Overlap data with previous data on post-transcriptional regulation.\n\n\u2013 Better crosstalk the transcriptome and proteome data.\n\n\u2013 Investigate if the complex partners on other chromosomes, in the case of deletions, are aggregation-prone.\n\n\u2013 Check if correlations in figure 6 still apply if the tumors' samples are separated in amplification and deletion groups.\n\nReviewer #1 (Recommendations for the authors):\n\nFigure 1 focuses on the number of differential expression / differential abundance changes but not the molecular pathways associated with aneuploidy. Some discussion of the specific genes / proteins that were found and their biology would be helpful.\n\nIt would be helpful to contextualize the enrichment of transcription factors and methylation relative to their association globally independent of the context of aneuploidy to validate some of the negative claims of the manuscript.\n\nThere are concerns about the survival analysis (e.g., how censoring was accounted for in the high vs low survival groups), and the clarity of the definition for thresholding used to separate sample groups in the Kaplan Meir analysis.\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, I think this manuscript is really interesting and I think it is a great addition to the field. I have some specific questions and suggestions that I hope will clarify and improve the, in my opinion, few weaknesses of this manuscript.\n\n1) Could the test on the effect of co-amplification be done in a more systematic manner instead of just looking at chromosome 7 amplification in thyroid cancer?\n\na) Perhaps just by looking at more specific cases?\n\n2) The functional analysis leaves many questions that should be discussed:\n\na) How much of the functional analysis results is driven by the cyto and mitochondrial ribosomes? Since they are very large and abundant complexes, which have previously been shown to be post-translationally regulated (Bogenhagen and Haley 2020; Lam et al., 2007), they have a tendency to overwhelm analyses dependent on proteomics data. It would be nice to see the same analysis when excluding ribosomal subunits.\n\nb) In addition, I am not certain that a functional selection is needed to have a functional enrichment that is consistent between amplifications and deletions. Many of the terms involve large complexes that include many aggregation-prone subunits. Because the abundance of many of these subunits are commonly regulated by degradation also in healthy tissues it is not surprising to see these terms pop up. One could maybe try to separate a functional selection from indirect effects of these functional terms already being enriched for proteins that are prone to be post-translationally regulated (e.g. non-exponentially degraded proteins in (McShane et al., 2016)) by overlapping your data with the list of subunits in the aforementioned paper?\n\n3) I think that the methylation analysis (paragraph starting on line 255) is good but would be better served if it came at an earlier point in the manuscript as it does not directly look at protein complex subunits. E.g. \"we could not explain all the variability by methylation patterns therefore we looked at post translational mechanisms [follow protein complex subunit analysis. Figure 2]\".\n\na) The same goes for the TF analysis as it does not directly look at or protein complex subunits.\n\nb) Rather I think the authors could directly look at the transcript levels to assess the degree of impact of transcriptional regulation on the expression changes of complex partners? This would be a powerful analysis better suited for figure 5.\n\n4) Panel 5B protein ubiquitination is quite nice, but I have not seen any correlation between the number of ubiquitination sites and the propensity to degrade fast. The authors could perhaps reference some literature for this or do their own correlation analysis between turnover rates and number of ubiquitination-sites.\n\na) In addition, it would be better to leave out proteins lacking ubiquitination-sites in the database rather than assume they're lacking (and thus give them a 0 value) as this would bias the data heavily towards very abundant proteins, such as the ribosome.\n\nb) There is some good literature on the E3 ubiquitin ligase (Yanagitani, Juszkiewicz, and Hegde 2017; Nguyen et al., 2017) that targets orphan subunits and ubiquitinates proteins at sites that are usually protected while they're in a complex. Looking at ubiquitination sites in interaction surfaces would be a more mechanistically attractive analysis but probably less feasible?\n\nReferences:\n\nBogenhagen, Daniel F., and John D. Haley. 2020. \"Pulse-Chase SILAC-Based Analyses Reveal Selective over-Synthesis and Rapid Turnover of Mitochondrial Protein Components of Respiratory Complexes.\" The Journal of Biological Chemistry, January. https://doi.org/10.1074/jbc.RA119.011791.\n\nDephoure, Noah, Sunyoung Hwang, Ciara O'Sullivan, Stacie E. Dodgson, Steven P. Gygi, Angelika Amon, and Eduardo M. Torres. 2014. \"Quantitative Proteomic Analysis Reveals Posttranslational Responses to Aneuploidy in Yeast.\" eLife 3 (July): e03023.\n\nLam, Yun Wah, Angus I. Lamond, Matthias Mann, and Jens S. Andersen. 2007. \"Analysis of Nucleolar Protein Dynamics Reveals the Nuclear Degradation of Ribosomal Proteins.\" Current Biology: CB 17 (9): 749-60.\n\nMcShane, Erik, Celine Sin, Henrik Zauber, Jonathan N. Wells, Neysan Donnelly, Xi Wang, Jingyi Hou, et al., 2016. \"Kinetic Analysis of Protein Stability Reveals Age-Dependent Degradation.\" Cell 167 (3): 803-15.e21.\n\nNguyen, Anthony T., Miguel A. Prado, Paul J. Schmidt, Anoop K. Sendamarai, Joshua T. Wilson-Grady, Mingwei Min, Dean R. Campagna, et al., 2017. \u201cUBE2O Remodels the Proteome during Terminal Erythroid Differentiation.\u201d Science 357 (6350). https://doi.org/10.1126/science.aan0218.\n\nYanagitani, Kota, Szymon Juszkiewicz, and Ramanujan S. Hegde. 2017. \u201cUBE2O Is a Quality Control Factor for Orphans of Multiprotein Complexes.\u201d Science 357 (6350): 472-75.\n",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e5a2d05e-0a57-4789-a2c3-ba48bf07179d",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C1",
+      "claim": "Around 90% of solid tumors have aneuploid karyotypes",
+      "claim_type": "EXPLICIT",
+      "source": "However, around 90% of solid tumors have aneuploid karyotypes (Ben-David et al., 2019; Taylor et al., 2018), raising the question of how cancer cells can tolerate the massive amount of transcriptomic and proteomic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ben-David et al., 2019 and Taylor et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "41938fdb-7092-4786-8b3a-6f7491140a74",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C2",
+      "claim": "Previous studies demonstrated correlated expression between gene copy number and transcriptome level for genes on aneuploid chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies demonstrated correlated expression between gene copy number and transcriptome level for genes on aneuploid chromosomes while there is a buffering effect at the proteome level adjusting protein levels, especially for protein complex subunits (Stingele et al., 2012; Dephoure et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Stingele et al., 2012 and Dephoure et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "db82dc2d-67f2-4cf7-bef0-e7e2489e1eaf",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C3",
+      "claim": "There is a buffering effect at the proteome level adjusting protein levels, especially for protein complex subunits",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies demonstrated correlated expression between gene copy number and transcriptome level for genes on aneuploid chromosomes while there is a buffering effect at the proteome level adjusting protein levels, especially for protein complex subunits (Stingele et al., 2012; Dephoure et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Stingele et al., 2012 and Dephoure et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "dac93948-d36c-4660-97de-4b44f75416b3",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C4",
+      "claim": "Post-transcriptional compensatory mechanism preventing excess translation of complex members has been characterized for copy number alterations in yeast",
+      "claim_type": "EXPLICIT",
+      "source": "This post-transcriptional compensatory mechanism preventing excess translation of complex members has also been characterized for copy number alterations (CNAs) in different contexts such as yeast (Ishikawa et al., 2017) and cancer (Gon\u00e7alves et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishikawa et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "c841cab6-459d-4908-9314-a0aa1159ec07",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C5",
+      "claim": "Post-transcriptional compensatory mechanism preventing excess translation of complex members has been characterized for copy number alterations in cancer",
+      "claim_type": "EXPLICIT",
+      "source": "This post-transcriptional compensatory mechanism preventing excess translation of complex members has also been characterized for copy number alterations (CNAs) in different contexts such as yeast (Ishikawa et al., 2017) and cancer (Gon\u00e7alves et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gon\u00e7alves et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "5648d73b-dfda-4a5c-aa0b-8e9dd98e244d",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C6",
+      "claim": "Proteins with larger interface size showed larger degree of buffering",
+      "claim_type": "EXPLICIT",
+      "source": "Structural properties of proteins have an effect on the degree of post-transcriptional buffering on changes induced by CNAs, for example, proteins with larger interface size showed larger degree of buffering (Sousa et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sousa et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "70b98d8f-b5de-401d-8953-0030b2337d2f",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C7",
+      "claim": "Post-translational regulation has been identified as a dosage compensation mechanism in response to aneuploidy in cancer cell lines",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, post-translational regulation has also been identified as a dosage compensation mechanism in response to aneuploidy in cancer cell lines (Schukken and Sheltzer, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schukken and Sheltzer, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "35691811-6ad5-48dc-a113-010a4a9550af",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C8",
+      "claim": "Aneuploidy largely affects expression of genes on other chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptome analysis revealed that aneuploidy largely affects expression of genes on other chromosomes too (Nawata et al., 2011; Upender et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nawata et al., 2011 and Upender et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "08252bb4-6834-4fb3-9336-4bd97ab72caf",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C9",
+      "claim": "A correlated increase in the abundance of co-complex members encoded by genes outside the copy number amplified region has been shown for CNAs",
+      "claim_type": "EXPLICIT",
+      "source": "For CNAs, a correlated increase in the abundance of co-complex members encoded by genes outside the copy number amplified region has been shown (Gon\u00e7alves et al., 2017) raising the question of whether this could contribute to the expression changes in aneuploid cells even on diploid chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gon\u00e7alves et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "124700e6-ece7-405b-a462-feba219a2328",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C10",
+      "claim": "203 whole-chromosome-level alterations including 86 amplifications and 117 deletions were detected for 32 cancer types",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we detected 203 whole-chromosome-level alterations including 86 amplifications and 117 deletions for 32 cancer types (Figure 1B, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of TCGA data as described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "9a6bb94e-22c6-4356-81d7-c7232db2282b",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C11",
+      "claim": "On average 41% and 48% of the genes located on amplified and deleted chromosomes, respectively, changed expression",
+      "claim_type": "EXPLICIT",
+      "source": "We found that on average 41% and 48% of the genes located on amplified and deleted chromosomes, respectively, changed expression (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on differential expression analysis of TCGA data and shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "cebbabce-0b67-4cd9-832b-50f5d1b20e83",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C12",
+      "claim": "15 and 18% of genes on average for amplification and deletion cases, respectively, show expression changes on other, typically diploid chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "Besides those intuitively expected gene expression changes on the aneuploid chromosomes, we observed a surprisingly large number of expression changes happening on other, typically diploid chromosomes (15 and 18% of genes on average for amplification and deletion cases, respectively; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on differential expression analysis of TCGA data and shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "8791a9c9-35d9-45bc-99a3-89143112e80d",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C13",
+      "claim": "305 co-amplifications occurred more frequently than expected by chance covering 60 out of 86 cancer-type-specific amplifications",
+      "claim_type": "EXPLICIT",
+      "source": "For the 86 cancer-type-specific amplifications, we identified 305 co-amplifications that occurred more frequently than expected by chance covering 60 out of 86 cancer-type-specific amplifications (adjusted p-value <0.01, chi-square test; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on chi-square test analysis of TCGA data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "6bdd1074-035e-4947-b0cc-b70b50338c1f",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C14",
+      "claim": "There is no significant difference between the medians of co-amplified and non-co-amplified chromosomes in terms of contribution to transcriptional dysregulation",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there is no significant difference between the medians of these chromosome groups (p=0.4, paired Wilcoxon test; Figure 1\u2014figure supplement 1B, C) suggesting that they do not substantially contribute to the overall transcriptional dysregulation on other chromosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on paired Wilcoxon test analysis and shown in Figure 1\u2014figure supplement 1B, C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "273c5401-52e4-4d17-9fa5-191de60d1fc9",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C15",
+      "claim": "A smaller number of proteins showed abundance changes compared to observations at the transcriptome level",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that a smaller number of proteins showed abundance changes compared to our observations at the transcriptome level (after normalizing for the largely different gene coverage between the transcriptomics and proteomics datasets) both for amplification and deletion cases (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of transcriptomic and proteomic data from TCGA/CPTAC and shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "2662c68b-0f1d-42f5-a7fc-1029141cb181",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C16",
+      "claim": "GO terms belonging to cell cycle and cell cycle processes are among the top dysregulated gene sets",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found gene ontology (GO) terms belonging to cell cycle and cell cycle processes to be among the top dysregulated gene sets (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on GO enrichment analysis of dysregulated genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "eab572f0-cc52-4d65-add7-44eef7594ec9",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C17",
+      "claim": "Differentially abundant proteins of other chromosomes tend to be complex partners of differentially abundant proteins from the aneuploid chromosome for both whole-chromosome-level amplifications and deletions",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a general tendency for the differentially abundant proteins of other chromosomes to be complex partners of differentially abundant proteins from the aneuploid chromosome for both whole-chromosome-level amplifications and deletions (p<0.05, chi-square test; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on chi-square test analysis using CORUM complex data and shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "62c66a7b-d7ff-40b8-b4e5-ae1c07161597",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C18",
+      "claim": "On average 4.47% of differentially abundant proteins on other chromosomes are partners of those on aneuploid proteins",
+      "claim_type": "EXPLICIT",
+      "source": "We found a moderate percentage (in average 4.47%; Supplementary file 3) of differentially abundant proteins on other chromosomes being partners of those on aneuploid proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of CORUM complex data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "ff20204f-9f81-4e26-ac5b-fef3cecb4699",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C19",
+      "claim": "When only proteins participating in at least one complex were considered, the average fraction of partner proteins among differentially abundant proteins increased to 12.61%",
+      "claim_type": "EXPLICIT",
+      "source": "However, the coverage of proteins with CORUM complex information is rather limited (22% of proteins form part of at least one complex in CORUM). When only proteins participating in at least one complex were considered, the average fraction of partner proteins among differentially abundant proteins increased to 12.61% (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of CORUM complex data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "e5e7338e-46a4-4a31-b972-f72980d7643c",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C20",
+      "claim": "Protein abundance correlations between differentially abundant proteins on aneuploid chromosomes and their co-complex members are significantly stronger than with non-complex members",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, comparing protein abundance correlations between differentially abundant proteins on aneuploid chromosomes and their co-complex members with non-complex members showed significantly stronger correlations between proteins of same complexes (p<2.2e-16, Wilcoxon test; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Wilcoxon test analysis of protein abundance correlations and shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "aaab8edd-67b4-458e-9e74-09f0af34c207",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C21",
+      "claim": "An enrichment of interactions between differentially abundant proteins encoded on the aneuploid and those on other chromosomes was found in 9 out of 13 cancer-type-specific amplifications and 8 of the 20 deletions",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found an enrichment of interactions between those protein sets in 9 out of 13 cancer-type-specific amplifications and 8 of the 20 deletions (p<0.05, randomization test; Figure 2C, Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on randomization test using HIPPIE PPI data and shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "3a0b349b-0aa2-4ae6-86d7-4845162d3247",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C22",
+      "claim": "On average 27.5% of the differentially abundant proteins on other chromosomes interact with those on the aneuploid chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "We found that on average 27.5% of the differentially abundant proteins on other chromosomes interact with those on the aneuploid chromosomes (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of HIPPIE PPI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "2d0ff80a-b1b4-4506-8288-1a72bf624c48",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C23",
+      "claim": "Complex subunits are significantly depleted in differentially abundant proteins on other chromosomes for amplification cases",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this, we found a significant depletion of complex subunits in differentially abundant proteins on other chromosomes for amplification cases (p<0.05, chi-square test; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on chi-square test analysis using CORUM complex data and shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "37a62e31-9159-4b5f-95fd-3d3b8776e016",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C24",
+      "claim": "Differentially abundant proteins of other chromosomes are significantly enriched in complex proteins in the case of chromosomal deletions",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was not observed in the case of chromosomal deletions in which differentially abundant proteins of other chromosomes are significantly enriched in complex proteins (p<0.05, chi-square test; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on chi-square test analysis using CORUM complex data and shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "19c07efb-9655-4684-b727-d19da0b06bca",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C25",
+      "claim": "Downregulated genes are significantly related to higher methylation levels in aneuploid samples in only 6 amplification cases out of 86 (~7%) and in 5 deletion cases out of 117 (~4%)",
+      "claim_type": "EXPLICIT",
+      "source": "We found that downregulated genes are significantly related to higher methylation levels in aneuploid samples in only 6 amplification cases out of 86 (~7%) and in 5 deletion cases out of 117 (~4%; Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on DNA methylation analysis and shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "64ee6e1c-3ba4-46f9-9a3f-56aedaea7d07",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C26",
+      "claim": "Significant associations between lower methylation level and upregulated genes in aneuploid samples were observed for 10 out of 86 amplification cases and 16 out of 117 deletion cases",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant associations between lower methylation level and upregulated genes in aneuploid samples for few cases (10 out of 86 amplification cases and 16 out of 117 deletion cases) (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on DNA methylation analysis and shown in Figure 3\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "d3ec8df4-35e0-4980-b411-9d4c734e7779",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C27",
+      "claim": "Epigenetic regulation does not have a substantial contribution to genome-wide changes in gene expression induced by aneuploidy",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that epigenetic regulation does not have a substantial contribution to the described genome-wide changes in gene expression induced by aneuploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the low number of cases showing significant methylation associations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "2c6d85ae-74b6-4bae-9b8c-963bf0734ae4",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C28",
+      "claim": "Performing a randomization test did not reveal an excess of targets of differentially expressed TFs on the aneuploid chromosome among differentially expressed genes on other chromosomes for any of the tested cancer-type-specific chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "Performing a randomization test did not reveal an excess of targets for any of the tested, cancer-type-specific chromosomes (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on randomization test using ENCODE TF-target data and shown in Figure 3\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "f613d3e6-44e4-4d37-94cd-199d2321a461",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C29",
+      "claim": "Top correlated co-complex members of aneuploid proteins have significantly higher numbers of ubiquitination sites",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed we found that top correlated partners have significantly higher numbers of ubiquitination sites (p<0.05, Wilcoxon test; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Wilcoxon test analysis using PhosphoSitePlus ubiquitination data and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "a5783c65-6189-4f01-85ce-2cb93ebbfaf7",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C30",
+      "claim": "A primary mechanism for keeping protein complex stoichiometry in check is post-translational regulation such as ubiquitin-mediated degradation",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a primary mechanism for keeping protein complex stoichiometry in check seems to be indeed post-translational regulation (such as ubiquitin-mediated degradation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that top correlated partners have higher ubiquitination sites",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "3083591e-d2b6-4d3b-99df-fa7a40b48ee3",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C31",
+      "claim": "Aggregation-prone proteins on amplified chromosomes show stronger correlations with their complex partners on other chromosomes compared to non-aggregating counterparts",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed stronger correlations for aggregation-prone proteins as compared to their non-aggregating counterparts (p<2.2e-16, Wilcoxon test; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Wilcoxon test analysis using aggregation data from M\u00e4\u00e4tt\u00e4 et al., 2020 and shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "24daeec6-8cce-419f-9623-52d9a86441ae",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C32",
+      "claim": "Upregulating the protein expression of genes on chromosomes not affected by aneuploidy serves as a compensatory mechanism to prevent proteotoxicity triggered by the aggregation of non-paired complex members located on the aneuploid chromosome",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that upregulating the protein expression of genes on chromosomes not affected by aneuploidy themselves serves as a compensatory mechanism to prevent proteotoxicity triggered by the aggregation of non-paired complex members located on the aneuploid chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that aggregation-prone proteins show stronger correlations with partners",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "3341c35d-6b42-4912-827f-5786f01da40d",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C33",
+      "claim": "Aggregation-prone proteins are not related to stronger correlations with their complex partners on other chromosomes when they are encoded on deleted chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed aggregation-prone proteins to be not related to stronger correlations with their complex partners on other chromosomes when they are encoded on deleted chromosomes (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "71216588-55e7-4873-8083-434ba4d74fa4",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C34",
+      "claim": "Deleted aneuploid proteins have significantly stronger correlations with their aggregating co-complex members",
+      "claim_type": "EXPLICIT",
+      "source": "We found that deleted aneuploid proteins have significantly stronger correlations with their aggregating co-complex members (p=0.045, Wilcoxon test; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Wilcoxon test analysis and shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "47a307a0-5a1f-4cde-bdb5-7727d3e7fcb8",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C35",
+      "claim": "Promiscuous proteins of amplified chromosomes show weaker correlations with their partners compared to non-promiscuous proteins",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed weaker correlations for promiscuous proteins of amplified chromosomes (p=6e-16, Wilcoxon test; Figure 4B) further supporting the model in which differential abundance of proteins on other chromosomes is a compensatory mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Wilcoxon test analysis and shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "3fbfbfb2-0ab8-4816-8d39-e90abd996826",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C36",
+      "claim": "Proteins co-occurring in many complexes show stronger correlation than proteins found only in a few cases together in the same complex",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found significant differences in the number of times aneuploid proteins and their positively correlated co-complex members were found together in the same complex vs their uncorrelated or negatively correlated co-complex members (p=2.2e-12 and p=2.8e-14 for chromosomal amplifications, p=0.004 and p=7.4e-05 for deletions; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on statistical analysis and shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "9379e4bf-cca6-4034-829f-30485bbc3e00",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C37",
+      "claim": "Top correlated proteins form complexes that are frequently involved in translation, RNA splicing, RNA processing, and protein complex assembly",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis revealed that top correlated proteins form complexes that are frequently involved in translation (mainly driven by ribosomal proteins; see Materials and methods section), RNA splicing, RNA processing, and protein complex assembly (Figure 5A; Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on functional enrichment analysis and shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "19ad66f3-addd-4480-a118-efc21e050c19",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C38",
+      "claim": "Top correlations in the deletion cases are related to stronger enrichment scores when compared to their counterparts in the amplification cases",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that top correlations in the deletion cases are related to stronger enrichment scores when compared to their counterparts in the amplification cases (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on enrichment score analysis and shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "c0e736e8-7f60-4f13-ad8a-18168c288773",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C39",
+      "claim": "Samples with low stoichiometry deviation scores are related to lower survival probabilities in all three tissue types",
+      "claim_type": "EXPLICIT",
+      "source": "While not significant in every single case we observed a tendency that samples with low stoichiometry deviation scores are related to lower survival probabilities in all three tissue types (Figure 6B) showing that compensation for protein abundance indeed provides a survival advantage to tumors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on survival analysis and shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "1bf9c783-090d-4ee2-83f5-c124a2d58d4a",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C40",
+      "claim": "Ubiquitin-binding proteins and components of the proteasome show significantly higher correlations between their abundances and the stoichiometry deviation scores in two out of three tissues",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found that ubiquitin-binding proteins and components of the proteasome show significantly higher correlations between their abundances and the stoichiometry deviation scores in two out of three tissues (Figure 6C; Figure 6\u2014figure supplement 1B), and this tendency still applies when samples are divided into amplification and deletion groups (Figure 6\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on correlation analysis and shown in Figure 6C and Figure 6\u2014figure supplement 1B, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "21c984a4-ed7b-4f41-b9c1-e28c2ca85bcb",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C41",
+      "claim": "47\u201363% and 24\u201333% of genes on aneuploid chromosomes show expression changes at the transcriptome and proteome level, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we conduct an extensive characterization of the transcriptome and proteome in aneuploid human cancers. We show that 47\u201363% and 24\u201333% of genes on aneuploid chromosomes show expression changes at the transcriptome and proteome level (Figure 1C), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of TCGA/CPTAC data and shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "c85b9589-c2b2-43a7-b5ad-f3ca12c2787e",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C42",
+      "claim": "50% and 25% of genes showed copy-number-correlated expression changes at the transcriptome and proteome level in human cancer cells",
+      "claim_type": "EXPLICIT",
+      "source": "A similar degree of the effect of aneuploidy on expression changes has been previously found in human cancer cells: 50% and 25% of genes showed copy-number-correlated expression changes at the transcriptome and proteome level, respectively (Schukken and Sheltzer, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schukken and Sheltzer, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "afa9ee93-3153-4e7f-828e-55be7e4c9a9a",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C43",
+      "claim": "Up to 70\u201380% of genes on aneuploid chromosomes changed levels of transcripts and proteins by the degree expected based on chromosome number in yeasts",
+      "claim_type": "EXPLICIT",
+      "source": "In yeasts, aneuploidy affects a larger fraction of genes. Up to 70\u201380% of genes on aneuploid chromosomes changed levels of transcripts and proteins by the degree expected based on chromosome number (Dephoure et al., 2014; Gasch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dephoure et al., 2014 and Gasch et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "1e8ca639-354f-46d4-83ed-a55df7ac4fed",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C44",
+      "claim": "The stronger buffering at the proteome level than transcriptome level is consistently observed independently from the study system",
+      "claim_type": "EXPLICIT",
+      "source": "However, independently from the study system, the stronger buffering at the proteome level than transcriptome level is consistently observed (Stingele et al., 2012; Dephoure et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Stingele et al., 2012 and Dephoure et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "2d0eba5a-22fc-4d8d-95ec-a5583dac7e15",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C45",
+      "claim": "In amplification cases, 76.5% and 26.2% of proteomic changes show also differential abundance of the corresponding transcript for aneuploid and other chromosomes, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "Further, comparison of transcriptome and proteome data reveals that proteomic changes from aneuploid chromosomes could primarily be explained by differential expression of their corresponding genes at the transcriptome level; however, this is not the case for proteomic changes of other, non-aneuploid chromosomes (in amplification cases, 76.5% and 26.2% of proteomic changes, and in deletion cases, 89.9% and 36.2% of the differentially abundant proteins show also differential abundance of the corresponding transcript for aneuploid and other chromosomes, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of transcriptomic and proteomic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "a36571a5-5e27-46d9-af0a-de8e56e6795f",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C46",
+      "claim": "In deletion cases, 89.9% and 36.2% of the differentially abundant proteins show also differential abundance of the corresponding transcript for aneuploid and other chromosomes, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "Further, comparison of transcriptome and proteome data reveals that proteomic changes from aneuploid chromosomes could primarily be explained by differential expression of their corresponding genes at the transcriptome level; however, this is not the case for proteomic changes of other, non-aneuploid chromosomes (in amplification cases, 76.5% and 26.2% of proteomic changes, and in deletion cases, 89.9% and 36.2% of the differentially abundant proteins show also differential abundance of the corresponding transcript for aneuploid and other chromosomes, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of transcriptomic and proteomic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "ec50dd83-88dc-485a-abcb-58067e23d4f6",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C47",
+      "claim": "Transcriptional control plays a major role for aneuploid chromosomes while translational or post-translational control has a comparably stronger importance for gene regulation of other chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations suggest different levels of control for dosage compensation for aneuploid and other chromosomes. Transcriptional control plays a major role for aneuploid chromosomes while translational or post-translational control has a comparably stronger importance for gene regulation of other chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential concordance between transcriptomic and proteomic changes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "00a107bd-6684-4248-921e-f6b4f402826b",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C48",
+      "claim": "Up to 40% of the differentially abundant proteins physically interact either in a complex or in a binary manner with their partners on the aneuploid chromosome",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that up to 40% of the typically hundreds and sometimes more than 1000 differentially abundant proteins physically interact either in a complex or in a binary manner with their partners on the aneuploid chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of protein complex and PPI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "5541af05-1402-4d43-b2de-122536aaef3a",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C49",
+      "claim": "Targeting essential genes in aneuploid cells eventually results in proliferation defects and activation of cell death pathways",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that targeting essential genes in aneuploid cells eventually results in proliferation defects and activation of cell death pathways (Cohen-Sharir et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohen-Sharir et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "29f57353-9d3b-4fb4-97a5-10babb204d34",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C50",
+      "claim": "Aneuploidy is detrimental for normal cells as it causes stoichiometric imbalances in protein complexes involving proteins encoded on the aneuploid chromosome",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, aneuploidy is detrimental for normal cells, among other reasons as it causes stoichiometric imbalances in protein complexes involving proteins encoded on the aneuploid chromosome (Brennan et al., 2019; Santaguida and Amon, 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brennan et al., 2019 and Santaguida and Amon, 2015a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "8121636f-a7d4-411a-8f36-ff520b0dd612",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C51",
+      "claim": "Aneuploidy affects expression of a large number of genes simultaneously by providing additional or diminished copies of genes or decreasing their transcription",
+      "claim_type": "EXPLICIT",
+      "source": "Aneuploidy, whole-chromosome- or chromosome-arm-level alterations, affects expression of a large number of genes simultaneously - most directly by providing additional or diminished copies of genes in - or decreasing their transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about aneuploidy",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "a1afb3c2-0987-495a-a017-06cdfc292b56",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C52",
+      "claim": "Differential DNA methylation and dysregulation of transcription factors mediate aberrant gene expression in cancer",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have revealed the role of epigenetic and transcriptional regulatory mechanisms in cancer. Differential DNA methylation and dysregulation of transcription factors (TFs) mediate aberrant gene expression in cancer (Baylin and Herman, 2000; Ehrlich, 2002; Bushweller, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baylin and Herman, 2000; Ehrlich, 2002; Bushweller, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "5ef922b9-b779-42ab-b9f7-08d5ffe249f6",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C53",
+      "claim": "Ubiquitination at multiple sites is an efficient signal for degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have suggested that ubiquitination at multiple sites is an efficient signal for degradation (Dimova et al., 2012) and further increase in the number of ubiquitination sites is related to higher binding affinity between protein and proteasome (Lu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dimova et al., 2012 and Lu et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "3bfedcc0-12d0-4485-b35b-5b6f0cee7e44",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C54",
+      "claim": "Increase in the number of ubiquitination sites is related to higher binding affinity between protein and proteasome",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have suggested that ubiquitination at multiple sites is an efficient signal for degradation (Dimova et al., 2012) and further increase in the number of ubiquitination sites is related to higher binding affinity between protein and proteasome (Lu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lu et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "79ae2659-e121-4123-85d5-a9a1baa76a99",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C55",
+      "claim": "The main expected detrimental effect of chromosomal amplifications is an excess of protein abundance of complex members leading to an aggregation of the orphan proteins",
+      "claim_type": "EXPLICIT",
+      "source": "The main expected detrimental effect of chromosomal amplifications is an excess of protein abundance of complex members leading to an aggregation of the orphan proteins (rather than a loss of function of the complex as would be expected for insufficient expression for complex assembly as a consequence of chromosome deletion) (Santaguida et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Santaguida et al., 2015b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "7aa1a5a7-b0c2-499e-9a7a-b18a9aaf09ac",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C56",
+      "claim": "Complex organization shapes protein abundance changes in response to CNAs",
+      "claim_type": "EXPLICIT",
+      "source": "Those observations are in line with previous findings claiming that complex organization shapes protein abundance changes in response to CNAs (Sousa et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sousa et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "df07be6d-4b10-4ac2-ae25-5b8b77b5262f",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C57",
+      "claim": "Similar compensatory mechanisms have been previously identified to be induced by focal CNAs",
+      "claim_type": "EXPLICIT",
+      "source": "Similar compensatory mechanisms have been previously identified to be induced by focal CNAs (Gon\u00e7alves et al., 2017; Sousa et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gon\u00e7alves et al., 2017 and Sousa et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "938a152a-8529-4b61-aaba-26461ee35025",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C58",
+      "claim": "Aneuploidy has an impact on cell proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "One of the major consequences of aneuploidy is its impact on cell proliferation (Santaguida and Amon, 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Santaguida and Amon, 2015a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "0eff976d-608c-4b8d-9669-e7973b2b5066",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C59",
+      "claim": "22% of proteins form part of at least one complex in CORUM",
+      "claim_type": "EXPLICIT",
+      "source": "However, the coverage of proteins with CORUM complex information is rather limited (22% of proteins form part of at least one complex in CORUM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of CORUM database coverage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "50d7ceaf-22d7-4aea-85ca-d687acec5fc7",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C60",
+      "claim": "23% of the translation-related genes are ribosomal genes",
+      "claim_type": "EXPLICIT",
+      "source": "Among these terms, enrichment of translation is mostly driven by a relatively larger fraction of ribosomal genes among our gene sets (which might not be surprising given that 23% of the translation-related genes are ribosomal genes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of gene composition in translation-related functional categories",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "08844cd8-01f8-4cdc-b00a-05ba193909ca",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C61",
+      "claim": "Protein complex subunits of other chromosomes tend to maintain their abundance levels unless they form a complex with differentially abundant proteins encoded by genes located on the aneuploid chromosome",
+      "claim_type": "EXPLICIT",
+      "source": "We show that protein complex subunits of other chromosomes tend to maintain their abundance levels unless they form a complex with differentially abundant proteins encoded by genes located on the aneuploid chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of protein complex co-abundance patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "30a08b77-7209-4495-8c8d-0054ba54784c",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C62",
+      "claim": "Co-abundance regulation is dependent on aggregation propensity and promiscuity of the aneuploid complex partners",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that this co-abundance regulation is dependent on aggregation propensity and promiscuity of the aneuploid complex partners and controlled by post-translational mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of protein features and abundance correlations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "6271685d-4348-4b2a-95b1-114a919a14a1",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C63",
+      "claim": "Co-abundance regulation is controlled by post-translational mechanisms",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that this co-abundance regulation is dependent on aggregation propensity and promiscuity of the aneuploid complex partners and controlled by post-translational mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis showing lack of transcriptional/epigenetic control and presence of ubiquitination signals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "c0e695f9-5529-41db-8f2f-1e7745f26dad",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C64",
+      "claim": "Coordinated abundance changes of complex partners might prevent aggregation of unpaired complex members",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings highlight a complementary mechanism acting to deal with the excess amount of expression changes induced by aneuploidy: Coordinated abundance changes of complex partners might prevent aggregation of unpaired complex members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observed co-abundance patterns and their relationship to aggregation propensity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "fa97a242-cc3d-4cbf-959c-0630c377aafd",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C65",
+      "claim": "Complexes of the cellular core machinery are under functional selection to maintain their stoichiometric balance in aneuploid tumors",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we observed that complexes of the cellular core machinery are under functional selection to maintain their stoichiometric balance in aneuploid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on functional enrichment analysis showing specific functions are protected",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "eb602d01-d037-4793-b94d-7b90672082e7",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C66",
+      "claim": "Compensatory and functional maintenance mechanisms are established through post-translational control",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, we provide evidence that those compensatory and functional maintenance mechanisms are established through post-translational control, and that the degree of success of a tumor to deal with aneuploidy-induced stoichiometric imbalance impacts the activation of cellular protein degradation programs and patient survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ubiquitination analysis and lack of transcriptional/epigenetic signals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "5d356f1c-e5f6-4bed-845b-9aa21cb4d399",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "claim_id": "C67",
+      "claim": "The degree of success of a tumor to deal with aneuploidy-induced stoichiometric imbalance impacts the activation of cellular protein degradation programs and patient survival",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, we provide evidence that those compensatory and functional maintenance mechanisms are established through post-translational control, and that the degree of success of a tumor to deal with aneuploidy-induced stoichiometric imbalance impacts the activation of cellular protein degradation programs and patient survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on survival analysis and correlation with proteasome/ubiquitin-binding protein abundance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ebb8e124-c378-4927-88d9-646045a177fa",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors detected 203 whole-chromosome-level alterations (86 amplifications, 117 deletions) across 32 cancer types. On average, 41-48% of genes on aneuploid chromosomes and 15-18% of genes on other chromosomes showed expression changes. At the proteome level, 24-33% of genes on aneuploid chromosomes showed changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 and C41 provide consistent quantitative data from TCGA analysis with appropriate statistical methods (Wilcoxon test, differential expression analysis). The findings are supported by Figure 1C showing the percentages of differentially expressed genes/proteins across chromosomes. The methodology is clearly described and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "911baa84-ae65-4072-a860-49e04d26ad96",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors identified 305 co-amplifications occurring more frequently than expected by chance, but found no significant difference in transcriptional dysregulation contribution between co-amplified and non-co-amplified chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 use appropriate statistical tests (chi-square test with multiple testing correction, paired Wilcoxon test) to assess co-amplification patterns. The finding that co-amplifications do not substantially contribute to overall transcriptional dysregulation on other chromosomes is supported by p=0.4 from paired Wilcoxon test and shown in Figure 1\u2014figure supplement 1B, C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "656a15d0-39f6-4e28-8cd5-37cf24629593",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors observed stronger buffering at the proteome level compared to transcriptome level. For aneuploid chromosomes, 76.5-89.9% of proteomic changes showed corresponding transcriptomic changes, while for other chromosomes only 26.2-36.2% showed concordance, suggesting different regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C45-C47 demonstrate differential regulation between aneuploid and non-aneuploid chromosomes through comparison of transcriptomic and proteomic data. The quantitative differences in concordance rates are substantial and support the conclusion that transcriptional control dominates for aneuploid chromosomes while post-transcriptional/post-translational control is more important for other chromosomes. Data shown in Figure 1C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "417ecf15-ddc9-4dc0-a2b5-9973d6f596fc",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GO terms related to cell cycle and cell cycle processes are among the top dysregulated gene sets in aneuploid tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 is supported by GO enrichment analysis of dysregulated genes (Supplementary file 2). This finding is biologically plausible given the known relationship between aneuploidy and cell proliferation, though the specific enrichment statistics are not provided in the main text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "00156d6e-ee67-4fe4-b383-8e3fb2da8d1d",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Differentially abundant proteins on other chromosomes tend to be complex partners of differentially abundant proteins from aneuploid chromosomes. On average 4.47% (12.61% when considering only complex proteins) are partners, and these show significantly stronger abundance correlations than non-complex members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 use appropriate statistical tests (chi-square test, Wilcoxon test p<2.2e-16) with CORUM complex data. The finding of stronger correlations between co-complex members is shown in Figure 2A-B. The authors appropriately acknowledge the limited coverage of CORUM (22% of proteins) and adjust their interpretation accordingly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "222d6b51-e204-4b08-856d-f37708975ec9",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Enrichment of protein-protein interactions between differentially abundant proteins on aneuploid and other chromosomes was found in 9/13 amplifications and 8/20 deletions. On average, 27.5% of differentially abundant proteins on other chromosomes interact with those on aneuploid chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 use appropriate randomization tests with HIPPIE PPI data (p<0.05) and are shown in Figure 2C. The higher percentage (27.5%) compared to complex-only analysis (4.47%) reflects the broader coverage of PPI data. The methodology is sound and results are consistent with the complex-based analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "12eb9033-ec2f-4713-aa5d-191664eedc61",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Complex subunits are significantly depleted in differentially abundant proteins on other chromosomes for amplification cases but enriched for deletion cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 use chi-square tests (p<0.05) with CORUM data and are shown in Figure 2D. The opposite patterns for amplifications versus deletions are biologically interpretable: amplifications may trigger selective maintenance of complex stoichiometry, while deletions may require upregulation of entire complexes. The statistical support is adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "3eeaf785-f06e-4690-9a3b-d7fc3c8b0afb",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Epigenetic regulation through DNA methylation does not substantially contribute to genome-wide gene expression changes induced by aneuploidy, with significant associations found in only ~7% of amplification and ~4% of deletion cases for downregulated genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 use DNA methylation analysis with Wilcoxon tests shown in Figure 3\u2014figure supplement 1A-B. The low percentage of cases showing significant methylation associations (6/86 amplifications, 5/117 deletions for downregulation) supports the conclusion. The control analysis comparing tumor vs normal samples strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "339349b4-cb40-432f-a245-8ff7368620ae",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Transcription factor regulation does not explain the large transcriptional changes on other chromosomes, as randomization tests revealed no excess of TF targets among differentially expressed genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 uses appropriate randomization tests with ENCODE TF-target data shown in Figure 3\u2014figure supplement 1C. The control analysis with tumor vs normal samples and MYC targets demonstrates that the methodology can detect TF regulatory effects when present, strengthening the negative finding for aneuploidy-induced changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "a9e58256-4d60-4804-8118-bc0ce15687ec",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Top correlated co-complex members of aneuploid proteins have significantly higher numbers of ubiquitination sites, suggesting post-translational regulation (ubiquitin-mediated degradation) as a primary mechanism for maintaining protein complex stoichiometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 use Wilcoxon test (p<0.05) with PhosphoSitePlus ubiquitination data shown in Figure 3B. The finding that top correlated partners have more ubiquitination sites is consistent with the hypothesis of post-translational control. However, C30 is an inference that could benefit from additional functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "61b802bf-3427-422a-9cd9-abc500cdff40",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Aggregation-prone proteins on amplified chromosomes show stronger correlations with their complex partners compared to non-aggregating proteins (p<2.2e-16), suggesting upregulation of partners serves as a compensatory mechanism to prevent proteotoxicity. This pattern is not observed for aggregation-prone proteins on deleted chromosomes, but deleted proteins show stronger correlations with their aggregating co-complex members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 use Wilcoxon tests with aggregation data from M\u00e4\u00e4tt\u00e4 et al., 2020, shown in Figure 4A and Figure 4\u2014figure supplement 1. The asymmetric patterns for amplifications versus deletions are biologically interpretable and statistically significant. The logic that aggregation-prone proteins on amplified chromosomes need partner upregulation while those on deleted chromosomes do not is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "192e73cb-91a2-4086-966a-cee418a25c18",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Promiscuous proteins (in >5 complexes) on amplified chromosomes show weaker correlations with partners compared to non-promiscuous proteins (p=6e-16). Proteins co-occurring in many complexes show stronger correlations than those found together infrequently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 use Wilcoxon tests shown in Figure 4B-C with highly significant p-values. The finding that promiscuous proteins show weaker correlations is consistent with the model that proteins in fewer complexes require tighter stoichiometric control. The co-occurrence frequency analysis provides additional support for the complex organization hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "87168cd8-317b-4b79-b4fd-6a510358aaff",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Top correlated proteins form complexes involved in translation, RNA splicing, RNA processing, and protein complex assembly. Deletion cases show stronger enrichment scores than amplification cases. Translation enrichment is largely driven by ribosomal proteins (23% of translation-related genes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 and C60 are based on functional enrichment analysis shown in Figure 5A-B and Supplementary file 6. The authors appropriately acknowledge that translation enrichment is driven by ribosomal genes and tested robustness by removing ribosomal genes and large complexes. The stronger enrichment in deletions versus amplifications is quantified and shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "6bcd7ce0-0749-42b0-b150-9429506dc2e3",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Samples with low stoichiometry deviation scores show a tendency toward lower survival probabilities across all three tissue types, though not significant in every case.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C39 is based on survival analysis shown in Figure 6B using Kaplan-Meier method. The authors acknowledge the results are not significant in every case, which weakens the conclusion. The stoichiometry deviation score methodology is novel but the survival association requires stronger statistical support. The tendency is observed but the evidence is insufficient to definitively support the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "b1c6c143-7698-46f5-a91a-73af327811ea",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Ubiquitin-binding proteins and proteasome components show significantly higher correlations between their abundances and stoichiometry deviation scores in two out of three tissues, suggesting activation of protein degradation machinery in tumors with poor stoichiometric compensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 uses correlation analysis with Wilcoxon tests shown in Figure 6C and Figure 6\u2014figure supplement 1B, D. The finding is significant in 2/3 tissues and the pattern holds when samples are divided into amplification and deletion groups. This provides reasonable support for the hypothesis that proteotoxic stress activates degradation machinery, though the lack of significance in all tissues introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "b698d028-4914-4942-9d1c-28c4032a023d",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that protein complex subunits on other chromosomes maintain abundance levels unless they form complexes with differentially abundant aneuploid proteins. This co-abundance regulation depends on aggregation propensity and promiscuity of aneuploid partners, is controlled by post-translational mechanisms, and serves to prevent aggregation of unpaired complex members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 represent the main conclusions synthesizing multiple lines of evidence from C17-C36. The evidence for co-abundance patterns (C17-C24), lack of transcriptional/epigenetic control (C25-C28), ubiquitination signals (C29-C30), and aggregation/promiscuity effects (C31-C36) collectively support this model. The integration of multiple independent analyses strengthens the overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "ee2c9644-4802-4926-9895-fcb8ca1700c4",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Complexes of the cellular core machinery are under functional selection to maintain stoichiometric balance in aneuploid tumors, particularly those involved in translation, RNA processing, and protein complex assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by functional enrichment analysis (C37-C38) showing specific functions are protected. The consistency of enriched functions across amplifications and deletions suggests functional selection rather than just compensatory mechanisms. The evidence is adequate though the distinction between compensation and selection could be more clearly delineated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "9924d8a9-5559-4a2f-81d7-cff3c915c9f0",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Compensatory and functional maintenance mechanisms are established through post-translational control, and the degree of success in dealing with aneuploidy-induced stoichiometric imbalance impacts activation of protein degradation programs and patient survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C67 represent overarching conclusions. C66 is well-supported by ubiquitination analysis (C29-C30) and lack of transcriptional/epigenetic signals (C25-C28). However, C67 regarding patient survival is less well-supported given the acknowledged lack of significance in all survival analyses (C39). The correlation with proteasome/ubiquitin-binding proteins (C40) is significant in only 2/3 tissues. The overall model is compelling but the survival impact requires stronger evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "ed6400ba-1325-48e6-94ce-50fc02bd534b",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors provide background on aneuploidy prevalence in tumors (~90%), prior findings on buffering effects at proteome level, post-transcriptional compensatory mechanisms in yeast and cancer, structural protein properties affecting buffering, post-translational regulation, and effects on genes on other chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 are all supported by appropriate citations to prior literature. These represent established background knowledge that contextualizes the current study. The citations appear accurate and relevant to the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors provide additional background and comparison to prior work, including similar findings in human cancer cells and yeast, consistent buffering patterns across systems, effects of aneuploidy on cell proliferation, stoichiometric imbalances, epigenetic mechanisms in cancer, ubiquitination as degradation signal, aggregation effects, and prior findings on compensatory mechanisms for CNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C49-C58 are supported by appropriate citations and represent accurate characterization of prior work. These claims provide important context for interpreting the current findings and comparing results across different experimental systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "e1151f37-9381-42a5-9b04-fa1ec23c622f",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Up to 40% of differentially abundant proteins physically interact either in complexes or binary manner with partners on aneuploid chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 synthesizes findings from C18-C22 regarding the percentage of differentially abundant proteins that are complex partners or PPI partners. The 40% figure represents the upper range and is supported by the PPI analysis showing 27.5% average interaction rate, with some cases exceeding 40%. The acknowledgment of incomplete interactome knowledge is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    },
+    {
+      "id": "0ab77646-aba3-44af-aa63-8540297ea558",
+      "content_id": "5977c339-93c1-44c5-b419-7eea0dccdbd2",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "22% of proteins form part of at least one complex in CORUM database.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is a factual statement about CORUM database coverage that is used to contextualize the complex-based analyses. This is an important caveat for interpreting the percentage of complex partners among differentially abundant proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:59:54.406597Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "124700e6-ece7-405b-a462-feba219a2328",
+      "result_id": "ebb8e124-c378-4927-88d9-646045a177fa"
+    },
+    {
+      "claim_id": "9a6bb94e-22c6-4356-81d7-c7232db2282b",
+      "result_id": "ebb8e124-c378-4927-88d9-646045a177fa"
+    },
+    {
+      "claim_id": "cebbabce-0b67-4cd9-832b-50f5d1b20e83",
+      "result_id": "ebb8e124-c378-4927-88d9-646045a177fa"
+    },
+    {
+      "claim_id": "21c984a4-ed7b-4f41-b9c1-e28c2ca85bcb",
+      "result_id": "ebb8e124-c378-4927-88d9-646045a177fa"
+    },
+    {
+      "claim_id": "8791a9c9-35d9-45bc-99a3-89143112e80d",
+      "result_id": "911baa84-ae65-4072-a860-49e04d26ad96"
+    },
+    {
+      "claim_id": "6bdd1074-035e-4947-b0cc-b70b50338c1f",
+      "result_id": "911baa84-ae65-4072-a860-49e04d26ad96"
+    },
+    {
+      "claim_id": "273c5401-52e4-4d17-9fa5-191de60d1fc9",
+      "result_id": "656a15d0-39f6-4e28-8cd5-37cf24629593"
+    },
+    {
+      "claim_id": "2d0eba5a-22fc-4d8d-95ec-a5583dac7e15",
+      "result_id": "656a15d0-39f6-4e28-8cd5-37cf24629593"
+    },
+    {
+      "claim_id": "a36571a5-5e27-46d9-af0a-de8e56e6795f",
+      "result_id": "656a15d0-39f6-4e28-8cd5-37cf24629593"
+    },
+    {
+      "claim_id": "ec50dd83-88dc-485a-abcb-58067e23d4f6",
+      "result_id": "656a15d0-39f6-4e28-8cd5-37cf24629593"
+    },
+    {
+      "claim_id": "2662c68b-0f1d-42f5-a7fc-1029141cb181",
+      "result_id": "417ecf15-ddc9-4dc0-a2b5-9973d6f596fc"
+    },
+    {
+      "claim_id": "eab572f0-cc52-4d65-add7-44eef7594ec9",
+      "result_id": "00156d6e-ee67-4fe4-b383-8e3fb2da8d1d"
+    },
+    {
+      "claim_id": "62c66a7b-d7ff-40b8-b4e5-ae1c07161597",
+      "result_id": "00156d6e-ee67-4fe4-b383-8e3fb2da8d1d"
+    },
+    {
+      "claim_id": "ff20204f-9f81-4e26-ac5b-fef3cecb4699",
+      "result_id": "00156d6e-ee67-4fe4-b383-8e3fb2da8d1d"
+    },
+    {
+      "claim_id": "e5e7338e-46a4-4a31-b972-f72980d7643c",
+      "result_id": "00156d6e-ee67-4fe4-b383-8e3fb2da8d1d"
+    },
+    {
+      "claim_id": "aaab8edd-67b4-458e-9e74-09f0af34c207",
+      "result_id": "222d6b51-e204-4b08-856d-f37708975ec9"
+    },
+    {
+      "claim_id": "3a0b349b-0aa2-4ae6-86d7-4845162d3247",
+      "result_id": "222d6b51-e204-4b08-856d-f37708975ec9"
+    },
+    {
+      "claim_id": "2d0ff80a-b1b4-4506-8288-1a72bf624c48",
+      "result_id": "12eb9033-ec2f-4713-aa5d-191664eedc61"
+    },
+    {
+      "claim_id": "37a62e31-9159-4b5f-95fd-3d3b8776e016",
+      "result_id": "12eb9033-ec2f-4713-aa5d-191664eedc61"
+    },
+    {
+      "claim_id": "19c07efb-9655-4684-b727-d19da0b06bca",
+      "result_id": "3eeaf785-f06e-4690-9a3b-d7fc3c8b0afb"
+    },
+    {
+      "claim_id": "64ee6e1c-3ba4-46f9-9a3f-56aedaea7d07",
+      "result_id": "3eeaf785-f06e-4690-9a3b-d7fc3c8b0afb"
+    },
+    {
+      "claim_id": "d3ec8df4-35e0-4980-b411-9d4c734e7779",
+      "result_id": "3eeaf785-f06e-4690-9a3b-d7fc3c8b0afb"
+    },
+    {
+      "claim_id": "2c6d85ae-74b6-4bae-9b8c-963bf0734ae4",
+      "result_id": "339349b4-cb40-432f-a245-8ff7368620ae"
+    },
+    {
+      "claim_id": "f613d3e6-44e4-4d37-94cd-199d2321a461",
+      "result_id": "a9e58256-4d60-4804-8118-bc0ce15687ec"
+    },
+    {
+      "claim_id": "a5783c65-6189-4f01-85ce-2cb93ebbfaf7",
+      "result_id": "a9e58256-4d60-4804-8118-bc0ce15687ec"
+    },
+    {
+      "claim_id": "3083591e-d2b6-4d3b-99df-fa7a40b48ee3",
+      "result_id": "61b802bf-3427-422a-9cd9-abc500cdff40"
+    },
+    {
+      "claim_id": "24daeec6-8cce-419f-9623-52d9a86441ae",
+      "result_id": "61b802bf-3427-422a-9cd9-abc500cdff40"
+    },
+    {
+      "claim_id": "3341c35d-6b42-4912-827f-5786f01da40d",
+      "result_id": "61b802bf-3427-422a-9cd9-abc500cdff40"
+    },
+    {
+      "claim_id": "71216588-55e7-4873-8083-434ba4d74fa4",
+      "result_id": "61b802bf-3427-422a-9cd9-abc500cdff40"
+    },
+    {
+      "claim_id": "47a307a0-5a1f-4cde-bdb5-7727d3e7fcb8",
+      "result_id": "192e73cb-91a2-4086-966a-cee418a25c18"
+    },
+    {
+      "claim_id": "3fbfbfb2-0ab8-4816-8d39-e90abd996826",
+      "result_id": "192e73cb-91a2-4086-966a-cee418a25c18"
+    },
+    {
+      "claim_id": "9379e4bf-cca6-4034-829f-30485bbc3e00",
+      "result_id": "87168cd8-317b-4b79-b4fd-6a510358aaff"
+    },
+    {
+      "claim_id": "19ad66f3-addd-4480-a118-efc21e050c19",
+      "result_id": "87168cd8-317b-4b79-b4fd-6a510358aaff"
+    },
+    {
+      "claim_id": "50d7ceaf-22d7-4aea-85ca-d687acec5fc7",
+      "result_id": "87168cd8-317b-4b79-b4fd-6a510358aaff"
+    },
+    {
+      "claim_id": "c0e736e8-7f60-4f13-ad8a-18168c288773",
+      "result_id": "6bcd7ce0-0749-42b0-b150-9429506dc2e3"
+    },
+    {
+      "claim_id": "1bf9c783-090d-4ee2-83f5-c124a2d58d4a",
+      "result_id": "b1c6c143-7698-46f5-a91a-73af327811ea"
+    },
+    {
+      "claim_id": "08844cd8-01f8-4cdc-b00a-05ba193909ca",
+      "result_id": "b698d028-4914-4942-9d1c-28c4032a023d"
+    },
+    {
+      "claim_id": "30a08b77-7209-4495-8c8d-0054ba54784c",
+      "result_id": "b698d028-4914-4942-9d1c-28c4032a023d"
+    },
+    {
+      "claim_id": "6271685d-4348-4b2a-95b1-114a919a14a1",
+      "result_id": "b698d028-4914-4942-9d1c-28c4032a023d"
+    },
+    {
+      "claim_id": "c0e695f9-5529-41db-8f2f-1e7745f26dad",
+      "result_id": "b698d028-4914-4942-9d1c-28c4032a023d"
+    },
+    {
+      "claim_id": "fa97a242-cc3d-4cbf-959c-0630c377aafd",
+      "result_id": "ee2c9644-4802-4926-9895-fcb8ca1700c4"
+    },
+    {
+      "claim_id": "eb602d01-d037-4793-b94d-7b90672082e7",
+      "result_id": "9924d8a9-5559-4a2f-81d7-cff3c915c9f0"
+    },
+    {
+      "claim_id": "5d356f1c-e5f6-4bed-845b-9aa21cb4d399",
+      "result_id": "9924d8a9-5559-4a2f-81d7-cff3c915c9f0"
+    },
+    {
+      "claim_id": "e5a2d05e-0a57-4789-a2c3-ba48bf07179d",
+      "result_id": "ed6400ba-1325-48e6-94ce-50fc02bd534b"
+    },
+    {
+      "claim_id": "41938fdb-7092-4786-8b3a-6f7491140a74",
+      "result_id": "ed6400ba-1325-48e6-94ce-50fc02bd534b"
+    },
+    {
+      "claim_id": "db82dc2d-67f2-4cf7-bef0-e7e2489e1eaf",
+      "result_id": "ed6400ba-1325-48e6-94ce-50fc02bd534b"
+    },
+    {
+      "claim_id": "dac93948-d36c-4660-97de-4b44f75416b3",
+      "result_id": "ed6400ba-1325-48e6-94ce-50fc02bd534b"
+    },
+    {
+      "claim_id": "c841cab6-459d-4908-9314-a0aa1159ec07",
+      "result_id": "ed6400ba-1325-48e6-94ce-50fc02bd534b"
+    },
+    {
+      "claim_id": "5648d73b-dfda-4a5c-aa0b-8e9dd98e244d",
+      "result_id": "ed6400ba-1325-48e6-94ce-50fc02bd534b"
+    },
+    {
+      "claim_id": "70b98d8f-b5de-401d-8953-0030b2337d2f",
+      "result_id": "ed6400ba-1325-48e6-94ce-50fc02bd534b"
+    },
+    {
+      "claim_id": "35691811-6ad5-48dc-a113-010a4a9550af",
+      "result_id": "ed6400ba-1325-48e6-94ce-50fc02bd534b"
+    },
+    {
+      "claim_id": "08252bb4-6834-4fb3-9336-4bd97ab72caf",
+      "result_id": "ed6400ba-1325-48e6-94ce-50fc02bd534b"
+    },
+    {
+      "claim_id": "c85b9589-c2b2-43a7-b5ad-f3ca12c2787e",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "afa9ee93-3153-4e7f-828e-55be7e4c9a9a",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "1e8ca639-354f-46d4-83ed-a55df7ac4fed",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "5541af05-1402-4d43-b2de-122536aaef3a",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "29f57353-9d3b-4fb4-97a5-10babb204d34",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "8121636f-a7d4-411a-8f36-ff520b0dd612",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "a1afb3c2-0987-495a-a017-06cdfc292b56",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "5ef922b9-b779-42ab-b9f7-08d5ffe249f6",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "3bfedcc0-12d0-4485-b35b-5b6f0cee7e44",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "79ae2659-e121-4123-85d5-a9a1baa76a99",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "7aa1a5a7-b0c2-499e-9a7a-b18a9aaf09ac",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "df07be6d-4b10-4ac2-ae25-5b8b77b5262f",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "938a152a-8529-4b61-aaba-26461ee35025",
+      "result_id": "2dc570b2-c8e5-41ee-8615-6aecc90faa37"
+    },
+    {
+      "claim_id": "00a107bd-6684-4248-921e-f6b4f402826b",
+      "result_id": "e1151f37-9381-42a5-9b04-fa1ec23c622f"
+    },
+    {
+      "claim_id": "0eff976d-608c-4b8d-9669-e7973b2b5066",
+      "result_id": "0ab77646-aba3-44af-aa63-8540297ea558"
+    }
+  ],
+  "comparisons": []
+}

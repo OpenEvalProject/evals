@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C106",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study utilized the SCANDAT3-S database comprising 5.1 million individuals with 70 million person-years of follow-up to examine 1217 disease categories. The main cohort (4.2M individuals, 49.9M person-years) excluded blood donors to maximize representativeness, while the validation cohort (1.2M individuals, 22M person-years) consisted of blood donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C29-C35, C52-C58, C106, C109-C111 provide consistent, detailed cohort characteristics with specific numbers that align across text and tables. The two-cohort design with distinct inclusion criteria is clearly described and appropriate for discovery-validation framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Disease outcomes were ascertained from Swedish national registers (patient register since 1987/1997, death register since 1964, cancer register since 1958) using ICD-10 codes for non-cancer diseases and ICD-7/8 for cancers. Follow-up extended from 1997 onwards, excluding disease categories with <50 events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C45 describe well-established Swedish registers with documented high quality. The decision to limit to 1997+ to avoid ICD revision inconsistencies (C39) is methodologically sound. The 50-event threshold (C43) is reasonable for statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Statistical analysis employed Poisson regression (or quasi-Poisson for over-dispersed data) with covariates for blood group, RhD status, sex, age, and calendar period (using restricted cubic splines). Multiple testing was addressed via two-stage approach: FDR adjustment in the discovery cohort followed by Bonferroni adjustment in the validation cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe appropriate statistical methods. The two-stage multiple testing approach is reasonable given the massive testing burden (>4000 tests). Quasi-Poisson for over-dispersion (C50) shows attention to model assumptions. However, the manuscript doesn't report how many tests required quasi-Poisson or provide diagnostics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In the main cohort, 343 ABO and 98 RhD associations were significant before adjustment. After FDR adjustment, 143 (41%) ABO and 13 (13%) RhD associations remained significant, with IRRs ranging from 0.57-1.52 for ABO and 0.90-1.08 for RhD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 provide consistent numbers showing dramatic reduction from unadjusted to adjusted results, appropriate for massive multiple testing. The modest effect sizes (IRRs mostly 0.8-1.3) are biologically plausible for blood group effects. The much weaker RhD findings align with biological expectations (C22-C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C2",
+      "C3"
+    ],
+    "result": "In the validation cohort of 1.2 million blood donors, 160 associations were identified before adjustment. After Bonferroni correction, 49 ABO and 1 RhD associations remained significant, representing the study's final validated findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71, C2-C3 show appropriate attrition from discovery (143 ABO, 13 RhD) to validation (49 ABO, 1 RhD), expected given smaller sample size and healthy donor selection bias. The conservative Bonferroni adjustment in validation is appropriate. However, ~66% failure to replicate raises concerns about false positives in discovery phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C88"
+    ],
+    "result": "Blood group A showed increased thrombotic risk compared to blood group O, including pulmonary embolism (IRR 1.57, 95% CI 1.51-1.64) and portal vein thrombosis (IRR 1.51, 95% CI 1.25-1.83), confirming previously known associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C88 report strong, precise associations (narrow CIs) consistent with established biology linking ABO to Factor VIII/von Willebrand factor levels (C12). These are among the most robust blood group-disease associations. Effect sizes are clinically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C88"
+    ],
+    "result": "Blood group O showed increased bleeding risk compared to blood group A, including gastric ulcer (IRR 0.92 for A, 95% CI 0.88-0.95) and duodenal ulcer (IRR 0.86 for A, 95% CI 0.82-0.90), confirming previously known associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C88 show inverse associations consistent with known hemorrhagic phenotype of blood group O (C11). Effect sizes are modest but statistically robust with narrow CIs. These findings align with Factor VIII/vWF biology (C12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C87",
+      "C5",
+      "C6",
+      "C89"
+    ],
+    "result": "Pregnancy-induced hypertension showed reduced risk in blood groups A (IRR 0.95, 95% CI 0.92-0.97) and AB (IRR 0.87, 95% CI 0.83-0.92) versus O, and increased risk with RhD positive (IRR 1.12, 95% CI 1.09-1.16) versus negative. This association has been previously disputed but is supported by this large study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C87, C5-C6, C89 report the only validated RhD association and clarify disputed ABO findings. Effect sizes are modest but CIs are narrow due to large sample size. The authors acknowledge prior controversy (C89), and this study's size provides more definitive evidence. However, mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C4"
+    ],
+    "result": "Blood group B showed decreased risk of kidney stones (calculus of kidney and ureter) compared to blood group O (IRR 0.93, 95% CI 0.89-0.96), representing a novel association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C4 report a new finding that survived validation. The effect size is modest (7% reduction) but statistically robust. The proposed mechanism via diabetes and urine pH (C91) is speculative. This finding requires replication in independent cohorts and mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Pancreatic cancer was the only malignancy remaining significant after validation, showing increased risk in blood group A versus O (IRR 1.29, 95% CI 1.19-1.40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 report a well-established association (consistent with prior literature) with clinically meaningful effect size (29% increased risk). The fact that other cancer associations didn't validate (C80) may reflect lower power in the healthy donor validation cohort (C101-C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Thyrotoxicosis showed reduced risk in blood groups A (IRR 0.90, 95% CI 0.86-0.93) and AB (IRR 0.84, 95% CI 0.77-0.92) compared to blood group O.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 report validated associations with modest but statistically robust effect sizes. The biological mechanism is unclear. This represents a potentially novel finding requiring replication and mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Cholelithiasis (gallstones) showed increased risk in blood groups A (IRR 1.07, 95% CI 1.05-1.09) and AB (IRR 1.09, 95% CI 1.05-1.13) versus O, an association the authors note has been disputed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 report small effect sizes (7-9% increased risk) but with narrow CIs due to large sample size. The authors acknowledge this has been disputed, suggesting inconsistent prior evidence. The small effect size raises questions about clinical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Among associations not surviving Bonferroni adjustment, blood group AB showed particularly strong effects including reduced risk of viral intestinal infections (IRR 0.74, 95% CI 0.62-0.87) and ankylosing spondylitis (IRR 0.79, 95% CI 0.67-0.94) versus blood group O.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 report associations that failed validation (didn't survive Bonferroni adjustment). While effect sizes are larger than many validated findings, the failure to meet the pre-specified statistical threshold means these should be considered hypothesis-generating only. The authors appropriately present these separately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Study strengths include being the largest investigation of blood group-disease associations (5.1M individuals, 1/3 of Swedish population), using an agnostic phenome-wide approach, high-quality blood group data from clinical transfusion registers, and unbiased outcome ascertainment from national registers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 accurately describe major strengths. The sample size is indeed unprecedented (C93-C94). The agnostic approach avoids hypothesis bias (C95). Blood group data quality is high given clinical use (C96). The assumption that outcome misclassification is non-differential by blood group (C97) is reasonable but unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Study limitations include potential imprecision of ICD-10 disease categories, missed associations in smaller disease entities, possible confounding by other blood group-associated diseases, and validation cohort selection bias (healthy blood donors) that may have reduced power to detect some associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 appropriately acknowledge important limitations. ICD-10 grouping (C98) may obscure heterogeneous disease entities. The healthy donor bias (C101-C102) is a significant limitation that likely explains validation failures for some associations. The authors' acknowledgment that some associations may be non-causal (C100) is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The authors speculate that some associations may be driven by screening bias (e.g., hyperlipidemia screening in heart disease patients) and propose potential mechanisms such as altered urine pH in diabetic patients explaining the kidney stone association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 are explicitly speculative. The screening bias hypothesis (C90) is plausible but untested. The proposed mechanism for kidney stones via diabetes and urine pH (C91) is creative but lacks supporting evidence from this study. These represent hypotheses requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes prior knowledge including the role of ABO/RhD in transfusion medicine, known disease associations (thrombosis, hemorrhage, infections), molecular basis of blood group antigens, and the knowledge gap regarding systematic phenome-wide associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C28 accurately summarize established knowledge with appropriate citations. The molecular biology (C15-C20) is correct. Prior associations (C8-C14) are well-documented. The identification of knowledge gaps (C27-C28) appropriately motivates the study. The explanation for limited RhD findings (C22-C25) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors conclude that most diseases are not strongly influenced by ABO blood group, but the study provides strong evidence for previously known associations and identifies novel relationships requiring validation in other cohorts and mechanistic investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C104-C105 provide balanced conclusions. The statement that most diseases show no strong association (C92) is supported by the data (only 49/1090 validated). The call for external validation and mechanistic studies (C105) is appropriate. The authors appropriately balance confidence in validated findings with acknowledgment of limitations.",
+    "result_type": "MAJOR"
+  }
+]

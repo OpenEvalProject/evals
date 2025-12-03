@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "A Cre-dependent APEX2 reporter mouse line was successfully generated using CRISPR/Cas9 knock-in at the Gt(ROSA)26 locus, with 8 out of 112 founder mutants identified and Cre-dependent expression confirmed by genomic DNA PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence for successful generation of the mouse line. C1 describes the design and methodology, C2 reports the screening results with specific numbers, and C3 validates Cre-dependent recombination through direction-specific PCR. The data are internally consistent and supported by figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Ex vivo biotinylation protocol was optimized by increasing biotin phenol incubation time to 2 minutes for thick brain tissue, with differential biotinylation observed between Vglut2Cre and VgatCre samples consistent with known cortical neuron composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 describe methodological optimization and validation. C7 explains the protocol modification with appropriate citations, C8 reports expected differential labeling, and C9 provides the biological context (~20% GABAergic neurons) that explains the observation. The results are consistent with known biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The Rbp4Cre;APEX mouse line shows appropriate expression in layer 5 pyramidal tract neurons with EGFP reporter expression in the striatum throughout postnatal development (P5-P40), and Western blot analysis confirms biotinylated proteins represent corticostriatal axonal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 establish the characterization of the Rbp4Cre cross. C10-C11 describe the genetic tool with appropriate citations, C12-C13 provide experimental validation across developmental timepoints, and C14 makes a logical inference about axonal protein representation based on the absence of somatic expression in striatum. The evidence is coherent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Mass spectrometry analysis identified 5582 proteins and quantified 2276 proteins without missing values, with 1129 proteins classified as axon-enriched (30% GO-axon annotated) and 1577 as somato-nuclear (17.4% GO-axon annotated) using q-value <0.05 and log2FC >0 criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 report the proteomics results with specific numbers and statistical criteria. The GO annotation rates (30% vs 17.4%) support the classification scheme, showing enrichment of axon-related proteins in the axon-enriched group. The analytical approach is clearly described and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The majority of the detected proteome (1981 out of 2274 proteins) showed significant changes across development, with immature markers like DCX decreasing and mature markers like NEFM, SYP, VGLUT1, and RAB3A increasing over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 describe temporal dynamics of the proteome. C18 provides statistical evidence from maSigPro analysis, while C19-C20 report specific protein trajectories consistent with known developmental biology. The observations serve as quality control validating the dataset against established developmental markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Meta-analysis comparing this study with three prior developmental proteomics studies showed >65% of overlapping proteins change in the same direction across different developmental comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 reports meta-analysis results showing substantial agreement (65-85%) with prior studies despite methodological differences. This provides external validation of the dataset. However, the evaluation could be strengthened by discussing the 15-35% that do not agree and potential sources of discrepancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Protein clusters showed enrichment for disease risk genes, with epilepsy risk genes significantly enriched in cluster 5 (p=0.022), which also contains genes enriched in AMPAR trafficking and plasticity (p=1.1e-9), linking to prior findings on corticostriatal transmission and seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 report statistical enrichment results with specific p-values, and C25 provides biological context from prior literature. The statistical significance is clearly stated, and the connection to AMPAR signaling provides mechanistic insight. The integration with prior work (C25) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "KEGG pathway analysis revealed that while most kinases increase over development, specific kinases (PAK2, PAK3, PAK5, GSK3B, SSH2, SRC, FYN) show elevated expression in early postnatal periods then decrease, with SRC and FYN upregulation coinciding with high DCC expression, implicating them as primary regulators of DCC signaling in early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 report observations from pathway analysis, while C30 makes an inference about regulatory relationships based on temporal correlation. The inference in C30 is reasonable given the temporal coincidence, but it remains correlative rather than causal. The claims are internally consistent and supported by the data, though C30 represents an interpretation that would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Phosphoproteomics analysis quantified 2353 unique phosphopeptides mapped to 708 proteins, with the top 3 enriched motifs representing sequences phosphorylated by proline-directed kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 report phosphoproteomics results with specific numbers and motif analysis findings. The identification of proline-directed kinase motifs is consistent with the pathway analysis results and provides complementary evidence for the importance of these kinases in development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "PHONEMeS network modeling revealed FYN as important for phosphorylation events in early postnatal development, with FYN directly or indirectly regulating proline-directed kinases MAPK1, CDK5, and GSK3B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 report results from computational network modeling. The PHONEMeS analysis integrates prior knowledge networks with the experimental data to infer kinase-substrate relationships. The conclusions are supported by the modeling approach, though they represent computational predictions rather than direct experimental validation of these regulatory relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Correlation analysis showed that the majority of phosphopeptide intensities correlate with protein abundance, with 59 out of 309 negatively correlated phosphopeptides passing FDR cutoff, representing decorrelated phosphorylation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 report correlation analysis results with appropriate statistical thresholds (FDR). The identification of decorrelated phosphopeptides is important for identifying phosphorylation changes that are independent of protein abundance changes. The statistical approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TSC2 protein increases moderately during development while TSC2_Ser664 phosphorylation decreases (corr=-0.570, FDR=0.009), with WIPI2_Ser395 phosphorylation higher in neonates and EPHA4/EPHB3 expression increasing from P5 to P11, supporting the mechanism that MTOR activity is elevated during axon outgrowth and reduced during growth cone collapse in corticostriatal projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 report specific observations with statistical support, while C41 synthesizes these into a mechanistic model. The decorrelation between TSC2 protein and phosphorylation is statistically significant. The temporal patterns are consistent with known MTOR signaling in axon development. However, the mechanistic conclusion (C41) is inferred from correlative data and known pathways rather than direct functional manipulation in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "APEX-mediated labeling occurs within 1 hr ex vivo compared to days-to-weeks for in vivo BioID/TurboID, making APEX more suitable for short temporal windows while BioID/TurboID measures steady-state proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 report methodological characteristics supported by citations, while C44-C45 make reasonable inferences about the implications of these differences. The comparison is fair and the conclusions about suitability for different applications are logical, though somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Short H2O2 treatment during labeling may result in undesired oxidative stress signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 acknowledges a potential limitation but provides no data to assess whether oxidative stress actually occurs or affects the results in this study. This is speculation about a methodological concern rather than a demonstrated result. The manuscript mentions potential mitigation strategies but does not test them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Postsynaptic proteins like PSD95 were detected in the axon dataset, potentially due to co-purification with presynaptic partners or the presence of axo-axonic synapses, with prior studies identifying glutamate-dopamine axo-axonic contacts in striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 reports an unexpected observation, while C48-C49 offer speculative explanations, and C50-C51 cite prior work on axo-axonic contacts. The detection of PSD95 is documented, but the explanation remains uncertain. The authors appropriately acknowledge multiple possibilities but cannot definitively determine the cause. Additional experiments (e.g., ultrastructural analysis) would be needed to resolve this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Validation experiments showed that protein quantification in flowthrough after phosphoenrichment was highly correlated with unenriched samples, with only 4 out of 2088 proteins (~0.2%) changing in abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 report validation results demonstrating that the tandem enrichment strategy does not significantly alter protein abundance measurements. The high correlation and low percentage of changed proteins (0.2%) provide strong evidence that the flowthrough can be used for protein quantification. This is important methodological validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior literature establishes roles for CDK5, GSK3B, and FYN in axon development, with deletion studies showing effects on callosal axon development, axon extension, dendritic orientation, cortical lamination, and axodendritic branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 summarize prior literature with appropriate citations. These claims provide context for interpreting the current results but do not represent new findings from this study. The citations appear accurate and relevant to the discussion of kinase functions in neurodevelopment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Prior literature establishes that PT and IT projections innervate the striatum at different developmental timepoints, are topographically organized, and that proper striatal circuit formation depends on synaptogenesis and spinogenesis regulated by network activity and neuromodulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 summarize established knowledge from prior literature with appropriate citations. These provide important biological context for the study but represent background information rather than new findings. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "APEX2 was engineered to be highly efficient for rapid protein biotinylation within seconds to minutes in the presence of hydrogen peroxides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 describes a property of APEX2 from prior literature (Lam et al., 2015) that is foundational to the current study. The claim is well-supported by citations and represents established knowledge about the tool being used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Corticostriatal projections arise embryonically and continue postnatally, with growth cones disappearing around P7 based on GAP43 reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 cite prior literature establishing the developmental timeline of corticostriatal projections. This provides important biological context for selecting the experimental timepoints but represents background knowledge rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

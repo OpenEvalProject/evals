@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Respiration drives low-gamma oscillations (30-60 Hz) in the piriform cortex. Low-gamma oscillations emerge following inhalation start, are part of a larger gamma peak (30-100 Hz) in the LFP power spectrum, and only the low-gamma sub-band couples to the respiration cycle. Directionality analyses show that respiration causes gamma, with significantly higher Granger causality in the respiration\u2192gamma direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C32 provide converging evidence from spectral analysis (C28), phase-amplitude coupling (C29), triggered averages (C31), and Granger causality (C32, p<10^-6) that respiration drives low-gamma oscillations. The data are internally consistent and supported by multiple analytical approaches shown in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Respiration-driven low-gamma oscillations arise from feedback inhibition. Current source density analysis shows local generation with phase reversal near layer 2. The time course of feedback inhibitory interneuron (FBI) firing rate correlates with gamma amplitude, while principal cells and feedforward interneurons spike earlier and return to baseline during the gamma peak. Spike-triggered averages confirm gamma oscillations closely follow FBI spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C38 demonstrate through current source density analysis (C33), firing rate correlations (C34), and spike-triggered averages (C37) that gamma arises from feedback inhibition. The temporal relationships between different cell types and gamma amplitude are clearly shown in Figure 1F-G, providing strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Respiration-driven gamma oscillations depend on local recurrent excitatory connections within the piriform cortex. TeLC-infected hemispheres showed significant reduction in low-gamma oscillations (p<0.001 vs control, p=0.0055 vs contralateral) and significant decrease in respiration-gamma coupling (p<10^-5 vs control, p=0.0045 vs contralateral), despite respiration signals still reaching the PCx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39-C41 are supported by TeLC experiments that selectively block excitatory synaptic transmission. The statistical comparisons shown in Figure 2B-D demonstrate significant reductions in both gamma power and respiration-gamma coupling in infected hemispheres, providing strong causal evidence for the role of recurrent connections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Respiration-driven gamma oscillations are triggered by activation of mitral/tufted cells in the olfactory bulb and require principal cells to excite local feedback interneurons. Optogenetic activation of the OB triggered piriform gamma oscillations in control animals, but TeLC ipsi LFPs showed almost no gamma activity following laser onset (p<0.0001 vs control, p=0.0015 vs TeLC contra). Gamma power increased with laser intensity in control and TeLC contra but remained constant in TeLC ipsi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C43-C48 are supported by optogenetic experiments shown in Figure 3. The combination of OB stimulation and TeLC manipulation provides strong evidence that OB projections trigger gamma and that this requires intact recurrent connections. The dose-response relationship (C46) further validates the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C42"
+    ],
+    "result": "Respiration-driven low-gamma oscillations are abolished during ketamine/xylazine anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C42 are supported by experimental data comparing awake and anesthetized states shown in Figure 2\u2014figure supplement 1. The abolishment of gamma under anesthesia demonstrates state-dependence of these oscillations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Odors elicit beta oscillations (10-30 Hz) that are evoked at each cycle, while gamma oscillations are induced but not evoked. Beta oscillations occurred 100 ms before gamma onset, showed consistent phase resetting, and had amplitude that depended on odor concentration (F(3,12)=5.84, p=0.01). Gamma amplitude was not affected by odor delivery, but gamma duration increased specifically due to odor stimulation, not longer breaths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by phase-resetting analysis, evoked vs. induced analysis (Figure 4D), and control experiments comparing fast vs. slow odorless cycles (Figure 4\u2014figure supplement 1). The distinction between evoked beta and induced gamma is methodologically sound and well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C98",
+      "C99"
+    ],
+    "result": "Beta oscillations do not relate to local piriform computations and are likely of olfactory bulb postsynaptic origin. Different odorants triggered similar beta and gamma responses, beta amplitude depended on concentration (p=0.01), and beta oscillations persisted in TeLC-infected animals while gamma did not. Beta oscillations were close in time to excitatory and feedforward interneuron spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C98-C99 are supported by TeLC experiments (Figure 4F) showing differential effects on beta vs. gamma, and timing analysis (Figures 1, 4, 5). The persistence of beta in TeLC animals provides strong evidence that beta does not require local recurrent connections, distinguishing it mechanistically from gamma.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Gamma inhibition shapes single-cell responses during olfaction. Feedback interneurons showed pronounced changes during odor cycles, increasing firing rate and prolonging spiking to mirror gamma duration. Respiration phase modulated principal cell spiking, with some cells inhibited and others spiking during gamma peak. Spike-gamma phase coupling increased during odor processing (t(857)=9.49, p<10^-19), odor context determined which cells fired during gamma, and spiking specificity to odors followed the gamma envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 are supported by comprehensive analysis of single-cell responses shown in Figure 5. The statistical significance of increased spike-gamma coupling during odor processing (C66) and the correlation between spiking specificity and gamma envelope (C68) provide strong evidence for gamma's role in shaping odor responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Respiration-driven gamma oscillations segregate neuronal assemblies through a winner-take-all computation leading to sparse odor coding. Independent component analysis revealed highly skewed distributions where few winner cells showed strong positive contributions to the 1st IC while most loser cells showed low weights. Winner neurons changed from odor to odor with no significant correlations between odors. Loser cells were significantly more phase-locked to gamma (t(14)=5.88, p<10^-4), and once feedback inhibition was recruited, loser cells spiked below average while winners continued above baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C70-C77 are supported by independent component analysis (Figure 6A-E) showing orthogonal assembly representations across odors, differential phase-locking of winners vs. losers, and temporal dynamics consistent with winner-take-all computation. The correlation between loser cell inhibition and gamma activity (C76) provides mechanistic support for the inference of winner-take-all processing (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Gamma oscillations are necessary for segregation of odor-selective assemblies. TeLC-infected piriform cortex showed significantly less skewed distributions (t(5)=-3.08, p=0.013), decreased number of losing cells (t(5)=-2.10, p=0.044), and reduced inhibition of losing cells (t(5)=-2.22, p=0.038). The reduced inhibition was associated with high correlation of assembly weights across odors in the affected hemisphere (t(5)=2.63, p=0.023).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by TeLC experiments (Figure 6F-H) showing impaired assembly segregation when gamma is abolished. The statistical evidence for less skewed distributions, fewer losers, and increased cross-odor correlations in TeLC hemispheres provides strong support for the necessity of gamma in assembly segregation (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C106"
+    ],
+    "result": "Respiration-driven gamma oscillations provide an optimal temporal window for olfaction, leading to sparse odor coding. Population vector correlations significantly dropped during gamma peak (p=0.002 vs Pre, p=0.001 vs Post), odor decoding accuracy matched gamma time course (r=0.45, p<10^-12), and significantly increased around gamma peak (p<10^-7 vs Pre, p<10^-5 vs Post). Decoding accuracy fluctuated within the gamma cycle and significantly decreased in TeLC-infected hemispheres during the gamma window (t(5)=-2.41, p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C81-C87, C106 are supported by comprehensive decoding analyses (Figure 7) showing peak accuracy during gamma, correlation between accuracy and gamma amplitude, and impaired decoding in TeLC experiments. The convergence of population vector correlations, decoding accuracy, and TeLC perturbation results provides strong evidence for gamma's functional role in odor coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The results support excitatory-inhibitory models of gamma generation, experimentally demonstrate Freeman's hypotheses, and show that PCx low-gamma oscillations are extracellular correlates of a winner-take-all process. The winner-take-all interpretation provides a direct relationship between gamma oscillations and cell assemblies, with low-gamma feedback inhibition critical for segregating assemblies and generating sparse, orthogonal odor representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 represent well-supported conclusions drawn from the experimental findings. The mechanistic data (FBI involvement, recurrent connections, optogenetics) support E-I models (C88), the assembly analysis supports winner-take-all computation (C90), and the TeLC experiments demonstrate necessity for assembly segregation (C92). These conclusions are appropriately grounded in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Assembly recruitment would depend on OB projections determining which winner cells escape gamma inhibition. The involvement of different cells and spiking dynamics would make feedback inhibition recruitment non-homogenous across cycles, leading to time jitters in peak gamma activity. PCx low-gamma power is induced but not evoked at each respiratory cycle. The results do not exclude a role for OB gamma in triggering piriform oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C96 represent speculations and inferences about mechanisms not directly tested. While C95 is supported by phase-resetting analysis, C93 and C94 are speculative explanations for observed phenomena. C96 acknowledges limitations in ruling out OB gamma's role. These claims extend beyond what the data directly demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The results make it less likely that piriform gamma is simply inherited from the OB, given observations of local current source, tight correlation with FBI spiking, and gamma disappearance when local recurrent connections are abolished despite intact OB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is a well-supported inference based on multiple lines of evidence: CSD analysis (C33), FBI correlation (C34), and TeLC experiments (C39-C41). The convergence of these observations provides strong evidence against simple inheritance from OB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "By suppressing competing representations, gamma oscillations increase signal-to-background ratio and allow optimal decoding. Maximal decoding occurs after peak firing rate, coinciding with peak gamma and synchronous inhibition. Inhibited neurons, despite being most phase-locked to gamma, would not directly encode odor information, while neurons escaping gamma inhibition would encode odors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are inferences about mechanisms supported by the decoding data (Figure 7) and winner/loser cell analysis (Figure 6). The timing relationships between firing rates, gamma, and decoding accuracy support these mechanistic interpretations, though they represent inferences rather than direct demonstrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims about gamma oscillations in neuroscience, including their role in cognitive processes, cross-frequency coupling, diversity of gamma rhythms, and properties of the piriform cortex as the primary olfactory area exhibiting prominent gamma oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C26 represent established background knowledge supported by appropriate citations to prior literature. These provide context for the current work and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The PCx receives inputs from the OB and constructs robust odor representations that separate odor identity from concentration (depending on large-scale inhibition correlating with gamma) and group odors into perceptual categories. Odor assembly representations change with time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 represent prior work appropriately cited (Bolding et al., Pashkovski et al., Schoonover et al.). C102 represents an inference connecting prior findings to current results, which is reasonable given the demonstrated role of inhibition in gamma.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C112",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "Hypotheses and speculations about gamma's role in assembly formation, neuronal communication in the olfactory system, propagation to downstream regions, and directional information flow from primary to higher limbic areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105, C112, C115-C116, C118 represent speculations and hypotheses extending beyond the current data. While grounded in the findings, these claims about broader functions and inter-regional mechanisms are not directly tested and represent future directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "Recent studies show that odor perception and identification depend on piriform gamma in humans, gamma suppression induces depressive-like behaviors in mice, PCx is the source of gamma for widespread regions, olfactory gamma synchronizes distant regions, and respiration-related oscillations drive sparse assemblies in prefrontal cortex with inhibitory recruitment key for segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111, C113-C114, C117, C119-C120 represent appropriately cited prior work that provides context and support for the current findings. These citations to recent literature strengthen the broader significance of the results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study recorded from 121 participants with refractory epilepsy using SEEG electrodes, yielding 9,703 recording contacts across the VOTC. Participants viewed sequences of natural face and non-face images presented using a frequency-tagging paradigm at 6 Hz with faces appearing every 5th stimulus (1.2 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C84-C99 provide comprehensive methodological details about participants, recording setup, stimuli, and experimental procedures. These are well-documented descriptive claims about the study design with appropriate ethical approval (C93) and clear specification of recording parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C10"
+    ],
+    "result": "At Z>3.1 threshold, 2,130 face-selective contacts were identified, with 71% showing LF-only activity, 26.7% showing both LF and HF activity, and only 2.3% showing HF-only activity. This created strong asymmetry: 91.9% of HF+ contacts were also LF+, while only 27.3% of LF+ contacts were also HF+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7, C10 present consistent quantitative findings about signal overlap with clear statistical thresholds and sample sizes. The asymmetry in overlap is well-documented with precise percentages and participant counts, supporting the conclusion that LF dominates HF face-selective activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C11"
+    ],
+    "result": "Regional and hemispheric variations in LF+HF+ contact proportions were observed, with the highest proportion in right latFG (61.3%) and lowest in TP and antMTG/ITG (2.5%). Both LF+ and HF+ contacts showed right hemispheric dominance and gradual reduction from posterior to anterior VOTC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C11 provide specific regional quantifications with statistical testing (p<0.0001 for hemispheric differences). The findings are internally consistent and supported by appropriate statistical comparisons across regions and hemispheres.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "LF and HF signals showed highly similar spatial patterns of amplitude across VOTC regions (Spearman's Rho=0.81) and voxels (Pearson's r=0.75). However, LF showed stronger right hemispheric advantage in latFG (p<0.01), while HF showed no significant interhemispheric differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 present robust correlational analyses with confidence intervals and appropriate statistical corrections (FDR). The finding of similar spatial patterns but different hemispheric lateralization is well-supported by the reported statistics and represents an important distinction between signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The lower Z-scores for HF compared to LF result from smaller face-selective signal amplitude rather than higher noise. Z-scores decrease from posterior to anterior VOTC for both signals, with the ATL showing 72% (LF) and 92% (HF) smaller signal amplitude than PTL, while noise differences were minimal (10% larger for LF, equal for HF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C22-C25 provide comprehensive signal-noise decomposition analysis demonstrating that SNR differences are driven by signal amplitude rather than noise. The split-half reliability analysis (C19) strengthens the conclusion that LF-HF Z-score profiles are maximally correlated (r=0.96), supporting a quantitative rather than qualitative difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C48",
+      "C55"
+    ],
+    "result": "When Z-score thresholds were adjusted to equalize the number of significant LF+ and HF+ contacts (n=830), spatial distributions became extremely similar with high correlation (Spearman Rho=0.890) and no significant regional differences. This demonstrates that the disproportionately lower HF+ responses in ATL result from quantitative SNR differences rather than qualitative signal differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C48, C55 present a critical control analysis demonstrating that threshold adjustment eliminates apparent spatial differences. The high correlation (0.890) and lack of significant regional differences after equalization strongly support the conclusion that differences are quantitative. This is a key finding challenging the assumption of qualitative LF-HF differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Local amplitude profiles along electrode arrays showed high similarity between LF and HF (median r=0.69), with peak amplitudes co-localized within 3.5mm for 77% of arrays. Spatial extent at half-range was similar (2.3-3.0mm for LF, 1.9-3.4mm for HF), with LF slightly larger only in left ATL (p<0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 provide detailed spatial extent analysis using amplitude decay functions independent of statistical thresholds. The finding of similar spatial extent (C29-C31) contradicts the widespread assumption that HF is more focal than LF. While cluster size differs (C28), this is appropriately attributed to SNR differences rather than true spatial extent. The methodology is sound and the conclusion well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "LF and HF face-selective amplitudes showed strong correlation across VOTC (r=0.59, p<0.001), with highest correlations in posterior VOTC (r~0.8-0.9 in right latFG). The actual correlation reached 71% of the maximum expected correlation (MEC=0.88) given noise in the data, with regional variations (74% in OCC, 78% in PTL, 60% in ATL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 present sophisticated correlation analyses accounting for measurement noise through MEC estimation. The finding that actual correlations reach 71% of maximum possible correlation is well-supported and provides important context for interpreting the strength of LF-HF relationships. Regional variations are appropriately quantified with confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Face-selectivity indices (FSI) were virtually identical between LF and HF signals across all VOTC regions (no significant differences, all ps>0.6). FSI increased from posterior (OCC: LF=0.64, HF=0.62) to anterior VOTC (ATL: LF=0.87, HF=0.86), with right hemispheric advantage in OCC and PTL but left advantage in ATL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate equivalent face-selectivity between signals using an index that accounts for general visual responses. The statistical comparisons are appropriate with FDR correction, and the finding of identical selectivity despite different amplitudes is important for understanding functional equivalence of the signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "LF and HF signals showed similar onset latencies in right latFG (LF: 79ms [58-101], HF: 91ms [82-103]), with significant correlation between onset times (r=0.48, p<0.001). Response duration was longer for LF (639ms) than HF (409ms). Correlation increased to r=0.68 when restricted to highest Z-score contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 provide timing analysis with appropriate confidence intervals. The correlation between onset latencies (C45) is significant and increases with signal quality (C46), supporting functional correspondence. The difference in response duration (C44) is well-documented. The analysis appropriately accounts for SNR effects on latency estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C82",
+      "C83"
+    ],
+    "result": "The study concludes that LF and HF display highly similar spatial, functional, and timing properties, reestablishing the informative value of LF iEEG for understanding human brain function and mapping neural activity in associative cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C82, C83 represent the main conclusions synthesizing findings from multiple analyses. These conclusions are well-supported by the comprehensive evidence presented in the grouped results above, including spatial overlap, amplitude correlations, selectivity indices, and timing correspondence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C81"
+    ],
+    "result": "Most previous intracranial EEG studies focusing on HF reported little face-selective ATL activity, and it was the exploration of LF signals that brought forward the ATL as a major face-selective region. Neglecting LF signals comes at a cost for identifying regions with low HF signal like VATL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C81 are supported by multiple citations and the current study's findings showing disproportionately low HF+ responses in ATL. The interpretation that LF studies revealed ATL face-selectivity is well-supported by the cited literature and current data showing higher LF sensitivity in this region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The neuroscientific community has shifted from LF to HF signals, with HF thought to be more focal, closely related to spiking activity, and more correlated with BOLD activity than LF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 accurately describe prevailing views in the field, supported by appropriate citations. These claims establish the context and motivation for the study by documenting current assumptions that the study challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The assumption that HF is more focal than LF rests on studies that quantified spatial extent by counting significant responses, which confounds signal spread with cortical source extent. The lack of difference in amplitude decay function suggests comparable cortical areas generating the two signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide important methodological critique supported by citations and the current study's amplitude decay analysis. The argument that counting significant responses confounds SNR with spatial extent is logical and well-supported by the study's findings of similar decay functions when amplitude is directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The view that HF is more focal is partly inspired by correlations with spiking activity measured with micro-electrodes, but spiking and HF don't always correlate in superficial layers, and spatial properties may not translate from micro- to macro-electrodes. Additionally, lower neuronal density and myelination in associative versus primary cortices may contribute to the lack of spatial extent difference observed here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 provide well-reasoned explanations for discrepancies with previous findings, supported by appropriate citations. The arguments about electrode scale differences (C62) and cortical properties (C63-C64) are logical and supported by cited evidence, though they remain somewhat speculative about their specific contribution to the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Previous studies compared increases in HF amplitude to decreases in LF amplitude (alpha/beta desynchronization), which may be unwarranted due to different mechanisms involved in generating increases versus decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 provide valid methodological critique of previous studies, supported by citations. The argument that comparing increases to decreases may be problematic is reasonable and supported by cited evidence about different underlying mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "LF and HF signals have distinct neurophysiological origins that are not fully understood, manifested as differences in frequency range and phase-locking. Correlations between signals are not at ceiling and there were slight offsets in peak amplitude locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 appropriately acknowledge limitations in the functional correspondence between signals. The recognition of distinct neurophysiological origins (C68) is well-supported by citations, and the acknowledgment of imperfect correlations (C67) is consistent with the reported data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Previous studies show mixed evidence about the relative functional value of LF versus HF signals, with some finding HF more predictive of perceptual effects and others finding LF more related to behavioral impairments during electrical stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 accurately summarize previous literature with appropriate citations. The presentation of mixed evidence is balanced and acknowledges complexity in the relationship between signals and behavior/perception.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study's findings are likely generalizable due to: (1) wide cortical sampling across diverse cortex types, (2) use of ecologically valid natural face stimuli, (3) SEEG recordings from all cortical layers, (4) similar spatial resolution between SEEG and ECoG, and (5) frequency-tagging providing objective quantification independent of temporal predictability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 provide reasonable arguments for generalizability supported by appropriate citations. The arguments about methodological strengths are valid, though the actual generalizability to other brain regions and functions remains to be empirically tested (appropriately acknowledged in C75).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The lower face-selective signal amplitude in ATL may relate to physiological properties of the cortex potentially generating weak population-level neural activity, or could be increased by using more suitable stimuli like familiar faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is explicitly speculative about future work needed to determine the cause of lower ATL signal amplitude. While the speculation is reasonable, it is not supported by data in the current study and is appropriately framed as requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The statistical threshold for significance was Z>3.1 (p<0.001), and HF signal was measured in 40-160 Hz range with wavelet parameters ensuring no contamination from lower frequency responses (lower boundary 30 Hz, well above highest significant harmonic at 22.8 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide clear technical specifications with appropriate calculations demonstrating that frequency ranges are well-separated. The determination of the highest significant harmonic (C91) is data-driven and the conclusion about lack of contamination (C92) is logically sound given the frequency parameters.",
+    "result_type": "MINOR"
+  }
+]

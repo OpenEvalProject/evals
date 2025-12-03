@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C90",
+      "C91"
+    ],
+    "result": "TRIBE technology was successfully used to identify 256 unique Atx2-target mRNAs in Drosophila brain. The method showed high reproducibility with 317 edit sites common to both replicates, and targets were distributed across the transcriptome irrespective of mRNA abundance, indicating sequence-specific associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C33, C90-C91 collectively demonstrate successful TRIBE implementation with appropriate experimental design (tissue-specific and temporal expression control), high-quality sequencing data, reproducible results between replicates, and validation by Sanger sequencing. The distribution of targets independent of mRNA abundance supports specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Gene Ontology analysis revealed that Atx2 targets are enriched for mRNAs encoding neuropeptides, hormones, monoamine transporters, ion channels, and vesicle transport proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 present Gene Ontology analysis results with statistical support (Table 1 shows fold enrichment and FDR values). The enrichment categories are biologically coherent and consistent with Atx2's known roles in neuronal function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Atx2 preferentially associates with 3'UTRs of target mRNAs (69.5% of edits), with edits occurring almost exclusively in exons. Atx2 edit sites were particularly prevalent in transcripts with longer 3'UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by metagene coordinate analysis showing clear 3'UTR preference (Figure 2A), exon-specific editing patterns, and statistical analysis demonstrating enrichment in longer 3'UTRs. The data are internally consistent and supported by cited literature on 3'UTR regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "MEME analysis identified an AU-rich element (ARE) 'UAUAUAUA' as highly enriched near edit sites in 3'UTRs, while a GC-rich motif was found near CDS edits. These ARE motifs are conserved across Drosophila species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by motif analysis data (Figure 2B, supplementary figures) showing statistically significant enrichment of ARE sequences near 3'UTR edits and conservation analysis demonstrating evolutionary preservation of these motifs in related species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Atx2 knockdown in Drosophila brain caused significant reduction in levels of 53.2% of Atx2-target mRNAs, while non-target mRNAs were less affected (22.5% reduced, 57.2% unchanged). Analysis of nascent transcripts showed the effect is posttranscriptional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 are supported by RNAseq data with appropriate controls, validation of knockdown efficiency, and intron read analysis demonstrating posttranscriptional regulation. The differential effects on target vs. non-target mRNAs support specificity of Atx2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "TRIBE analysis in S2 cells identified ~179 Atx2 targets with minimal overlap with brain targets. Atx2 knockdown in S2 cells reduced ~49% of targets, and ~74% of downregulated targets were upregulated upon Atx2 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by TRIBE and RNAseq data from S2 cells. The minimal overlap between brain and S2 cell targets is acknowledged and explained by tissue-specific expression differences. The reciprocal effects of knockdown and overexpression strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "UTRs with high AREScore are enriched in Atx2-target mRNAs, and higher AREScore predicts mRNAs whose levels are reduced by Atx2 knockdown, indicating that Atx2 stabilizes target mRNAs by binding to AREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by AREScore analysis showing enrichment in targets (Figure 3D) and correlation with knockdown effects (Figure 3E). The conclusion is logically derived from the convergence of TRIBE, motif analysis, and RNAseq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The Lsm and LsmAD domains are neither necessary nor sufficient for Atx2-mRNA interactions in vivo, as demonstrated by TRIBE analysis with domain deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by TRIBE data showing that Lsm+LsmAD alone cannot target ADAR to mRNA, and deletion of either domain does not block interaction with most targets (Figure 4B, C). This contradicts prior in vitro studies but is directly demonstrated in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The cIDR domain is essential for Atx2-mRNA interactions, with its deletion abolishing binding to most targets. This suggests Atx2 moves into proximity of target mRNAs only after cIDR-mediated granule formation. The mIDR has a minor role in target binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by TRIBE data with domain deletions (Figure 4B, C) showing cIDR deletion abolishes most editing while mIDR deletion has minor effects. The inference about granule-dependent proximity is logical given cIDR's known role in granule assembly, though direct visualization would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Deletion of the Lsm domain resulted in significantly more edited target mRNAs compared to wild-type Atx2, with many 'novel' targets being bound by wild-type Atx2 at lower affinity. This demonstrates that the Lsm domain antagonizes cIDR-driven mRNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by TRIBE data showing increased editing with Lsm deletion (Figure 4C, D), with controls for sequencing depth and ADAR expression levels (Figure 4\u2014supplement 3). The conclusion that Lsm opposes cIDR function is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cell biological experiments demonstrate that the Lsm domain antagonizes cIDR-mediated granule assembly: Lsm deletion produces larger granules, while adding an extra Lsm domain produces smaller granules. Both effects require cIDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 are supported by imaging data showing dose-dependent effects of Lsm domain number on granule size and number (Figure 5), with quantification from >80 cells per condition. The requirement for cIDR is demonstrated by double deletion experiments. This provides strong support for opposing Lsm and cIDR activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Ataxin-2 is a translational control molecule mutated in neurodegenerative diseases that regulates translation of specific mRNAs, mediates mRNP granule assembly, and contributes to cellular stress responses, metabolism, circadian rhythm, and memory. Genetic reduction slows neurodegeneration in ALS models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C13 represent established knowledge supported by multiple citations throughout the manuscript. These provide essential background context for the current study and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "IDRs of RNA-binding proteins contribute to phase separation and mRNP granule assembly but are also prone to amyloid formation. Disease mutations increase amyloid formation efficiency. In Drosophila, Atx2 structured domains are essential for viability while IDRs are not, though cIDR is required for mRNP assembly and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 represent established knowledge from cited literature providing theoretical framework for the study. The domain conservation and genetic requirements in Drosophila are supported by prior work cited in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C22",
+      "C89"
+    ],
+    "result": "TRIBE technology reproducibly identifies RBP target mRNAs in vivo from small tissue samples, eliminating technical challenges associated with immunoprecipitation-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C89 describe the TRIBE method, which is supported by cited literature and validated by the reproducibility demonstrated in the current study (317 common edits between replicates).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "AREs are major cis-regulatory motifs in 3'UTRs that regulate mRNA stability through binding by various RBPs, with Pumilio increasing degradation and HuR stabilizing mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 represent established knowledge about ARE function supported by cited literature, providing context for interpreting the Atx2-ARE interaction data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "A substantial fraction of TRIBE-identified mRNAs have AREs in their 3'UTRs and/or show altered levels following Atx2 knockdown, indicating they represent real targets. Enrichment of neuropeptide/hormone mRNAs suggests altered intercellular communication may contribute to behavioral plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by convergent evidence from ARE analysis and RNAseq data. Claim C93 is speculative but reasonable given the Gene Ontology enrichment data, though it requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Known Atx2 targets CaMKII and per were not identified by TRIBE, likely because they are regulated through indirect mechanisms not requiring close Atx2-mRNA contact, such as recruitment via other RBPs or miRNA pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are observations from the data. Claims C96-C98 are speculative explanations for why known targets were missed, supported by cited mechanisms but not directly tested. This represents a limitation of the TRIBE method that is acknowledged and reasonably explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Atx2 likely protects mRNAs from degradation through a mechanism similar to HuR. Physical interactions between mammalian Atxn2 and AREs have been described, and polyQ-expanded Atxn2 mice show mRNA upregulation consistent with enhanced granule formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 connect the current findings to prior work. C99 is speculation based on known mechanisms. C100-C101 cite supporting evidence from mammalian systems that is consistent with the current findings in Drosophila.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Individual mRNPs may be substantially remodeled during assembly into higher-order structures, potentially driven by conformational changes in RBPs. Atx2 lacking cIDR cannot form granules and is not closely associated with mRNAs, suggesting remodeling during granule assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is an inference supported by C103 (direct data showing cIDR deletion prevents both granule formation and mRNA editing). Claims C104-C107 are mechanistic speculation drawing parallels to G3BP/Rin conformational changes, which is reasonable but not directly demonstrated for Atx2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Atx2 is a modular protein with multiple interaction partners. While prior studies suggested the Lsm domain mediates RNA interaction, direct experimental tests show it actively prevents close mRNA interactions. A model is proposed where Lsm-RBP interactions in soluble mRNPs occlude cIDR, and conditions promoting assembly disrupt these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by data (C110-C111 from Figures 4-5). Claims C112-C113 present a mechanistic model that logically integrates the experimental findings, though the molecular details remain to be determined. The model is well-supported by the data but represents an interpretation requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Recent work on G3BP shows phosphorylation-regulated conformational switching between soluble and assembly-competent states. Similar regulation of Lsm domain interactions may control Atx2-mediated granule assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 cites recent literature on G3BP. Claim C115 is speculation about Atx2 regulation based on the G3BP parallel, which is reasonable given the functional similarities but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Ataxin-2 has additional essential functions beyond those described, likely including regulation of a class of mRNAs outside of mRNP granules through structured-domain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are logical inferences from the observation that structured domains are essential for viability but not required for TRIBE-target binding (which occurs in granules). This represents an important conclusion about Atx2 function, though the specific targets and mechanisms remain to be identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Prior work established that Drosophila Atx2 functions as a translational activator of period mRNA and repressor of CaMKII, mediated by interactions with Lsm12 or Me31B/DDX6 respectively. mRNP-assembly functions are mediated by cIDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 summarize prior work from cited studies, providing context for the current findings. These are well-established results that inform interpretation of the new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Assembly-promoting mutations in Ataxin-2 or associated proteins cause neurodegenerative disease. SG proteins are present in ALS/FTD inclusions. Reducing Ataxin-2 slows neurodegeneration in animal models, indicating its normal function is required for disease progression. Therapeutics targeting Ataxin-2 are in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 represent established clinical and therapeutic context supported by citations. These provide important motivation for understanding Atx2 mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The discovery that the Lsm domain inhibits mRNP assembly suggests that mutations inactivating this domain could promote disease, and that compounds targeting specific Atx2 domains may be more effective therapeutics than protein knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C124 are speculative therapeutic implications of the findings. While the logic is sound given the data showing Lsm inhibits granule assembly, these predictions require experimental validation in disease models and have not been tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "Ataxin-2 has multiple important roles including mRNA stabilization (shown in this study), protein translation, cell signaling, metabolism, and embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 summarizes the diverse functions of Atx2 supported by multiple cited studies and the current work's demonstration of mRNA stabilization. This provides important context for therapeutic considerations.",
+    "result_type": "MINOR"
+  }
+]

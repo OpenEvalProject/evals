@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The GRIN lens imaging system has a focal depth of 100 \u00b5m at any single turret setting, with the full focal plane ranging from 150 to 450 \u00b5m below the lens end as the turret is adjusted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 describe technical measurements from a calibration experiment using fluorescent beads (Figure 1\u2014figure supplement 1). These are direct measurements of the optical system's properties and are well-documented with appropriate methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C53",
+      "C73"
+    ],
+    "result": "After applying quality control criteria, 144 out of 194 cells from 18 mice were eligible for analysis, with 98 RTN neurons from 9 mice retained after quality assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C53, and C73 provide clear sample sizes with explicit inclusion/exclusion criteria documented in Figure 1A. The progressive filtering from 194 to 144 cells and the subset of 98 RTN neurons is transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Movement artifacts do not confound GCaMP6 Ca2+ signals, as demonstrated by GFP control experiments and movement analysis showing that genuine Ca2+ transients occur independently of head/body movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe comprehensive control experiments (Figure 1C-E) including GFP-only controls and movement sonogram analysis. The controls demonstrate that movement does not produce signals resembling Ca2+ transients, supporting the validity of the GCaMP6 recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Kainic acid-induced seizures in anesthetized mice produced two types of Ca2+ signals in RTN neurons: fast transients with exponential decay and slower sustained changes, validating the expected signal types in freely-moving recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe a validation experiment (Figure 1F-G) using seizure induction to elicit neural activity without movement confounds. The observation of two distinct Ca2+ signal types provides important validation for interpreting signals in freely-moving animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The GRIN lens was positioned to image the RTN, with ~7% of transduced neurons co-labeling with ChAT (facial nucleus marker), 43% of NMB+ RTN neurons transduced with GCaMP6, and 20% of GCaMP+ neurons being NMB+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide anatomical validation through immunohistochemistry (Figure 2B-E). The quantifications demonstrate appropriate targeting of the RTN and characterization of the transduced neuronal population, though the relatively low overlap with specific markers indicates broad neuronal targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In the RTN, ~40% (39/98) of neurons were CO2-modulated, with 69% of these (27/39) showing adapting responses (EA), 10% (4/39) showing graded responses (EG), and 13% (5/39) showing inhibition (I).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C90 provide clear quantification of RTN neuronal response types with explicit cell counts. The predominance of EA neurons (27/98) over EG neurons (4/98) is a key finding, though the authors acknowledge this distribution differs from prior literature and discuss potential explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The adapting response in EA neurons matched the time course of ventilatory changes, with positive correlation between Ca2+ activity and tidal volume during the transition to hypercapnia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe correlations between EA neuronal activity and respiratory parameters (Figure 2H-J). The temporal correspondence and positive correlations support the physiological relevance of EA neurons, though causality cannot be established from correlation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C125"
+    ],
+    "result": "The rates of Ca2+ influx and sequestration do not change during hypercapnia, as demonstrated by consistent rise times and decay rates of individual Ca2+ transients before, during, and after hypercapnic stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C125 address a critical alternative explanation for the adapting response pattern. Analysis of individual transient kinetics (Figure 2\u2014figure supplement 2) rules out changes in Ca2+ handling as the cause of adaptation, strengthening the interpretation that adaptation reflects changes in neuronal firing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "RTN neurons showed diverse non-chemosensory responses including inhibition (5/98), sniff-coding (3/98), tonic activity (5/98), non-coding (35/98), and non-coding respiratory-related (19/98) patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 document the heterogeneity of RTN neuronal responses with explicit cell counts. The identification of sniff-coding neurons with ~0.4-0.8 s lead time (C83, Figure 3D) is particularly well-supported by timing analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Urethane anesthesia profoundly suppressed spontaneous activity and chemosensory responses in RTN neurons, with neurons showing different response patterns under anesthesia compared to the awake state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe important control experiments (Figure 4\u2014figure supplement 1) comparing awake and anesthetized states. The dramatic suppression of activity under anesthesia highlights a critical limitation of prior studies and validates the importance of awake recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In the Raphe, 50% of synapsin-promoter transduced neurons were TPH+ (serotonergic), while all SERT-promoter transduced neurons co-localized with TPH, yielding recordings from 9 synapsin and 17 SERT GCaMP6s neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 describe the targeting strategy for Raphe neurons with immunohistochemical validation (Figure 5D-E). The use of two promoters (synapsin for broad neuronal targeting, SERT for serotonergic specificity) is well-documented, though the sample size is relatively small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In the Raphe, 85% (22/26) of neurons were CO2-modulated, with EG (31%, 8/26) and I (38%, 10/26) being most common, while EA neurons were less prevalent (15%, 4/26) compared to the RTN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 provide clear quantification of Raphe neuronal response types. The contrasting distribution compared to RTN (more EG and I, fewer EA) is a key finding supporting the hypothesis of complementary roles, though the small sample size (26 neurons) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "RTN and Raphe chemosensory responses differ in temporal characteristics and CO2 sensitivity, with RTN showing predominantly fast-adapting responses and Raphe showing more graded responses, consistent with a tiered chemosensory network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C34-C37 synthesize the comparative findings between RTN and Raphe. The differential response patterns are well-documented in the data (Figures 2-6), supporting the interpretation of complementary roles, though the mechanistic basis remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "All pFL neurons showed the same discharge pattern, supporting the hypothesis that pFL comprises a homogenous population acting as a simple on-off switch, with neurons only transiently active during large expiratory efforts rather than sustained active expiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 describe the homogeneity of pFL responses (Figure 7, Figure 1\u2014figure supplement 4). The finding of transient rather than sustained activation differs from prior reports, which the authors acknowledge and discuss in relation to methodological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "pFL Ca2+ activity preceded increases in tidal volume and respiratory frequency by ~0.4 s on average, but some neurons showed activity only after these changes, with timing independent of CO2 level, suggesting a correlative rather than causal relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 describe timing analysis (Figure 7H-J) showing variable temporal relationships between pFL activity and respiratory changes. The interpretation of correlation rather than causation for general respiratory changes is appropriately cautious given the variable timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "pFL Ca2+ activity always preceded active expiration, with timing of ~0.5 s at 6% CO2 and ~0.3 s at 9% CO2, consistent with a causal link between pFL neuronal activity and induction of active expiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 describe timing analysis specific to active expiration (Figure 7H-M). The consistent precedence of pFL activity before expiration in all 20 neurons, with CO2-dependent timing, provides strong evidence for a causal role in active expiration specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33"
+    ],
+    "result": "pFL activity supports its role as a homogenous population driving active expiration, but did not show sustained activation during hypercapnia, instead contributing to acute transient high-amplitude expiratory events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32, and C33 summarize the key pFL findings. The homogeneity and association with active expiration are well-supported, though the transient rather than sustained activation pattern differs from prior reports and may reflect methodological differences in stimulus duration and preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C126",
+      "C127"
+    ],
+    "result": "Ca2+ signals provide an imprecise proxy of neuronal activity that cannot reveal precise firing rates or dynamics, though this is a widely used method, with GCaMP6s used for RTN/Raphe and GCaMP6f for pFL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 acknowledge important limitations of the Ca2+ imaging approach. The authors appropriately recognize that Ca2+ signals are indirect measures of neural activity, though they provide validation through control experiments and transient kinetics analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The preponderance of EA neurons in RTN may be suited for detecting small CO2 increases, while Raphe neurons could sustain responses during prolonged hypercapnia, suggesting a hierarchical chemosensory network with each layer conveying unique CO2 ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C131 present speculative interpretations of the functional significance of the observed response patterns. While the data on response distributions are solid, the proposed functional roles and hierarchical organization are hypotheses requiring further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RTN and Raphe neurons were classified into eight functional categories based on their Ca2+ activity patterns: Inhibited (I), Excited-adapting (EA), Excited-graded (EG), Tonic (T), Sniff-coding (Sn), Expiratory (Exp), Non-coding (NC), and Non-coding respiratory-related (NC-RR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 define the classification scheme used throughout the study. The categories are clearly defined based on observable response patterns, and the classification is validated by clustering analysis (C64-C67, Figure 1\u2014figure supplement 7) showing appropriate segregation of response types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Neuronal classification into EA, EG, NC, and I categories is validated by clustering analysis showing EA neurons below the line of identity (more response to 3% than 6% CO2), EG neurons above it, NC neurons near the origin, and I neurons in the negative quadrant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe validation of the classification scheme through two-component analysis (Figure 1\u2014figure supplement 7). The predicted clustering patterns match the observed data, providing objective support for the subjective categorization of response types.",
+    "result_type": "MINOR"
+  }
+]

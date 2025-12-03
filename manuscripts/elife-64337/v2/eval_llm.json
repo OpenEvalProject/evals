@@ -1,0 +1,404 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study recruited 30 young (mean age 23.49\u00b12.79 years) and 29 older (mean age 59.6\u00b15.61 years) healthy adults who underwent polysomnographic recordings. Slow waves were automatically detected using established criteria (negative peak <-40 \u00b5V, peak-to-peak amplitude >75 \u00b5V, specific duration parameters) after band-pass filtering (0.3-4.0 Hz), and spindles were detected using a previously published algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C3, C41-C47) are well-documented with specific participant demographics, exclusion criteria, ethical approval, and detailed detection parameters. The methods rely on previously validated algorithms (C44, C47) and provide sufficient technical detail for reproducibility. Sample sizes are adequate for the statistical analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors introduce a novel parameter called 'transition frequency' (the inverse of twice the time delay from maximum negative to maximum positive point of the slow wave) to characterize slow waves. Using mixture of Gaussians modeling validated by Akaike Information Criterion, they demonstrate that the transition frequency distribution is bimodal with a critical value around 1.2 Hz, allowing classification of slow waves into 'slow switchers' and 'fast switchers'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C49-C53, C85-C86 present a novel methodological approach with appropriate statistical validation. The bimodal distribution is demonstrated in Figure 1B and Figure 2, and the Akaike Information Criterion analysis (C53, Figure 2C) provides statistical justification for the two-Gaussian mixture model. The transition frequency parameter is mathematically well-defined and appears more independent of amplitude than traditional slope measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C10",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C77",
+      "C78",
+      "C83",
+      "C150"
+    ],
+    "result": "Two distinct types of slow waves coexist in humans: slow switchers (transition frequency <1.2-1.3 Hz) and fast switchers (transition frequency >1.2-1.3 Hz). This dichotomy was demonstrated in both young and older adults across frontal, central, and parietal derivations, with cut-off frequencies of 1.3 Hz in young individuals and 1.1-1.2 Hz in older individuals depending on brain region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The existence of two slow wave types (C2, C4, C10, C77, C78) is strongly supported by the bimodal distribution analysis (C52-C53, C55) and replicated across multiple brain regions (C56-C57) and age groups (C54-C55). The statistical modeling (Gaussian mixture with AIC validation) provides robust evidence. This represents the core finding of the manuscript and is well-supported by Figures 2 and 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C79",
+      "C129",
+      "C130",
+      "C153"
+    ],
+    "result": "Older individuals showed a significantly higher probability of producing slow switchers compared to younger individuals (60% vs 40%, p<0.0001 for all derivations), indicating that the prevalence of slow switchers increases with advancing age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C79, C129-C130, C153 are supported by statistical analysis shown in Figure 3D with reported p-values <0.0001. The effect is consistent across all three derivation clusters (frontal, central, parietal). The sample sizes (n=30 young, n=29 older) are adequate for detecting this effect, and the statistical test appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C82",
+      "C120",
+      "C136",
+      "C137",
+      "C138",
+      "C152"
+    ],
+    "result": "Fast switchers showed a steeper exponential decline across sleep cycles compared to slow switchers, with fast switchers predominating in Cycle 1 and slow switchers predominating in Cycles 2-3. Three-way ANOVA revealed significant Group\u00d7Cycle and Cycle\u00d7Switcher interactions. Young individuals showed steeper overall decline than older individuals, but the relative ratio of slow to fast switchers across cycles was maintained with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The homeostatic decline patterns (C60, C67-C69, C82, C120, C138, C152) are supported by Figure 4 and statistical analysis (C64). The ANOVA results are properly reported with F-statistics and p-values. Simple effects analyses (C65, C67-C68) provide appropriate follow-up to significant interactions. The exponential decay rates are quantified for both groups. The claim about maintained ratio across age (C137) is supported by the parallel patterns in Figure 4A-B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C71",
+      "C73",
+      "C80",
+      "C90",
+      "C151"
+    ],
+    "result": "Slow switchers exhibited significantly higher EEG connectivity along the depolarization transition compared to fast switchers in both age groups. In young adults, slow switchers showed a global increase in connectivity reaching maximum at the depolarization peak, while fast switchers showed lower overall connectivity dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C70-C71, C73, C80, C90, C151 are supported by the phase-locked connectivity analysis (PLI) shown in Figures 5 and 6. The global connectivity index quantifies these differences (Figure 5D-E). The methodology uses appropriate statistical validation (non-parametric statistics with max-statistics correction). The connectivity patterns are distinct and reproducible across the depolarization phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C72",
+      "C75",
+      "C76",
+      "C81",
+      "C107",
+      "C108",
+      "C109",
+      "C154"
+    ],
+    "result": "Aging was associated with overall lower EEG connectivity across the depolarization transition of slow waves. In older adults, minimal connectivity persisted for slow switchers but was completely abolished for fast switchers. The flexibility of connectivity dynamics was reduced in aging for both slow wave types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The age-related connectivity differences (C72, C75-C76, C81, C107-C109, C154) are clearly demonstrated in Figures 5 and 6, comparing young (5D, 6D) vs older (5E, 6E) adults. The complete absence of significant connectivity for fast switchers in older adults (C76, C109) is visually apparent in Figure 5E. The reduced flexibility claim (C107) is supported by the reduced variability and lower overall connectivity index values in older adults.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C66",
+      "C136",
+      "C155"
+    ],
+    "result": "Aging was associated with lower temporal dissipation of sleep pressure for both slow and fast switchers, as evidenced by flatter homeostatic decline across the night. Young individuals showed a steeper decline between Cycle 1 and Cycle 2 compared to older individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C66, C136, C155 are supported by Figure 4 showing exponential decay rates: young individuals r=1.6 (fast) and r=1.3 (slow) vs older individuals r=0.6 (fast) and r=0.4 (slow). The ANOVA results (C64-C65) provide statistical support. The flatter decline in older adults is visually evident and quantitatively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "The presence of spindles modified EEG connectivity patterns in both slow wave types. In young adults, connectivity with spindles was concentrated around the maximum depolarization phase rather than along the full depolarization transition. In older adults, spindle presence was associated with no changes in connectivity as measured by the global connectivity index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C115-C116, C118 are supported by comparing Figures 5 and 6 (without vs with spindles). The delayed/concentrated connectivity pattern in young adults with spindles (C74, C116) is evident in Figure 6D vs 5D. The absence of connectivity changes in older adults with spindles (C118) is shown in Figure 6E. The analysis appropriately separates spindle and non-spindle conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The slow and fast switcher dichotomy exists with or without the concomitant occurrence of a spindle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by Figure 3\u2014figure supplement 1, which shows bimodal distributions of transition frequencies for both conditions (with and without spindles) in both age groups. This demonstrates that the two-type classification is not an artifact of spindle co-occurrence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C112"
+    ],
+    "result": "Lower EEG connectivity at the microscale of slow wave oscillations in older individuals suggests decreased flexibility in the connectivity network, reflecting reduced ability to connect/disconnect and mobilize underlying networks involved in slow waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9, C112 involve interpretations (C9, C112 are marked as INFERENCE) about network flexibility based on observed connectivity differences. While the connectivity differences are well-supported (see Result 7), the interpretation about 'flexibility' and 'ability to connect/disconnect' is speculative. The term 'flexibility' is not operationally defined or directly measured. The inference is reasonable but requires additional validation, such as dynamic connectivity measures or task-based assessments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C35",
+      "C91"
+    ],
+    "result": "The transition frequency parameter is more independent of slow wave amplitude than traditional slope measures. This is important because slope is necessarily affected by amplitude (higher waves with similar durations have steeper slopes), and this confound is particularly problematic in aging studies where amplitude changes occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C35, C91 present a logical argument supported by mathematical reasoning (C30) and citations (C29). Figure 2\u2014figure supplement 1 provides empirical support showing the relationship between transition frequency, slope, and amplitude. The scatter plots (panels D-E) demonstrate that while slope correlates with amplitude, the transition frequency shows a more complex relationship. The methodological advantage is conceptually sound and addresses a real limitation in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "There appears to be a threshold around 2.5 Hz in the transition frequency above which fast switchers are difficult to produce. This corresponds to approximately 200 ms, which matches the minimal time required for establishment of connectivity networks as measured by fMRI. The authors hypothesize that slow waves with faster transitions would not allow sufficient time for dynamic network establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is observational from Figure 1B, but the subsequent claims (C101-C104) are largely speculative (marked as SPECULATION or INFERENCE). While the 200 ms correspondence to fMRI findings (C102, citing Baker et al., 2014) is interesting, the causal hypothesis (C103-C104) lacks direct evidence. The threshold observation is valid, but the mechanistic interpretation requires experimental validation, such as perturbation studies or higher temporal resolution measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C87",
+      "C94"
+    ],
+    "result": "The transition from negative to positive phase is critical as a marker of brain network switching efficiency. The transition frequency is physiologically associated with synchronized neuronal depolarization, and increased EEG connectivity during depolarization could be linked to higher communication and synaptic activity during this phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by citations to established literature about slow wave physiology. Claim C87 is a reasonable interpretation based on known physiology (marked as KNOWLEDGE/INFERENCE). Claim C94 connects the observed connectivity increases to established neurophysiological mechanisms (citing Chauvette et al., 2010). While some interpretation is involved, these claims are well-grounded in established neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Previous work (Heib et al., 2013) showed that longer depolarization phase duration was associated with better memory consolidation, hypothesized to reflect increased opportunity for hippocampal-cortical memory transfer. Since slow switchers show slower transition frequency, their specific role in sleep-dependent cognitive processes should be investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96 accurately cite prior work (Heib et al., 2013), but C97 is a suggestion for future research (marked as SPECULATION). The connection between slow switchers and the Heib findings is logical but indirect\u2014transition frequency and depolarization duration are related but not identical measures. The hypothesis is reasonable but requires empirical testing with memory tasks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The increase in EEG connectivity at the scale of individual slow wave oscillations appears complementary to the global disconnection previously described in N3 sleep. The authors conjecture that increased connectivity during slow switcher depolarization requires global disconnection at a larger scale to enable such transient variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 attempt to integrate current findings with prior work (Bouchard et al., 2019) but are marked as INFERENCE and SPECULATION. The complementarity argument is conceptually interesting but lacks direct evidence. The study does not simultaneously measure both scales of connectivity, so the relationship is inferred rather than demonstrated. Multi-scale connectivity analysis would be needed to support this conjecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The variability in connectivity index across slow switcher depolarization phases in young adults may reflect diversity of recruited networks, consistent with the concept of a 'flexible brain' with transient network reorganization. This flexibility is reduced in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is an interpretation (marked as INFERENCE) of observed variability. Claim C106 cites relevant literature on brain flexibility, but C107 (reduced flexibility in aging) is an interpretation of reduced connectivity. While the connectivity reduction is well-supported (Result 7), the specific interpretation as 'flexibility' is not directly measured. Variability could reflect noise, individual differences, or true network diversity\u2014these alternatives are not distinguished.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "The delayed connectivity when spindles co-occur with slow waves recalls findings that spindling oscillations emerging on slow waves require 'static connectivity' from the underlying slow wave, as described in the relationship between neural oscillations and functional connectivity dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 is an interpretation (marked as CITATION/INFERENCE) connecting the observed delayed connectivity pattern to theoretical frameworks (Tewarie et al., 2019; Daffertshofer and van Wijk, 2011). While the observation of delayed connectivity is supported (C74, C116), the mechanistic interpretation about 'static connectivity' requirements is speculative. The cited theoretical framework may not directly apply to the PLI measure used here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Prior literature shows that faster delta frequencies respond differently to sleep deprivation than slower frequencies, with faster frequencies showing increased prevalence and steeper decline after sleep deprivation. Studies have associated slow oscillations (<1 Hz) with memory consolidation and delta waves with forgetting, suggesting dissociable roles. It has been argued that the brain could accelerate slow wave transitions to better dissipate homeostatic pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 accurately summarize prior literature with appropriate citations (Hubbard et al., 2020; Achermann and Borb\u00e9ly, 1997; Campbell et al., 2006; Kim et al., 2019). These are background claims that contextualize the current findings. The citations appear accurate and relevant to the discussion of homeostatic regulation and functional roles of different slow wave types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "It is unknown whether slow or fast switchers respond differently to a homeostatic challenge, but the authors hypothesize that fast switchers would be more involved in the response to sleep deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 acknowledges a knowledge gap, and C128 is explicitly a hypothesis (marked as SPECULATION). This is appropriate scientific reasoning based on the observed steeper decline of fast switchers (Result 5) and prior literature (Result 19), but it requires experimental validation through sleep deprivation studies. The hypothesis is testable and reasonable but currently unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Young adults generate slow waves with steeper slopes, suggesting more efficient transition initiation/termination. The higher prevalence of slow switchers in aging might reflect a need for longer polarity reversal delays. Age-related changes in homeostatic response, including decreased ability to increase slow wave characteristics after sleep deprivation (especially in frontal areas), could reflect underlying changes in fast switchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C131 is supported by citations (Carrier et al., 2011; Ujma et al., 2019). Claims C132-C135 are interpretations and hypotheses (C132, C135 marked as INFERENCE/SPECULATION). While the increased slow switcher prevalence in aging is well-supported (Result 4), the mechanistic explanations (C132-C135) are speculative. The connection to frontal homeostatic changes (C134-C135) is indirect and would require region-specific analysis of switcher types after sleep deprivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The differential modulation of slow and fast switchers across the night (fast switchers predominant early, slow switchers later) suggests different functional roles. Prior work shows early night benefits verbal memory while later cycles benefit procedural memory. Future studies should investigate the relative contribution of both switcher types to memory consolidation and sleep-dependent cognitive processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C139 is a hypothesis (marked as SPECULATION) based on the temporal patterns (Result 5). Claim C140 accurately cites prior work (Plihal and Born, 1997; Gais and Born, 2004). Claim C141 is a suggestion for future research. The connection between switcher types and memory systems is logical but indirect\u2014no memory measures were included in the current study. This represents an important future direction but is currently speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Animal literature shows differences from humans in age-related slow wave changes (increased delta power, amplitude, and slope in older mice vs decreased in humans). The transition frequency parameter could provide new insights into these species differences by examining switcher proportions, sleep deprivation responses, and connectivity patterns in animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C146 accurately summarize animal literature with appropriate citations. Claims C147-C149 are suggestions for future research (marked as SPECULATION). The species differences are well-documented, but the proposed utility of the transition frequency parameter in animal studies (C147-C149) is speculative. While this is a reasonable research direction, it requires empirical validation in animal models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C150"
+    ],
+    "result": "This study is the first to provide functional connectivity analysis at different phases along the depolarization transition of slow waves in humans, the first to describe these changes in aging, and the first to use transition frequency to study slow and fast switchers in the slow wave spectrum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114, C150 assert novelty (marked as KNOWLEDGE). The phase-resolved connectivity analysis of slow waves appears novel based on the literature review provided. The transition frequency parameter is a new application of half-wave analysis to detected slow waves. The aging component adds further novelty. These novelty claims appear justified based on the introduction's literature review, though comprehensive verification would require extensive literature search.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C119"
+    ],
+    "result": "The reduction in connectivity at the slow wave scale in older individuals may relate to the observation that the aging brain remains more connected at the sleep stage scale (N3). The functional consequences of these connectivity changes remain to be investigated, but more exhaustive investigation of slow wave-spindle connectivity interactions in aging could help explain changes in sleep-dependent memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111, C119 are interpretations and suggestions for future work (marked as INFERENCE/SPECULATION). Claim C110 attempts to integrate findings across scales but is speculative. The relationship between increased stage-level connectivity and decreased oscillation-level connectivity is not directly tested. Claim C119 is a reasonable research direction but represents future work rather than current findings.",
+    "result_type": "MINOR"
+  }
+]

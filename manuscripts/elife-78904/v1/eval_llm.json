@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C52"
+    ],
+    "result": "V1 shows successor representation-like predictive activity during partial sequence trials, with enhanced BOLD activity at non-stimulated successor locations compared to predecessor locations, and an exponential decay toward distant future states (\u03b3=0.14). Additionally, predecessor locations showed decreased activity compared to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C36, C37 provide converging statistical evidence (t(34)=6.45, p=2.23\u00d710\u207b\u2077) for enhanced successor activity. Claim C38 demonstrates temporal discounting with significant decay factor (t(34)=-17.17, p=2.54\u00d710\u207b\u00b9\u2078). Claim C52 adds the observation of predecessor suppression. The experimental design with partial sequence trials appropriately tests the SR hypothesis, and statistical tests are properly reported with adequate sample size (N=35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C23"
+    ],
+    "result": "Model comparison analysis demonstrates that V1 anticipatory activity is best described by the successor representation model compared to the co-occurrence model and null model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 provide statistical evidence from formal model comparison (SR vs. CO: t(34)=-2.29, p=0.028; SR vs. H0: t(34)=-8.25, p=1.24\u00d710\u207b\u2079). The analysis appropriately tests competing theoretical frameworks with individual parameter fitting. However, the modest p-value for SR vs. CO (p=0.028) suggests the advantage is relatively small, and claim C57 acknowledges that SR cannot be distinguished from model-based algorithms within this design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C43",
+      "C44",
+      "C62"
+    ],
+    "result": "Hippocampus shows successor representation-like predictive activity during partial sequence trials, with classifier evidence preferentially biased toward successor locations and a transient response peaking at 4.7s post-stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 provide statistical evidence for hippocampal successor bias (t(34)=2.74, p=0.009) with appropriate temporal dynamics. Claim C42 validates that the classifier can distinguish stimulus locations above chance (t(34)=3.28, p=0.002). The decoding approach is appropriate given hippocampus lacks fine-scale retinotopy. However, the relatively low within-localizer accuracy (15\u00b13.6%) compared to V1 suggests weaker spatial representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C24",
+      "C28",
+      "C49",
+      "C69",
+      "C71"
+    ],
+    "result": "Hippocampus representations are sensitive to temporal distance in sequence space rather than spatial distance, with coactivation patterns best described by temporal tuning that persists after the sequence task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C24 provide model comparison evidence favoring temporal over spatial coactivation (Temporal vs. Spatial: t(34)=-2.36, p=0.024). Claim C71 demonstrates persistence of predictive codes during the localizer. The analysis appropriately distinguishes temporal from spatial coding. However, the experimental design has an acknowledged limitation (C97) that temporal and spatial distance are not perfectly decorrelated, which could affect the ability to fully separate these factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C27",
+      "C29",
+      "C50",
+      "C68",
+      "C72"
+    ],
+    "result": "V1 representations are sensitive to spatial distance in stimulus space rather than temporal distance, with coactivation patterns best described by spatial tuning that do not persist during the localizer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C68 provide model comparison evidence that V1 is best described by spatial coactivation and H0 (no coactivation). Claim C72 demonstrates that V1 representations revert to individual spatial locations during the localizer, contrasting with hippocampus. The findings are consistent with V1's known retinotopic organization. However, the result that both spatial coactivation AND H0 best describe V1 (claim C50) is somewhat ambiguous about which model is actually superior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C25",
+      "C26",
+      "C75",
+      "C76"
+    ],
+    "result": "Both V1 and hippocampus represent a predictive map of the visual world akin to the successor representation, suggesting SR may be a ubiquitous coding schema beyond hippocampal place cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions synthesizing results from V1 and hippocampus analyses. They are supported by the convergent evidence from claims in previous result groups. However, claim C57 acknowledges a significant limitation: the design cannot distinguish between SR and model-based algorithms. This means the interpretation specifically as SR (rather than general model-based prediction) is somewhat uncertain, though the authors provide theoretical arguments for why SR is more plausible given the passive task context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C67"
+    ],
+    "result": "No functional relationship was observed between V1 BOLD activity and hippocampus classifier evidence in sequence prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 provides statistical evidence for lack of correlation (r=-0.08, p=0.668). However, the authors acknowledge this analysis has limitations - it only tests across-subject correlations and may not capture trial-by-trial coordination. The experimental design was not optimized to test V1-hippocampus interactions. This negative result is appropriately interpreted with caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "No predictive effects were found in visual area V2, contrasting with V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 provides statistical evidence (t(34)=1.41, p=0.168) that V2 does not show the successor bias observed in V1. This control analysis strengthens the specificity of V1 findings. However, only one control region is tested, and the analysis appears less detailed than the primary V1 analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Individual V1 BOLD activity at successor locations does not correlate with behavioral task accuracy across subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 provides statistical evidence (r=0.05, p=0.769) for lack of correlation. This suggests SR-like representations may form automatically rather than being tied to task performance. However, this is an across-subject correlation which has limited power, and the task (delay detection) may not be the most sensitive measure of sequence learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "During full sequence trials, V1 BOLD activity at sequence locations receiving bottom-up visual input was enhanced compared to control locations, and pRF data confirmed voxel selection corresponded to retinotopic stimulus locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 provide validation that the experimental manipulation and ROI selection worked as intended. The pRF validation (available for N=7 subset) confirms spatial specificity. These are important methodological validations but represent expected results rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C73",
+      "C74"
+    ],
+    "result": "The observed decrease at predecessor states may constitute a functional separation mechanism, and the absence of SR-like patterns in V1 during the localizer indicates dynamic updating of the generative model, suggesting V1 and hippocampus SR-like representations are independent and complementary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C53, C74) are explicitly speculative interpretations of the data. While the observations they interpret (predecessor suppression, lack of V1 persistence) are supported by data, the mechanistic explanations are not directly tested. Claim C73 provides a reasonable interpretation but alternative explanations are not ruled out. These represent interesting hypotheses for future work rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study was preregistered, used appropriate sample size based on power analysis (N=35 final sample after exclusions), and followed ethical guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are straightforward statements about study design and are well-documented. Preregistration (C77) is a strength. Power analysis (C81) was appropriate for the primary comparison (Cohen's d\u22650.5, power=80%). Exclusion criteria (C79) were predetermined. These represent good research practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The experimental design used specific stimulus parameters (8 locations, 7\u00b0 eccentricity, 1.2\u00b0 diameter dots, 100ms presentation, 17ms ISI), with sequences constructed to minimize activity spreading and partially decouple spatial and temporal distance, though perfect decorrelation was not achieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the experimental design in detail. The design choices are generally well-justified (e.g., C91 explains constraint rationale). However, C97 acknowledges an important limitation: spatial and temporal distance are not perfectly decorrelated, which limits the ability to fully separate their influences. This is an honest acknowledgment of a design constraint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The experiment consisted of three phases (learning, main task, localizer) with specific trial structures, timing parameters, and attention control tasks, including eye-tracking and pRF mapping for a subset of participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide detailed procedural information. The design includes appropriate controls (attention task, eye-tracking, variable ITI to prevent temporal expectations). The extensive learning phase (512 total exposures) ensures sequence learning. The localizer provides independent functional mapping. These are standard methodological details that appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "fMRI data were acquired at 3T with multiband sequence, preprocessed using standard FSL pipeline (motion correction, high-pass filtering, spatial smoothing), with ROIs defined using Freesurfer and voxel selection based on functional localizer, and decoding performed using scikit-learn with logistic regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe standard fMRI acquisition and analysis procedures. The methods are appropriate and well-documented. The voxel selection procedure (C129-C130) ensures equal numbers across locations to avoid bias. The preprocessing steps are standard. Software versions are specified. The pRF validation (C135) for a subset provides additional confidence in spatial localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C47",
+      "C48",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "The study is motivated by established theoretical frameworks about cognitive maps, successor representation, and hippocampal function, with the specific gap that SR-like representations in V1 have not been previously demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide theoretical background and cite relevant prior work. The citations appear appropriate and the theoretical framework is well-established. Claim C17 correctly identifies the knowledge gap. Claims C54-C56 provide important theoretical context about why SR might operate in passive tasks. The prior work is accurately represented, though a comprehensive evaluation of all citations is beyond this review's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The experimental design cannot distinguish between successor representation and model-based algorithms, though theoretical considerations suggest SR is more plausible given the passive task context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an important and honest acknowledgment of a limitation. The authors correctly note that both SR and MB predict temporally discounted successor states (C58), but argue that the passive nature of the task and lack of working memory demands favor SR interpretation. This limitation should be considered when interpreting the main conclusions, though the authors' reasoning is sound.",
+    "result_type": "MINOR"
+  }
+]

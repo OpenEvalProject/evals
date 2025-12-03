@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The bilateral chronic constriction injury (CCI) model of the sciatic nerve was established and validated, producing mechanical hypersensitivity by day 6 post-injury. This model creates a mixture of injured and uninjured neurons in lumbar DRGs, making it suitable for studying neuropathic pain mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 provide behavioral validation with appropriate controls (sham surgery) and statistical significance (p<0.001, n=5/sex). The bilateral CCI approach is justified by citations (C101-C102) and addresses potential confounds from contralateral changes. The model characteristics (C15-C16) are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C103"
+    ],
+    "result": "Using PirtEGFPf mice, the authors successfully enriched DRG neurons for scRNA-seq, recovering 15,652 cells total across four experimental groups with minimal non-neuronal contamination (one SGC cluster identified).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment strategy is well-validated through marker gene expression (C25-C27) showing SGCs express Fabp7/Apoe but not Tubb3, while neurons show the opposite pattern. Cell counts are clearly reported (C19-C22), and quality control metrics are provided. The acknowledgment of potential NF underrepresentation (C103) demonstrates appropriate self-criticism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C104"
+    ],
+    "result": "Single-cell RNA-seq identified 16 neuronal clusters including 12 standard clusters based on known marker genes and 4 novel CCI-induced (CCI-ind1-4) clusters that were prominent after injury but minimal in sham controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering is supported by established marker genes (C30) and clear visualization in figures. The emergence of CCI-ind clusters (C31-C33) is quantitatively demonstrated with cell proportion data. The inference that standard clusters represent spared neurons (C104) is reasonable given their presence in both conditions, though alternative explanations are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CCI-ind1-4 clusters express high levels of injury markers (Sprr1a, Atf3) and regeneration-associated genes, with GO analysis revealing pathways important for both nerve regeneration and neuronal excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Expression of injury markers is demonstrated in Figure 2C (C34), and Sprr1a is validated as more specific than Atf3 (C35). The identification of regeneration-associated genes (C36) is supported by appropriate citations. GO analysis (C41) provides functional context. However, claims about specific gene functions (C37-C40) rely entirely on citations without independent validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C105"
+    ],
+    "result": "Four neuronal clusters (NP1, PEP5, NF1, NF2) showed distinct behavior after CCI: they maintained cell proportions and contained both injured (Sprr1a+) and uninjured (Sprr1a-) subpopulations, unlike other clusters where injured neurons were reassigned to CCI-ind clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell proportion analysis (C42-C43) and Sprr1a expression patterns (C44) clearly demonstrate this phenomenon. DEG counts are precisely reported (C45-C49). However, the mechanistic explanation (C105) is speculative - the authors acknowledge uncertainty about why these clusters behave differently. Statistical testing of Sprr1a expression differences (Figure 3B) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Injured neurons in NP1, PEP5, NF1, and NF2 clusters showed extensive transcriptomic changes including shared regeneration-associated genes, common pathways related to nervous system development and neuronal excitability, and cluster-specific hub genes identified through PPI network analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "DEG analysis is comprehensive with appropriate thresholds (padj<0.05, Log2FC>0.5). GO analysis (C51) and PPI network analysis (C53-C58) are properly conducted using established databases. Hub gene identification is data-driven. However, functional claims about specific genes (C61-C64) rely on literature citations rather than experimental validation in this study. The speculation about Nts (C64) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Uninjured (Sprr1a-) neurons in NP1, PEP5, NF1, and NF2 clusters exhibited subtype-specific transcriptomic changes after CCI, with GO analysis revealing enrichment in protein biosynthetic processes, suggesting these neurons enter a 'preparation' state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a novel finding with substantial DEG counts (C65-C68) and clear cluster specificity (C69). GO analysis (C70) consistently identifies protein synthesis pathways across clusters. However, the 'preparation state' interpretation (C71) is somewhat speculative - while the pathway enrichment is clear, the functional significance requires further validation. The comparison with other clusters strengthens the specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Male and female mice showed differential transcriptomic responses to CCI, with 86 male-specific and 79 female-specific DEGs, and the cLTMR cluster showing particularly poor correlation between sexes, suggesting a role in sexual dimorphism of pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Xist expression validates sex assignment (C73-C74, C111-C112). Baseline similarity between sexes is established (C75-C76). DEG counts are clearly reported (C77-C80, C85). The cLTMR finding (C81) is supported by correlation analysis and literature (C82-C83). However, the inference about cLTMR's role in sexual dimorphism (C84) is based on correlation and one cited study - causality is not established. The discrepancy with Renthal et al. (C114) is noted but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Fgf3 expression was validated as increased in injured neurons after CCI using RNAscope in situ hybridization, qPCR, and integration analysis with published datasets, showing colocalization with Sprr1a but not with subtype markers in uninjured neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal validation methods strengthen this result: scRNA-seq (C86), RNAscope (C88-C90), qPCR (C92-C93), and integration analysis (C91). Quantification is provided (Figure 7D) with appropriate statistics (p<0.001). The colocalization analysis clearly distinguishes injured from uninjured neurons. Sample sizes are adequate (n=4 mice per group for RNAscope, n=2-3 for qPCR).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C94",
+      "C96",
+      "C97",
+      "C99"
+    ],
+    "result": "Functional studies using siRNA knockdown of Fgf3 in cultured DRG neurons from CCI mice showed that reducing Fgf3 expression significantly increased capsaicin-evoked calcium responses, suggesting Fgf3 upregulation may be an adaptive mechanism counteracting neuronal hyperexcitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The calcium imaging experiment (C94) shows a statistically significant effect with reasonable sample sizes (n=11-12 coverslips). However, several concerns limit confidence: (1) transfection efficiency is cited from a different study (C99) rather than measured here; (2) only loss-of-function is tested, not gain-of-function; (3) the mechanism is not explored; (4) the interpretation as 'adaptive' (C96) is speculative - increased excitability after knockdown could reflect multiple mechanisms. The zebrafish study (C97) provides context but is in a different species and injury model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C109",
+      "C110",
+      "C115"
+    ],
+    "result": "Integration analysis with published datasets showed that CCI-ind1-4 clusters correlate with injury-induced clusters from sciatic nerve crush models, supporting the generalizability of findings across nerve injury models despite some methodological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C95) is appropriately conducted and visualized. The comparison with Renthal et al. is thoughtful, acknowledging both similarities (C115) and differences (C109-C110). The authors provide reasonable explanations for discrepancies based on injury severity and technical differences. This cross-validation strengthens confidence in the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C98",
+      "C106",
+      "C107",
+      "C108",
+      "C116"
+    ],
+    "result": "The study provides context for understanding DRG neuron function and responses to injury, with implications for developing cell-type-specific therapies that could target uninjured neurons for pain control while preserving regeneration programs in injured neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide appropriate background (C9-C11, C98, C106) supported by citations. The miRNA pathway finding (C108) adds mechanistic insight. However, the therapeutic speculation (C116) is forward-looking and not experimentally tested. These contextual claims appropriately frame the study but don't constitute independent results.",
+    "result_type": "MINOR"
+  }
+]

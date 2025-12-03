@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C36"
+    ],
+    "result": "The authors combined TRAP-seq and snRNA-seq to identify VMH neuron populations in mice. They collected 42,040 nuclei from 10 mouse VMH samples, including 21,585 neurons comprising 37 distinct populations. TRAP-seq using Nr5a1-Cre mice identified 4,492 enriched transcripts, which helped identify six neuronal populations (clusters 6-11) containing VMH neurons. Further clustering of these populations yielded 24 transcriptionally defined VMH neuronal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19-C21, C26-C27, and C36 provide converging evidence from complementary methods (TRAP-seq and snRNA-seq) that collectively support the identification of 24 VMH neuron clusters. The data includes specific cell counts, quality control metrics, and integration of two independent sequencing approaches, providing strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C95",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors defined a simplified parceling scheme of six major VMH neuron classes with distinct genetic and anatomical characteristics. Hierarchical clustering analysis identified six classes as the optimal number that retained minimal correlated expression, supported by silhouette width analysis. Each class demonstrated distinct anatomic distribution patterns (three in VMHDM, two in VMHVL, one in tuberal region) and specific marker genes including Dlk1, Esr1, Nfib, Foxp2, Fezf1, and Lepr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43-C45, C95, C98-C99 collectively demonstrate that the six-class parceling scheme is well-supported by multiple analytical approaches (hierarchical clustering, correlation analysis, silhouette width) and validated by anatomical localization data. The identification of specific marker genes for each class provides genetic tractability for future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C53",
+      "C54",
+      "C55",
+      "C71",
+      "C72"
+    ],
+    "result": "Lepr expression marks a single, distinct dorsomedial VMH neuron class (VMHLepr) with specialized function. Unbiased snRNA-seq identified VMHLepr as a distinct class in the VMHDM core, and Lepr-expressing VMH neurons map specifically to VMHLepr cell clusters, suggesting transcriptional and functional uniqueness. This contrasts with other brain regions where multiple cell types with opposing functions express Lepr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48, C53-C55, C71-C72 are supported by snRNA-seq data showing Lepr expression patterns, anatomical localization, and comparison with other brain regions. The specificity of Lepr expression to a single VMH class is demonstrated through multiple lines of evidence including TRAP-seq validation (discussed in other claims) and is consistent with previous functional studies cited by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors developed an intersectional genetic approach (LeprCre;Slc17a6Flpo;RCFLeGFP-L10a) to specifically isolate Lepr-expressing VMH neurons for TRAP-seq analysis. This approach successfully restricted eGFP-L10a expression to the VMH and eliminated contamination from adjacent brain regions. TRAP-seq identified 3,580 enriched transcripts, with 1,174 genes also enriched in pseudo-TRAP analysis of VMHLepr neurons. Top shared markers included Gpr149, Rai14, and Tnfrsf8, which exhibit VMHDM-centered expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63, C65-C68 demonstrate successful technical implementation of an intersectional genetic strategy to purify VMH-specific Lepr-expressing neurons. The data shows elimination of contaminating markers from adjacent regions (Agrp, Nts, Ghrh) while retaining VMH-specific enrichment. The convergence of TRAP-seq and pseudo-TRAP results (1,174 shared genes) provides strong validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors identified a class of glutamatergic VMH neurons (VMHFoxp2) that resides in the tuberal region, anterolateral to the neuroanatomical core of the VMH. Despite the tuberal region being predominantly GABAergic, VMHFoxp2 cells are glutamatergic, marked by Nr5a1-Cre activity, and transcriptionally most similar to other VMH populations, supporting their classification as VMH neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52, C105-C107 are supported by anatomical localization data (Figure 2\u2014figure supplement 6), marker gene expression patterns, and transcriptional similarity analysis. The classification of VMHFoxp2 cells as VMH neurons is justified by multiple lines of evidence including their glutamatergic nature, developmental Nr5a1 expression, and transcriptional similarity to core VMH populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C96"
+    ],
+    "result": "The authors performed snRNA-seq on macaque VMH tissue and found that mouse and macaque VMH share similar global gene expression signatures. Graph-based clustering identified seven macaque VMH populations, with most populations (VMHLEPR, VMHFOXP2, VMHNFIB, VMHESR1) having presumptive orthologs in the mouse. All macaque populations had clear correlates in the mouse based on orthologous gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78, C81, C96 are supported by cross-species snRNA-seq data and correlation analysis of orthologous genes. The identification of conserved VMH populations across species is demonstrated through multiple analytical approaches including correlation analysis, projection methods, and integrated clustering. The conservation is further validated by in situ hybridization data (C86-C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The macaque VMH contained a population marked by QRFPR expression (VMHQRFPR) that was absent of clear DLK1 and FEZF1 markers. The macaque VMHQRFPR population correlated with clusters from both mouse VMHDlk1 and VMHFezf1 classes, suggesting it contains orthologs of both mouse classes. However, FEZF1 and DLK1 were poorly enriched in macaque VMHQRFPR, while mouse Qrfpr expression was biased toward VMHEsr1 populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C82, C89-C91 demonstrate species-specific differences in marker gene expression while maintaining overall population conservation. The data shows that despite differences in individual marker genes (QRFPR, DLK1, FEZF1), the underlying cell populations are conserved based on broader gene expression profiles. This is supported by correlation analysis and integrated clustering showing that macaque VMHQRFPR maps to both mouse VMHDlk1 and VMHFezf1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C92",
+      "C93",
+      "C94",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Integration of mouse and macaque snRNA-seq data revealed conserved VMH populations containing cells from both species in roughly equal proportions. Macaque VMHLEPR, VMHFOXP2, VMHNFIB, and VMHESR1 classes mapped directly with murine orthologs. Despite some marker gene variation, orthologous populations share dozens of genes across species that mediate core neuronal functions. Mouse VMHLepr neurons map directly with macaque VMHLEPR neurons by all measures examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85, C92-C94, C102-C104 demonstrate strong cross-species conservation of VMH populations through integrated analysis, shared marker genes, and functional gene ontology. The conservation is validated by in situ hybridization (C86-C88) and is particularly robust for the Lepr-expressing population. The finding that conserved genes mediate core neuronal functions (ion channel activity) supports the biological significance of the conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Comparison of TRAP-seq and pseudo-TRAP (snRNA-seq) datasets revealed that 1,977 genes were enriched in both methods, while 2,354 genes were specific to TRAP-seq and 2,828 to pseudo-TRAP. Enrichment was largely a function of expression level, with genes enriched in both datasets highly expressed in both, while method-specific genes were highly expressed in their enriched dataset but lower in the other. The authors infer that TRAP-seq captures ribosome-associated genes while snRNA-seq captures nuclear-enriched and nascent transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by comparative analysis of the two datasets showing complementary capture of different aspects of the transcriptome. The expression level analysis (C33) provides a mechanistic explanation for method-specific enrichment. The inference about technical differences (C34) is reasonable given known characteristics of each method, though it remains an interpretation rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C100"
+    ],
+    "result": "The authors compared their results with a previous VMHVL-focused study by Kim et al. (2019) and found broad consistency with some notable differences. The current study identified 24 clusters evenly distributed between dorsomedial and ventrolateral VMH, while Kim et al. identified 31 clusters biased toward VMHVL. A key difference was the omission of Nfib-marked populations from the Kim et al. analysis, which were present in their samples but filtered out before final clustering. The current study was able to more clearly distinguish among VMHDM cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C100 are supported by reanalysis of published data and comparison with the current dataset. The identification of Nfib-marked cells in the Kim et al. samples (C41) demonstrates careful reanalysis. The differences in cluster numbers and regional bias are explained by differences in dissection strategy and analytical approaches. Integration analysis (Figure 2\u2014figure supplement 1) supports the overall consistency between studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Nr5a1-negative cells (clusters 6 and 7) were identified as VMH neurons by their enrichment of Nr5a1-Cre TRAP-seq genes, suggesting they were developmentally labeled by Nr5a1-Cre. The authors infer these cells presumably reside in the VMHVL, which expresses Nr5a1 during development but not in adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by TRAP-seq data showing enrichment of developmental Nr5a1-Cre genes in adult Nr5a1-negative cells. The inference about VMHVL localization (C29) is reasonable given established knowledge about developmental Nr5a1 expression patterns (C30), though direct anatomical validation of these specific clusters is not explicitly shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Dlk1- and Esr1-expressing neurons (VMHDlk1 and VMHEsr1) map to the VMHVL as previously reported. However, Dlk1 is also expressed in neighboring hypothalamic neurons in addition to VMH neurons, complicating its utility for manipulating this population without using an intersectional approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by citations to previous studies for VMHVL localization and by data showing Dlk1 expression outside the VMH (Figure 2\u2014figure supplement 4). The limitation noted in C47 is important for experimental design and is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C101"
+    ],
+    "result": "The expression of marker genes for Nfib-marked clusters (VMHNfib) resides in the most dorsomedial compartment of the VMHDM. Fezf1-marked populations (VMHFezf1) include cells with similarity to both ventrolateral VMHDlk1 and dorsomedial VMHLepr neurons, with many VMHFezf1 neurons lying in VMHC. The VMHNfib population was quite distinct from the more closely related VMHLepr and VMHFezf1 VMHDM cell types, suggesting a potentially divergent function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C101 are supported by anatomical localization data (Figure 2\u2014figure supplement 5) and transcriptional similarity analysis. The distinctiveness of VMHNfib from other VMHDM populations is demonstrated by hierarchical clustering. The inference about divergent function (C101) is reasonable speculation based on transcriptional distinctiveness but requires future functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Gene ontology analysis of genes common between LeprSlc17a6 TRAP-seq and pseudo-TRAP revealed many terms related to synaptic function, while genes unique to TRAP-seq were enriched for ribosomal and mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by gene ontology analysis of the data. The finding that common genes relate to synaptic function while TRAP-specific genes relate to ribosomal/mitochondrial function is consistent with the technical characteristics of each method (TRAP captures ribosome-associated transcripts). However, the authors note 'data not shown,' which limits independent verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cross-species projection analysis showed that all major classes from mouse and macaque projected with high confidence onto equivalent classes of the other species. In situ hybridization in macaque tissue confirmed that ACVR1C is co-expressed with LEPR in the macaque VMHDM, and SLC17A8 identified cells at the medial extreme of the macaque VMHDM that did not colocalize with LEPR-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C86-C88 are supported by Seurat projection analysis and in situ hybridization data (Figure 5\u2014figure supplement 2). The ISH validation provides important orthogonal confirmation of the computational predictions for conserved marker genes. The anatomical localization of SLC17A8 and LEPR populations matches predictions from the integrated analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors provide background on VMH function and organization, noting that the VMH controls diverse behaviors and physiologic functions, primarily contains glutamatergic neurons, and has anatomic subdivisions (VMHDM, VMHC, VMHVL) with distinct functional roles. Each subdivision mediates multiple outputs and presumably contains multiple functionally distinct cell types. Previous studies showed that activating Nr5a1-expressing VMH neurons promotes panic-related behaviors, hepatic glucose output, and energy expenditure, while activating Lepr-expressing VMHDM cells promotes energy expenditure without altering other parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C15 represent established knowledge and previous findings that are appropriately cited. These claims provide important context for the current study but are not novel findings. The citations support the functional distinctions between different VMH populations that motivate the current transcriptional analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors critique previous approaches to VMH analysis, noting that most studies have used Nr5a1 or candidate markers that do not necessarily align with functionally/transcriptionally unique cell types. They note that single-cell approaches can identify neuronal populations in an unbiased manner, but many such analyses define large numbers of highly interrelated cell populations of unclear functional significance and conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by citations and represent a reasonable critique of the field that motivates the current study's approach. The limitations of previous approaches are well-documented in the cited literature. This critique provides important justification for the simplified six-class parceling scheme developed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Many adult VMH neurons express Nr5a1 (which encodes the transcription factor SF1) and/or Fezf1, with detection restricted to a confined cluster in UMAP space. Although essentially all VMH neurons express Nr5a1 during development, only a subset express Nr5a1 and/or Fezf1 in adult animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by data from the current study (Figure 1D) and citations to previous studies establishing developmental vs. adult Nr5a1 expression patterns. This developmental-to-adult transition in Nr5a1 expression is important for understanding why the authors used developmental Nr5a1-Cre labeling to capture all VMH neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56",
+      "C64"
+    ],
+    "result": "In the neighboring ARC, multiple cell types with opposing functions (e.g., Agrp and Pomc cells) express Lepr, and some ARC Pomc cells express Slc17a6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C64 are supported by citations to previous studies. These claims provide important context for understanding the uniqueness of the VMH Lepr population, which maps to a single cell class unlike the situation in the ARC where Lepr marks multiple functionally distinct populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Most previous studies of VMH neuron function have been performed in mice, and little is known about the cross-species conservation of VMH cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by citations and represent an accurate assessment of the field that motivates the cross-species comparison in the current study. This gap in knowledge justifies the inclusion of macaque snRNA-seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Having many populations of VMH neurons with highly related gene expression profiles complicates the functional analysis of VMH cell types, suggesting the importance of simplifying the map of these heterogeneous populations to permit their manipulation and study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is a reasonable inference about the implications of the findings for future research. The complexity of 24 highly interrelated populations does present practical challenges for functional studies, and the six-class scheme addresses this by identifying maximally distinct populations with unique marker genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The authors speculate that the identification of distinct transcriptionally defined VMH cell populations provides opportunities to develop new tools to understand VMHDM cell types and their roles in metabolic control. They suggest that the conservation of major VMH cell classes between mouse and macaque supports the use of the mouse to study metabolic functions of the VMH as a means to identify potential therapeutic targets for human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 represent reasonable speculation about the translational implications of the findings. The cross-species conservation data (particularly for the Lepr population) does support the utility of mouse models for understanding primate VMH function. However, these are forward-looking statements about potential applications rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

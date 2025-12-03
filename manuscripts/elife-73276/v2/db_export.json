@@ -1,0 +1,1721 @@
+{
+  "submission": {
+    "id": "a26ccb0c-a786-4788-8fa2-337c094ed810",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:19:26.594923Z",
+    "updated_at": "2025-12-03T13:19:26.594923Z"
+  },
+  "content": [
+    {
+      "id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "submission_id": "a26ccb0c-a786-4788-8fa2-337c094ed810",
+      "content_type": "manuscript",
+      "content_text": "# The geometry of robustness in spiking neural networks\n\n## Authors\n\n- Nuno Calaim<sup>1</sup> ([ORCID: 0000-0003-0317-3276](https://orcid.org/0000-0003-0317-3276))\n- Florian A Dehmelt<sup>1</sup> ([ORCID: 0000-0001-6135-4652](https://orcid.org/0000-0001-6135-4652))\n- Pedro J Gon\u00e7alves<sup>3</sup> ([ORCID: 0000-0002-6987-4836](https://orcid.org/0000-0002-6987-4836))\n- Christian K Machens<sup>1</sup> ([ORCID: 0000-0003-1717-1562](https://orcid.org/0000-0003-1717-1562)) \u2020\n\n### Affiliations\n\n1. Champalimaud Neuroscience Programme, Champalimaud Foundation Lisbon Portugal ([ROR:03g001n57](https://ror.org/03g001n57))\n2. Centre for Integrative Neuroscience, T\u00fcbingen University Hospital T\u00fcbingen Germany ([ROR:00pjgxh97](https://ror.org/00pjgxh97))\n3. Center of Advanced European Studies and Research (CAESAR) Bonn Germany ([ROR:05350h943](https://ror.org/05350h943))\n4. Computational Neuroengineering, Department of Electrical and Computer Engineering, Technical University of Munich Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))\n5. Machine Learning in Science, Excellence Cluster \u2018Machine Learning\u2019, T\u00fcbingen University T\u00fcbingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeural systems are remarkably robust against various perturbations, a phenomenon that still requires a clear explanation. Here, we graphically illustrate how neural networks can become robust. We study spiking networks that generate low-dimensional representations, and we show that the neurons\u2019 subthreshold voltages are confined to a convex region in a lower-dimensional voltage subspace, which we call a 'bounding box'. Any changes in network parameters (such as number of neurons, dimensionality of inputs, firing thresholds, synaptic weights, or transmission delays) can all be understood as deformations of this bounding box. Using these insights, we show that functionality is preserved as long as perturbations do not destroy the integrity of the bounding box. We suggest that the principles underlying robustness in these networks \u2014 low-dimensional representations, heterogeneity of tuning, and precise negative feedback \u2014 may be key to understanding the robustness of neural systems at the circuit level.\n\n## Introduction\n\nThe ability to maintain functionality despite perturbations is one of the defining properties of biological systems, from molecular signaling pathways to whole ecosystems (Csete and Doyle, 2002; Kitano, 2004; Whitacre, 2012; F\u00e9lix and Barkoulas, 2015). Neural systems likewise withstand a certain amount of damage or external disturbances, which is evident from lesion studies or neurodegenerative diseases (Morrison and Hof, 1997; Bredesen et al., 2006; Palop et al., 2006), as well as from perturbation experiments (Wolff and \u00d6lveczky, 2018; Li et al., 2016; Trouche et al., 2016; Fetsch et al., 2018). However, the mechanisms that underlie this robustness are not entirely clear. Indeed, most models of neural networks, when faced with partial damage, lose their functionality quite rapidly (Figure 1A\u2013C; Seung et al., 2000; Koulakov et al., 2002; Li et al., 2016). Beyond its biological interest, understanding the robustness of neural systems is also crucial for the correct interpretation of experiments that seek to manipulate neural circuits (Wolff and \u00d6lveczky, 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73276/elife-73276-fig1-v2.jpg)\n\n**Figure 1.:** (A) Biological neural networks operate under multiple perturbations. (B) The degree of robustness of a system can fall into three regimes: 1. Catastrophic failure (red), when small changes in the conditions lead to quick loss of function for the system. 2. Gradual degradation (gray), when the system\u2019s performance is gradually lost when departing from optimal conditions. 3. Robust operation (black), when the network is able to maintain its function for a range of perturbations. (C) Most rate- and spike-based network models fail to withstand even small perturbations. Shown here is a rate network (composed of $N=1000$ neurons) trained with FORCE-learning to generate a two-dimensional oscillation (Sussillo and Abbott, 2009). The performance of the trained network declines rapidly when exposed to a diverse set of perturbations. Other learning schemes yield similar results. (D) By contrast, a network in which neurons coordinate their firing to correct any errors is robust to several, even cumulative perturbations. Shown here is a spiking network composed of initially $N=10$ neurons, designed to generate a two-dimensional oscillation (Boerlin et al., 2013). Top: Schematic of the various perturbations. Vertical lines indicate when a new perturbation is added. The diffusion coefficient of the injected voltage noise is more than 5% of the neuronal threshold magnitude. The perturbation of all synaptic weights is random and limited to 5%. Middle: Two-dimensional output, as decoded from the network activity. Bottom: Raster plot of the network\u2019s spike trains.\n\nRobustness has sometimes been attributed to various single-cell mechanisms, such as those that stabilize the dynamics of the stomatogastric ganglion of crustaceans against temperature fluctuations (O\u2019Leary and Marder, 2016; Haddad and Marder, 2018), or the oculomotor integrator against instabilities in positive feedback loops (Koulakov et al., 2002; Goldman et al., 2003). On the circuit-level, robustness has been tied to the excitatory-inhibitory (EI) balance of synaptic inputs, either by linking such balance with the efficiency of neural population codes (Boerlin et al., 2013; Bourdoukan et al., 2012; Barrett et al., 2013), or by using it as a corrective feedback for integrator models (Lim and Goldman, 2013). The corresponding spiking networks can maintain functional representations of their inputs by re-balancing when faced with perturbations such as neuron loss (Barrett et al., 2016; Lim and Goldman, 2013). Figure 1D illustrates such a robust, spiking network model.\n\nHere, we illustrate how circuits can be made robust through simple geometric insights that tie the low-dimensional representations found in many population recordings (Saxena and Cunningham, 2019; Keemink and Machens, 2019; Vyas et al., 2020) to the biophysics of neurons, such as their voltages, thresholds, and synaptic inputs. We therefore provide a principled theory on how networks may have become robust to the many perturbations encountered in nature. We use this theory to illustrate two effects. First, we show that the resulting robustness mechanisms include the balanced regime, but are not limited to it. Indeed, networks can be robust without exhibiting any EI balance. Second, we predict a surprising asymmetry to perturbations: we find that robust networks are insensitive to broad inhibitory perturbations, yet quite sensitive to small excitatory perturbations, even if the latter are restricted to single neurons in large networks. This heightened sensitivity may explain the ability of animals to recognize exceedingly small, excitatory perturbations (Houweling and Brecht, 2008; Huber et al., 2008; Dalgleish et al., 2020).\n\nBeyond questions of robustness, our work also provides a new way of thinking about spiking networks, which complements and extends classical approaches such as mean-field or attractor dynamics. To simplify our exposition, we focus on generic networks of integrate-and-fire neurons, rather than modeling a specific system. Consequently, we ignore part of the biological complexity (e.g. Dale\u2019s law, more complex computations or dynamics), and defer explanations on how the framework may generalize to more realistic network models to the discussion and the methods.\n\n## Results\n\nOur first assumption is that neural networks generate low-dimensional representations of sensory or motor signals, which can be extracted from the spike trains of a neural population through filtering and summation. Here, \u2018low-dimensional\u2019 simply means that the number of signals (or dimensions) represented is far less than the number of neurons in a circuit, so that there exists a certain amount of redundancy. Such redundant representations have been observed in many brain circuits (Saxena and Cunningham, 2019; Keemink and Machens, 2019), and are an integral part of most mid- to large-scale network models (Vogels et al., 2005; Eliasmith and Anderson, 2004; Barak, 2017). However, they do not per se guarantee robustness as shown in an example network in Figure 1C.\n\n### Passive redundancy\n\nA classical example of a redundant, but non-robust representation is a sensory layer of $N$ independent neurons acting as feature detectors. Here, each neuron receives the same $M$ time-varying input signals, $(x_{1}(t),x_{2}(t),\u2026,x_{M}(t))=x(t)$. Each signal is weighted at a neuron\u2019s synapse, and the resulting synaptic currents are then summed in the neuron\u2019s soma. If the synaptic weights are chosen differently for different neurons, the population generates a distributed code, whose redundancy we define as the number of neurons per signal dimension, or $\u03c1=N/M$. We will call this redundancy 'passive' as each neuron fires completely independent of what other neurons are doing.\n\nWhile actual sensory systems are obviously more complex, this layer of independent feature detectors still serves as a useful baseline. For instance, in such a layer, perturbing a set of neurons by exciting or inhibiting them will have an effect on the representation that is directly proportional to the number of neurons perturbed. Passive redundancy therefore leads to a gradual decline of functionality (Figure 1B) or a gradual response of a system to any perturbation.\n\n### Autoencoder with low-dimensional readouts\n\nTo create robustness to perturbations, neurons cannot act independently, but rather need to coordinate their firing. We will now consider an example network that is generating a sensory representation at the population level, such that this representation is optimal with respect to a given linear readout (Figure 2A). We will focus on this simple scenario in order to highlight the mechanisms that endow networks with robustness. In the Discussion and Materials and methods, we will point out how to transfer these insights to more general networks.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73276/elife-73276-fig2-v2.jpg)\n\n**Figure 2.:** Toy example of a network with coordinated redundancy ($M=2$ inputs and $N=5$ neurons).(A) The task of the network is to encode two input signals (black) into spike trains (colored), such that the two signals can be reconstructed by filtering the spike trains postsynaptically (with an exponential kernel), and weighting and summing them with a decoding weight matrix $D$. (B) A neuron\u2019s spike moves the readout in a direction determined by its vector of decoding weights. When the readout is in the \u2019spike\u2019 region, then a spike from the neuron decreases the signal reconstruction error. Outside of this region ('no spike' region), a spike would increase the error and therefore be detrimental. (C) Schematic diagram of one neuron. Inputs arrive from the top. The neuron\u2019s voltage measures the difference between the weighted input signals and weighted readouts. (D) Simulation of one neuron tracking the inputs. As one neuron can only monitor a single error direction, the reconstructed signal does not correctly track the full two-dimensional signal (arrow). (E) Voltage of the neuron (green) and example trajectory of the readout (gray). The dashed green lines correspond to points in space for which neuron $i$ has the same voltage (voltage isoclines). The example trajectory shows the decay of the readout until the threshold is reached (I), the jump caused by the firing of a spike (II), and the subsequent decay (III). (F) Same as C, but considering two different neurons. (G) Voltages and spikes of the two neurons. (H) Voltage of the orange neuron during the same example trajectory as in E. Note that the neuron\u2019s voltage jumps during the firing of the spike from the green neuron. (I) The negative feedback of the readout can be equivalently implemented through lateral connectivity with a weight matrix $\u03a9=\u2212D^{T}D$. (J) Simulation of five neurons tracking the inputs. Neurons coordinate their spiking such that the readout units can reconstruct the input signals up to a precision given by the size of the error bounding box. (K) The network creates an error bounding box around $x$. Whenever the network estimate $x^$ hits an edge of the box, the corresponding neuron emits a spike pushing the readout estimate back inside the box (colored arrows).\n\nJust as above, we consider a network of $N$ neurons which receive an $M$-dimensional vector of input signals, $x\u2062(t)$. The task of the network is to be an autoencoder, that is, to generate spike trains such that the input signals can be read out by a downstream area. We assume a linear readout, which filters each spike train with an exponential filter, similar to the postsynaptic potentials generated in a single synapse. Then, the filtered spike trains are weighted and summed, similar to the passive summation in a dendritic tree. Formally, we write\n\n$$\nx^\u2062(t)=\\sumk=1ND_{k}\u2062r_{k}\u2062(t),\n$$\n\nwhere $r_{k}\u2062(t)$ is the filtered spike train of the $k$-th neuron, $N$ is the number of neurons, $x^\u2062(t)=(x^_{1}\u2062(t),x^_{2}\u2062(t),\u2026,x^_{M}\u2062(t))$ is the vector of readouts, distinguished from the input signals by a hat, and $D_{k}=(D_{1\u2062k},D_{2\u2062k},\u2026,D_{M\u2062k})$ is the decoding vector of the $k$-th neuron, whose individual elements contain the respective decoding weights.\n\nWe can depict the geometrical consequences of this decoding mechanism by imagining a network of five neurons that is encoding two signals. At a given point in time, we can illustrate both the input signals and the readout produced by the network as two points in signal space (Figure 2B, black cross and gray dot). Now let us imagine that one of the neurons, say neuron i, spikes. When that happens, the spike causes a jump in its filtered output spike train. In turn, and according to Equation 1, the vector of readouts, $x^$, jumps in the direction of the decoding vector, $D_{i}$, as illustrated in Figure 2B. Since the direction and magnitude of this jump are determined by the fixed readout weights, they are independent of the past spike history or the current values of the readouts. After this jump, and until another neuron fires, all components of the readout will decay. Geometrically, this decay corresponds to a movement of the readout towards the origin of the coordinate system.\n\n### Coordinated redundancy and the error bounding box\n\nWe furthermore assume that a neuron spikes only when its spike moves the readout closer to the desired signal, $x$. For each neuron, this spike rule divides the whole signal space into two regions: a 'spike' half-space where the readout error decreases if the neuron spikes, and a 'no-spike' half-space where the readout error increases if the neuron spikes (Figure 2B). The boundary between these two half spaces is the neuron\u2019s spiking threshold, as seen in signal space. Consequently, the neuron\u2019s voltage, $V_{i}$, must be at threshold, $T_{i}$, whenever the readout reaches this boundary, and the voltage must be below or above threshold on either side of it. We therefore identify the neuron\u2019s voltage with the geometric projection of the readout error onto the decoding vector of the neuron,\n\n$$\nV_{i}=D_{i}^{\u22a4}\u2062(x-x^),\n$$\n\nwhere, without loss of generality, we have assumed that $D_{i}$ has unit length (see Materials and methods, 'Coordinated spiking and the bounding box'). The effect of this definition is illustrated in Figure 2E, where the voltage increases or decreases with distance to the boundary. Accordingly, the voltage measures part of the error, given here by the distance of the readout to the neuron\u2019s boundary.\n\nIn addition to its functional interpretation, the voltage equation has a simple biophysical interpretation, as illustrated in Figure 2C. Here, the two input signals, x1 and x2, get weighted by two synaptic weights, $D_{1\u2062i}$ and $D_{2\u2062i}$, leading to two postsynaptic voltages that are then summed in the dendritic tree of neuron i. At the same time, the two readouts, $x^_{1}$ and $x^_{2}$, are fed back into the neuron via two exactly opposite synaptic weights, $-D_{1\u2062i}$ and $-D_{2\u2062i}$, thereby giving rise to the required subtraction. As a consequence, the neuron\u2019s voltage becomes the projection of the readout error, as prescribed above. When the neuron\u2019s voltage reaches the voltage threshold, $T_{i}$, the neuron fires a spike, which changes the readout, $x^$. In turn, this change is fed back into the neuron\u2019s dendritic tree and leads to an effective reset of the voltage after a spike, as shown in Figure 2D.\n\nOne neuron alone can only improve the readout along one specific direction in signal space and thus cannot correct the readout for all possible input signals (Figure 2D, arrow). To properly bound the error, we therefore need several neurons, and each neuron needs to mix the input signals in different ways. As a consequence, the error will be corrected along different directions in signal space. A second neuron, say neuron j, is added in Figure 2F\u2013H. Following the logic above, its voltage is given by $V_{j}=D_{j}^{\u22a4}\u2062(x-x^)$, and the respective voltage isoclines are shown in Figure 2H. We see that the voltage of neuron j jumps when neuron i spikes. Mathematically, the size of this jump is simply given by the dot product of the two decoding vectors, $D_{j}^{\u22a4}\u2062D_{i}$. Biophysically, such a jump could be caused by negative feedback through the readout units, but it could also arise through a direct synaptic connection between the two neurons, in which case $\u03a9_{j\u2062i}=-D_{j}^{\u22a4}\u2062D_{i}$ corresponds to the synaptic weight from neuron i to neuron j.\n\nFinally, if we add three more neurons, and give them different sets of decoding weights, the network as a whole can restrict the readout to a bounded region in signal space (a polygon in two dimensions), as shown in Figure 2I\u2013K. We will call this bounded region the 'error bounding box' or simply the 'bounding box.' Its overall size determines the error tolerance of the network. To highlight the structure of this network, we can change Equation 2 by inserting the definition of the readout, Equation 1, to obtain\n\n$$\nV_{i}=D_{i}^{\u22a4}\u2062x-\\sumk=1ND_{i}^{\u22a4}\u2062D_{k}\u2062r_{k}.\n$$\n\nHere, the term $\u03a9_{i\u2062k}=-D_{i}^{\u22a4}\u2062D_{k}$ can be interpreted as a lateral connection between neurons i and k in the network (Figure 2I). The diagonal elements of the respective connectivity matrix, $\u03a9_{i\u2062i}$, can be interpreted as the hyperpolarization of the membrane voltage following a spike. While the connectivity of the network is symmetric, this assumption can be relaxed (see Materials and methods, 'Generalization of the bounding box II'). The connectivity term shows that information about the readout can be relayed through lateral connections and self-resets (Figure 2I), rather than through explicit negative feedback from a downstream layer. In either case, the feedback causes neurons to coordinate their firing. We will refer to this mechanism as 'coordinated spike coding' (Boahen, 2017) or 'coordinated redundancy'.\n\nAs shown previously (Bourdoukan et al., 2012; Boerlin et al., 2013), the temporal derivative of the above equation yields a network of current-based, leaky integrate-and-fire neurons (see Materials and methods, 'Coordinated spiking and the bounding box'). We emphasize that there are two distinct situations that cause neurons to emit spikes. First, the readout always leaks towards the origin, and when it hits one of the boundaries, the appropriate neuron fires and resets the readout into the bounding box. Second, any change in the input signal, $x$, causes a shift of the entire bounding box, since the signal is always at the centre of the box. A sudden shift may therefore cause the readout to fall outside of the box, in which case neurons whose boundaries have been crossed will fire to get the readout back into the box.\n\nWhen the signal dimensionality is increased to $M=3$, the thresholds of the neurons become planes, and the bounding box is determined by the intersection of all planes, thereby becoming a three-dimensional object such as a soccer ball. We strongly recommend to view Video 1 for an animation of the operation of the network in two and three dimensions, which highlights the relation between the bounding box and the resulting spike trains produced by the network.\n\n![Video 1.](https://cdn.elifesciences.org/articles/73276/elife-73276-video1.mp4.jpg)\n\n**Video 1.:** Shown are an animation of the bounding box dynamics, the input signal and readout, and the spike trains produced by the network.\n\n### The bounding box limits the coding error\n\nThe maximum coding error is limited by the size of the error bounding box, simply because the readout cannot deviate from the signal beyond the borders of the box. The size of the box is determined by the neurons\u2019 thresholds. For simplicity, we will assume that all thresholds are identical, which could be regulated through homeostatic mechanisms (Turrigiano, 2012). The more general scenario is explained in Materials and methods, 'Generalization of the bounding box I'.\n\nBeyond changing the maximum allowable coding error, the size of the error bounding box also influences the resulting code in more subtle ways. First, the coding error can be split into a systematic bias and random fluctuations (see Appendix 1\u2014figure 1A). As the box becomes wider, the systematic bias increases. This bias can be largely eliminated by rescaling the readouts with a constant factor. We will sometimes use this corrected readout (see Materials and methods, 'Readout biases and corrections'), but note that the corrected readout is not confined to stay within the bounding box. Second, if the box becomes very narrow, the readout can eventually jump beyond the boundary of the opposite side, thereby crossing the threshold(s) of oppositely tuned neurons (see also Appendix 1\u2014figure 1B\u2013D). By default, we will assume that the bounding box is sufficiently wide to avoid this effect.\n\nFinally, while the bounding box may seem like a fairly abstract construction, we note that it also has a simple, physical manifestation. Since the neurons\u2019 voltages are constrained to live in an $M$-dimensional subspace, a constraint given by the input dimensionality, the error bounding box delineates the borders of this voltage subspace, which is illustrated in Appendix 1\u2014figure 2.\n\n### Robustness to inhibitory, sensitivity to excitatory perturbations\n\nWe will now study how the network reacts to perturbations by contrasting two example networks at opposite ends of a spectrum. In the first network, neurons are independent. For a two-dimensional signal, we obtain this scenario when the bounding box consists of four neurons forming a square (Figure 3A, left), in which case neighbouring decoding vectors are orthogonal to each other, and their recurrent connections disappear ($D_{i}^{\u22a4}\u2062D_{k}=0$, see also Materials and methods, 'Generalization of the bounding box III'). The second network consists of $N=21$ randomly tuned neurons with equidistant thresholds, in which case the bounding box approximates the shape of a circle (Figure 3B, left).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73276/elife-73276-fig3-v2.jpg)\n\n**Figure 3.:** (A, left) A network of four independent neurons without redundancy. The bias-corrected, average readout (blue circle) is identical to the input signal (white cross). (A, right) When one neuron dies, the bounding box opens to one side, and the readout is no longer contained in the respective direction. In turn, the time-averaged readout moves to the right (blue dot) for the applied input signal (cross). (B) In a network of $N=21$ neurons with coordinated redundancy (left), neural death has almost no impact on bounding box shape and decoding error (right). (C) In the network without redundancy, an increase (left) or decrease (right) in the excitability of one neuron changes the size of the box, but the box remains bounded on all sides. The corrected readout shifts slightly in both cases. (D) In the same network, increased excitability (left) has the same effect as in a non-redundant network, unless the box is reduced enough to trigger ping-pong (Appendix 1\u2014figure 1C\u2013D). Decreased excitability (right) has virtually no effect. (E,F) If several neurons are perturbed simultaneously, their relative decoder tuning determines the effect. (E, left) Increasing the excitability of multiple, randomly chosen neurons has the same qualitative effect as the perturbation of a single neuron. However, in this case, the smaller box size pushes the corrected readout away from the origin of the signal space. (E, right) Decreasing the excitability of multiple neurons has little effect. (F) If neurons with similar tuning are targeted, both higher (left) and lower (right) excitability significantly alter the box shape and alter the corrected readout.\n\nThe first perturbation we consider is the death of a single neuron. Throughout an organism\u2019s life, cells, including neurons, can undergo the process of cell death or apoptosis if they are damaged or unfit, as may happen in diseased states (Moreno et al., 2015; Morrison and Hof, 1997; Bredesen et al., 2006; Coelho et al., 2018). Geometrically, the death of a neuron is equivalent to the removal of its corresponding face from the bounding box (Figure 3A and B, and Video 2). When the bounding box is breached on one side, the readout can no longer contain changes of the input signal along the open direction. This is precisely what happens in the case without redundancy (Figure 3A, right). In contrast, with coordinated redundancy, the removal of a single neuron has an almost imperceptible impact on the shape of the bounding box (Figure 3B, right). Consequently, the coding error remains bounded with essentially unchanged precision. The bounding box provides therefore a straightforward and intuitive explanation for the robustness against neuron loss observed in these spiking networks (Barrett et al., 2016; Boerlin et al., 2013).\n\n![Video 2.](https://cdn.elifesciences.org/articles/73276/elife-73276-video2.mp4.jpg)\n\n**Video 2.:** Shown are the bounding box, input signals and readouts, and the spike trains produced by the network.\n\nThe second perturbation we consider is a change in the excitability of one neuron. Such a change could come about through an experimentally injected current, for example, via patch clamp or optogenetics, or because of intrinsic plasticity. In either case, a change in excitability is equivalent to a change in the neuron\u2019s threshold (see Materials and methods, 'Perturbations'). Within the bounding box picture, an inhibitory perturbation or decrease in excitability leads to an outward shift of the neuron\u2019s threshold, and an excitatory perturbation or increase in excitability leads to an inward shift (Figure 3C and D). Without redundancy, the bounding box expands or shrinks, respectively (Figure 3C). At first sight, changing the box size increases or decreases the maximum error of the readout. More subtly, however, it also introduces a bias in the corrected average readout (Figure 3C, arrows). With coordinated redundancy, inhibitory and excitatory perturbations do not have opposite effects. Whereas an excitatory perturbation has an effect equivalent in size to a non-redundant system, as the threshold that is pushed inwards shrinks the box (Figure 3D, left), an inhibitory perturbation does not affect the system at all, because the outward shift of the threshold is compensated by the presence of other neurons (Figure 3D, right, see also Video 2). We note that a strong excitatory perturbation could cause the readout to move beyond the boundary of the opposite side, thereby leading to the undesirable 'ping-pong' effect (Appendix 1\u2014figure 1). This effect can be avoided if the bounding box is sufficiently wide.\n\nIn most experimental settings, one will perturb many neurons at once. We illustrate the effects of two such perturbations in Figure 3E and F. In Figure 3E, left, we excite six randomly selected neurons so that their boundaries are pushed inwards. As a consequence, the bounding box shrinks equally from all sides (Figure 3E, right). Just as in Figure 3D, left panel, the respective inward shifts cause (input-signal-dependent) biases in the corrected readout. In contrast, when we randomly inhibit neurons as in Figure 3E, right, the respective boundaries are pushed outwards. The bounding box barely changes, as the remaining neurons contain the readout error with essentially unchanged precision, and the system remains functional. In Figure 3F, we excite and inhibit neurons with similar tuning. In this case, the inhibitory perturbation is so large that there are no longer any neurons that can compensate. As a consequence, the bounding box expands in the perturbed direction and the corrected readout becomes biased, even for inhibitory perturbations.\n\nIn summary, we observe that coordinated redundancy endows the system with robustness against perturbations that act inhibitorily on the neurons, such as neuron death or increases in spiking thresholds. The function of the system remains intact until the bounding box breaks open. However, coordinated redundancy also makes the system highly sensitive towards any excitatory perturbations or decreases in spiking thresholds. Indeed, perturbing only a single neuron is sufficient to generate a change in the readout. These results contrast with passively redundant systems, whose representation changes gradually with either excitatory or inhibitory perturbations.\n\nWe note that there is circumstantial evidence that cortical systems are indeed highly sensitive to excitatory perturbations, and potentially less sensitive to inhibitory perturbations. For instance, animals can detect excitatory currents injected into a few pyramidal cells in somatosensory cortex (Houweling and Brecht, 2008; Huber et al., 2008; Dalgleish et al., 2020). To our knowledge, no study has shown that cortical systems are similarly sensitive to inhibitory perturbations in one or a few neurons. Rather, several studies have shown that neural systems can compensate for inhibitory perturbations in a sizeable fraction of pyramidal cells (Li et al., 2016; Fetsch et al., 2018; Trouche et al., 2016).\n\n### The neurophysiological signatures of perturbations\n\nBesides insights into a system\u2019s functionality, the bounding box also allows us to see immediately how perturbations affect the firing of the unperturbed neurons. For instance, when we excite a single neuron, its threshold moves inwards (Figure 3D) and occludes the thresholds of the neighboring neurons, that is, neurons with similar selectivity. Since the readout can no longer reach these neurons, they stop firing, as shown in a simulation of the network in Figure 4A. Conversely, if we inhibit one or more neurons, their thresholds become hidden and they no longer participate in containing the readout (Figure 3D\u2013F). As a consequence, the surrounding neurons have to pick up the bill and fire more, so that their firing rates will increase, as shown in Figure 4A. Biophysically, these effects are of course mediated by an increase or decrease of lateral or recurrent inhibition. However, the bounding box provides a simple visualization of the effect and its purpose.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73276/elife-73276-fig4-v2.jpg)\n\n**Figure 4.:** (A) Asymmetric effects of excitatory and inhibitory perturbations. Shown are the two input signals (black lines), corrected readouts (gray lines), and spike trains (raster plot) during different perturbations (blue boxes). The excitation of a single neuron (blue arrows) is sufficient to perturb the readout. In contrast, the network remains fully functional when a random subset of neurons is inhibited. Here, the remaining neurons compensate for the loss by firing more spikes. However, a bias occurs when a sufficiently large set of similarly tuned and active neurons are inhibited. Here, the compensation of neighboring neurons is not sufficient to contain the error. (B) Network with low redundancy ($N=5$ neurons and $M=2$ signals). The left panel illustrates the bounding box, and the trajectory of the readouts, color-coded by changes due to the neuron\u2019s spikes (green), the feedforward inputs (red) and the recurrent inputs (blue). The right panel shows the spikes of the network (top, green neuron highlighted), the input currents into the green neuron as a function of time (middle), and the difference between the synaptic excitatory and inhibitory input currents (bottom). In this example, the currents are dominated by excitatory feedforward inputs and self-reset currents, thereby causing a positive E-I difference. (C) Network with high redundancy ($N=100$ neurons and $M=2$ signals). Same format as (B). In this example, the feedforward currents are balanced by recurrent inputs of equal strength, but opposite sign. The recurrent inputs here replace the self-reset currents and correspond to input spikes of other neurons that have hit their respective thresholds, and take care of the coding error. As a consequence, the green neuron is tightly balanced. (D) Average normalized E-I difference and average coding error as a function of the redundancy $\u03c1$ (color-coded). The average coding error remains low even in a regime where substantial parts of the population are already imbalanced.\n\nThe bounding box also allows us to visualize the relation between EI balance and robustness. We can again study two extreme examples, as illustrated in Figure 4B and C. Here, both bounding boxes are intact and contain the readout. The box in Figure 4B has low redundancy ($N=5$ neurons for $M=2$ signals), whereas the box in Figure 4C has high redundancy ($N=100$ neurons for $M=2$ signals). In turn, we can visualize the synaptic current balance in these boxes by highlighting how the movements of the readout give rise to excitatory or inhibitory currents.\n\nIn the low redundancy case, the readout initially decays, and thereby moves towards the threshold of one of the neurons (shown in green). A movement towards threshold corresponds to a depolarization of the respective membrane potential and therefore an excitatory (or dis-inhibitory) current, here illustrated in red. The respective neuron spikes, and the readout jumps away from the threshold, which is mediated by a hyperpolarizing self-reset current, here illustrated in green. Since the excitatory drive is cancelled by self-resets following spiking, the synaptic inputs are not balanced, and the neuron fires spikes in a relatively regular rhythm (Figure 4B, right panel, see Materials and methods, 'Excitation-inhibition balance').\n\nThe situation is quite different for the high-redundancy network (Figure 4C). Here, the readout decays towards the thresholds of multiple neurons (some of which are highlighted with gray lines), but only one of these neurons will fire. When that happens, all neurons in the vicinity immediately receive inhibitory currents that signal the concomitant change in the readout. These inhibitory currents thereby cancel the excitatory feedforward drive, and the respective neurons experience a tight EI balance, leading to sparse and irregular spike trains (Figure 4C, left panel). We note that this tight balance only holds in the neurons that are sufficiently close to the neuron whose threshold is crossed. Neurons further away will experience only small current fluctuations, or will, on average, be hyperpolarized.\n\nAs a result, we see that EI balance occurs in networks that are sufficiently redundant, but not in networks with no or low redundancy. Nonetheless, even networks with low redundancy have a measure of robustness: for instance, the network in Figure 4B is robust against the loss of one neuron. While previous work has suggested that networks recover functionality when perturbed by dynamically re-establishing EI balance (Lim and Goldman, 2013; Boerlin et al., 2013; Barrett et al., 2016), our considerations here show that robustness extends beyond the regime of EI balance. Figure 4D illustrates this result by contrasting the performance and balance of networks as a function of their redundancy.\n\n### Scaling up\n\nWhile the simple toy networks we have studied so far are useful for illustration and intuition, biological neural networks, and especially cortical networks, consist of thousands of neurons that are thought to represent hundreds of signals simultaneously. To get closer to the biological reality, we therefore also need to study larger and more powerful networks. As we have shown above, the features of networks are tightly linked to the shape of the bounding box. For three-dimensional input signals, the threshold of each neuron becomes a plane, and the bounding box becomes a polyhedron (see also Appendix 1\u2014figure 3A and Video 1). For higher dimensional signals, the precise shape of the bounding box is hard to visualize. However, if we assume that the number of neurons scales linearly with the number of signal dimensions, $N=\u03c1\u2062M$, one can show that the resulting, higher dimensional bounding boxes are somewhat closer to a hypercube than a hypersphere. (Some insights on the geometry of such higher dimensional bounding boxes can be found in Appendix 1\u2014figure 3.)\n\nIn Figure 3, we saw that all bounding boxes are sensitive to excitatory perturbations, but that only no-redundancy (or very low-redundancy) bounding boxes are sensitive to inhibitory perturbations. A key question when scaling up is therefore whether larger networks with finite redundancy become sensitive to inhibitory perturbations, or whether they remain insensitive. An extreme form of inhibitory perturbation is the loss of neurons. Figure 5 shows that, even in high dimensions, networks are robust against such perturbations. As before, we assume that the decoding vectors of the neurons $D_{i}$ are of similar length, but otherwise random, and that the thresholds of all neurons are the same. As the death or birth of random neurons simply corresponds to a change in the overall redundancy of the network, we can understand how network performance and statistics change by simply moving along the redundancy axis in Figure 5A\u2013C. We observe that changing the redundancy over a broad range ($\u03c1\u22485-50$) has negligible effects on the performance (Figure 5A). This contrasts with networks of independent neurons in which performance scales linearly with any change in redundancy for a fixed readout. We furthermore observe that decreasing redundancy, leads to higher firing rates (Figure 5B) and more regular firing, or lower CVs (Figure 5C). The decrease of CVs here simply reflects a decrease in the number of spike patterns that can represent the constant input signal, given the smaller pool of neurons in the network. In other words, when we kill neurons, the neural code becomes less redundant, and the spike patterns of individual neurons lose some of their apparent randomness. Conversely, as the network size increases, so does the number of possible spike patterns, with the consequent increase of CV. As the number of neurons keeps increasing, it becomes more and more likely that the network has neurons optimally tuned to a given input signal, contributing to a decrease of the CV. Therefore, the increase and subsequent decrease in CV with increasing redundancy is the result of these two counteracting effects (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73276/elife-73276-fig5-v2.jpg)\n\n**Figure 5.:** All networks use random decoding vectors. (A) Most networks, except for very low redundancies, are able to correctly code for the signal. (B) Networks with low redundancy need to fire at higher rates, compared to networks with high redundancy, in order to keep the coding error in check. (C) Networks with low redundancy fire spikes in a more regular fashion (low CVs) compared to networks with high redundancy. Indeed, for networks with $\u03c1\u224810$ and dimensionality $M\\geq3$, CVs are close to one, so that individual neurons produce spike trains with Poisson statistics.\n\nIn summary, when we scale up, networks with some redundancy remain robust to partial, inhibitory perturbations, even though the firing statistics of the neurons change.\n\n### Natural perturbations\n\nBiological systems should also be robust against the mistuning of any of their components. We will now show that many types of parameter mistuning can be understood as deformations of the bounding box. As shown in Figure 3, the simplest type of perturbation is a change in a neuron\u2019s spiking threshold: an increase of a neuron\u2019s spiking threshold will push the corresponding face of the bounding box outwards, and a decrease will push the face inwards.\n\nWhile permanent changes in the threshold can come about through changes in conductances or reversal potentials, a neuron can also suffer from temporary changes in its effective spiking threshold through, for example, noise. Biological systems are constantly subject to noise at multiple levels such as sensory transduction noise, ion channel noise (Faisal et al., 2008), or 'background' synaptic activity (Destexhe et al., 2001; Fellous et al., 2003). We can study the impact of such noise by injecting small, random currents into each neuron. These currents change how close the voltage of a neuron is to its spiking threshold. With regard to spike generation, the resulting voltage fluctuations are thus equivalent to fluctuations of the threshold, or random movements of all of the faces of the bounding box around their unperturbed positions (Figure 6A, see also Video 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73276/elife-73276-fig6-v2.jpg)\n\n**Figure 6.:** (A) Voltage noise can be visualized as jittery movement of each threshold. If a neuron\u2019s threshold increases or decreases relative to its default value (solid orange), its respective boundary moves outward or inward. (B) Instead of a rigid box defining a permanent, unambiguous boundary between the spike and no-spike zones, any point in signal space now has a non-zero probability of falling outside the box, shown in color. Black lines represent the thresholds of individual neurons in the absence of noise. (left) At low redundancy, most points within the default box retain a low probability of exclusion. (centre) As redundancy increases, this low-probability volume disappears, increasing the likelihood of ping-pong spikes. (right) Networks with an expanded bounding box retain a large low-probability volume even at high redundancy. Dashed white lines show 6-neuron bounding box for comparison. (C) Temporary bounding box deformation caused by a mistuned reset. The deformation appears after a spike of the affected neuron and decays away with the time constant of the voltage leak. (D) Temporary bounding box deformation caused by a mistuned synapse. The deformation appears after a spike of the presynaptic neuron and decays away with the same time constant. (E) When noise level increases, performance (relative to an unperturbed network, see Methods, Network performance) drops only slightly. Lines show medians across random equidistant networks, and outlines represent interquartile ranges. (F) The ping-pong effect causes numerous unnecessary spikes for higher levels of noise, with more redundant networks affected more strongly. Networks with an expanded box retain healthy dynamics until much higher noise levels. (G,H) Each synapse is rescaled with a random factor taken from the interval $[1\u2212\\delta_{\u03a9},(1\u2212\\delta_{\u03a9})^{\u22121}]$, where $\\delta_{\u03a9}$ is the maximal synaptic scaling factor (see Materials and methods, Synaptic perturbations'). Networks are initially robust against synaptic mistuning, but eventually performance degrades. Networks with higher redundancy are more sensitive to these perturbations, but, as in the case of voltage noise, this extra sensitivity can be counteracted by widening the box.\n\nFor networks with low redundancy, $\u03c1$, small voltage fluctuations cause only minor deformations of the bounding box. In turn, the error tolerance remains roughly the same, and network performance is not affected (Figure 6B, left; Figure 6E and F). However, for networks with high redundancy, $\u03c1$, small voltage fluctuations can cause a fatal collapse of the system (Figure 6B, middle). The key reason is that the effective size of the bounding box is determined by the position of the thresholds that have moved furthest into the box. As more and more neurons are added, the likelihood that some of them have very decreased thresholds increases, and the effective size of the bounding box shrinks. In turn, the probability that the network moves into an 'epileptic seizure' (due to the 'ping-pong' effect, see Appendix 1\u2014figure 1) increases as well. While the readouts may still be contained in this scenario (Figure 6E), the excessive number of spikes fired (Figure 6F) comes at a high metabolic cost and would be detrimental to biological systems. To avoid this failure mode, neurons need to lower their excitability, which in turn increases the size of the bounding box for a fixed redundancy (Figure 6B, right panel). Such a 'wide box' will be more resilient towards noise (Figure 6B, right panel, Figure 6E and F). More generally, our results suggest that more redundant networks may require a better control or suppression of intrinsic sources of noise than less redundant networks.\n\nNext, we will study perturbations of a neuron\u2019s reset potential, that is, the voltage reached directly after a spike. This voltage should ideally be $V_{i,reset}=T_{i}-D_{i}^{\u22a4}\u2062D_{i}$. Biophysically, when the neuron resets to a voltage above (below) this ideal reset potential, then its post-spike voltage is temporarily closer (further) from threshold. In terms of the neuron\u2019s spiking output, a change in its reset voltage is therefore equivalent to a (temporary) change in its threshold. Within the bounding box, a reset voltage above (below) the optimal reset will lead to a push of the neuron\u2019s threshold inwards (outwards) (Figure 6C). However, because of the voltage leak, the threshold will then decay back to its normal position. Video 2 illustrates this effect in a system with a two-dimensional input. We note that positive and negative changes to the default reset potential will lead to asymmetric effects on robustness like those observed for excitatory and inhibitory perturbations. Specifically, if the resets become too small, and if the leak is insufficiently fast, then successive spiking of a single neuron will draw its threshold inwards, thereby leading to a collapse of the bounding box.\n\nFinally, we study perturbations of the synaptic connectivity in the network. Synapses could be permanently mistuned or they could be temporarily mistuned, for instance through transmission failures or through stochastic fluctuations in the release of neurotransmitters (Faisal et al., 2008). From a geometric perspective, a mistuned synapse causes a temporary change in the threshold of the postsynaptic neuron whenever a presynaptic spike arrives (Figure 6D). We again note an asymmetry: an excitatory synapse with decreased strength (or an inhibitory synapse with increased strength) leads to an outward move of the postsynaptic neuron\u2019s threshold, which is generally harmless. In turn, an excitatory synapse with increased strength (or an inhibitory synapse with decreased strength) leads to an inward move, which could be a temporarily harmful perturbation. Accordingly, random synaptic failures in excitatory synapses (but not inhibitory synapses) leave the bounding box functionally intact.\n\nWhen all synapses in the network are randomly mistuned, then each spike fired will cause a random, but transient deformation of the bounding box (see Video 2). Overall, we find that more redundant networks (with consequently more synapses) are typically more vulnerable to these perturbations. Just as for voltage noise, the amount of deformation of the bounding box therefore increases with the number of neurons. For large perturbations, the synaptic noise eventually leads to inefficient networks with high spike rate (Figure 6G and H). As shown in Appendix 1\u2014figure 4, the effects of (voltage or synaptic) noise on the networks hold independent of the signal dimensionality.\n\n### Synaptic delays\n\nSo far, we have assumed that the propagation of action potentials is instantaneous. However, lateral excitation and inhibition in biological networks incur delays on the order of milliseconds. Previous work has shown that networks which coordinate their spiking as suggested here are extremely sensitive to delays when neurons are similarly tuned (Chalk et al., 2016; Rull\u00e1n Bux\u00f3 and Pillow, 2020). Indeed, when spikes are delayed, voltages no longer reflect an accurate estimate of the coding error. For neurons with identical decoders, delays can lead to uninformed spikes that actually increase the coding error (Figure 7A and B). With networks that represent M-dimensional signals at once, the effects of delays are more complex. However, the bounding box allows us to visualize them and explain how they can, in principle, be avoided. Below, we study the impact of these delays, which apply directly to recurrent excitation and inhibition. We also apply the same delays to the network readout for mathematical convenience, but those do not affect the network dynamics (see Materials and methods).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/73276/elife-73276-fig7-v2.jpg)\n\n**Figure 7.:** (A) In an undelayed network, when membrane potentials V1 and V2 of two identically tuned neurons approach firing threshold (dashed), the first neuron to cross it will spike and instantly inhibit the second. (B) If recurrent spikes are instead withheld for a delay $\\theta$, the second neuron may reach its own threshold before receiving this inhibition, emitting an 'uninformed' spike. (C) Readout dynamics in a delayed network that encodes a two-dimensional input. After the spike of the orange neuron, but before its arrival at synaptic terminals, the voltage of the orange neuron is temporarily too low, causing an effective retraction of its boundary. (D) For less orthogonal pairs of neurons, the retraction of the boundary of a spiking neuron may expose the boundary of a similarly tuned neuron, leading to a suboptimally fired spike, and increasing the likelihood of 'ping-pong'. (E) Permanently wider boxes or (F) temporarily wider boxes (excitatory connections between opposing neurons removed) are two effective strategies of avoiding \u2019ping-pong\u2019. (C\u2013F) Readout shown as gray circles and arrows, bounds of spiking neurons as colored lines, and the resulting shift of other bounds as colored arrows. (G) Simulations of networks with a synaptic delay of $\\theta=1$ msec. (Left) In standard networks, performance quickly degenerates when redundancy is increased. (Centre, Right) The detrimental effects of delays are eliminated in higher-dimensional bounding boxes that are widened (centre) or when the largest excitatory connections are removed (right). Note the exponential scaling of the y-axis. See Appendix 1\u2014figure 5 for single trials with normal or wide boxes, and full or reduced connectivity (20 dimensions).\n\nTo visualize the effect of a synaptic delay, we show the readout dynamics around a single spike in Figure 7C (see also Video 2). After hitting the threshold, the spiking neuron resets its own voltage immediately. However, due to the delay, neither a hypothetical readout unit nor other neurons in the network are aware of the spike. From the network perspective, the voltage of the spiking neuron appears temporarily too low (or its threshold too high), which we can visualize as an outward jump of its boundary (Figure 7C, second and third panels). When the spike finally arrives, the readout and all other voltages are updated, and the voltage of the firing neuron once again agrees with the network state. In our visualization, its boundary thus returns to its default position (Figure 7C, fourth panel).\n\nThe visualization illustrates that the effect of a delayed spike depends on the bounding box shape. In Figure 7C, the nearly orthogonal tuning of neighbouring neurons makes the delayed spike harmless. The situation is different if neurons are more similarly tuned as in Figure 7D. Here, a second neuron might cross its threshold before the delayed spike arrives. As a consequence, it also fires a spike, and its boundary also retracts (Figure 7D, third panel). Eventually, both spikes arrive, the readout is updated, and the bounding box regains its original shape (Figure 7D, fourth panel). At this point, the readout may overshoot, cross an opposite boundary, and trigger further 'ping-pong' spikes. The resulting 'epileptic seizures' are essentially unavoidable in highly redundant networks with synaptic delays. Consequently, we identify two problems with synaptic delays. The first problem is that multiple thresholds are crossed simultaneously. The second problem is that the resulting strong change in the readout can cause a 'ping-pong' of uninformed spikes.\n\nFor the first problem, we note that the impact of synaptic delays depends on the angles of neighbouring neurons, as shown in Figure 7C and D. For higher signal dimensions and fixed redundancy, these angles become more orthogonal (Appendix 1\u2014figure 3D), which alleviates the detrimental effect of delays. Numerically, however, we find that this effect is not sufficient to avoid all uninformed spikes (for signal spaces with up to $M=50$ dimensions), and the networks still degenerate into \u2018ping-pong\u2019.\n\nTo avoid the second problem, we need to eliminate the crossing of opposite thresholds by widening the box, which can prevent 'ping-pong' (Figure 7E, Appendix 1\u2014figure 1). However, permanently widening the bounding box in all directions can reduce coding accuracy, even when the readout is properly rescaled (Figure 7G, Appendix 1\u2014figure 5, see Materials and methods, 'Iterative adaptation of parameters to avoid ping-pong'). A better solution is therefore to 'widen' the box only temporarily. For instance, if we eliminate excitatory connections between pairs of neurons that are practically antipodes, we are setting the respective synapses to zero. This change in the network connectivity can be understood as a specific and targeted synaptic perturbation (Figure 6D), whose effect is to expand the thresholds of a neuron\u2019s antipodes whenever it fires a spike, thereby temporarily widening the box exactly in the direction in which the readout overshoots (Figure 7F). As a consequence, the networks become less likely to initiate ping-pong. Moreover, as their widening is local and only temporary, performance is less affected. Indeed, for higher dimensional systems and biologically plausible delays (1\u20132 ms), performance of networks with delays reaches the performance of networks without delays (Appendix 1\u2014figure 5). The rapid increase in firing due to ping-pong is avoided as well (see also Appendix 1\u2014figure 5).\n\n### Adding computations\n\nThe bounding box provides a useful tool even if we endow the networks with a set of slower connections to perform linear or non-linear computations (Boerlin et al., 2013; Savin and Deneve, 2014; Thalmeier et al., 2016). Indeed, the simulation in Figure 1D used these slower connections to generate oscillatory dynamics (see Materials and methods, 'Generalization of the bounding box IV'). This extension to networks that generate persistent activity or dynamical patterns works because the mechanisms underlying the encoding of the signals into spike trains are decoupled from the mechanisms that generate the dynamics of the signals (or readouts). In fact, the extra currents generated by the slow recurrent connections can be seen as a perturbation of the bounding box thresholds. This perturbation shifts the bounding box in the space of readouts as illustrated in Appendix 1\u2014figure 6.\n\n## Discussion\n\nIn this study, we characterized the functioning of networks with coordinated redundancy under normal conditions and under a diversity of perturbations, using a simple, geometric visualization, the bounding box. The bounding box delimits the error that such a network tolerates in approximating a set of input signals, and its geometry is found to be largely determined by the properties of its decoders. It allows us to visualize and thus understand the dynamics of coordinated spiking networks, including the firing of every single spike. We showed how various perturbations of the network can be mapped onto shape deformations of this bounding box. As long as the box stays intact, the network\u2019s performance is essentially unaffected, in that downstream readouts of the network\u2019s outputs will not notice the perturbation.\n\nIn many respects, the bounding box is a 'toy model' (a deliberately abstract model), which we see mainly as a tool to conceptualize and highlight generic circuit mechanisms, rather than an attempt to model any specific system. Nonetheless, it is worthwhile to point out that the bounding box is also a spiking version of classical sparse coding models of V1 (Olshausen and Field, 1996). Indeed, previous work has demonstrated that these networks can explain various perturbation experiments in V1 (Barrett et al., 2016). So, besides shedding light on the robustness of coordinated spike codes, the bounding box can also be seen as a simple model of a sensory system.\n\n### Robustness of networks with coordinated spike coding\n\nSeveral overarching principles have been identified that allow systems to be robust (Csete and Doyle, 2002; Kitano, 2004; Whitacre, 2012; F\u00e9lix and Barkoulas, 2015). These include (1) negative feedback, to correct perturbations and recover functionality; (2) heterogeneity of components, to avoid common modes of failure; and (3) modularity or 'bow-tie' architectures, to create alternative pathways or solutions in the case of a perturbation. Furthermore, (4) making a system robust against certain perturbations almost always involves a tradeoff, in that the system becomes fragile against other perturbations.\n\nThese core themes can also be found in the networks we studied here. (1) Negative feedback exists through extensive lateral connectivity (or, alternatively, through actual feedback of the readout, as in Figure 2F), and is precisely tuned such that it automatically corrects any perturbations. (2) Individual neurons are heterogeneous and thereby allow the system (as visualized by the bounding box) to remain functional for all types of input signals. (3) Since neuron space is always larger than signal space, there are many alternative neural codes ('alternative pathways') that give rise to the same linear readout, thus embodying a bow-tie architecture whose core is the signaling space. Shrinking the network\u2019s redundancy, for example, by killing neurons, in turn eliminates these alternative codes and leads to more regular and reliable spike trains. (4) Furthermore, the networks are fragile against any perturbation that leads to a shrinking of the box. Paradoxically, this fragility may become more relevant if a system becomes more redundant. These four themes may relate the robustness of the networks studied here to the more general topic of tissue robustness (Kitano, 2004).\n\nCoordinated redundancy allows the construction of robust sub-circuits, that can self-correct problems instead of passing them on, so that downstream networks remain unaffected. These observations remain correct even if we move beyond the simple autoencoder networks that we have studied here. Indeed, we could generalize the connectivities we consider or abandon the idea that the readout must match the input without changing the robustness of the networks (see Materials and methods, 'Coordinated spiking and the bounding box'). We could also add slower recurrent synapses which allows to generate dynamics within the networks (Boerlin et al., 2013; Savin and Deneve, 2014; Thalmeier et al., 2016), as explained above.\n\n### Fragility of networks with coordinated spike coding\n\nDespite their strong robustness, networks with coordinated redundancy are also surprisingly fragile against any perturbations that cause an effective shrinking of the box, and thereby lead to the ping-pong effect. These problems can be ameliorated by widening the box, which brings networks back into workable regimes if they represent high-dimensional signals with limited redundancy. However, a true 'fix' of this problem can only be achieved if neurons with opposite decoder weights (which are connected through excitatory connections) are prohibited. Such a change would break the symmetric treatment of excitatory and inhibitory connections, which causes neurons to both excite and inhibit different downstream partners, thereby violating Dale\u2019s law. Future work will need to reconsider these issues which seem to be tightly connected. (We note that Boerlin et al., 2013 developed networks that obey Dale\u2019s law, but did so without fixing the issue of the ping-pong effect.)\n\n### Structural robustness of neural networks\n\nHistorically, the study of network-level mechanisms of robustness has received relatively little attention. A key focus has been the robustness of network attractors, defined as the ability of a system to remain in the same attractor landscape despite perturbations. For instance, systems such as the oculomotor integrator or the head direction system can be described as continuous attractors (Seung, 1996; Zhang, 1996). Such continuous attractors are structurally unstable, in that even small perturbations in single neurons can lead to rapid dynamic drifts (Seung, 1996; Zhang, 1996). However, this fragility to perturbations is not observed in biological neural networks.\n\nIn order to achieve the required robustness, several biophysical mechanisms have been proposed to enhance continuous attractors models, e.g. bistability at the somatic level (Koulakov et al., 2002) or dendritic level (Goldman et al., 2003). More recent work proposed network-level mechanisms based on derivative feedback, in order to solve the problem of robustness for continuous attractor networks (Lim and Goldman, 2013). In our work, the problem is solved because perturbations such as neuron loss, noise, or tuning of synapses are compensated through the fast, lateral connections. As a consequence, perturbations of the single-neuron level (spiking) are uncoupled from perturbations of the population-level (readout). Consequently, only perturbations that manage to disturb the linear readout can impact the network attractor dynamics.\n\nModels of neural networks implementing point attractors, such as the Hopfield model (Hopfield, 1982), are typically considered structurally robust, meaning that perturbations up to certain magnitudes of their parameters and the introduction of dynamics noise do not disrupt the attractor. We note, however, that perturbations in these networks lead to changes in neurons\u2019 firing rates, which may still cause changes in putative downstream linear readouts. From the point of view of a downstream observer, perturbations are therefore not compensated within classical attractor networks. The induced perturbations may be inconsequential, however, when the downstream readout is taken to be a classifier; only the combined system of attractor network and classifier readout can then be seen as a 'robust module', that is, a module that keeps problems to itself, rather than spreading them to all who listen.\n\nSimilar observations apply to studies of the robustness of deep networks against various perturbations such as the loss of neurons (Morcos, 2018; Barrett et al., 2019). In these cases, the network\u2019s robustness is evaluated with respect to the output of a final classification step, such as the identification of an object. Indeed, a lot of work has been dedicated to making this final output robust to small perturbations, especially perturbations applied to the inputs (Szegedy, 2013; Biggio, 2013; Carlini, 2019; Brendel et al., 2020). Based on the arguments above, we similarly expect that the problem of making a graded output robust will be harder and fundamentally different.\n\n### Insights on spiking networks\n\nSpiking networks have traditionally been quite hard to understand, except for special cases (Maass and Bishop, 1999; Vogels et al., 2005; Gerstner et al., 2014). Here, we have shown how the dynamics of (coordinated) spike coding networks can be understood within a lower-dimensional signal space, which is tightly linked to linear readouts. Since (low-dimensional) linear readouts are a ubiquitous finding in recordings from neural populations, we may speculate that our signal space is roughly equivalent to the latent subspaces discovered by linear projections of neural activities, as, for example, obtained through dimensionality reduction methods (Cunningham and Yu, 2014; Keemink and Machens, 2019). This link between a space of neural activities and a space of (latent) signals is common to all network models based on low-rank connectivities (Eliasmith, 2005; Seung, 1996; Mastrogiuseppe and Ostojic, 2018). In contrast to these studies, however, and in line with (Boerlin et al., 2013), our work focuses on spiking networks and introduces a third space, the voltage space, which represents the system\u2019s coding errors. As we have shown here, the coding errors are confined to an error bounding box. Accordingly, the bounding box finds its physical\u2014and in principle measurable\u2014manifestation in a low-dimensional subspace of a network\u2019s voltage space (Appendix 1\u2014figure 2).\n\nWe believe that the links we have made here\u2014which allow us to jointly visualize a low-dimensional signal space, the spiking activity, and the subthreshold voltages\u2014may provide useful insights into the functioning of spiking networks in the brain, and may well be expanded beyond the confines of the current study.\n\n## Materials and methods\n\n### Coordinated spiking and the bounding box\n\nMathematically, our networks can be derived from a single objective function that quantifies coding accuracy. Step-by-step derivation for the autoencoder networks can be found in Barrett et al., 2016; networks that additionally involve a set of slow connections are derived in Boerlin et al., 2013. Here, we focus on the autoencoder networks which contain all the crucial elements needed to understand the spiking dynamics of the networks. Instead of starting with an objective function, we take a slightly different perspective in our derivation here, which ties more directly into our geometric interpretations.\n\nIn short, we assume that a network of $N$ neurons encodes an $M$-dimensional input signal $x(t)$, in its spike trains $s(t)$, such that the signal can be read out from the filtered spike trains,\n\n$$\nx^(t)=Dr(t)\n$$\n\n\n\n$$\nr\u02d9(t)=\u2212\\lambdar(t)+s(t).\n$$\n\nHere, $x^(t)$ is the $M$-dimensional linear readout or signal estimate, the $M\\timesN$ matrix $D$ contains the decoding weights (and each column corresponds to a decoding vector $D_{i}$), the filtered spike trains are represented by an $N$-dimensional vector $r(t)$, and $\\lambda$ determines the filtering time constant.\n\nThe key idea of coordinated spike coding is to derive a spiking rule that bounds the difference between the input signal $x$, and the linear readout $x^$,\n\n$$\n\u2016x\u2212x^\u2016<T,\n$$\n\nwhere $\u2225\u22c5\u2225$ denotes the Euclidean distance or L2 norm and $T$ determines the maximally allowed difference. In the network implementation, we approximate this bound (which defines a hypersphere) by a set of linear bounds or inequalities, one for each neuron i,\n\n$$\nD_{i}^{T}(x\u2212x^)<T.\n$$\n\nFor simplicity, we assume that the decoding vectors $D_{i}$ have unit norm. Each inequality defines a half-space of solutions for the readout $x^$. For properly chosen $D_{i}$, the intersection of all of these half-spaces is non-empty and bounded, and thus forms the interior of the bounding box. Geometrically, the equations define a polytope $B={x^\\inR^{M}|D^{T}(x\u2212x^)<T}$. If the thresholds are chosen sufficiently large, then crossing a bound and firing a spike keeps the readout inside the bounding box.\n\nThe dynamics of the network are obtained by identifying the left-hand side of the above equation with the neuron\u2019s voltage, $V_{i}$, and then taking the temporal derivative (Boerlin et al., 2013; Barrett et al., 2016). If we also add some noise to the resulting equations, we obtain,\n\n$$\nV\u02d9=\u2212\\lambdaV+D^{T}(\\lambdax(t)+x\u02d9(t))\u2212D^{T}Ds(t)+\\sigma_{V}\u03b7(t),\n$$\n\nwhich describes a network of leaky integrate-and-fire neurons. The first term on the right-hand side is the leak, the second term corresponds to the feedforward input signals to the network, the third term captures the fast recurrent connectivity, with synaptic weights $\u03a9_{ij}=\u2212D_{i}^{T}D_{j}$, and the fourth term is added white current noise with standard deviation $\\sigma_{V}$. When the voltage $V_{i}$ reaches the threshold $T$, the self-connection $\u03a9_{ii}=\u2212D_{i}^{T}D_{i}$ causes a reset of the voltage to $V_{reset}=T+\u03a9_{i\u2062i}$. For biological plausibility, we also consider a small refractory period of $\\tau_{ref}=2\u2062ms$ for each neuron. We implemented this refractory period by simply omitting any spikes coming from the saturated neuron during this period.\n\nMathematically, the voltages are thereby confined to a subspace given by the image of the transposed decoder matrix, $D^{\u22a4}$. The dynamics within this voltage subspace are then bounded according to Equation 7, which can be seen as a physical manifestation of the bounding box (see also Appendix 1\u2014figure 2).\n\n### Generalization of the bounding box I: Heterogeneous thresholds\n\nIn our exposition, we generally assume that all decoding vectors are of the same length, and all thresholds are identical. For isotropically distributed input signals and isotropically distributed decoding vectors, this scenario will cause all neurons to fire the same average number of spikes over time. Indeed, to the extent that homeostatic plasticity sets synaptic weights and firing thresholds to guarantee this outcome (Turrigiano, 2012), a network will automatically revert to a spherically symmetric bounding box for such input signals (see also Brendel et al., 2020).\n\nIf input signals are not isotropically distributed then homeostatic plasticity would essentially lower the thresholds of neurons that receive overall less inputs, and it would increase the thresholds of neurons that receive overall more inputs. In turn, the bounding box would take more elliptical shapes. We have not considered this scenario here for simplicity, but the key findings on robustness will hold in this case, as well.\n\n### Generalization of the bounding box II: Asymmetric connectivities\n\nIn the main text, we have assumed that the readout always jumps orthogonal to the threshold boundary (or face) of a neuron. This assumption leads to symmetric connectivities in the network, given by $\u03a9_{ij}=\u2212D_{i}^{T}D_{j}$. However, our results on robustness also hold if we decouple the orientation of a neuron\u2019s face from the direction of the readout jump. This can be achieved if we define the voltage as $V_{i}=F_{i}(x\u2212x^)$, where $F_{i}$ denotes the norm vector of a bounding box face, but then let the readout jump in the direction $D_{i}$. A non-orthogonal jump with respect to the face then simply requires $D_{i}\\neqF_{i}$. Indeed, for elliptically shaped bounding boxes, non-orthogonal jumps of the readout can be advantageous. The more general dynamical equation for the networks is then given by\n\n$$\nV\u02d9=\u2212\\lambdaV+F(\\lambdax(t)+x\u02d9(t))\u2212FDs(t)+\\sigma_{V}\u03b7(t),\n$$\n\nand was first described in Brendel et al., 2020. In principle, these generalized networks include all spiking networks with low-rank connectivities. However, the bounding box interpretation is most useful when each spike is reset back into the bounding box, which will only happen if the net effect of a spike on neighboring neurons is inhibitory. Spikes that cause (temporary) jumps out of the box, and therefore have a net excitatory and error-amplifying effect, will be considered in future work.\n\n### Generalization of the bounding box III: Opening the box\n\nThe equation for the synaptic connectivity, $\u03a9_{ij}=\u2212D_{i}^{T}D_{j}$, implies that neurons with similar decoding vectors inhibit each other, neurons with orthogonal decoding vectors are unconnected, and neurons with opposite decoding vectors excite each other. Consequently, if the bounding box is a (hyper)cube, then almost all neurons are unconnected, except for neurons whose faces are opposite to each other. The excitatory connections between these neurons ensure that their voltages remain in sync. However, in practice, those voltages do not need to be tied, and the excitatory connections can therefore also be eliminated (as in Figure 7), which can help against the ping-pong effect.\n\nAlternatively, we can choose decoding vectors such that all synapses are inhibitory, $\u03a9_{i\u2062j}\\leq0$. In this case, the bounding box remains open on one side. The network no longer represents the input signal, but rather computes a piece-wise linear function of the input (Mancoo, 2020). In turn, the network\u2019s new function (piece-wise linear output) will now remain robust against perturbations for exactly the same reasons explained before. Indeed, the reader may notice that most of the results on robustness do not require the bounding box to be closed.\n\n### Generalization of the bounding box IV: Slow connections\n\nThroughout the manuscript, we focused on autoencoder networks. However, as illustrated in Figure 1 and derived in Boerlin et al., 2013, by introducing a second set of slower connections, we can endue these networks with computations,\n\n$$\nV\u02d9=\u2212\\lambdaV+D^{T}(\\lambdax(t)+x\u02d9(t))\u2212D^{T}Ds(t)+D^{T}(A+\\lambdaI)Dr(t)+\\sigma_{V}\u03b7(t),\n$$\n\nin which case the network approximates the dynamical system:\n\n$$\nx\u02d9=Ax+c(t).\n$$\n\nWe note that all results on robustness hold for these more complicated networks as well. Indeed, the robustness of the autoencoder networks relies on the fast recurrent connections, which are present in these architectures as well. Due to the time scale separation, these mechanisms do not interfere with the slower recurrent connections, which create the slow dynamics of the readouts (see also Appendix 1\u2014figure 6).\n\n### Readout biases and corrections\n\nWhen one of the neurons fires, its spike changes the readout, which jumps into the bounding box. In previous work (Boerlin et al., 2013, Barrett et al., 2016), the neurons\u2019 thresholds were linked with the length of the jumps through the equation $T_{i}=\u2016D_{i}\u2016^{2}/2$. Accordingly, the jumps were generally taken to reach the opposing face of the bounding box, creating a tight error bounding box around $x$. This setting guarantees that the time-averaged readout matches the input signal.\n\nWhen the jumps are significantly shorter than the average bounding box width, however, the time-averaged readout will be biased away from the input signal (see Appendix 1\u2014figure 1). However, in many cases, this bias can be corrected by rescaling the readout. For instance, if the bounding box is shaped like a hypersphere (i.e. in the limit of an infinite number of neurons $N$), and assuming a constant (or slowly varying) stimulus, we can correct the readout as\n\n$$\nx^=(\\frac{\u27e8\u2016Dr\u2016\u27e9+T\u2212\\frac{1}{2}}{\u27e8\u2016Dr\u2016\u27e9})Dr,\n$$\n\nwhere the angular brackets denote the time-averaged readout. Accordingly, in this case the bias only affects the length of the readout vectors, but not their direction.\n\nIf the bounding box is shaped like a hypercube, we alternatively correct the readout bias by assuming that a downstream decoder area has access to the identity of spiking neurons in the recent past. In this case, the downstream area can simply correct the readout according to the following equation:\n\n$$\nx^=Dr+\\sumi\\inS(\\frac{1}{2}\u2212\\frac{T}{\u2016D_{i}\u2016^{2}})D_{i},\n$$\n\nwhere $S$ is the set of active neurons for a given fixed time window in the past.\n\nIn all other cases, we empirically found that we can apply a correction to the readout using a similar scaling as in Equation 11 where $\u27e8\u2016Dr\u2016\u27e9\u2248\u2016Dr(t)\u2016$. In other words, in most cases, the bias mainly affects the length of the readout vectors, whereas their direction is less affected.\n\nIn Figure 1, we used networks that involve an extra set of slow recurrent connections (Boerlin et al., 2013). In this case, we additionally scaled the slow recurrent connectivity matrix $\u03a9_{slow}$ with the same scaling factor as the corrected readout in Equation 11:\n\n$$\n\u03a9_{slow}=(\\frac{\u27e8\u2016Dr\u2016\u27e9+T\u2212\\frac{1}{2}}{\u27e8\u2016Dr\u2016\u27e9})D^{T}(A+\\lambdaI)D.\n$$\n\n### Geometry of high-dimensional bounding boxes\n\nThe dimensionality of the bounding box is determined by the dimensionality $M$ of the input signal. Throughout the illustrations in the Results section, we mostly used two-dimensional bounding boxes for graphical convenience. In order to illustrate some properties of higher-dimensional error bounding boxes (Appendix 1\u2014figure 3), we compared their behavior against that of hyperspheres and hypercubes. We defined the equivalent hypersphere as ${p\\in\u211d^{M}:\u2225p\u2225_{2}\\leqT}$ and the equivalent hypercube as ${p\\in\u211d^{M}:\u2225p\u2225_{\u221e}\\leqT}$, where $\u2225p\u2225_{2}=\\sqrt{p_{1}^{2}+\u2026+p_{n}^{2}}$ and $\u2225p\u2225_{\u221e}=max_{i}\u2061|p_{i}|$. In practice, we chose the smallest box size, $T=0.5$ (Appendix 1\u2014figure 3).\n\nFor a first comparison, we took the intersection between the border of the $M$-dimensional polytope $B$ and a random two-dimensional plane containing the centre of the polytope. We computed such intersections numerically by first choosing two random and orthogonal directions $u$ and $v$ in the full space defining the two-dimensional plane. Then for each $\\theta\\in[0,2\u2062\\pi]$ , we defined a ray in the two-dimensional plane, $w\u2062(\u03c1)=\u03c1\u2062cos\u2061(\\theta)\u2062u+\u03c1\u2062sin\u2061(\\theta)\u2062v$, and then plotted\n\n$$\n\u03c1(\\theta)=arg\u2061max\u03c1>0,w(\u03c1)\\inBw(\u03c1).\n$$\n\nFor a second comparison, we found the distribution of angles between neighbouring neurons by first randomly choosing one neuron, and then moving along the surface of the $M$-polytope in a random direction, until we found a point that belongs to the face of a different neuron. We then computed the angle between the decoding weights of those two neurons.\n\nWe tested whether the results obtained for random decoding vectors hold for more structured decoding vectors as well. For instance, if we want to represent natural visual scenes, we may consider that the receptive fields of simple cells in V1 roughly correspond to the decoding vectors of our neurons (Olshausen and Field, 1996; Barrett et al., 2016). We illustrated a high-dimensional bounding box with a set of Gabor patches defined as\n\n$$\ng\u2062(x,y;\\lambda,\\theta,\\sigma,\\gamma)=exp\u2061(-\\frac{x~^{2}+\\gamma^{2}\u2062y~^{2}}{2\u2062\\sigma^{2}})\u2062cos\u2061(2\u2062\\pi\u2062\\frac{x~}{\\lambda}+\\frac{\\pi}{2}),\n$$\n\nwhere $x~=x\u2062cos\u2061\\theta+y\u2062sin\u2061\\theta$ and $y~=-x\u2062sin\u2061\\theta+y\u2062cos\u2061\\theta$. For our purposes, we randomly chose the Gabor parameters: $\\lambda$, the wavelength of the sinusoidal stripe pattern, was sampled uniformly from ${3,5,10}$ Hz; $\\theta$, the orientation of the stripes, was sampled uniformly in $[0,2\\pi]$, the standard deviation of the Gaussian envelope, was sampled uniformly from ${1,1.5}$, the spatial aspect ratio, was sampled uniformly from ${1,1.5}$.\n\nFinally we randomly centred the resulting Gabor patch in one of 9 different locations on the 13 \u00d7 13 grid. We computed the angle (in the 169-dimensional space) between the Gabor patches and found that roughly 80% of the neurons are quasi-orthogonal (their angle falls between 85 and 95 degrees) to a given example patch (Appendix 1\u2014figure 3E).\n\n### Perturbations\n\nPerturbations to the excitability of a neuron, be it due to changes of the spiking threshold, changes of the reset potential, synaptic weights, etc., can all be formulated as extra currents, $p_{i}\u2062(t)$, which capture the temporal evolution of the perturbation. Adding a current to the voltage dynamics is equivalent to a transient change in the neuronal thresholds,\n\n$$\nV\u02d9=\u2212\\lambdaV+D^{T}(x\u02d9+\\lambdax)+pV\\leqT\u21d4V\u02d9=\u2212\\lambdaV+D^{T}(x\u02d9+\\lambdax)V\\leqT\u2212h\u2217p\u00a0\u00a0with\u00a0\u00a0h(t)=\u0398(t)e^{\u2212\\lambdat}.\n$$\n\nHere, $p(t)$ denotes the vector of current perturbations, and $h\u2217p$ denotes a convolution of the perturbation currents with an exponential kernel, $h\u2062(t)$. Note that moving the perturbation onto the threshold does not change the spiking behavior of the neuron. Appendix 1\u2014table 1 includes the range of perturbations used throughout this manuscript.\n\n#### Voltage noise\n\nWe implement voltage noise as an extra random current on the voltage dynamics. This extra current follows a Wiener process scaled by $\\sigma_{V}$, which denotes the standard deviation of the noise process with Gaussian increments (see Equation 8). In the absence of recurrence,\n\n$$\ndV_{j}(t)=\u2212\\lambdaV_{j}(t)dt+\u03bd(t)\\sqrt{dt},\u03bd\u223cN_{M}(0,\\sigma_{V}),\n$$\n\nso that the leaky integration with time constant $\\lambda$ biases the random walk of the thresholds back towards their default values. For stationary inputs, the thresholds therefore follow an Ornstein-Uhlenbeck process.\n\n#### Synaptic perturbations\n\nWe perturb synapses between different neurons ($i\\neqj$) by a multiplicative noise term\n\n$$\n\u03a9_{i,j}\u2190\u03a9_{i,j}*(1-\\delta_{\u03a9})^{u_{i,j}},\n$$\n\nwhere $u_{i,j}\u223cU(\u22121,1)$. Here, the parameter $\\delta_{\u03a9}$ is the maximum weight change in percentage of each synapse, which in Figure 6G is referred to as maximal synaptic scaling.\n\n#### Synaptic delays\n\nWe implement delayed recurrent connections with the same constant delay length $\\theta\\geq0$ for all pairs of neurons. Regardless of whether or not lateral excitation and inhibition are delayed in this way, the self-reset of a neuron onto itself remains instantaneous. Equation 3 thus becomes\n\n$$\nV_{i}=D_{i}^{\u22a4}\u2062x-\\sumk=1ND_{i}^{\u22a4}\u2062D_{k}\u2062(r_{k}\u2062(t)\u22c5\\delta_{i\u2062k}+r_{k}\u2062(t-\\theta)\u22c5(1-\\delta_{i\u2062k})),\n$$\n\nwhere $\\delta_{i\u2062k}$ is Kronecker\u2019s delta. We assume that the decoder readout is equally delayed.\n\n### Parameter choices\n\nThe spiking networks presented here depend on several parameters:\n\nThese parameters fully define both the dynamics and architecture \u2013 in terms of feedforward and recurrent connectivity \u2013 of the networks, as well as the geometry of the bounding box. We studied networks with various number of neurons $N$ and input dimensionality $M$. The decoding weights of each neuron were drawn from an $M$-dimensional standard normal distribution,\n\n$$\nD_{j}\u223cN(0,I),\n$$\n\nand then normalized,\n\n$$\nD_{j}\u2190D_{j}/\u2016D_{j}\u2016_{2},\n$$\n\nsuch that each neuronal decoding vector is of length 1. We then did a sweep on the remaining parameters ($\\lambda$, $T$, $\\tau_{ref}$, $\\sigma_{V}$), to narrow down the range of parameters that roughly matches key observational constraints, such as low median firing rates ($\u223c5$ Hz), as found in cortex (Hrom\u00e1dka et al., 2008; Wohrer et al., 2013; Figure 5B), and coefficients of variation of interspike intervals close to one for each neuron, corresponding to Poisson-like spike statistics (Figure 5C). Appendix 1\u2014table 1 displays the range of parameters used to simulate baseline and perturbed networks.\n\n### Input signal\n\nWe used two different types of inputs throughout our simulations. The results shown in Figure 4 and Appendix 1\u2014figure 5 are for a circular, 2-dimensional signal,\n\n$$\nx(t)=(asin\u2061(\\omegat),acos\u2061(\\omegat))^{T},\n$$\n\nwith constant amplitude $a$ and constant frequency $\\omega$.\n\nFor all other simulations shown in figure panels, the input signal was a constant signal with additive noise. More precisely, for each trial, we sampled a single point in input space from an $M$-dimensional Gaussian distribution,\n\n$$\nx_{0}\u223cN(0,\\sigma_{x}^{2}I).\n$$\n\nThe input signal ramps linearly from zero to this point $x_{0}$ during the first 400ms. For the rest of the trial, the input to the neurons is set to slowly vary around this chosen input vector. To generate the slow variability, we sampled from an $M$-dimensional Gaussian distribution as many times as there were time steps in the rest of the trial; we then twice-filtered the samples with a moving average window of 1s for each dimension of $x$, and for each dimension of $x$ and across time, we normalized the individual slow variabilities to not exceed $\u03b7_{x}=0.5$ in magnitude. This procedure was chosen to mimic experimental trial-to-trial noise.\n\n### Metrics and network benchmarking\n\nTo compare the behavior of our networks under baseline conditions to those under the different perturbations, we need reliable measures of both coding accuracy and firing statistics. Below, we describe the measures used in this study.\n\n#### Distributions of firing rates and coefficients of variation\n\nWe measured the time-averaged firing rate for a given neuron by dividing the total number of spikes by the total duration of a trial. The coefficient of variation (CV) of a single spike train is computed as the ratio of the standard deviation of the interspike intervals (ISI) to their mean\n\n$$\nCV=\\frac{\\sigma_{ISI}}{\\mu_{ISI}}.\n$$\n\nWe recorded the full distributions of both the firing rates and CVs for a given network, pooling across neurons and different trials.\n\n#### Network performance\n\nWhen our aim was to compare the relative network performance with and without the different perturbations, we opted to use a simple Euclidean distance or L2 norm to measure the average error of each network:\n\n$$\nE=\u27e8\u2016x(t)\u2212x^(t)\u2016_{2}\u27e9_{t}.\n$$\n\nTo compute the relative performance, we divided the error of the perturbed network by the error of the equivalent, unperturbed network using the formula\n\n$$\nP=\\frac{E_{perturbed}-E_{dead}}{E_{reference}-E_{dead}},\n$$\n\nwhere $E_{dead}$ is the error of a non-functional or dead network ($x^(t)=0$ or $E_{dead}=\u27e8\u2016x(t)\u2016\u27e9_{t}$). We included this case to provide a baseline, worst-case scenario.\n\nA key limitation with most error measures is that they scale in various ways with dimensionality. This becomes an issue in Figure 5 as this hinders the comparison of errors across different signal dimensionalities. For this particular case, we chose to measure the coding errors in a dimensionality-independent way by pooling together the errors in each individual signal component, $|x_{i}-x^_{i}|$. We can then compute the median of this aggregated distribution in order to consistently compare the performance of these networks across different signal dimensionalities.\n\n#### Excitation-inhibition balance\n\nIn order to compute the EI balance of a given neuron $j$, we divided the total synaptic input throughout a given trial into its positive ($C_{j}^{+}$) and negative ($C_{j}^{-}$) components\n\n$$\nC_{j}^{+}=\\intdt(max(D_{j}^{T}(\\lambdax+x\u02d9),0)+\\sumk\\neqjmax(\u2212D_{j}^{T}D_{k}s_{k},0))\n$$\n\n\n\n$$\nC_{j}^{\u2212}=\\intdt(\u2212min(D_{j}^{T}(\\lambdax+x\u02d9),0)\u2212\\sumk\\neqjmin(\u2212D_{j}^{T}D_{k}s_{k},0)).\n$$\n\nThe normalized E-I difference bj of a neuron $j$ was then computed as\n\n$$\nb_{j}=\\frac{C_{j}^{+}-C_{j}^{-}}{C_{j}^{+}+C_{j}^{-}}.\n$$\n\nIn other words, $b_{j}=0$ if a neuron is perfectly balanced, $0<b_{j}\\leq1$ if a neuron receives more excitation than inhibition and $\u22121\\leqb_{j}<0$ if a neuron receives more inhibition than excitation.\n\n#### Benchmarking\n\nTo fully compare the behavior of the networks under baseline conditions to those under the different perturbations, we adopted the following benchmarking procedure: each simulated trial with a perturbation is compared to an otherwise identical trial without perturbation. For each trial, we generated a new network with a different random distribution of decoding weights, random input signal, and random voltage noise. These parameters were used for both the perturbed and unperturbed trial. We then applied our $M$-dimensional input signal $x$ as described above, and recorded coding error and spiking statistics for both perturbed and unperturbed trial. This procedure was repeated multiple times ($N_{trials}\\geq20$), each repetition resulting in different network connectivity, inputs, and injected current noise, and each pair of trials returning one performance value as defined above.\n\nWe choose this benchmarking procedure to sample the space of input signals in an unbiased way. This ensures that network performance is not accidentally dominated by a perfect match, or mismatch, between the fixed decoding weights and a given random input. Particularly bad mismatches may still lead to high decoding errors, but because our error measure considers the median response, these extremes do not bias our benchmarking procedure.\n\n#### Number of simulations\n\nFigure 1D shows a single trial. Figure 5 shows a total of 29,400 trials. Figure 6E and F show 16,830 pairs of trials, and Appendix 1\u2014figure 4 shows 4996 pairs. Panels Figure 6G and H consist of 840 trials each. Figure 7G show 18,000 pairs of trials, or 200 pairs per data point, and Appendix 1\u2014figure 5 shows 1 perturbed trial per row.\n\n### Numerical implementation\n\nWe numerically solve the differential equations (Equation 8) describing the temporal evolution of membrane voltage by the forward Euler-Maruyama method. Because of finite simulation time steps, more than one neural threshold may be crossed during the same step, and more than one neuron may thus be eligible to spike. This problem can be circumvented by decreasing the time step, which, however, increases simulation time. To avoid this tradeoff, we essentially slow down time whenever multiple neurons crossed threshold (Appendix 1\u2014algorithm 1). Note that when considering finite delays $\\theta$, delayed lateral recurrence arrives only at the end of each time step (Appendix 1\u2014algorithm 2).\n\nWe implemented these methods in both MATLAB and Python, and both sets of code can be used interchangeably. Our code for simulation, analysis and figure generation, as well as sample data files can be found at https://github.com/machenslab/boundingbox (copy archived at swh:1:rev:d9ce2cf52e833ecf67dccc796bd8c9dc505f2e00, Calaim, 2022), under a Creative Commons CC BY-NC-SA 4.0 license.\n\n### Iterative adaptation of parameters to avoid ping-pong\n\nIn networks with delays, we can avoid ping-pong either by increasing box size or by removing a number of strongest excitatory connections. In both cases, we compute the minimum required value offline using an iterative procedure (Appendix 1\u2014algorithm 3). Note that trials must be sufficiently long to avoid false-negative reports of ping-pong.\n\n### Movie visualization\n\nAll movies (Videos 1 and 2) were produced in Python, with the exception of the three-dimensional visualization of a polytope, for which we used the bensolve toolbox for MATLAB (L\u00f6hne and Wei\u00dfing, 2017).\n\n### FORCE-learning rate network and perturbations\n\nWe trained a recurrent network of 1000 rate units using FORCE learning (Sussillo and Abbott, 2009) in the absence of any perturbation. The network dynamics are described by the following system of differential equations:\n\n$$\n\\tau\\frac{dx}{dt}=\u2212x+gJr+J_{z}z\n$$\n\nwhere $r=tanh\u2061(x)$ corresponds to the firing rates, and where $\\tau=10$ms, $g=1.5$, and $J$ is a sparse random matrix whose elements are zero with probability $1-p$. Each nonzero element is drawn independently from a Gaussian distribution with zero mean and variance equal to $(1000p)^{\u22121}$. The entries of the matrix $J_{z}$ are uniformly distributed from \u20131 to 1.\n\nWe then applied one of three perturbations to the fully trained network: neuron death, rate noise, or synaptic perturbation. We emulated neural loss by setting the respective neural activities to zero, i.e. $x_{i}=0$. The rate noise perturbation was simulated by injecting white noise within the input-output non-linearity and its magnitude was chosen so that fluctuations on the network activities were of the same order of magnitude as the ones simulated for coordinated spiking networks. Finally, we simulated synaptic perturbations following the same procedure and magnitude as for the coordinated spiking networks, i.e., each element of the recurrent connectivity matrix was changed randomly up to 2.5% of its value.\n",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "09a0b3b8-700b-4b4e-bcab-8a0e0e158bb2",
+      "submission_id": "a26ccb0c-a786-4788-8fa2-337c094ed810",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Markus Meister, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73276.sa0](https://doi.org/10.7554/eLife.73276.sa0)\n\nThe article introduces a geometrical interpretation for the dynamics and function of certain spiking networks, based on the earlier work of Machens and Deneve. Given that spiking networks are notoriously hard to understand, the approach could prove useful for many computational neuroscientists. Here, that visualization tool serves to assess how fragile the network is to perturbation of its parameters, such as neuronal death, or spurious noise in excitation and inhibition.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Markus Meister, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73276.sa1](https://doi.org/10.7554/eLife.73276.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Robustness in spiking networks: a geometric perspective\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Markus Meister as Reviewing Editor and Reviewer #3, and the evaluation has been overseen by Michael Frank as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Brent Doiron (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nDomain of applicability:\n\n1. The authors analyze a very specific network, with carefully tuned feedback designed for a specific cost function (Equation 3). Do such tuned networks exist in Nature? The reader would benefit from knowing what the domain of applicability really is.\n\n2. How would the framework generalize to settings other than an auto-encoder, e.g., for the dynamical systems approach in Boerlin et al.?\n\nConsistency of the bounding box picture:\n\n3. A central assumption of the framework is a coherence between the readout from the network and the dynamics and connectivity of the network. This allows the bounding box to follow the input vector around, so one can easily assess decoding errors. However, it seems that some of the perturbations break the assumptions that lead to the bounding box. For example, exciting a single neuron decreases its threshold and thereby shrinks the bounding box (Figure 3D). As the bounding box limits the error in the readout, this should mean that the error decreases. However, the opposite is the case (Figure 4A). Presumably the discrepancy arises from changing the threshold without changing the readout at the same time, so the bounding box loses its meaning. By contrast the loss of a neuron, or its inhibition, leaves the remaining network adjusted properly, so the bounding box retains its meaning. The authors should address this question, and whether the bounding box loses its meaning under some perturbations and not others.\n\n4. A related question applies to delays. Where exactly are the delays? In the readout and then the network is optimised for that? Or is the network the optimal one assuming no delays and then delays are added in the recurrent connections and/or the readout? Clarifying that will make it easier for the reader to follow the argument.\n\n5. In the section on perturbations of the reset potential: Is there again an asymmetry, e.g., do changes up or down in the optimal reset potential have very different consequences?\n\nRobustness claims:\n\n6. There are frequent comparisons between networks with few neurons and networks with many neurons. The idea that networks with more neurons are more robust seems kind of obvious. But the authors analyze a very specific network tuned for coordinated redundancy (Equation 3). How does that network compare to one with the same number of neurons but no coordinated redundancy? This would seem a more interesting comparison than varying the number of neurons.\n\n7. Intuitively one might expect that the performance is fragile to changes in the recurrent coupling, since the decoding vector is tied to the feedforward and recurrent weights (Equation 10). Because of this the claimed robustness to perturbations in synaptic weight seems surprising. Is the 'synapse scaling factor' in Figure 6G,H the parameter \\\u03b4_{\\Omega} in Equation 17? The way it is defined it is the maximal change, however most synapses are perturbed to a much smaller extent. Also, for \\\u03b4 approaching 0.2 the performance only drops by 20% (Figure 6G). However, for such large \\\u03b4's the firing rates in the network seem unreasonably high (Figure 6H), suggesting it no longer performs efficiently. Overall it is hard to judge from the current presentation how robust the network is to synaptic perturbation. Perhaps the firing rates could be bounded, or the performance penalized for using very high rates?\n\nRelation to plasticity:\n\n8. Prior work (e.g. Bourdoukan 2012) proposed a Hebbian learning process that could tune up such a network automatically. If this plasticity is \"always on\" how would it respond to the various perturbations being considered? How might that contribute to robustness on a longer time scale? How does the size/shape of the bounding box depend on the parameters of the learning rule? Can one get looser and tighter boxes, as needed here for certain types of robustness?\n",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ddb4b6d0-1706-48fb-ac78-789d98f8befc",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C1",
+      "claim": "Neural systems are remarkably robust against various perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural systems are remarkably robust against various perturbations, a phenomenon that still requires a clear explanation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation in the abstract without specific data in this manuscript, but is supported by citations to prior work throughout the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "ec13937f-8106-4229-bf03-6a5db48ff067",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C2",
+      "claim": "Neurons' subthreshold voltages are confined to a convex region in a lower-dimensional voltage subspace called a 'bounding box'.",
+      "claim_type": "EXPLICIT",
+      "source": "We study spiking networks that generate low-dimensional representations, and we show that the neurons' subthreshold voltages are confined to a convex region in a lower-dimensional voltage subspace, which we call a 'bounding box'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary theoretical finding demonstrated through mathematical derivation and simulation throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "1c8d114c-92ad-435e-8724-be7986c0f253",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C3",
+      "claim": "Changes in network parameters can be understood as deformations of the bounding box.",
+      "claim_type": "EXPLICIT",
+      "source": "Any changes in network parameters (such as number of neurons, dimensionality of inputs, firing thresholds, synaptic weights, or transmission delays) can all be understood as deformations of this bounding box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through multiple simulations and visualizations showing how different perturbations affect the bounding box geometry.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "ca819f1b-e229-4ff9-91f6-b346174b926a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C4",
+      "claim": "Functionality is preserved as long as perturbations do not destroy the integrity of the bounding box.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these insights, we show that functionality is preserved as long as perturbations do not destroy the integrity of the bounding box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations showing network performance under various perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "9b0b5f64-c12b-49bf-afbf-b108315f51f7",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C5",
+      "claim": "Low-dimensional representations, heterogeneity of tuning, and precise negative feedback are key principles underlying robustness in these networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the principles underlying robustness in these networks \u2014 low-dimensional representations, heterogeneity of tuning, and precise negative feedback \u2014 may be key to understanding the robustness of neural systems at the circuit level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis and simulations presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "393e5cba-3661-4edf-995f-49ac2c536eec",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C6",
+      "claim": "Neural systems withstand damage or external disturbances, as evident from lesion studies or neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural systems likewise withstand a certain amount of damage or external disturbances, which is evident from lesion studies or neurodegenerative diseases (Morrison and Hof, 1997; Bredesen et al., 2006; Palop et al., 2006), as well as from perturbation experiments (Wolff and \u00d6lveczky, 2018; Li et al., 2016; Trouche et al., 2016; Fetsch et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "22f30007-d2f2-4c3f-a767-0c9cf00a9f3c",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C7",
+      "claim": "Most models of neural networks lose functionality rapidly when faced with partial damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, most models of neural networks, when faced with partial damage, lose their functionality quite rapidly (Figure 1A\u2013C; Seung et al., 2000; Koulakov et al., 2002; Li et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by both citations to prior work and data shown in Figure 1C demonstrating rapid performance decline in a FORCE-learning network.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "83b5b00d-625f-471f-8e7c-4b61487fb71d",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C10",
+      "claim": "Robustness has been attributed to single-cell mechanisms that stabilize dynamics against temperature fluctuations in the stomatogastric ganglion of crustaceans.",
+      "claim_type": "EXPLICIT",
+      "source": "Robustness has sometimes been attributed to various single-cell mechanisms, such as those that stabilize the dynamics of the stomatogastric ganglion of crustaceans against temperature fluctuations (O'Leary and Marder, 2016; Haddad and Marder, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "b34066bb-d824-4b34-bce8-b0c11adf3c0b",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C11",
+      "claim": "Robustness has been attributed to single-cell mechanisms in the oculomotor integrator against instabilities in positive feedback loops.",
+      "claim_type": "EXPLICIT",
+      "source": "or the oculomotor integrator against instabilities in positive feedback loops (Koulakov et al., 2002; Goldman et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "2e827b62-d13d-4fcb-947f-af5035f0cfd4",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C12",
+      "claim": "Robustness has been tied to excitatory-inhibitory balance of synaptic inputs by linking such balance with the efficiency of neural population codes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the circuit-level, robustness has been tied to the excitatory-inhibitory (EI) balance of synaptic inputs, either by linking such balance with the efficiency of neural population codes (Boerlin et al., 2013; Bourdoukan et al., 2012; Barrett et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "3de5061d-ff72-4770-a3b1-8c9ed0a47b05",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C13",
+      "claim": "Excitatory-inhibitory balance has been used as a corrective feedback for integrator models.",
+      "claim_type": "EXPLICIT",
+      "source": "or by using it as a corrective feedback for integrator models (Lim and Goldman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "f5b5a8f0-c675-4a0b-a430-45a5c9314f31",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C14",
+      "claim": "Spiking networks with coordinated firing can maintain functional representations by re-balancing when faced with perturbations such as neuron loss.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding spiking networks can maintain functional representations of their inputs by re-balancing when faced with perturbations such as neuron loss (Barrett et al., 2016; Lim and Goldman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "762b35b1-7a23-4153-8846-e6587014c326",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C15",
+      "claim": "Networks can be robust without exhibiting any excitatory-inhibitory balance.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that the resulting robustness mechanisms include the balanced regime, but are not limited to it. Indeed, networks can be robust without exhibiting any EI balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 4B showing a low-redundancy network that is robust but not balanced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "319576d4-aaec-46ed-b0df-b788465493f8",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C16",
+      "claim": "Robust networks are insensitive to broad inhibitory perturbations but sensitive to small excitatory perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we predict a surprising asymmetry to perturbations: we find that robust networks are insensitive to broad inhibitory perturbations, yet quite sensitive to small excitatory perturbations, even if the latter are restricted to single neurons in large networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "ac73a6a2-d135-4215-a642-3826c61141e9",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C17",
+      "claim": "Animals can recognize exceedingly small, excitatory perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "This heightened sensitivity may explain the ability of animals to recognize exceedingly small, excitatory perturbations (Houweling and Brecht, 2008; Huber et al., 2008; Dalgleish et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "c5874c2a-76ca-4b42-a7f1-09233a0a9269",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C18",
+      "claim": "Low-dimensional representations have been observed in many brain circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Such redundant representations have been observed in many brain circuits (Saxena and Cunningham, 2019; Keemink and Machens, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental and review work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "ed533a04-836b-4e95-afd4-a60a7b5b9508",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C19",
+      "claim": "Low-dimensional representations are an integral part of most mid- to large-scale network models.",
+      "claim_type": "EXPLICIT",
+      "source": "and are an integral part of most mid- to large-scale network models (Vogels et al., 2005; Eliasmith and Anderson, 2004; Barak, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "4203ad4d-ad30-4431-935c-6c99d14c930a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C20",
+      "claim": "Low-dimensional representations do not per se guarantee robustness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they do not per se guarantee robustness as shown in an example network in Figure 1C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "f9125550-ae14-42b2-971d-ef5fe9d4173a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C21",
+      "claim": "In a layer of independent feature detectors, perturbing a set of neurons has an effect on the representation that is directly proportional to the number of neurons perturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in such a layer, perturbing a set of neurons by exciting or inhibiting them will have an effect on the representation that is directly proportional to the number of neurons perturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the mathematical properties of independent neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "e329cd1b-c2a2-498b-8a0a-1dce80c0b371",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C22",
+      "claim": "Passive redundancy leads to a gradual decline of functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Passive redundancy therefore leads to a gradual decline of functionality (Figure 1B) or a gradual response of a system to any perturbation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated conceptually in Figure 1B and follows from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "0b22d66c-1395-45f4-8303-23e455924f99",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C23",
+      "claim": "To create robustness to perturbations, neurons cannot act independently, but rather need to coordinate their firing.",
+      "claim_type": "EXPLICIT",
+      "source": "To create robustness to perturbations, neurons cannot act independently, but rather need to coordinate their firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key theoretical insight derived from the analysis and demonstrated through simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "bb7fcd9b-dbd6-4d24-87b7-14d65c143b35",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C24",
+      "claim": "A neuron's voltage measures the difference between the weighted input signals and weighted readouts.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuron's voltage measures the difference between the weighted input signals and weighted readouts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the schematic diagram in Figure 2C and derived mathematically in Equation 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "97a63702-d9bd-4bdb-a9a2-21a9321e7de8",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C25",
+      "claim": "The maximum coding error is limited by the size of the error bounding box.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum coding error is limited by the size of the error bounding box, simply because the readout cannot deviate from the signal beyond the borders of the box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows directly from the mathematical definition of the bounding box.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "fe78165b-4653-4821-bafb-060a50f61f69",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C26",
+      "claim": "The size of the bounding box is determined by the neurons' thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of the box is determined by the neurons' thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the mathematical definition of the bounding box in Equation 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "b2133594-6066-4b84-86c6-3c100231eea7",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C27",
+      "claim": "When the bounding box becomes wider, the systematic bias increases.",
+      "claim_type": "EXPLICIT",
+      "source": "As the box becomes wider, the systematic bias increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Appendix 1\u2014figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "c4c5e1eb-701e-4924-976d-2746930fa02b",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C28",
+      "claim": "If the bounding box becomes very narrow, the readout can eventually jump beyond the boundary of the opposite side.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, if the box becomes very narrow, the readout can eventually jump beyond the boundary of the opposite side, thereby crossing the threshold(s) of oppositely tuned neurons (see also Appendix 1\u2014figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Appendix 1\u2014figure 1B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "85d6525a-f693-4594-a0dc-89dcf758314e",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C29",
+      "claim": "The death of a single neuron is equivalent to the removal of its corresponding face from the bounding box.",
+      "claim_type": "EXPLICIT",
+      "source": "Geometrically, the death of a neuron is equivalent to the removal of its corresponding face from the bounding box (Figure 3A and B, and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 3A and B and Video 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "e7ff2c02-e45c-43b2-88af-7edb2573f9ac",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C30",
+      "claim": "With coordinated redundancy, the removal of a single neuron has an almost imperceptible impact on the shape of the bounding box.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, with coordinated redundancy, the removal of a single neuron has an almost imperceptible impact on the shape of the bounding box (Figure 3B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "04252568-1748-41c1-96c8-f10a234162e4",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C31",
+      "claim": "A change in excitability is equivalent to a change in the neuron's threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a change could come about through an experimentally injected current, for example, via patch clamp or optogenetics, or because of intrinsic plasticity. In either case, a change in excitability is equivalent to a change in the neuron's threshold (see Materials and methods, 'Perturbations').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "8421ad43-b658-4cf2-bf33-01d2be98a348",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C32",
+      "claim": "An inhibitory perturbation leads to an outward shift of the neuron's threshold, and an excitatory perturbation leads to an inward shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the bounding box picture, an inhibitory perturbation or decrease in excitability leads to an outward shift of the neuron's threshold, and an excitatory perturbation or increase in excitability leads to an inward shift (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 3C and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "02ca6a10-fa21-4557-ae90-4b374d3c4918",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C33",
+      "claim": "With coordinated redundancy, an excitatory perturbation shrinks the box while an inhibitory perturbation does not affect the system.",
+      "claim_type": "EXPLICIT",
+      "source": "With coordinated redundancy, inhibitory and excitatory perturbations do not have opposite effects. Whereas an excitatory perturbation has an effect equivalent in size to a non-redundant system, as the threshold that is pushed inwards shrinks the box (Figure 3D, left), an inhibitory perturbation does not affect the system at all, because the outward shift of the threshold is compensated by the presence of other neurons (Figure 3D, right, see also Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation data shown in Figure 3D and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "1a23280d-d38d-495d-aaec-aa6d279a54e0",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C34",
+      "claim": "Coordinated redundancy endows the system with robustness against perturbations that act inhibitorily on the neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we observe that coordinated redundancy endows the system with robustness against perturbations that act inhibitorily on the neurons, such as neuron death or increases in spiking thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "d2f67dbc-2064-41e3-a245-d85bc6bbdbbb",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C35",
+      "claim": "Coordinated redundancy makes the system highly sensitive towards any excitatory perturbations or decreases in spiking thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "However, coordinated redundancy also makes the system highly sensitive towards any excitatory perturbations or decreases in spiking thresholds. Indeed, perturbing only a single neuron is sufficient to generate a change in the readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "d0649b89-2e61-4238-8a2b-3b07e7951df4",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C36",
+      "claim": "Animals can detect excitatory currents injected into a few pyramidal cells in somatosensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, animals can detect excitatory currents injected into a few pyramidal cells in somatosensory cortex (Houweling and Brecht, 2008; Huber et al., 2008; Dalgleish et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "4572b232-e970-4125-a066-ee9064fd68b4",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C37",
+      "claim": "No study has shown that cortical systems are similarly sensitive to inhibitory perturbations in one or a few neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, no study has shown that cortical systems are similarly sensitive to inhibitory perturbations in one or a few neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of evidence in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "c6ea494a-8d37-48f3-a54c-d4dce6eb2e14",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C38",
+      "claim": "Several studies have shown that neural systems can compensate for inhibitory perturbations in a sizeable fraction of pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, several studies have shown that neural systems can compensate for inhibitory perturbations in a sizeable fraction of pyramidal cells (Li et al., 2016; Fetsch et al., 2018; Trouche et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "592a41e0-fcc9-4bdf-8f74-075093d9e124",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C39",
+      "claim": "When a single neuron is excited, its threshold moves inwards and occludes the thresholds of neighboring neurons, causing them to stop firing.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, when we excite a single neuron, its threshold moves inwards (Figure 3D) and occludes the thresholds of the neighboring neurons, that is, neurons with similar selectivity. Since the readout can no longer reach these neurons, they stop firing, as shown in a simulation of the network in Figure 4A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "a25f9923-bb66-42af-a584-d72b46337d00",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C40",
+      "claim": "When neurons are inhibited, their thresholds become hidden and surrounding neurons fire more to compensate.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, if we inhibit one or more neurons, their thresholds become hidden and they no longer participate in containing the readout (Figure 3D\u2013F). As a consequence, the surrounding neurons have to pick up the bill and fire more, so that their firing rates will increase, as shown in Figure 4A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "9d6852f5-a2b3-4458-b97b-346494a505b8",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C41",
+      "claim": "Excitatory-inhibitory balance occurs in networks that are sufficiently redundant, but not in networks with no or low redundancy.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we see that EI balance occurs in networks that are sufficiently redundant, but not in networks with no or low redundancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "273d937e-6f88-496d-a495-5030b5b6bc3e",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C42",
+      "claim": "Networks with low redundancy have a measure of robustness even without excitatory-inhibitory balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, even networks with low redundancy have a measure of robustness: for instance, the network in Figure 4B is robust against the loss of one neuron.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the analysis of the network shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "ea4d83eb-4eb9-48e5-ad32-aa0b5b5a267c",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C43",
+      "claim": "Robustness extends beyond the regime of excitatory-inhibitory balance.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous work has suggested that networks recover functionality when perturbed by dynamically re-establishing EI balance (Lim and Goldman, 2013; Boerlin et al., 2013; Barrett et al., 2016), our considerations here show that robustness extends beyond the regime of EI balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "152fbd3b-37a8-4755-9f3c-f678146e5c82",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C44",
+      "claim": "For three-dimensional input signals, the threshold of each neuron becomes a plane, and the bounding box becomes a polyhedron.",
+      "claim_type": "EXPLICIT",
+      "source": "For three-dimensional input signals, the threshold of each neuron becomes a plane, and the bounding box becomes a polyhedron (see also Appendix 1\u2014figure 3A and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Appendix 1\u2014figure 3A and Video 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "36810f40-0bd4-44fb-b606-cbeef5c2f924",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C46",
+      "claim": "Even in high dimensions, networks are robust against neuron loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 shows that, even in high dimensions, networks are robust against such perturbations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "12772b12-b506-46d6-b147-b20d51345c66",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C48",
+      "claim": "Decreasing redundancy leads to higher firing rates and more regular firing.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore observe that decreasing redundancy, leads to higher firing rates (Figure 5B) and more regular firing, or lower CVs (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "35315eba-356c-461d-aed8-348ecbb80d5a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C49",
+      "claim": "When neurons are killed, the neural code becomes less redundant, and the spike patterns of individual neurons lose some of their apparent randomness.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, when we kill neurons, the neural code becomes less redundant, and the spike patterns of individual neurons lose some of their apparent randomness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "866cd81a-880a-4333-8cba-509ef2f5919a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C50",
+      "claim": "Networks with some redundancy remain robust to partial, inhibitory perturbations when scaled up, even though the firing statistics of the neurons change.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, when we scale up, networks with some redundancy remain robust to partial, inhibitory perturbations, even though the firing statistics of the neurons change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the simulations shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "a1f76e4d-548d-4d00-b033-3697edd0089e",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C51",
+      "claim": "Voltage noise can be visualized as random movements of all of the faces of the bounding box around their unperturbed positions.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to spike generation, the resulting voltage fluctuations are thus equivalent to fluctuations of the threshold, or random movements of all of the faces of the bounding box around their unperturbed positions (Figure 6A, see also Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 6A and Video 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "97736c05-67d9-4f68-98f1-70741bbb7a7c",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C54",
+      "claim": "More redundant networks may require a better control or suppression of intrinsic sources of noise than less redundant networks.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, our results suggest that more redundant networks may require a better control or suppression of intrinsic sources of noise than less redundant networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "ae120e1c-5f08-4047-895f-fe5357069e2d",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C55",
+      "claim": "A mistuned synapse causes a temporary change in the threshold of the postsynaptic neuron whenever a presynaptic spike arrives.",
+      "claim_type": "EXPLICIT",
+      "source": "From a geometric perspective, a mistuned synapse causes a temporary change in the threshold of the postsynaptic neuron whenever a presynaptic spike arrives (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "5061d86a-daea-4af9-a481-2ea86bd24125",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C56",
+      "claim": "Random synaptic failures in excitatory synapses (but not inhibitory synapses) leave the bounding box functionally intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, random synaptic failures in excitatory synapses (but not inhibitory synapses) leave the bounding box functionally intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the asymmetric effects of excitatory and inhibitory perturbations on the bounding box.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "352ed042-838c-425b-8775-92eeeb51e693",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C57",
+      "claim": "More redundant networks are typically more vulnerable to random synaptic mistuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find that more redundant networks (with consequently more synapses) are typically more vulnerable to these perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulation data shown in Figure 6G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "3fd6f374-b8aa-4fcf-8e65-7c311cc2c11a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C58",
+      "claim": "Networks which coordinate their spiking are extremely sensitive to delays when neurons are similarly tuned.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that networks which coordinate their spiking as suggested here are extremely sensitive to delays when neurons are similarly tuned (Chalk et al., 2016; Rull\u00e1n Bux\u00f3 and Pillow, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "1240e547-0d56-42f2-974d-70be78ac852a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C59",
+      "claim": "When spikes are delayed, voltages no longer reflect an accurate estimate of the coding error.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when spikes are delayed, voltages no longer reflect an accurate estimate of the coding error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the mathematical analysis of delayed networks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "6ef65570-654b-460a-a6e7-de10fb3f8b41",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C60",
+      "claim": "For neurons with identical decoders, delays can lead to uninformed spikes that actually increase the coding error.",
+      "claim_type": "EXPLICIT",
+      "source": "For neurons with identical decoders, delays can lead to uninformed spikes that actually increase the coding error (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 7A and B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "6f78f1d8-5e0c-4da0-90ae-0c98284ecf66",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C61",
+      "claim": "The impact of synaptic delays depends on the angles of neighbouring neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first problem, we note that the impact of synaptic delays depends on the angles of neighbouring neurons, as shown in Figure 7C and D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 7C and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "5802cc0c-4d98-473f-89d5-544384c0d9c8",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C62",
+      "claim": "For higher signal dimensions and fixed redundancy, the angles between neighbouring neurons become more orthogonal, which alleviates the detrimental effect of delays.",
+      "claim_type": "EXPLICIT",
+      "source": "For higher signal dimensions and fixed redundancy, these angles become more orthogonal (Appendix 1\u2014figure 3D), which alleviates the detrimental effect of delays.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through analysis shown in Appendix 1\u2014figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "c9e0958d-4a56-4077-8697-68189b4cb52b",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C63",
+      "claim": "Eliminating excitatory connections between pairs of neurons that are practically antipodes temporarily widens the box exactly in the direction in which the readout overshoots.",
+      "claim_type": "EXPLICIT",
+      "source": "A better solution is therefore to 'widen' the box only temporarily. For instance, if we eliminate excitatory connections between pairs of neurons that are practically antipodes, we are setting the respective synapses to zero. This change in the network connectivity can be understood as a specific and targeted synaptic perturbation (Figure 6D), whose effect is to expand the thresholds of a neuron's antipodes whenever it fires a spike, thereby temporarily widening the box exactly in the direction in which the readout overshoots (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 7F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "06eba9ab-c4d0-426b-a335-f3a5e46d6e95",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C64",
+      "claim": "For higher dimensional systems and biologically plausible delays, performance of networks with delays reaches the performance of networks without delays when excitatory connections between antipodes are removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for higher dimensional systems and biologically plausible delays (1\u20132 ms), performance of networks with delays reaches the performance of networks without delays (Appendix 1\u2014figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation data shown in Appendix 1\u2014figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "adafb573-a6a2-4072-87a6-cc9aee8cc006",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C65",
+      "claim": "The bounding box provides a useful tool even if networks are endowed with slower connections to perform linear or non-linear computations.",
+      "claim_type": "EXPLICIT",
+      "source": "The bounding box provides a useful tool even if we endow the networks with a set of slower connections to perform linear or non-linear computations (Boerlin et al., 2013; Savin and Deneve, 2014; Thalmeier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation shown in Figure 1D and explained in the Materials and methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "24d89f50-3d3c-476f-a02d-9485207e997d",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C66",
+      "claim": "The extra currents generated by slow recurrent connections can be seen as a perturbation of the bounding box thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the extra currents generated by the slow recurrent connections can be seen as a perturbation of the bounding box thresholds. This perturbation shifts the bounding box in the space of readouts as illustrated in Appendix 1\u2014figure 6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Appendix 1\u2014figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "0574ffbc-2696-4d44-9900-ca1b822e5150",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C67",
+      "claim": "The bounding box is a spiking version of classical sparse coding models of V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, it is worthwhile to point out that the bounding box is also a spiking version of classical sparse coding models of V1 (Olshausen and Field, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical connection made to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "746cac75-54f1-442c-b535-e9dfae04471d",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C68",
+      "claim": "These networks can explain various perturbation experiments in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous work has demonstrated that these networks can explain various perturbation experiments in V1 (Barrett et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "0f7f9ae0-dfd8-4a38-a2c9-5d542c16749a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C69",
+      "claim": "Negative feedback, heterogeneity of components, and modularity or 'bow-tie' architectures are overarching principles that allow systems to be robust.",
+      "claim_type": "EXPLICIT",
+      "source": "Several overarching principles have been identified that allow systems to be robust (Csete and Doyle, 2002; Kitano, 2004; Whitacre, 2012; F\u00e9lix and Barkoulas, 2015). These include (1) negative feedback, to correct perturbations and recover functionality; (2) heterogeneity of components, to avoid common modes of failure; and (3) modularity or 'bow-tie' architectures, to create alternative pathways or solutions in the case of a perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on robustness principles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "1354c2e2-5528-4523-8672-90742ac5f94f",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C70",
+      "claim": "Making a system robust against certain perturbations almost always involves a tradeoff, in that the system becomes fragile against other perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, (4) making a system robust against certain perturbations almost always involves a tradeoff, in that the system becomes fragile against other perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle of robustness discussed in the context of the networks studied here.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "6a182c60-8e66-4041-9848-0d95011242ca",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C71",
+      "claim": "Negative feedback exists through extensive lateral connectivity and is precisely tuned such that it automatically corrects any perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "These core themes can also be found in the networks we studied here. (1) Negative feedback exists through extensive lateral connectivity (or, alternatively, through actual feedback of the readout, as in Figure 2F), and is precisely tuned such that it automatically corrects any perturbations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the mathematical derivation and simulations throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "dde4fd29-1688-44ca-bf82-cec977dae8b7",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C72",
+      "claim": "Individual neurons are heterogeneous and thereby allow the system to remain functional for all types of input signals.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Individual neurons are heterogeneous and thereby allow the system (as visualized by the bounding box) to remain functional for all types of input signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the analysis of networks with randomly distributed decoding vectors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "69e4d38f-dca3-4322-8a12-b99d7505c466",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C73",
+      "claim": "Since neuron space is always larger than signal space, there are many alternative neural codes that give rise to the same linear readout, embodying a bow-tie architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Since neuron space is always larger than signal space, there are many alternative neural codes ('alternative pathways') that give rise to the same linear readout, thus embodying a bow-tie architecture whose core is the signaling space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the mathematical structure of the networks where N > M.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "eb21dd8c-660c-4398-87f5-03f1490c4c7a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C74",
+      "claim": "The networks are fragile against any perturbation that leads to a shrinking of the box.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) Furthermore, the networks are fragile against any perturbation that leads to a shrinking of the box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations showing the effects of excitatory perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "67129b1e-2c2f-4c05-810d-3f92fb9b31be",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C75",
+      "claim": "This fragility may become more relevant if a system becomes more redundant.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, this fragility may become more relevant if a system becomes more redundant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations showing increased sensitivity to noise in high-redundancy networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "f0dc6d08-ae40-4c3d-bf64-af87a4fa2b46",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C76",
+      "claim": "Coordinated redundancy allows the construction of robust sub-circuits that can self-correct problems instead of passing them on.",
+      "claim_type": "EXPLICIT",
+      "source": "Coordinated redundancy allows the construction of robust sub-circuits, that can self-correct problems instead of passing them on, so that downstream networks remain unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the theoretical analysis and simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "875077cb-44bd-4667-bb39-04852b1371ee",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C77",
+      "claim": "Networks can be robust without exhibiting any excitatory-inhibitory balance, and networks can be made robust by generalizing the connectivities or abandoning the idea that the readout must match the input.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations remain correct even if we move beyond the simple autoencoder networks that we have studied here. Indeed, we could generalize the connectivities we consider or abandon the idea that the readout must match the input without changing the robustness of the networks (see Materials and methods, 'Coordinated spiking and the bounding box').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "bc570ff5-e1ea-4923-ad3f-8945443416e9",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C78",
+      "claim": "A true 'fix' of the ping-pong problem can only be achieved if neurons with opposite decoder weights are prohibited.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a true 'fix' of this problem can only be achieved if neurons with opposite decoder weights (which are connected through excitatory connections) are prohibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of networks with delays.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "e707182f-4521-42c7-9119-4187df6d5f29",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C79",
+      "claim": "Prohibiting neurons with opposite decoder weights would break the symmetric treatment of excitatory and inhibitory connections, violating Dale's law.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a change would break the symmetric treatment of excitatory and inhibitory connections, which causes neurons to both excite and inhibit different downstream partners, thereby violating Dale's law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the mathematical structure of the connectivity matrix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "6d01f344-4d8a-4f07-b4b9-844ee90a9b65",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C80",
+      "claim": "Continuous attractors are structurally unstable, in that even small perturbations in single neurons can lead to rapid dynamic drifts.",
+      "claim_type": "EXPLICIT",
+      "source": "Such continuous attractors are structurally unstable, in that even small perturbations in single neurons can lead to rapid dynamic drifts (Seung, 1996; Zhang, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "9ad1f015-5233-446b-9bac-c340703695d2",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C81",
+      "claim": "This fragility to perturbations is not observed in biological neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this fragility to perturbations is not observed in biological neural networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "da2f9574-e1da-46de-ad26-b22b7241628b",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C82",
+      "claim": "Perturbations of the single-neuron level (spiking) are uncoupled from perturbations of the population-level (readout) in the networks studied here.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, perturbations of the single-neuron level (spiking) are uncoupled from perturbations of the population-level (readout).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key theoretical insight from the analysis of the networks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "872541e4-e28e-4e58-a3ac-5f16531c2e8f",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C83",
+      "claim": "Only perturbations that manage to disturb the linear readout can impact the network attractor dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, only perturbations that manage to disturb the linear readout can impact the network attractor dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the uncoupling of single-neuron and population-level perturbations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "24bf7ae0-00bf-4977-b209-824953be7dc1",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C84",
+      "claim": "The link between a space of neural activities and a space of (latent) signals is common to all network models based on low-rank connectivities.",
+      "claim_type": "EXPLICIT",
+      "source": "This link between a space of neural activities and a space of (latent) signals is common to all network models based on low-rank connectivities (Eliasmith, 2005; Seung, 1996; Mastrogiuseppe and Ostojic, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "f542a6da-fd1e-4fa4-8810-2f8cf94e688d",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C85",
+      "claim": "The work introduces a third space, the voltage space, which represents the system's coding errors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these studies, however, and in line with (Boerlin et al., 2013), our work focuses on spiking networks and introduces a third space, the voltage space, which represents the system's coding errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key contribution of the current work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "fc40b1db-3281-4c6a-99ec-761f7836b4da",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C86",
+      "claim": "The coding errors are confined to an error bounding box.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have shown here, the coding errors are confined to an error bounding box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical derivation and simulations throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "0d385e24-b36f-4569-b51e-660947fe41dd",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "claim_id": "C87",
+      "claim": "The bounding box finds its physical manifestation in a low-dimensional subspace of a network's voltage space.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the bounding box finds its physical\u2014and in principle measurable\u2014manifestation in a low-dimensional subspace of a network's voltage space (Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Appendix 1\u2014figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b7299070-ff15-4092-b3c4-b074bf080764",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors introduce the 'bounding box' concept, showing that neurons' subthreshold voltages are confined to a convex region in a lower-dimensional voltage subspace. The neuron's voltage measures the difference between weighted input signals and weighted readouts, and the maximum coding error is limited by the size of this error bounding box, which is determined by neuronal thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C24-C26, C85-C87 collectively establish the bounding box framework through mathematical derivation (Equations 2, 7), simulation data (Figures 2, 5, Appendix figures), and theoretical analysis. The geometric visualization is consistently demonstrated across multiple network configurations and dimensionalities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "a7b6382e-a553-47d0-aa4c-0767e5dd8b81",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Network perturbations can be understood as deformations of the bounding box, and functionality is preserved as long as the box integrity is maintained. With coordinated redundancy, neuron death has minimal impact on the bounding box shape, while excitatory perturbations shrink the box and inhibitory perturbations are compensated by other neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C29-C34 are well-supported by systematic simulations in Figures 3 and Videos 1-2, showing how different perturbations (neuron death, excitability changes) affect the bounding box geometry. The asymmetric effects of excitatory vs. inhibitory perturbations are clearly demonstrated through multiple examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "291a319f-875c-4274-abb9-a4b98525ccfc",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Robust networks exhibit asymmetric sensitivity to perturbations: they are insensitive to broad inhibitory perturbations but highly sensitive to small excitatory perturbations, even in single neurons. This may explain animals' ability to detect excitatory currents injected into few cortical neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C35, C39-C40 are supported by simulations in Figures 3-4 showing the asymmetric effects. The connection to experimental observations (C36-C38) is appropriately cited, though the mechanistic link remains somewhat speculative. The bounding box framework provides a clear geometric explanation for this asymmetry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "229a337f-60db-48e1-8fb0-eadf974dc9a5",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Networks can be robust without exhibiting excitatory-inhibitory (EI) balance. EI balance occurs in sufficiently redundant networks but not in low-redundancy networks, yet even low-redundancy networks show robustness to neuron loss. Robustness extends beyond the EI balance regime.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C41-C43 are supported by simulations in Figure 4B-D showing that a low-redundancy network (N=5, M=2) is robust to single neuron loss without EI balance. This challenges prior work suggesting EI balance is necessary for robustness, though the authors appropriately acknowledge this prior work in C12-C14.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "301066d3-20a8-486e-9a52-dd783fdd98c5",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "When scaled to high dimensions, networks with coordinated redundancy remain robust to neuron loss. Decreasing redundancy leads to higher firing rates and more regular firing patterns, as the neural code becomes less redundant and spike patterns lose apparent randomness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C48-C50 are supported by systematic simulations in Figure 5 across multiple dimensionalities (M=2-100) and redundancies (\u03c1=2-50). The relationship between redundancy, firing rates, and CV is clearly demonstrated, though the interpretation of 'apparent randomness' (C49) is somewhat subjective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "a9d55c08-0b64-4867-b56f-9b7875a29ff2",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Voltage noise can be visualized as random movements of bounding box faces. More redundant networks are more vulnerable to voltage noise and synaptic mistuning, requiring better control or suppression of intrinsic noise sources than less redundant networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C54, C57 are supported by simulations in Figure 6 and Appendix 1-figure 4. The geometric interpretation is clear, and the increased vulnerability of high-redundancy networks to noise is demonstrated. However, the conclusion (C54) about biological requirements is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "26b99859-91aa-4494-89c5-3e610578aefc",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Networks with coordinated spiking are sensitive to synaptic delays, which cause voltages to no longer accurately reflect coding error. For neurons with similar tuning, delays lead to uninformed spikes. However, higher signal dimensions alleviate this problem, and removing excitatory connections between antipodal neurons can restore performance to near-undelayed levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 are supported by analysis in Figure 7 and Appendix 1-figure 5. The geometric explanation for delay effects is clear, and the proposed solutions (wider boxes, removing antipodal connections) are demonstrated. However, C58 relies on prior work citations, and the biological plausibility of the solutions requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "38d60905-b07c-4b44-ba4a-03bb72cee329",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Coordinated firing is necessary for robustness, and the underlying principles include low-dimensional representations, heterogeneity of tuning, and precise negative feedback. These principles align with general robustness principles (negative feedback, heterogeneity, bow-tie architectures, and tradeoffs), allowing construction of robust sub-circuits that self-correct problems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C5, C69-C76 synthesize the theoretical framework and connect it to general robustness principles. The claims are supported by the cumulative evidence from simulations and mathematical derivations throughout the manuscript. The connection to general principles (C69) is appropriately cited, and the specific instantiation in these networks is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "3e61d319-dea4-4832-bbb7-fb91aab94052",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neural systems are robust against perturbations, but most neural network models lose functionality rapidly when damaged. Low-dimensional representations are observed in many brain circuits and are integral to network models, but do not per se guarantee robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C7, C18-C20 establish the motivation and context. C1 and C6 are supported by citations to prior experimental work. C7 is demonstrated in Figure 1C showing rapid FORCE-learning network failure. C20 is directly demonstrated by the same figure. These claims appropriately frame the problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "0fbf15c6-470e-4e6f-adbb-7c95093cd397",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has attributed robustness to single-cell mechanisms (temperature stabilization in crustacean STG, oculomotor integrator stability) and circuit-level mechanisms (EI balance linked to efficient population codes or corrective feedback, with networks maintaining representations by re-balancing after perturbations).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 summarize prior work and are supported by appropriate citations. These claims accurately represent the literature and provide context for the current work's contributions. The authors appropriately distinguish their work from these prior approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "10a156ef-6498-4555-b435-b4f24142c96c",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In a layer of independent feature detectors (passive redundancy), perturbing neurons has an effect proportional to the number perturbed, leading to gradual decline of functionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 describe the baseline case of passive redundancy. These are theoretical predictions based on mathematical properties of independent neurons, illustrated conceptually in Figure 1B. The logic is sound and provides a clear contrast to coordinated redundancy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "f1903eff-4a34-40b1-aedd-b37c702dc770",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "When the bounding box becomes wider, systematic bias increases. If the box becomes very narrow, the readout can jump beyond the opposite boundary, crossing thresholds of oppositely tuned neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 describe edge cases of bounding box behavior, demonstrated in Appendix 1-figure 1. These are important technical details for understanding the limits of the framework, though they represent secondary findings about parameter regimes to avoid.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "ebfab1b6-8b17-422d-a2a7-f16db4f5a64a",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "For three-dimensional input signals, the threshold of each neuron becomes a plane, and the bounding box becomes a polyhedron.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 extends the 2D geometric intuition to 3D, illustrated in Appendix 1-figure 3A and Video 1. This is a straightforward mathematical extension that helps readers understand higher-dimensional cases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "50e6ed9e-5822-4821-a6cf-8235fce44f42",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A mistuned synapse causes temporary threshold changes in the postsynaptic neuron when presynaptic spikes arrive. Random synaptic failures in excitatory (but not inhibitory) synapses leave the bounding box functionally intact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 describe synaptic perturbation effects. C55 is illustrated in Figure 6D. C56 follows logically from the asymmetric effects of excitatory vs. inhibitory perturbations established earlier. These are specific predictions of the framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "c6fefef0-4b05-4280-81fa-22ccb67c46c9",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The bounding box framework extends to networks with slower connections performing computations. Extra currents from slow recurrent connections can be seen as perturbations shifting the bounding box in readout space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 show the framework generalizes beyond simple autoencoders. This is demonstrated in Figure 1D and Appendix 1-figure 6, with appropriate citations to prior work. This establishes broader applicability of the bounding box concept.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "3188c8c7-325c-4e1f-8e21-a21887480597",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The bounding box is a spiking version of classical sparse coding models of V1, and these networks can explain various V1 perturbation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 connect the framework to prior work on V1 sparse coding. C67 makes a theoretical connection to Olshausen & Field (1996), while C68 cites Barrett et al. (2016) for experimental validation. These claims appropriately position the work within the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "1111bccd-fae6-4eed-bb62-f406606f3687",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A true fix of the ping-pong problem requires prohibiting neurons with opposite decoder weights, which would violate Dale's law by breaking symmetric treatment of excitatory and inhibitory connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79 identify a fundamental limitation of the framework. While the logic is sound, this represents a theoretical constraint rather than a demonstrated solution. The authors acknowledge this is a problem for future work, and the biological implications remain unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "cc711926-ccc3-4d6a-a893-e8b51ee11da2",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Continuous attractors are structurally unstable to perturbations, but this fragility is not observed in biological networks. In the networks studied here, single-neuron perturbations are uncoupled from population-level perturbations, so only perturbations disturbing the linear readout impact attractor dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 contrast the current framework with continuous attractor models. C80-C81 cite prior work and experimental observations. C82-C83 describe a key theoretical insight of the current work. This comparison helps position the contribution relative to alternative approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "f91bf3e5-c0b5-4c71-b1f5-7663cea5abc1",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The link between neural activities and latent signals is common to all network models based on low-rank connectivities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 acknowledges commonalities with prior theoretical work, appropriately cited. This positions the current work within the broader theoretical framework of low-rank network models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "388874f2-e505-4dfd-95cb-3cd3daafb063",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The heightened sensitivity to excitatory perturbations may explain animals' ability to recognize exceedingly small excitatory perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C17 proposes a connection to experimental observations (C36) but remains speculative. While the framework predicts this sensitivity, direct experimental validation of this specific prediction is not provided. The claim is appropriately hedged with 'may explain.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    },
+    {
+      "id": "f033356f-9397-45a1-b661-318ca5e4c026",
+      "content_id": "3fb66b34-d736-4653-b883-8b316d502ef2",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Networks can be made robust by generalizing connectivities or abandoning the requirement that readout must match input, without changing robustness properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 suggests generalizations of the framework but defers details to Methods. While the authors assert these generalizations preserve robustness, limited evidence is provided in the main text. This represents a claim about the framework's extensibility rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:19:26.594923Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ec13937f-8106-4229-bf03-6a5db48ff067",
+      "result_id": "b7299070-ff15-4092-b3c4-b074bf080764"
+    },
+    {
+      "claim_id": "bb7fcd9b-dbd6-4d24-87b7-14d65c143b35",
+      "result_id": "b7299070-ff15-4092-b3c4-b074bf080764"
+    },
+    {
+      "claim_id": "97a63702-d9bd-4bdb-a9a2-21a9321e7de8",
+      "result_id": "b7299070-ff15-4092-b3c4-b074bf080764"
+    },
+    {
+      "claim_id": "fe78165b-4653-4821-bafb-060a50f61f69",
+      "result_id": "b7299070-ff15-4092-b3c4-b074bf080764"
+    },
+    {
+      "claim_id": "f542a6da-fd1e-4fa4-8810-2f8cf94e688d",
+      "result_id": "b7299070-ff15-4092-b3c4-b074bf080764"
+    },
+    {
+      "claim_id": "fc40b1db-3281-4c6a-99ec-761f7836b4da",
+      "result_id": "b7299070-ff15-4092-b3c4-b074bf080764"
+    },
+    {
+      "claim_id": "0d385e24-b36f-4569-b51e-660947fe41dd",
+      "result_id": "b7299070-ff15-4092-b3c4-b074bf080764"
+    },
+    {
+      "claim_id": "1c8d114c-92ad-435e-8724-be7986c0f253",
+      "result_id": "a7b6382e-a553-47d0-aa4c-0767e5dd8b81"
+    },
+    {
+      "claim_id": "ca819f1b-e229-4ff9-91f6-b346174b926a",
+      "result_id": "a7b6382e-a553-47d0-aa4c-0767e5dd8b81"
+    },
+    {
+      "claim_id": "85d6525a-f693-4594-a0dc-89dcf758314e",
+      "result_id": "a7b6382e-a553-47d0-aa4c-0767e5dd8b81"
+    },
+    {
+      "claim_id": "e7ff2c02-e45c-43b2-88af-7edb2573f9ac",
+      "result_id": "a7b6382e-a553-47d0-aa4c-0767e5dd8b81"
+    },
+    {
+      "claim_id": "04252568-1748-41c1-96c8-f10a234162e4",
+      "result_id": "a7b6382e-a553-47d0-aa4c-0767e5dd8b81"
+    },
+    {
+      "claim_id": "8421ad43-b658-4cf2-bf33-01d2be98a348",
+      "result_id": "a7b6382e-a553-47d0-aa4c-0767e5dd8b81"
+    },
+    {
+      "claim_id": "02ca6a10-fa21-4557-ae90-4b374d3c4918",
+      "result_id": "a7b6382e-a553-47d0-aa4c-0767e5dd8b81"
+    },
+    {
+      "claim_id": "1a23280d-d38d-495d-aaec-aa6d279a54e0",
+      "result_id": "a7b6382e-a553-47d0-aa4c-0767e5dd8b81"
+    },
+    {
+      "claim_id": "319576d4-aaec-46ed-b0df-b788465493f8",
+      "result_id": "291a319f-875c-4274-abb9-a4b98525ccfc"
+    },
+    {
+      "claim_id": "d2f67dbc-2064-41e3-a245-d85bc6bbdbbb",
+      "result_id": "291a319f-875c-4274-abb9-a4b98525ccfc"
+    },
+    {
+      "claim_id": "d0649b89-2e61-4238-8a2b-3b07e7951df4",
+      "result_id": "291a319f-875c-4274-abb9-a4b98525ccfc"
+    },
+    {
+      "claim_id": "4572b232-e970-4125-a066-ee9064fd68b4",
+      "result_id": "291a319f-875c-4274-abb9-a4b98525ccfc"
+    },
+    {
+      "claim_id": "c6ea494a-8d37-48f3-a54c-d4dce6eb2e14",
+      "result_id": "291a319f-875c-4274-abb9-a4b98525ccfc"
+    },
+    {
+      "claim_id": "592a41e0-fcc9-4bdf-8f74-075093d9e124",
+      "result_id": "291a319f-875c-4274-abb9-a4b98525ccfc"
+    },
+    {
+      "claim_id": "a25f9923-bb66-42af-a584-d72b46337d00",
+      "result_id": "291a319f-875c-4274-abb9-a4b98525ccfc"
+    },
+    {
+      "claim_id": "762b35b1-7a23-4153-8846-e6587014c326",
+      "result_id": "229a337f-60db-48e1-8fb0-eadf974dc9a5"
+    },
+    {
+      "claim_id": "9d6852f5-a2b3-4458-b97b-346494a505b8",
+      "result_id": "229a337f-60db-48e1-8fb0-eadf974dc9a5"
+    },
+    {
+      "claim_id": "273d937e-6f88-496d-a495-5030b5b6bc3e",
+      "result_id": "229a337f-60db-48e1-8fb0-eadf974dc9a5"
+    },
+    {
+      "claim_id": "ea4d83eb-4eb9-48e5-ad32-aa0b5b5a267c",
+      "result_id": "229a337f-60db-48e1-8fb0-eadf974dc9a5"
+    },
+    {
+      "claim_id": "36810f40-0bd4-44fb-b606-cbeef5c2f924",
+      "result_id": "301066d3-20a8-486e-9a52-dd783fdd98c5"
+    },
+    {
+      "claim_id": "12772b12-b506-46d6-b147-b20d51345c66",
+      "result_id": "301066d3-20a8-486e-9a52-dd783fdd98c5"
+    },
+    {
+      "claim_id": "35315eba-356c-461d-aed8-348ecbb80d5a",
+      "result_id": "301066d3-20a8-486e-9a52-dd783fdd98c5"
+    },
+    {
+      "claim_id": "866cd81a-880a-4333-8cba-509ef2f5919a",
+      "result_id": "301066d3-20a8-486e-9a52-dd783fdd98c5"
+    },
+    {
+      "claim_id": "a1f76e4d-548d-4d00-b033-3697edd0089e",
+      "result_id": "a9d55c08-0b64-4867-b56f-9b7875a29ff2"
+    },
+    {
+      "claim_id": "97736c05-67d9-4f68-98f1-70741bbb7a7c",
+      "result_id": "a9d55c08-0b64-4867-b56f-9b7875a29ff2"
+    },
+    {
+      "claim_id": "352ed042-838c-425b-8775-92eeeb51e693",
+      "result_id": "a9d55c08-0b64-4867-b56f-9b7875a29ff2"
+    },
+    {
+      "claim_id": "3fd6f374-b8aa-4fcf-8e65-7c311cc2c11a",
+      "result_id": "26b99859-91aa-4494-89c5-3e610578aefc"
+    },
+    {
+      "claim_id": "1240e547-0d56-42f2-974d-70be78ac852a",
+      "result_id": "26b99859-91aa-4494-89c5-3e610578aefc"
+    },
+    {
+      "claim_id": "6ef65570-654b-460a-a6e7-de10fb3f8b41",
+      "result_id": "26b99859-91aa-4494-89c5-3e610578aefc"
+    },
+    {
+      "claim_id": "6f78f1d8-5e0c-4da0-90ae-0c98284ecf66",
+      "result_id": "26b99859-91aa-4494-89c5-3e610578aefc"
+    },
+    {
+      "claim_id": "5802cc0c-4d98-473f-89d5-544384c0d9c8",
+      "result_id": "26b99859-91aa-4494-89c5-3e610578aefc"
+    },
+    {
+      "claim_id": "c9e0958d-4a56-4077-8697-68189b4cb52b",
+      "result_id": "26b99859-91aa-4494-89c5-3e610578aefc"
+    },
+    {
+      "claim_id": "06eba9ab-c4d0-426b-a335-f3a5e46d6e95",
+      "result_id": "26b99859-91aa-4494-89c5-3e610578aefc"
+    },
+    {
+      "claim_id": "0b22d66c-1395-45f4-8303-23e455924f99",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "9b0b5f64-c12b-49bf-afbf-b108315f51f7",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "0f7f9ae0-dfd8-4a38-a2c9-5d542c16749a",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "1354c2e2-5528-4523-8672-90742ac5f94f",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "6a182c60-8e66-4041-9848-0d95011242ca",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "dde4fd29-1688-44ca-bf82-cec977dae8b7",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "69e4d38f-dca3-4322-8a12-b99d7505c466",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "eb21dd8c-660c-4398-87f5-03f1490c4c7a",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "67129b1e-2c2f-4c05-810d-3f92fb9b31be",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "f0dc6d08-ae40-4c3d-bf64-af87a4fa2b46",
+      "result_id": "38d60905-b07c-4b44-ba4a-03bb72cee329"
+    },
+    {
+      "claim_id": "ddb4b6d0-1706-48fb-ac78-789d98f8befc",
+      "result_id": "3e61d319-dea4-4832-bbb7-fb91aab94052"
+    },
+    {
+      "claim_id": "393e5cba-3661-4edf-995f-49ac2c536eec",
+      "result_id": "3e61d319-dea4-4832-bbb7-fb91aab94052"
+    },
+    {
+      "claim_id": "22f30007-d2f2-4c3f-a767-0c9cf00a9f3c",
+      "result_id": "3e61d319-dea4-4832-bbb7-fb91aab94052"
+    },
+    {
+      "claim_id": "c5874c2a-76ca-4b42-a7f1-09233a0a9269",
+      "result_id": "3e61d319-dea4-4832-bbb7-fb91aab94052"
+    },
+    {
+      "claim_id": "ed533a04-836b-4e95-afd4-a60a7b5b9508",
+      "result_id": "3e61d319-dea4-4832-bbb7-fb91aab94052"
+    },
+    {
+      "claim_id": "4203ad4d-ad30-4431-935c-6c99d14c930a",
+      "result_id": "3e61d319-dea4-4832-bbb7-fb91aab94052"
+    },
+    {
+      "claim_id": "83b5b00d-625f-471f-8e7c-4b61487fb71d",
+      "result_id": "0fbf15c6-470e-4e6f-adbb-7c95093cd397"
+    },
+    {
+      "claim_id": "b34066bb-d824-4b34-bce8-b0c11adf3c0b",
+      "result_id": "0fbf15c6-470e-4e6f-adbb-7c95093cd397"
+    },
+    {
+      "claim_id": "2e827b62-d13d-4fcb-947f-af5035f0cfd4",
+      "result_id": "0fbf15c6-470e-4e6f-adbb-7c95093cd397"
+    },
+    {
+      "claim_id": "3de5061d-ff72-4770-a3b1-8c9ed0a47b05",
+      "result_id": "0fbf15c6-470e-4e6f-adbb-7c95093cd397"
+    },
+    {
+      "claim_id": "f5b5a8f0-c675-4a0b-a430-45a5c9314f31",
+      "result_id": "0fbf15c6-470e-4e6f-adbb-7c95093cd397"
+    },
+    {
+      "claim_id": "f9125550-ae14-42b2-971d-ef5fe9d4173a",
+      "result_id": "10a156ef-6498-4555-b435-b4f24142c96c"
+    },
+    {
+      "claim_id": "e329cd1b-c2a2-498b-8a0a-1dce80c0b371",
+      "result_id": "10a156ef-6498-4555-b435-b4f24142c96c"
+    },
+    {
+      "claim_id": "b2133594-6066-4b84-86c6-3c100231eea7",
+      "result_id": "f1903eff-4a34-40b1-aedd-b37c702dc770"
+    },
+    {
+      "claim_id": "c4c5e1eb-701e-4924-976d-2746930fa02b",
+      "result_id": "f1903eff-4a34-40b1-aedd-b37c702dc770"
+    },
+    {
+      "claim_id": "152fbd3b-37a8-4755-9f3c-f678146e5c82",
+      "result_id": "ebfab1b6-8b17-422d-a2a7-f16db4f5a64a"
+    },
+    {
+      "claim_id": "ae120e1c-5f08-4047-895f-fe5357069e2d",
+      "result_id": "50e6ed9e-5822-4821-a6cf-8235fce44f42"
+    },
+    {
+      "claim_id": "5061d86a-daea-4af9-a481-2ea86bd24125",
+      "result_id": "50e6ed9e-5822-4821-a6cf-8235fce44f42"
+    },
+    {
+      "claim_id": "adafb573-a6a2-4072-87a6-cc9aee8cc006",
+      "result_id": "c6fefef0-4b05-4280-81fa-22ccb67c46c9"
+    },
+    {
+      "claim_id": "24d89f50-3d3c-476f-a02d-9485207e997d",
+      "result_id": "c6fefef0-4b05-4280-81fa-22ccb67c46c9"
+    },
+    {
+      "claim_id": "0574ffbc-2696-4d44-9900-ca1b822e5150",
+      "result_id": "3188c8c7-325c-4e1f-8e21-a21887480597"
+    },
+    {
+      "claim_id": "746cac75-54f1-442c-b535-e9dfae04471d",
+      "result_id": "3188c8c7-325c-4e1f-8e21-a21887480597"
+    },
+    {
+      "claim_id": "bc570ff5-e1ea-4923-ad3f-8945443416e9",
+      "result_id": "1111bccd-fae6-4eed-bb62-f406606f3687"
+    },
+    {
+      "claim_id": "e707182f-4521-42c7-9119-4187df6d5f29",
+      "result_id": "1111bccd-fae6-4eed-bb62-f406606f3687"
+    },
+    {
+      "claim_id": "6d01f344-4d8a-4f07-b4b9-844ee90a9b65",
+      "result_id": "cc711926-ccc3-4d6a-a893-e8b51ee11da2"
+    },
+    {
+      "claim_id": "9ad1f015-5233-446b-9bac-c340703695d2",
+      "result_id": "cc711926-ccc3-4d6a-a893-e8b51ee11da2"
+    },
+    {
+      "claim_id": "da2f9574-e1da-46de-ad26-b22b7241628b",
+      "result_id": "cc711926-ccc3-4d6a-a893-e8b51ee11da2"
+    },
+    {
+      "claim_id": "872541e4-e28e-4e58-a3ac-5f16531c2e8f",
+      "result_id": "cc711926-ccc3-4d6a-a893-e8b51ee11da2"
+    },
+    {
+      "claim_id": "24bf7ae0-00bf-4977-b209-824953be7dc1",
+      "result_id": "f91bf3e5-c0b5-4c71-b1f5-7663cea5abc1"
+    },
+    {
+      "claim_id": "ac73a6a2-d135-4215-a642-3826c61141e9",
+      "result_id": "388874f2-e505-4dfd-95cb-3cd3daafb063"
+    },
+    {
+      "claim_id": "875077cb-44bd-4667-bb39-04852b1371ee",
+      "result_id": "f033356f-9397-45a1-b661-318ca5e4c026"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2309 @@
+{
+  "submission": {
+    "id": "fc7ffd57-9878-4ab9-952c-0fcfafb421d6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:14:07.517560Z",
+    "updated_at": "2025-12-03T20:14:07.517560Z"
+  },
+  "content": [
+    {
+      "id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "submission_id": "fc7ffd57-9878-4ab9-952c-0fcfafb421d6",
+      "content_type": "manuscript",
+      "content_text": "# The effect of weight loss following 18 months of lifestyle intervention on brain age assessed with resting-state functional connectivity\n\n## Authors\n\n- Gidon Levakov<sup>1</sup> ([ORCID: 0000-0002-5520-3556](https://orcid.org/0000-0002-5520-3556)) \u2020\n- Alon Kaplan<sup>2</sup> ([ORCID: 0000-0002-9123-8094](https://orcid.org/0000-0002-9123-8094))\n- Anat Yaskolka Meir<sup>2</sup>\n- Ehud Rinott<sup>2</sup>\n- Gal Tsaban<sup>2</sup>\n- Hila Zelicha<sup>2</sup>\n- Matthias Bl\u00fcher<sup>4</sup>\n- Uta Ceglarek<sup>4</sup>\n- Michael Stumvoll<sup>4</sup>\n- Ilan Shelef<sup>5</sup>\n- Galia Avidan<sup>6</sup> ([ORCID: 0000-0003-2293-3859](https://orcid.org/0000-0003-2293-3859))\n- Iris Shai<sup>2</sup>\n\n### Affiliations\n\n1. Department of Brain and Cognitive Sciences, Ben-Gurion University of the Negev Beer Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))\n2. The Health & Nutrition Innovative International Research Center, Faculty of Health Sciences, Ben-Gurion University of the Negev Beer Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))\n3. Department of Internal Medicine D, Chaim Sheba Medical Center Ramat-Gan Israel ([ROR:020rzx487](https://ror.org/020rzx487))\n4. Department of Medicine, University of Leipzig Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))\n5. Department of Diagnostic Imaging, Soroka Medical Center Beer Sheva Israel ([ROR:003sphj24](https://ror.org/003sphj24))\n6. Department of Psychology, Ben-Gurion University of the Negev Beer Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))\n7. Department of Nutrition, Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Obesity negatively impacts multiple bodily systems, including the central nervous system. Retrospective studies that estimated chronological age from neuroimaging have found accelerated brain aging in obesity, but it is unclear how this estimation would be affected by weight loss following a lifestyle intervention.Methods:In a sub-study of 102 participants of the Dietary Intervention Randomized Controlled Trial Polyphenols Unprocessed Study (DIRECT-PLUS) trial, we tested the effect of weight loss following 18 months of lifestyle intervention on predicted brain age based on magnetic resonance imaging (MRI)-assessed resting-state functional connectivity (RSFC). We further examined how dynamics in multiple health factors, including anthropometric measurements, blood biomarkers, and fat deposition, can account for changes in brain age.Results:To establish our method, we first demonstrated that our model could successfully predict chronological age from RSFC in three cohorts (n=291;358;102). We then found that among the DIRECT-PLUS participants, 1% of body weight loss resulted in an 8.9 months\u2019 attenuation of brain age. Attenuation of brain age was significantly associated with improved liver biomarkers, decreased liver fat, and visceral and deep subcutaneous adipose tissues after 18 months of intervention. Finally, we showed that lower consumption of processed food, sweets and beverages were associated with attenuated brain age.Conclusions:Successful weight loss following lifestyle intervention might have a beneficial effect on the trajectory of brain aging.Funding:The German Research Foundation (DFG), German Research Foundation - project number 209933838 - SFB 1052; B11, Israel Ministry of Health grant 87472511 (to I Shai); Israel Ministry of Science and Technology grant 3-13604 (to I Shai); and the California Walnuts Commission 09933838 SFB 105 (to I Shai).\n\n## Introduction\n\nBrain aging is a complex, multifaceted process with various manifestations in different periods of the human lifespan, brain regions, and imaging modalities (Jack et al., 2017; Bethlehem et al., 2022). Nevertheless, reducing this complex process to a single scalar, the predicted brain age, may capture multiple conditions and risk factors associated with deviation from the normal aging trajectory (Cole and Franke, 2017). Brain age estimation is typically done by predicting chronological age from neuroimaging data in a healthy training group of subjects and applying the fitted model to a new, unseen individual. This procedure enables estimating a measure of brain age independent of the individual\u2019s chronological age. Over-estimation of brain age, in relation to chronological age, is observed in several neurological conditions such as mild cognitive impairment, Alzheimer\u2019s disease (AD), schizophrenia, and depression (Liem et al., 2017; Koutsouleris et al., 2014; Bashyam et al., 2020), and is associated with an increase in mortality rate (Cole et al., 2018). Similarly, over-estimation of brain age was also found in obesity (Franke et al., 2014; Kolenic et al., 2018; Ronan et al., 2016), suggesting that the brain age framework may provide a powerful tool for assessing accelerated brain aging due to excessive weight. Critically, it is unclear whether dietary lifestyle interventions may have a beneficial, attenuative effect on the brain aging process.\n\nObesity is associated with multiple adverse health impacts also observed in normal aging (Salvestrini et al., 2019; Tam et al., 2020). These comorbidities of obesity and typical aging include the risk of cardiovascular disease (Park et al., 2013), inflammation (Frasca et al., 2017), type 2 diabetes (Ahima, 2009), DNA damage (Niedernhofer et al., 2018; Shimizu et al., 2014), and neurodegenerative processes (Pugazhenthi et al., 2017). The link between excessive weight and neuronal damage is likely mediated by adiposity, metabolic dysfunction, and alteration in the gut microbiome (Gupta et al., 2020; Farruggia and Small, 2019). These, in turn, promote inflammatory metabolic processes in the central nervous system (Leigh and Morris, 2020). Accordingly, reduction in gray and white matter volume (Kullmann et al., 2015; Garc\u00eda-Garc\u00eda et al., 2019), changes in brain connectivity (Parsons et al., 2022; Daoust et al., 2021), cognitive impairment (Yang et al., 2018), and the prevalence of dementia (Pedditzi et al., 2016) were all associated with midlife obesity. These anatomical (Bethlehem et al., 2022), functional (Sala-Llonch et al., 2015), and behavioral (Fjell et al., 2017) findings are also observed during normal aging. An increase in life expectancy (Chang et al., 2019) along with a sharp growth in obesity rates (Abarca-G\u00f3mez et al., 2017) elicit the need to characterize, treat, and perhaps prevent obesity-related brain aging.\n\nWe previously found that weight loss, glycemic control, lowering of blood pressure, and increment in polyphenols-rich food were associated with an attenuation in brain atrophy (Kaplan et al., 2022). Obesity is also manifested in aging-related changes in the brain\u2019s functional organization as assessed with resting-state functional connectivity (RSFC). These changes are dynamic (Honey et al., 2007) and can be observed in short time scales (Bassett et al., 2011) and thus of relevance when studying lifestyle intervention. Studies have linked obesity with decreased connectivity within the default mode network (Doucet et al., 2018; Beyer et al., 2017) and increased connectivity with the lateral orbitofrontal cortex (Parsons et al., 2022), which are also seen in normal aging (Sala-Llonch et al., 2015; Lopez et al., 2020). Longitudinal trials have reported changes in these connectivity patterns following weight reduction (McFadden et al., 2013; Lowe et al., 2019), indicating that they can be altered. However, findings regarding functional changes are less consistent than those related to anatomical changes due to the multiple measures (Rubinov and Sporns, 2010) and scales Mi\u0161i\u0107 and Sporns, 2016 used to quantify RSFC. Hence, focusing on a single measure, the functional brain age may better capture these complex changes and their relation to aging.\n\nHere, as a sub-study of the Dietary Intervention Randomized Controlled Trial Polyphenols Unprocessed Study (DIRECT-PLUS Yaskolka Meir et al., 2021b), we examined the effect of successful weight loss following 18 months of lifestyle intervention on brain aging attenuation (Figure 1). We assessed brain age based on RSFC taken before and after the intervention. Brain aging attenuation was quantified as the difference between the expected and observed brain age after the intervention. We trained and validated the age prediction model using two separate cohorts (n=291 [Nooner et al., 2012], 358 [Shafto et al., 2014; Taylor et al., 2017]), then applied it to our group of participants from the DIRECT-PLUS (n=102). We hypothesized that a successful reduction in anthropometric measurements following the intervention would attenuate brain aging. We then examined how multiple clinical outcomes, including liver, glycemic, lipids, and magnetic resonance imaging (MRI) fat deposition markers, would be related to attenuated brain aging. Finally, we report the correlation between brain age attenuation and changes in reported food consumption. To the best of our knowledge, this is one of the first studies that examined the beneficial effect of successful weight loss on the brain aging trajectory in humans, assessed by resting-state fMRI.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83604/elife-83604-fig1-v2.jpg)\n\n**Figure 1.:** The Dietary Intervention Randomized Controlled Trial Polyphenols Unprocessed Study (DIRECT-PLUS) trial examined the effect of successful weight loss following 18-month lifestyle intervention on adiposity, cardiometabolic, and brain health across intervention groups. (a) Participants in the functional connectivity sub-study (N=132) completed the baseline measurements at T0. They were randomly assigned to three intervention groups: healthy dietary guidelines (HDG), an active control group, Mediterranean diet (MED), and green-MED. All groups were combined with physical activity (PA). Eighteen months following intervention onset, all measurements were retaken (T18). (b) Measurements included anthropometric measurements, blood biomarkers, fat deposition, and structural and functional brain imaging. (c) Functional brain imaging was conducted while subjects were at rest and was used to estimate resting-state functional connectivity (RSFC). RSFC measures the correlation between the time series of pairs of brain regions. (d) We fitted a linear support vector regression to predict chronological age from all pairwise correlations. We fitted the model on the Nathan Kline Institute (NKI) dataset, then tested and applied it to the Cambridge Centre for Ageing and Neuroscience (Cam-CAN) and the DIRECT-PLUS data. (e, left scatter plot) Based on the T0 data, we first computed the expected aging trajectory as the linear relation between the chronological and predicted age of all subjects. The fitted line represents the increase in the predicted age in relation to chronological age in the absence of an intervention. (e, right scatter plot) The fitted line was used to estimate the expected brain age at T18, given each participant\u2019s T0 brain age and the time passed between the T0 and T18 magnetic resonance imaging (MRI) scans. We computed the observed brain age by applying the brain age model to the T18 scans. Brain age attenuation was calculated as the expected brain age minus the observed at T18.\n\n## Methods\n\nIn line with (Simmons et al., 2012) 21-word solution, we report how we determined our sample size, all data exclusions, all manipulations, and all measures in the study.\n\n### Dataset used for training and validating the brain age model\n\nTraining, validation, and testing of the brain age model were conducted on data from two cohorts that included functional and structural brain MRI. The training was conducted on the enhanced Nathan Kline Institute (NKI)-Rockland Sample (Nooner et al., 2012) and testing on the Cam-CAN dataset (Shafto et al., 2014; Taylor et al., 2017). The NKI dataset is composed of 291 subjects (226 females, 65 males) recruited from Rockland County, USA. All participants provided informed consent and the study was approved by the Institutional Review Board at the Nathan Kline Institute (#226781 and #239708) and Montclair State University (#000983A and #000983B). The Cam-CAN dataset includes 358 (193 females, 165 males) subjects roughly uniformly distributed from Cambridge City, UK. All participants provided informed consent, and the study was approved by the local ethics committee, Cambridgeshire 2 Research Ethics Committee (reference: 10/H0308/50). In both datasets, we included only subjects within the DIRECT-PLUS age range (34\u201382 years). Exclusion criteria included unsuccessful completion of the preprocessing and quality control stages (see MRI preprocessing).\n\n### Study design\n\nThis work was based on a sub-study of the DIREC-PLUS trial (clinicaltrials.gov ID: NCT03020186). The primary aims of the DIRECT-PLUS trial were 18-month changes in VAT, intrahepatic fat, and adiposity across intervention groups. The results for the primary outcomes were presented in separate publications (Yaskolka Meir et al., 2021b). The DIRECT-PLUS was launched in May 2017 and conducted in an isolated workplace in Israel (Nuclear Research Center Negev, Dimona, Israel). Most clinical and medical measurements, including anthropometric measurements, blood drawing, and lifestyle intervention sessions, were performed on-site. Among 378 volunteers, 294 met age (30+ years of age) and abdominal obesity inclusion criteria waist circumference (WC): men >102 cm, women >88 cm (U.S. Department of Health and Human Services, 2013; Centers for Disease Control and Prevention, 2020) or dyslipidemia (TG >150 mg/dL and high-density-lipoprotein-cholesterol [HDL-C] \u226440 mg/dL for men, \u226450 mg/dL for women [Grundy et al., 2005]). Exclusion criteria were inability to perform physical activity (PA); serum creatinine \u22652 mg/dL; serum alanine aminotransferase or aspartate aminotransferase more than three times above the upper limit of normal; a major illness that might require hospitalization; pregnancy or lactation; active cancer, or chemotherapy treatment in the last 3 years; warfarin treatment; pacemaker or platinum implantation; and participation in a different trial. Among 294 eligible participants, 132 participants were randomly assigned to participate in the fMRI sub-study. The Soroka Medical Center Medical Ethics Board and Institutional Review Board provided ethics approval. All participants provided written consent and received no financial compensation.\n\n### Randomization and intervention\n\nAll participants completed the baseline measurements and were randomized, using a computer-based program, in a 1:1:1 ratio, stratified by sex and work status (to ensure equal workplace-related lifestyle features between groups), into one of the three intervention groups: healthy dietary guidelines (HDG) as an active control group, Mediterranean diet (MED), green-MED, all combined with PA. Interventions lasted for 18 months and were contemporaneous, and participants were not blind to group assignment (open-label protocol). Each participant received complete dietary guidance (based on the specific intervention group) and a free and fully available clinical dietitians consult. Furthermore, all participants received free gym membership, including educational sessions encouraging moderate-intensity PA. Participants in both MED groups were assigned to a diet rich in vegetables, with poultry and fish replacing beef and lamb, with 1500\u20131800 kcal/day for men, 1200\u20131400 kcal/day for women. The diet additionally included 28 g/day of walnuts (+440 mg/day polyphenols provided). The green-MED group further consumed green tea (3\u20134 cups/day) and Wolffia globosa green shake (100 g/day frozen cubes, +1240 mg/day total polyphenols provided). A detailed description of the intervention outline is available in Supplementary file 1.\n\n### MRI acquisition\n\nMRI scans were conducted at the Soroka University Medical Center (SUMC), Beer Sheva. Participants were scanned in a 3T Philips Ingenia scanner (Amsterdam, The Netherlands) equipped with a standard head coil. Subjects were instructed to refrain from food and non-water beverages 2 hr before the MRI sessions. Each of the two sessions at T0 and T18 included 2 RS-fMRI runs of 7 min each and a 3D T1-weighted anatomical scan to allow registration of the functional data. Before each RS session, participants were instructed to remain awake with their eyes open and lie still. fMRI BOLD contrast was acquired using the gradient-echo echo-planner imaging sequence with parallel acquisition (SENSE: factor 2.2). Scanning parameters were as follows: whole-brain coverage 41 slices (3 \u00d7 3 \u00d7 3 mm3), transverse orientation, 3 mm thickness, no gap, TR = 2200 ms, TE = 30 ms, flip angle = 90\u00b0, FOV = 200 \u00d7 222 (RL \u00d7 AP) and matrix size 68 \u00d7 71 (RL \u00d7 AP). High-resolution anatomical volumes were acquired with a T1-weighted 3D pulse sequence (1 \u00d7 1 \u00d7 1 mm3, 150 slices).\n\n### MRI preprocessing\n\nThe preprocessing pipelines used in this work were extensively described in a previous publication (Levakov et al., 2021). T1w scans were preprocessed through FreeSurfer\u2019s (Fischl et al., 1999) (version 6.0) recon-all processing. FreeSurfer\u2019s cortical segmentation and spherical warp were used to transfer the Schaefer 100-node cortical parcellation (Schaefer et al., 2018) to each subject\u2019s volumetric anatomical space. Functional images of the NKI dataset were preprocessed with fMRIPrep (version 1.1.8; Esteban et al., 2019) and images of the DIRECT-PLUS and Cam-CAN datasets were preprocessed with the Configurable Pipeline for the Analysis of Connectomes (C-PAC [Cameron et al., 2013] version 1.6.2). Briefly, both pipelines included the following steps: slice-timing correction, motion correction, skull stripping, estimation of motion parameters, and other nuisance signal time series. For the NKI dataset, functional scans were bandpass filtered (0.008\u20130.08 Hz) and confound regressed in a manner orthogonal to the temporal filters. Confounds included six motion estimates, the mean time series derived in CSF, WM, and whole-brain masks, the derivatives of these nine regressors, and the squares of these 18 terms. Spike regressors were added for each frame with framewise displacement above 0.5 mm. Data were linearly detrended and standardized. Nuisance regression in the DIRECT-PLUS and Cam-CAN fMRI dataset included the first five principal components of the signal from white matter and CSF (Behzadi et al., 2007), six motion parameters, and linear and quadratic trends, global signal regression, followed by temporal filtering between 0.1 and 0.01 Hz. Finally, a scrubbing threshold of 0.5 mm frame-wise displacement was applied (Power et al., 2014) (removal of 1 TR before and 2 TR after excessive movement). The time series of the two functional scans in the DIRECT-PLUS were concatenated to a single T0 and T18 scans. The exclusion criterion for excessive movements was determined a priori to less than 70% (9 min and 48 s) of the resting-state session after the scrubbing procedure (23% omitted; 102 subjects left). In all datasets, functional connectivity was defined as the Pearson\u2019s correlation among pairs of ROIs\u2019 time series followed by Fisher\u2019s r-to-z transformation.\n\n### Clinical measurement and blood biomarkers\n\nAll parameters were measured at baseline and after 18 months of intervention. All clinical measures in the current study were selected a priori from a large pool of variables taken in the DIRECT-PLUS trial (Yaskolka Meir et al., 2021b). These measures were taken from five pre-selected categories: (1) Anthropometry that includes body mass index (BMI) and WC; (2) liver biomarkers that included AST, alanine transaminase (ALT), gamma-glutamyl transferase (GGT), ALKP, FGF 21, and chemerin; (3) glycemic markers, including glucose HOMA-IR and HbA1c; (4) lipids including cholesterol, HDL-C, LDL-C, and triglycerides; (5) imaging measures included liver fat, VAT, DSC, SSC, and the hippocampal occupancy score (HOC). WC was measured to the nearest millimeter halfway between the last rib and the iliac crest using an anthropometric measuring tape. Blood and urine samples were collected at 8:00 AM after a 12 hr fast. Blood samples were centrifuged and stored at \u201380\u00b0C. HOC was calculated as the hippocampal volume divided by (hippocampal volume + inferior lateral ventricle volume) in each hemisphere, then averaged across hemispheres (Kaplan et al., 2022; Heister et al., 2011).\n\n### Nutritional assessment\n\nAssessment of nutritional intake and lifestyle habits was self-reported online using validated food frequency questionnaires (FFQ) (Shai et al., 2005). The questionnaires were administered at baseline, after 6 months, and at the end of the trial. We selected a priori the questionnaire variables that were associated with brain age attenuation. These variables included the change in the following categories: sweets and beverages, weekly Wolffia globose intake, nut and seeds, eggs and milk, beef, processed food, green tea, and walnuts. The closed workplace enabled monitoring of the freely provided lunch and the intense dietary and PA sessions, which were provided simultaneously to all three groups.\n\n### Liver and visceral fat imaging protocols\n\nTo quantify and follow IHF% changes, we used H-MRS, a reliable tool for liver fat quantification (Kukuk et al., 2015). Localized, single-voxel proton spectra were acquired using a 3.0 T magnetic resonance scanner (Philips Ingenia, Best, The Netherlands). The measurements were taken from the right frontal lobe of the liver, with a location determined individually for each subject using a surface, receive-only phased-array coil. Spectra with and without water suppression were acquired using the single-voxel stimulated echo acquisition mode with the following parameters: TR = 4000 ms, TE = 9.0 ms, and TM = 16.0 ms. The receiver bandwidth was 2000 Hz and the number of data points was 1024. Second-order shimming was used. Four averages were taken in a single breath hold for an acquisition time of 16 s. The total image hepatic fat fraction was determined as the ratio between the sum of the area under all fat divided by the sum of area under all fat and water peaks (Hu et al., 2010).\n\nAbdominal fat depots were assessed at baseline and 18 months thereafter using 3 T MRI scans (Ingenia 3.0T, Philips Healthcare, Best, the Netherlands). The scanner utilized a 3D modified DIXON imaging technique without gaps (2 mm thickness and 2 mm of spacing), fast-low-angle shot sequence with a multi-echo two excitation pulse sequence for phase-sensitive encoding of fat and water signals (TR, 3.6 ms; TE1, 1.19 ms; TE2, 2.3 ms; FOV 520 \u00d7 440 \u00d7 80 mm3; 2 \u00d7 1.4 \u00d7 1 mm3 voxel size). Four images of phantoms were generated: in-phase, out-phase, fat, and water phase (Thomas et al., 2013). Participants were instructed to hold their breath to avoid motion artifacts when their abdomen was scanned. A continuous line over the fascia superficialis was drawn to differentiate deep-SAT from superficial-SAT and calculated mean VAT, deep-SAT, and superficial-SAT along two axial slices: L5-S1 and L4-L5. We quantified fat mass regions as area and relative proportion of each fat subtype (percentage).\n\n### Brain age estimation\n\nSubjects\u2019 chronological age was predicted from the lower triangle of the functional connectivity matrix depicting all unique edges (4950 edges). We used a support vector regression model (Smola et al., 2000) implemented using Scikit-learn (Fabian et al., 2011) with a linear kernel and all the default parameters. Model accuracy was quantified as the Pearson\u2019s correlation between the observed and predicted age. We additionally report the mean absolute error (MAE) in years, along with a p-value based on a non-parametric permutation test created by shuffling the data labels 1000 times (Hilger et al., 2020).\n\n### Statistical analysis\n\nThe primary outcome of the current work was brain age attenuation quantified as the difference between the expected and observed brain age at T18 (Yaskolka Meir et al., 2021a). The expected brain age at T18 was calculated by first producing brain age prediction for all participants at T0. Then, a linear regression was used to estimate brain age from the chronological age at T0. The fitted regression formula, representing the expected aging trajectory in the absence of intervention, was used to estimate the expected brain age at T18 given each participant\u2019s T0 brain age and the time passed between the T0 and T18 MRI scans. The observed brain age was produced by applying the brain age model to the T18 scans. At baseline, brain age gap was computed as the difference between the predicted and observed age after regressing out the effect of the chronological age on the this gap (brain age bias correction [Smith et al., 2019]). We note that the result of computing the difference between the bias corrected brain age gap at both times was nearly identical to the brain age attenuation measure (r=0.99, p<0.001; MAE = 0.45). The difference between the two is because the brain age attenuation model takes into account the difference in the exact time that passed between the two scans for each participant (mean = 21.36 m, std = 1.68 m). Association between brain age attenuation and change in clinical measures following the intervention were reported using Pearson\u2019s correlation. Correction for multiple comparisons was conducted within each biomarker category using the Benjamini\u2013Hochberg false discovery rate (FDR; Benjamini and Hochberg, 1995) with an alpha of 0.05. Associations to food consumption reports were reported using Kendall\u2019s tau correlation for ordinal data. Processed food at T18 had only two levels, \u2018same consumption\u2019 and \u2018less consumption\u2019, thus relation to brain age attenuation was tested with independent t-test. Change in clinical measurements were computed as a delta (\u0394), the value at T0 minus the value at T18. We quantified change in reported food consumption as the change between the T0 and T18 questionnaires for food groups (i.e. processed food, sweets, and beverages) and as total consumption for polyphenols-provided foods (i.e. Mankai, green tea, walnuts). To control for the possible effect of age or gender, we used partial regression by regressing out the linear effect of age and gender from both brain age attenuation and the clinical measures. This was done by predicting each clinical measure, with the covariate as a predictor, keeping only the residual.\n\n### Effect size in previous work\n\nIn a recent study (Zeighami et al., 2022), the authors reported a significant decrease in delta age 12 months following bariatric surgery. We converted the reported t statistic (t=3.66, p<0.001, df = 85) to an effect size (Cohen\u2019s d=0.79, r=0.369) using an effect size calculator (https://lbecker.uccs.edu/). Using a sample size calculator (Python statsmodels.stats.power), we found that with an alpha of 0.05 and beta >0.05, a sample size >90 is required. With the given sample size (n=102), the probability of failing to reject the null hypothesis under the alternative hypothesis (\u03b2, Type II error rate) is 3%. Alternatively, for a Type II error rate lower than 0.1 with the given sample size, an effect size of 0.664 (Cohen\u2019s d) is required.\n\n## Results\n\n### Brain age estimation\n\nTo estimate chronological age from RSFC, we utilized data from 649 participants from two separate cohorts for the brain age model training, validation, and testing. We predicted chronological age from functional connectivity among the 100 nodes of the Schaefer brain atlas (Schaefer et al., 2018) (4950 edges) using a linear support vector regression model. The model was first trained and validated on 291 participants from the NKI dataset (Nooner et al., 2012; n=291) using fivefold cross-validation. As expected, a positive correlation was found between the predicted and observed age (r=0.439, p<0.001; MAE = 8.544, p<0.001). Next, we retrained the model on the entire sample and tested it in an independent sample from the Cam-CAN dataset (Shafto et al., 2014; n=358) again, yielding a positive correlation between the predicted and observed age (r=0.290, p<0.001; MAE = 11.402, p=0.005). Finally, we used the fitted model to estimate the brain age within the DIRECT-PLUS cohort. Of the 132 subjects that participated in the fMRI sub-study, 102 were included in all analyses after exclusions due to excessive in-scanner motion (23% omitted; MRI preprocessing). The predicted brain age and observed chronological age were correlated (r=0.244, p=0.013; MAE = 8.337, p<0.001; Figure 2), reproducing the results found within the two other datasets. Despite being significant and reproducible, we note that the correlations between the observed and predicted age were relatively moderate.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83604/elife-83604-fig2-v2.jpg)\n\n**Figure 2.:** The scatter plots depict the data points and regression line between the predicted (y-axis) and observed (x-axis) age. The predicted-observed correlation is presented for the validation data (left), the Cambridge Centre for Ageing and Neuroscience (Cam-CAN) test data (middle), and the Dietary Intervention Randomized Controlled Trial Polyphenols Unprocessed Study (DIRECT-PLUS) data at baseline. The shaded area around the regression lines represents a 95% confidence interval estimated using bootstrapping. Pearson\u2019s correlation, MAE (mean absolute error), and corresponding p-values are shown at the bottom of each plot. The dotted lines represent a perfect correlation for reference (predicted = observed).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83604/elife-83604-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We reiterated the model training procedure for each of the nodes separately. We extracted the row of each node in the resting-state functional connectivity (RSFC) matrix, which represents all the nodes\u2019 connections with the rest of the brain, or its \u2018connectivity fingerprint\u2019. As in the original model, we used a linear support vector regression fitted on the Nathan Kline Institute (NKI) dataset, then tested it on the Cambridge Centre for Ageing and Neuroscience (Cam-CAN) dataset. Prediction accuracy was quantified as the correlation between chronological age and predicted age. (a) Prediction accuracy was depicted on the brain surface on a lateral (top) and medial (bottom) view. (b) Box plot showing the prediction accuracy (y-axis) in each of the seven canonical resting-state networks Zelicha et al., 2019. Each dot represents a single node.\n\n### Baseline characteristics\n\nBaseline characteristics among the 102 participants with valid RSFC MRI scans are presented in Table 1 (see Supplementary file 2 for additional measures). The mean participant age was 51.5\u00b110.5 years (median = 50.6, range 33.9\u201381.9), and 91.2% were men. The mean BMI and WC were 30.1\u00b12.5 kg/m2 and 107.1\u00b16.6 cm, respectively. The mean baseline predicted brain age by RSFC was 52.8\u00b14 years. In Table 1 we report the correlation between baseline characteristics and age, predicted age, and the brain age gap. The brain age gap was computed as the difference between the predicted and observed age after regressing out the effect of age on the this gap (brain age bias correction [Smith et al., 2019]). At baseline, brain age gap was correlated with chemerin (r=0.22, p=0.029), and with obesity-associated measurements obtained by MRI including visceral abdominal tissue (VAT): r=0.23, p=0.02 and superficial subcutaneous fat (SSC): r=\u22120.25, p=0.014.\n\n**Table 1.**\n Association between baseline characteristics and age, predicted age, and brain age gap.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Age</th>\n      <th colspan=\"2\">Brain age</th>\n      <th colspan=\"3\">T0 brain age gap(bias corrected)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>r</td>\n      <td>p-Value</td>\n      <td>r</td>\n      <td>p-Value</td>\n      <td>r</td>\n      <td>p-Value</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>BMI (kg/m\u00b2)</td>\n      <td>\u20130.110</td>\n      <td>0.272</td>\n      <td>0.067</td>\n      <td>0.504</td>\n      <td>0.097</td>\n      <td>0.334</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemerin (ng/mL)</td>\n      <td>0.153</td>\n      <td>0.124</td>\n      <td>0.247</td>\n      <td>0.012</td>\n      <td>0.216</td>\n      <td>0.029</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HOMA IR</td>\n      <td>0.177</td>\n      <td>0.079</td>\n      <td>0.179</td>\n      <td>0.074</td>\n      <td>0.141</td>\n      <td>0.163</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HbA1c (%)</td>\n      <td>0.315</td>\n      <td>0.001</td>\n      <td>0.117</td>\n      <td>0.240</td>\n      <td>0.042</td>\n      <td>0.677</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HDL-C (mg/dL)</td>\n      <td>0.158</td>\n      <td>0.113</td>\n      <td>\u20130.095</td>\n      <td>0.343</td>\n      <td>\u20130.138</td>\n      <td>0.168</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LDL-C (mg/dL)</td>\n      <td>\u20130.152</td>\n      <td>0.129</td>\n      <td>\u20130.024</td>\n      <td>0.811</td>\n      <td>0.013</td>\n      <td>0.893</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Triglycerides (mg/dL)</td>\n      <td>\u20130.023</td>\n      <td>0.815</td>\n      <td>0.145</td>\n      <td>0.147</td>\n      <td>0.155</td>\n      <td>0.120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Liver fat (cm\u00b2)</td>\n      <td>\u20130.039</td>\n      <td>0.711</td>\n      <td>0.156</td>\n      <td>0.132</td>\n      <td>0.170</td>\n      <td>0.101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>VAT (cm\u00b2)</td>\n      <td>0.495</td>\n      <td>0.000</td>\n      <td>0.329</td>\n      <td>0.001</td>\n      <td>0.225</td>\n      <td>0.025</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### The relation between successful lifestyle intervention and attenuation of functional brain aging\n\nOur primary hypothesis was that success in lifestyle intervention, as assessed by anthropometric measurements, will attenuate functional brain aging. Brain aging attenuation was quantified as the difference between the expected and observed brain age at T18 (Yaskolka Meir et al., 2021a; Figure 1e). Following 18 months of lifestyle intervention, participants showed a reduction of 0.76 (\u00b11.86) units in BMI on average, 2.31 (\u00b15.61) kg reduction in weight, and 5.39 (\u00b15.89) cm reduction in WC. These constitute a \u20136.45% \u00b1 (5.60%) and \u20134.35% \u00b1 (5.86%) reduction from baseline for WC and BMI and weight, respectively. Additionally, at T18, the observed age was lower than expected in 56.8% of the subjects, while the opposite was found in 43.1% of the subjects (X2=1.922, p=0.166; see Figure 3, top). Importantly, we found a correlation between \u2206BMI and brain age attenuation such that participants that showed a decrease in BMI also exhibited attenuated brain aging (r=0.319, p<0.001; Figure 3, bottom). Specifically, 1% of BMI or weight loss resulted in an 8.9 months\u2019 attenuation of brain age (Figure 3\u2014figure supplement 1). Similar results were found with \u2206body weight (r=0.319, p<0.001) and \u2206WC (r=0.198, p=0.046; Figure 4). The correlations to \u2206BMI and \u2206weight were significant after correcting for age and baseline brain age (p<0.05 for all), while the correlation to WC did not show a significant association (r>0.171, p\u2019s <0.079 for all).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83604/elife-83604-fig3-v2.jpg)\n\n**Figure 3.:** The upper panel depicts the chronological age (x-axis) and the observed (empty circles) and expected (full circles) brain age (y-axis) of each subject. The dashed line represents the expected brain age trajectory fitted based on the T0 data (see regression line in Figure 1e, left). Arrows point from the expected to the observed age of a single individual, corresponding to brain age attenuation. Arrows\u2019 colors correspond to the extent of brain age attenuation (blue shades indicate attenuation, red shades indicate an acceleration in brain age). The observed age was lower than expected in 56.8% of the subjects, while the opposite was found in 43.1% (X2=1.922, p=0.166). In the lower panel, arrows were reordered by subjects\u2019 body mass index (BMI) change over the 18 months of intervention. A significant correlation was found between the BMI and brain age change (r=0.319, p<0.001). This is evident in the graph, such that most of the blue arrows are located on the left side of the x-axis (negative values), and most of the red arrows appear on the right side (positive values).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83604/elife-83604-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A scatter plot depicting the linear relationship between percent weight reduction from baseline (x-axis) and years of brain age attenuation (y-axis). Also shown on the graph are the correlation coefficient and the parameters of the linear relation between the two variables. One percent of body weight loss corresponded to an 8.9 months\u2019 attenuation of brain age. The shaded area around the regression line represent a 95% confidence interval estimated using bootstrap.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83604/elife-83604-fig4-v2.jpg)\n\n**Figure 4.:** The scatter plots depict the data points and regression line between brain age attenuation (y-axis) and each clinical measurement (x-axis). Clinical measurements include anthropometry (blue), liver markers (orange), glycemic markers (brown), lipid profile (red), and fat deposition measured using magnetic resonance imaging (MRI) (green). The shaded area around the regression line represents a 95% confidence interval estimated using bootstrapping. Pearson\u2019s correlation and the corresponding p-value are shown at the bottom of each plot. Significant associations following false discovery rate (FDR) correction are marked in bold (*=p < 0.05, **=p < 0.01).\n\n### The relation between brain age attenuation and clinical measurements\n\nTo examine the clinical outcomes associated with attenuated brain aging, we further tested the correlation of brain age attenuation with liver, glycemic, lipids, and MRI-assessed fat deposition biomarkers (Figure 4). Except of deep subcutaneous changes, all fat deposition measurements, superficial subcutaneous, visceral, and liver fat changes (e.g. loss) were significantly and directly associated with brain age attenuation (p<0.05, FDR corrected), i.e., the more the individual succeeded in diet-induced fat depots loss, the more brain age attenuation has been achieved. We then tested the association between brain age attenuation and liver and glycemic biomarkers. Out of all examined liver biomarkers, a decrease in ALT, GGT, alkaline phosphatase, and serum chemerin were significantly associated with attenuation in brain age (p<0.05 for all, FDR corrected). Of all examined lipid profile markers, only an increase in \u2206HDL-C was significantly correlated with brain age attenuation (r=-0.273, p=0.005). Finally, a decrease in HOC was significantly correlated with brain age attenuation (r=-0.296, p=0.003). All results were reproduced after controlling for baseline age and predicted age at T0. However, after further correction for changes in BMI, only \u2206alkaline phosphatase, \u2206chemerin, and \u2206HOC were associated with brain age attenuation (all p\u2019s<0.018), with no significant associations with all other biomarkers (p>0.05, for all; see Supplementary file 3).\n\n### The relation between brain age attenuation and food consumption\n\nWe examined whether food consumption, as reported using an FFQ, could be associated with functional brain aging attenuation. Associations were tested using Kendall\u2019s rank correlation. We began with categories that could negatively affect brain aging attenuation. In line with our hypothesis, we found that decreased consumption of processed food (t=3.131, p=0.002) and sweets and beverages (\u03c4=\u22120.231, p=0.002) was associated with more attenuation in brain age. An increase in green tea and walnut consumption, for which we hypothesized an attenuation effect on brain aging due to their high polyphenol content, did not result in a significant correlation (all \u03c4\u2019s<0.081, p\u2019s>0.121; see Supplementary file 4 for all measures).\n\n## Discussion\n\nConsiderable evidence implies that excessive weight accelerates normal aging (Salvestrini et al., 2019; Tam et al., 2020), a process that is also manifested in brain aging (Beck et al., 2022). In the current study, we examined for the first time whether weight loss following a lifestyle dietary intervention may attenuate the effect of obesity on the brain aging trajectory. We hypothesized that reducing anthropometric measurements following a lifestyle intervention would be associated with attenuated brain aging. We first demonstrated, across two separate cohorts, that age could be estimated from RSFC, as done in previous work (Dosenbach et al., 2010). We then applied the fitted age prediction model to the participants of the DIRECT-PLUS. We found that 1% of body weight loss results in an 8.9 months\u2019 attenuation of brain age. Attenuated brain aging was further correlated with a decrease in WC, MRI-assessed fat deposition, liver biomarkers, and HDL-C. Finally, reduced reported consumption of processed food, sweets and beverages were also related to attenuated brain aging. During the 18-month trial, a modest average weight loss of 2.31 (\u00b15.61) kg was observed. As demonstrated by our previous trials, as well as others, the maximum weight loss following lifestyle intervention is achieved in 6 months, following a regain/rebound phase. In addition, our trials and others have demonstrated an improvement in cardiometabolic health following a MED intervention (i.e. hepatic and visceral fat reduction and improved lipid profile), despite a modest weight loss (Yaskolka Meir et al., 2021b; Zelicha et al., 2022; Gepner et al., 2018; Estruch et al., 2013).\n\nAccumulated evidence points to the potential of lifestyle intervention to reverse the negative impact of excess weight on brain structure, function, and cognition. Cross-sectional and longitudinal studies found that reported adherence to a MED was linked to increased gray matter volume in multiple regions (Staubo et al., 2017), including the hippocampus (Ballarini et al., 2021). Adherence to HDG was also associated with reduced cognitive decline (Gardener and Rainey-Smith, 2018). Importantly, randomized clinical trials can support a causal relationship between lifestyle intervention and the brain aging process. Such studies from our group (Kaplan et al., 2022) and others (Erickson et al., 2011; Espeland et al., 2016) revealed that subjects enrolled in a PA+dietary intervention exhibit lower hippocampal atrophy and smaller ventricles. A similar beneficial effect on cognitive functioning in middle age was also found (Valls-Pedret et al., 2015), along with functional connectivity alteration in the default mode and executive control networks (Voss et al., 2010; Garc\u00eda-Casares et al., 2017). To date, a single study in rats has tested the effect of a dietary intervention using the brain age framework and found a reduction in brain aging rate (Brusini et al., 2022). Hence, the current work provides the first evidence that such a beneficial effect on brain age can also be found in humans.\n\nStudying changes in functional brain aging is part of a broader field that examines changes in various biological ages, such as telomere length (Gampawar et al., 2020), DNA methylation (Fraga, 2009), and arterial stiffness (Hamczyk et al., 2020). Evaluating changes in these bodily systems over time allows us to capture health and lifestyle-related factors that affect overall aging and may guide the development of targeted interventions to reduce aging-related decline. For example, in the CENTRAL cohort, we recently reported that reducing body weight and intrahepatic fat following a lifestyle intervention was related to methylation age attenuation (Yaskolka Meir et al., 2021a). In the current work, we used RSFC for brain age estimation, which resulted in an MAE of ~8 years, that was larger than the intervention period. Nevertheless, we found that brain age attenuation was associated with changes in multiple health factors. The precision of an age prediction model based on RSFC is typically lower than a model based on structural brain imaging (de Lange et al., 2022). However, a higher model precision may result in a lower sensitivity to detect clinical effects (Bashyam et al., 2020; Jirsaraie et al., 2023). Better tools for data harmonization among datasets (Jirsaraie et al., 2023) and larger training sample size (de Lange et al., 2022) may improve the accuracy of such models in the future. We also suggest that examining the dynamics of multiple bodily ages and their interactions would enhance our understanding of the complex aging process (Yu et al., 2022; Franke and Gaser, 2019).\n\nThe brain age framework reduces the multifaceted aging process captured in a given imaging modality to a single scalar. This scalar, the predicted brain age, is well defined in the sense that it minimizes the prediction error within the training dataset. Moreover, the clinical relevance of functional brain age is shown, for example, in predicting Alzheimer\u2019s onset (Gonneaud et al., 2021) and symptoms severity in depression (Dunlop et al., 2021). This reductionist approach raises several challenges. The first is the ability to interpret the features used by the machine learning model (Levakov et al., 2020). A second challenge is understanding the physiological factors that may affect its predictions (Mora, 2013), which we address in the current work. Here, we report how a set of clinical measures are associated with changes in brain aging. Importantly, lifestyle and other interventions can affect these measures to attenuate the brain aging process. We suggest that such mapping of changes in clinical outcomes to months or years of attenuated brain aging has important scientific, clinical, and even educational value.\n\nWe found that clinical outcomes that include anthropometric, liver, and lipid biomarkers were associated with attenuated brain age. Specifically, two main factors were linked to changes in brain age, changes in anthropometry measures, and liver status. The first factor included BMI, weight, WC, and superficial subcutaneous and visceral fat. The second factor included liver fat, ALT, GGT, alkaline phosphatase, and serum chemerin. Alkaline phosphatase and chemerin were also associated with changes in brain age after controlling for changes in BMI. The negative impact of elevated liver enzymes and liver fat on brain health is seen, for example, in the case of AD (Nho et al., 2019; Labenz et al., 2021; Ghareeb et al., 2011). This link is thought to be mediated by oxidative stress, vascular damage, and inflammation (Helfer and Wu, 2018). Chemerin, produced in the liver, is an adipokine linked to energy homeostasis, adipogenesis, and excessive weight (Helfer and Wu, 2018). Chemerin is correlated with age (Aronis et al., 2014) and BMI (Ernst and Sinal, 2010) and was found to be reduced following lifestyle intervention (Bl\u00fcher et al., 2012; Ashtary-Larky et al., 2021). The relation between serum chemerin and brain aging is still unclear, but possible linking mechanisms are hypertension (Ferland et al., 2020) and inflammation (Ernst and Sinal, 2010). Besides these two factors, HDL-C was the only variable whose increase was correlated to brain aging attenuation. This is in line with evidence of the protective role of HDL-C in cognitive decline and dementia (Hottman et al., 2014). Finally, of all the reported food consumption items, only reduced consumption of processed food, sweets and beverages were linked to attenuated brain aging. Although these results are based on self-reports, they may be helpful for developing neuroprotective dietary guidelines (Smith et al., 2010).\n\nIt is important to consider several limitations and strengths of the current study. The first limitation was gender imbalance (F: 93, M: 9; F: 8.8%, M: 91.2%), which reflected the workplace profile from which participants were recruited (Yaskolka Meir et al., 2019; Tsaban et al., 2021; Rinott et al., 2021; Zelicha et al., 2019). This distribution misrepresents the proportion of obese women within the general population (F: 51%, M: 49%; Craig et al., 2020). Hence, these results should be further corroborated in a gender-balanced sample. Additionally, participants were recruited based on excess adiposity or dyslipidemia, therefore, they represented a restricted range of the normal population. This design allows to maximize the intervention effects but restricts our ability to detect correlation at baseline. We also note that the lack of a no-intervention control group limits our ability to directly relate our findings to the intervention. Hence, we can only relate brain age attenuation to the observed changes in health biomarkers. The strengths of the study lies in the wealth of health biomarkers that included anthropometric, blood, and imaging measures, the relatively large sample for similar intervention trials, the tight on-site monitoring over the dietary compliance, and the long intervention duration. Finally, the use of three distinct datasets for training and validation, testing, and inference supports the generalization of our model.\n\nTo conclude, in the current work, we examined how changes in multiple health factors, including anthropometric measurements, blood biomarkers, and fat deposition, can account for brain aging attenuation. We reveal that the two factors with the strongest association with brain aging were changes in anthropometry measures and liver biomarkers. These findings complement the growing interest in bodily aging indicated, for example, by DNA methylation (Yaskolka Meir et al., 2021a) as health biomarkers and interventions that may affect them. These exciting results may advance our knowledge of factors related to healthy brain aging and guide future neuroprotective interventions.\n",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "87fb1a91-b6fd-4330-a8c9-c741408cfc4f",
+      "submission_id": "fc7ffd57-9878-4ab9-952c-0fcfafb421d6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Muthuswamy Balasubramanyam, https://ror.org/00czgcw56 Madras Diabetes Research Foundation India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83604.sa0](https://doi.org/10.7554/eLife.83604.sa0)\n\nThis study is indeed a landmark work that reports the significant benefits of lifestyle intervention in terms of attenuation of brain age and improvement in several tissue-based biomarkers. The findings from this study are of compelling and convincing nature that would encourage and support structured lifestyle intervention as an inclusive part of public health.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Muthuswamy Balasubramanyam, https://ror.org/00czgcw56 Madras Diabetes Research Foundation India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83604.sa1](https://doi.org/10.7554/eLife.83604.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The effect of 18 months lifestyle intervention on brain age assessed with resting-state functional connectivity\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Muthuswamy Balasubramanyam as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Christian B\u00fcchel as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Ann-Marie de Lange (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:Reviewer 1: (Essential Revisions)\n\nAuthors should refer to the articles by Gampawar et al. (2020); Yu et al. (Neurobiol Aging 2022) and Franke & Gaser (2019) and extend/substantiate their discussion.\n\nReviewer 2: (Essential Revisions)\n\nIntroduction: Query 1\n\nThe authors could consider an introductory paragraph explaining RSFC and why it was used in this study: how does RSFC link to lifestyle and health, and how does it change with aging (e.g., what characteristics are expected)?\n\nMethods: Queries 1 & 2\n\n1. Line 317: The authors could clarify their inclusion and exclusion criteria. For inclusion criteria, the authors could cite relevant papers defining the cut-off values as thresholds to obesity. For exclusion, are the cut-off values linked to e.g., worse body or brain outcomes, or why were they included? Relevant citations may also be beneficial here.\n\n2. The authors could consider including key details on the intervention study (those listed in SI Table 3), which are integral to the interpretations, in the main body of the text, rather than supplementary analyses (e.g., kcal restrictions). It would also be helpful if the authors could clarify how the randomization to different intervention groups is accounted for in the current study.Reviewer 3: (Essential Revisions)\n\nAnswers to comments: 1, 3 & 4\n\n1) The authors did not choose to calculate brain age gap estimates for T0 and T18, but instead projected the brain-predicted age from T0 to T18 and calculated the difference between this 'expected brain age' and the 'observed brain age'. This procedure appears to be rather unusual. Is there any citeable resource that inspired the authors to follow this approach?\n\n2. Question related to: how the effect size of 0.79 was derived.\n\n3. The study uses a variety of variables and it remains uncertain if all relevant variables have been mentioned. For instance, the different categories derived from the food frequency questionnaires have not been described sufficiently. How many categories have been tested for an association with changes in brain age? In order to increase transparency, I suggest providing the \"21-word solution\" by Simmons et al. (http://dx.doi.org/10.2139/ssrn.2160588): \"We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study.\" If necessary, this statement might be adjusted to ensure that it is accurate.\n\nReviewer #1 (Recommendations for the authors):\n\nAuthors should consider addressing the comments with additional experiments and revising the manuscript.\n\nComments:\n\n1) Authors should refer to Yu et al. (Neurobiol Aging 2022) and extend their discussion.\n\n2) Authors should refer to the article by Franke & Gaser (2019) and extend/substantiate their discussion.\n\nReviewer #2 (Recommendations for the authors):\n\nIntroduction\n\n1. The authors could consider an introductory paragraph explaining RSFC and why it was used in this study: how does RSFC link to lifestyle and health, and how does it change with ageing (e.g., what characteristics are expected)?\n\nResults\n\n1. Line 149: For a very restrictive intervention of only 1400 daily kcal for women and 1600 daily kcal for men over a period of 18 months, an average weight loss of 2.3kg seems small, especially in obese subjects. Could this potentially stem from a failure to comply with the intervention, resulting in lower weight loss or weight fluctuations? It would be helpful if the authors could comment on this in their discussion.\n\nMethods\n\n1. Line 317: The authors could clarify their inclusion and exclusion criteria. For inclusion criteria, the authors could cite relevant papers defining the cut-off values as thresholds to obesity. For exclusion, are the cut-off values linked to e.g., worse body or brain outcomes, or why were they included? Relevant citations may also be beneficial here.\n\n2. The authors could consider including key details on the intervention study (those listed in SI Table 3), which are integral to the interpretations, in the main body of the text, rather than supplementary analyses (e.g., kcal restrictions). It would also be helpful if the authors could clarify how the randomisation to different intervention groups is accounted for in the current study.\n\nReviewer #3 (Recommendations for the authors):\n\n1) The authors did not choose to calculate brain age gap estimates for T0 and T18, but instead projected the brain-predicted age from T0 to T18 and calculated the difference between this 'expected brain age' and the 'observed brain age'. This procedure appears to be rather unusual. Is there any citeable resource that inspired the authors to follow this approach?\n\n2) Brain age was associated with several measures at baseline (Table 2), including chronological age. Usually, researchers in this field report on associations of the brain age gap, bias-corrected for chronological age. In other words, they report on the incremental associations of brain age with other variables, beyond the effects of chronological age. Without correcting for chronological age, associations of brain age with other variables are strongly driven by age. On this account, I feel that the results provided in Table 2 are not very informative with respect to the validity of the brain age estimates. The motivation for showing these statistics (message to the reader), as well as the choice of showing tertiles remains unclear to me.\n\n3) I appreciate that the authors report a power analysis, but with the given information, it is not very comprehensible how the effect size of 0.79 was derived. I assume that this effect size estimate refers to Cohen's d!? Was it calculated based on the t-values and degrees of freedom from the '24-month post-surgery visits compared to baseline' reported in the cited resource? In general, effect sizes observed in single studies do not constitute very reliable estimates. In my view, a better option would be a sensitivity power analysis, which tests the probability (1-\u03b2) of different hypothetical effect sizes (e.g., d ranging from 0 to 1.5) to reach significance (\u03b1 = 0.05) in a sample of respective size (N = 102; Lakens 2022, https://doi.org/10.1525/collabra.33267, see Figure 9).\n\n4) The study uses a variety of variables and it remains uncertain if all relevant variables have been mentioned. For instance, the different categories derived from the food frequency questionnaires have not been described sufficiently. How many categories have been tested for an association with changes in brain age? In order to increase transparency, I suggest providing the \"21-word solution\" by Simmons et al. (http://dx.doi.org/10.2139/ssrn.2160588): \"We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study.\" If necessary, this statement might be adjusted to ensure that it is accurate.\n",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "81b60a8f-cb06-4831-acad-af2a355d3e7e",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C1",
+      "claim": "Obesity negatively impacts the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity negatively impacts multiple bodily systems, including the central nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established scientific understanding about obesity's effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "4e0989ce-0650-4975-9d81-d34759f25018",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C2",
+      "claim": "Retrospective studies have found accelerated brain aging in obesity using age estimation from neuroimaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrospective studies that estimated chronological age from neuroimaging have found accelerated brain aging in obesity, but it is unclear how this estimation would be affected by weight loss following a lifestyle intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior research findings without specific citations in this sentence, drawing on established literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "be830bad-9558-4f36-93b5-e7da6e105a5f",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C3",
+      "claim": "The DIRECT-PLUS sub-study included 102 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "In a sub-study of 102 participants of the Dietary Intervention Randomized Controlled Trial Polyphenols Unprocessed Study (DIRECT-PLUS) trial, we tested the effect of weight loss following 18 months of lifestyle intervention on predicted brain age based on magnetic resonance imaging (MRI)-assessed resting-state functional connectivity (RSFC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "53c9c73a-ba98-4c5b-b334-86c8e93c7059",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C4",
+      "claim": "The brain age prediction model successfully predicted chronological age from RSFC in three cohorts (n=291;358;102).",
+      "claim_type": "EXPLICIT",
+      "source": "To establish our method, we first demonstrated that our model could successfully predict chronological age from RSFC in three cohorts (n=291;358;102).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the validation results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "79bc8535-a942-4102-b62d-01e30c49ba88",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C5",
+      "claim": "Among DIRECT-PLUS participants, 1% of body weight loss resulted in an 8.9 months' attenuation of brain age.",
+      "claim_type": "EXPLICIT",
+      "source": "We then found that among the DIRECT-PLUS participants, 1% of body weight loss resulted in an 8.9 months' attenuation of brain age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "ac949017-e402-4b48-ab1e-6a51c3c763f7",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C6",
+      "claim": "Attenuation of brain age was significantly associated with improved liver biomarkers after 18 months of intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "Attenuation of brain age was significantly associated with improved liver biomarkers, decreased liver fat, and visceral and deep subcutaneous adipose tissues after 18 months of intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's statistical analysis of clinical outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "e106b0eb-bc99-4548-9dfb-98113c18baba",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C7",
+      "claim": "Attenuation of brain age was significantly associated with decreased liver fat after 18 months of intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "Attenuation of brain age was significantly associated with improved liver biomarkers, decreased liver fat, and visceral and deep subcutaneous adipose tissues after 18 months of intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's statistical analysis of clinical outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "67788a5f-0490-4bea-86aa-deff1a115542",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C8",
+      "claim": "Attenuation of brain age was significantly associated with decreased visceral adipose tissue after 18 months of intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "Attenuation of brain age was significantly associated with improved liver biomarkers, decreased liver fat, and visceral and deep subcutaneous adipose tissues after 18 months of intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's statistical analysis of clinical outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "eb4e51c4-46b6-4827-b4f6-3768c632f91d",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C9",
+      "claim": "Lower consumption of processed food was associated with attenuated brain age.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we showed that lower consumption of processed food, sweets and beverages were associated with attenuated brain age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis of food consumption questionnaires.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "05f7a6f4-afe9-45ee-8304-e309d691327e",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C10",
+      "claim": "Lower consumption of sweets and beverages was associated with attenuated brain age.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we showed that lower consumption of processed food, sweets and beverages were associated with attenuated brain age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis of food consumption questionnaires.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "77e0c7ab-a783-4ad1-8ecd-d3c22635a724",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C11",
+      "claim": "Successful weight loss following lifestyle intervention might have a beneficial effect on the trajectory of brain aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful weight loss following lifestyle intervention might have a beneficial effect on the trajectory of brain aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "25cb17b7-8139-41c1-a960-0433d9268a7a",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C12",
+      "claim": "Brain aging is a complex, multifaceted process with various manifestations in different periods of the human lifespan, brain regions, and imaging modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain aging is a complex, multifaceted process with various manifestations in different periods of the human lifespan, brain regions, and imaging modalities (Jack et al., 2017; Bethlehem et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "bc8462ab-fc29-426b-a4b5-9117ae662d78",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C13",
+      "claim": "Over-estimation of brain age is observed in mild cognitive impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-estimation of brain age, in relation to chronological age, is observed in several neurological conditions such as mild cognitive impairment, Alzheimer's disease (AD), schizophrenia, and depression (Liem et al., 2017; Koutsouleris et al., 2014; Bashyam et al., 2020), and is associated with an increase in mortality rate (Cole et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "69b6e710-d109-47c2-be8a-7a48ca33d4f4",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C14",
+      "claim": "Over-estimation of brain age is observed in Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-estimation of brain age, in relation to chronological age, is observed in several neurological conditions such as mild cognitive impairment, Alzheimer's disease (AD), schizophrenia, and depression (Liem et al., 2017; Koutsouleris et al., 2014; Bashyam et al., 2020), and is associated with an increase in mortality rate (Cole et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "2a01bdcf-d640-4a7b-8842-887113200a01",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C15",
+      "claim": "Over-estimation of brain age is observed in schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-estimation of brain age, in relation to chronological age, is observed in several neurological conditions such as mild cognitive impairment, Alzheimer's disease (AD), schizophrenia, and depression (Liem et al., 2017; Koutsouleris et al., 2014; Bashyam et al., 2020), and is associated with an increase in mortality rate (Cole et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "a6748ffc-92f8-4b88-a41f-69f37df890c9",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C16",
+      "claim": "Over-estimation of brain age is observed in depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-estimation of brain age, in relation to chronological age, is observed in several neurological conditions such as mild cognitive impairment, Alzheimer's disease (AD), schizophrenia, and depression (Liem et al., 2017; Koutsouleris et al., 2014; Bashyam et al., 2020), and is associated with an increase in mortality rate (Cole et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "68ac5154-6d17-44bf-83c8-e1b76185abae",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C17",
+      "claim": "Over-estimation of brain age is associated with an increase in mortality rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-estimation of brain age, in relation to chronological age, is observed in several neurological conditions such as mild cognitive impairment, Alzheimer's disease (AD), schizophrenia, and depression (Liem et al., 2017; Koutsouleris et al., 2014; Bashyam et al., 2020), and is associated with an increase in mortality rate (Cole et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "e27a2090-b8fc-48b0-a11a-e625b897636e",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C18",
+      "claim": "Over-estimation of brain age was found in obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, over-estimation of brain age was also found in obesity (Franke et al., 2014; Kolenic et al., 2018; Ronan et al., 2016), suggesting that the brain age framework may provide a powerful tool for assessing accelerated brain aging due to excessive weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "46e832dd-45b5-42dd-8b71-33d4a6add287",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C19",
+      "claim": "Obesity is associated with risk of cardiovascular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "These comorbidities of obesity and typical aging include the risk of cardiovascular disease (Park et al., 2013), inflammation (Frasca et al., 2017), type 2 diabetes (Ahima, 2009), DNA damage (Niedernhofer et al., 2018; Shimizu et al., 2014), and neurodegenerative processes (Pugazhenthi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "9f166469-df0f-4938-ae5c-4460373ffb86",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C20",
+      "claim": "Obesity is associated with inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "These comorbidities of obesity and typical aging include the risk of cardiovascular disease (Park et al., 2013), inflammation (Frasca et al., 2017), type 2 diabetes (Ahima, 2009), DNA damage (Niedernhofer et al., 2018; Shimizu et al., 2014), and neurodegenerative processes (Pugazhenthi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "ba2544ea-e1f6-4d68-937a-a1cb408854c5",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C21",
+      "claim": "Obesity is associated with type 2 diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "These comorbidities of obesity and typical aging include the risk of cardiovascular disease (Park et al., 2013), inflammation (Frasca et al., 2017), type 2 diabetes (Ahima, 2009), DNA damage (Niedernhofer et al., 2018; Shimizu et al., 2014), and neurodegenerative processes (Pugazhenthi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "07c4d099-6155-402b-af49-d07b245d672a",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C22",
+      "claim": "Obesity is associated with DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "These comorbidities of obesity and typical aging include the risk of cardiovascular disease (Park et al., 2013), inflammation (Frasca et al., 2017), type 2 diabetes (Ahima, 2009), DNA damage (Niedernhofer et al., 2018; Shimizu et al., 2014), and neurodegenerative processes (Pugazhenthi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "55c7e3c0-e227-41c4-a548-05201f7eea31",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C23",
+      "claim": "Obesity is associated with neurodegenerative processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These comorbidities of obesity and typical aging include the risk of cardiovascular disease (Park et al., 2013), inflammation (Frasca et al., 2017), type 2 diabetes (Ahima, 2009), DNA damage (Niedernhofer et al., 2018; Shimizu et al., 2014), and neurodegenerative processes (Pugazhenthi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "fa238b7f-0370-4ae7-80a6-1876317f37c0",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C24",
+      "claim": "The link between excessive weight and neuronal damage is likely mediated by adiposity, metabolic dysfunction, and alteration in the gut microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "The link between excessive weight and neuronal damage is likely mediated by adiposity, metabolic dysfunction, and alteration in the gut microbiome (Gupta et al., 2020; Farruggia and Small, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research and represents a mechanistic inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "e919b75e-b0d3-4857-a2af-a1871d5cfa27",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C25",
+      "claim": "Reduction in gray and white matter volume was associated with midlife obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, reduction in gray and white matter volume (Kullmann et al., 2015; Garc\u00eda-Garc\u00eda et al., 2019), changes in brain connectivity (Parsons et al., 2022; Daoust et al., 2021), cognitive impairment (Yang et al., 2018), and the prevalence of dementia (Pedditzi et al., 2016) were all associated with midlife obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "67a120e3-805b-4804-896f-bb7137130160",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C26",
+      "claim": "Changes in brain connectivity were associated with midlife obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, reduction in gray and white matter volume (Kullmann et al., 2015; Garc\u00eda-Garc\u00eda et al., 2019), changes in brain connectivity (Parsons et al., 2022; Daoust et al., 2021), cognitive impairment (Yang et al., 2018), and the prevalence of dementia (Pedditzi et al., 2016) were all associated with midlife obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "3f8c5d36-d97c-4fe8-903b-6ed7a7386d66",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C27",
+      "claim": "Cognitive impairment was associated with midlife obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, reduction in gray and white matter volume (Kullmann et al., 2015; Garc\u00eda-Garc\u00eda et al., 2019), changes in brain connectivity (Parsons et al., 2022; Daoust et al., 2021), cognitive impairment (Yang et al., 2018), and the prevalence of dementia (Pedditzi et al., 2016) were all associated with midlife obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "a2bad1bb-7d78-4478-a417-c7cfaae13a17",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C28",
+      "claim": "The prevalence of dementia was associated with midlife obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, reduction in gray and white matter volume (Kullmann et al., 2015; Garc\u00eda-Garc\u00eda et al., 2019), changes in brain connectivity (Parsons et al., 2022; Daoust et al., 2021), cognitive impairment (Yang et al., 2018), and the prevalence of dementia (Pedditzi et al., 2016) were all associated with midlife obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "7a585966-509c-4263-b29e-02ba497dcc72",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C29",
+      "claim": "Weight loss, glycemic control, lowering of blood pressure, and increment in polyphenols-rich food were associated with an attenuation in brain atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that weight loss, glycemic control, lowering of blood pressure, and increment in polyphenols-rich food were associated with an attenuation in brain atrophy (Kaplan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to findings from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "2f4f4a98-939f-46be-bb93-2c5e91df3d40",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C30",
+      "claim": "Obesity is linked with decreased connectivity within the default mode network.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have linked obesity with decreased connectivity within the default mode network (Doucet et al., 2018; Beyer et al., 2017) and increased connectivity with the lateral orbitofrontal cortex (Parsons et al., 2022), which are also seen in normal aging (Sala-Llonch et al., 2015; Lopez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "d9d43dd2-5a0b-4002-a34e-650526bdc8eb",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C31",
+      "claim": "Obesity is linked with increased connectivity with the lateral orbitofrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have linked obesity with decreased connectivity within the default mode network (Doucet et al., 2018; Beyer et al., 2017) and increased connectivity with the lateral orbitofrontal cortex (Parsons et al., 2022), which are also seen in normal aging (Sala-Llonch et al., 2015; Lopez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "29b83a93-326b-4df8-a9fb-4361e16445cf",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C32",
+      "claim": "Decreased connectivity within the default mode network is seen in normal aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have linked obesity with decreased connectivity within the default mode network (Doucet et al., 2018; Beyer et al., 2017) and increased connectivity with the lateral orbitofrontal cortex (Parsons et al., 2022), which are also seen in normal aging (Sala-Llonch et al., 2015; Lopez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "87439111-d90d-4010-bffc-14b9cfed7ddb",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C33",
+      "claim": "Increased connectivity with the lateral orbitofrontal cortex is seen in normal aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have linked obesity with decreased connectivity within the default mode network (Doucet et al., 2018; Beyer et al., 2017) and increased connectivity with the lateral orbitofrontal cortex (Parsons et al., 2022), which are also seen in normal aging (Sala-Llonch et al., 2015; Lopez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "c241f004-605d-4f94-8b04-d527372463e3",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C34",
+      "claim": "Longitudinal trials have reported changes in connectivity patterns following weight reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Longitudinal trials have reported changes in these connectivity patterns following weight reduction (McFadden et al., 2013; Lowe et al., 2019), indicating that they can be altered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "76cc89c1-4cc3-4972-a33e-df2342552b65",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C35",
+      "claim": "The brain age model was trained on the NKI dataset (n=291).",
+      "claim_type": "EXPLICIT",
+      "source": "We trained and validated the age prediction model using two separate cohorts (n=291 [Nooner et al., 2012], 358 [Shafto et al., 2014; Taylor et al., 2017]), then applied it to our group of participants from the DIRECT-PLUS (n=102).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "9f2deea7-d3d3-4b1d-a4f3-dd81e5fa6e80",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C36",
+      "claim": "The brain age model was tested on the Cam-CAN dataset (n=358).",
+      "claim_type": "EXPLICIT",
+      "source": "We trained and validated the age prediction model using two separate cohorts (n=291 [Nooner et al., 2012], 358 [Shafto et al., 2014; Taylor et al., 2017]), then applied it to our group of participants from the DIRECT-PLUS (n=102).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "e3843dde-85bd-4a74-9ff4-927c43845854",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C37",
+      "claim": "The NKI dataset is composed of 291 subjects (226 females, 65 males) recruited from Rockland County, USA.",
+      "claim_type": "EXPLICIT",
+      "source": "The NKI dataset is composed of 291 subjects (226 females, 65 males) recruited from Rockland County, USA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "3f825bdc-ae75-42bc-99e6-cb96290e03f5",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C38",
+      "claim": "The Cam-CAN dataset includes 358 subjects (193 females, 165 males) from Cambridge City, UK.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cam-CAN dataset includes 358 (193 females, 165 males) subjects roughly uniformly distributed from Cambridge City, UK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "48d3126c-bf99-4cda-b7c3-6e1bce8cd63d",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C39",
+      "claim": "The DIRECT-PLUS trial was launched in May 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "The DIRECT-PLUS was launched in May 2017 and conducted in an isolated workplace in Israel (Nuclear Research Center Negev, Dimona, Israel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the trial timeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "c91f61bd-197c-4f11-9d76-c0943bf980ac",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C40",
+      "claim": "Among 378 volunteers, 294 met age and abdominal obesity inclusion criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 378 volunteers, 294 met age (30+ years of age) and abdominal obesity inclusion criteria waist circumference (WC): men >102 cm, women >88 cm (U.S. Department of Health and Human Services, 2013; Centers for Disease Control and Prevention, 2020) or dyslipidemia (TG >150 mg/dL and high-density-lipoprotein-cholesterol [HDL-C] \u226440 mg/dL for men, \u226450 mg/dL for women [Grundy et al., 2005]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about participant recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "ac767d8b-7994-441c-a57e-153fadc49d1b",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C41",
+      "claim": "Among 294 eligible participants, 132 participants were randomly assigned to participate in the fMRI sub-study.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 294 eligible participants, 132 participants were randomly assigned to participate in the fMRI sub-study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "0be2f42e-d03c-48c2-8488-b631c6375097",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C42",
+      "claim": "Participants were randomized in a 1:1:1 ratio into one of three intervention groups: HDG, MED, and green-MED.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants completed the baseline measurements and were randomized, using a computer-based program, in a 1:1:1 ratio, stratified by sex and work status (to ensure equal workplace-related lifestyle features between groups), into one of the three intervention groups: healthy dietary guidelines (HDG) as an active control group, Mediterranean diet (MED), green-MED, all combined with PA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the randomization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "44b71161-656f-4237-a544-c4e5368cde6d",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C43",
+      "claim": "Interventions lasted for 18 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Interventions lasted for 18 months and were contemporaneous, and participants were not blind to group assignment (open-label protocol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the intervention duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "f3d7f2cc-66b5-4078-9870-bb683a0015a4",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C44",
+      "claim": "Participants in both MED groups were assigned to a diet rich in vegetables, with poultry and fish replacing beef and lamb, with 1500\u20131800 kcal/day for men, 1200\u20131400 kcal/day for women.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants in both MED groups were assigned to a diet rich in vegetables, with poultry and fish replacing beef and lamb, with 1500\u20131800 kcal/day for men, 1200\u20131400 kcal/day for women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dietary intervention.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "a6dcd83f-65d3-4e71-95ed-6a617fe3766f",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C45",
+      "claim": "The MED diet additionally included 28 g/day of walnuts (+440 mg/day polyphenols provided).",
+      "claim_type": "EXPLICIT",
+      "source": "The diet additionally included 28 g/day of walnuts (+440 mg/day polyphenols provided).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dietary intervention.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "5fdfc949-0573-4714-8d29-61d90bb221dc",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C46",
+      "claim": "The green-MED group further consumed green tea (3\u20134 cups/day) and Wolffia globosa green shake (100 g/day frozen cubes, +1240 mg/day total polyphenols provided).",
+      "claim_type": "EXPLICIT",
+      "source": "The green-MED group further consumed green tea (3\u20134 cups/day) and Wolffia globosa green shake (100 g/day frozen cubes, +1240 mg/day total polyphenols provided).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dietary intervention.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "7275bd77-c9ea-41cc-aa3a-8f3e988a9c52",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C47",
+      "claim": "MRI scans were conducted at the Soroka University Medical Center in a 3T Philips Ingenia scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "MRI scans were conducted at the Soroka University Medical Center (SUMC), Beer Sheva. Participants were scanned in a 3T Philips Ingenia scanner (Amsterdam, The Netherlands) equipped with a standard head coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MRI acquisition protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "ae49745e-912d-4f46-9254-6a7d975f2bc8",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C48",
+      "claim": "Each MRI session included 2 RS-fMRI runs of 7 min each and a 3D T1-weighted anatomical scan.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the two sessions at T0 and T18 included 2 RS-fMRI runs of 7 min each and a 3D T1-weighted anatomical scan to allow registration of the functional data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MRI acquisition protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "96c540dc-06d6-4326-b06e-7adb18787056",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C49",
+      "claim": "Of the 132 subjects that participated in the fMRI sub-study, 102 were included in all analyses after exclusions due to excessive in-scanner motion (23% omitted).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 132 subjects that participated in the fMRI sub-study, 102 were included in all analyses after exclusions due to excessive in-scanner motion (23% omitted; MRI preprocessing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about data exclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "9c2586a5-8ea9-4d5c-8659-a973d74375a4",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C50",
+      "claim": "The predicted brain age and observed chronological age were correlated (r=0.244, p=0.013; MAE = 8.337, p<0.001) in the DIRECT-PLUS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted brain age and observed chronological age were correlated (r=0.244, p=0.013; MAE = 8.337, p<0.001; Figure 2), reproducing the results found within the two other datasets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the study's analysis, also shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "597332e8-7e74-4a7a-a3a6-5a7feedda9f0",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C51",
+      "claim": "The mean participant age was 51.5\u00b110.5 years (median = 50.6, range 33.9\u201381.9).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean participant age was 51.5\u00b110.5 years (median = 50.6, range 33.9\u201381.9), and 91.2% were men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "89baddd6-f506-4474-8f07-0a4418513e1b",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C52",
+      "claim": "91.2% of participants were men.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean participant age was 51.5\u00b110.5 years (median = 50.6, range 33.9\u201381.9), and 91.2% were men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "32b1b1b3-761e-4ae3-94f7-0e3236dfbb2c",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C53",
+      "claim": "The mean BMI was 30.1\u00b12.5 kg/m2.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean BMI and WC were 30.1\u00b12.5 kg/m2 and 107.1\u00b16.6 cm, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "cb9f94fa-ef77-4b71-8d37-2bd08193ef3e",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C54",
+      "claim": "The mean WC was 107.1\u00b16.6 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean BMI and WC were 30.1\u00b12.5 kg/m2 and 107.1\u00b16.6 cm, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "8ab00b8e-f7a3-4c24-a726-c035b8a19d87",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C55",
+      "claim": "The mean baseline predicted brain age by RSFC was 52.8\u00b14 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean baseline predicted brain age by RSFC was 52.8\u00b14 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "77a3db2d-73c8-4337-aa2c-d49d03e5fddb",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C56",
+      "claim": "At baseline, brain age gap was correlated with chemerin (r=0.22, p=0.029).",
+      "claim_type": "EXPLICIT",
+      "source": "At baseline, brain age gap was correlated with chemerin (r=0.22, p=0.029), and with obesity-associated measurements obtained by MRI including visceral abdominal tissue (VAT): r=0.23, p=0.02 and superficial subcutaneous fat (SSC): r=\u22120.25, p=0.014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the baseline analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "a6513e4f-8634-49f4-b8b3-70a2c32ac518",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C57",
+      "claim": "At baseline, brain age gap was correlated with visceral abdominal tissue (VAT): r=0.23, p=0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "At baseline, brain age gap was correlated with chemerin (r=0.22, p=0.029), and with obesity-associated measurements obtained by MRI including visceral abdominal tissue (VAT): r=0.23, p=0.02 and superficial subcutaneous fat (SSC): r=\u22120.25, p=0.014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the baseline analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "de30a5a0-9b33-4362-9630-e9f10b277288",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C58",
+      "claim": "At baseline, brain age gap was correlated with superficial subcutaneous fat (SSC): r=\u22120.25, p=0.014.",
+      "claim_type": "EXPLICIT",
+      "source": "At baseline, brain age gap was correlated with chemerin (r=0.22, p=0.029), and with obesity-associated measurements obtained by MRI including visceral abdominal tissue (VAT): r=0.23, p=0.02 and superficial subcutaneous fat (SSC): r=\u22120.25, p=0.014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the baseline analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "d6195782-2970-4f95-be71-5cebc7291173",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C59",
+      "claim": "Following 18 months of lifestyle intervention, participants showed a reduction of 0.76 (\u00b11.86) units in BMI on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Following 18 months of lifestyle intervention, participants showed a reduction of 0.76 (\u00b11.86) units in BMI on average, 2.31 (\u00b15.61) kg reduction in weight, and 5.39 (\u00b15.89) cm reduction in WC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the intervention analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "f49dc713-1ddd-48e2-a87b-d1ea8ec99542",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C60",
+      "claim": "Following 18 months of lifestyle intervention, participants showed a 2.31 (\u00b15.61) kg reduction in weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Following 18 months of lifestyle intervention, participants showed a reduction of 0.76 (\u00b11.86) units in BMI on average, 2.31 (\u00b15.61) kg reduction in weight, and 5.39 (\u00b15.89) cm reduction in WC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the intervention analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "7550e2ce-ddff-4ec2-ae93-ee241fd0c7da",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C61",
+      "claim": "Following 18 months of lifestyle intervention, participants showed a 5.39 (\u00b15.89) cm reduction in WC.",
+      "claim_type": "EXPLICIT",
+      "source": "Following 18 months of lifestyle intervention, participants showed a reduction of 0.76 (\u00b11.86) units in BMI on average, 2.31 (\u00b15.61) kg reduction in weight, and 5.39 (\u00b15.89) cm reduction in WC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the intervention analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "d26fa2cd-7dd7-4040-8208-3248c925ce1a",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C62",
+      "claim": "At T18, the observed age was lower than expected in 56.8% of the subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, at T18, the observed age was lower than expected in 56.8% of the subjects, while the opposite was found in 43.1% of the subjects (X2=1.922, p=0.166; see Figure 3, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the intervention analysis, also shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "5d636dbb-890f-438a-9bde-6a31e4a3290f",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C63",
+      "claim": "A correlation was found between \u2206BMI and brain age attenuation such that participants that showed a decrease in BMI also exhibited attenuated brain aging (r=0.319, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found a correlation between \u2206BMI and brain age attenuation such that participants that showed a decrease in BMI also exhibited attenuated brain aging (r=0.319, p<0.001; Figure 3, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the study's analysis, also shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "605057f5-cf8e-4d50-badb-2da79d9ea3bd",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C64",
+      "claim": "Similar results were found with \u2206body weight (r=0.319, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were found with \u2206body weight (r=0.319, p<0.001) and \u2206WC (r=0.198, p=0.046; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the study's analysis, also shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "aea1bf7c-2b72-4462-9a9f-210b39e868a8",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C65",
+      "claim": "Similar results were found with \u2206WC (r=0.198, p=0.046).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were found with \u2206body weight (r=0.319, p<0.001) and \u2206WC (r=0.198, p=0.046; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the study's analysis, also shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "7af1436e-1d35-4f3f-82fd-67c2631ab9db",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C66",
+      "claim": "All fat deposition measurements except deep subcutaneous changes (superficial subcutaneous, visceral, and liver fat changes) were significantly and directly associated with brain age attenuation (p<0.05, FDR corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "Except of deep subcutaneous changes, all fat deposition measurements, superficial subcutaneous, visceral, and liver fat changes (e.g. loss) were significantly and directly associated with brain age attenuation (p<0.05, FDR corrected), i.e., the more the individual succeeded in diet-induced fat depots loss, the more brain age attenuation has been achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "ac48d4f9-1be2-4234-b73f-f18116fe4366",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C67",
+      "claim": "A decrease in ALT was significantly associated with attenuation in brain age (p<0.05, FDR corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "Out of all examined liver biomarkers, a decrease in ALT, GGT, alkaline phosphatase, and serum chemerin were significantly associated with attenuation in brain age (p<0.05 for all, FDR corrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "e37ba4f6-ecd9-474a-9024-4daa3e265315",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C68",
+      "claim": "A decrease in GGT was significantly associated with attenuation in brain age (p<0.05, FDR corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "Out of all examined liver biomarkers, a decrease in ALT, GGT, alkaline phosphatase, and serum chemerin were significantly associated with attenuation in brain age (p<0.05 for all, FDR corrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "f1c222fc-0a1e-491e-bef2-79bf4ae381d5",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C69",
+      "claim": "A decrease in alkaline phosphatase was significantly associated with attenuation in brain age (p<0.05, FDR corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "Out of all examined liver biomarkers, a decrease in ALT, GGT, alkaline phosphatase, and serum chemerin were significantly associated with attenuation in brain age (p<0.05 for all, FDR corrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "1e6c54b5-9f4f-49f8-8c81-3c67d9bd5cae",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C70",
+      "claim": "A decrease in serum chemerin was significantly associated with attenuation in brain age (p<0.05, FDR corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "Out of all examined liver biomarkers, a decrease in ALT, GGT, alkaline phosphatase, and serum chemerin were significantly associated with attenuation in brain age (p<0.05 for all, FDR corrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "97b939f4-ffca-4c80-a555-f3b66a2f8737",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C71",
+      "claim": "An increase in \u2206HDL-C was significantly correlated with brain age attenuation (r=-0.273, p=0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "Of all examined lipid profile markers, only an increase in \u2206HDL-C was significantly correlated with brain age attenuation (r=-0.273, p=0.005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "5c1fd951-bad7-412b-8ba0-4cc25718d05e",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C72",
+      "claim": "A decrease in HOC was significantly correlated with brain age attenuation (r=-0.296, p=0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a decrease in HOC was significantly correlated with brain age attenuation (r=-0.296, p=0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "7d8f533e-ca5a-4b90-9a07-9cb1aff642a1",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C73",
+      "claim": "After correction for changes in BMI, only \u2206alkaline phosphatase, \u2206chemerin, and \u2206HOC were associated with brain age attenuation (all p's<0.018).",
+      "claim_type": "EXPLICIT",
+      "source": "However, after further correction for changes in BMI, only \u2206alkaline phosphatase, \u2206chemerin, and \u2206HOC were associated with brain age attenuation (all p's<0.018), with no significant associations with all other biomarkers (p>0.05, for all; see Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis after controlling for BMI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "fe5280a2-5302-4981-ba42-3c4c7069dbc3",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C74",
+      "claim": "Decreased consumption of processed food was associated with more attenuation in brain age (t=3.131, p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our hypothesis, we found that decreased consumption of processed food (t=3.131, p=0.002) and sweets and beverages (\u03c4=\u22120.231, p=0.002) was associated with more attenuation in brain age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis of food consumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "f9b08765-ffd0-4927-a8a2-794db2b1ed4e",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C75",
+      "claim": "Decreased consumption of sweets and beverages was associated with more attenuation in brain age (\u03c4=\u22120.231, p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our hypothesis, we found that decreased consumption of processed food (t=3.131, p=0.002) and sweets and beverages (\u03c4=\u22120.231, p=0.002) was associated with more attenuation in brain age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis of food consumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "ca231d19-13a2-467a-b12e-3ce1d4e4238f",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C76",
+      "claim": "An increase in green tea and walnut consumption did not result in a significant correlation with brain age attenuation (all \u03c4's<0.081, p's>0.121).",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in green tea and walnut consumption, for which we hypothesized an attenuation effect on brain aging due to their high polyphenol content, did not result in a significant correlation (all \u03c4's<0.081, p's>0.121; see Supplementary file 4 for all measures).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis of food consumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "800f0d72-19e7-4e36-bf91-11d3e4975376",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C77",
+      "claim": "This is one of the first studies that examined the beneficial effect of successful weight loss on the brain aging trajectory in humans, assessed by resting-state fMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, this is one of the first studies that examined the beneficial effect of successful weight loss on the brain aging trajectory in humans, assessed by resting-state fMRI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "dd3a0b5c-ff56-4eac-967c-60f8b15a8f7b",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C78",
+      "claim": "Cross-sectional and longitudinal studies found that reported adherence to a MED was linked to increased gray matter volume in multiple regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-sectional and longitudinal studies found that reported adherence to a MED was linked to increased gray matter volume in multiple regions (Staubo et al., 2017), including the hippocampus (Ballarini et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "839d53c0-e245-4b41-89a4-e71e1289f352",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C79",
+      "claim": "Adherence to a MED was linked to increased gray matter volume in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-sectional and longitudinal studies found that reported adherence to a MED was linked to increased gray matter volume in multiple regions (Staubo et al., 2017), including the hippocampus (Ballarini et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "6de190b2-d571-4770-9766-5794dc3d7db6",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C80",
+      "claim": "Adherence to HDG was associated with reduced cognitive decline.",
+      "claim_type": "EXPLICIT",
+      "source": "Adherence to HDG was also associated with reduced cognitive decline (Gardener and Rainey-Smith, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "647ed58f-56a8-473e-b8a4-1aa0cafece28",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C81",
+      "claim": "Subjects enrolled in a PA+dietary intervention exhibit lower hippocampal atrophy and smaller ventricles.",
+      "claim_type": "EXPLICIT",
+      "source": "Such studies from our group (Kaplan et al., 2022) and others (Erickson et al., 2011; Espeland et al., 2016) revealed that subjects enrolled in a PA+dietary intervention exhibit lower hippocampal atrophy and smaller ventricles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "a5bc1539-3177-4799-8242-8794e16186e2",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C82",
+      "claim": "A beneficial effect on cognitive functioning in middle age was found following lifestyle intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar beneficial effect on cognitive functioning in middle age was also found (Valls-Pedret et al., 2015), along with functional connectivity alteration in the default mode and executive control networks (Voss et al., 2010; Garc\u00eda-Casares et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "23c5213d-d820-4f57-a6b3-1537721aa25e",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C83",
+      "claim": "Functional connectivity alteration in the default mode and executive control networks was found following lifestyle intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar beneficial effect on cognitive functioning in middle age was also found (Valls-Pedret et al., 2015), along with functional connectivity alteration in the default mode and executive control networks (Voss et al., 2010; Garc\u00eda-Casares et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "34bfbe34-b715-4e9d-a5b9-6dcabacb1349",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C84",
+      "claim": "A single study in rats has tested the effect of a dietary intervention using the brain age framework and found a reduction in brain aging rate.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, a single study in rats has tested the effect of a dietary intervention using the brain age framework and found a reduction in brain aging rate (Brusini et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "081aca65-e032-46ca-9e49-c93cdb2bbb48",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C85",
+      "claim": "Reducing body weight and intrahepatic fat following a lifestyle intervention was related to methylation age attenuation in the CENTRAL cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the CENTRAL cohort, we recently reported that reducing body weight and intrahepatic fat following a lifestyle intervention was related to methylation age attenuation (Yaskolka Meir et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to findings from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "d1d28ad7-62dc-4e57-b916-c56a64276eed",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C86",
+      "claim": "The precision of an age prediction model based on RSFC is typically lower than a model based on structural brain imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The precision of an age prediction model based on RSFC is typically lower than a model based on structural brain imaging (de Lange et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "5b95ff08-4fe8-42c3-86ac-26ea5f4dea09",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C87",
+      "claim": "A higher model precision may result in a lower sensitivity to detect clinical effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a higher model precision may result in a lower sensitivity to detect clinical effects (Bashyam et al., 2020; Jirsaraie et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "9099ac3b-ad38-4315-a05f-7ea70225415d",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C88",
+      "claim": "The clinical relevance of functional brain age is shown in predicting Alzheimer's onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the clinical relevance of functional brain age is shown, for example, in predicting Alzheimer's onset (Gonneaud et al., 2021) and symptoms severity in depression (Dunlop et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "83f7a86d-332f-414d-9a0b-8e6c4fe4bbe3",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C89",
+      "claim": "The clinical relevance of functional brain age is shown in predicting symptoms severity in depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the clinical relevance of functional brain age is shown, for example, in predicting Alzheimer's onset (Gonneaud et al., 2021) and symptoms severity in depression (Dunlop et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "0095f049-6333-4446-913c-6fda1b7ee71d",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C90",
+      "claim": "The negative impact of elevated liver enzymes and liver fat on brain health is seen in the case of AD.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative impact of elevated liver enzymes and liver fat on brain health is seen, for example, in the case of AD (Nho et al., 2019; Labenz et al., 2021; Ghareeb et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "b2c0cc37-ade7-423e-8bc4-10e77a2c0984",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C91",
+      "claim": "The link between elevated liver enzymes/liver fat and brain health is thought to be mediated by oxidative stress, vascular damage, and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "This link is thought to be mediated by oxidative stress, vascular damage, and inflammation (Helfer and Wu, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research and represents a mechanistic inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "5f616914-9e34-4990-8aaa-8d2a2b800aa0",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C92",
+      "claim": "Chemerin is an adipokine linked to energy homeostasis, adipogenesis, and excessive weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemerin, produced in the liver, is an adipokine linked to energy homeostasis, adipogenesis, and excessive weight (Helfer and Wu, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "ba807425-f300-421b-bfc1-0d5564baa332",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C93",
+      "claim": "Chemerin is correlated with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemerin is correlated with age (Aronis et al., 2014) and BMI (Ernst and Sinal, 2010) and was found to be reduced following lifestyle intervention (Bl\u00fcher et al., 2012; Ashtary-Larky et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "e4e2da89-62cf-4ec0-bc3d-2ea29abeeae0",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C94",
+      "claim": "Chemerin is correlated with BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemerin is correlated with age (Aronis et al., 2014) and BMI (Ernst and Sinal, 2010) and was found to be reduced following lifestyle intervention (Bl\u00fcher et al., 2012; Ashtary-Larky et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "fbadfb3d-5f84-44bd-a974-5690c9f262f4",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C95",
+      "claim": "Chemerin was found to be reduced following lifestyle intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemerin is correlated with age (Aronis et al., 2014) and BMI (Ernst and Sinal, 2010) and was found to be reduced following lifestyle intervention (Bl\u00fcher et al., 2012; Ashtary-Larky et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "9bbfdd5c-3f9e-4879-8390-c1ad8b6a3e03",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C96",
+      "claim": "Possible linking mechanisms between serum chemerin and brain aging are hypertension and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "The relation between serum chemerin and brain aging is still unclear, but possible linking mechanisms are hypertension (Ferland et al., 2020) and inflammation (Ernst and Sinal, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research and represents a speculative inference.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "a2ecd4d1-8e34-4650-a984-c4033e303abf",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C97",
+      "claim": "HDL-C has a protective role in cognitive decline and dementia.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with evidence of the protective role of HDL-C in cognitive decline and dementia (Hottman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "6b023541-9931-4ab5-86ea-3cf3befbf849",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C98",
+      "claim": "The study had a gender imbalance (F: 93, M: 9; F: 8.8%, M: 91.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "The first limitation was gender imbalance (F: 93, M: 9; F: 8.8%, M: 91.2%), which reflected the workplace profile from which participants were recruited (Yaskolka Meir et al., 2019; Tsaban et al., 2021; Rinott et al., 2021; Zelicha et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "2ef847b5-9b0a-4458-aa9f-537ab6ee1f92",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C99",
+      "claim": "The gender distribution in the study misrepresents the proportion of obese women within the general population (F: 51%, M: 49%).",
+      "claim_type": "EXPLICIT",
+      "source": "This distribution misrepresents the proportion of obese women within the general population (F: 51%, M: 49%; Craig et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "da06b910-27ad-4353-9c9a-891771d46516",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C100",
+      "claim": "Participants were recruited based on excess adiposity or dyslipidemia, representing a restricted range of the normal population.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, participants were recruited based on excess adiposity or dyslipidemia, therefore, they represented a restricted range of the normal population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "e2da4fa2-f6a8-4a6c-9fd7-5580f8e95ec5",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C101",
+      "claim": "The lack of a no-intervention control group limits the ability to directly relate findings to the intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the lack of a no-intervention control group limits our ability to directly relate our findings to the intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "556ee7bf-d11d-4168-a1ea-48f6ff095e3f",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C102",
+      "claim": "The two factors with the strongest association with brain aging were changes in anthropometry measures and liver biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal that the two factors with the strongest association with brain aging were changes in anthropometry measures and liver biomarkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "9706f719-03ae-4161-bec8-0ea90d911914",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C103",
+      "claim": "The model successfully predicted chronological age from RSFC in the NKI validation dataset (r=0.439, p<0.001; MAE = 8.544, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, a positive correlation was found between the predicted and observed age (r=0.439, p<0.001; MAE = 8.544, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the model validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "784e9019-7905-4bc8-bcbe-9982bb4d1664",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C104",
+      "claim": "The model successfully predicted chronological age from RSFC in the Cam-CAN test dataset (r=0.290, p<0.001; MAE = 11.402, p=0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we retrained the model on the entire sample and tested it in an independent sample from the Cam-CAN dataset (Shafto et al., 2014; n=358) again, yielding a positive correlation between the predicted and observed age (r=0.290, p<0.001; MAE = 11.402, p=0.005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the model testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "4cf23637-24c0-4aae-93e8-1829d40f5fa6",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C105",
+      "claim": "The correlations between the observed and predicted age were relatively moderate despite being significant and reproducible.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being significant and reproducible, we note that the correlations between the observed and predicted age were relatively moderate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the model performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "0f1efb00-7abd-40f9-adf3-5ac0c38a3d53",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C106",
+      "claim": "The intervention resulted in a \u20136.45% \u00b1 (5.60%) reduction in WC from baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "These constitute a \u20136.45% \u00b1 (5.60%) and \u20134.35% \u00b1 (5.86%) reduction from baseline for WC and BMI and weight, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the intervention analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "09e9a954-f3fa-4b9f-addf-a4f5953fd1d6",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C107",
+      "claim": "The intervention resulted in a \u20134.35% \u00b1 (5.86%) reduction in BMI and weight from baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "These constitute a \u20136.45% \u00b1 (5.60%) and \u20134.35% \u00b1 (5.86%) reduction from baseline for WC and BMI and weight, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the intervention analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "24f38c4a-65e2-46d7-81c6-810fa6eaa369",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C108",
+      "claim": "The correlations to \u2206BMI and \u2206weight were significant after correcting for age and baseline brain age (p<0.05 for all).",
+      "claim_type": "EXPLICIT",
+      "source": "The correlations to \u2206BMI and \u2206weight were significant after correcting for age and baseline brain age (p<0.05 for all), while the correlation to WC did not show a significant association (r>0.171, p's <0.079 for all).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis after controlling for confounders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "96d09ed5-12c2-44a1-a3fd-20b995bd4ca5",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C109",
+      "claim": "The correlation to WC did not show a significant association after correcting for age and baseline brain age (r>0.171, p's <0.079 for all).",
+      "claim_type": "EXPLICIT",
+      "source": "The correlations to \u2206BMI and \u2206weight were significant after correcting for age and baseline brain age (p<0.05 for all), while the correlation to WC did not show a significant association (r>0.171, p's <0.079 for all).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study's analysis after controlling for confounders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "88589aa2-c82e-476b-960c-99142b0b7f43",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C110",
+      "claim": "All results were reproduced after controlling for baseline age and predicted age at T0.",
+      "claim_type": "EXPLICIT",
+      "source": "All results were reproduced after controlling for baseline age and predicted age at T0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "1b690b0d-2be3-4595-9a77-bd1bbf5ead4d",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C111",
+      "claim": "During the 18-month trial, a modest average weight loss of 2.31 (\u00b15.61) kg was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "During the 18-month trial, a modest average weight loss of 2.31 (\u00b15.61) kg was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the intervention analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "68e38095-8355-43b7-9abd-37ba4a88b622",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C112",
+      "claim": "The maximum weight loss following lifestyle intervention is achieved in 6 months, following a regain/rebound phase.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated by our previous trials, as well as others, the maximum weight loss following lifestyle intervention is achieved in 6 months, following a regain/rebound phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws on prior research findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "5176c59d-6661-44bb-88c3-1b79ab2ca5a7",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C113",
+      "claim": "Trials have demonstrated an improvement in cardiometabolic health following a MED intervention despite a modest weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our trials and others have demonstrated an improvement in cardiometabolic health following a MED intervention (i.e. hepatic and visceral fat reduction and improved lipid profile), despite a modest weight loss (Yaskolka Meir et al., 2021b; Zelicha et al., 2022; Gepner et al., 2018; Estruch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "30c6a518-f7a5-446c-adf0-fbbe668f49f8",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C114",
+      "claim": "The current work provides the first evidence that a beneficial effect on brain age can be found in humans following dietary intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the current work provides the first evidence that such a beneficial effect on brain age can also be found in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty and significance of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "08539f23-be1e-4884-8bdf-d7b8e36c9216",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C115",
+      "claim": "Better tools for data harmonization among datasets may improve the accuracy of brain age models in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Better tools for data harmonization among datasets (Jirsaraie et al., 2023) and larger training sample size (de Lange et al., 2022) may improve the accuracy of such models in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future improvements, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "cdd12db8-c436-4956-8e1e-ba4aa3871545",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C116",
+      "claim": "Larger training sample size may improve the accuracy of brain age models in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Better tools for data harmonization among datasets (Jirsaraie et al., 2023) and larger training sample size (de Lange et al., 2022) may improve the accuracy of such models in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future improvements, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "a8d32e6b-9423-4be8-85ae-8f17bd746163",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C117",
+      "claim": "Examining the dynamics of multiple bodily ages and their interactions would enhance understanding of the complex aging process.",
+      "claim_type": "EXPLICIT",
+      "source": "We also suggest that examining the dynamics of multiple bodily ages and their interactions would enhance our understanding of the complex aging process (Yu et al., 2022; Franke and Gaser, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "c2220eb7-710b-4eaa-9dfa-35d29ee46ce5",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C118",
+      "claim": "The clinical relevance of functional brain age is shown in predicting Alzheimer's onset and symptoms severity in depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the clinical relevance of functional brain age is shown, for example, in predicting Alzheimer's onset (Gonneaud et al., 2021) and symptoms severity in depression (Dunlop et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "2905aba5-aacb-4ea9-8ce6-a19e45e3aefe",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C119",
+      "claim": "Mapping changes in clinical outcomes to months or years of attenuated brain aging has important scientific, clinical, and educational value.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that such mapping of changes in clinical outcomes to months or years of attenuated brain aging has important scientific, clinical, and even educational value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an opinion about the value of the study's approach.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "50d29c7e-9993-455a-84cf-147c1951250a",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C120",
+      "claim": "The strengths of the study include the wealth of health biomarkers, the relatively large sample for similar intervention trials, the tight on-site monitoring over dietary compliance, and the long intervention duration.",
+      "claim_type": "EXPLICIT",
+      "source": "The strengths of the study lies in the wealth of health biomarkers that included anthropometric, blood, and imaging measures, the relatively large sample for similar intervention trials, the tight on-site monitoring over the dietary compliance, and the long intervention duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study's strengths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "94ac64a2-4499-486a-8ff1-c67e3a3c348a",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C121",
+      "claim": "The use of three distinct datasets for training and validation, testing, and inference supports the generalization of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the use of three distinct datasets for training and validation, testing, and inference supports the generalization of our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological strength of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "4b4bcd5c-82e1-4342-8835-4adc22aaa05a",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C122",
+      "claim": "Figure 1 shows the DIRECT-PLUS trial design and brain age estimation methodology.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 1.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 1 depicts the trial design, measurements, and brain age calculation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "9ca998f2-af18-425a-87fe-0be3a4abf3b6",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C123",
+      "claim": "Figure 2 shows the correlation between predicted and observed age in three datasets.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 2.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 2 displays scatter plots showing the relationship between predicted and observed age in validation, test, and DIRECT-PLUS datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "1d2a1c9e-f6b4-4fc9-8676-e510376658ff",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C124",
+      "claim": "Figure 3 shows the relationship between BMI change and brain age attenuation.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 3.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 3 depicts expected vs. observed brain age and the correlation with BMI change.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "2a8907d2-1c0d-4d8f-80aa-59524955f351",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "claim_id": "C125",
+      "claim": "Figure 4 shows the correlations between brain age attenuation and various clinical measurements.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 4.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 4 displays scatter plots showing relationships between brain age attenuation and multiple clinical biomarkers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae259518-b5e9-4a6c-a417-5493875ec4a6",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The brain age prediction model was trained on the NKI dataset (n=291), validated with 5-fold cross-validation (r=0.439, p<0.001; MAE=8.544), tested on the independent Cam-CAN dataset (n=358; r=0.290, p<0.001; MAE=11.402), and applied to the DIRECT-PLUS cohort (n=102; r=0.244, p=0.013; MAE=8.337). The correlations were statistically significant but relatively moderate across all three datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38, C103-C105, C4, and C50 collectively demonstrate successful model validation across three independent datasets with consistent statistical significance. The moderate correlation coefficients (r=0.244-0.439) are acknowledged by the authors (C105) and are typical for RSFC-based brain age models. The use of independent test sets and consistent methodology supports the model's generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "bb5fbde1-0bbd-423d-91aa-c07f81086731",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The DIRECT-PLUS trial enrolled 294 eligible participants from 378 volunteers, with 132 randomly assigned to the fMRI sub-study. After excluding 23% due to excessive motion, 102 participants (91.2% male, mean age 51.5\u00b110.5 years, mean BMI 30.1\u00b12.5 kg/m\u00b2) completed the 18-month intervention across three groups (HDG, MED, green-MED) with detailed dietary protocols and MRI assessments at baseline and 18 months.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39-C55 provide comprehensive methodological details about participant recruitment, randomization, intervention protocols, and baseline characteristics. The data are internally consistent and clearly documented. However, the severe gender imbalance (91.2% male) is a significant limitation acknowledged by the authors (C98-C99) that restricts generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "c097ea86-4f84-437e-ac84-029b9f94a197",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Following 18 months of lifestyle intervention, participants showed modest weight loss (2.31\u00b15.61 kg, -4.35% from baseline) and reduced BMI (0.76\u00b11.86 units) and waist circumference (5.39\u00b15.89 cm, -6.45% from baseline). Brain age attenuation was significantly correlated with BMI change (r=0.319, p<0.001) and weight change (r=0.319, p<0.001), with 1% body weight loss corresponding to 8.9 months of brain age attenuation. The correlation with waist circumference was weaker (r=0.198, p=0.046) and became non-significant after controlling for age and baseline brain age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C59-C65, C106-C109, and C111 demonstrate a consistent relationship between weight loss and brain age attenuation with appropriate statistical testing. The effect size (8.9 months per 1% weight loss) is quantified and the correlations remain significant after controlling for confounders for BMI and weight but not waist circumference. The modest weight loss is acknowledged and contextualized within typical intervention patterns (C112).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "8644cb5e-df76-4f6d-b84e-e92be399922d",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Brain age attenuation was significantly associated with improvements in multiple clinical biomarkers after 18 months: decreased liver fat, visceral adipose tissue (VAT), and superficial subcutaneous fat (SSC) (all p<0.05, FDR corrected); decreased liver enzymes (ALT, GGT, alkaline phosphatase) and serum chemerin (all p<0.05, FDR corrected); increased HDL-C (r=-0.273, p=0.005); and decreased hippocampal occupancy score (HOC; r=-0.296, p=0.003). After controlling for BMI changes, only alkaline phosphatase, chemerin, and HOC remained significantly associated with brain age attenuation (all p<0.018). At baseline, brain age gap correlated with chemerin (r=0.22, p=0.029), VAT (r=0.23, p=0.02), and SSC (r=-0.25, p=0.014).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8, C66-C73, C56-C58, and C102 demonstrate comprehensive associations between brain age attenuation and clinical biomarkers with appropriate FDR correction for multiple comparisons. The finding that most associations become non-significant after controlling for BMI (C73) suggests BMI may be a mediating factor, which is appropriately acknowledged. The baseline correlations (C56-C58) provide additional support for the relationship between obesity-related measures and brain aging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "42921c30-2700-46c2-9979-e7eb9571d07d",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Decreased consumption of processed food (t=3.131, p=0.002) and sweets/beverages (\u03c4=-0.231, p=0.002) was significantly associated with brain age attenuation. However, increased consumption of green tea and walnuts, despite their high polyphenol content, showed no significant correlation with brain age attenuation (all \u03c4<0.081, p>0.121).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9-C10 and C74-C76 report associations between dietary patterns and brain age attenuation based on self-reported food frequency questionnaires. While the statistical tests are appropriate (t-test for binary processed food variable, Kendall's tau for ordinal data), the reliance on self-reported dietary data introduces substantial measurement error and potential recall bias. The lack of association with polyphenol-rich foods (C76) contradicts the study's hypothesis and suggests the observed associations may be confounded by overall dietary quality or other lifestyle factors rather than specific food groups.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "3bad679e-9a53-4cbe-8c65-2e971c385b4e",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that successful weight loss following lifestyle intervention might have a beneficial effect on brain aging trajectory, claiming this is one of the first studies to examine this effect in humans using resting-state fMRI. They note that only one prior study in rats tested dietary intervention effects on brain age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11, C77, C84, and C114 represent the study's main conclusion and novelty claim. While the data show associations between weight loss and brain age attenuation, the lack of a no-intervention control group (C101) prevents establishing causality. The conclusion uses cautious language ('might have') which is appropriate given this limitation. The novelty claim appears supported by the limited prior literature (C84), though the moderate model performance (MAE ~8 years for an 18-month intervention) and the observational nature of the weight loss-brain age relationship within the intervention groups limit the strength of causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "760a42a7-7d79-4bdf-a798-e9729aa10fde",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study has significant limitations including severe gender imbalance (91.2% male vs. 51% in general obese population), restricted participant selection based on adiposity/dyslipidemia, and lack of a no-intervention control group. Strengths include comprehensive biomarker assessment, relatively large sample size for intervention trials, tight dietary monitoring, long intervention duration, and use of three independent datasets for model development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C101 and C120-C121 provide a balanced assessment of study limitations and strengths. The gender imbalance is a critical limitation that severely restricts generalizability, as acknowledged by the authors. The lack of a no-intervention control group is a fundamental design limitation that prevents causal inference about the intervention's effects on brain aging. The stated strengths are valid and support the study's methodological rigor within these constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "f9964168-eea3-48fb-baec-7080545d3cba",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The introduction establishes that obesity negatively impacts the central nervous system and is associated with accelerated brain aging, multiple comorbidities (cardiovascular disease, inflammation, diabetes, DNA damage, neurodegenerative processes), and brain changes (reduced gray/white matter volume, altered connectivity, cognitive impairment, dementia). Prior studies have shown brain age over-estimation in obesity and various neurological conditions, with associations to mortality. The link between obesity and neuronal damage is mediated by adiposity, metabolic dysfunction, and gut microbiome alterations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C12-C34 provide comprehensive background from prior literature with appropriate citations. These claims establish the scientific rationale for the study by documenting known relationships between obesity, brain aging, and health outcomes. The citations appear appropriate and the claims are consistent with established scientific knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "63c008ab-6690-423f-9b5c-20fe4b176e28",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior research has shown that Mediterranean diet adherence is linked to increased gray matter volume including hippocampus, healthy dietary guidelines reduce cognitive decline, and PA+dietary interventions reduce hippocampal atrophy. RSFC-based brain age models have lower precision than structural models but may have higher sensitivity to clinical effects. Functional brain age predicts Alzheimer's onset and depression severity. Liver biomarkers and chemerin are linked to brain health through oxidative stress, inflammation, and vascular damage. HDL-C has protective effects against cognitive decline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C97 and C112-C113 provide relevant context from prior research with appropriate citations. These claims establish the biological plausibility of the study's findings and contextualize the methodological choices (e.g., using RSFC despite lower precision). The mechanistic explanations for biomarker-brain health relationships are appropriately cited and represent current scientific understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "3c9217aa-3fc9-4a3e-ab52-d477eeb4d65a",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors suggest that future improvements in brain age models may come from better data harmonization tools and larger training samples. They propose that examining dynamics of multiple bodily ages would enhance understanding of aging, and that mapping clinical outcomes to brain age attenuation has scientific, clinical, and educational value.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C117 and C119 represent reasonable suggestions for future research directions supported by appropriate citations. These are speculative statements about potential improvements and future directions rather than claims about the current study's findings, and are appropriately framed as such.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    },
+    {
+      "id": "ac512fb0-648f-481c-8ab9-c15575ca8050",
+      "content_id": "42422865-3e23-4064-9b9a-b73cf638982b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "All results were reproduced after controlling for baseline age and predicted age at T0, demonstrating robustness of findings to potential confounders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C110 indicates that sensitivity analyses were performed to control for baseline confounders, which strengthens confidence in the reported associations. This is an important methodological detail that supports the validity of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:07.517560Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "76cc89c1-4cc3-4972-a33e-df2342552b65",
+      "result_id": "ae259518-b5e9-4a6c-a417-5493875ec4a6"
+    },
+    {
+      "claim_id": "9f2deea7-d3d3-4b1d-a4f3-dd81e5fa6e80",
+      "result_id": "ae259518-b5e9-4a6c-a417-5493875ec4a6"
+    },
+    {
+      "claim_id": "e3843dde-85bd-4a74-9ff4-927c43845854",
+      "result_id": "ae259518-b5e9-4a6c-a417-5493875ec4a6"
+    },
+    {
+      "claim_id": "3f825bdc-ae75-42bc-99e6-cb96290e03f5",
+      "result_id": "ae259518-b5e9-4a6c-a417-5493875ec4a6"
+    },
+    {
+      "claim_id": "9706f719-03ae-4161-bec8-0ea90d911914",
+      "result_id": "ae259518-b5e9-4a6c-a417-5493875ec4a6"
+    },
+    {
+      "claim_id": "784e9019-7905-4bc8-bcbe-9982bb4d1664",
+      "result_id": "ae259518-b5e9-4a6c-a417-5493875ec4a6"
+    },
+    {
+      "claim_id": "53c9c73a-ba98-4c5b-b334-86c8e93c7059",
+      "result_id": "ae259518-b5e9-4a6c-a417-5493875ec4a6"
+    },
+    {
+      "claim_id": "9c2586a5-8ea9-4d5c-8659-a973d74375a4",
+      "result_id": "ae259518-b5e9-4a6c-a417-5493875ec4a6"
+    },
+    {
+      "claim_id": "4cf23637-24c0-4aae-93e8-1829d40f5fa6",
+      "result_id": "ae259518-b5e9-4a6c-a417-5493875ec4a6"
+    },
+    {
+      "claim_id": "be830bad-9558-4f36-93b5-e7da6e105a5f",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "48d3126c-bf99-4cda-b7c3-6e1bce8cd63d",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "c91f61bd-197c-4f11-9d76-c0943bf980ac",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "ac767d8b-7994-441c-a57e-153fadc49d1b",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "0be2f42e-d03c-48c2-8488-b631c6375097",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "44b71161-656f-4237-a544-c4e5368cde6d",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "f3d7f2cc-66b5-4078-9870-bb683a0015a4",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "a6dcd83f-65d3-4e71-95ed-6a617fe3766f",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "5fdfc949-0573-4714-8d29-61d90bb221dc",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "7275bd77-c9ea-41cc-aa3a-8f3e988a9c52",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "ae49745e-912d-4f46-9254-6a7d975f2bc8",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "96c540dc-06d6-4326-b06e-7adb18787056",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "597332e8-7e74-4a7a-a3a6-5a7feedda9f0",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "89baddd6-f506-4474-8f07-0a4418513e1b",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "32b1b1b3-761e-4ae3-94f7-0e3236dfbb2c",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "cb9f94fa-ef77-4b71-8d37-2bd08193ef3e",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "8ab00b8e-f7a3-4c24-a726-c035b8a19d87",
+      "result_id": "bb5fbde1-0bbd-423d-91aa-c07f81086731"
+    },
+    {
+      "claim_id": "79bc8535-a942-4102-b62d-01e30c49ba88",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "d6195782-2970-4f95-be71-5cebc7291173",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "f49dc713-1ddd-48e2-a87b-d1ea8ec99542",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "7550e2ce-ddff-4ec2-ae93-ee241fd0c7da",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "d26fa2cd-7dd7-4040-8208-3248c925ce1a",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "5d636dbb-890f-438a-9bde-6a31e4a3290f",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "605057f5-cf8e-4d50-badb-2da79d9ea3bd",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "aea1bf7c-2b72-4462-9a9f-210b39e868a8",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "0f1efb00-7abd-40f9-adf3-5ac0c38a3d53",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "09e9a954-f3fa-4b9f-addf-a4f5953fd1d6",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "24f38c4a-65e2-46d7-81c6-810fa6eaa369",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "96d09ed5-12c2-44a1-a3fd-20b995bd4ca5",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "1b690b0d-2be3-4595-9a77-bd1bbf5ead4d",
+      "result_id": "c097ea86-4f84-437e-ac84-029b9f94a197"
+    },
+    {
+      "claim_id": "ac949017-e402-4b48-ab1e-6a51c3c763f7",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "e106b0eb-bc99-4548-9dfb-98113c18baba",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "67788a5f-0490-4bea-86aa-deff1a115542",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "7af1436e-1d35-4f3f-82fd-67c2631ab9db",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "ac48d4f9-1be2-4234-b73f-f18116fe4366",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "e37ba4f6-ecd9-474a-9024-4daa3e265315",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "f1c222fc-0a1e-491e-bef2-79bf4ae381d5",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "1e6c54b5-9f4f-49f8-8c81-3c67d9bd5cae",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "97b939f4-ffca-4c80-a555-f3b66a2f8737",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "5c1fd951-bad7-412b-8ba0-4cc25718d05e",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "7d8f533e-ca5a-4b90-9a07-9cb1aff642a1",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "77a3db2d-73c8-4337-aa2c-d49d03e5fddb",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "a6513e4f-8634-49f4-b8b3-70a2c32ac518",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "de30a5a0-9b33-4362-9630-e9f10b277288",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "556ee7bf-d11d-4168-a1ea-48f6ff095e3f",
+      "result_id": "8644cb5e-df76-4f6d-b84e-e92be399922d"
+    },
+    {
+      "claim_id": "eb4e51c4-46b6-4827-b4f6-3768c632f91d",
+      "result_id": "42921c30-2700-46c2-9979-e7eb9571d07d"
+    },
+    {
+      "claim_id": "05f7a6f4-afe9-45ee-8304-e309d691327e",
+      "result_id": "42921c30-2700-46c2-9979-e7eb9571d07d"
+    },
+    {
+      "claim_id": "fe5280a2-5302-4981-ba42-3c4c7069dbc3",
+      "result_id": "42921c30-2700-46c2-9979-e7eb9571d07d"
+    },
+    {
+      "claim_id": "f9b08765-ffd0-4927-a8a2-794db2b1ed4e",
+      "result_id": "42921c30-2700-46c2-9979-e7eb9571d07d"
+    },
+    {
+      "claim_id": "ca231d19-13a2-467a-b12e-3ce1d4e4238f",
+      "result_id": "42921c30-2700-46c2-9979-e7eb9571d07d"
+    },
+    {
+      "claim_id": "77e0c7ab-a783-4ad1-8ecd-d3c22635a724",
+      "result_id": "3bad679e-9a53-4cbe-8c65-2e971c385b4e"
+    },
+    {
+      "claim_id": "800f0d72-19e7-4e36-bf91-11d3e4975376",
+      "result_id": "3bad679e-9a53-4cbe-8c65-2e971c385b4e"
+    },
+    {
+      "claim_id": "34bfbe34-b715-4e9d-a5b9-6dcabacb1349",
+      "result_id": "3bad679e-9a53-4cbe-8c65-2e971c385b4e"
+    },
+    {
+      "claim_id": "30c6a518-f7a5-446c-adf0-fbbe668f49f8",
+      "result_id": "3bad679e-9a53-4cbe-8c65-2e971c385b4e"
+    },
+    {
+      "claim_id": "6b023541-9931-4ab5-86ea-3cf3befbf849",
+      "result_id": "760a42a7-7d79-4bdf-a798-e9729aa10fde"
+    },
+    {
+      "claim_id": "2ef847b5-9b0a-4458-aa9f-537ab6ee1f92",
+      "result_id": "760a42a7-7d79-4bdf-a798-e9729aa10fde"
+    },
+    {
+      "claim_id": "da06b910-27ad-4353-9c9a-891771d46516",
+      "result_id": "760a42a7-7d79-4bdf-a798-e9729aa10fde"
+    },
+    {
+      "claim_id": "e2da4fa2-f6a8-4a6c-9fd7-5580f8e95ec5",
+      "result_id": "760a42a7-7d79-4bdf-a798-e9729aa10fde"
+    },
+    {
+      "claim_id": "50d29c7e-9993-455a-84cf-147c1951250a",
+      "result_id": "760a42a7-7d79-4bdf-a798-e9729aa10fde"
+    },
+    {
+      "claim_id": "94ac64a2-4499-486a-8ff1-c67e3a3c348a",
+      "result_id": "760a42a7-7d79-4bdf-a798-e9729aa10fde"
+    },
+    {
+      "claim_id": "81b60a8f-cb06-4831-acad-af2a355d3e7e",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "4e0989ce-0650-4975-9d81-d34759f25018",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "25cb17b7-8139-41c1-a960-0433d9268a7a",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "bc8462ab-fc29-426b-a4b5-9117ae662d78",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "69b6e710-d109-47c2-be8a-7a48ca33d4f4",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "2a01bdcf-d640-4a7b-8842-887113200a01",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "a6748ffc-92f8-4b88-a41f-69f37df890c9",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "68ac5154-6d17-44bf-83c8-e1b76185abae",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "e27a2090-b8fc-48b0-a11a-e625b897636e",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "46e832dd-45b5-42dd-8b71-33d4a6add287",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "9f166469-df0f-4938-ae5c-4460373ffb86",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "ba2544ea-e1f6-4d68-937a-a1cb408854c5",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "07c4d099-6155-402b-af49-d07b245d672a",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "55c7e3c0-e227-41c4-a548-05201f7eea31",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "fa238b7f-0370-4ae7-80a6-1876317f37c0",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "e919b75e-b0d3-4857-a2af-a1871d5cfa27",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "67a120e3-805b-4804-896f-bb7137130160",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "3f8c5d36-d97c-4fe8-903b-6ed7a7386d66",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "a2bad1bb-7d78-4478-a417-c7cfaae13a17",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "7a585966-509c-4263-b29e-02ba497dcc72",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "2f4f4a98-939f-46be-bb93-2c5e91df3d40",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "d9d43dd2-5a0b-4002-a34e-650526bdc8eb",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "29b83a93-326b-4df8-a9fb-4361e16445cf",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "87439111-d90d-4010-bffc-14b9cfed7ddb",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "c241f004-605d-4f94-8b04-d527372463e3",
+      "result_id": "f9964168-eea3-48fb-baec-7080545d3cba"
+    },
+    {
+      "claim_id": "dd3a0b5c-ff56-4eac-967c-60f8b15a8f7b",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "839d53c0-e245-4b41-89a4-e71e1289f352",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "6de190b2-d571-4770-9766-5794dc3d7db6",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "647ed58f-56a8-473e-b8a4-1aa0cafece28",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "a5bc1539-3177-4799-8242-8794e16186e2",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "23c5213d-d820-4f57-a6b3-1537721aa25e",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "081aca65-e032-46ca-9e49-c93cdb2bbb48",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "d1d28ad7-62dc-4e57-b916-c56a64276eed",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "5b95ff08-4fe8-42c3-86ac-26ea5f4dea09",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "9099ac3b-ad38-4315-a05f-7ea70225415d",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "83f7a86d-332f-414d-9a0b-8e6c4fe4bbe3",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "0095f049-6333-4446-913c-6fda1b7ee71d",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "b2c0cc37-ade7-423e-8bc4-10e77a2c0984",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "5f616914-9e34-4990-8aaa-8d2a2b800aa0",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "ba807425-f300-421b-bfc1-0d5564baa332",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "e4e2da89-62cf-4ec0-bc3d-2ea29abeeae0",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "fbadfb3d-5f84-44bd-a974-5690c9f262f4",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "9bbfdd5c-3f9e-4879-8390-c1ad8b6a3e03",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "a2ecd4d1-8e34-4650-a984-c4033e303abf",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "68e38095-8355-43b7-9abd-37ba4a88b622",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "5176c59d-6661-44bb-88c3-1b79ab2ca5a7",
+      "result_id": "63c008ab-6690-423f-9b5c-20fe4b176e28"
+    },
+    {
+      "claim_id": "08539f23-be1e-4884-8bdf-d7b8e36c9216",
+      "result_id": "3c9217aa-3fc9-4a3e-ab52-d477eeb4d65a"
+    },
+    {
+      "claim_id": "cdd12db8-c436-4956-8e1e-ba4aa3871545",
+      "result_id": "3c9217aa-3fc9-4a3e-ab52-d477eeb4d65a"
+    },
+    {
+      "claim_id": "a8d32e6b-9423-4be8-85ae-8f17bd746163",
+      "result_id": "3c9217aa-3fc9-4a3e-ab52-d477eeb4d65a"
+    },
+    {
+      "claim_id": "2905aba5-aacb-4ea9-8ce6-a19e45e3aefe",
+      "result_id": "3c9217aa-3fc9-4a3e-ab52-d477eeb4d65a"
+    },
+    {
+      "claim_id": "88589aa2-c82e-476b-960c-99142b0b7f43",
+      "result_id": "ac512fb0-648f-481c-8ab9-c15575ca8050"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,413 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C21",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study developed a novel analytical method using t-SNE dimensionality reduction to visualize and characterize pyloric circuit spike patterns. Spike trains from LP and PD neurons were converted to ISIs and phases, summarized using percentiles to create fixed-length feature vectors, and embedded in 2D space using t-SNE. The embedding successfully grouped visually similar spike patterns together and separated qualitatively different patterns into distinct clusters, with burst metrics varying smoothly within clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C53 describe a methodologically sound approach validated through multiple lines of evidence: synthetic data validation (C53), comparison with PCA (C52), smooth variation of burst metrics (C48-C51), and visual inspection (C46-C47). The method is well-documented with appropriate statistical validation (p<0.0001 for triadic differences). The approach successfully addresses the stated problem of characterizing irregular dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Manual inspection and labeling of clusters in the t-SNE embedding identified 12 distinct dynamic states of the pyloric circuit. The regular state comprised 57% of data and occupied a single contiguous region. Other states included LP-weak-skipped, irregular-bursting, irregular, LP-silent-PD-bursting, LP-silent, and several others. Points in the regular cluster had significantly lower speeds (variability) than atypical states (p<0.004), and the clustering was robust across different dimensionality reduction methods (t-SNE vs uMAP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 describe a systematic manual classification approach supported by quantitative metrics (C65-C66) and cross-validation with alternative methods (C67). The statistical significance of speed differences between states and consistency across methods (uMAP) provide strong support. However, the manual nature of classification introduces subjectivity, though this is partially mitigated by the data-driven clustering structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Analysis of baseline pyloric circuit dynamics across 346 wild-caught animals revealed that burst metrics were unimodally distributed with CV \u2248 0.1. Across-animal variability was significantly greater than within-animal variability for all measured metrics (p<0.007, permutation test), indicating that individual circuits maintain more consistent dynamics than the population as a whole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 present a clear statistical finding with appropriate methodology (permutation test, Table 1 with ANOVA results). The large sample size (N=346 animals) and consistent results across multiple metrics strengthen the conclusion. The statistical approach properly accounts for the hierarchical structure of the data (within vs. across animals).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Environmental perturbations (extreme pH, temperature, and extracellular K+) significantly reduced the probability of regular states (p<0.001) and altered state distributions. High pH never silenced the circuit and showed predominantly LP-weak-skipped transitions, while low pH and high K+ produced silent states. Trajectories to silent states consistently transitioned through intermediate states (sparse-irregular, LP-silent, or PD-silent) rather than directly from regular states, suggesting slow timescales (>20s) of rhythm collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C99 describe systematic effects of perturbations with appropriate statistical testing (paired permutation test) and consistent observations across conditions. The finding of shared transition patterns (C95) and modality-specific differences (C98-C99) is well-supported by the transition matrix analysis. The inference about slow timescales (C97) is reasonable given the 20s bin size, though this is a limitation of the temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Decentralization (removal of descending neuromodulatory input) significantly altered pyloric circuit dynamics. The probability of regular states decreased while atypical states increased (p<0.00016). Among regular rhythms, decentralization caused significant changes in all burst metrics except LP phase onset (p<0.007), including doubled burst periods, halved firing rates, and increased CV for all metrics. LP duty cycle decreased significantly more than PD duty cycle (p<10^-8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C118 present a comprehensive characterization of decentralization effects with rigorous statistical testing (paired permutation test, paired t-test) and large sample size (N=141 animals). The differential effect on LP vs PD duty cycle (C118) is particularly well-supported with strong statistical significance. The findings are consistent with prior literature while providing finer-grained quantitative detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C128",
+      "C129",
+      "C132",
+      "C133"
+    ],
+    "result": "Neuromodulators differentially affected state probabilities in decentralized preparations. RPCH, proctolin, and oxotremorine significantly increased regular state probability (p<0.004) and reduced atypical states including silent, LP-silent, and PD-silent. Serotonin had opposite effects, significantly decreasing regular state probability and increasing atypical states. All four neuromodulators showed transitions involving LP-weak-skipped, irregular-bursting, and aberrant-spikes states, suggesting common features in rhythm stabilization/destabilization trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C133 describe systematic neuromodulator effects with appropriate statistical testing (paired permutation test, p<0.004) and consistent patterns across multiple modulators. The opposing effect of serotonin (C132) is well-documented and statistically significant. The identification of common transition states (C133) provides mechanistic insight, though the interpretation of 'common features' is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Different neuromodulators elicited distinct spatial distributions of regular rhythms in the embedding space, with significant differences between serotonin-CCAP and proctolin-other modulators (p<0.05, 2D KS test). Transition matrices revealed modulator-specific patterns: RPCH never showed irregular\u2192regular transitions, proctolin and oxotremorine showed overrepresented LP-silent\u2192LP-silent-PD-bursting transitions, and serotonin showed symmetric transitions between certain state pairs and overrepresented destabilizing transitions from regular states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C146 describe detailed transition dynamics with appropriate statistical testing (2D KS test, null model comparisons). The finding of distinct spatial distributions (C136-C137) and modulator-specific transition patterns (C141-C146) is well-supported by the data. However, the mechanistic interpretation of these differences requires caution, as the analysis is descriptive rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The t-SNE-based approach successfully captured both the variability of functional rhythms and the diversity of atypical dynamics in a single map. Clusters identified qualitatively different spike patterns representing different dynamic states, and state probabilities and transition statistics varied systematically with experimental manipulations (environmental perturbations, decentralization, neuromodulators). This enabled characterization of circuit dynamics across hundreds of animals and identification of previously anecdotally observed atypical states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C23-C25 summarize the overall achievements of the study, which are well-supported by the detailed analyses in other claim groups. The approach successfully addresses the stated problem of characterizing irregular dynamics and provides a comprehensive framework for analyzing circuit function and dysfunction. The large dataset (N=426 animals, ~95,000 data points) and systematic validation strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The probability of observing regular states was significantly reduced when cells were recorded intracellularly, possibly due to increased leak currents from electrode impalement or cell dialysis. No significant correlation was observed between sea surface temperatures and burst metrics or probability of regular states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 identify important technical and environmental factors. The intracellular recording effect (C77) is supported by citations and represents a valid technical consideration. The lack of correlation with sea surface temperature (C78) is appropriately tested but represents a negative result that may be limited by the proxy measure used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C151",
+      "C153"
+    ],
+    "result": "Additional findings on decentralization effects: no significant correlation was found between sea surface temperature and decentralization responses (p>0.07). Within-animal variability in burst metrics was lower than across-animal variability, consistent with previous studies. The phase of LP burst onset did not change significantly on decentralization, but the phase of LP burst termination did, suggesting differential robustness of rhythm features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C151, and C153 provide supporting details about decentralization effects. The lack of temperature correlation (C112) is a negative result with appropriate statistical testing. The within vs. across-animal variability finding (C151) replicates prior work with a larger dataset. The differential effect on LP burst phases (C153) is an interesting observation but requires further mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C185"
+    ],
+    "result": "The t-SNE-based approach provided two key advantages: (1) more accurate measurement of traditional burst metrics in large datasets by reliably identifying regular rhythms, and (2) analysis of irregular dynamics typically intractable with conventional methods. The visualization made feasible the previously intractable task of classifying hundreds of hours of spike patterns from hundreds of animals, though it required manual intervention for cluster boundary definition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 and C185 accurately describe the methodological contributions and limitations. The advantages are well-demonstrated through the analyses presented (Figures 4, 8, 9). The acknowledgment of the manual intervention requirement (C185) is appropriate and honest about the method's limitations. The approach represents a significant advance for this type of data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The current approach improves upon earlier categorization methods by having categories emerge naturally from data distribution in reduced space, ensuring mutual exclusivity (each data point has one label). The method recapitulates all labels from prior work on PD/LP neurons and identifies new spike patterns not previously detected or distinguished, such as separating the catch-all 'atypical firing' state into irregular, irregular-bursting, and sparse-irregular states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 provide appropriate comparison with prior methods and clearly articulate improvements. The advantage of mutual exclusivity (C156) is valid given the embedding structure. The claim of recapitulating prior labels while finding new patterns (C159) is supported by the detailed state characterization, though direct quantitative comparison with prior categorizations would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Despite diversity in circuit solutions and perturbation effects, universal features emerged in transition matrices across conditions. The destabilizing transition regular\u2192LP-weak-skipped was overrepresented in every transition matrix, suggesting LP neuron weakening is a crucial step in destabilization. This finding is consistent with prior work showing conserved motifs in isolated pacemaker kernel trajectories and increased variability before transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C164 synthesize findings across multiple perturbation types and connect to prior work. The identification of the regular\u2192LP-weak-skipped transition as universally overrepresented (C162) is well-supported by the transition matrix analyses. The connection to prior work on the isolated pacemaker kernel (C163-C164) appropriately contextualizes the findings, though the intact circuit shows more complexity than the isolated kernel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The framework provides a way to fit biophysically detailed models to diverse circuit dynamics under baseline and perturbed conditions. From the large diversity of parameters that can reproduce activity snapshots, only a subset could recapitulate the diverse irregular behavior observed. The characterization can be used to rule out models generating irregular activity qualitatively dissimilar to observed states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175-C178 describe potential future applications for model fitting and validation. While the logic is sound and the characterization would indeed constrain models, these claims are speculative about future work rather than demonstrated results. The framework provides necessary data for such applications, but the actual model fitting and validation work remains to be done (C177 explicitly mentions this as an extension of recent work).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Under baseline conditions, the pyloric circuit exhibits a regular triphasic oscillation with PD, LP, and PY neurons bursting in sequence, measurable via extracellular nerve recordings. Decentralization (cutting the stn) can make the rhythm less regular and spikes harder to identify, particularly for PY neurons. Due to these technical challenges documented in prior work, the current analysis focused on LP and PD neurons to maximize the number of experiments included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 provide essential experimental context and justify the analytical scope. The description of baseline dynamics (C26-C28) is well-established. The technical challenges with PY identification (C31-C33) are appropriately documented with citations (C34). The decision to focus on LP and PD (C35) is well-justified given the goals of including maximum data and the precedent in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Traditional burst metrics (burst period, phase offsets) perform poorly when rhythms lose strong periodicity. Previous categorization methods used ad hoc systems that scaled poorly and relied on subjective annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 accurately describe limitations of prior approaches and motivate the current work. The inadequacy of traditional metrics for irregular rhythms (C38) is a logical inference supported by the nature of the metrics. The critique of prior methods (C39-C40) is supported by citations and represents a fair assessment of the field's challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The analysis method is well-suited for large datasets from identified neurons but would require modifications for data where neuron identity is unknown (e.g., mammalian recordings). t-SNE has been widely used for biological data analysis, can visualize high-dimensional data in lower dimensions by preserving local pairwise distances, and has been rigorously shown to recover well-separated clusters. However, t-SNE can generate apparent clusters from random data, distort cluster sizes, and fail to preserve large-scale topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C184 provide appropriate discussion of method applicability and limitations. The requirement for identified neurons (C179-C180) is a valid limitation clearly stated. The description of t-SNE properties (C181-C184) is accurate and appropriately cites relevant literature. The acknowledgment of t-SNE limitations (C184) demonstrates appropriate caution, though the validation with synthetic data (C53) and comparison with uMAP (C67) address some of these concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Neural circuits can generate many spike patterns but only some are functional. While regular oscillations of central pattern generators are well-characterized by frequency and phase relationships, these metrics are ineffective for irregular and aperiodic dynamics under perturbation or disease. The study hypothesized that circuit dynamics lie on a lower-dimensional set even during atypical behavior, constrained by cellular parameters and network topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C18-C20 establish the research problem and hypothesis. These are well-supported by citations to prior work and represent established knowledge in the field (C1-C2) and reasonable inferences about the limitations of traditional approaches (C3, C18-C19). The hypothesis (C20) is logical and is validated by the successful application of dimensionality reduction methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on neural circuit dynamics and the pyloric circuit: Cortical circuits maintain irregular spiking through excitatory/inhibitory balance, and loss of canonical dynamics associates with neural diseases. The same spike pattern can be generated by diverse circuits with different parameters, and circuits are constantly reconfigured through homeostatic mechanisms. Functional dynamics tend to lie in low-dimensional subspaces. The pyloric circuit consists of 13 neurons generating a triphasic motor pattern, with fundamentally low-dimensional baseline dynamics effectively parameterized by burst period, duty cycles, and phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 provide essential background context, all supported by appropriate citations to established literature. These claims accurately represent current understanding in the field and appropriately contextualize the study. The characterization of the pyloric circuit (C14-C17) is well-established and provides necessary background for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Background on circuit robustness to perturbations: The pyloric circuit must exhibit robustness to environmental perturbations. Previous studies characterized robustness to pH, temperature, oxygen levels, and ionic concentration changes. When challenged with extremes, the rhythm breaks down into irregular or silent 'crash' states. It remains unclear if different perturbation modalities share common pathways of destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide appropriate background on perturbation effects, supported by citations to prior work. These claims accurately represent the state of knowledge and identify the research gap (C83) that the current study addresses. The characterization of 'crash' states (C82) is consistent with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C121",
+      "C122",
+      "C123",
+      "C126",
+      "C127",
+      "C130",
+      "C131",
+      "C134",
+      "C135",
+      "C140"
+    ],
+    "result": "Background on neuromodulation: The pyloric circuit is modulated by >30 substances that tune neuronal properties. Decentralization affects the rhythm in multiple ways (temporary cessation with recovery, slowing, increased variability, altered ion channel expression). RPCH, proctolin, and oxotremorine have been shown to strengthen the rhythm through various mechanisms, while serotonin has variable effects. Different neuromodulators activate different rhythm forms through different mechanisms, and similar patterns can be produced by qualitatively different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107, C121-C123, C126-C127, C130-C131, C134-C135, and C140 provide comprehensive background on neuromodulation, all supported by appropriate citations. These claims accurately represent established knowledge and provide essential context for interpreting the neuromodulator experiments. The complexity of neuromodulator effects (C130-C131, C134-C135) appropriately sets up the need for the systematic characterization provided in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Discussion of circuit degeneracy and cryptic variability: Multiple combinations of circuit parameters can generate similar dynamics due to the dimensionality mismatch between parameter space and output space, leading to 'cryptic' architectural variability. However, perturbations can reveal differences between seemingly identical circuits, as demonstrated by phase shifts revealing connection weights in oscillator networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C174 provide important conceptual context for interpreting the results, all supported by appropriate citations. The concept of degeneracy (C168-C169) and cryptic variability (C172) are well-established in the field. The connection to perturbation-based circuit identification (C173-C174) appropriately contextualizes the utility of the perturbation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Methods: Adult male Jonah crabs were obtained from commercial sources. Dissections, decentralization, temperature control, potassium concentration manipulation, and pH perturbations were carried out as previously described in cited references.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C191 provide essential methodological details with appropriate citations to established protocols. While brief, these claims adequately document the experimental procedures by reference to detailed prior publications. This is standard practice for well-established methods.",
+    "result_type": "MINOR"
+  }
+]

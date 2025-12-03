@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Tiled-ClickSeq is a novel sequencing method that uses hundreds of tiled primers in a single reverse-transcription reaction, with azido-nucleotides generating stochastic termination to eliminate the need for paired primers. The method can accommodate >300 primers in one reaction and is compatible with both Illumina and Nanopore platforms using the same primer set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C35-C37 collectively describe the core methodological innovation of Tiled-ClickSeq. The method design is clearly described and demonstrated through experimental data showing successful library generation (C40) and sequencing results across multiple platforms (C13, C37, C81). The technical feasibility is validated by successful genome reconstruction from multiple samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C52",
+      "C56",
+      "C82",
+      "C83"
+    ],
+    "result": "Tiled-ClickSeq accurately reconstructs full-length SARS-CoV-2 genomes from cell-culture isolates with >25X coverage across >99.5% of the genome, including the 5'UTR. The method performs equivalently to random-primed ClickSeq and produces identical SNV calls to the established ARTIC protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C41-C42, C46-C47, C52, C56, C82-C83 demonstrate successful genome reconstruction with strong validation. The consensus sequence for WA-1 matched the deposited reference (C42), genomes from Tiled-ClickSeq matched random-primed ClickSeq for 11/12 isolates (C52), and SNVs were identical to ARTIC protocol results (C56). Coverage of the 5'UTR (C47, C83) represents a key advantage over existing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C37",
+      "C55",
+      "C81",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Tiled-ClickSeq libraries are compatible with both Illumina and Oxford Nanopore sequencing platforms using the same primer set, with nanopore sequencing providing same-day results but limited minority variant detection below 5% frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C37, C55, C81, C105-C107 demonstrate cross-platform compatibility. Nanopore data produced genomes nearly identical to Illumina data (C55: 11/12 identical, one sample with single SNV difference). The limitation for minority variant detection on nanopore (C106) is acknowledged as a known platform constraint. Same-day sequencing capability (C105) is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C111"
+    ],
+    "result": "Tiled-ClickSeq captures canonical and non-canonical subgenomic mRNAs (sgmRNAs) in SARS-CoV-2 samples, revealing that sgmRNAs are highly enriched in cellular fractions (>95%) but depleted in supernatants, indicating restricted packaging into virions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C59-C64, C111 demonstrate successful detection of sgmRNAs. All expected sgmRNAs were found (C59) plus non-canonical species (C60). The differential distribution between cellular and supernatant fractions (C61-C62) is clearly quantified (>95% in cells), and the biological interpretation about virion packaging restriction (C63) is a reasonable inference from the data. The method's ability to detect these species 'agnostically' (C111) is supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C64",
+      "C65",
+      "C66",
+      "C78",
+      "C111"
+    ],
+    "result": "Tiled-ClickSeq detects structural variants (SVs) in SARS-CoV-2 isolates, including known deletions near the furin cleavage site (\u039423583^23599) in 7/12 WRCEVA isolates at 2-50% frequency and a novel deletion in ORF7a (\u039427619^27642) at 3.5% frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C64-C66, C78, C111 demonstrate SV detection capability. The method accurately detected the expected engineered deletion in icSARS-CoV-2 samples (C64), validating its accuracy. Detection of furin cleavage site deletions in cell-culture isolates (C65) is consistent with prior literature. The novel ORF7a deletion (C66) represents a new finding with clear frequency quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C84"
+    ],
+    "result": "From 60 clinical nasopharyngeal swab specimens, Tiled-ClickSeq generated 36 complete genomes (>99.5% coverage at >10X depth), with sequencing success strongly dependent on viral load (CT values <25 optimal, declining coverage at CT 20-25, minimal success at CT >30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69, C84 describe clinical sample performance with clear quantitative metrics. The relationship between CT value and sequencing success is well-documented with specific thresholds provided. The 60% success rate (36/60) is reasonable given the range of CT values. The data support the conclusion that viral load is the primary determinant of sequencing success.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C85",
+      "C86"
+    ],
+    "result": "Seven of eight B.1.1.7 (Alpha) clinical isolates with sufficient 5'UTR coverage contained a U2C SNV at the second nucleotide of the genome. Database analysis revealed only 176/2,867,767 GISAID genomes (0.006%) contain this SNV, with 70 from B.1.1.7 and 43 from B.1.617.2 (Delta) variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C85-C86 report a specific finding about the U2C SNV in B.1.1.7 variants. The observation is clearly quantified (7/8 isolates with sufficient coverage). The GISAID database query (C71-C73) provides context showing this is a rare variant. However, the speculation about functional significance (C86) is appropriately cautious ('may be significant'). The finding is well-supported but the biological significance remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Recombination analysis of clinical samples revealed two common duplication events (29173^27802 and 29442^29323) in 14 and 17 samples respectively at frequencies up to ~8%. The 29442^29323 event is a 120nt in-frame duplication in the Nucleocapsid C-terminus that is absent from cell-culture samples, suggesting it is purged during viral expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C91-C93 describe specific recombination events with clear quantification. The enrichment near the 3'UTR (C74) is consistent with prior observations. The specific recombination events are well-characterized with frequencies provided (C75). The absence from cell-culture samples (C76, C93) is a comparative observation across the dataset. The inference about purging during expansion (C93) is reasonable but remains speculative without direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Despite furin cleavage site deletions being prevalent in cell-culture isolates (observed in almost all WRCEVA samples at some frequency), only 1/60 clinical specimens showed evidence of such deletions (MicroGNL-163 at ~5% frequency), suggesting these variants are not selected during human infection despite being readily generated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C87-C90 present a striking contrast between cell-culture and clinical samples. The observation is clearly quantified (1/60 clinical vs. almost all cell-culture samples). The citations support that furin site deletions are known to occur in cell culture (C87-C88). The inference that these variants are 'not selected for during human infections' (C90) is reasonable given the data, though alternative explanations (e.g., transmission bottlenecks) are not explicitly ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Very few minority variants (only 26 variants >2% across 10 WRCEVA isolates, with 6 isolates having none) were detected, consistent with the proofreading activity of coronavirus ExoN-nsp14 and suggesting RNA recombination may be the primary source of genetic diversity in coronaviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C102-C104 report low minority variant rates with clear quantification. The observation is consistent with prior reports and the known biology of coronavirus proofreading (C103). However, the conclusion that 'RNA recombination may be the greatest source of genetic diversity' (C104) is an inference that, while reasonable given the low SNV rate and abundant recombination events observed, represents a hypothesis rather than a directly demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Tiled-ClickSeq generates overlapping read coverage with each primer producing ~500-600 nt amplicons extending 5' from the primer site, enabling continuous gap-free genome coverage. Libraries can be made from as little as 8 ng total RNA with only 18 PCR cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C43-C45 describe the technical performance characteristics of the method. The amplicon size (C43) and overlapping pattern (C44) are demonstrated in Figure 2B. The minimal input requirement (C40) is shown in Figure 1G. The continuous coverage (C45) is a logical consequence of the overlapping design and is demonstrated throughout the sequencing results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Tiled-ClickSeq incorporates quality control features including UMIs for deduplication and paired-end sequencing to identify primer origins. The final v3 primer scheme contains >390 primers, demonstrating the method can accommodate complex primer mixtures with built-in redundancy to prevent primer dropout from sequence variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 describe methodological features and optimizations. The UMI and paired-end capabilities (C97) are demonstrated throughout the analysis pipeline. The primer count (C99) is specific and the ability to handle complex mixtures (C100) is demonstrated. The inference about reduced primer dropout (C101) is logical given the redundancy, though not directly tested by introducing variants in primer sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "Genome analysis of 12 WRCEVA isolates revealed 5-12 SNVs per genome, including the D614G spike mutation in 11/12 isolates. Phylogenetic analysis placed 10 isolates in clade A2a and 2 in clade B/B1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C53-C54 report specific findings from the WRCEVA isolate analysis. The SNV counts are clearly quantified and the D614G prevalence (11/12) is consistent with its known high frequency during this time period. The phylogenetic classification is straightforward analysis of the reconstructed genomes. The claim about D614G enhancing transmission (C50) is supported by citation rather than demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Paired-primer approaches for SARS-CoV-2 sequencing have inherent limitations including constraints on primer design, requirement for multiple PCR reactions with non-overlapping pools, sensitivity to SNVs in primer sites, inability to detect recombination junctions not flanked by primer pairs, and need for platform-specific primer redesign.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C29-C32 describe established limitations of paired-primer methods based on technical requirements and logical inference. These are well-understood constraints in the field and provide the rationale for developing Tiled-ClickSeq. While not experimentally demonstrated in this manuscript, these limitations are supported by knowledge of PCR-based sequencing methods and are the motivation for the new approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background context establishes that high-throughput genomics is essential for SARS-CoV-2 surveillance, that both SNVs and RNA recombination events drive viral adaptation, and that structural variants and defective RNAs have been observed in coronaviruses with potential impacts on fitness and pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C15-C27 provide background knowledge and context from prior literature. These are supported by appropriate citations and represent established knowledge in the field. They set up the rationale for the study but are not novel findings from this work. The claims about SARS-CoV-2 being highly recombinogenic (C25-C26) cite the authors' own prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C33",
+      "C34",
+      "C109"
+    ],
+    "result": "Existing methods for SARS-CoV-2 sequencing include paired-primer approaches like ARTIC (which can detect variants at \u22653% frequency) and ClickSeq (a click-chemistry platform that prevents artifactual chimeras). The ARTIC protocol includes a 5'UTR primer to capture subgenomic mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C33-C34, C109 describe existing methodologies based on published literature and established knowledge. These are appropriately cited and provide context for the innovation of Tiled-ClickSeq. The description of ARTIC's capabilities (C28) and ClickSeq's mechanism (C33-C34) are supported by citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C108",
+      "C110",
+      "C112"
+    ],
+    "result": "Tiled-ClickSeq provides advantages over existing methods including the ability to sequence unknown upstream sequences, high throughput (10s of samples on MiSeq, potentially 100s on NextSeq), agnostic detection of recombination events, and low artifactual chimera rates (<3 per million reads).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C108, C110, C112 describe advantages and capabilities of the method. The throughput estimates (C80) are reasonable inferences based on read requirements demonstrated in the study. The ability to detect unknown sequences (C79) and recombination events agnostically (C110-C111) is demonstrated by the detection of non-canonical sgmRNAs and novel structural variants. The low chimera rate (C112) is based on prior ClickSeq validation.",
+    "result_type": "MINOR"
+  }
+]

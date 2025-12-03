@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C82"
+    ],
+    "result": "TINs are heterogeneously distributed in the brain, with enrichment in the cortex (especially motor, somatosensory, and visual regions) followed by the striatum, and are rarely found in the cerebellum. This distribution pattern is consistent across two genetically distinct Toxoplasma strains (II-Cre and III-Cre) and multiple cohorts of mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C18, C25-C31, and C82 collectively demonstrate robust neuroanatomic mapping data from Figure 1 showing consistent TIN distribution patterns. The enrichment index analysis (C29, C34, C35) accounts for regional brain size, confirming that cortical enrichment is not simply due to the cortex being large. The use of multiple cohorts, two parasite strains, and >5000 mapped TINs provides strong statistical power and reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C19",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C53",
+      "C84",
+      "C94",
+      "C95"
+    ],
+    "result": "TINs co-localize with markers of abundant neuron subtypes in each region: approximately 58% of cortical TINs are FoxP2+ excitatory neurons, and 68-83% of striatal TINs are FoxP2+ medium spiny neurons. TINs rarely co-localize with inhibitory interneuron markers (approximately 5% with calbindin, 0% with parvalbumin), suggesting Toxoplasma injects neurons in proportion to regional neuron subtype abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C19, C41-C47, C51-C53, C84, C94-C95 are supported by immunofluorescent co-localization data from Figures 2 and 3. The finding that TINs mirror regional neuron abundance is well-supported by quantitative data across multiple mice and both parasite strains. The notable exception of parvalbumin+ neurons (C42, C45, C96) is clearly documented, though the mechanism remains speculative (C99-C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Striatal TINs show lower co-localization with DARPP32 (20-25%) compared to FoxP2 (68-83%), likely because FoxP2 labels more striatal neurons than DARPP32 even in uninfected mice, and DARPP32 expression is reduced near TINs. FoxP2 appears to be a more sensitive marker for striatal MSNs than DARPP32.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 are supported by data from Figure 3 and Figure 3\u2014figure supplements 1-2. The observation that DARPP32+ neurons decrease near TINs (C61) while FoxP2+ neurons do not (C58-C59) is statistically significant and well-documented. The dual-labeling experiments (C63-C64) confirm that FoxP2 labels more neurons than DARPP32, providing a mechanistic explanation for the differential co-localization rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C80",
+      "C85"
+    ],
+    "result": "Bystander MSNs (neurons near TINs but not injected with parasite protein) show mild depolarization of resting membrane potential (\u221269.0 \u00b1 1.2 mV vs \u221274.9 \u00b1 2.1 mV in uninfected) and require fewer current steps to fire, but other electrophysiological properties remain normal. This suggests the inflammatory microenvironment causes relatively minor changes to neurons not directly interacting with Toxoplasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C80, C85 are supported by patch clamp data from Figure 5. The statistical significance of the resting membrane potential difference is documented (p=0.0007), and multiple electrophysiological parameters were measured (C72). The comparison between bystander and uninfected MSNs is methodologically sound, with appropriate controls and sample sizes (N=28-40 cells from 14-18 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C20",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C86"
+    ],
+    "result": "TINs exhibit highly aberrant electrophysiology with severely depolarized resting membrane potentials (\u221249.1 \u00b1 4.5 mV) and inability to fire action potentials under standard conditions. After artificial hyperpolarization, TINs can generate action potentials, confirming they are neurons. This abnormal physiology is not due to fluorescent protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C20, C74-C77, C86 are supported by patch clamp data from Figure 6. The control experiment using YFP+ neurons in infected mice (C77, Figure 6\u2014figure supplement 2) rules out fluorescent protein expression as the cause. However, the small sample size (N=10 TINs, only 5 could be hyperpolarized) and technical difficulty in patching TINs (most attempts failed to form gigaseals) are limitations that should be acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C22",
+      "C78",
+      "C79",
+      "C87",
+      "C88"
+    ],
+    "result": "Approximately 90% of TINs die between 3 and 8 weeks post-infection, as demonstrated by a drastic reduction in TIN counts at 8 wpi compared to 3 wpi. This finding, combined with the aberrant electrophysiology, suggests TINs are unhealthy and dying.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C22, C78, C79, C87, C88 are supported by quantitative data from Figure 7 showing statistically significant reduction in TIN numbers (p\u22640.0001). The inference that abnormal electrophysiology reflects an unhealthy state (C23, C79, C87) is reasonable given the consistency with known characteristics of dying neurons. Sample sizes are adequate (N=9-11 mice/timepoint, 16-19 sections/mouse).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C23",
+      "C81",
+      "C111"
+    ],
+    "result": "The discrepancy between TIN and bystander electrophysiology suggests that injection with Toxoplasma protein\u2014either directly or indirectly\u2014specifically affects neuronal health and survival, and that neuron pathology is extremely targeted even in a highly inflammatory setting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C23, C81, C111 represent key interpretive conclusions supported by the combined electrophysiology (Figures 5-6) and survival data (Figure 7). The comparison between TINs and bystanders is the critical experimental design that allows attribution of effects to parasite protein injection rather than general inflammation. This inference is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The regional distribution of TINs is consistent with prior cyst mapping studies and clinical observations in AIDS patients, suggesting that regional parasite burden is driven by differences in neuron-parasite interactions rather than regional immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by comparison with cited prior studies (Berenreiterov\u00e1 et al., 2011; Boillat et al., 2020; Porter and Sande, 1992; Arendt et al., 1999). The consistency across three independent mapping approaches (two prior cyst studies and the current TIN study) strengthens the conclusion. The inference about mechanism (C91) is reasonable but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "TINs do not co-localize with parvalbumin+ interneurons despite these neurons being abundant (40-50% of GABAergic neurons). Possible explanations include altered parvalbumin expression, protection by perineural nets, or rapid death of injected parvalbumin+ neurons before GFP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is well-supported by data from Figure 2 showing 0% co-localization with parvalbumin. However, claims C99-C101 are explicitly speculative and not tested experimentally. The manuscript acknowledges these are possibilities requiring future investigation. Without additional experiments, the mechanism underlying this observation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Bystander neurons show mild hyperexcitability that could contribute to seizure susceptibility in CNS infections and may summate across many neurons to cause circuit-level changes, potentially explaining behavioral heterogeneity in infected animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 about being first-of-its-kind is supported by the authors' literature knowledge. However, claims C106-C109 are largely speculative. While C106 is supported by data (Figure 5, Figure 5\u2014figure supplement 2), the clinical implications (C107) and circuit-level effects (C108-C109) are hypothetical and not tested. These represent interesting hypotheses for future work but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The restricted pathology in TINs versus bystanders could arise from direct manipulation by parasite proteins, selective immune recognition of TINs, or tightly confined immune responses. Prior work shows that dysregulated astrocytic TGF-\u03b2 signaling increases neuronal loss without changing parasite burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is supported by prior work (citation to Koshy et al., 2012). Claim C115 is supported by citation to Cekanaviciute et al., 2014. However, claims C112-C114 are explicitly speculative mechanisms not tested in this study. While these are reasonable hypotheses consistent with the data, they require experimental validation and should be considered uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The death of TINs challenges the prevailing model that neuron survival must be ensured at any cost during infection. The authors propose an alternative model where neurons mount appropriate immune responses such that persistent infection is rare. Given that >90% of TINs are uninfected, many uninfected neurons are dying, which may benefit host defense or parasite persistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is a reasonable inference from the TIN death data (Figure 7). Claim C119 correctly identifies a challenge to existing models. Claim C120 is a logical inference combining prior data (C127) with current findings. However, claims C121-C125 are explicitly speculative about the evolutionary/mechanistic significance of TIN death. Claim C126 cites limited supporting data from measles virus. These represent an interesting alternative model but require substantial additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The enrichment of TINs in the cortex and lack of TINs in the cerebellum are not accounted for by the relative sizes of these regions, while TIN localization in the striatum is proportional to its size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by the enrichment index analysis in Figure 1C,D. The normalization method accounts for regional brain size, and the statistical analysis (one-sample t-test comparing to index of 1) is appropriate. Claim C32 about white matter is supported by anatomical knowledge. The methodology is sound and the conclusions are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Regional differences in TIN distribution may be driven by differences in Toxoplasma transmissibility across vasculature supplying different brain regions (anterior versus posterior circulation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is explicitly speculative ('one possibility') and cites a similar hypothesis for West Nile virus (Daniels et al., 2017). This is a reasonable hypothesis but lacks direct experimental support in the current study. Testing this would require additional experiments examining vascular permeability or parasite trafficking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The minimal changes in bystander neurons may result from compensatory mechanisms that preserve circuit function, or from spatially confined neuroinflammatory responses limited to areas immediately surrounding TINs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 are explicitly speculative explanations for the observed bystander physiology. While these are reasonable hypotheses consistent with the data, they are not directly tested. Distinguishing between these mechanisms would require additional experiments examining spatial gradients of inflammatory markers or neuronal compensation mechanisms.",
+    "result_type": "MINOR"
+  }
+]

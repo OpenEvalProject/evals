@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Optogenetic identification of CRHPVN neurons in vivo was successful. Out of 36 single units isolated in the PVN area, 18 neurons were light-responsive, firing action potentials with short latency (7.2 \u00b1 2.6 ms) and reliably increasing their probability of firing from 7.1 \u00b1 6.3% to 66.3 \u00b1 21.3% in response to blue light pulses. Light-non-responsive neurons showed no such increase. Light-responsive neurons also exhibited frequency adaptation in response to longer light pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 provide converging evidence for successful optogenetic identification. The quantitative data on latency, firing probability changes, and the binary response (light-responsive vs. non-responsive neurons) demonstrate robust identification. The frequency adaptation observation (C21) provides additional validation of the optogenetic approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C51"
+    ],
+    "result": "CRHPVN neurons exhibit rhythmic brief bursts (RB) under non-stress conditions. The majority of CRHPVN neurons (16 out of 18) fired brief bursts during baseline, with each burst consisting of an average of 3.1 \u00b1 0.5 spikes (range 2-6 spikes) at >100 Hz intraburst frequency. These bursts occurred at slow rhythms with long interburst intervals (IBI) of 1.8 \u00b1 0.6 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C24, and C51 collectively establish the RB firing pattern with quantitative characterization. The data show consistent measurements of burst properties (frequency, duration, IBI) from in vivo recordings. This represents a novel finding not previously observed in ex vivo preparations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C59"
+    ],
+    "result": "Rhythmic brief bursts constrain the overall firing rate of CRHPVN neurons to low levels (3-5 Hz) despite high-frequency (>100 Hz) burst firing, due to long interburst intervals (~2 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, and C59 demonstrate the counterintuitive finding that RB constrains firing rate. The quantitative data on IBI duration and time-averaged firing rates support this conclusion. This is further validated by the analysis showing high total spike rates only emerge when burst rate is near zero (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Stressful stimuli (sciatic nerve stimulation) rapidly switch CRHPVN neurons from RB to continuous single spiking (SS), increasing firing rate. Sciatic nerve stimulation increased overall firing rate from 3.063 \u00b1 1.646 Hz to 4.900 \u00b1 1.962 Hz (p=0.0108), caused a striking loss of RB (from 0.1406 \u00b1 0.1375 Hz to 0.0474 \u00b1 0.0410 Hz, p=0.0167), and increased SS (from 2.702 \u00b1 1.428 Hz to 4.782 \u00b1 1.987 Hz, p=0.0025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C27 provide strong statistical evidence (n=13, paired t-tests with p<0.05) for the stress-induced switch from RB to SS. The quantitative data show consistent changes across all three measures (total firing, burst rate, SS rate), supporting the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C60"
+    ],
+    "result": "High levels of total spike rate only emerge when burst rate is at or near zero. During non-stress conditions, the RB state can dynamically shift to a non-bursting SS state where CRHPVN neurons increase their firing rate (10-20 Hz) due to continuous single spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C60 are supported by the analysis of the relationship between burst rate and total spike rate (Figure 3L-M) and observations of spontaneous firing dynamics. The data demonstrate that RB and high firing rates are mutually exclusive states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Burst firing in CRHPVN neurons is preceded by prolonged silent periods. Burst trains seldom initiate without a preceding silent period (ISI) of at least 200 ms, with likelihood substantially increasing when preceded by silence >500 ms. Burst firing, regardless of length, was accompanied by longer preceding silences than single spikes (statistical analysis: One-way ANOVA p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by detailed temporal analysis of burst initiation dynamics (Figure 4). The statistical analysis (ANOVA with post-hoc tests) provides strong evidence for the relationship between preceding silence and burst firing. This finding is critical for understanding the mechanism of RB generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C45",
+      "C81"
+    ],
+    "result": "CRHPVN neurons do not show overt bursting properties ex vivo. In response to depolarizing current steps, they fire with gradual frequency increase and moderate adaptation, with the lowest ISI >10 ms, and do not generate in vivo-like high-frequency bursts. This is consistent with established knowledge from multiple previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, C45, and C81 are well-supported by both the current experimental data (Figure 5A, Figure 6F and H) and multiple citations to previous ex vivo studies. This establishes the critical difference between in vivo and ex vivo firing patterns, motivating the need for network-level explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C73"
+    ],
+    "result": "The single neuron AdEx models fitted to ex vivo recordings can capture key features of CRHPVN neuron firing, including rapid spike adaptation, timing of repetitive firing, and F-I relationships. When integrated into an optimized network model, these model CRH neurons generated rhythmic brief bursts (RB) that parsimoniously capture key features of in vivo firing behavior, including burst brevity and long IBI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C73 are supported by the model fitting procedure (Figure 5A-B) and network simulations (Figure 5D-F). The model successfully reproduces the key quantitative features observed in vivo, validating the modeling approach. However, the model is acknowledged to be simplified (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C52",
+      "C67",
+      "C68"
+    ],
+    "result": "Recurrent inhibition controls the RB firing mode and constrains the overall firing rate of CRHPVN neurons. In the network model, recurrent inhibitory inputs were critical for long, mostly silent interburst intervals. Reduction of recurrent inhibition alone (by lowering GABA release probability from 0.9-1.0 to 0.01-0.2) robustly increased spiking and overall firing rate. The feedback inhibition effectively prevented continuous firing and created lasting (~2 s) silent periods between brief bursts, constraining time-averaged firing rate to ~3 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38, C39, C52, C67, and C68 are supported by network model simulations (Figure 5G-J). The computational experiments demonstrate the causal role of recurrent inhibition in generating RB and constraining firing rate. The quantitative predictions match in vivo observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C53"
+    ],
+    "result": "Recurrent inhibition controls the gain of CRHPVN neurons' response to excitatory inputs. In the presence of recurrent inhibition, increasing excitatory synaptic inputs from 30 Hz to 60 Hz caused small change in overall firing rate. In the absence of recurrent inhibition, an identical increase robustly increased firing rate (Two-way ANOVA, EPSP \u00d7 recurrent inhibition interaction p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42, C43, and C53 are supported by network model simulations testing gain control (Figure 5O-Q). The statistical analysis (two-way ANOVA with significant interaction) provides strong evidence for the gain control mechanism. This represents an important functional prediction of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The removal of recurrent inhibition alone did not eliminate burst-range high-frequency firing in model CRH neurons. The in vivo-like switch from RB to SS can be achieved by an additional parameter change: an increase in spike-triggered adaptation current from (5-18) pA to (36-50) pA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 are supported by network model simulations (Figure 5G, L, K-N). The finding that both disinhibition and increased adaptation current are required for the complete RB-to-SS transition provides important mechanistic insight and generates testable predictions about intrinsic properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C46",
+      "C54",
+      "C93",
+      "C97"
+    ],
+    "result": "Injection of whole-cell currents derived from the computational model recreates in vivo-like firing patterns in biological CRHPVN neurons ex vivo. There was remarkable similarity between RB firing patterns of model neurons and biological neurons receiving network currents. Biological CRHPVN neurons readily generated burst-range high-frequency firing (ISI <6 ms) in response to complex network current injections, despite firing with regular spiking patterns (ISI >10 ms) in response to square pulse depolarization. This provides direct evidence that intrinsic properties of CRHPVN neurons are capable of firing in vivo-like RB by interacting with complex network inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C44, C46, C54, C93, and C97 are strongly supported by the network clamp experiments (Figure 6). The direct comparison between model and biological neurons (Figure 6D-E) and the demonstration that network currents, but not step currents, elicit bursting provide compelling validation of the model. The correlation analysis (Figure 6E) quantifies the similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Truncated current injection containing only high-frequency inputs failed to elicit burst firing in biological CRHPVN neurons. Preceding noisy network inputs (causing subthreshold membrane potential fluctuations) were necessary to drive burst firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 are supported by network clamp experiments with truncated currents (Figure 6I-K). This control experiment demonstrates that burst firing requires the full temporal structure of network inputs, not just high-frequency components, validating the importance of network dynamics and corroborating the in vivo observation that bursts are preceded by long silent periods (C29-C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Burst firing triggered by network synaptic currents in CRHPVN neurons was abolished by TTX (1 \u00b5M), confirming they were action potentials. In magnocellular (non-CRH) neuroendocrine neurons of the PVN, the identical network current failed to trigger rhythmic brief bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 are supported by pharmacological experiments (Figure 6L) and control experiments in magnocellular neurons (Figure 6M-N). These controls validate that the observed bursts are genuine action potentials and that the burst firing requires specific intrinsic properties of CRHPVN neurons, not just the network input pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C74",
+      "C75"
+    ],
+    "result": "Recurrent inhibitory circuits exist in the PVN. Early in vivo recordings predicted their existence based on inhibition following antidromically elicited action potentials. Recent studies identified local GABAergic interneurons that form recurrent inhibitory circuits, where CRHPVN neurons excite CRHR1-expressing GABAergic interneurons via slow metabotropic actions, which in turn send GABAergic inputs to CRHPVN neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C74, and C75 are supported by citations to previous studies. This established anatomical and physiological knowledge provides the biological basis for the recurrent inhibition mechanism proposed in the model. The citations are appropriate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The network model found that the long IBI (~2 s) of brief bursts require slow excitatory EPSPs consistent with metabotropic signaling (\u03c4CRH >200 ms) rather than fast ionotropic EPSPs (\u03c4e <20 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by the network model optimization results (Table 1 shows \u03c4CRH = 232.6 ms). This finding is consistent with known biology of CRH-CRHR1 signaling (C75) and provides a mechanistic explanation for the long IBI observed in vivo. The model prediction is testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The RB firing pattern in CRHPVN neurons is distinct from phasic burst firing in vasopressinergic magnocellular neurons. Magnocellular phasic bursts have lower intraburst frequencies (2.5-20 Hz), last much longer (>10 s) than RB (<100 ms), and are followed by prolonged (~10 s) silent periods generated by intrinsic mechanisms. Phasic bursts were not observed in identified CRHPVN neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by comparison to established knowledge about magnocellular neurons (citations provided) and the negative finding in CRHPVN neurons. This distinction is important for clarifying the novelty of the RB firing pattern and ruling out contamination from magnocellular neurons in the recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The network model is simplified and has limitations. It does not incorporate external inhibitory inputs to CRHPVN neurons or external excitatory/inhibitory inputs to GABAergic neurons. Transmission from CRH to GABA neurons is exclusively modeled by slow CRHergic transmission, but CRHPVN neurons have been shown to release glutamate at some synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 represent appropriate acknowledgment of model limitations. The authors transparently discuss simplifications and cite evidence for additional complexity (glutamate release). Despite these limitations, the model captures key features of in vivo firing (C73), suggesting the simplifications are reasonable for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CRHPVN neurons differ from thalamic relay neurons in their intrinsic properties and firing patterns. CRHPVN neurons express only modest levels of T-type currents and little, if any, H-currents, whereas these currents play crucial roles in burst firing and mode switching in thalamic relay neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by citations to previous studies on both CRHPVN and thalamic neurons, and by observations from the model fitting (Figure 5A). This comparison helps explain why CRHPVN neurons require network inputs for burst firing, unlike thalamic neurons that can burst intrinsically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C94"
+    ],
+    "result": "Two types of network-like inputs (excitatory and recurrent inhibitory) are sufficient to generate firing patterns qualitatively different from conventional ex vivo characterizations. Burst firing does not simply occur as a result of current injection patterns but requires unique interaction between intrinsic properties of CRHPVN neurons and network inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C94 are supported by the network clamp experiments and controls (Figure 6). The demonstration that simple network inputs can recreate complex in vivo firing patterns, and that this requires specific intrinsic properties (C50) and full temporal structure of inputs (C47-C48), validates this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Yuan et al. (2019) reported spontaneous burst firing of CRHPVN neurons ex vivo in repeatedly stressed mice, but this differed from the current findings. The ex vivo burst firing had lower intraburst frequency (<100 Hz, averaging ~50 Hz) compared to in vivo RB (>100 Hz), and involved stress-induced plasticity developing over days (evident only after three daily foot shocks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 accurately describe findings from a previous study (Yuan et al., 2019) and appropriately distinguish them from the current results. The comparison is fair and highlights important differences in experimental conditions (stressed vs. non-stressed) and firing patterns (frequency, time course of plasticity).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Network clamp is a simpler method than dynamic clamp. It injects a predetermined current waveform readily available from the leaky-integrate-and-fire model. One limitation is that the amplitude of current fluctuations can be larger than physiologically realistic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C92 appropriately describe the network clamp method and acknowledge its limitations. The authors transparently discuss that current amplitudes were capped at \u00b1200 pA to address this limitation, and demonstrate that despite this, the method successfully recreates in vivo-like firing patterns (C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The in vivo recordings were performed under urethane anesthesia. Urethane produces long-lasting steady surgical anesthesia and preserves subcortical and peripheral neural functions. Under urethane, hypothalamic neurons respond to stress stimuli and sciatic nerve stimulation elevates blood ACTH levels. However, urethane has been shown to enhance autonomic and HPA axis activity, likely by enhancing adrenergic inputs to the PVN. (Nor)adrenaline has both excitatory and inhibitory effects on PVN neurons and can influence state-switching between bursting and single spiking. Therefore, urethane may have affected baseline firing activities and burst firing properties of CRHPVN neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 provide appropriate discussion of the use of urethane anesthesia, citing relevant literature on its effects. The authors transparently acknowledge both the advantages (preserved stress responsiveness) and potential limitations (enhanced adrenergic activity) of this approach. The speculation about potential effects (C105) is appropriately cautious and identifies the need for future awake recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C61",
+      "C106"
+    ],
+    "result": "The authors speculate that persistent SS firing and ensuing elevation of spike rate play a major role in hormonal CRH release, and that brief intermittent bursts of activity are ideally suited to drive rapid behavioral and emotional changes independently of systemic and long-lasting hormonal response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61 and C106 are explicitly labeled as speculation by the authors. While these speculations are reasonable given the observed firing patterns and known functions of CRHPVN neurons (C107-C110), they are not directly tested in this study. The functional significance of RB versus SS firing modes requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background knowledge about CRH neurons and the HPA axis is accurately presented. CRH neurons in the PVN are effector neurons of hormonal stress response, projecting to the median eminence where released CRH initiates downstream hormonal cascades. The HPA axis elevates glucocorticoid levels during stress. Various stressors induce immediate early gene expression in CRHPVN neurons (minutes to hours), and recent fiber photometry studies show rapid (seconds) population Ca2+ signal increases. Previous in vivo electrophysiology was blinded to neuronal identities due to technical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16 accurately summarize established knowledge about CRH neurons and the HPA axis, supported by appropriate citations. This background provides essential context for the study and correctly identifies the gap in knowledge (lack of identified single-unit recordings) that the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Established knowledge about GABAergic inhibition of CRHPVN neurons is accurately presented. Under non-stress conditions, CRHPVN neuron excitability is tonically constrained by powerful GABAergic synaptic inhibition. Disinhibition is one dominant mechanism for activating these neurons and the HPA axis. Multiple disinhibitory mechanisms have been identified, including inhibition of presynaptic GABAergic neurons, depression of GABAergic synaptic terminals, and depolarizing shifts in GABAA receptor equilibrium potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 accurately summarize established knowledge about GABAergic control of CRHPVN neurons, supported by multiple appropriate citations. This background is essential for contextualizing the novel finding that recurrent inhibition specifically controls RB firing and constrains firing rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "CRHPVN neurons have diverse projections and functions beyond hormonal CRH release. They send projections to the perifornical area and lateral hypothalamus, which in turn send GABAergic inputs back to CRHPVN neurons. Recent studies show CRHPVN neurons are involved in controlling wakefulness, valence encoding, reward processing, and defensive behavior control under non-stress and stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 and C107-C110 accurately summarize recent findings about CRHPVN neuron projections and functions, supported by appropriate citations. This background provides important context for the speculation (C106) that RB firing may serve functions independent of hormonal release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C90",
+      "C95",
+      "C96"
+    ],
+    "result": "Established knowledge about neuronal plasticity and ex vivo versus in vivo differences is accurately presented. CRHPVN neurons undergo diverse forms of synaptic and intrinsic plasticity in response to acute and chronic stress. Neurons in slice differ in their response properties from intact in vivo preparations, and injection of noise approximating synaptic inputs can recreate in vivo firing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C95, and C96 accurately summarize established knowledge, supported by appropriate citations. This background provides important context for the network clamp approach and helps explain why CRHPVN neurons fire differently in vivo versus ex vivo.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors developed and screened five FAP-sensitive vasoprobe constructs (FAPVap) using a cell-based bioassay. Construct (5), containing two tandem FAP cleavage sites, showed the greatest FAP-mediated activation with a 34-fold increase in CGRP receptor agonism (EC50 changing from 6.7 \u00b1 0.2 nM to 0.20 \u00b1 0.01 nM after FAP processing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33-C40 describe the design, screening, and characterization of FAPVap constructs with consistent experimental data from Figure 1. The bioassay results clearly demonstrate dose-response curves before and after FAP treatment, with construct (5) showing optimal performance. The EC50 values are directly measured and reported with error bars (n=3 technical replicates), and the 34-fold activation is mathematically consistent with the reported EC50 values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "FAPVap selectively detects FAP-expressing xenografts in rat brain in vivo. FAP-expressing HEK293 cells (containing ~8.5 pmol FAP per 10^6 cells) were implanted bilaterally in rat striatum. Local perfusion of 100 nM FAPVap during T2-weighted MRI produced significant signal changes near FAP-expressing cells (13.1% \u00b1 1.9%) compared to control cells (0.7% \u00b1 1.5%, p=0.007, n=3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 describe a well-controlled in vivo experiment with appropriate controls (FAP-expressing vs. control cells in the same animal). The statistical analysis is appropriate (t-test with n=3), the p-value is significant (p=0.007), and the effect size is substantial (~13% signal change). The experimental design with bilateral implantation controls for animal-to-animal variability. Figure 2 provides clear visual and quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A kinetic model was developed to quantify FAP enzymatic activity from FAPVap imaging time courses. The model accounts for probe infusion, FAP-catalyzed conversion, and probe/product efflux, enabling estimation of FAP cleavage rate constants (k) from MRI signal changes. Model fitting to experimental data yielded k values of 1.2-6.8 \u00d7 10^-4 s^-1 for the striatal xenograft experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C54 describe a kinetic model with several simplifying assumptions (linearity of hemodynamic response, first-order kinetics, specific infusion rates). While the model provides a framework for quantitative analysis, the authors acknowledge limitations and note that 'assumptions might require refinement in future studies.' The fitted k values span a ~5-fold range, and some model curves don't fully capture experimental features (e.g., the dip during infusion in Figure 2F). The model is useful but requires validation and refinement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C92"
+    ],
+    "result": "Wide-field FAPVap imaging via intra-CSF infusion enables quantitative mapping of FAP activity across the rat brain. Remote infusion of 100 nM FAPVap produced spatially localized signal changes (~1 mm diameter) around FAP-expressing cortical xenografts but not controls (5.2% \u00b1 1.1% vs. 0.5% \u00b1 0.9%, p=0.015, n=4). Voxel-level kinetic modeling yielded FAP cleavage rate constants (k = 0-0.03 s^-1) with detection sensitivity estimated at ~13 nM FAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 describe a technically sophisticated wide-field imaging approach with appropriate controls. The Gd-DTPA control experiment (C56) validates probe distribution. Statistical analysis is appropriate (t-test, n=4 animals), and the spatial resolution (~1 mm) is clearly demonstrated. The kinetic modeling achieves good fits (R^2 > 0.9 in 95% of voxels), and the detection limit analysis is reasonable. The intra-CSF delivery method is well-validated and clinically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "FAP expression in U138 human glioma cells is comparable to the FAP-transfected HEK cells used in imaging experiments (~1 pg FAP/cell). Literature comparison indicates that several glioma cell lines express FAP at similar or higher levels, suggesting FAPVap could be suitable for human glioblastoma imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 present direct experimental comparison between U138 and HEK-FAP cells using the same bioassay, showing similar performance (p\u22640.002 for 10^4 cells, n=3). The quantification against known FAP standards is appropriate. However, claims C72-C73 about clinical applicability are more speculative, relying on literature comparisons (C71) rather than direct measurement of in vivo human tumor FAP levels. The experimental data support comparability of cell lines, but clinical translation claims are inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The FAPVap contrast mechanism operates in nonhuman primate brain. In squirrel monkey, 100 nM CGRP (equivalent to activated FAPVap) induced vasodilation observable by optical imaging and produced ~5% MRI signal increase that was not observed with control aCSF infusion or in non-injected brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 present clear experimental evidence from both optical and MRI measurements in a single squirrel monkey. The optical imaging shows expected physiological responses (vessel dilation, decreased reflectance), and the MRI experiment includes appropriate controls (aCSF, reference regions). However, the study uses only one animal (n=1), which limits statistical power. The conclusion (C80) that the mechanism operates in primates is supported, but the clinical applicability claim (C81) is speculative and would require human studies or at least larger primate cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C31",
+      "C32",
+      "C82",
+      "C83",
+      "C84",
+      "C104",
+      "C105"
+    ],
+    "result": "This work establishes a vasoactive molecular imaging strategy for detecting FAP activity in brain tumors. The approach uses enzyme-activatable CGRP-based probes that induce hemodynamic MRI contrast upon FAP cleavage, enabling ultrasensitive (nanomolar) detection without radioactive or magnetic components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C22-C24, C31-C32 describe the core mechanism, which is well-supported by the experimental data throughout the manuscript. The novelty claims (C82-C83) are reasonable given the unique combination of enzyme activation and hemodynamic contrast. Claim C84 about nanomolar sensitivity is supported by the EC50 measurements and in vivo detection data. Claims C104-C105 are appropriate summary statements supported by the rodent and primate experiments. The overall strategy is well-demonstrated, though clinical translation remains to be proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors establish the clinical need for noninvasive molecular imaging of brain tumors, particularly for detecting proteases like FAP that are differentially expressed in glioma subtypes and play roles in tumor infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C20 provide background and motivation, supported by appropriate citations. These are primarily literature-based knowledge claims that establish context rather than presenting new experimental findings. The citations appear appropriate for the claims made (e.g., Olar and Aldape 2014 for cancer classification, Mentlein et al. 2012 for protease roles in gliomas).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C108"
+    ],
+    "result": "The authors establish key properties of FAP and CGRP relevant to the imaging strategy: FAP is an extracellular dipeptidase and clinically relevant biomarker expressed in glioblastomas; CGRP is a potent endogenous vasodilator (EC50 < 10 nM) in humans, and N-terminal extension reduces its receptor-binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C25-C28, C98-C103, C106, C108 are primarily knowledge claims supported by appropriate citations (e.g., Chin et al. 1994 for CGRP potency, Busek et al. 2008 for FAP in glioblastomas, Desai et al. 2016 for N-terminal extension effects). These establish the scientific foundation for the probe design but do not present new experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors compare FAPVap to alternative imaging modalities, noting that radiotracers are not activatable and require pharmacokinetic partitioning, superparamagnetic particles have delivery limitations due to size, and paramagnetic/diamagnetic MRI agents require high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 provide context for the advantages of the FAPVap approach, supported by appropriate citations (Holland et al. 2013 for radiotracers, Wahsner et al. 2019 for MRI contrast agents). These are primarily comparative knowledge claims rather than new experimental findings. The comparisons are reasonable but somewhat general.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors discuss potential clinical translation strategies, noting that intra-CSF infusion is similar to clinical intrathecal methods and could be optimized to avoid cranial surgery. They speculate that blood-brain barrier-permeating carrier proteins could enable even less invasive delivery, and that vasoprobes' high potency makes them amenable to such approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C97 are primarily speculative about future clinical applications. Claim C93 is supported by citations (Capozza et al. 2021, Fowler et al. 2020) comparing to clinical methods. However, claims C94-C96 are explicitly speculative ('could be accessible,' 'are likely to make them especially amenable') without experimental validation. These represent reasonable future directions but are not demonstrated in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C21"
+    ],
+    "result": "The authors claim this work demonstrates a potentially translatable strategy for ultrasensitive functional imaging of molecular targets in neuromedicine, building on previously introduced ultrasensitive molecular probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C21 are summary statements about the significance and context of the work. C21 appropriately cites prior work (Desai et al. 2016). C10's claim of 'potentially translatable' is reasonable given the primate data, though actual clinical translation is not demonstrated. The 'ultrasensitive' claim is supported by the nanomolar detection limits. These are appropriate concluding statements that accurately reflect the scope and limitations of the work.",
+    "result_type": "MINOR"
+  }
+]

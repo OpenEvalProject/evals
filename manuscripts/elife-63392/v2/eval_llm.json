@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C55"
+    ],
+    "result": "The authors developed a permeabilization-free immunohistochemistry protocol that enables uniform antibody labeling of neuronal cell types, intracellular enzymes, and synaptic proteins throughout thick (300 \u03bcm) ECS-preserved tissue sections while maintaining ultrastructural integrity. The method depends on preservation of extracellular space (ECS) during fixation, which allows antibodies to diffuse through the tissue without requiring detergent permeabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C23-C26, and C55 collectively demonstrate the core finding with strong experimental evidence. Figure 1 shows uniform NeuN labeling throughout 300 \u03bcm sections without permeabilization in ECS-preserved tissue (C23, C24) with intact membrane ultrastructure (C24, C26), contrasting with perfusion-fixed tissue that showed labeling gradients (C19). Nuclear exclusion of antibodies (C25, C26) provides additional evidence that membranes remain intact. The protocol was successfully applied to multiple protein targets (Figures 3-4) across different brain regions (Figure 5), supporting claims C4-C6. Multiple biological replicates are documented in the methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors systematically optimized protocol parameters including fixative composition (4% PFA + 0.005% GA), antibody concentration (33-66 nM), and buffer osmolarity, achieving complete antibody penetration through tissue sections up to 1 mm thick.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by systematic parameter optimization shown in supplementary figures. Figure 1\u2014figure supplement 2 demonstrates the balance between ultrastructural integrity and penetration depth across different PFA/GA concentrations (C27, C28). Figure 1\u2014figure supplement 3a shows optimal antibody concentration range (C29). Figure 2 demonstrates that increasing buffer osmolarity increases ECS preservation and antibody penetration, with complete penetration achieved in 1 mm sections at highest concentration (C30, C31). The optimization is methodical and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The permeabilization-free protocol successfully labeled multiple neuronal cell type markers (calretinin, calbindin, ChAT) with similar densities to permeabilized controls, though ChAT+ axons showed discontinuous labeling without permeabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by data in Figure 3. CR+ and CB+ cell densities were similar between permeabilized and non-permeabilized conditions (C32), with nuclear exclusion observed (C33). ChAT+ axons were labeled in both conditions (C34), but showed discontinuity without permeabilization (C35). The discontinuous axonal labeling represents a limitation but is honestly reported. Multiple biological replicates (minimum 3 mice, 3 sections each) strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The protocol has limitations for labeling proteins in close proximity to membranes: PSD-95 (~30 nm from membrane) showed poor labeling, while Homer (>50 nm from membrane) was successfully labeled, suggesting steric hindrance limits antibody access to membrane-proximal epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C61-C63 identify a clear limitation, while C39, C41-C43 provide mechanistic context. The failure to label PSD-95 (C38, C61) contrasted with successful Homer labeling (C42) is consistent with their different distances from the postsynaptic membrane (C39, C41, cited from Dani et al. 2010). The interpretation of steric hindrance (C62, C63) is reasonable given the differential labeling success. However, C38 notes data is not shown, which weakens direct evidence. The larger variability in Homer puncta intensity (C43) is noted but not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Sequential labeling of synaptophysin before and after permeabilization revealed that permeabilization with Triton X-100 led to extraction of synaptophysin from the center of sections, while pre-permeabilization labeling was uniform and co-localized with remaining post-permeabilization signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by the elegant sequential labeling experiment in Figure 4c-d. Pre-permeabilization synaptophysin labeling was consistent with published patterns (C44), while post-permeabilization showed central depletion (C45), consistent with known Triton extraction effects (C46). The co-localization analysis (C47) with significant correlation (p=1.5\u00d710\u207b\u2078, n=150 puncta) compared to rotated control (p=0.86) provides strong statistical evidence. This experiment demonstrates both the advantage of the permeabilization-free approach and validates the labeling specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The permeabilization-free protocol was successfully applied across multiple brain regions (hippocampus, olfactory bulb) to label region-specific cell populations and enabled HRP-DAB labeling for correlative EM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by data in Figure 5. The protocol successfully labeled known cell populations in hippocampus (C48) and olfactory bulb (C49) with patterns matching previous reports (cited: Ohira et al. 2010, Panzanelli et al. 2007). HRP-DAB labeling of eGFP-expressing mitral/tufted cells (C50) demonstrates compatibility with electron-dense reporters for direct EM correlation. The consistency with published patterns provides validation, though quantitative comparisons are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors demonstrated proof-of-principle correlative light and electron microscopy by registering 2P fluorescence images to EM data, successfully identifying immunolabeled cell bodies and TH+ axons 57-70 \u03bcm deep within tissue sections in corresponding EM volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by correlative microscopy data in Figure 6. Affine transformation successfully registered 2P and EM datasets (C51), enabling identification of corresponding somata (C52) and TH+ axons (C53) at depths of 57-70 \u03bcm (C54). However, these are single proof-of-principle experiments (stated in methods: 'performed once'), limiting assessment of reproducibility. The registration approach using anatomical landmarks is reasonable but manual, potentially introducing bias. The depth achieved (57-70 \u03bcm) is substantial but represents only ~20% of the 300 \u03bcm section thickness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The SeeDB tissue clearing protocol is compatible with the permeabilization-free IHC approach, enabling two-photon imaging throughout 300 \u03bcm sections while maintaining ultrastructural quality after refixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by data in Figure 1\u2014figure supplement 6 and throughout the manuscript. Refixation with 2% PFA before SeeDB clearing retained ultrastructural quality (C69), and SeeDB enabled 2P imaging through 300 \u03bcm sections (C70). The compatibility of tissue clearing with EM is critical for the correlative pipeline. However, the comparison in Figure 1\u2014figure supplement 6 is qualitative rather than quantitative, and some EM images show the same samples as Figure 1\u2014figure supplement 2, limiting independent assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "In perfusion-fixed tissue without ECS preservation, omitting detergent resulted in incomplete antibody penetration but intact ultrastructure, while including Triton X-100 achieved uniform labeling but severely degraded membrane integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C19-C22 establish the baseline problem that motivates the study. Figure 1a-b clearly demonstrates the tradeoff in perfusion-fixed tissue: Triton enables uniform labeling (C21) but destroys membranes (C22), while omitting detergent preserves ultrastructure (C20) but creates labeling gradients (C19). This is consistent with known effects of Triton (C16, cited). The comparison is well-controlled with biological replicates (Figure 1\u2014figure supplement 1). This establishes the need for the ECS-preservation approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The mechanism underlying permeabilization-free labeling is attributed to preservation of extracellular space (ECS) during fixation, which provides diffusion pathways for antibodies to reach epitopes without crossing multiple membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C18 cite prior work on ECS preservation, while C55-C57 present the authors' mechanistic interpretation. While the dependence on ECS preservation is well-demonstrated experimentally (Figures 1-2), the proposed mechanism (C56-C57) remains speculative. The authors acknowledge uncertainty about how antibodies cross intact membranes, noting aldehyde-induced semi-permeabilization (C58) and the size of IgG relative to potential pores (C59-C60). Direct evidence for the proposed mechanism (antibodies diffusing through ECS and crossing single membranes) is lacking. Alternative explanations (e.g., membrane damage during ECS preservation) are mentioned but not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The authors hypothesize that incomplete ChAT+ axonal labeling without permeabilization may result from axon diameter narrowing or myelination limiting antibody diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C37 are explicitly stated as hypotheses to explain the observed discontinuous axonal labeling (C35). No experimental evidence is provided to test these hypotheses. The speculation is reasonable given that permeabilization improved axonal labeling (consistent with lipid solubilization removing barriers), but alternative explanations are not explored. This represents an honest acknowledgment of a limitation rather than a supported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors propose future directions including use of nanobodies to improve labeling of membrane-proximal proteins and achieving ECS preservation in whole-brain perfusion for larger volume labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 describe potential future work rather than current results. C64 speculates that nanobodies might improve labeling if IgG size is limiting, citing their smaller size. C65 cites prior work showing nanobody penetration up to 100 \u03bcm. C66 proposes whole-brain ECS preservation as a future goal. These are reasonable suggestions but represent speculation about future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors establish the scientific context: EM provides structural connectivity data but lacks functional information, which can be added through physiological recording or IHC, but conventional pre-embedding IHC requires permeabilization that degrades ultrastructure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C15 establish background knowledge supported by appropriate citations. These claims accurately represent the state of the field and the motivation for the study. C1-C2 describe EM capabilities and limitations. C8-C11 describe approaches to add functional information. C12-C15 describe current IHC approaches and their limitations. All claims are supported by relevant citations and represent accurate characterizations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors note that aldehyde fixation semi-permeabilizes membranes and that IgG antibodies (~5 nm hydrodynamic radius) require similarly-sized pores to access intracellular epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 cite prior work to provide context for the mechanism discussion. C58 cites Hopwood 1985 on aldehyde-induced semi-permeabilization. C59 cites two papers on IgG hydrodynamic radius. C60 is a logical inference from C59. These claims accurately represent cited work and provide relevant mechanistic context, though they don't directly test the mechanism in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The authors emphasize that successful protocol replication requires confirming ECS preservation by EM inspection, and note that ECS preservation varies by brain region requiring region-specific calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide important practical guidance for protocol implementation. C67 emphasizes the need to verify ECS preservation by EM, which is reasonable given the method's dependence on this parameter. C68 cites prior work (Pallotto et al. 2015) showing regional variation in ECS preservation. These are appropriate caveats and recommendations for users of the protocol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The authors used C57BL/6J male mice (p30-p45) for most experiments, with specific transgenic lines for targeted experiments, following NIH guidelines under approved protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 describe the experimental animals and ethical compliance. These are straightforward methodological details stated in the Materials and methods section. The information is clearly documented and appropriate for the experiments performed.",
+    "result_type": "MINOR"
+  }
+]

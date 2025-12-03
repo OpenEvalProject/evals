@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C122"
+    ],
+    "result": "A novel microfluidic trapping platform was developed using pressure-actuated PDMS membranes to create circular traps with radii of 7.5, 12.5, 17.5, 25, and 45 \u03bcm and a fixed height of 10 \u03bcm. The trap size is reproducible with variability of 1\u20132 \u03bcm in radii, and the system successfully confined individual bacteria for imaging up to 1 hour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30\u2013C49 and C122 collectively describe the design, fabrication, and characterization of the microfluidic device. The trap dimensions are measured (C44, C45), reproducibility is quantified (C45), and the capability for long-term single-cell observation is demonstrated (C47). The design rationale (C43) and experimental validation (C44\u2013C49) provide strong support for this methodological result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In the absence of magnetic fields, magnetotactic bacteria predominantly swim along trap walls with a radial probability distribution showing a pronounced peak within a few micrometers from the wall border. Reversals occur at a rate of ~0.5 s\u207b\u00b9 and show no systematic dependence on trap size or distance from the wall, suggesting that wall interactions result in passive alignment rather than active behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53\u2013C61 describe the baseline swimming behavior without magnetic fields. The wall-swimming behavior is quantified through radial distributions (C54), reversal rates are measured (C57), and the independence of reversals from wall proximity is tested (C58\u2013C60). The conclusion that wall interactions are passive (C61) is supported by the reversal rate analysis. The comparison to algae (C55) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C74",
+      "C75"
+    ],
+    "result": "An active Brownian particle (ABP) model with two free parameters (interaction range A_w and wall torque strength T_w) successfully reproduces the experimental radial distributions. The model suggests that wall torque, which can be derived from steric interactions of elongated swimmers, is sufficient to explain wall-swimming behavior across different swimmer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62\u2013C75 describe the computational modeling approach and its validation. The simulation parameters are specified (C63\u2013C65), the fit quality is assessed (C69), and discrepancies are explained (C70). The phenomenological wall torque is justified theoretically (C74) and compared to prior work (C72). The conclusion about generality (C75) is supported by the good agreement between model and experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Magnetic fields introduce a magnetic torque that competes with wall torque. At 50 \u03bcT, trajectories resemble those without a field, but at 500 \u03bcT, bacteria perform U-turns\u2014swimming toward the field direction until hitting the wall, then turning along the wall until the combined torques redirect them back into the trap interior. U-turns are distinct from spontaneous reversals, which show no magnetic field dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76\u2013C87 describe the magnetic field effects and the U-turn mechanism. The field-dependent behavior is observed experimentally (C79, C80), U-turns are distinguished from reversals (C81, C82), and the mechanism is explained through torque balance (C84\u2013C87). The specific examples (C86, C87) illustrate how torque directions determine trajectories. The experimental observations and mechanistic explanation are mutually consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Simulations predict three trajectory regimes depending on swimming velocity and magnetic moment: trapping at the north pole (low velocity), U-turns (intermediate velocity), and wall-circling (high velocity). The U-turn radius R_U = (\u03c0/2)(k_BT/mBD_r)v depends on velocity and magnetic moment, and experimental U-turn radii cluster around theoretical predictions using m = 0.36 \u00d7 10\u207b\u00b3 A \u03bcm\u00b2 from TEM measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88\u2013C102 describe the phase diagram of trajectory behaviors and validate the theoretical U-turn radius formula. The three regimes are identified in simulations (C90), the transitions are explained by length scale comparisons (C91, C94), and experimental data confirm the theoretical predictions (C97\u2013C99). The scatter is attributed to cell-to-cell variability (C100), which is consistent with the observed heterogeneity. The trap-size dependence (C101, C102) further validates the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C8",
+      "C9",
+      "C32",
+      "C107",
+      "C108",
+      "C109",
+      "C118",
+      "C119"
+    ],
+    "result": "Large cell-to-cell heterogeneity exists in swimming velocity and magnetic moment. The second peak in radial distributions at 500 \u03bcT (indicating U-turns) is only visible for individual bacteria, not in population averages, demonstrating that single-cell tracking is essential for understanding motility patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C32, C103, C104, C107\u2013C109, C118, and C119 collectively establish the importance of heterogeneity and single-cell analysis. Heterogeneity is observed in velocity (C104) and magnetic moment (C103), and its impact on population-averaged data is demonstrated (C108). The conclusion that single-cell analysis is essential (C9, C32, C109, C119) is directly supported by the observation that key features (second peak) are lost in population averages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Bacterial interactions in traps containing 1\u20133 bacteria are negligible compared to heterogeneity. Trajectories and U-turn radii show greater variability between traps with the same number of bacteria than between traps with different numbers of bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111\u2013C114 describe the test for bacterial interactions. The experimental design (C111), qualitative observation (C112), quantitative analysis (C113), and conclusion (C114) form a logical chain. The finding that heterogeneity dominates over interaction effects is supported by the comparative analysis of U-turn radii.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C34",
+      "C7",
+      "C139",
+      "C136"
+    ],
+    "result": "The variety of observed bacterial trajectories can be explained by the interplay of two torques: magnetic torque (from the external field) and wall torque (from wall interactions). This simple physical description quantitatively explains and predicts swimming behavior when wall interactions are accounted for.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34, C117, C136, and C139 state the main conclusion of the study. This conclusion is supported by the combined experimental observations (trajectory variety, field dependence, U-turns) and the successful ABP model that reproduces these behaviors using only two torques. The quantitative agreement between theory and experiment (C99, C106) validates this explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The wall-swimming behavior of magnetotactic bacteria is similar to that of algae (C. reinhardtii) despite hydrodynamic differences (pusher vs. puller type). This similarity suggests that steric effects dominate wall interactions, possibly through transient wall alignment expected for all elongated particles, though more detailed studies are needed for definitive conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124\u2013C133 compare the current findings to prior work on algae and propose a general mechanism. While the similarity in behavior is observed (C124, C125), the mechanistic explanation (C128, C131, C132) is speculative. The authors acknowledge that the swimmer types are different (C126, C127) and that more studies are needed (C133). The hypothesis about steric dominance is plausible but not definitively proven by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "TEM imaging reveals that MSR-1 bacteria contain an average of 23.8 \u00b1 8.3 magnetosomes with a mean diameter of 19.4 \u00b1 4.3 nm, corresponding to a mean magnetic moment of 0.36 \u00d7 10\u207b\u00b3 A \u03bcm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151 and C152 report TEM measurements that are used to estimate the magnetic moment. These measurements are straightforward characterization data referenced in the Materials and Methods section and used in the theoretical predictions (C99). The values are consistent with the observed U-turn radii.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "MSR-1 bacteria were cultured in modified growth medium, magnetically selected to enrich north-seeking bacteria (~80% of population), and imaged under controlled magnetic fields (0, 50, or 500 \u03bcT) using Helmholtz coils with \u00b12.5 \u03bcT precision after canceling ambient fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143\u2013C150 describe the bacterial culture, selection, and magnetic field control methods. These are standard methodological details that are clearly described and appropriate for the study. The precision of the magnetic field control (C147) and the enrichment of north-seeking bacteria (C144) are important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Image stabilization and background subtraction were implemented to track bacteria swimming close to walls, but continuous tracking was not always possible, resulting in trajectory fragments (43 \u00b1 16 fragments per trajectory).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C52 describe a technical limitation of the tracking method and how it was addressed. The fragmentation of trajectories is acknowledged and quantified, which is important for understanding the data quality. This is a transparent reporting of methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C135",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The work establishes a basis for analyzing and predicting microswimmer motility in complex environments. The microfluidic trapping approach provides quantitative single-cell characterization and may be extended to study other microorganisms, synthetic microswimmers, and biological processes in more complex systems including sediment habitats and biomedical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C135, C140\u2013C142 describe the broader impact and future applications of the work. These claims are supported by the demonstrated capability of the platform (single-cell tracking, controlled confinement, magnetic field control) and the successful explanation of trajectory variety. The potential extensions (C142) are reasonable given the platform's capabilities, though they remain to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

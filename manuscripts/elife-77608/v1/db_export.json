@@ -1,0 +1,1308 @@
+{
+  "submission": {
+    "id": "452d909a-f91c-4131-b857-594869fa56dd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:18:51.981334Z",
+    "updated_at": "2025-12-03T16:18:51.981334Z"
+  },
+  "content": [
+    {
+      "id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "submission_id": "452d909a-f91c-4131-b857-594869fa56dd",
+      "content_type": "manuscript",
+      "content_text": "# Unrestrained growth of correctly oriented microtubules instructs axonal microtubule orientation\n\n## Authors\n\n- Maximilian AH Jakobs<sup>1</sup> ([ORCID: 0000-0002-0879-7937](https://orcid.org/0000-0002-0879-7937)) \u2020\n- Assaf Zemel<sup>3</sup> ([ORCID: 0000-0002-6816-3303](https://orcid.org/0000-0002-6816-3303))\n- Kristian Franze<sup>1</sup> ([ORCID: 0000-0002-8425-7297](https://orcid.org/0000-0002-8425-7297)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Development and Neuroscience, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n2. DeepMirror Cambridge United Kingdom\n3. Institute of Biomedical and Oral Research, and the Fritz Haber Center for Molecular Dynamics, Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))\n4. Institute for Medical Physics, Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg Erlangen Germany ([ROR:00f7hpc57](https://ror.org/00f7hpc57))\n5. Max-Planck-Zentrum f\u00fcr Physik und Medizin Erlangen Germany ([ROR:0409fn624](https://ror.org/0409fn624))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn many eukaryotic cells, directed molecular transport occurs along microtubules. Within neuronal axons, transport over vast distances particularly relies on uniformly oriented microtubules, whose plus-ends point towards the distal axon tip (anterogradely polymerizing, or plus-end-out). However, axonal microtubules initially have mixed orientations, and how they orient during development is not yet fully understood. Using live imaging of primary Drosophila melanogaster neurons, we found that, in the distal part of the axon, catastrophe rates of plus-end-out microtubules were significantly reduced compared to those of minus-end-out microtubules. Physical modelling revealed that plus-end-out microtubules should therefore exhibit persistent long-term growth, while growth of minus-end-out microtubules should be limited, leading to a bias in overall axonal microtubule orientation. Using chemical and physical perturbations of microtubule growth and genetic perturbations of the anti -catastrophe factor p150, which was enriched in the distal axon tip, we confirmed that the enhanced growth of plus-end-out microtubules is critical for achieving uniform microtubule orientation. Computer simulations of axon development integrating the enhanced plus-end-out microtubule growth identified here with previously suggested mechanisms, that is, dynein-based microtubule sliding and augmin-mediated templating, correctly predicted the long-term evolution of axonal microtubule orientation as found in our experiments. Our study thus leads to a holistic explanation of how axonal microtubules orient uniformly, a prerequisite for efficient long-range transport essential for neuronal functioning.\n\n## Introduction\n\nSymmetry breaking is critical for many biological systems. An organism starts off as a single round cell that divides and differentiates into many cells, tissues, and organ systems. The neuron, with its branched dendrites and sometimes exceedingly long axon, is one of the least symmetric cells found in animals. Axons connect neurons with distant targets and thus enable long-distance signal transmission throughout the body at high speed.\n\nThe enormous length of axons, which can extend over several meters in some vertebrate species, poses substantial logistical challenges. RNA, proteins, and organelles originating in the cell body need to be actively transported down the axon. Transport occurs along microtubules (MTs), which are long, polarized polymers that undergo stochastic cycles of growth and shrinkage (Figure 1A). Motor proteins transport cargo either towards a MT\u2019s dynamic (i.e., growing and shrinking) plus-end or the more stable minus-end (Jiang et al., 2018; Jiang et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic depicting the MT growth and shrinkage cycle. MTs grow until they undergo a catastrophe, which initiates MT shrinkage, and they start growing again after a rescue event. During growth (but not during shrinkage), EB1 localizes to MT tips. (B) First frame of a live cell imaging movie of axonal EB1-GFP dynamics. Bright dots represent individual EB1-GFP puncta, which label growing MT plus-ends. (C) Maximum intensity projection of a 200-s-long movie depicting EB1-GFP dynamics in a Drosophila melanogaster axon. EB1-GFP density is increased towards the tip. (D) Schematic showing how EB1-GFP live imaging movies were visualized and analysed using kymographs. The growing tips of plus-end-out MTs (blue) and minus-end-out MTs (red) were fluorescently labelled with EB1-GFP (green tear drop shaped \u2018comets\u2019). The same axon is shown at three different time points; MTs grow at their plus-end, where EB1-GFP is located. The axonal intensity profiles of all time points are plotted underneath each other, resulting in a space-time grid called \u2018kymograph\u2019. Connecting puncta between consecutive kymograph lines with blue/red lines yields the overall displacement dg for individual MT growth events. Note that the red minus-end-out MT stops growing in the second frame and shrinks in the third frame (E) Kymograph of an axon 24 hr post plating showing EB1-GFP dynamics analysed with KymoButler (Jakobs et al., 2019). Lines with a positive slope (blue, left to right upwards) are MTs growing with their plus-end towards the axon tip, lines with a negative slope (red, left to right downwards) are MTs growing away from the tip. Horizontal bars indicate the growth lengths (dg) for individual MT growth cycles. (F) Kymographs of axonal processes expressing EB1-GFP analysed with KymoButler 4 hr post plating (G) MT orientation as a function of axon length. Longer axons exhibit a more pronounced plus-end-out MT orientation (p<10\u20135, Kruskal-Wallis test, **p<0.01, ***p<0.001 for pairwise comparisons, Dunn-Sidak post hoc test). (H) MT orientation at 4 and 24 hiv (hours in vitro). MT orientation increased with time (p<10\u20134, Wilcoxon rank sum test). (I) EB1-GFP comet density as a function of the distance from the axon tip. Most MT polymerization occurred near the advancing axon tip. (N Axons = 353, 20 biological replicates from 20 different experiment days, p<10\u201320, Kruskal-Wallis test, p<10\u20137 for pairwise comparisons between bins 1\u20132, 3, and 4, Dunn-Sidak post hoc test). Shown are median\u00b195% confidence interval. (J) Added length per MT growth cycle dg as a function of distance from the axon tip. MTs grew longer in the vicinity of the axon tip (p<10\u201320, Kruskal-Wallis test, p<10\u20137 for pairwise comparisons of either bin 1 or 2 with any other bin, Dunn-Sidak post hoc test). (K) dg for plus-end-out (blue) and minus-end-out (red) MTs grouped for growth in the distalmost 10 \u00b5m of the axon tip, and further away than 10 \u00b5m from the axon tip. Each dot represents the average of one axon in the respective region, grey lines indicate median values. With dg 2.11 [2.04, 2.16] \u00b5m/cycle (bootstrapped median [95% confidence interval]), plus-end-out MTs near the axon tip grew significantly longer than minus-end-out MTs (dg = 1.39 [1.27, 1.50] \u00b5m/cycle) and MTs located further away from the tip (dg = 1.53 [1.47, 1.59] \u00b5m/cycle, plus-end-out, dg = 1.16 [1.03, 1.33] \u00b5m/cycle, minus-end-out) (N=346 (plus-end-out close to tip), 343 (plus-end-out away from tip), 177 (minus-end-out close to tip), 194 (minus-end-out away from tip) axons), 20 biological replicates; p<10\u201330, Kruskal-Wallis test followed by Dunn-Sidak post hoc test; ***p<10\u20134. Scale bars: 3 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) Microtubule (MT) growth. (A) Added MT length per growth cycle, dg, (B) Catastrophe frequency, fg = 1/tg, and (C) growth velocity, vg, for plus-end-out (blue) and minus-end-out (red) MTs. While MT growth velocities are largely independent of MT orientation and localization along the axon (p<0.003; Kruskal-Wallis test, only bins 1 and 4 of plus-end-out growth velocities are significantly different) (C), plus-end-out MTs near the axon tip undergo catastrophes less frequently than minus-end-out MTs and MTs further away from the tip (p<10\u201337; Kruskal-Wallis test) (B). The resulting longer growth times tg lead to enhanced growth of these MTs in each growth cycle (p<10\u201337; Kruskal-Wallis test) (A). (D) Median MT orientation as a function of distance from the axon tip. Lines represent 30\u201370% quantiles (all 1). No changes are observed along the axon. (E) Median EB1-GFP fluorescence intensity normalized by median fluorescence as a function of distance from the axon tip. EB1 fluorescence decreases towards the axon tip. Lines represent median\u00b195% confidence interval. All bins are significantly different and median fluorescence increases away from the axon tip (p<10\u2013100; Kruskal-Wallis test, ***: p<0.001). (F) Median EB1 comet length as a function of the distance from the axon tip (p=0.25; Kruskal-Wallis test) ***: p<0.001. EB1 comets have similar lengths along the axon.\n\nIn immature axons, MT orientation is mixed, with 50\u201380% of all MTs pointing with their plus-end-out (del Castillo et al., 2015; Yau et al., 2016). During early neuronal development, the fraction of plus-end-out axonal MTs increases (del Castillo et al., 2015; Yau et al., 2016). In mature axons, ~95% of all MTs point in the same direction (plus-end-out) (Baas et al., 1989; Heidemann et al., 1981), enabling polarized transport (Millecamps and Julien, 2013). Deficits in polarized transport have been associated with human neurodegenerative diseases, such as Alzheimer\u2019s and Parkinson\u2019s diseases (Millecamps and Julien, 2013). Despite the importance of polarized transport in neuronal axons, the mechanisms that establish and maintain MT orientation are still not fully understood (Baas and Lin, 2011; Conde and C\u00e1ceres, 2009; Kapitein and Hoogenraad, 2011).\n\nMTs in post-mitotic neurons are not attached to the centrosome (Kuijpers and Hoogenraad, 2011). Nucleation of new MTs occurs from MT organizing centres (MTOCs) such as somatic Golgi (Mukherjee et al., 2011) through elongation of severed pieces (Yu et al., 2008) or de novo polymerization alongside existing MTs (Nguyen et al., 2014; S\u00e1nchez-Huertas et al., 2016). These newly formed MTs often orient in the same direction as existing ones, enforcing any pre-existing orientation bias (Mattie et al., 2010; Mukherjee et al., 2020). Pre-existing biases are furthermore enhanced by selective stabilization of MTs through TRIM46-mediated parallel bundling (van Beuningen et al., 2015). However, without pre-existing biases these mechanisms by themselves cannot explain the robust plus-end-out orientation of MTs in mature axons.\n\nFurthermore, in axons, short MTs pointing with their minus-end away from the cell body can be transported towards the cell body (i.e., away from the tip) by cytoplasmic dynein (del Castillo et al., 2015; Rao et al., 2017), thus potentially clearing the axon of minus-end-out MTs. To test whether this mechanism is sufficient to establish uniform MT orientation in axons, we previously designed computer simulations of dynein-mediated MT sliding in neurons. However, while MTs in the distal axon were oriented mostly with their plus-end away from the cell body (Jakobs et al., 2020; Jakobs et al., 2015), our simulations failed to explain the longer-term plus-end-out orientation of MTs in the proximal axon and the gradual establishment of a uniform plus-end-out MT orientation throughout the axon seen in experiments (Yau et al., 2016). Thus, our simulations suggested that additional mechanisms are needed to establish the uniform plus-end-out orientation of MTs in neuronal axons.\n\nHere, we investigated MT growth behaviours along D. melanogaster axons and discovered increased plus-end polymerization of plus-end-out MTs near the advancing axon tip, which depended on the presence of MT anti-catastrophe protein gradients in the distal axon. A stochastic model of MT dynamics suggested that this growth bias leads to unbounded growth of these MTs, while minus-end-out MTs exhibit bounded growth and remain short. Experiments and computer simulations confirmed that this selective MT growth bias is critical for uniform axonal MT orientation. Integrating previously identified mechanisms with the decreased plus-end-out MT catastrophe rate discovered here led to a model explaining how uniform MT orientation is achieved in developing neuronal axons.\n\n## Results\n\n### Correctly oriented MTs add more length per growth cycle\n\nTo investigate how MT orientation in neuronal axons becomes biased, we first cultured acutely dissociated neurons from the D. melanogaster larval CNS (Egger et al., 2013) and quantified MT growth in axons. We used Drosophila lines expressing the fusion protein EB1-GFP, which labels growing MT plus-ends with bright \u2018comets\u2019 (Figure 1A\u2013C; S\u00e1nchez-Soriano et al., 2010; Stepanova et al., 2003). The distance over which a comet moves in the axon is equal to the overall length dg that is added to an MT between the start of its growth cycle and the growth cycle\u2019s end (Figure 1A), at which usually a \u2018catastrophe\u2019 occurred, leading to MT shrinkage (Figure 2). The direction of growth reveals whether an MT is oriented with its plus-end away from (plus-end-out) or towards (minus-end-out) the cell body. Time-lapse movies of EB1-GFP comets were converted into kymographs and analysed using KymoButler (Jakobs et al., 2019; Figure 1D\u2013F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic highlighting the assumptions of our two-state master equation model. MTs were assumed to occupy either a growing or shrinking state. During a growth cycle, the average MT length increases by dg, during a shrinkage cycle, the MT length decreases by ds. Additionally, MTs were able to stochastically switch between the two states as shown in Figure 1A. (B\u2013D) Kymographs from a Drosophila melanogaster axon that expressed (B) EB1-GFP (green) and (C) Jupiter-mCherry, a tubulin label (magenta). Individual MT shrinkage events, visible as (C) fluorescent edges and (D) dashed white lines in the kymograph, yielded MT shrinkage lengths per cycle ds. Yellow and blue arrow heads in (B) and (C) indicate start and end points of an individual shrinkage event, respectively, and the inset in (D) highlights an individual shrinkage event. Scale bars: 3 \u00b5m. (E) Average ds values for N=47 axons (3 biological replicates; median: 2.03 [1.80, 2.26] \u00b5m) (bootstrapped median [95% confidence]). (F) Plot of the estimated overall MT length lMT as a function of dg. The two solid black curves indicate the lower and upper bounds of the average MT lengths for a given dg with ds = 1.80 or 2.26 \u00b5m. One can separate two regimes, \u2018unbounded\u2019 and \u2018bounded\u2019 growth, separated by the dashed grey line. (G) Plot of dg as a function of MT orientation and localization showing median and 95% confidence intervals. Plus-end-out MTs close to the tip were considerably more likely to exhibit unbounded growth than plus-end-out MTs further away from the tip and minus-end-out MTs.\n\nThe fraction of plus-end-out MTs increased over time and with increasing axonal length (Figure 1G\u2013H), confirming that MT orientation increases during development (del Castillo et al., 2015; Yau et al., 2016). Most MT growth events (~66%) were found within the first 20 \u00b5m from the advancing axon tip (Figure 1A and J). MT growth lengths per cycle, dg were significantly higher near the axon tip compared to further away from it (Figure 1K). Furthermore, plus-end-out MTs added significantly more length per growth cycle than minus-end-out MTs, with the highest difference between plus-end-out and minus-end-out MTs (~0.5 \u00b5m/cycle) found within the first 10 \u00b5m from the axon tip (dg (plus-end-out)=2.11 [2.04, 2.16] \u00b5m/cycle and dg (minus-end-out)=1.39 [1.27, 1.50] \u00b5m, bootstrapped median [95% confidence interval]) (Figure 1L).\n\nIncreases in MT growth lengths during a polymerization cycle $d_{g}=v_{g}f_{g}$ could either arise from an increased polymerization velocity $v_{g}$ or a decreased catastrophe frequency $f_{g}$ (or both). In Drosophila neurons, MT growth velocities $v_{g}$ were similar in all MTs irrespective of their orientation and position within the axon (~5 \u00b5m/min; Figure 1\u2014figure supplement 1C). Additionally, EB1-GFP, which affects MT polymerization velocities, was not enriched at the axon tip ( Figure 1\u2014figure supplement 1E), and EB1-GFP comet lengths, which have previously been linked to MT polymerization speeds (Hahn et al., 2021), did not show significant variations along the axon (Figure 1\u2014figure supplement 1F). However, catastrophe rates $f_{g}=1/t_{g}$ were significantly lower (and thus polymerization times $t_{g}$ significantly longer) in plus-end-out MTs near the axon tip ($f_{g+}\u223c4\u221710^{\u22122}s^{\u22121}$ vs. $f_{g\u2212}\u223c6\u221710^{\u22122}s^{\u22121}$  ; Figure 1\u2014figure supplement 1B), suggesting that these MTs grew longer because of a decrease in their catastrophe frequencies.\n\nOverall, the orientation of MTs that added more length per growth cycle (i.e., plus-end-out MTs) becomes the dominant MT orientation in developing axons, indicating a possible link between increased plus-end-out MT growth and the fraction of plus-end-out MTs in axons.\n\n### Enhanced growth of plus-end-out MTs leads to unbounded growth\n\nOn long time scales, differences in MT growth length per growth cycle accumulate and thus affect the average MT length lMT. To estimate whether the rather small differences in dg of ~0.5 \u00b5m/cycle might lead to biologically meaningful differences in the average expected MT lengths between plus-end-out and minus-end-out oriented MTs, we used a two-state master equation model of MT growth and shrinkage (see Dogterom and Leibler, 1993 and supplemental methods for details). The model distinguishes two regimes (Figure 2A)\n\n$$\nl_{MT}={d_{g}d_{s}/(d_{s}\u2212d_{g})d_{s}>d_{g}(\u2018bounded\u2019 growth)\u221ed_{s}\\leqd_{g}(\u2018unbounded\u2019 growth)\n$$\n\nwhere ds = lost length per shrinkage cycle.\n\nWhen ds \u2264dg, the average length added to the MT exceeds the average shrinkage length per cycle so that an MT will exhibit net growth and elongate if physically possible in its confined environment (called \u2018unbounded\u2019 growth, as the function describing MT growth in this regime goes towards infinity). For ds > dg, however, growth is \u2018bounded\u2019 (i.e., the end points of this function are finite), and average MT lengths follow an exponential distribution with a mean of dsdg/(ds\u2212dg). In practice, this means that MTs with dg \u2265 ds would grow until encountering a physical barrier (e.g., the distal end of the axon tip), while MTs with ds > dg remain finite (e.g., approximately 2 \u00b5m with ds = 2 \u00b5m and dg = 1.5 \u00b5m).\n\nWe determined the MT shrinkage per cycle ds by co-expressing a Jupiter-mCherry fusion protein (a tubulin marker) together with EB1-GFP in D. melanogaster axons of larval primary neurons. MTs stopped growing when the GFP signal disappeared from their plus-end, indicating a catastrophe or pause event. Subsequent MT shrinkage was visualized by simultaneously imaging tubulin (Jupiter-mCherry) and quantified by tracing tubulin edges resulting from the shrinkage in the dual colour kymographs (Figure 2B\u2013D). Axonal MT shrinkage lengths were ds = 2.03 [1.80, 2.26] \u00b5m/cycle (bootstrapped median [95% confidence interval], Figure 2E).\n\nWith this value for ds, our model predicted the divergence of lMT (i.e., the change from bounded/finite growth to unbounded/infinite growth) at dg = 2.03 \u00b5m. This value dg corresponded to the lower end of the measured 95% confidence interval for the median dg = [2.04, 2.16] \u00b5m/cycle of plus-end-out MTs near the axon tip, but it was well above the 95% confidence interval for the median dg = [1.39, 1.48] \u00b5m/cycle of all other MTs (Figure 2F). The measured values of dg and ds hence suggested that plus-end-out-oriented MTs exhibit mostly unbounded growth within 10 \u00b5m from the axon tip while minus-end-out MTs within that range and any MT further away from the tip do not (Figure 2F). The decreased catastrophe frequency of plus-end-out MTs near the axon tip (Figure 1\u2014figure supplement 1A-C) implied a higher chance of survival for plus-end-out MTs while leaving minus-end-out MTs labile, thereby establishing a bias for plus-end-out MT orientation.\n\n### Enhanced growth of plus-end-out MTs is required for uniform plus-end-out MT orientation\n\nTo test if enhanced MT growth is indeed involved in biasing MT orientation, we first chemically decreased MT growth using nocodazole, a drug that disrupts MT polymerization. Nocodazole treatment led to decreased MT growth velocities $v_{g}$ (Figure 4\u2014figure supplement 3). Alternatively, we also physically decreased MT growth by increasing the osmolarity of the cell culture medium through addition of NaCl (Bray et al., 1991; Molines et al., 2020). Here, MT catastrophe rates $f_{g}$ were significantly increased (Figure 4\u2014figure supplement 3).\n\nBoth treatments led to significantly decreased plus-end-out MT growth $d_{g}=v_{g}/f_{g}$ at the axon tip (<10 \u00b5m), with dg < 1.71 \u00b5m/cycle < ds (upper 95% confidence bound of median) (Figure 3A\u2013E). Our model predicted that this change in dg should lead to a switch from previously unbounded to bounded growth of plus-end-out MTs near the axon tip (Figure 3D), thus reducing the bias towards plus-end-out MTs and decreasing MT orientation. In agreement, MTs within treated axons were overall significantly less uniformly oriented (Figure 3D\u2013E), confirming an important role of the enhanced growth lengths per cycle of plus-end-out MTs in establishing axonal MT orientation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013C) Representative kymographs analysed with KymoButler (Jakobs et al., 2019) from axonal processes treated with (A) 0.025% DMSO (control) for 8 hr, (B) 5 \u00b5M nocodazole for 8 hr, (C) medium with increased osmolarity (\u2018osmo+\u2019) for 22 hr. Growth of plus-end-out MTs is shown as blue lines, minus-end MTs are red. Scale bars = 3 \u00b5m. (D) Added MT lengths per growth cycle dg of plus-end-out MTs at the distalmost 10 \u00b5m from the axon tip and further away for control (N=107 axons from 5 biological replicates), nocodazole-treated axons (N=116 axons from 3 biological replicates), and axons cultured in osmo+medium (N=30, 2 biological replicates). At the axon tip, MT lengths increased significantly less per growth cycle in axons treated with nocodazole or osmo+media than controls (p<10\u20134, Kruskal-Wallis test, **p<0.01 for pairwise comparisons, Dunn-Sidak post hoc test). (E) The fraction of plus-end-out MTs in the different groups. MT orientation was calculated by counting all MTs that grew away from the cell body (blue lines in kymographs) and dividing them by all growing MTs (blue and red) along the whole axons. This way, a kymograph with only blue lines gives a value of 1 while an equal number of blue and red lines yield a value of 0.5. MTs in axons treated with nocodazole or osmo+media were significantly less uniformly oriented than those in the control group, that is, they contained a larger fraction of MTs pointing with their plus-ends toward the cell body (red lines in (A\u2013C)) (p<10\u20134, Kruskal-Wallis test, **p<10\u20132 for pairwise comparisons, Dunn-Sidak post hoc test).\n\n### p150 protein gradient in axon tips promotes plus-end-out MT stabilization\n\nHowever, why do plus-end-out MTs grow longer in the vicinity of the axon tip? Local gradients of MT growth-promoting factors could lead to an increase in plus-end MT growth in that region. Axon tips contain a multitude of different proteins and are highly compartmentalized (Lowery and Van Vactor, 2009). Locally enriched MT growth-promoting factors (of which there are many in the axon tip Voelzmann et al., 2016) include proteins stabilizing MTs, such as p150 by decreasing MT catastrophe rates (Lazarus et al., 2013; Moughamian and Holzbaur, 2012), CRMP-2 via promoting MT polymerization (Fukata et al., 2002; Inagaki et al., 2001), and TRIM46 by cross-linking MTs (Rao et al., 2017; van Beuningen et al., 2015), as well as free tubulin required for MT polymerization and others (Eng et al., 1999).\n\nThe MT stabilizing protein p150, for example, affects MT catastrophe rates $f_{g}$ and nucleation rates but not growth velocities $v_{g}$ (Lazarus et al., 2013). As we observed decreased MT catastrophe rates but constant growth velocities of plus-end-out MTs towards axon tips (Figure 1\u2014figure supplement 1B,C), we hypothesized that p150 is one of the key proteins involved. Drosophila has a p150 homologue which, similar as in murine neurons (Moughamian and Holzbaur, 2012), we found to be enriched in axonal but not in dendritic tips (i.e., tips of immature \u2018dendritic\u2019 processes), whose MT orientation is mixed and thus resembles that of vertebrate and immature Drosophila dendrites (Hill et al., 2012; Figure 4A and C and Figure 4\u2014figure supplement 1). Accordingly, plus-end-out MT growth lengths per cycle dg and catastrophe rates fg were significantly higher in axons than in dendritic processes (Figure 4\u2014figure supplement 2E,G), where dg = 1.42 [1.37, 1.39] \u00b5m/cycle remained smaller than ds = 2.03 [1.80, 2.26] \u00b5m/cycle. In agreement with our model, which predicted unbounded growth of plus-end-out MTs in axons but bounded growth in dendritic processes (Figure 2), dendritic processes exhibited mixed (50% plus-end-out) MT orientations (Figure 4\u2014figure supplement 2D, Hill et al., 2012), corroborating a link between MT stabilizing protein gradients in the tip of axons, reduced MT catastrophe rates, unbounded growth, and overall MT orientation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013B) Tubulin (top) and normalized p150 (bottom) immunostaining of cultured Drosophila melanogaster larvae axonal processes of (A) controls and (B) neurons expressing elav-gal4 UAS-driven p150-RNAi. Large p150 puncta were found clustered around the axon tip (arrow) in controls (A) but not in p150-RNAi axons (B). Scale bars = 2 \u00b5m (C) Normalized p150 fluorescence intensity as a function of distance from the axon tip for wild-type axons (N=83, 2 biological replicates) and p150-RNAi axons (N=111, 2 biological replicates). Lines represent median\u00b195% confidence intervals for wild-type (grey) and p150-RNAi (magenta). p150 fluorescence intensities changed along the axon (p<10\u201370; Kruskal-Wallis test). In wild-type axons, p150 was enriched at the axon tip (*p<0.05 between bin 1 and bin 3 or 4; pairwise comparisons with Dunn-Sidak post hoc test), but not in p150-RNAi expressing axons (p>0.05 for all pairwise comparisons). Overall, p150 expression levels were diminished in p150-RNAi axons compared to wild-type (***p<10\u20137 for any pairwise comparison between conditions). (D\u2013F) KymoButler output for kymographs of EB1-GFP expressed in (D) a wild-type axon, (E) an axon expressing p150-RNAi, and (F) an axon in a p1501/+ mutant background. Scale bars = 3 \u00b5m. Blue/red lines represent MTs with plus/minus-end-out orientation, respectively. (G) Plus-end-out MT added length per growth cycle dg for wild-type (N=85, 9 biological replicates), p150-RNAi (N=34, 3 biological replicates), and p1501/+ (N=83, 6 biological replicates). At the axon tip, MT growth lengths were significantly decreased in both p150-RNAi and p1501 conditions compared to controls (p<10\u20139, Kruskal-Wallis test, ***p<0.001, *p<0.05, Dunn-Sidak post hoc test). (H) MT orientation along the whole axon for wild-type, p150-RNAi, and p1501/+. MTs were less uniformly oriented in both p150-RNAi and p1501 axons (p<10\u20139, Kruskal-Wallis test, ***p<10\u20135 for pairwise comparisons with Dunn-Sidak post hoc test). Overall, axonal MT orientation was decreased after chemical, physical, and genetic perturbations of MT growth.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative fluorescence image of a neuron stained for tubulin (green) and normalized p150 (magenta). (B and C) Enlarged images of (B) the axonal tip and (C) the dendritic tip found in the regions defined by the dashed regions in (A). The dendritic process exhibits comparably low levels of p150 if compared to the axonal tip. Scale bars = 5 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A, B) Kymographs for (A) the axonal and (B) the dendritic process shown in (C). (C) Drosophila melanogaster larva neuron expressing EB1-GFP with an axonal and several dendritic processes. White arrows represent the stationary paths for the kymographs shown in (A\u2013B). (D) MT orientation, that is, the fraction of plus-end-out MTs, for axonal and dendritic processes. Most MTs in axonal but not in dendritic processes have their plus-ends oriented away from the cell body (N=69, 20 biological replicates; p<10\u201315, Wilcoxon rank sum test). (E) Growth length per cycle dg for plus-end-out MTs at the distalmost 10 \u00b5m of the axonal or dendritic tips. Black dots: averages for one cell; only cells possessing at least one axonal and one dendritic process (one randomized dendritic process was selected per neuron) were analysed. MTs in axonal processes grew longer than those in dendritic processes (p<10\u20138, Wilcoxon rank sum test). (F) MT growth velocities vg in the distalmost 10 \u00b5m of the axonal or dendritic tips (p<10\u20138, Wilcoxon rank sum test). (G) MT catastrophe frequencies fg in the distalmost 10 \u00b5m of the axonal or dendritic tips. Catastrophe frequencies are increased in dendritic processes compared to axonal ones (p<10\u20138, Wilcoxon rank sum test). Scale bars: 3 \u00b5m.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Plots show growth velocities vg (A,C) and catastrophe frequencies fg (B,D) for plus-end-out MTs within 10 \u00b5m of the axon tip and further away for the experiments shown in Figure 3 (***=p < 0.001, *=p < 0.05, Dunn-Sidak post hoc).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Dots with error bars: experimental data of added length per MT growth cycle dg as a function of distance from the axon tip is shown in blue (plus-end-out) and red (minus-end-out) (median\u00b195% confidence, same plot as in Figure 4\u2014figure supplement 1A). Dashed lines: analytic model (see Supplemental methods: \u2018Analytic model for MT growth as a function of p150 fluorescence\u2019 for details), which assumes that dg(x)=A p150(x)\u03b1 and dg plus-end-out, (x) = 0.5(dg(\u2212dg(x)+x)+dg(x)) and dgminus-end-out, (x) = 0.5(dg(dg(x)+x)+dg(x)). The model thus results in one equation describing the average growth length per cycle, dg, for plus-end-out MTs, and in another equation describing dg for minus-end-out MTs. Both equations depend on A, \u03b1, and the measured p150 fluorescence intensity profile. We simultaneously fitted the predicted dg\u2019s for plus-end-out and minus-end-out MTs to the experimentally determined values by varying A and \u03b1. The resulting pair of parameters was: A=0.86 and \u03b1=3.62. Our model returned a clear bifurcation between plus-end-out and minus-end-out MT growth towards the axon tip, resembling the experimental data and thus suggesting that the observed p150 gradient at the axon tip is strong enough to alter catastrophe frequencies in MTs depending on their orientation.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) MT orientation (fraction of plus-end-out MTs) for wild-type (N=111, 8 biological replicates) and dhc-RNAi (N=168, 8 biological replicates). MT orientation was significantly decreased in dhc-RNAi axons (p<10\u201318, Wilcoxon rank sum test, ***p<0.001). (B) Plus-end-out MT growth in wild-type and dhc-RNAi. MT growth in axons expressing dhc-RNAi was significantly decreased at the distalmost 10 \u00b5m of the axon compared to control cells and increased further away towards the cell body (p<10\u20138, Kruskal-Wallis test, **=p < 0.01, *=p < 0.05, Dunn-Sidak post hoc). (C) Growth velocities vg of plus-end-out MTs. No significant differences were observed between different MTs. (D) Growth time per cycle tg for plus-end-out MTs (p<10\u201312, Kruskal-Wallis test, ***=p < 0.001, *=p < 0.05, Dunn-Sidak post hoc). Changes in dg were caused by changes in fg.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A\u2013B) Tubulin (top) and normalized p150 (bottom) immunostainings of cultured Drosophila melanogaster larvae axonal processes. The distal axon tip is pointing left. p150 puncta were more densely clustered around the axon tip in control cells (A) compared to axonal processes that expressed UAS-driven khc-RNAi (B). (C\u2013D) Kymographs of EB1-GFP-expressing axons of (C) wild-type and (D) khc-RNAi-treated neurons. (E) Normalized p150 protein fluorescence as a function of distance from the axon tip for wild-type axons (N=162, 5 biological replicates, black line) and khc-RNAi axons (N=68, 2 biological replicates, green line). Lines represent median\u00b195% confidence interval. p150 protein was less enriched in khc-RNAi axon tips (p<10\u201316, Kruskal-Wallis test, 25% downregulation for 0\u201310 \u00b5m: **p<0.01, Dunn-Sidak post hoc test). (F) Plus-end-out MT growth in wild-type (N=167, 7 biological replicates) and khc-RNAi neurons (N=91, 2 biological replicates). MT growth in axons expressing khc-RNAi was significantly decreased at the distalmost 10 \u00b5m of the axon compared to control cells. Additionally, plus-end-out MT growth of MTs further away from the tip than 10 \u00b5m was increased in khc-RNAi compared to control cells (p<10\u20139, Kruskal-Wallis test, ***=p < 0.001, Dunn-Sidak post hoc). We can only speculate why the distance grown by MTs further way from the axon tip was increased. It seems rather unlikely that this phenomenon can be explained by impaired dynein-based MT sliding. It is conceivable, however, that the lack of concentrated p150 in the growth cone frees up a pool of tubulin, which is now available for polymerization further away in the axon. (G) MT orientation (fraction of plus-end-out MTs) for wild-type and khc-RNAi neurons. MT orientation was significantly decreased in khc-RNAi axons (p<10\u20139, Kruskal-Wallis test, p<10\u20135, ***p<0.001, Dunn-Sidak post hoc test). (H) Minus-end-out MT lengths per cycle (p<0.05, Kruskal-Wallis test). (I) Plus-end-out MT growth velocities (p<10\u201323, Kruskal-Wallis test, ***=p < 0.001, Dunn-Sidak post hoc). (J) Plus-end-out MT growth times in wild-type (N=167, 7 biological replicates) and khc-RNAi neurons (N=91, 2 biological replicates) (p<10\u201322, Kruskal-Wallis test, ***=p < 0.001, *=p < 0.05, Dunn-Sidak post hoc). All scale bars: 2 \u00b5m.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig4-figsupp7-v1.jpg)\n\n**Figure 4\u2014figure supplement 7.:** (A) Drosophila melanogaster neurons were stained for tubulin, p150, and exposed to CellTracker before fixation. Scale bar: 2 \u00b5m. (A\u2013B) We then drew a line along the axon from the cell body (right) to the axon tip (left) and extracted intensity profiles for each channel. Typically, we observed a decrease of tubulin and an increase of p150 towards axon tips. Furthermore, all three channels exhibited increased fluorescence towards the cell body. (C) We then divided the tubulin and p150 profiles by the CellTracker profile to control for increased fluorescence due to larger cell volumes. CellTracker begins fluorescing after permeating the cell membrane and is thereby a good measure for how much cytosol is found at a given location. (D) Finally, we binned the data, calculated the mean for each bin, and divided each bin by the average bin value for the corresponding control experiment. The plot in Figure 4C then shows the bootstrapped median of all bins of all axons of the given condition.\n\nWe next tested whether the observed p150 gradient is strong enough to lead to different MT growth lengths (via modulation of catastrophe rates, dg~1/fg) for plus-end-out and minus-end-out MTs within 10 \u00b5m from the axon tip, the region where we observed the largest differences in $f_{g}$ (Figure 1\u2014figure supplement 1C). We assumed that MT growth lengths per cycle at a distance x from the axon tip can be described by a power law function dg (x)=A*p150(x)\u03b1 of the p150 fluorescence intensity profile. A simultaneous fit to both plus-end-out and minus-end-out MTs demonstrated that the observed gradient is, in theory, indeed strong enough to cause different growth behaviours for plus-end-out and minus-end-out MTs in axonal tips (Figure 4\u2014figure supplement 4).\n\nTo test this prediction further, we assessed MT dynamics in wild-type, p150-RNAi expressing larval neurons, and in heterozygous mutant larval neurons from p1501/+ flies (Figure 4). p1501 (also known as Gl1) mutants express a truncated p150-RNA transcript, which results in a dominant negative phenotype (Plough and Ives, 1935). Expressing p150-RNAi led to decreased p150 protein in axons (Figure 4A\u2013C). Both the expression of p150-RNAi and of dominant negative p1501/+ led to a significant increase in plus-end-out MT catastrophe rates (Figure 4\u2014figure supplement 3) and thereby to a decrease (14\u201320%) in plus-end-out MT growth within 10 \u00b5m from the axon tip (Figure 4G). In agreement with our model, the overall axonal MT orientation was significantly decreased in both p150-RNAi and p1501/+ axons compared to controls (Figure 4H). p150 is known to interact with dynein (Karki and Holzbaur, 1995). Expressing an RNAi against dynein heavy chain also led to decreased plus-end-out MT growth at the axon tip (25%) and decreased MT organization, resembling the results of p150 removal (Figure 4\u2014figure supplement 3). Together, these data indicated that MT stabilizing or growth-promoting protein gradients at the axon tip do indeed have an important role in regulating the overall orientation of the axonal MT network.\n\n### Kinesin 1 is required to establish p150 gradient\n\nPrevious work showed that p150 accumulation at axon tips depends on the activity of the MT-specific molecular motor protein kinesin 1 (Moughamian and Holzbaur, 2012; Twelvetrees et al., 2016), which preferentially enters axons over dendrites (Tas et al., 2017). Accordingly, disruption of kinesin 1 function with an RNAi treatment led to a 25% decrease in p150 fluorescence within 10 \u00b5m from the axon tip (Figure 4\u2014figure supplement 6A-D). Again, the absence of a p150 gradient in these neurons led to a significant increase in MT catastrophe rates and decreased plus-end-out MT growth near the axon tip, and hence to an overall decrease in axonal MT orientation (Figure 4\u2014figure supplement 6E-I), suggesting that gradients of MT stabilizing proteins at the tips of developing axons are critical for biasing axonal MT orientations.\n\n### Uniform axonal MT orientation is established through a combination of MT sliding, templating, and unbounded growth\n\nOur experiments suggested that a gradient of an MT growth-promoting factor localized at the axon tip is required for establishing uniform plus-end-out MT orientation in axons. To investigate the significance of the locally biased MT growth in more detailed, we modelled the evolution of overall MT polarity along the axon using computer simulations. We extended our previously described simulations of MT-MT sliding, which led to sorting of MTs based on their orientation (Jakobs et al., 2020), to include two additional effects on axonal MTs: (1) enhanced stabilization of MTs at axon tips as found in this study and (2) a local biasing of MT nucleation (MT templating) that could originate from augmin (Nguyen et al., 2014; S\u00e1nchez-Huertas et al., 2016) or TRIM46 (Rao et al., 2017).\n\nThe simulation is detailed in the Materials and methods section and a schematic can be found in Figure 5A. Briefly, a cylindrical bundle of MTs is generated, and dynein motors are assumed to cross-link adjacent MTs. The orientation of each MT is randomly chosen. Force-velocity relationships are used to predict the exerted sliding velocities of the MTs, which are then used to calculate new MT positions iteratively. MTs were confined in the axon with a solid boundary at the axon tip and a semi-permeable boundary at the cell body. New MTs were added randomly along the bundle axis at a determined frequency. To mimic the effect of a concentration gradient of a catastrophe-inhibiting protein (such as p150) at the axon tip, we assumed that the frequency of newly added MTs is sampled from an exponential distribution that peaks at the axon tip. To account for augmin or TRIM46-induced local biases of MT nucleation, we assumed that the orientation of an added MT is dictated by the mean MT orientation in the region to which it is added.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic showing the MT sliding simulation and its relevant parameters. (B\u2013C) Simulation results of MT dynamics. (B) Snapshot of a simulated axon with dynein-based sliding of MTs minus-end-out MTs accumulated within the proximal axon. (C) Snapshot of an axon simulated with sliding, augmin templating (new MTs were likely oriented into the same direction as their surrounding ones), and biased nucleation of plus-end-out MTs at the tip. Much like in real axons, most MTs were oriented with their plus-end-out throughout the axon. (D) Experimental profiles of MT orientation along the (normalized) axon length for axons that were cultured 4 hr in vitro (4hiv), separated into less than 20 \u00b5m or more than 20 \u00b5m long, and 24 hr in culture (24hiv). Lines represent bootstrapped medians and 95% confidence intervals. (E\u2013F) Simulation profiles of MT orientation along the axon. (E) Profiles obtained from simulations with dynein-mediated sliding only at three different simulation time points. MT orientation was graded along the axon but, unlike in the experimental profiles shown in (D), the proximal axon remained enriched with minus-end-out MTs. (F) MT orientation profiles obtained from simulations with sliding, templating, and biased nucleation of plus-end-out MTs at the axon tip. The observed gradual development of MT orientation along the axon is in excellent agreement with our experimental data (D). (G) Summary of proposed mechanism for establishing MT orientation in axons. Red and blue lines represent minus-end-out and plus-end-out MTs, respectively. Green drop shapes indicate unbounded MT growth into the axon tip for plus-end-out MTs. Kinesin 1 deposits MT growth-promoting proteins, such as p150, at axon tips (Figure 4\u2014figure supplement 4), leading to local unbounded growth of plus-end-out MTs. Augmin templating and cell body-directed sliding of minus-end-out MTs further amplifies this bias. All three mechanisms together lead to a plus-end-out MT cytoskeleton.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77608/elife-77608-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Evolution of the MT orientation profile along the normalized axon length (middle), and of the axon length (right), for different MT sorting models (left). Colours represent simulation time (0\u201355 hr). (A) Dynein-mediated sliding alone. Minus-end-out MTs were transported towards the cell body and plus-end-out MTs towards the axon tip. The resulting MT orientation profile was graded along the axon with plus-end-out MTs enriched towards the tip; within approximately 14 hr, the orientation profile became stationary where a fixed fraction of the proximal axon remained enriched with minus-end-out MTs. (B) Local bias of MT nucleation (templating) alone. To mimic this situation, the directional movement of dynein motors on the MTs was eliminated by randomly choosing their gliding direction in each MT overlap. As the MT templating mechanism augmented the randomly chosen orientation of the initial MTs in the axon, individually grown axons were either enriched with plus-end-out MTs or with minus-end-out MTs but there was no bias towards either orientation. Consequently, when averaged over many axons, the resulting mean fraction of plus-end-out MTs was ~50% uniformly. (C) Unbounded growth alone. Here, a bias towards nucleation of plus-end-out MTs at the advancing tip of the axon was implemented and calculated from experimental data but motor-induced MT sliding was non-directional as in (B). The resulting MT orientation was stationary along the axon and roughly 55% plus-end-out. The reason for the small effect on overall MT orientation is that the MT growth-promoting factor is concentrated in a small region close to the axon tip, and its range of action thus diminishes in comparison to the axon length when the axon extends. In other words, as the axon extends, a growing portion of its length continues to accumulate ill-oriented MTs. Dynein-mediated sliding is therefore essential for clearing out the generated minus-end-out MTs, and this occurs much more efficiently in the presence of a bias at the growing tip that continually maintains the fraction of minus-end-out MTs small during growth, as can be understood from the comparison between panels (A) and (E). (D) Dynein-mediated sliding with local bias of MT nucleation (templating). The fraction of plus-end-out MTs increased along the axon length, and over time, because the biased nucleation resulted in less minus-end-out MTs. However, occasionally in these simulations the dominating MT polarity in the axon was inverted due to 'erroneous' initial nucleation of minus-end-out MTs, which then amplified during growth. (E) Sliding with unbounded growth of plus-end-out MTs at the tip. The position and orientation of new MTs was chosen at random, but their successful nucleation depended on their likelihood to exhibit unbounded growth as per Figure 2. This led to more plus-end-out MTs appearing in the system but not enough to render the axon fully plus-end-out. Furthermore, axon growth ceased to be linear because longer axons were less likely to nucleate new MTs as the region of unbounded growth at the tip did not increase over time. (F) Unbounded growth in combination with sliding and templating. New MT positions were sampled from a uniform distribution but with an orientation that depended on the local orientation of nearby MTs. MTs were only added to the simulation if they nucleated as calculated in (C). The fraction of plus-end-out MTs monotonically increased towards the axon tip and the orientation profile gradually become uniform over time, resembling the evolution observed in our experimentally determined profiles in Figure 5B.\n\nSimulations incorporating dynein-induced MT sliding but lacking mechanisms (1) and (2) mentioned above resulted in steadily growing axons whose MT orientation profile was graded along their length, being enriched with plus-end-out MTs at the distal end and with minus-end-out MTs at the proximal (cell body) end (Figure 5A, B and E and Figure 5\u2014figure supplement 1). The proximal domain of minus-end-out MTs grew in proportion to the axon length, as minus-end-out MTs from across the growing axon continually accumulated in that region despite their withdrawal into the cell body by dynein motors. Those simulations thus failed to reproduce the experimental observation of an enrichment of the proximal axon with plus-end-out MTs over time, which eventually leads to uniformly oriented axonal MTs (Yau et al., 2016; Figure 5D).\n\nSimilarly, the increased growth of plus-end-out MTs or templating alone, or any combination of two out of these three mechanisms, were also insufficient for establishing high fractions of plus-end-out MTs at the proximal axon as observed experimentally (Figure 5\u2014figure supplement 1).\n\nHowever, when we integrated sliding, templating, and biased MT growth at the axon tip in the simulation (assuming that the likelihood of exhibiting unbounded growth corresponds to a successful nucleation event), MTs gradually oriented uniformly plus-end-out across the entire length of the axon, recapitulating our experimental results (Figure 5C, D and F and Figure 5\u2014figure supplement 1). Thus, our data suggest that multiple mechanisms \u2013 including biased growth of plus-end-out MTs near the axon tip identified in this study \u2013 need to work in unison to establish and maintain uniform axonal MT orientation.\n\n## Discussion\n\nWe here found that MT growth is an important factor in the regulation of overall MT organization in the axon. Our experiments and modelling suggest that an enrichment of MT stabilizing/growth-promoting proteins at the advancing axon tip leads to a transition of MT growth from a bounded to an unbounded state for plus-end-out MTs. This growth transition is important for establishing uniform plus-end-out MT orientation from the cell body to the axon tip as found in mature axons. While previous studies suggested that MT dynamics are temporally and spatially constant during early axon formation (Seetapun and Odde, 2010), our results suggest that, at later stages of axon maturation, MT dynamics are heterogeneous (Figure 1).\n\nOur chemical and physical perturbations of MT growth affected different aspects of MT dynamics. Nocodazole treatment decreased MT growth velocities while not affecting catastrophe frequencies; hyperosmotic solutions increased MT catastrophe frequencies but did not alter growth velocities (Figure 4\u2014figure supplement 3). The effect of the hyperosmotic solution might potentially arise from a decrease in the available space in the distal axon for MTs to polymerize into (Dogterom and Yurke, 1997; Franze, 2020). However, NaCl can be toxic for neurons, so that the effect on MT growth could also be due to a general stress response (Morland et al., 2016). Either way, both treatments led to a decrease of the MT length added during each growth cycle, dg, so that dg<ds, switching plus-end-out MT dynamics from unbounded to bounded growth, thus leading to a loss of uniform MT polarization along the axon (Figure 3).\n\nThe axon tip is highly enriched with growth-promoting factors such as p150 (Lazarus et al., 2013; Moughamian and Holzbaur, 2012), CRMP-2 (Fukata et al., 2002; Inagaki et al., 2001), TRIM46 (Rao et al., 2017; van Beuningen et al., 2015), and EB1 (Ma et al., 2004; Morrison et al., 2002). The anti-catastrophe protein p150, which we investigated here as an example, was concentrated at axon tips but was not enriched at dendritic tips (Figure 4\u2014figure supplement 1). Enhanced stabilization of plus-end-out MTs, leading to reduced catastrophe rates and thus unbounded growth essential for establishing uniform MT orientation, was only observed near axonal but not near dendritic tips (Figure 4\u2014figure supplement 2), confirming that differences in the localization of MT growth-promoting proteins correlate with differences in MT growth. Perturbations of p150 led to increased catastrophe rates and decreased plus-end-out MT growth in the axon tip, and thus to decreased overall MT order in the axon (Figure 3). Interestingly, MT growth (dg) scaled with the fourth power of the p150 concentration (Figure 4\u2014figure supplement 4). This non-linear dependence could result from the requirement of several p150 proteins to form a complex to affect MT catastrophe rates, as previously hypothesized (Lazarus et al., 2013).\n\nWhile p150 is mainly known for its role in the dynactin complex, which is an important cargo adapter protein complex for the molecular motor protein dynein (Gill et al., 1991), it also acts as a dynein-independent MT anti-catastrophe factor (Lazarus et al., 2013). Since p150 and dynein are functionally related, it is difficult to separate their individual contributions to stabilizing plus-end-out MT growth in the axon tip and cell body-directed sliding of minus-end-out MTs along the axon. However, it remains unclear whether p150 is required for dynein-mediated MT sliding (Ahmad et al., 1998; Tan et al., 2018; Waterman-Storer et al., 1997), and the D. melanogaster oocyte also contains an ordered MT cytoskeleton whose orientation is, presumably, maintained by p150 (Nieuwburg et al., 2017). Hence, while p150 is unlikely to induce unbounded MT growth alone, it emerges as a key contributor to the establishment of MT orientation.\n\nIn addition to its contribution to setting up the p150 gradient in axon tips (Figure 4\u2014figure supplement 6), kinesin 1 is also thought to slide MTs with their minus-end leading (del Castillo et al., 2015) and to be involved in dynein function (Pilling et al., 2006; Rao et al., 2017). Kinesin knockdown could thus not only prevent the accumulation of MT growth-promoting factors at the axon tip but also decrease kinesin 1-mediated minus-end-out MTs sliding into the distal axon (thereby increasing the fraction of plus-end-out MTs) and/or prevent retrograde dynein-mediated sliding of minus-end-out MTs (decreasing the fraction of plus-end-out MTs). We observed that disruption of kinesin 1 function led to a decrease in the fraction of plus-end-out MTs in the axon (Figure 4\u2014figure supplement 6), suggesting that kinesin 1 does not contribute to the overall MT orientation via direct sliding but that it rather affects MT orientation mainly via localizing MT growth or nucleation-promoting proteins to axonal tips and/or via interactions with dynein-mediated sliding.\n\nFinally, both kinesin 1 and p150/dynactin perturbations could potentially also affect MTOC localization in neurons. p150 was enriched at the tips of axonal but not of dendritic processes (Figure 4\u2014figure supplement 1). In Caenorhabditis elegans neurons, MTOCs may be located to the tips of dendritic processes (Liang et al., 2020). Removal of dynactin, which initiates cell body-directed transport from axonal tips (Moughamian and Holzbaur, 2012), could lead to an increased number of MTOCs also at axon tips, thereby promoting growth and nucleation of MTs. However, our results showed a decrease in MT growth dynamics at axon tips after dynactin removal (Figure 3), indicating that the observed decrease in MT orientation was mostly due to decreased rather than promoted growth of axonal MTs in the axon tip.\n\nOur simulations revealed that the uniform MT orientation along the axon cannot be understood solely based on dynein-mediated MT sliding: as axons extended, an increasing number of minus-end-out MTs from across the axonal shaft accumulated at the proximal axon. Additional mechanisms were needed to dilute the fraction of minus-end-out MTs. Amongst those, MT-templating (e.g., by augmin or TRIM46) and the biased MT growth mechanism identified in the present study both improved the MT orientation profile along the axonal shaft. Our experimental findings were best matched when all three mechanisms worked in concert (Figure 5\u2014figure supplement 1).\n\nWe propose the following model explaining the spontaneous establishment of MT orientation in developing axons. Growth-promoting proteins accumulate at the axon tip due to MT plus-end-directed transport by kinesin motors (Figure 4\u2014figure supplement 6). The resulting protein gradient leads to a local bias in MT growth (Figure 1, Figure 3), rendering plus-end-out MT growth into the axon tip unbounded (Figure 2). In theory, a finite pool of tubulin at axon tips would further contribute to this bias in plus-end-out MT growth by diminishing the amount of free tubulin available for MTs that polymerize towards the cell body. In contrast, short minus-end-out MTs are more prone to depolymerization and/or transport away from the tip by dynein-mediated cell body-directed sliding (del Castillo et al., 2015; Rao et al., 2017), thus contributing to the orientation bias of MTs in the axon. The orientation bias is further enhanced by augmin-mediated templating or TRIM46-mediated parallel bundling of newly formed MTs to establish and maintain a fully organized MT cytoskeleton (see Figure 5E for a schematic summary). Together with cell process length-dependent MT accumulation (Seetapun and Odde, 2010), these mechanisms cooperate to build the uniformly oriented MT network that enables efficient long-range transport in neuronal axons. Future work will reveal whether other cellular systems use similar mechanisms to organize their cytoskeleton.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain (Drosophila melanogaster)</td>\n      <td>EB1-GFP</td>\n      <td>Bulgakova et al., 2012</td>\n      <td>N/A</td>\n      <td>Flyline used to express EB1-GFP</td>\n    </tr>\n    <tr>\n      <td>Strain (Drosophila melanogaster)</td>\n      <td>Ubi EB1-GFP</td>\n      <td>Shimada et al., 2006</td>\n      <td>N/A</td>\n      <td>Complementary Flyline used to express EB1-GFP</td>\n    </tr>\n    <tr>\n      <td>Strain (Drosophila melanogaster)</td>\n      <td>Jupiter-mCherry</td>\n      <td>Bergstralh et al., 2015</td>\n      <td>N/A</td>\n      <td>Flyline used to label microtubules</td>\n    </tr>\n    <tr>\n      <td>Strain (Drosophila melanogaster)</td>\n      <td>P1501</td>\n      <td>Bloomington</td>\n      <td>RRID:BDSC_504</td>\n      <td>p150 heterozygous mutant</td>\n    </tr>\n    <tr>\n      <td>Strain (Drosophila melanogaster)</td>\n      <td>P150-RNAi</td>\n      <td>Bloomington</td>\n      <td>RRID:BDSC_3785</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (Drosophila melanogaster)</td>\n      <td>khc-RNAi</td>\n      <td>Bloomington</td>\n      <td>RRID:BDSC_35770</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (Drosophila melanogaster)</td>\n      <td>Elav-gal4</td>\n      <td>Bloomington</td>\n      <td>RRID:BDSC_458</td>\n      <td>RNAi driver in neuronal cells</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rb anti-p150 (rabbit polyclonal)</td>\n      <td>Nieuwburg et al., 2017</td>\n      <td>N/A</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Ms anti-alpha-tubulin (mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#: ab7291RRID:AB_2241126</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CellTracker</td>\n      <td>Invitrogen</td>\n      <td>Cat#: C2925</td>\n      <td>\u00d71</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CF633 anti-Rb (donkey anti-rabbit polyclonal)</td>\n      <td>Cambridge Bioscience</td>\n      <td>Cat#: BT20125</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>AF405 anti-Ms (donkey anti-mouse polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#: ab175658 RRID:AB_2687445</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Mathematica</td>\n      <td>Wolfram</td>\n      <td>RRID:SCR_014448</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>KymoButler</td>\n      <td>Jakobs et al., 2019</td>\n      <td>https://githlab.com/deepmirror/kymobutler; deepMirror, 2019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>Schindelin et al., 2012</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Neurite Tracer</td>\n      <td>Pool et al., 2008</td>\n      <td>RRID:SCR_016566</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly stocks\n\nMT plus-end dynamics were visualized with a transgenic fly line expressing EB1-GFP heterozygously under its endogenous promoter (wh;+;eb1-gfp/tm6b, gift from the Brown laboratory in Cambridge) (Bulgakova et al., 2013) or a fly expressing EB1-GFP under a ubiquitin promotor (ubi:eb1-gfp;+;+, gift from the St Johnston laboratory in Cambridge) (Shimada et al., 2006). Whole MTs were labelled with Jupiter-mCherry (wh;if/cyo;Jupiter-mcherry, gift from the St Johnston laboratory in Cambridge) (Bergstralh et al., 2015). Other stocks used: p1501 (Bloomington # 504), uas:p150-RNAi (Vienna Drosophila Stock Center # 3785), uas:khc-RNAi (Bloomington # 35770), khc27 (Bloomington # 67409), khc17 (gift from the St Johnston laboratory in Cambridge). uas constructs were driven by elav-gal4 (Bloom# 458, elav is a neuron-specific promotor that ensures the construct is only expressed in the CNS; Yannoni and White, 1997) and transgenic lines were generated through standard balancer crossing procedures.\n\n### Primary cell culture\n\nThird instar larvae were picked 5\u20138 days post fertilization, and their CNS dissected similarly to Egger et al., 2013; S\u00e1nchez-Soriano et al., 2010. As described in Egger et al., 2013, the resulting primary culture comprised a mixture of terminally differentiated larvae neurons such as peripheral neurons alongside precursors cells and immature neurons of the adult fly brain. Thereby, the larval CNS lends itself to the study of a heterogenous population of neurons. The CNS tissue was homogenized and dissociated in 100 \u03bcl of Dispersion medium (Hank\u2019s Balanced Salt Solution [\u00d71 HBSS, Life Technologies, 14170088] supplemented with Phenylthiourea (Sigma-Aldrich P7629, 0.05 mg/ml), Dispase (Roche 049404942078001, 4 mg/ml), and Collagenase (Worthington Biochem. LS004214, 1 mg/ml)) for 5 min at 37\u00b0C. The media was topped up with 200 \u03bcl of Cell Culture Medium (Schneider\u2019s Medium, Thermo Fisher Scientific 21720024) supplemented with insulin (2 \u03bcg/ml Sigma I0516) and fetal bovine serum (1:5 Thermo Fisher Scientific A3160801) and cells were spun down for 6 min at 650 rcf. The pellet was resuspended in Cell Culture Medium at 5 brains/120 \u03bcl. Cells were grown at 26\u00b0C for 1.5 hr in a droplet of 30 \u00b5l Cell Culture Medium in a glass bottom dish between a Concanavalin A-coated glass slide and an uncoated glass slide on top. Initially the cells were cultured with the coated coverslip facing down. After 1.5 hr the chambers were flipped so that cells that did not attach floated off to the opposite (uncoated) side. Culture times were: 4\u201326 hr (for measuring MT orientation profiles in short and long axons), 22\u201326 hr (for measuring MT dynamics, both Patronin-YFP and EB1-GFP), and 22\u201348 hr (for measuring MT dynamics in dendritic processes).\n\nTo measure the effect nocodazole has on MT orientation in axons, the medium was supplemented with 5 \u00b5M of nocodazole (dissolved in DMSO, Sigma-Aldrich M1404-2MG) approximately 12 hr post plating and 12 hr before measuring MT dynamics. The control cells were treated with 0.025% DMSO in culture medium. Treatment and corresponding controls were always run in parallel, and when possible, from the same fly stock. Uas-driven overexpression was controlled with a fly expressing both elav::gal4 and eb1-gfp to control for the expression of gal4 protein.\n\nTo measure the effects of osmolarity changes in the surrounding medium, we increased the osmolarity of the culture medium by approximately 100 mOsm (from ~360 to ~460 mOsm, see also https://www.sigmaaldrich.com/GB/en/product/sigma/s9895) by adding 4 mg of NaCl to 1 ml culture medium. Cells were first cultured in normal media for 1.5 hr. Subsequently, the media was removed and replaced with either fresh media (control) or media supplemented with 4 g NaCl. Cells were again imaged after 22\u201326 hr post plating.\n\n### Live imaging of MTs\n\nAll live imaging movies were acquired on a Leica DMi8 inverted microscope with a \u00d763 objective (oil immersion, NA = 1.4, Hamamatsu Orca Flash 2.0 camera) and at room temperature (22\u201325\u00b0C). To reduce autofluorescence during imaging, the culture medium was replaced with Live Imaging Solution (Thermo Fisher Scientific A14291DJ). Culture media was not replaced for imaging cells in nocodazole, DMSO, and osmo+ to enable measurement of MT dynamics in the chosen media. For EB1-GFP imaging, an image (exposure time 500 ms) was taken every 2 s for 70\u2013150 frames depending on sample bleaching. When imaging both EB1-GFP and Jupiter-mCherry simultaneously, one image was taken every 3 s for 100 frames (exposure 500 ms). Lamp intensity was set to the lowest level that enabled visual identification of labels.\n\n### p150 antibody staining\n\nTwenty-four hr after plating, the cells were treated with 5 \u03bcM of CellTracker (Invitrogen C2925) dye for 30 min to label cells in green. Subsequently, cells were fixed in pre-warmed 4% paraformaldehyde (pH 7.2, 26\u00b0C) for 50 min. Post fixation, the cells were washed in PBS once and then incubated with mouse alpha-tubulin 1:1000 (Abcam ab7291) and rabbit glued/p150 antibody 1:500 (gift from the St Johnston laboratory, Nieuwburg et al., 2017) diluted in PBST (\u00d72 phosphate-buffered saline (PBS, Oxoid BR0014G) tablets in 400 ml H2O+1.2 ml Triton X-100)+0.01 g/ml bovine serum albumin at 4\u00b0C overnight (~14 hr). After two quick washes in PBS, the cells were incubated with the secondary antibodies Alexa Fluor 647 (far-red, Thermo Fisher Scientific A-21236) and 405 (blue, Thermo Fisher Scientific A-31556) for 1.5 hr at room temperature. After another two quick PBS washes, the cells were mounted in Fluoromount (Thermo Fisher Scientific 00-4958-02) and imaged.\n\nImages were analysed by drawing a line along axon processes from the base of the axon to its tip in the tubulin channel. The intensity profiles for all three channels (p150, tubulin, and CellTracker) were extracted and normalized by their respective median values, and the p150 channel was subsequently divided by the normalized CellTracker channel and the data binned in bins of 10 \u03bcm. Finally, the resulting binned p150-RNAi p150 profiles were normalized by the mean fluorescence of the respective wild-type control p150 fluorescence. The resulting profiles (per axon) were then pooled over all biological replicates and plotted in Mathematica. See Figure 4\u2014figure supplement 7 for a single cell workflow example.\n\n### EB1-GFP dynamics\n\nKymographs of EB1-GFP tracks in D. melanogaster axons were generated by first using the Neurite Tracer plugin in ImageJ to draw lines along axons or dendrites from the centre of the cell body to the farthest EB1-GFP comet signal, that is, the distalmost growth event (Pool et al., 2008). Subsequently a custom Mathematica (https://wolfram.com) algorithm automatically generated kymographs from these lines by plotting the average pixel intensity of three adjacent pixels into rows of an image for each frame. The resulting image was then smoothed with a Gaussian kernel of size 3 and wavelet filtered to remove noise. Kymographs were analyzed with KymoButler and subsequently post-processed in MATLAB (https://mathworks.com). Tracks were removed in case: (1) they displaced less than two pixels along the x-axis, (2) they were slower than 1.5 \u00b5m/min, (3) they were faster than 20 \u00b5m/min, and (4) they were visible for less than four frames. Additionally, control experiments and their corresponding treatment condition were discarded if the control axons exhibited a mean orientation below 0.8 or average growth velocities below 2 \u00b5m/min. To account for outlier comets, the distance from the axon tip was calculated as the distance from the 0.95 quantile EB1-GFP comet.\n\nMT minus-end polymerization is much slower than plus-end polymerization (Strothman et al., 2019). Since we observed similar growth velocities of cell body-directed and tip-directed MT growth, we are confident that we measured plus-end-out MT growth events in both directions rather than minus-end growth.\n\nNote that, mature D. melanogaster dendrites in vivo exhibit a mixed MT orientation (Stone et al., 2008). However, we cultured neurons only up to 48 hr which might be too short to form fully developed dendrites and our minimal cell culture medium is likely lacking growth factors that would enable further differentiation to form fully minus-end-out dendrites. Additionally, vertebrate dendrites also appear to acquire their characteristic orientation over time (Baas et al., 1989).\n\n### Jupiter-mCherry and EB1-GFP\n\nKymographs were prepared as for imaging EB1-GFP only (i.e., using Neurite Tracer). Individual shrinkage events were extracted by hand from the resulting kymographs using the ROI tool in ImageJ (https://imagej.net). The tracks were then analysed and plotted with MATLAB and Mathematica. Measuring MT shrinkage dynamics was only possible in regions of low tubulin content, for example, near the axon tip. We implicitly assumed that MT shrinkage depends neither on MT orientation nor on its position along the axon. However, experimental evidence suggests that a decrease in MT growth length correlates with an increase in shrinkage length (Vasquez et al., 2017), indicating that we likely overestimated MT lengths further away from the axon tip, therefore underestimating the difference between plus-end-out MTs at the tip and those further away from it.\n\n### Statistics\n\nFor comparing two groups, the Wilcoxon rank sum test was used as implemented in MATLAB (https://www.mathworks.com/help/stats/ranksum.html). The standard error of the mean (s.e.m.) was calculated as $s.e.m.=\\sigma/\\sqrt{n}$. Here, $\\sigma$ is the standard deviation of the sample and $n$ is the number of samples. The 95% confidence interval was calculated by median bootstrapping with 10,000 random samples from the distribution. Biological replicates are experiments conducted on different days with different larvae and reagents. We used the Kruskal-Wallis test (https://uk.mathworks.com/help/stats/kruskalwallis.html) to compare several samples, followed by a Dunn-Sidak post hoc test.\n\n### Solution of the two-state master equation\n\nWe assumed that MTs can either grow or shrink, and each of these two states ($g$ and $s$ in short) has a probability distribution that depends on MT length $l$ and time $t$ ($p_{g}l,t$ and $p_{s}l,t$). MTs can furthermore stop growing and start shrinking with rate $f_{g}=1/t_{g}$ ($t_{g}$ being the average MT growth time) and stop shrinking to start growing with rate $f_{s}=1/t_{s}$ ($t_{s}$ being the average MT shrinkage time). Furthermore, MTs are assumed to grow with velocity $v_{g}$ and shrink with velocity $v_{s}$ , while they are in the growing or shrinking state, respectively. Writing this as a master equation yields:\n\n$$\n\\frac{d}{dt}p_{s}l,t=f_{g}p_{g}l,t-f_{s}p_{s}l,t\n$$\n\n\n\n$$\n\\frac{d}{dt}p_{g}l,t=f_{s}p_{s}l,t-f_{g}p_{g}l,t\n$$\n\nThis equation is a two-state master equation that equates the rate change of a probability to be in one state (i.e., dps/dt) to the outflow (\u2212fsps, i.e., the likelihood of a shrinking MT to start growing) and the inflow (fgpg, i.e., the likelihood of a growing MT to start shrinking) into that state. With $dp/dt=\u2202l/\u2202t\u2202p/\u2202l=v\u2202p/\u2202l$, we can write:\n\n$$\n\\frac{\u2202}{\u2202t}p_{s}(l,t)=f_{g}p_{g}(l,t)\u2212f_{s}p_{s}(l,t)+v_{s}\\frac{\u2202}{\u2202l}p_{s}(l,t)\n$$\n\n\n\n$$\n\\frac{\u2202}{\u2202t}p_{g}(l,t)=f_{s}p_{s}(l,t)\u2212f_{g}p_{g}(l,t)\u2212v_{g}\\frac{\u2202}{\u2202l}p_{g}(l,t)\n$$\n\nTo solve this set of partial differential equations, consider the following Fourier transformation of $p_{s}l,t$ and $p_{g}(l,t)$ :\n\n$$\np_{s,g}(l,t)=\\intdkd\\omegae^{i\\omegat\u2212ikl}p\u223c_{s,g}(\\omega,k)\n$$\n\nSubstituting in the two-state master equation yields:\n\n$$\n0=\\intdkd\\omegae^{i\\omegat\u2212ikx}[(i\\omega+f_{g}\u2212ikv_{g})p\u223c_{g}(\\omega,k)\u2212f_{s}p\u223c_{s}(\\omega,k)]\n$$\n\n\n\n$$\n0=\\intdkd\\omegae^{i\\omegat\u2212ikx}[(i\\omega+f_{s}+ikv_{s})p\u223c_{s}(\\omega,k)\u2212f_{g}p\u223c_{g}(\\omega,k)]\n$$\n\nwhich can be written as a matrix equation:\n\n$$\n0=(i\\omega+f_{g}\u2212ikv_{g}\u2212f_{s}\u2212f_{g}i\\omega+f_{s}+ikv_{s})(p\u223c_{g}(\\omega,k)p\u223c_{s}(\\omega,k))\n$$\n\nThis equation only has non-zero solutions for $p~_{g}$ and $p\u223c_{s}$ if the matrix determinant is equal to zero:\n\n$$\n0=deti\\omega+f_{g}-ikv_{g}-f_{s}-f_{g}i\\omega+f_{s}+ikv_{s}=i\\omega+f_{g}-ikv_{g}i\\omega+f_{s}+ikv_{s}+f_{g}f_{s}\n$$\n\nThis equation can be written as a dispersion relation:\n\n$$\n\\omega(k)=(\\frac{f_{s}}{f_{s}+f_{g}}v_{g}\u2212\\frac{f_{g}}{f_{s}+f_{g}}v_{s})\u23de=v\u00afk+i\\frac{f_{s}f_{g}(v_{g}+v_{s})^{2}}{(f_{g}+f_{s})^{3}}\u23de=D\u00afk^{2}+O(k^{3})=v\u00afk+iD\u00afk^{2}+O(k^{3})\n$$\n\nFor large times $t$ both $\\omega$ and $k$ are small so that we can drop terms of the order of $k^{3}$ . The dispersion relation is then the same as for a diffusion advection process with drift velocity $v\u00b4$ and diffusion coefficient $D\u00b4$ . For $v\u00b4>0$ the system will evolve like a diffusion advection process in which MTs would have no average length so that they will become as long as the system allows, that is, their growth is \u2018unbounded\u2019.\n\nFor $v\u00b4<0$, MTs will exhibit an average length that depends on their dynamic parameters which can be calculated as follows: For large times, the overall probability to find an MT with length $l$ at time $t$ ($pl,t=p_{g}l,t+p_{s}l,t$) can be approximated by a modified diffusion-advection equation:\n\n$$\n\\frac{\u2202}{\u2202t}p(l,t)=D\u00b4\\frac{\u2202^{2}}{\u2202l^{2}}p(l,t)+v\u00b4\u2228\\frac{\u2202}{\u2202l}p(l,t)\n$$\n\nThe stationary state $\\frac{\\partial}{\\partialt}pl,t=0$ is thus found by:\n\n$$\n0=\\frac{\u2202^{2}}{\u2202l^{2}}p(l)+\\frac{|v\u00b4|}{D\u00b4}\\frac{\u2202}{\u2202l}p(l)\n$$\n\nThe general solution to this partial differential equation is:\n\n$$\np(l)=\\frac{|v\u00af|}{D\u00af}e^{\u2212\\frac{v\u00af}{D\u00af}l}\n$$\n\nFor $pl,t$ to be normalizable: $C_{2}=0$ and $C_{1}=\\frac{v\u00b4}{D\u00b4}^{2}$. So that:\n\n$$\n\u00a0p(l)=\\frac{|\u03bd\u00af|}{D\u00af}e^{\u2212\\frac{\u03bd\u00af}{D\u00af}l}\n$$\n\nThis equation is a two-state master equation that equates the rate change of a probability to be in one state (i.e., dps/dt) to the outflow (\u2212fsps, i.e., the likelihood of a shrinking MT to start growing) and the inflow (fgpg, i.e., the likelihood of a growing MT to start shrinking) into that state. With $dp/dt=\u2202l/\u2202t\u2202p/\u2202l=v\u2202p/\u2202l$, we can write:\n\n$$\n\\frac{\u2202}{\u2202t}p_{s}(l,t)=f_{g}p_{g}(l,t)\u2212f_{s}p_{s}(l,t)+v_{s}\\frac{\u2202}{\u2202l}p_{s}(l,t)\n$$\n\n\n\n$$\n\\frac{\u2202}{\u2202t}p_{g}(l,t)=f_{s}p_{s}(l,t)\u2212f_{g}p_{g}(l,t)\u2212v_{g}\\frac{\u2202}{\u2202l}p_{g}(l,t)\n$$\n\nFinally, one can calculate the average MT length $l_{MT}$ as the expectation value of the length:\n\n$$\nl_{MT}\u2261l=\\int_{0}^{\u221e}dllpl=\\frac{D\u00b4}{v\u00b4}=\\frac{f_{s}f_{g}v_{g}+v_{s}^{2}}{f_{g}+f_{s}^{2}v_{s}f_{g}-v_{g}f_{s}}\n$$\n\nFor $v_{s}v_{g}\u22481$, $f_{s}f_{g}\u22481$, and $d=v/f$ the quadratic terms can be Taylor expanded to yield:\n\n$$\nl_{MT}\u2248\\frac{v_{g}v_{s}}{v_{s}f_{g}-v_{g}f_{s}}=\\frac{d_{g}d_{s}}{d_{s}-d_{g}}\n$$\n\n### Analytical fit to estimate MT growth per cycle based on immunostainings\n\nThe p150 fluorescence profiles were calculated as described in the section on \u2018p150 antibody staining\u2019. Subsequently, an exponential function, $p150(x)=b+e^{\u2212s(x\u2212x_{0})}$, was fitted to the first 12 bins of the data (corresponds to up until 120 \u00b5m from the tip). Here, b, s, and x0 are fitting parameters with units: [b]=AU, [s]=1/\u00b5m, [x0]=\u00b5m. Next, we assumed that $d_{g}(x)=Ap150(x)^{\\alpha}$, that is, MT growth per cycle is a simple power law in the p150 fluorescence intensity. A and \u03b1 are fitting parameters and their values are shown in Figure 4\u2014figure supplement 4 The expected growth length per cycle for an MT that starts growing at position $x$ towards (1) or away (\u20131) from the cell body can be approximated as:\n\n$$\nd_{g}x,sign=0.5d_{g}signd_{g}x+x+d_{g}x\n$$\n\nHere, we assumed that the average length added to an MT during growth is the mean between the average expected growth length at start and end position of the MT plus-end. This function was subsequently fitted to the growth length data presented in Figure 1F. To do so, the experimental data was first binned in bins of size 10 \u00b5m (like the staining data). Then, we calculated the integral of $d_{g}x,sign$ over each bin for each direction of growth and minimized the squared difference to the experimental results by varying $A$ and $\\alpha$. Note that we assumed that MTs that grow way from the tip have to be at least 4 \u00b5m away from it (average MT length; Yu and Baas, 1994) and that MTs that grow into the tip may penetrate it by 2 \u00b5m.\n\n### MT sliding simulations\n\nDetails of the simulation can be found in Jakobs et al., 2020. We here present a brief description that focusses on the novel way in which new MTs are added during the simulation. MTs were arranged with their long axis along the x-axis of a Cartesian coordinate system and their centres on a hexagonal lattice in the y-z plane. For simplicity all MTs were assumed to have the same length, lMT = 4 \u00b5m. The inter-MT spacing in the y-z plane (\u223c30 nm) was assumed to allow individual molecular motors (here, cytoplasmic dynein) to intervene between adjacent filaments and cross-link them with their respective \u2018cargo\u2019 or \u2018walking\u2019 domains. The simulation was initialized with 10 randomly oriented MTs that were randomly distributed on a hexagonal lattice of length 6 \u00b5m. New MTs were added to the system depending on the chosen nucleation model:\n\nMTs that were neighbours on the y-z plane and overlapping along the x-axis were cross-linked by cytoplasmic dynein. For simplicity and due to the tight packing of MTs in the bundle, only motion in parallel to the x-axis was considered. MT velocities were determined by solving a set of force balance equations that characterize dynein interaction with the MTs, as detailed in Jakobs et al., 2020. Furthermore, the left boundary was a leaky spring; MTs that moved into the left boundary were subject to a force of 50 pN/\u00b5m and were able to leave the axon with a fixed rate per MT (0.00024/s). The rate was adjusted to lead to axons of 50 \u00b5m in length after approximately 24 hr simulation time. The right boundary was a constant force of 50 pN as described in Jakobs et al., 2020.\n\nAxons were simulated for 50,001 iterations (~28 hr) and all results averaged over 50 separate simulations. Simulation parameters were as follows:\n\n<table>\n  <thead>\n    <tr>\n      <th>Symbol</th>\n      <th>Description</th>\n      <th>Value</th>\n      <th>Reasoning</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03c7</td>\n      <td>Fraction of overlapping MTs that are cross linked</td>\n      <td>1</td>\n      <td>We previously explored how changing \u03c7 affects MT sliding (Jakobs et al., 2020; Jakobs et al., 2015). In this manuscript we simply wanted to explore the effect of different MT addition models on MT orientation in which we fixed the value at 1.</td>\n    </tr>\n    <tr>\n      <td>\u03bb</td>\n      <td>Number of motors bound in an overlapping region (#/\u00b5m)</td>\n      <td>5</td>\n      <td>We quantified (by eye) the number of MT cross-links in EM images of axons (Hirokawa et al., 2010) which was approximately 5 per 1000 nm.</td>\n    </tr>\n    <tr>\n      <td>IMT</td>\n      <td>MT lengths (\u00b5m)</td>\n      <td>4 \u00b5m</td>\n      <td>Average MT lengths in axons measured in Yu and Baas, 1994.</td>\n    </tr>\n    <tr>\n      <td>\u03be</td>\n      <td>Drag coefficient of the axoplasm</td>\n      <td>1 pN s/\u00b5m2</td>\n      <td>Same coefficient used in Oelz et al., 2018.</td>\n    </tr>\n    <tr>\n      <td>fs</td>\n      <td>Dynein stall force</td>\n      <td>1.4 pN</td>\n      <td>Same coefficient used in Oelz et al., 2018.</td>\n    </tr>\n    <tr>\n      <td>v0</td>\n      <td>Dynein free velocity</td>\n      <td>0.86 \u00b5m/s</td>\n      <td>Same coefficient used in Oelz et al., 2018.</td>\n    </tr>\n    <tr>\n      <td>dt</td>\n      <td>Simulation timestep per iteration</td>\n      <td>2 s</td>\n      <td>As we showed previously (Jakobs et al., 2020; Jakobs et al., 2015), this value is a good choice to ensure smooth movements of MTs during the simulation.</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "7cbbaa04-342b-4fe1-9e44-70f591e57891",
+      "submission_id": "452d909a-f91c-4131-b857-594869fa56dd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kang Shen, https://ror.org/00f54p054 Howard Hughes Medical Institute, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77608.sa0](https://doi.org/10.7554/eLife.77608.sa0)\n\nHow axons form and maintain uniformly plus-end-out microtubules is an essential question in neuronal cell biology. Franze and colleagues used solid imaging and modeling approaches to provide important insights into the mechanisms controlling microtubule polarity in cultured Drosophila axons. They conclude that reduced catastrophe of the plus-end-out microtubules in the axon tip is critical for preferential plus-end-out microtubule growth and establishing the uniform microtubule polarity.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kang Shen, https://ror.org/00f54p054 Howard Hughes Medical Institute, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77608.sa1](https://doi.org/10.7554/eLife.77608.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Unrestrained growth of correctly oriented microtubules instructs axonal microtubule orientation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Andreas Prokop (Reviewer #1).\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nWhile all the reviewers found the proposed concepts and the model interesting and potentially a good addition to the field, two out of three reviewers thought that the experimental part of the manuscript is too preliminary and the model requires more experiments to be properly tested. Such additional experiments would go beyond the scope of what we normally ask for in an eLife revision, and therefore, we return the paper to you. However, if you would able to thoroughly address all the reviewer comments, in particular by providing additional experimental data to strengthen your conclusions, we will be prepared to consider a new submission of this manuscript which we will try to send to the same reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nIn this manuscript the authors address potential mechanisms through which microtubules in developing axons gradually achieve uniform plus end-out orientation. Combining cell biological experiments and computational modelling they propose a combinatorial model in which (1) anterograde transport generates a gradient of polymerisation-promoting factors at the axon tip, thus biassing +end elongation near growth cones, (2) dynein-mediated retrograde transport removes 'wrongly' oriented microtubules, and (3) further bias is generated by directional nucleation of new microtubules in the axon shaft.\n\nThe ideas proposed in this manuscript are attractive and some of the experiments, such as the double-labelling of Eb1::GFP with Jupiter::mCherry, are exciting. The dynein-related functions provide new explanations for reported phenotypes that loss of Dhc causes polarity effects in axons. However, the conclusions are not sufficiently supported by data. More experiments should have been provided to support claims, especially when considering that the fly neurons used are highly amenable to efficient experimentation. Key experiments would have been to use loss of dynein heavy chain to confirm the p150 link to retrograde transport in this context, to use loss of Grip/augmin proteins (http://www.ncbi.nlm.nih.gov/pubmed/23132930) to test the importance of directional nucleation in the axon shaft, and direct tests of the intensities of polymerisation-relevant proteins (e.g. Eb1 or Msps; https://doi.org/10.1371/journal.pgen.1009647) which would be expected to be weaker in proximal than distal axons. The use of p150 is not suitable to this end because, as the authors state, it is \"mainly known for its role in the dynactin complex\" (l.208); the claim \"we here found that an enrichment of microtubule growth-promoting proteins at the advancing axon tip leads to a transition of microtubule growth from a bounded to an unbounded state\" (l.193) is therefore not supported by the data. Also, in their model dynein is mainly suggested to be involved in retrograde transport of minus end-out microtubules not in polymerisation. As a further possibility to support the key claim, velocity of Eb1 comets could have been provided as another measure of polymerisation efficiency that relates to amounts of Eb1 at plus ends (https://doi.org/10.7554/eLife.51992). Finally, the manuscript has not made clear to me why retrograde polymerisation events in certain axon segments are shorter than anterograde events based on the model provided; the authors should have given some potential explanations. Can they exclude that these are minus end polymerisation events which get increasingly toned down through minus end stabilisation? These points would need to be discussed.\n\nl.37. 'RNAs, proteins and organelles'.\n\nl.42-45: slightly confusing; rearrange and assign references clearly.\n\nl.49: MT symmetry is not an ideal term and misleading; 'mixed orientation' might be clearer?\n\nl.57ff. dynein has been shown to affect axonal polarity (https://doi.org/10.1038/ncb1777), and the pioneer work by Peter Baas and colleagues to explain such a phenomenon should be mentioned here.\n\nl.57ff. A further polarity factor is Shot: http://doi.org/10.1242/dev.00319 further discussed here: http://doi.org/10.1016/j.semcdb.2017.05.019\n\nEnd of Intro: It would be great to have a concluding sentence that leads over to the results.\n\nl.68: Stepanova used EB3; it might be better to cite (one of) the first Drosophila papers using Eb1 in culture and also providing info on directionality: https://doi.org/10.1002/dneu.20762\n\nl.72: since the assumption is that Eb1 comets mark only +ends, it would be better to rename '-end out' into '+end in' which would be easier to grasp.\n\nl.71ff. the idea of minus end polymerisation cannot be excluded and needs to be incorporated into the thinking. What if minus ends become more stable over time? Furthermore, polymerisation velocity is a function of Eb1 amounts (https://doi.org/10.7554/eLife.51992, https://doi.org/10.1371/journal.pgen.1009647) and has not been considered.\n\nl.79: you mean density not lifetime here?\n\nl.81: replace 'growth' by 'polymerisation' and reserve 'growth' for axon growth?\n\nl.83ff. This statement requires data that plot lifetime as a function of directionality and age, which is not provided; Figure 1H needs to be cited but, only provides positional correlation.\n\nl.106: 'catastrophe or pause events'.\n\nl.106ff/Figure 2: beautiful experiment. It would be helpful to see polymerisation as well as shrinkage plotted for + end-out and -in MTs, rather than one integrated plot in E.\n\nl.133: also have a look at https://doi.org/10.1371/journal.pgen.1009647 for relevant factors.\n\nl.138ff. The localisation of p150 is not what I would expect of dynein in axons; since p150 is a CAP-Gly protein that can track + tips (https://doi.org/10.1038/nrm2369), I wonder whether the dots along the axon are at polymerising plus ends? Where is that prominent accumulation of p150 localised in GCs relative to MTs? It reminds of similar accumulations seen for CLIP170/190 (https://doi.org/10.1091/mbc.E14-06-108). Higher resolution images would be very important here.\n\nl.141: Based on what property of p150 do you build the model and make the claim that it should influence MT orientation? I cannot follow your reasoning here. Is this a dynein-related function? I assume so when considering the model proposed below. If so, independent experiments with loss of dynein heavy chain would be very important.\n\nl.174: Here it would be easy to validate your computational findings with real experimental data using Grip/augmin genes for which adequate tools are available (http://www.ncbi.nlm.nih.gov/pubmed/23132930).\n\nl.189: see this review of mechanisms regulating MT polymerisation: http://doi.org/10.1016/j.brainresbull.2016.08.006\n\nl.208ff.: the link to dynein should have been explored experimentally.\n\nl.240: here the work by Peter Baas should be cited who was (one of) the first to propose the idea of selective minus end-out MT transport as a mechanism to maintain polarity.\n\nl.488: remove Viki Allan as last author.\n\nReviewer #2 (Recommendations for the authors):\n\nThis manuscript explores how microtubule orientation in axons transitions from slightly biased towards plus-end out to almost completely plus-end out. By measuring microtubule growth episodes in axons of cultured fly neurons, the authors demonstrate that growth events are longer near the axon tip. The authors then hypothesized that these longer events might tip the balance from bounded growth to unbounded growth, which would explain why axonal microtubules become increasingly oriented plus-end out as the axon develops further and grows longer. To test this, the authors measured shrinkage lengths and demonstrate that growth indeed only exceeds shrinkage in the case of plus-end out growing microtubules near the axon tip. Consistently, after changing the balance between growth and shrinkage using nocodazole axons no longer became exclusively plus-end out.\n\nThe authors then searched for factors that could promote microtubule growth near axon tips. They focused on p150, a microtubule binder that is enriched at the axon tip, and found that experimental manipulations of p150 resulted in altered microtubule orientations. Finally, the authors developed a numerical simulations that examine how various microtubule orienting and sorting approaches (i.e. templated nucleation, motor-based sliding and tip-promoted growth) can result in uniform microtubule orientations along the axonal length.\n\nThe key innovation in this manuscript is the careful measurement of both microtubule growth and shrinkages event in cultured fly axons. Through this, the authors could conclude that plus-end out oriented microtubules close to the axon tip are in the unbounded growth regime, whereas other microtubules are not. This selective advantage will ensure an increasingly uniform orientation as the axon growth longer. This is an interesting and important insight into the establishment of oriented microtubule arrays. Although the exact mechanism of this local growth promotion awaits further exploration, the author's proposal that tip-enriched microtubule regulators could establish this provides interesting leads for further research.\n\nComments:\n\n\u2013 In Supplementary Figure 4, the authors fit their growth data to a model that included the experimentally observed distribution of p150. It should be emphasized that they added two free fitting parameters to achieve this (A and \\\u03b1), which, by their definition as amplitude and power, should be able to stretch any exponential decay function into another. It would be helpful if the authors could also report the values of A and \\\u03b1 that were found in the fitting procedure. This could give more insights into the estimated spatial range of p150 activity in comparison to its distribution. Furthermore, it would be nice if the authors could explain how they think that p150 mediates growth enhancement while being tip localized. Do they think p150 is anchored or soluble? If anchored, how can it promote growth?\n\n\u2013 The choice to focus on p150 is somewhat enigmatic and could be better introduced. The Mouhamiam paper cited focused on a role from p150 in transport initiation. The fact that p150 disruption or kinesin-1 knockdown result in altered microtubule organization does not provide direct support for their model, given the direct roles of dynein and kinesin-1 in microtubule organization through sliding that have been proposed. The authors discuss these points in the discussion, but it would be nice if they could elaborate a bit on how they think p150 promotes microtubule growth at the axon tip.\n\n\u2013 It is unclear how the authors model the interaction between microtubules and the plasma membrane. Often microtubules that grow against a barrier undergo catastrophes and that would counteract the promoted growth of plus-end out oriented microtubules. The methods section has a statement about forces at the ends of the axon, but this point was not entirely clear and should be discussed.\n\n\u2013 The discussion on TRIM46 appears inaccurate in several places. For example, as far as I know there is no evidence TRIM46 is locally synthesized at axon tips, as suggested in line 136. Furthermore, TRIM46 likely plays a role in a fourth mechanism contributing to uniform polarity, namely the selective stabilization of properly oriented microtubules through selective parallel bundling. This would need to be discussed.\n\n\u2013 In principle, the finite pool of tubulin dimers could also help in diluting out the minus-end out oriented microtubules if the growth of plus-end out microtubules is specifically promoted. Modeling this would be a new effort, but the authors could at least discuss this.Reviewer #3 (Recommendations for the authors):\n\nSummary\n\nJacobs et al. explore the question of how axons develop a nearly uniform array of microtubules (MTs) that point with their plus ends towards the growth cone during development. Using experimental analysis of Drosophila CNS larval neurons grown in vitro, they document that, like N2A and Xenopus neurons, there is a higher density of Eb1 approaching the growth cone. Additionally, they report that along axons, MTs that point with their plus ends toward the growth cone have a longer growth length than MTs points to the cell body. Using Jupiter-mcherry to track MT growth and shrinkage, they find the average length of shrinkage is 2.2 \u03bcm and use this as input, along with the growth lengths, in a mathematical model that estimates average MT length based on these parameters. To test the model, neurons are treated with nocodazole and a high concentration of NaCl to perturb microtubule assembly and cellular osmolarity. Both treatments lead to a significant decrease in the growth length of MTs and a decrease in the percentage of MTs pointing towards the growth cone. Building on the prior observation that p150glued promotes MT assembly in neurons, they confirm a gradient in p150 localization along axons and that p150-RNAi decreases the concentration of p150 in growth cones. Analyzing the effects on MT assembly, they report that reducing p150 levels leads to decreases in microtubule growth length and organization. Using the experimental data, they create what they call an unbound growth model. The core idea is that MTs that grow longer distances than they shrink will have lengths that approach infinity over time, i.e., growth is unbounded. In contrast, MTs that shrink more than the growth distance (but never wholly depolarize) will have a finite length (i.e., bounded growth). Bringing these experimental observations together with prior models describing how uniform arrays of MTs are generated in axons, they construct a computational model. The model suggests that combining the effects of dynein mediated MT sliding, unbounded growth, and augmin based MT templating leads to highly organized arrays of MT where MTs along the length of the axon essentially all point towards the growth cone.\n\nMajor strengths and weaknesses:\n\nThe major strength of the manuscript is consideration of how differences in MT assembly as function of position along the axon and MT orientation might contribute to the generation of a uniform array of MTs in the axon.\n\nThere are three main weaknesses. The first is whether \u2018unbounded\u2019 MT growth occurs in axons needs to be clarified. The second is whether the difference in MT assembly as a function of orientation is \u2018real\u2019 or an artifact. And finally, the modelling seems to set up MT sliding as a strawman to make a case for the importance of differential MT assembly. Nonetheless, I think these points can be addressed by reanalyzing data, extending the modelling analysis, and a more careful discussion of the results.\n\nAppraisal of work\n\nA significant point of the manuscript is that MTs oriented with their plus ends towards the growth cone in the last ten microns of the axon undergo \u2018unbounded\u2019 growth because the distance they polymerize is greater than the distance they depolymerize. In contrast, MTs in the axon and those pointing to the cell body have bounded growth because the reverse occurs. Nonetheless, the data indicates the length of MT shrinkage is greater than MT growth in all cases. If MTs only undergo bounded growth, please rewrite sections of the manuscript that suggest otherwise. Alternatively, explain how unbound growth might be occurring in the context of the model.\n\nThere is a concern that the difference in MT growth length as a function of MT orientation may be an artifact of how growth length was measured. To start, it is assumed that MT growth increases toward the growth cone. Thus, one would expect some difference, be it large or small, in MT growth across a ten-micron section (i.e., the distance assessed in the experiments). In general, I would assume that MTs growing towards the growth cone will tend to have their plus ends, on average, in the front half of the ten-micron section, and MTs growing towards the cell body will have the opposite distribution. This raises the concern that the growth rate of MTs going opposite directions may be a function where the MTs plus ends are located, on average, in the ten-micron section; instead of their orientation. This concern could be addressed by systematically reducing the bin size to determine if the difference in growth length disappears or converges to some finite non-zero value as the bin size becomes small. If there are other ways to address this, please do so.\n\nSome may view the modelling of the effects on MT sliding as presenting a strawman argument to claim that MT sliding is insufficient to explain the clearance of MTs pointing +end towards the cell body. To clarify, the computational model is founded on a simulation where MT sliding contributes to the attainment of a uniform MT distribution along the axon. With the model as presented, the parameters for MTs directed towards the cell body at the axon/cell body boundary have been set such that these MTs accumulate in the axon instead of moving into the cell body. Based on a prior manuscript, one would expect that a minor adjustment to one parameter describing the behavior at the boundary will lead to a situation where MT sliding generates axonal arrays of MT that point almost uniformly towards the growth cone. Thus, it seems artificial to suggest the sliding model fails, and \u2018unbounded growth\u2019 is needed to generate a uniform array of MTs. On this point, the modelling section would be improved if the effects of each aspect (i.e., \u2018unbounded growth,\u2019 MT templating, and MT sliding) were first addressed separately and then combined into a unified model.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cUnrestrained growth of correctly oriented microtubules instructs axonal microtubule orientation\u201d for further consideration by eLife. Your revised article has been evaluated by Anna Akhmanova (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below. We encourage you to consider these points when you submit a revised manuscript. The editors will make decisions about your revised manuscript without sending it back to the reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nThe paper has now become much clearer, and the change in terminology has had a huge impact on getting the point across. I strongly recommend its publication.\n\nI read the manuscript very carefully and have a number of comments to strengthen the final publication and avoid unnecessary criticism. All aspects concern changes to the text, and only my comment on l.160 (Noc, osmo+) might trigger the addition of some data which might be readily available anyway.\n\nDetailed comments:\n\nAbstract: in my view, the abstract could be simplified along the lines of \u201cwe found that anterogradely polymerising MTs prevail through a mechanism that protects their +ends from catastrophes whereas retrograde MTs are unprotected and show limited growth.\u201d Then the p150-dependent mechanisms could be explained. Also, it would be good to name the three mechanisms that constitute the final model.\n\nl. 45: Can we say that the minus end is stabilised? If anchored to \u03b3-tub this might be true, but minus ends of most axonal MTs regulated by CAMSAP-katanin seem to be in a dynamic steady-state (http://doi.org/10.1016/j.devcel.2014.01.001 and http://doi.org/10.1016/j.str.2017.12.017)\n\nl.71/73: format error of references.\n\nl.93: is growth necessarily ended through catastrophe? I envisage pauses that turn into plus end stabilisation through, for example, CLASP (http://doi.org/10.1101/gad.17015911) \u2013 see further comments below.\n\nl.101-103.: Just a thought: throughout the manuscript, it might be better to spell out plus end and minus end? the symbols are easily missed, and the minus looks sometimes like a hyphen. In general the +end out/-end out nomenclature is confusing: in the example in lines 101/2 you leave open as to whether you speak about plus or minus end polymerisation in the case of minus end out MTs. In line 103 it is not clear whether you speak of retrograde plus tips within the 10micron distal stretch. -- It might help to come up with a clearer nomenclature. Suggestion: \"plus ends of anterograde MTs added significantly more \u2026. than plus ends of retrograde MTs.\" The term antero/retrograde orientation of MTs is currently not used, but could be introduced here to make description of this phenomenon easier in the future. If not happy with this solution speak at least of plus end-in/out rather than minus end-out and plus end-out. In Figure 1, this could also be clarified by drawing blue/red arrows into the axon. Note that Figure 1L should be changed to 1K.\n\nl.108. capitalise Drosophila.\n\nl.112: add our recent paper showing the Eb1 amount/velocity correlation also in axons (https://doi.org/10.1371/journal.pgen.1009647)\n\nl.113. In figure 1 you cannot yet speak about catastrophe rates, since you do not know whether MTs pause or depolymerise. You can only speak about the length of polymerisation bouts. This is different from Figure 2 onwards. If in experiments underpinning Figure 2 you never see pauses, this would be an argument to 'assume' that catastrophe is causing termination of polymerisation.\n\np.7/8: for the non-mathematical trained reader it might be helpful to define the un-/bounded terms a bit better. I understand the principal idea but wonder why you set the boundary between un-/bounded at 2 micron which looks a bit arbitrary/artificial unless there is a mathematical rationale. Is it necessary to introduce the un-/bounded terms? Can one not simply speak of smaller/larger average distance of polymerisation?\n\nl.137: \u2026 in axons of larval primary neurons?\n\nl.148: Does \"any MT further away from the tip\" refer to both antero- and retrograde MTs? This would mean that the statements \"a higher chance of survival for +end out MTs\" in line 150 would have to add \"within 10 micron distance from the tip\"\n\nl.160. In my naive non-mathematician view, the interpretation of the experiment with Noc and osmo+ only makes sense if the effect is stronger on anterograde than on retrograde. Are there no/negligible effects on retrograde MTs? No data are shown for retrograde MTs.\n\nl.173: please, differentiate the molecular function through which stabilisation is achieved: p150 is an anti-collapse factor, CRMP a promoter of polymerisation and TRIM46 a MT cross-linker. Why tubulin heterodimers are mentioned here is not clear to me, and TRIM46 is enriched at the AIS rather than axon tip, but it has been shown to promote polarity (see also my comments on line 234).\n\nl.182: fly neurons in culture rarely display dendrites, and larval cultures usually fail to differentiate into synaptic maturity (see section 4.1 in http://dx.doi.org/10.1007/978-1-61779-830-6_10), which would have to be checked with synaptic markers in your culture system. From the simplicity of the projection, I doubt that the side branch shown is a dendrite, which would also be expected to arise from the cell body (https://doi.org/10.1016/j.ydbio.2005.09.026). Furthermore, it is well-established that MTs in invertebrate dendrites are almost completely plus end-in (Melissa Rolls' reviews). Overall, I do not think that the dendrite aspect is important for your manuscript and should better be left out?\n\nl.187. You would have to specify that your prediction concerns vertebrate dendrites, whereas Drosophila dendrites have polar MTs in their majority/all pointing towards the cell body (Melissa Rolls' reviews)\n\nl.200. Did you do fly or larval cultures? heterozygous mutant Drosophila larvae?\n\nl.232: please, briefly provide the key parameters on which the 2020 model is built: was it bases on MT sliding? Please, also refer to the model by Rao et al. (https://doi.org/10.1016/j.celrep.2017.05.064) highlighting potential deviations (might be an issue also for the discussion)\n\nl.234ff. The van Beuningen reference is inadequate here since their model is more based on AIS-dependent functions of TRIM46 through unknown mechanisms potentially involving selective transport. The better reference might be Rao et al. (https://doi.org/10.1016/j.celrep.2017.05.064) who propose directional stabilisation of polar MTs through TRIM46 versus unhindered retrograde transport.\n\nTo my knowledge the closest fly homologue to TRIM46 is TRIM9 (although not convincingly close) which stabilises polymerisation in an orientation-dependent fashion in fly dendrites (https://doi.org/10.1242/jcs.258437) \u2013 also present in sensory axons (https://doi.org/10.1016/j.jcg.2010.12.004)\n\nl.243/245: correct to 'catastrophe-inhibiting protein'\n\nl.291: as pointed out earlier, TRIM46 is enriched proximally, and there is, to my knowledge, no obvious bias for distal Eb1 enrichment apart from the fact that there might be more polymerisation events in growth cones. Better examples would be Tau which has long been known to enrich distally.\n\nl.293. As argued earlier, the dendrite data are very shaky and should better be taken out.\n\nDiscussion: a summary image illustrating the various mechanism and how they contribute would be very helpful to reach a wider audience.\n\nReviewer #2 (Recommendations for the authors):\n\nThe revised manuscript by Jacobs et al., entitled \"Unrestrained growth of correctly oriented microtubules instructs axonal microtubule orientation\" is improved, yet important concerns remain.\n\nThe main point of the manuscript is to understand how axons acquire a uniform MT orientation. From the title and abstract, the main conclusion would appear to be that unrestrained MT growth plays a vital role in this process. Nonetheless, the modeling in the current version of the manuscript suggests that unbounded growth makes a minor contribution to the establishment of axonal MT polarity (e.g., Sup Figure 8C). This disconnect between what is claimed (e.g., \"we confirmed that the enhanced growth of +end out microtubules is critical for achieving uniform microtubule orientation.\") and what is demonstrated by the experimental data and modeling is problematic. Additionally, the manipulations used to perturb MT dynamics (i.e., p150, kinesin, and nocodazole) are also known to alter dynein activity. Since it is well accepted that dynein plays a role in establishing MT orientation, much of the data can be viewed as confirmation that dynein is essential for establishing axonal microtubule orientation.\n\nThe following paragraphs summarize the main findings in the manuscript, point out issues with the current version, and suggest approaches the authors could consider in terms of aligning the data and modeling to improve the manuscript.\n\nThe key experimental findings and issues are:\n\n1. +end out microtubules are less likely to undergo catastrophe near the advancing axon tip, leading to unbounded MT growth.\n\nThe critical issue here is that the modeling, as it stands, suggests unbounded growth is not very important for establishing a uniform microtubule array. Thus, while this is an interesting result, its importance for establishing MT orientation is unclear.\n\n2. Decreasing MT growth with NOC or osm+ disrupts MT orientation\n\nWhile this could be interpreted to mean that modulating MT dynamics alters MT orientation, because nocodazole is known to disrupt dynein, the effect of nocodazole on MT orientation could be occurring through a change in dynein activity rather than a change in MT assembly.\n\n3. Disrupting p150 function reduces MT growth (dg um/cycle) in the last 10 \u03bcm of the axon and reduces MT orientation.\n\nAs noted in the previous review, p150 influences dynein activity. Thus, the effects on MT orientation could be occurring through a change in dynein activity rather than MT dynamics.\n\n4. Disruption of dynein disrupts MT orientation, decreases MT growth (i.e., dg) in the last ten microns of the axon, but increases dg along the axon.\n\nThe observation that disruption of dynein alters MT dynamics is interesting. Still, the observation that dg decreases near the growth cone and rises along the axon makes it challenging to interpret the results.\n\n5. Disruption of kinesin (khc-RNAi) reduces p150 levels in the growth cone, disrupts MT orientation, decreases MT growth (i.e., dg) in the last ten microns of the axon, but increases MT growth along the axon.\n\nDisruption of khc is known to disrupt dynein function in Drosophila neurons (Pilling et al., 2006, paper out of Saxton's lab). While the effects may be occurring by reducing p150 levels in the growth cone, a more straightforward explanation is that the disruption in MT orientation is occurring because disruption of kinesin disrupts dynein. Additionally, the decrease in dg near the growth cone and increase in dg along the axon is hard to interpret (Sup Figure 7F).\n\n6. Based on these observations and previous studies, the manuscript proposes a model for how axons achieve a uniform MT orientation. The modeling suggests that unbounded MT assembly works with MT sliding and templating to establish a uniform MT array.\n\nThere are multiple issues with the modeling. The first is that the extent of rapid Stop and Go MT sliding in the experimental data set is not analyzed. From studies in Xenopus neurons from Popov's group (Ma et al., 2004 Cur Bio) and fly neurons (Gelfand's group) rapid sliding of MTs is exceedingly rare after neurite initiation. Based on this data, it seems likely that if the velocity distribution of comet motion were examined, essentially none of the comets would be moving at the rate of dynein/kinesin motors (i.e., ~ 1 um/sec). In turn, it follows a careful analysis of the Jupiter mcherry data might reveal that only tiny fraction, if any, of the MTs move via rapid MT sliding. I would suggest carefully looking at the experimental data and updating the model so it accurately reflects the observed extent of MT sliding.\n\nSup Figure 8C suggests that unbounded MT growth alone does not contribute to microtubule orientation. Comparison of 8A, 8C, and 8E suggests unbounded growth modestly increases MT orientation in the proximal axon when sliding is included in the model. If one takes the model's output at face value, the verbal arguments in the manuscript claiming unbounded growth is essential for establishing MT orientation are undermined. I would suggest either accepting that the model indicates unbounded growth is relatively unimportant for establishing MT orientation or rethinking the model.\n\nIt's unclear why augmin is given such a prominent role in the model and the discussion. I found this distracting.\n\nIn conclusion, there are two significant issues. The first is that manipulations designed to alter MT dynamics, either directly or by reducing the localization of p150 to the growth cone (i.e., p150, noc, kinesin), also disrupt dynein, which is well established in being essential for establishing MT orientation. As a result, the experimental data do not appear to show a definitive role for MT dynamics separate from dynein activity. The second is that the modeling suggests MT dynamics make a relatively minor contribution towards establishing MT orientation. In light of this, approaches that could be used to strengthen the manuscript would be to conduct experiments that more directly demonstrate the importance of MT dynamics in this process and to revise the model as outlined above.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have made additional efforts to address the comments raised by the reviewers, which has led to various improvements of their manuscript.\n\nIn Supplemental Figure 5, the authors now report the fitted values and found a value for \\\u03b1 of 3.62. Given that d_g(x)=A*p150(x)^\\\u03b1, this indicates that the gradient of microtubule behavior has a 4x steeper spatial decay than the gradient of p150. This could be the case, but it is not apparent from the stainings and profile plots of p150 they show in Figure 4C and S7. Based on Supplementary Figure 2, it seems that the p150 gradient is actually steeper. Furthermore, I had hoped that the authors would have added some reflection on how a gradient of p150 can result in a gradient of MT dynamics with a 4-fold different length scale. To me this is not entirely evident, but it could be due to a non-linear response of MT dynamics to p150 concentration.\n\nUnfortunately, the authors didn't try to address the dynamics of p150 to assess to which extent was diffuse versus anchored (e.g. using FRAP), and therefore the exact interplay between p150 and MTs at the axon tip remains unclear. Nonetheless, the manuscript does provide a more coarser insight into how uniform MT arrays could be established by local modulation of MT dynamics.\n",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9d2f96a5-a400-4e4a-aad8-1d884152bbdb",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C1",
+      "claim": "In neuronal axons, transport over vast distances relies on uniformly oriented microtubules whose plus-ends point towards the distal axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Within neuronal axons, transport over vast distances particularly relies on uniformly oriented microtubules, whose plus-ends point towards the distal axon tip (anterogradely polymerizing, or plus-end-out).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known fact about neuronal transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "56cf82e0-8934-4816-b7f8-d797bfee9997",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C2",
+      "claim": "Axonal microtubules initially have mixed orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, axonal microtubules initially have mixed orientations, and how they orient during development is not yet fully understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "7ea52a78-a4d3-4489-a10c-192dffbd3cd5",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C3",
+      "claim": "In the distal part of the axon, catastrophe rates of plus-end-out microtubules were significantly reduced compared to those of minus-end-out microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Using live imaging of primary Drosophila melanogaster neurons, we found that, in the distal part of the axon, catastrophe rates of plus-end-out microtubules were significantly reduced compared to those of minus-end-out microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding stated in the abstract and supported by data in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "8d75ff78-3e60-4669-93d2-6c076fc782b0",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C4",
+      "claim": "Plus-end-out microtubules exhibit persistent long-term growth while growth of minus-end-out microtubules is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Physical modelling revealed that plus-end-out microtubules should therefore exhibit persistent long-term growth, while growth of minus-end-out microtubules should be limited, leading to a bias in overall axonal microtubule orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the physical model presented in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "421dbb8a-2155-46c4-a300-0ea925bced60",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C5",
+      "claim": "The anti-catastrophe factor p150 is enriched in the distal axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Using chemical and physical perturbations of microtubule growth and genetic perturbations of the anti -catastrophe factor p150, which was enriched in the distal axon tip, we confirmed that the enhanced growth of plus-end-out microtubules is critical for achieving uniform microtubule orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by immunostaining data in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "04c3d2d1-2daa-45c3-9ecd-8ee083e6b22b",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C6",
+      "claim": "Enhanced growth of plus-end-out microtubules is critical for achieving uniform microtubule orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using chemical and physical perturbations of microtubule growth and genetic perturbations of the anti -catastrophe factor p150, which was enriched in the distal axon tip, we confirmed that the enhanced growth of plus-end-out microtubules is critical for achieving uniform microtubule orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed through multiple experimental perturbations shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "90c7821c-03e4-4cc8-b3ec-702dc9aeea2d",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C7",
+      "claim": "Computer simulations integrating enhanced plus-end-out microtubule growth with dynein-based microtubule sliding and augmin-mediated templating correctly predicted the long-term evolution of axonal microtubule orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Computer simulations of axon development integrating the enhanced plus-end-out microtubule growth identified here with previously suggested mechanisms, that is, dynein-based microtubule sliding and augmin-mediated templating, correctly predicted the long-term evolution of axonal microtubule orientation as found in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "444f1849-a797-400e-bf58-14281a7ccc05",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C8",
+      "claim": "Microtubules are long, polarized polymers that undergo stochastic cycles of growth and shrinkage.",
+      "claim_type": "EXPLICIT",
+      "source": "Transport occurs along microtubules (MTs), which are long, polarized polymers that undergo stochastic cycles of growth and shrinkage (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a well-established property of microtubules stated in the introduction and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "3f18529d-cc9f-415b-9983-f56f91a38138",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C9",
+      "claim": "Motor proteins transport cargo either towards a microtubule's dynamic plus-end or the more stable minus-end.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor proteins transport cargo either towards a MT's dynamic (i.e., growing and shrinking) plus-end or the more stable minus-end (Jiang et al., 2018; Jiang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "82e53bd3-61c5-40ec-8011-f26378cd7a56",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C10",
+      "claim": "In immature axons, microtubule orientation is mixed, with 50\u201380% of all microtubules pointing with their plus-end-out.",
+      "claim_type": "EXPLICIT",
+      "source": "In immature axons, MT orientation is mixed, with 50\u201380% of all MTs pointing with their plus-end-out (del Castillo et al., 2015; Yau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "f1dcaca9-ad5c-4960-b8d0-128be4d8f545",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C11",
+      "claim": "During early neuronal development, the fraction of plus-end-out axonal microtubules increases.",
+      "claim_type": "EXPLICIT",
+      "source": "During early neuronal development, the fraction of plus-end-out axonal MTs increases (del Castillo et al., 2015; Yau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations and confirmed by experimental data in Figure 1G-H.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "a40d208d-7984-462b-95d4-2a0e93ce5db4",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C12",
+      "claim": "In mature axons, ~95% of all microtubules point in the same direction (plus-end-out).",
+      "claim_type": "EXPLICIT",
+      "source": "In mature axons, ~95% of all MTs point in the same direction (plus-end-out) (Baas et al., 1989; Heidemann et al., 1981), enabling polarized transport (Millecamps and Julien, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "b1f1eca0-3a38-4910-80db-3ca2d19e5746",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C13",
+      "claim": "Deficits in polarized transport have been associated with human neurodegenerative diseases, such as Alzheimer's and Parkinson's diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficits in polarized transport have been associated with human neurodegenerative diseases, such as Alzheimer's and Parkinson's diseases (Millecamps and Julien, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "c18140a3-87f9-4b68-a4bf-ec717245d3ef",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C14",
+      "claim": "Microtubules in post-mitotic neurons are not attached to the centrosome.",
+      "claim_type": "EXPLICIT",
+      "source": "MTs in post-mitotic neurons are not attached to the centrosome (Kuijpers and Hoogenraad, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "f6aac71a-2378-4b8e-86f0-cc299a321751",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C15",
+      "claim": "Nucleation of new microtubules occurs from microtubule organizing centres such as somatic Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleation of new MTs occurs from MT organizing centres (MTOCs) such as somatic Golgi (Mukherjee et al., 2011) through elongation of severed pieces (Yu et al., 2008) or de novo polymerization alongside existing MTs (Nguyen et al., 2014; S\u00e1nchez-Huertas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "6e7a08f3-da89-4b07-989d-edd4d77a5230",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C16",
+      "claim": "Newly formed microtubules often orient in the same direction as existing ones, enforcing any pre-existing orientation bias.",
+      "claim_type": "EXPLICIT",
+      "source": "These newly formed MTs often orient in the same direction as existing ones, enforcing any pre-existing orientation bias (Mattie et al., 2010; Mukherjee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "18032e62-6301-49e8-a8b8-b3847599a1e2",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C17",
+      "claim": "Pre-existing biases are enhanced by selective stabilization of microtubules through TRIM46-mediated parallel bundling.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-existing biases are furthermore enhanced by selective stabilization of MTs through TRIM46-mediated parallel bundling (van Beuningen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "16d4bd98-df66-4980-80a2-59a2d74ae200",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C18",
+      "claim": "In axons, short microtubules pointing with their minus-end away from the cell body can be transported towards the cell body by cytoplasmic dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in axons, short MTs pointing with their minus-end away from the cell body can be transported towards the cell body (i.e., away from the tip) by cytoplasmic dynein (del Castillo et al., 2015; Rao et al., 2017), thus potentially clearing the axon of minus-end-out MTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "4618e701-c3c8-4060-ac39-53b1143bcf88",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C19",
+      "claim": "Computer simulations of dynein-mediated microtubule sliding alone failed to explain the longer-term plus-end-out orientation of microtubules in the proximal axon.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while MTs in the distal axon were oriented mostly with their plus-end away from the cell body (Jakobs et al., 2020; Jakobs et al., 2015), our simulations failed to explain the longer-term plus-end-out orientation of MTs in the proximal axon and the gradual establishment of a uniform plus-end-out MT orientation throughout the axon seen in experiments (Yau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous simulation work by the authors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "26ccb5c8-2cd5-4582-824d-4ca57344fc41",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C20",
+      "claim": "The fraction of plus-end-out microtubules increased over time and with increasing axonal length.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of plus-end-out MTs increased over time and with increasing axonal length (Figure 1G\u2013H), confirming that MT orientation increases during development (del Castillo et al., 2015; Yau et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 1G-H.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "f64a1147-13b4-439a-9809-2a8fd1cb4f94",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C21",
+      "claim": "Most microtubule growth events (~66%) were found within the first 20 \u00b5m from the advancing axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Most MT growth events (~66%) were found within the first 20 \u00b5m from the advancing axon tip (Figure 1A and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "1d839d53-d74a-490e-af54-9d4ff19d8f5b",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C22",
+      "claim": "Microtubule growth lengths per cycle were significantly higher near the axon tip compared to further away from it.",
+      "claim_type": "EXPLICIT",
+      "source": "MT growth lengths per cycle, dg were significantly higher near the axon tip compared to further away from it (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "e5b97f3c-b82f-4f3a-ae9a-a329838fded0",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C23",
+      "claim": "Plus-end-out microtubules added significantly more length per growth cycle than minus-end-out microtubules, with the highest difference found within the first 10 \u00b5m from the axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, plus-end-out MTs added significantly more length per growth cycle than minus-end-out MTs, with the highest difference between plus-end-out and minus-end-out MTs (~0.5 \u00b5m/cycle) found within the first 10 \u00b5m from the axon tip (dg (plus-end-out)=2.11 [2.04, 2.16] \u00b5m/cycle and dg (minus-end-out)=1.39 [1.27, 1.50] \u00b5m, bootstrapped median [95% confidence interval]) (Figure 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "10151f27-fe71-4e03-8ef8-f0ad7534f46b",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C24",
+      "claim": "In Drosophila neurons, microtubule growth velocities were similar in all microtubules irrespective of their orientation and position within the axon (~5 \u00b5m/min).",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila neurons, MT growth velocities vg were similar in all MTs irrespective of their orientation and position within the axon (~5 \u00b5m/min; Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "7f79ac55-7c15-4358-8548-7b4fcc4c4594",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C25",
+      "claim": "EB1-GFP was not enriched at the axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, EB1-GFP, which affects MT polymerization velocities, was not enriched at the axon tip ( Figure 1\u2014figure supplement 1E), and EB1-GFP comet lengths, which have previously been linked to MT polymerization speeds (Hahn et al., 2021), did not show significant variations along the axon (Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "13c01468-1a5c-4dfd-ac7e-3f623093c012",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C26",
+      "claim": "Catastrophe rates were significantly lower in plus-end-out microtubules near the axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "However, catastrophe rates fg=1/tg were significantly lower (and thus polymerization times tg significantly longer) in plus-end-out MTs near the axon tip (fg+\u223c4\u221710\u22122s\u22121 vs. fg\u2212\u223c6\u221710\u22122s\u22121  ; Figure 1\u2014figure supplement 1B), suggesting that these MTs grew longer because of a decrease in their catastrophe frequencies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "38d47118-d1c0-4baf-9c72-8c8a2579641c",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C27",
+      "claim": "Axonal microtubule shrinkage lengths were ds = 2.03 [1.80, 2.26] \u00b5m/cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonal MT shrinkage lengths were ds = 2.03 [1.80, 2.26] \u00b5m/cycle (bootstrapped median [95% confidence interval], Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "2a318ef4-75ae-490f-af3f-0d6ae2e92de2",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C28",
+      "claim": "The model predicted divergence of microtubule length at dg = 2.03 \u00b5m, corresponding to the lower end of the measured 95% confidence interval for plus-end-out microtubules near the axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "With this value for ds, our model predicted the divergence of lMT (i.e., the change from bounded/finite growth to unbounded/infinite growth) at dg = 2.03 \u00b5m. This value dg corresponded to the lower end of the measured 95% confidence interval for the median dg = [2.04, 2.16] \u00b5m/cycle of plus-end-out MTs near the axon tip, but it was well above the 95% confidence interval for the median dg = [1.39, 1.48] \u00b5m/cycle of all other MTs (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by modeling in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "a42b029b-c55d-47f1-90c6-2ec09ea843fa",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C29",
+      "claim": "Plus-end-out-oriented microtubules exhibit mostly unbounded growth within 10 \u00b5m from the axon tip while minus-end-out microtubules within that range and any microtubule further away from the tip do not.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured values of dg and ds hence suggested that plus-end-out-oriented MTs exhibit mostly unbounded growth within 10 \u00b5m from the axon tip while minus-end-out MTs within that range and any MT further away from the tip do not (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by modeling in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "2c72680a-8a6d-42c4-9089-3ac820e8f553",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C30",
+      "claim": "Nocodazole treatment led to decreased microtubule growth velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "Nocodazole treatment led to decreased MT growth velocities vg (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "2006a56d-d9ba-4133-a568-72dbc4d111d5",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C31",
+      "claim": "Increasing the osmolarity of the cell culture medium through addition of NaCl led to significantly increased microtubule catastrophe rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, we also physically decreased MT growth by increasing the osmolarity of the cell culture medium through addition of NaCl (Bray et al., 1991; Molines et al., 2020). Here, MT catastrophe rates fg were significantly increased (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "6b8097d2-2bb0-40ae-bc6e-23acef157140",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C32",
+      "claim": "Both nocodazole and hyperosmotic treatments led to significantly decreased plus-end-out microtubule growth at the axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Both treatments led to significantly decreased plus-end-out MT growth dg=vg/fg at the axon tip (<10 \u00b5m), with dg < 1.71 \u00b5m/cycle < ds (upper 95% confidence bound of median) (Figure 3A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "7913e6c8-523d-44e2-a40f-a9559c2980db",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C33",
+      "claim": "Microtubules within treated axons were overall significantly less uniformly oriented after nocodazole or hyperosmotic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, MTs within treated axons were overall significantly less uniformly oriented (Figure 3D\u2013E), confirming an important role of the enhanced growth lengths per cycle of plus-end-out MTs in establishing axonal MT orientation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "57d44eb0-bb60-4e3f-ad6f-b3131c8b3d09",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C34",
+      "claim": "Drosophila has a p150 homologue which is enriched in axonal but not in dendritic tips.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila has a p150 homologue which, similar as in murine neurons (Moughamian and Holzbaur, 2012), we found to be enriched in axonal but not in dendritic tips (i.e., tips of immature 'dendritic' processes), whose MT orientation is mixed and thus resembles that of vertebrate and immature Drosophila dendrites (Hill et al., 2012; Figure 4A and C and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by immunostaining data in Figure 4A-C and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "e51305b6-0555-4846-80ca-25d2610bc8f5",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C35",
+      "claim": "Plus-end-out microtubule growth lengths per cycle and catastrophe rates were significantly higher in axons than in dendritic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, plus-end-out MT growth lengths per cycle dg and catastrophe rates fg were significantly higher in axons than in dendritic processes (Figure 4\u2014figure supplement 2E,G), where dg = 1.42 [1.37, 1.39] \u00b5m/cycle remained smaller than ds = 2.03 [1.80, 2.26] \u00b5m/cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 4\u2014figure supplement 2E,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "362b1b18-d8e4-486e-84d5-3cceec473c3a",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C36",
+      "claim": "Dendritic processes exhibited mixed (50% plus-end-out) microtubule orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our model, which predicted unbounded growth of plus-end-out MTs in axons but bounded growth in dendritic processes (Figure 2), dendritic processes exhibited mixed (50% plus-end-out) MT orientations (Figure 4\u2014figure supplement 2D, Hill et al., 2012), corroborating a link between MT stabilizing protein gradients in the tip of axons, reduced MT catastrophe rates, unbounded growth, and overall MT orientation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 4\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "df241526-3546-4575-9ab9-1270a65c729f",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C37",
+      "claim": "Expressing p150-RNAi led to decreased p150 protein in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing p150-RNAi led to decreased p150 protein in axons (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by immunostaining data in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "d050fdd9-c5f0-4575-b66f-4c697877c734",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C38",
+      "claim": "Both the expression of p150-RNAi and of dominant negative p1501/+ led to a significant increase in plus-end-out microtubule catastrophe rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the expression of p150-RNAi and of dominant negative p1501/+ led to a significant increase in plus-end-out MT catastrophe rates (Figure 4\u2014figure supplement 3) and thereby to a decrease (14\u201320%) in plus-end-out MT growth within 10 \u00b5m from the axon tip (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 4G and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "a16d11b3-f6df-49e6-a1d2-0918516c3f48",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C39",
+      "claim": "The overall axonal microtubule orientation was significantly decreased in both p150-RNAi and p1501/+ axons compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our model, the overall axonal MT orientation was significantly decreased in both p150-RNAi and p1501/+ axons compared to controls (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "e9c24662-b86d-4ab9-9e4d-75f68ba0010e",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C40",
+      "claim": "p150 is known to interact with dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "p150 is known to interact with dynein (Karki and Holzbaur, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "009e76ac-13c4-4baa-8578-c0ad03f09a5f",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C41",
+      "claim": "Expressing an RNAi against dynein heavy chain led to decreased plus-end-out microtubule growth at the axon tip and decreased microtubule organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing an RNAi against dynein heavy chain also led to decreased plus-end-out MT growth at the axon tip (25%) and decreased MT organization, resembling the results of p150 removal (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "c0a3523d-16fa-45df-843b-39b3687865b9",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C42",
+      "claim": "p150 accumulation at axon tips depends on the activity of the microtubule-specific molecular motor protein kinesin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work showed that p150 accumulation at axon tips depends on the activity of the MT-specific molecular motor protein kinesin 1 (Moughamian and Holzbaur, 2012; Twelvetrees et al., 2016), which preferentially enters axons over dendrites (Tas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "feea8aa4-4a62-4477-a059-e0d2c2f3eb84",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C43",
+      "claim": "Disruption of kinesin 1 function with an RNAi treatment led to a 25% decrease in p150 fluorescence within 10 \u00b5m from the axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, disruption of kinesin 1 function with an RNAi treatment led to a 25% decrease in p150 fluorescence within 10 \u00b5m from the axon tip (Figure 4\u2014figure supplement 6A-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 4\u2014figure supplement 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "4e7068a9-7d31-494f-89c7-6f0fe52f2201",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C44",
+      "claim": "The absence of a p150 gradient in kinesin 1 RNAi neurons led to a significant increase in microtubule catastrophe rates and decreased plus-end-out microtubule growth near the axon tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the absence of a p150 gradient in these neurons led to a significant increase in MT catastrophe rates and decreased plus-end-out MT growth near the axon tip, and hence to an overall decrease in axonal MT orientation (Figure 4\u2014figure supplement 6E-I), suggesting that gradients of MT stabilizing proteins at the tips of developing axons are critical for biasing axonal MT orientations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "5ccf0b13-7eee-4fbd-bcf0-205d95d7f669",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C45",
+      "claim": "Simulations incorporating dynein-induced microtubule sliding but lacking enhanced plus-end-out microtubule growth and templating resulted in steadily growing axons whose microtubule orientation profile was graded along their length.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations incorporating dynein-induced MT sliding but lacking mechanisms (1) and (2) mentioned above resulted in steadily growing axons whose MT orientation profile was graded along their length, being enriched with plus-end-out MTs at the distal end and with minus-end-out MTs at the proximal (cell body) end (Figure 5A, B and E and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by simulation data in Figure 5E and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "efd9d6e0-ea98-4bc1-b7b4-f334dfac670d",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C46",
+      "claim": "The increased growth of plus-end-out microtubules or templating alone, or any combination of two out of these three mechanisms, were insufficient for establishing high fractions of plus-end-out microtubules at the proximal axon.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the increased growth of plus-end-out MTs or templating alone, or any combination of two out of these three mechanisms, were also insufficient for establishing high fractions of plus-end-out MTs at the proximal axon as observed experimentally (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by simulation data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "668a362f-96ff-43de-aad0-4cc1b99ab6de",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C47",
+      "claim": "When sliding, templating, and biased microtubule growth at the axon tip were integrated in the simulation, microtubules gradually oriented uniformly plus-end-out across the entire length of the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we integrated sliding, templating, and biased MT growth at the axon tip in the simulation (assuming that the likelihood of exhibiting unbounded growth corresponds to a successful nucleation event), MTs gradually oriented uniformly plus-end-out across the entire length of the axon, recapitulating our experimental results (Figure 5C, D and F and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by simulation data in Figure 5F and Figure 5\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "9219bfb1-c6be-497e-b3db-924ffa6a7404",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C48",
+      "claim": "Growth-promoting proteins accumulate at the axon tip due to microtubule plus-end-directed transport by kinesin motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth-promoting proteins accumulate at the axon tip due to MT plus-end-directed transport by kinesin motors (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "f871785a-28b1-4937-a9fa-fc4c6a435c18",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C49",
+      "claim": "The resulting protein gradient leads to a local bias in microtubule growth, rendering plus-end-out microtubule growth into the axon tip unbounded.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting protein gradient leads to a local bias in MT growth (Figure 1, Figure 3), rendering plus-end-out MT growth into the axon tip unbounded (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figures 1, 2, and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "3363f30c-65f3-4d7d-99c5-30970ef7c913",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C50",
+      "claim": "Short minus-end-out microtubules are more prone to depolymerization and/or transport away from the tip by dynein-mediated cell body-directed sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, short minus-end-out MTs are more prone to depolymerization and/or transport away from the tip by dynein-mediated cell body-directed sliding (del Castillo et al., 2015; Rao et al., 2017), thus contributing to the orientation bias of MTs in the axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "92d9a17a-64a0-4586-8f80-1d463e6b01ac",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C51",
+      "claim": "The orientation bias is further enhanced by augmin-mediated templating or TRIM46-mediated parallel bundling of newly formed microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation bias is further enhanced by augmin-mediated templating or TRIM46-mediated parallel bundling of newly formed MTs to establish and maintain a fully organized MT cytoskeleton (see Figure 5E for a schematic summary).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and illustrated in Figure 5G.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "f8281237-dead-44dd-96f1-fea94d5b48ab",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C52",
+      "claim": "Nocodazole treatment decreased microtubule growth velocities while not affecting catastrophe frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Nocodazole treatment decreased MT growth velocities while not affecting catastrophe frequencies; hyperosmotic solutions increased MT catastrophe frequencies but did not alter growth velocities (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "3e48736e-015e-4b43-8c70-05e4bf43b9b4",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C53",
+      "claim": "Hyperosmotic solutions increased microtubule catastrophe frequencies but did not alter growth velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "Nocodazole treatment decreased MT growth velocities while not affecting catastrophe frequencies; hyperosmotic solutions increased MT catastrophe frequencies but did not alter growth velocities (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "afbee711-4a74-41a6-b74a-7028d0369308",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C54",
+      "claim": "The axon tip is highly enriched with growth-promoting factors such as p150, CRMP-2, TRIM46, and EB1.",
+      "claim_type": "EXPLICIT",
+      "source": "The axon tip is highly enriched with growth-promoting factors such as p150 (Lazarus et al., 2013; Moughamian and Holzbaur, 2012), CRMP-2 (Fukata et al., 2002; Inagaki et al., 2001), TRIM46 (Rao et al., 2017; van Beuningen et al., 2015), and EB1 (Ma et al., 2004; Morrison et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "7df69f2c-f066-403d-a66c-6357450de0bf",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C55",
+      "claim": "Enhanced stabilization of plus-end-out microtubules, leading to reduced catastrophe rates and thus unbounded growth essential for establishing uniform microtubule orientation, was only observed near axonal but not near dendritic tips.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced stabilization of plus-end-out MTs, leading to reduced catastrophe rates and thus unbounded growth essential for establishing uniform MT orientation, was only observed near axonal but not near dendritic tips (Figure 4\u2014figure supplement 2), confirming that differences in the localization of MT growth-promoting proteins correlate with differences in MT growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "b12ab26b-afe6-4a9e-8c0b-5684a2351c42",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C56",
+      "claim": "Perturbations of p150 led to increased catastrophe rates and decreased plus-end-out microtubule growth in the axon tip, and thus to decreased overall microtubule order in the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbations of p150 led to increased catastrophe rates and decreased plus-end-out MT growth in the axon tip, and thus to decreased overall MT order in the axon (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "56fde908-ce26-48a9-a3dc-160ac996ba7e",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C57",
+      "claim": "Microtubule growth (dg) scaled with the fourth power of the p150 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MT growth (dg) scaled with the fourth power of the p150 concentration (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by modeling in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "5108538b-373e-4f31-901a-004d162b4f20",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C58",
+      "claim": "p150 acts as a dynein-independent microtubule anti-catastrophe factor.",
+      "claim_type": "EXPLICIT",
+      "source": "While p150 is mainly known for its role in the dynactin complex, which is an important cargo adapter protein complex for the molecular motor protein dynein (Gill et al., 1991), it also acts as a dynein-independent MT anti-catastrophe factor (Lazarus et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "5047b947-c1f0-4052-a3a3-e8f23e5cca2a",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C59",
+      "claim": "The uniform microtubule orientation along the axon cannot be understood solely based on dynein-mediated microtubule sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations revealed that the uniform MT orientation along the axon cannot be understood solely based on dynein-mediated MT sliding: as axons extended, an increasing number of minus-end-out MTs from across the axonal shaft accumulated at the proximal axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by simulation data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "4623ceaf-a281-409c-a1fd-a20ea3edaadf",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C60",
+      "claim": "Microtubule-templating and the biased microtubule growth mechanism both improved the microtubule orientation profile along the axonal shaft.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst those, MT-templating (e.g., by augmin or TRIM46) and the biased MT growth mechanism identified in the present study both improved the MT orientation profile along the axonal shaft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by simulation data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "c3957b4a-eab9-40fa-81f7-482ac4337c93",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C61",
+      "claim": "Experimental findings were best matched when all three mechanisms (sliding, templating, and biased growth) worked in concert.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental findings were best matched when all three mechanisms worked in concert (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by simulation data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "cb7a8945-f2bf-413c-8bae-abb85231d8a0",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C62",
+      "claim": "EB1-GFP labels growing microtubule plus-ends with bright 'comets'.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Drosophila lines expressing the fusion protein EB1-GFP, which labels growing MT plus-ends with bright 'comets' (Figure 1A\u2013C; S\u00e1nchez-Soriano et al., 2010; Stepanova et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with supporting citations and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "d6e3c7cc-b244-4681-9d36-b63ef44c6ab6",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C63",
+      "claim": "The distance over which a comet moves in the axon is equal to the overall length that is added to a microtubule between the start of its growth cycle and the growth cycle's end.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance over which a comet moves in the axon is equal to the overall length dg that is added to an MT between the start of its growth cycle and the growth cycle's end (Figure 1A), at which usually a 'catastrophe' occurred, leading to MT shrinkage (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "f2f1f02b-7ddb-4805-8966-2e92689f0301",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C64",
+      "claim": "The direction of growth reveals whether a microtubule is oriented with its plus-end away from (plus-end-out) or towards (minus-end-out) the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "The direction of growth reveals whether an MT is oriented with its plus-end away from (plus-end-out) or towards (minus-end-out) the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a method for determining microtubule orientation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "c3badb09-c203-4aa9-9953-80ea068f97f5",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C65",
+      "claim": "Microtubule minus-end polymerization is much slower than plus-end polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "MT minus-end polymerization is much slower than plus-end polymerization (Strothman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "daea0505-b9e4-49d2-a850-111adf0e1adc",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "claim_id": "C66",
+      "claim": "Similar growth velocities of cell body-directed and tip-directed microtubule growth indicate measurement of plus-end-out microtubule growth events in both directions rather than minus-end growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we observed similar growth velocities of cell body-directed and tip-directed MT growth, we are confident that we measured plus-end-out MT growth events in both directions rather than minus-end growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods as a validation of the measurement approach.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context for microtubule orientation in neuronal axons. In mature axons, ~95% of microtubules are uniformly oriented with plus-ends pointing toward the axon tip, enabling polarized transport. However, in immature axons, microtubule orientation is initially mixed (50-80% plus-end-out), and the fraction of plus-end-out microtubules increases during development. Deficits in this polarized transport are associated with neurodegenerative diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 establish well-documented background knowledge about microtubule organization in neurons, supported by multiple citations to prior literature. These claims provide essential context but represent established knowledge rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "3eece575-13d4-413e-9aac-4007138bbd4a",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using live imaging of EB1-GFP in Drosophila neurons, the authors quantified microtubule growth dynamics along axons. They found that most microtubule growth events (~66%) occur within 20 \u00b5m of the axon tip, and plus-end-out microtubules add significantly more length per growth cycle than minus-end-out microtubules (2.11 vs 1.39 \u00b5m/cycle) within the first 10 \u00b5m from the tip. This difference arises from significantly lower catastrophe rates in plus-end-out microtubules near the tip, not from differences in growth velocity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 and C62-C64 present the core experimental observations using EB1-GFP imaging and are well-supported by quantitative data in Figure 1 and supplements. The measurements are appropriately analyzed with statistical tests, confidence intervals are reported, and the methodology for distinguishing plus-end vs minus-end growth is validated (C66). This represents a major novel finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "aee611d9-b7bb-478e-8a1b-f63002d6e478",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors developed a two-state master equation model of microtubule dynamics to predict whether microtubules exhibit bounded or unbounded growth. The model predicts that when growth length per cycle (dg) exceeds shrinkage length per cycle (ds = 2.03 \u00b5m), microtubules exhibit unbounded growth. Measured values indicate that plus-end-out microtubules within 10 \u00b5m of the axon tip (dg = 2.11 \u00b5m) exhibit mostly unbounded growth, while minus-end-out microtubules (dg = 1.39 \u00b5m) and microtubules further from the tip exhibit bounded growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C27-C29 present a mathematical model linking experimental measurements to predictions about microtubule behavior. The model is clearly derived (shown in supplemental methods), and the experimental measurements of dg and ds support the model's predictions. The confidence intervals for plus-end-out microtubules at the tip bracket the critical threshold, providing strong support for the unbounded growth hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "cb0493a0-5a55-4dcf-8a25-d18f9a894758",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chemical and physical perturbations that decrease microtubule growth confirm the importance of enhanced plus-end-out growth for establishing uniform orientation. Nocodazole treatment decreased growth velocities, while hyperosmotic treatment increased catastrophe rates. Both treatments reduced plus-end-out microtubule growth at the axon tip below the critical threshold for unbounded growth (dg < 1.71 \u00b5m < ds), and both led to significantly decreased overall microtubule orientation in axons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 and C52-C53 describe perturbation experiments that test the model's predictions. The data in Figure 3 and supplements show that reducing microtubule growth through different mechanisms (affecting either velocity or catastrophe rate) both lead to decreased orientation, supporting the hypothesis. The experiments are well-controlled with appropriate statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "a2981b80-84f3-45e0-9b08-0f3de151355d",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The anti-catastrophe factor p150 is enriched at axonal but not dendritic tips, and this gradient correlates with differential microtubule dynamics. Genetic perturbations of p150 (RNAi and dominant negative p150\u00b9/\u207a) led to increased catastrophe rates, decreased plus-end-out microtubule growth at the axon tip (14-20% decrease), and significantly decreased overall axonal microtubule orientation. Modeling suggests microtubule growth scales with the fourth power of p150 concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C34-C39, and C54-C57 identify p150 as a key molecular player and demonstrate its functional importance through immunostaining (Figure 4A-C) and genetic perturbations (Figure 4D-H). The comparison between axonal and dendritic tips (Figure 4\u2014supplement 2) provides additional support. The power-law relationship (C57) is based on modeling (Figure 4\u2014supplement 4) and represents an interesting quantitative prediction, though it would benefit from additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "b43acde2-9507-4e85-b560-cf9f2290ebe1",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The p150 gradient at axon tips depends on kinesin 1-mediated transport. Disruption of kinesin 1 function led to a 25% decrease in p150 fluorescence at the axon tip, increased microtubule catastrophe rates, decreased plus-end-out microtubule growth, and decreased overall axonal microtubule orientation. p150 acts as both a dynein-interacting protein and a dynein-independent anti-catastrophe factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44, C48, and C58 establish the mechanism for p150 localization and its dual functions. The kinesin 1 RNAi experiments (Figure 4\u2014supplement 6) demonstrate the transport-dependent accumulation of p150. The dynein RNAi experiments (Figure 4\u2014supplement 5) show similar phenotypes to p150 perturbation, though the interpretation is complicated by dynein's multiple roles. The claims are well-supported but the mechanistic details could be more fully resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "c5283df2-7bd2-42e7-8952-a2dfccba8beb",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Computer simulations integrating three mechanisms\u2014dynein-based sliding, augmin-mediated templating, and enhanced plus-end-out microtubule growth at the tip\u2014correctly predicted the long-term evolution of axonal microtubule orientation. Simulations with only one or two mechanisms were insufficient to establish uniform plus-end-out orientation throughout the axon, but combining all three mechanisms recapitulated experimental observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C19, and C45-C47, C59-C61 present comprehensive computational modeling that integrates the newly discovered mechanism with previously proposed mechanisms. Figure 5 and supplement 1 systematically test different combinations of mechanisms, demonstrating that all three are necessary. The simulations match experimental time courses (Figure 5D vs 5F), providing strong support for the integrated model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "2b231435-88d0-4e63-a043-babab3c7c4a7",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose an integrated model where kinesin 1 transports growth-promoting proteins to the axon tip, creating a gradient that renders plus-end-out microtubule growth unbounded while minus-end-out microtubules remain bounded and are cleared by dynein-mediated sliding. This orientation bias is further enhanced by augmin-mediated templating and TRIM46-mediated bundling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 synthesize the experimental and computational findings into a comprehensive mechanistic model. The model is well-supported by the combination of experimental data (Figures 1-4) and simulations (Figure 5), and is illustrated clearly in Figure 5G. This represents the main conceptual contribution of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "b1a181f3-ba3d-4a32-bc09-60fb4bbdc175",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript reviews previously proposed mechanisms for establishing microtubule orientation, including nucleation from organizing centers, templating of new microtubules along existing ones, TRIM46-mediated stabilization, and dynein-mediated transport of minus-end-out microtubules toward the cell body.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 summarize established mechanisms from prior literature with appropriate citations. These provide important context for understanding why additional mechanisms are needed, but represent background knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    },
+    {
+      "id": "ffb4e3b3-0a39-41d8-a342-fad2fc8d9ca7",
+      "content_id": "e887aab5-60ef-46d4-b2a7-18757990d389",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors validate their measurement approach by noting that microtubule minus-end polymerization is much slower than plus-end polymerization, and since they observed similar growth velocities in both directions, they are confident they measured plus-end growth events rather than minus-end growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 address a potential methodological concern about distinguishing plus-end from minus-end growth. The reasoning is sound and supported by citation (C65) and internal consistency of the velocity measurements (C24). This is an important methodological validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:51.981334Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9d2f96a5-a400-4e4a-aad8-1d884152bbdb",
+      "result_id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f"
+    },
+    {
+      "claim_id": "56cf82e0-8934-4816-b7f8-d797bfee9997",
+      "result_id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f"
+    },
+    {
+      "claim_id": "444f1849-a797-400e-bf58-14281a7ccc05",
+      "result_id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f"
+    },
+    {
+      "claim_id": "3f18529d-cc9f-415b-9983-f56f91a38138",
+      "result_id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f"
+    },
+    {
+      "claim_id": "82e53bd3-61c5-40ec-8011-f26378cd7a56",
+      "result_id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f"
+    },
+    {
+      "claim_id": "f1dcaca9-ad5c-4960-b8d0-128be4d8f545",
+      "result_id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f"
+    },
+    {
+      "claim_id": "a40d208d-7984-462b-95d4-2a0e93ce5db4",
+      "result_id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f"
+    },
+    {
+      "claim_id": "b1f1eca0-3a38-4910-80db-3ca2d19e5746",
+      "result_id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f"
+    },
+    {
+      "claim_id": "c18140a3-87f9-4b68-a4bf-ec717245d3ef",
+      "result_id": "033f1efc-7f59-4e5a-a95a-b215e1ba1a9f"
+    },
+    {
+      "claim_id": "26ccb5c8-2cd5-4582-824d-4ca57344fc41",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "f64a1147-13b4-439a-9809-2a8fd1cb4f94",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "1d839d53-d74a-490e-af54-9d4ff19d8f5b",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "e5b97f3c-b82f-4f3a-ae9a-a329838fded0",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "10151f27-fe71-4e03-8ef8-f0ad7534f46b",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "7f79ac55-7c15-4358-8548-7b4fcc4c4594",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "13c01468-1a5c-4dfd-ac7e-3f623093c012",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "cb7a8945-f2bf-413c-8bae-abb85231d8a0",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "d6e3c7cc-b244-4681-9d36-b63ef44c6ab6",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "f2f1f02b-7ddb-4805-8966-2e92689f0301",
+      "result_id": "3eece575-13d4-413e-9aac-4007138bbd4a"
+    },
+    {
+      "claim_id": "7ea52a78-a4d3-4489-a10c-192dffbd3cd5",
+      "result_id": "aee611d9-b7bb-478e-8a1b-f63002d6e478"
+    },
+    {
+      "claim_id": "8d75ff78-3e60-4669-93d2-6c076fc782b0",
+      "result_id": "aee611d9-b7bb-478e-8a1b-f63002d6e478"
+    },
+    {
+      "claim_id": "38d47118-d1c0-4baf-9c72-8c8a2579641c",
+      "result_id": "aee611d9-b7bb-478e-8a1b-f63002d6e478"
+    },
+    {
+      "claim_id": "2a318ef4-75ae-490f-af3f-0d6ae2e92de2",
+      "result_id": "aee611d9-b7bb-478e-8a1b-f63002d6e478"
+    },
+    {
+      "claim_id": "a42b029b-c55d-47f1-90c6-2ec09ea843fa",
+      "result_id": "aee611d9-b7bb-478e-8a1b-f63002d6e478"
+    },
+    {
+      "claim_id": "2c72680a-8a6d-42c4-9089-3ac820e8f553",
+      "result_id": "cb0493a0-5a55-4dcf-8a25-d18f9a894758"
+    },
+    {
+      "claim_id": "2006a56d-d9ba-4133-a568-72dbc4d111d5",
+      "result_id": "cb0493a0-5a55-4dcf-8a25-d18f9a894758"
+    },
+    {
+      "claim_id": "6b8097d2-2bb0-40ae-bc6e-23acef157140",
+      "result_id": "cb0493a0-5a55-4dcf-8a25-d18f9a894758"
+    },
+    {
+      "claim_id": "7913e6c8-523d-44e2-a40f-a9559c2980db",
+      "result_id": "cb0493a0-5a55-4dcf-8a25-d18f9a894758"
+    },
+    {
+      "claim_id": "f8281237-dead-44dd-96f1-fea94d5b48ab",
+      "result_id": "cb0493a0-5a55-4dcf-8a25-d18f9a894758"
+    },
+    {
+      "claim_id": "3e48736e-015e-4b43-8c70-05e4bf43b9b4",
+      "result_id": "cb0493a0-5a55-4dcf-8a25-d18f9a894758"
+    },
+    {
+      "claim_id": "421dbb8a-2155-46c4-a300-0ea925bced60",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "57d44eb0-bb60-4e3f-ad6f-b3131c8b3d09",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "e51305b6-0555-4846-80ca-25d2610bc8f5",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "362b1b18-d8e4-486e-84d5-3cceec473c3a",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "df241526-3546-4575-9ab9-1270a65c729f",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "d050fdd9-c5f0-4575-b66f-4c697877c734",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "a16d11b3-f6df-49e6-a1d2-0918516c3f48",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "afbee711-4a74-41a6-b74a-7028d0369308",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "7df69f2c-f066-403d-a66c-6357450de0bf",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "b12ab26b-afe6-4a9e-8c0b-5684a2351c42",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "56fde908-ce26-48a9-a3dc-160ac996ba7e",
+      "result_id": "a2981b80-84f3-45e0-9b08-0f3de151355d"
+    },
+    {
+      "claim_id": "e9c24662-b86d-4ab9-9e4d-75f68ba0010e",
+      "result_id": "b43acde2-9507-4e85-b560-cf9f2290ebe1"
+    },
+    {
+      "claim_id": "009e76ac-13c4-4baa-8578-c0ad03f09a5f",
+      "result_id": "b43acde2-9507-4e85-b560-cf9f2290ebe1"
+    },
+    {
+      "claim_id": "c0a3523d-16fa-45df-843b-39b3687865b9",
+      "result_id": "b43acde2-9507-4e85-b560-cf9f2290ebe1"
+    },
+    {
+      "claim_id": "feea8aa4-4a62-4477-a059-e0d2c2f3eb84",
+      "result_id": "b43acde2-9507-4e85-b560-cf9f2290ebe1"
+    },
+    {
+      "claim_id": "4e7068a9-7d31-494f-89c7-6f0fe52f2201",
+      "result_id": "b43acde2-9507-4e85-b560-cf9f2290ebe1"
+    },
+    {
+      "claim_id": "9219bfb1-c6be-497e-b3db-924ffa6a7404",
+      "result_id": "b43acde2-9507-4e85-b560-cf9f2290ebe1"
+    },
+    {
+      "claim_id": "5108538b-373e-4f31-901a-004d162b4f20",
+      "result_id": "b43acde2-9507-4e85-b560-cf9f2290ebe1"
+    },
+    {
+      "claim_id": "90c7821c-03e4-4cc8-b3ec-702dc9aeea2d",
+      "result_id": "c5283df2-7bd2-42e7-8952-a2dfccba8beb"
+    },
+    {
+      "claim_id": "4618e701-c3c8-4060-ac39-53b1143bcf88",
+      "result_id": "c5283df2-7bd2-42e7-8952-a2dfccba8beb"
+    },
+    {
+      "claim_id": "5ccf0b13-7eee-4fbd-bcf0-205d95d7f669",
+      "result_id": "c5283df2-7bd2-42e7-8952-a2dfccba8beb"
+    },
+    {
+      "claim_id": "efd9d6e0-ea98-4bc1-b7b4-f334dfac670d",
+      "result_id": "c5283df2-7bd2-42e7-8952-a2dfccba8beb"
+    },
+    {
+      "claim_id": "668a362f-96ff-43de-aad0-4cc1b99ab6de",
+      "result_id": "c5283df2-7bd2-42e7-8952-a2dfccba8beb"
+    },
+    {
+      "claim_id": "5047b947-c1f0-4052-a3a3-e8f23e5cca2a",
+      "result_id": "c5283df2-7bd2-42e7-8952-a2dfccba8beb"
+    },
+    {
+      "claim_id": "4623ceaf-a281-409c-a1fd-a20ea3edaadf",
+      "result_id": "c5283df2-7bd2-42e7-8952-a2dfccba8beb"
+    },
+    {
+      "claim_id": "c3957b4a-eab9-40fa-81f7-482ac4337c93",
+      "result_id": "c5283df2-7bd2-42e7-8952-a2dfccba8beb"
+    },
+    {
+      "claim_id": "f871785a-28b1-4937-a9fa-fc4c6a435c18",
+      "result_id": "2b231435-88d0-4e63-a043-babab3c7c4a7"
+    },
+    {
+      "claim_id": "3363f30c-65f3-4d7d-99c5-30970ef7c913",
+      "result_id": "2b231435-88d0-4e63-a043-babab3c7c4a7"
+    },
+    {
+      "claim_id": "92d9a17a-64a0-4586-8f80-1d463e6b01ac",
+      "result_id": "2b231435-88d0-4e63-a043-babab3c7c4a7"
+    },
+    {
+      "claim_id": "f6aac71a-2378-4b8e-86f0-cc299a321751",
+      "result_id": "b1a181f3-ba3d-4a32-bc09-60fb4bbdc175"
+    },
+    {
+      "claim_id": "6e7a08f3-da89-4b07-989d-edd4d77a5230",
+      "result_id": "b1a181f3-ba3d-4a32-bc09-60fb4bbdc175"
+    },
+    {
+      "claim_id": "18032e62-6301-49e8-a8b8-b3847599a1e2",
+      "result_id": "b1a181f3-ba3d-4a32-bc09-60fb4bbdc175"
+    },
+    {
+      "claim_id": "16d4bd98-df66-4980-80a2-59a2d74ae200",
+      "result_id": "b1a181f3-ba3d-4a32-bc09-60fb4bbdc175"
+    },
+    {
+      "claim_id": "c3badb09-c203-4aa9-9953-80ea068f97f5",
+      "result_id": "ffb4e3b3-0a39-41d8-a342-fad2fc8d9ca7"
+    },
+    {
+      "claim_id": "daea0505-b9e4-49d2-a850-111adf0e1adc",
+      "result_id": "ffb4e3b3-0a39-41d8-a342-fad2fc8d9ca7"
+    }
+  ],
+  "comparisons": []
+}

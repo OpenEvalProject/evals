@@ -1,0 +1,1985 @@
+{
+  "submission": {
+    "id": "a00f5d18-e9f9-4280-a50b-f36c78a01fab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:00:56.415542Z",
+    "updated_at": "2025-12-03T14:00:56.415542Z"
+  },
+  "content": [
+    {
+      "id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "submission_id": "a00f5d18-e9f9-4280-a50b-f36c78a01fab",
+      "content_type": "manuscript",
+      "content_text": "# Stable antibiotic resistance and rapid human adaptation in livestock-associated MRSA\n\n## Authors\n\n- Marta Matuszewska<sup>1</sup> ([ORCID: 0000-0002-2653-7725](https://orcid.org/0000-0002-2653-7725))\n- Gemma GR Murray<sup>1</sup> ([ORCID: 0000-0002-9531-1711](https://orcid.org/0000-0002-9531-1711)) \u2020\n- Xiaoliang Ba<sup>1</sup>\n- Rhiannon Wood<sup>1</sup>\n- Mark A Holmes<sup>1</sup>\n- Lucy A Weinert<sup>1</sup>\n\n### Affiliations\n\n1. Department of Veterinary Medicine, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMobile genetic elements (MGEs) are agents of horizontal gene transfer in bacteria, but can also be vertically inherited by daughter cells. Establishing the dynamics that led to contemporary patterns of MGEs in bacterial genomes is central to predicting the emergence and evolution of novel and resistant pathogens. Methicillin-resistant Staphylococcus aureus (MRSA) clonal-complex (CC) 398 is the dominant MRSA in European livestock and a growing cause of human infections. Previous studies have identified three categories of MGEs whose presence or absence distinguishes livestock-associated CC398 from a closely related and less antibiotic-resistant human-associated population. Here, we fully characterise the evolutionary dynamics of these MGEs using a collection of 1180 CC398 genomes, sampled from livestock and humans, over 27 years. We find that the emergence of livestock-associated CC398 coincided with the acquisition of a Tn916 transposon carrying a tetracycline resistance gene, which has been stably inherited for 57 years. This was followed by the acquisition of a type V SCCmec that carries methicillin, tetracycline, and heavy metal resistance genes, which has been maintained for 35 years, with occasional truncations and replacements with type IV SCCmec. In contrast, a class of prophages that carry a human immune evasion gene cluster and that are largely absent from livestock-associated CC398 have been repeatedly gained and lost in both human- and livestock-associated CC398. These contrasting dynamics mean that when livestock-associated MRSA is transmitted to humans, adaptation to the human host outpaces loss of antibiotic resistance. In addition, the stable inheritance of resistance-associated MGEs suggests that the impact of ongoing reductions in antibiotic and zinc oxide use in European farms on livestock-associated MRSA will be slow to be realised.\n\n## Introduction\n\nMobile genetic elements (MGEs) play an important role in the evolution of bacterial pathogens. They can move rapidly between bacterial genomes, but can also be vertically inherited through stable integration into a host genome. As MGEs often carry genes associated with virulence and antibiotic resistance (Frost et al., 2005; Rankin et al., 2011), an understanding of the drivers and barriers to their acquisition and maintenance is central to predicting the emergence and evolution of novel and resistant pathogens (Brockhurst et al., 2019).\n\nThe emergence and evolution of methicillin-resistant Staphylococcus aureus (MRSA) across different ecological niches and host species are associated with the horizontal transfer of MGEs. Methicillin resistance is carried by the staphylococcal cassette chromosome element SCCmec, and additional MGEs carry resistance to other antibiotics, virulence factors, and host-specific adaptations (Hanssen and Ericson Sollid, 2006; Jamrozy et al., 2017; Haag et al., 2019; Turner et al., 2019; Matuszewska et al., 2020). While most MRSA clonal complexes (CCs) show an association with specific MGEs, their dynamics are not widely understood, leading to a gap in our understanding of the adaptive potential of S. aureus CCs.\n\nIntensification combined with high levels of antibiotic use in farming has led to particular concerns about livestock as reservoirs of antibiotic-resistant human infections (World Health Organization, 2015). CC398 has become the dominant MRSA in European livestock. Its rise has been particularly evident in Danish pig farms where the proportion of MRSA-positive herds has increased from <5% in 2008 to 90% in 2018 (Sieber et al., 2018; DANMAP, 2019), but it has also been observed in other European countries, and other livestock species (Lekkerkerk et al., 2015; Islam et al., 2017; Anjum et al., 2019). Livestock-associated (LA) MRSA CC398 has been associated with increasing numbers of human infections, in both people with and without direct contact with livestock (Larsen et al., 2017; van Alen et al., 2017; Sieber et al., 2019). Understanding the emergence and success of CC398 in European livestock and its capacity to infect the human host is integral to managing the risk that it, and other livestock-associated pathogens, pose to public health.\n\nPrevious studies have used genome sequences to reconstruct the evolutionary history of CC398 (Price et al., 2012; Ward et al., 2014; Gon\u00e7alves da Silva et al., 2017). They identified a largely methicillin-resistant and livestock-associated clade of CC398, that falls as either sister to Ward et al., 2014 or within (Price et al., 2012; Gon\u00e7alves da Silva et al., 2017) a largely methicillin-sensitive and human-associated clade. Through comparing the genomes of isolates from livestock- and human-associated CC398, these studies concluded that the emergence of CC398 in livestock was associated with both the acquisition of antibiotic resistance genes and the loss of genes associated with human immune evasion. While these genes are known to be carried on three categories of MGEs (Tn916 conjugative transposons, SCCmec, and \u03c6Sa3 prophages), little is known about the dynamics of these MGEs within CC398. Here, we undertake a comprehensive reconstruction of the evolutionary dynamics of these MGEs. We find that while their patterns of presence/absence all show a strong association with the transition to livestock, this is the result of contrasting dynamics. These dynamics can inform predictions about the risk posed by LA-MRSA spillover infections in humans, and the resilience of antibiotic resistance in LA-MRSA to ongoing changes in antibiotic use in farming.\n\n## Results\n\n### Livestock-associated CC398 emerged between 1957 and 1970\n\nWe collected and assembled publicly available whole-genome sequence data from CC398, and sequenced five isolates recently sampled from pig farms in the United Kingdom. Our collection includes high-quality whole genome assemblies of 1180 isolates (including 43 complete reference genomes). This collection spans 15 host species (including humans, pigs, cows, chickens, turkeys, and horses), 28 countries (across Europe, America, Asia, and Australasia), and 27 years (1992\u20132018) (Figure 1\u2014figure supplement 1 and Supplementary file 1).\n\nWe constructed a recombination-stripped maximum likelihood phylogeny of CC398 using reference-mapped assemblies of our collection. We rooted the phylogeny with outgroups from four other S. aureus sequence types (STs) in four separate reconstructions. We also constructed a phylogeny from a recombination-stripped concatenated alignment of core genes extracted from de novo assemblies, with a midpoint rooting. These reconstructions consistently returned the same topology, and one that is described in previous studies: a livestock-associated clade of CC398 (704 isolates) that falls within a more diverse, and other largely human-associated clade (476 isolates) (Figure 1a and Figure 1\u2014figure supplement 2; Price et al., 2012; Gon\u00e7alves da Silva et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig1-v1.jpg)\n\n**Figure 1.:** (a) A maximum likelihood phylogeny of 1180 isolates of CC398, rooted using an outgroup from ST291. Grey shading indicates the livestock-associated clade. Outer rings describe (1) the host groups isolates were sampled from, and the presence of three MGEs: (2) a Tn916 transposon carrying tetM, (3) a SCCmec carrying mecA, and (4) a \u03c6Sa3 prophage carrying a human immune evasion gene cluster. (b) A dated phylogeny of a sample of 250 CC398 isolates that shows livestock-associated CC398 originated around 1964 (95% HPD: 1957\u20131970).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Phylogeny of CC398 with rings showing the host species and countries of origin for each isolate (groups with n < 10 not shown). The blue outline indicates the livestock-associated clade, and the red outline indicates the five most recent isolates in our collection (sampled in 2018), from pigs on UK farms. (b), (c), and (d) show the variation in sampling date, host species, and country across the livestock-associated (blue, lower) and human-associated (red, upper) clades.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** We constructed maximum likelihood phylogenies using a reference-mapped alignment of CC398 combined with four outgroups from sequence types (STs) 291, 30, 97, and 5; and using a core genome alignment of our de novo assemblies and a midpoint rooting. The outgroups we used covered a range of distances from the base of CC398: ST291 (ERR2729529) is ~0.005 subs/site, ST30 (ERS1420125) is ~0.012 subs/site, and ST97 and ST5 (ERR2729579 and SRS613151) are ~0.015 subs/site. The reference-mapped phylogenies that were rooted using ST291, ST30, and ST97, and the midpoint-rooted core genome phylogeny all showed a consistent root, which is shown in the figure (and indicated by 1). A different root was obtained when we used the outgroup of ST5 (location indicated by 2). This root is on a neighbouring branch to the root found in the four other reconstructions, and results in CC398 being rooted on the branch leading to a single isolate (ZTA09_03734_9HSA). Livestock-associated CC398 is indicated by a blue box with grey shading.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Results of BEAST dating analyses estimating (A) the origin of a shallower subclade within the livestock-associated clade, (B) the origin of the entire livestock-associated clade, and (C) the origin of CC398. (a) The figure shows a schematic representation of the CC398 phylogeny indicating the nodes of interest (A\u2013C), and our sampling strategy. We randomly sampled our dataset three times to generate samples of 250 isolates (200 from the livestock-associated clade and 50 from the human-associated clade). Samples overlapped by only 30 isolates that represent the most divergent lineages of the livestock-associated clade, to ensure a consistent description of the most recent common ancestor. Each sample had the same range of sampling dates (1993\u20132018). (a) also describes the results of a regression of root-to-tip distance against sampling date (correlation coefficient and estimate of the date of the most recent common ancestor) for each sample (1\u20133), and subsamples that include isolates from (A) only the main livestock-associated clade, (B) only the livestock-associated clade, and (C) the entire sample. As we observed stronger temporal signal for A and B, than for C, we estimated dated trees using BEAST for each of these nine subsampled datasets. We observed consistent estimates of evolutionary rate across all these analyses (b). Rates at first/second codon positions are shown as circular points, and at third codon positions as square points. These analyses also returned broadly consistent estimates of dates (c). Although we found that estimates from subsamples that included outgroups of the node being dated returned more precise and marginally more recent estimates of age, likely due to more information about the location of the root.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Regressions of root-to-tip distance against sampling date for each of our datasets, rooted to minimise residual mean squares. (a)-(c) show the results for samples 1, 2, and 3 for clade a (described in Figure 1\u2014figure supplement 3), (d)-(f) the results for samples 1, 2, and 3 for clade b, and (g)-(i) samples 1, 2, and 3 for clade c. For all datasets a randomisation test indicated that these correlations were unlikely to have arisen by change (p < 0.01). Correlation coefficients (r) and estimates of the time of the most recent common ancestor (tMRCA) based on the regression are shown for each dataset.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) A plot of the first and second principal components of accessory genome content, with isolates from human-associated CC398 in red and isolates from livestock-associated CC398 in blue. This was constructed using the package adegenet in R (Jombart, 2008). (b) Comparison of gene frequencies across the human- and livestock-associated groups. Genes present in <20% of human-associated CC398 and >80% of livestock-associated CC398 and genes presence in >80% of human-associated CC398 and <20% livestock-associated CC398 are highlighted, with genes associated with the Tn916 transposon shown in purple (all are overlapping as they have identical frequencies), genes associated with SCCmec shown in turquoise, and genes associated with \u03c6Sa3 prophages shown in blue. The one gene that distinguishes livestock-associated CC398 from human-associated CC398 that is not associated with one of these three mobile genetic elements (MGEs) is shown as a red circle (tatC).\n\nWe used the temporal structure in our collection to date the origin of the livestock-associated clade. Due to the size of our collection, we constructed dated phylogenies from three subsampled datasets, each of which includes 250 isolates. Our estimates of the evolutionary rate were consistent across all reconstructions (1.1\u20131.6 \u00d7 10\u22126 subs/site/year), and similar to estimates from previous studies of CC398 (Ward et al., 2014) and other S. aureus CCs (Hsu et al., 2015). This led to an estimate of the origin of the livestock-associated clade of approximately 1964 (95% CI: 1957\u20131970) (Figure 1b, Figure 1\u2014figure supplement 3, and Figure 1\u2014figure supplement 4).\n\n### The transition to livestock association is associated with changes in the frequencies of three MGEs with very different dynamics\n\nComparisons of the genomes of isolates from human- and livestock-associated CC398 have previously indicated that the transition to livestock was associated with the acquisition of genes associated with both tetracycline and methicillin resistance (tetM and mecA), and the loss of genes associated with human immune evasion (the immune evasion gene cluster) (Price et al., 2012). Our analyses of this larger collection are broadly consistent with this. We find that the genes whose presence most strongly distinguishes isolates from the human- and livestock-associated groups are associated with three categories of MGEs: (1) a Tn916 transposon carrying tetM, (2) SCCmec carrying mecA, and (3) \u03c6Sa3 prophages carrying a human immune evasion gene cluster (Figure 1a, Figure 1\u2014figure supplement 5, and Supplementary file 2). Genes associated with the Tn916 transposon and SCCmec elements are more common in the livestock-associated clade, while the reverse is true of genes associated with \u03c6Sa3 prophages.\n\n#### Stable maintenance of a Tn916 transposon carrying tetM\n\nWe identified a contiguous assembly of a Tn916 transposon carrying tetM in 699/704 isolates in our collection of livestock-associated CC398 (Figure 2a, Supplementary files 3 and 4; de Vries et al., 2009; Roberts and Mullany, 2009). Several lines of evidence indicate that the presence of the Tn916 transposon in livestock-associated CC398 is the result of a single acquisition event, followed by stable inheritance. First, the location of the transposon in the genome of livestock-associated CC398 is conserved (Tn916 is always found next to the same core gene; WP_000902814 in the published annotation of S0385). Second, an alignment of the coding regions of this element (extracted from de novo assemblies) shows a similar average nucleotide diversity to core genes (Figure 2d). Third, a phylogeny constructed from the genes in this element is entirely congruent with the phylogeny of livestock-associated CC398 (Figure 2b, c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig2-v1.jpg)\n\n**Figure 2.:** (a) A gene map of the Tn916 transposon in CC398 (based on reference genome 1_1439), with annotations based on previous studies (de Vries et al., 2009; Roberts and Mullany, 2009). (b) A minimum-spanning tree of the element based on a concatenated alignment of all genes shown in (a). Points represent groups of identical elements, with point size correlated with number of elements on a log scale, and colours representing well-supported clades (>70 bootstrap support in a maximum likelihood phylogeny) that include >10 elements (smaller clades are incorporated into their basal clade). (c) These clades are annotated onto the CC398 phylogeny as an external ring. (d) Mean pairwise nucleotide distance between isolates carrying the Tn916 transposon based on genes in the Tn916 transposon and core genes, using bootstrapping to estimate error (see Materials and methods for details).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Purple points indicate which five isolates lack the Tn916 transposon in the livestock-associated clade. (b) Top: a gene map showing the Tn916 transposon from the 1_1429 reference strain and the two flanking genes (dark grey). Bottom: the integration site in the 62,951 strain within which the transposon is absent. The percentage nucleotide identity between the two flanking genes is indicated below the bars connecting the top and bottom gene maps.\n\nOur analyses indicate that the Tn916 transposon has been maintained in livestock-associated CC398 since its origin, and therefore for around 57 years (Figure 1b). Nevertheless, its absence from 5/704 livestock-associated CC398 isolates in our collection suggests that it remains capable of excision (this is consistent with experimental studies that have shown that Tn916 in CC398 is a functional conjugative transposon; de Vries et al., 2009). None of the genes associated with this element are present in these five isolates, and in two we were able to identify an intact integration site in the assembled genome (Figure 2\u2014figure supplement 1). These five isolates are broadly distributed across the livestock-associated clade, and not linked to a particular host species or geographic location.\n\n#### More variable maintenance of a SCCmec carrying mecA, tetK, and czrC\n\nPrevious studies suggest that LA-MRSA CC398 emerged from human-associated methicillin-sensitive S. aureus (MSSA) (Price et al., 2012). However, the presence of SCCmec elements in recently sampled human-associated CC398 isolates that fall basal to the livestock-associated clade, including clinical isolates from China (He et al., 2018; Zou et al., 2022), Denmark (Moller et al., 2019), and New Zealand (Gon\u00e7alves da Silva et al., 2017), makes the association between methicillin resistance and livestock association less clear (Figure 1a).\n\nSCCmec elements in S. aureus are categorised into several types (Hanssen and Ericson Sollid, 2006). Consistent with previous studies of CC398 (e.g. Price et al., 2012), we observe both type V (76%) and type IV (21%) in CC398 (we were unable to confidently type the remaining 3%; Figure 3c, Figure 3\u2014figure supplement 1, and Supplementary files 3 and 5). Most of the type V SCCmec elements belong to the subtype Vc previously described in livestock-associated CC398 (Li et al., 2011; Price et al., 2012; Vandendriessche et al., 2014). This element includes two additional resistance genes: tetK (tetracycline resistance) and czrC (heavy metal resistance) (Figure 3a and Supplementary file 6). We identified a full-length version of this element in 335 genomes (including some of the most recent isolates in our collection, sampled from UK pig farms in 2018) and shorter type V elements in 204 genomes. Full-length versions are only observed in the livestock-associated clade, while shorter versions are found in both livestock- and human-associated groups of CC398. Shorter versions often lacked tetK (n = 90) and czrC (n = 117) genes (Figure 3\u2014figure supplement 2). Type IV elements are only observed in the livestock-associated clade. They include subtypes IVa and IVc, and all only carry a single resistance gene: mecA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig3-v1.jpg)\n\n**Figure 3.:** (a) A gene map of the type Vc SCCmec element in CC398 (using the 1_1439 reference strain), with annotations from previous studies (Li et al., 2011; Vandendriessche et al., 2014). Genes in white were excluded from analyses of diversity within the element due to difficulties in distinguishing homologues. (b) A minimum-spanning tree of the type Vc SCCmec element based on a concatenated alignment of the genes (grey and red) in (a). Points represent groups of identical elements, point size correlates with group size on a log scale, and colours represent well-supported clades (>70 bootstrap support in a maximum likelihood phylogeny). (c) Well-supported clades and SCCmec type are annotated on the CC398 phylogeny in external rings. (d) Mean pairwise nucleotide distance between isolates carrying the SCCmec type Vc based on genes in the SCCmec type Vc and core genes, with error estimated by bootstrapping (see Materials and methods for details). (e) Acquisition dates for different SCCmec elements and Tn916 inferred from an ancestral state reconstruction over the dated phylogeny in 1 (b). Dates for type Vc are shown for both livestock- and human-associated CC398.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Initial identification of SCCmec types was carried out by BLASTn search of all SCCmec reference sequences on the SCCmecFinder extended database. As the SCCmec element in our dataset was commonly separated onto multiple contigs, we found that contiguous hits of the entire element were rare. Therefore, to determine the presence of a particular SCCmec type we considered the combined length of high-identity hits (hits that have >95% nucleotide identity and are \u22655% of the length of the element). We categorised elements into SCCmec types based on the overall length of the matched region, and described strains with best match lengths of <50% as unknown. The CC398 phylogeny is annotated with the results of this analysis. The innermost ring shows the presence/absence of mecA, and outer rings show the percentage length match for each type/sub-type (Table S7).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Of the 540 isolates that carry a type V SCCmec in CC398, 204 have >2 genes absent. There are 3 common forms of gene absence (B, C and D). (a) Gene maps showing common patterns of gene absence. (b) A minimum spanning tree of a concatenated alignment of the 40 genes associated with the full-length SCCmec type V. Points represent groups of elements that differ by a maximum of 1 SNP, with point size correlated with group size on a log-scale, and colours representing categories described in (a). (c) Annotation of the full-length and truncated categories onto the core genome phylogeny. (d) Histograms showing pairwise distances (per shared nucleotide site) between individual elements in each group and the least divergent member of Group A. Histograms are shown on a log(x+1) scale due to the high frequency of low divergence elements. The dashed vertical lines show the average pairwise distance between isolates within the livestock-associated clade based on a core gene alignment, and the dotted lines show 10-times this value. Groups A, B and C are only found in the livestock-associated clade. Due to the low level of diversity in group D, versions from the human-associated and livestock-associated clade are shown together, while for group E they are shown separately (HA/LA). There are 13 isolates from the human-associated clade in group E. Of these 13 isolates, only 3 show sufficiently low divergence to be consistent with a recent common ancestor with the majority of elements from Group A, within CC398 (for these three elements divergence is <1.7 x10-4 /site). The three isolates carrying these elements all fall within the recent Danish hospital outbreak clade, and show 100% identity with the majority of the elements within this clade (that fall within group D).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) An minimum-spanning tree based on a concatenated alignment of the 12 genes shared across all type IV SCCmec (n=148 isolates). Clades are distinguished based on nucleotide distances within these shared genes and by differences in the genes present in these elements. Clade A is IVa(1), Clade B is IVc, Clade C is IVa(2), and Clade D is IVa(3). IVa(2) and IVa(3) only differ by one SNP in the alignment of 12 shared genes, but they have different gene contents, suggesting divergent origins. (b) Clades of type IV elements mapped onto the core genome phylogeny.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Date estimates based on ancestral state reconstructions with BEAST over dated phylogenies inferred from three subsampled data sets. (A) A dated phylogeny inferred from one subsample (no. 1) with branches coloured by inferred SCCmec element at their descendent node (>95% posterior support), and earliest nodes (>95% posterior support) for each element labelled. (B) Date estimates for the earliest nodes at which each SCCmec type is inferred to be present (>95% posterior support) across the three data sets. Points are median values and bars are 95% confidence intervals. Estimates are shown for three versions of SCCmec type IVa that were distinguished based on the divergence within this element (see Figure 3\u2014figure supplement 3). Only one estimate is provided for SCCmec-IVa(3) because it is only observed in one of the subsampled data sets.\n\nWhile type Vc is the most common SCCmec in our collection of livestock-associated CC398, this largely reflects isolates from pigs. Type Vc SCCmec is much more common in pigs (77% of isolates; n = 286) than type IV SCCmec (7% of isolates). In cows (n = 74), the difference is reduced: 45% are type Vc and 32% are type IV. And in isolates from other animal species (n = 94) type IV elements (55%) are more common than type Vc (33%).\n\nDiversity within the type Vc SCCmec element indicates that a full-length type Vc SCCmec was acquired once by livestock-associated CC398, and has been maintained within CC398 largely through vertical transmission. First, low nucleotide diversity within full-length versions of the element is consistent with 329/335 sharing a recent origin common within livestock-associated CC398 (Figure 3d). Second, patterns of diversity are largely congruent with the core genome phylogeny, consistent with vertical inheritance (Figure 3b, c). Third, low nucleotide diversity within genes shared across full- and shorter-length versions of the element are consistent with most shorter-length versions being the result of deletion within livestock-associated CC398 (Figure 3\u2014figure supplement 2). In contrast, diversity in the type IV elements in livestock-associated CC398 supports four independent acquisitions from outside of CC398 (Figure 3\u2014figure supplement 3). Similar to the type Vc element, once acquired, these elements tend to be maintained.\n\nWhile the SCCmec elements carried by human-associated CC398 are always type V, 70/80 fall within a single clade from a hospital outbreak in Denmark in 2016 (Moller et al., 2019). They show a truncation relative to the full-length type Vc that is also observed in three isolates from livestock-associated CC398 (leading to the absence of czrC, Figure 3\u2014figure supplement 2). Pairwise nucleotide distances between these 70 human-associated CC398 elements and the full-length type Vc in livestock-associated CC398 are consistent with a recent common ancestor within CC398. In contrast, nucleotide diversity within the other 10 type V SCCmec in human-associated CC398 and distances from the livestock-associated CC398 type Vc indicate multiple independent acquisitions from outside of CC398 (Figure 3\u2014figure supplement 2).\n\nUsing our dated phylogeny of CC398 and categorisation of SCCmec based on diversity within the elements, we inferred the dynamics of gain and loss within CC398 (Figure 3e and Figure 3\u2014figure supplement 4). These reconstructions consistently estimated that the type Vc SCCmec had been acquired by livestock-associated CC398 by around 1986 (95% CI: 1982\u20131990), and has therefore been maintained within livestock-associated CC398 for around 35 years. While the diversity within this element indicates a single acquisition by CC398, these reconstructions indicate multiple gains, likely reflecting horizontal transmission within CC398. They also indicate that the acquisition by livestock-associated CC398 predated the acquisition by human-associated CC398, consistent with transmission from livestock-associated CC398 to human-associated CC398. In contrast, type IV elements show evidence of several more recent acquisitions in relatively quick succession between 1997 and 2004 (Figure 3e and Figure 3\u2014figure supplement 4).\n\nTogether, our analyses are consistent with LA-MRSA emerging from human-associated MSSA and acquiring the type Vc SCCmec element following its initial diversification. The element has been stably maintained (particularly in pigs), although with several exceptions \u2013 including deletions of parts of the element and replacements with smaller type IV SCCmec.\n\n#### Loss of a \u03c6Sa3 prophage carrying a human immune evasion gene cluster, but with frequent reacquisition\n\nIn contrast to the maintenance of Tn916 and SCCmec type V in the livestock-associated clade, the \u03c6Sa3 prophage is highly dynamic. \u03c6Sa3 prophages carry human immune evasion gene clusters that include a variable set of functional genes that encode human-specific virulence factors, including sak, chp, scn, sea, and sep (Gladysheva et al., 2003; Postma et al., 2004; Rooijakkers et al., 2005; van Wamel et al., 2006; Thammavongsa et al., 2015; van Alen et al., 2018). They are temperate prophages that primarily integrate into the hlb gene of S. aureus. While \u03c6Sa3 prophages are present in 88% of the human-associated CC398 isolates in our collection, we find that this is not a consequence of a stable association between CC398 and one prophage. Nucleotide diversity within genes shared across \u03c6Sa3 prophages (Figure 4 and Supplementary file 3) suggest at least seven (but likely more) acquisitions of an \u03c6Sa3 prophage into human-associated CC398 from outside of CC398. The set of functional genes carried by these elements indicate that the elements within human-associated CC398 include types C (n = 285), B (n = 111), E (n = 35), A (n = 4), and D (n = 4), and those carried by livestock-associated CC398 isolates include types B (n = 84), E (n = 8), and A (n = 5) (van Wamel et al., 2006; van Alen et al., 2018).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig4-v1.jpg)\n\n**Figure 4.:** (a) A maximum likelihood phylogeny based on 12 genes shared across the \u03c6Sa3 prophages in our collection, with both low-support nodes (<70% bootstrap support) and branches <0.0018 subs/site collapsed. The latter cut-off is a conservative estimate of the maximum distance that could reflect divergence within CC398. It is the maximum pairwise distance between isolates carrying \u03c6Sa3 prophages across 1000 estimates from random samples of a core gene alignment of the same number of sites as is in our \u03c6Sa3 prophage alignment. Node size correlates with the number of elements on a log scale. Elements carried by isolates from human-associated CC398 (grey) and livestock-associated CC398 (white) isolates are indicated, and nodes that include multiple elements labelled (A\u2013E). (b) These clades annotated on the CC398 phylogeny as an external ring. The element carried by the poultry-associated subclade of livestock-associated CC398 is indicated by *.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) A minimum-spanning tree of the type B \u03c6Sa3 prophage present in the poultry-associated clade of livestock-associated CC398. Fifty-five isolates in our collection of CC398 carry a version of this element. We identified 34 genes shared across these 55 versions of the element. After pruning genes with homologues, and difficult to align regions 29/34 genes were used to construct the tree. Points represent groups of identical elements, with point size correlated with group size on a log scale, and colours representing clades that differ from the basal group by >1 SNP. (b) These clades annotated onto the CC398 phylogeny as an external ring. 51/55 isolates carrying this element fall within the poultry-associated clade and four other isolates are from other clades within livestock-associated CC398 from human hosts. Within the avian clade we see little diversity (maximum pairwise distance is 1 SNP). The elements from outside of this clade show greater divergence, but this could still represent divergence within livestock-associated CC398.\n\nWhile \u03c6Sa3 prophages are rare in livestock-associated CC398 (68/704 isolates), diversity within these elements indicate at least 15 (but likely more) acquisitions of these MGEs by livestock-associated CC398. The majority of these elements (69%) do not share a recent common ancestor with those in human-associated CC398. \u03c6Sa3 prophages present in livestock-associated CC398 generally show evidence of recent acquisition, with a notable exception being a previously described poultry-associated subclade (n = 51) (Price et al., 2012; Larsen et al., 2016b; P\u00e9rez-Moreno et al., 2017; Tang et al., 2017). In our collection, 39% of the isolates in this clade are from poultry (compared to 4% across the rest of the livestock-associated clade). Low nucleotide diversity within the type B \u03c6Sa3 consistently present in isolates within this clade suggests that it has been maintained since its acquisition approximately 21 years ago (95% CI: 1997\u20132001; Figure 1b and Figure 4\u2014figure supplement 1).\n\n### Distinct route to multi-drug resistance in livestock-associated CC398\n\nLivestock-associated CC398 is frequently multi-drug resistant. We see evidence of this in our dataset where 81% of livestock-associated CC398 isolates carry one or more resistance genes for antibiotic classes other than tetracyclines and \u03b2-lactams (Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2, and Supplementary file 7). Sixty-seven percent of livestock-associated CC398 isolates have genes associated with trimethoprim resistance (dfrA, dfrK, or dfrG), 42% have genes associated with macrolide resistance (ermA, ermB, ermC, or ermT), and 26% have genes associated with aminoglycoside resistance (aadA, aphA, or aphD). Not only are resistance genes less common in human-associated CC398 (only 20% of isolates carry tetracycline resistance genes, and 9% carry trimethoprim resistance genes), they also differ in their relative frequencies. In particular, human-associated CC398 isolates more commonly carry genes associated with macrolide resistance (91%).\n\n### Spillover of livestock-associated CC398 into humans is associated with the acquisition of \u03c6Sa3 prophages, but not a loss of resistance genes\n\n\u03c6Sa3 prophages are more common in human isolates (23%) than in livestock or companion animal isolates (11%) in our collection of livestock-associated CC398. To determine the significance of this association, we identified 70 phylogenetically independent clades that include isolates from both human and livestock or companion animal hosts (Figure 5\u2014figure supplement 3). Comparisons across these groups revealed that isolates from humans are consistently more likely to carry an \u03c6Sa3 prophage (McNemar\u2019s chi-squared test: p = 1.50 \u00d7 10\u22123; Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig5-v1.jpg)\n\n**Figure 5.:** Seventy phylogenetically independent clades that include isolates from both humans and other species were identified within the livestock-associated clade. The plot shows the frequency with which these genes were identified within isolates from humans (right, empty bars) and non-human species (left, filled bars) in these groups. An asterisk indicates a significant difference based on McNemar\u2019s chi-squared test (p = 1.50 \u00d7 10\u22123). No resistance genes differed significantly in their frequency across the human and non-human hosts (p > 0.1). The scn gene is always present in the human immune evasion cluster carried by \u03c6Sa3 prophages, and therefore represents the presence of this element.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Variation in presence of antibiotic resistance genes across CC398 mapped onto the core genome phylogeny. All genes that are present above a threshold of 5% are represented, with colours representing different antibiotic classes.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Comparison of the frequencies of resistance genes across clades, with the livestock-associated group shown in the filled bar on the left and the human-associated group the empty bar on the right. (b) Comparison of only isolates carrying mecA from the two groups. (c and d) Venn diagrams that show the relationship between the presence of genes associated with different antibiotic classes in methicillin-resistant Staphylococcus aureus (MRSA) isolates from both groups.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74819/elife-74819-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The phylogeny is a maximum likelihood phylogeny of the livestock-associated clade, rooted using human-associated CC398, with nodes with <70% bootstrap support collapsed. Seventy well-supported independent clades that contain both isolates from human and livestock/companion animal hosts were identified across the livestock-associated clade, and were used to test for differences in the frequency of genes associated with both antibiotic resistance and adaptation to the human host across these two groups. The small number of isolates from wild or domestic animals (other than livestock and horses) was excluded from the analysis.\n\n\u03c6Sa3 prophages are also less common in isolates from pigs than from other non-human species (only 3% of pig isolates carry one). In 42/70 of our phylogenetically independent groups, the only non-human species was a pig, and none of the pig isolates from these groups carried an \u03c6Sa3 prophage (while 14% of the human isolates did). In the remaining 28 groups (that included isolates from cows, horses, and poultry), \u03c6Sa3 prophages were observed in non-human hosts in 17% of groups, but still at a higher frequency in humans (39% of groups) (McNemar\u2019s chi-squared test: p = 0.04).\n\nIn contrast, we found no evidence that the spillover of livestock-associated CC398 into humans is associated with the loss (or gain) of individual antibiotic resistance genes (Figure 5). This contrasts with the conclusions of a previous study that suggested that the resistance genes carried by livestock-associated CC398 are likely to be lost in human hosts (Sieber et al., 2019). We find that no resistance gene was significantly more or less common in humans than in livestock species (McNemar\u2019s chi-squared tests: p > 0.1), nor was there a consistent shift in the overall number of resistance genes (there were more resistance genes in isolates from human hosts in 22/70 pairs and more in livestock hosts in 34/70 pairs).\n\n## Discussion\n\nWe have characterised the evolutionary dynamics of the three classes of MGEs that show the greatest changes in frequency across human- and livestock-associated CC398: the Tn916 transposon and the SCCmec element, which are both common in livestock-associated CC398, and the \u03c6Sa3 prophage, which is common in human-associated CC398. Despite a consistency in the relative frequencies of these elements across CC398, leading to their strong association with the transition to livestock, these three elements show a broad spectrum of dynamics. The Tn916 transposon carrying tetM shows evidence of stable and consistent vertical transmission in livestock-associated CC398 and absence from human-associated CC398. The type Vc SCCmec, carrying not only mecA, but also tetK and czrC, has also been stably maintained by several lineages of livestock-associated CC398, but by a combination of vertical and horizontal transmission, and with occasional replacement with type IV elements. While type V SCCmec elements are also present in human-associated CC398, there is little evidence of their longer-term maintenance. Finally, while \u03c6Sa3 prophages carrying a human immune evasion gene cluster are rare in livestock-associated CC398 and common in human-associated CC398, there have been frequent gains and losses in both groups. These contrasting dynamics may reflect variation in the selective benefits and costs of the carriage of these MGEs by CC398, their availability in the environments encountered by CC398, and their mechanisms of transfer.\n\nThe three classes of MGEs whose dynamics we describe all employ different mechanisms of horizontal transfer, and this may both influence their intrinsic stability in the CC398 genome and their availability for acquisition from outside of CC398. Experimental studies have found that different types of MGEs vary in their rates of transfer between bacterial cells. In particular, in vitro rates of transfer of phage have been found to be several orders of magnitude higher than of transposons (Humphrey et al., 2021). A 16-day in vivo study of MGE dynamics for two strains of CC398 also observed variation in the mobility of MGEs: the Tn916 transposon, the type V SCCmec and an \u03c6Sa3 prophage were all stably maintained and not horizontally transferred, while other prophages and plasmids were both gained and lost by daughter cells (McCarthy et al., 2014). While variation in the intrinsic stability of MGEs in their host will influence their long-term dynamics, other factors may dominate. For instance, the long-term stability of Tn916 within CC398 could emerge from a broad spectrum of short-term dynamics. It could result from a very low rate of loss, or frequent loss combined with a high selective cost of loss and a low probability of reacquisition from sources other than very closely related cells. Therefore, the long-term dynamics we describe provide a unique insight into the relationship between these MGEs and CC398.\n\nWe find that a Tn916 transposon that carries tetM was acquired once by CC398 and this coincided with its origin in European livestock in 1964 (95% CI: 1957\u20131970). Our observation of the loss of Tn916 on terminal branches of the phylogeny suggests that while losses do occur, lineages that lose Tn916 are either rapidly outcompeted by those that have maintained it, or they rapidly reacquire it from close relatives. Antibiotics, including tetracyclines, were first licensed for use as growth promoters in livestock in European countries in the 1950s, and were in common use by the end of that decade (Lowbury, 1958). While the use of antibiotics as growth promoters was banned by the European Union in 2006, tetracyclines remain the most commonly used antimicrobial class in livestock farming (World Health Organization, 2015; DANMAP, 2019). Carriage of Tn916 is therefore likely to have been associated with a strong selective benefit for livestock-associated CC398 ever since its emergence. However, as CC398\u2019s exposure to tetracyclines will be intermittent, the long-term stability of Tn916 is also likely to reflect a low selective cost in the absence of treatment or a barrier to reacquisition following loss. Tn916-like elements are found across several bacterial genera (Clewell et al., 1995; Roberts and Mullany, 2009), including other opportunistic pathogens in the respiratory microbiome of pigs (Holden et al., 2009; Hoa et al., 2011) and other S. aureus CCs (de Vries et al., 2009). This suggests that the stability of Tn916 in CC398 is not due to the rarity of the element in the environments encountered by CC398, however it may be due to other barriers to successful transfer.\n\nPrevious studies have found evidence that the regulatory system of Tn916 promotes its maintenance in a host through ensuring both that excision only occurs in the presence of tetracycline (or other transcription-limiting cell stress) and that any selective burden in the absence of treatment is minimised (Roberts and Mullany, 2009). Nevertheless, Tn916 has been found to have a much more dynamic association with lineages of other bacterial species (e.g. Streptococcus pneumoniae [D\u2019Aeth et al., 2021]). The fitness costs of MGEs can be host (and even insertion locus) specific and can also be mitigated over time (Starikova et al., 2013; Dur\u00e3o et al., 2018), and therefore the stability of Tn916 in livestock-associated CC398 might reflect a low cost that is specific to this lineage. A combination of high selective benefit, low selective cost and inaccessibility for reacquisition following loss could explain the remarkable stability of Tn916 in livestock-associated CC398, and may in part explain the success of this lineage in livestock.\n\nOur results indicate that the acquisition of an SCCmec occurred later in the expansion of livestock-associated CC398. The most common SCCmec in livestock-associated CC398, type Vc, carries tetK and czrC in addition to mecA. These additional resistance genes might be highly advantageous in livestock, and particularly in pigs. While all livestock-associated CC398 carry tetM, there is evidence that carrying tetK in addition to tetM is associated with increased fitness during exposure to sublethal concentrations of tetracycline (Larsen et al., 2016a). czrC is associated with heavy metal resistance (Cavaco et al., 2010), which is likely to be beneficial in the context of the common supplementation of animal feed with zinc oxide, which in pigs is commonly used to prevent diarrhoea in weaners (Nielsen et al., 2021). Additionally, mecA is likely to be beneficial because of the common use of \u03b2-lactams in livestock farming, including third generation cephalosporins (Sj\u00f6lund et al., 2016; Lekagul et al., 2019). The size of the type Vc element, combined with the replacements and truncations we observe suggests that it may come with a selective cost. In addition, SCCmec type Vc appears to be rare (at least in S. aureus). The element has been found in other staphylococci (S. cohhii in Vervet Monkeys [Hoefer et al., 2021]), but has not been reported in other S. aureus CCs.\n\nLoss of the type Vc SCCmec on internal branches within livestock-associated CC398 is associated with replacement with a type IV SCCmec that only carries mecA. While we find evidence of only a single acquisition of the type Vc SCCmec by livestock-associated CC398, we find evidence of at least four acquisitions of type IV SCCmec. The more recent dates of acquisition, and an apparent association with livestock species other than pigs, might reflect a difference in selective pressures across different livestock species, or a loss of the type Vc element during transmission between livestock populations. The long-term maintenance of the type Vc SCCmec is consistent with a high selective benefit (particularly in pigs where this element is most common). However, its repeated loss and replacement with type IV elements are consistent with a low cost of this replacement, at least in certain contexts (perhaps in other livestock hosts), and might also reflect the rarity of the type V element relative to the type IV.\n\nWhile the loss of the \u03c6Sa3 prophage that carries a human immune-evasion gene cluster is associated with the transition to livestock, neither the loss nor the gain of these elements is likely to be a substantial hurdle for the adaptation of CC398 to human or non-human hosts. Their ubiquity in human-associated CC398 and frequent acquisition following transmission of livestock-associated CC398 to humans (consistent with Sieber et al., 2019), is consistent with a strong benefit in the human host (Rohmer and Wolz, 2021). On the other hand, as we find that these elements are frequently lost and generally absent in other host species, these elements may carry a selective burden outside of the human host. The diversity of \u03c6Sa3 prophages in CC398 suggests they form a large pool of elements within human hosts (van Alen et al., 2018), likely reflecting their ubiquity in human carriage populations of S. aureus (Rohmer and Wolz, 2021) and capacity to transfer between S. aureus lineages.\n\nWe observe one clear exception to the pattern of recent acquisitions of \u03c6Sa3 in livestock-associated CC398 in response to spillover events: the acquisition of an \u03c6Sa3 prophage at the base of a poultry-associated subclade of livestock-associated CC398 (Price et al., 2012; Larsen et al., 2016b; P\u00e9rez-Moreno et al., 2017; Tang et al., 2017). This clade was first described as a hybrid LA-MRSA CC9/CC398 lineage (Price et al., 2012), and was subsequently investigated as a lineage associated with human disease (Larsen et al., 2016b). The maintenance of an \u03c6Sa3 in this lineage may reflect more frequent transmission via a human host, or an adaptation to poultry (a recent study suggested that \u03c6Sa3 prophages might aid immune evasion in species other than humans [Jung et al., 2017]). Either way, this might make this lineage a greater immediate threat to public health.\n\nWhile livestock-associated CC398 is found across a broad range of livestock species, it is most commonly associated with pigs. The dynamics of the SCCmec and \u03c6Sa3 prophages that we have identified are both consistent with livestock-associated CC398 originating in pig farms and later spreading to other livestock species. The lower frequency of the type Vc SCCmec in species other than pigs could reflect random loss during transmission bottlenecks, or a reduced benefit of either tetK or czrC in these species. Similarly, the higher frequency of \u03c6Sa3 prophages in other species might reflect an increased benefit or reduced cost, or more recent transmission via human hosts.\n\nOur results reveal that LA-MRSA CC398 is a stably antibiotic-resistant pathogen that is capable of dynamic readaptation to humans. We find that Tn916 and SCCmec are both stably maintained in livestock-associated CC398, across different livestock species and countries, and that neither of these MGEs (or other antibiotic resistance genes) tend to be lost when livestock-associated CC398 is transmitted to humans. This suggests that these MGEs are associated with a low selective cost in both livestock and human hosts, and therefore across variable levels and types of antibiotic exposure. The stability of these two MGEs, combined with the capacity of livestock-associated CC398 to rapidly acquire the \u03c6Sa3 prophage, underlines the threat posed by LA-MRSA to public health. While SCCmec is less stably maintained than Tn916, our identification of several independent acquisitions of type IV SCCmec suggests both a strong selective benefit, not contingent on the carriage of tetK and czrC, and an availability of type IV elements. These dynamics predict that the impact of gradual reductions in antibiotic consumption on LA-MRSA is likely to be slow to be realised and that the forthcoming EU ban on medical zinc supplementation in pig feed may have a limited impact on LA-MRSA (European Medicines Agency, 2017; European Medicines Agency, 2020 DANMAP, 2019). Further work is, however, required to understand the factors that underlie the acquisition and maintenance of resistance genes within LA-MRSA, and how they differ from human-associated MRSA lineages.\n\n## Materials and methods\n\n### Data collection\n\nAll available genome sequence data relating to S. aureus CC398 were downloaded from public databases (https://www.ncbi.nlm.nih.gov/sra and https://www.ebi.ac.uk/ena/browser/; accessed 2019), with metadata in some cases obtained by request (Supplementary file 1). We additionally sequenced five isolates sampled from UK pig farms in 2018. All publicly available complete S. aureus genomes assemblies (https://www.ncbi.nlm.nih.gov/; accessed 2019) were MLST typed using Pathogenwatch (https://pathogen.watch), and the 43 genomes identified as CC398 were added to our collection. After exclusion of low-quality assemblies and isolates mis-characterised as CC398, this led to a collection of 1,180 genomes.\n\n### Genomic library preparation and sequencing\n\nFor sequencing of the five UK pig farm isolates, genomic DNA was extracted from overnight cultures grown in TSB at 37\u00b0C with 200 rpm shaking using the MasterPure Gram Positive DNA Purification Kit (Cambio, UK). Illumina library preparation and Hi-Seq sequencing were carried out as previously described (Harrison et al., 2013).\n\n### Genome assembly\n\nWe used sequence data from all isolates to generate de novo assemblies with Spades v.3.12.0 (Bankevich et al., 2012). We removed adapters and low-quality reads with Cutadapt v1.16 (Martin, 2011) and Sickle v1.33 (Joshi and Fass, 2011), and screened for contamination using FastQ Screen (Wingett and Andrews, 2018). Optimal k-mers were identified based on average read lengths for each genome. All assemblies were evaluated using QUAST v.5.0.1 (Gurevich et al., 2013) and we mapped reads back to de novo assemblies to investigate polymorphism (indicative of mixed cultures) using Bowtie2 v1.2.2 (Langmead and Salzberg, 2012). Low-quality genome assemblies were excluded from further analysis (i.e. N50 < 10,000, contigs smaller than 1 kb contributing to >15% of the total assembly length, total assembly length outside of the median sequence length \u00b1 one standard deviation, or >1500 polymorphic sites). We identified genomes mischaracterised as CC398 via two approaches and excluded them from further analysis. First, we identified STs with MLST-check (Page et al., 2016) and grouped into CCs using the eBURST algorithm with a single locus variant (Francisco et al., 2009). Second, we constructed a neighbour-joining tree based on a concatenated alignment of MLST genes (arcC, aroE, glpF, gmk, pta, tpi, and yqiL) for our collection and 13 additional reference genomes from other CCs, using the ape package in R and a K80 substitution model (Paradis et al., 2004).\n\nWe generated reference-mapped assemblies with Bowtie2 using the reference genome S0385 (GenBank accession no. AM990992). For reference genomes, we generated artificial FASTQ files with ArtificialFastqGenerator (Frampton and Houlston, 2012). Average coverage and number of missing sites in these assemblies were used as an additional quality control measure; genomes with average coverage <\u00d750 or with >10% missing sites were excluded.\n\nWe identified recombination in the reference-mapped alignment using both Gubbins v2.3.1 (Croucher et al., 2015) and ClonalFrame (Didelot and Wilson, 2015). We masked all the recombinant sites identified from our alignment. We additionally masked a region of \u223c123 kb that was identified as horizontally acquired from an ST9 donor in a previous study (Price et al., 2012).\n\n### Genome annotation and identification of homologous genes\n\nWe annotated de novo assemblies with Prokka v2.8.2 (Seemann, 2014) and identified orthologous genes with Roary (Page et al., 2015) using recommended parameter values. We created a core gene alignment with Roary and identified recombinant sites using Gubbins. We identified antibiotic resistance genes using the Pathogenwatch AMR prediction module (Wellcome Sanger Institute), which uses BLASTn (Altschul et al., 1990) with a cut-off of 75% coverage and 80\u201390% identity threshold (depending on the gene) against a S. aureus AMR database.\n\n### Phylogenetic analyses\n\nWe carried out phylogenetic reconstruction for the reference-mapped alignment with RAxML v8.2.4 using the GTR+\u0393 model and 1000 bootstraps (Stamatakis, 2014). Sites where >0.1% of genomes showed evidence of recombination or had missing data were excluded from the analysis. We constructed dated phylogenies using BEAST v1.10 with a HKY+\u0393 model, a strict molecular clock, and constant population size coalescent prior, from the coding regions of the reference-mapped alignment (Drummond et al., 2012). We fit separate substitution models and molecular clocks to first/second and third codon positions to reflect differences in selective constraint. We constructed phylogenies for three random subsamples of 250 isolates (200 from livestock-associated CC398 and 50 from human-associated CC398). Subsamples were non-overlapping except for 30 genomes representing the most divergent lineages within the livestock-associated clade, to ensure a consistent description of the origin of this clade. We constructed additional phylogenies from subsamples that included only isolates from the LA clade to establish that consistent rate estimates were returned over different evolutionary depths. We investigated temporal signal in each dataset through a regression of root-to-tip distance against sampling date, and a permutation test of dates over tips (with clustering used to correct for any confounding of temporal and genetic structures) (Murray et al., 2016; Rambaut et al., 2016). Trees are visualised and annotated using ITOL (Letunic and Bork, 2021).\n\n### Comparative analyses of MGEs\n\nGenes associated with the transition to livestock were identified through comparing frequencies of homologous genes identified with Roary across human- and livestock-associated CC398. We investigated the association between these genes and MGEs through analysis of (1) physical locations within our de novo assemblies and the reference genomes, (2) correlations in their presence/absence across our collection, and (3) comparison with descriptions in the literature and in online databases of particular MGEs.\n\nWe confirmed the identity of the Tn916 transposon by comparison with published descriptions and publicly available annotated sequences. SCCmec elements were initially categorised into types using a BLASTn search of all representative SCCmec types from the SCCmecFinder database in our de novo assemblies (Supplementary file 5; Hanssen and Ericson Sollid, 2006). \u03c6Sa3 prophages were initially identified and categorised through identification of functional genes associated with the human immune evasion gene cluster. To further characterise diversity within these elements we identified genes associated with each element across our collection. We constructed alignments of genes within MGEs using Clustal Omega v1.2.3 (Sievers and Higgins, 2018) and checked for misalignment by eye.\n\nWe analysed variation in both gene content and nucleotide diversity within shared genes for each MGE. We estimated pairwise nucleotide distances in concatenated alignments of shared genes for each type of element using the ape package in R (Paradis et al., 2004), and constructed maximum likelihood trees using RaxML and minimum-spanning trees using GrapeTree (Zhou et al., 2018) to investigate co-phylogeny. We generated confidence intervals for our estimates of mean pairwise nucleotide distances within MGEs by re-estimating the mean distance from 1000 bootstrapped samples of sites. We compared this to sites in the core genome by sampling the same number of sites as were in the MGE alignment from a concatenated alignment of core genes (generated by Roary). For SCCmec we used ancestral state reconstruction in BEAST to infer the evolutionary dynamics of these elements and date their origins within CC398. This involved fitting a discrete traits model to the posterior distributions of trees, with each state representing a version of the element that had been independently acquired by CC398. We used a strict clock model that allowed for asymmetric rates of transitions between states, but we found that the results were robust to use of a symmetric model or a relaxed clock.\n\n### Phylogenetically independent groups\n\nTo test the association between spillover into the human host and the presence of \u03c6Sa3 prophages and antibiotic-resistance genes, we identified 70 phylogenetically independent clades of isolates that were sampled from both human and non-human hosts in the livestock-associated clade. We classed a gene as present in a host if it was observed in any of the isolates from that host in that clade.\n",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "bfef207e-0473-4664-a1e1-b54e304c52b3",
+      "submission_id": "a00f5d18-e9f9-4280-a50b-f36c78a01fab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daniel J Wilson, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74819.sa0](https://doi.org/10.7554/eLife.74819.sa0)\n\nThe reviewers recognised the importance of understanding where new strains of microbes come from and how they change over time for infection control and prevention. Staphylococcus aureus CC398 is an important strain that 'spills over' from livestock to humans, carrying with it high levels of resistance to antibiotics commonly used in farming. This paper compares more than 1000 genomes of CC398 and concludes that spillover is likely to carry resistance to tetracyclines and other antibiotics into humans that will persist over time.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Daniel J Wilson, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74819.sa1](https://doi.org/10.7554/eLife.74819.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Human readaptation outpaces loss of antibiotic resistance in livestock-associated MRSA\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Daniel J Wilson as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers were all impressed by the excellent quality of these comprehensive analyses of an important pathogen strain. Please read the summary below in conjunction with the detailed reviews.\n\n1) Our first main reservation was that the text should distinguish better what is new vs what is known throughout the paper. As an example, line 28-29 of the abstract is particularly ambiguous.\n\n2) The second main reservation was the headline conclusion in the title -- that human re-adaptation (acquisition of human immune evasion genes by livestock-associated CC398s) outpaces loss of antibiotic resistance -- can be argued on first principles. From that perspective, it would appear to lack novelty.\n\n3) A third point of discussion was an apples-and-oranges argument about comparing different MGE types. We felt that since they are fundamentally different and known to come and go at different rates, that this should be acknowledged with references. That is not to say there is no value to empirically quantifying those differences on timescales relevant to the evolution of CC398, and to discussing the implications for the turnover of the different AMR genes they carry.\n\nMy inclination is that the new analyses of MGE dynamics (how often known CC398-associated MGEs have come and gone, and the dates of these events) probably add sufficient novelty to warrant publication in eLife, but as currently presented that is not certain. I would welcome a revision that focuses on addressing this point.\n\nReviewer #2 (Recommendations for the authors):\n\nI find that the comparison made in the title potentially a false equivalence between the evolutionary mechanisms driving gain/loss of pathogenicity genes, and gain/loss of resistance, for a few reasons. One, loss of resistance genes first requires that the 'mutation' leading to loss of resistance occurs, then lineages with that loss are selectively favoured. In contrast, (re)acquisition of the pathogenicity genes, which are already present in the wider population/community of bacteria, is much more likely to occur and then be selectively favoured. It is thus hard to envision a scenario where adaptive evolution for pathogenicity would ever be expected to outpace adaptive loss of resistance, unless the fitness costs of resistance are extremely high. I think the analysis and data stand on their own without having to force this comparison\n\nTwo, for an expectation that a 'thing' might be lost, its carriage should be associated with a fitness cost. While this is touched on, I would like to see more discussion about whether Tn916 is likely to carry a cost, otherwise its stable maintenance is the rule rather than the exception. Also, are there estimates about how easily Tn916 can be lost? Does it not drive its own reacquisition if an excision event is to occur?\n\nThree, prophages, plasmids and transposons likely have different rates of gain/loss. This has been experimentally demonstrated by an excellent study from the group of Prof Jodi Lindsey (McCarthy et al., 2014, Genome Biology and Evolution, doi: 10.1093/gbe/evu214). Transfer of some MGEs was observed within 4 hours, whereas transfer of Tn916 was not observed within 16 days. I think it may lead to misleading comparisons to lump different types of MGEs together, as their gain/loss dynamics can differ significantly.\n\nI would thus like to see an expanded discussion (i.e. more than just supposition) about estimated costs of SCCmec and phiSa3, or estimated benefits of (re-)acquiring these when selectively advantageous, and also what might be driving the replacement of Type V with other types. Also on relative rates of gain/loss events for the different categories of MGEs here. I would also recommend altering the title, as I do not find the comparison made there compelling, but that might be excessive.\n\nReviewer #3 (Recommendations for the authors):\n\nIn general, this manuscript is very well done and as mentioned in the public review, of high quality for the reader. It is in my eyes very close to be ready for publication if accepted, and I only have a few comments. Important, however, is the fact that the novelty in the manuscript is very limited because most results have been published earlier in the studies on the original datasets which are used here.\n\nI only have a few comments:\n\nGeneral comments:\n\n\u2013 Do you have any hypothesis on why \u03a6Sa3 phages frequently are re-introduced and where from, as compared to other elements?\n\nSpecific comments:\n\n\u2013 Line 62 and Table S1: Sieber et al., 2019 should be Sieber et al., 2018, mBio.\n\n\u2013 Line 110: space missing before \"(Ward et al., 2014)\u201d.\n\n\u2013 Line 275: \u201cthat integrate into the hlb gene of S. aureus\u201d: There is strong evidence that the \u03a6Sa3 phages integrate at other positions in LA-MRSA CC398. See e.g. Leinweber et al., 2021 (mBio) for a recent publication.\n\n\u2013 Line 276: change \"88% of our human-associated CC398 isolates\" to \"88% of the human-associated isolates in our collection\".\n\n\u2013 Lines 356-359: These results differ from what Sieber et al., 2019 found. Can you discuss this?\n\n\u2013 Lines 416-418: This should be explained more precisely. Why are these dynamics consistent with these traits?\n",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d0102258-2d12-439d-9fc0-68565689883c",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C1",
+      "claim": "The collection includes high-quality whole genome assemblies of 1180 isolates of CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "Our collection includes high-quality whole genome assemblies of 1180 isolates (including 43 complete reference genomes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "9aeaab9c-01d2-4a25-9708-b2d608bc665f",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C2",
+      "claim": "The CC398 collection spans 15 host species including humans, pigs, cows, chickens, turkeys, and horses.",
+      "claim_type": "EXPLICIT",
+      "source": "This collection spans 15 host species (including humans, pigs, cows, chickens, turkeys, and horses), 28 countries (across Europe, America, Asia, and Australasia), and 27 years (1992\u20132018) (Figure 1\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "d4e8039b-2de7-4895-96a1-fe9f7fcae960",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C3",
+      "claim": "The CC398 collection spans 28 countries across Europe, America, Asia, and Australasia.",
+      "claim_type": "EXPLICIT",
+      "source": "This collection spans 15 host species (including humans, pigs, cows, chickens, turkeys, and horses), 28 countries (across Europe, America, Asia, and Australasia), and 27 years (1992\u20132018) (Figure 1\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "d207c39a-7510-465e-a66c-44ea4437e1e6",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C4",
+      "claim": "The CC398 collection spans 27 years from 1992 to 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "This collection spans 15 host species (including humans, pigs, cows, chickens, turkeys, and horses), 28 countries (across Europe, America, Asia, and Australasia), and 27 years (1992\u20132018) (Figure 1\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "584b3f51-6d1e-4bc9-998e-2c0f99d1efae",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C5",
+      "claim": "The phylogenetic reconstruction shows a livestock-associated clade of CC398 containing 704 isolates that falls within a more diverse, largely human-associated clade containing 476 isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "These reconstructions consistently returned the same topology, and one that is described in previous studies: a livestock-associated clade of CC398 (704 isolates) that falls within a more diverse, and other largely human-associated clade (476 isolates) (Figure 1a and Figure 1\u2014figure supplement 2; Price et al., 2012; Gon\u00e7alves da Silva et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and supported by phylogenetic analysis shown in Figure 1a, with citation to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "c8550b11-725a-4d2f-b2e5-400ed033d097",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C6",
+      "claim": "Livestock-associated CC398 originated around 1964 with a 95% confidence interval of 1957-1970.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to an estimate of the origin of the livestock-associated clade of approximately 1964 (95% CI: 1957\u20131970) (Figure 1b, Figure 1\u2014figure supplement 3, and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on dated phylogeny analysis shown in Figure 1b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "b1bd4dd7-35ba-4f5e-a81d-9c351fd2756a",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C7",
+      "claim": "The evolutionary rate of CC398 is estimated at 1.1\u20131.6 \u00d7 10\u22126 substitutions per site per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates of the evolutionary rate were consistent across all reconstructions (1.1\u20131.6 \u00d7 10\u22126 subs/site/year), and similar to estimates from previous studies of CC398 (Ward et al., 2014) and other S. aureus CCs (Hsu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on BEAST analysis, with citation to previous studies showing similar rates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "23c2e5a4-e93b-402d-a302-b1405d154fd8",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C8",
+      "claim": "The transition to livestock association is associated with changes in the frequencies of three MGEs: a Tn916 transposon carrying tetM, SCCmec carrying mecA, and \u03c6Sa3 prophages carrying a human immune evasion gene cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the genes whose presence most strongly distinguishes isolates from the human- and livestock-associated groups are associated with three categories of MGEs: (1) a Tn916 transposon carrying tetM, (2) SCCmec carrying mecA, and (3) \u03c6Sa3 prophages carrying a human immune evasion gene cluster (Figure 1a, Figure 1\u2014figure supplement 5, and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on comparative genomic analysis shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "318511f3-fe8d-4a49-ba48-311cd9180534",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C9",
+      "claim": "A Tn916 transposon carrying tetM is present in 699 out of 704 isolates in the livestock-associated CC398 collection.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a contiguous assembly of a Tn916 transposon carrying tetM in 699/704 isolates in our collection of livestock-associated CC398 (Figure 2a, Supplementary files 3 and 4; de Vries et al., 2009; Roberts and Mullany, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on assembly analysis, with citations to previous studies characterizing this element.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "1401d976-a100-4a04-ac18-1a7d188d7847",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C10",
+      "claim": "The Tn916 transposon in livestock-associated CC398 is the result of a single acquisition event followed by stable inheritance.",
+      "claim_type": "EXPLICIT",
+      "source": "Several lines of evidence indicate that the presence of the Tn916 transposon in livestock-associated CC398 is the result of a single acquisition event, followed by stable inheritance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on multiple lines of evidence including conserved location, nucleotide diversity, and phylogenetic congruence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "b750efe0-b927-46d1-945b-2e98497d6395",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C11",
+      "claim": "The location of the Tn916 transposon in the genome of livestock-associated CC398 is conserved, always found next to the same core gene (WP_000902814 in the published annotation of S0385).",
+      "claim_type": "EXPLICIT",
+      "source": "First, the location of the transposon in the genome of livestock-associated CC398 is conserved (Tn916 is always found next to the same core gene; WP_000902814 in the published annotation of S0385).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of de novo assemblies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "e788ad5b-5327-46c4-9e6e-e59103755097",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C12",
+      "claim": "The Tn916 transposon shows similar average nucleotide diversity to core genes in livestock-associated CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, an alignment of the coding regions of this element (extracted from de novo assemblies) shows a similar average nucleotide diversity to core genes (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 2d comparing nucleotide diversity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "73b452be-47ad-4942-a625-e3cf0deff56d",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C13",
+      "claim": "A phylogeny constructed from the genes in the Tn916 transposon is entirely congruent with the phylogeny of livestock-associated CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, a phylogeny constructed from the genes in this element is entirely congruent with the phylogeny of livestock-associated CC398 (Figure 2b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 2b and 2c comparing phylogenies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "191c5b4a-37f9-42d7-b5aa-1629a952f992",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C14",
+      "claim": "The Tn916 transposon has been maintained in livestock-associated CC398 for around 57 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses indicate that the Tn916 transposon has been maintained in livestock-associated CC398 since its origin, and therefore for around 57 years (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on dated phylogeny shown in Figure 1b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "88d7267e-b8b8-4e75-81fa-8bb009ea01dd",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C15",
+      "claim": "The Tn916 transposon is absent from 5 out of 704 livestock-associated CC398 isolates, suggesting it remains capable of excision.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, its absence from 5/704 livestock-associated CC398 isolates in our collection suggests that it remains capable of excision (this is consistent with experimental studies that have shown that Tn916 in CC398 is a functional conjugative transposon; de Vries et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on data analysis, with citation to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "c74709fe-eace-4ded-a1f2-2651f9d83e8a",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C16",
+      "claim": "SCCmec elements in CC398 are categorized into type V (76%) and type IV (21%).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies of CC398 (e.g. Price et al., 2012), we observe both type V (76%) and type IV (21%) in CC398 (we were unable to confidently type the remaining 3%; Figure 3c, Figure 3\u2014figure supplement 1, and Supplementary files 3 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on SCCmec typing analysis, with citation to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "005053a2-9d81-413d-a495-2eb6e43a044a",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C17",
+      "claim": "Most type V SCCmec elements belong to the subtype Vc previously described in livestock-associated CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the type V SCCmec elements belong to the subtype Vc previously described in livestock-associated CC398 (Li et al., 2011; Price et al., 2012; Vandendriessche et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to previous studies describing this subtype.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "af43ddc9-471b-4414-8d41-1a14622c97f2",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C18",
+      "claim": "The type Vc SCCmec element includes three resistance genes: tetK (tetracycline resistance), czrC (heavy metal resistance), and mecA (methicillin resistance).",
+      "claim_type": "EXPLICIT",
+      "source": "This element includes two additional resistance genes: tetK (tetracycline resistance) and czrC (heavy metal resistance) (Figure 3a and Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3a gene map. mecA is mentioned earlier as being carried by SCCmec.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "1dd2155d-f11c-4080-9355-fe52d6b0f024",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C19",
+      "claim": "A full-length version of the type Vc SCCmec element was identified in 335 genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a full-length version of this element in 335 genomes (including some of the most recent isolates in our collection, sampled from UK pig farms in 2018) and shorter type V elements in 204 genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on assembly analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "f7cfaeef-bbc7-43e3-afb7-549c1ff0d5ae",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C20",
+      "claim": "Shorter type V SCCmec elements were found in 204 genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a full-length version of this element in 335 genomes (including some of the most recent isolates in our collection, sampled from UK pig farms in 2018) and shorter type V elements in 204 genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on assembly analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "c89fbefe-28f1-468a-ac55-5055f1662851",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C21",
+      "claim": "Full-length type Vc SCCmec elements are only observed in the livestock-associated clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length versions are only observed in the livestock-associated clade, while shorter versions are found in both livestock- and human-associated groups of CC398.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of element distribution across clades.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "cddd38c9-c0f5-40f7-bf32-60eb71cb46c1",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C22",
+      "claim": "Shorter type V SCCmec elements are found in both livestock- and human-associated groups of CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length versions are only observed in the livestock-associated clade, while shorter versions are found in both livestock- and human-associated groups of CC398.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of element distribution across clades.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "67ce336a-7783-45fc-b93c-0658d485b739",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C23",
+      "claim": "Shorter type V SCCmec elements often lacked tetK (n = 90) and czrC (n = 117) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Shorter versions often lacked tetK (n = 90) and czrC (n = 117) genes (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on gene content analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "5350391e-e47f-4bbf-a784-fdadf8624277",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C24",
+      "claim": "Type IV SCCmec elements are only observed in the livestock-associated clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IV elements are only observed in the livestock-associated clade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of element distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "69591523-c5a4-47c9-a1e4-06a16fee4e92",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C25",
+      "claim": "Type IV SCCmec elements include subtypes IVa and IVc and all only carry a single resistance gene: mecA.",
+      "claim_type": "EXPLICIT",
+      "source": "They include subtypes IVa and IVc, and all only carry a single resistance gene: mecA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of gene content in type IV elements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "1d09a54b-9a96-4d96-8b43-1a47ba8d5d25",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C26",
+      "claim": "Type Vc SCCmec is more common in pigs (77% of isolates) than type IV SCCmec (7% of isolates).",
+      "claim_type": "EXPLICIT",
+      "source": "Type Vc SCCmec is much more common in pigs (77% of isolates; n = 286) than type IV SCCmec (7% of isolates).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of element frequencies across host species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "c07f1a08-2bae-4085-82f1-18018d931905",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C27",
+      "claim": "In cows, 45% of isolates carry type Vc SCCmec and 32% carry type IV SCCmec.",
+      "claim_type": "EXPLICIT",
+      "source": "In cows (n = 74), the difference is reduced: 45% are type Vc and 32% are type IV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of element frequencies in cow isolates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "895adbfb-3dd5-484d-8bba-63a27231793c",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C28",
+      "claim": "In isolates from other animal species, type IV SCCmec elements (55%) are more common than type Vc (33%).",
+      "claim_type": "EXPLICIT",
+      "source": "And in isolates from other animal species (n = 94) type IV elements (55%) are more common than type Vc (33%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of element frequencies in other animal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "5644d981-432d-44a2-bef6-6c0a20b436b3",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C29",
+      "claim": "A full-length type Vc SCCmec was acquired once by livestock-associated CC398 and has been maintained largely through vertical transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Diversity within the type Vc SCCmec element indicates that a full-length type Vc SCCmec was acquired once by livestock-associated CC398, and has been maintained within CC398 largely through vertical transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on multiple lines of evidence including nucleotide diversity and phylogenetic congruence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "3e85798a-1815-48b0-a2e7-f960a9a41ba5",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C30",
+      "claim": "Low nucleotide diversity within full-length versions of the type Vc SCCmec element is consistent with 329 out of 335 sharing a recent origin common within livestock-associated CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "First, low nucleotide diversity within full-length versions of the element is consistent with 329/335 sharing a recent origin common within livestock-associated CC398 (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on nucleotide diversity analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "9538ed83-eb8e-4b6d-a049-c776e8db26a8",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C31",
+      "claim": "Patterns of diversity in the type Vc SCCmec element are largely congruent with the core genome phylogeny, consistent with vertical inheritance.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, patterns of diversity are largely congruent with the core genome phylogeny, consistent with vertical inheritance (Figure 3b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on phylogenetic comparison shown in Figure 3b and 3c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "51cc6963-7642-4266-85a7-2420da0a02e0",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C32",
+      "claim": "Low nucleotide diversity within genes shared across full- and shorter-length versions of the type V SCCmec element is consistent with most shorter-length versions being the result of deletion within livestock-associated CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, low nucleotide diversity within genes shared across full- and shorter-length versions of the element are consistent with most shorter-length versions being the result of deletion within livestock-associated CC398 (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on nucleotide diversity analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "d6efb598-ca46-4b0b-8ea3-fbce3138a46d",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C33",
+      "claim": "Diversity in the type IV SCCmec elements in livestock-associated CC398 supports four independent acquisitions from outside of CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, diversity in the type IV elements in livestock-associated CC398 supports four independent acquisitions from outside of CC398 (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on diversity analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "9c7d5a62-9849-4278-9307-fb4e1b2e2c8a",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C34",
+      "claim": "The type Vc SCCmec was acquired by livestock-associated CC398 by around 1986 (95% CI: 1982\u20131990).",
+      "claim_type": "EXPLICIT",
+      "source": "These reconstructions consistently estimated that the type Vc SCCmec had been acquired by livestock-associated CC398 by around 1986 (95% CI: 1982\u20131990), and has therefore been maintained within livestock-associated CC398 for around 35 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on ancestral state reconstruction over dated phylogeny.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "4d1be800-3ad3-4143-8949-c2a64d88af14",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C35",
+      "claim": "The type Vc SCCmec has been maintained within livestock-associated CC398 for around 35 years.",
+      "claim_type": "EXPLICIT",
+      "source": "These reconstructions consistently estimated that the type Vc SCCmec had been acquired by livestock-associated CC398 by around 1986 (95% CI: 1982\u20131990), and has therefore been maintained within livestock-associated CC398 for around 35 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on ancestral state reconstruction and dating analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "4c44bf4d-74ec-41b0-ab39-6315570f3d22",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C36",
+      "claim": "Type IV SCCmec elements show evidence of several acquisitions in relatively quick succession between 1997 and 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, type IV elements show evidence of several more recent acquisitions in relatively quick succession between 1997 and 2004 (Figure 3e and Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on ancestral state reconstruction shown in Figure 3e and Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "1c5b5e27-c380-49c4-9051-6ee52bd47ef6",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C37",
+      "claim": "\u03c6Sa3 prophages are present in 88% of the human-associated CC398 isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03c6Sa3 prophages are present in 88% of the human-associated CC398 isolates in our collection, we find that this is not a consequence of a stable association between CC398 and one prophage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of prophage presence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "a2b5eddd-f730-4ed9-bd6a-b63e79651a50",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C38",
+      "claim": "Nucleotide diversity within genes shared across \u03c6Sa3 prophages suggests at least seven (but likely more) acquisitions of an \u03c6Sa3 prophage into human-associated CC398 from outside of CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleotide diversity within genes shared across \u03c6Sa3 prophages (Figure 4 and Supplementary file 3) suggest at least seven (but likely more) acquisitions of an \u03c6Sa3 prophage into human-associated CC398 from outside of CC398.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on nucleotide diversity analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "92a1d0d1-c56e-47ad-bd7a-44cd32f06b28",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C39",
+      "claim": "\u03c6Sa3 prophages within human-associated CC398 include types C (n = 285), B (n = 111), E (n = 35), A (n = 4), and D (n = 4).",
+      "claim_type": "EXPLICIT",
+      "source": "The set of functional genes carried by these elements indicate that the elements within human-associated CC398 include types C (n = 285), B (n = 111), E (n = 35), A (n = 4), and D (n = 4), and those carried by livestock-associated CC398 isolates include types B (n = 84), E (n = 8), and A (n = 5) (van Wamel et al., 2006; van Alen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on functional gene analysis, with citations to previous typing studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "95595a4f-71ea-457a-b8b7-a7751184fa33",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C40",
+      "claim": "\u03c6Sa3 prophages carried by livestock-associated CC398 isolates include types B (n = 84), E (n = 8), and A (n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "The set of functional genes carried by these elements indicate that the elements within human-associated CC398 include types C (n = 285), B (n = 111), E (n = 35), A (n = 4), and D (n = 4), and those carried by livestock-associated CC398 isolates include types B (n = 84), E (n = 8), and A (n = 5) (van Wamel et al., 2006; van Alen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on functional gene analysis, with citations to previous typing studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "2dc69afe-9d58-4033-a379-4b267c474c4c",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C41",
+      "claim": "\u03c6Sa3 prophages are rare in livestock-associated CC398, present in 68 out of 704 isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03c6Sa3 prophages are rare in livestock-associated CC398 (68/704 isolates), diversity within these elements indicate at least 15 (but likely more) acquisitions of these MGEs by livestock-associated CC398.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of prophage presence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "a397df2e-3194-4cd3-bc19-9517e42b7206",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C42",
+      "claim": "Diversity within \u03c6Sa3 prophages in livestock-associated CC398 indicates at least 15 (but likely more) acquisitions of these MGEs by livestock-associated CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03c6Sa3 prophages are rare in livestock-associated CC398 (68/704 isolates), diversity within these elements indicate at least 15 (but likely more) acquisitions of these MGEs by livestock-associated CC398.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on diversity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "62e9de47-ca5c-4660-af4b-2473df12a1eb",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C43",
+      "claim": "The majority (69%) of \u03c6Sa3 prophages in livestock-associated CC398 do not share a recent common ancestor with those in human-associated CC398.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these elements (69%) do not share a recent common ancestor with those in human-associated CC398.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "290fb873-1aa0-4aac-a3b6-bdada82cd95b",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C44",
+      "claim": "A poultry-associated subclade of livestock-associated CC398 contains 51 isolates, with 39% from poultry compared to 4% across the rest of the livestock-associated clade.",
+      "claim_type": "EXPLICIT",
+      "source": "In our collection, 39% of the isolates in this clade are from poultry (compared to 4% across the rest of the livestock-associated clade).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of host species distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "e7d0d2bd-1da9-4097-acea-fca428033874",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C45",
+      "claim": "Low nucleotide diversity within the type B \u03c6Sa3 consistently present in the poultry-associated subclade suggests it has been maintained since its acquisition approximately 21 years ago (95% CI: 1997\u20132001).",
+      "claim_type": "EXPLICIT",
+      "source": "Low nucleotide diversity within the type B \u03c6Sa3 consistently present in isolates within this clade suggests that it has been maintained since its acquisition approximately 21 years ago (95% CI: 1997\u20132001; Figure 1b and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on nucleotide diversity analysis and dating, shown in Figure 1b and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "49781b64-b373-469b-8ce4-8c9f362dd888",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C46",
+      "claim": "81% of livestock-associated CC398 isolates carry one or more resistance genes for antibiotic classes other than tetracyclines and \u03b2-lactams.",
+      "claim_type": "EXPLICIT",
+      "source": "We see evidence of this in our dataset where 81% of livestock-associated CC398 isolates carry one or more resistance genes for antibiotic classes other than tetracyclines and \u03b2-lactams (Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2, and Supplementary file 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on resistance gene analysis shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "70266763-e7d8-44e0-8923-2e4e0c64ca2b",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C47",
+      "claim": "67% of livestock-associated CC398 isolates have genes associated with trimethoprim resistance (dfrA, dfrK, or dfrG).",
+      "claim_type": "EXPLICIT",
+      "source": "Sixty-seven percent of livestock-associated CC398 isolates have genes associated with trimethoprim resistance (dfrA, dfrK, or dfrG), 42% have genes associated with macrolide resistance (ermA, ermB, ermC, or ermT), and 26% have genes associated with aminoglycoside resistance (aadA, aphA, or aphD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on resistance gene analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "1f62694a-fbf7-421b-9d9c-cfac78cb9713",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C48",
+      "claim": "42% of livestock-associated CC398 isolates have genes associated with macrolide resistance (ermA, ermB, ermC, or ermT).",
+      "claim_type": "EXPLICIT",
+      "source": "Sixty-seven percent of livestock-associated CC398 isolates have genes associated with trimethoprim resistance (dfrA, dfrK, or dfrG), 42% have genes associated with macrolide resistance (ermA, ermB, ermC, or ermT), and 26% have genes associated with aminoglycoside resistance (aadA, aphA, or aphD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on resistance gene analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "76632f09-36c4-43bc-bafd-10be1f90566a",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C49",
+      "claim": "26% of livestock-associated CC398 isolates have genes associated with aminoglycoside resistance (aadA, aphA, or aphD).",
+      "claim_type": "EXPLICIT",
+      "source": "Sixty-seven percent of livestock-associated CC398 isolates have genes associated with trimethoprim resistance (dfrA, dfrK, or dfrG), 42% have genes associated with macrolide resistance (ermA, ermB, ermC, or ermT), and 26% have genes associated with aminoglycoside resistance (aadA, aphA, or aphD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on resistance gene analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "66cfaeb2-52fb-476a-8eca-838a98ff6f1a",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C50",
+      "claim": "Only 20% of human-associated CC398 isolates carry tetracycline resistance genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only are resistance genes less common in human-associated CC398 (only 20% of isolates carry tetracycline resistance genes, and 9% carry trimethoprim resistance genes), they also differ in their relative frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on resistance gene analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "6c9e8c23-9c9c-4070-b047-3dfe8427847c",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C51",
+      "claim": "9% of human-associated CC398 isolates carry trimethoprim resistance genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only are resistance genes less common in human-associated CC398 (only 20% of isolates carry tetracycline resistance genes, and 9% carry trimethoprim resistance genes), they also differ in their relative frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on resistance gene analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "f6f7b49f-6890-42fa-a82b-456e63c8bb37",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C52",
+      "claim": "Human-associated CC398 isolates more commonly carry genes associated with macrolide resistance (91%).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, human-associated CC398 isolates more commonly carry genes associated with macrolide resistance (91%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on resistance gene analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "c49df583-cfad-472e-8e1e-6af70251ff0d",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C53",
+      "claim": "\u03c6Sa3 prophages are more common in human isolates (23%) than in livestock or companion animal isolates (11%) in the livestock-associated CC398 collection.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c6Sa3 prophages are more common in human isolates (23%) than in livestock or companion animal isolates (11%) in our collection of livestock-associated CC398.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of prophage frequencies across host types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "4d7cfc03-e291-4c66-8226-c4a22be23851",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C54",
+      "claim": "Isolates from humans are significantly more likely to carry an \u03c6Sa3 prophage than isolates from livestock or companion animals (McNemar's chi-squared test: p = 1.50 \u00d7 10\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons across these groups revealed that isolates from humans are consistently more likely to carry an \u03c6Sa3 prophage (McNemar's chi-squared test: p = 1.50 \u00d7 10\u22123; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text based on statistical analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "5e2ce3c3-1784-4cea-84d9-da9d06fd300d",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C55",
+      "claim": "No resistance gene was significantly more or less common in humans than in livestock species (McNemar's chi-squared tests: p > 0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that no resistance gene was significantly more or less common in humans than in livestock species (McNemar's chi-squared tests: p > 0.1), nor was there a consistent shift in the overall number of resistance genes (there were more resistance genes in isolates from human hosts in 22/70 pairs and more in livestock hosts in 34/70 pairs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on statistical analysis of resistance gene frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "5221ac58-393a-4491-8d87-61e0772c293e",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C56",
+      "claim": "There was no consistent shift in the overall number of resistance genes between human and livestock hosts (more resistance genes in isolates from human hosts in 22/70 pairs and more in livestock hosts in 34/70 pairs).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that no resistance gene was significantly more or less common in humans than in livestock species (McNemar's chi-squared tests: p > 0.1), nor was there a consistent shift in the overall number of resistance genes (there were more resistance genes in isolates from human hosts in 22/70 pairs and more in livestock hosts in 34/70 pairs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of resistance gene counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "87a9acc7-bac7-4269-9ffa-7a5c8f8deefc",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C57",
+      "claim": "\u03c6Sa3 prophages are less common in isolates from pigs (only 3% of pig isolates carry one) than from other non-human species.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c6Sa3 prophages are also less common in isolates from pigs than from other non-human species (only 3% of pig isolates carry one).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of prophage frequencies across host species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "f7670a3c-122f-48bc-933c-6ec29a26a16d",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C58",
+      "claim": "In 42 out of 70 phylogenetically independent groups where the only non-human species was a pig, none of the pig isolates carried an \u03c6Sa3 prophage while 14% of the human isolates did.",
+      "claim_type": "EXPLICIT",
+      "source": "In 42/70 of our phylogenetically independent groups, the only non-human species was a pig, and none of the pig isolates from these groups carried an \u03c6Sa3 prophage (while 14% of the human isolates did).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on analysis of phylogenetically independent groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "2959de0b-957a-4d92-9851-ce69592c1ebe",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C59",
+      "claim": "In groups that included isolates from cows, horses, and poultry, \u03c6Sa3 prophages were observed in non-human hosts in 17% of groups and at a higher frequency in humans (39% of groups) (McNemar's chi-squared test: p = 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "In the remaining 28 groups (that included isolates from cows, horses, and poultry), \u03c6Sa3 prophages were observed in non-human hosts in 17% of groups, but still at a higher frequency in humans (39% of groups) (McNemar's chi-squared test: p = 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on statistical analysis of prophage frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "34b5298e-e2a7-41c3-88c6-2e31429030cb",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C60",
+      "claim": "MGEs play an important role in the evolution of bacterial pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Mobile genetic elements (MGEs) play an important role in the evolution of bacterial pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as an introductory statement drawing on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "2cf4486c-5780-4d2c-a4f2-2aa29035d298",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C61",
+      "claim": "MGEs often carry genes associated with virulence and antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "As MGEs often carry genes associated with virulence and antibiotic resistance (Frost et al., 2005; Rankin et al., 2011), an understanding of the drivers and barriers to their acquisition and maintenance is central to predicting the emergence and evolution of novel and resistant pathogens (Brockhurst et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "a62b3255-bf2f-4c5f-8a4a-eeb01acb667d",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C62",
+      "claim": "The emergence and evolution of MRSA across different ecological niches and host species are associated with the horizontal transfer of MGEs.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence and evolution of methicillin-resistant Staphylococcus aureus (MRSA) across different ecological niches and host species are associated with the horizontal transfer of MGEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as a general statement about MRSA evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "370b060d-912c-4a52-bff5-55fd4f3fdcec",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C63",
+      "claim": "Methicillin resistance is carried by the staphylococcal cassette chromosome element SCCmec.",
+      "claim_type": "EXPLICIT",
+      "source": "Methicillin resistance is carried by the staphylococcal cassette chromosome element SCCmec, and additional MGEs carry resistance to other antibiotics, virulence factors, and host-specific adaptations (Hanssen and Ericson Sollid, 2006; Jamrozy et al., 2017; Haag et al., 2019; Turner et al., 2019; Matuszewska et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "025aa0fc-d480-4251-bfd7-0183b33762aa",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C64",
+      "claim": "CC398 has become the dominant MRSA in European livestock.",
+      "claim_type": "EXPLICIT",
+      "source": "CC398 has become the dominant MRSA in European livestock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as a factual statement about CC398 prevalence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "55020224-5493-412d-88fd-b0e493d7ee10",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C65",
+      "claim": "The proportion of MRSA-positive herds in Danish pig farms increased from <5% in 2008 to 90% in 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Its rise has been particularly evident in Danish pig farms where the proportion of MRSA-positive herds has increased from <5% in 2008 to 90% in 2018 (Sieber et al., 2018; DANMAP, 2019), but it has also been observed in other European countries, and other livestock species (Lekkerkerk et al., 2015; Islam et al., 2017; Anjum et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to surveillance reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "a07b8db6-4b88-47aa-8031-20395b83e53d",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C66",
+      "claim": "Livestock-associated MRSA CC398 has been associated with increasing numbers of human infections, in both people with and without direct contact with livestock.",
+      "claim_type": "EXPLICIT",
+      "source": "Livestock-associated (LA) MRSA CC398 has been associated with increasing numbers of human infections, in both people with and without direct contact with livestock (Larsen et al., 2017; van Alen et al., 2017; Sieber et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "f6106205-b0ec-4cc5-ad44-2a538103a0cf",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C67",
+      "claim": "Previous studies identified a largely methicillin-resistant and livestock-associated clade of CC398 that falls as either sister to or within a largely methicillin-sensitive and human-associated clade.",
+      "claim_type": "EXPLICIT",
+      "source": "They identified a largely methicillin-resistant and livestock-associated clade of CC398, that falls as either sister to Ward et al., 2014 or within (Price et al., 2012; Gon\u00e7alves da Silva et al., 2017) a largely methicillin-sensitive and human-associated clade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to previous phylogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "299b4633-c49c-4012-9f7a-f337cad5bb5b",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C68",
+      "claim": "Previous studies concluded that the emergence of CC398 in livestock was associated with both the acquisition of antibiotic resistance genes and the loss of genes associated with human immune evasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Through comparing the genomes of isolates from livestock- and human-associated CC398, these studies concluded that the emergence of CC398 in livestock was associated with both the acquisition of antibiotic resistance genes and the loss of genes associated with human immune evasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text summarizing conclusions from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "cda5948c-6a2f-4ec1-b045-1406dff46713",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C69",
+      "claim": "Antibiotics, including tetracyclines, were first licensed for use as growth promoters in livestock in European countries in the 1950s and were in common use by the end of that decade.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotics, including tetracyclines, were first licensed for use as growth promoters in livestock in European countries in the 1950s, and were in common use by the end of that decade (Lowbury, 1958).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to historical reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "96254303-1be3-4086-9ab7-286866b7a4b7",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C70",
+      "claim": "The use of antibiotics as growth promoters was banned by the European Union in 2006.",
+      "claim_type": "EXPLICIT",
+      "source": "While the use of antibiotics as growth promoters was banned by the European Union in 2006, tetracyclines remain the most commonly used antimicrobial class in livestock farming (World Health Organization, 2015; DANMAP, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to WHO and surveillance reports.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "f958e593-4ac5-4363-bcfc-331ce757ecd9",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C71",
+      "claim": "Tetracyclines remain the most commonly used antimicrobial class in livestock farming.",
+      "claim_type": "EXPLICIT",
+      "source": "While the use of antibiotics as growth promoters was banned by the European Union in 2006, tetracyclines remain the most commonly used antimicrobial class in livestock farming (World Health Organization, 2015; DANMAP, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to WHO and surveillance reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "db5f2a8d-fbb3-450a-9a5b-6af186e147bc",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C72",
+      "claim": "Tn916-like elements are found across several bacterial genera including other opportunistic pathogens in the respiratory microbiome of pigs and other S. aureus CCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Tn916-like elements are found across several bacterial genera (Clewell et al., 1995; Roberts and Mullany, 2009), including other opportunistic pathogens in the respiratory microbiome of pigs (Holden et al., 2009; Hoa et al., 2011) and other S. aureus CCs (de Vries et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "b4922a7d-5b5b-4b33-8fb2-c9c29decf419",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C73",
+      "claim": "The regulatory system of Tn916 promotes its maintenance in a host through ensuring that excision only occurs in the presence of tetracycline (or other transcription-limiting cell stress) and that any selective burden in the absence of treatment is minimised.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have found evidence that the regulatory system of Tn916 promotes its maintenance in a host through ensuring both that excision only occurs in the presence of tetracycline (or other transcription-limiting cell stress) and that any selective burden in the absence of treatment is minimised (Roberts and Mullany, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "a00c86f4-7b3e-4b8d-8ae4-338c5e00e864",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C74",
+      "claim": "Carrying tetK in addition to tetM is associated with increased fitness during exposure to sublethal concentrations of tetracycline.",
+      "claim_type": "EXPLICIT",
+      "source": "While all livestock-associated CC398 carry tetM, there is evidence that carrying tetK in addition to tetM is associated with increased fitness during exposure to sublethal concentrations of tetracycline (Larsen et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "b39adee1-3afd-49d0-80b1-a0fd5da66e3d",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C75",
+      "claim": "czrC is associated with heavy metal resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "czrC is associated with heavy metal resistance (Cavaco et al., 2010), which is likely to be beneficial in the context of the common supplementation of animal feed with zinc oxide, which in pigs is commonly used to prevent diarrhoea in weaners (Nielsen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "3a894115-0aea-4541-b087-03c4f33d3cb7",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C76",
+      "claim": "Zinc oxide is commonly used in pig feed to prevent diarrhoea in weaners.",
+      "claim_type": "EXPLICIT",
+      "source": "czrC is associated with heavy metal resistance (Cavaco et al., 2010), which is likely to be beneficial in the context of the common supplementation of animal feed with zinc oxide, which in pigs is commonly used to prevent diarrhoea in weaners (Nielsen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "ec046cc5-84e4-45e6-b990-5143944ba6d8",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C77",
+      "claim": "The SCCmec type Vc element has been found in other staphylococci (S. cohhii in Vervet Monkeys) but has not been reported in other S. aureus CCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The element has been found in other staphylococci (S. cohhii in Vervet Monkeys [Hoefer et al., 2021]), but has not been reported in other S. aureus CCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "be597e44-11ae-4cdd-9772-72fd341e381e",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C78",
+      "claim": "\u03c6Sa3 prophages carry human immune evasion gene clusters that include a variable set of functional genes that encode human-specific virulence factors, including sak, chp, scn, sea, and sep.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c6Sa3 prophages carry human immune evasion gene clusters that include a variable set of functional genes that encode human-specific virulence factors, including sak, chp, scn, sea, and sep (Gladysheva et al., 2003; Postma et al., 2004; Rooijakkers et al., 2005; van Wamel et al., 2006; Thammavongsa et al., 2015; van Alen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "68b909b7-d601-4f47-a15f-9a14a6d62d00",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C79",
+      "claim": "\u03c6Sa3 prophages are temperate prophages that primarily integrate into the hlb gene of S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "They are temperate prophages that primarily integrate into the hlb gene of S. aureus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as established knowledge about \u03c6Sa3 prophages.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "8cf537a3-1fdb-4a95-9125-11e40bad390c",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C80",
+      "claim": "The ubiquity of \u03c6Sa3 prophages in human-associated CC398 and frequent acquisition following transmission of livestock-associated CC398 to humans is consistent with a strong benefit in the human host.",
+      "claim_type": "EXPLICIT",
+      "source": "Their ubiquity in human-associated CC398 and frequent acquisition following transmission of livestock-associated CC398 to humans (consistent with Sieber et al., 2019), is consistent with a strong benefit in the human host (Rohmer and Wolz, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as an inference from the data, with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "7ac501df-b494-41fd-8513-4a62fc872544",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C81",
+      "claim": "\u03c6Sa3 prophages may carry a selective burden outside of the human host.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, as we find that these elements are frequently lost and generally absent in other host species, these elements may carry a selective burden outside of the human host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as an inference from the observed patterns of loss.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "e43b8809-08ec-452b-912f-ed5280569e76",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C82",
+      "claim": "The diversity of \u03c6Sa3 prophages in CC398 suggests they form a large pool of elements within human hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of \u03c6Sa3 prophages in CC398 suggests they form a large pool of elements within human hosts (van Alen et al., 2018), likely reflecting their ubiquity in human carriage populations of S. aureus (Rohmer and Wolz, 2021) and capacity to transfer between S. aureus lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as an inference from diversity patterns, with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "e0559e7e-9072-466a-a16b-41692282f003",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C83",
+      "claim": "\u03c6Sa3 prophages are ubiquitous in human carriage populations of S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of \u03c6Sa3 prophages in CC398 suggests they form a large pool of elements within human hosts (van Alen et al., 2018), likely reflecting their ubiquity in human carriage populations of S. aureus (Rohmer and Wolz, 2021) and capacity to transfer between S. aureus lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "2c27d8c3-5ad2-4c5f-a113-91e7b3f50cdc",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C84",
+      "claim": "The poultry-associated subclade of livestock-associated CC398 was first described as a hybrid LA-MRSA CC9/CC398 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This clade was first described as a hybrid LA-MRSA CC9/CC398 lineage (Price et al., 2012), and was subsequently investigated as a lineage associated with human disease (Larsen et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "bf46b6bc-f486-4065-9677-c708a9dc2bed",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C85",
+      "claim": "A recent study suggested that \u03c6Sa3 prophages might aid immune evasion in species other than humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The maintenance of an \u03c6Sa3 in this lineage may reflect more frequent transmission via a human host, or an adaptation to poultry (a recent study suggested that \u03c6Sa3 prophages might aid immune evasion in species other than humans [Jung et al., 2017]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "ab37e14d-b7b1-4f42-a775-450f2539f050",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C86",
+      "claim": "When livestock-associated MRSA is transmitted to humans, adaptation to the human host outpaces loss of antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "These contrasting dynamics mean that when livestock-associated MRSA is transmitted to humans, adaptation to the human host outpaces loss of antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as a conclusion from the observed dynamics of MGEs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "3fc682da-5e51-4653-ad03-c8f2b483bd68",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C88",
+      "claim": "The dynamics of the SCCmec and \u03c6Sa3 prophages are consistent with livestock-associated CC398 originating in pig farms and later spreading to other livestock species.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of the SCCmec and \u03c6Sa3 prophages that we have identified are both consistent with livestock-associated CC398 originating in pig farms and later spreading to other livestock species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as an inference from the observed patterns of MGE distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "b7c61127-844f-45f8-af1a-2a6c5fa9e1c9",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C89",
+      "claim": "The lower frequency of the type Vc SCCmec in species other than pigs could reflect random loss during transmission bottlenecks or a reduced benefit of either tetK or czrC in these species.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower frequency of the type Vc SCCmec in species other than pigs could reflect random loss during transmission bottlenecks, or a reduced benefit of either tetK or czrC in these species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as speculation about the causes of observed patterns.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "50fd1dc0-b639-4d50-8c43-03a34fc2e2f1",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C90",
+      "claim": "The higher frequency of \u03c6Sa3 prophages in livestock species other than pigs might reflect an increased benefit or reduced cost, or more recent transmission via human hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the higher frequency of \u03c6Sa3 prophages in other species might reflect an increased benefit or reduced cost, or more recent transmission via human hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as speculation about the causes of observed patterns.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "30e71067-a6c6-4c2b-9cc6-7ac21869d2bd",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C91",
+      "claim": "LA-MRSA CC398 is a stably antibiotic-resistant pathogen that is capable of dynamic readaptation to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that LA-MRSA CC398 is a stably antibiotic-resistant pathogen that is capable of dynamic readaptation to humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as a summary conclusion from the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "379d686c-4004-4fd9-9b7f-2b95084a46c9",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C92",
+      "claim": "Tn916 and SCCmec are both stably maintained in livestock-associated CC398 across different livestock species and countries.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Tn916 and SCCmec are both stably maintained in livestock-associated CC398, across different livestock species and countries, and that neither of these MGEs (or other antibiotic resistance genes) tend to be lost when livestock-associated CC398 is transmitted to humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "e3c1e7d1-9544-427f-85f7-9a65a98023d2",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C93",
+      "claim": "Neither Tn916, SCCmec, nor other antibiotic resistance genes tend to be lost when livestock-associated CC398 is transmitted to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Tn916 and SCCmec are both stably maintained in livestock-associated CC398, across different livestock species and countries, and that neither of these MGEs (or other antibiotic resistance genes) tend to be lost when livestock-associated CC398 is transmitted to humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "515b466a-480f-4273-b4c2-17d56571457e",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C94",
+      "claim": "Tn916 and SCCmec are associated with a low selective cost in both livestock and human hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that these MGEs are associated with a low selective cost in both livestock and human hosts, and therefore across variable levels and types of antibiotic exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as an inference from the observed stability across hosts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "caa3c3fd-fcf3-4ca8-a3a1-0a324af245d2",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C95",
+      "claim": "The stability of Tn916 and SCCmec, combined with the capacity of livestock-associated CC398 to rapidly acquire the \u03c6Sa3 prophage, underlines the threat posed by LA-MRSA to public health.",
+      "claim_type": "EXPLICIT",
+      "source": "The stability of these two MGEs, combined with the capacity of livestock-associated CC398 to rapidly acquire the \u03c6Sa3 prophage, underlines the threat posed by LA-MRSA to public health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as a conclusion about public health implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "b22eb2e4-7384-45dc-a966-7683894680dd",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C96",
+      "claim": "The identification of several independent acquisitions of type IV SCCmec suggests both a strong selective benefit not contingent on the carriage of tetK and czrC, and an availability of type IV elements.",
+      "claim_type": "EXPLICIT",
+      "source": "While SCCmec is less stably maintained than Tn916, our identification of several independent acquisitions of type IV SCCmec suggests both a strong selective benefit, not contingent on the carriage of tetK and czrC, and an availability of type IV elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as an inference from the observed pattern of multiple acquisitions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "180d4c6b-2c73-48b5-b253-c0b31d39e3b1",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C97",
+      "claim": "The forthcoming EU ban on medical zinc supplementation in pig feed may have a limited impact on LA-MRSA.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics predict that the impact of gradual reductions in antibiotic consumption on LA-MRSA is likely to be slow to be realised and that the forthcoming EU ban on medical zinc supplementation in pig feed may have a limited impact on LA-MRSA (European Medicines Agency, 2017; European Medicines Agency, 2020 DANMAP, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as a prediction based on the observed stability of resistance MGEs, with citations to regulatory documents.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "f5621531-1fbc-4107-ba30-5c73f121c187",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C98",
+      "claim": "In vitro rates of transfer of phage have been found to be several orders of magnitude higher than of transposons.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, in vitro rates of transfer of phage have been found to be several orders of magnitude higher than of transposons (Humphrey et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "371a4252-ceee-45e7-a5fa-92d1a17d4a52",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C99",
+      "claim": "A 16-day in vivo study of MGE dynamics for two strains of CC398 observed that the Tn916 transposon, the type V SCCmec and an \u03c6Sa3 prophage were all stably maintained and not horizontally transferred, while other prophages and plasmids were both gained and lost by daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A 16-day in vivo study of MGE dynamics for two strains of CC398 also observed variation in the mobility of MGEs: the Tn916 transposon, the type V SCCmec and an \u03c6Sa3 prophage were all stably maintained and not horizontally transferred, while other prophages and plasmids were both gained and lost by daughter cells (McCarthy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "fade6a6b-215f-450e-b45a-5ab765a76e93",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "claim_id": "C100",
+      "claim": "The fitness costs of MGEs can be host (and even insertion locus) specific and can also be mitigated over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness costs of MGEs can be host (and even insertion locus) specific and can also be mitigated over time (Starikova et al., 2013; Dur\u00e3o et al., 2018), and therefore the stability of Tn916 in livestock-associated CC398 might reflect a low cost that is specific to this lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6d68acd1-e321-418d-8699-2e867499d343",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study assembled a comprehensive genomic dataset of CC398 comprising 1180 high-quality whole genome assemblies spanning 15 host species, 28 countries, and 27 years (1992-2018).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 describe the dataset composition and are directly stated with specific numbers. The dataset scope is well-documented and forms the foundation for all subsequent analyses. These are descriptive claims about data collection that are verifiable from the methods and supplementary materials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "9d35be23-6192-417d-add2-13cb16a8a2f5",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis reveals that livestock-associated CC398 (704 isolates) forms a clade within a more diverse human-associated clade (476 isolates), with the livestock-associated clade originating around 1964 (95% CI: 1957-1970) and evolving at a rate of 1.1-1.6 \u00d7 10\u207b\u2076 substitutions per site per year.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are supported by phylogenetic reconstructions using multiple approaches (different outgroups, reference-mapped and de novo assemblies) that consistently returned the same topology. The dating analysis used BEAST with appropriate temporal signal validation (root-to-tip regression, permutation tests) across three subsampled datasets. The evolutionary rate estimates are consistent with previous studies and across all reconstructions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "81f05283-996f-44d6-b584-0d9d18004b53",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The transition from human-associated to livestock-associated CC398 is characterized by changes in frequencies of three MGE categories: Tn916 transposon (carrying tetM), SCCmec (carrying mecA), and \u03c6Sa3 prophages (carrying human immune evasion genes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 is supported by comparative genomic analysis showing these three MGE categories most strongly distinguish the two groups (Figure 1a, Figure 1\u2014figure supplement 5). The analysis used appropriate methods (PCA, gene frequency comparisons) and the findings are consistent with previous studies cited in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "2e7ab001-34a5-433f-8d3a-fa5398220dd1",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Tn916 transposon carrying tetM was acquired once by livestock-associated CC398 and has been stably maintained for approximately 57 years through vertical inheritance, present in 699/704 isolates with conserved genomic location, similar nucleotide diversity to core genes, and complete phylogenetic congruence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C15 present multiple converging lines of evidence for stable vertical inheritance: conserved insertion site (C11), nucleotide diversity comparable to core genes (C12), complete phylogenetic congruence (C13), and high frequency (C9). The rare absences (5/704, C15) on terminal branches support occasional excision but rapid loss or reacquisition. The 57-year maintenance estimate (C14) follows logically from the dated phylogeny (C6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SCCmec elements in CC398 comprise type V (76%, mostly subtype Vc) and type IV (21%), with full-length type Vc (carrying mecA, tetK, and czrC) found in 335 genomes exclusively in livestock-associated CC398, while shorter type V elements (204 genomes) and type IV elements are distributed differently across clades and host species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C25 describe SCCmec typing and distribution patterns supported by BLASTn analysis against reference databases and gene content analysis. The frequencies and distributions are clearly stated with specific numbers. The distinction between full-length and truncated elements is supported by gene content analysis (Figure 3\u2014figure supplement 2). The host species associations (C26-C28) show clear patterns with appropriate sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "ca52bae6-2db9-43f3-937e-667abac66191",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Type Vc SCCmec shows strong host species associations, being most common in pigs (77% vs 7% type IV), with reduced dominance in cows (45% vs 32% type IV), and reversed frequencies in other animal species (33% vs 55% type IV).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 present clear frequency data across host species with adequate sample sizes (pigs n=286, cows n=74, other animals n=94). The patterns are consistent with the hypothesis of pig origin and subsequent spread to other livestock species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "9eb9a27f-b51d-4fb3-8e36-d436f76435ca",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Type Vc SCCmec was acquired once by livestock-associated CC398 and maintained largely through vertical transmission, evidenced by low nucleotide diversity in 329/335 full-length elements, phylogenetic congruence with the core genome, and patterns suggesting most shorter versions arose through deletion within CC398.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 present multiple converging lines of evidence similar to the Tn916 analysis: low nucleotide diversity (C30, Figure 3d), phylogenetic congruence (C31, Figure 3b-c), and deletion patterns (C32, Figure 3\u2014figure supplement 2). The evidence supports vertical inheritance with occasional deletions, though less stable than Tn916.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "db02d8c6-3684-44be-9246-2856706bf3cb",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Type IV SCCmec elements in livestock-associated CC398 show evidence of at least four independent acquisitions from outside CC398.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by diversity analysis shown in Figure 3\u2014figure supplement 3, which distinguishes four clades based on nucleotide distances and gene content differences. This contrasts with the single acquisition of type Vc and indicates different evolutionary dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "be57f58f-f5d1-4bcc-aa86-813a2457bc91",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Type Vc SCCmec was acquired by livestock-associated CC398 around 1986 (95% CI: 1982-1990) and maintained for approximately 35 years, while type IV elements show multiple more recent acquisitions between 1997 and 2004.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are based on ancestral state reconstruction over dated phylogenies using BEAST with discrete traits models. The analysis was performed on three subsampled datasets with consistent results (Figure 3e, Figure 3\u2014figure supplement 4). The dating methodology is appropriate and the confidence intervals are provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "c9d5c67d-71f2-4a0e-9737-42239ba0080c",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "\u03c6Sa3 prophages show highly dynamic evolutionary patterns with 88% prevalence in human-associated CC398 (representing at least 7 independent acquisitions of types C, B, E, A, and D) but only 9.7% in livestock-associated CC398 (at least 15 acquisitions, mostly types B, E, and A), with 69% not sharing recent common ancestry between the two groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 describe \u03c6Sa3 prophage dynamics supported by nucleotide diversity analysis (Figure 4) and functional gene typing. The high diversity and lack of phylogenetic congruence indicate frequent horizontal transfer, contrasting sharply with Tn916 and SCCmec patterns. The multiple independent acquisitions are inferred from nucleotide distances exceeding those expected from divergence within CC398.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "5347dd87-6226-4c96-a609-3b94d8b39178",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A poultry-associated subclade of livestock-associated CC398 (51 isolates, 39% from poultry) carries a type B \u03c6Sa3 prophage that has been stably maintained for approximately 21 years (95% CI: 1997-2001) based on low nucleotide diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 describe an exception to the general pattern of \u03c6Sa3 instability. The poultry association is supported by host distribution data (C44), and the stable maintenance is evidenced by low nucleotide diversity within this subclade (Figure 4\u2014figure supplement 1) and dating analysis. This represents a notable exception requiring explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "63631e93-4b59-4d19-bef9-25510903b00b",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Livestock-associated CC398 shows high multi-drug resistance (81% carry resistance genes beyond tetracyclines and \u03b2-lactams), with 67% carrying trimethoprim resistance, 42% macrolide resistance, and 26% aminoglycoside resistance, while human-associated CC398 shows lower overall resistance but higher macrolide resistance (91%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 present resistance gene frequencies based on systematic screening using Pathogenwatch AMR prediction. The frequencies are clearly stated with specific percentages and the patterns show distinct resistance profiles between livestock- and human-associated groups, consistent with different selective pressures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "b54cad25-ed5b-43d8-8ca4-a0178d702154",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In livestock-associated CC398, \u03c6Sa3 prophages are significantly more common in human isolates (23%) than livestock/companion animal isolates (11%) (p=1.50\u00d710\u207b\u00b3), while no individual resistance gene shows significant frequency differences between human and livestock hosts (p>0.1) in phylogenetically independent comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 are based on rigorous phylogenetically controlled analysis using 70 independent clades containing both human and non-human isolates. The use of McNemar's chi-squared test is appropriate for paired data. The significant difference for \u03c6Sa3 (C54) contrasts with the lack of significant differences for resistance genes (C55-C56), supporting the conclusion about contrasting dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "a2990a84-cb1d-41e6-90ae-2413b39a768f",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "\u03c6Sa3 prophages show host-specific patterns within livestock, being rare in pig isolates (3%) with none detected in pig-only phylogenetic groups (0/42 groups), but more common in other livestock species (17% of groups) though still less than in humans (39%, p=0.04).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 extend the phylogenetically controlled analysis to examine differences among livestock species. The pig-specific absence pattern (C58) is striking and based on adequate sample size (42 groups). The statistical test for other livestock species (C59) shows a significant but reduced difference compared to pigs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "fee78532-a10f-4ceb-bc98-30d4f73843a1",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "LA-MRSA CC398 is a stably antibiotic-resistant pathogen capable of rapid human adaptation, with Tn916 and SCCmec stably maintained across hosts and not lost upon human transmission, suggesting low selective costs and posing significant public health threats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86, C91-C95 represent the main conclusions synthesizing the contrasting MGE dynamics. The stability of resistance elements (C92-C93) is well-supported by the detailed analyses in earlier results. The inference of low selective cost (C94) follows logically from the observed stability across variable antibiotic exposures. The public health implications (C95) are reasonable conclusions from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "22e4bc1c-de15-4f7d-bbf3-bc58f745638f",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The dynamics of SCCmec and \u03c6Sa3 prophages are consistent with livestock-associated CC398 originating in pig farms and later spreading to other livestock species, though alternative explanations for host-specific frequency patterns cannot be excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 present an inference about the origin and spread of LA-CC398 based on the observed MGE distribution patterns. The pig origin hypothesis (C88) is consistent with the data (high type Vc in pigs, low \u03c6Sa3 in pigs). However, C89-C90 appropriately acknowledge that alternative explanations (random loss, differential selective pressures) cannot be ruled out, making this a well-qualified inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "e54df5b6-2a3f-4300-a40d-168ad35ddffb",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Multiple independent acquisitions of type IV SCCmec suggest strong selective benefit independent of tetK and czrC, and predict that reductions in antibiotic use and the EU ban on zinc supplementation may have limited impact on LA-MRSA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C96 is a reasonable inference from the observed pattern of multiple type IV acquisitions. However, C97 is a prediction about future policy impacts that extends beyond the data. While the prediction follows logically from the observed stability, it lacks direct experimental validation and depends on assumptions about future selective pressures. The claim is appropriately qualified as a prediction but represents speculation about future outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    },
+    {
+      "id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba",
+      "content_id": "ede43058-e785-4b8a-a6af-e1974ae35928",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background context from prior literature on MGE biology, MRSA evolution, CC398 epidemiology, antibiotic use in agriculture, and MGE-specific characteristics including transfer mechanisms, regulatory systems, and fitness costs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C85 and C98-C100 represent background knowledge and citations to previous work. These are appropriately cited and provide necessary context for interpreting the current findings. While these are not novel findings from this study, they are accurately represented and properly attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:00:56.415542Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d0102258-2d12-439d-9fc0-68565689883c",
+      "result_id": "6d68acd1-e321-418d-8699-2e867499d343"
+    },
+    {
+      "claim_id": "9aeaab9c-01d2-4a25-9708-b2d608bc665f",
+      "result_id": "6d68acd1-e321-418d-8699-2e867499d343"
+    },
+    {
+      "claim_id": "d4e8039b-2de7-4895-96a1-fe9f7fcae960",
+      "result_id": "6d68acd1-e321-418d-8699-2e867499d343"
+    },
+    {
+      "claim_id": "d207c39a-7510-465e-a66c-44ea4437e1e6",
+      "result_id": "6d68acd1-e321-418d-8699-2e867499d343"
+    },
+    {
+      "claim_id": "584b3f51-6d1e-4bc9-998e-2c0f99d1efae",
+      "result_id": "9d35be23-6192-417d-add2-13cb16a8a2f5"
+    },
+    {
+      "claim_id": "c8550b11-725a-4d2f-b2e5-400ed033d097",
+      "result_id": "9d35be23-6192-417d-add2-13cb16a8a2f5"
+    },
+    {
+      "claim_id": "b1bd4dd7-35ba-4f5e-a81d-9c351fd2756a",
+      "result_id": "9d35be23-6192-417d-add2-13cb16a8a2f5"
+    },
+    {
+      "claim_id": "23c2e5a4-e93b-402d-a302-b1405d154fd8",
+      "result_id": "81f05283-996f-44d6-b584-0d9d18004b53"
+    },
+    {
+      "claim_id": "318511f3-fe8d-4a49-ba48-311cd9180534",
+      "result_id": "2e7ab001-34a5-433f-8d3a-fa5398220dd1"
+    },
+    {
+      "claim_id": "1401d976-a100-4a04-ac18-1a7d188d7847",
+      "result_id": "2e7ab001-34a5-433f-8d3a-fa5398220dd1"
+    },
+    {
+      "claim_id": "b750efe0-b927-46d1-945b-2e98497d6395",
+      "result_id": "2e7ab001-34a5-433f-8d3a-fa5398220dd1"
+    },
+    {
+      "claim_id": "e788ad5b-5327-46c4-9e6e-e59103755097",
+      "result_id": "2e7ab001-34a5-433f-8d3a-fa5398220dd1"
+    },
+    {
+      "claim_id": "73b452be-47ad-4942-a625-e3cf0deff56d",
+      "result_id": "2e7ab001-34a5-433f-8d3a-fa5398220dd1"
+    },
+    {
+      "claim_id": "191c5b4a-37f9-42d7-b5aa-1629a952f992",
+      "result_id": "2e7ab001-34a5-433f-8d3a-fa5398220dd1"
+    },
+    {
+      "claim_id": "88d7267e-b8b8-4e75-81fa-8bb009ea01dd",
+      "result_id": "2e7ab001-34a5-433f-8d3a-fa5398220dd1"
+    },
+    {
+      "claim_id": "c74709fe-eace-4ded-a1f2-2651f9d83e8a",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "005053a2-9d81-413d-a495-2eb6e43a044a",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "af43ddc9-471b-4414-8d41-1a14622c97f2",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "1dd2155d-f11c-4080-9355-fe52d6b0f024",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "f7cfaeef-bbc7-43e3-afb7-549c1ff0d5ae",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "c89fbefe-28f1-468a-ac55-5055f1662851",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "cddd38c9-c0f5-40f7-bf32-60eb71cb46c1",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "67ce336a-7783-45fc-b93c-0658d485b739",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "5350391e-e47f-4bbf-a784-fdadf8624277",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "69591523-c5a4-47c9-a1e4-06a16fee4e92",
+      "result_id": "60edb6ed-05c8-4ea9-9c67-197b2e3d4d54"
+    },
+    {
+      "claim_id": "1d09a54b-9a96-4d96-8b43-1a47ba8d5d25",
+      "result_id": "ca52bae6-2db9-43f3-937e-667abac66191"
+    },
+    {
+      "claim_id": "c07f1a08-2bae-4085-82f1-18018d931905",
+      "result_id": "ca52bae6-2db9-43f3-937e-667abac66191"
+    },
+    {
+      "claim_id": "895adbfb-3dd5-484d-8bba-63a27231793c",
+      "result_id": "ca52bae6-2db9-43f3-937e-667abac66191"
+    },
+    {
+      "claim_id": "5644d981-432d-44a2-bef6-6c0a20b436b3",
+      "result_id": "9eb9a27f-b51d-4fb3-8e36-d436f76435ca"
+    },
+    {
+      "claim_id": "3e85798a-1815-48b0-a2e7-f960a9a41ba5",
+      "result_id": "9eb9a27f-b51d-4fb3-8e36-d436f76435ca"
+    },
+    {
+      "claim_id": "9538ed83-eb8e-4b6d-a049-c776e8db26a8",
+      "result_id": "9eb9a27f-b51d-4fb3-8e36-d436f76435ca"
+    },
+    {
+      "claim_id": "51cc6963-7642-4266-85a7-2420da0a02e0",
+      "result_id": "9eb9a27f-b51d-4fb3-8e36-d436f76435ca"
+    },
+    {
+      "claim_id": "d6efb598-ca46-4b0b-8ea3-fbce3138a46d",
+      "result_id": "db02d8c6-3684-44be-9246-2856706bf3cb"
+    },
+    {
+      "claim_id": "9c7d5a62-9849-4278-9307-fb4e1b2e2c8a",
+      "result_id": "be57f58f-f5d1-4bcc-aa86-813a2457bc91"
+    },
+    {
+      "claim_id": "4d1be800-3ad3-4143-8949-c2a64d88af14",
+      "result_id": "be57f58f-f5d1-4bcc-aa86-813a2457bc91"
+    },
+    {
+      "claim_id": "4c44bf4d-74ec-41b0-ab39-6315570f3d22",
+      "result_id": "be57f58f-f5d1-4bcc-aa86-813a2457bc91"
+    },
+    {
+      "claim_id": "1c5b5e27-c380-49c4-9051-6ee52bd47ef6",
+      "result_id": "c9d5c67d-71f2-4a0e-9737-42239ba0080c"
+    },
+    {
+      "claim_id": "a2b5eddd-f730-4ed9-bd6a-b63e79651a50",
+      "result_id": "c9d5c67d-71f2-4a0e-9737-42239ba0080c"
+    },
+    {
+      "claim_id": "92a1d0d1-c56e-47ad-bd7a-44cd32f06b28",
+      "result_id": "c9d5c67d-71f2-4a0e-9737-42239ba0080c"
+    },
+    {
+      "claim_id": "95595a4f-71ea-457a-b8b7-a7751184fa33",
+      "result_id": "c9d5c67d-71f2-4a0e-9737-42239ba0080c"
+    },
+    {
+      "claim_id": "2dc69afe-9d58-4033-a379-4b267c474c4c",
+      "result_id": "c9d5c67d-71f2-4a0e-9737-42239ba0080c"
+    },
+    {
+      "claim_id": "a397df2e-3194-4cd3-bc19-9517e42b7206",
+      "result_id": "c9d5c67d-71f2-4a0e-9737-42239ba0080c"
+    },
+    {
+      "claim_id": "62e9de47-ca5c-4660-af4b-2473df12a1eb",
+      "result_id": "c9d5c67d-71f2-4a0e-9737-42239ba0080c"
+    },
+    {
+      "claim_id": "290fb873-1aa0-4aac-a3b6-bdada82cd95b",
+      "result_id": "5347dd87-6226-4c96-a609-3b94d8b39178"
+    },
+    {
+      "claim_id": "e7d0d2bd-1da9-4097-acea-fca428033874",
+      "result_id": "5347dd87-6226-4c96-a609-3b94d8b39178"
+    },
+    {
+      "claim_id": "49781b64-b373-469b-8ce4-8c9f362dd888",
+      "result_id": "63631e93-4b59-4d19-bef9-25510903b00b"
+    },
+    {
+      "claim_id": "70266763-e7d8-44e0-8923-2e4e0c64ca2b",
+      "result_id": "63631e93-4b59-4d19-bef9-25510903b00b"
+    },
+    {
+      "claim_id": "1f62694a-fbf7-421b-9d9c-cfac78cb9713",
+      "result_id": "63631e93-4b59-4d19-bef9-25510903b00b"
+    },
+    {
+      "claim_id": "76632f09-36c4-43bc-bafd-10be1f90566a",
+      "result_id": "63631e93-4b59-4d19-bef9-25510903b00b"
+    },
+    {
+      "claim_id": "66cfaeb2-52fb-476a-8eca-838a98ff6f1a",
+      "result_id": "63631e93-4b59-4d19-bef9-25510903b00b"
+    },
+    {
+      "claim_id": "6c9e8c23-9c9c-4070-b047-3dfe8427847c",
+      "result_id": "63631e93-4b59-4d19-bef9-25510903b00b"
+    },
+    {
+      "claim_id": "f6f7b49f-6890-42fa-a82b-456e63c8bb37",
+      "result_id": "63631e93-4b59-4d19-bef9-25510903b00b"
+    },
+    {
+      "claim_id": "c49df583-cfad-472e-8e1e-6af70251ff0d",
+      "result_id": "b54cad25-ed5b-43d8-8ca4-a0178d702154"
+    },
+    {
+      "claim_id": "4d7cfc03-e291-4c66-8226-c4a22be23851",
+      "result_id": "b54cad25-ed5b-43d8-8ca4-a0178d702154"
+    },
+    {
+      "claim_id": "5e2ce3c3-1784-4cea-84d9-da9d06fd300d",
+      "result_id": "b54cad25-ed5b-43d8-8ca4-a0178d702154"
+    },
+    {
+      "claim_id": "5221ac58-393a-4491-8d87-61e0772c293e",
+      "result_id": "b54cad25-ed5b-43d8-8ca4-a0178d702154"
+    },
+    {
+      "claim_id": "87a9acc7-bac7-4269-9ffa-7a5c8f8deefc",
+      "result_id": "a2990a84-cb1d-41e6-90ae-2413b39a768f"
+    },
+    {
+      "claim_id": "f7670a3c-122f-48bc-933c-6ec29a26a16d",
+      "result_id": "a2990a84-cb1d-41e6-90ae-2413b39a768f"
+    },
+    {
+      "claim_id": "2959de0b-957a-4d92-9851-ce69592c1ebe",
+      "result_id": "a2990a84-cb1d-41e6-90ae-2413b39a768f"
+    },
+    {
+      "claim_id": "ab37e14d-b7b1-4f42-a775-450f2539f050",
+      "result_id": "fee78532-a10f-4ceb-bc98-30d4f73843a1"
+    },
+    {
+      "claim_id": "30e71067-a6c6-4c2b-9cc6-7ac21869d2bd",
+      "result_id": "fee78532-a10f-4ceb-bc98-30d4f73843a1"
+    },
+    {
+      "claim_id": "379d686c-4004-4fd9-9b7f-2b95084a46c9",
+      "result_id": "fee78532-a10f-4ceb-bc98-30d4f73843a1"
+    },
+    {
+      "claim_id": "e3c1e7d1-9544-427f-85f7-9a65a98023d2",
+      "result_id": "fee78532-a10f-4ceb-bc98-30d4f73843a1"
+    },
+    {
+      "claim_id": "515b466a-480f-4273-b4c2-17d56571457e",
+      "result_id": "fee78532-a10f-4ceb-bc98-30d4f73843a1"
+    },
+    {
+      "claim_id": "caa3c3fd-fcf3-4ca8-a3a1-0a324af245d2",
+      "result_id": "fee78532-a10f-4ceb-bc98-30d4f73843a1"
+    },
+    {
+      "claim_id": "3fc682da-5e51-4653-ad03-c8f2b483bd68",
+      "result_id": "22e4bc1c-de15-4f7d-bbf3-bc58f745638f"
+    },
+    {
+      "claim_id": "b7c61127-844f-45f8-af1a-2a6c5fa9e1c9",
+      "result_id": "22e4bc1c-de15-4f7d-bbf3-bc58f745638f"
+    },
+    {
+      "claim_id": "50fd1dc0-b639-4d50-8c43-03a34fc2e2f1",
+      "result_id": "22e4bc1c-de15-4f7d-bbf3-bc58f745638f"
+    },
+    {
+      "claim_id": "b22eb2e4-7384-45dc-a966-7683894680dd",
+      "result_id": "e54df5b6-2a3f-4300-a40d-168ad35ddffb"
+    },
+    {
+      "claim_id": "180d4c6b-2c73-48b5-b253-c0b31d39e3b1",
+      "result_id": "e54df5b6-2a3f-4300-a40d-168ad35ddffb"
+    },
+    {
+      "claim_id": "34b5298e-e2a7-41c3-88c6-2e31429030cb",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "2cf4486c-5780-4d2c-a4f2-2aa29035d298",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "a62b3255-bf2f-4c5f-8a4a-eeb01acb667d",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "370b060d-912c-4a52-bff5-55fd4f3fdcec",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "025aa0fc-d480-4251-bfd7-0183b33762aa",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "55020224-5493-412d-88fd-b0e493d7ee10",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "a07b8db6-4b88-47aa-8031-20395b83e53d",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "f6106205-b0ec-4cc5-ad44-2a538103a0cf",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "299b4633-c49c-4012-9f7a-f337cad5bb5b",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "cda5948c-6a2f-4ec1-b045-1406dff46713",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "96254303-1be3-4086-9ab7-286866b7a4b7",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "f958e593-4ac5-4363-bcfc-331ce757ecd9",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "db5f2a8d-fbb3-450a-9a5b-6af186e147bc",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "b4922a7d-5b5b-4b33-8fb2-c9c29decf419",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "a00c86f4-7b3e-4b8d-8ae4-338c5e00e864",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "b39adee1-3afd-49d0-80b1-a0fd5da66e3d",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "3a894115-0aea-4541-b087-03c4f33d3cb7",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "ec046cc5-84e4-45e6-b990-5143944ba6d8",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "be597e44-11ae-4cdd-9772-72fd341e381e",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "68b909b7-d601-4f47-a15f-9a14a6d62d00",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "8cf537a3-1fdb-4a95-9125-11e40bad390c",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "7ac501df-b494-41fd-8513-4a62fc872544",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "e43b8809-08ec-452b-912f-ed5280569e76",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "e0559e7e-9072-466a-a16b-41692282f003",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "2c27d8c3-5ad2-4c5f-a113-91e7b3f50cdc",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "bf46b6bc-f486-4065-9677-c708a9dc2bed",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "f5621531-1fbc-4107-ba30-5c73f121c187",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "371a4252-ceee-45e7-a5fa-92d1a17d4a52",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    },
+    {
+      "claim_id": "fade6a6b-215f-450e-b45a-5ab765a76e93",
+      "result_id": "f05e8f85-4e8d-4796-ac47-9e670f22dcba"
+    }
+  ],
+  "comparisons": []
+}

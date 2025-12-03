@@ -1,0 +1,492 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C171",
+      "C172"
+    ],
+    "result": "The authors predicted protein structures for 237,295 transcripts at 20,817 human gene loci encoding 130,700 distinct protein isoforms using ColabFold/AlphaFold2. The computational analysis required 34 days on 8\u00d7A5000 GPUs for structure prediction and 34 hours for multiple sequence alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 provide clear quantitative data about the dataset size and scope. Claims C171-C172 document the computational resources required. The methods section provides sufficient detail about the computational pipeline, making this result well-supported and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "No strong trend was observed between pLDDT scores and either protein length or transcript expression levels in GTEx data, suggesting that protein structure prediction provides orthogonal information for genome annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are directly supported by Figure 1 showing 2D histograms with no clear linear relationships. Claim C12 provides a reasonable inference from this observation. The independence of pLDDT from length and expression supports its utility as a complementary annotation tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "After filtering based on RNA-seq evidence and protein foldability, 940 unique alternate isoforms at 632 loci (3.4% of MANE loci) showed more stable predicted structures than the annotated MANE primary isoforms, while over 96% of MANE loci had no superior alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 provide quantitative results from the comparative analysis. The filtering methodology is described in Materials and Methods. The high percentage (96%) of MANE loci without superior alternatives validates the overall quality of MANE while identifying specific cases for improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "For 35% of human protein-coding gene loci, the most commonly observed isoform scored a pLDDT below 70, suggesting intrinsic disorder may be an important feature at these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 provides a clear quantitative finding. Claim C17 offers a reasonable interpretation, though it is speculative. The result is supported by the data, though the interpretation regarding intrinsic disorder would benefit from additional validation beyond pLDDT scores alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "For ASMT, a 345aa alternate isoform (present in CHESS/GENCODE but missing from RefSeq) has a higher pLDDT score (94.7 vs 87.1), ~10-fold higher expression in pineal gland tissue (327 vs 34 TPM), matches the experimentally determined crystal structure, and represents the biologically functional form based on melatonin synthesis activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result integrates multiple lines of evidence: structure prediction (C25-C26), expression data (C31-C33), structural alignment to crystal structure (C34), and functional validation from prior literature (C35). The convergence of computational, experimental expression, and literature-based functional evidence strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "For CRYGN, an alternate isoform has a substantially higher pLDDT score (92.2 vs 67.7 for MANE), shows marked structural improvement including recovery of the characteristic dimer-like structure, and results from a novel primate-specific five-exon structure that maintains protein length while avoiding the frameshift present in the poorly-folding MANE isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 24-point pLDDT difference (C42-C44) is substantial. Visual structural analysis (C48), Ramachandran plots (C49), and evolutionary analysis (C50-C53) all support the superiority of the alternate isoform. The genomic explanation for the structural differences is well-documented in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "For TXNDC8, the MANE isoform (pLDDT 56.7) lacks canonical thioredoxin structural elements, while an alternate CHESS isoform (pLDDT 96.9) shows full recovery of canonical structures and near-perfect structural conservation with cattle (RMSD 0.8\u00c5), suggesting the MANE isoform may be non-functional transcriptional noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 40-point pLDDT improvement (C59-C60) is dramatic. Claims C56-C57, C61 document specific missing structural elements in MANE. The structural alignment to cattle (C62) provides strong evolutionary support. Figure 5 clearly illustrates these differences across multiple isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "For IL36B, an alternate isoform shows the largest relative pLDDT improvement of any examined gene (50.2 to 93.0), contains conserved C-terminal exons with homology to 1517 organisms, has 840-fold higher expression (8.4 vs 0.01 TPM in 775 vs 1 GTEx sample), and aligns well to mouse/rat structures (RMSD 0.76\u00c5 vs 2.74\u00c5 for MANE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dramatic pLDDT improvement (C76, C78-C79), extensive sequence conservation (C81-C82), substantial expression differences (C83-C84), and superior structural alignment (C85-C86) all converge to strongly support this alternate isoform as functional. This represents one of the clearest cases in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "For PGAP2, the highest-scoring isoform (CHS.7860.59, pLDDT 87.9) matches the known biologically active protein sequence, has conserved intron boundaries in mouse, shows higher expression (2.6 vs 0.9 TPM in 8776 vs 4116 samples), and is supported by 5-fold more spliced reads than the MANE isoform (pLDDT 78.0) which contains an extra exon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this result: structure prediction (C92, C95), sequence validation (C93), evolutionary conservation (C94, C96), expression data (C97-C98), and RNA-seq read support (C99-C100). The convergence of these independent evidence types strongly validates the alternate isoform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "VEGFB demonstrates that functional isoforms can have different pLDDT scores: VEGFB-167 (pLDDT 81.7) and VEGFB-186 (pLDDT 69.5) are both functional with distinct localization properties, illustrating that structure prediction alone is insufficient for determining functionality and multiple information sources must be integrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result provides an important caveat to the overall approach. Claims C107-C109 document the pLDDT differences between known functional isoforms. Claims C110-C111 provide additional validation for VEGFB-186. Claims C112-C113 draw appropriate conclusions about the limitations of relying solely on pLDDT scores.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Structure-guided analysis identified a novel functional TXNDC8 isoform in mouse: the annotated mouse isoforms failed to match the conserved human structure, but a hypothesized 105aa isoform (removing 26 N-terminal residues) showed remarkable structural similarity to human/cattle (RMSD 0.83\u00c5), which was experimentally confirmed by RNA-seq assembly showing 1060 reads supporting the predicted start site and zero reads supporting the annotated upstream start.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result demonstrates the broader applicability of the structure-guided approach. The hypothesis (C124) was based on structural conservation principles, the predicted structure (C125-C126) showed excellent alignment, and RNA-seq data (C127-C129) experimentally validated the prediction. This represents a complete cycle from hypothesis to experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "All 130,700 predicted protein structures at 20,817 human gene loci have been made publicly available at isoform.io and have already been used to improve the CHESS human gene catalog by avoiding filtering out functional, clinically relevant isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 document the resource creation and its initial application. The data availability and stated use in CHESS v3.0 construction are clearly documented. This represents an important resource contribution to the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study identified hundreds of RNA-seq-supported alternate isoforms that outscored corresponding MANE transcripts, suggesting that inclusion of these functional isoforms in future gene catalogs may enable more accurate analyses and that further annotation improvements remain to be discovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 summarizes the main finding. Claims C137-C139 provide reasonable inferences about potential impact and future work. While somewhat speculative, these conclusions are well-supported by the presented data and case studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C148",
+      "C149"
+    ],
+    "result": "The authors acknowledge important limitations: structure prediction alone cannot reveal functionality for all proteins, intrinsically disordered proteins were not examined, non-functional isoforms may score higher by omitting disordered regions, and functional isoforms may receive low scores relative to alternatives, necessitating integration with expression and conservation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately acknowledge the limitations of the approach. The VEGFB example (referenced in C148) provides concrete evidence for these limitations. The recommendations for integrating multiple data types (C144-C145) are well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "AlphaFold2 can predict 3D protein structures with accuracy matching laboratory methods, and in the 68% of human proteins that fold into ordered structures, well-folded structures argue for functionality while poorly folded structures may indicate loss of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 are well-supported by citations to the AlphaFold2 literature. Claims C3-C4 represent the conceptual foundation for the study's approach. While C4 is somewhat speculative, the overall premise is reasonable and supported by the case studies presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Despite the complete human genome sequence being revealed, genome annotation remains incomplete. The use of protein structure prediction represents a new paradigm complementing traditional transcript sequencing and evolutionary conservation methods, with comprehensive annotation protocols incorporating structure prediction remaining an area for future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide important context and perspective. Claim C150 is supported by citation. Claims C151-C153 appropriately position the work's significance. Claim C154 acknowledges that developing comprehensive protocols remains future work, which is an honest assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The manuscript provides extensive background on the challenges of human genome annotation: 92% of genes express multiple isoforms averaging 7+ transcripts per gene, most assembled transcripts are low-expressed potential noise, major databases contain 100,000+ transcripts but disagree substantially, and computational methods are necessary for genome-wide functional determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and motivation for the work. All are supported by appropriate citations to the literature. They effectively justify why new computational approaches like structure prediction are needed for genome annotation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "MANE v1.0 includes 19,062 genes and 19,120 transcripts, with an additional 58 transcripts in the MANE Plus Clinical set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are straightforward factual claims about the MANE database content that can be verified against the MANE release. They provide important context for understanding the scope of the comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C30"
+    ],
+    "result": "ASMT catalyzes the final step in melatonin production, a hormone critical for sleep, metabolism, immune response, and neuronal development. Depressed melatonin levels are associated with autism spectrum disorder, and ASMT is classified as an autism susceptibility gene. Melatonin is primarily synthesized in the pineal gland at night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide biological context for the ASMT case study. All are supported by appropriate citations to the literature. They establish why identifying the correct functional isoform is clinically important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CRYGN is a highly conserved crystallin family protein responsible for lens/cornea transparency, with intron-exon structure conserved across 400 million years of vertebrate evolution. However, the primate CRYGN gene has lost its canonical stop codon, leading to speculation about gene extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide evolutionary and functional context for the CRYGN case study. Claims C37-C40 are supported by citations. Claim C41 accurately represents prior work by Wistow et al., which the current study challenges with new structural evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The thioredoxin protein family represents ancient, highly conserved small globular proteins found in all life forms. TXNDC8 is a testis-specific enzyme catalyzing redox reactions via cysteine oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide biological context for the TXNDC8 case study. Both are supported by appropriate citations establishing the protein family characteristics and specific protein function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "All TXNDC8 isoforms shown were assembled from RNA-seq data during CHESS construction, illustrating how structure prediction can distinguish functional from non-functional isoforms. RNA-seq assemblies typically reveal thousands of un-annotated isoforms, and computational folding allows comparison to identify potentially non-functional variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the methodological approach and its potential applications. Claims C65, C67-C68 are supported by data and citations. Claims C66, C69-C70 represent reasonable inferences about the utility of the approach, supported by the TXNDC8 example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "IL36B mediates inflammation in epithelial tissue and has been implicated in psoriasis pathogenesis. Studies show consistently increased IL36B expression in psoriatic lesions, making it a potential target for anti-psoriatic drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide clinical context for the IL36B case study. All are supported by appropriate citations. They establish the clinical relevance of correctly identifying the functional isoform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "PGAP2 is required for stable expression of GPI-anchored proteins, which are attached to the plasma membrane via a post-translational modification system ubiquitous in eukaryotes. Mutations in GPI pathway proteins cause rare genetic disorders, and PGAP2 mutations specifically cause intellectual disability, hyperphosphatasia, and seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide biological and clinical context for the PGAP2 case study. All are supported by appropriate citations establishing the protein's function and clinical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Alternative splicing allows genes to code for multiple functional protein products, but rejecting all but the top-scoring isoform based on structure may eliminate lower-scoring yet functional proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is a well-established principle supported by citation. Claim C102 represents an important caveat demonstrated by the VEGFB example. This appropriately acknowledges a limitation of naive application of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "VEGFB is a growth factor implicated in cancer and diabetes-related heart disease. The human gene encodes two well-characterized isoforms: VEGFB-167 (sequestered to cell surface via heparin binding domain) and VEGFB-186 (soluble, freely transported in bloodstream).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide biological context for the VEGFB cautionary example. All are supported by appropriate citations establishing the protein's function and the distinct properties of the two isoforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "pLDDT scores above 70 indicate structures that can generally be trusted, scores below 70 may indicate folding failure or intrinsic disorder, and scores above 90 imply accuracy sufficient for shape-sensitive tasks like binding site characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the interpretation framework for pLDDT scores used throughout the manuscript. They are consistent with the AlphaFold2 literature and provide essential context for evaluating the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The higher-scoring CRYGN isoform is present in CHESS and GENCODE, was present in RefSeq v109 but removed in v110.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are factual claims about database content that can be verified. The removal from RefSeq v110 is particularly interesting given the structural evidence supporting this isoform's functionality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C140",
+      "C147"
+    ],
+    "result": "Computational protein structure prediction is expected to become indispensable for transcriptome annotation. Future advances in multi-chain complex prediction and efficiency for large proteins may expand the range of analyzable genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims about future developments. While reasonable given the results presented, they represent predictions rather than demonstrated findings. Claim C147 is supported by citation to relevant work on multi-chain prediction.",
+    "result_type": "MINOR"
+  }
+]

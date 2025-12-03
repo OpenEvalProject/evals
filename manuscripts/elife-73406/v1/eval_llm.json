@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Both NG and HZ cells in layer 1a of the piriform cortex are broadly tuned to odors, responding to many different odorants. The cell-averaged odor responsiveness indices were 0.78 \u00b1 0.04 for NG cells and 0.66 \u00b1 0.12 for HZ cells (not significantly different, p = 0.34), while the odor-averaged indices were 0.75 \u00b1 0.03 and 0.60 \u00b1 0.06 respectively (significantly different, p = 0.025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C28-C36 collectively demonstrate broad odor tuning in both cell types with appropriate statistical analysis. The data are supported by in vivo recordings (Figures 1E, 1F) and quantitative analysis using z-score thresholds. Sample sizes are adequate (28 NG cells, 9 HZ cells) and statistical tests are appropriate (Welch's t-test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C56",
+      "C57"
+    ],
+    "result": "NG cells fire significantly earlier than HZ cells following odor onset (peak at 0.43 \u00b1 0.14 s vs 1.92 \u00b1 0.24 s, p = 0.0013). This difference is attributed to faster odor-driven excitatory synaptic drive, with EPSC time-to-peak being twofold faster in NG cells (0.72 \u00b1 0.09 s) than HZ cells (1.24 \u00b1 0.12 s, p = 0.0014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C44-C47, C49, C56-C57 provide converging evidence from multiple experimental approaches (patch clamp, calcium imaging, voltage clamp) showing consistent timing differences. The mechanistic link between EPSC kinetics and firing timing is well-supported by the data in Figures 3, 4A, and 5C with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Respiration-locked oscillations in membrane potential were observed in both NG and HZ cells. In NG cells, the peak-to-peak Vm amplitude increased significantly during odor application (p < 0.0002), while HZ cells showed no significant change (p = 0.78). The phase of oscillations remained unchanged in both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are well-supported by data in Figure 2 with appropriate statistical analysis (one-way ANOVA with Tukey). The differential response to odors between NG and HZ cells is clearly demonstrated with adequate sample sizes (232 trials in 22 NG cells, 98 trials in 9 HZ cells). Cross-covariance analysis provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "During odor application, EPSPs in NG cells tend to decline from an early peak (slope: \u22120.27 \u00b1 0.02 z-score units/respiration cycle) while EPSPs in HZ cells tend to rise to a later peak (slope: 0.21 \u00b1 0.04), with these slopes being significantly different (p < 0.001, KS test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by quantitative analysis shown in Figure 4C with appropriate statistical testing (Kolmogorov-Smirnov test). The sample sizes are adequate (232 trials for NG, 84 trials for HZ above threshold), and the analysis method using z-scored slopes is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C58"
+    ],
+    "result": "In vitro slice experiments showed that brief trains of LOT stimuli (6 pulses at 40 Hz) produced facilitation in NG cells and depression in HZ cells, opposite to what would explain in vivo responses. However, more realistic stimulation (40 Hz repeating at 3 Hz) produced depression in both cell types. The dynamics of excitatory synaptic inputs at least partially determine the delayed odor responses of HZ cells, though the origin remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C55, C58 reveal a discrepancy between in vitro and in vivo findings. While the in vitro data (Figure 5B) are clear, they do not fully explain the in vivo observations. The authors acknowledge this limitation and suggest the mechanism remains unclear. The conclusion (C58) is appropriately cautious but the underlying mechanism is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66"
+    ],
+    "result": "Odor-evoked IPSCs were present in both NG and HZ cells with similar properties. Paired recordings revealed that NG\u2192HZ connections were frequent and strong (32.6% connectivity), while HZ\u2192NG connections were never observed (0%, p = 0.02). This suggests odor-evoked synaptic inhibition of both cell types most likely comes from NG cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63, C66 are supported by voltage clamp recordings (Figure 6A) and paired recordings in slices (Figure 6B). The connectivity data are statistically significant with adequate sample sizes (43 NG\u2192HZ pairs, 13 HZ\u2192NG pairs). The inference about the source of inhibition (C66) is reasonable given the connectivity pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In dual recordings with LOT stimulation, the first EPSC was much smaller in NG cells than HZ cells (NG:HZ ratio 0.27 \u00b1 0.03), but by the third EPSC this ratio increased to 1.38 \u00b1 0.32 (p = 0.0002). This indicates NG cells do not receive privileged input from the LOT; rather, HZ cells receive stronger initial input, but the inputs equalize during trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by dual recording data in Figure 6C with appropriate statistical analysis (one-way ANOVA with Tukey). The sample size is modest (n = 7 pairs) but the effect is highly significant. The inference about operational regime (C71) is reasonable given the known dynamics of olfactory bulb input.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C74"
+    ],
+    "result": "NG cells generate large, rapid IPSPs in superficial pyramidal (SP) cells and strongly suppress early odor-evoked firing (p < 0.001, KS test), providing strong but transient feedforward inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C72, C74 are supported by slice simulation experiments in Figure 7 using in vivo-like stimulation patterns. The dynamic clamp approach is appropriate and the statistical analysis (KS test) is valid. The conclusion about strong, transient inhibition is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C73",
+      "C75"
+    ],
+    "result": "HZ cells generate smaller, more diffuse IPSPs in SP cells that persist beyond odor application and have a weaker, delayed effect on firing (not significant, p = 0.81, KS test), providing prolonged feedforward inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C73, C75 are supported by the same slice simulation experiments (Figure 7). The lack of statistical significance for the HZ effect (C75) is appropriately reported. The characterization of HZ inhibition as diffuse and prolonged is consistent with the data, though the functional impact is less clear than for NG cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C76",
+      "C77"
+    ],
+    "result": "The different odor-response dynamics of NG and HZ cells are not related to anesthesia. Urethane at 0.7 g/kg has little effect on ligand-gated synaptic receptors and produces similar results to fentanyl/medetomidine anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C76, C77 are supported by control experiments using alternative anesthesia (Figure 3\u2014figure supplement 2) and citations to previous literature about urethane effects. The comparison between anesthetic protocols strengthens the conclusion, though experiments in awake animals would provide definitive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "NG and HZ cells can be reliably distinguished in GAD67-GFP mice by their location (HZ cells only near LOT, NG cells throughout L1a), soma shape (HZ elongated, NG spherical), GFP expression (HZ much lower), dendritic morphology (NG short/branched, HZ longer/spiny), and intrinsic electrical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 describe methodological criteria for cell identification supported by Figure 1B-D and citations to previous work. These criteria are well-established and the current data are consistent with prior characterization. This is essential for interpreting all other results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The slower-rising EPSPs in HZ cells can explain the longer delay to firing of these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is a logical inference connecting the EPSP kinetics data (Figure 4A) to the firing delay data (Figure 3). The inference is reasonable given the known relationship between EPSP kinetics and action potential generation, though it is correlative rather than causally demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "NG\u2192NG connectivity is 11.8% and HZ\u2192HZ connectivity is 5.3%, both lower than NG\u2192HZ connectivity (32.6%), though the difference between NG\u2192NG and NG\u2192HZ is not significant (p = 0.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 report additional connectivity data from Figure 6B. The authors appropriately note that sample sizes are modest and the comparison between NG\u2192NG and NG\u2192HZ is not significant. These data provide context for the main connectivity findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establishing the context of feedforward inhibition in cortex, the anatomy of the piriform cortex, and the state of knowledge about odor-evoked inhibition. These include general principles about cortical interneurons, feedforward inhibition mechanisms, and the unique architecture of the piriform cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C9-C21 are primarily background information supported by citations to previous literature and established knowledge. These claims provide essential context but do not represent novel findings from this study. They are appropriately cited and consistent with current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Discussion claims comparing current findings to previous literature, proposing mechanistic explanations, and discussing functional implications. These include comparisons of odor tuning, respiratory oscillations, possible sources of delayed HZ responses, and the functional significance of feedforward inhibition in the piriform cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C102 are primarily interpretive and speculative, drawing on both current data and previous literature. Many propose hypotheses that require future testing (e.g., differential input from mitral vs. tufted cells, role of AON). While these interpretations are reasonable given the data, they represent discussion points rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

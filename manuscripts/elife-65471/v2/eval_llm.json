@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes background knowledge about eukaryotic DNA replication, including helicase loading, activation requirements, and the role of DDK and S-CDK kinases in controlling CMG formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide well-established background information supported by multiple citations to prior work. These claims accurately describe the current understanding of helicase loading and activation mechanisms in eukaryotic DNA replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed a functional single-molecule assay for CMG formation that recapitulates known dependencies on DDK, Sld3/7, and helicase-activating factors, and demonstrates DNA unwinding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 demonstrate that the SM assay shows expected protein dependencies (Sld3/7, DDK, Cdc6) and functional outcomes (DNA unwinding). The circular template shows improved Mcm2-7 retention (C20), and appropriate controls validate the system (C22, C23, C26, C27, C29). The phosphatase experiments (C25-C27) convincingly demonstrate DDK-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "With minimal proteins (DDK, Sld3/7, Cdc45), dynamic binding of one or two Cdc45 molecules to Mcm2-7 double hexamers was observed, with Cdc45 recruited as monomers in sequential fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide quantitative SM data showing dynamic Cdc45 binding (136/198 DNAs, C30) with no high-salt-resistant binding (C32). Fluorescence intensity analysis (C33-C34) and intensity pattern analysis (C35) support sequential monomer recruitment. The data are internally consistent and well-quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Addition of SDPGC proteins (Sld2, Dpb11, Pol \u03b5, GINS, S-CDK) increases Cdc45 binding to Mcm2-7 and enables formation of high-salt-resistant Cdc45 complexes characteristic of CMG formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 show that SDPGC proteins increase average Cdc45 binding (0.60 to 0.85, C37) and enable high-salt-resistant binding (0.15 \u00b1 0.05, C39) that was absent without these proteins (C38). The quantitative data support the conclusion that SDPGC proteins are required for CMG formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Increasing DDK concentration from 1.3 nM to 6.5 nM and 32.5 nM progressively increases CMG formation efficiency and the multiplicity of Cdc45 binding to Mcm2-7, with all binding remaining Sld3/7-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 demonstrate a dose-dependent effect of DDK on CMG formation (0.15 to 0.53 to 0.69, C40-C41) and Cdc45 multiplicity (1.0 to 2.5, C42). The observation of 4+ Cdc45 molecules (C43) and maintained Sld3/7-dependence (C44) support the tail-binding model. The similar fraction of DNAs binding Cdc45 at different DDK levels (C45) indicates DDK affects multiplicity rather than binding competence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The observation of more than two Cdc45 molecules binding to Mcm2-7 indicates binding occurs on the Mcm4 and Mcm6 N-terminal tails rather than the core, as the core has only one Cdc45 binding site per Mcm2-7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide a logical inference based on structural knowledge (C47) and prior work on Sld3 binding sites (C48). The observation of >2 Cdc45 molecules (C43, C49) is incompatible with binding only to the two core sites in a double hexamer, supporting the tail-binding interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "After high-salt wash, never more than two Cdc45 molecules remain bound, consistent with CMG formation. The fraction of CMGs with two labeled Cdc45s is lower than expected for coordinated formation, suggesting independent CMG formation on the two Mcm2-7 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 show that high-salt-resistant binding is limited to \u22642 Cdc45s (C50), consistent with CMG structure (C51). The analysis of labeled Cdc45 stoichiometry (C52-C53) compared to a coordination model provides evidence for independent CMG formation (C54). However, the statistical analysis could be more rigorous in testing the coordination hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Cdc45 dwell times are similar at 1.3 nM and 6.5 nM DDK, and increasing DDK concentration increases both the number of phosphates per Mcm6/Mcm4 tail and the fraction of molecules modified, consistent with DDK regulating Cdc45 binding through tail phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 combine SM kinetic data (C55) with biochemical phosphorylation analysis (C56-C57) to support the model. The similar dwell times (C55) indicate DDK affects multiplicity not binding properties. The Phos-tag gel data (C56-C57) directly demonstrate graded phosphorylation with increasing DDK, supporting the mechanistic interpretation (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "GINS binding to Mcm2-7 shows DDK-dependent multiplicity similar to Cdc45, with up to 5+ GINS at high DDK but \u22642 after high-salt wash. GINS recruitment requires Dpb11, Cdc45, and Sld3/7, indicating co-recruitment with Cdc45 via the same Sld3/7 molecules. GINS multiplicity correlates with CMG formation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C71 provide comprehensive evidence for GINS recruitment paralleling Cdc45. The DDK-dependence (C59, C63-C65), protein dependencies (C61-C62, C68-C69), and correlation with CMG formation (C71) are well-documented. The requirement for both Cdc45 and Sld3/7 with similar effects (C69) supports co-recruitment (C70). The data are quantitative and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mcm2-7 mutants with reduced DDK phosphorylation sites on Mcm4 or Mcm6 tails show decreased CMG formation and reduced Cdc45 multiplicity. The Mcm6 tail deletion has a larger effect than the phosphorylation mutant, suggesting additional functions or phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 demonstrate that reducing phosphorylation sites decreases CMG formation (C72-C73) and Cdc45 multiplicity (C76), with correlation between these effects (C77). The larger effect of the Mcm6 deletion (C74) is noted but not fully explained (C75), which is appropriately acknowledged as requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In vivo BrdU ChIP-seq analysis shows that Mcm4 and Mcm6 DDK-phosphorylation-site mutants reduce but do not eliminate early origin initiation efficiency, demonstrating that mutations affecting CtG and CMG formation in vitro also impact replication initiation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide in vivo validation of the in vitro findings. The BrdU ChIP-seq data show reduced but not eliminated initiation (C78, C80-C81) at known early origins (C79), supporting the physiological relevance of the CtG mechanism (C82). This cross-validation between in vitro and in vivo systems strengthens the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study identifies a new CtG intermediate where Cdc45, GINS, and other proteins are recruited to DDK-phosphorylated Mcm2-7 N-terminal tails. DDK levels modulate CtG multiplicity, and only a subset of CtGs convert to CMGs. Higher CtG multiplicity increases CMG formation frequency, creating a mechanism that sensitizes helicase activation to DDK activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 and C83-C86 present the central findings and model. The two-stage recruitment (C3-C4), DDK-dependent multiplicity (C5), inefficient conversion (C6), and correlation with CMG formation (C7) are well-supported by the data. The proposed regulatory mechanism (C86) is a reasonable inference from the collective findings, though it remains a model requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study provides evidence that initial GINS and Cdc45 recruitment involves formation of a multi-protein complex with Mcm2-7 N-terminal tails, and that the CtG is an intermediate on the way to CMG formation. A consistent correlation exists between CtG multiplicity and CMG formation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 integrate prior knowledge (C87-C88) with current findings (C89-C93) to support the CtG model. The evidence that factors promoting CtG formation also promote CMG formation (C91-C92) and the consistent correlation between CtG multiplicity and CMG efficiency (C93) support the intermediate model (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The CtG complex minimally includes Cdc45 and GINS bound to Mcm4/Mcm6 tails, likely also containing Sld3/7, Dpb11, Sld2, and possibly Pol \u03b5. The requirement of Cdc45 for GINS recruitment suggests direct interactions between these proteins in the CtG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C105 propose the composition of the CtG complex based on protein dependencies and prior knowledge. While the minimal composition (C98) is supported by the data, the inclusion of other proteins (C99-C104) is largely speculative (C99, C103, C104). The inference about Cdc45-GINS interactions (C105) is reasonable but not directly demonstrated. Additional biochemical characterization would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The conversion from CtG to CMG is inefficient, with most CtGs dissociating before conversion. At low DDK, only 7/33 long-lived Cdc45 binding events converted to CMGs. The inefficient conversion combined with increased CtG multiplicity at higher DDK leads to increased CMG formation opportunities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 present the inefficient conversion model with quantitative support (C107). The similar dwell times and binding fractions at different DDK levels (C109) support the interpretation that DDK affects multiplicity rather than conversion efficiency (C110). However, the hypothesis that inefficiency is constant across DDK levels (C108) is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The findings connect to prior observations that increasing helicase-activation protein levels increases origin efficiency. The combination of multiple phosphorylation sites and inefficient CtG-to-CMG conversion tunes helicase activation to DDK levels, as demonstrated by reduced CtG/CMG formation in vitro and reduced origin initiation in vivo with phosphorylation-site mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 integrate the current findings with prior work to propose a regulatory mechanism. The in vitro (C114) and in vivo (C115) data with phosphorylation-site mutants support the model (C113, C116). The connection to prior observations (C111-C112) strengthens the physiological relevance of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The proposed mechanism is analogous to Sic1 proteolysis regulation by CDK, where multiple weak phosphorylation-dependent interactions create a switch-like response. In helicase activation, Mcm4/Mcm6 tails provide multiple phosphorylation sites and inefficient CtG-to-CMG conversion creates analogous sensitivity to DDK levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 draw an analogy to a well-characterized system (C118-C119) to explain the regulatory logic. The analogy is appropriate and helps conceptualize the mechanism (C120), though it remains a model. The parallel between multiple weak interactions and graded response is well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors acknowledge that additional processes beyond their model likely contribute to origin activation, including phosphatases that could regulate tail phosphorylation levels and remove phosphorylation after helicase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 appropriately acknowledge limitations and speculate about additional regulatory mechanisms. The recognition that phosphatases were not included (C122) and could play important roles (C123-C125) demonstrates appropriate scientific caution. These are reasonable speculations for future work.",
+    "result_type": "MINOR"
+  }
+]

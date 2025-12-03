@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C96",
+      "C97"
+    ],
+    "result": "SAMS-1 and SAMS-4 exhibit distinct tissue-specific expression patterns in C. elegans adults. SAMS-1 is expressed at the highest levels (comparable to GAPDH) in intestine, hypodermis, and head cells but is absent from the germline. SAMS-4 is expressed at lower levels but is present in germline, intestine, and hypodermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49, C96-C97 are supported by ModEncode expression data (C44-C46) and fluorescent protein tagging experiments (C47-C49, C96-C97) shown in Figure 1 and Figure 1\u2014figure supplement 1. The tissue-specific localization is confirmed by multiple independent visualization methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "sams-3 and sams-4 are bidirectionally expressed from the same promoter with 95% nucleotide sequence identity, and RNAi targeting affects both genes. Reduction of any SAM synthase (sams-1, sams-3, or sams-4) significantly reduces but does not eliminate SAM levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by genomic analysis (C50), fluorescence imaging showing reduction of both SAMS-3::mKate and GFP::SAMS-4 after RNAi (C51, Figure 1\u2014figure supplement 1C), and mass spectrometry measurements (C52, Figure 1\u2014figure supplement 1D).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Gene expression analysis reveals partial overlap between sams-1 and sams-4 knockdown effects, with about half of sams-4-upregulated genes also increasing in sams-1(RNAi) animals. However, lipid synthesis genes (fat-7) that respond to low PC in sams-1 animals are not upregulated after sams-4(RNAi).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by RNA-seq data shown in Figure 1\u2014figure supplement 2B and Supplementary file 1. The differential gene expression patterns demonstrate distinct functional roles for the two synthases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "sams-4(ok3315) mutants exhibit opposite heat shock survival phenotype compared to sams-1(lof), dying rapidly after heat shock, while sams-3(2932) mutants are indistinguishable from wild type. Under basal conditions, sams-4(RNAi) animals show modestly enhanced lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by survival assays shown in Figure 1C-D and Figure 1\u2014figure supplement 3B-C. The opposing phenotypes of sams-1 and sams-4 mutants are statistically significant (p < 0.0001) and reproducible across biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "During heat shock, sams-1(lof) animals maintain robust H3K4me3 levels despite low basal levels, and this heat shock-induced H3K4me3 requires sams-4. The survival advantage of sams-1(RNAi) animals after heat shock is decreased in sams-4(ok3315) background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by immunofluorescence imaging (Figure 1E-J) and survival assays (Figure 1\u2014figure supplement 3E). The genetic epistasis experiments clearly demonstrate that sams-4 is required for H3K4me3 maintenance and survival advantage in heat-shocked sams-1(lof) animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "SAM levels increase in control, sams-1, and sams-4 animals during heat shock (37\u00b0C for 2 hr), accompanied by decreases in methionine and SAH levels. However, despite SAM levels rising to control basal levels in heat-shocked sams-4(RNAi) animals, H3K4me3 remains low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by LC-MS metabolomics data (Figure 1\u2014figure supplement 3F-H). The dissociation between SAM levels and H3K4me3 in heat-shocked sams-4(RNAi) animals (C65-C66) is a critical observation suggesting SAM source matters beyond total abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RNAi of H3K4 methyltransferases set-2 and set-16 increases survival in sams-1(lof) animals after heat shock, while demethylases rbr-2 and spr-5 moderately reduce survival. Demethylases amx-1 and lsd-1 have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by survival assays shown in Figure 2A-C and Figure 2\u2014figure supplement 1. The opposing effects of KMTs and KDMTs on survival are statistically significant and suggest complex regulation of H3K4me3 dynamics during heat stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "RNAi of set-2 or set-16 has slight but statistically significant effects on sams-4(ok3315) survival, though survival remains significantly below controls. This suggests set-2 and set-16 may act redundantly in H3K4me3 deposition after heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by survival data (Figure 2\u2014figure supplement 1D-E). However, the modest effect size and continued poor survival (C77) indicate that loss of sams-4 cannot be fully rescued by reducing H3K4 methyltransferases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "CUT&Tag analysis reveals that heat-shocked sams-4(RNAi) animals have fewer overall H3K4me3 peaks, and 20-30% of peaks are temperature-specific. TSS enrichment of H3K4me3 is sharply reduced in both sams-1 and sams-4 samples at 15\u00b0C, with each condition showing 500-1000 specific peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by CUT&Tag data shown in Figure 3A-E and Supplementary file 3. The genome-wide analysis demonstrates distinct H3K4me3 landscapes associated with different SAM synthases and temperature conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Differential peak analysis shows that peaks present in both basal and heat-shocked conditions are enriched for metabolism genes. After heat shock, control animals gain enrichment in proteosome proteolysis (driven by E3 F-box genes), which is maintained in sams-1(RNAi) but not sams-4(RNAi) animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by WormCat enrichment analysis (Figure 3F-G, Figure 3\u2014figure supplement 2). The differential enrichment patterns provide mechanistic insight into why sams-4(RNAi) animals have reduced survival compared to sams-1(RNAi) animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Genome-wide H3K4me3 contains multiple populations with distinct TSS patterns. Peaks lost only in sams-4 RNAi have the lowest H3K4me3 levels, while peaks lost only after sams-1 RNAi have higher levels, demonstrating that individual SAM synthases are linked to distinct sets of H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by aggregation analysis shown in Figure 3\u2014figure supplement 2G. This hierarchical organization of H3K4me3 populations based on SAM synthase dependence is a key finding demonstrating functional specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "sams-1(RNAi) animals maintain normal H3K4me3 patterns in germline nuclei, while sams-4 RNAi abrogates germline H3K4me3 staining. However, embryo production and development appear normal in sams-4 RNAi embryos, suggesting germline expression differences alone do not explain differential H3K4me3 peak populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by immunofluorescence data (Figure 3\u2014figure supplement 3A) and observational data (C100). The interpretation (C101) is reasonable given the tissue-specific analysis, though additional experiments could strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "sams-4(RNAi) animals activate less than 25% of heat-induced genes compared to controls and lack enrichment in stress response and chaperone/proteosome categories. Both sams-1 and sams-4(RNAi) animals induce >600 SAM-synthase-specific genes not increased in controls, demonstrating distinct functional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 are supported by RNA-seq and WormCat analysis (Figure 4A-C, Supplementary file 4). The dramatic difference in heat shock gene induction between sams-4(RNAi) and control/sams-1(RNAi) animals provides a molecular explanation for the survival phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Genes dependent on sams-1 or sams-4 in the heat shock response have lower overall H3K4me3 levels at TSSs. sams-1-dependent genes show a strong 5' TSS peak not evident in control or sams-4-dependent genes. Individual gene knockdowns (T27F6.8, fbxa-59) have modest or no effects on survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 are supported by TSS aggregation plots (Figure 4D-F) and survival assays (Figure 4\u2014figure supplement 1B-C). The modest effects of individual gene knockdowns (C113-C114) suggest survival depends on systems-level effects rather than single genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Heat-shocked animals depend on sams-1 for normal expression of ~2000 genes enriched in metabolism (including lipid metabolism) and transcription factors (particularly nuclear hormone receptors). These categories do not depend on sams-4, demonstrating differential requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 are supported by RNA-seq and WormCat analysis (Figure 5A-C, Supplementary file 4). The differential dependence on sams-1 vs sams-4 for downregulated genes mirrors the pattern seen for upregulated genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Genes downregulated during heat shock show slight reduction in H3K4me3 peaks in control animals. RNAi of sams-1 or sams-4 broadly reduces H3K4me3 TSS enrichment at downregulated genes, with minimal differences before or after heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 are supported by TSS aggregation analysis (Figure 5D-F). The observation that H3K4me3 patterns are established before heat shock (C125) suggests a bookmarking or priming mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Genes with sams-1-dependent H3K4me3 at 15\u00b0C that lose expression during heat shock are enriched for lipid beta-oxidation and NHR transcription factors, including nhr-68. Expression of nhr-68 under a heterologous promoter has moderate but significant effects on survival, suggesting downregulation of nhr-68 in sams-1 animals may enhance survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 are supported by enrichment analysis (Figure 6A), CUT&Tag data (Figure 6D), and survival assays (Figure 6E). The heterologous promoter experiment (C129) provides functional validation, though the effect is modest, consistent with systems-level regulation (C130 is appropriately speculative).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Individual SAM synthases have distinct effects on a single methylation target (H3K4me3), demonstrating that examining how SAM is produced allows differentiation of phenotypic effects and that the enzymatic source of SAM affects its functional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 represent the central conclusion of the study, supported by the totality of evidence including differential survival phenotypes, distinct H3K4me3 patterns, and differential gene expression. This is a major conceptual advance in understanding SAM metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "H3K4me3 populations can be separated based on SAM synthase requirements, and the importance of H3K4me3 during heat shock is reflected in interactions between SAM synthases and KMTs/KDMTs. In the context of low SAM from SAMS-1, reducing H3K4me3 can have additional survival benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 are supported by CUT&Tag analysis showing distinct H3K4me3 populations (C144) and genetic interaction studies with set-2/set-16 (C145-C146, Figure 2). The context-dependent effects of H3K4me3 reduction are well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "SAM synthase-specific effects vary by biological context: loss of sams-1 improves heat stress survival but limits bacterial pathogen resistance. The altered methylation landscape in sams-1 animals provides a context favorable to extended lifespan and heat stress survival but limits other stress responses, likely through systems-level effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 are supported by current and cited data. C150 is appropriately speculative given the modest effects of individual gene manipulations. The context-dependence of SAM synthase function is a key finding with implications for understanding 1-carbon cycle biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "Lowering SAM or reducing H3K4me3 does not represent a single biological state; effects depend on synthase-specific regulation or context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 represent the overarching conclusion supported by the entire study. The demonstration that different SAM synthases produce distinct biological outcomes despite similar effects on total SAM levels is the major conceptual contribution.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C80"
+    ],
+    "result": "Robust vestibular responses were discovered in PCC neurons. A total of 499 neurons were recorded from PCC and RSC, with 68% of PCC neurons (252/372) significantly modulated by translation and 59% (161/271) by rotation. About half of PCC neurons (50%, 131/263) responded to both translation and rotation stimuli, indicating convergent input from otolith organs and semicircular canals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C32, and C80 provide converging evidence from electrophysiological recordings showing robust vestibular responses in PCC. The proportions of temporally tuned neurons are clearly quantified with appropriate statistical criteria (p<0.01, one-way ANOVA), and the data are supported by Figure 4A and Table 1. The sample sizes are substantial (381 PCC neurons, 118 RSC neurons) across three animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "RSC contained moderate vestibular temporal modulations and lacked significant spatial tuning compared to PCC. Only 32% (37/114) of RSC neurons showed temporal modulation to translation and 29% (25/87) to rotation. Spatial tuning was present in only 14% (5/37) and 36% (9/25) of temporally tuned RSC neurons for translation and rotation, respectively. The average DDI in RSC (0.49\u00b10.013 translation, 0.50\u00b10.017 rotation) was significantly weaker than in PCC (p=0.00017 and p=0.0011, t-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C33-C34, C38-C39, C42-C43 collectively demonstrate that RSC has weaker vestibular responses than PCC. The proportions are clearly quantified, statistical comparisons are appropriate (t-tests), and the findings are supported by Figure 4A and Table 1. The conclusion that RSC lacks significant spatial tuning is well-supported by the low percentages of spatially tuned neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PCC neurons showed strong spatial tuning with 75% (189/252) of temporally tuned neurons showing significant direction tuning under translation and 77% (124/161) under rotation. The average DDI was 0.57\u00b10.007 for translation and 0.58\u00b10.009 for rotation. Preferred directions were distributed broadly but biased toward leftward/rightward motion in the horizontal plane (p=0.01, Uniform test), while preferred rotation axes concentrated around the horizontal plane corresponding to pitch (p=0.0225, Uniform test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C40-C41, C44-C46 provide comprehensive characterization of spatial tuning in PCC. The proportions and DDI values are clearly quantified with appropriate statistics (one-way ANOVA for spatial tuning, Uniform test for distribution analysis). The findings are supported by Figure 4 and demonstrate both the strength and distribution patterns of spatial preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "Control experiments confirmed that vestibular responses in PCC are not due to visual cues from residual retinal slip. Responses under fixation and total darkness conditions were highly consistent (DDI correlation r=0.79, p<<0.001; firing rate correlation r=0.80, p<<0.001), with no significant differences in mean values (p=0.36 and p=0.74, paired t-tests).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C51 demonstrate appropriate control experiments. The darkness control shows strong correlations between conditions and no significant differences in key metrics (DDI, firing rate), supported by Figure 6A-C and Table 2. The statistical tests (Pearson correlation, paired t-tests) are appropriate for comparing responses across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C52"
+    ],
+    "result": "Sound control experiments largely excluded auditory cues as the source of vestibular responses. None of the 11 neurons tested showed significant temporal tuning in the sound control condition (p>0.01, one-way ANOVA), and all showed weak correlation with vestibular condition responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C52 describe sound control experiments with appropriate statistical criteria. However, C52 appropriately notes caveats that more thorough investigation is needed covering spatial location, binaural effects, and loudness. The sample size (n=11) is modest but the results are clear and supported by Figure 6D and Table 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "A velocity-acceleration (VA) model captured PCC data well with median R\u00b2 of 0.49 for translation and 0.42 for rotation. The log V/A ratio distribution in PCC was significantly smaller than 0 for translation (median=-0.21, p<<0.001) and larger than 0 for rotation (median=0.47, p<<0.001), indicating PCC neurons carry more acceleration signals in translation and more velocity signals in rotation. Fitting in RSC was significantly worse (p<<0.001, t-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53-C57 describe the VA model fitting results with appropriate goodness-of-fit metrics (R\u00b2) and statistical tests (Wilcoxon rank sum test, t-test). The findings are supported by Figures 7-8. The model captures a substantial proportion of variance in PCC but not RSC, and the differential weighting of velocity vs. acceleration components across conditions is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A full PVAJ model including position, velocity, acceleration, and jerk components provided significantly better fits than the VA model (p<<0.001, paired t-test) in PCC. Majority of PCC neurons showed significant positive partial correlations for all temporal components (p<0.05). BIC analysis confirmed that including jerk and position terms captured more signal (p<<0.001). Velocity was dominant in rotation, while acceleration and jerk weighed more in translation. Position signal was less dominant but more prevalent than in extrastriate visual cortex. Fitting RSC with PVAJ was much worse than PCC (p<<0.001, t-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-C67 comprehensively describe the PVAJ model results. The use of BIC to account for model complexity (C64) is appropriate. Partial correlation analysis (C63) confirms independent contributions of all components. The findings are well-supported by Figures 9-10. The comparison with RSC (C62) highlights regional differences in temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Comparison with MSTd revealed that velocity signals were more prevalent in MSTd (p<<0.001, Wilcoxon rank sum test), while the full PVAJ model captured more signal types in PCC than MSTd (p<<0.001, t-test). Specifically, position signals were more prevalent in PCC than MSTd (p<<0.001, t-test), suggesting that posterior cingulate neurons reserve self-motion signals from upstream areas but further develop position signals useful for path integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide a well-designed comparison between PCC and MSTd using the same modeling framework. The statistical tests are appropriate (Wilcoxon rank sum test, t-test, BDI analysis), and the findings are supported by Figure 11. The interpretation that position signals are further developed in PCC (C72) is reasonable given the quantitative differences, though it remains somewhat speculative about functional implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Visual self-motion signals were much weaker than vestibular signals in both PCC and RSC. In PCC, only 31% (114/367) showed temporal modulation to translation optic flow and 32% (84/260) to rotation, with only about one-third of these showing spatial tuning. In RSC, only ~11-14% showed temporal modulation with virtually no spatial tuning. The average visual DDI in PCC was significantly weaker than vestibular DDI (p<<0.001, t-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C73-C79 clearly demonstrate weak visual responses compared to vestibular responses. The proportions are well-quantified, statistical comparisons are appropriate (t-test, one-way ANOVA), and findings are supported by Figure 12 and Table 1. The conclusion that posterior cingulate is vestibular-dominant is well-supported by the large difference in response proportions and tuning strength between modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C81",
+      "C107"
+    ],
+    "result": "The authors conclude that macaque posterior cingulate region carries vestibular-dominant self-motion signals with plentiful temporal components useful for path integration, and that PCC and RSC may contribute to spatial navigation in different ways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C81, C107 represent the main conclusions drawn from the experimental findings. These are well-supported by the comprehensive characterization of vestibular responses (strong in PCC, moderate in RSC), weak visual responses, multiple temporal components revealed by modeling, and differential properties between PCC and RSC. The functional interpretation regarding path integration is reasonable given the presence of position signals and anatomical connectivity, though direct behavioral evidence is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors provide background on self-motion signals in navigation, stating that self-motion signals are distributed across parietal-temporal lobes and propagate to hippocampal system via hubs including PCC and RSC. They cite anatomical connectivity showing PCC/RSC project to entorhinal/parahippocampal cortices and receive input from areas like 7a, MSTd, PIVC, and VPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C17 provide background context supported by appropriate citations to established literature. These claims establish the rationale for studying PCC/RSC as potential hubs between cortical self-motion areas and hippocampal navigation system. The anatomical connectivity claims are well-supported by multiple cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Previous studies have implicated PCC and RSC in spatial navigation through various approaches including virtual navigation tasks, lesion studies, and fMRI. Navigation-related neurons were reported in monkey PCC during virtual navigation, lesions impaired spatial memory, and vestibular/visual signals were detected in human PCC using fMRI. HD cells were found in rat RSC, and RSC inactivation disrupts hippocampal HD and place cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 summarize prior work on PCC/RSC involvement in navigation, appropriately citing relevant studies. These provide important context for the current work and establish that while spatial functions have been indicated, detailed characterization of self-motion signals at single-neuron level was lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors compare their findings to previous fMRI studies, noting that while fMRI studies found vestibular signals in human PCC, those techniques have limitations including inability to simulate accurate 3D motion and slow temporal resolution. They found rough consistency with fMRI studies but with more spatiotemporal detail. They speculate that weak visual responses in their study compared to some prior reports may reflect differences in stimulus complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 provide appropriate discussion of how the current findings relate to prior fMRI work. The limitations of fMRI techniques noted (C83-C84) are accurate. The speculation about visual response differences (C86) is reasonable given the different stimuli used across studies, though it remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors discuss functional implications of vestibular signals in PCC, noting inputs from thalamus, PIVC, and parietal-temporal cortices. They suggest PCC is a node in the cortical vestibular network with properties similar to other vestibular areas. The bias toward leftward/rightward preferred directions may be useful for heading discrimination, and rotation signals may be essential for HD cells in 3D environments. Position signals may reflect integration of velocity as information propagates toward hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C92 provide functional interpretations of the findings. While the anatomical connectivity (C87) is well-cited and the similarity to other vestibular areas (C88) is supported by the data, the functional interpretations (C89, C91-C92) are largely speculative. The link to heading discrimination (C89) is based on information theory from a cited study but not directly tested. The role in 3D HD cells (C91) and velocity integration (C92) are reasonable hypotheses but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors discuss additional functional roles of PCC including outputs to vestibular nucleus potentially involved in gaze control, connections to visceral/emotion systems via PIVC, and involvement in cognitive functions like spatial choice and reward. They suggest vestibular signals in PCC may compose a high-dimensional representation for flexible downstream readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C99 discuss broader functional implications. The anatomical connections (C93, C96-C97) are appropriately cited, but the functional interpretations are largely speculative. The suggestion of high-dimensional mixed representations (C95) is a theoretical interpretation not directly tested. The link to emotion (C98) and cognitive functions (C99) are reasonable given the cited literature but represent future directions rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors discuss differences between macaque and rodent RSC, noting that mice RSC shows vestibular rotation signals and visual responses, while macaque RSC showed weak visual responses. They cite lesion studies showing RSC lesions impair landmark-based but not self-motion-based navigation in mice, suggesting RSC may not be heavily involved in vector-based navigation. They speculate that homologous areas may differ across species and that RSC signals may be less reliable or more complex than captured by their models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C106 discuss species differences and attempt to reconcile findings with rodent literature. The citations to rodent studies (C100-C103) are appropriate. However, the interpretations about functional differences (C104) and species variation (C105) are speculative. The suggestion that RSC signals may be more complex (C106) is a reasonable interpretation of poor model fits but could also reflect genuinely weaker or less reliable signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The stimulus parameters used were peak velocity ~0.3 m/s and peak acceleration 1 m/s\u00b2 for translation, and peak angular velocity ~20\u00b0/s and peak acceleration 60\u00b0/s\u00b2 for rotation. The overall response delay (\u03c4) in both VA and PVAJ models was around 0 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 describe methodological details about stimulus parameters and model fitting results. These are clearly stated and supported by the methods section and model fitting results. The near-zero response delay is an interesting finding that suggests minimal processing lag.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A transgenic mouse model (Cdh5-DTR) was developed where intratracheal administration of diphtheria toxin (DT) at 10 ng resulted in selective ablation of >70% of lung endothelial cells by day 3, producing severe acute lung injury that resolved by day 7 with full recovery of EC numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C32-C34 demonstrate EC-specific DTR expression and ~70% EC depletion at day 3 with recovery by day 7 (Figures 1B-E). Claims C2, C30-C31 show dose-dependent effects with survival at doses <20 ng and modest RVSP increases. The model is well-characterized with appropriate controls and multiple validation methods (flow cytometry, immunostaining, apoptosis markers).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DT-induced EC ablation caused severe acute lung injury characterized by increased lung permeability at day 3 (returning to normal by day 7), elevated lung injury scores, and neutrophil infiltration, with injury confined to the lungs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 provide converging evidence from Evans blue permeability assays (Figures 2A-B), histological lung injury scoring (Figures 2C-D), and flow cytometry for neutrophils (Figure 2E). Statistical significance is reported (p<0.01, p<0.05) with appropriate controls. Claim C36 confirms lung-specific injury with no permeability changes in other organs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Single-cell RNA sequencing of lung tissue at baseline and days 3, 5, and 7 post-DT identified 35 distinct cell populations, with endothelial cells and macrophages showing the greatest transcriptional changes after EC ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 describe a well-designed scRNA-seq experiment with appropriate timepoints and biological replicates (n=3 per group). UMAP analysis identified 35 clusters (Figure 3B), and Augur machine learning analysis objectively identified ECs and macrophages as most affected (Figure 3D). The experimental design with multiplexed barcoding is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Eight distinct endothelial clusters were identified, including five gCap EC populations and one aCap EC (aerocyte) population. Cluster 1 uniquely contained four temporal zones (days 0, 3, 5, 7), while Cluster 7 emerged at day 5 with high Mki67 expression. Only Clusters 1 and 7 maintained stable cell numbers and showed proliferation, consistent with roles in microvascular repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C50 are well-supported by scRNA-seq data showing 8 EC clusters with distinct gene expression profiles (Figures 4A-D, Figure 4\u2014supplement 1). The temporal specificity of Cluster 1 zones is clearly demonstrated (Figure 4B), and proliferation is confirmed by Mki67 expression (Figure 4C). Cell number quantification supports the repair role of Clusters 1 and 7 (Figure 4D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "RNA velocity and trajectory analysis revealed that Cluster 1 serves as a transitional population giving rise to other depleted EC populations (gCap, arterial, venous), with Zone 2 showing DNA synthesis (S phase) and Zone 3 showing proliferation (G2M phase). Driver gene analysis identified specific genes mediating transitions to different EC subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by scVelo RNA velocity analysis showing directional vectors from Cluster 1 to other EC populations (Figure 5A), cell cycle scoring (Figure 5B), driver gene identification (Figure 5C), and latent time analysis (Figure 5D). However, the authors appropriately note that velocity analysis infers timeline based on genomic cues and is agnostic to actual timing, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "At baseline, apelin is uniquely expressed in aCap ECs (Cluster 2) which also express tip cell markers (Kdr, Npl1, Cd34), while apelin receptor (Aplnr) is expressed only in gCap ECs which express stalk cell markers (Hey1, Flt1, Notch1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C59-C62 are well-supported by scRNA-seq gene expression data (Figure 6A, Figure 6\u2014supplement 1A-B) and consistent with prior literature (Gillich et al., 2020; Vila Ellis et al., 2020; Blanco and Gerhardt, 2013; Zecchin et al., 2017). The tip/stalk cell marker expression pattern is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "At day 3 post-injury, a novel gCap EC population emerged in Zone 2 of Cluster 1, characterized by de novo expression of apelin (normally restricted to aCap ECs) together with stem cell markers Procr and progenitor markers Angpt2 and Cd34. This represents the first demonstration of apelin expression by gCap ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C63-C68 are strongly supported by scRNA-seq showing apelin and Procr co-expression in Zone 2 at day 3 (Figure 6A-B), confirmed by immunofluorescence (Figure 6C). The novelty claim (C66) is reasonable given prior literature showing apelin restricted to aCap ECs. Expression of Angpt2 and Cd34 further supports the stem/progenitor phenotype (Figure 6\u2014supplement 1A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C69",
+      "C70",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "By day 5, the apelin-positive stem-like cells transitioned to a highly proliferative progenitor phenotype, with expression of apelin being replaced by apelin receptor (Aplnr) and the pro-proliferative transcription factor Foxm1, with highest proliferative density in Cluster 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C69-C70, and C115-C117 are supported by scRNA-seq showing temporal shift from apelin to Aplnr expression (Figure 6A), co-expression with Foxm1 and Mki67 at day 5 (Figures 4C, 6A, Figure 6\u2014supplement 1B), and highest proliferative density in Cluster 7 (Figure 4C). The transition from tip-like to stalk-like proliferative cells is consistent with cited literature (Palm et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C71",
+      "C72"
+    ],
+    "result": "The proliferative progenitor cells were responsible for rapid replenishment of all depleted EC populations by day 7, at which point Procr expression was lost and apelin expression returned to baseline (restricted to aCap ECs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C71-C72 are supported by RNA velocity vectors showing differentiation from Cluster 1 to other EC types (Figure 5A), recovery of EC numbers by day 7 (Figure 1E), loss of EPCR staining (Figure 6C), and restoration of apelin expression pattern (Figure 6A). However, the causal claim that these cells are \"responsible\" for replenishment relies on inference from trajectory analysis rather than direct lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Transcription factor activity analysis revealed that proliferative Cluster 7 showed the greatest increase in TF activity, with Foxm1 and cell cycle regulators (E2f family, Myc, Tfdp1) among top candidates. aCap ECs uniquely showed strong Nanog and Sox10 activity, while Cluster 3 showed Elk4 activity consistent with early response gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by decoupleR transcription factor analysis (Figure 6\u2014supplement 2). The identification of Foxm1 and cell cycle TFs in proliferative clusters is biologically consistent. The Elk4 finding in Cluster 3 is supported by both TF analysis and known Elk4 function binding to Fos promoter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Reanalysis of publicly available scRNA-seq data from an LPS-induced ALI model revealed similar regenerative EC populations: a gCap EC cluster co-expressing Apln/Procr appeared at 6 hours post-LPS, followed by a proliferative Mki67/Foxm1-positive population at day 3, suggesting these regenerative populations are relevant to commonly used ALI models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by reanalysis of GSE148499 dataset (Figure 6\u2014supplement 3D). The observation of similar Apln/Procr co-expressing populations in an independent ALI model strengthens the generalizability of the findings. However, the LPS model differs mechanistically from EC ablation, so the extent of similarity requires careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Differential gene expression and pathway enrichment analysis revealed distinct signatures for each EC cluster: Cluster 1 showed similarity to Cluster 0 with increased oxidative phosphorylation and EIF2 signaling; Cluster 2 (aerocytes) showed aCap genes and PKA/Ephrin B signaling; Cluster 3 showed early response genes and inflammatory pathways; Cluster 7 showed ~1200 upregulated genes including proliferation genes and cell cycle pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 are well-supported by comprehensive differential expression analysis (Figure 7A-B) and pathway enrichment (Figure 7C, Figure 7\u2014supplement 1). The large number of DEGs in Cluster 7 (~1200) is consistent with its highly proliferative phenotype. Statistical thresholds (FDR <0.05) are appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Temporal analysis within Cluster 1 zones revealed ~800-1000 DEGs at days 3 and 5 compared to day 0, with Zone 2 showing cell growth/injury response genes and EIF2/integrin/fibrosis signaling; Zone 3 showing proliferation/survival genes and mTOR/oxidative phosphorylation pathways; and Zone 4 showing few DEGs consistent with normalization by day 7. Apelin signaling pathways (PI3/Akt, mTor, Eif4/p70S6K) were strongly activated during emergence of apelin-expressing gCap ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C99 provide detailed temporal characterization of Cluster 1 supported by volcano plots (Figure 8A-B), Venn diagrams (Figure 8C), heatmaps (Figure 8D), pathway analysis (Figure 8E, Figure 8\u2014supplement 1), and chord diagram (Figure 8\u2014supplement 2). The progression from injury response to proliferation to differentiation is biologically coherent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Cell-cell interaction analysis using NicheNet revealed that at day 3, transitional ECs (Cluster 1, Zone 2) received signals from 21 cell clusters via ligands including Ocln, Fat1, Plxnb2, and Efnb1 (all mediating cell-cell contact signaling). By day 5, interactions expanded to five endothelial receiver populations responding to ligands from 31 cell clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 are supported by NicheNet analysis (Figures 9A-D). The identification of cell-cell contact ligands is biologically appropriate for tissue repair. The expansion of interactions at day 5 is consistent with active regeneration. However, NicheNet predictions are computational inferences that would benefit from experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Apelin signaling is critical for ALI resolution and survival: lung apelin expression decreases with age, aged mice (52 weeks) showed reduced survival post-DT (24% vs 82% in young mice), and treatment with apelin receptor antagonist ML221 resulted in 100% mortality by day 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C109-C111 provide strong evidence for apelin's role through multiple approaches: age-related apelin reduction (Figure 10A-B), age-dependent survival differences (Figure 10C, p<0.01), and complete lethality with ML221 antagonist (Figure 10C). However, the ML221 experiment lacks information on dose optimization, pharmacokinetics, and potential off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors conclude that selective EC ablation produces severe ALI with features of ARDS, that >70% EC loss is compatible with survival due to efficient regeneration, and that the lung has remarkable capacity for microvascular EC regeneration orchestrated by apelin-expressing gCap endothelial stem-like cells giving rise to apelin receptor-positive proliferative progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 and C123-C124 represent summary conclusions well-supported by the collective experimental evidence. The model demonstrates EC ablation is sufficient for ALI (C114), survival despite massive EC loss (C113), and the temporal sequence of stem-like to progenitor-like cells (C123-C124). These are appropriate integrative conclusions from the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C122"
+    ],
+    "result": "Procr was not expressed by any EC population in healthy lung and only appeared transiently in gCap stem/progenitor-like cells during repair, with ~15% of all lung ECs expressing Procr at day 3 post-DT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120 and C122 are supported by scRNA-seq showing Procr expression only at day 3 (Figure 6A) and immunofluorescence confirming absence at days 0 and 7 (Figure 6C). The 15% estimate (C122) appears reasonable based on the data, though the exact calculation method is not detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "The authors speculate that Procr marks primitive endothelial-like hematopoietic precursors involved in vascular development, is expressed by ~90% of bone marrow side population cells with regenerative activity, and that lung vascular injury re-activates a fundamental vascular stem cell central to both development and repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 are appropriately labeled as speculation and supported by citations (Lan, 2017; Dzierzak and Bigas, 2018; Balazs et al., 2006). Claim C121 is speculative inference from the transient Procr expression pattern. While biologically plausible, these claims require additional experimental validation including lineage tracing and functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction provides context on ALI/ARDS epidemiology, lack of therapies, COVID-19 relevance, endothelial injury role, prior work on Foxm1 and apelin, and characterization of aCap and gCap EC populations in normal lung.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C28 represent background information appropriately supported by citations to published literature. These claims establish the rationale for the study and are not primary findings. The citations appear appropriate for the statements made.",
+    "result_type": "MINOR"
+  }
+]

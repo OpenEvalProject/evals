@@ -1,0 +1,2510 @@
+{
+  "submission": {
+    "id": "4a60a8a9-a9b6-4c8b-b9d4-47c9ae99f45a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:40:23.647095Z",
+    "updated_at": "2025-12-03T03:40:23.647095Z"
+  },
+  "content": [
+    {
+      "id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "submission_id": "4a60a8a9-a9b6-4c8b-b9d4-47c9ae99f45a",
+      "content_type": "manuscript",
+      "content_text": "# Artistoo, a library to build, share, and explore simulations of cells and tissues in the web browser\n\n## Authors\n\n- Inge MN Wortel<sup>1</sup> ([ORCID: 0000-0003-3362-5229](https://orcid.org/0000-0003-3362-5229)) \u2020\n- Johannes Textor<sup>1</sup> ([ORCID: 0000-0002-0459-9458](https://orcid.org/0000-0002-0459-9458)) \u2020\n\n### Affiliations\n\n1. Department of Tumor Immunology, Radboud Institute for Molecular Life Sciences Nijmegen Netherlands\n2. Institute for Computing and Information Sciences, Data Science, Radboud University Nijmegen Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe cellular Potts model (CPM) is a powerful in silico method for simulating biological processes at tissue scale. Their inherently graphical nature makes CPMs very accessible in theory, but in practice, they are mostly implemented in specialised frameworks users need to master before they can run simulations. We here present Artistoo (Artificial Tissue Toolbox), a JavaScript library for building \u2018explorable\u2019 CPM simulations where viewers can change parameters interactively, exploring their effects in real time. Simulations run directly in the web browser and do not require third-party software, plugins, or back-end servers. The JavaScript implementation imposes no major performance loss compared to frameworks written in C++; Artistoo remains sufficiently fast for interactive, real-time simulations. Artistoo provides an opportunity to unlock CPM models for a broader audience: interactive simulations can be shared via a URL in a zero-install setting. We discuss applications in CPM research, science dissemination, open science, and education.\n\n## Introduction\n\nA growing community of computational biologists uses simulation models to reason about complex processes in biological systems. The cellular Potts model (CPM, Box 1) is a well-established framework for simulating interacting cells. Originally proposed as a model for cell sorting (Graner and Glazier, 1992), the CPM has since been extended with a plethora of biological processes such as proliferation, apoptosis, cell motion, and chemotaxis \u2013 allowing CPM users to model diverse phenomena ranging from slime mould formation to blood vessel development, tumour growth, and cell migration (Mar\u00e9e et al., 2007; Szab\u00f3 and Merks, 2013; Hirashima et al., 2017).\n\nNowadays, several mature modelling frameworks with CPM implementations exist, such as CompuCell3D (Swat et al., 2012), Morpheus (Starru\u00df et al., 2014), Tissue Simulation Toolkit (Daub and Merks, 2015), and CHASTE (Mirams et al., 2013). Although CPMs are relatively efficient models, tissue-scale simulations still require substantial computational resources. For this reason, all of the abovementioned frameworks rely on the C++ programming language for computation steps, which requires them to be built for and installed on the user\u2019s native operating system.\n\nHere, we present \u2018Artistoo\u2019 (Artificial Tissue Toolbox), a CPM framework built entirely in JavaScript. Although interpreted languages like JavaScript have classically been deemed too inefficient for running simulations, we found that this no longer holds: investments by major tech companies have tremendously improved JavaScript engines over the past years, to the point that our CPM now has no major performance disadvantage compared to existing C++ frameworks.\n\nThe JavaScript implementation of Artistoo opens up new possibilities for rapid and low-barrier sharing of CPM simulations with students, collaborators, and readers or reviewers of a paper. Unlike existing frameworks, Artistoo allows building simulations that run in the web browser without the need to install any software: Artistoo models run on any platform providing a standards-compliant web browser \u2013 be it a desktop computer, a tablet, or a mobile phone. These simulations can be published on any web server or saved locally and do not rely on any back-end servers being available. They can be made explorable, enabling viewers to interact with the simulation and see the effect of changing model parameters in real\u00a0time.\n\nIn this paper, we will first briefly explain the key design principles behind Artistoo. We will then highlight applications in teaching, research, science dissemination, and open science where we envision that the zero-install, web-based architecture of our framework could be particularly useful.\n\n## Results\n\n### Implementation\n\nArtistoo is a JavaScript library implemented as an ECMAScript 6 module, which can be loaded into an HTML page or accessed from within a Node.js command line application. Artistoo is an open-source library released under the MIT license and is freely available on GitHub at https://github.com/ingewortel/artistoo (copy archived at swh:1:rev:551ee76c3a972e86ac72ed7e977356a75d091763; Wortel and Textor, 2020).\n\n#### Design philosophy\n\nComputational modelling research involves two important, but distinct categories of researchers that tend to have different types of expertise. On the one hand, there are the model builders, the scientists designing the models and performing the research; these are typically computational biologists with at least some basic programming skills. On the other hand, there are the model viewers, members of the broader research community who should be able to access and understand these models once they are built; this group may also include biologists and students without programming expertise.\n\nA major challenge in the design of modelling software is to cater to both these groups at the same time. Tools revolving around a front-end graphical user interface\u00a0(GUI) are ideal for viewers (no programming required), but tend to lose some of the flexibility desired by builders (anything not yet implemented in the GUI typically becomes harder to do, and it becomes more difficult to automate simulations and post-processing). Vice versa, a more flexible coding-based tool is comfortable for builders but rapidly becomes inaccessible for most viewers.\n\nThe implementation in JavaScript allows Artistoo to resolve this problem by presenting each user group with a different interface (Figure 1). Model viewers access an HTML page provided by the model builder, which contains a model visualisation and interactive access to the most important parameters (improving transparency because viewers are not distracted by an overload of options they do not need). Such HTML pages are accessible in a zero-install setting, explorable via parameter sliders, and remain highly accessible: no knowledge of the Artistoo framework or model details is required for viewers to operate them.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61288/elife-61288-fig1-v2.jpg)\n\nModel builders create these web applications using the Artistoo framework. They can do this at different levels of complexity: Artistoo users build models via simple changes to configuration objects (requiring very little knowledge of Artistoo or programming), or by incorporating the many available methods in a few simple lines of code; this requires no in-depth knowledge of the framework \u2018under the hood\u2019 architecture while still providing high flexibility. Finally, Artistoo developers have the ultimate freedom to add custom plugins to the existing framework where needed. Only this group requires in-depth knowledge of the framework and slightly more advanced JavaScript skills. The online documentation at https://artistoo.net/ helps both these groups to get started with the framework.\n\n#### Approachability\n\nThe methods currently implemented in the framework allow users to simulate, visualise, and analyse a wide range of CPM models (Figure 2A). Our Github repository contains example code for models of various biological processes (e.g. simulations of tissues, cell migration, and cell interactions). First-time users can download these HTML pages and modify parameters without needing to learn the implementation details of the framework, or to have programmed in JavaScript before. Alternatively, the Simulation class provides default methods for setting up and visualising simulations, allowing users to get started with the library without having to set up this \u2018boilerplate\u2019 code themselves. Advanced users can instead build simulations from scratch and customise them using the many available options and methods. Once they become accustomed with the framework, they can also develop and plug in their own code modules (see \u2018Modularity and flexibility\u2019 below). An example interactive HTML simulation (Figure 2B) is included in Appendix 1, Interactive Simulation 2. Full documentation and a user manual with step-by-step tutorials are available at https://artistoo.net/.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61288/elife-61288-fig2-v2.jpg)\n\n**Figure 2.:** (A) Artistoo supports simulation of diverse biological processes; (B) users can interact with browser-based simulations via sliders, in real\u00a0time. (C) Artistoo performance is comparable to that of the Morpheus framework. Data show wall times (mean\u00a0\u00b1\u00a0SD of five\u00a0runs) for four CPM models implemented in both frameworks (see Materials and methods for implementation details). (D) Scalability of the cell sorting simulation; simulation speed in Monte Carlo Steps per second (MCS/s) for different grid sizes (mean \u00b1 SD of five\u00a0runs). Red line indicates 20 frames per second, a minimum speed required for a \u2018real-time\u2019 simulation for the human visual system. See also Appendix 1 for interactive versions of the simulations shown in (B)\u2013(D). Artistoo Node.js scripts for the simulations in (C)\u00a0and\u00a0(D) are available on GitHub (Wortel and Textor, 2020).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61288/elife-61288-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Different plot of the data from Figure 2D showing wall time (s) for the entire simulation of 2500 MCS at different domain sizes (mean\u00a0\u00b1\u00a0SD of five\u00a0runs); simulation duration scales linearly with the number of pixels on the grid.\n\n#### Modularity and flexibility\n\nA typical CPM simulation consists of different types of components: the grid on which cells are simulated, the energy rules governing cell behaviour in the model, separate processes such as cell proliferation or diffusion, and the visualisation and quantification methods used to produce outputs. A key strength of the CPM is that it can be easily extended with custom terms to model specific processes. To facilitate such customisation, we have set up the code in a highly modular fashion. These modules can be combined freely to build a custom simulation. In addition, developers can supply their own custom modules \u2013 containing any of the aforementioned simulation components \u2013 to integrate with the framework and to share with other users.\n\n#### Performance and scalability\n\nAlthough maximal performance is not a design goal of our framework per se, Artistoo should not be much slower than comparable frameworks either: running explorable simulations in real-time is only feasible if computations are reasonably efficient. Indeed, we implemented various simulations both in Artistoo and in Morpheus and found that both frameworks had similar performance (Figure 2C). In fact, Artistoo was slightly faster in all but one of these examples, although differences tended to be small; even in the case where Artistoo was slower (cell division), the difference in performance was not so large that real-time browser simulations became infeasible. Simulation speed scales linearly with the total number of pixels on the grid and does decrease for very large systems, but real-time simulations remain feasible for a reasonable range of grid sizes (Figure 2\u2014figure supplement 1, Figure 2D). This would allow sharing of at least a reasonable prototype of larger-scale models.\n\n#### Portability\n\nTo make Artistoo more accessible for users familiar with other frameworks, we have built a prototype for an online tool that converts Morpheus model files into Artistoo code (https://artistoo.net/converter.html). In some cases, models may not (yet) be fully portable due to differences in the types of models supported; in that case, the tool returns the closest possible analogue and logs any changes it had to make, providing suggestions to help users further. This tool offers a starting point for any users who wish to build Artistoo web applications from their existing models. A similar tool converts Artistoo models to Morpheus XML, allowing users to continue in another framework (e.g. for upscaling models, multiscale models, etc).\n\n### Applications\n\nWe here highlight a number of settings where Artistoo might complement other available modelling frameworks, focusing on the unique feature of Artistoo: it allows users to build and share explorable simulations in a zero-install setting. We discuss how this opens up novel opportunities of sharing CPM-based research and provide examples from our own work.\n\n#### Teaching\n\nWhen organising practical computer work in the context of classroom teaching, getting software to work on every student\u2019s computer can consume a substantial amount of time and effort. Especially when teaching large classes in limited time, installing an entirely new modelling framework for a single-course assignment may not be appropriate. The zero-install feature of Artistoo might therefore be attractive for use of CPM modelling in the classroom. We frequently use the framework in teaching and found it feasible to let students run and understand CPM models in a workshop of just a few hours \u2013 even when students had no programming experience and were given just a single lecture on the CPM in advance. We provide an introductory assignment on the CPM in Application 1 in Appendix 2, which readers may use and adapt freely for their own courses, and refer to Interactive Simulation 1 in Appendix 1 for an interactive tutorial on the CPM.\n\n#### Communication and open science\n\nWhile the move towards open science has prompted many to share their code with publications, understanding and using this code often remains challenging for readers who do not use similar models themselves. We envision that by sharing interactive Artistoo simulations via a simple URL, computational biologists can make their modelling research more accessible for the readers and reviewers of their papers; if readers can interact with model parameters themselves without the barrier of having to install special software, this may greatly improve the transparency of CPM research. This would allow others to evaluate these models more critically, as well as foster the exchange of ideas between scientists from different disciplines.\n\nIn addition, interactive simulations can help communicate CPM-based science at conferences or in classrooms. We frequently use the framework reveal.js (Hattab and Contributors, 2020) to build slideshows in HTML, in which live, interactive Artistoo demonstrations help explain how models work. Similarly, interactive simulations can be shared on a conference poster via a QR code, which other attendees can explore on their mobile phone. We provide examples of both in the Supplementary Materials (Application 2, Application 3 in Appendix 2).\n\n#### Research and collaboration\n\nAlthough the CPM is extremely flexible in the types of behaviours it can model, it can be difficult to find the parameter ranges where these behaviours occur. We found that an interactive web page with instantaneous feedback, where the effect of changing parameters is visible in real\u00a0time (Figure 2 and Interactive Simulation 7 in Appendix 1), can substantially speed up parameter selection. This visual approach also picks up on unpredicted behaviours and artefacts (e.g. cell breaking) that are difficult to detect from numerical outputs alone. Moreover, we note that sharing these interactive pages allows us to tune parameters in collaboration with experimental biologists, helping us improve our models at an early stage. Thus, building a web-based prototype of a simulation can speed up parameter tuning and help obtain higher quality models.\n\nOnce a web-based prototype has been built and tuned, it can easily be ported to the Node.js JavaScript interpreter. This allows users to run a simulation as a command line application and store any desired simulation output locally. The resulting images or statistics can then be opened in other programs for further postprocessing, as demonstrated by two examples (Application 4 in Appendix 2).\n\n## Discussion\n\nThe recent rise of the open science movement has changed the way research outputs are being shared and communicated. This may be especially important for computational models, which have classically been difficult to share because of the required software and coding skills. Transparent model sharing calls for new strategies to make models accessible for broader audiences.\n\nIndeed, several such efforts have been made in recent years. The CPM framework CompuCell3D now hosts an online version on NanoHub, which users can access without installing software locally (Gianlupi and Sego, 2021). Beyond the CPM field, modelling frameworks like Tellurium (Choi et al., 2018) and PhysiCell (Ghaffarizadeh et al., 2018) have also created online access through NanoHub; these frameworks have also shown how such online models can be made interactive by using (variations of) Jupyter notebooks (see, e.g., Macklin and Heiland, 2020; Medley et al., 2018; Somogyi, 2019). The potential of explorable online web pages in communication and teaching is also demonstrated by the emerging practice to share R models in the form of Shiny apps (Sch\u00f6nbrodt, 2014; Zehetleitner and Sch\u00f6nbrodt, 2015; Granjon, 2019). And finally, the online collection of \u2018complexity explorables\u2019 (Brockmann, 2020) is a fantastic example of how to combine interactive online simulations with explanatory text to communicate modelling research.\n\nWith Artistoo, we now hope to open up this powerful avenue of model sharing for CPM research, allowing users to build online web pages and \u2018explorables\u2019 that combine interactive simulations with model explanations. We here show that the framework\u2019s performance (similar to that of existing frameworks in C++) is sufficient to allow for interactive CPM simulations. We have been developing the library for more than 5\u00a0years, also using it for robust simulation work in our research; see, for example, Wortel et al., 2020. We are continuing to develop the library for our own work and welcome suggestions and code contributions from the community.\n\nWe do not envision Artistoo to replace existing modelling software; rather, it can complement software directed at computational biologists and developers by letting users build explorable and sharable versions of a simulation. To facilitate this process, we have built a (prototype) tool to help users convert models between different frameworks (currently: Artistoo and Morpheus). Although Artistoo already offers a wide range of methods, it does not (yet) support all features of existing frameworks (Morpheus, CHASTE, CompuCell3D, Tissue Simulation Toolkit), such as solvers for reaction\u2013diffusion equations or SBML-encoded intracellular signalling, or writing output in formats like VTK and HDF5. Nevertheless, Artistoo simulations are highly customisable, and a wide range of CPM models can already be constructed using the framework in its current state. The software\u2019s modular structure also makes it easy for future developers to extend it with custom code.\n\nIn summary, to the best of our knowledge, Artistoo is the first CPM simulation framework supporting interactive simulations in the web browser that can be shared via a simple URL, without requiring installed software or back-end servers. We hope that this will unlock avenues of sharing and communicating (CPM) simulations to much larger audiences.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Morpheus</td>\n      <td>Publication Starru\u00df et al., 2014</td>\n      <td>RRID:SCR_014975</td>\n      <td>version 2.1.0</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Artistoo</td>\n      <td>This paper, see also\u00a0https://artistoo.net</td>\n      <td>RRID:SCR_020983</td>\n      <td>version\u00a01.0.0</td>\n    </tr>\n  </tbody>\n</table>\n\nThis section contains implementation details of the simulations used to assess Artistoo (v1.0.0) performance. All simulations were run in the console mode (using Node.js, which contains the same JavaScript engine as the Chrome web browser). All Artistoo code is available in the repository https://github.com/ingewortel/artistoo-supplements/, as are interactive HTML versions of each simulation. Please visit https://ingewortel.github.io/artistoo-supplements/ for a web interface to access interactive simulations online. We refer to the provided code for details of the implementation, but summarise the most important settings here.\n\n### Framework comparisons\n\nTo compare performance of Artistoo versus that of Morpheus (v2.1.0), we performed four different simulations in both frameworks. For this, we used the default examples provided with Morpheus and rebuilt similar simulations in Artistoo.\n\n#### Game of life\n\nThis is an implementation of the Game of Life, a Cellular Automaton (CA) of John Conway (see also Interactive Simulation 3 in Appendix 1). The simulation was run on a 50 \u00d7 50 pixel grid with random initial conditions. The simulation was run for 500 steps, storing a PNG image every 20 steps. This simulation is the Morpheus example Miscellaneous/GameOfLife.xml (version 4).\n\n### Protrusion model\n\nThis model of a migrating cell implements an actin-inspired migration model (Niculescu et al., 2015) (see also Interactive Simulation 4 in Appendix 1). A single cell was seeded in the middle of a 200 \u00d7 200 pixel grid. Two obstacles of radius 10 were placed at a distance of 50 pixels to the left and right of the cell, respectively. Simulations were run for 15,000 MCS, logging the cell\u2019s centroid every 10 MCS and saving a PNG every 250 MCS. This simulation is the Morpheus example CPM/Protrusion_2D.xml (version 4).\n\n### Cell sorting\n\nThis simulation implements the classical CPM model published by Graner and Glazier, 1992 (see also Interactive Simulation 5 in Appendix 1). Fifty\u00a0cells each of two cell types were seeded on a 200 \u00d7 200 pixel grid within a circle of radius 67 from the grid midpoint. Simulations were run for 2000 MCS, logging statistics every 10 MCS and saving a PNG every 100 MCS. This simulation is the Morpheus example CPM/CellSorting_2D.xml (version 4), where the StopTime field was changed from 2.5e4 to 2000.\n\n### Cell division\n\nA CPM linked to cell division (see also Interactive Simulation 6 in Appendix 1) was simulated on a 500 \u00d7 500 pixel grid. The grid was initialised with 20 cells in a circle of radius 35 surrounding the grid midpoint. Simulations were run for 40,000 MCS, logging the number of cells every 100 MCS and saving a PNG every 1000 MCS. This simulation is the Morpheus example CPM/Proliferation_2D.xml (version 4).\n\n### Scalability of cell sorting\n\nFor the scalability simulations, simulations were run without outputting images. This allowed us to investigate the simulation speed separately from the time it takes to draw the entire grid. Note that if the drawing step becomes a limiting factor for running the simulation, it is always possible to speed up the process by drawing only once every few steps, or by choosing a more efficient drawing method (e.g. drawing only cell borders rather than entire cells).\n\nSimulations contained 1, 5, 10, 50, 100, 500, or 1000 cells per cell type. The grid dimensions were adaptively scaled such that $x=y=\\sqrt{1.5\u2062P_{tot}}$, with $P_{tot}$ the total number of pixels of all the cells. Cells were seeded within a radius $0.8\u2062\\sqrt{P_{tot}/\\pi}$ from the grid midpoint. Other settings were the same as in the cell sorting simulation described under Framework comparisons.\n",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "c09ad7b0-b66f-4cf0-9ce6-f4ab7f0414b5",
+      "submission_id": "4a60a8a9-a9b6-4c8b-b9d4-47c9ae99f45a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andreas Buttenschoen, University of British Columbia Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61288.sa1](https://doi.org/10.7554/eLife.61288.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis well written paper presents Artistoo, a software package allowing tissue simulations using the Cellular Potts framework, that fills an interesting niche: interactive, real-time simulations of complex multicellular systems that can run in a web browser, without any need for users to install or configure software. This enables new modes of education, science communication, research and multidisciplinary collaboration. This fully open-source software is impressive, and the supplied examples and tutorials are clean and beautifully fluid. The work should be of considerable interest to the eLife readership, particularly computational biologists and educators. The addition of markup language support both Morpheus to Artistoo and vice versa is fantastic. This will undoubtedly increase the adoption of Artistoo by the community. This is to my knowledge the first example of standardization across open-source CPM software packages.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Artistoo: build, share, and explore simulations of cells and tissues in the web browser\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Paul Macklin (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our policy on revisions we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThis is a well written paper that presents a software allowing tissue modelling using the Cellular Potts framework filling an interesting niche: interactive, real-time simulations of complex multicellular systems that can run in a web browser, without any need for users to install or configure software. As the authors describe, this enables new modes of education, science communication, and multidisciplinary collaboration. The software itself is impressive, and the supplied examples are clean and beautifully fluid. It is eye-opening that Javascript can run these models so well. The authors also did a fantastic and complete job in sharing their full source code, from the overall software down to individual scripts used to generate figures. The work should be of considerable interest to the eLife readership, particularly computational biologists and educators.\n\nEssential revisions:\n\n1. Suitability of the software for researchers:\n\na. Artistoo simulations do not appear to have any method to save data for external manipulation and archival. This makes their use somewhat less applicable to robust simulation-driven investigations, particularly where postprocessing and further analyses are required.\n\nb. It is unclear if Artistoo-based models can be exported into other cellular Potts (CP) frameworks such as CC3D or Morpheus. This may leave researcher end users without a clear \"upgrade path\" after exploring model ideas in Artistoo and moving to larger simulations (e.g., larger or more complex domains), running simulations in high throughput on HPC resources, or adapting approximate Bayesian techniques for parameter estimation that require automating many simulation runs. Without an upgrade path, such users may wish to immediately begin in research-focused platforms rather than start with Artistoo and re-implement in another framework later.\n\nc. Similarly, it is unclear if a model developed in Morpheus or CC3D can be directly imported into Artistoo. If such an import were possible rather than re-implementing models in Artistoo, research-focused users would be more likely to use Artistoo for scientific communication and outreach.\n\nd. It would be fantastic if Artistoo would support the same markup language as Morpheus, allowing non-expert users to assemble complex models without writing a single line of code. If Artistoo would support the Morpheus ML, this would make all existing ``Morpheus models' also ``Artistoo models', meaning that Artistoo would become the standard for sharing CPM models with collaborators. Finally, adopting a common markup language between projects would be the first example of standardization across open-source CPM software packages.\n\n2. Need for improved educational scaffolding:\n\nThe examples provided in the paper are excellent. However, they lack context on what the parameters mean or do. (For example, what are maxact and \u03bbact in the cell migration model?) This may limit the educational impact because users will be unclear on what to change, and how the parameters relate to cell biophysical processes.\n\nThe authors should include more background information with each model, define parameters, and give end users some idea of what to expect when parameters are changed. We have also found it useful to help guide a new user's exploration of a model by suggesting parameter sets and describing what they should see. This can serve as an educational scaffolding to help learners build and grow.\n\nThe authors' sample models should serve as a template to Artistoo users on best practices for communicating models to diverse audiences.\n\n3. New developments in online cellular Potts simulators:\n\nThe authors should note that CompuCell3D has recently been ported to run interactively online in a web browser. See https://nanohub.org/resources/compucell3d. This recent development should be addressed in the paper.\n\n4. Narrow review of interactive, \"zero install\" simulation frameworks:\n\nThe authors focus too narrowly by only comparing Artistoo with other cellular Potts frameworks, while the main use case for Artistoo is for interactively sharing and communicating complex simulation models online.\n\nThe authors should discuss non-CP frameworks that worked towards this, such as CC3D on nanoHUB (see above), online Tellurium (https://nanohub.org/resources/tellurium), current practice to share R models online as Shiny apps, and recent work to use xml2jupyter to automatically convert research-focused (command line) PhysiCell models to interactive Jupyter notebooks that can be shared as interactive webapps on nanoHUB (e.g., https://nanohub.org/tools/pc4cancerimmune). All of these serve similar purposes of creating zero-install, interactive versions of models for science education and communication. The authors should briefly discuss these to further contextualize their work.\n\n5. While this is a more minor point, I would feel more comfortable if the supplementary information had convergence and accuracy testing. Are there limits on computational step sizes for numerically accurate simulations, particularly for large energies or when including diffusion processes?\n",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b6e4a37d-5682-4fbb-a01c-62b0b64879bb",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C1",
+      "claim": "The cellular Potts model (CPM) is a powerful in silico method for simulating biological processes at tissue scale.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular Potts model (CPM) is a powerful in silico method for simulating biological processes at tissue scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization statement about the CPM that draws from established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "a7dd09d8-00b4-4d60-baff-5e33d728f337",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C2",
+      "claim": "CPMs are mostly implemented in specialised frameworks users need to master before they can run simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "in practice, they are mostly implemented in specialised frameworks users need to master before they can run simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about the state of CPM implementations, based on knowledge of existing frameworks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "0bb64ebf-1f4d-4c55-9aa4-211b73fbe7a6",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C3",
+      "claim": "Artistoo is a JavaScript library for building 'explorable' CPM simulations where viewers can change parameters interactively.",
+      "claim_type": "EXPLICIT",
+      "source": "We here present Artistoo (Artificial Tissue Toolbox), a JavaScript library for building 'explorable' CPM simulations where viewers can change parameters interactively, exploring their effects in real time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the main functionality of Artistoo as presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "8927a83b-8cbd-4362-a641-98afe4d920f0",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C4",
+      "claim": "Artistoo simulations run directly in the web browser and do not require third-party software, plugins, or back-end servers.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations run directly in the web browser and do not require third-party software, plugins, or back-end servers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of how Artistoo operates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d55cedec-9a75-4383-9115-d8b86c9ba234",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C5",
+      "claim": "The JavaScript implementation imposes no major performance loss compared to frameworks written in C++.",
+      "claim_type": "EXPLICIT",
+      "source": "The JavaScript implementation imposes no major performance loss compared to frameworks written in C++; Artistoo remains sufficiently fast for interactive, real-time simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by performance comparison data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "89bfcc55-f9c3-49e5-a929-073abde0404b",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C6",
+      "claim": "Artistoo remains sufficiently fast for interactive, real-time simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The JavaScript implementation imposes no major performance loss compared to frameworks written in C++; Artistoo remains sufficiently fast for interactive, real-time simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by performance benchmarking data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "519a00a2-1fc3-4a4e-a265-8eb5339d7d15",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C7",
+      "claim": "The CPM was originally proposed as a model for cell sorting.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally proposed as a model for cell sorting (Graner and Glazier, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original CPM paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "e3f86124-1c30-4292-8f58-6729b7a1e369",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C8",
+      "claim": "The CPM has been extended with biological processes such as proliferation, apoptosis, cell motion, and chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "the CPM has since been extended with a plethora of biological processes such as proliferation, apoptosis, cell motion, and chemotaxis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review papers on CPM applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "825467a3-ed5e-4783-a704-19e187a77286",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C9",
+      "claim": "CPM users can model diverse phenomena ranging from slime mould formation to blood vessel development, tumour growth, and cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "allowing CPM users to model diverse phenomena ranging from slime mould formation to blood vessel development, tumour growth, and cell migration (Mar\u00e9e et al., 2007; Szab\u00f3 and Merks, 2013; Hirashima et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published CPM applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "570484e1-3240-47f4-a4ab-8387dbc0d876",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C10",
+      "claim": "CompuCell3D is a mature modelling framework with CPM implementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nowadays, several mature modelling frameworks with CPM implementations exist, such as CompuCell3D (Swat et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the CompuCell3D publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "5083c656-d283-4bcc-8536-c0a371588904",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C11",
+      "claim": "Morpheus is a mature modelling framework with CPM implementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nowadays, several mature modelling frameworks with CPM implementations exist, such as CompuCell3D (Swat et al., 2012), Morpheus (Starru\u00df et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Morpheus publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "23213ebb-838e-42f1-bc34-c1f32f685b2e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C12",
+      "claim": "Tissue Simulation Toolkit is a mature modelling framework with CPM implementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nowadays, several mature modelling frameworks with CPM implementations exist, such as CompuCell3D (Swat et al., 2012), Morpheus (Starru\u00df et al., 2014), Tissue Simulation Toolkit (Daub and Merks, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Tissue Simulation Toolkit publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "e92af52f-1b4f-4bd6-9ba2-a5f6a82a4ca9",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C13",
+      "claim": "CHASTE is a mature modelling framework with CPM implementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nowadays, several mature modelling frameworks with CPM implementations exist, such as CompuCell3D (Swat et al., 2012), Morpheus (Starru\u00df et al., 2014), Tissue Simulation Toolkit (Daub and Merks, 2015), and CHASTE (Mirams et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the CHASTE publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "73b2d85c-d31b-4ddf-b880-d71c2d4017ba",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C14",
+      "claim": "Tissue-scale CPM simulations require substantial computational resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CPMs are relatively efficient models, tissue-scale simulations still require substantial computational resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about computational requirements of CPM simulations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "7d32aaaa-9bc1-4be0-bad5-1155bb045924",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C15",
+      "claim": "All existing mature CPM frameworks rely on the C++ programming language for computation steps.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, all of the abovementioned frameworks rely on the C++ programming language for computation steps, which requires them to be built for and installed on the user's native operating system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the implementation details of existing frameworks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "c34dba40-9e11-4379-b338-e128c7614384",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C16",
+      "claim": "Artistoo is a CPM framework built entirely in JavaScript.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present 'Artistoo' (Artificial Tissue Toolbox), a CPM framework built entirely in JavaScript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the implementation of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d777b0fd-2e88-486a-86ad-c48b961408e0",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C17",
+      "claim": "Interpreted languages like JavaScript have classically been deemed too inefficient for running simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although interpreted languages like JavaScript have classically been deemed too inefficient for running simulations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on historical knowledge about programming language performance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "e88b72ed-742f-459d-b636-49f89dc47f46",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C18",
+      "claim": "Investments by major tech companies have tremendously improved JavaScript engines over the past years.",
+      "claim_type": "EXPLICIT",
+      "source": "investments by major tech companies have tremendously improved JavaScript engines over the past years",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about JavaScript engine development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d40d5073-b5b1-4d60-ba56-c59a9830691e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C19",
+      "claim": "Artistoo's CPM has no major performance disadvantage compared to existing C++ frameworks.",
+      "claim_type": "EXPLICIT",
+      "source": "to the point that our CPM now has no major performance disadvantage compared to existing C++ frameworks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by performance comparison data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "bc0f9e78-a798-407a-b73b-cb003b4b3b0c",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C20",
+      "claim": "Artistoo allows building simulations that run in the web browser without the need to install any software.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike existing frameworks, Artistoo allows building simulations that run in the web browser without the need to install any software",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of Artistoo's functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "ebd106fd-d160-4b1c-a6aa-54abf4d75bc7",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C21",
+      "claim": "Artistoo models run on any platform providing a standards-compliant web browser.",
+      "claim_type": "EXPLICIT",
+      "source": "Artistoo models run on any platform providing a standards-compliant web browser \u2013 be it a desktop computer, a tablet, or a mobile phone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of Artistoo's cross-platform compatibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "4c701f59-f8d3-49a0-bc3b-189ac55dabec",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C22",
+      "claim": "Artistoo simulations can be published on any web server or saved locally.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations can be published on any web server or saved locally and do not rely on any back-end servers being available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of how Artistoo simulations can be deployed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "edf633fa-f653-49cb-bcc6-36de9b8d4ae5",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C23",
+      "claim": "Artistoo simulations do not rely on any back-end servers being available.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations can be published on any web server or saved locally and do not rely on any back-end servers being available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of Artistoo's architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "ec741996-66e8-488e-b3d8-6afb9374c2bc",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C24",
+      "claim": "Artistoo simulations can be made explorable, enabling viewers to interact with the simulation and see the effect of changing model parameters in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "They can be made explorable, enabling viewers to interact with the simulation and see the effect of changing model parameters in real time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of Artistoo's interactive functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "41a38a86-ed49-4954-bf81-5daf290124cb",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C25",
+      "claim": "Artistoo is implemented as an ECMAScript 6 module.",
+      "claim_type": "EXPLICIT",
+      "source": "Artistoo is a JavaScript library implemented as an ECMAScript 6 module, which can be loaded into an HTML page or accessed from within a Node.js command line application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of Artistoo's implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "7fdca1f0-4434-403f-a3d0-74d48cf0265f",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C26",
+      "claim": "Artistoo can be loaded into an HTML page or accessed from within a Node.js command line application.",
+      "claim_type": "EXPLICIT",
+      "source": "Artistoo is a JavaScript library implemented as an ECMAScript 6 module, which can be loaded into an HTML page or accessed from within a Node.js command line application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of how Artistoo can be used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "09269708-512e-4444-8872-572939cdb614",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C27",
+      "claim": "Artistoo is an open-source library released under the MIT license.",
+      "claim_type": "EXPLICIT",
+      "source": "Artistoo is an open-source library released under the MIT license and is freely available on GitHub at https://github.com/ingewortel/artistoo (copy archived at swh:1:rev:551ee76c3a972e86ac72ed7e977356a75d091763; Wortel and Textor, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the licensing and availability of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "3b1ea9f1-c9ef-4e83-8c72-69dc1e7a9a74",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C28",
+      "claim": "Artistoo is freely available on GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "Artistoo is an open-source library released under the MIT license and is freely available on GitHub at https://github.com/ingewortel/artistoo (copy archived at swh:1:rev:551ee76c3a972e86ac72ed7e977356a75d091763; Wortel and Textor, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the availability of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "43ffca93-0567-4060-bef7-874e5046bc73",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C29",
+      "claim": "Computational modelling research involves model builders and model viewers as two distinct categories of researchers with different types of expertise.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational modelling research involves two important, but distinct categories of researchers that tend to have different types of expertise. On the one hand, there are the model builders, the scientists designing the models and performing the research; these are typically computational biologists with at least some basic programming skills. On the other hand, there are the model viewers, members of the broader research community who should be able to access and understand these models once they are built; this group may also include biologists and students without programming expertise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the structure of the computational modeling research community.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "f2148d58-5f1e-4cc2-8be5-19e28e231a8e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C30",
+      "claim": "Model builders are typically computational biologists with at least some basic programming skills.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, there are the model builders, the scientists designing the models and performing the research; these are typically computational biologists with at least some basic programming skills.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization based on knowledge of the computational biology field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "3130e807-46f6-4159-be85-db8d198575aa",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C31",
+      "claim": "Model viewers may include biologists and students without programming expertise.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, there are the model viewers, members of the broader research community who should be able to access and understand these models once they are built; this group may also include biologists and students without programming expertise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization based on knowledge of the broader research community.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "a3cbdf3e-65d1-4fc5-b19b-e1da65e966bc",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C32",
+      "claim": "A major challenge in the design of modelling software is to cater to both model builders and model viewers at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "A major challenge in the design of modelling software is to cater to both these groups at the same time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about software design challenges in computational modeling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "ab205853-0f28-43f2-be7d-049888132b27",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C33",
+      "claim": "Tools with a front-end GUI are ideal for viewers but lose flexibility desired by builders.",
+      "claim_type": "EXPLICIT",
+      "source": "Tools revolving around a front-end graphical user interface (GUI) are ideal for viewers (no programming required), but tend to lose some of the flexibility desired by builders (anything not yet implemented in the GUI typically becomes harder to do, and it becomes more difficult to automate simulations and post-processing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about trade-offs in software design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "0b03537a-ab05-44b2-a229-5cd70bcfa22c",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C34",
+      "claim": "A flexible coding-based tool is comfortable for builders but becomes inaccessible for most viewers.",
+      "claim_type": "EXPLICIT",
+      "source": "Vice versa, a more flexible coding-based tool is comfortable for builders but rapidly becomes inaccessible for most viewers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about trade-offs in software design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "9d052d5c-45a5-40fa-be37-8c1bf0588728",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C35",
+      "claim": "The JavaScript implementation allows Artistoo to present different interfaces to model viewers and model builders.",
+      "claim_type": "EXPLICIT",
+      "source": "The implementation in JavaScript allows Artistoo to resolve this problem by presenting each user group with a different interface (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the description and Figure 1 showing the different interfaces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d4b53158-ed3d-4434-a921-3471428708e2",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C36",
+      "claim": "Model viewers access an HTML page containing a model visualisation and interactive access to the most important parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Model viewers access an HTML page provided by the model builder, which contains a model visualisation and interactive access to the most important parameters (improving transparency because viewers are not distracted by an overload of options they do not need).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how model viewers interact with Artistoo, as shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "02e50072-fc04-414c-b5ed-957c5bb3369d",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C37",
+      "claim": "HTML pages for model viewers are accessible in a zero-install setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Such HTML pages are accessible in a zero-install setting, explorable via parameter sliders, and remain highly accessible: no knowledge of the Artistoo framework or model details is required for viewers to operate them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of how viewers access Artistoo simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "408a2f9c-f9f3-49c2-9b61-7e7583713314",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C38",
+      "claim": "No knowledge of the Artistoo framework or model details is required for viewers to operate HTML simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such HTML pages are accessible in a zero-install setting, explorable via parameter sliders, and remain highly accessible: no knowledge of the Artistoo framework or model details is required for viewers to operate them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design specification of Artistoo's viewer interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "65bf7819-b348-423f-b514-e0c1d2dbdb8f",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C39",
+      "claim": "Model builders create web applications using the Artistoo framework at different levels of complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Model builders create these web applications using the Artistoo framework. They can do this at different levels of complexity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flexibility of Artistoo for model builders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "0a022dd3-2260-4b09-88f6-6333b343cc5f",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C40",
+      "claim": "Artistoo users can build models via simple changes to configuration objects requiring very little knowledge of Artistoo or programming.",
+      "claim_type": "EXPLICIT",
+      "source": "Artistoo users build models via simple changes to configuration objects (requiring very little knowledge of Artistoo or programming)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one level of complexity for using Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "9620e85e-c330-4584-9d72-d2ab455a2575",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C41",
+      "claim": "Artistoo users can build models by incorporating available methods in a few simple lines of code without in-depth knowledge of the framework architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "or by incorporating the many available methods in a few simple lines of code; this requires no in-depth knowledge of the framework 'under the hood' architecture while still providing high flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another level of complexity for using Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "ecf928f4-0b59-4556-b6f3-53709c2ab437",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C42",
+      "claim": "Artistoo developers have the ultimate freedom to add custom plugins to the existing framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Artistoo developers have the ultimate freedom to add custom plugins to the existing framework where needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the highest level of complexity for using Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "17414e4f-5481-4772-82f1-0413490004d6",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C43",
+      "claim": "Only Artistoo developers require in-depth knowledge of the framework and slightly more advanced JavaScript skills.",
+      "claim_type": "EXPLICIT",
+      "source": "Only this group requires in-depth knowledge of the framework and slightly more advanced JavaScript skills.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the skill requirements for the developer level of Artistoo use.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "3544d17e-5d43-41e2-a303-7e1dddaf9969",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C44",
+      "claim": "Online documentation at https://artistoo.net/ helps Artistoo users and developers get started with the framework.",
+      "claim_type": "EXPLICIT",
+      "source": "The online documentation at https://artistoo.net/ helps both these groups to get started with the framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about available resources for Artistoo users.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "e5c0f411-e466-4162-bcb4-ad8e446423f8",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C45",
+      "claim": "The methods currently implemented in Artistoo allow users to simulate, visualise, and analyse a wide range of CPM models.",
+      "claim_type": "EXPLICIT",
+      "source": "The methods currently implemented in the framework allow users to simulate, visualise, and analyse a wide range of CPM models (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 2A showing diverse biological processes that can be simulated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "85b7b844-3386-48ea-9efe-57825a3d6338",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C46",
+      "claim": "The Artistoo Github repository contains example code for models of various biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our Github repository contains example code for models of various biological processes (e.g. simulations of tissues, cell migration, and cell interactions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the contents of the Artistoo repository.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "91231926-61c9-422a-acb2-553c55e4e758",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C47",
+      "claim": "First-time users can download HTML pages and modify parameters without needing to learn the implementation details of the framework or to have programmed in JavaScript before.",
+      "claim_type": "EXPLICIT",
+      "source": "First-time users can download these HTML pages and modify parameters without needing to learn the implementation details of the framework, or to have programmed in JavaScript before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the accessibility of Artistoo for novice users.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "a61c8a0c-fac8-457c-80b4-59ee2bf4c956",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C48",
+      "claim": "The Simulation class provides default methods for setting up and visualising simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the Simulation class provides default methods for setting up and visualising simulations, allowing users to get started with the library without having to set up this 'boilerplate' code themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical description of functionality provided by Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "66b004c4-3bd8-496d-9be6-db25f03a1c08",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C49",
+      "claim": "Advanced users can build simulations from scratch and customise them using the many available options and methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Advanced users can instead build simulations from scratch and customise them using the many available options and methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flexibility available to advanced Artistoo users.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "2cb6ac18-c0d0-4104-9c68-2b60be7fdf03",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C50",
+      "claim": "Advanced users can develop and plug in their own code modules once they become accustomed with the framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Once they become accustomed with the framework, they can also develop and plug in their own code modules (see 'Modularity and flexibility' below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the extensibility of Artistoo for advanced users.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "21f2f574-2cee-4ed2-b25e-5c2bc7198fc1",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C51",
+      "claim": "Full documentation and a user manual with step-by-step tutorials are available at https://artistoo.net/.",
+      "claim_type": "EXPLICIT",
+      "source": "Full documentation and a user manual with step-by-step tutorials are available at https://artistoo.net/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about available resources for Artistoo users.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "c46391b3-637e-4b94-9d86-0092171693ee",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C52",
+      "claim": "A typical CPM simulation consists of different types of components: the grid, energy rules, separate processes, and visualisation and quantification methods.",
+      "claim_type": "EXPLICIT",
+      "source": "A typical CPM simulation consists of different types of components: the grid on which cells are simulated, the energy rules governing cell behaviour in the model, separate processes such as cell proliferation or diffusion, and the visualisation and quantification methods used to produce outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of CPM simulation structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "ead95263-bd7d-4f06-bb7a-8bf5c46081f5",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C53",
+      "claim": "A key strength of the CPM is that it can be easily extended with custom terms to model specific processes.",
+      "claim_type": "EXPLICIT",
+      "source": "A key strength of the CPM is that it can be easily extended with custom terms to model specific processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the CPM framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "29642582-152b-42b9-af3b-d3e13c1c7eb5",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C54",
+      "claim": "Artistoo code is set up in a highly modular fashion to facilitate customisation.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate such customisation, we have set up the code in a highly modular fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of Artistoo's software architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "ee0d735c-db48-49fb-b6ef-c78cbaa3db71",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C55",
+      "claim": "Artistoo modules can be combined freely to build a custom simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These modules can be combined freely to build a custom simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flexibility of Artistoo's modular design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "70831d6c-f6d5-43d9-8f45-577d3ad2e61a",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C56",
+      "claim": "Developers can supply their own custom modules to integrate with the Artistoo framework and share with other users.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, developers can supply their own custom modules \u2013 containing any of the aforementioned simulation components \u2013 to integrate with the framework and to share with other users.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the extensibility of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "b24b4c2e-b02c-4e31-9bdc-b2c591023286",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C57",
+      "claim": "Maximal performance is not a design goal of Artistoo per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Although maximal performance is not a design goal of our framework per se",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the design priorities of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "0bb97bfe-9fd3-4a2d-831e-f5eac3c99494",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C58",
+      "claim": "Artistoo should not be much slower than comparable frameworks.",
+      "claim_type": "EXPLICIT",
+      "source": "Artistoo should not be much slower than comparable frameworks either: running explorable simulations in real-time is only feasible if computations are reasonably efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design requirement for Artistoo, supported by performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "177a335b-1545-4304-9336-312cfed8f996",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C59",
+      "claim": "Both Artistoo and Morpheus had similar performance in various simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we implemented various simulations both in Artistoo and in Morpheus and found that both frameworks had similar performance (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by performance comparison data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "72c6e3a6-0d72-4b71-ade7-9c92956bc5f1",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C60",
+      "claim": "Artistoo was slightly faster than Morpheus in all but one of the tested examples.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, Artistoo was slightly faster in all but one of these examples, although differences tended to be small",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by performance comparison data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "8a676f56-c472-4b20-8448-f907a9fe987c",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C61",
+      "claim": "In the cell division simulation, Artistoo was slower than Morpheus.",
+      "claim_type": "EXPLICIT",
+      "source": "even in the case where Artistoo was slower (cell division), the difference in performance was not so large that real-time browser simulations became infeasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by performance comparison data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "37d72fe3-e3d1-4f7d-bc05-d98a11fe4da8",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C62",
+      "claim": "The difference in performance between Artistoo and Morpheus for cell division was not so large that real-time browser simulations became infeasible.",
+      "claim_type": "EXPLICIT",
+      "source": "even in the case where Artistoo was slower (cell division), the difference in performance was not so large that real-time browser simulations became infeasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the performance data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "03e0dee1-e245-47da-a476-8d1054e1f19d",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C63",
+      "claim": "Simulation speed scales linearly with the total number of pixels on the grid.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulation speed scales linearly with the total number of pixels on the grid and does decrease for very large systems, but real-time simulations remain feasible for a reasonable range of grid sizes (Figure 2\u2014figure supplement 1, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by scalability data shown in Figure 2D and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "f97c8d8d-1fe1-4106-834d-a2e102872621",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C64",
+      "claim": "Simulation speed decreases for very large systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulation speed scales linearly with the total number of pixels on the grid and does decrease for very large systems",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by scalability data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d95622d7-17d5-41af-8804-68077dca4e99",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C65",
+      "claim": "Real-time simulations remain feasible for a reasonable range of grid sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulation speed scales linearly with the total number of pixels on the grid and does decrease for very large systems, but real-time simulations remain feasible for a reasonable range of grid sizes (Figure 2\u2014figure supplement 1, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by scalability data shown in Figure 2D showing simulation speeds above 20 FPS for various grid sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "c5166db2-e4fc-4730-b867-3bb8689e990b",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C66",
+      "claim": "Artistoo allows sharing of at least a reasonable prototype of larger-scale models.",
+      "claim_type": "EXPLICIT",
+      "source": "This would allow sharing of at least a reasonable prototype of larger-scale models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the scalability data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "650f9e84-13bf-41e1-81e0-9d8e5be4df36",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C67",
+      "claim": "A prototype online tool has been built that converts Morpheus model files into Artistoo code.",
+      "claim_type": "EXPLICIT",
+      "source": "To make Artistoo more accessible for users familiar with other frameworks, we have built a prototype for an online tool that converts Morpheus model files into Artistoo code (https://artistoo.net/converter.html).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a tool that has been developed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "b3bca4c7-62a9-46bb-84ce-3aa6de1550e4",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C68",
+      "claim": "In some cases, Morpheus models may not be fully portable to Artistoo due to differences in the types of models supported.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, models may not (yet) be fully portable due to differences in the types of models supported",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of the conversion tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "2a3311b9-9c19-4e68-a7d8-d0e9fc4a3905",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C69",
+      "claim": "When models are not fully portable, the conversion tool returns the closest possible analogue and logs any changes it had to make.",
+      "claim_type": "EXPLICIT",
+      "source": "in that case, the tool returns the closest possible analogue and logs any changes it had to make, providing suggestions to help users further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavior of the conversion tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "13241fca-db65-486a-96d5-e49aaf18dd7e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C70",
+      "claim": "A tool converts Artistoo models to Morpheus XML, allowing users to continue in another framework.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar tool converts Artistoo models to Morpheus XML, allowing users to continue in another framework (e.g. for upscaling models, multiscale models, etc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a tool that has been developed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "7da31226-7d2b-4d2d-b75d-0a476e4b0f9d",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C71",
+      "claim": "Getting software to work on every student's computer can consume a substantial amount of time and effort when organising practical computer work in classroom teaching.",
+      "claim_type": "EXPLICIT",
+      "source": "When organising practical computer work in the context of classroom teaching, getting software to work on every student's computer can consume a substantial amount of time and effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about challenges in teaching with software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "f40966bb-ab4e-45ed-ba3d-aabafe97ca71",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C72",
+      "claim": "Installing an entirely new modelling framework for a single-course assignment may not be appropriate when teaching large classes in limited time.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially when teaching large classes in limited time, installing an entirely new modelling framework for a single-course assignment may not be appropriate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about practical constraints in teaching.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "2068cc67-3300-40de-a1a3-f228dea1fe40",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C73",
+      "claim": "The zero-install feature of Artistoo might be attractive for use of CPM modelling in the classroom.",
+      "claim_type": "EXPLICIT",
+      "source": "The zero-install feature of Artistoo might therefore be attractive for use of CPM modelling in the classroom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the teaching challenges described and Artistoo's features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "6064f12a-fb93-47bd-b70e-a5ed46156b0f",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C74",
+      "claim": "The authors frequently use Artistoo in teaching.",
+      "claim_type": "EXPLICIT",
+      "source": "We frequently use the framework in teaching and found it feasible to let students run and understand CPM models in a workshop of just a few hours",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the authors' experience using Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "08686b48-118e-41f2-8226-2cd0a86f59e5",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C75",
+      "claim": "It is feasible to let students run and understand CPM models in a workshop of just a few hours using Artistoo, even when students had no programming experience.",
+      "claim_type": "EXPLICIT",
+      "source": "We frequently use the framework in teaching and found it feasible to let students run and understand CPM models in a workshop of just a few hours \u2013 even when students had no programming experience and were given just a single lecture on the CPM in advance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' teaching experience with Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d161932e-fd9e-4f9c-9833-6171a01a97d4",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C76",
+      "claim": "The move towards open science has prompted many to share their code with publications.",
+      "claim_type": "EXPLICIT",
+      "source": "While the move towards open science has prompted many to share their code with publications",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about trends in open science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "9f1c7caa-89ec-4cf3-8824-ba45010e15bc",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C77",
+      "claim": "Understanding and using shared code often remains challenging for readers who do not use similar models themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "understanding and using this code often remains challenging for readers who do not use similar models themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about challenges in code sharing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "96dc8748-6c3c-4aa7-9509-3c2858b32ea6",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C78",
+      "claim": "By sharing interactive Artistoo simulations via a simple URL, computational biologists can make their modelling research more accessible for readers and reviewers.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that by sharing interactive Artistoo simulations via a simple URL, computational biologists can make their modelling research more accessible for the readers and reviewers of their papers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of Artistoo.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "2693fd6e-3885-4c4a-86b6-c2fb30bf1f9e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C79",
+      "claim": "If readers can interact with model parameters themselves without the barrier of having to install special software, this may greatly improve the transparency of CPM research.",
+      "claim_type": "EXPLICIT",
+      "source": "if readers can interact with model parameters themselves without the barrier of having to install special software, this may greatly improve the transparency of CPM research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential benefits of Artistoo.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "e262938c-b5dc-45e2-bda1-fe78be39b4d1",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C80",
+      "claim": "Interactive simulations would allow others to evaluate CPM models more critically.",
+      "claim_type": "EXPLICIT",
+      "source": "This would allow others to evaluate these models more critically, as well as foster the exchange of ideas between scientists from different disciplines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential benefits of interactive simulations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "88b13ddf-951c-411f-81ad-f7dd1241e793",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C81",
+      "claim": "Interactive simulations would foster the exchange of ideas between scientists from different disciplines.",
+      "claim_type": "EXPLICIT",
+      "source": "This would allow others to evaluate these models more critically, as well as foster the exchange of ideas between scientists from different disciplines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential benefits of interactive simulations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "639bf8d5-6fc4-4ecf-a79a-421a66506648",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C82",
+      "claim": "Interactive simulations can help communicate CPM-based science at conferences or in classrooms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, interactive simulations can help communicate CPM-based science at conferences or in classrooms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of Artistoo.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "b9cf40c5-a75d-4d16-81a9-4d721629264b",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C83",
+      "claim": "The authors frequently use the framework reveal.js to build slideshows in HTML with live, interactive Artistoo demonstrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We frequently use the framework reveal.js (Hattab and Contributors, 2020) to build slideshows in HTML, in which live, interactive Artistoo demonstrations help explain how models work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the authors' use of Artistoo in presentations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "aa7a8ac5-fef9-413c-acc9-4464a31e547e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C84",
+      "claim": "Interactive simulations can be shared on a conference poster via a QR code, which other attendees can explore on their mobile phone.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, interactive simulations can be shared on a conference poster via a QR code, which other attendees can explore on their mobile phone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a potential application of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "ed88dab0-8417-4bdc-b130-0c7f4a593076",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C85",
+      "claim": "The CPM is extremely flexible in the types of behaviours it can model.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the CPM is extremely flexible in the types of behaviours it can model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the CPM framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "5c40b84b-807f-459d-9a9e-c9341bb8d1aa",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C86",
+      "claim": "It can be difficult to find the parameter ranges where desired CPM behaviours occur.",
+      "claim_type": "EXPLICIT",
+      "source": "it can be difficult to find the parameter ranges where these behaviours occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about challenges in CPM modeling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "9ce5371a-158b-4668-bb72-494405827fe0",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C87",
+      "claim": "An interactive web page with instantaneous feedback can substantially speed up parameter selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that an interactive web page with instantaneous feedback, where the effect of changing parameters is visible in real time (Figure 2 and Interactive Simulation 7 in Appendix 1), can substantially speed up parameter selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' experience using Artistoo for parameter tuning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "f7de6e9b-a62b-4690-a106-31f334fb84de",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C88",
+      "claim": "A visual approach picks up on unpredicted behaviours and artefacts that are difficult to detect from numerical outputs alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This visual approach also picks up on unpredicted behaviours and artefacts (e.g. cell breaking) that are difficult to detect from numerical outputs alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' experience using Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "916733d1-9699-47ab-8b0f-7fd3d7de1992",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C89",
+      "claim": "Sharing interactive pages allows tuning parameters in collaboration with experimental biologists.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we note that sharing these interactive pages allows us to tune parameters in collaboration with experimental biologists, helping us improve our models at an early stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' experience using Artistoo for collaboration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "a46f9d59-c94a-415a-8185-52ff0fdc33eb",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C90",
+      "claim": "Building a web-based prototype of a simulation can speed up parameter tuning and help obtain higher quality models.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, building a web-based prototype of a simulation can speed up parameter tuning and help obtain higher quality models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' experiences described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "76751884-a629-4eb7-8bea-3f538807b643",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C91",
+      "claim": "A web-based prototype can easily be ported to the Node.js JavaScript interpreter.",
+      "claim_type": "EXPLICIT",
+      "source": "Once a web-based prototype has been built and tuned, it can easily be ported to the Node.js JavaScript interpreter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the portability of Artistoo simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d4494be4-1dcf-486f-ab1a-72295ec3cca1",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C92",
+      "claim": "Node.js allows users to run a simulation as a command line application and store any desired simulation output locally.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows users to run a simulation as a command line application and store any desired simulation output locally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the functionality of Node.js with Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "4cde56f3-f944-4041-a2ab-cdae02e8f4cd",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C93",
+      "claim": "The recent rise of the open science movement has changed the way research outputs are being shared and communicated.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent rise of the open science movement has changed the way research outputs are being shared and communicated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about trends in scientific publishing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "232c5bfb-c259-4c9a-90f3-fa2c416ca37e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C94",
+      "claim": "Transparent model sharing may be especially important for computational models, which have classically been difficult to share because of the required software and coding skills.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be especially important for computational models, which have classically been difficult to share because of the required software and coding skills.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about challenges in sharing computational models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "9caaf327-06f5-4145-acc9-fa5ad3b40f4c",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C95",
+      "claim": "Transparent model sharing calls for new strategies to make models accessible for broader audiences.",
+      "claim_type": "EXPLICIT",
+      "source": "Transparent model sharing calls for new strategies to make models accessible for broader audiences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the challenges of model sharing described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d34d9c48-b079-4e61-bd12-401bf79ecb1a",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C96",
+      "claim": "The CPM framework CompuCell3D now hosts an online version on NanoHub, which users can access without installing software locally.",
+      "claim_type": "EXPLICIT",
+      "source": "The CPM framework CompuCell3D now hosts an online version on NanoHub, which users can access without installing software locally (Gianlupi and Sego, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the CompuCell3D NanoHub publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "93887f26-f207-44a4-82d9-2fb4c240540d",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C97",
+      "claim": "Modelling frameworks like Tellurium and PhysiCell have created online access through NanoHub.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the CPM field, modelling frameworks like Tellurium (Choi et al., 2018) and PhysiCell (Ghaffarizadeh et al., 2018) have also created online access through NanoHub",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the Tellurium and PhysiCell publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "2003b89b-1117-4502-bf5d-e8fe0af90ba0",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C98",
+      "claim": "Tellurium and PhysiCell have shown how online models can be made interactive by using variations of Jupyter notebooks.",
+      "claim_type": "EXPLICIT",
+      "source": "these frameworks have also shown how such online models can be made interactive by using (variations of) Jupyter notebooks (see, e.g., Macklin and Heiland, 2020; Medley et al., 2018; Somogyi, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to publications about interactive notebooks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "debfd398-7df0-45ab-9c90-4ca7c5cdb302",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C99",
+      "claim": "The potential of explorable online web pages in communication and teaching is demonstrated by the practice to share R models in the form of Shiny apps.",
+      "claim_type": "EXPLICIT",
+      "source": "The potential of explorable online web pages in communication and teaching is also demonstrated by the emerging practice to share R models in the form of Shiny apps (Sch\u00f6nbrodt, 2014; Zehetleitner and Sch\u00f6nbrodt, 2015; Granjon, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to publications about Shiny apps.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "abf1e735-afae-4498-a06d-67f9021c20c7",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C100",
+      "claim": "The online collection of 'complexity explorables' is an example of how to combine interactive online simulations with explanatory text to communicate modelling research.",
+      "claim_type": "EXPLICIT",
+      "source": "And finally, the online collection of 'complexity explorables' (Brockmann, 2020) is a fantastic example of how to combine interactive online simulations with explanatory text to communicate modelling research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the complexity explorables collection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "47fee6de-3bc6-457d-a1a9-abc9d0e8bf8d",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C101",
+      "claim": "The authors have been developing Artistoo for more than 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "We have been developing the library for more than 5 years, also using it for robust simulation work in our research; see, for example, Wortel et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the development history of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "6b7dded3-95cc-4c4a-b21e-45d7b8f6aac9",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C102",
+      "claim": "The authors use Artistoo for robust simulation work in their research.",
+      "claim_type": "EXPLICIT",
+      "source": "We have been developing the library for more than 5 years, also using it for robust simulation work in our research; see, for example, Wortel et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a research publication using Artistoo.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "af711331-d7ef-4a89-8884-e699cb8daded",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C103",
+      "claim": "The authors are continuing to develop Artistoo for their own work.",
+      "claim_type": "EXPLICIT",
+      "source": "We are continuing to develop the library for our own work and welcome suggestions and code contributions from the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ongoing development of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "226c57bc-e30c-415f-9229-78c5584bafee",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C104",
+      "claim": "The authors do not envision Artistoo to replace existing modelling software.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not envision Artistoo to replace existing modelling software",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the intended role of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "8906492e-51dd-4237-ae2c-08f860cb54a3",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C105",
+      "claim": "Artistoo can complement software directed at computational biologists and developers by letting users build explorable and sharable versions of a simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "rather, it can complement software directed at computational biologists and developers by letting users build explorable and sharable versions of a simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the intended role of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "73410e70-2b34-42e5-908b-cb616502b510",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C106",
+      "claim": "Artistoo does not yet support all features of existing frameworks such as solvers for reaction\u2013diffusion equations or SBML-encoded intracellular signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Artistoo already offers a wide range of methods, it does not (yet) support all features of existing frameworks (Morpheus, CHASTE, CompuCell3D, Tissue Simulation Toolkit), such as solvers for reaction\u2013diffusion equations or SBML-encoded intracellular signalling, or writing output in formats like VTK and HDF5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current limitations of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "96840b16-5431-4d68-af73-cc85da292dff",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C107",
+      "claim": "Artistoo does not yet support writing output in formats like VTK and HDF5.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Artistoo already offers a wide range of methods, it does not (yet) support all features of existing frameworks (Morpheus, CHASTE, CompuCell3D, Tissue Simulation Toolkit), such as solvers for reaction\u2013diffusion equations or SBML-encoded intracellular signalling, or writing output in formats like VTK and HDF5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current limitations of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d52e71d3-8e85-47c4-b762-156038ab50b4",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C108",
+      "claim": "Artistoo simulations are highly customisable.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, Artistoo simulations are highly customisable, and a wide range of CPM models can already be constructed using the framework in its current state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "1fa1cae6-a9ef-4459-ad82-a4560bf683e6",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C109",
+      "claim": "A wide range of CPM models can already be constructed using Artistoo in its current state.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, Artistoo simulations are highly customisable, and a wide range of CPM models can already be constructed using the framework in its current state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "66fe0867-f315-4614-bec4-dccc5d28fbdd",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C110",
+      "claim": "Artistoo's modular structure makes it easy for future developers to extend it with custom code.",
+      "claim_type": "EXPLICIT",
+      "source": "The software's modular structure also makes it easy for future developers to extend it with custom code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the extensibility of Artistoo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "bf3c3b4f-05a5-426b-810c-ed7eba09ecd6",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C111",
+      "claim": "Artistoo is the first CPM simulation framework supporting interactive simulations in the web browser that can be shared via a simple URL, without requiring installed software or back-end servers.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, to the best of our knowledge, Artistoo is the first CPM simulation framework supporting interactive simulations in the web browser that can be shared via a simple URL, without requiring installed software or back-end servers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of Artistoo based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "b65204a1-45f0-407a-a3b7-6e53d5674e49",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C112",
+      "claim": "All simulations were run in the console mode using Node.js.",
+      "claim_type": "EXPLICIT",
+      "source": "All simulations were run in the console mode (using Node.js, which contains the same JavaScript engine as the Chrome web browser).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methods used for performance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "5b2333d9-1534-468e-aa18-e3d6a3554bce",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C113",
+      "claim": "Node.js contains the same JavaScript engine as the Chrome web browser.",
+      "claim_type": "EXPLICIT",
+      "source": "All simulations were run in the console mode (using Node.js, which contains the same JavaScript engine as the Chrome web browser).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on technical knowledge about Node.js and Chrome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "fb4b2b54-4144-4ba3-af8d-3292f83ec2a6",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C114",
+      "claim": "The Game of Life simulation was run on a 50 \u00d7 50 pixel grid with random initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation was run on a 50 \u00d7 50 pixel grid with random initial conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "dfd637a3-a624-4b10-b50f-511c18105e41",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C115",
+      "claim": "The Game of Life simulation was run for 500 steps, storing a PNG image every 20 steps.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation was run for 500 steps, storing a PNG image every 20 steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "48ede9b9-bb09-4d47-9110-11c2fc70541a",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C116",
+      "claim": "The protrusion model implements an actin-inspired migration model.",
+      "claim_type": "EXPLICIT",
+      "source": "This model of a migrating cell implements an actin-inspired migration model (Niculescu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original model publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d2369e1e-f24f-49c1-8c10-8336663df97e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C117",
+      "claim": "In the protrusion model, a single cell was seeded in the middle of a 200 \u00d7 200 pixel grid.",
+      "claim_type": "EXPLICIT",
+      "source": "A single cell was seeded in the middle of a 200 \u00d7 200 pixel grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "99c01281-7c1f-49a9-b149-4bdfc2cc2819",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C118",
+      "claim": "In the protrusion model, two obstacles of radius 10 were placed at a distance of 50 pixels to the left and right of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Two obstacles of radius 10 were placed at a distance of 50 pixels to the left and right of the cell, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "30a5c3df-b6e7-454d-8b91-0ffcca835745",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C119",
+      "claim": "The protrusion model simulations were run for 15,000 MCS, logging the cell's centroid every 10 MCS and saving a PNG every 250 MCS.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations were run for 15,000 MCS, logging the cell's centroid every 10 MCS and saving a PNG every 250 MCS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "80361af9-7ea0-4fb1-89de-3b099f8bf83e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C120",
+      "claim": "The cell sorting simulation implements the classical CPM model published by Graner and Glazier, 1992.",
+      "claim_type": "EXPLICIT",
+      "source": "This simulation implements the classical CPM model published by Graner and Glazier, 1992",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original cell sorting model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "c0f44ca2-0be2-4829-808e-7dc8ffae8211",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C121",
+      "claim": "In the cell sorting simulation, fifty cells each of two cell types were seeded on a 200 \u00d7 200 pixel grid within a circle of radius 67 from the grid midpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifty cells each of two cell types were seeded on a 200 \u00d7 200 pixel grid within a circle of radius 67 from the grid midpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "4cb63534-c899-4410-916a-3453e6dcce1b",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C122",
+      "claim": "Cell sorting simulations were run for 2000 MCS, logging statistics every 10 MCS and saving a PNG every 100 MCS.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations were run for 2000 MCS, logging statistics every 10 MCS and saving a PNG every 100 MCS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "240f96b8-a724-4699-ae34-a13f219fcca9",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C123",
+      "claim": "The cell division simulation was run on a 500 \u00d7 500 pixel grid.",
+      "claim_type": "EXPLICIT",
+      "source": "A CPM linked to cell division (see also Interactive Simulation 6 in Appendix 1) was simulated on a 500 \u00d7 500 pixel grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "bbd5d342-d0c2-495a-b91f-373ad7cebbc7",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C124",
+      "claim": "In the cell division simulation, the grid was initialised with 20 cells in a circle of radius 35 surrounding the grid midpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "The grid was initialised with 20 cells in a circle of radius 35 surrounding the grid midpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "9c938fd2-bb41-4626-8d88-675748ad4413",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C125",
+      "claim": "Cell division simulations were run for 40,000 MCS, logging the number of cells every 100 MCS and saving a PNG every 1000 MCS.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations were run for 40,000 MCS, logging the number of cells every 100 MCS and saving a PNG every 1000 MCS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "0802cf56-7b5f-45e6-9c2a-3fdeaa17030e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C126",
+      "claim": "For the scalability simulations, simulations were run without outputting images.",
+      "claim_type": "EXPLICIT",
+      "source": "For the scalability simulations, simulations were run without outputting images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methods used for scalability testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "97a5cd45-38d8-4b73-ab3b-accd29f15ad3",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C127",
+      "claim": "Running simulations without outputting images allowed investigation of simulation speed separately from the time it takes to draw the entire grid.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed us to investigate the simulation speed separately from the time it takes to draw the entire grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the rationale for the scalability testing method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "6699d82b-4f81-4b6e-9a38-6722bbe787bc",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C128",
+      "claim": "If the drawing step becomes a limiting factor for running the simulation, it is possible to speed up the process by drawing only once every few steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that if the drawing step becomes a limiting factor for running the simulation, it is always possible to speed up the process by drawing only once every few steps, or by choosing a more efficient drawing method (e.g. drawing only cell borders rather than entire cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on knowledge of visualization optimization strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "1b3121cb-5420-48f4-a49d-5235c06333aa",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C129",
+      "claim": "Choosing a more efficient drawing method can speed up the simulation process if drawing becomes a limiting factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that if the drawing step becomes a limiting factor for running the simulation, it is always possible to speed up the process by drawing only once every few steps, or by choosing a more efficient drawing method (e.g. drawing only cell borders rather than entire cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on knowledge of visualization optimization strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d050f846-4cd6-4b25-aec3-f0f18e04e4b6",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "claim_id": "C130",
+      "claim": "Scalability simulations contained 1, 5, 10, 50, 100, 500, or 1000 cells per cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations contained 1, 5, 10, 50, 100, 500, or 1000 cells per cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters used for scalability testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c53b5482-e526-4737-a13f-461472b9edab",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Artistoo is a JavaScript-based CPM framework that runs in web browsers without requiring software installation, plugins, or back-end servers, and supports interactive parameter exploration in real-time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C16, C20-C28 collectively establish Artistoo's core technical implementation and deployment model. The claims are internally consistent and describe verifiable technical specifications (JavaScript/ECMAScript 6, browser-based execution, zero-install architecture, MIT license, GitHub availability). These are design specifications that can be directly verified from the codebase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "a233219a-1ec0-4be0-9221-894c3b97096e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Artistoo's JavaScript implementation achieves performance comparable to C++-based frameworks like Morpheus, with no major performance disadvantage and sufficient speed for real-time interactive simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C19, C59-C62 are supported by empirical performance comparison data shown in Figure 2C. The benchmarking methodology is described (C112-C125), comparing four different simulation types between Artistoo and Morpheus. The data show similar performance with Artistoo slightly faster in 3/4 cases, and the one slower case (cell division) still maintaining feasible real-time performance. Statistical reporting includes mean \u00b1 SD of five runs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "0a6ac89a-b889-4d39-a823-30c8c841e52f",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Artistoo simulation speed scales linearly with grid size, decreases for very large systems, but remains feasible for real-time simulations across a reasonable range of grid sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by scalability data in Figure 2D and Figure 2\u2014figure supplement 1. The linear scaling is demonstrated empirically across multiple grid sizes (C130: 1-1000 cells per type). Figure 2D shows simulation speeds above 20 FPS threshold for various grid sizes. The methodology (C126-C130) appropriately isolates simulation speed from visualization overhead.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Artistoo's JavaScript implementation enables a dual-interface design that serves both model viewers (via zero-install HTML pages with parameter sliders) and model builders (via flexible library access at multiple complexity levels).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C43 describe Artistoo's design philosophy and are supported by Figure 1, which illustrates the different interfaces for viewers, users, and developers. The tiered complexity model (configuration objects \u2192 method incorporation \u2192 custom plugins) is a design specification that addresses the builder/viewer challenge (C29-C34). This is a software architecture claim that is verifiable from the implementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "3f756936-1280-4c2d-be44-592ae0e5163a",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Artistoo implements a wide range of CPM simulation capabilities through a modular, customizable architecture that allows users to simulate, visualize, and analyze diverse biological processes, with extensibility for custom modules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50, C54-C56, C108-C110 describe Artistoo's capabilities and architecture. Figure 2A provides visual evidence of diverse biological processes that can be simulated. The modular architecture claim (C54-C56) is a design specification verifiable from the codebase. The availability of examples (C46) and documentation (C44, C51) are verifiable resources. The claims about customizability are consistent with the described architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "4b61f2a8-9871-4319-8c3e-34b997030592",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prototype conversion tools have been developed to convert models between Artistoo and Morpheus formats, with limitations acknowledged for models not yet fully portable between frameworks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 describe the existence and functionality of conversion tools with appropriate caveats about limitations. The tools are stated to exist at specific URLs (https://artistoo.net/converter.html). The acknowledgment of limitations (C68) and fallback behavior (C69) demonstrates appropriate transparency. These are verifiable claims about tool availability and behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "deed7752-e7f9-4523-8870-22376bb9535e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors have successfully used Artistoo in teaching contexts, finding it feasible for students to run and understand CPM models in short workshops even without programming experience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C75 report anecdotal teaching experience without providing systematic evaluation data. No information is provided about sample size, learning outcomes assessment, student feedback, or comparison with other teaching methods. While the authors' experience is genuine, the claim about feasibility lacks rigorous pedagogical evaluation to be considered well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "285cd090-6480-49e6-9274-8cd6d0c00540",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Interactive web-based Artistoo simulations with real-time parameter feedback can substantially speed up parameter selection, detect unpredicted behaviors, enable collaboration with experimental biologists, and improve model quality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C90 report the authors' subjective experience with parameter tuning but lack quantitative evaluation. No data are provided comparing parameter tuning time with vs. without interactive visualization, no systematic assessment of artifact detection rates, and no controlled evaluation of collaboration effectiveness. These are plausible benefits but remain anecdotal observations rather than rigorously demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "78a04785-7143-4fb9-8dab-8623b1a437c4",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Artistoo is claimed to be the first CPM simulation framework supporting interactive browser-based simulations shareable via URL without requiring installed software or back-end servers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C111 asserts novelty 'to the best of our knowledge' but provides no systematic review of existing CPM frameworks' capabilities. While the authors cite other frameworks (C10-C13, C96-C98), they do not comprehensively evaluate whether any existing framework already offers browser-based, zero-install, interactive simulations. The novelty claim requires more rigorous comparative analysis to be fully supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "fb6385c3-f0b2-4be8-962f-4c950e3f64ff",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Interactive Artistoo simulations shared via URL may improve accessibility, transparency, and critical evaluation of CPM research, and foster interdisciplinary exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C82 are explicitly speculative ('we envision', 'may greatly improve', 'would allow'). These represent hypothesized benefits rather than demonstrated outcomes. No user studies, adoption metrics, or impact assessments are provided to support these potential applications. While plausible, these remain untested predictions about future impact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background context on CPM models: CPMs are powerful tissue-scale simulation methods originally for cell sorting, now extended to diverse biological processes; existing mature frameworks (CompuCell3D, Morpheus, TST, CHASTE) use C++ and require installation; JavaScript was historically too slow but has improved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C15, C17-C18 provide background context supported by appropriate citations to established literature (Graner & Glazier 1992, review papers, framework publications). These are well-established facts in the CPM field and accurately characterize the state of existing frameworks and historical performance limitations of interpreted languages.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "70e2b195-a493-42b3-b9a8-7950c546ff94",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Computational modeling research involves distinct user groups (model builders with programming skills vs. model viewers without), creating a design challenge where GUI-based tools favor viewers but limit builder flexibility, while code-based tools favor builders but exclude viewers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 articulate a well-recognized software design challenge in computational biology. This characterization is based on general knowledge of the field and represents a reasonable framing of the usability vs. flexibility tradeoff. The distinction between builders and viewers is a useful conceptual framework, though somewhat simplified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "021b0b0c-726d-4ead-b99d-4a3a0779c2dd",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors have been developing Artistoo for over 5 years, use it for their own research (e.g., Wortel et al. 2020), and continue active development with community contributions welcomed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C103 are verifiable statements about development history and usage. The 5-year development timeline and research use are supported by citation to Wortel et al. 2020. The statement about ongoing development and welcoming contributions is a statement of intent consistent with open-source practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "0519fd62-48ea-40b4-8449-f3300466d179",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Artistoo is positioned as complementary to existing frameworks rather than a replacement, with acknowledged limitations including lack of support for reaction-diffusion solvers, SBML signaling, and VTK/HDF5 output formats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 appropriately acknowledge Artistoo's limitations and position it as complementary to existing tools. This is a reasonable and transparent assessment of the framework's current scope. The specific missing features (C106-C107) are clearly stated, allowing users to make informed decisions about tool selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "653c7d4d-91a5-4f51-b01f-c68b183669a2",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CPM simulations consist of modular components (grid, energy rules, processes, visualization); a key CPM strength is extensibility with custom terms, though finding appropriate parameter ranges can be challenging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C85-C86 accurately describe established characteristics of CPM models based on general knowledge of the framework. The modular structure (C52) and extensibility (C53) are well-known CPM features. The parameter tuning challenge (C86) is a recognized practical difficulty in CPM modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "d235b1ff-1e22-442a-90d3-229122575a88",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Context on teaching and open science challenges: software installation in classroom settings is time-consuming; open science has increased code sharing but understanding shared code remains challenging; computational models are particularly difficult to share due to software and coding requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73, C76-C77, C93-C95 describe well-recognized challenges in teaching and open science based on general knowledge. These are reasonable characterizations of practical barriers to software adoption in education and research dissemination, though no specific evidence is provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "2ee67774-2ea0-4826-8c85-d56f6907ce4e",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Related work: CompuCell3D, Tellurium, and PhysiCell offer online access via NanoHub; these and other frameworks demonstrate interactive models using Jupyter notebooks; Shiny apps and 'complexity explorables' exemplify explorable online simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C100 accurately cite related work with appropriate references. These claims provide context for Artistoo's contributions by acknowledging similar efforts in online model sharing and interactive simulations. The citations support the existence of these related approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "56a12b4c-b0a9-40e3-9115-382793e42823",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Methods for performance evaluation: simulations run in Node.js console mode; four benchmark simulations implemented (Game of Life, protrusion model, cell sorting, cell division) with specified parameters; scalability tests run without image output to isolate simulation speed from visualization overhead.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C130 provide detailed methodological specifications for the performance benchmarking. The methods are clearly described with specific parameters for each simulation type. The rationale for excluding visualization in scalability tests (C126-C127) is appropriate. The use of Node.js (same engine as Chrome, C113) ensures browser-relevant performance measurement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    },
+    {
+      "id": "33ba99f7-fa63-42dc-908c-2a5ca0da0aba",
+      "content_id": "e1751308-49f8-4d42-970e-94e1d8b9b45b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Supporting resources and workflows: online documentation at artistoo.net helps users get started; reveal.js used for HTML slideshows with interactive demonstrations; QR codes enable mobile poster access; web prototypes can be ported to Node.js for command-line execution with local output storage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C51, C83-C84, C91-C92 describe available resources and workflows. Documentation availability (C44, C51) is verifiable. The use of reveal.js (C83) and QR codes (C84) are stated practices. The Node.js portability (C91-C92) is a technical capability consistent with JavaScript's cross-platform nature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:23.647095Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0bb64ebf-1f4d-4c55-9aa4-211b73fbe7a6",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "c34dba40-9e11-4379-b338-e128c7614384",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "bc0f9e78-a798-407a-b73b-cb003b4b3b0c",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "ebd106fd-d160-4b1c-a6aa-54abf4d75bc7",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "4c701f59-f8d3-49a0-bc3b-189ac55dabec",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "edf633fa-f653-49cb-bcc6-36de9b8d4ae5",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "ec741996-66e8-488e-b3d8-6afb9374c2bc",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "41a38a86-ed49-4954-bf81-5daf290124cb",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "7fdca1f0-4434-403f-a3d0-74d48cf0265f",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "09269708-512e-4444-8872-572939cdb614",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "3b1ea9f1-c9ef-4e83-8c72-69dc1e7a9a74",
+      "result_id": "c53b5482-e526-4737-a13f-461472b9edab"
+    },
+    {
+      "claim_id": "d55cedec-9a75-4383-9115-d8b86c9ba234",
+      "result_id": "a233219a-1ec0-4be0-9221-894c3b97096e"
+    },
+    {
+      "claim_id": "89bfcc55-f9c3-49e5-a929-073abde0404b",
+      "result_id": "a233219a-1ec0-4be0-9221-894c3b97096e"
+    },
+    {
+      "claim_id": "d40d5073-b5b1-4d60-ba56-c59a9830691e",
+      "result_id": "a233219a-1ec0-4be0-9221-894c3b97096e"
+    },
+    {
+      "claim_id": "177a335b-1545-4304-9336-312cfed8f996",
+      "result_id": "a233219a-1ec0-4be0-9221-894c3b97096e"
+    },
+    {
+      "claim_id": "72c6e3a6-0d72-4b71-ade7-9c92956bc5f1",
+      "result_id": "a233219a-1ec0-4be0-9221-894c3b97096e"
+    },
+    {
+      "claim_id": "8a676f56-c472-4b20-8448-f907a9fe987c",
+      "result_id": "a233219a-1ec0-4be0-9221-894c3b97096e"
+    },
+    {
+      "claim_id": "37d72fe3-e3d1-4f7d-bc05-d98a11fe4da8",
+      "result_id": "a233219a-1ec0-4be0-9221-894c3b97096e"
+    },
+    {
+      "claim_id": "03e0dee1-e245-47da-a476-8d1054e1f19d",
+      "result_id": "0a6ac89a-b889-4d39-a823-30c8c841e52f"
+    },
+    {
+      "claim_id": "f97c8d8d-1fe1-4106-834d-a2e102872621",
+      "result_id": "0a6ac89a-b889-4d39-a823-30c8c841e52f"
+    },
+    {
+      "claim_id": "d95622d7-17d5-41af-8804-68077dca4e99",
+      "result_id": "0a6ac89a-b889-4d39-a823-30c8c841e52f"
+    },
+    {
+      "claim_id": "c5166db2-e4fc-4730-b867-3bb8689e990b",
+      "result_id": "0a6ac89a-b889-4d39-a823-30c8c841e52f"
+    },
+    {
+      "claim_id": "9d052d5c-45a5-40fa-be37-8c1bf0588728",
+      "result_id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3"
+    },
+    {
+      "claim_id": "d4b53158-ed3d-4434-a921-3471428708e2",
+      "result_id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3"
+    },
+    {
+      "claim_id": "02e50072-fc04-414c-b5ed-957c5bb3369d",
+      "result_id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3"
+    },
+    {
+      "claim_id": "408a2f9c-f9f3-49c2-9b61-7e7583713314",
+      "result_id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3"
+    },
+    {
+      "claim_id": "65bf7819-b348-423f-b514-e0c1d2dbdb8f",
+      "result_id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3"
+    },
+    {
+      "claim_id": "0a022dd3-2260-4b09-88f6-6333b343cc5f",
+      "result_id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3"
+    },
+    {
+      "claim_id": "9620e85e-c330-4584-9d72-d2ab455a2575",
+      "result_id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3"
+    },
+    {
+      "claim_id": "ecf928f4-0b59-4556-b6f3-53709c2ab437",
+      "result_id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3"
+    },
+    {
+      "claim_id": "17414e4f-5481-4772-82f1-0413490004d6",
+      "result_id": "13b8b0ea-387b-4ce5-b7e3-b4bb9528e5c3"
+    },
+    {
+      "claim_id": "e5c0f411-e466-4162-bcb4-ad8e446423f8",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "85b7b844-3386-48ea-9efe-57825a3d6338",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "91231926-61c9-422a-acb2-553c55e4e758",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "a61c8a0c-fac8-457c-80b4-59ee2bf4c956",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "66b004c4-3bd8-496d-9be6-db25f03a1c08",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "2cb6ac18-c0d0-4104-9c68-2b60be7fdf03",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "29642582-152b-42b9-af3b-d3e13c1c7eb5",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "ee0d735c-db48-49fb-b6ef-c78cbaa3db71",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "70831d6c-f6d5-43d9-8f45-577d3ad2e61a",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "d52e71d3-8e85-47c4-b762-156038ab50b4",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "1fa1cae6-a9ef-4459-ad82-a4560bf683e6",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "66fe0867-f315-4614-bec4-dccc5d28fbdd",
+      "result_id": "3f756936-1280-4c2d-be44-592ae0e5163a"
+    },
+    {
+      "claim_id": "650f9e84-13bf-41e1-81e0-9d8e5be4df36",
+      "result_id": "4b61f2a8-9871-4319-8c3e-34b997030592"
+    },
+    {
+      "claim_id": "b3bca4c7-62a9-46bb-84ce-3aa6de1550e4",
+      "result_id": "4b61f2a8-9871-4319-8c3e-34b997030592"
+    },
+    {
+      "claim_id": "2a3311b9-9c19-4e68-a7d8-d0e9fc4a3905",
+      "result_id": "4b61f2a8-9871-4319-8c3e-34b997030592"
+    },
+    {
+      "claim_id": "13241fca-db65-486a-96d5-e49aaf18dd7e",
+      "result_id": "4b61f2a8-9871-4319-8c3e-34b997030592"
+    },
+    {
+      "claim_id": "6064f12a-fb93-47bd-b70e-a5ed46156b0f",
+      "result_id": "deed7752-e7f9-4523-8870-22376bb9535e"
+    },
+    {
+      "claim_id": "08686b48-118e-41f2-8226-2cd0a86f59e5",
+      "result_id": "deed7752-e7f9-4523-8870-22376bb9535e"
+    },
+    {
+      "claim_id": "9ce5371a-158b-4668-bb72-494405827fe0",
+      "result_id": "285cd090-6480-49e6-9274-8cd6d0c00540"
+    },
+    {
+      "claim_id": "f7de6e9b-a62b-4690-a106-31f334fb84de",
+      "result_id": "285cd090-6480-49e6-9274-8cd6d0c00540"
+    },
+    {
+      "claim_id": "916733d1-9699-47ab-8b0f-7fd3d7de1992",
+      "result_id": "285cd090-6480-49e6-9274-8cd6d0c00540"
+    },
+    {
+      "claim_id": "a46f9d59-c94a-415a-8185-52ff0fdc33eb",
+      "result_id": "285cd090-6480-49e6-9274-8cd6d0c00540"
+    },
+    {
+      "claim_id": "bf3c3b4f-05a5-426b-810c-ed7eba09ecd6",
+      "result_id": "78a04785-7143-4fb9-8dab-8623b1a437c4"
+    },
+    {
+      "claim_id": "96dc8748-6c3c-4aa7-9509-3c2858b32ea6",
+      "result_id": "fb6385c3-f0b2-4be8-962f-4c950e3f64ff"
+    },
+    {
+      "claim_id": "2693fd6e-3885-4c4a-86b6-c2fb30bf1f9e",
+      "result_id": "fb6385c3-f0b2-4be8-962f-4c950e3f64ff"
+    },
+    {
+      "claim_id": "e262938c-b5dc-45e2-bda1-fe78be39b4d1",
+      "result_id": "fb6385c3-f0b2-4be8-962f-4c950e3f64ff"
+    },
+    {
+      "claim_id": "88b13ddf-951c-411f-81ad-f7dd1241e793",
+      "result_id": "fb6385c3-f0b2-4be8-962f-4c950e3f64ff"
+    },
+    {
+      "claim_id": "639bf8d5-6fc4-4ecf-a79a-421a66506648",
+      "result_id": "fb6385c3-f0b2-4be8-962f-4c950e3f64ff"
+    },
+    {
+      "claim_id": "b6e4a37d-5682-4fbb-a01c-62b0b64879bb",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "519a00a2-1fc3-4a4e-a265-8eb5339d7d15",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "e3f86124-1c30-4292-8f58-6729b7a1e369",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "825467a3-ed5e-4783-a704-19e187a77286",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "570484e1-3240-47f4-a4ab-8387dbc0d876",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "5083c656-d283-4bcc-8536-c0a371588904",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "23213ebb-838e-42f1-bc34-c1f32f685b2e",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "e92af52f-1b4f-4bd6-9ba2-a5f6a82a4ca9",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "73b2d85c-d31b-4ddf-b880-d71c2d4017ba",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "7d32aaaa-9bc1-4be0-bad5-1155bb045924",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "d777b0fd-2e88-486a-86ad-c48b961408e0",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "e88b72ed-742f-459d-b636-49f89dc47f46",
+      "result_id": "c2de9e49-5e5e-4e31-aa5a-a71a24c6a56b"
+    },
+    {
+      "claim_id": "43ffca93-0567-4060-bef7-874e5046bc73",
+      "result_id": "70e2b195-a493-42b3-b9a8-7950c546ff94"
+    },
+    {
+      "claim_id": "f2148d58-5f1e-4cc2-8be5-19e28e231a8e",
+      "result_id": "70e2b195-a493-42b3-b9a8-7950c546ff94"
+    },
+    {
+      "claim_id": "3130e807-46f6-4159-be85-db8d198575aa",
+      "result_id": "70e2b195-a493-42b3-b9a8-7950c546ff94"
+    },
+    {
+      "claim_id": "a3cbdf3e-65d1-4fc5-b19b-e1da65e966bc",
+      "result_id": "70e2b195-a493-42b3-b9a8-7950c546ff94"
+    },
+    {
+      "claim_id": "ab205853-0f28-43f2-be7d-049888132b27",
+      "result_id": "70e2b195-a493-42b3-b9a8-7950c546ff94"
+    },
+    {
+      "claim_id": "0b03537a-ab05-44b2-a229-5cd70bcfa22c",
+      "result_id": "70e2b195-a493-42b3-b9a8-7950c546ff94"
+    },
+    {
+      "claim_id": "47fee6de-3bc6-457d-a1a9-abc9d0e8bf8d",
+      "result_id": "021b0b0c-726d-4ead-b99d-4a3a0779c2dd"
+    },
+    {
+      "claim_id": "6b7dded3-95cc-4c4a-b21e-45d7b8f6aac9",
+      "result_id": "021b0b0c-726d-4ead-b99d-4a3a0779c2dd"
+    },
+    {
+      "claim_id": "af711331-d7ef-4a89-8884-e699cb8daded",
+      "result_id": "021b0b0c-726d-4ead-b99d-4a3a0779c2dd"
+    },
+    {
+      "claim_id": "226c57bc-e30c-415f-9229-78c5584bafee",
+      "result_id": "0519fd62-48ea-40b4-8449-f3300466d179"
+    },
+    {
+      "claim_id": "8906492e-51dd-4237-ae2c-08f860cb54a3",
+      "result_id": "0519fd62-48ea-40b4-8449-f3300466d179"
+    },
+    {
+      "claim_id": "73410e70-2b34-42e5-908b-cb616502b510",
+      "result_id": "0519fd62-48ea-40b4-8449-f3300466d179"
+    },
+    {
+      "claim_id": "96840b16-5431-4d68-af73-cc85da292dff",
+      "result_id": "0519fd62-48ea-40b4-8449-f3300466d179"
+    },
+    {
+      "claim_id": "c46391b3-637e-4b94-9d86-0092171693ee",
+      "result_id": "653c7d4d-91a5-4f51-b01f-c68b183669a2"
+    },
+    {
+      "claim_id": "ead95263-bd7d-4f06-bb7a-8bf5c46081f5",
+      "result_id": "653c7d4d-91a5-4f51-b01f-c68b183669a2"
+    },
+    {
+      "claim_id": "ed88dab0-8417-4bdc-b130-0c7f4a593076",
+      "result_id": "653c7d4d-91a5-4f51-b01f-c68b183669a2"
+    },
+    {
+      "claim_id": "5c40b84b-807f-459d-9a9e-c9341bb8d1aa",
+      "result_id": "653c7d4d-91a5-4f51-b01f-c68b183669a2"
+    },
+    {
+      "claim_id": "7da31226-7d2b-4d2d-b75d-0a476e4b0f9d",
+      "result_id": "d235b1ff-1e22-442a-90d3-229122575a88"
+    },
+    {
+      "claim_id": "f40966bb-ab4e-45ed-ba3d-aabafe97ca71",
+      "result_id": "d235b1ff-1e22-442a-90d3-229122575a88"
+    },
+    {
+      "claim_id": "2068cc67-3300-40de-a1a3-f228dea1fe40",
+      "result_id": "d235b1ff-1e22-442a-90d3-229122575a88"
+    },
+    {
+      "claim_id": "d161932e-fd9e-4f9c-9833-6171a01a97d4",
+      "result_id": "d235b1ff-1e22-442a-90d3-229122575a88"
+    },
+    {
+      "claim_id": "9f1c7caa-89ec-4cf3-8824-ba45010e15bc",
+      "result_id": "d235b1ff-1e22-442a-90d3-229122575a88"
+    },
+    {
+      "claim_id": "4cde56f3-f944-4041-a2ab-cdae02e8f4cd",
+      "result_id": "d235b1ff-1e22-442a-90d3-229122575a88"
+    },
+    {
+      "claim_id": "232c5bfb-c259-4c9a-90f3-fa2c416ca37e",
+      "result_id": "d235b1ff-1e22-442a-90d3-229122575a88"
+    },
+    {
+      "claim_id": "9caaf327-06f5-4145-acc9-fa5ad3b40f4c",
+      "result_id": "d235b1ff-1e22-442a-90d3-229122575a88"
+    },
+    {
+      "claim_id": "d34d9c48-b079-4e61-bd12-401bf79ecb1a",
+      "result_id": "2ee67774-2ea0-4826-8c85-d56f6907ce4e"
+    },
+    {
+      "claim_id": "93887f26-f207-44a4-82d9-2fb4c240540d",
+      "result_id": "2ee67774-2ea0-4826-8c85-d56f6907ce4e"
+    },
+    {
+      "claim_id": "2003b89b-1117-4502-bf5d-e8fe0af90ba0",
+      "result_id": "2ee67774-2ea0-4826-8c85-d56f6907ce4e"
+    },
+    {
+      "claim_id": "debfd398-7df0-45ab-9c90-4ca7c5cdb302",
+      "result_id": "2ee67774-2ea0-4826-8c85-d56f6907ce4e"
+    },
+    {
+      "claim_id": "abf1e735-afae-4498-a06d-67f9021c20c7",
+      "result_id": "2ee67774-2ea0-4826-8c85-d56f6907ce4e"
+    },
+    {
+      "claim_id": "b65204a1-45f0-407a-a3b7-6e53d5674e49",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "5b2333d9-1534-468e-aa18-e3d6a3554bce",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "fb4b2b54-4144-4ba3-af8d-3292f83ec2a6",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "dfd637a3-a624-4b10-b50f-511c18105e41",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "48ede9b9-bb09-4d47-9110-11c2fc70541a",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "d2369e1e-f24f-49c1-8c10-8336663df97e",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "99c01281-7c1f-49a9-b149-4bdfc2cc2819",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "30a5c3df-b6e7-454d-8b91-0ffcca835745",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "80361af9-7ea0-4fb1-89de-3b099f8bf83e",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "c0f44ca2-0be2-4829-808e-7dc8ffae8211",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "4cb63534-c899-4410-916a-3453e6dcce1b",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "240f96b8-a724-4699-ae34-a13f219fcca9",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "bbd5d342-d0c2-495a-b91f-373ad7cebbc7",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "9c938fd2-bb41-4626-8d88-675748ad4413",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "0802cf56-7b5f-45e6-9c2a-3fdeaa17030e",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "97a5cd45-38d8-4b73-ab3b-accd29f15ad3",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "6699d82b-4f81-4b6e-9a38-6722bbe787bc",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "1b3121cb-5420-48f4-a49d-5235c06333aa",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "d050f846-4cd6-4b25-aec3-f0f18e04e4b6",
+      "result_id": "56a12b4c-b0a9-40e3-9115-382793e42823"
+    },
+    {
+      "claim_id": "3544d17e-5d43-41e2-a303-7e1dddaf9969",
+      "result_id": "33ba99f7-fa63-42dc-908c-2a5ca0da0aba"
+    },
+    {
+      "claim_id": "21f2f574-2cee-4ed2-b25e-5c2bc7198fc1",
+      "result_id": "33ba99f7-fa63-42dc-908c-2a5ca0da0aba"
+    },
+    {
+      "claim_id": "b9cf40c5-a75d-4d16-81a9-4d721629264b",
+      "result_id": "33ba99f7-fa63-42dc-908c-2a5ca0da0aba"
+    },
+    {
+      "claim_id": "aa7a8ac5-fef9-413c-acc9-4464a31e547e",
+      "result_id": "33ba99f7-fa63-42dc-908c-2a5ca0da0aba"
+    },
+    {
+      "claim_id": "76751884-a629-4eb7-8bea-3f538807b643",
+      "result_id": "33ba99f7-fa63-42dc-908c-2a5ca0da0aba"
+    },
+    {
+      "claim_id": "d4494be4-1dcf-486f-ab1a-72295ec3cca1",
+      "result_id": "33ba99f7-fa63-42dc-908c-2a5ca0da0aba"
+    }
+  ],
+  "comparisons": []
+}

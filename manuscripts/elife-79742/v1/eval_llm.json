@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The CoLaus|PsyCoLaus study is a longitudinal, population-based cohort initiated in 2003 in Lausanne, Switzerland, involving over 6500 participants of European ancestry with baseline assessments and follow-up visits every 5 years. A subgroup of 3459 individuals with available genome-wide genotyping data and immunoglobulin G levels for 22 persistent or frequently recurring pathogens were analyzed. During 12 years of follow-up, 210 participants (6.07%) experienced at least one CHD event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C33-C41, and C97-C108 collectively describe the study design, population characteristics, and CHD incidence. These are straightforward descriptive claims about the cohort that are internally consistent and well-documented. The study design is appropriate for investigating longitudinal associations with CHD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C65"
+    ],
+    "result": "Seropositivity for 22 pathogens ranged from 3.99% (S. gallolyticus) to 96.80% (EBV). Rubella, C. tetani, and C. diphteriae were excluded from analyses as antibodies were likely vaccine-induced. F. nucleatum seropositivity was significantly higher in CHD cases (22.4%) compared to controls (14.6%, p=0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, and C65 describe serological findings that are directly reported from the data. The exclusion of vaccine-related pathogens (C43) is methodologically sound. The difference in F. nucleatum seropositivity between cases and controls (C65) is statistically significant and supported by Figure 1 and Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "In univariable analysis, SCORE2 was significantly associated with CHD (HR 1.72, 95% CI 1.61-1.85, p=2.87\u00d710\u207b\u2076\u00b9), validating its utility in this cohort. Average gross monthly income showed a significant inverse association with CHD risk (HR 0.85, 95% CI 0.76-0.96, p=7.27\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 report univariable associations that validate the SCORE2 algorithm and identify socioeconomic factors. The extremely small p-value for SCORE2 is consistent with its established predictive value. The inverse association with income is biologically plausible and statistically significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In univariable analysis, seropositivity to six pathogens was significantly associated with CHD: HSV-1 (HR 1.88, p=6.52\u00d710\u207b\u2074), HHV-6A (HR 1.39, p=2.89\u00d710\u207b\u00b2), VZV (HR 1.70, p=4.25\u00d710\u207b\u00b2), HPyV6 (HR 1.66, p=2.74\u00d710\u207b\u00b2), F. nucleatum (HR 1.66, p=2.32\u00d710\u207b\u00b3), and C. trachomatis (HR 1.45, p=7.22\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C51 report univariable associations between pathogen seropositivity and CHD. However, the authors acknowledge that no multiple testing correction was performed (C92-C93), which may inflate the false positive rate. Without correction, the significance of these associations, particularly those with marginal p-values (e.g., VZV, HPyV6), is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "In univariable analysis, elevated hs-CRP (HR 1.91, 95% CI 1.42-2.55, p=1.51\u00d710\u207b\u2075) and TNF-\u03b1 (HR 1.43, 95% CI 1.05-1.96, p=2.46\u00d710\u207b\u00b2) levels were positively associated with increased CHD risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 report univariable associations between inflammatory biomarkers and CHD that are consistent with established knowledge about inflammation in cardiovascular disease. The effect sizes and confidence intervals are reasonable, though these associations did not remain significant in multivariable analysis (C69-C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "CHD-PRS showed a significant association with CHD in univariable analysis (HR 1.32, 95% CI 1.16-1.51, p=4.29\u00d710\u207b\u2075), confirming that genetic predisposition to CHD can be captured through polygenic risk scores. The top three genetic principal components were not significantly associated with CHD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 demonstrate that the CHD-PRS captures genetic risk while population structure (PCs) does not confound the association. This is methodologically sound and consistent with prior literature. The lack of PC association (C56) supports the validity of the genetic findings in this European ancestry cohort.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Correlation analysis showed no strong correlations between significant variables from univariable analyses. The strongest correlations were between SCORE2 and hs-CRP (Pearson's r=0.22) and between C. trachomatis seropositivity and income (Cramer's V=0.15). All significant variables satisfied the proportional hazards assumption, and no variance inflation factors indicated collinearity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe appropriate statistical checks for Cox regression assumptions. The weak correlations (C57-C59) support the independence of predictors. The proportional hazards assumption (C60) and absence of collinearity (C61) validate the appropriateness of the Cox modeling approach. These are well-documented in the supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "Multivariable stepwise Cox regression analysis, adjusted for known cardiovascular risk factors, socioeconomic status, and statin intake, identified four independent predictors of incident CHD: SCORE2 (HR 1.96 per SD, 95% CI 1.74-2.22, p=2.42\u00d710\u207b\u00b2\u2077), statin intake (HR 2.24, 95% CI 1.50-3.35, p=9.17\u00d710\u207b\u2075), F. nucleatum seropositivity (HR 1.63, 95% CI 1.08-2.45, p=1.99\u00d710\u207b\u00b2), and elevated CHD-PRS (HR 1.31 per SD, 95% CI 1.10-1.56, p=3.32\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C66 report the main findings from multivariable analysis shown in Figure 2. SCORE2 and CHD-PRS associations are well-established. The statin association likely reflects confounding by indication (patients at higher risk receive statins). The F. nucleatum association (C64) is novel and statistically significant after adjustment, though the lower confidence interval is close to 1.0, suggesting modest effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "High polygenic risk (HR 1.31, 95% CI 1.10-1.56, p=2.64\u00d710\u207b\u00b3) and infection with F. nucleatum (HR 1.63, 95% CI 1.08-2.45, p=1.99\u00d710\u207b\u00b2) were independently associated with incident CHD after adjustment for known cardiovascular risk factors, socioeconomic status, and statin intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 represent the primary findings of the study, confirmed by multivariable analysis (C62-C66). The polygenic risk association replicates prior findings. The F. nucleatum association is novel but has a confidence interval lower bound close to 1.0, indicating modest effect size. Both associations are independent of established risk factors, supporting their validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Pathogen burden (total number of seropositive pathogens) significantly increased CHD risk in univariable analysis (HR 1.11, 95% CI 1.03-1.18, p=3.25\u00d710\u207b\u00b3) but did not remain significant in multivariable analysis after adjustment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 show that overall pathogen burden does not independently predict CHD when accounting for other factors. This suggests that the univariable association may be confounded by socioeconomic status or other factors, or that specific pathogens (like F. nucleatum) drive the association rather than cumulative burden.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Chronic inflammation reflected in hs-CRP level did not appear as an independent predictor of CHD in multivariable analysis, as the univariable association signal was suppressed after adjustment for SCORE2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 indicate that hs-CRP does not add independent predictive value beyond SCORE2. This is plausible since SCORE2 incorporates multiple cardiovascular risk factors that may mediate the relationship between inflammation and CHD. The suppression of the hs-CRP signal suggests it may be a marker rather than an independent risk factor in this context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Participants with higher CHD-PRS have greater CHD risk even after adjustment for all known factors, confirming that individual genetic background modulates CHD risk independently from age, sex, or comorbidities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C72 are supported by the multivariable analysis (C66) and consistent with prior studies (citations to Ding et al., 2011; Kullo et al., 2016). The independent association of CHD-PRS after comprehensive adjustment demonstrates that genetic factors contribute to CHD risk beyond traditional risk factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "HSV-1, HHV-6A, VZV, HPyV6, and C. trachomatis serologies were associated with CHD in univariable models but not in multivariable analysis, suggesting they could be indirect markers of socioeconomic status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is supported by the data showing loss of significance in multivariable analysis. However, claim C85 is speculative\u2014the authors suggest these may be markers of socioeconomic status, but this is not directly tested. Alternative explanations (confounding by other factors, insufficient power, or true lack of independent association) are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The data do not support previously identified associations between CHD and H. pylori or CMV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 report null findings for H. pylori and CMV, which contradicts some prior literature. The authors acknowledge this discrepancy may be due to sample size or other factors. The null findings are clearly stated and appropriately interpreted with caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study has several limitations: potential undetected CHD events due to dropout, baseline-only measurements of risk factors and antibody responses, lack of multiple testing correction in univariable analyses (which may increase false positive rate), and unavailability of serologies for C. pneumoniae and HCV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 appropriately acknowledge study limitations. The lack of multiple testing correction (C92-C93) is particularly important and may affect the interpretation of univariable associations. The baseline-only measurements (C89-C91) limit the ability to assess temporal relationships. These are honest assessments of methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The F. nucleatum association needs replication in independent cohorts and different populations, and the clinical utility of including genetic and infection biomarkers in CHD prediction algorithms needs to be demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C96 appropriately call for validation studies and clinical utility assessment. These are standard requirements for translating observational associations into clinical practice. The modest effect size of F. nucleatum (HR 1.63) and the need for external validation are correctly emphasized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "F. nucleatum is a prevalent anaerobic bacterium in the oral cavity that plays a role in periodontal diseases and can spread hematogenously to extra-oral sites. Studies suggest its involvement in CVD through direct migration into arterial plaques and association with periodontitis, though no direct causality has been established and no GWAS on F. nucleatum immune response or susceptibility has been published.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 provide biological context for F. nucleatum supported by multiple citations. The authors appropriately note that causality has not been established (C82) and that genetic studies are lacking (C83). This contextualizes the novel association found in the study while acknowledging mechanistic uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The study employed rigorous methods including independent panel evaluation of CHD events, genome-wide genotyping with ~9 million SNPs after imputation, validated CHD-PRS calculation using PRSice-2, SCORE2 risk assessment, multiplex serology for 38 antigens from 22 pathogens, measurement of inflammatory biomarkers, and appropriate statistical analyses using Cox proportional hazards models with assumption testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C138 describe comprehensive and appropriate methodological approaches. The use of validated tools (SCORE2, established PRS), standardized serological assays, and proper statistical methods (Cox regression with assumption testing) supports the validity of the findings. The methods are well-documented and reproducible.",
+    "result_type": "MINOR"
+  }
+]

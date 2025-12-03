@@ -1,0 +1,430 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C28"
+    ],
+    "result": "ReporterSeq is a novel reverse genetic method that measures pathway-specific transcriptional activity in pooled genetic screens by linking RNA-encoded barcodes to reporter output, enabling high-throughput, time-resolved measurements without cell enrichment or single-cell isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C19-C22, and C28 collectively describe the core technical innovation and capabilities of ReporterSeq. The method's ability to measure pathway activity through barcode levels (C2, C19), operate without cell sorting (C3, C20), enable high-throughput time-resolved measurements (C1, C21), and use RNA as a direct readout (C22) are all demonstrated through the experimental implementation and results presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The ReporterSeq library was successfully constructed using CRISPRi with an Hsf1-responsive synthetic promoter, targeting genome-wide genes with up to 12 sgRNAs per gene and multiple barcodes per sgRNA, achieving approximately 1 million barcode-sgRNA pairs with 91% of genes represented by six or more sgRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40 describe the library construction and characterization. The data presented in Figure 1 supplements and the text confirm the library design parameters (C32-C34), library size (C35), and representation statistics (C36-C40). The rationale for multiple sgRNAs and barcodes (C33-C34) is clearly stated and the sequencing data validates the library composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Validation experiments demonstrate that the RNA/DNA barcode ratio accurately reflects HSR reporter activity under specific genetic perturbations, with SSA2 knockdown showing increased activity (NNS = 7.8) and CYC1 knockdown showing decreased activity (NNS = -5.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 describe validation of the ReporterSeq readout using known HSR regulators. Figure 2A shows the expected directional effects for SSA2 and CYC1, and the NNS values (C45-C46) are consistent with the known biology of these genes (C42). This validates that the RNA/DNA ratio reflects reporter activity (C44).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Genome-wide ReporterSeq screening in basal conditions identified multiple classes of HSR regulators, including chaperones/cochaperones (SIS1, SSA2, FES1, SSE1, HGH1, SSB2, STI1), Ras/cAMP pathway components (GPB2, IRA2), and other factors (TAZ1, UPF3, NMD2, ASC1), while mitochondrial and translation genes suppressed the HSR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 report the primary hits from the basal screen shown in Figure 2C. The NNS values are provided for each gene, and the results include both known regulators (validating the method) and novel findings. The data are presented with appropriate statistical analysis (one-sample t-test mentioned in text) and the results are consistent across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Validation experiments using gene deletions confirmed that top hits (SSA2, HSC82, ASC1) activate the HSR reporter specifically through Hsf1-dependent mechanisms rather than through effects on the crippled CYC1 promoter sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 describe validation experiments shown in Figure 2 supplement 2. The control reporter lacking HSE sequences shows no activation by the deletions (C57), supporting the interpretation that hits are Hsf1-specific (C58). This addresses a potential confound of the synthetic promoter design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Gene ontology analysis of basal screen results revealed that negative regulation of Ras signal transduction was the highest scoring category, while mitochondria, translation, and vacuolar acidification were among the lowest scoring categories, consistent with previous HSR studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 describe GO enrichment analysis shown in Figure 2D. The statistical approach (Student's t-test) is described in methods, and the results are consistent with cited prior work (C61-C63, C65-C66). The interpretation that high Ras activity leads to high HSR activity (C60) follows logically from the enrichment of negative Ras regulators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Gene-stressor interaction analysis revealed that SSA2 knockdown had a blocking interaction with heat stress (NNS = -7.4) while CYC1 had an aggravating interaction (NNS = 2.1), and overall there was a negative correlation (r = -0.45) between basal NNS and heat stress interaction NNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 describe the interaction analysis shown in Figure 3B-C. The interaction scores are clearly defined in the methods, and the negative correlation (C69) is quantified. The interpretation that genes increasing basal HSR block heat activation (C70-C71) follows logically from the correlation, though this is somewhat circular reasoning based on the scoring method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ASC1 showed an atypical interaction profile with heat stress compared to other strong HSR inducers, and genetic interaction experiments demonstrated that ASC1 acts independently of SSA2 (94% of expected GFP levels in double perturbation) while SIS1 and SSA2 showed blocking interactions (65% of expected levels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe experiments shown in Figure 3C-D that distinguish ASC1's mechanism from the Hsp70 system. The genetic interaction data (C74-C75) provide quantitative evidence for independence (C76), though the interpretation would be strengthened by additional mechanistic studies. The near-additive effect for ASC1-SSA2 (94%) versus the blocking effect for SIS1-SSA2 (65%) supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Time-course analysis of heat stress response (10, 20, 40, 120 min at 39\u00b0C) revealed temporally distinct regulatory mechanisms, with some genes (SIS1, TPS1) showing consistent effects throughout, while others (RAS2, HSF1, HSP42, BTN2, OPI10) showed time-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C88 describe the time-course experiments shown in Figure 4. The experimental design is clearly stated (C77), knockdown efficiency is validated (C78-C79), and the temporal patterns are documented (C80-C85). The interpretation of delayed effects representing damage accumulation (C88) is reasonable though somewhat speculative. The cited functions of the genes (C81-C82, C86-C87) support the biological interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The highly similar Hsp70 paralogs SSA1 and SSA2 showed strikingly different temporal interaction profiles during heat stress, with SSA2 showing strong blocking interactions at all time points while SSA1 showed minimal interaction early but aggravating interactions at 40 and 120 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe a surprising finding shown in Figure 4 about functional divergence of paralogous genes. The temporal profiles are clearly distinct in the data, and the interpretation of differential regulation (C92) is supported. However, the mechanism underlying this difference is not explored, representing a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "GO category analysis of the heat stress time course revealed that knockdown of heat shock response genes exacerbated late-phase responses, Ras signaling genes showed early aggravation but late blocking, and proteasome genes showed the lowest while ribosome biogenesis genes showed the highest late-phase interaction scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 describe GO enrichment analysis of the time course shown in Figure 4C. The patterns are clearly visible in the heatmap, and the interpretation that impaired response leads to prolonged stress (C94) is logical. The temporal dynamics of different functional categories provide insight into the progression of the heat stress response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "ReporterSeq was performed across 11 additional stress conditions, revealing that pleiotropic proteotoxic stressors and amino acid analogs robustly activated the HSR, while glucose starvation and ER stressors had milder effects, and all stressors except bortezomib showed negative interactions with SIS1/SSA2 knockdowns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 describe the multi-stressor screen shown in Figure 5. The experimental design is stated (C100), the HSR induction levels are quantified by qPCR (Figure 5A), and the interaction patterns are documented (C103). The exception of bortezomib is notable and explored further in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Stress-specific genetic interactions were identified, including STI1 with macbecin/canavanine (Hsp90 inhibitors), GCN3 with hydrogen peroxide/arsenite (strongest aggravating interactions), SNF4 with glucose starvation, and differential SSA1 versus SSA2 interaction profiles across stressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 describe stress-specific interactions shown in Figure 5B-C. The interactions are quantified with NNS values, and the biological context is provided through citations (C105, C107, C109). The SSA1/SSA2 divergence (C110) is consistent with the time-course data and validated in Figure 5 supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "GO category analysis across stressors revealed diverse stress-specific interaction patterns, with translation genes aggravating ethanol/glucose responses but blocking macbecin/arsenite, mitochondrial genes aggravating hydrogen peroxide/glucose responses, and proteasome genes blocking most responses but aggravating macbecin/bortezomib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 describe GO enrichment patterns shown in Figure 5D-E. The PCA analysis (C111) supports the existence of distinct interaction classes. The diversity of patterns (C117) is clearly demonstrated, though the interpretation that this reflects both damage and signaling effects is somewhat speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Analysis of chaperone availability sensing revealed that blocking interactions with SSA2 and HSC82 generally scaled with HSR induction strength, but with chaperone-specific patterns (HSC82 stronger with macbecin, SSA2 stronger with AZC) reflecting their distinct roles in sensing different stressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 describe analysis shown in Figure 5 supplement 3C testing the chaperone availability model. The scaling relationship (C120-C121) supports the model, while the specific differences (C122-C123) are consistent with cited prior work (C124-C125). This provides mechanistic insight into HSR regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Cycloheximide showed strong blocking interactions with chaperone genes despite not activating the HSR, exhibited a negative correlation with basal induction (r = -0.28), and clustered with late heat shock, suggesting that many genetic perturbations affecting the HSR are translation-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C133 describe cycloheximide analysis shown in Figure 5 supplement 3D and Figure 5F. The blocking interactions (C126), negative correlation (C128), and clustering (C129) are documented. The interpretation that this reflects translation-dependence (C130) is supported by cited literature (C131-C132), though the speculation about other stressors (C133) is less certain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "GCN3 knockdown showed the strongest stress-specific aggravating interactions with hydrogen peroxide and arsenite, and follow-up experiments revealed that GCN3 knockdown increased HSR reporter mRNA levels while decreasing protein levels under arsenite stress, indicating reduced translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 describe the GCN3 phenotype shown in Figures 5C and 6A-B. The interaction scores are quantified (C134), the molecular function is cited (C135-C136), and the mRNA/protein measurements (C137-C138) directly demonstrate the translation efficiency defect. The stress-specificity is confirmed by the lack of effect with AZC (C139).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "GCN3's effect on translation efficiency under arsenite stress was generalizable to multiple stress-responsive reporters (pHSP12 variants with and without HSE), suggesting a general role for GCN3 in increasing translation efficiency of stress-responsive genes under arsenite stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 describe experiments shown in Figure 6B testing generalizability. The use of multiple reporters with different promoters (C141) strengthens the conclusion that this is a general effect on stress-responsive genes (C144) rather than specific to the HSR reporter. The stress-specificity (C142) and lack of effect in unstressed conditions (C143) are important controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The Hsp70/Hsp40 pair SSA2/SIS1 was identified as the strongest HSR-regulating pathway, desensitizing cells to all stressors except bortezomib, consistent with direct Hsf1 binding, while Asc1 was identified as an independent HSR regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C150 summarize major findings from the screens. The SSA2/SIS1 dominance (C145-C146) is clear from the NNS values throughout, the bortezomib exception (C147) is documented, and the mechanistic interpretation (C148-C149) is supported by citations. The Asc1 independence (C150) is demonstrated by genetic interaction experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Macbecin and bortezomib showed similar global interaction profiles distinct from other stressors, both featuring aggravating interactions with proteasome and Hsp90-binding genes, but differing in their interactions with SIS1/SSA2, suggesting activation of the HSR via mechanisms separate from the Ssa2/Sis1 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C158 describe analysis of macbecin and bortezomib shown in Figure 5. The similarity in profiles (C153-C154) and key differences (C155-C156) are documented. The interpretation of separate mechanisms (C157) is reasonable and consistent with cited prior work (C158), though direct mechanistic evidence is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The data reveal a novel role for GCN3 in increasing translation efficiency of stress-responsive genes under stress, contrary to its canonical role in stress-dependent translation inhibition through eIF2\u03b1 phosphorylation sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 synthesize the GCN3 findings in the context of known biology. The canonical function (C159-C160) is well-established by citations, making the opposite effect observed here (C161) particularly notable. However, the mechanism underlying this non-canonical function is not elucidated, representing a limitation that the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "ReporterSeq enables full-genome screens in single cell cultures with multiple screens per sequencing run, identifying myriad stress-specific HSR regulators even with modest sequencing depth (5-15M reads per sample), with scalability limited only by growth conditions and sequencing rather than cell processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C166 describe the practical capabilities of ReporterSeq demonstrated throughout the study. The throughput (C162-C163), discovery yield (C164), and scalability (C165-C166) are all demonstrated by the execution of the multi-condition, time-resolved screens presented. The sequencing depth is documented in Supplementary file 9.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "Comparison with a previous HSR screen revealed weak correlation for basal activity but enriched stress-gene interactions for previous hits, demonstrating that ReporterSeq can reveal features of known regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 describe validation shown in Figure 2 supplement 3. The weak correlation (C167) is quantified (R = 0.162), and the enrichment for interactions (C168) provides orthogonal validation. However, the weak correlation raises questions about reproducibility between methods that are not fully addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "ReporterSeq is particularly suited for studying stress pathways co-regulated with translation where protein-based assays are limited, as demonstrated by contemporaneous application to Gcn4 regulation, and may broadly advance the study of cellular pathways in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C173 discuss the broader applicability of ReporterSeq. The advantage for translation-regulated pathways (C169-C170) is demonstrated by the GCN3 findings and is logical. The contemporaneous Gcn4 study (C171-C172) provides independent validation of the approach. The potential for broad impact (C173) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "The authors acknowledge that genetic perturbations can affect the HSR through mechanisms of varying directness, and that ReporterSeq cannot distinguish between these mechanisms, similar to other genetic screening methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 represent an important limitation acknowledged by the authors. This is a fair assessment that applies to most genetic screening approaches. The limitation does not invalidate the findings but indicates that mechanistic follow-up is needed to understand how specific genes regulate the HSR.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C72"
+    ],
+    "result": "E13.5 fetal liver F4/80+ macrophages exhibit a unique expression signature that differentiates them from both erythroid cells and adult spleen macrophages. This signature includes 304 genes exclusively expressed in FL macrophages, involved in circulatory system development, vasculature development, locomotion, blood coagulation regulation, and cell adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7-C13, and C72 collectively demonstrate through hierarchical clustering (C7), PCA (C9), marker expression analysis (C8), k-means clustering (C10-C11), and GO analysis (C13) that FL macrophages have a distinct molecular identity. The RNA-Seq data from biological triplicates with appropriate controls (ESREs and spleen macrophages) provides robust evidence for this unique signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C4",
+      "C73",
+      "C74"
+    ],
+    "result": "EKLF is transiently expressed in F4/80+ fetal liver macrophages during a specific developmental window. EKLF expression is absent at E10.25, becomes robust by E12.5, remains high until E18.5, and is undetectable postnatally. This expression is specific to FL macrophages and not found in other tissue macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C17, C4, C73-C74 are supported by multiple lines of evidence: immunofluorescence (C14), developmental RNA-Seq from Mass et al. 2016 (C16, C73-C74), and tissue specificity analysis (C17). The temporal expression pattern is well-documented and coincides with definitive erythropoiesis. However, the immunofluorescence shows heterogeneity (C15), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Loss of EKLF results in approximately 50% reduction in F4/80+ FL macrophages and significant downregulation of 1210 genes, predominantly involved in cell-cell adhesion. This is consistent with EKLF's role as a transcriptional activator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by FACS quantification (C18), k-means clustering (C19), DESeq2 differential expression analysis (C21), and GO analysis (C22). The consistency with EKLF's known activator function (C20) strengthens the interpretation. The use of biological replicates and appropriate statistical methods supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C78"
+    ],
+    "result": "EKLF+ and EKLF- F4/80+ macrophage subsets are functionally distinct populations. EKLF+ macrophages are enriched for 2330 genes including Epor and genes involved in heme synthesis, iron homeostasis, and erythroid differentiation, while EKLF- macrophages are enriched for innate immune response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 and C78 are supported by PCA (C24), differential expression analysis (C25-C26), and GO analysis (C28-C29). The enrichment of Epor in EKLF+ cells (C26) and the inference that these form erythroblast islands (C27) is reasonable given prior literature (Li et al., 2019), though direct functional validation in FL is not provided. The functional distinction between EKLF+ and EKLF- populations is well-supported by the transcriptomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C76"
+    ],
+    "result": "504 genes are EKLF-dependent in F4/80+EKLF+ macrophages, with Klf1 motifs overrepresented in their promoters. EKLF, together with Klf3, E2f1, E2f4, and Sp4, likely constitutes a transcriptional network regulating FL island macrophage gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 and C76 are supported by the intersection of two independent datasets (EKLF-/- and EKLF/GFP+), which is a powerful approach (C30). Centrimo motif analysis shows significant enrichment of Klf1 and other TF motifs (C31-C32), and these TFs are themselves EKLF-dependent (C32). The exclusion of E2f2 based on motif enrichment (C34) demonstrates appropriate statistical rigor. However, the network is inferred from motif analysis and expression data; direct ChIP-Seq validation is acknowledged as needed but not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Adra2b is a novel EKLF-dependent marker enriched in F4/80+ macrophages. Adra2b is highly enriched in F4/80+EKLF/GFP+ cells, downregulated ~8-fold in EKLF-/-, and expressed in erythroblastic islands at the surface of central macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by RNA-Seq data (C36), flow cytometry (C37-C38), and immunofluorescence (C40-C41). The correlation between F4/80-hi/Adra2b+ population and EKLF expression (C39) is a reasonable inference from the data. However, subsequent single-cell analysis (C56-C59) reveals that Adra2b alone is insufficient for isolating EKLF+ cells, indicating heterogeneity within the EKLF+ population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C81"
+    ],
+    "result": "Single-cell RNA-Seq reveals 13 distinct clusters within the F4/80+ FL population. Clusters 0-1 are likely macrophages with high macrophage marker expression, clusters 2-3 show activated macrophage characteristics, and clusters 4, 5, 7, and 8 exhibit erythro-myeloid characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 and C81 are supported by single-cell RNA-Seq analysis using Seurat. The clustering is based on unsupervised dimensionality reduction, and cluster identities are supported by marker gene expression (C44-C46) and GO analysis (C47-C49). The purity of the F4/80+ population (83%, C42) is reasonable for this type of analysis. The absence of Ter119 (C50) supports minimal erythroid contamination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "EKLF expression is detected exclusively in clusters 4, 5, and 7, comprising ~23% of F4/80+ cells. Most EKLF+ cells express Epor, but Adra2b is only enriched in cluster 4, indicating heterogeneity within EKLF+ macrophages and that Adra2b alone is insufficient for isolating EKLF+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are supported by single-cell RNA-Seq data showing EKLF expression patterns (C53), Epor coexpression (C55), and variable Adra2b expression (C56-C57). The proportion of EKLF+ cells (23%, C54) is reasonably consistent with prior estimates (~36%, C23), considering methodological differences. The conclusion that Adra2b is insufficient as a sole marker (C59) is a valid inference from the heterogeneous expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C79"
+    ],
+    "result": "Add2, Hemgn, Nxpe2, and Sptb are novel markers specifically enriched in EKLF+ clusters. Add2 and Sptb are membrane-associated proteins expressed in FL macrophages from E12.5-E18.5, are EKLF-dependent, and are expressed in erythroblast island central macrophages. Approximately 24-25% of F4/80+ cells are Add2+ or Sptb+, and these markers can be used to isolate EKLF+ FL island macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C71 and C79 are supported by multiple complementary approaches: single-cell RNA-Seq (C60), developmental RNA-Seq from Mass et al. (C63), bulk RNA-Seq from EKLF/GFP+ cells (C64), EKLF-/- analysis (C65), flow cytometry (C66-C67), Imagestream analysis (C68-C69), and immunofluorescence of isolated islands (C70). The convergence of evidence from these independent methods strongly supports Add2 and Sptb as reliable markers. The proportion of positive cells is consistent across methods. The suggestion to combine F4/80+, Add2+, and Sptb+ for isolation (C79) is a reasonable inference, though not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C42"
+    ],
+    "result": "Methodological validation shows that approximately 9% of wild-type FL cells are F4/80+, >95% of sorted F4/80+ cells are singlets free of erythroid contamination, and magnetic bead purification yields ~83% F4/80+ purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C42 provide important methodological validation supported by FACS analysis (C5, C42) and cytospin microscopy (C6). These quality control measures are appropriate and support the validity of subsequent analyses. The high purity and lack of erythroid contamination strengthen confidence in the macrophage-specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C82",
+      "C83"
+    ],
+    "result": "Quality control of single-cell RNA-Seq data shows absence of terminal erythroid marker Ter119, uniform high expression of Gapdh, moderate expression of CD71 in most clusters, absence of CD11b in EKLF+ subset, and absence of granulocyte marker Ly6G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C82-C83 provide important quality control and validation of the single-cell data. The absence of Ter119 (C50) and Ly6G (C83) confirms minimal contamination. The uniform Gapdh expression (C51) serves as a positive control. The absence of CD11b in EKLF+ cells (C82) is consistent with literature suggesting it is not an island macrophage marker, though this is inferred rather than directly shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The embryonic lethality of EKLF-/- mice may result from combined impairment of erythropoiesis in erythroid progenitors and impaired island macrophage function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is speculative and acknowledged as such in the text. While the data demonstrates EKLF's importance in both erythroid cells and macrophages, the relative contribution of each to embryonic lethality is not directly tested. Conditional knockout experiments would be needed to definitively establish the contribution of macrophage-specific EKLF loss to lethality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Knowledge of unique island macrophage markers and receptors may be functionally relevant for improving in vitro erythropoiesis expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is speculative about potential applications. While the identification of novel markers is valuable, their functional utility for improving in vitro erythropoiesis has not been tested. This represents a reasonable hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "EKLF and its target genes identified in this study are also expressed in the 'Vcam1+ erythroblastic island macrophage' cluster in human fetal liver hematopoiesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by citation of a recent single-cell analysis study of human FL (Popescu et al., 2019). This provides important translational relevance, though the authors appropriately rely on published data rather than generating new human data. The conservation across species strengthens the biological significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C75"
+    ],
+    "result": "Background knowledge claims about erythroblastic islands, EKLF function, macrophage biology, and prior studies are established from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C75, C85-C98 represent established knowledge from the literature, appropriately cited. These provide necessary context for interpreting the current findings. The authors accurately represent prior work, including the role of EKLF in erythroid cells (C89-C90), its function in macrophages (C91-C93), and characteristics of island macrophages (C97-C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Approximately 36% of F4/80+ macrophage singlet cells express EKLF based on prior work with the pEKLF/GFP mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by citation of prior work (Xue et al., 2014). The current single-cell analysis finds ~23% EKLF+ cells (C54), which is reasonably consistent considering methodological differences (bulk FACS sorting vs. single-cell RNA-Seq, detection sensitivity differences). The discrepancy is acknowledged and does not undermine either finding.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C32"
+    ],
+    "result": "The authors designed and implemented a replication system using tRNA-like DNA double-hairpin sequences (82-84 nt) that spontaneously form molecular assemblies and replicate information autonomously through reversible hybridization driven by thermal oscillations, without requiring covalent bond formation or catalytically active sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-18, C26-28, C30, and C32 collectively describe the core experimental design and mechanism. The sequences are well-characterized (C26-28), structurally validated for both DNA and RNA (C32), and the mechanism is clearly defined as relying solely on reversible hybridization without ligation (C17-18). The experimental implementation is explicitly stated (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The replication mechanism operates through a four-step thermal cycle: (0) fast cooling activates hairpins into closed state, (1) complementary strands bind to template at base temperature, (2) thermal fluctuations enable hairpin opening and adjacent strand binding, (3) heating separates replicate from template while maintaining backbone stability, enabling cross-catalytic replication with minimal background formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-39 provide a detailed mechanistic description supported by experimental observations. The four-step cycle is clearly articulated (C33-36), the cross-catalytic nature is explained (C37), and the kinetic discrimination between templated (minutes) and untemplated (hours) reactions is quantified (C38-39), providing strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Native PAGE analysis confirmed that double hairpins assembled as designed, with friction coefficients 1.6-2.4-fold higher than linear dsDNA consistent with branched structure, and the instability of single information domain bonds during electrophoresis enabled differentiation of fully assembled complexes from partial assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-49 describe structural validation through PAGE. The assembly is confirmed (C44-45), friction coefficients are quantified and interpreted (C46-47), and the electrophoretic behavior provides a useful analytical tool (C48-49). Figure 2 and supplements provide clear visual support for these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The pool of cross-complementary hairpins self-selected through sequence-specific agglomeration and sedimentation under gravity when all eight matching sequences were present, but not with seven sequences or random controls, demonstrating a potential autonomous pathway for system emergence from semi-random sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20, C50-54, C56, C97-99 describe the self-selection mechanism. The experimental observations are clear (C50-54), controls are appropriate (C52, C54), concentration dependence is documented (C53), and the interpretation as a selection mechanism is reasonable (C56, C99). Figure 3 provides strong visual evidence. The connection to prior work (C98) strengthens the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Template-directed assembly kinetics at 45\u00b0C achieved 40% yield in 10 minutes at 120 nM template, significantly faster than untemplated reaction (1.4% yield), with strong temperature dependence explained by hairpin opening dynamics and information domain melting temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-62 describe templating kinetics with specific quantitative data (C58-59), temperature dependence (C60), and mechanistic explanations (C61-62). Figure 4b,c provides clear supporting data. The mechanistic interpretations are consistent with the melting temperature data shown in Figure 4\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Thermal oscillations drove exponential, cross-catalytic replication that was fast (few 20-min cycles), robust to peak temperatures below 74\u00b0C, withstood serial dilutions, and showed velocity comparable to other replicators, with linear dependence of reaction velocity on template concentration confirming exponential growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42, C64, C66-70, C85-87 describe exponential amplification with multiple lines of evidence: linear template dependence (C64), temperature robustness (C66-67), serial transfer experiments (C68-70), and comparative velocity (C87). Figure 5 provides comprehensive supporting data. The cross-catalytic model fitting (C69-70) provides quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C75",
+      "C78",
+      "C79",
+      "C81",
+      "C84"
+    ],
+    "result": "The replicator encoded and replicated binary sequences with ~60% fidelity per information domain, corresponding to 85-90% per nucleotide fidelity, with ~10% unspecific amplification without template (significantly improved from >50% in prior work), and error rates attributable to spontaneous background formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-43, C75, C78-79, C81, C84 describe replication fidelity with quantitative measurements. The per-domain fidelity is calculated from defect experiments (C79), the conversion to per-nucleotide fidelity is justified (C84), background rates are characterized (C43, C78), and improvement over prior work is documented (C42-43). Figure 6 provides supporting data, though the per-nucleotide conversion involves assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The overall replication fidelity is limited by spontaneous bond formation between hairpin pairs in free solution, which would decrease at lower concentrations at the expense of slower overall reaction rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-92 identify the key limitation and predict concentration effects. This is consistent with the kinetic data showing untemplated background formation (C39, C59, C78) and represents a reasonable mechanistic interpretation of the fidelity limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The mechanism is expected to work equally well for DNA and RNA, with RNA potentially surviving days to weeks under the experimental conditions, and shorter strands predicted to function if melting temperature order is preserved, potentially with improved selectivity and easier prebiotic synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29, C31, C93-95 make predictions about system variants. While C29 is reasonable given the hybridization-based mechanism, and C31 is supported by citations, these remain predictions. C32 provides some support for RNA equivalence, but actual RNA replication experiments are not shown. The predictions about shorter strands (C93-95) are logical but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose that early forms of tRNA could have been involved in molecular replication before translation, potentially linking the evolution of replication and translation along a common evolutionary trajectory through spatial arrangement of amino acid-bearing tRNA-like sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-7, C102-107 present evolutionary hypotheses. While the experimental demonstration of tRNA-like sequence replication is solid, the evolutionary implications are speculative (all claims marked as SPECULATION or INFERENCE). The hypothesis is interesting and the experimental work provides a proof-of-concept, but direct evidence for evolutionary relevance is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The basic replication principle was previously explored by Krammer et al. using four hairpins (36 nt) that amplified into dimers but could not encode information and suffered from >50% unspecific amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-41 accurately describe prior work with appropriate citations. This provides important context for evaluating the improvements in the current study (C42-43).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C100",
+      "C101",
+      "C108"
+    ],
+    "result": "The required thermal oscillations can be obtained through natural convection in thermal gradients, though prebiotic synthesis of >80 nt RNA remains unclear; the mechanism could potentially be supplemented by slower ligation chemistry or serve as a mutable assembly strategy for larger functional RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-90, C100-101, C108 discuss prebiotic plausibility and extensions. C88 is well-supported by citations, but C89 acknowledges a major limitation. C90, C100-101, and C108 are speculative extensions (marked as SPECULATION). These represent interesting future directions but lack experimental validation in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C55",
+      "C96"
+    ],
+    "result": "The manuscript provides appropriate background on modern replication machinery, the RNA world hypothesis, ribozyme capabilities, and prior approaches to strand separation and replication, establishing context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-14, C21-25, C55, C96 provide background knowledge and citations to prior work. These are appropriately referenced and provide necessary context. The citations appear accurate based on the stated content.",
+    "result_type": "MINOR"
+  }
+]

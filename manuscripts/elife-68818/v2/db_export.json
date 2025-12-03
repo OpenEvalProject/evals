@@ -1,0 +1,1841 @@
+{
+  "submission": {
+    "id": "a0792e20-7732-47c5-8b0b-4501bbb0f57e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:07:48.034820Z",
+    "updated_at": "2025-12-03T06:07:48.034820Z"
+  },
+  "content": [
+    {
+      "id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "submission_id": "a0792e20-7732-47c5-8b0b-4501bbb0f57e",
+      "content_type": "manuscript",
+      "content_text": "# Effect of malaria parasite shape on its alignment at erythrocyte membrane\n\n## Authors\n\n- Anil K Dasanna<sup>1</sup> ([ORCID: 0000-0001-5960-4579](https://orcid.org/0000-0001-5960-4579))\n- Sebastian Hillringhaus<sup>1</sup> ([ORCID: 0000-0003-0100-9368](https://orcid.org/0000-0003-0100-9368))\n- Gerhard Gompper<sup>1</sup> ([ORCID: 0000-0002-8904-0986](https://orcid.org/0000-0002-8904-0986))\n- Dmitry A Fedosov<sup>1</sup> ([ORCID: 0000-0001-7469-9844](https://orcid.org/0000-0001-7469-9844)) \u2020\n\n### Affiliations\n\n1. Theoretical Physics of Living Matter, Institute of Biological Information Processing and Institute for Advanced Simulation, Forschungszentrum J\u00fclich J\u00fclich Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring the blood stage of malaria pathogenesis, parasites invade healthy red blood cells (RBC) to multiply inside the host and evade the immune response. When attached to RBC, the parasite first has to align its apex with the membrane for a successful invasion. Since the parasite\u2019s apex sits at the pointed end of an oval (egg-like) shape with a large local curvature, apical alignment is in general an energetically unfavorable process. Previously, using coarse-grained mesoscopic simulations, we have shown that optimal alignment time is achieved due to RBC membrane deformation and the stochastic nature of bond-based interactions between the parasite and RBC membrane (Hillringhaus et al., 2020). Here, we demonstrate that the parasite\u2019s shape has a prominent effect on the alignment process. The alignment times of spherical parasites for intermediate and large bond off-rates (or weak membrane-parasite interactions) are found to be close to those of an egg-like shape. However, for small bond off-rates (or strong adhesion and large membrane deformations), the alignment time for a spherical shape increases drastically. Parasite shapes with large aspect ratios such as oblate and long prolate ellipsoids are found to exhibit very long alignment times in comparison to the egg-like shape. At a stiffened RBC, a spherical parasite aligns faster than any other investigated shape. This study shows that the original egg-like shape performs not worse for parasite alignment than other considered shapes but is more robust with respect to different adhesion interactions and RBC membrane rigidities.\n\n## Introduction\n\nMalaria is a mosquito-borne infectious disease caused by a protozoan parasite of the genus Plasmodium. Prior to transmission, the parasite proceeds through both asymptomatic and symptomatic developmental stages in the host (Miller et al., 2002; Cowman et al., 2012; White et al., 2014). After an asymptomatic development stage within the liver, merozoites are released into the bloodstream. They have an egg-like shape with a typical size of approximately 1.5\u00b5m (Bannister et al., 1986b; Dasgupta et al., 2017; Dasgupta et al., 2014b). During the blood stage of infection, which is a clinically symptomatic stage, parasites invade healthy red blood cells (RBCs) and multiply inside them. This process aids parasites to evade the immune response. The total life-cycle within each infected RBC lasts for about 48 hr, after which the cell membrane is ruptured and new merozoites are released into the bloodstream.\n\nInvasion of RBCs by parasites is a complex process that involves the following steps: (i) initial random attachment, (ii) reorientation (or alignment) of the apex toward cell membrane, and (iii) formation of a tight junction followed by the final invasion (Koch and Baum, 2016; Cowman and Crabb, 2006). The parasite\u2019s apex contains the required machinery for the invasion process, and thus, apex alignment toward the cell membrane is a necessary step for a successful invasion to follow. Merozoite adhesion to a RBC is facilitated by proteins at the parasite surface which can bind to the cell membrane (Bannister et al., 1986b; Gilson et al., 2006; Beeson et al., 2016). Recent optical tweezers experiments provide an estimation for the force required to detach a parasite adhered to RBC membrane to be in the range of 10\u201340 pN (Crick et al., 2014). Other experiments (Dvorak et al., 1975; Gilson and Crabb, 2009; Glushakova et al., 2005; Crick et al., 2013)\u00a0demonstrate that the parasite is dynamic at the RBC membrane, and induces considerable membrane deformation during alignment. Furthermore, there is a positive correlation between such deformations and parasite alignment. The time required for the parasite to align is found to be on the order of 16 s (Weiss et al., 2015). Our recent investigation of the parasite alignment with adhesion modeled by a homogeneous interaction potential has confirmed the importance of membrane deformations for proper alignment, but the alignment times were found to be significantly less than 1 s (Hillringhaus et al., 2019). The main shortcoming of this model is that it produces only static membrane deformations and the parasite exhibits very little dynamics at the RBC surface. This model has been extended by including realistic bond-based adhesion interactions between the parasite and RBC membrane (Hillringhaus et al., 2020), which results in alignment times consistent with the experimental measurements.\n\nA typical merozoite has an egg-like shape with the apical complex sitting on the pointed edge. Our previous work (Hillringhaus et al., 2020) suggests that parasite alignment occurs due to RBC deformability and stochastic fluctuations in bond dynamics. Stochastic fluctuations and consequent rolling-like (or rotational) motion of the parasite at the membrane surface are especially important at low adhesion strengths, as they facilitate alignment toward pointed apex. The egg-like shape naturally adheres to RBC membrane with its less curved side, as this adhesion state corresponds to the largest contact area. Then, a rotational motion of the parasite toward the apex is required to establish an apex-membrane contact. If parasite adhesion interactions with a membrane are strong, merozoite mobility is significantly suppressed, and the alignment is mainly facilitated through wrapping of the parasite by cell membrane, emphasizing the importance of RBC deformability. These are two major mechanisms for the alignment of an egg-like merozoite.\n\nEven though most types of Plasmodium merozoites have an egg-like shape, the merozoite of Plasmodium yoelii changes its shape from an oval to a spherical shape right before its attachment followed by alignment and invasion (Yahata et al., 2012). The alignment time for Plasmodium yoelii is also reported to be longer than for Plasmodium falciparum (Yahata et al., 2012). It is not clear why the Plasmodium yoelii parasite adapts its shape before the alignment process at the RBC membrane. This raises a question whether the parasite shape has important advantages/disadvantages in the alignment process or simply results from the structural organization of its internal elements. Therefore, it is important to understand the effect of parasite shape in the alignment process.\n\nIn this article, the role of parasite shape in the alignment process at the RBC membrane is studied by mesoscopic computer simulations. In particular, we show that basic dynamical properties, such as parasite mobility, RBC membrane deformation, and the number of adhesion bonds, are significantly affected by different parasite shapes. In turn, these are tightly coupled to parasite alignment characteristics that determine its alignment success. In general, parasite shapes with large aspect ratios (e.g. oblate and long prolate ellipsoid) are disadvantageous for alignment, as these shapes result in a significant reduction of parasite mobility at the membrane. A spherical parasite is more mobile than an egg-like merozoite, which is advantageous in cases with low adhesion interactions or increased membrane stiffness. However, the spherical shape is disadvantageous for strong adhesion interactions, when parasite mobility is suppressed, as parasite alignment by membrane wrapping is often unsuccessful because the apex may not be within the adhesion area. As a result, the egg-like shape exhibits an alignment performance that is generally not worse than of other studied shapes, but more robust for disparate conditions in parasite adhesion strength and RBC membrane deformability.\n\n## Results\n\nTo investigate the role of parasite\u2019s shape in the alignment process, five different shapes with varying aspect ratios are chosen: $(i)$ an egg-like (EG) shape that is the typical shape of Plasmodium falciparum merozoite, $(i\u2062i)$ a sphere (SP), $(i\u2062i\u2062i)$ a short ellipsoid (SE) whose dimensions are similar to the egg-like shape, $(i\u2062v)$ a long ellipsoid (LE), and $(v)$ an oblate (OB) shape, see Figure 1(a). The corresponding maximum and minimum dimensions for these shapes are $r_{max}=1.5\\mum$\u00a0& $r_{min}=1.08\\mum$ for EG, $r_{max}=r_{min}=1.2\\mum$ for SP, $r_{max}=1.6\\mum$\u00a0& $r_{min}=1.02\\mum$ for SE, $r_{max}=2.4\\mum$\u00a0& $r_{min}=0.76\\mum$ for LE, and $r_{max}=1.5\\mum$\u00a0& $r_{min}=0.64\\mum$ for OB. All shapes are selected such that they have approximately the same surface area and the same number of vertices or equivalently the same density of adhesion receptors. The fraction of receptors that can form long bonds is kept at 0.4 similarly to our previous study (Hillringhaus et al., 2020), while the fraction of receptors for short bonds is equal to 0.6. Other parasite-RBC interaction parameters are calibrated through the displacement of an egg-shaped parasite at RBC membrane (see Figure 1(b) and Video 1) against available experimental data (Weiss et al., 2015). In this calibration procedure, kinetic rates and strength of the bonds are adjusted, so that simulated and experimental translational displacements of the parasite match well, see Table 1 and the Materials\u00a0and\u00a0methods section for details. Note that the translational displacement of the parasite results from its stochastic rolling-like motion. The set of calibrated parameters in Table 1 will be referred to as the reference parameter set. All other parameters including bond rates are kept same unless stated otherwise.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68818/elife-68818-fig1-v2.jpg)\n\n**Figure 1.:** (a) Triangulated surfaces of different parasite shapes including an egg-like (EG) shape, a sphere (SP), a short ellipsoid (SE), a long ellipsoid (LE), and an oblate ellipsoid (OB). The apex position is indicated by a black point for all parasite shapes. (b) A snapshot from simulations showing an egg-like parasite interacting with the RBC membrane, see also Video 1. A bright yellow color indicates the apical complex and a dark green color represents the parasite\u2019s back. The egg-like (EG) shape is a typical shape of merozoites. (c\u2013e) Different dynamical characteristics for various parasite shapes. (c) Fixed-time displacement $\u0394\u2062d$ of the parasite normalized by an effective parasite diameter $D_{p}=\\sqrt{A_{p}/\\pi}$ where $A_{p}$ is the parasite membrane area. (d) Change in total membrane energy $\u0394\u2062E$ due to deformation induced by the parasite. (e) Number of short and long bonds $n_{b}$. In (c)-(d), all data are for the reference parameter set, see Table 1.\n\n**Table 1.**\n List of kinetic bond parameters that are used to calibrate the parasite\u2019s translational displacement in simulations against experimental data by Weiss et al., 2015.$\\tau=\u03b7\u2062D_{0}^{3}/\u03ba$ is the membrane relaxation timescale.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Simulation value</th>\n      <th>Physical value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u2113extlong</td>\n      <td>0.0154\u2062D0</td>\n      <td>100\u00a0nm</td>\n    </tr>\n    <tr>\n      <td>\u2113extshort</td>\n      <td>0.0031\u2062D0</td>\n      <td>20\u00a0nm</td>\n    </tr>\n    <tr>\n      <td>\u03c1long</td>\n      <td>0.4\u2009\u03c1para</td>\n      <td>107\u00a0\u03bcm-2</td>\n    </tr>\n    <tr>\n      <td>\u03c1short</td>\n      <td>0.6\u2009\u03c1para</td>\n      <td>161\u00a0\u03bcm-2</td>\n    </tr>\n    <tr>\n      <td>konlong</td>\n      <td>36.3\u2062\u03c4-1</td>\n      <td>39.6\u00a0s-1</td>\n    </tr>\n    <tr>\n      <td>konshort</td>\n      <td>290.3\u2062\u03c4-1</td>\n      <td>317.0\u00a0s-1</td>\n    </tr>\n    <tr>\n      <td>koff</td>\n      <td>72.58\u2062\u03c4-1</td>\n      <td>79.2\u00a0s-1</td>\n    </tr>\n    <tr>\n      <td>\u03bblong</td>\n      <td>2.46\u00d7104kBT/D02</td>\n      <td>2.57\u00a0\u03bcN\u00a0m-1</td>\n    </tr>\n    <tr>\n      <td>\u03bbshort</td>\n      <td>0.82\u00d7104kBT/D02</td>\n      <td>0.856\u00a0\u03bcN\u00a0m-1</td>\n    </tr>\n  </tbody>\n</table>\n\n![Video 1.](https://cdn.elifesciences.org/articles/68818/elife-68818-video1.mp4.jpg)\n\n**Video 1.:** $k_{off}/k_{on}^{long}=2$.\n\n### Dynamical properties of different shapes\n\nFigure 1(c-e) presents basic dynamical measures of merozoites with different shapes.\u00a0These include [Figure 1(c)] fixed-time displacements $\u0394\u2062d$ traveled by the parasite over fixed time intervals of $\u0394t=1s$ and normalized by an effective parasite diameter $D_{p}=\\sqrt{A_{p}/\\pi}$ ($A_{p}\u22434.6\\mum^{2}$ is the parasite membrane area for all shapes), [Figure 1(d)] change in membrane total energy $\u0394\u2062E/k_{B}\u2062T$ due to deformation induced by parasite adhesion, and [Figure 1(e)] the number of bonds $n_{b}/N_{para}$. The spherical shape is most mobile (i.e. has the largest $\u0394\u2062d/D_{p}$, see Video 2), while the oblate shape is slowest with the lowest $\u0394\u2062d$. Intuitively, a shape with a lower local curvature (e.g. OB shape) should form a larger adhesion area, and thus be less dynamic or mobile. This is in agreement with our results in Figure 1(e), where the SP (OB) shape has the smallest (largest) number of bonds, which is directly proportional to the adhesion area. Note that the egg-like and short-ellipsoid shapes show very similar dynamic characteristics, as these shapes are very close to each other. Fixed-time displacement of the long ellipsoid (see Videos 2 and 3) has values between those for the SE and OB shapes, which is consistent with the number of bonds (or equivalently the adhesion area) in Figure 1(e).\n\n![Video 2.](https://cdn.elifesciences.org/articles/68818/elife-68818-video2.mp4.jpg)\n\n**Video 2.:** Here, $k_{off}/k_{on}^{long}=2$.\n\n![Video 3.](https://cdn.elifesciences.org/articles/68818/elife-68818-video3.mp4.jpg)\n\n**Video 3.:** Here, $k_{off}/k_{on}^{long}=2$.\n\nThe RBC deformation energy $E/k_{B}\u2062T$ can generally be expected to be proportional to the adhesion area or the number of formed bonds. This is true for the spherical shape that induces the lowest deformation energy in Figure 1(d). Furthermore, both oblate and long ellipsoid shapes result in a large deformation energy. However, the LE shape has a slightly larger value of $\u0394\u2062E$ than the OB shape, even though the oblate shape has a larger adhesion area. This can be rationalized by the fact that the adhesion of the oblate shape to RBC membrane induces a lower deformation than the LE shape, as the OB shape has a lower curvature at its flat side (see Video 3). Furthermore, the exact position where parasite adheres to RBC membrane is important, as local curvature at the membrane (e.g. negative curvature in the dimple areas) can oppositely match the curvature at the parasite surface. This is the main reason why a successful alignment occurs more frequently in the concave areas of RBC dimples than at the convex rim of the membrane\u00a0(Hillringhaus et al., 2020). Note that the RBC deformation energy in Figure 1(d) displays opposite trends in its shape dependence than the parasite mobility or fixed-time displacement in Figure 1(c). As a result, parasite shapes with a large asphericity are less dynamic at the RBC surface, while the EG, SP, and SE shapes show comparable dynamical characteristics.\n\n### Parasite alignment characteristics\n\nTo characterize parasite alignment, we introduce two quantities: $(i)$ apex distance dapex and $(i\u2062i)$ alignment angle \u03b8 (Hillringhaus et al., 2020)\u00a0given by\n\n$$\nd_{apex}=mini\u2061(|\ud835\udc2b_{apex}-\ud835\udc2b_{i}|),\\theta=arccos\u2061(\ud835\udc27\u22c5\ud835\udc27^{face}),\n$$\n\nwhere $\ud835\udc2b_{apex}$ is the apex position, $\ud835\udc2b_{i}$ is the position of vertex $i$ at the membrane, $\ud835\udc27$ is the parasite\u2019s directional vector pointing from its back to the apex, and $\ud835\udc27^{face}$ is the normal vector of a RBC membrane triangular face whose center of mass is closest to the parasite\u2019s apex. Both the apex distance $d_{apex}$ and the alignment angle \u03b8 are schematically depicted in Figure 2(a). The directional vector is defined for all shapes by selecting two opposite vertices along the shape axis, which represent the apex and the back. A perfect alignment is achieved when the apex distance is equal to the distance at which the repulsive interaction vanishes (i.e. at $\u22432^{1/6}\u2062\\sigma$) and the alignment angle \u03b8 is equal to \u03c0. Due to limitations in the discretization of both the RBC and the parasite (Hillringhaus et al., 2020), a successful parasite alignment can be characterized by the criteria\n\n$$\nd_{apex}\\leq2^{1/6}\u2062\\sigma+r_{junc}\u2003&\u2003\\theta\\geq0.8\u2062\\pi,\n$$\n\nwhere $r_{junc}=10$\u00a0nm defines the junctional interaction range of the parasite\u2019s apex (Bannister et al., 1986b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68818/elife-68818-fig2-v2.jpg)\n\n**Figure 2.:** (a) Sketch of parasite at the RBC membrane. Alignment angle, \u03b8, is defined as the angle between the parasite\u2019s directional vector $n$ (black arrow) and membrane surface normal $n^{face}$ (green arrow). The apex distance, $d_{apex}$, is the distance between the parasite\u2019s apex and the RBC membrane surface. (b) and (c) Sketch of a spherical parasite of radius $R$, partially wrapped by a membrane area $A_{m}$, with its apex (b) away from the adhesion area and (c) within the wrapped area. (d) and (e) Apex distance dapex distributions and (f) and (g) alignment angle \u03b8 distributions for all shapes. In all plots, the alignment criteria from Equation (2) are shown by the dashed lines. For a better readability, the distributions for SP and SE shapes in (d) and (e) are plotted separately from the distributions for LE and OB shapes in (f) and (g) along with distributions of the egg-like shape (EG) in all plots.\n\nFigure 2 presents apex-distance and alignment-angle distributions for different parasite shapes, where the alignment criteria from Eq\u00a0(2)\u00a0are indicated by the dashed lines. Even though alignment of the SE shape is similar to the EG shape, it is slightly worse for the SE shape as the dapex distribution in Figure 2(a) is shifted further away from the alignment criterion for dapex than that for the EG shape. This is due to the fore-aft asymmetry of the EG shape, whose largest-adhesion configuration corresponds to a slightly tilted orientation of the parasite with its apex closer to the membrane than its back. Figure 2(b) and (d) compares the alignment characteristics of the egg-like shape with oblate and long-ellipsoid shapes. The key advantage of the egg-like shape in comparison to LE and OB shapes is that the EG shape has a reduced adhesion area due to a larger local curvature, which allows the EG parasite to fluctuate more around its directional vector, leading to wider distributions of its alignment characteristics. Since the OB shape forms the largest adhesion area in comparison to the EG and LE shapes, it has the narrowest distributions (i.e. lowest fluctuations) for both the apex distance and alignment angle. A further advantage of the EG shape is the aforementioned fore-aft asymmetry, which results in a shift of the apex-distance and alignment-angle distributions toward a better alignment in comparison to those for the OB and LE shapes.\n\nClearly, parasite alignment characteristics for the spherical shape are qualitatively different from all other (ellipsoid-like) shapes. At first glance, dapex and \u03b8 distributions in Figure 2(d) and (f) seem to suggest that the SP shape might be best for parasite alignment. However, the membrane deformability breaks the \u2019up-down\u2019 symmetry of these distributions, leading to two distinct cases: $(i)$ the apex is not within the parasite-membrane adhesion area [Figure 2(b)] for which the alignment characteristics are very poor and (ii) the apex is within the adhesion area [Figure 2(c)] resulting in good alignment. Hence, alignment performance of the spherical parasite is more subtle than indicated by the distributions in Figure 2 and will be discussed further below.\n\n### Alignment of a spherical parasite\n\nFigure 3 shows apex-distance and alignment-angle distributions of the spherical parasite for different values of the off-rate koff.\u00a0Both dapex and \u03b8 distributions generally display a sharp peak near the alignment criteria and a long tail with a wider distribution for non-aligned parasite orientations. Thus, the sharp peak represents parasite orientations when its apex is within the membrane-parasite contact area $A_{m}$, as schematically illustrated in Figure 2(c). Correspondingly, the long tail characterizes orientations when the parasite\u2019s apex is not within the adhesion area $A_{m}$, as sketched in Figure 2(b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68818/elife-68818-fig3-v2.jpg)\n\n**Figure 3.:** (a) Apex-distance and (b) alignment-angle distributions of the SP shape for different bond off-rates. The alignment criteria from Equation 2 are shown by the dashed lines. Several peaks in $P\u2062(d_{apex})$ for $k_{off}/k_{on}^{long}=0.5$ are due to limited statistics, since for the strongest adhesion, the parasite mobility is very low and the simulations are too short to capture the stationary distribution.\n\nAt large values of the off-rate (e.g. $k_{off}/k_{on}^{long}=4.0$), the spherical parasite is very mobile at the membrane surface (i.e. has a large effective rotational diffusion) and induces nearly no membrane deformations. In such cases, there is no significant wrapping of the parasite by the membrane, resulting in wide dapex and \u03b8 distributions in Figure 3. As koff is decreased, the merozoite becomes partially wrapped by the membrane, leading to the development of the sharp peak in both distributions. At the smallest off-rate of $k_{off}/k_{on}^{long}=0.5$, the alignment properties in Figure 3 seem to be qualitatively different from those for larger off-rates. Note that for small off-rates, the parasite forms a large number of bonds with the membrane, resulting essentially in its arrest with nearly zero rotational diffusion. Therefore, these simulations are too short to fully capture dapex and \u03b8 distributions, which are also expected to have the sharp peak characterized by the wrapped area $A_{m}$.\n\nTo rationalize apex-distance and alignment-angle distributions for a spherical parasite, we use a simple model of a sphere with radius $R$ partially wrapped by the membrane, as illustrated in Figure 2(b) and (c). Since the adhered parasite is mobile, the parasite\u2019s directional vector can point toward any possible direction when sampled over times longer than a characteristic time of parasite rotational motion. Therefore, the probability of alignment can be approximated as $A_{m}/A_{p}$, where $A_{m}$ and $A_{p}$ are the adhesion area and the total surface area of a sphere, respectively. As a result, the sharp peak in dapex and \u03b8 distributions near the alignment criteria must increase with an increase in adhesion strength or a decrease in koff. A theoretical model for sphere wrapping based on energy minimization results in Hillringhaus et al., 2019,\n\n$$\n\\frac{A_{m}}{A_{p}}=2\u2062\\sqrt{\\frac{2}{Y}\u2062(\\frac{\u0394\u2062U_{b}}{A_{c}}-\\frac{2\u2062\u03ba}{R^{2}})},\n$$\n\nwhere $Y$ is the Young\u2019s modulus of the membrane, \u03ba is the bending rigidity, and $\u0394\u2062U_{b}\u223ck_{B}\u2062T\u2062ln\u2061(k_{on}/k_{off})$ is the energy gained through single-bond association per area $A_{c}$, which can be considered as the effective area of a single bond. Therefore, $A_{m}$ increases with a decrease in koff. Furthermore, for small deformations, $A_{m}$ is essentially governed by the competition of bending and adhesion energies, while for strong adhesion, stretching elasticity of the membrane also becomes important.\n\nWhen the parasite is not aligned, the apex distance can be approximated by a height of the parasite\u2019s apex with respect to the flat part of the membrane, see Figure 2(b). Note that this assumption becomes strictly valid for a flat membrane without wrapping or a weak adhesion of the merozoite. Then, the probability distribution for the apex distance dapex is characterized by the area of a spherical segment (or frustum) with height $\u0394\u2062h$ as\n\n$$\nP\u2062(d_{apex})\u2062\u0394\u2062h=\\frac{A_{\u0394\u2062h}}{A_{p}}=\\frac{2\u2062\\pi\u2062R\u2062\u0394\u2062h}{A_{p}}=\\frac{1}{2\u2062R}\u2062\u0394\u2062h,\n$$\n\nwhere $\u0394\u2062h$ is an infinitesimally small interval around dapex. Therefore, $P\u2062(d_{apex})=1/(2\u2062R)$ is independent of the apex distance, which is consistent with nearly flat dapex distributions for $k_{off}/k_{on}^{long}\\geq2.0$ in Figure 3(a) and Figure 2(d). Similarly, the probability distribution $P\u2062(\\theta)$ can be approximated using segment areas $A_{\u0394\u2062\\theta}=2\u2062\\pi\u2062R^{2}\u2062(cos\u2061(\\theta)-cos\u2061(\\theta+\u0394\u2062\\theta))\u22482\u2062\\pi\u2062R^{2}\u2062sin\u2061(\\theta)\u2062\u0394\u2062\\theta$, resulting in\n\n$$\nP\u2062(\\theta)\u2248\\frac{sin\u2061(\\theta)}{2}\n$$\n\nfor not aligned parasite orientations. This approximation is consistent with the data in Figure 3(b) and Figure 2(f). In summary, such unique distributions of alignment properties for the SP shape are possible due to the spherical symmetry. For non-spherical parasite shapes, a sharp peak disappears because parasite adhesion to the membrane favors a specific parasite orientation.\n\n### Effect of adhesion strength on parasite alignment time\n\nFigure 4(a) and (b) show apex-distance and alignment-angle properties for different parasite shapes and various off-rates which is used to control the strength of merozoite adhesion to the membrane. The apex distance decreases when the off-rate is decreased or the strength of adhesion is increased. Similarly, the alignment angle increases toward the alignment criterion in Equation (2), as the adhesion strength is increased. For all non-spherical shape cases, successful alignment is generally achieved at low enough koff values, which imply strong membrane deformations and a significant wrapping of the parasite by the membrane. This is consistent with deformation energies shown in Figure 4(c), which significantly increase with decreasing koff. The main difference for the spherical parasite is that the best alignment is achieved for intermediate values of off-rates (e.g. $k_{off}/k_{on}^{long}\u22481.0$). As mentioned before, small values of koff significantly suppress parasite mobility, which is required for successful alignment of the spherical parasite because its apex may not be immediately within the parasite-membrane contact area after initial adhesion. Interestingly, the OB shape results in a significantly lower deformation energy than other merozoite shapes for $k_{off}/k_{on}^{long}<2.0$. Here, the magnitude of local curvature has a pronounced effect, such that the OB shape forms a large adhesion area over its nearly flat part with very low curvature, while close to the rim, where the curvature is large, adhesion interactions are too weak to induce membrane wrapping and deformation. For the other shapes, the adhesion strength is still sufficient to induce partial wrapping of the parasite by the membrane over moderate curvatures.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68818/elife-68818-fig4-v2.jpg)\n\n**Figure 4.:** (a) Apex distance dapex, (b) alignment angle \u03b8, (c) total deformation energy $\u0394\u2062E$, and (d) alignment time $\\tau_{n}$ for different parasite shapes and bond off-rates that determine the adhesion strength. Several missing bars in the plot of alignment times for $k_{off}/k_{on}^{long}>2$ indicate that $\\tau_{n}$ is much larger than 26 s which is the maximum time of all simulation trajectories.\n\nTo compute alignment times, we employ Monte Carlo simulations based on $(d_{apex},\\theta)$ probability maps constructed from approximately 10 independent direct simulation trajectories for each parameter set (Hillringhaus et al., 2020). Figure 4(d) shows alignment times $\\tau_{n}$ for different parasite shapes and off-rates, where all times are normalized by the alignment time of an egg-like shape for the reference parameter set (Hillringhaus et al., 2020). In some cases, the bars are missing in the plot, indicating that the alignment has not occurred in direct simulations whose maximum time length is about 26 s. Alignment times of the spherical parasite are very long at small off-rates and become comparable with those of the egg-like shape at intermediate and high values of koff. The SE, LE, and OB shapes generally align very fast at small off-rates, but often do not align at all when adhesion becomes weak. This means that these spheroidal shapes require substantial membrane deformation for a successful alignment.\n\n### Alignment at a rigid RBC\n\nTo understand the importance of RBC deformability in the alignment process for different parasite shapes, we have simulated parasite alignment at a rigid RBC. Figure 5(a) and (b) presents fixed-time displacement and alignment time for different parasite shapes and two off-rates. Generally, a small fixed-time displacement (or low mobility at the membrane) results in a long alignment time and vise versa. Both long-ellipsoid and oblate shapes do not align or have a very long alignment time at a rigid membrane, as they require considerable amount of membrane deformation for the alignment. Both egg-like shape and short ellipsoid exhibit similar fixed-time displacements and alignment times. However, for the egg-like shape, an increase in off-rate (i.e. more mobility) improves the alignment whereas for the short ellipsoid an opposite trend is observed. The spherical parasite shows the fastest alignment in comparison to the egg-like and short ellipsoid shapes due to its increased mobility. Thus, at a rigid RBC, the spherical shape shows best alignment properties, at least for intermediate off-rate values.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68818/elife-68818-fig5-v2.jpg)\n\n**Figure 5.:** (a) Fixed-time displacement $\u0394\u2062d/D_{p}$ and (b) alignment time $\u27e8\\tau_{n}\u27e9/\u27e8\\tau_{n,ref}\u27e9$ for different parasite shapes and two values of off-rates $k_{off}/k_{on}^{long}$. Note that the data for long ellipsoids is omitted as they never become aligned during direct simulations indicating that their alignment time is much larger than the total simulation time.\n\n## Discussion\n\nWe have investigated the importance of merozoite shape for its alignment at the RBC membrane which is a prerequisite for the invasion process. This study is a continuation of our previous work (Hillringhaus et al., 2020) where the alignment of an egg-like parasite, a natural shape of merozoite, was investigated. Motivated by experimental observations by\u00a0Bannister et al., 1986a, adhesion between the RBC membrane and the parasite is implemented by discrete bonds of two different types, with long and short interaction ranges. The density of both long and short bonds, their kinetic rates and extensional rigidities are calibrated through fixed-time displacement of an egg-like shaped parasite against available experimental data (Weiss et al., 2015). Alignment times from two independent experiments are found to be 16\u00a0s (Weiss et al., 2015) and 7-44\u00a0s (Yahata et al., 2012), respectively. For the egg-like shape, an average alignment time of $10s$ was obtained in our simulations (Hillringhaus et al., 2020).\n\nTo study the effect of parasite shape on alignment, five different parasite shapes, including the original egg-like (EG) shape, short ellipsoid (SE), sphere (SP), long ellipsoid (LE), and oblate (OB) shapes, were considered. The question \u2018Which parasite shape performs best for apex alignment and potential invasion?\u2019 does not have a unique answer, as parasite performance also depends on the membrane properties and the characteristics of the adhesion bonds, including their dynamics. In general, some parasite shapes are advantageous when the binding kinetics are slow or large RBC membrane deformations take place, while other shapes are advantageous in case of fast binding kinetics or small membrane deformations.\n\nOne of our key results is that the spherical parasite exhibits apex-distance and alignment-angle distributions different from those for non-spherical shapes. Distributions of alignment characteristics for the SP shape generally have a sharp peak near the alignment criteria representing parasite orientations with its apex within the adhesion area. At small off-rates or for strong adhesion interactions, there is a considerable parasite wrapping by the membrane and parasite mobility is suppressed. In this case, a successful alignment of the spherical parasite occurs only if the apex ends up directly within the wrapped part of the membrane. This means that the SP shape exhibits \u2018all or nothing\u2019 alignment behavior at small off-rates. In contrast, the egg-like shape adheres with its side to the membrane, and is able to establish a direct membrane-apex contact due to significant parasite wrapping. On the other hand, the SP shape performs better than the EG shape at large values of off-rates when membrane deformation is almost negligible. The spherical symmetry of the SP shape results in its faster mobility in comparison with the egg-like shape. Furthermore, a fluctuation of the EG parasite toward successful alignment due to adhesive dynamics is associated with a larger energetic barrier in comparison to the SP shape for which all directions of motion are statistically equivalent. This is also the main reason why the spherical shape leads to the fastest alignment at a rigid membrane in comparison to all other shapes. Interestingly, even though most types of Plasmodium merozoites have an egg-like shape, Plasmodium yoelii transforms into a spherical shape from an egg-like shape after the egress from an infected RBC (Yahata et al., 2012). This shape transition seems to be essential for the successful invasion. A plausible hypothesis is that Plasmodium yoelii exhibits a rather weak adhesion to RBCs in comparison to Plasmodium falciparum, so that the spherical shape becomes advantageous for the alignment process. However, we cannot exclude the possibility that this shape transition is just a result of some internal processes such as cytoskeleton rearrangement, in preparation of the merozoite for a subsequent invasion.\n\nShort ellipsoid geometrically resembles the EG shape except that the egg-like shape has asymmetric ends along the cylindrical axis. Therefore, the SE shape shows alignment characteristics that are closest to the EG shape. However, the alignment of the SE shape is slightly worse than that of the egg-like parasite, as the alignment-angle distribution for short ellipsoid is shifted further away from the alignment criterion in comparison to the egg-like shape. This is due to the asymmetry of EG shape along the cylindrical axis, which favors an adhesion orientation tilted toward the apex. At low enough bond off-rates or strong adhesion interactions, alignment of the SE shape is faster than the egg-like shape, as the wrapping of more curved apex region of the EG parasite is slightly less energetically favorable than that of a symmetric SE shape. Furthermore, alignment of oblate and long-ellipsoid shapes proceeds only through significant wrapping of the parasite by the membrane, which occurs only at low off-rates or for strong adhesion interactions. This is also evident from simulations at a rigid RBC, where alignment times of the LE and OB shapes are either very long or no alignment potentially occurs. Despite the fact that the egg-like shape has some advantages over the investigated spheroidal shapes, it is not clear whether this asymmetry exists simply due to the internal parasite structure (e.g. placement of essential organelles of different sizes) or has some functional importance.\n\nFinally, apical alignment at the RBC membrane is followed by parasite invasion, which requires the formation of a tight junction. During invasion, the tight junction is formed at the apical end and moves toward the back of the parasite with the aid of the\u00a0actomyosin machinery (Keeley and Soldati, 2004; Robert-Paganin et al., 2019; Cowman and Crabb, 2006). Even though the invasion includes mainy mechanochemical processes, parasite shape must play an important role, as it significantly affects the energy required to deform RBC membrane. For instance, particles with a larger aspect ratio such as oblate and long ellipsoids require a larger energy for complete wrapping (or uptake) (Bahrami et al., 2014; Dasgupta et al., 2014a; Dasgupta et al., 2017). From a dynamical perspective, fluctuations that are important for particle uptake also depend on the geometry of a particle (Frey et al., 2019). Note that particle uptake studies are performed majorly for vesicles, while RBCs possess shear elasticity in addition to membrane bending rigidity. For instance, Hillringhaus et al., 2019 show that for small interaction strengths, bending energy has a dominant contribution to membrane deformation energy, while for strong interactions shear elastic energy exhibits a more dominant contribution. Different aspects related to the performance of various parasite shapes for RBC invasion clearly require further investigations.\n\n## Materials and methods\n\n### Red blood cell model\n\nRBC membrane is modeled as a triangulated surface with $N$ vertices, $N_{s}$ edges, and $N_{t}$ faces. The total potential energy is given by Fedosov et al., 2010a; Fedosov et al., 2010b:\n\n$$\nU_{rbc}=U_{sp}+U_{bend}+U_{area}+U_{vol}.\n$$\n\nThe first term in Equation 6 represents the elastic energy term $U_{sp}$ expressed as\n\n$$\nU_{sp}=\\sumi=1N_{s}\\frac{k_{B}\u2062T\u2062\u2113_{i}^{max}\u2062(3\u2062x_{i}^{2}-2\u2062x_{i}^{3})}{4\u2062p_{i}\u2062(1-x_{i})}+\\frac{\\lambda_{i}}{\u2113_{i}},\n$$\n\nwhere the first term is the worm-like-chain potential, while the second term is a repulsive potential. $\u2113_{i}$ is the length of the i-th spring, pi is the persistence length, $\u2113_{i}^{max}$ is the maximum extension, and $x_{i}=\u2113_{i}/\u2113_{i}^{max}$. The initial biconcave shape of the RBC is considered to be the stress-free shape, so that it does not have any residual elastic stresses. This is achieved by setting individually all equilibrium spring lengths $\u2113_{i}^{0}$ to the corresponding edge lengths of the initial membrane triangulation. Shear modulus \u03bc of the membrane is given in terms of model parameters as Fedosov et al., 2010a; Fedosov et al., 2010b,\n\n$$\n\\mu=\\frac{\\sqrt{3}\u2062k_{B}\u2062T}{4\u2062p_{i}\u2062\u2113_{i}^{0}}\u2062(\\frac{x\u00af}{2\u2062(1-x\u00af)^{3}}-\\frac{1}{4\u2062(1-x\u00af)^{2}}+\\frac{1}{4})+\\frac{3\u2062\\sqrt{3}\u2062\\lambda_{i}}{4\u2062(\u2113_{i}^{0})^{3}},\n$$\n\nwhere $x\u00af=\u2113_{i}^{0}/\u2113_{i}^{max}=2.2$ is a constant for all $i$. Thus, for given values of \u03bc, $x\u00af$, and $\u2113_{i}^{0}$, individual spring parameters pi and $\\lambda_{i}$ are calculated by using Equation (8) and the force balance $\\partial\u2061E_{sp}/\\partial\u2061l_{i}|_{l_{i}^{0}}=0$ for each spring.\n\nThe second term in Equation 6 is bending energy of the membrane (Gompper and Kroll, 1996; Gompper and Kroll, 2004) which is given by\n\n$$\nU_{bend}=\\frac{\u03ba}{2}\u2062\\sumi=1N_{rbc}\\frac{1}{\\sigma_{i}}\u2062[\ud835\udc27_{i}^{rbc}\u22c5(\\sumj\u2062(i)\\frac{\\sigma_{i\u2062j}}{r_{i\u2062j}}\u2062\ud835\udc2b_{i\u2062j})]^{2}\n$$\n\nwhere \u03ba is the bending modulus, $\ud835\udc27_{i}^{rbc}$ is a unit normal of the membrane at vertex $i$, $\\sigma_{i}=(\\sum_{j\u2062(i)}\\sigma_{i\u2062j}\u2062r_{i\u2062j})/4$ is the area of dual cell of vertex $i$, and $\\sigma_{i\u2062j}=r_{i\u2062j}\u2062[cot\u2061(\\theta_{1})+cot\u2061(\\theta_{2})]/2$ is the length of the bond in dual lattice, with the two angles $\\theta_{1}$ and $\\theta_{2}$ opposite to the shared bond $\ud835\udc2b_{i\u2062j}$.\n\nThe last two terms in Equation (6) represent surface area and volume constraints,\n\n$$\nU_{area}=\\frac{k_{a}\u2062(A-A_{0})^{2}}{2\u2062A_{0}}+\\sumi=1N_{t}\\frac{k_{\u2113}\u2062(A_{i}-A_{i}^{0})^{2}}{2\u2062A_{i}^{0}},U_{vol}=\\frac{k_{v}\u2062(V-V_{0})^{2}}{2\u2062V_{0}}.\n$$\n\n$k_{a}$ and $k_{\u2113}$ control the total surface area $A$ and local areas $A_{i}$, while $k_{v}$ controls the total volume $V$ of the cell. A0 and V0 are total targeted surface area and volume of the cell.\n\n### Parasite model\n\nThe parasite is also modeled as a triangulated surface. However, it is treated as a rigid body, as no visual deformations of merozoites are observed in in-vitro experiments (Weiss et al., 2015). For all shapes, including the egg-like, sphere, long ellpsoid, short ellipsoid, and oblate shapes, both the surface area and the number of vertices are kept approximately constant, which results in nearly the same density of receptors at the parasite surface. This provides the same adhesion strength between the parasite and RBC membrane for all investigated shapes.\n\n### RBC-parasite interactions\n\nParasite interacts with the RBC membrane in two ways including excluded volume and adhesion interactions. The excluded-volume interaction is implemented through the Lennard-Jones potential given by\n\n$$\nU_{rep}\u2062(r)=4\u2062\u03f5\u2062[(\\frac{\\sigma}{r})^{12}-(\\frac{\\sigma}{r})^{6}],r\\leq2^{1/6}\u2062\\sigma,\n$$\n\nwhere $r$ is the distance between RBC and parasite vertices, \u03c3 is the repulsive distance chosen to be $0.2\\mum$, and $\u03f5=1000k_{B}T$ is the strength of interaction.\n\nAdhesion interactions are represented by a discrete receptor-ligand bond model. As in our previous work (Hillringhaus et al., 2020), two different types of adhesion bonds are used: $(i)$ long bonds with an effective length of $\u2113_{eff}^{long}=100nm$ and $(i\u2062i)$ short bonds with an effective length of $\u2113_{eff}^{short}=20nm$. The fraction of long bonds is set to $\u03c1=0.4$, while the fraction of short bonds then becomes $1-\u03c1=0.6$. Adhesion bonds between the RBC and the parasite form and dissociate with constant on-rates $k_{on}^{long}$ and $k_{on}^{short}$, and an off-rate koff which is the same for both bond types. Both long and short bonds are modeled by a harmonic potential as\n\n$$\nU_{ad}\u2062(\u2113)=\\frac{\\lambda_{type}}{2}\u2062(\u2113-\u2113_{0})^{2},\n$$\n\nwhere $\\lambda_{long}$ and $\\lambda_{short}$ are the extensional rigidities of long and short bonds, respectively. $\u2113_{0}=2^{1/6}\u2062\\sigma$ is the equilibrium bond length. Thus, long bonds are formed when the distance between parasite and membrane vertices is less than $\u2113_{0}+\u2113_{eff}^{long}$ and short bonds can form when $\u2113<\u2113_{0}+\u2113_{eff}^{short}$.\n\n### Hydrodynamic interactions\n\nHydrodynamic interactions are modeled using the dissipative particle dynamics (DPD) method (Hoogerbrugge and Koelman, 1992; Espa\u00f1ol and Warren, 1995). DPD models the fluid as a collection of coarse-grained particles which interact through three different pair-wise forces: conservative $\ud835\udc05_{i\u2062j}^{C}$, dissipative $\ud835\udc05_{i\u2062j}^{D}$ and random forces $\ud835\udc05_{i\u2062j}^{R}$. The conservative force which represents the fluid compressibility is given by\n\n$$\n\ud835\udc05_{i\u2062j}^{C}=a_{ij}\u2062\\omega^{C}\u2062(r_{ij}),\n$$\n\nwhere $a_{ij}$ is the interaction strength, $\\omega^{C}$ is the weight function, and $r_{ij}=r_{i}-r_{j}$. The weight function is a decaying function of interparticle distance with a cutoff length $r_{c}$,\n\n$$\n\\omega^{C}={(1-r_{ij}/r_{c}),r_{ij}\\leqr_{c},0,r_{ij}>r_{c}.\n$$\n\nThe dissipative force $\ud835\udc05_{i\u2062j}^{D}$ and the random force $\ud835\udc05_{i\u2062j}^{R}$ are given by,\n\n$$\nF_{ij}^{D}=\u2212\\gamma\\omega^{D}[v_{ij}\u22c5e_{ij}]e_{ij},F_{ij}^{R}=\\sigma\\omega^{R}(r_{ij})\\theta_{ij}e_{ij},\n$$\n\nwhere the corresponding weight functions are expressed as,\n\n$$\n\\omega^{D}=[\\omega^{R}]^{2}={(1-r_{ij}/r_{c})^{k},r_{ij}\\leqr_{c},0,r_{ij}>r_{c}.\n$$\n\nHere, both $k$ and the dissipative coefficient \u03b3 control the viscosity of DPD fluid. $\\theta_{ij}$ is a white noise with zero mean and unit variance. The fluctuation-dissipation theorem connects both \u03c3 and \u03b3 as $\\sigma^{2}=2\u2062\\gamma\u2062k_{B}\u2062T/m$(Espa\u00f1ol and Warren, 1995). The DPD interactions are implemented between fluid-fluid, fluid-RBC vertices and fluid-parasite vertices, but not between RBC-parasite vertices. The dissipative coefficient is always chosen to make sure no-slip boundary conditions are satisfied (Fedosov et al., 2010a; Hillringhaus et al., 2019).\n\n### Simulation setup\n\nAll simulations are carried out in a simulation domain of size $7.7\u2062D_{0}\\times3.1\u2062D_{0}\\times3.1\u2062D_{0}$ with periodic boundary conditions in all directions, where $D_{0}=\\sqrt{A_{0}/\\pi}$ is the effective RBC diameter and A0 is the membrane area. Receptors for both long and short bonds are chosen randomly over the parasite surface and this procedure is repeated for every realization to obtain a good averaging of physical quantities. In every simulation, the parasite is placed close to the RBC membrane in order to facilitate its initial attachment. The initial position of the parasite is with its back toward the membrane, so that its apex is directed away from the membrane. In all simulations, the initial position is fixed. RBC bending rigidity is chosen to be $\u03ba=3\\times10^{\u221219}J$ and $A_{0}=133\\mum^{2}$ resulting in $D_{0}=6.5\\mum$. Fluid viscosity inside and outside the RBC is set to $\u03b7=1mPa.s$. To connect simulation and physical units, we use D0 as a length scale, $k_{B}\u2062T$ as an energy scale, and the RBC membrane relaxation time $\u03b7\u2062D_{0}^{3}/\u03ba$ as a time scale. All simulations were performed on JURECA, a super-computer at Forschungszentrum J\u00fclich Krause and Th\u00f6rnig, 2018.\n\n### Calibration of bond kinetic parameters\n\nKinetic parameters for the adhesion between the RBC and parasite are tuned such that the parasite displacement from simulations matches well the merozoite displacement from the experimental data (Weiss et al., 2015). The calibration is performed for the egg-like shape and the resultant \u2019reference\u2019 parameters given in Table 1 are used for all other parasite shapes. The detailed procedure is explained in Hillringhaus et al., 2020.\n\n### Alignment times: Monte Carlo sampling\n\nA Monte Carlo sampling scheme is employed for measuring alignment times from probability maps of parasite alignment characteristics (apex distance dapex and alignment angle \u03b8), which are constructed from approximately 10 independent long simulations for each parameter set. Briefly, the Monte Carlo procedure is as follows. First, a state $(i,j)$ is randomly selected, which corresponds to specific $(d_{apex}^{i},\\theta_{j})$ values in a probability map. Second, a transition to one of the four neighboring states with a probability of 0.25 is attempted, and it is accepted if $\u03b6<P(new state)/P(i,j)$ where \u03b6 is a uniform random number. This state transition is repeated until a state that meets the alignment criteria is reached. Then, the total alignment time is equal to the total number of Monte Carlo moves, see Hillringhaus et al., 2020 for more details. All alignment times are normalized by the corresponding time for the reference parameter set, which is obtained through the calibration of parasite speed (Hillringhaus et al., 2020) against available experimental data (Weiss et al., 2015).\n",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "9bbf204e-7397-4484-bb74-6a737c29156a",
+      "submission_id": "a0792e20-7732-47c5-8b0b-4501bbb0f57e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68818.sa1](https://doi.org/10.7554/eLife.68818.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript studies the alignment of malaria parasites (merozoites) at the surface of red blood cells (RBCs), a key element of their reproduction cycle during the blood stage of the disease. Building on a computational model the authors developed previously that incorporates the stochastic nature of RBC deformations and adhesive bonds between the merozoite and RBC, it is demonstrated that parasite shape plays a key role in its alignment dynamics. The authors shed new light on the egg-like shape typically observed in Plasmodium merozoites, which has important implications for how effectively the parasite can survive and multiply.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Effect of malaria parasite shape on its alignment at erythrocyte membrane\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Suzanne Pfeffer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Michael Gomez (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Figure 1a: It would be helpful to plot the egg-like shape here too, so it can be easily compared to the other shapes (including the short-ellipsoid, to which it is most similar). Also, highlighting the apex on each shape would be helpful. (There is also the typo \"elliposid\".)\n\n2. Line 106: It would be good to refer to the details of the computational model in the Methods section at this point.\n\n3. Line 110 (and Figures 1c, 2a-b, 3a, 4a, 5a): Is there a particular reason why the effective RBC diameter D0 is used to normalize the fixed-time displacement \u0394d and apex distance dapex when presenting the results? Since the RBC is much larger than the parasite, this means the normalized values are all much smaller than unity. A more informative choice might be to normalize by the effective merozoite diameter, equal to the square root of As/\u03c0 where As is the typical merozoite surface area (which is precisely 2R in the case of a sphere). The normalized values of \u0394d would then give a better indication of how much the merozoites move relative to their size, and the normalized values of dapex would lie in the range [0,1].\n\n4. Lines 131-140: It would be helpful to have a schematic illustrating the quantities n, nface, dapex and \u03b8, similar to Figure 3a in Hillringhaus et al., 2020. There should also be a brief description of where the alignment criteria in Equation 2 come from (in addition to referencing Hillringhaus et al., 2020), including the meaning of the 21/6\u03c3 term and that dapex cannot obtain values below the repulsion length.\n\n5. Lines 145-146: The authors should be more precise here as to what features of the alignment-angle distributions make the egg-like shape align better than the LE and OB shapes. The LE and OB shapes have a narrower distribution with a peak at \u03b8/\u03c0 \u2248 0.6, which presumably corresponds to the configuration of largest adhesion area in which the apex is pointing almost tangentially to the membrane. The tapering of the egg-like shape breaks the fore-aft symmetry and tilts the apex towards the membrane in the configuration of largest adhesion area.\n\n6. Lines 146-150 and Figures 2a,c: It is worth emphasising here that membrane deformability is what breaks the rotational symmetry for a spherical shape, so that the alignment-angle distribution is not uniform: if the apex is within the contact area Am, then the deformation of the membrane will push \u03b8 closer to \u03c0.\n\n7. Line 156: The reference to the inset of Figure 3a here is confusing, since the situation sketched there (with the apex away from the contact region) is not what is being discussed in the text. It might be helpful to have a sketch of both scenarios (i.e. apex inside and outside the contact area), which could be combined with the new schematic suggested in comment 4 above.\n\n8. Lines 177-189: The area being described in Equation 3 is not quite clear: it is worth mentioning the area is what is called a spherical segment/frustum, whose curved surface area depends only on the sphere radius and the height h of the segment (not its slanted length).\n\n9. Figure 4a: The label on the y-axis should be dapex/D0.\n\n10. Lines 260-261: Is it possible to speculate as to why the merozoite of Plasmodium yoelii changes its shape from oval to spherical prior to attachment to a RBC membrane? For example, could it be that it has much weaker adhesive bonds (consistent with the observation that the alignment times are longer than those of Plasmodium falciparum), so that it is always in the high-mobility/low-adhesion regime in which a spherical shape is advantageous?\n\n11. A primary concern with this manuscript is the lack of detail on what is done in the simulations. While we know that the authors have published a detailed description of the method elsewhere, it is not sufficient to just cite that, requiring a reader to read a separate paper to even get a basic understanding of what goes on in the simulations. While we understand that the authors do not want to provide the full description here, they need to provide enough description that a reader is aware of the basic implementation and can look to the other publication to fill in details, if needed.\n\n12. As is, the authors state that the RBC and the merozoite are handled using triangulated meshes, that adhesion molecules are located at the vertices of these meshes, and that there is an external fluid that is simulated using dissipative particle dynamics. How is the elasticity of the RBC handled? How is the rigidity of the merozoite handled? We would imagine that the alignment time, etc depends on where on the RBC the merozoite is, since the RBC membrane does not have constant curvature. Are all simulations started from the same location on the RBC surface or are these randomly assigned? How might either of these choices affect the results? Basic parameters of the DPD should also be included.\n\nReviewer #1:\n\nThis manuscript studies the invasion of red blood cells (RBCs) by malaria parasites (merozoites), a key element of their reproduction cycle during the blood stage of the disease. For successful invasion to occur, the merozoite must first align its apex almost perpendicularly to the RBC membrane. In a previous study (reference Hillringhaus et al., 2020), the authors developed a computational model that incorporates stochastic deformations of the RBC membrane and the discrete nature of the adhesive bonds between the merozoite and RBC (arising from filaments on the merozoite surface); together these effects enable partial wrapping of the membrane around the merozoite to aid alignment. This manuscript builds upon this framework to examine the influence of the parasite shape on the alignment dynamics, using five different reference shapes: the egg-like shape typical of Plasmodium merozoites, a sphere, and ellipsoids of varying aspect ratio. By exploring the influence of various parameters such as the bond kinetics and RBC membrane stiffness, they demonstrate that the parasite shape plays a key role in its alignment dynamics. In particular, the egg-like shape is found to be more robust to different adhesion strengths and membrane deformability: it is relatively mobile compared to the ellipsoidal shapes and, unlike a sphere, does not easily become arrested in the high-adhesion limit due to its lack of spherical symmetry.\n\nThe manuscript is excellently written and discusses the simulation results clearly and succinctly. The resolution of the simulations is very impressive and yields unprecedented insight into the effect of merozoite shape on alignment dynamics, which has important implications for how effectively the parasite can survive and multiply. The conclusions reached by the authors are certainly justified by the simulation data. In particular, the authors are careful not to draw conclusions beyond the limits of their study, and acknowledge other factors which may influence the merozoite shape, such as internal structural constraints and the energy of invasion following successful alignment.\n\nRegarding weaknesses of the manuscript, some of the explanations of the trends observed in the simulation data could be expanded slightly, to help gain a deeper understanding of the competition between adhesion and RBC deformability underlying the alignment dynamics. These are described in more detail below.\n\n1. Line 114 and lines 120-129: The discussion here of the trends observed in Figure 1 (including why the LE shape has a larger energy compared to the OB shape despite having a smaller adhesion area) is somewhat vague and should be developed further. For example, currently there is only a video showing the egg-like shape and a second video comparing the LE shape to a spherical shape \u2013 it would be helpful to have a further video comparing the LE and OB shapes and the different RBC deformations they cause. Moreover, the explanation of the energy/mobility of each shape in terms of curvatures (e.g. the OB shape having \"lower curvature at its flat side\") could be made more precise. I would expect that the adhesion area depends on how close the principal curvatures of the merozoite surface are to being equal and opposite to the natural curvatures of the RBC, since this determines the bending energy associated with wrapping the merozoite and forming short bonds. This would explain why the spherical shape is most mobile (its principal curvatures are constant so there is no region where at least one is relatively small), and why alignment is most likely to occur in the dimple of the RBC where the membrane is naturally concave-outward. For a given adhesion area, the deformation energy should depend on the difference in principal curvatures in the contact region, with a larger difference causing more bending of the RBC membrane. This difference is larger for the LE shape, since one principal curvature remains large at each point on the surface, compared to the OB shape whose principal curvatures are both small on the 'flat side' where contact is most likely to occur.\n\n2. Lines 175-176: Given that the ratio Am/As (adhesion area to total surface area) plays a key role in the probability of alignment, the authors should be more quantitative at this point. How does the ratio Am/As (as measured directly, or indirectly e.g. by the area under the probability distributions inside the alignment region in figures 3a,b) scale with the system parameters, such as the adhesion strength and the off-rate koff? Can it be estimated from an energy balance between RBC bending/stretching and the average adhesion energy?\n\n3. Line 197-198 and Figure 4c: Why is the deformation energy associated with the OB shape much lower than all other shapes for values of koff/konlong<2?4. Alignment requires that the distance between the merozoite apex and RBC membrane is very small, and the alignment criteria necessitate examining small changes in the apex angle \\theta from \\pi. Can the authors comment on how sensitive are the results to the numerical discretisation used?\n\nReviewer #2:\n\nThis manuscript seeks to determine the role that malarial shape plays in the ability of this parasite to infect red blood cells. The authors use computational modeling to explore the dynamics of different parasite shapes and the effect of adhesion strength in getting the malaria parasite to bind into the correct orientation for invasion into the red blood cell.\n\nA major strength of the results is that it investigates an unstudied problem in malarial pathogenesis. The results pertaining to adhesion strength may be informative for preventing the organism from invading red blood cells. A primary weakness is that there is too little detail provided in the methods for this reviewer to adequate assess the computational method. Secondly, the results are somewhat inconclusive. While the egg-shape performs better than certain other shapes, there is no clear final understanding why this shape is preferred over the spherical or short ellipsoidal shapes. However, this possibly provides some clues as to why a certain malarial species does actively adopt a spherical shape during red blood cell binding and invasion.\n\nOverall, the authors achieved their aims by quantitatively assessing the effect of parasite shape and adhesion strength on cell alignment, which is a proxy for invasion. The discussion at the end of the manuscript provides an accurate evaluation of the results that puts them into the context of invasion.\n\nWhile to some extent the results presented here are inconclusive, I do think that this paper achieves an important goal for its field. This is an understudied area pertinent to a major disease. This manuscript has the potential to bring questions of the biophysics of malarial invasion out to the broader community, specifically introducing these questions to biophysicists as well as microbiologists. Furthermore, the results naturally lead to new questions. If the spherical and egg shapes do not confer a strong advantage, then these specific shapes must also play a role in other processes. The authors do suggest some possibilities in the Discussion. That their remain interesting questions is a great spur for future work.\n",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0c68c389-b15f-4969-996f-f1c2cca256ab",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C1",
+      "claim": "During the blood stage of malaria pathogenesis, parasites invade healthy red blood cells (RBC) to multiply inside the host and evade the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "During the blood stage of malaria pathogenesis, parasites invade healthy red blood cells (RBC) to multiply inside the host and evade the immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about malaria pathogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "19403c7a-f53e-4f0d-95cc-34a749c3d805",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C2",
+      "claim": "When attached to RBC, the parasite first has to align its apex with the membrane for a successful invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "When attached to RBC, the parasite first has to align its apex with the membrane for a successful invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the malaria invasion process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "23503c04-0b11-48ee-9d7f-1c95598ff529",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C3",
+      "claim": "The parasite's apex sits at the pointed end of an oval (egg-like) shape with a large local curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the parasite's apex sits at the pointed end of an oval (egg-like) shape with a large local curvature, apical alignment is in general an energetically unfavorable process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about parasite morphology that is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "3a53aa0d-1f7c-4020-a16e-ab33c1f49054",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C4",
+      "claim": "Apical alignment is in general an energetically unfavorable process.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the parasite's apex sits at the pointed end of an oval (egg-like) shape with a large local curvature, apical alignment is in general an energetically unfavorable process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the large local curvature at the apex.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "12738020-5b3e-45c1-a192-649b6c39d0a7",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C5",
+      "claim": "Optimal alignment time is achieved due to RBC membrane deformation and the stochastic nature of bond-based interactions between the parasite and RBC membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, using coarse-grained mesoscopic simulations, we have shown that optimal alignment time is achieved due to RBC membrane deformation and the stochastic nature of bond-based interactions between the parasite and RBC membrane (Hillringhaus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "425141b3-1743-4e98-8e08-9a6cd7a317fc",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C6",
+      "claim": "The parasite's shape has a prominent effect on the alignment process.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that the parasite's shape has a prominent effect on the alignment process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the current study, supported by simulation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "16d41000-42ac-4978-bb07-1fcf508f7919",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C7",
+      "claim": "The alignment times of spherical parasites for intermediate and large bond off-rates are found to be close to those of an egg-like shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The alignment times of spherical parasites for intermediate and large bond off-rates (or weak membrane-parasite interactions) are found to be close to those of an egg-like shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "6f92659e-3534-4af7-995b-2292e74fbdd4",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C8",
+      "claim": "For small bond off-rates, the alignment time for a spherical shape increases drastically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for small bond off-rates (or strong adhesion and large membrane deformations), the alignment time for a spherical shape increases drastically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "d6cdd71a-ed06-4013-b4b0-680526103551",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C9",
+      "claim": "Parasite shapes with large aspect ratios such as oblate and long prolate ellipsoids exhibit very long alignment times in comparison to the egg-like shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Parasite shapes with large aspect ratios such as oblate and long prolate ellipsoids are found to exhibit very long alignment times in comparison to the egg-like shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "7336b31b-3516-4c0e-9610-0c26cf92cdf5",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C10",
+      "claim": "At a stiffened RBC, a spherical parasite aligns faster than any other investigated shape.",
+      "claim_type": "EXPLICIT",
+      "source": "At a stiffened RBC, a spherical parasite aligns faster than any other investigated shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5(b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "9be85c4b-0acf-4047-b99a-f899cee71267",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C11",
+      "claim": "The original egg-like shape performs not worse for parasite alignment than other considered shapes but is more robust with respect to different adhesion interactions and RBC membrane rigidities.",
+      "claim_type": "EXPLICIT",
+      "source": "This study shows that the original egg-like shape performs not worse for parasite alignment than other considered shapes but is more robust with respect to different adhesion interactions and RBC membrane rigidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, inferred from the comprehensive simulation data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "0bbceff3-95c0-4f84-b619-0304274cccbd",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C12",
+      "claim": "Malaria is a mosquito-borne infectious disease caused by a protozoan parasite of the genus Plasmodium.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria is a mosquito-borne infectious disease caused by a protozoan parasite of the genus Plasmodium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about malaria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "44b5701d-837e-4604-8a32-39e03843fe2a",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C13",
+      "claim": "After an asymptomatic development stage within the liver, merozoites are released into the bloodstream.",
+      "claim_type": "EXPLICIT",
+      "source": "After an asymptomatic development stage within the liver, merozoites are released into the bloodstream.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the malaria life cycle, supported by citations (Miller et al., 2002; Cowman et al., 2012; White et al., 2014).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "100be1e1-506f-495f-ae61-9225f42da0d9",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C14",
+      "claim": "Merozoites have an egg-like shape with a typical size of approximately 1.5\u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "They have an egg-like shape with a typical size of approximately 1.5\u00b5m (Bannister et al., 1986b; Dasgupta et al., 2017; Dasgupta et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "16c0c366-382c-49f9-8ee1-54beb9d74cb9",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C15",
+      "claim": "The total life-cycle within each infected RBC lasts for about 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The total life-cycle within each infected RBC lasts for about 48 hr, after which the cell membrane is ruptured and new merozoites are released into the bloodstream.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the malaria parasite life cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "be481f77-bd2b-4ad3-a291-67ccb31907df",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C16",
+      "claim": "Invasion of RBCs by parasites involves the following steps: (i) initial random attachment, (ii) reorientation (or alignment) of the apex toward cell membrane, and (iii) formation of a tight junction followed by the final invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Invasion of RBCs by parasites is a complex process that involves the following steps: (i) initial random attachment, (ii) reorientation (or alignment) of the apex toward cell membrane, and (iii) formation of a tight junction followed by the final invasion (Koch and Baum, 2016; Cowman and Crabb, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "eb32411b-cbb4-4dfc-8658-11373232e00f",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C17",
+      "claim": "The parasite's apex contains the required machinery for the invasion process.",
+      "claim_type": "EXPLICIT",
+      "source": "The parasite's apex contains the required machinery for the invasion process, and thus, apex alignment toward the cell membrane is a necessary step for a successful invasion to follow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about parasite biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "12076b55-44a5-4b1b-8b06-3c0fc47602de",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C18",
+      "claim": "Apex alignment toward the cell membrane is a necessary step for a successful invasion to follow.",
+      "claim_type": "EXPLICIT",
+      "source": "The parasite's apex contains the required machinery for the invasion process, and thus, apex alignment toward the cell membrane is a necessary step for a successful invasion to follow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that the apex contains invasion machinery.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "dfd95c09-bb4e-492b-9ba4-ec059429e6bd",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C19",
+      "claim": "Merozoite adhesion to a RBC is facilitated by proteins at the parasite surface which can bind to the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Merozoite adhesion to a RBC is facilitated by proteins at the parasite surface which can bind to the cell membrane (Bannister et al., 1986b; Gilson et al., 2006; Beeson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "a156ef98-c40a-452e-ae23-f3d8aacb9508",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C20",
+      "claim": "The force required to detach a parasite adhered to RBC membrane is in the range of 10\u201340 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent optical tweezers experiments provide an estimation for the force required to detach a parasite adhered to RBC membrane to be in the range of 10\u201340 pN (Crick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to optical tweezers experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "ce9c3358-cd5e-4f7b-84c2-e79c0db7436e",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C21",
+      "claim": "The parasite is dynamic at the RBC membrane, and induces considerable membrane deformation during alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Other experiments (Dvorak et al., 1975; Gilson and Crabb, 2009; Glushakova et al., 2005; Crick et al., 2013) demonstrate that the parasite is dynamic at the RBC membrane, and induces considerable membrane deformation during alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "e50685c3-d02b-4147-ae09-2411ab32dc7d",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C22",
+      "claim": "There is a positive correlation between membrane deformations and parasite alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there is a positive correlation between such deformations and parasite alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experimental observations cited in the previous sentence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "bfd95c10-42d8-4746-838a-7c2d9c135130",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C23",
+      "claim": "The time required for the parasite to align is found to be on the order of 16 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The time required for the parasite to align is found to be on the order of 16 s (Weiss et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "920ce1e0-7eb5-45de-9523-029717ecf385",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C24",
+      "claim": "Investigation of the parasite alignment with adhesion modeled by a homogeneous interaction potential confirmed the importance of membrane deformations for proper alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent investigation of the parasite alignment with adhesion modeled by a homogeneous interaction potential has confirmed the importance of membrane deformations for proper alignment, but the alignment times were found to be significantly less than 1 s (Hillringhaus et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "cc994f39-0858-490f-aaab-bfb55680fa97",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C25",
+      "claim": "Alignment times from the homogeneous interaction potential model were found to be significantly less than 1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent investigation of the parasite alignment with adhesion modeled by a homogeneous interaction potential has confirmed the importance of membrane deformations for proper alignment, but the alignment times were found to be significantly less than 1 s (Hillringhaus et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "5c209c3a-993b-4326-acd9-76b7f9fae09d",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C26",
+      "claim": "The homogeneous interaction potential model produces only static membrane deformations and the parasite exhibits very little dynamics at the RBC surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The main shortcoming of this model is that it produces only static membrane deformations and the parasite exhibits very little dynamics at the RBC surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the previous model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "9a44a801-4333-4fd2-abfb-3b143babb549",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C27",
+      "claim": "The model with realistic bond-based adhesion interactions results in alignment times consistent with the experimental measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "This model has been extended by including realistic bond-based adhesion interactions between the parasite and RBC membrane (Hillringhaus et al., 2020), which results in alignment times consistent with the experimental measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "3133e946-4bf0-4a80-870d-004115207d2a",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C28",
+      "claim": "Parasite alignment occurs due to RBC deformability and stochastic fluctuations in bond dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work (Hillringhaus et al., 2020) suggests that parasite alignment occurs due to RBC deformability and stochastic fluctuations in bond dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "dd9c2ed0-224b-4e91-9e25-4f9b86dd80c1",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C29",
+      "claim": "Stochastic fluctuations and consequent rolling-like motion of the parasite at the membrane surface are especially important at low adhesion strengths.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic fluctuations and consequent rolling-like (or rotational) motion of the parasite at the membrane surface are especially important at low adhesion strengths, as they facilitate alignment toward pointed apex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from previous simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "81fa4d83-835a-4d66-9b17-afc851cce616",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C30",
+      "claim": "The egg-like shape naturally adheres to RBC membrane with its less curved side, as this adhesion state corresponds to the largest contact area.",
+      "claim_type": "EXPLICIT",
+      "source": "The egg-like shape naturally adheres to RBC membrane with its less curved side, as this adhesion state corresponds to the largest contact area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from physical principles about adhesion and contact area.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "23bed165-4c68-4149-8f88-6bcd9923e52c",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C31",
+      "claim": "If parasite adhesion interactions with a membrane are strong, merozoite mobility is significantly suppressed, and the alignment is mainly facilitated through wrapping of the parasite by cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "If parasite adhesion interactions with a membrane are strong, merozoite mobility is significantly suppressed, and the alignment is mainly facilitated through wrapping of the parasite by cell membrane, emphasizing the importance of RBC deformability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from previous simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "b58f4352-6d93-4b20-9305-e5b0b21ceb7a",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C32",
+      "claim": "The merozoite of Plasmodium yoelii changes its shape from an oval to a spherical shape right before its attachment followed by alignment and invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though most types of Plasmodium merozoites have an egg-like shape, the merozoite of Plasmodium yoelii changes its shape from an oval to a spherical shape right before its attachment followed by alignment and invasion (Yahata et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "703c6034-d942-48f8-8006-106ab7ae5826",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C33",
+      "claim": "The alignment time for Plasmodium yoelii is longer than for Plasmodium falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "The alignment time for Plasmodium yoelii is also reported to be longer than for Plasmodium falciparum (Yahata et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "beccd8cd-bda5-467b-87c4-a4f900223e2e",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C35",
+      "claim": "All shapes are selected such that they have approximately the same surface area and the same number of vertices.",
+      "claim_type": "EXPLICIT",
+      "source": "All shapes are selected such that they have approximately the same surface area and the same number of vertices or equivalently the same density of adhesion receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation setup to ensure fair comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "064079f1-81ce-48e2-98fb-a202dd3e00f5",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C36",
+      "claim": "The fraction of receptors that can form long bonds is kept at 0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of receptors that can form long bonds is kept at 0.4 similarly to our previous study (Hillringhaus et al., 2020), while the fraction of receptors for short bonds is equal to 0.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "a0135df4-937b-41b9-99b1-4d0909e6adab",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C37",
+      "claim": "Parasite-RBC interaction parameters are calibrated through the displacement of an egg-shaped parasite at RBC membrane against available experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Other parasite-RBC interaction parameters are calibrated through the displacement of an egg-shaped parasite at RBC membrane (see Figure 1(b) and Video 1) against available experimental data (Weiss et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the calibration procedure used in the simulations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "d54c15fd-bdad-4385-99e1-db529a7379f3",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C40",
+      "claim": "A shape with a lower local curvature should form a larger adhesion area, and thus be less dynamic or mobile.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, a shape with a lower local curvature (e.g. OB shape) should form a larger adhesion area, and thus be less dynamic or mobile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from physical principles about curvature and adhesion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "994c7998-ee58-486a-8dd1-1f264383e0dd",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C41",
+      "claim": "The SP shape has the smallest number of bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with our results in Figure 1(e), where the SP (OB) shape has the smallest (largest) number of bonds, which is directly proportional to the adhesion area.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 1(e).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "b22d03ec-5745-49b5-8957-5f8261b00aab",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C42",
+      "claim": "The OB shape has the largest number of bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with our results in Figure 1(e), where the SP (OB) shape has the smallest (largest) number of bonds, which is directly proportional to the adhesion area.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 1(e).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "b1df8e96-6697-4ac2-832f-db69e57a4900",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C43",
+      "claim": "The egg-like and short-ellipsoid shapes show very similar dynamic characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the egg-like and short-ellipsoid shapes show very similar dynamic characteristics, as these shapes are very close to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of the shapes and supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "74130e4b-a1d5-415a-a2f7-c6ff53df95fe",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C44",
+      "claim": "The spherical shape induces the lowest deformation energy.",
+      "claim_type": "EXPLICIT",
+      "source": "This is true for the spherical shape that induces the lowest deformation energy in Figure 1(d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 1(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "7426dccc-0dc0-4716-ab7b-1f65816ca2c0",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C45",
+      "claim": "Both oblate and long ellipsoid shapes result in a large deformation energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both oblate and long ellipsoid shapes result in a large deformation energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 1(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "f8dc241c-8291-4e77-a97e-d6e3b86a5d8d",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C47",
+      "claim": "The adhesion of the oblate shape to RBC membrane induces a lower deformation than the LE shape, as the OB shape has a lower curvature at its flat side.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be rationalized by the fact that the adhesion of the oblate shape to RBC membrane induces a lower deformation than the LE shape, as the OB shape has a lower curvature at its flat side (see Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the shape geometry and supported by simulation observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "a1252db0-69e9-43e1-8712-fc62be81d9cf",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C48",
+      "claim": "Successful alignment occurs more frequently in the concave areas of RBC dimples than at the convex rim of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the main reason why a successful alignment occurs more frequently in the concave areas of RBC dimples than at the convex rim of the membrane (Hillringhaus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "9c102289-db18-463f-8cf2-4c17182f1f17",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C49",
+      "claim": "Parasite shapes with a large asphericity are less dynamic at the RBC surface.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, parasite shapes with a large asphericity are less dynamic at the RBC surface, while the EG, SP, and SE shapes show comparable dynamical characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "9ce60fab-6370-441e-a4fb-fc7176f90d99",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C51",
+      "claim": "Alignment of the SE shape is slightly worse than the EG shape as the apex distance distribution is shifted further away from the alignment criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though alignment of the SE shape is similar to the EG shape, it is slightly worse for the SE shape as the dapex distribution in Figure 2(a) is shifted further away from the alignment criterion for dapex than that for the EG shape.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 2(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "ae802723-9c53-4d95-8faa-4d46546ddf68",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C52",
+      "claim": "The fore-aft asymmetry of the EG shape results in its largest-adhesion configuration corresponding to a slightly tilted orientation with its apex closer to the membrane than its back.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to the fore-aft asymmetry of the EG shape, whose largest-adhesion configuration corresponds to a slightly tilted orientation of the parasite with its apex closer to the membrane than its back.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the shape geometry and its effect on adhesion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "48203184-0096-45f0-a407-0fee592f3e57",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C53",
+      "claim": "The EG shape has a reduced adhesion area due to a larger local curvature, which allows the EG parasite to fluctuate more around its directional vector.",
+      "claim_type": "EXPLICIT",
+      "source": "The key advantage of the egg-like shape in comparison to LE and OB shapes is that the EG shape has a reduced adhesion area due to a larger local curvature, which allows the EG parasite to fluctuate more around its directional vector, leading to wider distributions of its alignment characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the shape geometry and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "5990f1af-a6b4-4485-b1e2-02e2e80741dd",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C54",
+      "claim": "The OB shape forms the largest adhesion area in comparison to the EG and LE shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the OB shape forms the largest adhesion area in comparison to the EG and LE shapes, it has the narrowest distributions (i.e. lowest fluctuations) for both the apex distance and alignment angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figures 1(e) and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "0b7f1f1b-1348-4c15-85ce-e0683dce1607",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C55",
+      "claim": "The OB shape has the narrowest distributions for both the apex distance and alignment angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the OB shape forms the largest adhesion area in comparison to the EG and LE shapes, it has the narrowest distributions (i.e. lowest fluctuations) for both the apex distance and alignment angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "245f1d5d-5cc2-41f4-8c5f-446a6630d329",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C56",
+      "claim": "Parasite alignment characteristics for the spherical shape are qualitatively different from all other (ellipsoid-like) shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, parasite alignment characteristics for the spherical shape are qualitatively different from all other (ellipsoid-like) shapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "958195e8-adf9-467a-85ce-b6f4776bf1bf",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C58",
+      "claim": "Apex distance and alignment angle distributions of the spherical parasite generally display a sharp peak near the alignment criteria and a long tail with a wider distribution for non-aligned parasite orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Both dapex and \u03b8 distributions generally display a sharp peak near the alignment criteria and a long tail with a wider distribution for non-aligned parasite orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "3390239a-d632-4020-87ec-39aa4cd8a6ff",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C62",
+      "claim": "As the off-rate is decreased, the merozoite becomes partially wrapped by the membrane, leading to the development of the sharp peak in both distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "As koff is decreased, the merozoite becomes partially wrapped by the membrane, leading to the development of the sharp peak in both distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "42322d10-a3aa-4dd0-b353-74f6c33fd596",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C63",
+      "claim": "For small off-rates, the parasite forms a large number of bonds with the membrane, resulting essentially in its arrest with nearly zero rotational diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that for small off-rates, the parasite forms a large number of bonds with the membrane, resulting essentially in its arrest with nearly zero rotational diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "f8cd7a15-73c5-4ee9-9561-8411ff9db644",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C65",
+      "claim": "The sharp peak in apex distance and alignment angle distributions near the alignment criteria must increase with an increase in adhesion strength or a decrease in off-rate.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the sharp peak in dapex and \u03b8 distributions near the alignment criteria must increase with an increase in adhesion strength or a decrease in koff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the theoretical model of sphere wrapping.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "55946f35-814c-4657-ae74-67fd45793655",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C66",
+      "claim": "The apex distance decreases when the off-rate is decreased or the strength of adhesion is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "The apex distance decreases when the off-rate is decreased or the strength of adhesion is increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4(a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "2ff030b1-0da0-4848-83ba-82470503235f",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C67",
+      "claim": "The alignment angle increases toward the alignment criterion as the adhesion strength is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the alignment angle increases toward the alignment criterion in Equation (2), as the adhesion strength is increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4(b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "bf67c316-bac7-4fec-8839-c9a6d37056d7",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C68",
+      "claim": "For all non-spherical shape cases, successful alignment is generally achieved at low enough off-rate values.",
+      "claim_type": "EXPLICIT",
+      "source": "For all non-spherical shape cases, successful alignment is generally achieved at low enough koff values, which imply strong membrane deformations and a significant wrapping of the parasite by the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "0be28fc5-763c-451e-9d9e-d1c778b0da64",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C70",
+      "claim": "Small values of off-rate significantly suppress parasite mobility, which is required for successful alignment of the spherical parasite.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned before, small values of koff significantly suppress parasite mobility, which is required for successful alignment of the spherical parasite because its apex may not be immediately within the parasite-membrane contact area after initial adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "3c28ab73-dd4e-483a-93c5-e64dbb009c64",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C72",
+      "claim": "The OB shape forms a large adhesion area over its nearly flat part with very low curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the magnitude of local curvature has a pronounced effect, such that the OB shape forms a large adhesion area over its nearly flat part with very low curvature, while close to the rim, where the curvature is large, adhesion interactions are too weak to induce membrane wrapping and deformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the shape geometry and simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "5a020ec4-3925-41a4-a6ae-04dba40aeefd",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C73",
+      "claim": "Alignment times of the spherical parasite are very long at small off-rates and become comparable with those of the egg-like shape at intermediate and high values of off-rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Alignment times of the spherical parasite are very long at small off-rates and become comparable with those of the egg-like shape at intermediate and high values of koff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "60839834-722d-4d19-9921-b42b2fd6f725",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C74",
+      "claim": "The SE, LE, and OB shapes generally align very fast at small off-rates, but often do not align at all when adhesion becomes weak.",
+      "claim_type": "EXPLICIT",
+      "source": "The SE, LE, and OB shapes generally align very fast at small off-rates, but often do not align at all when adhesion becomes weak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "d306f5e4-756b-406f-90f2-82ad472403d3",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C75",
+      "claim": "Spheroidal shapes require substantial membrane deformation for a successful alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that these spheroidal shapes require substantial membrane deformation for a successful alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "9efafe5d-7dfe-4df9-8db6-4c55f8cb567a",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C76",
+      "claim": "A small fixed-time displacement results in a long alignment time and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, a small fixed-time displacement (or low mobility at the membrane) results in a long alignment time and vise versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "3c77639e-ef8e-4d51-b210-ce8be0170e61",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C77",
+      "claim": "Both long-ellipsoid and oblate shapes do not align or have a very long alignment time at a rigid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Both long-ellipsoid and oblate shapes do not align or have a very long alignment time at a rigid membrane, as they require considerable amount of membrane deformation for the alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "bda7a2f0-869e-44a1-b8c0-1416bce6cd0a",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C78",
+      "claim": "For the egg-like shape, an increase in off-rate improves the alignment at a rigid RBC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the egg-like shape, an increase in off-rate (i.e. more mobility) improves the alignment whereas for the short ellipsoid an opposite trend is observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "109118e5-2208-4734-bf53-a7ca8cac5b10",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C79",
+      "claim": "For the short ellipsoid, an increase in off-rate worsens the alignment at a rigid RBC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the egg-like shape, an increase in off-rate (i.e. more mobility) improves the alignment whereas for the short ellipsoid an opposite trend is observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "06e9527d-89bf-4d38-b8d4-3477b566e1e5",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C80",
+      "claim": "The spherical parasite shows the fastest alignment at a rigid RBC in comparison to the egg-like and short ellipsoid shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "The spherical parasite shows the fastest alignment in comparison to the egg-like and short ellipsoid shapes due to its increased mobility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5(b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "d0b9a77e-7022-457a-9847-a4d4aef1ac7e",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C81",
+      "claim": "At a rigid RBC, the spherical shape shows best alignment properties for intermediate off-rate values.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at a rigid RBC, the spherical shape shows best alignment properties, at least for intermediate off-rate values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "3072b4d0-46a4-4c0c-8a96-f237c614968a",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C82",
+      "claim": "Adhesion between the RBC membrane and the parasite is implemented by discrete bonds of two different types, with long and short interaction ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivated by experimental observations by Bannister et al., 1986a, adhesion between the RBC membrane and the parasite is implemented by discrete bonds of two different types, with long and short interaction ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation model, motivated by experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "0ab9b855-5ffb-4388-9ff5-05d14b9029d2",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C83",
+      "claim": "The density of both long and short bonds, their kinetic rates and extensional rigidities are calibrated through fixed-time displacement of an egg-like shaped parasite against available experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "The density of both long and short bonds, their kinetic rates and extensional rigidities are calibrated through fixed-time displacement of an egg-like shaped parasite against available experimental data (Weiss et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration procedure used in the simulations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "7c2ac14d-cd97-4169-8619-b31f5af5d62a",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C84",
+      "claim": "Alignment times from two independent experiments are found to be 16 s and 7-44 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Alignment times from two independent experiments are found to be 16 s (Weiss et al., 2015) and 7-44 s (Yahata et al., 2012), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "da9c7075-b2d9-4a04-a9d3-2df2ede0e00e",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C86",
+      "claim": "Parasite performance depends on the membrane properties and the characteristics of the adhesion bonds, including their dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The question 'Which parasite shape performs best for apex alignment and potential invasion?' does not have a unique answer, as parasite performance also depends on the membrane properties and the characteristics of the adhesion bonds, including their dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "8647d92b-813f-42ed-948a-1e1aa5be5356",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C87",
+      "claim": "Some parasite shapes are advantageous when the binding kinetics are slow or large RBC membrane deformations take place.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, some parasite shapes are advantageous when the binding kinetics are slow or large RBC membrane deformations take place, while other shapes are advantageous in case of fast binding kinetics or small membrane deformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "d50ba11e-1c1a-4685-a3ca-4561f74a79db",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C88",
+      "claim": "The spherical parasite exhibits 'all or nothing' alignment behavior at small off-rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the SP shape exhibits 'all or nothing' alignment behavior at small off-rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "dc831bf0-f55c-4d4a-b5b1-2ee87cad9b47",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C89",
+      "claim": "The egg-like shape adheres with its side to the membrane, and is able to establish a direct membrane-apex contact due to significant parasite wrapping.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the egg-like shape adheres with its side to the membrane, and is able to establish a direct membrane-apex contact due to significant parasite wrapping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "8c84ffdc-8775-48e0-8ec2-945ba43c024c",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C90",
+      "claim": "The SP shape performs better than the EG shape at large values of off-rates when membrane deformation is almost negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the SP shape performs better than the EG shape at large values of off-rates when membrane deformation is almost negligible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "661b914f-bd98-442a-84be-d22a1631a633",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C91",
+      "claim": "The spherical symmetry of the SP shape results in its faster mobility in comparison with the egg-like shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The spherical symmetry of the SP shape results in its faster mobility in comparison with the egg-like shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the shape geometry and supported by simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "ae812753-cf36-4924-83e7-4fdc07c2adf2",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C92",
+      "claim": "A fluctuation of the EG parasite toward successful alignment is associated with a larger energetic barrier in comparison to the SP shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a fluctuation of the EG parasite toward successful alignment due to adhesive dynamics is associated with a larger energetic barrier in comparison to the SP shape for which all directions of motion are statistically equivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the shape geometry and adhesion dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "6bde3806-4be7-4eea-bcde-8f54b35b3fd1",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C93",
+      "claim": "The spherical shape leads to the fastest alignment at a rigid membrane in comparison to all other shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also the main reason why the spherical shape leads to the fastest alignment at a rigid membrane in comparison to all other shapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "7f3efeb9-cfa8-4150-8840-b0d4a7bef8cf",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C94",
+      "claim": "Plasmodium yoelii exhibits a rather weak adhesion to RBCs in comparison to Plasmodium falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "A plausible hypothesis is that Plasmodium yoelii exhibits a rather weak adhesion to RBCs in comparison to Plasmodium falciparum, so that the spherical shape becomes advantageous for the alignment process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "c719e17e-82ac-4c18-8caf-b87ea098859a",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C95",
+      "claim": "The shape transition in Plasmodium yoelii might be just a result of some internal processes such as cytoskeleton rearrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we cannot exclude the possibility that this shape transition is just a result of some internal processes such as cytoskeleton rearrangement, in preparation of the merozoite for a subsequent invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative speculative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "a12c2e80-2ea8-40d0-97af-c407e0209344",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C96",
+      "claim": "The alignment of the SE shape is slightly worse than that of the egg-like parasite.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the alignment of the SE shape is slightly worse than that of the egg-like parasite, as the alignment-angle distribution for short ellipsoid is shifted further away from the alignment criterion in comparison to the egg-like shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "603ff3a6-584e-44ea-9e44-aed5494bdcaf",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C97",
+      "claim": "The asymmetry of EG shape along the cylindrical axis favors an adhesion orientation tilted toward the apex.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to the asymmetry of EG shape along the cylindrical axis, which favors an adhesion orientation tilted toward the apex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the shape geometry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "ffb041ad-647e-4058-9755-11f90c70ab26",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C98",
+      "claim": "At low enough bond off-rates, alignment of the SE shape is faster than the egg-like shape.",
+      "claim_type": "EXPLICIT",
+      "source": "At low enough bond off-rates or strong adhesion interactions, alignment of the SE shape is faster than the egg-like shape, as the wrapping of more curved apex region of the EG parasite is slightly less energetically favorable than that of a symmetric SE shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 4(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "c5af9ede-7781-46bc-91e9-cbabaa780705",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C99",
+      "claim": "Alignment of oblate and long-ellipsoid shapes proceeds only through significant wrapping of the parasite by the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, alignment of oblate and long-ellipsoid shapes proceeds only through significant wrapping of the parasite by the membrane, which occurs only at low off-rates or for strong adhesion interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "0ddb4740-db98-4149-aaa5-1f37af54b9ad",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C100",
+      "claim": "Alignment times of the LE and OB shapes at a rigid RBC are either very long or no alignment potentially occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also evident from simulations at a rigid RBC, where alignment times of the LE and OB shapes are either very long or no alignment potentially occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "3082644e-50ed-44d6-b7a1-7e9f39421d83",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C101",
+      "claim": "It is not clear whether the asymmetry of the egg-like shape exists simply due to the internal parasite structure or has some functional importance.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that the egg-like shape has some advantages over the investigated spheroidal shapes, it is not clear whether this asymmetry exists simply due to the internal parasite structure (e.g. placement of essential organelles of different sizes) or has some functional importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the functional significance of parasite shape.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "fc549821-addc-4814-b7a3-3cec98767281",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C102",
+      "claim": "Parasite shape must play an important role in invasion, as it significantly affects the energy required to deform RBC membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the invasion includes mainy mechanochemical processes, parasite shape must play an important role, as it significantly affects the energy required to deform RBC membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from physical principles about membrane deformation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "a1373c00-5e13-43ec-b939-80fa9bed4ad7",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C103",
+      "claim": "Particles with a larger aspect ratio require a larger energy for complete wrapping.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, particles with a larger aspect ratio such as oblate and long ellipsoids require a larger energy for complete wrapping (or uptake) (Bahrami et al., 2014; Dasgupta et al., 2014a; Dasgupta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "8e7659c0-8e57-4d5d-94f8-644b0b284490",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C104",
+      "claim": "Fluctuations that are important for particle uptake depend on the geometry of a particle.",
+      "claim_type": "EXPLICIT",
+      "source": "From a dynamical perspective, fluctuations that are important for particle uptake also depend on the geometry of a particle (Frey et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "24db64f0-bf84-4f9a-b65c-a46329e2475e",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C105",
+      "claim": "For small interaction strengths, bending energy has a dominant contribution to membrane deformation energy.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Hillringhaus et al., 2019 show that for small interaction strengths, bending energy has a dominant contribution to membrane deformation energy, while for strong interactions shear elastic energy exhibits a more dominant contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "5a1ef244-39ef-447e-8b88-ba9e5dd56a62",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "claim_id": "C106",
+      "claim": "For strong interactions, shear elastic energy exhibits a more dominant contribution to membrane deformation energy.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Hillringhaus et al., 2019 show that for small interaction strengths, bending energy has a dominant contribution to membrane deformation energy, while for strong interactions shear elastic energy exhibits a more dominant contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8a29054f-29a0-4cde-9b52-6a01e5d42a6e",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The simulation model uses five parasite shapes (egg-like, sphere, short ellipsoid, long ellipsoid, oblate) with equal surface area and receptor density. Adhesion is modeled using discrete long and short bonds, with parameters calibrated against experimental displacement data from Weiss et al., 2015.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 and C82-C83 describe the simulation setup and calibration procedure. The methodology is clearly documented with appropriate controls (equal surface area, receptor density) and calibration against experimental data. Figure 1 and Table 1 provide supporting evidence for the model parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "831cdddd-fff9-442a-a1e1-25cd65fd6650",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Different parasite shapes exhibit distinct dynamical properties: spherical parasites have the smallest adhesion area and highest mobility, while oblate shapes have the largest adhesion area and lowest mobility. Shapes with large asphericity are less dynamic at the RBC surface, while egg-like, spherical, and short-ellipsoid shapes show comparable dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C49 describe shape-dependent dynamical properties supported by simulation data in Figure 1(c-e). The relationship between curvature, adhesion area, bond number, and mobility is physically reasonable and consistently demonstrated across multiple metrics. The inference that lower curvature leads to larger adhesion area (C40) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "bd037d45-c27b-4cbd-8723-c68868167df7",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Alignment characteristics differ significantly between shapes. The egg-like shape's fore-aft asymmetry results in a tilted adhesion orientation favoring apex proximity. The oblate shape forms the largest adhesion area with narrowest distributions, while the spherical shape exhibits qualitatively different alignment characteristics from all ellipsoid-like shapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 are supported by distributions shown in Figure 2. The interpretation of how shape asymmetry and curvature affect alignment distributions is consistent with the data. The qualitative difference in spherical parasite behavior (C56) is clearly demonstrated in the bimodal distribution patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "03f3a80a-cc06-4a73-a812-26fc2cdede75",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spherical parasites exhibit unique alignment distributions with a sharp peak near alignment criteria and a long tail for non-aligned orientations. As off-rate decreases, membrane wrapping increases, developing the sharp peak. At small off-rates, parasites form many bonds resulting in near-zero rotational diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C62-C63, and C65 describe spherical parasite alignment behavior supported by Figure 3. The bimodal distribution pattern and its dependence on off-rate is clearly shown. The physical interpretation linking membrane wrapping to distribution shape is reasonable, though C65 relies on theoretical inference from a wrapping model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "9d949dc6-fc7f-4fb7-851a-033ef64fe5b9",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Adhesion strength (controlled by off-rate) significantly affects alignment. Apex distance decreases and alignment angle increases with stronger adhesion. Non-spherical shapes achieve alignment at low off-rates through membrane wrapping, while spherical parasites align best at intermediate off-rates due to mobility requirements. Oblate and long-ellipsoid shapes require substantial membrane deformation for alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C75 describe off-rate effects on alignment supported by Figure 4. The data clearly show shape-dependent responses to adhesion strength. The interpretation that spherical parasites require mobility (C70) and that spheroidal shapes need membrane deformation (C75) is well-supported by the alignment time data in Figure 4(d).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "856334db-07d6-4df2-89c4-a3d074655ad0",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "At rigid RBC membranes, mobility determines alignment success. Spherical parasites align fastest due to high mobility, while long-ellipsoid and oblate shapes fail to align or have very long alignment times. The egg-like shape shows improved alignment with increased off-rate at rigid membranes, while short ellipsoids show the opposite trend.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 and C93 describe alignment at rigid membranes, supported by Figure 5. The inverse relationship between mobility and alignment time (C76) and the superior performance of spherical parasites at rigid membranes (C80, C81, C93) are clearly demonstrated. The contrasting off-rate effects for egg-like vs. short ellipsoid shapes (C78-C79) are shown in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "d05eae48-d00a-4642-a8af-8f919d0f77c9",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spherical parasites have alignment times comparable to egg-like shapes at intermediate and large off-rates, but drastically increased times at small off-rates. Shapes with large aspect ratios (oblate, long ellipsoid) exhibit very long alignment times. At stiffened RBCs, spherical parasites align fastest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 summarize key findings supported by Figures 4(d) and 5(b). The data clearly show the off-rate dependence of spherical parasite alignment (C7-C8), poor performance of high aspect ratio shapes (C9), and superior spherical performance at rigid membranes (C10). These are direct observations from the simulation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "0990ef71-983b-456a-8209-7b882b83b07c",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Parasite shape has a prominent effect on alignment, with performance depending on membrane properties and adhesion bond characteristics. The egg-like shape performs not worse than other shapes but is more robust across different adhesion strengths and membrane rigidities. No single shape is universally optimal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C11, C86-C87 present the main conclusions of the study. These are well-supported by the comprehensive simulation data across multiple conditions (Figures 1-5). The conclusion that egg-like shape is robust rather than optimal (C11) is justified by its consistent performance across varying conditions, though this represents an inference from the data rather than a direct measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "38eb2cd9-f9bb-4ae9-83a0-325c79ad12dd",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spherical parasites exhibit 'all or nothing' alignment at small off-rates, while egg-like parasites can establish apex-membrane contact through wrapping. At large off-rates, spherical parasites perform better due to higher mobility and lower energetic barriers for alignment fluctuations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C92 provide mechanistic interpretation of spherical vs. egg-like shape performance. The 'all or nothing' behavior (C88) is supported by the bimodal distributions in Figure 3. The mobility advantage of spherical shapes (C91) is shown in Figure 1(c), and the performance comparison at different off-rates (C90) is supported by Figure 4(d). The energetic barrier argument (C92) is a reasonable inference from shape symmetry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "1c2db952-5a48-4e7a-8f6a-843290857c12",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Short ellipsoid alignment is slightly worse than egg-like due to lack of fore-aft asymmetry, though it aligns faster at low off-rates. Oblate and long-ellipsoid shapes require significant membrane wrapping and show very long or no alignment at rigid membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C100 compare ellipsoidal shape performance. The slight disadvantage of short ellipsoids (C96) is shown in Figure 2, the asymmetry effect (C97) is a reasonable geometric inference, faster SE alignment at low off-rates (C98) is shown in Figure 4(d), and the wrapping requirement for OB/LE shapes (C99-C100) is supported by Figures 4 and 5.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "c4d39e7b-68ac-4205-847b-830513ec0807",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Plasmodium yoelii transforms from oval to spherical shape before invasion and has longer alignment times than P. falciparum. The authors hypothesize this may reflect weaker adhesion in P. yoelii, though the shape change could alternatively result from internal cytoskeletal rearrangement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C32-C33 cite experimental observations (Yahata et al., 2012), but C94-C95 are explicitly speculative hypotheses. While the simulation results provide context for why spherical shape might be advantageous under weak adhesion conditions, no direct evidence is provided to test these hypotheses. The authors appropriately acknowledge the speculative nature of these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "0c4793e2-373b-4a94-8218-9083adf4c3d8",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Experimental alignment times are reported as 16 s (Weiss et al., 2015) and 7-44 s (Yahata et al., 2012), which were used to calibrate the simulation model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C23 cite experimental measurements used for model calibration. These are appropriately attributed to the original sources and serve as benchmarks for the simulation. The calibration procedure is described in the Methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "d074ade7-70f7-4268-979e-0622ddd7a13f",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The functional significance of egg-like shape asymmetry remains unclear. Parasite shape affects membrane deformation energy required for invasion. Particles with larger aspect ratios require more energy for wrapping, and particle geometry affects uptake fluctuations. Membrane deformation energy contributions shift from bending-dominated (weak interactions) to shear-dominated (strong interactions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C101 appropriately acknowledges uncertainty about functional significance. Claims C102-C106 cite established knowledge from previous studies (Bahrami et al., 2014; Dasgupta et al., 2014a, 2017; Frey et al., 2019; Hillringhaus et al., 2019). These provide context for interpreting the current results but are not new findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on malaria pathogenesis: parasites invade RBCs during blood stage infection, requiring apex alignment for successful invasion. The apex sits at the pointed end of an egg-like shape with large curvature, making alignment energetically unfavorable. Merozoites are ~1.5 \u03bcm, have a 48-hour life cycle in RBCs, and adhesion involves proteins generating 10-40 pN detachment forces. Parasites are dynamic at membranes and induce considerable deformation correlated with alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 provide established background knowledge about malaria, appropriately cited to primary literature. These are not new findings but necessary context. The claim that apical alignment is energetically unfavorable (C4) is an inference from geometry that is reasonable but not directly demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    },
+    {
+      "id": "1330da56-33a5-4366-bbe6-5e32a8284cf6",
+      "content_id": "3f954d84-3ec6-41a8-9696-ae032e3c3dc9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous work by the authors showed that optimal alignment results from RBC deformability and stochastic bond dynamics. Earlier models with homogeneous interaction potentials confirmed membrane deformation importance but underestimated alignment times (<1 s) and produced static deformations. Bond-based models achieved experimentally consistent alignment times. Alignment occurs through RBC deformability and stochastic fluctuations, with rolling motion important at low adhesion and wrapping important at strong adhesion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C24-C31, and C48 summarize previous work by the authors (Hillringhaus et al., 2019, 2020), appropriately cited. These establish the foundation for the current study and describe the evolution of their modeling approach. The claims accurately represent the cited work and provide necessary context for understanding the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:07:48.034820Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "beccd8cd-bda5-467b-87c4-a4f900223e2e",
+      "result_id": "8a29054f-29a0-4cde-9b52-6a01e5d42a6e"
+    },
+    {
+      "claim_id": "064079f1-81ce-48e2-98fb-a202dd3e00f5",
+      "result_id": "8a29054f-29a0-4cde-9b52-6a01e5d42a6e"
+    },
+    {
+      "claim_id": "a0135df4-937b-41b9-99b1-4d0909e6adab",
+      "result_id": "8a29054f-29a0-4cde-9b52-6a01e5d42a6e"
+    },
+    {
+      "claim_id": "3072b4d0-46a4-4c0c-8a96-f237c614968a",
+      "result_id": "8a29054f-29a0-4cde-9b52-6a01e5d42a6e"
+    },
+    {
+      "claim_id": "0ab9b855-5ffb-4388-9ff5-05d14b9029d2",
+      "result_id": "8a29054f-29a0-4cde-9b52-6a01e5d42a6e"
+    },
+    {
+      "claim_id": "d54c15fd-bdad-4385-99e1-db529a7379f3",
+      "result_id": "831cdddd-fff9-442a-a1e1-25cd65fd6650"
+    },
+    {
+      "claim_id": "994c7998-ee58-486a-8dd1-1f264383e0dd",
+      "result_id": "831cdddd-fff9-442a-a1e1-25cd65fd6650"
+    },
+    {
+      "claim_id": "b22d03ec-5745-49b5-8957-5f8261b00aab",
+      "result_id": "831cdddd-fff9-442a-a1e1-25cd65fd6650"
+    },
+    {
+      "claim_id": "b1df8e96-6697-4ac2-832f-db69e57a4900",
+      "result_id": "831cdddd-fff9-442a-a1e1-25cd65fd6650"
+    },
+    {
+      "claim_id": "74130e4b-a1d5-415a-a2f7-c6ff53df95fe",
+      "result_id": "831cdddd-fff9-442a-a1e1-25cd65fd6650"
+    },
+    {
+      "claim_id": "7426dccc-0dc0-4716-ab7b-1f65816ca2c0",
+      "result_id": "831cdddd-fff9-442a-a1e1-25cd65fd6650"
+    },
+    {
+      "claim_id": "f8dc241c-8291-4e77-a97e-d6e3b86a5d8d",
+      "result_id": "831cdddd-fff9-442a-a1e1-25cd65fd6650"
+    },
+    {
+      "claim_id": "9c102289-db18-463f-8cf2-4c17182f1f17",
+      "result_id": "831cdddd-fff9-442a-a1e1-25cd65fd6650"
+    },
+    {
+      "claim_id": "9ce60fab-6370-441e-a4fb-fc7176f90d99",
+      "result_id": "bd037d45-c27b-4cbd-8723-c68868167df7"
+    },
+    {
+      "claim_id": "ae802723-9c53-4d95-8faa-4d46546ddf68",
+      "result_id": "bd037d45-c27b-4cbd-8723-c68868167df7"
+    },
+    {
+      "claim_id": "48203184-0096-45f0-a407-0fee592f3e57",
+      "result_id": "bd037d45-c27b-4cbd-8723-c68868167df7"
+    },
+    {
+      "claim_id": "5990f1af-a6b4-4485-b1e2-02e2e80741dd",
+      "result_id": "bd037d45-c27b-4cbd-8723-c68868167df7"
+    },
+    {
+      "claim_id": "0b7f1f1b-1348-4c15-85ce-e0683dce1607",
+      "result_id": "bd037d45-c27b-4cbd-8723-c68868167df7"
+    },
+    {
+      "claim_id": "245f1d5d-5cc2-41f4-8c5f-446a6630d329",
+      "result_id": "bd037d45-c27b-4cbd-8723-c68868167df7"
+    },
+    {
+      "claim_id": "958195e8-adf9-467a-85ce-b6f4776bf1bf",
+      "result_id": "03f3a80a-cc06-4a73-a812-26fc2cdede75"
+    },
+    {
+      "claim_id": "3390239a-d632-4020-87ec-39aa4cd8a6ff",
+      "result_id": "03f3a80a-cc06-4a73-a812-26fc2cdede75"
+    },
+    {
+      "claim_id": "42322d10-a3aa-4dd0-b353-74f6c33fd596",
+      "result_id": "03f3a80a-cc06-4a73-a812-26fc2cdede75"
+    },
+    {
+      "claim_id": "f8cd7a15-73c5-4ee9-9561-8411ff9db644",
+      "result_id": "03f3a80a-cc06-4a73-a812-26fc2cdede75"
+    },
+    {
+      "claim_id": "55946f35-814c-4657-ae74-67fd45793655",
+      "result_id": "9d949dc6-fc7f-4fb7-851a-033ef64fe5b9"
+    },
+    {
+      "claim_id": "2ff030b1-0da0-4848-83ba-82470503235f",
+      "result_id": "9d949dc6-fc7f-4fb7-851a-033ef64fe5b9"
+    },
+    {
+      "claim_id": "bf67c316-bac7-4fec-8839-c9a6d37056d7",
+      "result_id": "9d949dc6-fc7f-4fb7-851a-033ef64fe5b9"
+    },
+    {
+      "claim_id": "0be28fc5-763c-451e-9d9e-d1c778b0da64",
+      "result_id": "9d949dc6-fc7f-4fb7-851a-033ef64fe5b9"
+    },
+    {
+      "claim_id": "3c28ab73-dd4e-483a-93c5-e64dbb009c64",
+      "result_id": "9d949dc6-fc7f-4fb7-851a-033ef64fe5b9"
+    },
+    {
+      "claim_id": "5a020ec4-3925-41a4-a6ae-04dba40aeefd",
+      "result_id": "9d949dc6-fc7f-4fb7-851a-033ef64fe5b9"
+    },
+    {
+      "claim_id": "60839834-722d-4d19-9921-b42b2fd6f725",
+      "result_id": "9d949dc6-fc7f-4fb7-851a-033ef64fe5b9"
+    },
+    {
+      "claim_id": "d306f5e4-756b-406f-90f2-82ad472403d3",
+      "result_id": "9d949dc6-fc7f-4fb7-851a-033ef64fe5b9"
+    },
+    {
+      "claim_id": "9efafe5d-7dfe-4df9-8db6-4c55f8cb567a",
+      "result_id": "856334db-07d6-4df2-89c4-a3d074655ad0"
+    },
+    {
+      "claim_id": "3c77639e-ef8e-4d51-b210-ce8be0170e61",
+      "result_id": "856334db-07d6-4df2-89c4-a3d074655ad0"
+    },
+    {
+      "claim_id": "bda7a2f0-869e-44a1-b8c0-1416bce6cd0a",
+      "result_id": "856334db-07d6-4df2-89c4-a3d074655ad0"
+    },
+    {
+      "claim_id": "109118e5-2208-4734-bf53-a7ca8cac5b10",
+      "result_id": "856334db-07d6-4df2-89c4-a3d074655ad0"
+    },
+    {
+      "claim_id": "06e9527d-89bf-4d38-b8d4-3477b566e1e5",
+      "result_id": "856334db-07d6-4df2-89c4-a3d074655ad0"
+    },
+    {
+      "claim_id": "d0b9a77e-7022-457a-9847-a4d4aef1ac7e",
+      "result_id": "856334db-07d6-4df2-89c4-a3d074655ad0"
+    },
+    {
+      "claim_id": "6bde3806-4be7-4eea-bcde-8f54b35b3fd1",
+      "result_id": "856334db-07d6-4df2-89c4-a3d074655ad0"
+    },
+    {
+      "claim_id": "16d41000-42ac-4978-bb07-1fcf508f7919",
+      "result_id": "d05eae48-d00a-4642-a8af-8f919d0f77c9"
+    },
+    {
+      "claim_id": "6f92659e-3534-4af7-995b-2292e74fbdd4",
+      "result_id": "d05eae48-d00a-4642-a8af-8f919d0f77c9"
+    },
+    {
+      "claim_id": "d6cdd71a-ed06-4013-b4b0-680526103551",
+      "result_id": "d05eae48-d00a-4642-a8af-8f919d0f77c9"
+    },
+    {
+      "claim_id": "7336b31b-3516-4c0e-9610-0c26cf92cdf5",
+      "result_id": "d05eae48-d00a-4642-a8af-8f919d0f77c9"
+    },
+    {
+      "claim_id": "425141b3-1743-4e98-8e08-9a6cd7a317fc",
+      "result_id": "0990ef71-983b-456a-8209-7b882b83b07c"
+    },
+    {
+      "claim_id": "9be85c4b-0acf-4047-b99a-f899cee71267",
+      "result_id": "0990ef71-983b-456a-8209-7b882b83b07c"
+    },
+    {
+      "claim_id": "da9c7075-b2d9-4a04-a9d3-2df2ede0e00e",
+      "result_id": "0990ef71-983b-456a-8209-7b882b83b07c"
+    },
+    {
+      "claim_id": "8647d92b-813f-42ed-948a-1e1aa5be5356",
+      "result_id": "0990ef71-983b-456a-8209-7b882b83b07c"
+    },
+    {
+      "claim_id": "d50ba11e-1c1a-4685-a3ca-4561f74a79db",
+      "result_id": "38eb2cd9-f9bb-4ae9-83a0-325c79ad12dd"
+    },
+    {
+      "claim_id": "dc831bf0-f55c-4d4a-b5b1-2ee87cad9b47",
+      "result_id": "38eb2cd9-f9bb-4ae9-83a0-325c79ad12dd"
+    },
+    {
+      "claim_id": "8c84ffdc-8775-48e0-8ec2-945ba43c024c",
+      "result_id": "38eb2cd9-f9bb-4ae9-83a0-325c79ad12dd"
+    },
+    {
+      "claim_id": "661b914f-bd98-442a-84be-d22a1631a633",
+      "result_id": "38eb2cd9-f9bb-4ae9-83a0-325c79ad12dd"
+    },
+    {
+      "claim_id": "ae812753-cf36-4924-83e7-4fdc07c2adf2",
+      "result_id": "38eb2cd9-f9bb-4ae9-83a0-325c79ad12dd"
+    },
+    {
+      "claim_id": "a12c2e80-2ea8-40d0-97af-c407e0209344",
+      "result_id": "1c2db952-5a48-4e7a-8f6a-843290857c12"
+    },
+    {
+      "claim_id": "603ff3a6-584e-44ea-9e44-aed5494bdcaf",
+      "result_id": "1c2db952-5a48-4e7a-8f6a-843290857c12"
+    },
+    {
+      "claim_id": "ffb041ad-647e-4058-9755-11f90c70ab26",
+      "result_id": "1c2db952-5a48-4e7a-8f6a-843290857c12"
+    },
+    {
+      "claim_id": "c5af9ede-7781-46bc-91e9-cbabaa780705",
+      "result_id": "1c2db952-5a48-4e7a-8f6a-843290857c12"
+    },
+    {
+      "claim_id": "0ddb4740-db98-4149-aaa5-1f37af54b9ad",
+      "result_id": "1c2db952-5a48-4e7a-8f6a-843290857c12"
+    },
+    {
+      "claim_id": "b58f4352-6d93-4b20-9305-e5b0b21ceb7a",
+      "result_id": "c4d39e7b-68ac-4205-847b-830513ec0807"
+    },
+    {
+      "claim_id": "703c6034-d942-48f8-8006-106ab7ae5826",
+      "result_id": "c4d39e7b-68ac-4205-847b-830513ec0807"
+    },
+    {
+      "claim_id": "7f3efeb9-cfa8-4150-8840-b0d4a7bef8cf",
+      "result_id": "c4d39e7b-68ac-4205-847b-830513ec0807"
+    },
+    {
+      "claim_id": "c719e17e-82ac-4c18-8caf-b87ea098859a",
+      "result_id": "c4d39e7b-68ac-4205-847b-830513ec0807"
+    },
+    {
+      "claim_id": "7c2ac14d-cd97-4169-8619-b31f5af5d62a",
+      "result_id": "0c4793e2-373b-4a94-8218-9083adf4c3d8"
+    },
+    {
+      "claim_id": "bfd95c10-42d8-4746-838a-7c2d9c135130",
+      "result_id": "0c4793e2-373b-4a94-8218-9083adf4c3d8"
+    },
+    {
+      "claim_id": "3082644e-50ed-44d6-b7a1-7e9f39421d83",
+      "result_id": "d074ade7-70f7-4268-979e-0622ddd7a13f"
+    },
+    {
+      "claim_id": "fc549821-addc-4814-b7a3-3cec98767281",
+      "result_id": "d074ade7-70f7-4268-979e-0622ddd7a13f"
+    },
+    {
+      "claim_id": "a1373c00-5e13-43ec-b939-80fa9bed4ad7",
+      "result_id": "d074ade7-70f7-4268-979e-0622ddd7a13f"
+    },
+    {
+      "claim_id": "8e7659c0-8e57-4d5d-94f8-644b0b284490",
+      "result_id": "d074ade7-70f7-4268-979e-0622ddd7a13f"
+    },
+    {
+      "claim_id": "24db64f0-bf84-4f9a-b65c-a46329e2475e",
+      "result_id": "d074ade7-70f7-4268-979e-0622ddd7a13f"
+    },
+    {
+      "claim_id": "5a1ef244-39ef-447e-8b88-ba9e5dd56a62",
+      "result_id": "d074ade7-70f7-4268-979e-0622ddd7a13f"
+    },
+    {
+      "claim_id": "0c68c389-b15f-4969-996f-f1c2cca256ab",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "19403c7a-f53e-4f0d-95cc-34a749c3d805",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "23503c04-0b11-48ee-9d7f-1c95598ff529",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "3a53aa0d-1f7c-4020-a16e-ab33c1f49054",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "0bbceff3-95c0-4f84-b619-0304274cccbd",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "44b5701d-837e-4604-8a32-39e03843fe2a",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "100be1e1-506f-495f-ae61-9225f42da0d9",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "16c0c366-382c-49f9-8ee1-54beb9d74cb9",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "be481f77-bd2b-4ad3-a291-67ccb31907df",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "eb32411b-cbb4-4dfc-8658-11373232e00f",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "12076b55-44a5-4b1b-8b06-3c0fc47602de",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "dfd95c09-bb4e-492b-9ba4-ec059429e6bd",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "a156ef98-c40a-452e-ae23-f3d8aacb9508",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "ce9c3358-cd5e-4f7b-84c2-e79c0db7436e",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "e50685c3-d02b-4147-ae09-2411ab32dc7d",
+      "result_id": "da1f43f8-f8a1-46ae-846c-ffc0b0a7f14a"
+    },
+    {
+      "claim_id": "12738020-5b3e-45c1-a192-649b6c39d0a7",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    },
+    {
+      "claim_id": "920ce1e0-7eb5-45de-9523-029717ecf385",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    },
+    {
+      "claim_id": "cc994f39-0858-490f-aaab-bfb55680fa97",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    },
+    {
+      "claim_id": "5c209c3a-993b-4326-acd9-76b7f9fae09d",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    },
+    {
+      "claim_id": "9a44a801-4333-4fd2-abfb-3b143babb549",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    },
+    {
+      "claim_id": "3133e946-4bf0-4a80-870d-004115207d2a",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    },
+    {
+      "claim_id": "dd9c2ed0-224b-4e91-9e25-4f9b86dd80c1",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    },
+    {
+      "claim_id": "81fa4d83-835a-4d66-9b17-afc851cce616",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    },
+    {
+      "claim_id": "23bed165-4c68-4149-8f88-6bcd9923e52c",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    },
+    {
+      "claim_id": "a1252db0-69e9-43e1-8712-fc62be81d9cf",
+      "result_id": "1330da56-33a5-4366-bbe6-5e32a8284cf6"
+    }
+  ],
+  "comparisons": []
+}

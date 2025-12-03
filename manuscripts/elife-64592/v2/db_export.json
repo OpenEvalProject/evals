@@ -1,0 +1,2224 @@
+{
+  "submission": {
+    "id": "8e7d188e-4333-4225-a2d5-ee1f4afbb9ce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:11:18.410428Z",
+    "updated_at": "2025-12-03T05:11:18.410428Z"
+  },
+  "content": [
+    {
+      "id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "submission_id": "8e7d188e-4333-4225-a2d5-ee1f4afbb9ce",
+      "content_type": "manuscript",
+      "content_text": "# CDK control pathways integrate cell size and ploidy information to control cell division\n\n## Authors\n\n- James Oliver Patterson<sup>1</sup> ([ORCID: 0000-0003-1993-4500](https://orcid.org/0000-0003-1993-4500)) \u2020\n- Souradeep Basu<sup>1</sup> ([ORCID: 0000-0003-4448-8688](https://orcid.org/0000-0003-4448-8688)) \u2020\n- Paul Rees<sup>2</sup>\n- Paul Nurse<sup>1</sup>\n\n### Affiliations\n\n1. Cell Cycle Laboratory, The Francis Crick Institute London United Kingdom\n2. College of Engineering, Swansea University Swansea United Kingdom\n3. Imaging\u00a0Platform, Broad Institute of Harvard and MIT Cambridge United States\n4. Laboratory of Yeast Genetics and Cell Biology, Rockefeller University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMaintenance of cell size homeostasis is a property that is conserved throughout eukaryotes. Cell size homeostasis is brought about by the co-ordination of cell division with cell growth and requires restriction of smaller cells from undergoing mitosis and cell division, whilst allowing larger cells to do so. Cyclin-CDK is the fundamental driver of mitosis and therefore ultimately ensures size homeostasis. Here we dissect determinants of CDK activity in vivo to investigate how cell size information is processed by the cell cycle network in fission yeast. We develop a high-throughput single-cell assay system of CDK activity in vivo and show that inhibitory tyrosine phosphorylation of CDK encodes cell size information, with the phosphatase PP2A aiding to set a size threshold for division. CDK inhibitory phosphorylation works synergistically with PP2A to prevent mitosis in smaller cells. Finally, we find that diploid cells of equivalent size to haploid cells exhibit lower CDK activity in response to equal cyclin-CDK enzyme concentrations, suggesting that CDK activity is reduced by increased DNA levels. Therefore, scaling of cyclin-CDK levels with cell size, CDK inhibitory phosphorylation, PP2A, and DNA-dependent inhibition of CDK activity, all inform the cell cycle network of cell size, thus contributing to cell size homeostasis.\n\n## Introduction\n\nCells display homeostatic behaviour in maintaining population cell size by controlling cell size at mitosis (Fantes et al., 1975; Ginzberg et al., 2015; Wood and Nurse, 2015; Lloyd, 2013). This homeostasis is driven by larger cells being more likely to divide than smaller cells, resulting in the correction at cell division of cell size deviances (Fantes et al., 1975; Fantes, 1977; Patterson et al., 2019). Cyclin-dependent kinase (CDKCdc2) is the master regulator of mitosis and cell division, and therefore the propensity for smaller cells not to divide must ultimately feed into the regulation of CDK activity (Coudreuse and Nurse, 2010).\n\nCDK activity is subject to several mechanisms of control: cyclin synthesis and subsequent binding of cyclin to CDK, which drives CDK into a catalytically competent form Solomon et al., 1990; Wee1 kinase and Cdc25 phosphatase act to inhibit or activate CDK, respectively, through regulatory tyrosine phosphorylation (Nurse, 1975; Russell and Nurse, 1986; Gould and Nurse, 1989); and PP2A phosphatase works to remove phosphates deposited by CDK reducing its net activity (Kinoshita et al., 1990; Kinoshita et al., 1993; Gharbi-Ayachi et al., 2010; Mochida et al., 2009; Mochida et al., 2010; Mochida et al., 2016), and also controls the phosphorylation state of Wee1 and Cdc25 to regulate the level of CDK tyrosine phosphorylation (Lucena et al., 2017; Hutter et al., 2017; Rata et al., 2018; Kamenz et al., 2021). Finally, the CDK control network also co-ordinates cell division with cell growth through an unknown mechanism that responds to cell ploidy, with cell size generally doubling as ploidy doubles (Wood and Nurse, 2015).\n\nIt is likely that potential size control pathways will be integrated at the level of CDK activity control because CDK activity is the driver of mitosis. For example, in the fission yeast Schizosaccharomyces pombe, it has been proposed that size control was mediated by the DYRK kinase Pom1, which ultimately inhibits mitotic onset by causing the inhibitory tyrosine phosphorylation of CDK by signalling through the Wee1 kinase (Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009). However, in both the absence of Pom1 itself or the absence of inhibitory tyrosine phosphorylation, cells are able to maintain cell size homeostasis (Coudreuse and Nurse, 2010; Wood and Nurse, 2013). Thus, there must exist alternative mechanisms by which fission yeast cells integrate cell size information into the CDK control network.\n\nMuch of our understanding of cyclin-CDK network regulation has been derived from in vitro studies, but these have limitations when considering cellular parameters such as cell size (Mochida et al., 2016; Pomerening et al., 2005; Pomerening et al., 2003; Sha et al., 2003). Here, therefore, we have studied in vivo regulation of cyclin-CDK activation at mitosis in the fission yeast. Using a novel CDK activity sensor, we have monitored cell size, CDK activity, and cyclin-CDK complex level simultaneously, whilst genetically varying regulators of the cyclin-CDK control system. We propose that CDK activity regulation through inhibitory tyrosine phosphorylation and PP2A work synergistically to communicate information about cell size to the CDK control network. Furthermore, we show that cyclin-CDK complex level scales with cell size, and this aids in the prevention of division in small cells. Finally, we show that in cells lacking PP2A and inhibitory tyrosine phosphorylation, haploid and diploid cells of equivalent size and similar cyclin-CDK concentration have differing cyclin-CDK activities, with diploid cells exhibiting a lower activity. This suggests that cyclin-CDK activity is increased in cells of lower ploidy. These experiments inform our understanding of the regulation of cyclin-CDK and illuminate how cell size is integrated into this regulatory network.\n\n## Results\n\nGiven the complexity of the CDK regulatory network, we have used fission yeast cells containing a reduced CDK control system, with the cell cycle driven by a monomeric cyclin-CDK fusion-protein (C-CDK) (Coudreuse and Nurse, 2010). This simplifies the CDK control network by eliminating cyclin binding to CDK as a regulatory component and allows co-expression of both cyclin and CDK from a single promoter. This C-CDK fusion-protein is expressed under the Cyclin BCdc13 promoter, and therefore C-CDK expression mimics endogenous Cyclin B expression. Using this system, inhibitory Wee1-dependent phosphoregulation can also be removed using a non-phosphorylatable C-CDKAF mutant (Coudreuse and Nurse, 2010; Wood and Nurse, 2013). These C-CDKAF strains are healthy and viable, but have markedly distinct cell cycle profiles from C-CDKWT expressing strains, as they spend a significantly longer period in G1 than C-CDKWT cells (Coudreuse and Nurse, 2010). Nevertheless, C-CDKAF cells co-ordinate cell division with cell growth and maintain cell\u00a0size homeostasis (Figure 1a; Wood and Nurse, 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of major components influencing C-CDK activity at mitosis, and in red, the pathways that do not influence C-CDKAF. The negative relationship between C-CDK activity and cell growth refers to the block of cell length extension in mitosis. PP2A opposes CDK activity by dephosphorylating CDK substrates, and also by opposing the activation of CDK at mitosis by opposing the phosphorylation of Wee1 and Cdc25. Reciprocally, CDK causes the downregulation of PP2A activity in mitosis. (b) Example cell lineage traces from time-lapse microscopy. Cell size in pixels2 is given in orange, and C-CDK-YFP fluorescence intensity is given in purple. Steep decreases in cell size traces correspond to cell division. (c) Scatter plot of mean C-CDK level vs cell size from time-lapse microscopy data. C-CDK level is a measure of C-CDK-YFP fluorescence intensity. Colours indicate density of data. Inset boxplot is mean nuclear C-CDK concentration immediately prior to degradation at anaphase. Boxes represent interquartile range, with whiskers delimiting 5th\u201395th percentiles. C-CDKWT n\u00a0=\u00a028, C-CDKAF\u00a0n\u00a0=\u00a044 full cycles. (d) Plot of the probability of division at the next timepoint (P(Div)) vs cell length for CDKWT and CDKAF. Cells were followed through time-lapse microscopy with measurements taken each frame. P(Div) defined as the proportion of cells that undergo C-CDK degradation at anaphase by the next timepoint, given as rate per minute. Points represent cells binned by size, with points plotted at bin centre. C-CDKWT\u00a0n\u00a0=\u00a0685, C-CDKAF\u00a0n\u00a0=\u00a0961 timepoints. (e) Plot of P(Div) function vs C-CDK level for CDKWT and CDKAF. C-CDKWT\u00a0n\u00a0=\u00a0685, C-CDKAF\u00a0n\u00a0=\u00a0961 timepoints. C-CDK-YFP intensity measurements taken every frame from time-lapse microscopy, and binned by C-CDK level. (f) Schematic of Cut3 as a CDK activity reporter. Mitotic CDK-dependent phosphorylation of Cut3 on T19 results in nuclear translocation of the protein. (g) Experimental outline of block and release time-lapse experiment for panels (h, j\u2013o). Asynchronous cells possessing an analogue sensitive (as) CDK were blocked in G2 using 1 \u03bcM 1NM-PP1 for 5 hr and then released into a range of 1NM-PP1 concentrations. Cells were then followed and monitored for their Cut3-tdTomato nuclear/cytoplasmic (N/C) ratio (C-CDK activity) and C-CDK-YFP level using fluorescence time-lapse microscopy (see Materials\u00a0and\u00a0methods). Data for (l\u2013o) were acquired 15 min following release from 1NM-PP1. (h) Maximum CDK activity (normalized against maximum level, obtained by release into DMSO) against 1NM-PP1 concentration. Red points are the median of the data sets for each drug concentration (N\u00a0=\u00a0324), and\u00a0green point is median in DMSO. Black line is the Hill equation fit to the median data by a nonl-inear fitting algorithm (IC50\u00a0=\u00a0115.4, Hill coefficient\u00a0=\u00a0\u22121.71). Purple dashed line is Hill curve derived from Swaffer et al., 2016 dose\u2013response data (IC50\u00a0=\u00a0133.4, Hill coefficient\u00a0=\u00a0\u22121.47). (i) Time-lapse quantification of CDK activity in asynchronous cells. Traces are aligned so that 0 min corresponds to peak Cut3-tdTomato N/C ratio. Curve smoothing could move Cut3 peak earlier/later than exactly 0 min. Trace colour indicates cell size. Red X indicates automatically defined mitotic entry point. C-CDKWTn\u00a0=\u00a023 and C-CDKAFn\u00a0=\u00a014. (j) Scatter plot of C-CDK-YFP levels against cell size. Experiment described in (g), with measurements taken before release from 1NM-PP1 block. Black points indicate binned data, bin window size 500 pixels2. n\u00a0=\u00a0324. Pearson correlation coefficient: 0.55. (k) As in (j), but with C-CDKAF, n\u00a0=\u00a0312. Pearson correlation coefficient: 0.62. (l) Scatter plot of peak Cut3-tdTomato level vs cell size. Experiment described in (g), with measurements taken 20 min after release from 1NM-PP1 block into DMSO. Black points indicate binned data, bin window size 500 pixels2. Points are coloured by YFP C-CDK levels at release. n\u00a0=\u00a083. R2\u00a0=\u00a00.5040. Pearson correlation coefficient: 0.50. (m) As in (l), but with C-CDKAF, n\u00a0=\u00a081. R2\u00a0=\u00a00.2150. Pearson correlation coefficient: 0.22. (n) Scatter plot of peak Cut3-tdTomato level vs C-CDK-YFP intensity level 20 min after release from 1NM-PP1 block into DMSO. Black points indicate binned data, bin window size 15 AU. Points are coloured by cell size at release. n\u00a0=\u00a083. R2\u00a0=\u00a00.3668. Pearson correlation coefficient: 0.60. (o) As in (n), but with C-CDKAF, n\u00a0=\u00a081. R2\u00a0=\u00a00.5501. Pearson correlation coefficient: 0.74.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Definition of the initial gross cell region and removal of excess background. A threshold was automatically computed using the Otsu algorithm from the standard deviation projection image. The blue region shows the binary mask of all pixels above this threshold. (b) The top z-stack image is both normalised and filtered to remove excess background and intensity variations using a Gaussian filter that removes most of the cell character, but retains information on gross brightfield intensity differences. The original image is then divided by this filter, homogenising the signal from the image. Once the brightfield image is processed, the previously generated cell region mask is applied. To generate an initial mask of single cells, a threshold is computed on the pixels within the initial cell region mask. (c) True cell\u2013cell contacts exhibit concavities at both sides of any false contact, and the presence of the concavities can be used to license potential \u2018cut\u2019 lines. To generate potential cut lines, a watershed algorithm is applied to the distance image of the initial single-cell segmentation mask. (d) To remove any spuriously segmented background regions the standard deviation of the difference between the top and bottom z-stack images are used. A difference image generates heterogeneous pixel values in cell regions but has almost no effect on background regions. An example of an image with this standard deviation metric quantified in each mask can be seen is given, where non-cell masks feature a low value. (e) An example of the final segmented image after steps outlined in (a\u2013d).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Schematics of C-CDKWT and C-CDKAF regulation by Wee1 kinase and Cdc25 phosphatase. C-CDKAF has T14 mutated to A and Y15 mutated to F to mimic constitutive dephosphorylation of both residues. Example images of a FOV from time-lapse movie is shown. Cells were grown in a Cellasics microfluidics plate following 2 days of culture in YE4S at 32\u00b0C. C-CDK-YFP is seen in purple. Scale bar\u00a0=\u00a010 \u03bcm. (b) Purple lines indicate C-CDK levels (mean nuclear concentration) and yellow lines\u00a0indicate cell size (measured by cell mask area in pixels2). Cell mask and lineage tracing generated by Pomseg and Pomtrack (see Materials\u00a0and\u00a0methods). DD\u00a0= double dip cell, hDD\u00a0=\u00a0half double dip cell. DD cells undergo complete cyclin degradation without cell division. hDD cells undergo incomplete cyclin degradation without division. Trace marked (a) represents an abberant cycle in a C-CDKWT expressing cell. (c) Boxplot of C-CDK oscillation period. Period was calculated by measuring the peak to peak (P2P) distance on the autocorrelation function of each C-CDK level lineage trace. C-CDKWT, N\u00a0=\u00a032; C-CDKAF, N\u00a0=\u00a057. Box represents median value delimited by 25th and 75th percentiles. See Materials\u00a0and\u00a0methods for outlier points. (d) Boxplot of intra-lineage standard deviation of period length. C-CDKWT, N\u00a0=\u00a032; C-CDKAF, N\u00a0=\u00a057. Box represents median value delimited by 25th and 75th percentiles. See Materials\u00a0and\u00a0methods for outlier points.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Experimental outline for (b\u2013g). 1NM-PP1-sensitive C-CDKWT and C-CDKWT cells are blocked by addition of 1NM-PP1. C-CDKAF cells were block for longer (7 hr against 5 hr) to allow cells to reach a similar size distribution as C-CDKWT cells. Cells were then released into a range of 1NM-PP1 concentrations. After release, images were acquired every minute. Time between washing and image acquisition is\u00a0~5 min. Cells were grown in EMM at 32\u00b0C. (b) Left: Schematic demonstrating that as cells are blocked at G2/M, they continue to grow and accumulate C-CDK but do not translocate Cut3 into the nucleus or alter their levels of Cut3. Right: Density plot demonstrates the overlap population cell lengths of C-CDKWT and C-CDKWT cells after variable block times. (c) Black traces indicate raw data. Red traces indicate exponential curve fit to data. Photobleaching curves were derived from the 1000 nM release using C-CDKWT-YFP and Cut3-tdTomato. All subsequent measurements were corrected for photobleaching from derived curves. (d) Images of Cut3-GFP channel from representative FoV\u00a0~25 min after release from a 1 \u03bcM block into indicated drug concentrations. (e) Plots of nuclear Cut3-GFP levels against time after release over a range of 1NM-PP1 concentrations. Lines are coloured by cell size at T\u00a0=\u00a00 of the release. (f) Single-cell C-CDK-YFP traces in DMSO and 20 nM of release. Red x indicates end of anaphase. Traces are coloured by cell size at Time\u00a0=\u00a00. Only traces which undergo anaphase are shown. End of anaphase defined as first timepoint at which C-CDK-YFP trace is equal to post-anaphase YFP plateau level\u00a0+10 AU. (g) Boxplot of anaphase time in WT and AF strains. Anaphase time is calculated as end of anaphase time \u2013 peak Cut3 time. Difference is non-significant. C-CDKWT, N\u00a0=\u00a069 and C-CDKAF, N\u00a0=\u00a047. Lower panel, scatter plot of anaphase time vs cell size, with strain indicated by colour. Box represents median value delimited by 25th and 75th percentiles. See Materials\u00a0and\u00a0methods for outlier points.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Still images of Cut3-GFP tagged in strains expressing C-CDKWT and C-CDKAF. Cells were grown in a Cellasics microfluidics device in YE4S at 32\u00b0C. Scale bar\u00a0=\u00a010 \u03bcm. (b) Example cell length and Cut3-GFP single-cell lineages. Quantification is performed by Pomseg and Pomtrack (see Materials\u00a0and\u00a0methods). Cut3-GFP nuclear/cytoplasmic (N/C) ratio is calculated by dividing mean cytoplasmic Cut3 intensity by mean nuclear Cut3 intensity after background subtraction. Orange lines\u00a0=\u00a0cell size, green lines\u00a0=\u00a0CDK activity (measured by Cut3 N/C ratio). (c) Montage of tagged C-CDKWT and C-CDKAF strains from time-lapse. Colour outline indicates strain and is derived from Pomseg-based segmentation of the brightfield image. Scale bar\u00a0=\u00a05 \u03bcm. (d) Boxplot of mitotic times in C-CDKWT and C-CDKAF strains. Mitotic time is calculated as peak time \u2013 mitotic entry time. Difference is significant by two-sample t-test (p=0.006). Box represents median value delimited by 25th and 75th percentiles. See Materials\u00a0and\u00a0methods for outlier points. (e) Boxplot of cell size at mitotic entry (cell size sampled at red x position in Figure 1i). Note high variability in the C-CDKAF population (CoV\u00a0=\u00a00.18 vs 0.08 in WT). Box represents median value delimited by 25th and 75th percentiles. See Materials\u00a0and\u00a0methods for outlier points.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Schematic of the high-throughput imaging flow cytometry block and release assay. Cells are arrested in G2 using 1NM-PP1 for various lengths of time, before being washed of 1NM-PP1 and sampled on an imaging flow cytometer. (b) Representative images of single cells with computed cell masks overlaid on fluorescent Cut3 images in red. Top row of images is from the brightfield channel of the top row of fluorescent images. Representative images taken from Cut3-GFP cells in EMM at 32\u00b0C. Scale bar\u00a0=\u00a010 \u03bcm. (c) Experimental outline for panels (d\u2013g). C-CDKWT/AF cells sensitive to the CDK inhibitor 1NM-PP1 are blocked for variable amounts of time. Cells are then washed of 1NM-PP1 and released into mitosis. After release, cells are monitored via sequential sampling using imaging flow cytometry. Block performed using 1 \u03bcM 1NM-PP1. Cells were grown in EMM at 32\u00b0C. (d) Quantification of C-CDK-YFP levels after indicated block time. Colours indicate density of data; yellow represents high density. Red data points indicate mean of binned data, bin widths 0.33 \u03bcm. (e) Plots of mean CDK activity (as measured by Cut3 N/C ratio) within size bins indicated by line colours. Red dots indicate points of maximum Cut3 N/C ratio change, as derived from the first derivative of a smoothing spline fit to raw data (raw data is shown). Each point on line has\u00a0>50 cells. N\u00a0=\u00a03000\u201312,000 per timepoint, with\u00a0~400,000 single-cell images analysed in total. Background subtraction for N/C ratio performed using wild-type cells lacking Cut3-GFP after indicated block time. (f) Maximum Cut3 N/C ratio change against cell size or C-CDK level. C-CDK level is predicted from data in (d). Data is taken from 2,\u00a03, and 4 hr releases. Black line represents linear regression line. (g) Time of maximum Cut3 N/C ratio change against cell size or C-CDK level. C-CDK level is predicted from data in (d) Data is taken from 2,\u00a03, and 4 hr releases. Black line is the linear regression line. Colours represent the same as (f).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (a) Experimental outline for panels B-D. 1NM-PP1 sensitive C-CDKWT and C-CDKAF cells are blocked by addition of 1NM-PP1. C-CDKAF cells were blocked for longer (7 hr against 5 hr) to allow cells to reach a similar size distribution to C-CDKWT cells. Cells were then released into a range of 1NM-PP1 concentrations. After release, images were acquired every minute. Time between washing and image acquisition is\u00a0~5 min. Cells were grown in EMM at 32\u00b0C. Cells are sampled during the region marked time-lapse. (b) Plots of mean CDK activity (as measured by Cut3-GFP N/C ratio) against time from release in indicated size bins at annotated 1NM-PP1 levels. N\u00a0=\u00a01000\u20134000 cells per timepoint,\u00a0>10 cells averaged within each bin. (c) Plots of maximum Cut3 nuclear translocation rates against cell size in C-CDKWT and C-CDKAF cells. Maximum rates were taken from the first derivative of a smoothing spline fit to data in (b). Line colours indicate 1NM-PP1 concentration. Key given on the right hand side. (d) Plots of time of maximum Cut3 translocation rate timing vs cell size in WT and AF cells. Maximum rates were taken from the first derivative of a smoothing spline fit to data in (b). Line colours indicate 1NM-PP1 concentration.\n\nTo examine the relationship between cell size, C-CDK concentration, and mitosis, we performed quantitative fluorescence time-lapse microscopy on strains expressing C-CDKWT and C-CDKAF fluorescently tagged with YFP (Figure 1a\u2013e, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2a). This analysis showed clear oscillations of C-CDKWT and C-CDKAF, with degradation of C-CDK occurring just before cell division (Figure 1b). C-CDKAF oscillations were more variable, and 5% of the C-CDKAF cells trigger C-CDK degradation in the absence of division (Figure 1\u2014figure supplement 2), similar to what has been observed in CDK1AF expressing human cells (Pomerening et al., 2008). In both backgrounds, C-CDK concentration scaled with cell size, with C-CDKWT exhibiting a higher amount of C-CDK at mitotic entry compared to C-CDKAF (Figure 1c). On investigating the links between the probability of a given cell to divide, cell size, and C-CDK level, we found that for C-CDKWT both cell size and C-CDK level reach sharp thresholds at which cell division rates increase (Figure 1d,e). In the absence of tyrosine phosphorylation, a sharp threshold for C-CDKAF levels still is\u00a0present (Figure 1e), but occurs at a lower level than C-CDKWT. C-CDKAF cells fail to generate a sharp threshold for cell size, but even without a clear size threshold, C-CDKAF cells still restrict smaller cells from division (Figure 1d).\n\nC-CDK level is not a direct measure of C-CDK activity because of the multiple regulatory networks affecting CDK (Pomerening et al., 2005). To investigate CDK activity, cell size, and C-CDK level at the same time, we developed an in vivo single-cell assay of CDK activity. We used Cut3, the Smc4 homolog, as a CDK activity biosensor, because it translocates from the cytoplasm into the nucleus upon CDK-dependent phosphorylation of a single site in its N-terminus (Figure 1f; Sutani et al., 1999). Thus, the Cut3 nuclear/cytoplasmic (N/C) ratio can be used to assess CDK activity, a method that has been applied to other protein kinases (Spencer et al., 2013; Araujo et al., 2016). As a test of this assay, we blocked cells expressing fluorescently tagged Cut3 in the background of a bulky ATP-analogue-sensitive C-CDK (Bishop et al., 2000) using 1NM-PP1, and tracked single cells following their release from G2 arrest into a range of 1NM-PP1 doses (Figure 1g, Figure 1\u2014figure supplement 3). The response of the maximum nuclear Cut3 concentration to 1NM-PP1 was similar to the one measured in our previous phosphoproteomics study (Swaffer et al., 2016), confirming that the sensor reflects in vivo CDK activity (Figure 1h). Subsequently, we examined CDK activity in unperturbed cells measured by the Cut3 N/C ratio and showed that it both rises to a higher level in C-CDKWT cells in comparison to C-CDKAF cells and also that progress through mitosis in C-CDKAF cells is slower and more variable (Figure 1i, Figure 1\u2014figure supplement 4).\n\nWe next investigated the links between C-CDK protein levels, CDK activity, and cell size in C-CDKWT and C-CDKAF cells, which have been enlarged beyond their physiological cell size. During a G2/M block (Figure 1g), cell size and C-CDK enzyme concentration (as measured by C-CDK-YFP fluorescence intensity) scaled with each other in both backgrounds (Figure 1j,k). After the release from CDK inhibition, C-CDKWT activity correlated well with both cell size and C-CDK protein level (Figure 1l,n). However, peak C-CDKAF activity correlated better with protein level than with cell size (Figure 1m,o). The link between cell size and CDK activity was much clearer for C-CDKWT than for C-CDKAF in these low-throughput time-lapse assays (Figure 1m). Therefore, we repeated this experiment using a high-throughput assay based on imaging flow cytometry (Figure 1\u2014figure supplements 5 and 6) and observed that peak CDK activity in both C-CDKAF and C-CDKWT was clearly size dependent (Figure 1\u2014figure supplement 5e). Thus, CDK tyrosine phosphorylation helps to inform the cell division machinery of cell size (Figure 1d,l). However, in the absence of tyrosine phosphorylation, C-CDKAF cells are still able to generate a threshold C-CDK level for division and prevent small cells from division (Figure 1e,o, Figure 1\u2014figure supplement 5e).\n\nA complication of the above assay is that cell size scales with C-CDK level (Patterson et al., 2019; Coudreuse and Nurse, 2010; Navarro and Nurse, 2012; Figure 1c,j,k). To uncouple cell size from C-CDK level, and study if small cells are prevented from entering mitosis due to low C-CDK level or for some other reason, we developed a more flexible single-cell CDK assay system. This assay was also based on Cut3 translocation into the nucleus (Figure 2a) but used a brighter synthetic C-CDK activity sensor, synCut3-mCherry to allow its co-detection with C-CDK in a high-throughput assay (Figure 2\u2014figure supplement 1). This sensor was expressed in a strain where the endogenous CDK network can be switched off using a temperature-sensitive CDK1 allele, cdc2TS. A tetracycline-inducible C-CDK tagged with superfolder GFP (sfGFP) was constructed and made non-degradable (Yamano et al., 1998) as well as sensitive to inhibition by 1NM-PP1. Induction of C-CDK at the cdc2TS restrictive temperature allows the study of the activity of the inducible C-CDK without either wild-type CDK activity or C-CDK-sfGFP proteolysis during mitosis. Using this assay, we acquired hundreds of thousands of images of single cells, which allowed us to study the in vivo biochemistry of CDK activity in response to a wide range of C-CDK concentrations in physiologically\u00a0sized cells. C-CDK level was uncoupled from cell size as induction of C-CDK was not dependent on cell size (Figure 2b,c). Results from this assay demonstrated that in vivo CDK activity was dependent on C-CDK level and was reduced when CDK activity was inhibited using 1NM-PP1 (Figure 2d, Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig2-v2.jpg)\n\n**Figure 2.:** (a) Experimental outline for figure for (b\u2013d). Cells were held at 36\u00b0C for 1 hr to ablate the function of the temperature-sensitive (TS) cdc2 allele. C-CDK-sfGFP expression was induced by addition of tetracycline, and ectopic C-CDK concentration and CDK activity were measured by sequential sampling during induction. Induced C-CDK-sfGFP lacks its degron box sequence, and therefore is not degraded at anaphase. Sequential sampling during C-CDK-sfGFP induction begins at the point of tetracycline addition, with roughly one sample taken every 3 min after the start of C-CDK production. Sampling is conducted using an imaging flow cytometer (IMS). (b) Expression of C-CDKWT from point of tetracycline addition. Different coloured lines represent different size bins. Black dots represent mean C-CDK-sfGFP level over all size bins for given timepoint. After lag period of\u00a0~1000\u00a0s after tetracycline addition, samples are taken roughly every 3 min. n\u00a0=\u00a0759,633. (c) Scatter plot of cell length vs C-CDK-sfGFP levels. Coloured by density of data points. Data collected throughout induction. n\u00a0=\u00a0759,633. (d) Mean CDK activity dose\u2013response against C-CDK-sfGFP in the presence of annotated levels 1NM-PP1. Circles represent average CDK activities across all cells from a single sample taken after induction. 0 nM n\u00a0=\u00a0166,081; 125 nM n\u00a0=\u00a060,759;\u00a0250 nM n\u00a0=\u00a0165,128;\u00a0500 nM n\u00a0=\u00a0135,670;\u00a0and 1000 nM n\u00a0=\u00a0231,995. (e) Experimental outline for (f\u2013k). Cells were held at 36\u00b0C for 1 hr to ablate cdc2TS function. After 1 hr, C-CDKWT or C-CDKAF fused to sfGFP was induced with tetracycline in cells with either the major PP2A catalytic subunit (encoded by the ppa2 gene) deleted or present. Induced C-CDK-sfGFP lacks its degron box sequence, and therefore is not degraded at anaphase. Sequential sampling during C-CDK-sfGFP induction begins at the point of tetracycline addition, with timepoints taken roughly every 3 min after 1000s lag period in C-CDK-sfGFP induction. (f) Flow cytometric DNA content analysis for wild-type cells, cdc2-M26 cells, and cdc2-M26 PP2A\u0394 cells. The major PP2A, ppa2, was deleted in PP2A\u0394 cells. Cells were fixed for sampling after the block lengths specified in (e), before the addition of tetracycline. (g) Induction of C-CDK after tetracycline addition. Points represent mean concentration of C-CDK-sfGFP across all size bins at indicated timepoints. CDKWTn\u00a0=\u00a0166,081. C-CDKWT PP2A\u0394 n\u00a0=\u00a0175,247. C-CDKAFn\u00a0=\u00a0177,292. C-CDK\u0391F PP2A\u0394 n\u00a0=\u00a0174,847. (h) C-CDK activity against C-CDK-sfGFP level in given genetic backgrounds defined in (g). Points represent mean C-CDK activity of all cells. Data is pooled from experiment in (e), from all timepoints following tetracycline induction. Key is the same as (g). (i) Violin plots of single-cell C-CDK-sfGFP level against CDK activity in annotated size bins and strain backgrounds. Solid line through violin plot indicates the mean CDK activity within the C-CDK level bin. (j) Maximum mean CDK activity vs cell length in annotated strain backgrounds. Max mean CDK activity is the maximum mean CDK activity within a C-CDK fluorescence level bin for a given cell size. The mean CDK activity level across all fluorescence bins is shown by the solid line in the violin plots in (i). (k) Maximum gradient of the mean lines in (i) plotted against cell length. Maximum gradient of change is derived from a spline fit to the mean CDK activity vs\u00a0C-CDK-sfGFP level trace. (l) Linear regression lines were fit to data in (k), and residuals were plotted (actual value \u2013 predicted value). Non-linear residuals indicate bistability in CDK activation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Design of the synthetic Cut3 (synCut3) sensor. The design includes the first 528 amino acids of Cut3 (and has previously been shown to translocate into the nucleus at mitosis [Fantes et al., 1975]). (b) Example images of synCut3-mNeonGreen expressed from the eno101 promoter, in the presence or absence of 1NM-PP1 (for 1 hr) or a mutated T19 residue. The T19V mutation does not allow CDK phosphorylation, therefore preventing nuclear translocation. Scale bar\u00a0=\u00a020 \u03bcm. (c) Examples images of exogenous synCut3-mCherry and endogenous Cut3-GFP expressing cells. Scale bar\u00a0=\u00a020 \u03bcm. (d) Detailed view of two mitotic cells expressing both synCut3-mCherry and Cut3-GFP. (e) Quantification of exogenous synCut3 signal vs endogenous Cut3 nuclear levels. Data points coloured to indicate cell size. Note endogenous Cut3 signal is smoothed to remove foci containing condensed chromatin regions.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Experimental outline for (b\u2013d). Cells were held at 36\u00b0C for 1 hr to ablate cdc2-M26 function. After 1 hr, C-CDKWT or C-CDKAF was induced with tetracycline. Induced C-CDK lacks its degron box sequence, and therefore is not degraded at anaphase. Sequential sampling during C-CDK induction begins at the point of tetracycline addition. Concurrent with tetracycline addition, 1NM-PP1 was added to the specified concentration to inhibit the induced C-CDK. (b) Mean CDK activity against C-CDK level, within specified size bins. Colours within subplot indicate cell size bin (see colour bar). Different subplots represent cells released into different 1NM-PP1 concentrations. (c) Violin plots of single-cell C-CDK level against CDK activity data. Individual subplots are the single-cell data from a given size bin and 1NM-PP1 level. Rows correspond to the same size bin, columns to the same 1NM-PP1 level. Although bistable behaviour is observed, lines through data represent the population mean C-CDK activity level within a given C-CDK level bin. (d) Heatmap of annotated features, extracted from the single-cell dose\u2013response data. Max mean CDK activity is the maximum mean CDK activity within a C-CDK fluorescence level bin. C-CDK slope breadth is the change in C-CDK between the C-CDK bin at which CDK activity is greater than 1.1\u00d7 of minimum and less than 0.8\u00d7 of maximum. C-CDK level when P(CDK>5)\u00a0>\u00a00.1 indicates the C-CDK level required to increase CDK activity in 10% of cells to a level greater than 5. (e) Experimental outline for panels F and G. Cells were held at 36\u00b0C for 1 hr to ablate cdc2-M26 function. After 1 hr, C-CDKWT or C-CDKAF was induced with tetracycline to different levels by adding variable amounts of tetracycline. C-CDK was induced in the presence of 10 \u03bcM 1NM-PP1 to inhibit the induced C-CDK. After 60 min, 1NM-PP1 was washed from cells and cells were sequentially sampled using imaging flow cytometry (IMS). All time measurements are given as time from washing 1NM-PP1. (f) Scatter plot of C-CDK levels against cell size after C-CDK induction. Data represent pooled data from all cells encompassing all 1NM-PP1 release concentrations Colours indicate local data point density. N\u00a0>\u00a010,000. (g) synCut3 N/C ratio (representing CDK activity) against time in the presence of induced C-CDKWT or C-CDKAF. Line colours indicate size bins. N\u00a0>\u00a050 cells per data point.\n\nCombining this system with genetic backgrounds in which major C-CDK regulation was altered, we analysed how mechanisms of CDK regulation affected C-CDK activity in relation to cell size. We performed the assay in backgrounds lacking the major PP2A catalytic subunit (PP2Appa2\u0394) (Kinoshita et al., 1990; Kinoshita et al., 1993), inhibitory CDK tyrosine phosphorylation, or both (Figure 2e). Following endogenous CDK1 inactivation after temperature shift, both PP2A+ and PP2A\u0394 cells arrest in an almost uniform G2 state, ensuring that downstream analysis is not confounded by cells arresting in different phases of the cell cycle (Figure 2f). C-CDK levels increased similarly upon induction in all mutant backgrounds (Figure 2g). Population mean C-CDK activity was comparable between all conditions (Figure 2h); however, C-CDK activity displayed differences at the single-cell level when activity was measured in cells of different sizes. In all genetic backgrounds at the same level of C-CDK enzyme, maximum C-CDK activity increases with cell size (Figure 2i). This is particularly noticeable when directly comparing the maximum C-CDK activity of cells with a C-CDK level of\u00a0~750 AU in the 8 \u03bcm bin to the 14 \u03bcm bin in all backgrounds (Figure 2i, dashed lines). The single-cell dose\u2013response of CDK activity on C-CDKWT concentration background is clearly bistable, with cells existing in either an \u2018on\u2019 or an \u2018off\u2019 state. The mean CDK activity is relevant directly for strains expressing C-CDKAF, as these cells exhibit little bistability in CDK activation. In the C-CDKWT expressing cells, there are two population distributions demonstrating bistability. We averaged the two population means as the gradient of this line shows the degree of bifurcation between the lower and the upper CDK activity populations. The C-CDK concentration required to switch cells \u2018on\u2019 decreases with increasing cell size, and the sharpness of the transition increases with size (Figure 2i,k). This bistable behaviour is heavily dependent on CDK tyrosine phosphorylation (Figure 2i,k,l). Removal of PP2A allows the attainment of the \u2018on\u2019 state at lower cell sizes (Figure 2i), effectively shifting the C-CDK dose\u2013response curve towards lower sizes without altering the shape of the response (Figure 2k). In addition, PP2A also adds switch like behaviour to the C-CDK activity dose-response, as bistable behaviour with C-CDKAF is not present with C-CDKAF PP2A\u0394 (Figure 2i dashed box, inset and Figure 2l).\n\nWhen looking across all size bins, maximum C-CDK activity increases with cell size in all genetic backgrounds, but plateaus at about 12\u201313 \u03bcm in the absence of tyrosine phosphorylation (Figure 2j). However, it is clear that cell size is able to regulate C-CDK activity even in the absence of both tyrosine phosphorylation and PP2A (Figure 2i,j). These results are consistent with our previous observations (Figure 1), that although tyrosine phosphorylation has a role in informing the cell cycle machinery of cell size, small cells are still restricted from mitosis when tyrosine phosphorylation is absent.\n\nInhibitory tyrosine phosphorylation directly results in a reduction of intrinsic CDK activity (Berry and Gould, 1996), whilst PP2A has a dual mechanism of CDK activity modulation: PP2A is able to regulate inhibitory tyrosine phosphorylation by controlling the phosphorylation state of Wee1 and Cdc25 (Lucena et al., 2017), and in addition can directly oppose the phosphorylation of CDK substrates (Godfrey et al., 2017). We therefore sought to calculate the contributions of tyrosine phosphorylation and PP2A in restricting CDK activity, both in contexts with and without tyrosine phosphorylation. This was carried out to examine if their combined contribution was greater than the sum of their parts. To calculate the individual contributions of tyrosine phosphorylation and PP2A in restricting C-CDK activity, first we measured the threshold C-CDK level required for 50% of cells to reach a C-CDK activity determined as being\u00a0>5 in arbitrary units (see Figure 3 legend) in different strain backgrounds within different size bins (Figure 3a). This value was chosen as an approximate value of the C-CDK concentration required in vivo to trigger mitotic entry in wild-type cells (Figure 1i). When this C-CDK threshold level was plotted across all size bins (Figure 3b), the threshold was seen to be size dependent in all strain backgrounds, with wild-type cells exhibiting the strongest capacity to raise the C-CDK level threshold for mitosis in smaller cells. By subtracting the curves of cell length vs mitotic C-CDK level (Figure 3c) for various backgrounds, we were able to estimate the contributions of tyrosine phosphorylation and PP2A in a given background. For example, C-CDKWT PP2A\u0394\u2013C-CDKAF PP2A\u0394 estimates the ability of tyrosine phosphorylation alone to restrict mitotic entry in a background lacking PP2A. Inhibitory tyrosine phosphorylation is able to restrict cells with 600 units of C-CDK from entering mitosis at 8 \u03bcm cell length, but only 200 units of C-CDK at 10 \u03bcm (Figure 3c, yellow). If the different components of the CDK control network act separately, adding individual threshold contributions together would generate a threshold curve similar to the wild-type curve. However, when the contributions of tyrosine phosphorylation and PP2A were added to the C-CDKAF PP2A\u0394 curve, they did not re-capitulate the wild-type curve (Figure 3d). Thus, this analysis suggests that there is synergy between the tyrosine phosphorylation network and PP2A activity and that this synergy is important for establishing the C-CDK level threshold for division.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig3-v2.jpg)\n\n**Figure 3.:** (a) Scatter plots of C-CDK level against CDK activity. Either C-CDKWT or C-CDKAF fused to sfGFP was induced in backgrounds with PP2A either lacking or present. PP2A\u0394 refers to a deletion of the ppa2 gene. Red line indicates the C-CDK-sfGFP level at which 50% of cells have a CDK activity greater than 5. Black dashed line marks CDK activity of 5. Data taken from Figure 2i. (b) C-CDK-sfGFP level at which 50% of cells have C-CDK activity\u00a0of\u00a0>5. Data is taken from (a) across all size bins. Y-axis represents the C-CDK-sfGFP threshold at which 50% of cells will have a C-CDK activity of 5. Dashed lines indicate values where this C-CDK-sfGFP threshold level is undefined due to the threshold being unattainable in experimental conditions. (c) Piecewise dissection of the amount of C-CDK-sfGFP a particular component of the cell cycle network is able to prevent from switching to an \u2018on\u2019 state (C-CDK activity level of 5) in different size bins. Bar chart shown is of subtractions of curves described in key (inset). For example, C-CDKWT\u2013C-CDKAF gives the C-CDK threshold tyrosine phosphorylation alone (in a background with PP2A present) is able to generate to restrict C-CDK activation. Values that are undefined due to undefined original threshold values from (a) are taken to be 1000 units and are marked above the axis (pink). (d) Cell length against C-CDK level threshold of annotated curves. Here, a synthetic threshold curve is built (pink), by adding the individual component regulatory contributions of CDK tyrosine phosphorylation (c, yellow) and PP2A (c, orange) to the base curve of C-CDKAF PP2A\u0394 (green) to try and re-capitulate the WT behaviour (blue). Dashed line indicates undefined threshold values.\n\nWe have shown that small cells are normally prevented from division by their low C-CDK protein level (Figure 1), along with PP2A and tyrosine phosphorylation working synergistically to increase the level of C-CDK needed to trigger division in smaller cells (Figure 3). Strikingly however, in the absence of these major regulators, small cells are still able to restrict division by lowering CDK activity as a result of some other factor related to cell size (Figure 2h,i,j). This unknown factor is able to lower CDK activity in small cells despite high C-CDK levels, thus restricting them from division (Figure 2i).\n\nGiven the positive relationship between maximum C-CDK activity and increasing cell size in the C-CDKAF PP2A\u0394 mutant (Figure 2i), we hypothesized that cells dilute a CDK inhibitor as they grow (Fantes et al., 1975), perhaps through a titration-based mechanism. Cell size is linked to ploidy through an unknown mechanism, and so we tested whether DNA concentration could influence CDK activity, and therefore be a candidate for the unknown factor able to lower C-CDK activity in small cells. We induced C-CDKAF in haploid and diploid variants of the C-CDKAF PP2A\u0394 strain, thereby eliminating all major CDK regulation at mitosis (Figure 4a). Both haploid and diplod cells were present almost uniformly in G2 after endogenous CDK1 inactivation, as cells with 2C and 4C DNA content respectively (Figure 4b), and expressed C-CDKAF-sfGFP in a largely size-independent manner (Figure 4c). Strikingly, diploid cells exhibited lower C-CDK activity in response to the same C-CDK enzyme concentration as haploids (Figure 4d). The EC50 of the diploid dose\u2013response curve was almost double that of the haploid (Figure 4e). Looking at single-cell, volume-resolved data, the inhibition of C-CDK activity is most marked in smaller diploid cells, with larger diploid cells having almost indistinguishable dose\u2013response curves from their haploid equivalents (Figure 4f). The effect of cell size on CDK activation is much less marked in larger than normal haploids (Figure 4g). The diploids, which feature cells of physiological diploid size, still experience DNA concentration-dependent inhibition of their CDK activity. The effect of equal C-CDK levels resulting in lower C-CDK activity in small diploids when compared to equivalent sized haploids is readily seen from the raw images (Figure 4h). Therefore, cells of different ploidies, but otherwise equivalent volume, experience variable CDK activity in response to equal C-CDK level. This suggests that even in the absence of all major CDK regulation, DNA concentration is able to lower CDK activity and prevents division in small cells. At higher volumes, this inhibition of CDK activity disappears, and so the regulation may operate through titrating out an inhibitor.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64592/elife-64592-fig4-v2.jpg)\n\n**Figure 4.:** (a) Experimental outline for panels (b)-(h). PP2A \u0394/\u0394 diploids and PP2A\u0394 haploids were arrested using cdc2TS. PP2A\u0394 refers to a deletion of the ppa2 gene. Diploids were held at 36\u00b0C for 1 hr, whilst haploids were held for 3 hr to generate blocked cell populations with similar cell volumes despite ploidy differences. C-CDKAF expression was induced by addition of tetracycline, and C-CDKAF-sfGFP concentration and CDK activity were measured by sequential sampling from time of induction in an imaging flow cytometer. (b) Flow cytometric DNA content analysis for wild-type cells, haploid cdc2-M26 PP2A\u0394 cells and diploid cdc2-M26/cdc2-M26 PP2A\u0394/PP2A\u0394 cells. PP2A\u0394 refers to a deletion of the ppa2 gene. Cells were fixed for sampling after the block lengths specified in (a), before the addition of tetracycline. (c) Expression of C-CDKAF fused to sfGFP from point of tetracycline addition in haploid and diploid strains. Different coloured lines represent different size bins. Haploid n\u00a0=\u00a0125,021, diploid n\u00a0=\u00a0139,557. (d) Mean CDK activity against C-CDKAF-sfGFP level in haploids and diploids. Solid line is a sigmoid fit to data. (e) EC50 from sigmoid curves in (d). Haploid EC50: 372 AU. Diploid EC50: 663 AU. Haploid EC50 is 56% of diploid EC50. (f) Violin plots of single-cell C-CDKAF-sfGFP level against CDK activity in annotated volume bins and ploidy status. Solid line through violin plot indicates the mean CDK activity within the C-CDK-sfGFP level bin. Volume bins span a physiological range of diploid cell sizes. Volume bin 17 corresponds to a haploid cell length of 12.1 \u03bcm and a diploid cell length of 9.53 \u03bcm. Volume bin 36 corresponds to a haploid length of 18.7 \u03bcm and a diploid length of 14.4 \u03bcm. (g) Mean intra volume-bin dose\u2013response of C-CDK-sfGFP level vs CDK activity in annotated ploidy level. Lines are sigmoid curves fit to raw data. Cell volume bin indicated by line colour. (h) Example raw images from experiment. Brightfield (BF) channel displaying cell morphology, C-CDK-sfGFP channel and synCut3-mCherry CDK activity indicator are shown. C-CDK level is the same across all images. Scale bars\u00a0=\u00a03 \u03bcm.\n\n## Discussion\n\nThe cyclin-CDK complex, and its role in controlling mitotic onset, has been studied in many model eukaryotes from yeast (Nurse et al., 1976), through marine invertebrates (Evans et al., 1983), to mammalian cells (Santos et al., 2012). A number of regulatory components have been shown to be conserved across these model systems, including the CDK-activating cyclin B, inhibitory CDK tyrosine phosphorylation, and the CDK-counteracting PP2A phosphatase which both opposes CDK substrate phosphorylation and regulates CDK inhibitory phosphorylation through the Wee1/Cdc25 control loop. Despite extensive study, these studies have yet to reveal a fully satisfactory mechanism for cell size homeostasis at the onset of mitosis. To improve our understanding of this control system, we have focused on how CDK activity itself is directly regulated in the context of cell size. Our approach has demonstrated that three mechanisms inform the cell cycle control network of cell size through CDK activity control: C-CDK enzyme concentration scaling with cell size, synergistic PP2A and tyrosine-phosphorylation-dependent C-CDK threshold scaling, and DNA concentration-dependent inhibition of CDK activity. Our results demonstrate that C-CDK activity vs C-CDK level dose\u2013response curves previously demonstrated in vitro operate in vivo, but in addition, we show that\u00a0they are dependent on cell size in vivo (Pomerening et al., 2003). We also demonstrate a link between ploidy and CDK activity, with higher ploidy causing a reduction in CDK activity. We propose that CDK activity can be inhibited by a DNA-related mechanism in keeping with early work showing that increasing DNA content delays mitosis, with the\u00a0removal of DNA by irradiation\u00a0causing acceleration of the following mitosis (Devi et al., 1968; Sachsenmaier et al., 1970; Wilson, 1925). Our experiments show that DNA inhibits CDK activity more in smaller cells, potentially reducing CDK activity by a titration mechanism. This may be related to the mechanism by which cell size is linked to ploidy across cell types (Wilson, 1925; Amodeo and Skotheim, 2016; Prescott, 1956; Tzur et al., 2009). Finally, we show that tyrosine phosphorylation, PP2A activity, and DNA-dependent inhibition of CDK activity act together to restrict small cells from division, forming a mechanism to generate the robust cell size threshold behaviour observed in normal cells.\n\nOur observations suggest that cell size control over the onset of mitosis involves several molecular mechanisms. If it is assumed that the accumulation of the C-CDK cyclin chimera driven by the cyclin promoter mimics the accumulation of cyclin, then one mechanism is the accumulation of cyclin through the cell cycle, which scales with the increase in cell size. A second is a synergistic interaction between the inhibitory CDK tyrosine phosphorylation pathway and the PP2A phosphatase, which acts on both the tyrosine phosphorylation pathway and dephosphorylation of CDK substrates. The third is a DNA-concentration-dependent inhibition of CDK activity. Given the conservation of all these molecular regulators, these mechanisms can be expected to have direct relevance in other eukaryotic cells.\n\n## Materials and methods\n\n### S. pombe genetics and cell culture\n\nS. pombe media and standard methods are as previously described (Moreno et al., 1991). After nitrogen and glucose addition, EMM was filter sterilised. This process allows for the generation of clear un-caramelised media. Nutritional supplements for auxotrophic yeast strains were added at a concentration of 0.15 mg/ml. Temperature-sensitive mutant strains were grown at temperatures as specified in the text. The temperature-sensitive allele of Cdc2 (CDKTS) used was Cdc2-M26. To modulate inducible promoters, anhydrotetracycline hydrochloride (Sigma) in DMSO at specified concentrations was added to 0.03125 \u03bcg/ml final concentration unless otherwise specified. To alter Cdc2(as) activity, 1NM-PP1 diluted in DMSO was used at concentrations specified in the text. To stain for septa, calcofluor (Fluorescent Brightener 28 [Sigma-Aldrich]) was made up in water at 1 g/l and stored as 500\u00d7 stock. SynCut3 was constructed by Gibson assembly of a codon-optimised fragment consisting of the first 528 amino acids of Cut3, a linker region, and a fluorescent protein (mCherry or mNeongreen). YFP was tagged onto C-CDK at the C-terminus of the protein. Where the sfGFP labelled C-CDK was used, the sfGFP was present internally within the Cdc13 component (Basu et al., 2020; Kamenz et al., 2015). Cut3-mCherry was generated by C-terminal tagging (B\u00e4hler et al., 1998), and Cut3-GFP was developed previously (Sutani et al., 1999). Details of the TetR promoter and linearised variants can be found in a previous publication (Patterson et al., 2019). All S. pombe strains used in this study are listed in Table 1.\n\n### Microscopic imaging\n\nAll imaging was performed using a Deltavision Elite (Applied Precision) microscope \u2013 an Olympus IX71 wide-field inverted fluorescence microscope with a PLAN APO 60\u00d7 oil, 1.42 NA objective and a Photometrics CoolSNAP HQ2 camera. To maintain specified temperatures during imaging, an IMSOL imcubator Environment control system and an objective heater was used. SoftWoRx was used to set up experiments. Five z-stacks were acquired, with 1 \u03bcm spacing. Image analysis was performed using custom Matlab scripts that executed the steps outlined in Figure 1\u2014figure supplement 1.\n\nThe ONIX Microfluidics platform allows for long-term time-lapse imaging of live cells. Plate details can be found at http://www.cellasic.com/ONIX_yeast.html. Fifty\u00a0microlitres\u00a0of cell culture at density 1.26 \u00d7 106/ml was loaded into the plate and imaged in the 3.5 \u03bcm chamber. Cells were loaded at 8 psi for 5 s. Media was perfused at a flow rate of 3 psi. The imaging chamber was washed with media for 1 min at 5 psi before cells were loaded.\n\nMattek glass bottom dishes were used for some time-lapse imaging applications with drugs that were incompatible with Cellasics plates, primarily for the purpose of release from a 1NM-PP1/Cdc2(as) cell cycle block. Dishes were pre-treated with soybean lectin to permit cell adherence (Sigma-Aldrich). Before the\u00a0addition of cells, Mattek dishes were pre-warmed on a heatblock at appropriate temperature. Cells were grown and blocked in liquid culture before 2 ml were pelleted (5000 rpm/30 s). Cell pellets were then pooled and resuspended in 1 ml of release media (at which time a stop watch was started) in a new microcentrifuge tube before pelleting (5000 rpm/30 s) and resuspended in 5 \u03bcl of media. This concentrated cell suspension was then applied to the centre of the Mattek dish and allowed to settle for\u00a0~5 s. The dish was then washed with 1 ml of release media 3\u00d7. The dish was then filled with 3 ml of release media before rapid imaging. In general, the wash process required 1.5 min, and imaging setup requires 5 min for\u00a0~8 fields of view. The levels of Cut3 and C-CDK referred to in the paper reference the concentration of both these proteins. This was measured by finding the mean intensity of the brightest group of 9 pixels within the cell, to give a measurement of the concentration.\n\n### Imaging flow cytometry\n\nImaging flow cytometry was performed with an Imagestream Mark X two-camera system (Amnis), using the 60\u00d7 objective. Cells were concentrated by centrifugation (5000 rpm/30 s) and resuspended in\u00a0~25 \u03bcl of media before sonication in a sonicating water bath. In focus, single\u00a0cells were then gated by applying the following gating methods in sequence:\n\nTo avoid any autofocus based drift within an experiment, cell were imaged at fixed, empirically determined focal points, designed to maximise the number of cells with gradient RMS\u00a0>\u00a065. Data was analysed using custom Matlab scripts. The steps these scripts executed were similar to the image processing pipeline for wide-field imaging (Figure 1\u2014figure supplement 1) albeit slightly simplified given the presence of only a single cell per image. The Imagestream acquires two brightfield images of a cell, allowing definition of a cell region using the standard deviation of pixels between the two. This is analogous to the approach used for time-lapse cell region segmentation (Figure 1\u2014figure supplement 1).\n\nA line was then drawn through the middle of the cell, by finding the middle pixel on the horizontal axis of the cell. The line was widened by one pixel either side, and the mean fluorescence intensity within that line extracted. The standard peak finding algorithm within Matlab was then used to identify nuclear Cut3 fluorescence (either a dip in the case of a low CDK activity cell or a peak in the case of a high CDK activity cell). Background or \u2018cytoplasmic\u2019 fluorescence was defined by the intensity of the flat regions of the curve either side of the peak. The levels of Cut3 and C-CDK referred to in the paper reference the concentration of both these proteins. This was measured by finding the mean intensity of the brightest group of 9 pixels within the cell, to give a robust measurement of the concentration.\n\nTo perform time-lapse imaging flow cytometry (IMS), water baths at specified temperatures for the experiment were set up with cultures next to the IMS. Time was measured from the point of drug addition to liquid culture or as described during a wash protocol for drug release. Samples were collected as above from the waterbath, and sample timepoints defined as the time at which acquisition on the IMS began (as opposed to time when sample was collected \u2013 although this was consistently\u00a0~3 min apart). Samples were imaged for\u00a0~1 min unless otherwise stated.\n\n### Data analysis and plotting\n\n#### Boxplots\n\nThe top of box is the 25th percentile of the data, and\u00a0the bottom is the 75th percentile. The line in the middle of the box is the median. Whisker lengths are either the distance to the furthest point outside of the box, or 1.5\u00d7 the interquartile range, whichever is lower. If data exists that is greater than 1.5\u00d7, the interquartile range from the top or bottom of the box, this is shown as a red \u2018+\u2019.\n\n#### Statistical testing\n\nStatistical testing was performed where appropriate using a two-tailed two-sample t-test. p-values below 0.05 were considered significant. Replicates are shown where appropriate by N numbers.\n\n### Cell size measurement\n\nCell size was measured by three different metrics. In time-lapse microscopy assays, cell size was determined as the area of the 2D surface segmented by our segmentation algorithm. In the high-throughput imagestream assays, cell size was measured as length of the cell. The difference in metric choice between these two systems was due to improved ability of measuring cell length in the high-throughput assay, where it was less affected by focal-dependent changes in cell volume. In the haploid vs diploid experiments, a measure of cell volume was used, where cells were assumed to behave as cylinders, and volume was calculated from the measured radius and length. This was done as diploids are wider than haploids, and thus a simple length metric cannot be employed for size binning.\n\n### Strain table\n\n**Table 1.**\n S.\u00a0pombe\u00a0strains.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain ID</th>\n      <th>Strain genotype</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>JP223</td>\n      <td>h? leu1::cdc13P:cdc13-cdc2.as\u2020-YFP:cdc13T::ura4 cdc13\u0394::natMX6 cdc2::scLeu2</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP224</td>\n      <td>h? leu1::cdc13P:cdc13-cdc2AF.as\u2020-YFP:cdc13T::ura4 cdc13\u0394::natMX6 cdc2::scLeu2</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP670</td>\n      <td>h? leu1::cdc13P:cdc13-cdc2.as\u2020-YFP:cdc13T::ura4 cdc13\u0394::natMX6 cdc2::scLeu2 ura4::Ppcna1-CFP-pcna cut3-mCherry::hphMX6</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP671</td>\n      <td>h? leu1::cdc13P:cdc13-cdc2AF.as\u2020-YFP:cdc13T::ura4 cdc13\u0394::natMX6 cdc2::scLeu2 ura4::Ppcna1-CFP-pcna cut3-mCherry::hphMX6</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP310</td>\n      <td>h? leu1::cdc13P:cdc13-cdc2.as\u2020:cdc13T::ura4 cdc13\u0394::natMX6 cdc2::scLeu2 cut3-tdTomato::hphMX6</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP311</td>\n      <td>h? leu1::cdc13P:cdc13-cdc2AF.as\u2020:cdc13T::ura4 cdc13\u0394::natMX6 cdc2::scLeu2 cut3-tdTomato::hphMX6</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP295</td>\n      <td>h? leu1::cdc13P:cdc13-cdc2AF.as\u2020:cdc13T::ura4 cdc13\u0394::natMX6 cdc2::scLeu2 cut3-GFP::ura4</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP296</td>\n      <td>h? leu1::cdc13P:cdc13-cdc2.as\u2020:cdc13T::ura4 cdc13\u0394::natMX6 cdc2::scLeu2 cut3-GFP::ura4</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP501</td>\n      <td>h? cdc2.as\u2021::blastMX6 synCut3-mNeongreen:: leu1+</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP507</td>\n      <td>h? cdc2.as\u2021::blastMX6 synCut3-T19V-mNeongreen:: leu1+</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP601</td>\n      <td>h? synCut3-mCherry:: leu1\u00a0+\u00a0cut3-GFP::ura4</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP602</td>\n      <td>h? cdc2.as\u2021::blastMX6 synCut3-mCherry::leu1\u00a0+\u00a0cut3-GFP::ura4</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP591</td>\n      <td>h? cdc2-M26 synCut3-mCherry::leu1\u00a0+\u00a0leu1::enoTetP:cdc13-sfGFP-cdc2.as\u2020:adh1T::hphMX6 TetR13</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP593</td>\n      <td>h? cdc2-M26 synCut3-mCherry::leu1\u00a0+\u00a0leu1::enoTetP:cdc13-sfGFP-cdc2AF.as\u2020:adh1T::hphMX6 TetR1*</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP603</td>\n      <td>h? cdc2-M26 synCut3-mCherry::leu1\u00a0+\u00a0leu1::enoTetP:DB\u0394cdc13-sfGFP-cdc2.as\u2020:adh1T::hphMX6 TetR1*</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP605</td>\n      <td>h? cdc2-M26 synCut3-mCherry::leu1+ (JPp178) leu1::enoTetP:DB\u0394cdc13-sfGFP-cdc2AF.as\u2020:adh1T::hphMX6 TetR1*</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP679</td>\n      <td>h? cdc2-M26::blastMX6 synCut3-mCherry::leu1\u00a0+\u00a0leu1::enoTetP:DB\u0394cdc13-sfGFP-cdc2.as\u2020:adh1T::hphMX6 TetR1* ppa2\u0394::kanMX6</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>JP680</td>\n      <td>h? cdc2-M26::blastMX6 synCut3-mCherry::leu1\u00a0+\u00a0leu1::enoTetP:DB\u0394cdc13-sfGFP-cdc2AF.as\u2020:adh1T::hphMX6 TetR1* ppa2\u0394::kanMX6</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>SB175</td>\n      <td>h? cdc2-M26 synCut3-mCherry::leu1\u00a0+\u00a0leu1::enoTetP: DB\u0394cdc13-sfGFP-cdc2AF.as\u2020:adh1T::hphMX6 TetR1* ppa2\u0394::kanMX6</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>SB176</td>\n      <td>h?/h? cdc2-M26/cdc2-M26_ synCut3-mCherry::leu1+/synCut3-mCherry::leu1+ _leu1::enoTetP: DB\u0394cdc13-sfGFP-cdc2AF.as\u2020:adh1T::hphMX6/leu1::enoTetP: DB\u0394cdc13-sfGFP-cdc2AF.as\u2020:adh1T::hphMX6_ TetR1*/ TetR1*_ppa2\u0394::kanMX6/ppa2\u0394::kanMX6</td>\n      <td>This work</td>\n    </tr>\n  </tbody>\n</table>\n\n_*TetR1 \u2013 CMVP:TetOx1:TetR-tup11\u039470 (described originally by Patterson et al., 2019).\u2020Cdc2(F84G).\u2021Cdc2(F84G, K79E)._\n",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "bb596d56-6cbb-4896-9000-120a6e46ffcb",
+      "submission_id": "8e7d188e-4333-4225-a2d5-ee1f4afbb9ce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Silke Hauf, Virginia Tech United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64592.sa1](https://doi.org/10.7554/eLife.64592.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThrough technically impressive single-cell experiments and an array of genetic tools, this paper elegantly dissects the pathways that influence CDK1 activity and therefore cell cycle progression. A key question in this field is how cell size influences CDK1 activity, which allows cells to maintain their size. This work shows that CDK1 activity remains influenced by cell size when known pathways are eliminated and makes the novel observation that ploidy influences CDK1 activity.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Synergistic CDK control pathways maintain cell size homeostasis\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nIn this paper, Patterson et al. use genetic techniques in fission yeast to understand how cell size impacts CDK activity and entry into mitosis. By disrupting several regulators of CDK activation and using single-cell readouts of cell size, CDK level, and CDK activity, they show that several layers of control synergistically contribute to making CDK activation dependent on cell size. Their data suggest that DNA concentration affects CDK activity and prevents entry into mitosis in cells that have not reached a certain size threshold.\n\nThe experiments' technical level is impressive. The authors have developed a novel sensor, synCut3-mCherry, as single-cell read-out for CDK1 activity, and, for the first time, experimentally demonstrate bistability of CDK regulation in fission yeast. The results will be of interest to researchers studying the cell cycle and cell size control.\n\nThe paper could be strengthened by directly examining size homeostasis (as is claimed in the title). In addition, the reviewers had some concerns that cell cycle state is not taken into account as one more variable that could influence the experimental results, and felt that the authors need to provide additional information both on their methods and on their interpretation of the results to make this paper understandable to a wider group of researchers.\n\nEssential revisions:\n\n(1) The authors do not mention that the cell cycle driven by phosphorylatable and non-phosphorylatable (AF) versions of cyclin-CDK fusion proteins could be very different. The data in Figure 1c/k strongly suggests that this is the case. This is also supported by prior findings (Figure 5 in Coudreuse and Nurse, 2010) despite some differences in the genetic background (CCP deletion). Overall, the data suggest that G1 phase is extended in the AF-carrying strain. For the experiments in Figure 2h, what is the cell cycle distribution (G1/S/G2) in the different size bins for the different strains, and does cell cycle state/DNA content (S vs. G2) influence the results?\n\nAt the very least, the differences in cell cycle structure between the strains need to be discussed. In addition, please specify which of the PP2A genes has been deleted, and how this influenced the cell cycle profile.\n\n(2) Figure 4 shows that small diploid cells display a lower CDK activity than haploids of the same size. This suggests that a titration mechanism prevents the increase in CDK activity when DNA concentration is too high. These data would be strengthened by a direct readout of DNA content (e.g. DAPI) to measure the amount/concentration of DNA in single cells and its relation to CDK activity. Since DNA staining will also reveal cell cycle state (S phase vs. G2 phase), this would also allow it to exclude cell cycle effects by binning for G2 cells.\n\n(3) PP2A has a dual effect on CDK activity, which is insufficiently discussed. PP2A regulates inhibitory phosphorylation of CDK through the feedback enzymes (Wee1 and Cdc25) as was shown by Chica et al., 2016 (which should be cited) and PP2A controls the phosphorylation state of CDK substrates. These two effects should be distinguished, because one of them influences the intrinsic CDK activity, while the second has an effect on net CDK phosphorylation of substrates. The authors need to check their text for statements that are not clear enough in that regard, e.g. in line 151 \"PP2A and inhibitory tyrosine phosphorylation constitute two fundamentally different modes of lowering CDK activity\" is not entirely correct.\n\n(4) The major claim in the title is about cell size homeostasis, but size homeostasis is not examined directly. What is the cell size distribution at division in a C-CDK-AF PP2A-\u0394 strain and do these cells show size homeostasis (as judged by a \"Fantes plot\")? In the absence of any such data, the title would need to be revised.\n\n(5) Showing the bistable behavior of CDK activity in Figure 2h is a beautiful experimental result. The authors show that the fusion-protein threshold to activate CDK is cell size dependent. But the authors do not explain why the CDK activity above the threshold is constant rather than increasing with the fusion-protein level on the x-axis. What is the limiting factor for CDK activity above the threshold? Does the sensor become saturated at high activity levels?\n\nFurthermore, these important results would deserve a better presentation: calculating the mean CDK activity for a bimodal distribution seems meaningless and confusing. The main point here is at which threshold of fusion-protein levels the CDK activities bifurcate.\n\n(6) In Figure 1j-o, the Pearson correlation coefficient should be provided to support the conclusions of the authors. On line 101, the authors mention that \"C-CDK-AF cells\u2026 show size-dependent CDK activity scaling\". Yet, in Figure 1m it does look like this dependency is significantly impaired. It is actually unclear why that is, knowing size scales with C-CDK level, and C-CDK levels correlate with CDK activity. Please discuss this.\n\n(7) Either title or abstract should mention the experimental system being used.\n\n(8) The paper is very dense and will be hard to understand for people not very familiar with this field. Please expand the introduction and discussion to make the text more accessible. It would be interesting if the authors could elaborate on the implications of their results regarding the mechanism(s) of size control, how their findings relate to (extensive) existing literature, and potentially other model systems in which these questions have been investigated. The introduction would benefit from citing one of the many excellent, recent reviews on the topic.\n\n(9) More details need to be provided in the Methods section in order to allow other researchers to evaluate, and possibly reproduce, these experiments. For example:\n\n\u2013 The authors should specify which of the two pp2a genes has been deleted and what effect it had on the cell cycle.\n\n\u2013 The authors should explain how they measured the level (concentration) of the fusion protein which accumulates in the nucleus. It makes a huge difference whether the fluorescence is proportional to the concentration or the number of molecules of the fusion-protein.\n\n\u2013 When referring to 'custom Matlab scripts', the authors should at least describe the steps that the scripts are executing.\n\n\u2013 Please specify what 'our segmentation algorithm' is.\n\n\u2013 Presumably FOV stands for 'field of view' \u2013 please spell out.\n\n\u2013 Is there text missing between line 247 and 248? It is unclear what points 1 and 2 refer to.\n\n\u2013 Which cdc2-as allele was used?\n\n\u2013 Please provide the full genotype for \"TetR1\".\n\n\u2013 Are the results based on a single strain for each genotype, or have several strains with identical genotype been analyzed? If so, how similar/different were the results?\n\n\u2013 The diploid strains do not seem listed in the strain table. How were they generated?\n\n\u2013 Figure 1l/n/m/o: When after release are the measurements taken? Please add information to the legend.\n",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ecb08792-f92b-4fe3-9680-21b056d7c4ef",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C1",
+      "claim": "Cell size homeostasis is a property that is conserved throughout eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintenance of cell size homeostasis is a property that is conserved throughout eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific consensus about cell size homeostasis across eukaryotes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "4af16367-8ac0-4648-81ff-1de745b560db",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C2",
+      "claim": "Cell size homeostasis is brought about by the co-ordination of cell division with cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell size homeostasis is brought about by the co-ordination of cell division with cell growth and requires restriction of smaller cells from undergoing mitosis and cell division, whilst allowing larger cells to do so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established understanding of cell size control mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "cabb6c73-71b2-4fc7-aaae-98929cb68bd8",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C3",
+      "claim": "Cell size homeostasis requires restriction of smaller cells from undergoing mitosis and cell division, whilst allowing larger cells to do so.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell size homeostasis is brought about by the co-ordination of cell division with cell growth and requires restriction of smaller cells from undergoing mitosis and cell division, whilst allowing larger cells to do so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic description of how cell size homeostasis operates, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "de69fd85-3545-41e5-8d3e-cafa5ac9564f",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C4",
+      "claim": "Cyclin-CDK is the fundamental driver of mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclin-CDK is the fundamental driver of mitosis and therefore ultimately ensures size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge about the role of cyclin-CDK in cell cycle control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "100db57a-b2d9-4d9a-bbd1-0cd4427134a9",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C5",
+      "claim": "Cyclin-CDK ultimately ensures size homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclin-CDK is the fundamental driver of mitosis and therefore ultimately ensures size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the role of cyclin-CDK in driving mitosis and the requirement for mitosis control in size homeostasis.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "a03998fb-ddb5-4b8f-9e49-5cf0eebeb8ab",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C6",
+      "claim": "Inhibitory tyrosine phosphorylation of CDK encodes cell size information.",
+      "claim_type": "EXPLICIT",
+      "source": "We develop a high-throughput single-cell assay system of CDK activity in vivo and show that inhibitory tyrosine phosphorylation of CDK encodes cell size information, with the phosphatase PP2A aiding to set a size threshold for division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the high-throughput single-cell assay system described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "e394ed0e-68d2-4f0e-a41b-e7c6456790ca",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C7",
+      "claim": "The phosphatase PP2A aids to set a size threshold for division.",
+      "claim_type": "EXPLICIT",
+      "source": "We develop a high-throughput single-cell assay system of CDK activity in vivo and show that inhibitory tyrosine phosphorylation of CDK encodes cell size information, with the phosphatase PP2A aiding to set a size threshold for division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing PP2A's role in establishing size thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "b9a45eb7-9c57-4455-83a2-bf8a64b4ad07",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C8",
+      "claim": "CDK inhibitory phosphorylation works synergistically with PP2A to prevent mitosis in smaller cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CDK inhibitory phosphorylation works synergistically with PP2A to prevent mitosis in smaller cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that the combined effects of CDK phosphorylation and PP2A exceed their individual contributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "61dcf708-c1ff-469b-bd67-289d31eb484d",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C9",
+      "claim": "Diploid cells of equivalent size to haploid cells exhibit lower CDK activity in response to equal cyclin-CDK enzyme concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we find that diploid cells of equivalent size to haploid cells exhibit lower CDK activity in response to equal cyclin-CDK enzyme concentrations, suggesting that CDK activity is reduced by increased DNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing haploid and diploid cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "96025344-6912-47d7-a3f8-86497d6e5018",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C10",
+      "claim": "CDK activity is reduced by increased DNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we find that diploid cells of equivalent size to haploid cells exhibit lower CDK activity in response to equal cyclin-CDK enzyme concentrations, suggesting that CDK activity is reduced by increased DNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observation that diploid cells have lower CDK activity than haploid cells of equivalent size.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "d35ea566-68f5-4306-b3d9-ccc772451512",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C11",
+      "claim": "Scaling of cyclin-CDK levels with cell size contributes to cell size homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, scaling of cyclin-CDK levels with cell size, CDK inhibitory phosphorylation, PP2A, and DNA-dependent inhibition of CDK activity, all inform the cell cycle network of cell size, thus contributing to cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing correlation between cyclin-CDK levels and cell size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "e5591462-f768-460c-9de5-e3a12778d28a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C12",
+      "claim": "CDK inhibitory phosphorylation informs the cell cycle network of cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, scaling of cyclin-CDK levels with cell size, CDK inhibitory phosphorylation, PP2A, and DNA-dependent inhibition of CDK activity, all inform the cell cycle network of cell size, thus contributing to cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing the role of tyrosine phosphorylation in size-dependent CDK regulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "6f73ec94-6f11-40a1-bd7a-779059943f0a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C13",
+      "claim": "PP2A informs the cell cycle network of cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, scaling of cyclin-CDK levels with cell size, CDK inhibitory phosphorylation, PP2A, and DNA-dependent inhibition of CDK activity, all inform the cell cycle network of cell size, thus contributing to cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing PP2A's role in size-dependent CDK regulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "2d1f3e59-6f6d-4e5b-8c20-330285c02b5e",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C14",
+      "claim": "DNA-dependent inhibition of CDK activity informs the cell cycle network of cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, scaling of cyclin-CDK levels with cell size, CDK inhibitory phosphorylation, PP2A, and DNA-dependent inhibition of CDK activity, all inform the cell cycle network of cell size, thus contributing to cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that diploid cells have lower CDK activity than haploid cells of equivalent size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "3033c5c5-b234-429e-bc0f-98e3ffad9ce4",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C15",
+      "claim": "Cells display homeostatic behaviour in maintaining population cell size by controlling cell size at mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells display homeostatic behaviour in maintaining population cell size by controlling cell size at mitosis (Fantes et al., 1975; Ginzberg et al., 2015; Wood and Nurse, 2015; Lloyd, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "37946967-3713-4554-9db4-8fb984ecf2a7",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C16",
+      "claim": "Cell size homeostasis is driven by larger cells being more likely to divide than smaller cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This homeostasis is driven by larger cells being more likely to divide than smaller cells, resulting in the correction at cell division of cell size deviances (Fantes et al., 1975; Fantes, 1977; Patterson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "b9beadd5-ee49-41f5-bb23-52d0a7de4ede",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C17",
+      "claim": "Cyclin-dependent kinase (CDK) is the master regulator of mitosis and cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclin-dependent kinase (CDKCdc2) is the master regulator of mitosis and cell division, and therefore the propensity for smaller cells not to divide must ultimately feed into the regulation of CDK activity (Coudreuse and Nurse, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and established knowledge about CDK's role.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "31914b5f-1c23-46be-8fa1-ad78ec49e085",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C18",
+      "claim": "The propensity for smaller cells not to divide must ultimately feed into the regulation of CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclin-dependent kinase (CDKCdc2) is the master regulator of mitosis and cell division, and therefore the propensity for smaller cells not to divide must ultimately feed into the regulation of CDK activity (Coudreuse and Nurse, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on CDK's role as master regulator and the observation that smaller cells divide less frequently.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "5e38f9d8-df5c-4a34-b295-84f057330e49",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C19",
+      "claim": "Cyclin synthesis and subsequent binding of cyclin to CDK drives CDK into a catalytically competent form.",
+      "claim_type": "EXPLICIT",
+      "source": "CDK activity is subject to several mechanisms of control: cyclin synthesis and subsequent binding of cyclin to CDK, which drives CDK into a catalytically competent form Solomon et al., 1990;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "1b00dbb4-dee8-40ad-afe4-5b7be8abe324",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C20",
+      "claim": "Wee1 kinase acts to inhibit CDK through regulatory tyrosine phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Wee1 kinase and Cdc25 phosphatase act to inhibit or activate CDK, respectively, through regulatory tyrosine phosphorylation (Nurse, 1975; Russell and Nurse, 1986; Gould and Nurse, 1989);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "5d1a7a6b-4d81-432a-917a-4d4154c2c3bd",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C21",
+      "claim": "Cdc25 phosphatase acts to activate CDK through regulatory tyrosine phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Wee1 kinase and Cdc25 phosphatase act to inhibit or activate CDK, respectively, through regulatory tyrosine phosphorylation (Nurse, 1975; Russell and Nurse, 1986; Gould and Nurse, 1989);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "10e74157-2c41-4e7e-95be-055280da1ee4",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C22",
+      "claim": "PP2A phosphatase works to remove phosphates deposited by CDK reducing its net activity.",
+      "claim_type": "EXPLICIT",
+      "source": "and PP2A phosphatase works to remove phosphates deposited by CDK reducing its net activity (Kinoshita et al., 1990; Kinoshita et al., 1993; Gharbi-Ayachi et al., 2010; Mochida et al., 2009; Mochida et al., 2010; Mochida et al., 2016),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f1bd047a-1724-4aa3-9f35-1842b4c474b8",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C23",
+      "claim": "PP2A controls the phosphorylation state of Wee1 and Cdc25 to regulate the level of CDK tyrosine phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "and also controls the phosphorylation state of Wee1 and Cdc25 to regulate the level of CDK tyrosine phosphorylation (Lucena et al., 2017; Hutter et al., 2017; Rata et al., 2018; Kamenz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "418a62b7-972d-43a1-89a5-7b91a67a3e5b",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C24",
+      "claim": "The CDK control network co-ordinates cell division with cell growth through an unknown mechanism that responds to cell ploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the CDK control network also co-ordinates cell division with cell growth through an unknown mechanism that responds to cell ploidy, with cell size generally doubling as ploidy doubles (Wood and Nurse, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and acknowledges an unknown mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "addf2c7d-0988-432e-b61e-f193b246ac64",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C25",
+      "claim": "Cell size generally doubles as ploidy doubles.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the CDK control network also co-ordinates cell division with cell growth through an unknown mechanism that responds to cell ploidy, with cell size generally doubling as ploidy doubles (Wood and Nurse, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "4cb81c60-eb26-4ef2-9855-cfc231eb327d",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C26",
+      "claim": "Potential size control pathways will be integrated at the level of CDK activity control because CDK activity is the driver of mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that potential size control pathways will be integrated at the level of CDK activity control because CDK activity is the driver of mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on CDK's role as the driver of mitosis.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "11c537b7-3897-4a96-89e2-ba9c288ef902",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C27",
+      "claim": "In fission yeast Schizosaccharomyces pombe, it has been proposed that size control was mediated by the DYRK kinase Pom1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the fission yeast Schizosaccharomyces pombe, it has been proposed that size control was mediated by the DYRK kinase Pom1, which ultimately inhibits mitotic onset by causing the inhibitory tyrosine phosphorylation of CDK by signalling through the Wee1 kinase (Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "4eb26252-27c3-42cf-82da-746cc6a50e18",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C28",
+      "claim": "Pom1 ultimately inhibits mitotic onset by causing the inhibitory tyrosine phosphorylation of CDK by signalling through the Wee1 kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the fission yeast Schizosaccharomyces pombe, it has been proposed that size control was mediated by the DYRK kinase Pom1, which ultimately inhibits mitotic onset by causing the inhibitory tyrosine phosphorylation of CDK by signalling through the Wee1 kinase (Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "b1ea7369-427c-47e7-9b69-7de4622e5406",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C29",
+      "claim": "In both the absence of Pom1 itself or the absence of inhibitory tyrosine phosphorylation, cells are able to maintain cell size homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in both the absence of Pom1 itself or the absence of inhibitory tyrosine phosphorylation, cells are able to maintain cell size homeostasis (Coudreuse and Nurse, 2010; Wood and Nurse, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "14554bb7-8e7c-48d1-8d94-0c38f0b39c40",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C30",
+      "claim": "There must exist alternative mechanisms by which fission yeast cells integrate cell size information into the CDK control network.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there must exist alternative mechanisms by which fission yeast cells integrate cell size information into the CDK control network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that cells maintain size homeostasis even without Pom1 or tyrosine phosphorylation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "d10d2dda-c552-43c0-8197-e58f59fc0361",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C31",
+      "claim": "Much of our understanding of cyclin-CDK network regulation has been derived from in vitro studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of our understanding of cyclin-CDK network regulation has been derived from in vitro studies, but these have limitations when considering cellular parameters such as cell size (Mochida et al., 2016; Pomerening et al., 2005; Pomerening et al., 2003; Sha et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "ef1b1009-8ec7-4980-8b72-2d7b828194ea",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C32",
+      "claim": "In vitro studies have limitations when considering cellular parameters such as cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of our understanding of cyclin-CDK network regulation has been derived from in vitro studies, but these have limitations when considering cellular parameters such as cell size (Mochida et al., 2016; Pomerening et al., 2005; Pomerening et al., 2003; Sha et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the limitations of in vitro studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "c9f64de6-f10e-48ae-9c1e-7c71850f41f3",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C33",
+      "claim": "The C-CDK fusion-protein is expressed under the Cyclin BCdc13 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "This C-CDK fusion-protein is expressed under the Cyclin BCdc13 promoter, and therefore C-CDK expression mimics endogenous Cyclin B expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f3c7dfec-688d-401e-b5f4-f3f75bea1524",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C34",
+      "claim": "C-CDK expression mimics endogenous Cyclin B expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This C-CDK fusion-protein is expressed under the Cyclin BCdc13 promoter, and therefore C-CDK expression mimics endogenous Cyclin B expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the use of the Cyclin B promoter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "b85936d7-6e80-4ee9-a760-1a2d15d6d42f",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C35",
+      "claim": "C-CDKAF strains are healthy and viable.",
+      "claim_type": "EXPLICIT",
+      "source": "These C-CDKAF strains are healthy and viable, but have markedly distinct cell cycle profiles from C-CDKWT expressing strains, as they spend a significantly longer period in G1 than C-CDKWT cells (Coudreuse and Nurse, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and observation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "4224eea5-c5cd-4c82-a830-acfbe409e023",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C36",
+      "claim": "C-CDKAF strains have markedly distinct cell cycle profiles from C-CDKWT expressing strains.",
+      "claim_type": "EXPLICIT",
+      "source": "These C-CDKAF strains are healthy and viable, but have markedly distinct cell cycle profiles from C-CDKWT expressing strains, as they spend a significantly longer period in G1 than C-CDKWT cells (Coudreuse and Nurse, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "b06022ac-7fea-4b20-b274-6f7530674dbf",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C37",
+      "claim": "C-CDKAF cells spend a significantly longer period in G1 than C-CDKWT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These C-CDKAF strains are healthy and viable, but have markedly distinct cell cycle profiles from C-CDKWT expressing strains, as they spend a significantly longer period in G1 than C-CDKWT cells (Coudreuse and Nurse, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "3f09dce9-1f41-48fe-9d54-50c0a158fcbe",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C38",
+      "claim": "C-CDKAF cells co-ordinate cell division with cell growth and maintain cell size homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, C-CDKAF cells co-ordinate cell division with cell growth and maintain cell size homeostasis (Figure 1a; Wood and Nurse, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and reference to Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f051b868-f74a-4a2c-ad56-1693f4329f5f",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C39",
+      "claim": "C-CDKWT and C-CDKAF show clear oscillations with degradation of C-CDK occurring just before cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed clear oscillations of C-CDKWT and C-CDKAF, with degradation of C-CDK occurring just before cell division (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f58a61c2-233c-4ac4-b518-cce84a69257c",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C40",
+      "claim": "C-CDKAF oscillations were more variable.",
+      "claim_type": "EXPLICIT",
+      "source": "C-CDKAF oscillations were more variable, and 5% of the C-CDKAF cells trigger C-CDK degradation in the absence of division (Figure 1\u2014figure supplement 2), similar to what has been observed in CDK1AF expressing human cells (Pomerening et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "1bcb91fd-4b6b-40b4-aa71-b6d7aabe852c",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C41",
+      "claim": "5% of the C-CDKAF cells trigger C-CDK degradation in the absence of division.",
+      "claim_type": "EXPLICIT",
+      "source": "C-CDKAF oscillations were more variable, and 5% of the C-CDKAF cells trigger C-CDK degradation in the absence of division (Figure 1\u2014figure supplement 2), similar to what has been observed in CDK1AF expressing human cells (Pomerening et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 2 and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "dcc8f3b1-37ed-4675-a623-4fe35db338c0",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C42",
+      "claim": "In both C-CDKWT and C-CDKAF backgrounds, C-CDK concentration scaled with cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "In both backgrounds, C-CDK concentration scaled with cell size, with C-CDKWT exhibiting a higher amount of C-CDK at mitotic entry compared to C-CDKAF (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "496c8d15-8aa8-4d89-b4dd-2c556a7f9bd6",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C43",
+      "claim": "C-CDKWT exhibits a higher amount of C-CDK at mitotic entry compared to C-CDKAF.",
+      "claim_type": "EXPLICIT",
+      "source": "In both backgrounds, C-CDK concentration scaled with cell size, with C-CDKWT exhibiting a higher amount of C-CDK at mitotic entry compared to C-CDKAF (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "2f78347a-50b7-4c53-84f2-d4ef687bb279",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C44",
+      "claim": "For C-CDKWT both cell size and C-CDK level reach sharp thresholds at which cell division rates increase.",
+      "claim_type": "EXPLICIT",
+      "source": "On investigating the links between the probability of a given cell to divide, cell size, and C-CDK level, we found that for C-CDKWT both cell size and C-CDK level reach sharp thresholds at which cell division rates increase (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 1d and 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f2751125-f771-4659-88a6-1d58f1d99c0f",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C45",
+      "claim": "In the absence of tyrosine phosphorylation, a sharp threshold for C-CDKAF levels is present but occurs at a lower level than C-CDKWT.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of tyrosine phosphorylation, a sharp threshold for C-CDKAF levels still is present (Figure 1e), but occurs at a lower level than C-CDKWT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "44d53a05-05d8-4a3a-8f5b-f493f46c6631",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C46",
+      "claim": "C-CDKAF cells fail to generate a sharp threshold for cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "C-CDKAF cells fail to generate a sharp threshold for cell size, but even without a clear size threshold, C-CDKAF cells still restrict smaller cells from division (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "1ffdb113-6217-4684-a165-bae6d04240fd",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C47",
+      "claim": "Even without a clear size threshold, C-CDKAF cells still restrict smaller cells from division.",
+      "claim_type": "EXPLICIT",
+      "source": "C-CDKAF cells fail to generate a sharp threshold for cell size, but even without a clear size threshold, C-CDKAF cells still restrict smaller cells from division (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "75124a9c-c14a-42a0-817e-488e78bfcf41",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C48",
+      "claim": "Cut3 translocates from the cytoplasm into the nucleus upon CDK-dependent phosphorylation of a single site in its N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Cut3, the Smc4 homolog, as a CDK activity biosensor, because it translocates from the cytoplasm into the nucleus upon CDK-dependent phosphorylation of a single site in its N-terminus (Figure 1f; Sutani et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and reference to Figure 1f.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "e3df9eba-201e-4b6e-962d-9631bab0f505",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C49",
+      "claim": "The Cut3 nuclear/cytoplasmic (N/C) ratio can be used to assess CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Cut3 nuclear/cytoplasmic (N/C) ratio can be used to assess CDK activity, a method that has been applied to other protein kinases (Spencer et al., 2013; Araujo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research using similar methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f47281b0-98b8-4716-9378-6371f388af13",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C50",
+      "claim": "The response of the maximum nuclear Cut3 concentration to 1NM-PP1 was similar to the one measured in a previous phosphoproteomics study.",
+      "claim_type": "EXPLICIT",
+      "source": "The response of the maximum nuclear Cut3 concentration to 1NM-PP1 was similar to the one measured in our previous phosphoproteomics study (Swaffer et al., 2016), confirming that the sensor reflects in vivo CDK activity (Figure 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and data shown in Figure 1h.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "97502d98-0d05-4a56-a4f2-cd0415fc2b2d",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C51",
+      "claim": "The Cut3 sensor reflects in vivo CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The response of the maximum nuclear Cut3 concentration to 1NM-PP1 was similar to the one measured in our previous phosphoproteomics study (Swaffer et al., 2016), confirming that the sensor reflects in vivo CDK activity (Figure 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with previous phosphoproteomics data and data shown in Figure 1h.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "b0f98762-71a4-4109-9e02-e8896166aeef",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C52",
+      "claim": "CDK activity rises to a higher level in C-CDKWT cells in comparison to C-CDKAF cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we examined CDK activity in unperturbed cells measured by the Cut3 N/C ratio and showed that it both rises to a higher level in C-CDKWT cells in comparison to C-CDKAF cells and also that progress through mitosis in C-CDKAF cells is slower and more variable (Figure 1i, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1i and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "4550fc42-3d2d-407a-b8fa-e031bbeb2f13",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C53",
+      "claim": "Progress through mitosis in C-CDKAF cells is slower and more variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we examined CDK activity in unperturbed cells measured by the Cut3 N/C ratio and showed that it both rises to a higher level in C-CDKWT cells in comparison to C-CDKAF cells and also that progress through mitosis in C-CDKAF cells is slower and more variable (Figure 1i, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1i and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "ab13d0da-3c80-4b1a-b47e-13639328c928",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C54",
+      "claim": "During a G2/M block, cell size and C-CDK enzyme concentration scaled with each other in both C-CDKWT and C-CDKAF backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "During a G2/M block (Figure 1g), cell size and C-CDK enzyme concentration (as measured by C-CDK-YFP fluorescence intensity) scaled with each other in both backgrounds (Figure 1j,k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 1j and 1k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "08131961-4c96-4d05-a5c8-6b4fcabaf3aa",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C55",
+      "claim": "After release from CDK inhibition, C-CDKWT activity correlated well with both cell size and C-CDK protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "After the release from CDK inhibition, C-CDKWT activity correlated well with both cell size and C-CDK protein level (Figure 1l,n).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 1l and 1n.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "c75f9bb8-ef54-413f-9aa1-fdaab4b0bc17",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C56",
+      "claim": "Peak C-CDKAF activity correlated better with protein level than with cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, peak C-CDKAF activity correlated better with protein level than with cell size (Figure 1m,o).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 1m and 1o.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "6e0dd11e-b933-4b1c-a9b1-cd8141ad44aa",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C57",
+      "claim": "Peak CDK activity in both C-CDKAF and C-CDKWT was clearly size dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we repeated this experiment using a high-throughput assay based on imaging flow cytometry (Figure 1\u2014figure supplements 5 and 6) and observed that peak CDK activity in both C-CDKAF and C-CDKWT was clearly size dependent (Figure 1\u2014figure supplement 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "ed521055-425b-4bf0-8a36-8e6f8dbcfd12",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C58",
+      "claim": "CDK tyrosine phosphorylation helps to inform the cell division machinery of cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CDK tyrosine phosphorylation helps to inform the cell division machinery of cell size (Figure 1d,l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 1d and 1l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "236ce5e9-dd11-4721-a2d8-57fc9fd09e24",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C59",
+      "claim": "In the absence of tyrosine phosphorylation, C-CDKAF cells are still able to generate a threshold C-CDK level for division and prevent small cells from division.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the absence of tyrosine phosphorylation, C-CDKAF cells are still able to generate a threshold C-CDK level for division and prevent small cells from division (Figure 1e,o, Figure 1\u2014figure supplement 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1e, 1o, and Figure 1\u2014figure supplement 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "759705b1-c2a2-4c9c-a585-69c05529bc52",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C60",
+      "claim": "In vivo CDK activity was dependent on C-CDK level and was reduced when CDK activity was inhibited using 1NM-PP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from this assay demonstrated that in vivo CDK activity was dependent on C-CDK level and was reduced when CDK activity was inhibited using 1NM-PP1 (Figure 2d, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2d and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "6ec208f1-efc1-4e1d-bd86-cebbeb71473e",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C61",
+      "claim": "In all genetic backgrounds at the same level of C-CDK enzyme, maximum C-CDK activity increases with cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "In all genetic backgrounds at the same level of C-CDK enzyme, maximum C-CDK activity increases with cell size (Figure 2i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "7ade3b18-038e-4aff-8c55-c909bee2b975",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C62",
+      "claim": "The single-cell dose\u2013response of CDK activity on C-CDKWT concentration background is clearly bistable.",
+      "claim_type": "EXPLICIT",
+      "source": "The single-cell dose\u2013response of CDK activity on C-CDKWT concentration background is clearly bistable, with cells existing in either an 'on' or an 'off' state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data analysis showing two distinct population distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "256f3f02-41af-4dde-a9e8-9b43678c52a6",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C63",
+      "claim": "The C-CDK concentration required to switch cells 'on' decreases with increasing cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-CDK concentration required to switch cells 'on' decreases with increasing cell size, and the sharpness of the transition increases with size (Figure 2i,k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 2i and 2k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "498e7ef2-eb04-4d5d-ae51-7ceaed778397",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C64",
+      "claim": "The sharpness of the transition to the 'on' state increases with cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-CDK concentration required to switch cells 'on' decreases with increasing cell size, and the sharpness of the transition increases with size (Figure 2i,k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 2i and 2k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "08219cc6-9c1e-4f01-8bf4-97ce51c34576",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C65",
+      "claim": "Bistable behaviour is heavily dependent on CDK tyrosine phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This bistable behaviour is heavily dependent on CDK tyrosine phosphorylation (Figure 2i,k,l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 2i, 2k, and 2l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "8fbfa273-b6d2-4f93-9805-d7aadb207a84",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C66",
+      "claim": "Removal of PP2A allows the attainment of the 'on' state at lower cell sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of PP2A allows the attainment of the 'on' state at lower cell sizes (Figure 2i), effectively shifting the C-CDK dose\u2013response curve towards lower sizes without altering the shape of the response (Figure 2k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 2i and 2k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "604a3799-780b-4cd3-8d79-f3d686b89290",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C67",
+      "claim": "PP2A adds switch like behaviour to the C-CDK activity dose-response.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PP2A also adds switch like behaviour to the C-CDK activity dose-response, as bistable behaviour with C-CDKAF is not present with C-CDKAF PP2A\u0394 (Figure 2i dashed box, inset and Figure 2l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2i and 2l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "0ae4c4b0-a9d5-4139-921a-876016e33b3e",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C68",
+      "claim": "Maximum C-CDK activity increases with cell size in all genetic backgrounds, but plateaus at about 12\u201313 \u03bcm in the absence of tyrosine phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "When looking across all size bins, maximum C-CDK activity increases with cell size in all genetic backgrounds, but plateaus at about 12\u201313 \u03bcm in the absence of tyrosine phosphorylation (Figure 2j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "9dab25e8-3bdd-47ec-9dbd-f52e8c210187",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C69",
+      "claim": "Cell size is able to regulate C-CDK activity even in the absence of both tyrosine phosphorylation and PP2A.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is clear that cell size is able to regulate C-CDK activity even in the absence of both tyrosine phosphorylation and PP2A (Figure 2i,j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 2i and 2j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "05f36a2d-96cb-4cef-83c4-a565ce2ab30c",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C70",
+      "claim": "Inhibitory tyrosine phosphorylation directly results in a reduction of intrinsic CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory tyrosine phosphorylation directly results in a reduction of intrinsic CDK activity (Berry and Gould, 1996),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "54a98d76-4a11-4414-abdb-29bb6cf43636",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C71",
+      "claim": "PP2A is able to regulate inhibitory tyrosine phosphorylation by controlling the phosphorylation state of Wee1 and Cdc25.",
+      "claim_type": "EXPLICIT",
+      "source": "PP2A is able to regulate inhibitory tyrosine phosphorylation by controlling the phosphorylation state of Wee1 and Cdc25 (Lucena et al., 2017),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "64a465f0-636c-4691-98ec-2e942e357b3e",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C72",
+      "claim": "PP2A can directly oppose the phosphorylation of CDK substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "and in addition can directly oppose the phosphorylation of CDK substrates (Godfrey et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "edba8499-9dd0-4c45-8e36-5236731d623c",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C73",
+      "claim": "When the contributions of tyrosine phosphorylation and PP2A were added to the C-CDKAF PP2A\u0394 curve, they did not re-capitulate the wild-type curve.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the contributions of tyrosine phosphorylation and PP2A were added to the C-CDKAF PP2A\u0394 curve, they did not re-capitulate the wild-type curve (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "76f46f07-cf9b-4ffd-a9c9-f606a493ae6a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C74",
+      "claim": "There is synergy between the tyrosine phosphorylation network and PP2A activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this analysis suggests that there is synergy between the tyrosine phosphorylation network and PP2A activity and that this synergy is important for establishing the C-CDK level threshold for division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that individual contributions do not sum to the wild-type behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "9cde8aa6-0bc2-46a5-b511-108b7649c90a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C75",
+      "claim": "Synergy between tyrosine phosphorylation and PP2A is important for establishing the C-CDK level threshold for division.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this analysis suggests that there is synergy between the tyrosine phosphorylation network and PP2A activity and that this synergy is important for establishing the C-CDK level threshold for division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that individual contributions do not sum to the wild-type behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "9274bac9-2d4b-454b-8f20-92ee6d0528af",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C76",
+      "claim": "In the absence of major regulators, small cells are still able to restrict division by lowering CDK activity as a result of some other factor related to cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly however, in the absence of these major regulators, small cells are still able to restrict division by lowering CDK activity as a result of some other factor related to cell size (Figure 2h,i,j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 2h, 2i, and 2j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f36bf008-6fc2-4a98-a613-03d3e0322796",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C77",
+      "claim": "Diploid cells exhibited lower C-CDK activity in response to the same C-CDK enzyme concentration as haploids.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, diploid cells exhibited lower C-CDK activity in response to the same C-CDK enzyme concentration as haploids (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "05d5cc5d-a146-4341-88e1-c83e4c8d8a9a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C78",
+      "claim": "The EC50 of the diploid dose\u2013response curve was almost double that of the haploid.",
+      "claim_type": "EXPLICIT",
+      "source": "The EC50 of the diploid dose\u2013response curve was almost double that of the haploid (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "dfea8853-5822-4eb1-96a7-ef5ef211cad1",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C79",
+      "claim": "The inhibition of C-CDK activity is most marked in smaller diploid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at single-cell, volume-resolved data, the inhibition of C-CDK activity is most marked in smaller diploid cells, with larger diploid cells having almost indistinguishable dose\u2013response curves from their haploid equivalents (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "a92429c0-b32f-4383-bbf9-eb1b550d9004",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C80",
+      "claim": "Larger diploid cells have almost indistinguishable dose\u2013response curves from their haploid equivalents.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at single-cell, volume-resolved data, the inhibition of C-CDK activity is most marked in smaller diploid cells, with larger diploid cells having almost indistinguishable dose\u2013response curves from their haploid equivalents (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "29536e49-0d91-4c08-ba5c-f9a180683cc6",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C81",
+      "claim": "The effect of cell size on CDK activation is much less marked in larger than normal haploids.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of cell size on CDK activation is much less marked in larger than normal haploids (Figure 4g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "d7e1bef0-08b5-413e-afb3-6aa762a9aa7a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C82",
+      "claim": "Cells of different ploidies, but otherwise equivalent volume, experience variable CDK activity in response to equal C-CDK level.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, cells of different ploidies, but otherwise equivalent volume, experience variable CDK activity in response to equal C-CDK level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data comparing haploid and diploid cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f0c4da76-7582-403e-a592-33492a94de69",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C83",
+      "claim": "Even in the absence of all major CDK regulation, DNA concentration is able to lower CDK activity and prevents division in small cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that even in the absence of all major CDK regulation, DNA concentration is able to lower CDK activity and prevents division in small cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observation that diploid cells have lower CDK activity than haploid cells of equivalent size.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f44d1c9c-d8ff-41ec-87bb-e23df2aa778e",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C84",
+      "claim": "At higher volumes, DNA-dependent inhibition of CDK activity disappears.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher volumes, this inhibition of CDK activity disappears, and so the regulation may operate through titrating out an inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that larger diploid cells behave similarly to haploid cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "05ebf001-a6c3-4f57-863c-471e73e0b606",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C85",
+      "claim": "The regulation may operate through titrating out an inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher volumes, this inhibition of CDK activity disappears, and so the regulation may operate through titrating out an inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism proposed to explain the size-dependent DNA inhibition of CDK activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "8092dca7-564f-4d11-9755-500526db2c30",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C86",
+      "claim": "CDK activity regulation through inhibitory tyrosine phosphorylation and PP2A work synergistically to communicate information about cell size to the CDK control network.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that CDK activity regulation through inhibitory tyrosine phosphorylation and PP2A work synergistically to communicate information about cell size to the CDK control network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental data showing synergy between these pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "702000a0-7f7a-469e-8024-21b21e343a31",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C87",
+      "claim": "Cyclin-CDK complex level scales with cell size, and this aids in the prevention of division in small cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that cyclin-CDK complex level scales with cell size, and this aids in the prevention of division in small cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing correlation between cyclin-CDK levels and cell size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "7965d9ce-6068-46a3-a270-814b29cc384a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C88",
+      "claim": "In cells lacking PP2A and inhibitory tyrosine phosphorylation, haploid and diploid cells of equivalent size and similar cyclin-CDK concentration have differing cyclin-CDK activities, with diploid cells exhibiting a lower activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that in cells lacking PP2A and inhibitory tyrosine phosphorylation, haploid and diploid cells of equivalent size and similar cyclin-CDK concentration have differing cyclin-CDK activities, with diploid cells exhibiting a lower activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing haploid and diploid cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "c7920e90-79eb-4f5a-b654-f8fdade2efc5",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C89",
+      "claim": "Cyclin-CDK activity is increased in cells of lower ploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that cyclin-CDK activity is increased in cells of lower ploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that haploid cells have higher CDK activity than diploid cells of equivalent size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "78373372-11a1-4513-9d49-8b47040651b4",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C90",
+      "claim": "Cell size control over the onset of mitosis involves several molecular mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations suggest that cell size control over the onset of mitosis involves several molecular mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the multiple mechanisms identified in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "9e0a704a-8c9e-42d9-b13c-9af32bec2235",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C91",
+      "claim": "One mechanism of cell size control is the accumulation of cyclin through the cell cycle, which scales with the increase in cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "If it is assumed that the accumulation of the C-CDK cyclin chimera driven by the cyclin promoter mimics the accumulation of cyclin, then one mechanism is the accumulation of cyclin through the cell cycle, which scales with the increase in cell size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that C-CDK levels scale with cell size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "a079194c-f15f-4946-8b29-10247d80fd86",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C92",
+      "claim": "A second mechanism of cell size control is a synergistic interaction between the inhibitory CDK tyrosine phosphorylation pathway and the PP2A phosphatase.",
+      "claim_type": "EXPLICIT",
+      "source": "A second is a synergistic interaction between the inhibitory CDK tyrosine phosphorylation pathway and the PP2A phosphatase, which acts on both the tyrosine phosphorylation pathway and dephosphorylation of CDK substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing synergy between these pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "d7edb3c4-5144-47ce-999e-02040b09b53a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C93",
+      "claim": "The third mechanism of cell size control is a DNA-concentration-dependent inhibition of CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The third is a DNA-concentration-dependent inhibition of CDK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that diploid cells have lower CDK activity than haploid cells of equivalent size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "e73c7a2d-945b-4516-a907-ac9a42add271",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C94",
+      "claim": "Given the conservation of all these molecular regulators, these mechanisms can be expected to have direct relevance in other eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the conservation of all these molecular regulators, these mechanisms can be expected to have direct relevance in other eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the conservation of the molecular regulators across eukaryotes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "ed5f91f7-b114-4f8e-8707-a688212f9f56",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C95",
+      "claim": "CDK activity vs C-CDK level dose\u2013response curves previously demonstrated in vitro operate in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that C-CDK activity vs C-CDK level dose\u2013response curves previously demonstrated in vitro operate in vivo, but in addition, we show that they are dependent on cell size in vivo (Pomerening et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to previous in vitro work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "76596424-7d53-48c2-a7c4-f0576a104276",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C96",
+      "claim": "CDK activity vs C-CDK level dose\u2013response curves are dependent on cell size in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that C-CDK activity vs C-CDK level dose\u2013response curves previously demonstrated in vitro operate in vivo, but in addition, we show that they are dependent on cell size in vivo (Pomerening et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing size-dependent dose-response curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "4f569fd9-22a4-44d8-8dc7-332918dff92f",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C97",
+      "claim": "CDK activity can be inhibited by a DNA-related mechanism in keeping with early work showing that increasing DNA content delays mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that CDK activity can be inhibited by a DNA-related mechanism in keeping with early work showing that increasing DNA content delays mitosis, with the removal of DNA by irradiation causing acceleration of the following mitosis (Devi et al., 1968; Sachsenmaier et al., 1970; Wilson, 1925).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism supported by current experimental data and citations to early work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "7c1d0931-d4d2-41d7-bfb5-8e8d32b07e69",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C98",
+      "claim": "DNA inhibits CDK activity more in smaller cells, potentially reducing CDK activity by a titration mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments show that DNA inhibits CDK activity more in smaller cells, potentially reducing CDK activity by a titration mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and is a speculative mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "99970e38-a6ab-4df5-b3a1-ab5c2a0e2fa0",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C99",
+      "claim": "DNA-dependent inhibition of CDK activity may be related to the mechanism by which cell size is linked to ploidy across cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be related to the mechanism by which cell size is linked to ploidy across cell types (Wilson, 1925; Amodeo and Skotheim, 2016; Prescott, 1956; Tzur et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative connection supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "ce8bd9d1-1371-48e1-ac9a-dc09f33fc00c",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C100",
+      "claim": "Tyrosine phosphorylation, PP2A activity, and DNA-dependent inhibition of CDK activity act together to restrict small cells from division.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that tyrosine phosphorylation, PP2A activity, and DNA-dependent inhibition of CDK activity act together to restrict small cells from division, forming a mechanism to generate the robust cell size threshold behaviour observed in normal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data showing the combined effects of these mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "7b80cadd-c6b0-4773-818a-a6caf570edd5",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C101",
+      "claim": "Both PP2A+ and PP2A\u0394 cells arrest in an almost uniform G2 state following endogenous CDK1 inactivation after temperature shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Following endogenous CDK1 inactivation after temperature shift, both PP2A+ and PP2A\u0394 cells arrest in an almost uniform G2 state, ensuring that downstream analysis is not confounded by cells arresting in different phases of the cell cycle (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "a88f2c8a-54bf-4195-837c-9bfdf40fd0ed",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C102",
+      "claim": "C-CDK levels increased similarly upon induction in all mutant backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "C-CDK levels increased similarly upon induction in all mutant backgrounds (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "fa133acd-2c16-47c8-a4f5-cd3b31c447e5",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C103",
+      "claim": "Population mean C-CDK activity was comparable between all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Population mean C-CDK activity was comparable between all conditions (Figure 2h);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "e7b8c7e0-2615-47a8-b3e4-b4d2561a7ab3",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "claim_id": "C104",
+      "claim": "C-CDK activity displayed differences at the single-cell level when activity was measured in cells of different sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "however, C-CDK activity displayed differences at the single-cell level when activity was measured in cells of different sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-cell data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0ee63ff5-b52c-40ac-9fa1-5a7b45f4f326",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cell size homeostasis is a conserved eukaryotic property requiring coordination of cell division with growth through cyclin-CDK regulation, which restricts smaller cells from mitosis while allowing larger cells to divide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the background knowledge about cell size homeostasis and CDK's role. These are well-established principles in cell biology supported by extensive prior literature and form the conceptual foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "ac168a9d-4b5b-4656-b94c-539f72141bb3",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Inhibitory tyrosine phosphorylation of CDK encodes cell size information and helps inform the cell division machinery of cell size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C12, and C58 are supported by experimental data from the high-throughput single-cell assay system showing that tyrosine phosphorylation contributes to size-dependent CDK regulation (Figures 1d, 1l, 2i).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "56edf9fe-7734-4816-82ef-c1d96c0ae9e2",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PP2A phosphatase aids in setting a size threshold for division by shifting the CDK dose-response curve and adding switch-like behavior to CDK activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C13, C66, and C67 are supported by experimental data showing PP2A's role in establishing size thresholds and bistable CDK activation behavior (Figures 2i, 2k, 2l).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "25c2643b-81bb-467f-aaf4-2f72e5f897e1",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CDK inhibitory phosphorylation works synergistically with PP2A to prevent mitosis in smaller cells, with their combined effect exceeding the sum of individual contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C74, C75, C86, and C92 are supported by the analysis in Figure 3d showing that adding individual contributions of tyrosine phosphorylation and PP2A does not recapitulate wild-type behavior, demonstrating synergy between these pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "08e22bcf-ffbf-4e80-93ec-647f52981d22",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cyclin-CDK complex levels scale with cell size, contributing to cell size homeostasis by preventing division in small cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C42, C54, C87, and C91 are supported by experimental data showing correlation between C-CDK levels and cell size (Figures 1c, 1j, 1k), demonstrating that cyclin accumulation scales with cell growth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "74d1ef0e-36ba-4ea3-9615-fa6e5c7814ac",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Diploid cells of equivalent size to haploid cells exhibit lower CDK activity in response to equal cyclin-CDK enzyme concentrations, with the effect most marked in smaller diploid cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C77-C80, C82, and C88 are supported by experimental data comparing haploid and diploid cells (Figures 4d-f), showing that diploid cells have approximately double the EC50 of haploid cells and that this effect is size-dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "326d982c-fc9e-49db-ac56-7b16cd1f3a77",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CDK activity is reduced by increased DNA levels through a DNA-concentration-dependent mechanism that may operate via titration of an inhibitor, with the effect disappearing at higher cell volumes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10, C14, C83-C85, C93, C97, and C98 propose a DNA-dependent inhibition mechanism. While the observation that diploid cells have lower CDK activity is well-supported (C9, C77-C80), the mechanistic interpretation involving DNA concentration and titration is speculative (C10, C83-C85, C98 marked as SPECULATION). The proposed mechanism requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "4c9aafe9-98e5-438a-b578-adc59798badb",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cut3 nuclear/cytoplasmic ratio serves as a valid biosensor for in vivo CDK activity, validated by comparison with phosphoproteomics data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 establish the Cut3 sensor as a valid CDK activity reporter. This is supported by citation to prior work (C48), methodological precedent (C49), and validation against phosphoproteomics data (C50, C51, Figure 1h).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "d178dec9-17fc-4bae-a9ad-6a0b04ab52d6",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The C-CDK fusion protein system, expressed under the Cyclin B promoter, mimics endogenous cyclin expression and maintains cell size homeostasis despite altered cell cycle profiles in C-CDKAF strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 describe the experimental system. The C-CDK fusion protein's behavior is supported by citations to prior work (C35-C37) and experimental data (C38, Figure 1a), validating this simplified system for studying CDK regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "86f8d56c-eadf-4ab0-ba6f-a7706b73e6ed",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "C-CDKWT cells exhibit sharp thresholds for both cell size and C-CDK level at which division rates increase, while C-CDKAF cells maintain a sharp C-CDK threshold but fail to generate a sharp size threshold, yet still restrict smaller cells from division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by data in Figures 1d and 1e showing differential threshold behavior between wild-type and AF mutant cells, demonstrating that tyrosine phosphorylation contributes to but is not essential for size-dependent division restriction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "dd4f46bc-2245-400c-b964-a5bf5c6956c0",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CDK activity rises to a higher level in C-CDKWT cells compared to C-CDKAF cells, and mitotic progression in C-CDKAF cells is slower and more variable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C53 are supported by data in Figure 1i and Figure 1\u2014figure supplement 4, showing differential CDK activity dynamics between wild-type and AF mutant cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "9834bf2f-0633-440d-ae4a-19b543905803",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "After release from CDK inhibition, C-CDKWT activity correlates well with both cell size and C-CDK protein level, while C-CDKAF activity correlates better with protein level than size, though peak CDK activity in both strains is clearly size-dependent when measured by high-throughput assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by data in Figures 1l-o and Figure 1\u2014figure supplement 5e. The apparent discrepancy between low-throughput and high-throughput assays is resolved by the higher statistical power of the imaging flow cytometry approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "09fc6f06-e815-4a21-956c-b901153746c6",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "At the same C-CDK enzyme level, maximum CDK activity increases with cell size in all genetic backgrounds, with C-CDKWT exhibiting bistable behavior where the C-CDK concentration required to switch cells 'on' decreases with increasing cell size, and this bistability is heavily dependent on tyrosine phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by comprehensive single-cell data in Figure 2i showing size-dependent CDK activation and bistable behavior in wild-type cells that is lost in AF mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "056614f6-520a-4352-96f4-0f4921458caa",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Maximum C-CDK activity increases with cell size in all genetic backgrounds but plateaus at 12-13 \u03bcm in the absence of tyrosine phosphorylation, yet cell size can still regulate CDK activity even without both tyrosine phosphorylation and PP2A, indicating an additional size-sensing mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C69, and C76 are supported by data in Figures 2i and 2j showing residual size-dependent CDK regulation in double mutants lacking both major regulatory pathways, pointing to an additional mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f8d99402-c52c-40b6-baca-f5b1dbc62873",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "C-CDKWT and C-CDKAF show clear oscillations with C-CDK degradation occurring just before cell division, but C-CDKAF oscillations are more variable and 5% of C-CDKAF cells trigger degradation without division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by time-lapse data in Figure 1b and Figure 1\u2014figure supplement 2, with the aberrant behavior in AF mutants consistent with observations in human cells (citation to Pomerening et al., 2008).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "8c31a389-f10f-4447-930e-a30cc26865ef",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In the inducible C-CDK system, CDK activity depends on C-CDK level and is reduced by 1NM-PP1 inhibition, with cells arresting uniformly in G2 and C-CDK levels increasing similarly across mutant backgrounds, though single-cell CDK activity shows size-dependent differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C101-C104 validate the inducible C-CDK experimental system, supported by data in Figures 2d, 2f-h, and Figure 2\u2014figure supplement 2, demonstrating that the system allows controlled study of CDK activity across different genetic backgrounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "19617db7-7160-4ea0-9e02-c6a7b51a85c2",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Cells maintain population cell size homeostasis by controlling cell size at mitosis, with larger cells more likely to divide than smaller cells, and this propensity must feed into CDK activity regulation since CDK is the master regulator of mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 establish the conceptual framework linking cell size homeostasis to CDK regulation, supported by citations to prior literature and logical inference from CDK's established role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "a2c417a8-ee3f-4a09-92ea-67ae1d568a26",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Although Pom1 kinase was proposed to mediate size control through CDK tyrosine phosphorylation in fission yeast, cells maintain size homeostasis even without Pom1 or tyrosine phosphorylation, indicating alternative size-sensing mechanisms must exist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by citations to prior work showing that previously proposed mechanisms are insufficient, providing motivation for the current study to identify additional size control pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "df0f6565-27c5-427c-b3f2-b234c4a3923a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Cell size control over mitosis involves multiple molecular mechanisms (cyclin accumulation, tyrosine phosphorylation/PP2A synergy, and DNA-dependent inhibition) that act together to restrict small cells from division, and these conserved mechanisms are expected to be relevant in other eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90, C94, and C100 provide an integrative summary of the study's findings. The multi-mechanism model is supported by the experimental data, though the extrapolation to other eukaryotes (C94) is an inference based on conservation of the molecular components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "e2bcd28a-15c3-4400-8506-a372c9fa5150",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "CDK activity vs C-CDK level dose-response curves previously demonstrated in vitro operate in vivo and are dependent on cell size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95 and C96 are supported by experimental data showing size-dependent dose-response curves in vivo (Figure 2i), validating and extending prior in vitro observations to the cellular context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "575fd7a3-0384-43e2-943d-699efc859988",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "CDK activity is regulated by multiple established mechanisms including cyclin binding, inhibitory tyrosine phosphorylation by Wee1, activating dephosphorylation by Cdc25, and PP2A-mediated dephosphorylation of both CDK substrates and regulators of tyrosine phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 and C70-C72 describe established CDK regulatory mechanisms, all supported by citations to prior literature. These provide the mechanistic context for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "50f0c27b-5b51-47b4-ad7a-b40184ad7e93",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The CDK control network coordinates cell division with cell growth through an unknown mechanism that responds to cell ploidy, with cell size generally doubling as ploidy doubles, and this may be related to DNA-dependent CDK inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24 and C25 are supported by citation to prior work, but C24 explicitly acknowledges the mechanism is unknown. Claim C99 speculatively connects the DNA-dependent inhibition observed in this study to the ploidy-size relationship, but this connection requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "b866caa1-18ac-4ed5-bb04-d7789eda4875",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Much of our understanding of cyclin-CDK network regulation has been derived from in vitro studies, which have limitations when considering cellular parameters such as cell size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 are supported by citations to prior in vitro studies and represent a general limitation of the field that motivates the in vivo approach taken in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "895a7e8a-3f41-4d27-8a41-7ab5dc42067c",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Potential size control pathways will be integrated at the level of CDK activity control because CDK activity is the driver of mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is a logical inference based on CDK's established role as the master regulator of mitosis, providing the rationale for focusing on CDK activity as the integration point for size control signals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "ba8aae2e-42aa-4191-8436-d61363de51cc",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "C-CDKWT exhibits a higher amount of C-CDK at mitotic entry compared to C-CDKAF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by data in Figure 1c showing differential C-CDK levels at mitotic entry between wild-type and AF mutant cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "c743523c-29d7-467e-8a3f-9d9b91a37883",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "In the absence of tyrosine phosphorylation, C-CDKAF cells are still able to generate a threshold C-CDK level for division and prevent small cells from division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by data in Figures 1e, 1o, and Figure 1\u2014figure supplement 5e, demonstrating that alternative mechanisms can maintain some level of size control without tyrosine phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "f33465b4-a166-40bd-874a-297733c859ac",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "When the contributions of tyrosine phosphorylation and PP2A were added to the C-CDKAF PP2A\u0394 curve, they did not recapitulate the wild-type curve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is supported by the analysis in Figure 3d, providing direct evidence for synergy between tyrosine phosphorylation and PP2A pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "358636d4-b6ed-4b34-80cd-1cf4c71cd55f",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "The effect of cell size on CDK activation is much less marked in larger than normal haploids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by data in Figure 4g showing that the size-dependent effect on CDK activation diminishes in larger cells, consistent with a titration-based mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    },
+    {
+      "id": "7f1351f0-3ff5-45c4-bace-dbf6dbc20c0a",
+      "content_id": "0ca7f091-c31c-4ae8-af0f-d7f345cfd329",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "Cyclin-CDK activity is increased in cells of lower ploidy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is an inference based on the well-supported observation (C9, C77-C80) that haploid cells have higher CDK activity than diploid cells of equivalent size, representing a reasonable interpretation of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:11:18.410428Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ecb08792-f92b-4fe3-9680-21b056d7c4ef",
+      "result_id": "0ee63ff5-b52c-40ac-9fa1-5a7b45f4f326"
+    },
+    {
+      "claim_id": "4af16367-8ac0-4648-81ff-1de745b560db",
+      "result_id": "0ee63ff5-b52c-40ac-9fa1-5a7b45f4f326"
+    },
+    {
+      "claim_id": "cabb6c73-71b2-4fc7-aaae-98929cb68bd8",
+      "result_id": "0ee63ff5-b52c-40ac-9fa1-5a7b45f4f326"
+    },
+    {
+      "claim_id": "de69fd85-3545-41e5-8d3e-cafa5ac9564f",
+      "result_id": "0ee63ff5-b52c-40ac-9fa1-5a7b45f4f326"
+    },
+    {
+      "claim_id": "100db57a-b2d9-4d9a-bbd1-0cd4427134a9",
+      "result_id": "0ee63ff5-b52c-40ac-9fa1-5a7b45f4f326"
+    },
+    {
+      "claim_id": "a03998fb-ddb5-4b8f-9e49-5cf0eebeb8ab",
+      "result_id": "ac168a9d-4b5b-4656-b94c-539f72141bb3"
+    },
+    {
+      "claim_id": "e5591462-f768-460c-9de5-e3a12778d28a",
+      "result_id": "ac168a9d-4b5b-4656-b94c-539f72141bb3"
+    },
+    {
+      "claim_id": "ed521055-425b-4bf0-8a36-8e6f8dbcfd12",
+      "result_id": "ac168a9d-4b5b-4656-b94c-539f72141bb3"
+    },
+    {
+      "claim_id": "e394ed0e-68d2-4f0e-a41b-e7c6456790ca",
+      "result_id": "56edf9fe-7734-4816-82ef-c1d96c0ae9e2"
+    },
+    {
+      "claim_id": "6f73ec94-6f11-40a1-bd7a-779059943f0a",
+      "result_id": "56edf9fe-7734-4816-82ef-c1d96c0ae9e2"
+    },
+    {
+      "claim_id": "8fbfa273-b6d2-4f93-9805-d7aadb207a84",
+      "result_id": "56edf9fe-7734-4816-82ef-c1d96c0ae9e2"
+    },
+    {
+      "claim_id": "604a3799-780b-4cd3-8d79-f3d686b89290",
+      "result_id": "56edf9fe-7734-4816-82ef-c1d96c0ae9e2"
+    },
+    {
+      "claim_id": "b9a45eb7-9c57-4455-83a2-bf8a64b4ad07",
+      "result_id": "25c2643b-81bb-467f-aaf4-2f72e5f897e1"
+    },
+    {
+      "claim_id": "76f46f07-cf9b-4ffd-a9c9-f606a493ae6a",
+      "result_id": "25c2643b-81bb-467f-aaf4-2f72e5f897e1"
+    },
+    {
+      "claim_id": "9cde8aa6-0bc2-46a5-b511-108b7649c90a",
+      "result_id": "25c2643b-81bb-467f-aaf4-2f72e5f897e1"
+    },
+    {
+      "claim_id": "8092dca7-564f-4d11-9755-500526db2c30",
+      "result_id": "25c2643b-81bb-467f-aaf4-2f72e5f897e1"
+    },
+    {
+      "claim_id": "a079194c-f15f-4946-8b29-10247d80fd86",
+      "result_id": "25c2643b-81bb-467f-aaf4-2f72e5f897e1"
+    },
+    {
+      "claim_id": "d35ea566-68f5-4306-b3d9-ccc772451512",
+      "result_id": "08e22bcf-ffbf-4e80-93ec-647f52981d22"
+    },
+    {
+      "claim_id": "dcc8f3b1-37ed-4675-a623-4fe35db338c0",
+      "result_id": "08e22bcf-ffbf-4e80-93ec-647f52981d22"
+    },
+    {
+      "claim_id": "ab13d0da-3c80-4b1a-b47e-13639328c928",
+      "result_id": "08e22bcf-ffbf-4e80-93ec-647f52981d22"
+    },
+    {
+      "claim_id": "702000a0-7f7a-469e-8024-21b21e343a31",
+      "result_id": "08e22bcf-ffbf-4e80-93ec-647f52981d22"
+    },
+    {
+      "claim_id": "9e0a704a-8c9e-42d9-b13c-9af32bec2235",
+      "result_id": "08e22bcf-ffbf-4e80-93ec-647f52981d22"
+    },
+    {
+      "claim_id": "61dcf708-c1ff-469b-bd67-289d31eb484d",
+      "result_id": "74d1ef0e-36ba-4ea3-9615-fa6e5c7814ac"
+    },
+    {
+      "claim_id": "f36bf008-6fc2-4a98-a613-03d3e0322796",
+      "result_id": "74d1ef0e-36ba-4ea3-9615-fa6e5c7814ac"
+    },
+    {
+      "claim_id": "05d5cc5d-a146-4341-88e1-c83e4c8d8a9a",
+      "result_id": "74d1ef0e-36ba-4ea3-9615-fa6e5c7814ac"
+    },
+    {
+      "claim_id": "dfea8853-5822-4eb1-96a7-ef5ef211cad1",
+      "result_id": "74d1ef0e-36ba-4ea3-9615-fa6e5c7814ac"
+    },
+    {
+      "claim_id": "a92429c0-b32f-4383-bbf9-eb1b550d9004",
+      "result_id": "74d1ef0e-36ba-4ea3-9615-fa6e5c7814ac"
+    },
+    {
+      "claim_id": "d7e1bef0-08b5-413e-afb3-6aa762a9aa7a",
+      "result_id": "74d1ef0e-36ba-4ea3-9615-fa6e5c7814ac"
+    },
+    {
+      "claim_id": "7965d9ce-6068-46a3-a270-814b29cc384a",
+      "result_id": "74d1ef0e-36ba-4ea3-9615-fa6e5c7814ac"
+    },
+    {
+      "claim_id": "96025344-6912-47d7-a3f8-86497d6e5018",
+      "result_id": "326d982c-fc9e-49db-ac56-7b16cd1f3a77"
+    },
+    {
+      "claim_id": "2d1f3e59-6f6d-4e5b-8c20-330285c02b5e",
+      "result_id": "326d982c-fc9e-49db-ac56-7b16cd1f3a77"
+    },
+    {
+      "claim_id": "f0c4da76-7582-403e-a592-33492a94de69",
+      "result_id": "326d982c-fc9e-49db-ac56-7b16cd1f3a77"
+    },
+    {
+      "claim_id": "f44d1c9c-d8ff-41ec-87bb-e23df2aa778e",
+      "result_id": "326d982c-fc9e-49db-ac56-7b16cd1f3a77"
+    },
+    {
+      "claim_id": "05ebf001-a6c3-4f57-863c-471e73e0b606",
+      "result_id": "326d982c-fc9e-49db-ac56-7b16cd1f3a77"
+    },
+    {
+      "claim_id": "d7edb3c4-5144-47ce-999e-02040b09b53a",
+      "result_id": "326d982c-fc9e-49db-ac56-7b16cd1f3a77"
+    },
+    {
+      "claim_id": "4f569fd9-22a4-44d8-8dc7-332918dff92f",
+      "result_id": "326d982c-fc9e-49db-ac56-7b16cd1f3a77"
+    },
+    {
+      "claim_id": "7c1d0931-d4d2-41d7-bfb5-8e8d32b07e69",
+      "result_id": "326d982c-fc9e-49db-ac56-7b16cd1f3a77"
+    },
+    {
+      "claim_id": "75124a9c-c14a-42a0-817e-488e78bfcf41",
+      "result_id": "4c9aafe9-98e5-438a-b578-adc59798badb"
+    },
+    {
+      "claim_id": "e3df9eba-201e-4b6e-962d-9631bab0f505",
+      "result_id": "4c9aafe9-98e5-438a-b578-adc59798badb"
+    },
+    {
+      "claim_id": "f47281b0-98b8-4716-9378-6371f388af13",
+      "result_id": "4c9aafe9-98e5-438a-b578-adc59798badb"
+    },
+    {
+      "claim_id": "97502d98-0d05-4a56-a4f2-cd0415fc2b2d",
+      "result_id": "4c9aafe9-98e5-438a-b578-adc59798badb"
+    },
+    {
+      "claim_id": "c9f64de6-f10e-48ae-9c1e-7c71850f41f3",
+      "result_id": "d178dec9-17fc-4bae-a9ad-6a0b04ab52d6"
+    },
+    {
+      "claim_id": "f3c7dfec-688d-401e-b5f4-f3f75bea1524",
+      "result_id": "d178dec9-17fc-4bae-a9ad-6a0b04ab52d6"
+    },
+    {
+      "claim_id": "b85936d7-6e80-4ee9-a760-1a2d15d6d42f",
+      "result_id": "d178dec9-17fc-4bae-a9ad-6a0b04ab52d6"
+    },
+    {
+      "claim_id": "4224eea5-c5cd-4c82-a830-acfbe409e023",
+      "result_id": "d178dec9-17fc-4bae-a9ad-6a0b04ab52d6"
+    },
+    {
+      "claim_id": "b06022ac-7fea-4b20-b274-6f7530674dbf",
+      "result_id": "d178dec9-17fc-4bae-a9ad-6a0b04ab52d6"
+    },
+    {
+      "claim_id": "3f09dce9-1f41-48fe-9d54-50c0a158fcbe",
+      "result_id": "d178dec9-17fc-4bae-a9ad-6a0b04ab52d6"
+    },
+    {
+      "claim_id": "2f78347a-50b7-4c53-84f2-d4ef687bb279",
+      "result_id": "86f8d56c-eadf-4ab0-ba6f-a7706b73e6ed"
+    },
+    {
+      "claim_id": "f2751125-f771-4659-88a6-1d58f1d99c0f",
+      "result_id": "86f8d56c-eadf-4ab0-ba6f-a7706b73e6ed"
+    },
+    {
+      "claim_id": "44d53a05-05d8-4a3a-8f5b-f493f46c6631",
+      "result_id": "86f8d56c-eadf-4ab0-ba6f-a7706b73e6ed"
+    },
+    {
+      "claim_id": "1ffdb113-6217-4684-a165-bae6d04240fd",
+      "result_id": "86f8d56c-eadf-4ab0-ba6f-a7706b73e6ed"
+    },
+    {
+      "claim_id": "b0f98762-71a4-4109-9e02-e8896166aeef",
+      "result_id": "dd4f46bc-2245-400c-b964-a5bf5c6956c0"
+    },
+    {
+      "claim_id": "4550fc42-3d2d-407a-b8fa-e031bbeb2f13",
+      "result_id": "dd4f46bc-2245-400c-b964-a5bf5c6956c0"
+    },
+    {
+      "claim_id": "08131961-4c96-4d05-a5c8-6b4fcabaf3aa",
+      "result_id": "9834bf2f-0633-440d-ae4a-19b543905803"
+    },
+    {
+      "claim_id": "c75f9bb8-ef54-413f-9aa1-fdaab4b0bc17",
+      "result_id": "9834bf2f-0633-440d-ae4a-19b543905803"
+    },
+    {
+      "claim_id": "6e0dd11e-b933-4b1c-a9b1-cd8141ad44aa",
+      "result_id": "9834bf2f-0633-440d-ae4a-19b543905803"
+    },
+    {
+      "claim_id": "6ec208f1-efc1-4e1d-bd86-cebbeb71473e",
+      "result_id": "09fc6f06-e815-4a21-956c-b901153746c6"
+    },
+    {
+      "claim_id": "7ade3b18-038e-4aff-8c55-c909bee2b975",
+      "result_id": "09fc6f06-e815-4a21-956c-b901153746c6"
+    },
+    {
+      "claim_id": "256f3f02-41af-4dde-a9e8-9b43678c52a6",
+      "result_id": "09fc6f06-e815-4a21-956c-b901153746c6"
+    },
+    {
+      "claim_id": "498e7ef2-eb04-4d5d-ae51-7ceaed778397",
+      "result_id": "09fc6f06-e815-4a21-956c-b901153746c6"
+    },
+    {
+      "claim_id": "08219cc6-9c1e-4f01-8bf4-97ce51c34576",
+      "result_id": "09fc6f06-e815-4a21-956c-b901153746c6"
+    },
+    {
+      "claim_id": "0ae4c4b0-a9d5-4139-921a-876016e33b3e",
+      "result_id": "056614f6-520a-4352-96f4-0f4921458caa"
+    },
+    {
+      "claim_id": "9dab25e8-3bdd-47ec-9dbd-f52e8c210187",
+      "result_id": "056614f6-520a-4352-96f4-0f4921458caa"
+    },
+    {
+      "claim_id": "9274bac9-2d4b-454b-8f20-92ee6d0528af",
+      "result_id": "056614f6-520a-4352-96f4-0f4921458caa"
+    },
+    {
+      "claim_id": "f051b868-f74a-4a2c-ad56-1693f4329f5f",
+      "result_id": "f8d99402-c52c-40b6-baca-f5b1dbc62873"
+    },
+    {
+      "claim_id": "f58a61c2-233c-4ac4-b518-cce84a69257c",
+      "result_id": "f8d99402-c52c-40b6-baca-f5b1dbc62873"
+    },
+    {
+      "claim_id": "1bcb91fd-4b6b-40b4-aa71-b6d7aabe852c",
+      "result_id": "f8d99402-c52c-40b6-baca-f5b1dbc62873"
+    },
+    {
+      "claim_id": "759705b1-c2a2-4c9c-a585-69c05529bc52",
+      "result_id": "8c31a389-f10f-4447-930e-a30cc26865ef"
+    },
+    {
+      "claim_id": "7b80cadd-c6b0-4773-818a-a6caf570edd5",
+      "result_id": "8c31a389-f10f-4447-930e-a30cc26865ef"
+    },
+    {
+      "claim_id": "a88f2c8a-54bf-4195-837c-9bfdf40fd0ed",
+      "result_id": "8c31a389-f10f-4447-930e-a30cc26865ef"
+    },
+    {
+      "claim_id": "fa133acd-2c16-47c8-a4f5-cd3b31c447e5",
+      "result_id": "8c31a389-f10f-4447-930e-a30cc26865ef"
+    },
+    {
+      "claim_id": "e7b8c7e0-2615-47a8-b3e4-b4d2561a7ab3",
+      "result_id": "8c31a389-f10f-4447-930e-a30cc26865ef"
+    },
+    {
+      "claim_id": "3033c5c5-b234-429e-bc0f-98e3ffad9ce4",
+      "result_id": "19617db7-7160-4ea0-9e02-c6a7b51a85c2"
+    },
+    {
+      "claim_id": "37946967-3713-4554-9db4-8fb984ecf2a7",
+      "result_id": "19617db7-7160-4ea0-9e02-c6a7b51a85c2"
+    },
+    {
+      "claim_id": "b9beadd5-ee49-41f5-bb23-52d0a7de4ede",
+      "result_id": "19617db7-7160-4ea0-9e02-c6a7b51a85c2"
+    },
+    {
+      "claim_id": "31914b5f-1c23-46be-8fa1-ad78ec49e085",
+      "result_id": "19617db7-7160-4ea0-9e02-c6a7b51a85c2"
+    },
+    {
+      "claim_id": "11c537b7-3897-4a96-89e2-ba9c288ef902",
+      "result_id": "a2c417a8-ee3f-4a09-92ea-67ae1d568a26"
+    },
+    {
+      "claim_id": "4eb26252-27c3-42cf-82da-746cc6a50e18",
+      "result_id": "a2c417a8-ee3f-4a09-92ea-67ae1d568a26"
+    },
+    {
+      "claim_id": "b1ea7369-427c-47e7-9b69-7de4622e5406",
+      "result_id": "a2c417a8-ee3f-4a09-92ea-67ae1d568a26"
+    },
+    {
+      "claim_id": "14554bb7-8e7c-48d1-8d94-0c38f0b39c40",
+      "result_id": "a2c417a8-ee3f-4a09-92ea-67ae1d568a26"
+    },
+    {
+      "claim_id": "78373372-11a1-4513-9d49-8b47040651b4",
+      "result_id": "df0f6565-27c5-427c-b3f2-b234c4a3923a"
+    },
+    {
+      "claim_id": "e73c7a2d-945b-4516-a907-ac9a42add271",
+      "result_id": "df0f6565-27c5-427c-b3f2-b234c4a3923a"
+    },
+    {
+      "claim_id": "ce8bd9d1-1371-48e1-ac9a-dc09f33fc00c",
+      "result_id": "df0f6565-27c5-427c-b3f2-b234c4a3923a"
+    },
+    {
+      "claim_id": "ed5f91f7-b114-4f8e-8707-a688212f9f56",
+      "result_id": "e2bcd28a-15c3-4400-8506-a372c9fa5150"
+    },
+    {
+      "claim_id": "76596424-7d53-48c2-a7c4-f0576a104276",
+      "result_id": "e2bcd28a-15c3-4400-8506-a372c9fa5150"
+    },
+    {
+      "claim_id": "5e38f9d8-df5c-4a34-b295-84f057330e49",
+      "result_id": "575fd7a3-0384-43e2-943d-699efc859988"
+    },
+    {
+      "claim_id": "1b00dbb4-dee8-40ad-afe4-5b7be8abe324",
+      "result_id": "575fd7a3-0384-43e2-943d-699efc859988"
+    },
+    {
+      "claim_id": "5d1a7a6b-4d81-432a-917a-4d4154c2c3bd",
+      "result_id": "575fd7a3-0384-43e2-943d-699efc859988"
+    },
+    {
+      "claim_id": "10e74157-2c41-4e7e-95be-055280da1ee4",
+      "result_id": "575fd7a3-0384-43e2-943d-699efc859988"
+    },
+    {
+      "claim_id": "f1bd047a-1724-4aa3-9f35-1842b4c474b8",
+      "result_id": "575fd7a3-0384-43e2-943d-699efc859988"
+    },
+    {
+      "claim_id": "05f36a2d-96cb-4cef-83c4-a565ce2ab30c",
+      "result_id": "575fd7a3-0384-43e2-943d-699efc859988"
+    },
+    {
+      "claim_id": "54a98d76-4a11-4414-abdb-29bb6cf43636",
+      "result_id": "575fd7a3-0384-43e2-943d-699efc859988"
+    },
+    {
+      "claim_id": "64a465f0-636c-4691-98ec-2e942e357b3e",
+      "result_id": "575fd7a3-0384-43e2-943d-699efc859988"
+    },
+    {
+      "claim_id": "418a62b7-972d-43a1-89a5-7b91a67a3e5b",
+      "result_id": "50f0c27b-5b51-47b4-ad7a-b40184ad7e93"
+    },
+    {
+      "claim_id": "addf2c7d-0988-432e-b61e-f193b246ac64",
+      "result_id": "50f0c27b-5b51-47b4-ad7a-b40184ad7e93"
+    },
+    {
+      "claim_id": "99970e38-a6ab-4df5-b3a1-ab5c2a0e2fa0",
+      "result_id": "50f0c27b-5b51-47b4-ad7a-b40184ad7e93"
+    },
+    {
+      "claim_id": "d10d2dda-c552-43c0-8197-e58f59fc0361",
+      "result_id": "b866caa1-18ac-4ed5-bb04-d7789eda4875"
+    },
+    {
+      "claim_id": "ef1b1009-8ec7-4980-8b72-2d7b828194ea",
+      "result_id": "b866caa1-18ac-4ed5-bb04-d7789eda4875"
+    },
+    {
+      "claim_id": "4cb81c60-eb26-4ef2-9855-cfc231eb327d",
+      "result_id": "895a7e8a-3f41-4d27-8a41-7ab5dc42067c"
+    },
+    {
+      "claim_id": "496c8d15-8aa8-4d89-b4dd-2c556a7f9bd6",
+      "result_id": "ba8aae2e-42aa-4191-8436-d61363de51cc"
+    },
+    {
+      "claim_id": "236ce5e9-dd11-4721-a2d8-57fc9fd09e24",
+      "result_id": "c743523c-29d7-467e-8a3f-9d9b91a37883"
+    },
+    {
+      "claim_id": "edba8499-9dd0-4c45-8e36-5236731d623c",
+      "result_id": "f33465b4-a166-40bd-874a-297733c859ac"
+    },
+    {
+      "claim_id": "29536e49-0d91-4c08-ba5c-f9a180683cc6",
+      "result_id": "358636d4-b6ed-4b34-80cd-1cf4c71cd55f"
+    },
+    {
+      "claim_id": "c7920e90-79eb-4f5a-b654-f8fdade2efc5",
+      "result_id": "7f1351f0-3ff5-45c4-bace-dbf6dbc20c0a"
+    }
+  ],
+  "comparisons": []
+}

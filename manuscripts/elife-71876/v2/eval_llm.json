@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C40",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "A novel phase-change material (PCM)-filled resistive heater microgripper was developed that uses Joule heating to electronically control gripping and releasing of probes. The gripper consists of a helical nichrome wire coil (~45 turns, 125 \u03a9 resistance) embedded in a PCB via (~75 \u03bcm inner diameter) filled with docosane PCM. When current flows through the coil, the PCM melts and releases the probe; when off, the solid PCM grips the probe. The microscopic dimensions and PCM properties allow the gripper to hold probes of arbitrary shapes through capillary action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C32-C36, C38, C40, C142-C144 collectively describe the microgripper design and are well-supported by detailed fabrication methods, material specifications, physical measurements shown in Figure 1C-D, and demonstration with multiple probe types (tetrodes and glass pipettes in Figures 5-6). The physical principles (Joule heating, capillary action) are established, and the design specifications are precisely documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Arrays of microgrippers were arranged into an inchworm motor configuration using two parallel PCBs joined by a single piezoelectric actuator. The motor operates through three distinct stepping sequences (downward, upward, and no-step) controlled by timing the activation of top and bottom grippers relative to piezo extension/contraction. This design enables independent translation of multiple probes using a single actuator with unlimited travel range through repeated stepping cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C42-C53 describe the inchworm motor design and operation, supported by detailed schematics in Figures 1E-F and 2A-C, demonstration videos (Videos 1-2), and experimental validation in Figures 3-4. The stepping sequences are clearly documented with timing diagrams, and the principle of independent multi-probe control is demonstrated with up to 16 probes in Figure 3G and Videos 2, 4-5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C113",
+      "C145",
+      "C147"
+    ],
+    "result": "A 16-channel microdrive with hexagonally packed microgrippers (300 \u03bcm spacing) was fabricated and thermally characterized. COMSOL simulations and experimental testing determined optimal operating parameters: 45 mA current (~250 mW), 4-12.5 ms heating pulses, achieving step rates of 0.5 Hz continuously (300 \u03bcm/min) or 2.5 Hz briefly (1.5 mm/min). Thermal management through short heat pulses, PCB copper layers, and thermal vias enabled sufficient microgripper independence while maintaining compact design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C64, C113, C145, C147 describe thermal characterization and are supported by detailed specifications, simulation methods, and measured performance data. The thermal design considerations are validated through both modeling (COMSOL) and experimental testing. The specific operating parameters (current, power, timing, step rates) are quantitatively documented, and the thermal management strategies are clearly described in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The microdrive achieved reliable stepwise motion with adjustable step sizes from ~600 nm minimum to 9.5 \u03bcm maximum by varying piezo voltage. Positioning accuracy was 7 \u03bcm over 1 mm travel and 58 \u03bcm over 4 mm travel. Repeatability was 38.3 \u03bcm in air but improved to 4.7 \u03bcm in agar brain phantom, likely due to reduced off-axis probe motion when the tip is constrained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 describe mechanical characterization supported by quantitative measurements shown in Figure 4B-D. The step size control, accuracy, and repeatability measurements are clearly documented with specific values and sample sizes. The improvement in agar is statistically demonstrated, though the explanation (C73) remains speculative. The optical measurement methods are appropriate for the reported resolution limits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Cross-talk between adjacent probes (300 \u03bcm spacing) was characterized. In air, a 9.5 \u03bcm step of one probe caused momentary deflection of a stationary neighbor (3.6\u00b12.1 \u03bcm on-axis, 23.8\u00b14.4 \u03bcm off-axis, n=5). In agar, deflections were significantly reduced (1.1\u00b10.2 \u03bcm on-axis, p=0.03; 0.85\u00b10.2 \u03bcm off-axis, p<0.0001). Long-term drift after 90 s continuous stepping (500 \u03bcm total) was <2 \u03bcm in both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 describe cross-talk measurements supported by quantitative data in Figure 4F-G with appropriate statistical analysis (Student's t-test). The measurements include proper controls (air vs. agar), adequate sample sizes (n=5), and statistical significance testing. The proposed mechanism (C75) is speculative but reasonable. The drift measurements provide important validation of long-term stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The maximum holding force of the microgripper on a tetrode was measured to be 58.0\u00b12.4 g (n=5 tetrodes), equivalent to 0.57 N, using a calibrated load cell setup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by direct measurements shown in Figure 4H with appropriate sample size (n=5) and clear methodology description. The measurement setup using a calibrated load cell is appropriate for this characterization. The holding force is substantially greater than forces expected during normal operation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "An integrated 16-tetrode microdrive system was assembled including electrode interface and control board (EICB) with 64 recording channels, amplifier connectors, and mechanical housing. Independent translation of 16 tetrodes and 8 glass micropipettes using a single piezo actuator was demonstrated, with only heater coil size modification required for different probe types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 describe system integration supported by detailed schematics (Figure 5A), photographs (Figure 5B), and demonstration videos (Videos 4-5). The independent translation capability is clearly shown in Figure 5C-E. The versatility claim is validated by successful operation with both tetrodes and glass pipettes with minimal modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Acute in vivo recordings were performed in anesthetized rats using 4 and 16 tetrodes. Electrodes were remotely advanced in 9.5 \u03bcm steps (~2.5 mm total, ~4200 step sequences) to target CA1 hippocampus while monitoring 64 channels. The device produced only ~10 ms electrical interference per step with no other observed interference. Sequential tuning of all 16 tetrodes to CA1 was achieved without compromising previously placed electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 describe acute recordings supported by experimental data in Figure 6 and Video 6. The sequential tuning is clearly demonstrated in Figure 6C showing progressive optimization of all 16 tetrodes. The electrical artifact characterization (C85) is documented in Appendix 1-figure 6. The claim of no compromise to previously tuned electrodes (C87) is visually evident in the voltage traces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C158"
+    ],
+    "result": "Chronic recordings were performed in an awake, freely behaving rat for 6 weeks using a 4-tetrode implant (4.5 g weight, 25\u00d715\u00d731 mm dimensions). Tetrode positions were remotely adjusted without animal handling during recording sessions. The recordings exhibited expected sharp-wave ripples and spiking activity with stable spike amplitudes and waveforms between adjustments, enabling isolation of 11 single units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95, C158 describe chronic recordings supported by experimental data in Figure 7 and Appendix 1-figure 7. The device specifications are directly measured (C89). The recording quality is demonstrated through sharp-wave ripples (Figure 7C), spiking activity (Figure 7D), and single-unit isolation (Figure 7E-F). The 6-week duration and remote adjustment capability are clearly documented. The spike sorting quality metrics are described in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C28",
+      "C98",
+      "C100",
+      "C141"
+    ],
+    "result": "The multi-probe single-actuator (MPSA) design enables micrometer-precision independent positioning of multiple arbitrarily shaped probes using a single piezo actuator, significantly reducing microdrive size, weight, and complexity compared to traditional designs where each probe requires its own actuator. The MPSA concept makes the microdrive inherently more scalable since adding channels causes negligible weight/size increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C28, C98, C100, C141 describe the core MPSA concept and its advantages. These are well-supported by the demonstrated capabilities (16 independent probes with single actuator), measured specifications (4.5 g for 4-probe chronic device with minimal additional weight for 16 probes), and successful in vivo validation. The scalability advantage is logically sound and supported by weight measurements (C89-C90) and design principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C30"
+    ],
+    "result": "Accurate placement of multiple electrodes into the rat hippocampus CA1 region in vivo was demonstrated in both acute (16 tetrodes) and chronic (4 tetrodes, 6 weeks) preparations with remote-controlled, independent positioning at micrometer precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C30 summarize the main in vivo demonstrations, which are directly supported by experimental data in Figures 6-7. The accuracy is validated by successful targeting of CA1 neurons with characteristic activity patterns, the precision is demonstrated by the measured step sizes (~600 nm to 9.5 \u03bcm), and the independence is shown by sequential tuning without cross-interference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C40",
+      "C41",
+      "C104",
+      "C106"
+    ],
+    "result": "The versatility of the microgripper for different probe types was demonstrated by independently adjusting glass micropipettes in addition to tetrodes. The PCM-based gripping mechanism accommodates probes of any cross-sectional shape as the liquid PCM conforms to the probe before solidifying, enabling use with rigid probes like micropipettes that cannot be used with traditional conical microdrive geometries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C40-C41, C104, C106 describe probe versatility supported by successful demonstration with both tetrodes and glass micropipettes (Figure 5D-E, Video 5). The physical principle of PCM conforming to probe shape is sound. However, C41 includes speculative applications (optical fibers, silicon probes, etc.) that are not experimentally validated, though the demonstrated versatility with two different probe types provides reasonable support for the general principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The PCM-based gripping mechanism is gentle, with no large or sudden gripper movements that could damage electrodes. During stepping, only one gripper holds the electrode at a time, so piezo extension/contraction never strains the electrode itself. No mechanical or electrical damage to recording electrodes was observed throughout the experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C107-C112 describe the gentle gripping mechanism. The design principle is clearly explained and illustrated in Figure 2, showing that only one gripper holds at a time. The claim of no observed damage (C108) is supported by successful recordings throughout acute and chronic experiments with maintained electrode function. The mechanism is logically sound based on the phase-change principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Brain heating from device operation is negligible because heating pulses are extremely short (~10 ms) compared to step duration (~1 s), so heaters are on <1% of stepping time. Heat dissipates rapidly in the PCB and does not conduct to brain through the high thermal resistance of microscopic electrodes. The PCM (docosane, ~42\u00b0C melting point) was chosen to avoid temperatures significantly above brain temperature. During recording, all heaters are off and generate no heat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 address thermal safety concerns through logical analysis of heating duty cycle, thermal resistance, and material selection. The timing parameters are documented (Figure 2, characterization data), the thermal design is described in methods, and the PCM choice is justified (C144). While direct brain temperature measurements are not provided, the analysis is sound and the successful chronic recordings without apparent thermal damage provide indirect validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Electrical artifacts during electrode motion are minimal (~10 ms interference per step) and do not affect the ability to perform effective neural recordings. High-fidelity recordings can be taken after each ~10 \u03bcm step, and it was never necessary to disconnect or power down the motion elements to improve data quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 address electrical interference concerns. The artifact duration is quantified (C85, Appendix 1-figure 6), and successful recordings during device operation are demonstrated in Figures 6-7. The claim that recordings can be taken with high fidelity after small steps is validated by the sequential tuning results. The operational experience (C127) is documented through the experimental procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The travel range of the MPSA microdrive is conceptually only limited by probe length due to the unlimited stepping capability of the inchworm motor design. This could enable simultaneous targeting of distant brain regions (e.g., cortical and thalamic tissue) in large rodents or primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is a logical consequence of the inchworm motor principle and is supported by the demonstrated unlimited stepping capability. However, C97 about applications in large rodents or primates is speculative and not experimentally validated. The manuscript demonstrates ~2.5 mm travel in rats, but scaling to much longer distances or larger animals would require additional validation of mechanical stability, tissue damage, and other factors not addressed in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Thermal phenomena can be readily modeled with heat transfer simulations, and more sophisticated mechanical and control schemes could yield higher probe densities and movement speeds. Potential improvements include integrating copper heat sinks between microgrippers, optimizing heating timings based on thermal coupling, and selecting or designing PCMs with improved properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C118 discuss potential improvements. C114 is supported by the demonstrated use of COMSOL simulations. However, C115-C118 are speculative about future improvements without experimental validation. While the proposed methods are reasonable based on thermal engineering principles, they represent future work rather than demonstrated capabilities. The current work identifies speed as a limitation (C116) but does not validate the proposed solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The MPSA microdrive design is particularly attractive for rodent electrophysiology where miniaturization is critical. Potential future developments include positional feedback systems, MRI-compatible versions, wireless control, autonomous probe positioning with closed-loop spike detection, and applications beyond neural electrophysiology to other probe types and scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C130 is supported by the demonstrated miniaturization and successful rodent experiments. However, C131-C140 are entirely speculative about future developments and applications without experimental validation. While these are reasonable directions based on the demonstrated capabilities, they represent proposed future work rather than current results. The manuscript appropriately presents these as possibilities rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C25"
+    ],
+    "result": "Large-scale brain measurement using individual probe placement has been limited by inability to miniaturize positioning systems. Existing microdrives have features that limit scalability: manual operation with one lead-screw positioner per probe, or motorized designs with one motor per probe, making them complex, bulky, heavy, and prohibitively expensive for large probe numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C23, C25 describe limitations of existing technologies that motivate the current work. These are supported by extensive citations to prior microdrive literature (C20, C24) and represent established knowledge in the field. The characterization of traditional microdrive limitations is accurate based on the cited literature and provides appropriate context for the innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Building the core MPSA motor and control software is in principle possible for a typical neuroscience laboratory. Construction takes about 1 week of labor for a trained person in a research setting. Once constructed, the motor is reusable with preparation time only required for reloading electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 describe practical aspects of device construction based on the authors' experience. The time estimate (C149) is a direct observation from their fabrication process. The assessment of accessibility (C148) is reasonable given the use of standard PCB technology and commercially available components described in methods. The reusability claim (C150) is supported by the design and demonstrated in the chronic experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C7"
+    ],
+    "result": "The multi-probe single-actuator design allows for potential automation of microdrives and should enable scaling up of many types of multi-probe applications in neuroscience and other fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5 and C7 are forward-looking statements about potential applications. While the electronic control capability demonstrated in the manuscript provides a foundation for automation, actual automation is not implemented or validated. The scalability potential is supported by the design principles and demonstrated 16-probe operation, but applications beyond the demonstrated use cases remain speculative. These represent reasonable extrapolations but not demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1238 @@
+{
+  "submission": {
+    "id": "87f90800-fa23-44bd-9584-f6e77ccbfbae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:45:43.782792Z",
+    "updated_at": "2025-12-03T02:45:43.782792Z"
+  },
+  "content": [
+    {
+      "id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "submission_id": "87f90800-fa23-44bd-9584-f6e77ccbfbae",
+      "content_type": "manuscript",
+      "content_text": "# Design issues and solutions for stop-signal data from the Adolescent Brain Cognitive Development (ABCD) study\n\n## Authors\n\n- Patrick G Bissett<sup>1</sup> ([ORCID: 0000-0003-0854-9404](https://orcid.org/0000-0003-0854-9404)) \u2020\n- McKenzie P Hagen<sup>1</sup>\n- Henry M Jones<sup>1</sup>\n- Russell A Poldrack<sup>1</sup>\n\n### Affiliations\n\n1. Department of Psychology, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Adolescent Brain Cognitive Development (ABCD) study is an unprecedented longitudinal neuroimaging sample that tracks the brain development of over 9\u201310 year olds through adolescence. At the core of this study are the three tasks that are completed repeatedly within the MRI scanner, one of which is the stop-signal task. In analyzing the available stopping experimental code and data, we identified a set of design issues that we believe significantly compromise its value. These issues include but are not limited to variable stimulus durations that violate basic assumptions of dominant stopping models, trials in which stimuli are incorrectly not presented, and faulty stop-signal delays. We present eight issues, show their effect on the existing ABCD data, suggest prospective solutions including task changes for future data collection and preliminary computational models, and suggest retrospective solutions for data users who wish to make the most of the existing data.\n\n## Introduction\n\nThe Adolescent Brain Cognitive Development\u00a0(ABCD) is the largest and most comprehensive long-term study of brain development and child health in the United States (Casey et al., 2018). The study includes 11,878 youth and their families and aims to understand the environmental, social, genetic, and other biological factors that affect brain and cognitive development. This study was made possible by the Collaborative Research on Addiction at NIH (CRAN) including the National Institute of Drug Abuse, National Institute on Alcohol Abuse and Alcoholism, and National Cancer Institute in partnership with the Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institute of Mental Health, National Institute of Minority Health and Health Disparities, National Institute of Neurological Disorders and Stroke, and the NIH Office of Behavioral and Social Sciences Research. CRAN granted $590 million in support to 21 research institutions across the United States to complete this study.\n\nAt the core of the ABCD study are the structural and functional MRI brain scans that occur biennially for each participant. The initial baseline scans have all been completed. The study organizers chose to include three cognitive tasks to be presented during fMRI acquisition: the monetary incentive delay task (Knutson et al., 2000), the emotional N-back task (Barch et al., 2013), and the stop-signal task (Logan and Cowan, 1984). In this manuscript, we focus solely on the stop-signal task.\n\nWe analyzed behavioral data from the baseline scan of 8,464 of the 11,878 participants. This subset resulted from the following exclusions. First, we attempted to download 8,811 participants from the \u2018FastTrack Recommended Active Series\u2019 from the NIMH Data Archive, which has gone through some quality assurance for the associated imaging files by the ABCD study organizers. Of these, 8,808 files were successfully downloaded. Of these, 8,734 files contained stop-signal\u00a0task data that were encoded and formatted in text or csv format with header columns and each row representing one task trial. Finally, 270 subjects were removed who did not have two complete runs with 180 trials each, leaving us with a total of 8,464 complete datasets. We did not apply any other performance-based exclusion, including the ABCD study\u2019s performance flag (Garavan et al., 2020), as this would have obscured our ability to evaluate potential issues (e.g., it would have masked Issue 3, see below).\n\nThe stop-signal task is a primary paradigm used to understand response inhibition. It involves making a choice response to a go stimulus but attempting to stop that response when an infrequent stop signal occurs after a stop-signal delay (SSD). The dominant theoretical framework for understanding and interpreting stopping tasks is the independent race model (Logan et al., 2014; Logan and Cowan, 1984), which assumes that a go process begins when a go stimulus occurs and races independently against a stop process that begins when the stop stimulus occurs. The go process finishing first results in a stop failure (an overt response), whereas the stop process finishing first results in stop success (no response).\n\nThe ABCD study is laudable for many reasons, not least of which is the dedication to making their data and materials openly available. This includes but is not limited to experimental code, trial-by-trial behavioral performance in each task, functional neuroimaging data, and structural neuroimaging data. Our research group aimed to use these data to understand the behavioral and neural underpinnings of response inhibition. In doing so, we first evaluated the experimental code and behavioral performance in the stop-signal task.\n\nDuring our analyses, we found a nexus of issues with the ABCD experimental code and behavioral data. The issues are as follows: different go stimulus durations across trials, the go stimulus is sometimes not presented, faulty SSD, different stop-signal durations for different SSDs, non-uniform conditional trial probabilities, trial accuracy incorrectly coded, SSD values start too short, and low stop trial probability. We judge these issues to vary from fundamental (e.g., different go stimulus durations across trials) to more minor (e.g., low stop trial probability). Indeed, some of the minor issues may reflect intentional design choices (e.g., low stop trial probability), but if so, we believe that those choices are suboptimal (for reasons that we lay out below). Additionally, we believe that the most fundamental issues are incontrovertible errors, and in the aggregate, we believe these eight issues significantly compromise the utility of the stopping data in this study for understanding the construct of response inhibition.\n\nWe structure this paper as a series of issues. We order the issues roughly from what we judge to be most to least fundamental. For each, we outline the issue, demonstrate its effects in the ABCD data, suggest prospective solutions to the study organizers for future data collections, and suggest retrospective solutions to data users who want to make the most of the existing data. Also, we propose three preliminary computational frameworks that may be able to capture the violations that result from the first design issue.\n\nSince the original submission of this manuscript, a rebuttal preprint manuscript has been submitted from a group of authors involved in the design of the ABCD stop-signal task (Garavan et al., 2020). In short, we stand behind the conclusions of the present manuscript and found no evidence or argumentation within their rebuttal that meaningfully challenges any of our manuscript\u2019s conclusions; importantly, their manuscript did not dispute the presence of any of the specific issues raised below. We would like to thank Garavan et al., 2020 for pointing out an error in our code, which we corrected on July 17, 2020 (https://www.biorxiv.org/content/10.1101/2020.05.08.084707v4).\n\nBefore we lay out the first issue, we will first break down the trial structure of the ABCD stop-signal task (see Figure 1). 5/6 of all trials are go trials, in which a subject sees a go stimulus (a rightward- or leftward-pointing arrow) and makes one of two speeded responses based upon the direction of the arrow. The go stimulus is removed from the screen after 1000 ms or when a response occurs, whichever comes first. On 1/6 of all trials, this go stimulus is replaced with the stop signal (a vertical arrow) after the go stimulus has been on the screen for the duration of the SSD or when a response occurs; the stop signal is then presented for 300 ms (but see Issue 4). Therefore, on go trials, the go stimulus is on the screen for 1000 ms or the response time (RT), whichever comes first, whereas on stop trials, the go stimulus is on the screen for SSD or RT, whichever comes first, and is never concurrently on the screen with the stop stimulus.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig1-v2.jpg)\n\n## Results\n\n### Issue 1: different go stimulus durations across trials\n\nThis brings us to our first and most fundamental issue: the go stimulus is presented for a much longer duration on go trials\u00a0than on stop trials. Mean go stimulus duration on go trials was 569 ms (standard deviation [SD]\u00a0=\u00a0105 ms), and mean go stimulus duration on stop trials was 228 ms (SD\u00a0=\u00a0118 ms), so on average, subjects had 341 ms longer on go trials to apprehend the go stimulus (see Figure 2 for full distributions).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig2-v2.jpg)\n\nThis is important because the current models for understanding stopping performance require that the go process is the same on go and stop trials. The main dependent variable in the stop-signal task is stop-signal reaction time (SSRT), which quantifies the latency of inhibition, but the estimation of SSRT requires application of a model because there is no overt response associated with a successful stop and thus stopping latency cannot be directly measured. The independent race model assumes context independence, which means that the go process and its finishing time are not affected by the presentation of the stop signal. It also assumes stochastic independence, which means that the finishing times of the go and the stop processes are independent on any given trial. In this manuscript, we focus on the assumption of context independence. Context independence is essential for calculating SSRT because context independence allows one to assume that the full distribution of responses on go trials can stand in for the (unobservable) full distribution of go processes on stop trials. Additionally, violations of context independence contaminate other major dependent variables in the stop-signal task, including the inhibition function and stop-failure RT (Bissett et al., 2021; Logan and Cowan, 1984). Paradoxically, some existing models have suggested that an array of interacting excitatory and inhibitory neurons give rise to behavior that appears independent, perhaps because the interaction is brief but very strong (Boucher et al., 2007). However, here we exclusively focus on behavioral evidence of independence or lack thereof.\n\nIn both simple (e.g., Froeberg, 1907) and choice (e.g., Kaswan and Young, 1965) reaction times, there is evidence that shorter duration stimuli yield slower responses. This effect of stimulus duration on response speed occurs even for stimuli presented for hundreds of milliseconds (Kahneman and Norman, 1964; Kaswan and Young, 1965). This relates to Bloch\u2019s law (Bloch, 1885), which states that intensity and duration can be traded off for shorter duration stimuli, though this trade-off only occurs over the first 100 ms. For example, reducing stimulus duration by half is equivalent to reducing intensity by half. This also relates to Pieron\u2019s law, which states that RTs\u00a0decrease with stimulus intensity (Pieron, 1914). Therefore, having shorter duration go stimuli on stop trials\u00a0than go trials is akin to having a lower intensity go stimulus on stop than go trials, which slows RT. Taken together, a long history of work suggests that (all else being equal) shorter duration visual stimuli tend to yield slower responses.\n\nIn the ABCD stopping experiment, go stimuli are presented for much shorter durations on stop trials\u00a0than on go trials, so the work described in the preceding paragraph suggests that the go process will be faster on go trials than on stop trials. However, in order to extract SSRT, one must make the assumption that the go process is the same on go and stop trials (i.e., context independence). Therefore, we expect that context independence is violated in the ABCD dataset, which would contaminate major dependent variables in the stop-signal task including SSRT estimates. Additionally, because go stimuli on stop trials are presented for a duration equal to SSD, the degree to which violations of context independence occur are likely to differ across SSDs. When SSD is short (e.g., 50 ms), context independence should be more severely violated because the difference in go stimulus duration between stop (e.g., 50 ms) and go (up to 1000 ms) trials is so large.\n\n#### Evidence for Issue 1 in ABCD data\n\nThe primary way to evaluate context independence is to compare reaction times on go trials to reaction times on stop-failure trials (but note that the prediction of the race model concerning faster stop-failure than go responses is conditioned on both context independence and stochastic independence, Colonius and Diederich, 2018). If the former is longer than the latter, then context independence is taken to hold (Bissett et al., 2021; Logan and Cowan, 1984; Verbruggen et al., 2019). On average across all subjects, stop-failure RT (M\u00a0=\u00a0456 ms, SD\u00a0=\u00a0109 ms) was shorter than overt responses on go trials (M\u00a0=\u00a0543 ms, SD\u00a0=\u00a095 ms, 95% confidence interval of the difference [85.9, 88.8]). However, for 524 of the 8,464 subjects (6.2% of all subjects), mean stop-failure RT was longer than mean RT on overt responses in go trials, suggesting that a subset of subjects violated context independence. Though note that the comparison of stop-failure and go RT is a conservative measurement that will only show violations of context independence if they are severe (Bissett et al., 2021). Additionally, it will only reveal slowing of the go process on stop trials, even though context independence could be violated by the go process being faster on stop than go trials (e.g., see our guessing model below).\n\nIn order to further evaluate whether the go process is impaired on stop trials as a result of the shorter go stimulus, we compared choice accuracy on stop-failure trials with choice accuracy on all overt (non-omission) go trials. Stop-failure trials had much lower accuracy (79%) than overt go trials (90%), 95% confidence interval of the difference (10.6%, 11.1%). Additionally, choice accuracy on stop-failure trials was increasingly impaired at shorter SSD (see Figure 3). In other datasets, choice accuracy on stop-failure trials, even at shorter SSDs, tends to be similar to overt go trials (Bissett et al., 2021), which suggests that the impaired go accuracy on stop-failure trials in the present study results from the shorter go stimulus durations on stop trials in this task. Therefore, this lower choice accuracy is consistent with the go process being fundamentally impaired on stop trials compared to go trials, particularly at short SSDs, violating the assumption of context independence. Additionally, these violations of context independence manifest in an unprecedented way (i.e., lower choice accuracy on stop failure trials), showing that Design Issue 1\u00a0drives a new form of violations that go beyond any previous evidence for violations in stop-signal tasks (e.g., Bissett et al., 2021).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig3-v2.jpg)\n\n**Figure 3.:** Note: 95% confidence intervals are presented as gray confidence bands. Individual-subject datapoints are presented in blue with lower alpha.\n\n#### Potential mechanisms underlying Issue 1\n\nNew computational models need to be developed to capture the Design Issue 1\u00a0violations in the ABCD data. Issue 1 embeds violations in the essential fabric of their task design, and existing models do not provide guidance on how to excise these violations or limit their contamination of the ABCD data. To our knowledge, all existing models for stopping assume that the parameters that generate the distribution of go processes take the same value on go and stop trials (e.g., Boucher et al., 2007; Logan et al., 2014; Logan et al., 2015; Matzke et al., 2017). Therefore, there is no existing model that can capture the ABCD stopping data and no valid way to compute SSRT from these data because the go process is different on go and stop trials (see Figure 3). This is most clear on 0 ms SSD trials, in which the go stimulus is not presented at all (see Issue 2), so subjects must be guessing and therefore the go process must be fundamentally different than when it is stimulus driven. Additionally, existing simulations that suggest SSRT estimates are robust to violations of independence (Band et al., 2003) do not evaluate the type of contamination introduced by Issue 1, namely a different set of processes generating the go process on go and stop trials. Instead, they show that SSRT is relatively robust to correlations between go RT and SSRT or correlations between SSD and SSRT, which are unrelated to Design Issue 1.\n\nThere is evidence that violations of context independence can occur even without the introduction of Design Issue 1 (Akerfelt et al., 2006; Bissett et al., 2021; Colonius et al., 2001; Gulberti et al., 2014; Ozyurt et al., 2003); however, we believe that the violations in the ABCD dataset go beyond this existing work and will require distinct computational solutions for the following reasons. First, these previous violations occur in spite of carefully equated exogenous stimulus parameters, whereas the ABCD design encourages violations by presenting different exogenous stimulus parameters between go and stop trials. Second, as we mentioned above, the violations in the ABCD dataset manifest in an unprecedented way (i.e., lower choice accuracy on stop-failure trials) that go beyond previous evidence for violations (e.g., Bissett et al., 2021). This suggests that the generating mechanisms underlying violations in ABCD are fundamentally different than in other stopping datasets. Theoretical explanations that aim to account for violations, such as failures to trigger the stop process (Matzke et al., 2017) or variability in the speed or potency of inhibition (Bissett et al., 2021), focus on modifications to the stop process across trials. In contrast, greatly reduced choice accuracy on stop-failure trials compared to go trials indicates that the go process is modified across go and stop trials in the ABCD dataset. Therefore, even if future computational modeling efforts account for violations in datasets without design Issue 1, we do not believe that they will generalize to the violations in the ABCD, given that the violations in ABCD are driven by the idiosyncrasies of Issue 1.\n\nIn order to begin the process of developing a new theoretical framework for understanding the violations of context independence in the ABCD dataset, we propose three computational models that aim to capture the violations in the ABCD dataset. All three instantiate adjustments to the independent race model (Logan and Cowan, 1984). First, the slowed go processing model suggests that the drift rate for the go process, which measures the speed of information processing, is slowed at shorter SSDs. We justify this because weaker exogenous drive from a shorter stimulus should yield slower and less effective information processing of that stimulus. Second, the guessing model suggests that the go process on stop trials is a mixture of guesses and stimulus-driven responses, such that all guesses at 0 ms SSD stop trials gradually give way to all stimulus-driven responses (i.e., no guesses) as SSDs lengthen. We justify this because guesses are necessary at 0 ms and choice accuracy of stop-failure trials at shorter SSDs remains very low as if subjects are mostly randomly guessing. Third, the confusion model suggests that subjects may be confused on how to respond at short delays, impairing both the go and the stop processes, which we instantiate as slower drift rates for both the go and the stop processes at shorter SSDs. We justify this because short SSD trials may violate subjects\u2019 basic expectation of a clear and perceptible go stimulus that precedes the stop signal on stop trials, resulting in confusion and weaker drive to both behavioral responses. All three of these models can naturally explain the higher choice error rate on stop-failure trials at short SSDs than long SSDs, as reducing drift rate reduces accuracy and guesses have chance accuracy. All three also roughly match the empirical inhibitory function from the ABCD data (see Figure 4), though only the third confusion model captures the non-monotonicity at the 0 ms SSD. For these reasons, they are promising, though preliminary, mechanistic models to explain the violations of context dependence in the ABCD data. Fully establishing these models will require substantial additional work, including parameter fitting and recovery, model recovery, and model comparison.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig4-v2.jpg)\n\nWith these caveats in mind, we simulated data to estimate the degree of SSRT contamination that would arise from applying the independent race model (Logan et al., 2014; Logan and Cowan, 1984) and assuming context independence if instead each of these three models are the correct generating model for the go process on stop trials. We fit the observed grand mean go RT and SSRT distributions to get plausible estimates of each value, then we adjusted the pertinent parameters (e.g., slow the drift rate of the go process at short SSDs in the slowed go processing model) according to the three models specified above (see Materials and methods for additional details). Finally, we computed an SSRT for simulated data generated from the independent race model and each of the three proposed models above while making the assumption of context independence (which we know to be violated in our three alternative models). This would overestimate mean SSRT by 75 ms for the slower drift rate model (slower drift rate SSRT\u00a0=\u00a0207 ms and independent race SSRT\u00a0=\u00a0282 ms), underestimate SSRT by 61 ms with the mixture guessing model (mixture guessing\u00a0=\u00a0343 ms), and overestimate mean SSRT by 22 ms for the confusion model (confusion SSRT\u00a0=\u00a0260 ms). Additionally, the degree of estimation errors varies with SSD (see Figure 5). Therefore, mean SSRT estimates would be contaminated if any of these three models capture the go process on stop trials, but the researcher instead assumed context independence, as the SSRT estimation procedure requires. These models instantiate differences in the go process between stop and go trials (i.e., context dependence), but by assuming context independence, these differences in the go process are incorrectly ascribed to the stop process, contaminating SSRT estimates.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig5-v2.jpg)\n\nHowever, as Garavan et al., 2020 point out, \u2018Examining individual differences is a central goal of the ABCD study. Crucially, for the utility of the ABCD SSRT measure to be degraded as a measure of individual differences, violations of context independence must result in more than a shift in mean SSRT. Rather, the rank order of participants\u2019 SSRT values must be substantially altered\u2019.\n\nTo examine individual differences, we created 8,207 simulated subjects that shared features from the 8,207 real ABCD subjects. We simulated go RTs based on real ABCD subjects\u2019 performance and implemented three ways to determine SSDs in the simulation (ABCD weighted, fixed SSDs, and simulated tracking SSDs). Given the observed violations of context independence, we do not have trustworthy estimates of individual-subject SSRTs. In order to assign an SSRT value to each simulated subject, we sampled randomly from an SSRT distribution with a mean that equaled the observed ABCD grand mean but assumed four different amounts of between-subject variability (ranging from SD\u00a0=\u00a00\u201385 ms). This range of between-subject variability was informed by evaluating the 20 simple stopping conditions from a recent large-scale stopping study which had a mean between-subject SD of SSRT\u00a0=\u00a043 ms with a range of 28 ms\u201385\u00a0ms (Bissett et al., 2021). For each simulated subject, we computed SSRT (assuming context independence) separately based upon data generated from our four generating models (slowed go processing, guessing, confusion, and independent race). We then computed rank correlations of SSRT estimates for these 8,207 simulated subjects between the independent race model and each of our three proposed models, for our three SSD determination methods (ABCD weighted, fixed, and tracking SSD) and four values of between-subject variance in assumed SSRT (85 ms, 25 ms, 5 ms, and 0 ms) (see Table 1 for Results and Materials and methods for additional simulation details).\n\n**Table 1.**\n Rank correlations of SSRTs from the three alternative generating models (rows) with the independent race model across the three SSD determination methods (ABCDw = ABCD weighted, fixed, and tracking) and four SSRT standard deviation (SD) scales (85 ms, 25 ms, 5 ms, and 0ms).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">SD = 85ms (mean:0.93)</th>\n      <th colspan=\"3\">SD = 25ms (mean:0.78)</th>\n      <th colspan=\"3\">SD = 5ms (mean:0.63)</th>\n      <th colspan=\"3\">SD = 0ms (mean:0.54)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>ABCDw</th>\n      <th>Fixed</th>\n      <th>Tracking</th>\n      <th>ABCDw</th>\n      <th>Fixed</th>\n      <th>Tracking</th>\n      <th>ABCDw</th>\n      <th>Fixed</th>\n      <th>Tracking</th>\n      <th>ABCDw</th>\n      <th>Fixed</th>\n      <th>Tracking</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0.848</td>\n      <td>0.973</td>\n      <td>0.995</td>\n      <td>0.73</td>\n      <td>0.89</td>\n      <td>0.965</td>\n      <td>0.82</td>\n      <td>0.893</td>\n      <td>0.554</td>\n      <td>0.847</td>\n      <td>0.903</td>\n      <td>0.021</td>\n      <td>Confusion</td>\n    </tr>\n    <tr>\n      <td>0.932</td>\n      <td>0.976</td>\n      <td>0.949</td>\n      <td>0.661</td>\n      <td>0.896</td>\n      <td>0.677</td>\n      <td>0.178</td>\n      <td>0.887</td>\n      <td>0.27</td>\n      <td>0.093</td>\n      <td>0.895</td>\n      <td>0.183</td>\n      <td>Slowed Go Processing</td>\n    </tr>\n    <tr>\n      <td>0.883</td>\n      <td>0.907</td>\n      <td>0.951</td>\n      <td>0.713</td>\n      <td>0.765</td>\n      <td>0.754</td>\n      <td>0.813</td>\n      <td>0.88</td>\n      <td>0.342</td>\n      <td>0.848</td>\n      <td>0.913</td>\n      <td>0.176</td>\n      <td>Guessing</td>\n    </tr>\n  </tbody>\n</table>\n\nRank correlations quantify the degree that SSRT is degraded as a measure of individual differences if we assume the independent race model when a different generating model (like our three proposed models) more appropriately characterizes the underlying data generating mechanism in the ABCD stopping task. If we assume high between-subject variability in SSRT (SD\u00a0=\u00a085 ms), then the rank correlations are largely preserved across generating models and SSD approaches (r range\u00a0=\u00a00.85\u20130.99, mean\u00a0=\u00a00.93). However, as between-subject variability in SSRT reduces (SD\u00a0=\u00a025 ms), the rank correlations decrease (r range\u00a0=\u00a00.66\u20130.97, mean\u00a0=\u00a00.78). At very low between-subject variability, (SD\u00a0=\u00a05 ms) the rank correlations can become very low (r range\u00a0=\u00a00.18\u20130.89, mean\u00a0=\u00a00.63). At the limit, if we assume no between-subject variability in SSRT and therefore between-subject variance is driven entirely by differences in SSD, go RT, and the different generating models, rank correlations continue to reduce but remain well above 0 on average (r range\u00a0=\u00a00.02\u20130.91, mean\u00a0=\u00a00.54). This suggests that differences in SSD distribution or go RT across subjects can inflate estimates of SSRT rank correlations in our simulations, and therefore SSRT individual differences may be more contaminated than the above rank correlations suggest. Taken together, these results show that design Issue 1\u00a0can degrade individual differences, with the degree of misestimation increasing as between-subject variability in SSRT decreases.\n\nTo reiterate, these are only preliminary model proposals and require more rigorous scrutiny. However, no existing models for stopping can capture the context dependence that is embedded in the fabric of the ABCD data by Design Issue 1. These preliminary simulations suggest that mean SSRT estimates are contaminated and individual differences may be contaminated by the Design Issue 1 violations of context independence, particularly if the true between-subject variability in SSRT is small.\n\n#### Prospective suggestions for Issue 1\n\nIn order to address Issue 1, we would recommend that the ABCD study organizers present the go stimulus for a fixed period of time on every trial, perhaps 1000 ms. When a stop signal occurs, it should not replace but it should be presented in addition to the go stimulus. If the study designers would like to keep all stimuli in the center of the screen, they could superimpose the stop stimulus around the arrow (e.g., a circle). However, as suggested by a reviewer, to avoid perceptual interactions the stop circle should be\u00a0>1 degree of visual angle from the go arrow. Therefore, the go stimulus would be identical in form, size, and duration for all go and stop trials. This should eliminate any possibility that different go durations drive different go processes, violating context independence and contaminating dependent variables.\n\n#### Retrospective suggestions for Issue 1\n\nThe main reason that we have suggested that Issue 1\u00a0is the most fundamental is if one assumes that shorter go stimuli on stop trials yield slower, impaired go processes when compared with the longer go stimuli on go trials, which we believe is reasonable assumption given over 100 years of RT research (Bloch, 1885; Froeberg, 1907; Kahneman and Norman, 1964; Kaswan and Young, 1965; Pieron, 1914), then context independence is violated and major dependent variables in the stop-signal task are contaminated. Additionally, the violations of context independence, as measured by a decrease in choice accuracy on stop-failure trials, appear to go beyond existing evidence of violations in stopping data (Bissett et al., 2021). These violations may also influence common neuroimaging task contrasts like stop success versus go and stop failure versus go, as this introduces additional differences between trial types, including go stimulus duration and go stimulus reaction time, that will contaminate the ability of the contrast to isolate processes of interest like response inhibition. Given the above empirical evidence and simulations, and as suggested by our reviewers, unless the ABCD community shows that this design issue does not distort conclusions based upon SSRT estimates (or any other stop-signal measure), researchers should not use the ABCD dataset to estimate SSRTs and should use the neuroimaging data with caution.\n\nWe also suggest two practical suggestions to attempt to avoid some of the most extreme violations, but we note significant shortcomings of these solutions. First, in line with consensus guidelines (Verbruggen et al., 2019), we would recommend removing the subjects who have severe violations as evidenced by mean stop-failure RT > mean no-stop-signal RT (524 of the 8,464 that we analyzed, 6%). However, this may impact the representativeness of the sample. Also, though this may eliminate some of the subjects who most severely violated, violations are not an all-or-none phenomenon and this will likely leave in subjects who violate, albeit to a less extreme degree. Additionally, our above simulations demonstrate that violations of context independence can manifest as go slowing (as in slowed go drift rate) or go speeding (as in fast guesses at short SSDs), the latter of which would not be captured by this criterion at all. Therefore, this first suggestion should not be taken as sufficient to confidently eliminate the influence of violations. Second, given our suggestion that violations may be most severe at short SSDs (because the difference in go stimulus duration between go and stop trials is maximal at short SSDs, see Figure 3), and given work suggesting violations of context independence may be most severe at short SSDs (Akerfelt et al., 2006; Bissett et al., 2021; Colonius et al., 2001; Gulberti et al., 2014; Ozyurt et al., 2003), we would recommend that any results be verified when only longer SSDs are used, perhaps only SSDs\u00a0\u2265\u00a0200 ms. However, note that removing stop trials that have SSDs\u00a0<\u00a0200 ms would remove 51.5% of all stop trials in the ABCD dataset, leaving less than an average of 30 stop trials per subject. Additionally, Figure 3 shows that choice accuracy on stop-failure trials does not asymptote at 200 ms, so a longer cutoff (and additional data loss) would more confidently avoid severe violations. Neither of these two suggestions resolve Issue 1, but they may eliminate the subjects and trials most likely to show severe violations, respectively.\n\nIn order to resolve Issue 1, the different go durations that encourage context dependence must be eliminated (see prospective suggestions), or new models for stopping must be developed to accommodate context dependence, the latter of which we consider to be of utmost importance to advancing the stop-signal literature. We attempt to make preliminary progress in this direction with the models that we instantiate in the above simulations and in companion work that suggests preliminary theoretical frameworks that can account for context dependence (Bissett et al., 2021). However, these are very preliminary proofs of concept and much more work is necessary to fully flesh out a viable model for stopping that can accommodate context dependence. Additionally, we believe that Design Issue 1 introduced idiosyncratic violations (i.e., reduced choice error rates) that will require idiosyncratic computational solutions.\n\n### Issue 2: go stimulus sometimes not presented\n\nIssue 2\u00a0can be seen as a special case of Issue 1. When the stop signal occurs, it replaces the go stimulus, and SSD can reduce to 0 ms. When the SSD is 0 ms, a go stimulus does not occur on the stop trial. This is an issue because extant models of stopping assume a race between two processes (Logan and Cowan, 1984), and there is not a go stimulus to initiate a go process or to drive one of the two choice responses. The absence of a go stimulus may make successfully stopping trivial (as the go process never started) or may confuse subjects given these trials have a fundamentally different structure (i.e., one stimulus instead of two).\n\n#### Evidence for Issue 2 in ABCD data\n\nNine\u00a0percent\u00a0of all stop trials had an SSD of 0 ms (see Figure 6). In a typical stop-signal experiment, a 0 ms SSD trial means that the go and stop stimuli onset at the same time and are presented concurrently for a period of time. This tends to produce a very high stop success rate at a 0 ms SSD. In these data, we found that the stop success rate at the 0 ms SSD was 60.1%. This surprisingly low value may have resulted from subjects being confused as to how to approach these trials (see the confusion model above). It also may have been driven by subjects who stopped inhibiting their responses. Additionally, see Issue 3\u00a0for a contribution explanation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig6-v2.jpg)\n\n#### Prospective suggestions for Issue 2\n\nThe suggestion from Issue 1\u00a0will also naturally resolve Issue 2. When SSD is 0 ms, the arrow go stimulus would be presented at the same time as a secondary stop signal presented around it.\n\n#### Retrospective suggestions for Issue 2\n\nGiven there is not a go stimulus to drive a choice toward a specific go response on 0 ms SSD trials, we recommend that these 0 ms SSD trials be removed from any behavioral or neuroimaging analyses. The complete lack of a go stimulus is at least as fundamental as 1, but this only occurs on 9% of all stop trials, so this issue can be addressed by removing these trials.\n\n### Issue 3: faulty SSD\n\nThe ABCD study uses the common 1-up/1-down tracking algorithm (Levitt, 1971) to determine SSD, which involves increasing SSD by 50 ms whenever a subject successfully stops and decreasing SSD by 50 ms whenever a subject fails to stop. However, if SSD is 50 ms and a subject makes a response that is faster than 50 ms (e.g., 25 ms), then this triggers a glitch in the experiment code in which all subsequent stop trials have a response erroneously recorded at that same timestamp (e.g., 25 ms). Therefore, all subsequent stop trials are treated as stop failures (because this one initial response is recorded for all subsequent stop trials), and SSD remains stuck at the minimum of 0 ms for the remainder of that subject\u2019s stopping dataset.\n\n#### Evidence for Issue 3 in ABCD data\n\nThe triggering condition for this coding error is very specific and occurs somewhat rarely. In the entire sample, only 2.7% of subjects had this specific problem. However, this issue interacts with Issue 2 and partially explains the low stop accuracy at 0 ms SSD. Once these trials are excluded, the stop accuracy at 0 ms increases from 60.5% to 62%.\n\n#### Prospective suggestions for Issue 3\n\nThis appears to be a coding error, so we would recommend that the error be resolved by ensuring that any response on a given trial does not propagate forward incorrectly as also being a response with the same duration in subsequent trials.\n\n#### Retrospective suggestions for Issue 3\n\nGiven the rarity of this problem, in addition to the severity of its manifestation (i.e., it ensures that every subsequent stop trial is recorded as a stop-failure with a 0 ms SSD, irrespective of actual behavior), we recommend removing the 2.7% of subjects who trigger this issue.\n\n### Issue 4: different stop signal duration for different SSDs\n\nThe independent race model (Logan et al., 2014; Logan and Cowan, 1984) not only assumes go context independence, but also stop context independence, which means that the stop process is the same across SSDs. However, in an issue that mirrors Issue 1, the stop signal is presented for different durations at different SSDs. If SSD is\u00a0\u2264\u00a0700 ms, then the stop signal is presented for 300 ms. If SSD is\u00a0>700 ms, then the stop signal is presented for 1000-SSD, with a maximum SSD of 900 (and therefore a minimum stop duration of 100 ms).\n\n#### Evidence for Issue 4 in ABCD data\n\nSSDs\u00a0>\u00a0700 ms are rare in these data (see Figure 6, 1.1%). This rarity makes it difficult to compute SSRT exclusively at these longer delays to evaluate whether the stop process may be changed as a result of the stop signal being presented for a shorter duration at the longest SSDs.\n\n#### Prospective suggestions for Issue 4\n\nWe recommend a fixed stop-signal duration across all SSDs, perhaps 300 ms.\n\n#### Retrospective suggestions for Issue 4\n\nGiven that SSDs that are\u00a0>700 ms are so rare (1.1%), we suggest removing them from any analyses. This will eliminate their contamination on any averages without resulting in significant data loss.\n\n### Issue 5: non-uniform conditional trial probabilities\n\nIn stop-signal tasks, the default way to determine trial sequences is to randomly or quasi-randomly (e.g., random without replacement from a fixed pool of trials to ensure the same number of stop trials in each block) select which subset of trials will include a stop signal. However, in fMRI task-based experiments, it is common to select trial sequences in order to optimize power of finding an effect or a difference between contrasting conditions (Durnez et al., 2017; Kao et al., 2009; Liu et al., 2001). Increasing detection power can be achieved by adjusting the conditional probabilities such that trials are more likely to follow the same trial type than change to a new trial type (i.e., the design becomes more block-like). However, this push for greater power needs to be weighed against known expectancy effects in the stop-signal task (Bissett and Logan, 2012b), which can change the processes involved in a task when subjects can predict what is coming. Indeed, some modern software (Durnez et al., 2017) allows the researcher to explicitly trade off the competing goals of power and avoiding trial-by-trial contingencies.\n\nThe ABCD stopping study has a highly non-uniform distribution of transition probabilities between go and stop trials. Given the overall probability of a stop signal is 1/6 or 0.167 and a uniform conditional probability across trials, the probability of a stop signal given the immediately preceding trial was a stop signal should be 0.167. In the ABCD task, this value is 0, as stop trials never repeat. Additionally, stop trials almost never occur if there was a stop trial two trials before (conditional probability of 1.8%). We plot the conditional probability of a stop signal given the most recent stop signal, both in the ABCD data and for an example where the probability of a stop signal was equal across all trials (see Figure 7). Subjects have the potential to learn this contingency that stop trials never repeat and seldom occur after one intervening go trial. This may be important because usually go reaction time slows after stop signals (post-stop-signal slowing, Bissett and Logan, 2011; Bissett and Logan, 2012a; Rieger and Gauggel, 1999), but if subjects learn that stop\u00a0signals are never followed immediately by another stop signal then this results in go reaction time speeding (Bissett and Logan, 2012b). Therefore, by making such drastic adjustments to the conditional probabilities, this may change the way that subjects balance going and stopping across trials.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig7-v2.jpg)\n\n#### Evidence for Issue 5 in ABCD data\n\nIn order to investigate whether subjects are learning this trial contingency and using it to change behavior, we broke the stop trials in the task into quantiles over time (i.e., first 15 stop trials, second 15, third 15, and fourth 15) and computed post-stop-signal RT changes in each. If subjects are learning this contingency and changing their behavior in response to it, we should see post-stop-signal slowing (slower RT on the trial immediately following a stop signal compared to RT on the trial immediately preceding a stop signal) reduce over the experiment, perhaps giving way to post-stop-signal speeding (faster RT on the trial immediately following a stop signal compared to RT on the trial immediately preceding a stop signal) toward the end of the experiment. This is not what we found (see Figure 8) as post-stop-signal slowing was around 20 ms for each quartile except the second, in which it was 40 ms. Therefore, we did not see our expected reduction of post-stop-signal slowing over time or post-stop-signal slowing in the early quartiles giving way to post-stop-signal speeding in the later quartiles. It appears that in this baseline session, subjects did not learn this contingency or did not change their behavior in response to it.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig8-v2.jpg)\n\n**Figure 8.:** Note: Error bars are 95% confidence intervals.\n\n#### Prospective suggestions for Issue 5\n\nIn order to eliminate the possibility of subjects learning this contingency and changing their behavior, we suggest that the ABCD study make the conditional probabilities fully uniform or at least much more uniform, most importantly allowing for the possibility of immediate repeats. Though learning effects were not apparent in the baseline session, subjects may learn this contingency and implement more severe behavioral changes in subsequent sessions as they have greater exposure to this contingency. Additionally, as subjects mature, they may develop the ability to learn this contingency and use it to change their behavior.\n\n#### Retrospective suggestions for Issue 5\n\nThe two trials after a stop signal never or virtually never include a stop signal, so they could have involved fundamentally different processes from normal go trials. In essence, if this contingency is learned, the trial after a stop trial becomes a \u2018certain-go\u2019 trial, which has been shown to have different behavioral performance and neural responses (Chikazoe et al., 2009). However, we did not find evidence that subjects learned and adjusted their behavior based upon this contingency in this baseline session. Additionally, removing the two go trials after a stop signal would involve huge data loss (1/3 of all trials), so this does not seem warranted. Therefore, we do not think that Issue 5 will affect data users, at least in the baseline session.\n\n### Issue 6: trial accuracy incorrectly coded\n\nIn the stop-signal task, there are two types of trials, go and stop, and each can be correct or an error. On a go trial, subjects can be correct by making the appropriate choice response or make an error by either making the incorrect choice response or by omitting their response. On stop trials, subjects can be correct by omitting their response or be incorrect by making a choice response. In three of four of these trial outcomes, there are errors in how the ABCD data categorizes trials. Additionally, stop-failure trials can be correct or incorrect with respect to the go stimulus, and this should be coded properly.\n\n#### Evidence for Issue 6 in ABCD data\n\nAll 247,786 trials that are categorized as incorrect stops have one or more overt responses, so these all appear to be categorized correctly in the output. 25,854 of the 376,479 trials (6.9%) classified as incorrect go trials appear to actually have the correct go response. The majority of these (25,343, 6.7%) can be attributed to a known issue, where response buttons were flipped, resulting in responses being recorded as incorrect, when they were in fact correct. We were unable to ascertain why the remaining 511 trials (0.01%) trials were miscategorized. 61,215 of the 2,162,718 trials (2.8%) classified as correct go trials are incorrect go trials. 4,208 (0.002%) of these can be attributed to the response button flip mentioned above. The other 57,007 (2.6%) instances appear to result from overwriting the first response with any subsequent response that is recorded later in the trial, which we understand to be inappropriate for speeded tasks generally and perhaps especially for a stop-signal task in which one wants to measure the speed of the first go process that completes, not a subsequent go process. Finally, 1,081 of the 260,053 trials (0.4%) classified as correct stops are incorrect stops, as they include one or more overt responses. This final class of errors results in SSD increasing by 50 ms when it should instead decrease by 50 ms. 154 of these 1,081 appear to result from a response occurring at the exact millisecond that one of the constituent stimuli occur in the trial. We were unable to ascertain why the other 927 of the 1,081 were recorded as correct stops, given there was one or more recorded responses on these stop trials.\n\n#### Prospective suggestions for Issue 6\n\nIssue 6 appears to result from errors in the experimental code. Therefore, Issue 6 should be fixable by adjusting the experimental code. For example, in their code, there are three constituent periods within a stop-signal trial (the SSD, the 100\u2013300 ms in which the stop-signal is on the screen, and the fixation period after the stop signal), and if the recorded RT\u00a0=\u00a00 ms in all three\u00a0periods\u00a0(either because there was no response or if it occurred at the exact millisecond that the stimulus was presented), then trials are categorized as a correct stop. However, on 154 \u2018correct stop\u2019 trials, there is a response at the exact millisecond that one of these stimuli is presented. It is still recorded as a response in the output, so instead of categorizing trials and increasing SSD by ensuring RT\u00a0=\u00a00 ms outputs in each period, the trials should be categorized as a correct stop if no response is recorded in any of these three periods.\n\n#### Retrospective suggestions for Issue 6\n\nFor data users, Issue 6 can largely be resolved by recategorizing each trial type (which we did for all analyses within this work), according to the rules specified in the paragraph where we introduced Issue 6, before analyzing the data. However, as we briefly mentioned above, one effect of this error cannot be undone because 1,081 \u2018correct stop\u2019 trials have overt responses, so they should have been categorized as incorrect stop trials and therefore SSD should have reduced by 50 ms instead of being increased by 50 ms. However, given how infrequent these are (0.4% of all correct stops), this is unlikely to have a significant effect on the SSD tracking algorithm, and therefore we judge this issue to be more minor. These 1,081 should be recategorized as incorrect stops before analysis.\n\n### Issue 7: SSD values start too short\n\nThe 1-up/1-down SSD tracking algorithm (Levitt, 1971) is an efficient way to sample the intermediate part of the inhibition function, which is the most informative for constraining SSRT estimates (Band et al., 2003; Verbruggen et al., 2019). In order to sample the intermediate part of the inhibition function for the maximal number trials, the SSD should begin at a value such that go RT = SSD + SSRT. For example, if the expected mean RT in the sample is 500 ms and the expected SSRT is 250 ms, then the SSD should start at 250 ms. Otherwise, the initial stop trials will have a high stop success rate, which is less informative for constraining estimates of SSRT and could drive strategy shifts in the experiment (e.g., subjects might de-emphasize the stop process at the beginning of the experiment if they recognize that any stop signals will occur with such a short SSD that even a slower stop process could beat the go process).\n\n#### Evidence for Issue 7 in ABCD data\n\nIn the ABCD dataset, SSD starts at 50 ms. We plot the stop accuracy and SSD (see Figure 9) across each of the 60 stop trials for all subjects. This shows that stop accuracy tends to be high (and SSD low) in the first\u00a0~10 stop trials but then stabilizes around 0.5, as desired, for the remaining\u00a0~50 stop trials. The one salient exception is trial 31, which is the first trial of their second block or session (some subjects do both blocks back-to-back and others do one block in one scanning session and the second block in a subsequent scanning session), which has a very low stop accuracy.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig9-v2.jpg)\n\n**Figure 9.:** Note: 95% confidence intervals are presented as gray confidence bands.\n\n#### Prospective suggestions for Issue 7\n\nIn order to create a more efficient design that eliminates this initial part of each section when many subjects have high stop success rates that are less informative for SSRT estimates, we recommend starting each session with a more canonical 250 ms SSD. This is similar to the mean SSD (230 ms) and final SSD (265 ms) across subjects, so should sample the intermediate part of the inhibition function from the start for the most possible subjects.\n\n#### Retrospective suggestions for Issue 7\n\nIt is unclear whether subjects are recognizing these very short SSDs in the beginning of each session and adjusting their performance or strategies in response to them. For example, as suggested above, subjects could de-emphasize the stop process at the beginning of each session. Therefore, we would recommend a cautious approach of ensuring that any conclusions do not qualitatively change when initial trials (perhaps the first seven stop trials with stop success rates\u00a0>\u00a00.6) are removed from analyses. An even more cautious approach would be to remove trials up to trial 15, as this is the approximate point that the stop-signal accuracy asymptotes.\n\n### Issue 8: low stop trial probability\n\nStop-signal probability is commonly 0.25, 0.33, or a similar value in stop-signal studies (Verbruggen et al., 2019). Increasing stop-signal probability increases power for SSRT calculation, stop-based imaging contrasts, and other analyses (e.g., the inhibition function Logan and Cowan, 1984). Values greater than \u2153 are somewhat rare, perhaps because there is a belief that high stop-signal probabilities may fundamentally change the stop process (but see Bissett and Logan, 2011; Logan and Burkell, 1986).\n\n#### Evidence for Issue 8 in ABCD data\n\nThis ABCD study uses a 0.167 stop probability, which is unusually low.\n\n#### Prospective suggestions for Issue 8\n\nWe suggest increasing the stop probability to 0.25, which would put this data acquisition more in line with the literature and would provide 50% more stop trials to increase analytical power without increasing the length of the data acquisition. We do not know of any research that suggests any benefits of any kind when reducing stop probability to as low as 0.167.\n\n#### Retrospective suggestions for Issue 8\n\nWe do not know of any published evidence that suggests that low stop trial probability may contaminate the data. Therefore, we do not believe that Issue 8\u00a0will affect data users, except that the low stop trial probability means that there are fewer stop signals to constrain and provide accurate estimates of stopping performance.\n\n## Discussion\n\nThe ABCD study is an unprecedented investment toward understanding human cognition and brain development, and the stop-signal data is a key part of this dataset as one of only three tasks that are acquired within each neuroimaging session. Above, we laid out eight issues starting with more fundamental and moving towards more minor that, when taken together, we believe to significantly undermine existing ABCD stopping data. We have not evaluated the emotional N-back or monetary incentive delay tasks, but we hope that future work will review the experimental code and data from these tasks. We hope that our manuscript shines a light on the importance of quality assurance of task design, particularly for large-scale studies. We would also like to note that at least some of these design issues extend to the IMAGEN study (Schumann et al., 2010), which Garavan et al., 2020 note used \u2018A very similar task, with the same Go stimulus design features\u2019.\n\nWe suggested three preliminary computational models (slowed go processing, guessing, and confusion) that may be able to capture the violation of independence that arise from Design Issue 1. Our preliminary simulations suggest that mean SSRTs are contaminated and SSRT individual differences may be contaminated because of these violations. Existing models that assume independence between the go and stop process (Logan et al., 2014; Logan and Cowan, 1984) cannot capture the behavior in the ABCD dataset. Additionally, we do not believe that other preliminary stopping models that aim to capture context dependence (Bissett et al., 2021) will generalize to the ABCD dataset, given that the violations in ABCD have unique behavioral costs (see Figure 3) that are driven by Issue 1. We are pursuing ongoing work to validate the three models above, and we hope the proposed models may be a useful starting point for other modeling efforts in the literature.\n\nOnly a subset of the entire ABCD data have been acquired. We have offered prospective suggestions for experimental design changes that we hope will be considered and implemented before future ABCD data is acquired. We recognize that implementing these changes will result in a lack of continuity between how the stop task is implemented across the scans for each subject, but we believe that these issues are significant enough (especially Issues 1\u20133) that resolving them outweigh the benefit of task continuity. Additionally, some issues involve learning contingencies embedded within the experiment (e.g., Issue 5), so they could exacerbate as subjects have repeated exposures to the task over this longitudinal study. We have also provided retrospective suggestions to data users to contextualize any results that come from these existing data. These suggestions aim to help make the most of the ABCD stopping data, both past and future.\n\n## Materials and methods\n\nIn order to complete our analyses, we used the following packages with the following Research Resource Identifiers: Pandas RRID:SCR_018214, NumPy RRID:SCR_008633, Seaborn RRID:SCR_018132, MatPlotLib RRID:SCR_008624, SciPy RRID:SCR_008058, SymPy RRID:SCR_018417, Jupyter Notebook RRID:SCR_018315, scikit-learn RRID:SCR_002577. Some basic methods are included in the Results section. Analysis and simulation code can be found at http://doi.org/10.5281/zenodo.4458428\u00a0and http://doi.org/10.5281/zenodo.4458767. Additionally, we lay out the methodology for our modeling and simulations below.\n\n### Modeling and simulations\n\nWe proposed three frameworks that may explain the context dependence in the ABCD data. The Independent Race Model (Logan et al., 2014; Logan and Cowan, 1984) was used as a baseline model for comparison, and it was modified to produce three alternative models which instantiated context dependence: (1) slowed go processing: the go drift rate is reduced by shorter go stimulus presentations at short SSDs, (2) guessing: a propensity to guess at shorter go stimulus presentations at short SSDs, and (3) confusion: both the go and stop drift rates are modulated by shorter go stimulus presentations at short SSDs. A maximum RT threshold of 3000 ms was used to match the response window of the ABCD task.\n\nWe modeled slowed drift rates at shorter SSDs with the following formula at SSDs 0\u2013550 ms:\n\n$$\n\\mu_{SSD}=max(\\frac{log(\\frac{SSD}{550})}{4}+1,0)\n$$\n\nwhere \u00b5 is the drift rate. This formula was hand-tuned to have the following characteristics. It results in a 0 drift rate for SSDs of 0 ms (as there is no exogenous go stimulus) and requires at least 10 ms of go stimulus presentation to reach a positive value (though SSDs in ABCD are all a factor of 50 ms). For SSDs greater than 10 ms, the go drift rate rapidly approaches a normal rate with longer go stimulus presentations. This function was applied to modulate the go drift rate in the slowed\u00a0go\u00a0processing model and both go and stop drift rates in the confusion model.\n\nTo model guessing, a multistep process was applied. First, recognizing that stop-failure RTs for trials with an SSD of 0 ms must be the result of guesses given that participants did not receive any go stimulus presentation on which to base their decisions (and evidenced by the fact that choice accuracy at that SSD was at chance levels), an ex-Gaussian distribution was fit to those RTs to generate a guessing distribution, and a sampling function was built. We resampled whenever a sample was negative.\n\nFollowing this, a probability of guessing for trials at each SSD was computed. To do so, the following simplifying assumptions were made: stop-failure RTs at SSDs greater than 0 ms are the result of mixing the go RT distribution with the guessing distribution outlined in the preceding paragraph, no-stop-signal trials do not include guesses, and the choice accuracy of stop-failure trials for a given SSD is the result of this mixing. Therefore, the probability of guessing at a given SSD was found by solving the following formula:\n\n$$\nACC_{SSD}=P_{guess|SSD}\u2217ACC_{SSD=0}+1(1\u2212P_{guess|SSD})\u2217ACC_{go}\n$$\n\nAt each SSD, P proportion of simulated trials were sampled from the guess distribution, and 1-P proportion of simulated trials were taken from the no-stop-signal RT distribution.\n\nThis simulation paradigm was created to investigate the effects of the ABCD stop task design issues on both mean SSRT estimates and individual differences. To provide all simulation details at once, the investigation of individual differences is described first. To create hypothetical subjects and investigate the effects of the design issues on individual differences, the mean go RT and SSRT were computed for every ABCD subject, and normal distributions were fit to each. In addition, SSD distributions were collected from subjects by subsetting to stop trials with an SSD between 0 and 500, inclusive, and getting the proportion of stop trials within the subset at each SSD. These metrics were not collected for subjects if they experienced Issue 3, or if their probability of responding given a stop signal (P(respond|signal)) was equal to 0 or 1, which indicates degenerate performance, leaving 8,207 subjects. Normal distributions were fit to the go RT and SSRT distributions in order to retrieve the mean and variance. However, because the SSRT values were contaminated by the issues described above, a range of hypothetical variances for the SSRT were tested in order to get a sense for how the between-subject SSRT distribution interacted with the design issues described above to affect individual differences.\n\nThe following simulations occurred across four\u00a0levels of between-subject SSRT variance (85 ms, 25 ms, 5 ms, and 0 ms). These values were compared to the 20 simple stopping datasets in a recent large-scale stopping study (Bissett et al., 2021) by computing an SSRT with replacement for each subject in the 20 conditions and finding the standard deviation of SSRTs across subjects within each condition. Negative SSD trials were excluded as they are not present in the ABCD task, and conditions using the Mechanical Turk data were subset to the same subjects who passed the qualitative checks applied in Bissett et al., 2021. The 20 conditions had a mean between-subject SD of SSRT\u00a0=\u00a043 ms with a range of 28 ms\u201385\u00a0ms.\n\nAs discussed in the main text, we do not have a trustworthy estimate of individual-subject SSRT, and therefore, we do not have a trustworthy estimate of between-subject variability in SSRT. We chose these values to capture a range that varied from values that largely preserved SSRT as an individual difference metric (SD\u00a0=\u00a085 ms) down to the limit of no variability such that any preservation of individual differences is driven by differences in go RT and SSD. We simulated 8,207 theoretical individuals. For each simulated individual, a theoretical go RT and SSRT were independently sampled from the normal distributions described above, with resampling until both values were greater than 60 ms (i.e., at least 10 ms greater than the models\u2019 nondecision time of 50 ms). These were paired with a unique subject\u2019s SSD distribution and converted into drift rates (\ud835\udf07) using the following formula:\n\n$$\n\\mu=threshold/({ssrtorrt}\u2212nondecisiontime)\n$$\n\nwhere the threshold was set to 100 and the nondecision time to 50 ms.\n\nEach theoretical subject\u2019s drift rates were then inserted as parameters to the four competing models, and two\u00a0sets of simulations occurred. First, a fixed-SSD approach was applied, with 2,500 trials being simulated for each SSD in the range of 0 ms\u2013500 ms, with 50 ms steps, inclusive. Second, a traditional one\u00a0up one down tracking algorithm (Levitt, 1971) was applied, with 25,000 stop trials being simulated. In the staircase approach, the initial SSD was 50 ms to match the initial SSD in the ABCD dataset, but the maximum SSD was 500 ms, which is different from the max of 900 ms in the ABCD dataset. In both cases, 5,000 go trials were simulated.\n\nUsing the fixed-SSD simulations, SSRT was computed at each SSD between 0 and 500 for each subject and each generating model, using the integration with replacement method, following the recommendations of Verbruggen et al., 2019. In addition, SSRT was recomputed at each SSD while using each alternative model to generate different underlying distributions for the go process on stop trials (this must be done at the SSD level because the alternative models predict different underlying distributions at different SSDs). For the two models with slowed drift rates, 5,000 go RTs were generated for each SSD. For the guessing model, the original go RTs were augmented with a number of sampled guess RTs such that the proportion of guesses to non-guesses matched that found in the second formula. For example, if the proportion of guesses at a given SSD was found to be 75%, then 15,000 guess RTs would be sampled to combine with the original 5,000 go RTs, creating an RT distribution of which 75% were guesses. These methods allowed us to compare SSRT estimates across different generating models while always making the assumption of context independence.\n\nFirst, SSRT was computed on the whole of each simulated individual\u2019s fixed-SSD data. Second, for each simulated subjects, we sampled an SSD distribution from a real ABCD subject without replacement, and we estimated a simulated mean SSRT by calculating a weighted sum of SSRTs across SSDs:\n\n$$\nSSRT=\\sumSSD=0SSD_{max}P_{SSD}\u2217SSRT_{SSD}\n$$\n\nThird, an SSRT was computed on the individual\u2019s tracking-based simulation data. Rank correlations between alternative models and the standard independent race model using the same SSRT method were compared to describe the minimum and mean rank correlations within the text.\n\nTo investigate the effects of the ABCD stop task\u2019s design issues on mean SSRT estimates (see Figure 5), the above simulations were repeated while setting both the SSRT and go RT between-subject variance to 0 and assigning the mean of both values to the 8,207 simulated subjects. Because each of the 8,207 simulated subjects had the same parameters, this is equivalent to having a single simulated dataset with a large number of trials. For each subject, three\u00a0SSRT estimates were again computed (weighted, fixed, tracking) per underlying model; these were then averaged across subjects. The means from the tracking-based SSRTs are reported in the manuscript, but the fixed\u00a0SSD and weighted SSRTs are similar and are presented in the results notebooks linked in the code below.\n\nThe code for running these simulations and displaying the simulation results can be found at http://doi.org/10.5281/zenodo.4458767.\n",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "3170d17c-6fec-4fc5-bc91-8a9ce20057d8",
+      "submission_id": "87f90800-fa23-44bd-9584-f6e77ccbfbae",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Birte U Forstmann, University of Amsterdam Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60185.sa1](https://doi.org/10.7554/eLife.60185.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe Adolescent Brain Cognitive Development (ABCD) study is an unprecedented longitudinal neuroimaging sample that tracks the brain development of over 10,000 9-10 year olds through adolescence. Three tasks are completed repeatedly in the MRI scanner including the stop-signal task (SST). By analyzing the data of the SST, the authors identified eight design issues that could potentially limit the value of the ABCD. In this paper, prospective solutions for future users next to retrospective solutions for ongoing data users are provided overcoming potential limitations of the ABCD.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Design issues and solutions for stop-signal data from the Adolescent Brain Cognitive Development [ABCD] study\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Birte Forstmann as the Reviewing Editor and Richard Ivry as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Hans Colonius (Reviewer #1); Andrew Heathcote (Reviewer #2); Ren\u00e9 Huster (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper focuses on one of the benchmark magnetic resonance imaging (MRI) datasets, the so-called Adolescent Brain Cognitive Development (ABCD). In total, eight design issues observed in the stop signal task of the longitudinal ABCD study by Casey et al. (2018) are pointed out. The design issues are described in detail, ordered by importance, and a number of suggestions are given on how to overcome potential limitations. Given the importance and prominence of the ABCD study in the field of cognitive neurosciences, both the reviewers and editors believe this paper to highlight essential issues in a constructive way. Finally, we believe this paper will elicit a fruitful discussion including the adjustments of the design of the stop signal task.\n\nOverall, this manuscript is well written, interesting, timely and will help resolve the debate in the field. We have the following suggestions to improve the manuscript.\n\nEssential revisions:\n\n1) As the authors suggest, the most important issue is the potential violation of the context invariance assumption due to the variability of the go stimulus duration across different stop signal delays (SSDs). This is a plausible concern even if the number of \"clear\" violations is relatively small (447 out of 7231 subjects). Nevertheless, the authors' point would be made even more convincing if they could point to some (simulation?) results showing the effect of a weaker go signal at short SSDs on the estimate of the stop signal response time (SSRT).\n\n2) We suggest using the term \"context invariance\" instead of \"context independence\" , in order not to confound the assumptions of \u201ccontext\u201d and \u201cstochastic\u201d independence in the Logan-Cowan race model. It should be pointed out that the prediction of the race model concerning faster stop failures than go responses is conditional on both context invariance AND stochastic independence between go and stop signal processing being true (see Colonius and Diederich, 2018).\n\n3) We recommend you perform and additional analysis: Let us suppose, as you suggest, that the RT distribution of responses to the go signal is indeed affected by the duration of the go signal. As a first approximation, let us assume that the observed RT distribution is a binary mixture of responses: slow RTs to a weak/short go stimulus and fast RTs to a strong/long gos stimulus. Without making specific assumptions about the two components of the mixture, one could employ a mixture distribution test first suggested by Falmagne (1968, British J. Math. Statist. Psychology): The RT (\"density\") distributions, plotted separately for each SSD and go signal trials, should all cross at one and the same point in time. Of course, this is not a foolproof test but if some evidence in favor of this prediction is found it would strengthen the authors' point.\n\n4) There was some concern on whether the paper is appropriate for eLife given our reading of the most relevant aim, which is to publish \"studies that use computational methods, models and software to provide important biological insights in all areas of the life sciences\". The present paper does not make the sort of positive contribution that this statement seems to imply. Although the paper mentions that \"new models for stopping must be developed to accommodate context dependence (Bissett et al., 2019), the latter of which we consider to be of utmost importance to advancing the stop-signal literature\", it does not discuss such models and neither does it show the potentially severe consequences of context independence violations in the ABCD data set. Efforts on this issue would strengthen the contribution.\n\n5) The authors write: \"Given the above, if analyzing or disseminating existing ABCD stopping data, we would recommend caution in drawing any strong conclusions from the stopping data, and any results should be clearly presented with the limitation that the task design encourages context dependence and therefore stopping behavior (e.g., SSRT) and neuroimaging contrasts may be contaminated\". We feel that this recommendation is too lenient and would suggest the following alternative: Unless the ABCD community conclusively shows that the design flaw does not distort conclusions based on SSRT estimates (or any other stop-signal measure), researchers should not use the ABCD data set to estimate SSRTs at all.\n\n6) The authors suggest removing subjects who have severe violations as evidenced by mean stop-failure RT > mean no-stop-signal RT. We are concerned that this recommendation impacts on the representativeness of the sample. Also, this recommendation ignores the fact that violations are not an all-or-none phenomenon but are a matter of degree and can come in varying shapes and sizes.\n\n7) The authors recommend that \"any results be verified when only longer SSDs are used, perhaps only SSDs > 200ms\". Figure 3 does not seem to support the recommended cut-off of 200ms: at 200ms accuracy is still far from asymptotic.\n\n8) In general, we feel that recommendations based on removing participants and trials are not sufficient such practices will affect the representativeness of the sample and will increase estimation uncertainty and hence decrease power. The real solution here seems to be to develop measurement models that can account for the dependence of the go and the stop process.\n",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dfbfdcea-e890-4949-a49f-788d1aee32ab",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C1",
+      "claim": "The Adolescent Brain Cognitive Development (ABCD) study is the largest and most comprehensive long-term study of brain development and child health in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "The Adolescent Brain Cognitive Development (ABCD) is the largest and most comprehensive long-term study of brain development and child health in the United States (Casey et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Casey et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "822b4752-a346-4dad-9627-fa9809c44b57",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C2",
+      "claim": "The ABCD study includes 11,878 youth and their families.",
+      "claim_type": "EXPLICIT",
+      "source": "The study includes 11,878 youth and their families and aims to understand the environmental, social, genetic, and other biological factors that affect brain and cognitive development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the study composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "3f002f7e-528c-4305-b02d-99686a45607b",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C3",
+      "claim": "CRAN granted $590 million in support to 21 research institutions across the United States to complete the ABCD study.",
+      "claim_type": "EXPLICIT",
+      "source": "CRAN granted $590 million in support to 21 research institutions across the United States to complete this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about funding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "98cc8bdd-7531-4a34-a279-38386e638669",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C4",
+      "claim": "The ABCD study includes three cognitive tasks during fMRI acquisition: the monetary incentive delay task, the emotional N-back task, and the stop-signal task.",
+      "claim_type": "EXPLICIT",
+      "source": "The study organizers chose to include three cognitive tasks to be presented during fMRI acquisition: the monetary incentive delay task (Knutson et al., 2000), the emotional N-back task (Barch et al., 2013), and the stop-signal task (Logan and Cowan, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as fact with citations to original task descriptions",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "2221a551-a097-40ad-a7a6-ed2587ea4518",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C5",
+      "claim": "The authors analyzed behavioral data from the baseline scan of 8,464 of the 11,878 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed behavioral data from the baseline scan of 8,464 of the 11,878 participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of the analysis sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "9be6693d-2e27-47ab-9c33-f107d2373d36",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C6",
+      "claim": "The stop-signal task is a primary paradigm used to understand response inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The stop-signal task is a primary paradigm used to understand response inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about the stop-signal task",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "88988083-f617-4312-8a7e-128e35cab75d",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C7",
+      "claim": "The independent race model assumes that a go process begins when a go stimulus occurs and races independently against a stop process that begins when the stop stimulus occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "The dominant theoretical framework for understanding and interpreting stopping tasks is the independent race model (Logan et al., 2014; Logan and Cowan, 1984), which assumes that a go process begins when a go stimulus occurs and races independently against a stop process that begins when the stop stimulus occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Logan et al., 2014 and Logan and Cowan, 1984",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "af008f5b-f550-404d-af3d-f844c5f2508b",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C8",
+      "claim": "In the ABCD stop-signal task, 5/6 of all trials are go trials.",
+      "claim_type": "EXPLICIT",
+      "source": "5/6 of all trials are go trials, in which a subject sees a go stimulus (a rightward- or leftward-pointing arrow) and makes one of two speeded responses based upon the direction of the arrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the task design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "620a0f1c-cc8a-47c3-96a4-d348349721bd",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C9",
+      "claim": "In the ABCD stop-signal task, the go stimulus is removed from the screen after 1000 ms or when a response occurs, whichever comes first.",
+      "claim_type": "EXPLICIT",
+      "source": "The go stimulus is removed from the screen after 1000 ms or when a response occurs, whichever comes first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the task design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "dd5dda98-dcd9-4ea1-a026-38adda4a2c36",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C10",
+      "claim": "In the ABCD stop-signal task, on 1/6 of all trials, the go stimulus is replaced with the stop signal after the SSD or when a response occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "On 1/6 of all trials, this go stimulus is replaced with the stop signal (a vertical arrow) after the go stimulus has been on the screen for the duration of the SSD or when a response occurs; the stop signal is then presented for 300 ms (but see Issue 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the task design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "e3da4ec4-f6d3-4266-9afe-15068c1609d8",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C11",
+      "claim": "Mean go stimulus duration on go trials in the ABCD data was 569 ms (SD = 105 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Mean go stimulus duration on go trials was 569 ms (standard deviation [SD] = 105 ms), and mean go stimulus duration on stop trials was 228 ms (SD = 118 ms), so on average, subjects had 341 ms longer on go trials to apprehend the go stimulus (see Figure 2 for full distributions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Computed from ABCD data and shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "2d2c058c-854a-4d4b-9fac-dd6b91e191d1",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C12",
+      "claim": "Mean go stimulus duration on stop trials in the ABCD data was 228 ms (SD = 118 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Mean go stimulus duration on go trials was 569 ms (standard deviation [SD] = 105 ms), and mean go stimulus duration on stop trials was 228 ms (SD = 118 ms), so on average, subjects had 341 ms longer on go trials to apprehend the go stimulus (see Figure 2 for full distributions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Computed from ABCD data and shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "305448c9-b29a-48f9-8f9c-b320d342e365",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C13",
+      "claim": "The independent race model requires that the go process is the same on go and stop trials (context independence).",
+      "claim_type": "EXPLICIT",
+      "source": "This is important because the current models for understanding stopping performance require that the go process is the same on go and stop trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about the independent race model",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "9bc43665-da26-4a97-b76e-55b020a5d4c3",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C14",
+      "claim": "Context independence is essential for calculating SSRT because it allows one to assume that the full distribution of responses on go trials can stand in for the full distribution of go processes on stop trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Context independence is essential for calculating SSRT because context independence allows one to assume that the full distribution of responses on go trials can stand in for the (unobservable) full distribution of go processes on stop trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about SSRT calculation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "5d235c29-5b3f-4121-87e5-2d4044c7157c",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C15",
+      "claim": "Violations of context independence contaminate major dependent variables in the stop-signal task, including the inhibition function and stop-failure RT.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, violations of context independence contaminate other major dependent variables in the stop-signal task, including the inhibition function and stop-failure RT (Bissett et al., 2021; Logan and Cowan, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bissett et al., 2021 and Logan and Cowan, 1984",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "c04920a9-1d98-426f-9767-c947a5e80d9c",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C16",
+      "claim": "Shorter duration stimuli yield slower responses in both simple and choice reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "In both simple (e.g., Froeberg, 1907) and choice (e.g., Kaswan and Young, 1965) reaction times, there is evidence that shorter duration stimuli yield slower responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Froeberg, 1907 and Kaswan and Young, 1965",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "56dba5c6-76bf-4cca-aa8d-98053d311460",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C17",
+      "claim": "The effect of stimulus duration on response speed occurs even for stimuli presented for hundreds of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect of stimulus duration on response speed occurs even for stimuli presented for hundreds of milliseconds (Kahneman and Norman, 1964; Kaswan and Young, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kahneman and Norman, 1964 and Kaswan and Young, 1965",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "8d51831f-3576-4efe-a653-c5f21a2b6a9c",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C18",
+      "claim": "Bloch's law states that intensity and duration can be traded off for shorter duration stimuli over the first 100 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This relates to Bloch's law (Bloch, 1885), which states that intensity and duration can be traded off for shorter duration stimuli, though this trade-off only occurs over the first 100 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bloch, 1885",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "f2888390-c173-4555-bd9c-44e0dc7af92e",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C19",
+      "claim": "Pieron's law states that RTs decrease with stimulus intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "This also relates to Pieron's law, which states that RTs decrease with stimulus intensity (Pieron, 1914).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pieron, 1914",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "87c2dad0-bb5e-46bd-bab8-b407011a9d9c",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C20",
+      "claim": "In the ABCD dataset, mean stop-failure RT (M = 456 ms, SD = 109 ms) was shorter than overt responses on go trials (M = 543 ms, SD = 95 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "On average across all subjects, stop-failure RT (M = 456 ms, SD = 109 ms) was shorter than overt responses on go trials (M = 543 ms, SD = 95 ms, 95% confidence interval of the difference [85.9, 88.8]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "94fe73a6-efde-4450-b16b-e741287bdf4d",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C21",
+      "claim": "For 524 of the 8,464 subjects (6.2%), mean stop-failure RT was longer than mean RT on overt responses in go trials.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for 524 of the 8,464 subjects (6.2% of all subjects), mean stop-failure RT was longer than mean RT on overt responses in go trials, suggesting that a subset of subjects violated context independence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "56b2fef3-b83f-47ff-b62a-b3e52fa03289",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C22",
+      "claim": "Stop-failure trials in the ABCD data had much lower accuracy (79%) than overt go trials (90%).",
+      "claim_type": "EXPLICIT",
+      "source": "Stop-failure trials had much lower accuracy (79%) than overt go trials (90%), 95% confidence interval of the difference (10.6%, 11.1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "27b7da92-534e-4d03-afc4-8ba687ef745b",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C23",
+      "claim": "Choice accuracy on stop-failure trials was increasingly impaired at shorter SSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, choice accuracy on stop-failure trials was increasingly impaired at shorter SSD (see Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3 from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "4b8ceaec-0b22-4c89-9601-57a7a3f5ddbe",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C24",
+      "claim": "In other datasets, choice accuracy on stop-failure trials, even at shorter SSDs, tends to be similar to overt go trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In other datasets, choice accuracy on stop-failure trials, even at shorter SSDs, tends to be similar to overt go trials (Bissett et al., 2021), which suggests that the impaired go accuracy on stop-failure trials in the present study results from the shorter go stimulus durations on stop trials in this task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bissett et al., 2021",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "daa6e2c2-83e5-4acc-9c9a-b34b90bbb54d",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C25",
+      "claim": "All existing models for stopping assume that the parameters that generate the distribution of go processes take the same value on go and stop trials.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, all existing models for stopping assume that the parameters that generate the distribution of go processes take the same value on go and stop trials (e.g., Boucher et al., 2007; Logan et al., 2014; Logan et al., 2015; Matzke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple modeling papers",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "1f1a95a1-b5c2-4e8c-bacb-e53e957ec76c",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C26",
+      "claim": "There is no existing model that can capture the ABCD stopping data and no valid way to compute SSRT from these data because the go process is different on go and stop trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, there is no existing model that can capture the ABCD stopping data and no valid way to compute SSRT from these data because the go process is different on go and stop trials (see Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the combination of existing model assumptions and ABCD data characteristics",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "dd9c0e3e-7841-4eb4-81be-b36b6aab0374",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C27",
+      "claim": "Violations of context independence can occur even without Design Issue 1.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that violations of context independence can occur even without the introduction of Design Issue 1 (Akerfelt et al., 2006; Bissett et al., 2021; Colonius et al., 2001; Gulberti et al., 2014; Ozyurt et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "d9f9ea98-040b-4af2-a575-2df99e213c3f",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C28",
+      "claim": "The violations in the ABCD dataset manifest in an unprecedented way (lower choice accuracy on stop-failure trials) that go beyond previous evidence for violations.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, as we mentioned above, the violations in the ABCD dataset manifest in an unprecedented way (i.e., lower choice accuracy on stop-failure trials) that go beyond previous evidence for violations (e.g., Bissett et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with previous literature",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "1a0237a4-d583-4bd0-a56c-1fda5d0e8efe",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C29",
+      "claim": "The slowed go processing model would overestimate mean SSRT by 75 ms compared to the independent race model.",
+      "claim_type": "EXPLICIT",
+      "source": "This would overestimate mean SSRT by 75 ms for the slower drift rate model (slower drift rate SSRT = 207 ms and independent race SSRT = 282 ms)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "40cba95f-dfdd-4784-86bf-30e54bff3c06",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C30",
+      "claim": "The mixture guessing model would underestimate SSRT by 61 ms compared to the independent race model.",
+      "claim_type": "EXPLICIT",
+      "source": "underestimate SSRT by 61 ms with the mixture guessing model (mixture guessing = 343 ms)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "90d5dfc9-cbd3-40a0-bb9d-9ed778502ff7",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C31",
+      "claim": "The confusion model would overestimate mean SSRT by 22 ms compared to the independent race model.",
+      "claim_type": "EXPLICIT",
+      "source": "and overestimate mean SSRT by 22 ms for the confusion model (confusion SSRT = 260 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "8d9bb957-9e01-4e81-b3f1-18d447c66232",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C32",
+      "claim": "Nine percent of all stop trials in the ABCD data had an SSD of 0 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine percent of all stop trials had an SSD of 0 ms (see Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Computed from ABCD data and shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "cc88acd4-eed6-46fa-b3c6-c84f6df98008",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C33",
+      "claim": "The stop success rate at 0 ms SSD in the ABCD data was 60.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "In these data, we found that the stop success rate at the 0 ms SSD was 60.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "2e5bb344-48fb-4176-89f8-64e1f8bf0ca1",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C34",
+      "claim": "In the ABCD dataset, 2.7% of subjects had a coding error where all subsequent stop trials had a response erroneously recorded at the same timestamp after an initial fast response.",
+      "claim_type": "EXPLICIT",
+      "source": "In the entire sample, only 2.7% of subjects had this specific problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "1d1a785c-f681-41ef-8f5c-01597e18fc9f",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C35",
+      "claim": "In the ABCD task, if SSD is \u2264 700 ms, then the stop signal is presented for 300 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "If SSD is \u2264 700 ms, then the stop signal is presented for 300 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the task design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "7497fdc4-1170-449f-b6dd-b0d168a245ed",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C36",
+      "claim": "In the ABCD task, if SSD is >700 ms, then the stop signal is presented for 1000-SSD.",
+      "claim_type": "EXPLICIT",
+      "source": "If SSD is >700 ms, then the stop signal is presented for 1000-SSD, with a maximum SSD of 900 (and therefore a minimum stop duration of 100 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the task design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "7c51f3b1-a821-4d22-aa4a-0781d47b8254",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C37",
+      "claim": "SSDs > 700 ms are rare in the ABCD data (1.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "SSDs > 700 ms are rare in these data (see Figure 6, 1.1%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Computed from ABCD data and shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "c96115d2-3a7a-4fa0-b9db-afbdb9031ea0",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C38",
+      "claim": "In the ABCD task, the probability of a stop signal given the immediately preceding trial was a stop signal is 0.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ABCD task, this value is 0, as stop trials never repeat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "7390ca9d-0970-4496-8906-7cb94e935191",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C39",
+      "claim": "In the ABCD task, stop trials almost never occur if there was a stop trial two trials before (conditional probability of 1.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, stop trials almost never occur if there was a stop trial two trials before (conditional probability of 1.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "853af9ad-5f56-4754-a6d2-1afa36ebcc15",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C40",
+      "claim": "Post-stop-signal slowing was around 20 ms for each quartile except the second, in which it was 40 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not what we found (see Figure 8) as post-stop-signal slowing was around 20 ms for each quartile except the second, in which it was 40 ms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Computed from ABCD data and shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "52967e8d-46f4-416d-a09f-c499943288b6",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C41",
+      "claim": "25,854 of the 376,479 trials (6.9%) classified as incorrect go trials appear to actually have the correct go response.",
+      "claim_type": "EXPLICIT",
+      "source": "25,854 of the 376,479 trials (6.9%) classified as incorrect go trials appear to actually have the correct go response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "f82a91e1-8865-4e11-a00a-4549ce2faf9d",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C42",
+      "claim": "61,215 of the 2,162,718 trials (2.8%) classified as correct go trials are incorrect go trials.",
+      "claim_type": "EXPLICIT",
+      "source": "61,215 of the 2,162,718 trials (2.8%) classified as correct go trials are incorrect go trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "e9f1ea0d-df64-4b12-9997-1179042d30fa",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C43",
+      "claim": "1,081 of the 260,053 trials (0.4%) classified as correct stops are incorrect stops, as they include one or more overt responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, 1,081 of the 260,053 trials (0.4%) classified as correct stops are incorrect stops, as they include one or more overt responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "cdbc5661-da4d-4bae-8799-1151d0ed6bb6",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C44",
+      "claim": "In the ABCD dataset, SSD starts at 50 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ABCD dataset, SSD starts at 50 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the task design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "d57851e1-4a0c-4d4f-9b1a-68a21d1e4b71",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C45",
+      "claim": "The ABCD study uses a 0.167 stop probability.",
+      "claim_type": "EXPLICIT",
+      "source": "This ABCD study uses a 0.167 stop probability, which is unusually low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the task design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "c5d6593c-f14f-489c-982e-9a3623d56cc0",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C46",
+      "claim": "Stop-signal probability is commonly 0.25, 0.33, or a similar value in stop-signal studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Stop-signal probability is commonly 0.25, 0.33, or a similar value in stop-signal studies (Verbruggen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Verbruggen et al., 2019",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "1c08face-5cf9-4ea8-a591-344910149ad0",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C47",
+      "claim": "At least some of the ABCD design issues extend to the IMAGEN study.",
+      "claim_type": "EXPLICIT",
+      "source": "We would also like to note that at least some of these design issues extend to the IMAGEN study (Schumann et al., 2010), which Garavan et al., 2020 note used 'A very similar task, with the same Go stimulus design features'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with IMAGEN study description",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "4d92c158-7a5e-4ebe-a46e-3c5b3e88175c",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C48",
+      "claim": "The authors' preliminary simulations suggest that mean SSRT estimates are contaminated by Design Issue 1 violations of context independence.",
+      "claim_type": "EXPLICIT",
+      "source": "These preliminary simulations suggest that mean SSRT estimates are contaminated and individual differences may be contaminated by the Design Issue 1 violations of context independence, particularly if the true between-subject variability in SSRT is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "af8cc466-a339-4531-909b-85fd2127b648",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C49",
+      "claim": "Individual differences in SSRT may be contaminated by Design Issue 1 violations, particularly if the true between-subject variability in SSRT is small.",
+      "claim_type": "EXPLICIT",
+      "source": "These preliminary simulations suggest that mean SSRT estimates are contaminated and individual differences may be contaminated by the Design Issue 1 violations of context independence, particularly if the true between-subject variability in SSRT is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "c078e636-e9c2-46c0-81c6-01d7034c3c80",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C50",
+      "claim": "If between-subject variability in SSRT is high (SD = 85 ms), rank correlations between alternative models and the independent race model are largely preserved (r range = 0.85\u20130.99, mean = 0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "If we assume high between-subject variability in SSRT (SD = 85 ms), then the rank correlations are largely preserved across generating models and SSD approaches (r range = 0.85\u20130.99, mean = 0.93).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulations shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "867845c9-a878-47fc-904c-a92cf098b956",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C51",
+      "claim": "As between-subject variability in SSRT reduces to SD = 25 ms, rank correlations decrease (r range = 0.66\u20130.97, mean = 0.78).",
+      "claim_type": "EXPLICIT",
+      "source": "However, as between-subject variability in SSRT reduces (SD = 25 ms), the rank correlations decrease (r range = 0.66\u20130.97, mean = 0.78).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulations shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "2e4fa8e1-eb8b-4cbf-8aec-bc6c1267ce42",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C52",
+      "claim": "At very low between-subject variability (SD = 5 ms), rank correlations can become very low (r range = 0.18\u20130.89, mean = 0.63).",
+      "claim_type": "EXPLICIT",
+      "source": "At very low between-subject variability, (SD = 5 ms) the rank correlations can become very low (r range = 0.18\u20130.89, mean = 0.63).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulations shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "2df95e77-c736-47ab-9f11-b3d9f3660673",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C53",
+      "claim": "At the limit of no between-subject variability in SSRT (SD = 0 ms), rank correlations remain well above 0 on average (r range = 0.02\u20130.91, mean = 0.54).",
+      "claim_type": "EXPLICIT",
+      "source": "At the limit, if we assume no between-subject variability in SSRT and therefore between-subject variance is driven entirely by differences in SSD, go RT, and the different generating models, rank correlations continue to reduce but remain well above 0 on average (r range = 0.02\u20130.91, mean = 0.54).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulations shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "0fa98b05-c5b2-470f-9cc5-8f00742b6b63",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C54",
+      "claim": "The eight design issues identified significantly compromise the utility of the stopping data in the ABCD study for understanding the construct of response inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we believe that the most fundamental issues are incontrovertible errors, and in the aggregate, we believe these eight issues significantly compromise the utility of the stopping data in this study for understanding the construct of response inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overall conclusion based on analysis of all issues",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "2afa554e-6d40-440c-a775-a631e7760fa3",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C55",
+      "claim": "Unless the ABCD community shows that Design Issue 1 does not distort conclusions based upon SSRT estimates, researchers should not use the ABCD dataset to estimate SSRTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the above empirical evidence and simulations, and as suggested by our reviewers, unless the ABCD community shows that this design issue does not distort conclusions based upon SSRT estimates (or any other stop-signal measure), researchers should not use the ABCD dataset to estimate SSRTs and should use the neuroimaging data with caution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Recommendation based on analysis and simulations",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "bb42f144-98b9-4b4e-9e5d-e743e1d4929b",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C56",
+      "claim": "Researchers should use the ABCD neuroimaging data with caution.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the above empirical evidence and simulations, and as suggested by our reviewers, unless the ABCD community shows that this design issue does not distort conclusions based upon SSRT estimates (or any other stop-signal measure), researchers should not use the ABCD dataset to estimate SSRTs and should use the neuroimaging data with caution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Recommendation based on analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "6e563d66-2730-40f3-bb7e-c24710fe869f",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C57",
+      "claim": "Removing stop trials with SSDs < 200 ms would remove 51.5% of all stop trials in the ABCD dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "However, note that removing stop trials that have SSDs < 200 ms would remove 51.5% of all stop trials in the ABCD dataset, leaving less than an average of 30 stop trials per subject.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computed from ABCD data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "322729ff-468f-42bd-b527-33c14a517a8f",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C58",
+      "claim": "A rebuttal preprint manuscript has been submitted from a group of authors involved in the design of the ABCD stop-signal task.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the original submission of this manuscript, a rebuttal preprint manuscript has been submitted from a group of authors involved in the design of the ABCD stop-signal task (Garavan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the publication history",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "5d79d553-fb38-4d30-8eb4-9a1702336abe",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C59",
+      "claim": "The rebuttal manuscript did not dispute the presence of any of the specific issues raised in this manuscript.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, we stand behind the conclusions of the present manuscript and found no evidence or argumentation within their rebuttal that meaningfully challenges any of our manuscript's conclusions; importantly, their manuscript did not dispute the presence of any of the specific issues raised below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about the rebuttal content",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "376554f1-6147-4a45-9cdf-e728bde7fee7",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "claim_id": "C60",
+      "claim": "The authors corrected an error in their code on July 17, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We would like to thank Garavan et al., 2020 for pointing out an error in our code, which we corrected on July 17, 2020 (https://www.biorxiv.org/content/10.1101/2020.05.08.084707v4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about code correction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The ABCD stop-signal task violates context independence because go stimulus duration differs substantially between go trials (mean 569 ms) and stop trials (mean 228 ms), leading to impaired go processing on stop trials. This is evidenced by lower choice accuracy on stop-failure trials (79%) compared to go trials (90%), with accuracy degrading further at shorter SSDs. This violation is unprecedented in the stop-signal literature and invalidates existing computational models that assume context independence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C28 provide converging empirical evidence (RT differences, accuracy differences) and theoretical support (psychophysical laws, model assumptions) demonstrating that the ABCD task design violates context independence. The data clearly show differential go processing between trial types (C20-C23), supported by established psychophysical principles (C16-C19) and comparison with other datasets (C24). The conclusion that existing models cannot capture this data (C25-C26) follows logically from the violation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "cd38d09d-8e25-4647-ab99-a21cfe6642be",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Three preliminary computational models (slowed go processing, guessing, confusion) were developed to capture context dependence violations in ABCD data. Simulations show these models produce SSRT estimation errors of 22-75 ms compared to the independent race model. Individual differences in SSRT are increasingly contaminated as true between-subject variability decreases, with rank correlations dropping from 0.93 (SD=85ms) to 0.54 (SD=0ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C31 and C48-C53 present simulation results, but the authors explicitly acknowledge these are 'preliminary' models requiring 'substantial additional work, including parameter fitting and recovery, model recovery, and model comparison.' The simulations demonstrate potential contamination but do not validate which model (if any) correctly captures the ABCD violations. Without model validation, the magnitude of contamination remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "8ce779c9-1582-435a-8d7d-0b4f77e11932",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nine percent of stop trials had 0 ms SSD (no go stimulus presented), with unexpectedly low stop success rate (60.1%). Additionally, 2.7% of subjects experienced a coding error where responses propagated incorrectly across trials after fast responses (<50 ms), causing SSD to remain stuck at 0 ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 report straightforward descriptive statistics from the ABCD data showing the prevalence of 0 ms SSD trials and the coding error. The low stop success rate at 0 ms SSD (C33) is appropriately characterized as 'surprisingly low' given that subjects receive no go stimulus to initiate a response. These are direct observations from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "f2998677-0009-4f64-a190-27a579c6acb7",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Stop signal duration varies with SSD: 300 ms for SSD \u2264700 ms, but 1000-SSD for longer SSDs. However, SSDs >700 ms are rare (1.1% of trials), limiting the impact of this design issue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 describe the task design and prevalence of affected trials. The variable stop signal duration violates stop context independence in principle, but C37 demonstrates this affects very few trials. The authors appropriately characterize this as a more minor issue given its rarity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "473ab18d-abf9-4f10-a5e4-98b946e4fe99",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ABCD task uses non-uniform conditional trial probabilities, with stop trials never repeating (P=0) and rarely occurring after one intervening go trial (P=1.8%). However, post-stop-signal slowing remained consistent across task quartiles (20-40 ms), suggesting subjects did not learn or exploit this contingency in the baseline session.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 document the non-uniform transition probabilities from the data, while C40 shows empirical evidence that subjects did not appear to learn this contingency (no reduction in post-stop slowing over time). The authors appropriately conclude this may not affect baseline data but could become problematic in longitudinal sessions. C46 provides context for typical stop probabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "aaf2f828-4e33-4ba2-b551-6fbcc3a3737e",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Trial accuracy is incorrectly coded in the ABCD dataset: 6.9% of trials marked as incorrect go trials are actually correct, 2.8% of correct go trials are actually incorrect, and 0.4% of correct stops include overt responses and should be incorrect stops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 report specific percentages of miscategorized trials computed directly from the ABCD data. The authors identify specific causes (button flips, response overwriting, timing issues) and note that most errors can be corrected by recategorization, though the incorrect stop categorization (C43) cannot be fully corrected as it affected the SSD tracking algorithm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "a41ba1fe-96c3-4e15-b845-96ade1800ce9",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SSD starts at 50 ms in the ABCD task, resulting in high stop success rates for approximately the first 10-15 stop trials. Removing trials with SSD <200 ms would eliminate 51.5% of stop trials, leaving fewer than 30 stop trials per subject on average.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C57 report factual information about the task design and data composition. The low starting SSD is suboptimal for efficiently sampling the inhibition function, but the data loss from removing short SSDs would be substantial (C57). These are straightforward descriptive findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "e025cb12-03ce-41da-9585-03f222a19e56",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ABCD study uses an unusually low stop probability (0.167) compared to typical values (0.25-0.33), reducing statistical power without apparent benefit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 compare the ABCD stop probability to consensus guidelines (Verbruggen et al., 2019). This is a straightforward design choice that reduces power but does not appear to contaminate the data. The authors appropriately characterize this as suboptimal but not fundamentally problematic.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "d19eb79d-088a-47a2-a24b-9de1716a6591",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The eight design issues collectively compromise the utility of ABCD stopping data for understanding response inhibition. The authors recommend researchers not use the ABCD dataset to estimate SSRTs unless the community demonstrates that Design Issue 1 does not distort conclusions, and suggest using neuroimaging data with caution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 represent the authors' overall conclusions based on the cumulative evidence from all identified issues. The recommendation is appropriately cautious given the demonstrated violations of context independence (the most fundamental issue) and the lack of validated models to account for these violations. The conditional nature of the recommendation (C55) is scientifically appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "029cf469-f7cb-4cf9-8763-b7cc8f632d0e",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ABCD study is a large-scale ($590 million) longitudinal neuroimaging study of 11,878 youth including three fMRI tasks. The authors analyzed stop-signal task data from 8,464 participants at baseline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide factual background about the ABCD study supported by citations (C1, C4) and straightforward descriptions of study composition (C2-C3) and analysis sample (C5). These are standard introductory claims establishing context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "e3434717-5dd3-44b9-b80a-5497963776f8",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The stop-signal task measures response inhibition using the independent race model framework, where go and stop processes race independently. The ABCD task uses 5/6 go trials and 1/6 stop trials, with go stimuli removed after 1000 ms or response, and replaced by stop signals after SSD on stop trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 describe established knowledge about the stop-signal task (C6-C7, supported by citations) and factual descriptions of the ABCD task design (C8-C10). These are accurate characterizations of the paradigm and task structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    },
+    {
+      "id": "d4605f87-5bcb-412e-9beb-355325faa519",
+      "content_id": "269aa52b-c16a-4d6d-a193-486bb7bb5ae2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The design issues extend to the IMAGEN study which used similar task features. A rebuttal manuscript was submitted by ABCD task designers but did not dispute the presence of the identified issues. The authors corrected a code error identified by the rebuttal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C60 provide factual information about related work (C47), the publication history (C58), and the authors' response to criticism (C59-C60). These are straightforward statements about the scientific discourse surrounding the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:45:43.782792Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e3da4ec4-f6d3-4266-9afe-15068c1609d8",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "2d2c058c-854a-4d4b-9fac-dd6b91e191d1",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "305448c9-b29a-48f9-8f9c-b320d342e365",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "9bc43665-da26-4a97-b76e-55b020a5d4c3",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "5d235c29-5b3f-4121-87e5-2d4044c7157c",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "c04920a9-1d98-426f-9767-c947a5e80d9c",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "56dba5c6-76bf-4cca-aa8d-98053d311460",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "8d51831f-3576-4efe-a653-c5f21a2b6a9c",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "f2888390-c173-4555-bd9c-44e0dc7af92e",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "87c2dad0-bb5e-46bd-bab8-b407011a9d9c",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "94fe73a6-efde-4450-b16b-e741287bdf4d",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "56b2fef3-b83f-47ff-b62a-b3e52fa03289",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "27b7da92-534e-4d03-afc4-8ba687ef745b",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "4b8ceaec-0b22-4c89-9601-57a7a3f5ddbe",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "daa6e2c2-83e5-4acc-9c9a-b34b90bbb54d",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "1f1a95a1-b5c2-4e8c-bacb-e53e957ec76c",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "dd9c0e3e-7841-4eb4-81be-b36b6aab0374",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "d9f9ea98-040b-4af2-a575-2df99e213c3f",
+      "result_id": "ebeb4bb5-ebe9-40b6-aecf-44c3f23d0d89"
+    },
+    {
+      "claim_id": "1a0237a4-d583-4bd0-a56c-1fda5d0e8efe",
+      "result_id": "cd38d09d-8e25-4647-ab99-a21cfe6642be"
+    },
+    {
+      "claim_id": "40cba95f-dfdd-4784-86bf-30e54bff3c06",
+      "result_id": "cd38d09d-8e25-4647-ab99-a21cfe6642be"
+    },
+    {
+      "claim_id": "90d5dfc9-cbd3-40a0-bb9d-9ed778502ff7",
+      "result_id": "cd38d09d-8e25-4647-ab99-a21cfe6642be"
+    },
+    {
+      "claim_id": "4d92c158-7a5e-4ebe-a46e-3c5b3e88175c",
+      "result_id": "cd38d09d-8e25-4647-ab99-a21cfe6642be"
+    },
+    {
+      "claim_id": "c078e636-e9c2-46c0-81c6-01d7034c3c80",
+      "result_id": "cd38d09d-8e25-4647-ab99-a21cfe6642be"
+    },
+    {
+      "claim_id": "867845c9-a878-47fc-904c-a92cf098b956",
+      "result_id": "cd38d09d-8e25-4647-ab99-a21cfe6642be"
+    },
+    {
+      "claim_id": "2e4fa8e1-eb8b-4cbf-8aec-bc6c1267ce42",
+      "result_id": "cd38d09d-8e25-4647-ab99-a21cfe6642be"
+    },
+    {
+      "claim_id": "2df95e77-c736-47ab-9f11-b3d9f3660673",
+      "result_id": "cd38d09d-8e25-4647-ab99-a21cfe6642be"
+    },
+    {
+      "claim_id": "8d9bb957-9e01-4e81-b3f1-18d447c66232",
+      "result_id": "8ce779c9-1582-435a-8d7d-0b4f77e11932"
+    },
+    {
+      "claim_id": "cc88acd4-eed6-46fa-b3c6-c84f6df98008",
+      "result_id": "8ce779c9-1582-435a-8d7d-0b4f77e11932"
+    },
+    {
+      "claim_id": "2e5bb344-48fb-4176-89f8-64e1f8bf0ca1",
+      "result_id": "8ce779c9-1582-435a-8d7d-0b4f77e11932"
+    },
+    {
+      "claim_id": "1d1a785c-f681-41ef-8f5c-01597e18fc9f",
+      "result_id": "f2998677-0009-4f64-a190-27a579c6acb7"
+    },
+    {
+      "claim_id": "7497fdc4-1170-449f-b6dd-b0d168a245ed",
+      "result_id": "f2998677-0009-4f64-a190-27a579c6acb7"
+    },
+    {
+      "claim_id": "7c51f3b1-a821-4d22-aa4a-0781d47b8254",
+      "result_id": "f2998677-0009-4f64-a190-27a579c6acb7"
+    },
+    {
+      "claim_id": "c96115d2-3a7a-4fa0-b9db-afbdb9031ea0",
+      "result_id": "473ab18d-abf9-4f10-a5e4-98b946e4fe99"
+    },
+    {
+      "claim_id": "7390ca9d-0970-4496-8906-7cb94e935191",
+      "result_id": "473ab18d-abf9-4f10-a5e4-98b946e4fe99"
+    },
+    {
+      "claim_id": "853af9ad-5f56-4754-a6d2-1afa36ebcc15",
+      "result_id": "473ab18d-abf9-4f10-a5e4-98b946e4fe99"
+    },
+    {
+      "claim_id": "c5d6593c-f14f-489c-982e-9a3623d56cc0",
+      "result_id": "473ab18d-abf9-4f10-a5e4-98b946e4fe99"
+    },
+    {
+      "claim_id": "52967e8d-46f4-416d-a09f-c499943288b6",
+      "result_id": "aaf2f828-4e33-4ba2-b551-6fbcc3a3737e"
+    },
+    {
+      "claim_id": "f82a91e1-8865-4e11-a00a-4549ce2faf9d",
+      "result_id": "aaf2f828-4e33-4ba2-b551-6fbcc3a3737e"
+    },
+    {
+      "claim_id": "e9f1ea0d-df64-4b12-9997-1179042d30fa",
+      "result_id": "aaf2f828-4e33-4ba2-b551-6fbcc3a3737e"
+    },
+    {
+      "claim_id": "cdbc5661-da4d-4bae-8799-1151d0ed6bb6",
+      "result_id": "a41ba1fe-96c3-4e15-b845-96ade1800ce9"
+    },
+    {
+      "claim_id": "6e563d66-2730-40f3-bb7e-c24710fe869f",
+      "result_id": "a41ba1fe-96c3-4e15-b845-96ade1800ce9"
+    },
+    {
+      "claim_id": "d57851e1-4a0c-4d4f-9b1a-68a21d1e4b71",
+      "result_id": "e025cb12-03ce-41da-9585-03f222a19e56"
+    },
+    {
+      "claim_id": "c5d6593c-f14f-489c-982e-9a3623d56cc0",
+      "result_id": "e025cb12-03ce-41da-9585-03f222a19e56"
+    },
+    {
+      "claim_id": "0fa98b05-c5b2-470f-9cc5-8f00742b6b63",
+      "result_id": "d19eb79d-088a-47a2-a24b-9de1716a6591"
+    },
+    {
+      "claim_id": "2afa554e-6d40-440c-a775-a631e7760fa3",
+      "result_id": "d19eb79d-088a-47a2-a24b-9de1716a6591"
+    },
+    {
+      "claim_id": "bb42f144-98b9-4b4e-9e5d-e743e1d4929b",
+      "result_id": "d19eb79d-088a-47a2-a24b-9de1716a6591"
+    },
+    {
+      "claim_id": "dfbfdcea-e890-4949-a49f-788d1aee32ab",
+      "result_id": "029cf469-f7cb-4cf9-8763-b7cc8f632d0e"
+    },
+    {
+      "claim_id": "822b4752-a346-4dad-9627-fa9809c44b57",
+      "result_id": "029cf469-f7cb-4cf9-8763-b7cc8f632d0e"
+    },
+    {
+      "claim_id": "3f002f7e-528c-4305-b02d-99686a45607b",
+      "result_id": "029cf469-f7cb-4cf9-8763-b7cc8f632d0e"
+    },
+    {
+      "claim_id": "98cc8bdd-7531-4a34-a279-38386e638669",
+      "result_id": "029cf469-f7cb-4cf9-8763-b7cc8f632d0e"
+    },
+    {
+      "claim_id": "2221a551-a097-40ad-a7a6-ed2587ea4518",
+      "result_id": "029cf469-f7cb-4cf9-8763-b7cc8f632d0e"
+    },
+    {
+      "claim_id": "9be6693d-2e27-47ab-9c33-f107d2373d36",
+      "result_id": "e3434717-5dd3-44b9-b80a-5497963776f8"
+    },
+    {
+      "claim_id": "88988083-f617-4312-8a7e-128e35cab75d",
+      "result_id": "e3434717-5dd3-44b9-b80a-5497963776f8"
+    },
+    {
+      "claim_id": "af008f5b-f550-404d-af3d-f844c5f2508b",
+      "result_id": "e3434717-5dd3-44b9-b80a-5497963776f8"
+    },
+    {
+      "claim_id": "620a0f1c-cc8a-47c3-96a4-d348349721bd",
+      "result_id": "e3434717-5dd3-44b9-b80a-5497963776f8"
+    },
+    {
+      "claim_id": "dd5dda98-dcd9-4ea1-a026-38adda4a2c36",
+      "result_id": "e3434717-5dd3-44b9-b80a-5497963776f8"
+    },
+    {
+      "claim_id": "1c08face-5cf9-4ea8-a591-344910149ad0",
+      "result_id": "d4605f87-5bcb-412e-9beb-355325faa519"
+    },
+    {
+      "claim_id": "322729ff-468f-42bd-b527-33c14a517a8f",
+      "result_id": "d4605f87-5bcb-412e-9beb-355325faa519"
+    },
+    {
+      "claim_id": "5d79d553-fb38-4d30-8eb4-9a1702336abe",
+      "result_id": "d4605f87-5bcb-412e-9beb-355325faa519"
+    },
+    {
+      "claim_id": "376554f1-6147-4a45-9cdf-e728bde7fee7",
+      "result_id": "d4605f87-5bcb-412e-9beb-355325faa519"
+    }
+  ],
+  "comparisons": []
+}

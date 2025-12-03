@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "10.9% of V2 neurons are motion boundary (MB) neurons that exhibit robust, cue-invariant orientation selectivity to both MB and luminance stimuli, with similar preferred orientations across stimulus types. These MB neurons show stronger orientation selectivity than non-MB neurons but similar receptive field sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C28-C33 provide converging evidence from multiple measurements (proportion of MB neurons, orientation tuning consistency, OSI comparisons, RF size comparisons) that are internally consistent and statistically supported. The proportion (10.9%) is consistent with prior work (C32), and the cue-invariance finding (C28-C29) is directly demonstrated in Figure 1H.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "V2 MB neurons contribute to MB perception, as evidenced by behavioral correlations. Monkeys achieved >95% accuracy at 100% coherence with thresholds of 36.7% (monkey S) and 67.2% (monkey W). While most neurons had higher thresholds than behavior (mean ratio 2.78), the most sensitive neurons approached behavioral thresholds. MB neurons showed significant choice probability (mean CP=0.59, 12/15 neurons with CP>0.5), indicating choice-related activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 provide multiple lines of converging evidence linking V2 MB neurons to behavior: neurometric functions, threshold comparisons, and choice probability analysis. The statistical tests are appropriate (bootstrap, t-tests), and the findings are internally consistent. The observation that some neurons match behavioral sensitivity (C39-C40) while the population average is lower (C37-C38) is a common finding in sensory neuroscience and does not undermine the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "V2 exhibits significantly stronger MB detection capability than V1 at the population level. V2 had 10.9% MB neurons versus 2% in V1, higher mean OSI for MB stimuli, and stronger behavioral correlations (V2 mean CP=0.53 vs V1 mean CP=0.51, not different from chance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C62 provide systematic V1-V2 comparisons across multiple metrics (proportion of MB neurons, OSI distributions, CP values) with appropriate statistical tests (chi-squared, Wilcoxon, t-tests). The findings are internally consistent and support the hierarchical processing interpretation. However, the V1 sample size is limited (n=93 neurons, only 2 MB neurons), which reduces statistical power for V1 comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "V2 neurons show population-level choice-related activity during MB discrimination. All V2 neurons (MB and non-MB combined) had mean CP=0.53 (p<0.001), with 49/140 neurons showing significant CP. Non-MB V2 neurons alone had mean CP=0.53 (p<0.001). V1 neurons showed no significant population CP (mean=0.51, p=0.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 demonstrate that choice-related activity extends beyond MB neurons to the broader V2 population, with appropriate statistical tests. The finding that non-MB V2 neurons also show significant CP (C58) is interesting and suggests broader V2 involvement in the task. The V1 comparison strengthens the conclusion, though V1 sample size is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Functional connections exist between V2 direction-selective (DS) and MB neurons that operate under specific stimulus conditions. Cross-correlogram analysis showed elevated correlation at zero time lag for MB-DS pairs under MB stimulus conditions, with significantly higher correlation for preferred versus null orientations (p<0.001). This pattern was specific to MB stimuli and not observed for real-line or temporal boundary controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 provide statistical evidence for stimulus-specific correlations between DS and MB neurons. However, the interpretation is complicated by the zero-lag peak (C69), which the authors acknowledge is inconsistent with a simple feedforward DS\u2192MB model. The alternative explanations offered (bidirectional interactions or common input, C70) are speculative and not tested. The number of MB-DS pairs analyzed is not clearly stated, and control analyses (C66) show the specificity is limited to one condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Temporal analysis reveals that MB orientation selectivity emerges 50ms later than for luminance stimuli (85ms vs 35ms), while visual response latencies are similar (37ms). The emergence of MB orientation selectivity (85ms) falls within the time range of surround effects in DS neurons (51-109ms), suggesting DS neurons could contribute to MB orientation selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 provide temporal measurements that are internally consistent and support a potential DS\u2192MB contribution. The latency measurements use appropriate population methods, and the temporal overlap between DS surround modulation and MB orientation selectivity emergence (C79) is suggestive. However, the authors acknowledge limited DS neuron sampling and large variance (C79), and the temporal overlap alone does not prove causation. The finding differs from prior anesthetized work (C75), which could reflect state-dependent differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The study recorded from 96 V2 channels and 32 V1 channels across four arrays in two monkeys, yielding 723 V2 units from 85 channels using the 'all cell' dataset method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are straightforward methodological statements about the experimental setup and data collection. These are verifiable from the methods and consistent with the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "In both V1 and V2 neurons, orientation selectivity indices (OSIs) for the two MB stimulus sets were strongly correlated (V1: r=0.70, p=0.0016; V2: r=0.72, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 reports correlation statistics that are appropriately analyzed and support the consistency of orientation tuning across stimulus variants. This is a supporting finding for the cue-invariance result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The findings are consistent with prior work showing V2's importance for MB detection, including lesion studies showing MB detection deficits after V2 lesions in monkeys and humans. V2's contribution to MB perception is likely population-coding based, not limited to the strongest MB neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 appropriately contextualize the current findings within prior literature. The population-coding interpretation (C86) is a reasonable inference from the continuous OSI distribution and the finding that non-MB neurons also show choice-related activity. The citations to lesion studies (C84-C85) provide independent support for V2's causal role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors hypothesize that V2 calculates MB orientation using its own motion signals, specifically through center-surround mechanisms of DS neurons. V2 has abundant DS neurons with properties suitable for MB detection (small RFs, high motion contrast sensitivity, strong center-surround modulation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C97 present the authors' mechanistic hypothesis, which is partially supported by the data (correlations, timing) but remains speculative. The hypothesis is reasonable given the cited properties of V2 DS neurons (C92-C94, C97), but direct causal evidence is lacking. The center-surround mechanism proposal (C95-C96) is plausible but not directly tested in this study. Alternative models (e.g., feedback from higher areas) are acknowledged but not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims about MB processing in primates, V2 anatomy and function, and properties of V2 DS neurons, all supported by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C25 provide literature-based background that appropriately contextualizes the study. These are standard citations to established findings in the field. Claim C12 (V2 as lowest area with MB sensitivity) is an inference but reasonable given the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "V2 shows cue-invariant contour detection across multiple boundary types (illusory, disparity, texture, motion) and border-ownership features, suggesting figure-ground segregation is an emphasized process in V2. The MB-DS correlation provides the first direct evidence for V2 DS neurons' perceptual function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 appropriately synthesize prior literature (C98-C101) to support the interpretation that V2 specializes in figure-ground segregation (C102). The claim about novelty (C104) appears justified as the first demonstration of functional correlations between V2 DS and MB neurons during behavior.",
+    "result_type": "MINOR"
+  }
+]

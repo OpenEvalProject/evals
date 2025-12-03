@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C8",
+      "C16",
+      "C19",
+      "C28",
+      "C32",
+      "C58",
+      "C67",
+      "C68"
+    ],
+    "result": "TRPC3 and NALCN are two major leak channels that together drive pacemaking in SNc DA neurons. Pharmacological blockade of either TRPC3 (with pyr10) or NALCN (with L-703,606) completely abolishes spontaneous firing in wild-type mice, and both channels contribute approximately equally to slow depolarization under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by converging evidence from multiple experimental approaches: (1) specific pharmacological blockers (pyr10, pyr3, L-703,606) completely stop pacemaking in WT mice (C2, C4, C16, C32); (2) both blockers cause similar hyperpolarization in WT mice (C8, C35); (3) quantitative analysis shows approximately equal contributions (~36% TRPC3, ~37% NALCN) to leak conductance (C45); (4) current injection experiments demonstrate that blocked channels function as leak-like channels (C20, C33); and (5) NALCN compensates for TRPC3 loss in KO mice (C67, C68). The data are internally consistent across slice recordings, dissociated neurons, and multiple measurement approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C66"
+    ],
+    "result": "Pacemaking activity in TRPC3 knockout mice is completely normal despite the absence of TRPC3 channels, with no differences in firing rate or electrical properties compared to wild-type mice. TRPC3-specific blockers have no effect in TRPC3 KO mice, confirming their selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by comprehensive electrophysiological characterization showing: (1) no difference in spontaneous firing rate between TRPC3 KO and WT mice (C25, p=0.23, n=23); (2) no differences in action potential properties, input resistance, or capacitance (C26); (3) pyr10 and SKF-96365 have no effect on firing in TRPC3 KO mice (C27, C30), confirming blocker specificity; and (4) these findings were replicated in both brain slices and acutely dissociated neurons (C63). This demonstrates both the robustness of DA neuron pacemaking and the presence of compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "NALCN expression and function are significantly increased in TRPC3 KO mice at the current, mRNA, and protein levels, providing the molecular basis for compensation. Other TRPC family members do not show increased expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The compensation mechanism is well-documented through multiple independent measurements: (1) neurotensin-evoked NALCN currents are significantly larger in TRPC3 KO mice (C37, p=0.0019); (2) NALCN mRNA is increased in both SNc tissues and single DA neurons (C6, C38, p<0.05); (3) NALCN protein is increased in heterozygous and homozygous TRPC3 KO mice (C7, C40, p<0.05); (4) L-703,606 causes greater hyperpolarization in TRPC3 KO mice (C36, p<0.01); and (5) other TRPC channel mRNAs are unchanged (C39), ruling out compensation by other TRPC family members. The convergence of functional, transcriptional, and protein-level evidence strongly supports the compensation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C12",
+      "C20",
+      "C21",
+      "C22",
+      "C33",
+      "C34",
+      "C59",
+      "C60"
+    ],
+    "result": "Subthreshold slow depolarization during interspike intervals is the key determinant of pacemaking rate in DA neurons. This slow depolarization can be completely restored by continuous linear current injection after channel blockade, demonstrating that the blocked channels function as leak-like channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic current injection experiments showing: (1) correlation between slow depolarization slope and firing frequency (C10, Figure 1D); (2) Phase II occupies 77% of the interspike interval (C12); (3) graded current injection restores firing in a dose-dependent manner after both pyr10 (C20) and L-703,606 (C33) blockade; (4) voltage traces of regenerated firing perfectly align with control traces (C21, C34, Figure 2\u2014supplement 1, Figure 4\u2014supplement 2); and (5) the linear nature of current injection mimics leak current properties (C22). These experiments elegantly demonstrate the leak-like nature of the blocked channels and the sufficiency of leak current for pacemaking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C61",
+      "C62"
+    ],
+    "result": "L-type Ca2+ channels and HCN channels are not essential for pacemaking of SNc DA neurons, as specific blockers (isradipine and ZD-7288) do not affect spontaneous firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by pharmacological experiments in both brain slices and dissociated neurons: (1) neither isradipine nor ZD-7288 affects firing rate (C13, Figure 1\u2014supplement 1A-B, p>0.05); (2) co-application of both blockers also has no effect (C13); (3) findings were replicated in cell-attached recordings from dissociated neurons (C63, Figure 1\u2014supplement 2); and (4) minor effects on afterhyperpolarization (C61, C62) do not translate to changes in firing rate. This contradicts earlier hypotheses about these channels being critical for pacemaking and is consistent with the field's evolving understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "TRPC3 channels are highly expressed in SNc DA neurons and nonspecific TRPC channel blockers (SKF-96365, 2-APB) strongly inhibit spontaneous firing, suggesting TRPC channels contribute to pacemaking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by multiple lines of evidence: (1) SKF-96365 and 2-APB strongly inhibit firing (C15, Figure 1\u2014supplement 1C-D); (2) specific TRPC3 blockers (pyr3, pyr10) completely abolish firing (C16, Figure 1E-F); (3) 92% of TH-positive DA neurons co-express TRPC3 (C17, Figure 1H-I); and (4) all examined isolated DA neurons express TRPC3 mRNA (C18, Figure 1J, n=10). The convergence of pharmacological, immunohistochemical, and molecular evidence strongly supports TRPC3 expression and functional importance in DA neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C31",
+      "C35",
+      "C64",
+      "C65"
+    ],
+    "result": "TRPC3 channels substantially contribute to slow depolarization of membrane potential in DA neurons, as pyr10 causes greater hyperpolarization than L-type Ca2+ channel blockade. However, additional Na+-permeable channels beyond TRPC3 contribute to depolarization, as evidenced by further hyperpolarization upon Na+ removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic membrane potential measurements: (1) pyr10 hyperpolarizes membrane potential more strongly than isradipine (C23, Figure 2D-E); (2) NMDG replacement causes additional hyperpolarization beyond pyr10 effect (C24, Figure 2E), indicating other Na+-permeable channels; (3) pyr10 hyperpolarizes WT but not TRPC3 KO neurons (C31, Figure 3D-F); and (4) the greater hyperpolarization by pyr10 vs. isradipine indicates TRPC3 channels are active at more hyperpolarized potentials (C64). These experiments clearly demonstrate TRPC3's substantial but incomplete contribution to leak conductance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C76"
+    ],
+    "result": "The inhibitory action of pyr10 is mediated by selective TRPC3 channel antagonism, and other TRPC family members do not compensate for TRPC3 loss in knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by genetic and pharmacological evidence: (1) pyr10 completely blocks firing in WT but has no effect in TRPC3 KO mice (C27, C28, Figure 3B-C), demonstrating selectivity; (2) SKF-96365 (which blocks all TRPC channels) has no effect in TRPC3 KO mice (C30), indicating other TRPCs don't compensate; and (3) mRNA levels of other TRPC channels are unchanged in TRPC3 KO mice (C39, Figure 5C). The differential effects in WT vs. KO mice provide strong evidence for pyr10 selectivity and rule out compensation by other TRPC family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C73",
+      "C74"
+    ],
+    "result": "TRPC3 and NALCN channels together account for approximately 67% of subthreshold leak current, with each contributing roughly equally (~36% TRPC3, ~37% NALCN). HCN channels only activate under conditions of excessive hyperpolarization when both TRPC3 and NALCN are blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic pharmacological dissection experiments: (1) pyr10 and L-703,606 individually cause similar hyperpolarization (C41, Figure 6A-B); (2) co-application without ZD-7288 produces no additive effect (C42), suggesting overlapping function or compensatory activation; (3) co-application with ZD-7288 produces additive hyperpolarization (C43, Figure 6C), revealing the true contributions; (4) ZD-7288 only causes additional hyperpolarization when both channels are blocked (C44); and (5) quantitative analysis shows ~36% TRPC3, ~37% NALCN, ~27% other sources (C45, C73, Figure 6D). The experimental design cleverly uses ZD-7288 to prevent HCN-mediated compensation and accurately measure relative contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background and context claims about DA neuron properties, pacemaking characteristics, and prior knowledge about candidate channels including TRPC3 and NALCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field, supported by appropriate citations and confirmed by the authors' own measurements (e.g., C11 reports average firing rate of 3.28\u00b10.13 Hz). The claims accurately represent prior work on DA neuron function (C46-C49), pacemaking robustness (C50), the role of slow depolarization (C51), and properties of TRPC3 (C54) and NALCN (C55-C57) channels. These provide appropriate context for the study's novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Key pharmacological findings from brain slices were replicated in acutely dissociated neurons using cell-attached recordings, ruling out artifacts from incomplete drug penetration or dialysis of intracellular contents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by systematic replication experiments showing that the effects of isradipine, ZD-7288, pyr10, and SKF-96365 on firing are consistent between brain slices (whole-cell recordings) and dissociated neurons (cell-attached recordings) (Figure 1\u2014supplement 2, Figure 3\u2014supplement 2). This addresses important technical concerns about the validity of the slice recordings and strengthens confidence in the pharmacological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C78",
+      "C81"
+    ],
+    "result": "Claims about the novelty and broader implications of the findings, including that this is the first molecular identification of leak channels responsible for DA neuron pacemaking, and speculation about roles in other pacemaker neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the molecular identification of TRPC3 and NALCN as the major leak channels is novel and well-supported (C69), the broader claims are more speculative. The explanation for pacemaking robustness (C70) is a reasonable inference from the compensation data but not directly tested. Claims about diverse regulatory roles (C78) and applicability to other pacemaker neurons (C81) are acknowledged as speculative by the authors and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C75",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "General knowledge claims about ion channel properties, neural homeostasis, and modulatory systems that provide context for interpreting the findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge about TRPC3 and NALCN channel properties (C71, C72), homeostatic compensation mechanisms (C75), channel regulation (C77), and modulatory neuron systems (C79, C80). All are appropriately cited and provide necessary context for understanding the significance of the experimental findings.",
+    "result_type": "MINOR"
+  }
+]

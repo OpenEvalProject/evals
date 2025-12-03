@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20",
+      "C88",
+      "C91"
+    ],
+    "result": "The authors developed a spherical LED arena containing 14,848 individual LEDs arranged in 232 tiles, covering over 90% of the zebrafish larval visual field. The arena was optimized to contain near-maximum LED tiles (232 of 240 possible) and provides 85-90% effective visual field coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19, C20, C88, and C91 collectively describe the technical specifications of the spherical arena with consistent numbers and coverage estimates. The design is well-documented with figures, methods descriptions, and control experiments (C31, C32) confirming that gaps in LED coverage do not affect OKR measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Zebrafish larvae exhibit strongest OKR responses to lateral, nearly equatorial stimuli. Maximum OKR gain occurs at approximately -82.5\u00b0 azimuth and 5.1\u00b0 elevation for the left eye, and 81.7\u00b0 azimuth and 1.6\u00b0 elevation for the right eye. The spatial distribution is well-modeled by bimodal von Mises-Fisher distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C26-C30 describe the main spatial tuning result with specific coordinates and statistical modeling. The data is supported by multiple figures (Figure 3), control experiments ruling out arena artifacts (C31, C32), and consistent measurements across fish (C33). The von Mises-Fisher model fit (C27) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C77",
+      "C78"
+    ],
+    "result": "OKR stimulus location preference depends on environmental reference frame, not solely body-centered coordinates. When fish are inverted, they still prefer stimuli above the environmental equator. This preference cannot be explained by eye position changes and suggests extra-retinal processing influences OKR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 and C77-C78 describe upside-down control experiments with specific measurements and statistical testing (C36: permutation test, p<0.05). The eye position measurements (C37) rule out a simple explanation, and the permutation test (C36) provides statistical support for environmental reference frame dependence. This is a well-controlled experiment addressing a specific mechanistic question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The two eyes of zebrafish are less yoked than previously thought. Yoking indices differ significantly between regular monocular setup (YI\u22480.2) and control setup with reflection blocking (YI\u22480.7), indicating that previously reported yoking partially depends on stimulus reflections at glass-air interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C40-C44 describe yoking experiments with quantitative measurements and multiple control conditions. The finding is supported by experiments in both spherical (C42) and rectangular arenas (C44) with consistent results. However, the interpretation relies on the assumption that reflections are the primary explanation, and alternative mechanisms are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C48",
+      "C49",
+      "C64",
+      "C65"
+    ],
+    "result": "Spatial frequency tuning of zebrafish OKR is similar across visual field positions, with optimal response at 0.03-0.05 cycles/degree. This suggests photoreceptor density is not the limiting factor for OKR performance in the tested frequency range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C48, C49, C64, C65 describe frequency tuning experiments across multiple visual field locations. The data shows consistent tuning curves (Figure 5d) with no strong location dependence. The inference about photoreceptor density (C65) is logical given the non-uniform photoreceptor distribution, though it remains an interpretation rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "OKR gain increases sigmoidally with the logarithm of stimulus size. Weak OKR is observable for stimuli as small as 0.8% of the spherical surface (10.4\u00b0 diameter), reaching half-maximum at approximately 25% coverage (120\u00b0 solid angle).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe stimulus size dependence with specific quantitative measurements. The sigmoidal relationship is consistent with psychophysical processes and is well-documented in Figure 5e. The measurements span a wide range of stimulus sizes with clear dose-response relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C71",
+      "C72"
+    ],
+    "result": "For red, green, and blue photoreceptors, the visual field location of maximal OKR gain coincides with retinal regions of near-maximum photoreceptor density. This correspondence is consistent with LED spectral properties (568 nm peak) preferentially activating red cones and may provide a mechanistic explanation for OKR spatial tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C71-C72 compare OKR gain maps to photoreceptor density data from a prior study. The qualitative correspondence is shown in Figure 6, with appropriate registration using measured eye positions (C57, C58). However, the mechanistic interpretation (C71) is speculative, and the photoreceptor data comes from slightly older larvae (7-8 dpf vs 5-7 dpf for OKR). The lack of correlation with UV receptors (C56) strengthens the specificity of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C53",
+      "C54",
+      "C66",
+      "C67"
+    ],
+    "result": "OKR is mostly symmetric between eyes across individuals, with no consistent inter-individual lateralization. Individual fish show a wide range of biases toward either hemisphere, but there is no population-level preference for left or right visual field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C53, C54, C66, C67 describe lateralization analysis with statistical testing (ANOVA). The multivariate regression model (Figure 4\u2014figure supplement 1) shows individual biases are broadly distributed around zero. The left eye shows significant ipsilateral preference (C53, p<0.05) while right eye does not (C54, p>0.05), suggesting some asymmetry, but this is not consistent across the population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C92",
+      "C93"
+    ],
+    "result": "The LED spacing in the arena is smaller than photoreceptor spacing in larval zebrafish retina (approximately 1-2 red-green double cones per square degree), resulting in good spatial resolution across most of the arena surface that exceeds the visual acuity of the larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, C92, C93 establish that the arena resolution is appropriate for zebrafish larvae. The comparison to photoreceptor spacing is supported by citations (Haug et al., 2010; Tappeiner et al., 2012; Zimmermann et al., 2018) and is consistent with the control experiments showing no effect of LED gaps on OKR (C31, C32).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Zebrafish larvae exhibit optokinetic response (OKR) consisting of slow-phase tracking interrupted by quick-phase saccades. Horizontally moving vertical bars reliably elicit OKR, and even small stimuli in disfavored visual field locations can evoke reliable OKR with reduced gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C23-C25 describe basic OKR behavior and stimulus parameters. These are well-established phenomena supported by prior literature (C23 cites Beck et al., 2004) and demonstrated in the current study with example traces (Figure 2). This provides essential context but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "No significant age-dependent shift in OKR spatial tuning was observed between 5, 6, and 7 dpf larvae, consistent with retinal development being far advanced and OKR circuits being stable at this developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C68-C70 address developmental stability. The lack of age effects (C59) is stated but not shown in detail ('data not shown'). The interpretation relies on prior knowledge about retinal development (C69 cites Avanesov and Malicki, 2010). While this validates the experimental approach, the limited presentation of age-comparison data is a minor weakness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Control experiments demonstrate that incomplete LED coverage and structural elements of the arena do not significantly affect OKR gain measurements. Fish maintain similar median eye positions across different stimulus locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe important control experiments with statistical tests (t-tests, p>0.05) and quantitative measurements. These controls validate the experimental design and rule out potential artifacts. The eye position measurements (C33) address whether fish compensate for peripheral stimuli by shifting gaze.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The spherical LED arena provides technical advantages over video projection setups, including homogeneous light and contrast, simplified stimulus design without warping, and high temporal precision compatible with calcium imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 describe technical advantages of the LED arena design. These are logical inferences based on the design principles, though they are not directly tested through comparative experiments. The advantages are plausible but represent design features rather than empirical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior literature establishes that zebrafish have large visual fields (~163\u00b0 per eye at 4 dpf), four cone photoreceptor types with non-uniform distributions, and that in humans, OKR is strongest in central and lower visual fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 summarize prior work with appropriate citations. These provide essential background context for interpreting the current results. The citations appear accurate and relevant, though the authors note limited knowledge about interindividual variability in zebrafish visual field size (C5).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The OKR spatial tuning results are consistent with observations in other species showing strongest drive in central visual field. Alternative photoreceptive mechanisms via melanopsin-expressing ganglion cells or other opsins in zebrafish retina and brain may also contribute to OKR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 compare results to other species and speculate about alternative mechanisms. The cross-species comparison (C73) is supported by citations, but the speculation about melanopsin and other opsins (C76) is explicitly stated as 'possible' without supporting evidence. This represents discussion of alternative hypotheses rather than tested results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The environmental reference frame preference might be explained by vestibular multimodal integration or ecological adaptation to natural optic flow statistics. OKR and optomotor response (OMR) are preferentially driven by different visual field regions, suggesting segregated pretectal circuits with different receptive field locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C84 propose mechanistic and ecological explanations for the observed spatial tuning. These are explicitly speculative (C79: 'could potentially', C80: 'seems possible', C84: 'we therefore hypothesise') and represent discussion of possible interpretations rather than tested hypotheses. The comparison to OMR (C81-C82) cites prior work but the pretectal circuit hypothesis (C84) requires future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Experiments used mitfa-/- zebrafish larvae (5-7 dpf) lacking skin pigmentation to facilitate eye tracking. One report suggests this strain may show different optomotor responses than wildtype, potentially affecting the generalizability of results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 describe the animal model and acknowledge a potential limitation. The ethical compliance (C85) and rationale for strain choice (C86) are clearly stated. The acknowledgment of potential genetic background effects (C87, citing Stowers et al., 2017) demonstrates appropriate caution, though this limitation is not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The electronic and software architecture for stimulus control was originally designed by Reiser and Dickinson (2008) for Drosophila vision research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 appropriately credits the original developers of the control system. This is a methodological detail rather than a result, but proper attribution is important for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

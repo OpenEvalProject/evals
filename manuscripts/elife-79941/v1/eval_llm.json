@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C86",
+      "C87"
+    ],
+    "result": "NADK inhibition drastically decreases mortality of zebrafish infected with S. aureus. The NADK knockdown strain (using CRISPR interference) led to ~75% mortality reduction at 24 hpi compared to control, with decreased bacterial burden in head and caudal regions and reduced neutrophil depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C32 demonstrate dramatic survival differences (1/48 deaths vs ~75% mortality). Claims C26-C27, C30 validate the knockdown approach. Claims C33-C37 show differential bacterial burden and neutrophil depletion patterns. The experimental design includes appropriate controls, plasmid stability verification (C30), and multiple time points with statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C89",
+      "C90"
+    ],
+    "result": "NADK promotes S. aureus survival in macrophages by protecting bacteria from ROS-mediated killing. NADK knockdown bacteria showed significantly reduced intracellular survival after 2 hours, which was partially rescued by the antioxidant NAC. NADK knockdown bacteria remained trapped in LAMP1+ phagolysosomes while control bacteria escaped.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 show time-dependent survival defects with proper controls. Claims C43-C45 demonstrate partial NAC rescue, supporting ROS involvement. Claims C46-C47 provide colocalization evidence for phagolysosome entrapment. Claim C48 appropriately presents this as speculative. The partial rescue by NAC (C43, C96) correctly suggests additional mechanisms beyond ROS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C56"
+    ],
+    "result": "NADK protects S. aureus from oxidative and envelope stress. The NADK knockdown strain showed dose-dependent growth deficiency when exposed to 50-500 \u03bcM H2O2, which was rescued by catalase. The knockdown strain also showed decreased viability when exposed to lysozyme and lysostaphin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 demonstrate dose-dependent H2O2 sensitivity with appropriate controls. Claim C53 shows catalase rescue, confirming H2O2-specific effects. Claim C56 demonstrates envelope stress sensitivity. The experiments include proper controls and dose-response relationships. Statistical significance is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C94"
+    ],
+    "result": "NADK supports production of protective enzymes including antioxidant enzymes (SodM, KatA, Trx2, MsrA2) and envelope defense factors (OatA, GraRS, DltC). Proteomic analysis revealed decreased abundance of these proteins in the NADK knockdown strain in vitro, upon H2O2 treatment, and in vivo in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by quantitative proteomic data in Table 1 with statistical analysis (adjusted p-values, Log2 fold changes). Claims C64-C66 show consistency across conditions (BHI, H2O2, in vivo). The proteomics methods are well-described with appropriate FDR cutoffs (1%), biological replicates (n=5), and statistical testing (LIMMA, Benjamini-Hochberg correction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C107"
+    ],
+    "result": "NADK is required for expression of virulence factors including the quorum-sensing regulator AgrA and multiple toxins (alpha-hemolysin, gamma-hemolysin, PSMs, leukocidins). Proteomic analysis showed decreased abundance of these factors, confirmed by immunoblotting for alpha-hemolysin and functional hemolysis assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by proteomic data in Tables 2 and Figure 4 with statistical validation. Claims C72-C74 provide orthogonal validation through immunoblotting and functional assays (Christie-Atkins-Munch-Peterson test). Claim C107 links to AgrA, a known master regulator. Multiple independent methods converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C111",
+      "C112"
+    ],
+    "result": "NADK regulates expression of AgrA and its regulon. NADK knockdown led to decreased agrA transcript levels, decreased RNAIII (positively regulated by Agr), and increased bsaA (negatively regulated by Agr), consistent with reduced AgrA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C112 are supported by RT-PCR data in Figure 5 with appropriate normalization to gyrA. Claim C111 shows the regulatory pattern is consistent with known Agr regulation (C76-C77). The bidirectional changes (RNAIII down, bsaA up) provide internal consistency. At least three biological replicates are indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C113"
+    ],
+    "result": "NADK knockdown increases intracellular ROS levels, which may contribute to decreased agrA expression. Decreased NADK levels led to significantly increased ROS content, and agr transcription is known to be repressed under oxidizing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by quantitative ROS measurements in Figure 5E with statistical significance (p<0.0001). Claims C83 and C113 appropriately present the mechanistic link as speculative ('could contribute') while citing literature support (C81, C114-C115) for oxidative repression of agr. The inference is reasonable but correctly qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C95",
+      "C97",
+      "C102",
+      "C106",
+      "C110",
+      "C116"
+    ],
+    "result": "NADK promotes S. aureus pathogenesis through multiple mechanisms: supporting protective enzyme production, enabling virulence factor expression via AgrA regulation, and possibly controlling bacterial redox state. These effects appear to be independent of NADK's contribution to bacterial growth capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result is supported by convergent evidence from multiple experimental approaches (zebrafish infection, macrophage survival, stress resistance, proteomics, transcriptomics). Claims C88, C87 show virulence effects independent of initial bacterial burden. Claims C95, C97, C102 appropriately acknowledge mechanistic uncertainty. The conclusion (C116) is appropriately qualified as 'possibly' for the redox mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "NADPH is the primary electron donor for biosynthetic reactions and antioxidant defense, and NADK is the sole enzyme catalyzing NADP(H) synthesis from NAD(H). These are established biochemical principles providing context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 are fundamental biochemical knowledge supported by citations (McGuinness and Butler, 1985; Chini et al., 2021). Claims C7-C9 provide additional context about NAD(H) and NADP(H) functions, supported by appropriate citations (Chini et al., 2021; Covarrubias et al., 2020; Chandel, 2021). These are background claims, not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Historical and comparative context for NADK: the enzyme was first reported in the 1930s, genes identified in 2000, found in most organisms except Chlamydia, essential for growth in several bacteria, and extensively studied in plants where it is regulated by calcium/calmodulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate historical and contemporary citations. These provide important context but represent prior knowledge rather than novel findings. The citations span from 1937 to 2019 and cover the relevant literature on NADK across different organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C29",
+      "C38",
+      "C42",
+      "C49",
+      "C54",
+      "C55",
+      "C63",
+      "C67",
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C84",
+      "C85",
+      "C91",
+      "C92",
+      "C93",
+      "C98",
+      "C99",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C114",
+      "C115"
+    ],
+    "result": "Background knowledge about S. aureus pathogenesis, host immune responses, and bacterial defense mechanisms. This includes S. aureus epidemiology, zebrafish as an infection model, roles of neutrophils and macrophages, ROS production, lysozyme resistance mechanisms, and virulence factor regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations to established literature. These provide essential context for interpreting the experimental findings but do not represent novel discoveries. The citations are appropriate and span relevant topics in S. aureus pathogenesis and host-pathogen interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Macrophage numbers in zebrafish larvae did not significantly decrease upon infection with either S. aureus strain, in contrast to the neutrophil depletion observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by experimental data in Figure 1\u2014figure supplement 2C. This provides an important negative control showing differential effects on immune cell populations. The observation helps establish that the virulence differences are associated with neutrophil-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Functional categories related to infectious diseases, signaling molecules, and signal transduction were identified at the highest level of proteomic analysis as relying on NADK activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by proteomic data visualized in Figure 4A using KEGG pathway analysis and Voronoi treemaps. This provides high-level functional categorization of the proteomic findings, supporting the broader conclusion about NADK's role in virulence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "NAC treatment only partially rescued the growth defect of the NADK knockdown strain in macrophages, suggesting NADK contributes to survival through mechanisms beyond ROS detoxification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by data in Figure 2A showing incomplete rescue. This is an important observation that appropriately limits the interpretation and suggests additional mechanisms (C97). The partial rescue is consistent with the multiple protective mechanisms identified in the proteomic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "OatA, DltA, and GraRS were less abundant when NADK was knocked down, as determined by proteomic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by proteomic data in Table 1. This observation connects to the lysozyme/CAMP sensitivity results (C56) and provides molecular evidence for the envelope stress phenotype. The data are quantitative with statistical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "NADK inhibition and quorum quenching are proposed as attractive therapeutic approaches based on the study findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 is speculative and represents a future direction rather than a demonstrated result. While the study shows NADK knockdown reduces virulence, no actual therapeutic validation is provided. The claim lacks evidence for druggability, specificity, or in vivo efficacy of NADK inhibitors. This is appropriately presented as speculation but requires substantial additional work.",
+    "result_type": "MINOR"
+  }
+]

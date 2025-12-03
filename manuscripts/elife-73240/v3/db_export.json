@@ -1,0 +1,2191 @@
+{
+  "submission": {
+    "id": "b13ed2be-3aa9-429c-bf46-25ff19136fc0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:28:51.660558Z",
+    "updated_at": "2025-12-03T08:28:51.660558Z"
+  },
+  "content": [
+    {
+      "id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "submission_id": "b13ed2be-3aa9-429c-bf46-25ff19136fc0",
+      "content_type": "manuscript",
+      "content_text": "# Fusion of tethered membranes can be driven by Sec18/NSF and Sec17/\u03b1SNAP without HOPS\n\n## Authors\n\n- Hongki Song<sup>1</sup> ([ORCID: 0000-0002-3761-5434](https://orcid.org/0000-0002-3761-5434))\n- William T Wickner<sup>1</sup> ([ORCID: 0000-0001-8431-0468](https://orcid.org/0000-0001-8431-0468)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Cell Biology, Geisel School of Medicine at Dartmouth Hanover United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nYeast vacuolar membrane fusion has been reconstituted with R, Qa, Qb, and Qc-family SNAREs, Sec17/\u03b1SNAP, Sec18/NSF, and the hexameric HOPS complex. HOPS tethers membranes and catalyzes SNARE assembly into RQaQbQc trans-complexes which zipper through their SNARE domains to promote fusion. Previously, we demonstrated that Sec17 and Sec18 can bypass the requirement of complete zippering for fusion (Song et al., 2021), but it has been unclear whether this activity of Sec17 and Sec18 is directly coupled to HOPS. HOPS can be replaced for fusion by a synthetic tether when the three Q-SNAREs are pre-assembled. We now report that fusion intermediates with arrested SNARE zippering, formed with a synthetic tether but without HOPS, support Sec17/Sec18-triggered fusion. This zippering-bypass fusion is thus a direct result of Sec17 and Sec18 interactions: with each other, with the platform of partially zippered SNAREs, and with the apposed tethered membranes. As these fusion elements are shared among all exocytic and endocytic traffic, Sec17 and Sec18 may have a general role in directly promoting fusion.\n\n## Introduction\n\nIntracellular membrane fusion is catalyzed by families of fusion proteins which are conserved from yeast to humans and among the organelles (Wickner and Rizo, 2017). These include Rab-family GTPases, large tethering complexes which bind to Rabs (Baker and Hughson, 2016), membrane-anchored SNARE proteins (Jahn and Scheller, 2006), and SNARE chaperones of the SM, Sec17/\u03b1SNAP, and Sec18/NSF families. SNAREs have conserved SNARE domains of R, Qa, Qb, and Qc sub-families (Fasshauer et al., 1998) which assemble into tetrameric RQaQbQc coiled coils trans-complexes that bridge membranes before fusion. Each SNARE domain has heptad repeating apolar residues which are buried together in the center of the assembling four-helical coiled coils structure, driving SNARE assembly in an N- to C-direction. This directional assembly, termed \u2018zippering\u2019, can provide sufficient energy for fusion (Sorensen et al., 2006) and has been thought to be the sole driving force for fusion while other proteins simply catalyze or regulate SNARE assembly.\n\nWe study membrane fusion mechanisms with the vacuoles (lysosomes) of Saccharomyces cerevisiae. Yeast vacuole fusion requires proteins of each canonical conserved fusion-protein family, but combines the Rab-effector tethering and the SM functions into the large hexameric HOPS (homotypic fusion and vacuole protein sorting) complex (Wurmser et al., 2000; Seals et al., 2000; Stroupe et al., 2006; Hickey and Wickner, 2010). HOPS binds to acidic lipids (Orr et al., 2015) and to its Rab Ypt7 on each fusion partner membrane (Hickey and Wickner, 2010), activating HOPS (Torng et al., 2020) to initiate N- to C-directional assembly among the R, Qa, Qb, and Qc SNAREs. HOPS has direct affinity for the R and Qa SNAREs through its SM subunit (Baker et al., 2015) and for the Qb SNARE (Song et al., 2020) and Qc SNARE (Stroupe et al., 2006) as well. These multiple affinities directly affect the Km of SNAREs for SNARE complex assembly (Zick and Wickner, 2013). HOPS can assemble intermediates formed from R and any two Q SNAREs which are triggered to undergo rapid fusion by the third Q SNARE (Song et al., 2020).\n\nThere has been extensive study, and evolving understanding, of how Sec17/\u03b1SNAP and Sec18/NSF promote membrane fusion. ATP hydrolysis by NSF/Sec18 was initially proposed to directly drive fusion (Malhotra et al., 1988), while SNAREs mediated the attachment of the NSF fusion engine to membranes (S\u00f6llner et al., 1993b) via \u03b1SNAP/Sec17 (Whiteheart et al., 1992). It was subsequently shown that Sec18/NSF and Sec17/\u03b1SNAP disassemble SNARE complexes (S\u00f6llner et al., 1993a), that Sec18/NSF and Sec17/\u03b1SNAP act prior to membrane docking (Mayer et al., 1996), that NSF/Sec18 and SNAP/Sec17 associate in a specific complex with the SNAREs and induce an conformational change in the SNAREs (Hanson et al., 1995; Hanson et al., 1997), and that SNARE complexes alone can mediate fusion (Weber et al., 1998). These findings led to the concept that all the energy for fusion derives from SNARE zippering (Weber et al., 1998; Sorensen et al., 2006). Though Sec17/\u03b1SNAP will block fusion from spontaneously assembled trans-SNARE complexes (Mima et al., 2008; Stepien et al., 2019), other fusion proteins such as vacuolar HOPS or the synaptic proteins Munc18-1, Munc13-1, complexin-1, and synaptotagmin confer resistance to Sec17/\u03b1SNAP and Sec18/NSF (Mima et al., 2008; Prinslow et al., 2019). Vacuolar SNAREs undergoing HOPS-dependent assembly are resistant to disassembly by Sec17/Sec18 (Xu et al., 2010), but Sec17 and Sec18 otherwise keep most SNAREs in a disassembled state; indeed most of the Qa and Qb SNAREs on isolated vacuoles are not together in complex (Collins et al., 2005).\n\nWithout Sec17/Sec18, HOPS-assembled trans-SNARE complexes require complete zippering to induce fusion, since fusion is arrested by deletion of the C-terminal 21 residues of the Qc SNARE domain (Schwartz and Merz, 2009), or the Qa or Qb SNARE domains (Song et al., 2021). This fusion arrest is bypassed by adding Sec17 (Schwartz and Merz, 2009; Song et al., 2021), driven by the apolar N-terminal loop of Sec17 (Schwartz et al., 2017). Fusion with only SNAREs is blocked by Sec17/Sec18 (Mima et al., 2008). HOPS not only prevents Sec17 inhibition of fusion, but acts synergistically with Sec17/Sec18 for fusion with wild-type SNAREs (Mima et al., 2008; Schwartz et al., 2017; Song et al., 2017). When fusion is blocked by zippering arrest due to deletions from the C-terminus of vacuolar Qc, the block can be bypassed by Sec17, both in vitro and in vivo (Schwartz and Merz, 2009; Schwartz et al., 2017). A similar block to fusion is also seen with C-terminal truncation of the Qa or Qb SNAREs, singly or in combinations (Song et al., 2021). Fusion is restored in each case by Sec17/Sec18 without requiring ATP hydrolysis. Even when both the Qb and Qc SNAREs were C-terminally truncated and the Qa SNARE was mutated to impart polarity to its canonical apolar SNARE domain residues, HOPS-dependent fusion was restored by Sec17/Sec18. Sec17 has direct affinity for HOPS (Song et al., 2021) through its Vps33 subunit (Lobingier et al., 2014); it has been unclear whether HOPS is needed for Sec17 and Sec18 to engage partially zippered SNAREs and mediate zippering-bypass fusion.\n\nSec17 and Sec18 enhance the rate of HOPS-dependent vacuole membrane fusion with all wild-type fusion components (Mima et al., 2008; Zick et al., 2015; Song et al., 2017; Schwartz et al., 2017) without requiring ATP hydrolysis (Zick et al., 2015; Song et al., 2017). A recent study (Song et al., 2021) has shown that Sec17, which promotes zippering (Ma et al., 2016), will also act through its N-terminal membrane-proximal apolar loop to drive HOPS-dependent fusion even when zippering would be unable to provide any fusion energy. Slow fusion can be driven either by zippering or by the apolar loops of Sec17 which had assembled on a platform of partially zippered trans-SNARE complex. Rapid HOPS-dependent fusion requires both SNARE zippering and Sec17 with its apolar loops, as analyzed in vitro and in vivo, where overexpression of Sec17 with an intact N-terminal apolar loop substantially restored the fusion defect caused by Qc SNARE domain truncation (Schwartz et al., 2017). Given the two complementary routes of complete SNARE zippering and Sec17 apolar loop insertion, each capable of driving fusion, it is perhaps unsurprising that the precise starting conditions of fusion assays control when the contributions of zippering and of Sec17 are evident. The rate of fusion and its dependence on Sec17 are governed by the fluidity and headgroup composition of the membrane lipids and the initial state of assembly of the SNAREs (Zick et al., 2015). Sec17 is required when all the SNAREs are initially disassembled (Zick et al., 2015), as found on intact vacuoles (Collins et al., 2005) where only a tenth of the Qb SNARE is in complex with Qa (Collins et al., 2005), presumably due to continuous cis-SNARE disassembly in cells by Sec17/Sec18/ATP. With vacuolar mimic lipid composition and two of the Q SNAREs pre-assembled, fusion is stimulated several-fold by Sec17 and Sec18 (Song et al., 2017). When all three Q SNAREs are initially pre-assembled on one membrane, tethering is the only prerequisite for fusion and Sec17/Sec18 is not essential (Baker et al., 2015; Song and Wickner, 2019). Though little 3Q SNARE complex is found on intact vacuoles (Collins et al., 2005), pre-assembly of 3Q-SNARE complex during proteoliposome preparation allows synthetic tethers to support fusion as well as HOPS (Song and Wickner, 2019), which is useful for mechanistic studies. Sec17/Sec18 dependence can be restored to fusion reactions where the 3Q SNAREs had been pre-assembled by preventing zippering through the Qc3\u0394mutation. It has been unclear whether the actions of Sec17 and Sec18 to promote fusion are particular to HOPS-dependent fusion, and thus restricted to the fusion of vacuoles/lysosomes. Our current work, substituting a synthetic protein tether for HOPS, shows that Sec17/Sec18 can also drive HOPS-independent fusion.\n\nWe now exploit a synthetic tether to show that HOPS is not required for Sec17 and Sec18 to drive zippering-bypass fusion. The 4 SNAREs, Sec17/\u03b1SNAP, and Sec18/NSF, the fundamental components of the 20s particle (Zhao et al., 2015), suffice to drive fusion. As a synthetic tether, we employ the dimeric protein glutathione-S-transferase (GST) fused to a PX domain. Dimeric GST-PX binds PI3P in each bilayer to tether membranes (Song and Wickner, 2019). When Q SNAREs are pre-assembled into a QaQbQc ternary complex on one fusion partner membrane, tethering by GST-PX supports fusion with membranes bearing the R SNARE without the need for SM function, Sec17 or Sec18 (Song and Wickner, 2019). This fusion relies on SNARE zippering, as it is blocked by deletion of the C-terminal region of the Qc SNARE domain, the Qc3\u0394 mutation. We find that GST-PX tethered membranes bearing R and QaQbQc3\u0394 SNAREs on fusion partners, unable to completely zipper and fuse because of the shortened Qc SNARE domain, are rescued from this arrested state and will fuse upon addition of Sec17 and Sec18. Thus, the Sec17 and Sec18 fusion functions do not rely on interactions with HOPS, instead acting through their interactions with each other, with tethered membranes, and with a partially zippered trans-SNARE binding platform.\n\n## Results\n\nProteoliposomes were prepared with vacuolar lipids, with membrane-anchored Ypt7, and with either the R- or the 3Q SNAREs. The Qc SNARE was either wild type with its full-length SNARE domain or Qc3\u0394 which lacks the C-terminal four heptads of its SNARE domain. The Ypt7/R- and Ypt7/3Q-proteoliposomes bore lumenal fusion-reporter fluorescent proteins, either Cy5-labeled streptavidin or biotinylated phycoerythrin (Figure 1A). Proteoliposomes were purified by flotation to remove unincorporated proteins. When these proteoliposomes are mixed, their lumenal fluorescent proteins are separated by at least the thickness of two lipid bilayers, too far for measurable fluorescence resonance energy transfer (FRET). Upon fusion and the attendant content mixing, the binding of biotin to streptavidin brings the Cy5 and phycoerythrin fluorophores into intimate contact, yielding a strong FRET signal (Zucchi and Zick, 2011). Fusion incubations were performed with mixed Ypt7/R and Ypt7/3Q proteoliposomes and with external nonfluorescent streptavidin to block any signal from proteoliposome lysis. Each incubation had either HOPS or GST-PX to tether the membranes (Figure 1A). Also present from the start were either (a) buffer alone, (b) Sec17, (c) Sec18 and ATP\u03b3S, or (d) both Sec17 and Sec18/ATP\u03b3S. Fusion was monitored by FRET between the lumenal probes; the initial rate during the first 5 min is termed the \u03b1 portion in Figure 1B\u2013E. At 30 min, each reaction received a supplement of the components not added at time 0, that is, (a) Sec17, Sec18 and ATP\u03b3S, (b) Sec18 and ATP\u03b3S, (c) Sec17, or (d) buffer alone, so that all incubations had Sec17, Sec18, and ATP\u03b3S as the incubation continued in the \u03b2 portion of the experiment (Figure 1B \u03b2-E\u03b2), from 30 to 32 min. Distinct information can be gleaned from the \u03b1 and \u03b2 intervals of the experiment, and these are considered in turn below.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73240/elife-73240-fig1-v3.jpg)\n\n**Figure 1.:** Proteoliposomes were prepared with vacuolar lipids, membrane-anchored Ypt7, and either R or the 3Q SNAREs with molar ratios of 1Ypt7:8000 lipids and 1 of each SNARE/16,000 lipids. Since Qc3\u0394 is a labile member of SNARE complexes (Song et al., 2021), a fivefold molar excess to the other SNAREs was used in preparing Ypt7/QaQbQc3\u0394 proteoliposomes. The initial mixtures at t = 0 were 18 \u03bcl, and remaining components were added at 30 min in 2 \u03bcl. Vertical dotted lines delineate the first 5 min, termed \u03b1, and the 2 min \u03b2 interval after further additions.\n\n### HOPS is not required for Sec17/Sec18 stimulation of fusion\n\nWhen the 3Q complex includes wild-type full-length Qc, HOPS-mediated fusion (Figure 1B \u03b1, black curve) shows only minor effects from adding either Sec17 (red), Sec18 with a nonhydrolyzable ATP analog (blue), or Sec17, Sec18, and ATP\u03b3S (green). In contrast, when the 3Q complex includes Qc3\u0394 to arrest SNARE zippering and block fusion (Figure 1C \u03b1, black curve), both Sec17 and Sec18 are required to bypass the zippering arrest and allow fusion (Figure 1C \u03b1, contrast the green curve vs. the blue, red or black curves).\n\nThe dimeric tether GST-PX (Song and Wickner, 2019) also supports fusion with pre-assembled wild-type Q SNAREs (Figure 1D \u03b1, black curve), but this fusion is blocked by Sec17 (Figure 1D \u03b1, red curve) without rescue by Sec18 (green curve). When fusion with the dimeric GST-PX tether is blocked by the Qc3\u0394 mutation (Figure 1E \u03b1, black curve), there is no rescue by Sec17, alone or in combination with Sec18/ATP\u03b3S (Figure 1E \u03b1, red and green curves), since HOPS is the only tether which bypasses inhibition by Sec17 (Song and Wickner, 2019).\n\nAt the end of these 30 min incubations, each reaction received a further addition of any components not added at time 0. After this addition, each incubation had Sec17, Sec18, and ATP\u03b3S. Fusion incubations continued in the \u03b2 portion of the experiment, from 30 to 32 min, and beyond. Although full-length SNAREs support zippering and fusion with either the HOPS or GST-PX tether, a kinetic intermediate accumulates which gives some additional fusion upon addition of Sec17/Sec18/ATP\u03b3S (Figure 1, B\u03b2 and D\u03b2, black curves). When SNARE zippering and the attendant fusion was blocked by the Qc3\u0394 mutation, HOPS-dependent zippering-bypass fusion requires Sec17, Sec18, and ATP\u03b3S (Figure 1C \u03b1), as reported (Song et al., 2020; Song et al., 2021). In their absence, fusion intermediate accumulated, since there is rapid fusion upon their addition (Figure 1C \u03b2, curves a\u2013c). Strikingly, though the presence of Sec17 from the start of the incubation blocks the formation of rapid-fusion intermediate with the GST-PX tether (Figure 1E \u03b2, red curve), rapid-fusion intermediate does accumulate with the GST-PX tether when Sec17 is absent, as Sec17 addition at 30 min triggers fusion (Figure 1E \u03b2, curves a and c). Replicates of this experiment were quantified for the fusion rate during the \u03b1 and \u03b2 intervals (Figure 1F). Inhibition by Sec17 with the GST-PX tether instead of HOPS is only seen when Sec17 is present from the start of the incubation, prior to trans-SNARE assembly (Figure 1E, red curve b and green curve d), but once membranes have undergone tethering and trans-SNARE assembly, Sec17 and Sec18 support zippering-bypass fusion without HOPS (Figure 1E \u03b2, blue and black curves).\n\n## Discussion\n\nSec17 may inhibit functional trans-SNARE complex assembly (Wang et al., 2000) but, once zippering has begun, Sec17 associates with partially zippered SNAREs to directly promote fusion (Zick et al., 2015; Harner and Wickner, 2018; Song et al., 2021). Sec17 can block fusion of reconstituted proteoliposomes without HOPS (Mima et al., 2008). HOPS engages each of the 4 SNAREs (Stroupe et al., 2006; Baker et al., 2015; Song et al., 2020) and catalyzes their assembly (Baker et al., 2015; Orr et al., 2017; Jiao et al., 2018; Song et al., 2020) in a manner which renders fusion resistant to Sec17 (Mima et al., 2008; Xu et al., 2010; Song and Wickner, 2019). Excessive Sec17 blocks the initial stages of fusion but stimulates fusion when added after trans-SNARE assembly (Zick et al., 2015). With the synthetic tether GST-PX, Sec17 which interacts with SNAREs before they assemble into trans-complexes inhibits the subsequent fusion (Song and Wickner, 2019). We now show that once fusion intermediates of trans-SNARE complexes have formed, Sec17 and Sec18 will promote zippering-bypass fusion whether tethering is by HOPS or by the synthetic tether GST-PX (Figure 1C \u03b2 and E\u03b2). Schwartz et al., 2017, found that polyethylene glycol (PEG) and SNARE induced tethering and fusion, arrested by Qc3\u0394, could be restored by added Sec17. PEG not only tethers, but may enhance SNARE-mediated fusion (Zick and Wickner, 2013) through promoting dehydration (Lehtonen and Kinnunen, 1995) and protein association (W\u00e4lchli et al., 2020) or, at high levels, induce fusion directly (Burgess et al., 1992). Dimeric GST-PX only acts as a tether. Our findings complement those of Schwartz et al., 2017, and show that a tether and partially zippered SNARE complex allow Sec17/Sec18 induction of fusion.\n\nHOPS serves both as a tether (Hickey and Wickner, 2010) and as a catalyst to initiate SNARE assembly (Baker et al., 2015), but it has been unclear whether it catalyzes the later stages of zippering or is needed for Sec17/Sec18-induced fusion without zippering. The engagement of SNAREs by HOPS (Stroupe et al., 2006; Baker et al., 2015; Song et al., 2020) largely bypasses Sec17 inhibition. Once SNAREs are partially zippered in trans, Sec17 and Sec18 do not need HOPS to support the completion of fusion. The completion of SNARE zippering is promoted by Sec17 (Song et al., 2021), and Sec17 displaces HOPS from SNARE complexes (Collins et al., 2005; Schwartz et al., 2017). The interactions among the SNAREs, Sec17/\u03b1SNAP, and Sec18/NSF are seen at a molecular level in the 20s complex, consisting of a 4-SNARE coiled coil anchored to membranes at their C-termini, surrounded by up to 4Sec17/\u03b1SNAP molecules, and all capped at the membrane-distal end by Sec18/NSF (Zhao et al., 2015). A \u2018trans-20s\u2019 (Song et al., 2021; Rizo et al., 2021) may generally drive fusion, since its elements are common to all exocytic and endocytic trafficking while the tethering complexes of other organelles are varied and often do not have the organelle\u2019s SM protein as a tightly bound subunit like Vps33 is in HOPS (Baker and Hughson, 2016). These findings support the model (Schwartz et al., 2017; Song et al., 2021) that HOPS only acts for tethering and to catalyze the initial phase of zippering in a Sec17-resistant manner. HOPS is specific for fusion at the vacuole/lysosome, but Sec17/\u03b1SNAP, Sec18/NSF, and SNAREs are general elements of exocytic and endocytic vesicular trafficking. Our current findings suggest that Sec17 and Sec18 support of zippering-bypass fusion may not be restricted to the vacuole/lysosome, but may contribute to SNARE-mediated fusion at other steps in endocytic and exocytic vesicular trafficking. Testing this hypothesis will necessitate the reconstitution of fusion at other organelles with their SNAREs, Rab, Rab-effector tethering complex, and SM protein.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Nyv1</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000004083</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Vam3</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000005632</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Vti1</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000004810</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Vam7</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000003180</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Ypt7</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000004460</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Sec17</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000000146</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Sec18</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000000284</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Vps33</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000004388</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Vps39</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000002235</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Vps41</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000002487</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Vps16</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000005966</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Vps11</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000004844</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>Vps18</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000004138</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>R (Nyv1)</td>\n      <td>PMID:21976702</td>\n      <td></td>\n      <td>Purified from Escherichia coli.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Qa (Vam3)</td>\n      <td>PMID:18650938</td>\n      <td></td>\n      <td>Purified from Escherichia coli.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Qb (Vti1)</td>\n      <td>PMID:21976702</td>\n      <td></td>\n      <td>Purified from Escherichia coli.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Qc (Vam7)</td>\n      <td>PMID:17699614</td>\n      <td></td>\n      <td>Purified from Escherichia coli.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Qc (Vam7) 3\u0394</td>\n      <td>PMID:19414611</td>\n      <td></td>\n      <td>Purified from Escherichia coli.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Ypt7-TM</td>\n      <td>PMID:31235584</td>\n      <td></td>\n      <td>Purified from Escherichia coli.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Sec17</td>\n      <td>PMID:19414611</td>\n      <td></td>\n      <td>Purified from Escherichia coli.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Sec18</td>\n      <td>PMID:8620540</td>\n      <td></td>\n      <td>Purified from Escherichia coli.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>GST-PX</td>\n      <td>This Study</td>\n      <td></td>\n      <td>Purified from Escherichia coli.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>HOPS</td>\n      <td>PMID:18385512</td>\n      <td></td>\n      <td>Purified from Saccharomyces cerevisiae</td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>Cy5-derivatized streptavidin</td>\n      <td>SeraCare Life Sciences</td>\n      <td>5270\u20130023</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>Biotinylated PhycoE</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>p811</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>Streptavidin</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>434302</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>1,2-Dilinoleoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti polar lipids</td>\n      <td>850385</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>1,2-Dilinoleoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti polar lipids</td>\n      <td>840040</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>1,2-Dilinoleoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti polar lipids</td>\n      <td>850755</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>1,2-Dilinoleoyl-sn-glycero-3-phosphate</td>\n      <td>Avanti polar lipids</td>\n      <td>840885</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>L-\u03b1-Phosphatidylinositol</td>\n      <td>Avanti polar lipids</td>\n      <td>840044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>1,2-Dipalmitoyl-sn-glycerol</td>\n      <td>Avanti polar lipids</td>\n      <td>800816</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>Ergosterol</td>\n      <td>Sigma</td>\n      <td>45480</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>PI(3)P</td>\n      <td>Echelon Bioscience</td>\n      <td>P-3016</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>Rhodamine DHPE</td>\n      <td>Invitrogen</td>\n      <td>L1392</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>NBD-PE</td>\n      <td>Invitrogen</td>\n      <td>N360</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>Marina-blue</td>\n      <td>Invitrogen</td>\n      <td>M12652</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Reagents were purchased, and proteins purified, as described in Song et al., 2021._\n\n### GST-PX constructions\n\nDNA encoding the PX domain from the Qc SNARE Vam7 (amino acyl residues 2\u2013123) was amplified by PCR with CloneAMP HiFi PCR premix (Takara Bio USA, Mountain View, CA). The amplified DNA fragment was cloned into BamHI and SalI digested pGST parallel1 vector (Sheffield et al., 1999) with an NEBuilder HiFi DNA Assembly kit (NEB, Ipswich, MA).\n\nFor GST-PX:\n\nF AGGGCGCCATGGATCCGGCAGCTAATTCTGTAGGGAA.\n\nR AGTTGAGCTCGTCGACTATGGCTTTGACAACTGCAGGA.\n\nGST-PX was prepared as described (Fratti and Wickner, 2007).\n\nProteoliposome preparation and fusion assays were as described in Song et al., 2021. In brief, proteoliposomes were separately preincubated for 10 min at 27\u00b0C with EDTA and GTP, followed by addition of MgCl2, to load the Ypt7 with GTP. After separate preincubation for 10 min at 27\u00b0C of both proteoliposome preparations and of mixtures of all soluble proteins (HOPS, GST-PX, Sec17, and Sec18/ATP\u03b3S) empty assay wells received in rapid succession 5 \u03bcl of Ypt7/R proteoliposomes, 5 \u03bcl of Ypt7/3Q proteoliposomes, and an 8 \u03bcl mixture of all soluble components. FRET representing fusion was recorded each minute for 30 min, as described (Song et al., 2021), then the multiwell plate was withdrawn and 2 \u03bcl of buffer, Sec17, Sec18, or a mixture of Sec17, Sec18, and Mg:ATP\u03b3S were added and the plate returned to the machine in time for the 31 min time-point and those thereafter. Concentrations in the 20 \u03bcl final reactions were 50 nM HOPS, 1.4 \u03bcM GST-PX, 500 nM Sec17, 250 nM Sec18, and 1 mM ATP\u03b3S where present.\n",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "d0490771-b2e8-4f64-a7b3-c7c4b5966480",
+      "submission_id": "b13ed2be-3aa9-429c-bf46-25ff19136fc0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73240.sa0](https://doi.org/10.7554/eLife.73240.sa0)\n\nThis Research Advance answers an important question arising from the author's previous paper on in vitro vacuole fusion: whether the tether HOPS is needed for an unexpected direct role played by Sec17 and Sec18 in facilitating SNARE zippering and thus membrane fusion. An artificial tether substitutes for HOPS, so HOPS is not specifically needed. Therefore, this unexpected role for Sec17/18 could extend to other SNARE-mediated fusion reactions.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Adam Linstedt, Carnegie Mellon University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73240.sa1](https://doi.org/10.7554/eLife.73240.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Membrane Fusion can be Driven by Sec18/NSF, Sec17/\u03b1SNAP, and trans-SNARE complex without HOPS\" for consideration at eLife. Your initial submission has been assessed by a Senior Editor in consultation with expert members of the Board of Reviewing Editors. Although the work is of interest, we regret to inform you that the findings at this stage are too preliminary for further consideration at eLife.\n\nExpert #1. \"\u2026As a \"research advance\" the work does answer an important question left by their previous eLife paper: whether HOPS is needed for Sec17 and Sec18 to engage partially zippered SNAREs. An artificial tether substitutes so HOPS is not specifically needed and this unexpected role for Sec17/18 could extend to other fusion reactions. It is careful biochemistry that extends an eLife paper and provides data supporting a (controversial) direct role for Sec17/18 in content mixing. However, in its present form, the work doesn't go far enough to address whether the proposed novel role for Sec17/18 occurs and makes an important contribution to the reaction under normal conditions.\"\n\nExpert #2. \"Here the authors rely on an artificial truncation of one of the SNAREs, as in the previous paper, and eliminate HOPS in favor of an artificial tether. This creates a situation in which Sec17 and 18 appear to be essential for fusion. How specific is the requirement for Sec17 and 18 when their natural binding partners are altered? For this study to be meaningful, the authors would have to show that the pair of native proteins are required for fusion per se under more normal conditions with the full set of SNAREs, HOPS etc.\"\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Fusion of Tethered Membranes can be Driven by Sec18/NSF and Sec17/\u03b1SNAP without HOPS\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Alexey J Merz (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThis brief study has now been reviewed by three experts. There was only one technical issue raised (titration of components). However, all three reviewers were concerned about the \"incremental\" nature of the advance. The study shows that their Sec17/18-dependent vacuole fusion reaction employing arrested SNAREs and without ATP hydrolysis proceeds without a specific contribution from HOPS. The potential significance of this to a wider audience is that Sec17/18 may contribute directly to the fusion step of many or all SNARE-mediated fusion reactions. But this aspect is not sufficiently tested and needs to be addressed. This and the other reviewer issues are compiled below. Feasibility is clearly a concern regarding an in vivo test (point#4) but the issue of evidence that it normally occurs (e.g. rate acceleration for wildtype components as in point#1) merits particular attention.\n\n1. A main issue is the increment of advance. It succeeds in filling in a missing piece of their 2021 paper but on its own does not substantially advance understanding of the critical issue of whether Sec17/18 normally plays this role. If it did, one would expect fusion by normal SNAREs to be significantly accelerated by Sec17/18. From Figure 1B, 1F, this does not appear to be the case.\n\n2. One would expect Sec17/18 association with the normal SNAREs to occur prior to fusion, but there is no data to address this.\n\n3. The concentration of Sec17/18, the most critical component, is not indicated in either the figure legend or methods.\n\n4. Can this unexpected role for Sec17/18 be demonstrated/confirmed for intact cells? Is it essential for wildtype rates of fusion? Or is it strictly redundant in the face of the assembly force of SNARE pairing as a driving force for fusion?\n\n5. Does it actually act on other SNAREs? This is important because the clearest argument for this brief study being viewed as a highly significant research advance (over their previous work) is the implication that the unexpected direct role of Sec17/18 can now be considered likely to take place in other, if not all, SNARE-mediated fusion events.\n\n6. No concentrations for any soluble component are given. The final concentrations of Vam7/Qc, Sec17, Sec18, HOPS, ATPgS, etc., must be specified. Readers should not have to look at prior publications to locate this information. A possible criticism of this and some similar prior work is that the experiments are conducted at only single concentrations of each reagent, rather than using concentration titrations for the protein components in the reaction. Nevertheless, the results support the authors' conclusions and are broadly consistent with prior work.\n\n7. The last paragraph of the introduction could probably be omitted without loss of clarity.\n\n8. Line 46: extensive mutational analyses (both in vitro and in vivo) of the Sec17 membrane-interaction loop is present in Schwartz et al. 2017. This work should be cited.\n\n9. Lines 62-65: the pioneering paper by Hanson, Jahn et al. was a key step toward the consensus that SNARE complexes are oriented in a parallel coiled coil, and that Sec17/18 may act after, rather than before, fusion. It should be cited.\n\n10. Lines 72-73: again, Schwartz et al., 2017 should be cited.\n",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b41b3def-0e73-447e-bacb-2107206af552",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C1",
+      "claim": "Yeast vacuolar membrane fusion has been reconstituted with R, Qa, Qb, and Qc-family SNAREs, Sec17/\u03b1SNAP, Sec18/NSF, and the hexameric HOPS complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast vacuolar membrane fusion has been reconstituted with R, Qa, Qb, and Qc-family SNAREs, Sec17/\u03b1SNAP, Sec18/NSF, and the hexameric HOPS complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work that established the reconstitution system, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "90179876-b41e-4ab0-8fbc-4226f9f45279",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C2",
+      "claim": "HOPS tethers membranes and catalyzes SNARE assembly into RQaQbQc trans-complexes which zipper through their SNARE domains to promote fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS tethers membranes and catalyzes SNARE assembly into RQaQbQc trans-complexes which zipper through their SNARE domains to promote fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of HOPS function based on prior research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "36d06f85-80ad-478f-b9cd-59e430cb61b3",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C3",
+      "claim": "Sec17 and Sec18 can bypass the requirement of complete zippering for fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we demonstrated that Sec17 and Sec18 can bypass the requirement of complete zippering for fusion (Song et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Song et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "b8689d43-f23d-42b4-b485-99289a0d947e",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C4",
+      "claim": "HOPS can be replaced for fusion by a synthetic tether when the three Q-SNAREs are pre-assembled.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS can be replaced for fusion by a synthetic tether when the three Q-SNAREs are pre-assembled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by prior published work establishing this experimental approach.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "a0ec2da7-06c4-4ba7-91e9-3e1476f7a826",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C5",
+      "claim": "Fusion intermediates with arrested SNARE zippering, formed with a synthetic tether but without HOPS, support Sec17/Sec18-triggered fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "We now report that fusion intermediates with arrested SNARE zippering, formed with a synthetic tether but without HOPS, support Sec17/Sec18-triggered fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the current study, supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "d5c589b3-e033-4019-96c7-76a59b8eeeba",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C6",
+      "claim": "Zippering-bypass fusion is a direct result of Sec17 and Sec18 interactions with each other, with the platform of partially zippered SNAREs, and with the apposed tethered membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "This zippering-bypass fusion is thus a direct result of Sec17 and Sec18 interactions: with each other, with the platform of partially zippered SNAREs, and with the apposed tethered membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing that HOPS is not required for Sec17/Sec18-mediated fusion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "87c5893f-26f6-4106-a8f4-a849ab53824e",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C7",
+      "claim": "Fusion elements (SNAREs, Sec17, Sec18) are shared among all exocytic and endocytic traffic.",
+      "claim_type": "EXPLICIT",
+      "source": "As these fusion elements are shared among all exocytic and endocytic traffic, Sec17 and Sec18 may have a general role in directly promoting fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the conservation of these proteins across trafficking pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "aa99e564-913f-4d99-9511-6c6179e82290",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C8",
+      "claim": "Sec17 and Sec18 may have a general role in directly promoting fusion across all exocytic and endocytic traffic.",
+      "claim_type": "EXPLICIT",
+      "source": "As these fusion elements are shared among all exocytic and endocytic traffic, Sec17 and Sec18 may have a general role in directly promoting fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the findings and the conservation of these proteins.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "1d2aee3e-d370-4d3c-aba0-81ddf747553c",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C9",
+      "claim": "Intracellular membrane fusion is catalyzed by families of fusion proteins which are conserved from yeast to humans and among the organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular membrane fusion is catalyzed by families of fusion proteins which are conserved from yeast to humans and among the organelles (Wickner and Rizo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "bbbacede-2fb0-44f8-ad80-9c050987f819",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C10",
+      "claim": "Fusion proteins include Rab-family GTPases, large tethering complexes which bind to Rabs, membrane-anchored SNARE proteins, and SNARE chaperones of the SM, Sec17/\u03b1SNAP, and Sec18/NSF families.",
+      "claim_type": "EXPLICIT",
+      "source": "These include Rab-family GTPases, large tethering complexes which bind to Rabs (Baker and Hughson, 2016), membrane-anchored SNARE proteins (Jahn and Scheller, 2006), and SNARE chaperones of the SM, Sec17/\u03b1SNAP, and Sec18/NSF families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "7009f885-35b5-4265-b90f-7408d72b5746",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C11",
+      "claim": "SNAREs have conserved SNARE domains of R, Qa, Qb, and Qc sub-families which assemble into tetrameric RQaQbQc coiled coils trans-complexes that bridge membranes before fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "SNAREs have conserved SNARE domains of R, Qa, Qb, and Qc sub-families (Fasshauer et al., 1998) which assemble into tetrameric RQaQbQc coiled coils trans-complexes that bridge membranes before fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SNARE structure and function, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "132c5f15-c64f-433f-82ee-1323467f9b44",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C12",
+      "claim": "Each SNARE domain has heptad repeating apolar residues which are buried together in the center of the assembling four-helical coiled coils structure, driving SNARE assembly in an N- to C-direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Each SNARE domain has heptad repeating apolar residues which are buried together in the center of the assembling four-helical coiled coils structure, driving SNARE assembly in an N- to C-direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural basis of SNARE assembly, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "48caf4af-318c-49e5-9124-ee89314df3c3",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C13",
+      "claim": "Directional SNARE assembly, termed 'zippering', can provide sufficient energy for fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "This directional assembly, termed 'zippering', can provide sufficient energy for fusion (Sorensen et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "e470d110-ac84-421e-8ab5-dc456e3b0361",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C14",
+      "claim": "SNARE zippering has been thought to be the sole driving force for fusion while other proteins simply catalyze or regulate SNARE assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "and has been thought to be the sole driving force for fusion while other proteins simply catalyze or regulate SNARE assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a historical view in the field that the current work challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "63fa0cb8-2fe1-4fcc-bd69-a7767ac19064",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C15",
+      "claim": "Yeast vacuole fusion requires proteins of each canonical conserved fusion-protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast vacuole fusion requires proteins of each canonical conserved fusion-protein family",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the yeast vacuole fusion system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "dbaac8db-476b-4003-98c9-4e658e8b310b",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C16",
+      "claim": "Yeast vacuole fusion combines the Rab-effector tethering and the SM functions into the large hexameric HOPS complex.",
+      "claim_type": "EXPLICIT",
+      "source": "but combines the Rab-effector tethering and the SM functions into the large hexameric HOPS (homotypic fusion and vacuole protein sorting) complex (Wurmser et al., 2000; Seals et al., 2000; Stroupe et al., 2006; Hickey and Wickner, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "5fba7f54-18d6-485a-b7e4-aec2f8018148",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C17",
+      "claim": "HOPS binds to acidic lipids and to its Rab Ypt7 on each fusion partner membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS binds to acidic lipids (Orr et al., 2015) and to its Rab Ypt7 on each fusion partner membrane (Hickey and Wickner, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "75e77b86-2e6f-42e4-a67f-9d64c715e0da",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C18",
+      "claim": "HOPS binding to lipids and Ypt7 activates HOPS to initiate N- to C-directional assembly among the R, Qa, Qb, and Qc SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "activating HOPS (Torng et al., 2020) to initiate N- to C-directional assembly among the R, Qa, Qb, and Qc SNAREs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "3c704d7b-fb02-47ce-8fb8-bdfdbf2f58fa",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C19",
+      "claim": "HOPS has direct affinity for the R and Qa SNAREs through its SM subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS has direct affinity for the R and Qa SNAREs through its SM subunit (Baker et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "057528df-79ef-41df-8c2a-1d0481eda226",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C20",
+      "claim": "HOPS has direct affinity for the Qb SNARE and Qc SNARE.",
+      "claim_type": "EXPLICIT",
+      "source": "and for the Qb SNARE (Song et al., 2020) and Qc SNARE (Stroupe et al., 2006) as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "77a1c52d-911d-4300-b25a-83c3361af632",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C21",
+      "claim": "HOPS multiple affinities for SNAREs directly affect the Km of SNAREs for SNARE complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These multiple affinities directly affect the Km of SNAREs for SNARE complex assembly (Zick and Wickner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "f9663962-1569-4b89-8419-254647dac2fd",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C22",
+      "claim": "HOPS can assemble intermediates formed from R and any two Q SNAREs which are triggered to undergo rapid fusion by the third Q SNARE.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS can assemble intermediates formed from R and any two Q SNAREs which are triggered to undergo rapid fusion by the third Q SNARE (Song et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "ad4f8ebc-5bd6-4c8d-9aed-3d817a76522e",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C23",
+      "claim": "ATP hydrolysis by NSF/Sec18 was initially proposed to directly drive fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP hydrolysis by NSF/Sec18 was initially proposed to directly drive fusion (Malhotra et al., 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a historical hypothesis in the field, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "df097b91-e3fa-4574-923f-7c1fcc79d90d",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C24",
+      "claim": "SNAREs were initially proposed to mediate the attachment of the NSF fusion engine to membranes via \u03b1SNAP/Sec17.",
+      "claim_type": "EXPLICIT",
+      "source": "while SNAREs mediated the attachment of the NSF fusion engine to membranes (S\u00f6llner et al., 1993b) via \u03b1SNAP/Sec17 (Whiteheart et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a historical model, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "7a7f6cc4-94ab-4d14-a8f0-9e8c9358e1eb",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C25",
+      "claim": "Sec18/NSF and Sec17/\u03b1SNAP disassemble SNARE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "It was subsequently shown that Sec18/NSF and Sec17/\u03b1SNAP disassemble SNARE complexes (S\u00f6llner et al., 1993a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "4a33b6ff-684c-4b8d-b8c5-f89c007a2fc6",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C26",
+      "claim": "Sec18/NSF and Sec17/\u03b1SNAP act prior to membrane docking.",
+      "claim_type": "EXPLICIT",
+      "source": "that Sec18/NSF and Sec17/\u03b1SNAP act prior to membrane docking (Mayer et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "fc8ced01-8f4a-4205-85fd-d06f115b0c93",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C27",
+      "claim": "NSF/Sec18 and SNAP/Sec17 associate in a specific complex with the SNAREs and induce a conformational change in the SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "that NSF/Sec18 and SNAP/Sec17 associate in a specific complex with the SNAREs and induce an conformational change in the SNAREs (Hanson et al., 1995; Hanson et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "d5b11601-f867-4101-938d-e634582608d1",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C28",
+      "claim": "SNARE complexes alone can mediate fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "and that SNARE complexes alone can mediate fusion (Weber et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "6d72232f-0951-43bb-b058-7e2ca59d67d1",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C29",
+      "claim": "All the energy for fusion derives from SNARE zippering.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings led to the concept that all the energy for fusion derives from SNARE zippering (Weber et al., 1998; Sorensen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a concept in the field that the current work challenges, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "bde6e9ed-d2e3-4923-a898-22b365ad64d3",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C30",
+      "claim": "Sec17/\u03b1SNAP will block fusion from spontaneously assembled trans-SNARE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Though Sec17/\u03b1SNAP will block fusion from spontaneously assembled trans-SNARE complexes (Mima et al., 2008; Stepien et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "f3289b6b-5cda-4cda-9603-ad91a9e5ddd5",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C31",
+      "claim": "Fusion proteins such as vacuolar HOPS or the synaptic proteins Munc18-1, Munc13-1, complexin-1, and synaptotagmin confer resistance to Sec17/\u03b1SNAP and Sec18/NSF.",
+      "claim_type": "EXPLICIT",
+      "source": "other fusion proteins such as vacuolar HOPS or the synaptic proteins Munc18-1, Munc13-1, complexin-1, and synaptotagmin confer resistance to Sec17/\u03b1SNAP and Sec18/NSF (Mima et al., 2008; Prinslow et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "abdb610e-b11a-4f77-b96b-9fba65a08beb",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C32",
+      "claim": "Vacuolar SNAREs undergoing HOPS-dependent assembly are resistant to disassembly by Sec17/Sec18.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacuolar SNAREs undergoing HOPS-dependent assembly are resistant to disassembly by Sec17/Sec18 (Xu et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "2fa87dd9-8797-458b-a25f-ff2cb9e5bb05",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C33",
+      "claim": "Sec17 and Sec18 keep most SNAREs in a disassembled state.",
+      "claim_type": "EXPLICIT",
+      "source": "but Sec17 and Sec18 otherwise keep most SNAREs in a disassembled state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cited work and established knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "ec7e74d6-2125-427f-a265-1ba041c2d29c",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C34",
+      "claim": "Most of the Qa and Qb SNAREs on isolated vacuoles are not together in complex.",
+      "claim_type": "EXPLICIT",
+      "source": "indeed most of the Qa and Qb SNAREs on isolated vacuoles are not together in complex (Collins et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "5a8effe0-aad9-4cda-abde-d1a06a4c9784",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C35",
+      "claim": "Without Sec17/Sec18, HOPS-assembled trans-SNARE complexes require complete zippering to induce fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Without Sec17/Sec18, HOPS-assembled trans-SNARE complexes require complete zippering to induce fusion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work showing fusion arrest with truncated SNAREs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "f6b61cf7-b0a5-44e1-9c74-220b28774ce8",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C36",
+      "claim": "Fusion is arrested by deletion of the C-terminal 21 residues of the Qc SNARE domain.",
+      "claim_type": "EXPLICIT",
+      "source": "since fusion is arrested by deletion of the C-terminal 21 residues of the Qc SNARE domain (Schwartz and Merz, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "7256f181-cba2-403e-9e67-6bb1a86d9836",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C37",
+      "claim": "Fusion is arrested by deletion of the C-terminal regions of the Qa or Qb SNARE domains.",
+      "claim_type": "EXPLICIT",
+      "source": "or the Qa or Qb SNARE domains (Song et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "1a0a0b77-d88a-44a6-a4cf-74ecc265d367",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C38",
+      "claim": "Fusion arrest by C-terminal SNARE truncations is bypassed by adding Sec17.",
+      "claim_type": "EXPLICIT",
+      "source": "This fusion arrest is bypassed by adding Sec17 (Schwartz and Merz, 2009; Song et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "9b4bcfd1-2548-4959-9171-6e5ddd67c91d",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C39",
+      "claim": "Fusion bypass by Sec17 is driven by the apolar N-terminal loop of Sec17.",
+      "claim_type": "EXPLICIT",
+      "source": "driven by the apolar N-terminal loop of Sec17 (Schwartz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "662d8813-6cc3-4c05-93a5-a1bf5eefc8c4",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C40",
+      "claim": "Fusion with only SNAREs is blocked by Sec17/Sec18.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion with only SNAREs is blocked by Sec17/Sec18 (Mima et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "b5fa26d9-4095-4eb6-8f6d-45bf170271bd",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C41",
+      "claim": "HOPS not only prevents Sec17 inhibition of fusion, but acts synergistically with Sec17/Sec18 for fusion with wild-type SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS not only prevents Sec17 inhibition of fusion, but acts synergistically with Sec17/Sec18 for fusion with wild-type SNAREs (Mima et al., 2008; Schwartz et al., 2017; Song et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "61025176-be69-4421-906b-018ad2f10221",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C42",
+      "claim": "When fusion is blocked by zippering arrest due to deletions from the C-terminus of vacuolar Qc, the block can be bypassed by Sec17, both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "When fusion is blocked by zippering arrest due to deletions from the C-terminus of vacuolar Qc, the block can be bypassed by Sec17, both in vitro and in vivo (Schwartz and Merz, 2009; Schwartz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "63cdc6d3-74cb-4aec-86ad-ae096d7f42f7",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C43",
+      "claim": "A similar block to fusion is seen with C-terminal truncation of the Qa or Qb SNAREs, singly or in combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar block to fusion is also seen with C-terminal truncation of the Qa or Qb SNAREs, singly or in combinations (Song et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "7b62fc74-23d8-4296-be14-666447772584",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C44",
+      "claim": "Fusion is restored in each case of SNARE truncation by Sec17/Sec18 without requiring ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion is restored in each case by Sec17/Sec18 without requiring ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "a0c5607f-e8a8-4b1b-984f-c6b67b3c81ea",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C45",
+      "claim": "When both the Qb and Qc SNAREs were C-terminally truncated and the Qa SNARE was mutated to impart polarity to its canonical apolar SNARE domain residues, HOPS-dependent fusion was restored by Sec17/Sec18.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when both the Qb and Qc SNAREs were C-terminally truncated and the Qa SNARE was mutated to impart polarity to its canonical apolar SNARE domain residues, HOPS-dependent fusion was restored by Sec17/Sec18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "7135e507-2bb5-4469-b2ce-ebc199bef70c",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C46",
+      "claim": "Sec17 has direct affinity for HOPS through its Vps33 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec17 has direct affinity for HOPS (Song et al., 2021) through its Vps33 subunit (Lobingier et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "15ed74b0-1eb6-46da-8cd3-17a6a80e7546",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C47",
+      "claim": "It has been unclear whether HOPS is needed for Sec17 and Sec18 to engage partially zippered SNAREs and mediate zippering-bypass fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been unclear whether HOPS is needed for Sec17 and Sec18 to engage partially zippered SNAREs and mediate zippering-bypass fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "482f062c-9a97-4c17-8bb4-59c3da027f0e",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C48",
+      "claim": "Sec17 and Sec18 enhance the rate of HOPS-dependent vacuole membrane fusion with all wild-type fusion components without requiring ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec17 and Sec18 enhance the rate of HOPS-dependent vacuole membrane fusion with all wild-type fusion components (Mima et al., 2008; Zick et al., 2015; Song et al., 2017; Schwartz et al., 2017) without requiring ATP hydrolysis (Zick et al., 2015; Song et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "959d1cf3-2d78-47e6-ba29-1e8ba1729686",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C49",
+      "claim": "Sec17 promotes SNARE zippering.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec17, which promotes zippering (Ma et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "09fc9915-a145-476d-9afb-d854783e0578",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C50",
+      "claim": "Sec17 will act through its N-terminal membrane-proximal apolar loop to drive HOPS-dependent fusion even when zippering would be unable to provide any fusion energy.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study (Song et al., 2021) has shown that Sec17, which promotes zippering (Ma et al., 2016), will also act through its N-terminal membrane-proximal apolar loop to drive HOPS-dependent fusion even when zippering would be unable to provide any fusion energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "b55eed4a-c575-4925-8a44-6ccba6ca7d7a",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C51",
+      "claim": "Slow fusion can be driven either by zippering or by the apolar loops of Sec17 which had assembled on a platform of partially zippered trans-SNARE complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Slow fusion can be driven either by zippering or by the apolar loops of Sec17 which had assembled on a platform of partially zippered trans-SNARE complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from prior work cited in the context.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "1fa986e9-7798-4c3e-82c2-ca9526a42669",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C52",
+      "claim": "Rapid HOPS-dependent fusion requires both SNARE zippering and Sec17 with its apolar loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid HOPS-dependent fusion requires both SNARE zippering and Sec17 with its apolar loops, as analyzed in vitro and in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "60b87134-9d6a-44ce-9eaa-6286dd8ad3f8",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C53",
+      "claim": "Overexpression of Sec17 with an intact N-terminal apolar loop substantially restored the fusion defect caused by Qc SNARE domain truncation.",
+      "claim_type": "EXPLICIT",
+      "source": "where overexpression of Sec17 with an intact N-terminal apolar loop substantially restored the fusion defect caused by Qc SNARE domain truncation (Schwartz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "9363da3e-82aa-4bf7-9f11-fe3f7174a81d",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C54",
+      "claim": "The precise starting conditions of fusion assays control when the contributions of zippering and of Sec17 are evident.",
+      "claim_type": "EXPLICIT",
+      "source": "it is perhaps unsurprising that the precise starting conditions of fusion assays control when the contributions of zippering and of Sec17 are evident.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the variability observed in different experimental conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "b7fca25b-64cd-4f14-8822-22c367e4392c",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C55",
+      "claim": "The rate of fusion and its dependence on Sec17 are governed by the fluidity and headgroup composition of the membrane lipids and the initial state of assembly of the SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of fusion and its dependence on Sec17 are governed by the fluidity and headgroup composition of the membrane lipids and the initial state of assembly of the SNAREs (Zick et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "7eaa4af0-5e22-4e49-9cf1-30a81e1ef850",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C56",
+      "claim": "Sec17 is required when all the SNAREs are initially disassembled.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec17 is required when all the SNAREs are initially disassembled (Zick et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "f8d83687-ff92-4629-a41f-576ea11b348d",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C57",
+      "claim": "On intact vacuoles, only a tenth of the Qb SNARE is in complex with Qa.",
+      "claim_type": "EXPLICIT",
+      "source": "as found on intact vacuoles (Collins et al., 2005) where only a tenth of the Qb SNARE is in complex with Qa (Collins et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "0d28e91c-53cb-4a88-8c89-8a31a4e9c088",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C58",
+      "claim": "The low level of SNARE complex on intact vacuoles is presumably due to continuous cis-SNARE disassembly in cells by Sec17/Sec18/ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "presumably due to continuous cis-SNARE disassembly in cells by Sec17/Sec18/ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of Sec17/Sec18.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "24b103ed-34ef-4ef3-8d70-46271ebd5007",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C59",
+      "claim": "With vacuolar mimic lipid composition and two of the Q SNAREs pre-assembled, fusion is stimulated several-fold by Sec17 and Sec18.",
+      "claim_type": "EXPLICIT",
+      "source": "With vacuolar mimic lipid composition and two of the Q SNAREs pre-assembled, fusion is stimulated several-fold by Sec17 and Sec18 (Song et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "548bfbe4-f07e-45ab-83f6-82b9aef29d4f",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C60",
+      "claim": "When all three Q SNAREs are initially pre-assembled on one membrane, tethering is the only prerequisite for fusion and Sec17/Sec18 is not essential.",
+      "claim_type": "EXPLICIT",
+      "source": "When all three Q SNAREs are initially pre-assembled on one membrane, tethering is the only prerequisite for fusion and Sec17/Sec18 is not essential (Baker et al., 2015; Song and Wickner, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "0d46e8c1-4807-4a87-9adc-4e1d49b9f201",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C61",
+      "claim": "Little 3Q SNARE complex is found on intact vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "Though little 3Q SNARE complex is found on intact vacuoles (Collins et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "a1a97145-57e4-4e38-9f2f-6683f82adf9a",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C62",
+      "claim": "Pre-assembly of 3Q-SNARE complex during proteoliposome preparation allows synthetic tethers to support fusion as well as HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "pre-assembly of 3Q-SNARE complex during proteoliposome preparation allows synthetic tethers to support fusion as well as HOPS (Song and Wickner, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "a180c419-8308-4dc2-b75e-dd57f0d32a7f",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C63",
+      "claim": "Sec17/Sec18 dependence can be restored to fusion reactions where the 3Q SNAREs had been pre-assembled by preventing zippering through the Qc3\u0394 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec17/Sec18 dependence can be restored to fusion reactions where the 3Q SNAREs had been pre-assembled by preventing zippering through the Qc3\u0394mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "5953de06-9bfa-42b6-9548-1a5703a86c5e",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C64",
+      "claim": "It has been unclear whether the actions of Sec17 and Sec18 to promote fusion are particular to HOPS-dependent fusion, and thus restricted to the fusion of vacuoles/lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been unclear whether the actions of Sec17 and Sec18 to promote fusion are particular to HOPS-dependent fusion, and thus restricted to the fusion of vacuoles/lysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "0ea87fa3-0125-4e3d-a69b-4264d6b1314d",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C65",
+      "claim": "The current work, substituting a synthetic protein tether for HOPS, shows that Sec17/Sec18 can also drive HOPS-independent fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current work, substituting a synthetic protein tether for HOPS, shows that Sec17/Sec18 can also drive HOPS-independent fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the current study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "ebb2bb3d-bbd8-4081-8e6a-6ffd662c15a6",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C66",
+      "claim": "HOPS is not required for Sec17 and Sec18 to drive zippering-bypass fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "We now exploit a synthetic tether to show that HOPS is not required for Sec17 and Sec18 to drive zippering-bypass fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the current study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "ff762a3a-b533-4d60-bb9e-6bb65d5d182f",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C67",
+      "claim": "The 4 SNAREs, Sec17/\u03b1SNAP, and Sec18/NSF, the fundamental components of the 20s particle, suffice to drive fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The 4 SNAREs, Sec17/\u03b1SNAP, and Sec18/NSF, the fundamental components of the 20s particle (Zhao et al., 2015), suffice to drive fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the current study, with citation to prior work on the 20s particle.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "2484a01c-d0eb-48c9-a351-3310456fb514",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C68",
+      "claim": "Dimeric GST-PX binds PI3P in each bilayer to tether membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimeric GST-PX binds PI3P in each bilayer to tether membranes (Song and Wickner, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "b22149a5-75b4-490f-90ec-74c7e1d59426",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C69",
+      "claim": "When Q SNAREs are pre-assembled into a QaQbQc ternary complex on one fusion partner membrane, tethering by GST-PX supports fusion with membranes bearing the R SNARE without the need for SM function, Sec17 or Sec18.",
+      "claim_type": "EXPLICIT",
+      "source": "When Q SNAREs are pre-assembled into a QaQbQc ternary complex on one fusion partner membrane, tethering by GST-PX supports fusion with membranes bearing the R SNARE without the need for SM function, Sec17 or Sec18 (Song and Wickner, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "62135a27-4832-4f5a-b354-2ffead59d83d",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C70",
+      "claim": "GST-PX mediated fusion relies on SNARE zippering, as it is blocked by deletion of the C-terminal region of the Qc SNARE domain, the Qc3\u0394 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This fusion relies on SNARE zippering, as it is blocked by deletion of the C-terminal region of the Qc SNARE domain, the Qc3\u0394 mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "906f6550-3fe2-4671-8998-518f49efba41",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C71",
+      "claim": "GST-PX tethered membranes bearing R and QaQbQc3\u0394 SNAREs on fusion partners, unable to completely zipper and fuse because of the shortened Qc SNARE domain, are rescued from this arrested state and will fuse upon addition of Sec17 and Sec18.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that GST-PX tethered membranes bearing R and QaQbQc3\u0394 SNAREs on fusion partners, unable to completely zipper and fuse because of the shortened Qc SNARE domain, are rescued from this arrested state and will fuse upon addition of Sec17 and Sec18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the current study, supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "1564c0be-9e60-471b-9c1a-2257d61cb13f",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C72",
+      "claim": "The Sec17 and Sec18 fusion functions do not rely on interactions with HOPS, instead acting through their interactions with each other, with tethered membranes, and with a partially zippered trans-SNARE binding platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Sec17 and Sec18 fusion functions do not rely on interactions with HOPS, instead acting through their interactions with each other, with tethered membranes, and with a partially zippered trans-SNARE binding platform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the current study, based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "ce94a485-a83d-4dea-a222-5daaffdd37f4",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C73",
+      "claim": "Proteoliposomes were prepared with vacuolar lipids, with membrane-anchored Ypt7, and with either the R- or the 3Q SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteoliposomes were prepared with vacuolar lipids, with membrane-anchored Ypt7, and with either the R- or the 3Q SNAREs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "a55b76c1-f691-4392-b585-2d4c76e271d4",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C74",
+      "claim": "The Qc SNARE was either wild type with its full-length SNARE domain or Qc3\u0394 which lacks the C-terminal four heptads of its SNARE domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The Qc SNARE was either wild type with its full-length SNARE domain or Qc3\u0394 which lacks the C-terminal four heptads of its SNARE domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "13b953a7-2475-43e0-b66e-fa823b54347c",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C75",
+      "claim": "The Ypt7/R- and Ypt7/3Q-proteoliposomes bore lumenal fusion-reporter fluorescent proteins, either Cy5-labeled streptavidin or biotinylated phycoerythrin.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ypt7/R- and Ypt7/3Q-proteoliposomes bore lumenal fusion-reporter fluorescent proteins, either Cy5-labeled streptavidin or biotinylated phycoerythrin (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methods, with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "db7af15b-b46f-45c5-98e6-6cd022662d77",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C76",
+      "claim": "Proteoliposomes were purified by flotation to remove unincorporated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteoliposomes were purified by flotation to remove unincorporated proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "5915d269-bc60-417c-aef9-f3f4d2a8ffac",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C77",
+      "claim": "When proteoliposomes are mixed, their lumenal fluorescent proteins are separated by at least the thickness of two lipid bilayers, too far for measurable fluorescence resonance energy transfer (FRET).",
+      "claim_type": "EXPLICIT",
+      "source": "When these proteoliposomes are mixed, their lumenal fluorescent proteins are separated by at least the thickness of two lipid bilayers, too far for measurable fluorescence resonance energy transfer (FRET).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for the FRET-based fusion assay.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "92dcaa55-cb4e-4b26-80a7-cd3223f41145",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C78",
+      "claim": "Upon fusion and the attendant content mixing, the binding of biotin to streptavidin brings the Cy5 and phycoerythrin fluorophores into intimate contact, yielding a strong FRET signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon fusion and the attendant content mixing, the binding of biotin to streptavidin brings the Cy5 and phycoerythrin fluorophores into intimate contact, yielding a strong FRET signal (Zucchi and Zick, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the principle of the FRET-based fusion assay, with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "092c9480-ee7d-4886-88c2-10a96370be4b",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C79",
+      "claim": "Fusion incubations were performed with mixed Ypt7/R and Ypt7/3Q proteoliposomes and with external nonfluorescent streptavidin to block any signal from proteoliposome lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion incubations were performed with mixed Ypt7/R and Ypt7/3Q proteoliposomes and with external nonfluorescent streptavidin to block any signal from proteoliposome lysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "f454c8e4-63b8-4b68-a664-88060fc051b2",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C80",
+      "claim": "Each incubation had either HOPS or GST-PX to tether the membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Each incubation had either HOPS or GST-PX to tether the membranes (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design, with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "52177744-ef16-44f4-9306-04c585fc6f79",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C81",
+      "claim": "At 30 min, each reaction received a supplement of the components not added at time 0, so that all incubations had Sec17, Sec18, and ATP\u03b3S as the incubation continued.",
+      "claim_type": "EXPLICIT",
+      "source": "At 30 min, each reaction received a supplement of the components not added at time 0, that is, (a) Sec17, Sec18 and ATP\u03b3S, (b) Sec18 and ATP\u03b3S, (c) Sec17, or (d) buffer alone, so that all incubations had Sec17, Sec18, and ATP\u03b3S as the incubation continued in the \u03b2 portion of the experiment (Figure 1B \u03b2-E\u03b2), from 30 to 32 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design, with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "55399c6d-c997-48ca-90cf-9a63fb20d16a",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C82",
+      "claim": "When the 3Q complex includes wild-type full-length Qc, HOPS-mediated fusion shows only minor effects from adding either Sec17, Sec18 with a nonhydrolyzable ATP analog, or Sec17, Sec18, and ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "When the 3Q complex includes wild-type full-length Qc, HOPS-mediated fusion (Figure 1B \u03b1, black curve) shows only minor effects from adding either Sec17 (red), Sec18 with a nonhydrolyzable ATP analog (blue), or Sec17, Sec18, and ATP\u03b3S (green).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study, shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "b03df81f-63b4-4e3d-91e9-25df51faf99c",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C83",
+      "claim": "When the 3Q complex includes Qc3\u0394 to arrest SNARE zippering and block fusion, both Sec17 and Sec18 are required to bypass the zippering arrest and allow fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the 3Q complex includes Qc3\u0394 to arrest SNARE zippering and block fusion (Figure 1C \u03b1, black curve), both Sec17 and Sec18 are required to bypass the zippering arrest and allow fusion (Figure 1C \u03b1, contrast the green curve vs. the blue, red or black curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "18e27991-465b-46b3-9970-507eb0a7b520",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C84",
+      "claim": "The dimeric tether GST-PX supports fusion with pre-assembled wild-type Q SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric tether GST-PX (Song and Wickner, 2019) also supports fusion with pre-assembled wild-type Q SNAREs (Figure 1D \u03b1, black curve)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study, shown in Figure 1D, with citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "9594a2fc-d45c-43f8-b8cb-06532f2f6474",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C85",
+      "claim": "GST-PX mediated fusion is blocked by Sec17 without rescue by Sec18.",
+      "claim_type": "EXPLICIT",
+      "source": "but this fusion is blocked by Sec17 (Figure 1D \u03b1, red curve) without rescue by Sec18 (green curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study, shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "cb4b9ea4-f1c7-46c1-a6bd-800a2763950d",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C86",
+      "claim": "When fusion with the dimeric GST-PX tether is blocked by the Qc3\u0394 mutation, there is no rescue by Sec17, alone or in combination with Sec18/ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "When fusion with the dimeric GST-PX tether is blocked by the Qc3\u0394 mutation (Figure 1E \u03b1, black curve), there is no rescue by Sec17, alone or in combination with Sec18/ATP\u03b3S (Figure 1E \u03b1, red and green curves)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study, shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "943ac2a0-30cc-472f-b10c-b8905dd27b62",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C87",
+      "claim": "HOPS is the only tether which bypasses inhibition by Sec17.",
+      "claim_type": "EXPLICIT",
+      "source": "since HOPS is the only tether which bypasses inhibition by Sec17 (Song and Wickner, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "494fb118-629f-4782-8200-aa80eaf0538a",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C88",
+      "claim": "Although full-length SNAREs support zippering and fusion with either the HOPS or GST-PX tether, a kinetic intermediate accumulates which gives some additional fusion upon addition of Sec17/Sec18/ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "Although full-length SNAREs support zippering and fusion with either the HOPS or GST-PX tether, a kinetic intermediate accumulates which gives some additional fusion upon addition of Sec17/Sec18/ATP\u03b3S (Figure 1, B\u03b2 and D\u03b2, black curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "c2536ff9-2f6c-4cbc-9839-1cd3ed6261fa",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C89",
+      "claim": "When SNARE zippering and the attendant fusion was blocked by the Qc3\u0394 mutation, HOPS-dependent zippering-bypass fusion requires Sec17, Sec18, and ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "When SNARE zippering and the attendant fusion was blocked by the Qc3\u0394 mutation, HOPS-dependent zippering-bypass fusion requires Sec17, Sec18, and ATP\u03b3S (Figure 1C \u03b1), as reported (Song et al., 2020; Song et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study shown in Figure 1C, consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "02046ef7-ff6b-4f96-b6f7-ae45d40cffc7",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C90",
+      "claim": "In the absence of Sec17, Sec18, and ATP\u03b3S, fusion intermediate accumulated with HOPS and Qc3\u0394, since there is rapid fusion upon their addition.",
+      "claim_type": "EXPLICIT",
+      "source": "In their absence, fusion intermediate accumulated, since there is rapid fusion upon their addition (Figure 1C \u03b2, curves a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "4a55cb29-4f71-4ccc-9cce-05c9f2b78122",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C91",
+      "claim": "The presence of Sec17 from the start of the incubation blocks the formation of rapid-fusion intermediate with the GST-PX tether.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, though the presence of Sec17 from the start of the incubation blocks the formation of rapid-fusion intermediate with the GST-PX tether (Figure 1E \u03b2, red curve)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study, shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "6e6de79b-ccee-4f33-a0b5-b9e508aecd0f",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C92",
+      "claim": "Rapid-fusion intermediate does accumulate with the GST-PX tether when Sec17 is absent, as Sec17 addition at 30 min triggers fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "rapid-fusion intermediate does accumulate with the GST-PX tether when Sec17 is absent, as Sec17 addition at 30 min triggers fusion (Figure 1E \u03b2, curves a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the current study, shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "f6db2c00-6dc3-45c4-9fab-593a8a2d3a5c",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C93",
+      "claim": "Inhibition by Sec17 with the GST-PX tether instead of HOPS is only seen when Sec17 is present from the start of the incubation, prior to trans-SNARE assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition by Sec17 with the GST-PX tether instead of HOPS is only seen when Sec17 is present from the start of the incubation, prior to trans-SNARE assembly (Figure 1E, red curve b and green curve d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the current study based on data in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "53c3e17f-cd0d-485c-a5af-faf66bc04671",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C94",
+      "claim": "Once membranes have undergone tethering and trans-SNARE assembly, Sec17 and Sec18 support zippering-bypass fusion without HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "but once membranes have undergone tethering and trans-SNARE assembly, Sec17 and Sec18 support zippering-bypass fusion without HOPS (Figure 1E \u03b2, blue and black curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion from the current study, supported by data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "488a408e-52e9-440d-a914-3eb3d1a1a301",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C95",
+      "claim": "Sec17 may inhibit functional trans-SNARE complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec17 may inhibit functional trans-SNARE complex assembly (Wang et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "2a2374dc-087d-4646-b1aa-909636a92c42",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C96",
+      "claim": "Once zippering has begun, Sec17 associates with partially zippered SNAREs to directly promote fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "but, once zippering has begun, Sec17 associates with partially zippered SNAREs to directly promote fusion (Zick et al., 2015; Harner and Wickner, 2018; Song et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "1aea61a5-e254-4126-97d4-e5c33c1bcaa7",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C97",
+      "claim": "Sec17 can block fusion of reconstituted proteoliposomes without HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec17 can block fusion of reconstituted proteoliposomes without HOPS (Mima et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "0becc00b-b188-46bc-ba39-694218ec5807",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C98",
+      "claim": "HOPS engages each of the 4 SNAREs and catalyzes their assembly in a manner which renders fusion resistant to Sec17.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS engages each of the 4 SNAREs (Stroupe et al., 2006; Baker et al., 2015; Song et al., 2020) and catalyzes their assembly (Baker et al., 2015; Orr et al., 2017; Jiao et al., 2018; Song et al., 2020) in a manner which renders fusion resistant to Sec17 (Mima et al., 2008; Xu et al., 2010; Song and Wickner, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "966d1aa4-7370-407d-93bd-c89cbaa4299a",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C99",
+      "claim": "Excessive Sec17 blocks the initial stages of fusion but stimulates fusion when added after trans-SNARE assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive Sec17 blocks the initial stages of fusion but stimulates fusion when added after trans-SNARE assembly (Zick et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "92a4bdee-b331-46fb-840c-0fed4b36cecf",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C100",
+      "claim": "With the synthetic tether GST-PX, Sec17 which interacts with SNAREs before they assemble into trans-complexes inhibits the subsequent fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "With the synthetic tether GST-PX, Sec17 which interacts with SNAREs before they assemble into trans-complexes inhibits the subsequent fusion (Song and Wickner, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "80879289-d89d-4264-b2ba-308f83600c3c",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C101",
+      "claim": "Once fusion intermediates of trans-SNARE complexes have formed, Sec17 and Sec18 will promote zippering-bypass fusion whether tethering is by HOPS or by the synthetic tether GST-PX.",
+      "claim_type": "EXPLICIT",
+      "source": "We now show that once fusion intermediates of trans-SNARE complexes have formed, Sec17 and Sec18 will promote zippering-bypass fusion whether tethering is by HOPS or by the synthetic tether GST-PX (Figure 1C \u03b2 and E\u03b2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion from the current study, supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "6b91ae3c-d35b-4752-aa34-1dab4e80c7c7",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C102",
+      "claim": "Schwartz et al., 2017, found that polyethylene glycol (PEG) and SNARE induced tethering and fusion, arrested by Qc3\u0394, could be restored by added Sec17.",
+      "claim_type": "EXPLICIT",
+      "source": "Schwartz et al., 2017, found that polyethylene glycol (PEG) and SNARE induced tethering and fusion, arrested by Qc3\u0394, could be restored by added Sec17.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "cc13db4f-5e0d-4cfa-80b2-a06b29fcc170",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C103",
+      "claim": "PEG not only tethers, but may enhance SNARE-mediated fusion through promoting dehydration and protein association or, at high levels, induce fusion directly.",
+      "claim_type": "EXPLICIT",
+      "source": "PEG not only tethers, but may enhance SNARE-mediated fusion (Zick and Wickner, 2013) through promoting dehydration (Lehtonen and Kinnunen, 1995) and protein association (W\u00e4lchli et al., 2020) or, at high levels, induce fusion directly (Burgess et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "f2d87a39-9ff5-4bec-a16b-1ebb4cbb073f",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C104",
+      "claim": "Dimeric GST-PX only acts as a tether.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimeric GST-PX only acts as a tether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of GST-PX compared to PEG.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "41d2aa9a-58b5-4834-b08a-28d84f2cb6a5",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C105",
+      "claim": "The current findings complement those of Schwartz et al., 2017, and show that a tether and partially zippered SNARE complex allow Sec17/Sec18 induction of fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings complement those of Schwartz et al., 2017, and show that a tether and partially zippered SNARE complex allow Sec17/Sec18 induction of fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the current study, relating it to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "324830d4-e411-4402-a94a-4515ecc55bf2",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C106",
+      "claim": "HOPS serves both as a tether and as a catalyst to initiate SNARE assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS serves both as a tether (Hickey and Wickner, 2010) and as a catalyst to initiate SNARE assembly (Baker et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "e600dfca-8943-4fbb-aaf6-f4c5d5afe1e3",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C107",
+      "claim": "It has been unclear whether HOPS catalyzes the later stages of zippering or is needed for Sec17/Sec18-induced fusion without zippering.",
+      "claim_type": "EXPLICIT",
+      "source": "but it has been unclear whether it catalyzes the later stages of zippering or is needed for Sec17/Sec18-induced fusion without zippering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "b1ae8ffe-fd28-4983-9cb8-96e904dd81a9",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C108",
+      "claim": "The engagement of SNAREs by HOPS largely bypasses Sec17 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The engagement of SNAREs by HOPS (Stroupe et al., 2006; Baker et al., 2015; Song et al., 2020) largely bypasses Sec17 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "befa950e-5165-4dc8-94ed-b09b7c4c50b4",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C109",
+      "claim": "Once SNAREs are partially zippered in trans, Sec17 and Sec18 do not need HOPS to support the completion of fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Once SNAREs are partially zippered in trans, Sec17 and Sec18 do not need HOPS to support the completion of fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "438d0f28-d5b5-4a15-84a6-cd07d4d13a4e",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C110",
+      "claim": "The completion of SNARE zippering is promoted by Sec17.",
+      "claim_type": "EXPLICIT",
+      "source": "The completion of SNARE zippering is promoted by Sec17 (Song et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "ebdfd3ff-fb5b-44a7-ac2b-fe430fec7083",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C111",
+      "claim": "Sec17 displaces HOPS from SNARE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "and Sec17 displaces HOPS from SNARE complexes (Collins et al., 2005; Schwartz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "87d62c08-ed3e-48b9-92db-f3f9c7fc643a",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C112",
+      "claim": "The interactions among the SNAREs, Sec17/\u03b1SNAP, and Sec18/NSF are seen at a molecular level in the 20s complex, consisting of a 4-SNARE coiled coil anchored to membranes at their C-termini, surrounded by up to 4 Sec17/\u03b1SNAP molecules, and all capped at the membrane-distal end by Sec18/NSF.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions among the SNAREs, Sec17/\u03b1SNAP, and Sec18/NSF are seen at a molecular level in the 20s complex, consisting of a 4-SNARE coiled coil anchored to membranes at their C-termini, surrounded by up to 4Sec17/\u03b1SNAP molecules, and all capped at the membrane-distal end by Sec18/NSF (Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior structural work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "307c5693-63ba-42ad-8574-837706aa8f23",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C113",
+      "claim": "A 'trans-20s' may generally drive fusion, since its elements are common to all exocytic and endocytic trafficking while the tethering complexes of other organelles are varied and often do not have the organelle's SM protein as a tightly bound subunit like Vps33 is in HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "A 'trans-20s' (Song et al., 2021; Rizo et al., 2021) may generally drive fusion, since its elements are common to all exocytic and endocytic trafficking while the tethering complexes of other organelles are varied and often do not have the organelle's SM protein as a tightly bound subunit like Vps33 is in HOPS (Baker and Hughson, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the conservation of components and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "b1c8adef-62de-417f-b546-2808ca8048c5",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C114",
+      "claim": "HOPS only acts for tethering and to catalyze the initial phase of zippering in a Sec17-resistant manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support the model (Schwartz et al., 2017; Song et al., 2021) that HOPS only acts for tethering and to catalyze the initial phase of zippering in a Sec17-resistant manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the current study, supported by data and prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "8b18ccd0-40fe-4fe9-a3d1-20b54923abe6",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C115",
+      "claim": "HOPS is specific for fusion at the vacuole/lysosome, but Sec17/\u03b1SNAP, Sec18/NSF, and SNAREs are general elements of exocytic and endocytic vesicular trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS is specific for fusion at the vacuole/lysosome, but Sec17/\u03b1SNAP, Sec18/NSF, and SNAREs are general elements of exocytic and endocytic vesicular trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the distribution of these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "a36938b9-1f35-4507-9fe5-f46a3cc880e7",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C116",
+      "claim": "Sec17 and Sec18 support of zippering-bypass fusion may not be restricted to the vacuole/lysosome, but may contribute to SNARE-mediated fusion at other steps in endocytic and exocytic vesicular trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current findings suggest that Sec17 and Sec18 support of zippering-bypass fusion may not be restricted to the vacuole/lysosome, but may contribute to SNARE-mediated fusion at other steps in endocytic and exocytic vesicular trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the findings of the current study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "4dc05d5d-2b7c-4925-b171-f9a113895cbe",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C117",
+      "claim": "Testing the hypothesis that Sec17/Sec18 contribute to fusion at other organelles will necessitate the reconstitution of fusion at other organelles with their SNAREs, Rab, Rab-effector tethering complex, and SM protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing this hypothesis will necessitate the reconstitution of fusion at other organelles with their SNAREs, Rab, Rab-effector tethering complex, and SM protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future experimental directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "1daa1b3d-2b9f-45ff-9735-7f256f00e303",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C118",
+      "claim": "Qc3\u0394 is a labile member of SNARE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Qc3\u0394 is a labile member of SNARE complexes (Song et al., 2021), a fivefold molar excess to the other SNAREs was used in preparing Ypt7/QaQbQc3\u0394 proteoliposomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to prior work and explains a methodological choice.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "197635eb-8f4c-4ce4-a389-c6a529cc2ab2",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "claim_id": "C119",
+      "claim": "A fivefold molar excess of Qc3\u0394 to the other SNAREs was used in preparing Ypt7/QaQbQc3\u0394 proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Qc3\u0394 is a labile member of SNARE complexes (Song et al., 2021), a fivefold molar excess to the other SNAREs was used in preparing Ypt7/QaQbQc3\u0394 proteoliposomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological detail from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sec17 and Sec18 can drive zippering-bypass fusion without HOPS when membranes are tethered by a synthetic tether (GST-PX) and SNAREs are partially zippered. The study demonstrates that GST-PX tethered membranes with arrested SNARE zippering (Qc3\u0394 mutation) undergo fusion upon addition of Sec17 and Sec18, showing that HOPS is not required for Sec17/Sec18-mediated fusion once trans-SNARE complexes have formed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C71, C94, and C101 are directly supported by experimental data in Figure 1E showing that GST-PX tethered membranes with Qc3\u0394 undergo fusion when Sec17/Sec18 are added after trans-SNARE assembly. The experimental design (C73-C81) is appropriate with proper controls, and the FRET-based fusion assay (C75-C78) provides quantitative evidence. The conclusion that HOPS is not required (C66, C72, C109) logically follows from the data showing fusion occurs with only synthetic tether, SNAREs, Sec17, and Sec18.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "25403d90-39c9-4d1d-afca-9648501d5887",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "With HOPS as tether, wild-type SNAREs show minimal dependence on Sec17/Sec18, but when SNARE zippering is arrested by Qc3\u0394 mutation, both Sec17 and Sec18 are required to bypass the zippering arrest and allow fusion. Fusion intermediates accumulate in the absence of Sec17/Sec18 and undergo rapid fusion upon their addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82, C83, C89, and C90 are directly supported by experimental data in Figure 1B and 1C showing differential effects of Sec17/Sec18 on wild-type versus Qc3\u0394 SNAREs with HOPS tethering. The data clearly demonstrate that Qc3\u0394 blocks fusion (Figure 1C \u03b1, black curve) and that both Sec17 and Sec18 are required for rescue (green curve vs. red/blue curves). The accumulation of fusion intermediates is evidenced by rapid fusion upon addition of Sec17/Sec18 at 30 min (Figure 1C \u03b2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "9679160b-d0d8-4793-8f5f-ce1011c3eb71",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GST-PX synthetic tether supports fusion with wild-type pre-assembled Q-SNAREs, but this fusion is blocked by Sec17 when present from the start. When Qc3\u0394 arrests zippering, Sec17 added at the start cannot rescue fusion, but Sec17 added after trans-SNARE assembly (at 30 min) triggers fusion, demonstrating that Sec17 inhibition occurs only when present before trans-SNARE assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 and C91-C93 are supported by experimental data in Figure 1D and 1E showing the timing-dependent effects of Sec17. Figure 1D shows Sec17 blocks GST-PX mediated fusion with wild-type SNAREs. Figure 1E demonstrates that with Qc3\u0394, Sec17 present from the start blocks fusion intermediate formation (red curve), but when added at 30 min after trans-SNARE assembly, it triggers fusion (curves a and c). This temporal distinction is well-controlled and clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "99f3ac76-4658-4d4d-8c81-1d3e21569243",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "With full-length SNAREs and either HOPS or GST-PX tether, kinetic intermediates accumulate that give additional fusion upon addition of Sec17/Sec18/ATP\u03b3S.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is supported by data in Figure 1B\u03b2 and 1D\u03b2 (black curves) showing additional fusion after addition of Sec17/Sec18/ATP\u03b3S at 30 min even with wild-type SNAREs. This indicates incomplete fusion in the initial phase and accumulation of intermediates that can be further stimulated, consistent with the experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "8ec53d6e-8fb2-4923-8062-7615bfc9c60e",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sec17 has dual roles: it can inhibit functional trans-SNARE complex assembly when present before assembly, but once zippering has begun, it associates with partially zippered SNAREs to promote fusion. HOPS engagement of SNAREs renders fusion resistant to Sec17 inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C100 are supported by citations to prior work (Mima et al., 2008; Zick et al., 2015; Wang et al., 2000; Song and Wickner, 2019) and are consistent with the current experimental findings showing timing-dependent effects of Sec17. The dual role model explains the observed data patterns across different experimental conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "f3955247-ce28-4d29-8c56-4d643cbb58f4",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The findings complement prior work with PEG tethering and support a model where HOPS acts primarily for tethering and catalyzing initial SNARE assembly in a Sec17-resistant manner, while Sec17/Sec18 with partially zippered SNAREs can drive fusion completion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105 and C114 represent interpretive conclusions that integrate current findings with prior work. The model is well-supported by the experimental data showing HOPS-independent fusion with GST-PX tether (C101, C94) and is consistent with the observation that GST-PX provides only tethering function (C104) unlike PEG which may have additional effects (C103).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "4d9aba66-8024-4f44-837d-f3d626cded01",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sec17 and Sec18 may have a general role in directly promoting fusion across all exocytic and endocytic traffic, as these fusion elements are conserved and the 'trans-20s' complex components are common to all trafficking pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C113, and C116 are speculative extrapolations from the current findings. While the conservation of components (C7, C115) is established, the generalization to other organelles requires additional experimental validation (C117). The current study only demonstrates this mechanism for vacuolar fusion, and the authors appropriately acknowledge this limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "68c3322d-c5c2-4733-9885-64b4960b9fc3",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The experimental system uses proteoliposomes with vacuolar lipids, membrane-anchored Ypt7, and either R or 3Q SNAREs (wild-type or Qc3\u0394), with FRET-based fusion assay using lumenal fluorescent proteins. A fivefold molar excess of Qc3\u0394 was used due to its lability in SNARE complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C81 and C118-C119 describe the experimental methodology. The FRET-based fusion assay is well-established (C78 cites Zucchi and Zick, 2011), and the use of excess Qc3\u0394 (C119) is justified by prior work showing its lability (C118). The experimental design with timed additions and appropriate controls is sound and clearly described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    },
+    {
+      "id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1",
+      "content_id": "9ef51c03-cbd6-48d3-af83-ef63a1925446",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establishing the vacuolar fusion system, SNARE mechanisms, roles of HOPS, Sec17/Sec18, and the historical development of understanding membrane fusion mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C64, C68-C70, C87, C102-C104, C106-C108, C110-C112, C115, C117) represent established knowledge from prior work, appropriately cited throughout. They provide necessary context for interpreting the current findings and are not results of the current study but rather background information and motivation for the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:28:51.660558Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a0ec2da7-06c4-4ba7-91e9-3e1476f7a826",
+      "result_id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d"
+    },
+    {
+      "claim_id": "0ea87fa3-0125-4e3d-a69b-4264d6b1314d",
+      "result_id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d"
+    },
+    {
+      "claim_id": "ebb2bb3d-bbd8-4081-8e6a-6ffd662c15a6",
+      "result_id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d"
+    },
+    {
+      "claim_id": "ff762a3a-b533-4d60-bb9e-6bb65d5d182f",
+      "result_id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d"
+    },
+    {
+      "claim_id": "906f6550-3fe2-4671-8998-518f49efba41",
+      "result_id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d"
+    },
+    {
+      "claim_id": "1564c0be-9e60-471b-9c1a-2257d61cb13f",
+      "result_id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d"
+    },
+    {
+      "claim_id": "53c3e17f-cd0d-485c-a5af-faf66bc04671",
+      "result_id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d"
+    },
+    {
+      "claim_id": "80879289-d89d-4264-b2ba-308f83600c3c",
+      "result_id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d"
+    },
+    {
+      "claim_id": "befa950e-5165-4dc8-94ed-b09b7c4c50b4",
+      "result_id": "d577a40c-06c7-41cf-907a-e2804d4a9a1d"
+    },
+    {
+      "claim_id": "55399c6d-c997-48ca-90cf-9a63fb20d16a",
+      "result_id": "25403d90-39c9-4d1d-afca-9648501d5887"
+    },
+    {
+      "claim_id": "b03df81f-63b4-4e3d-91e9-25df51faf99c",
+      "result_id": "25403d90-39c9-4d1d-afca-9648501d5887"
+    },
+    {
+      "claim_id": "c2536ff9-2f6c-4cbc-9839-1cd3ed6261fa",
+      "result_id": "25403d90-39c9-4d1d-afca-9648501d5887"
+    },
+    {
+      "claim_id": "02046ef7-ff6b-4f96-b6f7-ae45d40cffc7",
+      "result_id": "25403d90-39c9-4d1d-afca-9648501d5887"
+    },
+    {
+      "claim_id": "18e27991-465b-46b3-9970-507eb0a7b520",
+      "result_id": "9679160b-d0d8-4793-8f5f-ce1011c3eb71"
+    },
+    {
+      "claim_id": "9594a2fc-d45c-43f8-b8cb-06532f2f6474",
+      "result_id": "9679160b-d0d8-4793-8f5f-ce1011c3eb71"
+    },
+    {
+      "claim_id": "cb4b9ea4-f1c7-46c1-a6bd-800a2763950d",
+      "result_id": "9679160b-d0d8-4793-8f5f-ce1011c3eb71"
+    },
+    {
+      "claim_id": "4a55cb29-4f71-4ccc-9cce-05c9f2b78122",
+      "result_id": "9679160b-d0d8-4793-8f5f-ce1011c3eb71"
+    },
+    {
+      "claim_id": "6e6de79b-ccee-4f33-a0b5-b9e508aecd0f",
+      "result_id": "9679160b-d0d8-4793-8f5f-ce1011c3eb71"
+    },
+    {
+      "claim_id": "f6db2c00-6dc3-45c4-9fab-593a8a2d3a5c",
+      "result_id": "9679160b-d0d8-4793-8f5f-ce1011c3eb71"
+    },
+    {
+      "claim_id": "494fb118-629f-4782-8200-aa80eaf0538a",
+      "result_id": "99f3ac76-4658-4d4d-8c81-1d3e21569243"
+    },
+    {
+      "claim_id": "488a408e-52e9-440d-a914-3eb3d1a1a301",
+      "result_id": "8ec53d6e-8fb2-4923-8062-7615bfc9c60e"
+    },
+    {
+      "claim_id": "2a2374dc-087d-4646-b1aa-909636a92c42",
+      "result_id": "8ec53d6e-8fb2-4923-8062-7615bfc9c60e"
+    },
+    {
+      "claim_id": "1aea61a5-e254-4126-97d4-e5c33c1bcaa7",
+      "result_id": "8ec53d6e-8fb2-4923-8062-7615bfc9c60e"
+    },
+    {
+      "claim_id": "0becc00b-b188-46bc-ba39-694218ec5807",
+      "result_id": "8ec53d6e-8fb2-4923-8062-7615bfc9c60e"
+    },
+    {
+      "claim_id": "966d1aa4-7370-407d-93bd-c89cbaa4299a",
+      "result_id": "8ec53d6e-8fb2-4923-8062-7615bfc9c60e"
+    },
+    {
+      "claim_id": "92a4bdee-b331-46fb-840c-0fed4b36cecf",
+      "result_id": "8ec53d6e-8fb2-4923-8062-7615bfc9c60e"
+    },
+    {
+      "claim_id": "41d2aa9a-58b5-4834-b08a-28d84f2cb6a5",
+      "result_id": "f3955247-ce28-4d29-8c56-4d643cbb58f4"
+    },
+    {
+      "claim_id": "b1c8adef-62de-417f-b546-2808ca8048c5",
+      "result_id": "f3955247-ce28-4d29-8c56-4d643cbb58f4"
+    },
+    {
+      "claim_id": "aa99e564-913f-4d99-9511-6c6179e82290",
+      "result_id": "4d9aba66-8024-4f44-837d-f3d626cded01"
+    },
+    {
+      "claim_id": "307c5693-63ba-42ad-8574-837706aa8f23",
+      "result_id": "4d9aba66-8024-4f44-837d-f3d626cded01"
+    },
+    {
+      "claim_id": "a36938b9-1f35-4507-9fe5-f46a3cc880e7",
+      "result_id": "4d9aba66-8024-4f44-837d-f3d626cded01"
+    },
+    {
+      "claim_id": "ce94a485-a83d-4dea-a222-5daaffdd37f4",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "a55b76c1-f691-4392-b585-2d4c76e271d4",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "13b953a7-2475-43e0-b66e-fa823b54347c",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "db7af15b-b46f-45c5-98e6-6cd022662d77",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "5915d269-bc60-417c-aef9-f3f4d2a8ffac",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "92dcaa55-cb4e-4b26-80a7-cd3223f41145",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "092c9480-ee7d-4886-88c2-10a96370be4b",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "f454c8e4-63b8-4b68-a664-88060fc051b2",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "52177744-ef16-44f4-9306-04c585fc6f79",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "1daa1b3d-2b9f-45ff-9735-7f256f00e303",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "197635eb-8f4c-4ce4-a389-c6a529cc2ab2",
+      "result_id": "68c3322d-c5c2-4733-9885-64b4960b9fc3"
+    },
+    {
+      "claim_id": "b41b3def-0e73-447e-bacb-2107206af552",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "90179876-b41e-4ab0-8fbc-4226f9f45279",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "36d06f85-80ad-478f-b9cd-59e430cb61b3",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "b8689d43-f23d-42b4-b485-99289a0d947e",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "1d2aee3e-d370-4d3c-aba0-81ddf747553c",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "bbbacede-2fb0-44f8-ad80-9c050987f819",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "7009f885-35b5-4265-b90f-7408d72b5746",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "132c5f15-c64f-433f-82ee-1323467f9b44",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "48caf4af-318c-49e5-9124-ee89314df3c3",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "e470d110-ac84-421e-8ab5-dc456e3b0361",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "63fa0cb8-2fe1-4fcc-bd69-a7767ac19064",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "dbaac8db-476b-4003-98c9-4e658e8b310b",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "5fba7f54-18d6-485a-b7e4-aec2f8018148",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "75e77b86-2e6f-42e4-a67f-9d64c715e0da",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "3c704d7b-fb02-47ce-8fb8-bdfdbf2f58fa",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "057528df-79ef-41df-8c2a-1d0481eda226",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "77a1c52d-911d-4300-b25a-83c3361af632",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "f9663962-1569-4b89-8419-254647dac2fd",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "ad4f8ebc-5bd6-4c8d-9aed-3d817a76522e",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "df097b91-e3fa-4574-923f-7c1fcc79d90d",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "7a7f6cc4-94ab-4d14-a8f0-9e8c9358e1eb",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "4a33b6ff-684c-4b8d-b8c5-f89c007a2fc6",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "fc8ced01-8f4a-4205-85fd-d06f115b0c93",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "d5b11601-f867-4101-938d-e634582608d1",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "6d72232f-0951-43bb-b058-7e2ca59d67d1",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "bde6e9ed-d2e3-4923-a898-22b365ad64d3",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "f3289b6b-5cda-4cda-9603-ad91a9e5ddd5",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "abdb610e-b11a-4f77-b96b-9fba65a08beb",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "2fa87dd9-8797-458b-a25f-ff2cb9e5bb05",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "ec7e74d6-2125-427f-a265-1ba041c2d29c",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "5a8effe0-aad9-4cda-abde-d1a06a4c9784",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "f6b61cf7-b0a5-44e1-9c74-220b28774ce8",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "7256f181-cba2-403e-9e67-6bb1a86d9836",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "1a0a0b77-d88a-44a6-a4cf-74ecc265d367",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "9b4bcfd1-2548-4959-9171-6e5ddd67c91d",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "662d8813-6cc3-4c05-93a5-a1bf5eefc8c4",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "b5fa26d9-4095-4eb6-8f6d-45bf170271bd",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "61025176-be69-4421-906b-018ad2f10221",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "63cdc6d3-74cb-4aec-86ad-ae096d7f42f7",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "7b62fc74-23d8-4296-be14-666447772584",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "a0c5607f-e8a8-4b1b-984f-c6b67b3c81ea",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "7135e507-2bb5-4469-b2ce-ebc199bef70c",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "15ed74b0-1eb6-46da-8cd3-17a6a80e7546",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "482f062c-9a97-4c17-8bb4-59c3da027f0e",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "959d1cf3-2d78-47e6-ba29-1e8ba1729686",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "09fc9915-a145-476d-9afb-d854783e0578",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "b55eed4a-c575-4925-8a44-6ccba6ca7d7a",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "1fa986e9-7798-4c3e-82c2-ca9526a42669",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "60b87134-9d6a-44ce-9eaa-6286dd8ad3f8",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "9363da3e-82aa-4bf7-9f11-fe3f7174a81d",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "b7fca25b-64cd-4f14-8822-22c367e4392c",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "7eaa4af0-5e22-4e49-9cf1-30a81e1ef850",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "f8d83687-ff92-4629-a41f-576ea11b348d",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "0d28e91c-53cb-4a88-8c89-8a31a4e9c088",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "24b103ed-34ef-4ef3-8d70-46271ebd5007",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "548bfbe4-f07e-45ab-83f6-82b9aef29d4f",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "0d46e8c1-4807-4a87-9adc-4e1d49b9f201",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "a1a97145-57e4-4e38-9f2f-6683f82adf9a",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "a180c419-8308-4dc2-b75e-dd57f0d32a7f",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "5953de06-9bfa-42b6-9548-1a5703a86c5e",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "2484a01c-d0eb-48c9-a351-3310456fb514",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "b22149a5-75b4-490f-90ec-74c7e1d59426",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "62135a27-4832-4f5a-b354-2ffead59d83d",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "943ac2a0-30cc-472f-b10c-b8905dd27b62",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "6b91ae3c-d35b-4752-aa34-1dab4e80c7c7",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "cc13db4f-5e0d-4cfa-80b2-a06b29fcc170",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "f2d87a39-9ff5-4bec-a16b-1ebb4cbb073f",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "324830d4-e411-4402-a94a-4515ecc55bf2",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "e600dfca-8943-4fbb-aaf6-f4c5d5afe1e3",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "b1ae8ffe-fd28-4983-9cb8-96e904dd81a9",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "438d0f28-d5b5-4a15-84a6-cd07d4d13a4e",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "ebdfd3ff-fb5b-44a7-ac2b-fe430fec7083",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "87d62c08-ed3e-48b9-92db-f3f9c7fc643a",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "8b18ccd0-40fe-4fe9-a3d1-20b54923abe6",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    },
+    {
+      "claim_id": "4dc05d5d-2b7c-4925-b171-f9a113895cbe",
+      "result_id": "eea77416-c2ff-4f0a-a12c-b8ca1869c6b1"
+    }
+  ],
+  "comparisons": []
+}

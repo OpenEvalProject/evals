@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Drosophila flight muscles undergo dramatic post-mitotic growth, increasing more than 10-fold in volume from 24 hr to 90 hr APF. At 24 hr APF, fibers are ~270 \u00b5m long with ~1000 \u00b5m\u00b2 cross-sectional area; they compact to ~220 \u00b5m at 32 hr APF while assembling myofibrils, then grow to ~800 \u00b5m in length and ~4000 \u00b5m\u00b2 cross-sectional area by 90 hr APF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 provide quantitative measurements of muscle fiber dimensions at multiple developmental timepoints (24, 32, 48, 90 hr APF), supported by data in Figure 1A,C and Supplementary file 1. The measurements are internally consistent and establish the temporal dynamics of post-mitotic muscle growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Muscle-specific knockdown of Dlg5 or Slmap results in viable but flightless flies with complete flight muscle atrophy. At 24 hr APF, knockdown muscles are >20% longer than wild type and fail to compact at 32 hr APF, followed by complete atrophy by 48 hr APF. The phenotype is rescued by UAS-Dlg5-GFP but not control constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe consistent phenotypes across multiple independent RNAi lines (Figure 1B,C, Figure 1\u2014figure supplement 1, Supplementary file 1). The rescue experiment (C30) provides genetic specificity. The temporal progression from compaction defect to atrophy is well-documented with quantitative measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Dlg5 and Slmap proteins localize to T-tubule membranes at 90 hr APF, which are in intimate contact with myofibril A-bands. At earlier stages (32 and 48 hr APF), both proteins show partial co-localization with Dlg1 but display a more vesicular pattern compared to mature T-tubule markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by immunostaining data in Figure 2A-D with appropriate T-tubule markers (Dlg1, Amphiphysin). The temporal dynamics of localization from vesicular to T-tubule patterns are clearly documented. Citations support the T-tubule biology context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Dlg5 interacts with STRIPAK complex components (Slmap, Fgop2, GckIII, Striatin/Cka, PP2A/Mts) in Drosophila muscle, with composition similar to mammals. Functional knockdown of STRIPAK members Cka and Strip phenocopies Dlg5/Slmap knockdown with compaction defects at 32 hr APF and subsequent muscle atrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by mass spectrometry data (Figure 3A,B, Supplementary file 1) identifying protein interactions, and genetic experiments (Figure 3D,E) showing similar phenotypes for multiple STRIPAK components. The conservation to mammals is supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The Hippo pathway regulates developmental timing of muscle morphogenesis. Yorkie knockdown causes compaction failure at 32 hr APF and muscle atrophy, while yorkie-CA, hippo-IR, or warts-IR cause premature compaction at 24 hr APF and hyper-compaction at 32 hr APF. Expression of constitutively active hippo[4A/431T] (STRIPAK-binding deficient) phenocopies STRIPAK loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 demonstrate bidirectional genetic control with loss-of-function (yorkie-IR) and gain-of-function (yorkie-CA, hippo-IR, warts-IR) showing opposite phenotypes (Figure 4A,B). The hippo[4A/431T] experiment (C45, Figure 4C) provides molecular specificity linking STRIPAK to Hippo regulation. Transcriptomics data (C44, Figure 4\u2014figure supplement 1C) confirm expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The Hippo pathway functions post-mitotically in muscle fibers. Conditional GAL80ts experiments restricting knockdown to pupal stages show normal nuclei numbers at 24 hr APF but reproduce the compaction and atrophy phenotypes. Post-mitotic Act88F-GAL4 driven hippo overexpression also causes compaction defects and atrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 use two independent temporal control strategies (GAL80ts and Act88F-GAL4) to demonstrate post-mitotic function. Nuclei counts (C46, Figure 5\u2014figure supplement 1A,B) rule out myoblast fusion defects. Phenotypes are reproduced with both systems (Figure 5A-E), providing strong evidence for post-mitotic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Apoptosis contributes to but does not fully explain muscle atrophy in yorkie/Dlg5 knockdown. Overexpression of apoptosis inhibitors (Diap1 or p35) rescues fiber number at 48 hr APF, but rescued muscles still fail to grow normally in cross-sectional area, resulting in smaller volumes. This demonstrates a growth-promoting role for Yorkie beyond apoptosis suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 use genetic rescue with two independent apoptosis inhibitors (Diap1, p35) showing partial rescue (Figure 6A, Figure 6\u2014figure supplement 1B,C). Quantitative measurements (C53, Figure 6A-C) demonstrate persistent growth defects despite apoptosis inhibition, supporting a direct growth-regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The Hippo pathway controls myofibril assembly quality and quantity. Yorkie/Dlg5 knockdown muscles (with Diap1) show short myofibril traces at 32 hr APF, defective nuclear positioning, and strongly reduced myofibril numbers at 48 hr APF. Knockdown of the tension-generating protein Kon-tiki produces similar compaction and growth defects, suggesting both mechanical tension and Yorkie activity are required for myofibrillogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 provide multiple lines of evidence: myofibril tracing (Figure 7A,B, Figure 7\u2014figure supplement 1A), nuclear positioning (C56, Figure 7\u2014figure supplement 1B), and myofibril counting (C57, Figure 7C,D). The kon knockdown comparison (C59, Figure 7\u2014figure supplement 1D-F) provides mechanistic context linking tension to growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Yorkie functions as a transcriptional co-regulator in muscle nuclei. Post-mitotic overexpression of nuclear Yorkie (yorkie-CA or wild-type) causes premature compaction and chaotic myofibril organization, while membrane-tethered myr-Yorkie does not. Knockdown of the transcriptional co-factor scalloped phenocopies yorkie loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 use elegant genetic tools to distinguish nuclear vs. cytoplasmic Yorkie function. The membrane-tethered myr-Yorkie control (C63, Figure 7E) is critical for demonstrating nuclear requirement. Scalloped knockdown (C65, Figure 7\u2014figure supplement 2B) confirms transcriptional mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The Hippo pathway controls sarcomeric and mitochondrial gene expression. In yorkie loss-of-function at 24 hr APF, core sarcomeric genes (sls, bt, Mhc, Prm, Act88F) and nuclear-cytoskeletal linkers (klar, Msp300) are downregulated. In yorkie gain-of-function at 32 hr APF, sarcomeric genes, muscle attachment genes (kon, if, CAP), and mitochondrial respiratory chain components are upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by BRB-seq transcriptomics data (Figure 8A,B, Supplementary file 2) showing consistent changes across multiple genotypes. GO-term enrichment (Figure 8A, Supplementary file 3) confirms biological significance. The temporal specificity (24 hr for loss-of-function, 32 hr for gain-of-function) is appropriate for the developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Yorkie regulates sarcomeric protein levels. Yorkie knockdown causes mild reduction of Mhc, Act88F, Sls, and Prm at 24 hr APF, becoming more pronounced at 32 hr APF. Yorkie-CA causes premature boost of these proteins at 24 hr APF, maintained at 32 hr APF, potentially explaining premature compaction. This demonstrates Yorkie controls timing and levels of sarcomeric protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 use GFP fusion proteins to quantify protein levels (Figure 9A-C, Figure 9\u2014figure supplement 1A-C), avoiding antibody variability. The temporal dynamics match transcriptomics data and phenotypes. The correlation between increased protein levels and premature compaction (C74) is logical but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The Hippo pathway is a conserved regulator of muscle fiber growth in animals. In mammals, YAP1 promotes cardiomyocyte survival and growth, while constitutive YAP activation causes muscle atrophy. Mst1 regulates skeletal muscle atrophy, and YAP promotes muscle growth via Tead-dependent transcription. This conservation suggests a general role for Yorkie/YAP/TAZ in muscle fiber growth and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 summarize established mammalian literature with appropriate citations. The inference of conservation (C80) is reasonable given the molecular conservation and similar phenotypes across species, though it remains a hypothesis requiring direct testing in mammals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Yorkie likely cooperates with Scalloped to regulate sarcomeric gene expression via MCAT motifs, potentially coordinating with the muscle fate determinant Spalt. Yorkie regulates RNA-binding proteins Bruno and Imp, suggesting post-transcriptional regulation may also contribute. Crosstalk with mTORC1 translational regulation has been suggested in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C89 integrate literature on Tead/MCAT binding (C81-C82), Spalt function (C84), and RNA-binding proteins (C85-C87). While the transcriptomics data show Bruno and Imp are regulated by Yorkie (C85, C87, Figure 8B), the mechanistic connections remain speculative (C88, C89). Direct evidence for Yorkie-Scalloped cooperation on specific sarcomeric promoters is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "STRIPAK regulation of Hippo in muscle differs from epithelia. Salvador, Expanded, Merlin, and Kibra are not required in flight muscles. Slmap appears to be the specific adaptor linking STRIPAK to Hippo in muscle, with a transmembrane domain suggesting vesicular/T-tubule localization. Dlg5 and Slmap were found in complex with Mst1 in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by negative genetic data (C90), literature on STRIPAK components (C91), and the current study's interaction data (C92). The localization inference (C93) is reasonable given protein structure and immunostaining. The mammalian Mst1 interaction (C94) is from published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "A speculative model proposes mechanical tension from actin cytoskeleton inhibits Hippo via membranes/STRIPAK/Dlg5, promoting Yorkie nuclear entry and sarcomeric gene transcription. This creates a feedback loop where myofibril assembly generates tension that induces more actin/myosin expression, coordinating myofibril morphogenesis with transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 present a speculative mechanistic model (Figure 10) integrating the study's findings with literature on F-actin regulation of Hippo (C96). While the model is logical and consistent with the data, it lacks direct experimental evidence for the proposed mechanical-to-transcriptional signaling axis. The feedback loop (C97-C98) is an attractive hypothesis but remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Mechanical control of Hippo/YAP by actomyosin is prominent in mammalian cells, suggesting the proposed feedback model may be relevant for coordinating post-mitotic cardiomyocyte and skeletal muscle growth or regeneration in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 extrapolate from the Drosophila findings to mammals based on pathway conservation and published mammalian mechanotransduction studies (C99). While the speculation is reasonable, it remains untested and would require direct experimental validation in mammalian muscle systems.",
+    "result_type": "MINOR"
+  }
+]

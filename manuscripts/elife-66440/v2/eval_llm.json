@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CRISPR/Cas9-mediated genome editing was successfully used to generate HAP1 cell lines with SGFP2 seamlessly inserted at the CTNNB1 start codon, achieving nearly 90% efficiency within the SGFP2-positive population and ensuring complete tagging of the CTNNB1 pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C36 describe the genome editing strategy and validation. The approach is well-documented with FACS data (C34-C35), sequencing confirmation (C36), and the rationale for using haploid cells (C32) is sound. The efficiency and specificity are demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The SGFP2-CTNNB1 fusion protein is functional, showing equivalent accumulation, target gene activation, and subcellular localization compared to wild-type CTNNB1 in response to WNT pathway stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 provide comprehensive functional validation through Western blot (C37-C38), luciferase reporter assays (C39), qRT-PCR (C40), and confocal microscopy (C41-C43). Multiple independent assays converge to demonstrate that the fluorescent tag does not impair CTNNB1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Live-cell imaging reveals that WNT3A stimulation induces heterogeneous cellular responses with preferential nuclear accumulation of CTNNB1 (3.00-fold in nucleus vs 1.74-fold in cytoplasm), with nuclear increases detectable after ~30 min and cytoplasmic increases after ~45 min, resulting in a shift from cytoplasmic localization (N/C ratio 0.652) to slight nuclear enrichment (N/C ratio 1.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 describe quantitative live-cell imaging results with specific fold-changes, time courses, and N/C ratios. The data are supported by automated segmentation and statistical analysis across multiple cells and experiments. The heterogeneity observation (C46) and temporal dynamics (C50-C51) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "FCS analysis demonstrates that CTNNB1 exists in two diffusion states: a one-component model fails to fit the data, while a two-component model with a fast component (14.9 \u00b5m\u00b2/s, representing monomeric CTNNB1) and a slow component (representing complexed CTNNB1) provides good fits, consistent with the presence of both free monomeric and complexed CTNNB1 in cytoplasm and nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 describe the FCS fitting approach and validation. The failure of the one-component model (C56) and success of the two-component model (C61) are demonstrated with residual plots. The theoretical calculation of monomeric speed (C59) and its experimental confirmation (C60) strengthen the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "FCS measurements reveal absolute CTNNB1 concentrations: in the absence of WNT3A, 180 nM cytoplasmic and 122 nM nuclear; with WNT3A, 221 nM cytoplasmic (1.2-fold increase) and 240 nM nuclear (2.0-fold increase), resulting in nuclear concentrations exceeding cytoplasmic levels after stimulation. These values are consistent with published mass spectrometry data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C71 report absolute concentrations with confidence intervals. However, C67-C68 acknowledge a discrepancy between FCS concentration measurements and fluorescence intensity measurements in the cytoplasm that remains unexplained despite excluding photobleaching. This unresolved discrepancy introduces uncertainty about the accuracy of the cytoplasmic concentration measurements, though the nuclear measurements appear more consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "FCS reveals that ~30-40% of cytoplasmic CTNNB1 resides in slow-diffusing complexes in both unstimulated and WNT3A-stimulated conditions, with the bound fraction remaining constant. In the nucleus, both fast and slow CTNNB1 concentrations increase upon WNT3A treatment, with the slow fraction increasing 3.9-fold (from 22 nM to 86 nM) compared to 2.0-fold for the fast fraction, consistent with increased association with chromatin-bound transcriptional complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe the distribution of CTNNB1 between free and complexed states. The measurements are quantitative with confidence intervals and the interpretation (C75) is reasonable given the known biology of CTNNB1-TCF interactions. The finding that cytoplasmic bound fraction remains constant (C77) challenges textbook models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The diffusion coefficient of nuclear CTNNB1 complexes (0.17 \u00b5m\u00b2/s\u207b\u00b9) is comparable to other chromatin-bound transcriptional activators. Cytoplasmic CTNNB1 complexes show very slow diffusion (0.13 \u00b5m\u00b2/s\u207b\u00b9) comparable to the 26S proteasome, but increase 3.5-fold in speed (to 0.46 \u00b5m\u00b2/s\u207b\u00b9) after WNT3A treatment, indicating a drastic change in complex size while the bound fraction remains constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 report diffusion coefficients and interpret them in terms of complex size. The comparisons to published values for chromatin-bound activators (C80) and proteasome (C82) provide context. The 3.5-fold speed increase (C83) is substantial and the interpretation that complex identity changes (C85) is reasonable, though the exact molecular composition remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "N&B analysis reveals that SGFP2-CTNNB1 has brightness similar to monomers in both cytoplasm and nucleus, suggesting that few if any cytoplasmic complexes contain multiple CTNNB1 molecules. This implies that most CTNNB1-binding sites in the multivalent destruction complex are unoccupied under physiological conditions in both absence and presence of WNT3A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 integrate N&B brightness data with FCS complex measurements to infer occupancy. The logic is sound: if 34-38% of CTNNB1 is in large complexes (FCS) but brightness equals monomers (N&B), then complexes contain few CTNNB1 molecules. This challenges the expectation for multivalent complexes and is a significant finding, though the inference about occupancy (C90) is indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Low levels of slow-diffusing nuclear CTNNB1 complexes are detected even without WNT stimulation, with a diffusion coefficient that does not change upon WNT3A addition, suggesting basal DNA association. Upon pathway activation, the concentration of bound nuclear CTNNB1 increases to ~90 nM (~20,000 molecules per nucleus), consistent with published ChIP-seq data showing hundreds to thousands of CTNNB1 DNA binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 describe nuclear CTNNB1 complexes and their regulation. The detection of basal complexes (C91-C92) and the inference of DNA association (C93) are reasonable. The calculation of molecule numbers (C95) and comparison to ChIP-seq data (C96-C97) provide independent validation of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Live imaging and computational modeling reveal that WNT signaling regulates CTNNB1 subcellular distribution through both nuclear retention (10-fold reduction in CTNNB1-TCF dissociation) and nucleocytoplasmic shuttling (shift from nuclear export to import), not just through destruction complex inactivation. The immediate preferential nuclear increase upon WNT3A stimulation is consistent with previous observations in overexpression systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 integrate experimental observations with computational modeling. The live imaging data (C98-C99) are well-documented. The computational model (C104-C107) requires both retention and shuttling changes to match experimental observations. The comparison to prior work (C100) and citations to FRAP studies (C102) provide context, though the model predictions depend on assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C109",
+      "C110"
+    ],
+    "result": "An integrated computational model built from biophysical parameters identifies three regulatory nodes controlling CTNNB1 distribution: cytoplasmic destruction, nucleocytoplasmic shuttling, and nuclear retention. The phosphorylation status of CTNNB1 plays a critical role, as direct GSK3 inhibition produces the same behavior as WNT3A treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C109-C110 describe the computational model and its key findings. The model is based on measured parameters and successfully recapitulates experimental observations. The comparison of WNT3A and CHIR99021 treatments (C109) supports the role of phosphorylation. The three regulatory nodes represent a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "WNT3A treatment, GSK3 inhibition, and S45F mutation all produce similar qualitative effects (increased CTNNB1 levels, faster cytoplasmic complexes, nuclear accumulation, increased nuclear retention), but differ quantitatively. GSK3 inhibition continues accumulating CTNNB1 after WNT3A-treated cells plateau, likely due to negative feedback mechanisms. S45F mutation produces 1.6-1.8-fold higher concentrations than WNT3A treatment, with subtle increases likely amplified at the transcriptional level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C122 compare physiological and oncogenic signaling. The qualitative similarities (C111-C114) are well-documented experimentally. The quantitative differences (C116-C117, C120-C121) are measured. The explanations for differences (C118-C119, C122) are reasonable inferences supported by citations to feedback mechanisms and transcriptional amplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "State-of-the-art imaging reveals that a substantial fraction of CTNNB1 resides in slow-diffusing cytoplasmic complexes irrespective of pathway activation status, but these complexes undergo major size reduction when WNT/CTNNB1 is activated. WNT regulates dynamic distribution through three nodes: destruction complex, nucleocytoplasmic shuttling, and nuclear retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are the main findings stated in the abstract. They are well-supported by the detailed experimental results (FCS, N&B, live imaging) and computational modeling described in the other claim groups. The findings challenge textbook models and represent significant advances in understanding WNT signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "FCS and N&B analysis quantified endogenous CTNNB1 concentrations and complexes in living cells for the first time, yielding novel insights that challenge current dogmas: only part of cytoplasmic CTNNB1 is uncomplexed regardless of pathway status, and the slow-diffusing complex may represent a proteasome-associated destruction complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 summarize the novelty and significance of the findings. The quantification of endogenous CTNNB1 (C123) is indeed novel and the insights (C124-C126) do challenge existing models. The findings are well-supported by the experimental data, though some aspects (like complex identity) remain to be definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "FCS and N&B measurements have several limitations including potential errors from autofluorescence/bleaching corrections, non-matured fluorophores, assumptions in fitting models, inability to distinguish single vs. multiple complexes, lack of complex identity information, and sampling of intracellular heterogeneity. Despite these limitations, the techniques successfully demonstrate that CTNNB1 exists in large complexes with statistically significant different speeds after WNT3A treatment and oncogenic mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C149 provide a thorough discussion of technical limitations and caveats. The authors appropriately acknowledge uncertainties (C136-C137, C149) while defending the robustness of key findings (C147-C148). The discussion of potential sources of error (C127-C132) and alternative interpretations (C140-C141, C143-C144) demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "WNT/CTNNB1 signaling is a fundamental pathway regulating tissue development and homeostasis in all multicellular animals, with hyperactivation in cancer. The pathway involves destruction complex-mediated CTNNB1 degradation in the absence of WNT, and CTNNB1 accumulation and nuclear translocation upon WNT stimulation to activate TCF/LEF target genes. However, the exact molecular composition of the destruction complex, mechanism of its inhibition, and regulation of CTNNB1 subcellular distribution remain incompletely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide background on WNT signaling and identify knowledge gaps. These are well-established facts supported by extensive citations to the literature. The identification of gaps (C2, C16-C18) appropriately motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Most biochemical techniques lose spatial information and average cell heterogeneity, while live-cell microscopy offers better spatiotemporal resolution. However, many microscopy studies use overexpression which can affect protein localization and complex formation. Very few studies have examined spatiotemporal dynamics of CTNNB1 stabilization at endogenous levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 describe methodological limitations of prior work and justify the current approach. The statements about biochemical techniques (C19) and overexpression artifacts (C21-C22) are supported by citations. The gap in endogenous-level studies (C23) is documented with citations to recent work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Confocal imaging with automated segmentation was used to quantify dynamic subcellular CTNNB1 changes upon WNT stimulation, and FCS/N&B analysis measured CTNNB1 mobility and concentration, providing detailed information on CTNNB1 complexes in cytoplasm and nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 describe the experimental approaches. These are well-documented in the methods and results sections with appropriate technical details and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Future work should label additional destruction complex components at endogenous levels to determine precise composition and stoichiometry, potentially using FCCS to test protein co-localization. A combination of quantitative imaging, biochemical, and proteomic approaches with additional perturbations will be needed to fully understand endogenous CTNNB1 complex dynamics and the mechanisms of nucleocytoplasmic shuttling and nuclear retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 propose future directions. These are reasonable suggestions based on the current findings and limitations. The proposals are technically feasible and would address remaining questions about complex composition and regulation mechanisms.",
+    "result_type": "MINOR"
+  }
+]

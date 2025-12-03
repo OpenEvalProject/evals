@@ -1,0 +1,1592 @@
+{
+  "submission": {
+    "id": "c350d80c-8c6a-4d89-8950-5206bd288c36",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:30:14.495621Z",
+    "updated_at": "2025-12-03T11:30:14.495621Z"
+  },
+  "content": [
+    {
+      "id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "submission_id": "c350d80c-8c6a-4d89-8950-5206bd288c36",
+      "content_type": "manuscript",
+      "content_text": "# State-dependent representations of mixtures by the olfactory bulb\n\n## Authors\n\n- Aliya Mari Adefuin<sup>1</sup>\n- Sander Lindeman<sup>1</sup> ([ORCID: 0000-0002-2965-744X](https://orcid.org/0000-0002-2965-744X))\n- Janine Kristin Reinert<sup>1</sup> ([ORCID: 0000-0002-1495-7431](https://orcid.org/0000-0002-1495-7431))\n- Izumi Fukunaga<sup>1</sup> ([ORCID: 0000-0003-1860-5377](https://orcid.org/0000-0003-1860-5377)) \u2020\n\n### Affiliations\n\n1. Sensory and Behavioural Neuroscience Unit, Okinawa Institute of Science and Technology Graduate University Okinawa Japan ([ROR:02qg15b79](https://ror.org/02qg15b79))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSensory systems are often tasked to analyse complex signals from the environment, separating relevant from irrelevant parts. This process of decomposing signals is challenging when a mixture of signals does not equal the sum of its parts, leading to an unpredictable corruption of signal patterns. In olfaction, nonlinear summation is prevalent at various stages of sensory processing. Here, we investigate how the olfactory system deals with binary mixtures of odours under different brain states by two-photon imaging of olfactory bulb (OB) output neurons. Unlike previous studies using anaesthetised animals, we found that mixture summation is more linear in the early phase of evoked responses in awake, head-fixed mice performing an odour detection task, due to dampened responses. Despite smaller and more variable responses, decoding analyses indicated that the data from behaving mice was well discriminable. Curiously, the time course of decoding accuracy did not correlate strictly with the linearity of summation. Further, a comparison with na\u00efve mice indicated that learning to accurately perform the mixture detection task is not accompanied by more linear mixture summation. Finally, using a simulation, we demonstrate that, while saturating sublinearity tends to degrade the discriminability, the extent of the impairment may depend on other factors, including pattern decorrelation. Altogether, our results demonstrate that the mixture representation in the primary olfactory area is state-dependent, but the analytical perception may not strictly correlate with linearity in summation.\n\n## Introduction\n\nAs animals in nature navigate through their environment in order to find food, mates, and to avoid dangers, their sensory systems are tasked to detect and recognise signals of interest despite a background of interfering signals. This figure-ground segregation is a ubiquitous task for many, if not all, sensory systems. In the visual system, for example, segmentation of spatial patterns of light allows animals to recognise objects despite some parts being obscured (Marr, 1982). In the auditory system, spectral combinations of sound waves are recognised and strung together over time to form a stream, allowing animals to recognise social calls from specific individuals among other noises (Bregman, 1990). In olfaction, too, animals face challenges in identifying an odour of interest in the presence of other molecules (Laing and Francis, 1989; Rokni et al., 2014).\n\nOlfactory stimuli are first detected by a large family of olfactory receptors residing in the nasal epithelium (Buck and Axel, 1991). Due to a broad ligand-receptor binding (Araneda et al., 2000; Del M\u00e1rmol et al., 2021; Malnic et al., 1999), each odour molecule may activate a number of olfactory receptor types, leading to a combinatorial representation (Malnic et al., 1999). As a result, when several compounds are present in a given mixture, they can activate overlapping sets of olfactory receptors, causing complex pharmacological interactions. For example, molecules may bind a common receptor, which, depending on the efficacy, can lead to antagonism (Cruz and Lowe, 2013; Kurahashi et al., 1994; Oka et al., 2004; Reddy et al., 2018; Singh et al., 2019) or enhancement (Xu et al., 2020). Recent large-scale studies demonstrate that this is a widespread phenomenon (Inagaki et al., 2020; Xu et al., 2020; Zak et al., 2020), which means that neural responses to mixtures often do not equal the sums of responses to the individual odours. In addition to the interactions at the periphery, there are many forms of nonlinear summation at multiple stages of olfactory processing, including the saturation of neural responses (Firestein et al., 1993; Wachowiak and Cohen, 2001) and inhibitory interactions within the olfactory bulb (OB) (Economo et al., 2016). Widespread suppressive interactions are also observed in downstream areas, including the piriform cortex (Penker et al., 2020; Stettler and Axel, 2009).\n\nNonlinear summation of signals in some brain areas may be desirable when specific combinations of signals carry special meanings (Agmon-Snir et al., 1998; Jacob et al., 2008). However, in primary sensory areas, it is sometimes considered information limiting (Laughlin, 1989). For olfaction, this is thought to limit the analytical ability \u2013 whether a mixture can be perceived in terms of the constituent qualities (Bell et al., 1987; Jinks and Laing, 1999; Laing and Glemarec, 1992). Nonlinear summations, or \u2018interactions\u2019, do not occur for all odour mixtures (Fletcher, 2011; Gupta et al., 2015; Tabor et al., 2004), but occur prevalently when the background and target activation patterns overlap. This happens when a mixture contains many components (Mathis et al., 2016), as well as when the background odours are structurally related to the target odour (Cruz and Lowe, 2013; Fletcher, 2011; Jinks and Laing, 1999; Kay et al., 2003; Mathis et al., 2016; Tabor et al., 2004). Nonlinear summation poses a difficulty because it may distort a pattern of interest brought by non-uniform addition of unpredictable background patterns, although more recent studies suggest beneficial effects of antagonism, for example, by reducing saturation-related loss of information (Reddy et al., 2018). Due to this difficulty, some studies have suggested that the olfactory system may not decompose mixture representations into component parts, but may solve the task by learning task-specific boundaries instead (Mathis et al., 2016; Wilson and Stevenson, 2003).\n\nThe question therefore remains: how does the mammalian olfactory system deal with nonlinear summation of responses? To investigate this, we used binary mixtures of odours to investigate mixture representations in mice performing an odour detection task. While temporal structures caused by turbulence may be used to segregate odours of interest from the background (Ackels et al., 2021; Hopfield, 1991), we tackle the case when temporal information from the environment is not available. We demonstrate, by comparing the mixture responses using various paradigms, that the property of mixture summation depends on the brain state.\n\n## Results\n\nOlfactory figure-ground segregation is most difficult when the target and background odours evoke overlapping activity patterns (Rokni et al., 2014). To study this task using binary mixtures, we first characterised how our target odour relates to other odours in our panel. The target odour was ethyl butyrate (EB) and the rest of the odours in our set comprised a range of small esters structurally similar to EB, as well as non-esters (Figure 1A). According to Rokni et al., the masking index, which measures the amount of overlap in response patterns between the target odour and background odours, correlates well with behavioural performances (Rokni et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig1-v2.jpg)\n\n**Figure 1.:** (A) Odours in the panel with abbreviations used in the rest of the article. EB was the target odour for behavioural experiments. (B) Two-photon imaging of GCaMP6f signals from the apical dendrites of mitral and tufted (M/T) cells in Tbx21Cre::Ai95D mice under ketamine and xylazine anaesthesia. Scale bar = 0.1 mm. (C) Example GCaMP6f transients expressed as a change in fluorescence (\u0394F/F). Scale bar = 1 \u0394F/F. Grey, odour presentation (0.5 s). (D) Example evoked responses. Manually delineated regions of interest (ROIs) are shown with fluorescence changes evoked by odours, indicated with the corresponding colour map. The amplitude indicated is the average change during 1 s from the final valve opening. (E) Masking indices for all odours in the panel, with EB as the target. N = 4 fields of view, four mice. Mean and SEM of three trials or more shown.\n\nTo measure the masking indices from single-odour responses, we obtained activity patterns from the OB output neurons, the mitral and tufted (M/T) cells. Using a two-photon microscope, we imaged from the glomerular layer of the OB in Tbx21Cre::Ai95D mice, which express the calcium indicator GCaMP6f (Dana et al., 2019) in M/T cells (Haddad et al., 2013). To reproduce previous results, these initial imaging experiments took place in mice under anaesthesia (Figure 1B). We studied the degree of overlap between EB and other odour responses by presenting single odours in a randomised order. An analysis of glomerular activity patterns revealed that methyl butyrate (MB) responses overlap the most with the EB response patterns, followed by closely related esters (Figure 1C\u2013E).\n\nPrevious studies from anaesthetised animals showed that neural responses to odour mixtures exhibit widespread nonlinear summation (Inagaki et al., 2020; Oka et al.; Reddy et al., 2018; Singh et al., 2019; Xu et al., 2020). In particular, suppressive interactions become dominant among large responses due to saturation (Mathis et al., 2016). This pattern is observed at many stages of olfactory processing, including in the OB (Economo et al., 2016; Fletcher, 2011) and anterior piriform cortex (Penker et al., 2020), but it depends on the complexity of mixtures, as well as odorant choices (Fletcher, 2011; Gupta et al., 2015; Rokni and Murthy, 2014; Tabor et al., 2004). We therefore characterised the property of binary mixture summation using our odour set.\n\nWe first confirmed that our olfactometer is capable of presenting stable concentrations of odours for mixtures. We used a photoionisation detector to ensure that, when two odours are mixed, ionisation levels sum linearly (Figure 2A\u2013C). Then, to assess how the OB output represents binary mixtures, we imaged the individual somata of M/T cells in Tbx21Cre::Ai95D mice (Figure 2D). A typical session consisted of about 40 trials to minimise time-dependent effects. Single odours and their binary combinations were presented in a semi-random order. Since EB, MB, and the mixture of these two odours are of particular importance in this study, these three trial types appeared every 10 trials (Figure 2E; see Materials and methods). To assess how the mixture of EB and MB is represented, the amplitudes of the mixture responses were compared against those of linear sums of single-odour responses (Figure 2F and G). As reported before, a large proportion of M/T cells exhibited nonlinear summation (39.0% of M/T cells showed a deviation from linearity greater than 2; 71/182 regions of interest [ROIs], seven fields of view, four mice; see Materials and methods) with a large fraction showing sublinear summation (35.7%, 65/182 ROIs).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Validation of linear mixing by the olfactometer.(A) Binary mixtures are generated by mixing odorised air from two streams each equipped with a mass flow controller and presented as a stimulus when a five-way valve (\u2018final valve\u2019) is actuated. To present single odours, odorised air from one line was mixed with air that passes through a blank canister in the other line. A photoionisation detector (PID) was used for calibration. (B) Example PID measurements for single odours (\u2018Odour A\u2019 and \u2018Odour B\u2019), and their mixtures. Linear sum of the components (green trace) is shown superimposed with the observed PID signal (black). (C) Observed amplitudes for mixtures vs. linear sum of component amplitudes. Light blue line, the observed mixture amplitude equals the linear sum of components. (D\u2013G) Investigation of mixture summation by mitral and tufted (M/T) cells under anaesthesia. (D) Top: schematic of two-photon GCaMP6f imaging from somata of M/T cells in na\u00efve Tbx21Cre::Ai95D mice under ketamine/xylazine anaesthesia. Bottom: example field of view. Scale bar = 50 \u03bcm. (E) Example session structure. Single ethyl butyrate (EB) and methyl butyrate (MB) trials, as well as EB + MB mixture trials, are indicated with colour codes. (F) Transients from three example regions of interest (ROIs) as highlighted in (D). Linear sum (green trace) was constructed by linearly summing the averages of single EB and MB responses. Grey bar represents the time of odour presentation (0.5 s). (G) Scatter plot of observed mixture response amplitude against linear sum of components. N = 183 ROIs, seven fields of view, four mice.\n\nGiven that nonlinear summation is so widespread in the OB output, how well can mice analyse binary mixtures to accurately detect the presence of the target odour at the behavioural level? To assess this, we used a Go/No-Go paradigm for head-fixed mice. The rewarded stimulus (S+ odour) contained EB, either as a single odour or as a component of binary mixtures (Figure 3A). To train mice on this task efficiently, after habituation, the head-fixed mice were first trained to discriminate EB against other single odours (Figure 3A). The mice learned to perform this task well, reaching an accuracy of 80% within 200 trials on average (Figure 3B and C; number of trials to reach 80% accuracy = 194.3 \u00b1 21.9; n = 7 mice). Subsequently, these mice were trained to detect the presence of EB in binary mixtures (Figure 3B and C). The mice performed the mixture task at a high accuracy from the beginning (90.2% \u00b1 1.3% of trials with correct responses in the first session; n = 7 mice). However, the mistakes they made were odour-specific, in that they tended to lick more indiscriminately on MB-containing trials regardless of the presence of EB (Figure 3D and E; mean lick preference index for MB trials = 0.74 \u00b1 0.04 vs. 0.93 for five other background odours, p = 0.0035, one-way ANOVA; n = 7 mice). However, with training, the performance on MB trials, too, became accurate, demonstrating that mice can learn to accurately detect the target odour in binary mixtures even when the background odour is similar.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig3-v2.jpg)\n\n**Figure 3.:** (A) Behavioural paradigm: Go/No-Go task with head-fixed mice. Ethyl butyrate (EB)-containing olfactory stimulus was the rewarded stimulus. (B) After habituation, mice learned to discriminate EB against other single odours in the panel. Once proficient, mice learned to detect the presence of EB in binary mixtures. 30% of stimuli in the mixture stage were single odours. (C) Behavioural performance for all mice (n = 7 mice). Mean and SEM shown. (D) Odour-specific accuracy shown for the first (left) and last day of mixture training (right). Green shades indicate high accuracy. Top row corresponds to rewarded trials, and bottom six rows correspond to unrewarded trials. Average accuracy from all animals shown (n = 7 mice). Bl. = blank. (E) Lick preference index measures licks that occur preferentially on rewarded trials for a given background odour. A lick preference value of 1 occurs when all anticipatory licks were observed in rewarded trials only. Grey points, data from individual animals (n = 7 mice); mean and SEM shown in black.\n\nTo understand why mice were able to acquire the binary mixture task so easily, we analysed how M/T cells represent binary olfactory mixtures while the trained mice accurately performed the task. GCaMP6f fluorescence was measured from M/T cell somata. Data from the behaving mice was compared to the case when the same mice were later anaesthetised with ketamine and xylazine (Figure 4A\u2013D). This revealed that the M/T cells in behaving mice tended to sum mixture responses more linearly than when the mice were anaesthetised (Figure 4D). To quantify this data, we expressed a deviation from the linear sum as a fraction of the predicted, linear sum of component responses (\u2018fractional deviation\u2019; Figure 4E). Data from awake, behaving mice showed a clear shift in the distribution of this index compared to the anaesthetised case. In the anaesthetised case, a steep slope in the cumulative histogram occurs at a negative value (median fractional deviation = \u20130.39), indicating that the majority of the OB output neurons exhibit sublinear summation. On the other hand, M/T cells from behaving mice showed a broader distribution centred around 0 (median fractional deviation = \u20130.12; P = 3.83 \u00d7 10\u201310, two-sample Kolmogorov\u2013Smirnov test comparing the behaving vs. anaesthetised data; n = 202 ROIs and 103 ROIs, respectively). The broader distribution for the awake, behaving condition likely reflects a greater variability in this condition. Consistent with this, adding a Gaussian noise to the data from anaesthetised mice made the distribution broader, but without affecting the median (Figure 4F). Using this index to compare the two conditions, we found that the difference was most striking in the first second after the odour onset (\u2018early phase\u2019; Figure 4G). Further, we observed that the responses in the somata are more linear in the early phase compared to the apical dendrites (Figure 4\u2014figure supplement 1). These observations together may indicate that dampened responses in the early phase of somatic responses may underlie the reduced mixture suppression, although some contribution may come from more decorrelated responses at the somata (Figure 4\u2014figure supplement 1). Overall, the results indicate that the property of mixture summation is more linear in the awake, behaving mice, and that linearisation is not imprinted permanently as a result of learning.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of experimental setup. Imaging of GCaMP6f signals from the somata in Tbx21Cre::Ai95D mice performing the mixture detection task. On the last day, imaging took place under ketamine/xylazine anaesthesia (Anae). (B) Example field of view showing the same neuron from two imaging sessions. (C) Relative fluorescence change evoked by ethyl butyrate (EB), methyl butyrate (MB), and their mixture for the two conditions for the neuron indicated by arrow in (B). Grey bar, odour presentation (0.5 s). (D) Scatter plot of observed EB + MB mixture response amplitude against linear sum of component odour responses (average of 20 frames). Indicated time is relative to odour onset. (E) Cumulative histograms of fractional deviation from linear sum for data from anaesthetised mice (blue) and trained mice performing mixture detection task (black). N = 202 regions of interest (ROIs) from 13 fields of view, six mice for behaving case; 103 ROIs from eight imaging sessions, four mice for the anaesthetised case. (F) Effect of Gaussian noise on the fractional deviation distribution. Colours correspond to data with different amount of noise added. (G) Time course of median fractional deviation for the two datasets. Median deviation was obtained from each field of view; thick line shows the median for all fields of view, along with the 25th and 75th percentiles (shaded areas). See also Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Two-photon imaging of the olfactory bulb (OB) output at three depths in Tbx21Cre::Ai95D mice performing the mixture task. Top: imaging from the apical dendrites at the glomerular level. Middle: imaging from the tufted cell (TC) somata at the external plexiform layer. Bottom: imaging from mitral cell (MC) somata at the MC layer. Scale bar = 50 \u03bcm. (B) Evoked responses in the apical dendrites (top), TC somata (middle), and MC somata (bottom) by ethyl butyrate (EB) on its own (left column), methyl butyrate (MB) on its own (middle column), and the mixture of EB and MB (right). (C) Median fractional deviation for all fields of view (n = 7 fields of view, seven mice for apical dendrites; 13 fields of view, six mice for TC somata; 5 fields of view, three mice for MC somata). Thick lines correspond to the median, and shaded areas show the 25th\u201375th percentile range. (D) Boxplot summary of median fractional deviations for the imaged structures (not significant). (E) Average fluorescence change for all apical dendrites at the glomeruli (black trace), TC somata (green), and MC somata (red). Mean \u00b1 SEM shown. (F) Pearson\u2019s correlation coefficient between EB responses and MB responses from each field of view, averaged. Mean \u00b1 SEM shown.\n\nWhile the above result demonstrates that mixtures sum more linearly in awake, behaving mice, M/T cell responses are also significantly smaller and more variable in this condition. This is quantified in an analysis of trial-by-trial response similarity, which measures the Pearson correlation coefficient between population responses from individual trials (Figure 5A\u2013C). This showed that, in the anaesthetised mice, the M/T cell response patterns are highly correlated, both within class (comparison between trials with EB) and across classes (Figure 5A and B). In the awake, behaving mice, as expected, responses were less consistent, indicated by the lower within-class correlation (Figure 5A and B). However, because across-class patterns were substantially less correlated (Figure 5A and B), S+ responses may be more discriminable in the behaving mice.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig5-v2.jpg)\n\n**Figure 5.:** (A) Correlation matrices for data from anaesthetised mice (top) and awake, behaving mice (bottom), similarity of evoked responses between individual trials, for two time points, t1 and t2, as indicated in panel (B). S+ trials were trials with ethyl butyrate (EB) either as single odour or in binary mixtures. (B) Average correlation coefficient within S+ trials (magenta), within S- trials (blue), or across trials (green) for mitral and tufted cells (M/TC) responses from anaesthetised mice (top panel) and awake, behaving mice (bottom panel). (C) Discriminability index, which measures the proportion of trials in which the within-S+ correlation was higher than the across class, was compared at each time point for data from anaesthetised mice (blue trace) and awake, behaving mice (black). See also Figure 5\u2014figure supplement 1. (D) Support vector machine (SVM) for discriminating EB vs. non-EB responses, trained on M/TC somatic responses from randomly selected 80% of trials, and tested on 20% of trials for anaesthetised (blue) and behaving (black) conditions. Both training data and test data contained random selection of single-odour responses (grey rectangles in scheme) and mixture responses (hollow rectangles). (E) SVM trained with single-odour responses, tested on mixture responses.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Correlation matrices were obtained in the same way as in Figure 5A, except that the trials are sorted by whether the stimuli contained MB. (B) Discriminability index over time, where within-odour comparisons are between trials where MB was presented.\n\nThe ability to reliably encode the presence of EB was first quantified based on within-class vs. across-class correlation by counting the proportion of trials where within-class correlation was higher than across-class (Bridgeford et al., 2021). This indicated that M/T cells from anaesthetised mice showed better discriminability initially, but later, M/T cells in the behaving mice performed as well as the anaesthetised mice (Figure 5C). Note that a similar result is obtained when trials are sorted by the presence of MB (Figure 5\u2014figure supplement 1). While useful, the Pearson correlation coefficient takes into account all ROIs, irrespective of how informative they are in discriminating patterns, and may not reflect the true ability of a population of neurons to encode odours. To address this, we trained support vector machines (SVMs) to discriminate responses evoked by odours containing EB (S+) vs. odours without EB (S-). We used 80% of randomly selected trials from each session for training, and the remaining 20% of the trials to test the performance (Figure 5D). This time, M/T cells from the two conditions performed similarly for the first 1 s, performing above chance soon after the odour onset (earliest time where accuracy is significantly above 0.5 = 0.67 s for the behaving case, and 1.12 s for anaesthetised data; t-test at a significance level of 0.05; n = 13 fields of view, six mice for behaving case; 8 fields of view, four mice for the anaesthetised case; Figure 5D). Further, the data from behaving mice outperformed the anaesthetised case in the later phase (median accuracy for 2\u20133 s after odour onset = 0.58 vs. 0.70 for anaesthetised vs. behaving mice, respectively; p = 0.027, Mann\u2013Whitney U test for equal medians). We also wished to assess how mixture responses relate to single-odour patterns. To do so, we trained SVMs using single-odour responses (EB vs. other single odours) and tested the performance on mixture responses (Figure 5E). Again, the data from behaving mice outperformed the data from anaesthetised mice in the late phase, although the difference was not statistically significant (median accuracy for 2\u20133 s after odour onset = 0.55 vs. 0.64 for anaesthetised vs. behaving mice, respectively; p = 0.065, Mann\u2013Whitney U test for equal medians). This may suggest that, over time, mixture responses come to resemble the target component odour pattern more in the awake, behaving mice than in the anaesthetised mice. Curiously, the time course of decoder accuracy did not strictly depend on the linearity of mixture summation (Figure 6\u2014figure supplement 2). Overall, the result suggests that, despite the substantial differences in the amplitudes and variability of responses, M/T cells in behaving mice are able to encode the presence of the target odour well.\n\nTo what extent is the mixture representation in the OB affected by learning? Previous studies suggest that prior exposures and familiarity to odours affect the ability to analyse odour mixtures (Grabska-Barwi\u0144ska et al., 2017; Poupon et al., 2018). To address this, we assessed how EB and MB mixtures are represented in na\u00efve but awake, head-fixed mice. Since different levels of motivation, with accompanying changes in the sniff patterns, affect the olfactory system (Carey and Wachowiak, 2011; Jordan et al., 2018), we made one group na\u00efve mice engaged and a second group of mice disengaged by changing the reward contingency (Figure 6A). That is, we presented the same sets of odour stimuli, but instead of associating specific odours with reward, the water reward was either delivered after odour onset but on randomly selected trials to engaged the mice, or about 15 s before the odour onset on all trials in order to disengage the mice (Figure 6A; n = 17 sessions, six mice, and 14 sessions, four mice, respectively). The level of engagement was confirmed by the speed of inhalations during odour presentations (Figure 6B) and the number of anticipatory licks generated (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig6-v2.jpg)\n\n**Figure 6.:** (A) Reward contingencies used to achieve different behavioural states in awake mice. Top: mice were trained to discriminate between odours with ethyl butyrate (EB) vs. odours without EB. Middle: na\u00efve mice received water reward 3 s after the onset of odour, on randomly selected trials. Bottom: na\u00efve mice received water every trial, 15 s before odour onset. (B) Sniff patterns associated with trained and behaving mice (black), na\u00efve and engaged mice (orange), and na\u00efve and disengaged mice (light blue). Speed of inhalation during odour presentations shown. (C) Comparison of support vector machine (SVM) performance using data from behaving mice (black) vs. na\u00efve engaged mice (left panel, orange), and vs. na\u00efve disengaged mice (right panel, light blue). SVM was trained to discriminate responses to S+ vs. S- odours using randomly selected 80% of trials and tested on the remaining 20% of the trials. (D) Decoder performance for the results in (C) plotted using approximate z-values obtained from MATLAB implementation of Wilcoxon rank-sum test. (E) As in (C), but SVM was trained using responses to single odours, and tested on mixture responses. (F) As in (D) but for the results in (E). n = 13 fields of view, six mice for behaving, 17 fields of view, six mice for na\u00efve, engaged, and 14 sessions, four mice for na\u00efve, disengaged mice. See Figure 6\u2014figure supplement 1 for linearity of summation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Lick raster plots for example mice; left, trained mice performing the mixture task; middle, na\u00efve engaged mice; right, na\u00efve disengaged mice. Vertical grey bars indicate the time of odour presentation (0.5 s). Trials with ethyl butyrate (EB) presentations are ordered below the black horizontal bar. (B) Average number of anticipatory licks generated by mice in each group, on trials with EB vs. trials without EB. Each data point corresponds to each imaging session. (C) Time course of linearity in summation; median fractional deviation from each field of view is summarised here with median (thick line), and 25th and 75th percentile range (shaded areas).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Comparison of discriminability against the linearity of summation for all behavioural states. The average ability (fraction of trials correct) of support vector machines (SVMs) (trained on single-odour responses) to discriminate ethyl butyrate (EB) mixtures against non-EB mixtures is shown against the median fractional deviation from linear sum at the corresponding time. The time elapsed from the odour onset is colour coded.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) To assess if the learning-dependent improvement in the decoder performance requires an involvement of the piriform cortex, we infused muscimol (500 nl, 2 mM) in the ipsilateral, anterior piriform cortex during imaging, while trained mice performed the mixture task. A cannula was implanted at an angle, in a manner similar to Otazu et al., 2015, in order to infuse muscimol. (B) When the mice were trained to perform the task well, the imaging sessions commenced. Muscimol and control sessions alternated, where coordinates for the imaged fields of view were recorded and could be revisited, so that imaging could be obtained from the same location under the control and muscimol conditions. (C) Example matched fields of view for control session (left) and muscimol session (right). Arrowheads point to the same TCs imaged on different days. (D) Example confocal image of a coronal section of the brain, showing a track left by an implanted cannula (white dotted line) in the left piriform cortex. Blue, DAPI fluorescence; red, fluorescence from DiI, which was injected before perfusion. (E) Behavioural performance for control and muscimol sessions. Sessions with the common fields of view are paired. p = 0.069, paired t-test (n = 6 sessions, three mice). (F) Support vector machine (SVM) performance in the ability to discriminate S+ odours (ethyl butyrate [EB] present) vs. S- odours (EB absent) for control (black) and muscimol (green) datasets. Mean \u00b1 SEM shown. (G) Same as (F), except that the training set comprised responses from single-odour trials, and the test set comprised mixture responses.\n\nIn all awake conditions, we found the EB and MB responses to sum equally linearly (Figure 6\u2014figure supplement 1), indicating that the linearity of summation does not depend on the behavioural states or learning. However, the performance of SVMs on these datasets showed a state-dependence. While the general ability to discriminate S+ vs. S- odours was comparable across the states, the ability to analyse mixtures in terms of the constituents \u2013 SVMs trained on single odours and tested on mixture patterns \u2013 was particularly poor for the disengaged mice (Figure 6C\u2013F). Since the linearity of summation was comparable across the three groups (Figure 6\u2014figure supplement 1), this, again, suggests that the ability to correctly decode the presence of an odour does not strictly correlate with the linearity of mixture summation. In all cases, the decoder performed most accurately in the late phase. We hypothesised that this extra time may reflect an involvement of recurrent interactions with the piriform cortex, which is thought to store learned representations and feed back to the OB (Chapuis and Wilson, 2011; Grabska-Barwi\u0144ska et al., 2017). Our preliminary result from muscimol infusion in the ipsilateral piriform cortex, however, suggests that this may not be the case (Figure 6\u2014figure supplement 3).\n\nUnder what circumstance does discriminability of odour mixtures decouple from linearity in mixture summation? To study the effect of saturating sublinearity in isolation, we made a simulation as follows. Linear sums of responses were constructed by adding component responses obtained from the imaging sessions. In one test, these sums, with added noise, were passed through SVMs that had been trained with single odour responses. In another test, the linearly summed responses with noise were transformed with a normalising function (Mathis et al., 2016; Penker et al., 2020), which adds sublinearity in an amplitude-dependent manner (Figure 7B; see Materials and methods). Then, these signals were passed through the same SVMs to assess how discriminable the activity patterns were. When the data from the anaesthetised mice was used, normalising sublinearity was particularly detrimental around 2 s after the odour onset (Figure 7C), qualitatively reproducing the transient decrease in the accuracy seen with the observed mixture responses (Figure 5E). In contrast, with the data from the behaving mice, normalising sublinearity did not have as significant an effect on the mixture discriminability, even in the late stage when sublinear summation becomes more widespread (Figure 7D and E). Thus, the functional consequence of nonlinear summation may depend on specific circumstances, for example, on how separable, or decorrelated, the activity patterns are. Overall, our result indicates that mixture responses in the OB are highly state-dependent and evolve over time (Figure 6F).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76882/elife-76882-fig7-v2.jpg)\n\n**Figure 7.:** (A) Simulation approach. For each field of view, component responses were averaged across trials and summed to obtain simulated mixture responses. Subsequently, uncorrelated Gaussian noise was added, and the summed responses were further transformed using a normalisation model (Mathis et al., 2016; Penker et al., 2020). These were then used as test inputs on support vector machines (SVMs) that had been trained with single-odour responses. (B) Parameter extraction. Scatter plot shows observed ethyl butyrate (EB) + methyl butyrate (MB) mixture responses against linear sums of component responses (black dots). Red line shows the model fit used in the simulation. Data was from behaving mice, at 2 s after the odour onset. (C) Comparison of SVM performance using data from anaesthetised mice. Black line corresponds to linear sum + noise as inputs; green line corresponds to the results with additional normalising sublinearity. Mean \u00b1 SEM shown. (D) Same as in (C) but for data from awake, behaving mice. (E) Comparison of SVM performance. SVM accuracy for simulated mixture responses with sublinearity expressed as a fraction of accuracy obtained with simulated linear sum. p = 0.03 for early phase (0\u20131.5 s) and 8.13 * 10\u20134 for late phase (1.5\u20133 s after odour onset); paired t-test. (F) Schematic of the finding: possible mechanisms of mixture representation in behaving mice may evolve over time. In awake, behaving mice, responses evoked in the olfactory bulb (OB) output neurons are dampened early on, remaining largely in the linear range of the normalisation curve. Over time, the responses become larger, making sublinearity more widespread, but a pattern decorrelation may make evoked mixture responses still discriminable.\n\n## Discussion\n\nSegmentation and extraction of relevant information from mixtures of signals are important and perpetual tasks for sensory systems. Nonlinear summation of signals is generally thought to pose difficulty in demixing component signals. Here, we demonstrate that the signal summation in the primary olfactory area of the mouse is significantly more linear in awake mice. This is notable because many previous studies reported that suppressive mixture interactions are widespread in the central nervous system, based on anaesthetised preparations (Bell et al., 1987; Cruz and Lowe, 2013; Penker et al., 2020; Stettler and Axel, 2009).\n\nHowever, our analysis also indicates that the ability to discriminate binary mixture responses does not correlate strictly with linearity in summation. First, the behavioural improvement was not accompanied by more linear summation. Second, the time course of decoder accuracy does not follow the linearity of summation. Indeed, in the data from behaving mice, the decoder performance peaked when mixture responses were most sublinear. This raises a question: is sublinear summation in mixtures detrimental or beneficial to discriminating mixtures of odours? Our simple simulation indicates that, generally, a sublinear mixture summation due to saturating influences limits the discriminability of mixture responses. Thus, dampened responses in awake animals bring some advantage by maintaining the mixture responses in the linear range. However, in the behaving mice, even when the responses became larger at a later phase, the saturating influence was less detrimental to discrimination. Here, decorrelated response patterns may play a more crucial role as this is known to enhance classifier or behavioural performances (Bhattacharjee et al., 2019; Friedrich and Wiechert, 2014; Gschwend et al., 2015; Padmanabhan and Urban, 2010). While the behavioural task described in this study is simple and animals make accurate decisions within 1 s (771 \u00b1 97 ms) of stimulus onset, the slower mechanisms described here may be important when larger and more reliable responses are required for accurate decisions. So, in addition to sampling time (Rinberg et al., 2006), this phenomenon may be a part of mechanisms needed to solve more difficult tasks accurately (Abraham et al., 2010; Wilson et al., 2017).\n\nMechanistically, the ability to accurately analyse, or discriminate between, mixtures based on the knowledge of component is hypothesised to involve the piriform cortex, through learned representations (Chapuis and Wilson, 2011; Grabska-Barwi\u0144ska et al., 2017). For tufted cells, however, the relevant sources of feedback could be other brain regions, such as the anterior olfactory nucleus (Chae et al., 2020). It will be an intriguing future investigation to identify the source and mechanisms of state-dependent mixture representations.\n\nPerception of olfactory mixtures has long fascinated investigators. Mixtures of odours often have qualities that are different from those of the individual components. Accurate recognition of components is particularly hard for human subjects. For untrained subjects, olfactory mixtures that contain about 30 components tend to smell alike (Weiss et al., 2012). Even highly trained people like perfumers can only accurately identify individual components if unfamiliar mixtures contained no more than five components (Poupon et al., 2018). These demonstrate an ultimate limit in the analytical perception of olfactory mixtures. In addition, in non-expert humans and rodents alike, when the task is to look for a particular aroma in the mixture, the tendency is to falsely report the presence of the target odour in target-odour detection tasks (Laing and Glemarec, 1992; Rokni et al., 2014). In all cases, an extensive training for specific odours can improve the ability to detect the target odour, as seen in the case for sommeliers who routinely analyse key components in wines, which can contain several hundred component mixtures (Ilc et al., 2016). Thus, while mixture perception is highly context specific (Rokni and Murthy, 2014), training in specific odours seems to be key to improving on mixture analysis. With more complex mixtures, mechanisms within the OB may reach a limit, and also is unlikely to be the only mechanism that is used to solve the task. Elucidating what roles the primary sensory areas plays is a crucial step towards a mechanistic understanding of complex sensory processing.\n\n## Materials and methods\n\n### Animals\n\nAll animal experiments have been approved by the OIST Graduate University\u2019s Animal Care and Use Committee (protocol 2016-151 and 2020-310). Tbx21Cre (Haddad et al., 2013) and B6J.Cg-Gt(ROSA)26Sortm95.1(CAG-GCaMP6f)Hze/MwarJ, also known as Ai95D (Madisen et al., 2015), were originally obtained from the Jackson Laboratory (stock numbers 024507 and 028865, respectively). Tbx21Cre::Ai95D mice were generated by crossing homozygous Tbx21Cre and Ai95D mice, resulting in heterozygous animals used for imaging experiments. C57Bl6J mice were purchased from Japan CLEA (Shizuoka, Japan) and were acclimatised to the OIST facility for at least 1 week before they were used for experiments. All mice used in this study were adult males (8\u201311 weeks old at the time of surgery).\n\n### Olfactometry\n\nA custom-made flow-dilution olfactometer was used to present odours. Briefly, custom Labview codes were used to control solenoid valves, and a flow controller (C1005-4S2-2L-N2, FCON, Japan) was used to regulate the rate of air flow. A pair of normally closed solenoid valves was assigned per odorant and used to odorise the air. These solenoid valves were attached to a manifold, such that a set of eight pairs had access to a common stream of air. To generate binary mixtures of odours while keeping concentrations stable, one odour from each manifold (lines A and B) was used. For single-odour presentations, odour was mixed with air that passed through an empty canister. The odorised air was directed towards the animal only when the solenoid valve closest to the animal (final valve) opened. Final valve was opened for a short time (0.1 s for experiments involving behavioural analysis only, and 0.5 s for all imaging experiments, to accommodate for slow respirations during anaesthesia), to avoid adaptation related to temporal filtering for high sniff frequencies associated with long odour pulses (Verhagen et al., 2007). Odours were presented at 1\u20135% of the saturated vapour. Total air flow, which is a sum of odorised air and the dilution air, was approximately 2 l/min, which was matched by the air that normally flows towards the animal. Inter-trial interval was approximately 40 s to purge airways with clean, pressurised air and to ensure that the flow controllers have stabilised before each odour presentation. All odorants were from Tokyo Chemical Industry (Tokyo, Japan), apart from EB (W242705), which was from Sigma-Aldrich. Product numbers were T0247 (ethyl tiglate), V0005 (methyl valerate), A0061 (acetophenone), A0500 (methyl anthranilate), B0757 (butyl butyrate), B0763 (MB), S0015 (methyl salicylate), S0004 (salicylaldehyde), T0248 (methyl tiglate), and A0232 (eugenol). Purity of all odorants was at least 98% at the time of purchase. Stock odorants were stored at room temperature in a cabinet filled with N2 and away from light.\n\n### Surgery\n\n#### Head plate implantation\n\nAll recovery surgery was conducted in an aseptic condition. 8\u201311-week-old male C57Bl6/J mice were deeply anaesthetised with isoflurane. The body temperature was kept at 36.5\u00b0C using a heating blanket with a DC controller (FHC, Bowdoin, USA). To attach a custom head plate about 1 cm in width weighing a few grams, the skin over the parietal bones was excised and the soft tissue underneath was cleaned, exposing the skull. The exposed skull was gently scarred with a dental drill, cleaned, dried, and coated with cyanoacrylate (Histoacryl, B. Braun, Hessen, Germany) before placing the head plate and fixing with dental cement (Kulzer, Hanau, Germany). For optical window implantation, adult, male Tbx21Cre::Ai95D mice were deeply anaesthetised and underwent a window implantation procedure as previously described (Koldaeva et al., 2019). Briefly, after exposing the frontal bone, a craniotomy about 1 mm in diameter was made over the left OB and on the exposed dorsal surface, a cut piece of coverslip that snugly fit in the craniotomy, on the edge of the drilled bone, was gently pressed down, sealed with a cyanoacrylate and fixed with dental cement. Mice were allowed to recover in a warm chamber, returned to their cages, and given carprofen subcutaneously (5 mg/kg) for 3 consecutive days.\n\n### Habituation and behavioural measurements\n\nWater restriction began 2 weeks after the surgery. Mice went through 3 days of habituation to head fixation, one session per day for approximately 30 min, until mice learned to lick vigorously for water reward. Respiration pattern was measured by measuring the air flow just outside the right nostril by placing a flow sensor (AWM3100V, Honeywell, NC), and the data was acquired at 1 kHz. Lick responses were measured using an IR beam sensor (PM-F25, Panasonic, Osaka, Japan) that was part of the water port. Nasal flow, an analog signal indicating the odours used, lick signal, a copy of the final valve, and water valve timing were acquired using a data acquisition interface (Power1401, CED, Cambridge, UK).\n\n### Discrimination training\n\nAfter habituation, the head-fixed mice were trained to associate a water reward with a target odour (EB). The reward was two droplets of water (10 \u03bcl each), which arrived 3 s after the onset of the final valve opening. The mice underwent single-odour discrimination training first until they generated anticipatory licks in response to EB presentations and correctly refrained from licking in response to other single odours. Once the overall accuracy was above 80% in at least one behavioural session, the mice went through the mixture detection task. A typical training session comprised roughly 150 trials, lasting about 1 hr. Rewarded trials comprised a third of all trials. Two-photon imaging took place once the mice performed at 80% accuracy or above in MB trials.\n\n### Random association paradigm\n\nAfter habituation, the head-fixed mice were presented with the same odour mixture stimuli as those that underwent the discrimination training. The water reward was delivered on randomly selected trials, 3 s after the onset of the final valve opening. One behavioural session was used to accustom the mice to the odours. Two-photon imaging commenced from the second behavioural session.\n\n### Disengagement paradigm\n\nAfter habituation, the head-fixed mice were presented with the same odour mixture stimuli as above. The water reward was delivered every trial, 15 s before the onset of the final valve opening, arriving in the middle of the inter-trial interval, which was 40 s to ensure thorough purging to clear the lines, as well as to stabilise the flow controllers. Two-photon imaging commenced from the second behavioural session.\n\n### Odour mixture trial composition\n\nBinary mixtures have been chosen due to the smaller number of possible odour combinations compared to more complex mixtures. However, even with 11 odours, there is a limit in the number of trials each head-fixed mouse can sample in a given session. We therefore decided to focus on the EB + MB mixtures. However, it was crucial that EB, MB, and EB + MB mixture is not presented too frequently to avoid possible adaptation, as well as mice becoming over familiar, especially in the EB-detection task, where the goal was not to train mice to remember specific odour combinations. Thus, we used a compromise paradigm where EB, MB, and EB + MB appeared every 10 trials.\n\n### Data analysis\n\nThe data was analysed offline using custom MATLAB codes. To calculate the accuracy, the number of licks during 3 s from the final valve onset was measured for each trial. Threshold for an anticipatory lick was set to 2, thus the correct response for rewarded trials was two or more beam breaks, and the correct response for unrewarded trials was one lick or less during the response time window. To calculate the learning curve, the accuracy was expressed as the proportion of correct trials in a given block of 50 trials. Time to inhalation peak: to calculate the speed of inhalation, onset of inhalation and peak of inhalation was detected using Spike2 (CED, Cambridge, UK), using the built-in event detection functions. Briefly, inhalation peaks were detected using the \u2018rising peak\u2019 function. These events were used to search backwards in time for the inhalation onset when the flow signal crossed a threshold value. Lick preference index: to measure how well mice discriminated rewarded vs. unrewarded mixtures, anticipatory licking patterns for the two types of trials were compared using the following formula:\n\n$$\nLick\u00a0preference\u00a0index=(Lick_{rewarded}\u2212Lick_{unrewarded})/(Lick_{rewarded}+Lick_{unrewarded}).\n$$\n\nwhere Lickrewarded corresponds to the average number of anticipatory licks on rewarded trials, and Lickunrewarded corresponds to that for unrewarded trials.\n\n### Imaging\n\nA custom-made two-photon microscope (INSS, UK) with a resonant scanner was used to observe fluorescence from the OB of Tbx21Cre::Ai95D mice in vivo. 3D coordinates for imaged fields of view were recorded relative to the location of a reference, blood vessel pattern on the surface. Unless otherwise stated, imaging from somata was done relatively superficially, just below the glomeruli, thus mainly comprised TCs, which use firing rate modulation to represent odours (Fukunaga et al., 2012). Fields of view for glomerular and somatic levels were 512 \u03bcm \u00d7 512 \u03bcm, and 256 \u03bcm \u00d7 256 \u03bcm, respectively, and overlapped for awake and anaesthetised conditions, but fewer sessions took place under anaesthesia. In each trial, 400 image frames were acquired at 30 frames per second, with 200 frames before the final valve opening to obtain a steady baseline. Unless otherwise stated, the time window analysed for the odour-evoked responses was the first 1 s since the onset of final valve opening. For imaging under ketamine/xylazine anaesthesia (100 mg.kg\u20131/20 mg.kg\u20131 intraperitoneally), mice were kept on a warm blanket (FHC) to maintain the body temperature at 36\u00b0C.\n\n### Ipsilateral muscimol infusion in the anterior piriform cortex\n\nAnimals were unilaterally implanted with a 26G cannula (10 mm length; C315GS-4/SPC, Plastics One). The cannula was inserted through a small craniotomy at a stereotactic coordinate (AP, 2.2 mm; ML, 2.4 mm relative to bregma) and advanced over 6.1 mm at 45\u00b0 to target the anterior piriform cortex, and fixed with dental cement (Kulzer, Hanau, Germany). For infusion, 500 nl of 2 mM muscimol (M1523, Sigma-Aldrich, MO) was injected using a Hamilton microsyringe, at a rate of 100 nl/min approximately 10 min before the imaging started.\n\n#### Post-hoc verification of infusion cannula placement\n\nAnimals were infused with 500 nl DiI (Invitrogen, V22885), immediately transcardially perfused with phosphate buffer (225.7 mM NaH2PO4, 774.0 mM Na2HPO4. pH 7.4) and PFA (4%), dissolved in phosphate buffer. The heads (including the implants) were postfixed in PFA at 4\u00b0C for at 48\u201396 hr before extraction of the brains. Coronal sections of 100 \u00b5m thickness were cut on a vibratome (5100 mz-Plus, Campden Instruments, Leicestershire, UK) and counterstained using DAPI (D9542, Sigma-Aldrich). Images were acquired using a Leica SP8 confocal microscope using a \u00d710 (NA 0.40 Plan-Apochromat, Leica) objective. Images were taken at a resolution of 1024 \u00d7 1024 pixels per field of view (1163.64 \u00d7 1163.64 \u03bcm).\n\n### Image analysis\n\nTransients were extracted as follows. ROIs were manually delineated using an average frame from each imaging session. For glomeruli, ROIs were delineated by tracing the outer rim of congregated labelled processes surrounded by a dark region. Pixel values within each ROI were averaged to obtain a time series. Imaging sessions with motion artefacts and drifts were removed from analyses. For each transient, the baseline period was defined as 2 s preceding the final valve opening. Relative fluorescence change (\u0394F/F) was calculated with respect to this baseline. Odour response period was 1 s (30 frames) starting at the onset of the final valve opening, unless otherwise stated. Awake mice tended to adjust sniff patterns, so the final valve opening was not triggered by nasal flow. Masking index for the glomerular level was calculated as previously described (Rokni et al., 2014). Briefly, responses to single odours were obtained from glomeruli of anaesthetised mice. In each field of view, only the glomeruli responsive to the target odour (EB) were analysed. To obtain glomeruli evoked by the target odour, the evoked response amplitudes were converted into z-scores. Glomeruli that responded to EB with z-scores higher than 2 were considered. The masking index was the average overlap in the evoked response, where the maximum value for each glomerulus was 1. For each odour, responses were averaged over three or more trials. Mean and standard error of the mean are shown in figures, unless otherwise stated. Boxplots were constructed using the MATLAB function boxplot and show the median, 25th and 75th percentiles. Outliers are shown with red crosses. The experiments were not done blindly since the stimulus-reward contingency was visible to the experimenter. However, the olfactometer performance, age and sex of the mice, and analysis codes used were the same for all conditions.\n\nFractional deviation from linearity was calculated as,\n\n$$\n(R_{observed}\u2212R_{linearsum})/\u2223R_{linearsum}\u2223,\n$$\n\nwhere Robserved is the mean response amplitude for observed mixture (e.g. response to EB + MB mixture), Rlinear sum is the trial average linear sum of component responses (e.g. EB response + MB response). Median fractional deviation was obtained from each field of view. For testing the effect of trial-by-trial variability, Gaussian noise was generated using the MATLAB function normrnd with the mean set to 0, and added to responses from each trial, before the fractional deviation was calculated.\n\nDeviation from linearity was the difference between an observed mixture response amplitude and a linear sum of components normalised by the joint standard deviation:\n\n$$\n(R_{observed}\u2212R_{linearsum})/(s.e.m._{observed}+s.e.m._{linearsum})\n$$\n\nDiscriminability index based on correlation coefficient was calculated in the same way as Discr, described in Bridgeford et al., 2021, except that the distance measure used was 1 \u2013 Pearson\u2019s correlation coefficient, instead of the Euclidean distance.\n\n#### Decoding analysis\n\nSVMs were trained using the MATLAB function fitclinear with linear model intercept (\u2018FitBias\u2019) set to 0. Test datasets were used to predict the trial types using the MATLAB function predict. Signals were averaged over 30 frames (~1 s) for each time point to obtain the time course.\n\n#### Simulating the effect of normalising sublinearity on discriminability\n\nSVMs were trained as above using the single-odour responses only. Then simulated mixture responses were constructed as follows. Single-odour responses were averaged over trials. Combinations of two averaged responses were added linearly, and uncorrelated Gaussian noise (mean = 0) was added. The noise term comprised two components: fixed, baseline standard deviation (0.2 for anaesthetised data, and 2 for awake, behaving case) and standard deviation that scaled with response amplitude by taking the slope of a linear regression of the observed data. In one test, linear sum with added noise was used as inputs to the above SVMs. In a second set of tests, these simulated responses were further passed through a normalising sublinearity and tested on the same SVMs. The equation of normalisation (Penker et al., 2020) was\n\n$$\nR_{j}^{*}= R_{max}\\frac{2}{1+e^{-s.R_{j}}}-1\n$$\n\nwhere Rj represents the linear-sum amplitude of the jth neuron, and $R_{j}^{*}$ is the normalised response amplitude of jth neuron. Parameters $s$ and $R_{max}$ were obtained by fitting the data to observed mixture responses (on data from behaving animals at t = 2 s after odour onset). Rmax was 6 and s was 0.2.\n",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "6206e806-afbd-4ac9-b8a2-dfa5e8457e1f",
+      "submission_id": "c350d80c-8c6a-4d89-8950-5206bd288c36",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, https://ror.org/03vek6s52 Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76882.sa0](https://doi.org/10.7554/eLife.76882.sa0)\n\nThis study provides a strong evidence supporting that odour mixture interactions are more linear during awake animals compared to anaesthetised conditions, contrary to the previous notion that odour mixture interactions are sublinear \u2013 the conclusion obtained in anaesthetised animals. With their revisions, the authors have done new simulations to clarify how linear mixture interactions affect odour discriminability and interact with other factors (e.g. decorrelations). This new analysis provides a reasonable explanation as to when linearity helps improve discriminability and clarify the significance of sublinear interactions.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, https://ror.org/03vek6s52 Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76882.sa1](https://doi.org/10.7554/eLife.76882.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors resubmitted a revised version of the paper for consideration. What follows is the authors\u2019 response to the first round of review.]\n\nThank you for submitting the paper \"State-dependent linearisation of mixture representations by the olfactory bulb\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Naoshige Uchida as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. We are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nSummary:\n\nThe reviewers agreed that this study addresses an important question: how complex odors are processed in the olfactory bulb, more specifically, whether mixture components are represented as a linear sum of components or sublinear interactions occur as suggested by previous studies. The results are potentially interesting, but the reviewers have raised substantive concerns.\n\n1. The reviewers were not convinced by the analysis based on the fractions of sublinear versus linear interactions. The authors report the fraction of non-linear interactions as defined by the activity showing a deviation from linearity using a statistical criterion (> 2 standard deviation). The reviewers thought the authors need to perform more analysis by considering trial-to-trial variability, magnitude difference, and response saturation etc.. Each reviewer made useful suggestions (see below).\n\n2. Odor responses in awake conditions are generally weaker than those under anesthesia. It is, therefore, unclear whether the overall discrimination is better during awake condition. It is important to perform decoding analysis using a classifier trained using odor responses in each condition (not a classifier built using predicted responses).\n\n3. The reviewers had somewhat different opinions on overall significance of the work. One reviewer thought that the difference in awake and anesthetized conditions, if shown convincingly by addressing the above points, is important because previous studies have predominantly reported sublinear interactions. One reviewer, however, thought that the difference between awake and anesthetized conditions is not sufficiently novel, because many other differences have already been reported. One reviewer thought that further mechanistic insights would be important.\n\nOverall, strong demonstrations of the above point 1 and 2, and/or further mechanistic insights would need to be considered for eLife. If the authors can address the above issues, we would be willing to reconsider a resubmitted version but without guarantees concerning publication.\n\nReviewer #1:\n\nAdefuin and colleagues examined the interaction between components of binary odor mixtures in odor responses in mice. The authors used two-photon calcium imaging from the soma and apical dendrites of mitral/tufted cells in the olfactory bulb. Odor responses were measured in various conditions: under anesthesia (ketamine/xylazine), while well-trained mice were engaged in an odor discrimination task, or disengaged. The authors first show that mixture components interacted sublinearly in a large fraction of mitral/tufted cells (46%; Figure 6D) consistent with previous studies. However, when odor responses were measured in awake animals, very few mitral/tufted cells showed sublinear responses at soma (8-9%; Figure 6D). Interestingly, sublinear interaction was evident in apical dendrites of mitral/tufted cells (45%). Whether mixture components are represented linearly or not in the olfactory system is an important question, related to the animal's ability to identify or segment mixture components. Somewhat contrary to previous studies, this study demonstrates largely linear interactions. Furthermore, this study compares various behavioral conditions. These results are important and of interest to those who study sensory systems. I have a few concerns regarding data analysis.\n\n1. Non-linear interactions are detected by the activity showing a deviation from linearity greater than 2 standard deviations. Using this criterion, non-linear interactions might decrease if the trial-by-trial activity becomes more variable. This is concerning because the activity might be less variable in the anesthetized condition, and the reduction in sublinear interactions in awake conditions may be due to a general increase in response variability during awake. Can the authors exclude the possibility that the decrease in sublinear interactions is merely due to an increase in response variability in the awake conditions. This issue also applies to the comparison between apical dendrites versus soma; are the signals in apical dendrite less variable (maybe due to some averaging across dendrites from multiple cells; see the following point 5)?\n\n2. Related to the above issue, it would be useful to analyze the difference between conditions using different metrics to fully understand what really are different between conditions. The scatter plots shown in various figures do not show drastic differences between awake and anesthetized conditions, as might be indicated by the percent of sublinear responses. It would be useful to characterize the magnitude of sublinear/supralinear effects. For example, one can calculate a fractional change in the mean response. Does this measure show consistent difference between awake and anesthetized conditions?\n\nReviewer #2:\n\nThis study addresses how complex stimuli are represented in neural responses. This is particularly relevant to olfaction because the vast majority of stimuli are complex mixtures that perceptually, are not easy to decompose into parts. Nonetheless, the ability to discern a relevant odor from background odors is essential. This process is easier when neural responses to mixtures reflect the linear sum of the responses to the individual components. The main conclusion of this study is that the linearity of olfactory bulb responses to two-component mixtures increases awake versus anesthetized states. The authors provide some evidence to support this claim. However, this could be better quantified and there is a temporal aspect of linearization that is not addressed. Perhaps the most interesting aspect of the study is the difference in linearity between the dendrites and the somata of the mitral/tufted cells. But a statistical analysis of this finding was not evident. Overall, a mechanistic or functional approach to understanding these findings is lacking. The differences linearity between the anesthetized and awake are simply explained by response saturation anesthetized animals. There are hints at mechanism by which linearity is supported in the OB with comparisons between soma and dendrite, but these are not well developed. There is a model that addresses the functional significance of linearity, but this is only supplemental and not well described.\n\n1) The quantification of linearity is incomplete. The deviation from linearity is a fine metric but just reporting the change in fraction of ROIs that show deviation from linearity in the sublinear direction is insufficient. There are many ROIs that show supralinear summation as well. Moreover, it is not clear where the cut-off is between linear and non-linear responses. There are statistical analyses that can be done on proportional data to determine if the proportions of non-linear ROIs are statistically different in the anesthetized and awake states. These should be done.\n\n2) Another approach is to compare the slope of the lines fit to data in the Observed vs. Linear sum plots and to determine how much these deviate from 1, and if this is statistically significant. These slopes could also be compared between states.\n\n3) It is also necessary to be clear about which timepoint is being analyzed. It is apparent from figure 4 that the linearity of the population of ROIs evolves with time, becoming most linear 3 sec after odor onset. This temporal evolution of linearity is not addressed at all. But could provide some insight into mechanism.\n\n4) There is no statistical analysis of the dendrite versus soma data. The figure is not very convincing of differences. Why wasn't the temporal progression of responses shown for the dendrite versus soma data?\n\n5) Linearity seems very correlated with the strength of the response. Sublinearity increases with strength suggesting saturation is a major contributing factor. Conversely, supralinear responses are more apparent with weaker component responses. It is well known that OB responses are much stronger in anesthetized animals. The deltaF/F values are greater in the anesthetized state compared to the awake state. So, the differences between the states may be trivially explained by saturation (as shown in Supplemental Figure 6). This doesn't really say anything about how the OB linearizes responses. However, the temporal evolution of linearization could speak to other mechanisms such as adaptation, recruitment of inhibition, descending control etc. Analyses of the dendrite versus soma signals over time could give insight as to where/when these mechanisms may be occurring. I think this was attempted in the supplement to figure 7, but the figure does not have sufficient explanation to figure out what is going on.\n\n6) There was a model of how linearity might function in odor detection, but this is not well described or motivated in the text.\n\n7) Overall, all the supplemental figures and data are essential to the study. Many of my concerns are somewhat addressed by these additional analyses. But they are not well explained. These should be integrated into the main figures of the paper and adequately described in the Results section.\n\nReviewer #3:\n\nAdefuin et al. use multiphoton imaging of M/T cell responses to investigate whether neuronal representations of binary mixtures can be explained as a sum of the components. The current view in the field (built largely from studies in anesthetized animals), is that mixture summation is non-linear and increases with the degree in glomerular response overlap elicited by the components. The authors reproduce these results and ask whether the same phenomenon is observed in the awake state, in particular when the animals are engaged in an odor discrimination task. Unlike in the anesthetized state, the authors find that mixture representations are linear in the awake brain. They use a series of systematic behavioral paradigms to show that the observed linearity in the awake state (compared to anesthetized) is not dependent on task engagement (reward is given randomly, post-odor) or stimulus relevance (reward is given before odor). While the experiments are well done and the data is presented clearly, I have several major concerns about the interpretation of their results.\n\n1) Given the data the authors present, it is unclear if one can conclude that the olfactory system is more or less linear in the awake state compared to the anaesthetised one. What seems to change most across the awake vs. anesthetized state is the response amplitude. Responses appear to be ~3x smaller in the awake mice. In the anesthetized state, non-linearity seems most apparent for large response amplitudes (>5 dF/F) with mixture responses being sub-linear, most likely due to saturation effects. The authors themselves do an analysis in Figure 6 \u2013 supplement 1 to show that most of the observed non-linearity in the anesthetized animals can be explained away after accounting for amplitude normalisation. The authors use this analysis to comment that the level of linearity is the same across all the three awake states, but the same figure shows that it is in fact the same even for the anaesthetized state.\n\nTo put it differently, it is indeed true from the authors data that the OB response gain is significantly lower in the awake state, but it is unclear if the summation is more linear if measured at similar response amplitude regimes in both awake and anaesthetised mice.\n\n2) The authors argue that keeping response amplitudes small in the awake brain prevents sub-linear summation and therefore may lead to better mixture decomposition. They do a decoding analysis in anaesthetised mice to show that linear mixture representations (instead of using observed sub-linear representations) make odor classification easier. However, I find this analysis uninformative and misleading. It is no surprise that the decoders trained on single odor representations should perform better (or equivalent) when using linear sums as input instead of observed sub-linear representations. The authors use this observation to suggest that this mechanism aids discrimination ability in the awake state. However, given that even the single odor responses are much weaker and noisier in the awake state, it is likely that even the single odor discrimination ability is poorer in the awake state. By the same logic, mixture decomposition might be also much poorer in the awake brain than the anesthetized brain, even though summation is more linear, just because responses are weaker and noisier. In my opinion, the authors should compare decoding accuracy across awake vs. anesthetized responses if they want to assert that linearisation of responses in the awake brain leads to easier decomposition. Because otherwise, while linearisation in principle can aid decomposition, at least in the form that the authors observe here, it may come at a high cost on signal-to-noise ratio which would undo the gain that linearity provides, in principle, for discrimination.\n\n3) At a more philosophical level, to this Reviewer, it is unclear if anesthesia vs. awake state difference in response should constitute the main focus of the manuscript. The authors explore summation properties under four different brain states, one of which is anaesthesia (also least behaviorally relevant). In three out of four states, they observe that summation is linear. In the fourth (anaesthesia), they observe that summation is sub-linear, but this happens at much larger response amplitude regimes compared to the three awake states sampled, presumably due to saturation. To me, it seems that the Authors here show that mixture summation in the OB, is largely independent of brain state since it is unaffected by whether the animal is task engaged or motivated etc.\n\n4) It is unclear how to interpret the dendritic imaging comparison. First, the dendritic signal is pooled across many cells. If any of the cells that are being pooled shows sub-linearity, the pooled population response will look sub-linear, albeit less so than at the single cell level. Second, again like for the anesthetized vs. awake comparison, there is a discrepancy in response amplitudes \u2013 dendritic responses are ~2x stronger than the somatic responses and sub-linear summation would be more apparent as one approaches the saturation regime. Third, dendritic responses pool both mitral and tufted, while the somatic data the authors present is predominantly from tufted cells.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"State-dependent representations of mixtures by the olfactory bulb\" for further consideration by eLife. Your revised article has been reviewed by three peer reviewers, including Naoshige Uchida as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gary Westbrook (Senior Editor). The manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe authors have performed new data analysis and revised the manuscript. Overall, all reviewers thought that these changes have greatly improved the manuscript. In particular, the new metric to characterize linearity of mixture interactions -- median fractional change -- provides a more quantitative information, and the main conclusion has been strongly supported by this new method. The decoding analysis now shows that the odor information remains at least as informative in awake conditions as in anesthetized conditions, despite overall reduced magnitude of response in awake conditions. The new analysis also shows that discriminability does not necessarily correlate with the extent of linearity in mixture summation.\n\nAlthough the manuscript has greatly improved, there are some remaining issues. Specifically, Reviewer 2 and 3 have raised concerns that need to be clarified. In particular, Reviewer 3 has raised the issue regarding the dissociation between discriminability and linear mixture summation. The functional significance of linear mixture summation, or the limitation thereof, needs to be discussed more carefully, and it would be useful to include some discussion on potential causes of increased discriminability in awake conditions. In addition, Reviewer 2, raised several points about clarifying and adjusting statements in the abstract and the text of the manuscript, and analyzing the temporal dependence of decoding accuracy to the instantaneous level of non-linearity in response when comparing across different brain states. We would like you to respond to these remaining issues.\n\nReviewer #1:\n\nThe authors have addressed my previous concerns by reanalyzing the data and revising the manuscript. Importantly, the authors now provide a more convincing metric for linearity of mixture interaction using the median fractional change over the population. I am more convinced by this metric which supports that mixture interaction is more linear in awake conditions. This new analysis addresses my most important concern. A new analysis also finds that decoding or behavioral ability to detect a mixture component did not correlate with the linearity of mixture interactions in odor responses. This finding, in a sense, makes the significance of the finding of linearity in odor responses a little unclear. On the other hand, I think that the demonstration that odor decoding does not benefit from linear mixture interaction has an important message to the field as one might assume that it would be the case. It would be more useful if the authors can demonstrate this point (odor decoding does not benefit from linear mixture interaction) in a more abstract form without relying on the data -- can we take this conclusion as a general result, or does it rely on some particular features in the data. A simple modeling might help address this issue. Although such demonstration is not required, if the authors can address this in a short period of time, it would enhance the manuscript significantly, although this point is a little secondary compared to the main point (linearity of odor mixture interaction).\n\nOverall, I am satisfied by the more convincing demonstration of linearity of mixture interaction. Because sublinearity has been emphasized in the previous literature, the results presented in this manuscript provide an important result.\n\nReviewer #2:\n\nI commend the authors for re-structuring the manuscript and performing additional analyses to address the concerns raised. These changes have indeed improved the manuscript substantially.\n\nHowever, I still have concerns about the disparity in response amplitude and dynamics across the different states and how that may affect the interpretation of the results. I think these can be addressed by further clarifying and editing the statements in the abstract and rest of the manuscript before publication.\n\n1. The authors use the new metric \u2013 Fractional deviation \u2013 to compare differences in the degree of linearity between the anesthesia and awake states. While this metric normalizes deviations from linearity with the response amplitude, it does not correct for the overall difference between the means of the two response amplitude distributions \u2013 in anesthesia versus awake states. If majority of the responses during the awake state are smaller than during anesthesia, and the amount of non-linearity scales with response amplitude \u2013 irrespective of the metric chosen, there will be overall more non-linear instances in anesthesia than in the awake state. This does not imply that large amplitude responses will sum 'more' linearly in the awake state. To this reviewer, an adequate comparison to test this possibility is sub-sampling the response distribution under anesthesia and comparing differences in non-linearity between responses of similar amplitudes. Do similar amplitude responses tend to sum more, or less linearly in awake versus anaesthetized states?\n\nI think that the observation that, in response to the same stimuli, at the level of mitral and tufted cells, are kept in the linear regime of the system is insightful and would be important to document. It would enable the field to move forward. In my opinion, one way for the authors to clarify this matter is to show both the normalized and un-normalized data in the manuscript and simply state that in the awake state, responses to the same stimuli tend to be smaller in amplitude than under anesthesia, and, therefore, remain in the linear summation regime (i.e. do not get to reach high amplitudes that would sum up in a more non-linear fashion). This could be due to, for example, to stronger gain control mechanisms in the awake state, etc.\n\n2. The authors added analysis to compare the discriminability between the anesthesia and awake state. While it is reassuring that discriminability is decent even with the smaller amplitude responses in the awake state. I find that the overall interpretation of the results could potentially lead to confusion in the readers' minds. Therefore, I propose to clarify by adding a few explanatory statements, and adjusting some of the statements in the abstract.\n\nIf I understand correctly, the authors use a 0.5s pulse of odor and find that discriminability during the first second or so, is comparable (for training an testing on random selection of single odor responses and mixture responses) or better (for training on single odors, testing on mixtures) during anesthesia. In the later phase (>1.5 s), awake responses appear to do better at discriminability. I am not sure how to interpret this finding. Could this simply be related to differences in response amplitudes and temporal dynamics? If so, stating this, would be very useful to bring clarity to the message. From the examples in Figures 1,2,4 it appears that responses during anesthesia peak early and decay back to baseline within 1 second from odor OFF (so, mostly back to baseline at 1.5 s from odor ON), whereas responses during the awake state have longer latencies and peak later. Therefore, the time-course differences in responses might explain the time-course difference in discriminability. It would be important to state that these differences in response dynamics across the two states may be the basis for the time differences in discriminability.\n\nFrom a behavioral point of view, it is unclear how to interpret these time-courses, discriminability peaks much later than behaviorally relevant time-scales in the awake state (<1.5s for the odor concentration used, 1-5%), and while odor identities can be decoded in anesthesia \u2013 animals don't make decisions under KX. When comparing the discriminability between na\u00efve engaged, it would be important to clarify whether these differences arise early, at behaviorally relevant time-scales, or only appear in the later phase of the responses (>1.5 s) from odor onset and adjust the statements in the abstract accordingly. A side by side comparison would clarify this point.\n\n3. Discriminability as a function of linearity of summation. It is unclear what the authors mean by 'the time course of decoding accuracy did not correlate with the linearity of summation'. The authors do not quantify linearity as a function of time, or explicitly analyze the temporal dependence of decoding accuracy with the instantaneous level of non-linearity. To support the above-mentioned sentence, such analysis would be necessary. Additionally, while this is a nice result (that decoding accuracy is not a direct correlate of linearity), it dampens the significance of assessing differences in linearity between various brain states.\n\nReviewer #3:\n\nThe authors have made a good attempt to address concerns raised in the first review. They have reanalyzed the data and used an alternate metric- mean fractional deviation, to evaluate response linearity. Importantly their original result still holds, M/T responses are more linear in the awake state than anesthetized. There is still some issue with stating the importance of this finding. It still reads like a non-finding from a functional perspective. Linearity only seems to be helpful with respect to discrimination in a time frame (>2s) that is after the animal has already started licking. But it is also important to note that despite a reduction in discrimination in early odor responses compared to anesthetized this does present a problem at the behavioral level. Particularly for a simple task such as the one used here. The longer time frame maybe important for more difficult tasks. Also, a potentially underestimated finding is the overall reduction in correlation between M/T cells in the awake state (Figure 5B). Such a reduction in correlation decreases redundancy which may enhance coding (Padmanbhan and Urban, 2010). These points should be emphasized more.\n",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "20269833-3b4f-4322-b3a5-f2d7c6ca254f",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C1",
+      "claim": "Olfactory stimuli are first detected by a large family of olfactory receptors residing in the nasal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory stimuli are first detected by a large family of olfactory receptors residing in the nasal epithelium (Buck and Axel, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buck and Axel, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "2f8975e2-d871-46f8-80c5-7e22a2dc70bb",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C2",
+      "claim": "Each odour molecule may activate a number of olfactory receptor types due to broad ligand-receptor binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to a broad ligand-receptor binding (Araneda et al., 2000; Del M\u00e1rmol et al., 2021; Malnic et al., 1999), each odour molecule may activate a number of olfactory receptor types, leading to a combinatorial representation (Malnic et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Araneda et al., 2000; Del M\u00e1rmol et al., 2021; Malnic et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "40c38c7b-0e57-4437-9b2d-1186c100940f",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C3",
+      "claim": "Molecules may bind a common receptor, which can lead to antagonism depending on the efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, molecules may bind a common receptor, which, depending on the efficacy, can lead to antagonism (Cruz and Lowe, 2013; Kurahashi et al., 1994; Oka et al., 2004; Reddy et al., 2018; Singh et al., 2019) or enhancement (Xu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cruz and Lowe, 2013; Kurahashi et al., 1994; Oka et al., 2004; Reddy et al., 2018; Singh et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "4c7fb4d1-4c9d-440b-8724-71016549cc7e",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C4",
+      "claim": "Molecules binding a common receptor can lead to enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, molecules may bind a common receptor, which, depending on the efficacy, can lead to antagonism (Cruz and Lowe, 2013; Kurahashi et al., 1994; Oka et al., 2004; Reddy et al., 2018; Singh et al., 2019) or enhancement (Xu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xu et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "4e92ee26-8dba-44e5-968b-9fbf53ce9064",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C5",
+      "claim": "Complex pharmacological interactions at olfactory receptors are a widespread phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent large-scale studies demonstrate that this is a widespread phenomenon (Inagaki et al., 2020; Xu et al., 2020; Zak et al., 2020), which means that neural responses to mixtures often do not equal the sums of responses to the individual odours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Inagaki et al., 2020; Xu et al., 2020; Zak et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "cb99e6bc-4b7e-48bd-8b07-0697addae4bd",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C6",
+      "claim": "Neural responses to mixtures often do not equal the sums of responses to the individual odours.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent large-scale studies demonstrate that this is a widespread phenomenon (Inagaki et al., 2020; Xu et al., 2020; Zak et al., 2020), which means that neural responses to mixtures often do not equal the sums of responses to the individual odours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Inagaki et al., 2020; Xu et al., 2020; Zak et al., 2020, and logical inference from the widespread phenomenon",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "2ca935ae-ce99-4840-ae3d-67ce67518fc0",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C7",
+      "claim": "There are many forms of nonlinear summation at multiple stages of olfactory processing, including the saturation of neural responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the interactions at the periphery, there are many forms of nonlinear summation at multiple stages of olfactory processing, including the saturation of neural responses (Firestein et al., 1993; Wachowiak and Cohen, 2001) and inhibitory interactions within the olfactory bulb (OB) (Economo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Firestein et al., 1993; Wachowiak and Cohen, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "a22c8031-c59c-4794-a3f9-0229cc645803",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C8",
+      "claim": "Inhibitory interactions within the olfactory bulb contribute to nonlinear summation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the interactions at the periphery, there are many forms of nonlinear summation at multiple stages of olfactory processing, including the saturation of neural responses (Firestein et al., 1993; Wachowiak and Cohen, 2001) and inhibitory interactions within the olfactory bulb (OB) (Economo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Economo et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "e8d6a3e8-0d63-4d3f-8759-8a4448ae2a62",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C9",
+      "claim": "Widespread suppressive interactions are observed in the piriform cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Widespread suppressive interactions are also observed in downstream areas, including the piriform cortex (Penker et al., 2020; Stettler and Axel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Penker et al., 2020; Stettler and Axel, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "8407e069-b2e2-43c4-a8b8-e568ba42038f",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C10",
+      "claim": "Nonlinear summation of signals in primary sensory areas is sometimes considered information limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in primary sensory areas, it is sometimes considered information limiting (Laughlin, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Laughlin, 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "18f2d42c-1751-49c8-9f64-a76123665b7f",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C11",
+      "claim": "Nonlinear summations do not occur for all odour mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonlinear summations, or 'interactions', do not occur for all odour mixtures (Fletcher, 2011; Gupta et al., 2015; Tabor et al., 2004), but occur prevalently when the background and target activation patterns overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fletcher, 2011; Gupta et al., 2015; Tabor et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "e8982597-e558-41c2-a4d0-98ea4c450c97",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C12",
+      "claim": "Nonlinear summations occur prevalently when the background and target activation patterns overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonlinear summations, or 'interactions', do not occur for all odour mixtures (Fletcher, 2011; Gupta et al., 2015; Tabor et al., 2004), but occur prevalently when the background and target activation patterns overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fletcher, 2011; Gupta et al., 2015; Tabor et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "7f68825b-723b-4cce-ad4a-c24512e77f17",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C13",
+      "claim": "Nonlinear summation happens when a mixture contains many components.",
+      "claim_type": "EXPLICIT",
+      "source": "This happens when a mixture contains many components (Mathis et al., 2016), as well as when the background odours are structurally related to the target odour (Cruz and Lowe, 2013; Fletcher, 2011; Jinks and Laing, 1999; Kay et al., 2003; Mathis et al., 2016; Tabor et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mathis et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "8e5c1feb-fa70-4f29-8605-75df01856ddc",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C14",
+      "claim": "Nonlinear summation happens when the background odours are structurally related to the target odour.",
+      "claim_type": "EXPLICIT",
+      "source": "This happens when a mixture contains many components (Mathis et al., 2016), as well as when the background odours are structurally related to the target odour (Cruz and Lowe, 2013; Fletcher, 2011; Jinks and Laing, 1999; Kay et al., 2003; Mathis et al., 2016; Tabor et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cruz and Lowe, 2013; Fletcher, 2011; Jinks and Laing, 1999; Kay et al., 2003; Mathis et al., 2016; Tabor et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "7cc62aea-6988-447f-bc8e-c6c130fae6cb",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C15",
+      "claim": "Antagonism can reduce saturation-related loss of information.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonlinear summation poses a difficulty because it may distort a pattern of interest brought by non-uniform addition of unpredictable background patterns, although more recent studies suggest beneficial effects of antagonism, for example, by reducing saturation-related loss of information (Reddy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reddy et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "941c8288-d1f2-452c-9d03-1d5b8379f9f8",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C16",
+      "claim": "The olfactory system may not decompose mixture representations into component parts, but may solve the task by learning task-specific boundaries instead.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to this difficulty, some studies have suggested that the olfactory system may not decompose mixture representations into component parts, but may solve the task by learning task-specific boundaries instead (Mathis et al., 2016; Wilson and Stevenson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mathis et al., 2016; Wilson and Stevenson, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "105211ac-3cd6-4a7c-b1eb-4472d769cfd0",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C17",
+      "claim": "Methyl butyrate (MB) responses overlap the most with the ethyl butyrate (EB) response patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of glomerular activity patterns revealed that methyl butyrate (MB) responses overlap the most with the EB response patterns, followed by closely related esters (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from glomerular activity pattern analysis shown in Figure 1C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "b982cf85-24fa-4fa8-b531-36fd5ae7b72c",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C18",
+      "claim": "The olfactometer is capable of presenting stable concentrations of odours for mixtures, with ionisation levels summing linearly when two odours are mixed.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a photoionisation detector to ensure that, when two odours are mixed, ionisation levels sum linearly (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by photoionisation detector measurements shown in Figure 2A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "d8aac0aa-d214-4de6-bbe8-f79150e3f14a",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C19",
+      "claim": "A large proportion of M/T cells exhibited nonlinear summation (39.0% of M/T cells showed a deviation from linearity greater than 2).",
+      "claim_type": "EXPLICIT",
+      "source": "As reported before, a large proportion of M/T cells exhibited nonlinear summation (39.0% of M/T cells showed a deviation from linearity greater than 2; 71/182 regions of interest [ROIs], seven fields of view, four mice; see Materials and methods) with a large fraction showing sublinear summation (35.7%, 65/182 ROIs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative data from imaging experiments: 71/182 ROIs, seven fields of view, four mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "f1555c6f-ce9e-4a09-bc79-e26057bcec6f",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C20",
+      "claim": "A large fraction of M/T cells showed sublinear summation (35.7%, 65/182 ROIs).",
+      "claim_type": "EXPLICIT",
+      "source": "As reported before, a large proportion of M/T cells exhibited nonlinear summation (39.0% of M/T cells showed a deviation from linearity greater than 2; 71/182 regions of interest [ROIs], seven fields of view, four mice; see Materials and methods) with a large fraction showing sublinear summation (35.7%, 65/182 ROIs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative data from imaging experiments: 65/182 ROIs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "50931e2a-4e25-467a-95eb-25ee63be0905",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C21",
+      "claim": "Mice learned to discriminate EB against other single odours, reaching an accuracy of 80% within 200 trials on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The mice learned to perform this task well, reaching an accuracy of 80% within 200 trials on average (Figure 3B and C; number of trials to reach 80% accuracy = 194.3 \u00b1 21.9; n = 7 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data from 7 mice shown in Figure 3B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "81048c98-bb1b-4d9f-8afc-3611b9427f97",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C22",
+      "claim": "Mice performed the mixture task at a high accuracy from the beginning (90.2% \u00b1 1.3% of trials with correct responses in the first session).",
+      "claim_type": "EXPLICIT",
+      "source": "The mice performed the mixture task at a high accuracy from the beginning (90.2% \u00b1 1.3% of trials with correct responses in the first session; n = 7 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data from 7 mice in the first session",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "9dc221f2-13ed-46e3-8b4d-6b4876d7e541",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C23",
+      "claim": "Mice tended to lick more indiscriminately on MB-containing trials regardless of the presence of EB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mistakes they made were odour-specific, in that they tended to lick more indiscriminately on MB-containing trials regardless of the presence of EB (Figure 3D and E; mean lick preference index for MB trials = 0.74 \u00b1 0.04 vs. 0.93 for five other background odours, p = 0.0035, one-way ANOVA; n = 7 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data showing mean lick preference index for MB trials = 0.74 \u00b1 0.04 vs. 0.93 for five other background odours, p = 0.0035, one-way ANOVA; n = 7 mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "570d7b18-f26f-4c7a-a0e9-01824cb69d58",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C24",
+      "claim": "With training, the performance on MB trials became accurate, demonstrating that mice can learn to accurately detect the target odour in binary mixtures even when the background odour is similar.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with training, the performance on MB trials, too, became accurate, demonstrating that mice can learn to accurately detect the target odour in binary mixtures even when the background odour is similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing improvement in performance on MB trials with training",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "ef006239-c886-4a0c-8bcc-97eb89953989",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C25",
+      "claim": "M/T cells in behaving mice tended to sum mixture responses more linearly than when the mice were anaesthetised.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that the M/T cells in behaving mice tended to sum mixture responses more linearly than when the mice were anaesthetised (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data comparing behaving and anaesthetised conditions shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "9f139ecc-5e62-484d-83aa-81306f121ebc",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C26",
+      "claim": "In the anaesthetised case, the majority of the OB output neurons exhibit sublinear summation (median fractional deviation = \u20130.39).",
+      "claim_type": "EXPLICIT",
+      "source": "In the anaesthetised case, a steep slope in the cumulative histogram occurs at a negative value (median fractional deviation = \u20130.39), indicating that the majority of the OB output neurons exhibit sublinear summation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative analysis of fractional deviation data from anaesthetised mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "1fc29520-e9dd-4fcf-b3d2-9607c42c595b",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C27",
+      "claim": "M/T cells from behaving mice showed a broader distribution of fractional deviation centred around 0 (median fractional deviation = \u20130.12).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, M/T cells from behaving mice showed a broader distribution centred around 0 (median fractional deviation = \u20130.12; P = 3.83 \u00d7 10\u201310, two-sample Kolmogorov\u2013Smirnov test comparing the behaving vs. anaesthetised data; n = 202 ROIs and 103 ROIs, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative analysis of fractional deviation data from behaving mice, with statistical comparison to anaesthetised data (P = 3.83 \u00d7 10\u201310, two-sample Kolmogorov\u2013Smirnov test; n = 202 ROIs and 103 ROIs)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "4eb4fd87-8204-4627-aa9b-f867822c18fb",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C28",
+      "claim": "The difference in linearity of summation between behaving and anaesthetised mice was most striking in the first second after the odour onset ('early phase').",
+      "claim_type": "EXPLICIT",
+      "source": "Using this index to compare the two conditions, we found that the difference was most striking in the first second after the odour onset ('early phase'; Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time course analysis shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "74e93b48-a310-4daa-998a-b2a18825247a",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C29",
+      "claim": "Responses in the somata are more linear in the early phase compared to the apical dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we observed that the responses in the somata are more linear in the early phase compared to the apical dendrites (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data comparing somata and apical dendrites shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "9f500379-4472-41ad-b3e4-23d1da25c40c",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C30",
+      "claim": "Dampened responses in the early phase of somatic responses may underlie the reduced mixture suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations together may indicate that dampened responses in the early phase of somatic responses may underlie the reduced mixture suppression, although some contribution may come from more decorrelated responses at the somata (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from observations of dampened responses and reduced suppression, with reference to Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "5009999b-8ca5-4286-98b1-af40e29a2bba",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C31",
+      "claim": "The property of mixture summation is more linear in the awake, behaving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results indicate that the property of mixture summation is more linear in the awake, behaving mice, and that linearisation is not imprinted permanently as a result of learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of imaging data from awake, behaving mice and anaesthetised mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "4ee74759-a5f3-46e3-960d-58f96678b306",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C32",
+      "claim": "Linearisation is not imprinted permanently as a result of learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results indicate that the property of mixture summation is more linear in the awake, behaving mice, and that linearisation is not imprinted permanently as a result of learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of trained and anaesthetised conditions showing that linearity changes with state",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "b5f32de7-3f86-48e2-95dd-1f72a6f6746c",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C33",
+      "claim": "M/T cell responses are significantly smaller and more variable in awake, behaving mice compared to anaesthetised mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While the above result demonstrates that mixtures sum more linearly in awake, behaving mice, M/T cell responses are also significantly smaller and more variable in this condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of trial-by-trial response similarity showing lower within-class correlation in behaving mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "eb455306-d28f-4c32-87bc-a18a2737f9a9",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C34",
+      "claim": "In the anaesthetised mice, the M/T cell response patterns are highly correlated, both within class and across classes.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that, in the anaesthetised mice, the M/T cell response patterns are highly correlated, both within class (comparison between trials with EB) and across classes (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 5A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "35e07663-5e24-4b8d-9dc7-6ad403a18e57",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C35",
+      "claim": "In the awake, behaving mice, responses were less consistent, indicated by the lower within-class correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the awake, behaving mice, as expected, responses were less consistent, indicated by the lower within-class correlation (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 5A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "d5f407e6-aabd-4d32-86e9-4b9919f6712b",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C36",
+      "claim": "Across-class patterns were substantially less correlated in behaving mice, suggesting S+ responses may be more discriminable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because across-class patterns were substantially less correlated (Figure 5A and B), S+ responses may be more discriminable in the behaving mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from correlation analysis showing lower across-class correlation in behaving mice, shown in Figure 5A and B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "f50b58f4-ae06-48b5-8eda-d866e6fbb68e",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C37",
+      "claim": "M/T cells from anaesthetised mice showed better discriminability initially, but later, M/T cells in the behaving mice performed as well as the anaesthetised mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicated that M/T cells from anaesthetised mice showed better discriminability initially, but later, M/T cells in the behaving mice performed as well as the anaesthetised mice (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by discriminability index analysis over time shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "d9fc541d-83f8-45c2-9253-a1391550f3cb",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C38",
+      "claim": "M/T cells from the two conditions (behaving and anaesthetised) performed similarly for the first 1 s when using SVMs to discriminate S+ vs S- responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This time, M/T cells from the two conditions performed similarly for the first 1 s, performing above chance soon after the odour onset (earliest time where accuracy is significantly above 0.5 = 0.67 s for the behaving case, and 1.12 s for anaesthetised data; t-test at a significance level of 0.05; n = 13 fields of view, six mice for behaving case; 8 fields of view, four mice for the anaesthetised case; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SVM decoding analysis shown in Figure 5D, with statistical testing (t-test at significance level of 0.05; n = 13 fields of view, six mice for behaving case; 8 fields of view, four mice for anaesthetised case)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "3958af91-9695-44c1-81bf-35cc44df2a90",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C39",
+      "claim": "The data from behaving mice outperformed the anaesthetised case in the later phase (median accuracy for 2\u20133 s after odour onset = 0.58 vs. 0.70 for anaesthetised vs. behaving mice, respectively; p = 0.027).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the data from behaving mice outperformed the anaesthetised case in the later phase (median accuracy for 2\u20133 s after odour onset = 0.58 vs. 0.70 for anaesthetised vs. behaving mice, respectively; p = 0.027, Mann\u2013Whitney U test for equal medians).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SVM decoding analysis with statistical testing (p = 0.027, Mann\u2013Whitney U test for equal medians)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "8313135f-26b6-4823-b618-a1ef97bb2d4b",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C40",
+      "claim": "Over time, mixture responses come to resemble the target component odour pattern more in the awake, behaving mice than in the anaesthetised mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This may suggest that, over time, mixture responses come to resemble the target component odour pattern more in the awake, behaving mice than in the anaesthetised mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from SVM analysis where training on single odours and testing on mixtures showed better performance in behaving mice in the late phase",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "93c4b27e-b879-4279-bb69-d2be7cea2225",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C41",
+      "claim": "The time course of decoder accuracy did not strictly depend on the linearity of mixture summation.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, the time course of decoder accuracy did not strictly depend on the linearity of mixture summation (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of decoder accuracy and linearity shown in Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "fd33b5a4-cbf7-4ca9-aa12-1144dfca1a4f",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C42",
+      "claim": "Despite the substantial differences in the amplitudes and variability of responses, M/T cells in behaving mice are able to encode the presence of the target odour well.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the result suggests that, despite the substantial differences in the amplitudes and variability of responses, M/T cells in behaving mice are able to encode the presence of the target odour well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from SVM decoding results showing good discriminability in behaving mice despite smaller and more variable responses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "fef04762-bfd7-482c-a050-e31b71c93cf5",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C43",
+      "claim": "EB and MB mixtures are represented equally linearly in na\u00efve but awake, head-fixed mice regardless of engagement level.",
+      "claim_type": "EXPLICIT",
+      "source": "In all awake conditions, we found the EB and MB responses to sum equally linearly (Figure 6\u2014figure supplement 1), indicating that the linearity of summation does not depend on the behavioural states or learning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data from na\u00efve engaged and disengaged mice shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "37a2fcff-a0b3-4557-b6fd-276c6dfbc8b2",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C44",
+      "claim": "The linearity of summation does not depend on the behavioural states or learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In all awake conditions, we found the EB and MB responses to sum equally linearly (Figure 6\u2014figure supplement 1), indicating that the linearity of summation does not depend on the behavioural states or learning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of linearity across trained, na\u00efve engaged, and na\u00efve disengaged conditions shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "77831ea0-3378-4167-a250-30a6e0af1b3a",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C45",
+      "claim": "The ability to analyse mixtures in terms of the constituents was particularly poor for the disengaged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the performance of SVMs on these datasets showed a state-dependence. While the general ability to discriminate S+ vs. S- odours was comparable across the states, the ability to analyse mixtures in terms of the constituents \u2013 SVMs trained on single odours and tested on mixture patterns \u2013 was particularly poor for the disengaged mice (Figure 6C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SVM decoding analysis comparing trained, na\u00efve engaged, and na\u00efve disengaged mice shown in Figure 6C-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "a517494d-e370-4ab4-899d-071139798af2",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C46",
+      "claim": "The ability to correctly decode the presence of an odour does not strictly correlate with the linearity of mixture summation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the linearity of summation was comparable across the three groups (Figure 6\u2014figure supplement 1), this, again, suggests that the ability to correctly decode the presence of an odour does not strictly correlate with the linearity of mixture summation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of linearity (Figure 6\u2014figure supplement 1) and decoder performance (Figure 6C-F) across behavioral states",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "a0c584e7-26de-4cb6-b6b6-f58579c2f7de",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C47",
+      "claim": "In all cases, the decoder performed most accurately in the late phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the decoder performed most accurately in the late phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SVM decoding analysis showing peak accuracy in late phase across all conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "76f157b1-d596-4c24-85ec-96f77d0316ce",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C48",
+      "claim": "When the data from the anaesthetised mice was used, normalising sublinearity was particularly detrimental around 2 s after the odour onset.",
+      "claim_type": "EXPLICIT",
+      "source": "When the data from the anaesthetised mice was used, normalising sublinearity was particularly detrimental around 2 s after the odour onset (Figure 7C), qualitatively reproducing the transient decrease in the accuracy seen with the observed mixture responses (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "f5b0fce0-39de-433e-b551-a271cb451bb6",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C49",
+      "claim": "With the data from the behaving mice, normalising sublinearity did not have as significant an effect on the mixture discriminability, even in the late stage when sublinear summation becomes more widespread.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, with the data from the behaving mice, normalising sublinearity did not have as significant an effect on the mixture discriminability, even in the late stage when sublinear summation becomes more widespread (Figure 7D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 7D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "30f4e50a-5ff9-4975-a30c-63cae6d3ab8f",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C50",
+      "claim": "The functional consequence of nonlinear summation may depend on specific circumstances, for example, on how separable, or decorrelated, the activity patterns are.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the functional consequence of nonlinear summation may depend on specific circumstances, for example, on how separable, or decorrelated, the activity patterns are.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from simulation results showing different effects of sublinearity on anaesthetised vs. behaving data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "717bd37a-7546-4ed6-8ab2-c643e87b64bb",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C51",
+      "claim": "Mixture responses in the OB are highly state-dependent and evolve over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our result indicates that mixture responses in the OB are highly state-dependent and evolve over time (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of mixture responses across different behavioral states and time points shown in Figure 6F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "4f68c0e3-cc94-4c24-936a-b98bd91a2a35",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C52",
+      "claim": "The signal summation in the primary olfactory area of the mouse is significantly more linear in awake mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that the signal summation in the primary olfactory area of the mouse is significantly more linear in awake mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by imaging data comparing awake and anaesthetised mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "9d28ee84-45c3-452b-a930-714585f86e78",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C53",
+      "claim": "Many previous studies reported that suppressive mixture interactions are widespread in the central nervous system, based on anaesthetised preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "This is notable because many previous studies reported that suppressive mixture interactions are widespread in the central nervous system, based on anaesthetised preparations (Bell et al., 1987; Cruz and Lowe, 2013; Penker et al., 2020; Stettler and Axel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bell et al., 1987; Cruz and Lowe, 2013; Penker et al., 2020; Stettler and Axel, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "55fbe011-015d-497f-851a-9c989623ca52",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C54",
+      "claim": "The ability to discriminate binary mixture responses does not correlate strictly with linearity in summation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our analysis also indicates that the ability to discriminate binary mixture responses does not correlate strictly with linearity in summation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis showing decoder performance peaks when mixture responses were most sublinear in behaving mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "02408246-59a4-4c0c-9ca9-553572470e40",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C55",
+      "claim": "The behavioural improvement was not accompanied by more linear summation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the behavioural improvement was not accompanied by more linear summation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of linearity across trained and na\u00efve conditions showing no difference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "e6085d01-e09e-43f8-8f01-63645848199d",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C56",
+      "claim": "The time course of decoder accuracy does not follow the linearity of summation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the time course of decoder accuracy does not follow the linearity of summation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of decoder accuracy time course and linearity time course",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "a3009b6c-5b4c-4331-81ca-3a9d07d4dbeb",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C57",
+      "claim": "In the data from behaving mice, the decoder performance peaked when mixture responses were most sublinear.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the data from behaving mice, the decoder performance peaked when mixture responses were most sublinear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of decoder performance and linearity over time in behaving mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "32ce0931-5c52-44f0-a51d-b5f789da95ed",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C58",
+      "claim": "A sublinear mixture summation due to saturating influences limits the discriminability of mixture responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simple simulation indicates that, generally, a sublinear mixture summation due to saturating influences limits the discriminability of mixture responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results showing reduced discriminability with normalising sublinearity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "7e67729b-388e-48cf-a123-f7423bea3286",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C59",
+      "claim": "Dampened responses in awake animals bring some advantage by maintaining the mixture responses in the linear range.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, dampened responses in awake animals bring some advantage by maintaining the mixture responses in the linear range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observation of more linear summation in awake mice and simulation showing benefits of linearity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "b0918dad-2da9-4011-89c9-938799baed4e",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C60",
+      "claim": "In the behaving mice, even when the responses became larger at a later phase, the saturating influence was less detrimental to discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the behaving mice, even when the responses became larger at a later phase, the saturating influence was less detrimental to discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results showing less impact of sublinearity on behaving mice data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "9d2d3d95-ddb4-42cb-bcdf-9d53175e4481",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C61",
+      "claim": "Decorrelated response patterns may play a crucial role in enhancing classifier or behavioural performances.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, decorrelated response patterns may play a more crucial role as this is known to enhance classifier or behavioural performances (Bhattacharjee et al., 2019; Friedrich and Wiechert, 2014; Gschwend et al., 2015; Padmanabhan and Urban, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bhattacharjee et al., 2019; Friedrich and Wiechert, 2014; Gschwend et al., 2015; Padmanabhan and Urban, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "ae91b4b5-6293-42f8-91b5-6b5233f17d78",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C62",
+      "claim": "Animals make accurate decisions within 1 s (771 \u00b1 97 ms) of stimulus onset in the behavioral task described in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "While the behavioural task described in this study is simple and animals make accurate decisions within 1 s (771 \u00b1 97 ms) of stimulus onset, the slower mechanisms described here may be important when larger and more reliable responses are required for accurate decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing decision times of 771 \u00b1 97 ms",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "22ec1dd6-b0a4-4649-b354-5c2d756fcdf6",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C63",
+      "claim": "The ability to accurately analyse mixtures based on the knowledge of component is hypothesised to involve the piriform cortex, through learned representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, the ability to accurately analyse, or discriminate between, mixtures based on the knowledge of component is hypothesised to involve the piriform cortex, through learned representations (Chapuis and Wilson, 2011; Grabska-Barwi\u0144ska et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chapuis and Wilson, 2011; Grabska-Barwi\u0144ska et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "0799475e-296a-4642-8cbd-7b11fc1602b6",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C64",
+      "claim": "For tufted cells, the relevant sources of feedback could be other brain regions, such as the anterior olfactory nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "For tufted cells, however, the relevant sources of feedback could be other brain regions, such as the anterior olfactory nucleus (Chae et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chae et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "b5344cc5-da4d-4d33-aabe-25ae09373c32",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C65",
+      "claim": "Mixtures of odours often have qualities that are different from those of the individual components.",
+      "claim_type": "EXPLICIT",
+      "source": "Mixtures of odours often have qualities that are different from those of the individual components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about olfactory mixture perception",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "2bd70c83-d576-4671-a0e7-96abd2110158",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C66",
+      "claim": "For untrained subjects, olfactory mixtures that contain about 30 components tend to smell alike.",
+      "claim_type": "EXPLICIT",
+      "source": "For untrained subjects, olfactory mixtures that contain about 30 components tend to smell alike (Weiss et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weiss et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "f2ba7608-11e5-47a7-98c7-6684c5926e7b",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C67",
+      "claim": "Highly trained people like perfumers can only accurately identify individual components if unfamiliar mixtures contained no more than five components.",
+      "claim_type": "EXPLICIT",
+      "source": "Even highly trained people like perfumers can only accurately identify individual components if unfamiliar mixtures contained no more than five components (Poupon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Poupon et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "34d838b0-903b-40cb-8882-8550b42c0978",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C68",
+      "claim": "In non-expert humans and rodents, when the task is to look for a particular aroma in the mixture, the tendency is to falsely report the presence of the target odour in target-odour detection tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in non-expert humans and rodents alike, when the task is to look for a particular aroma in the mixture, the tendency is to falsely report the presence of the target odour in target-odour detection tasks (Laing and Glemarec, 1992; Rokni et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Laing and Glemarec, 1992; Rokni et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "425ab856-08e8-4471-9429-2a26de58552a",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C69",
+      "claim": "Extensive training for specific odours can improve the ability to detect the target odour.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, an extensive training for specific odours can improve the ability to detect the target odour, as seen in the case for sommeliers who routinely analyse key components in wines, which can contain several hundred component mixtures (Ilc et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ilc et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "f590c818-57a0-4528-a38f-06e3c4bf9fe6",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C70",
+      "claim": "Training in specific odours seems to be key to improving on mixture analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while mixture perception is highly context specific (Rokni and Murthy, 2014), training in specific odours seems to be key to improving on mixture analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from examples of trained individuals (perfumers, sommeliers) performing better, with citation to Rokni and Murthy, 2014",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "0c152154-8859-4ff2-9f18-bf5b9e758c39",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C71",
+      "claim": "With more complex mixtures, mechanisms within the OB may reach a limit, and also is unlikely to be the only mechanism that is used to solve the task.",
+      "claim_type": "EXPLICIT",
+      "source": "With more complex mixtures, mechanisms within the OB may reach a limit, and also is unlikely to be the only mechanism that is used to solve the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on the complexity of mixture processing",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "290913b6-c885-4e38-a000-83c1a39582d5",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C72",
+      "claim": "Mixture summation is more linear in the early phase of evoked responses in awake, head-fixed mice performing an odour detection task, due to dampened responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we investigate how the olfactory system deals with binary mixtures of odours under different brain states by two-photon imaging of olfactory bulb (OB) output neurons. Unlike previous studies using anaesthetised animals, we found that mixture summation is more linear in the early phase of evoked responses in awake, head-fixed mice performing an odour detection task, due to dampened responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by imaging data comparing awake and anaesthetised mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "5b6a241c-ef40-4b75-aa34-9a8e6cc4b1ce",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C73",
+      "claim": "Despite smaller and more variable responses, decoding analyses indicated that the data from behaving mice was well discriminable.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite smaller and more variable responses, decoding analyses indicated that the data from behaving mice was well discriminable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SVM decoding analysis on data from behaving mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "f81ab809-9e9e-48cc-b35a-68bbcd6f819b",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C74",
+      "claim": "Learning to accurately perform the mixture detection task is not accompanied by more linear mixture summation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a comparison with na\u00efve mice indicated that learning to accurately perform the mixture detection task is not accompanied by more linear mixture summation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of linearity between trained and na\u00efve mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "6d038118-ca64-48f6-8a35-83da35ed38a5",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C75",
+      "claim": "Saturating sublinearity tends to degrade the discriminability, but the extent of the impairment may depend on other factors, including pattern decorrelation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using a simulation, we demonstrate that, while saturating sublinearity tends to degrade the discriminability, the extent of the impairment may depend on other factors, including pattern decorrelation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results showing different effects of sublinearity depending on conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "410084b9-767c-403a-ad0e-87c9caa123d8",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C76",
+      "claim": "The mixture representation in the primary olfactory area is state-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results demonstrate that the mixture representation in the primary olfactory area is state-dependent, but the analytical perception may not strictly correlate with linearity in summation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of mixture representations across different behavioral states",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "75ca5142-685f-4f34-b144-b6c3bba60dc6",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C77",
+      "claim": "The analytical perception may not strictly correlate with linearity in summation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results demonstrate that the mixture representation in the primary olfactory area is state-dependent, but the analytical perception may not strictly correlate with linearity in summation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis showing decoder performance does not follow linearity of summation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "aee59efe-d2f7-4bb6-80fd-bef9ce88ac88",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C78",
+      "claim": "Tbx21Cre::Ai95D mice express the calcium indicator GCaMP6f in M/T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a two-photon microscope, we imaged from the glomerular layer of the OB in Tbx21Cre::Ai95D mice, which express the calcium indicator GCaMP6f (Dana et al., 2019) in M/T cells (Haddad et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dana et al., 2019 and Haddad et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "ce79f896-2550-40b4-876e-278d41d7871e",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C79",
+      "claim": "The masking index measures the amount of overlap in response patterns between the target odour and background odours and correlates well with behavioural performances.",
+      "claim_type": "EXPLICIT",
+      "source": "According to Rokni et al., the masking index, which measures the amount of overlap in response patterns between the target odour and background odours, correlates well with behavioural performances (Rokni et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rokni et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "7a829817-1180-4ac2-a8b7-36906fd696e6",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "claim_id": "C80",
+      "claim": "Olfactory figure-ground segregation is most difficult when the target and background odours evoke overlapping activity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory figure-ground segregation is most difficult when the target and background odours evoke overlapping activity patterns (Rokni et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rokni et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior literature on olfactory processing, establishing that odor molecules activate multiple receptor types through broad ligand-receptor binding, leading to nonlinear summation at multiple processing stages including receptor antagonism/enhancement, saturation, and inhibitory interactions in the olfactory bulb and piriform cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C16 are all citation-based claims from prior literature that establish the background context. These are appropriately cited and represent established knowledge in the field. The authors correctly summarize prior work showing widespread nonlinear summation in olfactory processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "3b659b1c-d643-4705-8c4e-98e6ed4b295e",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using two-photon imaging of GCaMP6f-expressing M/T cells in Tbx21Cre::Ai95D mice under anesthesia, the authors characterized glomerular activity patterns and found that methyl butyrate (MB) responses overlap most with ethyl butyrate (EB) response patterns, with masking index correlating with behavioral performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C78-C80 describe the initial characterization experiments. The use of Tbx21Cre::Ai95D mice is well-established (C78), and the masking index analysis (C17, C79, C80) is supported by Figure 1C-E showing quantitative overlap measurements from 4 fields of view in 4 mice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "843add67-a689-4db8-8fae-e33f92567fed",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The olfactometer was validated to deliver stable odor concentrations with linear summation of ionization levels, and imaging of M/T cells under anesthesia revealed that 39.0% exhibited nonlinear summation (71/182 ROIs), with 35.7% showing sublinear summation (65/182 ROIs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 describe methodological validation and baseline measurements. The photoionization detector validation (C18, Figure 2A-C) demonstrates proper olfactometer function. The quantification of nonlinear summation (C19-C20) is supported by specific numbers from 182 ROIs across 7 fields of view from 4 mice, providing adequate sample size.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "b0783160-2766-4894-9ad2-fbf8951684af",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mice learned to discriminate EB from other single odors within ~200 trials (80% accuracy), then performed mixture detection at 90.2\u00b11.3% accuracy initially but made odor-specific errors on MB-containing trials (lick preference 0.74\u00b10.04 vs 0.93 for other odors, p=0.0035). With training, performance on MB trials improved, demonstrating mice can learn accurate target detection in binary mixtures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 describe behavioral training results with appropriate statistics. Sample size (n=7 mice) is adequate for behavioral experiments. Statistical testing (one-way ANOVA, p=0.0035) supports the odor-specific difficulty with MB. The progression from initial errors to accurate performance is clearly documented in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "7af2558f-6cd4-49c9-bb60-1793b52f5cc0",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "M/T cells in behaving mice summed mixture responses more linearly than in anesthetized mice, particularly in the early phase (first 1s). Anesthetized mice showed median fractional deviation of -0.39 (sublinear), while behaving mice showed -0.12 (P=3.83\u00d710\u207b\u00b9\u2070). Somatic responses were more linear than apical dendrites in early phase, suggesting dampened early responses underlie reduced suppression. Linearization was not permanently imprinted by learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 present the core finding comparing awake vs anesthetized conditions. Statistical comparison (Kolmogorov-Smirnov test, P=3.83\u00d710\u207b\u00b9\u2070) with adequate sample sizes (202 ROIs behaving, 103 ROIs anesthetized) strongly supports the difference. The temporal analysis (C28, Figure 4G) and soma vs dendrite comparison (C29, Figure 4-supplement 1) provide mechanistic insight. The claim about learning (C32) is supported by comparing trained and anesthetized conditions from the same mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "8bcdbd58-2679-40cd-b633-550d9f04d71d",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "M/T cell responses in behaving mice were smaller and more variable than in anesthetized mice, with lower within-class correlation. However, across-class patterns were substantially less correlated in behaving mice, suggesting better discriminability. Discriminability index analysis showed anesthetized mice performed better initially, but behaving mice performed equally well later.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 characterize response variability and discriminability. The correlation analysis (Figure 5A-B) quantitatively supports reduced within-class and across-class correlations. The discriminability index (C37, Figure 5C) shows temporal evolution with appropriate analysis methods. The interpretation that lower across-class correlation improves discriminability (C36) is reasonable but somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "277d69ef-58fc-4519-90f0-8122ed90bced",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SVM decoding showed M/T cells from behaving and anesthetized mice performed similarly in the first 1s (above chance at 0.67s vs 1.12s), but behaving mice outperformed in the late phase (median accuracy 0.70 vs 0.58, p=0.027). When trained on single odors and tested on mixtures, behaving mice again performed better late (0.64 vs 0.55, p=0.065 n.s.). Decoder accuracy did not strictly depend on linearity of summation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 present SVM decoding results with appropriate statistical testing (Mann-Whitney U test). Sample sizes are adequate (13 fields of view/6 mice behaving; 8 fields of view/4 mice anesthetized). The key finding that decoder performance doesn't correlate with linearity (C41, Figure 6-supplement 2) is well-supported and represents an important insight. The p=0.065 for C40 is marginally non-significant but the trend is noted appropriately.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "7aa04c7f-d301-4c9b-babd-d5feace59925",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In na\u00efve awake mice (engaged and disengaged), EB and MB responses summed equally linearly regardless of engagement level, indicating linearity doesn't depend on behavioral state or learning. However, SVM performance showed state-dependence: ability to analyze mixtures based on single-odor training was particularly poor for disengaged mice. Decoder performed most accurately in late phase across all conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 address the role of learning and engagement. The finding that linearity is similar across conditions (C43-C44, Figure 6-supplement 1) with adequate sample sizes (17 sessions/6 mice engaged; 14 sessions/4 mice disengaged) supports the conclusion that learning doesn't affect linearity. The state-dependent decoder performance (C45, Figure 6C-F) demonstrates engagement matters for mixture analysis despite similar linearity, reinforcing the decoupling of linearity and discriminability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "8fd47c45-bb12-42cb-be80-870078b256c1",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Simulation of normalizing sublinearity showed it was particularly detrimental to discriminability in anesthetized data around 2s post-onset, but had less effect on behaving mice data even in late stages when sublinearity was widespread. This suggests functional consequences of nonlinear summation depend on circumstances like pattern decorrelation, and that dampened responses in awake animals maintain responses in linear range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50, C58-C60, C75 describe simulation results (Figure 7). The simulation approach is clearly described in methods and appropriately tests the isolated effect of sublinearity. The differential impact on anesthetized vs behaving data (Figure 7C-E) supports the interpretation that decorrelation matters. However, the simulation makes simplifying assumptions (adding Gaussian noise, using a specific normalization function) that may not fully capture biological complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "7a4f419f-1e11-4ae8-8a91-7ed6ee06c110",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates that mixture summation is more linear in awake mice due to dampened responses, and that mixture representations in the olfactory bulb are highly state-dependent and evolve over time. Despite smaller and more variable responses, behaving mice showed good discriminability. Learning to perform the task was not accompanied by more linear summation, and analytical perception may not strictly correlate with linearity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C72-C74, C76-C77 represent the main conclusions synthesizing multiple results. These are well-supported by the collective evidence from imaging experiments comparing awake vs anesthetized (C25-C27), trained vs na\u00efve (C43-C44), and decoding analyses (C38-C42, C54-C57). The conclusions appropriately acknowledge the complexity and avoid overstating causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "0b3f2ad8-d678-427a-beab-3e1182748b14",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The finding that signal summation is more linear in awake mice contrasts with many previous anesthetized studies showing widespread suppressive interactions. Analysis indicates discriminability doesn't correlate strictly with linearity: behavioral improvement wasn't accompanied by more linear summation, decoder accuracy time course doesn't follow linearity, and decoder performance peaked when responses were most sublinear in behaving mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 contextualize findings relative to prior work and establish the key insight about decoupling of linearity and discriminability. The contrast with prior literature (C53) is appropriately cited. The evidence for decoupling (C54-C57) comes from multiple complementary analyses (training effects, temporal dynamics, correlation with linearity) making this conclusion robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "2bbb48c1-edf9-4496-b414-2ffe2771e39e",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript discusses that decorrelated response patterns may play a crucial role in enhancing classifier performance, that animals make accurate decisions within ~771ms, and that the piriform cortex (or anterior olfactory nucleus for tufted cells) may be involved in learned mixture representations through feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 are appropriately cited interpretations and contextualizations. C61 cites relevant literature on decorrelation. C62 provides a specific behavioral measurement. C63-C64 discuss potential mechanisms with appropriate citations, though these remain hypothetical and would require further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    },
+    {
+      "id": "0f5f2a22-a6a6-4550-a22d-c015975e395b",
+      "content_id": "8c0e1a5c-4075-4efc-a0ee-a628c88ad02d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The discussion reviews literature on mixture perception showing that mixtures have different qualities than components, untrained subjects struggle with ~30-component mixtures, even perfumers can only identify ~5 components in unfamiliar mixtures, and that extensive training improves target detection ability. The authors speculate that OB mechanisms may reach limits with complex mixtures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C71 provide discussion context from prior literature with appropriate citations (Weiss et al. 2012, Poupon et al. 2018, Laing and Glemarec 1992, Rokni et al. 2014, Ilc et al. 2016). C71 is appropriately speculative about limitations. These claims contextualize the binary mixture results within broader mixture perception literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:14.495621Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "20269833-3b4f-4322-b3a5-f2d7c6ca254f",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "2f8975e2-d871-46f8-80c5-7e22a2dc70bb",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "40c38c7b-0e57-4437-9b2d-1186c100940f",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "4c7fb4d1-4c9d-440b-8724-71016549cc7e",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "4e92ee26-8dba-44e5-968b-9fbf53ce9064",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "cb99e6bc-4b7e-48bd-8b07-0697addae4bd",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "2ca935ae-ce99-4840-ae3d-67ce67518fc0",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "a22c8031-c59c-4794-a3f9-0229cc645803",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "e8d6a3e8-0d63-4d3f-8759-8a4448ae2a62",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "8407e069-b2e2-43c4-a8b8-e568ba42038f",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "18f2d42c-1751-49c8-9f64-a76123665b7f",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "e8982597-e558-41c2-a4d0-98ea4c450c97",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "7f68825b-723b-4cce-ad4a-c24512e77f17",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "8e5c1feb-fa70-4f29-8605-75df01856ddc",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "7cc62aea-6988-447f-bc8e-c6c130fae6cb",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "941c8288-d1f2-452c-9d03-1d5b8379f9f8",
+      "result_id": "af4b992b-5790-45b0-b99f-6de8b8bf5da1"
+    },
+    {
+      "claim_id": "105211ac-3cd6-4a7c-b1eb-4472d769cfd0",
+      "result_id": "3b659b1c-d643-4705-8c4e-98e6ed4b295e"
+    },
+    {
+      "claim_id": "aee59efe-d2f7-4bb6-80fd-bef9ce88ac88",
+      "result_id": "3b659b1c-d643-4705-8c4e-98e6ed4b295e"
+    },
+    {
+      "claim_id": "ce79f896-2550-40b4-876e-278d41d7871e",
+      "result_id": "3b659b1c-d643-4705-8c4e-98e6ed4b295e"
+    },
+    {
+      "claim_id": "7a829817-1180-4ac2-a8b7-36906fd696e6",
+      "result_id": "3b659b1c-d643-4705-8c4e-98e6ed4b295e"
+    },
+    {
+      "claim_id": "b982cf85-24fa-4fa8-b531-36fd5ae7b72c",
+      "result_id": "843add67-a689-4db8-8fae-e33f92567fed"
+    },
+    {
+      "claim_id": "d8aac0aa-d214-4de6-bbe8-f79150e3f14a",
+      "result_id": "843add67-a689-4db8-8fae-e33f92567fed"
+    },
+    {
+      "claim_id": "f1555c6f-ce9e-4a09-bc79-e26057bcec6f",
+      "result_id": "843add67-a689-4db8-8fae-e33f92567fed"
+    },
+    {
+      "claim_id": "50931e2a-4e25-467a-95eb-25ee63be0905",
+      "result_id": "b0783160-2766-4894-9ad2-fbf8951684af"
+    },
+    {
+      "claim_id": "81048c98-bb1b-4d9f-8afc-3611b9427f97",
+      "result_id": "b0783160-2766-4894-9ad2-fbf8951684af"
+    },
+    {
+      "claim_id": "9dc221f2-13ed-46e3-8b4d-6b4876d7e541",
+      "result_id": "b0783160-2766-4894-9ad2-fbf8951684af"
+    },
+    {
+      "claim_id": "570d7b18-f26f-4c7a-a0e9-01824cb69d58",
+      "result_id": "b0783160-2766-4894-9ad2-fbf8951684af"
+    },
+    {
+      "claim_id": "ef006239-c886-4a0c-8bcc-97eb89953989",
+      "result_id": "7af2558f-6cd4-49c9-bb60-1793b52f5cc0"
+    },
+    {
+      "claim_id": "9f139ecc-5e62-484d-83aa-81306f121ebc",
+      "result_id": "7af2558f-6cd4-49c9-bb60-1793b52f5cc0"
+    },
+    {
+      "claim_id": "1fc29520-e9dd-4fcf-b3d2-9607c42c595b",
+      "result_id": "7af2558f-6cd4-49c9-bb60-1793b52f5cc0"
+    },
+    {
+      "claim_id": "4eb4fd87-8204-4627-aa9b-f867822c18fb",
+      "result_id": "7af2558f-6cd4-49c9-bb60-1793b52f5cc0"
+    },
+    {
+      "claim_id": "74e93b48-a310-4daa-998a-b2a18825247a",
+      "result_id": "7af2558f-6cd4-49c9-bb60-1793b52f5cc0"
+    },
+    {
+      "claim_id": "9f500379-4472-41ad-b3e4-23d1da25c40c",
+      "result_id": "7af2558f-6cd4-49c9-bb60-1793b52f5cc0"
+    },
+    {
+      "claim_id": "5009999b-8ca5-4286-98b1-af40e29a2bba",
+      "result_id": "7af2558f-6cd4-49c9-bb60-1793b52f5cc0"
+    },
+    {
+      "claim_id": "4ee74759-a5f3-46e3-960d-58f96678b306",
+      "result_id": "7af2558f-6cd4-49c9-bb60-1793b52f5cc0"
+    },
+    {
+      "claim_id": "b5f32de7-3f86-48e2-95dd-1f72a6f6746c",
+      "result_id": "8bcdbd58-2679-40cd-b633-550d9f04d71d"
+    },
+    {
+      "claim_id": "eb455306-d28f-4c32-87bc-a18a2737f9a9",
+      "result_id": "8bcdbd58-2679-40cd-b633-550d9f04d71d"
+    },
+    {
+      "claim_id": "35e07663-5e24-4b8d-9dc7-6ad403a18e57",
+      "result_id": "8bcdbd58-2679-40cd-b633-550d9f04d71d"
+    },
+    {
+      "claim_id": "d5f407e6-aabd-4d32-86e9-4b9919f6712b",
+      "result_id": "8bcdbd58-2679-40cd-b633-550d9f04d71d"
+    },
+    {
+      "claim_id": "f50b58f4-ae06-48b5-8eda-d866e6fbb68e",
+      "result_id": "8bcdbd58-2679-40cd-b633-550d9f04d71d"
+    },
+    {
+      "claim_id": "d9fc541d-83f8-45c2-9253-a1391550f3cb",
+      "result_id": "277d69ef-58fc-4519-90f0-8122ed90bced"
+    },
+    {
+      "claim_id": "3958af91-9695-44c1-81bf-35cc44df2a90",
+      "result_id": "277d69ef-58fc-4519-90f0-8122ed90bced"
+    },
+    {
+      "claim_id": "8313135f-26b6-4823-b618-a1ef97bb2d4b",
+      "result_id": "277d69ef-58fc-4519-90f0-8122ed90bced"
+    },
+    {
+      "claim_id": "93c4b27e-b879-4279-bb69-d2be7cea2225",
+      "result_id": "277d69ef-58fc-4519-90f0-8122ed90bced"
+    },
+    {
+      "claim_id": "fd33b5a4-cbf7-4ca9-aa12-1144dfca1a4f",
+      "result_id": "277d69ef-58fc-4519-90f0-8122ed90bced"
+    },
+    {
+      "claim_id": "fef04762-bfd7-482c-a050-e31b71c93cf5",
+      "result_id": "7aa04c7f-d301-4c9b-babd-d5feace59925"
+    },
+    {
+      "claim_id": "37a2fcff-a0b3-4557-b6fd-276c6dfbc8b2",
+      "result_id": "7aa04c7f-d301-4c9b-babd-d5feace59925"
+    },
+    {
+      "claim_id": "77831ea0-3378-4167-a250-30a6e0af1b3a",
+      "result_id": "7aa04c7f-d301-4c9b-babd-d5feace59925"
+    },
+    {
+      "claim_id": "a517494d-e370-4ab4-899d-071139798af2",
+      "result_id": "7aa04c7f-d301-4c9b-babd-d5feace59925"
+    },
+    {
+      "claim_id": "a0c584e7-26de-4cb6-b6b6-f58579c2f7de",
+      "result_id": "7aa04c7f-d301-4c9b-babd-d5feace59925"
+    },
+    {
+      "claim_id": "76f157b1-d596-4c24-85ec-96f77d0316ce",
+      "result_id": "8fd47c45-bb12-42cb-be80-870078b256c1"
+    },
+    {
+      "claim_id": "f5b0fce0-39de-433e-b551-a271cb451bb6",
+      "result_id": "8fd47c45-bb12-42cb-be80-870078b256c1"
+    },
+    {
+      "claim_id": "30f4e50a-5ff9-4975-a30c-63cae6d3ab8f",
+      "result_id": "8fd47c45-bb12-42cb-be80-870078b256c1"
+    },
+    {
+      "claim_id": "32ce0931-5c52-44f0-a51d-b5f789da95ed",
+      "result_id": "8fd47c45-bb12-42cb-be80-870078b256c1"
+    },
+    {
+      "claim_id": "7e67729b-388e-48cf-a123-f7423bea3286",
+      "result_id": "8fd47c45-bb12-42cb-be80-870078b256c1"
+    },
+    {
+      "claim_id": "b0918dad-2da9-4011-89c9-938799baed4e",
+      "result_id": "8fd47c45-bb12-42cb-be80-870078b256c1"
+    },
+    {
+      "claim_id": "6d038118-ca64-48f6-8a35-83da35ed38a5",
+      "result_id": "8fd47c45-bb12-42cb-be80-870078b256c1"
+    },
+    {
+      "claim_id": "717bd37a-7546-4ed6-8ab2-c643e87b64bb",
+      "result_id": "7a4f419f-1e11-4ae8-8a91-7ed6ee06c110"
+    },
+    {
+      "claim_id": "4f68c0e3-cc94-4c24-936a-b98bd91a2a35",
+      "result_id": "7a4f419f-1e11-4ae8-8a91-7ed6ee06c110"
+    },
+    {
+      "claim_id": "290913b6-c885-4e38-a000-83c1a39582d5",
+      "result_id": "7a4f419f-1e11-4ae8-8a91-7ed6ee06c110"
+    },
+    {
+      "claim_id": "5b6a241c-ef40-4b75-aa34-9a8e6cc4b1ce",
+      "result_id": "7a4f419f-1e11-4ae8-8a91-7ed6ee06c110"
+    },
+    {
+      "claim_id": "f81ab809-9e9e-48cc-b35a-68bbcd6f819b",
+      "result_id": "7a4f419f-1e11-4ae8-8a91-7ed6ee06c110"
+    },
+    {
+      "claim_id": "410084b9-767c-403a-ad0e-87c9caa123d8",
+      "result_id": "7a4f419f-1e11-4ae8-8a91-7ed6ee06c110"
+    },
+    {
+      "claim_id": "75ca5142-685f-4f34-b144-b6c3bba60dc6",
+      "result_id": "7a4f419f-1e11-4ae8-8a91-7ed6ee06c110"
+    },
+    {
+      "claim_id": "9d28ee84-45c3-452b-a930-714585f86e78",
+      "result_id": "0b3f2ad8-d678-427a-beab-3e1182748b14"
+    },
+    {
+      "claim_id": "55fbe011-015d-497f-851a-9c989623ca52",
+      "result_id": "0b3f2ad8-d678-427a-beab-3e1182748b14"
+    },
+    {
+      "claim_id": "02408246-59a4-4c0c-9ca9-553572470e40",
+      "result_id": "0b3f2ad8-d678-427a-beab-3e1182748b14"
+    },
+    {
+      "claim_id": "e6085d01-e09e-43f8-8f01-63645848199d",
+      "result_id": "0b3f2ad8-d678-427a-beab-3e1182748b14"
+    },
+    {
+      "claim_id": "a3009b6c-5b4c-4331-81ca-3a9d07d4dbeb",
+      "result_id": "0b3f2ad8-d678-427a-beab-3e1182748b14"
+    },
+    {
+      "claim_id": "9d2d3d95-ddb4-42cb-bcdf-9d53175e4481",
+      "result_id": "2bbb48c1-edf9-4496-b414-2ffe2771e39e"
+    },
+    {
+      "claim_id": "ae91b4b5-6293-42f8-91b5-6b5233f17d78",
+      "result_id": "2bbb48c1-edf9-4496-b414-2ffe2771e39e"
+    },
+    {
+      "claim_id": "22ec1dd6-b0a4-4649-b354-5c2d756fcdf6",
+      "result_id": "2bbb48c1-edf9-4496-b414-2ffe2771e39e"
+    },
+    {
+      "claim_id": "0799475e-296a-4642-8cbd-7b11fc1602b6",
+      "result_id": "2bbb48c1-edf9-4496-b414-2ffe2771e39e"
+    },
+    {
+      "claim_id": "b5344cc5-da4d-4d33-aabe-25ae09373c32",
+      "result_id": "0f5f2a22-a6a6-4550-a22d-c015975e395b"
+    },
+    {
+      "claim_id": "2bd70c83-d576-4671-a0e7-96abd2110158",
+      "result_id": "0f5f2a22-a6a6-4550-a22d-c015975e395b"
+    },
+    {
+      "claim_id": "f2ba7608-11e5-47a7-98c7-6684c5926e7b",
+      "result_id": "0f5f2a22-a6a6-4550-a22d-c015975e395b"
+    },
+    {
+      "claim_id": "34d838b0-903b-40cb-8882-8550b42c0978",
+      "result_id": "0f5f2a22-a6a6-4550-a22d-c015975e395b"
+    },
+    {
+      "claim_id": "425ab856-08e8-4471-9429-2a26de58552a",
+      "result_id": "0f5f2a22-a6a6-4550-a22d-c015975e395b"
+    },
+    {
+      "claim_id": "f590c818-57a0-4528-a38f-06e3c4bf9fe6",
+      "result_id": "0f5f2a22-a6a6-4550-a22d-c015975e395b"
+    },
+    {
+      "claim_id": "0c152154-8859-4ff2-9f18-bf5b9e758c39",
+      "result_id": "0f5f2a22-a6a6-4550-a22d-c015975e395b"
+    }
+  ],
+  "comparisons": []
+}

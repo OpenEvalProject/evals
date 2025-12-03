@@ -1,0 +1,1987 @@
+{
+  "submission": {
+    "id": "62ccb789-e7e7-4f8e-afbf-73d1a589a855",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:24:14.263081Z",
+    "updated_at": "2025-12-03T18:24:14.263081Z"
+  },
+  "content": [
+    {
+      "id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "submission_id": "62ccb789-e7e7-4f8e-afbf-73d1a589a855",
+      "content_type": "manuscript",
+      "content_text": "# Nanobodies combined with DNA-PAINT super-resolution reveal a staggered titin nanoarchitecture in flight muscles\n\n## Authors\n\n- Florian Schueder<sup>1</sup>\n- Pierre Mangeol<sup>3</sup> ([ORCID: 0000-0002-8305-7322](https://orcid.org/0000-0002-8305-7322))\n- Eunice HoYee Chan<sup>3</sup> ([ORCID: 0000-0003-3162-3609](https://orcid.org/0000-0003-3162-3609))\n- Renate Rees<sup>4</sup>\n- J\u00fcrgen Sch\u00fcnemann<sup>4</sup>\n- Ralf Jungmann<sup>1</sup> ([ORCID: 0000-0003-4607-3312](https://orcid.org/0000-0003-4607-3312)) \u2020\n- Dirk G\u00f6rlich<sup>4</sup> ([ORCID: 0000-0002-4343-5210](https://orcid.org/0000-0002-4343-5210)) \u2020\n- Frank Schnorrer<sup>3</sup> ([ORCID: 0000-0002-9518-7263](https://orcid.org/0000-0002-9518-7263)) \u2020\n\n### Affiliations\n\n1. Faculty of Physics and Center for Nanoscience, Ludwig Maximilian University Munich Germany ([ROR:002epp671](https://ror.org/002epp671))\n2. Max Planck Institute of Biochemistry Martinsried Germany ([ROR:04py35477](https://ror.org/04py35477))\n3. Aix Marseille University, CNRS, IBDM, Turing Centre for Living Systems Marseille France ([ROR:02feahw73](https://ror.org/02feahw73))\n4. Max Planck Institute for Multidisciplinary Sciences G\u00f6ttingen Germany ([ROR:03av75f26](https://ror.org/03av75f26))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSarcomeres are the force-producing units of all striated muscles. Their nanoarchitecture critically depends on the large titin protein, which in vertebrates spans from the sarcomeric Z-disc to the M-band and hence links actin and myosin filaments stably together. This ensures sarcomeric integrity and determines the length of vertebrate sarcomeres. However, the instructive role of titins for sarcomeric architecture outside of vertebrates is not as well understood. Here, we used a series of nanobodies, the Drosophila titin nanobody toolbox, recognising specific domains of the two Drosophila titin homologs Sallimus and Projectin to determine their precise location in intact flight muscles. By combining nanobodies with DNA-PAINT super-resolution microscopy, we found that, similar to vertebrate titin, Sallimus bridges across the flight muscle I-band, whereas Projectin is located at the beginning of the A-band. Interestingly, the ends of both proteins overlap at the I-band/A-band border, revealing a staggered organisation of the two Drosophila titin homologs. This architecture may help to stably anchor Sallimus at the myosin filament and hence ensure efficient force transduction during flight.\n\n## Introduction\n\nSkeletal and heart muscles produce forces that power body movements and fluid flow in animals. These forces are produced by conserved macromolecular machines called sarcomeres. Sarcomeres are organised into long periodic chains called myofibrils that mechanically span the entire muscle fibre length and thus sarcomere contraction results in muscle contraction (Gautel, 2011; Huxley, 1969; Lemke and Schnorrer, 2017).\n\nThe sarcomeric architecture is conserved in striated muscles across animals. Sarcomeres are bordered by two Z-discs, which anchor the plus ends of parallel actin filaments. These extend towards the centrally located bipolar myosin filaments that are cross-linked at the M-band of the sarcomere. In vertebrate sarcomeres, actin and myosin filaments are mechanically linked by the connecting filament built by the gigantic titin protein, whose N-terminus is anchored to \u03b1-actinin at the Z-disc while its C-terminus is embedded within the sarcomeric M-band. Thus, titin spans as a linear protein across half a sarcomere in vertebrate muscle (Gautel and Djinovi\u0107-Carugo, 2016; Lange et al., 2006; Linke, 2018; Squire et al., 2005). This stereotypic sarcomere architecture results in a defined sarcomere length (distance between two neighbouring Z-discs), which is about 3 \u00b5m in relaxed human skeletal muscle (Ehler and Gautel, 2008; Llewellyn et al., 2008; Regev et al., 2011), and is responsible for the typical striated appearance of skeletal muscles.\n\nThe defined sarcomeric architecture sparked the \u2018titin ruler hypothesis\u2019, proposing that the long titin protein rules sarcomere length in vertebrate muscles (Tskhovrebova and Trinick, 2012; Tskhovrebova and Trinick, 2017). Recently, this hypothesis has been strongly supported by in vivo genetic evidence. Deletion of parts of titin\u2019s flexible I-band or its stiff A-band regions in mouse skeletal muscle resulted in a shortening of the sarcomeric I-band or A-band, respectively (Brynnel et al., 2018; Tonino et al., 2017). Furthermore, recent evidence substantiated that titin is the main sarcomeric component responsible for the passive tension of the muscle, suggesting that mechanical tension present in relaxed muscle is stretching titin into its extended conformation (Li et al., 2020; Linke, 2018; Rivas-Pardo et al., 2020; Swist et al., 2020). Thus, titin mechanically links actin and myosin filaments together and is responsible for establishing and maintaining sarcomeric architecture in vertebrate striated muscle.\n\nStriated muscle architecture is not restricted to vertebrates but is conserved in insects and nematodes. However, in contrast to vertebrates, titin\u2019s role in Drosophila and Caenorhabditis elegans appears to be split in two proteins, one containing the flexible I-band features and the other the stiff A-band features of titin (Flaherty et al., 2002; Loreau et al., 2023; Porto et al., 2021; Tskhovrebova and Trinick, 2003). Surprisingly, the sarcomere length in flies and worms is still stereotypic for the respective muscle fibre type. In Drosophila, the sarcomere length is about 3.5 \u00b5m for indirect flight muscles and about 8 \u00b5m for larval body wall muscles. To date, it is unclear how sarcomere length in these muscles is determined. Furthermore, it is unknown how the titin homologs are precisely organised within the sarcomere and whether they contribute to sarcomere length regulation in insect muscle.\n\nWe aimed to address the questions of how invertebrate titin homologs instruct sarcomere architecture and whether the titin nanoarchitecture would be consistent with a ruler function mechanically linking actin to myosin at a defined distance, as proposed for vertebrates. A first step to answer these important questions is to determine the exact positions of the titin homologs within the sarcomere.\n\nHere, we chose the Drosophila indirect flight muscles to determine the precise topology of the two Drosophila homologs Sallimus (Sls) and Projectin (Proj). We selected key domains at different locations within Sls and Projectin, against which we recently raised specific nanobodies (Loreau et al., 2023). We applied single and dual-colour DNA-PAINT super-resolution microscopy to intact flight muscle specimens, which determined the precise architecture of Sls and Projectin in the flight muscle sarcomere. Interestingly, we found that Sls but not Projectin extends from the Z-disc to the myosin filament. The end of Sls overlaps with the beginning of Projectin, which projects further along the myosin filament. This staggered organisation of the two Drosophila titin homologs may explain how high mechanical tension can be stably transmitted across the sarcomere and how sarcomere length can be ruled without the presence of a single protein linking the Z-disc to the M-band as observed in vertebrates.\n\n## Results\n\n### Drosophila titin domain organisation and flight muscle isoforms\n\nDrosophila indirect flight muscles (called flight muscles in the remainder of the article) are stiff muscles that oscillate at high frequency to power flight (Dickinson, 2006; Pringle, 1981; Sch\u00f6nbauer et al., 2011). The majority of this stiffness is due to Sls in flight muscles (Kulke et al., 2001). To achieve this high stiffness, a large part of the flexible spring domains encoded in both titin gene homologs sls and bent (bt; protein name: Projectin) are skipped by alternative splicing (Ayme-Southgate et al., 2005; Bullard et al., 2005; Burkart et al., 2007; Spletter et al., 2015). Older work had suggested that the most prominent Sls flight muscle isoform (also called Kettin) uses an alternative poly-A site terminating the protein after Sls-immunoglobulin (Ig) domain 35 (Bullard et al., 2005; Burkart et al., 2007). However, more recent systematic transcriptomics and splice-site annotation data from dissected flight muscles, as well as expression of large genomic Sls-GFP tagged transgenes, showed that the usage of this early poly-A site is largely restricted to leg muscles and hardly present in flight muscles (Spletter et al., 2015; Spletter et al., 2018). To identify the most prominent Sls and Projectin protein isoforms in mature flight muscles, we carefully reanalysed the published transcriptomics and splice data (Spletter et al., 2015; Spletter et al., 2018). We verified that in both genes the flexible PEVK spring domains are largely spliced out in adult flight muscles; however, their more 3\u2032-located exons are present at least in some longer isoforms (Figure 1\u2014figure supplement 1A and B). This predicts an Sls isoform containing the C-terminal five fibronectin (Fn) domains and a Projectin isoform containing a long stretch of Ig-Fn super-repeats and a kinase domain close to its C-terminus being present in flight muscles (Figure 1\u2014figure supplement 1A and B).\n\n### Sallimus and Projectin nanobodies in flight muscles\n\nIn order to verify the expression and to determine the precise location of the different Sls domains in adult flight muscle sarcomeres, we selected three different regions in Sls, against which we recently generated nanobodies: Sls-Ig13/14, Sls-Ig49/50, and Sls-Ig51/Fn2, the first being relatively close to the N-terminus, the other two being close to the C-terminus of the Sls flight muscle isoform (Loreau et al., 2023; Figure 1A). Similarly, we selected two regions in Projectin close to its N-terminus (Proj-Ig5-8 and Proj-Fn1/2) and two regions close to its C-terminus (Proj-Ig27-Fn35 and Proj-kinase domain) (Figure 1C). The generation of these nanobodies as well as their specificity was documented in an accompanying manuscript (Loreau et al., 2023).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig1-v3.jpg)\n\n**Figure 1.:** (A, C) Sallimus (A) and Projectin (C) flight muscle protein isoforms with the domains recognised by the used nanobodies highlighted in different colours. (B, D) Single confocal sections of flight muscle sarcomeres from adult hemi-thoraces stained for actin with phalloidin (magenta) and the indicated anti-Sls or anti-Projectin nanobodies directly coupled to Alexa488 or Atto488 (green). The Z-disc is revealed by the prominent actin signal. Scale bars 5 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Genomic organisation of sallimus (A) and projectin/bent (B) genomic loci taken from FlyBase. Pink rectangles indicate exons, lines indicate introns. Above the genomic locus is the rough position of respective protein domains indicated. The domains named in grey are largely specific to leg or larval muscles and not expressed in flight muscles. This is also indicated by the prominent flight muscle-specific splice junctions indicated in grey below the genomic loci. Note that the spring-like PEVK domains in sallimus or projectin are spliced out in flight muscles. This results in the respective Sallimus and Projection domain structure of the flight muscle isoforms.\n\nIn flight muscles, both N-terminal anti-Sls nanobodies, namely, Sls-Nano2 (binding Sls-Ig13/14) as well as C-terminal anti-Sls nanobodies, namely, Sls-Nano42 (binding to SlsIg51/52), result in single bands at the Z-discs when coupled to fluorescent dyes and observed with confocal microscopy (Figure 1B). Similarly, N-terminal anti-Projectin nanobodies, here Proj-Nano30 (recognising Proj-Ig5-8) and Proj-Nano29 (binding Proj-Fn1-2), each result in one band at the Z-disc (Figure 1D). In contrast, nanobodies against C-terminally located Projectin domains, here Proj-Nano33 (binding Proj-Ig27-Fn35) and Proj-Nano37 (binding the Projectin kinase domain), result in two bands at large distances from the Z-disc (Figure 1D). These data demonstrate that Projectin is present in an extended conformation, and since the flight muscle I-band extends less than 100 nm from the Z-disc (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020), a large part of Projectin is present along the myosin filament. However, the diffraction-limited spatial resolution of a confocal microscope (about 250 nm) is not sufficient to precisely localise Sls and Projectin domains close to the Z-disc. Hence, higher spatial resolution is necessary to determine the precise architecture of Sls and Projectin within the flight muscle sarcomere.\n\n### DNA-PAINT super-resolution imaging of entire flight muscles\n\nTo resolve the relative localisation of Sls and Projectin, we turned our attention to super-resolution imaging with DNA-PAINT as it enables imaging at particularly high spatial resolution (Jungmann et al., 2014; Lelek et al., 2021; Schnitzbauer et al., 2017). For DNA-PAINT, nanobodies binding the protein epitope of interest need to be site-specifically conjugated to either one- or two single-stranded DNA molecules. Previously, DNA-oligos for PAINT were either coupled to antibodies via biotin-streptavidin (Jungmann et al., 2014), which is a 66 kDa tetramer and thus relatively large, or more frequently by click chemistry (Fabricius et al., 2018; Schnitzbauer et al., 2017), which comes with a number of potential disadvantages, such as a bulky hydrophobic coupling group and an initial lysine modification that might destroy the paratope. Instead, we used maleimide-coupling through ectopic cysteines at the N- and C-terminus of the nanobody (Pleiner et al., 2018; Pleiner et al., 2015), which allows a simpler workflow, analogous to direct fluorophore coupling, and protects the antigen-binding site from undesired modifications.\n\nIn contrast to fluorophore-maleimides, maleimide-activated oligonucleotides are not commercially available. However, as described in the \u2018Methods\u2019 in detail, they are straightforward to synthesise from a 5\u2032-amino-modified oligo and a bifunctional maleimide-NHS (N-hydroxysuccinimide) cross-linker (Figure 2). The NHS group forms an amide bond with the 5\u2032-amino group of the oligo under reaction conditions that leave the amino groups of the DNA bases non-reactive. The maleimide-activated oligo is then reacted with the nanobody that still contains its His14-SUMO or His14-NEDD8 tag (Frey and G\u00f6rlich, 2014). The resulting conjugate is purified by binding to an Ni(II) chelate matrix (whereby non-conjugated oligo remains in the non-bound fraction) and followed by elution of nanobody-oligo conjugate with a tag-cleaving protease (Figure 2). Hence, these oligo-coupled nanobodies remain similarly small as the fluorescently coupled nanobodies and thus are ideal for effective super-resolution imaging using DNA-PAINT.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig2-v3.jpg)\n\n**Figure 2.:** Schematic representation of the five steps from nanobody purification, oligo activation and coupling, purification, and elution of the oligo-coupled nanobody. See \u2018Results\u2019 and \u2018Methods\u2019 sections for details.\n\nIn DNA-PAINT, the necessary target blinking for localisation-based super-resolution reconstruction is achieved by the transient binding of a dye-labelled single-stranded DNA \u2018imager\u2019 strand to their target-bound complement (\u2018docking\u2019 strands, Figure 3A). As imager strands are continuously replenished from solution and binding times are controllable over a wide range, a large number of photons can be detected from a single binding event, thus enabling unprecedented sub-5 nm spatial resolutions (Dai et al., 2016; Schnitzbauer et al., 2017).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig3-v3.jpg)\n\n**Figure 3.:** (A) Concept of DNA-PAINT imaging of sarcomeres labelled with an oligo-conjugated nanobody. Binding of the imager oligo to one nanobody results in a strong, detectable intensity burst (t2, blink). (B) Schematic of a mounted intact Drosophila hemi-thorax in a DNA-PAINT imaging chamber enabling total internal reflection (TIRF) illumination. Comparison of the diffraction-limited and the super-resolved result illustrated in one hemi-thorax labelled with Proj-Nano29. Note that the super-resolved image can readily resolve the two bands flanking each Z-disc. Scale bar 2 \u00b5m. (C) Automated image analysis for individual Z-discs detection (see Figure 3\u2014figure supplement 2 and \u2018Methods\u2019 for details). Individual bands are detected automatically and their centre position is obtained using a Gaussian fit (bottom centre). The distance between the centre of bands for tens of sarcomeres from a single hemi-thorax is then reported in a histogram (bottom right). Scale bar 2 \u00b5m (top) and 0.5 \u00b5m (bottom).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schemes illustrating the different steps of sample preparation. Thorax isolation, followed by PFA fixation and hemithorax preparation. Fixed hemi-thoraces were stained with nanobodies and were mounted in a sample chamber in imager solution positioning the flight muscles close to the coverslip to enable total internal reflection (TIRF) imaging. (B) DNA-PAINT post-processing workflow. The single-molecule \u2018blinking\u2019 events were identified using a threshold detection, and the maximum is determined via a Gaussian fit. The coordinates in time and space and other localisation properties were saved in an hdf5 file. The hdf5 was then drift-corrected and rendered using Picasso render.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Individual myofibrils were manually selected using the rectangular selection tool from Picasso (Schnitzbauer et al., 2017). Scale bar 2 \u00b5m. (B) To limit localisation events arising from multiple emitters that create artefacts (Lelek et al., 2021), localisations are filtered based on the standard deviation of their Gaussian fits. Localisations kept are within a disc in the standard deviation space (sx, sy), centred on the maximum of the distribution and of radius 0.2 pixel. Scale bars 0.5 \u00b5m. (C) Individual Z-discs were automatically detected (see \u2018Methods\u2019 for details). Scale bars 2 \u00b5m. (D) Individual bands generated by the accumulation of protein epitopes were detected automatically and their centre position was obtained using a Gaussian fit. After a visual check of the automated detection result, the results were compiled for further analysis.\n\nWe aimed to apply DNA-PAINT to flight muscle tissue, using hemi-thoraces of adult flies, to minimise artefacts that might be introduced by cutting out individual myofibrils. To prepare hemi-thoraces, we fixed thoraces in paraformaldehyde and then bisected them with a sharp microtome knife (Figure 3\u2014figure supplement 1A, see \u2018Methods\u2019 for details). Then, we incubated the hemi-thoraces with oligo-coupled nanobodies and mounted them for imaging. Hemi-thoraces are very large, with a length of about 1 mm and a thickness of about 300 \u00b5m. To mount them as close as possible to the coverslip, we developed an imaging chamber that contains the imaging buffer surrounded by spacers thick enough to slightly press the flight muscles against the coverslip (Figure 3\u2014figure supplement 1A, see \u2018Methods\u2019 for details). This enabled DNA-PAINT imaging with total internal reflection (TIRF). We imaged for 30 min per sample and obtained about 15,000 frames at an imaging rate of 10 Hz. For image reconstruction and post-processing, we used the established Picasso software (Schnitzbauer et al., 2017; Figure 3B, Figure 3\u2014figure supplement 1B; see \u2018Methods\u2019 for details). This enabled us to resolve the two bands flanking a Z-disc with ease, which cannot be resolved in the diffraction-limited image (Figure 3B).\n\nTo further refine the precision of determining the epitope positions, we have developed an image-processing pipeline that relies on an interactive selection of well-stained myofibrils in the volume of TIRF excitation (Figure 3\u2014figure supplement 2). Next, we removed localisations arising from multiple binding events by filtering based on specific localisation parameters (see \u2018Methods\u2019 for details). Furthermore, we automatically detected the individual sarcomeric Z-discs and the respective flanking bands of the stained Sls or Projectin epitopes for all selected myofibrils. We applied a Gaussian fit to each band and determined their centre positions within the sarcomere with nanometric accuracy (Figure 3C, Figure 3\u2014figure supplement 2). This results in an accurate location of the measured bands for each of the epitopes in every analysed sarcomere. Hence, we do not need to average across many sarcomeres to precisely localise the Sls or Projectin epitopes (Figure 3C). In conclusion, our method allows detecting individual differences in sarcomeric band positions in each sarcomere investigated down to the nanometre-scale.\n\n### Positions of Sallimus and Projectin domains within intact flight muscle at the nanometric scale\n\nTo precisely determine the location of Sallimus and Projectin, we applied our DNA-PAINT imaging pipeline of flight muscles to the entire Sls and Projectin nanobody toolbox (Loreau et al., 2023). In most cases, we co-stained with two nanobodies that are spaced sufficiently apart to detect the expected four bands centred around the Z-disc, even when using only a single imaging colour (Figure 4A). This allowed us to resolve the positions of Sls-Nano2 (Sls-Ig13/14) located close to the N-terminus of Sallimus and also Sls-Nano39 (Sls-Ig49/50) close to its C-terminus, which we could combine with distantly located anti-Projectin nanobodies (Figure 4A). Similarly, we imaged the N-terminally located Proj-Nano29 (Proj-Fn1/2) and Proj-Nano30 (Proj-Ig5-8), which we combined with one of the C-terminally located Proj-Nano33 (Ig27-Fn35), Proj-Nano35, or Proj-Nano37 (both Projectin kinase domain). This enabled us to locate the exact position of the different Projectin domains in sarcomeres (Figure 4A). Interestingly, all the analysed epitopes localise in similarly sharp bands in each of the sarcomeres, suggesting a very precisely aligned architecture of Sls and Projectin. The result that nanobodies recognising Sls-Ig13/14 localise 50 nm away from the centre of the Z-disc is compatible with the very N-terminus of Sls being located at the centre of the Z-disc because the additional twelve N-terminal 12 Ig domains are likely to span 48 nm (longest dimension of an Ig domain = 4 nm), whereas the N-terminus of Projectin is located around 100 nm away from the Z-disc (Proj-Ig5-8 and Proj-Fn1/2) (Figure 4A) and hence cannot be anchored directly at the Z-disc. Our distance measurements are very reproducible between samples, as shown for the different samples stained with Sls-Nano2 in Figure 4A as well as between different nanobodies that recognise neighbouring domains as shown for Proj-Nano29 and Proj-Nano30. Hence, the combination of DNA-PAINT with the oligo-labelled nanobodies works very reliably to image sarcomeres in intact flight muscle tissue.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig4-v3.jpg)\n\n**Figure 4.:** (A) Left: representative DNA-PAINT images of myofibrils stained with two different anti-Sls or anti-Projectin nanobodies labelling two epitopes and imaged with the same fluorescent imager oligo. The different Sls or Projectin nanobody combinations are indicated above each image. Middle: pseudo-coloured sum image centred around Z-discs resulting from one hemi-thorax. Right: histogram of distances between bands centred around Z-discs with the respective nanobody combinations indicated in green or magenta. The frequency (y-axis) refers to the number of Z-discs present in the respective length bins. Note that four bands can be readily distinguished for all shown nanobody combinations. The number of Z-discs scored in the shown samples are from top to bottom: 34, 59, 35, 25, 28, 28, and 63 (see Figure 4\u2014source data 1 for the individual measurements). (B) Similar representations as in (A). However, the positions of neighbouring Sls or Projectin epitopes cannot be resolved in a single colour. Scale bar 1 \u00b5m.\n\nHowever, this powerful single-colour imaging method has limitations: it fails to resolve two different epitopes into distinct bands if these epitopes are located too close together to unambiguously assign each blinking event to one particular nanobody. Thus, Sls-Nano2 (Sls-Ig13/14) and Sls-Nano39 (Sls-Ig49/50) or Sls-Nano2 (Sls-Ig13/14) and Proj-Nano28 (Proj-Fn1/2) cannot be imaged together in the same sarcomere with a single colour (Figure 4B). However, quantifying the exact positions of two closely located titin domains in the same sarcomere is critical as the relative length of the flexible titin molecules may vary in individual sarcomeres. Hence, it would be important to determine the positions of two different Sls domains in the same sarcomere to unambiguously conclude about Sls length or the relative arrangement of Sls and Projectin protein domains.\n\n### Two-colour DNA-PAINT reveals a staggered organisation of Sls and Proj\n\nTo simultaneously determine the exact positions of two epitopes, we have labelled two nanobodies each with two different oligonucleotides and imaged them with two differently labelled imager oligos in parallel to perform two-colour DNA-PAINT (see \u2018Methods\u2019). Multiplexed imaging enabled us to determine the positions of Sls-Ig13/14 (using Sls-Nano2) and Sls-Ig51-Fn2 (using Sls-Nano42) in the same sarcomere (Figure 5A). Our results verified that Sls-Ig13/14 is localised about 50 nm away from the centre of the Z-disc and that Sls-Ig51/Fn2 is about 50 nm farther towards the middle of the sarcomere (Figure 5A, Figure 5\u2014figure supplement 1). Since the I-band of flight muscles is less than 100 nm from the Z-disc (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020), this strongly suggests that Sls is bridging across the entire sarcomeric I-band with its N-terminus anchored within the Z-disc and its C-terminal end reaching the myosin filament. Thus, Sls could mechanically link the Z-disc to the myosin filament in the flight muscles, similar to the long vertebrate titin.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig5-v3.jpg)\n\n**Figure 5.:** (A) Left: representative DNA-PAINT image of a myofibril stained with two nanobodies labelling Sls-Ig13/14 (Sls-Nano2) and Sls-Ig51/Fn2 epitopes (Sls-Nano42). Middle: sum image centred around Z-discs resulting from one hemi-thorax. Right: histogram of distances between bands centred around Z-discs (Sls-Ig13/14 in green, Sls-Ig51/Fn2 in magenta). The frequency (y-axis) refers to the number of Z-discs present in the respective length bins (number of Z-discs scored: 14, see Figure 5\u2014source data 1 for the respective measurements). (B). Top: representative DNA-PAINT image of a myofibril stained with two nanobodies labelling Proj-Ig5-8 (Proj-Nano30) and Proj-Fn1/2 (Proj-Nano29) epitopes, sum image, and histograms of distances between bands (Proj-Ig5-8 in green, Proj-Fn1-2 in magenta, number of Z-discs scored: 219). Bottom: representative myofibril stained for Proj-Fn1/2 (Proj-Nano29) and Proj-Ig27-Fn35 (Proj-Nano33) epitopes, sum image, and histogram of distances between bands centred around Z-discs (Proj-Fn1/2 in magenta, Proj-Ig27-Fn35 in green, number of Z-discs scored: 52) (C). Top: representative DNA-PAINT image of a myofibril stained with two nanobodies labelling SlsIg49/50 (Sls-Nano39) and Proj-Fn1/2 (Proj-Nano29) epitopes, sum image, and histogram of distances between bands centred around Z-discs (Sls-Ig49/50 in green, Proj-Fn1/2 in magenta, number of Z-discs scored: 21). Bottom: same as top for Sls-Ig51/Fn2 (Sls-Nano42) and Proj-Ig5-8 (Proj-Nano30) epitopes, sum image, histogram of distances, and plot showing the epitope positions from the Z-discs in the individual sarcomeres analysed (bottom right, Sls-Ig51/Fn2 in magenta, Proj-Ig5-8 in green, number of Z-discs scored: 45). Note that in 42 of 45 cases the Proj-Ig5-8 (green) is closer to the Z-disc than Sls-Ig51/Fn2 (magenta). Scale bar 250 nm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Distance quantifications of the dual-colour DNA-PAINT data shown in Figure 5. Plots on the left show the epitope distances from the Z-discs in each sarcomere analysed with green and magenta colours indicating the respective nanobodies used. Plots on the right display histograms plotting the distances in between the individual two nanobody epitopes in each sarcomere. These are half the values from the plots on the left, as the organisations are symmetric around the Z-discs. The frequency (y-axis) refers to the number of sarcomeres present in the respective length bins.\n\nSince we found that the N-terminus of Projectin is also about 100 nm away from the Z-disc and thus located at the beginning of the thick filament (Figure 4A), we wanted to further investigate the precise orientation of the Projectin N-terminal domains. To do so, we performed two-colour DNA-PAINT to localise Proj-Ig5/8 (with Proj-Nano30) and Pro-Fn1/2 (with Proj-Nano29) in the same sarcomere and found an average distance between the two epitopes of about 25 nm, with Proj-Ig5-8 being always closer to the Z-disc relative to Proj-Fn1/2 (Figure 5B, Figure 5\u2014figure supplement 1). Consistently, the more C-terminally located Proj-Ig27-Fn35 epitope is located far into the myosin filament that begins at 100 nm (Szikora et al., 2020), being 350 nm away from the Z-disc (Figure 5B, Figure 5\u2014figure supplement 1). This strongly suggests that the N-terminal part of Projectin is arranged in an extended, likely linear conformation reaching from the myosin filament into the I-band and thus running in parallel to the C-terminal domains of Sls.\n\nThese findings raised an enticing hypothesis: do the extended Sls and Projectin proteins overlap at the I-band/A-band interface? To investigate this hypothesis, we performed two-colour DNA-PAINT using two pairs of nanobodies: Sls-Nano39, recognising Sls-49/50, combined with Proj-Nano29, binding Proj-Fn1/2 and Sls-Nano42, recognising Sls-Ig51-Fn2, combined with Proj-Nano30, binding Proj-Ig5/8. Interestingly, we found that in all sarcomeres measured, the Proj-Nano29 is about 15 nm farther from the Z-disc than Sls-Nano39, whereas, in 42 out of 45 sarcomeres investigated, Proj-Nano30 is on average 7\u20138 nm closer to the Z-disc than Sls-Nano42 (Figure 5C, Figure 5\u2014figure supplement 1). Hence, these data revealed an interesting staggered organisation of the two overlapping ends of the linearly extended Sallimus and Projectin proteins in flight muscles.\n\n### A molecular map of the Drosophila titin homologs in flight muscle sarcomeres\n\nOur data enabled us to build a molecular map of the Drosophila titin homologs in flight muscle sarcomeres, which revealed a significant overlap of the linear Sls and Projectin proteins at the I-band/A-band interface as visualised in a \u2018composite sarcomere\u2019 reconstructed by imaging flight muscles from six different hemi-thoraces (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig6-v3.jpg)\n\n**Figure 6.:** (A) A sarcomere displayed as a composite of two summed anti-Sallimus nanobody bands (top) and four summed anti-Projectin nanobody bands (bottom), each originating from one individual hemi-thorax imaged. Note the overlay of the positions of both proteins. Scale bar is 100 nm. (B) Distribution of the average distances from the Z-disc for all Sls and Projectin epitopes measured using bootstrapping (see \u2018Methods\u2019). (C) Cartoon model of the relative arrangement of Sls and Projectin within the flight muscle sarcomere. The positions of the measured Sls and Projectin domains are highlighted in colours. The zoomed regions illustrate the suggested staggered architecture of the C-terminal Sls and the N-terminal Projectin protein parts.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Scatter plot of distance between bands of nanobodies used in this study versus the individual sarcomere length. Each dot corresponds to one sarcomere. The sarcomere length reported for nanobodies centred on a given Z-disc was obtained by measuring half the distance between Z-discs located directly on the left and on the right. Note that the distances between bands do not correlate with the slight variations in sarcomere length. A total of 1442 distances were quantified (see Figure 6\u2014source data 1). Each point is obtained from three consecutive Z-discs. The first and third Z-disc result in the sarcomere length (middle of bands in the Z-disc defined the Z-disc centr, which are then used as references to measure the length of two sarcomeres \u2013 first to second and second to third \u2013 which is then divided by two to obtain the sarcomere length). The distance between bands is obtained from the second sarcomere.\n\nTo precisely determine the position of all the epitopes investigated in our study, we calculated the average position using all the sarcomeres we imaged in the single- and dual-colour DNA-PAINT experiments. This strategy is valid as we found that although our mounting protocol for TIRF imaging results in a slightly variable sarcomere length of around 3.5 \u00b5m (Spletter et al., 2015), the distance between the measured epitopes is constant (Figure 6\u2014figure supplement 1). Hence, the localisation of the different Sls and Projectin domains investigated using all sarcomeres measured resulted in a very high localisation precision with 95% confidence intervals of only 1\u20138 nm (Figure 6B). Pooling all data verified that the N-terminal Proj-Ig5-8 epitope is located 90 nm from the Z-disc, whereas the C-terminal Sls epitopes Sls-Ig49/50 and Sls-Ig51-Fn2 are located about 98 nm from the Z-disc. This is consistent with a staggered linear organisation of Sallimus and Projectin, which suggests an attractive mechanism how to mechanically link the sarcomeric Z-disc in insect flight muscle with the myosin filament using both titin homologs (Figure 6C).\n\n## Discussion\n\n### Super-resolution of flight muscles with nanobodies\n\nThe value of nanobodies and other small binders is well appreciated (Harmansa and Affolter, 2018). However, most Drosophila in vivo studies have thus far heavily relied on commercially available anti-GFP nanobodies to enhance GFP fluorescence signal in various tissues, including Drosophila flight muscles (Kaya-Copur et al., 2021) or to either trap GFP-fusion proteins ectopically or to degrade them when expressed in various modified forms in vivo (Caussinus et al., 2011; Harmansa et al., 2015; Nagarkar-Jaiswal et al., 2015). Our titin nanobody toolbox (Loreau et al., 2023) enabled us now to apply DNA-PAINT super-resolution technology to image the titin nanostructure in large intact flight muscle tissue at nanometre-scale resolution.\n\nIt had been shown that dye- or DNA-labelled nanobodies work well to achieve high labelling densities in cell culture (Agasti et al., 2017; Fabricius et al., 2018; Mikhaylova et al., 2015; Pleiner et al., 2015; Schlichthaerle et al., 2019). We have shown that our nanobodies are also very efficient in penetrating the large flight muscle fibres containing highly packed sarcomeres (Loreau et al., 2023), which are amongst the most protein-dense macromolecular structures in biology (Daneshparvar et al., 2020; Taylor et al., 2019). This high labelling efficiency enabled us to perform DNA-PAINT super-resolution microscopy of the large flight muscles without dissecting individual myofibrils. Such large specimens have rarely been investigated with DNA-PAINT (Cheng et al., 2021; Lelek et al., 2021). This shows that DNA-PAINT can be readily applied to super-resolve structures in large tissues if mounting and labelling protocols are optimised.\n\n### Titin nanoarchitecture in flight muscles \u2013 Do titins rule?\n\nFlight muscles are an ideal tissue to perform architectural studies of their sarcomeric components at the nanoscale because these components display an extremely high molecular order (Loison et al., 2018). This was impressively demonstrated by substructural averaging that resolved the nanostructure of myosin filaments isolated from insect flight muscles at a 7 \u00c5 resolution by cryo-electron-microscopy (Daneshparvar et al., 2020; Hu et al., 2016). Another recent study (Szikora et al., 2020) took advantage of this stereotypic order and used a series of existing antibodies against sarcomeric protein components to probe isolated myofibrils from Drosophila flight muscles using the super-resolution microscopy technique called STORM (Rust et al., 2006). The precisely reproducible sarcomeric morphology enabled averaging several hundred sarcomeres to reconstruct distances of various epitopes located at the Z-disc, including Zasp52 and \u03b1-Actinin, with 5\u201310 nm precision (Szikora et al., 2020). Although done on isolated dissected myofibrils and by averaging many sarcomeres, the large diversity of antibodies studied gave a comprehensive understanding of domain positions for a variety of important sarcomeric components. This included the Sls-Ig16 antibody, locating Sls-Ig16 about 50 nm from the centre of the Z-disc (Szikora et al., 2020), which is in good agreement with the location of Sls-Ig13/14 we found here. This study further showed that the Z-disc components \u03b1-Actinin and Zasp52 extend only about 35 nm from the centre of the Z-disc, whereas Filamin stretches with its C-term to about 55 nm (Szikora et al., 2020). This strongly suggests that the N-terminus of Sls, with its remaining 12 Ig domains, can reach and interact with these Z-disc components and possibly also with Filamin, as has been reported biochemically (Gonz\u00e1lez-Morales et al., 2017; Liao et al., 2016). Hence, the N-terminal part of the fly titin homolog Sls is arranged similarly to the N-terminus of vertebrate titin that binds to \u03b1-Actinin, anchoring it within the Z-disc (Gautel and Djinovi\u0107-Carugo, 2016; Ribeiro et al., 2014). The exact molecular arrangement will need to await cryo-electron tomography data as recently achieved for the mammalian Z-disc (Wang et al., 2021).\n\nAn important part of the titin ruler model is that the titin spring part, which relaxes and stretches during muscle contraction and relaxation, respectively, spans across the I-band and sets the I-band length of vertebrate sarcomeres (Brynnel et al., 2018; Linke, 2018; Luis and Schnorrer, 2021). Thus, it is insightful that our newly developed C-terminal Sls nanobodies show that the C-terminal end of Sls is located about 100 nm from the centre of the Z-disc in flight muscles. This is consistent with the Sls-B2 antibody that supposedly recognises Sls-Ig44 (Burkart et al., 2007), which was localised to about 80 nm from the Z-disc (Szikora et al., 2020). However, this Sls-Ig44 is only present in a few Sls isoforms called \u2018Sls-700\u2019, which are likely expressed at early developmental stages at which the sarcomeres have just assembled. Hence, this antibody labels only the centre of each radially symmetric myofibril (Burkart et al., 2007). In contrast, our nanobodies bind Sls more C-terminally and show a wider band, suggesting that a larger number of Sls isoforms are reaching the myosin filaments. The fact that the C-terminal Sls nanobodies do not label the entire height of the myofibril (see Figure 1B) suggests that these epitopes are still not included in all the flight muscle Sls isoforms.\n\nAlthough we have not imaged myosin directly in our samples, both STORM and electron-microscopy studies demonstrated that myosin filaments begin about 100 nm from the centre of the Z-disc, making the half I-band less than 100 nm wide (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020). This strongly suggests that, as in vertebrates, Sls is indeed spanning across the short flight muscle I-band, where it could interact through its C-terminal domains with the myosin filament and hence could mechanically link the Z-disc with the myosin filament. Interestingly, the long isoform of the C. elegans titin homolog TTN-1 was shown to also bridge across the I-band reaching the beginning of the A-band in C. elegans body muscles and in vitro studies demonstrated that its C-terminal Ig38-40 domains indeed bind to myosin with low nanomolar affinity (Forbes et al., 2010). These data are consistent with our hypothesis that Drosophila Sls may interact with myosin or Projectin and thus function as an I-band ruler in insect muscles (see model in Figure 6C).\n\nThe exact molecular arrangement of Sls in the I-band is still unknown. As the length of an isolated Ig domain is about 4 nm (Mayans et al., 2001), a chain of 40 Ig domains, which are present in the flight muscle Sls isoforms that we studied here, would result in a length of about 160 nm instead of the observed 100 nm. Hence, the Sls native structure in close proximity to actin filaments present in the flight muscle I-band might be more complex than a straight linear array of Ig domains.\n\nThe interpretation that Sls length rules I-band length is also supported by the observation that non-flight muscles like leg, jump, and larval muscles, which contain long I-bands, do express longer versions of Sls that include the large and flexible PEVK domains (Burkart et al., 2007; Spletter et al., 2015). Indeed, in the accompanying paper using the Sls nanobodies, we showed that Sls is more than 2 \u00b5m long in larval muscles to bridge over these long I-bands (Loreau et al., 2023). This strongly suggests that Sls determines I-band length in the different muscle types; however, a direct genetic test that modifies Sls length and assays I-band length remains to be done.\n\nThe vertebrate A-band contains the Ig-Fn super-repeats of titin, which extend from the beginning myosin filament until the M-band, where titin\u2019s C-terminal kinase is located (Granzier et al., 2014; Lange et al., 2005; Linke, 2018). Interestingly, we demonstrate that in Drosophila flight muscles, Projectin, which is very similar to the A-band part of vertebrate titin, with long Ig-Fn super-repeats and a C-terminal kinase domain, starts about 90 nm from the Z-disc. Hence, it is very unlikely that it can interact with Z-disc components directly as these are far from the N-terminal end of Projectin (model in Figure 6C). Our precise distance measurements suggest that the N-terminus of Projectin, which does contain a series of Ig domains, typical for the I-band part of titin, is sticking into the flight muscle I-band, whereas its first Fn/Ig super-repeat is located at beginning of the A-band (110 nm from the Z-disc) and hence can interact with myosin, as can its remaining Ig-Fn super-repeats that extend over a length of about 250 nm towards the M-band. This localisation differs somewhat from what was found by STORM of dissected myofibrils which placed the Ig domain 26 of Projectin only about 70 nm from the Z-disc (Szikora et al., 2020). We found that the Projectin kinase localises in a sharp band; however, it remains far from the M-band. Hence, it is hard to imagine that Projectin alone can directly rule the A-band length of flight muscle sarcomeres as it is only present at its distal ends, spanning about 15% of the myosin filament.\n\n### Staggering insect titins to effectively transduce forces during flight?\n\nDrosophila flight muscles are very stiff to effectively power wing oscillations during flight at 200 Hz. The perpendicular arrangement of the antagonistic dorsoventral (DVMs) versus the dorso-longitudinal flight muscles (DLMs) enables an effective stretch-activation mechanism as trigger: contraction of the DVMs moves the wings up and stretches the DLMs to induce their contraction, which will move the wings down again for the next cycle (Dickinson et al., 2005; Pringle, 1981; Syme and Josephson, 2002). The importance of strain in these muscles is highlighted by their expression of a particular troponin C isoform (TpnC4), which requires to be stretched to displace tropomyosin from myosin binding sites on actin filaments (Agianian et al., 2004). Furthermore, myosin also experiences a stretch-induced deformation before effective actin binding and maximum force production (Iwamoto and Yagi, 2013). This suggests that very effective force transmission is needed during flight muscle oscillations.\n\nDrosophila sarcomeres contractions have a peak-to-peak amplitude of about 3.5% or 60 nm per half sarcomere during flight (measured in Drosophila virilis; Chan and Dickinson, 1996). This 3.5% strain is needed to produce the up to 110 W/kg power output of insect flight muscles (Chan and Dickinson, 1996), which is consistent with the hypothesis that strain across molecules stores the elastic energy for the next contraction cycle in Drosophila (Dickinson et al., 2005). A perfect candidate for such a molecule is Sls as it bridges across the I-band, which likely changes length during the fast contraction cycles. Thus, Sls length would oscillate during flight, which likely results in high oscillating forces across Sls during flight. A similar storage of elastic energy has been suggested for mammalian titin during sarcomere contraction cycles (Eckels et al., 2019; Rivas-Pardo et al., 2020).\n\nWhat is the role of Projectin? The precise linear arrangement of Projectin at the beginning of the myosin filament and the found overlap with Sls suggests that this staggered architecture of Sls and Proj might be required to effectively anchor Sls to the myosin filament and to prevent sarcomere rupturing during flight. Such flight-induced muscle ruptures are generated when muscle attachment to tendons is weakened, underscoring the high muscle forces and high strain produced during flight (Lemke et al., 2019). Projectin may thus serve as an effective glue to stably connect Sls to the myosin filament. This is also consistent with the findings that both Sls and Projectin are needed to assemble contractile sarcomeres in Drosophila larval muscles. Knockdown of either protein results in embryonic lethality and defective sarcomerogenesis (Loreau et al., 2023; Schnorrer et al., 2010). Taken together, the staggered architecture of the two Drosophila titin homologs may effectively allow force transduction and ensure the mechanical integrity of flight muscles sarcomeres, both very prominent functions of mammalian titin (Li et al., 2020; Rivas-Pardo et al., 2020; Swist et al., 2020).\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>Luminy</td>\n      <td>Leonte et al., 2021</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. melanogaster)</td>\n      <td>sls</td>\n      <td>http://flybase.org/reports/FBgn0086906</td>\n      <td>FBgn0086906</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. melanogaster)</td>\n      <td>bt (Projectin)</td>\n      <td>http://flybase.org/reports/FBgn0005666</td>\n      <td>FBgn0005666</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sls-Ig13/14 (Nano2)</td>\n      <td>Loreau et al., 2023</td>\n      <td></td>\n      <td>Nanobody \u2013 use at about 50 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sls-Ig49/50 (Nano39)</td>\n      <td>Loreau et al., 2023</td>\n      <td></td>\n      <td>Nanobody \u2013 use at about 50 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sls-Ig51-Fn2 (Nano42)</td>\n      <td>Loreau et al., 2023</td>\n      <td></td>\n      <td>Nanobody \u2013 use at about 50 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sls-Ig13/14 (Nano2)</td>\n      <td>Loreau et al., 2023</td>\n      <td></td>\n      <td>Nanobody \u2013 use at about 50 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Proj-Ig5-8 (Nano30)</td>\n      <td>Loreau et al., 2023</td>\n      <td></td>\n      <td>Nanobody \u2013 use at about 50 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Proj-Fn1/2 (Nano29)</td>\n      <td>Loreau et al., 2023</td>\n      <td></td>\n      <td>Nanobody \u2013 use at about 50 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Proj-Ig27-Fn35 (Nano33)</td>\n      <td>Loreau et al., 2023</td>\n      <td></td>\n      <td>Nanobody \u2013 use at about 50 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Proj-kinase (Nano37)</td>\n      <td>Loreau et al., 2023</td>\n      <td></td>\n      <td>Nanobody \u2013 use at about 50 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Proj-kinase (Nano35)</td>\n      <td>Loreau et al., 2023</td>\n      <td></td>\n      <td>Nanobody \u2013 use at about 50 nM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rhodamine-phalloidin</td>\n      <td>Invitrogen, Cat#R415</td>\n      <td></td>\n      <td>1 in 500</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>P1 imager \u2013 Atto643</td>\n      <td>Metabion</td>\n      <td>TAGATGTAT \u2013 Atto643</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>P3 imager \u2013 Cy3b</td>\n      <td>Metabion</td>\n      <td>TAATGAAGA \u2013 Cy3B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PS3 imager \u2013 Atto643</td>\n      <td>Metabion</td>\n      <td>TCCTCCC \u2013 Atto643</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PAINT data band extraction</td>\n      <td>https://github.com/PierreMangeol/titin_PAINT; Mangeol, 2022</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly strains and fly culture\n\nFly stocks were grown and maintained under normal culture conditions in humidified incubators with 12 hr light\u2013dark cycles on standard fly medium (Avellaneda et al., 2021). The particularly well-flying \u2018Luminy\u2019 strain was used in all experiments as wild type (Leonte et al., 2021). For all experiments, young 3\u201310-day-old flies were used.\n\n### Nanobody production and labelling\n\nNanobody production and labelling with fluorophores by maleimide chemistry through ectopic cysteines was done as described in detail in the accompanying paper (Loreau et al., 2023). To couple nanobodies to DNA oligos, the oligos (P1, P2, PS3) were ordered with a 5\u2032 amino group modification (e.g., Am-C6-TTT CTT CAT TAC) from IBA (G\u00f6ttingen) in HPLC-purified form and lyophilised as a triethylammonium (TEA) salt. Note that the absence of ammonia (NH4+) is essential for the procedure. 1 \u00b5mol of oligo was dissolved in 200 \u00b5l 30% acetonitrile (ACN), 15 mM TEA, which yielded a 5 mM stock at neutral pH (~7). 5 \u00b5l of a 100 mM cross-linker stock in 100% ACN (maleimido \u03b2-alanine NHS ester, Iris Biotec # MAA1020 or mal-PEG4-NHS, Iris Biotec # PEG1575) were added and allowed to react for 30 min on ice. Then, 1.6 \u00b5l 5 M sodium acetate, 0.1 M acetic acid (pH ~7) were added, and the modified oligo was precipitated by adding 1 ml 100% ACN and centrifugation for 10 min at 0\u00b0C at 12,000 rpm. This step removes any non-reacted maleimide. The pellet was then dissolved in 100 \u00b5l 30% ACN, and either stored in small aliquots at \u201380\u00b0C or used directly to label nanobodies at ectopic, reduced cysteines, as described for fluorophores in the accompanying paper (Loreau et al., 2023). Note that free oligo cannot be removed by gel filtration on Sephadex G25 because it appears with the conjugate in the void volume. It is best removed by modifying a still His14-SUMO or His14-NEDD8 tagged nanobody (Frey and G\u00f6rlich, 2014; Pleiner et al., 2015) and then using Ni(II) capture (where the free oligo remains non-bound) and proteolytic release of the then tag-free nanobody conjugate. The efficiency of conjugation can be assessed by SDS-PAGE, in which the oligo-modification results in a clear size shift. In addition, the density of modification can be calculated through OD260 and OD280 readings using \u03b5260 and \u03b5280 of the initial oligo and nanobody as input variables. The oligo modification by this method is usually quantitative already with a small (\u22651.1) molar excess of the maleimide oligo over modifiable cysteines. In case of incomplete modification, the conjugate can be purified on a MonoQ column, whereby the highly negative charged oligo causes stronger retention of the conjugate compared to the non-modified nanobody.\n\n### Flight muscle preparation, staining, and mounting for imaging\n\nIntact hemi-thoraces from adult males were prepared similar as described (Weitkunat and Schnorrer, 2014). Head, wings, and abdomen were clipped with sharp forceps and the intact thoraces were fixed for 20 min at room temperature in relaxing solution (4% PFA in 100 mM NaCl, 20 mM NaPi pH 7.2, 6 mM MgCl2, 5 mM ATP, 0.5% Triton X-100). After washing twice with relaxing solution, the thoraces were placed on a slide with double-sticky tape and cut sagittally with a sharp microtome blade (Pfm Medical Feather C35). The fixed hemi-thoraces were transferred to 24-well plates or Eppendorf tubes and blocked for 30 min at room temperature with 3% normal goat serum in PBS + 0.5% Tx-100 (PBS-T). Hemi-thoraces were stained overnight at 4\u00b0C with the combinations of nanobodies indicated, labelled with fluorophores or oligonucleotides (final concentration of about 50 nM). Actin was stained with phalloidin-rhodamine or phalloidin-Alexa488 (1:2000, Thermo Fisher; 2 hr at room temperature or overnight at 4\u00b0C). To mount the flight muscles as close as possible to the coverslip, an imaging chamber was built using a slide and #1 coverslips as spacers right and left of the samples. A layer of double sticky tape was built on the spacer and the imaging chamber was filled with either SlowFade Gold Antifade (Thermo Fisher) for confocal imaging or Imager solution for DNA-PAINT imaging. Stained hemi-thoraces were added, oriented with the flight muscles facing up and #1.5 coverslip was added. The chamber was sealed with nail polish for confocal imaging or Picodent glue for DNA-PAINT imaging.\n\n### Confocal imaging\n\nStained flight muscles were imaged on a Zeiss LSM880 confocal with a \u00d763 oil lens. Images were processed using Fiji (Schindelin et al., 2012).\n\n### DNA-PAINT imaging\n\n#### Materials\n\nCy3B-modified and Atto643-modified DNA oligonucleotides were custom-ordered from Metabion. Sodium chloride 5 M (cat#: AM9759) was obtained from Ambion. Coverslips (cat#: 0107032) and glass slides (cat#: 10756991) were purchased from Marienfeld and Thermo Fisher. Double-sided tape (cat#: 665D) was ordered from Scotch. Two-component silica twinsil speed 22 (cat#: 1300 1002) was ordered from picodent. Glycerol (cat#: 65516-500ml), methanol (cat#: 32213-2.5L), protocatechuate 3,4-dioxygenase pseudomonas (PCD) (cat#: P8279), 3,4-dihydroxybenzoic acid (PCA) (cat#: 37580-25G-F) and (+\u2212)\u20136-hydroxy-2,5,7,8- tetra-methylchromane-2-carboxylic acid (Trolox) (cat#: 238813-5G) were ordered from Sigma. Potassium chloride (cat#: 6781.1) was ordered from Carl Roth. Paraformaldehyde (cat#: 15710) was obtained from Electron Microscopy Sciences. 90 nm diameter Gold Nanoparticles (cat#: G-90-100) were ordered from Cytodiagnostics.\n\n#### Buffers\n\nFor imaging, the following buffer was prepared: Buffer C (1\u00d7 PBS, 500 mM NaCl). Directly before imaging Buffer C was supplemented with 1\u00d7 Trolox, 1\u00d7 PCA and 1\u00d7 PCD (see paragraph below for details). 100\u00d7 Trolox: 100 mg Trolox, 430 \u03bcl 100% methanol, 345 \u03bcl 1 M NaOH in 3.2 ml H2O. 40\u00d7 PCA: 154 mg PCA, 10 ml water and NaOH were mixed, and pH was adjusted to 9.0. 100\u00d7 PCD: 9.3 mg PCD, 13.3 ml of buffer (100 mM Tris-HCl pH 8, 50 mM KCl, 1 mM EDTA, 50% glycerol). All three were frozen and stored at \u201320\u00b0C.\n\n#### Sample preparation\n\nDrosophila hemi-thoraces were isolated and stained as described above with phalloidin Alexa488 (1:2000) and the two nanobodies coupled to either P1, P3, or PS3 oligos (about 50 nM) overnight. Before embedding the samples into the chamber, they were washed two times with PBS + 1% Triton. Hemi-thoraces were embedded as described above. Before assembling the chamber, the cover slip was treated with 90 nm diameter gold nanoparticles (cat#: G-90-100, Cytodiagnostics, 1:10 dilution into methanol). After assembling, the chamber was filled with imaging buffer containing the complementary P1, P3, or PS3 imaging oligos (see below for imaging conditions) and sealed with Picodent glue.\n\n#### Super-resolution microscope\n\nFluorescence imaging was carried out on an inverted microscope (Nikon Instruments, Eclipse Ti2) with the Perfect Focus System, applying an objective-type TIRF configuration with an oil-immersion objective (Nikon Instruments, Apo SR TIRF 100\u00d7, NA 1.49, Oil). A 561 nm and 640 nm (MPB Communications Inc, 2W, DPSS-system) laser were used for excitation. The laser beam was passed through clean-up filters (Chroma Technology, ZET561/10, ZET642/20x) and coupled into the microscope objective using a beam splitter (Chroma Technology, ZT561rdc, ZT647rdc). Fluorescence light was spectrally filtered with an emission filter (Chroma Technology, ET600/50m and ET575lp, ET705/72m and ET665lp) and imaged on a sCMOS camera (Andor, Zyla 4.2 Plus) without further magnification, resulting in an effective pixel size of 130 nm (after 2 \u00d7 2 binning).\n\n#### Imaging conditions\n\nSee Figure 4\u2014source data 1 and Figure 5\u2014source data 1.\n\n### Imager sequences\n\n#### Super-resolved image reconstruction\n\nThe data acquired during imaging was post-processed using the Picasso (Schnitzbauer et al., 2017) pipeline. First, the localisations were detected by a threshold-based detection and fitted with a least-square fit; the resulting localisation precision was estimated between 4 and 8 nm using the NeNA metric (Endesfelder et al., 2014). Next, the data was drift-corrected using a redundant cross-correlation and a fiducial marker-based drift correction. Then, a super-resolved image was rendered using Picasso render. From the images, the myofibrils for further analysis were selected interactively using the rectangular pick tool. All further analysis was done with customised Jupyter Notebooks.\n\n### Extraction of band positions from DNA-PAINT data\n\nExtraction of band positions from DNA-PAINT data was achieved the following way: first, individual myofibrils were manually selected using the rectangular selection tool from Picasso (Schnitzbauer et al., 2017) and saved in individual files.\n\nSecond, the remaining of the analysis was automated in custom codes written in Python. To limit localisation events arising from multiple emitters that create artefacts (Lelek et al., 2021), localisations were filtered based on the standard deviation of their Gaussian fits. Localisations kept were within a disc in the standard deviation space (sx, sy), centred on the maximum of the distribution and of radius 0.2 pixel.\n\nThird, individual Z-discs were automatically detected. This did not require super-resolved data and the process was the result of multiple steps: (a) the algorithm rotated selections and their localisations to orient the selection horizontally. (b) Localisations were projected along the main axis of the selection and their density was reported in a histogram, in which bin size was the same as the pixel size of the camera. The histogram can be seen as a low-resolution intensity profile along the myofibril. (c) The algorithm found peaks in the resulting histogram (with find_peaks from the SciPy library) corresponding to positions of Z-discs. (d) Once peaks were detected, the algorithm selected peaks that were relevant to the analysis using the fact that the distance between Z-discs is the size of a sarcomere.\n\nFourth, with the knowledge of Z-disc positions, the algorithm then focused on windows centred on Z-discs to extract the positions of bands: (a) Similar to step 3, the algorithm rotated the selection and stored localisations in a histogram, in which bin size is adjusted for best results (typical bin size was 13 nm). (b) Because DNA-PAINT data accumulate the localisations, the histogram of localisations can display fluctuations that make automated extraction of band positions difficult. Therefore, to locate the rough position of a given band, the data were first convolved with a Gaussian function of standard deviation 25 nm that smoothens fluctuations. (c) The resulting histogram was then analysed with a peak-finding algorithm to locate rough band positions. (d) Finally, to precisely locate band positions, the algorithm fitted a Gaussian function on the non-convolved data, in a window centred on each of the positions detected at the previous step. To ensure that the analysis was properly achieved, the results were visually checked. The code is available at https://github.com/PierreMangeol/titin_PAINT; Mangeol, 2022.\n\n### Average epitope positions using bootstrapping\n\nTo obtain an uncertainty estimate of the average position of epitopes, we used the bootstrapping method (Efron and Tibshirani, 1994). In brief, each dataset of an epitope is used to create 1000 bootstrap replicates. We generated a replicate by drawing individual values in a given dataset with replacement (i.e. each value can be drawn multiple times). The size of one replicate is the same as the one of the initial dataset. From each of these replicates, we computed the mean, and therefore obtained 1000 means from 1000 replicates. These 1000 means constitute the bootstrap data presented in Figure 6, each epitope having its own bootstrap data. Finally, 95% confidence intervals were obtained by extracting the 2.5% and 97.5% quantiles from these bootstrap data.\n\n### Materials availability statement\n\nNewly generated code is publicly available here at https://github.com/PierreMangeol/titin_PAINT, (copy archived at swh:1:rev:95e2ac29f658f8fca2435d93ab3c6326c786047d; Mangeol, 2022).\n\nNanobodies are described in Loreau et al., 2023, and expression plasmids will be made available from Addgene.\n",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "cd5e0869-6fdc-4cdd-a636-108b4b40da20",
+      "submission_id": "62ccb789-e7e7-4f8e-afbf-73d1a589a855",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michel Labouesse, https://ror.org/01c2cjg59 UMR7622, Institut de Biologie Paris-Seine, Sorbonne Universit\u00e9 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79344.sa0](https://doi.org/10.7554/eLife.79344.sa0)\n\nThis landmark study combines two advanced technologies, namely, nanobodies and DNA-PAINT, to define the position of several subdomains of the two fly titin homologs in adult flight muscles. Their results provide compelling evidence that Sallimus can bridge the Z-disk with the beginning of the myosin A-band. Furthermore, their results convincingly establish that Sallimus and Projectin partially overlap at the beginning of the A-band. The work should appeal to people interested in muscle biology and more generally to people interested in providing high-resolution images of long proteins.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michel Labouesse, https://ror.org/01c2cjg59 UMR7622, Institut de Biologie Paris-Seine, Sorbonne Universit\u00e9 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79344.sa1](https://doi.org/10.7554/eLife.79344.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Nanobodies combined with DNA-PAINT super-resolution reveal a staggered titin nano-architecture in flight muscles\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michel Labouesse (Reviewer #1); Guy M Benian (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe three external reviewers for each of your two manuscripts, along with myself as a guest editor, are overall supportive of your work. We think that you are introducing interesting tools, although one of the reviewers thinks that you overemphasized the novelty of nanobodies as an approach. The model you propose for sarcomere localization of the titin-like fly homologs Sallimus and Projectin is interesting and should inspire further work.\n\nThat being said, after exchanging views among the reviewers, we feel that there is probably too much redundancy between the two manuscripts in terms of methods and overall conclusions.\n\n1) We suggest that you merge both manuscripts. This would allow you to show that your data are consistent among the two different muscle types (leg muscle and flight muscle), with an overlap in localization of the C-term of Sls with the N-term of Projectin at the outer edge of the A-band. Generation of the nanobodies and their ability to penetrate tissues would be described only once.\n\n2) In terms of additional experiments, we ask that you use a nanobody-GFP to determine whether expression of the nanobody fused to mNeonGreen in muscle might affect muscle function or affect behavior of the fusion. You could easily test this by performing some sort of motility assays on the larva and determine whether muscle sarcomere structure is affected after immunostaining with various marker antibodies. Alternatively, you could use the nanobody-GFP to follow the course of a contraction/relaxation cycle in vivo. When reorganizing your manuscripts into a single one, please give better credit to the C. elegans muscle field (as requested by one reviewer), and generally attend to other minor comments formulated by the reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nMy main reservation over the two papers by Schueder et al. and by Loreau et al. concerns their level of redundancy. The Schueder et al. work is certainly more innovative and goes one step further in terms of biological conclusions than its companion manuscript by Loreau et al. In particular it makes an interesting comparison with vertebrate titin.\n\nAs it stands, Figures 1, 4, 5 of the Loreau et al. ms and much of Figures 1, 2 in this one are the same; furthermore, the Loreau et al. ms looks at the organization of different Sallimus isoforms in different muscle types, whereas this one looks at short isoforms in flight muscles, but the objectives are similar. One avenue to make the two manuscripts more clearly different would be to keep the presentation of nanobody isolation and penetration qualities to a single manuscript. A parallel strategy is to push the characterization of the use of nanobodies in vivo in the other manuscript and to explore whether the Sallimus C-ter and Projectin N-ter interact over their staggered overlapping area as the authors suggest at the end of their discussion, or whether the Sallimus C-ter could interact with myosin as the authors also raise in their discussion.\n\nReviewer #2 (Recommendations for the authors):\n\nThe manuscript is very clear and neatly presented. I have very few comments on the experimental design or the results, which follow very high standards. An apparent limitation to the study would reside in the lack of functional analysis to explore the insight gained from this work, and the functional role of the overlap between the two titin homologs. The study however is self sufficient, presents interesting and significant results, and describes a very clear experimental design which might be helpful to others in the field attempting to address similar questions.\n\nSpecific comments:\n\nLines 200-219: The DNA-PAINT description of chemical coupling is detailed but a figure would be helpful to support the text, showing reactions with structural formula.\n\nLines 515-516, Figure 1, Figure 2: A more detailed description of classical confocal microscopy setup (including pixel size) would be useful.\n\nLine 574: I could not find the number of independent samples/replicates (number of experimental replicates, individuals, muscles, sarcomeres) supporting the author's experimental results. In addition to the sample ID used for the microscopy images that are presented, it would thus be interesting to provide a statistics table including this information and in particular showing, for key quantitative results, the number of samples from which the data are derived.\n\nLine 580: An explicit description of the localisation precision for individual particles in the considered imaging conditions would be useful.\n\nReviewer #3 (Recommendations for the authors):\n\nOverall, this is a very nicely executed and described study! I have only a few minor suggestions for interpretation and mostly on writing to improve clarity:\n\n1. lines 115-117: In referring to exons in the gene, please change, \"C-terminally located exons\" to \"3' located\" or \"3'-most located\" exons.\n\n2. lines 148-152: \"These data demonsrate that Projectin is present in an extended conformation and since the flight muscle I-band extends less than 100 nm from the Z-disc\u2026, a large part of Project is present along the myosin filament.\" Are there reports of EM imaging of isolated Projectin with contour length measurements? Given the domain composition and molecular mass, it is likely that Projectin is about 200 nm long. Can this be taken into account in their description?\n\n3. lines 263-265: \"The N-terminus of Sls is located close to the Z-disk, with Ig13/14 only about 50 nm away from the center of the Z-disc\u2026\" Can the authors be more definitive in their description, perhaps saying something like, \"The result that nanobodies to Ig13/14 localize 50 nm away from the center of the Z-disc, is compatible with the very N-terminus of Sls being located at the center of the Z-disc, because the more N-terminal 12 Ig domains are likely to span 48 nm (longest dimension of Ig domain = 4 nm X 12 = 48 nm).\n\n4. lines 282-284 and Figure 5A: \"Our results verifeid that Sls-Ig13/14 is localizised about 50 nm away from the center of the Z-disk and that Sls-Ig51/Fn2 is about 50 nm further towards the middle of the sarcomere.\" Given that in the Sls domain map, Ig13/14 and Ig51/Fn2 are about 27 Ig domain from each other, wouldn't the authors expect that the observed distance should be about 108 nm? (27 Ig X 4 nm = 108 nm). And if so, can the authors say here that this implies that in the flight muscle imaged, this portion of Sls is not in an extended but likely \"jumbled\" or \"compressed\" chain of Ig domains?\n\n5. For all the images presented, how do you know where the center of the Z-disk is located? There do not appear to be any co-stainings with antibodies or nanobodies to \u03b1-actinin.\n\n6. line 385: Given that the I-band is bisected by the I-band, shouldn't the authors say here \"half I-band\" rather than \"I-band\"?\n\n7. In Figure 1B, it seems like three of the nanobodies (39, 42 and 48) localize to Z-disks but not to the bottom (or even top) of the Z-disks compared to nanobody 2, which seems to localize the full height of the Z-disk. Can the authors comment on this?\n\n8. Figure 6 is nicely presented. However, to help the reader, in part B, instead of listing the nanobody number, could the authors indicate to which domains the nanobodies were made? In part C, again to help the readers understand the full impact of the excellent results, could the authors indicate the N- and C-termini of Sls and Projectin?\n\nReviewer #4 (Recommendations for the authors):\n\nOverall, as it stands, this manuscript even if of high technological value, remains entirely descriptive and short in providing new insights into muscle structure and architecture. The main finding, an overlap between short Sls isoform and Proj in flight muscle sarcomeres, is redundant with the author's observation in the companion paper that in larval muscles expressing a long Sls isoform, Sls and Proj overlap as well.\n\nI would not recommend this manuscript for publication in eLife. It appears more suited for a specialized methodological development journal.\n\nCombination of Sls and Proj nanobodies with DNA-Paint represents an attractive example of technological development which alternatively could strengthen the co-submitted nanobodies toolkit manuscript.\n",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "69e142ac-2d7d-4603-a72a-1dd35f07dc33",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C1",
+      "claim": "Sarcomeres are the force-producing units of all striated muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Sarcomeres are the force-producing units of all striated muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in muscle biology, representing established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "ff624ceb-e075-43d1-8608-6b65118e48e9",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C2",
+      "claim": "In vertebrates, titin spans from the sarcomeric Z-disc to the M-band.",
+      "claim_type": "EXPLICIT",
+      "source": "Their nanoarchitecture critically depends on the large titin protein, which in vertebrates spans from the sarcomeric Z-disc to the M-band and hence links actin and myosin filaments stably together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about vertebrate titin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "e5e022b5-7aeb-4fbd-a415-ae08dc9de9e2",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C3",
+      "claim": "Titin links actin and myosin filaments stably together in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Their nanoarchitecture critically depends on the large titin protein, which in vertebrates spans from the sarcomeric Z-disc to the M-band and hence links actin and myosin filaments stably together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about titin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "487298f0-f6b0-44d7-8eff-b52b512824a5",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C4",
+      "claim": "Titin ensures sarcomeric integrity in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "This ensures sarcomeric integrity and determines the length of vertebrate sarcomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about titin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "eae70f0b-176f-4b20-a647-acd493ac133b",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C5",
+      "claim": "Titin determines the length of vertebrate sarcomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "This ensures sarcomeric integrity and determines the length of vertebrate sarcomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about titin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "5745a4a7-8ab1-4212-867d-12d61fca2d37",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C6",
+      "claim": "Sallimus bridges across the flight muscle I-band.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining nanobodies with DNA-PAINT super-resolution microscopy, we found that, similar to vertebrate titin, Sallimus bridges across the flight muscle I-band, whereas Projectin is located at the beginning of the A-band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the DNA-PAINT super-resolution microscopy data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "199d27e5-de13-4e15-9f2f-1543c7287c70",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C7",
+      "claim": "Projectin is located at the beginning of the A-band in flight muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining nanobodies with DNA-PAINT super-resolution microscopy, we found that, similar to vertebrate titin, Sallimus bridges across the flight muscle I-band, whereas Projectin is located at the beginning of the A-band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the DNA-PAINT super-resolution microscopy data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "47d1e07d-551b-4d86-a8fd-e0f81b73da14",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C8",
+      "claim": "The ends of Sallimus and Projectin overlap at the I-band/A-band border.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the ends of both proteins overlap at the I-band/A-band border, revealing a staggered organisation of the two Drosophila titin homologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the DNA-PAINT super-resolution microscopy data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "813f9bd7-6993-4c78-a46f-63317de77681",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C9",
+      "claim": "The two Drosophila titin homologs have a staggered organisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the ends of both proteins overlap at the I-band/A-band border, revealing a staggered organisation of the two Drosophila titin homologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the DNA-PAINT super-resolution microscopy data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "7ede11c0-8eb8-4bdc-a6cf-c2ba884729de",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C10",
+      "claim": "The staggered architecture of Sallimus and Projectin may help to stably anchor Sallimus at the myosin filament.",
+      "claim_type": "EXPLICIT",
+      "source": "This architecture may help to stably anchor Sallimus at the myosin filament and hence ensure efficient force transduction during flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed staggered architecture.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "e7517a0e-ca50-472f-b1bd-98dafac5dcd5",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C11",
+      "claim": "The staggered architecture may ensure efficient force transduction during flight.",
+      "claim_type": "EXPLICIT",
+      "source": "This architecture may help to stably anchor Sallimus at the myosin filament and hence ensure efficient force transduction during flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed staggered architecture.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "af3004bf-5d7f-4625-b914-0ba812e6950e",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C12",
+      "claim": "Sarcomeres are bordered by two Z-discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sarcomeres are bordered by two Z-discs, which anchor the plus ends of parallel actin filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about sarcomere structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "317bb3d9-a868-48bb-ab46-dfbc214f1ac8",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C13",
+      "claim": "Z-discs anchor the plus ends of parallel actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Sarcomeres are bordered by two Z-discs, which anchor the plus ends of parallel actin filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about sarcomere structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "60887c6c-ee0c-4c53-a007-bdde197c19b7",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C14",
+      "claim": "In vertebrate sarcomeres, titin's N-terminus is anchored to \u03b1-actinin at the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "In vertebrate sarcomeres, actin and myosin filaments are mechanically linked by the connecting filament built by the gigantic titin protein, whose N-terminus is anchored to \u03b1-actinin at the Z-disc while its C-terminus is embedded within the sarcomeric M-band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "f53bce3e-e99f-40a3-b9fe-d8f4db7fc87d",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C15",
+      "claim": "In vertebrate sarcomeres, titin's C-terminus is embedded within the sarcomeric M-band.",
+      "claim_type": "EXPLICIT",
+      "source": "In vertebrate sarcomeres, actin and myosin filaments are mechanically linked by the connecting filament built by the gigantic titin protein, whose N-terminus is anchored to \u03b1-actinin at the Z-disc while its C-terminus is embedded within the sarcomeric M-band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "e7181557-f95c-492b-b213-5ddd27317527",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C16",
+      "claim": "Titin spans as a linear protein across half a sarcomere in vertebrate muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, titin spans as a linear protein across half a sarcomere in vertebrate muscle (Gautel and Djinovi\u0107-Carugo, 2016; Lange et al., 2006; Linke, 2018; Squire et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "53cfee88-72a2-435d-9dd2-1886f7034025",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C17",
+      "claim": "The sarcomere length in relaxed human skeletal muscle is about 3 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "This stereotypic sarcomere architecture results in a defined sarcomere length (distance between two neighbouring Z-discs), which is about 3 \u00b5m in relaxed human skeletal muscle (Ehler and Gautel, 2008; Llewellyn et al., 2008; Regev et al., 2011), and is responsible for the typical striated appearance of skeletal muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "31367c21-cb59-4604-9038-d73eec6a8f98",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C18",
+      "claim": "Deletion of parts of titin's flexible I-band in mouse skeletal muscle resulted in a shortening of the sarcomeric I-band.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of parts of titin's flexible I-band or its stiff A-band regions in mouse skeletal muscle resulted in a shortening of the sarcomeric I-band or A-band, respectively (Brynnel et al., 2018; Tonino et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "a1d58488-79fe-4ea6-a457-8d38633e45c7",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C19",
+      "claim": "Deletion of parts of titin's stiff A-band regions in mouse skeletal muscle resulted in a shortening of the sarcomeric A-band.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of parts of titin's flexible I-band or its stiff A-band regions in mouse skeletal muscle resulted in a shortening of the sarcomeric I-band or A-band, respectively (Brynnel et al., 2018; Tonino et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "23846abb-06c3-42f4-85d3-29deed4cfe47",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C20",
+      "claim": "Titin is the main sarcomeric component responsible for the passive tension of the muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent evidence substantiated that titin is the main sarcomeric component responsible for the passive tension of the muscle, suggesting that mechanical tension present in relaxed muscle is stretching titin into its extended conformation (Li et al., 2020; Linke, 2018; Rivas-Pardo et al., 2020; Swist et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "4c892521-af9d-434a-bbda-2c765fc60cd5",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C21",
+      "claim": "Mechanical tension present in relaxed muscle is stretching titin into its extended conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent evidence substantiated that titin is the main sarcomeric component responsible for the passive tension of the muscle, suggesting that mechanical tension present in relaxed muscle is stretching titin into its extended conformation (Li et al., 2020; Linke, 2018; Rivas-Pardo et al., 2020; Swist et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature and represents an inference from those studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "c6556a05-9eae-4394-a78b-4cca5fd361d5",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C22",
+      "claim": "Titin mechanically links actin and myosin filaments together in vertebrate striated muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, titin mechanically links actin and myosin filaments together and is responsible for establishing and maintaining sarcomeric architecture in vertebrate striated muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited evidence about titin's structure and function.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "b753eee5-f4fc-45f4-8abe-9098c30265e9",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C23",
+      "claim": "Titin is responsible for establishing and maintaining sarcomeric architecture in vertebrate striated muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, titin mechanically links actin and myosin filaments together and is responsible for establishing and maintaining sarcomeric architecture in vertebrate striated muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited evidence about titin's structure and function.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "6e1ebd00-e69c-4f0f-9e89-fe8b016539f5",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C24",
+      "claim": "In Drosophila and Caenorhabditis elegans, titin's role appears to be split in two proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to vertebrates, titin's role in Drosophila and Caenorhabditis elegans appears to be split in two proteins, one containing the flexible I-band features and the other the stiff A-band features of titin (Flaherty et al., 2002; Loreau et al., 2023; Porto et al., 2021; Tskhovrebova and Trinick, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "543aeae6-78c2-43c3-8b6c-17078c91b551",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C25",
+      "claim": "The sarcomere length in Drosophila indirect flight muscles is about 3.5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, the sarcomere length is about 3.5 \u00b5m for indirect flight muscles and about 8 \u00b5m for larval body wall muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila muscle structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "400f2014-69e4-4321-b5a9-7201ee169ccc",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C26",
+      "claim": "The sarcomere length in Drosophila larval body wall muscles is about 8 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, the sarcomere length is about 3.5 \u00b5m for indirect flight muscles and about 8 \u00b5m for larval body wall muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila muscle structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "fdb8f3f1-4ae7-45b5-915f-dada2bc5d998",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C27",
+      "claim": "The majority of stiffness in Drosophila flight muscles is due to Sallimus.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of this stiffness is due to Sls in flight muscles (Kulke et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "68bd392d-34ec-4755-abf4-64fc2f678db5",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C28",
+      "claim": "A large part of the flexible spring domains encoded in sls and bent are skipped by alternative splicing in flight muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this high stiffness, a large part of the flexible spring domains encoded in both titin gene homologs sls and bent (bt; protein name: Projectin) are skipped by alternative splicing (Ayme-Southgate et al., 2005; Bullard et al., 2005; Burkart et al., 2007; Spletter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "f7ae58b3-4137-434b-8a03-412cb62ff715",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C29",
+      "claim": "The PEVK spring domains are largely spliced out in adult flight muscles in both sls and bent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that in both genes the flexible PEVK spring domains are largely spliced out in adult flight muscles; however, their more 3\u2032-located exons are present at least in some longer isoforms (Figure 1\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of transcriptomics data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "bd313c42-6299-4651-9374-dce65595e5ca",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C30",
+      "claim": "Both N-terminal anti-Sls nanobodies result in single bands at the Z-discs in flight muscles when observed with confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In flight muscles, both N-terminal anti-Sls nanobodies, namely, Sls-Nano2 (binding Sls-Ig13/14) as well as C-terminal anti-Sls nanobodies, namely, Sls-Nano42 (binding to SlsIg51/52), result in single bands at the Z-discs when coupled to fluorescent dyes and observed with confocal microscopy (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "70432dae-c3d7-40fc-9221-d2c12e031d64",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C31",
+      "claim": "C-terminal anti-Sls nanobodies result in single bands at the Z-discs in flight muscles when observed with confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In flight muscles, both N-terminal anti-Sls nanobodies, namely, Sls-Nano2 (binding Sls-Ig13/14) as well as C-terminal anti-Sls nanobodies, namely, Sls-Nano42 (binding to SlsIg51/52), result in single bands at the Z-discs when coupled to fluorescent dyes and observed with confocal microscopy (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "d10923be-f14a-444b-928e-6d478cb094b6",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C32",
+      "claim": "N-terminal anti-Projectin nanobodies each result in one band at the Z-disc in flight muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, N-terminal anti-Projectin nanobodies, here Proj-Nano30 (recognising Proj-Ig5-8) and Proj-Nano29 (binding Proj-Fn1-2), each result in one band at the Z-disc (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "6ffb225a-89cd-4bb4-8df8-ba41d19ea0a9",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C33",
+      "claim": "Nanobodies against C-terminally located Projectin domains result in two bands at large distances from the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, nanobodies against C-terminally located Projectin domains, here Proj-Nano33 (binding Proj-Ig27-Fn35) and Proj-Nano37 (binding the Projectin kinase domain), result in two bands at large distances from the Z-disc (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "9b70493c-9f51-458b-928d-4f211cc91ca6",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C34",
+      "claim": "Projectin is present in an extended conformation in flight muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that Projectin is present in an extended conformation, and since the flight muscle I-band extends less than 100 nm from the Z-disc (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020), a large part of Projectin is present along the myosin filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed band positions and cited literature about I-band length.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "ee6e78d8-9229-42b8-8330-873e90e8aae9",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C35",
+      "claim": "A large part of Projectin is present along the myosin filament in flight muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that Projectin is present in an extended conformation, and since the flight muscle I-band extends less than 100 nm from the Z-disc (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020), a large part of Projectin is present along the myosin filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed band positions and cited literature about I-band length.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "2ac662f7-5b71-48cf-b0a6-90966c565726",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C36",
+      "claim": "The flight muscle I-band extends less than 100 nm from the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that Projectin is present in an extended conformation, and since the flight muscle I-band extends less than 100 nm from the Z-disc (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020), a large part of Projectin is present along the myosin filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "767782a2-3267-4520-9ea1-b425493813fc",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C37",
+      "claim": "Sls-Ig13/14 is localised about 50 nm away from the centre of the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results verified that Sls-Ig13/14 is localised about 50 nm away from the centre of the Z-disc and that Sls-Ig51/Fn2 is about 50 nm farther towards the middle of the sarcomere (Figure 5A, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DNA-PAINT super-resolution microscopy data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "a4af003a-8443-4cc2-9302-4d3aa15ce815",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C38",
+      "claim": "Sls-Ig51/Fn2 is about 50 nm farther towards the middle of the sarcomere than Sls-Ig13/14.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results verified that Sls-Ig13/14 is localised about 50 nm away from the centre of the Z-disc and that Sls-Ig51/Fn2 is about 50 nm farther towards the middle of the sarcomere (Figure 5A, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DNA-PAINT super-resolution microscopy data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "dcc2cfa1-d9e7-447f-a4e1-0eb84c02e962",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C39",
+      "claim": "Sls is bridging across the entire sarcomeric I-band with its N-terminus anchored within the Z-disc and its C-terminal end reaching the myosin filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the I-band of flight muscles is less than 100 nm from the Z-disc (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020), this strongly suggests that Sls is bridging across the entire sarcomeric I-band with its N-terminus anchored within the Z-disc and its C-terminal end reaching the myosin filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured positions and cited literature about I-band length.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "45690f65-367f-4b01-be50-d6749185924b",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C40",
+      "claim": "Sls could mechanically link the Z-disc to the myosin filament in the flight muscles, similar to the long vertebrate titin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Sls could mechanically link the Z-disc to the myosin filament in the flight muscles, similar to the long vertebrate titin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observed architecture and comparison to vertebrate titin.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "73815e5c-f8ec-46cb-8fb7-6d70b007db9b",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C41",
+      "claim": "The N-terminus of Projectin is about 100 nm away from the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we found that the N-terminus of Projectin is also about 100 nm away from the Z-disc and thus located at the beginning of the thick filament (Figure 4A), we wanted to further investigate the precise orientation of the Projectin N-terminal domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DNA-PAINT super-resolution microscopy data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "5fbfa9ed-ca26-4d1b-b23a-650ad680d574",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C42",
+      "claim": "The N-terminus of Projectin is located at the beginning of the thick filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we found that the N-terminus of Projectin is also about 100 nm away from the Z-disc and thus located at the beginning of the thick filament (Figure 4A), we wanted to further investigate the precise orientation of the Projectin N-terminal domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the measured position and known sarcomere structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "95ac3d0f-8a92-460d-ae1f-982cbcba7754",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C43",
+      "claim": "The average distance between Proj-Ig5/8 and Pro-Fn1/2 epitopes is about 25 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we performed two-colour DNA-PAINT to localise Proj-Ig5/8 (with Proj-Nano30) and Pro-Fn1/2 (with Proj-Nano29) in the same sarcomere and found an average distance between the two epitopes of about 25 nm, with Proj-Ig5-8 being always closer to the Z-disc relative to Proj-Fn1/2 (Figure 5B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by two-colour DNA-PAINT data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "b18604be-f31d-4c39-88ed-b60c00e077e0",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C44",
+      "claim": "Proj-Ig5-8 is always closer to the Z-disc relative to Proj-Fn1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we performed two-colour DNA-PAINT to localise Proj-Ig5/8 (with Proj-Nano30) and Pro-Fn1/2 (with Proj-Nano29) in the same sarcomere and found an average distance between the two epitopes of about 25 nm, with Proj-Ig5-8 being always closer to the Z-disc relative to Proj-Fn1/2 (Figure 5B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by two-colour DNA-PAINT data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "ad2130fd-d00f-4f10-b232-a65481627ed9",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C45",
+      "claim": "Proj-Ig27-Fn35 epitope is located 350 nm away from the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the more C-terminally located Proj-Ig27-Fn35 epitope is located far into the myosin filament that begins at 100 nm (Szikora et al., 2020), being 350 nm away from the Z-disc (Figure 5B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by two-colour DNA-PAINT data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "64afcfff-5b73-480b-81b8-6760c95341d0",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C46",
+      "claim": "The N-terminal part of Projectin is arranged in an extended, likely linear conformation reaching from the myosin filament into the I-band.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that the N-terminal part of Projectin is arranged in an extended, likely linear conformation reaching from the myosin filament into the I-band and thus running in parallel to the C-terminal domains of Sls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured positions of Projectin domains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "52af717b-6f31-4370-a745-50fbea44ed36",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C47",
+      "claim": "The N-terminal part of Projectin runs in parallel to the C-terminal domains of Sls.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that the N-terminal part of Projectin is arranged in an extended, likely linear conformation reaching from the myosin filament into the I-band and thus running in parallel to the C-terminal domains of Sls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured positions of Projectin and Sls domains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "e4efa4c2-a18d-4739-bcc6-0e1bf396bbb2",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C48",
+      "claim": "Proj-Nano29 is about 15 nm farther from the Z-disc than Sls-Nano39 in all sarcomeres measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that in all sarcomeres measured, the Proj-Nano29 is about 15 nm farther from the Z-disc than Sls-Nano39, whereas, in 42 out of 45 sarcomeres investigated, Proj-Nano30 is on average 7\u20138 nm closer to the Z-disc than Sls-Nano42 (Figure 5C, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by two-colour DNA-PAINT data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "90506886-4f72-480f-8560-9eca3cd52335",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C49",
+      "claim": "In 42 out of 45 sarcomeres investigated, Proj-Nano30 is on average 7\u20138 nm closer to the Z-disc than Sls-Nano42.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that in all sarcomeres measured, the Proj-Nano29 is about 15 nm farther from the Z-disc than Sls-Nano39, whereas, in 42 out of 45 sarcomeres investigated, Proj-Nano30 is on average 7\u20138 nm closer to the Z-disc than Sls-Nano42 (Figure 5C, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by two-colour DNA-PAINT data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "40d04bda-f6d9-462d-9b87-d3fdb1aedfbd",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C50",
+      "claim": "There is a significant overlap of the linear Sls and Projectin proteins at the I-band/A-band interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data enabled us to build a molecular map of the Drosophila titin homologs in flight muscle sarcomeres, which revealed a significant overlap of the linear Sls and Projectin proteins at the I-band/A-band interface as visualised in a 'composite sarcomere' reconstructed by imaging flight muscles from six different hemi-thoraces (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the composite data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "6363dce9-9ff7-4a53-9cea-5d6bc5fb715c",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C51",
+      "claim": "The distance between the measured epitopes is constant despite variable sarcomere length.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy is valid as we found that although our mounting protocol for TIRF imaging results in a slightly variable sarcomere length of around 3.5 \u00b5m (Spletter et al., 2015), the distance between the measured epitopes is constant (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "71a5795c-59e6-4097-aba2-79726a94f7ec",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C52",
+      "claim": "The N-terminal Proj-Ig5-8 epitope is located 90 nm from the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling all data verified that the N-terminal Proj-Ig5-8 epitope is located 90 nm from the Z-disc, whereas the C-terminal Sls epitopes Sls-Ig49/50 and Sls-Ig51-Fn2 are located about 98 nm from the Z-disc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pooled DNA-PAINT data from all experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "d288aff5-8624-4f1d-b815-3c2242ee0885",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C53",
+      "claim": "The C-terminal Sls epitopes Sls-Ig49/50 and Sls-Ig51-Fn2 are located about 98 nm from the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling all data verified that the N-terminal Proj-Ig5-8 epitope is located 90 nm from the Z-disc, whereas the C-terminal Sls epitopes Sls-Ig49/50 and Sls-Ig51-Fn2 are located about 98 nm from the Z-disc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pooled DNA-PAINT data from all experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "0532e291-b4ed-4434-ba1f-26222f06d0d7",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C54",
+      "claim": "The staggered linear organisation of Sallimus and Projectin suggests a mechanism to mechanically link the sarcomeric Z-disc in insect flight muscle with the myosin filament.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a staggered linear organisation of Sallimus and Projectin, which suggests an attractive mechanism how to mechanically link the sarcomeric Z-disc in insect flight muscle with the myosin filament using both titin homologs (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the observed staggered architecture.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "3b42661f-6276-4a67-9cce-193ba674ce53",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C55",
+      "claim": "Nanobodies are very efficient in penetrating large flight muscle fibres containing highly packed sarcomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that our nanobodies are also very efficient in penetrating the large flight muscle fibres containing highly packed sarcomeres (Loreau et al., 2023), which are amongst the most protein-dense macromolecular structures in biology (Daneshparvar et al., 2020; Taylor et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the successful staining results and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "bdd7209e-498e-4cf0-ab97-e1890043f154",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C56",
+      "claim": "Flight muscle sarcomeres are amongst the most protein-dense macromolecular structures in biology.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that our nanobodies are also very efficient in penetrating the large flight muscle fibres containing highly packed sarcomeres (Loreau et al., 2023), which are amongst the most protein-dense macromolecular structures in biology (Daneshparvar et al., 2020; Taylor et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "7d713d4b-7f4e-4b1b-8710-48ac278bf81a",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C57",
+      "claim": "The location of Sls-Ig16 is about 50 nm from the centre of the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "This included the Sls-Ig16 antibody, locating Sls-Ig16 about 50 nm from the centre of the Z-disc (Szikora et al., 2020), which is in good agreement with the location of Sls-Ig13/14 we found here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous STORM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "f099e4fd-89eb-4d7f-bccf-1462fdf2065d",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C58",
+      "claim": "The Z-disc components \u03b1-Actinin and Zasp52 extend only about 35 nm from the centre of the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "This study further showed that the Z-disc components \u03b1-Actinin and Zasp52 extend only about 35 nm from the centre of the Z-disc, whereas Filamin stretches with its C-term to about 55 nm (Szikora et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous STORM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "7242a955-0b1e-4368-b8cb-791aacc969f1",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C59",
+      "claim": "Filamin stretches with its C-terminus to about 55 nm from the centre of the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "This study further showed that the Z-disc components \u03b1-Actinin and Zasp52 extend only about 35 nm from the centre of the Z-disc, whereas Filamin stretches with its C-term to about 55 nm (Szikora et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous STORM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "0fb718c6-086f-47bd-a7ef-933f85d62cd0",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C60",
+      "claim": "The N-terminus of Sls can reach and interact with Z-disc components including \u03b1-Actinin, Zasp52, and possibly Filamin.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that the N-terminus of Sls, with its remaining 12 Ig domains, can reach and interact with these Z-disc components and possibly also with Filamin, as has been reported biochemically (Gonz\u00e1lez-Morales et al., 2017; Liao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured positions and cited biochemical studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "45285b78-9b8d-422a-812a-13efc881a05a",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C61",
+      "claim": "The C-terminal end of Sls is located about 100 nm from the centre of the Z-disc in flight muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is insightful that our newly developed C-terminal Sls nanobodies show that the C-terminal end of Sls is located about 100 nm from the centre of the Z-disc in flight muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the DNA-PAINT data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "bbdeb957-c23f-469b-bd37-44ae03c84140",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C62",
+      "claim": "Myosin filaments begin about 100 nm from the centre of the Z-disc in flight muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we have not imaged myosin directly in our samples, both STORM and electron-microscopy studies demonstrated that myosin filaments begin about 100 nm from the centre of the Z-disc, making the half I-band less than 100 nm wide (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous STORM and electron microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "22945929-af31-4f60-8ad7-e67f1e2df726",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C63",
+      "claim": "Sls is spanning across the short flight muscle I-band and could interact through its C-terminal domains with the myosin filament.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that, as in vertebrates, Sls is indeed spanning across the short flight muscle I-band, where it could interact through its C-terminal domains with the myosin filament and hence could mechanically link the Z-disc with the myosin filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured positions and comparison to vertebrate titin.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "47a356ac-9a81-4495-aad8-39aa80d95fa9",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C64",
+      "claim": "The long isoform of the C. elegans titin homolog TTN-1 bridges across the I-band reaching the beginning of the A-band in C. elegans body muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the long isoform of the C. elegans titin homolog TTN-1 was shown to also bridge across the I-band reaching the beginning of the A-band in C. elegans body muscles and in vitro studies demonstrated that its C-terminal Ig38-40 domains indeed bind to myosin with low nanomolar affinity (Forbes et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "2a80546f-b041-4b3b-b2b7-6c5b0c5b919a",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C65",
+      "claim": "The C-terminal Ig38-40 domains of C. elegans TTN-1 bind to myosin with low nanomolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the long isoform of the C. elegans titin homolog TTN-1 was shown to also bridge across the I-band reaching the beginning of the A-band in C. elegans body muscles and in vitro studies demonstrated that its C-terminal Ig38-40 domains indeed bind to myosin with low nanomolar affinity (Forbes et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "b16448fa-9b41-44fa-a598-d423cbd54af9",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C66",
+      "claim": "Drosophila Sls may interact with myosin or Projectin and function as an I-band ruler in insect muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with our hypothesis that Drosophila Sls may interact with myosin or Projectin and thus function as an I-band ruler in insect muscles (see model in Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative hypothesis based on the observed architecture and comparison to other systems.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "1746a1d8-de8c-4bc2-9701-ee5241e4df1c",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C67",
+      "claim": "A chain of 40 Ig domains would result in a length of about 160 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "As the length of an isolated Ig domain is about 4 nm (Mayans et al., 2001), a chain of 40 Ig domains, which are present in the flight muscle Sls isoforms that we studied here, would result in a length of about 160 nm instead of the observed 100 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on cited structural data and the observed number of domains.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "6157f79a-b27a-439c-8f9d-ebd80e5e0af9",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C68",
+      "claim": "The Sls native structure in close proximity to actin filaments in the flight muscle I-band might be more complex than a straight linear array of Ig domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the Sls native structure in close proximity to actin filaments present in the flight muscle I-band might be more complex than a straight linear array of Ig domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discrepancy between calculated and observed lengths.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "cf545ae5-5579-4c3e-9627-282cb0611e67",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C69",
+      "claim": "Non-flight muscles like leg, jump, and larval muscles express longer versions of Sls that include the large and flexible PEVK domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The interpretation that Sls length rules I-band length is also supported by the observation that non-flight muscles like leg, jump, and larval muscles, which contain long I-bands, do express longer versions of Sls that include the large and flexible PEVK domains (Burkart et al., 2007; Spletter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "87ed75ae-859a-49a8-a722-a475399f3812",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C70",
+      "claim": "Sls is more than 2 \u00b5m long in larval muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the accompanying paper using the Sls nanobodies, we showed that Sls is more than 2 \u00b5m long in larval muscles to bridge over these long I-bands (Loreau et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the accompanying paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "055e42e0-50fa-4663-b9b6-3c58b6c60cf6",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C71",
+      "claim": "Sls determines I-band length in different muscle types.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that Sls determines I-band length in the different muscle types; however, a direct genetic test that modifies Sls length and assays I-band length remains to be done.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed correlation between Sls length and I-band length, but acknowledged as requiring further genetic testing.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "4b37be0b-d037-4003-921a-0282ec6e3c0c",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C72",
+      "claim": "Projectin starts about 90 nm from the Z-disc in Drosophila flight muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we demonstrate that in Drosophila flight muscles, Projectin, which is very similar to the A-band part of vertebrate titin, with long Ig-Fn super-repeats and a C-terminal kinase domain, starts about 90 nm from the Z-disc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the DNA-PAINT data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "8fbbba17-2e33-4aee-b18d-eed53e70b788",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C73",
+      "claim": "It is very unlikely that Projectin can interact with Z-disc components directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is very unlikely that it can interact with Z-disc components directly as these are far from the N-terminal end of Projectin (model in Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the measured distance between Projectin's N-terminus and Z-disc components.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "2bacfb6b-8c4d-4c5f-826b-522e462fb396",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C74",
+      "claim": "The N-terminus of Projectin is sticking into the flight muscle I-band.",
+      "claim_type": "EXPLICIT",
+      "source": "Our precise distance measurements suggest that the N-terminus of Projectin, which does contain a series of Ig domains, typical for the I-band part of titin, is sticking into the flight muscle I-band, whereas its first Fn/Ig super-repeat is located at beginning of the A-band (110 nm from the Z-disc) and hence can interact with myosin, as can its remaining Ig-Fn super-repeats that extend over a length of about 250 nm towards the M-band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured positions of Projectin domains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "7c433b2c-87db-495c-b285-8a4ef397ca4e",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C75",
+      "claim": "Projectin's first Fn/Ig super-repeat is located at beginning of the A-band (110 nm from the Z-disc).",
+      "claim_type": "EXPLICIT",
+      "source": "Our precise distance measurements suggest that the N-terminus of Projectin, which does contain a series of Ig domains, typical for the I-band part of titin, is sticking into the flight muscle I-band, whereas its first Fn/Ig super-repeat is located at beginning of the A-band (110 nm from the Z-disc) and hence can interact with myosin, as can its remaining Ig-Fn super-repeats that extend over a length of about 250 nm towards the M-band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured positions of Projectin domains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "3216aa30-9469-42db-877a-0ac6339a21fe",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C76",
+      "claim": "Projectin's Ig-Fn super-repeats extend over a length of about 250 nm towards the M-band.",
+      "claim_type": "EXPLICIT",
+      "source": "Our precise distance measurements suggest that the N-terminus of Projectin, which does contain a series of Ig domains, typical for the I-band part of titin, is sticking into the flight muscle I-band, whereas its first Fn/Ig super-repeat is located at beginning of the A-band (110 nm from the Z-disc) and hence can interact with myosin, as can its remaining Ig-Fn super-repeats that extend over a length of about 250 nm towards the M-band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured positions of Projectin domains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "6702e8c7-0fe1-45a9-9b50-dfa4104922e0",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C77",
+      "claim": "The Projectin kinase localises in a sharp band far from the M-band.",
+      "claim_type": "EXPLICIT",
+      "source": "This localisation differs somewhat from what was found by STORM of dissected myofibrils which placed the Ig domain 26 of Projectin only about 70 nm from the Z-disc (Szikora et al., 2020). We found that the Projectin kinase localises in a sharp band; however, it remains far from the M-band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the DNA-PAINT data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "185fa0f9-a604-4424-803f-c9f829d39902",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C78",
+      "claim": "It is hard to imagine that Projectin alone can directly rule the A-band length of flight muscle sarcomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is hard to imagine that Projectin alone can directly rule the A-band length of flight muscle sarcomeres as it is only present at its distal ends, spanning about 15% of the myosin filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed limited span of Projectin along the myosin filament.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "399d3016-7268-4d30-a2b9-7087747eec93",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C79",
+      "claim": "Drosophila flight muscles are very stiff to effectively power wing oscillations during flight at 200 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila flight muscles are very stiff to effectively power wing oscillations during flight at 200 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila flight muscle physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "b28aa409-4595-4d71-aefe-ba515ca674fa",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C80",
+      "claim": "Contraction of the DVMs moves the wings up and stretches the DLMs to induce their contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "The perpendicular arrangement of the antagonistic dorsoventral (DVMs) versus the dorso-longitudinal flight muscles (DLMs) enables an effective stretch-activation mechanism as trigger: contraction of the DVMs moves the wings up and stretches the DLMs to induce their contraction, which will move the wings down again for the next cycle (Dickinson et al., 2005; Pringle, 1981; Syme and Josephson, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on flight muscle mechanics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "87ae7d5b-72b1-4b62-9ad6-4bd068855087",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C81",
+      "claim": "Flight muscles express a particular troponin C isoform (TpnC4) which requires to be stretched to displace tropomyosin from myosin binding sites on actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of strain in these muscles is highlighted by their expression of a particular troponin C isoform (TpnC4), which requires to be stretched to displace tropomyosin from myosin binding sites on actin filaments (Agianian et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "eb01efda-f6da-4593-9f61-66c8f201c6bd",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C82",
+      "claim": "Myosin experiences a stretch-induced deformation before effective actin binding and maximum force production in flight muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, myosin also experiences a stretch-induced deformation before effective actin binding and maximum force production (Iwamoto and Yagi, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "13e36628-737b-469c-8469-2b5d607cdcec",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C83",
+      "claim": "Drosophila sarcomeres contractions have a peak-to-peak amplitude of about 3.5% or 60 nm per half sarcomere during flight.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila sarcomeres contractions have a peak-to-peak amplitude of about 3.5% or 60 nm per half sarcomere during flight (measured in Drosophila virilis; Chan and Dickinson, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "76e363bd-1e33-4f3c-9dad-2b1a2a44ea0c",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C84",
+      "claim": "Insect flight muscles can produce up to 110 W/kg power output.",
+      "claim_type": "EXPLICIT",
+      "source": "This 3.5% strain is needed to produce the up to 110 W/kg power output of insect flight muscles (Chan and Dickinson, 1996), which is consistent with the hypothesis that strain across molecules stores the elastic energy for the next contraction cycle in Drosophila (Dickinson et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "cf3408d8-ff3f-41f6-91e7-a1e94b6ccc89",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C85",
+      "claim": "Sls is a perfect candidate for storing elastic energy during flight muscle oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "A perfect candidate for such a molecule is Sls as it bridges across the I-band, which likely changes length during the fast contraction cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on Sls's position and the mechanics of muscle contraction.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "1484f3e5-9ac3-4231-b60a-92179fb40d51",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C86",
+      "claim": "Sls length would oscillate during flight, which likely results in high oscillating forces across Sls.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Sls length would oscillate during flight, which likely results in high oscillating forces across Sls during flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanics of muscle contraction and Sls's position.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "cd5bb326-ae9e-49ea-83b1-d7ba7c4ef8be",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C87",
+      "claim": "The staggered architecture of Sls and Projectin might be required to effectively anchor Sls to the myosin filament and to prevent sarcomere rupturing during flight.",
+      "claim_type": "EXPLICIT",
+      "source": "The precise linear arrangement of Projectin at the beginning of the myosin filament and the found overlap with Sls suggests that this staggered architecture of Sls and Proj might be required to effectively anchor Sls to the myosin filament and to prevent sarcomere rupturing during flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the observed architecture.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "47ccda80-ced7-4e03-88bd-0b0647c573cd",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C88",
+      "claim": "Flight-induced muscle ruptures are generated when muscle attachment to tendons is weakened.",
+      "claim_type": "EXPLICIT",
+      "source": "Such flight-induced muscle ruptures are generated when muscle attachment to tendons is weakened, underscoring the high muscle forces and high strain produced during flight (Lemke et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "ddee3f79-37b3-4435-87db-a17d2278d983",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C89",
+      "claim": "Projectin may serve as an effective glue to stably connect Sls to the myosin filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Projectin may thus serve as an effective glue to stably connect Sls to the myosin filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the observed overlap of Sls and Projectin.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "97b5d082-0fea-4e4a-80fe-79aa877548a7",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C90",
+      "claim": "Both Sls and Projectin are needed to assemble contractile sarcomeres in Drosophila larval muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also consistent with the findings that both Sls and Projectin are needed to assemble contractile sarcomeres in Drosophila larval muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "cacde72c-3fee-4c91-9deb-06b07636d6e2",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C91",
+      "claim": "Knockdown of either Sls or Projectin results in embryonic lethality and defective sarcomerogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of either protein results in embryonic lethality and defective sarcomerogenesis (Loreau et al., 2023; Schnorrer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "0805dd16-8ada-48fa-8336-1ca21c9f342a",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C92",
+      "claim": "The staggered architecture of the two Drosophila titin homologs may effectively allow force transduction and ensure the mechanical integrity of flight muscles sarcomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the staggered architecture of the two Drosophila titin homologs may effectively allow force transduction and ensure the mechanical integrity of flight muscles sarcomeres, both very prominent functions of mammalian titin (Li et al., 2020; Rivas-Pardo et al., 2020; Swist et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the observed architecture and comparison to mammalian titin.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "54f085c6-a446-4f83-a88d-782e0f66ec89",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C93",
+      "claim": "DNA-PAINT enables imaging at particularly high spatial resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve the relative localisation of Sls and Projectin, we turned our attention to super-resolution imaging with DNA-PAINT as it enables imaging at particularly high spatial resolution (Jungmann et al., 2014; Lelek et al., 2021; Schnitzbauer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on DNA-PAINT.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "6fa6ecf8-0415-45a9-aa01-fffa421fdc7b",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C94",
+      "claim": "The localisation precision of DNA-PAINT in this study was estimated between 4 and 8 nm using the NeNA metric.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the localisations were detected by a threshold-based detection and fitted with a least-square fit; the resulting localisation precision was estimated between 4 and 8 nm using the NeNA metric (Endesfelder et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis methods and citation to the NeNA metric.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "6f129c67-afaa-4ddc-92e3-1b7eb59bfa40",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "claim_id": "C95",
+      "claim": "The 95% confidence intervals for epitope positions were only 1\u20138 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the localisation of the different Sls and Projectin domains investigated using all sarcomeres measured resulted in a very high localisation precision with 95% confidence intervals of only 1\u20138 nm (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the bootstrapping analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8e327673-124a-4157-a238-4161af83a290",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the fundamental role of titin in vertebrate sarcomere structure. Titin spans from the Z-disc to the M-band, mechanically linking actin and myosin filaments, ensuring sarcomeric integrity, and determining sarcomere length (~3 \u00b5m in relaxed human skeletal muscle).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C12-C17, C22-C23 collectively describe well-established knowledge about vertebrate titin structure and function, supported by multiple citations to established literature. These claims provide essential background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "bbf273be-c448-4cf2-be6b-3ab717331361",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Recent genetic and mechanical studies demonstrate that titin determines sarcomere dimensions and is responsible for passive muscle tension. Deletion of titin's I-band or A-band regions in mouse skeletal muscle resulted in corresponding shortening of sarcomeric I-band or A-band, and mechanical tension in relaxed muscle stretches titin into its extended conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 are supported by citations to recent published genetic and mechanical studies (Brynnel et al., 2018; Tonino et al., 2017; Li et al., 2020; Linke, 2018; Rivas-Pardo et al., 2020; Swist et al., 2020). These provide important context for the titin ruler hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "611ce80c-02c4-4af9-9e65-8b951a5b7c98",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In Drosophila and C. elegans, titin's role appears to be split between two proteins with distinct I-band and A-band features. Drosophila sarcomere lengths are stereotypic: ~3.5 \u00b5m in indirect flight muscles and ~8 \u00b5m in larval body wall muscles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by citations to published literature and established knowledge about invertebrate muscle structure. This establishes the biological context and motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "2f889e01-f24b-41e4-9cf1-82a9e62f7ca2",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Drosophila flight muscles achieve high stiffness through alternative splicing of titin homologs. The majority of stiffness is due to Sallimus, and flexible PEVK spring domains in both sls and bent genes are largely spliced out in adult flight muscles, as verified by transcriptomics analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by citations to published literature (C27, C28) and by transcriptomics data analysis shown in Figure 1\u2014figure supplement 1 (C29). The data directly support the splicing patterns claimed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "2cc8e3c0-4302-4731-9981-e87d1699e723",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Confocal microscopy with fluorescently-labeled nanobodies reveals that N-terminal and C-terminal Sallimus nanobodies localize to single bands at Z-discs, while N-terminal Projectin nanobodies localize to Z-discs but C-terminal Projectin nanobodies localize to two bands at large distances from Z-discs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are directly supported by confocal microscopy data shown in Figures 1B and 1D. The images clearly show the described banding patterns for each nanobody, providing initial localization data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "fbe275f4-37af-4756-8f77-bece153ea953",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Projectin is present in an extended conformation in flight muscles, with a large part located along the myosin filament. This inference is based on the observed band positions and the established fact that the flight muscle I-band extends less than 100 nm from the Z-disc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 represent reasonable inferences from the confocal data (C33) combined with well-established measurements of I-band length from multiple cited studies (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "e9352746-2a48-4362-8f8e-c93b01e79ba7",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DNA-PAINT super-resolution microscopy enables imaging at high spatial resolution with localization precision of 4-8 nm using the NeNA metric. The final epitope position measurements achieved 95% confidence intervals of only 1-8 nm through bootstrapping analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 are supported by citations to DNA-PAINT literature (C93), the data analysis methods with citation to the NeNA metric (C94), and bootstrapping analysis shown in Figure 6B (C95). The precision estimates are appropriate for the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "3c864301-8b42-4713-9460-087106c0db12",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DNA-PAINT super-resolution reveals that Sallimus bridges across the entire flight muscle I-band. Sls-Ig13/14 is localized ~50 nm from the Z-disc center, and Sls-Ig51/Fn2 is ~50 nm farther toward the sarcomere middle, suggesting Sls mechanically links the Z-disc to the myosin filament similar to vertebrate titin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by DNA-PAINT data in Figure 5A showing precise epitope positions. The inference that Sls bridges the I-band (C39, C6) is well-supported given the measured positions and known I-band length (<100 nm). C40 is appropriately presented as speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "7a200948-785e-4e14-916a-b0d0b69d8d1f",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DNA-PAINT reveals that Projectin is located at the beginning of the A-band in flight muscles. The N-terminus of Projectin is ~100 nm from the Z-disc at the beginning of the thick filament. Two-color DNA-PAINT shows Proj-Ig5-8 and Proj-Fn1/2 are separated by ~25 nm, with Proj-Ig27-Fn35 located 350 nm from the Z-disc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45, C7 are directly supported by DNA-PAINT data shown in Figures 4A and 5B. The measurements are precise and consistent. The inference that Projectin is at the beginning of the A-band (C42, C7) is well-supported by the measured positions and cited I-band length.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "55ac759c-4734-497f-b834-afaf4e4bfc33",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The N-terminal part of Projectin is arranged in an extended, likely linear conformation reaching from the myosin filament into the I-band, running in parallel to the C-terminal domains of Sallimus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are reasonable inferences based on the measured positions of multiple Projectin domains (C43-C45) showing a progressive increase in distance from the Z-disc, consistent with a linear extended structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "d3a0a330-2d5c-4bc9-9165-f3bf980a824d",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Two-color DNA-PAINT reveals a staggered organization of Sallimus and Projectin with significant overlap at the I-band/A-band interface. Proj-Nano29 is ~15 nm farther from the Z-disc than Sls-Nano39, while in 42/45 sarcomeres, Proj-Nano30 is 7-8 nm closer to the Z-disc than Sls-Nano42.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50, C8-C9 are directly supported by two-color DNA-PAINT data shown in Figure 5C and the composite sarcomere in Figure 6A. The measurements are precise and reproducible, clearly demonstrating the staggered overlap of the two proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "b2cc565a-63dd-421f-92f0-18baa74ade33",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Despite variable sarcomere length (~3.5 \u00b5m), the distance between measured epitopes remains constant. Pooled data from all experiments places Proj-Ig5-8 at 90 nm and Sls-Ig49/50 and Sls-Ig51-Fn2 at ~98 nm from the Z-disc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by data shown in Figure 6\u2014figure supplement 1 (C51) and pooled analysis from all DNA-PAINT experiments (C52-C53). The constant epitope distances despite variable sarcomere length validate the pooling strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "72e7faa5-7e92-4c0a-bab3-bf1e53c08f4a",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The staggered architecture of Sallimus and Projectin may help stably anchor Sallimus at the myosin filament, ensure efficient force transduction during flight, and prevent sarcomere rupturing. Projectin may serve as an effective glue to connect Sls to the myosin filament.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10-C11, C54, C87, C89, C92 are speculative interpretations of the observed staggered architecture. While the structural data (C48-C50) are solid, the functional implications remain hypothetical without direct mechanical or genetic testing. The authors appropriately use cautious language ('may', 'suggests').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "597a9239-8b7f-4e0e-ad7e-8105bb338da4",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The nanobodies efficiently penetrate large flight muscle fibers containing highly packed sarcomeres, which are among the most protein-dense macromolecular structures in biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by the successful staining results throughout the manuscript and citations to published literature about sarcomere protein density (Daneshparvar et al., 2020; Taylor et al., 2019).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "62a3fb9a-3315-4b42-a9bf-1ca24f877977",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous STORM studies located Sls-Ig16 ~50 nm from the Z-disc center, consistent with the current findings. Z-disc components \u03b1-Actinin and Zasp52 extend ~35 nm from the Z-disc center, while Filamin extends to ~55 nm, suggesting the N-terminus of Sls can reach and interact with these Z-disc components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 are supported by citations to a previous STORM study (Szikora et al., 2020) and represent reasonable inferences about potential Sls interactions based on spatial proximity. The inference in C60 is appropriately supported by cited biochemical studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "e694261d-1824-44fc-90a4-bf7b72b64b4b",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The C-terminal end of Sls is located ~100 nm from the Z-disc center in flight muscles, where myosin filaments begin. This suggests Sls spans across the short flight muscle I-band and could interact with the myosin filament through its C-terminal domains, mechanically linking the Z-disc with the myosin filament.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by DNA-PAINT data (C61) and citations to previous STORM and EM studies establishing myosin filament position (C62). The inference about Sls spanning the I-band (C63) is well-supported by the combined data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "7e0f0d12-d873-4793-95db-9d0beee93882",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The C. elegans titin homolog TTN-1 bridges across the I-band reaching the A-band, and its C-terminal Ig38-40 domains bind myosin with low nanomolar affinity. This supports the hypothesis that Drosophila Sls may interact with myosin or Projectin and function as an I-band ruler.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are supported by citation to published literature (Forbes et al., 2010). C66 is appropriately presented as a speculative hypothesis based on the observed architecture and comparison to C. elegans, providing evolutionary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "a3ccb979-7c86-4845-b475-737c3046bda8",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A chain of 40 Ig domains would theoretically span ~160 nm, but the observed Sls length is only ~100 nm, suggesting the native Sls structure in the flight muscle I-band might be more complex than a straight linear array of Ig domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 represent a valid calculation based on cited structural data (Mayans et al., 2001) and the observed measurements. The inference about structural complexity (C68) is reasonable given the discrepancy, though alternative explanations are not fully explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "1e287f83-462a-40ca-8ad9-9cce0c2d0695",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Non-flight muscles with long I-bands express longer Sls versions including PEVK domains. Sls is >2 \u00b5m long in larval muscles, strongly suggesting Sls determines I-band length in different muscle types, though direct genetic testing remains to be done.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by citations to published literature (C69) and the accompanying paper (C70). The inference about Sls determining I-band length (C71) is appropriately presented as strongly suggested but requiring further genetic validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "a0dd52f0-8193-4cbb-ac04-aa584008033b",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Projectin starts ~90 nm from the Z-disc in flight muscles, making direct interaction with Z-disc components unlikely. The N-terminus extends into the I-band, the first Fn/Ig super-repeat is at the A-band beginning (110 nm), and Ig-Fn super-repeats extend ~250 nm toward the M-band. Projectin alone likely cannot rule A-band length as it spans only ~15% of the myosin filament.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C78 are supported by DNA-PAINT data throughout the manuscript. The inferences about Projectin's inability to interact with Z-disc components (C73) and rule A-band length (C78) are reasonable based on the measured positions and limited span along the myosin filament.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "b5a4b9ef-3abe-4b45-a9a6-7abd71478469",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Drosophila flight muscles are very stiff to power wing oscillations at 200 Hz through a stretch-activation mechanism. Flight muscles express TpnC4 requiring stretch for activation, myosin experiences stretch-induced deformation, sarcomere contractions have ~3.5% amplitude (60 nm per half sarcomere), producing up to 110 W/kg power output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 are supported by established knowledge (C79) and multiple citations to published literature on flight muscle mechanics and physiology (C80-C84). These provide important functional context for interpreting the structural findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "c36a2341-5b84-459a-8b05-bd44565a5c50",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Sls is a candidate for storing elastic energy during flight muscle oscillations. Sls length would oscillate during flight, likely resulting in high oscillating forces across Sls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C86 are speculative inferences based on Sls's position bridging the I-band and the mechanics of muscle contraction. While plausible, these functional claims lack direct experimental support and are appropriately presented as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    },
+    {
+      "id": "027b8a9b-4e0b-43b0-9844-028af297b84a",
+      "content_id": "2c03d258-fb6d-41b5-b2a7-246d461de0c8",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Flight-induced muscle ruptures occur when muscle-tendon attachment is weakened, underscoring high forces during flight. Both Sls and Projectin are needed to assemble contractile sarcomeres in larval muscles, and knockdown of either results in embryonic lethality and defective sarcomerogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88, C90-C91 are supported by citations to published literature (Lemke et al., 2019; Loreau et al., 2023; Schnorrer et al., 2010). These provide important functional context supporting the importance of both proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:24:14.263081Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "69e142ac-2d7d-4603-a72a-1dd35f07dc33",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "ff624ceb-e075-43d1-8608-6b65118e48e9",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "e5e022b5-7aeb-4fbd-a415-ae08dc9de9e2",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "487298f0-f6b0-44d7-8eff-b52b512824a5",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "eae70f0b-176f-4b20-a647-acd493ac133b",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "af3004bf-5d7f-4625-b914-0ba812e6950e",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "317bb3d9-a868-48bb-ab46-dfbc214f1ac8",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "60887c6c-ee0c-4c53-a007-bdde197c19b7",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "f53bce3e-e99f-40a3-b9fe-d8f4db7fc87d",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "e7181557-f95c-492b-b213-5ddd27317527",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "53cfee88-72a2-435d-9dd2-1886f7034025",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "c6556a05-9eae-4394-a78b-4cca5fd361d5",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "b753eee5-f4fc-45f4-8abe-9098c30265e9",
+      "result_id": "8e327673-124a-4157-a238-4161af83a290"
+    },
+    {
+      "claim_id": "31367c21-cb59-4604-9038-d73eec6a8f98",
+      "result_id": "bbf273be-c448-4cf2-be6b-3ab717331361"
+    },
+    {
+      "claim_id": "a1d58488-79fe-4ea6-a457-8d38633e45c7",
+      "result_id": "bbf273be-c448-4cf2-be6b-3ab717331361"
+    },
+    {
+      "claim_id": "23846abb-06c3-42f4-85d3-29deed4cfe47",
+      "result_id": "bbf273be-c448-4cf2-be6b-3ab717331361"
+    },
+    {
+      "claim_id": "4c892521-af9d-434a-bbda-2c765fc60cd5",
+      "result_id": "bbf273be-c448-4cf2-be6b-3ab717331361"
+    },
+    {
+      "claim_id": "6e1ebd00-e69c-4f0f-9e89-fe8b016539f5",
+      "result_id": "611ce80c-02c4-4af9-9e65-8b951a5b7c98"
+    },
+    {
+      "claim_id": "543aeae6-78c2-43c3-8b6c-17078c91b551",
+      "result_id": "611ce80c-02c4-4af9-9e65-8b951a5b7c98"
+    },
+    {
+      "claim_id": "400f2014-69e4-4321-b5a9-7201ee169ccc",
+      "result_id": "611ce80c-02c4-4af9-9e65-8b951a5b7c98"
+    },
+    {
+      "claim_id": "fdb8f3f1-4ae7-45b5-915f-dada2bc5d998",
+      "result_id": "2f889e01-f24b-41e4-9cf1-82a9e62f7ca2"
+    },
+    {
+      "claim_id": "68bd392d-34ec-4755-abf4-64fc2f678db5",
+      "result_id": "2f889e01-f24b-41e4-9cf1-82a9e62f7ca2"
+    },
+    {
+      "claim_id": "f7ae58b3-4137-434b-8a03-412cb62ff715",
+      "result_id": "2f889e01-f24b-41e4-9cf1-82a9e62f7ca2"
+    },
+    {
+      "claim_id": "bd313c42-6299-4651-9374-dce65595e5ca",
+      "result_id": "2cc8e3c0-4302-4731-9981-e87d1699e723"
+    },
+    {
+      "claim_id": "70432dae-c3d7-40fc-9221-d2c12e031d64",
+      "result_id": "2cc8e3c0-4302-4731-9981-e87d1699e723"
+    },
+    {
+      "claim_id": "d10923be-f14a-444b-928e-6d478cb094b6",
+      "result_id": "2cc8e3c0-4302-4731-9981-e87d1699e723"
+    },
+    {
+      "claim_id": "6ffb225a-89cd-4bb4-8df8-ba41d19ea0a9",
+      "result_id": "2cc8e3c0-4302-4731-9981-e87d1699e723"
+    },
+    {
+      "claim_id": "9b70493c-9f51-458b-928d-4f211cc91ca6",
+      "result_id": "fbe275f4-37af-4756-8f77-bece153ea953"
+    },
+    {
+      "claim_id": "ee6e78d8-9229-42b8-8330-873e90e8aae9",
+      "result_id": "fbe275f4-37af-4756-8f77-bece153ea953"
+    },
+    {
+      "claim_id": "2ac662f7-5b71-48cf-b0a6-90966c565726",
+      "result_id": "fbe275f4-37af-4756-8f77-bece153ea953"
+    },
+    {
+      "claim_id": "54f085c6-a446-4f83-a88d-782e0f66ec89",
+      "result_id": "e9352746-2a48-4362-8f8e-c93b01e79ba7"
+    },
+    {
+      "claim_id": "6fa6ecf8-0415-45a9-aa01-fffa421fdc7b",
+      "result_id": "e9352746-2a48-4362-8f8e-c93b01e79ba7"
+    },
+    {
+      "claim_id": "6f129c67-afaa-4ddc-92e3-1b7eb59bfa40",
+      "result_id": "e9352746-2a48-4362-8f8e-c93b01e79ba7"
+    },
+    {
+      "claim_id": "767782a2-3267-4520-9ea1-b425493813fc",
+      "result_id": "3c864301-8b42-4713-9460-087106c0db12"
+    },
+    {
+      "claim_id": "a4af003a-8443-4cc2-9302-4d3aa15ce815",
+      "result_id": "3c864301-8b42-4713-9460-087106c0db12"
+    },
+    {
+      "claim_id": "5745a4a7-8ab1-4212-867d-12d61fca2d37",
+      "result_id": "3c864301-8b42-4713-9460-087106c0db12"
+    },
+    {
+      "claim_id": "dcc2cfa1-d9e7-447f-a4e1-0eb84c02e962",
+      "result_id": "3c864301-8b42-4713-9460-087106c0db12"
+    },
+    {
+      "claim_id": "45690f65-367f-4b01-be50-d6749185924b",
+      "result_id": "3c864301-8b42-4713-9460-087106c0db12"
+    },
+    {
+      "claim_id": "73815e5c-f8ec-46cb-8fb7-6d70b007db9b",
+      "result_id": "7a200948-785e-4e14-916a-b0d0b69d8d1f"
+    },
+    {
+      "claim_id": "5fbfa9ed-ca26-4d1b-b23a-650ad680d574",
+      "result_id": "7a200948-785e-4e14-916a-b0d0b69d8d1f"
+    },
+    {
+      "claim_id": "95ac3d0f-8a92-460d-ae1f-982cbcba7754",
+      "result_id": "7a200948-785e-4e14-916a-b0d0b69d8d1f"
+    },
+    {
+      "claim_id": "b18604be-f31d-4c39-88ed-b60c00e077e0",
+      "result_id": "7a200948-785e-4e14-916a-b0d0b69d8d1f"
+    },
+    {
+      "claim_id": "ad2130fd-d00f-4f10-b232-a65481627ed9",
+      "result_id": "7a200948-785e-4e14-916a-b0d0b69d8d1f"
+    },
+    {
+      "claim_id": "199d27e5-de13-4e15-9f2f-1543c7287c70",
+      "result_id": "7a200948-785e-4e14-916a-b0d0b69d8d1f"
+    },
+    {
+      "claim_id": "64afcfff-5b73-480b-81b8-6760c95341d0",
+      "result_id": "55ac759c-4734-497f-b834-afaf4e4bfc33"
+    },
+    {
+      "claim_id": "52af717b-6f31-4370-a745-50fbea44ed36",
+      "result_id": "55ac759c-4734-497f-b834-afaf4e4bfc33"
+    },
+    {
+      "claim_id": "e4efa4c2-a18d-4739-bcc6-0e1bf396bbb2",
+      "result_id": "d3a0a330-2d5c-4bc9-9165-f3bf980a824d"
+    },
+    {
+      "claim_id": "90506886-4f72-480f-8560-9eca3cd52335",
+      "result_id": "d3a0a330-2d5c-4bc9-9165-f3bf980a824d"
+    },
+    {
+      "claim_id": "47d1e07d-551b-4d86-a8fd-e0f81b73da14",
+      "result_id": "d3a0a330-2d5c-4bc9-9165-f3bf980a824d"
+    },
+    {
+      "claim_id": "813f9bd7-6993-4c78-a46f-63317de77681",
+      "result_id": "d3a0a330-2d5c-4bc9-9165-f3bf980a824d"
+    },
+    {
+      "claim_id": "40d04bda-f6d9-462d-9b87-d3fdb1aedfbd",
+      "result_id": "d3a0a330-2d5c-4bc9-9165-f3bf980a824d"
+    },
+    {
+      "claim_id": "6363dce9-9ff7-4a53-9cea-5d6bc5fb715c",
+      "result_id": "b2cc565a-63dd-421f-92f0-18baa74ade33"
+    },
+    {
+      "claim_id": "71a5795c-59e6-4097-aba2-79726a94f7ec",
+      "result_id": "b2cc565a-63dd-421f-92f0-18baa74ade33"
+    },
+    {
+      "claim_id": "d288aff5-8624-4f1d-b815-3c2242ee0885",
+      "result_id": "b2cc565a-63dd-421f-92f0-18baa74ade33"
+    },
+    {
+      "claim_id": "7ede11c0-8eb8-4bdc-a6cf-c2ba884729de",
+      "result_id": "72e7faa5-7e92-4c0a-bab3-bf1e53c08f4a"
+    },
+    {
+      "claim_id": "e7517a0e-ca50-472f-b1bd-98dafac5dcd5",
+      "result_id": "72e7faa5-7e92-4c0a-bab3-bf1e53c08f4a"
+    },
+    {
+      "claim_id": "0532e291-b4ed-4434-ba1f-26222f06d0d7",
+      "result_id": "72e7faa5-7e92-4c0a-bab3-bf1e53c08f4a"
+    },
+    {
+      "claim_id": "cd5bb326-ae9e-49ea-83b1-d7ba7c4ef8be",
+      "result_id": "72e7faa5-7e92-4c0a-bab3-bf1e53c08f4a"
+    },
+    {
+      "claim_id": "ddee3f79-37b3-4435-87db-a17d2278d983",
+      "result_id": "72e7faa5-7e92-4c0a-bab3-bf1e53c08f4a"
+    },
+    {
+      "claim_id": "0805dd16-8ada-48fa-8336-1ca21c9f342a",
+      "result_id": "72e7faa5-7e92-4c0a-bab3-bf1e53c08f4a"
+    },
+    {
+      "claim_id": "3b42661f-6276-4a67-9cce-193ba674ce53",
+      "result_id": "597a9239-8b7f-4e0e-ad7e-8105bb338da4"
+    },
+    {
+      "claim_id": "bdd7209e-498e-4cf0-ab97-e1890043f154",
+      "result_id": "597a9239-8b7f-4e0e-ad7e-8105bb338da4"
+    },
+    {
+      "claim_id": "7d713d4b-7f4e-4b1b-8710-48ac278bf81a",
+      "result_id": "62a3fb9a-3315-4b42-a9bf-1ca24f877977"
+    },
+    {
+      "claim_id": "f099e4fd-89eb-4d7f-bccf-1462fdf2065d",
+      "result_id": "62a3fb9a-3315-4b42-a9bf-1ca24f877977"
+    },
+    {
+      "claim_id": "7242a955-0b1e-4368-b8cb-791aacc969f1",
+      "result_id": "62a3fb9a-3315-4b42-a9bf-1ca24f877977"
+    },
+    {
+      "claim_id": "0fb718c6-086f-47bd-a7ef-933f85d62cd0",
+      "result_id": "62a3fb9a-3315-4b42-a9bf-1ca24f877977"
+    },
+    {
+      "claim_id": "45285b78-9b8d-422a-812a-13efc881a05a",
+      "result_id": "e694261d-1824-44fc-90a4-bf7b72b64b4b"
+    },
+    {
+      "claim_id": "bbdeb957-c23f-469b-bd37-44ae03c84140",
+      "result_id": "e694261d-1824-44fc-90a4-bf7b72b64b4b"
+    },
+    {
+      "claim_id": "22945929-af31-4f60-8ad7-e67f1e2df726",
+      "result_id": "e694261d-1824-44fc-90a4-bf7b72b64b4b"
+    },
+    {
+      "claim_id": "47a356ac-9a81-4495-aad8-39aa80d95fa9",
+      "result_id": "7e0f0d12-d873-4793-95db-9d0beee93882"
+    },
+    {
+      "claim_id": "2a80546f-b041-4b3b-b2b7-6c5b0c5b919a",
+      "result_id": "7e0f0d12-d873-4793-95db-9d0beee93882"
+    },
+    {
+      "claim_id": "b16448fa-9b41-44fa-a598-d423cbd54af9",
+      "result_id": "7e0f0d12-d873-4793-95db-9d0beee93882"
+    },
+    {
+      "claim_id": "1746a1d8-de8c-4bc2-9701-ee5241e4df1c",
+      "result_id": "a3ccb979-7c86-4845-b475-737c3046bda8"
+    },
+    {
+      "claim_id": "6157f79a-b27a-439c-8f9d-ebd80e5e0af9",
+      "result_id": "a3ccb979-7c86-4845-b475-737c3046bda8"
+    },
+    {
+      "claim_id": "cf545ae5-5579-4c3e-9627-282cb0611e67",
+      "result_id": "1e287f83-462a-40ca-8ad9-9cce0c2d0695"
+    },
+    {
+      "claim_id": "87ed75ae-859a-49a8-a722-a475399f3812",
+      "result_id": "1e287f83-462a-40ca-8ad9-9cce0c2d0695"
+    },
+    {
+      "claim_id": "055e42e0-50fa-4663-b9b6-3c58b6c60cf6",
+      "result_id": "1e287f83-462a-40ca-8ad9-9cce0c2d0695"
+    },
+    {
+      "claim_id": "4b37be0b-d037-4003-921a-0282ec6e3c0c",
+      "result_id": "a0dd52f0-8193-4cbb-ac04-aa584008033b"
+    },
+    {
+      "claim_id": "8fbbba17-2e33-4aee-b18d-eed53e70b788",
+      "result_id": "a0dd52f0-8193-4cbb-ac04-aa584008033b"
+    },
+    {
+      "claim_id": "2bacfb6b-8c4d-4c5f-826b-522e462fb396",
+      "result_id": "a0dd52f0-8193-4cbb-ac04-aa584008033b"
+    },
+    {
+      "claim_id": "7c433b2c-87db-495c-b285-8a4ef397ca4e",
+      "result_id": "a0dd52f0-8193-4cbb-ac04-aa584008033b"
+    },
+    {
+      "claim_id": "3216aa30-9469-42db-877a-0ac6339a21fe",
+      "result_id": "a0dd52f0-8193-4cbb-ac04-aa584008033b"
+    },
+    {
+      "claim_id": "6702e8c7-0fe1-45a9-9b50-dfa4104922e0",
+      "result_id": "a0dd52f0-8193-4cbb-ac04-aa584008033b"
+    },
+    {
+      "claim_id": "185fa0f9-a604-4424-803f-c9f829d39902",
+      "result_id": "a0dd52f0-8193-4cbb-ac04-aa584008033b"
+    },
+    {
+      "claim_id": "399d3016-7268-4d30-a2b9-7087747eec93",
+      "result_id": "b5a4b9ef-3abe-4b45-a9a6-7abd71478469"
+    },
+    {
+      "claim_id": "b28aa409-4595-4d71-aefe-ba515ca674fa",
+      "result_id": "b5a4b9ef-3abe-4b45-a9a6-7abd71478469"
+    },
+    {
+      "claim_id": "87ae7d5b-72b1-4b62-9ad6-4bd068855087",
+      "result_id": "b5a4b9ef-3abe-4b45-a9a6-7abd71478469"
+    },
+    {
+      "claim_id": "eb01efda-f6da-4593-9f61-66c8f201c6bd",
+      "result_id": "b5a4b9ef-3abe-4b45-a9a6-7abd71478469"
+    },
+    {
+      "claim_id": "13e36628-737b-469c-8469-2b5d607cdcec",
+      "result_id": "b5a4b9ef-3abe-4b45-a9a6-7abd71478469"
+    },
+    {
+      "claim_id": "76e363bd-1e33-4f3c-9dad-2b1a2a44ea0c",
+      "result_id": "b5a4b9ef-3abe-4b45-a9a6-7abd71478469"
+    },
+    {
+      "claim_id": "cf3408d8-ff3f-41f6-91e7-a1e94b6ccc89",
+      "result_id": "c36a2341-5b84-459a-8b05-bd44565a5c50"
+    },
+    {
+      "claim_id": "1484f3e5-9ac3-4231-b60a-92179fb40d51",
+      "result_id": "c36a2341-5b84-459a-8b05-bd44565a5c50"
+    },
+    {
+      "claim_id": "47ccda80-ced7-4e03-88bd-0b0647c573cd",
+      "result_id": "027b8a9b-4e0b-43b0-9844-028af297b84a"
+    },
+    {
+      "claim_id": "97b5d082-0fea-4e4a-80fe-79aa877548a7",
+      "result_id": "027b8a9b-4e0b-43b0-9844-028af297b84a"
+    },
+    {
+      "claim_id": "cacde72c-3fee-4c91-9deb-06b07636d6e2",
+      "result_id": "027b8a9b-4e0b-43b0-9844-028af297b84a"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Immunopurification-mass spectrometry identified 200+ TORC1 interactors, including 45 proteins found in 7+ experiments. These include known TORC1 components (all four subunits, Gtr1/2, SEAC subunits) and 15 novel interactors including Ait1, Vsb1, and Vtc5 that bind as tightly as Gtr1/2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are well-supported by the mass spectrometry data in Figure 1 and Supplementary file 1. The crosslinking-IP approach is appropriate for capturing transient interactions, and the use of parallel FLAG and HA controls strengthens confidence. The quantitative comparison showing Ait1/Vsb1/Vtc5 bind as tightly as Gtr1/2 is based on PSM counts, a reasonable proxy for interaction strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C117",
+      "C118"
+    ],
+    "result": "Ait1 is a vacuolar membrane GPCR-like protein that physically interacts with TORC1. Reciprocal immunopurifications show TORC1 subunits (Kog1, Tor1, Tco89) are abundant in Ait1 purifications, and Ait1 copurifies with Kog1-FLAG in both nutrient-replete and starvation conditions (though at reduced levels after prolonged starvation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50-C54, C117-C118 are supported by complementary data: Ait1 localization to vacuolar membrane (Figure 2, colocalization with FM4-64), reciprocal IPs (Figures 3, 3-supplement 1), and crosslinking requirement (C119). The interaction persists across conditions, though quantitative changes during starvation are noted. The inference of 'close interaction' (C52) is reasonable given the abundance of TORC1 subunits captured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Ait1 deletion causes constitutive TORC1 body formation during log-phase growth and completely overrides defects in body formation caused by active Gtr1 (GTR1on), npr2\u0394, or pib2\u0394, but not by mutations in Kog1's prion-like domains. This places Ait1 downstream of Gtr1/2 and Pib2 in controlling TORC1 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are strongly supported by the genetic epistasis data in Figures 4-5C. The systematic analysis of double mutants provides clear ordering of pathway components. The inability of ait1\u0394 to rescue Prm1+2 mutants (C63) appropriately places Ait1 upstream of the prion-domain-mediated agglomeration mechanism. The microscopy is quantitative with adequate replication (>200 cells per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Unlike TORC1, Gtr1 and Pib2 remain largely distributed around the vacuolar membrane in ait1\u0394 cells, with some enrichment in foci likely driven by TORC1 agglomeration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by microscopy in Figure 5-supplement 1. The observation that Gtr1/Pib2 don't fully relocalize with TORC1 in ait1\u0394 is important for understanding the mechanism. However, C68 (that focal enrichment is 'likely driven by TORC1 agglomeration') is speculative, though reasonable given the known TORC1-Gtr1/Pib2 interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Ait1 deletion blocks TORC1 repression during amino acid and leucine starvation (maintaining 80-100% activity by phosphorylation assays), phenocopying constitutively active Gtr1. However, Ait1 does not affect TORC1 inhibition during complete nitrogen starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are well-supported by Western blots measuring Rps6 and Sch9 phosphorylation (Figure 6, supplements). The use of two independent TORC1 activity readouts strengthens the conclusion. The specificity for amino acid vs. nitrogen starvation (C71) is important and reproducible. The comparison to GTR1on provides appropriate context. Sample processing and quantification appear rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Genetic epistasis experiments with Gtr1/2 mutants show Ait1 is important for TORC1 inhibition in Gtr1off strains, has limited impact in Gtr2off strains, and actually helps activate TORC1 in Gtr1off/Gtr2off double mutants. Deletion of Gtr1, Gtr2, or both bypasses the need for Ait1, indicating Ait1 promotes TORC1 repression via Gtr1/2, likely by driving Gtr2 to its inactive GTP-bound state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by systematic epistasis analysis in Figure 7. The differential effects in different Gtr mutant backgrounds provide strong evidence for Ait1 acting through Gtr1/2. However, the specific mechanistic inference that Ait1 'drives Gtr2 into its inactive, GTP-bound state' (C78) is reasonable but not directly demonstrated - GTP/GDP loading states were not measured. The epistasis logic is sound but the molecular mechanism remains partially inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Sequence alignment reveals similarity between Ait1's C3 loop and the RagA/C-binding domain of SLC38A9. The C3 loop is 180 aa long and intrinsically disordered, with >50 aa flanking the putative Gtr1/2-binding sequence, providing sufficient length to extend from the vacuolar membrane over TORC1 to reach Gtr1/2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by sequence analysis (Figure 8A) and structural reasoning based on published SLC38A9-Rag structures (C81-C82 cite appropriate literature). The alignment shows clear similarity in a functionally relevant region. However, C83 (that Ait1 inhibits Gtr1/2 'via its C3 loop') is somewhat speculative at this stage - it's a reasonable hypothesis that is tested in subsequent experiments. The length calculation (C84) is straightforward and supports the model's plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Deletion or mutation of Ait1's C3 loop (but not C4 loop) impairs TORC1 inhibition during leucine/amino acid starvation. Point mutations in the conserved central region (ait1c3v1: 5 mutations; ait1c3v2: 7 mutations including I211A and I226A) cause signaling defects, with ait1c3v2 showing stronger defects than ait1c3v1, indicating I211 and/or I226 are critical. Control mutations (ait1c3v3) in a non-conserved region have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are well-supported by structure-function analysis (Figures 8B-C, supplements). The experimental design is strong: loop deletions, graded point mutations, and negative controls. All mutants properly localize (Figure 8-supplement 1), ruling out folding/trafficking defects. The graded severity (ait1c3v1 < ait1c3v2 < ait\u0394c3 < ait1\u0394) supports the C3 loop's importance while suggesting additional regulatory regions (C97). The control mutation (c3v3) appropriately shows no effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "C3 loop disruption triggers TORC1 body formation during nitrogen starvation and/or log-phase growth. The ait1c3v1, ait1c3v2, and ait\u0394c3 strains all show increased TORC1 foci compared to wild-type, with ait1c3v2 having a stronger phenotype than ait1c3v1, consistent with partial disruption in the latter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by quantitative microscopy (Figures 9A-B). The correlation between signaling defects and localization defects across the mutant series strengthens the conclusion that the C3 loop has dual functions. The graded phenotypes (C92) support the interpretation of partial vs. complete disruption. Adequate cell numbers were analyzed (>100 cells per timepoint per replicate, 3 replicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Coimmunoprecipitation experiments show Ait1 interacts with Gtr1/2 in both log-phase growth and starvation conditions. The Gtr1/2-Ait1 interaction is significantly weaker in the ait1c3v2 mutant compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by co-IP data (Figure 9C, supplement 1). Importantly, these experiments were done without crosslinker, demonstrating a stable interaction. The weakened interaction in ait1c3v2 directly links the C3 loop to Gtr1/2 binding. However, the interaction is not completely abolished in ait1c3v2, consistent with C97's suggestion of additional regulatory regions. Controls are appropriate (strains lacking tags).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The C3 loop in Ait1 helps hold TORC1 around the vacuolar membrane and drives TORC1 inhibition during amino acid starvation, likely by binding directly to Gtr1/2. However, signaling defects in C3 loop mutants are smaller than in ait1\u0394, suggesting Ait1 also regulates TORC1 via regions outside the C3 loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 represent reasonable integrative conclusions from the C3 loop experiments (Figures 8-9). The dual function (localization + signaling) is well-supported. The inference of 'direct binding' (C96) is supported by the co-IP data, though 'likely' appropriately hedges since indirect binding through other proteins isn't completely ruled out. C97's observation about incomplete phenotypes is important and honestly reported, suggesting additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Ait1 is found only in Saccharomycetaceae/codaceae (including S. cerevisiae, K. lactis, C. glabrata), families that split ~200 million years ago and uniquely have highly divergent/absent Rheb, lost TSC1/2, and possess prion-like domains in Kog1. A common ancestor likely lost Rheb/TSC1/2, gained prion-like domains in Kog1, and gained Ait1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C106-C110 are supported by phylogenetic analysis (Figure 10, Supplementary file 1) and cited literature. The BLAST search with appropriate cutoff (p<0.001) and the correlation between Ait1 presence and Rheb/TSC absence is clear. The evolutionary timeline (C107) is appropriately cited. C110's inference about the common ancestor is reasonable given the phylogenetic distribution, though it remains an inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The evolutionary events (loss of Rheb/TSC1/2, gain of prion-like domains in Kog1, gain of Ait1) were likely linked. Without Ait1 anchoring, prion-like domains would cause constitutive TORC1 body formation rather than regulated transitions. Ait1 has taken over part of ancestral Rheb's role in regulating TORC1 during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 represent evolutionary inferences supported by the functional data. C112 is directly supported by the ait1\u0394 phenotype (constitutive bodies during growth, C59). C113 is a reasonable inference given Ait1's role in starvation-induced TORC1 inhibition and the absence of Rheb in these species. However, C111 ('almost certainly linked') is somewhat strong - the correlation is clear but causality in evolution is difficult to prove definitively. The argument is logical but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Proposed model: During amino acid starvation, SEAC activates and triggers GTP hydrolysis in Gtr1. This causes conformational changes in Gtr1 and/or signals through Ait1, triggering changes in Ait1 structure/activity. Ait1 then drives GDP release from Gtr2, completing Gtr1/2 conversion to the inactive GDP/GTP state. The resulting conformational changes and C3 loop movement expose surfaces on TORC1 to initiate body formation. Strong SEAC signals (complete nitrogen starvation) may override Ait1 requirement due to Gtr1-Gtr2 coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C102 represent a speculative mechanistic model. While the model is consistent with all the data and provides a coherent framework, it lacks direct experimental validation. Key predictions are untested: (1) Gtr1/2 nucleotide states weren't measured; (2) Ait1 conformational changes weren't demonstrated; (3) the proposed GEF activity for Gtr2 wasn't directly shown; (4) C3 loop movement wasn't visualized. The model is reasonable and well-reasoned, but remains speculative. The authors appropriately acknowledge uncertainty (C103-C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors acknowledge that while their model explains the data, the precise mechanism of how Ait1 regulates Gtr1/2 and TORC1 remains unclear. Alternative mechanisms include Ait1 stabilizing the inactive Gtr1/2 state or controlling access to Gtr1/2 activators/repressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 represent appropriate scientific caution. The authors honestly acknowledge the limitations of their mechanistic understanding and propose alternative models. This strengthens rather than weakens the paper by clearly delineating what is known vs. inferred. These claims are essentially meta-statements about the certainty of other claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C115",
+      "C116"
+    ],
+    "result": "The TORC1 circuit in Saccharomycetaceae/codaceae has undergone significant evolutionary rewiring. While the core TORC1 pathway (TORC1 itself, Gtr1/2) is highly conserved, other aspects are plastic and have changed during evolution. Understanding these changes could enable development of drugs specifically targeting fungal pathogens and parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C115 represent well-supported general conclusions from the evolutionary analysis. The evidence for rewiring (Ait1 presence correlating with Rheb/TSC absence) is clear. However, C116 (drug development potential) is highly speculative - no drug development work was done, and the path from basic discovery to therapeutic application is long and uncertain. This is a reasonable discussion point but not a supported result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Ait1 deletion does not significantly impact Gtr1 molecular weight, indicating Ait1 doesn't regulate Gtr1/TORC1 via the observed posttranslational modification. Gtr1-myc copurifies with GFP-Ait1 after long-term starvation at 60% of log-phase levels. GFP-Ait\u0394C3 abundance is reduced to ~65% of wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by data in Figure 9-supplement 1. These are important controls and observations. C120-C121 rule out one potential mechanism (regulation via Gtr1 modification). C122 quantifies the starvation-dependent reduction in Ait1-Gtr1 interaction. C123 notes reduced Ait\u0394C3 abundance, which could partially contribute to its phenotype, though the effect is modest (65% vs. complete loss of function in signaling).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims about TORC1 regulation in eukaryotes, including its role in growth control, regulation by TSC/Rheb and Rags/GATOR in mammals, and the conservation and divergence of these pathways across evolution. S. cerevisiae has Gtr1/2 (Rag homologs) and SEAC (GATOR homolog) but lacks SLC38A9, Sestrins, CASTOR, SAMTOR, and functional TSC/Rheb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C28, C31-C35 represent established background knowledge appropriately cited to primary literature. These provide essential context for understanding the significance of the new findings. The claims about S. cerevisiae lacking certain mammalian TORC1 regulators (C34-C35) are well-established and motivate the search for alternative regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Prior work by the authors established that TORC1 in S. cerevisiae moves from distributed vacuolar localization to a single body during starvation, reversibly and independent of translation. TORC1-body formation requires Gtr1/2 inactivation and Pib2 interaction, is driven by prion-like domains in Kog1, and increases the threshold for TORC1 reactivation. These prion-like domains correlate with TSC gene absence across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 summarize the authors' previous work, appropriately cited. This prior work provides crucial context for the current study and motivated the search for factors controlling TORC1 localization. The correlation between prion-like domains and TSC absence (C42-C43) foreshadows the evolutionary theme developed with Ait1. These are established findings that frame the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C114"
+    ],
+    "result": "Speculative claims that conserved TORC1 pathway components remain to be discovered, simple eukaryotes have evolved novel mechanisms to replace Rheb/TSC, and it remains uncertain how Gtr1/2 regulate TORC1 without Rheb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C114 are explicitly speculative statements about gaps in knowledge. They are reasonable inferences from the observation that many organisms lack known TORC1 regulators but still regulate TORC1. These statements motivate the research but are not results per se - they are acknowledgments of uncertainty that frame the investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C124"
+    ],
+    "result": "Methodological details: The Kog1-FLAG/GFP-Ait1 interaction required crosslinker for detection. All strains were generated in haploid W303 S. cerevisiae using standard methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119 and C124 are straightforward methodological statements. C119 (crosslinker requirement) is important for interpreting the interaction data - it suggests the interaction may be transient or weak without crosslinking, or involves conformational changes. C124 is standard methods reporting. Both are adequately supported.",
+    "result_type": "MINOR"
+  }
+]

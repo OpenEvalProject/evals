@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors profiled 98,452 single cells from mouse retinas at five developmental time points (E13, E14, E16, P0, P5), identifying 75,115 (76%) as RGCs using canonical markers. Enrichment with Thy1 and L1cam antibodies increased RGC yield by >3\u00d7 at E14/E16 and >100\u00d7 at P0, with both methods capturing identical clusters at different frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 provide converging evidence for successful RGC enrichment and profiling. The cell counts, enrichment efficiencies, and marker validation are explicitly stated with supporting figures. The concordance between enrichment methods (C20) and comparison with unenriched datasets (C21) strengthen confidence in the sampling strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "RGC transcriptomic diversity increases gradually during development, with 10 clusters at E13 expanding to 45 by adulthood. Cluster boundaries become increasingly discrete with age, as quantified by diversity indices and classification metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 collectively demonstrate progressive diversification through multiple complementary analyses (cluster counts, diversity indices, classification error, inter-cluster distances). The gradual increase from 10 to 45 clusters argues against predetermined specification at birth, supporting the main conclusion in C27.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Supervised classification analysis reveals that correspondence between RGC clusters at consecutive developmental stages falls between fully specified and nonspecified extremes, with specificity increasing over time as measured by NCE and ARI metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 describe a coherent analytical approach using XGBoost classification with appropriate metrics (NCE, ARI). The intermediate correspondence patterns and age-dependent increase in specificity are explicitly shown in confusion matrices (Figure 3d-h), supporting the conclusion of gradual refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Waddington Optimal Transport (WOT) analysis indicates that individual RGCs at E13-E14 are multipotential but not totipotential, with average potential P=11.6 at E13 (~25% of maximum), and individual cells biased toward particular groups of adult types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C33 rely entirely on computational inference (WOT) without experimental validation. While the analysis appears rigorous with stability tests (Figure 4\u2014supplement 1), the authors acknowledge this limitation ('inferred rather than experimentally determined lineages'). The conclusions about multipotentiality cannot be definitively confirmed without lineage tracing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C39",
+      "C40"
+    ],
+    "result": "RGC types emerge through asynchronous fate decoupling, with different type pairs decoupling at different rates. Seven of 45 types are specified postnatally, and specification time is uncorrelated with adult frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C40 extend the WOT analysis to infer specification times through fate coupling decay models. While the logistic modeling approach is reasonable, it inherits all uncertainties from the WOT inference (C31-C33). The specification times are computational predictions requiring experimental validation. The lack of correlation with frequency (C39) is interesting but also model-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Eight transcription factors (Foxp2, Tbr1, Eomes, Neurod2, Irx3, Mafb, Tfap2d, Bnc2) are expressed by distinct, largely non-overlapping groups of mature RGC types, with 40/45 types expressing at least one. Types within TF-defined subclasses show significantly higher fate coupling than types across subclasses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 identify TF-based subclasses through expression analysis and validate them against fate coupling patterns. The mutually exclusive expression (C46) and differential fate coupling (C47, with statistical significance) provide converging evidence. Three TFs (Foxp2, Tbr1, Eomes) are supported by prior literature (C42-C44), strengthening confidence in the novel TFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "TF-defined RGC subclasses show distinct specification times: Eomes group at E14.6, Mafb at E16.9, and Neurod2 at E18.5 (all p<0.001). The early Eomes specification is consistent with earlier birthdates of ipRGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C51 report statistically significant differences in inferred specification times between TF groups. However, these times are derived from the WOT-based localization model (Figure 5g), inheriting its uncertainties. While the consistency with birthdating studies (C51) provides some external validation, the specification times themselves remain computational predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Ipsilateral (I-RGC) and contralateral (C-RGC) identities are marked by mutually exclusive expression of Zic2 and Isl2 at E13-E16. I-RGCs comprise 4.3% of adult RGCs, are enriched in specific embryonic clusters and adult TF groups, and show 59-89 differentially expressed genes at E13-E14 that decrease to zero by P5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 combine established markers (Zic2, Isl2) with new scRNA-seq data to characterize laterality specification. The mutually exclusive expression (C54, C56), differential gene expression with temporal dynamics (C58-C59), and enrichment patterns (C60-C61) are well-documented. The consistency with prior morphological/physiological observations (C62) provides external validation. However, WOT-based descendant tracking introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The authors conclude that RGC precursors are multipotential with continuous transcriptomic variation, diversifying into types through gradual fate restriction, and suggest similar strategies may generate cell classes from progenitors and types from postmitotic precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 summarizes the main conclusion, which is supported by multiple lines of computational evidence but lacks experimental validation of multipotentiality and fate restriction. Claim C64 is explicitly stated as a suggestion and represents speculation about broader applicability. The parallel between class and type generation is conceptually interesting but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The adult RGC atlas is based on 35,699 cells, powered to detect types at ~0.1% frequency, with no additional types found in ~120,000 additional cells. The 45-46 molecular types show excellent concordance with 42-47 types defined by functional/structural criteria and exhibit mosaic spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 establish the validity and completeness of the adult RGC atlas used as the reference. The power analysis (C68), lack of new types in expanded dataset (C69), concordance across modalities (C65, C70), and mosaic arrangement (C66) provide strong converging evidence. This is critical for interpreting developmental trajectories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Eomes is selectively expressed by ipRGCs and required for their formation, as Eomes mutants fail to form ipRGCs while retinas are otherwise normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 cites prior genetic evidence (Mao et al., 2014) demonstrating Eomes as a fate determinant. This provides proof-of-principle that TF-defined subclasses may be functionally meaningful, supporting the rationale for identifying additional candidate fate determinants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The authors propose a model where newborn RGCs are doubly specified by laterality and type, but the laterality program is shut down after axonal choice, based on few differentially expressed genes between mature I- and C-RGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is explicitly conditional ('Assuming that WOT results are valid') and presented as a suggested model. The observation of decreasing differential expression (C59) supports temporal dynamics, but the model of 'double specification' followed by 'shutdown' is speculative and requires experimental validation through perturbation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Similar postmitotic diversification has been observed in dorsal root ganglia sensory neurons and suggested for cortical excitatory and inhibitory neurons. The authors speculate this may be a general mechanism and provide a computational framework for investigating it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 accurately cite prior literature on postmitotic diversification in other systems. Claim C76 is explicitly speculative ('attractive to speculate'). Claim C77 about providing a computational framework is supported by the methods developed (WOT application, fate coupling analysis, specification time inference), though the framework's general applicability remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims establish retinal organization (5 neuronal classes, ~130 types in mouse/chick, distributed across retina), RGC diversity (~45 types in mouse), developmental timeline (birth E11-E17, >95% after E12.8, axon extension by E15, synapse formation P4-P10), and principles of RPC multipotentiality with temporal competence changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide essential background supported by extensive prior literature. These are well-established facts in the field, appropriately cited, and necessary context for interpreting the developmental study. They do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  }
+]

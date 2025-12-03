@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "When Dictyostelium discoideum cells are confined under a coverslip (50 \u03bcm vertical confinement), they rapidly consume oxygen and form a dense ring that migrates outwards at constant speed and density. Ring formation time depends non-linearly on initial cell density, and the collective migration can be self-maintained for tens of hours to days, spanning centimeters, while leaving a trail of cells behind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 are well-supported by experimental observations including microscopy data (Figure 1), confocal measurements of confinement height (C7, Figure 1\u2014figure supplement 1), and time-lapse imaging showing ring formation and expansion. The measurements are direct observations with appropriate imaging techniques and multiple independent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "After a transitory period, the migrating ring exhibits constant properties: speed of 1.2 \u00b1 0.3 \u03bcm/min (N=9), density of 1.9\u00d710\u00b3 \u00b1 0.3\u00d710\u00b3 cells/mm\u00b2 (N=4, fourfold higher than behind the ring), and constant width. The ring expansion while maintaining constant morphology implies continuous cell division plays an important role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are supported by quantitative measurements from multiple independent experiments (Figure 1\u2014figure supplement 3, Figure 1E). The inference about cell division (C15) is logical given that ring circumference increases while density remains constant. Sample sizes are adequate for the reported statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C19",
+      "C20"
+    ],
+    "result": "Cells in different regions of the colony exhibit distinct morphological and behavioral characteristics: cells behind the ring in the hypoxic region are elongated with normal speeds and low bias, while cells in the ring are round with normal speeds and high bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C19-C20 are supported by microscopy observations (Figure 1C, Video 2) and comparison to prior research on vegetative cell morphology. The characterization is consistent across multiple observations and provides clear phenotypic distinctions between regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Cell diffusion constant (28.2 \u00b1 1.4 \u03bcm\u00b2/min, N=3) and instantaneous speeds are fairly constant throughout the colony, but significantly non-zero directional biases are observed only in a region spanning the ring and a few tens of microns around it, with strongest positive biases in the ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by cell tracking data from high frame rate experiments (Figure 1\u2014figure supplements 4-5). The measurements include at least 2000 cells per experiment across 3 independent experiments, providing adequate statistical power. The spatial analysis of bias clearly distinguishes directed from random motion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Dictyostelium cells exhibit both aerotactic and aerokinetic responses in a low range of O\u2082 concentrations. Cell diffusion is significantly higher at 0.4% O\u2082 (40.2\u00b19.6 \u03bcm\u00b2/min) compared to atmospheric conditions (19.2\u00b18.8 \u03bcm\u00b2/min, p<0.0001). Cells accumulate at approximately 1% O\u2082 across different gradient conditions, suggesting O\u2082 levels (not gradient steepness) control aerotactic response, with measured aerotactic bias of 1.1 \u00b1 0.4 \u03bcm/min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 are well-supported by microfluidic experiments with controlled O\u2082 gradients and homogeneous O\u2082 environments (Figure 2, Figure 2\u2014figure supplement 8). The statistical significance (p<0.0001) for aerokinesis is reported, and measurements across multiple gaps and gradient reversals (N=6 conditions) support the conclusion about O\u2082 level control. The experimental design appropriately separates gradient effects from concentration effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In the spot assay, the ring position closely follows the dynamics of the O\u2082 field, tracking a constant oxygen concentration of 0.25%. Behind the ring, O\u2082 is completely depleted with no gradient; in front, O\u2082 remains high with high gradients; and in the ring region, O\u2082 is low (<1%) with strong gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by simultaneous imaging of cell behavior and O\u2082 distribution using custom O\u2082-sensing films (Figure 3, Video 3). The spatial correlation between ring position and O\u2082 concentration is directly measured and visualized. The O\u2082-sensing methodology is validated through calibration experiments (Figure 2\u2014figure supplements 1-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A cellular Potts model incorporating O\u2082 consumption, aerotaxis modulated by local O\u2082 concentrations, aerokinesis, and cell division reproduces experimental observations both qualitatively and quantitatively, including ring formation, constant speed after transient period, constant morphology, and the ring following a constant O\u2082 concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by computational modeling results (Figure 4, Videos 4-5, Figure 4\u2014figure supplements 1-3). The model successfully recapitulates key experimental features including ring speed (~1.1 \u03bcm/min), constant density and width, and O\u2082 tracking behavior. Parameters were fitted to experimental data, and the model shows good agreement across multiple metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Systematic variation of the cellular Potts model reveals that cell division and aerotactic modulation by local O\u2082 concentrations are the two key ingredients for ring formation. Reducing O\u2082 consumption has minimal effect on ring speed; removing cell division causes the ring to slow and stop; aerokinesis is not necessary for collective migration but affects ring density; and removing aerotactic modulation prevents distinct ring formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by systematic computational experiments varying model parameters (Figure 5, Figure 5\u2014figure supplement 1). Each variation tests a specific hypothesis about mechanism, and the results clearly distinguish essential from non-essential components. The inference about key ingredients (C43) is well-justified by the systematic exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Experimental validation in phosphate buffer (lacking nutrients) shows that a ring forms and expands initially but slows and stops after a few hours, in complete agreement with Cellular Potts Model predictions when cell division is removed. At longer times (>10h), cells enter developmental phase with aggregation, presumably due to cAMP signaling and cell adhesion molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by experimental observations (Figure 5\u2014figure supplement 2, Video 6) that match model predictions (Figure 5B). The agreement between experiment and model prediction validates the importance of cell division. Claim C47 is speculative but reasonably supported by comparison to known developmental timing from prior research (Gregor et al., 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "When two colonies are placed in close proximity, both simulations and experiments show that the formed rings rush toward one another, fuse to make an elliptical front, then relax toward circular shape. This demonstrates that the cellular Potts model recapitulates major experimental observations with only two key ingredients: cell division and aerotactic modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by both computational predictions and experimental validation (Video 7). The agreement between simulation and experiment for this more complex scenario strengthens confidence in the model. The conclusion about key ingredients (C50) is well-supported by the cumulative evidence from multiple model variations and experimental validations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Analysis of neutral labeling in the 'Go or Grow' PDE model shows that in the large bias regime the wave is pushed with spatially uniform mixing of two colored populations, while in the small bias regime the wave is pulled with only initially front cells conserved in the front. The cellular Potts model with neutral labeling shows rapid mixing consistent with a pushed wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by computational modeling results (Figure 7, Figure 7\u2014figure supplement 1). The neutral labeling analysis provides theoretical insight into wave dynamics and distinguishes pushed from pulled waves. The agreement between PDE and Potts models strengthens the conclusions. However, no experimental validation of the mixing prediction is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The 'Go or Grow' model with a second oxygen threshold shows propagation speed remaining close to the elementary model formula (at most 15% relative difference), and numerical exploration indicates that a wide combination of aerotaxis and cell division can drive stable wave propagation with various density profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by numerical simulations (Figure 6C, Figure 6\u2014figure supplement 1). The comparison shows robustness of the analytical formula to model variations. The exploration of different aerotactic response shapes demonstrates generality of the mechanism. The 15% difference is reasonable given the model modifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "The work demonstrates that oxygen can play the role of attractant in self-generated gradients, potentially extending physiological relevance. The fact that the dense front follows a constant oxygen concentration suggests that any situation with locally high cell density triggering hypoxic conditions will lead to similar behavior, with high cell densities and robust self-generated gradients being key to proper steering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C67 are inferences well-supported by the cumulative experimental and modeling evidence. The constant O\u2082 concentration tracking (Figure 3E, Figure 4E) provides strong mechanistic insight. The generalization is reasonable given the robustness demonstrated across different conditions and the 3D simulations (C65-C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Three-dimensional cellular Potts model simulations show that with oxygen provided on all sides, a spherical front of cells moves outwards, but if the bottom is deprived of oxygen, the front migrates upwards only in a half-spherical shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by 3D computational modeling results (Video 8). These simulations demonstrate that the 2D findings generalize to 3D and show how symmetry breaking affects migration direction. However, these are qualitative simulations without experimental validation, and the manuscript notes these are non-quantitative versions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Dictyostelium cells exhibit aerokinetic and aerotactic responses within 15 min when exposed to externally imposed O\u2082 gradients, and self-generated O\u2082 gradients are produced within 20 min in the spot assay. This cellular response is within the oxygen distribution equilibration time and can be considered almost instantaneous, likely due to the extreme plasticity of rapidly moving amoeboid cells and their adhesion-independent migration mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by experimental observations (Figure 2, Figure 3, Figure 2\u2014figure supplement 6). The timing measurements are direct and well-documented. Claim C71 is speculative but reasonably supported by comparison to prior research on different cell types (Friedl et al., 2001; Palecek et al., 1997). The rapid response is a notable finding distinguishing Dictyostelium from other cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The molecular mechanisms for O\u2082 sensing and transduction into cellular response in Dictyostelium are currently unknown, but may involve modulation of cytoskeleton organization through molecular components involved in classical chemotaxis toward folate or cAMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 accurately states current knowledge gaps. Claim C73 is speculative, supported only by analogy to known chemotaxis pathways (Pan et al., 2016; van Haastert et al., 2017). No direct experimental evidence for the proposed mechanism is provided. This represents a hypothesis for future work rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Prior models of self-generated LPA and folate gradients predicted features including an invasive front with steep gradients followed by a trailing end with shallow gradients, and wave dependence on cell density. These features are surprisingly similar to the experimental measurements of cell density and O\u2082 profiles in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 appropriately cite prior modeling work and draw valid comparisons to the current experimental results (Figure 1E, Figure 3C). The similarity supports the generality of self-generated gradient mechanisms across different systems. However, this is primarily a literature comparison rather than a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In the spot assay, atmospheric O\u2082 diffusing through culture medium and plastic surfaces acts as the chemoattractant. O\u2082 consumption triggers hypoxia generating an aerotactic response in a narrow range (0-1.5%). Cell growth is necessary for long-standing wave propagation, and directional motion contributes most to cell speed, ruling out a pulled wave driven by cell division and diffusion at the front edge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are inferences well-supported by the experimental setup, O\u2082 measurements (Figure 3C), and modeling analysis. The conclusion about directional motion dominance (C81) is based on parameter estimation and is consistent with the pushed wave analysis. The mechanistic understanding is coherent and well-integrated across experimental and theoretical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Prior research establishes that Dictyostelium discoideum is an obligatory aerobic organism requiring at least 5% O\u2082 for optimal growth (slower growth at 2% O\u2082), and that high oxygen level is one signal triggering culmination of the migrating slug during multicellular stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are appropriately cited from prior research (Cotter and Raper, 1968; Sandon\u00e0 et al., 1995; Xu et al., 2012). These establish relevant background about Dictyostelium oxygen requirements and responses. The citations appear accurate and appropriate for the context.",
+    "result_type": "MINOR"
+  }
+]

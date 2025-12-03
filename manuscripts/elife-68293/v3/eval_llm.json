@@ -1,0 +1,513 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study employed a 15-month randomized dietary intervention in cynomolgus macaques (n=20 Western, n=15 Mediterranean), with diets designed to mimic human Western and Mediterranean dietary patterns. The diets were matched for macronutrients and cholesterol but differed in fatty acid composition, with the Western diet high in saturated fats and the Mediterranean diet high in monounsaturated fats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C46-C56 describe the experimental design and diet composition. The study design is clearly documented with appropriate sample sizes, diet formulations based on established human dietary patterns (C48-C49 with CDC and prior research citations), and detailed nutritional composition (C50-C56). The 15-month duration and macaque model are well-justified (C41-C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Diet had a profound effect on monocyte gene expression, with 40% of tested genes (4,900/12,240) showing differential expression (FDR<0.05). The first principal component of gene expression (59% variance) was significantly associated with diet (p=1.7\u00d710\u207b\u2074) and correlated with proinflammatory genes. Effect sizes were 1.6-fold larger in Western genes compared to Mediterranean genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C57-C62 present the primary transcriptomic findings with appropriate statistical testing (FDR correction, t-tests with reported p-values). The magnitude of differential expression (40%) is substantial and well-supported by the data. PC1 analysis appropriately captures major variance and shows significant diet association. Effect size comparisons are statistically sound (Mann-Whitney U test, p=6.1\u00d710\u207b\u00b9\u00b9\u2077).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C78",
+      "C79"
+    ],
+    "result": "Monocytes from Western diet-fed animals exhibited a proinflammatory (M1-like) polarization phenotype, with increased expression of inflammatory genes (IL6, IL1A, NFKB1, NFKB2) and enrichment for M1-associated genes (fold-enrichment=1.27, 95% CI=1.09-1.46). Western genes were also enriched for metabolic processes including response to growth factor and insulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C63-C66, C78 demonstrate proinflammatory polarization with specific gene expression data (significant FDR values) and enrichment analysis (C78 with confidence intervals). The M1 enrichment is statistically significant and biologically meaningful. GO enrichment for metabolic processes (C67) is appropriately tested. However, the M1/M2 paradigm is acknowledged as oversimplified (C171), which is appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C80",
+      "C81",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Mediterranean diet monocytes showed enhanced oxidation-reduction processes (GO:0055114, p=6.0\u00d710\u207b\u00b3) and depletion of both M1 and M2 polarization genes. WGCNA module 5, more highly expressed in Mediterranean-fed animals, was depleted for M1 genes and enriched for oxidation-reduction processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C80-C81, C88-C90 show consistent patterns across multiple analytical approaches (GO enrichment, polarization gene analysis, WGCNA). The oxidation-reduction enrichment is statistically significant and biologically relevant (C70 notes this function keeps proinflammatory monocytes in check). The depletion of both M1 and M2 genes in Mediterranean samples (C80-C81) is interesting and well-supported statistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Western genes were enriched for genes causally implicated in human diet-associated diseases and metabolic traits, including celiac disease, body fat, BMI, and metabolite levels (HDL, LDL, adiponectin). Mediterranean genes showed no enrichment for any of 103 tested complex traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 compare DEGs to human disease-associated genes from a prior study (Zhang et al., 2020). The enrichment analysis is appropriately conducted with statistical testing and reported p-values. The lack of enrichment in Mediterranean genes (C77, all FDR>0.2) is a negative result that strengthens the specificity of Western diet effects. However, some fold-enrichment values appear counterintuitive (e.g., C72-C73 show fold-enrichment <1 for body fat and BMI, suggesting depletion rather than enrichment).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Transcription factor binding motif analysis revealed 34 motifs enriched near Mediterranean genes and one near Western genes (FDR<0.05). Diet altered expression of seven transcription factors including IRF3, IRF8, MEF2C, and SP1, which are known to drive monocyte fate and polarization, suggesting transcriptional regulation mediates diet effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86, C156-C158 present transcription factor analysis with appropriate statistical testing (FDR correction). The identification of specific TFs (C84-C85) with known roles in monocyte biology (supported by citations) strengthens the mechanistic interpretation. The inference that TF expression changes mediate diet effects (C86) is reasonable but remains correlative. The asymmetry (34 Mediterranean vs 1 Western motif) is striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "WGCNA identified 15 co-expression modules, with modules 8 and 10 more highly expressed in Western-fed animals and enriched for transcriptional regulation and M1 genes. Module 9 trended toward Western diet association and was enriched for inflammatory response genes, supporting multi-faceted proinflammatory polarization by the Western diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C91-C97 present WGCNA results with appropriate statistical testing (Holm-Bonferroni correction for multiple testing). Module 9 shows a trend (raw p=0.019) that doesn't survive correction (pHB=0.19), which is appropriately reported. The convergence of multiple modules showing Western diet-associated proinflammatory patterns (C97) is a reasonable synthesis, though it represents an inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "WGCNA modules 4 and 12 were depleted for diet-associated genes and enriched for viral defense response and adaptive immunity, respectively, suggesting these immune functions are less affected by diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 identify modules unaffected by diet with strong statistical support (p=2.1\u00d710\u207b\u00b9\u2077 and 3.9\u00d710\u207b\u00b9\u2079 for depletion). The GO enrichments for viral and adaptive immunity are highly significant. The inference that these functions are less diet-affected (C101) is reasonable but should be interpreted cautiously\u2014lack of differential expression doesn't necessarily mean lack of functional impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Diet altered gene co-expression patterns, with 445 gene pairs showing differential correlation (FDR<0.2). Hub gene analysis identified 16 genes with more differential correlations than expected, enriched for transcription factors including SOX4 and NR4A2 (metabolic regulators). The top hub gene was RF00283 (SCARNA18), a non-coding RNA associated with BMI, HDL, and aging in human GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111 present differential co-expression analysis using CILP method with appropriate FDR correction (though at a liberal threshold of 0.2). Hub gene identification uses permutation-based null distribution (C104). The enrichment for transcription factors (C105, OR=7.40, p=7.0\u00d710\u207b\u00b3) is statistically significant. RF00283 identification is well-supported by data and human GWAS associations (C110 with citations). The interpretation as a 'key transcriptional regulator' (C111) is somewhat speculative for a non-coding RNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C127"
+    ],
+    "result": "After 15 months on experimental diets, behavioral differences emerged between diet groups (no baseline differences). Mediterranean-fed animals spent more time in body contact and resting, while Western-fed animals spent more time alone. PC2 of behavior (19% variance, p=3.2\u00d710\u207b\u2074) captured diet-altered behaviors (DAB), correlating with social integration (body contact, r=0.89) and social isolation (alone time, r=-0.85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C124, C127 present behavioral findings with appropriate baseline controls (C112) and statistical testing (Mann-Whitney U tests with Holm-Bonferroni correction). The PCA approach is sound, and PC2 as a composite measure (DAB) is well-justified. Correlations are strong and highly significant. The interpretation of PC2 as capturing social integration vs. isolation (C127) is supported by the behavioral loadings and correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "A validated behavioral index of anxiety (self-grooming and scratching rate) loaded heavily onto PC2 and was negatively correlated with DAB score (r=-0.53, p=0.019), indicating Western-fed animals exhibited more anxiety-related behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 link anxiety behavior to diet effects. The anxiety index is well-validated in prior literature (C125 with multiple citations). The correlation with DAB (C126) is statistically significant and in the expected direction. This provides additional behavioral context beyond social behaviors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Mediation analysis revealed that DAB score significantly mediated the effect of diet on expression of 1,199 genes (24% of DEGs). DAB mediation accounted for more of the diet effect in Western genes (52.6%) than Mediterranean genes (45.3%, p=6.4\u00d710\u207b\u00b2\u2075). DAB-mediated genes were enriched for inflammatory response regulation, suggesting diet effects on gene expression are partially mediated through behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 present mediation analysis with appropriate bootstrapping approach (10,000 iterations) and statistical testing. The proportion of mediated genes (24%) is substantial. The differential mediation between Western and Mediterranean genes (C130) is statistically significant. GO enrichment for inflammatory response (C132) is significant. However, mediation analysis cannot definitively establish causal direction, which the authors acknowledge elsewhere (C199-C200).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "In the reverse mediation direction, gene expression significantly mediated the effect of diet on DAB in 898 genes (18% of DEGs), with 99% overlap with the behavior-mediated gene set. These genes were more likely to be Western genes (58%), though the proportion of diet effect mediated did not differ between Western and Mediterranean genes (both 27.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 present reverse mediation analysis with the same methodological rigor. The high overlap (99%, C136) between the two mediation directions is notable and suggests bidirectional relationships. The finding that mediation proportion doesn't differ by gene set (C138, p=0.55) contrasts with the forward mediation (C130) and is appropriately reported. This supports the authors' conclusion that multiple pathways may be involved (C199).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C190"
+    ],
+    "result": "Western diet-fed animals exhibited higher expression of proinflammatory CTRA genes (p=0.016) and lower expression of antiviral/antibody-related CTRA genes (p=0.023), supporting a pathway linking diet, behavior, and monocyte function through the conserved transcriptional response to adversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140, C190 analyze CTRA gene expression with appropriate statistical testing (Mann-Whitney U). The pattern (increased inflammatory, decreased antiviral) is consistent with the CTRA framework from prior literature (Cole et al., 2015). However, the inference that this 'supports the pathway' (C190) linking diet, behavior, and monocyte function is somewhat circular\u2014the CTRA analysis doesn't independently validate the mediation results but rather shows consistency with expected patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Western diet induced substantial individual variation across phenotypes (body weight, gene expression, behavior), with no consistent pattern of individual responsiveness across phenotypes. Body weight change did not predict monocyte gene expression (all FDR>0.2), suggesting a mosaic response involving multiple interacting factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 document individual variation with appropriate statistical testing (C143-C144 report non-significant associations). The lack of correlation across phenotypes (C143) is an important negative result. The interpretation as a 'mosaic response' (C145) is reasonable but the proposed mechanisms (interactions between diet, stress, behavior, environment, microbiome, genome/epigenome) are speculative. This finding has important implications for understanding diet effects but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "This study demonstrates for the first time that whole-diet manipulation profoundly affects monocyte polarization and social behavior in primates. The Western diet promoted a proinflammatory monocyte phenotype, supporting the role of altered monocyte programming as a mechanism underlying evolutionary mismatch between ancestral and modern diets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148, C212-C215 summarize the main findings. The novelty claim (C146 'for the first time') regarding whole-diet manipulation in primates is supported by the literature review (C30-C31 critique prior single-nutrient studies). The magnitude of effects (40% DEGs, C147) is substantial. The inference about evolutionary mismatch (C215) is reasonable given the data but remains somewhat speculative\u2014the study doesn't directly test evolutionary hypotheses or compare to ancestral diets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study is contextualized within established knowledge that Western diets (high in simple sugars and saturated fats) are associated with chronic diseases and inflammation, while Mediterranean diets (plant-based, high in monounsaturated fats) are associated with anti-inflammatory phenotypes and better health outcomes. This relationship is attributed to evolutionary mismatch between human physiology and modern nutritional environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C13-C26 establish the scientific context through citations to prior literature. These are well-established relationships in the field, appropriately cited. The evolutionary mismatch hypothesis (C2, C21) is a theoretical framework supported by prior work (citations to Eaton et al., 1988; Lieberman, 2014; Stearns and Koella, 2008). This background appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The mechanisms linking diet to health remain poorly understood, particularly in humans where confounding factors (physical activity, caloric intake) complicate causal inference. Prior studies relied on correlational analyses or single-nutrient manipulations. The preclinical randomized design in macaques allows causal inferences about diet effects and provides mechanistic insights into evolutionary mismatch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31, C153-C155 identify gaps in prior research and justify the study design. The critique of prior work (correlational human studies, single-nutrient animal studies) is well-supported by citations (C30-C31). The claim that the randomized design 'allows causal inferences' (C154) is reasonable but should be qualified\u2014while randomization supports causality, the macaque model has limitations for human extrapolation (acknowledged in C206).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Monocytes vary along a spectrum from proinflammatory (M1) to regulatory (M2) phenotypes, with appropriate balance essential for immune health. The study acknowledges that the M1/M2 paradigm is an oversimplification and that observed gene expression patterns could reflect changes in monocyte subset proportions and/or polarization within subsets, as relative abundance was not assessed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36, C171-C174 establish the biological framework for monocyte polarization with appropriate citations (C34-C35). The acknowledgment of M1/M2 oversimplification (C171) and the limitation regarding subset abundance (C173) demonstrate appropriate scientific caution. The speculation about alternative interpretations (C174) is reasonable and appropriately qualified. This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C184",
+      "C185",
+      "C186",
+      "C189"
+    ],
+    "result": "Social adversity increases inflammatory gene expression in immune cells. Food constituents can alter social behaviors, suggesting diet effects on immune cells may be mediated through behavioral changes. Conversely, diet-induced inflammation may alter behavior. Social isolation and anxiety from Western diet consumption may increase sympathetic activity and cortisol, modulating monocyte inflammatory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C40, C184-C186, C189 propose mechanistic pathways linking diet, behavior, and immune function. While C37 is well-supported by citations to prior work, the proposed mechanisms (C39, C40, C186, C189) are largely speculative hypotheses. The mediation analyses (C128-C138) show associations but cannot establish causal mechanisms. The authors appropriately acknowledge uncertainty about directionality (C199-C200), but the mechanistic claims remain speculative pending further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C181",
+      "C182",
+      "C187",
+      "C188"
+    ],
+    "result": "Prior reports from this trial showed that Western diet increased body weight, body fat, insulin resistance, hepatosteatosis, stress responses, and altered brain neuroanatomy. The Western diet group also had lower vagal activity, altered gut microbiome, increased sympathetic activity, and increased cortisol concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C181-C182, C187-C188 reference prior publications from the same study cohort with appropriate citations (Shively et al., 2019, 2020; Frye et al., 2021; Nagpal et al., 2018a). These provide important context for interpreting the current findings and support proposed mechanistic pathways. The integration of findings across multiple publications from the same study is appropriate and strengthens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C149",
+      "C151",
+      "C152",
+      "C204",
+      "C205"
+    ],
+    "result": "The findings extend prior human studies showing diet effects on monocyte inflammatory genes and are consistent with comparative studies showing lower disease rates in traditional populations. Macaques are a well-established model for human health, and dietary manipulation in macaques produced gut microbiome changes similar to humans, supporting translational relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149, C151-C152, C204-C205 contextualize findings within prior literature. The comparison to human studies (C149 with citation to Camargo et al., 2012) is appropriate. The macaque model justification (C204 with extensive citations) is well-supported. The gut microbiome similarity to humans (C205 citing Nagpal et al., 2018b) strengthens translational relevance. These claims appropriately position the work within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "Extrapolation to human health should be done with caution given 25 million years of divergent evolution between humans and macaques. Defining a 'control' diet is difficult\u2014standard monkey chow contains soy isoflavones with biological activity and doesn't recapitulate natural macaque diet, leaving interpretation ambiguous as to which diet drives observed changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C211 acknowledge important limitations. The evolutionary divergence concern (C206) is valid and appropriately cited (Luca et al., 2010). The control diet issue (C207-C211) is a significant limitation\u2014without a true ancestral baseline, it's unclear whether Western diet causes harm or Mediterranean diet provides benefit (or both). This is an honest acknowledgment of a fundamental limitation in the study design that affects interpretation of evolutionary mismatch claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C180",
+      "C183",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "Multiple mechanistic pathways may link diet, behavior, and gene expression, including gut-brain axis via microbiome and vagal input, blood-brain barrier disruption allowing peripheral immune molecule infiltration, direct effects on vagus nerve or glial cells, and altered neuronal membrane lipid composition. The study cannot conclusively determine which mediation pathway is primary or delineate the exact role of the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C180, C183, C191-C201 propose multiple mechanistic pathways with citations to supporting literature. However, these remain speculative hypotheses\u2014the study provides correlative evidence (mediation analyses) but doesn't experimentally test these mechanisms. The authors appropriately acknowledge this limitation (C200) and the possibility of multiple concurrent pathways (C199, C201). These represent reasonable hypotheses for future investigation but are not directly supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "ATF2, enriched in Western genes, is a key inflammatory mediator. Western genes were enriched for MAPKK pathway (upstream of ATF2), supporting a role in monocyte polarization. Transcription factors were overrepresented in differentially co-expressed gene pairs. Diet-induced changes in co-expression of metabolic transcription factors (SOX4, NR4A2, MEF2D) may reflect breakdown of fine-tuned regulatory networks due to environmental mismatch (decanalization hypothesis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C170 integrate transcription factor findings with decanalization theory. ATF2 function (C161) is well-supported by citations. MAPKK enrichment (C162) is data-supported with appropriate inference (C163). TF overrepresentation in differential correlations (C164) is statistically supported. The decanalization hypothesis (C165-C166) is appropriately cited theoretical framework. However, the interpretation that hub genes 'pinpoint optimized systems that break down' (C170) is speculative\u2014differential co-expression doesn't necessarily indicate breakdown vs. adaptive reorganization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Western diet-fed monkeys exhibited anxiety and social isolation behaviors similar to offspring of mothers fed high-fat Western diet in a prior study. In that study, offspring behavior was associated with maternal MDC levels, which showed higher expression in Western-fed animals in the current study (\u03b2=0.243, FDR=0.059), suggesting Western diet may exert similar behavioral effects in adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175-C179 compare findings to a prior developmental study (Thompson et al., 2018). The behavioral similarity (C176) is noted but not quantitatively compared. The MDC expression finding (C178) is marginally non-significant (FDR=0.059, just above the 0.05 threshold), which weakens the proposed connection. The inference that Western diet has similar effects in adulthood (C179) is reasonable but speculative given the different study designs (maternal diet effects on offspring vs. direct adult consumption).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C202",
+      "C203"
+    ],
+    "result": "The lack of correlation between body weight change and gene expression or behavior suggests physiological changes like weight gain may not be the primary link between diet, immune function, and health. Understanding both behavioral and gene regulatory responses to environmental mismatch will help understand health impacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C203 draw conclusions from the individual variation analysis (C143-C144). The lack of correlation between weight and other phenotypes (C144, all FDR>0.2) is a robust negative finding that challenges simple models where weight gain drives other effects. The inference (C202) is reasonable and important for understanding diet-health relationships. The forward-looking statement (C203) is appropriate but somewhat generic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C216"
+    ],
+    "result": "The majority of diet effects are presumably mediated through direct or combined actions of saturated/polyunsaturated fats, n-6:n-3 ratios, pro- and anti-antioxidant characteristics, and other features of the Western diet inconsistent with the nutritional environment in which humans and nonhuman primates evolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C216 proposes specific dietary components as mediators of observed effects. While the diets differed in these components (C50-C55), the study design doesn't allow attribution to specific nutrients\u2014the whole-diet approach intentionally tests combined effects but cannot isolate individual components. The claim is speculative and would require additional studies manipulating individual dietary components to test. The evolutionary framing assumes ancestral diet composition, which is uncertain.",
+    "result_type": "MINOR"
+  }
+]

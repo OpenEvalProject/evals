@@ -1,0 +1,1331 @@
+{
+  "submission": {
+    "id": "feecda35-48bf-4cd5-9ede-d6c06301c67d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:43:01.611367Z",
+    "updated_at": "2025-12-03T04:43:01.611367Z"
+  },
+  "content": [
+    {
+      "id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "submission_id": "feecda35-48bf-4cd5-9ede-d6c06301c67d",
+      "content_type": "manuscript",
+      "content_text": "# Corticothalamic gating of population auditory thalamocortical transmission in mouse\n\n## Authors\n\n- Baher A Ibrahim<sup>1</sup> ([ORCID: 0000-0002-0062-7589](https://orcid.org/0000-0002-0062-7589))\n- Caitlin A Murphy<sup>3</sup> ([ORCID: 0000-0002-6319-9470](https://orcid.org/0000-0002-6319-9470))\n- Georgiy Yudintsev<sup>5</sup>\n- Yoshitaka Shinagawa<sup>1</sup>\n- Matthew I Banks<sup>3</sup>\n- Daniel A Llano<sup>1</sup> ([ORCID: 0000-0003-0933-1837](https://orcid.org/0000-0003-0933-1837)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Integrative Physiology, University of Illinois Urbana-Champaign United States\n2. Beckman Institute for Advanced Science and Technology, University of Illinois Urbana-Champaign United States\n3. Department of Neuroscience, School of Medicine and Public Health, University of Wisconsin-Madison Wisconsin-Madison United States\n4. Department of Anesthesiology, School of Medicine and Public Health, University of Wisconsin-Madison Wisconsin-Madison United States\n5. Neuroscience Program, University of Illinois Urbana-Champaign United States\n6. College of Medicine, University of Illinois Urbana-Champaign United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mechanisms that govern thalamocortical transmission are poorly understood. Recent data have shown that sensory stimuli elicit activity in ensembles of cortical neurons that recapitulate stereotyped spontaneous activity patterns. Here, we elucidate a possible mechanism by which gating of patterned population cortical activity occurs. In this study, sensory-evoked all-or-none cortical population responses were observed in the mouse auditory cortex in vivo and similar stochastic cortical responses were observed in a colliculo-thalamocortical brain slice preparation. Cortical responses were associated with decreases in auditory thalamic synaptic inhibition and increases in thalamic synchrony. Silencing of corticothalamic neurons in layer 6 (but not layer 5) or the thalamic reticular nucleus linearized the cortical responses, suggesting that layer 6 corticothalamic feedback via the thalamic reticular nucleus was responsible for gating stochastic cortical population responses. These data implicate a corticothalamic-thalamic reticular nucleus circuit that modifies thalamic neuronal synchronization to recruit populations of cortical neurons for sensory representations.\n\n## Introduction\n\nOur experience of the world relies on how sensory information is processed. Thalamocortical projections are critical for activation of the cerebral cortex, which is thought to contain the neural circuits that drive our conscious awareness of sensory stimuli. A classical view of thalamocortical function is that cortical activity during sensory perception is predictable based on activity in the thalamus and patterns of synaptic convergence of thalamocortical axons onto cortical neurons. Thus, sensory processing in this classical scheme behaves as a series of hierarchical linear filters, whose tuning is modified by feedback, creating more complex response properties that reach the level of conscious perception by activating the cortex (Riesenhuber and Poggio, 1999; Vidyasagar and Eysel, 2015). However, this view does not comport with findings that population activity in sensory cortices is often stereotyped and recapitulates patterns of cortical spontaneous activity (MacLean et al., 2005; Kenet et al., 2003; Miller et al., 2014; Sakata and Harris, 2009). As such, a hypothesis has emerged that sensory representations are developed by early exposure to sensory stimuli and stored in the cortex within intracortical networks, and that the thalamus activates these pre-wired sensory representations upon sensory stimulation (MacLean et al., 2005; Petersen, 2005). Some observations that support this hypothesis are that spontaneous cortical activity is highly determined by the internal cortical connectivity (Kenet et al., 2003; Sanchez-Vives and McCormick, 2000), and is not easily predictable from activity in thalamocortical afferents (MacLean et al., 2005; Cossart et al., 2003). In addition, spontaneous cortical activity is the main substrate for the generation of the internal percepts during states without external sensory input, such as memory recall and dreaming (Takeuchi et al., 2011; Nir and Tononi, 2010). Further, despite substantial differences in the form and organization in the initial processing stages of different modalities of sensation, at the level of the thalamus and cortex, neural circuits across modalities are relatively homogeneous (Shepherd, 2011; Douglas et al., 1989; Phillips et al., 2019). These findings suggest that there is a common function of thalamocortical circuits that is not tied to specific modalities of perception.\n\nGiven that connected neuronal ensembles are likely the main functional unit for behavior and cognition (Uhlhaas et al., 2009; Buzs\u00e1ki, 2010), a major control point for the activation of cortical ensembles, and therefore cognition more generally, may lie in the thalamus. Here, we examine the mechanisms by which all-or-none population responses (hereafter called \u2018Population ON\u2019 or \u2018Population OFF\u2019 responses) in the auditory cortex (AC) are gated. We find that gating of cortical activity occurs via corticothalamic projection to the thalamic reticular nucleus (TRN), which is a long-enigmatic structure that partially surrounds and sends GABAergic projections to thalamocortical neurons. Further, we observed that population OFF responses in the AC are associated with increases in synaptic inhibition and neuronal desynchronization in the auditory thalamus. These findings suggest that one mode of thalamocortical function is to select groups of cortical neurons for activation based on feedback from cortical layer 6.\n\n## Results\n\n### Stochastic AC responses to sound presentations in vivo\n\nTranscranial calcium imaging of the AC of an anesthetized GCaMP6s mouse following repeated presentations of a 5 kHz-37 dB SPL pure tone (Figure 1A) revealed cortical activity in three distinct areas, the primary AC (A1), secondary AC (A2), and anterior auditory field (AAF), consistent with previous work (Issa et al., 2014;\u00a0Figure 1B, MATLAB code in Figure 1\u2014source code 1). Such sound-evoked cortical activity represented the average of the cortical responses to 40 presentations of the same tone. Across the 40 trials of the same sound presentation, we observed that A1 showed either a full population response (here called population ON cortical responses) or no response (referred to here as population OFF cortical responses), with some variability within each class (Figure 1C, MATLAB code in Figure 1\u2014source code 1). Inspection of the individual cortical responses over time revealed the responses to be independent of stimulus presentation order (Figure 1D, Figure 1\u2014source data 1). Collectively, a histogram of \u0394f/f of sound-evoked calcium signals from A1 across trials showed two classes of A1 responses (\u2018Population ON\u2019 vs. \u2018Population OFF,\u2019 Figure 1E, Figure 1\u2014source data 1). A greater frequency of the population ON cortical responses was observed with increasing sound pressure level (Figure 1F, Figure 1\u2014source data 1). Similar stochastic population sensory cortical responses have been observed previously (MacLean et al., 2005; Kenet et al., 2003; Miller et al., 2014; Sakata and Harris, 2009), but the mechanisms that determine whether a population ON or OFF response occurs have not yet been elucidated.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig1-v2.jpg)\n\n**Figure 1.:** (A) A cartoon image showing the experimental design of transcranial calcium imaging of the left AC of GCaMP6s mouse during a 500 ms pure tone\u00a0(5 kHz) exposure to the right ear. (B) Pseudocolor image representing the average map of AC activation indicated by \u0394f/f of sound-evoked calcium signals following 40 trials of 5 kHz-37 dB SPL pure tone stimulation. (C) Two pseudocolor images representing an individual trial for population ON cortical response (top) versus population OFF cortical response (bottom). (D) A line graph of \u0394f/f of the sound-evoked Ca signals of A1 across 40 trials of playing 5 kHz, 37 dB SPL over time. (E) A histogram of the \u0394f/f of sound-evoked calcium signals following 40 trials of 5 kHz-37 dB SPL stimulation\u00a0(bin size\u00a0=\u00a01%). (F) A bar graph showing the percentage of population ON cortical responses across different sound levels at 5 kHz pure tone; A1: Primary auditory cortex, A2: Secondary auditory cortex, AAF: Anterior auditory field, C: Caudal, D: Dorsal.\n\n### Stochastic AC responses to electrical stimuli to IC in vitro\n\nTo examine the circuit mechanisms underlying the stochastic nature of the responses (Figure 2), brain slices that retain connectivity between the inferior colliculus (IC), medial geniculate body (MGB), thalamic reticular nucleus (TRN) and AC were constructed (Figure 2\u2014figure supplement 1;\u00a0Llano et al., 2014; Slater et al., 2015). The auditory colliculo-thalamocortical (aCTC) mouse brain slice retains the synaptic connections between these structures: hence, electrical stimulation of the IC evoked neuronal activity in all of these brain structures as indicated by stimulus-evoked flavoprotein autofluorescence (FA) and calcium-dependent fluorescence signals (Figure 2A\u2013E). Figure 2B and D, (MATLAB codes in Figure 2\u2014source code 1 and 2), show the average of the stimulus-evoked activity of the connected brain structures in the aCTC slice after 10 trials of IC stimulation. However, review of the individual time series of \u0394f/f of the stimulus-evoked FA and calcium signals across trials of IC stimulation (Figure 2C and E, Figure 2\u2014source data 1 and 2) reveals stochastic responses in the AC; a pattern that was similar to the in vivo data, despite the fact that MGB, TRN, and IC were always responsive to IC stimulation. The FA and calcium signals were determined based on predetermined criteria (Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 2\u2014source data 1, see Materials\u00a0and\u00a0methods). This finding was consistent with whole-cell recording from MGB and TRN cells (Figure 2\u2014figure supplement 3), where spikes were seen in response to each stimulus irrespective of the presence of a population AC response. We note that similar to previous studies, FA and calcium signals from the MGB are smaller than those from AC (Dana et al., 2014; Llano et al., 2009), which may be related to limited alignment of mitochondria-containing neuropil processes or low baseline expression of GCaMP in the MGB, respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig2-v2.jpg)\n\n**Figure 2.:** (A) A cartoon image showing the experimental design of simultaneous FA or calcium imaging and IC stimulation of the aCTC slice, which were also associated with LFP or whole-cell recording from cortical 3/4 layers in other experimental setups. (B and D) Pseudocolor images showing the neuronal activation indicated by evoked FA or calcium signals, respectively, in the IC, MGB, TRN, and AC following IC stimulation (nine animals). (C and E) The time series of \u0394f/f of evoked FA or calcium signals, respectively, in the IC, MGB, TRN, and AC following IC stimulation. (F) The time series of the L3/4 LFP signals (top panel) and \u0394f/f of the evoked cortical FA signals (bottom panel) following IC stimulation. (G) The time series of evoked calcium signals of a small population of layer 4 cells following IC stimulation, the two rose ribbons indicate the absence of neuronal activation following the IC stimulation during trial # 9 and 11. (H) The time series of layer four whole-cell recording (top panel) and the \u0394f/f of the evoked cortical FA signals (bottom panel) following IC stimulation, green box: The magnification of the post-stimulus activity of layer 4 cells showing evoked UP state associated with action potentials; Black arrows refer to the occurrence of population OFF cortical responses indicated by the absence of cortical FA or calcium signals as well as post-stimulus cortical LFP signals, gray vertical lines indicate the onset of IC stimulation, Yellow circle indicates the position of the electrical stimulation of the IC;\u00a0aCTC: auditory colliculo-thalamocortical mouse brain slice, C: Caudal, L: Lateral.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The anterior 2 mm of the brain was cut to make the first platform. (B) The brain was lifted on its frontal aspect on the cut surface made by step A, then rotated at a 17\u201320o angle relative to the brain\u2019s midline. (C) From the dorsal view, the brain was then cut at 60o angle relative to the base and perpendicular on the horizontal line to make the second platform. (D) The brain was lifted on the cut surface made by step C on the vibratome stage and cut as 600 \u00b5m slices. (E) The final look of aCTC slice should have IC, MGB, TRN, and AC in one plane.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The time series of cortical FA (left) and calcium signals (right). (B) A calculated z-score of the time series of cortical FA (left) and calcium signals (right).\u00a0Black arrows refer to the occurrence of population OFF cortical responses indicated by the absence of cortical FA or calcium signals, gray vertical lines indicate the onset of IC stimulation, horizontal red line indicate the cutoff z-score at 3.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Whole cell recording following the injection of depolarizing and hyperpolarizing current into the\u00a0MGB and TRN cells. (B) The whole-cell recording (top) of MGB and TRN cells showing that both cells fire during population ON and population OFF- cortical responses as indicated by the cortical FA signals (bottom). Black arrows: indicate the occurrence of the OFF-cortical responses indicated by the absence of the FA signal,\u00a0gray vertical lines indicate the onset of IC stimulation.\u00a0The inset refers to the magnification of the post-stimulus activity of MGB and TRN cells, respectively, showing the evoked action potentials.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** LFP signals recorded from cortical L3/4 after 10 trials of IC stimulation in a different laboratory environment using isoflurane anesthesia and no transcardiac perfusion. Binary cortical responses (population ON vs. OFF) are still seen; Black arrows indicate the occurrence of the population OFF cortical response indicated by the absence of the evoked post stimulus LFP. Green and red boxes show magnified post-stimulus activity during population ON and population OFF cortical responses, respectively.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** A time trace of the evoked calcium signal in one of the cortical layer 4 cells (White\u00a0circle)\u00a0following IC stimulation, which is correlated with the frames taken before the stimulation onset (blue line), at the peak of the calcium signal (green line), at the decay phase of the calcium signal (orange line), and at the post stimulus baseline (red line).\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Probability density histograms showing the distribution of post stimulus membrane potentials of four cortical layer 4 cells following IC stimulation in the aCTC slice. Voltages were sampled at 0.5 ms. Spikes and stimulus artifacts were manually removed\u00a0(bin size\u00a0=\u00a01 mV).\n\nTo ensure that metabolic or imaging artifacts did not drive the observation of these stochastic population cortical responses, local field potentials (LFPs) were recorded in the AC while simultaneously conducting FA imaging, and the LFPs also showed all-or-none response patterns that strongly correlated with the FA signals (Figure 2F, Figure 2\u2014source data 3). We also observed stochastic population AC responses in brain slices prepared using a different anesthetic (isoflurane) without transcardiac perfusion in a different laboratory using a biphasic stimulator vs. monophasic stimulator (Figure 2\u2014figure supplement 4), suggesting that the stochastic responses were not specific to a particular slice preparation or stimulation technique.\n\nLooking more closely at the activity of cortical layer 4 cells, the stimulus-evoked calcium signals of a small population of layer 4 cells following IC stimulation showed that a similar population layer 4 cells was activated with each population ON response and that population OFF responses were associated with an absence of layer four responses. For instance, all neurons ceased to respond during stimuli # 9 and 11 (Figure 2G, rose ribbons, Figure 2\u2014source data 4) and (Figure 2\u2014figure supplement 5). Whole-cell recordings of layer 4 cells during population ON population responses revealed a plateau of depolarization upon which rode several action potentials (Figure 2H, green box, Figure 2\u2014source data 5), resembling previously described UP states (Sanchez-Vives and McCormick, 2000; Rigas and Castro-Alamancos, 2007; Fanselow and Connors, 2010), which was supported by the bimodal distribution shown by the post stimulus membrane potential of such layer 4 cells during population ON cortical responses (Figure 2\u2014figure supplement 6, Figure 2\u2014figure supplement 6\u2014source data 1, see, Materials and methods). Collectively, these data suggest that IC stimulation produces stochastic population responses in the AC, and that these population responses are stereotyped and represent stimulus-induced UP states.\n\nTo determine the locus of control for whether a population ON or population OFF response would be elicited, we moved the stimulating electrode from the IC to the MGB and then to the subcortical white matter (Figure 3A, MATLAB codes in Figure 3\u2014source code 1 and 2). Population ON/OFF cortical responses occurred only after electrical stimulation of IC, and not by the direct stimulation of MGB or the subcortical white matter (Figure 3B and D, Figure 3\u2014source data 1 and 2, Kruskal-Wallis: p=0.001, pairwise comparison: p=0.023 for IC vs. MGB or subcortical white matter and p=1 for MGB vs. subcortical white matter, Dunn's post hoc test, n\u00a0=\u00a05). To determine the impact of stimulating current amplitude on the likelihood of eliciting a population ON-cortical response, different amplitudes of stimulating current were delivered to the IC (Figure 3C, Figure 3\u2014source data 3). Similar to the in vivo data, the percentage of population ON cortical responses increased with increasing amplitude of the stimulating current (Figure 3E, Figure 3\u2014source data 4, RM-ANOVA: *F(3,9)=9.7, p=0.003, pairwise comparison: *p=0.009 for 50 vs. 150\u2013200 \u03bcA, *p=0.008 for 50 vs. 250\u2013300 \u03bcA, Bonferroni post hoc test, n\u00a0=\u00a04 slices from four animals), which was consistent with the in vivo results (Figure 1F). Moreover, while there was a log-linear relationship between the FA signals of either IC or MGB and the stimulating current amplitude (Figure 3F, Figure 3\u2014source data 5, R2\u00a0=\u00a00.68, p=2.2\u00d710\u221219 for IC and R2\u00a0=\u00a00.53, p=3.3\u00d710\u221213 for MGB), this relationship was lost between the cortical responses and stimulating current amplitude (Figure 3F, Figure 3\u2014source data 5, R2\u00a0=\u00a00.004, p=0.6), suggesting that the magnitude of the cortical response is not predictable from stimulus amplitude.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig3-v2.jpg)\n\n**Figure 3.:** (A) Pseudocolor images of the evoked FA signals in aCTC slice after electrical stimulation of the IC, the MGB, or the subcortical white matter, respectively. (B) The time series of \u0394f/f of the evoked FA signals in AC, MGB, and IC following electrical stimulation of IC, MGB, or the\u00a0subcortical white matter, respectively. (C) The time series of \u0394f/f of the evoked FA signals in AC, MGB, and IC following the stimulation of the IC with different stimulating current amplitudes. (D and E) Bar graphs showing the percentage of population ON cortical responses at different loci of stimulation and across different stimulating current amplitudes at the IC, respectively. (F) Line graphs showing the relationship between stimulating current amplitude and \u0394f/f of FA signals from IC\u00a0(top), MGB\u00a0(middle), and AC\u00a0(bottom), respectively; Black arrows refer to the missing cortical responses (\u2018population OFF\u2019 responses) indicated by the absence of cortical FA, vertical gray lines indicate the onset of IC stimulation, and yellow circles indicate the position of the electrical stimulation; sWM: subcortical white matter.\n\n### Population OFF cortical responses are driven by inhibition in the MGB\n\nBecause population OFF cortical responses represented a full absence of stimulus-evoked cortical activity, we reasoned that population OFF cortical responses could be driven by inhibition. To investigate this idea, global disinhibition in the aCTC slice by bath application of gabazine (SR-95531, 200 nM), the GABA\u0391-R blocker, was conducted. Under simultaneous FA imaging and IC stimulation, gabazine perfusion was able to retrieve all missing cortical responses compared to control (Figure 4B and C, Figure 4\u2014source data 1 and 2, Kruskal-Wallis: p=2.5\u00d710\u22127, pairwise comparison: p=5.08\u00d710\u22124 for gabazine vs. control, p=4.1\u00d710\u22127 for gabazine vs. wash, and p=0.34 for control vs. wash, Dunn's post hoc test, n\u00a0=\u00a014 trials obtained from five animals), which suggested that the population OFF cortical responses were driven by inhibitory inputs. We further investigated the AC and MGB to search for the site of inhibition that drove population OFF cortical responses. Whole-cell recording of cortical layer 4 or MGB cells voltage-clamped at\u00a0+10 mV was conducted simultaneously with FA imaging following the stimulation of the IC to track the IPSCs during population ON vs. population OFF cortical responses. Consistent with the previous finding that stimulation of the IC evoked a post-stimulus UP-states activity in layer 4 cells during the population ON cortical responses only (Figure 2H;\u00a0Fanselow and Connors, 2010; Haider et al., 2006), layer 4 cells demonstrated a surge of evoked post-stimulus IPSCs during population ON cortical responses only (Figure 4D). In contrast, MGB cells showed evoked post-stimulus IPSCs following every trial of IC stimulation during population ON and population OFF cortical responses (Figure 4E). Quantitatively, while these evoked cortical post-stimulus IPSCs and EPSCS in the layer 4 cells were significantly smaller during population OFF compared to population ON cortical responses (Figure 4F, Figure 4\u2014source data 3, paired sample Wilcoxon Signed Rank Test: p=0.006 for IPSCs, n\u00a0=\u00a010 cells from four animals and p=0.036 for EPSCs, n\u00a0=\u00a06 cells from four animals), the evoked post-stimulus IPSCs in the MGB cells were larger during population OFF compared to population ON cortical responses, with no difference in the net excitatory transferred charges (Figure 4G, Figure 4\u2014source data 4, paired sample Wilcoxon Signed Ranks Test: p=0.011 for IPSCs, n\u00a0=\u00a020 cells from seven animals and p=0.56 for EPSCs, n\u00a0=\u00a014 cells from four animals). These findings suggest that MGB cells receive more inhibition during population OFF cortical responses with no change in excitation, which led us to hypothesize that MGB activity could be modulated by inhibitory inputs during the population OFF cortical responses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig4-v2.jpg)\n\n**Figure 4.:** (A) A cartoon image showing the experimental design of simultaneous FA imaging and IC stimulation as well as gabazine perfusion. (B) The time series of \u0394f/f of the evoked cortical FA signals with ACSF (control, top trace), with gabazine (middle trace), or wash by ACSF (bottom trace). (C) A plot of the results showing that the percentage of population ON cortical responses was significantly higher than that of control and wash. (D) Evoked post-stimulus IPSCs recorded from layer 4 cells (top panel), and the \u0394f/f of the evoked cortical FA responses (bottom panel) following the IC stimulation. (E) Evoked post-stimulus IPSCs recorded from MGB cells (top panel), and the \u0394f/f of the evoked cortical FA responses (bottom panel) following the IC stimulation. (F and G) Scatterplots of the area under the curve (AUC) of the evoked post-stimulus IPSCs and EPSCs recorded from AC or MGB, respectively, during population OFF cortical responses and\u00a0normalized against those recorded during population ON cortical events. (H) A cartoon image showing the experimental design of simultaneous FA imaging, IC stimulation, and selective gabazine injection into MGB or AC using a picospritzer. (I and J) The time series of \u0394f/f of the evoked cortical FA signals during a counterbalanced gabazine injection starting into MGB then AC or AC then MGB, respectively. (K) A plot of the results showing that the percentage of population ON cortical responses were significantly higher after the injection of gabazine into MGB; Black arrows refer to the occurrence of population OFF cortical responses indicated by the absence of the cortical FA signals; Vertical gray lines indicate the onset of IC stimulation; IPSCs: Inhibitory postsynaptic currents, and EPSCs: Excitatory postsynaptic currents.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Series of images of the aCTC slice before injection, during the injection of gabazine into the MGB indicated by Alexa Fluor-594, after washing, and during the injection of gabazine into the AC indicated by Alexa Fluor-594 within the pipette.\n\nTo test this hypothesis, we determined whether disinhibition of the MGB could yield population ON cortical responses to all stimuli. Under simultaneous FA imaging and IC stimulation, the specific injection of gabazine (Figure 4\u2014figure supplement 1) into the MGB in the aCTC slice was able to significantly increase the percentage of population ON cortical responses (Figure 4I and J, Figure 4\u2014source data 5 and 6), indicated by the \u0394f/f of the evoked cortical FA signals (Figure 4K, Figure 4\u2014source data 7, RM-ANOVA: F(3,21) = 13.9, p=3.17\u00d710\u22125, pairwise comparison: *p=5.9\u00d710\u22125, 1.5 \u00d7 10\u22124, 0.0026 for gabazine in MGB vs. control, wash, and gabazine in AC, respectively, Bonferroni post hoc test, n\u00a0=\u00a08 slices from seven animals). In contrast, the same effect was not observed after selective gabazine injection into the AC (Figure 4K, Figure 4\u2014source data 7, RM-ANOVA: F(3,21) = 13.9, pairwise comparison: p=0.73 and 1.0 for gabazine in AC vs. control and wash, respectively, Bonferroni post hoc test, n\u00a0=\u00a08 slices from seven animals), consistent with data obtained from the whole-cell recording of layer 4 cells (Figure 4D and F). Accordingly, these data confirmed that the population OFF cortical responses could be driven by thalamic inhibition.\n\n### Synchronized MGB cells are associated with population\u00a0ON-cortical responses\n\nAlthough the mean peak latencies of IPSCs and EPSCs received by MGB cells showed no difference during population ON and population OFF cortical responses (Figure 5A and B, Figure 5\u2014source data 1, paired sample Wilcoxon Signed Ranks Test: p=0.28, n\u00a0=\u00a020 cells from seven animals for IPSCs and paired t-test: t(12) = \u22120.72, p=0.48, n\u00a0=\u00a014 cells from four animals for EPSCs), the cumulative distribution function showed that some MGB cells (~50% of the recorded cells) received earlier IPSCs during population OFF cortical responses (Figure 5C, Figure 5\u2014source data 1). These earlier inhibitory signals received by some MGB cells could negatively impact the synchronization between the MGB cells required to pass the sensory information to the cortex. To test this hypothesis, the time courses of calcium signals of MGB cells, which were found to match the voltage signals that were simultaneously recorded in a separate experiment (Figure 5\u2014figure supplement 1), were imaged following the stimulation of the IC, and were compared during population ON vs. population OFF cortical responses (Figure 5D and E, Figure 5\u2014source data 2). We observed that the variance of the peak latencies of the evoked calcium signals from all thalamic cells was larger during population OFF cortical responses than population ON responses (Figure 5F, Figure 5\u2014source data 3, paired sample t-test: t(13) = \u22122.37, *p=0.033, n\u00a0=\u00a014 paired responses (population ON vs. population OFF) including 339 cells from five animals). We note that the absolute latencies of the calcium imaging responses are considerably longer than those measured electrophysiologically. However, despite the relatively slow time course of the calcium response, the peak times remained relatively stable during population ON responses. These data suggest that synchronous thalamic relay cell activity is required to evoke a cortical population ON response, consistent with previous work (Bruno and Sakmann, 2006).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig5-v2.jpg)\n\n**Figure 5.:** (A and B) Plots of peak latencies of IPSCs (A) and EPSCs (B) measured in the MGB after IC stimulation. No difference was seen in the mean latency during population ON vs. OFF responses. (C) Cumulative distribution functions of the peak latencies of IPSCs (dotted line) and EPSCs (solid line) during population ON (blue line) or population OFF-cortical responses (red line) showing that\u00a0~50% of MGB cells received earlier IPSCs during population OFF cortical responses (red dotted line). (D) A cartoon image showing the experimental design of simultaneous calcium imaging of MGB, LFP recording form the cortex, and the IC stimulation. (E) The sweeps of the evoked calcium signals of all activated cells during population ON (top) vs. population OFF (bottom) cortical responses indicated by the post-stimulus cortical LFP signals recorded from L3/4. (F) A scatterplot showing a higher variance of the peak latencies of MGB cells activated during population OFF cortical response compared to those activated during population ON cortical responses. Vertical gray line indicates the onset of IC stimulation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Top Left: A time series of the whole-cell recording of the MGB cell (right image) containing CAL-520 dye; Bottom left: The correlated time series of the calcium signals obtained from the cell (black line and dotted\u00a0black/white circle [right image]) and two regions adjacent to the cell (red and blue lines and circles [right image]).\n\n### Corticothalamic layer 6 cells are the main driver of the missing cortical response via TRN\n\nThe data described above suggest that MGB cells receive more inhibition during population OFF cortical responses. Therefore, we investigated the source of these potential inhibitory inputs. As previously reported, the MGB can be inhibited by the cortex through the feedback inhibition by TRN (Lam and Sherman, 2010) or by the IC through the feedforward inhibition by IC GABAergic cells (Peruzzi et al., 1997; Winer et al., 1996). Therefore, we determined if inhibition of either of these pathways (to disinhibit the MGB) could retrieve the missing cortical responses. Corticothalamic layer 6 cells indirectly inhibit thalamic relay cells by exciting GABAergic neurons in the TRN, a shell-like structure of GABAergic neurons that surrounds the most of dorsolateral part of the thalamus (Crandall et al., 2015; Guo et al., 2017). Therefore, the feedback inhibition of MGB via corticothalamic layer 6-TRN pathway was examined. Injection of the AC of NTSR1-Cre neonates with halorhodopsin-AAV resulted in a successful Cre-dependent expression of eNpHR3.0 receptors in the corticothalamic layer 6 as well as their projections to TRN and MGB indicated by YFP tag (Figure 6B). Photoinhibition of corticothalamic layer 6 cells by illumination with 565 nm light resulted in a significant increase in the probability of population ON cortical responses as indicated by the recovery of the post-stimulus LFP signals from L3/4 compared to the control (Figure 6C and D, Figure 6\u2014source data 1, paired t-test: t(15) = \u22127.06, **p=3.8\u00d710\u22126, n\u00a0=\u00a016 trials from four animals). A control experiment was done by injecting NTSR1-Cre mice with a virus expressing YFP without the inhibitory opsin. The same illumination of the aCTC slice expressing YFP in layer 6 cells (Figure 6F) with a 565 nm light of could not retrieve the population ON cortical responses (Figure 6G and H, Figure 6\u2014source data 2, paired t-test: t(24) = \u22121.3, p=0.2, n\u00a0=\u00a025 trials from five animals). To examine the impact of silencing corticothalamic layer 6 neurons using FA imaging, the AC of a separate group of NTSR1-Cre neonates was injected with DREADDs-AAV virus, which resulted in a successful Cre-dependent expression of the inhibitory chemogenetic receptors, hM4Di, as indicated by mCherry tag specifically in corticothalamic layer 6 cells as well as their projections to TRN and MGB (Figure 6\u2014figure supplement 1B). Consistent with the previous data, the chemical inhibition of corticothalamic layer 6 cells expressing hM4Di receptors by their chemical actuator, CNO, significantly increased the frequency of population ON cortical responses as indicated by \u0394f/f of evoked cortical FA signals compared to the control (Figure 6\u2014figure supplement 1C and D, Figure 6\u2014figure supplement 1\u2014source data 1 and 2, paired test: t(3) = \u22123.66, p=0.035, n\u00a0=\u00a04 trials from four animals). The control experiment was done by injecting other NTSR1-Cre mice with a virus expressing mCherry without the DREADDs, and the perfusion of CNO to the aCTC slices taken from these animals could not retrieve the population ON cortical responses (Figure 6\u2014figure supplement 1E, Figure 6\u2014figure supplement 1\u2014source data 3, paired test: t(4) = 0.9, p=0.4, n\u00a0=\u00a05 trials from five animals).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig6-v2.jpg)\n\n**Figure 6.:** (A and E) Cartoon images showing the experimental design of simultaneous IC stimulation, LFP recording, and photoinhibition for aCTC slice with and without eNpHR3.0 receptors, respectively. (B and F) Images of aCTC slice of NTSR1-Cre mouse showing the expression of eNpHR3.0 receptors as indicated by YFP tag and YFP only, respectively, in NTSR1-positive corticothalamic layer 6 cells as well as their projections to TRN and MGB. (C, G, K and O) The time series of the post-stimulus cortical LFP signals from L3/4 following IC stimulation without (top panel) and with 565 nm light (bottom panel). (D) A scatterplot of percent population ON responses pre- and post-light application showing that the percentage of population ON cortical events was higher during the photoinhibition of corticothalamic layer 6 cells. (H) A scatterplot of percent population ON responses pre- and post-light application showing that the illumination of the aCTC slice expressing no inhibitory opsin with 565 nm light could not retrieve the population ON cortical responses. (I) A cartoon image showing the experimental design of simultaneous IC stimulation, LFP recording, and photoinhibition of layer 5 cells (J) Image of aCTC slice of RBP4-Cre mouse showing the expression of eNpHR3.0 receptors as indicated by YFP tag in RBP4-positive layer 5 cells. (L) A scatterplot of percent population ON responses pre- and post-light application showing that the photoinhibition of layer 5 cells could not retrieve the population ON cortical responses. (M) A cartoon image showing the experimental design of simultaneous IC stimulation, LFP recording, and photoinhibition of IC GABAergic cells (N) Image of aCTC slice from GAD2-Cre mouse showing the Cre-dependent expression of halorhodopsin indicated by YFP tag in GABAergic cells of the IC as well as their projections to MGB. (P) A scatterplot of the percentage of cortical population ON responses showing no change after the photoinhibition of IC\u00a0GABAergic cells by light; Black arrows refer to the occurrence of population OFF cortical responses indicated by the absence of post-stimulus cortical LFP signals from L3/4; Vertical gray lines indicate the onset of IC stimulation; Orange lines indicate the time period of illumination (3 s).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) A cartoon image showing the experimental design of simultaneous FA imaging and IC stimulation as well as CNO perfusion. (B) Image of aCTC slice of NTSR1-Cre mouse showing the expression of hM4Di receptors as indicated by m-Cherry tag in NTSR1-positive corticothalamic layer 6 cells as well as their projections to TRN and MGB. (C) The time series of \u0394f/f of the evoked cortical FA signals during the perfusion of ACSF (top trace) and CNO (middle trace) then wash (bottom trace). (D) A scatterplot of the probability of population ON cortical events showed that the probability of a population ON response was higher during the chemical inhibition of corticothalamic layer 6 cells by CNO compared to the control. (E) A scatterplot of the percentage\u00a0of population ON cortical events showing that the perfusion of CNO to the aCTC slice expressing no\u00a0hM4Di receptors could not retrieve the ON-cortical responses. (F) A cartoon image showing the experimental design of simultaneous IC stimulation, FA imaging and NBQX injection into TRN by picospritzing. (G) The time series of \u0394f/f of the evoked cortical FA signals during ACSF (top trace) and NBQX (middle trace) injections into TRN as well as wash (bottom trace). (H) A scatterplot showing that the percentage of population ON cortical events was higher by blocking TRN activity by NBQX compared to the control; Black arrows refer to the occurrence of population OFF cortical responses indicated by the absence of the post-stimulus cortical FA signals; Vertical gray lines indicate the onset of IC stimulation; CNO: Clozapine-n-oxide.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56645/elife-56645-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** An image of the aCTC slice with 2x objective showing the expression of EGFP in cortical layer 5 cell bodies and their apical dendrites as well as their subcortical axons in the RBP4-Cre mouse.\u00a0Inset: A magnified image (20x objective) showing the innervation of the MGB by layer five axons in the aCTC slice.\n\nGiven that corticothalamic layer 6 cells project to MGB through a direct excitatory synapse, further examination was required to test if the TRN is the main driver of corticothalamic layer six effect. Blocking of the TRN activity by NBQX, the AMPA-R blocker (Sun et al., 2013; Lee et al., 2010a), which was specifically injected into TRN, significantly increased the probability of population ON cortical events indicated by \u0394f/f of the evoked cortical FA signals (Figure 6\u2014figure supplement 1G and H, Figure 6\u2014figure supplement 1\u2014source data 4 and 5, paired test: t(5) = \u22126.03, **p=5.2\u00d710\u22124, n\u00a0=\u00a08 trials from seven animals). To test the specificity of corticothalamic layer 6-TRN pathway to modulate MGB activity, we performed a control experiment by inhibiting layer 5 corticothalamic cells, which do not have significant projections to the TRN\u00a0(Crabtree, 2018). The injection of the AC of RBP4-Cre neonatal mice with halorhodopsin virus resulted in a successful Cre-dependent expression of eNpHR3.0 receptors in layer 5 cells as indicated by YFP tag (Figure 6J). In contrast to layer 6 cells, the projections from layer five to MGB in the aCTC slice are sparse, as has been previously described (Llano and Sherman, 2008), so they are not well seen in the low-magnification image (Figure 6J). However, with high magnification, the layer 5 projections to MGB were\u00a0observed (Figure 6\u2014figure supplement 2). Consistent with the previous data, the photoinhibition of layer 5 cells expressing eNpHR3.0 receptors by illumination with 565 nm light could not retrieve the missing cortical responses, indicated by no recovery of the post-stimulus LFP signals from L3/4 compared to control (no light) (Figure 6K and L, Figure 6\u2014source data 3, paired t-test: t(36) = 0.46, p=0.18, n\u00a0=\u00a037 trials from four animals), which suggests that the population OFF cortical responses were specifically driven by MGB inhibition through corticothalamic layer 6-TRN pathway. To suppress feedforward inhibition, the IC of neonatal GAD2-Cre mice was injected with halorhodopsin-AAV virus (see Materials and methods) to induce the expression of halorhodopsin specifically in the GABAergic cells of the IC in a Cre-dependent manner. As expected, GABAergic cells of the IC as well as their projections to MGB expressed halorhodopsin indicated by the presence of YFP (Figure 6N). Photoinhibition of GABAergic cells of the IC by illumination with 565 nm light was not able to retrieve the missing cortical responses as indicated by no recovery of the post-stimulus LFP signals recorded from L3/4 (Figure 6O and P, Figure 6\u2014source data 4, Paired t-test: t(6)\u00a0= \u22121.03, p=0.34, n\u00a0=\u00a07 trials from five animals). Accordingly, based on the data shown in Figure 6 and Figure 6\u2014figure supplement 1, we conclude that the population OFF cortical responses were most likely driven by the feedback inhibition of MGB by corticothalamic layer 6 cells via TRN.\n\n## Discussion\n\nWe observed stochastic population cortical responses in the mouse AC following the presentations of pure tones in vivo or electrical stimulation of the IC in vitro. Population ON responses were associated with synchronized responses among MGB cells, whereas population OFF responses were associated with TRN-mediated inhibition at the level of the MGB, under the control of layer 6 corticothalamic projections. Other inhibitory projections to the MGB from the IC had no impact on the probability of eliciting a population ON response. It is unlikely that population OFF cortical responses were a sign of cortical adaptation, because adaptation responses are generally characterized by gradual decrease of the response amplitude, rather than the all-or-none responses observed here (Chung et al., 2002; Abolafia et al., 2011). We conclude from these findings that layer 6 corticothalamic neurons gate population activity in the AC via their projections to TRN, which desynchronize MGB neurons. Previous work has suggested that corticothalamic axons, via the strong inhibition to thalamocortical cells by way of the TRN (Crandall et al., 2015; Olsen et al., 2012; Paz and Huguenard, 2015; Steriade et al., 1996; Guillery and Harting, 2003; McAlonan et al., 2008), control thalamocortical information flow (Destexhe, 2000; Yu et al., 2004). In the current study, the gating mechanism appears to involve TRN-based desynchronization of thalamocortical neurons rather than diminishing the overall thalamic response, which is consistent with previous findings showing that the TRN can desynchronize thalamocortical cells via multiple mechanisms (Pita-Almenar et al., 2014). This explanation is also consistent with our finding that direct electrical stimulation of the thalamus did not lead to stochastic AC response because direct electrical stimulation is likely to elicit highly synchronous responses among MGB neurons. It is also possible that silencing layer six corticothalamic neurons led to changes in likelihood of activating the AC via intracortical connections of NTSR1-positive neurons. Future work involving selective silencing of corticoreticular terminals vs. corticocortical terminals will be needed to distinguish between these possibilities. It will also be important to determine if the mechanisms observed in the current slice data are also seen in adult animals. Juveniles were used to maximize slice connectivity, but now that specific hypotheses may be proposed, elements of the proposed thalamocortical gating mechanisms can be examined in adult preparations. We also note that population OFF cortical responses in the current study were never initiated by the first stimulation of the IC. Rather they were always elicited by the subsequent IC stimulation, which suggests that population OFF cortical responses occurred only after evoked cortical activity that could change the internal dynamics of the cortical cells. Moreover, the strong association between the high probability of the OFF cortical responses and the low level of stimulation suggests that cortico-reticulothalamic control of thalamocortical transmission is most likely to be effective when signal-to-noise ratio is low. This finding is consistent with the notion that top-down modulation is mostly required for the attentional modulation of weak signals and that highly salient signals rely on bottom-up mechanisms to activate perceptual representations (reviewed in Asilador and Llano, 2020).\u00a0Classical models have viewed sensory processing stations, including the thalamus and cortex, as a series of feedforward, hierarchically organized filters whereby combinations of receptive fields produce increasingly selective feature detectors, culminating in uniquely selective neurons (Riesenhuber and Poggio, 1999; Vidyasagar and Eysel, 2015). This type of organization implies that moment-to-moment perception is a reflection of detailed streams of information coursing through ascending sensory systems, to be consciously perceived when those streams engage highly selective cells in the cortex. An alternative view is that ascending information is used to create and modify a bank of sensory representations that are recruited depending on behavioral needs, and that conscious perception reflects activation of these pre-wired circuits (Ringach, 2009; Llin\u00e1s, 1994; Mishkin, 1982). Thus, conscious perception may involve the release of stereotyped patterns of cortical activity. One potential role of thalamocortical transmission in this model is to select cortical ensembles rather than impress sensory information upon them. Our data suggest that at the thalamocortical level, sensory inputs activate stereotyped patterns of population cortical activity. Future work in awake preparations will help to establish whether population ON responses correspond to perception of sensory stimuli.\n\nCritical for any such mechanism of control of cortical ensembles is a means by which those ensembles are selected. The current data suggest that the TRN, under the control of layer 6 projections, gates populations of thalamic neurons by desynchronizing their responses, decreasing the likelihood of engendering a population cortical response. A mechanism of TRN-based modification of thalamic synchrony to activate the cortex has been proposed previously (Saalmann and Kastner, 2011) and is consistent with the finding that synchronized populations of thalamic neurons are required to optimally activate the cortex (Bruno and Sakmann, 2006) and that the TRN is at the heart of a prefrontal cortex-based mechanism to shape cortical activation under changing cognitive demands (Zikopoulos and Barbas, 2006; Wimmer et al., 2015; Yingling and Skinner, 1975). Further, the TRN receives inputs from basal forebrain, amygdala and non-reciprocally linked regions of the thalamus (Kimura et al., 2007; Lam and Sherman, 2005; Lam and Sherman, 2015; Crabtree et al., 1998; Crabtree and Isaac, 2002; Lee et al., 2010b; Des\u00eelets-Roy et al., 2002; Zikopoulos and Barbas, 2012; Aizenberg et al., 2019), forming an assortment of inputs to potentially modulate TRN, and ultimately select cortical circuits for activation. Given the putative role of the TRN in the selection of thalamic, and therefore cortical circuits during sensory perception, one would predict that disruption of TRN activity could lead to uncontrolled release of patterns of cortical activity. Consistent with this idea, ample evidence has accumulated to suggest that schizophrenia, a disease characterized by the presence of auditory hallucinations, involves disruption of the TRN (Pratt and Morris, 2015; Ferrarelli and Tononi, 2011; Young and Wimmer, 2017; Bencherif et al., 2012; Light and Braff, 1999; Patterson et al., 2008; Ferrarelli et al., 2007; Ferrarelli et al., 2010; Wamsley et al., 2012; Ferrarelli and Tononi, 2017).\n\n### Conclusion\n\nHere, we describe a unique stimulus-evoked population cortical all-or-none response, which suggests that thalamus recruits cortical ensembles of pre-wired sensory representations upon external stimulation in conjunction with internal cortical dynamics of corticothalamic neurons. These data also suggest that corticothalamic modulators control the temporal coordination between the thalamic cells to gate the activation of\u00a0the intracortical network. It will be important in future studies to more fully understand how other regulators of the TRN, such as the basal forebrain, prefrontal cortex and amygdala, influence the selection of cortical circuits during active behavior.\n\n## Materials and methods\n\n### Animals\n\nC57BL/6J (Jackson Laboratory, stock # 000664), C57BL/6J-Tg (Thy1-GCaMP6s) GP4.3Dkim/J a.k.a. GCaMP6s mice (Jackson Laboratory, stock # 024275), BALB/c (Jackson Laboratory, stock # 000651), Gad2-IRES-Cre (Jackson Laboratory, stock # 010802), NTSR1-Cre (MMRRC, 017266-UCD) and RBP4-Cre (MMRRC, 031125-UCD). Mice of both sexes were used. All applicable guidelines for the care and use of animals were followed. All surgical procedures were approved by the Institutional Animal Care and Use Committee (IACUC). Animals were housed in animal care facilities approved by the Association for Assessment and Accreditation of Laboratory Animal Care (AAALAC).\n\n### In vivo imaging\n\nThe detailed procedures have been described before (Yudintsev et al., 2020). In brief, adult GCaMP6s mice were used for transcranial in vivo imaging of evoked calcium signals from the left AC. For each experiment, the mouse was anesthetized with a mixture of ketamine and xylazine (100 mg/kg and 3 mg/kg, respectively) delivered intraperitoneally. The animal\u2019s body temperature was maintained within the range of 35.5\u00b0C and 37\u00b0C using a DC temperature controller (FHC, ME, USA). Mid-sagittal and mid-lateral incisions were made to expose the dorsal and lateral aspects of the skull along with the temporalis muscle. The temporalis muscle was separated from the skull to expose the ventral parts of the underlying AC. The site was cleaned with sterile saline, and the surface of the skull was thinned by a surgical drill. A small amount of dental cement (3M ESPE KETAC) was mixed to a medium level of viscosity and added to the head of the bolt just enough to cover it. A head-bolt was bonded to the top of the skull, and the dental cement was allowed to set. An Imager 3001 integrated data acquisition and analysis system (Optical Imaging Ltd., Israel) was used to image the cortical responses to sound in mice. A macroscope consisting of 85 mm f/1.4 and 50 mm f/1.2 Nikon lenses was mounted to an Adimec 1000 m high-end CCD camera (7.4 \u00d7 7.4 \u00b5m pixel size, 1004 \u00d7 1004 resolution), and centered above the left AC, focused approximately 0.5 mm below the surface of the exposed skull. Acoustic stimuli were generated using a TDT system three with an RP 2.1 enhanced real-time processor and delivered via an ES1 free field electrostatic speaker (Tucker-Davis Technologies, FL, USA), located approximately 8 cm away from the contralateral ear. All imaging experiments were conducted in a sound-proof chamber and images were obtained at 10 frames per second. Each trial of sound presentation was composed of two conditions (10 s each); Condition 0 (C0), where there is no sound and condition 1 (C1), where there is a 500 ms sound presentation that comes after 5 s from the onset of the C1. For imaging, the blue light exposure was only on during the 10 s of each trial, and there was a 5 s interval between the two conditions during which the blue light was off. This intermittent schedule of the blue light exposure was done to lower the likelihood of photobleaching. 500 ms pure tones of 5 kHz, at 37, 44, 50, 55, 60, 65, 70, 75, or\u00a080 dB SPL were used for acoustic stimulation. The response window was set as one second starting from the 5th second for C0 or from the onset of sound for C1. The \u0394f/f of the response window was computed as the difference between \u0394f/f0 (C0) and \u0394f/f1 (C1) using a custom MATLAB code (Figure 1\u2014source code 1).\n\n### Virus injection\n\nTo modulate specific cell types, Cre recombinase-expressing mice were used to provide an expression of opto- or chemo-genetic probes in those specific cells 11 days after viral injection at P4. The detailed procedures have been described before (Huynh et al., 2020). For all neonates, cryoanesthesia was induced after five to ten minutes. A toe pinch was done to confirm that the mice were fully anesthetized. A small animal stereotaxic instrument (David Kopf Instruments, Tujunga, CA) was used with a universal syringe holder (David Kopf Instruments, Tujunga, CA) and standard ear bars with rubber tips (Stoelting, Wood Dale, IL) were used to stabilize the head. The adaptor stage was cooled by adding ethanol and dry ice to an attached well. A temperature label (RLC-60-26/56, Omega, Norwalk, CT) was attached to the stage to provide the temperature of the stage during cooling. The temperature was kept above 2\u00b0C to prevent hypothermia or cold-induced skin damage of the neonatal mice and below 8\u00b0C to sustain cryoanesthesia. Glass micropipettes (3.5-inches, World Precision Instruments, Sarasota, FL) were pulled using a micropipette puller (P-97, Sutter Instruments, Novato, CA) and broken back to a tip diameter between 35\u00a0and\u00a050 \u03bcm.\n\nThe micropipette was filled with mineral oil (Thermo Fisher Scientific Inc, Waltham, MA) and attached to a pressure injector (Nanoliter 2010, World Precision Instruments, Sarasota, FL) connected to a pump controller (Micro4 Controller, World Precision Instruments, Sarasota, FL). The AC of NTSR1-Cre (Olsen et al., 2012; Bortone et al., 2014; Kim et al., 2014; Mease et al., 2014) or RBP4-Cre (Jeong et al., 2016; Grant et al., 2016) neonates was injected with eNpHR3.0 AAV1 (AAV-EF1a-DIO-eNpHR3.0-YFP with titer equal to 4.7\u20135.7 \u00d7 1012, referred to hereafter as halorhodopsin-AAV) constructs from UNC Vector Core (Chapel Hill, NC), AAV1-Ef1a-DIO EYFP (control for halorhodopsin), Gi-coupled hM4Di DREADDs AAV8 (AAV8-DIO-hSyn-hM4Di-mCherry, referred to here as DREADDs-AAV), AAV8-hSyn-DIO-mCherry (control for DREADDs), or AAV9-FLEX-EGFP (for the histology done on RBP4-Cre mouse) constructs from Addgene (Cambridge, MA).\u00a0The micropipette carrying the viral particles was first located above the AC in the left hemisphere at 1.5 mm anterior to lambda and just at the edge of the skull\u2019s flat horizon. The tip was lowered to 1.2 mm from the brain surface and was then pulled back to 1.0 mm for the first injection where 200 nL of halorhodopsin-AAV or DREADDs-AAV was injected at 200 nL/min. After the injection was finished, the micropipette was left in the brain for 1 min before removing to allow the injectate to settle into the brain. Following the first injection, the tip was pulled back stepwise in 0.1 mm increments, and 200 nL of the injectate was injected at every step until the tip reached 0.3 mm from the surface. In total, 1600 nL of AAV was injected into the AC. The incision was sutured using 5/0 thread size, nylon sutures (CP Medical, Norcross, GA). To target the GABAergic cells of the inferior colliculus (IC), the IC of GAD2-Cre (Taniguchi et al., 2011; Lammel et al., 2015; Villalobos et al., 2018) neonatal mice was injected with halorhodopsin-AAV following the same procedures shown above, but the micropipette loaded by halorhodopsin-AAV was located over the IC at the left hemisphere at 2.0 mm posterior to lambda and 1.0 mm laterally from the midline. The neonates were transferred back onto a warming pad to recover. After 5\u20137 min, their skin color was returned to normal, and they started moving. After recovery, all neonates were returned to their nest with the parents.\n\n### Brain slicing\n\nFor all in vitro experiments, 15-\u00a0to\u00a018-day-old mice were initially anesthetized with ketamine (100 mg/ kg) and xylazine (3 mg/kg) intraperitoneally and transcardially perfused with chilled (4\u00b0C) sucrose-based slicing solution containing the following (in mM): 234 sucrose, 11 glucose, 26 NaHCO3, 2.5 KCl, 1.25 NaH2PO4, 10 MgCl2, 0.5 CaCl2. After the brain was removed from the skull, it was cut to obtain auditory colliculo-thalamocortical brain slice (aCTC) as shown (Figure 2\u2014figure supplement 1) and as described before (Llano et al., 2014; Slater et al., 2015). 600 \u03bcm thick horizontal brain slices were obtained to retain the connectivity between IC, MGB, TRN and AC. All slices were incubated for 30 min at 33\u00b0C in a solution composed of (in mM: 26 NaHCO3, 2.5 KCl, 10 glucose, 126 NaCl, 1.25 NaH2PO4, 3 MgCl2, and 1 CaCl2). After incubation, all slices were transferred to a perfusion chamber coupled to an upright Olympus BX51 microscope, perfused with artificial cerebrospinal fluid (ACSF) containing (in mM) 26 NaHCO3, 2.5 KCl, 10 glucose, 126 NaCl, 1.25 NaH2PO4, 2 MgCl2, and 2 CaCl2. Another set of experiments was done in a different laboratory to exclude any experimental factors related to our laboratory environment, chemicals, or anesthesia. As reported previously (Krause et al., 2014), following full anesthesia by isoflurane, a C57BL/6J mouse was immediately decapitated without cardiac perfusion, the animal\u2019s brain was extracted and immersed in cutting artificial CSF [cACSF; composed of (in mM) 111 NaCl, 35 NaHCO3, 20 HEPES, 1.8 KCl, 1.05 CaCl2, 2.8 MgSO4, 1.2 KH2PO4, and 10 glucose] at 0\u20134\u00b0C. Slices were maintained in cACSF at 24\u00b0C for\u00a0>1 hr before transfer to the recording chamber, which was perfused at 3\u20136 ml/min with ACSF [composed of (in mM) 111 NaCl, 35 NaHCO3, 20 HEPES, 1.8 KCl, 2.1 CaCl2, 1.4 MgSO4, 1.2 KH2PO4, and 10 glucose]. All of the solutions were bubbled with 95% oxygen/5% carbon dioxide and all experiments were done at room temperature.\n\n### Electrical stimulation\n\nAll the electrical stimulation protocols in the IC evoked similar cortical response patterns. One second electrical train pulses of (250 \u00b5A, 40 Hz, 1 ms pulse width) to IC was the main stimulating protocol as described before (Ibrahim et al., 2017). However, one second durations of electrical stimulation were not suitable for electrophysiology experiments because responses were intermingled with the stimulus artifact. Therefore, for whole-cell and LFP recording, the stimulation of IC was done with a single 3 ms pulse (300\u2013500 \u03bc\u0391) or 100 ms long trains of pulses (250 \u00b5A, 40 Hz, 1 ms pulse width) were used. The electrical stimulation was done using a concentric bipolar electrode (Cat#30201, FHC) every 10\u201320 s. The parameters of the electrical pulses were adjusted by a B and K precision wave generator (model # 4063) and World Precision Instruments stimulation isolator (A-360). In another stimulation set up (Our collaborator\u2019s laboratory), a biphasic current pulse (200 \u00b5A, 5 ms; STG4002 stimulator, Multichannel Systems, Reutlingen, Germany) was delivered to IC at 0.05 Hz using bipolar tungsten electrodes (100 K\u2126, FHC Inc, Bowdoin, ME).\n\n### Imaging\n\nFor calcium imaging in vitro, slices from GCaMP6s mice or wild-type mice loaded with CAL-520, AM (Abcam, ab171868) calcium dye were used. For CAL-520, AM calcium dye loading, the aCTC slices were incubated in 48 \u00b5l of DMSO dye solution\u00a0+2 \u00b5l of Pluronic F-127 (Cat# P6866, Invitrogen) in 2.5 ml of the incubating solution at 35\u201336\u00b0C for 25\u201328 min according to MacLean and Yuste, 2009; Yuste et al., 2011. The slices then were incubated in normal incubating solution (shown above) for 30 min to wash the extra dye. Imaging was done under ACSF perfusion as described before. Depending on the experiment, the evoked calcium or flavoprotein autofluorescence (FA) signals following IC stimulation (Ibrahim et al., 2017; Shibuki et al., 2003; Shibuki et al., 2009; Husson et al., 2007) were measured using a stable DC fluorescence illuminator (Prior Lumen 200) and a U-M49002Xl E-GFP Olympus filter cube set (excitation: 470\u2013490 nm, dichroic 505 nm, emission 515 nm long pass, 100 ms exposure time for FA and 5 ms for calcium signals). All data were collected using Retiga EXi camera at a frame rate of 4 Hz for FA and 10 Hz. The time trace of the FA or calcium population signals were obtained by placing regions of interest (ROI) over brain regions (IC, MGB, TRN or AC). The collected time traces were used to compute the \u0394f/f. For the calcium signals obtained from cortical or thalamic cells, the ROIs were manually made around the cell body. A strong correlation between voltage and calcium signals validated the calcium signals obtained from thalamic cells containing CAL-520 dye after simultaneous whole-cell recording and calcium imaging following the injection of a positive current to the cell (Figure 5\u2014figure supplement 1). The average background value was calculated by drawing an ellipse with radii 2.25 times that of the original ROI and subtracting all cell ROI from that ellipse to eliminate overlap. Finally, the \u0394f/f was computed after 40% of the background value was subtracted from the cell's average value for neuropil correction. \u0394f/f was computed using the average signal of a 2 s period before the stimulus onset. As illustrated in Figure 2\u2014figure supplement 2, the ON-cortical responses were determined following two criteria. Each signal required a rising and falling phase as well as a z-score greater than 3.\n\n### Pharmacological intervention\n\nTo inhibit G\u0391\u0392\u0391\u0391 receptors globally, GABAA-receptor antagonist (Yaron-Jakoubovitch et al., 2013), gabazine (Cat# 1262, Tocris) was added to the bath ACSF solution 200 nM, which is near the synaptic IC50 for this compound (Lindquist et al., 2005). To specifically inhibit the GABAA receptors in either MGB or AC, a continuous flow of gabazine (400 nM) was injected into MGB or AC in a counterbalanced manner through a glass pipette (broken tip, 35 \u00b5m) which was connected to a picospritzer (Toohey Company, New Jersey, USA). The pipette was filled by a solution composed of 1 ml ACSF\u00a0+10 \u00b5L Alexa Fluor 594 hydrazide, sodium salt dye (Cat#A10438, Invitrogen) to visualize the flow of the solution and to ensure that it was restricted to the site of injection (Figure 4\u2014figure supplement 1). The injection was done under 10 psi pressure for 5 min and continuously during imaging. As reported before, to block TRN activity (Sun et al., 2013; Lee et al., 2010a), the AMPA receptor blocker NBQX (20 \u03bcM, Cat# 0373, Tocris) was injected into TRN of the aCTC slice following the same described procedures. The chemical inhibition of corticothalamic layer 6 cells was conducted by bath perfusion of clozapine-n-oxide (CNO, 5 \u00b5M, Cat# 4936, Tocris), the chemical actuator of the chemogenetic probe, hM4Di (Roth, 2016) that was solely expressed in corticothalamic layer 6 of NTSR1-Cre mouse after viral injection. CNO was also perfused to the imaging chamber containing a slice with a layer 6 expressing m-cherry only as a control for DREADDs.\n\n### Electrophysiology and photoinhibition\n\nWhole-cell recording of cortical layer 4, TRN, or MGB cells was performed using a visualized slice setup outfitted with infrared-differential interference contrast optics. Recording pipettes were pulled from borosilicate glass capillary tubes and had tip resistances of 2\u20135 M\u03a9 when filled with potassium gluconate based intracellular solution (in mM: 117 K-gluconate, 13 KCl, 1.0 MgCl2, 0.07 CaCl2, 0.1 ethyleneglycol-bis(2-aminoethylether)- N,N,N\u2032,N\u2032-tetra acetic acid, 10.0 4-(2-hydroxyethyl)\u22121- piperazineethanesulfonic acid, 2.0 Na-ATP, 0.4 Na-GTP, and 0.5% biocytin, pH 7.3, 290 mOsm) for current-clamp mode. Voltage was clamped at \u221260 mV or\u00a0+10 mV to measure either the excitatory or inhibitory currents, respectively, using cesium-based intracellular solution (in mM: 117.0 CsOH, 117.0 gluconic acid, 11.0 CsCl, 1.0 MgCl2*6H2O, 0.07 CaCl2, 11.0 EGTA, 10.0 HEPES, pH 7.3, 290 mOsm).\u00a0Local field potential (LFP) recordings were performed using glass pipette with a broken tip 5\u201310 \u00b5m. LFP signals were filtered offline using Clampfit 10.7 software under Gaussian low pass frequency at 300 Hz as well as a notch filter at 60 Hz. A Multiclamp 700B amplifier and pClamp software (Molecular Devices) were used for data acquisition (20 kHz sampling). To analyze the distribution of the membrane potential of layer 4 cells during the UP state, a time period starting from the stimulation offset and including a similar time of both the cortical upstate event and the basal membrane potential was used. The sampling rate was reduced from 20 kHz to 2 kHz, and spikes and stimulus artifacts were excluded from the analysis.\n\nFor photoinhibition, the halorhodopsin eNpHR3.0 probe expressed selectively in either corticothalamic layer 6, layer 5, or IC-GABAergic cells, was activated by illuminating a yellow light (565 nm) obtained from DC fluorescence illuminator (Prior Lumen 200) and Olympus filter cube (U-MF2, Olympus, Japan). The same light was used to illuminate the brain slice with a layer six expressing eYFP only as a control for halorhodopsin. The light was set to illuminate the whole field of the LFP recording chamber using a 4X objective for three seconds extending from one second pre-stimulus and two seconds after the onset of IC stimulation. Based on the initial results related to the peri-stimulus dynamics of corticothalamic layer 6 cells and the post-stimulus cortical activity, 3 s of illumination was chosen to cover the time period one second before the onset of the stimulus as well as the post-stimulus period.\n\n### Histology and confocal imaging\n\nAfter collecting the aCTC slice from RBP4-Cre mouse injected with AAV9-FLEX-EGFP into the AC, the aCTC slice was placed in a 4% paraformaldehyde (PFA) solution for fixation. After one day, the aCTC slice was removed from the PFA and moved to graded sucrose solution (10, 20, and 30%). The aCTC slice was sectioned using a Leica cryostat as 50 \u03bcm sections. The sections were imaged using Leica SP8 confocal microscope (excitation: 488 nm and emissions: 515\u2013550 nm).\n\n### Imaging analysis and statistics\n\nUsing customized MATLAB codes, all the pseudocolor images (jet colormap) were produced showing the tonotopic map of AC in vivo and the activated brain regions in the aCTC slice. Origin-Pro 2017 software was used to run the statistical tests and generate the graphs. The normality of the distributions of the data was examined using a Kolmogorov-Smirnov test. Accordingly, the suitable parametric (paired t-test or RM-One Way ANOVA test followed by Bonferroni post hoc test) or non-parametric tests (Paired Wilcoxon signed-rank test or Kruskal-Wallis test followed by Dunn's Test) were used. Differences were deemed significant when p-value<0.05. Power analyses were run in G*Power (http://www.gpower.hhu.de). Using an effect size of 50% and alpha\u00a0<0.05, sample sizes in all experiments provided power to detect significant differences of at least 80%. The animals were randomly allocated in each experimental group.\n\n### Work art\n\nAll figures were designed and made using Adobe Illustrator (Adobe, San Jose, CA). To keep working within Adobe environment to avoid losing the resolution of the figures, Adobe Photoshop (Adobe, San Jose, CA) was used to crop the borders of some images to save space, draw scale bars, and adjust brightness and gamma balance of grayscale images showing the electrophysiological traces. All manipulations in brightness/contrast/gamma were uniform across the entire image.\n",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "6a28d5dc-95a0-4e07-a213-64fe5ed1e402",
+      "submission_id": "feecda35-48bf-4cd5-9ede-d6c06301c67d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew J King, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56645.sa1](https://doi.org/10.7554/eLife.56645.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study employs an impressive combination of in vivo and in vitro methods to investigate the neural circuitry that determines whether neurons in auditory cortex respond or not to relatively quiet sounds. The results suggest that layer 6 corticothalamic feedback via the thalamic reticular nucleus is responsible for gating cortical population responses, proving new insight into the role of descending projections from the auditory cortex to the thalamus.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Corticothalamic gating of population auditory thalamocortical transmission in mouse\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Andrew King as the Senior Editor and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Daniel B Polley (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis is an impressive paper, which utilizes an array of state-of-the-art tools to dissect the contribution of cortical feedback to the thalamic reticular nucleus in the omission of responses to sound in the auditory cortex. This is an important and surprising finding, which provides new insight into the role of corticothalamic circuits. These findings are based on a combination of in vivo and in vitro population recordings and make excellent use of a powerful slice preparation that allows the connectivity of the midbrain, thalamus and cortex to be explored. Although the reviewers were enthusiastic about much of the study, they thought that the findings were not well presented and disagreed with some of your interpretations of the data. In particular, they were unanimous in their view that the sections dealing with gamma oscillations, thalamic synchrony and deep learning are weak and incomplete, and should be removed from the paper. They were also concerned that critical control groups (the use of a control fluorophore in the case of the halorhodopsin experiments and a CNO only group for the DREADDS study) are not reported. This is particularly important where such large injection volumes were used in very young mice. Consequently, it was felt that additional data as well as re-analysis and re-writing would be needed before this paper could be considered acceptable for publication.\n\nReviewer #1:\n\nThis is a nice paper that proposes a mechanism that allows for gating of population cortical activity. The paper uses a combination of in vivo and in vitro population recordings that are backed up with some excellent slice physiology from a courageous colliculo-thalamocortical slice preparation.\n\nLine 69. Why must these hierarchical filters be linear?\n\nLine 73. This formed complex hallucinations argument isn't really clear. Are you just arguing that a hierarchical linear filter model cannot explain anything that causes elevated activity in primary sensory cortices, that isn't present in subcortical stations?\n\nLine 85. I'm not sure I agree with the statement that the thalamus is strikingly similar across modalities. The two references that are cited only discuss canonical cortical circuits.\n\nLine 91. The statement \"all-or-none\" to describe the population response seems inadequate, given the variability in \"ON\" responses in Figure 1D.\n\nFigure 1. Where do these ON/OFF responses fall within the trial presentations \u2013 are there any time dependence that could reflect photobleaching? There is also a large fraction of OFF responses that seem to be driven below baseline (in Figure 1D) \u2013 is this an artifact of the dF/F computation? On that note, the methods do not explain how you computed dF/F (there are different ways that one can do this).\n\nLine 105. 37dB is quite a specific intensity \u2013 why did you choose this?\n\nLine 108 and Line 110. You say \"to 10 presentations of the same tone\", and \"across the 40 trials of the same sound presentation\". It's not quite clear what is meant.\n\nLine 123. Activating the IC and observing AC response is due to di-synaptic circuitry. Therefore, does the AC \"failure rate\" change with the intensity of the stimulation? Can you stimulate hard enough to overcome the thalamic inhibition that you claim mediates the OFF responses?\n\nFigure 2E. Why is the dF/F in the MGB orders of magnitude lower than IC or ACtx?\n\nLine 139. It's not immediately clear to me how are you getting single-cell resolution using this one-photon preparation? The images shown throughout are \"wide field\" population images. Are you able to show any cellular examples? Are you using some kind of NMF algorithm to achieve cellular resolution? How are you controlling for issues like neuropil contamination (that are ubiquitous in 2P data).\n\nLine 146. On the issue of up states vs down states. If you histogram the membrane potential, is it bimodal to reflect the different states?\n\nLine 155-160. This isn't particularly well described. What exactly is it being modeled here? It seems like you are performing a binary classification, e.g. using either MGB activity or striatum activity to predict whether the corresponding cortical response was ON or OFF? Why does this imply that network-level activity may determine whether an on or off response occurred? Why is the striatum region irrelevant (i.e. it is still (indirectly) connected the cortex via the thalamus, no?). Why the need to use such an advanced machine learning method? Did simpler binary classification tools fail? Does this method also give the same result when used on the GCaMP or whole cell recordings?\n\nFigure 3B. Why are there are more OFF responses that appear in the wash condition? Can you add a third variable to Figure 3C to show this \u2013 shouldn't the wash be statistically indistinguishable from control?\n\nLine 195. This is actually a question regarding choices throughout the paper \u2013 what dictated the choice of either flavoprotein or calcium? The deep learning results referenced here were established with flavoprotein, but these follow-up experiments use calcium.\n\nFigure 4B. It's not quite clear what is going in this figure. Would some kind of population signal help? Or an alternative way to plot the data? Do these individual traces all have well-defined peak latencies (it's hard to tell from the figure). You're showing the variance of the peak latencies \u2013 but couldn't you just compare the peak latencies directly? Does it give the same result? Also, you talk about three categories in the text, but are only showing two categories in the figure. A latency analysis is also a little bit difficult to interpret with calcium data (both from the calcium timescale and the acquisition frame rate) \u2013 it might be a good idea to either discuss these limitations, since you are arguing for synchronicity based on a small reduction in variance within this data.\n\nLine 195. \"Calcium signals of MGB cells were imaged following the stimulation of the IC during ON vs OFF cortical responses\" \u2013 is it not the IC stimulation that is causing the ON or OFF cortical responses?\n\nLine 373 \u2013 \"The detailed procedures have been described before (77)\". This seems like it may be the wrong citation? (77) is a theoretical conference paper with no in vivo imaging details.\n\nLine 220 \u2013 Is there a particular reason to use neonates for the experiments in this section?\n\nFigure S7. I'm slightly confused by the MGB of the RBP4-Cre mouse \u2013 it looks like there is no TRN labelling but also no MGB labelling?\n\nLine 270. It's not possible to understand what you did here without jumping to the methods.\n\nLine 274. Is there an intuitive reason why a shorter pre-stimulus period (which should contain more oscillatory information) be less predictive?\n\nLine 276. \"A classifier?\" Can you justify your classifier choice here, compared to the more complicated deep learning approach used for classification earlier in the paper?\n\nFigure S8. Based on the text, the gamma prediction is important to the circuit story. It may be a better idea to include it as a main figure?\n\nReviewer #2:\n\nThere is much to admire in the paper by Ibrahim and colleagues. They are the only lab in the world (to the best of my knowledge) that has worked out the geometry of a brain slab that leaves the synaptic connections intact from the midbrain-thalamus-MGB-TRN-cortex-back to TRN/MGB. Here, they use this slab to great effect by revitalizing the old cortical up/down state phenomenon in the context of all-or-nothing responses in A1 to stimulation of midbrain afferents. They have convinced me that the basic phenomenon is real and that it is interesting. Further, I am convinced that they can reduce the probability of OFF response trials by: (1) blocking GABAA receptors, (2) blocking AMPA receptors in TRN, (3) inactivating Ntsr1-Cre L6 CT neurons. They also have data to show that (4) inactivating feedforward inhibition from the IC or glutamatergic L5 projection neurons does not affect OFF response probability.\n\nWhile there is a lot of good in this manuscript, there is plenty of bad and ugly as well. In their efforts to weave a complete theory of the phenomenon, they are forced to rely on a few very weak/poorly developed pieces of data. Emphasizing these more tenuous findings (Figure 4, Figure S4, Figure S8), ends up doing them a disservice because it takes away from their more solid observations. Apart from eliminating the dubious findings, the figures and the analysis are poorly organized, confusing and do not convey the process of processing the data from example cases to summary plots that relate to their statistics. They look more like lab meeting figures than manuscript figures.\n\nIn the final analysis, I think the work offers a significant conceptual advance based on an innovative technical approach. The manuscript can be substantially improved through eliminating the under-developed analyses, reorganizing the remaining figures and adding some additional analysis. The authors needn't feel compelled to oversell the reader on a complete comprehensive story when some of holes are not yet filled in. It's fine that some of the mechanisms are unknown so long as the shortcomings and caveats are clearly identified.\n\n1. Figure 1 is potentially important but is not too convincing in its current form. One reason that it's important is that the rest of the manuscript is a developmental neuroscience study that is never acknowledges this fact. The intro and discussion with the talk of schizophrenia and hallucinations are too far-ranging for my taste, but particularly in the context that their study was performed in mice that had only been connected to the auditory world for less than 1 week. It would be very easy to write off the phenomenon they describe here as an oddity o development that would not apply to the mature cortex.\n\nFor me, this underscores the potential importance of Figure 1, where they demonstrate the phenomenon in vivo using older animals. The biggest impediments in its current form are (i) the age of the animals used for transcranial imaging is never mentioned. I presume they are adult? (ii) The entire analysis is based on a single tone frequency presented a single sound intensity that is very near threshold (5k at 37 dB SPL). This makes me question the generality of the principle described here. Having done this trial-by-trial analysis myself on this type of data, I don't think it really works for strong, suprathreshold stimulus intensities. Is this entire phenomenon restricted to a very narrow range of near-threshold intensities? In that case\u2026is it really a phenomenon or just what happens near minimally effective stimulation levels (which is already very well known). Obviously, the same critique applies to the current levels they use for the rest of the study. It would have been nice to see a more systematic and quantitative examination of the stimulus parameters where this phenomenon is strong versus weak.\n\n2. Imaging from \"single cells\". Single cell imaging is not possible with epifluorescence illumination in a slice this thick, especially without neuropil removal. At best they are ROIs but even then, what is the value when there is no basis for the argument that their ROIs are independent response units? I suggest eliminating 2G, Figure 4 and Figure S4. The issues with Figure 4 (and S4) go way beyond the cellular resolution issues, they are uninterpretable for a number of reasons.\n\n3. In Figure 2D, I'm not convinced that they are looking at signals from TRN cell bodies as opposed to thalamocortical/corticothalamic axons. The thalamic radiation forms a dense fascicle right at the point of the TRN in this plane so it could be very hard to distinguish between TRN cell bodies and axon signals with the optics they are using. Too bad they didn't express GCaMP in the GAD-Cre mice they use for inhibiting the feedforward inhibitory IC projection neurons.\n\n4. Calcium imaging in the MGB and IC. Looking at other publications of the Thy1-GCaMP6 mouse, I see lots of labeling in pyramidal neurons in neocortex and hippocampus, but no labeling in the MGB or IC. I'm confused about what is being measured in Figure 2E. Maybe there is expression in younger mice or is just very faint?\n\n5. Figure 3E-H (graphics could be greatly improved here) show that EPSCs in MGB are unchanged in cortical ON vs OFF trials but IPSCs are elevated in OFF trials. This is one of the mysteries of their study that they try to address with a bunch of uninterpretable analysis methods (Figure 4 and Figure S4). The conundrum they face is how does enhanced thalamic inhibition create a cortical OFF response without making the MGB excitatory response weaker? Figure 4 and S4 attempt to explain this but are contrived and unconvincing. I don't disagree but I would suggest that they are thinking about it too simplistically. It doesn't matter what the MGB cell bodies are doing, what matters is what they are transmitting to the cortex during OFF trials. It would be helpful if they quantified these data more carefully by looking at the relative timing of the IPSC and EPSC responses. Looking at the study by Reinhold, Lien and Scanziani 2015, the TRN can regulate sustained spiking and thalamocortical synaptic depression in ways that cannot be dismissed just by measuring the excitatory response. They don't have to fully answer this here. They can do the best with whatever straightforward analysis they can manage and then devote some space in the discussion to actually discussing alternative explanations for their experiments instead of rhapsodizing about how these data solve the greatest mysteries of the brain.\n\n6. Figure 3K \u2013 It would be important to see the individual data points. The legend says the data are an n=5, reflecting 5 slices from 4 animals. How do you get two of these slices from one animal? Regardless, this is a very small sample to make such a strong conclusion as blocking cortical GABAA receptors does not affect the OFF response probability. Was the AC Gabazine always performed after the MGB wash? The order should be counterbalanced and really I'm not even sure what the justification is for using a t-test on a sample this small. Unclear how the assumptions of the test can really be determined.\n\n7. I suggest putting all three of their halorhodopsin experiments into one figure (IC inhibitory feedforward neurons, L6 CT and L5 projection neurons). I'm also bothered that there isn't a control condition where mice have undergone a perinatal injection to express a control fluorophore. This seems particularly warranted because they injected an enormous volume of virus solution (1600 nL) into very small area. Apart from this control, while I think the L6 inactivation result is very interesting, I strongly disagree with their often repeated interpretation of the data, that \"Population OFF responses were associated with TRN-mediated inhibition at the level of the MGB, under the control of layer 6 corticothalamic projections\".\n\nTheir data do not support this conclusion. Yes, blocking AMPA receptors in TRN reduced the probability and Yes, silencing L6 CT also reduced the probability but it is a logical fallacy to assume those are causally related. Ntsr1 neurons make synaptic contacts on TRN neurons, MGB neurons, local AC inhibitory neurons and local AC excitatory neurons. It is entirely possible that the Ntsr1 neurons are mediating this effect through local connections in the cortex and not through the descending projection. In that regard, it is a bit frustrating that the main point of the Guo 2017 study was the Ntsr1 neurons can strongly bias AC neurons to become less responsive to afferent activity via intracortical connections, yet these findings are not mentioned in this context.\n\nDon't get me wrong, they might be right. But providing that the L6 CTs modify MGB via TRN would require a different type of experiment to isolate the influence of L6 CT axons onto TRN neurons and not the other three types of neurons that it communicates with. Again, good topic for a revamped Discussion section.\n\n8. Figure S3 should be upgraded to a main figure and quantified.\n\n9. Figure S6 is interesting but preliminary. There are only four data points and DREADD experiments are usually considered uninterpretable without a control condition in which CNO is applied with the expression of a control fluorophore (i.e., without the designer receptor) to account for known off-target effects of CNO.\n\n10. The issues with Figure S7 are that Rbp4-Cre does not selectively label \"PT-like\" L5 cells that project sub-cerebrally. In fact, most of their axons remain within the cortex. To this point, the expression they show in no way resembles the cartoon in Panel A but more problematically does not compare to the expression in the Ntsr1 neurons. As such, it is hard to interpret much from the negative result because it may be that they are hyperpolarizing many fewer neurons overall and very often not the L5 neurons that project to the MGB.\n\n11. Figure S8 is another example of them trying to squeeze too much out of their data. First of all, I was unclear about how they were confident that they patched Ntsr1 neurons and not other L6 cell types. But mainly the analysis methods were a little strange to me. Why not just filter in the Gamma band (or other bands)? Also there is a huge literature showing the phase of ongoing 2-6Hz oscillations gate the response probability of AC neurons (e.g., in Guo 2017). It would have been reasonable calculate the phase and amplitude of the pre-stimulus membrane currents from its analytical signal using the Hilbert transform. In its current form, the quantification in this figure is not convincing at all.\n\nApart from that, the Pre-stimulus L6 neuronal activity could only accurately predict 58.1 {plus minus} 3.5 SD% ON and OFF cortical responses, which is subtle compared to the theoretical random accuracy 55.1%. Moreover, should the random accuracy be calculated by training and testing the model with shuffled ON and OFF responses?\n\nReviewer #3:\n\nThis is an interesting paper that finds that the cortical feedback to the thalamic reticular contributes to the omission of responses in the cortex. This is an important and surprising finding, and the authors bring a whole arsenal of state-of-the-art tools to dissect the contribution of this pathway. The variety of the methods, that include calcium imaging, flavoprotein imaging, electrical stimulation, whole cell recording, pharmacologic/optogenetic/chemogenetic manipulations, all point towards the same conclusions. The data that are presented support most of the claims of the paper. Most of my concerns reflect the interpretation of the data, the focus of the introduction and discussion, some missing controls and the lack of report of statistics in the main body. I believe that the authors should be able to address these concerns with the data in hand, through additional analysis and re-interpretation.\n\n1. The emphasis in the introduction and discussion on the \"classical models\" of purely feedforward hierarchical processing seems somewhat forced. Numerous studies, especially in the auditory system, have addressed the importance of feedback in anatomy, auditory processing, learning and behavior. Rather than skipping over this important work, the paper would benefit from the discussion of previous work on the function of feedback in sensory processing. This would furthermore allow the authors to better define what role their work plays in this context.\n\n2. Similarly, the emphasis on the role of this feedback in neuronal oscillations seems to be overstated. In the introduction, the discussion of hallucinations seems to come out of nowhere. In the paper, only one supplementary figure is devoted to analysis of oscillations, whereas in the abstract, introduction and discussion, these is an extensive focus on the gamma oscillations. The gamma activity -based prediction of ON vs OFF responses seems to be weak. The classifier only had an accuracy of 58%, which is not very high, and is only barely above random accuracy of 55. This focus and confusing result detracts from the main message of the paper.\n\n3. The terminology of ON and OFF responses seems to be at odds with the accepted terminology in the auditory field. Typically, in the auditory field, ON responses refer to the activity at the onset of a stimulus, and OFF responses refer to the activity after stimulus offset. OFF responses, where there is no response at all, is confusing. The authors allude to the use of UP and DOWN states in the literature, but there is only indirect evidence that this activity indeed corresponds to those states. Perhaps using \"Response\" and \"Omission\"; yes/no; 1/0 or +/- could work.\n\n4. The claim that the thalamus selects co-activated cortical ensembles, referred to in the abstract, last sentence of the introduction as well as the discussion, is not supported by data. Perhaps it is known that the auditory cortex uses partially overlapping ensembles of coactivated neurons to represent auditory stimuli, but that data is not represented in this paper. In fact, the data in this paper hinges on an \"all or nothing response,\" which undermines this idea of coactivated ensembles in the AC. These contrasting ideas deserve reconciliation.\n\n5. Statistics for all claims should be reported in the main text. Some statistics are missing, for example, in Figure 5D, the distribution of the histograms.\n\n6. It is great that the paper starts with results in vivo. However, those are under anesthesia. Are OFF responses also present in awake animals, perhaps influenced by attention or arousal levels? Perhaps worth speculating in the discussion on the functional importance of this corticothalamic gating in awake behaving animals.\n\n7. The authors use a deep learning algorithm to establish the predictive power of the response, training on MGB data vs irrelevant striatum. How would the algorithm work for IC data? Furthermore, it is unclear whether deep learning is required for this analysis. Would more simple statistical measures, such as correlation or Granger causality measures work here as well? Can the predictive ability of layer 6 activity be improved with just using pre-stimulus layer 6 firing rate, as opposed to LFP power spectra?\n\n8. The authors observed cortical IPSCs during ON responses but not OFF responses. The importance of this finding would be better demonstrated by comparing it with cortical EPSCs. Presumably, ON responses are characterized by large EPSPs and medium IPSCs, whereas OFF responses are characterized by no EPSCs or IPSCs. That way, it's clearer that OFF responses are not simply caused by increase in IPSC magnitude. It could then be contrasted that with the increase in IPSC magnitude observed in MGB, as they show in figure 3G. The importance of figure 3E/3F is unclear. It would be great to explain why IPSCs are observed in cortical ON responses and not OFF responses.\n\n9. How well do gabazine and NBQX stay localized to the area of injection? Is there any chance of diffusion of the agent confounding results? How was localization confirmed?\n\n10. What are the controls for chemogenetics?\n\n11. In Figure 4, when performing calcium imaging in MGB, which trials had cortical ON vs OFF responses? Was that determined through simultaneous LFP recording in AC (diagram in figure 4A)?\n\n12. How well can latency of response and response timing variability (Figure 4) be assessed using GCaMP6s, which has a response time scale on the order of seconds? Is the variability in response timing really on the order of hundreds of milliseconds (Figure 4D)? Perhaps this would be better evaluated using whole cell recording or electrophysiology.\n\n13. Is it MGB synchrony, or MGB inhibition, that leads to cortical ON vs OFF responses? The importance of MGB synchrony, or at least its interaction with TRN-MGB inhibition, is unclear. Furthermore, the synchrony analysis should be conducted with more appropriate statistical tools, including correlation measures. It remains unclear how a desynchronized MGB leads to an OFF response (aka no firing) in the cortex. Do layer 4 cortical cells not reach firing threshold when the inputs are asynchronous? Or do cortical neurons not receive inputs from MGB when the neurons fire asynchronously (due to further gating by third party cells)?\n\n14. Is the difference in power at ~36Hz significant when controlling for multiple comparisons across 11 different LFP power spectra frequencies? Perhaps the authors could try running a 2-way ANOVA with frequency and ON/OFF status as factors.\n\n15. I recommend tightening the writing style throughout: e.g. in abstract: \"Here, we elucidate the mechanism for gating of population activity.\" Some paragraphs are multiple pages long. There are run-on sentences, and the authors use passive tense extensively. I would recommend splitting up the paragraphs, so that each paragraph contains one result/analysis, as well as two sentences for motivation and conclusion.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Corticothalamic gating of population auditory thalamocortical transmission in mouse\" for further consideration by eLife. Your revised article has been evaluated by Andrew King as the Senior Editor and Reviewing Editor.\n\nThe authors are to be commended for carrying out a number of new experiments to provide essential control data and to provide additional information that has strengthened the study. The majority of the other concerns raised by the reviewers have been dealt with adequately, but there are a few remaining issues that need to be addressed.\n\nBoth the in vivo and slice data now clearly illustrate the dependence of the cortical responses on the stimulus magnitude, with the probability of an OFF response occurring declining with increasing stimulus strength. This reinforces one of the points made by reviewer 2, namely that these effects appear be present only for near minimally effective stimulation levels. That raises the question of what function they serve and how these responses contribute to our understanding of cortical processing under more natural conditions (including in awake animals at higher sound levels). These are important issues that need to be addressed in the Discussion.\n\nThe readability of the text would benefit further from greater use of paragraphs (as pointed out by reviewer 3). For example, one paragraph runs from lines 304-380. This does include some deleted text, but is still far too long.\n\nLine 364: 5J should be 6J.\n\nLine 423: \"exposure to pure tones\" might be construed as a form of passive acoustic environment. \"Presentation of pure tones\" would be less ambiguous.\n\nFigure 1 legend: there are several full stops missing.\n\nFigure 2 \u2013 Supplementary Figure 3: the legend refers to red and green boxes, but there are none in the figure (at least in the composite pdf of the manuscript).\n\nLine 943: the sentence ends \"showing\".\n\nFigure 6 \u2013 Supplementary Figure 1G: all traces are black, whereas the legend claims that some are brown or green.\n",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "47c7a64f-8982-4aea-b161-528c250e6760",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C1",
+      "claim": "Transcranial calcium imaging of the AC of an anesthetized GCaMP6s mouse following repeated presentations of a 5 kHz-37 dB SPL pure tone revealed cortical activity in three distinct areas: the primary AC (A1), secondary AC (A2), and anterior auditory field (AAF).",
+      "claim_type": "EXPLICIT",
+      "source": "Transcranial calcium imaging of the AC of an anesthetized GCaMP6s mouse following repeated presentations of a 5 kHz-37 dB SPL pure tone (Figure 1A) revealed cortical activity in three distinct areas, the primary AC (A1), secondary AC (A2), and anterior auditory field (AAF), consistent with previous work (Issa et al., 2014; Figure 1B, MATLAB code in Figure 1\u2014source code 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from in vivo calcium imaging (Figure 1A, 1B) and is consistent with previous work cited (Issa et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "91f75474-5eb9-4661-a5a9-ba4f8a4d9004",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C2",
+      "claim": "Across 40 trials of the same sound presentation, A1 showed either a full population response (population ON cortical responses) or no response (population OFF cortical responses).",
+      "claim_type": "EXPLICIT",
+      "source": "Across the 40 trials of the same sound presentation, we observed that A1 showed either a full population response (here called population ON cortical responses) or no response (referred to here as population OFF cortical responses), with some variability within each class (Figure 1C, MATLAB code in Figure 1\u2014source code 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from calcium imaging across multiple trials (Figure 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "5f2621bb-a0cc-43ef-ac70-03e1fa76c16a",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C3",
+      "claim": "The responses to sound stimuli were independent of stimulus presentation order.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the individual cortical responses over time revealed the responses to be independent of stimulus presentation order (Figure 1D, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing temporal patterns of responses (Figure 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "f9f5f383-2090-49b1-a3c3-fbb102aa75b6",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C4",
+      "claim": "A histogram of \u0394f/f of sound-evoked calcium signals from A1 across trials showed two classes of A1 responses ('Population ON' vs. 'Population OFF').",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, a histogram of \u0394f/f of sound-evoked calcium signals from A1 across trials showed two classes of A1 responses ('Population ON' vs. 'Population OFF,' Figure 1E, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from histogram analysis (Figure 1E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "c51aef1c-ae3e-4555-8c23-e8714f381b1c",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C5",
+      "claim": "A greater frequency of population ON cortical responses was observed with increasing sound pressure level.",
+      "claim_type": "EXPLICIT",
+      "source": "A greater frequency of the population ON cortical responses was observed with increasing sound pressure level (Figure 1F, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing the relationship between sound pressure level and response frequency (Figure 1F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "484d9aa5-0606-421b-afc3-2e9dee5f7e43",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C6",
+      "claim": "Similar stochastic population sensory cortical responses have been observed previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar stochastic population sensory cortical responses have been observed previously (MacLean et al., 2005; Kenet et al., 2003; Miller et al., 2014; Sakata and Harris, 2009), but the mechanisms that determine whether a population ON or OFF response occurs have not yet been elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "ff641faf-fa35-4095-9ea4-4cf516701f37",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C7",
+      "claim": "Electrical stimulation of the IC evoked neuronal activity in the IC, MGB, TRN, and AC as indicated by stimulus-evoked flavoprotein autofluorescence (FA) and calcium-dependent fluorescence signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The auditory colliculo-thalamocortical (aCTC) mouse brain slice retains the synaptic connections between these structures: hence, electrical stimulation of the IC evoked neuronal activity in all of these brain structures as indicated by stimulus-evoked flavoprotein autofluorescence (FA) and calcium-dependent fluorescence signals (Figure 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from FA and calcium imaging in brain slices (Figure 2A-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "43962e5c-8d68-48c0-9861-95c0056952e5",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C8",
+      "claim": "Individual time series of stimulus-evoked FA and calcium signals across trials of IC stimulation reveal stochastic responses in the AC, despite MGB, TRN, and IC being always responsive to IC stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, review of the individual time series of \u0394f/f of the stimulus-evoked FA and calcium signals across trials of IC stimulation (Figure 2C and E, Figure 2\u2014source data 1 and 2) reveals stochastic responses in the AC; a pattern that was similar to the in vivo data, despite the fact that MGB, TRN, and IC were always responsive to IC stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from FA and calcium imaging across multiple trials (Figure 2C, 2E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "16b1a764-e0d8-46e4-a090-a144cfe9d626",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C9",
+      "claim": "Whole-cell recording from MGB and TRN cells showed spikes in response to each stimulus irrespective of the presence of a population AC response.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding was consistent with whole-cell recording from MGB and TRN cells (Figure 2\u2014figure supplement 3), where spikes were seen in response to each stimulus irrespective of the presence of a population AC response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from whole-cell recordings (Figure 2\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "29bc1875-6888-4b0d-a939-7335dcc85683",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C10",
+      "claim": "FA and calcium signals from the MGB are smaller than those from AC.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that similar to previous studies, FA and calcium signals from the MGB are smaller than those from AC (Dana et al., 2014; Llano et al., 2009), which may be related to limited alignment of mitochondria-containing neuropil processes or low baseline expression of GCaMP in the MGB, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies and inference about possible mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "e3a4b6ee-9dc1-49a9-83cb-533a7119bce3",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C11",
+      "claim": "LFPs recorded in the AC showed all-or-none response patterns that strongly correlated with the FA signals.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that metabolic or imaging artifacts did not drive the observation of these stochastic population cortical responses, local field potentials (LFPs) were recorded in the AC while simultaneously conducting FA imaging, and the LFPs also showed all-or-none response patterns that strongly correlated with the FA signals (Figure 2F, Figure 2\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from simultaneous LFP recording and FA imaging (Figure 2F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "fcdffcfb-6afa-4f41-81fe-3c3e2891e18c",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C12",
+      "claim": "Stochastic population AC responses were observed in brain slices prepared using a different anesthetic (isoflurane) without transcardiac perfusion in a different laboratory using a biphasic stimulator vs. monophasic stimulator.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed stochastic population AC responses in brain slices prepared using a different anesthetic (isoflurane) without transcardiac perfusion in a different laboratory using a biphasic stimulator vs. monophasic stimulator (Figure 2\u2014figure supplement 4), suggesting that the stochastic responses were not specific to a particular slice preparation or stimulation technique.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from a different laboratory setup (Figure 2\u2014figure supplement 4) and inference about the generalizability of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "531af9bb-40a7-496e-997c-8ac8e228e9f2",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C13",
+      "claim": "Stimulus-evoked calcium signals of a small population of layer 4 cells showed that a similar population of layer 4 cells was activated with each population ON response and that population OFF responses were associated with an absence of layer four responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking more closely at the activity of cortical layer 4 cells, the stimulus-evoked calcium signals of a small population of layer 4 cells following IC stimulation showed that a similar population layer 4 cells was activated with each population ON response and that population OFF responses were associated with an absence of layer four responses. For instance, all neurons ceased to respond during stimuli # 9 and 11 (Figure 2G, rose ribbons, Figure 2\u2014source data 4) and (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from calcium imaging of layer 4 cells (Figure 2G, Figure 2\u2014figure supplement 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "afe105f5-2d77-43f8-9a37-8f5596780aa5",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C14",
+      "claim": "Whole-cell recordings of layer 4 cells during population ON responses revealed a plateau of depolarization upon which rode several action potentials, resembling previously described UP states.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell recordings of layer 4 cells during population ON population responses revealed a plateau of depolarization upon which rode several action potentials (Figure 2H, green box, Figure 2\u2014source data 5), resembling previously described UP states (Sanchez-Vives and McCormick, 2000; Rigas and Castro-Alamancos, 2007; Fanselow and Connors, 2010), which was supported by the bimodal distribution shown by the post stimulus membrane potential of such layer 4 cells during population ON cortical responses (Figure 2\u2014figure supplement 6, Figure 2\u2014figure supplement 6\u2014source data 1, see, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from whole-cell recordings (Figure 2H, Figure 2\u2014figure supplement 6) and citations to previous studies describing UP states.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "6bb01359-8e3e-4d16-9126-f9a481875be3",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C15",
+      "claim": "IC stimulation produces stochastic population responses in the AC, and these population responses are stereotyped and represent stimulus-induced UP states.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that IC stimulation produces stochastic population responses in the AC, and that these population responses are stereotyped and represent stimulus-induced UP states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in Figure 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "760d9102-b288-411e-bfd2-ed8be4d426c2",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C16",
+      "claim": "Population ON/OFF cortical responses occurred only after electrical stimulation of IC, and not by the direct stimulation of MGB or the subcortical white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Population ON/OFF cortical responses occurred only after electrical stimulation of IC, and not by the direct stimulation of MGB or the subcortical white matter (Figure 3B and D, Figure 3\u2014source data 1 and 2, Kruskal-Wallis: p=0.001, pairwise comparison: p=0.023 for IC vs. MGB or subcortical white matter and p=1 for MGB vs. subcortical white matter, Dunn's post hoc test, n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data comparing stimulation at different sites (Figure 3B, 3D) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "a03a64d9-7526-4df6-9560-54a0e5fe865c",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C17",
+      "claim": "The percentage of population ON cortical responses increased with increasing amplitude of the stimulating current.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the in vivo data, the percentage of population ON cortical responses increased with increasing amplitude of the stimulating current (Figure 3E, Figure 3\u2014source data 4, RM-ANOVA: *F(3,9)=9.7, p=0.003, pairwise comparison: *p=0.009 for 50 vs. 150\u2013200 \u03bcA, *p=0.008 for 50 vs. 250\u2013300 \u03bcA, Bonferroni post hoc test, n = 4 slices from four animals), which was consistent with the in vivo results (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing the relationship between stimulating current amplitude and response frequency (Figure 3E) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "f9398a2d-5f2e-4b24-9de6-09cbb1cc2b0d",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C18",
+      "claim": "There was a log-linear relationship between the FA signals of either IC or MGB and the stimulating current amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while there was a log-linear relationship between the FA signals of either IC or MGB and the stimulating current amplitude (Figure 3F, Figure 3\u2014source data 5, R2 = 0.68, p=2.2\u00d710\u221219 for IC and R2 = 0.53, p=3.3\u00d710\u221213 for MGB), this relationship was lost between the cortical responses and stimulating current amplitude (Figure 3F, Figure 3\u2014source data 5, R2 = 0.004, p=0.6), suggesting that the magnitude of the cortical response is not predictable from stimulus amplitude.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing the relationship between FA signals and stimulating current amplitude (Figure 3F) and statistical analysis, with inference about predictability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "5b156264-4285-4503-91b3-4757d5e6f782",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C19",
+      "claim": "Bath application of gabazine (SR-95531, 200 nM), the GABA\u0391-R blocker, was able to retrieve all missing cortical responses compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Under simultaneous FA imaging and IC stimulation, gabazine perfusion was able to retrieve all missing cortical responses compared to control (Figure 4B and C, Figure 4\u2014source data 1 and 2, Kruskal-Wallis: p=2.5\u00d710\u22127, pairwise comparison: p=5.08\u00d710\u22124 for gabazine vs. control, p=4.1\u00d710\u22127 for gabazine vs. wash, and p=0.34 for control vs. wash, Dunn's post hoc test, n = 14 trials obtained from five animals), which suggested that the population OFF cortical responses were driven by inhibitory inputs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from pharmacological manipulation (Figure 4B, 4C) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "dc314b3b-8843-42da-ac3b-8e1f0493df73",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C20",
+      "claim": "Layer 4 cells demonstrated a surge of evoked post-stimulus IPSCs during population ON cortical responses only.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous finding that stimulation of the IC evoked a post-stimulus UP-states activity in layer 4 cells during the population ON cortical responses only (Figure 2H; Fanselow and Connors, 2010; Haider et al., 2006), layer 4 cells demonstrated a surge of evoked post-stimulus IPSCs during population ON cortical responses only (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from whole-cell recordings (Figure 4D) and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "7c6cef14-9359-463b-9d1b-3837ed7d824e",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C21",
+      "claim": "MGB cells showed evoked post-stimulus IPSCs following every trial of IC stimulation during population ON and population OFF cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MGB cells showed evoked post-stimulus IPSCs following every trial of IC stimulation during population ON and population OFF cortical responses (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from whole-cell recordings (Figure 4E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "deadc8e9-88f6-49a6-ab75-a77151ec2fb2",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C22",
+      "claim": "Evoked cortical post-stimulus IPSCs and EPSCs in layer 4 cells were significantly smaller during population OFF compared to population ON cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, while these evoked cortical post-stimulus IPSCs and EPSCS in the layer 4 cells were significantly smaller during population OFF compared to population ON cortical responses (Figure 4F, Figure 4\u2014source data 3, paired sample Wilcoxon Signed Rank Test: p=0.006 for IPSCs, n = 10 cells from four animals and p=0.036 for EPSCs, n = 6 cells from four animals), the evoked post-stimulus IPSCs in the MGB cells were larger during population OFF compared to population ON cortical responses, with no difference in the net excitatory transferred charges (Figure 4G, Figure 4\u2014source data 4, paired sample Wilcoxon Signed Ranks Test: p=0.011 for IPSCs, n = 20 cells from seven animals and p=0.56 for EPSCs, n = 14 cells from four animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from whole-cell recordings (Figure 4F, 4G) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "de087756-b4f9-455f-a9db-fc7ff19ec633",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C23",
+      "claim": "The evoked post-stimulus IPSCs in the MGB cells were larger during population OFF compared to population ON cortical responses, with no difference in the net excitatory transferred charges.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, while these evoked cortical post-stimulus IPSCs and EPSCS in the layer 4 cells were significantly smaller during population OFF compared to population ON cortical responses (Figure 4F, Figure 4\u2014source data 3, paired sample Wilcoxon Signed Rank Test: p=0.006 for IPSCs, n = 10 cells from four animals and p=0.036 for EPSCs, n = 6 cells from four animals), the evoked post-stimulus IPSCs in the MGB cells were larger during population OFF compared to population ON cortical responses, with no difference in the net excitatory transferred charges (Figure 4G, Figure 4\u2014source data 4, paired sample Wilcoxon Signed Ranks Test: p=0.011 for IPSCs, n = 20 cells from seven animals and p=0.56 for EPSCs, n = 14 cells from four animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from whole-cell recordings (Figure 4G) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "a8cbcfc9-d9bf-4f8b-8446-78e735da6b7c",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C24",
+      "claim": "MGB cells receive more inhibition during population OFF cortical responses with no change in excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that MGB cells receive more inhibition during population OFF cortical responses with no change in excitation, which led us to hypothesize that MGB activity could be modulated by inhibitory inputs during the population OFF cortical responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in Figure 4G.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "deabb39d-74fb-431f-a14f-5b0cfee6dd32",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C25",
+      "claim": "Specific injection of gabazine into the MGB in the aCTC slice was able to significantly increase the percentage of population ON cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Under simultaneous FA imaging and IC stimulation, the specific injection of gabazine (Figure 4\u2014figure supplement 1) into the MGB in the aCTC slice was able to significantly increase the percentage of population ON cortical responses (Figure 4I and J, Figure 4\u2014source data 5 and 6), indicated by the \u0394f/f of the evoked cortical FA signals (Figure 4K, Figure 4\u2014source data 7, RM-ANOVA: F(3,21) = 13.9, p=3.17\u00d710\u22125, pairwise comparison: *p=5.9\u00d710\u22125, 1.5 \u00d7 10\u22124, 0.0026 for gabazine in MGB vs. control, wash, and gabazine in AC, respectively, Bonferroni post hoc test, n = 8 slices from seven animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from pharmacological manipulation (Figure 4I, 4J, 4K) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "3133b523-4672-471e-a753-e5e801ad5ff0",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C26",
+      "claim": "Selective gabazine injection into the AC did not increase the percentage of population ON cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the same effect was not observed after selective gabazine injection into the AC (Figure 4K, Figure 4\u2014source data 7, RM-ANOVA: F(3,21) = 13.9, pairwise comparison: p=0.73 and 1.0 for gabazine in AC vs. control and wash, respectively, Bonferroni post hoc test, n = 8 slices from seven animals), consistent with data obtained from the whole-cell recording of layer 4 cells (Figure 4D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from pharmacological manipulation (Figure 4K) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "60090e03-3050-43b8-98af-cc339fff7274",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C27",
+      "claim": "Population OFF cortical responses could be driven by thalamic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, these data confirmed that the population OFF cortical responses could be driven by thalamic inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in Figure 4.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "28cac407-3f81-4b8a-87f5-9121e24010dd",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C28",
+      "claim": "The mean peak latencies of IPSCs and EPSCs received by MGB cells showed no difference during population ON and population OFF cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mean peak latencies of IPSCs and EPSCs received by MGB cells showed no difference during population ON and population OFF cortical responses (Figure 5A and B, Figure 5\u2014source data 1, paired sample Wilcoxon Signed Ranks Test: p=0.28, n = 20 cells from seven animals for IPSCs and paired t-test: t(12) = \u22120.72, p=0.48, n = 14 cells from four animals for EPSCs), the cumulative distribution function showed that some MGB cells (~50% of the recorded cells) received earlier IPSCs during population OFF cortical responses (Figure 5C, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from whole-cell recordings (Figure 5A, 5B) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "8118296e-d7d5-40f3-a3e0-93e8613ca8cc",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C29",
+      "claim": "Some MGB cells (~50% of the recorded cells) received earlier IPSCs during population OFF cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mean peak latencies of IPSCs and EPSCs received by MGB cells showed no difference during population ON and population OFF cortical responses (Figure 5A and B, Figure 5\u2014source data 1, paired sample Wilcoxon Signed Ranks Test: p=0.28, n = 20 cells from seven animals for IPSCs and paired t-test: t(12) = \u22120.72, p=0.48, n = 14 cells from four animals for EPSCs), the cumulative distribution function showed that some MGB cells (~50% of the recorded cells) received earlier IPSCs during population OFF cortical responses (Figure 5C, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from whole-cell recordings (Figure 5C) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "c3afe62b-f88d-44a5-acbf-9f93f9482605",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C30",
+      "claim": "The variance of the peak latencies of the evoked calcium signals from all thalamic cells was larger during population OFF cortical responses than population ON responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the variance of the peak latencies of the evoked calcium signals from all thalamic cells was larger during population OFF cortical responses than population ON responses (Figure 5F, Figure 5\u2014source data 3, paired sample t-test: t(13) = \u22122.37, *p=0.033, n = 14 paired responses (population ON vs. population OFF) including 339 cells from five animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from calcium imaging (Figure 5F) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "9dbcd26f-81ed-40e5-8f8d-5c58dc8038c3",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C31",
+      "claim": "Synchronous thalamic relay cell activity is required to evoke a cortical population ON response.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that synchronous thalamic relay cell activity is required to evoke a cortical population ON response, consistent with previous work (Bruno and Sakmann, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in Figure 5 and is consistent with previous work cited.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "7b9e6924-94da-4826-a5ca-028a528bc086",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C32",
+      "claim": "Photoinhibition of corticothalamic layer 6 cells by illumination with 565 nm light resulted in a significant increase in the probability of population ON cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoinhibition of corticothalamic layer 6 cells by illumination with 565 nm light resulted in a significant increase in the probability of population ON cortical responses as indicated by the recovery of the post-stimulus LFP signals from L3/4 compared to the control (Figure 6C and D, Figure 6\u2014source data 1, paired t-test: t(15) = \u22127.06, **p=3.8\u00d710\u22126, n = 16 trials from four animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from optogenetic manipulation (Figure 6C, 6D) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "d7c6d41d-ab46-4e1c-b070-8dfd576b9eab",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C33",
+      "claim": "Illumination of the aCTC slice expressing YFP in layer 6 cells with 565 nm light could not retrieve the population ON cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "A control experiment was done by injecting NTSR1-Cre mice with a virus expressing YFP without the inhibitory opsin. The same illumination of the aCTC slice expressing YFP in layer 6 cells (Figure 6F) with a 565 nm light of could not retrieve the population ON cortical responses (Figure 6G and H, Figure 6\u2014source data 2, paired t-test: t(24) = \u22121.3, p=0.2, n = 25 trials from five animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from a control experiment (Figure 6G, 6H) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "6e688cac-60ae-4e06-a36e-ac93c8c87bfb",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C34",
+      "claim": "Chemical inhibition of corticothalamic layer 6 cells expressing hM4Di receptors by CNO significantly increased the frequency of population ON cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous data, the chemical inhibition of corticothalamic layer 6 cells expressing hM4Di receptors by their chemical actuator, CNO, significantly increased the frequency of population ON cortical responses as indicated by \u0394f/f of evoked cortical FA signals compared to the control (Figure 6\u2014figure supplement 1C and D, Figure 6\u2014figure supplement 1\u2014source data 1 and 2, paired test: t(3) = \u22123.66, p=0.035, n = 4 trials from four animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from chemogenetic manipulation (Figure 6\u2014figure supplement 1C, 1D) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "99ab028f-a67f-414f-8acf-c85a01039192",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C35",
+      "claim": "Perfusion of CNO to the aCTC slices expressing mCherry without DREADDs could not retrieve the population ON cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The control experiment was done by injecting other NTSR1-Cre mice with a virus expressing mCherry without the DREADDs, and the perfusion of CNO to the aCTC slices taken from these animals could not retrieve the population ON cortical responses (Figure 6\u2014figure supplement 1E, Figure 6\u2014figure supplement 1\u2014source data 3, paired test: t(4) = 0.9, p=0.4, n = 5 trials from five animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from a control experiment (Figure 6\u2014figure supplement 1E) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "a551b514-2fdf-4d28-8755-4aceb1520d1d",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C36",
+      "claim": "Blocking of the TRN activity by NBQX significantly increased the probability of population ON cortical events.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking of the TRN activity by NBQX, the AMPA-R blocker (Sun et al., 2013; Lee et al., 2010a), which was specifically injected into TRN, significantly increased the probability of population ON cortical events indicated by \u0394f/f of the evoked cortical FA signals (Figure 6\u2014figure supplement 1G and H, Figure 6\u2014figure supplement 1\u2014source data 4 and 5, paired test: t(5) = \u22126.03, **p=5.2\u00d710\u22124, n = 8 trials from seven animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from pharmacological manipulation (Figure 6\u2014figure supplement 1G, 1H) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "42503801-065a-4550-ac26-50dc651573fc",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C37",
+      "claim": "Photoinhibition of layer 5 cells expressing eNpHR3.0 receptors by illumination with 565 nm light could not retrieve the missing cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous data, the photoinhibition of layer 5 cells expressing eNpHR3.0 receptors by illumination with 565 nm light could not retrieve the missing cortical responses, indicated by no recovery of the post-stimulus LFP signals from L3/4 compared to control (no light) (Figure 6K and L, Figure 6\u2014source data 3, paired t-test: t(36) = 0.46, p=0.18, n = 37 trials from four animals), which suggests that the population OFF cortical responses were specifically driven by MGB inhibition through corticothalamic layer 6-TRN pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from optogenetic manipulation (Figure 6K, 6L) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "4bbad838-469a-4d46-827f-dfc8754c260e",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C38",
+      "claim": "Photoinhibition of GABAergic cells of the IC by illumination with 565 nm light was not able to retrieve the missing cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoinhibition of GABAergic cells of the IC by illumination with 565 nm light was not able to retrieve the missing cortical responses as indicated by no recovery of the post-stimulus LFP signals recorded from L3/4 (Figure 6O and P, Figure 6\u2014source data 4, Paired t-test: t(6) = \u22121.03, p=0.34, n = 7 trials from five animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from optogenetic manipulation (Figure 6O, 6P) and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "9c1fbc5d-561e-40f3-bed9-c2255c313fdb",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C39",
+      "claim": "Population OFF cortical responses were most likely driven by the feedback inhibition of MGB by corticothalamic layer 6 cells via TRN.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, based on the data shown in Figure 6 and Figure 6\u2014figure supplement 1, we conclude that the population OFF cortical responses were most likely driven by the feedback inhibition of MGB by corticothalamic layer 6 cells via TRN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in Figure 6 and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "7d0720ca-cbe2-4805-b0ef-1fb30f650c3b",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C40",
+      "claim": "Stochastic population cortical responses were observed in the mouse AC following the presentations of pure tones in vivo or electrical stimulation of the IC in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed stochastic population cortical responses in the mouse AC following the presentations of pure tones in vivo or electrical stimulation of the IC in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the experimental data presented in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "bb41c215-2e72-45bd-9d57-8deb6fda4ef1",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C41",
+      "claim": "Population ON responses were associated with synchronized responses among MGB cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Population ON responses were associated with synchronized responses among MGB cells, whereas population OFF responses were associated with TRN-mediated inhibition at the level of the MGB, under the control of layer 6 corticothalamic projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the experimental data presented in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "d2d0e744-ab94-4f75-9a2f-c4febc7edb08",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C42",
+      "claim": "Population OFF responses were associated with TRN-mediated inhibition at the level of the MGB, under the control of layer 6 corticothalamic projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Population ON responses were associated with synchronized responses among MGB cells, whereas population OFF responses were associated with TRN-mediated inhibition at the level of the MGB, under the control of layer 6 corticothalamic projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the experimental data presented in Figures 4, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "0012bf2a-bde9-4bea-9b42-b77fde84c9c1",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C43",
+      "claim": "Other inhibitory projections to the MGB from the IC had no impact on the probability of eliciting a population ON response.",
+      "claim_type": "EXPLICIT",
+      "source": "Other inhibitory projections to the MGB from the IC had no impact on the probability of eliciting a population ON response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 6O, 6P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "a493160b-055c-40f8-bb39-caf7fe1cc86a",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C44",
+      "claim": "It is unlikely that population OFF cortical responses were a sign of cortical adaptation, because adaptation responses are generally characterized by gradual decrease of the response amplitude, rather than the all-or-none responses observed here.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unlikely that population OFF cortical responses were a sign of cortical adaptation, because adaptation responses are generally characterized by gradual decrease of the response amplitude, rather than the all-or-none responses observed here (Chung et al., 2002; Abolafia et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data and citations to previous studies describing adaptation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "7b2b8e27-e4f0-4b3a-814c-e9afb5770b6e",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C45",
+      "claim": "Layer 6 corticothalamic neurons gate population activity in the AC via their projections to TRN, which desynchronize MGB neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude from these findings that layer 6 corticothalamic neurons gate population activity in the AC via their projections to TRN, which desynchronize MGB neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in Figures 5 and 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "7e0620aa-1186-4c3e-a9f8-22de8bfeb66a",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C46",
+      "claim": "Previous work has suggested that corticothalamic axons, via the strong inhibition to thalamocortical cells by way of the TRN, control thalamocortical information flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has suggested that corticothalamic axons, via the strong inhibition to thalamocortical cells by way of the TRN (Crandall et al., 2015; Olsen et al., 2012; Paz and Huguenard, 2015; Steriade et al., 1996; Guillery and Harting, 2003; McAlonan et al., 2008), control thalamocortical information flow (Destexhe, 2000; Yu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "5dd3c58d-8cb2-4f78-95d2-444627c4ef67",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C47",
+      "claim": "The gating mechanism appears to involve TRN-based desynchronization of thalamocortical neurons rather than diminishing the overall thalamic response.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, the gating mechanism appears to involve TRN-based desynchronization of thalamocortical neurons rather than diminishing the overall thalamic response, which is consistent with previous findings showing that the TRN can desynchronize thalamocortical cells via multiple mechanisms (Pita-Almenar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data and is consistent with previous work cited.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "f65e05ef-c433-416c-b69f-724804fc9217",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C48",
+      "claim": "Direct electrical stimulation of the thalamus did not lead to stochastic AC response because direct electrical stimulation is likely to elicit highly synchronous responses among MGB neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This explanation is also consistent with our finding that direct electrical stimulation of the thalamus did not lead to stochastic AC response because direct electrical stimulation is likely to elicit highly synchronous responses among MGB neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "a9d1605f-ab8a-4ca5-a8b9-4b60f0110c5c",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C49",
+      "claim": "It is possible that silencing layer six corticothalamic neurons led to changes in likelihood of activating the AC via intracortical connections of NTSR1-positive neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that silencing layer six corticothalamic neurons led to changes in likelihood of activating the AC via intracortical connections of NTSR1-positive neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation about alternative mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "8ef56858-7f12-416d-b216-bdd758fe75cd",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C50",
+      "claim": "Population OFF cortical responses in the current study were never initiated by the first stimulation of the IC.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that population OFF cortical responses in the current study were never initiated by the first stimulation of the IC. Rather they were always elicited by the subsequent IC stimulation, which suggests that population OFF cortical responses occurred only after evoked cortical activity that could change the internal dynamics of the cortical cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the stimulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "bb93bb67-32df-4687-beb1-b04638ab1ccf",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C51",
+      "claim": "The strong association between the high probability of the OFF cortical responses and the low level of stimulation suggests that cortico-reticulothalamic control of thalamocortical transmission is most likely to be effective when signal-to-noise ratio is low.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the strong association between the high probability of the OFF cortical responses and the low level of stimulation suggests that cortico-reticulothalamic control of thalamocortical transmission is most likely to be effective when signal-to-noise ratio is low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in Figures 1F and 3E.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "e719b138-7591-432e-8de3-225f7a5087e9",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C52",
+      "claim": "This finding is consistent with the notion that top-down modulation is mostly required for the attentional modulation of weak signals and that highly salient signals rely on bottom-up mechanisms to activate perceptual representations.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the notion that top-down modulation is mostly required for the attentional modulation of weak signals and that highly salient signals rely on bottom-up mechanisms to activate perceptual representations (reviewed in Asilador and Llano, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data and is consistent with a review cited.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "3bb9ccd1-ab2e-4be0-96d7-25a0dabb0e59",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C53",
+      "claim": "Classical models have viewed sensory processing stations, including the thalamus and cortex, as a series of feedforward, hierarchically organized filters whereby combinations of receptive fields produce increasingly selective feature detectors, culminating in uniquely selective neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical models have viewed sensory processing stations, including the thalamus and cortex, as a series of feedforward, hierarchically organized filters whereby combinations of receptive fields produce increasingly selective feature detectors, culminating in uniquely selective neurons (Riesenhuber and Poggio, 1999; Vidyasagar and Eysel, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies describing classical models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "c5258435-12a7-4af8-a268-ef42096bced6",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C54",
+      "claim": "An alternative view is that ascending information is used to create and modify a bank of sensory representations that are recruited depending on behavioral needs, and that conscious perception reflects activation of these pre-wired circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative view is that ascending information is used to create and modify a bank of sensory representations that are recruited depending on behavioral needs, and that conscious perception reflects activation of these pre-wired circuits (Ringach, 2009; Llin\u00e1s, 1994; Mishkin, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies describing an alternative view.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "7b535cdc-f937-4535-872d-2f3d7fd2d72e",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C55",
+      "claim": "Conscious perception may involve the release of stereotyped patterns of cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, conscious perception may involve the release of stereotyped patterns of cortical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation based on the alternative view of sensory processing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "d80c8f98-fc44-4f6b-bc85-45fb973b6639",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C56",
+      "claim": "One potential role of thalamocortical transmission in this model is to select cortical ensembles rather than impress sensory information upon them.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential role of thalamocortical transmission in this model is to select cortical ensembles rather than impress sensory information upon them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation about the role of thalamocortical transmission.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "b1b3b77b-4554-4845-a985-5c02e720b863",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C57",
+      "claim": "At the thalamocortical level, sensory inputs activate stereotyped patterns of population cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that at the thalamocortical level, sensory inputs activate stereotyped patterns of population cortical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "0be7427e-e265-4709-83b4-9b00246453cf",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C58",
+      "claim": "A mechanism of TRN-based modification of thalamic synchrony to activate the cortex has been proposed previously.",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanism of TRN-based modification of thalamic synchrony to activate the cortex has been proposed previously (Saalmann and Kastner, 2011) and is consistent with the finding that synchronized populations of thalamic neurons are required to optimally activate the cortex (Bruno and Sakmann, 2006) and that the TRN is at the heart of a prefrontal cortex-based mechanism to shape cortical activation under changing cognitive demands (Zikopoulos and Barbas, 2006; Wimmer et al., 2015; Yingling and Skinner, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "e40a6fc9-ed4a-4fe3-bce2-8532e065a758",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C59",
+      "claim": "The TRN receives inputs from basal forebrain, amygdala and non-reciprocally linked regions of the thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the TRN receives inputs from basal forebrain, amygdala and non-reciprocally linked regions of the thalamus (Kimura et al., 2007; Lam and Sherman, 2005; Lam and Sherman, 2015; Crabtree et al., 1998; Crabtree and Isaac, 2002; Lee et al., 2010b; Des\u00eelets-Roy et al., 2002; Zikopoulos and Barbas, 2012; Aizenberg et al., 2019), forming an assortment of inputs to potentially modulate TRN, and ultimately select cortical circuits for activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "92cb8498-8240-4e84-ae87-34b2a172c9c8",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C60",
+      "claim": "Given the putative role of the TRN in the selection of thalamic, and therefore cortical circuits during sensory perception, one would predict that disruption of TRN activity could lead to uncontrolled release of patterns of cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the putative role of the TRN in the selection of thalamic, and therefore cortical circuits during sensory perception, one would predict that disruption of TRN activity could lead to uncontrolled release of patterns of cortical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation based on the proposed role of the TRN.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "6aa0e2a7-986b-450a-a217-b63ef19dd339",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C61",
+      "claim": "Ample evidence has accumulated to suggest that schizophrenia, a disease characterized by the presence of auditory hallucinations, involves disruption of the TRN.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, ample evidence has accumulated to suggest that schizophrenia, a disease characterized by the presence of auditory hallucinations, involves disruption of the TRN (Pratt and Morris, 2015; Ferrarelli and Tononi, 2011; Young and Wimmer, 2017; Bencherif et al., 2012; Light and Braff, 1999; Patterson et al., 2008; Ferrarelli et al., 2007; Ferrarelli et al., 2010; Wamsley et al., 2012; Ferrarelli and Tononi, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "605a037d-fd9a-4d87-b582-acb18fbb0c50",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C62",
+      "claim": "Thalamus recruits cortical ensembles of pre-wired sensory representations upon external stimulation in conjunction with internal cortical dynamics of corticothalamic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a unique stimulus-evoked population cortical all-or-none response, which suggests that thalamus recruits cortical ensembles of pre-wired sensory representations upon external stimulation in conjunction with internal cortical dynamics of corticothalamic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "0d16da5b-1764-4bc2-a5de-ef7f14a3b632",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "claim_id": "C63",
+      "claim": "Corticothalamic modulators control the temporal coordination between the thalamic cells to gate the activation of the intracortical network.",
+      "claim_type": "EXPLICIT",
+      "source": "These data also suggest that corticothalamic modulators control the temporal coordination between the thalamic cells to gate the activation of the intracortical network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7942513e-939a-4e63-b9bd-b7391eec4c8b",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In vivo transcranial calcium imaging of anesthetized GCaMP6s mice revealed stochastic all-or-none population responses in the primary auditory cortex (A1) following repeated presentations of pure tones. These population ON and OFF responses were independent of stimulus presentation order, formed two distinct classes in histogram analysis, and increased in frequency with increasing sound pressure level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide converging evidence from in vivo calcium imaging (Figures 1A-F) demonstrating stochastic cortical responses. The experimental design is appropriate, data show clear bimodal response patterns, and the relationship between stimulus intensity and response probability is well-documented with statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "bef6892d-3b1f-4195-a1da-6eb304f40f6f",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vitro electrical stimulation of the inferior colliculus (IC) in auditory colliculo-thalamocortical (aCTC) brain slices recapitulated the stochastic cortical responses observed in vivo. While IC, MGB, and TRN showed consistent responses to each stimulus, the auditory cortex exhibited all-or-none population responses that were validated by simultaneous LFP recordings and replicated across different experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C11-C12 demonstrate robust replication of the in vivo phenomenon in brain slices using multiple recording modalities (FA imaging, calcium imaging, whole-cell recording, LFP). The consistency across different laboratories and preparation methods (C12) strengthens the validity of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "b37db8df-b582-4279-931a-960a49ac2038",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Population ON cortical responses involve stereotyped activation of layer 4 cells that exhibit UP state-like depolarization plateaus with action potentials, while population OFF responses are associated with absence of layer 4 activity. These responses represent stimulus-induced UP states in the auditory cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 are supported by calcium imaging and whole-cell recordings from layer 4 cells (Figures 2G-H, Figure 2\u2014figure supplement 6). The bimodal membrane potential distribution and resemblance to previously described UP states provide strong evidence for the characterization of these responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "5ef125d7-782a-4c13-a7f3-3e79c1ef7bd3",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Stochastic population ON/OFF cortical responses occurred only after electrical stimulation of the IC, not after direct stimulation of MGB or subcortical white matter. The percentage of population ON responses increased with stimulating current amplitude, but the magnitude of cortical responses was not predictable from stimulus amplitude despite log-linear relationships between stimulus amplitude and IC or MGB activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are well-supported by systematic comparison of stimulation sites (Figure 3B, 3D) and current amplitudes (Figure 3E-F) with appropriate statistical analyses. The loss of linear relationship at the cortical level (R\u00b2=0.004, p=0.6) is a key finding demonstrating the gating nature of the phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Population OFF cortical responses are driven by thalamic inhibition. Bath application of gabazine retrieved all missing cortical responses. Layer 4 cells showed reduced IPSCs and EPSCs during population OFF responses, while MGB cells showed larger IPSCs during population OFF responses with no change in EPSCs. Specific gabazine injection into MGB, but not AC, significantly increased population ON responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27 provide comprehensive pharmacological and electrophysiological evidence (Figure 4) demonstrating that thalamic inhibition drives population OFF responses. The specificity of the MGB effect (C25-C26) and the differential synaptic changes in layer 4 vs. MGB cells (C22-C23) are well-documented with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "c4707996-1b93-4b1e-9c4b-32b4ba72778a",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Population ON responses are associated with synchronized MGB cell activity. While mean peak latencies of IPSCs and EPSCs in MGB cells showed no difference between population ON and OFF responses, approximately 50% of MGB cells received earlier IPSCs during population OFF responses. The variance of peak latencies of evoked calcium signals from thalamic cells was significantly larger during population OFF responses, suggesting that synchronous thalamic relay cell activity is required for population ON responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by whole-cell recordings and calcium imaging data (Figure 5A-F) with appropriate statistical analyses. The increased variance in thalamic response timing during population OFF responses (p=0.033) provides mechanistic insight into how desynchronization prevents cortical activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "9b10f812-ab49-4e9e-a8d2-082bc8f5c4b4",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Population OFF cortical responses are driven by feedback inhibition of MGB through the corticothalamic layer 6-TRN pathway. Photoinhibition or chemogenetic inhibition of layer 6 corticothalamic cells significantly increased population ON responses, while inhibition of layer 5 cells or IC GABAergic cells had no effect. Blocking TRN activity with NBQX also increased population ON responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C39 provide strong converging evidence from multiple experimental approaches (optogenetics, chemogenetics, pharmacology) with appropriate controls (C33, C35, C37, C38) demonstrating the specific role of the layer 6-TRN pathway. Statistical support is robust across all manipulations (Figure 6, Figure 6\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "49f911ad-d86f-44a6-9fac-f6434e084b22",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FA and calcium signals from the MGB are smaller than those from AC, possibly due to limited alignment of mitochondria-containing neuropil processes or low baseline expression of GCaMP in the MGB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 is supported by citations to previous studies (Dana et al., 2014; Llano et al., 2009) and is consistent with known technical limitations of these imaging approaches in thalamic structures. The proposed mechanisms are reasonable inferences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "8ea6d28b-4d9d-4c99-9b58-42d22c86f777",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Stochastic population cortical responses were observed in the mouse AC both in vivo and in vitro. Population ON responses were associated with synchronized MGB cell responses, while population OFF responses were associated with TRN-mediated inhibition of MGB under control of layer 6 corticothalamic projections. Inhibitory projections from IC to MGB had no impact on population ON response probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 represent summary statements of the major findings that are well-supported by the comprehensive experimental data presented throughout the manuscript (Figures 1-6). These conclusions logically follow from the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "42d2f201-2f04-4f61-9787-d920cfef0674",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Population OFF cortical responses are unlikely to represent cortical adaptation because they show all-or-none characteristics rather than gradual amplitude decreases. Layer 6 corticothalamic neurons gate population activity in the AC via their projections to TRN, which desynchronize MGB neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are reasonable inferences based on the experimental data and comparison to adaptation literature. The all-or-none nature of responses (documented in Figures 1-2) is inconsistent with typical adaptation patterns, and the gating mechanism is well-supported by the layer 6 manipulation experiments (Figure 6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "27a14c2f-44d7-48e2-9a10-e496d97fab7e",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The gating mechanism involves TRN-based desynchronization of thalamocortical neurons rather than diminishing overall thalamic response. This is consistent with the finding that direct electrical stimulation of the thalamus did not lead to stochastic AC responses because it likely elicits highly synchronous MGB responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are well-supported inferences from the experimental data (Figures 3, 5) and are consistent with previous work on TRN function (Pita-Almenar et al., 2014). The mechanistic explanation is logical and supported by the timing and synchrony data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "442606d1-64fa-4aac-bd9b-b4a44395fb28",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Population OFF cortical responses were never initiated by the first IC stimulation but only by subsequent stimulations, suggesting they require prior cortical activity. The high probability of OFF responses at low stimulation levels suggests cortico-reticulothalamic control is most effective when signal-to-noise ratio is low, consistent with the notion that top-down modulation is required for attentional modulation of weak signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by observations from the stimulation experiments (Figures 1F, 3E) and represent reasonable inferences about the functional significance of the findings. The relationship between stimulus intensity and OFF response probability is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "ebb9a23b-15f9-4fed-9e6c-00cd4b662dd4",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within existing literature on stochastic cortical responses, corticothalamic control, classical vs. alternative models of sensory processing, TRN function, and potential relevance to schizophrenia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C46, C53-C54, C58-C59, C61 accurately represent prior work through appropriate citations. These claims provide important context for interpreting the current findings and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "418822ed-cb7f-4d35-8b1d-098d6df6f90e",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript discusses alternative mechanisms and broader implications, including possible intracortical effects of layer 6 manipulation, the potential role of thalamocortical transmission in selecting cortical ensembles, and predictions about consequences of TRN disruption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49, C55-C56, C60 represent speculative statements about alternative mechanisms and broader implications. While these are reasonable hypotheses, they are explicitly acknowledged as speculation and would require additional experiments to validate. The authors appropriately identify these as areas for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    },
+    {
+      "id": "741d785d-f077-4df0-9e62-085e3d88c5f8",
+      "content_id": "b8c26552-c03c-4e61-922a-76d287505382",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The data suggest that at the thalamocortical level, sensory inputs activate stereotyped patterns of population cortical activity, with the thalamus recruiting cortical ensembles of pre-wired sensory representations in conjunction with internal cortical dynamics. Corticothalamic modulators control temporal coordination between thalamic cells to gate activation of intracortical networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C62-C63 represent the major conceptual conclusions of the manuscript. These inferences are well-supported by the comprehensive experimental data demonstrating stereotyped cortical responses (Figures 1-2), the role of thalamic synchrony (Figure 5), and corticothalamic gating (Figure 6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:43:01.611367Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "47c7a64f-8982-4aea-b161-528c250e6760",
+      "result_id": "7942513e-939a-4e63-b9bd-b7391eec4c8b"
+    },
+    {
+      "claim_id": "91f75474-5eb9-4661-a5a9-ba4f8a4d9004",
+      "result_id": "7942513e-939a-4e63-b9bd-b7391eec4c8b"
+    },
+    {
+      "claim_id": "5f2621bb-a0cc-43ef-ac70-03e1fa76c16a",
+      "result_id": "7942513e-939a-4e63-b9bd-b7391eec4c8b"
+    },
+    {
+      "claim_id": "f9f5f383-2090-49b1-a3c3-fbb102aa75b6",
+      "result_id": "7942513e-939a-4e63-b9bd-b7391eec4c8b"
+    },
+    {
+      "claim_id": "c51aef1c-ae3e-4555-8c23-e8714f381b1c",
+      "result_id": "7942513e-939a-4e63-b9bd-b7391eec4c8b"
+    },
+    {
+      "claim_id": "ff641faf-fa35-4095-9ea4-4cf516701f37",
+      "result_id": "bef6892d-3b1f-4195-a1da-6eb304f40f6f"
+    },
+    {
+      "claim_id": "43962e5c-8d68-48c0-9861-95c0056952e5",
+      "result_id": "bef6892d-3b1f-4195-a1da-6eb304f40f6f"
+    },
+    {
+      "claim_id": "16b1a764-e0d8-46e4-a090-a144cfe9d626",
+      "result_id": "bef6892d-3b1f-4195-a1da-6eb304f40f6f"
+    },
+    {
+      "claim_id": "e3a4b6ee-9dc1-49a9-83cb-533a7119bce3",
+      "result_id": "bef6892d-3b1f-4195-a1da-6eb304f40f6f"
+    },
+    {
+      "claim_id": "fcdffcfb-6afa-4f41-81fe-3c3e2891e18c",
+      "result_id": "bef6892d-3b1f-4195-a1da-6eb304f40f6f"
+    },
+    {
+      "claim_id": "531af9bb-40a7-496e-997c-8ac8e228e9f2",
+      "result_id": "b37db8df-b582-4279-931a-960a49ac2038"
+    },
+    {
+      "claim_id": "afe105f5-2d77-43f8-9a37-8f5596780aa5",
+      "result_id": "b37db8df-b582-4279-931a-960a49ac2038"
+    },
+    {
+      "claim_id": "6bb01359-8e3e-4d16-9126-f9a481875be3",
+      "result_id": "b37db8df-b582-4279-931a-960a49ac2038"
+    },
+    {
+      "claim_id": "760d9102-b288-411e-bfd2-ed8be4d426c2",
+      "result_id": "5ef125d7-782a-4c13-a7f3-3e79c1ef7bd3"
+    },
+    {
+      "claim_id": "a03a64d9-7526-4df6-9560-54a0e5fe865c",
+      "result_id": "5ef125d7-782a-4c13-a7f3-3e79c1ef7bd3"
+    },
+    {
+      "claim_id": "f9398a2d-5f2e-4b24-9de6-09cbb1cc2b0d",
+      "result_id": "5ef125d7-782a-4c13-a7f3-3e79c1ef7bd3"
+    },
+    {
+      "claim_id": "5b156264-4285-4503-91b3-4757d5e6f782",
+      "result_id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a"
+    },
+    {
+      "claim_id": "dc314b3b-8843-42da-ac3b-8e1f0493df73",
+      "result_id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a"
+    },
+    {
+      "claim_id": "7c6cef14-9359-463b-9d1b-3837ed7d824e",
+      "result_id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a"
+    },
+    {
+      "claim_id": "deadc8e9-88f6-49a6-ab75-a77151ec2fb2",
+      "result_id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a"
+    },
+    {
+      "claim_id": "de087756-b4f9-455f-a9db-fc7ff19ec633",
+      "result_id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a"
+    },
+    {
+      "claim_id": "a8cbcfc9-d9bf-4f8b-8446-78e735da6b7c",
+      "result_id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a"
+    },
+    {
+      "claim_id": "deabb39d-74fb-431f-a14f-5b0cfee6dd32",
+      "result_id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a"
+    },
+    {
+      "claim_id": "3133b523-4672-471e-a753-e5e801ad5ff0",
+      "result_id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a"
+    },
+    {
+      "claim_id": "60090e03-3050-43b8-98af-cc339fff7274",
+      "result_id": "b99402e5-ebb1-42b3-b74e-59d1abf14e8a"
+    },
+    {
+      "claim_id": "28cac407-3f81-4b8a-87f5-9121e24010dd",
+      "result_id": "c4707996-1b93-4b1e-9c4b-32b4ba72778a"
+    },
+    {
+      "claim_id": "8118296e-d7d5-40f3-a3e0-93e8613ca8cc",
+      "result_id": "c4707996-1b93-4b1e-9c4b-32b4ba72778a"
+    },
+    {
+      "claim_id": "c3afe62b-f88d-44a5-acbf-9f93f9482605",
+      "result_id": "c4707996-1b93-4b1e-9c4b-32b4ba72778a"
+    },
+    {
+      "claim_id": "9dbcd26f-81ed-40e5-8f8d-5c58dc8038c3",
+      "result_id": "c4707996-1b93-4b1e-9c4b-32b4ba72778a"
+    },
+    {
+      "claim_id": "7b9e6924-94da-4826-a5ca-028a528bc086",
+      "result_id": "9b10f812-ab49-4e9e-a8d2-082bc8f5c4b4"
+    },
+    {
+      "claim_id": "d7c6d41d-ab46-4e1c-b070-8dfd576b9eab",
+      "result_id": "9b10f812-ab49-4e9e-a8d2-082bc8f5c4b4"
+    },
+    {
+      "claim_id": "6e688cac-60ae-4e06-a36e-ac93c8c87bfb",
+      "result_id": "9b10f812-ab49-4e9e-a8d2-082bc8f5c4b4"
+    },
+    {
+      "claim_id": "99ab028f-a67f-414f-8acf-c85a01039192",
+      "result_id": "9b10f812-ab49-4e9e-a8d2-082bc8f5c4b4"
+    },
+    {
+      "claim_id": "a551b514-2fdf-4d28-8755-4aceb1520d1d",
+      "result_id": "9b10f812-ab49-4e9e-a8d2-082bc8f5c4b4"
+    },
+    {
+      "claim_id": "42503801-065a-4550-ac26-50dc651573fc",
+      "result_id": "9b10f812-ab49-4e9e-a8d2-082bc8f5c4b4"
+    },
+    {
+      "claim_id": "4bbad838-469a-4d46-827f-dfc8754c260e",
+      "result_id": "9b10f812-ab49-4e9e-a8d2-082bc8f5c4b4"
+    },
+    {
+      "claim_id": "9c1fbc5d-561e-40f3-bed9-c2255c313fdb",
+      "result_id": "9b10f812-ab49-4e9e-a8d2-082bc8f5c4b4"
+    },
+    {
+      "claim_id": "29bc1875-6888-4b0d-a939-7335dcc85683",
+      "result_id": "49f911ad-d86f-44a6-9fac-f6434e084b22"
+    },
+    {
+      "claim_id": "7d0720ca-cbe2-4805-b0ef-1fb30f650c3b",
+      "result_id": "8ea6d28b-4d9d-4c99-9b58-42d22c86f777"
+    },
+    {
+      "claim_id": "bb41c215-2e72-45bd-9d57-8deb6fda4ef1",
+      "result_id": "8ea6d28b-4d9d-4c99-9b58-42d22c86f777"
+    },
+    {
+      "claim_id": "d2d0e744-ab94-4f75-9a2f-c4febc7edb08",
+      "result_id": "8ea6d28b-4d9d-4c99-9b58-42d22c86f777"
+    },
+    {
+      "claim_id": "0012bf2a-bde9-4bea-9b42-b77fde84c9c1",
+      "result_id": "8ea6d28b-4d9d-4c99-9b58-42d22c86f777"
+    },
+    {
+      "claim_id": "a493160b-055c-40f8-bb39-caf7fe1cc86a",
+      "result_id": "42d2f201-2f04-4f61-9787-d920cfef0674"
+    },
+    {
+      "claim_id": "7b2b8e27-e4f0-4b3a-814c-e9afb5770b6e",
+      "result_id": "42d2f201-2f04-4f61-9787-d920cfef0674"
+    },
+    {
+      "claim_id": "5dd3c58d-8cb2-4f78-95d2-444627c4ef67",
+      "result_id": "27a14c2f-44d7-48e2-9a10-e496d97fab7e"
+    },
+    {
+      "claim_id": "f65e05ef-c433-416c-b69f-724804fc9217",
+      "result_id": "27a14c2f-44d7-48e2-9a10-e496d97fab7e"
+    },
+    {
+      "claim_id": "8ef56858-7f12-416d-b216-bdd758fe75cd",
+      "result_id": "442606d1-64fa-4aac-bd9b-b4a44395fb28"
+    },
+    {
+      "claim_id": "bb93bb67-32df-4687-beb1-b04638ab1ccf",
+      "result_id": "442606d1-64fa-4aac-bd9b-b4a44395fb28"
+    },
+    {
+      "claim_id": "e719b138-7591-432e-8de3-225f7a5087e9",
+      "result_id": "442606d1-64fa-4aac-bd9b-b4a44395fb28"
+    },
+    {
+      "claim_id": "484d9aa5-0606-421b-afc3-2e9dee5f7e43",
+      "result_id": "ebb9a23b-15f9-4fed-9e6c-00cd4b662dd4"
+    },
+    {
+      "claim_id": "7e0620aa-1186-4c3e-a9f8-22de8bfeb66a",
+      "result_id": "ebb9a23b-15f9-4fed-9e6c-00cd4b662dd4"
+    },
+    {
+      "claim_id": "3bb9ccd1-ab2e-4be0-96d7-25a0dabb0e59",
+      "result_id": "ebb9a23b-15f9-4fed-9e6c-00cd4b662dd4"
+    },
+    {
+      "claim_id": "c5258435-12a7-4af8-a268-ef42096bced6",
+      "result_id": "ebb9a23b-15f9-4fed-9e6c-00cd4b662dd4"
+    },
+    {
+      "claim_id": "0be7427e-e265-4709-83b4-9b00246453cf",
+      "result_id": "ebb9a23b-15f9-4fed-9e6c-00cd4b662dd4"
+    },
+    {
+      "claim_id": "e40a6fc9-ed4a-4fe3-bce2-8532e065a758",
+      "result_id": "ebb9a23b-15f9-4fed-9e6c-00cd4b662dd4"
+    },
+    {
+      "claim_id": "6aa0e2a7-986b-450a-a217-b63ef19dd339",
+      "result_id": "ebb9a23b-15f9-4fed-9e6c-00cd4b662dd4"
+    },
+    {
+      "claim_id": "a9d1605f-ab8a-4ca5-a8b9-4b60f0110c5c",
+      "result_id": "418822ed-cb7f-4d35-8b1d-098d6df6f90e"
+    },
+    {
+      "claim_id": "7b535cdc-f937-4535-872d-2f3d7fd2d72e",
+      "result_id": "418822ed-cb7f-4d35-8b1d-098d6df6f90e"
+    },
+    {
+      "claim_id": "d80c8f98-fc44-4f6b-bc85-45fb973b6639",
+      "result_id": "418822ed-cb7f-4d35-8b1d-098d6df6f90e"
+    },
+    {
+      "claim_id": "92cb8498-8240-4e84-ae87-34b2a172c9c8",
+      "result_id": "418822ed-cb7f-4d35-8b1d-098d6df6f90e"
+    },
+    {
+      "claim_id": "b1b3b77b-4554-4845-a985-5c02e720b863",
+      "result_id": "741d785d-f077-4df0-9e62-085e3d88c5f8"
+    },
+    {
+      "claim_id": "605a037d-fd9a-4d87-b582-acb18fbb0c50",
+      "result_id": "741d785d-f077-4df0-9e62-085e3d88c5f8"
+    },
+    {
+      "claim_id": "0d16da5b-1764-4bc2-a5de-ef7f14a3b632",
+      "result_id": "741d785d-f077-4df0-9e62-085e3d88c5f8"
+    }
+  ],
+  "comparisons": []
+}

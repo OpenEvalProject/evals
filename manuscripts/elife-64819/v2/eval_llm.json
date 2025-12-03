@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "SOX2 and T/Brachyury exhibit opposing expression gradients in the anterior primitive streak epiblast that overlap to define a SOX2/T double-positive territory. This territory forms an inverted V shape capping the anterior PS at stage 4+HH, persists during PS regression, and eventually localizes to the tail bud by the 25-somite stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C23 are well-supported by systematic immunostaining across developmental stages (n=23 embryos total) with consistent spatial patterns. The graded expression patterns are quantified (C12), and the temporal progression is documented with appropriate staging. The underlying mesoderm shows expected MSGN1 expression (C16-C18), providing anatomical validation. The only limitation is that the subdivision into NMP vs PMP territories (C19) involves some interpretation of marker boundaries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Cells from the SOX2/T territory of the anterior PS epiblast at stage 5HH contribute to both neural tube and paraxial mesoderm during axis formation, with anterior cells joining the neural tube, middle cells remaining as progenitors, and posterior cells entering the mesoderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C24-C29 are supported by electroporation-based lineage tracing with time-lapse imaging (Videos 1-2, Figure 1). The tracking of individual cell movements provides direct evidence for differential fates based on position within the SOX2/T territory. However, the interpretation that middle cells 'remain in a progenitor state' (C27) is inferential rather than definitively proven, as progenitor status requires additional functional validation beyond lack of movement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Single-cell lineage tracing using retroviral barcoding and Nucbow genetic labeling provides direct evidence that individual cells in the SOX2/T region of the anterior PS are bipotent, giving rise to clones containing both neural and mesodermal descendants distributed along both anterior and posterior regions of the axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 represent the critical direct evidence for NMP bipotentiality. The retroviral barcoding identified 4/7 bipotent clones (C31), and Nucbow identified the majority of 47 clones as bipotent (C32-C33, n=690 cells in 6 embryos). The spatial distribution analysis (C34) strengthens the conclusion. The combination of two independent lineage tracing methods providing convergent results is particularly strong. Sample sizes are adequate for the technically challenging single-cell labeling approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Single-cell RNA sequencing identifies a distinct NMP cluster in both chicken and mouse that lies between PSM and neural clusters, exhibits two developmental trajectories toward neural and mesodermal fates, and shows a conserved transcriptomic signature enriched for Wnt signaling pathway genes while undergoing maturation characterized by posterior Hox gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 are supported by comprehensive scRNAseq analysis (chicken: 7,992 cells across 3 stages; mouse: 120,679 cells). Two independent trajectory inference methods (diffusion pseudotime and WOT) converge on identifying bifurcating trajectories (C37), strengthening confidence. The identification of conserved gene signatures (C38-C39) and validation across species is rigorous. The maturation trajectory (C42-C44) is well-documented with Hox gene expression as an expected marker. The only technical limitation noted is the failure to detect SOX2 in chicken NMP clusters (addressed in C86-C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "NMPs undergo epithelial-to-mesenchymal transition (EMT) during maturation from early (epiblast) to late (tail bud) stages, as evidenced by downregulation of epithelial markers (EpCAM, CDH1, GJA1) and upregulation of mesenchymal markers, with GSEA showing positive enrichment for EMT gene sets only in late NMP clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are well-supported by multiple lines of evidence: differential gene expression analysis from scRNAseq (C45), formal GSEA with appropriate gene sets (C46, FDR-corrected), and validation by immunostaining showing CDH1 expression in early but not late NMPs (C47-C48, n=3 embryos). The convergence of computational and experimental validation strengthens the conclusion. The interpretation (C49) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A posterior-to-anterior gradient of convergence speed and cell ingression exists along the primitive streak, with anterior PS cells (NMP region) showing limited convergence (0-45\u00b0 angles), low lateral-to-medial velocity, high anterior-posterior velocity, and minimal ingression, while posterior cells show high convergence (45-90\u00b0 angles) and rapid ingression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 are supported by systematic live imaging with nuclear red labeling and automated cell tracking (n=3 embryos, >1500 tracks). Track longevity analysis (C56), angle measurements (C57-C58), and velocity quantification (C59-C61) provide quantitative support. The ingression gradient is validated by ventral imaging showing progressive fluorescence increase (C62) that fits a linear model, and correlates with laminin distribution (C63). The integration of multiple quantitative measurements strengthens the conclusion (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "NMPs exhibit increased proliferation and limited ingression compared to posterior PS regions, with a higher mitotic index in the anterior PS, cell cycle time of ~4.5 hours for symmetric divisions, and 65% of anterior PS cells remaining for >7 hours versus rapid ingression (1-3 hours) in posterior regions, enabling NMP self-renewal and amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 are supported by multiple complementary approaches: cell counting over developmental time (C65, n=38 embryos), pH3 immunostaining (C66-C67, n=13 embryos with statistical significance p<0.05), live imaging of H2B-Cherry quails (C67, n=6, p=0.0001), and manual cell tracking (C69-C70, n=159 cells). The cell cycle time measurement (C71, n=12 inter-division events) aligns with a population dynamics model predicting 9-10 divisions. The identification of symmetric and asymmetric divisions (C72-C74) provides mechanistic insight. The integration is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C9",
+      "C10"
+    ],
+    "result": "Sequential posterior-to-anterior exhaustion of PS mesodermal precursor territories occurs during regression, with extraembryonic mesoderm disappearing first, followed by lateral plate (completed by 10-somite stage), and SOX2-negative PMPs, ultimately leaving the NMP territory as the major remnant in the tail bud maintained through limited ingression and increased proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C9-C10 are supported by time-lapse tracking of PS territories in GFP embryos (n=3, Video 7) with clear documentation of sequential disappearance. The immunostaining data (C77) confirms that T-positive/SOX2-positive cells dominate the tail bud after 10 somites. The mechanistic explanation integrating convergence gradients, ingression patterns, and proliferation differences (C9-C10) is well-supported by the cellular dynamics data from previous result groups. The conclusion represents a synthesis of multiple experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C116"
+    ],
+    "result": "Comparison of NMP gene signatures across chicken, mouse, and human (in vitro) identifies 38-44 conserved genes including Wnt pathway components (Wnt5a, Wnt8a, Wls, Axin2), signaling molecules (Fgf8, Fgf17, Cyp26a1), transcription factors (Cdx1/2/4, Evx1, Hes3, Sp5/8), and metabolic genes (Slc2a1/3, Ldha/b), demonstrating significant conservation of the NMP transcriptional signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 and C116 are supported by systematic comparison of differentially expressed genes across multiple datasets (chicken: 304 genes; mouse: 350 genes; 6 total datasets including human). The identification of 38-44 conserved genes depending on comparison stringency is appropriate. The enrichment for Wnt pathway genes is consistent with known NMP biology (C38). The inclusion of glycolytic genes (C53) is validated by citation to previous work. The cross-species and cross-platform (in vivo vs in vitro) conservation strengthens confidence in the biological significance of the signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Cells of the anterior PS epiblast initially behave as monopotent progenitors and only acquire bipotential fate later in more posterior regions, reconciling the current findings with classical fate mapping studies that analyzed embryos at earlier stages (10-14HH) and shorter time periods than the current study (17-20HH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C79-C82 provide important context reconciling apparently contradictory findings. The explanation that previous studies missed bipotentiality due to shorter analysis timeframes (C80) is logical and supported by the spatial distribution data showing bipotent clones in both anterior and posterior regions (C31, C34). The consistency with recent grafting studies (C82) provides independent validation. This represents a well-reasoned synthesis of current and prior work, though C6 itself is somewhat inferential from the spatial distribution of clone types rather than direct temporal tracking of individual cells changing potency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Waddington Optimal Transport (WOT) trajectory analysis identifies no bias in NMP contribution toward neural versus mesodermal fate (36% neural, 37% self-renewal, 27% PSM in chicken; 36% neural, 33% self-renewal, 31% PSM in mouse), and identifies transcription factors predictive of fate differentiation including PAX6 (neural), MSGN1 (PSM), and previously undescribed NMP-associated factors RARG and MNX1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by rigorous computational analysis using WOT on large datasets (chicken: 2,362 cells; mouse: 12,072 cells). The lack of fate bias (C88) is quantitatively demonstrated and aligns with lineage tracing data. The identification of predictive transcription factors (C89-C90) using appropriate statistical thresholds (FDR<0.01) provides testable hypotheses for future functional studies. The convergence between computational predictions and experimental lineage tracing strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The SOX2/T territory corresponds to stem cells that self-renew while contributing to medial somites, encompassing Hensen's node and adjacent anterior PS epiblast, while the posterior SOX2-negative territory corresponds to lateral somite precursors that become exhausted by the end of PS regression, with posterior somites deriving mostly from NMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 integrate current findings with extensive prior literature on somite formation. The increase in SOX2/T cell numbers (C91) is documented (Figure 7A, n=38 embryos) and consistent with mouse data. The correspondence between the SOX2/T territory and previously identified stem cells (C92-C94) is logical based on spatial mapping. The distinction between medial and lateral somite precursors (C93, C96) is supported by citations to classical fate mapping. The exhaustion model (C97) follows from the territory tracking data. The consistency with prior observations (C98) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "NMPs exhibit striking plasticity, contributing to single lineages for several segments before switching to the other lineage, ruling out simple asymmetric division models. This plasticity is supported by heterotopic grafting experiments showing fate adoption based on new location, and in vitro studies demonstrating that NMP-like cells can be induced to differentiate to either lineage by changing culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 are supported by the spatial distribution patterns of bipotent clones (C106, Figure 2F, K) showing segmental switching between lineages. The interpretation ruling out simple asymmetric division models (C107) is logical. The observation of bifated clones not contributing to tail bud (C108) is consistent with mouse data. The supporting evidence from grafting experiments (C109) and in vitro differentiation studies (C111) is appropriately cited. The conclusion about NMP plasticity (C110) integrates multiple lines of evidence, though it remains somewhat inferential regarding the uncommitted state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Technical differences between chicken and mouse scRNAseq datasets result in detection of T, Sox2, and Nkx1.2 in mouse NMP clusters but only T in chicken NMP clusters, potentially due to genome annotation issues or differences in sequencing depth between inDrops (chicken) and 10X (mouse) platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 identify an important technical limitation. While SOX2 protein expression is clearly demonstrated by immunostaining in chicken NMPs (C11-C23), its absence from scRNAseq data (C86) is problematic. The authors offer two explanations: genome annotation issues or platform differences (C87), but this remains speculative without validation experiments. This technical discrepancy doesn't invalidate the overall findings since protein expression is confirmed, but it does raise questions about the completeness of the chicken transcriptomic data and limits confidence in negative findings from the chicken dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The observed cellular dynamics of convergence and ingression gradients, controlled by Fgf8 signaling, act as a sink for posterior PS territories, explaining their progressive exhaustion and the persistence of the NMP territory as the major PS remnant. This reconciles historical models of the PS as both a transit zone (Pasteels) and a blastema (Wetzel), with most PS behaving as transit zone while the anterior-most region functions as a blastema.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 provide mechanistic interpretation integrating current findings with historical models. The references to prior work on mesodermal cell motility (C99) and Fgf8 signaling (C100) are appropriate. The sink model (C101-C102) is a logical interpretation of the observed dynamics. The integration with increased NMP proliferation (C103) provides a complete mechanistic explanation. The reconciliation of historical controversies (C104-C105) is intellectually satisfying and well-reasoned, though the mechanistic details of how Fgf8 gradients specifically control the observed patterns would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Classical developmental biology describes germ layer segregation completing by gastrulation followed by head-to-tail body formation through lineage-committed progenitors, but retrospective clonal analysis identified bipotential neuromesodermal progenitors (NMPs), which classical fate mapping failed to detect at single-cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 accurately summarize established knowledge and the historical context that motivated the study. These are well-supported by appropriate citations to classical literature and the original NMP discovery (Tzouanacou et al., 2009). The identification of the gap in knowledge (C4) - lack of direct single-cell evidence in amniotes - appropriately frames the study's contribution. This represents accurate scholarship rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "NMPs exhibit a conserved transcriptomic signature during axis elongation but lose their epithelial characteristics in the tail bud.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are summary statements supported by the detailed evidence in other claim groups (C36-C49 for transcriptomic signature; C45-C49 for EMT). These represent high-level conclusions that are well-supported by the underlying data. They are appropriately stated as major findings in the abstract but are derivative of the more detailed results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "In zebrafish, bipotential cells with neural and mesodermal fate segregate during gastrulation and contribute to the posterior axis, but only monopotent cells are found in the tail bud, contrasting with chicken and mouse where bipotent cells persist in the tail bud.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 accurately cite comparative findings from zebrafish studies (Attardi et al., 2018; Kanki and Ho, 1997) to provide evolutionary context. The contrast with amniote NMPs is appropriately noted. This represents accurate scholarship and appropriate contextualization of the findings within broader vertebrate development, though it doesn't constitute new data from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "NMP-like cells are readily generated in vitro from pluripotent stem cells through Wnt activation, form homogeneous SOX2/T-positive populations similar to endogenous NMPs, and constitute the major cell type in 3D gastruloid cultures, contrasting with the difficulty of observing NMPs in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 appropriately cite extensive prior work on in vitro NMP generation and characterization. The contrast between in vivo rarity and in vitro abundance (C112) is an interesting observation. The references to 2D culture methods (C113), gastruloid composition (C114), and transcriptomic similarity (C115) are well-supported by citations. This provides important context for the translational relevance of the findings but represents synthesis of prior work rather than new data.",
+    "result_type": "MINOR"
+  }
+]

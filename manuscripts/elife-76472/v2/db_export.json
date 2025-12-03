@@ -1,0 +1,1955 @@
+{
+  "submission": {
+    "id": "3b75656d-3e02-4c0c-8a3c-c923f72d3385",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:50:03.510776Z",
+    "updated_at": "2025-12-03T17:50:03.510776Z"
+  },
+  "content": [
+    {
+      "id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "submission_id": "3b75656d-3e02-4c0c-8a3c-c923f72d3385",
+      "content_type": "manuscript",
+      "content_text": "# Emergent color categorization in a neural network trained for object recognition\n\n## Authors\n\n- Jelmer P de Vries<sup>1</sup> ([ORCID: 0000-0002-3000-9685](https://orcid.org/0000-0002-3000-9685)) \u2020\n- Arash Akbarinia<sup>1</sup> ([ORCID: 0000-0002-4249-231X](https://orcid.org/0000-0002-4249-231X))\n- Alban Flachot<sup>1</sup>\n- Karl R Gegenfurtner<sup>1</sup> ([ORCID: 0000-0001-5390-0684](https://orcid.org/0000-0001-5390-0684)) \u2020\n\n### Affiliations\n\n1. Experimental Psychology, Giessen University Giessen Germany ([ROR:033eqas34](https://ror.org/033eqas34))\n2. Center for Vision Research, Department of Psychology, York University Toronto Canada ([ROR:05fq50484](https://ror.org/05fq50484))\n\n\u2020 Corresponding author\n\n## Abstract\n\nColor is a prime example of categorical perception, yet it is unclear why and how color categories emerge. On the one hand, prelinguistic infants and several animals treat color categorically. On the other hand, recent modeling endeavors have successfully utilized communicative concepts as the driving force for color categories. Rather than modeling categories directly, we investigate the potential emergence of color categories as a result of acquiring visual skills. Specifically, we asked whether color is represented categorically in a convolutional neural network (CNN) trained to recognize objects in natural images. We systematically trained new output layers to the CNN for a color classification task and, probing novel colors, found borders that are largely invariant to the training colors. The border locations were confirmed using an evolutionary algorithm that relies on the principle of categorical perception. A psychophysical experiment on human observers, analogous to our primary CNN experiment, shows that the borders agree to a large degree with human category boundaries. These results provide evidence that the development of basic visual skills can contribute to the emergence of a categorical representation of color.\n\n## Introduction\n\nColor vision is a prime example of categorical perception, and, as such, has received considerable attention across several research domains (Harnad, 1987). Being dependent on both linguistic and perceptual processing has made it difficult to pinpoint the mechanisms responsible for the emergence of color categories, and determine why particular colors are grouped the way they are. This has led to a protracted debate as to what extent categorization develops universally (independent of local language and culture) and to what extent it is relative to local communication (for an elaborate discussion on the Sapir-Whorf hypothesis see Kay, 2015; Kay and Kempton, 1984). Proponents of the universalist view have pointed toward the overlap in focal colors across different cultures (Regier et al., 2005). Furthermore, it appears that categories can to a certain degree emerge independent of language development: Pre-linguistic infants pay more attention to color changes crossing categorical borders than color changes within categories (Skelton et al., 2017) and several animal species respond to color categorically (Caves et al., 2018; Jones et al., 2001; Poralla and Neumeyer, 2006). Relativists (Davidoff, 2001), however, point toward the difficulty children have acquiring color names (Roberson et al., 2004) and the case of a patient whose language impairments were associated with color sorting problems (Roberson et al., 1999). Also, while categorization has been found in several animals, researchers have failed to find categorization in some primates (e.g. baboons) and it has been argued that the methodology of other primate studies was biased toward finding categorical results (Fagot et al., 2006). Moreover, just as universalists point to the strong commonality among the development of color categories, proponents of the relativist view highlight differences (Roberson et al., 2000; Roberson et al., 2005).\n\nWith the apparent contradictions in findings, in more recent years, the universalist versus relativist debate evolved from contrasting two extremes, to looking at how different factors contribute to the process of categorization (Kay and Regier, 2006; Steels and Belpaeme, 2005). Importantly, recent advances have also started taking into account the varying utility of colors (Conway et al., 2020; Gibson et al., 2017; Zaslavsky et al., 2019). One seminal study shows that warm colors are communicated more efficiently than cool colors (overall) and, importantly, that at the cultural level categorical differences between languages are the result of differences in usefulness of color (Gibson et al., 2017). Subsequent papers have demonstrated that utilizing a perceptually uniform color space in combination with concepts from communication theory, such as an information bottleneck (Zaslavsky et al., 2018) or rate distortion (Twomey et al., 2021) can be powerful in modeling the shape of color categories. Notably, a recent study, where communicating deep neural networks played a discrimination game, demonstrated that allowing continuous message passing made the emergent system more complex and decreased its efficiency (Chaabouni et al., 2021).\n\nWhile the modeling approaches incorporating communication principles have proven powerful in predicting categorization characteristics, the strong reliance on communication does not address the existence of what appears to be categorical behavior for color in the above-mentioned pre-linguistic infants and various animals. Also, a recent case study shows that color naming can be impaired while color categorization remains intact, emphasizing that in humans the link between communication and categorization can be decoupled (Siuda-Krzywicka et al., 2019). Furthermore, the trend of looking at the ecological relevance of color in shaping categories has also extended to animal research. Host birds rely on a single-threshold decision rule in rejecting parasite eggs rather than the dissimilarity in color to their own eggs (Hanley et al., 2017) and female zebra finches categorically perceive the orange to red spectrum of male beak color (Caves et al., 2018). These latter findings, particularly, emphasize that in general the utility of color is at the basis of color categories. Because the utility of color will also be reflected in communication, the fact that communicative concepts are powerful in modeling the shape of categories does not necessarily prove a causal relationship. Moreover, in the case study by Siuda-Krzywicka and colleagues their patient, RDS, tries to use objects to link names to colors (\u201cthis is the color of blood; it must be red\u201d page 2473). A link between color categories and objects would be able to bridge the discrepancy between models that rely on communicative concepts to incorporate the varying usefulness of color and the experimental findings on pre-linguistic categorical effects. If object recognition is a driver of color categories, this would be a crucial step towards an answer to why and how color categories spread across perceptual color space the way they do. The possible causes range from visual perception being shaped based on the physical properties of the world all the way to the need for efficient communication about color.\n\nHere, we focus on color categorization as a potential emergent property of acquiring object recognition. Specifically, we investigate whether a categorical representation of color emerges in a Convolutional Neural Network (CNN) trained to perform an object recognition task on natural images. With this, our approach is not to model specific color category data directly, nor to model specific brain processes. Rather, we investigate whether a categorical representation of color can emerge as a side effect of acquiring a basic visual task; object recognition. The CNN is an excellent candidate for this purpose as unlike in any living species we can control its visual diet and train it on one specific task. Previously, many studies on the representation of color in a CNN rely on physiological style approaches (Engilberge et al., 2017; Flachot et al., 2020; Flachot and Gegenfurtner, 2018; Rafegas and Vanrell, 2018). Considering color categorization is likely a higher order process, we rely on classical principles from a long history of psychophysical studies to study the emergence of color categorization. In the CNN this translates to replacing the final layer with a new classifier which can be trained to perform alternate tasks on the representation the network builds (over the layers) to perform object classification on. Our findings show that a CNN trained for object recognition develops a categorical representation of color at the level where objects are represented for classification.\n\n## Results\n\n### Border invariance\n\nPerceptual research in non-human species requires indirect measures: in numerous species match-to-sample tasks have successfully been utilized for a long time to study visual perception (Kastak and Schusterman, 1994; Skinner, 1950). Pigeons, for example, were trained to match colors to one of three main color samples (Wright and Cumming, 1971). Subsequently, novel colors were introduced to evaluate to which of the sample colors they were matched to. This allowed the authors to find the hues where pigeons switch from one color to another. When they repeated the experiment with different training colors, they found crossover points to be similar across experiments, indicating a categorical perception of color. Here we use a similar approach to evaluate the color representation of a ResNet-18 CNN (He et al., 2016) that has been trained on the ImageNet dataset, where objects in natural images have to be classified (Deng et al., 2009). First, we replaced the original output layer (which classified the 1000 objects) with a new classifier. The new classifier was then trained (while keeping the original weights in the rest of the network constant) to classify stimuli containing a single word of a specific color (selected from narrow bands in the HSV hue spectrum at maximum brightness and saturation). For stimulus examples see Figure 1A; the hue spectrum with corresponding training bands is found in Figure 1B. In a second step we evaluate the retrained network using colors from the whole hue spectrum and determine to which classes these colors are generalized. As shown in Figure 1C, colors from outside of the training bands are largely classified to the neighboring bands in a consistent manner. As a consequence, the best color match for each point on the hue spectrum can be determined in a straightforward manner by taking the mode (see Figure 1D). The important question regarding categorization now is what determines the transitions (or borders) between the matches? One option is that the borders are dependent on the positions of the training bands, meaning a shift in these bands should translate to a shift in borders. Alternatively, the borders between the colors could be due to a categorical representation of color in the network. In this latter case we expect the borders to be (at least partially) invariant to shifts in the training bands. To investigate this, we repeated the above process many times over, while slightly shifting the training bands over the iterations. Unfortunately, there is no prior work on color categories in CNNs to base the number bands on. From the human perspective 6 of the 11 basic color terms appear in the spectrum (red, orange, yellow, green, blue, and purple), as such we varied the number of output classes from 4 through 9 in an exploratory manner. The result for 6 output classes has been visualized in Figure 1E: As the training bands are gradually shifted (indicated by the black lines) we observe that the borders between categories appear largely invariant to these shifts in training bands.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76472/elife-76472-fig1-v2.jpg)\n\n**Figure 1.:** (A) Six stimulus samples corresponding to the primary and secondary colors in the hue spectrum (red, green, blue, yellow, cyan and magenta, respectively). (B) Hue spectrum from HSV color space (at maximum brightness and saturation). The colors for each class are selected from narrow, uniformly distributed, bands over the hue spectrum. Bands are indicated by the transparent rectangles. (C) Evaluation from the training instance for which the bands are depicted in B. In each instance, the same ImageNet-trained ResNet-18 is used, but a novel classifier is trained to perform the color classification task with the number of output nodes corresponding to the number of training bands. Each individual pixel represents one classified sample, colored for the class it has been assigned to (i.e. using the hue of the center of the training band). (D) A one-dimensional color signal produced by taking the mode of each pixel column in C. In this manner, we obtain the overall prediction for each point on the spectrum and can determine where the borders between classes occur. (E) Results of all instances trained on 6 bands as they are shifted through the hue spectrum. Each row represents the classification of a single network (as in D), trained on 6 bands, the center of which is marked by a black tick (appearing as black diagonal lines throughout the image).\n\nTo determine whether the borders are consistent across the shifting training bands, we plot the transition count that indicates the co-occurrence of borders in Figure 2A (i.e. the number of times a border occurs in a specific location, while the bands are shifted). Note that while Figure 1E only displays the results for a network trained with 6 output nodes, the full result depends on borders found when training the network with 4 through 9 output nodes. As those results are collapsed, inspecting the transition count shows that there are about 7\u20138 discontinuities in the hue circle. Using a basic peak detection algorithm that relies on neighboring data points to find peaks, 7 peaks are found (red dots in Figure 2A). Utilizing those peaks, we divide the hue spectrum in 7 different regions (Figure 2C), and averaging the colors in each region (weighing them based on the reciprocal of the transition count) results in 7 colors that can be seen as representing each category.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76472/elife-76472-fig2-v2.jpg)\n\n**Figure 2.:** (A) Summation of border transitions, calculated by counting the border transitions (as depicted in Figure 1E) for each point on the HSV hue spectrum (thin grey line). A smoothed signal (using a Gaussian kernel; blue thick line) is plotted to reduce the noise. Peaks in the signal (raw count) are found using a simple peak detection algorithm (findpeaks from the scipy.signal library) and indicated in red. (B) The peaks are superimposed on the hue spectrum as vertical black dotted lines. (C) Category prototypes for each color class obtained by averaging the color in between the two borders (using reciprocal weighing of the raw transition count in A). (D) For each row (as in Figure 1E), the optimal cross-correlation is found by comparing the row to all other rows in the figure and shifting it to obtain the maximum correlation. In blue we plot the distribution of shifts when 7 output classes are used (as we appear to find 7 categories). For comparison, we plot the result of a borderless situation (where borders shift with training bands) in purple and in green the result for a network trained from scratch on the found 7 color categories.\n\nSince the degree of invariance is not constant over the different borders, the question becomes what we consider sufficient evidence for finding categories and how we can exclude the possibility that this is a chance finding. To ensure the latter is not the case, we have rerun the same experiment using the same and similar architectures (notably a ResNet-34, ResNet-50 and ResNet-101; see Appendix 1: Network Repetitions). In Appendix 1\u2014figure 1 one can see, that given a similar architecture, similar border locations are obtained. In Appendix 8 we have also included a number of different architectures to ensure the current results are not exclusive to ResNets. Quantifying how \u2018categorical\u2019 the current results are is more complicated, however. If the color representation is strictly categorical, the result in Figure 1E would primarily show straight lines. On the other hand, if the network incorporated some form of a continuous representation of color, we expect borders to shift with the shifting color bands. In the latter case diagonal transitions, following the diagonal of the training bands, should be most prominent. In the categorical case, the highest cross-correlation between individual rows would be found by keeping them in place. However, in the continuous case, the maximum cross-correlation would be found by shifting the rows relative to each other. We can contrast these two cases by calculating, for pairs of rows, the lateral shift that produces the highest cross-correlation and inspect the frequency for each of the found shifts. If the borders move along with the training colors, the shifts should be distributed more uniformly (\u22127 to 7; range is equal to the width of 7 uniform bands). If the borders are stable across the different training iterations, we expect most shifts to be small (say between \u20132 to 2). Simulations for the categorical and continuous case are shown by the green and purple curve in Figure 2E, respectively (see Appendix 2: Simulation Classification for more details). The histogram plotted in light blue shows the actual data, which more closely follow the green line, representing the categorical simulation. A Fisher\u2019s Exact Test shows the difference between the count distribution is significant for all comparisons (p<0.0001; both pairwise and three-way). While the distribution in Figure 2D relies on comparing each individual row to all rows, this leads to the inclusion of doubles. For the statistical test, we therefore only include each comparison once and take the shift as a positive distance value. The counts for each positive shift occurrence were entered into the test. Even though all comparisons were significant, it is important to note that the overlap between the current data and the shifting simulation is much smaller than with the categorical simulation (48% vs 74%). As such, despite a significant difference for both comparisons, it seems that the current findings more closely match with the categorical simulation. The significant difference between these two can be explained by the fact that directly training the color categories will lead to a less noisy color representation than when a network is trained on objects. Also, comparing the classification from the simulated data in Appendix 2\u2014figure 1 (Appendix 2: Simulation Classification) we can see that the color classifications from the current ResNet-18 and the categorically trained ResNet-18 are very similar and both deviate considerably from the continuous simulation.\n\nOur procedure requires the use of a hue spectrum that wraps around the color space while including many of the highly saturated colors that are typical prototypes for human color categories. We have elected to use the hue spectrum from the HSV color space at full saturation and brightness, which is represented by the edges of the RGB color cube. As this is the space in which our network was trained, minimal deformations are introduced. Other potential choices of color space either include strong non-linear transformations that stretch and compress certain parts of the RGB cube, or exclude a large portion of the RGB gamut (yellow in particular). Varying the hue in the HSV space, however, does not only change the color of the word stimuli, but also their luminance. To ensure the current borders do not stem from a spurious correlation between color and luminance, we have rerun the current experiment with different stimuli that include luminance distractors and a variable background luminance (see Appendix 3: Luminance Variation). While border locations are not a perfect one-to-one match with the current results, they are similar and a categorical representation is again found. With the introduction of distractors and variation in background luminance the network can rely only on kernels coding purely for color and not a combination of color and luminance to perform the task. We should note that the analysis does not suggest that the representation of color is completely luminance independent. Some color categories are inherently dependent on luminance contrast. For instance, the only difference between orange and brown is relative luminance (see for instance: Figure 1B in Lindsey and Brown, 2009). The current analysis only excludes the notion that the borders are solely based on luminance. We also explored an alternative hue spectrum from a single plane of RGB color space. This led again to a categorical representation, albeit more noisy, presumably due to the reduction in chromatic contrast (see Appendix 4: Circular Color Spectrum).\n\nThe final important question that arises from the current results is to what extent they are related to the acquisition of object classification, and to what extent the architecture of our model and the colors in the dataset drive the categorical representation. Previous studies have already shown that the perceptual structure can in part explain color naming (e.g., Zaslavsky et al., 2019). However, what we believe makes the current finding particularly interesting is that the current results stem from a network trained for object recognition and, importantly, we find the categorical color representation in the final layer of the network (the network\u2019s representation that enables object classification). This suggests that this categorical color representation is beneficial to the object classification task. If this color representation is indeed present in the final layer to the benefit of object classification, there should also exist other classification tasks which do not result in a categorical representation of color in the CNN. Therefore, we trained the ResNet-18 architecture on the same images, but on a different classification task, specifically, on distinguishing natural from man-made scenes. We keep the color distribution of the input the same by using the same ImageNet dataset for this task. The color classifications of the networks trained on different tasks can be found in Figure 3, with the left panel showing the classification of colors in the original object-trained ResNet-18 and the right panel showing the classification of the ResNet-18 trained to distinguish the two scene types. The color representation for the latter ResNet-18 is not one that dissects the hue spectrum in human-like categories. As we do again observe a number of straight transitions, one could argue that the color representation does show categorical traits, however, it is clear that the color representation does not follow the hue spectrum in a manner similar to that of the object-trained version. As such, it appears that the representation build for object recognition is considerably closer to what we expect from humans.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76472/elife-76472-fig3-v2.jpg)\n\n**Figure 3.:** Right the same analysis, but applied to a network trained to classify scenes (natural vs. artificial).\n\n### Human psychophysics\n\nThe previous experiment shows that the network has built a representation of color that appears categorical in nature. However, the approach and analysis do not have a direct equivalent in human color categorization studies. To evaluate whether the results from this novel approach are akin to human behavior, we measured human observers on a match-to-sample task modeled after the task for the CNN. Ten human observers performed an experiment where (centrally) presented color samples had to be matched to one of 7 peripheral colored disks (see Figure 4A for an example stimulus display). As in the CNN experiment, to determine borders we vary both the central target color, as well the hues of the 7 peripheral choices the observer has to pick from over trials.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76472/elife-76472-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example display of an iPad trial. The observer\u2019s fingertip is placed in the central circle (white at the start of the trial) upon which it shrinks and disappears (over 150ms); subsequently it reappears in the target color (red in the current example). In the current display, the peripheral choices, on the imaginary half-circle are rotated slightly counter-clockwise, this alternates every trial between clockwise and counter-clockwise. (B) Color selections of all observers averaged over hue. The target colors are represented on the x-axis and each row represents a different set of peripheral choices, the hues of which are indicated by the black tick marks. Each pixel in the graph is colored for the averaged observers\u2019 choice. The white vertical dotted lines indicate the estimated categorical borders based on the transition count. (C) The transition count as in Figure 2A, but now cumulated over observers, rather than network repetitions. (D) As in Figure 2C we have determined the prototypical color of each category by calculating the average, weighted by the reciprocal of the transition count.\n\nTo allow for comparison with the previous experiment, we plot the results in a similar manner. The human data can be found in Figure 4B\u2013D; In Figure 4B, we see that much in the same way as in the previous experiment there are clear locations in the hue spectrum where borders occur regardless of the hues of the peripheral disks. Particularly, as with the neural network we find categories are narrower in the red-yellow range, while the green region is the broadest. The transition count in Figure 4C highlights that, much in the same way as with the CNN experiment, the borders are not absolute and some borders are stronger than others.\n\nHowever, we should also acknowledge that considering the repetitions here are different observers, the variance is partly driven by different perceptual experiences and potentially also by the application of different strategies. Still, the variance is also present in individual observers and observing Figure 4D where we have estimated the color prototypes for each human color category, shows a pattern that is highly analogous to the CNNs prototypes. To ensure the border count in Figure 4C is reliable, we tested for significance by comparing the correlation among observers to a bootstrapped null-distribution (see methods section) and find the correlation of the transition count is significantly different to transition counts of bootstrapped observers for whom counts do not align (p<1 \u00d7 10\u20136).\n\n### Evolutionary algorithm using principles of categorical perception\n\nThe generalization over neighboring colors and the invariant discontinuities between them are consistent with the notion that the network builds a categorical representation of color. Nevertheless, the lack of a broad understanding of CNNs in general and particularly their representation of color makes us wary to draw a definitive conclusion from only one type of analysis. To evaluate whether the colors within the boundaries can indeed best be seen as belonging to categories, we turn to the concept of categorical perception, where differences between colors within the same category are seen as smaller than differences between colors from different categories (Goldstone and Hendrickson, 2010). If the discontinuities we found indeed mark borders as in a categorical representation of color, we expect that generalizing colors falling between two borders should be easier than generalizing colors that cross discontinuities. In humans, categorical perception is often studied using reaction time tasks (Kay et al., 2009; Winawer et al., 2007; Witzel and Gegenfurtner, 2011), but a direct analogue of reaction times in neural networks is not available. There is however a different temporal performance measure available: the ability to evaluate how quickly a network can learn a task. If the boundaries found in the Invariant Border Experiment indeed resemble categorical borders, it should be faster for the network to learn to generalize colors within two neighboring discontinuities to a specific class than to generalize colors crossing discontinuities.\n\nSpecifically, in the current experiment, we evaluate how well a set of borders fits the color representation of the network by evaluating how easily sets of 2 narrow training bands placed directly inside of each neighboring border pair can be generalized to single classes. One straightforward way of evaluating the discontinuities found above would be to make direct comparisons based on their locations. However, this would mean either using biased comparisons based on the borders found above, or require an almost infinite number of comparisons to ensure we compare the found borders to every alternative. To avoid this, rather than using the previously found borders as a starting point, we developed a search algorithm that uses the principle of categorical perception to find the optimal set of borders for the network from scratch. The only information taken into account from the previous experiment is that approximately 7 borders were found: An evolutionary algorithm is initialized with 100 sets of 7 randomly placed borders. Allowing the network to train for a limited number of epochs (the number of times all images in the dataset are passed through the network) we evaluate the performance of each of the randomly initialized border-sets. In evolutionary algorithms the fitness function serves to evaluate how well solutions perform. As such the short training of the network serves as the fitness function for the border-sets. Using the fitness of each set, the best 10 performers are copied to the next generation (elitism) as well as a set of 90 novel border-sets. The latter sets are generated by randomly selecting parents from the previous generation (with a bias for better performing ones) and recombining their borders to create new border sets. By allowing this process to run for some 40 generations, it converges to a specific set of borders with little variation between the top ten performers. As evolutionary algorithms are not guaranteed to converge to a global optimum, we ran the algorithm 12 times to ensure the results are consistent. In the current case, the borders should be less variable, but still line up with the peaks of the invariant border experiment.\n\nFigure 5 shows where the evolutionary algorithm places the borders and we see a strong correspondence with the previously found borders (indicated by black vertical dotted lines). The only exception appears in the border between green and turquoise. However, note that this is also the region of color space where the transition count (as shown in Figure 2A) did not show a sharp peak, as was the case for most other borders. Interestingly, this is also the border where the largest variability is observed for human observers (Hansen and Gegenfurtner, 2017). The current results suggest that the best explanation for the discontinuities we observed in the Invariant Border Experiment are that they indeed represent categorical borders dividing the color space. The fact that color categorization emerges in a CNN trained for object recognition underscores that color categorization may be important to recognizing elements in our visual world (Witzel and Gegenfurtner, 2018). The notion that color categories emerge as a result of acquiring a basic visual task such as object recognition is also in line with the finding of universal tendencies in the development of color categories across cultures (Kay and Regier, 2003). Further exploring the origin of the borders, the results shown in Appendix 5: K-Means Clustering indicate that efficiently representing the distribution of colors in the ImageNet database we used might, in part, explain the borders, in line with earlier results by Yendrikhovskij, 2001.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76472/elife-76472-fig5-v2.jpg)\n\n**Figure 5.:** The evolutionary algorithm is repeated 12 times and we calculate the frequency of borders in the top 10 border sets of each repetition. The resulting frequencies are plotted in blue. Border-location estimates from the Invariant Border Experiment are plotted in the graph and on the hue spectrum in dotted black vertical lines for comparison. Running the algorithm 12 times results in 120 solutions with 7 borders each. The 7 borders are ordered from left to right and then, from the 120 solutions we take the median border for the 1st through 7th border. We have plotted these medians as points, including a horizontal errorbar that indicates a standard deviation to visualize the variability of these values. As can be seen, the estimate for each column closely agrees to the estimate from the invariant border experiment.\n\n### Mixed color stimuli\n\nThe converging results from the above experiments provide a strong indication that the network represents colors categorically. Still, the stimuli used above deviate considerably from the ImageNet database. We, therefore, wanted to ensure that the estimated borders are directly connected to how the network treats color. We proceed by investigating to what extent the borders generalize to tasks more similar to the one that the network was originally trained on. Here, in a first step, we introduce more complex stimuli that are comprised of multiple, colored, words on a randomly colored background to introduce contrast variations (see Figure 6A). Specifically, stimuli were comprised of three words colored based on the training specifications, as well as two additional words that were colored randomly. Finally, the background color is also randomly selected from the hue spectrum, however, at a lower brightness to ensure that there is sufficient contrast between words and background. The task of the network is to classify the stimuli based on the three correspondingly colored words. The colors of the distractor words as well as the background have no predictive value and should be ignored by the network.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76472/elife-76472-fig6-v2.jpg)\n\n**Figure 6.:** (A) 7 example stimuli, each sampled from a different color band. Each stimulus consists of three equally colored (target) words of which the color is determined by the selected class. Subsequently, two randomly colored (distractor) words were drawn on top. All words are randomly positioned in the image. Finally, the background for each image is chosen randomly from the hue spectrum, but with a reduced brightness of 50%. (B) Error proportion as a function of hue. Separate output layers have been trained on a set of 7 color bands that are shifted from the left to the right border in 10 steps for each category (with 15 repetitions per step). This means, that while one network is trained to classify words of colors sampled from a narrow range on the left side of each category, another network is trained to classify words of colors sampled from the right side of each category for each respective class. After training, the performance is evaluated using novel samples on the hue spectrum that match the color bands the network is trained on. Subsequently, the resulting error rate is displayed in the colored line by combining the performance for all the network instances (shaded grey region represents one standard deviation). The black dotted vertical lines indicate the category bounds found in the original Invariant Border Experiment. In this manner, we can see the error rate typically increases as it approaches a border.\n\nThe key question is not whether the network can perform this task, but whether the categories obtained above are meaningful in light of more complex color images. Therefore, we trained new classifiers while iteratively shifting training bands from left to right within each category (in 10 steps). This allows us to evaluate performance as a function of the training band positions within the category. Two possible outcomes can be distinguished: On the one hand it is possible that for such complex stimuli the network deviates from the obtained categories and performance does not depend on where we select our training bands in the category. Alternatively, if the system can benefit from the categorical coding of color, we expect performance to be highest (and the error rate to be lowest) at the center of the categories, while the error rate should peak when the training bands align with the borders of the categories. In Figure 6B, we see that this latter categorical approach is indeed what the network relies on: Overall, the network is able to perform the task reasonably well, but error rates are lowest toward the category centers, while increasing towards the borders. As in the experiments above, there is a slight divergence at border between green and turquoise.\n\n### Recognizing colored objects\n\nThe previous experiment extends our finding to more complex color stimuli. We chose word-stimuli because they are made up of a rich set of patterns with many orientations. One notable element missing in these word stimuli are the large surface areas that are typically found in objects. In this experiment, we investigated whether the previously found categorical borders still guide classification when classifying objects that incorporate large uniform areas. For generating objects with larger uniformly colored areas, we rely on the Google Doodle Dataset (Ha and Eck, 2017). This dataset includes thousands of examples of hand drawn objects gathered from individual users. Because each drawing in the dataset is stored as a series of vectors it lends itself well to redraw the lines and fill the resulting shape with a uniform color (we plot some examples in Figure 7A). To further evaluate the usage of color categories in object recognition of the CNN, we added one additional manipulation. So far, our experiments have aimed at looking on the reliance on color in isolation of potential other factors. However, with the introduction of objects of different shapes, a natural question is to what extent the network uses color or shape(s) to classify the objects? To obtain a better insight into the interaction between these components, we also raised the number of classes from 7 to 14. This allows us to evaluate whether the network simply ignores the color categories when they are not the sole source of discrimination, or can use them in combination with shape features.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76472/elife-76472-fig7-v2.jpg)\n\n**Figure 7.:** (A) Samples of the google doodle dataset as colored by our simple coloring algorithm. (B) Proportion correct as a function of hue. The 14 individual plots correspond to the 14 training bands that have been selected, 2 per category, one to the left of the category center, another to the right. The training bands are indicated by transparent rectangles on the spectrum, colored for the center of the band. The network\u2019s output layer is retrained 100 times, each time with a different permutation set of the 14 objects. For each permutation, we evaluate performance for each object, matching the training band. Per instance, 80 drawings of the respective object are filled with each color of the hue spectrum (over 100 steps) and proportion correct is averaged for each object over the hues. The colored lines represent the median performance on this evaluation (over the 100 iterations), with the hue of the line representing the color in which the object was evaluated. The shaded grey area indicates the standard deviation over the 100 repetitions.\n\nWe ran 100 iterations, for each selecting a random permutation of 14 objects and assigning them to the 14 constant training bands on the HSV hue spectrum (note that this results in 2 object classes per category). After training, the newly trained output layer is evaluated by taking examples of each of the 14 objects and filling them with colors from over the entire hue spectrum (again divided in 100 steps). In Figure 7B we plot the results for each of the 14 bands, separately. We observe that performance is consistently high within the category borders in which the training band falls, while in most cases there is a steep drop in performance outside of the category bounds. This means that on the one hand the network uses color to distinguish objects from those that are colored for different categories. At the same time, however, it appears that to discern two objects within a category, classification relies on the object shape. As such, the network appears to combine both color and shape information and, important to the current research question, the representation of color it relies on, closely follows the previously found category borders.\n\n## Discussion\n\nThe relation between cognitive concepts and language has sparked a lively debate (e.g. Casasanto, 2008). In this light, the potential relation between language and color categorization has been extensively researched as a prime example of categorical perception. A number of recent studies on color categorization have focused on the development of categories by explicitly modeling their shape utilizing communicative concepts. Here we have taken a different approach by evaluating whether color categorization could be a side effect of learning object recognition. Indeed, we find that color categorization is an emergent property of a Convolutional Neural Network (CNN) trained for object recognition. Notably, we show that the final layer of a ResNet-18, where objects are represented for classification, reveals a color representation where colors are organized in categories similar to those of humans. In contrast, the representation of color in a ResNet-18 trained to classify scenes (distinguishing man-made from natural) does not follow the hue spectrum and deviates considerably from the human categorical organization. The fact that task modulates the color representation in the final layer of the CNN, where objects are represented, suggests an important connection between object recognition and color categorization.\n\nImportantly, our findings are in line with most of the previous research on color categorization. First, the notion that color categories arise based on an interplay between the distribution of colors in the visual world and basic visual tasks is in line with the notion that the emergence of color categories over cultures broadly follows a universal pattern. However, given that the current study does not directly test this assumption we should emphasize that we can only conclude that the current results do not conflict with the notion that categories emerge similarly over cultures during the forming of the visual system. Second, the findings are in line with the notion that color categorization emerges in pre-linguistic infants and animals. Third, the findings are in line with recent reports showing a dissociation between color naming and color categorization. Fourth, while many of recent studies highlight how communicative concepts can be used to model category shapes, this correlates strongly with the utility of colors regarding objects. As such, the predictive power of these models may not rely on communication about colors per se, but on taking into account the varying utility over colors. Therefore, it is likely that the implicit incorporation of color patterns useful during object recognition leads to a categorical representation of color in the object representation of the CNN.\n\nThe discussion on the genesis of color categorization has a long history, with, for instance, Gladstone already noting the deviating use of color terms in the Homeric poems where the sky is referred to by many analogies (e.g. copper, iron, starry), but never blue (see section 4 of Gladstone, 1858). Or the suggestion that color categorization is culturally dependent by Ray, 1952. The current scientific debate draws strongly on the seminal work by Berlin and Kay, 1969 who proposed that color categories across a wide range of languages could be described using 11 basic categories and advocated that one universal process guides the development of categories across cultures. While this hypothesis was initially based solely on visual inspection of collected categorization data, later, evidence was provided by demonstrating statistical regularities across cultures (Kay and Regier, 2003; Regier et al., 2005). The current findings are in line with the notion that the general development of categories is similar across languages: When we consider color categorization to be a side effect of acquiring basic visual skills (given relatively similar circumstances across the globe) color categories are expected to shape in a similar fashion throughout many cultures. Naturally, the current findings do not preclude the notion that categories develop differently in cultures. If categories emerge based on acquiring basic visual skills, we should also see local differences based on different color distribution in the objects important in cultures. An important next step to verify that there is any explanatory value to the current results, would be to gather datasets specific to different cultures and evaluate whether training networks on similar tasks leads to categories that align with the local culture.\n\nMeasuring the full hue circle in pre-linguistic infants, Skelton et al., 2017 found that their novelty preference was dependent on categorical crossings. As such it appears that some form of categorical representation develops early on. However, it is unclear whether these categories are the direct basis for categories in verbal communication. Four of the five categorical distinctions Skelton and colleagues found can be separated by the cardinal axis corresponding to the color representation in the retinogeniculate pathways, suggesting some of the categorical behavior may rely on the early representation of color (an issue pointed out by, e.g. Lindsey et al., 2010; Witzel and Gegenfurtner, 2013). Also, color naming develops much later and children that have not yet acquired color names make recognition errors based on perceptual difference (Roberson et al., 2004). Similarly, it is unclear whether categorical representations of color in animals resemble those in humans. Nevertheless, recent findings have shown, that, as in humans, the utility of color may play an important role for the categorical color representation in animals (Caves et al., 2018; Hanley et al., 2017). As such, while the nature of the categorical representations in pre-linguistic infants and animals is still somewhat unclear, the novel finding that a categorical perception emerges with the general acquisition of visual skills is in line with the recent findings. Moreover, it is likely that any pre-linguistic categorical behavior lays the basis for subsequent color naming.\n\nAs in animal studies, we relied on a match-to-sample task for studying color categories in a CNN. With this indirect approach, some limitations are similar to those in studies on animals. Importantly, however, there are also clear advantages to studying categorization in a CNN. We were able to repeat the match-to-sample task for a great number of training colors (without the risk of inducing a sequential bias over training sessions) allowing for better estimates. Moreover, verifying the border locations using the concept of categorical perception with an evolutionary algorithm is a computationally intensive task that cannot be straightforwardly applied to any living system, but is feasible for CNNs because of the speed at which an output layer can be retrained. Of course, compared to animal and infant models the CNN is the least convincing version of the adult human visual system. Nevertheless, an important benefit is that the access to activity of artificial neurons is complete and can be exploited in future research: While neural networks are often described as black boxes, compared to biological systems, artificial neural activity is much more accessible, as one can easily probe the activation of all neurons. With this kind of access, a logical next step is to investigate how the obtained categories are coded in the CNN. Coding of colors seems to become narrower and more variable beyond the LGN (as demonstrated in macaque studies by Conway et al., 2007; Kiper et al., 1997; Lennie et al., 1990) and colors belonging to the same category seem to be clustered together in human visual cortex (Brouwer and Heeger, 2013). Zaidi and Conway, 2019 suggested such narrowing may take place over areas (from V1 to IT) by combining earlier inputs (equivalent to a logical AND) or through clustering of local cells. CNNs can serve as a model for testing the viability of several of such concepts.\n\nWhere the terms color categorization and color naming are often used synonymously, the subtle distinction between them is key to the debate on the emergence of color categorization. From a strong universalist point of view, a color name is no more than a label applied to perceptually formed categories. From the relativist point of view, the direction is reversed and it is the existence of a color term that dictates the existence of the respective perceptual category (Jraissati, 2014). A recent case study shows a dissociation between color naming and categorization. Patient RDS is able to categorize colors, but his color naming ability is impaired (Siuda-Krzywicka et al., 2019; Siuda-Krzywicka et al., 2020). The dissociation between the two, favors a view where categorization is a process that can exist independently of linguistical labels. Interestingly, despite the problems in color naming, the link between objects and colors was preserved in RDS (Siuda-Krzywicka et al., 2019). While it is possible to argue that our CNN does communicate (as it assigns objects to a class), it is important to note that the CNN at no point is required to communicate about colors directly, but at best about objects. However, there is no exchange (back and forth) of information between multiple CNNs, rather a single CNN merely imparts information. Therefore, while the current findings could be viewed in terms of communication indirectly shaping color categories, they only show a very limited overlap with the hypotheses linking category formation and communication in current literature. As such, we argue that the most important part of the current finding is that it demonstrates a direct connection between the formation of color categories and learning to identify objects.\n\nThe fact that the current categorical representation appears to emerge in the absence of color naming emphasizes that explicit color naming is not a necessity for the development of categories. This may seem to stand in contrast to many of the recent studies that use communicative concepts as a means to model the shape of categories (Chaabouni et al., 2021; Twomey et al., 2021; Zaslavsky et al., 2020). However, many of those studies derive their predictive power from combining these concepts with the non-uniformities in the utility across colors. As such, the communicative concepts could merely be a means to incorporate the varying utility across colors. Previous studies have demonstrated that the utility of colors as they relate to objects is reflected in the notion that warmer colors are communicated more efficiently than cooler colors (Gibson et al., 2017), it has also been shown that objects are associated with warmer colors than backgrounds and that classifiers trained using only color information can distinguish animate from inanimate object at a performance level comparable to using shape features (Rosenthal et al., 2018). The latter emphasizes that the higher communicative need for warmer colors, likely stems from their prevalence in objects. While we do not argue the process is completely devoid from communicative factors, the current results can unify many previous findings by showing that acquiring a skill like object recognition can lead to the emergence of a categorical representation of color.\n\n## Methods\n\n### Invariant border Experiment\n\n#### Software architecture and stimuli\n\nThe experiment utilizes a ResNet-18 as provided in the models module from the torchvision package (Marcel and Rodriguez, 2010). The network is initialized with the pretrained option on: weights are set based on having been trained on ImageNet (Deng et al., 2009) a large database of human-labeled natural images. After initializing the network, we replace the output layer (that performs the object classification) with a smaller output layer with anywhere from 4 to 9 output nodes. The weights to this novel (replacement) classification layer are randomly initialized.\n\nStimulus images are generated using the Pillow package (Clark, 2015). Image size is the same as that used for the original ImageNet training (224x224 pixels). Each image contains the word \u2018color\u2019 randomly positioned on a mid-grey background (font size 40, approximately 100 by 25 pixels, depending on font type). The color of the word is randomly (uniform) selected from the bands on the hue spectrum in HSV space. Color bands representing the individual classes are uniformly distributed over the hue space (see Figure 1A for stimuli sampled from example bands in Figure 1B). Brightness and saturation are set to the maximum level. The HSV color for each pixel is converted to its equivalent in RGB space as the network has been trained using three input channels for red, green and blue, respectively. The font of the word is selected from 5 different fonts. Stimuli are normalized using the same parameters across all images (the same values as used for the original normalization of ImageNet images). Note that this normalization is purely done to have a range with 0 mid-point, making the numerical computation more stable and should not affect the colors as the channels are independently fed to the network and multiplied by learned parameters.\n\nFor the scene-task, where natural scenes are distinguished from artificial scenes, we used the classification in the subclass of ImageNet that distinguishes natural from artificial scenes. Otherwise, the analysis was the same as for the object-trained network.\n\n#### Procedure\n\nFor each number of output nodes (4 through 9), we instantiate the network 150 times, replace their output layers and train each on a slightly shifted set of training bands. The combined width of the training bands equals 20% of the total hue range. During network training we only allow the weights of the new classification layer to be updated, the weights of all preceding layers remain as they were trained on ImageNet. Because we cannot determine the number of potential color categories a-priori, we vary the number of output classes from 4 through 9. This results in training a newly initialized output layer for 150 (band shifts) times 6 (4 through 9 output classes) networks, making for a total of 900 training sessions. 500 samples are provided for each class and the network is trained for 5 epochs. During the training, we keep track of the best network using 50 separate validation samples per class (from the same training bands). After training the network to classify the colors from the training bands, each network is evaluated over the whole hue spectrum by providing the network with 60 samples for each step on the HSV hue spectrum (divided into 100 steps). This results in 6000 classified samples for each of the 900 trained networks.\n\n#### Analysis\n\nThe 6000 test samples for each trained output layer are used to determine the border crossings. In Figure 1C we plot the classification of these 6000 samples for a single training iteration. To determine the best prediction, for each step on the hue spectrum (each column in Figure 1C), we take the mode. In this manner, we transition to a one-dimensional representation of the network\u2019s performance on the evaluation task, with the prediction for each hue. Importantly, this one-dimensional representation, as plotted in Figure 1D, is used to determine the border crossings: for each network we determine the borders by simply picking the transition between predicted classes. Finally, we sum all the borders and from this we use a simple straightforward peak detection algorithm (findpeaks from the scipy.signal library) to find the locations on the spectrum where the borders are most invariant to change. To determine how \u2018categorical\u2019 the found border invariances are, we determine the maximum cross-correlation for each row compared to every other row, by shifting one of the rows and finding the optimal shift by looking for the maximum cross-correlation. To ensure the circular nature of the hue is preserved, hues are converted to 2D locations on a unit circle and a 2D cross-correlation is run for the x and y coordinates. By obtaining the shift for each row compared to all other rows, we obtain a distribution of shifts, that can be compared to distributions representing a categorical result and continuous color result. The former is generated by training a ResNet-18 (from scratch, i.e. initialized with random weights and allowing for the parameters of all layers to be updated) on the currently obtained categories and, subsequently, evaluating it in the same manner as we evaluated the ResNet-18 trained on ImageNet. The latter distribution is determined by calculating the optimal shifts for the case where the borders between colors move in parallel to the shifting bands.\n\n### Human psychophysics\n\n#### Observers\n\nTen observers were included in the experiment (of which 5 male and 5 female) with an average age of 32.1 (SD: 4.3). Two of the observers are also authors (JV and AA). Informed consent was obtained from all observers prior to the experiment. All procedures were approved by the local ethics committee at Giessen University (LEK 2021\u20130033).\n\n#### Stimulus and apparatus\n\nStimuli consist of one central colored ring accompanied by 7 colored, peripheral, disks placed on an imaginary half circle around the central circle (see Figure 4A for an example stimulus). The central ring color is selected from the hue spectrum of the HSV color space divided in 35 steps. The peripheral ring colors are also selected from the HSV hue spectrum in a manner consistent with the original Invariant Border Experiment, meaning that 7 equidistant hues are selected for each trial and they are shifted in 35 steps around the hue spectrum. The experiment is performed on an iPad (9 of 10 observers performed the experiment on the same ipad). A strict distance (eyes-to-center-screen) is not controlled, however, at a typical operating distance of ~50 cm, the eccentricity of the peripheral disks is 5.6 degrees and their diameter approximates 1.8 degrees. The center disk is 2.8 degrees in diameter at the typical operating distance.\n\n#### Procedure\n\nStarting the experiment each observer gets to select their preferred iPad orientation (landscape or portrait) to perform the experiment in. The observer is bound to performing the whole experiment in this orientation (changing the orientation of the iPad results in the experiment being paused with a warning). To ensure the observer has ample time to observe all options and avoid choices being influenced by transient or salient effects, the 7 colored peripheral choices are presented throughout the entire trial. With the 7 colored peripheral choices, the observer is presented with a central white circle. Upon placing the finger on this circle, it shrinks to disappearance (over 150ms) after which it is replaced with the ring in the target color. Upon the color change, the observer is tasked to select the peripheral disk that is most similar in color. The observer selects a peripheral disk simply by tapping it with her/his finger. Once the selection has taken place the trial is completed and the peripheral disks change color while being shuffled into novel locations in preparation of the next trial and the central circle reverts to white. For each trial, the disks (with respect of the midpoint) are rotated either slightly clockwise or counterclockwise (15 degrees) to reduce the overlap of the disks between trials. Observers are told to perform the trials in a speedy manner, but aim to maintain a high accuracy (in accordance with their own perception, as there are no predetermined correct responses) over the trials. In total, each observer completes 1225 trials (35 hue target variations x 35 shifts in the peripheral disk hues). To ensure finger fatigue does not negatively affect the results, observers are free to pause the experiment at any point and return to it later.\n\n#### Statistical analysis\n\nTo ensure the transition count over observers, as presented in Figure 4C, is reliable we constructed a statistical test utilizing bootstrapping. Specifically, we created a null-distribution of uncorrelated observers by generating bootstrapped datasets where the observers\u2019 transition counts were randomly shifted. This null-distribution is then used to compare with the observed correlation in our original observers.\n\nTo estimate the number of observers required for this analysis, we used data obtained from the different architectures analyzed (see Appendix 8). From this data, we created two bootstrapped distributions: One null-distribution where the transition counts in the bootstrapped datasets are randomly shifted (as above) and one without random shifts, to obtain a distribution for correlated observers. This demonstrated that with 6 network \u2018observers\u2019, the probability of obtaining a non-significant was already less than 5%. However, to air on the side of caution and allow for potential follow-up analyses we decided to recruit 10 observers.\n\n### Evolutionary experiment\n\nFor this experiment we initialize 100 sets of 7 borders, each ordered from left to right (each representing a point-position on the hue spectrum). For each border-set the ResNet-18 pre-trained on ImageNet is initiated and again the final fully connected layer is replaced. The stimuli for training the networks are generated via the same procedure as described in the Invariant Border Experiment, but now the hues for each class are selected from two narrow bands just inside of each set of neighboring borders (see Figure 8). Both band positions, as well as width, are relative to the two adjacent borders; The band starts slightly inside the border (with the closest edge located 5% from the border) and the band width is set to 10% of the total distance between the borders. We use two narrow bands at the ends of the potential category as this will mean that when the borders cross a categorical boundary the network will have to learn to generalize colors from different categories to single classes, while if the borders are located optimally, the 2 bands for each class will stem from 1 category each. We judge the fitness of a border set by evaluating how fast the network can learn the classes defined by the bands on the inside of two adjacent borders. Therefore, each network is trained for 3 epochs only, which is insufficient to reach peak performance, but allows us to evaluate which border set best fits the color representation of our ResNet-18: Border sets that align with the color representation of the network should allow the network to reach a higher performance quicker.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/76472/elife-76472-fig8-v2.jpg)\n\n**Figure 8.:** Each space in between two adjacent borders represents a class. Colors for the training samples for, for example, Class 1 are randomly selected from one of the two bands, LB1 (Left Band for Class 1) and RB1 (Right Band for Class 1), on the inside of the borders of the class. Each of the two bands (not drawn to scale) comprises 10% of the space between neighboring borders; for class C1 this is the distance between first dotted vertical line (B1) and the second dotted vertical line (B2). Note that this means that the bands for class C3 for example are thinner than for Class 1. To ensure the training bands do not overlap at the borders, there is a gap (comprising 5% of the category space) between the border and the start of the band.\n\nAfter training the 100 networks, the border sets are sorted by the performance of their respective network. Note that while we base the ordering on the performance of the network, the network is assumed a constant factor and the performance is attributed to the border set that is used to generate the training set; Essentially the network (trained on only 3 epochs) is the fitness function for the border sets. Once the fitness of each border representation has been established, the sets can be ordered by fitness and we generate a new generation of border sets. Firstly, through the principle of elitism, the top 10 performers of the current generation are copied directly into the next generation. Additionally, a novel 90 border sets that are created by recombining border sets from the current generation. Specifically, to create a new set, we select two parent border sets and, first, combine any borders that occupy similar positions across the two sets: This is done by averaging borders that are less than 5% apart between the sets (we start by combining the closest borders and the threshold is lowered when many borders are within a 5% range). Secondly, from the resulting borders, 7 are randomly selected to create a new border set. In order to converge to the optimal border-set, the selection of the two parent sets is biased towards the better performing border instantiations in the current generation as follows: 55% of the parents are selected from the 25 best performing border sets; 30% from the next 25 sets; and 15% of the borders are selected from the 25 sets thereafter. The bottom 25 border sets (in terms of performance) do not participate in the creation of offspring. To ensure some exploration occurs, in the offspring, some borders are randomly shifted. Specifically, we randomly select 2.5% of all borders and randomly shift them (random shift is normally distributed with an SD of 2.5% of the hue spectrum). The whole process is repeated 40 times. To allow for convergence after 30 generations random mutation is switched off.\n\n### Multi-color Experiment\n\n#### Software architecture and stimulus\n\nAgain, the same ResNet-18 trained on ImageNet is used as in the previous experiments. In the current version, the output layer is replaced by one with 7 output classes, each matching a category. The stimuli were designed to include 2 factors that were absent previously. Firstly, we introduce multiple, colored elements in a single stimulus: Each stimulus class is still defined by a narrow color band on the hue spectrum, but we now draw 3 words into a 224-by-224 pixel image (we will refer to these as the target words). On top of that we add two additional words to the image of which the color is randomly selected from the hue spectrum (we will refer to these as the distractors). All words are colored using the HSV hue spectrum at maximum brightness and saturation. Secondly, we introduce variations in color contrast. For the categorical borders to be meaningful in classifying stimuli, their utility should not be overly dependent on color contrast (whether a banana is sitting on a green or a brown table, the network should still be able to use yellow to identify the banana). Therefore, we introduce a variation in color contrast by randomly selecting the color of the background from the hue spectrum. To prevent words from blending into the background, we set the brightness of the background to 50%. Stimulus examples can be found in Figure 6A.\n\n#### Procedure\n\nEach network is trained on 7 classes divided in 7 color bands, based on the borders found in the Invariant Border Experiment. The bands, making up 10% of each category range, are shifted from the left category border to the right border in 10 steps, for each step a novel classifier is trained 15 times to obtain a reliable average. After being trained we evaluate performance for each network: The error rate for the color bands which the network was trained on is obtained by evaluating it for the ticks on the hue spectrum that fall in that range. Subsequently, we plot the error rates for the all networks as a single-colored line (see Figure 6B), to demonstrate how performance varies, depending on training bands.\n\n### Objects Experiment\n\n#### Software architecture and stimulus\n\nStimuli are generated using the line drawings available from the google doodle dataset (Ha and Eck, 2017). The database contains hundreds of objects; we selected a subset based on two criteria. First, we selected objects that lend themselves to a simple color filling algorithm. This mainly consisted of finding objects that had clear outer borders with large spaces on the inside. Secondly, we prioritized objects that were reasonably consistent with regard to shape. The drawings are created by many different users, and, therefore, the approach could vary significantly. For instance, a user could have chosen to just draw only a cat\u2019s head prominently or include its entire body. Of course, such variations are not unlike the variation encountered in the images the network has originally been trained on. However, we are only retraining the classification layer of the network. The latter means that the network has to rely on previously trained kernels to classify the shape, and a high degree of variation may not be easy to represent when only adapting the input weights to the last layer.\n\nThe drawing of the stimuli follows a simple procedure. Based on the drawn lines we create a color mask. This mask is created by determining, for each pixel in the image, whether it is \u2018enclosed\u2019 by drawn lines. Enclosed, here, is defined by having a drawn line to its left (not necessarily directly adjacent), a drawn line above it, to its right and below it. After the colored area is filled, we draw, on top of it, the drawn lines at a thickness of 4 pixels. Example results of the process can be found in Figure 7A.\n\n#### Procedure\n\nThe network is trained to classify a set of 14 objects (strawberry, apple, crab, dog, school bus, cow, dolphin, mushroom, bird, submarine, angel, sweater, sailboat, duck). For the training of each network, we selected 500 samples for each object from the google doodle dataset. We also selected another 50 samples per object to obtain a validation set to monitor the performance of the network throughout training. The fill color for all of these objects is randomly (uniformly) selected from narrow bands on the hue spectrum. Bands are selected to be non-overlapping and having 2 bands per category, one positioned right of the category center and the other left (each takes up 1/5 of the category bounds, one in the center of the right half and one in the center of the left half of the category). This results in 14 bands that are not exactly evenly spaced, or uniformly distributed throughout the spectrum. The bands can be observed in Figure 7B. To obtain a reliable estimate of performance on this task and to minimize the effects of the specific object selection we run the experiment 100 times, each with a different permutation of the object set with respect to the 14 color bands.\n\nAfter having trained the new classification layer of the network on the 14 objects assigned to the color bands, 80 different drawings for each object class are used to evaluate the network. Systematically changing the color of each of these 80 drawings over the hue spectrum divided in 100 steps creates 8000 colored samples, that allow us to evaluate to what extent the object is classified based on its color compared to its shape. Repeating this process for the 14 trained objects (assigned to the respective color band on each iteration) allows us to evaluate to what extent color was used to define the object class.\n",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "32c4659f-dbc9-47c3-990b-79a4ce989eed",
+      "submission_id": "3b75656d-3e02-4c0c-8a3c-c923f72d3385",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hang Zhang, https://ror.org/02v51f717 Peking University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76472.sa0](https://doi.org/10.7554/eLife.76472.sa0)\n\nThis paper addresses the long-standing problem of color categorization and the forces that bring it about, which can be potentially interesting to researchers in cognition, visual neuroscience, society, and culture. In particular, the authors show that as a \"model organism\", a Convolutional Neural Network (CNN) trained with the human-labelled image dataset ImageNet for object recognition can represent color categories. The finding reveals important features of deep neural networks in color processing and can also guide future theoretical and empirical work in high-level color vision.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Hang Zhang, https://ror.org/02v51f717 Peking University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76472.sa1](https://doi.org/10.7554/eLife.76472.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Color categories emerge in object learning\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tirin Moore as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Bevil Conway (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBelow is a list of revisions that we think are essential:\n\n1) The authors need to experiment with other network architectures and different image datasets to show WHY and under WHAT circumstances color categorization may emerge or not emerge from a pre-trained network. Each of the three reviewers has offered some specific suggestions on how to do this. Please see their comments for details.\n\n2) The authors need to show how their modeling results agree with existing psychophysical or physiological data of humans and animals. Otherwise, the biological relevance of the work might be limited. Please see Reviewer 3's comments for details.\n\n3) Regarding the theoretical implications of their work, the authors are recommended to provide a more thorough discussion of the relationship of their findings with previous theories for color categorization and weaken claims such as \"categories can emerge independent of language development\". Please see Reviewers 1's and 3's comments.\n\nReviewer #2 (Recommendations for the authors):\n\nHere are some of my suggestions:\n\nThey already apply k-means analysis on the image's pixels to show that there exist a few color clusters. But the clusters only match the revealed color category in other experiments partially. So they can also apply the similar k-means analysis of the units' responses in different layers of CNN to see how the color categorical information develops from layer to layer.\n\nIf the color categorical information emerges from the usefulness of object recognition, it might be interesting to see similar experiments with two other kinds of CNN as control:\n\n1) Untrained CNN 2) CNN trained with images of which color information is not useful for object recognition. Recently, a few studies suggest that the untrained CNN can do face detection tasks (Baek et al., 2021) or do the enumeration task (Kim et al., 2021). Whether the color categorical perception can emerge from an untrained CNN will be very interesting. Also, if we really want to nail down the relationship between color categorical perception and object recognition, they might want to remove the relation between the color information and the object information. If a CNN is trained with these kinds of stimuli, can the similar color category emerge?\n\nThe paper lacks a direct comparison between the CNN and human subjects. The revealed color categories in CNN in the paper seem to be very reliable. Would these categories be similar to those observed in previous human behavior studies? If they were the same, that would strengthen the claim of the paper; if they were not, what are the possible reasons that would explain the difference?\n\nReviewer #3 (Recommendations for the authors):\n\nThe paper at this stage is a modeling paper without any human psychophysics. What we learned is behavior of a CNN. To my understanding, the only connection to humans is that the image dataset is labeled by humans. There are no comparisons to human psychophysics. To support the connection between the model results and human color categorization, especially the role of language and development in animal and human color categorization, the authors need to do more perceptual experiments or model previous empirical results from human vision. Otherwise, I suggest the authors remove some of these discussions and focus on the findings that color categorization might emerge through learning to classify objects. Perhaps, to strengthen the paper, an alternative model should be proposed (e.g. network trained NOT on a broad object dataset might NOT represent color categories) or results from an alternative CNN architecture other than ResNET.\n",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cad65083-c3f4-4d8a-9c05-d3fb14d961ce",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C1",
+      "claim": "Prelinguistic infants treat color categorically.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, prelinguistic infants and several animals treat color categorically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature on infant color perception.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "f6ad0871-55ab-48ce-8c6e-1b92b39b0a4d",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C2",
+      "claim": "Several animals treat color categorically.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, prelinguistic infants and several animals treat color categorically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature on animal color perception.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "4f0bbf1a-0828-419a-a57f-50fa31d7f625",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C3",
+      "claim": "Recent modeling endeavors have successfully utilized communicative concepts as the driving force for color categories.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, recent modeling endeavors have successfully utilized communicative concepts as the driving force for color categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to recent modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "3a508f6f-4fa4-46ba-9b41-3462663a9bed",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C4",
+      "claim": "Color is represented categorically in a convolutional neural network (CNN) trained to recognize objects in natural images.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we asked whether color is represented categorically in a convolutional neural network (CNN) trained to recognize objects in natural images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary research question investigated through experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "bf8f8e71-317e-4661-b418-87ab5cdb5789",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C5",
+      "claim": "Borders in the CNN's color representation are largely invariant to the training colors.",
+      "claim_type": "EXPLICIT",
+      "source": "We systematically trained new output layers to the CNN for a color classification task and, probing novel colors, found borders that are largely invariant to the training colors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the border invariance experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c76d7103-6316-4ef3-ad6b-46e22dab77ab",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C6",
+      "claim": "Border locations were confirmed using an evolutionary algorithm that relies on the principle of categorical perception.",
+      "claim_type": "EXPLICIT",
+      "source": "The border locations were confirmed using an evolutionary algorithm that relies on the principle of categorical perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the evolutionary algorithm experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c19bd3e8-224b-4c5d-a1f1-0d317b7118b3",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C7",
+      "claim": "The CNN borders agree to a large degree with human category boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "A psychophysical experiment on human observers, analogous to our primary CNN experiment, shows that the borders agree to a large degree with human category boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the human psychophysics experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "ee433833-19d3-4a62-8539-eb7a2b39acff",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C8",
+      "claim": "The development of basic visual skills can contribute to the emergence of a categorical representation of color.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide evidence that the development of basic visual skills can contribute to the emergence of a categorical representation of color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing categorical color representation in object-trained CNNs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "780d9966-a646-4741-b177-2a4aa7add289",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C9",
+      "claim": "Color vision is a prime example of categorical perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Color vision is a prime example of categorical perception, and, as such, has received considerable attention across several research domains (Harnad, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "59835e44-c316-47ab-88d1-028b1d3781ad",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C10",
+      "claim": "Pre-linguistic infants pay more attention to color changes crossing categorical borders than color changes within categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-linguistic infants pay more attention to color changes crossing categorical borders than color changes within categories (Skelton et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Skelton et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "7caebf07-dd22-4580-8f5a-84f64762e663",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C11",
+      "claim": "Several animal species respond to color categorically.",
+      "claim_type": "EXPLICIT",
+      "source": "several animal species respond to color categorically (Caves et al., 2018; Jones et al., 2001; Poralla and Neumeyer, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to animal studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "fc8bd7a7-2c1b-4823-9a67-74b7e6e549ff",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C12",
+      "claim": "Children have difficulty acquiring color names.",
+      "claim_type": "EXPLICIT",
+      "source": "Relativists (Davidoff, 2001), however, point toward the difficulty children have acquiring color names (Roberson et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roberson et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "575a8a42-4aa0-40aa-afbc-f6e5732a9288",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C13",
+      "claim": "A patient whose language impairments were associated with color sorting problems has been documented.",
+      "claim_type": "EXPLICIT",
+      "source": "the case of a patient whose language impairments were associated with color sorting problems (Roberson et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roberson et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "d00528e4-684c-4d7b-bc7b-ed25545466e8",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C14",
+      "claim": "Researchers have failed to find categorization in some primates (e.g. baboons).",
+      "claim_type": "EXPLICIT",
+      "source": "researchers have failed to find categorization in some primates (e.g. baboons) and it has been argued that the methodology of other primate studies was biased toward finding categorical results (Fagot et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fagot et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "e2a8f94b-fa26-46c9-9de7-8a85ec4afd50",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C15",
+      "claim": "Warm colors are communicated more efficiently than cool colors.",
+      "claim_type": "EXPLICIT",
+      "source": "One seminal study shows that warm colors are communicated more efficiently than cool colors (overall) and, importantly, that at the cultural level categorical differences between languages are the result of differences in usefulness of color (Gibson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gibson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "4893f810-9509-41b6-b532-0d9754dde64e",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C16",
+      "claim": "At the cultural level categorical differences between languages are the result of differences in usefulness of color.",
+      "claim_type": "EXPLICIT",
+      "source": "One seminal study shows that warm colors are communicated more efficiently than cool colors (overall) and, importantly, that at the cultural level categorical differences between languages are the result of differences in usefulness of color (Gibson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gibson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "f0fbc72d-d73d-4b09-8a8f-14c242118108",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C17",
+      "claim": "Utilizing a perceptually uniform color space in combination with concepts from communication theory can be powerful in modeling the shape of color categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent papers have demonstrated that utilizing a perceptually uniform color space in combination with concepts from communication theory, such as an information bottleneck (Zaslavsky et al., 2018) or rate distortion (Twomey et al., 2021) can be powerful in modeling the shape of color categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zaslavsky et al., 2018 and Twomey et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "10735ff2-c8fa-4b70-b0d9-0d3f27c595f8",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C18",
+      "claim": "Allowing continuous message passing in communicating deep neural networks made the emergent system more complex and decreased its efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a recent study, where communicating deep neural networks played a discrimination game, demonstrated that allowing continuous message passing made the emergent system more complex and decreased its efficiency (Chaabouni et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chaabouni et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "2fe0ce6e-5983-480e-b26f-be6b03c7e2cb",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C19",
+      "claim": "Color naming can be impaired while color categorization remains intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, a recent case study shows that color naming can be impaired while color categorization remains intact, emphasizing that in humans the link between communication and categorization can be decoupled (Siuda-Krzywicka et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Siuda-Krzywicka et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "f74a748d-a459-4ec7-8474-b73d16bdfe0a",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C20",
+      "claim": "Host birds rely on a single-threshold decision rule in rejecting parasite eggs rather than the dissimilarity in color to their own eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "Host birds rely on a single-threshold decision rule in rejecting parasite eggs rather than the dissimilarity in color to their own eggs (Hanley et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hanley et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "d188a5ce-d6c3-45ed-93de-5a5b2f5c9892",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C21",
+      "claim": "Female zebra finches categorically perceive the orange to red spectrum of male beak color.",
+      "claim_type": "EXPLICIT",
+      "source": "female zebra finches categorically perceive the orange to red spectrum of male beak color (Caves et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Caves et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "db10804d-371e-422c-8617-2194cd54e7e6",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C22",
+      "claim": "A CNN trained for object recognition develops a categorical representation of color at the level where objects are represented for classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings show that a CNN trained for object recognition develops a categorical representation of color at the level where objects are represented for classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "91f6f629-2595-4817-b1cc-8a2437b3bdb6",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C23",
+      "claim": "Pigeons were trained to match colors to one of three main color samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Pigeons, for example, were trained to match colors to one of three main color samples (Wright and Cumming, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wright and Cumming, 1971.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "afced90b-acc3-4e07-a9d6-c802d82ab28c",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C24",
+      "claim": "Crossover points in pigeon color matching were similar across experiments with different training colors, indicating categorical perception of color.",
+      "claim_type": "EXPLICIT",
+      "source": "When they repeated the experiment with different training colors, they found crossover points to be similar across experiments, indicating a categorical perception of color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the citation to Wright and Cumming, 1971.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "81d069bb-a347-4fc8-ad4f-1201857d41c1",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C25",
+      "claim": "A ResNet-18 CNN trained on the ImageNet dataset was used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use a similar approach to evaluate the color representation of a ResNet-18 CNN (He et al., 2016) that has been trained on the ImageNet dataset, where objects in natural images have to be classified (Deng et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "9135ce27-e2ab-4dd4-b9bf-56138966316a",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C26",
+      "claim": "Colors from outside of the training bands are largely classified to the neighboring bands in a consistent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1C, colors from outside of the training bands are largely classified to the neighboring bands in a consistent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "cd11ae35-13c5-406f-913e-47443e1f5509",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C27",
+      "claim": "The borders between categories appear largely invariant to shifts in training bands.",
+      "claim_type": "EXPLICIT",
+      "source": "As the training bands are gradually shifted (indicated by the black lines) we observe that the borders between categories appear largely invariant to these shifts in training bands.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "2e8872c5-c775-4ae0-b067-977698824f23",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C28",
+      "claim": "There are about 7\u20138 discontinuities in the hue circle based on the transition count.",
+      "claim_type": "EXPLICIT",
+      "source": "As those results are collapsed, inspecting the transition count shows that there are about 7\u20138 discontinuities in the hue circle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of the transition count data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "30f310ee-c12e-43f6-8deb-bd3f9626c69d",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C29",
+      "claim": "7 peaks are found using a basic peak detection algorithm on the transition count.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a basic peak detection algorithm that relies on neighboring data points to find peaks, 7 peaks are found (red dots in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "77ef018c-4914-4e70-b0d8-2623f35f721b",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C30",
+      "claim": "Similar architectures produce similar border locations.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure the latter is not the case, we have rerun the same experiment using the same and similar architectures (notably a ResNet-34, ResNet-50 and ResNet-101; see Appendix 1: Network Repetitions). In Appendix 1\u2014figure 1 one can see, that given a similar architecture, similar border locations are obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from additional experiments in the appendix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "1def5ca3-c2e9-4e86-98e8-50eac470d75b",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C31",
+      "claim": "The distribution of shifts in the CNN data more closely matches the categorical simulation than the continuous simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The histogram plotted in light blue shows the actual data, which more closely follow the green line, representing the categorical simulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "d5b734cc-0957-4f5e-966f-9fdef832374f",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C32",
+      "claim": "A Fisher's Exact Test shows the difference between the count distribution is significant for all comparisons (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "A Fisher's Exact Test shows the difference between the count distribution is significant for all comparisons (p<0.0001; both pairwise and three-way).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "395d9982-0de8-47ec-81bf-b62250a2c285",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C33",
+      "claim": "The overlap between the current data and the shifting simulation is much smaller than with the categorical simulation (48% vs 74%).",
+      "claim_type": "EXPLICIT",
+      "source": "Even though all comparisons were significant, it is important to note that the overlap between the current data and the shifting simulation is much smaller than with the categorical simulation (48% vs 74%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "fb458d3d-6bd2-4252-8bdd-39b743c9d17a",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C34",
+      "claim": "The HSV color space at full saturation and brightness is represented by the edges of the RGB color cube.",
+      "claim_type": "EXPLICIT",
+      "source": "We have elected to use the hue spectrum from the HSV color space at full saturation and brightness, which is represented by the edges of the RGB color cube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of color space transformations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "be188551-4617-484a-a54d-a59be1a95214",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C35",
+      "claim": "Varying the hue in the HSV space changes both the color and luminance of the word stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Varying the hue in the HSV space, however, does not only change the color of the word stimuli, but also their luminance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of HSV color space properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "da892db7-1996-4cb1-bc11-c936a7ffe865",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C36",
+      "claim": "The current borders do not stem from a spurious correlation between color and luminance.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure the current borders do not stem from a spurious correlation between color and luminance, we have rerun the current experiment with different stimuli that include luminance distractors and a variable background luminance (see Appendix 3: Luminance Variation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by additional experimental data in the appendix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "a5b84685-bd30-4121-b85d-8687f7e4fe48",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C37",
+      "claim": "The only difference between orange and brown is relative luminance.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the only difference between orange and brown is relative luminance (see for instance: Figure 1B in Lindsey and Brown, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lindsey and Brown, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "ab3a77a3-6a3d-402a-9848-97a5e87e1fc9",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C38",
+      "claim": "The categorical color representation is present in the final layer of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "However, what we believe makes the current finding particularly interesting is that the current results stem from a network trained for object recognition and, importantly, we find the categorical color representation in the final layer of the network (the network's representation that enables object classification).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental design and results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "e5396f70-4c22-45de-8dc4-6cbd0b0996a2",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C39",
+      "claim": "The categorical color representation is beneficial to the object classification task.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that this categorical color representation is beneficial to the object classification task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that the representation is in the final layer.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "2d63911a-cd0a-4cb9-9f73-bcbb6ede194e",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C40",
+      "claim": "A ResNet-18 trained to distinguish natural from man-made scenes does not show a categorical representation of color that follows the hue spectrum in a human-like manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The color representation for the latter ResNet-18 is not one that dissects the hue spectrum in human-like categories.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c25c973e-a7b4-4c72-910e-553873ecdc5f",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C41",
+      "claim": "The color representation of the object-trained network is considerably closer to human expectations than the scene-trained network.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, it appears that the representation build for object recognition is considerably closer to what we expect from humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the two networks' color representations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "4ef3ab73-2552-45e8-8e9c-9396dd13bbe6",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C42",
+      "claim": "Ten human observers performed the match-to-sample experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten human observers performed an experiment where (centrally) presented color samples had to be matched to one of 7 peripheral colored disks (see Figure 4A for an example stimulus display).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the human experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "a43b057a-8817-4873-bd78-5e8349e0d109",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C43",
+      "claim": "Human observers show clear locations in the hue spectrum where borders occur regardless of the hues of the peripheral disks.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 4B, we see that much in the same way as in the previous experiment there are clear locations in the hue spectrum where borders occur regardless of the hues of the peripheral disks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "8044411a-2234-4369-b7c9-f45d86d2a418",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C44",
+      "claim": "Human categories are narrower in the red-yellow range, while the green region is the broadest.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, as with the neural network we find categories are narrower in the red-yellow range, while the green region is the broadest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from the human experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "47f792c4-7cd5-4098-a396-56fe7716c480",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C45",
+      "claim": "The CNN's color prototypes show a pattern that is highly analogous to human color prototypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the variance is also present in individual observers and observing Figure 4D where we have estimated the color prototypes for each human color category, shows a pattern that is highly analogous to the CNNs prototypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparing data in Figure 4D with Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "2bb22cf5-a0c5-4c42-91b4-035e8ba954db",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C46",
+      "claim": "The correlation of the transition count in human observers is significantly different to transition counts of bootstrapped observers (p<1 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure the border count in Figure 4C is reliable, we tested for significance by comparing the correlation among observers to a bootstrapped null-distribution (see methods section) and find the correlation of the transition count is significantly different to transition counts of bootstrapped observers for whom counts do not align (p<1 \u00d7 10\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the human data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "6c0bc1ad-fb5e-4e1c-b4ce-dd59819a95ed",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C47",
+      "claim": "In categorical perception, differences between colors within the same category are seen as smaller than differences between colors from different categories.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate whether the colors within the boundaries can indeed best be seen as belonging to categories, we turn to the concept of categorical perception, where differences between colors within the same category are seen as smaller than differences between colors from different categories (Goldstone and Hendrickson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Goldstone and Hendrickson, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "7fb7622c-cb1e-452b-a9e8-74f2a7f5a99a",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C48",
+      "claim": "It should be faster for the network to learn to generalize colors within two neighboring discontinuities to a specific class than to generalize colors crossing discontinuities.",
+      "claim_type": "EXPLICIT",
+      "source": "If the boundaries found in the Invariant Border Experiment indeed resemble categorical borders, it should be faster for the network to learn to generalize colors within two neighboring discontinuities to a specific class than to generalize colors crossing discontinuities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the principle of categorical perception.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "655265a1-386d-4a23-bbc6-00cd76e45b72",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C49",
+      "claim": "The evolutionary algorithm converges to a specific set of borders with little variation between the top ten performers.",
+      "claim_type": "EXPLICIT",
+      "source": "By allowing this process to run for some 40 generations, it converges to a specific set of borders with little variation between the top ten performers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from the evolutionary algorithm experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "4720ff97-a19f-4911-80ac-edcde95d604c",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C50",
+      "claim": "The evolutionary algorithm places borders that show strong correspondence with the previously found borders.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 shows where the evolutionary algorithm places the borders and we see a strong correspondence with the previously found borders (indicated by black vertical dotted lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "d8b59d03-7258-4156-9f4a-ce345f6bff6b",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C51",
+      "claim": "The only exception in border correspondence appears in the border between green and turquoise.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exception appears in the border between green and turquoise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from comparing the evolutionary algorithm results with the invariant border experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "ffe13624-cc60-4796-bc5d-d50b8f74acd7",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C52",
+      "claim": "The border between green and turquoise is also the region where the transition count did not show a sharp peak.",
+      "claim_type": "EXPLICIT",
+      "source": "However, note that this is also the region of color space where the transition count (as shown in Figure 2A) did not show a sharp peak, as was the case for most other borders.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "ea00fe26-4ecb-4de9-9f8e-48bdeeb84f11",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C53",
+      "claim": "The border between green and turquoise is where the largest variability is observed for human observers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this is also the border where the largest variability is observed for human observers (Hansen and Gegenfurtner, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hansen and Gegenfurtner, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "29076124-80db-4a2b-b567-c81331ba4872",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C54",
+      "claim": "Color categorization may be important to recognizing elements in our visual world.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that color categorization emerges in a CNN trained for object recognition underscores that color categorization may be important to recognizing elements in our visual world (Witzel and Gegenfurtner, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "fa441d53-bc8c-4626-9300-d86b759c77b4",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C55",
+      "claim": "Color categories emerging as a result of acquiring a basic visual task is in line with universal tendencies in the development of color categories across cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that color categories emerge as a result of acquiring a basic visual task such as object recognition is also in line with the finding of universal tendencies in the development of color categories across cultures (Kay and Regier, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the results and supported by citation to Kay and Regier, 2003.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "859a3e45-e2ba-440f-921c-a642cd7ac4e2",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C56",
+      "claim": "Efficiently representing the distribution of colors in the ImageNet database might, in part, explain the borders.",
+      "claim_type": "EXPLICIT",
+      "source": "Further exploring the origin of the borders, the results shown in Appendix 5: K-Means Clustering indicate that efficiently representing the distribution of colors in the ImageNet database we used might, in part, explain the borders, in line with earlier results by Yendrikhovskij, 2001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis in the appendix and citation to Yendrikhovskij, 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c2658ead-79ea-44db-a1bb-eeb65b8ca1ba",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C57",
+      "claim": "Error rates are lowest toward the category centers and increase towards the borders in the multi-color experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 6B, we see that this latter categorical approach is indeed what the network relies on: Overall, the network is able to perform the task reasonably well, but error rates are lowest toward the category centers, while increasing towards the borders.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "8a9d0e10-2518-44be-805d-2fd52fc1ccb7",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C58",
+      "claim": "Performance is consistently high within the category borders in which the training band falls in the objects experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 7B we plot the results for each of the 14 bands, separately. We observe that performance is consistently high within the category borders in which the training band falls, while in most cases there is a steep drop in performance outside of the category bounds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "bf09420d-7060-4eec-b8d7-92ddf02ba04c",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C59",
+      "claim": "The network uses color to distinguish objects from those that are colored for different categories.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that on the one hand the network uses color to distinguish objects from those that are colored for different categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in the objects experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "5a47236f-70d3-4217-a531-0bd77f850bf5",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C60",
+      "claim": "To discern two objects within a category, classification relies on the object shape.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, however, it appears that to discern two objects within a category, classification relies on the object shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in the objects experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "bd62b406-294d-46b3-aa0b-4c00156fa80b",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C61",
+      "claim": "The network combines both color and shape information.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the network appears to combine both color and shape information and, important to the current research question, the representation of color it relies on, closely follows the previously found category borders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in the objects experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "06a4caa0-b568-4384-ba09-be0dc564be2f",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C62",
+      "claim": "Color categorization is an emergent property of a Convolutional Neural Network (CNN) trained for object recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have taken a different approach by evaluating whether color categorization could be a side effect of learning object recognition. Indeed, we find that color categorization is an emergent property of a Convolutional Neural Network (CNN) trained for object recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by all experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c5e61e21-147f-4611-ac4f-5f6e22fac710",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C63",
+      "claim": "The final layer of a ResNet-18 reveals a color representation where colors are organized in categories similar to those of humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we show that the final layer of a ResNet-18, where objects are represented for classification, reveals a color representation where colors are organized in categories similar to those of humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing CNN and human results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "31e2563a-08c5-4969-a2d1-47f78fabaa20",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C64",
+      "claim": "The representation of color in a ResNet-18 trained to classify scenes does not follow the hue spectrum and deviates considerably from the human categorical organization.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the representation of color in a ResNet-18 trained to classify scenes (distinguishing man-made from natural) does not follow the hue spectrum and deviates considerably from the human categorical organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "af552d76-eee2-42cf-9ccb-44e952c16adf",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C65",
+      "claim": "Task modulates the color representation in the final layer of the CNN.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that task modulates the color representation in the final layer of the CNN, where objects are represented, suggests an important connection between object recognition and color categorization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the object-trained and scene-trained networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "d9ff0414-c61e-48b5-a19c-575a4eb947cb",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C66",
+      "claim": "The findings are in line with the notion that the emergence of color categories over cultures broadly follows a universal pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the notion that color categories arise based on an interplay between the distribution of colors in the visual world and basic visual tasks is in line with the notion that the emergence of color categories over cultures broadly follows a universal pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the results and relates to existing literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "89967ff7-488a-44c5-8a4a-b04a75ced07f",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C67",
+      "claim": "The findings are in line with the notion that color categorization emerges in pre-linguistic infants and animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the findings are in line with the notion that color categorization emerges in pre-linguistic infants and animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the results and relates to existing literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c13e95f5-eb09-4cba-a6d9-a71e31f615e2",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C68",
+      "claim": "The findings are in line with recent reports showing a dissociation between color naming and color categorization.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the findings are in line with recent reports showing a dissociation between color naming and color categorization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the results and relates to existing literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "e5740c2c-6fa5-455c-a315-3c83725340e7",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C69",
+      "claim": "The predictive power of communicative models may rely on taking into account the varying utility over colors rather than communication per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, while many of recent studies highlight how communicative concepts can be used to model category shapes, this correlates strongly with the utility of colors regarding objects. As such, the predictive power of these models may not rely on communication about colors per se, but on taking into account the varying utility over colors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the results and discussion of existing literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "33199fff-9f5a-4a26-ad63-b56f50ccbd0c",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C70",
+      "claim": "The implicit incorporation of color patterns useful during object recognition leads to a categorical representation of color in the object representation of the CNN.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that the implicit incorporation of color patterns useful during object recognition leads to a categorical representation of color in the object representation of the CNN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "e1ad8fa0-818e-4db1-ba3e-96e5bbc788c8",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C71",
+      "claim": "Berlin and Kay proposed that color categories across a wide range of languages could be described using 11 basic categories.",
+      "claim_type": "EXPLICIT",
+      "source": "The current scientific debate draws strongly on the seminal work by Berlin and Kay, 1969 who proposed that color categories across a wide range of languages could be described using 11 basic categories and advocated that one universal process guides the development of categories across cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Berlin and Kay, 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "500b7b4d-53e3-498c-a831-e4a3dccf8477",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C72",
+      "claim": "Statistical regularities across cultures provide evidence for universal color category development.",
+      "claim_type": "EXPLICIT",
+      "source": "While this hypothesis was initially based solely on visual inspection of collected categorization data, later, evidence was provided by demonstrating statistical regularities across cultures (Kay and Regier, 2003; Regier et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kay and Regier, 2003 and Regier et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "53109951-7fef-4803-8f97-33ab756756c6",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C73",
+      "claim": "When color categorization is a side effect of acquiring basic visual skills, color categories are expected to shape in a similar fashion throughout many cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "When we consider color categorization to be a side effect of acquiring basic visual skills (given relatively similar circumstances across the globe) color categories are expected to shape in a similar fashion throughout many cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and their implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "45697881-12b4-4f74-bef6-9d1d01f9c707",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C74",
+      "claim": "Skelton et al., 2017 found that pre-linguistic infants' novelty preference was dependent on categorical crossings.",
+      "claim_type": "EXPLICIT",
+      "source": "Measuring the full hue circle in pre-linguistic infants, Skelton et al., 2017 found that their novelty preference was dependent on categorical crossings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Skelton et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c2ceca95-ff19-4fb5-a966-e8b8bc6fe550",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C75",
+      "claim": "Four of the five categorical distinctions found by Skelton and colleagues can be separated by the cardinal axis corresponding to the color representation in the retinogeniculate pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the five categorical distinctions Skelton and colleagues found can be separated by the cardinal axis corresponding to the color representation in the retinogeniculate pathways, suggesting some of the categorical behavior may rely on the early representation of color (an issue pointed out by, e.g. Lindsey et al., 2010; Witzel and Gegenfurtner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lindsey et al., 2010 and Witzel and Gegenfurtner, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "ca773018-bf3c-46dd-80d7-35e684454076",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C76",
+      "claim": "Children that have not yet acquired color names make recognition errors based on perceptual difference.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, color naming develops much later and children that have not yet acquired color names make recognition errors based on perceptual difference (Roberson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roberson et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "021724bd-adf0-4bca-bab0-7186a0fe9e67",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C77",
+      "claim": "The utility of color may play an important role for the categorical color representation in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, recent findings have shown, that, as in humans, the utility of color may play an important role for the categorical color representation in animals (Caves et al., 2018; Hanley et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Caves et al., 2018 and Hanley et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "b31c4b8f-32aa-4fa9-aa3c-750593feb4d3",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C78",
+      "claim": "Any pre-linguistic categorical behavior likely lays the basis for subsequent color naming.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is likely that any pre-linguistic categorical behavior lays the basis for subsequent color naming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "08cfc475-5000-4931-8505-6432a9ed789b",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C79",
+      "claim": "Studying categorization in a CNN allows for better estimates than animal studies due to the ability to repeat tasks without sequential bias.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to repeat the match-to-sample task for a great number of training colors (without the risk of inducing a sequential bias over training sessions) allowing for better estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the methodology used in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "1b881641-7a33-48f7-8dc4-06061b7309fb",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C80",
+      "claim": "Verifying border locations using an evolutionary algorithm is computationally intensive and cannot be straightforwardly applied to living systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, verifying the border locations using the concept of categorical perception with an evolutionary algorithm is a computationally intensive task that cannot be straightforwardly applied to any living system, but is feasible for CNNs because of the speed at which an output layer can be retrained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the methodology and its limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "7dbf8869-5af1-4718-ae96-55c7c1376222",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C81",
+      "claim": "Artificial neural activity is much more accessible than biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, an important benefit is that the access to activity of artificial neurons is complete and can be exploited in future research: While neural networks are often described as black boxes, compared to biological systems, artificial neural activity is much more accessible, as one can easily probe the activation of all neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of neural network properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "77a66037-9683-4dfe-9622-5e4e4419134d",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C82",
+      "claim": "Coding of colors seems to become narrower and more variable beyond the LGN.",
+      "claim_type": "EXPLICIT",
+      "source": "Coding of colors seems to become narrower and more variable beyond the LGN (as demonstrated in macaque studies by Conway et al., 2007; Kiper et al., 1997; Lennie et al., 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to macaque studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "6f1b955e-a973-4602-bc65-ce6a18c95bf1",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C83",
+      "claim": "Colors belonging to the same category seem to be clustered together in human visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "colors belonging to the same category seem to be clustered together in human visual cortex (Brouwer and Heeger, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Brouwer and Heeger, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "89448429-c52a-48fa-82c1-ed238c79623f",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C84",
+      "claim": "CNNs can serve as a model for testing the viability of concepts about color coding.",
+      "claim_type": "EXPLICIT",
+      "source": "CNNs can serve as a model for testing the viability of several of such concepts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "6f655477-c6f1-440d-ba07-04505fe0429a",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C85",
+      "claim": "Patient RDS is able to categorize colors, but his color naming ability is impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient RDS is able to categorize colors, but his color naming ability is impaired (Siuda-Krzywicka et al., 2019; Siuda-Krzywicka et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Siuda-Krzywicka et al., 2019 and 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "0072108e-c197-48f5-9448-4d4c8abd48a7",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C86",
+      "claim": "The dissociation between color naming and categorization favors a view where categorization can exist independently of linguistic labels.",
+      "claim_type": "EXPLICIT",
+      "source": "The dissociation between the two, favors a view where categorization is a process that can exist independently of linguistical labels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the case study of patient RDS.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "12c38958-43d1-4ba3-941c-58ebddcb7389",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C87",
+      "claim": "Despite problems in color naming, the link between objects and colors was preserved in patient RDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite the problems in color naming, the link between objects and colors was preserved in RDS (Siuda-Krzywicka et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Siuda-Krzywicka et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "ee24bba0-2fd8-46f8-9a9a-954b5d0e30f4",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C89",
+      "claim": "There is no exchange of information between multiple CNNs, rather a single CNN merely imparts information.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is no exchange (back and forth) of information between multiple CNNs, rather a single CNN merely imparts information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "fd3ef0e2-32d0-484d-90d8-ceab6b015401",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C90",
+      "claim": "The current findings demonstrate a direct connection between the formation of color categories and learning to identify objects.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, we argue that the most important part of the current finding is that it demonstrates a direct connection between the formation of color categories and learning to identify objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "3424f70b-6ac7-4270-a801-0f888687c539",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C91",
+      "claim": "Explicit color naming is not a necessity for the development of categories.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the current categorical representation appears to emerge in the absence of color naming emphasizes that explicit color naming is not a necessity for the development of categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "8330a884-84aa-4c96-b4a5-3becdac02c7d",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C92",
+      "claim": "The communicative concepts in recent models may be a means to incorporate the varying utility across colors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many of those studies derive their predictive power from combining these concepts with the non-uniformities in the utility across colors. As such, the communicative concepts could merely be a means to incorporate the varying utility across colors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on discussion of existing literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c4172f9b-39f6-4131-9bba-b33d0ce63bb3",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C93",
+      "claim": "Objects are associated with warmer colors than backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "it has also been shown that objects are associated with warmer colors than backgrounds and that classifiers trained using only color information can distinguish animate from inanimate object at a performance level comparable to using shape features (Rosenthal et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rosenthal et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "9f45c6c6-2308-4c7c-92f2-34006d8b31be",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C94",
+      "claim": "Classifiers trained using only color information can distinguish animate from inanimate objects at a performance level comparable to using shape features.",
+      "claim_type": "EXPLICIT",
+      "source": "it has also been shown that objects are associated with warmer colors than backgrounds and that classifiers trained using only color information can distinguish animate from inanimate object at a performance level comparable to using shape features (Rosenthal et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rosenthal et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c9b2e4fa-9751-46e2-91d5-fab014678645",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C95",
+      "claim": "The higher communicative need for warmer colors likely stems from their prevalence in objects.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter emphasizes that the higher communicative need for warmer colors, likely stems from their prevalence in objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discussion of color utility and objects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "f1b2f581-78cc-43c5-add7-a8ee0e8bafe1",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "claim_id": "C96",
+      "claim": "Acquiring a skill like object recognition can lead to the emergence of a categorical representation of color.",
+      "claim_type": "EXPLICIT",
+      "source": "While we do not argue the process is completely devoid from communicative factors, the current results can unify many previous findings by showing that acquiring a skill like object recognition can lead to the emergence of a categorical representation of color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A ResNet-18 CNN trained on ImageNet for object recognition develops a categorical representation of color in its final layer, with borders between color categories that are largely invariant to the specific training colors used. The network shows approximately 7-8 discontinuities in the hue circle, and the distribution of border shifts more closely matches a categorical simulation than a continuous color representation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C22, C25-C33 collectively demonstrate categorical color representation through multiple converging lines of evidence: the border invariance experiment (Figures 1-2), statistical validation (Fisher's Exact Test, p<0.0001), replication across similar architectures (C30), and quantitative comparison to simulations (74% overlap with categorical vs 48% with continuous). The methodology is sound and the statistical analysis appropriately supports the categorical interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "38e58834-00b3-4036-a45f-07382a8f88e3",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An evolutionary algorithm based on categorical perception principles independently confirms the border locations found in the invariant border experiment. The algorithm converges to borders showing strong correspondence with previously identified borders, with the exception of the green-turquoise boundary which shows greater variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47-C52 provide independent validation of the categorical borders using a principled evolutionary approach (Figure 5). The convergence of the algorithm and correspondence with prior results strengthen the categorical interpretation. The acknowledged exception at the green-turquoise border (C51-C52) is appropriately discussed and aligns with known human variability (C53), adding credibility to the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "23723a7b-b9fc-4f75-b97f-c15eecddaad1",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Human observers tested on an analogous match-to-sample task show categorical color borders that largely agree with the CNN borders, with similar patterns including narrower categories in the red-yellow range and broader categories in the green region. The human border locations are statistically reliable (p<1\u00d710\u207b\u2076) and the color prototypes are highly analogous between humans and the CNN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C42-C46 demonstrate strong correspondence between CNN and human color categorization through direct experimental comparison (Figure 4). The human experiment uses appropriate methodology (n=10 observers, 1225 trials each), includes proper statistical validation via bootstrapping, and shows both qualitative and quantitative agreement with CNN results. This cross-validation between artificial and biological systems is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "f5fdf2b6-9c24-43b0-a230-fd7df23d1b18",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The categorical color representation is task-dependent: it emerges in the final layer of ResNet-18 trained for object recognition but not in a ResNet-18 trained for scene classification (natural vs. artificial). This task specificity suggests the categorical representation is beneficial for object classification specifically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41, C64-C65 provide critical evidence for task-specificity through direct comparison of networks trained on different tasks using the same architecture and dataset (Figure 3). The contrast between object-trained and scene-trained networks demonstrates that the categorical representation is not merely an artifact of architecture or training data, but emerges specifically for object recognition. However, the inference that this representation is 'beneficial' (C39) is somewhat speculative without direct performance comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "15807b07-94bb-4021-b5c3-0172addd34b9",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The CNN's categorical color representation generalizes to more complex tasks: in multi-color stimuli, error rates are lowest at category centers and increase toward borders; in object recognition with 14 colored objects, the network uses color to distinguish between categories while relying on shape within categories, demonstrating integration of color and shape information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 demonstrate that the categorical representation is functionally relevant beyond the initial training paradigm (Figures 6-7). The multi-color experiment shows the expected categorical perception pattern (lower errors at category centers), and the object experiment reveals sophisticated integration of color and shape cues. These results strengthen the claim that categorical color representation is meaningful for object recognition tasks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "3e55faca-0d35-43b8-bef6-aad935de7969",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The development of basic visual skills (specifically object recognition) can contribute to the emergence of categorical color representation, demonstrating a direct connection between learning to identify objects and the formation of color categories without explicit color naming or communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C62-C63, C90, C96 represent the main conclusion synthesized from all experimental results. The evidence from border invariance, evolutionary algorithm validation, human comparison, task-specificity, and generalization experiments collectively support this conclusion. However, the causal claim ('can contribute to') is appropriately hedged, as the study demonstrates correlation and plausibility rather than definitive causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "29a0e1c6-97a9-439d-9378-846263a94aa5",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The categorical borders found using HSV color space at full saturation and brightness are not artifacts of luminance variation. Control experiments with luminance distractors and variable background luminance show similar categorical patterns, though the borders are not perfectly identical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 address an important methodological concern about confounding luminance with hue. The authors appropriately acknowledge that HSV hue variation includes luminance changes (C35) and provide control experiments (C36, referenced in Appendix 3) to rule out spurious correlations. The acknowledgment that some color categories (orange vs. brown) inherently depend on luminance (C37) shows appropriate nuance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "48143b2b-f428-41ab-875c-8e8ee1ce7a0a",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The emergence of categorical color representation through object recognition is consistent with universal tendencies in color category development across cultures, as the similar visual environments and tasks across cultures would lead to similar category formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C55, C66, C70, C73 make connections to cross-cultural universality, but this is largely inferential and speculative. While the logic is reasonable (similar visual tasks \u2192 similar categories), the study does not test this directly with culture-specific datasets. The authors appropriately acknowledge this limitation, noting that testing with culture-specific datasets would be an important next step. The connection to existing literature on universal patterns is appropriate but does not constitute direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "ebed5dad-e1b2-4736-af72-d629e84b9aa5",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings are consistent with categorical color perception in pre-linguistic infants and animals, though the relationship between early categorical behavior and later color naming remains unclear. The utility of color for object recognition may explain categorical representations across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67, C74-C78 draw connections to infant and animal literature, but these are primarily interpretive rather than directly tested. The discussion appropriately notes uncertainties (e.g., whether infant categories rely on early color representation, C75; whether pre-linguistic behavior forms the basis for naming, C78). The speculation is reasonable but the evidence is indirect, relying on consistency with rather than direct validation of the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "d7c9ea3f-ced1-4b30-888f-2e2586e11f39",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The emergence of categorical color representation in CNNs without explicit color naming supports the dissociation between color categorization and color naming observed in patient studies, demonstrating that explicit color naming is not necessary for category development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C85-C87, C91 connect the CNN findings to neuropsychological evidence from patient RDS who shows preserved categorization despite impaired naming. The CNN results provide a computational proof-of-concept that categorization can emerge without naming. The preserved object-color associations in patient RDS (C87) parallel the CNN's object-based color learning, strengthening this connection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "ce622e37-39d3-46ae-9982-c99ae69cca12",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The predictive power of communicative models for color categories may derive from incorporating varying color utility for objects rather than communication per se. Warmer colors are more prevalent in objects than backgrounds, which may explain their higher communicative efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69, C92-C95 propose an alternative interpretation of communicative models, suggesting they succeed because they capture color utility rather than communication itself. While this is a reasonable hypothesis supported by the object-color association literature (C93-C94), it remains speculative. The study does not directly test whether utility or communication better explains category structure, making this an interesting but unvalidated proposal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "8af80bf7-17a9-46ed-be38-b6133d7332f9",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The distribution of colors in the ImageNet database may partially explain the border locations, consistent with efficient coding principles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 references analysis in Appendix 5 showing K-means clustering results, but the extent to which color distribution explains borders versus other factors (task demands, perceptual structure) is not quantified. The claim is appropriately hedged ('might, in part, explain') but requires more detailed analysis to evaluate the relative contribution of color statistics versus other factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "b74e5201-1362-48e3-8845-90161fd41a94",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CNNs offer methodological advantages over animal and infant studies for investigating color categorization, including the ability to conduct extensive repetitions without sequential bias, computational validation methods like evolutionary algorithms, and complete access to neural activity for future mechanistic studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81, C84 accurately describe methodological advantages of the CNN approach. The ability to repeat experiments extensively (C79), apply computationally intensive validation (C80), and access all neural activity (C81) are genuine benefits demonstrated in the study. However, these advantages must be balanced against the limitation that CNNs are less convincing models of human vision than biological systems, which the authors appropriately acknowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "9af2f32d-1dff-4963-8f72-537541d773cc",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Color vision is a prime example of categorical perception, with evidence that prelinguistic infants and several animal species treat color categorically, showing greater attention to color changes crossing categorical borders than changes within categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C11 accurately summarize established literature on categorical color perception across species. These are well-supported by appropriate citations and represent accepted background knowledge that motivates the study. The claims appropriately characterize the existing evidence base.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "c12a1fd1-8be5-47e8-8e13-03f80b26f58b",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Recent computational models have successfully used communicative concepts (information bottleneck, rate distortion) combined with perceptually uniform color spaces to model color categories. These models show that warm colors are communicated more efficiently than cool colors, and that categorical differences between languages reflect differences in color usefulness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15-C18 accurately represent recent modeling literature with appropriate citations. The characterization of communicative models and their findings about warm vs. cool colors and cross-linguistic differences is well-supported. These claims establish the theoretical context that the current study challenges or reinterprets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "d00bad0c-2a93-441c-a09a-c1ba6f897794",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Evidence for the relativist view of color categorization includes children's difficulty acquiring color names, cases of language impairment associated with color sorting problems, and failures to find categorization in some primates, with methodological concerns about studies claiming categorical perception in animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 accurately represent evidence cited by relativist perspectives, with appropriate citations. These claims provide balanced context for the universalist-relativist debate, though the authors ultimately argue for a position more aligned with universalism. The characterization of the evidence is fair and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "e0e3c247-59bd-4f85-a23b-a1dacc1f8523",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Recent evidence shows that color naming can be dissociated from color categorization in humans, and that categorical color perception in animals (host birds, zebra finches) is related to functional utility rather than perceptual similarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 accurately cite recent literature showing dissociations between naming and categorization (C19) and utility-based categorization in animals (C20-C21). These claims establish important context for the study's argument that categorization can emerge from functional demands rather than communication or naming.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "4ef92a81-be34-4cf1-b14d-6c7e9be96189",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Historical studies showed that pigeons trained to match colors to samples exhibited crossover points that were similar across experiments with different training colors, indicating categorical perception of color.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 accurately describe the Wright and Cumming (1971) pigeon study that inspired the current experimental approach. The characterization of the methodology and findings is appropriate and provides important historical context for the match-to-sample paradigm used in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "6c28f24e-4f3e-439c-8239-ddebc45ed5b9",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Berlin and Kay proposed that color categories across languages could be described using 11 basic categories with universal developmental patterns, later supported by statistical evidence of regularities across cultures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 accurately represent the seminal Berlin and Kay work and subsequent statistical validation. These claims provide essential historical and theoretical context for the universalist position in color categorization debates. The characterization is accurate and well-cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "53707a70-97b6-490b-af72-760b697e2e10",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "In biological visual systems, color coding becomes narrower and more variable beyond the LGN, and colors belonging to the same category appear to be clustered together in human visual cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 accurately cite neurophysiological evidence from macaque and human studies. These claims provide biological context suggesting that categorical color representation may have neural correlates in biological vision systems, motivating future mechanistic studies in CNNs. The citations are appropriate and the characterization is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    },
+    {
+      "id": "5de0cacb-319a-4752-b268-07f827815834",
+      "content_id": "bdbe47e6-19eb-401a-9c36-eeb9dc8281af",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The CNN experimental design involves a single network imparting information rather than bidirectional communication between multiple networks, distinguishing it from communicative models of color categorization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 accurately describes a key distinction between the current approach and communicative models. This clarification is important for interpreting the results and understanding what the study does and does not demonstrate about communication's role in categorization. The characterization is accurate based on the described methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:50:03.510776Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3a508f6f-4fa4-46ba-9b41-3462663a9bed",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "bf8f8e71-317e-4661-b418-87ab5cdb5789",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "db10804d-371e-422c-8617-2194cd54e7e6",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "81d069bb-a347-4fc8-ad4f-1201857d41c1",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "9135ce27-e2ab-4dd4-b9bf-56138966316a",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "cd11ae35-13c5-406f-913e-47443e1f5509",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "2e8872c5-c775-4ae0-b067-977698824f23",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "30f310ee-c12e-43f6-8deb-bd3f9626c69d",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "77ef018c-4914-4e70-b0d8-2623f35f721b",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "1def5ca3-c2e9-4e86-98e8-50eac470d75b",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "d5b734cc-0957-4f5e-966f-9fdef832374f",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "395d9982-0de8-47ec-81bf-b62250a2c285",
+      "result_id": "074dc6fb-b762-4ad8-9b2f-fe4aa9d713fa"
+    },
+    {
+      "claim_id": "c76d7103-6316-4ef3-ad6b-46e22dab77ab",
+      "result_id": "38e58834-00b3-4036-a45f-07382a8f88e3"
+    },
+    {
+      "claim_id": "6c0bc1ad-fb5e-4e1c-b4ce-dd59819a95ed",
+      "result_id": "38e58834-00b3-4036-a45f-07382a8f88e3"
+    },
+    {
+      "claim_id": "7fb7622c-cb1e-452b-a9e8-74f2a7f5a99a",
+      "result_id": "38e58834-00b3-4036-a45f-07382a8f88e3"
+    },
+    {
+      "claim_id": "655265a1-386d-4a23-bbc6-00cd76e45b72",
+      "result_id": "38e58834-00b3-4036-a45f-07382a8f88e3"
+    },
+    {
+      "claim_id": "4720ff97-a19f-4911-80ac-edcde95d604c",
+      "result_id": "38e58834-00b3-4036-a45f-07382a8f88e3"
+    },
+    {
+      "claim_id": "d8b59d03-7258-4156-9f4a-ce345f6bff6b",
+      "result_id": "38e58834-00b3-4036-a45f-07382a8f88e3"
+    },
+    {
+      "claim_id": "ffe13624-cc60-4796-bc5d-d50b8f74acd7",
+      "result_id": "38e58834-00b3-4036-a45f-07382a8f88e3"
+    },
+    {
+      "claim_id": "c19bd3e8-224b-4c5d-a1f1-0d317b7118b3",
+      "result_id": "23723a7b-b9fc-4f75-b97f-c15eecddaad1"
+    },
+    {
+      "claim_id": "4ef3ab73-2552-45e8-8e9c-9396dd13bbe6",
+      "result_id": "23723a7b-b9fc-4f75-b97f-c15eecddaad1"
+    },
+    {
+      "claim_id": "a43b057a-8817-4873-bd78-5e8349e0d109",
+      "result_id": "23723a7b-b9fc-4f75-b97f-c15eecddaad1"
+    },
+    {
+      "claim_id": "8044411a-2234-4369-b7c9-f45d86d2a418",
+      "result_id": "23723a7b-b9fc-4f75-b97f-c15eecddaad1"
+    },
+    {
+      "claim_id": "47f792c4-7cd5-4098-a396-56fe7716c480",
+      "result_id": "23723a7b-b9fc-4f75-b97f-c15eecddaad1"
+    },
+    {
+      "claim_id": "2bb22cf5-a0c5-4c42-91b4-035e8ba954db",
+      "result_id": "23723a7b-b9fc-4f75-b97f-c15eecddaad1"
+    },
+    {
+      "claim_id": "ab3a77a3-6a3d-402a-9848-97a5e87e1fc9",
+      "result_id": "f5fdf2b6-9c24-43b0-a230-fd7df23d1b18"
+    },
+    {
+      "claim_id": "e5396f70-4c22-45de-8dc4-6cbd0b0996a2",
+      "result_id": "f5fdf2b6-9c24-43b0-a230-fd7df23d1b18"
+    },
+    {
+      "claim_id": "2d63911a-cd0a-4cb9-9f73-bcbb6ede194e",
+      "result_id": "f5fdf2b6-9c24-43b0-a230-fd7df23d1b18"
+    },
+    {
+      "claim_id": "c25c973e-a7b4-4c72-910e-553873ecdc5f",
+      "result_id": "f5fdf2b6-9c24-43b0-a230-fd7df23d1b18"
+    },
+    {
+      "claim_id": "31e2563a-08c5-4969-a2d1-47f78fabaa20",
+      "result_id": "f5fdf2b6-9c24-43b0-a230-fd7df23d1b18"
+    },
+    {
+      "claim_id": "af552d76-eee2-42cf-9ccb-44e952c16adf",
+      "result_id": "f5fdf2b6-9c24-43b0-a230-fd7df23d1b18"
+    },
+    {
+      "claim_id": "c2658ead-79ea-44db-a1bb-eeb65b8ca1ba",
+      "result_id": "15807b07-94bb-4021-b5c3-0172addd34b9"
+    },
+    {
+      "claim_id": "8a9d0e10-2518-44be-805d-2fd52fc1ccb7",
+      "result_id": "15807b07-94bb-4021-b5c3-0172addd34b9"
+    },
+    {
+      "claim_id": "bf09420d-7060-4eec-b8d7-92ddf02ba04c",
+      "result_id": "15807b07-94bb-4021-b5c3-0172addd34b9"
+    },
+    {
+      "claim_id": "5a47236f-70d3-4217-a531-0bd77f850bf5",
+      "result_id": "15807b07-94bb-4021-b5c3-0172addd34b9"
+    },
+    {
+      "claim_id": "bd62b406-294d-46b3-aa0b-4c00156fa80b",
+      "result_id": "15807b07-94bb-4021-b5c3-0172addd34b9"
+    },
+    {
+      "claim_id": "ee433833-19d3-4a62-8539-eb7a2b39acff",
+      "result_id": "3e55faca-0d35-43b8-bef6-aad935de7969"
+    },
+    {
+      "claim_id": "06a4caa0-b568-4384-ba09-be0dc564be2f",
+      "result_id": "3e55faca-0d35-43b8-bef6-aad935de7969"
+    },
+    {
+      "claim_id": "c5e61e21-147f-4611-ac4f-5f6e22fac710",
+      "result_id": "3e55faca-0d35-43b8-bef6-aad935de7969"
+    },
+    {
+      "claim_id": "fd3ef0e2-32d0-484d-90d8-ceab6b015401",
+      "result_id": "3e55faca-0d35-43b8-bef6-aad935de7969"
+    },
+    {
+      "claim_id": "f1b2f581-78cc-43c5-add7-a8ee0e8bafe1",
+      "result_id": "3e55faca-0d35-43b8-bef6-aad935de7969"
+    },
+    {
+      "claim_id": "fb458d3d-6bd2-4252-8bdd-39b743c9d17a",
+      "result_id": "29a0e1c6-97a9-439d-9378-846263a94aa5"
+    },
+    {
+      "claim_id": "be188551-4617-484a-a54d-a59be1a95214",
+      "result_id": "29a0e1c6-97a9-439d-9378-846263a94aa5"
+    },
+    {
+      "claim_id": "da892db7-1996-4cb1-bc11-c936a7ffe865",
+      "result_id": "29a0e1c6-97a9-439d-9378-846263a94aa5"
+    },
+    {
+      "claim_id": "a5b84685-bd30-4121-b85d-8687f7e4fe48",
+      "result_id": "29a0e1c6-97a9-439d-9378-846263a94aa5"
+    },
+    {
+      "claim_id": "29076124-80db-4a2b-b567-c81331ba4872",
+      "result_id": "48143b2b-f428-41ab-875c-8e8ee1ce7a0a"
+    },
+    {
+      "claim_id": "fa441d53-bc8c-4626-9300-d86b759c77b4",
+      "result_id": "48143b2b-f428-41ab-875c-8e8ee1ce7a0a"
+    },
+    {
+      "claim_id": "d9ff0414-c61e-48b5-a19c-575a4eb947cb",
+      "result_id": "48143b2b-f428-41ab-875c-8e8ee1ce7a0a"
+    },
+    {
+      "claim_id": "33199fff-9f5a-4a26-ad63-b56f50ccbd0c",
+      "result_id": "48143b2b-f428-41ab-875c-8e8ee1ce7a0a"
+    },
+    {
+      "claim_id": "53109951-7fef-4803-8f97-33ab756756c6",
+      "result_id": "48143b2b-f428-41ab-875c-8e8ee1ce7a0a"
+    },
+    {
+      "claim_id": "89967ff7-488a-44c5-8a4a-b04a75ced07f",
+      "result_id": "ebed5dad-e1b2-4736-af72-d629e84b9aa5"
+    },
+    {
+      "claim_id": "45697881-12b4-4f74-bef6-9d1d01f9c707",
+      "result_id": "ebed5dad-e1b2-4736-af72-d629e84b9aa5"
+    },
+    {
+      "claim_id": "c2ceca95-ff19-4fb5-a966-e8b8bc6fe550",
+      "result_id": "ebed5dad-e1b2-4736-af72-d629e84b9aa5"
+    },
+    {
+      "claim_id": "ca773018-bf3c-46dd-80d7-35e684454076",
+      "result_id": "ebed5dad-e1b2-4736-af72-d629e84b9aa5"
+    },
+    {
+      "claim_id": "021724bd-adf0-4bca-bab0-7186a0fe9e67",
+      "result_id": "ebed5dad-e1b2-4736-af72-d629e84b9aa5"
+    },
+    {
+      "claim_id": "b31c4b8f-32aa-4fa9-aa3c-750593feb4d3",
+      "result_id": "ebed5dad-e1b2-4736-af72-d629e84b9aa5"
+    },
+    {
+      "claim_id": "c13e95f5-eb09-4cba-a6d9-a71e31f615e2",
+      "result_id": "d7c9ea3f-ced1-4b30-888f-2e2586e11f39"
+    },
+    {
+      "claim_id": "6f655477-c6f1-440d-ba07-04505fe0429a",
+      "result_id": "d7c9ea3f-ced1-4b30-888f-2e2586e11f39"
+    },
+    {
+      "claim_id": "0072108e-c197-48f5-9448-4d4c8abd48a7",
+      "result_id": "d7c9ea3f-ced1-4b30-888f-2e2586e11f39"
+    },
+    {
+      "claim_id": "12c38958-43d1-4ba3-941c-58ebddcb7389",
+      "result_id": "d7c9ea3f-ced1-4b30-888f-2e2586e11f39"
+    },
+    {
+      "claim_id": "3424f70b-6ac7-4270-a801-0f888687c539",
+      "result_id": "d7c9ea3f-ced1-4b30-888f-2e2586e11f39"
+    },
+    {
+      "claim_id": "e5740c2c-6fa5-455c-a315-3c83725340e7",
+      "result_id": "ce622e37-39d3-46ae-9982-c99ae69cca12"
+    },
+    {
+      "claim_id": "8330a884-84aa-4c96-b4a5-3becdac02c7d",
+      "result_id": "ce622e37-39d3-46ae-9982-c99ae69cca12"
+    },
+    {
+      "claim_id": "c4172f9b-39f6-4131-9bba-b33d0ce63bb3",
+      "result_id": "ce622e37-39d3-46ae-9982-c99ae69cca12"
+    },
+    {
+      "claim_id": "9f45c6c6-2308-4c7c-92f2-34006d8b31be",
+      "result_id": "ce622e37-39d3-46ae-9982-c99ae69cca12"
+    },
+    {
+      "claim_id": "c9b2e4fa-9751-46e2-91d5-fab014678645",
+      "result_id": "ce622e37-39d3-46ae-9982-c99ae69cca12"
+    },
+    {
+      "claim_id": "859a3e45-e2ba-440f-921c-a642cd7ac4e2",
+      "result_id": "8af80bf7-17a9-46ed-be38-b6133d7332f9"
+    },
+    {
+      "claim_id": "08cfc475-5000-4931-8505-6432a9ed789b",
+      "result_id": "b74e5201-1362-48e3-8845-90161fd41a94"
+    },
+    {
+      "claim_id": "1b881641-7a33-48f7-8dc4-06061b7309fb",
+      "result_id": "b74e5201-1362-48e3-8845-90161fd41a94"
+    },
+    {
+      "claim_id": "7dbf8869-5af1-4718-ae96-55c7c1376222",
+      "result_id": "b74e5201-1362-48e3-8845-90161fd41a94"
+    },
+    {
+      "claim_id": "89448429-c52a-48fa-82c1-ed238c79623f",
+      "result_id": "b74e5201-1362-48e3-8845-90161fd41a94"
+    },
+    {
+      "claim_id": "cad65083-c3f4-4d8a-9c05-d3fb14d961ce",
+      "result_id": "9af2f32d-1dff-4963-8f72-537541d773cc"
+    },
+    {
+      "claim_id": "f6ad0871-55ab-48ce-8c6e-1b92b39b0a4d",
+      "result_id": "9af2f32d-1dff-4963-8f72-537541d773cc"
+    },
+    {
+      "claim_id": "780d9966-a646-4741-b177-2a4aa7add289",
+      "result_id": "9af2f32d-1dff-4963-8f72-537541d773cc"
+    },
+    {
+      "claim_id": "59835e44-c316-47ab-88d1-028b1d3781ad",
+      "result_id": "9af2f32d-1dff-4963-8f72-537541d773cc"
+    },
+    {
+      "claim_id": "7caebf07-dd22-4580-8f5a-84f64762e663",
+      "result_id": "9af2f32d-1dff-4963-8f72-537541d773cc"
+    },
+    {
+      "claim_id": "4f0bbf1a-0828-419a-a57f-50fa31d7f625",
+      "result_id": "c12a1fd1-8be5-47e8-8e13-03f80b26f58b"
+    },
+    {
+      "claim_id": "e2a8f94b-fa26-46c9-9de7-8a85ec4afd50",
+      "result_id": "c12a1fd1-8be5-47e8-8e13-03f80b26f58b"
+    },
+    {
+      "claim_id": "4893f810-9509-41b6-b532-0d9754dde64e",
+      "result_id": "c12a1fd1-8be5-47e8-8e13-03f80b26f58b"
+    },
+    {
+      "claim_id": "f0fbc72d-d73d-4b09-8a8f-14c242118108",
+      "result_id": "c12a1fd1-8be5-47e8-8e13-03f80b26f58b"
+    },
+    {
+      "claim_id": "10735ff2-c8fa-4b70-b0d9-0d3f27c595f8",
+      "result_id": "c12a1fd1-8be5-47e8-8e13-03f80b26f58b"
+    },
+    {
+      "claim_id": "fc8bd7a7-2c1b-4823-9a67-74b7e6e549ff",
+      "result_id": "d00bad0c-2a93-441c-a09a-c1ba6f897794"
+    },
+    {
+      "claim_id": "575a8a42-4aa0-40aa-afbc-f6e5732a9288",
+      "result_id": "d00bad0c-2a93-441c-a09a-c1ba6f897794"
+    },
+    {
+      "claim_id": "d00528e4-684c-4d7b-bc7b-ed25545466e8",
+      "result_id": "d00bad0c-2a93-441c-a09a-c1ba6f897794"
+    },
+    {
+      "claim_id": "2fe0ce6e-5983-480e-b26f-be6b03c7e2cb",
+      "result_id": "e0e3c247-59bd-4f85-a23b-a1dacc1f8523"
+    },
+    {
+      "claim_id": "f74a748d-a459-4ec7-8474-b73d16bdfe0a",
+      "result_id": "e0e3c247-59bd-4f85-a23b-a1dacc1f8523"
+    },
+    {
+      "claim_id": "d188a5ce-d6c3-45ed-93de-5a5b2f5c9892",
+      "result_id": "e0e3c247-59bd-4f85-a23b-a1dacc1f8523"
+    },
+    {
+      "claim_id": "91f6f629-2595-4817-b1cc-8a2437b3bdb6",
+      "result_id": "4ef92a81-be34-4cf1-b14d-6c7e9be96189"
+    },
+    {
+      "claim_id": "afced90b-acc3-4e07-a9d6-c802d82ab28c",
+      "result_id": "4ef92a81-be34-4cf1-b14d-6c7e9be96189"
+    },
+    {
+      "claim_id": "e1ad8fa0-818e-4db1-ba3e-96e5bbc788c8",
+      "result_id": "6c28f24e-4f3e-439c-8239-ddebc45ed5b9"
+    },
+    {
+      "claim_id": "500b7b4d-53e3-498c-a831-e4a3dccf8477",
+      "result_id": "6c28f24e-4f3e-439c-8239-ddebc45ed5b9"
+    },
+    {
+      "claim_id": "77a66037-9683-4dfe-9622-5e4e4419134d",
+      "result_id": "53707a70-97b6-490b-af72-760b697e2e10"
+    },
+    {
+      "claim_id": "6f1b955e-a973-4602-bc65-ce6a18c95bf1",
+      "result_id": "53707a70-97b6-490b-af72-760b697e2e10"
+    },
+    {
+      "claim_id": "ee24bba0-2fd8-46f8-9a9a-954b5d0e30f4",
+      "result_id": "5de0cacb-319a-4752-b268-07f827815834"
+    }
+  ],
+  "comparisons": []
+}

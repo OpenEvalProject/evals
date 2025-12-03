@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C69"
+    ],
+    "result": "Tom70 regulates the transcriptional activity of mitochondrial proteins in budding yeast. TOM70 overexpression increases the abundance and mRNA levels of mitochondrial proteins more broadly than HAP4 overexpression, while Tom71 (Tom70's paralog) does not induce expression. Tom70 must be localized to the mitochondrial outer membrane to exert this transcriptional regulatory effect, as overexpression of the cytosolic domain alone is insufficient. This transcriptional activation is not restricted to Tom70's import substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C22, C24-C25, and C69 are supported by experimental data from Figure 1 showing protein and mRNA level changes upon TOM70 overexpression, TEV protease removal of Tom70, and cytosolic domain overexpression. The data demonstrate specificity (Tom71 negative control), localization requirement, and broad effects on mitochondrial biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C23"
+    ],
+    "result": "Tom70's transcription regulatory role is conserved in Drosophila melanogaster. Enhanced mitochondrial biogenesis was observed in fruit fly larvae when UAS-TOM70 was overexpressed in muscles using Mef2-Gal4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C23 are supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1D demonstrating increased mRNA levels of mitochondrial proteins in fly larvae with muscle-specific TOM70 overexpression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Tom70 regulates mitochondrial protein transcription through transcription factors other than the retrograde signaling pathway mediated by Rtg1/2/3. The nuclear/cytosol ratio of Rtg1/3-GFP in TOM70 overexpression cells is similar to wild-type, and knocking out Rtg3 does not prevent TOM70-induced mitochondrial biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by experimental data in Figure 1D, Figure 1\u2014figure supplement 1E, and Figure 1\u2014figure supplement 1F showing that Rtg1/3 localization is unchanged and Rtg3 deletion does not block TOM70 effects, indicating independence from classic retrograde signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Tom70 signals through multiple transcription factors, including Fkh1/2, to regulate mitochondrial biogenesis. Overexpressing Fkh1/2 can mimic TOM70 overexpression effects, and deletion of FKH1 or FKH2 partially blocks TOM70-induced mitochondrial protein expression. ROS scavenger treatment also partially affects TOM70-induced mitochondrial biogenesis. TOM70 overexpression has broader effects than overexpression of single transcription factors like HAP4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by experimental data in Figure 2C-E and Figure 2\u2014figure supplement 1 showing that Fkh1/2 overexpression increases mitochondrial proteins, Fkh1/2 deletion partially blocks TOM70 effects (but not completely), and NAC treatment has partial effects, consistent with multiple parallel pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Tom70 regulates mtDNA abundance. TOM70 overexpression significantly increases mtDNA, while knocking out TOM70 reduces mtDNA. The mtDNA polymerase Mip1, which contains iMTS and uses Tom70 for import, shows increased abundance in TOM70 overexpression cells. MIP1 overexpression also increases mtDNA, though to a lesser extent than TOM70 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by experimental data in Figures 1D-E and 3A-E showing quantitative changes in mtDNA with TOM70 manipulation, Mip1's iMTS profile, increased Mip1 protein in TOM70 OE cells, and mtDNA increase with MIP1 OE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C70",
+      "C71"
+    ],
+    "result": "mtDNA is required for Tom70-mediated transcriptional activation of nuclear-encoded mitochondrial proteins. When mtDNA was removed (\u03c10 cells), TOM70 overexpression could not activate transcription of nDNA-encoded mitochondrial proteins. This requirement can be partially attributed to mtDNA-encoded proteins, as mitochondrial translation is partially required for biogenesis of some mitochondrial proteins in TOM70 OE cells. Upregulating basic mitochondrial transcription machinery (Rpo41, Mtf1) does not replicate TOM70 overexpression effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C70-C71 are supported by experimental data in Figure 1C showing loss of transcriptional activation in \u03c10 cells, Figure 3\u2014figure supplement 1D showing partial requirement of mitochondrial translation, and Figure 3\u2014figure supplement 1A-C showing that Rpo41/Mtf1 overexpression is insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Tom70 is involved in the cellular response to mitochondrial import defects and coordinates biogenesis with import capacity. In tim23ts cells, no protein aggregation occurs upon Tim23 inactivation, but deleting Tom70 or overexpressing TOM70 causes large-scale cytosolic protein aggregation. TOM70 overexpression alone does not cause aggregation, suggesting balanced biogenesis and import. HAP4 overexpression does not cause aggregation in tim23ts cells. TOM70 overexpression increases TOM and TIM proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40, C72-C74 are supported by experimental data in Figure 4C showing differential aggregation phenotypes in various genetic backgrounds, consistent with Tom70's dual role in coordinating mitochondrial biogenesis and import capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C88"
+    ],
+    "result": "Tom70 and other mitochondrial proteins undergo age-dependent reduction in budding yeast. This reduction is associated with loss of mitochondrial membrane potential, a common hallmark of mitochondrial defects. Similar Tom70 reduction has been reported in aged rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C88 are supported by experimental data in Figure 5A-C showing quantitative reduction of Tom70 and other mitochondrial proteins in aged cells, correlation with membrane potential loss, and citation to previous literature showing conservation in rats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Overexpressing TOM70 rescues mitochondrial membrane potential and prevents age-associated reduction of other mitochondrial proteins in aged cells. This rescue is unique to Tom70, as overexpressing other TOM proteins cannot fully prevent the loss of mitochondrial membrane potential during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by experimental data in Figure 5C-F showing that pGAL-TOM70 rescues membrane potential and mitochondrial protein levels in aged cells, with specificity demonstrated by comparison to other TOM proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C89"
+    ],
+    "result": "Knocking out Tom70 accelerates age-related mitochondrial defects. \u0394tom70 cells show accelerated loss of mitochondrial membrane potential, biogenesis defects of mitochondrial proteins, and faster mtDNA loss during aging. The accelerated mtDNA loss is likely due to faster loss of Mip1, which uses Tom70 for import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C89 are supported by experimental data in Figure 6A-E showing accelerated mitochondrial defects in \u0394tom70 cells during aging, with mechanistic link to Mip1 loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C49",
+      "C50",
+      "C83"
+    ],
+    "result": "Loss of Tom70 accelerates aging and age-related mitochondrial defects, while TOM70 overexpression extends replicative lifespan and delays mitochondrial dysfunctions. The RLS extension by TOM70 overexpression is similar to caloric restriction (0.1% glucose), which is known to increase mitochondrial protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C49-C50, C83 are supported by experimental data in Figure 6F showing RLS extension with TOM70 OE and citations to previous literature on CR effects and \u0394tom70 lifespan reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C92",
+      "C93"
+    ],
+    "result": "Caloric restriction rescues the mitochondrial biogenesis defects and RLS of \u0394tom70 cells. The expression levels of mitochondrial proteins that showed accelerated biogenesis defects during aging of \u0394tom70 cells were rescued by CR. This suggests CR restores RLS by preventing premature mitochondrial biogenesis defects, and that mitochondrial biogenesis is preserved during aging under CR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C92-C93 are supported by experimental data in Figure 6A-D and Figure 6\u2014figure supplement 1 showing CR rescue of mitochondrial protein expression in \u0394tom70 cells during aging, with mechanistic interpretation supported by comparison to previous literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C81"
+    ],
+    "result": "The age-related reduction of Tom70 is caused by both reduced biogenesis and increased degradation. Changing TOM70's promoter prevents age-dependent reduction, and TOM70 mRNA is reduced in old cells. Some transcription factors can suppress age-dependent Tom70 reduction when overexpressed. Cells lacking Dnm1 or Fis1 show higher Tom70 levels in both young and old cells. Dnm1 protein level increases with age, which could enhance Tom70 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C57-C61, C81 are supported by experimental data in Figures 5A-B, 7A-E, and Figure 7\u2014figure supplement 1A-D showing transcriptional and degradation mechanisms underlying Tom70 reduction during aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The dual roles of Tom70 in both transcription/biogenesis and import of mitochondrial proteins allow cells to accomplish mitochondrial biogenesis without compromising cytosolic proteostasis. The imbalance between import and biogenesis leads to cytosolic accumulation and protein aggregates. The ratio between Tom70 and nascent mitochondrial proteins regulates biogenesis activity. This Tom70-dependent regulation likely evolved to maintain proteostasis outside mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C85-C87 represent the central mechanistic model supported by the collective experimental findings. The model is well-supported by data showing coordinated regulation of biogenesis and import, aggregation phenotypes when this balance is disrupted, and the unique role of Tom70 in this coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C82"
+    ],
+    "result": "The reduction of Tom70 is a key event contributing to mitochondrial biogenesis defects during aging, which could lead to previously observed age-dependent mitochondrial defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C82 represent conclusions drawn from the experimental findings showing Tom70 reduction correlates with mitochondrial defects, and manipulation of Tom70 levels affects aging phenotypes. These conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "HAP4 overexpression increased the biogenesis of two out of four randomly chosen mitochondrial proteins, consistent with previous results showing HAP4 OE increases biogenesis of roughly 1/4 of the mitochondrial proteome (255 out of >1000 proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by experimental data in Figure 1A and Figure 1\u2014figure supplement 1A, with C17 additionally supported by citation to previous literature (Lin et al., 2002).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Age-related Tom70 reduction is conserved across species. Tom70 protein is reduced during fly aging and in aged or pathologically hypertrophic hearts from humans and rats. Overexpression of TOM70 protects cultured cardiomyocytes against pro-hypertrophic insults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by citations to previous literature showing conservation of Tom70 reduction and protective effects in other organisms and cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background knowledge about mitochondrial biogenesis, import mechanisms, and proteostasis. Mitochondrial biogenesis involves transcriptional activation and import of nascent proteins. More than 99% of mitochondrial proteins are nuclear-encoded. Tom20 and Tom70 are major import receptors with different substrate specificities. Nascent mitochondrial proteins are aggregation-prone and can cause cytosolic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C15 represent established knowledge supported by citations to previous literature. These provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C90",
+      "C91"
+    ],
+    "result": "Prior work on caloric restriction and mitochondrial mutants. CR can suppress the negative impact of mitochondrial mutants including \u0394tom70 on yeast RLS. CR rescues \u0394phb1/2 cells by reducing cytosolic translation. Knocking out Tom70 reduces RLS. CR increases expression of many mitochondrial proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C90-C91 represent prior work from the literature that provides context for the current findings. These are supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C84"
+    ],
+    "result": "Background information on transcription factors and aging mechanisms. Fkh1/2 are Forkhead family transcription factors known to regulate G2/M phase genes. Fkh1 is increased in CR-treated cells. CR activates mitochondrial biogenesis independent of Hap4. Loss of proteostasis is an early aging event. Many transcription factors contain low complexity domains sensitive to proteostasis impairment. Tom70 can be degraded via Fis1/Dnm1-dependent MDC pathway under acute vacuole deacidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80, C84 represent background knowledge from previous literature that provides context for the mechanistic findings. These are supported by citations.",
+    "result_type": "MINOR"
+  }
+]

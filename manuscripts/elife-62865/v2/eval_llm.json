@@ -1,0 +1,462 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes the anatomical organization of tetrapod limbs (stylopod, zeugopod, autopod) versus fish fins (propterygium, mesopterygium, metapterygium), identifying the autopod as the most apparent morphological novelty during the fin-to-limb transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 present well-established anatomical knowledge supported by literature citations (C3 cites Clack, 2009) and visual evidence (Figure 1A). These claims provide essential background context for the study and are appropriately supported by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Autopod-specific regulation of Hoxa13 and Hoxd10-13 is conserved in non-tetrapod vertebrates, though expression domains of Hoxa13 and Hoxa11 are mutually exclusive in mouse/chick limbs while overlapping in fish fin buds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are well-supported by multiple literature citations (Davis et al., 2007; Freitas et al., 2007; Schneider et al., 2011; Ahn and Ho, 2008; Metscher et al., 2005; Sakamoto et al., 2009; Woltering et al., 2019). These establish important prior knowledge about Hox gene regulation differences between fins and limbs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The custom orthology assignment algorithm developed in this study is more accurate than other methods for Hox and Fgf genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by Figure 1C showing comparative accuracy and detailed methodology in Materials and Methods. The validation using well-characterized gene families (Hox and Fgf) with phylogenetic trees (Figure 1\u2014figure supplements 2-3) provides strong evidence for the algorithm's accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Both mouse limb buds and bamboo shark fin buds exhibit two phases of Hox gene regulation, with similar phasic patterns detected in RNA-seq data, though with some temporal differences in peak expression timing between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 are well-supported by RNA-seq data (Figure 1D) and literature citations (Deschamps and Duboule, 2017; Andrey et al., 2013). The detection of two-phase regulation in both species validates the transcriptomic approach and establishes comparable developmental stages between species. The data quality appears robust with clear temporal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Bamboo shark fin buds lack quantitative collinearity of Hoxd genes observed in mouse limb buds, suggesting different mechanisms for Hoxd gene regulation. Quantitative collinearity varies among species and is not a universal feature of fins and limbs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 are supported by RNA-seq data (Figure 1D, Figure 1\u2014figure supplement 7) and literature citations (Montavon et al., 2008; Yakushiji-Kaminatsui et al., 2018). The observation that Hoxd12 shows highest expression in shark fin buds rather than Hoxd13 is clearly demonstrated. However, the inference about different regulatory mechanisms (C20) requires caution as it's based on absence of quantitative collinearity rather than direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The chondrogenic and myogenic pathways show both conserved and divergent features between bamboo shark fin buds and mouse limb buds, with some genes (Nog, Myh3, Myh8) absent from the bamboo shark genome/transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C32 are supported by RNA-seq data (Figure 1\u2014figure supplement 8) and literature citations. The detection of conserved temporal patterns for Sox9, Runx3, Acan, Pax3, and MyoD family genes validates the transcriptomic approach. However, the absence of Nog, Myh3, and Myh8 (C26, C32) should be interpreted cautiously as it could reflect incomplete genome assembly or transcriptome coverage rather than true absence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Clustering analysis identified 6701 species-specific genes, 1884 conserved late-expressed genes, and species-specific genes include known fin development genes (And1, Fgf24) and limb-specific genes (Bmp2, Ihh, Megf8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C38 are based on clustering analysis (Figure 2A) but the authors acknowledge that species-specific gene counts are 'probably unreliable and overestimated' due to potential orthology assignment errors. While the detection of known fin-specific genes (C34-C36) provides validation, the overall species-specific gene counts should be interpreted with caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "5388 genes exhibited heterochronic expression profiles between bamboo shark fin buds and mouse limb buds, with validation by in situ hybridization for Aldh1a2, Hand2, and Vcan showing species-specific temporal and spatial expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are well-supported by clustering analysis (Figure 2A) and validated by in situ hybridization (Figure 2B-C, Figure 2\u2014figure supplement 1A). The mass heterochronic shift is a major finding, and the validation of representative genes strengthens confidence in the transcriptomic patterns. The sample size of 5388 genes is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Fgf8 shows opposite temporal expression patterns between mouse limb buds (early high, late low) and bamboo shark fin buds (early low, late high), with different Fgf genes (Fgf9, Fgf16, Fgf24) expressed in early shark fin development, suggesting subfunctionalization of AER signaling molecules during vertebrate divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by RNA-seq data (Figure 2\u2014figure supplement 1C) and literature citations (Nomura et al., 2006; Draper et al., 2003; Mariani et al., 2008). The heterochronic expression of Fgf8 is clearly demonstrated. However, the speculation about subfunctionalization (C50) is appropriately cautious and acknowledges inability to infer ancestral states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Mass heterochronic shifts in gene expression were detected between bamboo shark fin buds and mouse forelimb buds, potentially reflecting gain in tetrapod lineages or loss in cartilaginous fish lineages of mechanisms maintaining upregulation of early fin development genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 summarize the heterochronic findings from the transcriptome analysis. C51 is well-supported by the data. C52 appropriately acknowledges the ambiguity in evolutionary interpretation (gain vs. loss) given the two-species comparison, though this limits definitive conclusions about evolutionary directionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Shh transcription timing shows no apparent heterochrony between bamboo shark fin buds and mouse limb buds, with peak expression concurrent with Hoxd9/Hoxd10 peak in both species, contrary to previous implications of delayed Shh expression in elasmobranch fins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by RNA-seq data (Figure 3A-B) and literature context (C54 cites Dahn et al., 2007; Sakamoto et al., 2009; Yonei-Tamura et al., 2008). The finding that Shh transcription timing is conserved is important and challenges prior suggestions. The use of Hoxd9/Hoxd10 as temporal reference points is reasonable given their conserved expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SHH target genes (Ptch1/2, Gli1, Gremlin, Hand2) show extended expression in mouse limb buds compared to bamboo shark fin buds, with expression peak concurrent with Shh in shark but delayed one day in mouse. In situ hybridization validates the expansion of Ptch1 expression domain in mouse but not shark.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 are well-supported by RNA-seq data (Figure 3A-B, Figure 3\u2014figure supplement 1) and validated by in situ hybridization (Figure 3C-D) with literature support (Lewis et al., 2001; Z\u00e1k\u00e1ny et al., 2004; Vokes et al., 2008). The temporal mismatch between Shh and its targets in mouse is a key finding. The authors appropriately acknowledge potential sampling resolution limitations but argue the data quality supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Transcriptomic profiles show highest similarity between mouse E10.5 limb buds and bamboo shark st27.5-30 fin buds across four distance methods, indicating mid-stage conservation over 400 million years of evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by multiple distance measures (Figure 4A, Figure 4\u2014figure supplement 1) showing consistent hourglass-shaped conservation. The use of four different distance methods strengthens confidence in the finding. This represents a major discovery about developmental constraint during fin/limb evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Hox gene expression alone does not reproduce the hourglass-shaped conservation pattern, suggesting other mechanisms constrain the middle stage of development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by comparison of distance measures using only Hox genes (Figure 4C) versus all genes (Figure 4A). This is an important negative result that challenges the hypothesis that Hox genes alone drive the developmental hourglass pattern. The inference about other mechanisms (C72) is reasonable but remains speculative without identifying specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "PCA analysis reveals that PC1 distinguishes species, PC2 correlates with mouse temporal order, and PC3 correlates with shark temporal order. The major loadings consist of conserved late-expressed and heterochronically regulated genes, suggesting heterochronic genes contribute to mid-stage conservation and early/late stage divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 are supported by PCA analysis (Figure 4D-E, Figure 4\u2014figure supplement 2, Table 2). The identification of heterochronic genes in PC2/PC3 loadings provides mechanistic insight into the hourglass pattern. The analysis is technically sound and the interpretation that heterochronic shifts contribute to the pattern is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Stage-associated and tissue-associated genes show relatively low numbers during middle stages of development, with an inverse correlation to hourglass-shaped conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by stage-associated gene analysis (Figure 4\u2014figure supplement 2C) and tissue-associated gene analysis using entropy calculations from ENCODE data (Figure 4F). The inverse correlation between conservation and stage/tissue-specific genes is an important observation that helps explain the hourglass pattern. The methodology using entropy for tissue-specificity is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "ATAC-seq peaks covered 10 of 11 known limb enhancers of the HoxA cluster and showed relatively high FRiP scores compared to ENCODE data, indicating high quality and coverage of regulatory sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 provide important quality control validation for the ATAC-seq data. The coverage of known enhancers (Figure 5A, Figure 5\u2014figure supplement 1) and high FRiP scores (Figure 5B) demonstrate technical quality. This validation is essential for trusting downstream analyses of chromatin accessibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Evolutionarily conserved sequences were most accessible at E10.5 in mouse forelimb buds, with OCRs at E10.5 more frequently containing conserved sequences than other time points, suggesting activation of conserved regulatory sequences may cause hourglass-shaped transcriptomic conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by conservation analysis using both BLASTN (Figure 5C) and LAST (Figure 5D, Figure 5\u2014figure supplement 2) against multiple vertebrate genomes. The convergence of transcriptomic and chromatin accessibility conservation at E10.5 is a major finding. The inference about causation (C88) is appropriately cautious ('may be one of the proximate causes').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Hierarchical clustering of ATAC-seq peaks identified eight clusters (C1-C8) with E10.5-specific peaks (C7) frequently overlapping conserved sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by clustering analysis (Figure 6A) and conservation analysis (Figure 5\u2014figure supplement 2C-D). The identification of distinct temporal clusters of chromatin accessibility is technically sound. The enrichment of conserved sequences in E10.5-specific peaks reinforces the hourglass pattern at the regulatory level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Motif analysis reveals stable peaks enriched for CTCF, E11.5/E12.5-specific peaks enriched for HOX13 motif, and E10.5-specific peaks enriched for LHX1 and HOX9 motifs, with transitional increase in LHX and HOX9 motifs at E10.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 are supported by de novo motif discovery and known motif enrichment analysis (Figure 6A, Figure 6\u2014figure supplements 2-5). The enrichment of CTCF in stable peaks is expected and validates the approach. The correlation between HOX13 motif enrichment and 5' Hox gene expression (C94) and between HOX9 motif enrichment and Hoxd9/Hoxa9 expression (C95) provides strong validation. The LHX motif enrichment is supported by literature (C97 cites Tzchori et al., 2009).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "GO analysis reveals constitutively accessible peaks associate with cellular component genes while dynamically regulated peaks associate with developmental process genes. E10.5-specific OCRs exhibit evolutionary conservation, LHX/HOX9 motifs, and association with developmental genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by GO analysis (Supplementary file 11) and integrate multiple lines of evidence (conservation, motif enrichment, GO terms). The association of dynamic OCRs with developmental genes is biologically meaningful and supports the interpretation that E10.5 represents a critical regulatory stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Differential ATAC-seq analysis shows signals most increased from E9.5 to E10.5, with highest total changes from E10.5 to E11.5, indicating the OCR landscape was most dynamically changing at E10.5 and stage-specific regulatory sequences are most accessible at E10.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by differential ATAC-seq signal analysis (Figure 6B). The finding that regulatory dynamics peak at E10.5 contrasts with transcriptomic findings (fewer stage-specific genes) but is consistent with the hypothesis of complex regulatory control. The inference in C104 is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "E10.5-specific peaks (C7 cluster) show enrichment for limb-specific OCRs compared to other tissues/cells, revealing a unique regulatory landscape at E10.5 enriched for evolutionarily conserved, stage-specific, and tissue-specific OCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by comparison with ENCODE ATAC-seq data from 25 tissues (Figure 6C, Supplementary file 10). The convergence of evolutionary conservation, stage-specificity, and tissue-specificity at E10.5 is a major finding that provides mechanistic insight into the developmental hourglass. The analysis is technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "A remarkable number of genes show highest expression in late mouse limb development but decrease in late shark fin development, potentially explained by gain of upstream transcription factor(s) or signaling molecules in late limb development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 summarizes the heterochronic findings and is well-supported by the transcriptome data (Figure 2). Claim C109 presents a hypothesis ('simplest hypothesis') that is reasonable but speculative. The authors appropriately frame this as a hypothesis rather than a conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The mismatch between Shh and SHH target gene expression peaks may be caused by SHH-independent regulatory mechanisms (GLI3-HOX complex) that are absent in shark fin development. The emergence of GLI3-HOX interaction may be key to the heterochronic shift and autopod acquisition in tetrapods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C113 present a mechanistic hypothesis based on prior literature (Chen et al., 2004) but lack direct experimental evidence in this study. While the hypothesis is plausible and well-reasoned, it remains speculative. The authors appropriately use cautious language ('may be caused by', 'may be a key component'). Testing this hypothesis would require functional experiments beyond the scope of this transcriptomic study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Alternative hypotheses include that shark fin development lost SHH-independent regulation or that heterochronic genes independently shifted expression over 400 million years of evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 appropriately acknowledge alternative explanations for the observed patterns. The authors correctly note the limitation of two-species comparisons for inferring evolutionary directionality. This demonstrates appropriate scientific caution and recognition of the study's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Previous work proposed anterior expansion of SHH-target gene expression domains during fin-to-limb transition, which is likely associated with anatomical changes. Whether this relates to mass heterochronic shifts remains a future research question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 appropriately cite and discuss prior work (Onimaru et al., 2015; Woltering et al., 2020) in context of current findings. Claim C118 appropriately identifies an important future research direction. This discussion contextualizes the current findings within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "While transcriptomic conservation during mid-embryonic development has been widely reported, analysis of regulatory sequence conservation has been incomplete or controversial. This study is the first to convincingly show clear correlation between transcriptomic and OCR conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 appropriately review prior literature (Irie and Kuratani, 2011; Kalinka et al., 2010; Nord et al., 2013; Piasecka et al., 2013; Uesaka et al., 2019) and position the current study's contribution. The claim of being 'first to convincingly show' (C124) is justified given the comprehensive approach combining transcriptomics and chromatin accessibility across developmental time. However, the claim is somewhat strong and could be more nuanced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Evolutionary constraints on gene regulatory apparatus are present during mid-stage development. Mid-stage development is enriched for pleiotropic genes controlled by multiple tissue-specific enhancers rather than constitutive promoters. Complex regulatory sequences controlling pleiotropic genes constrain evolvability due to vulnerability to mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are well-supported by the combined transcriptomic and ATAC-seq data showing inverse correlation between conservation and stage/tissue-specific genes/OCRs. Claim C128 presents a mechanistic speculation that is reasonable but goes beyond the data. The authors appropriately use cautious language ('we speculate') and acknowledge this is specific to limb development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Mass heterochronic shifts of gene expression may have occurred during fin-to-limb evolution. Both transcriptome and chromatin data indicate evolutionary constraint during mid-stage limb development, likely due to gene regulatory complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 appropriately summarize the major conclusions of the study. The evidence for heterochronic shifts (C129) is strong from the transcriptomic data. The evidence for mid-stage constraint (C130) is supported by both transcriptomic and chromatin accessibility data. The causal attribution to regulatory complexity is a reasonable inference but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  }
+]

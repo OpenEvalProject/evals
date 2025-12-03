@@ -1,0 +1,1034 @@
+{
+  "submission": {
+    "id": "3cfbbcb9-85c5-4443-a767-970af148088b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:10:00.411255Z",
+    "updated_at": "2025-12-03T08:10:00.411255Z"
+  },
+  "content": [
+    {
+      "id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "submission_id": "3cfbbcb9-85c5-4443-a767-970af148088b",
+      "content_type": "manuscript",
+      "content_text": "# Quantitative theory for the diffusive dynamics of liquid condensates\n\n## Authors\n\n- Lars Hubatsch<sup>1</sup> ([ORCID: 0000-0003-1934-7437](https://orcid.org/0000-0003-1934-7437))\n- Louise M Jawerth<sup>1</sup> ([ORCID: 0000-0002-7221-939X](https://orcid.org/0000-0002-7221-939X))\n- Celina Love<sup>2</sup>\n- Jonathan Bauermann<sup>1</sup> ([ORCID: 0000-0002-0301-7655](https://orcid.org/0000-0002-0301-7655))\n- TY Dora Tang<sup>2</sup>\n- Stefano Bo<sup>1</sup> ([ORCID: 0000-0002-2738-867X](https://orcid.org/0000-0002-2738-867X))\n- Anthony A Hyman<sup>2</sup>\n- Christoph A Weber<sup>1</sup> ([ORCID: 0000-0001-6279-0405](https://orcid.org/0000-0001-6279-0405)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for the Physics of Complex Systems Dresden Germany\n2. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n3. Center for Systems Biology Dresden Dresden Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nKey processes of biological condensates are diffusion and material exchange with their environment. Experimentally, diffusive dynamics are typically probed via fluorescent labels. However, to date, a physics-based, quantitative framework for the dynamics of labeled condensate components is lacking. Here, we derive the corresponding dynamic equations, building on the physics of phase separation, and quantitatively validate the related framework via experiments. We show that by using our framework, we can precisely determine diffusion coefficients inside liquid condensates via a spatio-temporal analysis of fluorescence recovery after photobleaching (FRAP) experiments. We showcase the accuracy and precision of our approach by considering space- and time-resolved data of protein condensates and two different polyelectrolyte-coacervate systems. Interestingly, our theory can also be used to determine a relationship between the diffusion coefficient in the dilute phase and the partition coefficient, without relying on fluorescence measurements in the dilute phase. This enables us to investigate the effect of salt addition on partitioning and bypasses recently described quenching artifacts in the dense phase. Our approach opens new avenues for theoretically describing molecule dynamics in condensates, measuring concentrations based on the dynamics of fluorescence intensities, and quantifying rates of biochemical reactions in liquid condensates.\n\n## Introduction\n\nLiquid phase separation has emerged as an organizing principle in biology and is thought to underlie the formation of various membrane-less cellular organelles (Banani et al., 2017). Hallmark properties of such organelles are their rapid formation and dissolution, their fusion, and their wetting to membranes (Hyman et al., 2014). Moreover, phase-separated organelles exchange material with their environment leading to dynamic sequestration of molecules, which affects biochemical processes by spatial redistribution of reactants (Moon et al., 2019; Lyon et al., 2021; Saha et al., 2016; Guill\u00e9n-Boixet et al., 2020; Sanders et al., 2020; Yang et al., 2020). Probing the dynamics of condensate components is thus imperative for a quantitative understanding of how they affect the cellular biochemistry (Mir et al., 2019).\n\nTo probe the dynamics of condensates, biomolecules are typically labeled with fluorescent tags. In general, in systems with tagged molecules, various methods exist to characterize molecular properties such as binding rates and diffusion coefficients, including fluorescence correlation spectroscopy (FCS) (Ries and Schwille, 2012; Rigler and Elson, 2012), single-particle tracking (SPT) (Tinevez et al., 2017; Saxton and Jacobson, 1997), and fluorescence recovery after photobleaching (FRAP) (Diaspro, 2010; Stasevich et al., 2010). However, interpretation of the experimental data acquired from such methods requires a rigorous derivation accounting for the underlying physicochemcial processes. This derivation has been achieved for some biological systems and processes, but is lacking for condensates formed by liquid phase separation. Processes that are well-understood include membrane-cytoplasmic exchange and transport (Sprague et al., 2004; Robin et al., 2014; Goehring et al., 2010) as well as chemical reactions (Elson, 2001) or filament turnover (McCall et al., 2019). For liquid condensates, various phenomenological fit functions have been proposed in the literature (e.g. Patel et al., 2015; Banerjee et al., 2017; Hubstenberger et al., 2013, for a broader summary see Taylor et al., 2019). However, it was recently shown that these fits lead to wildly differing estimates of the diffusion constant inside, $D_{in}$ (Taylor et al., 2019). Taylor et al. showed that these discrepancies were attributed to unrealistic assumptions, for\u00a0example infinitely large droplets or infinitely fast diffusion outside the bleach area.\n\nHere, we first introduce a quantitative FRAP method to extract the diffusion coefficient inside, $D_{in}$, purely based on fluorescence measurements inside droplets, without resorting to unrealistic assumptions or requiring knowledge about the partition coefficient, $P$ or diffusion outside, $D_{out}$. Using irreversible thermodynamics, we then derive the theory that connects dynamics inside and outside of the droplet via transport across a finite interface. We use the corresponding dynamic equation to derive a relationship between $P$ and $D_{out}$, which we use to investigate effects of salt addition on $P$. We show that this dynamic equation agrees with our experimentally observed dynamics. By numerically solving the underlying equations, we show that in theory all relevant parameters of the system, $P$, $D_{in}$, and $D_{out}$, can be extracted purely based on knowledge of the dynamics inside the droplet. We find that our measurements are agnostic to breaking radial symmetry, for example by introducing a coverslip or neighboring droplets. Our approach does not suffer from typical limitations of fluorescence-based concentration measurements, such as low fluorescence in the dilute phase and fluorophore quenching in the rich phase. We anticipate that this new understanding will open the door to characterizing dynamical properties such as chemical rates and rheological parameters in multi-component, phase-separated systems.\n\n## Results\n\n### Determining the diffusion constant inside liquid condensates\n\nFirst, we discuss a quantitative method to extract diffusion coefficients of biomolecules in a condensate. After photobleaching, bleached molecules diffuse out and unbleached molecules diffuse into the condensate, until the unbleached components reach the spatially homogeneous level prior to bleaching (Figure 1a, left and middle). Inside a spherical condensate of radius $R$, the concentration of unbleached components, $c_{u}\u2062(r,t)$, follows a diffusion equation (for derivation, see subsequent section),\n\n$$\n\\partial_{t}\u2061c_{u}\u2062(r,t)=-\\nabla\u22c5\ud835\udc8b_{u},\n$$\n\n\n\n$$\n\ud835\udc8b_{u}=-D_{in}\u2062\\nabla\u2061c_{u},\n$$\n\n\n\n$$\nc_{u}(r=R_{-},t),\u2003\u2062r=R,\n$$\n\nwhere $c_{u}(r=R_{-},t)$ is the time-dependent concentration directly inside the interface at $r=R_{-}$. Here, $r$ denotes the radial distance to the center of the condensate. The flux $\ud835\udc8b_{u}$ is given by Fick\u2019s law (Equation (1b)). It vanishes at the condensate center. Moreover, we have $\\nabla=\ud835\udc86_{r}\u2062\\partial_{r}$, with $\ud835\udc86_{r}$ denoting the radial unit vector. During FRAP, the concentration at the interface, $c_{u}(r=R_{-},t)$, changes with time (Figure 1a, middle) and is determined by the physical properties of the condensate environment. This environment is characterized by the diffusion constant and the concentration of unbleached components outside, the distribution of neighboring condensates as well as system boundaries like the coverslip.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68620/elife-68620-fig1-v2.jpg)\n\n**Figure 1.:** Quantitatively measuring $D_{in}$ by extracting intensity at condensate interface.(a) (1) Spatial time course of FRAP recovery after full bleach for PLYS/ATP coacervate droplet. Azimuthal average (orange) is highlighted. (2) To obtain the boundary condition $c(r=R_{-},t)$, fluorescence intensity is extracted approximately $1.4\\mum$ away from the interface (see methods). Data closer to the droplet boundary can be subject to optical artefacts giving rise to an artificially broad interface. Lower panel shows azimuthal averages at different time points. (3) Cost function for fitting. For each fitting step, a numerical solution to Equation (1a) is calculated with a trial $D_{in}$ and the experimentally measured boundary condition from step (2). Subsequently simulation and experiment are compared according to the cost function, before choosing the next trial $D_{in}$. Scale bar, $5\\mum$. (b) Flurorescence recovery inside a PGL-3 condensate, along the radial direction (azimuthal averages, see (a)). $D_{in}$ is extracted by global fitting of Equation (1b) to the experimental profiles, using the experimentally extracted initial and boundary conditions (see panel (a) (1) and (2)). The gray line indicates an offset that comes about due to incomplete bleaching, and a small but visible, fast and uniform recovery with unknown cause (see Materials\u00a0and\u00a0methods). (c) Same as (b) but for ATP/PLYS coacervate droplet. (d) Same as (b) but for a CMD/PLYS coacervate droplet. (e) Cost function (see panel (a)) used to extract $D_{in}$ for a PGL-3 droplet. Due to the smoothness of the cost function, the minimum can be determined with high accuracy. (f) Comparison between $D_{in}$ and viscosity \u03b7 for PGL-3 condensates at different salt concentrations. Viscosity data taken from Jawerth et al., 2018 for untagged PGL-3. Note, GFP-tagged PGL-3 has a higher viscosity than untagged PGL-3, which means the hydrodynamic radius of PGL-3:GFP cannot be directly computed from this panel (Jawerth et al., 2020). Replicates: salt concentration [mM]/#: 50/2, 60/3, 75/3, 90/3, 100/6, 120/4, 150/3, 180/3. (g) Diffusion coefficients for coacervate systems. Each data point represents $D_{in}$ for a single droplet time course. Note the low spread of the measured values. Replicates: CMD/PLYS: 9, PLYS/ATP:16.\n\nTo initially bypass this complex dependence on the condensate environment, we propose to extract the fluorescence concentration of unbleached molecules $c_{u}(r=R_{-},t)$ directly inside of the spherical phase boundary between the condensate and the dilute phase from experimental data after photobleaching (Figure 1a). To achieve spherical symmetry of the recovery inside the droplet, the entire spherical droplet should be bleached. Using the experimentally determined dynamic boundary condition $c_{u}(r=R_{-},t)$, we can accurately determine the diffusion constant inside a condensate, $D_{in}$ (Figure 1f,g), provided $R^{2}/D_{in}\u2272\\tau_{bound}$. Here, $\\tau_{bound}$ is the time scale of recovery at the boundary (see Figure 1a, middle), which in general features a complex dependence on bleach geometry in the dilute phase, the coverslip, and neighboring droplets. Following this idea, we fit the solutions of Equation (1a) to spatio-temporal experimental data, with $D_{in}$ as the only fit parameter. We find very good agreement between experimentally measured and fitted concentration profiles (Figure 1b\u2013d and supp. Videos 1, 2 and 3). Specifically, we consider condensates composed of PGL-3, a main protein component of P granules in the C. elegans embryo (Brangwynne et al., 2009; Griffin, 2015), as well as two synthetic polyelectrolye-complex coacervate systems, Polylysine/ATP (PLYS/ATP) and Carboxymethyldextran/Polylysine (CMD/PLYS).\n\n![Video 1.](https://cdn.elifesciences.org/articles/68620/elife-68620-video1.mp4.jpg)\n\n**Video 1.:** Time course starts after a small time lag due to a fast uniform recovery (see methods). Middle: Diffusion Equation (1) fit to azimuthally averaged droplet intensity with a global fit parameter $D_{in}$. Right: Full model Equation (6) fit to azimuthally averaged droplet intensity.\n\n![Video 2.](https://cdn.elifesciences.org/articles/68620/elife-68620-video2.mp4.jpg)\n\n**Video 2.:** For description see Video 1.\n\n![Video 3.](https://cdn.elifesciences.org/articles/68620/elife-68620-video3.mp4.jpg)\n\n**Video 3.:** For description see Video 1.\n\nWe first compared $D_{in}$ of PGL-3 for different salt concentrations between $50\u2062mM$ and $180\u2062mM$ (see Methods). We find that $D_{in}$ varies by roughly one order of magnitude, between $0.009\\mum^{2}s^{\u22121}$ and $0.070\\mum^{2}s^{\u22121}$. Our trend is in agreement with reported measurements of the viscosity \u03b7, determined by active micro-rheology (Jawerth et al., 2018) for untagged PGL-3 (Figure 1f). Using viscosity data for GFP-tagged PGL-3 (Jawerth et al., 2020), we use the Stokes-Sutherland-Einstein relationship $D_{in}=k_{B}\u2062T/(6\u2062\\pi\u2062a\u2062\u03b7)$ to estimate the hydrodynamic radius of PGL-3:GFP, $a=1.5nm$ (Einstein, 1905; Sutherland, 1905; von Smoluchowski, 1906). This estimate is consistent with the value reported in Liarzi and Epel, 2005. Across all salt concentrations, the average coefficient of variation per condition is found to be $c_{v}=0.22$. Due to the smooth cost function (Figure 1e) this is unlikely to be a stochastic artefact. It rather seems to reflect variation within the experimental assay.\n\nFor the coacervate systems, we find for the diffusion coefficients inside $D_{in}=1.68\\pm0.09\\mum^{2}s^{\u22121}$ for PLYS/ATP coacervates and $D_{in}=5.65\\pm0.32\\mum^{2}s^{\u22121}$ for CMD/PLYS coacervates; see (Figure 1g). The coefficient of variation of these measurements is low enough such that even a single measurement provides a good estimate of $D_{in}$. We find $c_{v}=0.05$ and $c_{v}=0.06$ for PLYS/ATP and CMD/PLYS coacervates respectively. Interestingly, $D_{in}$ for the coacervate droplets is about ten times smaller than the diffusion constant of the dilute polyelectrolytes, $D_{out}$ (Arrio-Dupont et al., 1996; Morga et al., 2019).\n\n### Theory for the dynamics of labeled molecules in phase-separated systems\n\nTo understand the physical origin of the time-dependent concentration of unbleached components at the condensate interface and the phenomenological Equations (1a, b, c) for the dynamics inside a condensate, we need a theory that encompasses diffusion inside, outside and across phase boundaries. Here, we derive such a theory for a system that can be described by a binary, incompressible mixture prior to photobleaching. This binary mixture is composed of condensate material and solvent. The condensate material has a concentration profile, $c_{tot}\u2062(\ud835\udc99,t)=\u03d5_{tot}\u2062(\ud835\udc99,t)/\u03bd$, which can be expressed in terms of a volume fraction profile $\u03d5_{tot}\u2062(\ud835\udc99,t)$ by dividing through the molecular volume of the condensate material, \u03bd. Due to incompressibility, the solvent volume fraction in such a binary mixture is given by $(1-\u03d5_{tot})$. The system prior to photobleaching is assumed to be either at equilibrium, that\u00a0is, a single droplet and $\u2202_{t}\u03d5_{tot}(x,t)=0$, or close to equilibrium, that\u00a0is, a system composed of many droplets undergoing slow Ostwald ripening and fusion and $\\partial_{t}\u2061\u03d5_{tot}\u2062(\ud835\udc99,t)\u22430$. Thus, the (quasi-) stationary profile $\u03d5_{tot}\u2062(\ud835\udc99)$ prescribes a physical constraint for FRAP dynamics.\n\nAfter photobleaching, the system becomes a ternary incompressible mixture composed of bleached ($b$) and unbleached ($u$) components, as well as solvent (Figure 2a). Introducing the volume fraction of the bleached and unbleached components, $\u03d5_{b}$ and $\u03d5_{u}$, the physical constraint for the FRAP dynamics reads\n\n$$\n\u03d5_{tot}(x,t)=\u03d5_{u}(x,t)+\u03d5_{b}(x,t),\n$$\n\nwhere the profiles depend on space and time. The above constraint reflects particle number conservation of bleached and unbleached molecules and becomes a local constraint due to incompressibility. In our work, we focus on FRAP dynamics at thermodynamic equilibrium, where the total volume fraction $\u03d5_{tot}\u2062(\ud835\udc99)$ depends on space only. Please note that that the derivation below can be generalized to non-equilibrium situations where $\u03d5_{tot}$ exhibits a flux (Bo et al., 2021).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68620/elife-68620-fig2-v2.jpg)\n\n**Figure 2.:** (a) Before bleaching, a droplet that is composed of fluorescently labeled molecules can be described by a binary mixture, namely unbleached molecules and solvent. After bleaching, the system is composed of three components, bleached molecules, unbleached molecules and solvent. If the system was at equilibrium prior to bleaching, the sum of bleached and unbleached molecules forms a stationary, non-uniform profile $\u03d5_{tot}\u2062(r)$ (see panel b). (b) Snapshot of model dynamics at $t=0.22\u2062R^{2}/D_{in}$. Initial conditions are $\u03d5_{u}(r,t=0)=\u03d5_{out}\u22c5\u0398(r-R)$, corresponding to a fully bleached droplet. Note that at any time we have $\u03d5_{tot}=\u03d5_{u}+\u03d5_{b}$. (c) Time course of spatial recovery. For long times, when nearly all bleached material has been exchanged, $\u03d5_{u}$ approaches $\u03d5_{tot}$. Panels (c,d) use radial symmetry for illustration purposes, however, the theory is general (see Figure 3).\n\nImmediately after photobleaching, unbleached molecules diffuse into the condensate leading to FRAP dynamics of unbleached molecules inside (Figure 2b,c). At long times, the concentration profile of unbleached molecules approaches the profile prior to photobleaching, $\u03d5_{tot}\u2062(\ud835\udc99)$. The dynamics of both concentration profiles, bleached and unbleached molecules, $c_{i}=\u03d5_{i}/\u03bd_{i}$ ($i=b,u$), with $\u03bd_{i}$ denoting the molecular volumes, is described by the following conservation laws ($j=u,b$),\n\n$$\n\\partial_{t}\u2061c_{i}=-\\nabla\u22c5\ud835\udc8b_{i},\n$$\n\n\n\n$$\n\ud835\udc8b_{i}=-\u0393_{i}\u2062\\nabla\u2061\\mu_{i}-\u0393\u00af_{i\u2062j}\u2062\\nabla\u2061\\mu_{j},\n$$\n\nHere, $\u0393_{i}$ are the Onsager transport coefficients, often referred to as mobilities, and $\u0393\u00af_{i\u2062j}$ are the Onsager cross coupling coefficients obeying $\u0393\u00af_{i\u2062j}=\u0393\u00af_{j\u2062i}=:\u0393\u00af$. In general, both mobility coefficients depend on the volume fractions. According to irreversible thermodynamics, the flux $\ud835\udc8b_{i}$ is driven by gradients in exchange chemical potentials $\\mu_{i}$ and $\\mu_{j}$. In the following, we consider linear response for simplicity. The exchange chemical potentials, $\\mu_{i}=\\delta\u2062F/\\delta\u2062c_{i}$, are linked to the free energy, $F=\\intd^{3}\u2062x\u2062f$, where $f$ denotes the free energy density. Expressing concentrations in terms of the volume fractions, $\u03d5_{i}=c_{i}\u2062\u03bd_{i}$, we describe our incompressible ternary mixture after photobleaching by a Flory-Huggins free energy density (Flory, 1942; Huggins, 1942; Kr\u00fcger et al., 2018):\n\n$$\nf=\\frac{k_{B}T}{\u03bd_{sol}}[\\frac{\u03d5_{u}}{n_{u}}ln\u2061\u03d5_{u}+\\frac{\u03d5_{b}}{n_{b}}ln\u2061\u03d5_{b}+(1\u2212\u03d5_{u}\u2212\u03d5_{b})ln\u2061(1\u2212\u03d5_{u}\u2212\u03d5_{b})+\u03c7_{us}\u03d5_{u}(1\u2212\u03d5_{u}\u2212\u03d5_{b})+\u03c7_{bs}\u03d5_{b}(1\u2212\u03d5_{u}\u2212\u03d5_{b})+\u03c7_{ub}\u03d5_{u}\u03d5_{b}+\\frac{\u03ba_{u}}{2}(\u2207\u03d5_{u})^{2}+\\frac{\u03ba_{b}}{2}(\u2207\u03d5_{b})^{2}+\\frac{\u03ba_{ub}}{2}\u2207\u03d5_{u}\u22c5\u2207\u03d5_{b}],\n$$\n\nwhere we write the molecular volumes of bleached and unbleached components in ni multiples of the solvent molecular volume $\u03bd_{sol}$, that\u00a0is, $\u03bd_{i}=n_{i}\u2062\u03bd_{sol}$. Moreover, $\u03c7_{i\u2062j}$ denote dimensionless Flory-Huggins parameters characterizing the interactions between different components $i$ and $j$, where subscript $s$ indicates the solvent. The parameters $\u03ba_{i}$ and $\u03ba_{u\u2062b}$ characterize the free energy penalties for spatial heterogeneities and are linked to the surface tensions.\n\nIf photobleaching does not affect the molecular interactions or molecular volumes, the free energy density above can be simplified significantly (Appendix of Kr\u00fcger et al., 2018). In this case, the interactions between unbleached and solvent, and bleached and solvent components are equal, $\u03c7_{u\u2062s}=\u03c7_{b\u2062s}=:\u03c7$, and cross interactions vanish, $\u03c7_{u\u2062b}=0$. Moreover, molecular volumes of bleached and unbleached components are equal, $n_{u}=n_{b}=:n$, and the parameters characterizing free energy penalties for spatial heterogeneities obey $\u03ba_{u}=\u03ba_{b}=:\u03ba$ and $\u03ba_{u\u2062b}=2\u2062\u03ba$. Thus, the simplified free energy reads\n\n$$\nf=\\frac{k_{B}\u2062T}{\u03bd_{sol}}\u2062[\\frac{\u03d5_{u}}{n}\u2062ln\u2061\u03d5_{u}+\\frac{\u03d5_{b}}{n}\u2062ln\u2061\u03d5_{b}+(1-\u03d5_{u}-\u03d5_{b})\u2062ln\u2061(1-\u03d5_{u}-\u03d5_{b})+\u03c7\u2062(1-\u03d5_{u}-\u03d5_{b})\u2062(\u03d5_{u}+\u03d5_{b})+\\frac{\u03ba}{2}\u2062(\\nabla\u2061(\u03d5_{u}+\u03d5_{b}))^{2}].\n$$\n\nTo ensure a constant diffusion coefficient in the dilute limits of the bleached and unbleached components, we employ the scaling ansatz for a ternary mixture, $\u0393_{i}=\u0393_{0}\u2062\u03d5_{i}\u2062[(1-\u03d5_{tot})+(\u0393\u00af_{0}/\u0393_{0})\u2062\u03d5_{j}]$ and $\u0393\u00af=-\u0393\u00af_{0}\u2062\u03d5_{u}\u2062\u03d5_{b}$. In general, both mobility functions, $\u0393_{0}$ and $\u0393\u00af_{0}$, depend on the total volume fraction $\u03d5_{tot}$. For the limiting case where bleached and unbleached molecules are identical particles, we can choose $\u0393_{0}=\u0393\u00af_{0}$. Applying the equilibrium FRAP condition (2) and using Equation (3a, b), we find that the concentration of unbleached components is governed by the following diffusion equation\n\n$$\n\\partial_{t}\u2061c_{u}=\\nabla\u22c5[D\u2062(\u03d5_{tot})\u2062(\\nabla\u2061c_{u}-c_{u}\u2062\\frac{\\nabla\u2061\u03d5_{tot}}{\u03d5_{tot}})],\n$$\n\nwith a $\u03d5_{tot}\u2062(\ud835\udc99)$-dependent diffusivity, $D\u2062(\u03d5_{tot})=k_{B}\u2062T\u2062\u0393_{0}\u2062(\u03d5_{tot})$. As we show in Bo et al., 2021 a similar approach can be used to investigate single-molecule dynamics across phase boundaries.\n\nSimilar to Equation (1), the diffusion equation above is linear in cu. However, the dynamics of unbleached components are affected by gradients in $\u03d5_{tot}\u2062(\ud835\udc99)$ and components diffuse with different diffusion coefficients inside and outside the condensate, where in each phase $\\nabla\u2061\u03d5_{tot}=0$ (Figure 2b). The position-dependence of $\u03d5_{tot}\u2062(\ud835\udc99)$ is given by the equilibrium condition of a homogeneous chemical potential of the binary mixture prior to photobleaching, which implies $\\partial_{t}\u2061\u03d5_{tot}=0$. For a radially symmetric system with $r$ denoting the radial coordinate, $\u03d5_{tot}\u2062(r)=\u03d5_{out}^{eq}+(\u03d5_{in}^{eq}-\u03d5_{out}^{eq})\u2062H\u2062((r-R)/\u2113)$, where $\u03d5_{in}^{eq}$ and $\u03d5_{out}^{eq}$ are the equilibrium volume fractions inside and outside, respectively, $R$ is the droplet radius, and $\u2113$ denotes the width of the interface. Moreover, $H\u2062((r-R)/\u2113)$ is a function that decreases from one to zero at $r=R$ on an interface width $\u2113$. For phase separation close to the critical point and large droplet sizes, $H\u2062(x)=(1+tanh\u2061(x))/2$ (Bray, 1994; Weber et al., 2019). We numerically solve Equation (6) using a finite element method (Anders et al., 2012) in a finite domain of size $L$ which is much larger than the droplet radius $R$ and fit the solution to experimental data.\n\nIn summary, our model has seven parameters. Four of these, namely, the equilibrium volume fractions $\u03d5_{in}^{eq}$ and $\u03d5_{out}^{eq}$, the interface width $\u2113$, and\u00a0the droplet radius $R$, characterize the equilibrium profile prior to bleaching $\u03d5_{tot}\u2062(\ud835\udc99)$. The remaining parameters are the system size $L$ and the diffusion coefficients inside and outside, which are given as\n\n$$\nD_{in}=k_{B}\u2062T\u2062\u0393_{0}\u2062(\u03d5_{in}^{eq}),\n$$\n\n\n\n$$\nD_{out}=k_{B}\u2062T\u2062\u0393_{0}\u2062(\u03d5_{out}^{eq}).\n$$\n\nFor the case of a single, spherical droplet with an infinitely thin interface (Weber et al., 2019), we can derive an effective droplet model for the unbleached component from Equation (6), where the dynamics of unbleached components inside and outside are given by diffusion equations that are coupled by boundary conditions (see Appendix\u00a01 for the derivation):\n\n$$\n\\partial_{t}\u2061c_{u}\u2062(r,t)=D_{in}\u2062\\nabla^{2}\u2061c_{u},for\u2062r<R,\n$$\n\n\n\n$$\n\\partial_{t}\u2061c_{u}\u2062(r,t)=D_{out}\u2062\\nabla^{2}\u2061c_{u},for\u2062r>R,\n$$\n\n\n\n$$\n-D_{in}\u2062\ud835\udc86_{r}\u22c5\\nabla\u2061c|_{R_{-}}=-D_{out}\u2062\ud835\udc86_{r}\u22c5\\nabla\u2061c|_{R_{+}},\n$$\n\n\n\n$$\nc_{u}(r=R_{-},t)=Pc_{u}(r=R_{+},t).\n$$\n\nHere, $R_{-}$ and $R_{+}$ denote the radial position directly inside and outside the droplet interface, respectively. Equation (8c) describes an equality of the fluxes directly inside and outside of the interface, respectively, and thereby expresses particle number conservation at the interface $r=R$. Equation (8d) describes a jump in concentration of unbleached components, which is determined by the thermodynamic partition coefficient\n\n$$\nP=\\frac{\u03d5_{in}^{eq}}{\u03d5_{out}^{eq}}.\n$$\n\nMoreover, the flux vanishes at the origin $r=0$, $\ud835\udc86_{r}\u22c5\\nabla\u2061c|_{r=0}=0$, and at the system boundary $r=L$, $\ud835\udc86_{r}\u22c5\\nabla\u2061c|_{r=L}=0$.\n\nAbove we provide a thermodynamic derivation of Equations (8) in the limit of thin interfaces. These equations were already proposed as a model for FRAP dynamics of protein condensates (Taylor et al., 2019). Interestingly, while we obtained Equations (8) for the dynamics of a phase-separated protein component undergoing fluorescence recovery, similar equations were also used to investigate diffusion of a protein that was added to an already existing two-phase system at thermodynamic equilibrium (M\u00fcnchow et al., 2008).\n\nIn Equations (8) $D_{in}$, $D_{out}$, and $P$ are considered to be independent parameters. Strictly speaking, due to phase separation, the diffusion coefficients $D_{in}$ and $D_{out}$ are not independent which is evident in Equations (7). For example, in the absence of phase separation or at the critical point, $\u03d5_{in}^{eq}=\u03d5_{out}^{eq}$ (i.e. $P=1$), the diffusion coefficients inside and outside must be equal, $D_{in}=D_{out}$. For a given condensate with fixed $\u03d5_{in}^{eq}$ and $D_{in}$, there is a relationship between the diffusivity outside $D_{out}$ and the partition coefficient $P$, which can be expressed using Equations (7) as\n\n$$\nD_{out}\u2062(P)=D_{in}\u2062\\frac{\u0393_{0}\u2062(\u03d5_{in}^{eq})}{\u0393_{0}\u2062(\u03d5_{in}^{eq}/P)}.\n$$\n\nHowever, except for the limit $P\u21921$, Equation (10) does not impose further constraints for the determination of the parameters since the mobility function $\u0393_{0}\u2062(\u03d5_{tot})$ is unknown. For large $P$, the missing knowledge of the mobility function renders $D_{out}$, $D_{in}$ and $P$ as effectively independent parameters. This provides a theoretical justification for the assumption made by Taylor et al., 2019.\n\nIn the following, we use our theory (Equation (6)) to investigate the impact of the condensate environment on the FRAP dynamics. In particular, we consider how a passivated coverslip (no wetting of condensates) and nearby condensates affect the influx of unbleached molecules and thereby the recovery dynamics. Lastly, given the concentration at the droplet boundary, $c(r=R,t)$, we derive a relationship between $D_{out}$ and $P$. This can be used to investigate changes of the partition coefficient, for example when changing salt concentrations. Importantly, this method does not rely on absolute fluorescence intensities when measuring concentrations in the dense and dilute phases, which are prone to artefacts (McCall et al., 2020).\n\n### Impact of non-wetting coverslip on FRAP dynamics\n\nHere, we investigate the influence of the coverslip surface on the FRAP dynamics of non-wetting spherical droplets. Under typical in vitro conditions, condensates sediment due to gravity, leading to sessile droplets on a coverslip. In many experimental setups, coverslips are passivated, for\u00a0example pegylated, in order to suppress wetting of condensates on the coverslip surface (Alberti et al., 2018). These experimental conditions lead to almost spherical droplets since capillary effects are typically negligible for micrometer-sized polymer-rich or protein-rich droplets (Park et al., 2013; McCall et al., 2020).\n\nWe numerically solved Equation (6) for a spherical condensate on top of a no-flux boundary that mimics the coverslip surface (Figure 3a). We find that the recovery of the average volume fraction inside the condensate can slow down compared to the case without a coverslip (Figure 3b). This slow-down vanishes if droplets have a distance to the coverslip surface larger than a few droplet diameters. Moreover, we find that the slow-down is more pronounced for larger partition coefficients $P$. This trend can be explained by the size of the region in the dilute phase from where most unbleached molecules are recruited: if $P$ is small, most of the unbleached molecules come from the immediate surroundings of the condensate. Hence the influence of radial asymmetry is minimal and the recovery appears almost unchanged compared to the case without coverslip. However, for large $P$, the condensate recruits unbleached molecules from distances far away, limiting the recruitment to an effective half-space compared with the case without coverslip. Indeed, for very large $P$ recovery rates slow down maximally by a factor of two.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68620/elife-68620-fig3-v2.jpg)\n\n**Figure 3.:** (a) Sketch of a typical experimental set-up with a droplet above a passivated coverslip, where the droplet center has a distance $h>R$ to the coverslip. (b) Recovery of average unbleached volume fraction $\u03d5\u00af_{u}(t)=\\intd^{3}r\u03d5_{u}(r,t)\u22c53/(4\\piR^{3})$ for different heights $h$ above the coverslip at different partition coefficients $P$. Results were obtained by\u00a0solving Equation (6) using the finite element method and considering the geometries depicted in (a). For even larger $h$-values (e.g. no coverslip), results are approximately equal to the blue dashed line. (c) Using the method introduced in Figure 1 on the scenario with the largest influence of the coverslip (droplet sessile on coverslip)\u00a0$h=0.25\\mum$ in (a) results in an excellent fit and can reliably extract the input $D_{in}$. (d) Sketch of neighboring droplets next to a bleached droplet. (e) Total recovery curves for finite element simulations of the geometry depicted in (d), for different distances between neighboring droplet centers, at different partition coefficients $P$. Note the strong dependence on the distance of neighboring droplets. For even larger $d$-values (e.g. no neighboring drops), results are approximately equal to the blue dashed line. (f) Same as (c) but for largest influence of neighboring droplets, that\u00a0is $d=0.5\\mum$, where there is no distance between bleached droplet and neighboring droplets.\n\nInterestingly, by extracting the boundary concentration in mid-plane, similar to the procedure in Figure 1, and spatially fitting the solutions of Equation (1a) to the ensuing recovery profiles, we can reliably recover the input diffusion coefficient $D_{in}$ (Figure 3c). The reason for this agreement is that by considering the intensity at the condensate interface, our method is independent of the time scale set by diffusion in the dilute phase.\n\n### Impact of neighboring condensates on FRAP dynamics\n\nIn this section, we address the impact of neighboring condensates on the recovery dynamics. We solved Equation (6) for a system composed of a bleached condensate with four unbleached neighboring condensates of the same size (Figure 3d) and find that neighboring condensates can significantly speed\u00a0up the recovery dynamics (Figure 3e). This speed-up is only pronounced for rather close condensates with inter-droplet distance on the order of condensate size. Moreover, similar to the impact of the coverslip, the effects of the recovery dynamics are stronger for larger partition coefficients $P$. For small $P$, most unbleached molecules are recruited from the dilute phase leading to almost no effect on the recovery also when condensates are very close to each other (Figure 3e, left). For large partition coefficients $P$, however, a certain fraction of molecules are recruited from the neighboring condensates causing a significant speed-up of the recovery (Figure 3e, right).\n\nAgain, despite this change in total recovery due to close-by neighboring droplets, we can reliably measure $D_{in}$ via our spatial fitting method (Figure 3f). In particular, by extracting the boundary intensity in mid-plane and spatially fitting the solutions of Equation (1a), we find very good agreement with our input $D_{in}$. This agreement shows that our method is robust for typical experimental systems that deviate from an ideal, isolated condensate.\n\n### Interfacial flux relates partition coefficient and outside diffusivity\n\nWe have shown that by using the time-dependent fluorescence at the interface of a spherical droplet we can accurately fit our dynamic Equation (1) to our experimental data and thus determine the diffusion constant inside the droplet, $D_{in}$ (Figure 1a). Our theory (see Equation 6) suggests that the fluorescence at the droplet interface is affected by the physical parameters characterizing the droplet environment such as the diffusion coefficient $D_{out}$ and the partition coefficient $P$. In particular, the flux through the droplet interface is enlarged for increasing $D_{out}$ or decreasing $P$ (see Equation (8c) after rescaling the concentration close to the\u00a0interface). Thus, for a condensate with concentration $\u03d5_{in}^{eq}$ and diffusion coefficient $D_{in}$, a given flux between both phases through the interface implies a relationship between $D_{out}$ and $P$.\n\nHere, we determined the relationship between $D_{out}$ and $P$ by fitting numerical solutions of Equation (6) to the recovery dynamics inside the droplet (Figure 4b\u2013d and Videos 1, 2 and 3). The diffusion coefficient inside, $D_{in}$, was independently determined for each experiment via our method introduced in Figure 1a. This leaves $P$ and $D_{out}$ as independent parameters, which is valid for large $P$ (see discussion after Equation (10)). We thus sampled $P$ (with $P\u226b1$) across three orders of magnitude and obtained the best-fitting $D_{out}$ for each $P$ (Figure 4e,f). Notably, all the combinations of $D_{out}$ and $P$ represent relatively good fits, and each experimental condition leads to a unique relationship $D_{out}\u2062(P)$. For large $P$, we find that the best $D_{out}$ scales linearly with $P$ (dashed lines in Figure 4e,f); for a discussion on the origin of this scaling, please refer to Appendix 2.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68620/elife-68620-fig4-v2.jpg)\n\n**Figure 4.:** Varying partition coefficient $P$ and diffusivity outside $D_{out}$ simultaneously can lead to similar recovery kinetics.(a) Schematics of the fitting approach used to extract\u00a0the relationship between $P$ and $D_{out}$. Although there is one specific pair ($P$, $D_{out}$) with the lowest cost (see Figure 5), there is a line in ($P$, $D_{out}$) space, which produces good fits for a range of values. (b) Spatial recovery of a single PLYS/ATP droplet (blue) with a fit to the full model (black). Note, data close to the droplet boundary cannot be fit, due to optical artefacts giving rise to an artificially broad interface (see Materials\u00a0and\u00a0methods and Figure 1a). (c) Same as (b) for a CMD/PLYS coacervate droplet. (d) Same as (b) for a PGL-3 droplet. (e) Given the partition coefficient $P$, $D_{out}$ is found by fitting the coacervate data to the model. Note the convergence to a power law, $D_{out}\u221dP^{n}$ with $n=1$ for large partition coefficients (gray dashed line; for a discussion see Appendix 2). Shaded area around curves: standard deviation. Replicates: same as in Figure 1g. (f) Same as (e) but for PGL-3 with different salt concentrations. Note the order from top to bottom from highest to lowest salt concentration. (g) Based on (f), the change of partition coefficient $P\u2062(c_{salt})$ can be estimated for a given $D_{out}$. Confidence intervals not shown for clarity. Similar to panel e. Replicates: same as in Figure 1f.\n\nWe would like to draw attention to the values of $P$, which are higher than expected (A.W. Fritsch and J.M. Iglesias-Artola, personal communication), for a realistic parameter range $50\\mum^{2}s^{\u22121}<D_{out}<100\\mum^{2}s^{\u22121}$. One reason for this discrepancy is the assumption of spherical symmetry for the fitting routine leading to absolute values of $P$ that are overestimated up to twofold (see caption of Figure 3 for a discussion). Additionally, our current experiments cannot exclude boundary effects, such as a recently hypothesised interfacial resistance (Taylor et al., 2019). Equation (6) should therefore be interpreted as a minimal model that fits the available data with high accuracy and explains the boundary dynamics, but cannot rule out additional effects.\n\nThus, the relationship $D_{out}\u2062(P)$ has to be assessed critically. Since $P$ and $D_{out}$, in conjunction with $D_{in}$, set the time scale for recovery at the boundary, any effects that are ignored would change this relationship. Since the boundary time scale is well-described by $D_{out}\u221dP$, this change would likely manifest itself as a constant prefactor in each curve in Figure 4e,f. We thus only interpret the ratio between curves in Figure 4e,f, instead of their absolute values.\n\nConsidering this ratio allows us to investigate how the addition of salt affects the partition coefficient of PGL-3, assuming that boundary effects and $D_{out}$ are independent of $c_{salt}$. Figure 4f indicates that for all salt concentrations we have $D_{out}\u221dP$ for $D_{out}>1\\mum^{2}s^{\u22121}$. For proteins and coacervate components we can safely assume $D_{out}>10\\mum^{2}s^{\u22121}$ in solution. Consequently, we chose $D_{out}=10\\mum^{2}s^{\u22121}$ and calculated how the partition coefficient $P$ changes with salt concentration $c_{salt}$ (Figure 4g). Specifically, for salt concentrations in the range from 50 mM to 180 mM, we find that the estimated partition coefficient $P$ of PGL-3 droplets decreases approximately 10-fold. This trend is probably a result of enhanced screening of charged groups for increasing salt concentration.\n\n### Proposal how to determine partition coefficient and outside diffusivity\n\nWe next asked, whether we can obtain both parameters, $P$ and $D_{out}$, at the same time, without measuring fluorescence intensities outside the droplet. Although each combination ($D_{out}$, $P$) along the lines specified in Figure 4e,f leads to a reasonable fit, we will now show that there is a distinct combination that exhibits a global minimum of the cost function for each $D_{out}\u2062(P)$. Here, we assume no resistance at the interface as proposed in M\u00fcnchow et al., 2008; Hahn et al., 2011; Hahn and Hardt, 2011. Providing experimental evidence of this global minimum can be hampered by effects due to the droplet environment, such as neighboring droplets or the coverslip surface (Figure 3a,d), inhomogeneous bleaching in the dilute phase, imaging artefacts at the phase boundary and effects at the droplet boundary not accounted for in Equation (6). In particular, in our experimental studies, interdroplet distances are sometimes on the order of the droplet size and diffusive exchange is affected by the coverslip. Thus, we decided to use our model to create in silico data and provide evidence for the existence of a distinct combination of $D_{out}$ and $P$ for a fixed $D_{i\u2062n}$. Fixing $D_{in}$ mimics the approach of initially determining $D_{in}$, as outlined in Figure 1. To determine the relationship $D_{out}\u2062(P)$, we proceed as described for Figure 4. Figure 5a depicts the $D_{out}\u2062(P)$ relationships corresponding to four parameter combinations in a range relevant for protein condensates and coacervate droplets (Drobot et al., 2018; Riback et al., 2020). In particular, we choose two outside diffusivities $D_{out}$ of $0.1\\mum^{2}s^{\u22121}$ and $1\\mum^{2}s^{\u22121}$ and two partition coefficients, $P=5$ and $P=150$. We find indeed that each cost function exhibits a unique minimum for each of the considered parameter combinations (Figure 5b,c). These findings indicate that all three parameters, $D_{in}$, $D_{out}$ and $P$, can in theory be determined by a single FRAP time course of the droplet intensity inside. Thus, in principle, there is no need to measure kinetic properties of the dilute phase to fully characterise the system in terms of its parameters. This possibility represents a new approach to characterize the partition coefficient $P$, which is particularly important in light of recent data showing that measurements based on fluorescence intensity can lead to drastic underestimation of $P$ (McCall et al., 2020).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68620/elife-68620-fig5-v2.jpg)\n\n**Figure 5.:** Given the recovery dynamics inside a condensate, the key parameters $D_{\ud835\udc22\ud835\udc27}$, $D_{\ud835\udc28\ud835\udc2e\ud835\udc2d}$ and $P$ can in theory be determined uniquely without measuring the outside dynamics, using Equation (6).(a) Given the partition coefficient $P$, $D_{out}$ is found by fitting the model to synthetically generated example data. As example systems, indicated by open circles, we consider in silico data, obtained by solving Equation (6) with known parameters $P$ and $D_{out}$. To mimic the approach of initially determining $D_{in}$ (see Figure 1) we keep $D_{in}=0.01\\mum^{2}s^{\u22121}$ for all in silico datasets. For each example system (open circles), the best fitting $D_{out}$ is found given a range of $P$ (solid lines). Parameters used were as follows: pink circle: $D_{out}=0.1\\mum^{2}s^{\u22121}$, $P=5$, orange circle: $D_{out}=1\\mum^{2}s^{\u22121}$, $P=5$, green circle: $D_{out}=0.1\\mum^{2}s^{\u22121}$, $P=150$, blue circle: $D_{out}=1\\mum^{2}s^{\u22121}$, $P=150$. (b) Cost function (colorbar, log-scale) as a function of $D_{out}$ and $P$. We note that the global minimum coincides with the parameters used to generate the synthetic data (green circle). The valley in parameter space (dashed line) corresponds to the green line in (a). (c) Minimum of cost function for each $P$, corresponding to curves shown in (a). This minimum corresponds to the valley indicated by the dashed line in (b). Note the minimum at the input parameter set, which indicates uniqueness of the outside dynamics for given values of $D_{out}$ and $P$.\n\n## Discussion\n\nThe dynamic redistribution of fluorescent molecules has been used to characterize liquid phase separation in biology via a variety of techniques, including SPT, FRAP, and FCS (Elbaum-Garfinkle et al., 2015; Taylor et al., 2019; Moon et al., 2019). Here, we have derived a theory that describes the diffusive motion of labeled molecules based on the physics of phase separation. It can be applied to many state-of-the art fluorescent methods such as FCS, SPT, and FRAP and can thus help extend traditional techniques to the realms of phase separation (Ries and Schwille, 2012). Importantly, this theory enables us to avoid commonly applied approximations such as the frequently used single-exponential recovery (Brangwynne et al., 2009; Frottin et al., 2019; Kaur et al., 2019; Fisher and Elbaum-Garfinkle, 2020; Kistler et al., 2018).\n\nOur theory, essentially represented by Equation (6), governs the dynamics of labeled molecules through interfaces of condensates. As we show in our work, it can be applied to spherical condensates. In addition, our theory could also be used for non-spherical condensates and arbitrary bleach geometries, since spherical symmetry is only assumed for ease of data analysis. We were able to quantify the impact of neighboring droplets and the coverslip on the recovery dynamics. We found that neighboring droplets caused an appreciable speed-up in overall recovery, while emulating a coverslip caused a weak slow-down. In order to experimentally verify our theory, we have used three in vitro droplet systems, two composed of charged synthetic polymers and one with a purified protein component. There is remarkable quantitative agreement between our theory and the diffusion dynamics observed inside such droplets. This agreement shows that proteins and charged, synthetic polymers can form droplets that follow simple diffusive dynamics. Crucially, we use the full spatio-temporal data for fitting and can thus distinguish the timescale set by intra-droplet diffusion from the timescales at play in the dilute phase. We extract the intensity directly at the inside of the droplet interface and fit a spatially resolved diffusion equation to the ensuing recovery. We use the boundary intensity as a dynamic boundary condition and the experimentally measured profile as initial condition. Within the statistical fluctuations, the numerical solutions and the experimental data are not distinguishable (see Figure 1b\u2013d). Throughout the time course, we find excellent agreement with the data and have thus found a method with minimal approximations that can precisely measure the inside diffusion coefficient $D_{in}$.\n\nBuilding on the analysis inside the droplet, we show that there is a relationship between partition coefficient $P$ and the diffusion coefficient in the dilute phase, $D_{out}$. Data obtained from FRAP experiments define a line in ($D_{out}$, $P$) space, along which a range of parameter sets can reliably account for the boundary dynamics. This relationship allowed us to characterize changes in $P$ upon salt addition, opening an alternative avenue for characterizing $P$ without relying on fluorescence intensities. This is particularly important in light of recent results obtained by quantitative phase microscopy (QPM). These results show that measuring partition coefficients based on fluorescence intensity can lead to strong underestimation of $P$ (McCall et al., 2020). While it is tempting to interpret our values for $P$ as actual partition coefficients, we would like to stress that these values were obtained from a physical model, which does not consider additional effects at the condensate interface such as a potential interfacial resistance. This effect has recently been hypothesized to solve a contradiction in time scales between FRAP and FCS experiments (Taylor et al., 2019). However, introducing an interfacial resistance significantly lowered the fit quality in Taylor et al., 2019, an issue that has yet to be resolved. In this context, it will be interesting to reexamine work for three-component systems (Binks and Lumsdon, 2000; Lin et al., 2003). Some evidence for an interfacial resistance across a PEG/Dextran interface has been found for some types of molecules, for\u00a0example DNA, bovine serum albumin, and bovine \u03b3-globulin (Hahn and Hardt, 2011; Gebhard et al., 2021). Measuring $D_{out}$ via FCS, similar to Taylor et al., 2019, and partition coefficients via QPM (McCall et al., 2020), will allow further characterization of the existence of interfacial effects.\n\nOur approach can be readily extended to multi-component systems with an arbitrary number of components, which is particularly useful in vivo. This would hardly be\u00a0possible for techniques that do not use labeled components, such as QPM or other scattering methods. Of particular interest are multi-component systems with chemical reactions away from equilibrium. Our approach can then be used to determine the diffusion coefficients and concentration levels of reactants, and thereby provide insights into reaction kinetics. Interestingly, introducing the bleached molecules via a ternary mixture also enabled us to derive the Langevin equation governing single-molecule motion in phase-separated media, thus providing a link to SPT (Bo et al., 2021). Approaches for single labeled molecules are relevant since high labeling fractions were shown to alter the viscosity and thus kinetics in dense protein phases (compare viscosity for PGL-3 in Jawerth et al., 2018 with viscosity for tagged\u00a0PGL-3:GFP Jawerth et al., 2020 ). Finally, by accurately measuring $D_{out}$, our technique can also be employed to characterize rheological properties of condensates such as the recently reported glass-like dynamics of protein droplets (Jawerth et al., 2020).\n\n## Materials and methods\n\n### Coacervate assay\n\n#### General reagents\n\nCarboxymethyl-dextran sodium salt (CM-Dex, (C6H10O5)n.(COOH), 10\u201320\u00a0kDa, monomer MW =\u00a0191.3g/mol), Poly-L-lysine hydrobromide (PLys, (C6H12N2O)n, 4\u201315\u00a0kDa, monomer MW = 208.1g/mol) and adenosine 5\u2019-triphosphate disodium salt hydrate (ATP, C10H14N5Na2O13P3, MW = 551.1g/mol) were purchased from Sigma Aldrich. FITC-PLys ((C6H12N2O)n.(C21H11NO5S), $25\u2009000\u2062g/mol$) was purchased from Nanocs, NewYork, USA . Milli Q water was used to prepare aqueous stocks of CM-Dex (1000\u00a0mM, pH 8), PLys (200\u00a0mM, pH 8) and ATP (100\u00a0mM, pH 8). All solutions were stored in the freezer at -20 until use and the pH of all stocks was adjusted using a stock solution of 1M NaOH.\n\n#### Coacervate preparation\n\nStock solutions of CM-Dex, PLys and ATP were first diluted to 25\u00a0mM and the PLys solution doped with 1% v/v PLys-FITC. Diluted solutions of CM-Dex/PLys or PLys/ATP were then mixed together at a 4:1 vol ratio (16\u00a0\u03bcl), resulting in the formation of turbid coacervate solutions. Solutions were left to equilibrate for at least 5 min before imaging, up to a maximum of 15 min when larger droplets were desired.\n\n### PGL-3 droplets\n\nPGL-3 was purified and stored as previously described (Saha et al., 2016). To obtain droplets, 300\u00a0mM KCl stock protein solution was diluted to the desired concentration, achieving final salt concentrations of 50\u2013180\u00a0mM. A small imaging volume was created by using polystyrene beads, resulting in complete droplet sedimentation after less than five minutes. Droplets were imaged immediately to avoid changes in material properties due to ageing (Jawerth et al., 2020).\n\n### Microscopy and FRAP\n\n#### Confocal imaging\n\nDroplets were imaged at midplane by visually defining the focal position with the largest droplet area of the droplet of interest. Images were acquired on an Andor spinning disk confocal microscope equipped with an Andor IX 81 inverted stand, a FRAPPA unit, an Andor iXON 897 EMCCD camera, and a 488 nm laser, using a 60x/1.2 U Plan SApo OLYMPUS water objective. Imaging conditions were optimized for minimal bleaching at the required frame rate. Frame rates were optimised for each system: PGL-3, $0.1\u2062s<\u0394\u2062t<5\u2062s$, CMD/PLYS, $\u0394t=0.03s$, PLYS/ATP, $\u0394t=0.07s$.\n\n#### Frap\n\nDroplets were bleached in their entirety by using the minimal FRAP ROI that encompasses the entire droplet. FRAP was performed in three focal planes, equally spaced across the droplet in z-direction, to reduce non-uniform bleaching of the droplet. FRAP rates and dwell times were chosen such that left-over fluorescence intensity above background was smaller than 1% for PGL-3 and smaller than 15% for coacervate droplets to maximize bleaching within the droplet while keeping bleaching impact on the droplet environment minimal.\n\n### Data analysis\n\n#### Azimuthal averaging and normalization\n\nTime-lapse images were cropped with the droplet of interest in the center. An azimuthal average was performed around the center of the droplet to obtain a 1D profile along the radial coordinate with minimal loss of data, using the radialavg function provided by David J. Fischer on Matlab File Exchange (Fischer, 2016). Camera background was subtracted uniformly from the resulting 1D profiles. The radial intensity profile at the prebleach stage was used for normalization and to correct for optical artefacts that lead to increased fluorescence at the droplet center compared to the droplet-bulk interface. Data close to the droplet interface cannot be used for fitting, since the droplet has an artificially broad boundary due to the point-spread function and likely due to curvature effects. Therefore, on average, the intensity of the ten pixels closest to the boundary were not used for analysis. The droplet boundary was defined as the inflection point of the azimuthally averaged profile in the pre-bleach frame.\n\nImmediately after bleaching, a uniform recovery across the entire droplet can be seen, which cannot be spatially resolved even at frame rates $<30ms$. This recovery is fast compared to the recovery by diffusion from the outside for all systems under investigation. We thus chose to not account for this uniform recovery in our model and instead start the fitting after a time lag that depends on the system and droplet size. This offset typically consists of less than 5% of the total pre-bleach intensity. Additionally, bleaching is not complete, resulting in an additional offset above the camera background even immediately after bleaching (see gray lines in Figure 1).\n\nPhoto-bleaching due to continuous imaging was minimal in all droplet types. We thus chose to not account for imaging-induced photo-bleaching, in order to not introduce additional noise due to necessarily occurring fluctuations within the bleach correction.\n\n#### Extracting experimental boundary conditions\n\n$c_{u}(r=R_{-},t)$ was extracted from the intensity profiles as the value at the outermost pixel. In order to speed up fitting and avoid jumps in $c_{u}(r=R_{-},t)$, the extracted intensity values were sorted to eliminate small fluctuations.\n\n#### Fitting of Din by using experimentally measured boundary conditions (Figure 1)\n\nThe resulting spatio-temporal profiles were fit as described in the main text, using $D_{in}$ as a single global fit parameter and using $c_{u}(r=R_{-},t)$ as described above as the system\u2019s time-dependent boundary condition. Fits were performed in MATLAB (Mathworks), using pdepe to solve the PDE and fminsearch for minimizing the squared distance between data and model. Code is available at https://gitlab.pks.mpg.de/mesoscopic-physics-of-life/DropletFRAP\u00a0(Hubatsch, 2021a; copy archived at swh:1:rev:7e5b59fff3c634cfce5d0f99a86c807635a090fd).\n\n### Numerical solution of Equation (6)\n\nEquation 6 was solved using either pdepe (MATLAB (Mathworks), Figures 4 and 5, for spherically symmetric systems) or by using the finite element method via the FENICS environment (Anders et al., 2012) for arbitrary 3D geometries (Figure 3). All fits in Figures 4 and 5 were performed using fminsearch based on a squared-difference metric. Code is available at https://gitlab.pks.mpg.de/mesoscopic-physics-of-life/frap_theory (Hubatsch, 2021b; copy archived at swh:1:rev:2c4a972a380df7f9e86ddbbf0ae921443ce0800f).\n",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "93ad009f-25f7-412d-a2a1-75293ba9444f",
+      "submission_id": "3cfbbcb9-85c5-4443-a767-970af148088b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rohit V Pappu, Washington University in St Louis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68620.sa1](https://doi.org/10.7554/eLife.68620.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis work is timely and relevant as the field grapples with the issue of diffusive dynamics across phase boundaries. The numerical formalism in this work will be of broad interest to the condensate field.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Quantitative Theory for the Diffusive Dynamics of Liquid Condensates\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Rohit Pappu as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jos\u00e9 Faraldo-G\u00f3mez as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nBoth reviewers have arrived at similar conclusions. FRAP is a method that is routinely used to study internal dynamics of molecules within biomolecular condensates. Of course, FRAP was introduced in a completely different context, and as has been shown before, its adoption needs appropriate adaptation to the context of interest. How should FRAP data be analyzed in the context of studying biomolecular condensates that form via phase separation. The authors build on the work of Hardt and coworkers, and demonstrate the incorporation of a Flory-Huggins free energy alongside diffusion equations to describe the dynamics of unbleached molecules, using features of mass balance. They show that numerical solutions of the derived equations \u2013 see Equation (6) \u2013 can be used to fit FRAP data for different systems. The authors also suggest that inferences from FRAP data can go beyond extraction of individual parameters. In other words, FRAP data seem to be more information-rich than originally thought. The current version, although very interesting, features opacities that should be remediable by following the recommendations made by both reviewers.\n\nEssential revisions:\n\n1) Two distinct flowcharts summarizing how Equations (1) and (6) are used in the fitting of FRAP data will be essential.\n\n2) Accounting for interfacial tension and / or interfacial resistance (see Taylor et al.) requires discussion.\n\n3) Please delete references to non-equilibrium situations since the model imposes detailed balance throughout. In fact, this point should be made clear.\n\n4) There is considerable confusion regarding the claims regarding being able to extract Din, Dout, and P from single sets of FRAP data and the actual demonstration of this versatility. This is accentuated by considerable confusion caused, for both reviewers, by the introduction of the cost function, which was opaque, and the sweep of parameters for Dout and P that clearly give satisfactory fits to the FRAP data. At this juncture, the claim of being able to extract more insights from FRAP data than one is accustomed to seeing has not been unequivocally demonstrated.\n\n5) Several scholarly issues, specifically pertaining to the work of Hardt and colleagues, and the semantics of what constitutes a phenomenological vs. physical theory description were raised. These should be addressed and there is a strong desire to see a toning down of what were perceived as over-claims.\n\nReviewer #1 (Recommendations for the authors):\n\nAs it currently stands, the average practitioner of FRAP is likely to find the narrative to be rather opaque. Two flowcharts, that summarize (a) how the dynamic boundary condition and its application lead to the internal diffusion coefficients and (b) the use of equation (6) for experimentalists in their analysis of FRAP data need to be added. In doing so, it is really important to explain when and how the analysis can be used, and when and where it cannot be used.\n\nOther recommendations:\n\n1. phi is a conserved order parameter, because the underlying theory imposes a closed system. Therefore, the relations between phitot and phiu etc. come not from incompressibility, but from mass balance in a closed system.\n\n2. The work of Steffen Hardt, mentioned in passing, and labeled as being phenomenological needs rectification. Elaboration of their work and a clear, scholarly contrast between the current effort, the published work of Hardt that goes beyond the 2008 Langmuir paper, and the differences between the work of Taylor et al., would be helpful for the reader who is interested in understanding what is new, and what is different. In this context, please also see Lin et al., (2003) Science 299: 226, Binks and Lumsdon (2000) Langmuir 16: 8622.\n\n3. The authors classify previous efforts as being phenomenological and the current effort as a physical theory. Respectfully, I disagree with this characterization. Inasmuch as previous efforts largely use the same equations as being used by the authors, with the key difference being the use of the FH functional for extracting the chemical potentials, the extant literature and the current manuscript are both phenomenological or both physical theories. It would be best to drop these prefaces and simply state what has been done. Specifically, the work of Hardt and coworkers does account for phase boundaries. They don't use the FH free energy functional, and this is really the only main difference. And many would rightly argue that the FH functional is phenomenological. So, please do not use terms like \"first principles\" for this work, and phenomenological to inadvertently dismiss other efforts.\n\n4. Throughout the manuscript, there is a lot of self-congratulation about the excellent fits, the striking agreements etc. This is jarring. It is impossible to know if one should be impressed with the agreements or if such agreements are readily achieved. An unvarnished statement of the facts is sufficient.\n\n5. The description of the cost function analysis needs a lot of work. In effect, the implication is that Dout depends on P. Whether this is an implicit function or not is unclear. The cost function has not been defined in the main text, and why there should be a minimum is unclear. There is also a curious leap that happens: at one point, we see that Dout and P that describe the data can span a wide range. This would lead to inference that the FRAP data cannot pin down these parameters absent independent measurements. However, the conclusions paint a more rosy picture, suggesting that knowledge of Din is sufficient, and that fitting the FRAP data will lead to reliable estimates of Dout and P. The section that describes this leap needs a lot of work. The flowcharts recommended in the public review will help.\n\n6) There are important caveats that apply as well. The slow or non-recovery of fluorescence, becomes a scenario wherein Din will be very small or immeasurable. Alternatively, if the material state has changed, then the usage of the dynamic boundary condition might still yield reliable measurements of Din, due to an anisotropic stress tensor, but this would be an erroneous estimate of Din on the inside. Therefore, it is important to lay out a set of requirements for the applicability of the proposed approach, i.e., under what circumstances can the method be used, and under what circumstances can it not be used.\n\n7) As a logical follow up to the preceding point, how might one falsify the theory? Fitting FRAP data is inadequate for such an effort. This will be very useful for experimentalists and computational scientists alike.\n\n8) Finally, do the authors know that the salt concentrations across the phase boundary are equal to one another or is this implicitly assumed? This is particularly relevant for the synthetic coacervates. Sing and coworkers have proposed that there are differences in salt concentrations (even ion concentrations) across phase boundaries. This is relevant because it requires the addition of a Donnan potential to the equations that describe molecular transport. A discussion of this issue would be helpful.\n\nReviewer #2 (Recommendations for the authors):\n\nConcerns on figures and writing:\n\n1. Recurrent lack of clarity and/or consistency in how figures are presented\n\nWhen dissecting the data shown in figures, we often found details in presentation that detracted from our understanding of the study. Notable, but not exhaustive, examples are listed:\n\na. The retrieval of physical parameters in this study frequently alternates between the use of Equation 1 to track FRAP data, and Equation 6 to model droplet dynamics. The authors do not clearly distinguish the purpose of these equations in the theoretical sections, leaving the reader to understand by context.\n\nb. The data in Figure 3 would benefit from control data sets that entirely lack the coverslip and/or neighbouring droplets for comparison. In particular, showing the retrieval of identical Din across all simulations (including no coverslip nor neighboring droplets condition) will convey the major point of the paper very clearly.\n\nc. In the caption of Figure 5 it is unclear why the authors have denoted the four indicated values of Dout and P as \"reference systems' as opposed to example parameter sets.\n\nWe recommend the authors reassess their figures for clarity of the information that is meant to be communicated.\n\n2. The theory sections lack needed elaboration in some areas.\n\na. The authors conclude starting on line 153 that P, Din, and Dout can be treated as independent of each other for sufficiently large P. Their justification is that the unknown mobility functions do not impose constraint on Dout(P) other than shown in Equation 10. While the data demonstrates that this is a valid assumption, we find this justification to be opaque and would like to see further elaboration on how independent P, Din, and Dout follows from the mobility functions being unknown.\n\nSuggestions to the authors for bolstering the overall strength of this study below:\n\n1. When interpreting the Results section, we often found that the nature of the experiment was unclear. This is particularly true for Figure 4 and 5. We recommend specifying the procedure followed to acquire the data more clearly and explicitly.\n\n2. In Figure 1c, the label \"Dynamic BC\" made this figure confusing to interpret, especially because there is a same-color arrow depicting time progression. The authors should consider some other way of noting that dynamic BC is applied at the max r (=R-). Also, for the line going across the earliest data points, \"initial condition\" rather than the \"fit\" label may be more appropriate.\n\n3. If available, showing corrected viscosity data from Jawerth et al., 2020 rather than Jawerth et al., 2018 in Figure 1d would bolster this figure via internal consistency with the text in line 98. We would like to be able to back-calculate consistent viscosities using your diffusion data and the Stokes-Sutherland-Einstein relationship.\n\n4. Since the time progression of FRAP recovery is illustrated in Figure 2c, we believe the time point label in Figure 2 to be unnecessary and possibly confusing.\n\n5. We find that the citation of privately communicated and unseen data in line 234 does not add to the preceding statement. Optimum salt concentration is a very believable observation.\n\n6. There appears to be a typo in the subscripts on line 138. Both read \"in\".\n\n7. Regarding the concluding statement on line 306: We do not find that Jawerth et al., 2018,2020 contain discussions of altering dense phase kinetics by high labeling fraction. Rather, McCall et al., 2020 describes effects closer to this.\n\n8. Regarding Figure 5a, labelling the \"ratio\" of Dout and P can be confusing. We suggest noting the specific (Dout, P) pairs to specify the points. Also, a clear distinction between \"simulation generating parameters (points)\" and the \"Dout and P dependence (lines) obtained from simulation result and equation 6\" is needed.\n\n9. Please consider labelling the point in Figure 5b as \"simulation input\" or \"simulation parameter\" rather than \"reference simulation\".\n\n10. We suggest the following change in line 230 for clarity: \"Specifically, for salt concentrations in the range from 50 mM to 180 mM, we find that the estimated partition coefficient P of PGL-3 droplets decreases more than 10-fold.\"\n\n11. The significance of the shading in Figure 4d is unclear and inconsistent with how the analogous data in Figure 4e is presented.\n\n12. The text accompanying Figure 5 beginning on line 249 describes the range of Dout and P used as \"relevant for protein condensates and coacervate droplets' without citation. We recommend backing up the validity of the range of Dout and P used here with evidence from literature.\n\n13. In Figure 1b, individual FRAP recovery curves cut off at seemingly arbitrary points and are difficult to distinguish based on provided color coding. We also note that the curve of 100mM salt concentration does not seem to fit the same trend as the other data sets, but is not discussed by the authors.\n\n14. Figure 1f shows the precision of Din determination for the two coacervate systems, but not the protein condensate system, and a salt concentration for comparison with Figure 1d is not provided.\n",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a767321f-98fd-4ab1-9d78-d722a5ebbbc7",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C1",
+      "claim": "Liquid phase separation has emerged as an organizing principle in biology and is thought to underlie the formation of various membrane-less cellular organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Liquid phase separation has emerged as an organizing principle in biology and is thought to underlie the formation of various membrane-less cellular organelles (Banani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Banani et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "70e4001c-23ad-4236-b614-92073e28e118",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C2",
+      "claim": "Phase-separated organelles have hallmark properties including rapid formation and dissolution, fusion, and wetting to membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hallmark properties of such organelles are their rapid formation and dissolution, their fusion, and their wetting to membranes (Hyman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hyman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "21d481c4-1655-4ff3-8e3f-9464d26fd5a8",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C3",
+      "claim": "Phase-separated organelles exchange material with their environment leading to dynamic sequestration of molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, phase-separated organelles exchange material with their environment leading to dynamic sequestration of molecules, which affects biochemical processes by spatial redistribution of reactants (Moon et al., 2019; Lyon et al., 2021; Saha et al., 2016; Guill\u00e9n-Boixet et al., 2020; Sanders et al., 2020; Yang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Moon et al., 2019; Lyon et al., 2021; Saha et al., 2016; Guill\u00e9n-Boixet et al., 2020; Sanders et al., 2020; Yang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "07c81b29-fb97-4a06-aec3-1d320a4a6272",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C4",
+      "claim": "Various phenomenological fit functions have been proposed in the literature for liquid condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "For liquid condensates, various phenomenological fit functions have been proposed in the literature (e.g. Patel et al., 2015; Banerjee et al., 2017; Hubstenberger et al., 2013, for a broader summary see Taylor et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Patel et al., 2015; Banerjee et al., 2017; Hubstenberger et al., 2013; Taylor et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "9778250d-6777-4852-b474-760f94be62e8",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C6",
+      "claim": "Discrepancies in diffusion constant estimates were attributed to unrealistic assumptions such as infinitely large droplets or infinitely fast diffusion outside the bleach area.",
+      "claim_type": "EXPLICIT",
+      "source": "Taylor et al. showed that these discrepancies were attributed to unrealistic assumptions, for example infinitely large droplets or infinitely fast diffusion outside the bleach area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Taylor et al., 2019 (implicit in the sentence structure)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "dad21f5f-774c-4dc1-83fe-e43739abcfe5",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C8",
+      "claim": "The authors derive a theory connecting dynamics inside and outside of droplets via transport across a finite interface using irreversible thermodynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Using irreversible thermodynamics, we then derive the theory that connects dynamics inside and outside of the droplet via transport across a finite interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical framework developed in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "6c04974a-88b3-4dd6-81de-c5272e5aa753",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C9",
+      "claim": "The dynamic equation derived by the authors agrees with experimentally observed dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this dynamic equation agrees with our experimentally observed dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding comparing theory to experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "1a1e46d3-a015-4be6-845e-ec7f04743f1b",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C11",
+      "claim": "The measurements are agnostic to breaking radial symmetry, for example by introducing a coverslip or neighboring droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that our measurements are agnostic to breaking radial symmetry, for example by introducing a coverslip or neighboring droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "62ef1e87-893b-4618-ad25-c4978b513baf",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C12",
+      "claim": "The approach does not suffer from typical limitations of fluorescence-based concentration measurements, such as low fluorescence in the dilute phase and fluorophore quenching in the rich phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach does not suffer from typical limitations of fluorescence-based concentration measurements, such as low fluorescence in the dilute phase and fluorophore quenching in the rich phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claimed advantage of the authors' method",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "fe7452e3-49ed-4542-b7e3-06d10c46af0c",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C13",
+      "claim": "After photobleaching, bleached molecules diffuse out and unbleached molecules diffuse into the condensate until unbleached components reach the spatially homogeneous level prior to bleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "After photobleaching, bleached molecules diffuse out and unbleached molecules diffuse into the condensate, until the unbleached components reach the spatially homogeneous level prior to bleaching (Figure 1a, left and middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the physical process observed and is referenced to Figure 1a",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "11d2ac41-8c9d-49f2-a086-d2aacfaa4cf9",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C16",
+      "claim": "The condensate environment is characterized by the diffusion constant and concentration of unbleached components outside, the distribution of neighboring condensates, and system boundaries like the coverslip.",
+      "claim_type": "EXPLICIT",
+      "source": "This environment is characterized by the diffusion constant and the concentration of unbleached components outside, the distribution of neighboring condensates as well as system boundaries like the coverslip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the factors affecting the condensate environment",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "694fc7df-db08-4455-8353-a6cace23dbed",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C17",
+      "claim": "Very good agreement was found between experimentally measured and fitted concentration profiles for PGL-3, PLYS/ATP, and CMD/PLYS condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "We find very good agreement between experimentally measured and fitted concentration profiles (Figure 1b\u2013d and supp. Videos 1, 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding referenced to Figures 1b-d and supplementary videos",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "dcb371b7-534c-4e50-9c80-f77e951645bb",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C19",
+      "claim": "The trend in D_in for PGL-3 is in agreement with reported measurements of viscosity determined by active micro-rheology for untagged PGL-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Our trend is in agreement with reported measurements of the viscosity \u03b7, determined by active micro-rheology (Jawerth et al., 2018) for untagged PGL-3 (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares the authors' measurements to previously published data from Jawerth et al., 2018, referenced to Figure 1f",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "29daaef1-4f8c-478b-a5a5-a15437c5e0dd",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C21",
+      "claim": "The estimated hydrodynamic radius of 1.5 nm is consistent with the value reported in Liarzi and Epel, 2005.",
+      "claim_type": "EXPLICIT",
+      "source": "This estimate is consistent with the value reported in Liarzi and Epel, 2005.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the authors' estimate to a previously published value",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "0acad6fb-6d40-4c3d-a4e3-8b322d15bd75",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C23",
+      "claim": "The variation in D_in measurements reflects variation within the experimental assay rather than stochastic artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the smooth cost function (Figure 1e) this is unlikely to be a stochastic artefact. It rather seems to reflect variation within the experimental assay.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation based on the smooth cost function shown in Figure 1e",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "8fc99b62-ca7e-4f9d-af2e-0bcc505ffb85",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C31",
+      "claim": "The constraint \u03d5_tot(x,t) = \u03d5_u(x,t) + \u03d5_b(x,t) reflects particle number conservation of bleached and unbleached molecules and becomes a local constraint due to incompressibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The above constraint reflects particle number conservation of bleached and unbleached molecules and becomes a local constraint due to incompressibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the physical meaning of the mathematical constraint",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "4b789b55-3d1e-4eea-9676-3965d039b10d",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C34",
+      "claim": "If photobleaching does not affect molecular interactions or molecular volumes, the free energy density can be simplified significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "If photobleaching does not affect the molecular interactions or molecular volumes, the free energy density above can be simplified significantly (Appendix of Kr\u00fcger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical simplification supported by citation to Kr\u00fcger et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "d7811aec-910d-4eea-a7be-a02fbb37cae7",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C36",
+      "claim": "The diffusion equation for unbleached components is linear in c_u.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Equation (1), the diffusion equation above is linear in cu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of the derived equation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "ba263ebe-e27c-4a1c-93b9-6c0e44ae758a",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C39",
+      "claim": "For a single, spherical droplet with an infinitely thin interface, an effective droplet model can be derived where dynamics inside and outside are coupled by boundary conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For the case of a single, spherical droplet with an infinitely thin interface (Weber et al., 2019), we can derive an effective droplet model for the unbleached component from Equation (6), where the dynamics of unbleached components inside and outside are given by diffusion equations that are coupled by boundary conditions (see Appendix 1 for the derivation):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical derivation with citation to Weber et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "ee2045bc-f995-480e-a3c9-0682a4874c3d",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C42",
+      "claim": "Equations (8) were already proposed as a model for FRAP dynamics of protein condensates by Taylor et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "These equations were already proposed as a model for FRAP dynamics of protein condensates (Taylor et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges prior work by Taylor et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "a4fa8b72-f0c8-43d8-b865-661e3f4a2c80",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C43",
+      "claim": "Similar equations to Equations (8) were used to investigate diffusion of a protein added to an already existing two-phase system at thermodynamic equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while we obtained Equations (8) for the dynamics of a phase-separated protein component undergoing fluorescence recovery, similar equations were also used to investigate diffusion of a protein that was added to an already existing two-phase system at thermodynamic equilibrium (M\u00fcnchow et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This notes a connection to prior work by M\u00fcnchow et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "622f87e3-b0f8-4bdc-927e-387204d5faae",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C48",
+      "claim": "This provides a theoretical justification for the assumption made by Taylor et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a theoretical justification for the assumption made by Taylor et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the authors' theoretical work to prior assumptions in Taylor et al., 2019",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "76af51ab-2fe5-40ba-a033-cc7268fa1d73",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C49",
+      "claim": "The recovery of the average volume fraction inside the condensate can slow down compared to the case without a coverslip.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the recovery of the average volume fraction inside the condensate can slow down compared to the case without a coverslip (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from numerical simulations referenced to Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "76b7ddd9-e197-41c7-bcf0-f0ccdfedc6a7",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C50",
+      "claim": "The slow-down in recovery due to a coverslip vanishes if droplets have a distance to the coverslip surface larger than a few droplet diameters.",
+      "claim_type": "EXPLICIT",
+      "source": "This slow-down vanishes if droplets have a distance to the coverslip surface larger than a few droplet diameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from numerical simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "d9f20e76-4f81-426c-8e7a-0e4742f0cad5",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C54",
+      "claim": "The method is independent of the time scale set by diffusion in the dilute phase because it considers the intensity at the condensate interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for this agreement is that by considering the intensity at the condensate interface, our method is independent of the time scale set by diffusion in the dilute phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why the method works despite environmental effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "48d8368d-4e63-4d9f-8e73-41751cf8a048",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C55",
+      "claim": "Neighboring condensates can significantly speed up the recovery dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We solved Equation (6) for a system composed of a bleached condensate with four unbleached neighboring condensates of the same size (Figure 3d) and find that neighboring condensates can significantly speed up the recovery dynamics (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from numerical simulations referenced to Figures 3d and 3e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "73898cd8-085d-49c3-b93a-5f3ece8b8fe0",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C56",
+      "claim": "The speed-up due to neighboring condensates is only pronounced for rather close condensates with inter-droplet distance on the order of condensate size.",
+      "claim_type": "EXPLICIT",
+      "source": "This speed-up is only pronounced for rather close condensates with inter-droplet distance on the order of condensate size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from numerical simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "41e2bb45-d44a-4b9e-9c00-a5751d34e9f9",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C61",
+      "claim": "The method is robust for typical experimental systems that deviate from an ideal, isolated condensate.",
+      "claim_type": "EXPLICIT",
+      "source": "This agreement shows that our method is robust for typical experimental systems that deviate from an ideal, isolated condensate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the numerical simulations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "c81c9b9f-a3d1-46a8-8d20-9fc533f01eb3",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C69",
+      "claim": "Current experiments cannot exclude boundary effects such as a recently hypothesised interfacial resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our current experiments cannot exclude boundary effects, such as a recently hypothesised interfacial resistance (Taylor et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the current experiments with citation to Taylor et al., 2019",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "4daedef3-2e9c-4a32-9934-4ddfd07eb422",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C70",
+      "claim": "Equation (6) should be interpreted as a minimal model that fits the available data with high accuracy but cannot rule out additional effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Equation (6) should therefore be interpreted as a minimal model that fits the available data with high accuracy and explains the boundary dynamics, but cannot rule out additional effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement about the interpretation of the model",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "9b9aaeff-2539-422d-b4da-6adc108b063d",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C72",
+      "claim": "The decrease in partition coefficient P with increasing salt concentration is probably a result of enhanced screening of charged groups.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is probably a result of enhanced screening of charged groups for increasing salt concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation for the observed trend",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "8964d683-9a36-4bb7-86a0-1100b175a1d9",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C74",
+      "claim": "Each cost function exhibits a unique minimum for each of the considered parameter combinations in the in silico analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find indeed that each cost function exhibits a unique minimum for each of the considered parameter combinations (Figure 5b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from in silico analysis referenced to Figures 5b and 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "8ac56fe7-b8c4-46e9-9bd0-78cdc3d128f0",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C76",
+      "claim": "There is no need to measure kinetic properties of the dilute phase to fully characterise the system in terms of its parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in principle, there is no need to measure kinetic properties of the dilute phase to fully characterise the system in terms of its parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "6ef94ee8-fb17-42b5-adab-19e411f1e19b",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C78",
+      "claim": "The theory can be applied to spherical condensates and also to non-spherical condensates and arbitrary bleach geometries.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show in our work, it can be applied to spherical condensates. In addition, our theory could also be used for non-spherical condensates and arbitrary bleach geometries, since spherical symmetry is only assumed for ease of data analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the generality of the theoretical approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "5e46979c-37e1-4a97-ba2a-3e44be952488",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C79",
+      "claim": "There is remarkable quantitative agreement between the theory and the diffusion dynamics observed inside droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "There is remarkable quantitative agreement between our theory and the diffusion dynamics observed inside such droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental validation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "1d252b33-c4a5-498f-a70d-7a99bab09f56",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C80",
+      "claim": "Proteins and charged synthetic polymers can form droplets that follow simple diffusive dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This agreement shows that proteins and charged, synthetic polymers can form droplets that follow simple diffusive dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental validation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "311a84fc-524e-4606-ae98-bfa22e418377",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C81",
+      "claim": "The numerical solutions and the experimental data are not distinguishable within statistical fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the statistical fluctuations, the numerical solutions and the experimental data are not distinguishable (see Figure 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the quality of fit referenced to Figures 1b-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "8c5d0e4c-b850-4fd0-9f8e-17b4cd8cb6cc",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C82",
+      "claim": "The approach can be readily extended to multi-component systems with an arbitrary number of components.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach can be readily extended to multi-component systems with an arbitrary number of components, which is particularly useful in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a potential extension of the method",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "374f00a9-0642-4e77-b902-8e5d72be0625",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C83",
+      "claim": "The approach can be used to determine diffusion coefficients and concentration levels of reactants in multi-component systems with chemical reactions away from equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest are multi-component systems with chemical reactions away from equilibrium. Our approach can then be used to determine the diffusion coefficients and concentration levels of reactants, and thereby provide insights into reaction kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a potential application of the method",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "abf8e9d4-ed20-4c14-9c68-5d7fbd2c64d6",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C84",
+      "claim": "Introducing bleached molecules via a ternary mixture enabled derivation of the Langevin equation governing single-molecule motion in phase-separated media.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, introducing the bleached molecules via a ternary mixture also enabled us to derive the Langevin equation governing single-molecule motion in phase-separated media, thus providing a link to SPT (Bo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a related theoretical development with citation to Bo et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "9d5377c9-6089-490c-95fd-5aab44343df0",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C85",
+      "claim": "High labeling fractions were shown to alter the viscosity and thus kinetics in dense protein phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Approaches for single labeled molecules are relevant since high labeling fractions were shown to alter the viscosity and thus kinetics in dense protein phases (compare viscosity for PGL-3 in Jawerth et al., 2018 with viscosity for tagged PGL-3:GFP Jawerth et al., 2020 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of data from Jawerth et al., 2018 and Jawerth et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "5e2a2b43-0f48-4327-9039-03f0c1e9f6c3",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C87",
+      "claim": "PGL-3 is a main protein component of P granules in the C. elegans embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we consider condensates composed of PGL-3, a main protein component of P granules in the C. elegans embryo (Brangwynne et al., 2009; Griffin, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations to Brangwynne et al., 2009; Griffin, 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "5ad66331-4c5d-4a2a-becd-4373956a4b89",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C88",
+      "claim": "Droplets were imaged at midplane by visually defining the focal position with the largest droplet area.",
+      "claim_type": "EXPLICIT",
+      "source": "Droplets were imaged at midplane by visually defining the focal position with the largest droplet area of the droplet of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "78c3b920-9340-4f3c-a4c4-b30f71a3a357",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C89",
+      "claim": "Imaging conditions were optimized for minimal bleaching at the required frame rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging conditions were optimized for minimal bleaching at the required frame rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "3fb2ff8c-bf1b-405c-9930-9a313b6d6754",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C90",
+      "claim": "Droplets were bleached in their entirety by using the minimal FRAP ROI that encompasses the entire droplet.",
+      "claim_type": "EXPLICIT",
+      "source": "Droplets were bleached in their entirety by using the minimal FRAP ROI that encompasses the entire droplet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "51fbdcd9-ff60-4e22-8f72-c48d05ba5bff",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C91",
+      "claim": "FRAP was performed in three focal planes equally spaced across the droplet in z-direction to reduce non-uniform bleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "FRAP was performed in three focal planes, equally spaced across the droplet in z-direction, to reduce non-uniform bleaching of the droplet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "84441a88-41f3-4bf0-95e6-7577c7e41a6f",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C92",
+      "claim": "Data close to the droplet boundary cannot be used for fitting since the droplet has an artificially broad boundary due to the point-spread function and likely due to curvature effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Data close to the droplet interface cannot be used for fitting, since the droplet has an artificially broad boundary due to the point-spread function and likely due to curvature effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a limitation in the data analysis",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "cc4cf989-6d78-4235-a988-aa15f96e14b0",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "claim_id": "C94",
+      "claim": "Photo-bleaching due to continuous imaging was minimal in all droplet types.",
+      "claim_type": "EXPLICIT",
+      "source": "Photo-bleaching due to continuous imaging was minimal in all droplet types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation from the experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "49fcc381-32c9-4ed5-965b-d283686733c0",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Liquid phase separation underlies formation of membrane-less organelles with characteristic properties including rapid formation/dissolution, fusion, wetting to membranes, and dynamic material exchange with their environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 provide well-established background on phase separation supported by multiple authoritative citations (Banani et al., 2017; Hyman et al., 2014; Moon et al., 2019 and others). These are accepted principles in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "56b3c852-047a-4cea-b147-8711ccc01b74",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous phenomenological fit functions for FRAP in liquid condensates led to discrepant diffusion coefficient estimates due to unrealistic assumptions like infinitely large droplets or infinitely fast diffusion outside the bleach area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C6 accurately summarize prior work limitations as documented by Taylor et al., 2019 and other cited studies. This provides appropriate context for the current work's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "4c1f5bc6-d05d-43dd-b41a-a249fb01e08b",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors derive a quantitative theory for FRAP dynamics in phase-separated systems using irreversible thermodynamics, treating the system as a ternary mixture (bleached, unbleached, solvent) with incompressibility constraints, yielding diffusion equations coupled by boundary conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C31, C34, C36, C39 describe a coherent theoretical framework building on established thermodynamic principles (Flory-Huggins theory, irreversible thermodynamics). The derivation follows logically from stated assumptions and is supported by appropriate citations (Kr\u00fcger et al., 2018; Weber et al., 2019).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "cffa6789-d926-41db-89b3-15ee7c13c181",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors developed and validated an experimental FRAP method using full droplet bleaching with spatio-temporal analysis, achieving excellent quantitative agreement between theory and experiments for PGL-3, PLYS/ATP, and CMD/PLYS condensates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C16, C17, C81 demonstrate strong experimental validation with detailed methodology (C87-C92, C94). The agreement between numerical solutions and experimental data is described as indistinguishable within statistical fluctuations, supported by Figures 1b-d and supplementary videos.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "494eb679-a30b-46b9-9983-ed4632ee6524",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The derived dynamic equations show remarkable quantitative agreement with experimentally observed diffusion dynamics in protein and synthetic polymer droplets, demonstrating that these systems follow simple diffusive dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C79, C80 are directly supported by the experimental validation shown in Figures 1b-d and Videos 1-3. The quality of fits and consistency across multiple systems (PGL-3, coacervates) provides strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "6d8f742c-80c2-4ee4-bdbd-29d34c0f7bec",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For PGL-3 condensates, the measured D_in values (0.009-0.070 \u03bcm\u00b2/s across 50-180 mM salt) agree with viscosity measurements from active micro-rheology, yielding a hydrodynamic radius estimate of 1.5 nm consistent with prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C21 compare measurements to independent prior data (Jawerth et al., 2018; Liarzi and Epel, 2005), showing consistency. Claim C23 addresses measurement variability with reasonable interpretation based on smooth cost functions (Figure 1e).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "31bc6bb4-4dd8-464b-bb3e-cd34c8857687",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Numerical simulations show that coverslips and neighboring droplets affect overall recovery dynamics, but the method for extracting D_in remains robust and agnostic to these symmetry-breaking effects by measuring intensity at the condensate interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50, C55-C56 present simulation results (Figure 3) showing environmental effects. Claims C11, C54, C61 demonstrate method robustness despite these effects. The explanation (C54) for why the method works is physically reasonable - measuring at the interface bypasses dilute phase timescales.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "ac2c50fe-950e-41cb-a461-4c9a6dfce499",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The derived boundary condition equations (Equations 8) were previously proposed by Taylor et al., 2019 for FRAP dynamics and used in similar form by M\u00fcnchow et al., 2008 for protein diffusion in two-phase systems; the current work provides theoretical justification from first principles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43, C48 appropriately acknowledge prior work and position the current contribution as providing rigorous thermodynamic derivation for previously proposed phenomenological equations. This is a fair assessment of the relationship to prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "7d37d7dd-3940-4f7f-81ee-e0d315761c64",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model should be interpreted as minimal and cannot exclude additional boundary effects like interfacial resistance; the observed decrease in partition coefficient P with increasing salt (50-180 mM) is likely due to enhanced screening of charged groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 appropriately acknowledge model limitations and cite relevant work (Taylor et al., 2019) on potential interfacial resistance. Claim C72 offers a reasonable physical explanation for the salt dependence trend, though marked as speculative. This represents appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "f651edd6-dabd-4528-b76b-9796ff8d0f63",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In silico analysis demonstrates that each cost function exhibits a unique minimum for parameter combinations (D_in, D_out, P), indicating that all three parameters can theoretically be determined from droplet interior dynamics alone without measuring dilute phase kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74 and C76 are supported by in silico analysis (Figure 5b,c) showing unique minima in cost functions. However, the practical applicability is limited by experimental complications acknowledged elsewhere (neighboring droplets, coverslip effects, optical artifacts), making this more of a theoretical possibility than a validated experimental protocol.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "dfbcf290-e80d-4bdb-b5a6-3b032e43497f",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The approach does not suffer from typical limitations of fluorescence-based concentration measurements, such as low fluorescence in the dilute phase and fluorophore quenching in the rich phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C12 asserts advantages over fluorescence intensity measurements but provides no direct experimental validation of this claim. While the method uses dynamics rather than absolute intensities, the statement requires experimental comparison to intensity-based methods to be fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    },
+    {
+      "id": "9974becb-d241-4b25-96a2-20ed92ae1228",
+      "content_id": "a2df6d4a-f582-440a-aaeb-497e4141749c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The theoretical framework can be extended to non-spherical condensates, arbitrary bleach geometries, multi-component systems with chemical reactions, and provides connections to single-particle tracking; single-molecule approaches are important since high labeling fractions alter viscosity in dense protein phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78, C82-C84 describe potential extensions and applications marked as speculation or inference. Claim C85 about labeling effects is supported by citations comparing tagged vs untagged PGL-3. While the extensions are plausible, they remain theoretical proposals without experimental demonstration in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:00.411255Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a767321f-98fd-4ab1-9d78-d722a5ebbbc7",
+      "result_id": "49fcc381-32c9-4ed5-965b-d283686733c0"
+    },
+    {
+      "claim_id": "70e4001c-23ad-4236-b614-92073e28e118",
+      "result_id": "49fcc381-32c9-4ed5-965b-d283686733c0"
+    },
+    {
+      "claim_id": "21d481c4-1655-4ff3-8e3f-9464d26fd5a8",
+      "result_id": "49fcc381-32c9-4ed5-965b-d283686733c0"
+    },
+    {
+      "claim_id": "07c81b29-fb97-4a06-aec3-1d320a4a6272",
+      "result_id": "56b3c852-047a-4cea-b147-8711ccc01b74"
+    },
+    {
+      "claim_id": "9778250d-6777-4852-b474-760f94be62e8",
+      "result_id": "56b3c852-047a-4cea-b147-8711ccc01b74"
+    },
+    {
+      "claim_id": "dad21f5f-774c-4dc1-83fe-e43739abcfe5",
+      "result_id": "4c1f5bc6-d05d-43dd-b41a-a249fb01e08b"
+    },
+    {
+      "claim_id": "8fc99b62-ca7e-4f9d-af2e-0bcc505ffb85",
+      "result_id": "4c1f5bc6-d05d-43dd-b41a-a249fb01e08b"
+    },
+    {
+      "claim_id": "4b789b55-3d1e-4eea-9676-3965d039b10d",
+      "result_id": "4c1f5bc6-d05d-43dd-b41a-a249fb01e08b"
+    },
+    {
+      "claim_id": "d7811aec-910d-4eea-a7be-a02fbb37cae7",
+      "result_id": "4c1f5bc6-d05d-43dd-b41a-a249fb01e08b"
+    },
+    {
+      "claim_id": "ba263ebe-e27c-4a1c-93b9-6c0e44ae758a",
+      "result_id": "4c1f5bc6-d05d-43dd-b41a-a249fb01e08b"
+    },
+    {
+      "claim_id": "fe7452e3-49ed-4542-b7e3-06d10c46af0c",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "11d2ac41-8c9d-49f2-a086-d2aacfaa4cf9",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "694fc7df-db08-4455-8353-a6cace23dbed",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "311a84fc-524e-4606-ae98-bfa22e418377",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "5e2a2b43-0f48-4327-9039-03f0c1e9f6c3",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "5ad66331-4c5d-4a2a-becd-4373956a4b89",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "78c3b920-9340-4f3c-a4c4-b30f71a3a357",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "3fb2ff8c-bf1b-405c-9930-9a313b6d6754",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "51fbdcd9-ff60-4e22-8f72-c48d05ba5bff",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "84441a88-41f3-4bf0-95e6-7577c7e41a6f",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "cc4cf989-6d78-4235-a988-aa15f96e14b0",
+      "result_id": "cffa6789-d926-41db-89b3-15ee7c13c181"
+    },
+    {
+      "claim_id": "6c04974a-88b3-4dd6-81de-c5272e5aa753",
+      "result_id": "494eb679-a30b-46b9-9983-ed4632ee6524"
+    },
+    {
+      "claim_id": "5e46979c-37e1-4a97-ba2a-3e44be952488",
+      "result_id": "494eb679-a30b-46b9-9983-ed4632ee6524"
+    },
+    {
+      "claim_id": "1d252b33-c4a5-498f-a70d-7a99bab09f56",
+      "result_id": "494eb679-a30b-46b9-9983-ed4632ee6524"
+    },
+    {
+      "claim_id": "dcb371b7-534c-4e50-9c80-f77e951645bb",
+      "result_id": "6d8f742c-80c2-4ee4-bdbd-29d34c0f7bec"
+    },
+    {
+      "claim_id": "29daaef1-4f8c-478b-a5a5-a15437c5e0dd",
+      "result_id": "6d8f742c-80c2-4ee4-bdbd-29d34c0f7bec"
+    },
+    {
+      "claim_id": "0acad6fb-6d40-4c3d-a4e3-8b322d15bd75",
+      "result_id": "6d8f742c-80c2-4ee4-bdbd-29d34c0f7bec"
+    },
+    {
+      "claim_id": "1a1e46d3-a015-4be6-845e-ec7f04743f1b",
+      "result_id": "31bc6bb4-4dd8-464b-bb3e-cd34c8857687"
+    },
+    {
+      "claim_id": "76af51ab-2fe5-40ba-a033-cc7268fa1d73",
+      "result_id": "31bc6bb4-4dd8-464b-bb3e-cd34c8857687"
+    },
+    {
+      "claim_id": "76b7ddd9-e197-41c7-bcf0-f0ccdfedc6a7",
+      "result_id": "31bc6bb4-4dd8-464b-bb3e-cd34c8857687"
+    },
+    {
+      "claim_id": "d9f20e76-4f81-426c-8e7a-0e4742f0cad5",
+      "result_id": "31bc6bb4-4dd8-464b-bb3e-cd34c8857687"
+    },
+    {
+      "claim_id": "48d8368d-4e63-4d9f-8e73-41751cf8a048",
+      "result_id": "31bc6bb4-4dd8-464b-bb3e-cd34c8857687"
+    },
+    {
+      "claim_id": "73898cd8-085d-49c3-b93a-5f3ece8b8fe0",
+      "result_id": "31bc6bb4-4dd8-464b-bb3e-cd34c8857687"
+    },
+    {
+      "claim_id": "41e2bb45-d44a-4b9e-9c00-a5751d34e9f9",
+      "result_id": "31bc6bb4-4dd8-464b-bb3e-cd34c8857687"
+    },
+    {
+      "claim_id": "ee2045bc-f995-480e-a3c9-0682a4874c3d",
+      "result_id": "ac2c50fe-950e-41cb-a461-4c9a6dfce499"
+    },
+    {
+      "claim_id": "a4fa8b72-f0c8-43d8-b865-661e3f4a2c80",
+      "result_id": "ac2c50fe-950e-41cb-a461-4c9a6dfce499"
+    },
+    {
+      "claim_id": "622f87e3-b0f8-4bdc-927e-387204d5faae",
+      "result_id": "ac2c50fe-950e-41cb-a461-4c9a6dfce499"
+    },
+    {
+      "claim_id": "c81c9b9f-a3d1-46a8-8d20-9fc533f01eb3",
+      "result_id": "7d37d7dd-3940-4f7f-81ee-e0d315761c64"
+    },
+    {
+      "claim_id": "4daedef3-2e9c-4a32-9934-4ddfd07eb422",
+      "result_id": "7d37d7dd-3940-4f7f-81ee-e0d315761c64"
+    },
+    {
+      "claim_id": "9b9aaeff-2539-422d-b4da-6adc108b063d",
+      "result_id": "7d37d7dd-3940-4f7f-81ee-e0d315761c64"
+    },
+    {
+      "claim_id": "8964d683-9a36-4bb7-86a0-1100b175a1d9",
+      "result_id": "f651edd6-dabd-4528-b76b-9796ff8d0f63"
+    },
+    {
+      "claim_id": "8ac56fe7-b8c4-46e9-9bd0-78cdc3d128f0",
+      "result_id": "f651edd6-dabd-4528-b76b-9796ff8d0f63"
+    },
+    {
+      "claim_id": "62ef1e87-893b-4618-ad25-c4978b513baf",
+      "result_id": "dfbcf290-e80d-4bdb-b5a6-3b032e43497f"
+    },
+    {
+      "claim_id": "6ef94ee8-fb17-42b5-adab-19e411f1e19b",
+      "result_id": "9974becb-d241-4b25-96a2-20ed92ae1228"
+    },
+    {
+      "claim_id": "8c5d0e4c-b850-4fd0-9f8e-17b4cd8cb6cc",
+      "result_id": "9974becb-d241-4b25-96a2-20ed92ae1228"
+    },
+    {
+      "claim_id": "374f00a9-0642-4e77-b902-8e5d72be0625",
+      "result_id": "9974becb-d241-4b25-96a2-20ed92ae1228"
+    },
+    {
+      "claim_id": "abf8e9d4-ed20-4c14-9c68-5d7fbd2c64d6",
+      "result_id": "9974becb-d241-4b25-96a2-20ed92ae1228"
+    },
+    {
+      "claim_id": "9d5377c9-6089-490c-95fd-5aab44343df0",
+      "result_id": "9974becb-d241-4b25-96a2-20ed92ae1228"
+    }
+  ],
+  "comparisons": []
+}

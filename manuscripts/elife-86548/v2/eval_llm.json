@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In rodents, theta oscillations (~8 Hz) occur during exploration and are coupled with gamma oscillations (25-100 Hz), while sharp-wave ripples emerge during quiescence when theta and gamma are suppressed. Most CA1 cells are modulated by theta rhythm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the well-documented rodent oscillatory patterns based on extensive citations to established literature (C1, C2, C17-C21, C66-C69). The claims are consistent with the canonical understanding of rodent hippocampal physiology and serve as the comparative baseline for the study's findings in primates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C27",
+      "C28",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C59",
+      "C60"
+    ],
+    "result": "In macaque CA1, theta (3-10 Hz) and beta2/gamma (15-70 Hz) frequency bands are segregated by behavioral state: beta2/gamma power is greater during visual search while theta power dominates during quiescence and early sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support this result including power spectral analysis (C32, C33), BOSC analysis of oscillatory bouts (C36, C37), and observations across both stationary and freely moving conditions (C5, C6, C27, C28). Statistical significance is reported (p<0.05 with FDR correction) and the pattern is replicated across experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C29",
+      "C30",
+      "C31",
+      "C43",
+      "C44",
+      "C61",
+      "C62"
+    ],
+    "result": "Theta and beta2/gamma bands show antagonistic relationships in macaque CA1: theta amplitude is strongest when beta2/slow gamma (20-35 Hz) is weakest, and the bands are decorrelated in cross-frequency amplitude coupling and phase-amplitude bicoherence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The decoupling is demonstrated through multiple complementary analyses: spectral power sorting (C29, C30), cross-frequency power correlation with statistical significance (C43, p<0.05), Hilbert amplitude envelope correlation (C61), and bicoherence analysis (C62, C47). The convergence of methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Bicoherence analysis revealed coupling between 3-8 Hz and high frequencies (95-150 Hz), and interaction between 25 Hz and its second harmonic, but no significant theta-gamma phase-amplitude coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bicoherence results are statistically significant (p<0.05, cluster-based Monte Carlo test) and provide phase-amplitude coupling evidence that complements the power correlation analyses. The lack of theta-gamma coupling (C47) is a critical negative finding that contrasts with rodent patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C48",
+      "C49",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C63",
+      "C74",
+      "C75",
+      "C80",
+      "C81"
+    ],
+    "result": "Spike-field coherence was observed in three frequency bands (3-10 Hz, 20-35 Hz, 60-150 Hz), but theta-band coherence was largely spurious, arising from non-oscillatory slow deflections during sharp-wave ripples rather than true oscillatory coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SWR confound is rigorously addressed by comparing spike-field coherence during SWRs versus residual periods (C53, C54, C80, C81). The finding that low-frequency coherence is disproportionately affected by SWR removal (C55, C56) while higher frequencies are unaffected provides strong evidence for the spurious nature of theta-band coherence. Statistical testing with permutation tests supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C57",
+      "C58",
+      "C64",
+      "C65",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Macaque CA1 neurons showed no intrinsic theta spiking rhythmicity in spike autocorrelograms, with near-zero theta modulation index values, contrasting sharply with strong theta modulation observed in rat CA1 using identical analysis methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of theta rhythmicity is demonstrated through spike autocorrelogram analysis (C88) and theta modulation index quantification (C58). The direct comparison to rat CA1 data using identical methods (C65, C90) strengthens the conclusion by controlling for methodological differences. The finding holds even for high firing rate cells that should include theta-modulated interneurons (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Control experiments in freely moving macaques demonstrated that the observed oscillatory patterns (decreased theta and increased gamma during active behaviors) were not artifacts of immobility, and that the methods were capable of detecting theta oscillations which appeared during different behavioral epochs than in rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The freely moving control experiments (C40) address a critical confound regarding movement-related theta in rodents. The demonstration that theta bouts during sleep are of sufficient duration and consistency (C41) validates the recording and analysis methods, making the species difference in behavioral correlates more compelling (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C95",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Beta2/slow gamma oscillations constitute the primary self-contained oscillation during active exploration in primate hippocampus, decoupled from theta, and represent a fundamental difference from the rodent oscillatory canon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion integrates multiple findings: the prominence of beta2/gamma during exploration (C12, C105), the decoupling from theta (C13, C95, C103), and the contrast with rodent patterns (C14). The inference that beta2/gamma is the chief oscillation for organizing local dynamics (C106) is reasonable given the data, though the functional role remains to be fully established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The study recorded 42 sessions from hippocampal CA1 of two macaques during active visual search and quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward methodological claim directly stated in the manuscript with clear session counts per animal (M1: 26, M2: 16).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Sharp-wave ripples in primates have non-oscillatory slow components that can produce spurious low-frequency coherence, occur during active exploration, and are associated with 2-10\u00d7 firing rate increases across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about SWR properties are supported by citations to prior literature (C50-C52, C78, C79, C82) and are consistent with the study's own findings. The explanation for why infrequent SWRs disproportionately affect spike-field coherence (C83) is logically sound given the high firing rates during these events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Monkey CA1 shows reliable theta oscillations at 6-9 Hz during rest/sleep, but these do not demonstrate the behavioral state correlates characteristic of rodent theta, showing divergent brain-behavior coupling with stronger theta during quiescence/NREM sleep than during alert states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The presence of theta oscillations during rest (C70) is supported by the data, and the divergent behavioral correlates (C71, C72) are inferred from comparison with rodent patterns. The claim about primate theta during quiescence/NREM (C73) is supported by multiple citations to prior studies, strengthening the generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The duration of sleep theta bouts exceeds the SWR envelope, and residual coherence after SWR removal indicates that observed spectral peaks during rest likely reflect true oscillations rather than collections of evoked transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of theta bout durations (C85, referenced in Video 1 and Figure 1\u2014figure supplement 4) provides quantitative evidence that theta oscillations are genuine and not simply artifacts of SWR slow components. The residual coherence after SWR removal further supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The extension of rodent oscillatory regimes to primates is unclear, with questionable theta-SWR dichotomy that may stem from phylogenetic differences in theta oscillation characteristics, potentially affecting gamma coupling to theta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the motivation and context for the study based on prior literature (C22-C25). The uncertainty about cross-species conservation (C3) is appropriately stated and supported by citations to comparative studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C38",
+      "C39"
+    ],
+    "result": "Hippocampal theta oscillations in non-rodent species occur intermittently in short bouts during wakefulness, unlike the protracted trains in rodents where theta is related to locomotion speed but also occurs during immobile alertness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These comparative claims are well-supported by multiple citations to established literature (C34, C35, C38, C39) and provide important context for interpreting the species differences observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C91",
+      "C92"
+    ],
+    "result": "Prior primate studies show theta-band spike-field coherence, though in freely moving macaques higher gamma and delta bands are more likely to show coherence than theta, and in some studies aperiodic fluctuations must be warped to observe spike timing regularity. Delta band oscillations are more frequently correlated with memory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about prior primate literature (C76, C77, C91, C92) are supported by appropriate citations and provide important context for interpreting the current findings, particularly regarding methodological considerations and alternative frequency bands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Gamma oscillations in rodents (20-100 Hz) are tightly coupled to theta, and similar frequency bands (20-40 Hz) are associated with memory processing in both rodents and primates, linked to specific hippocampal pathways including trisynaptic and temporoammonic routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the functional significance of beta2/gamma oscillations across species based on extensive prior literature (C93-C101). The citations to circuit-level studies (C99, C100) and memory studies (C97, C98, C101) provide important context for the functional interpretation of the observed oscillations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Hippocampal oscillations support cognition by coordinating neural circuit dynamics, and behavioral states constrain and entrain specific neural oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established principles in neuroscience supported by citations to foundational literature (C15, C16) and serve as the theoretical framework for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The spike autocorrelogram is a more stringent measure of oscillatory modulation that is not susceptible to LFP spectral analysis artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an established methodological principle in electrophysiology (C87) that justifies the use of autocorrelograms as a complementary analysis to spike-field coherence.",
+    "result_type": "MINOR"
+  }
+]

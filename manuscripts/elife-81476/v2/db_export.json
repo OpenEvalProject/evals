@@ -1,0 +1,1743 @@
+{
+  "submission": {
+    "id": "2d478eb4-79d8-4dde-8b35-f415515f0f85",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:48:38.249711Z",
+    "updated_at": "2025-12-03T16:48:38.249711Z"
+  },
+  "content": [
+    {
+      "id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "submission_id": "2d478eb4-79d8-4dde-8b35-f415515f0f85",
+      "content_type": "manuscript",
+      "content_text": "# Precise and stable edge orientation signaling by human first-order tactile neurons\n\n## Authors\n\n- Vaishnavi Sukumar<sup>1</sup>\n- Roland S Johansson<sup>2</sup> ([ORCID: 0000-0003-3288-8326](https://orcid.org/0000-0003-3288-8326))\n- J Andrew Pruszynski<sup>3</sup> ([ORCID: 0000-0003-0786-0081](https://orcid.org/0000-0003-0786-0081)) \u2020\n\n### Affiliations\n\n1. Neuroscience Graduate Program, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n2. Department of Integrative Medical Biology, Ume\u00e5 University Ume\u00e5 Sweden ([ROR:05kb8h459](https://ror.org/05kb8h459))\n3. Department of Physiology and Pharmacology, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFast-adapting type 1 (FA-1) and slow-adapting type 1 (SA-1) first-order neurons in the human tactile system have distal axons that branch in the skin and form many transduction sites, yielding receptive fields with many highly sensitive zones or \u2018subfields.\u2019 We previously demonstrated that this arrangement allows FA-1 and SA-1 neurons to signal the geometric features of touched objects, specifically the orientation of raised edges scanned with the fingertips. Here, we show that such signaling operates for fine edge orientation differences (5\u201320\u00b0) and is stable across a broad range of scanning speeds (15\u2013180 mm/s); that is, under conditions relevant for real-world hand use. We found that both FA-1 and SA-1 neurons weakly signal fine edge orientation differences via the intensity of their spiking responses and only when considering a single scanning speed. Both neuron types showed much stronger edge orientation signaling in the sequential structure of the evoked spike trains, and FA-1 neurons performed better than SA-1 neurons. Represented in the spatial domain, the sequential structure was strikingly invariant across scanning speeds, especially those naturally used in tactile spatial discrimination tasks. This speed invariance suggests that neurons\u2019 responses are structured via sequential stimulation of their subfields and thus links this capacity to their terminal organization in the skin. Indeed, the spatial precision of elicited action potentials rationally matched spatial acuity of subfield arrangements, which corresponds to a spatial period similar to the dimensions of individual fingertip ridges.\n\n## Introduction\n\nThe distal axons of fast-adapting type 1 (FA-1) and slow-adapting type 1 (SA-1) neurons innervating the glabrous skin of the primate hand branch extensively in the skin, causing each individual neuron to innervate many spatially segregated low-threshold mechanoreceptive end organs (Cauna, 1956; Cauna, 1959; Nolano et al., 2003; Par\u00e9 et al., 2002; Vallbo and Johansson, 1984). This arrangement results in spatially complex receptive fields with many highly sensitive zones (or \u2018subfields\u2019) distributed within a circular or elliptical area typically covering 5\u201310 fingerprint ridges (Jarocka et al., 2021; Johansson, 1978; Phillips et al., 1992; Pruszynski and Johansson, 2014). We have proposed that this arrangement constitutes a peripheral neural mechanism for geometric feature extraction (Hay and Pruszynski, 2020; Jarocka et al., 2021; Pruszynski et al., 2018; Pruszynski and Johansson, 2014; Zhao et al., 2018). Consistent with this idea, we previously demonstrated that both FA-1 and SA-1 neurons signal information about the orientation of edges moving across a neuron\u2019s receptive field via changes in both their spiking intensity and the sequential structure of their spiking response (Pruszynski and Johansson, 2014). The intensity of a neuron\u2019s response can be modulated by the degree of spatial coincidence between the neuron\u2019s subfields and local skin deformation caused by the edge. The sequential structure of a neuron\u2019s response (i.e. the gaps between bursts of spikes) can carry information about edge orientation because the orientation affects the sequence and timing of stimulated subfields as the edge passes over the neuron\u2019s receptive field.\n\nHere, we examine this peripheral signaling mechanism with respect to the ability of individual FA-1 and SA-1 neurons to signal fine differences in the orientation of edges (5\u201320\u00b0) moving across the fingertip and how stimulation speed affects this ability. In our previous study (Pruszynski and Johansson, 2014), we used edges that had large orientation differences (\u226522.5\u00b0) compared to edge orientation discrimination thresholds found during object manipulation (~3\u00b0; Pruszynski et al., 2018) or psychophysical tasks (~10\u201325\u00b0; Bensmaia et al., 2008; Lechelt, 1992; Olczak et al., 2018; Peters et al., 2015), and we focused mainly on one movement speed (30 mm/s). However, during natural contacts with objects where the use of tactile information is critical, a wide range of speeds can occur (Callier et al., 2015; Cole and Abbs, 1988; Johansson and Westling, 1984; Olczak et al., 2018; Smith et al., 2002a; Smith et al., 2002b; Vega-Bermudez et al., 1991). This natural variation motivated us to analyze the capacity of individual neurons to signal edge orientation at different fixed speeds but also their ability to signal edge orientation across scanning speeds (i.e. in a speed-invariant manner). Examining speed invariance also allowed us to test the hypothesis that the subfield arrangement of FA-1 and SA-1 neurons gives rise to their ability to signal fine edge orientation via changes in the sequential structure of their spiking responses. Because the layout of a neuron\u2019s subfield arrangement is fairly stable over a range of natural scanning speeds (Jarocka et al., 2021), the hypothesis predicts speed invariant signaling of edge orientation when spike trains are represented in the spatial domain, where the action potentials are represented with respect to the position of the stimulus on the skin at the time of their occurrence.\n\nWe recorded action potentials in the distal axon of single FA-1 and SA-1 neurons innervating human fingertips while tangentially scanning their receptive field with finely oriented edges (\u00b15 and \u00b110\u00b0 relative to the scanning direction) at speeds spanning more than one order of magnitude (15\u2013180 mm/s). We report that FA-1 and SA-1 neurons can signal fine edge orientation differences via changes in spiking intensity (peak and mean firing rate) but that they do so much more reliably by changes in the sequential structure of the evoked spike trains. In the latter case, FA-1 neurons perform better than SA-1 neurons, but both show the best edge orientation discrimination capacity for scanning speeds that humans naturally use when moving their hands to discriminate fine spatial features. Furthermore, when spike trains are represented in the spatial domain, their orientation-dependent sequential structuring is preserved across a wide range of scanning speeds, meaning that FA-1 and SA-1 neurons can provide speed invariant information about edge orientation. Taken together, these findings further the idea that the dendritic-like branching of first-order tactile neurons\u2019 distal axons contributes to early processing of fine geometric features in the tactile sensory ascending pathways.\n\n## Methods\n\n### Study participants and data sample\n\nHuman participants (five males and eight females) provided written informed consent in accordance with the Declaration of Helsinki. The Ume\u00e5 University ethics committee approved the study (PI: Johansson). The general experimental methodology, procedure, and apparatus have been described previously (Pruszynski and Johansson, 2014).\n\nWe recorded action potentials from single first-order tactile neurons terminating in the glabrous skin of the tips of the index, long, or middle fingertips, using tungsten electrodes (Vallbo and Hagbarth, 1968). The electrodes were inserted into the median nerve at the level of the upper arm or wrist. The present study focuses on FA-1 or SA-1 neurons, classified according to previously described criteria (Vallbo and Johansson, 1984). Of the 53 neurons recorded, 30 were FA-1 and 23 were SA-1.\n\n### Stimuli\n\nEach neuron was stimulated by lines embossed on a flat surface that moved tangentially across the receptive field along the proximal distal axis of the finger (Figure 1A). The stimulation surface was a photo-etched nylon polymer (EF 70 GB, Toyobo Company, Japan) wrapped around a rotating drum (diameter = 59 mm).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81476/elife-81476-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the stimulating surface, which includes five repetitions of four oriented line stimuli. The small dots above the line stimuli are used during the experiment to align the stimulating surface with an isolated neuron\u2019s receptive field (RF). The layout of the line stimuli is such that an isolated RF is only stimulated by a single line stimulus at any given moment in time. (B) Tick marks represent action potentials from an exemplar neuron plotted relative to the position of the stimulating surface. All three rotations (#1, #2, and #3) are shown. The superimposed traces below represent the firing rate profile, defined as the reciprocal of the interval between subsequent action potentials, for each of the three rotations. This constitutes the raw data for this study. (C) Response from an exemplar neuron for the four line orientations and three stimulating speeds. The black trace represents the mean response, and the light gray traces show responses for the 15 individual trials. Tick marks below represent action potentials for each individual trial. Scale bars show time (100 ms). (D) Same data as in C but represented in spatial coordinates. Scale bars show distance traversed by the drum (2 mm). (E) Each trace shows an exemplar spike train smoothed by Gaussian kernels of various widths (noted is the SD of the kernel).\n\nA custom-built robotic device controlled the rotation speed of the drum (see Pruszynski and Johansson, 2014). To stabilize the fingertips, the nails were glued to plastic holders firmly attached to a table that also supported the right arm and the robot, and the contact force perpendicular to the skin was servo-controlled to ~0.4 N. The instantaneous rotational position of the drum was monitored via an optical shaft encoder (AC36, Hengstler GmbH), which provided position resolution of 3 \u00b5m in the scanning direction.\n\nRaised lines oriented \u201310, \u20135, 5, and 10\u00b0 relative to the axis perpendicular to the direction of motion were presented five times on the stimulus pattern (Figure 1A). These orientations were chosen to efficiently pack the stimuli onto the stimulating surface and to permit pairwise comparison of lines with angular differences of 5 (between +5 and +10\u00b0 line stimuli; between \u20135 and \u201310\u00b0 line stimuli), 10 (between \u20135 and +5\u00b0 line stimuli), 15 (between \u20135 and +10\u00b0 line stimuli; between +5 and \u201310\u00b0 line stimuli), and 20\u00b0 (between \u201310 and +10\u00b0 line stimuli). The lines, extending across the width of the stimulus surface (12 mm), were 0.5 mm high, and their widths were 0.5 mm at the top and 0.8 mm at the base. All lines were spaced at least 8 mm apart to minimize interactions between neighboring lines on a neuron\u2019s response.\n\nAll neurons were scanned at eight tangential speeds: 15, 20, 30, 45, 60, 90, 120, and 180 mm/s presented in random order. A subset of neurons was scanned at up to four additional speeds: 2.5, 5, 10, and 270 mm/s. When the 270 mm/s speed was presented, it was randomly interleaved with the main eight speed conditions. When the three slowest speeds were presented, they were always done after all other speed conditions and in a set order, from fastest to slowest (i.e. 10 mm/s, 5 mm/s, and then 2.5 mm/s). These very slow speeds take a long time to complete so presenting them at the end minimized the risk of losing isolation of the current neuron during the eight main speeds and thereby creating partial datasets. All the analyses presented here focus on the main speed conditions since these were available for all neurons. Note that the same general trends hold for the additional speeds and that the raw data for all speed conditions is provided alongside this manuscript. For each neuron and speed, the drum rotated three times, resulting in 15 trials for each line stimulus and recorded speed condition (5 presentations of stimuli per drum rotation x 3 drum rotations = 15 trials).\n\n### Data processing and analysis\n\n#### Sampling\n\nThe nerve signal, the instantaneous position of the stimulus surface, and the contact force were digitally sampled at 19.2 kHz, 2.4 kHz, and 0.6 kHz, respectively (SC/ZOOM, Department of Integrative Medical Biology, Ume\u00e5 University).\n\nTo quantify the intensity of a neuron\u2019s response, we used peak and mean firing rate. For each spike train evoked by an edge passing over the receptive field, we calculated peak firing rate as the reciprocal of the shortest inter-spike interval observed in the evoked response. Mean firing rate was calculated as the number of spikes evoked within an 8 mm response window (the minimum distance between adjacent elements on the drum) divided by the duration of the stimulus traversing this window. Furthermore, for each spike train, we generated the firing rate profile by computing the instantaneous frequency of the action potentials defined as the inverse of the interval between consecutive impulses for the duration of the interval. This calculated rate profile was then treated as a continuously recorded signal.\n\n#### Orientation signaling as a function of scanning speed\n\nTo analyze how well a neuron signaled edge orientation at each scanning speed based on the above response measures, we used methods analogous to those previously described (Pruszynski and Johansson, 2014).\n\nFor the intensity measures, we calculated how frequently the peak or mean firing rate evoked by each presentation of a particular line orientation was closer to the average response of the remaining (14) trials with the same orientation, as opposed to the average response of 14 trials from the other three edge orientations (chance = 0.25). By including only 14 of the 15 trials from other stimuli, we avoided a bias caused by a better estimate of the average response to the other stimuli.\n\nFor a neuron\u2019s firing rate profiles, we calculated the probability of correctly classifying an observed profile to the line stimulus that evoked it. To that end, we pairwise cross-correlated all firing rate profiles obtained at the speed in question. For each profile, we then calculated an average of the correlations between the remaining (14) trials with the same line orientation and the average for 14 trials from each of the other three line orientations. Finally, we calculated how often the highest average correlation resulted from stimuli with the same line orientation as opposed to the other orientations (chance = 0.25). We again only considered 14 other trials to avoid classification bias.\n\n#### Speed-invariant orientation signaling\n\nTo investigate a neuron\u2019s capacity to signal edge orientation in a speed-invariant manner, we applied the classification approach described above for within-speed signaling of other speed conditions. For the intensity measures, we quantified how frequently the peak or mean firing rate evoked by each presentation of a particular line orientation at one speed was closer to the average response of the trials with the same line orientation for another speed (i.e. correctly classified) as opposed to trials with the other line orientations (i.e. incorrectly classified). For firing rate profiles, we quantified how often a neuron\u2019s firing rate profile for a given orientation and speed was best correlated with profiles evoked by stimuli with the same orientation but at different speeds (i.e. correctly classified) as opposed to profiles evoked with the other line orientations also at different speeds (i.e. incorrectly classified). These analyses were performed with firing rate profiles conventionally represented in the temporal domain but also represented in the spatial domain where the positions of the underlying action potential are referenced to the position of the stimulus surface relative to the skin.\n\n#### Precision of spiking responses\n\nThe hypothesis that subfield arrangement structures neurons\u2019 spiking activity when edges pass over their receptive fields motivated us to estimate the spatial precision of generated action potentials with reference to neurons\u2019 signaling of fine edge orientation differences. For this purpose, we used a correlation-based measure of similarity between pairs of individual spike trains after imposing various amounts of noise on the position of the recorded action potentials (Fellous et al., 2004; Schreiber et al., 2003). Thus, we convolved each spike train with Gaussians of different kernels with roughly logarithmically spaced SDs in the range of 5\u20131280 \u00b5m, which corresponds to increasingly blurring a neuron\u2019s receptive field sensitivity topography (Jarocka et al., 2021). For each neuron and kernel width, we then pairwise correlated all smoothed spike trains and determined the spatial precision of action potentials by calculating which kernel width yielded the largest average difference in correlations with the same orientations at other speeds and with different orientations at different speeds (termed \u2018best kernel\u2019). This analysis thus only considered correlations between speed conditions since our hypothesis predicts speed-invariant edge orientation signaling when spike trains are represented in the spatial domain.\n\nFor spike trains convolved with the best kernel averaged across speeds for the FA-1 and SA-1 neurons, respectively, we also quantified for each neuron type the proportion of correctly classified orientations across scanning speeds analogous to the analysis of speed-invariant orientation signaling with firing rate profiles (chance performance = 0.25). Finally, based on pairwise comparisons between the available stimuli, we quantified the proportion of correctly classified orientations as a function of angular difference (chance = 0.5). Given our dataset, the available angular differences were 5 (between \u20135 and \u201310\u00b0 line stimuli and between +5 and +10\u00b0 line stimuli), 10 (\u20135 and +5\u00b0), 15 (\u201310 and +5\u00b0; \u20135 and +10\u00b0), and 20\u00b0 (\u201310 and +10\u00b0).\n\n#### Statistics\n\nWe carried out all statistical analysis in R Studio (V1.2.5) and SPSS (V29). Details of statistical analysis are provided in the text including the degrees of freedom, the test statistic, the p-value, and the effect size (partial eta squared: \u03b7p2). In all cases, kernel width data was log-transformed, and discrimination probability data was arcsine square root transformed where needed. For ANOVAs evaluating discrimination probability, we subtracted chance from the data such that a significant intercept in the ANOVA model meant that overall performance was above chance. These analyses included scanning speed (and sometimes orientation difference) as a within-group (repeated measures) factor and neuron type as a between-group factor.\n\n## Results\n\nWe examined the capacity of individual FA-1 and SA-1 neurons innervating human fingertips to signal fine orientation differences of edges moving across their receptive field as a function of scanning speed as well as their ability to signal fine orientation differences in a speed-invariant manner. We did so with respect to different aspects of their spiking responses. These included traditional intensity measures (i.e. peak and mean firing rate) as well as spatiotemporal measures based on the sequential structure of the spike trains. For the sequential structure, our emphasis was on its representation in the spatial domain where each action potential is referenced to the position of the edge stimulus on the skin when it occurred as this relates to the spatial structuring of the neuron\u2019s receptive field in the form of subfields.\n\nWe recorded action potentials from 30 FA-1 and 23 SA-1 isolated neurons when stimulated by repeatedly sweeping raised lines across their receptive field (Figure 1A). The lines were oriented \u00b15 and \u00b110\u00b0 relative to their direction of motion. All neurons were stimulated at eight speeds from 15 to 180 mm/s. Each edge orientation was presented 15 times per speed. The contact force between the stimuli and the finger was maintained at ~0.4 N, which is typical for haptic exploration with such stimuli (Olczak et al., 2018). Figure 1B shows the response of an exemplar neuron to the edges as a function of scanning speed. The scanning speed affected neurons\u2019 responses as expected. That is, mean firing rate (Figure 2A) and peak firing rate (Figure 2B) increased with speed, and the number of spikes decreased with speed (Figure 2C); in general, FA-1 neurons responded with higher rates than SA-1 neurons.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81476/elife-81476-fig2-v2.jpg)\n\n**Figure 2.:** (A) Mean firing rate averaged across fast-adapting type 1 (FA-1) neurons (red line) and slow-adapting type 1 (SA-1) neurons (blue line), respectively. The error bars represent the SEM across neurons (FA-1: n=30; SA-1: n=23). The thin gray lines represent mean responses for each of the four line stimuli separately. (B and C) Same format but for peak firing rate and spike count, respectively.\n\n### Orientation signaling as a function of scanning speed\n\nFor each scanning speed, we calculated how well an ideal observer could correctly classify an edge orientation based on a given neuron\u2019s peak and mean firing rate (see Methods). Discrimination accuracy based on both of these measures was poor but above chance across the speeds (Figure 3A, B). That is, separate two-way ANOVAs with speed as a within-group (repeated measures) factor and neuron type as a between-group factor were applied to the proportion of correctly classified edge orientations referenced to chance performance (25%) and revealed a significant intercept for both peak (F1,51 = 556.9, p<0.001, \u03b7p2=0.92) and mean (F1,51 = 196.3, p<0.001, \u03b7p2=0.79) firing rate.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81476/elife-81476-fig3-v2.jpg)\n\n**Figure 3.:** Mean within-speed discrimination accuracy for fast-adapting type 1 (FA-1) neurons (red lines) and slow-adapting type 1 (SA-1) neurons (blue lines) as a function of simulation speed based on neuron\u2019s mean firing rate (A), peak firing rate (B), and firing rate profile (C). (A \u2013 C) Shaded areas illustrate the SEM and dashed line chance discrimination performance (25%).\n\nFor peak firing rate, mean discrimination accuracy averaged across neurons and scanning speeds was 42% (range as a function of speed: 35\u201344%) for FA-1 neurons and 39% (range: 35\u201344%) for SA-1 neurons. We found no significant effect of neuron type on discrimination accuracy (F1,51 = 1.7, p=0.20, \u03b7p2=0.03) but observed a reliable effect of speed (F7,357 = 3.4, p<0.01, \u03b7p2=0.06) indicating a tendency for worse discrimination with increasing speed. For mean firing rate, mean discrimination accuracy averaged across the scanning speeds was 39% (range as a function of speed: 32\u201344%) for FA-1 neurons and 36% (range: 33\u201339%) for SA-1 neurons. Again, we found no significant effect of neuron type on discrimination accuracy (F1,51 = 2.6, p=0.11, \u03b7p2=0.05) but an effect of speed (F7,357 = 4.1, p<0.001, \u03b7p2=0.07) indicating a tendency for worse discrimination with increasing speed. For both peak and mean firing rate, the effect of speed might relate to the decreasing number of action potentials generated per edge stimulus at higher speeds.\n\nGiven that edge orientation signaling can occur via changes in the sequential structure of a neuron\u2019s spiking response (Pruszynski and Johansson, 2014), we calculated how well an ideal observer could correctly classify edge orientation based on a neuron\u2019s firing rate profile as a function of scanning speed (see Methods). Discrimination accuracy based on firing rate profile was substantially higher than that based on intensity measures (Figure 3C). Averaged across the speeds, mean discrimination accuracy was 78% for FA-1 neurons (range as a function of speed: 45\u201395%) and 51% for SA-1 neurons (range: 29\u201362%). A two-way ANOVA applied to the proportion of correctly classified edge orientations revealed a significant intercept referenced to chance (25%) performance (F1,51 = 309.5, p<0.001, \u03b7p2=0.86). Discrimination accuracy increased with decreasing speed (F7,357 = 71.1, p<0.001, \u03b7p2=0.58) and was, on average, better for FA-1 neurons than for SA-1 neurons (F1,51 = 33.2, p<0.001, \u03b7p2=0.40). The superiority of FA-1 neurons was at low to moderate speeds, while the discrimination accuracy of both neuron types approached chance performance at the highest speeds, giving rise to a significant interaction between speed and neuron type (F7,357 = 6.5, p<0.001, \u03b7p2=0.11).\n\nThese results show that the sequential structure of individual first-order tactile neuron responses contains considerable information about fine edge orientation differences. However, it is not obvious that neuron subfield arrangements are a crucial factor in the structuring of responses in this regard. That is, first-order tactile neurons can be incredibly sensitive to skin distortions and produce remarkably repeatable spiking responses with temporal precision to the millisecond level, so it may be argued that edge orientation discrimination can be based on any difference in mechanical events produced by non-identical stimuli (Suresh et al., 2016).\n\n### Speed-invariant orientation signaling\n\nThe following section deals with the ability of individual first-order tactile neurons to precisely signal information about edge orientation in a speed-invariant manner. We are motivated to investigate speed invariance because speed often varies when touching and manipulating objects but mostly because it provides one means of testing whether the subfield arrangement of FA-1 and SA-1 neurons is an important factor for their signaling of fine differences in edge orientation.\n\nBased on a neuron\u2019s response to a line stimulus recorded at a given speed, we calculated how well an ideal observer could identify the correct edge orientation based on the neuron\u2019s responses at the other speeds (see Methods). In this scenario, the best-case outcome is that across-speed discrimination performance is equivalent to within-speed discrimination performance for a given speed condition. As expected, given how strongly intensity measures (i.e. peak and mean firing rates) are affected by the scanning speed (Figure 2), these measures failed to provide any reliable information about edge orientation at other scanning speeds (intercept of two-way ANOVA referenced to chance performance; peak firing rate: F1,51 = 0.09, p=0.77, \u03b7p2=0.002; mean firing rate: F1,51 = 0.07, p=0.72, \u03b7p2=0.001; Figure 4A, B). On average, FA-1 and SA-1 neurons carried little information about fine orientation differences even under the assumption that scanning speed is accessible based on the overall intensity of the population response. That is, even after compensating for the effect of scanning speed on a neuron\u2019s response by normalizing its response by a linear function approximating the population level speed-intensity relationship (Figure 2), the neurons failed to provide reliable information about edge orientation (peak firing rate: F1,51 = 0.16, p=0.69, \u03b7p2=0.003; mean firing rate: F1,51 = 2.7, p=0.1, \u03b7p2=0.051). Also as expected, given that a neuron\u2019s spike train is compressed and dilated in time as a function of speed (Figure 1B), firing rate profiles represented in the temporal domain did not retain reliable information about edge-orientation at other stimulation speeds (F1,51 = 0.59, p=0.44, \u03b7p2=0.01; Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81476/elife-81476-fig4-v2.jpg)\n\n**Figure 4.:** Mean across-speed discrimination accuracy for fast-adapting type 1 (FA-1) neurons (red lines) and slow-adapting type 1 (SA-1) neurons (blue lines) as a function of core speed based on neuron\u2019s mean firing rate (A), peak firing rate (B), firing rate profile represented in the temporal domain (C), and in the spatial domain (D). (A \u2013 C) Shaded areas illustrate the standard error around the mean (FA-1: n=30; SA-1: n=23) and dashed horizontal line chance discrimination performance (25%).\n\nIn contrast, firing rate profiles contained substantial information about edge orientation at other speeds if represented in the spatial domain and therefore not compressed or dilated with speed changes (i.e. when the position of each action potential is referenced to the position of the edge relative to the skin; Figure 4D). Averaged across the speeds, mean discrimination accuracy was 41% (range as a function of speed: 29\u201348%) among FA-1 neurons and 32% (range: 28\u201335%) among SA-1 neurons. A two-way ANOVA referenced to chance performance (25%), with speed as a within-group factor and neuron type as a between-group factor, revealed a significant intercept (F1,51 = 119.2, p<0.001,\u03b7p2=0.70). Across-speed discrimination accuracy was reliably better for FA-1 neurons than for SA-1 neurons (F1,51 = 14.2, p<0.001, \u03b7p2=0.22). Discrimination accuracy also varied with speed (F7,357 = 41.9, p<0.001, \u03b7p2=0.45), with a decrease in performance for higher speeds presumably related to the relative decrease in the overall number of action potentials per stimulus. A significant interaction between speed and neuron type (F7,357 = 6.5, p<0.01, \u03b7p2=0.11) reflected a higher increase in discrimination accuracy with decreasing speed for the FA-1 than for SA-1 neurons.\n\n### Spatial precision of spike responses\n\nThe analysis above indicates that the spatial structuring of FA-1 and SA-1 responses is fairly stable over scanning speeds, which supports our hypothesis that neurons\u2019 subfield arrangements give rise to their ability to signal fine edge orientation differences. However, it does not establish whether the spatial precision of the generated action potentials aligns with the spatial acuity of the subfield arrangement of FA-1 and SA-1 neurons (Jarocka et al., 2021).\n\nWe assessed the spatial precision of the spiking responses by applying varying amounts of noise to the position of the recorded action potentials and quantifying how the noise affected the neuron\u2019s across-speeds signaling of edge orientation. In practice, each individual spike train was convolved with Gaussian kernels of various widths (5\u20131280 \u00b5m) that increasingly attenuated the spatial structure of the response (Figure 5A) analogous to blurring the spatial acuity of the neuron\u2019s subfield arrangement. For each kernel width, we then correlated each of the convolved spike trains obtained for a given edge orientation with (1) the spike trains obtained with the same orientation at all other speeds and (2) the spike trains obtained with the other orientations at all other speeds.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81476/elife-81476-fig5-v2.jpg)\n\n**Figure 5.:** (A) Illustration of the kernel convolution procedure for an exemplar neuron for one speed and all four line stimuli. Colored traces within each panel show the spike train smoothed by a Gaussian kernel of the indicated SD. Note how increasing the kernel width progressively blurs the representation of where individual action potentials occur. (B) Top: mean correlation (expressed as R2) between neuron responses to the same edge orientations (thick line) and different edge orientations (thin line) as a function of kernel width for the 30 mm/s scanning speed. Bottom: average correlation difference between stimuli with the same and with different edge orientations as a function of kernel width for the 30 mm/s scanning speed. Red and blue lines represent fast-adapting type 1 (FA-1) and slow-adapting type 1 (SA-1) neurons, respectively. Shaded areas illustrate the standard error around the mean. (C) Cumulative frequency distribution of the best kernel of FA-1 (red) and SA-1 (blue) neurons where each neuron is represented by the mean value of the best kernel calculated across speeds. (D) Mean best kernel as a function of scanning speed for FA-1 (red line) and SA-1 neurons (blue line). Shaded areas illustrate the standard error around the mean (FA-1: n=30; SA-1: n=23).\n\nIn either case, similarly low correlations arose with the narrowest kernels because the spike jitter between repetitions of the same edge-speed combination tended to be greater than the kernel width. With increasing kernel width, the correlation gradually increased indicating that the spike trains became more similar; the correlation approached one with the widest kernels because all stimulus-dependent structuring of the spike trains was then practically blurred (Figure 5B, upper panel). At intermediate kernel widths, however, the correlations between the convolved spike trains originating from different edge orientations were smaller than corresponding correlations between spike trains originating from the same orientations. At these kernel widths, the spike trains from different edge orientations were more different with respect to features sensitive to edge orientation differences. Hence, the kernel width at which the difference between these two sets of correlations is greatest provides an estimate of the spatial precision of action potentials critical for edge orientation signaling across speeds.\n\nFor each neuron and kernel-speed combination, we averaged the correlations involving trials with the same and different edge orientations and then calculated the difference between these averages. This difference was unimodal and followed an inverted-U profile as a function of kernel width, approaching zero when kernels were very narrow and wide (Figure 5B, lower panel). The maximum value therefore provided a distinct estimate of a neuron\u2019s spatial precision as a function of speed.\n\nThe distribution of best kernels averaged across scanning speeds was narrow with a mean value of 66 \u00b5m for FA-1 neurons and 73 \u00b5m for SA-1 neurons (Figure 5C). A two-way ANOVA showed a main effect of scanning speed (F7,357 = 8.38, p<0.001, \u03b7p2=0.141) but not of neuron type (F1,51 = 0.98, p=0.32, \u03b7p2=0.019). There was also a significant interaction between the effects of these factors (F7,357 = 8.4, p<0.001, \u03b7p2=0.142) as SA-1 kernels were less sensitive to scanning speed (Figure 5D). Notably, the estimates of spatial precision based on fine edge orientation discrimination are very similar to the estimates of spatial acuity of the subfield arrangements for FA-1 and SA-1 neurons (see Jarocka et al., 2021 and Discussion).\n\n### Discrimination accuracy based on convolved spike trains\n\nHere, we examined across-speed discrimination accuracy based on convolved spike trains. We calculated discrimination accuracy across the speeds after convolving the spike trains with the mean of the best kernel across FA-1 and SA-1 neurons averaged across the speeds (66 and 73 \u00b5m, respectively). We justified the use of a single kernel given the relatively narrow distribution of best kernels across neurons of each type, and the fact that for individual neurons, the exact kernel had a modest effect on the calculated dissimilarity of the relevant spike trains. Note that the corresponding analyses based on the best kernels specified for each neuron individually showed virtually the same results.\n\nAcross speed discrimination accuracy based on convolved spike trains was similar to that based on firing rate profiles represented in the spatial domain for SA-1 neurons and for FA-1 neurons it was overall better (Figure 6A). Mean discrimination accuracy was 48% (range as a function of speed: 34\u201355%) for FA-1 neurons and 32% (range: 26\u201336%) for SA-1 neurons. A two-way ANOVA applied to the proportion of correctly classified edge orientations revealed a significant intercept referenced to chance (25%) performance (F1,51 = 92.2, p<0.001, \u03b7p2=0.64) and main effects of neuron type (F1,51 = 20.5, p<0.001, \u03b7p2=0.29) and speed (F7,357 = 60.3, p<0.001, \u03b7p2=0.54). On average across neurons, the discrimination accuracy was generally better for FA-1 than for SA-1 neurons. Regarding the speed effect, for both neuron types, the discrimination accuracy was fairly uniform for speeds up to 45 mm/s, after which it gradually decreased with increasing speed. This decrease was stronger for FA-1 than for SA-1 neurons, which rendered a significant interaction between speed and neuron type (F7,357 = 8.7, p<0.01, \u03b7p2=0.15).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81476/elife-81476-fig6-v2.jpg)\n\n**Figure 6.:** (A) Average across-speed discrimination accuracy for fast-adapting type 1 (FA-1) (red line) and slow-adapting type 1 (SA-1) neurons (blue line) as a function of scanning speed. (B) Same format but considering only the speeds commonly used by people when discriminating these kinds of stimuli (15\u201345 mm/s). (A and B) Data based on spike trains convolved by the average best kernel over neurons and speeds (66 \u03bcm for FA-1 neurons, n=30; 73 \u03bcm for SA-1 neurons, n=23). Shaded areas illustrate the SEM, and the dashed line indicates chance discrimination performance (25%).\n\nFrom a behavioral perspective, the above analyses of speed-invariant signaling include scanning speeds that span a much wider range (15\u2013180 mm/s) than what people commonly use (15\u201345 mm/s) when discriminating similar stimuli (Olczak et al., 2018; Vega-Bermudez et al., 1991). Therefore, to provide a more pragmatic view on neurons\u2019 speed-invariant signaling, we calculated across speed discrimination accuracy limited to the range of these commonly used speeds (Figure 6B). When considering the commonly used speeds, edge orientation discrimination accuracy was strikingly high, averaging 75% (range as a function of speed: 72\u201377%) for FA-1 neurons and 43% (range: 39\u201345%) for SA-1 neurons. A two-way ANOVA focusing on the commonly used speeds revealed a significant main effect of speed (F3,153 = 12.5, p<0.001, \u03b7p2=0.20) and neuron type (F1,51 = 5.6, p<0.001, \u03b7p2=0.33) but no significant interaction (F3,153 = 0.13, p=0.72). That is, the superiority of FA-1 neurons was uniform across the commonly used speeds.\n\nOur analyses so far have concerned data pooled over all the edge orientation differences present on our stimulation surface (\u0394\u03b8=5, 10, 15 and 20\u00b0, see Methods). Discrimination accuracy for all combinations of edge orientations and speeds is illustrated as a confusion matrix in Figure 7. Note that the various line stimuli were similarly discriminated and that misclassifications tended to occur toward edges with similar orientation (i.e. off-diagonal terms). To directly address how orientation difference influences the ability of FA-1 and SA-1 neurons to signal edge orientation, we examined how across-speed discrimination accuracy was affected by orientation difference for each pair-wise orientation difference and speed (chance = 0.5). As expected, discrimination accuracy increased gradually with increasing orientation difference (Figure 8). A three-way ANOVA with orientation difference and speed as within-group (repeated measures) factors and neuron type as between-group factor indicated a main effect of orientation difference on discrimination accuracy (F3,153 = 35.2 p<0.001, \u03b7p2=0.41). The superiority of FA-1 neurons over the SA-1 neurons remained (F1,51 = 15.0, p<0.001, \u03b7p2=0.23) as did the observation that discrimination accuracy varies with speed (F7,357 = 21.4, p<0.001, \u03b7p2=0.30). This effect appeared consistent across neuron types as we found no significant interaction between scanning speed and neuron type (F7,1071 = 1.5, p=0.15, \u03b7p2=0.03). We did, however, find a significant interaction between scanning speed and orientation difference (F21,1071 = 1.8, p<0.05, \u03b7p2=0.03) consistent with the observation that the effect of orientation difference on discrimination accuracy decreased with increasing speed.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/81476/elife-81476-fig7-v2.jpg)\n\n**Figure 7.:** Discrimination accuracy for all edge orientation and speed combinations based on spike trains convolved by the average best kernel over neurons and speeds (66\u03bcm for fast-adapting type 1 [FA-1] neurons, n=30; 73\u03bcm for slow-adapting type 1 [SA \u20131], n=23). Each 4\u00d74 submatrix represents comparisons of the four oriented edges within the indicated speed combination. Thus, the main diagonal of the submatrices represents within-speed comparisons, and the off-diagonal submatrices represent across-speed comparisons. The brightness of each element represents the probability of assigning the correct edge orientation to each of the four possibilities where chance performance is 25%.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/81476/elife-81476-fig8-v2.jpg)\n\n**Figure 8.:** Mean across-speed discrimination accuracy for fast-adapting type 1 (FA-1) (red lines) and slow-adapting type 1 (SA-1) neurons (blue lines) as a function of speed and orientation difference. Data based on spike trains convolved by the average best kernel over neurons and speeds (66 \u03bcm for FA-1 neurons, n=30; 73 \u03bcm for SA \u20131, n=23). The different shades of each color represent the indicated orientation differences. Error bars represent the SEM, and the dashed line indicates chance discrimination performance (50%).\n\nLastly, given our interest in signaling very fine edge orientation differences, we asked at what scanning speeds individual FA-1 and SA-1 neurons could discriminate the finest orientation difference in our dataset (\u0394\u03b8=5\u00b0). That is, for each neuron type, we examined if discrimination accuracy exceeded chance performance (50%) by using a one-tailed one-sample t-tests for each speed followed by Bonferroni correction for multiple comparison (N=8). For FA-1 neurons, discrimination accuracy exceeded chance performance for all but the highest two speeds (t29\u22654.41, pcorrected\u22640.005 for speeds \u226490 mm/s; t29<2.6, pcorrected>0.06 for speeds >90 mm/s). And for SA-1 neurons, discrimination accuracy exceeded chance performance for all but the three highest speeds (t22\u22653.2, pcorrected\u22640.02 for speeds from \u226460 mm/s; t22\u22641.8, pcorrected\u22650.38 for speeds >60 mm/s). Thus, at scanning speeds that are commonly used in tactile spatial discrimination tasks, individual neurons of both types can contribute speed-invariant information about edge orientation at a level of detail corresponding to differences of only 5\u00b0.\n\n## Discussion\n\nWe show that individual FA-1 and SA-1 neurons carry substantial information about fine orientation differences in the sequential structure of their spike trains but little in the intensity of their responses. Moreover, the sequential structure allows speed-invariant signaling of fine edge orientation differences across a wide range of scanning speeds when represented in the spatial domain, when action potentials are referenced to the position of the edge stimulus on the skin. In contrast, response intensity from an individual neuron appears informative only when it is stimulated with a uniform scanning speed.\n\nOur findings reveal that single human first-order tactile neurons signal edge orientation most reliably at slow to moderate speeds, corresponding to those used when actively performing tactile spatial discrimination tasks with the fingertips (Olczak et al., 2018; Vega-Bermudez et al., 1991). Our findings also reveal that edge orientation signaling decreases for stimulation speeds exceeding ~45 mm/s, corresponding to the speeds at which spatial discrimination capacity decreases (Bensmaia et al., 2008; Vega-Bermudez et al., 1991). We speculate that the choice of speeds in active tasks and changes in discrimination capacity as a function of speed in passive tasks are associated with the ability of first-order tactile neurons to produce the relevant information. Edge orientation sensitivity at natural speeds was strikingly high, with neurons routinely showing speed-invariant orientation signaling for differences as small as 5\u00b0, which is substantially better than what humans can consciously report (Bensmaia et al., 2008; Lechelt, 1992; Olczak et al., 2018; Peters et al., 2015) but on a par with what people exhibit in object manipulation (Pruszynski et al., 2018).\n\nThe edge orientation sensitivity we report might underestimate the spatial sensitivity of FA-1 and SA-1 neurons. First, many first-order tactile neurons could reliably discriminate even our most finely spaced edge orientations. Second, our analysis ignored the viscoelastic and anisotropic properties of the fingertip, and thus possible complex time-varying deformations of the fingertip skin as a surface slide over it (Delhaye et al., 2016; Jarocka et al., 2021). Varying amounts of compression, stretching, and shearing of the skin within a neuron\u2019s receptive field may therefore have occurred during the repeated scans both within and across speeds and between edges with different orientations. Such events would have erroneously increased our estimate of the spatial jitter of action potentials across the repetitions of a given stimulus and thus erroneously reduced our estimate of edge orientation information in the spike trains.\n\nFor stimuli with larger orientation differences (\u226522.5\u00b0), we previously showed that a neuron\u2019s sensitivity to edge orientation was linked to the layout of subfields in its receptive field (Pruszynski and Johansson, 2014). That is, we could predict the structure of the generated spike trains (in terms of the presence of spikes and the lengths of gaps between spike bursts) as a function of edge orientation based on how the neuron\u2019s subfields were sequentially stimulated. In the present study, we could not directly relate a neuron\u2019s edge orientation signaling to the sensitivity topography of the receptive field because we did not collect receptive field maps. Nevertheless, two pieces of evidence suggest that the mechanism is the same. First, that a neuron exhibits speed invariance in signaling fine edge orientation differences especially at natural scanning speeds is consistent with its responses being structured by its subfield layout, which for FA-1 and SA-1 neurons, is rather speed invariant at least for speeds up to 60 mm/s (Jarocka et al., 2021). Second, in terms of Gaussian kernel widths, the estimate of the spatial precision of action potentials in this study is practically identical to the estimated spatial sensitivity of the subfield arrangement of the FA-1 and SA-1 neurons mapped by small dots laterally scanning the receptive field (Jarocka et al., 2021). For both studies, the estimated spatial sensitivity implies a spatial period expressed in sinusoidal terms that basically matches the width of an individual papillary ridge. That is, based on a Gaussian function being very similar to the period of a cosine cycle specified between \u2212\u03c0 and \u03c0, the spatial sensitivity in Gaussian terms averaged across both neuron types in the two studies corresponds to a sinusoidal period of 0.33 mm and 0.41 mm, respectively (for details, see Jarocka et al., 2021). One possibility is that the width of the line stimuli could have acted as a low-pass filter and thus led to an underestimation of spatial sensitivity. However, we do not believe this to be the case given previous work showing that ridge deflections that stimulate FA-1 and SA-1 neurons are largely driven by the leading edge of similar stimuli and that the neurons, as well as their monkey equivalents, generally respond more intensely to the leading rather than trailing ends of tactile elements (Blake et al., 1997; LaMotte and Whitehouse, 1986; Pruszynski and Johansson, 2014). FA-1 neurons were generally better than SA-1 neurons in signaling fine edge orientation based on the spatial structuring of their responses. A plausible explanation is that the receptive fields of human FA-1 neurons have about twice as many subfields as SA-1 neurons (Jarocka et al., 2021; Johansson, 1978; Phillips et al., 1992), while the overall receptive field sizes are comparable (Johansson and Vallbo, 1980). A larger number of subfields could in principle provide higher sensitivity to fine orientation differences by offering more varied sequential structuring with orientation changes (Pruszynski et al., 2018). The superiority of FA-1 neurons in this regard, together with their density in the fingertip being approximately twice as high as that of the SA-1 neurons (Johansson and Vallbo, 1979), suggests that FA-1 neurons play a primary role in extracting detailed spatial properties associated with dynamic fingertip events. Indeed, FA-1 neurons (or those like FA-1 neurons) dominate innervation in other body areas, such as the lips/tongue (Trulsson and Essick, 1997) and foot sole (Corniani and Saal, 2020), where the high-fidelity extraction of dynamic mechanical events seems key to their function. In contrast, the low-threshold mechanoreceptive innervation of the human hairy skin appears dominated by slowly adapting neurons (Corniani and Saal, 2020).\n\nOur study highlights that individual FA-1 and SA-1 neurons can signal fine edge orientation differences via the sequential structure of evoked spike trains. However, for a host of reasons, it seems unlikely that the central nervous system would rely on registering the sequential structure of spike trains in individual neurons to estimate edge orientation. For example, such a scheme would require the spike train to be considered in its entirety which would take a long time, especially at slower scanning speeds due to the sizable spread of a neuron\u2019s subfields over the skin, and it would not function at all without lateral scanning motion. And for speed invariant signaling of edge orientation information, it would require that the nervous system have knowledge about the time course of each spike train. Similar limitations would also apply to the intensity measures, and in addition, accurate time-varying instantaneous information about scanning speed would be required for these measures to contribute to speed invariant signaling of edge orientation.\n\nWe have instead proposed a population level mechanism for geometric feature signaling that utilizes the high-spatial precision of spike generation offered by the presence FA-1 and SA-1 neuron subfields and which can signal tactile spatial details both instantaneously and in a speed-invariant manner (Hay and Pruszynski, 2020; Pruszynski et al., 2018; Pruszynski and Johansson, 2014). Briefly, the basis is that subfields belonging to different neurons are highly intermingled because of the high density of FA-1 and SA-1 neurons, especially in the fingertip skin (Johansson and Vallbo, 1979), and the substantial size of the skin area in which a neuron\u2019s subfields are distributed (Jarocka et al., 2021; Johansson and Vallbo, 1980). Consequently, when an edge of a certain orientation deforms the skin at a particular location, a subset of neurons whose subfields spatially coincide with the edge is synchronously excited, but at a slightly different orientation or location, synchrony occurs primarily in another subset of neurons. In this scheme, the degree to which stimuli synchronously engage different subsets of neurons determines the ultimate edge orientation resolution of the nervous system as well as its resolution in the case of discrimination of tactile spatial details in general. Our previous simulations based on realistic innervation density and receptive field sizes suggest that the presence of subfields is particularly beneficial for edge-orientation signaling for short edges that involve only a small part of the fingertip which might be particularly relevant for the precise control of the digits in tasks requiring dexterous object manipulation (Pruszynski et al., 2018). Regarding the conscious perception of edge orientation, when edges of different lengths are pressed against a fingertip, humans perform poorly for 2 mm long edges followed by an abrupt improvement for edges longer than 4 mm (Peters et al., 2015). It is tempting to speculate that the substantial performance degradation for 2 mm long edges relates to the fact that for a vast majority of FA-1 and SA-1 neurons, this length is substantially smaller than the area of the fingertip skin where a neuron\u2019s subfields are distributed (Jarocka et al., 2021; Johansson, 1978; Phillips et al., 1992). That is, if the edge length is smaller than the scale of the subfield arrangement, a single neuron likely carries less information about edge orientation compared to edge lengths can stimulate the entire set of subfields.\n\nThe present study cannot ultimately determine how the nervous system builds and propagates information about the high-dimensional space of stimulus features required for doing object manipulation or exploratory tasks. However, the anatomical and functional organization of tactile ascending pathways, as well as sensory pathways in general, suggest that synchronized activity across neuronal ensembles induced by sensory events may play a key role (Brette, 2012; Bruno, 2011; Pruszynski and Zylberberg, 2019; Salinas and Sejnowski, 2001; Singer, 1999; Stanley, 2013). A hallmark of sensory ascending pathways, including tactile pathways, is massive increases in divergence and convergence as excitatory connections synapse sequentially and downstream representations engage orders of magnitude more neurons than the incoming axons (Babadi and Sompolinsky, 2014; Jones, 2000). This dimensionality expansion together with the subfield organization of first-order neurons and the sensitivity of neuronal activity to the timing of synaptic input would offer exceptional potential for simultaneous high-resolution identification of various tactile spatiotemporal events, based on patterns of correlated inputs across neurons. Furthermore, different synaptic integration times imply that both the precise timing of individual spikes in presynaptic axons as well as the intensity of spike bursts could contribute depending on the time scales of the sensory inputs and of the nature and context of the current tasks (Harvey et al., 2013; Hay and Pruszynski, 2020; Lankarany et al., 2019). For object manipulation that requires rapid information about changes in spatial contact states, the nervous system could primarily rely on the precise timing of input across neuronal ensembles, while in perceptual judgment tasks, that usually take place under less time pressure allowing more time for synaptic integration, information in individual neurons\u2019 spike intensities could play a greater role (Hay and Pruszynski, 2020; Johansson and Birznieks, 2004; Pruszynski et al., 2018). It is well established that the central processing of sensory information in general can depend on task and context (Crapse and Sommer, 2008; Engel et al., 2001; Gazzaley and Nobre, 2012; Manita et al., 2015; Schroeder et al., 2010; Zagha et al., 2013). For the somatosensory system, descending motor-related signals at different levels of the sensorimotor system can affect virtually all levels of the tactile processing pathways (Adams et al., 2013; Canedo, 1997; Fanselow and Nicolelis, 1999; Ghez and Pisa, 1972; Lee et al., 2008; Manita et al., 2015; Seki and Fetz, 2012; Zagha et al., 2013). A seemingly effective way to adapt tactile feature computations as a function of behavioral goals would be for descending mechanisms to act on synapses of the tactile ascending pathways to influence the exact pattern of synchronized activity across the neuronal ensembles that are propagated. The plausibility of this assumption, we believe, will be clarified by recent advances in recording neural activity from earliest stages of tactile processing in the spinal cord (Confais et al., 2017) and brainstem of awake and behaving animals (Conner et al., 2021; He et al., 2021; Versteeg et al., 2021).\n",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "8500c471-6d04-4a80-9aca-ee4c5f90d778",
+      "submission_id": "2d478eb4-79d8-4dde-8b35-f415515f0f85",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hannes P Saal, https://ror.org/05krs5044 University of Sheffield United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81476.sa0](https://doi.org/10.7554/eLife.81476.sa0)\n\nThis paper will be of broad interest to anyone aiming to understand the neural basis of human touch perception. This is an important paper that provides compelling evidence for peripheral tactile encoding of orientation that reflects perceptual capabilities, by using a wide range of stimulus conditions. The results will be valuable to inform both future experiments and computational investigations into the neural representation and processing of small tactile spatial features at the edge of perceptual resolvability and on the emergence of invariant representations in touch more generally.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Hannes P Saal, https://ror.org/05krs5044 University of Sheffield United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81476.sa1](https://doi.org/10.7554/eLife.81476.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Precise and stable edge orientation signaling by human first-order tactile neurons\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Hannes P Saal as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Tamar Makin as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Benoit Delhaye (Reviewer #2); Saad S Nagi (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Reviewer #1 questioned whether the comparison between rate and spike-timing based codes was fair, as the spike-timing code was adjusted for scanning speed, while the rate code was not. Please address this point in the revision; this will likely require additional analysis.\n\n2) Please add a section in the Discussion providing a more in-depth comparison with the psychophysical literature (see comment by reviewer #1).\n\n3) Several reviewers had questions about the stimulus set (choice of stimuli, inclusion of some conditions in the results but not others). Please clarify these in the text.\n\n4) Reviewer #2 asked about the link between the spatial precision of the neurons and the size of a fingerprint ridge. In a somewhat related question, reviewer #1 wondered about the robustness of sub-field responses especially during higher scanning speeds. Please comment on these issues.\n\nReviewer #1 (Recommendations for the authors):\n\n1) In the comparison across different speeds, the temporal profile is corrected for scanning speed, while the spike rates are not. To make a fairer comparison while assuming that scanning speed is accessible, one might fit a linear function to the speed/rate data (see Figure 2) and then 'correct' the rates accordingly. Any systematic deviation in firing rates due to the different orientations should then be discriminable. Given that firing rates do not perform particularly well even in the within-speed discrimination analysis, I would not expect them to outperform the spatial profile in the across-speed analysis either, but such an analysis would provide more robust evidence that rates alone are not sufficient to accomplish fine discrimination.\n\n2) Why was a vertical orientation (0 degrees) not included in the setup? The authors cite 10 degrees as the perceptual lower bound, but this value cannot be directly tested due to the omission of a vertically oriented edge.\n\n3) The comparison with the psychophysical literature could be more extensive. For example, the Bensmaia paper that is cited in the introduction also investigated perceptual thresholds across different scanning speeds, a question that is relevant for the current paper as well. The Peters study tested different edge lengths, which might be compared against the size of the typical receptive field etc.\n\n4) Figure 2: At the highest scanning speeds, the average spike count drops to below 10 spikes. Presumably here not every sub-field does reliably elicit a spike anymore. Are the few spikes that do get elicited randomly distributed across all subfields, or do certain sub-fields reliably produce spikes while others drop out completely? That is, is the signal robust but not strong enough to aid in discrimination, or is the robustness lost?\n\n5) Figure 7 and associated analysis: In the confusion matrices, when orientations are mis-classified, does this appear most often with their closest orientation? Such smoothness would be expected from the interaction of the sub-fields with the differently oriented lines.\n\nReviewer #2 (Recommendations for the authors):\n\nI only have a few comments:\n\n- The data collected at 2.5, 5, and 10 mm/s does not appear in the results, is there a reason?\n\n- The authors should probably elaborate on the link between the spatial precision of the neurons (~60-70 um) and the fingerprint ridges dimension (~300-400um), which I believe are not so close. Also, the edge widths are close to fingerprint ridges periodicity, could this have an artificial effect on the results?\n\n- P16, first paragraph: Delhaye et al., 2019 is a review of primate somatosensory cortex and is not related to the sentence \"the viscoelastic and anisotropic properties of the fingertip, and thus possible complex time-varying deformations of the fingertip skin as a surface slides over it\".\n\nReviewer #3 (Recommendations for the authors):\n\nThis is a very well-written paper. I have no concerns and fully support its publication.\n",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4480ff22-68ea-47c6-a007-c0584c18a03a",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C1",
+      "claim": "Fast-adapting type 1 (FA-1) and slow-adapting type 1 (SA-1) first-order neurons in the human tactile system have distal axons that branch in the skin and form many transduction sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast-adapting type 1 (FA-1) and slow-adapting type 1 (SA-1) first-order neurons in the human tactile system have distal axons that branch in the skin and form many transduction sites, yielding receptive fields with many highly sensitive zones or 'subfields.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Cauna, 1956; Cauna, 1959; Nolano et al., 2003; Par\u00e9 et al., 2002; Vallbo and Johansson, 1984) as indicated in the Introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "f1de171c-56c2-40c1-8cef-e3ef770f1fc4",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C2",
+      "claim": "FA-1 and SA-1 neurons have receptive fields with many highly sensitive zones or 'subfields'.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast-adapting type 1 (FA-1) and slow-adapting type 1 (SA-1) first-order neurons in the human tactile system have distal axons that branch in the skin and form many transduction sites, yielding receptive fields with many highly sensitive zones or 'subfields.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Jarocka et al., 2021; Johansson, 1978; Phillips et al., 1992; Pruszynski and Johansson, 2014) as indicated in the Introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "4c93aa69-a99b-4919-86a6-9e4eb1a83c57",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C3",
+      "claim": "FA-1 and SA-1 neurons signal the orientation of raised edges scanned with the fingertips.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that this arrangement allows FA-1 and SA-1 neurons to signal the geometric features of touched objects, specifically the orientation of raised edges scanned with the fingertips.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references previous work by the authors and is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "ffffda4f-c3e3-4e67-8d55-8178caaaf26d",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C4",
+      "claim": "Edge orientation signaling by FA-1 and SA-1 neurons operates for fine edge orientation differences (5\u201320\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that such signaling operates for fine edge orientation differences (5\u201320\u00b0) and is stable across a broad range of scanning speeds (15\u2013180 mm/s); that is, under conditions relevant for real-world hand use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including discrimination accuracy analyses across different orientation differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "e3543d87-09f7-43e0-8020-5876f8ccbaa7",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C5",
+      "claim": "Edge orientation signaling by FA-1 and SA-1 neurons is stable across a broad range of scanning speeds (15\u2013180 mm/s).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that such signaling operates for fine edge orientation differences (5\u201320\u00b0) and is stable across a broad range of scanning speeds (15\u2013180 mm/s); that is, under conditions relevant for real-world hand use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing speed-invariant discrimination accuracy across multiple scanning speeds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "7533b68d-f4d1-4c8b-a928-64be45f8b0b6",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C6",
+      "claim": "Both FA-1 and SA-1 neurons weakly signal fine edge orientation differences via the intensity of their spiking responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both FA-1 and SA-1 neurons weakly signal fine edge orientation differences via the intensity of their spiking responses and only when considering a single scanning speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing discrimination accuracy based on peak and mean firing rates (Figure 3A, B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "59e6ff03-4eef-463e-a33f-20708f632182",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C7",
+      "claim": "Intensity-based edge orientation signaling by FA-1 and SA-1 neurons only works when considering a single scanning speed.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both FA-1 and SA-1 neurons weakly signal fine edge orientation differences via the intensity of their spiking responses and only when considering a single scanning speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that intensity measures fail to provide reliable information about edge orientation across speeds (Figure 4A, B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "f11527ce-c184-45dd-9116-86bd3dced62f",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C8",
+      "claim": "Both FA-1 and SA-1 neuron types showed much stronger edge orientation signaling in the sequential structure of the evoked spike trains.",
+      "claim_type": "EXPLICIT",
+      "source": "Both neuron types showed much stronger edge orientation signaling in the sequential structure of the evoked spike trains, and FA-1 neurons performed better than SA-1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing higher discrimination accuracy based on firing rate profiles compared to intensity measures (Figure 3C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "0f0f43d4-6a66-4ffe-91af-6cbd48302690",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C9",
+      "claim": "FA-1 neurons performed better than SA-1 neurons in edge orientation signaling based on sequential structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Both neuron types showed much stronger edge orientation signaling in the sequential structure of the evoked spike trains, and FA-1 neurons performed better than SA-1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing higher discrimination accuracy for FA-1 neurons compared to SA-1 neurons (Figure 3C, Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "e850a54c-ebe1-45f3-8e1a-a279e592115f",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C10",
+      "claim": "The sequential structure of neuronal responses was strikingly invariant across scanning speeds when represented in the spatial domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Represented in the spatial domain, the sequential structure was strikingly invariant across scanning speeds, especially those naturally used in tactile spatial discrimination tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing high across-speed discrimination accuracy when spike trains are represented in the spatial domain (Figure 4D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "0166fcb1-f857-4912-8b9d-16aedbd70410",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C11",
+      "claim": "Speed invariance of sequential structure is especially strong at speeds naturally used in tactile spatial discrimination tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Represented in the spatial domain, the sequential structure was strikingly invariant across scanning speeds, especially those naturally used in tactile spatial discrimination tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing higher discrimination accuracy at speeds of 15-45 mm/s (Figure 6B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "20531d96-696a-4df8-af1b-548caebfe150",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C12",
+      "claim": "Speed invariance of neuronal responses suggests that neurons' responses are structured via sequential stimulation of their subfields.",
+      "claim_type": "EXPLICIT",
+      "source": "This speed invariance suggests that neurons' responses are structured via sequential stimulation of their subfields and thus links this capacity to their terminal organization in the skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data showing speed-invariant spatial representations and knowledge about subfield organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "b90986cf-6d37-4331-8e3e-a11eb3aecbf4",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C13",
+      "claim": "The spatial precision of elicited action potentials rationally matched spatial acuity of subfield arrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the spatial precision of elicited action potentials rationally matched spatial acuity of subfield arrangements, which corresponds to a spatial period similar to the dimensions of individual fingertip ridges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing best kernel widths of 66 \u00b5m for FA-1 and 73 \u00b5m for SA-1 neurons (Figure 5C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "6691c361-1107-454a-b869-b0bf0e702611",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C14",
+      "claim": "The spatial precision of action potentials corresponds to a spatial period similar to the dimensions of individual fingertip ridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the spatial precision of elicited action potentials rationally matched spatial acuity of subfield arrangements, which corresponds to a spatial period similar to the dimensions of individual fingertip ridges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and comparison to known dimensions of fingertip ridges.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "5e368a7d-409d-4a3a-b759-13e0f56c3d80",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C15",
+      "claim": "The distal axons of FA-1 and SA-1 neurons innervating the glabrous skin of the primate hand branch extensively in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "The distal axons of fast-adapting type 1 (FA-1) and slow-adapting type 1 (SA-1) neurons innervating the glabrous skin of the primate hand branch extensively in the skin, causing each individual neuron to innervate many spatially segregated low-threshold mechanoreceptive end organs (Cauna, 1956; Cauna, 1959; Nolano et al., 2003; Par\u00e9 et al., 2002; Vallbo and Johansson, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "e44186f8-8036-46bb-bf1e-c3eb3bb6e0c4",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C16",
+      "claim": "Each individual FA-1 and SA-1 neuron innervates many spatially segregated low-threshold mechanoreceptive end organs.",
+      "claim_type": "EXPLICIT",
+      "source": "The distal axons of fast-adapting type 1 (FA-1) and slow-adapting type 1 (SA-1) neurons innervating the glabrous skin of the primate hand branch extensively in the skin, causing each individual neuron to innervate many spatially segregated low-threshold mechanoreceptive end organs (Cauna, 1956; Cauna, 1959; Nolano et al., 2003; Par\u00e9 et al., 2002; Vallbo and Johansson, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "98dcdd83-6c88-4297-8366-003c8023a6d5",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C17",
+      "claim": "FA-1 and SA-1 neurons have spatially complex receptive fields with many highly sensitive zones distributed within a circular or elliptical area typically covering 5\u201310 fingerprint ridges.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement results in spatially complex receptive fields with many highly sensitive zones (or 'subfields') distributed within a circular or elliptical area typically covering 5\u201310 fingerprint ridges (Jarocka et al., 2021; Johansson, 1978; Phillips et al., 1992; Pruszynski and Johansson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "e56ddb93-d7b3-4028-9d57-fcd7fd22bc65",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C18",
+      "claim": "The subfield arrangement of FA-1 and SA-1 neurons constitutes a peripheral neural mechanism for geometric feature extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We have proposed that this arrangement constitutes a peripheral neural mechanism for geometric feature extraction (Hay and Pruszynski, 2020; Jarocka et al., 2021; Pruszynski et al., 2018; Pruszynski and Johansson, 2014; Zhao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' previous proposals and is supported by citations to their prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "b919ec0f-84be-4b10-9f5d-0771023ed469",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C19",
+      "claim": "FA-1 and SA-1 neurons signal information about the orientation of edges moving across a neuron's receptive field via changes in both their spiking intensity and the sequential structure of their spiking response.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we previously demonstrated that both FA-1 and SA-1 neurons signal information about the orientation of edges moving across a neuron's receptive field via changes in both their spiking intensity and the sequential structure of their spiking response (Pruszynski and Johansson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "219c6d1d-1008-4327-ad70-668ee3e81657",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C20",
+      "claim": "The intensity of a neuron's response can be modulated by the degree of spatial coincidence between the neuron's subfields and local skin deformation caused by the edge.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensity of a neuron's response can be modulated by the degree of spatial coincidence between the neuron's subfields and local skin deformation caused by the edge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the known organization of subfields and their mechanical sensitivity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "248ca88e-37c3-448f-9589-d6287e6e9473",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C21",
+      "claim": "The sequential structure of a neuron's response can carry information about edge orientation because the orientation affects the sequence and timing of stimulated subfields as the edge passes over the neuron's receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequential structure of a neuron's response (i.e. the gaps between bursts of spikes) can carry information about edge orientation because the orientation affects the sequence and timing of stimulated subfields as the edge passes over the neuron's receptive field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the spatial organization of subfields and how edges would sequentially stimulate them.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "cc21e056-0c5b-4aee-8e33-c6fd096c7725",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C22",
+      "claim": "Edge orientation discrimination thresholds during object manipulation are approximately 3\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study (Pruszynski and Johansson, 2014), we used edges that had large orientation differences (\u226522.5\u00b0) compared to edge orientation discrimination thresholds found during object manipulation (~3\u00b0; Pruszynski et al., 2018) or psychophysical tasks (~10\u201325\u00b0; Bensmaia et al., 2008; Lechelt, 1992; Olczak et al., 2018; Peters et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research (Pruszynski et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "c268345d-4fa5-4806-8b2d-a141166a7301",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C23",
+      "claim": "Edge orientation discrimination thresholds in psychophysical tasks are approximately 10\u201325\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study (Pruszynski and Johansson, 2014), we used edges that had large orientation differences (\u226522.5\u00b0) compared to edge orientation discrimination thresholds found during object manipulation (~3\u00b0; Pruszynski et al., 2018) or psychophysical tasks (~10\u201325\u00b0; Bensmaia et al., 2008; Lechelt, 1992; Olczak et al., 2018; Peters et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Bensmaia et al., 2008; Lechelt, 1992; Olczak et al., 2018; Peters et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "b8ab5b6e-d8a1-41f2-b6c0-5ab87b6c5b2f",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C24",
+      "claim": "During natural contacts with objects where the use of tactile information is critical, a wide range of speeds can occur.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during natural contacts with objects where the use of tactile information is critical, a wide range of speeds can occur (Callier et al., 2015; Cole and Abbs, 1988; Johansson and Westling, 1984; Olczak et al., 2018; Smith et al., 2002a; Smith et al., 2002b; Vega-Bermudez et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "9c406195-fda3-4b5e-9a8d-f8fa29a56736",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C25",
+      "claim": "The layout of a neuron's subfield arrangement is fairly stable over a range of natural scanning speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the layout of a neuron's subfield arrangement is fairly stable over a range of natural scanning speeds (Jarocka et al., 2021), the hypothesis predicts speed invariant signaling of edge orientation when spike trains are represented in the spatial domain, where the action potentials are represented with respect to the position of the stimulus on the skin at the time of their occurrence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research (Jarocka et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "c682c5f6-330b-4e2c-84c2-a43b1f8554ea",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C26",
+      "claim": "The study recorded action potentials from 30 FA-1 and 23 SA-1 isolated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 53 neurons recorded, 30 were FA-1 and 23 were SA-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data sample in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "b0129039-df03-4ae5-94a8-13897bfe2970",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C27",
+      "claim": "Mean firing rate increased with scanning speed for both FA-1 and SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The scanning speed affected neurons' responses as expected. That is, mean firing rate (Figure 2A) and peak firing rate (Figure 2B) increased with speed, and the number of spikes decreased with speed (Figure 2C); in general, FA-1 neurons responded with higher rates than SA-1 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "6cf3bf5b-e1ea-4074-9919-dbebf8714b01",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C28",
+      "claim": "Peak firing rate increased with scanning speed for both FA-1 and SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The scanning speed affected neurons' responses as expected. That is, mean firing rate (Figure 2A) and peak firing rate (Figure 2B) increased with speed, and the number of spikes decreased with speed (Figure 2C); in general, FA-1 neurons responded with higher rates than SA-1 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "c69447a0-74b4-4e94-83f4-a8ff240976be",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C29",
+      "claim": "The number of spikes decreased with scanning speed for both FA-1 and SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The scanning speed affected neurons' responses as expected. That is, mean firing rate (Figure 2A) and peak firing rate (Figure 2B) increased with speed, and the number of spikes decreased with speed (Figure 2C); in general, FA-1 neurons responded with higher rates than SA-1 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "c8377532-94e8-4ef4-8fb8-ac79e880e1b1",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C30",
+      "claim": "FA-1 neurons responded with higher rates than SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The scanning speed affected neurons' responses as expected. That is, mean firing rate (Figure 2A) and peak firing rate (Figure 2B) increased with speed, and the number of spikes decreased with speed (Figure 2C); in general, FA-1 neurons responded with higher rates than SA-1 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "603df1e9-8505-4f40-a7e1-cdcfec007a1f",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C31",
+      "claim": "Discrimination accuracy based on peak firing rate was poor but above chance across scanning speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrimination accuracy based on both of these measures was poor but above chance across the speeds (Figure 3A, B). That is, separate two-way ANOVAs with speed as a within-group (repeated measures) factor and neuron type as a between-group factor were applied to the proportion of correctly classified edge orientations referenced to chance performance (25%) and revealed a significant intercept for both peak (F1,51 = 556.9, p<0.001, \u03b7p2=0.92) and mean (F1,51 = 196.3, p<0.001, \u03b7p2=0.79) firing rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data (ANOVA results) and Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "ab709112-6e63-4485-af73-368338bc5713",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C32",
+      "claim": "Discrimination accuracy based on mean firing rate was poor but above chance across scanning speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrimination accuracy based on both of these measures was poor but above chance across the speeds (Figure 3A, B). That is, separate two-way ANOVAs with speed as a within-group (repeated measures) factor and neuron type as a between-group factor were applied to the proportion of correctly classified edge orientations referenced to chance performance (25%) and revealed a significant intercept for both peak (F1,51 = 556.9, p<0.001, \u03b7p2=0.92) and mean (F1,51 = 196.3, p<0.001, \u03b7p2=0.79) firing rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data (ANOVA results) and Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "8163727c-ef98-40d2-9ce8-83ca9a75f994",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C33",
+      "claim": "Mean discrimination accuracy based on peak firing rate averaged across neurons and scanning speeds was 42% for FA-1 neurons and 39% for SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For peak firing rate, mean discrimination accuracy averaged across neurons and scanning speeds was 42% (range as a function of speed: 35\u201344%) for FA-1 neurons and 39% (range: 35\u201344%) for SA-1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "f8039213-4214-4316-97e9-5585a581b071",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C34",
+      "claim": "Mean discrimination accuracy based on mean firing rate averaged across scanning speeds was 39% for FA-1 neurons and 36% for SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For mean firing rate, mean discrimination accuracy averaged across the scanning speeds was 39% (range as a function of speed: 32\u201344%) for FA-1 neurons and 36% (range: 33\u201339%) for SA-1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "7365fa79-0911-4415-983b-bf495b4ab137",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C35",
+      "claim": "There was no significant effect of neuron type on discrimination accuracy based on peak firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant effect of neuron type on discrimination accuracy (F1,51 = 1.7, p=0.20, \u03b7p2=0.03) but observed a reliable effect of speed (F7,357 = 3.4, p<0.01, \u03b7p2=0.06) indicating a tendency for worse discrimination with increasing speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis (ANOVA results).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "1f9e1b0a-86b3-4432-a0a1-4cf86fba1be4",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C36",
+      "claim": "There was a reliable effect of speed on discrimination accuracy based on peak firing rate, indicating a tendency for worse discrimination with increasing speed.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant effect of neuron type on discrimination accuracy (F1,51 = 1.7, p=0.20, \u03b7p2=0.03) but observed a reliable effect of speed (F7,357 = 3.4, p<0.01, \u03b7p2=0.06) indicating a tendency for worse discrimination with increasing speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis (ANOVA results).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "07613c84-818b-488f-bb7c-f3b9e20a1320",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C37",
+      "claim": "Discrimination accuracy based on firing rate profile was substantially higher than that based on intensity measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrimination accuracy based on firing rate profile was substantially higher than that based on intensity measures (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C compared to Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "ad4b116f-97bd-428c-b468-479e09c43117",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C38",
+      "claim": "Mean discrimination accuracy based on firing rate profile averaged across speeds was 78% for FA-1 neurons and 51% for SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged across the speeds, mean discrimination accuracy was 78% for FA-1 neurons (range as a function of speed: 45\u201395%) and 51% for SA-1 neurons (range: 29\u201362%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "71bd89b8-049a-4091-b8a5-99641285f7ed",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C39",
+      "claim": "Discrimination accuracy based on firing rate profile increased with decreasing speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrimination accuracy increased with decreasing speed (F7,357 = 71.1, p<0.001, \u03b7p2=0.58) and was, on average, better for FA-1 neurons than for SA-1 neurons (F1,51 = 33.2, p<0.001, \u03b7p2=0.40).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis (ANOVA results).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "7079116f-04af-49b4-bdd7-4389723e5ba0",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C40",
+      "claim": "Discrimination accuracy based on firing rate profile was, on average, better for FA-1 neurons than for SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrimination accuracy increased with decreasing speed (F7,357 = 71.1, p<0.001, \u03b7p2=0.58) and was, on average, better for FA-1 neurons than for SA-1 neurons (F1,51 = 33.2, p<0.001, \u03b7p2=0.40).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis (ANOVA results).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "a0e42a6e-ac03-405d-9d3f-37650279a1a6",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C41",
+      "claim": "Intensity measures (peak and mean firing rates) failed to provide any reliable information about edge orientation at other scanning speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, given how strongly intensity measures (i.e. peak and mean firing rates) are affected by the scanning speed (Figure 2), these measures failed to provide any reliable information about edge orientation at other scanning speeds (intercept of two-way ANOVA referenced to chance performance; peak firing rate: F1,51 = 0.09, p=0.77, \u03b7p2=0.002; mean firing rate: F1,51 = 0.07, p=0.72, \u03b7p2=0.001; Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis (ANOVA results) and Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "ea43a5c5-86f1-44c3-9e7d-94bf2ddfebd7",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C42",
+      "claim": "Firing rate profiles represented in the temporal domain did not retain reliable information about edge-orientation at other stimulation speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Also as expected, given that a neuron's spike train is compressed and dilated in time as a function of speed (Figure 1B), firing rate profiles represented in the temporal domain did not retain reliable information about edge-orientation at other stimulation speeds (F1,51 = 0.59, p=0.44, \u03b7p2=0.01; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis (ANOVA results) and Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "c417a55c-09b1-4c4c-81c5-bf4f2a4ad01b",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C43",
+      "claim": "Firing rate profiles contained substantial information about edge orientation at other speeds if represented in the spatial domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, firing rate profiles contained substantial information about edge orientation at other speeds if represented in the spatial domain and therefore not compressed or dilated with speed changes (i.e. when the position of each action potential is referenced to the position of the edge relative to the skin; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "2283595a-8dc7-4c33-b77d-bddbd011cba0",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C44",
+      "claim": "Mean across-speed discrimination accuracy based on spatial domain firing rate profiles was 41% for FA-1 neurons and 32% for SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged across the speeds, mean discrimination accuracy was 41% (range as a function of speed: 29\u201348%) among FA-1 neurons and 32% (range: 28\u201335%) among SA-1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "8d69955f-2cfe-4470-a4f3-5c1e18d8527e",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C45",
+      "claim": "Across-speed discrimination accuracy was reliably better for FA-1 neurons than for SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Across-speed discrimination accuracy was reliably better for FA-1 neurons than for SA-1 neurons (F1,51 = 14.2, p<0.001, \u03b7p2=0.22).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis (ANOVA results).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "2e61b4ff-0ed0-43e9-b1ca-18d1f34320f4",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C46",
+      "claim": "The distribution of best kernels averaged across scanning speeds was narrow with a mean value of 66 \u00b5m for FA-1 neurons and 73 \u00b5m for SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of best kernels averaged across scanning speeds was narrow with a mean value of 66 \u00b5m for FA-1 neurons and 73 \u00b5m for SA-1 neurons (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "cceb28b0-efa7-438d-bfc4-fa46861640fa",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C47",
+      "claim": "The estimates of spatial precision based on fine edge orientation discrimination are very similar to the estimates of spatial acuity of the subfield arrangements for FA-1 and SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the estimates of spatial precision based on fine edge orientation discrimination are very similar to the estimates of spatial acuity of the subfield arrangements for FA-1 and SA-1 neurons (see Jarocka et al., 2021 and Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of current experimental data with previous research (Jarocka et al., 2021).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "6807a797-bdcb-4d99-8f23-f41fb1ea9867",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C48",
+      "claim": "Mean discrimination accuracy based on convolved spike trains was 48% for FA-1 neurons and 32% for SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean discrimination accuracy was 48% (range as a function of speed: 34\u201355%) for FA-1 neurons and 32% (range: 26\u201336%) for SA-1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "de1834ec-b652-4872-9930-b4a7bfa8817e",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C49",
+      "claim": "Discrimination accuracy was generally better for FA-1 than for SA-1 neurons on average across neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On average across neurons, the discrimination accuracy was generally better for FA-1 than for SA-1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "2de2bce3-d2c3-4931-800d-d6ec10dd7bfd",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C50",
+      "claim": "Discrimination accuracy was fairly uniform for speeds up to 45 mm/s for both neuron types.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the speed effect, for both neuron types, the discrimination accuracy was fairly uniform for speeds up to 45 mm/s, after which it gradually decreased with increasing speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "6013452a-6e55-4a5d-bed2-99fdc02eb45a",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C51",
+      "claim": "People commonly use scanning speeds of 15\u201345 mm/s when discriminating similar stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "From a behavioral perspective, the above analyses of speed-invariant signaling include scanning speeds that span a much wider range (15\u2013180 mm/s) than what people commonly use (15\u201345 mm/s) when discriminating similar stimuli (Olczak et al., 2018; Vega-Bermudez et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Olczak et al., 2018; Vega-Bermudez et al., 1991).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "86b71fc7-bcfa-4986-b6bc-586f55abde16",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C52",
+      "claim": "When considering commonly used speeds (15-45 mm/s), edge orientation discrimination accuracy averaged 75% for FA-1 neurons and 43% for SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the commonly used speeds, edge orientation discrimination accuracy was strikingly high, averaging 75% (range as a function of speed: 72\u201377%) for FA-1 neurons and 43% (range: 39\u201345%) for SA-1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "f106c7f5-49ce-454b-9cde-219d767d454f",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C53",
+      "claim": "Discrimination accuracy increased gradually with increasing orientation difference.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, discrimination accuracy increased gradually with increasing orientation difference (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "427ede88-a7f4-41bc-9b8a-28903b1fcc19",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C54",
+      "claim": "At scanning speeds commonly used in tactile spatial discrimination tasks, individual neurons of both types can contribute speed-invariant information about edge orientation at a level of detail corresponding to differences of only 5\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at scanning speeds that are commonly used in tactile spatial discrimination tasks, individual neurons of both types can contribute speed-invariant information about edge orientation at a level of detail corresponding to differences of only 5\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing above-chance discrimination for 5\u00b0 differences at commonly used speeds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "1883b5c9-3026-42c6-b07f-42ede94fb506",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C55",
+      "claim": "Single human first-order tactile neurons signal edge orientation most reliably at slow to moderate speeds, corresponding to those used when actively performing tactile spatial discrimination tasks with the fingertips.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings reveal that single human first-order tactile neurons signal edge orientation most reliably at slow to moderate speeds, corresponding to those used when actively performing tactile spatial discrimination tasks with the fingertips (Olczak et al., 2018; Vega-Bermudez et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "88f710d3-dbbc-44bc-a7bc-fe63eefb0372",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C56",
+      "claim": "Edge orientation signaling decreases for stimulation speeds exceeding ~45 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also reveal that edge orientation signaling decreases for stimulation speeds exceeding ~45 mm/s, corresponding to the speeds at which spatial discrimination capacity decreases (Bensmaia et al., 2008; Vega-Bermudez et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "89c5ca8e-a991-4701-8d2c-88eb7767cb4a",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C57",
+      "claim": "The choice of speeds in active tasks and changes in discrimination capacity as a function of speed in passive tasks are associated with the ability of first-order tactile neurons to produce the relevant information.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the choice of speeds in active tasks and changes in discrimination capacity as a function of speed in passive tasks are associated with the ability of first-order tactile neurons to produce the relevant information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "acdb0310-aacd-48e3-b2a9-8b955ad0e68c",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C58",
+      "claim": "Neurons routinely showed speed-invariant orientation signaling for differences as small as 5\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Edge orientation sensitivity at natural speeds was strikingly high, with neurons routinely showing speed-invariant orientation signaling for differences as small as 5\u00b0, which is substantially better than what humans can consciously report (Bensmaia et al., 2008; Lechelt, 1992; Olczak et al., 2018; Peters et al., 2015) but on a par with what people exhibit in object manipulation (Pruszynski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "3695dbd1-567f-4699-be81-cff114946446",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C59",
+      "claim": "Neuronal edge orientation sensitivity for 5\u00b0 differences is substantially better than what humans can consciously report.",
+      "claim_type": "EXPLICIT",
+      "source": "Edge orientation sensitivity at natural speeds was strikingly high, with neurons routinely showing speed-invariant orientation signaling for differences as small as 5\u00b0, which is substantially better than what humans can consciously report (Bensmaia et al., 2008; Lechelt, 1992; Olczak et al., 2018; Peters et al., 2015) but on a par with what people exhibit in object manipulation (Pruszynski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of experimental data with previous research on human perception.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "c9e1a0ad-d8d2-498d-9368-9aaab9544e59",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C60",
+      "claim": "Neuronal edge orientation sensitivity for 5\u00b0 differences is on a par with what people exhibit in object manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Edge orientation sensitivity at natural speeds was strikingly high, with neurons routinely showing speed-invariant orientation signaling for differences as small as 5\u00b0, which is substantially better than what humans can consciously report (Bensmaia et al., 2008; Lechelt, 1992; Olczak et al., 2018; Peters et al., 2015) but on a par with what people exhibit in object manipulation (Pruszynski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of experimental data with previous research on object manipulation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "0ab9b49a-cdf5-4241-b297-55d59ef3e24e",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C61",
+      "claim": "The spatial sensitivity estimated from Gaussian kernel widths implies a spatial period that basically matches the width of an individual papillary ridge.",
+      "claim_type": "EXPLICIT",
+      "source": "For both studies, the estimated spatial sensitivity implies a spatial period expressed in sinusoidal terms that basically matches the width of an individual papillary ridge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of experimental data and comparison with known anatomical dimensions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "4f355c34-9573-472e-a216-f77438e2d1b3",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C62",
+      "claim": "FA-1 neurons were generally better than SA-1 neurons in signaling fine edge orientation based on the spatial structuring of their responses.",
+      "claim_type": "EXPLICIT",
+      "source": "FA-1 neurons were generally better than SA-1 neurons in signaling fine edge orientation based on the spatial structuring of their responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing higher discrimination accuracy for FA-1 neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "ba32f97e-56e3-401e-a239-d9a44616261a",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C63",
+      "claim": "The receptive fields of human FA-1 neurons have about twice as many subfields as SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A plausible explanation is that the receptive fields of human FA-1 neurons have about twice as many subfields as SA-1 neurons (Jarocka et al., 2021; Johansson, 1978; Phillips et al., 1992), while the overall receptive field sizes are comparable (Johansson and Vallbo, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "80ed4d70-274d-4970-82f0-e818bd3dc668",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C64",
+      "claim": "The overall receptive field sizes of FA-1 and SA-1 neurons are comparable.",
+      "claim_type": "EXPLICIT",
+      "source": "A plausible explanation is that the receptive fields of human FA-1 neurons have about twice as many subfields as SA-1 neurons (Jarocka et al., 2021; Johansson, 1978; Phillips et al., 1992), while the overall receptive field sizes are comparable (Johansson and Vallbo, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research (Johansson and Vallbo, 1980).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "fc5222b1-b0b9-4712-abca-d286275745d5",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C65",
+      "claim": "A larger number of subfields could in principle provide higher sensitivity to fine orientation differences by offering more varied sequential structuring with orientation changes.",
+      "claim_type": "EXPLICIT",
+      "source": "A larger number of subfields could in principle provide higher sensitivity to fine orientation differences by offering more varied sequential structuring with orientation changes (Pruszynski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on inference and supported by citation to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "f48f9d7d-dd63-4e88-9cb8-c4ffb83df2f6",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C66",
+      "claim": "The density of FA-1 neurons in the fingertip is approximately twice as high as that of SA-1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The superiority of FA-1 neurons in this regard, together with their density in the fingertip being approximately twice as high as that of the SA-1 neurons (Johansson and Vallbo, 1979), suggests that FA-1 neurons play a primary role in extracting detailed spatial properties associated with dynamic fingertip events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research (Johansson and Vallbo, 1979).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "ddb7100b-861f-4120-9ffc-ac347f2c5cf8",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C67",
+      "claim": "FA-1 neurons play a primary role in extracting detailed spatial properties associated with dynamic fingertip events.",
+      "claim_type": "EXPLICIT",
+      "source": "The superiority of FA-1 neurons in this regard, together with their density in the fingertip being approximately twice as high as that of the SA-1 neurons (Johansson and Vallbo, 1979), suggests that FA-1 neurons play a primary role in extracting detailed spatial properties associated with dynamic fingertip events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on experimental data and previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "dc3f1fa9-a200-49c7-81ab-00c39be66cea",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C68",
+      "claim": "FA-1 neurons (or those like FA-1 neurons) dominate innervation in other body areas, such as the lips/tongue and foot sole.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, FA-1 neurons (or those like FA-1 neurons) dominate innervation in other body areas, such as the lips/tongue (Trulsson and Essick, 1997) and foot sole (Corniani and Saal, 2020), where the high-fidelity extraction of dynamic mechanical events seems key to their function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Trulsson and Essick, 1997; Corniani and Saal, 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "40c98155-623e-41b5-8b5f-15f8293503bc",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C69",
+      "claim": "The low-threshold mechanoreceptive innervation of the human hairy skin appears dominated by slowly adapting neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the low-threshold mechanoreceptive innervation of the human hairy skin appears dominated by slowly adapting neurons (Corniani and Saal, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research (Corniani and Saal, 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "0f32d818-3286-4c0a-9038-54030865c1aa",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C70",
+      "claim": "It seems unlikely that the central nervous system would rely on registering the sequential structure of spike trains in individual neurons to estimate edge orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for a host of reasons, it seems unlikely that the central nervous system would rely on registering the sequential structure of spike trains in individual neurons to estimate edge orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on reasoning about neural processing constraints.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "71220813-2212-4109-ab28-9e85c4191cd9",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C71",
+      "claim": "A population level mechanism for geometric feature signaling utilizes the high-spatial precision of spike generation offered by the presence of FA-1 and SA-1 neuron subfields.",
+      "claim_type": "EXPLICIT",
+      "source": "We have instead proposed a population level mechanism for geometric feature signaling that utilizes the high-spatial precision of spike generation offered by the presence FA-1 and SA-1 neuron subfields and which can signal tactile spatial details both instantaneously and in a speed-invariant manner (Hay and Pruszynski, 2020; Pruszynski et al., 2018; Pruszynski and Johansson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "8b009f2e-6dd9-4337-a542-3ac327f86489",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C72",
+      "claim": "Subfields belonging to different neurons are highly intermingled because of the high density of FA-1 and SA-1 neurons in the fingertip skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the basis is that subfields belonging to different neurons are highly intermingled because of the high density of FA-1 and SA-1 neurons, especially in the fingertip skin (Johansson and Vallbo, 1979), and the substantial size of the skin area in which a neuron's subfields are distributed (Jarocka et al., 2021; Johansson and Vallbo, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "e32f8674-fdfd-4ff1-a555-cd93cd478fae",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C73",
+      "claim": "When an edge of a certain orientation deforms the skin at a particular location, a subset of neurons whose subfields spatially coincide with the edge is synchronously excited.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, when an edge of a certain orientation deforms the skin at a particular location, a subset of neurons whose subfields spatially coincide with the edge is synchronously excited, but at a slightly different orientation or location, synchrony occurs primarily in another subset of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known organization of subfields and their mechanical sensitivity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "e0ab6980-6206-4b16-8cd1-bf69abcad73c",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C74",
+      "claim": "The degree to which stimuli synchronously engage different subsets of neurons determines the ultimate edge orientation resolution of the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scheme, the degree to which stimuli synchronously engage different subsets of neurons determines the ultimate edge orientation resolution of the nervous system as well as its resolution in the case of discrimination of tactile spatial details in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about how the nervous system processes tactile information.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "2e9764e5-0d96-4b43-afa2-2b36fd1e1f45",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C75",
+      "claim": "The presence of subfields is particularly beneficial for edge-orientation signaling for short edges that involve only a small part of the fingertip.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous simulations based on realistic innervation density and receptive field sizes suggest that the presence of subfields is particularly beneficial for edge-orientation signaling for short edges that involve only a small part of the fingertip which might be particularly relevant for the precise control of the digits in tasks requiring dexterous object manipulation (Pruszynski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous simulations by the authors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "64fdc9ed-52ff-459f-ba19-e4d8c6dde21f",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C76",
+      "claim": "When edges of different lengths are pressed against a fingertip, humans perform poorly for 2 mm long edges followed by an abrupt improvement for edges longer than 4 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the conscious perception of edge orientation, when edges of different lengths are pressed against a fingertip, humans perform poorly for 2 mm long edges followed by an abrupt improvement for edges longer than 4 mm (Peters et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research (Peters et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "48b982cd-4fc8-46ea-8a2f-9412541db9c4",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C77",
+      "claim": "The substantial performance degradation for 2 mm long edges relates to the fact that for a vast majority of FA-1 and SA-1 neurons, this length is substantially smaller than the area of the fingertip skin where a neuron's subfields are distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to speculate that the substantial performance degradation for 2 mm long edges relates to the fact that for a vast majority of FA-1 and SA-1 neurons, this length is substantially smaller than the area of the fingertip skin where a neuron's subfields are distributed (Jarocka et al., 2021; Johansson, 1978; Phillips et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on comparison of behavioral data with known subfield distributions.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "e533e797-c77a-4958-8ba1-77ee1b7c6d92",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C78",
+      "claim": "Synchronized activity across neuronal ensembles induced by sensory events may play a key role in how the nervous system builds and propagates information about stimulus features.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the anatomical and functional organization of tactile ascending pathways, as well as sensory pathways in general, suggest that synchronized activity across neuronal ensembles induced by sensory events may play a key role (Brette, 2012; Bruno, 2011; Pruszynski and Zylberberg, 2019; Salinas and Sejnowski, 2001; Singer, 1999; Stanley, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on neural coding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "97d3f97f-1ccd-4c22-b81f-d6909020877a",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C79",
+      "claim": "Tactile ascending pathways show massive increases in divergence and convergence as excitatory connections synapse sequentially.",
+      "claim_type": "EXPLICIT",
+      "source": "A hallmark of sensory ascending pathways, including tactile pathways, is massive increases in divergence and convergence as excitatory connections synapse sequentially and downstream representations engage orders of magnitude more neurons than the incoming axons (Babadi and Sompolinsky, 2014; Jones, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on neural pathways.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "d4ae9b2b-2c89-4130-958e-47de8c8fa2e9",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C80",
+      "claim": "Dimensionality expansion together with the subfield organization of first-order neurons and the sensitivity of neuronal activity to the timing of synaptic input would offer exceptional potential for simultaneous high-resolution identification of various tactile spatiotemporal events.",
+      "claim_type": "EXPLICIT",
+      "source": "This dimensionality expansion together with the subfield organization of first-order neurons and the sensitivity of neuronal activity to the timing of synaptic input would offer exceptional potential for simultaneous high-resolution identification of various tactile spatiotemporal events, based on patterns of correlated inputs across neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about neural processing capabilities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "8d595f26-2df3-4af7-9d3b-4f88d4305e67",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C81",
+      "claim": "Both the precise timing of individual spikes in presynaptic axons as well as the intensity of spike bursts could contribute depending on the time scales of the sensory inputs and the nature and context of the current tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, different synaptic integration times imply that both the precise timing of individual spikes in presynaptic axons as well as the intensity of spike bursts could contribute depending on the time scales of the sensory inputs and of the nature and context of the current tasks (Harvey et al., 2013; Hay and Pruszynski, 2020; Lankarany et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on synaptic integration.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "8dd457df-93c7-494b-8075-e4299620c51c",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C82",
+      "claim": "For object manipulation that requires rapid information about changes in spatial contact states, the nervous system could primarily rely on the precise timing of input across neuronal ensembles.",
+      "claim_type": "EXPLICIT",
+      "source": "For object manipulation that requires rapid information about changes in spatial contact states, the nervous system could primarily rely on the precise timing of input across neuronal ensembles, while in perceptual judgment tasks, that usually take place under less time pressure allowing more time for synaptic integration, information in individual neurons' spike intensities could play a greater role (Hay and Pruszynski, 2020; Johansson and Birznieks, 2004; Pruszynski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about task-dependent neural coding strategies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "94a2ac27-dfe2-46e7-a18f-9afad5e9a61f",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C83",
+      "claim": "The central processing of sensory information can depend on task and context.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that the central processing of sensory information in general can depend on task and context (Crapse and Sommer, 2008; Engel et al., 2001; Gazzaley and Nobre, 2012; Manita et al., 2015; Schroeder et al., 2010; Zagha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on sensory processing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "aff2a262-0dc9-4f0b-8c3c-2aefa19e23fe",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C84",
+      "claim": "Descending motor-related signals can affect virtually all levels of the tactile processing pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "For the somatosensory system, descending motor-related signals at different levels of the sensorimotor system can affect virtually all levels of the tactile processing pathways (Adams et al., 2013; Canedo, 1997; Fanselow and Nicolelis, 1999; Ghez and Pisa, 1972; Lee et al., 2008; Manita et al., 2015; Seki and Fetz, 2012; Zagha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on descending modulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "0677ea9a-d4ad-4fae-be54-362da77aa5a2",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "claim_id": "C85",
+      "claim": "Descending mechanisms could act on synapses of the tactile ascending pathways to influence the exact pattern of synchronized activity across neuronal ensembles that are propagated.",
+      "claim_type": "EXPLICIT",
+      "source": "A seemingly effective way to adapt tactile feature computations as a function of behavioral goals would be for descending mechanisms to act on synapses of the tactile ascending pathways to influence the exact pattern of synchronized activity across the neuronal ensembles that are propagated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about how the nervous system might adapt tactile processing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a264e636-f068-44b9-bf82-86086d74d977",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FA-1 and SA-1 neurons have distal axons that branch extensively in the skin, forming many spatially segregated mechanoreceptive end organs that result in receptive fields with multiple highly sensitive zones (subfields) distributed over an area typically covering 5-10 fingerprint ridges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C15, C16, and C17 are well-established anatomical facts supported by multiple citations to prior anatomical and physiological studies. These claims provide the foundational context for the current work and are consistently referenced throughout the neuroscience literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "b7796a02-c0c0-418a-a5c2-a61d69f01b10",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Scanning speed systematically affects neuronal responses: mean and peak firing rates increase with speed, spike count decreases with speed, and FA-1 neurons respond with higher firing rates than SA-1 neurons across all speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are directly supported by experimental data shown in Figure 2A-C with appropriate sample sizes (30 FA-1 and 23 SA-1 neurons). These findings are consistent with known properties of mechanoreceptors and provide important baseline characterization for subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "7e448ae5-f637-401a-8199-295d5f384e88",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both FA-1 and SA-1 neurons weakly signal fine edge orientation differences (5-20\u00b0) via intensity measures (peak and mean firing rate) at single scanning speeds, with discrimination accuracy significantly above chance (39-42% vs. 25% chance) but showing degradation at higher speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, and C31-C36 are supported by rigorous statistical analyses (two-way ANOVAs with appropriate corrections) and experimental data shown in Figures 3A-B. The statistical tests properly account for repeated measures and between-group factors, with significant effects reported with effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "d4e4b3fb-28c9-4b30-91f0-fd806f2d9d64",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both neuron types show substantially stronger edge orientation signaling via sequential structure of spike trains (firing rate profiles) compared to intensity measures, with FA-1 neurons (78% accuracy) outperforming SA-1 neurons (51% accuracy), and discrimination accuracy decreasing with increasing speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, and C37-C40 are strongly supported by experimental data (Figure 3C) and statistical analyses showing significant main effects and interactions. The superiority of sequential coding over intensity coding is clearly demonstrated with large effect sizes (\u03b7p2=0.86 for above-chance performance, \u03b7p2=0.40 for neuron type difference).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "5b088362-3ab7-4722-9562-189cdd3ee6bb",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Intensity measures and temporally-represented firing rate profiles fail to provide reliable speed-invariant information about edge orientation across different scanning speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C42 are supported by statistical analyses (Figures 4A-C) showing non-significant intercepts when testing against chance performance. This negative result is important for establishing that speed invariance requires spatial domain representation and is consistent with the known speed-dependence of intensity measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "a217edab-ac23-46c5-a389-c0c507c1ef74",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When spike trains are represented in the spatial domain (action potentials referenced to stimulus position on skin), firing rate profiles contain substantial speed-invariant information about edge orientation, with FA-1 neurons (41% accuracy) performing better than SA-1 neurons (32% accuracy), particularly at naturally-used speeds (15-45 mm/s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, and C43-C45 are strongly supported by experimental data (Figure 4D) and statistical analyses showing significant above-chance performance (F1,51=119.2, p<0.001, \u03b7p2=0.70) and neuron type differences. This is a key finding demonstrating speed-invariant coding and is central to the manuscript's main conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "a4b91ef7-d82f-460f-b5d4-5bf03f6b55cf",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The spatial precision of action potentials, estimated via optimal Gaussian kernel widths (66 \u03bcm for FA-1, 73 \u03bcm for SA-1), matches the spatial acuity of subfield arrangements and corresponds to a spatial period similar to individual fingertip ridge dimensions, suggesting that subfield organization structures neuronal responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14, C46, C47, and C61 are supported by systematic kernel convolution analysis (Figure 5) and comparison with prior anatomical studies (Jarocka et al., 2021). The convergence of spatial precision estimates from functional discrimination and anatomical mapping provides strong evidence linking subfield organization to edge orientation signaling. However, the inference about mechanism (C12) relies on indirect evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "8f96e878-1fa0-4d54-bf13-7ba88300525b",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using convolved spike trains with optimal kernels, across-speed discrimination accuracy is 48% for FA-1 and 32% for SA-1 neurons, remaining fairly uniform up to 45 mm/s. At commonly-used speeds (15-45 mm/s), accuracy reaches 75% for FA-1 and 43% for SA-1 neurons, with both neuron types discriminating orientation differences as small as 5\u00b0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50, C52, and C54 are supported by experimental data (Figures 6, 8) with appropriate statistical analyses. The finding that individual neurons can discriminate 5\u00b0 differences at natural speeds is particularly striking and well-supported by one-sample t-tests with Bonferroni correction showing above-chance performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "9f921547-5dec-4034-91e5-ea2cc96df57e",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Discrimination accuracy increases gradually with increasing orientation difference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by experimental data (Figure 8) and three-way ANOVA showing a significant main effect of orientation difference (F3,153=35.2, p<0.001, \u03b7p2=0.41). This expected result validates the experimental approach and analysis methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "b5b10d36-7768-40a8-a3ef-cec18d2969b3",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FA-1 and SA-1 neurons signal fine edge orientation differences (5-20\u00b0) in a speed-invariant manner across a broad range of scanning speeds (15-180 mm/s), with signaling most reliable at slow to moderate speeds (15-45 mm/s) and decreasing above ~45 mm/s, matching speeds used in tactile discrimination tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C55, C56, and C58 represent the manuscript's primary conclusions and are well-supported by the comprehensive experimental data and analyses presented throughout. The convergence of multiple lines of evidence (intensity measures, sequential structure, spatial representation, kernel analysis) provides strong support for these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "dabbd3ec-6236-40bf-b59f-28e9e53e7930",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Neuronal edge orientation sensitivity for 5\u00b0 differences is substantially better than what humans can consciously report (~10-25\u00b0) but matches performance in object manipulation tasks (~3\u00b0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C60 are supported by comparison of current experimental findings with multiple cited behavioral studies. The comparison is appropriate and highlights an important dissociation between conscious perception and sensorimotor control, though the authors acknowledge this comparison is limited by differences in experimental paradigms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "96368e90-cb59-453e-bf8e-745a2266b5a6",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "FA-1 neurons outperform SA-1 neurons in edge orientation signaling based on spatial structuring of responses, potentially because FA-1 receptive fields have approximately twice as many subfields as SA-1 neurons (with comparable overall receptive field sizes) and FA-1 neuron density is approximately twice that of SA-1 neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 are supported by the current experimental data showing consistent FA-1 superiority and by citations to prior anatomical studies. The mechanistic explanation (C65) is appropriately presented as speculative ('could in principle') and is supported by citation to prior modeling work. The convergence of functional and anatomical evidence strengthens this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "7081f297-e992-4bb6-b7af-e8cf87a1586c",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FA-1 neurons play a primary role in extracting detailed spatial properties during dynamic fingertip events, consistent with FA-1-like neurons dominating innervation in other body areas (lips/tongue, foot sole) where high-fidelity extraction of dynamic mechanical events is critical, while hairy skin is dominated by slowly adapting neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 are appropriately presented as interpretive conclusions ('suggests') based on the current findings combined with cited comparative anatomy studies. While C67 is somewhat speculative, it is a reasonable inference from the convergent evidence of FA-1 superiority, higher density, and cross-species/cross-body-region comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "1e64fb3b-a8d9-4c0b-8e74-a00abf14019c",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that the nervous system likely uses a population-level mechanism rather than analyzing sequential structure in individual neurons, where intermingled subfields from different neurons create orientation-specific patterns of synchronous activity, with subfields being particularly beneficial for short edges and potentially explaining poor human performance for edges <4mm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C77 represent theoretical proposals and speculations about neural mechanisms beyond the current experimental data. While these proposals are reasonable and supported by citations to prior modeling work (C71, C75) and behavioral studies (C76), they are not directly tested in this study. The speculation about 2mm edge performance (C77) is explicitly presented as tentative ('tempting to speculate').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "a004f758-0c1a-4168-a41f-31c94ce85d00",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The choice of speeds in active tactile tasks and changes in discrimination capacity as a function of speed in passive tasks are associated with the ability of first-order tactile neurons to produce relevant information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 is explicitly speculative and represents a hypothesis about behavioral speed selection based on neural coding capacity. While the correlation between optimal neural coding speeds and behaviorally-preferred speeds is suggestive, establishing causation would require additional experiments manipulating speed selection behavior or testing predictions about speed-dependent performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "0bccc810-4bd2-4c19-9d5d-f9366e83d989",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that synchronized activity across neuronal ensembles plays a key role in tactile feature processing, with dimensionality expansion in ascending pathways enabling high-resolution identification of spatiotemporal events through patterns of correlated inputs, potentially with task-dependent contributions from spike timing versus intensity and modulation by descending motor signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C85 represent broader theoretical frameworks about neural coding and sensory processing that extend well beyond the current experimental findings. While these ideas are supported by citations to relevant literature and are consistent with the current findings, they are speculative proposals about mechanisms not directly tested in this study. Claims C83 and C84 are established facts, but their specific application to the current context (C82, C85) remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "52f66013-989b-4d9a-9775-06ea74d0a588",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work established that FA-1 and SA-1 neurons signal edge orientation via intensity and sequential structure, with the subfield arrangement constituting a peripheral mechanism for geometric feature extraction, and that edge orientation discrimination thresholds are ~3\u00b0 during manipulation and ~10-25\u00b0 in psychophysical tasks, with natural scanning speeds varying widely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18-C25 accurately represent prior work by the authors and others, supported by appropriate citations. These claims provide essential context and motivation for the current study. The characterization of prior findings appears accurate based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    },
+    {
+      "id": "8491572a-9acf-4f85-bedd-632a2220700b",
+      "content_id": "25e57b92-e74a-41a7-9d7d-a289ef335e32",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study recorded from 30 FA-1 and 23 SA-1 isolated neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is a straightforward methodological statement supported by the Methods section. The sample sizes are reasonable for this type of single-unit recording study in humans and are consistently used throughout the analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:48:38.249711Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4480ff22-68ea-47c6-a007-c0584c18a03a",
+      "result_id": "a264e636-f068-44b9-bf82-86086d74d977"
+    },
+    {
+      "claim_id": "f1de171c-56c2-40c1-8cef-e3ef770f1fc4",
+      "result_id": "a264e636-f068-44b9-bf82-86086d74d977"
+    },
+    {
+      "claim_id": "5e368a7d-409d-4a3a-b759-13e0f56c3d80",
+      "result_id": "a264e636-f068-44b9-bf82-86086d74d977"
+    },
+    {
+      "claim_id": "e44186f8-8036-46bb-bf1e-c3eb3bb6e0c4",
+      "result_id": "a264e636-f068-44b9-bf82-86086d74d977"
+    },
+    {
+      "claim_id": "98dcdd83-6c88-4297-8366-003c8023a6d5",
+      "result_id": "a264e636-f068-44b9-bf82-86086d74d977"
+    },
+    {
+      "claim_id": "b0129039-df03-4ae5-94a8-13897bfe2970",
+      "result_id": "b7796a02-c0c0-418a-a5c2-a61d69f01b10"
+    },
+    {
+      "claim_id": "6cf3bf5b-e1ea-4074-9919-dbebf8714b01",
+      "result_id": "b7796a02-c0c0-418a-a5c2-a61d69f01b10"
+    },
+    {
+      "claim_id": "c69447a0-74b4-4e94-83f4-a8ff240976be",
+      "result_id": "b7796a02-c0c0-418a-a5c2-a61d69f01b10"
+    },
+    {
+      "claim_id": "c8377532-94e8-4ef4-8fb8-ac79e880e1b1",
+      "result_id": "b7796a02-c0c0-418a-a5c2-a61d69f01b10"
+    },
+    {
+      "claim_id": "7533b68d-f4d1-4c8b-a928-64be45f8b0b6",
+      "result_id": "7e448ae5-f637-401a-8199-295d5f384e88"
+    },
+    {
+      "claim_id": "59e6ff03-4eef-463e-a33f-20708f632182",
+      "result_id": "7e448ae5-f637-401a-8199-295d5f384e88"
+    },
+    {
+      "claim_id": "603df1e9-8505-4f40-a7e1-cdcfec007a1f",
+      "result_id": "7e448ae5-f637-401a-8199-295d5f384e88"
+    },
+    {
+      "claim_id": "ab709112-6e63-4485-af73-368338bc5713",
+      "result_id": "7e448ae5-f637-401a-8199-295d5f384e88"
+    },
+    {
+      "claim_id": "8163727c-ef98-40d2-9ce8-83ca9a75f994",
+      "result_id": "7e448ae5-f637-401a-8199-295d5f384e88"
+    },
+    {
+      "claim_id": "f8039213-4214-4316-97e9-5585a581b071",
+      "result_id": "7e448ae5-f637-401a-8199-295d5f384e88"
+    },
+    {
+      "claim_id": "7365fa79-0911-4415-983b-bf495b4ab137",
+      "result_id": "7e448ae5-f637-401a-8199-295d5f384e88"
+    },
+    {
+      "claim_id": "1f9e1b0a-86b3-4432-a0a1-4cf86fba1be4",
+      "result_id": "7e448ae5-f637-401a-8199-295d5f384e88"
+    },
+    {
+      "claim_id": "f11527ce-c184-45dd-9116-86bd3dced62f",
+      "result_id": "d4e4b3fb-28c9-4b30-91f0-fd806f2d9d64"
+    },
+    {
+      "claim_id": "0f0f43d4-6a66-4ffe-91af-6cbd48302690",
+      "result_id": "d4e4b3fb-28c9-4b30-91f0-fd806f2d9d64"
+    },
+    {
+      "claim_id": "07613c84-818b-488f-bb7c-f3b9e20a1320",
+      "result_id": "d4e4b3fb-28c9-4b30-91f0-fd806f2d9d64"
+    },
+    {
+      "claim_id": "ad4b116f-97bd-428c-b468-479e09c43117",
+      "result_id": "d4e4b3fb-28c9-4b30-91f0-fd806f2d9d64"
+    },
+    {
+      "claim_id": "71bd89b8-049a-4091-b8a5-99641285f7ed",
+      "result_id": "d4e4b3fb-28c9-4b30-91f0-fd806f2d9d64"
+    },
+    {
+      "claim_id": "7079116f-04af-49b4-bdd7-4389723e5ba0",
+      "result_id": "d4e4b3fb-28c9-4b30-91f0-fd806f2d9d64"
+    },
+    {
+      "claim_id": "a0e42a6e-ac03-405d-9d3f-37650279a1a6",
+      "result_id": "5b088362-3ab7-4722-9562-189cdd3ee6bb"
+    },
+    {
+      "claim_id": "ea43a5c5-86f1-44c3-9e7d-94bf2ddfebd7",
+      "result_id": "5b088362-3ab7-4722-9562-189cdd3ee6bb"
+    },
+    {
+      "claim_id": "e850a54c-ebe1-45f3-8e1a-a279e592115f",
+      "result_id": "a217edab-ac23-46c5-a389-c0c507c1ef74"
+    },
+    {
+      "claim_id": "0166fcb1-f857-4912-8b9d-16aedbd70410",
+      "result_id": "a217edab-ac23-46c5-a389-c0c507c1ef74"
+    },
+    {
+      "claim_id": "c417a55c-09b1-4c4c-81c5-bf4f2a4ad01b",
+      "result_id": "a217edab-ac23-46c5-a389-c0c507c1ef74"
+    },
+    {
+      "claim_id": "2283595a-8dc7-4c33-b77d-bddbd011cba0",
+      "result_id": "a217edab-ac23-46c5-a389-c0c507c1ef74"
+    },
+    {
+      "claim_id": "8d69955f-2cfe-4470-a4f3-5c1e18d8527e",
+      "result_id": "a217edab-ac23-46c5-a389-c0c507c1ef74"
+    },
+    {
+      "claim_id": "20531d96-696a-4df8-af1b-548caebfe150",
+      "result_id": "a4b91ef7-d82f-460f-b5d4-5bf03f6b55cf"
+    },
+    {
+      "claim_id": "b90986cf-6d37-4331-8e3e-a11eb3aecbf4",
+      "result_id": "a4b91ef7-d82f-460f-b5d4-5bf03f6b55cf"
+    },
+    {
+      "claim_id": "6691c361-1107-454a-b869-b0bf0e702611",
+      "result_id": "a4b91ef7-d82f-460f-b5d4-5bf03f6b55cf"
+    },
+    {
+      "claim_id": "2e61b4ff-0ed0-43e9-b1ca-18d1f34320f4",
+      "result_id": "a4b91ef7-d82f-460f-b5d4-5bf03f6b55cf"
+    },
+    {
+      "claim_id": "cceb28b0-efa7-438d-bfc4-fa46861640fa",
+      "result_id": "a4b91ef7-d82f-460f-b5d4-5bf03f6b55cf"
+    },
+    {
+      "claim_id": "0ab9b49a-cdf5-4241-b297-55d59ef3e24e",
+      "result_id": "a4b91ef7-d82f-460f-b5d4-5bf03f6b55cf"
+    },
+    {
+      "claim_id": "6807a797-bdcb-4d99-8f23-f41fb1ea9867",
+      "result_id": "8f96e878-1fa0-4d54-bf13-7ba88300525b"
+    },
+    {
+      "claim_id": "de1834ec-b652-4872-9930-b4a7bfa8817e",
+      "result_id": "8f96e878-1fa0-4d54-bf13-7ba88300525b"
+    },
+    {
+      "claim_id": "2de2bce3-d2c3-4931-800d-d6ec10dd7bfd",
+      "result_id": "8f96e878-1fa0-4d54-bf13-7ba88300525b"
+    },
+    {
+      "claim_id": "86b71fc7-bcfa-4986-b6bc-586f55abde16",
+      "result_id": "8f96e878-1fa0-4d54-bf13-7ba88300525b"
+    },
+    {
+      "claim_id": "427ede88-a7f4-41bc-9b8a-28903b1fcc19",
+      "result_id": "8f96e878-1fa0-4d54-bf13-7ba88300525b"
+    },
+    {
+      "claim_id": "f106c7f5-49ce-454b-9cde-219d767d454f",
+      "result_id": "9f921547-5dec-4034-91e5-ea2cc96df57e"
+    },
+    {
+      "claim_id": "ffffda4f-c3e3-4e67-8d55-8178caaaf26d",
+      "result_id": "b5b10d36-7768-40a8-a3ef-cec18d2969b3"
+    },
+    {
+      "claim_id": "e3543d87-09f7-43e0-8020-5876f8ccbaa7",
+      "result_id": "b5b10d36-7768-40a8-a3ef-cec18d2969b3"
+    },
+    {
+      "claim_id": "1883b5c9-3026-42c6-b07f-42ede94fb506",
+      "result_id": "b5b10d36-7768-40a8-a3ef-cec18d2969b3"
+    },
+    {
+      "claim_id": "88f710d3-dbbc-44bc-a7bc-fe63eefb0372",
+      "result_id": "b5b10d36-7768-40a8-a3ef-cec18d2969b3"
+    },
+    {
+      "claim_id": "acdb0310-aacd-48e3-b2a9-8b955ad0e68c",
+      "result_id": "b5b10d36-7768-40a8-a3ef-cec18d2969b3"
+    },
+    {
+      "claim_id": "3695dbd1-567f-4699-be81-cff114946446",
+      "result_id": "dabbd3ec-6236-40bf-b59f-28e9e53e7930"
+    },
+    {
+      "claim_id": "c9e1a0ad-d8d2-498d-9368-9aaab9544e59",
+      "result_id": "dabbd3ec-6236-40bf-b59f-28e9e53e7930"
+    },
+    {
+      "claim_id": "4f355c34-9573-472e-a216-f77438e2d1b3",
+      "result_id": "96368e90-cb59-453e-bf8e-745a2266b5a6"
+    },
+    {
+      "claim_id": "ba32f97e-56e3-401e-a239-d9a44616261a",
+      "result_id": "96368e90-cb59-453e-bf8e-745a2266b5a6"
+    },
+    {
+      "claim_id": "80ed4d70-274d-4970-82f0-e818bd3dc668",
+      "result_id": "96368e90-cb59-453e-bf8e-745a2266b5a6"
+    },
+    {
+      "claim_id": "fc5222b1-b0b9-4712-abca-d286275745d5",
+      "result_id": "96368e90-cb59-453e-bf8e-745a2266b5a6"
+    },
+    {
+      "claim_id": "f48f9d7d-dd63-4e88-9cb8-c4ffb83df2f6",
+      "result_id": "96368e90-cb59-453e-bf8e-745a2266b5a6"
+    },
+    {
+      "claim_id": "ddb7100b-861f-4120-9ffc-ac347f2c5cf8",
+      "result_id": "7081f297-e992-4bb6-b7af-e8cf87a1586c"
+    },
+    {
+      "claim_id": "dc3f1fa9-a200-49c7-81ab-00c39be66cea",
+      "result_id": "7081f297-e992-4bb6-b7af-e8cf87a1586c"
+    },
+    {
+      "claim_id": "40c98155-623e-41b5-8b5f-15f8293503bc",
+      "result_id": "7081f297-e992-4bb6-b7af-e8cf87a1586c"
+    },
+    {
+      "claim_id": "0f32d818-3286-4c0a-9038-54030865c1aa",
+      "result_id": "1e64fb3b-a8d9-4c0b-8e74-a00abf14019c"
+    },
+    {
+      "claim_id": "71220813-2212-4109-ab28-9e85c4191cd9",
+      "result_id": "1e64fb3b-a8d9-4c0b-8e74-a00abf14019c"
+    },
+    {
+      "claim_id": "8b009f2e-6dd9-4337-a542-3ac327f86489",
+      "result_id": "1e64fb3b-a8d9-4c0b-8e74-a00abf14019c"
+    },
+    {
+      "claim_id": "e32f8674-fdfd-4ff1-a555-cd93cd478fae",
+      "result_id": "1e64fb3b-a8d9-4c0b-8e74-a00abf14019c"
+    },
+    {
+      "claim_id": "e0ab6980-6206-4b16-8cd1-bf69abcad73c",
+      "result_id": "1e64fb3b-a8d9-4c0b-8e74-a00abf14019c"
+    },
+    {
+      "claim_id": "2e9764e5-0d96-4b43-afa2-2b36fd1e1f45",
+      "result_id": "1e64fb3b-a8d9-4c0b-8e74-a00abf14019c"
+    },
+    {
+      "claim_id": "64fdc9ed-52ff-459f-ba19-e4d8c6dde21f",
+      "result_id": "1e64fb3b-a8d9-4c0b-8e74-a00abf14019c"
+    },
+    {
+      "claim_id": "48b982cd-4fc8-46ea-8a2f-9412541db9c4",
+      "result_id": "1e64fb3b-a8d9-4c0b-8e74-a00abf14019c"
+    },
+    {
+      "claim_id": "89c5ca8e-a991-4701-8d2c-88eb7767cb4a",
+      "result_id": "a004f758-0c1a-4168-a41f-31c94ce85d00"
+    },
+    {
+      "claim_id": "e533e797-c77a-4958-8ba1-77ee1b7c6d92",
+      "result_id": "0bccc810-4bd2-4c19-9d5d-f9366e83d989"
+    },
+    {
+      "claim_id": "97d3f97f-1ccd-4c22-b81f-d6909020877a",
+      "result_id": "0bccc810-4bd2-4c19-9d5d-f9366e83d989"
+    },
+    {
+      "claim_id": "d4ae9b2b-2c89-4130-958e-47de8c8fa2e9",
+      "result_id": "0bccc810-4bd2-4c19-9d5d-f9366e83d989"
+    },
+    {
+      "claim_id": "8d595f26-2df3-4af7-9d3b-4f88d4305e67",
+      "result_id": "0bccc810-4bd2-4c19-9d5d-f9366e83d989"
+    },
+    {
+      "claim_id": "8dd457df-93c7-494b-8075-e4299620c51c",
+      "result_id": "0bccc810-4bd2-4c19-9d5d-f9366e83d989"
+    },
+    {
+      "claim_id": "94a2ac27-dfe2-46e7-a18f-9afad5e9a61f",
+      "result_id": "0bccc810-4bd2-4c19-9d5d-f9366e83d989"
+    },
+    {
+      "claim_id": "aff2a262-0dc9-4f0b-8c3c-2aefa19e23fe",
+      "result_id": "0bccc810-4bd2-4c19-9d5d-f9366e83d989"
+    },
+    {
+      "claim_id": "0677ea9a-d4ad-4fae-be54-362da77aa5a2",
+      "result_id": "0bccc810-4bd2-4c19-9d5d-f9366e83d989"
+    },
+    {
+      "claim_id": "4c93aa69-a99b-4919-86a6-9e4eb1a83c57",
+      "result_id": "52f66013-989b-4d9a-9775-06ea74d0a588"
+    },
+    {
+      "claim_id": "e56ddb93-d7b3-4028-9d57-fcd7fd22bc65",
+      "result_id": "52f66013-989b-4d9a-9775-06ea74d0a588"
+    },
+    {
+      "claim_id": "b919ec0f-84be-4b10-9f5d-0771023ed469",
+      "result_id": "52f66013-989b-4d9a-9775-06ea74d0a588"
+    },
+    {
+      "claim_id": "219c6d1d-1008-4327-ad70-668ee3e81657",
+      "result_id": "52f66013-989b-4d9a-9775-06ea74d0a588"
+    },
+    {
+      "claim_id": "248ca88e-37c3-448f-9589-d6287e6e9473",
+      "result_id": "52f66013-989b-4d9a-9775-06ea74d0a588"
+    },
+    {
+      "claim_id": "cc21e056-0c5b-4aee-8e33-c6fd096c7725",
+      "result_id": "52f66013-989b-4d9a-9775-06ea74d0a588"
+    },
+    {
+      "claim_id": "c268345d-4fa5-4806-8b2d-a141166a7301",
+      "result_id": "52f66013-989b-4d9a-9775-06ea74d0a588"
+    },
+    {
+      "claim_id": "b8ab5b6e-d8a1-41f2-b6c0-5ab87b6c5b2f",
+      "result_id": "52f66013-989b-4d9a-9775-06ea74d0a588"
+    },
+    {
+      "claim_id": "9c406195-fda3-4b5e-9a8d-f8fa29a56736",
+      "result_id": "52f66013-989b-4d9a-9775-06ea74d0a588"
+    },
+    {
+      "claim_id": "c682c5f6-330b-4e2c-84c2-a43b1f8554ea",
+      "result_id": "8491572a-9acf-4f85-bedd-632a2220700b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1304 @@
+{
+  "submission": {
+    "id": "21977868-8adb-4c6a-a539-09ad0c0cb3de",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:04:25.566884Z",
+    "updated_at": "2025-12-03T13:04:25.566884Z"
+  },
+  "content": [
+    {
+      "id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "submission_id": "21977868-8adb-4c6a-a539-09ad0c0cb3de",
+      "content_type": "manuscript",
+      "content_text": "# Selection for infectivity profiles in slow and fast epidemics, and the rise of SARS-CoV-2 variants\n\n## Authors\n\n- Fran\u00e7ois Blanquart<sup>1</sup> ([ORCID: 0000-0003-0591-2466](https://orcid.org/0000-0003-0591-2466)) \u2020\n- Nathana\u00ebl Hoz\u00e9<sup>2</sup>\n- Benjamin John Cowling<sup>3</sup> ([ORCID: 0000-0002-6297-7154](https://orcid.org/0000-0002-6297-7154))\n- Florence D\u00e9barre<sup>5</sup> ([ORCID: 0000-0003-2497-833X](https://orcid.org/0000-0003-2497-833X))\n- Simon Cauchemez<sup>2</sup>\n\n### Affiliations\n\n1. Centre for Interdisciplinary Research in Biology (CIRB), Coll\u00e8ge de France, CNRS INSERM, PSL Research University Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))\n2. Mathematical Modelling of Infectious Diseases Unit, Institut Pasteur, Universit\u00e9 de Paris, UMR2000, CNRS Paris France ([ROR:02feahw73](https://ror.org/02feahw73))\n3. WHO Collaborating Centre for Infectious Disease Epidemiology and Control, School of Public Health, Li Ka Shing Faculty of Medicine, The University of Hong Kong Pokfulam, Hong Kong Special Administrative Region Hong Kong China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))\n4. Laboratory of Data Discovery for Health, Hong Kong Science and Technology Park New Territories, Hong Kong Special Administrative Region Hong Kong China\n5. Institute of Ecology and Environmental Sciences of Paris (iEES-Paris, UMR 7618) CNRS, Sorbonne Universit\u00e9, UPEC, IRD, INRAE Paris France ([ROR:003vg9w96](https://ror.org/003vg9w96))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEvaluating the characteristics of emerging SARS-CoV-2 variants of concern is essential to inform pandemic risk assessment. A variant may grow faster if it produces a larger number of secondary infections (\u201cR advantage\u201d) or if the timing of secondary infections (generation time) is better. So far, assessments have largely focused on deriving the R advantage assuming the generation time was unchanged. Yet, knowledge of both is needed to anticipate the impact. Here, we develop an analytical framework to investigate the contribution of both the R advantage and generation time to the growth advantage of a variant. It is known that selection on a variant with larger R increases with levels of transmission in the community. We additionally show that variants conferring earlier transmission are more strongly favored when the historical strains have fast epidemic growth, while variants conferring later transmission are more strongly favored when historical strains have slow or negative growth. We develop these conceptual insights into a new statistical framework to infer both the R advantage and generation time of a variant. On simulated data, our framework correctly estimates both parameters when it covers time periods characterized by different epidemiological contexts. Applied to data for the Alpha and Delta variants in England and in Europe, we find that Alpha confers a+54% [95% CI, 45\u201363%] R advantage compared to previous strains, and Delta +140% [98\u2013182%] compared to Alpha, and mean generation times are similar to historical strains for both variants. This work helps interpret variant frequency dynamics and will strengthen risk assessment for future variants of concern.\n\n## Introduction\n\nHuman pathogens rapidly adapt to their hosts. During the short evolutionary history of SARS-CoV-2 with humans, since the host shift in late 2019, several selected mutations and combinations of mutations (variants) have emerged: for example, the D614G mutation in Spring 2020 (Volz et al., 2021a), the variant Alpha in Fall 2020 (B.1.1.7), and Delta in Spring 2020 (B.1.617.2). Variant Alpha, first detected in England in September 2020, rapidly rose in frequency in October 2020 in England and spread to multiple countries, causing important rebounds of the epidemic (Volz et al., 2021b; Davies et al., 2021; Borges et al., 2021; Washington et al., 2021; Gaymard et al., 2021). Later on, the Delta variant became dominant in many parts of the world, leading to new surges in infections and hospitalizations in 2021.\n\nEach time a variant of concern emerges, it is essential to determine whether it has acquired a competitive advantage compared to circulating SARS-CoV-2 strains, in order to anticipate the potential effects on the epidemic trajectory and hospital admissions. The advantage can be caused by an increased capacity to transmit or to escape the immune response acquired by previous infection or vaccination. The transmission advantage, hereafter R advantage, of an emerging variant has been defined as the relative increase in the effective reproduction number R (average number of secondary cases). It has often been estimated by analysing the rise in the variant\u2019s frequency, under the assumption that all strains shared the same generation time distribution (i.e. delay between infection in the primary case and the people they infect). However, this has sometimes led to unstable estimates of the R advantage. For example, in the United Kingdom, the R advantage of the Alpha variant was estimated to decline from +89 to +54% from December to mid-January. Estimates of R advantage of Alpha and Delta across countries also exhibit substantial variability (Campbell et al., 2021). The reasons why estimates of the R advantage would vary with the epidemiological context remain obscure. The instability this generates is problematic for planning since it affects medium and long-term evaluations of the epidemic trajectory. It also suggests that methods currently used to ascertain the risks posed by emerging variants may miss important drivers of emergence.\n\nThe evolutionary fate of an emerging variant is ultimately determined by its exponential growth rate relative to that of the circulating strains. When evaluating the growth advantage of a variant, the focus has so far largely been on estimating differences in R. However, the growth rate of an emerging variant depends not only on the effective reproduction number but also on the generation time distribution. Natural selection is therefore expected to act on the full infectivity profile, which combines both R and the generation time. Previous theoretical work has explored how selection acts on various pathogen life-history traits (Lenski and May, 1994; Day and Proulx, 2004; Day and Gandon, 2007; Day et al., 2020), with most often a focus on selection for transmissibility and virulence (disease-induced mortality). Recent work on SARS-CoV-2 mentioned the possibility of selection on the time interval between infection and infectiousness, but did not characterize the sign and magnitude of this component of selection in detail (Day et al., 2020).\n\nHere, we develop a mathematical model to investigate how the growth advantage may vary with the epidemiological context when variants have different generation times. We use the relationship between infectivity profile and growth rate to explore conceptually how infectivity profiles are selected for. We find that the growth advantage of a variant generally depends on the epidemiological context, more precisely on whether the transmission is low (declining or slow epidemic) or high (fast epidemic). We call \u201ctransmission\u201d the rate of infectious contacts in the community, which depends on the epidemiological context, for example, social distancing, mask-wearing, population immunity, seasonal effects, etc. We use the time-varying reproduction number of the historical strain (taken as a reference), denoted $R_{H}t$ , as a proxy for transmission. Our conceptual exploration suggests that it is possible to infer changes in infectivity profile associated with an emerging variant, and not only its growth rate, in settings where transmission changes over time. We thus develop an inference framework to estimate changes in infectivity profile associated with a variant and more precisely characterize the R advantage of the variant and its dependency to the epidemiological context. We apply our approach to data on Alpha and Delta variants frequency over time in England in Fall 2020 and Spring 2021. On the methodological front, the originality of our work lies in the use of the Euler-Lotka equation to explore generally how infectivity profiles are selected for (in contrast to previous work using ordinary differential equation models), and in the development of an inference framework.\n\n## Results\n\n### General Principle\n\nWe consider a situation where a variant, or a set of strains with similar properties, has been circulating for some time (historical strains H) and is challenged by an emerging variant E. When investigating the rise of variant E relative to historical strains H, we typically only observe the exponential growth rates of H and E strains, which translates into a growth advantage (or disadvantage). More precisely, if the historical strains grow with an exponential rate $r_{H}$ and the emerging variant grows with rate $r_{E}$ , the logit of the frequency of the emerging variant will grow linearly with slope $r_{E}-r_{H}$ . This slope is called the growth advantage or selection coefficient. The selection coefficient of the emerging variant relative to historical strains is obtained by a linear regression of the logit frequency of the variant over time. It is then typically assumed that both variant and historical strains share the same distribution of generation time. The effective reproduction number of the emerging variant relative to historical strains, called the R advantage ($R_{E}/R_{H}-1$), can thus be deduced.\n\nYet natural selection acts on the full infectivity profile of a strain, not only on the effective reproduction number. The infectivity profile is a function $\\beta\\tau=R w(\\tau)$ of the time since infection $\\tau$, where $R$ is the effective reproduction number, while $w(\\tau)$ characterizes the distribution of generation time and satisfies $\\int_{\\tau=0}^{\u221e}w\\taud\\tau=1$.\n\n#### Selection for Infectivity Profiles in Slow and Fast Epidemics\n\nWe first examine how the selection coefficient $r_{E}-r_{H}$ varies with transmission for various infectivity profiles of the variant compared to historical strains (Figure 1). To do so, we use the Euler-Lotka equation, relating the growth rate to the effective reproduction number and the distribution of the generation time (Methods). This equation assumes that each variant grows or declines exponentially and that the distribution of the time since infection is at any time at its equilibrium value: an exponential distribution with rate equal to the exponential growth rate (Wallinga and Lipsitch, 2007). This equilibrium distribution naturally follows from the assumption of exponential growth, which implies that individuals infected $t+\u0394t$ days ago are $e^{r \u0394t}$ less numerous than individuals infected $t$ days ago, with $r$ the exponential growth rate.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig1-v3.jpg)\n\n**Figure 1.:** The Panels A and B show several variant infectivity profiles with the same effective reproduction number as historical strains (A) or an effective reproduction number increased by +10% (B). For variants with shorter or longer mean generation time, the relative mean generation time is \u201315 or +15% compared to historical strains. For variants with shorter or longer standard deviation (sd) in generation time, the relative sd in generation time is \u201340 or +40% compared to historical strains. The Panels C and D show the selection coefficient of these variants as a function of the proxy for transmission (effective reproduction number of the historical strains). The gray lines show the selection coefficient if the variant had the same infectivity profile as historical strains, with the infectivity profile increased uniformly by a constant as commonly assumed.\n\nWe first note that even for variants with an R advantage but not affecting the distribution of generation time, the selection coefficient increases with transmission (Day and Proulx, 2004; Day and Gandon, 2007; Day et al., 2020). This relationship is shown in Figure 1 as gray lines for a series of variants conferring a R advantage of +10 \u2212+50% but not affecting the gamma-distributed generation time.\n\nSeveral more general infectivity profiles of the emerging variant are now considered. We first consider variants with the same effective reproduction number as historical strains, which can be selected for if secondary infections occur at different timings (Figure 1A and C). A variant with a shorter mean generation time is selected for in a growing epidemic because it produces the same number of secondary infections in a shorter time, while the same variant is counter-selected in a declining epidemic (Figure 1C). The opposite holds for variants with a longer mean generation time. A variant with a larger standard deviation (sd) in generation time is always selected for because it enjoys both an excess of early secondary infections and late secondary infections compared to historical strains. The opposite holds for a variant with smaller sd in generation time. Generally, in a growing epidemic, more individuals have been infected recently and there is a greater advantage to early transmission, while in a declining epidemic, more individuals have late time since infection and therefore strains that transmit at later times have a greater advantage. Again, this is a direct demographic consequence of growth or decline of the epidemic. Selected variants could thus enjoy a more favorable timing of secondary infections, even in the absence of R advantage (Park et al., 2021).\n\nAdditionally, an advantage in the timing of secondary infections can of course be combined with a R advantage. We, therefore, consider hypothetical emerging variants with a range of generation time distributions and a+10% R advantage (Figure 1B and D). These variants generally have a stronger growth advantage, but the variation in selection coefficient with the transmission is similar to that of the analogous variants without the R advantage (Figure 1C and D).\n\nNotably, in both cases, there is a level of transmission (expressed in terms of the effective reproduction number of the historical strain $R_{H}$) at which all variants perform similarly regardless of their distribution of generation time. This level of transmission is precisely where the size of the variant epidemic is constant in time (variant growth rate is 0). For example, this level of transmission is $R_{H}=1$ for a variant not affecting R (Figure 1C). For a 10% R advantage, this level is $R_{H}=1/1.1$ (Figure 1D). Generally, for a variant conferring a R advantage $\\delta_{1}$ , the level of transmission is $R_{H}=1/(1+\\delta_{1})$. At this level of transmission, the distribution of time since infection is uniform\u2014all ages of infection are equally represented\u2014and therefore the infectivity profile does not matter for the selection of the variant.\n\nWhile these results assume that the time since infection is fixed at its equilibrium distribution, it is not necessarily the case in a realistic scenario where transmission changes over time. We applied these analytical results to simulations where the time since infection structure emerges from the model dynamics. The epidemiological dynamics are simulated with discrete-time renewal equations including time-varying transmission, the build-up of population immunity (assumed to be identical for historical strains and emerging variants), and detection and isolation of cases (Methods). In the context of progressive decline of levels of transmission, variants with the same reproduction number but distinct generation time distributions can exhibit a variety of epidemiological and frequency dynamics (Figure 2A and C). The epidemiological dynamics, that is the daily number of variant cases, are also strongly affected by the generation time distribution of the variant (Figure 2A). Frequency trajectories can be non-monotonous: a variant with shorter mean generation time could be selected, increase in frequency, but then decline in frequency as transmission declines (Figure 2C). Several variants all sharing the same 10% R advantage exhibit a range of frequency trajectories in the simulations: the trajectory of one of them initially resembles that of a variant with a+30% advantage and same generation time distribution as historical strains (Figure 2D, light blue line compared to +30% curve), while others stagnate at low frequency (Figure 2D, blue and green lines).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig2-v3.jpg)\n\n**Figure 2.:** The Panels A and B show epidemiological dynamics (daily cases number of historical strains in black, of variants in colours). Historical strains display several slightly different curves when competing with each of the variants because of the weak competition brought about by the build-up of population immunity. The Panels C and D show evolutionary trajectories, with daily variant frequency as colored lines. The light gray curves show the frequency dynamics of variants with a +10 to +50%R advantage, with the same generation time as historical strains. The inset shows the transmission through time in these simulations, given by the basic reproduction number of historical strains (see details of simulation model in Methods).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The relationship between estimated growth rate of the variant and historical strains across time in the simulation study, in the scenario of progressive decline of $R_{0,H}(t)$ from 1.5 to 0.5.The three panels are three daily sample sizes to assess variant frequency (30,000, 10,000, 3000). This is shown for variants with no R advantage $\\delta_{1}=0.$, and four infectivity profiles: shorter mean generation time ($\\delta_{2}=-0.4$, $\\delta_{3}=0$), longer mean generation time ($\\delta_{2}=+0.4, \\delta_{3}=0$), larger standard deviation (sd) ($\\delta_{2}=0$, $\\delta_{3}=+0$.4) and smaller sd ($\\delta_{2}=0$, $\\delta_{3}=-0.4$). Points are the estimated growth rates with error, the curves show local polynomial regression (loess). The selection coefficient is the vertical distance to the bisector. A variant with a shorter mean generation time presents a steeper relationship between the two growth rates (light blue curve), meaning that the selection coefficient is maximal when transmission is large (fast growing epidemic) (Figure 1C, D). On the contrary, a variant with a longer generation time presents a flatter relationship (dark blue curve), with selection coefficient being maximal when transmission is small. This distinction blurs when the number of cases sampled to assess variant frequency decreases. Variants changing the variance of the distribution (green curves) appear almost neutral, with curves close to the bisector.\n\n#### Inference of the Infectivity Profiles of Variants\n\nThe variety of variant trajectories shown in Figure 2 suggests that it may be possible to infer the changes in infectivity profiles of variants by analyzing their growth advantage as a function of transmission when we have accumulated sufficient data documenting growth rates in different epidemiological situations. We first tested this idea on simulated data, in scenarios of emergence and progressive decline in transmission.\n\nOur inference framework is based on the relationship between growth rates of historical strains ($r_{H}$) and of the emerging variant ($r_{E})$). Our aim is to infer three parameters $\\delta_{1}$ , $\\delta_{2}$ , $\\delta_{3}$ , characterizing respectively the R advantage, the mean generation time and the sd of generation time of the emerging strain relative to that of historical strains. The relationship can be used to infer properties of the variant infectivity profile, but not with a classical linear regression because both $r_{H}$ and $r_{E}$ are measured with errors with a complex covariance structure. Furthermore, large errors can blur the subtle distinction between different profiles (Figure 2\u2014figure supplement 1). The error variance is inversely related to the number of cases and the size of the sample used to assay variant frequency (\u201csample size\u201d). When the total number of cases and the sample size are both large, the joint distribution of the time series of estimated $r^_{H}$ and $r^_{E}$ is approximately multivariate normal (Methods). The mean vector of the multivariate normal depends on the parameters $R_{H}(t)$ (the time series of effective reproduction number), on the mean and sd of the historical strains\u2019 generation time (fixed to 6.5 and 4 days respectively), and on the parameters of interest $\\delta_{1}$ , $\\delta_{2}$ , $\\delta_{3}$ . The variance-covariance structure of the multivariate normal distribution is fixed and depends on the daily total number of cases and the sample size. It is also possible to derive the multivariate normal distribution of $r^_{H}$ and $r^_{E}$ across different independent regions instead of over time (Methods).\n\nWith this statistical framework at hand, we conducted a simulation study to infer jointly the R advantage of the variants and their relative mean generation time (Figure 3). In these simulations, we systematically varied the infectivity profile of the emerging strain: R advantage ($\\delta_{1}$) from +0 to +50% and relative mean generation time ($\\delta_{2}$) from \u201340 to +40%. We assumed the emerging strain had the same sd of generation time as historical strains ($\\delta_{3}=0$). We jointly inferred the two parameters $\\delta_{1}$ and $\\delta_{2}$ for different sample sizes (sample size, N=1000, 3000, 10,000 per day) and for different scenarios of variability in epidemiological context, from a strong to a weak decline. In the explicit simulations, the parameter that we tune is the basic reproductive number $R_{0,H}t$ assumed to decline from 1.5 to 0.5, 1.3 to 0.7, and 1.1 to 0.9 over 80 days in the three scenarios, and the inferred parameters represent the effective reproductive number after accounting for population immunity and case detection and isolation (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig3-v3.jpg)\n\n**Figure 3.:** The plots show the correlation between inferred and true quantities. The three colors show different sample sizes used to infer variant frequency: 1000 daily, 10,000 daily, and 1000 daily grouped by week (7000 weekly). The left panels show the R advantage, the right panels the mean generation time (mgt). Top, middle, and bottom panels show inference for large, medium, and small variability in R0,H(t). The simulations are initialized with $I_{H}0,0=4000$ and $I_{E}0,0=80$. For the inference of the R advantage, we used a variant relative mean generation time of $\\delta_{2}=+0%$ (also inferred by the model), while for the inference of relative mean generation time we used the following combinations: ${\\delta_{1}=0.3, \\delta_{2}=-0.4}$; ${\\delta_{1}=0.3, \\delta_{2}=-0.2}$; $\\delta_{1}=0.3, \\delta_{2}=0;  \\delta_{1}=0.45, \\delta_{2}=+0.2$ ; $\\delta_{1}=0.3, \\delta_{2}=+0.4.$ We used a greater R advantage when the mean generation time is unchanged or longer to ensure the emerging variant reaches a significant frequency over the 80 days time period considered. For each parameter combination, 10 replicate simulations were drawn with the same parameters, hence the same deterministic epidemiological dynamics, but with different random error on data (Poisson error on cases number and binomial error on frequencies).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The daily basic reproduction number of the historical strains and variant ($R_{0,H}t$ and $R_{0,E}t$ , identical thick lines), together with the effective reproduction number inferred from daily case and frequency data (thin lines), in the example simulation shown on Figure 2B for an emerging variant with +10% effective reproduction number and same distribution of generation time.These realized effective reproduction number present a trend similar to the true basic reproduction number inputted to the simulation with three differences. First, the realized effective reproduction number are shifted in time compared to $R_{0,H}(t)$ because of the time shift between infections and case detection. Second, the realized effective reproduction number is lower than the true $R_{0,H}(t)$ because of population immunity and case detection and isolation. Third, error in cases numbers and in variant frequency cause error in the inferred effective reproduction number.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** In (ii), secondary infections are not possible in the first two days of infection, then the timing of infections follows a shifted gamma distribution. The plots show the correlation between inferred and true quantities. The two colors show different sample sizes used to infer variant frequency: 1000 daily, 10,000 daily. The left panels show the R advantage, the right panels the mean generation time (mgt). Top, middle and bottom panels show inference for large, medium, and small variability in R0,H(t). Other parameters as in Figure 3.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Inference of the R advantage and relative mean generation time (mgt) in the additional simulation study where the level of transmission is assumed to sharply decline from $R_{0,H}t=1.5$ to $R_{0,H}t=0.5$.Here, we varied the number of days for which number of cases and variant frequency data are available after the sharp decline from 10 (top panel) to 30days (bottom panel). The plots show the correlation between inferred and true quantities. The two colors show different sample sizes used to infer variant frequency: 1000 daily, 10,000 daily. The left panels show the R advantage, the right panels the mean generation time (mgt). Other parameters as in Figure 3.\n\nThe R advantage was almost always precisely inferred even with small sample size and small variability in effective reproduction number (Figure 3, left panels). In contrast, the relative mean generation time was well inferred only for a large sample size and large variability in effective reproduction number (Figure 3, right panel). This was because the large error on $r_{E}$ and $r_{H}$ due to the limited sample size, in conjunction with the small variability in $R_{0,H}(t)$, makes precise inference of the relationship between $r_{E}$ and $r_{H}$ difficult. For such small sample sizes, grouping data by week (instead of by days, for the same duration) improves inference (Figure 3, green points).\n\nWe tested the robustness of the inference framework in several ways. First, we investigated whether temporal lag between infections and recorded cases impacted inference, considering the additional scenario where the mean time from symptom onset to case detection was 6 days instead of 2.2 days (Figure 3\u2014figure supplement 2). The lag does not affect the accuracy of inference (compare with Figure 3), as expected since the time series of number of detected cases and variant frequency share the same lag with infections. Second, we applied our framework to additional simulations where the true generation time is not gamma-distributed as in our baseline model: we assumed that transmission is not possible during the first two days; this is followed by a shifted gamma-distributed timing of secondary infections. This mismatch between modeling assumption and the true generation time distribution led to a small overestimation of the relative mean generation time (Figure 3\u2014figure supplement 2). Lastly, we inferred parameters when there is a sharp decline in $R_{H}t$ from 1.5 to 0.5 at a fixed date, instead of a progressive decline. In this scenario, the distribution of time since infection may not immediately stabilize after the sharp decline, temporarily breaking the key assumption of our analytical approach. Parameters were correctly inferred when the time series after the decline was long enough. With only 10 days of data after the decline, the inferred relative mean generation time was accurately inferred if enough cases were assayed to measure the variant frequency (Figure 3\u2014figure supplement 3). Interestingly, accuracy was better for variants with a shorter generation time than the historical strains (negative relative mean generation time). This is probably because their distribution of time since infection stabilizes faster after the sharp decline.\n\n#### Application to the Variants Alpha and Delta in England\n\nWe used this framework to infer the R advantage and mean generation time of Alpha (B.1.1.7) in England. We used public data from Public Health England on weekly cases numbers and the frequency of the Alpha variant (dataset 1). In England, the frequency of the Alpha variant could be quickly inferred because some of the PCR tests for SARS-CoV-2 detection presented a \u201cS gene target failure\u201d (SGTF) caused by the spike 69/70 deletion characteristic of Alpha (Public Health England, 2021b). The variant Alpha swept through from 0% to almost 100% frequency over 25 weeks; data were of very good quality for the whole period (Figure 4). Using our framework, we found that Alpha had a R advantage equal to $\\delta_{1}=54% [45, 63%]$, and the same mean generation time as previous strains, $\\delta_{2}=0.058 [-0.095, 0.21]$ (Figure 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig4-v3.jpg)\n\n**Figure 4.:** A and B: Dynamics of the Alpha variant frequency in England (A) and of the Delta variant frequency in England (B), estimated through SGTF. These frequencies are shown together with the dynamics of weekly cases numbers, over weeks 35 (week starting September 08, 2020)\u201360 (week starting March 02, 2021) for Alpha, and weeks 63 (starting March 23, 2021)\u201375 (starting June 15, 2021) for Delta. (C) the dynamics of the Delta variant frequency in 11 chosen European countries. For each country, we used the growth rate of historical strains and emerging Delta variant when the frequency passes 50%, highlighted with larger points and thicker line on the figure.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig5-v3.jpg)\n\n**Figure 5.:** (A) Geometric intuition for how the $(r_{H}, r_{E})$ relationship depends on the mean generation time for hypothetical variants with R advantage $\\delta_{1}=0.1$ and relative mean generation time of $\\delta_{2}=-0.15$ and $\\delta_{2}=+0.15$ (as in Figures 1 and 2). The parameter cvH denotes the coefficient of variation of the historical strains distribution of generation time, equal to the standard deviation (sd) divided by the mean of the distribution. (B) The correlation between estimated growth rates of historical strains and variants in England. For Alpha (dataset 1) this is a temporal correlation in England over weeks starting September 08, 2020 to March 16, 2021. For Delta (dataset 3),this is a spatial correlation across European countries. The curves with confidence intervals are the model fits for each variant and show that the selection coefficient (the vertical distance to the bisector) is roughly constant across epidemiological conditions, indicative that the mean generation time is not altered in these variants. (C) The inferred infectivity profile of each variant with confidence intervals, together with the infectivity profile of historical strains circulating before the rise of the Alpha variant (black curve). This inference assumes a gamma-distributed generation time.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Panel A shows the estimated selection coefficient with 90% confidence intervals (these intervals can be very wide so 90% instead of 95% was chosen for readability). Panel B shows the estimated RH(t) (red) together with the frequency trajectory on a logit scale (blue), showing that the frequency grows more slowly when RH(t) passes below one. Panel C shows the correlation between selection coefficient and RH(t) across weeks. The size of the points reflects the inverse of the error variance on the selection coefficient at each point. The thick black line shows a linear regression with 95% confidence intervals, the thin red line shows the model prediction for the Alpha variant (R advantage of+54%, same mean generation time as historical strains).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The two periods are separated by the dashed vertical line. Black points show the maximum likelihood estimates, red shaded areas the 95% confidence interval.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75791/elife-75791-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Overdispersion is represented by two factors: a factor reducing the number of cases, thus increasing the variance of the error in cases number compared to a Poisson, and a factor reducing the sample size, thus increasing the variance in frequency compared to a binomial. We optimized likelihood for all combinations of the two factors. Top panels, negative likelihood of the optimized model as function of the factor reducing the number of cases. Bottom panels, as a function of the factor reducing the sample size. The best combination of factors is highlighted as an open point. This is shown for the three datasets (left, middle, right columns).\n\nThe information on the relative mean generation time of a variant mainly lies in the slope of the relationship between $r_{E}$ and $r_{H}.$ In fact, the slope is approximately $1+cv_{H}^{2} \\delta_{1}-\\delta_{2}$ for variants not too different from historical strains, where $cv_{H}$ is the coefficient of variation of the distribution of generation time of historical strains (Materials and methods). A variant with an R advantage but not changing the mean generation time ($\\delta_{1}>0,\u00a0\\delta_{2}=0$) would present a slope slightly greater than 1. This geometric intuition is just a different way to interpret the increasing selection coefficient on variants conferring an R advantage as levels of transmission increase (Figure 1C and D, gray lines). A variant shortening the mean generation time would present a steeper slope. A variant prolonging the mean generation time would present a flatter slope (Figure 5A, Figure 2\u2014figure supplement 1). For the Alpha variant, the decline in selection coefficient expected as levels of transmission declined in England is seen in our data as in previous studies (Volz et al., 2021b; Otto et al., 2021). It is apparent in Figure 4 (the frequency trajectory slows down at around 70%) and we highlight it more clearly in Figure 5\u2014figure supplement 1.\n\nWe next evaluated the growth of Delta (B.1.617.2) in England. As Delta does not have the spike 69/70 deletion, the growth of Delta and eventual replacement of Alpha in April and May 2021 was evidenced by the decline of SGTF (Public Health England, 2021c) (dataset 2). However, we found that with this temporal data, we could not reliably disentangle the R advantage from the mean generation time. The confidence intervals were very wide, with an estimated R advantage equal to $\\delta_{1}=229% [7, 451%]$ and a relative mean generation time estimated at $\\delta_{2}=1 [-0.31, 2.3]$. This was linked to the small temporal variations in epidemic conditions in this short period of time compared to the previous period when we investigated Alpha (Figure 5\u2014figure supplement 2).\n\nIn an attempt to gain more power to disentangle the R advantage from the mean generation time for the Delta variant, we used spatial variation in growth rates across European countries. We used data from the European Surveillance System (TESSy) on the growth rate of \u201chistorical\u201d strains circulating at the time when Delta emerged (mainly Alpha variant), and the emerging Delta variant across 11 European countries with sufficient genomic data (Austria, Belgium, Denmark, France, Germany, Greece, Ireland, Italy, Netherlands, Norway, Sweden: dataset 3). With these data, we inferred a R advantage equal to $\\delta_{1}=140% [98, 182%]$ compared to Alpha, and a mean generation time similar to the Alpha variant with $\\delta_{2}=0.033 [-0.18,  0.25]$.\n\nIn conclusion, we found that the Alpha variant had a R advantage of +54% compared to historical strains, and the Delta variant had a further R advantage of +140% relative to Alpha, assuming a mean generation time of 6.5 days. There was no evidence of an altered mean generation time for these two variants.\n\n## Discussion\n\nWe investigated how emerging variants with distinct infectivity profiles may be selected. Our main finding is that levels of transmission reflected in the reproduction number R(t), which depend on human behavior and interventions, change selection on different types of variants. It was known that selection on variants with an R advantage but not affecting the mean generation time is stronger when the transmission is high. We extend previous work by investigating selection on both R and the timing of secondary infections. In a context of high transmission and high growth rate (\u201cfast\u201d epidemic), most infections will be recent and it is more advantageous to transmit early. Conversely, in a context of low transmission (\u201cslow\u201d or declining epidemic), infections will be older and it is more advantageous to transmit late. The selection coefficient on variants may thus increase or decrease with the transmission, and it can even be a non-monotonous function of transmission. A second important finding is that the variation of the selection coefficient with transmission provides insight on both the R advantage and the infectivity profile. We used this understanding to infer variant infectivity profiles from the variation in growth rates in contexts of changing transmission.\n\nWe found that Alpha variant enjoy a R advantage of +54% [45, 63] relative to historical strains, and Delta variants a+140% [98, 182] additional advantage relative to Alpha. Both variants have a mean generation time similar to that of historical strains (here assumed to be 6.5 days). This complements previous findings: the possibility of a shorter generation time was investigated to explain the growth advantage of Alpha, but previous studies found it was difficult to distinguish a variant with larger R from one with a shorter generation time (Volz et al., 2021b; Davies et al., 2021). Some (but not all) studies of within-host viral load dynamics suggested that individuals infected by variant Alpha could shed virus for a longer time, which may result in a longer generation time (Kissler et al., 2021; Cosentino et al., 2022; Elie et al., 2021). Conflicting results exist for Delta. A cluster of Delta variant infections in China suggested a smaller mean generation time (2.9 days) and more pre-symptomatic transmission for Delta than early SARS-CoV-2 strains, but without good control (Zhang et al., 2021); more controlled studies found on the contrary a similar generation time (Pung et al., 2021; Ryu et al., 2021). If the distribution of generation time is similar in Delta as we infer, the observed growth rates imply it is +140% more transmissible than Alpha, in line with the +70 to +200% estimated elsewhere (Alizon et al., 2021; Blanquart et al., 2021). If the generation time of Delta had instead been inferred 1 or 2 days shorter than the baseline (6.5 days), the observed growth rate would imply the estimated R advantage drops to +106 or +77%. The large R advantage of Delta with similar mean generation time makes it more difficult to control with interventions reducing transmission (such as social distancing) than if it had a smaller R advantage associated with a shorter mean generation time.\n\nOur conceptual results may be useful to interpret the dynamics of variant frequency dynamics. Frequency dynamics are determined by the selection coefficient, which is the difference in growth rates between the variant and historical strains. Several papers have reported a varying selection coefficient across time (Roquebert et al., 2021b) or across countries (Campbell et al., 2021). One possible explanation for this variability is that the selection coefficient changes with transmission because of differences in generation time distributions, which may explain non-monotonous frequency trajectories (Figure 2C).\n\nEvolution influences epidemiological dynamics: at a given level of transmission, stronger selection on a variant also implies a larger incidence of the variant and therefore a larger burden on healthcare systems (Figure 2A). However, we emphasize that measures to reduce transmission, although possibly increasing the selection coefficient, always result in reduced variant absolute growth rate and better control of the variant. The selection coefficient (i.e. the difference in growth rates) can increase if reducing transmission reduces the growth rate of historical strains more strongly than the growth rate of the variant (e.g. variant conferring longer mean generation time, Figure 1D). It remains true that a variant epidemic growth rate is an increasing function of transmission, and a variant is growing if and only if $R_{E}>1$ (Equation 3).\n\nA first limitation of our framework is that we only consider the impact of changing transmission on selection for variants. We do not consider the impact of interventions shortening the distribution of generation time such as isolation of positive cases and contact tracing, which also potentially change over time (Kraemer et al., 2021). These interventions would alter the selection coefficient differently, in particular would favor earlier transmission (shorter mean generation time). A second important factor that could change selection for variants and is not considered in our framework is vaccination. Vaccination reduces host susceptibility. If a variant partially escapes vaccine immunity, rapid vaccination of the population will change the selection coefficient of the variant over time. For example, if a temporal reduction in transmission is solely caused by the deployment of vaccines, the growth rate of historical strains will be strongly reduced as the vaccination campaign progresses, but the growth rate of the variant will be less reduced. This could flatten the relationship between $r_{E}$ and $r_{H}$ . The effects of the R advantage, a different generation time and vaccine escape on changing selection could in principle be disentangled with data on vaccine efficacy and the vaccination status of the host population over time. These considerations could analogously apply to the comparison across countries with different levels of vaccination. This might affect the analyses of the infectivity profile of the Delta variant that possibly confers immune escape. A third limitation, linked to the comparison across countries, is that we assume that the variability in growth rates across countries is solely explained by changing transmission. The R advantage and distribution of generation time are assumed to be the same in all countries. Relaxing this assumption would greatly impede the possibility of inference of variant infectivity profiles using data sampled across countries. Fourthly, we consider only one emerging variant. Our inference framework could readily be extended without additional technical complications to the frequency dynamics of several variants. Lastly, our framework requires precise measure of variant frequency and varying levels of transmission over the timespan considered. Infectivity profiles can sometimes be inferred with as little as a 10 days time series after a sharp decline in transmission (Figure 3\u2014figure supplement 3).\n\nIn spite of these limitations, our simple framework makes minimal assumptions (exponential growth rate and stable age-of-infection structure) that proved robust when tested against a simulation model including more complicated features (build-up of immunity, isolation of positive cases, explicit epidemiological dynamics in the context of changing transmission). We additionally verified the robustness of our framework when the lag between infection and cases is different, the true generation time is not gamma-distributed, and the decline in the transmission is very sharp (Figure 3\u2014figure supplements 2 and 3).\n\nIn conclusion, we developed a conceptual framework to study selection on variants modifying the transmission of an infectious pathogen. We decoupled selection on R (number of secondary infections) and selection on the distribution of generation time (timing of secondary infections). While selection on the number of secondary infections is stronger with increased transmission (e.g. contact rates) in the community, selection on the generation time varies with levels of transmission in the community. This can lead to non-monotonous variant frequency trajectories. The ensuing variation in the selection coefficient in contexts of changing transmission can be used to infer not only the R advantage of variants, but also the change in mean generation time. This inference method could be used in conjunction with other type of data, for example, data on variant viral load trajectories (Cosentino et al., 2022; Roquebert et al., 2021a), or comparison of secondary attack rates of variant vs. historical strains informing on the R advantage (Public Health England, 2021a). We find that the patterns of growth of the Alpha and Delta variants in England and Europe are compatible with mean generation times similar to historical strains. This work will help understand variant dynamics at a time when several variants of concern are circulating and new ones may evolve, and genomic and PCR-based surveillance programs allow fine monitoring of their dynamics.\n\n## Materials and methods\n\n### The Model\n\n#### Relationship Between Growth Rate and Effective Reproduction Number\n\nWe describe the exponential growth of an epidemic within a simple framework. We assume that transmission changes over time because of varying social distancing measures. We assume that changes are sufficiently slow compared to the mean generation time that the distribution of time since infection is always at equilibrium. It is known that when the number of infected individuals grows exponentially at a constant rate r, the distribution of time since infection equilibrates to an exponential distribution with parameter r (Wallinga and Lipsitch, 2007). Here, we assume that the number of infected individuals grows exponentially with rate $r(t)$ and that the distribution of the time since infection is exponential with parameter $r(t)$ (i.e., the distribution equilibrates instantaneously when $r(t)$ changes). The unit of time is days. The timing of infections is defined by the probability density $w\\tau$ . Under these assumptions, the effective reproduction number $R(t)$ reflecting transmission and the growth rate $r(t)$ are linked through (Wallinga and Lipsitch, 2007):\n\n$$\nr(t)=\\int_{0}^{\u221e}r(t)e^{\u2212r(t)\\tau}\u23dfstableagestructurew(\\tau)R(t)\u23dfnewinfectionsfromindividualsofage\\taud\\tau.\n$$\n\nThe growth rate is the integral over all possible times since infection of the probability that an individual has this age (the exponential distribution), times the number of new infections produced by an individual this age, giving the relation (1 a). This equation simplifies to:\n\n$$\n1=R(t) \\int_{0}^{\u221e}e^{-rt \\tau} w\\tau d\\tau\n$$\n\nFor a gamma-distributed generation time (with shape and scale parameters $\\alpha$ and $\\beta$), this integral has an explicit solution:\n\n$$\nR(t)=1+\\beta rt^{\\alpha}\n$$\n\nConversely, the growth rate is:\n\n$$\nr(t)= (Rt^{\\frac{1}{\\alpha}}-1) / \\beta\n$$\n\nThe epidemic grows when $R(t)>1$ and declines when $R(t)<1$. Reparameterizing in terms of the mean and sd of the gamma distribution, $\\mu=\\alpha \\beta$ and $\\sigma=\\sqrt{\\alpha} \\beta$, yields:\n\n$$\nr(t)= (R(t)^{\\sigma^{2}/\\mu^{2}}-1)(\\mu/\\sigma^{2})\n$$\n\n#### Relationship Between Growth Rates of Historical Strains and Emerging Variant Across Epidemiological Conditions\n\nThis equation can separately describe the growth of historical strains and variants characterized by their own parameters: $R_{H}(t),$$\\mu_{H}$ and $\\sigma_{H}$ for historical strains, $R_{E}(t),$$\\mu_{E}$, and $\\sigma_{E}$ for the emerging variant. We may recast the variant parameters in terms of how they are altered compared to historical strains:\n\n$$\nR_{E}(t)=R_{H}(t)(1+\\delta_{1}),\\mu_{E}=\\mu_{H}(1+\\delta_{2}),\\sigma_{E}=\\sigma_{H}(1+\\delta_{3}).\n$$\n\nWe assume that changes in behavior and in interventions cause temporal variability in the transmission, measured by the effective reproduction number of historical strains taken as the reference, $R_{H}t$ , and only in this parameter. This assumption is valid for interventions that reduce transmission (social distancing, vaccines) but not for interventions that change the distribution of generation time (contact tracing, case isolation). Temporal variability in $R_{H}t$ will affect both $r_{H}(t)$ and $r_{E}(t)$ through the relationship (Borges et al., 2021):\n\n$$\nr_{H}t= R_{H}t^{\\frac{\\sigma_{H}^{2}}{\\mu_{H}^{2}}}-1(\\mu_{H}/\\sigma_{H}^{2})\n$$\n\n\n\n$$\nr_{E}(t)= R_{E}(t)^{\\frac{\\sigma_{E}^{2}}{\\mu_{E}^{2}}}-1(\\mu_{E}/\\sigma_{E}^{2})=R_{H}t^{\\frac{\\sigma_{E}^{2}}{\\mu_{E}^{2}}}1+\\delta_{1}^{\\frac{\\sigma_{E}^{2}}{\\mu_{E}^{2}}} -1(\\mu_{E}/\\sigma_{E}^{2})\n$$\n\nThe temporal variation in $R_{H}t$ thus defines a parametric relationship between $r_{H}R_{H}(t)$ and $r_{E}(R_{H}(t))$ that can be used to infer $\\delta_{1}$ , $\\delta_{2}$ and $\\delta_{3}$ . The variation of the selection coefficient with $R_{H}(t)$ is simply given by $r_{E}t-r_{H}t$ .\n\n#### Approximation of the Parametric Relationship\n\nTo gain further intuition on the parametric relationship between $r_{H}R_{H}(t)$ and $r_{E}(R_{H}(t))$ as $R_{H}(t)$ varies, we compute the tangent of the curve at the value $R_{H}t=1$ (where $r_{H}$ is 0). The parameters of this tangent will of course be most informative when values of $R_{H}t$ are not too far from one. The intercept is:\n\n$$\nintercept=r_{E}1=1+\\delta_{1}^{\\frac{\\sigma_{E}^{2}}{\\mu_{E}^{2}}} -1(\\mu_{E}/\\sigma_{E}^{2})\n$$\n\nWhere $\\mu_{E}$ and $\\sigma_{E}^{2}$ can be reparameterized with Equation 5. This intercept is approximately $\\delta_{1}/\\mu_{H}$ for a variant of small effect ($\\delta_{1}$ , $\\delta_{2}$, and $\\delta_{3}$ are all small). The equation for the slope of the tangent is complicated, but again assuming small-effect variant it can be approximated as:\n\n$$\nslope\u22481 + \\delta_{1} cv_{H}^{2}- \\delta_{2}  \n$$\n\nwith the square coefficient of variation of the generation time distribution, $cv_{H}^{2}=\\sigma_{H}^{2}/\\mu_{H}^{2}$ . Here it is assumed to be equal to $4^{2}/6.5^{2}=0.38$. Thus, the slope of the $(r_{H}, r_{E})$ relationship is close to one, increased by the R advantage (weighted by $cv_{H}^{2}$), decreased by the change in mean generation time, and unaffected to the first order by the difference in sd $\\delta_{3}$ . The selection coefficient is $r_{E}-r_{H}$ , the vertical distance between the ($r_{H}$ , $r_{E}$) relationship and the bisector.\n\n### Likelihood\n\nWe now formulate the likelihood for the estimated growth rates across time and across regions, denoted by $r^_{H}$ and $r^_{E}$ . We derive an approximation for the distribution of $r^_{H}$ and $r^_{E}$ as a function of their true values $r_{H}$ and $r_{E}$ and the error variances, under the assumption that these errors are normally distributed and small. The historical strains and emerging variant growth rates are estimated from daily cases and variant frequency time series, by decomposing the cases into historical and emerging variant cases. We will formalize below how the estimated growth rates are affected by the error on variant frequency which depends on $1/N$, where $N$ is sample size, and on the error on cases number.\n\nBetween two consecutive days, denoted for simplicity days 0 and 1, the observed variables are the total number of cases denoted $I^_{0}$ and $I^_{1}$ and the frequency of variant $p^_{0}$ and $p^_{1}$ . The time is now noted as an index for clarity. The observed total number of cases is:\n\n$$\nI^_{0}=I_{0}(1+\u03f5_{I,0})I^_{1}=I_{1}(1+\u03f5_{I,1})\n$$\n\nWe assume that the number of cases is Poisson distributed. When the number of cases is large, the error denoted $\u03f5_{I,0}$ (for day 0) is approximately normally distributed with mean 0 and variance $1/I_{0}$ (and analogously for day 1). If we now assume that the number of cases is distributed as a negative binomial (over-dispersed compared to the Poisson): when the parameter r (number of failures) of the negative binomial is large, the normal approximation is accurate by the central limit theorem and the variance of $\u03f5_{I,0}$ will be $1/[I_{0} (1-\\pi)]$ where $\\pi$ is the success probability of the negative binomial. Indeed, we have $V[I^_{0}]=I_{0}^{2}\u00a0V[\u03f5_{I,0}]=I_{0}/(1\u2212\\pi)$. The second equality comes from the fact that the variance of a negative binomial distribution is the mean (here $I_{0}$) divided by $1-\\pi$. In other words, the cases number can be reduced to a smaller effective cases number to account for such overdispersion.\n\nThe observed logit-frequency of the variant is:\n\n$$\nl^p_{0}=lp_{0}+\u03f5_{lp,0}l^p_{1}=lp_{1}+\u03f5_{lp,1}\n$$\n\nwhere $lp$ is a shorthand for the logit of the frequency of the variant. In the data, the frequency of the variant was estimated by running a specific PCR on a fraction on all cases and is given by a binomial frequency distribution. If the sample size is large, the error on the logit frequency $\u03f5_{lp,0}$ is approximately normally distributed within mean 0 and variance $1/(N_{0 }p_{0}(1-p_{0}))$ where $N_{0 }$ is the sample size at day 0 (and similarly for day 1, variance $1/(N_{1 }p_{1}(1-p_{1}))$). Indeed, for a binomial distribution of variant cases, the error on the frequency is approximately normal and has variance $p_{0}1-p_{0}/N_{0}$ . By application of the delta method, the error on the logit frequency has variance $1/(N_{0 }p_{0}(1-p_{0}))$. Here again, it is possible to account for overdispersion compared to the binomial distribution. The beta-binomial distribution can be used to reflect such overdispersion, as it is a compound distribution emerging when the frequency parameter of the binomial is itself distributed according to a beta distribution. The beta-binomial distribution is close to a normal distribution when the two parameters of the underlying beta ($\\alpha$ and $\\beta$) are large. The variance of the frequency for a beta-binomial distribution of variant cases is inflated by a factor $(\\alpha+\\beta+N_{0})/(\\alpha+\\beta+1)$ compared to a binomial, while the mean is $p_{0}=\\alpha/(\\alpha+\\beta)$. Thus, overdispersion can be modeled by reducing the sample size to a smaller effective number.\n\nThe observed growth rates are linked with the observed variables through the relations:\n\n$$\nr^_{H,1}=log[I^_{_{H,1}}/I^_{_{H,0}}]=log[I^_{_{1}}(1\u2212p^_{_{1}})/(I^_{_{0}}(1\u2212p^_{0}))]r^_{E,1}=log[I^_{_{E,1}}/I^_{_{E,0}}]=log[I^_{1}p^_{_{1}}/(I^_{_{0}}p^_{0})]\n$$\n\n### Small Error Approximation\n\nReplacing the observed number of cases and frequencies with the expressions above, and approximating with a first order Taylor series in the error terms, yields:\n\n$$\nr^_{H,1}=r_{H,1}+\u03f5_{I,1}\u2212\u03f5_{I,0}\u23dferroroncaseincidence+p_{0}\u03f5_{lp,0}\u2212p_{1}\u03f5_{lp,1}\u23dferroronfrequency\n$$\n\n\n\n$$\nr^_{E,1}=r_{E,1}+\u03f5_{I,1}\u2212\u03f5_{I,0}\u2212(1\u2212p_{0})\u00a0\u03f5_{lp,0}\u00a0+(1\u2212p_{1})\u00a0\u03f5_{lp,1}\n$$\n\nThe first two error terms are common to both growth rates and simply express the fact that both growth rates will be inflated if the number of cases is by chance larger at time 1 than at time 0 ($\u03f5_{I,1}>\u03f5_{I,0}$). The two last terms express the fact that estimated growth rates will be modified by the error on the estimation of the frequency. For example, the growth rate of the historical strain will be inflated if by chance the error term on frequency at day 0 is greater than that at day 1 ($p_{1}\u03f5_{lp,1}$ < $p_{0} \u03f5_{lp,0}$). These terms are modulated by the true frequencies $p_{0}$ and $p_{1}$ .\n\nUnder the assumption that the errors on the logit frequencies and number of cases are independent and that they are also independent between day 0 and 1, the distribution of $(r^_{H,1},\u00a0r^_{E,1})$ is bivariate normal. The mean vector is:\n\n$(r_{H,1},r_{E,1})$.\n\nThe variances (diagonal of the variance-covariance matrix) are:\n\n$$\nV[r^_{H,1}]=V[\u03f5_{I,1}]+V[\u03f5_{I,0}]+p_{0}^{2}V[\u00a0\u03f5_{lp,0}]+p_{1}^{2\u00a0}V[\u03f5_{lp,1}]=1/I_{1}+1/I_{0}+p_{0}/(N_{0\u00a0}(1\u2212p_{0}))+p_{1}/(N_{1\u00a0}(1\u2212p_{1}))\n$$\n\n\n\n$$\nV[r^_{E,1}]=1/I_{1}+1/I_{0}\u00a0+(1\u2212p_{0})/(N_{0\u00a0}p_{0})+(1\u2212p_{1})/(N_{1\u00a0}p_{1})\n$$\n\nThe covariances are:\n\n$$\ncov[r^_{H,1},r^_{E,1}]=(1/I_{1}+1/I_{0})\u00a0\u2212(1/N_{0}+1/N_{1})\n$$\n\nThe covariance between the estimated growth rates of historical and emerging strains is expected to be negative, because only a fraction of cases are assayed for the presence of the variant ($N_{0}<I_{0}$). Indeed, the first positive term ($1/I_{1}+1/I_{0}$) expresses the fact that positive covariance will be created by error in cases number (for example, larger cases number will translate into higher growth rate of both historical strains and variants). The second negative term expresses the fact that the error in estimation of variant frequency will impact $r^_{H,1}$ and $r^_{E,1}$ in opposite ways. This second negative effect will be dominant.\n\n### Definition of the Likelihood\n\n#### Likelihood for Temporal Dynamics\n\nWe now formulate more generally the likelihood of observed growth rates at all days t, $r^_{H,t},r^_{E,t}$ with $t\\in[1,t_{max}]$. Across consecutive timepoints, successive estimates of $r^_{H,1},r^_{E,1}$ will also be correlated because they share the same error terms. These cross-time covariances will be:\n\n$$\ncov[r^_{H,t},r^_{H,t+1}]=cov[\u03f5_{I,t}\u2212p_{t}\u03f5_{lp,t},\u00a0\u2212\u03f5_{I,t}+p_{t}\u00a0\u03f5_{lp,t}]=\u00a0\u2212V[\u03f5_{I,t}]\u2212p_{t}^{2}V[\u03f5_{lp,t}]=\u00a0\u22121/I_{t}\u2212p_{t}/(N_{t\u00a0}(1\u2212p_{t}))\n$$\n\n\n\n$$\ncov[r^_{E,t},r^_{E,t+1}]=\u22121/I_{t}\u2212(1\u2212p_{t})/(N_{t}\u00a0p_{t})\n$$\n\n\n\n$$\ncov[r^_{E,t},r^_{H,t+1}]=\u22121/I_{t}+1/N_{t\u00a0}\n$$\n\n\n\n$$\ncov[r^_{H,t},r^_{E,t+1}]=\u22121/I_{t}+1/N_{t\u00a0}\n$$\n\nFinally, the likelihood for the estimated growth rates of historical strain and mutant within a region at all days is given by the density of the multivariate normal distribution:\n\n$$\nP(r^_{H,1},r^_{E,1},\u2026,\u00a0r^_{H,t_{max}},r^_{E,t_{max}}\u00a0|\u00a0R_{H,1},\u00a0\u2026,\u00a0R_{H,t_{max}},\\delta_{1},\\delta_{2},\\delta_{3})\n$$\n\n\n\n$$\n=f_{m,\u03a3}(r^_{H,1},r^_{E,1},\u2026,\u00a0\u00a0r^_{H,t_{max}},r^_{E,t_{max}})\n$$\n\nwhere $f_{m,\u03a3}$ is the density of the multivariate normal distribution. The mean vector $m$ is composed of the true growth rates, which depend in turn on the temporal series of true R of historical strains $R_{H,1}, \u2026, R_{H,t_{max}}$ , the temporal series of true R of the variant $R_{H,1}(1+\\delta_{1}), \u2026, R_{H,t_{max}}(1+\\delta_{1})$, and the distribution of the generation time of the variant characterized by $\\delta_{2},\\delta_{3}$ . The distribution of the generation time of historical strains is assumed to be known. The covariance matrix $\u03a3$ is block-diagonal with non-zero covariances between mutant and historical strains at the same time and at consecutive time-points, as given above. The true number of cases $I_{t}$ , sample size $N_{t }$ , and the true variant frequencies $p_{t}$ , intervene in the expressions for the variances and covariances. In practice, we approximate the true number of cases and variant frequencies by their estimations, $I^_{t}$ and $p^_{t}$ .\n\n#### Likelihood for Spatial Variation\n\nThe likelihood of a series of growth rates $r^_{H,i},r^_{E,i}$ collected in different regions or countries indexed by i is different from that for a temporal series of $r^_{H,t},r^_{E,t}$ , as we assume there are no correlations between growth rates measured in different countries (in contrast to temporal correlations). For such data representing spatial variation in growth rates, the mean vector is composed of the true growth rates, which depend on the series of R in different countries, $R_{H,i}$ . The covariance matrix has diagonal given by the variances:\n\n$$\nV[r^_{H,i}]=1/I_{1,i}+1/I_{0,i}+p_{0,i}/(N_{0,i\u00a0}(1\u2212p_{0,i}))+p_{1,i}/(N_{1,i\u00a0}(1\u2212p_{1,i}))\n$$\n\n\n\n$$\nV[r^_{E,i}]=1/I_{1,i}+1/I_{0,i}\u00a0+(1\u2212p_{0,i})/(N_{0,i\u00a0}p_{0,i})+(1\u2212p_{1,i})/(N_{1,i\u00a0}p_{1,i})\n$$\n\nWhere 0 and 1 are the consecutive timepoints at which the growth rates are measured, and the index i denotes the country. Furthermore, the covariances between growth rates of historical strains and emerging variants are:\n\n$$\ncov[r^_{H,i},r^_{E,i}]=1/I_{1,i}+1/I_{0,i}\u00a0\u22121/N_{0,i}\u22121/N_{1,i}\n$$\n\nAll other covariances (between quantities measured in different countries) are 0.\n\n### Simulation Study\n\nOur approach relies on several approximations. First, we assume that the age-of-infection structure of the population is always at equilibrium with the current growth rate $r(t)$ even though transmission $R(t)$ changes over time. Second, we assume that errors around cases number and frequencies are small and normally distributed. We conducted a simulation study to test our ability to infer the parameters of the variant infectivity profile in spite of these approximations.\n\n### Description of the Simulation Model\n\nThe simulation model is as in a previous study (Belloir and Blanquart, 2021) and includes time-varying transmission, arbitrary infectivity profiles, the build-up of population immunity, and detection and isolation of cases. To model transmission dynamics, we use a discretized version of the renewal equation (see also Flaxman et al., 2020) extended to two strains, historical strains and the variant. We follow the dynamics of the number of individuals infected at day t who were infected $\\tau$ days ago, and have not yet been detected and isolated, called $I_{H}t,\\tau$ and $I_{E}t,\\tau$ . The transmission dynamics are given by the system of recurrence equations:\n\n$$\nI_{H}(t+1,\u00a00)=R_{0,H}(t)(1\u2212I_{t}^{tot}/S_{0})\u23dfnonimmunefraction\u03a3_{\\tau=0}^{\u221e}w_{H}(\\tau)I_{H}(t,\\tau)\u23dfinfectivityprofile\n$$\n\n\n\n$$\nI_{E}t+1, 0=R_{0,E}t 1-I_{t}^{tot}/S_{0} \\sum_{\\tau=0}^{\u221e}w_{E}\\tau I_{E}t, \\tau\n$$\n\n\n\n$$\nI_{H}(t+1,\u00a0\u00a0\\tau)=I_{H}(t,\\tau\u22121)(1\u2212cy(\\tau\u22121))\u23dfcasedetectionandisolation\u2200\\tau\\geq1\n$$\n\n\n\n$$\nI_{E}(t+1,\u00a0\u00a0\\tau)=I_{E}(t,\\tau\u22121)(1\u2212cy(\\tau\u22121))\u2200\\tau\\geq1\n$$\n\nThe first two equations are analogous and represent transmission to new susceptible individuals giving rise to infected individuals with time since infection 0. The parameter $R_{0,H}(t)$ reflects the transmission of historical strains, and is the basic reproduction number (in the absence of interventions, and when the population is fully susceptible (i.e. $I_{t}^{tot}=0$)). The factor $w_{H}\\tau$ is the fraction of transmission that occurs at time since infection $\\tau$, where $\\sum_{\\tau=0}^{\u221e}w_{H}\\tau=1$. Thus $w_{H}\\tau$ represents the distribution of the generation time of the virus. In practice, we use a discretized version of the gamma distribution. The infectivity profile of the virus is the product of R and the generation time distribution $R_{0,H}t w_{H}\\tau$ . Transmission is reduced by a factor $1-I_{t}^{tot}/S_{0}$ by population immunity, where $S_{0}$ is the initial number of susceptible individuals in the region. Population immunity is assumed to be the same for both variants (perfect cross-protection). The variable $I_{t}^{tot}=\\sum_{i=1}^{t}I_{H}i,0+I_{E}i,0$ is the total number of individuals already infected and assumed to be fully immune at time $t$. The instantaneous reproduction number that accounts for population immunity but not for case isolation is $R_{H}(t)=R_{0,H}(t) 1-I_{t}^{tot}/S_{0}$ .\n\nThe third and fourth equations are analogous and represent the dynamics of individuals infected in the past. Individuals infected $\\tau-1$ days ago now have time since infection $\\tau$, provided they were not detected and isolated. An infected individual is detected with probability $c,$ and the probability that an individual is detected at age $\\tau$ (when it is detected) is given by $y(\\tau)$, with $\\sum_{\\tau=1}^{\u221e}y\\tau=1$. The distribution $y(\\tau)$ represents the lag between infection and case detection. An individual who is detected is removed from the pool of individuals that contribute to further transmission of the disease. The number of cases detected at day $t$ is thus:\n\n$$\nC_{H}t=c\\sum_{\\tau=0}^{\u221e}y\\tauI_{H}t,\\tau\n$$\n\n\n\n$$\nC_{E}t=c\\sum_{\\tau=0}^{\u221e}y\\tauI_{E}t,\\tau\n$$\n\nAnd the number of detected individuals who were infected $\\tau$ days ago changes as:\n\n$$\nC(t+1,0)=0\u00a0(when\u00a0\\tau=0)\n$$\n\n\n\n$$\nC(t+1,\\tau)=C(t,\\tau\u22121)+c\u00a0I(t,\\tau\u22121)\u00a0y(\\tau\u22121)\u00a0\u2200\u00a0\\tau\\geq1\n$$\n\n### Parameterization of the Simulation Model\n\nWe simulate the epidemiological dynamics of historical strains and variant virus. We assume that historical strains initially grow slowly, while the emerging variant initially increases in incidence faster thanks to its R advantage. Transmission progressively declines. This could be due for example to the progressive strengthening of control measures, leading to control of historical strains and then the variant. Over the period considered, the variant initially increases in frequency.\n\nWe ran the simulation for 80 days. We first ran a simulation where we assumed the basic reproduction number $R_{0,H}(t)$ changed as a Brownian motion with mean 1.5 and autocorrelation 0.05, and selected a trajectory such that the mean $R_{0,t}$ over the 20 first days exceeded 1.1 and the mean over the 20 last days was below 0.9 (Figure 2). For systematic simulations designed to test the inference algorithm, we chose three scenarios for the temporal variation in $R_{0,H}(t)$: linear decline from 1.5 to 0.5, from 1.3 to 0.7, and from 1.1 to 0.9. We assumed about 9 M individuals are initially susceptible (corresponding to a large European region), and an initial number of detected cases of 4000 historical strains infections per day and 80 variant infections per day. We assumed 50% of all infection are detected (probability of detection $c=0.5$). The time to detection has mean 7.3 days. It is the sum of time from infection to symptom onset with mean 5.1 days (distributed as log-normal with parameters 1.518, 0.472 [Lauer et al., 2020]), and the time from symptom to detection with mean 2.2 days (distributed as gamma with shape 0.69, rate 0.31 [Belloir and Blanquart, 2021; Lauer et al., 2020]). For the alternative simulations with a longer lag (mean 6 days), we assumed a gamma distribution with shape 0.69, rate 0.115. This ensures a mean of 6 days and the same coefficient of variation as for the main parameter set.\n\nWe assumed the generation time of historical strains was gamma distributed with mean 6.5 days and sd 4 days (Volz et al., 2021b). For the alternative simulations where we assume that there is zero transmission the first two days.\n\n### Inference\n\nFor inference, we tested combinations of the $\\delta_{1}$ , $\\delta_{2}$ parameters describing how the variant differs from the historical strains in its R and mean generation time. In the terms of the simulation model parameters, $R_{0,E}t=R_{0,H}t(1+\\delta_{1})$. The parameter $\\delta_{2}$ affects the parameters of the gamma distribution describing $w_{E}\\tau$ , while $w_{H}\\tau$ is gamma-distributed with mean 6.5days and sd 4days. We assumed the variant had the same sd of generation time, $\\delta_{3}=0$. Indeed, variants affecting the sd of generation time distribution have a very small selection coefficient which makes inference of this parameter difficult. This is seen by initial exploration of the relationship between growth rates of historical strains and variant, $r^_{H}$ and $r^_{E}$ (Figure 2\u2014figure supplement 1).\n\nWe systematically tested our ability to infer the $\\delta_{1}$ and $\\delta_{2}$ parameters. We ran the simulation model for all combinations of $\\delta_{1}$ from 0 to 0.5 in steps of 0.1 (R advantage increased from +0 to +100%), and of $\\delta_{2}$ from \u20130.4 to 0.4 in steps of 0.2. We inferred the parameters $\\delta_{1}$ and $\\delta_{2}$ by maximum likelihood using the expression for the likelihood in Equation 13.\n\n#### Heuristic for the Simulation Study\n\nIn principle we need to infer jointly the parameters of interest ${\\delta_{1},\\delta_{2}}$, together with the other unknown parameters ${R_{H,1}, \u2026, R_{H,t_{max}}}$, which can be many. We used a simplified heuristic whereby we first set the parameters ${R_{H,1}, \u2026, R_{H,t_{max}}}$ to plausible values given ${\\delta_{1},\\delta_{2}}$, then infer the maximum likelihood parameters ${\\delta_{1},\\delta_{2}}$ given ${R_{H,1}, \u2026, R_{H,t_{max}}}$, and so on. We inferred maximum likelihood parameters ${\\delta_{1},\\delta_{2}}$ using the \u201cBFGS\u201d (Broyden, Fletcher, Goldfarb, and Shanno) method implemented in the optim function in the software R (R Development Core Team, 2018). In the simulation study, we iterate this procedure five times with five different starting points for ${\\delta_{1},\\delta_{2}}$ and select the final maximum likelihood parameter set ${\\delta_{1},\\delta_{2},R_{H,1}, \u2026, R_{H,t_{max}}}$.\n\nTo set ${R_{H,1}, \u2026, R_{H,t_{max}}}$ to plausible values, we used the measured growth rates with a simplified likelihood function. The simplified likelihood does not consider the full covariance structure of the multivariate normal distribution but instead only use the variances of the distribution $V[r^_{H,i}]$ and $V[r^_{E,i}]$ expressed above. Given $\\delta_{1},\\delta_{2}$ , we set the historical strains transmissibilities to:\n\n$$\nR_{H,i}=[\\frac{1}{V[r^_{H,i}]}(1+\\frac{\\sigma^{2}}{\\mu}\u00a0r^_{H,i})^{\\mu^{2}/\\sigma^{2}}+\\frac{1}{V[r^_{E,i}]}\\frac{1}{1+\\delta_{1}}(1+\\frac{\\sigma^{2}}{\\mu(1+\\delta_{2})}\u00a0r^_{E,i})^{\\mu^{2}(1+\\delta_{2})^{2}/\\sigma^{2}}](\\frac{1}{V[r^_{H,i}]}+\\frac{1}{V[r^_{E,i}]})^{\u22121}\n$$\n\nThis equation stems from Equation 3 linking growth rates with effective reproduction number. It is reparameterized in terms of \u00b5 and $\\sigma$, the mean and sd of the distribution of the generation time of the historical strains. It is a weighted sum of the effective reproduction number as estimated from the historical strains growth rate $r^_{H,i}$ , and the effective reproduction number as estimated from the variant growth rate $r^_{E,i}$ . For the latter, the mean generation time is altered by $1+\\delta_{2}$ , and the R is altered by $(1+\\delta_{1})$. The weights are the inverse variance of each of the estimated growth rates, $1/V[r^_{H,i}]$ and $1/V[r^_{E,i}]$ .\n\nThe estimated growth rate of the historical strains and variants at time i are given by Equation 11 applied to each time-point:\n\n$$\nr^_{H,i}=log\u2061[I^_{i+1}(1\u2212p^_{i+1})/(I_{i}^(1\u2212p_{i}^))]r^_{E,i}=log\u2061[(I^_{i+1}\u00a0p^_{i+1})\u00a0/\u00a0(I^_{i}\u00a0p^_{i})]\n$$\n\nWe systematically verified in the simulations that this heuristic converged to a set of $R_{H,i}$ close to the true effective reproduction number.\n\n#### Full Inference for Analysis of English and European Data\n\nWe ran inference on three datasets, two based on temporal variation in growth rates in England, and the third based on spatial variation across European countries:\n\nAs these datasets present a limited number of weeks or countries, it was possible to directly infer jointly the complete parameter set, ${\\delta_{1},\\delta_{2},R_{H,1}, \u2026, R_{H,t_{max}}}$ for temporal datasets, ${\\delta_{1},\\delta_{2},R_{H,1}, \u2026, R_{H,n_{c}}}$ for the spatial dataset where $n_{c}=11$ is the number of countries. Furthermore, we ran optimizations for several effective number of cases and sample sizes, to select the best amount of overdispersion (Figure 5\u2014figure supplement 2). Each optimization is conducted with 30 iterations of the BFGS algorithm with 30 random initial parameter values, and selecting the final best optimization. The 95% confidence intervals on the parameters were computed assuming multivariate normality of the likelihood function, and estimating the Hessian matrix of this multivariate normal at the optimum. All codes are shared on GitHub (Blanquart, 2022; copy archived at swh:1:rev:a242a18349393e2e98d353a879ef9e66e99f21c1).\n",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "5263701b-97a2-4b8b-a9fd-d692925eecaa",
+      "submission_id": "21977868-8adb-4c6a-a539-09ad0c0cb3de",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, https://ror.org/01znkr924 Mahidol University Thailand\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75791.sa0](https://doi.org/10.7554/eLife.75791.sa0)\n\nThis manuscript will be of broad interest to readers interested in understanding the characteristics of variants in ongoing epidemics that lead to faster (or slower) growth rates and will be of particular interest to those wishing to understand the factors leading to the selection of SARS\u2013CoV\u20132 variants. The selective advantage of a novel strain of a pathogen depends not only on its relative transmissibility but also on its generation time relative to other strains; the relation between transmissibility, transmission advantage and generation time changes across different phases of the epidemic. Key innovations in this paper are a robust framework for using this relationship to make statistical inferences about both the transmissibility advantage and generation time of an emerging variant and conceptual novelty in the general investigation of selection on infectivity profiles. The approach is supported by simulation studies and applied to the Alpha and Delta SARS\u2013CoV\u20132 variants to show that selection was likely driven by changes in transmissibility rather than changes in the generation time.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, https://ror.org/01znkr924 Mahidol University Thailand\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75791.sa1](https://doi.org/10.7554/eLife.75791.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Selection for infectivity profiles in slow and fast epidemics, and the rise of SARS\u2013CoV\u20132 variants\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Miles Davenport as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. There is a need to clarify the relationship between changes in transmission and changes in selection more explicitly in the text. (specific suggestions for how this could be done are given by reviewer #1)\n\n2. Relevant previous work should be cited and the abstract should more clearly highlight the novelty of this work\n\n3. Additional analysis to establish robustness of the conclusions to assumptions would be helpful (as outlined by reviewer #1)\n\n4. Please highlight the broader applicability. As currently framed the emphasis is on changes in transmissibility due to control measures, but similar considerations apply if there are changes over time in transmissibility for other reasons.\n\n5. Emphasise limitations, for example caveats related to the possible immune escape properties of the Delta variant , and potential biases introduced by vaccination.\n\n6. Could the authors comment on the amount of necessary data (length of the time series) for the method to be useful\n\n7. Clarify multiple country Delta analysis to address reviewer #2's concern.\n\nReviewer #1 (Recommendations for the authors):\n\nThat said, I found myself confused about several points. Most of these issues can be easily clarified, and I encourage the authors to tackle these points to avoid confusion.\n\nThe first confusion stems from the idea, described in Day et al. (2020), that selection for transmission isn't constant but declines when contact rates decline. Subsequently, during this pandemic, we have repeatedly observed a decrease in selection for VOC when public health and individual NPI measures increase, as seen as a decrease in s with stringency index (Figure 3, Otto et al. 2021) and as a \"kink\" in frequency\u2013over\u2013time plots (Figure S2, Otto et al. 2021). This kink is also visible in the current manuscript (Figure 4A), with \u0391 being more strongly favoured prior to week ~50 than after.\n\nIt was easy as a reader, however, to think that selection on transmission was modelled in this paper as a constant, not varying with control measures. Diving into the methods more, this isn't the case, but it was easy to miss it. I would suggest clarifying the relationship between changes in transmission and changes in selection more explicitly in the text.\n\nFor example:\n\n\u2013 Equation (5) \u2013 I suggest renaming the terms s1\u2013s3 as delta1\u2013delta3 or some other letter. Labeled with an \"s\", like the selection coefficient makes it easy to think that selection for transmission is s1. In fact, selection for transmission is given by rE\u2013rH, as in equation (6), which is not linear in the s1\u2013s3 terms. Even when R~1 (r~0), selection is s1/muH. This is because selection to leading order depends on changes in the transmission rate (call this \u03b2), not changes in R, consistent with equations (1) and (S6) in Day et al. [This is visible in the grey curves in Figure 1C,D, but I think most people would miss this.]\n\n\u2013 In a related way, I saw Figure 5 and thought the analysis was assuming that selection was constant as rH varies. This isn't assumed but is a function of R being near enough to one over the x\u2013axis that the curves do look linear. Still, if one plotted the selection (s=rE\u2013rH) versus rH, it would be easier to see that selection does depend on the growth rate in the model, weakening as rH decreases, even over this span of rH values.\n\n\u2013 What about the kink? This analysis hides a bit the temporal changes in selection. Figure 5B makes it seem like selection is constant over the time course, but Figure 4A (and logit plots) shows more of a breakpoint, with stronger selection earlier and weaker selection later. I would suggest some discussion of this; while the kink looks discrete in estimates of selection from Figure 4A, the interpretation in this paper would be that the kink is caused by a sharp reduction in rH, but this is hard to see in Figure 5B (potentially because of noise in the estimates of rH and rE). Any larger change in selection, beyond that predicted by changes in rH, could be examined by fitting a breakpoint in the likelihood analysis (future work). I think that this could be brought out more clearly as a strength of the paper \u2013 we expect the strength of selection to change with changing control measures, but the current work attempts to estimate the constant changes to the underlying parameters.\n\n\u2013 Because R describes the transmission per generation, wouldn't inferences of s1 capture both changes in transmissibility and changes in the generation time (mu)? However, s1 is discussed only in terms of a change in transmissibility. Wouldn't it be clearer to dissect the two (R=\u03b2\u2013(mean generation time)) and focus on selection via the transmission rate per unit time (\u03b2) versus selection on the mean generation time? Alternatively, care should be taken throughout to avoid talking about s1 as a change in transmissibility (it is more accurately described on line 358 as a change in the number of secondary infections).\n\nIn addition to clarifying the above, other issues that I think would strengthen the paper are:\n\nCiting previous work, not just Day et al. but also the earlier literature (e.g., refs 11, 13, 14, 19 therein). The abstract and text (e.g., line 115, 300) makes it seem like this is the first work to dissect selection into components coming from different disease life history traits (transmission, time to infectiousness, clearance rate, etc.), but there is substantial prior work on this. The novelty, and the focus of the abstract, should be on inference of these components.\n\nIt would be good to get a better sense of the robustness of the inferences to changing various assumptions:\n\n\u2013 Non\u2013gamma infectiousness curves (e.g., a curve that adds a delay to the start of infectiousness).\n\n\u2013 Lags in measuring case case numbers, as individuals typically don\u2019t get tested until having symptoms. A lag is in the simulation, but I didn\u2019t get a sense of how changing the lag affects the inferences.\n\n\u2013 Allowing shifts in contact rates or NPI \u2013 the method assumes steady state distributions at all times, it might be easier to get at the transients by having a discrete change in r from high to low values and seeing how the inference of the s terms change over time.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 I think the emphasis on \"level of epidemic control\" is misplaced. The whole analysis may work also in an uncontrolled epidemic, right? All that matters is that the effective reproduction number varies significantly with time.\n\n\u2013 I would discuss briefly the biases that could arise from incomplete cross\u2013protection or different vaccine protection, in order to clarify the applicability of the method. At present, I think the limitations are not clear enough, and they should be emphasised.\n\n\u2013 This approach seems to require a quite dense/long time series. Could the authors comment on this requirement?\n\n\u2013 I find the notation for the parameters s1,s2,s3 most unintuitive: s1 is a selection coefficient, but the others aren't, and s2 actually behaves in the opposite way. I'd suggest to pick a more intuitive notation, e.g. Rrel,gtrel,sdrel or any other variant.\n\n\u2013 For the \u0394 analysis: could you briefly discussed the caveats related to the possible immune escape properties of the variant?\n\n\u2013 Also for the \u0394 analysis: multiple countries can differ in their epidemiological situation and therefore correspond to different combinations of R and generation time for the \u0391 variant. It is unclear to me how this may affect your cross\u2013country analysis.\n",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "12105773-6711-41d3-8c7d-76671fed6dc3",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C1",
+      "claim": "SARS-CoV-2 variants of concern have emerged during the evolutionary history of SARS-CoV-2 with humans since late 2019, including the D614G mutation in Spring 2020, variant Alpha in Fall 2020, and Delta in Spring 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "During the short evolutionary history of SARS-CoV-2 with humans, since the host shift in late 2019, several selected mutations and combinations of mutations (variants) have emerged: for example, the D614G mutation in Spring 2020 (Volz et al., 2021a), the variant Alpha in Fall 2020 (B.1.1.7), and Delta in Spring 2020 (B.1.617.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to published work (Volz et al., 2021a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "64e4355e-ae22-4502-8a7f-69c23fb72abe",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C2",
+      "claim": "Variant Alpha was first detected in England in September 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Variant Alpha, first detected in England in September 2020, rapidly rose in frequency in October 2020 in England and spread to multiple countries, causing important rebounds of the epidemic (Volz et al., 2021b; Davies et al., 2021; Borges et al., 2021; Washington et al., 2021; Gaymard et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "9b92faa3-2098-4db7-a0a7-3d71f76c0a95",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C3",
+      "claim": "Variant Alpha rapidly rose in frequency in October 2020 in England and spread to multiple countries, causing important rebounds of the epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Variant Alpha, first detected in England in September 2020, rapidly rose in frequency in October 2020 in England and spread to multiple countries, causing important rebounds of the epidemic (Volz et al., 2021b; Davies et al., 2021; Borges et al., 2021; Washington et al., 2021; Gaymard et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "dbaf76ae-5f1e-4feb-a9c0-0bc94cdf17ec",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C4",
+      "claim": "The Delta variant became dominant in many parts of the world, leading to new surges in infections and hospitalizations in 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Later on, the Delta variant became dominant in many parts of the world, leading to new surges in infections and hospitalizations in 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and reflects established knowledge about the Delta variant's impact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "89961df1-7166-484f-b66e-9f997ddffa5b",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C5",
+      "claim": "The R advantage of the Alpha variant was estimated to decline from +89 to +54% from December to mid-January in the United Kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the United Kingdom, the R advantage of the Alpha variant was estimated to decline from +89 to +54% from December to mid-January.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text, describing observed variability in R advantage estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "e34c28fc-0ef1-404d-8996-2b4a54419d84",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C6",
+      "claim": "Estimates of R advantage of Alpha and Delta across countries exhibit substantial variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates of R advantage of Alpha and Delta across countries also exhibit substantial variability (Campbell et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "a652d643-e309-4a62-90a5-54daa9dc3787",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C7",
+      "claim": "The exponential growth rate of an emerging variant depends on both the effective reproduction number and the generation time distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the growth rate of an emerging variant depends not only on the effective reproduction number but also on the generation time distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a fundamental epidemiological principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "4e8be124-96e7-4062-8fd7-c5f23b53266e",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C8",
+      "claim": "Natural selection is expected to act on the full infectivity profile, which combines both R and the generation time.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural selection is therefore expected to act on the full infectivity profile, which combines both R and the generation time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a logical inference from evolutionary principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "5846d01a-0913-45ac-8839-2a85b7fd1ce5",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C9",
+      "claim": "Selection on variants with larger R increases with levels of transmission in the community.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that selection on a variant with larger R increases with levels of transmission in the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents established knowledge in epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "ea586d87-8c33-4478-97b3-9f1fbb2941e7",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C10",
+      "claim": "Variants conferring earlier transmission are more strongly favored when the historical strains have fast epidemic growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally show that variants conferring earlier transmission are more strongly favored when the historical strains have fast epidemic growth, while variants conferring later transmission are more strongly favored when historical strains have slow or negative growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract as a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "b7e82083-6846-4ba2-a46d-bb081d5d52e8",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C11",
+      "claim": "Variants conferring later transmission are more strongly favored when historical strains have slow or negative growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally show that variants conferring earlier transmission are more strongly favored when the historical strains have fast epidemic growth, while variants conferring later transmission are more strongly favored when historical strains have slow or negative growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract as a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "599d13f8-affd-4a04-85ef-e05ec7a24871",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C12",
+      "claim": "Alpha confers a +54% [95% CI, 45\u201363%] R advantage compared to previous strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to data for the Alpha and Delta variants in England and in Europe, we find that Alpha confers a+54% [95% CI, 45\u201363%] R advantage compared to previous strains, and Delta +140% [98\u2013182%] compared to Alpha, and mean generation times are similar to historical strains for both variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and represents a key finding from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "777830b2-02f4-48be-a770-e039ab438c61",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C13",
+      "claim": "Delta confers a +140% [95% CI, 98\u2013182%] R advantage compared to Alpha.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to data for the Alpha and Delta variants in England and in Europe, we find that Alpha confers a+54% [95% CI, 45\u201363%] R advantage compared to previous strains, and Delta +140% [98\u2013182%] compared to Alpha, and mean generation times are similar to historical strains for both variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and represents a key finding from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "2f46a579-bd53-4d21-b736-7e2392eadc28",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C14",
+      "claim": "Mean generation times are similar to historical strains for both Alpha and Delta variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to data for the Alpha and Delta variants in England and in Europe, we find that Alpha confers a+54% [95% CI, 45\u201363%] R advantage compared to previous strains, and Delta +140% [98\u2013182%] compared to Alpha, and mean generation times are similar to historical strains for both variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and represents a key finding from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "8b398b91-0dd4-4659-bc11-f1d467295cd7",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C15",
+      "claim": "A variant with a shorter mean generation time is selected for in a growing epidemic because it produces the same number of secondary infections in a shorter time.",
+      "claim_type": "EXPLICIT",
+      "source": "A variant with a shorter mean generation time is selected for in a growing epidemic because it produces the same number of secondary infections in a shorter time, while the same variant is counter-selected in a declining epidemic (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 1C showing the selection coefficient as a function of transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "8e65456f-2930-4c65-99c6-4d6c92275881",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C16",
+      "claim": "A variant with a shorter mean generation time is counter-selected in a declining epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "A variant with a shorter mean generation time is selected for in a growing epidemic because it produces the same number of secondary infections in a shorter time, while the same variant is counter-selected in a declining epidemic (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "b40e01a7-c3f2-4f68-a8cf-e662e614f88d",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C17",
+      "claim": "A variant with a larger standard deviation in generation time is always selected for because it enjoys both an excess of early secondary infections and late secondary infections compared to historical strains.",
+      "claim_type": "EXPLICIT",
+      "source": "A variant with a larger standard deviation (sd) in generation time is always selected for because it enjoys both an excess of early secondary infections and late secondary infections compared to historical strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a theoretical finding from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "8015e912-73d0-4fe3-a929-2244da5a8f08",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C18",
+      "claim": "In a growing epidemic, more individuals have been infected recently and there is a greater advantage to early transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, in a growing epidemic, more individuals have been infected recently and there is a greater advantage to early transmission, while in a declining epidemic, more individuals have late time since infection and therefore strains that transmit at later times have a greater advantage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a logical inference from demographic principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "c7d402a9-3d92-47cd-99ed-322928822ced",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C19",
+      "claim": "In a declining epidemic, more individuals have late time since infection and therefore strains that transmit at later times have a greater advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, in a growing epidemic, more individuals have been infected recently and there is a greater advantage to early transmission, while in a declining epidemic, more individuals have late time since infection and therefore strains that transmit at later times have a greater advantage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a logical inference from demographic principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "4d738552-e42d-4fa2-8f74-9de5888dfbfe",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C22",
+      "claim": "At the level of transmission where R_H = 1/(1+\u03b4\u2081), the distribution of time since infection is uniform and therefore the infectivity profile does not matter for the selection of the variant.",
+      "claim_type": "EXPLICIT",
+      "source": "At this level of transmission, the distribution of time since infection is uniform\u2014all ages of infection are equally represented\u2014and therefore the infectivity profile does not matter for the selection of the variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a theoretical finding from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "c82ff22f-858a-403f-83ed-34994b5ad131",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C23",
+      "claim": "Variants with the same reproduction number but distinct generation time distributions can exhibit a variety of epidemiological and frequency dynamics in the context of progressive decline of levels of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of progressive decline of levels of transmission, variants with the same reproduction number but distinct generation time distributions can exhibit a variety of epidemiological and frequency dynamics (Figure 2A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2A and C showing simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "f5c2cea9-dc0c-4834-a290-bfa877fb85d9",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C24",
+      "claim": "The epidemiological dynamics (daily number of variant cases) are strongly affected by the generation time distribution of the variant.",
+      "claim_type": "EXPLICIT",
+      "source": "The epidemiological dynamics, that is the daily number of variant cases, are also strongly affected by the generation time distribution of the variant (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2A showing simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "85ecc524-491d-4c8a-afcf-b73241b48dca",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C25",
+      "claim": "Frequency trajectories can be non-monotonous: a variant with shorter mean generation time could be selected, increase in frequency, but then decline in frequency as transmission declines.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency trajectories can be non-monotonous: a variant with shorter mean generation time could be selected, increase in frequency, but then decline in frequency as transmission declines (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2C showing simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "c4ee827c-efe4-459f-a880-bd0fc5779c46",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C26",
+      "claim": "The R advantage was almost always precisely inferred even with small sample size and small variability in effective reproduction number in the simulation study.",
+      "claim_type": "EXPLICIT",
+      "source": "The R advantage was almost always precisely inferred even with small sample size and small variability in effective reproduction number (Figure 3, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3 showing simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "aee69523-e85f-467d-b5d3-953d4f4e550b",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C27",
+      "claim": "The relative mean generation time was well inferred only for a large sample size and large variability in effective reproduction number in the simulation study.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the relative mean generation time was well inferred only for a large sample size and large variability in effective reproduction number (Figure 3, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3 showing simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "5893dc1c-02f3-4ab7-b186-52f085601e13",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C28",
+      "claim": "For small sample sizes, grouping data by week (instead of by days, for the same duration) improves inference of the relative mean generation time.",
+      "claim_type": "EXPLICIT",
+      "source": "For such small sample sizes, grouping data by week (instead of by days, for the same duration) improves inference (Figure 3, green points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3 showing simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "63fca1fa-9d66-47f6-b27a-75be0ce47c27",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C29",
+      "claim": "The temporal lag between infections and recorded cases does not affect the accuracy of inference.",
+      "claim_type": "EXPLICIT",
+      "source": "The lag does not affect the accuracy of inference (compare with Figure 3), as expected since the time series of number of detected cases and variant frequency share the same lag with infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by comparison with Figure 3 and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "4d8ebffd-b3c7-4263-8d7f-88b960cb1dab",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C30",
+      "claim": "Mismatch between modeling assumption and the true generation time distribution led to a small overestimation of the relative mean generation time.",
+      "claim_type": "EXPLICIT",
+      "source": "This mismatch between modeling assumption and the true generation time distribution led to a small overestimation of the relative mean generation time (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3\u2014figure supplement 2 showing simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "b5b25e6b-f055-429b-8d8b-1716199c4f58",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C31",
+      "claim": "In England, the frequency of the Alpha variant could be quickly inferred because some of the PCR tests for SARS-CoV-2 detection presented a 'S gene target failure' (SGTF) caused by the spike 69/70 deletion characteristic of Alpha.",
+      "claim_type": "EXPLICIT",
+      "source": "In England, the frequency of the Alpha variant could be quickly inferred because some of the PCR tests for SARS-CoV-2 detection presented a \"S gene target failure\" (SGTF) caused by the spike 69/70 deletion characteristic of Alpha (Public Health England, 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by a citation to Public Health England.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "cd6d3da2-33f2-4d69-99d8-629b8b39633f",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C32",
+      "claim": "The variant Alpha swept through from 0% to almost 100% frequency over 25 weeks in England.",
+      "claim_type": "EXPLICIT",
+      "source": "The variant Alpha swept through from 0% to almost 100% frequency over 25 weeks; data were of very good quality for the whole period (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 4 showing the frequency dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "991433f4-eafd-4331-9840-44a54706d4ec",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C35",
+      "claim": "The inability to reliably disentangle R advantage from mean generation time for Delta in England was linked to the small temporal variations in epidemic conditions compared to the previous period when Alpha was investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "This was linked to the small temporal variations in epidemic conditions in this short period of time compared to the previous period when we investigated Alpha (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "0a06b116-ee68-4e85-aa1c-51d1e6640d45",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C37",
+      "claim": "The Alpha variant had a R advantage of +54% compared to historical strains, and the Delta variant had a further R advantage of +140% relative to Alpha, assuming a mean generation time of 6.5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we found that the Alpha variant had a R advantage of +54% compared to historical strains, and the Delta variant had a further R advantage of +140% relative to Alpha, assuming a mean generation time of 6.5 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a conclusion from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "585d54ee-0aeb-43b8-b1a9-1fd6c265bd56",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C38",
+      "claim": "There was no evidence of an altered mean generation time for Alpha and Delta variants.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence of an altered mean generation time for these two variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a conclusion from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "b08b98ff-44b1-4fc1-ae84-4ff2418de3bc",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C39",
+      "claim": "Levels of transmission reflected in the reproduction number R(t), which depend on human behavior and interventions, change selection on different types of variants.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated how emerging variants with distinct infectivity profiles may be selected. Our main finding is that levels of transmission reflected in the reproduction number R(t), which depend on human behavior and interventions, change selection on different types of variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as the main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "74426b9e-25f2-4301-aa41-3865766d0bc6",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C40",
+      "claim": "In a context of high transmission and high growth rate ('fast' epidemic), most infections will be recent and it is more advantageous to transmit early.",
+      "claim_type": "EXPLICIT",
+      "source": "In a context of high transmission and high growth rate (\"fast\" epidemic), most infections will be recent and it is more advantageous to transmit early.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a key finding from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "3b3f27ac-43fa-447f-8a41-7d42e6a6ca82",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C41",
+      "claim": "In a context of low transmission ('slow' or declining epidemic), infections will be older and it is more advantageous to transmit late.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in a context of low transmission (\"slow\" or declining epidemic), infections will be older and it is more advantageous to transmit late.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a key finding from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "3c514ce2-07b5-463c-841e-781dedcb823b",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C42",
+      "claim": "The selection coefficient on variants may increase or decrease with the transmission, and it can even be a non-monotonous function of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The selection coefficient on variants may thus increase or decrease with the transmission, and it can even be a non-monotonous function of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a key finding from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "6bf5d70e-7689-459b-abf5-851f8dd15ff1",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C43",
+      "claim": "The variation of the selection coefficient with transmission provides insight on both the R advantage and the infectivity profile.",
+      "claim_type": "EXPLICIT",
+      "source": "A second important finding is that the variation of the selection coefficient with transmission provides insight on both the R advantage and the infectivity profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a key finding of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "ef7e1eb9-bae7-4f2e-9537-a96df5a4515f",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C44",
+      "claim": "Some studies of within-host viral load dynamics suggested that individuals infected by variant Alpha could shed virus for a longer time, which may result in a longer generation time.",
+      "claim_type": "EXPLICIT",
+      "source": "Some (but not all) studies of within-host viral load dynamics suggested that individuals infected by variant Alpha could shed virus for a longer time, which may result in a longer generation time (Kissler et al., 2021; Cosentino et al., 2022; Elie et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "6bc18cda-ccfb-4bdc-90fa-c5749602da81",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C45",
+      "claim": "A cluster of Delta variant infections in China suggested a smaller mean generation time (2.9 days) and more pre-symptomatic transmission for Delta than early SARS-CoV-2 strains, but without good control.",
+      "claim_type": "EXPLICIT",
+      "source": "A cluster of Delta variant infections in China suggested a smaller mean generation time (2.9 days) and more pre-symptomatic transmission for Delta than early SARS-CoV-2 strains, but without good control (Zhang et al., 2021); more controlled studies found on the contrary a similar generation time (Pung et al., 2021; Ryu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "a7d5dd00-8802-4efe-bceb-31207648593d",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C46",
+      "claim": "More controlled studies found a similar generation time for Delta compared to early SARS-CoV-2 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "A cluster of Delta variant infections in China suggested a smaller mean generation time (2.9 days) and more pre-symptomatic transmission for Delta than early SARS-CoV-2 strains, but without good control (Zhang et al., 2021); more controlled studies found on the contrary a similar generation time (Pung et al., 2021; Ryu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "7b921927-b0be-4b69-acf1-387d543fed71",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C47",
+      "claim": "If the distribution of generation time is similar in Delta, the observed growth rates imply it is +140% more transmissible than Alpha, in line with the +70 to +200% estimated elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "If the distribution of generation time is similar in Delta as we infer, the observed growth rates imply it is +140% more transmissible than Alpha, in line with the +70 to +200% estimated elsewhere (Alizon et al., 2021; Blanquart et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "1c5fdfe5-64c5-4034-833e-a634dcb1947c",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C48",
+      "claim": "If the generation time of Delta had been 1 or 2 days shorter than the baseline (6.5 days), the estimated R advantage would drop to +106 or +77%.",
+      "claim_type": "EXPLICIT",
+      "source": "If the generation time of Delta had instead been inferred 1 or 2 days shorter than the baseline (6.5 days), the observed growth rate would imply the estimated R advantage drops to +106 or +77%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a counterfactual analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "a7353f7f-01f2-4401-a60d-267a677bb96f",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C49",
+      "claim": "The large R advantage of Delta with similar mean generation time makes it more difficult to control with interventions reducing transmission (such as social distancing) than if it had a smaller R advantage associated with a shorter mean generation time.",
+      "claim_type": "EXPLICIT",
+      "source": "The large R advantage of Delta with similar mean generation time makes it more difficult to control with interventions reducing transmission (such as social distancing) than if it had a smaller R advantage associated with a shorter mean generation time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a logical inference about intervention effectiveness.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "bf56cc9f-5839-4c94-8732-16fb5babf80c",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C50",
+      "claim": "Several papers have reported a varying selection coefficient across time or across countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Several papers have reported a varying selection coefficient across time (Roquebert et al., 2021b) or across countries (Campbell et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "7e48b195-f0b4-4572-834c-b5ddbf7e38ef",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C51",
+      "claim": "One possible explanation for variability in selection coefficient is that it changes with transmission because of differences in generation time distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this variability is that the selection coefficient changes with transmission because of differences in generation time distributions, which may explain non-monotonous frequency trajectories (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2C showing simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "3a8c8abd-f0a6-4f57-8f72-ce46ff61a7dc",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C52",
+      "claim": "At a given level of transmission, stronger selection on a variant also implies a larger incidence of the variant and therefore a larger burden on healthcare systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolution influences epidemiological dynamics: at a given level of transmission, stronger selection on a variant also implies a larger incidence of the variant and therefore a larger burden on healthcare systems (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2A showing simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "8ba697e6-91c3-426a-a411-556efc56b3cb",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C53",
+      "claim": "Measures to reduce transmission, although possibly increasing the selection coefficient, always result in reduced variant absolute growth rate and better control of the variant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we emphasize that measures to reduce transmission, although possibly increasing the selection coefficient, always result in reduced variant absolute growth rate and better control of the variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a key clarification about intervention effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "510176e5-a39b-453a-8555-8fbddcd926d6",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C55",
+      "claim": "The framework only considers the impact of changing transmission on selection for variants and does not consider the impact of interventions shortening the distribution of generation time such as isolation of positive cases and contact tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "A first limitation of our framework is that we only consider the impact of changing transmission on selection for variants. We do not consider the impact of interventions shortening the distribution of generation time such as isolation of positive cases and contact tracing, which also potentially change over time (Kraemer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "aa119b20-ab4c-4c2a-bc8b-bebc01b391fe",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C56",
+      "claim": "Interventions that shorten the distribution of generation time (such as contact tracing and case isolation) would alter the selection coefficient differently, in particular would favor earlier transmission (shorter mean generation time).",
+      "claim_type": "EXPLICIT",
+      "source": "These interventions would alter the selection coefficient differently, in particular would favor earlier transmission (shorter mean generation time).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a logical inference about intervention effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "c3834ac2-5f11-4f84-b328-4e3476ec2531",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C57",
+      "claim": "Vaccination is an important factor that could change selection for variants and is not considered in the framework.",
+      "claim_type": "EXPLICIT",
+      "source": "A second important factor that could change selection for variants and is not considered in our framework is vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "d6e1da39-7efb-47a7-9f68-139fd8e5a066",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C58",
+      "claim": "If a variant partially escapes vaccine immunity, rapid vaccination of the population will change the selection coefficient of the variant over time.",
+      "claim_type": "EXPLICIT",
+      "source": "If a variant partially escapes vaccine immunity, rapid vaccination of the population will change the selection coefficient of the variant over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a logical inference about vaccination effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "2c81c189-add4-4acf-aac8-a0c8dd0471f1",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C59",
+      "claim": "The framework assumes that the variability in growth rates across countries is solely explained by changing transmission, and that the R advantage and distribution of generation time are the same in all countries.",
+      "claim_type": "EXPLICIT",
+      "source": "A third limitation, linked to the comparison across countries, is that we assume that the variability in growth rates across countries is solely explained by changing transmission. The R advantage and distribution of generation time are assumed to be the same in all countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "4628b767-e3ed-40ad-84e9-8f44c5d32bba",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C60",
+      "claim": "The framework requires precise measure of variant frequency and varying levels of transmission over the timespan considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, our framework requires precise measure of variant frequency and varying levels of transmission over the timespan considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "4e0f6e7c-51d4-4b8b-b09d-672986ad668f",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C61",
+      "claim": "Infectivity profiles can sometimes be inferred with as little as a 10 days time series after a sharp decline in transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Infectivity profiles can sometimes be inferred with as little as a 10 days time series after a sharp decline in transmission (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3\u2014figure supplement 3 showing simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "0a94d4d6-fb7e-4cd6-9e9f-2b39ce67fd20",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C62",
+      "claim": "The simple framework makes minimal assumptions (exponential growth rate and stable age-of-infection structure) that proved robust when tested against a simulation model including more complicated features.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of these limitations, our simple framework makes minimal assumptions (exponential growth rate and stable age-of-infection structure) that proved robust when tested against a simulation model including more complicated features (build-up of immunity, isolation of positive cases, explicit epidemiological dynamics in the context of changing transmission).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents a validation of the framework.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "711321a2-e14e-4b03-a92b-2068fc2f47ed",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C63",
+      "claim": "The patterns of growth of the Alpha and Delta variants in England and Europe are compatible with mean generation times similar to historical strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the patterns of growth of the Alpha and Delta variants in England and Europe are compatible with mean generation times similar to historical strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a conclusion from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "bbc15635-22b1-4f13-988f-a5b4e4de7c38",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C64",
+      "claim": "When the number of infected individuals grows exponentially at a constant rate r, the distribution of time since infection equilibrates to an exponential distribution with parameter r.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that when the number of infected individuals grows exponentially at a constant rate r, the distribution of time since infection equilibrates to an exponential distribution with parameter r (Wallinga and Lipsitch, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by a citation to established work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "edc68459-8ab4-47ed-8fbe-d348896fd60c",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C67",
+      "claim": "The generation time of historical strains was assumed to be gamma distributed with mean 6.5 days and sd 4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed the generation time of historical strains was gamma distributed with mean 6.5 days and sd 4 days (Volz et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "d2227670-1ecb-4dec-b4ee-bb15f7c595f3",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "claim_id": "C69",
+      "claim": "The time to detection has mean 7.3 days, which is the sum of time from infection to symptom onset with mean 5.1 days and the time from symptom to detection with mean 2.2 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The time to detection has mean 7.3 days. It is the sum of time from infection to symptom onset with mean 5.1 days (distributed as log-normal with parameters 1.518, 0.472 [Lauer et al., 2020]), and the time from symptom to detection with mean 2.2 days (distributed as gamma with shape 0.69, rate 0.31 [Belloir and Blanquart, 2021; Lauer et al., 2020]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c85d2ab7-2b9a-476b-93ed-1f2cbb738c7a",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the emergence of SARS-CoV-2 variants of concern, including D614G (Spring 2020), Alpha (Fall 2020, first detected in England September 2020), and Delta (Spring 2021), noting their rapid spread and epidemic impact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by multiple citations to published literature and represent established epidemiological knowledge about SARS-CoV-2 variant emergence and spread. These are background claims appropriately documenting the context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "7837d27b-2386-40cc-8ab3-a5d93a2294a4",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous estimates of R advantage for Alpha and Delta variants have shown substantial variability across time and geography, with Alpha's estimated R advantage declining from +89% to +54% in the UK from December to mid-January.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 document observed instability in prior R advantage estimates, supported by citations. This motivates the need for the current study's methodological approach and represents accurate characterization of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "8e87d090-8b5f-4a48-a7ce-77ca69ef067e",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The growth rate of emerging variants depends on both the effective reproduction number (R) and generation time distribution, with natural selection acting on the full infectivity profile combining both factors, and selection on variants with larger R increasing with transmission levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 represent fundamental epidemiological principles that are well-established in the literature. These provide the theoretical foundation for the study and are appropriately cited or presented as established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "1661ee1b-acec-46e6-af9c-34d811f20fcc",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Variants conferring earlier transmission are more strongly favored during fast epidemic growth (high transmission), while variants conferring later transmission are favored during slow or declining epidemics, because the age-of-infection distribution differs between growing and declining epidemics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C15-C16, C18-C19, and C40-C41 present the core theoretical finding supported by mathematical modeling (Figure 1) and logical inference from demographic principles. The reasoning is sound: in growing epidemics, most infections are recent, favoring early transmission; in declining epidemics, infections are older, favoring later transmission.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "53853b8b-bcd2-4597-bb2f-ddc01447b469",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Variants with larger standard deviation in generation time are always selected for, and at a specific transmission level (R_H = 1/(1+\u03b4\u2081)), the infectivity profile does not affect variant selection because the age-of-infection distribution is uniform.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C22 represent theoretical predictions from the Euler-Lotka framework. The logic is sound: larger variance provides advantages at both early and late times, while uniform age distribution eliminates timing advantages. These are mathematical consequences of the model assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "85722f63-86e0-4f93-bb06-f80fba8802a9",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Simulation results demonstrate that variants with the same R but different generation time distributions exhibit diverse epidemiological and frequency dynamics, including non-monotonous frequency trajectories, which may explain observed variability in selection coefficients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C51 are supported by simulation results shown in Figure 2. The simulations appropriately test the theoretical predictions under more realistic conditions including population immunity and case isolation, demonstrating robustness of the conceptual framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "69ba0eed-e9da-49e4-9612-d99f38a6c53d",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In simulation studies, R advantage was precisely inferred even with small samples and limited R variability, while relative mean generation time required large sample sizes and substantial R variability for accurate inference, with weekly data aggregation improving inference for small samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by systematic simulation studies shown in Figure 3. The results appropriately characterize the statistical power requirements for the inference framework, demonstrating that generation time is harder to infer than R advantage due to the subtlety of the signal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "3696f774-cf7e-4951-b5f6-435cb54fe71e",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Robustness analyses show that temporal lag between infections and cases does not affect inference accuracy, mismatch in assumed generation time distribution causes small overestimation, and infectivity profiles can sometimes be inferred with as little as 10 days of data after sharp transmission decline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 and C61 document robustness checks supported by Figure 3 supplements. These appropriately test key assumptions and demonstrate the framework's performance under various violations of idealized conditions, strengthening confidence in the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "89cdf82d-2e55-48d5-b20c-04d7f127ea1d",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analysis of Alpha variant data from England reveals a +54% [45-63%] R advantage compared to historical strains with no evidence of altered mean generation time, based on 25 weeks of high-quality SGTF data tracking Alpha's sweep from 0% to nearly 100% frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C14, C31-C32, C37-C38, and C63 present the main empirical finding for Alpha, supported by Figure 4-5 and appropriate statistical inference. The use of SGTF data provides high-quality frequency estimates, and the temporal variation in R_H during the study period enables disentangling R advantage from generation time effects. The confidence intervals are appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "2019d698-4040-4ade-babb-d9811e7f9a09",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Delta variant shows a +140% [98-182%] R advantage compared to Alpha based on spatial variation across 11 European countries, with temporal data from England alone insufficient to disentangle R advantage from generation time due to limited epidemic variability during the short observation period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C35, and C47 present the Delta variant findings. The use of spatial rather than temporal variation is appropriately justified by the limited temporal variability in England (Figure 5 supplement 2). The assumption that R advantage and generation time are constant across countries is a limitation but reasonable given the alternative of no inference. The consistency with other studies (+70 to +200%) supports the estimate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "af9e559c-97d1-44a7-90af-2639438bf1e9",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The main finding is that transmission levels (reflected in R(t)) change selection on different variant types, with selection coefficients potentially increasing, decreasing, or showing non-monotonous relationships with transmission, and this variation provides insight into both R advantage and infectivity profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C42-C43 summarize the study's main conceptual contributions. These are well-supported by the theoretical analysis (Figure 1), simulations (Figure 2), and empirical applications (Figures 4-5). The framework successfully extends prior work by considering selection on generation time in addition to R.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "0af5a061-5dad-47f2-a402-41338040a924",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior studies on generation time changes in Alpha and Delta variants have produced conflicting results, with some suggesting longer shedding for Alpha and shorter generation time for Delta, while more controlled studies found similar generation times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 appropriately summarize conflicting prior literature on generation time changes, supported by multiple citations. This contextualizes the current study's findings and acknowledges uncertainty in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "05a6577d-9751-404d-897b-68028a8ff2ac",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Counterfactual analysis shows that if Delta had a 1-2 day shorter generation time, the estimated R advantage would drop to +106% or +77%, and the large R advantage with unchanged generation time makes Delta harder to control with transmission-reducing interventions than if it had smaller R advantage with shorter generation time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 present appropriate sensitivity analysis and public health implications. The counterfactual calculations correctly apply the Euler-Lotka relationship, and the intervention implications logically follow from the findings about R advantage versus generation time effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "acfc5a08-1f67-495f-a688-9a742e39e173",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Stronger selection on variants implies larger variant incidence and healthcare burden at given transmission levels, but transmission-reducing measures always reduce variant absolute growth rate despite potentially increasing the selection coefficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 present important clarifications about the relationship between selection coefficients and public health outcomes. The distinction between relative (selection coefficient) and absolute (growth rate) effects is crucial and correctly explained, supported by Figure 2A.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "0c7f08a9-3700-4672-ae27-42fb81cfc4bb",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The framework has several limitations: it does not consider interventions that shorten generation time (contact tracing, isolation), vaccination effects on selection, assumes constant variant properties across countries, and requires precise frequency measures with varying transmission levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 appropriately acknowledge study limitations. These are reasonable constraints given the scope of the work, and the authors correctly identify how these factors could affect selection dynamics. The transparency about limitations is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "2b92094b-2a2d-4d4a-a463-49b6bed6b521",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The framework's minimal assumptions (exponential growth, stable age-of-infection structure) proved robust when tested against simulations with more complex features including immunity buildup, case isolation, and explicit dynamics under changing transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by the simulation studies (Figures 2-3 and supplements) that systematically test the framework under more realistic conditions. The validation demonstrates that the analytical approximations perform well despite simplifying assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    },
+    {
+      "id": "ce6e268d-e1bd-4139-8775-068ea98c0794",
+      "content_id": "2ba32125-d7cf-4296-acd9-5595a7d04d80",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The model assumes exponential age-of-infection distribution at equilibrium (established result), gamma-distributed generation time for historical strains (mean 6.5 days, sd 4 days), and detection lag with mean 7.3 days (5.1 days to symptoms, 2.2 days to detection).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C67, and C69 document key model assumptions and parameterizations, all appropriately cited to prior literature. These are standard assumptions in epidemic modeling and the parameter values are reasonable for SARS-CoV-2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:25.566884Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "12105773-6711-41d3-8c7d-76671fed6dc3",
+      "result_id": "c85d2ab7-2b9a-476b-93ed-1f2cbb738c7a"
+    },
+    {
+      "claim_id": "64e4355e-ae22-4502-8a7f-69c23fb72abe",
+      "result_id": "c85d2ab7-2b9a-476b-93ed-1f2cbb738c7a"
+    },
+    {
+      "claim_id": "9b92faa3-2098-4db7-a0a7-3d71f76c0a95",
+      "result_id": "c85d2ab7-2b9a-476b-93ed-1f2cbb738c7a"
+    },
+    {
+      "claim_id": "dbaf76ae-5f1e-4feb-a9c0-0bc94cdf17ec",
+      "result_id": "c85d2ab7-2b9a-476b-93ed-1f2cbb738c7a"
+    },
+    {
+      "claim_id": "89961df1-7166-484f-b66e-9f997ddffa5b",
+      "result_id": "7837d27b-2386-40cc-8ab3-a5d93a2294a4"
+    },
+    {
+      "claim_id": "e34c28fc-0ef1-404d-8996-2b4a54419d84",
+      "result_id": "7837d27b-2386-40cc-8ab3-a5d93a2294a4"
+    },
+    {
+      "claim_id": "a652d643-e309-4a62-90a5-54daa9dc3787",
+      "result_id": "8e87d090-8b5f-4a48-a7ce-77ca69ef067e"
+    },
+    {
+      "claim_id": "4e8be124-96e7-4062-8fd7-c5f23b53266e",
+      "result_id": "8e87d090-8b5f-4a48-a7ce-77ca69ef067e"
+    },
+    {
+      "claim_id": "5846d01a-0913-45ac-8839-2a85b7fd1ce5",
+      "result_id": "8e87d090-8b5f-4a48-a7ce-77ca69ef067e"
+    },
+    {
+      "claim_id": "ea586d87-8c33-4478-97b3-9f1fbb2941e7",
+      "result_id": "1661ee1b-acec-46e6-af9c-34d811f20fcc"
+    },
+    {
+      "claim_id": "b7e82083-6846-4ba2-a46d-bb081d5d52e8",
+      "result_id": "1661ee1b-acec-46e6-af9c-34d811f20fcc"
+    },
+    {
+      "claim_id": "8b398b91-0dd4-4659-bc11-f1d467295cd7",
+      "result_id": "1661ee1b-acec-46e6-af9c-34d811f20fcc"
+    },
+    {
+      "claim_id": "8e65456f-2930-4c65-99c6-4d6c92275881",
+      "result_id": "1661ee1b-acec-46e6-af9c-34d811f20fcc"
+    },
+    {
+      "claim_id": "8015e912-73d0-4fe3-a929-2244da5a8f08",
+      "result_id": "1661ee1b-acec-46e6-af9c-34d811f20fcc"
+    },
+    {
+      "claim_id": "c7d402a9-3d92-47cd-99ed-322928822ced",
+      "result_id": "1661ee1b-acec-46e6-af9c-34d811f20fcc"
+    },
+    {
+      "claim_id": "74426b9e-25f2-4301-aa41-3865766d0bc6",
+      "result_id": "1661ee1b-acec-46e6-af9c-34d811f20fcc"
+    },
+    {
+      "claim_id": "3b3f27ac-43fa-447f-8a41-7d42e6a6ca82",
+      "result_id": "1661ee1b-acec-46e6-af9c-34d811f20fcc"
+    },
+    {
+      "claim_id": "b40e01a7-c3f2-4f68-a8cf-e662e614f88d",
+      "result_id": "53853b8b-bcd2-4597-bb2f-ddc01447b469"
+    },
+    {
+      "claim_id": "4d738552-e42d-4fa2-8f74-9de5888dfbfe",
+      "result_id": "53853b8b-bcd2-4597-bb2f-ddc01447b469"
+    },
+    {
+      "claim_id": "c82ff22f-858a-403f-83ed-34994b5ad131",
+      "result_id": "85722f63-86e0-4f93-bb06-f80fba8802a9"
+    },
+    {
+      "claim_id": "f5c2cea9-dc0c-4834-a290-bfa877fb85d9",
+      "result_id": "85722f63-86e0-4f93-bb06-f80fba8802a9"
+    },
+    {
+      "claim_id": "85ecc524-491d-4c8a-afcf-b73241b48dca",
+      "result_id": "85722f63-86e0-4f93-bb06-f80fba8802a9"
+    },
+    {
+      "claim_id": "7e48b195-f0b4-4572-834c-b5ddbf7e38ef",
+      "result_id": "85722f63-86e0-4f93-bb06-f80fba8802a9"
+    },
+    {
+      "claim_id": "c4ee827c-efe4-459f-a880-bd0fc5779c46",
+      "result_id": "69ba0eed-e9da-49e4-9612-d99f38a6c53d"
+    },
+    {
+      "claim_id": "aee69523-e85f-467d-b5d3-953d4f4e550b",
+      "result_id": "69ba0eed-e9da-49e4-9612-d99f38a6c53d"
+    },
+    {
+      "claim_id": "5893dc1c-02f3-4ab7-b186-52f085601e13",
+      "result_id": "69ba0eed-e9da-49e4-9612-d99f38a6c53d"
+    },
+    {
+      "claim_id": "63fca1fa-9d66-47f6-b27a-75be0ce47c27",
+      "result_id": "3696f774-cf7e-4951-b5f6-435cb54fe71e"
+    },
+    {
+      "claim_id": "4d8ebffd-b3c7-4263-8d7f-88b960cb1dab",
+      "result_id": "3696f774-cf7e-4951-b5f6-435cb54fe71e"
+    },
+    {
+      "claim_id": "4e0f6e7c-51d4-4b8b-b09d-672986ad668f",
+      "result_id": "3696f774-cf7e-4951-b5f6-435cb54fe71e"
+    },
+    {
+      "claim_id": "599d13f8-affd-4a04-85ef-e05ec7a24871",
+      "result_id": "89cdf82d-2e55-48d5-b20c-04d7f127ea1d"
+    },
+    {
+      "claim_id": "2f46a579-bd53-4d21-b736-7e2392eadc28",
+      "result_id": "89cdf82d-2e55-48d5-b20c-04d7f127ea1d"
+    },
+    {
+      "claim_id": "b5b25e6b-f055-429b-8d8b-1716199c4f58",
+      "result_id": "89cdf82d-2e55-48d5-b20c-04d7f127ea1d"
+    },
+    {
+      "claim_id": "cd6d3da2-33f2-4d69-99d8-629b8b39633f",
+      "result_id": "89cdf82d-2e55-48d5-b20c-04d7f127ea1d"
+    },
+    {
+      "claim_id": "0a06b116-ee68-4e85-aa1c-51d1e6640d45",
+      "result_id": "89cdf82d-2e55-48d5-b20c-04d7f127ea1d"
+    },
+    {
+      "claim_id": "585d54ee-0aeb-43b8-b1a9-1fd6c265bd56",
+      "result_id": "89cdf82d-2e55-48d5-b20c-04d7f127ea1d"
+    },
+    {
+      "claim_id": "711321a2-e14e-4b03-a92b-2068fc2f47ed",
+      "result_id": "89cdf82d-2e55-48d5-b20c-04d7f127ea1d"
+    },
+    {
+      "claim_id": "777830b2-02f4-48be-a770-e039ab438c61",
+      "result_id": "2019d698-4040-4ade-babb-d9811e7f9a09"
+    },
+    {
+      "claim_id": "991433f4-eafd-4331-9840-44a54706d4ec",
+      "result_id": "2019d698-4040-4ade-babb-d9811e7f9a09"
+    },
+    {
+      "claim_id": "7b921927-b0be-4b69-acf1-387d543fed71",
+      "result_id": "2019d698-4040-4ade-babb-d9811e7f9a09"
+    },
+    {
+      "claim_id": "b08b98ff-44b1-4fc1-ae84-4ff2418de3bc",
+      "result_id": "af9e559c-97d1-44a7-90af-2639438bf1e9"
+    },
+    {
+      "claim_id": "3c514ce2-07b5-463c-841e-781dedcb823b",
+      "result_id": "af9e559c-97d1-44a7-90af-2639438bf1e9"
+    },
+    {
+      "claim_id": "6bf5d70e-7689-459b-abf5-851f8dd15ff1",
+      "result_id": "af9e559c-97d1-44a7-90af-2639438bf1e9"
+    },
+    {
+      "claim_id": "ef7e1eb9-bae7-4f2e-9537-a96df5a4515f",
+      "result_id": "0af5a061-5dad-47f2-a402-41338040a924"
+    },
+    {
+      "claim_id": "6bc18cda-ccfb-4bdc-90fa-c5749602da81",
+      "result_id": "0af5a061-5dad-47f2-a402-41338040a924"
+    },
+    {
+      "claim_id": "a7d5dd00-8802-4efe-bceb-31207648593d",
+      "result_id": "0af5a061-5dad-47f2-a402-41338040a924"
+    },
+    {
+      "claim_id": "1c5fdfe5-64c5-4034-833e-a634dcb1947c",
+      "result_id": "05a6577d-9751-404d-897b-68028a8ff2ac"
+    },
+    {
+      "claim_id": "a7353f7f-01f2-4401-a60d-267a677bb96f",
+      "result_id": "05a6577d-9751-404d-897b-68028a8ff2ac"
+    },
+    {
+      "claim_id": "3a8c8abd-f0a6-4f57-8f72-ce46ff61a7dc",
+      "result_id": "acfc5a08-1f67-495f-a688-9a742e39e173"
+    },
+    {
+      "claim_id": "8ba697e6-91c3-426a-a411-556efc56b3cb",
+      "result_id": "acfc5a08-1f67-495f-a688-9a742e39e173"
+    },
+    {
+      "claim_id": "510176e5-a39b-453a-8555-8fbddcd926d6",
+      "result_id": "0c7f08a9-3700-4672-ae27-42fb81cfc4bb"
+    },
+    {
+      "claim_id": "aa119b20-ab4c-4c2a-bc8b-bebc01b391fe",
+      "result_id": "0c7f08a9-3700-4672-ae27-42fb81cfc4bb"
+    },
+    {
+      "claim_id": "c3834ac2-5f11-4f84-b328-4e3476ec2531",
+      "result_id": "0c7f08a9-3700-4672-ae27-42fb81cfc4bb"
+    },
+    {
+      "claim_id": "d6e1da39-7efb-47a7-9f68-139fd8e5a066",
+      "result_id": "0c7f08a9-3700-4672-ae27-42fb81cfc4bb"
+    },
+    {
+      "claim_id": "2c81c189-add4-4acf-aac8-a0c8dd0471f1",
+      "result_id": "0c7f08a9-3700-4672-ae27-42fb81cfc4bb"
+    },
+    {
+      "claim_id": "4628b767-e3ed-40ad-84e9-8f44c5d32bba",
+      "result_id": "0c7f08a9-3700-4672-ae27-42fb81cfc4bb"
+    },
+    {
+      "claim_id": "0a94d4d6-fb7e-4cd6-9e9f-2b39ce67fd20",
+      "result_id": "2b92094b-2a2d-4d4a-a463-49b6bed6b521"
+    },
+    {
+      "claim_id": "bbc15635-22b1-4f13-988f-a5b4e4de7c38",
+      "result_id": "ce6e268d-e1bd-4139-8775-068ea98c0794"
+    },
+    {
+      "claim_id": "edc68459-8ab4-47ed-8fbe-d348896fd60c",
+      "result_id": "ce6e268d-e1bd-4139-8775-068ea98c0794"
+    },
+    {
+      "claim_id": "d2227670-1ecb-4dec-b4ee-bb15f7c595f3",
+      "result_id": "ce6e268d-e1bd-4139-8775-068ea98c0794"
+    }
+  ],
+  "comparisons": []
+}

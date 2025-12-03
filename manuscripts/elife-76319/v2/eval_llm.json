@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Small RNA sequencing of resting and activated human NK cells and their secreted EVs identified distinct miRNA profiles. Activated NK cells showed 70 upregulated and 98 downregulated miRNAs compared to resting cells, and 130 miRNAs were differentially expressed between activated NK cells and NK-EVs (96 enriched in NK-EVs, 34 in NK cells). NK-EVs were characterized by size (165-209 nm), exosomal markers (CD63, Tsg101), absence of Calnexin, and cup-shaped morphology, with activated NK cells releasing more EVs than resting cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C14 provide comprehensive characterization of NK cells and NK-EVs through multiple complementary techniques (small RNA-seq, flow cytometry, NanoSight, Western blot, electron microscopy). The data show appropriate controls, multiple donors (n=5), and consistent results across different analytical methods. Statistical analysis with adjusted p-values (Benjamini-Hochberg) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C2"
+    ],
+    "result": "Differential miRNA expression between activated NK cells and NK-EVs suggests selective miRNA sorting mechanisms. In silico pathway analysis revealed that NK-EV-enriched miRNAs target molecules involved in cellular development, cell growth, cell death, and immune signaling, particularly Th1 responses in CD4+ T cells and dendritic cells. Specific miRNAs (miR-10b-5p, miR-92a-3p, miR-155-5p) were identified as targeting Th1-related molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C2 are supported by small RNA-seq data showing differential expression (C6) and bioinformatics analyses (IPA, miRTarBase). However, the in silico target predictions (C2, C19) are computational inferences requiring experimental validation. The claim of 'specific targeting' is overstated as these are predicted, not validated, targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Post-transcriptional modifications (PtMs) analysis revealed that miRNAs show distinct PtM patterns in resting NK cells, activated NK cells, and NK-EVs. PtMs predominantly occurred at the 3'-end (positions -1, 0, +1), with mono-additions more abundant than poly-additions. Cytosine and adenine additions were most common. NK-EV-enriched miRNAs showed significantly higher proportions of PtMs compared to their levels in activated NK cells, suggesting PtM-dependent selective sorting into EVs. However, the most highly expressed NK-EV miRNAs did not show this enrichment pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C32 present comprehensive PtM analysis using Chimira software on small RNA-seq data. The statistical comparisons are appropriate (non-parametric tests), and the finding that NK-EV-enriched miRNAs have higher PtM proportions (C26) is well-supported. The observation that highly expressed miRNAs don't follow this pattern (C32) adds nuance and suggests multiple sorting mechanisms. The inference of 'active PtM-dependent mechanism' (C31) is reasonable but remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C107"
+    ],
+    "result": "Bioinformatics analysis identified over-represented short sequence motifs in NK-EV miRNAs, including the GGAG motif previously identified in T cell-derived EVs and the UGCA motif identified as a cell retention motif. These findings, combined with PtM patterns, suggest that specific miRNA packaging into NK-EVs involves multiple mechanisms including non-templated nucleotide additions and short-motif recognition by RNA-binding proteins like hnRNPA2B1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C107 are supported by MEME motif analysis showing over-represented sequences in NK-EV miRNAs. The connection to hnRNPA2B1 (C34) is based on cited literature rather than experimental validation in this study. The inference of 'putative role in intercellular communication' (C36) and multiple sorting mechanisms (C107) is reasonable given the data but remains speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C3"
+    ],
+    "result": "NK-EVs promote Th1 polarization in CD4+ T cells in non-polarizing conditions, characterized by increased IFN-\u03b3 and IL-2 production, T-BET upregulation, and GATA3 downregulation. These effects were observed by flow cytometry, ELISA, and qPCR at days 3 and 6 post-treatment. The effects were not evident in Th1-polarizing conditions. NK-EV miRNAs miR-10b-5p and miR-92a-3p were increased in treated T cells in non-polarizing conditions. No significant differences in overall T cell survival were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45, C3 are well-supported by multiple complementary assays (flow cytometry, ELISA, qPCR) with appropriate replicates (n\u22654). The temporal analysis (days 3 and 6) strengthens the findings. The observation that effects are specific to non-polarizing conditions (C40) is important and well-documented. The mechanistic link between GATA3 downregulation and T-BET de-repression (C43) is supported by cited literature. Statistical significance is appropriately assessed with paired t-tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C108"
+    ],
+    "result": "Gold nanoparticles bearing miR-10b-5p and miR-92a-3p partially recapitulated NK-EV effects on T-BET and GATA3 expression. Dynasore-mediated blockade of EV uptake abolished NK-EV effects on IFN-\u03b3 expression. SEC-isolated NK-EVs showed similar effects to ultracentrifugation-isolated NK-EVs despite ~80% material loss. EVs from HEK-293 and Raji B cell lines showed no effect on IFN-\u03b3 secretion, confirming NK-EV specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C108 provide strong evidence for the specificity and mechanism of NK-EV effects. The nanoparticle experiment (C46) demonstrates miRNA involvement, though 'partial recapitulation' suggests other EV components contribute. Dynasore blockade (C47) confirms EV uptake is required. SEC purification (C48) rules out protein aggregate contamination. Control EVs from other cell types (C49) demonstrate specificity. These controls are rigorous and well-designed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C109"
+    ],
+    "result": "NK-EVs promoted CD4+ T cell activation (increased CD25 expression and IL-2 production) in non-polarizing conditions. FOXP3 levels showed a trend toward increase (p<0.1) but IL-10 secretion was not affected and was reduced in polarizing conditions. Several regulatory molecules were downregulated including PTEN, IL6 (p<0.1), TGFB, and INPP5D, while TNFA was upregulated in non-polarizing conditions but decreased in polarizing conditions. NK-EVs did not significantly affect the Treg compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58, C109 are supported by flow cytometry, ELISA, and qPCR data with appropriate replicates (n\u22653-4). The statistical analysis is appropriate with paired t-tests. However, several findings are trends rather than significant differences (C52, C56), which the authors appropriately note. The inference that NK-EVs 'may limit suppressive Treg functions' (C54) is speculative based on reduced IL-10 in polarizing conditions. The complex regulation pattern suggests multiple mechanisms at play.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The specificity of NK-EV effects on T cell activation was confirmed through multiple control experiments: Dynasore blockade of endocytosis prevented NK-EV effects on CD25 expression, SEC-purified NK-EVs reproduced the effects despite material loss, and EVs from HEK or Raji cell lines failed to reproduce NK-EV effects. Notably, Raji-derived EVs reduced CD25 expression, indicating that NK-EV effects are not driven by EVs from any lymphocyte.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide rigorous controls demonstrating the specificity of NK-EV effects. The Dynasore experiment (C59) confirms uptake-dependence, SEC purification (C60) rules out contamination, and negative controls with other cell line EVs (C61-C62) demonstrate specificity. The observation that Raji-EVs have opposite effects (C62) is particularly informative. These experiments are well-designed with appropriate replicates (n\u22654).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C4"
+    ],
+    "result": "NK-EVs enhanced the presentation and costimulatory capacities of monocytes and monocyte-derived dendritic cells (moDCs) without affecting cell survival or apoptosis. Both cell types showed increased MHC-II and CD86 expression. Non-polarized monocytes exhibited increased DC polarization (CD11c+DC-SIGN+ cells). NK-EVs increased IFN-\u03b3 and IL-12 secretion in monocytes but not in moDCs. Several putative NK-EV miRNA targets (KLF13, FOXO1, NOTCH1, VEGFR2) showed no significant expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68, C4 are supported by flow cytometry and qPCR data with appropriate replicates (n\u22654). The finding that NK-EVs enhance DC function without affecting viability (C63) is well-documented. The differential effects on monocytes versus moDCs for cytokine production (C67) is interesting and well-supported. The lack of changes in predicted targets (C68) suggests that the in silico predictions may not reflect actual functional targets, highlighting the limitation of computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C5"
+    ],
+    "result": "In vivo footpad administration of nanoparticles carrying NK-EV miRNAs (miR-10b-5p, miR-92a-3p, miR-155-5p) in mice partially recapitulated NK-EV effects. Splenocytes from treated mice showed increased CD25 expression and Ifng mRNA levels (particularly with miR-155 and the miRNA mixture). IFN-\u03b3 secretion was confirmed by ELISA. Effects were more robust in CD8+ than CD4+ T cells. Tbx21 showed a non-significant trend toward increase. No differences were observed in Treg populations (CD4+CD25+Foxp3+ cells), Il10 levels, or IL-2 secretion. Control nanoparticles with non-NK-EV miRNAs showed no effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80, C5 demonstrate in vivo relevance of NK-EV miRNAs using appropriate controls (n\u22653 mice per condition). The nanoparticle delivery system is well-characterized. Statistical analysis uses appropriate tests (two-way ANOVA with Tukey's test). The 'partial recapitulation' (C5) is accurate as not all in vitro effects were reproduced. The negative control with non-NK-EV miRNAs (C80) is crucial for demonstrating specificity. The lack of IL-2 changes (C78) differs from in vitro results, suggesting species or delivery method differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C112"
+    ],
+    "result": "NK-EVs promote Th1 responses through both direct effects on CD4+ T cells and indirect effects via antigen-presenting cells (APCs). The direct pathway involves miRNA-mediated regulation of T cell gene expression, while the indirect pathway involves enhanced DC presentation and costimulatory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C112 represent the main conclusions synthesizing results from multiple experiments. The dual mechanism (direct and indirect) is well-supported by the T cell experiments (C37-C62) and DC experiments (C63-C68). However, this is a summary inference rather than a directly tested hypothesis. The relative contributions of direct versus indirect pathways are not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Prior literature has established that NK cell-derived exosomes mediate cytolytic effects on melanoma and neuroblastoma cells, contain cytotoxic molecules (Fas-L, perforin, DNAM1), and have beneficial effects in various disease models including lung injury, liver fibrosis, and depression. Specific NK-EV miRNAs (miR-186, miR-3607-3p) have been shown to inhibit tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 are literature citations providing context for the current work. These are appropriately cited and represent established knowledge in the field. The authors correctly attribute these findings to prior publications. This background establishes the rationale for investigating NK-EV miRNA functions in immune regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Established knowledge indicates that NK cells promote T cell differentiation, proliferation, and cytokine production through direct cell-cell interactions and indirect effects via APCs and soluble factors. EVs carry bioactive molecules including miRNAs that can be transferred between cells to modulate gene expression. Dendritic cells are critical for establishing effective T cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 represent established knowledge in immunology and EV biology, appropriately cited from the literature. These provide the conceptual framework for the study. The authors correctly describe these as known mechanisms that motivated their investigation of NK-EV functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Prior literature has established that post-transcriptional modifications (PtMs) of miRNAs, particularly 3' adenylation and uridylation, show differential patterns in cells versus exosomes and are related to miRNA turnover during lymphocyte activation. Non-templated nucleotide additions to 3' ends are the most frequent and conserved RNA PtMs, impacting miRNA stability and gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are appropriately cited literature providing the rationale for analyzing PtMs in NK cells and NK-EVs. These citations establish that PtM-dependent miRNA sorting has been observed in other cell types (B cells, T cells), supporting the hypothesis that similar mechanisms operate in NK cells. The background is accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "The authors propose that NK-EV-mediated immune deviation toward Th1 responses may be exploited in designing EV-based therapies, particularly for cancer where tumors dampen Th1 responses and current immunotherapy shows long-lasting effects in only ~15% of patients. Large-scale NK-EV isolation protocols exist that may facilitate clinical translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C104, C106 represent speculative proposals for therapeutic applications based on the study findings. While the rationale is sound given the demonstrated Th1-promoting effects of NK-EVs, these are forward-looking statements without experimental validation in disease models. The citation of large-scale isolation protocols (C103) is appropriate, but clinical feasibility, safety, and efficacy remain to be demonstrated. This represents reasonable speculation but not supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The authors acknowledge that EVs contain not only miRNAs but also lipids and proteins that may contribute to immunomodulatory effects. The presence of non-miRNA bioactive molecules in NK-EVs may account for differences between the effects of synthetic miRNAs and intact NK-EVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 represent appropriate acknowledgment of study limitations. The observation that nanoparticle-delivered miRNAs only 'partially recapitulate' NK-EV effects (C46, C5) supports this interpretation. This is a reasonable inference explaining why synthetic miRNAs don't fully reproduce NK-EV effects, though the specific contributions of other EV components are not experimentally determined.",
+    "result_type": "MINOR"
+  }
+]

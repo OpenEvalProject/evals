@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The Drosophila larval nerve cord contains 30 left-right pairs of neuroblasts per segment, each producing a unique, invariant lineage of neurons through type 1 and type 0 divisions. Neuronal temporal identity is specified by temporal transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 describe well-established features of Drosophila neuroblast biology, supported by multiple citations to prior work (Broadus et al., 1995; Schmid et al., 1999; Skeath and Doe, 1998; Truman et al., 2010; Baumgardt et al., 2014; Isshiki et al., 2001) and illustrated in Figure 1. These are foundational background claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The birth order of all EL neurons in the NB3-3A1L/R lineage was determined using ts-MARCM, revealing the sequence: A08x, A08j1, A08j3, A08j2, A08m, A08o, A08c, A08s, A08e3, A08e1, and A08e2. Cortex neurite length correlates with birth order but cannot accurately infer exact birth order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 present primary experimental findings from ts-MARCM experiments (Figure 2) and quantitative analysis (Figure 3E). The birth order determination is supported by direct experimental evidence, and the correlation analysis includes appropriate statistical measures (Pearson's r values with p<0.05). The caveat about neurite length limitations is appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Connectome analysis reveals that NB3-3A1L/R neurons receive 4944 synaptic inputs from 1179 neurons, with 61% from nerve cord interneurons and 19% from sensory neurons. Early-born ELs receive input from chordotonal sensory neurons (CHOs), while late-born ELs receive input from proprioceptive neurons but not CHOs, indicating two sharp transitions in lineage progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 present quantitative connectome data (Figure 4A-B) with clear numerical findings. The identification of sharp transitions is supported by the distinct sensory input patterns between early-born and late-born ELs. The conclusion is appropriately drawn from the data, though it relies on the accuracy of connectome annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Analysis of interneuron inputs shows that 79% of interneurons contribute only one synapse onto NB3-3A1L/R neurons. 198 left-right paired interneurons provide 1990 synapses, and their input patterns show sharp transitions correlated with temporal cohort borders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 present quantitative findings from connectome analysis (Figure 4C-D). The filtering criteria for L/R paired interneurons is clearly described in methods, and the conclusion about sharp transitions is supported by the visual data in Figure 4D showing distinct input patterns for different temporal cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Network science-based distance analysis reveals that early-born and late-born ELs have significantly similar connectivity patterns within their respective temporal cohorts but significantly different patterns from each other. Early-born ELs show left-right pair similarities, while late-born ELs do not. Temporal cohorts are not merely copies of each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 present findings from distance analysis (Figure 5) with appropriate statistical methods (z-scores, p<0.05 threshold). The analysis includes proper controls (shuffled datasets) and multiple complementary approaches (binary and nonbinary analysis). The conclusions about temporal cohort distinctiveness are well-supported by the quantitative data, though the interpretation of what drives cohort differences (C44) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Four morphological classes of neurons provide 66% of total synaptic input onto early-born ELs: Basins (6%, 21 neurons), A08 interneurons (12%, 20 neurons), Ladders (17%, 32 neurons), and CHOs (31%, 72 neurons). These neurons are more highly connected to early-born ELs than other neurons, with >80% of neurons providing 10+ synapses belonging to these classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 present quantitative connectome analysis (Figure 6) with clear numerical findings and appropriate statistical comparison (Kolmogorov-Smirnov test, p<0.0001). The morphological classification is based on established criteria from prior work (Ohyama et al., 2015; Jovanic et al., 2016; Wreden et al., 2017). The quantitative thresholds (10+ synapses) are justified in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Early-born ELs are embedded in a feed-forward circuit motif where CHOs provide direct excitatory input and indirect input via Ladders, Basins, and other early-born ELs. Calcium imaging shows that EL activity peaks upon vibration stimulus onset and then rapidly declines, indicating that at least a subset of ELs encode stimulus onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 combine connectome analysis (Figure 7A-D) with functional calcium imaging data (Figure 7E-G). The feed-forward circuit architecture is clearly demonstrated by the connectivity patterns. The calcium imaging provides functional validation, though the number of replicates (n=8) is modest and the claim is appropriately qualified as 'at least a subset of ELs.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Basins are a mid-to-late-born temporal cohort from NB3-5, born in the order Basins 2, 1, 3, 4. They are lineage-related neurons born within a tight time window, confirmed by ts-MARCM experiments and co-expression analysis. Distance analysis shows Basins have statistically significant similarities in input connectivity with sharp transitions at temporal cohort borders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C74 combine multiple experimental approaches: ts-MARCM (Figure 8), co-expression analysis (Figure 9B-D), and distance analysis (Figure 9F-H). The birth order determination is supported by direct experimental evidence. The lineage assignment is validated by three independent GAL4 lines showing co-expression. The connectivity analysis uses appropriate statistical methods (p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Ladders are a late-born temporal cohort from MNB, confirmed by co-expression analysis using three independent GAL4 lines. Distance analysis shows Ladders have statistically significant similarities in input connectivity with sharp transitions at temporal cohort borders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 combine co-expression analysis (Figure 10C-E) with distance analysis (Figure 10F). The lineage assignment is validated by three independent GAL4 lines, providing strong evidence. The connectivity analysis uses the same statistical approach as for other temporal cohorts (p<0.05). The conclusion about Ladders being a temporal cohort is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A08 interneurons that synapse with early-born ELs in A1 are early-born ELs from other segments, revealing inter-segmental connectivity. Inter- and intra-segmental connections exist between early-born ELs, Basins, and Ladders, but not late-born ELs, all of which receive CHO input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 present findings from MCFO experiments (Figure 11A-F) and connectome analysis (Figure 11G). The identification of A08 interneurons as early-born ELs from other segments is supported by morphological matching. Claims C89-C90 are more speculative, appropriately qualified as 'raises the possibility' and 'could help explain,' acknowledging the correlative nature of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Birth timing experiments using ts-MARCM show that Basins and Ladders are generated after early-born ELs. Heat shocks after 9 hr fail to label early-born ELs, while heat shocks at 10 hr label Basins and Ladders. Dual ts-MARCM experiments confirm that circuit output neurons (early-born ELs) are born before circuit input neurons (Basins and Ladders), ruling out an exclusive early-to-early hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C107 present birth timing data from ts-MARCM experiments (Figure 12). The experimental design includes appropriate controls and multiple time points. The dual ts-MARCM experiments (Figure 12F) provide strong supporting evidence with clear quantitative data (3/3 animals with early-born ELs had single-color Basins; 16/17 animals with singly labeled Basins had late-born ELs). The conclusion contradicting the early-to-early model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "NB3-5, MNB, and NB3-3 together generate 75% of interneurons highly connected to early-born ELs. Based on cell body position analysis and birth timing data, 70% of highly connected interneurons are born after early-born ELs, though there are exceptions to this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 present quantitative analysis of highly connected neurons (Figure 13). The lineage assignments are based on cell body position and neurite fasciculation patterns, which are indirect but reasonable proxies. The birth timing inference from cell body position is less direct than ts-MARCM data but is appropriately qualified. The acknowledgment of exceptions (C110) is appropriate given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Analysis of NB7-1 interneurons shows that neuron A03 upstream of A08m is born on or after the 12th division of NB7-1, which is after early-born ELs are generated. All NB7-1 interneurons that synapse onto early-born ELs are born after the early-born ELs themselves, following the same pattern as Ladder and Basin temporal cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 combine MCFO experiments (Figure 14A-B), cortex neurite length analysis (Figure 14C-D), and calculations based on known neuroblast generation times. The lineage assignment is validated experimentally. The birth timing calculation relies on published data (Doe, 1992) and reasonable assumptions about division rates. The logic is clearly presented and the conclusion is appropriately drawn, providing independent validation of the sequential birth pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C94"
+    ],
+    "result": "The study demonstrates that temporal cohorts show sharp transitions in connectivity patterns at their boundaries, and that a feed-forward circuit encoding vibration onset is assembled by preferential connectivity between temporal cohorts from different lineages. Connectivity does not follow the early-to-early, late-to-late model; instead, circuit output neurons are born before circuit input neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 and C94 represent the main conclusions of the study, synthesizing findings from multiple experimental approaches. The sharp transitions are demonstrated by distance analysis (Figures 5, 9, 10). The feed-forward circuit is characterized by connectome and calcium imaging (Figure 7). The sequential birth pattern is demonstrated by ts-MARCM experiments (Figures 12-14). The hypothesis about preferential connectivity between temporal cohorts is well-supported by the identification of Basins, Ladders, and early-born ELs from other segments as major inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background context establishes that temporal cohorts are subsets of neurons born within a tight time window with shared circuit function, and that lineage-circuit relationships have been described in various systems. The Drosophila larval nerve cord is an appropriate model system with an available connectome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C15-C22 provide background context supported by appropriate citations to prior work. These are well-established facts in the field that provide justification for the study's approach and model system selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "NB3-3 first undergoes a type 1 division to generate a GMC that produces two neurons of unknown function, then switches to type 0 divisions to generate EL interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 describe the NB3-3 lineage progression, supported by citations to prior work (Baumgardt et al., 2014; Schmid et al., 1999) and illustrated in Figure 1B. This provides essential background for understanding the lineage structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "Summary findings confirm that Basins are a mid-to-late-born temporal cohort from NB3-5, Ladders are a late-born temporal cohort from MNB, and A08 interneurons are early-born ELs from segments other than A1. Temporal cohorts that synapse onto early-born ELs come from only 3 of 30 neuroblasts in the nerve cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 summarize major findings that are well-supported by the experimental data presented in Figures 8-11. The observation that only 3 of 30 neuroblasts contribute temporal cohorts to this circuit (C95) is an important finding that constrains models of circuit assembly.",
+    "result_type": "MAJOR"
+  }
+]

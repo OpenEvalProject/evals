@@ -1,0 +1,1971 @@
+{
+  "submission": {
+    "id": "808ff735-cb46-451f-8bd8-35857154f60d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:50:49.728117Z",
+    "updated_at": "2025-12-03T12:50:49.728117Z"
+  },
+  "content": [
+    {
+      "id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "submission_id": "808ff735-cb46-451f-8bd8-35857154f60d",
+      "content_type": "manuscript",
+      "content_text": "# A LAMP sequencing approach for high-throughput co-detection of SARS-CoV-2 and influenza virus in human saliva\n\n## Authors\n\n- Robert Warneford-Thomson<sup>1</sup> ([ORCID: 0000-0002-4521-0568](https://orcid.org/0000-0002-4521-0568))\n- Parisha P Shah<sup>2</sup> ([ORCID: 0000-0002-7756-6868](https://orcid.org/0000-0002-7756-6868))\n- Patrick Lundgren<sup>5</sup> ([ORCID: 0000-0003-1014-8941](https://orcid.org/0000-0003-1014-8941))\n- Jonathan Lerner<sup>3</sup>\n- Jason Morgan<sup>6</sup>\n- Antonio Davila<sup>6</sup>\n- Benjamin S Abella<sup>6</sup>\n- Kenneth Zaret<sup>2</sup>\n- Jonathan Schug<sup>8</sup>\n- Rajan Jain<sup>2</sup> ([ORCID: 0000-0002-1979-044X](https://orcid.org/0000-0002-1979-044X))\n- Christoph A Thaiss<sup>5</sup>\n- Roberto Bonasio<sup>2</sup> ([ORCID: 0000-0002-0767-0889](https://orcid.org/0000-0002-0767-0889)) \u2020\n\n### Affiliations\n\n1. Graduate Group in Biochemistry and Biophysics, University of Pennsylvania Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n2. Epigenetics Institute, University of Pennsylvania Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n3. Department of Cell and Developmental Biology, University of Pennsylvania Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n4. Department of Medicine, University of Pennsylvania Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n5. Department of Microbiology, University of Pennsylvania Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n6. Department of Emergency Medicine and Penn Acute Research Collaboration, University of Pennsylvania Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n7. University of Pennsylvania School of Nursing Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n8. Next-Generation Sequencing Core, Department of Genetics, University of Pennsylvania Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe COVID-19 pandemic has created an urgent need for rapid, effective, and low-cost SARS-CoV-2 diagnostic testing. Here, we describe COV-ID, an approach that combines RT-LAMP with deep sequencing to detect SARS-CoV-2 in unprocessed human saliva with a low limit of detection (5\u201310 virions). Based on a multi-dimensional barcoding strategy, COV-ID can be used to test thousands of samples overnight in a single sequencing run with limited labor and laboratory equipment. The sequencing-based readout allows COV-ID to detect multiple amplicons simultaneously, including key controls such as host transcripts and artificial spike-ins, as well as multiple pathogens. Here, we demonstrate this flexibility by simultaneous detection of 4 amplicons in contrived saliva samples: SARS-CoV-2, influenza A, human STATHERIN, and an artificial SARS calibration standard. The approach was validated on clinical saliva samples, where it showed excellent agreement with RT-qPCR. COV-ID can also be performed directly on saliva absorbed on filter paper, simplifying collection logistics and sample handling.\n\n## Introduction\n\nIn two years, the COVID-19 pandemic has swept across the world, leading to more than 490 million infections and over 6.1 million deaths worldwide (as of April 2022). In many countries, non-pharmaceutical interventions, such as school closures and national lockdowns, have proven to be effective, but could not be sustained due to economic and social impact (Haug et al., 2020; Tian et al., 2020). Regularly performed population-level diagnostic testing is an attractive solution (Taipale et al., 2020), particularly as asymptomatic individuals are implicated in rapid disease transmission, with a strong overdispersion in secondary transmission (Endo et al., 2020). Sustained population-level testing can be successful in isolating asymptomatic individuals and decreasing transmission (Holt, 2020; Larremore et al., 2020); however, considerable barriers exist to the adoption of such massive testing strategies. Two such barriers are cost and supply constraints for commercial testing reagents, both of which make it impractical to test large numbers of asymptomatic individuals on a recurrent basis. A third major barrier is the lack of \u2018user-friendly\u2019 protocols that can be rapidly adopted by public and private organizations to establish high-throughput surveillance screening. In addition, while COVID-19 testing of symptomatic individuals might be effective during the summer season, when other respiratory infections are rare, new strategies are needed to facilitate rapid differential diagnosis between SARS-CoV-2 and other respiratory viruses in winter. Although the wide availability of self-administered lateral flow tests has greatly facilitated the identification and isolation of active infections, these tests lack the sensitivity of nucleic acid detection (Br\u00fcmmer et al., 2021).\n\nRecent adaptations of reverse transcription and polymerase chain reaction (RT-PCR) to amplify viral sequence and perform next-generation DNA sequencing have opened promising new avenues for massively parallel SARS-CoV-2 detection. In general, sequencing-based protocols use libraries of amplification primers to tag reads originating from each individual patient sample with a unique index that can be identified and deconvoluted after sequencing, thus allowing pooling of tens of thousands of samples in a single assay. Several methods, including SARSeq, SPAR-Seq, Swab-seq, COVseq, and INSIGHT directly amplify the viral RNA by RT-PCR and simultaneously introduce barcodes (Simonetti et al., 2021; Bloom et al., 2021; Yelagandula et al., 2021; Aynaud et al., 2021; Wu et al., 2021; de Mello Malta et al., 2021). While effective, these methods rely on individual PCR amplification of each patient sample, thus requiring a large number of thermal cyclers for massive scale-up. An alternative approach, ApharSeq, addresses this bottleneck by annealing barcoded RT primers to viral RNA and pooling samples prior to amplification, but the need for specialized oligo-dT magnetic beads might constitute a separate adoption barrier for this method (Chappleboim et al., 2021). Finally, methods have been designed to take advantage of the extreme sensitivity and isothermal conditions of loop-mediated isothermal amplification (LAMP) (Peto et al., 2021; Dao Thi et al., 2020; Ludwig et al., 2021), but they require additional manipulation to introduce barcodes (Peto et al., 2021; Dao Thi et al., 2020) or do not allow for convenient multiplexing (Ludwig et al., 2021).\n\nIn this study, we present COV-ID, a method for SARS-CoV-2 identification based on reverse transcription loop-mediated isothermal amplification (RT-LAMP), which enables large-scale diagnostic testing at low cost and with minimal on-site equipment. COV-ID is a robust method that can be used to test tens of thousands of samples for multiple pathogens with modest reagent costs and 2\u20134 laboratory personnel, generating results within 24 hr. COV-ID uses unpurified saliva or saliva absorbed on filter paper as input material, thus enabling the massively parallel, inexpensive testing required for population-level surveillance of the COVID-19 pandemic (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69949/elife-69949-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overview of COV-ID. Saliva is collected and inactivated prior to RT-LAMP performed with up to 96 individual sample barcoded primers. LAMP reactions are pooled and further amplified via PCR to introduce Illumina adapter sequences and pool-level dual indexes. A single thermal cycler can amplify 96 or 384 such pools and the resulting \u2018super-pool\u2019 can be sequenced overnight to detect multiple amplicons from 9,216 or 36,864 individual patient samples (number of reads in parenthesis assume an output of ~450 M reads from a NextSeq 500). (B) Schematic of the RT-LAMP (step I) of COV-ID. Selected numbered intermediates of RT-LAMP reaction are shown to illustrate how the LAMP barcode, shown in yellow, and the P5 and P7 homology sequences (blue and pink, respectively) are introduced in the final LAMP product. Upon generating the dumbbell intermediate, the reaction proceeds through rapid primed and self-primed extensions to form a mixture of various DNA amplicons containing sequences for PCR amplification. A more detailed version of the LAMP phase of COV-ID, including specific sequences, is illustrated in Figure 1\u2014figure supplement 1. (C) Conventional RT-LAMP primers (solid lines) or primers modified for COV-ID (dotted lines) were used for RT-LAMP of SARS-CoV-2 in saliva. The numbers of inactivated SARS-CoV-2 virions per \u00b5L is indicated in the color legend. Each line represents an independent biological replicate. Fluorescence is shown in arbitrary units. (D) Schematic of the PCR (step II) of COV-ID. Following RT-LAMP, up to 96 reactions are pooled and purified and Illumina libraries are generated directly by PCR with dual-indexed P5 and P7 adapters in preparation for sequencing. (E) COV-ID primers targeting ACTB mRNA were used for RT-LAMP from HeLa total RNA. LAMP was diluted 1:100, amplified via PCR and resolved on 2% agarose gel.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69949/elife-69949-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The steps of the COV-ID protocol are depicted, showing reverse transcription loop-mediated isothermal amplification (RT-LAMP) mechanism and the final barcoded amplicon that is sequenced. For clarity only, selected steps of RT-LAMP reaction are shown and loop primer intermediates are not depicted. For full LAMP mechanism see Nagamine et al., 2002.\n\n## Results\n\n### Two-step amplification and indexing of viral and human sequences via RT-LAMP and PCR\n\nThe molecular basis for COV-ID is RT-LAMP, an alternative to PCR that has been used extensively for viral DNA or RNA detection in clinical samples (Li et al., 2011; Shirato et al., 2014; Calvert et al., 2017; Enomoto et al., 2005), including SARS-CoV-2 (Augustine et al., 2020; United States Food and Drug Administration, 2020). RT-LAMP requires 4\u20136 primers that recognize different regions of the target sequence (Nagamine et al., 2002; Notomi et al., 2000) and proceeds through a set of primed and self-primed steps to yield many inverted copies of the target sequence spanning a range of molecular sizes (Figure 1\u2014figure supplement 1). The forward inner primer (FIP) and backward inner primer (BIP), which recognize internal sequences, are incorporated in opposite orientation across the target sequence in the final amplified product (Figure 1\u2014figure supplement 1).\n\nPrevious studies have shown that the FIP and BIP tolerate insertions of exogenous sequences between their different target homology regions (Yamagishi et al., 2017). We exploited this flexibility and introduced (1) patient-specific barcodes as shown previously (Peto et al., 2021; Ludwig et al., 2021; Yamagishi et al., 2017) and (2) artificial sequences that allowed for PCR amplification of a small product compatible with Illumina sequencing library construction (Figure 1, Figure 1\u2014figure supplement 1). This innovation allows us to pool individually barcoded RT-LAMP reactions and amplify them in batch via PCR, while introducing unique P5 and P7 dual indexes in different pools, thus enabling two-dimensional barcoding and dramatically increasing method throughput (see Supplementary file 1a for PCR primer sequences). To minimize pool variability, PCR primers can be titrated to 100 nM and pooled PCRs carried out to completion, resulting in each pool being amplified to the same approximate concentration. Uniquely amplified and barcoded pools are mixed into a single \u2018super-pool\u2019 that can be sequenced on an Illumina NextSeq or similar instrument (Figure 1A). Combining individual barcodes embedded in the product at the RT-LAMP step with dual indexes introduced at the pool level during the PCR step allows for deconvolution of thousands or tens of thousands of samples in a single sequencing run.\n\nTo determine whether introduction of these exogenous sequences into the primers inhibited the isothermal amplification step, we performed RT-LAMP on inactivated SARS-CoV-2 virus using an extensively validated primer set against the N2 region of the nucleocapsid protein (Butler et al., 2021) including either the conventional BIP and FIP primers or their modified version re-engineered for the COV-ID workflow (Figure 1B). Although the appearance of the amplified viral product was slightly delayed when using COV-ID primers, all reactions reached saturation rapidly and without detectable amplification of negative controls (Figure 1C). Next, we tested whether COV-ID was compatible with RT-LAMP using newly designed primers against a host (human) transcript and whether the second step of COV-ID, direct library construction and indexing via PCR amplification (Figure 1D), yielded the desired product. For this, we designed RT-LAMP primers against the human beta-actin (ACTB) transcript that included sequences necessary for COV-ID. After RT-LAMP, reactions were diluted 100-fold before PCR with barcoded Illumina adapters. A PCR product of the expected size was visible in reactions containing total HeLa RNA, whereas no PCR product was observed in the absence of template (Figure 1E). Sanger sequencing of the PCR product confirmed that RT-LAMP followed by PCR generated the product expected by the COV-ID method design, including the sample barcode introduced during the RT-LAMP step.\n\nThus, our data show that RT-LAMP is tolerant of sequence insertions in the BIP and FIP primers that allow introduction of LAMP-level barcodes as well as sequences homologous to Illumina adapters for direct amplification, indexing, and library construction via PCR.\n\n### Sequencing-based detection of SARS-CoV-2 RNA from saliva using COV-ID\n\nWe next evaluated the utility of COV-ID to detect viral RNA in saliva. Saliva is an attractive sample material for COVID-19 diagnostics with potential for early detection (Savela, 2021), and has been shown to be a viable template for nucleic acid amplification via RT-PCR (Ranoa et al., 2020), recombinase polymerase amplification (RPA) (Myhrvold et al., 2018), as well as RT-LAMP (Lalli et al., 2021; Rabe and Cepko, 2020). We prepared human saliva for RT-LAMP using a previously described treatment that inactivates SARS-CoV-2 virions, saliva-borne RNases and LAMP inhibitors (Figure 2A; Rabe and Cepko, 2020). We performed RT-LAMP followed by PCR on inactivated saliva spiked with water or 1000 total copies of inactivated SARS-CoV-2 virus. We observed a single band of the expected size in reactions performed on saliva spiked with virus but not in control reactions (Figure 2B). The sequence of the amplified and barcoded viral product was confirmed by Sanger sequencing (Figure 2\u2014figure supplement 1A). Next, we subjected the libraries to deep sequencing. Reads aligned uniformly to the N gene, the region targeted by the N2 primer set, in COV-ID libraries constructed from viral samples but not in control libraries (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69949/elife-69949-fig2-v1.jpg)\n\n**Figure 2.:** (A) Saliva preparation. Crude saliva was inactivated via TCEP/EDTA addition and 95 \u00b0C incubation prior to RT-LAMP. (B) RT-LAMP followed by COV-ID PCR performed directly on saliva. Saliva with and without addition of 1,000 copies of inactivated SARS-CoV-2 templates was inactivated as described in (A), then used as template. (C) Alignment of sequenced reads against SARS-CoV-2 genome from COV-ID of inactivated saliva spiked with or without 1,280 virions SARS-CoV-2 per \u00b5L. All SARS-CoV-2 reads align exclusively to expected region of the N gene. Open reading frames of viral genome are depicted via gray boxes below alignment. Inset: scale shows reads per 1,000. Height of peak is provided on the right. (D) Scatter plot for the ratio of SARS-CoV-2 / (STATH +1) reads obtained by COV-ID (y axis) versus the number of virions per \u00b5L spiked in human saliva (x axis). The threshold was set above the highest values scored in a negative control (dashed line). Each circle represents an independent biological replicate. (E) COV-ID performed on clinical saliva samples. The scatter plot shows the SARS-CoV-2 / (STATH +1) read ratio (y axis) versus the viral load in the sample estimated by a clinically approved, qPCR-based diagnostic test. The threshold was set based on the negative controls shown in (D). Each circle represents an independent biological replicate.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69949/elife-69949-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Saliva COV-ID sequence validation. Single saliva COV-ID reaction using N2 primers was sequenced by the Sanger method. (B) Validation of control human amplicons for reverse transcription loop-mediated isothermal amplification (RT-LAMP) on saliva. RT-LAMP of TCEP/EDTAinactivated saliva was performed with conventional RT-LAMP primer sets for ACTB and STATH in the presence or absence of RNase A. Bars show the mean. Individual biological replicates are shown by circles. (C) Characterization of COV-ID sequencing libraries. Breakdown of reads for sequence data presented in Figure 2D. Samples without added template consist of predominantly adapter dimers. (D) Validation of COV-ID LAMP barcodes. 32 potential barcodes were tested for LAMP primer sets indicated, incompatible barcodes are marked in red. (E) Validation of pooled PCR. COV-ID was performed on saliva samples using unique LAMP barcodes. The RT-LAMP reactions were then amplified either by individual PCR or by first pooling and then performing a single PCR on the pool. Individual biological replicates are shown by circles. Lines indicate the median and interquartile range.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69949/elife-69949-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) A synthetic calibration standard for SARS-CoV-2 N2 RNA was synthesized including a 7 nt divergent sequence (in red), maintaining all other LAMP primer binding sites and identical GC content. (B) RT-LAMP using COV-ID N2 primers was carried out on indicated amounts of synthetic calibration standard (SCS) RNA, showing rapid amplification down to picogram quantities of added template. (C) Total number of reads per barcode in COV-ID pool obtained by including (+) or omitting (\u2212) the N2 synthetic calibration standard. (D) Spurious COV-ID signal for the N2 amplicon in negative control samples after normalization either to the STATH control (in absence of the synthetic calibration standard) or to the SCS. Bars indicate the mean + standard deviation.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69949/elife-69949-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) COV-ID on RNA from 120 patient-derived NP swabs. COV-ID for SARS-CoV-2 and ACTB was performed using 10 unique LAMP barcodes. Pools of 10 reactions were PCR amplified and sequenced to a minimum depth of 1,000 reads. Scatterplot shows SARS/(SCS +1) ratio against mean N1/N2 Ct value from RT-qPCR assays. Red circles represent samples with Ct <31. Blue circles represent samples with Ct between 31 and 36. (B) SARS/(SCS +1) ratios for samples presented in (A) are shown grouped by their respective PCR pools. Circles are colored as in (A). The dashed line represents the threshold for samples scored as positive, corresponding to 10 times the highest signal observed in negative controls. (C) Receiver operator characteristic (ROC) plots for the results shown in (A). Sensitivity and specificity of COV-ID are shown by comparing diagnostic prediction of COV-ID against SARS-CoV-2 RT-qPCR. True positives were defined as those with average N1+/N2 qPCR Ct values less than either 40 (left panels), 36 (middle), or 31 (right). Diagonal black lines represent performance of a random classifier. (D) Precision-recall curves constructed with the same data and thresholds as in (C). Gray lines represent a baseline classifier where all tests return a positive result.\n\nIn several SARS-CoV-2 FDA approved tests, parallel amplification of a host (human) amplicon is implemented as a metric for sample integrity and quality. That is, if no human RNA is amplified from a clinical sample, no conclusion can be drawn from a negative test result (Babiker et al., 2020). However, in most tests, viral and human amplicons must be detected separately, resulting in a multiplication of the number of reactions to be performed. We reasoned that the deep sequencing nature of COV-ID would allow for simultaneous detection of viral, human, and other control amplicons, without increasing the number of necessary reactions. In fact, given that the PCR handles inserted in the BIP and FIP are the same for all RT-LAMP amplicons (Figure 1B), the same P5 and P7 Illumina primers allow the simultaneous amplification of all RT-LAMP products obtained with COV-ID-modified primer sets (Figure 1D). To identify a suitable human control, we compared conventional RT-LAMP primers for the mRNA of ACTB (Butler et al., 2021) or STATHERIN (STATH), a gene expressed specifically in saliva (Satoh et al., 2018). To determine which of the two RT-LAMP primer sets was a better proxy to measure RNA integrity in saliva samples, we assayed for amplification of the respective products in presence or absence of RNase. Whereas addition of RNase A abolished the STATH signal, it was ineffectual for ACTB (Figure 2\u2014figure supplement 1B), suggesting that amplification of genomic DNA made considerable contributions to the RT-LAMP signal observed for the latter. Therefore, we utilized STATH mRNA as a human control in subsequent experiments.\n\nWe used COV-ID-adapted primer sets for N2 and STATH (Supplementary file 1a) in multiplex on inactivated saliva spiked with a range of SARS-CoV-2 from 5 to 10,000 virions/\u03bcL. Subsequently, each RT-LAMP reaction was separately amplified via PCR using a unique P5 and P7 index combination, pooled, quantified, and deep-sequenced to an average depth of 6,000 reads per sample. After read trimming, alignment, and filtering (see Materials and Methods), 76% of reads from saliva COV-ID reactions were informative (Figure 2\u2014figure supplement 1C). In order to differentiate SARS-CoV-2 positive and negative samples, we calculated the ratio between N2 reads and reads mapping to the human STATH control. Using the highest N2/STATH read ratio in control (SARS-CoV-2 negative saliva) as a threshold, 95% (19/20) of samples with spiked-in virus were correctly classified as positives (Figure 2D). Using COV-ID, we consistently detected SARS-CoV-2 in saliva samples containing as low as 5 virions per \u00b5L, a limit of detection comparable and in some cases superior to those of established testing protocols (MacKay et al., 2020).\n\nScaling COV-ID to handle higher sample numbers requires pooling samples immediately following RT-LAMP, prior to the PCR step (Figure 1A). We designed 32 unique 5-nucleotide barcodes for several target LAMP amplicons (Figure 2\u2014figure supplement 1D and Supplementary file 1b). We first individually validated each barcode and primer combination by real-time fluorescence and PCR efficiency. Certain barcodes inhibited the RT-LAMP reaction, possibly due to internal micro-homology and primer self-hybridization (Torres et al., 2011). Nonetheless, out of 32 barcodes tested in 3 separate RT-LAMP reactions (N2, ACTB, and STATH), 25 successfully amplified all three target RNAs (Figure 2\u2014figure supplement 1D). Saliva samples spiked with various concentrations of inactivated SARS-CoV-2 were amplified via barcoded RT-LAMP, then optionally pooled prior to PCR and sequencing (Figure 2\u2014figure supplement 1E). SARS-CoV-2/STATH ratios demonstrated no loss of sensitivity or specificity in the pooled samples compared to the individual PCRs.\n\nTo test the potential of COV-ID on patient samples, we tested saliva specimens collected and previously analyzed at the Hospital of the University of Pennsylvania (see Materials and Methods). We carried out multiplex barcoded RT-LAMPs on each sample (COV-ID step I, Figure 1B), pooled the reactions and then constructed libraries via PCR (COV-ID step II, Figure 1D). After deep sequencing, analysis of N2/STATH ratios showed 100% (8/8) concordance with viral copy numbers generated by a standard clinical test (RNA purification followed by RT-qPCR) (Figure 2E), demonstrating the effectiveness of the COV-ID approach.\n\n### Calibration of COV-ID using an internal standard\n\nExisting deep sequencing approaches for massively parallel COVID-19 testing based on RT-PCR incorporate artificial spike-ins, which serve as an internal calibration controls and allow for better estimates of viral loads by end-point PCR (Bloom et al., 2021; Yelagandula et al., 2021). At the same time, adding to the reactions an artificial substrate for amplification helps minimizing spurious signals as it can \u2018scavenge\u2019 viral amplification primers in negative samples. Finally, by providing a baseline amplification even in empty samples, a strategy designed to use an internal calibration control can reduce variance in total amounts of final amplified products across samples, which compresses the dynamic-range of sequence coverage for each patient in a complex pool and, therefore, reduces the risk of inconclusive samples due to low sequencing coverage (Yelagandula et al., 2021).\n\nWe reasoned that an internal calibration control approach for LAMP-based quantification would provide similar benefits in the context of COV-ID. To generate a SARS-CoV-2 synthetic calibration standard, we synthesized a fragment of the N2 RNA that retained all primer-binding regions for RT-LAMP and contained a divergent 7-nt stretch of sequence to distinguish reads originating from the calibration standard from those originating from the natural virus (Figure 2\u2014figure supplement 2A). After confirming that the calibration control template was efficiently amplified via RT-LAMP with the N2 primer set (Figure 2\u2014figure supplement 2B), we performed pooled COV-ID on virus-containing saliva in the presence of 20 fg of N2 synthetic calibration control RNA. As expected (Yelagandula et al., 2021), addition of a constant amount of an internal calibration control across reactions reduced the variability in total read numbers for individual samples in the final pool (Figure 2\u2014figure supplement 2C). As discussed above, a narrower range in sequencing output across samples in a pool optimizes the utilization of sequencing reads, and ultimately lowers the cost per sample. Including the internal calibration control in the normalization strategy resulted in lower levels of false positive signal from negative samples (Figure 2\u2014figure supplement 2D). This is likely because in cases where very few STATH reads were obtained, possibly due to degradation of host RNA in the saliva sample, the resulting small denominator inflated the N2/STATH ratio even for SARS-CoV-2 signal that was low in absolute terms and likely spurious.\n\nThus, these data show that synthetic standards are compatible with the COV-ID workflow and provide a means to stabilize total amplification and read allocation per sample, while also offering an additional calibration control to better estimate the viral load in samples where the endogenous STATH mRNA might be below detection due to improper collection or handling.\n\n### Validation of COV-ID on clinical nasopharyngeal swab samples\n\nTo evaluate the scalability of COV-ID, we analyzed 120 clinical RNA specimens purified from NP swab samples collected from patients at the Hospital of the University of Pennsylvania. Each barcoded RT-LAMP reaction (COV-ID step I) was grouped in pools of 10 samples per PCR amplification (COV-ID step II), allowing us to estimate the feasibility of the two-dimensional barcoding strategy. Again, COV-ID was in good agreement with quantification of viral RNA via a clinical RT-qPCR assay (Figure 2\u2014figure supplement 3A) and was able to distinguish positive from negative patient samples in the same RT-LAMP pool (Figure 2\u2014figure supplement 3B). COV-ID showed inferior sensitivity compared to individual RT-qPCRs, failing to detect 10 samples that displayed signal by qPCR. However, 7 of these 10 \u2018false negatives\u2019 had very high Ct values (higher than 36 cycles), which are unreliable and poorly reproducible, even when using state-of-the-art TaqMan qPCR (Yelagandula et al., 2021), and could not be classified properly by another sequencing-based high-throughput method (Yelagandula et al., 2021).\n\nOverall, on these 120 clinical samples, COV-ID demonstrated good specificity and sensitivity, as shown by receiver operator characteristic and precision-recall curves, especially when only samples with Ct values < 36 or < 31 were considered \u2018true positives\u2019 (Figure 2\u2014figure supplement 3C, D; middle and right panels, respectively).\n\nTaken together, our data show that COV-ID can be utilized to detect viral and human amplicons in multiplex from contrived and clinical samples.\n\n### Simultaneous detection of SARS-CoV-2 and influenza A by COV-ID\n\nGiven the challenge of distinguishing early symptoms of COVID-19 from other respiratory infections, we evaluated COV-ID for the simultaneous detection of more than one viral pathogen. Multiple distinct products can be simultaneously amplified by RT-LAMP in the same tube by providing the appropriate primer sets in multiplex, as we demonstrated above by co-amplifying N2 and STATH in the same COV-ID reaction (see Figure 2). In fact, simultaneous detection of SARS-CoV-2 and influenza virus by RT-LAMP was previously achieved, albeit in a fluorescent-based, low-throughput assay (Zhang and Tanner, 2021). We reasoned that the sequencing-based readout of COV-ID would allow extending this approach to the simultaneous detection of multiple pathogens as well as endogenous (host mRNA) and synthetic calibration standards, all in a single reaction.\n\nTo test the ability of COV-ID to simultaneously detect multiple viral templates, we selected and validated a generic \u2018flu\u2019 RT-LAMP primer set that recognizes several strains, including influenza A virus (IAV) and influenza B (MacKay et al., 2020; Takayama et al., 2019), and modified the BIP and FIP sequence to introduce the COV-ID barcodes and handles for PCR (Figure 2\u2014figure supplement 1D and Supplementary file 1a). We added inactivated SARS-CoV-2 virus (BEI resources) and IAV strain H1N1 RNA (Twist Biosciences) to saliva according to a 3 \u00d7 4 matrix of (104, 103, or 0 copies per \u00b5L) SARS-CoV-2 RNA against H1N1 RNA (105, 104, 103, or 0 copies per \u00b5L) (Figure 3A), as well as the N2 synthetic calibration standard. We performed multiplex COV-ID on these samples using primers sets for STATH, N2 (to detect SARS-CoV-2), and IAV (to detect H1N1) and sequenced to an average depth of 21,000 reads per sample. Both H1N1 and SARS-CoV-2 were detected above background and the signal correlated with the amount of the respective template added to saliva (Figure 3B, C). Overall, multiplex COV-ID correctly identified samples that contained only SARS-CoV-2 (7/8) or H1N1 (6/8). For samples that contained both pathogens we observed reduced sensitivity (11/16 identification of both pathogens), which was also observed in a previous multiplexing attempt (MacKay et al., 2020). However, in practice individuals who are simultaneously infected with both viruses presumably would be rare, and for these cases the ability to detect at least one virus successfully would allow to follow up with further diagnostic testing. We found that of the samples containing both viruses, 16/16 showed positive detection of at least one pathogen (SARS-CoV-2 or H1N1), suggesting the reduced sensitivity of the multiplex assay is due to interference between amplification of the two viral templates. This also demonstrates that COV-ID can be used as an effective screening approach for multiple viral templates.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69949/elife-69949-fig3-v1.jpg)\n\n**Figure 3.:** (A) TCEP/EDTA treated saliva was spiked with indicated amounts of BEI heat-inactivated SARS-CoV-2 or H1N1 influenza A RNA to the indicated concentration of virions/genomes per \u00b5L. One microliter of saliva was used for COV-ID reactions. (B) COV-ID was performed in two independent experiments on saliva samples from the matrix shown in (A) in the presence of 20 femtograms N2 synthetic calibration standard (SCS) using N2, influenza (MacKay et al., 2020) and STATH COV-ID primers. N2/(SCS +1) and influenza/(STATH +1) read ratios are displayed with bars showing median \u00b1 interquartile range. Circles represent individual biological replicates. Samples were considered positive for a given sequence if the associated read ratio was greater than 2x the maximum value in the control saliva samples. (C) Heatmaps of SARS-CoV-2 (left) or H1N1 (right) COV-ID signal in multiplex reaction. Individual data points are from (B). The heatmap color represents the mean of the percentage of viral reads in each sample.\n\n### Paper-based saliva sampling for COV-ID\n\nAs an additional step toward increasing the throughput of the COV-ID approach, we explored avenues to simplify collection, lower costs, and expedite processing time. Absorbent paper is an attractive alternative to sample vials for collection, given its low cost, wide availability, and smaller environmental footprint. In fact, paper has been used as a means to isolate nucleic acid from biological samples for direct RT-PCR testing (Glushakova et al., 2017) as well as RT-LAMP (Kellner et al., 2020; Yaren et al., 2021).\n\nWe sought to determine whether the COV-ID workflow would be compatible with saliva collection on absorbent paper. First, we immersed a small square of Whatman filter paper into water containing various dilutions of inactivated SARS-CoV-2. After 2 min, the paper was removed and transferred to PCR strip tubes followed by heating at 95\u00b0C for 5 min to air-dry the sample (Figure 4A). Next, we added the RT-LAMP mix containing the N2 COV-ID primer set directly to the tubes containing the paper squares and let the reaction proceed in the usual conditions. COV-ID PCR products of the correct size were evident in all samples containing viral RNA, with sensitivity of at least 100 virions/\u03bcL (Figure 4B) and in none of the controls, demonstrating that the presence of paper does not interfere with the RT-LAMP reaction and subsequent PCR amplification with Illumina adapters.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69949/elife-69949-fig4-v1.jpg)\n\n**Figure 4.:** (A) Scheme for COV-ID on viral RNA absorbed on paper. (B) PCR reactions from paper samples immersed in water with indicated viral concentrations then amplified with N2 COV-ID primers. (C) Scheme for COV-ID on saliva spiked with viral and RNA and absorbed on paper. (D) Same as (B) but on saliva absorbed on paper. (E) SARS-CoV-2 virus was added to saliva and prepared as in (C).Reverse transcription loop-mediated isothermal amplification (RT-LAMP) and sequencing was carried out in presence of calibration standard RNA. Viral reads are presented as ratio against the sum of STATH and N2 synthetic calibration standard (SCS) reads. Positive threshold was set as 2x maximum value in negative saliva and indicated by dashed horizontal line. (F\u2013G) Paper-based COV-ID workflow (F) and cost calculations (G). Saliva is collected orally on a precut strip of paper, from which a 2 mm square would be cut out and added to a reaction vessel containing TCEP/EDTA inactivation buffer and processed as shown in (C).\n\nTo assay direct COV-ID detection from saliva on paper, we saturated Whatman filter paper squares with saliva containing different amounts of inactivated SARS-CoV-2 virus, which, we reasoned, would be equivalent to a patient collecting their own saliva by chewing on a small piece of absorbent paper. Next, we placed the paper squares into reaction tubes containing TCEP/EDTA inactivation buffer (see Materials and Methods) similar to that used for the in-solution samples used in our previous experiments (see Figure 1A). We dried the paper at 95\u00b0C and performed RT-LAMP followed by PCR (Figure 4C), which resulted in the appearance of COV-ID products of the correct size starting from saliva spiked with as few as 50 virions/\u03bcL (Figure 4D). We then performed COV-ID sequencing on saliva collected on paper using primers N2 and STATH in the presence of the N2 synthetic calibration standard RNA. The sequence data showed more variability and limited coverage of the control amplicons compared to in-solution COV-ID, likely due to the more challenging reaction conditions; therefore, we normalized viral reads using both STATH reads and synthetic calibration standard reads. This paper-based COV-ID proof-of-principle experiment detected the presence of viral RNA in samples with as little as 320 copies/\u00b5L (Figure 4E), a higher limit of detection compared to that of in-solution COV-ID, but still well within the useful range (Winnett et al., 2020) to detect infections.\n\nTaken together, these data show that the RT-LAMP step of COV-ID is compatible with the presence of paper in the reaction tube and suggest that self-collection of saliva by patients directly on absorbent paper could provide a simple and cost-effective strategy to test thousands of saliva samples for multiple pathogens (Figure 4F).\n\n## Discussion\n\nTesting strategies are vital to an effective public health response to the COVID-19 pandemic, particularly with the spread of the disease by asymptomatic individuals. An ongoing challenge to COVID-19 testing is the need for massive testing strategies for population-level surveillance that are needed for efficient contact tracing and isolation. Many FDA-approved clinical SARS-CoV-2 diagnostic tests are based on time-consuming and expensive protocols that include RNA purifications and RT-PCR and must be performed by trained personnel in well-equipped laboratories (MacKay et al., 2020; Woronik et al., 2021). Point-of-care antigen tests provide a much faster turnaround time and require little manipulation, but they lack in sensitivity compared to tests that detect viral RNA (Br\u00fcmmer et al., 2021). Because of reagent limitations and diagnostic testing bottlenecks, at the beginning of the pandemic symptomatic individuals and individuals particularly vulnerable for infection after exposure were prioritized for diagnostic COVID testing (Schuetz et al., 2020). Private organizations, including colleges and universities, circumvented some of these challenges by contracting with private laboratories to establish asymptomatic surveillance testing protocols; however, this is a costly option for population-level surveilling of asymptomatic SARS-CoV-2 infections.\n\nSeveral effective COVID-19 vaccines have been developed and there is a concerted ongoing global vaccination effort, providing a concrete means to end the pandemic. Despite this progress, there are several potential risks that require vigilance: possible COVID-19 transmission in vaccinated individuals, emergence of vaccine-resistant viral variants, and public skepticism of vaccines or faltering compliance with social distancing guidelines (Aschwanden, 2021). For these reasons ongoing testing and surveillance efforts will remain important for the foreseeable future, both to monitor the progress of vaccination in reducing symptomatic cases and to detect emerging variants.\n\nIn order to scale testing to an effective volume and frequency, surveillance tests must demonstrate the following qualities: (1) sensitivity, to identify both asymptomatic and symptomatic carriers; (2) simplicity in methodology, to be performed in a number of traditional diagnostic laboratories, without specialized equipment; (3) low cost and easily accessible reagents; (4) ease of collection method; (5) rapid turnaround time to allow for isolation and contract tracing; and (6) ability to co-detect multiple respiratory viruses, given the overlap in patient symptoms. To this end, we have developed COV-ID, an RT-LAMP-based parallel sequencing SARS-CoV-2 detection method that can provide results from tens of thousands of samples per day at relatively low cost to simultaneously detect multiple respiratory viruses.\n\nCOV-ID features key innovations that make it well-suited to high-throughput testing. First, COV-ID uses a two-dimensional barcoding strategy (Yelagandula et al., 2021), where the same 96 barcodes are used in each RT-LAMP plate, making it possible to pre-aliquot barcodes in 96-well plates ahead of time and store them at \u201320\u00b0C, simplifying execution of the assay and shortening turnaround times. Second, since RT-LAMP does not require thermal cycling, tens of thousands of samples can be run simultaneously in a standard benchtop-sized incubator or hybridization oven held at 65\u00b0C. Third, individual samples are pooled immediately following RT-LAMP; therefore, a single thermocycler has the potential to process up to 96 or 384 RT-LAMP plates, generating 9,216 or 36,864 individually barcoded samples, respectively (Figures 1A and 4F, G). Only 96 unique FIP barcodes are required for this scaling; here, we show that 28 out of 32 LAMP barcodes tested were functional for both N2 and STATH. This proof-of-principle experiment demonstrates the feasibility of generating the library of barcodes required to apply COV-ID to a large population. An additional advantage of sequencing-based approaches, such as COV-ID is that with carefully designed primers it would be possible to recover information about viral variants directly from the sequencing reads (Everett et al., 2021). Recently, another group has used RT-LAMP coupled with molecular beacons to amplify the spike sequences of SARS-CoV-2 and identify the emerging B.1.1.7 variant (Sherrill-Mix et al., 2021b), demonstrating the utility of RT-LAMP to capture variant-specific sequence information. Finally, COV-ID can generate ready-to-sequence libraries directly from saliva absorbed onto filter paper, which would allow for major streamlining of the often-challenging logistical process of sample collection (Figure 4). Thus, COV-ID libraries for thousands and tens of thousands of samples can be generated with relatively minimum effort in biological laboratories with basic equipment and easily accessible reagents.\n\nWith the average throughput of an Illumina NextSeq 500/550, a relatively affordable next-generation sequencer up to 9,216 (96 RT-LAMPs x 96 pools) can be sequenced at a depth of ~48,000 reads per sample, and up to 36,864 (96 RT-LAMPs x 384 pools) can be sequenced at a depth of ~12,000 reads, which, we showed, is more than sufficient to obtain information about multiple viral and control amplicons. Considering that reagents for one NextSeq run cost ~1,500 U.S. dollars, the theoretical sequencing cost per sample could be as low as $0.04 (Figure 4G). While sequencing instruments are relatively specialized and not ubiquitous, amplified COV-ID DNA libraries could be shipped to remote facilities for sequencing in a cost-effective manner as previously proposed by the inventors of LAMP-seq (Ludwig et al., 2021). In a context where a sequencing instrument is available locally, with optimized sample collection and streamlined logistics results could be turned around within 16 hr. Finally, because of the limited sequence space against which reads must be aligned, computational analysis of the resulting data can be performed in a matter of minutes with optimized pipelines, providing results shortly after the sequencing run has completed.\n\nSeveral methods have emerged that harness massively parallel next generation sequencing for diagnostics of SARS-CoV-2 (Simonetti et al., 2021; Bloom et al., 2021; Yelagandula et al., 2021; Aynaud et al., 2021; Wu et al., 2021; de Mello Malta et al., 2021; Chappleboim et al., 2021; Peto et al., 2021; Dao Thi et al., 2020; Ludwig et al., 2021, Credle et al., 2021), reflecting the desire for novel approaches to address the shortcomings of labor-intensive individual clinical diagnostic testing. COV-ID complements these approaches by providing a method that can screen thousands of individuals with a heated incubator, a single PCR thermocycler and access to a sequencer. COV-ID and existing methods for sequence-based diagnostics each have their strengths and weaknesses and should be carefully evaluated for their suitability in specific cases. While our method demonstrates promise, we note that there remain some points that require optimization prior to successful large-scale application of COV-ID in a population setting, including developing primer sets to sequence the spike of SARS-CoV-2 for use in genomic surveillance of emerging variants, or validating individual RT-LAMP barcodes to ensure optimal throughput.\n\nCOV-ID has a limit of detection of 5\u201310 virions of SARS-CoV-2 per \u03bcL in contrived saliva samples (Figure 2D) and at least 300 virions/\u03bcL in saliva collected from patients in a clinical setting (Figure 2E). Of note, the limit of detection in clinical saliva specimens is likely lower, but it could not be determined because the lowest viral load of all our positive samples was 300 virions/\u00b5L. Importantly, this was also the apparent limit of detection of paper-based COV-ID (Figure 4E). The average viral load in saliva for a contagious individual (the target of population-scale surveillance) is still a subject of debate and likely depends on several factors including virus variant. In one study, RT-qPCR-based estimates of SARS-CoV-2 viral loads averaged 380 copies/\u00b5L in saliva samples of infected individuals (Wyllie et al., 2020). Some meta analyses indicated no significant difference in viral load at the upper respiratory tract for symptomatic vs. asymptomatic individuals (Walsh et al., 2020; Zuin et al., 2021), and levels of viral RNA in saliva are in general comparable to those found in NP swabs (Butler-Laporte et al., 2021). This would suggest that the limit of detection of COV-ID matches and exceeds what is needed to detect viral RNA in saliva of infectious and potentially contagious individuals.\n\nIn conclusion, COV-ID is a flexible platform that can be executed at varying levels of scale with additional flexibility in sample input, making it an attractive platform for surveillance testing. Population-level monitoring of SARS-CoV-2 infections will be critical while vaccines are being distributed to the global population, and continued surveillance will likely remain an effective strategy to protect immunocompromised and unvaccinated members in society and within entities and organizations where regular monitoring is critical to social isolation strategies. To that end, effective, low-cost, multiplexed, and readily implementable strategies for surveillance testing, such as COV-ID, are important to mitigate the effects of the current and future pandemics.\n\n## Materials and methods\n\n### RT-LAMP primer design\n\nPrimers against ACTB were designed using PrimerExplorerV5 (https://primerexplorer.jp/e/) using default parameters and including loop primers (Supplementary file 1a).\n\nFor COV-ID, priming sequences for PCR were inserted in FIP and BIP primers between the target homology regions (F1c and F2, and B1c and B2, respectively, see Figure 1\u2014figure supplement 1). After testing, we determined that 12 nts and 11 nts were most effective for the P5 and P7 binding regions, respectively, being the shortest insertion that allowed reliable PCR amplification from LAMP products without impacting LAMP efficiency. In addition, a 5 nt barcode sequence was inserted at the immediate 3\u2019 end of the P5-binding region of the FIP primer (see below).\n\n### LAMP barcode design\n\nStarting from the total possible 1,024 unique 5-nt barcodes, we filtered 404 with exact homology to the reverse complement of any RT-LAMP primer used in this study (N2, STATHERIN, ACTIN, and influenza). Out of the 620 remaining barcodes, we selected a set of 32 with Hamming distance \u2265 2 between each barcode and all other barcodes of the set. These barcodes were tested in each RT-LAMP primer set using 1,000 copies of the target amplicon set, to determine whether they interfered with the reaction. Primers that failed to show LAMP signal by real time fluorescence monitoring or generate expected PCR product were discarded (Figure 2\u2014figure supplement 1D). Final usable barcodes are provided in Supplementary file 1b.\n\n### Saliva preparation\n\nWe prepared 100\u00d7 TCEP/EDTA buffer (250 mM TCEP, 100 mM EDTA, and 1.15 N NaOH) (Rabe and Cepko, 2020). TCEP/EDTA buffer was added to human saliva at 1:100 volume, then samples were capped, vortexed to mix and heated in a thermocycler (95\u00b0C 5 min, 4\u00b0C hold) until ready to use for RT-LAMP. When indicated, heat-inactivated SARS-CoV-2 (BEI Resources Cat. NR-52286) or H1N1 genomic RNA (Twist Biosciences Cat. 103001) was added to inactivated saliva prior to RT-LAMP.\n\n### N2 synthetic calibration standard\n\nTo prepare the in vitro transcription template for SARS-CoV-2 N2 synthetic calibration standard RNA, we performed RT-PCR using Power SYBR RNA-to-Ct kit (Thermo Cat. 4389986) of heat inactivated SARS-CoV-2 (BEI Resources Cat. NR-52286) using the following primers: N2-B3 and N2-spike-T7 S. PCR product was purified and used as a template for in vitro transcription using HiScribe T7 transcription kit (NEB Cat. E2040S). RNA was purified with Trizol (Thermo Cat. 15596026), quantified via A260, then aliquoted in BTE buffer (10 mM bis-tris pH 6.7, 1 mM EDTA) and stored at \u201380\u00b0C. The primers used and the sequence of the synthetic calibration standard are provided in Supplementary file 1a.\n\n### RT-LAMP\n\nAll RT-LAMP reactions were set up in clean laminar flow hoods and all steps before and after LAMP were carried out in separate lab spaces to avoid contamination. RT-LAMP reactions were set up on ice as follow: for each amplicon 5 or 6 LAMP primers were combined into 10\u00d7 working stock at established concentrations: 16 \u03bcM FIP, 16 \u03bcM BIP, 4 \u03bcM LF, 4 \u03bcM LB, 2 \u03bcM F3, and 2 \u03bcM B3. For multiplexed COV-ID reactions 10\u00d7 working primer mixes for each amplicon were either added proportionally so that the total primer content remained constant, or mixed so that BIP and FIP primers were scaled down depending on amplicon number while remaining primers (LF and/or LB, F3, B3) were kept at same concentration as in single reactions.\n\nEach 10 \u03bcL RT-LAMP reaction mix consisted of 1\u00d7 Warmstart LAMP 2\u00d7 Master Mix (NEB Cat. E1700S), 0.7 \u03bcM dUTP (Promega Cat. U1191), 1 \u03bcM SYTO-9 (Thermo Cat. S34854), 0.1 \u03bcL Thermolabile UDG (Enzymatics Cat. G5020L), 1 \u03bcL of saliva template, and optionally 20 fg of N2 Spike RNA. For RT-LAMP of purified RNA from NP swabs, 2 \u03bcL template in 10 \u03bcL reaction volume was used. Reactions were prepared in qPCR plates or eight-well strip tubes, sealed, vortexed and centrifuged briefly, then incubated in either a QuantStudio Flex 7 or StepOnePlus instrument (Thermo) for 65\u00b0C 1 hr. Real-time fluorescence measurements were recorded every 30 s to monitor reaction progress but were not used for data analysis. Following LAMP the reactions were heated at 95\u00b0C 5 min to inactivate LAMP enzymes.\n\n### Library construction by PCR amplification\n\nAll post-LAMP steps were carried out on a clean bench separate from LAMP reagents and workspace. For individual LAMP samples, LAMP amplicons were diluted either 1:100 or 1:1,000 in water. For pooling of individually barcoded LAMP reactions, equal amounts of all LAMP reactions were combined and then either diluted 1:1000 or purified via SPRIselect beads (Beckman Coulter Cat. B23317) using a bead-to-reaction ratio of 0.1\u00d7. Purified material was diluted to final 100-fold dilution relative to LAMP.\n\nOne microliter of diluted LAMP material was used as a template for PCR using OneTaq DNA polymerase (NEB Cat. M0480L) with 100 nM each of custom dual-indexed Illumina P5 and P7 primers in either 10 or 25 \u03bcL reaction (Supplementary file 1a). PCR reactions were incubated as follows: (25 cycles of stage 1 [94\u00b0C \u00d7 15 s, 45\u00b0C \u00d7 15 s, 68\u00b0C \u00d7 10 s], 10 cycles of Stage 2 [ 94\u00b0C \u00d7 15 s, 68\u00b0C \u00d7 10 s], 68\u00b0C \u00d7 1 min, 4\u00b0C \u00d7 \u221e). Note, for initial pilot COV-ID and clinical sample experiments (Figure 2D\u2013E, Figure 2\u2014figure supplement 1C) PCR incubation was performed as above with modification: [Stage 1 \u00d7 10 cycles, Stage 2 \u00d7 25 cycles].\n\nPCR products were resolved on 2% agarose gel to confirm library size, then all were pooled and purified via MinElute PCR purification kit (Qiagen Cat. 28004) and quantified using either Qubit dsDNA High Sensitivity kit (Thermo Cat. Q32851) or Kapa Library Quantification Kit for Illumina (Kapa Cat. 07960140001).\n\n### Patient samples\n\nClinical saliva samples were obtained and characterized as part of a separate study at the University of Pennsylvania (Sherrill-Mix et al., 2021a) and collected under Institutional Review Board (IRB)-approved protocols (IRB protocol #842,613 and #813913). Briefly, salivary samples were collected from possible SARS-CoV-2 positive patients at one of three locations: (1) Penn Presbyterian Medical Center Emergency Department, (2) Hospital of the University of Pennsylvania Emergency Department, and (3) Penn Medicine COVID-19 ambulatory testing center. Inclusion criteria including any adult (age >17 years) who underwent SARS-CoV-2 testing via standard nasopharyngeal swab at the same visit. Patients with known COVID-19 disease who previously tested positive previously were excluded. After verbal consent was obtained by a trained research coordinator, patients were instructed to self-collect saliva into a sterile specimen container, which was then placed on ice until further processing for analysis.\n\nNP swab specimen collections were performed by trained staff at the Hospital of the University of Pennsylvania following the CDC Interim Guidelines for Collecting and Handling of Clinical Specimens for COVID-19 Testing (https://www.cdc.gov/coronavirus/2019-nCoV/lab/guidelines-clinical-specimens.html- updated as of October 25, 2021).\n\nNP swabs were maintained on ice during the collection period, transferred to cryogenic vials, and stored at \u201380\u00b0C until analysis. RNA was extracted and purified using the QIAmp DSP Viral RNA Mini Kit (Qiagen). The first step of this process inactivated the virus from the NP samples and was performed in a biosafety cabinet under BSL-2 enhanced protocols, while subsequent steps were performed on a lab bench under standard conditions. The RNA was analyzed using the TaqPath 1-Step RT-qPCR reagent (Life Technologies) on the Quantstudio 7 Flex Genetic Analyzer (ABI). The oligonucleotide primers and probes for detection of SARA-CoV-2 (sequences provided in Supplementary file 1a) were selected from regions of the virus nucleocapsid (N) gene. The panel is designed for specific detection of the SARA-CoV-2 viral RNA (two primer/probe sets, N1 and N2). An additional primer/probe set to detect the human RNase P gene (RP) in control samples and clinical specimens is also included in the panel (2019-nCoVEUA-01). RNaseP is a single copy human-specific gene and can indicate the amount of human cells collected.\n\n### Paper COV-ID\n\nSquares of Whatman no. 1 filter paper (2 mm \u00d7 2 mm) were cut using a scalpel on a clean surface under a laminar flow hood and stored at room temperature until used. Using ethanol-sterilized fine-nosed tweezers a single square was dipped twice into unprocessed, freshly collected saliva with or without added SARS-CoV-2 (BEI Resources Cat. NR-52286) until saliva was saturated on paper by eye. Paper was then transferred to well of 96-well plate containing 10 \u00b5L of 1\u00d7 TCEP/EDTA buffer (2.5 mM TCEP, 1 mM EDTA, 1.15 NaOH). Plate was placed on heat block inside laminar flow hood or inside open thermocycler and incubated at 95\u00b0C \u00d7 10 min.\n\nTen microliter RT-LAMP mixture was prepared as described above in the absence of the N2 spike RNA. 10 \u00b5L of RT-LAMP reaction mixture was added to each paper strip, then plate was sealed and incubated 65\u00b0C \u00d7 1 hr, 95\u00b0C \u00d7 5 min in QuantStudio Flex 7 (Thermo). One microliter of each reaction was either diluted 1:100 or purified via SPRIselect beads and PCR amplified as described above.\n\n### Sequencing\n\nLibraries were sequenced on one of the following Illumina instruments: MiSeq, NextSeq 500, NextSeq 550, NovaSeq 6000 and sequenced using single end programs with a minimum of 40 cycles on Read 1 and 8 cycles for index 1 (on P7) and index 2 (on P5).\n\n### Sequence analysis\n\nReads were filtered for optical quality using FASTX-toolkit utility fastq_quality_filter (http://hannonlab.cshl.edu/fastx_toolkit/), then cutadapt (Martin, 2011) was used to remove adapters and demultiplex LAMP barcodes. Reads were aligned to a custom index containing SARS-CoV-2 genome (NC_045512.2), Influenza H1N1 coding sequences (NC_026431.1, NC_026432.1, NC_026433.1, NC_026434.1, NC_026435.1, NC_026436.1, NC_026437.1, NC_026438.1), STATH coding sequence (NM_003154.3), ACTB coding sequence (NM_001101.5) and custom N2 spike sequence (Supplementary file 1a). Alignment was performed using bowtie2 (Langmead and Salzberg, 2012) with options --no-unal and --end-to-end. Alignments with greater than 1 mismatch were removed and the number of reads mapping to each target for all barcodes were extracted and output in a matrix. Barcodes with fewer than 25 total mapped reads were discarded. Alignment script and bowtie2 indexes are provided as Source code 1.\n",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "2d8a9281-c811-48b4-81e2-107e5a8991df",
+      "submission_id": "808ff735-cb46-451f-8bd8-35857154f60d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alex Sigal, https://ror.org/04qzfn040 Africa Health Research Institute, University of KwaZulu-Natal South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69949.sa0](https://doi.org/10.7554/eLife.69949.sa0)\n\nSurveillance screening can help us estimate the prevalence of SARS-CoV-2 infection and co-infection with other respiratory pathogens. This work offers a high-throughput and cost-effective method to do such surveillance based on RT-LAMP combined with deep sequencing. This method can be applied to clinical samples for an accurate reading of the fraction of infections where the SARS-CoV-2 titer is moderate or high.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alex Sigal, https://ror.org/04qzfn040 Africa Health Research Institute, University of KwaZulu-Natal South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69949.sa1](https://doi.org/10.7554/eLife.69949.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"COV-ID: A LAMP sequencing approach for high-throughput co-detection of SARS-CoV-2 and influenza virus in human saliva\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Dominique Soldati-Favre as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers assessment was that, while the approach may make an important contribution to genomic surveillance of SARS-CoV-2, it was unclear if it would deliver the benefits of decreased cost, time, and labor in a real-world situation.\n\nThe main weakness pointed out by both reviewers was that much of the work was done on spiked samples. High throughput on clinical samples was not demonstrated, as only 8 were used.\n\nThe reviewers agree that the type of clinical sample tested, whether saliva or swab, is less important. What the proof of concept would require is at least a \"superpool\" of several pooled wells, with each well containing the maximum number of samples (or close to it). This way, both pooling steps are tested.\n\nReviewer #1 (Recommendations for the authors):\n\nI do not have specific technical concerns, but the methodology is difficult to evaluate with results from only 8 clinical samples. Factors such as differing Ct values, sample quality, and others should be evaluated to see if the approach could be used with high throughput, and this would require at a minimum a \"superpool\" of several pooled wells with each well containing the maximum number of samples. Participant Ct values should be presented and be correlated to detection. Swab transport media can substitute if saliva is not available. Negative samples should be combined with qPCR confirmed positive samples and false negative and false positive rates determined.\n\nGiven that a fast turnaround time is key to success, the approach proposed by the authors is unlikely to be used except in very large studies with ready access to deep sequencing, in which case they would also have access to a PCR. Where the approach may fill an unmet need is genomic surveillance of the virus in the population which would likely involve reconfiguring the system to sequence spike.\n\nReviewer #2 (Recommendations for the authors):\n\nI enjoyed reading this manuscript and was impressed with its potential to make a significant contribution to population-level testing of infectious disease, e.g. during the COVID-19 pandemic. Assuming that you are able to able to address the points in the Public Review, I would be pleased to recommend this manuscript for publication in eLife. In particular, I think it would be very helpful to perform more testing of your method from clinical samples. I realise that these may be difficult to acquire and so I do not want to be too demanding in the exact source of these samples, just something a bit more realistic than the spike-ins used extensively here.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your article \"A LAMP sequencing approach for high-throughput co-detection of SARS-CoV-2 and influenza virus in human saliva\" for consideration by eLife. Your revised article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Dominique Soldati-Favre as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe main comment of the Reviewers was to show feasibility with more than 8 clinical samples, given that the reason for the approach was to do high-throughput analysis of clinical samples.\n\nThe authors therefore used 120 clinical samples in an experiment to show that the approach can be scaled up. The results are presented in Figure 2\u2014figure supplement 2.\n\nWhile the reviewer comments were addressed, the results seem to show that the sensitivity of the approach (rate of false negatives) is considerably inferior to that of qPCR: By counting on panel A of the figure, there are 17 qPCR-positive samples. Thresholding by the highest values of SARS/Spike+1 in the qPCR negative samples (about 0.1), 8 samples out of 17 are above threshold by the authors' approach. Therefore, 9 out of 17 (53%) are false negative.\n\nBecause the sample is imbalanced \u2013 many more qPCR negatives relative to positives \u2013 the false-positive rate (1-specificity) is not sensitive to false positives and the ROC curves are overly optimistic in describing the result.\n\nThe reviewers agreed that those intending to implement the approach can decide for themselves whether it is right for them, but that these limitations should be clearly stated. The authors can use a Precision-Recall curve which does not consider the false positive rate to quantify the performance of their approach.\n\nAlso, the strategy of an artificial N2 spike-in is not described until later in the MS. It should be described for the figure to explain the SARS/Spike+1 ratio.\n\nReviewer #1 (Recommendations for the authors):\n\nThe main comment of the Reviewers was to show feasibility with more than 8 clinical samples, given that the reason for the approach was to do high-throughput analysis of clinical samples.\n\nThe authors therefore used 120 clinical samples in an experiment to show that the approach can be scaled up. The results are presented in Figure 2\u2014figure supplement 2.\n\nUsing qPCR as the gold standard, there are 17 samples (estimated, from counting the points) out of 120 (14%) that had a detectable Ct value. Using the presented approach without thresholding, there were 86 samples out of 120 (72%) where viral sequences were detected.\n\nThresholding by the highest values of SARS/Spike+1 in the qPCR negative samples (about 0.1), 8 samples out of 120 (7%) were above threshold, with 9 out of 17 (53%) being false negative.\n\nIf this is a misinterpretation of the results, then I would suggest clarifying it. If not, the method presented has low sensitivity, unless indeed the majority of people in the cohort had SARS-CoV-2 infections not detected by qPCR.\n\nAlso, the strategy of an artificial N2 spike-in is not described until later in the MS. It should be described for the figure to explain the SARS/Spike+1 ratio. The name of the denominator should perhaps be changed to avoid confusion with the SARS-CoV-2 spike gene. The horizontal line at 0.2 which appears to be a threshold in Figure 2\u2014figure supplement 2B should be explained and the scale changed to log to make all the values visible and not have a scale interruption.\n\nReviewer #2 (Recommendations for the authors):\n\nI thank the authors for their efforts in revising this manuscript and particularly for performing another round of sample collection/analysis. The results presented in Figure 2 - Figure Supplement Figure 2 significantly improve the statistical confidence in the ability of this method to identify positive clinical samples and the ROC plots will allow readers to make their own quantitative judgements of the performance of this method for their own purposes. I also thank the authors for making all the minor edits I suggested in my previous review.\n\nI now fully support publication of this article in eLife as is.\n",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aa477b17-f683-4d89-bcbd-f760544ced4c",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C1",
+      "claim": "The COVID-19 pandemic has created an urgent need for rapid, effective, and low-cost SARS-CoV-2 diagnostic testing.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 pandemic has created an urgent need for rapid, effective, and low-cost SARS-CoV-2 diagnostic testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the context and motivation for the research, reflecting established understanding of pandemic needs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "23669c12-1bfe-4168-9b9b-d8b9537cbfbc",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C2",
+      "claim": "COV-ID combines RT-LAMP with deep sequencing to detect SARS-CoV-2 in unprocessed human saliva.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe COV-ID, an approach that combines RT-LAMP with deep sequencing to detect SARS-CoV-2 in unprocessed human saliva with a low limit of detection (5\u201310 virions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method developed in the study, supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "8a63a35a-5cdd-4dbd-8bff-991b14f7de83",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C3",
+      "claim": "COV-ID has a low limit of detection of 5\u201310 virions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe COV-ID, an approach that combines RT-LAMP with deep sequencing to detect SARS-CoV-2 in unprocessed human saliva with a low limit of detection (5\u201310 virions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D where detection was achieved at 5 virions/\u03bcL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "5b89d961-b8c4-40c8-ac78-cd46e780e3ce",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C4",
+      "claim": "COV-ID can be used to test thousands of samples overnight in a single sequencing run with limited labor and laboratory equipment.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a multi-dimensional barcoding strategy, COV-ID can be used to test thousands of samples overnight in a single sequencing run with limited labor and laboratory equipment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental design and data showing pooling strategies and throughput calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "64ce63a8-347d-4315-b5c6-ae57ac2b43b9",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C5",
+      "claim": "The sequencing-based readout allows COV-ID to detect multiple amplicons simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequencing-based readout allows COV-ID to detect multiple amplicons simultaneously, including key controls such as host transcripts and artificial spike-ins, as well as multiple pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3 where multiple pathogens and controls are detected simultaneously.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "4dd13ea0-e886-42a5-9c0e-f90ba7691be2",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C6",
+      "claim": "COV-ID can simultaneously detect SARS-CoV-2, influenza A, human STATHERIN, and an artificial SARS calibration standard in contrived saliva samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate this flexibility by simultaneous detection of 4 amplicons in contrived saliva samples: SARS-CoV-2, influenza A, human STATHERIN, and an artificial SARS calibration standard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally with data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "ff042c57-b31f-4e14-b89b-4e00fef21fea",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C7",
+      "claim": "COV-ID showed excellent agreement with RT-qPCR when validated on clinical saliva samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach was validated on clinical saliva samples, where it showed excellent agreement with RT-qPCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 2E showing 100% concordance with clinical RT-qPCR results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "13fa96ff-f42d-43d9-8e10-c6b4eeb3b5dd",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C8",
+      "claim": "COV-ID can be performed directly on saliva absorbed on filter paper.",
+      "claim_type": "EXPLICIT",
+      "source": "COV-ID can also be performed directly on saliva absorbed on filter paper, simplifying collection logistics and sample handling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4 with data showing successful detection from paper-absorbed saliva.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "ccabd5c3-792a-4b1e-97bd-aa9462cc98f5",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C9",
+      "claim": "The COVID-19 pandemic has led to more than 490 million infections and over 6.1 million deaths worldwide as of April 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "In two years, the COVID-19 pandemic has swept across the world, leading to more than 490 million infections and over 6.1 million deaths worldwide (as of April 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about pandemic statistics, representing established knowledge at the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "14c86398-785d-4ab7-b08e-15ed2a29f50a",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C10",
+      "claim": "Non-pharmaceutical interventions such as school closures and national lockdowns have proven to be effective but could not be sustained due to economic and social impact.",
+      "claim_type": "EXPLICIT",
+      "source": "In many countries, non-pharmaceutical interventions, such as school closures and national lockdowns, have proven to be effective, but could not be sustained due to economic and social impact (Haug et al., 2020; Tian et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "9ac685f6-ee91-4e62-af4a-70c0d94fe878",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C11",
+      "claim": "Regularly performed population-level diagnostic testing is an attractive solution for pandemic control.",
+      "claim_type": "EXPLICIT",
+      "source": "Regularly performed population-level diagnostic testing is an attractive solution (Taipale et al., 2020), particularly as asymptomatic individuals are implicated in rapid disease transmission, with a strong overdispersion in secondary transmission (Endo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research and represents a consensus view in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "94868b5a-ddad-434e-94b9-c9ac0ba11499",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C12",
+      "claim": "Asymptomatic individuals are implicated in rapid disease transmission with strong overdispersion in secondary transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Regularly performed population-level diagnostic testing is an attractive solution (Taipale et al., 2020), particularly as asymptomatic individuals are implicated in rapid disease transmission, with a strong overdispersion in secondary transmission (Endo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "b144bee9-f586-4ff0-ad3d-97c0ba7f4fac",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C13",
+      "claim": "Sustained population-level testing can be successful in isolating asymptomatic individuals and decreasing transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Sustained population-level testing can be successful in isolating asymptomatic individuals and decreasing transmission (Holt, 2020; Larremore et al., 2020); however, considerable barriers exist to the adoption of such massive testing strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "8cf74064-cdff-4e1b-b9d9-8e965dfd2a65",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C14",
+      "claim": "Cost and supply constraints for commercial testing reagents are barriers to population-level testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Two such barriers are cost and supply constraints for commercial testing reagents, both of which make it impractical to test large numbers of asymptomatic individuals on a recurrent basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about challenges in pandemic testing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "8e208508-7004-451e-8914-8e96535e426e",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C15",
+      "claim": "The lack of user-friendly protocols is a major barrier to establishing high-throughput surveillance screening.",
+      "claim_type": "EXPLICIT",
+      "source": "A third major barrier is the lack of 'user-friendly' protocols that can be rapidly adopted by public and private organizations to establish high-throughput surveillance screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents an assessment of the state of the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "18a0fe1c-1695-443e-947a-01642edfcf2c",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C16",
+      "claim": "Self-administered lateral flow tests lack the sensitivity of nucleic acid detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the wide availability of self-administered lateral flow tests has greatly facilitated the identification and isolation of active infections, these tests lack the sensitivity of nucleic acid detection (Br\u00fcmmer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "b1164ffc-ff4a-446c-aa80-d2efaa6fa0eb",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C17",
+      "claim": "Several sequencing-based methods including SARSeq, SPAR-Seq, Swab-seq, COVseq, and INSIGHT directly amplify viral RNA by RT-PCR and simultaneously introduce barcodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Several methods, including SARSeq, SPAR-Seq, Swab-seq, COVseq, and INSIGHT directly amplify the viral RNA by RT-PCR and simultaneously introduce barcodes (Simonetti et al., 2021; Bloom et al., 2021; Yelagandula et al., 2021; Aynaud et al., 2021; Wu et al., 2021; de Mello Malta et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "485f9cd3-0b8e-4c75-9d0c-9b33d4b6e3e9",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C18",
+      "claim": "RT-PCR-based sequencing methods rely on individual PCR amplification of each patient sample, requiring a large number of thermal cyclers for massive scale-up.",
+      "claim_type": "EXPLICIT",
+      "source": "While effective, these methods rely on individual PCR amplification of each patient sample, thus requiring a large number of thermal cyclers for massive scale-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the technical requirements of the cited methods.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "de3de98d-ae6a-4f6f-b795-471c340a8436",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C19",
+      "claim": "ApharSeq addresses the thermal cycler bottleneck by annealing barcoded RT primers to viral RNA and pooling samples prior to amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative approach, ApharSeq, addresses this bottleneck by annealing barcoded RT primers to viral RNA and pooling samples prior to amplification, but the need for specialized oligo-dT magnetic beads might constitute a separate adoption barrier for this method (Chappleboim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "05085e1e-aafc-4a9c-a218-f16e582dc95e",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C20",
+      "claim": "LAMP has been used for viral DNA or RNA detection in clinical samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis for COV-ID is RT-LAMP, an alternative to PCR that has been used extensively for viral DNA or RNA detection in clinical samples (Li et al., 2011; Shirato et al., 2014; Calvert et al., 2017; Enomoto et al., 2005), including SARS-CoV-2 (Augustine et al., 2020; United States Food and Drug Administration, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "7848ccba-06fc-4daa-b778-a5660aa81969",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C21",
+      "claim": "RT-LAMP requires 4\u20136 primers that recognize different regions of the target sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-LAMP requires 4\u20136 primers that recognize different regions of the target sequence (Nagamine et al., 2002; Notomi et al., 2000) and proceeds through a set of primed and self-primed steps to yield many inverted copies of the target sequence spanning a range of molecular sizes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research describing the LAMP method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "d10949c6-3eaf-478b-bf68-ef336c6682de",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C22",
+      "claim": "The FIP and BIP primers in LAMP tolerate insertions of exogenous sequences between their different target homology regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the FIP and BIP tolerate insertions of exogenous sequences between their different target homology regions (Yamagishi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "6de53ff5-019a-423a-96ee-01ce17f6c594",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C23",
+      "claim": "Modified COV-ID primers with exogenous sequences showed slightly delayed amplification compared to conventional primers but all reactions reached saturation rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the appearance of the amplified viral product was slightly delayed when using COV-ID primers, all reactions reached saturation rapidly and without detectable amplification of negative controls (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "075f573f-a22a-4299-9cd7-6e6a202b4b14",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C24",
+      "claim": "COV-ID primers successfully amplified human beta-actin (ACTB) transcript from HeLa RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A PCR product of the expected size was visible in reactions containing total HeLa RNA, whereas no PCR product was observed in the absence of template (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "452825bf-0c50-4d1a-815d-0decb206247f",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C25",
+      "claim": "Sanger sequencing confirmed that RT-LAMP followed by PCR generated the expected COV-ID product including the sample barcode.",
+      "claim_type": "EXPLICIT",
+      "source": "Sanger sequencing of the PCR product confirmed that RT-LAMP followed by PCR generated the product expected by the COV-ID method design, including the sample barcode introduced during the RT-LAMP step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Sanger sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "d2e4f14a-c668-4b30-ae89-77de02d1211c",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C26",
+      "claim": "Saliva is an attractive sample material for COVID-19 diagnostics with potential for early detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Saliva is an attractive sample material for COVID-19 diagnostics with potential for early detection (Savela, 2021), and has been shown to be a viable template for nucleic acid amplification via RT-PCR (Ranoa et al., 2020), recombinase polymerase amplification (RPA) (Myhrvold et al., 2018), as well as RT-LAMP (Lalli et al., 2021; Rabe and Cepko, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "f46057b5-1878-43c9-beca-566aeb1efca0",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C27",
+      "claim": "Saliva has been shown to be a viable template for nucleic acid amplification via RT-PCR, RPA, and RT-LAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Saliva is an attractive sample material for COVID-19 diagnostics with potential for early detection (Savela, 2021), and has been shown to be a viable template for nucleic acid amplification via RT-PCR (Ranoa et al., 2020), recombinase polymerase amplification (RPA) (Myhrvold et al., 2018), as well as RT-LAMP (Lalli et al., 2021; Rabe and Cepko, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "ed714ac5-b980-4d0b-8d3a-b181cc109fe8",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C28",
+      "claim": "COV-ID detected a single band of expected size in saliva spiked with 1000 copies of inactivated SARS-CoV-2 virus but not in control reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a single band of the expected size in reactions performed on saliva spiked with virus but not in control reactions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "0ed1daeb-a97e-4366-ab71-d94fed09750d",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C29",
+      "claim": "Deep sequencing reads from COV-ID aligned uniformly to the N gene in viral samples but not in control libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Reads aligned uniformly to the N gene, the region targeted by the N2 primer set, in COV-ID libraries constructed from viral samples but not in control libraries (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "810592a5-e2f6-4d9a-bce5-1ffb056ba3ec",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C30",
+      "claim": "Addition of RNase A abolished the STATH signal but was ineffectual for ACTB.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas addition of RNase A abolished the STATH signal, it was ineffectual for ACTB (Figure 2\u2014figure supplement 1B), suggesting that amplification of genomic DNA made considerable contributions to the RT-LAMP signal observed for the latter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "fc891317-647f-4e68-a606-8db0d1b0a0ac",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C31",
+      "claim": "Amplification of genomic DNA made considerable contributions to the RT-LAMP signal observed for ACTB.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas addition of RNase A abolished the STATH signal, it was ineffectual for ACTB (Figure 2\u2014figure supplement 1B), suggesting that amplification of genomic DNA made considerable contributions to the RT-LAMP signal observed for the latter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the RNase resistance of the ACTB signal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "f523bcf2-dd20-4eb6-8bab-0884024fbb76",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C32",
+      "claim": "COV-ID correctly classified 95% (19/20) of samples with spiked-in virus as positives.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the highest N2/STATH read ratio in control (SARS-CoV-2 negative saliva) as a threshold, 95% (19/20) of samples with spiked-in virus were correctly classified as positives (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "a8abcaaa-77f1-4f23-9bd3-815836bdf69c",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C33",
+      "claim": "COV-ID consistently detected SARS-CoV-2 in saliva samples containing as low as 5 virions per \u00b5L.",
+      "claim_type": "EXPLICIT",
+      "source": "Using COV-ID, we consistently detected SARS-CoV-2 in saliva samples containing as low as 5 virions per \u00b5L, a limit of detection comparable and in some cases superior to those of established testing protocols (MacKay et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "62fb59bf-2345-43c5-8e53-4e906df28f0a",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C34",
+      "claim": "COV-ID's limit of detection is comparable and in some cases superior to established testing protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Using COV-ID, we consistently detected SARS-CoV-2 in saliva samples containing as low as 5 virions per \u00b5L, a limit of detection comparable and in some cases superior to those of established testing protocols (MacKay et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with cited published protocols and experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "408cfd5a-cf09-40f7-afdb-3f403cc1cfb3",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C35",
+      "claim": "Out of 32 barcodes tested in 3 separate RT-LAMP reactions, 25 successfully amplified all three target RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, out of 32 barcodes tested in 3 separate RT-LAMP reactions (N2, ACTB, and STATH), 25 successfully amplified all three target RNAs (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "00b88192-452c-4b43-82c0-9228bb5c7dd6",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C36",
+      "claim": "Certain barcodes inhibited the RT-LAMP reaction, possibly due to internal micro-homology and primer self-hybridization.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain barcodes inhibited the RT-LAMP reaction, possibly due to internal micro-homology and primer self-hybridization (Torres et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experimental observations and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "1b7e5373-6756-493b-92c3-605186aee108",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C37",
+      "claim": "SARS-CoV-2/STATH ratios demonstrated no loss of sensitivity or specificity in pooled samples compared to individual PCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2/STATH ratios demonstrated no loss of sensitivity or specificity in the pooled samples compared to the individual PCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "ab186c48-fdc4-4ba5-8d4a-1cde737a3a20",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C38",
+      "claim": "COV-ID on clinical saliva samples showed 100% (8/8) concordance with viral copy numbers generated by a standard clinical test.",
+      "claim_type": "EXPLICIT",
+      "source": "After deep sequencing, analysis of N2/STATH ratios showed 100% (8/8) concordance with viral copy numbers generated by a standard clinical test (RNA purification followed by RT-qPCR) (Figure 2E), demonstrating the effectiveness of the COV-ID approach.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "52c05af2-152c-4bc2-9037-736e85e9aa2e",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C39",
+      "claim": "Existing deep sequencing approaches for COVID-19 testing based on RT-PCR incorporate artificial spike-ins as internal calibration controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing deep sequencing approaches for massively parallel COVID-19 testing based on RT-PCR incorporate artificial spike-ins, which serve as an internal calibration controls and allow for better estimates of viral loads by end-point PCR (Bloom et al., 2021; Yelagandula et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "d62a0fc1-fc51-489c-af48-f359e8fb66ff",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C40",
+      "claim": "Adding an artificial substrate for amplification helps minimize spurious signals by scavenging viral amplification primers in negative samples.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, adding to the reactions an artificial substrate for amplification helps minimizing spurious signals as it can 'scavenge' viral amplification primers in negative samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding of how calibration standards function in amplification reactions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "ed830353-770a-4d8b-a8d1-8246b40d0f60",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C41",
+      "claim": "Addition of a constant amount of internal calibration control across reactions reduced the variability in total read numbers for individual samples in the final pool.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Yelagandula et al., 2021), addition of a constant amount of an internal calibration control across reactions reduced the variability in total read numbers for individual samples in the final pool (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2C and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "bcb3e54f-7b5e-4158-a002-a48fb217b227",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C42",
+      "claim": "Including the internal calibration control in the normalization strategy resulted in lower levels of false positive signal from negative samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Including the internal calibration control in the normalization strategy resulted in lower levels of false positive signal from negative samples (Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "b7b5dd79-37fc-4888-94f6-4c2b44dd0964",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C43",
+      "claim": "COV-ID on 120 clinical RNA specimens from NP swabs was in good agreement with quantification of viral RNA via a clinical RT-qPCR assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, COV-ID was in good agreement with quantification of viral RNA via a clinical RT-qPCR assay (Figure 2\u2014figure supplement 3A) and was able to distinguish positive from negative patient samples in the same RT-LAMP pool (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "47ac6964-6034-4ac7-bcf5-c1dc9f07b168",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C44",
+      "claim": "COV-ID showed inferior sensitivity compared to individual RT-qPCRs, failing to detect 10 samples that displayed signal by qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "COV-ID showed inferior sensitivity compared to individual RT-qPCRs, failing to detect 10 samples that displayed signal by qPCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the 120 clinical samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "c57ad820-e0e6-4eb2-bace-0ae4e7f46837",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C45",
+      "claim": "7 of the 10 false negatives had very high Ct values (higher than 36 cycles), which are unreliable and poorly reproducible even when using state-of-the-art TaqMan qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 7 of these 10 'false negatives' had very high Ct values (higher than 36 cycles), which are unreliable and poorly reproducible, even when using state-of-the-art TaqMan qPCR (Yelagandula et al., 2021), and could not be classified properly by another sequencing-based high-throughput method (Yelagandula et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and a citation to published research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "b2e447f7-7a52-4afb-b960-08bc32813df1",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C46",
+      "claim": "COV-ID demonstrated good specificity and sensitivity on 120 clinical samples, especially when only samples with Ct values < 36 or < 31 were considered true positives.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, on these 120 clinical samples, COV-ID demonstrated good specificity and sensitivity, as shown by receiver operator characteristic and precision-recall curves, especially when only samples with Ct values < 36 or < 31 were considered 'true positives' (Figure 2\u2014figure supplement 3C, D; middle and right panels, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "db9324d2-5ab1-4653-901f-04d51281ac6e",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C47",
+      "claim": "Simultaneous detection of SARS-CoV-2 and influenza virus by RT-LAMP was previously achieved in a fluorescent-based, low-throughput assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, simultaneous detection of SARS-CoV-2 and influenza virus by RT-LAMP was previously achieved, albeit in a fluorescent-based, low-throughput assay (Zhang and Tanner, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "65527ac8-e36d-433c-88ce-2d86b02fdae1",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C48",
+      "claim": "Multiplex COV-ID correctly identified samples that contained only SARS-CoV-2 (7/8) or H1N1 (6/8).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, multiplex COV-ID correctly identified samples that contained only SARS-CoV-2 (7/8) or H1N1 (6/8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "f85b2711-09df-41f6-8e95-8843ddcad5d6",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C49",
+      "claim": "For samples containing both SARS-CoV-2 and H1N1, multiplex COV-ID showed reduced sensitivity (11/16 identification of both pathogens).",
+      "claim_type": "EXPLICIT",
+      "source": "For samples that contained both pathogens we observed reduced sensitivity (11/16 identification of both pathogens), which was also observed in a previous multiplexing attempt (MacKay et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "f31b7f55-ced8-41f4-a6c6-d07ff2f689e4",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C50",
+      "claim": "Of samples containing both viruses, 16/16 showed positive detection of at least one pathogen (SARS-CoV-2 or H1N1).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that of the samples containing both viruses, 16/16 showed positive detection of at least one pathogen (SARS-CoV-2 or H1N1), suggesting the reduced sensitivity of the multiplex assay is due to interference between amplification of the two viral templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "164f3330-fa1a-42a3-a8e4-a8e25320e659",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C51",
+      "claim": "The reduced sensitivity of the multiplex assay is due to interference between amplification of the two viral templates.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that of the samples containing both viruses, 16/16 showed positive detection of at least one pathogen (SARS-CoV-2 or H1N1), suggesting the reduced sensitivity of the multiplex assay is due to interference between amplification of the two viral templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observation that individual viruses are detected well but dual detection is reduced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "d55811ab-fb9f-41d1-a3e4-eb7a93ff00cd",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C52",
+      "claim": "Paper has been used as a means to isolate nucleic acid from biological samples for direct RT-PCR testing and RT-LAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, paper has been used as a means to isolate nucleic acid from biological samples for direct RT-PCR testing (Glushakova et al., 2017) as well as RT-LAMP (Kellner et al., 2020; Yaren et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "ca3b7cf2-b340-4097-ae8c-ee6a590f0734",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C53",
+      "claim": "COV-ID PCR products of the correct size were evident in all paper samples containing viral RNA with sensitivity of at least 100 virions/\u03bcL.",
+      "claim_type": "EXPLICIT",
+      "source": "COV-ID PCR products of the correct size were evident in all samples containing viral RNA, with sensitivity of at least 100 virions/\u03bcL (Figure 4B) and in none of the controls, demonstrating that the presence of paper does not interfere with the RT-LAMP reaction and subsequent PCR amplification with Illumina adapters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "9b48f29a-e29e-4e0c-973a-4d7fed7b66ed",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C54",
+      "claim": "The presence of paper does not interfere with the RT-LAMP reaction and subsequent PCR amplification with Illumina adapters.",
+      "claim_type": "EXPLICIT",
+      "source": "COV-ID PCR products of the correct size were evident in all samples containing viral RNA, with sensitivity of at least 100 virions/\u03bcL (Figure 4B) and in none of the controls, demonstrating that the presence of paper does not interfere with the RT-LAMP reaction and subsequent PCR amplification with Illumina adapters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by successful amplification from paper samples shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "849ee59b-eb6d-4ae3-9d34-862c01631650",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C55",
+      "claim": "Paper-based COV-ID detected the presence of viral RNA in saliva samples with as little as 320 copies/\u00b5L.",
+      "claim_type": "EXPLICIT",
+      "source": "This paper-based COV-ID proof-of-principle experiment detected the presence of viral RNA in samples with as little as 320 copies/\u00b5L (Figure 4E), a higher limit of detection compared to that of in-solution COV-ID, but still well within the useful range (Winnett et al., 2020) to detect infections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "1628214f-f83a-4753-bdea-35de788dace9",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C56",
+      "claim": "Paper-based COV-ID has a higher limit of detection compared to in-solution COV-ID but is still within the useful range to detect infections.",
+      "claim_type": "EXPLICIT",
+      "source": "This paper-based COV-ID proof-of-principle experiment detected the presence of viral RNA in samples with as little as 320 copies/\u00b5L (Figure 4E), a higher limit of detection compared to that of in-solution COV-ID, but still well within the useful range (Winnett et al., 2020) to detect infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and a citation to published research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "8bb3ea20-cd80-450e-af67-e5955ae4470e",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C57",
+      "claim": "Many FDA-approved clinical SARS-CoV-2 diagnostic tests are based on time-consuming and expensive protocols that include RNA purifications and RT-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Many FDA-approved clinical SARS-CoV-2 diagnostic tests are based on time-consuming and expensive protocols that include RNA purifications and RT-PCR and must be performed by trained personnel in well-equipped laboratories (MacKay et al., 2020; Woronik et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "b0579dca-bf78-4515-8bb4-44384d2971ec",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C58",
+      "claim": "Point-of-care antigen tests provide faster turnaround time but lack sensitivity compared to tests that detect viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Point-of-care antigen tests provide a much faster turnaround time and require little manipulation, but they lack in sensitivity compared to tests that detect viral RNA (Br\u00fcmmer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "d06bb103-dc92-461b-9dd4-e6a2b30facb5",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C59",
+      "claim": "At the beginning of the pandemic, symptomatic individuals and individuals particularly vulnerable for infection after exposure were prioritized for diagnostic COVID testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of reagent limitations and diagnostic testing bottlenecks, at the beginning of the pandemic symptomatic individuals and individuals particularly vulnerable for infection after exposure were prioritized for diagnostic COVID testing (Schuetz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research and represents historical fact.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "fb02640a-007c-47c4-a597-43853e49dc59",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C60",
+      "claim": "Several effective COVID-19 vaccines have been developed and there is a concerted ongoing global vaccination effort.",
+      "claim_type": "EXPLICIT",
+      "source": "Several effective COVID-19 vaccines have been developed and there is a concerted ongoing global vaccination effort, providing a concrete means to end the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about the state of the pandemic response.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "f1e94b65-596d-4cd0-928a-4d5320c5b551",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C61",
+      "claim": "Potential risks requiring vigilance include possible COVID-19 transmission in vaccinated individuals, emergence of vaccine-resistant viral variants, and public skepticism of vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this progress, there are several potential risks that require vigilance: possible COVID-19 transmission in vaccinated individuals, emergence of vaccine-resistant viral variants, and public skepticism of vaccines or faltering compliance with social distancing guidelines (Aschwanden, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents concerns discussed in the scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "e2a309dc-75ab-4cb4-92e5-e8227db91e7a",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C62",
+      "claim": "COV-ID uses a two-dimensional barcoding strategy where the same 96 barcodes are used in each RT-LAMP plate.",
+      "claim_type": "EXPLICIT",
+      "source": "First, COV-ID uses a two-dimensional barcoding strategy (Yelagandula et al., 2021), where the same 96 barcodes are used in each RT-LAMP plate, making it possible to pre-aliquot barcodes in 96-well plates ahead of time and store them at \u201320\u00b0C, simplifying execution of the assay and shortening turnaround times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the method, supported by the experimental approach and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "9e05205e-dca3-498d-8edc-e087397fa172",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C63",
+      "claim": "Since RT-LAMP does not require thermal cycling, tens of thousands of samples can be run simultaneously in a standard benchtop-sized incubator or hybridization oven held at 65\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, since RT-LAMP does not require thermal cycling, tens of thousands of samples can be run simultaneously in a standard benchtop-sized incubator or hybridization oven held at 65\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the isothermal nature of LAMP and represents a logical inference about scalability.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "b78dfa26-f754-432e-bb00-8ba9a29c161f",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C64",
+      "claim": "A single thermocycler has the potential to process up to 96 or 384 RT-LAMP plates, generating 9,216 or 36,864 individually barcoded samples, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, individual samples are pooled immediately following RT-LAMP; therefore, a single thermocycler has the potential to process up to 96 or 384 RT-LAMP plates, generating 9,216 or 36,864 individually barcoded samples, respectively (Figures 1A and 4F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the pooling strategy and mathematical calculation of throughput.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "0d547aa2-42f7-4a96-82cb-13d18a66c688",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C65",
+      "claim": "28 out of 32 LAMP barcodes tested were functional for both N2 and STATH.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 96 unique FIP barcodes are required for this scaling; here, we show that 28 out of 32 LAMP barcodes tested were functional for both N2 and STATH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "466e7941-cd6c-49b0-8d8d-58323a55795a",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C66",
+      "claim": "With carefully designed primers it would be possible to recover information about viral variants directly from the sequencing reads.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional advantage of sequencing-based approaches, such as COV-ID is that with carefully designed primers it would be possible to recover information about viral variants directly from the sequencing reads (Everett et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future possibilities, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "c0a118d4-6753-445b-b57a-ebc7ff439804",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C67",
+      "claim": "RT-LAMP coupled with molecular beacons has been used to amplify spike sequences of SARS-CoV-2 and identify the B.1.1.7 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, another group has used RT-LAMP coupled with molecular beacons to amplify the spike sequences of SARS-CoV-2 and identify the emerging B.1.1.7 variant (Sherrill-Mix et al., 2021b), demonstrating the utility of RT-LAMP to capture variant-specific sequence information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "eb7ac1d4-2efe-4f4f-bafb-096ab837b7d4",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C68",
+      "claim": "With the average throughput of an Illumina NextSeq 500/550, up to 9,216 samples can be sequenced at a depth of ~48,000 reads per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "With the average throughput of an Illumina NextSeq 500/550, a relatively affordable next-generation sequencer up to 9,216 (96 RT-LAMPs x 96 pools) can be sequenced at a depth of ~48,000 reads per sample, and up to 36,864 (96 RT-LAMPs x 384 pools) can be sequenced at a depth of ~12,000 reads, which, we showed, is more than sufficient to obtain information about multiple viral and control amplicons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known throughput of the sequencing instrument and mathematical calculation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "9fc58e2e-e3f8-4717-8342-2a819c8f501a",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C69",
+      "claim": "The theoretical sequencing cost per sample could be as low as $0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that reagents for one NextSeq run cost ~1,500 U.S. dollars, the theoretical sequencing cost per sample could be as low as $0.04 (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mathematical calculation of cost per sample given the throughput.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "9bec42bf-aa78-41eb-bf78-bceca112b7c4",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C70",
+      "claim": "With optimized sample collection and streamlined logistics, results could be turned around within 16 hr in a context where a sequencing instrument is available locally.",
+      "claim_type": "EXPLICIT",
+      "source": "In a context where a sequencing instrument is available locally, with optimized sample collection and streamlined logistics results could be turned around within 16 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection based on the timing of the various steps in the protocol.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "7223a5ba-8c24-4051-a016-d995479c4410",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C71",
+      "claim": "Computational analysis of COV-ID data can be performed in a matter of minutes with optimized pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, because of the limited sequence space against which reads must be aligned, computational analysis of the resulting data can be performed in a matter of minutes with optimized pipelines, providing results shortly after the sequencing run has completed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational requirements of the analysis pipeline.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "6427257e-e7e1-44a5-9675-fa3b40967491",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C72",
+      "claim": "COV-ID has a limit of detection of 5\u201310 virions of SARS-CoV-2 per \u03bcL in contrived saliva samples.",
+      "claim_type": "EXPLICIT",
+      "source": "COV-ID has a limit of detection of 5\u201310 virions of SARS-CoV-2 per \u03bcL in contrived saliva samples (Figure 2D) and at least 300 virions/\u03bcL in saliva collected from patients in a clinical setting (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "7bd84ea1-8109-4af5-909b-e00cf16e11c9",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C73",
+      "claim": "COV-ID has a limit of detection of at least 300 virions/\u03bcL in saliva collected from patients in a clinical setting.",
+      "claim_type": "EXPLICIT",
+      "source": "COV-ID has a limit of detection of 5\u201310 virions of SARS-CoV-2 per \u03bcL in contrived saliva samples (Figure 2D) and at least 300 virions/\u03bcL in saliva collected from patients in a clinical setting (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "143130ff-b0f9-4a33-befe-34625fa156b6",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C74",
+      "claim": "The limit of detection in clinical saliva specimens is likely lower than 300 virions/\u00b5L but could not be determined because the lowest viral load of all positive samples was 300 virions/\u00b5L.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the limit of detection in clinical saliva specimens is likely lower, but it could not be determined because the lowest viral load of all our positive samples was 300 virions/\u00b5L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of the available clinical samples.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "d60b821e-9cb9-40f4-b26a-def2ca2e2a46",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C75",
+      "claim": "RT-qPCR-based estimates of SARS-CoV-2 viral loads averaged 380 copies/\u00b5L in saliva samples of infected individuals in one study.",
+      "claim_type": "EXPLICIT",
+      "source": "In one study, RT-qPCR-based estimates of SARS-CoV-2 viral loads averaged 380 copies/\u00b5L in saliva samples of infected individuals (Wyllie et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "dd85cb73-a8cf-459e-9e19-8a008ebcde28",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C76",
+      "claim": "Some meta analyses indicated no significant difference in viral load at the upper respiratory tract for symptomatic vs. asymptomatic individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Some meta analyses indicated no significant difference in viral load at the upper respiratory tract for symptomatic vs. asymptomatic individuals (Walsh et al., 2020; Zuin et al., 2021), and levels of viral RNA in saliva are in general comparable to those found in NP swabs (Butler-Laporte et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "cd2d72cb-fa62-4ca3-9fee-0ccb17264aad",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C77",
+      "claim": "Levels of viral RNA in saliva are in general comparable to those found in NP swabs.",
+      "claim_type": "EXPLICIT",
+      "source": "Some meta analyses indicated no significant difference in viral load at the upper respiratory tract for symptomatic vs. asymptomatic individuals (Walsh et al., 2020; Zuin et al., 2021), and levels of viral RNA in saliva are in general comparable to those found in NP swabs (Butler-Laporte et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "547f9537-f200-4136-8d5b-dd7a8658c74b",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C78",
+      "claim": "The limit of detection of COV-ID matches and exceeds what is needed to detect viral RNA in saliva of infectious and potentially contagious individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This would suggest that the limit of detection of COV-ID matches and exceeds what is needed to detect viral RNA in saliva of infectious and potentially contagious individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing COV-ID's limit of detection with published viral loads in infected individuals.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "b7ef36f5-4626-4b0c-9e7d-41782af0c078",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C79",
+      "claim": "Population-level monitoring of SARS-CoV-2 infections will be critical while vaccines are being distributed to the global population.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-level monitoring of SARS-CoV-2 infections will be critical while vaccines are being distributed to the global population, and continued surveillance will likely remain an effective strategy to protect immunocompromised and unvaccinated members in society and within entities and organizations where regular monitoring is critical to social isolation strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a perspective on public health strategy based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "15060cdc-a54f-456f-8bd9-532b1de46132",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C80",
+      "claim": "76% of reads from saliva COV-ID reactions were informative after read trimming, alignment, and filtering.",
+      "claim_type": "EXPLICIT",
+      "source": "After read trimming, alignment, and filtering (see Materials and Methods), 76% of reads from saliva COV-ID reactions were informative (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data analysis shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "c45d7051-bf02-4bfb-a92a-510e5493eabb",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C81",
+      "claim": "Samples without added template consist of predominantly adapter dimers.",
+      "claim_type": "IMPLICIT",
+      "source": "Samples without added template consist of predominantly adapter dimers.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1C where negative control samples show high proportions of adapter-trimmed reads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "3e39b8f7-4737-4f4c-acc3-48d14e6d94a9",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C82",
+      "claim": "COV-ID can generate ready-to-sequence libraries directly from saliva absorbed onto filter paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, COV-ID can generate ready-to-sequence libraries directly from saliva absorbed onto filter paper, which would allow for major streamlining of the often-challenging logistical process of sample collection (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "cc9059a2-cbe7-4fc1-adad-f8ea7e9aed50",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C83",
+      "claim": "COV-ID libraries for thousands and tens of thousands of samples can be generated with relatively minimum effort in biological laboratories with basic equipment and easily accessible reagents.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, COV-ID libraries for thousands and tens of thousands of samples can be generated with relatively minimum effort in biological laboratories with basic equipment and easily accessible reagents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the design and requirements of the method as described throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "62d1a332-fbb1-4259-bbbd-b9f93c8fa108",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C84",
+      "claim": "Amplified COV-ID DNA libraries could be shipped to remote facilities for sequencing in a cost-effective manner.",
+      "claim_type": "EXPLICIT",
+      "source": "While sequencing instruments are relatively specialized and not ubiquitous, amplified COV-ID DNA libraries could be shipped to remote facilities for sequencing in a cost-effective manner as previously proposed by the inventors of LAMP-seq (Ludwig et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on precedent from another method, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "5753d76a-cac7-4274-98d9-1e7e95105d12",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C85",
+      "claim": "There remain points that require optimization prior to successful large-scale application of COV-ID including developing primer sets to sequence the spike of SARS-CoV-2 for genomic surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "While our method demonstrates promise, we note that there remain some points that require optimization prior to successful large-scale application of COV-ID in a population setting, including developing primer sets to sequence the spike of SARS-CoV-2 for use in genomic surveillance of emerging variants, or validating individual RT-LAMP barcodes to ensure optimal throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of limitations and future work needed.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "a3d16cf9-3f99-4bd8-86a6-7d347037909e",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C86",
+      "claim": "The N2 synthetic calibration standard contains a 7 nt divergent sequence while maintaining all other LAMP primer binding sites and identical GC content.",
+      "claim_type": "EXPLICIT",
+      "source": "A synthetic calibration standard for SARS-CoV-2 N2 RNA was synthesized including a 7 nt divergent sequence (in red), maintaining all other LAMP primer binding sites and identical GC content.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the design of the synthetic standard, shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "cb1125b5-a987-4258-ab63-68aabb0621ff",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C87",
+      "claim": "The synthetic calibration standard RNA was efficiently amplified via RT-LAMP with the N2 primer set.",
+      "claim_type": "EXPLICIT",
+      "source": "After confirming that the calibration control template was efficiently amplified via RT-LAMP with the N2 primer set (Figure 2\u2014figure supplement 2B), we performed pooled COV-ID on virus-containing saliva in the presence of 20 fg of N2 synthetic calibration control RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "83296a50-276f-436b-9819-fca8c815bf47",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C88",
+      "claim": "RT-LAMP proceeds through a set of primed and self-primed steps to yield many inverted copies of the target sequence spanning a range of molecular sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-LAMP requires 4\u20136 primers that recognize different regions of the target sequence (Nagamine et al., 2002; Notomi et al., 2000) and proceeds through a set of primed and self-primed steps to yield many inverted copies of the target sequence spanning a range of molecular sizes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism of LAMP, supported by citations and illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "35fbbb9b-526d-4fad-914b-ada5dbf19388",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C89",
+      "claim": "The forward inner primer (FIP) and backward inner primer (BIP) are incorporated in opposite orientation across the target sequence in the final amplified product.",
+      "claim_type": "EXPLICIT",
+      "source": "The forward inner primer (FIP) and backward inner primer (BIP), which recognize internal sequences, are incorporated in opposite orientation across the target sequence in the final amplified product (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the LAMP mechanism, illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "8f5d6716-d568-4f99-88c6-c9f9650c698d",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C90",
+      "claim": "COV-ID introduces patient-specific barcodes and artificial sequences that allow for PCR amplification of a small product compatible with Illumina sequencing library construction.",
+      "claim_type": "EXPLICIT",
+      "source": "We exploited this flexibility and introduced (1) patient-specific barcodes as shown previously (Peto et al., 2021; Ludwig et al., 2021; Yamagishi et al., 2017) and (2) artificial sequences that allowed for PCR amplification of a small product compatible with Illumina sequencing library construction (Figure 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the innovation of the COV-ID method, supported by citations and experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "4e57c0b4-ced0-4698-851d-ca8121ec73af",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C91",
+      "claim": "Combining individual barcodes embedded in the product at the RT-LAMP step with dual indexes introduced at the pool level during the PCR step allows for deconvolution of thousands or tens of thousands of samples in a single sequencing run.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining individual barcodes embedded in the product at the RT-LAMP step with dual indexes introduced at the pool level during the PCR step allows for deconvolution of thousands or tens of thousands of samples in a single sequencing run.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the two-dimensional barcoding strategy, which is demonstrated experimentally throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "1e5e45b1-3912-46ee-a19d-c6a17f88aab2",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C92",
+      "claim": "Saliva preparation for RT-LAMP uses TCEP/EDTA treatment that inactivates SARS-CoV-2 virions, saliva-borne RNases and LAMP inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "We prepared human saliva for RT-LAMP using a previously described treatment that inactivates SARS-CoV-2 virions, saliva-borne RNases and LAMP inhibitors (Figure 2A; Rabe and Cepko, 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to published research and shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "5c99703b-2a65-49ba-a194-867905699bf3",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C93",
+      "claim": "In several SARS-CoV-2 FDA approved tests, parallel amplification of a host amplicon is implemented as a metric for sample integrity and quality.",
+      "claim_type": "EXPLICIT",
+      "source": "In several SARS-CoV-2 FDA approved tests, parallel amplification of a host (human) amplicon is implemented as a metric for sample integrity and quality. That is, if no human RNA is amplified from a clinical sample, no conclusion can be drawn from a negative test result (Babiker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established practice in diagnostic testing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "706dff57-6466-40b4-968f-8b7ec77e6938",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C94",
+      "claim": "If no human RNA is amplified from a clinical sample, no conclusion can be drawn from a negative test result.",
+      "claim_type": "EXPLICIT",
+      "source": "In several SARS-CoV-2 FDA approved tests, parallel amplification of a host (human) amplicon is implemented as a metric for sample integrity and quality. That is, if no human RNA is amplified from a clinical sample, no conclusion can be drawn from a negative test result (Babiker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established practice in diagnostic testing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "8fb71091-5652-4fe3-90a9-2f337ffad8b7",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C95",
+      "claim": "In most tests, viral and human amplicons must be detected separately, resulting in a multiplication of the number of reactions to be performed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in most tests, viral and human amplicons must be detected separately, resulting in a multiplication of the number of reactions to be performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about conventional diagnostic testing approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "ad3ee29a-cf4f-4d64-9d5f-fa3af3047801",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C96",
+      "claim": "The deep sequencing nature of COV-ID allows for simultaneous detection of viral, human, and other control amplicons without increasing the number of necessary reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that the deep sequencing nature of COV-ID would allow for simultaneous detection of viral, human, and other control amplicons, without increasing the number of necessary reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally throughout the manuscript with multiplex detection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "021d8c93-82d8-42c9-b854-33af5d062028",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C97",
+      "claim": "The PCR handles inserted in the BIP and FIP are the same for all RT-LAMP amplicons, allowing the same P5 and P7 Illumina primers to amplify all RT-LAMP products obtained with COV-ID-modified primer sets.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, given that the PCR handles inserted in the BIP and FIP are the same for all RT-LAMP amplicons (Figure 1B), the same P5 and P7 Illumina primers allow the simultaneous amplification of all RT-LAMP products obtained with COV-ID-modified primer sets (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the design feature that enables multiplexing, illustrated in Figures 1B and 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "40dfd437-915e-454a-8c8e-fcca8f3736f6",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C98",
+      "claim": "STATHERIN is a gene expressed specifically in saliva.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify a suitable human control, we compared conventional RT-LAMP primers for the mRNA of ACTB (Butler et al., 2021) or STATHERIN (STATH), a gene expressed specifically in saliva (Satoh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "a9bf07b0-3330-4945-a413-53b6be0c4530",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "claim_id": "C99",
+      "claim": "STATH mRNA is a better proxy than ACTB to measure RNA integrity in saliva samples because ACTB amplification includes contributions from genomic DNA.",
+      "claim_type": "IMPLICIT",
+      "source": "Whereas addition of RNase A abolished the STATH signal, it was ineffectual for ACTB (Figure 2\u2014figure supplement 1B), suggesting that amplification of genomic DNA made considerable contributions to the RT-LAMP signal observed for the latter. Therefore, we utilized STATH mRNA as a human control in subsequent experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the RNase sensitivity experiments and explicitly stated as the reason for choosing STATH.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b3a06d30-299b-4898-9316-f7a1b10551ef",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "COV-ID successfully modifies RT-LAMP primers to introduce patient-specific barcodes and PCR handles, enabling two-dimensional barcoding for high-throughput sequencing. Modified primers showed slightly delayed but successful amplification, and the approach was validated on both viral (SARS-CoV-2) and human (ACTB) targets with correct product generation confirmed by Sanger sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 and C90 provide converging experimental evidence that the primer modification strategy works: prior literature supports primer tolerance (C22), experimental data shows successful amplification with modified primers (C23-C25), and the two-dimensional barcoding design is clearly demonstrated (C90-C91). The method description (C2) is well-supported by the experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "758c5d12-d957-4b2b-87aa-85526f6e4c86",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "COV-ID achieves a limit of detection of 5-10 virions per \u03bcL in contrived saliva samples, which is comparable or superior to established testing protocols. In validation experiments, 95% (19/20) of samples with spiked-in virus were correctly classified as positive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C32, C33, C72 are directly supported by experimental data in Figure 2D showing consistent detection at 5 virions/\u03bcL. The comparison to established protocols (C34) is supported by citation and experimental data. The 95% classification accuracy (C32) provides strong quantitative validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "4a6eb02f-8e89-4953-8f29-0b9d8cfc7a63",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "COV-ID showed 100% (8/8) concordance with RT-qPCR on clinical saliva samples, with a limit of detection of at least 300 virions/\u03bcL in clinical settings. The actual limit may be lower but could not be determined due to sample limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C38, and C73 are directly supported by experimental data in Figure 2E showing perfect concordance with clinical RT-qPCR. The acknowledgment of uncertainty about the true lower limit (C74) is appropriately cautious given the available data. The small sample size (n=8) is a limitation but the concordance is clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "40d67def-f58d-4ec1-beef-b750f5a32edb",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "COV-ID validation on 120 clinical NP swab samples showed good agreement with RT-qPCR, though with inferior sensitivity (10 false negatives). However, 7 of these false negatives had unreliable Ct values >36, and COV-ID demonstrated good specificity and sensitivity when samples with Ct <36 or <31 were considered true positives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 present a balanced assessment supported by experimental data in Figure 2\u2014figure supplement 3. The acknowledgment of reduced sensitivity (C44) is honest, but the contextualization that most false negatives had unreliable Ct values (C45) and the ROC/precision-recall analysis (C46) provide appropriate nuance. The result is well-supported despite the limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "ad1b2e7c-adb0-486c-b0d4-b3b9fcf3783c",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "COV-ID enables simultaneous detection of multiple amplicons (SARS-CoV-2, influenza A, STATHERIN, and synthetic calibration standard) in a single reaction. Multiplex detection showed good performance for single pathogens (7/8 for SARS-CoV-2, 6/8 for H1N1) but reduced sensitivity for dual infections (11/16), though at least one pathogen was detected in all dual-infection samples (16/16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C48-C51 are supported by experimental data in Figure 3. The multiplexing capability is clearly demonstrated (C96-C97), and the authors appropriately acknowledge reduced sensitivity in dual infections (C49) while noting that at least one pathogen is always detected (C50). The inference about interference (C51) is reasonable given the data pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "0fa57328-6f91-4a9c-9033-d39defb18da6",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "COV-ID can be performed directly on saliva absorbed on filter paper, with a limit of detection of 320 copies/\u03bcL. While this is higher than in-solution COV-ID, it remains within the useful range for detecting infections and simplifies sample collection logistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C53-C56, and C82 are supported by experimental data in Figure 4. The paper-based approach is clearly demonstrated (C53-C54), and the limit of detection (C55) is appropriately contextualized as higher than in-solution but still clinically useful (C56). This represents a practical innovation for sample collection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "COV-ID's two-dimensional barcoding strategy and isothermal amplification enable testing of thousands to tens of thousands of samples (9,216-36,864) in a single sequencing run with limited equipment. Theoretical sequencing cost could be as low as $0.04 per sample, with results potentially available within 16 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C62-C65, C68-C71, and C83 describe the scalability and throughput of COV-ID. The two-dimensional barcoding strategy is experimentally validated (C62, C65), and the throughput calculations (C64, C68) are based on sound mathematical reasoning given the experimental design. Cost estimates (C69) and turnaround time (C70) are reasonable projections. The claim about minimal equipment (C4, C83) is supported by the method design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "cc7b02b2-7e60-4029-9e08-1e858c68bc15",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "STATHERIN (STATH) was selected as the human control for COV-ID because it is saliva-specific and its mRNA signal is RNase-sensitive, unlike ACTB which showed contributions from genomic DNA amplification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 and C98-C99 are supported by experimental data in Figure 2\u2014figure supplement 1B showing differential RNase sensitivity. The choice of STATH over ACTB is well-justified by the experimental evidence and the citation supporting STATH's saliva-specific expression (C98). This is an important methodological detail.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "be791786-dd94-4834-8098-0809a82b0095",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Out of 32 barcodes tested, 25 successfully amplified all three target RNAs (N2, ACTB, STATH). Some barcodes inhibited RT-LAMP, possibly due to internal micro-homology. Pooled samples showed no loss of sensitivity or specificity compared to individual PCRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by experimental data in Figure 2\u2014figure supplement 1D and 1E. The barcode validation (C35) is clearly demonstrated, the explanation for failures (C36) is reasonable though speculative, and the pooling validation (C37) is experimentally confirmed. This validates a key technical component of the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "6ef97a2c-998d-4c63-8df5-56584a1aa1ae",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A synthetic N2 calibration standard with a 7-nt divergent sequence was developed and validated for COV-ID. Addition of this standard reduced variability in read numbers across samples and lowered false positive signals in negative samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C86-C87 are supported by experimental data in Figure 2\u2014figure supplement 2. The design of the synthetic standard (C86) is clear, its efficient amplification is demonstrated (C87), and the benefits for normalization (C41-C42) are experimentally validated. The rationale (C39-C40) is supported by citations and established practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "dc9d3b84-01c7-41b0-905a-63408f4d13d4",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Saliva is used as the sample material for COV-ID, prepared using TCEP/EDTA treatment that inactivates SARS-CoV-2 virions, saliva-borne RNases, and LAMP inhibitors. Saliva has been validated as a viable template for various nucleic acid amplification methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 and C92 are well-supported by multiple citations to published research demonstrating saliva's utility for COVID-19 diagnostics and various amplification methods. The TCEP/EDTA treatment (C92) is supported by citation and shown in Figure 2A. This establishes the rationale for the sample type choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "13f8a1b9-7b7b-40a5-96c6-7c5b486e9e60",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Published studies indicate that viral loads in saliva average ~380 copies/\u03bcL in infected individuals, with comparable levels between symptomatic and asymptomatic individuals and between saliva and NP swabs. This suggests COV-ID's limit of detection is sufficient for detecting infectious individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 are supported by citations to published research providing context for viral loads in clinical samples. The inference about COV-ID's adequacy (C78) is reasonable given the comparison between COV-ID's limit of detection and published viral loads. This provides important clinical context for the method's utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "249a8f8b-af09-40a0-8c86-e5e6e77f2e37",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "COV-ID sequencing validation showed a single band of expected size in viral samples, with reads aligning uniformly to the N gene. After quality filtering, 76% of reads were informative, with negative controls consisting predominantly of adapter dimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C80-C81 are supported by experimental data in Figures 2B, 2C, and Figure 2\u2014figure supplement 1C. These claims describe technical validation of the sequencing approach and data quality, which are important for establishing method reliability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "b677174a-8b48-40d2-b99a-5764ab1b5374",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "COV-ID could potentially be adapted for viral variant detection with carefully designed primers, as demonstrated by other RT-LAMP studies. However, optimization work remains including developing spike-targeting primers for genomic surveillance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C67 describe potential future applications supported by citations, but C85 acknowledges this requires additional development work. The capability is plausible given precedent (C67) but has not been demonstrated in this study. This represents future work rather than a current result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "220913de-5991-4440-919d-aebd4282a36b",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Amplified COV-ID libraries could be shipped to remote facilities for sequencing in a cost-effective manner, as proposed for similar methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is a proposal based on precedent from another method (LAMP-seq) but has not been experimentally validated in this study. While plausible, this represents a suggested application rather than a demonstrated capability. The feasibility would depend on factors not tested here (shipping stability, turnaround time impact, etc.).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "94f8f919-048a-4211-b6ce-7fc1b9d62151",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on the COVID-19 pandemic, testing challenges, and the need for population-level surveillance. This includes pandemic statistics, effectiveness of interventions, barriers to testing, and the ongoing importance of surveillance despite vaccination efforts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C16, C57-C61, and C79 provide context and motivation for the work. These are supported by citations to published research and represent established knowledge about the pandemic and testing landscape. While important for framing the study, these are background claims rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    },
+    {
+      "id": "753efb24-b44c-458c-b803-cc4674d34fd7",
+      "content_id": "310e90ac-1816-427b-874a-6ef74036c3c5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript reviews existing sequencing-based and RT-LAMP-based diagnostic methods, their advantages and limitations, and established practices in diagnostic testing including the use of host controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21, C47, C52, C88-C89, and C93-C95 describe prior work and established methods. These are supported by citations to published research and represent accurate characterization of the field. This provides important context for positioning COV-ID relative to existing approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:49.728117Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "23669c12-1bfe-4168-9b9b-d8b9537cbfbc",
+      "result_id": "b3a06d30-299b-4898-9316-f7a1b10551ef"
+    },
+    {
+      "claim_id": "d10949c6-3eaf-478b-bf68-ef336c6682de",
+      "result_id": "b3a06d30-299b-4898-9316-f7a1b10551ef"
+    },
+    {
+      "claim_id": "6de53ff5-019a-423a-96ee-01ce17f6c594",
+      "result_id": "b3a06d30-299b-4898-9316-f7a1b10551ef"
+    },
+    {
+      "claim_id": "075f573f-a22a-4299-9cd7-6e6a202b4b14",
+      "result_id": "b3a06d30-299b-4898-9316-f7a1b10551ef"
+    },
+    {
+      "claim_id": "452825bf-0c50-4d1a-815d-0decb206247f",
+      "result_id": "b3a06d30-299b-4898-9316-f7a1b10551ef"
+    },
+    {
+      "claim_id": "8f5d6716-d568-4f99-88c6-c9f9650c698d",
+      "result_id": "b3a06d30-299b-4898-9316-f7a1b10551ef"
+    },
+    {
+      "claim_id": "4e57c0b4-ced0-4698-851d-ca8121ec73af",
+      "result_id": "b3a06d30-299b-4898-9316-f7a1b10551ef"
+    },
+    {
+      "claim_id": "8a63a35a-5cdd-4dbd-8bff-991b14f7de83",
+      "result_id": "758c5d12-d957-4b2b-87aa-85526f6e4c86"
+    },
+    {
+      "claim_id": "f523bcf2-dd20-4eb6-8bab-0884024fbb76",
+      "result_id": "758c5d12-d957-4b2b-87aa-85526f6e4c86"
+    },
+    {
+      "claim_id": "a8abcaaa-77f1-4f23-9bd3-815836bdf69c",
+      "result_id": "758c5d12-d957-4b2b-87aa-85526f6e4c86"
+    },
+    {
+      "claim_id": "62fb59bf-2345-43c5-8e53-4e906df28f0a",
+      "result_id": "758c5d12-d957-4b2b-87aa-85526f6e4c86"
+    },
+    {
+      "claim_id": "6427257e-e7e1-44a5-9675-fa3b40967491",
+      "result_id": "758c5d12-d957-4b2b-87aa-85526f6e4c86"
+    },
+    {
+      "claim_id": "ff042c57-b31f-4e14-b89b-4e00fef21fea",
+      "result_id": "4a6eb02f-8e89-4953-8f29-0b9d8cfc7a63"
+    },
+    {
+      "claim_id": "ab186c48-fdc4-4ba5-8d4a-1cde737a3a20",
+      "result_id": "4a6eb02f-8e89-4953-8f29-0b9d8cfc7a63"
+    },
+    {
+      "claim_id": "7bd84ea1-8109-4af5-909b-e00cf16e11c9",
+      "result_id": "4a6eb02f-8e89-4953-8f29-0b9d8cfc7a63"
+    },
+    {
+      "claim_id": "143130ff-b0f9-4a33-befe-34625fa156b6",
+      "result_id": "4a6eb02f-8e89-4953-8f29-0b9d8cfc7a63"
+    },
+    {
+      "claim_id": "b7b5dd79-37fc-4888-94f6-4c2b44dd0964",
+      "result_id": "40d67def-f58d-4ec1-beef-b750f5a32edb"
+    },
+    {
+      "claim_id": "47ac6964-6034-4ac7-bcf5-c1dc9f07b168",
+      "result_id": "40d67def-f58d-4ec1-beef-b750f5a32edb"
+    },
+    {
+      "claim_id": "c57ad820-e0e6-4eb2-bace-0ae4e7f46837",
+      "result_id": "40d67def-f58d-4ec1-beef-b750f5a32edb"
+    },
+    {
+      "claim_id": "b2e447f7-7a52-4afb-b960-08bc32813df1",
+      "result_id": "40d67def-f58d-4ec1-beef-b750f5a32edb"
+    },
+    {
+      "claim_id": "64ce63a8-347d-4315-b5c6-ae57ac2b43b9",
+      "result_id": "ad1b2e7c-adb0-486c-b0d4-b3b9fcf3783c"
+    },
+    {
+      "claim_id": "4dd13ea0-e886-42a5-9c0e-f90ba7691be2",
+      "result_id": "ad1b2e7c-adb0-486c-b0d4-b3b9fcf3783c"
+    },
+    {
+      "claim_id": "65527ac8-e36d-433c-88ce-2d86b02fdae1",
+      "result_id": "ad1b2e7c-adb0-486c-b0d4-b3b9fcf3783c"
+    },
+    {
+      "claim_id": "f85b2711-09df-41f6-8e95-8843ddcad5d6",
+      "result_id": "ad1b2e7c-adb0-486c-b0d4-b3b9fcf3783c"
+    },
+    {
+      "claim_id": "f31b7f55-ced8-41f4-a6c6-d07ff2f689e4",
+      "result_id": "ad1b2e7c-adb0-486c-b0d4-b3b9fcf3783c"
+    },
+    {
+      "claim_id": "164f3330-fa1a-42a3-a8e4-a8e25320e659",
+      "result_id": "ad1b2e7c-adb0-486c-b0d4-b3b9fcf3783c"
+    },
+    {
+      "claim_id": "ad3ee29a-cf4f-4d64-9d5f-fa3af3047801",
+      "result_id": "ad1b2e7c-adb0-486c-b0d4-b3b9fcf3783c"
+    },
+    {
+      "claim_id": "021d8c93-82d8-42c9-b854-33af5d062028",
+      "result_id": "ad1b2e7c-adb0-486c-b0d4-b3b9fcf3783c"
+    },
+    {
+      "claim_id": "13fa96ff-f42d-43d9-8e10-c6b4eeb3b5dd",
+      "result_id": "0fa57328-6f91-4a9c-9033-d39defb18da6"
+    },
+    {
+      "claim_id": "ca3b7cf2-b340-4097-ae8c-ee6a590f0734",
+      "result_id": "0fa57328-6f91-4a9c-9033-d39defb18da6"
+    },
+    {
+      "claim_id": "9b48f29a-e29e-4e0c-973a-4d7fed7b66ed",
+      "result_id": "0fa57328-6f91-4a9c-9033-d39defb18da6"
+    },
+    {
+      "claim_id": "849ee59b-eb6d-4ae3-9d34-862c01631650",
+      "result_id": "0fa57328-6f91-4a9c-9033-d39defb18da6"
+    },
+    {
+      "claim_id": "1628214f-f83a-4753-bdea-35de788dace9",
+      "result_id": "0fa57328-6f91-4a9c-9033-d39defb18da6"
+    },
+    {
+      "claim_id": "3e39b8f7-4737-4f4c-acc3-48d14e6d94a9",
+      "result_id": "0fa57328-6f91-4a9c-9033-d39defb18da6"
+    },
+    {
+      "claim_id": "5b89d961-b8c4-40c8-ac78-cd46e780e3ce",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "e2a309dc-75ab-4cb4-92e5-e8227db91e7a",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "9e05205e-dca3-498d-8edc-e087397fa172",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "b78dfa26-f754-432e-bb00-8ba9a29c161f",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "0d547aa2-42f7-4a96-82cb-13d18a66c688",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "eb7ac1d4-2efe-4f4f-bafb-096ab837b7d4",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "9fc58e2e-e3f8-4717-8342-2a819c8f501a",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "9bec42bf-aa78-41eb-bf78-bceca112b7c4",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "7223a5ba-8c24-4051-a016-d995479c4410",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "cc9059a2-cbe7-4fc1-adad-f8ea7e9aed50",
+      "result_id": "d858ac5e-a7be-4080-b28f-4cafb16d2c39"
+    },
+    {
+      "claim_id": "810592a5-e2f6-4d9a-bce5-1ffb056ba3ec",
+      "result_id": "cc7b02b2-7e60-4029-9e08-1e858c68bc15"
+    },
+    {
+      "claim_id": "fc891317-647f-4e68-a606-8db0d1b0a0ac",
+      "result_id": "cc7b02b2-7e60-4029-9e08-1e858c68bc15"
+    },
+    {
+      "claim_id": "40dfd437-915e-454a-8c8e-fcca8f3736f6",
+      "result_id": "cc7b02b2-7e60-4029-9e08-1e858c68bc15"
+    },
+    {
+      "claim_id": "a9bf07b0-3330-4945-a413-53b6be0c4530",
+      "result_id": "cc7b02b2-7e60-4029-9e08-1e858c68bc15"
+    },
+    {
+      "claim_id": "408cfd5a-cf09-40f7-afdb-3f403cc1cfb3",
+      "result_id": "be791786-dd94-4834-8098-0809a82b0095"
+    },
+    {
+      "claim_id": "00b88192-452c-4b43-82c0-9228bb5c7dd6",
+      "result_id": "be791786-dd94-4834-8098-0809a82b0095"
+    },
+    {
+      "claim_id": "1b7e5373-6756-493b-92c3-605186aee108",
+      "result_id": "be791786-dd94-4834-8098-0809a82b0095"
+    },
+    {
+      "claim_id": "52c05af2-152c-4bc2-9037-736e85e9aa2e",
+      "result_id": "6ef97a2c-998d-4c63-8df5-56584a1aa1ae"
+    },
+    {
+      "claim_id": "d62a0fc1-fc51-489c-af48-f359e8fb66ff",
+      "result_id": "6ef97a2c-998d-4c63-8df5-56584a1aa1ae"
+    },
+    {
+      "claim_id": "ed830353-770a-4d8b-a8d1-8246b40d0f60",
+      "result_id": "6ef97a2c-998d-4c63-8df5-56584a1aa1ae"
+    },
+    {
+      "claim_id": "bcb3e54f-7b5e-4158-a002-a48fb217b227",
+      "result_id": "6ef97a2c-998d-4c63-8df5-56584a1aa1ae"
+    },
+    {
+      "claim_id": "a3d16cf9-3f99-4bd8-86a6-7d347037909e",
+      "result_id": "6ef97a2c-998d-4c63-8df5-56584a1aa1ae"
+    },
+    {
+      "claim_id": "cb1125b5-a987-4258-ab63-68aabb0621ff",
+      "result_id": "6ef97a2c-998d-4c63-8df5-56584a1aa1ae"
+    },
+    {
+      "claim_id": "d2e4f14a-c668-4b30-ae89-77de02d1211c",
+      "result_id": "dc9d3b84-01c7-41b0-905a-63408f4d13d4"
+    },
+    {
+      "claim_id": "f46057b5-1878-43c9-beca-566aeb1efca0",
+      "result_id": "dc9d3b84-01c7-41b0-905a-63408f4d13d4"
+    },
+    {
+      "claim_id": "1e5e45b1-3912-46ee-a19d-c6a17f88aab2",
+      "result_id": "dc9d3b84-01c7-41b0-905a-63408f4d13d4"
+    },
+    {
+      "claim_id": "d60b821e-9cb9-40f4-b26a-def2ca2e2a46",
+      "result_id": "13f8a1b9-7b7b-40a5-96c6-7c5b486e9e60"
+    },
+    {
+      "claim_id": "dd85cb73-a8cf-459e-9e19-8a008ebcde28",
+      "result_id": "13f8a1b9-7b7b-40a5-96c6-7c5b486e9e60"
+    },
+    {
+      "claim_id": "cd2d72cb-fa62-4ca3-9fee-0ccb17264aad",
+      "result_id": "13f8a1b9-7b7b-40a5-96c6-7c5b486e9e60"
+    },
+    {
+      "claim_id": "547f9537-f200-4136-8d5b-dd7a8658c74b",
+      "result_id": "13f8a1b9-7b7b-40a5-96c6-7c5b486e9e60"
+    },
+    {
+      "claim_id": "ed714ac5-b980-4d0b-8d3a-b181cc109fe8",
+      "result_id": "249a8f8b-af09-40a0-8c86-e5e6e77f2e37"
+    },
+    {
+      "claim_id": "0ed1daeb-a97e-4366-ab71-d94fed09750d",
+      "result_id": "249a8f8b-af09-40a0-8c86-e5e6e77f2e37"
+    },
+    {
+      "claim_id": "15060cdc-a54f-456f-8bd9-532b1de46132",
+      "result_id": "249a8f8b-af09-40a0-8c86-e5e6e77f2e37"
+    },
+    {
+      "claim_id": "c45d7051-bf02-4bfb-a92a-510e5493eabb",
+      "result_id": "249a8f8b-af09-40a0-8c86-e5e6e77f2e37"
+    },
+    {
+      "claim_id": "466e7941-cd6c-49b0-8d8d-58323a55795a",
+      "result_id": "b677174a-8b48-40d2-b99a-5764ab1b5374"
+    },
+    {
+      "claim_id": "c0a118d4-6753-445b-b57a-ebc7ff439804",
+      "result_id": "b677174a-8b48-40d2-b99a-5764ab1b5374"
+    },
+    {
+      "claim_id": "5753d76a-cac7-4274-98d9-1e7e95105d12",
+      "result_id": "b677174a-8b48-40d2-b99a-5764ab1b5374"
+    },
+    {
+      "claim_id": "62d1a332-fbb1-4259-bbbd-b9f93c8fa108",
+      "result_id": "220913de-5991-4440-919d-aebd4282a36b"
+    },
+    {
+      "claim_id": "aa477b17-f683-4d89-bcbd-f760544ced4c",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "ccabd5c3-792a-4b1e-97bd-aa9462cc98f5",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "14c86398-785d-4ab7-b08e-15ed2a29f50a",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "9ac685f6-ee91-4e62-af4a-70c0d94fe878",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "94868b5a-ddad-434e-94b9-c9ac0ba11499",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "b144bee9-f586-4ff0-ad3d-97c0ba7f4fac",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "8cf74064-cdff-4e1b-b9d9-8e965dfd2a65",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "8e208508-7004-451e-8914-8e96535e426e",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "18a0fe1c-1695-443e-947a-01642edfcf2c",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "8bb3ea20-cd80-450e-af67-e5955ae4470e",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "b0579dca-bf78-4515-8bb4-44384d2971ec",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "d06bb103-dc92-461b-9dd4-e6a2b30facb5",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "fb02640a-007c-47c4-a597-43853e49dc59",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "f1e94b65-596d-4cd0-928a-4d5320c5b551",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "b7ef36f5-4626-4b0c-9e7d-41782af0c078",
+      "result_id": "94f8f919-048a-4211-b6ce-7fc1b9d62151"
+    },
+    {
+      "claim_id": "b1164ffc-ff4a-446c-aa80-d2efaa6fa0eb",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "485f9cd3-0b8e-4c75-9d0c-9b33d4b6e3e9",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "de3de98d-ae6a-4f6f-b795-471c340a8436",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "05085e1e-aafc-4a9c-a218-f16e582dc95e",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "7848ccba-06fc-4daa-b778-a5660aa81969",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "db9324d2-5ab1-4653-901f-04d51281ac6e",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "d55811ab-fb9f-41d1-a3e4-eb7a93ff00cd",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "83296a50-276f-436b-9819-fca8c815bf47",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "35fbbb9b-526d-4fad-914b-ada5dbf19388",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "5c99703b-2a65-49ba-a194-867905699bf3",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "706dff57-6466-40b4-968f-8b7ec77e6938",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    },
+    {
+      "claim_id": "8fb71091-5652-4fe3-90a9-2f337ffad8b7",
+      "result_id": "753efb24-b44c-458c-b803-cc4674d34fd7"
+    }
+  ],
+  "comparisons": []
+}

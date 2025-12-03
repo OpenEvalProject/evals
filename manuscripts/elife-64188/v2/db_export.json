@@ -1,0 +1,1628 @@
+{
+  "submission": {
+    "id": "46f6a971-e3f6-47bb-9fba-33399fde0f07",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:44:21.232222Z",
+    "updated_at": "2025-12-03T05:44:21.232222Z"
+  },
+  "content": [
+    {
+      "id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "submission_id": "46f6a971-e3f6-47bb-9fba-33399fde0f07",
+      "content_type": "manuscript",
+      "content_text": "# Mendelian randomization analysis provides causality of smoking on the expression of ACE2, a putative SARS-CoV-2 receptor\n\n## Authors\n\n- Hui Liu<sup>1</sup> ([ORCID: 0000-0002-5531-3640](https://orcid.org/0000-0002-5531-3640))\n- Junyi Xin<sup>2</sup> ([ORCID: 0000-0001-6677-3936](https://orcid.org/0000-0001-6677-3936))\n- Sheng Cai<sup>3</sup>\n- Xia Jiang<sup>4</sup> ([ORCID: 0000-0001-5878-8986](https://orcid.org/0000-0001-5878-8986)) \u2020\n\n### Affiliations\n\n1. Biomedical Research Center, Zhejiang Provincial Key Laboratory of Laparoscopic Technology, Sir Run Run Shaw Hospital, School of Medicine, Zhejiang University Hangzhou China\n2. Department of Environmental Genomics, Jiangsu Key Laboratory of Cancer Biomarkers, Prevention and Treatment, Collaborative Innovation Center for Cancer Personalized Medicine, School of Public Health, Nanjing Medical University Nanjing China\n3. Institute of Drug Metabolism and Pharmaceutical Analysis, Zhejiang Province Key Laboratory of Anti-Cancer Drug Research, Zhejiang University Hangzhou China\n4. Department of Clinical Neuroscience, Center for Molecular Medicine, Karolinska Institute Stockholm Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:To understand a causal role of modifiable lifestyle factors in angiotensin-converting enzyme 2 (ACE2) expression (a putative severe acute respiratory syndrome coronavirus 2 [SARS-CoV-2] receptor) across 44 human tissues/organs, and in coronavirus disease 2019 (COVID-19) susceptibility and severity, we conducted a phenome-wide two-sample Mendelian randomization (MR) study.Methods:More than 500 genetic variants were used as instrumental variables to predict smoking and alcohol consumption. Inverse-variance weighted approach was adopted as the primary method to estimate a causal association, while MR-Egger regression, weighted median, and MR pleiotropy residual sum and outlier (MR-PRESSO) were performed to identify potential horizontal pleiotropy.Results:We found that genetically predicted smoking intensity significantly increased ACE2 expression in thyroid (\u03b2=1.468, p=1.8\u00d710\u22128), and increased ACE2 expression in adipose, brain, colon, and liver with nominal significance. Additionally, genetically predicted smoking initiation significantly increased the risk of COVID-19 onset (odds ratio=1.14, p=8.7\u00d710\u22125). No statistically significant result was observed for alcohol consumption.Conclusions:Our work demonstrates an important role of smoking, measured by both status and intensity, in the susceptibility to COVID-19.Funding:XJ is supported by research grants from the Swedish Research Council (VR-2018\u201302247) and Swedish Research Council for Health, Working Life and Welfare (FORTE-2020\u201300884).\n\n## Introduction\n\nThe severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has led to a worldwide pandemic of coronavirus disease 2019 (COVID-19) (Coronaviridae Study Group of the International Committee on Taxonomy of Viruses, 2020; World Health Organization, 2020). As a host receptor of SARS-CoV-2, the expression level of angiotensin-converting enzyme 2 (ACE2) has been found to influence both the risk and severity of infection (Hoffmann et al., 2020; Wrapp et al., 2020; Zhou et al., 2020a; Li et al., 2003; Li et al., 2005). Moreover, a growing body of evidence from epidemiological investigations has demonstrated a substantial disparity in the susceptibility to infection (Guan et al., 2020; Hu et al., 2020; Mehra et al., 2020; Patanavanich and Glantz, 2020). For example, a multi-center study involving 8910 COVID-19 cases from 169 hospitals in Europe and North America identified an increased risk of in-hospital death among current smokers (odds ratio [OR]=1.79; 95% CI: 1.29\u20132.47) compared with ever-smokers or non-smokers (Mehra et al., 2020).\n\nConsistent with findings from large-scale population-based observational studies, a laboratory-based study involving 131 RNA-sequenced human lung cancer tissues (54 samples of European ancestry individuals and 77 samples of Asian ancestry individuals) found that smokers expressed a significantly higher level of ACE2 compared to non-smokers in both populations, leading to a potentially heightened susceptibility to SARS-CoV-2 infection (Cai, 2020). Furthermore, incorporating two additional DNA microarray datasets of lung cancer, the significant smoking-ACE2 association observed in a total of 224 samples did not alter after adjusting for age, sex, race, and platforms. Nevertheless, these samples are derived from lung cancer patients, restricting its generalizability to normal lung tissues and to the general population. In a related work, Rao et al. conducted a phenome-wide Mendelian randomization (MR) study examining an extensive amount of diseases, traits, and blood proteins and identified several \u2018exposures\u2019 including diabetes, breast cancer, lung cancer, inflammatory bowel disease, and smoking to increase ACE2 expression in normal lung tissue (Rao et al., 2020). This analysis, despite its substantially augmented number of exposures (N=3948), has several limitations. First of all, disease status such as diabetes and cancers are difficult to modify, at the population level it is more important to discover and intervene with modifiable risk factors such as smoking and alcohol consumption. However, regarding smoking, only three single nucleotide polymorphisms (SNPs) were used as instrumental variables (IVs) by Rao et al., which explained negligible phenotypic variation and did not accurately predict smoking status. The hitherto largest genome-wide association study (GWAS) of tobacco use was conducted in a total of 1.2 million individuals and discovered over 400 genetic variants associated with smoking initiation and intensity (Liu et al., 2019). Last but not least, Rao et al. focused on lung tissue instead of systemically examining all human tissues. Despite lungs being the most relevant and vulnerable organ to a respiratory syndrome COVID-19, recent studies have identified the involvement of other human tissues (e.g. gastrointestinal tract) in SARS-CoV-2 infection (Zou et al., 2020).\n\nMotivated by these findings, we aim to explore whether genetic predisposition to common human modifiable behaviours including smoking and alcohol consumption could lead to an increased ACE2 expression, which subsequently yields to an increased susceptibility and severity of COVID-19. Here, we conduct a phenome-wide MR analysis by incorporating ACE2 expressions from a broad spectrum of tissues/organs available in the GTEx database. As one of the hitherto largest databases with concomitant information on DNA genotype and RNA expression, GTEx collects a large variety of tissues (N=44) from healthy population (deceased donors) (Gamazon et al., 2018). In addition, data on COVID-19 susceptibility and severity were obtained from COVID-19 Host Genetics Initiative, a global project aims to understand the role of host genome in COVID-19 outcome (COVID-19 Host Genetics Initiative, 2020). Hundreds of genetic variants identified by a large-scale GWAS of tobacco use and alcohol consumption were used as IVs \u2013 incorporating additional loci greatly enhances the strength of genetic instruments as well as both accuracy and precision of MR estimates (Liu et al., 2019).\n\n## Materials and methods\n\n### Data on IV-exposure\n\nIV-exposure associations were extracted from the hitherto largest GWAS conducted by the GCSCAN consortium (GWAS and Sequencing Consortium of Alcohol and Nicotine use) for tobacco use and alcohol consumption, totalling 1.2 million individuals of European ancestry (Liu et al., 2019). This GWAS firstly meta-analysed summary-level data from each participating cohort and identified independent SNPs passing genome-wide significance (p<5\u00d710\u22128) based on linkage disequilibrium. After that, additional independent and genome-wide significant SNPs were selected using a conditional analysis within each significant locus defined as a 1 MB region surrounding the sentinel variant (the variant in the locus with the lowest p-value). We used all conditionally independent biallelic SNPs as IVs.\n\nIn our analysis, we included two smoking phenotypes and one drinking phenotype, smoking initiation as reflected by never vs. ever smoking (IV=378, N=1,232,091), smoking intensity as reflected by cigarettes per day (IV=55, N=337,334), and common (opposing to excessive or harmful) alcohol drinking behaviour defined as drinks per week (IV=99, N=941,280). The proportion of phenotypic variance explained by IVs accounted for 2.3% for smoking initiation, 1.1% for cigarettes per day, and 0.2% for drinks per week. Detailed information regarding IVs for each exposure were shown in Supplementary file 1a-1c.\n\nStrong instrumental variable is the basic requirement to ensure a valid MR result. The strength of IV was verified by calculating F-statistics using the formula\u00a0$F=\\frac{R^{2}(n\u22121\u2212k)}{(1\u2212R^{2})k}$, where R2 is the proportion of variance explained by the IV, k refers to the number of IVs, and n indicates the sample size (Pierce et al., 2011). The F-statistics for smoking initiation, smoking intensity (cigarettes per day), and alcohol consumption (drinks per week) were 77.2, 67.4, and 17.8, respectively, indicating strong IVs (F-statistics > 10) for each of our exposure of interest.\n\n### Data on IV-outcome\n\nAssociations of genetic variants with ACE2 expression were extracted from the GTEx database release version 8 available at the GTEx Portal (http://www.gtexportal.org). It is one of the largest databases with concomitant information on genotype and expression data for a large variety of non-diseased tissues collected from >1000 human donors. Out of the total 54 tissues/organs, we focused on ACE2 expression in 44 tissues/organs with a decent sample size involving at least 100 individuals to ensure statistical power (Supplementary file 1d). Specifically, the associations of genotype with ACE2 expression in adipose tissue, artery, brain, colon, oesophagus, heart, liver, lung, minor salivary gland, muscle, nerve, ovary, pancreas, pituitary, prostate, skin, small intestine, stomach, testis, thyroid, uterus, and vagina were included.\n\nUnlike most existing MR studies that consider disease status as outcomes, this MR study treats gene expression levels as outcomes. GTEx identifies expression quantitative trait loci\u00a0(eQTL) by associating genetic variations called from GWAS with gene expression levels obtained from RNA-sequencing. Expression values for each gene were inverse quantile normalized to a standard normal distribution across samples as previously described (Gamazon et al., 2018). Please note, here we studied ACE2 RNA expression instead of its actual protein expression. Since ACE2 RNA and protein quantities have been found to be well\u00a0correlated in tissues such as lung and kidney (Wang et al., 2020), ACE2 RNA expression acts as a good proxy for ACE2 protein expression.\n\nIn addition to ACE2 expression, associations of genetic variants with COVID-19 susceptibility and severity were extracted from the COVID-19 Host Genetics Initiative (https://www.covid19hg.org). It is a global genetics collaboration aiming to explore the genetic determinants of COVID-19 susceptibility and severity. We used the summary statistics from the data freeze 5 of GWAS meta-analysis, which was released publicly on January 18, 2021. Three COVID-19 outcomes, including susceptibility to COVID-19, hospitalized COVID-19, and very severe respiratory confirmed COVID-19, were used in our analysis.\n\nBriefly, susceptibility to COVID-19 cases was defined as individuals with laboratory-confirmed positive for SARS-Cov-2 infection (via nucleic acid amplification test or serological test), clinician diagnosis, health record evidence by ICD coding, or self-reported (Ncase=38,984 vs. Ncontrol=1,644,784). Hospitalized COVID-19 cases were defined as individuals hospitalized due to COVID-19 related symptoms with laboratory-confirmed positive for SARS-Cov-2 infection (Ncase=9986 vs. Ncontrol=1,877,672). Very severe respiratory confirmed COVID-19 cases were defined as hospitalized individuals with laboratory-confirmed positive for SARS-Cov-2 infection, who needed respiratory support except for simple oxygen supplementary or died due to COVID-19 (Ncase=5101 vs. Ncontrol=1,383,241).\n\n### Statistical analysis\n\nMR uses SNPs as proxies for exposure(s) assuming that SNPs are randomly allotted at conception mirroring a randomized procedure and that SNPs always precede disease onset to eliminate reverse causality. Three essential model assumptions need to be fulfilled to guarantee valid IVs (Zheng et al., 2017), that is, IVs are associated with the exposure (relevance assumption); there is no association between IVs and any confounders of the exposure-outcome relationship (independence assumption); and IVs are associated with the outcome only through the studied exposure (exclusion restriction assumption). If all three model assumptions are satisfied, a causal relationship can be made based on the observed IV-exposure and IV-outcome associations.\n\nWe conducted a two-sample MR, where IV-exposure and IV-outcome associations were estimated in two non-overlapping samples. The inverse-variance weighted (IVW) approach was applied as the primary method to estimate the causal link between exposures (smoking and alcohol consumption) and outcomes (ACE2 expression and COVID-19 related adverse outcomes) (Burgess et al., 2015). The causal estimate is calculated as a ratio of which the IV-outcome association was divided by the IV-exposure association for each IV and combined across multiple IVs weighted by the reciprocal of an approximate expression for their asymptotic variance. To evaluate potential heterogeneity among causal effects of different genetic variants, Cochran\u2019s Q test was performed and p<0.05 was considered as the existence of heterogeneity (Greco M et al., 2015).\n\nOne major concern of MR is horizontal pleiotropy, meaning genetic variants influence the outcome other than through the exposure. A series of sensitivity analyses were conducted to detect and correct for such a scenario. First, MR-Egger regression was adopted to examine the presence of potential pleiotropy, as well as to complement results from main analysis (IVW) (Bowden et al., 2015). When the instrument strength independent of direct effect assumption holds, intercept of MR-Egger regression that differs from zero indicates the presence of horizontal pleiotropy. In addition to the IVW approach and the MR-Egger regression, the weighted median method and the MR-pleiotropy residual sum and outlier (MR-PRESSO) test were also used to detect potential horizontal pleiotropy. The beta estimate of weighted median is calculated as the median of the weighted empirical distribution function of the ratio IV estimates evaluated using each genetic variant individually (Bowden et al., 2016). The\u00a0p-value of MR-PRESSO global test less than 1.0\u00d710\u22126 indicates the presence of horizontal pleiotropy. MR-PRESSO not only identifies horizontal pleiotropy by comparing the observed residual sum of squares to the expected residual sum of squares, but also corrects for horizontal pleiotropy through removing outliers (Verbanck et al., 2018). Second, we excluded palindromic SNPs with ambiguous strand identification and performed the IVW method on the remaining SNPs. Subsequently, we removed SNPs associated with potential confounding traits as confirmed by the GWAS Catalog (basically any other trait than our exposure of interest). Moreover, leave-one-out analysis was performed where we excluded one SNP at\u00a0a\u00a0time and conducted IVW on the rest SNPs to identify the potential influence of outlying variants on the overall estimates. Results were considered significant only if they passed statistical significance (p<0.05) in the IVW approach or the MR-Egger regression and remained directional consistent in the weighted median and MR-PRESSO methods across both primary and sensitivity analyses. We additionally set a corrected p threshold as dividing 0.05 by the number of outcomes 0.05/(44+3)=1.0\u00d710\u22123 (including 44 tissues/organs and 3 COVID-19 outcomes).\n\nFinally, the power of current study was estimated according to a method suggested by Brion et al., 2013. To guarantee statistical power, we only included tissues/organs with at least 100 samples in the GTEx database. Under the current sample size, given 1\u20132% of the phenotypic variance of smoking and alcohol consumption explained by IVs, our study had sufficient power (>80%) to detect a causal effect of 0.74\u20132.66 in ACE2 expression, and to detect an OR ranging from 1.11 to 1.39 for COVID-19 related outcomes (Supplementary file 1e).\n\n## Results\n\nWe extracted a total of 532 independent SNPs that achieved genome-wide significance for smoking initiation (N=378), cigarettes per day (N=55), and drinks per week (N=99) from the GSCAN consortium and used as IVs (Supplementary file 1a-c). We were able to map 80\u201395% of those IVs to the GTEx database and to the COVID-19 Host Genetics Initiative database \u2013 a virtually complete coverage. The flowchart of IV-selection is shown in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64188/elife-64188-fig1-v2.jpg)\n\nWe found that genetically instrumented smoking initiation was associated with a significantly increased ACE2 expression in brain putamen basal ganglia (\u03b2=1.117, p=0.006), in brain hypothalamus (\u03b2=0.848, p=0.022), and in subcutaneous adipose tissue (\u03b2=0.285, p=0.016) using the IVW approach (Table 1). Results remained directional consistent in the MR-Egger regression although a slightly increased statistical uncertainty was observed (\u03b2=1.667, p=0.334 in brain putamen basal ganglia; \u03b2=0.963, p=0.545 in brain hypothalamus; \u03b2=0.663, p=0.205 in subcutaneous adipose tissue). Additionally, increased ACE2 expression in two colon tissues was observed only through the MR-Egger regression (transverse colon [\u03b2=1.129, p=0.017] and sigmoid colon [\u03b2=1.925, p=0.042]) and the direction of estimates remained consistent in the IVW approach. For all these associations, we did not find apparent heterogeneity as indicated by Cochran\u2019s Q statistics (all p>0.05) or horizontal pleiotropy as indicted by MR-Egger intercept (all p>0.05) and MR-PRESSO global test (all p>1.0\u00d710\u22126), except that horizontal pleiotropy was observed in transverse colon by MR-Egger intercept (p=0.04). Although significant associations of smoking initiation with ACE2 expression in brain caudate basal ganglia and in cerebellar hemisphere were found using the IVW approach, the direction of estimates was opposite in the MR-Egger regression (Supplementary file 1f). These associations were therefore not considered as informative.\n\n**Table 1.**\n Causal association of smoking initiation and angiotensin-converting enzyme 2 (ACE2) expression.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Organ/tissue</th>\n      <th>Method</th>\n      <th>N of IVs</th>\n      <th>Beta</th>\n      <th>SE</th>\n      <th>p</th>\n      <th>p*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">Adipose\u00a0\u2013\u00a0subcutaneous</td>\n      <td>Inverse-variance weighted</td>\n      <td>358</td>\n      <td>0.285</td>\n      <td>0.118</td>\n      <td>0.016</td>\n      <td>0.834</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>358</td>\n      <td>0.663</td>\n      <td>0.522</td>\n      <td>0.205</td>\n      <td>0.456</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>358</td>\n      <td>0.142</td>\n      <td>0.186</td>\n      <td>0.444</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>358</td>\n      <td>0.285</td>\n      <td>0.118</td>\n      <td>0.017</td>\n      <td>0.846</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Brain \u2013\u00a0hypothalamus</td>\n      <td>Inverse-variance weighted</td>\n      <td>356</td>\n      <td>0.848</td>\n      <td>0.369</td>\n      <td>0.022</td>\n      <td>0.614</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>356</td>\n      <td>0.963</td>\n      <td>1.588</td>\n      <td>0.545</td>\n      <td>0.941</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>356</td>\n      <td>0.549</td>\n      <td>0.566</td>\n      <td>0.332</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>356</td>\n      <td>0.848</td>\n      <td>0.369</td>\n      <td>0.022</td>\n      <td>0.655</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Brain \u2013 putamen (basal ganglia)</td>\n      <td>Inverse-variance weighted</td>\n      <td>357</td>\n      <td>1.117</td>\n      <td>0.406</td>\n      <td>0.006</td>\n      <td>0.334</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>357</td>\n      <td>1.667</td>\n      <td>1.724</td>\n      <td>0.334</td>\n      <td>0.743</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>357</td>\n      <td>1.256</td>\n      <td>0.607</td>\n      <td>0.039</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>357</td>\n      <td>1.117</td>\n      <td>0.406</td>\n      <td>0.006</td>\n      <td>0.321</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Colon \u2013 sigmoid</td>\n      <td>Inverse-variance weighted</td>\n      <td>359</td>\n      <td>0.314</td>\n      <td>0.214</td>\n      <td>0.143</td>\n      <td>0.887</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>359</td>\n      <td>1.925</td>\n      <td>0.945</td>\n      <td>0.042</td>\n      <td>0.080</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>359</td>\n      <td>0.473</td>\n      <td>0.334</td>\n      <td>0.156</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>359</td>\n      <td>0.314</td>\n      <td>0.214</td>\n      <td>0.144</td>\n      <td>0.904</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Colon \u2013 transverse</td>\n      <td>Inverse-variance weighted</td>\n      <td>359</td>\n      <td>0.193</td>\n      <td>0.113</td>\n      <td>0.088</td>\n      <td>0.348</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>359</td>\n      <td>1.129</td>\n      <td>0.471</td>\n      <td>0.017</td>\n      <td>0.041</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>359</td>\n      <td>0.262</td>\n      <td>0.165</td>\n      <td>0.114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>359</td>\n      <td>0.193</td>\n      <td>0.113</td>\n      <td>0.089</td>\n      <td>0.362</td>\n    </tr>\n  </tbody>\n</table>\n\n_*p indicates p-value of heterogenous from inverse-variance weighted (IVW) approach, or p-value of intercept from MR-Egger regression, or p-value from Mendelian randomization pleiotropy residual sum and outlier (MR-PRESSO) global test._\n\nWe further identified that genetically predicted smoking intensity as reflected by cigarettes per day was associated with a significantly elevated ACE2 expression in thyroid (\u03b2=1.468, p=1.8\u00d710\u22128), in liver (\u03b2=1.216, p=0.009), in brain hypothalamus (\u03b2=1.789, p=0.014), and in ovary (\u03b2=1.545, p=0.026) using the IVW method (Table 2). Results remained directional consistent in the MR-Egger regression (\u03b2=1.739, p=0.062 in thyroid; \u03b2=1.132, p=0.226 in liver; \u03b2=0.041, p=0.983 in brain hypothalamus; \u03b2=1.658, p=0.347 in ovary). On the contrary, levels of ACE2 expression decreased with genetically instrumented smoking intensity in sigmoid colon tissue (\u03b2=\u22121.971, p=0.019) and in vagina tissue (\u03b2=\u22123.271, p=0.043) using the MR-Egger regression. For all these associations, no apparent horizontal pleiotropy and heterogeneity was found (Supplementary file 1g).\n\n**Table 2.**\n Causal association of cigarettes per day and angiotensin-converting enzyme 2 (ACE2) expression.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Organ/tissue</th>\n      <th>Method</th>\n      <th>N of IVs</th>\n      <th>Beta</th>\n      <th>SE</th>\n      <th>p</th>\n      <th>p*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">Brain \u2013 hypothalamus</td>\n      <td>Inverse-variance weighted</td>\n      <td>48</td>\n      <td>1.789</td>\n      <td>0.730</td>\n      <td>0.014</td>\n      <td>0.959</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>48</td>\n      <td>0.041</td>\n      <td>1.920</td>\n      <td>0.983</td>\n      <td>0.310</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>48</td>\n      <td>2.182</td>\n      <td>1.347</td>\n      <td>0.105</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>48</td>\n      <td>1.789</td>\n      <td>0.730</td>\n      <td>0.018</td>\n      <td>0.964</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Colon \u2013 sigmoid</td>\n      <td>Inverse-variance weighted</td>\n      <td>47</td>\n      <td>\u22120.832</td>\n      <td>0.439</td>\n      <td>0.058</td>\n      <td>0.652</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>47</td>\n      <td>\u22121.971</td>\n      <td>0.807</td>\n      <td>0.019</td>\n      <td>0.092</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>47</td>\n      <td>\u22121.182</td>\n      <td>0.747</td>\n      <td>0.114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>47</td>\n      <td>\u22120.832</td>\n      <td>0.439</td>\n      <td>0.064</td>\n      <td>0.701</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Liver</td>\n      <td>Inverse-variance weighted</td>\n      <td>47</td>\n      <td>1.216</td>\n      <td>0.468</td>\n      <td>0.009</td>\n      <td>0.807</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>47</td>\n      <td>1.132</td>\n      <td>0.922</td>\n      <td>0.226</td>\n      <td>0.913</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>47</td>\n      <td>1.058</td>\n      <td>0.850</td>\n      <td>0.213</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>47</td>\n      <td>1.216</td>\n      <td>0.468</td>\n      <td>0.012</td>\n      <td>0.843</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Ovary</td>\n      <td>Inverse-variance weighted</td>\n      <td>48</td>\n      <td>1.545</td>\n      <td>0.693</td>\n      <td>0.026</td>\n      <td>0.837</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>48</td>\n      <td>1.658</td>\n      <td>1.745</td>\n      <td>0.347</td>\n      <td>0.943</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>48</td>\n      <td>2.545</td>\n      <td>1.217</td>\n      <td>0.037</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>48</td>\n      <td>1.545</td>\n      <td>0.693</td>\n      <td>0.031</td>\n      <td>0.844</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Thyroid</td>\n      <td>Inverse-variance weighted</td>\n      <td>47</td>\n      <td>1.468</td>\n      <td>0.392</td>\n      <td>1.8\u00d710\u22124</td>\n      <td>0.604</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>47</td>\n      <td>1.739</td>\n      <td>0.907</td>\n      <td>0.062</td>\n      <td>0.739</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>47</td>\n      <td>1.435</td>\n      <td>0.641</td>\n      <td>0.025</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>47</td>\n      <td>1.468</td>\n      <td>0.392</td>\n      <td>5.0\u00d710\u22124</td>\n      <td>0.670</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Vagina</td>\n      <td>Inverse-variance weighted</td>\n      <td>48</td>\n      <td>\u22121.150</td>\n      <td>0.688</td>\n      <td>0.094</td>\n      <td>0.055</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>48</td>\n      <td>\u22123.271</td>\n      <td>1.574</td>\n      <td>0.043</td>\n      <td>0.142</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>48</td>\n      <td>\u22122.644</td>\n      <td>0.916</td>\n      <td>0.004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>48</td>\n      <td>\u22121.150</td>\n      <td>0.688</td>\n      <td>0.101</td>\n      <td>0.057</td>\n    </tr>\n  </tbody>\n</table>\n\n_*p indicates p-value of heterogenous from inverse-variance weighted (IVW) approach, or p-value of intercept from MR-Egger regression, or p-value from Mendelian randomization pleiotropy residual sum and outlier (MR-PRESSO) global test._\n\nFor alcohol consumption defined as drinks per week, only one suggestive association with ACE2 expression in tibial nerve was observed using the IVW approach (\u03b2=\u22121.462, p=0.006). However, the direction of effect from the MR-Egger regression was opposite (\u03b2=0.336, p=0.721). We therefore considered an overall null association as our main finding with alcohol consumption (Supplementary file 1h).\n\nIn the sensitivity analyses where we excluded palindromic or pleiotropic SNPs, results remained largely consistent with our primary findings (full results shown in Supplementary file 1i-1n). We sequentially excluded proxy SNPs to identify random error introduced by imperfect proxies. In the leave-one-out analyses where we iteratively removed one SNP each time and performed the IVW approach using the remaining SNPs, results were again concordant with our primary findings, indicating an absence of outlying SNPs (Appendix 1\u2014figure 1).\n\nFinally, complementing to findings of ACE2 expression, we tested a putative causal link between smoking status, smoking intensity, alcohol consumption, and the risk of COVID-19 related adverse outcomes. We found that smoking initiation significantly increased the risk of COVID-19 onset (IVW: OR=1.15, 95%CI: 1.07\u20131.23, p=8.7\u00d710\u22125) even after taking into account multiple comparisons (Table 3). Results remained significant in the weighted median, and MR-PRESSO methods, however, showed larger statistical uncertainties in the MR-Egger regression. In addition, smoking initiation increased the risk of very severe respiratory confirmed COVID-19 and hospitalized COVID-19 using the IVW approach, but the results were not supported by the MR-Egger regression. Smoking intensity (cigarettes per day) only increased the risk of very severe respiratory confirmed COVID-19 as shown in the MR-Egger regression (OR=5.99, 95%CI: 1.57\u201322.84, p=0.012) (Supplementary file 1o). On the contrary, we did not find a causal link between alcohol consumption (drinks per week) and the risk of COVID-19 adverse outcomes (Supplementary file 1p). Findings did not alter in the sensitivity analyses (Supplementary file 1q-r and Appendix 1\u2014figure 4).\n\n**Table 3.**\n Causal link of smoking initiation with the risk of coronavirus disease 2019 (COVID-19) related adverse outcomes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Outcome</th>\n      <th>Method</th>\n      <th>N of IVs</th>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n      <th>p*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">COVID-19 susceptibility</td>\n      <td>Inverse-variance weighted</td>\n      <td>352</td>\n      <td>1.15 (1.07\u20131.23)</td>\n      <td>8.7\u00d710\u22125</td>\n      <td>6.7\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>352</td>\n      <td>1.11 (0.83\u20131.49)</td>\n      <td>0.489</td>\n      <td>0.821</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>352</td>\n      <td>1.18 (1.08\u20131.29)</td>\n      <td>2.9\u00d710\u22124</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>352</td>\n      <td>1.15 (1.07\u20131.23)</td>\n      <td>1.0\u00d710\u22124</td>\n      <td>5.0\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Hospitalized COVID-19</td>\n      <td>Inverse-variance weighted</td>\n      <td>351</td>\n      <td>1.32 (1.16\u20131.50)</td>\n      <td>3.7\u00d710\u22125</td>\n      <td>0.009</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>351</td>\n      <td>0.78 (0.44\u20131.36)</td>\n      <td>0.383</td>\n      <td>0.059</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>351</td>\n      <td>1.37 (1.14\u20131.66)</td>\n      <td>0.001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>351</td>\n      <td>1.32 (1.16\u20131.50)</td>\n      <td>4.6\u00d710\u22125</td>\n      <td>0.011</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Very severe respiratory confirmed COVID-19</td>\n      <td>Inverse-variance weighted</td>\n      <td>352</td>\n      <td>1.25 (1.03\u20131.51)</td>\n      <td>0.025</td>\n      <td>0.114</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>352</td>\n      <td>0.83 (0.37\u20131.89)</td>\n      <td>0.658</td>\n      <td>0.318</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>352</td>\n      <td>1.17 (0.89\u20131.55)</td>\n      <td>0.267</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>352</td>\n      <td>1.25 (1.03\u20131.51)</td>\n      <td>0.025</td>\n      <td>0.119</td>\n    </tr>\n  </tbody>\n</table>\n\n_*p indicates p-value of heterogeneous from inverse-variance weighted (IVW) approach, or p-value of intercept from MR-Egger regression, or p-value from Mendelian randomization\u00a0pleiotropy residual sum and outlier (MR-PRESSO) global test._\n\n## Discussion\n\nWe conducted a large-scale genetic analysis to understand the role of cigarette smoking and alcohol consumption with ACE2 expression in multiple tissues/organs, comprehending its role in the prevention of COVID-19. Strong IVs were constructed using hundreds of SNPs associated with smoking and alcohol consumption. We capitalized on the summary statistics of the largest tissue-specific eQTL conducted for ACE2 expression levels and the most up-to-date GWAS data of COVID-19 related adverse outcomes. We found a putative causal relationship between smoking-related phenotypes and an increased ACE2 expression in multiple tissues, as well as an increased susceptibility and severity of COVID-19.\n\nOur findings are supported by previous epidemiological studies which have demonstrated a significant association between smoking and COVID-19 disease progression or death (Guan et al., 2020; Hu et al., 2020; Mehra et al., 2020). For example, a study involving 214 patients with laboratory confirmed COVID-19 from Wenzhou China found that compared to non-severe cases, patients with severe disease were more likely to be smokers (26.3% vs. 6.4%, p = 0.038) (Zheng et al., 2020). Another study recruiting 78 patients with COVID-19 in Wuhan also found a higher proportion of ever-smokers in COVID-19 progression group than in the improvement/stabilization group (OR=14.28, 95% CI:1.58\u201325.00, p=0.018) (Liu et al., 2020). Consistent with these findings, a meta-analysis on a total of 11,590 COVID-19 cases demonstrated a higher proportion of smokers among 2133 patients experienced disease progression, suggesting that smoking aggravated COVID-19 progression (OR=1.91, 95% CI: 1.42\u20132.59) (Patanavanich and Glantz, 2020). On the contrary, a few small-scale studies with sample sizes ranging from 44 to 191 conducted in Wuhan China did not report remarkable association of smoking with COVID-19 severity or progression (Huang et al., 2020; Yang et al., 2020; Zhang et al., 2020; Zhou et al., 2020b). For instance, a retrospective study including 191 patients of which 137 survived and 54 non-survived found a comparable proportion of smokers in survivors and non-survivors (9% vs. 4%, p=0.21) (Zhou et al., 2020b). A meta-analysis including five studies (four in Wuhan and one across 30 provinces in Mainland China) (Guan et al., 2020; Liu et al., 2020; Huang et al., 2020; Yang et al., 2020; Zhang et al., 2020) involving 1399 individuals with COVID-19 revealed no significant association between smoking and disease severity (OR=1.69, 95% CI: 0.41\u20136.92) (Lippi and Henry, 2020). Opposite to the findings from Asian population, evidence from the Veterans Affairs Birth Cohort in a US population found that current smoking was associated with a lower risk of COVID-19 susceptibility (OR=0.45, 95% CI: 0.35\u20130.57) (Rentsch et al., 2020). The contradictory results in those small-scale studies might be due to insufficient power, low proportion of smokers, and a limited representativeness of the study population. For example, compared with the high proportion of smokers in China (an average 26.6% prevalence in the general population), only 1.4% patients were current smokers in the study conducted by Zhang et al., 2020 and 12.6% in the study conducted by Guan et al., 2020. Given these discrepancies, additional studies are warranted to confirm the role of smoking in both the onset and progression of COVID-19.\n\nIn addition to clinical observational studies, laboratory examination has demonstrated the importance of tissues specificity. For example, Cai et al. identified that smoking was associated with an elevated expression of ACE2 in the lung, providing biological evidence of smoking with an increased susceptibility to SARS-CoV-2 infection or severity (Cai, 2020). Moreover, Rao et al. conducted a phenome-wide MR study incorporating 3948 traits, diseases, and blood proteins and identified a nominal significant association between tobacco use and ACE2 expression in the lung (IVW: \u03b2=0.918, p=0.016) (Rao et al., 2020). However, this association did not pass multiple comparisons (p-value for FDR was 0.51), which was consistent with our MR results using a greatly augmented number of IVs (for smoking status IV=378).\n\nThe biological mechanisms underlying smoking and tissue-specific ACE2 expression remain to be disclosed. ACE2 has been considered as the target receptor of SARS-CoV-2 entry into the host cells and an increased expression of ACE2 appears to raise both the susceptibility and severity of COVID-19. As a type I transmembrane metallocarboxypeptidase homologous to ACE, ACE2 is known to be expressed in a variety of tissues, including respiratory tract, cardio-renal tissues, and gastrointestinal tissues (Harmer et al., 2002). Our study found that smoking increased ACE2 expression in multiple tissues including the brain and colon tissues. While SARS-CoV-2 mainly spreads via respiratory tract, enrichment of SARS-CoV-2 in gastrointestinal tract has been confirmed by testing viral RNA in stool from 71 patients with COVID-19, suggesting the importance of gastrointestinal involvement in the infection (Xiao et al., 2020). Furthermore, nearly one-fifth COVID-19 patients remained SARS-CoV-2 RNA-positive in their stool, despite negative results in their respiratory samples. Of those 71 patients, ACE2 was abundantly expressed in the gastrointestinal epithelia, but rarely expressed in the esophageal epithelia. In addition, findings from public databases (GEO, GTEx, and HPA) have demonstrated a higher expression level of ACE2 in the gastrointestinal tract (colon, rectal, and small intestine) and liver than in the lung (Burgue\u00f1o et al., 2020; Li et al., 2020; Pirola and Sookoian, 2020). Taking these pieces of evidence together, we could reasonably assume that the biological mechanisms underlying the link between ACE2 expression and COVID-19 susceptibility are complicated, involving multiple organs other than the lung. Consistent with our findings on a link between smoking and increased ACE2 expression in both transverse colon and sigmoid colon, these results collectively suggest\u00a0that smoking mediates ACE2 expression in gastrointestinal tract, subsequently influence the susceptibility and severity of COVID-19.\n\nWe also found that smoking influenced ACE2 expression in the brain tissue, especially in putamen basal ganglia and hypothalamus. Smoking may promote cellular uptake of SARS-CoV-2 through nicotinic acetylcholine receptor (nAChR) signalling (Russo et al., 2020). It is worth noting that nAChR and ACE2 are known to be co-expressed on many sites such as cortex, striatum, and hypothalamus within human brain (Dani and Bertrand, 2007; Jones et al., 2009). Nicotine stimulation of the nAChR increased ACE2 expression within neural cells, indicating a likelihood that smokers are more vulnerable to COVID-19 (Olds and Kabbani, 2020).\n\nTo the best of our knowledge, we performed a large-scale phenome-wide MR study to understand a causal role of smoking and alcohol consumption in ACE2 expression, as well as in COVID-19 related outcomes, totalling 532 genetic associations from 1.2 million individuals of European ancestry and covering almost all tissues/organs of human body (N=44). In addition, we rigorously selected proxy SNPs and performed a series of sensitivity analyses to satisfy MR model assumptions, for example, we satisfied the \u2018relevance\u2019 assumption by using GWAS-identified significant SNPs as IVs; we ensured the \u2018independent\u2019 assumption and the \u2018exclusion restriction\u2019 assumption by performing several important sensitivity analyses. However, limitations need to be acknowledged. Although hundreds of SNPs were used as proxies for cigarette smoking and alcohol consumption, these GWAS-identified SNPs explained only a small fraction (1\u20132%) of phenotypic variance. In addition, the minimum sample size of 114 in brain substantia nigra tissue further limited the statistical power of MR analysis, albeit GTEx database is so far the largest available database with both genotype and expression data. Moreover, data on the genotypes, tissue expression, and COVID-19 related outcomes of our analyses were all based on European ancestry populations, restricting its generalizability to other ethnicities. On the other hand, our data, with exposure and outcome GWAS(s) (or eQTLs) conducted using individuals of the same underlying populations (all European ancestry), greatly reduces the population stratification as well as satisfies the MR model assumption \u2013 for a two-sample MR to be valid, the two samples have to be preferably from the same ethnicity. Finally, we have to acknowledge that few of our significant associations passed the stringent Bonferroni corrections. Our results provide a comprehensive picture for the causal relationship of smoking with ACE2 expression in various tissues and with COVID-19 susceptibility and severity, yet we stress caution for interpretation and extra analyses are needed to replicate these findings.\n\nIn conclusion, genetically instrumented smoking phenotypes reflected by both smoking initiation and smoking intensity are significantly associated with a high expression level of ACE2 in multiple tissues/organs, subsequently increasing the susceptibility and severity of COVID-19. Our results provide important clinical implications on that smokers might be more vulnerable to SARS-CoV-2 infection or severe disease. At the population level, smoking cessation is also an important actionable prevention strategy to COVID-19. Further studies are needed to confirm or refute our findings.\n",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "0188b758-23e3-49be-aaa5-453fbc0193f7",
+      "submission_id": "46f6a971-e3f6-47bb-9fba-33399fde0f07",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- M Dawn Teare, Newcastle University United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64188.sa1](https://doi.org/10.7554/eLife.64188.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work presents a two-sample Mendelian Randomization (MR) analysis of smoking and alcohol consumption with ACE2 expression in multiple organs. The MR approach allows to explore a causal role of these modifiable lifestyle factors in ACE2 expression in 44 tissues/organs using data from the GCSCAN consortium and GTEx. The MR analysis finds interesting associations with smoking status and intensity and increased levels of ACE2 expression in organs that may go on to modify susceptibility to COVID-19. However, no evidence for an effect of alcohol was seen.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mendelian randomization analysis provides causality of smoking on the expression of ACE2, a putative SARS-CoV-2 receptor\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Houfeng Zheng (Reviewer #1); Derrick Bennett (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our policy on revisions we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data. Our expectation is that, where possible, the authors will eventually carry out the additional work and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThis paper presents a two-sample Mendelian Randomization analysis of smoking and alcohol consumption with ACE2 expression in multiple organs using tissue samples made available through the GTEx dataset. The MR analysis found promising associations with smoking status and intensity and increased levels of ACE2 expression in organs that may go on to modify susceptibility to COVID-19. While the research is novel, the methods have been applied to only one data resource and some of the conclusions are not warranted by the data and analysis. In particular the causal inferences relating to COVID-19 susceptibility require additional data. Many conclusions are too strong based on the analyses performed.\n\nEssential revisions:\n\n1. The authors must include a detailed flowchart of how SNPs were selected/excluded for each IV. The information must be reported in sufficient detail so that the IVs could be recreated and the whole MR analysis could be replicated. If this requires substantial programming the annotated code could be made available through GitHub for example.\n\n2. The authors report \"Our results provide important clinical implications on that smokers might be more vulnerable to SARS-CoV-2 infection or severe disease.\" They have not directly assessed the relationship of their IV for smoking to SARS-CoV-2 infection so their conclusions need to be toned down. Did the authors consider obtaining SARS-COV-2 outcome data from the COVID-19 Host Genetics Initiative (https://doi.org/10.1038/s41431-020-0636-6)? This would greatly strengthen the report.\n\n3. The MR studies have been conducted in a European population so are these results generalizable to other populations? While the resource used is impressive can this analysis be replicated in an independent data set? Even if some of the signals could be replicated this would add enormous value to the results.\n\n4. Can you offer an explanation why ACE2 was highly expressed on brain, colon, liver et al., but not on respiratory tract and lung tissue? Is higher expression of ACE2 really susceptible factor for Covid19? What is the evidence?\n\n5. The Discussion section seems to focus on evidence from China but the results from China may be affected by the sex-differences in smoking and alcohol prevalence. The patterns of smoking and alcohol in East Asian populations is very different from Western populations. Typically very few women smoke or drink in East Asia. The authors should comment on this.\n\n6. Did the authors consider performing analyses separately for men and women in this study?\n\n7. Table 2 shows the detectable difference with a fixed power of 80% and a significance level of 0.05. Should the significance level be modified to deal with multiple testing with sample from different organs? If not why not? The sample size calculation requires further clarification. It is preferable to mention the a priori power calculations in the methods section of the report not the results. Are the effect sizes detectable clinically relevant? How was this ascertained?\n\n8. The authors need to report the associated F-statistics for their instrumental variables.\n\n9. The authors mention that \"Expression values for each gene were inverse quantile normalized to a standard normal distribution across samples\". So this suggests that the results are based on a per standard deviation change but this is not clear from the results.\n\n10. Only MR-Egger was used to assess horizontal pleiotropy. There are several other approaches that make different assumptions to MR-Egger that should be considered in order to triangulate the findings.\n\n11. In the MR results, the significance from IVW approach were not replicated in MR-Egger regression, and vice versa. Can we believe these are real casual associations? Could you explain?\n\n12. The abstract should communicate the size of the dataset (ie the number of samples) and report an effect size, 95% confidence interval and p-value for each signal reported in the abstract. Stating 'significant' or 'non-significant' is not appropriate for an abstract.\n\n13. In Figures 1, 2 and 3 the x-axis needs clearer labelling. Isn't this a plot of \u03b2 values per 1 SD change in ACE2 expression?\n",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6e11b157-3168-4d0b-a8bd-0f128020578d",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C1",
+      "claim": "SARS-CoV-2 has led to a worldwide pandemic of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has led to a worldwide pandemic of coronavirus disease 2019 (COVID-19) (Coronaviridae Study Group of the International Committee on Taxonomy of Viruses, 2020; World Health Organization, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to authoritative sources (Coronaviridae Study Group and WHO).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "b8523aee-89f8-4175-a0fb-cc9326fc7b1b",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C2",
+      "claim": "ACE2 is a host receptor of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "As a host receptor of SARS-CoV-2, the expression level of angiotensin-converting enzyme 2 (ACE2) has been found to influence both the risk and severity of infection (Hoffmann et al., 2020; Wrapp et al., 2020; Zhou et al., 2020a; Li et al., 2003; Li et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "7c2b32ef-f339-4d4f-b63b-ec22d7854897",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C3",
+      "claim": "The expression level of ACE2 influences both the risk and severity of SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "As a host receptor of SARS-CoV-2, the expression level of angiotensin-converting enzyme 2 (ACE2) has been found to influence both the risk and severity of infection (Hoffmann et al., 2020; Wrapp et al., 2020; Zhou et al., 2020a; Li et al., 2003; Li et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "54b5dd19-c611-4558-86d0-e577f77be223",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C4",
+      "claim": "There is substantial disparity in the susceptibility to SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a growing body of evidence from epidemiological investigations has demonstrated a substantial disparity in the susceptibility to infection (Guan et al., 2020; Hu et al., 2020; Mehra et al., 2020; Patanavanich and Glantz, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to epidemiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "6ae0fb51-0b9f-42e9-80a0-1323d41e6454",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C5",
+      "claim": "Current smokers have an increased risk of in-hospital death from COVID-19 compared with ever-smokers or non-smokers (OR=1.79; 95% CI: 1.29\u20132.47).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a multi-center study involving 8910 COVID-19 cases from 169 hospitals in Europe and North America identified an increased risk of in-hospital death among current smokers (odds ratio [OR]=1.79; 95% CI: 1.29\u20132.47) compared with ever-smokers or non-smokers (Mehra et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a multi-center observational study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "e2a98762-e903-4ee0-a79a-4770cde816fa",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C6",
+      "claim": "Smokers expressed a significantly higher level of ACE2 compared to non-smokers in both European and Asian ancestry populations in lung cancer tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with findings from large-scale population-based observational studies, a laboratory-based study involving 131 RNA-sequenced human lung cancer tissues (54 samples of European ancestry individuals and 77 samples of Asian ancestry individuals) found that smokers expressed a significantly higher level of ACE2 compared to non-smokers in both populations, leading to a potentially heightened susceptibility to SARS-CoV-2 infection (Cai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a laboratory study with RNA-sequencing data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "c832fe97-7455-428b-b826-672654deae88",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C7",
+      "claim": "The significant smoking-ACE2 association observed in 224 lung cancer samples did not alter after adjusting for age, sex, race, and platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, incorporating two additional DNA microarray datasets of lung cancer, the significant smoking-ACE2 association observed in a total of 224 samples did not alter after adjusting for age, sex, race, and platforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to analysis incorporating additional datasets with statistical adjustment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "6dd00699-46a5-41dc-96c6-568289921bfe",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C8",
+      "claim": "Samples from lung cancer patients restrict generalizability to normal lung tissues and to the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these samples are derived from lung cancer patients, restricting its generalizability to normal lung tissues and to the general population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference about study limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "94c05249-4187-47c6-9884-edead5fa5193",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C9",
+      "claim": "Rao et al. identified several exposures including diabetes, breast cancer, lung cancer, inflammatory bowel disease, and smoking to increase ACE2 expression in normal lung tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In a related work, Rao et al. conducted a phenome-wide Mendelian randomization (MR) study examining an extensive amount of diseases, traits, and blood proteins and identified several 'exposures' including diabetes, breast cancer, lung cancer, inflammatory bowel disease, and smoking to increase ACE2 expression in normal lung tissue (Rao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published MR study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "c812318c-bc86-4287-8765-6e2d0447f25e",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C10",
+      "claim": "Rao et al. used only three SNPs as instrumental variables for smoking, which explained negligible phenotypic variation and did not accurately predict smoking status.",
+      "claim_type": "EXPLICIT",
+      "source": "However, regarding smoking, only three single nucleotide polymorphisms (SNPs) were used as instrumental variables (IVs) by Rao et al., which explained negligible phenotypic variation and did not accurately predict smoking status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about the limitations of the cited study's methodology.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "cf046ea5-871c-4d44-9711-edd8d08e02cb",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C11",
+      "claim": "The hitherto largest GWAS of tobacco use was conducted in a total of 1.2 million individuals and discovered over 400 genetic variants associated with smoking initiation and intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The hitherto largest genome-wide association study (GWAS) of tobacco use was conducted in a total of 1.2 million individuals and discovered over 400 genetic variants associated with smoking initiation and intensity (Liu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a large-scale GWAS.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "4b445c23-dd3e-45d5-95b4-def9bdf2774d",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C12",
+      "claim": "Rao et al. focused on lung tissue instead of systemically examining all human tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Last but not least, Rao et al. focused on lung tissue instead of systemically examining all human tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about the scope of the cited study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "4dee2d1d-bee9-4bb2-9b25-4dd0d15ae8cf",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C13",
+      "claim": "Recent studies have identified the involvement of other human tissues (e.g. gastrointestinal tract) in SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite lungs being the most relevant and vulnerable organ to a respiratory syndrome COVID-19, recent studies have identified the involvement of other human tissues (e.g. gastrointestinal tract) in SARS-CoV-2 infection (Zou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "f5d69f2c-42e3-4cad-9f65-e9cbd4736832",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C14",
+      "claim": "GTEx collects a large variety of tissues (N=44) from healthy population (deceased donors).",
+      "claim_type": "EXPLICIT",
+      "source": "As one of the hitherto largest databases with concomitant information on DNA genotype and RNA expression, GTEx collects a large variety of tissues (N=44) from healthy population (deceased donors) (Gamazon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to the GTEx database description.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "73ab10dd-d96e-419b-9b21-c4094fdddfa8",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C15",
+      "claim": "Data on COVID-19 susceptibility and severity were obtained from COVID-19 Host Genetics Initiative.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, data on COVID-19 susceptibility and severity were obtained from COVID-19 Host Genetics Initiative, a global project aims to understand the role of host genome in COVID-19 outcome (COVID-19 Host Genetics Initiative, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to the data source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "c082eada-57fc-4b5a-abd6-05c18c73d4b9",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C16",
+      "claim": "IV-exposure associations were extracted from the hitherto largest GWAS conducted by the GCSCAN consortium for tobacco use and alcohol consumption, totalling 1.2 million individuals of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "IV-exposure associations were extracted from the hitherto largest GWAS conducted by the GCSCAN consortium (GWAS and Sequencing Consortium of Alcohol and Nicotine use) for tobacco use and alcohol consumption, totalling 1.2 million individuals of European ancestry (Liu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to the GWAS data source.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "278b669e-036a-4bb1-9a74-aa0201326f3b",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C17",
+      "claim": "378 independent SNPs were used as instrumental variables for smoking initiation (N=1,232,091).",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis, we included two smoking phenotypes and one drinking phenotype, smoking initiation as reflected by never vs. ever smoking (IV=378, N=1,232,091), smoking intensity as reflected by cigarettes per day (IV=55, N=337,334), and common (opposing to excessive or harmful) alcohol drinking behaviour defined as drinks per week (IV=99, N=941,280).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "bbaa2560-4e81-455e-8056-184ad59bd35c",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C18",
+      "claim": "55 independent SNPs were used as instrumental variables for cigarettes per day (N=337,334).",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis, we included two smoking phenotypes and one drinking phenotype, smoking initiation as reflected by never vs. ever smoking (IV=378, N=1,232,091), smoking intensity as reflected by cigarettes per day (IV=55, N=337,334), and common (opposing to excessive or harmful) alcohol drinking behaviour defined as drinks per week (IV=99, N=941,280).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "dfc16d73-c42e-47e3-a28a-d35c47798427",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C19",
+      "claim": "99 independent SNPs were used as instrumental variables for drinks per week (N=941,280).",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis, we included two smoking phenotypes and one drinking phenotype, smoking initiation as reflected by never vs. ever smoking (IV=378, N=1,232,091), smoking intensity as reflected by cigarettes per day (IV=55, N=337,334), and common (opposing to excessive or harmful) alcohol drinking behaviour defined as drinks per week (IV=99, N=941,280).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "92c4b7e9-b30b-4c90-a551-09339545c3a2",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C20",
+      "claim": "The proportion of phenotypic variance explained by IVs accounted for 2.3% for smoking initiation, 1.1% for cigarettes per day, and 0.2% for drinks per week.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of phenotypic variance explained by IVs accounted for 2.3% for smoking initiation, 1.1% for cigarettes per day, and 0.2% for drinks per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated statistical data from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "bb7d0601-76b0-4bd7-9ad5-e40399ecf260",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C21",
+      "claim": "The F-statistics for smoking initiation, smoking intensity (cigarettes per day), and alcohol consumption (drinks per week) were 77.2, 67.4, and 17.8, respectively, indicating strong IVs (F-statistics > 10).",
+      "claim_type": "EXPLICIT",
+      "source": "The F-statistics for smoking initiation, smoking intensity (cigarettes per day), and alcohol consumption (drinks per week) were 77.2, 67.4, and 17.8, respectively, indicating strong IVs (F-statistics > 10) for each of our exposure of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated statistical data with interpretation based on established criteria.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "ec76e145-44a3-41c5-a838-c328a96e3af2",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C22",
+      "claim": "The study focused on ACE2 expression in 44 tissues/organs with at least 100 individuals to ensure statistical power.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the total 54 tissues/organs, we focused on ACE2 expression in 44 tissues/organs with a decent sample size involving at least 100 individuals to ensure statistical power (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated methodological decision based on statistical considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "afc4cc10-f853-41aa-a99c-51483097d7b8",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C23",
+      "claim": "ACE2 RNA and protein quantities have been found to be well correlated in tissues such as lung and kidney.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ACE2 RNA and protein quantities have been found to be well correlated in tissues such as lung and kidney (Wang et al., 2020), ACE2 RNA expression acts as a good proxy for ACE2 protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "4785e9cb-fa49-427b-8668-d96ea7b7cc13",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C24",
+      "claim": "ACE2 RNA expression acts as a good proxy for ACE2 protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ACE2 RNA and protein quantities have been found to be well correlated in tissues such as lung and kidney (Wang et al., 2020), ACE2 RNA expression acts as a good proxy for ACE2 protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from cited correlation data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "df94e793-b84f-418f-9618-062c4be3f1aa",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C25",
+      "claim": "COVID-19 susceptibility cases were defined as individuals with laboratory-confirmed positive for SARS-Cov-2 infection, clinician diagnosis, health record evidence by ICD coding, or self-reported (Ncase=38,984 vs. Ncontrol=1,644,784).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, susceptibility to COVID-19 cases was defined as individuals with laboratory-confirmed positive for SARS-Cov-2 infection (via nucleic acid amplification test or serological test), clinician diagnosis, health record evidence by ICD coding, or self-reported (Ncase=38,984 vs. Ncontrol=1,644,784).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated definition and sample sizes from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "33f5ffd6-76fe-429a-83c2-9fdc41aafb23",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C26",
+      "claim": "Hospitalized COVID-19 cases were defined as individuals hospitalized due to COVID-19 related symptoms with laboratory-confirmed positive for SARS-Cov-2 infection (Ncase=9986 vs. Ncontrol=1,877,672).",
+      "claim_type": "EXPLICIT",
+      "source": "Hospitalized COVID-19 cases were defined as individuals hospitalized due to COVID-19 related symptoms with laboratory-confirmed positive for SARS-Cov-2 infection (Ncase=9986 vs. Ncontrol=1,877,672).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated definition and sample sizes from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "54d1d40a-e3de-458e-b8d3-737e2120cbf7",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C27",
+      "claim": "Very severe respiratory confirmed COVID-19 cases were defined as hospitalized individuals with laboratory-confirmed positive for SARS-Cov-2 infection, who needed respiratory support except for simple oxygen supplementary or died due to COVID-19 (Ncase=5101 vs. Ncontrol=1,383,241).",
+      "claim_type": "EXPLICIT",
+      "source": "Very severe respiratory confirmed COVID-19 cases were defined as hospitalized individuals with laboratory-confirmed positive for SARS-Cov-2 infection, who needed respiratory support except for simple oxygen supplementary or died due to COVID-19 (Ncase=5101 vs. Ncontrol=1,383,241).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated definition and sample sizes from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "933936ba-eba8-400f-b488-5697b6a8ed19",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C28",
+      "claim": "MR uses SNPs as proxies for exposure(s) assuming that SNPs are randomly allotted at conception mirroring a randomized procedure and that SNPs always precede disease onset to eliminate reverse causality.",
+      "claim_type": "EXPLICIT",
+      "source": "MR uses SNPs as proxies for exposure(s) assuming that SNPs are randomly allotted at conception mirroring a randomized procedure and that SNPs always precede disease onset to eliminate reverse causality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about MR methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "f4abea31-c3ac-4529-8b27-0d63382efb4a",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C29",
+      "claim": "Three essential model assumptions need to be fulfilled to guarantee valid IVs: IVs are associated with the exposure (relevance assumption); there is no association between IVs and any confounders of the exposure-outcome relationship (independence assumption); and IVs are associated with the outcome only through the studied exposure (exclusion restriction assumption).",
+      "claim_type": "EXPLICIT",
+      "source": "Three essential model assumptions need to be fulfilled to guarantee valid IVs (Zheng et al., 2017), that is, IVs are associated with the exposure (relevance assumption); there is no association between IVs and any confounders of the exposure-outcome relationship (independence assumption); and IVs are associated with the outcome only through the studied exposure (exclusion restriction assumption).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about MR methodology, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "e6bd28ad-5875-4c0e-806e-afe3552b5546",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C30",
+      "claim": "Genetically instrumented smoking initiation was associated with a significantly increased ACE2 expression in brain putamen basal ganglia (\u03b2=1.117, p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that genetically instrumented smoking initiation was associated with a significantly increased ACE2 expression in brain putamen basal ganglia (\u03b2=1.117, p=0.006), in brain hypothalamus (\u03b2=0.848, p=0.022), and in subcutaneous adipose tissue (\u03b2=0.285, p=0.016) using the IVW approach (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated results from the MR analysis, with reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "4ed58b0a-aa5d-4717-9075-6d51c7bba47f",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C31",
+      "claim": "Genetically instrumented smoking initiation was associated with a significantly increased ACE2 expression in brain hypothalamus (\u03b2=0.848, p=0.022).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that genetically instrumented smoking initiation was associated with a significantly increased ACE2 expression in brain putamen basal ganglia (\u03b2=1.117, p=0.006), in brain hypothalamus (\u03b2=0.848, p=0.022), and in subcutaneous adipose tissue (\u03b2=0.285, p=0.016) using the IVW approach (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated results from the MR analysis, with reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "8773f553-594b-4af3-8974-8063a42391d3",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C32",
+      "claim": "Genetically instrumented smoking initiation was associated with a significantly increased ACE2 expression in subcutaneous adipose tissue (\u03b2=0.285, p=0.016).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that genetically instrumented smoking initiation was associated with a significantly increased ACE2 expression in brain putamen basal ganglia (\u03b2=1.117, p=0.006), in brain hypothalamus (\u03b2=0.848, p=0.022), and in subcutaneous adipose tissue (\u03b2=0.285, p=0.016) using the IVW approach (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated results from the MR analysis, with reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "56546b7c-5943-45af-af6c-186575496719",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C33",
+      "claim": "Increased ACE2 expression in transverse colon (\u03b2=1.129, p=0.017) was observed through the MR-Egger regression for smoking initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, increased ACE2 expression in two colon tissues was observed only through the MR-Egger regression (transverse colon [\u03b2=1.129, p=0.017] and sigmoid colon [\u03b2=1.925, p=0.042]) and the direction of estimates remained consistent in the IVW approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated results from the MR-Egger regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "bf59aaba-1cb4-44a6-99ab-6c885a0695be",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C34",
+      "claim": "Increased ACE2 expression in sigmoid colon (\u03b2=1.925, p=0.042) was observed through the MR-Egger regression for smoking initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, increased ACE2 expression in two colon tissues was observed only through the MR-Egger regression (transverse colon [\u03b2=1.129, p=0.017] and sigmoid colon [\u03b2=1.925, p=0.042]) and the direction of estimates remained consistent in the IVW approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated results from the MR-Egger regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "d68d3343-d900-493d-9fd3-3c1d69b40b25",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C35",
+      "claim": "Horizontal pleiotropy was observed in transverse colon by MR-Egger intercept (p=0.04) for smoking initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For all these associations, we did not find apparent heterogeneity as indicated by Cochran's Q statistics (all p>0.05) or horizontal pleiotropy as indicted by MR-Egger intercept (all p>0.05) and MR-PRESSO global test (all p>1.0\u00d710\u22126), except that horizontal pleiotropy was observed in transverse colon by MR-Egger intercept (p=0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated results from the pleiotropy test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "4bdc1f35-e804-494c-8c6f-278200ba72a4",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C36",
+      "claim": "Genetically predicted smoking intensity as reflected by cigarettes per day was associated with a significantly elevated ACE2 expression in thyroid (\u03b2=1.468, p=1.8\u00d710\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "We further identified that genetically predicted smoking intensity as reflected by cigarettes per day was associated with a significantly elevated ACE2 expression in thyroid (\u03b2=1.468, p=1.8\u00d710\u22128), in liver (\u03b2=1.216, p=0.009), in brain hypothalamus (\u03b2=1.789, p=0.014), and in ovary (\u03b2=1.545, p=0.026) using the IVW method (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated results from the MR analysis, with reference to Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "cedec28f-c742-40eb-b299-6e2b29d0544a",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C37",
+      "claim": "Genetically predicted smoking intensity was associated with a significantly elevated ACE2 expression in liver (\u03b2=1.216, p=0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "We further identified that genetically predicted smoking intensity as reflected by cigarettes per day was associated with a significantly elevated ACE2 expression in thyroid (\u03b2=1.468, p=1.8\u00d710\u22128), in liver (\u03b2=1.216, p=0.009), in brain hypothalamus (\u03b2=1.789, p=0.014), and in ovary (\u03b2=1.545, p=0.026) using the IVW method (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated results from the MR analysis, with reference to Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "c72e50d8-8bb9-4533-88da-e7cdc6581ee2",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C38",
+      "claim": "Genetically predicted smoking intensity was associated with a significantly elevated ACE2 expression in brain hypothalamus (\u03b2=1.789, p=0.014).",
+      "claim_type": "EXPLICIT",
+      "source": "We further identified that genetically predicted smoking intensity as reflected by cigarettes per day was associated with a significantly elevated ACE2 expression in thyroid (\u03b2=1.468, p=1.8\u00d710\u22128), in liver (\u03b2=1.216, p=0.009), in brain hypothalamus (\u03b2=1.789, p=0.014), and in ovary (\u03b2=1.545, p=0.026) using the IVW method (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated results from the MR analysis, with reference to Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "bf8182da-9875-4239-b10c-b83366b43914",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C39",
+      "claim": "Genetically predicted smoking intensity was associated with a significantly elevated ACE2 expression in ovary (\u03b2=1.545, p=0.026).",
+      "claim_type": "EXPLICIT",
+      "source": "We further identified that genetically predicted smoking intensity as reflected by cigarettes per day was associated with a significantly elevated ACE2 expression in thyroid (\u03b2=1.468, p=1.8\u00d710\u22128), in liver (\u03b2=1.216, p=0.009), in brain hypothalamus (\u03b2=1.789, p=0.014), and in ovary (\u03b2=1.545, p=0.026) using the IVW method (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated results from the MR analysis, with reference to Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "edf77e3c-afb8-4275-bfcb-3d9c49b74544",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C40",
+      "claim": "Levels of ACE2 expression decreased with genetically instrumented smoking intensity in sigmoid colon tissue (\u03b2=\u22121.971, p=0.019) using the MR-Egger regression.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, levels of ACE2 expression decreased with genetically instrumented smoking intensity in sigmoid colon tissue (\u03b2=\u22121.971, p=0.019) and in vagina tissue (\u03b2=\u22123.271, p=0.043) using the MR-Egger regression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated results from the MR-Egger regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "233ef20a-5387-4176-a688-06f211b3fcd8",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C41",
+      "claim": "Levels of ACE2 expression decreased with genetically instrumented smoking intensity in vagina tissue (\u03b2=\u22123.271, p=0.043) using the MR-Egger regression.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, levels of ACE2 expression decreased with genetically instrumented smoking intensity in sigmoid colon tissue (\u03b2=\u22121.971, p=0.019) and in vagina tissue (\u03b2=\u22123.271, p=0.043) using the MR-Egger regression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated results from the MR-Egger regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "274abbdb-7092-459c-aee3-d46679851a73",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C42",
+      "claim": "Only one suggestive association with ACE2 expression in tibial nerve was observed for alcohol consumption using the IVW approach (\u03b2=\u22121.462, p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "For alcohol consumption defined as drinks per week, only one suggestive association with ACE2 expression in tibial nerve was observed using the IVW approach (\u03b2=\u22121.462, p=0.006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated results from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "2211cd83-6371-406a-8ce4-d7a15ead9e57",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C43",
+      "claim": "Smoking initiation significantly increased the risk of COVID-19 onset (IVW: OR=1.15, 95%CI: 1.07\u20131.23, p=8.7\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that smoking initiation significantly increased the risk of COVID-19 onset (IVW: OR=1.15, 95%CI: 1.07\u20131.23, p=8.7\u00d710\u22125) even after taking into account multiple comparisons (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated results from the MR analysis, with reference to Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "774684fb-d696-4ec4-9527-03c2b3f6c37c",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C44",
+      "claim": "Smoking initiation increased the risk of very severe respiratory confirmed COVID-19 using the IVW approach.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, smoking initiation increased the risk of very severe respiratory confirmed COVID-19 and hospitalized COVID-19 using the IVW approach, but the results were not supported by the MR-Egger regression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated results from the MR analysis with noted limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "f8b19e56-6bda-489c-9677-6ae9cf0286be",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C45",
+      "claim": "Smoking initiation increased the risk of hospitalized COVID-19 using the IVW approach.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, smoking initiation increased the risk of very severe respiratory confirmed COVID-19 and hospitalized COVID-19 using the IVW approach, but the results were not supported by the MR-Egger regression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated results from the MR analysis with noted limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "0ff9e6c5-6e54-4e0e-af29-3b40095c2c16",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C46",
+      "claim": "Smoking intensity (cigarettes per day) increased the risk of very severe respiratory confirmed COVID-19 as shown in the MR-Egger regression (OR=5.99, 95%CI: 1.57\u201322.84, p=0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "Smoking intensity (cigarettes per day) only increased the risk of very severe respiratory confirmed COVID-19 as shown in the MR-Egger regression (OR=5.99, 95%CI: 1.57\u201322.84, p=0.012) (Supplementary file 1o).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated results from the MR-Egger regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "98434ffa-14e3-4da8-a134-e8a0b0fc3fbb",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C47",
+      "claim": "No causal link was found between alcohol consumption (drinks per week) and the risk of COVID-19 adverse outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, we did not find a causal link between alcohol consumption (drinks per week) and the risk of COVID-19 adverse outcomes (Supplementary file 1p).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated null finding from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "de0b976b-b5cc-424e-b4c7-28a9316f9adf",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C48",
+      "claim": "A study involving 214 patients with laboratory confirmed COVID-19 from Wenzhou China found that patients with severe disease were more likely to be smokers (26.3% vs. 6.4%, p = 0.038) compared to non-severe cases.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a study involving 214 patients with laboratory confirmed COVID-19 from Wenzhou China found that compared to non-severe cases, patients with severe disease were more likely to be smokers (26.3% vs. 6.4%, p = 0.038) (Zheng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to an observational study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "a7001c52-9603-4ba9-9425-40d1c5152a71",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C49",
+      "claim": "A study recruiting 78 patients with COVID-19 in Wuhan found a higher proportion of ever-smokers in COVID-19 progression group than in the improvement/stabilization group (OR=14.28, 95% CI:1.58\u201325.00, p=0.018).",
+      "claim_type": "EXPLICIT",
+      "source": "Another study recruiting 78 patients with COVID-19 in Wuhan also found a higher proportion of ever-smokers in COVID-19 progression group than in the improvement/stabilization group (OR=14.28, 95% CI:1.58\u201325.00, p=0.018) (Liu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to an observational study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "04163a52-a179-44e6-9ede-3c679c728a6a",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C50",
+      "claim": "A meta-analysis on 11,590 COVID-19 cases demonstrated a higher proportion of smokers among 2133 patients who experienced disease progression, suggesting that smoking aggravated COVID-19 progression (OR=1.91, 95% CI: 1.42\u20132.59).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, a meta-analysis on a total of 11,590 COVID-19 cases demonstrated a higher proportion of smokers among 2133 patients experienced disease progression, suggesting that smoking aggravated COVID-19 progression (OR=1.91, 95% CI: 1.42\u20132.59) (Patanavanich and Glantz, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a meta-analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "dc53ff30-c430-40f1-a0e6-f34b57a14aba",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C51",
+      "claim": "A retrospective study including 191 patients found a comparable proportion of smokers in survivors and non-survivors (9% vs. 4%, p=0.21).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a retrospective study including 191 patients of which 137 survived and 54 non-survived found a comparable proportion of smokers in survivors and non-survivors (9% vs. 4%, p=0.21) (Zhou et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to an observational study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "e05b2d9c-3608-42e8-86a9-dee8d9b924bb",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C52",
+      "claim": "A meta-analysis including five studies involving 1399 individuals with COVID-19 revealed no significant association between smoking and disease severity (OR=1.69, 95% CI: 0.41\u20136.92).",
+      "claim_type": "EXPLICIT",
+      "source": "A meta-analysis including five studies (four in Wuhan and one across 30 provinces in Mainland China) (Guan et al., 2020; Liu et al., 2020; Huang et al., 2020; Yang et al., 2020; Zhang et al., 2020) involving 1399 individuals with COVID-19 revealed no significant association between smoking and disease severity (OR=1.69, 95% CI: 0.41\u20136.92) (Lippi and Henry, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a meta-analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "13506d9d-b273-4aaa-a482-66aad8734505",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C53",
+      "claim": "Evidence from the Veterans Affairs Birth Cohort in a US population found that current smoking was associated with a lower risk of COVID-19 susceptibility (OR=0.45, 95% CI: 0.35\u20130.57).",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to the findings from Asian population, evidence from the Veterans Affairs Birth Cohort in a US population found that current smoking was associated with a lower risk of COVID-19 susceptibility (OR=0.45, 95% CI: 0.35\u20130.57) (Rentsch et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to an observational study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "a1b5a469-3099-4673-b54c-5bc659516b99",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C54",
+      "claim": "Only 1.4% patients were current smokers in the study conducted by Zhang et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, compared with the high proportion of smokers in China (an average 26.6% prevalence in the general population), only 1.4% patients were current smokers in the study conducted by Zhang et al., 2020 and 12.6% in the study conducted by Guan et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "5c4c4a8c-9dac-44ea-ae34-97267a352157",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C55",
+      "claim": "Only 12.6% patients were current smokers in the study conducted by Guan et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, compared with the high proportion of smokers in China (an average 26.6% prevalence in the general population), only 1.4% patients were current smokers in the study conducted by Zhang et al., 2020 and 12.6% in the study conducted by Guan et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "5b183ce8-f404-487e-b548-c75aeb96d83c",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C56",
+      "claim": "Cai et al. identified that smoking was associated with an elevated expression of ACE2 in the lung.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Cai et al. identified that smoking was associated with an elevated expression of ACE2 in the lung, providing biological evidence of smoking with an increased susceptibility to SARS-CoV-2 infection or severity (Cai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a laboratory study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "24718865-b9e7-4060-930e-8912fd7fc078",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C57",
+      "claim": "Rao et al. identified a nominal significant association between tobacco use and ACE2 expression in the lung (IVW: \u03b2=0.918, p=0.016).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Rao et al. conducted a phenome-wide MR study incorporating 3948 traits, diseases, and blood proteins and identified a nominal significant association between tobacco use and ACE2 expression in the lung (IVW: \u03b2=0.918, p=0.016) (Rao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published MR study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "eb96c9cc-3bd1-4241-84a1-05e15ff7b7bc",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C58",
+      "claim": "The association between tobacco use and ACE2 expression in the lung identified by Rao et al. did not pass multiple comparisons (p-value for FDR was 0.51).",
+      "claim_type": "EXPLICIT",
+      "source": "However, this association did not pass multiple comparisons (p-value for FDR was 0.51), which was consistent with our MR results using a greatly augmented number of IVs (for smoking status IV=378).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated statistical result with comparison to the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "7f7500a0-c463-4050-8e69-f6b7fa87d00d",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C59",
+      "claim": "ACE2 is a type I transmembrane metallocarboxypeptidase homologous to ACE.",
+      "claim_type": "EXPLICIT",
+      "source": "As a type I transmembrane metallocarboxypeptidase homologous to ACE, ACE2 is known to be expressed in a variety of tissues, including respiratory tract, cardio-renal tissues, and gastrointestinal tissues (Harmer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "7b618b39-25a4-4a9b-8c7c-01e318eac718",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C60",
+      "claim": "ACE2 is known to be expressed in a variety of tissues, including respiratory tract, cardio-renal tissues, and gastrointestinal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "As a type I transmembrane metallocarboxypeptidase homologous to ACE, ACE2 is known to be expressed in a variety of tissues, including respiratory tract, cardio-renal tissues, and gastrointestinal tissues (Harmer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "b5fe82a5-4dc6-4978-815f-eea4c2224fd0",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C61",
+      "claim": "Enrichment of SARS-CoV-2 in gastrointestinal tract has been confirmed by testing viral RNA in stool from 71 patients with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "While SARS-CoV-2 mainly spreads via respiratory tract, enrichment of SARS-CoV-2 in gastrointestinal tract has been confirmed by testing viral RNA in stool from 71 patients with COVID-19, suggesting the importance of gastrointestinal involvement in the infection (Xiao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a study with viral RNA testing data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "83c77bcf-07b6-4de5-9eef-eed404451ba4",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C62",
+      "claim": "Nearly one-fifth COVID-19 patients remained SARS-CoV-2 RNA-positive in their stool, despite negative results in their respiratory samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, nearly one-fifth COVID-19 patients remained SARS-CoV-2 RNA-positive in their stool, despite negative results in their respiratory samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the cited study data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "86a962eb-9b51-42d1-a2ff-9dab1a3e99e7",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C63",
+      "claim": "ACE2 was abundantly expressed in the gastrointestinal epithelia, but rarely expressed in the esophageal epithelia in COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those 71 patients, ACE2 was abundantly expressed in the gastrointestinal epithelia, but rarely expressed in the esophageal epithelia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the cited study data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "12e37bc3-31ca-4532-a7e4-42190943fdb1",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C64",
+      "claim": "Findings from public databases (GEO, GTEx, and HPA) have demonstrated a higher expression level of ACE2 in the gastrointestinal tract (colon, rectal, and small intestine) and liver than in the lung.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, findings from public databases (GEO, GTEx, and HPA) have demonstrated a higher expression level of ACE2 in the gastrointestinal tract (colon, rectal, and small intestine) and liver than in the lung (Burgue\u00f1o et al., 2020; Li et al., 2020; Pirola and Sookoian, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies analyzing public databases.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "c8dfcfc5-9768-4d0a-8725-0cf15697c21c",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C65",
+      "claim": "Smoking may promote cellular uptake of SARS-CoV-2 through nicotinic acetylcholine receptor (nAChR) signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Smoking may promote cellular uptake of SARS-CoV-2 through nicotinic acetylcholine receptor (nAChR) signalling (Russo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research, presented as speculation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "5744a9f6-f4ef-4be4-8967-4a44cefe8f2b",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C66",
+      "claim": "nAChR and ACE2 are known to be co-expressed on many sites such as cortex, striatum, and hypothalamus within human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that nAChR and ACE2 are known to be co-expressed on many sites such as cortex, striatum, and hypothalamus within human brain (Dani and Bertrand, 2007; Jones et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "1af90c7e-3f5b-4543-a127-caa57b43c045",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C67",
+      "claim": "Nicotine stimulation of the nAChR increased ACE2 expression within neural cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nicotine stimulation of the nAChR increased ACE2 expression within neural cells, indicating a likelihood that smokers are more vulnerable to COVID-19 (Olds and Kabbani, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "8c6f6e82-9e39-4c56-9371-b008bde1a04e",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C68",
+      "claim": "GWAS-identified SNPs for smoking and alcohol consumption explained only a small fraction (1\u20132%) of phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Although hundreds of SNPs were used as proxies for cigarette smoking and alcohol consumption, these GWAS-identified SNPs explained only a small fraction (1\u20132%) of phenotypic variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "56488300-c198-49e5-862e-a4f1b482d158",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C69",
+      "claim": "The minimum sample size of 114 in brain substantia nigra tissue limited the statistical power of MR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the minimum sample size of 114 in brain substantia nigra tissue further limited the statistical power of MR analysis, albeit GTEx database is so far the largest available database with both genotype and expression data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated limitation of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "e9bd0b80-6172-451e-bf06-1243ad7beced",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C70",
+      "claim": "Data on the genotypes, tissue expression, and COVID-19 related outcomes were all based on European ancestry populations, restricting generalizability to other ethnicities.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, data on the genotypes, tissue expression, and COVID-19 related outcomes of our analyses were all based on European ancestry populations, restricting its generalizability to other ethnicities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "fa85e884-70c9-4a8f-bf9f-c2374cafb9e3",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C71",
+      "claim": "Few of the significant associations passed the stringent Bonferroni corrections.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we have to acknowledge that few of our significant associations passed the stringent Bonferroni corrections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "118ff9c3-9073-4e81-8dde-52169294e0cb",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C72",
+      "claim": "Genetically instrumented smoking phenotypes reflected by both smoking initiation and smoking intensity are significantly associated with a high expression level of ACE2 in multiple tissues/organs.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, genetically instrumented smoking phenotypes reflected by both smoking initiation and smoking intensity are significantly associated with a high expression level of ACE2 in multiple tissues/organs, subsequently increasing the susceptibility and severity of COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on the study's MR analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "31ef0796-0295-4945-9130-73e8acd6bbf3",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C73",
+      "claim": "Genetically instrumented smoking phenotypes increase the susceptibility and severity of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, genetically instrumented smoking phenotypes reflected by both smoking initiation and smoking intensity are significantly associated with a high expression level of ACE2 in multiple tissues/organs, subsequently increasing the susceptibility and severity of COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on the study's MR analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "158e486b-24e6-4998-bfe1-e361cbf68e78",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C74",
+      "claim": "Smokers might be more vulnerable to SARS-CoV-2 infection or severe disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide important clinical implications on that smokers might be more vulnerable to SARS-CoV-2 infection or severe disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "dd0eede2-c8cb-4a71-8c45-7bfa191fc8fd",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C75",
+      "claim": "Smoking cessation is an important actionable prevention strategy to COVID-19 at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "At the population level, smoking cessation is also an important actionable prevention strategy to COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the study's findings about smoking and COVID-19.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "7a5fa827-dab9-4193-8120-f50128ef9cfc",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C76",
+      "claim": "80-95% of instrumental variables were successfully mapped to the GTEx database and to the COVID-19 Host Genetics Initiative database.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to map 80\u201395% of those IVs to the GTEx database and to the COVID-19 Host Genetics Initiative database \u2013 a virtually complete coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data about the study's methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "d78e22ae-54dd-4a30-875c-39ad52044a7f",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C77",
+      "claim": "The study had sufficient power (>80%) to detect a causal effect of 0.74\u20132.66 in ACE2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the current sample size, given 1\u20132% of the phenotypic variance of smoking and alcohol consumption explained by IVs, our study had sufficient power (>80%) to detect a causal effect of 0.74\u20132.66 in ACE2 expression, and to detect an OR ranging from 1.11 to 1.39 for COVID-19 related outcomes (Supplementary file 1e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated power calculation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "e4d7261a-2029-42a2-bc09-a2c08577748b",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "claim_id": "C78",
+      "claim": "The study had sufficient power (>80%) to detect an OR ranging from 1.11 to 1.39 for COVID-19 related outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the current sample size, given 1\u20132% of the phenotypic variance of smoking and alcohol consumption explained by IVs, our study had sufficient power (>80%) to detect a causal effect of 0.74\u20132.66 in ACE2 expression, and to detect an OR ranging from 1.11 to 1.39 for COVID-19 related outcomes (Supplementary file 1e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated power calculation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f01ae3a2-8cd5-4056-828a-0a9acedb946a",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used genetic variants from the GSCAN consortium as instrumental variables for smoking and alcohol consumption, with 378 SNPs for smoking initiation, 55 SNPs for cigarettes per day, and 99 SNPs for drinks per week. These IVs explained 1-2% of phenotypic variance and had F-statistics >10, indicating strong instruments. Approximately 80-95% of IVs were successfully mapped to outcome databases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 and C76 provide clear methodological details about IV selection and validation. The F-statistics (77.2, 67.4, 17.8) all exceed the threshold of 10, confirming strong instruments as stated in C21. The mapping success rate (C76) demonstrates adequate coverage for the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "b213b0d7-dc2c-4a64-8cca-089be63fb68f",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genetically instrumented smoking initiation was associated with significantly increased ACE2 expression in brain putamen basal ganglia (\u03b2=1.117, p=0.006), brain hypothalamus (\u03b2=0.848, p=0.022), and subcutaneous adipose tissue (\u03b2=0.285, p=0.016) using IVW. MR-Egger regression identified associations in transverse colon (\u03b2=1.129, p=0.017) and sigmoid colon (\u03b2=1.925, p=0.042), though horizontal pleiotropy was detected in transverse colon (p=0.04).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C32 report statistically significant associations using IVW, but none pass Bonferroni correction (p<0.001 required per C71). Claims C33-C34 rely solely on MR-Egger regression without IVW support. The detected pleiotropy in C35 for transverse colon undermines causal interpretation. The authors acknowledge in C71 that few associations survived stringent correction, raising concerns about false discovery rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "f5672ec9-ad85-41d4-a7f6-6fb8bef9e164",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genetically predicted smoking intensity (cigarettes per day) was associated with elevated ACE2 expression in thyroid (\u03b2=1.468, p=1.8\u00d710\u207b\u2078), liver (\u03b2=1.216, p=0.009), brain hypothalamus (\u03b2=1.789, p=0.014), and ovary (\u03b2=1.545, p=0.026) using IVW. MR-Egger regression showed decreased ACE2 expression in sigmoid colon (\u03b2=-1.971, p=0.019) and vagina (\u03b2=-3.271, p=0.043).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The thyroid association (C36) passes Bonferroni correction and shows strong statistical significance. However, associations in liver, brain hypothalamus, and ovary (C37-C39) do not survive multiple testing correction. Claims C40-C41 rely exclusively on MR-Egger regression with opposite directionality from IVW, creating interpretive ambiguity. The small number of IVs (N=55 per C18) and low variance explained (1.1% per C20) further limit confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "a06b3846-f307-4e46-a71f-647a88e1abe7",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For alcohol consumption (drinks per week), only one suggestive association with ACE2 expression in tibial nerve was observed using IVW (\u03b2=-1.462, p=0.006), but the MR-Egger regression showed opposite directionality (\u03b2=0.336, p=0.721).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claim C42 reports conflicting results between IVW and MR-Egger methods with opposite effect directions. The association does not pass multiple testing correction and lacks consistency across sensitivity analyses. The authors themselves conclude a null association for alcohol consumption (C47), contradicting any meaningful interpretation of C42.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "e581aea5-7642-4af5-b09f-ebbd3fe5efa2",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Smoking initiation significantly increased the risk of COVID-19 onset (OR=1.15, 95%CI: 1.07-1.23, p=8.7\u00d710\u207b\u2075) using IVW, passing multiple comparison correction. Smoking initiation also increased risk of very severe respiratory confirmed COVID-19 and hospitalized COVID-19 using IVW, but these results were not supported by MR-Egger regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is well-supported with statistical significance surviving Bonferroni correction (p<0.001) and consistency across weighted median and MR-PRESSO methods. However, claims C44-C45 show inconsistency between IVW and MR-Egger approaches, suggesting potential pleiotropy issues. The primary finding (C43) for COVID-19 susceptibility remains robust despite these limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "1b91ccf3-f65c-4d32-aaaa-55adf5b62e5d",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Smoking intensity (cigarettes per day) increased the risk of very severe respiratory confirmed COVID-19 as shown in MR-Egger regression (OR=5.99, 95%CI: 1.57-22.84, p=0.012).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claim C46 relies exclusively on MR-Egger regression without corroborating evidence from IVW or other methods. The wide confidence interval (1.57-22.84) indicates substantial uncertainty. The lack of support from the primary IVW method and absence of consistency across sensitivity analyses undermines confidence in this association.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "c4695ffb-1f38-4d8f-837a-46ba541b384b",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "No causal link was found between alcohol consumption (drinks per week) and the risk of COVID-19 adverse outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by the absence of significant associations across multiple MR methods. This null finding is consistent with the weak instrumental variables for alcohol consumption (only 0.2% variance explained per C20, F-statistic=17.8 per C21), though the low instrument strength limits the ability to detect small effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "eaae188a-6b42-4101-8d43-0408237b20f0",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ACE2 RNA and protein quantities are well correlated in tissues such as lung and kidney, making ACE2 RNA expression a good proxy for ACE2 protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C23 cites correlation data from Wang et al. 2020, but C24's inference that RNA is a 'good proxy' for protein across all 44 tissues studied is not directly supported. The cited correlation is limited to lung and kidney, yet the study examines diverse tissues including brain, colon, thyroid, and reproductive organs where RNA-protein correlation may differ substantially. This assumption is critical but inadequately validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "74a5b2ff-2682-418e-85c7-014d56949fb3",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study describes the fundamental assumptions of Mendelian randomization: SNPs are randomly allocated at conception, precede disease onset, and must satisfy three key assumptions (relevance, independence, and exclusion restriction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 accurately describe established MR methodology principles supported by citation to Zheng et al. 2017. These are standard methodological statements that form the theoretical foundation for the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "c858d4d3-19fe-4db8-a02b-7d8370750406",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study acknowledges several important limitations: IVs explained only 1-2% of phenotypic variance, minimum sample size of 114 in some tissues limited power, data were restricted to European ancestry populations, and few associations passed Bonferroni correction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 transparently report methodological limitations. The low variance explained (C68) is a fundamental weakness affecting causal inference strength. The sample size limitation (C69) and population restriction (C70) appropriately constrain generalizability. The acknowledgment in C71 that few associations survived stringent correction is critical for interpreting the results and is consistent with the statistical findings presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "f5b7b7c3-3e47-4987-9015-3fbaba0c6b4a",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that genetically instrumented smoking phenotypes are significantly associated with high ACE2 expression in multiple tissues/organs, subsequently increasing COVID-19 susceptibility and severity. They infer that smokers might be more vulnerable to SARS-CoV-2 infection and recommend smoking cessation as a prevention strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C72-C75 overstate the evidence. While C43 supports increased COVID-19 susceptibility from smoking initiation, the causal chain linking smoking\u2192ACE2 expression\u2192COVID-19 outcomes is not established. Most tissue-specific ACE2 associations (C30-C41) failed multiple testing correction per C71. The inference that elevated ACE2 'subsequently' increases COVID-19 risk (C73) is speculative without mediation analysis. The clinical recommendations (C74-C75) extend beyond what the data support, particularly given the acknowledged limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "2bd4963d-6674-4d08-893a-2174a970ec85",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study had sufficient power (>80%) to detect a causal effect of 0.74-2.66 in ACE2 expression and an OR of 1.11-1.39 for COVID-19 outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 provide transparent power calculations based on the sample sizes and variance explained by IVs. The power analysis appropriately acknowledges the study's ability to detect effects of specific magnitudes, though the minimum detectable effect sizes are relatively large, particularly for ACE2 expression (0.74-2.66), which may miss smaller but biologically meaningful effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "0c6284a7-1c6b-419a-9278-83bbf67e0642",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes background on COVID-19, ACE2 as the SARS-CoV-2 receptor, disparities in infection susceptibility, and prior evidence linking smoking to ACE2 expression and COVID-19 outcomes. It critiques limitations of previous MR studies, particularly Rao et al.'s use of only 3 SNPs for smoking and focus on lung tissue alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 appropriately summarize prior literature with citations. The critique of Rao et al. (C10, C12) is valid and justifies the current study's approach using 378+ SNPs and examining 44 tissues. The background establishes the biological plausibility of the smoking-ACE2-COVID-19 pathway, though this does not guarantee the pathway operates as hypothesized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "7ace2906-4461-4702-8825-a001a656c419",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study utilized GTEx database (44 tissues, N\u2265100 per tissue) for ACE2 expression data and COVID-19 Host Genetics Initiative data for COVID-19 outcomes, with clearly defined case definitions for susceptibility (N=38,984 cases), hospitalized (N=9,986 cases), and very severe respiratory confirmed COVID-19 (N=5,101 cases).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 and C22 appropriately describe data sources with citations. Claims C25-C27 provide clear operational definitions for COVID-19 outcomes with adequate sample sizes. The methodological decision to require N\u2265100 per tissue (C22) is reasonable for ensuring statistical power, though this still resulted in limited power for some tissues per C69.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "ed297934-b821-4b71-ac09-5750b8e85eca",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The discussion reviews mixed epidemiological evidence on smoking and COVID-19, citing studies showing increased risk (OR=1.79-14.28) and disease progression (OR=1.91), as well as contradictory studies showing no association or even protective effects (OR=0.45). The authors note that contradictory studies had small sample sizes and low proportions of smokers (1.4-12.6% vs. 26.6% population prevalence).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 accurately summarize the conflicting observational literature with appropriate citations. The critique of small sample sizes and selection bias (low smoker representation) in null studies is methodologically sound. This contextualizes why MR approaches may provide clearer causal inference despite the observational evidence being mixed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "af992e06-2a6c-4808-a873-bedb732e2311",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The discussion references prior laboratory and MR evidence: Cai et al. found smoking associated with elevated lung ACE2 expression, and Rao et al. found a nominal association (\u03b2=0.918, p=0.016) that did not survive multiple testing correction (FDR p=0.51), consistent with the current study's null finding for lung tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 appropriately contextualize the current findings within prior research. The acknowledgment that Rao et al.'s lung tissue finding did not survive correction (C58) and the consistency with the current null result demonstrates appropriate interpretation of the literature and the current study's limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "51c85c81-f4e8-4f1b-889b-9008d5ec8145",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The discussion establishes that ACE2 is expressed in multiple tissues beyond lung, including gastrointestinal tract where SARS-CoV-2 RNA has been detected in stool from COVID-19 patients. ACE2 expression is higher in gastrointestinal tract and liver than in lung according to public databases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 are supported by appropriate citations and provide biological context for why examining multiple tissues is important. The evidence for gastrointestinal involvement in COVID-19 (C61-C63) justifies the study's broad tissue approach, though this does not validate the specific tissue associations found in the MR analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    },
+    {
+      "id": "4e6bed6b-6466-45fe-842b-e0d7120eb231",
+      "content_id": "85edef4e-e89d-4d70-a286-db1123b4ef1b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The discussion proposes a mechanistic hypothesis that smoking may promote SARS-CoV-2 uptake through nicotinic acetylcholine receptor (nAChR) signaling, noting that nAChR and ACE2 are co-expressed in brain regions and that nicotine stimulation increases ACE2 expression in neural cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 appropriately present a speculative mechanism with supporting citations. The language in C65 ('may promote') correctly indicates this is hypothetical. This provides biological plausibility for the brain tissue findings (C30-C31, C38) but does not constitute direct evidence for the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:44:21.232222Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c082eada-57fc-4b5a-abd6-05c18c73d4b9",
+      "result_id": "f01ae3a2-8cd5-4056-828a-0a9acedb946a"
+    },
+    {
+      "claim_id": "278b669e-036a-4bb1-9a74-aa0201326f3b",
+      "result_id": "f01ae3a2-8cd5-4056-828a-0a9acedb946a"
+    },
+    {
+      "claim_id": "bbaa2560-4e81-455e-8056-184ad59bd35c",
+      "result_id": "f01ae3a2-8cd5-4056-828a-0a9acedb946a"
+    },
+    {
+      "claim_id": "dfc16d73-c42e-47e3-a28a-d35c47798427",
+      "result_id": "f01ae3a2-8cd5-4056-828a-0a9acedb946a"
+    },
+    {
+      "claim_id": "92c4b7e9-b30b-4c90-a551-09339545c3a2",
+      "result_id": "f01ae3a2-8cd5-4056-828a-0a9acedb946a"
+    },
+    {
+      "claim_id": "bb7d0601-76b0-4bd7-9ad5-e40399ecf260",
+      "result_id": "f01ae3a2-8cd5-4056-828a-0a9acedb946a"
+    },
+    {
+      "claim_id": "7a5fa827-dab9-4193-8120-f50128ef9cfc",
+      "result_id": "f01ae3a2-8cd5-4056-828a-0a9acedb946a"
+    },
+    {
+      "claim_id": "e6bd28ad-5875-4c0e-806e-afe3552b5546",
+      "result_id": "b213b0d7-dc2c-4a64-8cca-089be63fb68f"
+    },
+    {
+      "claim_id": "4ed58b0a-aa5d-4717-9075-6d51c7bba47f",
+      "result_id": "b213b0d7-dc2c-4a64-8cca-089be63fb68f"
+    },
+    {
+      "claim_id": "8773f553-594b-4af3-8974-8063a42391d3",
+      "result_id": "b213b0d7-dc2c-4a64-8cca-089be63fb68f"
+    },
+    {
+      "claim_id": "56546b7c-5943-45af-af6c-186575496719",
+      "result_id": "b213b0d7-dc2c-4a64-8cca-089be63fb68f"
+    },
+    {
+      "claim_id": "bf59aaba-1cb4-44a6-99ab-6c885a0695be",
+      "result_id": "b213b0d7-dc2c-4a64-8cca-089be63fb68f"
+    },
+    {
+      "claim_id": "d68d3343-d900-493d-9fd3-3c1d69b40b25",
+      "result_id": "b213b0d7-dc2c-4a64-8cca-089be63fb68f"
+    },
+    {
+      "claim_id": "4bdc1f35-e804-494c-8c6f-278200ba72a4",
+      "result_id": "f5672ec9-ad85-41d4-a7f6-6fb8bef9e164"
+    },
+    {
+      "claim_id": "cedec28f-c742-40eb-b299-6e2b29d0544a",
+      "result_id": "f5672ec9-ad85-41d4-a7f6-6fb8bef9e164"
+    },
+    {
+      "claim_id": "c72e50d8-8bb9-4533-88da-e7cdc6581ee2",
+      "result_id": "f5672ec9-ad85-41d4-a7f6-6fb8bef9e164"
+    },
+    {
+      "claim_id": "bf8182da-9875-4239-b10c-b83366b43914",
+      "result_id": "f5672ec9-ad85-41d4-a7f6-6fb8bef9e164"
+    },
+    {
+      "claim_id": "edf77e3c-afb8-4275-bfcb-3d9c49b74544",
+      "result_id": "f5672ec9-ad85-41d4-a7f6-6fb8bef9e164"
+    },
+    {
+      "claim_id": "233ef20a-5387-4176-a688-06f211b3fcd8",
+      "result_id": "f5672ec9-ad85-41d4-a7f6-6fb8bef9e164"
+    },
+    {
+      "claim_id": "274abbdb-7092-459c-aee3-d46679851a73",
+      "result_id": "a06b3846-f307-4e46-a71f-647a88e1abe7"
+    },
+    {
+      "claim_id": "2211cd83-6371-406a-8ce4-d7a15ead9e57",
+      "result_id": "e581aea5-7642-4af5-b09f-ebbd3fe5efa2"
+    },
+    {
+      "claim_id": "774684fb-d696-4ec4-9527-03c2b3f6c37c",
+      "result_id": "e581aea5-7642-4af5-b09f-ebbd3fe5efa2"
+    },
+    {
+      "claim_id": "f8b19e56-6bda-489c-9677-6ae9cf0286be",
+      "result_id": "e581aea5-7642-4af5-b09f-ebbd3fe5efa2"
+    },
+    {
+      "claim_id": "0ff9e6c5-6e54-4e0e-af29-3b40095c2c16",
+      "result_id": "1b91ccf3-f65c-4d32-aaaa-55adf5b62e5d"
+    },
+    {
+      "claim_id": "98434ffa-14e3-4da8-a134-e8a0b0fc3fbb",
+      "result_id": "c4695ffb-1f38-4d8f-837a-46ba541b384b"
+    },
+    {
+      "claim_id": "afc4cc10-f853-41aa-a99c-51483097d7b8",
+      "result_id": "eaae188a-6b42-4101-8d43-0408237b20f0"
+    },
+    {
+      "claim_id": "4785e9cb-fa49-427b-8668-d96ea7b7cc13",
+      "result_id": "eaae188a-6b42-4101-8d43-0408237b20f0"
+    },
+    {
+      "claim_id": "933936ba-eba8-400f-b488-5697b6a8ed19",
+      "result_id": "74a5b2ff-2682-418e-85c7-014d56949fb3"
+    },
+    {
+      "claim_id": "f4abea31-c3ac-4529-8b27-0d63382efb4a",
+      "result_id": "74a5b2ff-2682-418e-85c7-014d56949fb3"
+    },
+    {
+      "claim_id": "8c6f6e82-9e39-4c56-9371-b008bde1a04e",
+      "result_id": "c858d4d3-19fe-4db8-a02b-7d8370750406"
+    },
+    {
+      "claim_id": "56488300-c198-49e5-862e-a4f1b482d158",
+      "result_id": "c858d4d3-19fe-4db8-a02b-7d8370750406"
+    },
+    {
+      "claim_id": "e9bd0b80-6172-451e-bf06-1243ad7beced",
+      "result_id": "c858d4d3-19fe-4db8-a02b-7d8370750406"
+    },
+    {
+      "claim_id": "fa85e884-70c9-4a8f-bf9f-c2374cafb9e3",
+      "result_id": "c858d4d3-19fe-4db8-a02b-7d8370750406"
+    },
+    {
+      "claim_id": "118ff9c3-9073-4e81-8dde-52169294e0cb",
+      "result_id": "f5b7b7c3-3e47-4987-9015-3fbaba0c6b4a"
+    },
+    {
+      "claim_id": "31ef0796-0295-4945-9130-73e8acd6bbf3",
+      "result_id": "f5b7b7c3-3e47-4987-9015-3fbaba0c6b4a"
+    },
+    {
+      "claim_id": "158e486b-24e6-4998-bfe1-e361cbf68e78",
+      "result_id": "f5b7b7c3-3e47-4987-9015-3fbaba0c6b4a"
+    },
+    {
+      "claim_id": "dd0eede2-c8cb-4a71-8c45-7bfa191fc8fd",
+      "result_id": "f5b7b7c3-3e47-4987-9015-3fbaba0c6b4a"
+    },
+    {
+      "claim_id": "d78e22ae-54dd-4a30-875c-39ad52044a7f",
+      "result_id": "2bd4963d-6674-4d08-893a-2174a970ec85"
+    },
+    {
+      "claim_id": "e4d7261a-2029-42a2-bc09-a2c08577748b",
+      "result_id": "2bd4963d-6674-4d08-893a-2174a970ec85"
+    },
+    {
+      "claim_id": "6e11b157-3168-4d0b-a8bd-0f128020578d",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "b8523aee-89f8-4175-a0fb-cc9326fc7b1b",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "7c2b32ef-f339-4d4f-b63b-ec22d7854897",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "54b5dd19-c611-4558-86d0-e577f77be223",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "6ae0fb51-0b9f-42e9-80a0-1323d41e6454",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "e2a98762-e903-4ee0-a79a-4770cde816fa",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "c832fe97-7455-428b-b826-672654deae88",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "6dd00699-46a5-41dc-96c6-568289921bfe",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "94c05249-4187-47c6-9884-edead5fa5193",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "c812318c-bc86-4287-8765-6e2d0447f25e",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "cf046ea5-871c-4d44-9711-edd8d08e02cb",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "4b445c23-dd3e-45d5-95b4-def9bdf2774d",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "4dee2d1d-bee9-4bb2-9b25-4dd0d15ae8cf",
+      "result_id": "0c6284a7-1c6b-419a-9278-83bbf67e0642"
+    },
+    {
+      "claim_id": "f5d69f2c-42e3-4cad-9f65-e9cbd4736832",
+      "result_id": "7ace2906-4461-4702-8825-a001a656c419"
+    },
+    {
+      "claim_id": "73ab10dd-d96e-419b-9b21-c4094fdddfa8",
+      "result_id": "7ace2906-4461-4702-8825-a001a656c419"
+    },
+    {
+      "claim_id": "ec76e145-44a3-41c5-a838-c328a96e3af2",
+      "result_id": "7ace2906-4461-4702-8825-a001a656c419"
+    },
+    {
+      "claim_id": "df94e793-b84f-418f-9618-062c4be3f1aa",
+      "result_id": "7ace2906-4461-4702-8825-a001a656c419"
+    },
+    {
+      "claim_id": "33f5ffd6-76fe-429a-83c2-9fdc41aafb23",
+      "result_id": "7ace2906-4461-4702-8825-a001a656c419"
+    },
+    {
+      "claim_id": "54d1d40a-e3de-458e-b8d3-737e2120cbf7",
+      "result_id": "7ace2906-4461-4702-8825-a001a656c419"
+    },
+    {
+      "claim_id": "de0b976b-b5cc-424e-b4c7-28a9316f9adf",
+      "result_id": "ed297934-b821-4b71-ac09-5750b8e85eca"
+    },
+    {
+      "claim_id": "a7001c52-9603-4ba9-9425-40d1c5152a71",
+      "result_id": "ed297934-b821-4b71-ac09-5750b8e85eca"
+    },
+    {
+      "claim_id": "04163a52-a179-44e6-9ede-3c679c728a6a",
+      "result_id": "ed297934-b821-4b71-ac09-5750b8e85eca"
+    },
+    {
+      "claim_id": "dc53ff30-c430-40f1-a0e6-f34b57a14aba",
+      "result_id": "ed297934-b821-4b71-ac09-5750b8e85eca"
+    },
+    {
+      "claim_id": "e05b2d9c-3608-42e8-86a9-dee8d9b924bb",
+      "result_id": "ed297934-b821-4b71-ac09-5750b8e85eca"
+    },
+    {
+      "claim_id": "13506d9d-b273-4aaa-a482-66aad8734505",
+      "result_id": "ed297934-b821-4b71-ac09-5750b8e85eca"
+    },
+    {
+      "claim_id": "a1b5a469-3099-4673-b54c-5bc659516b99",
+      "result_id": "ed297934-b821-4b71-ac09-5750b8e85eca"
+    },
+    {
+      "claim_id": "5c4c4a8c-9dac-44ea-ae34-97267a352157",
+      "result_id": "ed297934-b821-4b71-ac09-5750b8e85eca"
+    },
+    {
+      "claim_id": "5b183ce8-f404-487e-b548-c75aeb96d83c",
+      "result_id": "af992e06-2a6c-4808-a873-bedb732e2311"
+    },
+    {
+      "claim_id": "24718865-b9e7-4060-930e-8912fd7fc078",
+      "result_id": "af992e06-2a6c-4808-a873-bedb732e2311"
+    },
+    {
+      "claim_id": "eb96c9cc-3bd1-4241-84a1-05e15ff7b7bc",
+      "result_id": "af992e06-2a6c-4808-a873-bedb732e2311"
+    },
+    {
+      "claim_id": "7f7500a0-c463-4050-8e69-f6b7fa87d00d",
+      "result_id": "51c85c81-f4e8-4f1b-889b-9008d5ec8145"
+    },
+    {
+      "claim_id": "7b618b39-25a4-4a9b-8c7c-01e318eac718",
+      "result_id": "51c85c81-f4e8-4f1b-889b-9008d5ec8145"
+    },
+    {
+      "claim_id": "b5fe82a5-4dc6-4978-815f-eea4c2224fd0",
+      "result_id": "51c85c81-f4e8-4f1b-889b-9008d5ec8145"
+    },
+    {
+      "claim_id": "83c77bcf-07b6-4de5-9eef-eed404451ba4",
+      "result_id": "51c85c81-f4e8-4f1b-889b-9008d5ec8145"
+    },
+    {
+      "claim_id": "86a962eb-9b51-42d1-a2ff-9dab1a3e99e7",
+      "result_id": "51c85c81-f4e8-4f1b-889b-9008d5ec8145"
+    },
+    {
+      "claim_id": "12e37bc3-31ca-4532-a7e4-42190943fdb1",
+      "result_id": "51c85c81-f4e8-4f1b-889b-9008d5ec8145"
+    },
+    {
+      "claim_id": "c8dfcfc5-9768-4d0a-8725-0cf15697c21c",
+      "result_id": "4e6bed6b-6466-45fe-842b-e0d7120eb231"
+    },
+    {
+      "claim_id": "5744a9f6-f4ef-4be4-8967-4a44cefe8f2b",
+      "result_id": "4e6bed6b-6466-45fe-842b-e0d7120eb231"
+    },
+    {
+      "claim_id": "1af90c7e-3f5b-4543-a127-caa57b43c045",
+      "result_id": "4e6bed6b-6466-45fe-842b-e0d7120eb231"
+    }
+  ],
+  "comparisons": []
+}

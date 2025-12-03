@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C74",
+      "C75"
+    ],
+    "result": "Atherosclerosis preferentially occurs in arterial regions exposed to disturbed blood flow (d-flow), while regions exposed to stable flow (s-flow) are protected. These effects are mediated in part by global changes in endothelial cell gene expression that regulate endothelial dysfunction, inflammation, and atherosclerosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C74, and C75 represent well-established background knowledge in the field, supported by multiple citations (Chiu and Chien, 2011; Davies, 1995; Kwak et al., 2014; Tarbell et al., 2014). These claims provide the foundational context for the study and are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C54"
+    ],
+    "result": "Kallikrein-related peptidase 10 (Klk10) was previously identified as a flow-sensitive gene in mouse arterial ECs, with high expression under s-flow and low expression under d-flow conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C54 refer to prior work by the authors (Ni et al., 2010) and establish the rationale for the current study. These are supported by citations to previous publications and represent background rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C68",
+      "C69",
+      "C70",
+      "C73"
+    ],
+    "result": "KLK10 expression is upregulated under s-flow conditions and downregulated under d-flow conditions in vivo and in vitro. This flow-dependent regulation occurs at the epigenomic and transcriptional levels, with Klk10 being primarily expressed by endothelial cells and not other cell types in the carotid artery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C16, C68-C70, and C73 are well-supported by multiple complementary experimental approaches including immunostaining (Figure 1b-c), qPCR (Figure 1d, 1g), western blot (Figure 1h-i), ELISA (Figure 1j), and single-cell RNA-seq and ATAC-seq (Figure 1k-l). The data consistently demonstrate flow-dependent regulation of KLK10 expression across different experimental systems (PCL model, aortic arch, cultured HAECs). The single-cell data provide strong evidence for EC-specific expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C50"
+    ],
+    "result": "KLK10 protein was found in the adventitia and subendothelial layer, likely originating from endothelial cells as a secreted protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C50 are supported by immunostaining data (Figure 1b) showing KLK10 protein in non-endothelial layers, combined with scRNA-seq and scATAC-seq data (Figure 1k-l) demonstrating that Klk10 mRNA is primarily expressed by ECs. The inference that the protein originates from ECs is reasonable given that KLK10 is a secreted protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C40",
+      "C44"
+    ],
+    "result": "KLK10 inhibits endothelial inflammation in vitro and in vivo, as demonstrated by reduced monocyte adhesion, decreased expression of VCAM1 and ICAM1, and reduced VCAM1 expression in d-flow regions of mouse aortic arch. The anti-inflammatory effect requires the native conformation or enzymatic activity of KLK10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23, C40, and C44 are supported by multiple complementary assays including monocyte adhesion assays (Figure 2a-b, 2h-i), qPCR and western blot for VCAM1/ICAM1 (Figure 2c-g), and in vivo en face immunostaining (Figure 2j-k). The concentration-dependent effects (Figure 2b) and loss of activity with heat-inactivated rKLK10 (Figure 2b, Figure 2\u2014figure supplement 3) strengthen the conclusions. Both gain-of-function (rKLK10 treatment, plasmid overexpression) and loss-of-function (siRNA knockdown) approaches support the anti-inflammatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "KLK10 prevents NF\u03baB activation by inhibiting phosphorylation and nuclear translocation of p65 in response to TNF\u03b1 and acute shear stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C25 are supported by western blot data showing reduced p65 phosphorylation (Figure 3a-b) and immunostaining data showing reduced nuclear p65 translocation (Figure 3c-f) in response to both TNF\u03b1 and acute laminar shear stress. The data are consistent with the known role of NF\u03baB in mediating inflammatory responses and provide a mechanistic link to the observed anti-inflammatory effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C43"
+    ],
+    "result": "KLK10 protects against endothelial permeability dysfunction induced by thrombin and oscillatory shear stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, and C43 are supported by FITC-avidin permeability assays (Figure 4a-d) showing that rKLK10 pretreatment reduces permeability increases induced by both thrombin and oscillatory shear stress. The use of thrombin as a positive control strengthens the validity of the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "rKLK10 treatment inhibits endothelial cell migration and tube formation but does not affect proliferation or apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 are supported by scratch assay, tube formation assay, Ki67 staining, and TUNEL staining data (Figure 2\u2014figure supplement 1). The selective effects on migration and tube formation without affecting proliferation or apoptosis suggest specific functional roles for KLK10 in endothelial biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C41"
+    ],
+    "result": "Injection of rKLK10 significantly reduced atherosclerosis development and macrophage accumulation in the LCA of Apoe\u2212/\u2212 mice without affecting plasma lipid levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, and C41 are supported by gross plaque images, H&E staining, CD68 immunostaining (Figure 5a-e), and plasma lipid analysis (Figure 5f-i). The lack of effect on plasma lipids indicates that the anti-atherogenic effect is mediated through local vascular effects rather than systemic lipid metabolism, strengthening the conclusion that KLK10 acts directly on the vessel wall.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C42"
+    ],
+    "result": "Ultrasound-mediated transfection of Klk10-expressing plasmids reduced atherosclerotic plaque formation in Apoe\u2212/\u2212 mice without affecting plasma lipid levels. KLK10 expression was increased in the endothelial layer and lung tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 and C42 are supported by bioluminescence imaging confirming plasmid expression (Figure 6a), gross plaque images and H&E staining showing reduced plaque burden (Figure 6b-e), immunostaining and western blot showing increased KLK10 expression (Figure 6f-i), and plasma lipid analysis (Figure 6j-n). The approach provides independent validation of the anti-atherogenic effects observed with rKLK10 injection. However, the lack of detectable plasma KLK10 difference by ELISA (Figure 6\u2014figure supplement 1) raises questions about the systemic versus local effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "KLK10 expression is significantly reduced in human coronary arteries with advanced atherosclerotic plaques (grades 4-6) compared to less-diseased arteries (grades 1-3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by immunostaining data from 40 human coronary artery samples (Figure 7a-c, Table 1). The use of CD31 as an endothelial marker and the comparison across different plaque stages strengthen the conclusion. This finding provides translational relevance by demonstrating that the observations in mouse models are applicable to human atherosclerosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Injection of rKLK10 at 0.6 mg/kg dose increased plasma levels to a peak of ~1600 ng/ml with a half-life of 4.5 hours, becoming undetectable by 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C49 are supported by ELISA data showing pharmacokinetic profile (Figure 2\u2014figure supplement 4). This information is important for understanding the dosing regimen used in the in vivo studies and provides context for the therapeutic potential of KLK10.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C67"
+    ],
+    "result": "The anti-inflammatory effect of KLK10 is unique compared to other KLKs expressed in ECs (KLK8 and KLK11), as only rKLK10 inhibited endothelial inflammation in response to TNF\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, and C67 are supported by scRNA-seq data showing expression of Klk8 and Klk11 in ECs (Figure 8\u2014figure supplement 1) and monocyte adhesion and western blot data showing that only rKLK10, but not rKLK8 or rKLK11, inhibited TNF\u03b1-induced inflammation (Figure 8\u2014figure supplement 2). This specificity strengthens the conclusion that KLK10 has a unique functional role among the KLK family members.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The effective concentrations of rKLK10 used in functional studies (1-10 ng/ml) fall within physiologically relevant ranges based on normal human plasma levels (~0.5 ng/ml), mouse plasma levels (5-10 ng/ml), and KLK10 levels in HAECs under flow conditions (~0.3 ng/ml for LS, ~0.13 ng/ml for OS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by ELISA data (Figure 1j, Figure 6\u2014figure supplement 1) and citations to prior literature (Luo et al., 2003; Planque et al., 2008). This analysis provides important context for interpreting the in vitro functional studies and supports the physiological relevance of the observed effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The effect of rKLK10 on monocyte adhesion is weaker than that of KLK10 overexpression using plasmid vectors, possibly because KLK10 produced directly in HAECs is processed more effectively than rKLK10 produced in CHO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is supported by comparison of data in Figure 2a and 2b, showing that plasmid-driven overexpression produces stronger effects than rKLK10 treatment. However, claim C66 is speculative (as acknowledged by the authors) and lacks direct experimental evidence. Alternative explanations such as differences in local concentration, duration of exposure, or experimental conditions are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C55",
+      "C56",
+      "C57",
+      "C53",
+      "C58",
+      "C59"
+    ],
+    "result": "Background information on KLK family members, their biological functions, and the role of mechanosensors and NF\u03baB in endothelial biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C53, C55-C59 represent established background knowledge supported by multiple citations. These claims provide context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C71",
+      "C72"
+    ],
+    "result": "KLK10 is a flow-sensitive endothelial protein that serves as an anti-inflammatory, barrier-protective, and anti-atherogenic factor with potential therapeutic applications for atherosclerosis treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C71, and C72 represent the overall conclusions of the study, synthesizing the findings from multiple experiments. These conclusions are well-supported by the collective evidence demonstrating flow-dependent regulation (C4-C16), anti-inflammatory effects (C17-C25), barrier-protective effects (C26-C27), and anti-atherogenic effects (C28-C35). However, the therapeutic potential (C71-C72) remains speculative and would require additional preclinical and clinical studies to validate.",
+    "result_type": "MAJOR"
+  }
+]

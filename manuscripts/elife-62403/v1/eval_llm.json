@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C39",
+      "C47",
+      "C98"
+    ],
+    "result": "The authors discovered a 'magic-ratio effect' where phase separation is suppressed at rational polymer stoichiometries in two-component systems with strong one-to-one specific binding. This effect was characterized through coarse-grained molecular dynamics simulations and confirmed by an analytical dimer-gel theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C27, C28, C39, C47, and C98 collectively establish the magic-ratio effect through both simulation (C27, C39, C47) and theory (C28). The simulations show pronounced peaks in dilute-phase concentration at magic-number valence ratios (C39) and equal sticker stoichiometry (C47), while the dimer-gel theory confirms these observations (C28). The convergence of computational and analytical approaches provides strong support for this novel phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The simulation model represents polymers as flexible linear chains of beads connected by harmonic springs, with finite-ranged attractive interactions between different bead types and strong repulsive interactions between same-type beads to ensure one-to-one binding. The system phase separates into a dilute phase of dimers/small oligomers and a dense interconnected polymer condensate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 describe the simulation methodology and observed phase behavior. The model design (C32-C35) is clearly specified with appropriate interaction potentials to enforce one-to-one binding. The observed phase separation (C36-C38) is documented with visual evidence in Figure 2C-D and concentration profiles in Figure 2E, providing direct experimental validation of the model behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C55",
+      "C61"
+    ],
+    "result": "For magic-number systems at equal stoichiometry (e.g., A14:B14), phase separation is driven by competition between translational entropy and conformational entropy rather than energy differences, since all binding sites can be satisfied in both dimers and condensates. Dimers are favored at low concentrations while condensates are favored at high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, C55, and C61 provide a mechanistic explanation for the magic-ratio effect based on entropic considerations. The reasoning is internally consistent: when all sites can bind in dimers (C40), energy is not the driving force (C41), so entropy dominates (C55, C61). This interpretation is supported by the non-monotonic dependence of dilute-phase concentration on binding strength for magic-number systems (C45) and the theoretical predictions (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "For non-magic-number systems, dilute-phase concentration decreases monotonically with increasing binding strength, while for magic-number systems the dependence can be non-monotonic. Dense-phase concentration increases monotonically with binding strength for all systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe distinct binding strength dependencies for magic vs. non-magic systems, directly supported by Figure 3A-B. The monotonic behavior for non-magic systems and non-monotonic behavior for magic systems in dilute phase (C44, C45) contrasts with the universally monotonic dense-phase behavior (C46), providing clear evidence for different underlying mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C52",
+      "C53"
+    ],
+    "result": "Increasing polymer valence decreases dilute-phase concentration and enhances both the width and relative height of the stoichiometry-dependent peak. For unequal valence systems, the phase boundary transitions from a symmetric minimum to an asymmetric peak at equal polymer stoichiometry with increasing polymer length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, C52, and C53 describe valence-dependent effects on phase boundaries, supported by Figure 4A and 4C. The systematic trends with increasing valence (C48, C49) and the transition from symmetric to asymmetric behavior (C52, C53) are clearly documented in the simulation data, though the mechanistic explanation could be more detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C56",
+      "C57"
+    ],
+    "result": "The dense-phase concentration shows no peak features with respect to valence or stoichiometry, indicating that the anomalous dilute-phase behavior does not arise from special properties of the dense phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C56, and C57 establish that the magic-ratio effect is a dilute-phase phenomenon. The absence of peaks in dense-phase concentration (C42, supported by Figure 3B) and monotonic behavior (C56, supported by Figure 5B) contrasts sharply with dilute-phase behavior, supporting the inference that the effect originates in dilute-phase oligomer formation (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The dilute phase composition varies with valence ratio: A14:B7 is dominated by fully-bonded trimers (1 A14 + 2 B7), A14:B8 by trimers with unpaired stickers, and A14:B6 by larger oligomers (3 A14 + 7 B6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 describes specific oligomer compositions in different systems, supported by cluster size analysis in Appendix 1\u2014figure 2 and Figure 3D. The detailed characterization of dilute-phase oligomers provides mechanistic insight into why different valence ratios show different phase behavior, though additional quantitative analysis of oligomer distributions would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The volume fraction of polymers in the dense phase is approximately 10%, comparable to the volume fraction of proteins in the cell cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 report a biologically relevant concentration measurement from simulations (Appendix 1\u2014figure 5C). The comparison to cellular protein concentrations (C51) provides context, though this is based on general knowledge rather than specific measurements. The result validates the biological relevance of the simulation parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A dimer-gel theory was developed assuming polymers associate as dimers in the dilute phase or as independent bonds in the dense phase (a mean-field approximation). This theory captures the magic-ratio effect, with dilute-phase concentrations substantially elevated around equal stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 describe the theoretical framework and its validation. The theory's assumptions (C59, C60) are clearly stated with appropriate caveats about mean-field approximations. The theory successfully reproduces the magic-ratio effect (C62, C63), as shown in Figure 6, providing independent confirmation of the simulation results and mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Binding correlations exist in simulations due to short linkers tethering stickers together, with a binding correlation length of approximately 1.8 stickers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C65 identify a limitation of the mean-field approximation and quantify the correlation length from simulation data (Appendix 2\u2014figure 5A). This explains why the theory works better for valence 8 systems than valence 14 systems when compared to simulations, providing important context for interpreting the theoretical predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Theoretical predictions show that increasing valence decreases dilute-phase concentration and increases dense-phase concentration for equal-valence polymers, while for unequal-valence polymers the dilute phase boundary transitions from shoulder to peak. Higher valence systems require smaller nonspecific interaction parameters for theory-simulation agreement, and the magic-ratio effect disappears in weak-binding regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 describe systematic theoretical predictions and their validation against simulations. The valence-dependent trends (C66-C68) are supported by Appendix 2\u2014figure 6, the parameter adjustments (C69, C70) are mechanistically justified, and the weak-binding prediction (C71) is consistent with Figure 3. The comprehensive parameter exploration strengthens confidence in the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Simulation dilute-phase concentrations (~mM) are higher than biological systems (tens of \u03bcM), likely due to differences in nonspecific interactions, steric repulsion, and linker properties. Increasing linker length from 4.7 to 5.9 nm reduces dilute-phase concentration >10-fold, while increasing sticker size from 2.5 to 2.9 nm halves dense-phase concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 acknowledge quantitative discrepancies between simulations and biology (C89, C90) and systematically explore parameter effects (C93-C95). The large sensitivity to linker length (C94, Appendix 1\u2014figure 6A) and steric repulsion (C95, Appendix 1\u2014figure 5B) is well-documented. The speculation about causes (C91) is reasonable and supported by citation, though direct experimental validation would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The magic-ratio effect should in principle manifest in strongly interacting systems like SUMO-SIM or SH3-PRM based on their dissociation constants, but has not been observed, possibly due to size/linker mismatches. The in vivo relevance remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C81 make predictions about experimental systems but acknowledge the lack of observed effects (C80) and uncertain biological relevance (C81). While the dissociation constant comparison (C79) is reasonable, the absence of experimental validation and multiple potential confounding factors (size mismatch, multiple components, linker effects) make it unclear whether the magic-ratio effect is biologically relevant or merely a theoretical curiosity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The magic-ratio effect could manifest in synthetic systems (DNA origami, patchy colloids) and be exploited to determine relative valence. Chemical modifications changing valence could regulate condensates, and cells may have evolved to avoid or exploit magic ratios. The Rubisco-EPYC1 system may suppress the effect through geometric constraints but could exploit it via phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C88 are primarily speculative about applications and biological implications. While the suggestions are reasonable extensions of the findings (C82-C85) and the Rubisco-EPYC1 example is supported by citations (C86, C87), these remain untested hypotheses. The phosphorylation speculation (C88) is particularly uncertain as it lacks direct experimental evidence. These represent interesting future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Cells contain non-membrane-bound compartments that form via liquid-liquid phase separation and enable central cellular functions. These condensates are driven by strong one-to-one saturable multivalent interactions, resulting in complex phase diagrams sensitive to binding sites, binding strengths, and nonspecific interactions that can be biologically regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 establish the biological context and motivation for the study. These are well-established facts in the field, supported by appropriate citations (C5, C6, C7) and general knowledge (C1, C2, C8-C11). This background provides essential context but represents prior knowledge rather than new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Natural examples of two-component condensates include the pyrenoid (Rubisco with EPYC1, valences 8:5) and PML nuclear bodies (SUMOylated PML proteins). Engineered polySUMO-polySIM systems also phase separate when mixed but not individually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 provide biological examples of two-component systems, all supported by appropriate citations (C16, C19, C20) or established knowledge (C12-C15, C17, C18). These examples motivate the study and demonstrate biological relevance, though they represent prior work rather than new findings. The examples are well-chosen to illustrate the diversity of two-component condensate systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Previous simulations identified a 'magic-number effect' where large cluster formation is suppressed at integer valence ratios, favoring small oligomers. However, cluster size may reflect percolation rather than true phase separation, and previous studies focused on equal stoichiometry while biological systems span broad stoichiometric ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 accurately summarize prior work (supported by citations C21-C26) and identify its limitations. The distinction between cluster size and phase separation (C24) and the stoichiometry gap (C25, C26) provide clear motivation for the current study. This represents a fair assessment of prior work and establishes the need for direct phase diagram determination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Intracellular phase separation is driven by multivalent interactions classified as specific (strong, saturable, partner-specific) or nonspecific (weak, generic, non-saturable). Specific interactions enable orthogonal condensate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 establish the conceptual framework for understanding biomolecular phase separation, supported by citations (C73) and logical inference (C74). This provides important context for why the study focuses on specific interactions, though it represents established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cells regulate biomolecular properties through chemical modification (fast timescale), synthesis/degradation/sequestration (slower timescale), and sequence mutation (evolutionary timescale).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe established biological regulatory mechanisms that provide context for the study's relevance. These are well-known principles of cellular regulation supported by general biological knowledge. While not new findings, they effectively motivate why understanding the individual roles of valence, stoichiometry, and binding strength is biologically important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Self-avoiding random coil linkers occupying large volumes can substantially lower dense-phase concentration and prevent phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 cites prior work (Harmon et al., 2017) about linker effects on phase separation. This is consistent with the study's own findings about linker length effects (C94) and provides important context, though it represents prior knowledge rather than a new finding from this work.",
+    "result_type": "MINOR"
+  }
+]

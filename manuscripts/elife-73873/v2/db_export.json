@@ -1,0 +1,1527 @@
+{
+  "submission": {
+    "id": "b6446467-d0d1-4863-9ca6-7841c498189e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:22:18.256001Z",
+    "updated_at": "2025-12-03T09:22:18.256001Z"
+  },
+  "content": [
+    {
+      "id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "submission_id": "b6446467-d0d1-4863-9ca6-7841c498189e",
+      "content_type": "manuscript",
+      "content_text": "# Association of lipid-lowering drugs with COVID-19 outcomes from a Mendelian randomization study\n\n## Authors\n\n- Wuqing Huang<sup>1</sup> ([ORCID: 0000-0002-7616-8622](https://orcid.org/0000-0002-7616-8622))\n- Jun Xiao<sup>2</sup> ([ORCID: 0000-0002-5046-5493](https://orcid.org/0000-0002-5046-5493))\n- Jianguang Ji<sup>4</sup> ([ORCID: 0000-0003-0324-9496](https://orcid.org/0000-0003-0324-9496)) \u2020\n- Liangwan Chen<sup>2</sup> ([ORCID: 0000-0002-4211-3842](https://orcid.org/0000-0002-4211-3842)) \u2020\n\n### Affiliations\n\n1. Department of Epidemiology and Health Statistics,School of Public Health, Fujian Medical University Fuzhou China\n2. Department of Cardiovascular Surgery, Fujian Medical University Union Hospital Fuzhou China\n3. Key Laboratory of Cardio-Thoracic Surgery, Fujian Medical University, Fujian Province Fuzhou China\n4. Center for Primary Health Care Research, Department of Clinical Sciences, Lund University Malm\u00f6 Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Lipid metabolism plays an important role in viral infections. We aimed to assess the causal effect of lipid-lowering drugs (HMGCR inhibitiors, PCSK9 inhibitiors, and NPC1L1 inhibitior) on COVID-19 outcomes using two-sample Mendelian randomization (MR) study.Methods:We used two kinds of genetic instruments to proxy the exposure of lipid-lowering drugs, including expression quantitative trait loci of drugs target genes, and genetic variants within or nearby drugs target genes associated with low-density lipoprotein (LDL cholesterol from genome-wide association study). Summary-data-based MR (SMR) and inverse-variance-weighted MR (IVW-MR) were used to calculate the effect estimates.Results:SMR analysis found that a higher expression of HMGCR was associated with a higher risk of COVID-19 hospitalization (odds ratio [OR] = 1.38, 95% confidence interval [CI] = 1.06\u20131.81). Similarly, IVW-MR analysis observed a positive association between HMGCR-mediated LDL cholesterol and COVID-19 hospitalization (OR = 1.32, 95% CI = 1.00\u20131.74). No consistent evidence from both analyses was found for other associations.Conclusions:This two-sample MR study suggested a potential causal relationship between HMGCR inhibition and the reduced risk of COVID-19 hospitalization.Funding:Start-up Fund for high-level talents of Fujian Medical University.\n\n## Introduction\n\nThe COVID-19 pandemic has caused millions of infections and deaths, which is caused by a novel coronavirus, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Lacking drugs specifically targeted to SARS-CoV-2 infection has led to a great interest to identify drugs that can be repurposed to reduce the infection and mortality of the disease.\n\nAvailable studies have suggested an important role of lipid metabolism in viral infections, including in the pathogenesis of SARS-CoV-2 infection (Proto et al., 2021). The plausible mechanisms include the involvement of host lipids in the virus life cycle, the influence of cholesterol on the immune cell functions, interfering with the mevalonate pathway, and so on Proto et al., 2021. Such evidence indicates the potential protective effect of lipid-lowering drugs against COVID-19. HMG-CoA reductase (HMGCR) inhibitors, known as statins, are the most commonly used class of lipid-lowering drugs, which have a couple of predominant merits, such as the well-proven safety, low cost, and pleiotropic effects. Proprotein convertase subtilisin/kexin type 9 (PCSK9) and Niemann\u2013Pick C1-Like 1 (NPC1L1) are proteins playing a crucial role for the circulating level of low-density lipoprotein cholesterol (LDL-C) (Sabatine, 2019; Williams et al., 2020). Both PCSK9 inhibitors (i.e., evolocumab and alirocumab) and NPC1L1 inhibitors (i.e., ezetimibe) are FDA-approved lipid-lowering agents (Sabatine, 2019; Williams et al., 2020). A number of observational studies have investigated the association between lipid-lowering drugs and COVID-19 outcomes, but generated mixed results (Butt et al., 2020; Hariyanto and Kurniawan, 2020; Kow and Hasan, 2020; Zhang et al., 2020; Gupta et al., 2021). What\u2019s more, confounding bias and reverse causation cannot be avoided in most of these studies.\n\nMendelian randomization (MR) study uses genetic variants as an instrument to perform causal inference between an exposure and an outcome, which could indicate whether an observational association is consistent with a causal effect (Davies et al., 2018). Confounding bias can be minimized in MR study because genetic variants are randomly assigned to the individual at birth. Similarly, reverse causation can be avoided because genetic variants are assigned prior to the development of disease.\n\nTherefore, we performed two-sample MR analysis in this study to test the association of lipid\u2010lowering drugs (HMGCR inhibitiors, PCSK9 inhibitiors, and NPC1L1 inhibitior) with COVID-19 outcomes (susceptibility, hospitalization and very severe disease).\n\n## Materials and methods\n\n### Study design\n\nThis two-sample MR study is based on publicly available summary-level data from genome-wide association studies (GWASs) and expression quantitative trait loci (eQTLs) studies (Supplementary file 1\u2014Table 1). All these studies had been approved by the relevant institutional review boards and participants had provided informed consents.\n\n### Selection of genetic instruments\n\nThree classes of FDA-approved lipid-lowering drugs were included as exposures in this study: HMGCR inhibitors, PCSK9 inhibitors, and NPC1L1 inhibitor.\n\nAs shown in Table 1, we used available eQTLs for drugs target genes (i.e., HMGCR, PCSK9, and NPC1L1) as the proxy of exposure to each lipid-lowering drug. The eQTLs summary-level data were obtained from eQTLGen Consortium (https://www.eqtlgen.org/) or GTEx Consortium V8 (https://gtexportal.org/), the details of which are presented in Supplementary file 1\u2014Table 1. We identified common (minor allele frequency [MAF] >1%) eQTLs single-nucleotide polymorphisms (SNPs) significantly (p < 5.0 \u00d7 10\u22128) associated with the expression of HMGCR or PCSK9 in blood, and the expression of NPC1L1 in adipose subcutaneous tissue as there are no eQTLs in blood or other tissues available at a significance level for NPC1L1. Only cis-eQTLs were included to generate genetic instruments in this study, which were defined as eQTLs within 1 Mb on either side of the encoded gene.\n\n**Table 1.**\n Information of genetic instruments.Abbreviations and acronyms: eQTLs, expression quantitative trait loci; GWAS, genome-wide association study; HEIDI, heterogeneity in dependent instruments; HMGCR, HMG-CoA reductase; IVW-MR, inverse-variance-weighted Mendelian randomization; LDL, low-density lipoprotein; MR-PRESSO, Mendelian Randomization Pleiotropy RESidual Sum and Outlier; MAF, minor allele frequency; NPC1L1, Niemann\u2013Pick C1-Like 1; PCSK9, proprotein convertase subtilisin/kexin type 9; SNP, single-nucleotide polymorphism; SMR, summary-data-based Mendelian randomization.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Exposure</th>\n      <th colspan=\"2\">Genetic instruments</th>\n    </tr>\n    <tr>\n      <th>Genetic variants associated with mRNA expression levels (eQTLs)</th>\n      <th>Genetic variants associated with LDL cholesterol level</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HMGCR inhibitors</td>\n      <td>Nine hundred and twenty-one common cis-eQTLs (MAF &gt;1%) in blood for HMGCR gene (p &lt; 5.0 \u00d7 10\u22128), top SNP: rs6453133</td>\n      <td>Seven common SNPs (MAF &gt;1%) in low linkage disequilibrium (r2 &lt; 0.30), associated with LDL cholesterol (p &lt; 5.0 \u00d7 10\u22128), located within \u00b1100 kb windows from HMGCR region</td>\n    </tr>\n    <tr>\n      <td>PCSK9 inhibitors</td>\n      <td>Twenty-four common cis-eQTLs (MAF &gt;1%) in blood for PCSK9 gene (p &lt; 5.0 \u00d7 10\u22128), top SNP: rs472495</td>\n      <td>Twelve common SNPs (MAF &gt;1%) in low linkage disequilibrium (r2 &lt; 0.30), associated with LDL cholesterol (p &lt; 5.0 \u00d7 10\u22128), located within \u00b1100 kb windows from PCSK9 region</td>\n    </tr>\n    <tr>\n      <td>NPC1L1 inhibitors</td>\n      <td>Eleven common cis-eQTLs (MAF &gt;1%) in adipose subcutaneous tissue for NPC1L1 gene (p &lt; 5.0 \u00d7 10\u22128), top SNP: rs41279633</td>\n      <td>Three common SNPs (MAF &gt;1%) in low linkage disequilibrium (r2 &lt; 0.30), associated with LDL cholesterol (p &lt; 5.0 \u00d7 10\u22128), located within \u00b1100 kb windows from NPC1L1 region</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Statistical analyses</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Primary analysis</td>\n      <td>Summary-data-based Mendelian randomization</td>\n      <td>Inverse-variance-weighted Mendelian randomization</td>\n    </tr>\n    <tr>\n      <td>Sensitivity analyses</td>\n      <td>F-StatisticPositive control analysis (LDL cholesterol used as outcome)Linkage disequilibrium test: HEIDI testHorizontal pleiotropy test: SMR association between expression of adjacent genes and outcome</td>\n      <td>F-StatisticPositive control analysis (coronary heart disease used as outcome)Heterogeneity test: Cochran Q testHorizontal pleiotropy test: MR-Egger regression, MR-PRESSO test</td>\n    </tr>\n  </tbody>\n</table>\n\nSecondly, to validate the observed association using the eQTLs as an instrument, we additionally proposed an instrument by selecting SNPs within 100 kb windows from target gene of each drug that was associated with LDL cholesterol level at a genome-wide significance level (p < 5.0 \u00d7 10\u22128) to proxy the exposure of lipid-lowering drugs. A GWAS summary data of LDL cholesterol levels from the Global Lipids Genetics Consortium (GLGC) with a sample size of 173,082 were used to identify these SNPs, where only common SNPs (MAF >1%) were included (Willer et al., 2013; Supplementary file 1\u2014Table 1). Seven SNPs within 100 kb windows from HMGCR gene were selected for proxying HMGCR inhibitors, 12 SNPs from PCSK9 gene identified for PCSK9 inhibitors, and 3 SNPs from NPC1L1 gene selected for NPC1L1 inhibitor. To maximize the strength of the instrument for each drug, SNPs used as instruments were allowed to be in low weak linkage disequilibrium (r2 < 0.30) with each other.\n\n### Outcome sources\n\nGWAS summary-level data for COVID-19 outcomes were obtained from the COVID-19 Host Genetics Initiative V4 with a sample size of 1,299,010 for COVID-19 susceptibility, 908,494 for COVID-19 hospitalization, and 626,151 for COVID-19 severe disease, respectively (https://www.covid19hg.org/; COVID-19 Host Genetics Initiative, 2020; Supplementary file 1\u2014Table 1). The study population was restricted to individuals with European ancestry, including meta-analyses of GWASs containing up to 22 cohorts from 11 countries. GWAS from these cohorts used a model adjusted for age, sex, age \u00d7 age, age \u00d7 sex, genetic principal components, and study-specific covariates. A COVID-19 case was confirmed by lab or self-reported infections, or electronic health records of infections. The susceptibility outcome was measured by comparing COVID-19 cases and controls who did not have a history of COVID-19. The hospitalized outcome was measured by comparing COVID-19 hospitalized cases and controls who were never admitted to the hospital due to COVID-19, including individuals without COVID-19. The severe disease outcome was measured by comparing COVID-19 cases who died or required respiratory support and controls without severe COVID-19, including individuals without COVID-19. We included individuals without COVID-19 as controls for all outcomes to decrease collider bias and allow for population-level comparisons (Griffith et al., 2020; Butler-Laporte et al., 2021).\n\n### Statistical analyses\n\n#### Primary MR analysis\n\nSummary-data-based MR (SMR) method was applied to generate effect estimates when using eQTLs as an instrument, which investigates the association between the expression level of a gene and outcome of interest using summary-level data from GWAS and eQTL studies (Zhu et al., 2016). Allele harmonization and analysis were performed using SMR software, version 1.03 (https://cnsgenomics.com/software/smr/#Overview). Inverse-variance-weighted MR (IVW-MR) method was used to combine effect estimates when using genetic variants associated with LDL cholesterol level as an instrument. Allele harmonization and analysis were conducted using the TwoSampleMR package in R software, version 4.1.0.\n\n#### Sensitivity analysis\n\nThe strength of SNPs used as the instrument was assessed using the F-statistic, and we included SNPs with an F-statistic of >10 to minimize weak instrument bias (Burgess and Thompson, 2011). Positive control analyses were performed for validation of both genetic instruments. Since lowering the level of LDL cholesterol is the well-proven effect of lipid-lowering drugs, we thus examined the association of exposures of interest with LDL cholesterol level as positive control study for the instrument from eQTLs. For the instrument from LDL cholesterol GWAS, we performed positive control study by examining the association of exposures of interest with coronary heart disease because coronary heart disease is the main indication of lipid-lowering drugs.\n\nFor SMR method, the heterogeneity in dependent instruments (HEIDI) test was used to test if the observed association between gene expression and outcome was due to a linkage scenario, which was performed in the SMR software (Zhu et al., 2016). The HEIDI test of p < 0.01 indicates that association is probably due to linkage (Chauquet et al., 2021). One SNP could be related to the expression of more than one genes, leading to the presence of horizontal pleiotropy. To assess the risk of horizontal pleiotropy, we identified other nearby genes (within a 1 Mb window), the expression of which was significantly associated with the genetic instrumental variant, and performed SMR analysis to examine if the expression of these genes was related to the COVID-19 outcomes.\n\nFor IVW-MR method, we tested the heterogeneity by using a Cochran Q test, where p < 0.05 indicates the evidence of heterogeneity (Higgins et al., 2003). MR-Egger regression and Mendelian Randomization Pleiotropy RESidual Sum and Outlier (MR-PRESSO) analysis were used to assess the potential horizontal pleiotropy of the SNPs used as instrument variants. In MR Egger regression, the intercept term is a useful indication of directional horizontal pleiotropy, where p < 0.05 indicates the evidence of horizontal pleiotropy (Burgess and Thompson, 2017). MR-PRESSO analysis can identify horizontal pleiotropic outliers and provide adjusted estimates, where p < 0.05 for Global test indicates the presence of horizontal pleiotropic outliers (Verbanck et al., 2018). Besides, a multivariable MR study was further conducted to examine if the observed association was direct association. We first investigated the association of HMGCR-mediated LDL cholesterol with the common risk factors of COVID-19 hospitalization, including body mass index, diabetes, hypertension, and coronary heart disease. After that, a multivariable MR study was performed by adjusting for the factors which showed a significant association. All these analyses were implemented in R software, version 4.1.0.\n\nTo account for multiple testing, Bonferroni correction was used to adjust the thresholds of significance level, thus a strong evidence was suggested for p < 0.006 (three exposures and three outcomes) and a suggestive evidence of 0.006 \u2264 p < 0.05.\n\n## Results\n\n### Genetic instruments selection and COVID-19 outcomes\n\nA total of 921,24, and 11 cis-eQTLs were identified from eQTLGen or GTEx Consortium for drugs target gene HMGCR, PCSK9, and NPC1L1, respectively, and the most significant cis-eQTL SNP was selected as a genetic instrument for the target gene of each drug (Table 1, Supplementary file 1\u2014Table 2). A total of 7, 12, and 3 SNPs within or nearby gene HMGCR, PCSK9, and NPC1L1 were selected from a GWAS summary data of LDL cholesterol levels in the Global Lipids Genetics Consortium, respectively (Table 1, Supplementary file 1\u2014Table 3). F-Statistics for all instrument variants were over 30, suggesting that weak instrument bias can be minimized in our study (Supplementary file 1-Tables 2 and 3). Positive control study showed significant associations between exposure to each drug and LDL cholesterol when using eQTLs-proposed instruments (Supplementary file 1\u2014Table 5), as well as between exposure to each drug and coronary heart disease when using LDL cholesterol GWAS-proposed instruments (Supplementary file 1\u2014Table 6), further ensuring the efficacy of the selected genetic instruments.\n\nFrom COVID-19 GWASs, a total of 14,134 cases and 1,284,876 controls were used to explore the association with COVID-19 susceptibility, 6406 cases and 902,088 controls for COVID-19 hospitalization, and 3886 cases and 622,265 controls for COVID-19 severe disease (Supplementary file 1\u2014Table 1).\n\n### Primary analysis\n\nIn Figure 1 and Supplementary file 1\u2014Table 2, results from SMR analysis found a suggestive evidence for the association of the increased expression of HMGCR gene in blood (equivalent to a one standard deviation increase) with the higher risk of COVID-19 susceptibility (odds ratio [OR] = 1.30, 95% confidence interval [CI] = 1.05\u20131.61; p = 0.017) and COVID-19 hospitalization (OR = 1.38, 95% CI = 1.06\u20131.81; p = 0.019), indicating that HMGCR inhibitors might lower the risk of COVID-19 susceptibility and hospitalization. Suggestive evidence was observed regarding the negative association between PCSK9 expression and risk of COVID-19 susceptibility (OR = 0.84, 95% CI = 0.73\u20130.97; p = 0.02). No significant association was found between the expression of NPC1L1 and COVID-19 outcomes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73873/elife-73873-fig1-v2.jpg)\n\n**Figure 1.:** SMR method was used to assess the association.\n\nIn Figure 2 and Supplementary file 1\u2014Table 4, IVW-MR analysis also found a suggestive evidence for the association between HMGCR-mediated LDL cholesterol (equivalent to a 1 mmol/l increase) and the risk of COVID-19 hospitalization (OR = 1.32, 95% CI = 1.00\u20131.74; p = 0.049), further supporting a possible protective effect of HMGCR inhibitors against COVID-19 hospitalization. Strong evidence was observed between NPC1L1-mediated LDL cholesterol and the risk of COVID-19 susceptibility (OR = 2.02, 95% CI = 1.30\u20133.13; p = 0.002). IVW-MR analysis did not provide any evidence for the association between PCSK9-mediated LDL cholesterol and COVID-19 outcomes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73873/elife-73873-fig2-v2.jpg)\n\n**Figure 2.:** IVW-MR method was used to assess the association.\n\n### Sensitivity Analysis\n\nFor SMR analysis, HEIDI test suggested that all observed associations were not due to a linkage (p > 0.01), except for the association between HMGCR expression and COVID-19 susceptibility (p = 0.009) (Supplementary file 1\u2014Table 2). We further examine if horizontal pleiotropy was present in the association between HMGCR expression and COVID-19 outcomes by investigating if there was an association between the expression of nearby genes which are significantly associated with the top eQTL SNP (instrument variant) of HMGCR and COVID-19 outcomes. We identified six genes, including HMGCR, the expression of which were associated with the instrument variant (Supplementary file 1\u2014Table 7). Only four genes have available eQTLs at a genome-wide significance level (p < 5.0 \u00d7 10\u22128). Among these four genes, only HMGCR expression was significantly related to COVID-19 susceptibility and COVID-19 hospitalization, suggesting a small role of horizontal pleiotropy in the observed associations (Supplementary file 1\u2014Table 8).\n\nFor IVW-MR analysis, Cochran Q test did not find evidence of heterogeneity for all reported results (all p > 0.05; Supplementary file 1\u2014Table 4). Both the intercept term in MR-Egger regression and MR-PRESSO analysis suggested no significant overall horizontal pleiotropy (all p > 0.05; Supplementary file 1\u2014Table 4). A multivariable MR study suggested that BMI and diabetes might play a role in the association between HMGCR-mediated LDL cholesterol level and COVID19 hospitalization (Supplementary file 1\u2014Tables 9 and 10).\n\n## Discussion\n\nThe present MR study provided a suggestive evidence regarding the positive association of the HMGCR expression and HMGCR-mediated LDL cholesterol level with the risk of COVID-19 hospitalization, both of which together indicated a potential protective effect of HMGCR inhibition against COVID-19 hospitalization (OR instrument 1 = 0.72, 95% CI = 0.55\u20130.95; OR instrument 2=0.76, 95% CI = 0.57\u20131.00). We found a suggestive evidence of the negative association between PCSK9 expression and COVID-19 susceptibility, but which was not supported when using LDL cholesterol GWAS as an instrument. A strong evidence was observed for the protective effect of NPC1L1-mediated lower level of LDL cholesterol on COVID-19 susceptibility, but there was no evidence for the association of NPC1L1 expression and COVID-19 outcomes.\n\nCompared to developing a new drug, repurposing an old drug is much more economical and time-saving, in particular, the importance is further highlighted during a pandemic. COVID-19 pandemic has driven a number of studies of drug repurposing (Fajgenbaum and Rader, 2020; Gaziano et al., 2021). The role of lipid metabolism in viral infections has raised interest regarding the possibility of repurposing lipid-lowering drugs as anti-COVID-19 agents (Proto et al., 2021). As one of the most commonly prescribed drugs, statins have received the greatest attention for their pleiotropic effects, including lowering serum cholesterol, anti-inflammatory and immunomodulatory properties, and antithrombotic effect, all of which play a role in viral infections (Fajgenbaum and Rader, 2020; Proto et al., 2021; Rubin, 2021). Emerging observational studies have investigated if statins might benefit patients with COVID-19 (Butt et al., 2020; Hariyanto and Kurniawan, 2020; Kow and Hasan, 2020; Zhang et al., 2020; Gupta et al., 2021). A largest retrospective cohort study including 13,981 patients admitted to hospital due to COVID-19 suggested a significant reduction in 28-day all-cause mortality by 42% in the group with statins than patients without statins (Zhang et al., 2020). A meta-analysis with 8990 COVID-19 patients also found a 30% lower risk of fatal or severe disease (Kow and Hasan, 2020). However, a Danish nationwide cohort study with 4842 COVID-19 patients and a meta-analysis with 3449 COVID-19 patients did not find the association between statins use and improved COVID-19 outcomes (Butt et al., 2020; Hariyanto and Kurniawan, 2020). In addition, in these studies, considerable differences in clinical characteristics cannot be avoided between patients with and without statins, and causal inference is not allowed due to the retrospective nature of observational studies.\n\nAs a genetic epidemiological method, MR study could overcome the limitations of traditional observational studies. In this MR study, we used genetic variants related to HMGCR expression or HMGCR-mediated LDL cholesterol as instruments to proxy the exposure of statins. Both analyses found a suggestive evidence that HMGCR inhibition could reduce the risk of COVID-19 hospitalization, rather than COVID-19 susceptibility and very severe outcome. Although strong evidence is lacking, these results provided a causal evidence supporting the finding from the largest cohort study (Zhang et al., 2020), which calls for additional observational studies in different populations, mechanistic studies, and randomized controlled studies to examine its potential effect against COVID-19. Patients with COVID-19 who already take statins or start to take it for the indication of statins were recommended to continue to take it, which might be beneficial to both its original indication and COVID-19 (Rubin, 2021). And statins might be a prioritized drug in future clinical trials for treating COVID-19. Besides, although no association was found between NPC1L1 expression in adipose subcutaneous and COVID-19 outcomes, there was a strong evidence of the association between NPC1L1-mediated LDL cholesterol and COVID-19 susceptibility. The effect of NPC1L1 inhibitor on COVID-19 susceptibility may be worth further studies as well.\n\n### Study strengths\n\nThe main strength of our study is the use of genetic instruments to proxy drug exposure, which could minimize confounding bias and avoid reverse causation. Besides, we used two different kinds of genetic instruments to proxy the studied drug, which contributes to validating the effect estimates from each other. A number of sensitivity analyses have been performed to test the efficacy of genetic instruments and the assumptions of MR study.\n\n### Study limitations\n\nThis study has several limitations. Firstly, there are no available eQTLs in blood for NPC1L1, so we were not able to explore the association between NPC1L1 expression in blood and COVID-19 outcomes. Besides, there are no available eQTLs in liver (the main tissue related to lipid metabolism) for these target genes, which might provide more convincing evidence of the observed association. The sample size of eQTL study for PCSK9 and NPC1L1 in GTEx is relatively smaller, which may affect the statistical power for the results of PCSK9 or NPC1L1 inhibition. Secondly, the effect of statins probably varies between subgroups, for example, it may be more effective in patients with chronic diseases (e.g., coronary heart disease). However, the use of summary-level data did not allow us to perform subgroup analyses, so further MR study with individual-level data is needed to provide more detailed information. Thirdly, the Bonferroni correction for multiple tests suggests that we cannot rule out the false-positive possibility for the finding of the protective effect of statins on COVID hospitalization. Fourthly, confounding bias and/or horizontal pleiotropy cannot be completely excluded although we have performed various sensitivity analyses to test the assumptions of MR study. Fifthly, both eQTLs and GWAS data used in this study were predominantly obtained from European population ancestry, thus these findings should be interpreted with caution when generalizing to other populations.\n\n### Conclusions\n\nIn conclusion, this MR study suggested a causal relationship between HMGCR inhibition and the reduced risk of COVID-19 hospitalization. Clninical trials are called to examine if statins have the protective effect against COVID-19 and further researches are needed to explore the underlying mechanisms.\n",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "8a2cec6b-f7a1-4295-b5a1-d9447d2d062b",
+      "submission_id": "b6446467-d0d1-4863-9ca6-7841c498189e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward D Janus, University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73873.sa0](https://doi.org/10.7554/eLife.73873.sa0)\n\nThere are mixed results from studies of COVID-19 outcomes in patients treated with statins and there are multiple confounders. The authors use two Mendelian randomization methods to explore the association between HMGCoA reductase inhibitors (statins) and other lipid lowering drugs and outcomes and find that increased expression of HMGCoA reductase and HMGCoA reductase mediated LDL cholesterol increase hospitalization risk. This makes it possible but does not prove that statins could improve outcomes which will be of broad interest.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Edward D Janus, University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73873.sa1](https://doi.org/10.7554/eLife.73873.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Association of lipid-lowering drugs with COVID-19 outcomes from a Mendelian randomization study\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Edward D Janus as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by David Serwadda as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Xia Jiang (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) HMG-CoA reductase was introduced in a detailed manner in the first paragraph of introduction, while PCSK 9 inhibitor and NPC1L1 inhibitor were not mentioned until the last paragraph of introduction. The abbreviations were not spelt out. Please adjust the flow to make it more smoothly.\n\n2) The authors demonstrate with SMR that a higher expression of HMGCR was associated with a higher risk of COVID-19 hospitalization. With IVW-MR they observed a positive association between HMGCR -mediated LDL cholesterol and COVID-19 hospitalization. For the other two drug classes no clear associations were shown.\n\nThis suggests but does not prove that HMGCR drugs ie statins might improve outcomes. For the other two classes its unclear if there would be sufficient users of these drugs in the data sets to provide enough power to adequately address the issue.\n\n3) Overall this is a well conducted study providing important further insights but the final sentence of the abstract as well as the related Discussion section including the limitations should be more expressed more conservatively.\n\n4) Choosing the right tissue is very important for eQTL analysis. While a wide number of tissues are available from GTEx consortium, the authors focused only on the blood or adipose subcutaneous tissues. Please clarify the rationale. How about cardiovascular tissues, liver and other organs? have the authors considered other relevant tissues available in GTEx?\n\n5) As mentioned in the methods, \"only cis-eQTLs were included to generate genetic instruments in this study, which were defined as eQTLs within 1 Mb on either side of the encoded gene\" were included. Were these SNPs independent of each other? Have the authors considered linkage disequilibrium, and if so, what was the threshold? Including correlated instruments might bias the results (false positive).\n\n6) Please clarify the ethnicity of population involved in the current study as well as the generalizability of results.\n\n7) The method section lacked proper description on the GWAS data used for LDL and COVID19 outcome.\n\n8) As mentioned by the authors, \"we additionally proposed an instrument by selecting SNPs within 100 kb windows from target gene of each drug that were associated with LDL cholesterol level at a genome-wide significance level (p<5.0 \u00d7 10-8) to proxy the exposure of lipid-lowering drugs\" \u2013 it means the authors intersect the eQTL with LDL-SNPs? What is the purpose of doing so, in other words, by choosing only part of the SNPs, would the MR assumption still hold?\n\n9) The causal association between HMGCR and COVID19 susceptibility was suggestive, so was the causal association between PCSK9 and COVID19 susceptibility, while the estimates were in opposite direction (1.30 vs. 0.84) \u2013 how to interpret such results?\n\n10) Have the authors considered confounding effect from, for example, obesity, to the identified putative causal relationship?\n",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c57b0071-f086-4f63-956e-3d140a196e04",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C1",
+      "claim": "Lipid metabolism plays an important role in viral infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid metabolism plays an important role in viral infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Proto et al., 2021 in the subsequent sentence discussing mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "c2ea101d-6a9c-471c-8805-2220f404a073",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C2",
+      "claim": "Available studies have suggested an important role of lipid metabolism in viral infections, including in the pathogenesis of SARS-CoV-2 infection (Proto et al., 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "Available studies have suggested an important role of lipid metabolism in viral infections, including in the pathogenesis of SARS-CoV-2 infection (Proto et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Proto et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "8db14434-db6e-435b-9d26-12e24aaeebc3",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C3",
+      "claim": "The plausible mechanisms of lipid metabolism involvement in viral infections include the involvement of host lipids in the virus life cycle, the influence of cholesterol on the immune cell functions, and interfering with the mevalonate pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The plausible mechanisms include the involvement of host lipids in the virus life cycle, the influence of cholesterol on the immune cell functions, interfering with the mevalonate pathway, and so on Proto et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Proto et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "5d98a98c-04a6-4d9b-a1f9-d17c030674bf",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C4",
+      "claim": "HMGCR inhibitors (statins) are the most commonly used class of lipid-lowering drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "HMG-CoA reductase (HMGCR) inhibitors, known as statins, are the most commonly used class of lipid-lowering drugs, which have a couple of predominant merits, such as the well-proven safety, low cost, and pleiotropic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in clinical medicine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "0a14ba6d-99c1-42e4-973f-4b65db35c616",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C5",
+      "claim": "Statins have well-proven safety, low cost, and pleiotropic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "HMG-CoA reductase (HMGCR) inhibitors, known as statins, are the most commonly used class of lipid-lowering drugs, which have a couple of predominant merits, such as the well-proven safety, low cost, and pleiotropic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about statins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "578c94b5-56ab-4c31-adcd-b38135d6c021",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C6",
+      "claim": "PCSK9 and NPC1L1 are proteins playing a crucial role for the circulating level of low-density lipoprotein cholesterol (LDL-C) (Sabatine, 2019; Williams et al., 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "Proprotein convertase subtilisin/kexin type 9 (PCSK9) and Niemann\u2013Pick C1-Like 1 (NPC1L1) are proteins playing a crucial role for the circulating level of low-density lipoprotein cholesterol (LDL-C) (Sabatine, 2019; Williams et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sabatine, 2019 and Williams et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "dcc3f754-1e02-478c-a032-85ef574fac7f",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C7",
+      "claim": "PCSK9 inhibitors (evolocumab and alirocumab) and NPC1L1 inhibitors (ezetimibe) are FDA-approved lipid-lowering agents (Sabatine, 2019; Williams et al., 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "Both PCSK9 inhibitors (i.e., evolocumab and alirocumab) and NPC1L1 inhibitors (i.e., ezetimibe) are FDA-approved lipid-lowering agents (Sabatine, 2019; Williams et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sabatine, 2019 and Williams et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "cbd0ef31-09db-4f92-96d2-616f3f5f4bdd",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C8",
+      "claim": "Observational studies investigating the association between lipid-lowering drugs and COVID-19 outcomes have generated mixed results (Butt et al., 2020; Hariyanto and Kurniawan, 2020; Kow and Hasan, 2020; Zhang et al., 2020; Gupta et al., 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "A number of observational studies have investigated the association between lipid-lowering drugs and COVID-19 outcomes, but generated mixed results (Butt et al., 2020; Hariyanto and Kurniawan, 2020; Kow and Hasan, 2020; Zhang et al., 2020; Gupta et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to observational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "aeea537f-9b93-4ce8-b972-ba069bac5021",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C9",
+      "claim": "Confounding bias and reverse causation cannot be avoided in most observational studies of lipid-lowering drugs and COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "What's more, confounding bias and reverse causation cannot be avoided in most of these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of observational study designs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "23a1bb77-0acc-4fc3-bd16-a404e87dd05b",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C10",
+      "claim": "Mendelian randomization study uses genetic variants as an instrument to perform causal inference between an exposure and an outcome (Davies et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian randomization (MR) study uses genetic variants as an instrument to perform causal inference between an exposure and an outcome, which could indicate whether an observational association is consistent with a causal effect (Davies et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Davies et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "163034df-ef14-4402-86c4-b98d83740ca6",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C11",
+      "claim": "Confounding bias can be minimized in MR study because genetic variants are randomly assigned to the individual at birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Confounding bias can be minimized in MR study because genetic variants are randomly assigned to the individual at birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of Mendelian randomization based on Mendelian inheritance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "c1e6278e-8677-4f63-8c15-d5da2568be2e",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C12",
+      "claim": "Reverse causation can be avoided in MR study because genetic variants are assigned prior to the development of disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, reverse causation can be avoided because genetic variants are assigned prior to the development of disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of Mendelian randomization based on temporal ordering.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "6f59aca8-d32b-4983-8a33-23828012d790",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C13",
+      "claim": "Nine hundred and twenty-one common cis-eQTLs (MAF >1%) in blood for HMGCR gene (p < 5.0 \u00d7 10\u22128) were identified, with rs6453133 as the top SNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine hundred and twenty-one common cis-eQTLs (MAF >1%) in blood for HMGCR gene (p < 5.0 \u00d7 10\u22128), top SNP: rs6453133",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the study's genetic instrument selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "828a9431-ab83-4aec-9c21-6da05551e61f",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C14",
+      "claim": "Twenty-four common cis-eQTLs (MAF >1%) in blood for PCSK9 gene (p < 5.0 \u00d7 10\u22128) were identified, with rs472495 as the top SNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-four common cis-eQTLs (MAF >1%) in blood for PCSK9 gene (p < 5.0 \u00d7 10\u22128), top SNP: rs472495",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the study's genetic instrument selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "aa44d028-f805-4bf8-abdc-81dca782a611",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C15",
+      "claim": "Eleven common cis-eQTLs (MAF >1%) in adipose subcutaneous tissue for NPC1L1 gene (p < 5.0 \u00d7 10\u22128) were identified, with rs41279633 as the top SNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven common cis-eQTLs (MAF >1%) in adipose subcutaneous tissue for NPC1L1 gene (p < 5.0 \u00d7 10\u22128), top SNP: rs41279633",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the study's genetic instrument selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "4190e9ad-cc2f-43f8-bbb7-7dee85ae788a",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C16",
+      "claim": "Seven common SNPs (MAF >1%) in low linkage disequilibrium (r2 < 0.30), associated with LDL cholesterol (p < 5.0 \u00d7 10\u22128), were located within \u00b1100 kb windows from HMGCR region.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven common SNPs (MAF >1%) in low linkage disequilibrium (r2 < 0.30), associated with LDL cholesterol (p < 5.0 \u00d7 10\u22128), located within \u00b1100 kb windows from HMGCR region",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the study's genetic instrument selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "599b387a-4a3d-4e08-a1e6-765ecbfd1516",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C17",
+      "claim": "Twelve common SNPs (MAF >1%) in low linkage disequilibrium (r2 < 0.30), associated with LDL cholesterol (p < 5.0 \u00d7 10\u22128), were located within \u00b1100 kb windows from PCSK9 region.",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve common SNPs (MAF >1%) in low linkage disequilibrium (r2 < 0.30), associated with LDL cholesterol (p < 5.0 \u00d7 10\u22128), located within \u00b1100 kb windows from PCSK9 region",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the study's genetic instrument selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "777f50b9-77a4-4a2b-8d1d-5a9d187fb027",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C18",
+      "claim": "Three common SNPs (MAF >1%) in low linkage disequilibrium (r2 < 0.30), associated with LDL cholesterol (p < 5.0 \u00d7 10\u22128), were located within \u00b1100 kb windows from NPC1L1 region.",
+      "claim_type": "EXPLICIT",
+      "source": "Three common SNPs (MAF >1%) in low linkage disequilibrium (r2 < 0.30), associated with LDL cholesterol (p < 5.0 \u00d7 10\u22128), located within \u00b1100 kb windows from NPC1L1 region",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the study's genetic instrument selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "7ea8f47e-3874-4978-b021-39c4b2820c50",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C19",
+      "claim": "GWAS summary-level data for COVID-19 outcomes were obtained from the COVID-19 Host Genetics Initiative V4 with a sample size of 1,299,010 for COVID-19 susceptibility, 908,494 for COVID-19 hospitalization, and 626,151 for COVID-19 severe disease (COVID-19 Host Genetics Initiative, 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS summary-level data for COVID-19 outcomes were obtained from the COVID-19 Host Genetics Initiative V4 with a sample size of 1,299,010 for COVID-19 susceptibility, 908,494 for COVID-19 hospitalization, and 626,151 for COVID-19 severe disease, respectively (https://www.covid19hg.org/; COVID-19 Host Genetics Initiative, 2020; Supplementary file 1\u2014Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "763084f3-8891-4092-bda4-5f6e8ee3f428",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C20",
+      "claim": "The study population was restricted to individuals with European ancestry, including meta-analyses of GWASs containing up to 22 cohorts from 11 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "The study population was restricted to individuals with European ancestry, including meta-analyses of GWASs containing up to 22 cohorts from 11 countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study population characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "73c5d718-92f6-4e56-897d-0dbb5a55d863",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C21",
+      "claim": "F-Statistics for all instrument variants were over 30, suggesting that weak instrument bias can be minimized.",
+      "claim_type": "EXPLICIT",
+      "source": "F-Statistics for all instrument variants were over 30, suggesting that weak instrument bias can be minimized in our study (Supplementary file 1-Tables 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the study's sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "7f38eb02-3d03-4cda-8b58-31d3418cdd21",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C22",
+      "claim": "A total of 14,134 cases and 1,284,876 controls were used to explore the association with COVID-19 susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "From COVID-19 GWASs, a total of 14,134 cases and 1,284,876 controls were used to explore the association with COVID-19 susceptibility, 6406 cases and 902,088 controls for COVID-19 hospitalization, and 3886 cases and 622,265 controls for COVID-19 severe disease (Supplementary file 1\u2014Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample sizes used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "794ae352-7bee-48a3-bcb7-cf2b77546321",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C23",
+      "claim": "A total of 6,406 cases and 902,088 controls were used for COVID-19 hospitalization analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "From COVID-19 GWASs, a total of 14,134 cases and 1,284,876 controls were used to explore the association with COVID-19 susceptibility, 6406 cases and 902,088 controls for COVID-19 hospitalization, and 3886 cases and 622,265 controls for COVID-19 severe disease (Supplementary file 1\u2014Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample sizes used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "e18632bf-041e-4c91-a3a6-0c1d7ede951c",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C24",
+      "claim": "A total of 3,886 cases and 622,265 controls were used for COVID-19 severe disease analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "From COVID-19 GWASs, a total of 14,134 cases and 1,284,876 controls were used to explore the association with COVID-19 susceptibility, 6406 cases and 902,088 controls for COVID-19 hospitalization, and 3886 cases and 622,265 controls for COVID-19 severe disease (Supplementary file 1\u2014Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample sizes used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "7b75011c-3a84-4363-a4da-53d0b5409dd0",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C25",
+      "claim": "SMR analysis found that a higher expression of HMGCR was associated with a higher risk of COVID-19 hospitalization (OR = 1.38, 95% CI = 1.06\u20131.81; p = 0.019).",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1 and Supplementary file 1\u2014Table 2, results from SMR analysis found a suggestive evidence for the association of the increased expression of HMGCR gene in blood (equivalent to a one standard deviation increase) with the higher risk of COVID-19 susceptibility (odds ratio [OR] = 1.30, 95% confidence interval [CI] = 1.05\u20131.61; p = 0.017) and COVID-19 hospitalization (OR = 1.38, 95% CI = 1.06\u20131.81; p = 0.019), indicating that HMGCR inhibitors might lower the risk of COVID-19 susceptibility and hospitalization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the SMR analysis, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "85768de5-ceb2-48a6-aae8-a0463499d346",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C26",
+      "claim": "SMR analysis found that a higher expression of HMGCR was associated with a higher risk of COVID-19 susceptibility (OR = 1.30, 95% CI = 1.05\u20131.61; p = 0.017).",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1 and Supplementary file 1\u2014Table 2, results from SMR analysis found a suggestive evidence for the association of the increased expression of HMGCR gene in blood (equivalent to a one standard deviation increase) with the higher risk of COVID-19 susceptibility (odds ratio [OR] = 1.30, 95% confidence interval [CI] = 1.05\u20131.61; p = 0.017) and COVID-19 hospitalization (OR = 1.38, 95% CI = 1.06\u20131.81; p = 0.019), indicating that HMGCR inhibitors might lower the risk of COVID-19 susceptibility and hospitalization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the SMR analysis, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "e0c885f4-3b96-4caf-bfe1-71f61fcf44ad",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C27",
+      "claim": "HMGCR inhibitors might lower the risk of COVID-19 susceptibility and hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1 and Supplementary file 1\u2014Table 2, results from SMR analysis found a suggestive evidence for the association of the increased expression of HMGCR gene in blood (equivalent to a one standard deviation increase) with the higher risk of COVID-19 susceptibility (odds ratio [OR] = 1.30, 95% confidence interval [CI] = 1.05\u20131.61; p = 0.017) and COVID-19 hospitalization (OR = 1.38, 95% CI = 1.06\u20131.81; p = 0.019), indicating that HMGCR inhibitors might lower the risk of COVID-19 susceptibility and hospitalization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the SMR analysis results showing positive association between HMGCR expression and COVID-19 outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "7d872613-db00-4fd3-90bb-f5ce5976ca43",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C28",
+      "claim": "Suggestive evidence was observed regarding the negative association between PCSK9 expression and risk of COVID-19 susceptibility (OR = 0.84, 95% CI = 0.73\u20130.97; p = 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Suggestive evidence was observed regarding the negative association between PCSK9 expression and risk of COVID-19 susceptibility (OR = 0.84, 95% CI = 0.73\u20130.97; p = 0.02).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the SMR analysis, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "03921969-01e7-41be-ab17-483c0ac6e4b4",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C29",
+      "claim": "No significant association was found between the expression of NPC1L1 and COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant association was found between the expression of NPC1L1 and COVID-19 outcomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the SMR analysis, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "28192b92-fdfb-44a3-849a-4c722eaed95a",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C30",
+      "claim": "IVW-MR analysis found a suggestive evidence for the association between HMGCR-mediated LDL cholesterol (equivalent to a 1 mmol/l increase) and the risk of COVID-19 hospitalization (OR = 1.32, 95% CI = 1.00\u20131.74; p = 0.049).",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 2 and Supplementary file 1\u2014Table 4, IVW-MR analysis also found a suggestive evidence for the association between HMGCR-mediated LDL cholesterol (equivalent to a 1 mmol/l increase) and the risk of COVID-19 hospitalization (OR = 1.32, 95% CI = 1.00\u20131.74; p = 0.049), further supporting a possible protective effect of HMGCR inhibitors against COVID-19 hospitalization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the IVW-MR analysis, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "274099ed-1986-415e-b9fe-a0436c76f1f6",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C31",
+      "claim": "The IVW-MR finding further supports a possible protective effect of HMGCR inhibitors against COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 2 and Supplementary file 1\u2014Table 4, IVW-MR analysis also found a suggestive evidence for the association between HMGCR-mediated LDL cholesterol (equivalent to a 1 mmol/l increase) and the risk of COVID-19 hospitalization (OR = 1.32, 95% CI = 1.00\u20131.74; p = 0.049), further supporting a possible protective effect of HMGCR inhibitors against COVID-19 hospitalization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the IVW-MR analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "41bcd0d2-2eb8-4e74-9982-f12cdfc4d325",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C32",
+      "claim": "Strong evidence was observed between NPC1L1-mediated LDL cholesterol and the risk of COVID-19 susceptibility (OR = 2.02, 95% CI = 1.30\u20133.13; p = 0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "Strong evidence was observed between NPC1L1-mediated LDL cholesterol and the risk of COVID-19 susceptibility (OR = 2.02, 95% CI = 1.30\u20133.13; p = 0.002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the IVW-MR analysis, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "a621fa92-dc04-4389-afee-a9617d72d634",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C33",
+      "claim": "IVW-MR analysis did not provide any evidence for the association between PCSK9-mediated LDL cholesterol and COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "IVW-MR analysis did not provide any evidence for the association between PCSK9-mediated LDL cholesterol and COVID-19 outcomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the IVW-MR analysis, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "0288de39-e6de-4daf-a0ec-902e43653a0d",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C34",
+      "claim": "HEIDI test suggested that all observed associations were not due to a linkage (p > 0.01), except for the association between HMGCR expression and COVID-19 susceptibility (p = 0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "For SMR analysis, HEIDI test suggested that all observed associations were not due to a linkage (p > 0.01), except for the association between HMGCR expression and COVID-19 susceptibility (p = 0.009) (Supplementary file 1\u2014Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the HEIDI sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "26de5786-51e0-4f13-9e49-2ad0bc83b030",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C35",
+      "claim": "Among the four genes with available eQTLs at genome-wide significance level, only HMGCR expression was significantly related to COVID-19 susceptibility and COVID-19 hospitalization, suggesting a small role of horizontal pleiotropy in the observed associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these four genes, only HMGCR expression was significantly related to COVID-19 susceptibility and COVID-19 hospitalization, suggesting a small role of horizontal pleiotropy in the observed associations (Supplementary file 1\u2014Table 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the horizontal pleiotropy sensitivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "f2808356-f7fa-4221-a214-325e731d14dc",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C36",
+      "claim": "Cochran Q test did not find evidence of heterogeneity for all reported IVW-MR results (all p > 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "For IVW-MR analysis, Cochran Q test did not find evidence of heterogeneity for all reported results (all p > 0.05; Supplementary file 1\u2014Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the heterogeneity sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "afa47484-7a14-4e61-b988-ed5178f3b2af",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C37",
+      "claim": "Both the intercept term in MR-Egger regression and MR-PRESSO analysis suggested no significant overall horizontal pleiotropy (all p > 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Both the intercept term in MR-Egger regression and MR-PRESSO analysis suggested no significant overall horizontal pleiotropy (all p > 0.05; Supplementary file 1\u2014Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the horizontal pleiotropy sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "605fe7f6-176b-447a-af5e-7dc9f4b6413f",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C38",
+      "claim": "A multivariable MR study suggested that BMI and diabetes might play a role in the association between HMGCR-mediated LDL cholesterol level and COVID19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "A multivariable MR study suggested that BMI and diabetes might play a role in the association between HMGCR-mediated LDL cholesterol level and COVID19 hospitalization (Supplementary file 1\u2014Tables 9 and 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariable MR sensitivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "94f98dbf-ec9a-4e4d-afff-dbaeec2c69bd",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C39",
+      "claim": "The MR study provided a suggestive evidence regarding the positive association of the HMGCR expression and HMGCR-mediated LDL cholesterol level with the risk of COVID-19 hospitalization, indicating a potential protective effect of HMGCR inhibition against COVID-19 hospitalization (OR instrument 1 = 0.72, 95% CI = 0.55\u20130.95; OR instrument 2=0.76, 95% CI = 0.57\u20131.00).",
+      "claim_type": "EXPLICIT",
+      "source": "The present MR study provided a suggestive evidence regarding the positive association of the HMGCR expression and HMGCR-mediated LDL cholesterol level with the risk of COVID-19 hospitalization, both of which together indicated a potential protective effect of HMGCR inhibition against COVID-19 hospitalization (OR instrument 1 = 0.72, 95% CI = 0.55\u20130.95; OR instrument 2=0.76, 95% CI = 0.57\u20131.00).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the study's primary analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "d29322cc-baaa-4b47-8391-18436658ff86",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C40",
+      "claim": "A suggestive evidence of the negative association between PCSK9 expression and COVID-19 susceptibility was found, but this was not supported when using LDL cholesterol GWAS as an instrument.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a suggestive evidence of the negative association between PCSK9 expression and COVID-19 susceptibility, but which was not supported when using LDL cholesterol GWAS as an instrument.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from both SMR and IVW-MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "9dcf9391-0a49-4de7-a118-48703689f290",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C41",
+      "claim": "A strong evidence was observed for the protective effect of NPC1L1-mediated lower level of LDL cholesterol on COVID-19 susceptibility, but there was no evidence for the association of NPC1L1 expression and COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong evidence was observed for the protective effect of NPC1L1-mediated lower level of LDL cholesterol on COVID-19 susceptibility, but there was no evidence for the association of NPC1L1 expression and COVID-19 outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from both SMR and IVW-MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "b68647ff-dcaf-47e9-869b-70ae206a35bf",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C42",
+      "claim": "Repurposing an old drug is much more economical and time-saving compared to developing a new drug, particularly during a pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to developing a new drug, repurposing an old drug is much more economical and time-saving, in particular, the importance is further highlighted during a pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about drug development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "427eab28-36f5-469e-a7a9-31b9cb24d95e",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C43",
+      "claim": "Statins have pleiotropic effects, including lowering serum cholesterol, anti-inflammatory and immunomodulatory properties, and antithrombotic effect, all of which play a role in viral infections (Fajgenbaum and Rader, 2020; Proto et al., 2021; Rubin, 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "As one of the most commonly prescribed drugs, statins have received the greatest attention for their pleiotropic effects, including lowering serum cholesterol, anti-inflammatory and immunomodulatory properties, and antithrombotic effect, all of which play a role in viral infections (Fajgenbaum and Rader, 2020; Proto et al., 2021; Rubin, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fajgenbaum and Rader, 2020; Proto et al., 2021; Rubin, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "a23cedaf-ed4c-4b4e-8d8c-86775009c9e3",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C44",
+      "claim": "A largest retrospective cohort study including 13,981 patients admitted to hospital due to COVID-19 suggested a significant reduction in 28-day all-cause mortality by 42% in the group with statins than patients without statins (Zhang et al., 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "A largest retrospective cohort study including 13,981 patients admitted to hospital due to COVID-19 suggested a significant reduction in 28-day all-cause mortality by 42% in the group with statins than patients without statins (Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "950c8053-46e8-46f7-9be6-75f8f89560a3",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C45",
+      "claim": "A meta-analysis with 8990 COVID-19 patients found a 30% lower risk of fatal or severe disease associated with statin use (Kow and Hasan, 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "A meta-analysis with 8990 COVID-19 patients also found a 30% lower risk of fatal or severe disease (Kow and Hasan, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kow and Hasan, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "5afa3e2e-03d3-440d-887f-db3d591f0d8f",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C46",
+      "claim": "A Danish nationwide cohort study with 4842 COVID-19 patients and a meta-analysis with 3449 COVID-19 patients did not find the association between statins use and improved COVID-19 outcomes (Butt et al., 2020; Hariyanto and Kurniawan, 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "However, a Danish nationwide cohort study with 4842 COVID-19 patients and a meta-analysis with 3449 COVID-19 patients did not find the association between statins use and improved COVID-19 outcomes (Butt et al., 2020; Hariyanto and Kurniawan, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Butt et al., 2020 and Hariyanto and Kurniawan, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "e5f2173c-c719-4c1f-a10e-832db2d6d806",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C47",
+      "claim": "The MR study results provided a causal evidence supporting the finding from the largest cohort study (Zhang et al., 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "Although strong evidence is lacking, these results provided a causal evidence supporting the finding from the largest cohort study (Zhang et al., 2020), which calls for additional observational studies in different populations, mechanistic studies, and randomized controlled studies to examine its potential effect against COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the MR study results to prior observational evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "6b98a759-278d-40fa-ab3e-1dcd6b6def1c",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C48",
+      "claim": "Patients with COVID-19 who already take statins or start to take it for the indication of statins were recommended to continue to take it, which might be beneficial to both its original indication and COVID-19 (Rubin, 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with COVID-19 who already take statins or start to take it for the indication of statins were recommended to continue to take it, which might be beneficial to both its original indication and COVID-19 (Rubin, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rubin, 2021.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "f39fb01b-6fe2-49ee-8442-ecfd2b6e43ef",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C49",
+      "claim": "Statins might be a prioritized drug in future clinical trials for treating COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "And statins might be a prioritized drug in future clinical trials for treating COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative recommendation based on the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "e071c581-17f9-418e-b730-ae7c3b2c5e2c",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C50",
+      "claim": "The effect of NPC1L1 inhibitor on COVID-19 susceptibility may be worth further studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of NPC1L1 inhibitor on COVID-19 susceptibility may be worth further studies as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative recommendation based on the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "f812bcba-05fb-4696-ab80-fa13fa7da0cb",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C51",
+      "claim": "The use of genetic instruments to proxy drug exposure could minimize confounding bias and avoid reverse causation.",
+      "claim_type": "EXPLICIT",
+      "source": "The main strength of our study is the use of genetic instruments to proxy drug exposure, which could minimize confounding bias and avoid reverse causation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known strength of Mendelian randomization methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "4c543d39-4d9b-4cf7-bf47-9a6261339eaf",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C52",
+      "claim": "There are no available eQTLs in blood for NPC1L1.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, there are no available eQTLs in blood for NPC1L1, so we were not able to explore the association between NPC1L1 expression in blood and COVID-19 outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation based on available data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "aab94d2e-d9f9-482b-8156-aff1346d8690",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C53",
+      "claim": "There are no available eQTLs in liver for these target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, there are no available eQTLs in liver (the main tissue related to lipid metabolism) for these target genes, which might provide more convincing evidence of the observed association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation based on available data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "02ea3595-ed3e-408e-a1c1-da89d3f545a2",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C54",
+      "claim": "The sample size of eQTL study for PCSK9 and NPC1L1 in GTEx is relatively smaller, which may affect the statistical power for the results of PCSK9 or NPC1L1 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample size of eQTL study for PCSK9 and NPC1L1 in GTEx is relatively smaller, which may affect the statistical power for the results of PCSK9 or NPC1L1 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation based on the data sources used.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "adfbbf6e-989f-4542-8f5a-bfbeb7787f52",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C55",
+      "claim": "The effect of statins probably varies between subgroups, for example, it may be more effective in patients with chronic diseases (e.g., coronary heart disease).",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the effect of statins probably varies between subgroups, for example, it may be more effective in patients with chronic diseases (e.g., coronary heart disease).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative limitation about potential effect modification.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "148e0fbe-93f6-4006-81c7-47ae72cdb1ab",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C56",
+      "claim": "The Bonferroni correction for multiple tests suggests that the false-positive possibility for the finding of the protective effect of statins on COVID hospitalization cannot be ruled out.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, the Bonferroni correction for multiple tests suggests that we cannot rule out the false-positive possibility for the finding of the protective effect of statins on COVID hospitalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation based on statistical considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "f252f231-3973-47b5-901b-910b7a792353",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C57",
+      "claim": "Both eQTLs and GWAS data used in this study were predominantly obtained from European population ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifthly, both eQTLs and GWAS data used in this study were predominantly obtained from European population ancestry, thus these findings should be interpreted with caution when generalizing to other populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation based on the data sources used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "0b0736a6-0fb2-4627-a83d-56b056d47f6a",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C58",
+      "claim": "The findings should be interpreted with caution when generalizing to non-European populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifthly, both eQTLs and GWAS data used in this study were predominantly obtained from European population ancestry, thus these findings should be interpreted with caution when generalizing to other populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about generalizability based on the study population.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "001138dd-5467-4317-99b5-65d787805175",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C59",
+      "claim": "This MR study suggested a causal relationship between HMGCR inhibition and the reduced risk of COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, this MR study suggested a causal relationship between HMGCR inhibition and the reduced risk of COVID-19 hospitalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the study's analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "9276c50d-9b6c-4233-afe5-a43986490d2e",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C60",
+      "claim": "Clinical trials are called to examine if statins have the protective effect against COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Clninical trials are called to examine if statins have the protective effect against COVID-19 and further researches are needed to explore the underlying mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "20d793f1-7a95-4c62-a48d-b2f0d1a3716d",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C61",
+      "claim": "Further researches are needed to explore the underlying mechanisms of statins' effect on COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Clninical trials are called to examine if statins have the protective effect against COVID-19 and further researches are needed to explore the underlying mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "26dc3790-b029-4e59-8579-0b14335509dd",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C62",
+      "claim": "Cis-eQTLs were defined as eQTLs within 1 Mb on either side of the encoded gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Only cis-eQTLs were included to generate genetic instruments in this study, which were defined as eQTLs within 1 Mb on either side of the encoded gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "58616321-0e6a-42f5-a7b3-d32b8a57af06",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C63",
+      "claim": "Individuals without COVID-19 were included as controls for all outcomes to decrease collider bias and allow for population-level comparisons (Griffith et al., 2020; Butler-Laporte et al., 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "We included individuals without COVID-19 as controls for all outcomes to decrease collider bias and allow for population-level comparisons (Griffith et al., 2020; Butler-Laporte et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Griffith et al., 2020 and Butler-Laporte et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "10f60167-8d6d-4415-8420-467788f74598",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C64",
+      "claim": "SNPs with an F-statistic of >10 were included to minimize weak instrument bias (Burgess and Thompson, 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of SNPs used as the instrument was assessed using the F-statistic, and we included SNPs with an F-statistic of >10 to minimize weak instrument bias (Burgess and Thompson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burgess and Thompson, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "f7cb7d0c-45e4-4c87-a672-0d4695b463a7",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C65",
+      "claim": "Lowering the level of LDL cholesterol is the well-proven effect of lipid-lowering drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since lowering the level of LDL cholesterol is the well-proven effect of lipid-lowering drugs, we thus examined the association of exposures of interest with LDL cholesterol level as positive control study for the instrument from eQTLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about lipid-lowering drugs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "c2adcd64-788f-4b9b-a4c3-11fc5fbadc5a",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C66",
+      "claim": "Coronary heart disease is the main indication of lipid-lowering drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "For the instrument from LDL cholesterol GWAS, we performed positive control study by examining the association of exposures of interest with coronary heart disease because coronary heart disease is the main indication of lipid-lowering drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about lipid-lowering drugs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "b74d1ab0-2294-4afe-9c73-e92a9a058ed0",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C67",
+      "claim": "The HEIDI test of p < 0.01 indicates that association is probably due to linkage (Chauquet et al., 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "The HEIDI test of p < 0.01 indicates that association is probably due to linkage (Chauquet et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chauquet et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "696b30d2-f3df-4b52-ace5-007e222fb703",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C68",
+      "claim": "In Cochran Q test, p < 0.05 indicates the evidence of heterogeneity (Higgins et al., 2003).",
+      "claim_type": "EXPLICIT",
+      "source": "For IVW-MR method, we tested the heterogeneity by using a Cochran Q test, where p < 0.05 indicates the evidence of heterogeneity (Higgins et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Higgins et al., 2003.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "7a62d2c9-1de5-46fc-8527-a5ee89a063b1",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C69",
+      "claim": "In MR Egger regression, the intercept term is a useful indication of directional horizontal pleiotropy, where p < 0.05 indicates the evidence of horizontal pleiotropy (Burgess and Thompson, 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "In MR Egger regression, the intercept term is a useful indication of directional horizontal pleiotropy, where p < 0.05 indicates the evidence of horizontal pleiotropy (Burgess and Thompson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burgess and Thompson, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "87a7ed55-c4ee-417b-a236-98bbff79dc15",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C70",
+      "claim": "In MR-PRESSO analysis, p < 0.05 for Global test indicates the presence of horizontal pleiotropic outliers (Verbanck et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "MR-PRESSO analysis can identify horizontal pleiotropic outliers and provide adjusted estimates, where p < 0.05 for Global test indicates the presence of horizontal pleiotropic outliers (Verbanck et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Verbanck et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "ff3bd4e0-02cb-4995-9bdf-cb73805075a7",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C71",
+      "claim": "Positive control study showed significant associations between exposure to each drug and LDL cholesterol when using eQTLs-proposed instruments.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive control study showed significant associations between exposure to each drug and LDL cholesterol when using eQTLs-proposed instruments (Supplementary file 1\u2014Table 5), as well as between exposure to each drug and coronary heart disease when using LDL cholesterol GWAS-proposed instruments (Supplementary file 1\u2014Table 6), further ensuring the efficacy of the selected genetic instruments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the positive control validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "d9046f8d-b0ec-4696-9042-eee1deae756e",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C72",
+      "claim": "Positive control study showed significant associations between exposure to each drug and coronary heart disease when using LDL cholesterol GWAS-proposed instruments.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive control study showed significant associations between exposure to each drug and LDL cholesterol when using eQTLs-proposed instruments (Supplementary file 1\u2014Table 5), as well as between exposure to each drug and coronary heart disease when using LDL cholesterol GWAS-proposed instruments (Supplementary file 1\u2014Table 6), further ensuring the efficacy of the selected genetic instruments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the positive control validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "dd655d85-4541-4e30-b6f1-be2854f3dc18",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "claim_id": "C73",
+      "claim": "The positive control results further ensure the efficacy of the selected genetic instruments.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive control study showed significant associations between exposure to each drug and LDL cholesterol when using eQTLs-proposed instruments (Supplementary file 1\u2014Table 5), as well as between exposure to each drug and coronary heart disease when using LDL cholesterol GWAS-proposed instruments (Supplementary file 1\u2014Table 6), further ensuring the efficacy of the selected genetic instruments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the positive control validation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d691d747-43b6-4279-81b8-7a847deafe8c",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about lipid metabolism in viral infections and describes three classes of FDA-approved lipid-lowering drugs (HMGCR inhibitors/statins, PCSK9 inhibitors, and NPC1L1 inhibitors) that target key proteins regulating LDL cholesterol levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are well-supported by appropriate citations to established literature (Proto et al., 2021; Sabatine, 2019; Williams et al., 2020). These claims represent standard background knowledge about lipid metabolism, viral infections, and FDA-approved lipid-lowering medications that is appropriately cited and uncontroversial.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "fccf7619-70a5-4072-a31e-7214baa73de2",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior observational studies of lipid-lowering drugs and COVID-19 outcomes have produced mixed results and are limited by confounding bias and reverse causation. Mendelian randomization (MR) can address these limitations by using genetic variants as instruments, which are randomly assigned at birth and precede disease development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 accurately describe the rationale for using MR methodology. The limitations of observational studies (C8-C9) are well-documented and appropriately cited. The principles of MR (C10-C12) are correctly stated and represent established methodological knowledge, supported by citation to Davies et al., 2018.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "f92769bc-c3ad-4ddf-b34a-460d9b693197",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study identified genetic instruments for three drug targets: 921 cis-eQTLs for HMGCR in blood, 24 for PCSK9 in blood, and 11 for NPC1L1 in adipose tissue. Additionally, 7, 12, and 3 SNPs associated with LDL cholesterol were identified near HMGCR, PCSK9, and NPC1L1 genes, respectively. Cis-eQTLs were defined as variants within 1 Mb of the encoded gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 and C62 describe the genetic instrument selection process with specific numbers and criteria. The methodological approach is standard for MR studies. However, a notable limitation is the use of NPC1L1 eQTLs from adipose tissue rather than blood or liver (C15, C52-C53), which may not optimally represent drug target tissue expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "60d8f8b5-4862-42ab-aa5c-00ea7464ab72",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "COVID-19 outcome data were obtained from the COVID-19 Host Genetics Initiative V4, including 14,134 cases and 1,284,876 controls for susceptibility, 6,406 cases and 902,088 controls for hospitalization, and 3,886 cases and 622,265 controls for severe disease. The study population was restricted to individuals of European ancestry from 22 cohorts across 11 countries, with controls including individuals without COVID-19 to minimize collider bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20, C22-C24, and C63 accurately describe the data sources and sample sizes. The use of individuals without COVID-19 as controls (C63) is appropriately justified by citations to Griffith et al., 2020 and Butler-Laporte et al., 2021. The large sample sizes provide adequate statistical power for the primary analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "1365ea4b-288d-457b-a869-9f6ec9641750",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All genetic instruments had F-statistics >30 (exceeding the threshold of >10 for weak instrument bias), and positive control analyses confirmed expected associations between each drug exposure and LDL cholesterol (using eQTL instruments) and coronary heart disease (using LDL-GWAS instruments), validating instrument efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C64, and C71-C73 demonstrate appropriate validation of genetic instruments. F-statistics >30 substantially exceed the standard threshold of >10 (C64), indicating strong instruments. The positive control analyses (C71-C72) showing expected associations with LDL cholesterol and coronary heart disease provide important validation of the instrumental variable approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "2dca3422-16b0-4b79-82c4-bced4e03a39e",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SMR analysis found that higher HMGCR expression was associated with increased risk of COVID-19 susceptibility (OR=1.30, 95%CI=1.05-1.61, p=0.017) and hospitalization (OR=1.38, 95%CI=1.06-1.81, p=0.019), suggesting that HMGCR inhibitors (statins) might reduce these risks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C25-C27 report suggestive associations (p=0.017 and p=0.019) that do not meet the Bonferroni-corrected threshold (p<0.006) for strong evidence. Critically, the HEIDI test for the susceptibility association failed (p=0.009, C34), suggesting the association may be due to linkage rather than causation. The inference that statins might be protective (C27) is reasonable but uncertain given these statistical limitations and the acknowledged possibility of false positives (C56).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "63c16687-305e-47c8-bef6-05e283d7cfe1",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IVW-MR analysis found suggestive evidence that HMGCR-mediated LDL cholesterol was associated with increased risk of COVID-19 hospitalization (OR=1.32, 95%CI=1.00-1.74, p=0.049), further supporting a possible protective effect of HMGCR inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C31 report a borderline significant association (p=0.049, with CI just crossing 1.0) that does not meet the Bonferroni-corrected threshold. While this provides some convergent evidence with the SMR analysis for hospitalization, the marginal statistical significance and potential confounding by BMI and diabetes (C38) introduce uncertainty. The conclusion of a protective effect (C31) is plausible but not definitively established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "4b94760a-28bf-496c-8c65-0fa3ea07aa2b",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Suggestive evidence from SMR analysis showed negative association between PCSK9 expression and COVID-19 susceptibility (OR=0.84, 95%CI=0.73-0.97, p=0.02), but this was not supported by IVW-MR analysis using LDL cholesterol as an instrument.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C28, C33, and C40 present inconsistent findings between the two analytical approaches. The SMR finding (C28) does not meet the Bonferroni-corrected threshold and is contradicted by the null IVW-MR results (C33). The lack of convergent evidence from both methods undermines confidence in a causal relationship between PCSK9 inhibition and COVID-19 susceptibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "3887287a-ace6-4e2e-b865-078064d6c909",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "No association was found between NPC1L1 expression and COVID-19 outcomes in SMR analysis, but strong evidence emerged from IVW-MR analysis showing that NPC1L1-mediated LDL cholesterol was associated with increased COVID-19 susceptibility (OR=2.02, 95%CI=1.30-3.13, p=0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29, C32, and C41 show discordant results between analytical approaches. While the IVW-MR finding (C32) meets the Bonferroni-corrected threshold for strong evidence, the lack of supporting evidence from expression analysis (C29) is concerning. This discordance may reflect the use of adipose tissue eQTLs rather than blood or liver tissue (C52-C53), or could indicate that the LDL-mediated effect operates through mechanisms independent of NPC1L1 expression levels. The small number of instruments (n=3, C18) also limits robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "76c919a7-2d3d-4bfc-aa15-f815b1827042",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sensitivity analyses showed that most associations were not due to linkage (HEIDI test p>0.01) except for HMGCR expression and COVID-19 susceptibility (p=0.009). Horizontal pleiotropy analyses suggested minimal pleiotropy, with no evidence of heterogeneity (Cochran Q test p>0.05) or overall horizontal pleiotropy (MR-Egger and MR-PRESSO p>0.05) in IVW-MR analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 describe comprehensive sensitivity analyses that largely support the validity of the MR assumptions. The failed HEIDI test for HMGCR-susceptibility (C34) appropriately flags this association as potentially due to linkage. The horizontal pleiotropy analyses (C35-C37) provide reassurance that the other associations are not substantially biased by pleiotropic effects, though these tests have limited power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "4d769b5f-137f-43ca-91e6-331fb9f50d2f",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multivariable MR analysis suggested that BMI and diabetes might mediate the association between HMGCR-mediated LDL cholesterol and COVID-19 hospitalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C38 identifies potential confounders/mediators but provides insufficient detail about the multivariable MR results. The claim that BMI and diabetes 'might play a role' is vague\u2014it's unclear whether these factors fully explain the association, partially mediate it, or confound it. This finding raises questions about whether the HMGCR-hospitalization association is direct or operates through metabolic pathways, but the analysis is not sufficiently detailed to draw firm conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "fa3227db-5cf9-4121-8122-b92c6452ab0b",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study concludes that there is suggestive evidence for a causal relationship between HMGCR inhibition and reduced risk of COVID-19 hospitalization, with estimated protective effects of OR=0.72 (95%CI=0.55-0.95) for instrument 1 and OR=0.76 (95%CI=0.57-1.00) for instrument 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39 and C59 represent the main conclusion but overstate the strength of evidence. Both primary analyses (SMR and IVW-MR) showed only suggestive evidence (p=0.019 and p=0.049) that did not meet the Bonferroni-corrected threshold. The HEIDI test failure for susceptibility, potential confounding by BMI/diabetes, and the acknowledged possibility of false positives (C56) all introduce uncertainty. While the convergent suggestive evidence from two methods is encouraging, claiming a 'causal relationship' is premature without replication and clinical trial validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "5476bbca-f9a4-4bff-876a-10eabfb5f33e",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within prior literature, noting that drug repurposing is economical, statins have pleiotropic effects relevant to viral infections, and prior observational studies have shown mixed results, with some large studies showing mortality benefits and others showing no association. The authors claim their MR results provide causal evidence supporting the largest cohort study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 appropriately summarize prior literature with proper citations. The characterization of mixed observational evidence (C44-C46) is accurate. However, the claim that the MR study provides 'causal evidence' (C47) is somewhat overstated given the suggestive rather than strong statistical evidence and the acknowledged limitations (C56). The contextualization is generally fair and balanced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "da5544a1-6751-41f3-bef5-088f60745c1a",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors recommend that COVID-19 patients already taking statins should continue them, suggest statins should be prioritized in clinical trials, propose that NPC1L1 inhibitors warrant further study, and call for clinical trials and mechanistic research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 and C60-C61 present reasonable recommendations appropriately qualified as speculative. The recommendation to continue statins in patients already taking them (C48) is conservative and well-supported by citation. The calls for clinical trials (C49, C60) and mechanistic studies (C61) are appropriate given the suggestive but not definitive evidence. The suggestion about NPC1L1 inhibitors (C50) is reasonable given the strong IVW-MR finding, despite the lack of expression-level support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "a7e71443-f17a-4564-a056-be70a8b1e17b",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study's main strength is using genetic instruments to minimize confounding and reverse causation. Limitations include: lack of blood eQTLs for NPC1L1 and liver eQTLs for all targets, small eQTL sample sizes for PCSK9 and NPC1L1, potential effect heterogeneity across subgroups, possibility of false positives after multiple testing correction, and restriction to European ancestry limiting generalizability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C58 provide an honest and comprehensive assessment of strengths and limitations. The acknowledged limitations are substantive and appropriately qualified. The lack of tissue-appropriate eQTLs (C52-C53) is a significant limitation that may explain discordant findings. The acknowledgment of potential false positives (C56) is particularly important given that key findings did not meet Bonferroni-corrected thresholds. The generalizability concern (C57-C58) is standard for European-ancestry genetic studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    },
+    {
+      "id": "5f734760-78f5-466c-a22f-e1560c3f9007",
+      "content_id": "a6fd3dd7-bf66-4deb-a229-2a18ba0e4a5e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript describes methodological details including definitions of cis-eQTLs, control selection rationale, F-statistic thresholds, positive control rationale, and interpretation criteria for sensitivity tests (HEIDI, Cochran Q, MR-Egger, MR-PRESSO).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 accurately describe standard MR methodology with appropriate citations. The methodological choices are well-justified and follow established practices in the field. The definitions and thresholds are correctly stated and properly attributed to methodological literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:22:18.256001Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c57b0071-f086-4f63-956e-3d140a196e04",
+      "result_id": "d691d747-43b6-4279-81b8-7a847deafe8c"
+    },
+    {
+      "claim_id": "c2ea101d-6a9c-471c-8805-2220f404a073",
+      "result_id": "d691d747-43b6-4279-81b8-7a847deafe8c"
+    },
+    {
+      "claim_id": "8db14434-db6e-435b-9d26-12e24aaeebc3",
+      "result_id": "d691d747-43b6-4279-81b8-7a847deafe8c"
+    },
+    {
+      "claim_id": "5d98a98c-04a6-4d9b-a1f9-d17c030674bf",
+      "result_id": "d691d747-43b6-4279-81b8-7a847deafe8c"
+    },
+    {
+      "claim_id": "0a14ba6d-99c1-42e4-973f-4b65db35c616",
+      "result_id": "d691d747-43b6-4279-81b8-7a847deafe8c"
+    },
+    {
+      "claim_id": "578c94b5-56ab-4c31-adcd-b38135d6c021",
+      "result_id": "d691d747-43b6-4279-81b8-7a847deafe8c"
+    },
+    {
+      "claim_id": "dcc3f754-1e02-478c-a032-85ef574fac7f",
+      "result_id": "d691d747-43b6-4279-81b8-7a847deafe8c"
+    },
+    {
+      "claim_id": "cbd0ef31-09db-4f92-96d2-616f3f5f4bdd",
+      "result_id": "fccf7619-70a5-4072-a31e-7214baa73de2"
+    },
+    {
+      "claim_id": "aeea537f-9b93-4ce8-b972-ba069bac5021",
+      "result_id": "fccf7619-70a5-4072-a31e-7214baa73de2"
+    },
+    {
+      "claim_id": "23a1bb77-0acc-4fc3-bd16-a404e87dd05b",
+      "result_id": "fccf7619-70a5-4072-a31e-7214baa73de2"
+    },
+    {
+      "claim_id": "163034df-ef14-4402-86c4-b98d83740ca6",
+      "result_id": "fccf7619-70a5-4072-a31e-7214baa73de2"
+    },
+    {
+      "claim_id": "c1e6278e-8677-4f63-8c15-d5da2568be2e",
+      "result_id": "fccf7619-70a5-4072-a31e-7214baa73de2"
+    },
+    {
+      "claim_id": "6f59aca8-d32b-4983-8a33-23828012d790",
+      "result_id": "f92769bc-c3ad-4ddf-b34a-460d9b693197"
+    },
+    {
+      "claim_id": "828a9431-ab83-4aec-9c21-6da05551e61f",
+      "result_id": "f92769bc-c3ad-4ddf-b34a-460d9b693197"
+    },
+    {
+      "claim_id": "aa44d028-f805-4bf8-abdc-81dca782a611",
+      "result_id": "f92769bc-c3ad-4ddf-b34a-460d9b693197"
+    },
+    {
+      "claim_id": "4190e9ad-cc2f-43f8-bbb7-7dee85ae788a",
+      "result_id": "f92769bc-c3ad-4ddf-b34a-460d9b693197"
+    },
+    {
+      "claim_id": "599b387a-4a3d-4e08-a1e6-765ecbfd1516",
+      "result_id": "f92769bc-c3ad-4ddf-b34a-460d9b693197"
+    },
+    {
+      "claim_id": "777f50b9-77a4-4a2b-8d1d-5a9d187fb027",
+      "result_id": "f92769bc-c3ad-4ddf-b34a-460d9b693197"
+    },
+    {
+      "claim_id": "26dc3790-b029-4e59-8579-0b14335509dd",
+      "result_id": "f92769bc-c3ad-4ddf-b34a-460d9b693197"
+    },
+    {
+      "claim_id": "7ea8f47e-3874-4978-b021-39c4b2820c50",
+      "result_id": "60d8f8b5-4862-42ab-aa5c-00ea7464ab72"
+    },
+    {
+      "claim_id": "763084f3-8891-4092-bda4-5f6e8ee3f428",
+      "result_id": "60d8f8b5-4862-42ab-aa5c-00ea7464ab72"
+    },
+    {
+      "claim_id": "7f38eb02-3d03-4cda-8b58-31d3418cdd21",
+      "result_id": "60d8f8b5-4862-42ab-aa5c-00ea7464ab72"
+    },
+    {
+      "claim_id": "794ae352-7bee-48a3-bcb7-cf2b77546321",
+      "result_id": "60d8f8b5-4862-42ab-aa5c-00ea7464ab72"
+    },
+    {
+      "claim_id": "e18632bf-041e-4c91-a3a6-0c1d7ede951c",
+      "result_id": "60d8f8b5-4862-42ab-aa5c-00ea7464ab72"
+    },
+    {
+      "claim_id": "58616321-0e6a-42f5-a7b3-d32b8a57af06",
+      "result_id": "60d8f8b5-4862-42ab-aa5c-00ea7464ab72"
+    },
+    {
+      "claim_id": "73c5d718-92f6-4e56-897d-0dbb5a55d863",
+      "result_id": "1365ea4b-288d-457b-a869-9f6ec9641750"
+    },
+    {
+      "claim_id": "10f60167-8d6d-4415-8420-467788f74598",
+      "result_id": "1365ea4b-288d-457b-a869-9f6ec9641750"
+    },
+    {
+      "claim_id": "ff3bd4e0-02cb-4995-9bdf-cb73805075a7",
+      "result_id": "1365ea4b-288d-457b-a869-9f6ec9641750"
+    },
+    {
+      "claim_id": "d9046f8d-b0ec-4696-9042-eee1deae756e",
+      "result_id": "1365ea4b-288d-457b-a869-9f6ec9641750"
+    },
+    {
+      "claim_id": "dd655d85-4541-4e30-b6f1-be2854f3dc18",
+      "result_id": "1365ea4b-288d-457b-a869-9f6ec9641750"
+    },
+    {
+      "claim_id": "7b75011c-3a84-4363-a4da-53d0b5409dd0",
+      "result_id": "2dca3422-16b0-4b79-82c4-bced4e03a39e"
+    },
+    {
+      "claim_id": "85768de5-ceb2-48a6-aae8-a0463499d346",
+      "result_id": "2dca3422-16b0-4b79-82c4-bced4e03a39e"
+    },
+    {
+      "claim_id": "e0c885f4-3b96-4caf-bfe1-71f61fcf44ad",
+      "result_id": "2dca3422-16b0-4b79-82c4-bced4e03a39e"
+    },
+    {
+      "claim_id": "28192b92-fdfb-44a3-849a-4c722eaed95a",
+      "result_id": "63c16687-305e-47c8-bef6-05e283d7cfe1"
+    },
+    {
+      "claim_id": "274099ed-1986-415e-b9fe-a0436c76f1f6",
+      "result_id": "63c16687-305e-47c8-bef6-05e283d7cfe1"
+    },
+    {
+      "claim_id": "7d872613-db00-4fd3-90bb-f5ce5976ca43",
+      "result_id": "4b94760a-28bf-496c-8c65-0fa3ea07aa2b"
+    },
+    {
+      "claim_id": "a621fa92-dc04-4389-afee-a9617d72d634",
+      "result_id": "4b94760a-28bf-496c-8c65-0fa3ea07aa2b"
+    },
+    {
+      "claim_id": "d29322cc-baaa-4b47-8391-18436658ff86",
+      "result_id": "4b94760a-28bf-496c-8c65-0fa3ea07aa2b"
+    },
+    {
+      "claim_id": "03921969-01e7-41be-ab17-483c0ac6e4b4",
+      "result_id": "3887287a-ace6-4e2e-b865-078064d6c909"
+    },
+    {
+      "claim_id": "41bcd0d2-2eb8-4e74-9982-f12cdfc4d325",
+      "result_id": "3887287a-ace6-4e2e-b865-078064d6c909"
+    },
+    {
+      "claim_id": "9dcf9391-0a49-4de7-a118-48703689f290",
+      "result_id": "3887287a-ace6-4e2e-b865-078064d6c909"
+    },
+    {
+      "claim_id": "0288de39-e6de-4daf-a0ec-902e43653a0d",
+      "result_id": "76c919a7-2d3d-4bfc-aa15-f815b1827042"
+    },
+    {
+      "claim_id": "26de5786-51e0-4f13-9e49-2ad0bc83b030",
+      "result_id": "76c919a7-2d3d-4bfc-aa15-f815b1827042"
+    },
+    {
+      "claim_id": "f2808356-f7fa-4221-a214-325e731d14dc",
+      "result_id": "76c919a7-2d3d-4bfc-aa15-f815b1827042"
+    },
+    {
+      "claim_id": "afa47484-7a14-4e61-b988-ed5178f3b2af",
+      "result_id": "76c919a7-2d3d-4bfc-aa15-f815b1827042"
+    },
+    {
+      "claim_id": "605fe7f6-176b-447a-af5e-7dc9f4b6413f",
+      "result_id": "4d769b5f-137f-43ca-91e6-331fb9f50d2f"
+    },
+    {
+      "claim_id": "94f98dbf-ec9a-4e4d-afff-dbaeec2c69bd",
+      "result_id": "fa3227db-5cf9-4121-8122-b92c6452ab0b"
+    },
+    {
+      "claim_id": "001138dd-5467-4317-99b5-65d787805175",
+      "result_id": "fa3227db-5cf9-4121-8122-b92c6452ab0b"
+    },
+    {
+      "claim_id": "b68647ff-dcaf-47e9-869b-70ae206a35bf",
+      "result_id": "5476bbca-f9a4-4bff-876a-10eabfb5f33e"
+    },
+    {
+      "claim_id": "427eab28-36f5-469e-a7a9-31b9cb24d95e",
+      "result_id": "5476bbca-f9a4-4bff-876a-10eabfb5f33e"
+    },
+    {
+      "claim_id": "a23cedaf-ed4c-4b4e-8d8c-86775009c9e3",
+      "result_id": "5476bbca-f9a4-4bff-876a-10eabfb5f33e"
+    },
+    {
+      "claim_id": "950c8053-46e8-46f7-9be6-75f8f89560a3",
+      "result_id": "5476bbca-f9a4-4bff-876a-10eabfb5f33e"
+    },
+    {
+      "claim_id": "5afa3e2e-03d3-440d-887f-db3d591f0d8f",
+      "result_id": "5476bbca-f9a4-4bff-876a-10eabfb5f33e"
+    },
+    {
+      "claim_id": "e5f2173c-c719-4c1f-a10e-832db2d6d806",
+      "result_id": "5476bbca-f9a4-4bff-876a-10eabfb5f33e"
+    },
+    {
+      "claim_id": "6b98a759-278d-40fa-ab3e-1dcd6b6def1c",
+      "result_id": "da5544a1-6751-41f3-bef5-088f60745c1a"
+    },
+    {
+      "claim_id": "f39fb01b-6fe2-49ee-8442-ecfd2b6e43ef",
+      "result_id": "da5544a1-6751-41f3-bef5-088f60745c1a"
+    },
+    {
+      "claim_id": "e071c581-17f9-418e-b730-ae7c3b2c5e2c",
+      "result_id": "da5544a1-6751-41f3-bef5-088f60745c1a"
+    },
+    {
+      "claim_id": "9276c50d-9b6c-4233-afe5-a43986490d2e",
+      "result_id": "da5544a1-6751-41f3-bef5-088f60745c1a"
+    },
+    {
+      "claim_id": "20d793f1-7a95-4c62-a48d-b2f0d1a3716d",
+      "result_id": "da5544a1-6751-41f3-bef5-088f60745c1a"
+    },
+    {
+      "claim_id": "f812bcba-05fb-4696-ab80-fa13fa7da0cb",
+      "result_id": "a7e71443-f17a-4564-a056-be70a8b1e17b"
+    },
+    {
+      "claim_id": "4c543d39-4d9b-4cf7-bf47-9a6261339eaf",
+      "result_id": "a7e71443-f17a-4564-a056-be70a8b1e17b"
+    },
+    {
+      "claim_id": "aab94d2e-d9f9-482b-8156-aff1346d8690",
+      "result_id": "a7e71443-f17a-4564-a056-be70a8b1e17b"
+    },
+    {
+      "claim_id": "02ea3595-ed3e-408e-a1c1-da89d3f545a2",
+      "result_id": "a7e71443-f17a-4564-a056-be70a8b1e17b"
+    },
+    {
+      "claim_id": "adfbbf6e-989f-4542-8f5a-bfbeb7787f52",
+      "result_id": "a7e71443-f17a-4564-a056-be70a8b1e17b"
+    },
+    {
+      "claim_id": "148e0fbe-93f6-4006-81c7-47ae72cdb1ab",
+      "result_id": "a7e71443-f17a-4564-a056-be70a8b1e17b"
+    },
+    {
+      "claim_id": "f252f231-3973-47b5-901b-910b7a792353",
+      "result_id": "a7e71443-f17a-4564-a056-be70a8b1e17b"
+    },
+    {
+      "claim_id": "0b0736a6-0fb2-4627-a83d-56b056d47f6a",
+      "result_id": "a7e71443-f17a-4564-a056-be70a8b1e17b"
+    },
+    {
+      "claim_id": "26dc3790-b029-4e59-8579-0b14335509dd",
+      "result_id": "5f734760-78f5-466c-a22f-e1560c3f9007"
+    },
+    {
+      "claim_id": "58616321-0e6a-42f5-a7b3-d32b8a57af06",
+      "result_id": "5f734760-78f5-466c-a22f-e1560c3f9007"
+    },
+    {
+      "claim_id": "10f60167-8d6d-4415-8420-467788f74598",
+      "result_id": "5f734760-78f5-466c-a22f-e1560c3f9007"
+    },
+    {
+      "claim_id": "f7cb7d0c-45e4-4c87-a672-0d4695b463a7",
+      "result_id": "5f734760-78f5-466c-a22f-e1560c3f9007"
+    },
+    {
+      "claim_id": "c2adcd64-788f-4b9b-a4c3-11fc5fbadc5a",
+      "result_id": "5f734760-78f5-466c-a22f-e1560c3f9007"
+    },
+    {
+      "claim_id": "b74d1ab0-2294-4afe-9c73-e92a9a058ed0",
+      "result_id": "5f734760-78f5-466c-a22f-e1560c3f9007"
+    },
+    {
+      "claim_id": "696b30d2-f3df-4b52-ace5-007e222fb703",
+      "result_id": "5f734760-78f5-466c-a22f-e1560c3f9007"
+    },
+    {
+      "claim_id": "7a62d2c9-1de5-46fc-8527-a5ee89a063b1",
+      "result_id": "5f734760-78f5-466c-a22f-e1560c3f9007"
+    },
+    {
+      "claim_id": "87a7ed55-c4ee-417b-a236-98bbff79dc15",
+      "result_id": "5f734760-78f5-466c-a22f-e1560c3f9007"
+    }
+  ],
+  "comparisons": []
+}

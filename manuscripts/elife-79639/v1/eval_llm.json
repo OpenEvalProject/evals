@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C102"
+    ],
+    "result": "The MANTICO trial was a randomized controlled trial that enrolled 319 patients aged \u226550 years with mild-to-moderate COVID-19 across three Italian sites from December 2021 to January 2022. Enrollment was prematurely interrupted after in-vitro evidence emerged that bamlanivimab/etesevimab and casirivimab/imdevimab were ineffective against Omicron. The trial achieved complete follow-up with no patients lost, and VOC identification was successful in 311/319 patients (97.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trial design and conduct are well-documented with clear enrollment criteria (C24), randomization procedures (C28-C30), and timeline (C21, C102, C33). The decision to interrupt enrollment based on emerging in-vitro data (C22) is transparently reported, and the high rate of VOC identification (C36-C37) with complete follow-up (C35) demonstrates methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C31",
+      "C32"
+    ],
+    "result": "The trial's sample size calculation was based on a reference trial showing 1.0% COVID-19 progression with casirivimab/imdevimab versus 3.2% with placebo, requiring 420 patients per group for 90% power. The primary outcome was COVID-19 progression (hospitalization, supplemental oxygen, or death) through day 14, with secondary outcomes including time to symptom resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sample size calculation is appropriately justified using data from a relevant prior trial (C25-C26) with clear statistical parameters (C27). The primary and secondary outcomes are well-defined and clinically relevant (C31-C32). However, the trial was severely underpowered due to early termination, enrolling only 319 of the planned 1260 patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C98",
+      "C100",
+      "C101"
+    ],
+    "result": "Among 141 Delta-infected patients, no COVID-19 progression occurred in any treatment group. Time to symptom resolution did not differ significantly between treatments (median 7 days for bamlanivimab/etesevimab, 10 days for sotrovimab and casirivimab/imdevimab; Log-rank p=0.90), confirmed by Cox regression showing no significant differences between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The findings for Delta are clearly reported with appropriate statistical analyses (Log-rank test, Cox regression) and confidence intervals (C50-C52). The lack of progression events (C5, C48) and non-significant differences in symptom resolution (C6, C100-C101) are consistently documented. However, the zero progression events limit conclusions about treatment efficacy for the primary outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Among 170 Omicron-infected patients (80.6% BA.1, 19.4% BA.1.1), two COVID-19 progressions occurred, both in the bamlanivimab/etesevimab group (3.5%), with one death. No progressions occurred in the sotrovimab or casirivimab/imdevimab groups. The Omicron cohort had higher rates of pre-existing immunity (78.8% antibody-positive, 38.8% recently vaccinated) compared to Delta patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the progression events are clearly documented (C8, C58-C60), the extremely low event rate (2/170, 1.2%) severely limits statistical power to detect treatment differences. The trial was underpowered for the primary outcome, and the authors acknowledge that firm conclusions cannot be drawn (C12). The baseline differences in immunity between cohorts (C56-C57) further complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C99"
+    ],
+    "result": "In Omicron-infected patients, sotrovimab showed significantly shorter time to symptom resolution (median 7 days) compared to bamlanivimab/etesevimab (12 days, HR 0.53, 95% CI 0.36-0.77, p=0.001) and casirivimab/imdevimab (12 days, HR 0.45, 95% CI 0.30-0.67, p=0.0001). This benefit was consistent across subgroups stratified by serological and vaccination status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time to symptom resolution findings are robustly supported by multiple statistical analyses (Log-rank tests C64-C67, Cox regression C68-C69) with appropriate confidence intervals and p-values. The consistency across subgroups (C70) strengthens the finding. The 5-day difference is clinically meaningful, and the statistical significance is clear despite the underpowered primary outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The authors conclude that sotrovimab reduces time to recovery in Omicron BA.1/BA.1.1 infections compared to the other mAbs, and that casirivimab/imdevimab may maintain a role in preventing COVID-19 progression in this population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The conclusion about sotrovimab's effect on symptom resolution (C10) is supported by the data. However, the suggestion that casirivimab/imdevimab prevents progression (C11) is speculative, based only on the absence of events in that arm with no statistical comparison possible due to the low event rate. The authors appropriately use cautious language ('may maintain a role').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Patients infected with Omicron versus Delta showed significantly different symptom profiles (more sore throat with Omicron, more anosmia/ageusia and nausea with Delta) and higher rates of pre-existing immunity (serological positivity and recent vaccination). Treatment groups were balanced for baseline characteristics within each VOC cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The symptom differences (C38-C39) and immunity differences (C40-C41) between VOC cohorts are supported by statistical comparisons with reported p-values. The assessment of treatment group balance (C76) is appropriate for a randomized trial. These findings align with known differences between Delta and Omicron variants (C77-C78).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "No baseline predictors (age, sex, BMI, comorbidities, serological status, vaccination status) were associated with time to symptom resolution in either Delta or Omicron cohorts based on bivariate Cox regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is clearly stated and supported by the bivariate Cox regression analysis presented in Table 2. However, the lack of significant predictors may reflect limited statistical power due to sample size rather than true absence of associations. Multivariable analysis was not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C75",
+      "C80",
+      "C81"
+    ],
+    "result": "The trial was prematurely discontinued after enrolling only 319 of 1260 planned patients (25%), resulting in substantial limitations to generalizability. The observed COVID-19 progression rate (0.6%) was much lower than the 5% assumed in sample size calculations, potentially due to Omicron's lower severity, high vaccination rates in Italy, and prioritization of booster doses for the elderly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The early discontinuation (C4, C75) and its impact on generalizability (C12) are transparently reported. The comparison of observed versus expected progression rates (C80) is accurate, and the proposed explanations (C81) are reasonable and supported by citation. This represents appropriate acknowledgment of major study limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C72",
+      "C88",
+      "C89"
+    ],
+    "result": "Prior in-vitro studies demonstrated that mAb activity varies by SARS-CoV-2 variant, with all three study treatments active against Delta, but only sotrovimab and casirivimab/imdevimab retaining residual activity against Omicron BA.1/BA.1.1, while bamlanivimab/etesevimab showed no neutralizing activity against Omicron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about in-vitro data are well-supported by multiple citations (C1, C72, C89) and represent established knowledge that motivated the trial design and early termination. The regulatory context (C18) and mechanism of action (C17) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C86"
+    ],
+    "result": "The MANTICO trial provides the first clinical efficacy data comparing these three mAbs against Omicron VOC. Prior randomized trials compared mAbs only for Alpha and Delta variants, showing similar effectiveness between bamlanivimab/etesevimab and casirivimab/imdevimab for Alpha, and between casirivimab/imdevimab and sotrovimab for Delta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim (C2, C86) appears justified based on the literature review and citations to prior comparative trials (C19-C20). The trial does provide unique data on Omicron, though the limitations due to early termination must be considered when interpreting the significance of this contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C74",
+      "C82",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "The authors discuss how in-vitro evidence outpaced clinical trial data during the pandemic, leading to regulatory changes that halted use of bamlanivimab/etesevimab and casirivimab/imdevimab. They acknowledge limitations regarding newer variants and call for additional adequately powered studies and adaptive trials to inform treatment recommendations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion points appropriately contextualize the study's challenges (C71) and regulatory actions (C73-C74). The acknowledged limitations (C82) and calls for future research (C84, C87) are reasonable. The speculative statement about casirivimab/imdevimab's potential utility (C85) is appropriately hedged with conditional language.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C79"
+    ],
+    "result": "Background claims establish that COVID-19 causes high morbidity/mortality in older patients with comorbidities, that vaccination has reduced healthcare burden but with variable rates across countries and reduced efficacy against new variants, and that Omicron is better equipped than Delta to infect people with pre-existing immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are appropriately supported by citations (C13, C79) or represent general knowledge (C14-C15). They provide appropriate context for the study rationale and findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The trial was funded by the Italian Medicines Agency (AIFA), and VOC identification was funded by the EU Horizon 2020 ORCHESTRA project (grant 101016167).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Funding sources are clearly stated and appropriate for a clinical trial conducted in Italy with European collaboration.",
+    "result_type": "MINOR"
+  }
+]

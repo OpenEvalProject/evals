@@ -1,0 +1,557 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Five EMP networks of varying sizes contain two 'teams' of nodes\u2014one epithelial and one mesenchymal\u2014that are specific to network topology. These teams are identified via hierarchical clustering of the influence matrix and have significantly higher team strength in wild-type networks compared to randomized counterparts (>98th percentile). The team composition coincides with terminal phenotype composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C78-C85 provide converging evidence from multiple networks showing consistent team structure. The influence matrix analysis (C80-C84), comparison with random networks (C78-C79), and alignment with phenotypes (C85) collectively support this result. The statistical significance (>98th percentile) and consistency across five networks strengthen the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C48",
+      "C70"
+    ],
+    "result": "The identified teams orchestrate a bimodal phenotypic landscape where terminal (epithelial and mesenchymal) phenotypes are more frequent and stable than hybrid phenotypes. Terminal phenotypes account for >70% of steady-state frequency in four of five networks and show high SSF, high coherence, and low frustration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C42, C48, C70 demonstrate bimodality through multiple complementary metrics (SSF, coherence, frustration). The consistency across networks and the use of multiple stability measures provide strong support. Figure 1E, 2A, 2C, and 3F provide visual and quantitative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Wild-type EMP network topology plays a significant role in limiting phenotypic repertoire and creating bimodal stability landscapes. WT networks show fewer steady states, higher bimodality coefficients, and higher maximum stability metrics compared to most randomized networks, while showing weaker control over hybrid phenotype stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C61 establish topology's role through systematic comparison with randomized networks. The percentile analysis (C57-C59) shows WT networks consistently exceed 75-80% of random networks in key metrics. The differential control of terminal vs. hybrid stability (C60) is well-documented. However, the mechanism linking topology to phenotypic outcomes could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Frustration (disagreement between network topology and state configuration) shows strong negative correlation with SSF and coherence in WT EMP networks, but this relationship is not maintained in random networks. WT networks show lower minimum frustration and higher bimodality coefficient of frustration than most random networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C67-C69 demonstrate frustration's role in WT networks through correlation analysis and comparison with random networks. The breakdown of the frustration-stability relationship in random networks (C67) supports the specificity of this mechanism to WT topology. Figure 3B-D provide supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Team strength correlates positively with maximum coherence and negatively with minimum frustration across all five EMP networks and their random counterparts. High team strength corresponds to strongly bimodal landscapes with distinct groups of high-stability and low-stability states, while low team strength networks show unpredictable bimodality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C113 establish team strength as a predictive metric through extensive correlation analysis across multiple networks and stability measures. The violin plots (Figure 5B) and scatter plots (Figure 5C) demonstrate clear trends. The consistency across network sizes and the breakdown at low team strength strengthen the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C159",
+      "C187"
+    ],
+    "result": "Network topology alone, specifically through team strength calculated from the influence matrix, can predict phenotypic distributions and stability without requiring dynamic simulations. This enables identification of terminal and hybrid phenotypes purely from topological analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C159, C187 represent a key finding that team strength (topological) predicts dynamic outcomes. The correlation data (Figure 5A, 7Ciii) and edge deletion experiments (Figure 8) support this. However, the claim of 'obviating the need to simulate' is somewhat overstated\u2014the correlations were established using simulation data, so simulations were necessary to validate the approach initially.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C116",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Terminal phenotypes show high resilience to perturbations (coherence = 1 for single-node perturbations, resilience up to 25% multi-node perturbations) while hybrid phenotypes lose identity upon minor perturbations. Networks with lower team strength show reduced differences in resilience between terminal and hybrid states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116, C120-C125 demonstrate differential stability through perturbation experiments. The single-node (Figure 6A) and multi-node (Figure 6B-C) perturbation data provide complementary evidence. The relationship to team strength (C122-C124) connects to the broader framework. The methods are clearly described and results are consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Terminal phenotypes in WT EMP networks exhibit sigmoidal transition dynamics with initial resistance to perturbation, while random networks with low team strength show near-linear transitions for all phenotypes. This indicates that teams govern transition trajectories and confer resistance to phenotypic switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C135 establish unique transition characteristics through Hamming distance analysis and phenotypic distribution tracking. The sigmoidal vs. linear distinction (Figure 6D vs. 6E) is clear. The population-level analysis (C130-C132) provides biological context. The comparison with random networks strengthens the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Networks with high team strength show low frequencies of hybrid states across all perturbation levels, with negative correlation between team strength and hybrid state AUC. The presence of two teams (epithelial and mesenchymal) reduces the frequency and stability of hybrid E/M phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C145 demonstrate that teams suppress hybrid states through AUC analysis across perturbation levels. The consistent negative correlation (Figure 7Aii, 7Bii) and consistency across network sizes (C144) support this. However, the mechanistic explanation for why teams reduce hybrid frequency could be more explicitly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The cooperativity coefficient of terminal phenotype transitions increases with team strength, indicating more step-like (sigmoidal) transitions. This demonstrates that teams make transition dynamics highly nonlinear and confer initial resistance to exiting terminal phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 quantify transition nonlinearity through Hill function fitting. The positive correlation between cooperativity and team strength (Figure 7Cii-iii) is consistent across networks. The interpretation linking cooperativity to resistance (C149) is reasonable given the sigmoidal shape, though direct experimental validation would strengthen this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Sequential edge deletion experiments targeting team strength reduction cause corresponding decreases in terminal phenotype stability (minimum frustration, maximum coherence, terminal state frequency, cooperativity). This establishes a causative connection between team structure and terminal phenotype stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C159 provide the strongest evidence for causation through targeted perturbation experiments. The systematic edge deletion approach (Figure 8A) and resulting changes in stability metrics (Figure 8B-C) support causality. However, the inconsistency in some networks (C158) suggests additional factors may be involved. The claim of causation is reasonable but should acknowledge these limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Teams of nodes are observed in SCLC and melanoma networks, and in a combined EMP network, with similar properties: WT networks have higher team strength than random networks, high team strength correlates with high maximum stability, and terminal phenotypes have high SSF. This suggests teams are a generalizable phenomenon beyond EMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C169 extend the findings to other biological contexts. The analysis of SCLC, melanoma (Figure 9A-C), and combined EMP networks (Figure 9\u2014supplement 1C-E) shows consistent patterns. However, the sample size is limited (only 2-3 additional networks), and the team strengths are lower than in EMP networks (C163), suggesting context-dependency. The generalizability claim is supported but should be stated more cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The influence matrix (calculated from topology without simulations) closely matches correlation matrices obtained from both Boolean and RACIPE simulations, with differences of only 2-3%. Networks with higher team strength show smaller differences between influence and correlation matrices, suggesting a causative relationship between team structure and emergent dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 demonstrate that topology predicts dynamics through matrix comparison. The visual similarity (Figure 4D-E) and quantitative analysis (Figure 4F) support this. The negative correlation between team strength and matrix difference (C91) suggests mechanism. However, the 2-3% difference (C93) is small, and the biological significance of this level of agreement should be discussed. The use of two independent simulation methods (Boolean and RACIPE) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Five EMP networks ranging from 18N 33E to 57N 113E were analyzed using threshold-based, parameter-independent Boolean simulations with asynchronous updating. Nodes are classified as peripheral (input/output), epithelial core, or mesenchymal core. The 22N 82E network showed 36 steady states out of 2^22 possible states, indicating canalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C35 describe the networks and methods used. The network sources are properly cited (C20), node classifications are clearly defined (C22-C27), and the Boolean method is described with appropriate citation (C28). The canalization observation (C33) is supported by Figure 1\u2014supplement 1B. These are well-documented methodological and descriptive claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Two stability metrics are defined: SSF (steady-state frequency) measuring global stability as the fraction of state space converging to a steady state, and coherence measuring local stability as the fraction of single-node perturbations that revert to the original state. These metrics show strong positive correlation in WT networks, with coherence offering advantages as a perturbation-based, local measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 define key metrics used throughout the study. SSF and coherence are clearly defined (C43-C47), their correlation is demonstrated (C49, Figure 2D), and the advantages of coherence are explained (C52). The citation to Willadsen and Wiles, 2007 (C46) provides methodological precedent. These are well-supported methodological claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Frustration is defined as the fraction of edges where there is disagreement between the state configuration and the edge (activating edge with opposite node states, or inhibiting edge with same node states). Higher frustration indicates lower probability of state stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 define frustration with appropriate citation (Tripathi et al., 2020a) and illustration (Figure 3A). The relationship to stability (C63) is stated as a general principle and is supported by subsequent correlation analysis. This is a well-defined methodological claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The influence matrix represents effective regulation between nodes considering both direct edges and indirect paths up to length 10, with each path weighted inversely proportional to its length. This captures how nodes influence each other through multiple pathways in the network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 define the influence matrix calculation. The formula is provided (Figure 4A), the path length cutoff (\u226410) is specified, and the weighting scheme is described. This is a clear methodological definition that is used consistently throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C65",
+      "C66"
+    ],
+    "result": "Maximum coherence of the 22N 82E WT network exceeds most random networks, with consistent results across other WT networks. In random networks, the correlation between SSF and coherence is consistently positive, but the correlation of frustration with SSF and coherence is positive in some random networks (18N, 20N).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C65-C66 report specific comparative results between WT and random networks. The data are presented in Figure 2E, 2\u2014supplement 1A, and 3\u2014supplement 1A-C. These are straightforward data reporting claims that support the broader conclusions about topology's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "State strength (calculated from the influence matrix) is higher for terminal phenotypes in WT networks but not in random networks. The correlation between state strength and stability metrics is weak in random networks compared to WT networks, suggesting the influence matrix alone is insufficient to explain phenotypic stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 report negative results that motivate the team-based analysis. The data (Figure 4\u2014supplement 1A-D) show that a simpler metric (state strength) fails to explain stability in random networks, justifying the more sophisticated team strength metric. This is an important control analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "WT EMP networks show higher maximum global and local stability than most randomized counterparts, corresponding to terminal phenotypes. However, stability cannot be robustly explained by interaction matrix (frustration) or influence matrix (state strength) alone in random networks. Random networks show weaker teams, strengthening the hypothesis that teams lead to stable terminal phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 synthesize earlier findings to build the argument for teams. The comparison of WT and random networks across multiple metrics (Figure 2H, 3\u2014supplement 1, 4\u2014supplement 1) supports this. However, C99 is stated as a hypothesis rather than a proven result, which is appropriate given the correlative nature of much of the evidence at this point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The effect of team strength on minimum stability metrics (minimum SSF and minimum coherence) is negligible, with no observable trend in scatterplots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 reports a negative result regarding minimum stability metrics. The data (Figure 5\u2014supplement 2A-B) support this observation. This is important because it shows that teams specifically affect maximum (terminal) stability rather than all phenotypes uniformly, which is consistent with the overall model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Perturbing signal nodes results in coherence of 0 for all states because they have no inputs and cannot revert, but core node configuration remains unchanged in terminal phenotypes. Output nodes always revert upon perturbation without affecting steady state because they don't influence other nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 explain specific behaviors observed in perturbation experiments. These are logical consequences of the network structure (signal nodes have no inputs, output nodes have no outputs) and are supported by Figure 6A. These clarifications are important for interpreting the coherence metric correctly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Previous work (Chauhan et al., 2021) identified two teams of nodes in a SCLC regulatory network (33 nodes, 357 edges) that constrained phenotypic repertoire to four phenotypes. The teams activated each other within teams but inhibited across teams, effectively reducing the network to a toggle switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C15 describe prior work that motivated the current study. These are properly cited to Chauhan et al., 2021 and provide important context. The claims accurately represent the prior findings and establish the foundation for extending the team concept to EMP networks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims about regulatory networks: nonlinear interactions enable multistability and hysteresis; cellular decisions are mediated by network motifs like toggle switches; E. coli has ~150 TFs; EMP networks can have >50 players; networks robustly lead to limited phenotypes (canalization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 provide background knowledge with appropriate citations. These establish the biological and theoretical context for the study. The claims are well-supported by the cited literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "EMP is a developmental program enabling cells to attain epithelial, hybrid, or mesenchymal phenotypes. Terminal phenotypes (epithelial and mesenchymal) are more stable than hybrid phenotypes, leading to a bimodal phenotypic stability landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 provide background on EMP with appropriate citation (Pastushenko et al., 2018). These establish the biological phenomenon being studied and the expected bimodal landscape that the study aims to explain mechanistically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Discussion claims: Teams of nodes are one way networks achieve limited phenotypes despite complexity. Teams were identified using unsupervised hierarchical clustering. WT networks have higher team strength than random networks, interpreted as evolutionary selection for team strength. Similar analysis has been used in previous studies, and WT networks not having absolute highest values is a recurring theme with unclear reasons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C175 provide interpretation and context for the findings. C173 offers an evolutionary interpretation that is reasonable but speculative. C175 acknowledges a limitation (WT not always highest) with appropriate citations. These are appropriate discussion points that contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Discussion of relationship to prior work: Previous studies showed terminal phenotypes have higher SSF and lower frustration. The strong SSF-frustration relationship requires strong teams. Teams are reminiscent of modularity (communities with limited interactions) but differ in having extensive inter-team interactions. Teams differ from strongly connected components in that connectedness is not necessary, as shown by the epithelial team in 22N 82E having no internal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C186 discuss how the current findings relate to prior concepts. The comparison to modularity (C178-C181) and strongly connected components (C182-C185) is thoughtful and identifies both similarities and differences. The explanation for the discrepancy (C186) regarding epithelial nodes being mostly microRNAs is reasonable and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Discussion of hybrid phenotype identification: A significant finding is identifying terminal and hybrid phenotypes from topology without simulation. While epithelial and mesenchymal phenotypes are well-defined, hybrid phenotypes are context-dependent, possibly due to nonuniform gene lists. The team-based method depends on node interactions rather than specific nodes, potentially enabling better definition of hybrid signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C191 discuss the implications for defining hybrid phenotypes. The observation about context-dependency (C188-C189) is well-supported by citations. The suggestion that teams could improve hybrid phenotype definition (C191) is reasonable speculation based on the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Discussion of experimental evidence: While no direct experimental evidence for teams in EMP is presented, recent analyses show MET inducers correlate positively with each other but negatively with EMT inducers. Teams have been seen in melanoma and SCLC where topology and experimental correlation matrices are consistent. The topological results offer a mechanistic explanation for teams observed in experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C194 acknowledge the lack of direct experimental validation while citing indirect supporting evidence. The citations to Chakraborty et al., 2021; Jia et al., 2020; Pillai and Jolly, 2021; and Chauhan et al., 2021 provide appropriate context. The claim of offering a mechanistic explanation (C194) is reasonable but should be validated experimentally in future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "Discussion of hybrid phenotype stability: Recent studies identify connections between EMP, drug resistance, immune evasion, and dormancy. Teams provide an intuitive way to coordinate multiple plasticity axes at large scale. The analysis suggests hybrid phenotypes are metastable, consistent with previous reports, though experimental stability varies. A hypothesis is proposed that a third team might be required to stabilize hybrid phenotypes (e.g., NP63, NRF2), as seen in CD4+ T cell differentiation with three teams. Cell-cell communication and epigenetic regulation, not included in the analysis, may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C195-C201 discuss hybrid phenotype stability and propose hypotheses. C197-C198 are supported by citations, but C199-C201 are speculative hypotheses about mechanisms not tested in the study. The three-team hypothesis (C199-C200) is interesting but requires experimental validation. The acknowledgment of missing factors (C201) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "Discussion of broader implications: Teams forming toggle switches can explain developmental canalization and make cell-fate decisions robust to fluctuations. The team framework could apply to multicellularity, including tissue development, tumor cell specialization, microenvironment interactions, and CTC clusters. Populations with stronger interactions are expected to have better survival, though extensive analysis is needed to address differences from GRNs (cell plasticity, changing cell numbers, interaction types).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C202-C210 propose broader applications of the team concept. C202-C203 are reasonable extensions supported by the data (Figure 6). C204-C210 are speculative applications to multicellularity that are interesting but require substantial additional work to validate. The acknowledgment of differences that need to be addressed (after C210) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C211",
+      "C212"
+    ],
+    "result": "Concluding claims: Design principles hidden in network topology can canalize phenotypic repertoire and shape the emergent landscape. Insights from network topology and geometric approaches can contribute to identifying landscapes and modulating them for cellular reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C212 provide appropriate concluding statements that summarize the main findings. C211 is well-supported by the study's results. C212 is forward-looking with appropriate citations (S\u00e1ez et al., 2022; Rand et al., 2021) and represents a reasonable extrapolation of the findings' implications.",
+    "result_type": "MINOR"
+  }
+]

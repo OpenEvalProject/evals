@@ -1,0 +1,2100 @@
+{
+  "submission": {
+    "id": "8804ae10-260c-4f24-8d01-c2c442941c91",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:31:14.688048Z",
+    "updated_at": "2025-12-03T16:31:14.688048Z"
+  },
+  "content": [
+    {
+      "id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "submission_id": "8804ae10-260c-4f24-8d01-c2c442941c91",
+      "content_type": "manuscript",
+      "content_text": "# Genetically predicted high IGF-1 levels showed protective effects on COVID-19 susceptibility and hospitalization: a Mendelian randomisation study with data from 60 studies across 25 countries\n\n## Authors\n\n- Xinxuan Li<sup>1</sup> ([ORCID: 0000-0001-8922-661X](https://orcid.org/0000-0001-8922-661X))\n- Yajing Zhou<sup>1</sup>\n- Shuai Yuan<sup>1</sup>\n- Xuan Zhou<sup>1</sup>\n- Lijuan Wang<sup>1</sup>\n- Jing Sun<sup>1</sup>\n- Lili Yu<sup>1</sup>\n- Jinghan Zhu<sup>3</sup>\n- Han Zhang<sup>1</sup>\n- Nan Yang<sup>1</sup>\n- Shuhui Dai<sup>1</sup>\n- Peige Song<sup>4</sup>\n- Susanna C Larsson<sup>2</sup>\n- Evropi Theodoratou<sup>6</sup>\n- Yimin Zhu<sup>1</sup>\n- Xue Li<sup>1</sup> ([ORCID: 0000-0001-6880-2577](https://orcid.org/0000-0001-6880-2577)) \u2020\n\n### Affiliations\n\n1. Department of Big Data in Health Science School of Public Health, Center of Clinical Big Data and Analytics of The Second Affiliated Hospital, Zhejiang University School of Medicine Hangzhou China ([ROR:059cjpv64](https://ror.org/059cjpv64))\n2. Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n3. The Second School of Clinical Medicine, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))\n4. School of Public Health and Women's Hospital, Zhejiang University School of Medicine Hangzhou China ([ROR:042t7yh44](https://ror.org/042t7yh44))\n5. Unit of Medical Epidemiology, Department of Surgical Sciences, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))\n6. Centre for Global Health, Usher Institute, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n7. Cancer Research UK Edinburgh Centre, Medical Research Council Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Epidemiological studies observed gender differences in COVID-19 outcomes, however, whether sex hormone plays a causal in COVID-19 risk remains unclear. This study aimed to examine associations of sex hormone, sex hormones-binding globulin (SHBG), insulin-like growth factor-1 (IGF-1), and COVID-19 risk.Methods:Two-sample Mendelian randomization (TSMR) study was performed to explore the causal associations between testosterone, estrogen, SHBG, IGF-1, and the risk of COVID-19 (susceptibility, hospitalization, and severity) using genome-wide association study (GWAS) summary level data from the COVID-19 Host Genetics Initiative (N=1,348,701). Random-effects inverse variance weighted (IVW) MR approach was used as the primary MR method and the weighted median, MR-Egger, and MR Pleiotropy RESidual Sum and Outlier (MR-PRESSO) test were conducted as sensitivity analyses.Results:Higher genetically predicted IGF-1 levels have nominally significant association with reduced risk of COVID-19 susceptibility and hospitalization. For one standard deviation increase in genetically predicted IGF-1 levels, the odds ratio was 0.77 (95% confidence interval [CI], 0.61\u20130.97, p=0.027) for COVID-19 susceptibility, 0.62 (95% CI: 0.25\u20130.51, p=0.018) for COVID-19 hospitalization, and 0.85 (95% CI: 0.52\u20131.38, p=0.513) for COVID-19 severity. There was no evidence that testosterone, estrogen, and SHBG are associated with the risk of COVID-19 susceptibility, hospitalization, and severity in either overall or sex-stratified TSMR analysis.Conclusions:Our study indicated that genetically predicted high IGF-1 levels were associated with decrease the risk of COVID-19 susceptibility and hospitalization, but these associations did not survive the Bonferroni correction of multiple testing. Further studies are needed to validate the findings and explore whether IGF-1 could be a potential intervention target to reduce COVID-19 risk.Funding:We acknowledge support from NSFC (LR22H260001), CRUK (C31250/A22804), SHLF (Hj\u00e4rt-Lungfonden, 20210351), VR (Vetenskapsr\u00e5det, 2019-00977), and SCI (Cancerfonden).\n\n## Introduction\n\nThe COVID-19 pandemic has emerged as the most important health concern across the globe since December 2019. A notable finding that has been noted in many affected countries is a male predominance of COVID-19-related hospitalization and death (Grasselli et al., 2020; Peckham et al., 2020). Globally, more than 60% of deaths from COVID-19 are reported in males (Richardson et al., 2020). This epidemiological pattern indicates the need for urgent public health actions, as well as for further investigations on the contributing factors of sex differences in COVID-19 risk and its underlying biological mechanisms.\n\nSex hormones play important roles in the immune response in which estrogen was thought to be immune boosting and testosterone to be immunosuppressing (Strope et al., 2020). Due to the higher levels of testosterone in male than female, it has been hypothesized that testosterone might be a promoter of SARS\u2010CoV\u20102 infection and progression in males, considering the regulatory effect of androgen receptor (AR) and testosterone on the transcription of a transmembrane protease serine 2, which is a critical factor enabling cellular infection by coronaviruses, including SARS\u2010CoV\u20102 (Peckham et al., 2020; Pozzilli and Lenzi, 2020; Cattrini et al., 2020). Estrogen has been shown not only to enhance immunological markers and response, but also to be linked to T-cell proliferation, which might be involved in the immune response to the infection of SARS-CoV-2 (Taneja, 2018). Most hormone (about 60%) is tightly bound to sex hormone-binding globulin (SHBG), which is an important regulator of the bioactivities of estrogens and testosterone (Raverot et al., 2010; Dimou et al., 2021). In addition, sex hormone signaling could also regulate the insulin-like growth factor (IGF-1) concentrations, which were also reported to be associated with acute respiratory distress syndrome (Ahasic et al., 2012). It is therefore hypothesized that sex hormone and its related biomarkers might contribute to the sex difference of COVID-19 outcomes. A number of observational studies examined the associations between sex hormones and COVID-19 risk, however, the causality of these associations remains unestablished due to potential limitations of observational studies (e.g., residual confounding and reverse causality) and lack of high-quality data from randomized trials (Tsang et al., 2016).\n\nMendelian randomization (MR) analysis is an epidemiological approach that can strengthen the casual inference by utilizing genetic variants as instrumental variables to mimic biological effects of related biomarkers (Burgess and Thompson, 2015). Here, we conducted a two-sample MR (TSMR) study to explore the causal associations testosterone, estrogen, SHBG, and IGF-1 with the risk of COVID-19 (susceptibility, hospitalization, and severity) using genome-wide association study (GWAS) summary level data from the COVID-19 Host Genetics Initiative (COVID-19 HGI). Sex-stratified MR analyses for testosterone and estradiol were further performed to explore the associations in males and females separately.\n\n## Materials and methods\n\n### Study design\n\nWe firstly conducted a TSMR analysis to explore the causal links between testosterone, estrogen, SHBG, IGF-1, and the risk of COVID-19 (susceptibility, hospitalization, and severity), based on GWAS summary level data from COVID-19 HGI. We then performed sex-stratified MR analysis to further examine the associations between genetically determined circulating levels of testosterone and estrogen and COVID-19 outcomes in males and females separately. The design of this study is explained in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79720/elife-79720-fig1-v2.jpg)\n\n**Figure 1.:** Abbreviation: IGF-1, insulin-like growth factor-1; GWAS, genome-wide association study; SNP, single-nucleotide polymorphism; LD, linkage disequilibrium; IVW, inverse variance weighting; MR, Mendelian randomization.\n\n### Genetic instruments of testosterone, estradiol, SHBG, and IGF-1\n\nSingle-nucleotide polymorphisms (SNPs) associated with testosterone, estradiol, SHBG, and IGF-1 levels were identified from genome-wide association analyses in up to 425,097 participants of European ancestry (Ruth et al., 2020; Sinnott-Armstrong et al., 2021). Sex-stratified SNPs related to estradiol were obtained from a GWAS including 147,690 males and 163,985 females in UK Biobank (Schmitz et al., 2021). We restricted the analysis to SNPs in linkage equilibrium which were identified in the relevant GWAS at p<5 \u00d7 10\u22128 clumped on r2=0.01 within 10,000 kb using the 1000 genomes reference panel (Hemani et al., 2018) to ensure sufficient statistical effectiveness. Among those pairs of SNPs that had LD r2 above the specified threshold (r2\u2009=\u20090.01), only the SNP with the lower p value would be retained. SNPs absent from the LD reference panel were also removed. To test whether there was a weak instrumental variable bias, namely genetic variants selected as instrumental variables had a weak association with exposure, we calculated the F statistic if it is much greater than 10 for the instrument-exposure association, the possibility of weak instrumental variable bias is small. These analyses were conducted using the R package \u2018TwoSampleMR\u2019 (Yavorska and Burgess, 2017). Consequently, a total of 320, 316, 7, and 18 SNPs were used as instrumental variables for SHBG, testosterone, estradiol, and IGF-1, respectively. Given that genetic variants predicting testosterone and estradiol levels differ for men and women, we selected sex-specific SNPs for testosterone (130 SNPs in males, 151 SNPs in females) and estradiol (10 SNPs in males and females) separately for MR sensitivity analyses. Detailed information on the genetic instruments were provided in Supplementary file 1a-d. We used the STROBE case-control checklist when writing our report (von Elm et al., 2014).\n\n### Data source from COVID-19 HGI\n\nWe obtained the summary level data of COVID-19 susceptibility, hospitalization, and severity from the COVID-19-HGI GWAS meta-analyses of data across 60 studies from 25 countries (Round 5, European population) where UK Biobank data were excluded (COVID-19 Host Genetics Initiative, 2020). The HGI dataset included 1,348,701 participants (32,494 laboratory-confirmed cases of SARS-CoV-2 infection and 1,316,207 population controls) for COVID-19 susceptibility, 1,557,411 participants (8316 hospitalized COVID-19 patients and 1,549,095 population controls) for COVID-19 hospitalization, and 1,059,456 participants (4792 very severe respiratory-confirmed COVID-19 cases and 1,054,664 controls) for COVID-19 severity. COVID-19-HGI defined very severe respiratory-confirmed COVID-19 cases as patients hospitalized for laboratory-confirmed SARS-CoV-2 infection who died or were given respiratory support. The characteristics of the participants are shown in Table 1.\n\n**Table 1.**\n Sources of data for Mendelian randomization analysis in COVID-19 HGI.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Phenotype</th>\n      <th>Participants</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Susceptibility</td>\n      <td>Meta-analysis of 35 GWAS performed in individuals of European ancestry</td>\n    </tr>\n    <tr>\n      <td>Cases: 32,494 individuals with COVID-19 by laboratory confirmation, chart review, or self-report</td>\n    </tr>\n    <tr>\n      <td>Controls: 1,316,207 individuals without confirmation or history of COVID-19</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Hospitalization</td>\n      <td>Meta-analysis of 23 GWAS performed in individuals of European ancestry</td>\n    </tr>\n    <tr>\n      <td>Cases: 8316 hospitalized individuals with COVID-19</td>\n    </tr>\n    <tr>\n      <td>Controls: 1,549,095 individuals without confirmation or history of COVID-19</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Severity</td>\n      <td>Meta-analysis of 14 GWAS performed in individuals of European ancestry</td>\n    </tr>\n    <tr>\n      <td>Cases: 4792 SARS-CoV-2 infected hospitalized individuals who died or required respiratory support (intubation, CPAP, BiPAP, continuous external negative pressure, high flow nasal cannula).</td>\n    </tr>\n    <tr>\n      <td>Controls:1,054,664 individuals without confirmation or history of COVID-19</td>\n    </tr>\n  </tbody>\n</table>\n\n_Notes: COVID-19 outcomes are taken from the COVID-19 HGI.HGI, Host Genetics Initiative; GWAS, genome-wide association study; UKB, UK Biobank; CPAP, continuous positive airway pressure ventilation; BiPAP, bilevel positive airway pressure ventilation._\n\n### TSMR analyses\n\nWe applied the inverse variance weighted (IVW) method under the random-effects model as the primary MR analysis. We performed sensitivity analyses, including the weighted median, MR-Egger regression, leave-one-out analysis, and MR Pleiotropy RESidual Sum and Outlier (MR-PRESSO) methods, to examine the consistency of associations and to detect and correct for potential pleiotropy. The weighted median method was performed to provide unbiased causal estimates if at least 50% instrumental variables were valid (Bowden et al., 2016). MR-Egger regression was used to observe and correct potential directional pleiotropy, which was assessed by its intercept test (Bowden et al., 2015). MR-PRESSO method can detect SNP outliers and estimate the association after removal of these outliers. The differences in estimates between before and after outlier removal were examined by the embedded distortion test (Wu et al., 2020). Cochrane\u2019s Q value was used to assess the heterogeneity among estimates of genetic instruments and the p value for intercept in MR-Egger was used to detect horizontal pleiotropy (Bowden et al., 2015). All statistical analyses were two-sided and performed in R 4.0.4 software using the R package TwoSampleMR and MR-PRESSO (Yavorska and Burgess, 2017).\n\n### Sensitivity analyses\n\nWe additionally used the SNP rs7173595 in CYP19A1 gene, which encodes aromatase, an enzyme that converts androgens to estrogens. Rs7173595 has previously been shown to be strongly associated with serum E2 levels in GWAS of men (Ruth et al., 2020; Eriksson et al., 2018) and postmenopausal women (Thompson et al., 2016). This SNP was also associated with serum E2 in 25,502 premenopausal European women (<50 years of age and not reporting a hysterectomy or that menopause has occurred) in UK Biobank. The associations of serum E2 instrumented by rs7173595 in the CYP19A1 gene region with COVID-19 outcomes were estimated using the Wald ratio method. We further performed a sensitivity analysis using a list of genetic instruments consisting of 10 correlated SNPs (r2 < 0.4) located in the IGF-1 gene region (genomic position on build GRCh37/hg19: chromosome 12:102789652\u2013102874341) and associated with IGF-1 levels at the genome-wide significance level. A matrix of linkage disequilibrium among these SNPs was introduced in the MR analysis model. To control potential data confounder, we selected SNPs associated with testosterone, estrogen, SHBG, and IGF-1 only, excluding SNPs associated with BMI which is thought to be a causal risk factor for COVID-19 (Freuer et al., 2021) at the threshold of 5\u00d710\u20138 in European ancestry samples by querying PhenoScanner (Yavorska and Burgess, 2017). SNPs in estrogen were not excluded because their irrelevance to BMI.\n\n## Results\n\nTable 2 presents the TSMR estimates for the associations between sex hormones, SHBG, IGF-1, and the risk of COVID-19 susceptibility, hospitalization, and severity based on the data from HGI. Higher genetically predicted IGF-1 levels have nominally significant association with reduced risk of COVID-19 susceptibility and hospitalization. For one standard deviation increase in genetically predicted IGF-1 levels, the odds ratio was 0.77 (95% confidence interval [CI], 0.61\u20130.97, p=0.027) for COVID-19 susceptibility, 0.62 (95% CI: 0.25\u20130.51, p=0.018) for COVID-19 hospitalization, and 0.85 (95% CI: 0.52\u20131.38, p=0.513) for COVID-19 severity. Associations of IGF-1 levels with COVID-19 susceptibility and hospitalization were not statistically significant after Bonferroni correction, albeit showing a nominal significance at p<0.05. No outlying SNPs were identified by MR-PRESSO analyses. Estimates from the MR-Egger and weighted mode analyses were in the same direction as those from the IVW analysis (Figure 2, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2). The MR-Egger intercept p was 0.614 and 0.595 for susceptibility and hospitalization, respectively, indicating the absence of directional pleiotropy. The associations remained directionally consistent in the sensitivity analysis based on SNPs located in the IGF-1 gene region as instrumental variables with risk of COVID-19 susceptibility (OR = 0.99, 95% CI: 0.91\u20131.07, p=0.777), hospitalization (OR = 0.90; 95% CI: 0.74\u20131.10, p=0.645), and severity (OR = 1.01; 95% CI: 0.82\u20131.24, p=0.415) (Table 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79720/elife-79720-fig2-v2.jpg)\n\n**Figure 2.:** Abbreviation: IGF-1, insulin-like growth factor-1; SNP, single-nucleotide polymorphism; IVW, inverse variance weighting; OR, odds ratio; CI, confidence interval.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79720/elife-79720-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79720/elife-79720-fig2-figsupp2-v2.jpg)\n\n**Table 2.**\n Sex hormones, SHBG, IGF-1, and COVID-19 outcomes in Mendelian randomization (MR) analyses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Exposure</th>\n      <th rowspan=\"2\">Method</th>\n      <th colspan=\"5\">Susceptibility</th>\n      <th colspan=\"5\">Hospitalization</th>\n      <th colspan=\"5\">Severity</th>\n    </tr>\n    <tr>\n      <th>SNPs</th>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n      <th>p Heterogeneity</th>\n      <th>p Intercept</th>\n      <th>SNPs</th>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n      <th>p Heterogeneity</th>\n      <th>p Intercept</th>\n      <th>SNPs</th>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n      <th>p Heterogeneity</th>\n      <th>p Intercept</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">Testosterone</td>\n      <td>IVW</td>\n      <td rowspan=\"6\">315</td>\n      <td>0.94 (0.83, 1.06)</td>\n      <td>0.309</td>\n      <td>0.006</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">303</td>\n      <td>0.82 (0.64, 1.04)</td>\n      <td>0.103</td>\n      <td>0.055</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">316</td>\n      <td>0.83 (0.60, 1.15)</td>\n      <td>0.256</td>\n      <td>0.041</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.93 (0.76, 1.12)</td>\n      <td>0.430</td>\n      <td>0.005</td>\n      <td>0.860</td>\n      <td>0.79 (0.55, 1.15)</td>\n      <td>0.217</td>\n      <td>0.051</td>\n      <td>0.819</td>\n      <td>0.78 (0.48, 1.27)</td>\n      <td>0.313</td>\n      <td>0.038</td>\n      <td>0.732</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>0.89 (0.71, 1.12)</td>\n      <td>0.329</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.81 (0.52, 1.28)</td>\n      <td>0.370</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.71 (0.40, 1.26)</td>\n      <td>0.246</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Simple mode</td>\n      <td>1.13 (0.73, 1.77)</td>\n      <td>0.584</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.77 (0.27, 2.20)</td>\n      <td>0.623</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.44 (0.09, 2.18)</td>\n      <td>0.316</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>0.91 (0.77, 1.08)</td>\n      <td>0.300</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.77 (0.52, 1.13)</td>\n      <td>0.180</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.65 (0.40, 1.05)</td>\n      <td>0.081</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>0.94 (1.06, 0.84)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.82 (1.04, 0.65)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.83 (1.15, 0.59)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">SHBG</td>\n      <td>IVW</td>\n      <td rowspan=\"6\">319</td>\n      <td>0.91 (0.80, 1.04)</td>\n      <td>0.182</td>\n      <td>0.002</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">309</td>\n      <td>0.86 (0.66, 1.11)</td>\n      <td>0.255</td>\n      <td>0.087</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">320</td>\n      <td>0.92 (0.65, 1.29)</td>\n      <td>0.618</td>\n      <td>0.096</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.96 (0.78, 1.18)</td>\n      <td>0.708</td>\n      <td>0.002</td>\n      <td>0.494</td>\n      <td>0.83 (0.57, 1.22)</td>\n      <td>0.352</td>\n      <td>0.081</td>\n      <td>0.818</td>\n      <td>0.92 (0.56, 1.51)</td>\n      <td>0.730</td>\n      <td>0.090</td>\n      <td>0.994</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>0.90 (0.72, 1.13)</td>\n      <td>0.360</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.82 (0.52, 1.29)</td>\n      <td>0.391</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.72 (0.41, 1.27)</td>\n      <td>0.255</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Simple mode</td>\n      <td>1.09 (0.66, 1.81)</td>\n      <td>0.735</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>1.18 (0.40, 3.44)</td>\n      <td>0.767</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>1.16 (0.25, 5.41)</td>\n      <td>0.850</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>0.94 (0.78, 1.14)</td>\n      <td>0.547</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.81 (0.56, 1.18)</td>\n      <td>0.279</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.79 (0.47, 1.33)</td>\n      <td>0.376</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>0.91 (1.05, 0.80)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.86 (1.11, 0.67)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.91 (1.28, 0.65)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Estradiol</td>\n      <td>IVW</td>\n      <td rowspan=\"6\">7</td>\n      <td>0.54 (0.15, 1.94)</td>\n      <td>0.346</td>\n      <td>0.188</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">7</td>\n      <td>0.87 (0.11, 6.70)</td>\n      <td>0.895</td>\n      <td>0.769</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">7</td>\n      <td>0.50 (0.03, 7.64)</td>\n      <td>0.620</td>\n      <td>0.987</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.73 (0.04, 14.11)</td>\n      <td>0.845</td>\n      <td>0.123</td>\n      <td>0.830</td>\n      <td>0.34 (0.00, 29.54)</td>\n      <td>0.657</td>\n      <td>0.685</td>\n      <td>0.662</td>\n      <td>0.04 (0.00, 17.04)</td>\n      <td>0.345</td>\n      <td>1.000</td>\n      <td>0.401</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>0.36 (0.10, 1.35)</td>\n      <td>0.130</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.35 (0.03, 4.21)</td>\n      <td>0.407</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.30 (0.01, 7.26)</td>\n      <td>0.458</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Simple mode</td>\n      <td>0.29 (0.03, 2.60)</td>\n      <td>0.313</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.71 (0.01, 44.94)</td>\n      <td>0.875</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.33 (0.00, 43.56)</td>\n      <td>0.673</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>0.34 (0.07, 1.73)</td>\n      <td>0.241</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.38 (0.03, 4.81)</td>\n      <td>0.482</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.29 (0.01, 9.43)</td>\n      <td>0.511</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>0.54 (1.94, 0.15)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.87 (3.93, 0.19)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.51 (1.52, 0.17)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">IGF-1</td>\n      <td>IVW</td>\n      <td rowspan=\"6\">16</td>\n      <td>0.77 (0.61, 0.97)</td>\n      <td>0.027</td>\n      <td>0.175</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">16</td>\n      <td>0.62 (0.25, 0.51)</td>\n      <td>0.018</td>\n      <td>0.715</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">18</td>\n      <td>0.85 (0.52, 1.38)</td>\n      <td>0.513</td>\n      <td>0.601</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.84 (0.56, 1.26)</td>\n      <td>0.408</td>\n      <td>0.145</td>\n      <td>0.614</td>\n      <td>0.72 (0.37, 1.38)</td>\n      <td>0.336</td>\n      <td>0.668</td>\n      <td>0.595</td>\n      <td>1.45 (0.67, 3.10)</td>\n      <td>0.358</td>\n      <td>0.758</td>\n      <td>0.096</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>0.76 (0.57, 1.02)</td>\n      <td>0.071</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.75 (0.44, 1.28)</td>\n      <td>0.294</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.76 (0.38, 1.53)</td>\n      <td>0.446</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Simple mode</td>\n      <td>0.64 (0.39, 1.05)</td>\n      <td>0.097</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.66 (0.30, 1.45)</td>\n      <td>0.318</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.82 (0.27, 2.47)</td>\n      <td>0.730</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>0.77 (0.58, 1.02)</td>\n      <td>0.084</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.71 (0.44, 1.17)</td>\n      <td>0.199</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.70 (0.35, 1.38)</td>\n      <td>0.319</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>0.77 (0.98, 0.61)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.62 (0.88, 0.43)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.85 (1.34, 0.54)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\n_SNP, single-nucleotide polymorphism; OR, odds ratio; CI, confidence interval; IVW, inverse variance weighting; SHBG, sex hormones-binding globulin; IGF-1, insulin-like growth factor-1._\n\n**Table 3.**\n Sensitive analysis between serum IGF-1 levels instrumented by 10 SNPs in the IGF-1 gene region and COVID-19 outcomes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Method</th>\n      <th colspan=\"4\">Susceptibility</th>\n      <th colspan=\"4\">Hospitalization</th>\n      <th colspan=\"4\">Severity</th>\n    </tr>\n    <tr>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n      <th>p Heterogeneity</th>\n      <th>p Intercept</th>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n      <th>p Heterogeneity</th>\n      <th>p Intercept</th>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n      <th>p Heterogeneity</th>\n      <th>p Intercept</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IVW</td>\n      <td>0.99 (0.91, 1.07)</td>\n      <td>0.777</td>\n      <td>0.596</td>\n      <td>\u2013</td>\n      <td>0.90 (0.74, 1.10)</td>\n      <td>0.645</td>\n      <td>0.104</td>\n      <td>\u2013</td>\n      <td>1.01 (0.82, 1.24)</td>\n      <td>0.415</td>\n      <td>0.437</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.99 (0.93, 1.05)</td>\n      <td>0.732</td>\n      <td>0.541</td>\n      <td>0.527</td>\n      <td>0.97 (0.84, 1.11)</td>\n      <td>0.338</td>\n      <td>0.108</td>\n      <td>0.375</td>\n      <td>1.09 (0.92, 1.30)</td>\n      <td>0.953</td>\n      <td>0.372</td>\n      <td>0.590</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>1.01 (0.96, 1.06)</td>\n      <td>0.739</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.97 (0.86, 1.10)</td>\n      <td>0.620</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>1.05 (0.93, 1.20)</td>\n      <td>0.310</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Simple mode</td>\n      <td>0.98 (0.89, 1.08)</td>\n      <td>0.685</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>1.12 (0.88, 1.43)</td>\n      <td>0.395</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>1.16 (0.88, 1.51)</td>\n      <td>0.316</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>0.98 (0.92, 1.05)</td>\n      <td>0.596</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.94 (0.82, 1.09)</td>\n      <td>0.439</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>1.12 (0.92, 1.37)</td>\n      <td>0.279</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\n_IGF-1, insulin-like growth factor-1; SNP, single-nucleotide polymorphism; IVW, inverse variance weighting; OR, odds ratio; CI, confidence interval._\n\nIn the analyses based on data from the genetic consortia, we found no causal associations of genetically predicted testosterone with the risk of COVID-19 susceptibility (OR = 0.94; 95% CI: 0.83\u20131.06, p=0.309), hospitalization (OR = 0.82; 95% CI: 0.64\u20131.04, p=0.103), risk of severity (OR = 0.83; 95% CI: 0.60\u20131.15, p=0.256). Null association was also noticed between SHBG and COVID-19 susceptibility (OR = 0.91; 95% CI: 0.80\u20131.04, p=0.182), hospitalization (OR = 0.86; 95% CI: 0.66\u20131.11, p=0.255), risk of severity (OR = 0.92; 95% CI: 0.65\u20131.29, p=0.618). Overall, no significant associations between testosterone, estrogen, SHBG, and COVID-19 outcomes were observed from TSMR analyses. Sex-specific associations of genetically testosterone and estradiol levels with COVID-19 risk (Table 4) were still nonsignificant. We noticed that the p for intercept in MR-Egger regression analysis was more than 0.05 for both genders, and no outlier was detected. Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with the risk of COVID-19 susceptibility (OR = 0.32; 95% CI, 0.06\u20131.80, p\u2005=\u20050.195), hospitalization (OR = 0.28; 95% CI: 0.01\u20136.46, p=0.426), and severity (OR = 0.22; 95% CI: 0.00\u201312.73, p=0.469) in females; similarly, the associations remained directionally consistent in males with susceptibility (OR = 0.37; 95% CI, 0.08\u20131.67, p\u2005=\u20050.195), hospitalization (OR = 0.33; 95% CI: 0.02\u20135.11, p=0.426), and severity (OR = 0.27; 95% CI: 0.01\u20139.26, p=0.469) (Table 5). As shown in Table 6, after removing SNPs associated with BMI, we found similar associations of genetically predicted IGF-1 levels with the risk of COVID-19 susceptibility (OR = 0.76; 95% CI: 0.60\u20130.96, p=0.021), hospitalization (OR = 0.61; 95% CI: 0.41\u20130.90, p=0.014), risk of severity (OR = 0.84; 95% CI: 0.52\u20131.38, p=0.497) in which we detected no moderate heterogeneity, and no indication of horizontal pleiotropy in MR-Egger, and no outlier in MR-PRESSO analyses. No causal associations of genetically predicted testosterone and SHBG with COVID-19 were found, but the directions were consistent with results in Table 2.\n\n**Table 4.**\n Sex-specific associations of genetically testosterone and estradiol levels with COVID-19 risk.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"3\">Exposure</th>\n      <th rowspan=\"3\">Method</th>\n      <th colspan=\"4\">Susceptibility</th>\n      <th colspan=\"4\">Hospitalization</th>\n      <th colspan=\"4\">Severity</th>\n    </tr>\n    <tr>\n      <th colspan=\"2\">Male</th>\n      <th colspan=\"2\">Female</th>\n      <th colspan=\"2\">Male</th>\n      <th colspan=\"2\">Female</th>\n      <th colspan=\"2\">Male</th>\n      <th colspan=\"2\">Female</th>\n    </tr>\n    <tr>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n      <th>OR (95% CI)</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">Testosterone</td>\n      <td>IVW</td>\n      <td>0.96 (0.90, 1.05)</td>\n      <td>0.463</td>\n      <td>1.06 (0.97, 1.15)</td>\n      <td>0.214</td>\n      <td>0.96 (0.83, 1.10)</td>\n      <td>0.547</td>\n      <td>1.03 (0.87, 1.22)</td>\n      <td>0.731</td>\n      <td>1.07 (0.89, 1.27)</td>\n      <td>0.479</td>\n      <td>0.88 (0.69, 1.11)</td>\n      <td>0.269</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.97 (0.86, 1.09)</td>\n      <td>0.644</td>\n      <td>1.04 (0.85, 1.26)</td>\n      <td>0.713</td>\n      <td>0.88 (0.71, 1.10)</td>\n      <td>0.270</td>\n      <td>1.13 (0.76, 1.69)</td>\n      <td>0.549</td>\n      <td>0.81 (0.62, 1.08)</td>\n      <td>0.152</td>\n      <td>0.68 (0.39, 1.18)</td>\n      <td>0.169</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>0.93 (0.83, 1.04)</td>\n      <td>0.184</td>\n      <td>1.06 (0.94, 1.19)</td>\n      <td>0.370</td>\n      <td>0.89 (0.72, 1.10)</td>\n      <td>0.277</td>\n      <td>1.08 (0.84, 1.39)</td>\n      <td>0.523</td>\n      <td>0.89 (0.67, 1.19)</td>\n      <td>0.438</td>\n      <td>0.81 (0.57, 1.14)</td>\n      <td>0.227</td>\n    </tr>\n    <tr>\n      <td>p for intercept</td>\n      <td>1.00 (1.00, 1.00)</td>\n      <td>0.998</td>\n      <td>1.00 (0.99, 1.01)</td>\n      <td>0.854</td>\n      <td>1.00 (1.00, 1.01)</td>\n      <td>0.348</td>\n      <td>1.00 (0.99, 1.01)</td>\n      <td>0.615</td>\n      <td>1.01 (1.00, 1.02)</td>\n      <td>0.017</td>\n      <td>1.01 (0.99, 1.03)</td>\n      <td>0.314</td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>0.97 (0.90, 1.05)</td>\n      <td>0.464</td>\n      <td>1.06 (0.97, 1.15)</td>\n      <td>0.216</td>\n      <td>0.96 (0.83, 1.10)</td>\n      <td>0.549</td>\n      <td>1.03 (0.87, 1.22)</td>\n      <td>0.732</td>\n      <td>1.07 (0.89, 1.27)</td>\n      <td>0.478</td>\n      <td>0.88 (0.69, 1.11)</td>\n      <td>0.270</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Estradiol</td>\n      <td>IVW</td>\n      <td>0.99 (0.89, 1.11)</td>\n      <td>0.923</td>\n      <td>0.95 (0.71, 1.26)</td>\n      <td>0.724</td>\n      <td>0.98 (0.81, 1.18)</td>\n      <td>0.826</td>\n      <td>1.04 (0.63, 1.73)</td>\n      <td>0.873</td>\n      <td>0.90 (0.71, 1.15)</td>\n      <td>0.403</td>\n      <td>1.39 (0.74, 7.15)</td>\n      <td>0.310</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>1.00 (0.73, 1.36)</td>\n      <td>0.993</td>\n      <td>0.89 (0.59, 1.34)</td>\n      <td>0.598</td>\n      <td>0.93 (0.52, 1.67)</td>\n      <td>0.812</td>\n      <td>1.15 (0.56, 2.34)</td>\n      <td>0.719</td>\n      <td>0.61 (0.29, 6.15)</td>\n      <td>0.233</td>\n      <td>1.76 (0.74, 3.15)</td>\n      <td>0.234</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>1.05 (0.92, 1.20)</td>\n      <td>0.432</td>\n      <td>0.95 (0.68, 1.32)</td>\n      <td>0.745</td>\n      <td>0.93 (0.74, 1.16)</td>\n      <td>0.508</td>\n      <td>1.32 (0.67, 2.57)</td>\n      <td>0.422</td>\n      <td>0.88 (0.65, 1.15)</td>\n      <td>0.411</td>\n      <td>1.96 (0.81, 5.15)</td>\n      <td>0.135</td>\n    </tr>\n    <tr>\n      <td>p for intercept</td>\n      <td>1.00 (0.96, 1.04)</td>\n      <td>0.980</td>\n      <td>1.00 (0.99, 1.02)</td>\n      <td>0.669</td>\n      <td>1.01 (0.94, 1.08)</td>\n      <td>0.856</td>\n      <td>0.99 (0.96, 1.02)</td>\n      <td>0.707</td>\n      <td>1.05 (0.96, 0.15)</td>\n      <td>0.312</td>\n      <td>0.99 (0.95, 0.15)</td>\n      <td>0.441</td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>0.99 (0.89, 1.11)</td>\n      <td>0.925</td>\n      <td>0.95 (0.71, 1.26)</td>\n      <td>0.732</td>\n      <td>0.98 (0.81, 1.18)</td>\n      <td>0.831</td>\n      <td>1.04 (0.63, 1.73)</td>\n      <td>0.877</td>\n      <td>0.90 (0.71, 1.15)</td>\n      <td>0.425</td>\n      <td>1.39 (0.74, 2.63)</td>\n      <td>0.335</td>\n    </tr>\n  </tbody>\n</table>\n\n_OR, odds ratio; CI, confidence interval; IVW, inverse variance weighting._\n\n**Table 5.**\n Associations of serum E2 levels instrumented by rs7173595 in the CYP19A1 gene region with COVID-19 outcomes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sex</th>\n      <th>Phenotype</th>\n      <th>beta</th>\n      <th>SE</th>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Female</td>\n      <td>Susceptibility</td>\n      <td>\u20131.14</td>\n      <td>0.88</td>\n      <td>0.32 (0.06, 1.80)</td>\n      <td>0.195</td>\n    </tr>\n    <tr>\n      <td>Hospitalization</td>\n      <td>\u20131.27</td>\n      <td>1.60</td>\n      <td>0.28 (0.01, 6.46)</td>\n      <td>0.426</td>\n    </tr>\n    <tr>\n      <td>Severity</td>\n      <td>\u20131.49</td>\n      <td>2.06</td>\n      <td>0.22 (0.00, 12.73)</td>\n      <td>0.469</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Male</td>\n      <td>Susceptibility</td>\n      <td>\u20131.00</td>\n      <td>0.77</td>\n      <td>0.37 (0.08, 1.67)</td>\n      <td>0.195</td>\n    </tr>\n    <tr>\n      <td>Hospitalization</td>\n      <td>\u20131.11</td>\n      <td>1.40</td>\n      <td>0.33 (0.02, 5.11)</td>\n      <td>0.426</td>\n    </tr>\n    <tr>\n      <td>Severity</td>\n      <td>\u20131.31</td>\n      <td>1.80</td>\n      <td>0.27 (0.01, 9.26)</td>\n      <td>0.469</td>\n    </tr>\n  </tbody>\n</table>\n\n_E2, estradiol; OR, odds ratio; CI, confidence interval._\n\n**Table 6.**\n Testosterone, SHBG, IGF-1, and COVID-19 outcomes in Mendelian randomization (MR) analyses adjusting BMI.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Exposure</th>\n      <th rowspan=\"2\">Method</th>\n      <th colspan=\"5\">Susceptibility</th>\n      <th colspan=\"5\">Hospitalization</th>\n      <th colspan=\"5\">Severity</th>\n    </tr>\n    <tr>\n      <th>SNPs</th>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n      <th>p Heterogeneity</th>\n      <th>p Intercept</th>\n      <th>SNPs</th>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n      <th>p Heterogeneity</th>\n      <th>p Intercept</th>\n      <th>SNPs</th>\n      <th>OR (95% CI)</th>\n      <th>p Effect</th>\n      <th>p Heterogeneity</th>\n      <th>p Intercept</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">Testosterone</td>\n      <td>IVW</td>\n      <td rowspan=\"6\">306</td>\n      <td>0.95 (0.83,1.07)</td>\n      <td>0.386</td>\n      <td>0.006</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">294</td>\n      <td>0.83 (0.64,1.06)</td>\n      <td>0.134</td>\n      <td>0.041</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">307</td>\n      <td>0.84 (0.60,1.17)</td>\n      <td>0.304</td>\n      <td>0.030</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.93 (0.77,1.13)</td>\n      <td>0.484</td>\n      <td>0.006</td>\n      <td>0.855</td>\n      <td>0.83 (0.56,1.21)</td>\n      <td>0.324</td>\n      <td>0.038</td>\n      <td>0.991</td>\n      <td>0.83 (0.50,1.37)</td>\n      <td>0.466</td>\n      <td>0.027</td>\n      <td>0.949</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>0.90 (0.72,1.12)</td>\n      <td>0.331</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.82 (0.52,1.28)</td>\n      <td>0.375</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.71 (0.42,1.21)</td>\n      <td>0.214</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Simple mode</td>\n      <td>1.13 (0.70,1.82)</td>\n      <td>0.610</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.68 (0.24,1.91)</td>\n      <td>0.465</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.37 (0.07,1.88)</td>\n      <td>0.229</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>0.95 (0.79,1.13)</td>\n      <td>0.540</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.81 (0.56,1.17)</td>\n      <td>0.273</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.65 (0.40,1.06)</td>\n      <td>0.085</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>0.94 (0.83,1.07)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.83 (0.64,1.06)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.83 (0.64,1.06)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">SHBG</td>\n      <td>IVW</td>\n      <td rowspan=\"6\">308</td>\n      <td>0.90 (0.79,1.04)</td>\n      <td>0.160</td>\n      <td>0.002</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">198</td>\n      <td>0.84 (0.64,1.10)</td>\n      <td>0.209</td>\n      <td>0.047</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">309</td>\n      <td>0.89 (0.62,1.26)</td>\n      <td>0.511</td>\n      <td>0.058</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.94 (0.76,1.15)</td>\n      <td>0.538</td>\n      <td>0.001</td>\n      <td>0.663</td>\n      <td>0.81 (0.54,1.21)</td>\n      <td>0.299</td>\n      <td>0.043</td>\n      <td>0.794</td>\n      <td>0.89 (0.53,1.49)</td>\n      <td>0.666</td>\n      <td>0.054</td>\n      <td>0.978</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>0.90 (0.71,1.13)</td>\n      <td>0.356</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.81 (0.52,1.28)</td>\n      <td>0.377</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.72 (0.42,1.23)</td>\n      <td>0.230</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Simple mode</td>\n      <td>1.05 (0.60,1.84)</td>\n      <td>0.860</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>1.25 (0.42,3.78)</td>\n      <td>0.689</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.97 (0.22,4.22)</td>\n      <td>0.967</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>0.94 (0.77,1.15)</td>\n      <td>0.570</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.81 (0.55,1.20)</td>\n      <td>0.295</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.72 (0.43,1.22)</td>\n      <td>0.224</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>0.90 (0.79,1.04)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.84 (0.64,1.10)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.89 (0.62,1.26)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">IGF-1</td>\n      <td>IVW</td>\n      <td rowspan=\"6\">15</td>\n      <td>0.76 (0.60,0.96)</td>\n      <td>0.021</td>\n      <td>0.172</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">15</td>\n      <td>0.61 (0.41,0.90)</td>\n      <td>0.014</td>\n      <td>0.688</td>\n      <td>\u2013</td>\n      <td rowspan=\"6\">17</td>\n      <td>0.84 (0.52,1.38)</td>\n      <td>0.497</td>\n      <td>0.534</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.88 (0.58,1.33)</td>\n      <td>0.554</td>\n      <td>0.168</td>\n      <td>0.390</td>\n      <td>0.77 (0.39,1.50)</td>\n      <td>0.458</td>\n      <td>0.676</td>\n      <td>0.403</td>\n      <td>1.55 (0.71,3.39)</td>\n      <td>0.284</td>\n      <td>0.757</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>0.75 (0.57,0.99)</td>\n      <td>0.046</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.75 (0.45,1.24)</td>\n      <td>0.260</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.75 (0.38,1.48)</td>\n      <td>0.410</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Simple mode</td>\n      <td>0.65 (0.38,1.11)</td>\n      <td>0.135</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.64 (0.30,1.37)</td>\n      <td>0.265</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.75 (0.25,2.31)</td>\n      <td>0.629</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>0.76 (0.56,1.03)</td>\n      <td>0.096</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.71 (0.44,1.15)</td>\n      <td>0.185</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.72 (0.36,1.47)</td>\n      <td>0.383</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MR-PRESSO</td>\n      <td>0.76 (0.60,0.96)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.61 (0.43,0.86)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.84 (0.53,1.35)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\n_SNP, single-nucleotide polymorphism; OR, odds ratio; CI, confidence interval; IVW, inverse variance weighting; SHBG, sex hormones-binding globulin; IGF-1, insulin-like growth factor-1._\n\n## Discussion\n\nIn this study, we assessed whether there were any causal associations between sex hormone-related biomarkers and the risk of COVID-19 outcomes. We found suggestive evidence for associations between genetic liability to high IGF-1 levels and decreased risk of COVID-19 susceptibility and hospitalization. Our findings suggest a potential role of IGF-1 in COVID-19 risk and have implications for tailored treatment of COVID-19 patients.\n\nOur MR findings were consistent with the multiple epidemiological studies that reported a nominal association between measured IGF-1 levels and COVID-19 illness. There is one observational study that demonstrated an inverse association between pre-diagnostic circulating levels of IGF-1 and COVID-19 mortality risk among COVID-19 patients in UK Biobank (Fan et al., 2021). Another observational study in Greece reported lower IGF-1 levels in critically ill COVID-19 patients compared to their counterparts with less severe disease or without COVID-19 (Ilias et al., 2021). A single-cell analysis revealed that the exhaustion of CD8+ T cells together with several cytokines including IGF-1 was associated with the pathogenesis of severe SARS-CoV-2 infection (He et al., 2021). Our MR analyses found a negative association between genetically determined high circulating IGF-1 levels and decreased risk of COVID-19 susceptibility and hospitalization, indicating IGF-1 may be a protective factor of COVID-19 risk.\n\nIGF-1 has been found to be pro-survival/anti-aging, anti-inflammatory, and antioxidant with neuro- and hepatoprotective properties. A study by the Narasaraju group demonstrated that IGF-1 plays an important role in the repair of lung tissue by regulating the proliferation and differentiation of alveolar epithelial cells (AECs) (Narasaraju et al., 2006). Airway inflammation can be mitigated when apoptotic cells are engulfed by pulmonary epithelial cells (Juncadella et al., 2013). IGF-1 has also been shown to upregulate engulfment by professional phagocytes such as dendritic cells (Xuan et al., 2017), and inhibit IL-6 production from lipopolysaccharide-induced AECs (Wang et al., 2019). Both of these mechanisms are beneficial to the regression of local inflammation. Jakn et al. showed that IGF-1 binds to IGF-1 receptor (IGF-1R) on airway epithelial cells of non-professional phagocytic cells, which can promote the phagocytosis of microparticles by airway epithelial cells (Han et al., 2016). Transforming growth factor \u03b21 derived from AECs activated alveolar macrophages (AMs) to secrete IGF-1 into the alveolar fluid in response to stimulation of the airway by inflammatory signals. This AM-derived IGF-1 attenuated the p38 mitogen-activated protein kinase inflammatory signal in AECs and promoted the phagocytosis of apoptotic cells by AECs. This two-way communication between AECs and AMs represents a well-tuned system for the regulation of the inflammatory response in alveoli (Mu et al., 2020). Taken together, these studies provide biological evidence supporting that IGF-1 might be an important anti-inflammatory factor in the alveolar microenvironment and thus may contribute to improve COVID-19 outcomes. More studies are required to determine whether novel therapeutic strategy targeting on IGF-1 pathway might improve COVID-19 prognosis.\n\nIGF-1 level is regulated by estrogen and the functional interactions between estradiol and IGF-1 signaling system involve several transcriptional and posttranscriptional mechanisms. Specifically, IGF-1 can affect estrogen receptor \u03b1 action by enhancing its expression and potentiating its transcriptional activity in a ligand-independent manner (Lange, 2004; Edwards et al., 1993; Shupnik, 2004). On the other hand, E2 can enhance IGF-1 signaling by upregulating the expression of IGF-1 (Umayahara et al., 1994), IGF-1R (Bartucci et al., 2001), and some IGF-1-binding proteins (Qin et al., 1999). This may explain the same direction from the IVW analysis of IGF-1, estradiol, and COVID-19 outcomes. Estrogen is found to have immune enhancing effect (Taneja, 2018) to trigger the local immune response by activating a plethora of cells such as phagocytes, dendritic cells, natural killers, and CD8+ T cells. Once these immune cells are activated, they could fight against the infection by destroying the virus and thus preventing its diffusion to the lower respiratory tract or by decreasing the viral load. Experimental tests have also reported that estradiol can affect angiotensin-converting enzyme 2 and FURIN expression, with the potential of mitigating SARS-CoV-2 infection (Glinsky, 2020). However, our study did not find any supportive evidence for the associations between estradiol and COVID-19, which might be due to the small variance of estradiol explained by genetic instruments.\n\nOur studies showed that SHBG or testosterone may not be associated with COVID-19 outcomes, which is consistent with the research findings of Liu et al., 2022. They also observed a null causal relationship for testosterone or SHBG levels with COVID-19 outcomes in females and males. Meanwhile, epidemiologic data (Peckham et al., 2020) indicate that while men are not more predisposed to contracting COVID-19, they are more likely to develop severe illness following the infection compared with women. However, our study observed null causal relationship for testosterone levels with COVID-19 outcomes in both females and males. According to the available evidence on the role of testosterone in COVID-19, it appears that both high and low testosterone levels can be associated with poor COVID-19 outcomes (Ho et al., 2022). A study demonstrated androgen deprivation therapy (ADT) exposure was associated with a reduction in COVID-19 severity (Lee et al., 2022). By contrast, the Ohio study did not identify any protective effect of ADT on the severity of COVID-19 outcomes (Klein et al., 2021). Androgen-related treatments showed that transmembrane serine protease 2 (TMPRSS2) expression and SARS-CoV-2 entry in human lung cells have been reduced by antiandrogens (Leach et al., 2021; Deng et al., 2021; Qiao et al., 2020). Additionally, androgens have numerous immunosuppressive effects such as decreasing proinflammatory cytokine release (e.g., IFN\u03b3 and TNF) or increasing anti-inflammatory cytokine release (e.g., IL-4 and IL-10), reducing T helper 1 (Th1) and T helper 17 (Th17) cell differentiation, inducing Treg differentiation and regulating B-cell development (Olsen and Kovacs, 2011; Henze et al., 2020; Trigunaite et al., 2015). Paradoxically, these immunosuppressive effects of testosterone might be beneficial to overcome the heightened inflammatory environment that predisposes to severe COVID-19. Recent research has revealed that males with COVID-19 have lower testosterone levels (Ma et al., 2021). Another study found a negative association between total testosterone levels and biochemical markers of COVID-19 severity (Rastrelli et al., 2021). Lower testosterone concentrations were associated with higher concentrations of IL-6, CRP, IL-1 receptor antagonist, hepatocyte growth factor, and IFN\u03b3-inducible protein 10 (Dhindsa et al., 2021). Therefore, additional research efforts need to be made to investigate the complex relationships furtherly.\n\nThe major advantage of our study is the design taking the advantages of MR approach and used several sensitivity analyses to test the robustness of the MR findings. The application of MR analysis reduces the influence of confounding factors and reverse causality so that reliable causal estimations were obtained to complement the observational findings. The potential limitations of this study also need to be acknowledged. Our study may suffer from weak instrument bias, especially within sensitivity analyses that restricted to smaller sets of genetic instruments. In TSMR, this bias would tend to make estimates closer to the null. Since there is no available data on recovery status for COVID-19 patients in UK Biobank, the current study did not take recovery as a potential competing risk into account. We could not assess the sex-specific associations in IGF-1 and COVID-19 due to no data by sex in HGI. Moreover, the MR was merely based on individuals of European ancestry. Our findings might not be generalized to other populations. It should also be noted that the study findings are based on evidence from genetic data, additional large and prospective cohort studies with available IGF-1 data and information on COVID-19 susceptibility and clinical outcomes are needed to validate the findings.\n\nIn conclusion, our study indicated that genetically predicted high IGF-1 levels were associated with decrease the risk of COVID-19 susceptibility and hospitalization, but these associations did not survive the Bonferroni correction of multiple testing. Further studies are needed to validate the findings and explore whether IGF-1 could be a potential intervention target to reduce COVID-19 risk.\n\n### Data availability statement\n\nData analyzed in the present study are GWAS summary statistics, which have been made publicly available. GWAS summary level data of COVID-19 HGI could be downloaded from https://www.covid19hg.org/results/. GWAS summary level data of sex hormones and IGF-1 in UK Biobank could be downloaded from GWAS catalog. All genome-wide significant SNPs have been provided in Supplementary file 1a\u2013d. All analyses were performed using R statistical package freely available at https://cran.r-project.org/mirrors.html. The TSMR package is available at https://mrcieu.github.io/TwoSampleMR/(Hemani et al., 2020).\n",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "10b51561-bd47-4f9c-aaed-6a0be45be6b1",
+      "submission_id": "8804ae10-260c-4f24-8d01-c2c442941c91",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Evangelos J Giamarellos-Bourboulis, https://ror.org/04gnjpq42 National and Kapodistrian University of Athens, Medical School Greece\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79720.sa0](https://doi.org/10.7554/eLife.79720.sa0)\n\nUsing publicly available genetic data, Li and colleagues tested the association and inferred the causality of genetic variants predicted to alter the levels of testosterone, estrogen, SHBG, or IGF-1, against susceptibility, severity and outcome of SARS-Cov2 infection. The main strength of the study is the large cohort which adds to the robustness of the data.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Evangelos J Giamarellos-Bourboulis, https://ror.org/04gnjpq42 National and Kapodistrian University of Athens, Medical School Greece\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79720.sa1](https://doi.org/10.7554/eLife.79720.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Genetically predicted high IGF-1 levels showed protective effects on COVID-19 susceptibility and hospitalization: A Mendelian Randomisation study with data from 60 studies across 25 countries\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Evangelos J Giamarellos-Bourboulis as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jos van der Meer as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nRecommendations for the authors:\n\n\u2013 The main limitation of the study is the lack of any real-world validation cohort where IGF-1 is measured.\n\n\u2013 Another limitation is the lack of any transcriptomic data to support the findings. Can the authors describe any eQTLs to recompensate for this?\n\n\u2013 The authors leveraged previous reports of genetic variants in association with testosterone, estrogen, SHBG, and IGF-1 levels, outside of COVID-19 cohorts. Testosterone, estrogen, SHBG, and IGF-1 levels were not measured specifically in the context of the COVID-19 Host Genetics Initiative. Secondly, no attempts were made to further validate, either experimentally or in other external cohorts, their findings related to IGF-1 levels. Thirdly, the statistics is seemingly lacking appropriate control of the false discovery rate. Although the study is a targeted meta-analysis, by examining 657 different markers one is bound to identify an association by chance. In fact, applying a Bonferroni correction to the reported p-values for IGF-1 related SNPs yields non-significant probabilities. Fourth, the methods section lacks important details, for example handling of the known \"winner's curse\" bias in inverse variance weighting mendelian randomization, thereby decreasing the potential for reproducibility by other groups. Lastly, the methods employed did not adequately address potential data confounders, for example treatment of patients with dexamethasone or the influence of BMI (inferred in other studies as a causal risk factor) on model estimates. Against this backdrop, the interpretation of the findings by Li and colleagues is complicated and conclusions related to genetic proxies of IGF-1 levels are unreliable.\n\n\u2013 Based on the cited references (13 and 14), selection of SNPs in the meta-analysis is subject to a bias towards non-infectious conditions. It is important to consider that levels of testosterone, estradiol, SHBG, and IGF-1 could be substantially altered during the course of the infection, either in the acute phase or later stages. What are the levels of testosterone, estradiol, SHBG and IGF-1 in the context of viral infections, as well as crucially in COVID-19? How do those levels influence the association of the selected SNPs?\n\n\u2013 Throughout the results, particularly in Figure 2, confidence intervals are large and indicates a potential complication due to unaddressed confounders or subgroups within the cohort. How many of the COVID-19 patients were administered corticosteroid therapy? How many were administered tocilizumab? How does treatment effect the model estimates? The authors should provide more characteristics of the COVID-19 patients with a more extensive investigation on the potential confounders and treatment effects on MR estimates. How does BMI influence model estimates and results?\n\n\u2013 Inverse-variance weighted two-sample Mendelian randomization is indeed the most extensively used method utilizing GWAS summary stats to infer on causality of the exposure (ie. SNP variant) and outcome variables. The approach suffers from various biases that were seemingly not handled in the study herein described, for example, the winner's curse and potential pleiotropy. The authors should provide a more objective assessment of potential biases and address them accordingly.\n\n\u2013 Notwithstanding the large sample size of the discovery cohort obtained from the host genetics in COVID-19 initiative, it is imperative to expand on the findings by ascertaining the robustness of the IFG-1 related SNPs. Do the IGF-1-related SNPs influence IGF-1 levels in the context of a viral infection? Preferably of course in COVID-19. Also, do the SNPs constitute eQTLs for IGF-1 expression in primary organs, particularly lungs, liver, and kidneys?\n\n\u2013 The methods section needs to be expanded substantially by the addition of important details. For example, how was LD clumping performed? Using PLINK? Why was an r2 cutoff of < 0.01 used? Why not r2 < 0.001?\n\n\u2013 The sentence on page 5 line 38 reading \"postmenopausal women (22) and men(13, 23).\" needs correction as it implies men were also postmenopausal.\n\n\u2013 Page 7, line 196, the statement that reads \"The cytokine storm related respiratory distress syndrome\u2026\" should be revised, avoiding the sensationalistic \"cytokine storm\" description of what has been reported elsewhere as merely a cytokine breeze at best.\n\n\u2013 The Discussion on cytokine storm is arbitrary and should be omitted. The authors do not provide any evidence on the association of IGF-1 with the cytokine storm.\n\n\u2013 This is another trial finding no association of sex hormones to COVID-19. This has to be discussed more extensively in the discussion; now discussion is more focused on IGF (the positive finding) but negative results should be put into context. Please refer also to PMID: 35577073, PMID: 35470422, PMID: 35602518\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Genetically predicted high IGF-1 levels showed protective effects on COVID-19 susceptibility and hospitalization: A Mendelian Randomisation study with data from 60 studies across 25 countries\" for further consideration by eLife. Your revised article has been evaluated by Jos van der Meer (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n\u2013 The study hinges solely on MR analysis of selected SNPs used as proxies of testosterone, estradiol, SHBG, and IGF-1 levels. None of the markers were directly measured, and no information on their levels in the context of infections or COVID-19 was given. The authors argue at length that measuring the markers in the specific cohort is of limited value because their genetic causality modelling approach supersedes the need for such measurements. While MR models have indeed emerged as interesting tools to infer causality, it is also important to provide a potential mechanism linking genetic variants to the phenotype. Without direct measurements of the said markers minimize the potential to provide readers with a possible mechanism bridging genetic variant and phenotype.\n\n\u2013 The number of tests performed in the study is equivalent to the number of SNPs that were investigated, that is, 657. Hence, the multiple-testing correction must take into account 657 tests. The authors are wrong in adjusting their probabilities just for the 4 markers, which is more attuned to p-value hacking. Therefore, my initial comments on the lack of significant findings after considering multiple-test corrections remain a concern. Hence, the conclusions pertaining to IGF-1 variants do not reflect on the author's findings. Based on this result, I suggest being more objective by stating that none of the genetic variants can be deemed as a causal variant.\n",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6d65ed2a-1a22-400e-b1f0-c73673ca9bd6",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C1",
+      "claim": "Epidemiological studies observed gender differences in COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological studies observed gender differences in COVID-19 outcomes, however, whether sex hormone plays a causal in COVID-19 risk remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about existing epidemiological literature on COVID-19 outcomes by gender.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "350e327b-651b-4d27-9e5c-7ff75eda5664",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C2",
+      "claim": "Higher genetically predicted IGF-1 levels have nominally significant association with reduced risk of COVID-19 susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher genetically predicted IGF-1 levels have nominally significant association with reduced risk of COVID-19 susceptibility and hospitalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Mendelian randomization analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "a4cf9d92-0e3e-4ca8-bff9-0093ded88619",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C3",
+      "claim": "For one standard deviation increase in genetically predicted IGF-1 levels, the odds ratio was 0.77 (95% confidence interval [CI], 0.61\u20130.97, p=0.027) for COVID-19 susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "For one standard deviation increase in genetically predicted IGF-1 levels, the odds ratio was 0.77 (95% confidence interval [CI], 0.61\u20130.97, p=0.027) for COVID-19 susceptibility, 0.62 (95% CI: 0.25\u20130.51, p=0.018) for COVID-19 hospitalization, and 0.85 (95% CI: 0.52\u20131.38, p=0.513) for COVID-19 severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statistical result from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "50244fa8-46e8-4f64-9fc8-4de475c0856d",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C4",
+      "claim": "For one standard deviation increase in genetically predicted IGF-1 levels, the odds ratio was 0.62 (95% CI: 0.25\u20130.51, p=0.018) for COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "For one standard deviation increase in genetically predicted IGF-1 levels, the odds ratio was 0.77 (95% confidence interval [CI], 0.61\u20130.97, p=0.027) for COVID-19 susceptibility, 0.62 (95% CI: 0.25\u20130.51, p=0.018) for COVID-19 hospitalization, and 0.85 (95% CI: 0.52\u20131.38, p=0.513) for COVID-19 severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statistical result from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "3e488fe8-290f-4a83-8317-430420a730c4",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C5",
+      "claim": "For one standard deviation increase in genetically predicted IGF-1 levels, the odds ratio was 0.85 (95% CI: 0.52\u20131.38, p=0.513) for COVID-19 severity.",
+      "claim_type": "EXPLICIT",
+      "source": "For one standard deviation increase in genetically predicted IGF-1 levels, the odds ratio was 0.77 (95% confidence interval [CI], 0.61\u20130.97, p=0.027) for COVID-19 susceptibility, 0.62 (95% CI: 0.25\u20130.51, p=0.018) for COVID-19 hospitalization, and 0.85 (95% CI: 0.52\u20131.38, p=0.513) for COVID-19 severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statistical result from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "31c3f25c-46e1-4864-8f36-aa4ca8c27640",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C6",
+      "claim": "There was no evidence that testosterone, estrogen, and SHBG are associated with the risk of COVID-19 susceptibility, hospitalization, and severity in either overall or sex-stratified TSMR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence that testosterone, estrogen, and SHBG are associated with the risk of COVID-19 susceptibility, hospitalization, and severity in either overall or sex-stratified TSMR analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the null findings from the MR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "789688d2-7625-4dc9-8e22-87ff02072861",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C7",
+      "claim": "Globally, more than 60% of deaths from COVID-19 are reported in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, more than 60% of deaths from COVID-19 are reported in males (Richardson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Richardson et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "bb944b86-1b80-4db4-a8d3-f01b65b599c9",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C8",
+      "claim": "Sex hormones play important roles in the immune response in which estrogen was thought to be immune boosting and testosterone to be immunosuppressing.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex hormones play important roles in the immune response in which estrogen was thought to be immune boosting and testosterone to be immunosuppressing (Strope et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Strope et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "321f0c01-09e5-49de-9420-f92a4f3857a3",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C9",
+      "claim": "Testosterone might be a promoter of SARS\u2010CoV\u20102 infection and progression in males, considering the regulatory effect of androgen receptor (AR) and testosterone on the transcription of a transmembrane protease serine 2, which is a critical factor enabling cellular infection by coronaviruses, including SARS\u2010CoV\u20102.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the higher levels of testosterone in male than female, it has been hypothesized that testosterone might be a promoter of SARS\u2010CoV\u20102 infection and progression in males, considering the regulatory effect of androgen receptor (AR) and testosterone on the transcription of a transmembrane protease serine 2, which is a critical factor enabling cellular infection by coronaviruses, including SARS\u2010CoV\u20102 (Peckham et al., 2020; Pozzilli and Lenzi, 2020; Cattrini et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "7e9bfd57-b681-41a2-94f5-56c62205171e",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C10",
+      "claim": "Estrogen has been shown not only to enhance immunological markers and response, but also to be linked to T-cell proliferation, which might be involved in the immune response to the infection of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Estrogen has been shown not only to enhance immunological markers and response, but also to be linked to T-cell proliferation, which might be involved in the immune response to the infection of SARS-CoV-2 (Taneja, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Taneja, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "2a6db169-c771-4362-8986-b92e8d2e1bb3",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C11",
+      "claim": "Most hormone (about 60%) is tightly bound to sex hormone-binding globulin (SHBG), which is an important regulator of the bioactivities of estrogens and testosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "Most hormone (about 60%) is tightly bound to sex hormone-binding globulin (SHBG), which is an important regulator of the bioactivities of estrogens and testosterone (Raverot et al., 2010; Dimou et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Raverot et al., 2010 and Dimou et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "76555655-e711-450b-8e71-62d5053d0835",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C12",
+      "claim": "Sex hormone signaling could also regulate the insulin-like growth factor (IGF-1) concentrations, which were also reported to be associated with acute respiratory distress syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, sex hormone signaling could also regulate the insulin-like growth factor (IGF-1) concentrations, which were also reported to be associated with acute respiratory distress syndrome (Ahasic et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ahasic et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "cb5ce1d3-2b68-47c7-aad5-ef18feb87f22",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C13",
+      "claim": "Mendelian randomization (MR) analysis is an epidemiological approach that can strengthen the casual inference by utilizing genetic variants as instrumental variables to mimic biological effects of related biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian randomization (MR) analysis is an epidemiological approach that can strengthen the casual inference by utilizing genetic variants as instrumental variables to mimic biological effects of related biomarkers (Burgess and Thompson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by a citation to Burgess and Thompson, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "d991058f-9af7-47d0-ae62-1e2d0f8d5857",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C14",
+      "claim": "Single-nucleotide polymorphisms (SNPs) associated with testosterone, estradiol, SHBG, and IGF-1 levels were identified from genome-wide association analyses in up to 425,097 participants of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-nucleotide polymorphisms (SNPs) associated with testosterone, estradiol, SHBG, and IGF-1 levels were identified from genome-wide association analyses in up to 425,097 participants of European ancestry (Ruth et al., 2020; Sinnott-Armstrong et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for genetic instruments, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "148a592d-2628-4b81-92eb-bd4ac629aaf3",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C15",
+      "claim": "A total of 320, 316, 7, and 18 SNPs were used as instrumental variables for SHBG, testosterone, estradiol, and IGF-1, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, a total of 320, 316, 7, and 18 SNPs were used as instrumental variables for SHBG, testosterone, estradiol, and IGF-1, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of SNPs used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "a56c5333-05e1-4f8b-9d80-6bf0753461f3",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C16",
+      "claim": "The HGI dataset included 1,348,701 participants (32,494 laboratory-confirmed cases of SARS-CoV-2 infection and 1,316,207 population controls) for COVID-19 susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The HGI dataset included 1,348,701 participants (32,494 laboratory-confirmed cases of SARS-CoV-2 infection and 1,316,207 population controls) for COVID-19 susceptibility, 1,557,411 participants (8316 hospitalized COVID-19 patients and 1,549,095 population controls) for COVID-19 hospitalization, and 1,059,456 participants (4792 very severe respiratory-confirmed COVID-19 cases and 1,054,664 controls) for COVID-19 severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the COVID-19 susceptibility outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "1c8d1eba-0883-4648-964e-87665bd735d8",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C17",
+      "claim": "The HGI dataset included 1,557,411 participants (8316 hospitalized COVID-19 patients and 1,549,095 population controls) for COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The HGI dataset included 1,348,701 participants (32,494 laboratory-confirmed cases of SARS-CoV-2 infection and 1,316,207 population controls) for COVID-19 susceptibility, 1,557,411 participants (8316 hospitalized COVID-19 patients and 1,549,095 population controls) for COVID-19 hospitalization, and 1,059,456 participants (4792 very severe respiratory-confirmed COVID-19 cases and 1,054,664 controls) for COVID-19 severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the COVID-19 hospitalization outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "7dac8972-c89d-4cf0-8a03-281840d752fd",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C18",
+      "claim": "The HGI dataset included 1,059,456 participants (4792 very severe respiratory-confirmed COVID-19 cases and 1,054,664 controls) for COVID-19 severity.",
+      "claim_type": "EXPLICIT",
+      "source": "The HGI dataset included 1,348,701 participants (32,494 laboratory-confirmed cases of SARS-CoV-2 infection and 1,316,207 population controls) for COVID-19 susceptibility, 1,557,411 participants (8316 hospitalized COVID-19 patients and 1,549,095 population controls) for COVID-19 hospitalization, and 1,059,456 participants (4792 very severe respiratory-confirmed COVID-19 cases and 1,054,664 controls) for COVID-19 severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the COVID-19 severity outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "6167a8cf-c0d6-4d30-b3f2-da62b8b081d3",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C19",
+      "claim": "COVID-19-HGI defined very severe respiratory-confirmed COVID-19 cases as patients hospitalized for laboratory-confirmed SARS-CoV-2 infection who died or were given respiratory support.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID-19-HGI defined very severe respiratory-confirmed COVID-19 cases as patients hospitalized for laboratory-confirmed SARS-CoV-2 infection who died or were given respiratory support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided by the COVID-19 HGI consortium.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "26345b0a-1f55-473e-88f3-0879e1c758a6",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C20",
+      "claim": "The inverse variance weighted (IVW) method under the random-effects model was applied as the primary MR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied the inverse variance weighted (IVW) method under the random-effects model as the primary MR analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the primary statistical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "d47e2025-9d18-4ac1-875e-6492a6618d7e",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C21",
+      "claim": "Sensitivity analyses, including the weighted median, MR-Egger regression, leave-one-out analysis, and MR Pleiotropy RESidual Sum and Outlier (MR-PRESSO) methods, were performed to examine the consistency of associations and to detect and correct for potential pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed sensitivity analyses, including the weighted median, MR-Egger regression, leave-one-out analysis, and MR Pleiotropy RESidual Sum and Outlier (MR-PRESSO) methods, to examine the consistency of associations and to detect and correct for potential pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sensitivity analyses performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "b8052d6b-f9ce-4576-9802-931c8343cd85",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C22",
+      "claim": "No outlying SNPs were identified by MR-PRESSO analyses for IGF-1 and COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "No outlying SNPs were identified by MR-PRESSO analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the MR-PRESSO sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "561cf786-ccc5-4dd1-9aa1-842821156a7c",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C23",
+      "claim": "Estimates from the MR-Egger and weighted mode analyses were in the same direction as those from the IVW analysis for IGF-1 and COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates from the MR-Egger and weighted mode analyses were in the same direction as those from the IVW analysis (Figure 2, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results shown in the figures and text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "14cd7d54-ee52-4f5d-8285-055f6ac4a533",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C24",
+      "claim": "The MR-Egger intercept p was 0.614 and 0.595 for susceptibility and hospitalization, respectively, indicating the absence of directional pleiotropy for IGF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The MR-Egger intercept p was 0.614 and 0.595 for susceptibility and hospitalization, respectively, indicating the absence of directional pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the MR-Egger analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "a2df9e07-87b8-4978-8961-b5f32c270271",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C25",
+      "claim": "The associations between IGF-1 and COVID-19 outcomes remained directionally consistent in the sensitivity analysis based on SNPs located in the IGF-1 gene region as instrumental variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations remained directionally consistent in the sensitivity analysis based on SNPs located in the IGF-1 gene region as instrumental variables with risk of COVID-19 susceptibility (OR = 0.99, 95% CI: 0.91\u20131.07, p=0.777), hospitalization (OR = 0.90; 95% CI: 0.74\u20131.10, p=0.645), and severity (OR = 1.01; 95% CI: 0.82\u20131.24, p=0.415) (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis using different genetic instruments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "f2270fdc-e247-4bcc-957c-d99e55273f36",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C26",
+      "claim": "No causal associations of genetically predicted testosterone with the risk of COVID-19 susceptibility (OR = 0.94; 95% CI: 0.83\u20131.06, p=0.309) were found.",
+      "claim_type": "EXPLICIT",
+      "source": "In the analyses based on data from the genetic consortia, we found no causal associations of genetically predicted testosterone with the risk of COVID-19 susceptibility (OR = 0.94; 95% CI: 0.83\u20131.06, p=0.309), hospitalization (OR = 0.82; 95% CI: 0.64\u20131.04, p=0.103), risk of severity (OR = 0.83; 95% CI: 0.60\u20131.15, p=0.256).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statistical result from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "46cf5161-b51d-4a8c-a23a-2a76f0765e6a",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C27",
+      "claim": "No causal associations of genetically predicted testosterone with COVID-19 hospitalization (OR = 0.82; 95% CI: 0.64\u20131.04, p=0.103) were found.",
+      "claim_type": "EXPLICIT",
+      "source": "In the analyses based on data from the genetic consortia, we found no causal associations of genetically predicted testosterone with the risk of COVID-19 susceptibility (OR = 0.94; 95% CI: 0.83\u20131.06, p=0.309), hospitalization (OR = 0.82; 95% CI: 0.64\u20131.04, p=0.103), risk of severity (OR = 0.83; 95% CI: 0.60\u20131.15, p=0.256).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statistical result from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "163bbd87-e5ba-49e4-8461-e216aaccd9bb",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C28",
+      "claim": "No causal associations of genetically predicted testosterone with COVID-19 severity (OR = 0.83; 95% CI: 0.60\u20131.15, p=0.256) were found.",
+      "claim_type": "EXPLICIT",
+      "source": "In the analyses based on data from the genetic consortia, we found no causal associations of genetically predicted testosterone with the risk of COVID-19 susceptibility (OR = 0.94; 95% CI: 0.83\u20131.06, p=0.309), hospitalization (OR = 0.82; 95% CI: 0.64\u20131.04, p=0.103), risk of severity (OR = 0.83; 95% CI: 0.60\u20131.15, p=0.256).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statistical result from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "50e4533d-3c25-4a01-a130-729e30e14c59",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C29",
+      "claim": "Null association was noticed between SHBG and COVID-19 susceptibility (OR = 0.91; 95% CI: 0.80\u20131.04, p=0.182).",
+      "claim_type": "EXPLICIT",
+      "source": "Null association was also noticed between SHBG and COVID-19 susceptibility (OR = 0.91; 95% CI: 0.80\u20131.04, p=0.182), hospitalization (OR = 0.86; 95% CI: 0.66\u20131.11, p=0.255), risk of severity (OR = 0.92; 95% CI: 0.65\u20131.29, p=0.618).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statistical result from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "c094225e-e102-480f-9f5e-4cfcb53f2eed",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C30",
+      "claim": "Null association was noticed between SHBG and COVID-19 hospitalization (OR = 0.86; 95% CI: 0.66\u20131.11, p=0.255).",
+      "claim_type": "EXPLICIT",
+      "source": "Null association was also noticed between SHBG and COVID-19 susceptibility (OR = 0.91; 95% CI: 0.80\u20131.04, p=0.182), hospitalization (OR = 0.86; 95% CI: 0.66\u20131.11, p=0.255), risk of severity (OR = 0.92; 95% CI: 0.65\u20131.29, p=0.618).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statistical result from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "7a61f171-3239-4cea-bf43-a04d1109dcb8",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C31",
+      "claim": "Null association was noticed between SHBG and COVID-19 severity (OR = 0.92; 95% CI: 0.65\u20131.29, p=0.618).",
+      "claim_type": "EXPLICIT",
+      "source": "Null association was also noticed between SHBG and COVID-19 susceptibility (OR = 0.91; 95% CI: 0.80\u20131.04, p=0.182), hospitalization (OR = 0.86; 95% CI: 0.66\u20131.11, p=0.255), risk of severity (OR = 0.92; 95% CI: 0.65\u20131.29, p=0.618).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statistical result from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "73e8f3f2-8673-402d-adbf-743e75714c2e",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C32",
+      "claim": "Sex-specific associations of genetically testosterone and estradiol levels with COVID-19 risk were nonsignificant.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex-specific associations of genetically testosterone and estradiol levels with COVID-19 risk (Table 4) were still nonsignificant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the sex-stratified analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "7673ca38-f365-4db2-8ab5-0a2bd2a14456",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C33",
+      "claim": "Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with the risk of COVID-19 susceptibility (OR = 0.32; 95% CI, 0.06\u20131.80, p = 0.195) in females.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with the risk of COVID-19 susceptibility (OR = 0.32; 95% CI, 0.06\u20131.80, p = 0.195), hospitalization (OR = 0.28; 95% CI: 0.01\u20136.46, p=0.426), and severity (OR = 0.22; 95% CI: 0.00\u201312.73, p=0.469) in females",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis using a specific SNP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "bf2cef16-19a2-4bbb-b12d-6fc0aa67267a",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C34",
+      "claim": "Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with the risk of COVID-19 hospitalization (OR = 0.28; 95% CI: 0.01\u20136.46, p=0.426) in females.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with the risk of COVID-19 susceptibility (OR = 0.32; 95% CI, 0.06\u20131.80, p = 0.195), hospitalization (OR = 0.28; 95% CI: 0.01\u20136.46, p=0.426), and severity (OR = 0.22; 95% CI: 0.00\u201312.73, p=0.469) in females",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis using a specific SNP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "2de10d0b-9cdf-415c-8d43-87eec7b3f23e",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C35",
+      "claim": "Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with the risk of COVID-19 severity (OR = 0.22; 95% CI: 0.00\u201312.73, p=0.469) in females.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with the risk of COVID-19 susceptibility (OR = 0.32; 95% CI, 0.06\u20131.80, p = 0.195), hospitalization (OR = 0.28; 95% CI: 0.01\u20136.46, p=0.426), and severity (OR = 0.22; 95% CI: 0.00\u201312.73, p=0.469) in females",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis using a specific SNP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "02897994-1289-48a7-b06a-5db8b8f2aa88",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C36",
+      "claim": "Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with COVID-19 susceptibility (OR = 0.37; 95% CI, 0.08\u20131.67, p = 0.195) in males.",
+      "claim_type": "EXPLICIT",
+      "source": "similarly, the associations remained directionally consistent in males with susceptibility (OR = 0.37; 95% CI, 0.08\u20131.67, p = 0.195), hospitalization (OR = 0.33; 95% CI: 0.02\u20135.11, p=0.426), and severity (OR = 0.27; 95% CI: 0.01\u20139.26, p=0.469) (Table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis using a specific SNP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "3e00a696-ece9-4936-b914-d496a59de4df",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C37",
+      "claim": "Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with COVID-19 hospitalization (OR = 0.33; 95% CI: 0.02\u20135.11, p=0.426) in males.",
+      "claim_type": "EXPLICIT",
+      "source": "similarly, the associations remained directionally consistent in males with susceptibility (OR = 0.37; 95% CI, 0.08\u20131.67, p = 0.195), hospitalization (OR = 0.33; 95% CI: 0.02\u20135.11, p=0.426), and severity (OR = 0.27; 95% CI: 0.01\u20139.26, p=0.469) (Table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis using a specific SNP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "9647f3e4-a4df-4d9e-9d30-b11c4032e64f",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C38",
+      "claim": "Genetic predisposition to higher serum E2 levels proxied by rs7173595 in the CYP19A1 gene was not associated with COVID-19 severity (OR = 0.27; 95% CI: 0.01\u20139.26, p=0.469) in males.",
+      "claim_type": "EXPLICIT",
+      "source": "similarly, the associations remained directionally consistent in males with susceptibility (OR = 0.37; 95% CI, 0.08\u20131.67, p = 0.195), hospitalization (OR = 0.33; 95% CI: 0.02\u20135.11, p=0.426), and severity (OR = 0.27; 95% CI: 0.01\u20139.26, p=0.469) (Table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis using a specific SNP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "3c3c67c5-0831-4dc6-87c7-25a4f7a2318c",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C39",
+      "claim": "After removing SNPs associated with BMI, similar associations of genetically predicted IGF-1 levels with the risk of COVID-19 susceptibility (OR = 0.76; 95% CI: 0.60\u20130.96, p=0.021) were found.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 6, after removing SNPs associated with BMI, we found similar associations of genetically predicted IGF-1 levels with the risk of COVID-19 susceptibility (OR = 0.76; 95% CI: 0.60\u20130.96, p=0.021), hospitalization (OR = 0.61; 95% CI: 0.41\u20130.90, p=0.014), risk of severity (OR = 0.84; 95% CI: 0.52\u20131.38, p=0.497)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis adjusting for BMI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "cd6c489b-0b40-4a67-81ad-134f4b4c71e2",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C40",
+      "claim": "After removing SNPs associated with BMI, similar associations of genetically predicted IGF-1 levels with COVID-19 hospitalization (OR = 0.61; 95% CI: 0.41\u20130.90, p=0.014) were found.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 6, after removing SNPs associated with BMI, we found similar associations of genetically predicted IGF-1 levels with the risk of COVID-19 susceptibility (OR = 0.76; 95% CI: 0.60\u20130.96, p=0.021), hospitalization (OR = 0.61; 95% CI: 0.41\u20130.90, p=0.014), risk of severity (OR = 0.84; 95% CI: 0.52\u20131.38, p=0.497)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis adjusting for BMI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "1dcbd107-3aa9-4b76-9671-0be262a7ad4d",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C41",
+      "claim": "After removing SNPs associated with BMI, similar associations of genetically predicted IGF-1 levels with COVID-19 severity (OR = 0.84; 95% CI: 0.52\u20131.38, p=0.497) were found.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 6, after removing SNPs associated with BMI, we found similar associations of genetically predicted IGF-1 levels with the risk of COVID-19 susceptibility (OR = 0.76; 95% CI: 0.60\u20130.96, p=0.021), hospitalization (OR = 0.61; 95% CI: 0.41\u20130.90, p=0.014), risk of severity (OR = 0.84; 95% CI: 0.52\u20131.38, p=0.497)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a sensitivity analysis adjusting for BMI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "56f2cef6-f85d-428f-b7d5-8a8750258054",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C42",
+      "claim": "The MR findings were consistent with multiple epidemiological studies that reported a nominal association between measured IGF-1 levels and COVID-19 illness.",
+      "claim_type": "EXPLICIT",
+      "source": "Our MR findings were consistent with the multiple epidemiological studies that reported a nominal association between measured IGF-1 levels and COVID-19 illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current study's findings with existing literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "37a5a87b-b22b-424b-af08-a8c0c12ef7bd",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C43",
+      "claim": "One observational study demonstrated an inverse association between pre-diagnostic circulating levels of IGF-1 and COVID-19 mortality risk among COVID-19 patients in UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "There is one observational study that demonstrated an inverse association between pre-diagnostic circulating levels of IGF-1 and COVID-19 mortality risk among COVID-19 patients in UK Biobank (Fan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fan et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "92662630-19a4-41d6-b6fe-4bd422a56d58",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C44",
+      "claim": "An observational study in Greece reported lower IGF-1 levels in critically ill COVID-19 patients compared to their counterparts with less severe disease or without COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Another observational study in Greece reported lower IGF-1 levels in critically ill COVID-19 patients compared to their counterparts with less severe disease or without COVID-19 (Ilias et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ilias et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "b04f598d-2f30-48a0-91b3-43d8d32869d2",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C45",
+      "claim": "A single-cell analysis revealed that the exhaustion of CD8+ T cells together with several cytokines including IGF-1 was associated with the pathogenesis of severe SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "A single-cell analysis revealed that the exhaustion of CD8+ T cells together with several cytokines including IGF-1 was associated with the pathogenesis of severe SARS-CoV-2 infection (He et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to He et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "cf36034d-6ec9-4535-a327-2f782870bbaa",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C46",
+      "claim": "IGF-1 may be a protective factor of COVID-19 risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Our MR analyses found a negative association between genetically determined high circulating IGF-1 levels and decreased risk of COVID-19 susceptibility and hospitalization, indicating IGF-1 may be a protective factor of COVID-19 risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the MR analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "ac65118a-a8fc-4678-ba67-fdcaba9d495b",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C47",
+      "claim": "IGF-1 has been found to be pro-survival/anti-aging, anti-inflammatory, and antioxidant with neuro- and hepatoprotective properties.",
+      "claim_type": "EXPLICIT",
+      "source": "IGF-1 has been found to be pro-survival/anti-aging, anti-inflammatory, and antioxidant with neuro- and hepatoprotective properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about IGF-1 properties based on existing knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "74835b01-3b22-4087-baca-3e156cfaf86b",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C48",
+      "claim": "A study by the Narasaraju group demonstrated that IGF-1 plays an important role in the repair of lung tissue by regulating the proliferation and differentiation of alveolar epithelial cells (AECs).",
+      "claim_type": "EXPLICIT",
+      "source": "A study by the Narasaraju group demonstrated that IGF-1 plays an important role in the repair of lung tissue by regulating the proliferation and differentiation of alveolar epithelial cells (AECs) (Narasaraju et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Narasaraju et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "ea08ccbf-e77c-4c41-b77c-39066f4867f8",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C49",
+      "claim": "Airway inflammation can be mitigated when apoptotic cells are engulfed by pulmonary epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Airway inflammation can be mitigated when apoptotic cells are engulfed by pulmonary epithelial cells (Juncadella et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Juncadella et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "7e21be88-2a9d-4143-9104-73130526a391",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C50",
+      "claim": "IGF-1 has been shown to upregulate engulfment by professional phagocytes such as dendritic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "IGF-1 has also been shown to upregulate engulfment by professional phagocytes such as dendritic cells (Xuan et al., 2017), and inhibit IL-6 production from lipopolysaccharide-induced AECs (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Xuan et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "77b7bbe3-a318-49e4-9caa-739037fc6295",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C51",
+      "claim": "IGF-1 inhibits IL-6 production from lipopolysaccharide-induced AECs.",
+      "claim_type": "EXPLICIT",
+      "source": "IGF-1 has also been shown to upregulate engulfment by professional phagocytes such as dendritic cells (Xuan et al., 2017), and inhibit IL-6 production from lipopolysaccharide-induced AECs (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "4cda707a-e62d-404a-98c5-790d79a51e54",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C52",
+      "claim": "IGF-1 binds to IGF-1 receptor (IGF-1R) on airway epithelial cells of non-professional phagocytic cells, which can promote the phagocytosis of microparticles by airway epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Jakn et al. showed that IGF-1 binds to IGF-1 receptor (IGF-1R) on airway epithelial cells of non-professional phagocytic cells, which can promote the phagocytosis of microparticles by airway epithelial cells (Han et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Han et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "ad14d26e-14fb-40ab-a5ac-bfb014d4ca9b",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C53",
+      "claim": "Transforming growth factor \u03b21 derived from AECs activated alveolar macrophages (AMs) to secrete IGF-1 into the alveolar fluid in response to stimulation of the airway by inflammatory signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Transforming growth factor \u03b21 derived from AECs activated alveolar macrophages (AMs) to secrete IGF-1 into the alveolar fluid in response to stimulation of the airway by inflammatory signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a biological mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "d7ed83b0-998d-48c8-9723-24ee32d36e19",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C54",
+      "claim": "AM-derived IGF-1 attenuated the p38 mitogen-activated protein kinase inflammatory signal in AECs and promoted the phagocytosis of apoptotic cells by AECs.",
+      "claim_type": "EXPLICIT",
+      "source": "This AM-derived IGF-1 attenuated the p38 mitogen-activated protein kinase inflammatory signal in AECs and promoted the phagocytosis of apoptotic cells by AECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a biological mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "558a1e62-9c03-4964-b265-f97f249a131f",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C55",
+      "claim": "The two-way communication between AECs and AMs represents a well-tuned system for the regulation of the inflammatory response in alveoli.",
+      "claim_type": "EXPLICIT",
+      "source": "This two-way communication between AECs and AMs represents a well-tuned system for the regulation of the inflammatory response in alveoli (Mu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "c691f772-3df3-4dec-b559-2666321b3ea6",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C56",
+      "claim": "IGF-1 might be an important anti-inflammatory factor in the alveolar microenvironment and thus may contribute to improve COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these studies provide biological evidence supporting that IGF-1 might be an important anti-inflammatory factor in the alveolar microenvironment and thus may contribute to improve COVID-19 outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited studies and the current study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "fd880345-73ce-4f44-8e9d-fffb428efe79",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C57",
+      "claim": "IGF-1 level is regulated by estrogen and the functional interactions between estradiol and IGF-1 signaling system involve several transcriptional and posttranscriptional mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "IGF-1 level is regulated by estrogen and the functional interactions between estradiol and IGF-1 signaling system involve several transcriptional and posttranscriptional mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about biological mechanisms based on existing knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "355ee037-4868-434e-b3af-13d77b141a11",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C58",
+      "claim": "IGF-1 can affect estrogen receptor \u03b1 action by enhancing its expression and potentiating its transcriptional activity in a ligand-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, IGF-1 can affect estrogen receptor \u03b1 action by enhancing its expression and potentiating its transcriptional activity in a ligand-independent manner (Lange, 2004; Edwards et al., 1993; Shupnik, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lange, 2004; Edwards et al., 1993; Shupnik, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "d160e9cd-eac2-47e8-ab35-0745a31f03ed",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C59",
+      "claim": "E2 can enhance IGF-1 signaling by upregulating the expression of IGF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, E2 can enhance IGF-1 signaling by upregulating the expression of IGF-1 (Umayahara et al., 1994), IGF-1R (Bartucci et al., 2001), and some IGF-1-binding proteins (Qin et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Umayahara et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "c298573e-b15a-4cb2-8cf1-a027d0d895dc",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C60",
+      "claim": "E2 can enhance IGF-1 signaling by upregulating the expression of IGF-1R.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, E2 can enhance IGF-1 signaling by upregulating the expression of IGF-1 (Umayahara et al., 1994), IGF-1R (Bartucci et al., 2001), and some IGF-1-binding proteins (Qin et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bartucci et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "91532117-a529-454c-8d62-8d7f09baebb0",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C61",
+      "claim": "E2 can enhance IGF-1 signaling by upregulating the expression of some IGF-1-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, E2 can enhance IGF-1 signaling by upregulating the expression of IGF-1 (Umayahara et al., 1994), IGF-1R (Bartucci et al., 2001), and some IGF-1-binding proteins (Qin et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Qin et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "43b54924-872f-48c1-b5a9-76af7092e954",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C62",
+      "claim": "The interaction between estrogen and IGF-1 may explain the same direction from the IVW analysis of IGF-1, estradiol, and COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain the same direction from the IVW analysis of IGF-1, estradiol, and COVID-19 outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biological mechanisms and the study results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "a2488ab4-2fbe-4799-8ca6-14d3b05210eb",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C63",
+      "claim": "Estrogen is found to have immune enhancing effect to trigger the local immune response by activating a plethora of cells such as phagocytes, dendritic cells, natural killers, and CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Estrogen is found to have immune enhancing effect (Taneja, 2018) to trigger the local immune response by activating a plethora of cells such as phagocytes, dendritic cells, natural killers, and CD8+ T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Taneja, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "0682ce78-0889-4d4b-9606-b630f66e0179",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C64",
+      "claim": "Experimental tests have reported that estradiol can affect angiotensin-converting enzyme 2 and FURIN expression, with the potential of mitigating SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental tests have also reported that estradiol can affect angiotensin-converting enzyme 2 and FURIN expression, with the potential of mitigating SARS-CoV-2 infection (Glinsky, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Glinsky, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "f09b7dbc-3368-4ecf-b658-350bb12695f5",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C65",
+      "claim": "The study did not find any supportive evidence for the associations between estradiol and COVID-19, which might be due to the small variance of estradiol explained by genetic instruments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our study did not find any supportive evidence for the associations between estradiol and COVID-19, which might be due to the small variance of estradiol explained by genetic instruments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the null findings with a proposed explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "cd205812-a8d5-41c1-a16e-eb6e7d92e539",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C66",
+      "claim": "The findings that SHBG or testosterone may not be associated with COVID-19 outcomes are consistent with the research findings of Liu et al., 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies showed that SHBG or testosterone may not be associated with COVID-19 outcomes, which is consistent with the research findings of Liu et al., 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with another study's findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "db95b912-8cbd-4880-a640-a6f4460c18ac",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C67",
+      "claim": "Liu et al., 2022 observed a null causal relationship for testosterone or SHBG levels with COVID-19 outcomes in females and males.",
+      "claim_type": "EXPLICIT",
+      "source": "They also observed a null causal relationship for testosterone or SHBG levels with COVID-19 outcomes in females and males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of findings from Liu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "c2a7d440-4ca8-42fb-a121-5e845d9ad470",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C68",
+      "claim": "Epidemiologic data indicate that while men are not more predisposed to contracting COVID-19, they are more likely to develop severe illness following the infection compared with women.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, epidemiologic data (Peckham et al., 2020) indicate that while men are not more predisposed to contracting COVID-19, they are more likely to develop severe illness following the infection compared with women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Peckham et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "87ae5077-c805-4c29-bc7e-7d738cf12c63",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C69",
+      "claim": "According to the available evidence on the role of testosterone in COVID-19, it appears that both high and low testosterone levels can be associated with poor COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the available evidence on the role of testosterone in COVID-19, it appears that both high and low testosterone levels can be associated with poor COVID-19 outcomes (Ho et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ho et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "9cd6144a-fac2-435d-aa56-96d32d59258c",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C70",
+      "claim": "A study demonstrated androgen deprivation therapy (ADT) exposure was associated with a reduction in COVID-19 severity.",
+      "claim_type": "EXPLICIT",
+      "source": "A study demonstrated androgen deprivation therapy (ADT) exposure was associated with a reduction in COVID-19 severity (Lee et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lee et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "c200c148-33d2-45bb-8d65-baab19e1d3d3",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C71",
+      "claim": "The Ohio study did not identify any protective effect of ADT on the severity of COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the Ohio study did not identify any protective effect of ADT on the severity of COVID-19 outcomes (Klein et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Klein et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "fc2b848f-75f7-40a5-a1b5-179692a42ec6",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C72",
+      "claim": "Androgen-related treatments showed that transmembrane serine protease 2 (TMPRSS2) expression and SARS-CoV-2 entry in human lung cells have been reduced by antiandrogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Androgen-related treatments showed that transmembrane serine protease 2 (TMPRSS2) expression and SARS-CoV-2 entry in human lung cells have been reduced by antiandrogens (Leach et al., 2021; Deng et al., 2021; Qiao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Leach et al., 2021; Deng et al., 2021; Qiao et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "6b3106dc-7720-4961-8c1f-e02f846d9585",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C73",
+      "claim": "Androgens have numerous immunosuppressive effects such as decreasing proinflammatory cytokine release (e.g., IFN\u03b3 and TNF) or increasing anti-inflammatory cytokine release (e.g., IL-4 and IL-10), reducing T helper 1 (Th1) and T helper 17 (Th17) cell differentiation, inducing Treg differentiation and regulating B-cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, androgens have numerous immunosuppressive effects such as decreasing proinflammatory cytokine release (e.g., IFN\u03b3 and TNF) or increasing anti-inflammatory cytokine release (e.g., IL-4 and IL-10), reducing T helper 1 (Th1) and T helper 17 (Th17) cell differentiation, inducing Treg differentiation and regulating B-cell development (Olsen and Kovacs, 2011; Henze et al., 2020; Trigunaite et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Olsen and Kovacs, 2011; Henze et al., 2020; Trigunaite et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "54578f88-2af2-4c30-86de-d432f8e54602",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C74",
+      "claim": "The immunosuppressive effects of testosterone might be beneficial to overcome the heightened inflammatory environment that predisposes to severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, these immunosuppressive effects of testosterone might be beneficial to overcome the heightened inflammatory environment that predisposes to severe COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the biological mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "b3a4f24d-384f-4ee0-ab2e-8e463708a63b",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C75",
+      "claim": "Recent research has revealed that males with COVID-19 have lower testosterone levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research has revealed that males with COVID-19 have lower testosterone levels (Ma et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ma et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "1306bb12-ffa4-4d9e-8dd8-3102bfb8e64d",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C76",
+      "claim": "Another study found a negative association between total testosterone levels and biochemical markers of COVID-19 severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study found a negative association between total testosterone levels and biochemical markers of COVID-19 severity (Rastrelli et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rastrelli et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "2de2d999-4156-4bf3-ba67-5e3060c71ed0",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C77",
+      "claim": "Lower testosterone concentrations were associated with higher concentrations of IL-6, CRP, IL-1 receptor antagonist, hepatocyte growth factor, and IFN\u03b3-inducible protein 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower testosterone concentrations were associated with higher concentrations of IL-6, CRP, IL-1 receptor antagonist, hepatocyte growth factor, and IFN\u03b3-inducible protein 10 (Dhindsa et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dhindsa et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "0c87ebb5-5cb2-4879-a0ea-bf4b2754f322",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C78",
+      "claim": "The application of MR analysis reduces the influence of confounding factors and reverse causality so that reliable causal estimations were obtained to complement the observational findings.",
+      "claim_type": "EXPLICIT",
+      "source": "The application of MR analysis reduces the influence of confounding factors and reverse causality so that reliable causal estimations were obtained to complement the observational findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological advantages of MR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "713688bf-07c3-4153-ab41-49e54520dbcd",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C79",
+      "claim": "The study may suffer from weak instrument bias, especially within sensitivity analyses that restricted to smaller sets of genetic instruments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study may suffer from weak instrument bias, especially within sensitivity analyses that restricted to smaller sets of genetic instruments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a potential limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "05267d48-f26a-4932-8100-760b8c9df7dd",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C80",
+      "claim": "In TSMR, weak instrument bias would tend to make estimates closer to the null.",
+      "claim_type": "EXPLICIT",
+      "source": "In TSMR, this bias would tend to make estimates closer to the null.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the direction of bias in MR studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "681dfbb0-63a2-4194-b9b3-4a697746fbca",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C81",
+      "claim": "The current study did not take recovery as a potential competing risk into account because there is no available data on recovery status for COVID-19 patients in UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there is no available data on recovery status for COVID-19 patients in UK Biobank, the current study did not take recovery as a potential competing risk into account.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation due to data availability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "898e24e1-bb0e-468c-8ea2-70e492a1f24e",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C82",
+      "claim": "The study could not assess the sex-specific associations in IGF-1 and COVID-19 due to no data by sex in HGI.",
+      "claim_type": "EXPLICIT",
+      "source": "We could not assess the sex-specific associations in IGF-1 and COVID-19 due to no data by sex in HGI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation due to data availability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "91febcfc-eb3c-4970-8de9-c63f57e9101a",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C83",
+      "claim": "The MR was based on individuals of European ancestry, and the findings might not be generalized to other populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the MR was merely based on individuals of European ancestry. Our findings might not be generalized to other populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation regarding generalizability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "a0c10948-1aeb-4146-a758-7338cdd536a2",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C84",
+      "claim": "The study findings are based on evidence from genetic data, and additional large and prospective cohort studies with available IGF-1 data and information on COVID-19 susceptibility and clinical outcomes are needed to validate the findings.",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noted that the study findings are based on evidence from genetic data, additional large and prospective cohort studies with available IGF-1 data and information on COVID-19 susceptibility and clinical outcomes are needed to validate the findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "ab6fe75c-8994-4ed7-ae98-082f24efc928",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C85",
+      "claim": "Genetically predicted high IGF-1 levels were associated with decrease the risk of COVID-19 susceptibility and hospitalization, but these associations did not survive the Bonferroni correction of multiple testing.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our study indicated that genetically predicted high IGF-1 levels were associated with decrease the risk of COVID-19 susceptibility and hospitalization, but these associations did not survive the Bonferroni correction of multiple testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "e9e8267a-0ce2-4fdc-adda-60955e89d631",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C86",
+      "claim": "Further studies are needed to validate the findings and explore whether IGF-1 could be a potential intervention target to reduce COVID-19 risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies are needed to validate the findings and explore whether IGF-1 could be a potential intervention target to reduce COVID-19 risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "41cdd00a-f13e-42d0-a18d-4be8acad2bd9",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C87",
+      "claim": "Sex-stratified SNPs for testosterone (130 SNPs in males, 151 SNPs in females) were selected for MR sensitivity analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that genetic variants predicting testosterone and estradiol levels differ for men and women, we selected sex-specific SNPs for testosterone (130 SNPs in males, 151 SNPs in females) and estradiol (10 SNPs in males and females) separately for MR sensitivity analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of sex-specific SNPs used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "64e16814-c2e2-40e4-8182-65bf8d2e03bc",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C88",
+      "claim": "Sex-stratified SNPs for estradiol (10 SNPs in males and females) were selected for MR sensitivity analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that genetic variants predicting testosterone and estradiol levels differ for men and women, we selected sex-specific SNPs for testosterone (130 SNPs in males, 151 SNPs in females) and estradiol (10 SNPs in males and females) separately for MR sensitivity analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of sex-specific SNPs used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "dcec081c-1cbc-4287-8b7a-6445e42b13f5",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C89",
+      "claim": "The SNP rs7173595 in CYP19A1 gene, which encodes aromatase, an enzyme that converts androgens to estrogens, has been shown to be strongly associated with serum E2 levels in GWAS of men.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally used the SNP rs7173595 in CYP19A1 gene, which encodes aromatase, an enzyme that converts androgens to estrogens. Rs7173595 has previously been shown to be strongly associated with serum E2 levels in GWAS of men (Ruth et al., 2020; Eriksson et al., 2018) and postmenopausal women (Thompson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ruth et al., 2020 and Eriksson et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "8e40c5e4-1ec1-42a5-8f66-d06ad5f3cc85",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C90",
+      "claim": "Rs7173595 has been shown to be strongly associated with serum E2 levels in GWAS of postmenopausal women.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally used the SNP rs7173595 in CYP19A1 gene, which encodes aromatase, an enzyme that converts androgens to estrogens. Rs7173595 has previously been shown to be strongly associated with serum E2 levels in GWAS of men (Ruth et al., 2020; Eriksson et al., 2018) and postmenopausal women (Thompson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Thompson et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "283821ea-ea22-46b1-98bd-4c2664adb683",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C91",
+      "claim": "Rs7173595 was associated with serum E2 in 25,502 premenopausal European women (<50 years of age and not reporting a hysterectomy or that menopause has occurred) in UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "This SNP was also associated with serum E2 in 25,502 premenopausal European women (<50 years of age and not reporting a hysterectomy or that menopause has occurred) in UK Biobank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an association found in UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "25dce970-a8d6-445d-ba5f-2c94ac2bd65b",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C92",
+      "claim": "A sensitivity analysis was performed using a list of genetic instruments consisting of 10 correlated SNPs (r2 < 0.4) located in the IGF-1 gene region (genomic position on build GRCh37/hg19: chromosome 12:102789652\u2013102874341) and associated with IGF-1 levels at the genome-wide significance level.",
+      "claim_type": "EXPLICIT",
+      "source": "We further performed a sensitivity analysis using a list of genetic instruments consisting of 10 correlated SNPs (r2 < 0.4) located in the IGF-1 gene region (genomic position on build GRCh37/hg19: chromosome 12:102789652\u2013102874341) and associated with IGF-1 levels at the genome-wide significance level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a sensitivity analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "e7d8b0bc-c845-46c7-ae70-2d73fce7116b",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C93",
+      "claim": "SNPs associated with testosterone, estrogen, SHBG, and IGF-1 were selected, excluding SNPs associated with BMI at the threshold of 5\u00d710\u20138 in European ancestry samples by querying PhenoScanner.",
+      "claim_type": "EXPLICIT",
+      "source": "To control potential data confounder, we selected SNPs associated with testosterone, estrogen, SHBG, and IGF-1 only, excluding SNPs associated with BMI which is thought to be a causal risk factor for COVID-19 (Freuer et al., 2021) at the threshold of 5\u00d710\u20138 in European ancestry samples by querying PhenoScanner (Yavorska and Burgess, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a method to control for confounding by BMI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "ac47a370-a6fe-4880-a76e-c9720d1b99e1",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C94",
+      "claim": "BMI is thought to be a causal risk factor for COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "To control potential data confounder, we selected SNPs associated with testosterone, estrogen, SHBG, and IGF-1 only, excluding SNPs associated with BMI which is thought to be a causal risk factor for COVID-19 (Freuer et al., 2021) at the threshold of 5\u00d710\u20138 in European ancestry samples by querying PhenoScanner (Yavorska and Burgess, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Freuer et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "a87ea609-431b-41ba-ad52-fa1858803f4a",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C95",
+      "claim": "SNPs in estrogen were not excluded because of their irrelevance to BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs in estrogen were not excluded because their irrelevance to BMI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the selection criteria for SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "2bbf24f3-b30c-4fc0-be67-ebbfed150eb1",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C96",
+      "claim": "Associations of IGF-1 levels with COVID-19 susceptibility and hospitalization were not statistically significant after Bonferroni correction, albeit showing a nominal significance at p<0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Associations of IGF-1 levels with COVID-19 susceptibility and hospitalization were not statistically significant after Bonferroni correction, albeit showing a nominal significance at p<0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the statistical significance of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "960b666a-8b27-4a94-8119-ffe06d9b4b16",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C97",
+      "claim": "The weighted median method was performed to provide unbiased causal estimates if at least 50% instrumental variables were valid.",
+      "claim_type": "EXPLICIT",
+      "source": "The weighted median method was performed to provide unbiased causal estimates if at least 50% instrumental variables were valid (Bowden et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by a citation to Bowden et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "1e5ccf92-7d6f-4df0-be90-ac4a0c32dae9",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C98",
+      "claim": "MR-Egger regression was used to observe and correct potential directional pleiotropy, which was assessed by its intercept test.",
+      "claim_type": "EXPLICIT",
+      "source": "MR-Egger regression was used to observe and correct potential directional pleiotropy, which was assessed by its intercept test (Bowden et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by a citation to Bowden et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "4678d237-ae3e-45f7-81cb-2038c0904f7c",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C99",
+      "claim": "MR-PRESSO method can detect SNP outliers and estimate the association after removal of these outliers.",
+      "claim_type": "EXPLICIT",
+      "source": "MR-PRESSO method can detect SNP outliers and estimate the association after removal of these outliers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "52b7dcb2-ad0d-4e2a-b4a9-67410df9a2dd",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C100",
+      "claim": "The differences in estimates between before and after outlier removal were examined by the embedded distortion test in MR-PRESSO.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in estimates between before and after outlier removal were examined by the embedded distortion test (Wu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by a citation to Wu et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "001428ed-185e-4bc6-bd5b-75425e75c789",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C101",
+      "claim": "Cochrane's Q value was used to assess the heterogeneity among estimates of genetic instruments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cochrane's Q value was used to assess the heterogeneity among estimates of genetic instruments and the p value for intercept in MR-Egger was used to detect horizontal pleiotropy (Bowden et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "1b13be6d-90a5-4463-a9fc-20a267b5b1ae",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C102",
+      "claim": "The p value for intercept in MR-Egger was used to detect horizontal pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Cochrane's Q value was used to assess the heterogeneity among estimates of genetic instruments and the p value for intercept in MR-Egger was used to detect horizontal pleiotropy (Bowden et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by a citation to Bowden et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "5f8ba578-8a14-4415-a755-1ab7ca849d47",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C103",
+      "claim": "The study used the STROBE case-control checklist when writing the report.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the STROBE case-control checklist when writing our report (von Elm et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about reporting standards, supported by a citation to von Elm et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "592c3155-936b-4e9f-a395-fe0afc35513a",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C104",
+      "claim": "The COVID-19 HGI GWAS meta-analyses included data across 60 studies from 25 countries (Round 5, European population) where UK Biobank data were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the summary level data of COVID-19 susceptibility, hospitalization, and severity from the COVID-19-HGI GWAS meta-analyses of data across 60 studies from 25 countries (Round 5, European population) where UK Biobank data were excluded (COVID-19 Host Genetics Initiative, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for COVID-19 outcomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "f7a73bf9-d03c-43ff-bd74-e94c8961ace8",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C105",
+      "claim": "The F statistic was calculated to test whether there was a weak instrumental variable bias.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether there was a weak instrumental variable bias, namely genetic variants selected as instrumental variables had a weak association with exposure, we calculated the F statistic if it is much greater than 10 for the instrument-exposure association, the possibility of weak instrumental variable bias is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "6ae2c92e-d2ac-42d7-b5a1-992e6d8769bb",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C106",
+      "claim": "If the F statistic is much greater than 10 for the instrument-exposure association, the possibility of weak instrumental variable bias is small.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether there was a weak instrumental variable bias, namely genetic variants selected as instrumental variables had a weak association with exposure, we calculated the F statistic if it is much greater than 10 for the instrument-exposure association, the possibility of weak instrumental variable bias is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological criterion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "b7e44a3b-e7b8-4b7b-89f5-8ba4b6d1cda1",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C107",
+      "claim": "SNPs were restricted to those in linkage equilibrium which were identified in the relevant GWAS at p<5 \u00d7 10\u22128 clumped on r2=0.01 within 10,000 kb using the 1000 genomes reference panel.",
+      "claim_type": "EXPLICIT",
+      "source": "We restricted the analysis to SNPs in linkage equilibrium which were identified in the relevant GWAS at p<5 \u00d7 10\u22128 clumped on r2=0.01 within 10,000 kb using the 1000 genomes reference panel (Hemani et al., 2018) to ensure sufficient statistical effectiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the SNP selection criteria, supported by a citation to Hemani et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "d811fe21-c51c-4d24-b6dc-896ae3a1a77a",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C108",
+      "claim": "Among those pairs of SNPs that had LD r2 above the specified threshold (r2 = 0.01), only the SNP with the lower p value would be retained.",
+      "claim_type": "EXPLICIT",
+      "source": "Among those pairs of SNPs that had LD r2 above the specified threshold (r2 = 0.01), only the SNP with the lower p value would be retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the SNP selection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "fbd85b46-fad9-40a2-9166-e96cb6980a92",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C109",
+      "claim": "SNPs absent from the LD reference panel were removed.",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs absent from the LD reference panel were also removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the SNP selection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "7a73e1c7-3cc8-416f-9ca9-b9c4652d5447",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C110",
+      "claim": "All statistical analyses were two-sided and performed in R 4.0.4 software using the R package TwoSampleMR and MR-PRESSO.",
+      "claim_type": "EXPLICIT",
+      "source": "All statistical analyses were two-sided and performed in R 4.0.4 software using the R package TwoSampleMR and MR-PRESSO (Yavorska and Burgess, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical software and packages used, supported by a citation to Yavorska and Burgess, 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "790833eb-5f82-4113-9501-b1ef9f5848f1",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C111",
+      "claim": "The associations of serum E2 instrumented by rs7173595 in the CYP19A1 gene region with COVID-19 outcomes were estimated using the Wald ratio method.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations of serum E2 instrumented by rs7173595 in the CYP19A1 gene region with COVID-19 outcomes were estimated using the Wald ratio method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific analytical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "02763ac2-3630-4169-a08e-2d70b1ba8149",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "claim_id": "C112",
+      "claim": "A matrix of linkage disequilibrium among the 10 correlated SNPs in the IGF-1 gene region was introduced in the MR analysis model.",
+      "claim_type": "EXPLICIT",
+      "source": "A matrix of linkage disequilibrium among these SNPs was introduced in the MR analysis model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach for handling correlated SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "78ce1c50-5bf5-4204-8b53-66e840670ffc",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Genetically predicted higher IGF-1 levels show nominally significant associations with reduced risk of COVID-19 susceptibility (OR=0.77, 95% CI: 0.61-0.97, p=0.027) and hospitalization (OR=0.62, 95% CI: 0.25-0.51, p=0.018), but not severity (OR=0.85, 95% CI: 0.52-1.38, p=0.513). These associations did not survive Bonferroni correction for multiple testing. Sensitivity analyses including MR-Egger, weighted median, and MR-PRESSO showed directionally consistent results with no evidence of pleiotropy or outliers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the primary IVW analysis shows nominally significant protective associations for IGF-1 with COVID-19 susceptibility and hospitalization (C2-C4), the authors explicitly acknowledge these do not survive multiple testing correction (C96, C85). The confidence interval for hospitalization (C4: 0.25-0.51) appears suspiciously narrow and may contain a typographical error. Sensitivity analyses support directionality (C23-C25) but the lack of statistical significance after correction and potential data quality issues render the causal claim uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "eca1e320-8b75-4c68-91bc-df30912c41a2",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "No causal associations were found between genetically predicted testosterone, estrogen, or SHBG levels and COVID-19 outcomes (susceptibility, hospitalization, or severity) in either overall or sex-stratified analyses. This includes null findings for testosterone in males and females separately, and for estradiol proxied by rs7173595 in the CYP19A1 gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The null findings for testosterone, estrogen, and SHBG are consistently reported across multiple analyses (C6, C26-C31) with appropriate statistical tests showing non-significant p-values. Sex-stratified analyses (C32-C38) and sensitivity analyses using specific genetic variants also show null results. The consistency across methods and the appropriate acknowledgment of null findings support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study employed a two-sample Mendelian randomization design using genetic instruments from large GWAS (up to 425,097 participants) for sex hormones and IGF-1, and COVID-19 outcome data from the Host Genetics Initiative (1.3-1.6 million participants across three outcomes). A total of 320, 316, 7, and 18 SNPs were used as instruments for SHBG, testosterone, estradiol, and IGF-1 respectively, with sex-stratified analyses using 130-151 SNPs for testosterone and 10 SNPs for estradiol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological approach is clearly described with appropriate sample sizes (C14-C18), proper SNP selection criteria (C107-C109), and standard MR methods (C13, C20-C21). The use of established GWAS data sources and the COVID-19 HGI consortium data (C104) provides adequate statistical power. The description of instrumental variables and their selection is transparent and follows established MR guidelines.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "db04c061-3a9e-467b-bbb4-8f59db8163d4",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The MR findings showing protective associations between IGF-1 and COVID-19 are consistent with prior observational studies, including inverse associations with COVID-19 mortality in UK Biobank, lower IGF-1 in critically ill patients in Greece, and single-cell analyses linking IGF-1 to CD8+ T cell exhaustion in severe SARS-CoV-2 infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately contextualize their findings within existing literature (C42-C45), citing specific observational studies that support the direction of their MR results. The interpretation that IGF-1 may be protective (C46) is reasonable given the convergence of evidence, though the authors appropriately note the nominal significance and need for validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "780bd177-e200-48b9-addd-cbc929fee568",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IGF-1 has established anti-inflammatory and tissue repair properties relevant to COVID-19, including roles in alveolar epithelial cell repair, promotion of phagocytosis by airway epithelial cells and dendritic cells, inhibition of IL-6 production, and regulation of inflammatory responses through AEC-AM communication. These mechanisms suggest IGF-1 may be an important anti-inflammatory factor in the alveolar microenvironment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The biological mechanisms are well-supported by appropriate citations to prior literature (C47-C55). The synthesis of these mechanisms into a coherent explanation for potential IGF-1 effects on COVID-19 outcomes (C56) is reasonable, though appropriately presented as speculative. The mechanistic plausibility strengthens the interpretation of the MR findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IGF-1 and estrogen signaling systems interact through multiple transcriptional and post-transcriptional mechanisms, with IGF-1 enhancing estrogen receptor \u03b1 activity and estrogen upregulating IGF-1, IGF-1R, and IGF-1-binding proteins. Despite these interactions and estrogen's immune-enhancing effects, no supportive evidence was found for associations between estradiol and COVID-19, possibly due to small variance explained by genetic instruments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The biological interactions between estrogen and IGF-1 are well-documented with appropriate citations (C57-C61, C63-C64). The interpretation of null findings for estradiol (C65) is reasonable and appropriately cautious, acknowledging the limitation of weak genetic instruments. The discussion appropriately distinguishes between established biological mechanisms and the null epidemiological findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "b6de0f71-a778-4d1f-88fa-32d08721273a",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The null findings for testosterone are consistent with prior MR studies (Liu et al., 2022) and align with complex, potentially contradictory evidence from observational and intervention studies. Both high and low testosterone levels have been associated with poor COVID-19 outcomes, with conflicting evidence from androgen deprivation therapy studies and complex immunosuppressive effects that could be either harmful or beneficial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The discussion appropriately acknowledges the complexity and contradictions in the testosterone-COVID-19 literature (C68-C77), citing both supporting and conflicting studies. The consistency with prior MR work (C66-C67) strengthens confidence in the null findings. The authors appropriately avoid over-interpreting their null results given the biological complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "1a7bf7ee-75c7-4dfc-803b-926b61424a17",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study has several acknowledged limitations: potential weak instrument bias (especially in sensitivity analyses with fewer SNPs), inability to account for recovery as a competing risk, inability to perform sex-stratified analyses for IGF-1, restriction to European ancestry populations limiting generalizability, and reliance on genetic data requiring validation in prospective cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors provide a comprehensive and honest assessment of study limitations (C79-C84). The acknowledgment of weak instrument bias (C79-C80), missing data issues (C81-C82), and generalizability concerns (C83) demonstrates appropriate scientific rigor. The call for validation studies (C84) is appropriate given the nominal significance of findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "87993a16-09c3-4a71-8f3e-41e128054ba2",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple sensitivity analyses were performed including: use of rs7173595 in CYP19A1 as an estradiol instrument (validated in men, postmenopausal women, and premenopausal women in UK Biobank), analysis using 10 correlated SNPs in the IGF-1 gene region with LD matrix adjustment, and exclusion of SNPs associated with BMI (a known COVID-19 risk factor) while retaining estrogen SNPs due to their independence from BMI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sensitivity analyses are well-designed and appropriately described (C89-C93, C111-C112). The use of a well-validated estradiol SNP (C89-C91) and gene-region specific analysis for IGF-1 (C92) provide additional robustness checks. The BMI adjustment strategy (C93-C95) appropriately addresses potential confounding while acknowledging differential treatment of exposures based on their relationship with BMI.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "a5acea63-b732-4a6b-a5da-2fd62e0ce152",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study employed standard MR sensitivity methods including weighted median (valid if \u226550% instruments are valid), MR-Egger regression (to detect and correct directional pleiotropy via intercept test), MR-PRESSO (to detect outliers with distortion test), Cochrane's Q (for heterogeneity), and F-statistics (>10 indicates low weak instrument bias).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological approaches are standard and well-established in the MR literature, with appropriate citations (C97-C102). The description of statistical tests and their interpretation criteria (C105-C106) follows accepted guidelines. These methods provide appropriate checks for MR assumptions and potential violations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    },
+    {
+      "id": "3c4aadec-7f20-43d5-b56b-a9149461c84c",
+      "content_id": "6f14ea1f-2191-429c-92cf-4633904a0aa0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Epidemiological studies have documented gender differences in COVID-19 outcomes, with males accounting for >60% of deaths despite similar infection rates. Sex hormones play important roles in immune response, with estrogen being immune-boosting and testosterone potentially immunosuppressive. Testosterone may promote SARS-CoV-2 infection through regulation of TMPRSS2, while estrogen enhances immune markers and T-cell proliferation. SHBG regulates bioactivity of sex hormones, and sex hormone signaling can regulate IGF-1 concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The background claims are well-supported by appropriate citations to prior literature (C7-C12). The epidemiological observations (C1, C7) and biological mechanisms (C8-C12) provide appropriate context for the study rationale. These are established findings in the literature rather than novel claims from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:14.688048Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "350e327b-651b-4d27-9e5c-7ff75eda5664",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "a4cf9d92-0e3e-4ca8-bff9-0093ded88619",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "50244fa8-46e8-4f64-9fc8-4de475c0856d",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "3e488fe8-290f-4a83-8317-430420a730c4",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "b8052d6b-f9ce-4576-9802-931c8343cd85",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "561cf786-ccc5-4dd1-9aa1-842821156a7c",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "14cd7d54-ee52-4f5d-8285-055f6ac4a533",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "a2df9e07-87b8-4978-8961-b5f32c270271",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "3c3c67c5-0831-4dc6-87c7-25a4f7a2318c",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "cd6c489b-0b40-4a67-81ad-134f4b4c71e2",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "1dcbd107-3aa9-4b76-9671-0be262a7ad4d",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "2bbf24f3-b30c-4fc0-be67-ebbfed150eb1",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "ab6fe75c-8994-4ed7-ae98-082f24efc928",
+      "result_id": "78ce1c50-5bf5-4204-8b53-66e840670ffc"
+    },
+    {
+      "claim_id": "31c3f25c-46e1-4864-8f36-aa4ca8c27640",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "f2270fdc-e247-4bcc-957c-d99e55273f36",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "46cf5161-b51d-4a8c-a23a-2a76f0765e6a",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "163bbd87-e5ba-49e4-8461-e216aaccd9bb",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "50e4533d-3c25-4a01-a130-729e30e14c59",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "c094225e-e102-480f-9f5e-4cfcb53f2eed",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "7a61f171-3239-4cea-bf43-a04d1109dcb8",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "73e8f3f2-8673-402d-adbf-743e75714c2e",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "7673ca38-f365-4db2-8ab5-0a2bd2a14456",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "bf2cef16-19a2-4bbb-b12d-6fc0aa67267a",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "2de10d0b-9cdf-415c-8d43-87eec7b3f23e",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "02897994-1289-48a7-b06a-5db8b8f2aa88",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "3e00a696-ece9-4936-b914-d496a59de4df",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "9647f3e4-a4df-4d9e-9d30-b11c4032e64f",
+      "result_id": "eca1e320-8b75-4c68-91bc-df30912c41a2"
+    },
+    {
+      "claim_id": "cb5ce1d3-2b68-47c7-aad5-ef18feb87f22",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "d991058f-9af7-47d0-ae62-1e2d0f8d5857",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "148a592d-2628-4b81-92eb-bd4ac629aaf3",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "a56c5333-05e1-4f8b-9d80-6bf0753461f3",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "1c8d1eba-0883-4648-964e-87665bd735d8",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "7dac8972-c89d-4cf0-8a03-281840d752fd",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "6167a8cf-c0d6-4d30-b3f2-da62b8b081d3",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "26345b0a-1f55-473e-88f3-0879e1c758a6",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "d47e2025-9d18-4ac1-875e-6492a6618d7e",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "41cdd00a-f13e-42d0-a18d-4be8acad2bd9",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "64e16814-c2e2-40e4-8182-65bf8d2e03bc",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "592c3155-936b-4e9f-a395-fe0afc35513a",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "b7e44a3b-e7b8-4b7b-89f5-8ba4b6d1cda1",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "d811fe21-c51c-4d24-b6dc-896ae3a1a77a",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "fbd85b46-fad9-40a2-9166-e96cb6980a92",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "7a73e1c7-3cc8-416f-9ca9-b9c4652d5447",
+      "result_id": "81d87fd8-ff6c-46e5-b762-c7ca7010f0de"
+    },
+    {
+      "claim_id": "56f2cef6-f85d-428f-b7d5-8a8750258054",
+      "result_id": "db04c061-3a9e-467b-bbb4-8f59db8163d4"
+    },
+    {
+      "claim_id": "37a5a87b-b22b-424b-af08-a8c0c12ef7bd",
+      "result_id": "db04c061-3a9e-467b-bbb4-8f59db8163d4"
+    },
+    {
+      "claim_id": "92662630-19a4-41d6-b6fe-4bd422a56d58",
+      "result_id": "db04c061-3a9e-467b-bbb4-8f59db8163d4"
+    },
+    {
+      "claim_id": "b04f598d-2f30-48a0-91b3-43d8d32869d2",
+      "result_id": "db04c061-3a9e-467b-bbb4-8f59db8163d4"
+    },
+    {
+      "claim_id": "cf36034d-6ec9-4535-a327-2f782870bbaa",
+      "result_id": "db04c061-3a9e-467b-bbb4-8f59db8163d4"
+    },
+    {
+      "claim_id": "ac65118a-a8fc-4678-ba67-fdcaba9d495b",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "74835b01-3b22-4087-baca-3e156cfaf86b",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "ea08ccbf-e77c-4c41-b77c-39066f4867f8",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "7e21be88-2a9d-4143-9104-73130526a391",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "77b7bbe3-a318-49e4-9caa-739037fc6295",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "4cda707a-e62d-404a-98c5-790d79a51e54",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "ad14d26e-14fb-40ab-a5ac-bfb014d4ca9b",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "d7ed83b0-998d-48c8-9723-24ee32d36e19",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "558a1e62-9c03-4964-b265-f97f249a131f",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "c691f772-3df3-4dec-b559-2666321b3ea6",
+      "result_id": "780bd177-e200-48b9-addd-cbc929fee568"
+    },
+    {
+      "claim_id": "fd880345-73ce-4f44-8e9d-fffb428efe79",
+      "result_id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99"
+    },
+    {
+      "claim_id": "355ee037-4868-434e-b3af-13d77b141a11",
+      "result_id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99"
+    },
+    {
+      "claim_id": "d160e9cd-eac2-47e8-ab35-0745a31f03ed",
+      "result_id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99"
+    },
+    {
+      "claim_id": "c298573e-b15a-4cb2-8cf1-a027d0d895dc",
+      "result_id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99"
+    },
+    {
+      "claim_id": "91532117-a529-454c-8d62-8d7f09baebb0",
+      "result_id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99"
+    },
+    {
+      "claim_id": "43b54924-872f-48c1-b5a9-76af7092e954",
+      "result_id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99"
+    },
+    {
+      "claim_id": "a2488ab4-2fbe-4799-8ca6-14d3b05210eb",
+      "result_id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99"
+    },
+    {
+      "claim_id": "0682ce78-0889-4d4b-9606-b630f66e0179",
+      "result_id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99"
+    },
+    {
+      "claim_id": "f09b7dbc-3368-4ecf-b658-350bb12695f5",
+      "result_id": "8cdc1825-dc92-4f0e-bf73-c9ef27141d99"
+    },
+    {
+      "claim_id": "cd205812-a8d5-41c1-a16e-eb6e7d92e539",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "db95b912-8cbd-4880-a640-a6f4460c18ac",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "c2a7d440-4ca8-42fb-a121-5e845d9ad470",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "87ae5077-c805-4c29-bc7e-7d738cf12c63",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "9cd6144a-fac2-435d-aa56-96d32d59258c",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "c200c148-33d2-45bb-8d65-baab19e1d3d3",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "fc2b848f-75f7-40a5-a1b5-179692a42ec6",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "6b3106dc-7720-4961-8c1f-e02f846d9585",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "54578f88-2af2-4c30-86de-d432f8e54602",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "b3a4f24d-384f-4ee0-ab2e-8e463708a63b",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "1306bb12-ffa4-4d9e-8dd8-3102bfb8e64d",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "2de2d999-4156-4bf3-ba67-5e3060c71ed0",
+      "result_id": "b6de0f71-a778-4d1f-88fa-32d08721273a"
+    },
+    {
+      "claim_id": "0c87ebb5-5cb2-4879-a0ea-bf4b2754f322",
+      "result_id": "1a7bf7ee-75c7-4dfc-803b-926b61424a17"
+    },
+    {
+      "claim_id": "713688bf-07c3-4153-ab41-49e54520dbcd",
+      "result_id": "1a7bf7ee-75c7-4dfc-803b-926b61424a17"
+    },
+    {
+      "claim_id": "05267d48-f26a-4932-8100-760b8c9df7dd",
+      "result_id": "1a7bf7ee-75c7-4dfc-803b-926b61424a17"
+    },
+    {
+      "claim_id": "681dfbb0-63a2-4194-b9b3-4a697746fbca",
+      "result_id": "1a7bf7ee-75c7-4dfc-803b-926b61424a17"
+    },
+    {
+      "claim_id": "898e24e1-bb0e-468c-8ea2-70e492a1f24e",
+      "result_id": "1a7bf7ee-75c7-4dfc-803b-926b61424a17"
+    },
+    {
+      "claim_id": "91febcfc-eb3c-4970-8de9-c63f57e9101a",
+      "result_id": "1a7bf7ee-75c7-4dfc-803b-926b61424a17"
+    },
+    {
+      "claim_id": "a0c10948-1aeb-4146-a758-7338cdd536a2",
+      "result_id": "1a7bf7ee-75c7-4dfc-803b-926b61424a17"
+    },
+    {
+      "claim_id": "dcec081c-1cbc-4287-8b7a-6445e42b13f5",
+      "result_id": "87993a16-09c3-4a71-8f3e-41e128054ba2"
+    },
+    {
+      "claim_id": "8e40c5e4-1ec1-42a5-8f66-d06ad5f3cc85",
+      "result_id": "87993a16-09c3-4a71-8f3e-41e128054ba2"
+    },
+    {
+      "claim_id": "283821ea-ea22-46b1-98bd-4c2664adb683",
+      "result_id": "87993a16-09c3-4a71-8f3e-41e128054ba2"
+    },
+    {
+      "claim_id": "25dce970-a8d6-445d-ba5f-2c94ac2bd65b",
+      "result_id": "87993a16-09c3-4a71-8f3e-41e128054ba2"
+    },
+    {
+      "claim_id": "e7d8b0bc-c845-46c7-ae70-2d73fce7116b",
+      "result_id": "87993a16-09c3-4a71-8f3e-41e128054ba2"
+    },
+    {
+      "claim_id": "ac47a370-a6fe-4880-a76e-c9720d1b99e1",
+      "result_id": "87993a16-09c3-4a71-8f3e-41e128054ba2"
+    },
+    {
+      "claim_id": "a87ea609-431b-41ba-ad52-fa1858803f4a",
+      "result_id": "87993a16-09c3-4a71-8f3e-41e128054ba2"
+    },
+    {
+      "claim_id": "790833eb-5f82-4113-9501-b1ef9f5848f1",
+      "result_id": "87993a16-09c3-4a71-8f3e-41e128054ba2"
+    },
+    {
+      "claim_id": "02763ac2-3630-4169-a08e-2d70b1ba8149",
+      "result_id": "87993a16-09c3-4a71-8f3e-41e128054ba2"
+    },
+    {
+      "claim_id": "960b666a-8b27-4a94-8119-ffe06d9b4b16",
+      "result_id": "a5acea63-b732-4a6b-a5da-2fd62e0ce152"
+    },
+    {
+      "claim_id": "1e5ccf92-7d6f-4df0-be90-ac4a0c32dae9",
+      "result_id": "a5acea63-b732-4a6b-a5da-2fd62e0ce152"
+    },
+    {
+      "claim_id": "4678d237-ae3e-45f7-81cb-2038c0904f7c",
+      "result_id": "a5acea63-b732-4a6b-a5da-2fd62e0ce152"
+    },
+    {
+      "claim_id": "52b7dcb2-ad0d-4e2a-b4a9-67410df9a2dd",
+      "result_id": "a5acea63-b732-4a6b-a5da-2fd62e0ce152"
+    },
+    {
+      "claim_id": "001428ed-185e-4bc6-bd5b-75425e75c789",
+      "result_id": "a5acea63-b732-4a6b-a5da-2fd62e0ce152"
+    },
+    {
+      "claim_id": "1b13be6d-90a5-4463-a9fc-20a267b5b1ae",
+      "result_id": "a5acea63-b732-4a6b-a5da-2fd62e0ce152"
+    },
+    {
+      "claim_id": "f7a73bf9-d03c-43ff-bd74-e94c8961ace8",
+      "result_id": "a5acea63-b732-4a6b-a5da-2fd62e0ce152"
+    },
+    {
+      "claim_id": "6ae2c92e-d2ac-42d7-b5a1-992e6d8769bb",
+      "result_id": "a5acea63-b732-4a6b-a5da-2fd62e0ce152"
+    },
+    {
+      "claim_id": "6d65ed2a-1a22-400e-b1f0-c73673ca9bd6",
+      "result_id": "3c4aadec-7f20-43d5-b56b-a9149461c84c"
+    },
+    {
+      "claim_id": "789688d2-7625-4dc9-8e22-87ff02072861",
+      "result_id": "3c4aadec-7f20-43d5-b56b-a9149461c84c"
+    },
+    {
+      "claim_id": "bb944b86-1b80-4db4-a8d3-f01b65b599c9",
+      "result_id": "3c4aadec-7f20-43d5-b56b-a9149461c84c"
+    },
+    {
+      "claim_id": "321f0c01-09e5-49de-9420-f92a4f3857a3",
+      "result_id": "3c4aadec-7f20-43d5-b56b-a9149461c84c"
+    },
+    {
+      "claim_id": "7e9bfd57-b681-41a2-94f5-56c62205171e",
+      "result_id": "3c4aadec-7f20-43d5-b56b-a9149461c84c"
+    },
+    {
+      "claim_id": "2a6db169-c771-4362-8986-b92e8d2e1bb3",
+      "result_id": "3c4aadec-7f20-43d5-b56b-a9149461c84c"
+    },
+    {
+      "claim_id": "76555655-e711-450b-8e71-62d5053d0835",
+      "result_id": "3c4aadec-7f20-43d5-b56b-a9149461c84c"
+    }
+  ],
+  "comparisons": []
+}

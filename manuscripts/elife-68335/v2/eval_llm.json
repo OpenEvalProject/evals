@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C25",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors developed a deep learning multitask network trained on simulated action potential (AP) data from iPSC-CMs and adult-CMs to simultaneously perform classification (drug-free vs. drugged) and translation (iPSC-CM to adult-CM APs). The training dataset consisted of 758 samples including drug-free cells (n=208 each for iPSC-CM and adult-CM) and drugged cells simulated with both simple IKr block (1-50% reduction) and complex Markov models of dofetilide block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C25, C44-C46, C49-C50 collectively describe the network design, training approach, and data generation methodology. The manuscript provides detailed methods for simulation, physiological noise application, and drug modeling. The approach is well-documented with appropriate model citations and clear description of the 758-sample training set composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The multitask network architecture consists of two stacked LSTM layers followed by separate fully connected layers for translation and classification tasks. Data preprocessing included noise filtering and normalization, with a 70:10:20 train/validation/test split. Training used MSE and cross-entropy loss functions, ReLU activation, dropout regularization (0.2 probability), and ADAM optimization, implemented in PyTorch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C108, C110-C112, C115-C117, C119-C122 describe the network architecture and training methodology in detail. The manuscript provides appropriate technical specifications, mathematical formulations (Equations 2-15), and implementation details. The LSTM gate mechanisms are explained with proper citations, and the training procedure is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The multitask network achieved high performance on both tasks: translation with MSE <0.003, R\u00b2 score of 0.99, and <4% error in APD90 prediction; classification with ~90% accuracy (AUROC ~0.91-0.93) for distinguishing drug-free from drugged iPSC-CM APs. Performance was consistent across training and test datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 report quantitative performance metrics supported by Table 1 and Figure 5. The metrics are appropriate for the tasks (MSE, R\u00b2, APD90 error for translation; AUROC, accuracy, precision, recall for classification). Results show good generalization from training to test sets, though the manuscript does not report confidence intervals or statistical significance tests for the performance differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Ablation studies revealed that the 400-500 ms time window of the AP contains the most critical information for both classification and translation tasks. This corresponds to the phase of high membrane resistance where inward and outward currents balance (dI\u21920, dV/dI\u2192\u221e), followed by rapid changes in IKr and other repolarizing currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C66 describe the ablation study findings supported by Figure 6A-E. The manuscript demonstrates that removing data from the 400-500 ms window substantially degrades both AUROC and MSE. The physiological interpretation is supported by prior work (Yang et al., 2015) and current simulations showing membrane resistance dynamics. The connection between network sensitivity and physiological mechanisms is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The network successfully translated experimental iPSC-CM APs to adult-CM APs, with reduced variability in the translated adult APDs consistent with prior observations. Validation using simulated 50% IKr block showed that translated APD90 values from iPSC-CMs fell within the range of experimental adult-CM data from O'Hara et al. (2011).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C67-C71 describe application to experimental data (Figure 7). The network successfully processed experimental iPSC-CM APs and produced adult-CM predictions. The validation against published experimental data (O'Hara et al., 2011) provides external support. However, the experimental validation is limited to a small number of traces, and no quantitative comparison metrics are provided for the experimental translation accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Adding the classification task improved translation performance compared to translation alone, as demonstrated by comparing metrics in Table 1 when the classification task was removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by Table 1, which shows that removing the classification task increases MSE from 0.0029 to 0.0034 and APD90 error from 3.60% to 4.33% on the test dataset. This demonstrates the benefit of multitask learning, though the improvement is modest and no statistical testing is reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C90",
+      "C91"
+    ],
+    "result": "The deep learning approach offers several advantages over prior linear translation methods: it is unbiased (no a priori parameter selection), model-agnostic (can handle any time-series data), accepts system nonlinearity, makes no assumptions about protein expression changes during maturation, and successfully translates both simple pore block and complex state-dependent drug interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30, C73-C78, C90-C91 describe methodological advantages. The unbiased nature is supported by the LSTM architecture learning features automatically. Model-agnostic capability is demonstrated by successful translation of both simple (1-50% IKr block) and complex (Markov model dofetilide) drug effects. However, the claim of handling 'any time-series data' is overstated\u2014the network was only tested on cardiac AP data with specific characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C92"
+    ],
+    "result": "A limitation of the approach is the requirement for multiple high-quality datasets for robust training\u2014the more robust the training set, the higher the task accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C92 acknowledge a key limitation. This is a well-recognized constraint of deep learning approaches and is appropriately stated. The manuscript used 758 training samples, which is substantial for this application, but the limitation is relevant for extending to other cell types or conditions where such data may not be available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C94"
+    ],
+    "result": "The network performed well despite variability in iPSC-CM measurements. Using simulated data for training presented advantages for generating large datasets and may constitute a widely applicable approach for training networks when comparable experimental data is not feasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C82, C94 discuss the use of simulated data for training. While the network did perform well on simulated test data and showed some success on limited experimental data (C80 supported), the broader claims about 'widely applicable approach' (C82, C94) are speculative. The manuscript only demonstrates this for one specific application (iPSC-CM to adult-CM translation), and generalizability to other domains is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C47",
+      "C48",
+      "C72"
+    ],
+    "result": "iPSC-CMs have an immature phenotype resembling fetal cardiomyocytes with marked differences in ionic currents compared to adult-CMs, leading to persistent questions about their utility for predicting adult cardiac responses. These differences necessitate a generalized translation approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C47-C48, C72 describe the motivation for the study based on well-established limitations of iPSC-CMs. These are supported by multiple citations and demonstrated in Figure 1C-D showing substantial differences in ionic current profiles. This provides appropriate context for why translation methods are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior translation approaches by Tveito et al., Gong and Sobie, and Koivum\u00e4ki et al. used linear methods with assumptions including invariant protein function during maturation, simple pore block drug models, a priori parameter identification, and independent consideration of drug-free and drugged conditions. These approaches faced challenges including difficulty minimizing cost functions and potential inability to capture nonlinearities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C24 accurately describe prior work and its limitations based on appropriate citations. The characterization of assumptions and limitations in prior linear translation methods provides proper context for the current work. However, the authors should note that some of these 'limitations' may be appropriate simplifications depending on the application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The 400-500 ms time frame contains critical information for classification because IKr block effects are most important during the high membrane resistance phase. iPSC-CMs show greater APD variability than adult-CMs due to lower conductance during the plateau phase, making them more sensitive to perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C86-C89 provide physiological interpretation of results. The explanation for why the 400-500 ms window is critical is well-reasoned and supported by prior work (Yang et al., 2015). The observation of reduced variability in adult-CMs is supported by both current simulations and prior experimental work (Blinova et al., 2018; Fabbri et al., 2019). The mechanistic explanation based on membrane resistance is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "iPSC-CMs are used to study perturbation effects on cardiac electrophysiology, but wide-ranging behavior occurs even in cells from the same genetic line, making it difficult to determine if perturbations have effects. The classification task addresses this by sorting cells into perturbed and unperturbed categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide rationale for including the classification task. The variability in iPSC-CMs is well-established (C34), and the difficulty in distinguishing perturbation effects from baseline variability is a recognized challenge (C35). The classification task is a reasonable approach to address this issue (C36).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C93",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Future extensions could include testing other perturbations (Na channel blockers, ischemia), developing methods for sparse datasets, distinguishing cells from different culture protocols, translating across species, and predicting impacts of genetic mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C93, C95-C97 are speculative statements about future work. While these are reasonable extensions, they are not demonstrated in the current manuscript. These represent hypotheses about potential applications rather than established results. The speculation is appropriately qualified with language like 'possible,' 'might,' and 'could.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "iPSC-CMs represent a critical advance for studying patient-specific physiology and pharmacology, constitute a powerful tool for preclinical cardiac assessment, can be cultured from patient-specific cells, and are ideal for patient-based medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10 provide general background on iPSC-CMs supported by multiple citations. These are well-established facts in the field and provide appropriate context for the study. The claims accurately represent the current state of knowledge about iPSC-CM applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "LSTM-based networks are capable of learning temporal dependencies, have been widely used for cardiac monitoring, ECG analysis, arrhythmia detection, and predicting drug-induced arrhythmogenicity, and are considered among the best predictive models for real-time data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 provide background on LSTM applications in cardiac research, supported by numerous citations. This establishes the rationale for using LSTM architecture for the current application. The characterization of LSTM capabilities and prior applications is accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Detailed simulation and experimental methods are described, including use of Kernik iPSC-CM and O'Hara-Rudy adult-CM models, pacing protocols, Forward Euler numerical methods, drug block implementations, noise current addition, and patch-clamp recording techniques for experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C107 describe methodological details supported by appropriate citations and clear descriptions. The simulation protocols are well-documented with specific parameters. The experimental methods reference prior detailed protocols (Li et al., 2017). These provide sufficient detail for reproducibility, though some parameters (e.g., random seeds for simulations) are not specified.",
+    "result_type": "MINOR"
+  }
+]

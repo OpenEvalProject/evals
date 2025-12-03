@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C26",
+      "C27",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The study analyzed 227,948 newborns from 54 low- and middle-income countries between 2000 and 2014, using data from 113 Demographic and Health Surveys. The sample included 31,854 low birthweight births and 2,912 very low birthweight births, with a mean birthweight of 3,082 g (SD 724). Newborns were grouped into 109,137 family groups based on maternal identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, C26, C27, C41, C43, C44, C45, and C46 provide consistent descriptive statistics about the study population and data sources. The sample size, geographic distribution, and outcome prevalence are clearly documented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C52",
+      "C53"
+    ],
+    "result": "In fully adjusted models, a 1 \u00b5g/m\u00b3 increase in fire-sourced PM2.5 was associated with a 2.17 g reduction in birthweight (95% CI 0.56\u20133.77), a 2.80% increase in low birthweight risk (95% CI 0.97\u20134.66), and an 11.68% increase in very low birthweight risk (95% CI 3.59\u201320.40). However, the association was sensitive to covariate adjustments and exposure time windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C3, and C4 report statistically significant associations with narrow confidence intervals excluding the null. However, C52 and C53 indicate substantial sensitivity to model specifications, with the unadjusted model showing non-significant effects (C53: 0.84 g, 95% CI \u22120.53 to 2.22). The sensitivity to covariate adjustment raises concerns about confounding control and model robustness, making the causal interpretation uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Fire-sourced PM2.5 exposure was estimated using GEOS-Chem version 11-01 with MERRA-2 meteorological fields, CEDS anthropogenic emissions, and GFED4s fire emissions. The model output was bias-corrected using satellite-based PM2.5 estimates. Validation showed good agreement between simulated and satellite-based estimates (R\u00b2 = 0.76). The 9-month average preceding birth was used as the exposure window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28\u2013C38 describe a comprehensive exposure assessment methodology. However, C37 shows only moderate agreement (R\u00b2 = 0.76), and C93\u2013C97 acknowledge substantial exposure misclassification due to lack of gestation length data and CTM uncertainties. The use of a fixed 9-month window (C38) without actual gestation data introduces systematic exposure misclassification, particularly for preterm births, which undermines exposure validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study used a sibling-matched case-control design with fixed-effects regression, comparing birthweights within family groups. Approximately 92% of variation in fire-sourced PM2.5 exposure was between family groups and 8% within groups. For birthweight, 71.7% of variation was between groups and 28.3% within groups. Birthweight and fire-sourced PM2.5 were negatively correlated temporally but positively correlated spatially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, C42, C49, C50, and C51 describe a methodologically sound sibling-matched design that controls for unmeasured family-level confounders. The variance decomposition (C49, C50) demonstrates sufficient within-family variation for analysis. The opposing temporal and spatial correlations (C51) justify the fixed-effects approach to control for spatial confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C85"
+    ],
+    "result": "Lag-specific associations did not display a clear time-varying pattern, but showed a linear increase in strength with increased length of the exposure time window. The cumulative effect of fire-sourced PM2.5 increased with exposure duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C85 are supported by Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2. The lack of clear lag-specific patterns (C54) combined with cumulative effects (C55, C85) is consistent with sustained exposure effects throughout pregnancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The association between fire-sourced PM2.5 and birthweight was stronger for female infants, newborns of nulliparous mothers, and newborns of unemployed mothers compared to their respective reference groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56, C57, and C58 report subgroup differences, but the manuscript does not provide p-values for these interaction tests or correct for multiple comparisons. Figure 2\u2014figure supplement 3 shows some significant interactions (e.g., sex for LBW, p=0.02), but without adjustment for multiple testing, these findings may represent false positives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Nonlinear analysis showed a sublinear association suggesting a saturated effect of approximately 60 g birthweight reduction for exposure to extreme fires contributing to PM2.5 concentration >~20 \u00b5g/m\u00b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by Figure 3, which shows a clear sublinear dose-response relationship with saturation at higher exposure levels. This finding is biologically plausible and consistent with threshold effects observed for other environmental exposures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Fire-sourced PM2.5 exposure during the 9 months before birth was significantly associated with increased risk of low birthweight and very low birthweight. Very low birthweight showed stronger and more robust associations compared to low birthweight, with the VLBW association being less sensitive to covariate adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, C62, C63, and C64 are supported by Figure 2 and the reported effect estimates. The stronger association for VLBW (C62) and its robustness to covariate adjustment (C64) suggest a more severe effect at the extreme end of the birthweight distribution, which is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The type of cooking energy significantly modified the association between very low birthweight and fire-sourced PM2.5 (p=0.02), with the use of unclean cooking energy weakening the association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 are supported by Figure 2\u2014figure supplement 3, which shows a statistically significant interaction. The interpretation that unclean cooking energy acts as a competing risk factor is plausible, though the mechanism could also involve measurement error or effect modification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The effect of fire-sourced PM2.5 on birthweight varied with family-level baseline birthweight. Newborns from families with lower baseline birthweight were more susceptible in terms of relative birthweight reduction. For a 1 \u00b5g/m\u00b3 increase in fire-sourced PM2.5, the relative birthweight reduction was 1.47% (95% CI 0.06\u20132.88) at 1500 g baseline, decreasing to 0.03% (95% CI \u22120.04\u20130.10) at 3000 g baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67\u2013C73 are supported by Figure 4 and Figure 4\u2014figure supplement 1. The baseline-varying association model reveals important heterogeneity in effects, with stronger relative effects in vulnerable populations (lower baseline birthweight). This finding is methodologically sound and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Sensitivity analyses showed that estimated associations were not significantly different according to recall period or between locations with and without burning. These results confirm that ambient exposure was the major exposure pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C75, and C76 are supported by Figure 2\u2014figure supplement 3. The lack of difference by recall period (C74) suggests minimal recall bias, and the lack of difference by burning location (C75) supports the ambient exposure pathway interpretation (C76) rather than direct fire impacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The estimated effects were significant in the highest-exposure region (Sub-Saharan Africa) but not in other regions. This suggests that exposure misclassification from CTM simulations may lead to underestimated associations in lower-exposure regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C101 are supported by Figure 2\u2014figure supplement 3 and Figure 3. The interpretation that exposure measurement error is greater in low-exposure regions is plausible, as large fires are more easily captured by satellite imagery (C98). This pattern suggests the true effects may be underestimated globally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The lack of data on specific gestation lengths limited the study's ability to distinguish exposure time windows and introduced potential exposure misclassifications. This limitation was particularly problematic for newborns with lower birthweight who likely had shorter gestations. The study could not determine the clinical importance of birthweight changes without normalizing to gestation length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C94, C95, and C96 accurately describe a critical limitation. The use of a fixed 9-month exposure window (C38) without actual gestation data introduces differential exposure misclassification, particularly for preterm births. This limitation substantially affects the interpretation of results and represents a major weakness of the study design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Potential errors in chemical transport model simulations enhanced exposure misclassifications and may have resulted in biased associations. However, large fires are easily captured by satellite images, so effects estimated from high-exposure regions are likely less biased than those from low-exposure regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C98, and C99 acknowledge important limitations in exposure assessment. The interpretation that high-exposure regions have less bias is reasonable given that large fires are better detected by satellites. However, the magnitude of bias remains unquantified, and classical measurement error would typically bias estimates toward the null.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The analyzed samples were living newborns, so estimates were potentially subjected to survival bias. Fire-sourced PM2.5 was associated with extremely reduced birthweight, which increases the probability of stillbirth or neonatal death. This survival bias could have led to underestimated associations by excluding susceptible embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C103, and C104 correctly identify survival bias as a limitation. The exclusion of stillbirths and early neonatal deaths would indeed bias estimates toward the null if fire-sourced PM2.5 increases mortality risk. This is a common limitation in birth cohort studies and the direction of bias is correctly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Self-reported birthweight records may be inaccurate due to potential recall bias and lead to potential outcome misclassification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 identifies a valid limitation. However, C74 shows that associations did not differ by recall period, suggesting recall bias may be limited. Self-reported birthweight has been validated in some populations but accuracy varies. This represents a moderate limitation that could introduce non-differential measurement error.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "A sibling-matched study requires a selected sample, which may have lowered the representativeness of this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 correctly identifies that sibling-matched designs require mothers with multiple births, which may select for certain characteristics (e.g., higher parity, specific socioeconomic factors). This limits generalizability but is an inherent trade-off of the design that controls for unmeasured family-level confounders.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes the context of landscape fires, their health impacts, and the burden of low birthweight globally. Most landscape fires occur in LMICs, particularly in tropical rainforests and savannas. Previous studies on fire smoke and birthweight have focused on high-income countries with inconsistent conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6\u2013C24 provide background context supported by appropriate citations. These claims establish the rationale for the study by documenting the global burden of landscape fires, their health effects, and gaps in the literature regarding LMICs. The citations appear appropriate and the claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Previous studies have reported mixed findings on the association between fire smoke and birthweight. Studies from the US, Brazil, and Australia reported varying effect sizes and directions, with one Australian study finding increased birthweight in exposed male infants. A meta-analysis of PM2.5 exposure reported a pooled risk ratio of 1.081 for LBW per 10 \u00b5g/m\u00b3 increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77\u2013C82 accurately summarize prior literature with appropriate citations. The mixed findings from previous studies (including the counterintuitive positive association in C80) justify the need for the current study. The comparison with the meta-analysis (C82) provides context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "Family-level mean birthweight varied widely between households and is positively correlated with gestation length. The fetus grows in a sublinear temporal pattern during late gestation, and exposure to landscape fire smoke has been reported to cause short gestation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, C86, and C87 provide mechanistic context for interpreting the baseline-varying associations. These claims are supported by citations and are consistent with established knowledge about fetal growth patterns and the relationship between birthweight and gestation length.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "This is the first sibling-matched study on the association between birthweight and fire-sourced PM2.5 from multiple LMICs. The study adds to epidemiological evidence on adverse effects of landscape fire smoke on birthweight. Interventions regarding landscape fires, such as climate change mitigations, should be taken to protect maternal and infant health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107 and C108 accurately characterize the study's contribution. Claim C109 is a reasonable policy recommendation based on the findings, though it is speculative regarding specific interventions. The novelty claim (C107) appears justified given the focus on LMICs and the sibling-matched design.",
+    "result_type": "MINOR"
+  }
+]

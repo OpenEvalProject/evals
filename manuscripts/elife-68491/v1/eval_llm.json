@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C72"
+    ],
+    "result": "Observers commit to perceptual decisions prematurely in the More condition while continuing to accumulate evidence for confidence evaluation. This is demonstrated through behavioral performance showing no significant improvement with additional stimuli (C31-C32), computational modeling revealing a covert bound for perceptual decisions but not confidence (C33-C35), GLM analysis showing differential evidence integration patterns (C38-C40), and motor preparation signatures appearing before the response cue (C43, C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support premature decision commitment: behavioral data (C31-C32), computational modeling with cross-validation (C33-C35), GLM regression analyses (C38-C40), and neural signatures of motor preparation (C43, C72). The statistical tests are appropriate with proper corrections, and the findings replicate prior work (Balsdon et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Premature decision commitments are revealed by spectral power patterns (8-32 Hz) over motor cortex, with cross-classification showing significantly better accuracy in the More vs Less condition up to 2.5 seconds before response entry. The strength of motor response signals is predicted by accumulated evidence up to four samples prior to response in the More condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-classification analysis with cluster correction (C42) provides strong evidence for early motor preparation. The finding that evidence accumulated up to four samples prior still predicts motor signals in the More condition (C45-C46) supports the interpretation of premature commitment. Statistical tests include appropriate corrections and the approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C73",
+      "C74",
+      "C87"
+    ],
+    "result": "Distinct neural representations of stimulus orientation, decision update, and accumulated evidence show different temporal dynamics and topographies. After premature decision commitment, the early representation of accumulated evidence is attenuated (C56, C73) while representations of stimulus orientation and decision update remain unchanged (C57, C74), demonstrating partial dissociation between perceptual and confidence processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The encoding analysis using ridge regression with cross-validation provides robust evidence for distinct representations (C48-C51). The comparison between optimal and suboptimal trials (C52-C55) and between More/Less conditions (C56-C57) with cluster-corrected statistics supports the dissociation. The selective attenuation of accumulated evidence representation after decision commitment is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Bayesian scan statistics identified spatially and temporally distinct clusters for perceptual decisions (early posterior) and confidence evaluation (co-temporal posterior and anterior clusters emerging 668-824 ms post-stimulus). The confidence cluster representation is maintained after decision commitment in the More condition while the perceptual cluster is attenuated, and correlates more strongly with confidence model parameters than perceptual model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Bayesian scan statistics approach provides a principled method for identifying behaviorally relevant signals (C58-C60). The finding that combining clusters improves precision (C61) and the differential maintenance in More condition (C62-C63) with significant interaction (F(1,19)=32.00, p=0.001) strongly support dissociation. The correlation with computational model parameters (C64) validates the functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C77"
+    ],
+    "result": "Source localization reveals that activity in superior parietal cortex (276-304 ms, stimulus-driven) and orbitofrontal cortex (516-556 ms, accumulation-like) tracks internal evidence for confidence. OFC activity predicts confidence ratings with significant regression weights from -300 to 520 ms around response time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Source localization using minimum norm imaging with cluster-corrected comparisons between Noise Max/Min epochs provides robust evidence (C66-C67). The temporal dynamics distinguish stimulus-driven (parietal) from accumulation (OFC) processes (C69-C70). The GLM prediction of confidence ratings from OFC activity (C71) with cross-validation strengthens the functional interpretation. However, source localization from EEG has inherent spatial resolution limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The optimal presented evidence (accumulated log-likelihood) explains substantial variance in both perceptual decisions (\u03b2=0.77, t(19)=6.48, p<0.001) and confidence evaluations (\u03b2=0.24, t(19)=6.46, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GLM analysis with appropriate statistical tests demonstrates that optimal evidence L predicts both perceptual and confidence responses. The lower beta for confidence is expected given additional noise sources. The analysis validates that observers' internal evidence L* correlates with optimal evidence L.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The optimal observer computation requires encoding stimulus orientation, estimating decision updates, and accumulating evidence. These variables show distinct temporal dynamics and topographic patterns in EEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of optimal computation is well-grounded in prior work (Wyart et al., 2012, 2015). The finding of distinct representations (C48) is supported by the encoding analysis, though this is more of a methodological validation than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C86",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The partial dissociation between perceptual and confidence processes validates computational model predictions and implies a specific neural circuit for confidence computation that can be recruited independently of perceptual processes, potentially enabling metacognitive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the partial dissociation is well-supported by data (C88), the broader implications about metacognitive control (C86) and general metacognitive mechanisms (C89-C90) are speculative inferences. These claims extend beyond what the current data directly demonstrate and would require additional experiments testing metacognitive control and domain-generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The findings connect to prior literature showing parietal cortex involvement in evidence integration and OFC involvement in confidence-modulated outcome expectation. The results support online confidence computation alongside perceptual accumulation and mediate between single-channel and dual-channel models through partial dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately contextualize the current findings within existing literature. The citations are relevant and the interpretations are reasonable. The partial dissociation framework (C85) provides a useful synthesis of competing theoretical models, though this is more interpretive than a direct empirical result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Twenty participants completed Free and Replay tasks with oriented Gabor stimuli drawn from overlapping Von Mises distributions. The Replay task manipulated evidence presentation (Less: pmin-2, Same: pmed, More: pmax+4 samples) relative to Free task behavior. No participants were excluded based on pre-registered criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly described and appropriate for the experimental design. The pre-registration (C92) and manipulation based on individual Free task behavior provide good experimental control. Sample size (N=20) is reasonable for within-subject EEG design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C76",
+      "C82"
+    ],
+    "result": "Background claims establish that perceptual confidence evaluates decision validity, involves metacognitive processes, can integrate post-decisional evidence, may rely on non-perceptual information, and has been linked to prefrontal cortex activity in prior studies. Neural correlates include P300 and CPP signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by appropriate citations to prior literature. They provide necessary context but are not novel findings from this study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2354 @@
+{
+  "submission": {
+    "id": "a7321272-94bc-41af-9ad1-71ecd706ac6f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:10:33.949386Z",
+    "updated_at": "2025-12-03T17:10:33.949386Z"
+  },
+  "content": [
+    {
+      "id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "submission_id": "a7321272-94bc-41af-9ad1-71ecd706ac6f",
+      "content_type": "manuscript",
+      "content_text": "# Structure of the GOLD-domain seven-transmembrane helix protein family member TMEM87A\n\n## Authors\n\n- Christopher M Hoel<sup>1</sup> ([ORCID: 0000-0002-1344-0780](https://orcid.org/0000-0002-1344-0780))\n- Lin Zhang<sup>1</sup> ([ORCID: 0000-0002-8132-7755](https://orcid.org/0000-0002-8132-7755))\n- Stephen G Brohawn<sup>1</sup> ([ORCID: 0000-0001-6768-3406](https://orcid.org/0000-0001-6768-3406)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n3. California Institute for Quantitative Biology (QB3), University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTMEM87s are eukaryotic transmembrane proteins with two members (TMEM87A and TMEM87B) in humans. TMEM87s have proposed roles in protein transport to and from the Golgi, as mechanosensitive ion channels, and in developmental signaling. TMEM87 disruption has been implicated in cancers and developmental disorders. To better understand TMEM87 structure and function, we determined a cryo-EM structure of human TMEM87A in lipid nanodiscs. TMEM87A consists of a Golgi-dynamics (GOLD) domain atop a membrane-spanning seven-transmembrane helix domain with a large cavity open to solution and the membrane outer leaflet. Structural and functional analyses suggest TMEM87A may not function as an ion channel or G-protein coupled receptor. We find TMEM87A shares its characteristic domain arrangement with seven other proteins in humans; three that had been identified as evolutionary related (TMEM87B, GPR107, and GPR108) and four previously unrecognized homologs (GPR180, TMEM145, TMEM181, and WLS). Among these structurally related GOLD domain seven-transmembrane helix (GOST) proteins, WLS is best characterized as a membrane trafficking and secretion chaperone for lipidated Wnt signaling proteins. We find key structural determinants for WLS function are conserved in TMEM87A. We propose TMEM87A and structurally homologous GOST proteins could serve a common role in trafficking membrane-associated cargo.\n\n## Introduction\n\nTMEM87 proteins are transmembrane proteins found in eukaryotic organisms from fungi and plants to mammals (Edgar, 2007). In humans, two paralogs have been identified: TMEM87A and TMEM87B (Edgar, 2007). TMEM87A and TMEM87B have been associated with protein transport to and from the Golgi, mechanosensitive cation channel activity, and cardiac and other developmental processes (Hirata et al., 2015; Shin et al., 2020; Russell et al., 2014; Patkunarajah et al., 2020). In humans, TMEM87 proteins have been implicated in developmental diseases and cancers (Cooper et al., 2020; Shaver et al., 2016; Yu et al., 2016; Digilio et al., 2022).\n\nSeveral lines of evidence support a role for TMEM87 in protein trafficking. First, TMEM87s localize to the Golgi (Hirata et al., 2015; Shin et al., 2020). Second, overexpression of TMEM87A or TMEM87B partially rescues defective endosome-to-trans-Golgi network retrograde traffic in HEK293 cells lacking the Golgi-associated retrograde protein (GARP) complex member VPS54 (Hirata et al., 2015). Third, TMEM87A has been identified as retrograde cargo captured by mitochondrial golgins (Shin et al., 2020). A recent study, however, associated TMEM87A with mechanosensitive cation channel activity (Patkunarajah et al., 2020). Deflection of micropillar culture supports resulted in cationic currents in melanoma cells that were reduced by TMEM87A expression knockdown. Additionally, TMEM87A overexpression resulted in mechanosensitive currents in PIEZO1 knockout HEK293T cells (Patkunarajah et al., 2020). TMEM87A knockout melanoma cells show increased adhesion strength and decreased migration, suggesting potential roles for TMEM87A in these processes in cancers (Patkunarajah et al., 2020).\n\nTMEM87B has been linked to developmental processes in recurrent 2q13 microdeletion syndrome (Russell et al., 2014; Yu et al., 2016; Digilio et al., 2022). Patients with this syndrome exhibit cardiac defects, craniofacial anomalies, and developmental delays. The vast majority of 2q13 microdeletions include TMEM87B (Yu et al., 2016). In zebrafish, morpholino knockdown of TMEM87B resulted in cardiac hypoplasia (Russell et al., 2014). In a patient with a severe cardiac phenotype, whole-exome sequencing uncovered a paternally inherited TMEM87B missense mutation and chromosome 2 deletion inherited from an unaffected mother (Yu et al., 2016). Both TMEM87A and TMEM87B have additionally been implicated in cancers such as non-small cell lung cancer through fusion or suspected interaction with oncogenes (Cooper et al., 2020; Shaver et al., 2016; Li et al., 2008).\n\nBioinformatic analysis has grouped TMEM87A and TMEM87B in a small family of proteins (termed lung 7TM receptors or LUSTRs) with so-called orphan GPCRs GPR107 and GPR108 (Edgar, 2007). Like TMEM87s, GPR107, and GPR108 localize to the Golgi and have suggested roles in protein trafficking. GPR107 is implicated in the transport of Pseudomonas aeruginosa Exotoxin A, Campylobacter jejuni cytolethal distending toxin (CDT), and ricin, while GPR107 knockout cells display deficits in receptor-mediated endocytosis and recycling (Tafesse et al., 2014; Carette et al., 2011; Elling et al., 2011; Zhou et al., 2014). GPR108 is critical for the transduction of a majority of AAV serotypes (Meisen et al., 2020; Dudek et al., 2020). While a GPR107 knockout mouse was embryonic lethal, a GPR108 knockout mouse was viable and revealed a potential role for GPR108 in the regulation of Toll-like receptor-mediated signaling (Zhou et al., 2014; Dong et al., 2018).\n\nDespite being implicated in important cell biological processes and human health, our molecular understanding of TMEM87s and LUSTR proteins is limited and no experimental structures of these proteins have been reported to date. Here, we present a cryo-electron microscopy (cryo-EM) structure of human TMEM87A. Through structural and bioinformatic analyses, we find TMEM87A belongs to a broader protein family we term GOLD-domain seven transmembrane (GOST) proteins. We speculate TMEM87A and other GOST proteins could function as trafficking chaperones for membrane-associated cargo.\n\n## Results\n\nFull-length human TMEM87A was expressed and purified from Sf9 insect cells and reconstituted into lipid nanodiscs composed of MSP1D1 and a mixture of DOPE, POPS, and POPC lipids (Figure 1\u2014figure supplement 1). Cryo-EM was used to determine the structure of TMEM87A to a nominal resolution of 4.7 \u00c5, with better resolved regions reaching ~4.3 \u00c5 in the core of the protein. The map was of sufficient quality to place secondary structure elements unambiguously and, using an AlphaFold2 predicted structure as a starting model, to place and refine 395/555 residues (Figure 1, Figure 1\u2014figure supplements 2 and 3, Supplementary file 1). The modeled portion of TMEM87A and corresponding predicted structure are similar (overall r.m.s.d.=1.8 \u00c5) with a minor difference in the relative position of extracellular and transmembrane regions. About 37 N-terminal residues (amino acids 1\u201337), 88 C-terminal residues (475-555), and 36 residues in loops within the extracellular domain (145\u2013173, 192\u2013198) were not resolved in the cryo-EM map and are unmodeled.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig1-v2.jpg)\n\n**Figure 1.:** (a) 4.7 \u00c5 cryo-EM map and (b) model for TMEM87A viewed from the plane of the membrane and the extracellular or lumenal side (right). The GOLD domain is colored yellow, seven-transmembrane domain colored blue, and modeled phospholipid colored pink. (c) TMEM87A with rainbow coloring from N-terminus (blue) to C-terminus (red). (d) Corresponding cartoon of domain topology with rainbow coloring from N-terminus (blue) to C-terminus (red). Positions of disulfide bonds and residues noted in the text are indicated. EM, electron microscopy.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Size-exclusion chromatogram and (b) Coomassie stained SDS-PAGE gel showing the purification and reconstitution of TMEM87A in lipid nanodiscs. Shaded region corresponds to pooled fractions collected. Samples were run on a Superose 6 column.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Representative micrograph (scale bar = 150 \u00c5). (b) Selected 2D class averages (scale bar = 100 \u00c5). (c) Fourier shell correlations between the two corrected and masked (black) and unmasked (green) half maps. (d) Relion-estimated local resolution colored on the cryo-EM map in rainbow. (e) Angular distributions for particles used in the final refinement.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** See Materials and methods for details.\n\nTMEM87A is composed of an extracellular beta-sandwich domain atop a G-protein coupled receptor (GPCR)-like seven-transmembrane (7TM) domain (Figure 1). The extracellular beta-sandwich domain is formed by seven beta strands in two opposing sheets, with three strands on the N-terminal face and four on the opposing face. The N-terminal face consists of \u03b21, \u03b23, \u03b27, and a region between \u03b25 and \u03b26 lacking secondary structure that packs against \u03b23 at the top of the sheet. The opposing face of the \u03b2-sandwich is formed from \u03b22, \u03b24, \u03b25, and \u03b26 with a helix-turn-helix motif between \u03b24 and \u03b25. A short 10 residue loop extends from the end of \u03b27 to the 7TM domain at the extracellular side of H1. Two disulfide bonds are observed. The first, between C74 and C128, connects two loops at the top of this extracellular domain. The second, between C89 and C431, tethers the bottom of the extracellular domain to the top of the 7TM domain in the H6\u2013H7 linker, perhaps constraining their relative movement.\n\nThe transmembrane region of TMEM87A is structurally similar to other 7TM proteins, with a few notable differences (Figure 2, Figure 2\u2014figure supplement 1). Using Dali to compare the isolated TMEM87A transmembrane domain to all experimentally determined protein structures returns 7TM proteins as clear structural homologs, with the fungal class D GPCR Ste2, microbial opsins, and additional class A GPCRs among the hits (Holm, 2020; Velazhahan et al., 2021; Hayashi et al., 2020; Yamamoto et al., 2009).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig2-v2.jpg)\n\n**Figure 2.:** (a) View of the TMEM87A model from the \u2018back\u2019 in the plane of the membrane and zoomed view highlighting the position of helix 8 with residue N465 indicated (corresponding to TMEM87B N456D implicated 2q13 deletion syndrome). (b) Overlay of TMEM87A (blue) and \u03b21 adrenergic receptor (mg\u03b21AR PDB: 2Y00, orange) transmembrane domains. (c) Overlay of mg\u03b21AR alone (PDB: 2Y00, orange), in complex with arrestin (PDB: 6TKO, red) in complex with heterotrimeric Gi-proteins (PDB: 7S0F, pink). (d, e) Overlay of TMEM87A (blue) and (d) arrestin (red surface) or (e) heterotrimeric Gi (pink surface) from mg\u03b21AR complex structures(PDB: 6TKO, 7S0F). Helix 8s (H8s) are colored shades of green and denoted with asterisks.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a\u2013f) Overlay of TMEM87A (gray) with GPCR structures (rainbow from N-terminus (blue) to C-terminus (red)) viewed from the membrane plane (left) and above (right) in a 90\u00b0 rotated view. (a) Class A GPCR bovine Rhodopsin (PDB 1F88). (b) Class B1 GPCR human glucagon receptor (GCGR) (PDB 4L6R). (c) Class B2 GPCR human adhesion receptor GPR97 (PDB 7D76). (d) Class C GPCR human metabotropic glutamate receptor 1 (mGluR1) (PDB 4OR2). (e) Class D GPCR yeast Ste2 (PDB 7AD3). (f) Class F GPCR human Frizzled 4 (PDB 6BD4).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a\u2013c) Current (above) recorded during steps of increasing pressure (below) at a holding potential of 60 mV from a representative (a) TMEM87A-, (b) TRAAK-, and (c) mock-reconstituted proteoliposome patch. (d\u2013f) Current (above) recorded during voltage steps (red schematic) during which a pressure step of \u201350 or \u201380 mmHg is applied from a representative (d) TMEM87A-, (e) TRAAK-, and (f) mock-reconstituted proteoliposome patch. (g) Average current versus pressure plot from recordings as in (a\u2013c) for TMEM87A- (circles, n=9), TRAAK- (squares, n=5), and mock-reconstituted proteoliposomes (triangles, n=7). (h) Plot of maximum pressure (\u201380 mmHg) induced current observed from recordings as in (a\u2013c) for TMEM87A- (Imax: 1.05\u00b10.52 pA, n=4), TRAAK- (Imax: 572\u00b1489 pA, n=4), and mock-reconstituted proteoliposome patch (Imax: 0.78\u00b10.60 pA, n=7).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a, c) TMEM87A structure colored according to conservation of each residue, from white (less conserved) to dark green (more conserved), on surface and ribbon representations respectively. (b, d) WLS structure colored according to conservation of each residue, from white (less conserved) to dark green (more conserved), on surface and ribbon representations respectively. (e) Helix 8 and its cytoplasmic interaction surface are highly conserved among TMEM87As. View of TMEM87A from the cytoplasm with helix 8 displayed as a cartoon and its interaction surface outlined in yellow.\n\nSince TMEM87A shares structural features with ion-conducting opsins and previous work implicated TMEM87A in mechanosensitive cation conduction (Patkunarajah et al., 2020), we asked whether TMEM87A displayed channel activity in isolation. We purified and reconstituted TMEM87A into proteoliposomes and recorded currents across patched membranes in response to membrane stretch induced by pressure steps. We observed neither basal nor mechanically activated currents in TMEM87A reconstituted proteoliposomes, in contrast to the mechanosensitive ion channel TRAAK used as a positive control (Figure 2\u2014figure supplement 2). This result is consistent with the lack of a clear ion conducting path in the TMEM87A structure. We conclude that under these conditions, TMEM87A does not form a mechanosensitive ion channel.\n\nSince TMEM87A contains a 7TM domain, we next asked whether it has structural features consistent with G-protein coupled receptors. TMEM87A and Class A GPCRs have a similar transmembrane helix organization, for example, TMEM87A and the \u03b21-adrenergic receptor are superimposed with an overall r.m.s.d. of 4.13 \u00c5 (Figure 2). Intriguingly, the position of cytoplasmic helix 8 in TMEM87A differs substantially from experimental structures of GPCRs. In TMEM87A, helix 8 turns back towards the center of the protein and packs against the bottom of the transmembrane domain (Figure 2a and b). In experimental GPCR structures, helix 8 is instead rotated nearly 180\u00b0 and adopts a different position projecting toward the surrounding membrane (Warne et al., 2011; Lee et al., 2020; Alegre et al., 2021; Figure 2b\u2013c). This position of helix 8 in GPCRs appears necessary to accommodate G-protein or arrestin binding and is similarly positioned in apo- and complexed-receptor structures (Figure 2c). The position of helix 8 in TMEM87A would sterically clash with putative G-protein or arrestin binding through interfaces analogous to those observed in GPCR structures (Figure 2c\u2013e). Both helix 8 and the cytoplasmic surface it interacts with are highly conserved in TMEM87A across species (Figure 2\u2014figure supplement 3). Notably, the TMEM87B point mutation implicated in 2q13 deletion syndrome (TMEM87B N456D) corresponds to TMEM87A residue N465 at the TM7-helix 8 junction (Yu et al., 2016; Figure 2a), suggesting helix 8 is important for TMEM87B function. In addition to this difference in helix 8 position, TMEM87A does not share canonical motifs of class A or D GPCRs including the class A NPxxY activation motif, PIF motif, and D(E)/RY motif or the class D LPLSSMWA activation motif (Velazhahan et al., 2021; Palczewski et al., 2000; Wang et al., 2020). Taken together, these differences suggest that TMEM87A may not couple to G proteins or arrestins like canonical GPCRs.\n\nWe found the extracellular/lumenal region of TMEM87A adopts a Golgi dynamics (GOLD) domain fold (Figure 3, Figure 3\u2014figure supplement 1). Using Dali to compare the isolated TMEM87A extracellular \u03b2-sandwich domain (residues 38\u2013218) to all experimentally determined protein structures returns human p24 GOLD domain proteins as top hits. Superposition of the TMEM87A extracellular domain and p24 shows conservation of \u03b2 strand topology throughout the domain, with differences predominantly in regions connecting \u03b2 strands including the helix-turn-helix motif in the TMEM87A GOLD domain (Holm, 2020; Nagae et al., 2016; Figure 3\u2014figure supplement 1a\u2013c). GOLD domain proteins have established roles in the secretory pathway (Nagae et al., 2016; Anantharaman and Aravind, 2002) and p24 proteins are implicated as cargo receptors for protein transport, with the GOLD domain mediating cargo recognition (Pastor-Cantizano et al., 2016; Mendes and Costa-Filho, 2022). Among different p24 proteins, the GOLD domain loops are among the most variable regions and have been hypothesized to recognize different cargo (Nagae et al., 2016). Identification of a GOLD domain in TMEM87A suggests a structural explanation for the proposed roles of TMEM87s in protein transport, with major differences in GOLD domain loops between TMEM87A and p24 perhaps indicative of differences in interacting partners.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig3-v2.jpg)\n\n**Figure 3.:** Experimentally determined TMEM87A structure and AlphaFold2 predicted structures of all identified human GOST family proteins (TMEM87B, GPR107, GPR108, GPR180, TMEM145, TMEM181, and WLS) shown as surfaces in the same orientation from the membrane plane. GOLD domains are yellow, seven-transmembrane domains are blue, N-terminal helices (if present) are gray, and membrane-facing slots are outlined in pink. Low confidence (<80 pLDDT) regions of predicted structures are removed for clarity (full structures are displayed in Figure 3\u2014figure supplement 2).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) GOLD domain from experimental TMEM87A structure. (b) p24 beta1 GOLD domain (PDB 5AZW) colored light green. (c) Overlay of TMEM87A and p24 GOLD domains. (d\u2013j) GOLD domains from AlphaFold2 predicted structures for TMEM87B, GPR107, GPR108, GPR180, TMEM145, GPR181, and WLS, respectively, with GOLD domain colored light yellow and regions of low confidence (<80 pLDDT) colored white.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a\u2013g) Surface representations of TMEM87B, GPR107, GPR108, GPR180, TMEM145, GPR181, and WLS AlphaFold2 predicted structures. GOLD domains are yellow, seven-transmembrane domains are blue, N terminal helices are gray (if present), and regions of low confidence (<80 pLDDT) are orange. (h) Experimental WLS structure (7KC4) with GOLD domain yellow, transmembrane domain blue, N terminal helix gray, and Wnt8a green. (i) AlphaFold2 predicted WLS structure colored as (h). Low confidence regions with pLDDT<80 are removed for clarity. (j) Overlay of experimental and predicted WLS structures.\n\nWe next asked whether further structural comparison could provide insight into TMEM87A functions. We performed a Dali search against the entire AlphaFold2-predicted human proteome using the experimental TMEM87A structure as the reference (Holm, 2020; Jumper et al., 2021; Varadi et al., 2022). This search uncovered proteins predicted to have the same domain topology consisting of a GOLD domain fused to a 7TM domain: all four members of the LUSTR family and four previously unrecognized homologs GPR180, TMEM145, TMEM181, and Wntless (WLS) (Figure 3, Figure 3\u2014figure supplement 1d\u2013j, Figure 3\u2014figure supplement 2a\u2013g). The predicted structures are all structurally homologous to TMEM87A (overall r.m.s.d range from 1.85 to 3.87 \u00c5). We propose an expansion of the LUSTR family to include these additional members and to name them GOST proteins (for GOLD domain seven-transmembrane helix proteins).\n\nWhile three newly identified GOST proteins have been minimally characterized to date (prior work has associated GPR180 with TGF-B signaling and TMEM181 with Escherichia coli CDT toxicity Balazova et al., 2021; Carette et al., 2009), WLS (also known as GPR177 or evenness interrupted homolog [EVI]) has been extensively studied. WLS plays an essential role in chaperoning lipidated and secreted Wnt signaling proteins between internal membranes and the cell surface (B\u00e4nziger et al., 2006; Bartscherer et al., 2006; Fu et al., 2009). Recent cryo-EM structures of WLS bound to Wnt3a or Wnt8a provide insight into the basis for chaperone-client interactions (Nygaard et al., 2021; Zhong et al., 2021; Figure 4a). The extracellular region of Wnt interacts extensively with the WLS GOLD domain and an extended palmitoleated hairpin of Wnt that is buried in the large hydrophobic cavity within the WLS 7TM domain. Comparison of TMEM87A with WLS shows that the transmembrane regions are well aligned with two notable differences. First, WLS H4 and H5 are shifted approximately 13 \u00c5 away from the center of the protein, resulting in a larger cavity compared to TMEM87A necessary to accommodate the insertion of the lipidated Wnt hairpin (Figure 4b). The relative orientation of the GOLD and 7TM domains in TMEM87A and WLS also differs, with the WLS GOLD domain shifted approximately 26 \u00c5 in the same direction of movement as the H4/H5 shift (Figure 4b). Intriguingly, TMEM87A and WLS exhibit similar overall patterns of surface electrostatic charge including in the 7TM cavity that, in WLS, mediates binding of the Wnt lipidated hairpin (Figure 4c\u2013d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig4-v2.jpg)\n\n**Figure 4.:** (a) WLS-Wnt8a complex structure (PDB: 7KC4) with WLS GOLD domain light yellow, the WLS seven-transmembrane domain light blue, the N terminal helix light gray, and Wnt8a light green. (b) Overlay of TMEM87A and WLS (PDB 7KC4) experimental structures, with TMEM87A GOLD domain colored yellow and TMEM87A transmembrane domain colored blue. Zoomed in views highlight the differences in relative domain orientation between TMEM87A and WLS. (c, d) Views of (c) TMEM87A and (d) WLS electrostatic surfaces. Scale is from \u201310 kbTec\u22121 to 10 kbTec\u22121.\n\nPerhaps the most striking structural feature of TMEM87A is the large cavity within the 7TM domain, a feature that is similar in several respects to the cavity in WLS structures (Figure 5a and d). In TMEM87A, this cavity measures approximately 8,637 \u00c5 (Shin et al., 2020) as compared to 12,350 \u00c5 (Shin et al., 2020) for the WLS cavity. It is funnel-shaped, presenting a large opening to the extracellular side near the GOLD domain and tapering closed near the intracellular surface above helix 8. The corresponding cavity in experimental WLS structures is filled by the lipidated Wnt3a/8 a hairpin (Figure 5d). Interestingly, the predicted WLS structure shows a smaller cavity relative to experimental WLS-Wnt structures. This suggests the apo-WLS cavity could dilate to accommodate Wnt binding (Figure 3\u2014figure supplement 2h\u2013j). The TMEM87A cavity is also exposed to the lipid membrane. H5 and H6 are splayed apart to open a large \u2018slot\u2019 between the cavity and the upper leaflet of the bilayer (Figure 5b). Density within the membrane exposed portion of the hydrophobic cavity is consistent with a bound phospholipid. A partial lipid is modeled based on density, chemical environment, and relationship to WLS, but we note this assignment is speculative given the relatively low resolution of the reconstruction. Notably, the WLS cavity is open to the upper leaflet through a similar slot between H5 and H6 and a phospholipid is bound in a similar position in experimental structures (Figure 5d\u2013f). The slot in WLS is presumably important because it permits access of the lipidated Wnt hairpin from the membrane into the cavity binding site. Mapping sequence conservation onto TMEM87A and WLS structures shows a similar pattern with strongly conserved residues in the transmembrane region lining the internal cavity (Figure 2\u2014figure supplement 3). Taken together, the structural homology between TMEM87A and WLS suggests they could similarly have evolved to bind and facilitate membrane trafficking of hydrophobic cargo.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81704/elife-81704-fig5-v2.jpg)\n\n**Figure 5.:** (a) TMEM87A structure with CASTp calculated internal cavity shown as a transparent orange surface. (b) Surface of TMEM87A with membrane-facing slot (red outline) connecting the cavity and upper leaflet of the bilayer highlighted. (c) Modeled phospholipid (pink) is shown as a surface (left) or within cryo-EM density (right). (d) WLS (PDB: 7KC4) structure with CASTp calculated internal cavity shown as a transparent yellow surface, with bound Wnt8a (pale green surface) and phospholipid (pink) shown filling the cavity. (e) Zoomed in view shows surface representation of WLS (PDB: 7KC4) with open membrane-facing slot (red outline) and phospholipid (pink). (f) Overlay of the experimental TMEM87A and WLS structures showing relative positions of the H6 membrane-facing slot and modeled phospholipids. EM, electron microscopy.\n\n## Discussion\n\nIn this study, we report the first experimental structure of TMEM87A and consider its potential functional roles. TMEM87A shows general structural homology to ion transporting or conducting opsins and a recent report proposed TMEM87A contributes to mechanosensitive ion channel activity in cultured cells (Patkunarajah et al., 2020). We found no evidence of channel activity from purified TMEM87A reconstituted into proteoliposomes. This observation is consistent with the structure because while TMEM87A contains a solvent exposed cavity in its 7TM domain, it is sealed to the cytoplasmic side and open to the lipid bilayer, unlike typical ion conduction pathways. We cannot exclude the possibility that TMEM87A contributes to mechanosensitive ion channel currents under other conditions, in complex with other proteins, or in a cellular context. Still, further structural analyses and relationship to WLS suggest it may rather act indirectly to impact ion channel function, perhaps through regulating transport, expression, or activity of a mechanosensitive ion channel.\n\nWe discovered that TMEM87 consists of an extracellular or lumenal GOLD domain atop a membrane-spanning seven-transmembrane helix domain and shares this characteristic organization with at least seven other GOST proteins in humans. Similarity to canonical GPCRs in the transmembrane region raises the question of whether TMEM87A or other GOST proteins are competent for GPCR signaling. While ligands have been proposed for some GOST proteins, specifically, neurostatin for GPR107 and L-lactate for GPR180, no definitive molecular evidence of G-protein signaling has been reported for any family member and GPR180 has been reported not to signal as a GPCR (Balazova et al., 2021; Mosienko et al., 2018; Yosten et al., 2012). The position of helix 8 in TMEM87A is sterically incompatible with G-protein or arrestin binding and predicted structures of other GOST proteins present similar steric blocks. Taken together, this raises the possibility that GOST proteins are structurally incompatible with canonical GPCR signaling.\n\nIf GOST proteins do not function as channels or GPCRs, what functional roles might they serve? Most GOST family proteins are relatively understudied, though previous work supports roles for six members in different aspects of protein transport (Hirata et al., 2015; Shin et al., 2020; Tafesse et al., 2014; Carette et al., 2011; Elling et al., 2011; Zhou et al., 2014; Meisen et al., 2020; Dudek et al., 2020; Carette et al., 2009; B\u00e4nziger et al., 2006; Bartscherer et al., 2006). The best studied is WLS, for which a large body of work describes an essential role in Wnt signaling. Wnts must be secreted from the cell to accomplish their signaling functions, but they are lipidated during maturation and therefore embedded within intracellular membranes. WLS facilitates Wnt transport and secretion by interacting simultaneously with hydrophilic Wnt extracellular regions (through its GOLD domain) and hydrophobic Wnt membrane-embedded regions (though the 7TM cavity). Structurally, TMEM87A and other GOST proteins display, or are predicted to display, key features suggesting they could serve analogous roles; they (i) have GOLD domains positioned to interact with extracellular soluble domains or client proteins, (ii) have large transmembrane cavities, and (iii) expose the cavities simultaneously to the extracellular side and the membrane. This raises the intriguing possibility that GOST family proteins could transport lipidated or otherwise hydrophobic secreted proteins through a mechanism analogous to Wnt binding and transport by WLS. In this scenario, the two domains of GOST proteins would perform a sort of \u2018coincidence detection\u2019 in which the GOLD domain binds solvent-exposed portions and the internal cavity binds membrane-buried portions of cargo molecules. Potential cargo for GOST proteins includes Wnts and other lipidated secreted proteins such as ghrelin and some cytokines (Port et al., 2011; Hang and Linder, 2011; Jiang et al., 2018). Future studies are necessary to test the hypothesis that the GOST family proteins have common roles in transport of lipidated or membrane-embedded proteins.\n\n## Materials and methods\n\n### Cloning, expression, and purification\n\nThe coding sequence for Homo sapiens TMEM87A (Uniprot ID: Q8NBN3) was codon-optimized for expression in Spodoptera frugiperda cells (Sf9 cells) and synthesized (Integrated DNA Technologies). The sequence was cloned into a custom vector based on the pACEBAC1 backbone (MultiBac, Geneva Biotech) with an added C-terminal PreScission protease (PPX) cleavage site, linker sequence, superfolder GFP (sfGFP) and 7\u00d7 His tag, generating a construct for expression of TMEM87A-SNS-LEVLFQGP-SRGGSGAAAGSGSGS-sfGFP-GSS-7\u00d7His. MultiBac cells were used to generate a Bacmid according to the manufacturer\u2019s instructions. Sf9 cells were cultured in ESF 921 medium (Expression Systems, these cells were not further authenticated or tested for Mycoplasma) and P1 virus was generated from cells transfected with FuGENE transfection reagent (Active Motif) according to the manufacturer\u2019s instructions. P2 virus was then generated by infecting cells at 2 million cells per ml with P1 virus at a multiplicity of infection of roughly 0.1, with infection monitored by fluorescence and harvested at 72 \u2009hr. P3 virus was generated in a similar manner to expand the viral stock. The P3 viral stock was then used to infect Sf9 cells at 2 million cells per mL at a multiplicity of infection of around 2\u20135. At 72 \u2009hr, infected cells containing expressed TMEM87A-sfGFP protein were collected by centrifugation at 1000\u00d7g for 10\u2009min and frozen at \u221280\u00b0C. A cell pellet from 1 L culture was thawed and lysed by sonication in 100 mL buffer containing 50 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA, and protease inhibitors (1 \u2009mM phenylmethylsulfonyl fluoride, 1 \u2009\u03bcM E64, 1 \u2009\u03bcg/mL pepstatin A, 10 \u2009\u03bcg/mL soy trypsin inhibitor, 1 \u2009\u03bcM benzamidine, 1 \u2009\u03bcg/mL aprotinin, and 1 \u2009\u03bcg/mL leupeptin). The membrane fraction was collected by centrifugation at 150,000\u00d7g for 45 min and homogenized with a cold Dounce homogenizer in 100 mL buffer containing 20 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA, 1% n-dodecyl-b-D-maltopyranoside (DDM), 0.2% cholesteryl hemisuccinate (CHS), and protease inhibitors. Protein was extracted with gentle stirring for 2 hr at 4\u00b0C. The extraction mixture was centrifuged at 33,000\u00d7g for 45 min and the supernatant was bound to 5 mL Sepharose resin coupled to anti-GFP nanobody for 2 hr at 4\u00b0C. The resin was collected in a column and washed with 25 mL buffer 1 (20 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA, 0.025% DDM, and 0.005% CHS), 50 mL buffer 2 (20 mM Tris pH 8.0, 500 mM NaCl, 1 mM EDTA, 0.025% DDM, and 0.005% CHS) and 25 mL buffer 1. The resin was then resuspended in 5 mL of buffer 1 with 0.5 mg PPX protease and rocked gently in the capped column overnight. Cleaved TMEM87A was eluted with an additional 8 mL buffer 1, spin concentrated to roughly 500 \u03bcL with Amicon Ultra spin concentrator 50 kDa cutoff (Millipore), and then loaded onto a Superose 6 increase column (GE Healthcare) on an NGC system (Bio-Rad) equilibrated in buffer 1. Peak fractions containing TMEM87A were then collected and spin concentrated before incorporation into proteoliposomes or nanodiscs.\n\n### Nanodisc reconstitution\n\nFreshly purified TMEM87A was reconstituted into MSP1D1 nanodiscs with a mixture of lipids (DOPE:POPS:POPC at a 2:1:1 mass ratio, Avanti) at a final molar ratio of 1:4:400 (TMEM87A:MSP1D1:lipid mixture) (Ritchie et al., 2009). First, 20 mM solubilized lipids in nanodisc formation buffer (20 mM Tris pH 8.0, 150 mM NaCl, and 1 mM EDTA) was mixed with additional DDM detergent and TMEM87A. This solution was mixed at 4\u00b0C for 30\u2009min before addition of purified MSP1D1. The solution with MSP1D1 was mixed at 4\u00b0C for 30 min before addition of 200 mg of Biobeads SM2. This mix was incubated at 4\u00b0C for 30 min before addition of another 200 mg of Biobeads. This final mixture was then gently tumbled at 4 \u00b0C overnight (roughly 12 hr). Supernatant was cleared of beads by letting large beads settle and carefully removing liquid with a pipette. Sample was spun for 10 min at 21,000\u00d7g before loading onto a Superose 6 increase column in buffer containing 20 mM Tris pH 8.0, 150 \u2009mM NaCl. Peak fractions corresponding to TMEM87A in MSP1D1 were collected, 50 kDa cutoff spin concentrated and used for grid preparation. MSP1D1 was prepared as described without cleavage of the His-tag.\n\n### EM sample preparation and data collection\n\nTMEM87A in MSP1D1 nanodiscs was centrifuged at 21,000\u00d7g for 5 min at 4\u00b0C. A 3 \u00b5L sample was applied to holey carbon, 300 mesh R1.2/1.3 gold grids (Quantifoil, Gro\u00dfl\u00f6bichau, Germany) that were freshly glow discharged for 25 s. Sample was incubated for 5 s at 4 \u00b0C and 100% humidity prior to blotting with Whatman #1 filter paper for 3 s at blot force 1 and plunge-freezing in liquid ethane cooled by liquid nitrogen using an FEI Mark IV Vitrobot (FEI/Thermo Fisher Scientific, USA). Grids were clipped and transferred to an FEI Talos Arctica electron microscope operated at 200 kV. Fifty frame movies were recorded on a Gatan K3 Summit direct electron detector in super-resolution counting mode with pixel size of 0.5575 \u00c5. The electron dose rate was 8.849 e\u2212 \u00c52 s\u22121 and the total dose was 50.0 e\u2212 \u00c52. Nine movies were collected around a central hole position with image shift and defocus was varied from \u22120.6 to \u22121.8 \u00b5m through SerialEM (Mastronarde, 2005).\n\n### Cryo-EM data processing\n\n7060 micrograph movies were motion-correction with dose-weighting using RELION3.1\u2019s implementation of MotionCor2 and \u2018binned\u2019 2\u00d7 from super-resolution to the physical pixel size (Zheng et al., 2017; Zivanov et al., 2018; Zivanov et al., 2019). CTFFIND-4.1 was then used to estimate the contrast transfer function (CTF) (Rohou and Grigorieff, 2015). Micrographs with a CTF maximum estimated resolution worse than 4 \u00c5 were discarded, yielding 5898 micrographs. Particle images were auto-picked first with RELION3.1\u2019s Laplacian-of-Gaussian filter and, following initial clean-up and 2D classification, templated-based auto-picking was performed, yielding 2,674,406 particles. Two parallel paths were pursued to identify \u2018good\u2019 particles from this set. In one path, iterative 2D classification in RELION yielded 495,963 particles and 2D classification, ab initio reconstruction, heterogeneous refinement, and nonuniform refinement (in CryoSPARC, Punjani et al., 2017) yielded 185,958 particles and a 5.7 \u00c5 reconstruction. In a second path, iterative 2D classification, ab initio reconstruction, heterogeneous refinement, and nonuniform refinement (in CryoSPARC) yielded 100,165 particles and a 5.3 \u00c5 reconstruction. Particles from each path were combined, pruned of duplicates within a 100 \u00c5 cutoff, and subjected to 2D classification and 3D refinement in RELION yielding 262,901 particles and a 5.9 \u00c5 reconstruction. Particles were Bayesian polished in RELION and subjected to iterative rounds of ab initio reconstruction and nonuniform refinement in CryoSPARC yielding 112,707 particles and a 4.8 \u00c5 reconstruction. These particle positions were used for training in Topaz, and the resulting Topaz model used to repick 1,468,201 particles (Bepler et al., 2019). Iterative 2D classification in RELION and CryoSPARC resulted in 230,350 Topaz-picked particles which were merged with the training particle set, pruned of duplicates within a 100 \u00c5 cutoff, and re-centered, yielding 322,094 particles. Iterative ab initio reconstruction, 2D classification, and nonuniform refinement in CryoSPARC yielded 138,217 particles. This final set of particles was subjected to 3D refinement and Bayesian polishing in RELION and ab initio and nonuniform refinement in CryoSPARC until no further improvements in map quality were observed (Punjani et al., 2020). The output of the best nonuniform refinement was used for particle subtraction in RELION, after which final 3D refinement and postprocessing jobs were performed. This final refinement was input to Phenix resolve density modification to generate an additional map used during modeling (Terwilliger et al., 2020). Throughout processing, initial resolution and dynamic mask nonuniform parameters were adjusted empirically to yield the best performing refinement. UCSF pyem was used for conversion of files from cryoSPARC to RELION formats (Asarnow et al., 2019).\n\n### Model building and refinement\n\nThe final relion postprocessed map and Phenix density modified map were used for modeling. The AlphaFold2 TMEM87A model was rigid body fit to the density in ChimeraX and used as a foundation for manual model building in Coot (Goddard et al., 2018; Emsley et al., 2010). The model was real space refined in Phenix and assessed for proper stereochemistry and geometry using Molprobity (Liebschner et al., 2019; Williams et al., 2018). FSCs calculated in Phenix mtriage. Structures were analyzed and figures were prepared with CASTp, DALI, ChimeraX, JalView, Prism 8, Python GNU Image Manipulation Program, and Adobe Photoshop and Illustrator software (Holm, 2020; Tian et al., 2018; Waterhouse et al., 2009). Consurf was used to map conservation onto the structure surfaces using an alignment of sequences determined using SHOOT (Ashkenazy et al., 2016; Emms and Kelly, 2022). Electrostatic potentials calculated in ChimeraX. CASTp cavity calculation output was converted from JSON to PDB using a custom python script.\n\n### Proteoliposome reconstitution\n\nFor proteoliposome patching experiments, we incorporated protein into lipids and generated proteoliposome blisters for patch recordings using dehydration and rehydration as described previously (Del M\u00e1rmol et al., 2018) with the following modifications. TMEM87A in buffer 1 was exchanged into soybean l-\u03b1-phosphatidylcholine (Soy PC, MillaporeSigma) with the addition of Biobeads SM2 (Bio-Rad) and an hour incubation at a protein:lipid ratio of 1:10 corresponding to 0.4 \u2009mg purified TMEM87A and 4 \u2009mg of Soy PC lipid or 1:50 in buffer (5 \u2009mM HEPES pH 7.2, 200 \u2009mM KCl). TRAAK control proteoliposomes were prepared at 1:50 as described previously. Control liposomes were prepared from the same lipid and protocol with protein replaced with buffer 1.\n\n### Electrophysiology\n\nProteoliposomes were thawed and dispensed in 0.5\u20131 \u03bcL drops on a 35 mm glass-bottom dish. The drops were dried in a vacuum chamber in the dark overnight. Proteoliposomes were rehydrated with 20 \u03bcL buffer (5 \u2009mM HEPES pH 7.2, 200 \u2009mM KCl). Each cake was firstly covered with a buffer drop and then let surface tension connect drops. Rehydrating proteoliposomes were placed within a humid chamber at 4\u00b0C before patching. Recordings were made at room temperature using Clampex v.10.7 data acquisition software (as part of the pClamp v.10.7 suite) with an Axopatch 200B Patch Clamp amplifier and Digidata 1550B digitizer (Molecular Devices) at a bandwidth of 1 \u2009kHz and digitized at 500 \u2009kHz. A pressure clamp (ALA Scientific) was used to form seals. Pipette solution was 10 mM HEPES pH 7.2, 150 mM KCl, 3 mM MgCl2, and 5 mM EGTA. Bath solution was 10 mM HEPES pH 7.3, 135 mM NaCl, 15 mM KCl, 1 mM CaCl2, and 3 mM MgCl2. Borosilicate glass pipettes were pulled and polished to a resistance of 2\u20135 \u2009M\u03a9 when filled with pipette solution.\n",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "d9e80fc7-e80c-4ca3-9b6f-41dbc6c14706",
+      "submission_id": "a7321272-94bc-41af-9ad1-71ecd706ac6f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roel Nusse, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81704.sa0](https://doi.org/10.7554/eLife.81704.sa0)\n\nYour work addresses the mechanisms of action of the transmembrane proteins TMEM87A and TMEM87B, which are thought to play a role in protein transport but have been implicated in other processes as well, such as signaling and acting as mechanosensitive ion channels. The study represents an important advance in the understanding of this poorly characterized family of proteins.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Roel Nusse, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81704.sa1](https://doi.org/10.7554/eLife.81704.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structure of the GOLD-domain seven-transmembrane helix protein family member TMEM87A\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers are not asking for additional experiments but they make a number of recommendations with respect to the interpretation of the data, as well as the inclusion of additional data. For example, reviewer #2 suggests that it would be helpful to show the EM density map in Figure 1, to help the readers to understand the limitations of the structure. Reviewer # 3 asks why the structure is so low in resolution and more information as well.\n\nWe suggest that you submit a revised version of your manuscript addressing these and other questions from the reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nThe work would be of much wider interest if a target molecule would be known.\n\nReviewer #2 (Recommendations for the authors):\n\nWhile the work is well done, I have several suggestions that could improve the interpretability and accessibility of the study for a general audience.\n\n1. In the introduction, the authors mention previous studies that suggested that TMEM87s may participate in mechanosensation. In contrast, in this work, no mechanically activated currents could be observed from proteoliposomes containing purified proteins. Were the authors able to replicate any of these findings in a cellular context? Would it be possible to speculate on the differences between the in vitro and in cell environments and could that inform on the roles of TMEM87s?\n\n2. Because of the low resolution of the reconstruction, it would be helpful to show the EM density map in Figure 1. It would help the readers to understand the limitations of the structure.\n\n3. Continuing from point 2, the authors should take care with the assignment of the non-protein density in the cavity as a lipid molecule. The text should be toned down to note that while there is density, it could also be attributed to noise and the model shown in Figure 5c is highly speculative.\n\nReviewer #3 (Recommendations for the authors):\n\nThe major issue with this manuscript lies in the lack of data. A low resolution cryo-EM structure has been solved and compared to other structures and models to generate the hypothesis that this protein may have roles in trafficking membrane-associated cargo, but the experiments to demonstrate these have not been performed thus rendering this manuscript incomplete.\n\nIt is unclear as to why the structure is so low in resolution as very little information is provided re the collection and processing (e.g., micrograph number, particle number, box size) and it seems that the processing was not exhaustive \u2013 did the authors try local refinement, 3D classification without alignment, 3DVA? Without the details for the collection and processing it's hard to tell what the cause of this is, but in my opinion, it could be overcome by further processing, collection on a 300 keV microscope (which the authors should have access to through national facilities), and if necessary, fiducials to increase the size of the particle.\n\nReviewer #4 (Recommendations for the authors):\n\n1. Although no current was recorded in patched membrane, this negative result cannot formally exclude the possibility that TMEM87A may be part of an ion channel. The caveat should be discussed.\n\n2. Is helix 8 conserved across species in TMEM87A? Are the interactions between helix 8 and the intracellular surface of TM domain conserved? If so, this might help to strengthen the argument that helix 8 may block G-protein or Arrestin coupling.\n\n3. Is it possible to carry out some functional characterizations? For example, rescuing defective retrograde traffic (as mentioned in the introduction), if this assay is feasible. This might help to test whether its GOLD domain (and possibly cavity) is functionally important as suggested in the manuscript (based on comparison with WLS).\n\n4. It will be useful to present a more detailed workflow of the data processing in the supplementary figure.\n",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "055fc424-deef-4dd2-87ef-07ec0ceb10ef",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C1",
+      "claim": "TMEM87s are eukaryotic transmembrane proteins with two members (TMEM87A and TMEM87B) in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87s are eukaryotic transmembrane proteins with two members (TMEM87A and TMEM87B) in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract without supporting data in the manuscript, but is presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "b5fbbb0c-8f3e-4fd9-ae5e-1ca6bd545126",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C2",
+      "claim": "TMEM87s have proposed roles in protein transport to and from the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87s have proposed roles in protein transport to and from the Golgi, as mechanosensitive ion channels, and in developmental signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "4610f54d-0188-4cad-93b0-20bfcf188abd",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C3",
+      "claim": "TMEM87s have proposed roles as mechanosensitive ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87s have proposed roles in protein transport to and from the Golgi, as mechanosensitive ion channels, and in developmental signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "bd55ca43-8a46-414e-a36b-25775c84b3e9",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C4",
+      "claim": "TMEM87s have proposed roles in developmental signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87s have proposed roles in protein transport to and from the Golgi, as mechanosensitive ion channels, and in developmental signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "0fffdc12-ec75-4907-941a-31b152cac45f",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C5",
+      "claim": "TMEM87 disruption has been implicated in cancers and developmental disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87 disruption has been implicated in cancers and developmental disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "aa450ca6-830b-4e14-ba65-dcc681f84bdc",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C6",
+      "claim": "A cryo-EM structure of human TMEM87A in lipid nanodiscs was determined.",
+      "claim_type": "EXPLICIT",
+      "source": "To better understand TMEM87 structure and function, we determined a cryo-EM structure of human TMEM87A in lipid nanodiscs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript including figures and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "10877ae8-4e26-4fff-835e-1b8166d2931d",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C7",
+      "claim": "TMEM87A consists of a Golgi-dynamics (GOLD) domain atop a membrane-spanning seven-transmembrane helix domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87A consists of a Golgi-dynamics (GOLD) domain atop a membrane-spanning seven-transmembrane helix domain with a large cavity open to solution and the membrane outer leaflet.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural finding is supported by the cryo-EM structure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "99cd9bcd-d5d3-4e05-80fb-d05df62843c2",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C8",
+      "claim": "TMEM87A has a large cavity open to solution and the membrane outer leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87A consists of a Golgi-dynamics (GOLD) domain atop a membrane-spanning seven-transmembrane helix domain with a large cavity open to solution and the membrane outer leaflet.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural feature is observed in the cryo-EM structure and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "f009694a-0b17-4c90-9b0e-c76c17871af9",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C9",
+      "claim": "TMEM87A may not function as an ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and functional analyses suggest TMEM87A may not function as an ion channel or G-protein coupled receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by both structural analysis and electrophysiology experiments showing no channel activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "32b767f7-6448-41f0-a90b-6186ffcfec9d",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C10",
+      "claim": "TMEM87A may not function as a G-protein coupled receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and functional analyses suggest TMEM87A may not function as an ion channel or G-protein coupled receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparisons showing incompatibility with G-protein binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "28cba05b-b567-42c4-9b97-5815feb8a13b",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C11",
+      "claim": "TMEM87A shares its characteristic domain arrangement with seven other proteins in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We find TMEM87A shares its characteristic domain arrangement with seven other proteins in humans; three that had been identified as evolutionary related (TMEM87B, GPR107, and GPR108) and four previously unrecognized homologs (GPR180, TMEM145, TMEM181, and WLS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison using Dali search against AlphaFold2 predicted structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "73ce61b0-82e6-4af8-ab62-a8205deaa690",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C12",
+      "claim": "TMEM87B, GPR107, and GPR108 had been identified as evolutionary related to TMEM87A.",
+      "claim_type": "EXPLICIT",
+      "source": "We find TMEM87A shares its characteristic domain arrangement with seven other proteins in humans; three that had been identified as evolutionary related (TMEM87B, GPR107, and GPR108) and four previously unrecognized homologs (GPR180, TMEM145, TMEM181, and WLS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior bioinformatic analysis cited in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "e32e0e6b-477c-4335-9663-9f5115d2db43",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C13",
+      "claim": "GPR180, TMEM145, TMEM181, and WLS are previously unrecognized homologs of TMEM87A.",
+      "claim_type": "EXPLICIT",
+      "source": "We find TMEM87A shares its characteristic domain arrangement with seven other proteins in humans; three that had been identified as evolutionary related (TMEM87B, GPR107, and GPR108) and four previously unrecognized homologs (GPR180, TMEM145, TMEM181, and WLS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel finding from structural comparison using Dali search.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "35997e46-17da-4879-9aa2-2c62b5b41f4b",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C14",
+      "claim": "WLS is best characterized as a membrane trafficking and secretion chaperone for lipidated Wnt signaling proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these structurally related GOLD domain seven-transmembrane helix (GOST) proteins, WLS is best characterized as a membrane trafficking and secretion chaperone for lipidated Wnt signaling proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on WLS function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "8e2be2a0-9332-4b2a-898c-760c916c4878",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C15",
+      "claim": "Key structural determinants for WLS function are conserved in TMEM87A.",
+      "claim_type": "EXPLICIT",
+      "source": "We find key structural determinants for WLS function are conserved in TMEM87A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "5c8c60c6-f5d0-4e9a-84f4-4b34a3ffd652",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C16",
+      "claim": "TMEM87A and structurally homologous GOST proteins could serve a common role in trafficking membrane-associated cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose TMEM87A and structurally homologous GOST proteins could serve a common role in trafficking membrane-associated cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on structural similarity to WLS.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "9aa2b6ad-1817-4970-b29c-5316b89b8a19",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C17",
+      "claim": "TMEM87 proteins are found in eukaryotic organisms from fungi and plants to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87 proteins are transmembrane proteins found in eukaryotic organisms from fungi and plants to mammals (Edgar, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Edgar, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "96949c97-5aac-4de9-9ea9-be6e8566b965",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C18",
+      "claim": "TMEM87A and TMEM87B have been associated with protein transport to and from the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87A and TMEM87B have been associated with protein transport to and from the Golgi, mechanosensitive cation channel activity, and cardiac and other developmental processes (Hirata et al., 2015; Shin et al., 2020; Russell et al., 2014; Patkunarajah et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "5abbe76f-880a-43e4-a1c1-5817a67473d5",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C19",
+      "claim": "TMEM87A and TMEM87B have been associated with mechanosensitive cation channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87A and TMEM87B have been associated with protein transport to and from the Golgi, mechanosensitive cation channel activity, and cardiac and other developmental processes (Hirata et al., 2015; Shin et al., 2020; Russell et al., 2014; Patkunarajah et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations, particularly Patkunarajah et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "70155684-6de0-42d4-b12f-cf335c599aa4",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C20",
+      "claim": "TMEM87A and TMEM87B have been associated with cardiac and other developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87A and TMEM87B have been associated with protein transport to and from the Golgi, mechanosensitive cation channel activity, and cardiac and other developmental processes (Hirata et al., 2015; Shin et al., 2020; Russell et al., 2014; Patkunarajah et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations, particularly Russell et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "7e5c838c-f11f-4851-9149-594b2e83a6fe",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C21",
+      "claim": "TMEM87 proteins have been implicated in developmental diseases and cancers in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, TMEM87 proteins have been implicated in developmental diseases and cancers (Cooper et al., 2020; Shaver et al., 2016; Yu et al., 2016; Digilio et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "e763875a-c483-4e33-bc9c-02bea740829c",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C22",
+      "claim": "TMEM87s localize to the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "First, TMEM87s localize to the Golgi (Hirata et al., 2015; Shin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "485aa95a-f34a-410a-a01e-a2d73f440750",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C23",
+      "claim": "Overexpression of TMEM87A or TMEM87B partially rescues defective endosome-to-trans-Golgi network retrograde traffic in HEK293 cells lacking the GARP complex member VPS54.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, overexpression of TMEM87A or TMEM87B partially rescues defective endosome-to-trans-Golgi network retrograde traffic in HEK293 cells lacking the Golgi-associated retrograde protein (GARP) complex member VPS54 (Hirata et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hirata et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "58467e20-5ca3-4b9f-850d-4d9796289331",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C24",
+      "claim": "TMEM87A has been identified as retrograde cargo captured by mitochondrial golgins.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, TMEM87A has been identified as retrograde cargo captured by mitochondrial golgins (Shin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shin et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "f5026475-9fc4-4f84-9439-e6168d1d7fd3",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C25",
+      "claim": "Deflection of micropillar culture supports resulted in cationic currents in melanoma cells that were reduced by TMEM87A expression knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Deflection of micropillar culture supports resulted in cationic currents in melanoma cells that were reduced by TMEM87A expression knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Patkunarajah et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "6057c041-6052-4303-81d7-e89922da78f6",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C26",
+      "claim": "TMEM87A overexpression resulted in mechanosensitive currents in PIEZO1 knockout HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, TMEM87A overexpression resulted in mechanosensitive currents in PIEZO1 knockout HEK293T cells (Patkunarajah et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Patkunarajah et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "8daf4e2e-9a8e-4fdb-b547-8465a1d876a1",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C27",
+      "claim": "TMEM87A knockout melanoma cells show increased adhesion strength and decreased migration.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87A knockout melanoma cells show increased adhesion strength and decreased migration, suggesting potential roles for TMEM87A in these processes in cancers (Patkunarajah et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Patkunarajah et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "279f5438-ef82-4aa0-bc38-759497006bd8",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C28",
+      "claim": "TMEM87B has been linked to developmental processes in recurrent 2q13 microdeletion syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87B has been linked to developmental processes in recurrent 2q13 microdeletion syndrome (Russell et al., 2014; Yu et al., 2016; Digilio et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "424fc608-c70f-4645-a0e4-7e97f3bee67b",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C29",
+      "claim": "Patients with 2q13 microdeletion syndrome exhibit cardiac defects, craniofacial anomalies, and developmental delays.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with this syndrome exhibit cardiac defects, craniofacial anomalies, and developmental delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "8eca6e3c-1eee-45e6-bf94-c5aa0f9e2dc0",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C30",
+      "claim": "The vast majority of 2q13 microdeletions include TMEM87B.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of 2q13 microdeletions include TMEM87B (Yu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "2af4fa85-2dbd-4b13-8375-6d54d7c03228",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C31",
+      "claim": "Morpholino knockdown of TMEM87B in zebrafish resulted in cardiac hypoplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, morpholino knockdown of TMEM87B resulted in cardiac hypoplasia (Russell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Russell et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "53ac78c2-8e01-4e79-ab67-aa8f91af62b3",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C32",
+      "claim": "A patient with a severe cardiac phenotype had whole-exome sequencing that uncovered a paternally inherited TMEM87B missense mutation and chromosome 2 deletion inherited from an unaffected mother.",
+      "claim_type": "EXPLICIT",
+      "source": "In a patient with a severe cardiac phenotype, whole-exome sequencing uncovered a paternally inherited TMEM87B missense mutation and chromosome 2 deletion inherited from an unaffected mother (Yu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "47f4cc40-3c6f-4458-9d4d-ba21c19e67aa",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C33",
+      "claim": "TMEM87A and TMEM87B have been implicated in cancers such as non-small cell lung cancer through fusion or suspected interaction with oncogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both TMEM87A and TMEM87B have additionally been implicated in cancers such as non-small cell lung cancer through fusion or suspected interaction with oncogenes (Cooper et al., 2020; Shaver et al., 2016; Li et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "12132c8e-9ab1-43f5-b7b8-d75c7b545fa1",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C34",
+      "claim": "Bioinformatic analysis has grouped TMEM87A and TMEM87B in a small family of proteins (termed lung 7TM receptors or LUSTRs) with orphan GPCRs GPR107 and GPR108.",
+      "claim_type": "EXPLICIT",
+      "source": "Bioinformatic analysis has grouped TMEM87A and TMEM87B in a small family of proteins (termed lung 7TM receptors or LUSTRs) with so-called orphan GPCRs GPR107 and GPR108 (Edgar, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Edgar, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "a980baba-15c2-4b23-854b-0af09e2f6e3e",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C35",
+      "claim": "GPR107 and GPR108 localize to the Golgi and have suggested roles in protein trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Like TMEM87s, GPR107, and GPR108 localize to the Golgi and have suggested roles in protein trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations in the following sentences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "489cd891-2311-4a65-b15c-64770d3ff617",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C36",
+      "claim": "GPR107 is implicated in the transport of Pseudomonas aeruginosa Exotoxin A, Campylobacter jejuni cytolethal distending toxin (CDT), and ricin.",
+      "claim_type": "EXPLICIT",
+      "source": "GPR107 is implicated in the transport of Pseudomonas aeruginosa Exotoxin A, Campylobacter jejuni cytolethal distending toxin (CDT), and ricin, while GPR107 knockout cells display deficits in receptor-mediated endocytosis and recycling (Tafesse et al., 2014; Carette et al., 2011; Elling et al., 2011; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "72c1efdf-8f1a-43bd-b868-4579e08d2012",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C37",
+      "claim": "GPR107 knockout cells display deficits in receptor-mediated endocytosis and recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "GPR107 is implicated in the transport of Pseudomonas aeruginosa Exotoxin A, Campylobacter jejuni cytolethal distending toxin (CDT), and ricin, while GPR107 knockout cells display deficits in receptor-mediated endocytosis and recycling (Tafesse et al., 2014; Carette et al., 2011; Elling et al., 2011; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "bb327d96-f0ca-4a3f-953a-6937138bd68f",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C38",
+      "claim": "GPR108 is critical for the transduction of a majority of AAV serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "GPR108 is critical for the transduction of a majority of AAV serotypes (Meisen et al., 2020; Dudek et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Meisen et al., 2020 and Dudek et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "acf3246c-0a71-44eb-8ab7-9f6ee3094548",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C39",
+      "claim": "A GPR107 knockout mouse was embryonic lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "While a GPR107 knockout mouse was embryonic lethal, a GPR108 knockout mouse was viable and revealed a potential role for GPR108 in the regulation of Toll-like receptor-mediated signaling (Zhou et al., 2014; Dong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "f2f4518e-d9a2-4ae9-8698-f6ff0290356b",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C40",
+      "claim": "A GPR108 knockout mouse was viable and revealed a potential role for GPR108 in the regulation of Toll-like receptor-mediated signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "While a GPR107 knockout mouse was embryonic lethal, a GPR108 knockout mouse was viable and revealed a potential role for GPR108 in the regulation of Toll-like receptor-mediated signaling (Zhou et al., 2014; Dong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhou et al., 2014 and Dong et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "424a70d0-a977-49eb-a10f-eff7e950f991",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C41",
+      "claim": "No experimental structures of TMEM87s and LUSTR proteins have been reported prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being implicated in important cell biological processes and human health, our molecular understanding of TMEM87s and LUSTR proteins is limited and no experimental structures of these proteins have been reported to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge based on literature review.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "1498d795-dcac-4dd1-8c4d-37ac770e8977",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C42",
+      "claim": "Full-length human TMEM87A was expressed and purified from Sf9 insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length human TMEM87A was expressed and purified from Sf9 insect cells and reconstituted into lipid nanodiscs composed of MSP1D1 and a mixture of DOPE, POPS, and POPC lipids (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "dbd666d1-8d53-4ec3-8bee-1d2c7aae4a12",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C43",
+      "claim": "TMEM87A was reconstituted into lipid nanodiscs composed of MSP1D1 and a mixture of DOPE, POPS, and POPC lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length human TMEM87A was expressed and purified from Sf9 insect cells and reconstituted into lipid nanodiscs composed of MSP1D1 and a mixture of DOPE, POPS, and POPC lipids (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "00c04156-dc6e-48f5-b314-a7c7fafa5660",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C44",
+      "claim": "Cryo-EM was used to determine the structure of TMEM87A to a nominal resolution of 4.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM was used to determine the structure of TMEM87A to a nominal resolution of 4.7 \u00c5, with better resolved regions reaching ~4.3 \u00c5 in the core of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "f129d2ff-dcc5-4bf0-bd93-e54fceb3137d",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C45",
+      "claim": "Better resolved regions of the TMEM87A structure reach approximately 4.3 \u00c5 in the core of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM was used to determine the structure of TMEM87A to a nominal resolution of 4.7 \u00c5, with better resolved regions reaching ~4.3 \u00c5 in the core of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "80a620dc-9c0f-4b54-9b11-245361d796bc",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C46",
+      "claim": "The cryo-EM map was of sufficient quality to place secondary structure elements unambiguously.",
+      "claim_type": "EXPLICIT",
+      "source": "The map was of sufficient quality to place secondary structure elements unambiguously and, using an AlphaFold2 predicted structure as a starting model, to place and refine 395/555 residues (Figure 1, Figure 1\u2014figure supplements 2 and 3, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental structure determination process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "7a35778b-0b54-4f92-9d33-2a56825e0b90",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C47",
+      "claim": "395 out of 555 residues of TMEM87A were placed and refined in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The map was of sufficient quality to place secondary structure elements unambiguously and, using an AlphaFold2 predicted structure as a starting model, to place and refine 395/555 residues (Figure 1, Figure 1\u2014figure supplements 2 and 3, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "43dbd3d1-c00a-4824-b629-7a6f6479d4e1",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C48",
+      "claim": "The modeled portion of TMEM87A and corresponding AlphaFold2 predicted structure are similar with an overall r.m.s.d. of 1.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The modeled portion of TMEM87A and corresponding predicted structure are similar (overall r.m.s.d.=1.8 \u00c5) with a minor difference in the relative position of extracellular and transmembrane regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison between experimental and predicted structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "e141e68d-23b7-450a-912d-0e70405c1236",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C49",
+      "claim": "About 37 N-terminal residues (amino acids 1\u201337) of TMEM87A were not resolved in the cryo-EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "About 37 N-terminal residues (amino acids 1\u201337), 88 C-terminal residues (475-555), and 36 residues in loops within the extracellular domain (145\u2013173, 192\u2013198) were not resolved in the cryo-EM map and are unmodeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the experimental structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "2b703d68-6331-46eb-a284-a226c0cca7d9",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C50",
+      "claim": "88 C-terminal residues (475-555) of TMEM87A were not resolved in the cryo-EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "About 37 N-terminal residues (amino acids 1\u201337), 88 C-terminal residues (475-555), and 36 residues in loops within the extracellular domain (145\u2013173, 192\u2013198) were not resolved in the cryo-EM map and are unmodeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the experimental structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "787e3665-711e-4e07-859a-fc263ee9f828",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C51",
+      "claim": "36 residues in loops within the extracellular domain (145\u2013173, 192\u2013198) of TMEM87A were not resolved in the cryo-EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "About 37 N-terminal residues (amino acids 1\u201337), 88 C-terminal residues (475-555), and 36 residues in loops within the extracellular domain (145\u2013173, 192\u2013198) were not resolved in the cryo-EM map and are unmodeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the experimental structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "c30ec51e-bbd3-4e0b-b08e-a510b9b61852",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C52",
+      "claim": "TMEM87A is composed of an extracellular beta-sandwich domain atop a GPCR-like seven-transmembrane (7TM) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87A is composed of an extracellular beta-sandwich domain atop a G-protein coupled receptor (GPCR)-like seven-transmembrane (7TM) domain (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental structure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "24744a17-5773-4aa4-b830-f6860f186c03",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C53",
+      "claim": "The extracellular beta-sandwich domain of TMEM87A is formed by seven beta strands in two opposing sheets.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular beta-sandwich domain is formed by seven beta strands in two opposing sheets, with three strands on the N-terminal face and four on the opposing face.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "50ce415e-41f7-4385-a61e-95be22c8f558",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C54",
+      "claim": "Two disulfide bonds are observed in TMEM87A.",
+      "claim_type": "EXPLICIT",
+      "source": "Two disulfide bonds are observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "d532b035-3991-4b7d-8962-4fbe47734504",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C55",
+      "claim": "The first disulfide bond in TMEM87A is between C74 and C128.",
+      "claim_type": "EXPLICIT",
+      "source": "The first, between C74 and C128, connects two loops at the top of this extracellular domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "2e0625af-e7fa-4f8c-8ce7-10c3ece01ab8",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C56",
+      "claim": "The second disulfide bond in TMEM87A is between C89 and C431.",
+      "claim_type": "EXPLICIT",
+      "source": "The second, between C89 and C431, tethers the bottom of the extracellular domain to the top of the 7TM domain in the H6\u2013H7 linker, perhaps constraining their relative movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "4a558379-468b-49c7-8747-d314277ac433",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C57",
+      "claim": "The disulfide bond between C89 and C431 may constrain relative movement between the extracellular domain and 7TM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The second, between C89 and C431, tethers the bottom of the extracellular domain to the top of the 7TM domain in the H6\u2013H7 linker, perhaps constraining their relative movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural feature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "0f1df3c6-107c-4e93-8591-8915da2925f0",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C58",
+      "claim": "The transmembrane region of TMEM87A is structurally similar to other 7TM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane region of TMEM87A is structurally similar to other 7TM proteins, with a few notable differences (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparisons shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "41be2d54-71da-42d3-a59f-23108be6d0d7",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C59",
+      "claim": "Dali comparison of the isolated TMEM87A transmembrane domain to all experimentally determined protein structures returns 7TM proteins as clear structural homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Dali to compare the isolated TMEM87A transmembrane domain to all experimentally determined protein structures returns 7TM proteins as clear structural homologs, with the fungal class D GPCR Ste2, microbial opsins, and additional class A GPCRs among the hits (Holm, 2020; Velazhahan et al., 2021; Hayashi et al., 2020; Yamamoto et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "2ef72fc9-c471-4bb0-a039-b43893412c19",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C60",
+      "claim": "Purified TMEM87A reconstituted into proteoliposomes showed neither basal nor mechanically activated currents.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed neither basal nor mechanically activated currents in TMEM87A reconstituted proteoliposomes, in contrast to the mechanosensitive ion channel TRAAK used as a positive control (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology experiments shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "a8c5f8c4-4f09-4ac7-a7ab-cbd9966a7e98",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C61",
+      "claim": "TRAAK showed mechanically activated currents when reconstituted into proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed neither basal nor mechanically activated currents in TMEM87A reconstituted proteoliposomes, in contrast to the mechanosensitive ion channel TRAAK used as a positive control (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology experiments shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "7193ccf5-3cd7-4617-8b54-35975c8e09d8",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C62",
+      "claim": "The lack of channel activity in TMEM87A is consistent with the lack of a clear ion conducting path in the TMEM87A structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the lack of a clear ion conducting path in the TMEM87A structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "d95cba53-9c5f-484c-812a-aa392f259162",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C63",
+      "claim": "Under the tested conditions, TMEM87A does not form a mechanosensitive ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that under these conditions, TMEM87A does not form a mechanosensitive ion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on electrophysiology experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "b65f4b6b-8bdb-4531-8a44-1558535fc2cf",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C64",
+      "claim": "TMEM87A and the \u03b21-adrenergic receptor are superimposed with an overall r.m.s.d. of 4.13 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM87A and Class A GPCRs have a similar transmembrane helix organization, for example, TMEM87A and the \u03b21-adrenergic receptor are superimposed with an overall r.m.s.d. of 4.13 \u00c5 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "464842d0-5f52-4729-99f4-be5750858be2",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C65",
+      "claim": "The position of cytoplasmic helix 8 in TMEM87A differs substantially from experimental structures of GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the position of cytoplasmic helix 8 in TMEM87A differs substantially from experimental structures of GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "2ead0f86-545f-463f-bbb8-9e1c684b6715",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C66",
+      "claim": "In TMEM87A, helix 8 turns back towards the center of the protein and packs against the bottom of the transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In TMEM87A, helix 8 turns back towards the center of the protein and packs against the bottom of the transmembrane domain (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental structure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "2540087f-d750-4934-a9d0-21cf1e5d0f75",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C67",
+      "claim": "In experimental GPCR structures, helix 8 is rotated nearly 180\u00b0 and adopts a different position projecting toward the surrounding membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In experimental GPCR structures, helix 8 is instead rotated nearly 180\u00b0 and adopts a different position projecting toward the surrounding membrane (Warne et al., 2011; Lee et al., 2020; Alegre et al., 2021; Figure 2b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison to published GPCR structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "db5e23a7-0590-445c-a802-8b7a01eed4e3",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C68",
+      "claim": "The position of helix 8 in GPCRs appears necessary to accommodate G-protein or arrestin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This position of helix 8 in GPCRs appears necessary to accommodate G-protein or arrestin binding and is similarly positioned in apo- and complexed-receptor structures (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural comparison of GPCR structures.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "99002bc7-99e4-4879-bec9-80f07528a152",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C69",
+      "claim": "The position of helix 8 in TMEM87A would sterically clash with putative G-protein or arrestin binding through interfaces analogous to those observed in GPCR structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of helix 8 in TMEM87A would sterically clash with putative G-protein or arrestin binding through interfaces analogous to those observed in GPCR structures (Figure 2c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "d1026079-fbab-4091-8637-a019640e9926",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C70",
+      "claim": "Both helix 8 and the cytoplasmic surface it interacts with are highly conserved in TMEM87A across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Both helix 8 and the cytoplasmic surface it interacts with are highly conserved in TMEM87A across species (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by conservation analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "f5648f27-7b57-411b-9249-99aee32322b2",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C71",
+      "claim": "The TMEM87B point mutation N456D implicated in 2q13 deletion syndrome corresponds to TMEM87A residue N465 at the TM7-helix 8 junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the TMEM87B point mutation implicated in 2q13 deletion syndrome (TMEM87B N456D) corresponds to TMEM87A residue N465 at the TM7-helix 8 junction (Yu et al., 2016; Figure 2a), suggesting helix 8 is important for TMEM87B function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural mapping and citation to Yu et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "be8ce527-9d26-4572-8f84-400adb151ea7",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C72",
+      "claim": "Helix 8 is important for TMEM87B function.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the TMEM87B point mutation implicated in 2q13 deletion syndrome (TMEM87B N456D) corresponds to TMEM87A residue N465 at the TM7-helix 8 junction (Yu et al., 2016; Figure 2a), suggesting helix 8 is important for TMEM87B function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the location of a disease-associated mutation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "81cd5227-4a3e-403e-81f7-22d44d4cb8ae",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C73",
+      "claim": "TMEM87A does not share canonical motifs of class A or D GPCRs including the class A NPxxY activation motif, PIF motif, and D(E)/RY motif or the class D LPLSSMWA activation motif.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this difference in helix 8 position, TMEM87A does not share canonical motifs of class A or D GPCRs including the class A NPxxY activation motif, PIF motif, and D(E)/RY motif or the class D LPLSSMWA activation motif (Velazhahan et al., 2021; Palczewski et al., 2000; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis and comparison to known GPCR motifs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "3f77171d-814d-47f5-a800-a0d7c7e52b8a",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C74",
+      "claim": "The extracellular/lumenal region of TMEM87A adopts a Golgi dynamics (GOLD) domain fold.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the extracellular/lumenal region of TMEM87A adopts a Golgi dynamics (GOLD) domain fold (Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "46565ddd-e671-4ade-a466-6c6f391dc6d2",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C75",
+      "claim": "Dali comparison of the isolated TMEM87A extracellular \u03b2-sandwich domain to all experimentally determined protein structures returns human p24 GOLD domain proteins as top hits.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Dali to compare the isolated TMEM87A extracellular \u03b2-sandwich domain (residues 38\u2013218) to all experimentally determined protein structures returns human p24 GOLD domain proteins as top hits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "01502e14-6dac-4e05-aa61-6c98a72a1b84",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C76",
+      "claim": "TMEM87A and p24 show conservation of \u03b2 strand topology throughout the domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Superposition of the TMEM87A extracellular domain and p24 shows conservation of \u03b2 strand topology throughout the domain, with differences predominantly in regions connecting \u03b2 strands including the helix-turn-helix motif in the TMEM87A GOLD domain (Holm, 2020; Nagae et al., 2016; Figure 3\u2014figure supplement 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "866e766e-6a26-4f06-9747-303a053f75da",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C77",
+      "claim": "GOLD domain proteins have established roles in the secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "GOLD domain proteins have established roles in the secretory pathway (Nagae et al., 2016; Anantharaman and Aravind, 2002) and p24 proteins are implicated as cargo receptors for protein transport, with the GOLD domain mediating cargo recognition (Pastor-Cantizano et al., 2016; Mendes and Costa-Filho, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "f4e74cb6-5d5e-4161-abb5-5a0e6d094e89",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C78",
+      "claim": "p24 proteins are implicated as cargo receptors for protein transport, with the GOLD domain mediating cargo recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "GOLD domain proteins have established roles in the secretory pathway (Nagae et al., 2016; Anantharaman and Aravind, 2002) and p24 proteins are implicated as cargo receptors for protein transport, with the GOLD domain mediating cargo recognition (Pastor-Cantizano et al., 2016; Mendes and Costa-Filho, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "45d023ce-d486-4e39-80ca-43cc93adb4d5",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C79",
+      "claim": "Among different p24 proteins, the GOLD domain loops are among the most variable regions and have been hypothesized to recognize different cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Among different p24 proteins, the GOLD domain loops are among the most variable regions and have been hypothesized to recognize different cargo (Nagae et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Nagae et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "054444ad-bf01-4b0b-bff1-c62e47380ce3",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C80",
+      "claim": "Identification of a GOLD domain in TMEM87A suggests a structural explanation for the proposed roles of TMEM87s in protein transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of a GOLD domain in TMEM87A suggests a structural explanation for the proposed roles of TMEM87s in protein transport, with major differences in GOLD domain loops between TMEM87A and p24 perhaps indicative of differences in interacting partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural similarity to p24 proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "41a14013-f464-4948-9e66-88dc588d5e76",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C81",
+      "claim": "Major differences in GOLD domain loops between TMEM87A and p24 may be indicative of differences in interacting partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of a GOLD domain in TMEM87A suggests a structural explanation for the proposed roles of TMEM87s in protein transport, with major differences in GOLD domain loops between TMEM87A and p24 perhaps indicative of differences in interacting partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on structural comparison.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "e103c16d-a375-44c8-8d6b-8146beae93f4",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C82",
+      "claim": "Dali search against the entire AlphaFold2-predicted human proteome using the experimental TMEM87A structure uncovered proteins predicted to have the same domain topology consisting of a GOLD domain fused to a 7TM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a Dali search against the entire AlphaFold2-predicted human proteome using the experimental TMEM87A structure as the reference (Holm, 2020; Jumper et al., 2021; Varadi et al., 2022). This search uncovered proteins predicted to have the same domain topology consisting of a GOLD domain fused to a 7TM domain: all four members of the LUSTR family and four previously unrecognized homologs GPR180, TMEM145, TMEM181, and Wntless (WLS) (Figure 3, Figure 3\u2014figure supplement 1d\u2013j, Figure 3\u2014figure supplement 2a\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "bdfd6882-fa41-4533-a984-856b22cb9210",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C83",
+      "claim": "The predicted structures of GOST family members are all structurally homologous to TMEM87A with overall r.m.s.d. ranging from 1.85 to 3.87 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted structures are all structurally homologous to TMEM87A (overall r.m.s.d range from 1.85 to 3.87 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison of predicted structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "6ce4fe9e-c38e-4e95-845c-ce906e1d9c83",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C84",
+      "claim": "The authors propose an expansion of the LUSTR family to include additional members and to name them GOST proteins (for GOLD domain seven-transmembrane helix proteins).",
+      "claim_type": "EXPLICIT",
+      "source": "We propose an expansion of the LUSTR family to include these additional members and to name them GOST proteins (for GOLD domain seven-transmembrane helix proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "6677589c-100a-4255-92bd-a97bcc12b2e1",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C85",
+      "claim": "Prior work has associated GPR180 with TGF-B signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "While three newly identified GOST proteins have been minimally characterized to date (prior work has associated GPR180 with TGF-B signaling and TMEM181 with Escherichia coli CDT toxicity Balazova et al., 2021; Carette et al., 2009), WLS (also known as GPR177 or evenness interrupted homolog [EVI]) has been extensively studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Balazova et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "ba21be98-fac2-490a-a90d-8c540d5ea7d8",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C86",
+      "claim": "Prior work has associated TMEM181 with Escherichia coli CDT toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "While three newly identified GOST proteins have been minimally characterized to date (prior work has associated GPR180 with TGF-B signaling and TMEM181 with Escherichia coli CDT toxicity Balazova et al., 2021; Carette et al., 2009), WLS (also known as GPR177 or evenness interrupted homolog [EVI]) has been extensively studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Carette et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "790cffc2-5a49-40f3-a19f-d5eaf97ab312",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C87",
+      "claim": "WLS plays an essential role in chaperoning lipidated and secreted Wnt signaling proteins between internal membranes and the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "WLS plays an essential role in chaperoning lipidated and secreted Wnt signaling proteins between internal membranes and the cell surface (B\u00e4nziger et al., 2006; Bartscherer et al., 2006; Fu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "d304391c-9aa8-4559-90f8-ab2988cb3ca6",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C88",
+      "claim": "Recent cryo-EM structures of WLS bound to Wnt3a or Wnt8a provide insight into the basis for chaperone-client interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent cryo-EM structures of WLS bound to Wnt3a or Wnt8a provide insight into the basis for chaperone-client interactions (Nygaard et al., 2021; Zhong et al., 2021; Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to recent structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "e1b2064e-23a0-4fe1-8258-6763c34f32db",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C89",
+      "claim": "The extracellular region of Wnt interacts extensively with the WLS GOLD domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular region of Wnt interacts extensively with the WLS GOLD domain and an extended palmitoleated hairpin of Wnt that is buried in the large hydrophobic cavity within the WLS 7TM domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to WLS-Wnt structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "9ad85886-369d-4317-88d6-69aaeb58d665",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C90",
+      "claim": "An extended palmitoleated hairpin of Wnt is buried in the large hydrophobic cavity within the WLS 7TM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular region of Wnt interacts extensively with the WLS GOLD domain and an extended palmitoleated hairpin of Wnt that is buried in the large hydrophobic cavity within the WLS 7TM domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to WLS-Wnt structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "84cb034c-e5f9-4736-8427-1a74e12ecfd1",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C91",
+      "claim": "The transmembrane regions of TMEM87A and WLS are well aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of TMEM87A with WLS shows that the transmembrane regions are well aligned with two notable differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "93dc6657-180a-4c52-946f-486c1ac59206",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C92",
+      "claim": "WLS H4 and H5 are shifted approximately 13 \u00c5 away from the center of the protein compared to TMEM87A.",
+      "claim_type": "EXPLICIT",
+      "source": "First, WLS H4 and H5 are shifted approximately 13 \u00c5 away from the center of the protein, resulting in a larger cavity compared to TMEM87A necessary to accommodate the insertion of the lipidated Wnt hairpin (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "eafd233f-1139-40ec-bf0c-c6213d610785",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C93",
+      "claim": "The shift in WLS H4 and H5 results in a larger cavity compared to TMEM87A necessary to accommodate the insertion of the lipidated Wnt hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "First, WLS H4 and H5 are shifted approximately 13 \u00c5 away from the center of the protein, resulting in a larger cavity compared to TMEM87A necessary to accommodate the insertion of the lipidated Wnt hairpin (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "2d4352f4-27ff-41e4-afff-6cd6a889ded0",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C94",
+      "claim": "The WLS GOLD domain is shifted approximately 26 \u00c5 in the same direction of movement as the H4/H5 shift compared to TMEM87A.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative orientation of the GOLD and 7TM domains in TMEM87A and WLS also differs, with the WLS GOLD domain shifted approximately 26 \u00c5 in the same direction of movement as the H4/H5 shift (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "c78b6e7a-2b30-4c9c-9e82-495044864499",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C95",
+      "claim": "TMEM87A and WLS exhibit similar overall patterns of surface electrostatic charge including in the 7TM cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, TMEM87A and WLS exhibit similar overall patterns of surface electrostatic charge including in the 7TM cavity that, in WLS, mediates binding of the Wnt lipidated hairpin (Figure 4c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrostatic surface analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "3195ff63-6326-4c94-80fc-a6c725c951b8",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C96",
+      "claim": "The TMEM87A cavity measures approximately 8,637 \u00c5\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "In TMEM87A, this cavity measures approximately 8,637 \u00c5 (Shin et al., 2020) as compared to 12,350 \u00c5 (Shin et al., 2020) for the WLS cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cavity volume calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "9d195ca6-7950-44fd-aa66-c58999489a32",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C97",
+      "claim": "The WLS cavity measures approximately 12,350 \u00c5\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "In TMEM87A, this cavity measures approximately 8,637 \u00c5 (Shin et al., 2020) as compared to 12,350 \u00c5 (Shin et al., 2020) for the WLS cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cavity volume calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "a77a8a0b-f917-4bdf-97e2-a71787ac7510",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C98",
+      "claim": "The TMEM87A cavity is funnel-shaped, presenting a large opening to the extracellular side near the GOLD domain and tapering closed near the intracellular surface above helix 8.",
+      "claim_type": "EXPLICIT",
+      "source": "It is funnel-shaped, presenting a large opening to the extracellular side near the GOLD domain and tapering closed near the intracellular surface above helix 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental structure shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "0fb600ec-474d-42ad-9bc3-aaf6585703be",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C99",
+      "claim": "The corresponding cavity in experimental WLS structures is filled by the lipidated Wnt3a/8a hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding cavity in experimental WLS structures is filled by the lipidated Wnt3a/8 a hairpin (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by published WLS-Wnt structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "e7835a66-eb35-4ded-9a37-814b3105bc1c",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C100",
+      "claim": "The predicted WLS structure shows a smaller cavity relative to experimental WLS-Wnt structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the predicted WLS structure shows a smaller cavity relative to experimental WLS-Wnt structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of predicted and experimental WLS structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "555bd8ee-a6cb-4805-8388-bf1248a2dac7",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C101",
+      "claim": "The apo-WLS cavity could dilate to accommodate Wnt binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the apo-WLS cavity could dilate to accommodate Wnt binding (Figure 3\u2014figure supplement 2h\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on structural comparison.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "81fe3d48-fe68-4a30-9859-71879afceb9c",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C102",
+      "claim": "The TMEM87A cavity is exposed to the lipid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The TMEM87A cavity is also exposed to the lipid membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental structure shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "61c5cc4e-713c-42d3-95c7-bbad0be05132",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C103",
+      "claim": "H5 and H6 of TMEM87A are splayed apart to open a large 'slot' between the cavity and the upper leaflet of the bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "H5 and H6 are splayed apart to open a large 'slot' between the cavity and the upper leaflet of the bilayer (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental structure shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "d2b260c1-3d20-438e-9971-b46297c1bc19",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C104",
+      "claim": "Density within the membrane exposed portion of the hydrophobic cavity is consistent with a bound phospholipid.",
+      "claim_type": "EXPLICIT",
+      "source": "Density within the membrane exposed portion of the hydrophobic cavity is consistent with a bound phospholipid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the cryo-EM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "88e999d7-56e1-441e-8f10-177478890ac9",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C105",
+      "claim": "A partial lipid is modeled in TMEM87A based on density, chemical environment, and relationship to WLS, but this assignment is speculative given the relatively low resolution of the reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "A partial lipid is modeled based on density, chemical environment, and relationship to WLS, but we note this assignment is speculative given the relatively low resolution of the reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is acknowledged as speculative due to resolution limitations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "eda14ee0-9bdf-4dfd-b530-d31eac388322",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C106",
+      "claim": "The WLS cavity is open to the upper leaflet through a similar slot between H5 and H6.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the WLS cavity is open to the upper leaflet through a similar slot between H5 and H6 and a phospholipid is bound in a similar position in experimental structures (Figure 5d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by published WLS structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "f3d6a8ff-20fd-46f5-9443-1d7a178884d5",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C107",
+      "claim": "A phospholipid is bound in a similar position in experimental WLS structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the WLS cavity is open to the upper leaflet through a similar slot between H5 and H6 and a phospholipid is bound in a similar position in experimental structures (Figure 5d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by published WLS structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "79c6ec70-7488-4e2f-92e1-b837b4bb23d6",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C108",
+      "claim": "The slot in WLS is presumably important because it permits access of the lipidated Wnt hairpin from the membrane into the cavity binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The slot in WLS is presumably important because it permits access of the lipidated Wnt hairpin from the membrane into the cavity binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the WLS-Wnt structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "b1d686e7-b1c4-4753-859b-eca9968ac1e2",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C109",
+      "claim": "Mapping sequence conservation onto TMEM87A and WLS structures shows a similar pattern with strongly conserved residues in the transmembrane region lining the internal cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping sequence conservation onto TMEM87A and WLS structures shows a similar pattern with strongly conserved residues in the transmembrane region lining the internal cavity (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by conservation analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "5e0b330f-74ba-4622-97bc-b66ac615bd54",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C110",
+      "claim": "The structural homology between TMEM87A and WLS suggests they could similarly have evolved to bind and facilitate membrane trafficking of hydrophobic cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the structural homology between TMEM87A and WLS suggests they could similarly have evolved to bind and facilitate membrane trafficking of hydrophobic cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on structural similarity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "03f8a5b1-8788-42df-9068-557ba94d8bf1",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C111",
+      "claim": "TMEM87A does not contain a solvent-exposed cavity that is open to the cytoplasmic side, unlike typical ion conduction pathways.",
+      "claim_type": "IMPLICIT",
+      "source": "This observation is consistent with the structure because while TMEM87A contains a solvent exposed cavity in its 7TM domain, it is sealed to the cytoplasmic side and open to the lipid bilayer, unlike typical ion conduction pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural description and comparison to ion channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "afc2c746-fcbd-4f26-9686-5317adbd9a6f",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C112",
+      "claim": "TMEM87A may act indirectly to impact ion channel function, perhaps through regulating transport, expression, or activity of a mechanosensitive ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot exclude the possibility that TMEM87A contributes to mechanosensitive ion channel currents under other conditions, in complex with other proteins, or in a cellular context. Still, further structural analyses and relationship to WLS suggest it may rather act indirectly to impact ion channel function, perhaps through regulating transport, expression, or activity of a mechanosensitive ion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on structural analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "4156bb64-06bf-4e87-af1e-4e89dac2c8fd",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C113",
+      "claim": "Ligands have been proposed for some GOST proteins, specifically neurostatin for GPR107 and L-lactate for GPR180.",
+      "claim_type": "EXPLICIT",
+      "source": "While ligands have been proposed for some GOST proteins, specifically, neurostatin for GPR107 and L-lactate for GPR180, no definitive molecular evidence of G-protein signaling has been reported for any family member and GPR180 has been reported not to signal as a GPCR (Balazova et al., 2021; Mosienko et al., 2018; Yosten et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "210423fe-2dfc-4a44-8e71-a36f9fc8afd0",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C114",
+      "claim": "No definitive molecular evidence of G-protein signaling has been reported for any GOST family member.",
+      "claim_type": "EXPLICIT",
+      "source": "While ligands have been proposed for some GOST proteins, specifically, neurostatin for GPR107 and L-lactate for GPR180, no definitive molecular evidence of G-protein signaling has been reported for any family member and GPR180 has been reported not to signal as a GPCR (Balazova et al., 2021; Mosienko et al., 2018; Yosten et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and literature review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "5002bde7-ae45-4171-ac28-e3957a57df89",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C115",
+      "claim": "GPR180 has been reported not to signal as a GPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "While ligands have been proposed for some GOST proteins, specifically, neurostatin for GPR107 and L-lactate for GPR180, no definitive molecular evidence of G-protein signaling has been reported for any family member and GPR180 has been reported not to signal as a GPCR (Balazova et al., 2021; Mosienko et al., 2018; Yosten et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Balazova et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "67e2055f-1feb-4496-97f5-877834e87f62",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C116",
+      "claim": "Predicted structures of other GOST proteins present steric blocks similar to TMEM87A that would be incompatible with G-protein or arrestin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of helix 8 in TMEM87A is sterically incompatible with G-protein or arrestin binding and predicted structures of other GOST proteins present similar steric blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on analysis of predicted structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "540ca7a8-101f-4f1d-8469-a48c3428e3c1",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C117",
+      "claim": "GOST proteins may be structurally incompatible with canonical GPCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this raises the possibility that GOST proteins are structurally incompatible with canonical GPCR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "3f22b537-b643-43e1-8850-aec6d99d18c7",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C118",
+      "claim": "Previous work supports roles for six GOST family members in different aspects of protein transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Most GOST family proteins are relatively understudied, though previous work supports roles for six members in different aspects of protein transport (Hirata et al., 2015; Shin et al., 2020; Tafesse et al., 2014; Carette et al., 2011; Elling et al., 2011; Zhou et al., 2014; Meisen et al., 2020; Dudek et al., 2020; Carette et al., 2009; B\u00e4nziger et al., 2006; Bartscherer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "4b63130c-8bce-413d-84ff-6b52b1b14c44",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C119",
+      "claim": "Wnts must be secreted from the cell to accomplish their signaling functions, but they are lipidated during maturation and therefore embedded within intracellular membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnts must be secreted from the cell to accomplish their signaling functions, but they are lipidated during maturation and therefore embedded within intracellular membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Wnt biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "0c75cde3-382c-4667-9a26-2a47dcd9da1f",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C120",
+      "claim": "WLS facilitates Wnt transport and secretion by interacting simultaneously with hydrophilic Wnt extracellular regions (through its GOLD domain) and hydrophobic Wnt membrane-embedded regions (through the 7TM cavity).",
+      "claim_type": "EXPLICIT",
+      "source": "WLS facilitates Wnt transport and secretion by interacting simultaneously with hydrophilic Wnt extracellular regions (through its GOLD domain) and hydrophobic Wnt membrane-embedded regions (though the 7TM cavity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to WLS-Wnt structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "286882bf-f326-43db-918d-838efb0240b7",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C121",
+      "claim": "GOST family proteins have GOLD domains positioned to interact with extracellular soluble domains or client proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, TMEM87A and other GOST proteins display, or are predicted to display, key features suggesting they could serve analogous roles; they (i) have GOLD domains positioned to interact with extracellular soluble domains or client proteins, (ii) have large transmembrane cavities, and (iii) expose the cavities simultaneously to the extracellular side and the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "6687972a-7604-4474-b087-852317f73c5f",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C122",
+      "claim": "GOST family proteins have large transmembrane cavities.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, TMEM87A and other GOST proteins display, or are predicted to display, key features suggesting they could serve analogous roles; they (i) have GOLD domains positioned to interact with extracellular soluble domains or client proteins, (ii) have large transmembrane cavities, and (iii) expose the cavities simultaneously to the extracellular side and the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "4508542f-90ff-49e0-8a1e-1a377348daa6",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C123",
+      "claim": "GOST family proteins expose their cavities simultaneously to the extracellular side and the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, TMEM87A and other GOST proteins display, or are predicted to display, key features suggesting they could serve analogous roles; they (i) have GOLD domains positioned to interact with extracellular soluble domains or client proteins, (ii) have large transmembrane cavities, and (iii) expose the cavities simultaneously to the extracellular side and the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "aa36af02-92a2-433a-ad07-f234bf02187c",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C124",
+      "claim": "GOST family proteins could transport lipidated or otherwise hydrophobic secreted proteins through a mechanism analogous to Wnt binding and transport by WLS.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the intriguing possibility that GOST family proteins could transport lipidated or otherwise hydrophobic secreted proteins through a mechanism analogous to Wnt binding and transport by WLS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on structural similarity to WLS.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "bb93efeb-947e-4138-9f3b-0fe4db9a9583",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C125",
+      "claim": "In the proposed mechanism, the two domains of GOST proteins would perform a sort of 'coincidence detection' in which the GOLD domain binds solvent-exposed portions and the internal cavity binds membrane-buried portions of cargo molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, the two domains of GOST proteins would perform a sort of 'coincidence detection' in which the GOLD domain binds solvent-exposed portions and the internal cavity binds membrane-buried portions of cargo molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic proposal.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "43e25348-d2ed-4f1c-a1a5-9c69dd1818f6",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "claim_id": "C126",
+      "claim": "Potential cargo for GOST proteins includes Wnts and other lipidated secreted proteins such as ghrelin and some cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Potential cargo for GOST proteins includes Wnts and other lipidated secreted proteins such as ghrelin and some cytokines (Port et al., 2011; Hang and Linder, 2011; Jiang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal supported by citations about lipidated proteins.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8d452f29-943f-4098-991b-bba34c0a8fa8",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined a cryo-EM structure of human TMEM87A in lipid nanodiscs at 4.7 \u00c5 nominal resolution, with 395 of 555 residues modeled. The structure shows good agreement with AlphaFold2 predictions (r.m.s.d. 1.8 \u00c5), though N-terminal, C-terminal, and some loop regions remain unresolved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C42-C51 collectively describe the structure determination process with appropriate experimental details, resolution metrics, and limitations clearly stated. The cryo-EM data quality, model building approach, and comparison to computational predictions are well-documented in Figures 1 and supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "1441b47c-c021-4893-aa2d-108b9ec97389",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TMEM87A consists of an extracellular GOLD domain (beta-sandwich with seven beta strands) atop a seven-transmembrane helix domain. Two disulfide bonds are present: C74-C128 connecting extracellular loops and C89-C431 linking the GOLD domain to the 7TM domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C52-C57 describe the overall architecture and specific structural features directly observed in the experimental structure (Figure 1). The disulfide bonds and domain organization are clearly resolved in the cryo-EM map, though C57's speculation about constraining movement is appropriately tentative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "6ee36a76-231c-4db7-909f-9863583489c4",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TMEM87A contains a large funnel-shaped cavity (~8,637 \u00c5\u00b3) within the 7TM domain that is open to the extracellular side and exposed to the membrane through a slot between H5 and H6. Density consistent with a bound phospholipid is observed, though this assignment is acknowledged as speculative given the resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C96-C98, C102-C105 describe a key structural feature supported by the experimental data (Figure 5). The cavity volume calculation and lipid density observation are appropriately qualified given the 4.7 \u00c5 resolution. The authors appropriately acknowledge uncertainty in the lipid assignment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The TMEM87A transmembrane domain shows structural similarity to 7TM proteins and GPCRs, but helix 8 adopts a distinct position that would sterically clash with G-protein or arrestin binding. TMEM87A also lacks canonical GPCR motifs, suggesting it may not function as a conventional GPCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C70, C73 are well-supported by structural comparisons (Figure 2). The Dali search results, structural overlays with GPCRs, and conservation analysis provide strong evidence. The inference about incompatibility with G-protein signaling is reasonable based on the helix 8 position and lack of canonical motifs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "7c3b6ba8-69a8-44d7-831e-6d2179c35be7",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Purified TMEM87A reconstituted into proteoliposomes showed no basal or mechanically activated ion channel activity, in contrast to the TRAAK control. This is consistent with the structure showing a cavity sealed to the cytoplasmic side, unlike typical ion conduction pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63, C111 are supported by electrophysiology experiments (Figure 2\u2014figure supplement 2) with appropriate positive controls. The functional data align with structural observations. However, the authors appropriately note that channel activity under other conditions or in complex with other proteins cannot be excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "cfc2a283-3aff-49dc-8fb5-8a4e9bb655fb",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The extracellular domain of TMEM87A adopts a GOLD domain fold, structurally similar to p24 proteins that function as cargo receptors in the secretory pathway. This suggests a structural basis for TMEM87A's proposed role in protein transport, though differences in loop regions may indicate different cargo specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C81 are supported by Dali searches and structural comparisons (Figure 3). The identification of the GOLD domain is well-established through computational and visual analysis. The inference about protein transport function is reasonable given the known roles of p24 proteins, though cargo specificity remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "7790aa76-9e70-466d-b51f-c6eaa4861948",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Structural comparison against the AlphaFold2-predicted human proteome identified four previously unrecognized TMEM87A homologs (GPR180, TMEM145, TMEM181, WLS) sharing the GOLD-7TM domain architecture. The authors propose naming this expanded family GOST (GOLD domain seven-transmembrane helix) proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C13, C82-C84 describe a novel bioinformatic finding supported by Dali searches and structural comparisons (Figure 3). The r.m.s.d. values (1.85-3.87 \u00c5) indicate genuine structural homology. The expansion of the protein family and proposed nomenclature are reasonable based on the structural evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "8869c487-dd7a-4ee9-9086-03d82e45c316",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TMEM87A shares key structural features with WLS including similar transmembrane domain organization, electrostatic surface patterns, cavity exposure to the membrane through an H5-H6 slot, and conserved residues lining the internal cavity. However, WLS has a larger cavity (~12,350 \u00c5\u00b3) with H4/H5 shifted ~13 \u00c5 to accommodate Wnt binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C91-C95, C106-C109 are well-supported by detailed structural comparisons (Figures 4-5). The measurements, electrostatic analysis, and conservation mapping provide strong evidence for structural similarity. The differences in cavity size and helix positioning are clearly documented and rationalized in the context of WLS-Wnt binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "316dc3e6-9af7-426f-8eb6-f032ffe99776",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that TMEM87A and other GOST proteins could function as trafficking chaperones for membrane-associated cargo through a mechanism analogous to WLS-Wnt binding, with the GOLD domain binding soluble regions and the 7TM cavity binding lipidated regions. Potential cargo includes Wnts and other lipidated secreted proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C16, C110, C112, C117, C124-C126 present a speculative mechanistic model based on structural similarity to WLS. While the structural parallels are well-established, direct experimental evidence for cargo binding or transport function is lacking. The proposal is reasonable but requires validation through binding studies, functional assays, and cargo identification experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "8da1df43-0220-4444-a6c1-5973cc32c379",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "No definitive molecular evidence of G-protein signaling has been reported for any GOST family member, and predicted structures of other GOST proteins show similar steric incompatibilities with G-protein/arrestin binding as TMEM87A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C116 are supported by literature review and analysis of predicted structures. The lack of G-protein signaling evidence is appropriately documented through citations, and the structural incompatibility inference is reasonable based on helix 8 positioning across the family.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "42cca446-a93a-44f5-8cec-2cd3428640fd",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A TMEM87B point mutation (N456D) implicated in 2q13 deletion syndrome maps to the TM7-helix 8 junction in TMEM87A (N465), suggesting helix 8 is functionally important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 appropriately map a disease-associated mutation to the TMEM87A structure and make a reasonable inference about functional importance. The structural context supports the interpretation, though direct functional validation of this specific residue would strengthen the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "d358556e-a1b8-4a2f-b8f1-d101dec9988a",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The AlphaFold2-predicted WLS structure shows a smaller cavity than experimental WLS-Wnt structures, suggesting the apo-WLS cavity could dilate to accommodate Wnt binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 make a reasonable inference based on comparison of predicted and experimental structures (Figure 3\u2014figure supplement 2). The observation of cavity size differences is well-documented, and the dilation hypothesis is appropriately presented as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    },
+    {
+      "id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22",
+      "content_id": "8560c56a-22fc-4f72-bc1c-c6387bb9d682",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction and discussion provide comprehensive background on TMEM87 proteins and related GOST family members, including their proposed functions in protein trafficking, mechanosensation, and development, as well as implications in disease. This contextualizes the structural work within the broader literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C17-C41, C85-C90, C113, C118-C123 summarize prior work through appropriate citations. These background claims establish the rationale for the structural study and provide context for interpreting the results. The citations appear accurate and comprehensive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:10:33.949386Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aa450ca6-830b-4e14-ba65-dcc681f84bdc",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "1498d795-dcac-4dd1-8c4d-37ac770e8977",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "dbd666d1-8d53-4ec3-8bee-1d2c7aae4a12",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "00c04156-dc6e-48f5-b314-a7c7fafa5660",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "f129d2ff-dcc5-4bf0-bd93-e54fceb3137d",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "80a620dc-9c0f-4b54-9b11-245361d796bc",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "7a35778b-0b54-4f92-9d33-2a56825e0b90",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "43dbd3d1-c00a-4824-b629-7a6f6479d4e1",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "e141e68d-23b7-450a-912d-0e70405c1236",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "2b703d68-6331-46eb-a284-a226c0cca7d9",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "787e3665-711e-4e07-859a-fc263ee9f828",
+      "result_id": "8d452f29-943f-4098-991b-bba34c0a8fa8"
+    },
+    {
+      "claim_id": "10877ae8-4e26-4fff-835e-1b8166d2931d",
+      "result_id": "1441b47c-c021-4893-aa2d-108b9ec97389"
+    },
+    {
+      "claim_id": "c30ec51e-bbd3-4e0b-b08e-a510b9b61852",
+      "result_id": "1441b47c-c021-4893-aa2d-108b9ec97389"
+    },
+    {
+      "claim_id": "24744a17-5773-4aa4-b830-f6860f186c03",
+      "result_id": "1441b47c-c021-4893-aa2d-108b9ec97389"
+    },
+    {
+      "claim_id": "50ce415e-41f7-4385-a61e-95be22c8f558",
+      "result_id": "1441b47c-c021-4893-aa2d-108b9ec97389"
+    },
+    {
+      "claim_id": "d532b035-3991-4b7d-8962-4fbe47734504",
+      "result_id": "1441b47c-c021-4893-aa2d-108b9ec97389"
+    },
+    {
+      "claim_id": "2e0625af-e7fa-4f8c-8ce7-10c3ece01ab8",
+      "result_id": "1441b47c-c021-4893-aa2d-108b9ec97389"
+    },
+    {
+      "claim_id": "4a558379-468b-49c7-8747-d314277ac433",
+      "result_id": "1441b47c-c021-4893-aa2d-108b9ec97389"
+    },
+    {
+      "claim_id": "99cd9bcd-d5d3-4e05-80fb-d05df62843c2",
+      "result_id": "6ee36a76-231c-4db7-909f-9863583489c4"
+    },
+    {
+      "claim_id": "3195ff63-6326-4c94-80fc-a6c725c951b8",
+      "result_id": "6ee36a76-231c-4db7-909f-9863583489c4"
+    },
+    {
+      "claim_id": "9d195ca6-7950-44fd-aa66-c58999489a32",
+      "result_id": "6ee36a76-231c-4db7-909f-9863583489c4"
+    },
+    {
+      "claim_id": "a77a8a0b-f917-4bdf-97e2-a71787ac7510",
+      "result_id": "6ee36a76-231c-4db7-909f-9863583489c4"
+    },
+    {
+      "claim_id": "81fe3d48-fe68-4a30-9859-71879afceb9c",
+      "result_id": "6ee36a76-231c-4db7-909f-9863583489c4"
+    },
+    {
+      "claim_id": "61c5cc4e-713c-42d3-95c7-bbad0be05132",
+      "result_id": "6ee36a76-231c-4db7-909f-9863583489c4"
+    },
+    {
+      "claim_id": "d2b260c1-3d20-438e-9971-b46297c1bc19",
+      "result_id": "6ee36a76-231c-4db7-909f-9863583489c4"
+    },
+    {
+      "claim_id": "88e999d7-56e1-441e-8f10-177478890ac9",
+      "result_id": "6ee36a76-231c-4db7-909f-9863583489c4"
+    },
+    {
+      "claim_id": "0f1df3c6-107c-4e93-8591-8915da2925f0",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "41be2d54-71da-42d3-a59f-23108be6d0d7",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "b65f4b6b-8bdb-4531-8a44-1558535fc2cf",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "464842d0-5f52-4729-99f4-be5750858be2",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "2ead0f86-545f-463f-bbb8-9e1c684b6715",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "2540087f-d750-4934-a9d0-21cf1e5d0f75",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "db5e23a7-0590-445c-a802-8b7a01eed4e3",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "99002bc7-99e4-4879-bec9-80f07528a152",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "d1026079-fbab-4091-8637-a019640e9926",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "81cd5227-4a3e-403e-81f7-22d44d4cb8ae",
+      "result_id": "ce52e90d-bb56-47d2-8e0f-134aa5327a3d"
+    },
+    {
+      "claim_id": "2ef72fc9-c471-4bb0-a039-b43893412c19",
+      "result_id": "7c3b6ba8-69a8-44d7-831e-6d2179c35be7"
+    },
+    {
+      "claim_id": "a8c5f8c4-4f09-4ac7-a7ab-cbd9966a7e98",
+      "result_id": "7c3b6ba8-69a8-44d7-831e-6d2179c35be7"
+    },
+    {
+      "claim_id": "7193ccf5-3cd7-4617-8b54-35975c8e09d8",
+      "result_id": "7c3b6ba8-69a8-44d7-831e-6d2179c35be7"
+    },
+    {
+      "claim_id": "d95cba53-9c5f-484c-812a-aa392f259162",
+      "result_id": "7c3b6ba8-69a8-44d7-831e-6d2179c35be7"
+    },
+    {
+      "claim_id": "03f8a5b1-8788-42df-9068-557ba94d8bf1",
+      "result_id": "7c3b6ba8-69a8-44d7-831e-6d2179c35be7"
+    },
+    {
+      "claim_id": "3f77171d-814d-47f5-a800-a0d7c7e52b8a",
+      "result_id": "cfc2a283-3aff-49dc-8fb5-8a4e9bb655fb"
+    },
+    {
+      "claim_id": "46565ddd-e671-4ade-a466-6c6f391dc6d2",
+      "result_id": "cfc2a283-3aff-49dc-8fb5-8a4e9bb655fb"
+    },
+    {
+      "claim_id": "01502e14-6dac-4e05-aa61-6c98a72a1b84",
+      "result_id": "cfc2a283-3aff-49dc-8fb5-8a4e9bb655fb"
+    },
+    {
+      "claim_id": "866e766e-6a26-4f06-9747-303a053f75da",
+      "result_id": "cfc2a283-3aff-49dc-8fb5-8a4e9bb655fb"
+    },
+    {
+      "claim_id": "f4e74cb6-5d5e-4161-abb5-5a0e6d094e89",
+      "result_id": "cfc2a283-3aff-49dc-8fb5-8a4e9bb655fb"
+    },
+    {
+      "claim_id": "45d023ce-d486-4e39-80ca-43cc93adb4d5",
+      "result_id": "cfc2a283-3aff-49dc-8fb5-8a4e9bb655fb"
+    },
+    {
+      "claim_id": "054444ad-bf01-4b0b-bff1-c62e47380ce3",
+      "result_id": "cfc2a283-3aff-49dc-8fb5-8a4e9bb655fb"
+    },
+    {
+      "claim_id": "41a14013-f464-4948-9e66-88dc588d5e76",
+      "result_id": "cfc2a283-3aff-49dc-8fb5-8a4e9bb655fb"
+    },
+    {
+      "claim_id": "28cba05b-b567-42c4-9b97-5815feb8a13b",
+      "result_id": "7790aa76-9e70-466d-b51f-c6eaa4861948"
+    },
+    {
+      "claim_id": "e32e0e6b-477c-4335-9663-9f5115d2db43",
+      "result_id": "7790aa76-9e70-466d-b51f-c6eaa4861948"
+    },
+    {
+      "claim_id": "e103c16d-a375-44c8-8d6b-8146beae93f4",
+      "result_id": "7790aa76-9e70-466d-b51f-c6eaa4861948"
+    },
+    {
+      "claim_id": "bdfd6882-fa41-4533-a984-856b22cb9210",
+      "result_id": "7790aa76-9e70-466d-b51f-c6eaa4861948"
+    },
+    {
+      "claim_id": "6ce4fe9e-c38e-4e95-845c-ce906e1d9c83",
+      "result_id": "7790aa76-9e70-466d-b51f-c6eaa4861948"
+    },
+    {
+      "claim_id": "8e2be2a0-9332-4b2a-898c-760c916c4878",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "84cb034c-e5f9-4736-8427-1a74e12ecfd1",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "93dc6657-180a-4c52-946f-486c1ac59206",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "eafd233f-1139-40ec-bf0c-c6213d610785",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "2d4352f4-27ff-41e4-afff-6cd6a889ded0",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "c78b6e7a-2b30-4c9c-9e82-495044864499",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "eda14ee0-9bdf-4dfd-b530-d31eac388322",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "f3d6a8ff-20fd-46f5-9443-1d7a178884d5",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "79c6ec70-7488-4e2f-92e1-b837b4bb23d6",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "b1d686e7-b1c4-4753-859b-eca9968ac1e2",
+      "result_id": "8869c487-dd7a-4ee9-9086-03d82e45c316"
+    },
+    {
+      "claim_id": "5c8c60c6-f5d0-4e9a-84f4-4b34a3ffd652",
+      "result_id": "316dc3e6-9af7-426f-8eb6-f032ffe99776"
+    },
+    {
+      "claim_id": "5e0b330f-74ba-4622-97bc-b66ac615bd54",
+      "result_id": "316dc3e6-9af7-426f-8eb6-f032ffe99776"
+    },
+    {
+      "claim_id": "afc2c746-fcbd-4f26-9686-5317adbd9a6f",
+      "result_id": "316dc3e6-9af7-426f-8eb6-f032ffe99776"
+    },
+    {
+      "claim_id": "540ca7a8-101f-4f1d-8469-a48c3428e3c1",
+      "result_id": "316dc3e6-9af7-426f-8eb6-f032ffe99776"
+    },
+    {
+      "claim_id": "aa36af02-92a2-433a-ad07-f234bf02187c",
+      "result_id": "316dc3e6-9af7-426f-8eb6-f032ffe99776"
+    },
+    {
+      "claim_id": "bb93efeb-947e-4138-9f3b-0fe4db9a9583",
+      "result_id": "316dc3e6-9af7-426f-8eb6-f032ffe99776"
+    },
+    {
+      "claim_id": "43e25348-d2ed-4f1c-a1a5-9c69dd1818f6",
+      "result_id": "316dc3e6-9af7-426f-8eb6-f032ffe99776"
+    },
+    {
+      "claim_id": "210423fe-2dfc-4a44-8e71-a36f9fc8afd0",
+      "result_id": "8da1df43-0220-4444-a6c1-5973cc32c379"
+    },
+    {
+      "claim_id": "5002bde7-ae45-4171-ac28-e3957a57df89",
+      "result_id": "8da1df43-0220-4444-a6c1-5973cc32c379"
+    },
+    {
+      "claim_id": "67e2055f-1feb-4496-97f5-877834e87f62",
+      "result_id": "8da1df43-0220-4444-a6c1-5973cc32c379"
+    },
+    {
+      "claim_id": "f5648f27-7b57-411b-9249-99aee32322b2",
+      "result_id": "42cca446-a93a-44f5-8cec-2cd3428640fd"
+    },
+    {
+      "claim_id": "be8ce527-9d26-4572-8f84-400adb151ea7",
+      "result_id": "42cca446-a93a-44f5-8cec-2cd3428640fd"
+    },
+    {
+      "claim_id": "e7835a66-eb35-4ded-9a37-814b3105bc1c",
+      "result_id": "d358556e-a1b8-4a2f-b8f1-d101dec9988a"
+    },
+    {
+      "claim_id": "555bd8ee-a6cb-4805-8388-bf1248a2dac7",
+      "result_id": "d358556e-a1b8-4a2f-b8f1-d101dec9988a"
+    },
+    {
+      "claim_id": "055fc424-deef-4dd2-87ef-07ec0ceb10ef",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "b5fbbb0c-8f3e-4fd9-ae5e-1ca6bd545126",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "4610f54d-0188-4cad-93b0-20bfcf188abd",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "bd55ca43-8a46-414e-a36b-25775c84b3e9",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "0fffdc12-ec75-4907-941a-31b152cac45f",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "9aa2b6ad-1817-4970-b29c-5316b89b8a19",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "96949c97-5aac-4de9-9ea9-be6e8566b965",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "5abbe76f-880a-43e4-a1c1-5817a67473d5",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "70155684-6de0-42d4-b12f-cf335c599aa4",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "7e5c838c-f11f-4851-9149-594b2e83a6fe",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "e763875a-c483-4e33-bc9c-02bea740829c",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "485aa95a-f34a-410a-a01e-a2d73f440750",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "58467e20-5ca3-4b9f-850d-4d9796289331",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "f5026475-9fc4-4f84-9439-e6168d1d7fd3",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "6057c041-6052-4303-81d7-e89922da78f6",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "8daf4e2e-9a8e-4fdb-b547-8465a1d876a1",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "279f5438-ef82-4aa0-bc38-759497006bd8",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "424fc608-c70f-4645-a0e4-7e97f3bee67b",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "8eca6e3c-1eee-45e6-bf94-c5aa0f9e2dc0",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "2af4fa85-2dbd-4b13-8375-6d54d7c03228",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "53ac78c2-8e01-4e79-ab67-aa8f91af62b3",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "47f4cc40-3c6f-4458-9d4d-ba21c19e67aa",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "12132c8e-9ab1-43f5-b7b8-d75c7b545fa1",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "a980baba-15c2-4b23-854b-0af09e2f6e3e",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "489cd891-2311-4a65-b15c-64770d3ff617",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "72c1efdf-8f1a-43bd-b868-4579e08d2012",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "bb327d96-f0ca-4a3f-953a-6937138bd68f",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "acf3246c-0a71-44eb-8ab7-9f6ee3094548",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "f2f4518e-d9a2-4ae9-8698-f6ff0290356b",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "424a70d0-a977-49eb-a10f-eff7e950f991",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "6677589c-100a-4255-92bd-a97bcc12b2e1",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "ba21be98-fac2-490a-a90d-8c540d5ea7d8",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "790cffc2-5a49-40f3-a19f-d5eaf97ab312",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "d304391c-9aa8-4559-90f8-ab2988cb3ca6",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "e1b2064e-23a0-4fe1-8258-6763c34f32db",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "9ad85886-369d-4317-88d6-69aaeb58d665",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "4156bb64-06bf-4e87-af1e-4e89dac2c8fd",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "3f22b537-b643-43e1-8850-aec6d99d18c7",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "4b63130c-8bce-413d-84ff-6b52b1b14c44",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "0c75cde3-382c-4667-9a26-2a47dcd9da1f",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "286882bf-f326-43db-918d-838efb0240b7",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "6687972a-7604-4474-b087-852317f73c5f",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    },
+    {
+      "claim_id": "4508542f-90ff-49e0-8a1e-1a377348daa6",
+      "result_id": "39dc1c46-eea1-456a-ae99-b7ea2e20bd22"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1580 @@
+{
+  "submission": {
+    "id": "7038974a-c3c7-41af-878e-7f69549b2475",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:16:58.753569Z",
+    "updated_at": "2025-12-03T13:16:58.753569Z"
+  },
+  "content": [
+    {
+      "id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "submission_id": "7038974a-c3c7-41af-878e-7f69549b2475",
+      "content_type": "manuscript",
+      "content_text": "# Hybridization alters the shape of the genotypic fitness landscape, increasing access to novel fitness peaks during adaptive radiation\n\n## Authors\n\n- Austin H Patton<sup>1</sup> ([ORCID: 0000-0003-1286-9005](https://orcid.org/0000-0003-1286-9005))\n- Emilie J Richards<sup>1</sup> ([ORCID: 0000-0003-2734-6020](https://orcid.org/0000-0003-2734-6020))\n- Katelyn J Gould<sup>3</sup> ([ORCID: 0000-0001-5207-1810](https://orcid.org/0000-0001-5207-1810))\n- Logan K Buie<sup>3</sup>\n- Christopher H Martin<sup>1</sup> ([ORCID: 0000-0001-7989-9124](https://orcid.org/0000-0001-7989-9124)) \u2020\n\n### Affiliations\n\n1. Department of Integrative Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. Museum of Vertebrate Zoology, University of California, Berkeley Berkeley United States ([ROR:01rdg4502](https://ror.org/01rdg4502))\n3. Department of Biology, University of North Carolina Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEstimating the complex relationship between fitness and genotype or phenotype (i.e. the adaptive landscape) is one of the central goals of evolutionary biology. However, adaptive walks connecting genotypes to organismal fitness, speciation, and novel ecological niches are still poorly understood and processes for surmounting fitness valleys remain controversial. One outstanding system for addressing these connections is a recent adaptive radiation of ecologically and morphologically novel pupfishes (a generalist, molluscivore, and scale-eater) endemic to San Salvador Island, Bahamas. We leveraged whole-genome sequencing of 139 hybrids from two independent field fitness experiments to identify the genomic basis of fitness, estimate genotypic fitness networks, and measure the accessibility of adaptive walks on the fitness landscape. We identified 132 single nucleotide polymorphisms (SNPs) that were significantly associated with fitness in field enclosures. Six out of the 13 regions most strongly associated with fitness contained differentially expressed genes and fixed SNPs between trophic specialists; one gene (mettl21e) was also misexpressed in lab-reared hybrids, suggesting a potential intrinsic genetic incompatibility. We then constructed genotypic fitness networks from adaptive alleles and show that scale-eating specialists are the most isolated of the three species on these networks. Intriguingly, introgressed and de novo variants reduced fitness landscape ruggedness as compared to standing variation, increasing the accessibility of genotypic fitness paths from generalist to specialists. Our results suggest that adaptive introgression and de novo mutations alter the shape of the fitness landscape, providing key connections in adaptive walks circumventing fitness valleys and triggering the evolution of novelty during adaptive radiation.\n\n## Introduction\n\nFirst conceptualized by Sewell Wright in 1932, the adaptive landscape describes the complex relationship between genotype or phenotype and fitness (Wright, 1932). The landscape is a concept, a metaphor, and an empirical measurement that exerts substantial influence over all evolutionary dynamics (Gavrilets, 1997; Pigliucci and M\u00fcller, 2010; Svensson and Calsbeek, 2012; Fragata et al., 2019; Fear and Price, 1998). Fitness landscapes were originally depicted as high-dimensional networks spanning genotypic space in which each genotype is associated with fitness (Wright, 1932). Simpson, 1944, later described phenotypic evolution of populations through time on a rugged landscape, in which isolated clusters of fitness peaks represent \u2018adaptive zones\u2019 relative to adjacent regions of low fitness (Kauffman and Levin, 1987). Lande and Arnold formalized the analysis of selection and estimation of phenotypic fitness landscapes (Lande and Arnold, 1983; Arnold et al., 2001; Arnold, 2003), leading to empirical studies of fitness landscapes in numerous systems (Schluter and Grant, 1984; Schluter, 1988; Hendry et al., 2009; Beausoleil et al., 2019; Benkman, 2003; Martin and Wainwright, 2013a; Martin and Gould, 2020). Fitness surfaces are also central components of speciation models and theory (Gavrilets, 2004; Turelli et al., 2001; Servedio and Boughman, 2017).\n\nA central focus of fitness landscape theory is the characterization of the shape of the fitness landscape. Theoretical and empirical studies frequently attempt to describe its topography, such as quantifying the number of fitness peaks, one component of landscape ruggedness that affects the predictability of evolution (Fragata et al., 2019; Bank et al., 2016; Wright, 1931; Aita et al., 2001). Importantly, the existence of multiple peaks and valleys on the fitness landscape implies epistasis for fitness, or non-additive effects on fitness resulting from genotypic interactions (Wright, 1931; Whitlock et al., 1995; Poelwijk et al., 2007; Poelwijk et al., 2011). Fitness epistasis reduces the predictability of evolution because the resultant increase in the number of peaks increases the number of viable evolutionary outcomes (Kauffman and Levin, 1987; Neidhart et al., 2014). Increasing fitness epistasis also increases landscape ruggedness, thus reducing the probability of converging on any one fitness peak and ultimately diversifying potential evolutionary outcomes (Kauffman and Levin, 1987; Neidhart et al., 2014).\n\nThis leads to a fundamental concept in fitness landscape theory: Not all genotypic pathways are evolutionarily accessible (Fragata et al., 2019; Poelwijk et al., 2007; Weinreich et al., 2006; Ferretti et al., 2018; Franke et al., 2011; de Visser and Krug, 2014; Smith, 1970; Ogbunugafor, 2020). In large populations, paths through genotype space that monotonically increase in fitness at each mutational step are favored over alternatives with neutral or deleterious steps (Fisher, 1930). These accessible genotypic paths can be considered adaptive walks under Fisher\u2019s geometric model, by which adaptation proceeds toward a phenotypic optimum via additive mutations of small phenotypic effect (Fisher, 1930; Orr, 2005). On rugged landscapes as originally envisioned by Wright, 1931, greater numbers of peaks (i.e. the ruggedness) increase the mean length of potential adaptive walks to any one fitness optimum, while decreasing the length of accessible paths to the nearest peak. Ultimately, this leads to a decrease in the probability that any one fitness optimum is reached. Simultaneously, increasing landscape ruggedness decreases the length of adaptive walks to the nearest local optimum, owing to the corresponding increase in peak density.\n\nThere are a growing number of experimental studies of adaptive walks in nature, including the evolution of toxin resistance in monarch butterflies (Karageorgi et al., 2019), alcohol tolerance in Drosophila (Siddiq et al., 2017; Siddiq and Thornton, 2019), and host-shift in aphids (Singh et al., 2020). Likewise, the accessibility of genotypic fitness networks has now been explored in numerous microbial systems, including the evolution of antibiotic resistance (Weinreich et al., 2006), metabolism (Peng et al., 2018), citrate exploitation (Blount et al., 2008), and glucose limitation in Escherichia coli (Khan et al., 2011), and adaptation to salinity in yeast via evolution of heat shock protein Hsp90 (Bank et al., 2016). However, these studies are still limited to the investigation of specific coding substitutions and their effects on fitness in laboratory environments. Nosil et al., 2020 estimated genotypic fitness networks for Timema stick insects based on a field experiment. Similarly, this study focused on a single large-effect locus underlying dimorphic coloration between ecotypes. These studies represent significant advances, but extension of fitness landscape theory to empirical systems including multiple species remains an underexplored area of future research at the intersection of micro- and macroevolution. Such studies can provide insight into the topography of fitness landscapes in natural systems, the accessibility of interspecific adaptive walks, and ultimately the predictability of evolution.\n\nOne promising system for estimating fitness landscapes is a recent adaptive radiation of Cyprinodon pupfishes endemic to San Salvador Island, Bahamas (Martin and Wainwright, 2013a; Martin and Gould, 2020; Martin and Wainwright, 2013b; Martin, 2016). This radiation is comprised of two trophic specialists, a molluscivore (durophage: Cyprinodon brontotheroides) and a scale-eater (lepidophage: Cyprinodon desquamator), derived from a Caribbean-wide generalist (Cyprinodon variegatus) which also coexists in the same habitats. These three species all occur in sympatry in the hypersaline lakes of San Salvador Island, Bahamas (Figure 1a). Found in the benthic littoral zone of each lake, all three species forage within the same benthic microhabitat; indeed, no habitat segregation has been observed in 14 years of field studies. Originating less than 10,000 years ago (based on geological age estimates for the lakes: Turner et al., 2008), the functional and trophic novelty harbored within this radiation is the product of exceptional rates of craniofacial morphological evolution (Martin and Wainwright, 2011; St John et al., 2020a; Martin et al., 2019; St John et al., 2020b). Furthermore, species boundaries persist across multiple lake populations, despite persistent admixture among species (Martin and Feinstein, 2014; Richards et al., 2021). We previously estimated fitness landscapes in these hypersaline lakes from two independent field experiments measuring the growth and survival of hybrids placed in field enclosures (Figure 1b). Selection analyses revealed a multi-peaked phenotypic fitness landscape that is stable across lake populations, year of study, and manipulation of the frequency of rare hybrid phenotypes (Martin and Wainwright, 2013a; Martin and Gould, 2020; Martin, 2016). One of the strongest and most persistent trends across studies and treatments was that hybrid phenotypes resembling the scale-eater were isolated in the lowest fitness region for both growth and survival relative to the other two species (Martin and Wainwright, 2013a; Martin and Gould, 2020). In contrast, hybrids resembling the generalist occupied a fitness peak and were separated by a smaller fitness valley from hybrids resembling the molluscivore, which occurred on a second peak of higher fitness.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig1-v1.jpg)\n\n**Figure 1.:** (a) From top to bottom: the generalist, Cyprinodon variegatus, the molluscivore Cyprinodon brontotheroides, and the scale-eater Cyprinodon desquamator. (b) Representative images of experimental field enclosures. (c) Principal component analysis of 1,129,771 linear discriminant (LD)-pruned single nucleotide polymorphisms (SNPs) genotyped in hybrids and the three parental species. (d) Unsupervised ADMIXTURE analyses for Crescent Pond (top) and Little Lake (bottom). G, M, and S indicate individual samples of generalists (G), molluscivores (M), and scale-eaters (S), respectively, followed by all resequenced hybrid individuals from field experiments. Colors indicate ancestry proportions in each population (K = 3).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The first two principal component axes are plotted in Figure 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig1-figsupp2-v1.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Sampled individuals of each species (leftmost) individuals were assigned to one of three populations, whereas ancestry proportions were estimated for all resequenced hybrid individuals from field experiments. Colors correspond to probability of assignment to one of three assumed populations/species (K = 3) in this analysis.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig1-figsupp4-v1.jpg)\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Results of a generalized linear model in which survival (modeled as a binomial) is predicted by ancestry proportion, including lake and experiment as fixed effects. Points represent individual hybrids, with each individual represented by two points, one indicating their respective scale-eater (salmon and molluscivore blue) ancestry proportions. P-values correspond to the effect of each type of ancestry (scale-eater \u2013 red, molluscivore \u2013 blue) on survival probability. Lines are predicted values and are colored according to species.\n\nEvolutionary trajectories through regions of low fitness should be inaccessible to natural selection. How then did an ancestral generalist population cross these phenotypic fitness valleys to reach new fitness peaks and adapt to novel ecological niches? A growing theoretical and empirical literature on fitness landscapes has demonstrated the limited conditions for crossing fitness valleys (Weissman et al., 2010; Weissman et al., 2009; Iwasa et al., 2004; Bitbol and Schwab, 2014). Fitness peaks and valleys in morphospace may result only from the reduction of the adaptive landscape to two phenotypic dimensions (Wagner, 2012). Additional phenotypic and genotypic dimensions may reveal fitness ridges that entirely circumvent fitness valleys (Martin, 2016; Conrad, 1990; Whibley et al., 2006). Indeed, owing to nonlinearity in the association between phenotype and fitness (Martin et al., 2007; Gros et al., 2009), even a single-peaked phenotypic fitness landscape may be underlaid by a multi-peaked genotypic fitness landscape (Hwang et al., 2017; Park et al., 2020). In this respect, investigating the high-dimensional genotypic fitness landscape is key to understanding the origins of novelty in this system, particularly given the rare evolution of lepidophagy (scale-eating), a niche occupied by less than 0.3% of all fishes (Froese and Pauly, 2021).\n\nFurthermore, the relative contributions of standing genetic variation, de novo mutations, and adaptive introgression to the tempo and mode of evolution are now of central interest to the field of speciation genomics (Seehausen, 2014; Martin and Jiggins, 2017; Marques et al., 2019; Nelson and Cresko, 2018; Thompson et al., 2019). The three-dimensional adaptive landscape metaphor is often invoked to explain how the genetic, phenotypic, and ecological diversity introduced to populations by hybridization facilitates the colonization of neighboring fitness peaks that are unoccupied by either hybridizing species (Mallet, 2007; Seehausen, 2004; Pardo-Diaz et al., 2012). However, extension of these ideas to more high-dimensional genotypic fitness landscapes remains underexplored. For instance, we have yet to learn how the appearance of novel adaptive genetic variation through introgressive hybridization or de novo mutation alters the realized epistatic interactions among loci, thus potentially altering the shape of the fitness landscape and the accessibility of interspecific adaptive walks.\n\nThe adaptive radiation of San Salvador Island pupfishes, like many others (Pease et al., 2016; Richards et al., 2018; Meier et al., 2017; McGee et al., 2020; Irisarri et al., 2018), appears to have originated from a complex interplay of abundant standing genetic variation, adaptive introgression from neighboring islands, and several de novo single-nucleotide mutations and deletions found only in the scale-eater (Richards et al., 2021; Richards et al., 2017). Notably, both specialists harbor numerous introgressed single nucleotide polymorphisms (SNPs) showing evidence of hard selective sweeps in the regulatory regions of known craniofacial genes (Richards et al., 2021; Richards et al., 2017). In contrast, hard selective sweeps of de novo mutations only appear in the scale-eating species, C. desquamator. Here, we leverage whole-genome sequencing of 139 hybrids measured in field experiments to identify the genomic basis of fitness differences, infer genotypic fitness networks, summarize their topography, and quantify the accessibility of novel fitness peaks and the influence of each source of genetic variation on interspecific adaptive walks.\n\n## Results\n\n### Sample collection and genomic resequencing\n\nWe resequenced 139 hybrids (86 survivors, 56 deaths; Supplementary file 1\u2014table 1) from two independent field experiments across a total of six field enclosures and two lake populations 2011: two high-density 3 m diameter enclosures exposed for 3 months: Crescent Pond n = 796; Little Lake n = 875 F2 hybrids (Martin and Wainwright, 2013a); 2014/2015: four high-density 4 m diameter enclosures exposed for 3 months in Crescent Pond, n = 923 F4/F5 hybrids and 11 months in Little Lake, n = 842 F4/F5 hybrids (Martin and Gould, 2020). We then characterized patterns of genetic variation among parental species in each lake and their lab-reared hybrids used in field experiments. We genotyped 1,129,771 SNPs with an average coverage of 9.79\u00d7 per individual.\n\n### Population structure and ancestry associations with fitness\n\nPrincipal components analysis (PCA) of genetic variation strongly differentiated pupfishes sampled from Little Lake/Osprey Lake and Crescent Pond (PC1: 22.7% variance explained) and among species within each lake (PC2: 15.9% variance explained: Figure 1d; Figure 1\u2014figure supplements 1\u20132). These results were supported by ADMIXTURE analyses (Alexander et al., 2009; Alexander and Lange, 2011; Figure 1e). However, some hybrids were genotypically transgressive, falling outside the genotypic distributions of the three parental species (Figure 1\u2014figure supplement 2), leading ADMIXTURE to assign the third cluster to these hybrids, rather than generalists which often contain segregating variation found in trophic specialists (Froese and Pauly, 2021). This pattern persisted in a supervised ADMIXTURE analysis, in which we assigned individuals from the three parental species a priori to their own population and estimated admixture proportions for the remaining hybrids (Figure 1\u2014figure supplement 3). Pairwise genetic distances were significantly associated with pairwise morphological distances (Figure 1\u2014figure supplement 4).\n\nWe analyzed three measures of fitness (growth, survival, and their composite: see Materials and methods and Supplement for details), but focus herein on composite fitness, which is equal to growth for survivors and zero for non-survivors. Growth could not be measured for tagged hybrids that died in field enclosures and thus were not recovered. Because reproductive success was not possible to quantify in field experiments (due to continuous egg-laying and very small, newly hatched fry), composite fitness included only measurements of growth and survival.\n\nInterestingly, in no case were genome-wide patterns of parental ancestry in hybrids (estimated from unsupervised ADMIXTURE analyses) associated with hybrid composite fitness (generalist p = 0.385; scale-eater p = 0.439; molluscivore p = 0.195), growth (generalist p = 0.119; scale-eater p = 0.283; molluscivore p = 0.328), or survival probability (generalist p = 0.440; scale-eater p = 0.804; molluscivore p = 0.313) while controlling for effects of lake and experiment (Figure 1\u2014figure supplement 5; Supplementary file 1\u2013table 2). Similar results were obtained when repeating these analyses using admixture proportions estimated from a supervised ADMIXTURE analysis (Supplementary file 1\u2013table 3), using only samples from the second field experiment (Supplementary file 1\u2013table 4), or using principal component axes estimated from genome-wide SNPs (Supplementary file 1\u2013table 5: see Supplementary results). Therefore, in contrast to previous studies (Arnegard et al., 2014; Wang et al., 2002; Leimu et al., 2006), in this system genome-wide ancestry is not consistently associated with fitness, highlighting the complex nonlinear relationship between genotype, phenotype, and fitness within this nascent adaptive radiation. We must look to local ancestry to understand fitness relationships (e.g. Schluter et al., 2021).\n\n### Genome-wide association mapping of fitness\n\nFrom our linear discriminant (LD)-pruned dataset, we used a linear mixed model (LMM) in GEMMA to identify 132 SNPs in regions that were strongly associated with composite fitness, including 13 which remained significant at the conservative Bonferroni-corrected threshold (Figure 2a, Supplementary file 1\u2013tables 6\u20137; see supplement for results for survival and growth alone (Supplementary file 1\u2013tables 8\u20139; Figure 2\u2014figure supplement 1)). Gene ontologies for these 132 fitness-associated regions were significantly enriched for synaptic signaling and chemical synaptic transmission (false discovery rate [FDR] rate <0.01; Figure 2\u2014figure supplement 2; Supplementary file 1\u2013table 7). Ontologies enriched at an FDR rate <0.05 were related to signaling and regulation of cell communication (for growth, see Figure 2\u2014figure supplement 3). We did not identify any enrichment for ontologies related to craniofacial development which have previously been identified to play a significant role in the adaptive divergence of these fishes (Richards et al., 2021; Richards et al., 2017; McGirr and Martin, 2020). This suggests that fitness-associated regions in our field experiments captured additional components of fitness beyond the external morphological phenotypes measured in previous studies.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig2-v1.jpg)\n\n**Figure 2.:** (a) Per-single nucleotide polymorphism (SNP) log10 p-values from a genome-wide association test with GEMMA for composite fitness (survival \u00d7 growth). Lake and experiment were included as covariates in the linear mixed model. SNPs that were significant at false discovery rate (FDR) < 0.05 are indicated in blue; red SNPs above dashed red line cross the threshold for Bonferroni significance at \u03b1 = 0.05. The first 24 scaffolds are sorted from largest to smallest and remaining scaffolds were pooled. The six genes associated with composite fitness which were both strongly differentiated (FST > 0.95) and differentially expressed between specialists (McGirr and Martin, 2020) are annotated. (b\u2013c) Best-fit adaptive landscape for composite fitness using either morphology alone (b flat surface with only directional selection) or morphology in combination with fitness-associated SNPs (c highly nonlinear surface). Best-fit model in c was a generalized additive model (GAM) including a thin-plate spline for both linear discriminant (LD) axes, fixed effects of experiment and lake, and fixed effects of the seven (see Supplementary methods) SNPs most strongly associated with fitness shown in red in panel a. (d) Three-dimensional view of c with relative positions of the three parental phenotypes indicated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Significant associations are highlighted in blue (false discovery rate [FDR] < 0.05) or red (Bonferroni correction p < 0.05). The dashed red line indicates the threshold for significance following Bonferroni p-value adjustment. METTL21E and CSAD are both highly differentiated (FST > 0.95) among specialists, differentially expressed. METTL21E is also misexpressed in F1 hybrids, meaning it exhibits gene expression that is higher or lower than observed in both parental species (McGirr and Martin, 2020), indicating it is involved in intrinsic incompatibilies.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Darker colors indicate ontologies that are more significantly enriched following false discovery rate (FDR) correction. Length of bar is proportional to the number of genes assigned to an ontology.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Darker colors indicate ontologies that are more significantly enriched following false discovery rate (FDR) correction. Length of bar is proportional to the number of genes assigned to an ontology.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The corresponding traits are shown in Supplementary file 1\u2013table 7.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (a) Linear discriminant (LD) morphospace. Parent species and hybrids are plotted using the two LD axes that together serve to distinguish species with 99.4% accuracy. (b) Within-group disparity calculated as the median distance between each individual and the groups centroid. Small, semi-transparent points are the result of 100 bootstrap replicates, and are summarized by box plots, which in turn show the median and interquartile ranges of these bootstrap replicates. Large, opaque points are the observed disparities using the full dataset per group. All pairwise comparisons using t-tests following correction for the false discovery rate were significant (p < 0.001).\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Colored points indicate locations of parent species in linear discriminant (LD) morphospace, and ellipses indicate their 50% (solid) and 95% (dotted) confidence intervals. Gray points indicate location of hybrid individuals, with size proportional to their fitness measure. Cooler colors on the adaptive landscape indicate lower predicted fitness.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** The focal fitness landscape (Figure 3c\u2013d) was estimated using composite fitness, linear discriminant (LD) axes obtained from all morphological traits, and the most-strongly fitness-associated single nucleotide polymorphisms (SNPs). The mean value of predicted fitness across all bootstrap replicates is plotted as a solid black line; the dashed black line indicates \u00b11 standard deviation. The observed predicted fitness is plotted as the solid red line. Observed parental morphological LD scores are plotted as colored vertical hashes: see legend at bottom. Subplots (a, b, and c) are estimates along LD1, as calculated from the bottom, middle, and top third of LD2 values, respectively. Subplots (d, e, and f) are estimates along LD2, as calculated from the bottom, middle, and top third of LD1 values, respectively.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig2-figsupp8-v1.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Shown is the same landscape as in Figure 2, but the plotted points are unique SNP haplotypes for the 13 most strongly fitness-associated SNPs. One haplotype is particularly frequent among hybrids; individuals with this haplotype are closer in morphospace to generalists and appear to drive the emergence of a local fitness optimum for generalists. All other haplotypes (points) are plotted with a distinct color per haplotype.\n\nWe characterized whether genes in or near fitness-associated regions were implicated in adaptive divergence of the specialists. Surprisingly, no fitness-associated regions overlapped with regions showing significant evidence of a hard selective sweep (Richards et al., 2021). However, six fitness-associated genes were previously shown to contain either fixed divergent SNPs (csad, glcci1, ino80c, mag, pim2, mettl21e) or a fixed deletion between specialists (med25) (McGirr and Martin, 2020). Med25 (mediator complex subunit 25) is a craniofacial transcription factor associated with cleft palate in humans and zebrafish (Nakamura et al., 2011; Mork and Crump, 2015); a precursor of mag (myelin-associated glycoprotein) was also associated with the parallel evolution of the thick-lipped phenotype in Midas cichlids based on differential expression among morphs (Manousaki et al., 2013). Three of the six remaining fitness-associated genes containing divergent SNPs (McGirr and Martin, 2020) were associated with growth and/or body size measurements in other fishes. First, csad plays an important role in synthesizing taurine which is a rate-limiting enzyme affecting growth rate in parrotfishes (Lim et al., 2013), rainbow trout (Gaylord et al., 2006), and Japanese flounder (Yokoyama et al., 2001). Second, glcci1 is associated with the body depth/length ratio in yellow croaker (Zhou et al., 2019). Third, ino80c is associated with measures of body size in Nile tilapia (Yoshida and Y\u00e1\u00f1ez, 2021). Finally, mettl21e was differentially expressed among specialists and also misexpressed in F1 hybrids between scale-eaters and molluscivores at 8 days post-fertilization and thus is a putative genetic incompatibility in this system that may impact their fitness in field enclosures (McGirr and Martin, 2020; Kulmuni and Westram, 2017). Although it has not been associated with growth or body size in fishes, mettl21e is associated with intramuscular fat deposition in cattle (Fonseca et al., 2020). Taken together, these findings support the interpretation that fitness-associated regions are associated with unmeasured traits, particularly physiological growth rate, or craniofacial shape in the case of the deletion in med25, that affect fitness in our hybrid field experiments. However, the fitness-associated loci we identified appear not to have the subject of selective sweeps in either specialist.\n\n### Fitness-associated SNPs improve inference of the adaptive landscape\n\nFitness landscapes in past studies were estimated using slightly different sets of morphological traits; thus, to enable inclusion of all hybrids on a single fitness landscape, a single observer (AHP) remeasured all sequenced hybrids for 31 morphological traits (Figure 2\u2014figure supplement 4; Supplementary file 1\u2013tables 1\u201310). We used linear discriminant axes and generalized additive models (GAM) to estimate phenotypic fitness landscapes for the sequenced hybrids on a two-dimensional morphospace indicating similarity to each of the three parental populations following previous studies (Martin and Wainwright, 2013a; Martin and Gould, 2020; Figure 2\u2014figure supplement 5; Supplementary file 1\u2013tables 11\u201313). We then tested whether inclusion in the GAM of the 13 genomic regions most strongly associated with fitness (red: Figure 2a) improved our inference of the underlying adaptive landscape. Models including fitness-associated SNPs were invariably favored over models with external morphology alone (\u0394AICc > 8.6: Supplementary file 1\u2013tables 14\u201315). Morphology-only models predicted a flat fitness surface (Figure 2b, Figure 2\u2014figure supplement 6; predictions restricted to observed hybrid morphospace). In contrast, models including fitness-associated SNPs predicted a complex and nonlinear fitness landscape, despite our limited dataset of 139 sequenced hybrids relative to samples in previous morphology-only studies of >800 hybrids per enclosure.\n\nTo reduce complexity of the full model estimated from 31 morphological traits including all 13 fitness-associated SNPs, we fit an additional model including only the seven most significant fitness-associated SNPs in the full model. This reduced model was the best fit; the inferred adaptive landscape was complex and characterized by a fitness peak near hybrids resembling the generalist phenotype separated by a small fitness valley from a second region of high fitness for hybrids resembling the molluscivore phenotype. Hybrids resembling the scale-eater phenotype again occurred in a large fitness valley (Figure 2b\u20132d: For results pertaining to growth or survival, see Supplementary file 1: Figure 2\u2014figure supplement 6, Supplementary file 1\u2013tables 11\u201315). Each of these fitness peaks and valleys were frequently recovered across 10,000 bootstrap replicates; landscapes inferred from bootstrap replicates were often more complex with increased curvature relative to inferences from our observed dataset (Figure 2\u2014figure supplement 7). Thus, the fitness landscape estimated from our observed dataset appears robust to sampling uncertainty.\n\nCompared to previous studies, the highest fitness optimum was shifted from the molluscivore to the generalist phenotype. This suggests that fitness-associated SNPs increased the fitness of hybrids resembling generalists beyond expectations based on their morphology alone, consistent with the hypothesis that fitness-associated SNPs are associated with unmeasured non-morphological traits affecting fitness. Indeed, visualization of observed haplotypes in hybrids across the fitness landscape supported this interpretation; one of the most common haplotypes was most frequent in hybrids resembling generalists near the peak of high fitness and rare in hybrids resembling either trophic specialist (Figure 2\u2014figure supplement 8). Regardless, this two-dimensional phenotypic fitness landscape did not reveal fitness ridges connecting generalists to specialists, further emphasizing the need to investigate the genotypic fitness landscape.\n\n### Trophic novelty is associated with isolation on the genotypic fitness network\n\nThe adaptive radiation of pupfishes on San Salvador Island originated within the last 10,000 years through a combination of selection on standing genetic variation, adaptive introgression, and de novo mutations (Richards et al., 2021). However, it is unclear how each source of genetic variation aided in the traversal of fitness paths or contributed to the colonization of novel fitness peaks. To address this knowledge gap, we first sought to visualize genotypic fitness networks and gain insight into how isolated the three species are in genotypic space. Understanding the relative isolation of each specialist from the generalist can reveal the relative accessibility of their respective adaptive walks on the genotypic fitness landscape.\n\nTo accomplish this, we reconstructed genotypic fitness networks from 1498 candidate adaptive alleles previously identified in this system (e.g. Figure 3a; Richards et al., 2021). These regions displayed significant evidence of a hard selective sweep using both site frequency spectrum and LD-based methods, SweeD (Pavlidis et al., 2013) and OmegaPlus (Alachiotis et al., 2012), and contained fixed or nearly fixed SNPs (FST > 0.95) differentiating trophic specialists across lakes (Richards et al., 2021). Adaptive alleles were classified as standing variation, introgressed, or de novo mutations based on extensive sampling of focal and related Cyprinodon pupfish species across San Salvador Island and neighboring Caribbean islands, as well as North and South American outgroups (Richards et al., 2021). We note, however, that adaptive alleles designated as de novo on San Salvador Island may be segregating at low frequencies in other sampled populations or present in unsampled populations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig3-v1.jpg)\n\n**Figure 3.:** (a) Most nearly fixed or fixed variants (FST \u2265 0.95) experiencing hard selective sweeps (hereafter \u2018adaptive alleles\u2019) originated as standing genetic variation (SGV: molluscivores = 96%, scale-eaters = 92%), followed by introgression (molluscivores = 4%, scale-eaters = 6%), and de novo mutation (scale-eaters = 2%)(Richards et al., 2021). Pie charts show adaptive alleles retained in our study for each species; networks are constructed from either set of adaptive alleles. (b) Genotypic network constructed from a random sample of 10 single nucleotide polymorphisms (SNPs), sampled from all SNPs shown in a. Each edge between nodes is up five mutational steps away; edge width is proportional to mutational distance: wider edges connect closer haplotypes; hybrid node size is proportional to fitness (larger nodes are of greater fitness value). (c) Median number of mutational steps within or between species (e.g. Figure 4a). All pairwise comparisons using Tukey\u2019s HSD test (after false discovery rate [FDR] correction) were significant.\n\nThese fitness networks depict both hybrids and parental species in genotypic space, with nodes representing SNP haplotypes and edges connecting mutational neighbors (Figure 3b). Genotypic space is immense; using SNPs coded as homozygous reference, heterozygote, or homozygous alternate, the number of potential haplotypes is equal to $3^{#\u00a0SNPs\u00a0in\u00a0network}$ . For instance, to construct a reduced network of 100 SNPs, there are a total of $3^{100}=5.17\u00a0\\times\u00a010^{57}$ possible nodes. Thus, unlike experimental studies of individual proteins in haploid E. coli (Weinreich et al., 2006; Khan et al., 2011) or yeast (Bank et al., 2016), it is not possible for us to investigate the full breadth of genotypic space.\n\nInstead, to understand the distribution of parental species and their hybrids in genotypic space, we began by using a random sample of 10 SNPs drawn from our set of candidate adaptive alleles in this system. Here, we plotted edges between nodes up to five mutational steps away (e.g. Figure 3b) and found that generalists and molluscivores are closer on the genotypic fitness network than either is to scale-eaters (Figure 3c), as expected based on their genetic distance. Most scale-eaters appear quite isolated in genotypic space, separated from the generalist cluster of nodes by 12.6 \u00b1 0.091 (mean \u00b1 SE: p < 0.001) mutational steps and from molluscivores by 16.3 \u00b1 0.060 steps (p < 0.001). In contrast, molluscivores were separated from generalists by 5.37 \u00b1 0.103 steps (p < 0.001). Generalists show the greatest intrapopulation distances, separated from each other by 6.08 \u00b1 0.088 steps (p < 0.001). In contrast, molluscivores exhibited the smallest intrapopulation distances, separated by 1.75 \u00b1 0.021 steps (p < 0.001). Scale-eater intrapopulation distances were intermediate (4.71 \u00b1 0.088 steps: p < 0.001).\n\n### Molluscivore genotypes are more accessible to generalists than scale-eater genotypes on the genotypic fitness landscape\n\nThe most accessible paths through genotypic fitness networks are characterized by monotonically increasing fitness at each mutational step and the smallest possible number of steps between two states (Fragata et al., 2019; Weinreich et al., 2006; Franke et al., 2011; Figure 4a\u2013b). Furthermore, as described earlier, the accessibility of individual fitness peaks is predicted to be reduced on increasingly rugged fitness landscapes that are characterized by a greater number of fitness peaks (Kauffman and Levin, 1987; Neidhart et al., 2014; Franke et al., 2011; de Visser and Krug, 2014). This provides three useful metrics of evolutionary accessibility for genotypic trajectories: (1) the total number of accessible paths relative to network size (Figure 4\u2014figure supplement 1; Supplementary file 1\u2013table 16), (2) the length of the shortest accessible paths, and (3) the number of fitness peaks (ruggedness). Here, we define peaks as genotypes with no fitter neighbors and within a single mutational step (Ferretti et al., 2018). With these three metrics, we can quantify the accessibility of interspecific genotypic pathways.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig4-v1.jpg)\n\n**Figure 4.:** (a) Diagram illustrating genotypic fitness networks and adaptive walks between species for a hypothetical two-single nucleotide polymorphism (SNP) genotypic fitness landscape. Species A and B are separated by four mutational steps. Dashed lines indicate inaccessible paths that decrease in fitness leaving a single possible accessible evolutionary trajectory between species A and B (indicated by bold arrows). Each node in our study is associated with an empirical measure of hybrid fitness from field experiments (Martin and Wainwright, 2013a; Martin and Gould, 2020). Edges are always drawn as directed from low to high fitness. (b) The same network as in (a), with fitness plotted on the y-axis and number of mutational steps from species A to B on the x-axis. The only accessible path between species A and B is indicated by solid arrows. (c) Number of accessible paths between generalists and either specialist, scaled by network size. (d) Length (# of nodes) of the shortest accessible paths. Means (large points) \u00b1 2 standard errors are plotted. (e) Ruggedness, as measured by the number of peaks (genotypes with no fitter neighbors within a single mutational step; Ferretti et al., 2018). (f) Number of accessible paths to peaks, scaled by network size. (g) Length of the shortest accessible path to the nearest peak. (h) Odds ratios (OR: maximum likelihood estimate and 95% CI) for each measure of accessibility (x-axis corresponds to panel letters); molluscivore networks have significantly greater summary statistics when OR > 1. Molluscivore genotypes are more accessible to generalists than scale-eater genotypes due to a significantly greater number of accessible paths separating them (c) that are significantly shorter (d). Molluscivore genotypic networks were also less rugged, that is, they contained significantly fewer peaks (e), each of which were in turn more accessible from the generalist genotypes (f, g).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The number of edges (and thus number of potential paths) is strongly positively correlated with the observed number of nodes (unique single nucleotide polymorphism [SNP] haplotypes) in a network (a). Correspondingly, both the number of nodes (b) and number of edges (c) positively correlate with the number of accessible paths between generalists and specialists in a given network. Only results for composite fitness are plotted; results are consistent across fitness measures. Models correspond to those in Supplementary file 1\u2013table 13 Poisson regression was chosen as each response variable corresponds to count data. Because Poisson regression models are log-linear, we report the exponentiated coefficient which corresponds to the expected multiplicative increase in the mean of Y per unit value of X.\n\nWe used these measures of accessibility to ask: (1) whether molluscivore or scale-eater genotypes were more accessible to generalists on the fitness landscape (Figure 4c\u2013d) and (2) whether molluscivore and scale-eater genotypic fitness networks differed in their ruggedness, characterized by peak number (Figure 4e\u2013g). These measures provide insight into the predictability of evolution and the role that epistasis plays in their evolution (Kauffman and Levin, 1987; Wright, 1931; Neidhart et al., 2014; Whitlock et al., 1995).\n\nWe constructed 5000 genotypic fitness networks from a random sample of five species-specific candidate adaptive SNPs (Figure 3a) for either molluscivores or scale-eaters, requiring that at least one SNP of each source of genetic variation be present in the sample. We used odds ratios (ORs) to compare the relative accessibility and ruggedness of molluscivore fitness networks compared to scale-eater networks (Figure 4h). Thus, ORs greater than 1 imply summary statistics are greater for molluscivores than for scale-eaters.\n\nWe found that molluscivore genotypes were significantly more accessible to generalists on the fitness landscape than scale-eaters (Supplementary file 1\u2013table 17); molluscivore networks had significantly more accessible paths [OR: (95% CI) = 2.095: (1.934, 2.274)] that were significantly shorter [OR and 95% CI = 0.253: (0.231, 0.277)]. Not only were molluscivore genotypes more accessible to generalists, but molluscivore fitness networks were significantly less rugged than scale-eater networks, comprised of fewer peaks [OR and 95% CI = 0.604: (0.575, 0.634)], and connected by significantly more accessible paths [OR and 95% CI = 1.514: (1.404, 1.635)], that contained fewer mutational steps [OR and 95% CI = 0.539: (0.500, 0.579)].\n\n### Adaptive introgression and de novo mutations increase accessibility of novel fitness peaks\n\nWe further used our two metrics of accessibility and landscape ruggedness to ask how different sources of adaptive genetic variation may influence the topography of the fitness landscape, the traversal of fitness paths separating generalists from specialists and ultimately colonization of novel fitness peaks. We constructed genotypic fitness networks limited to only one of the three main sources of adaptive genetic variation: standing genetic variation, introgression from one of four focal Caribbean generalist populations, or de novo mutations unique to San Salvador Island. We also examined all combinations of these three sources to better reflect the actual process of adaptive divergence originating from only standing genetic variation, then adaptive introgression plus standing genetic variation, and finally the refinement stage of de novo mutations (Richards et al., 2021).\n\nWe compared sets of 5000 random five-SNP genotypic networks drawn from different sources of adaptive variation (Figure 4a) and compared the effect of each source of variation on measures of accessibility and landscape ruggedness relative to standing genetic variation. We treated standing variation as our basis for comparison because this is the source of genetic variation first available to natural selection (Barrett and Schluter, 2008).\n\nWe discovered that genotypic trajectories between generalists and either trophic specialist in genotypic fitness networks constructed from introgressed or de novo adaptive mutations were significantly more accessible than networks constructed from standing genetic variation (Figure 5). Specifically, random networks that included alternate sources of adaptive variation contained significantly more accessible fitness paths from generalist to specialists than networks constructed from standing genetic variation alone, while controlling for differences in overall network size (Figure 5a; Supplementary file 1\u2013table 18). Furthermore, accessible paths between generalists and specialists in networks constructed from introgressed or de novo adaptive loci were significantly shorter in length (Figure 5b). We recovered the same pattern whether constructing fitness networks from these sources of variation alone or in combination. These results held across all measures of fitness and for analyses repeated using only hybrids sampled from the second field experiment (Figure 5\u2014figure supplements 1\u20132, Supplementary file 1\u2013tables 18\u201319).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig5-v1.jpg)\n\n**Figure 5.:** Odds ratios (maximum likelihood estimate and 95% CI) indicate the effect of each source of variation on accessibility compared to networks estimated from standing variation alone. Asterisks denote significance (p < 0.0001 = ****, < 0.001 = ***). (a) The number of accessible (i.e. monotonically increasing in fitness) paths per network, scaled by the size of the network (# of nodes in network). Significance was assessed using a likelihood ratio test, corrected for the false discovery rate (reported in Supplementary file 1\u2013table 18). Dashed lines correspond to the median estimate for standing genetic variation to aid comparison to other sources of adaptive variation. (b) Number of mutational steps in the shortest accessible path. Means are plotted as large circles, with two standard errors shown; dashed horizontal lines correspond to the mean for standing genetic variation. (c) Ruggedness of molluscivore and scale-eater genotypic fitness networks constructed from each source of genetic variation measured by the number of peaks (genotypes with no fitter neighbors).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Odds ratios (maximum likelihood estimate and 95% CI) indicate the effect of each source of variation on accessibility as compared to networks estimated from standing variation alone. (a) The number of accessible (i.e. monotonically increasing in fitness) paths per network, scaled by the size of the network (# of nodes in network). Significance was assessed using a likelihood ratio test, corrected for the false discovery rate (reported in Supplementary file 1\u2013table 13). Dashed lines correspond to the median estimate for standing genetic variation to aid comparison to other sources of adaptive variation. (b) Number of mutational steps in the shortest accessible path. Means are plotted as large circles, with two standard errors shown; dashed horizontal lines correspond to the mean for standing genetic variation. (c) Ruggedness of molluscivore and scale-eater fitness landscapes constructed from each source of genetic variation as measured by the number of peaks (genotypes with no fitter neighbors).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72905/elife-72905-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Odds ratios (maximum likelihood estimate and 95% CI) indicate the effect of each source of variation on accessibility as compared to networks estimated from standing variation alone. (a) The number of accessible (i.e. monotonically increasing in fitness) paths per network, scaled by the size of the network (# of nodes in network). Significance was assessed using a likelihood ratio test, corrected for the false discovery rate (reported in Supplementary file 1\u2013table 13). Dashed lines correspond to the median estimate for standing genetic variation to aid comparison to other sources of adaptive variation. (b) Number of mutational steps in the shortest accessible path. Means are plotted as large circles, with two standard errors shown; dashed horizontal lines correspond to the mean for standing genetic variation. (c) Ruggedness of molluscivore and scale-eater fitness landscapes constructed from each source of genetic variation as measured by the number of peaks (genotypes with no fitter neighbors).\n\nOur finding of increased accessibility of interspecific genotypic trajectories suggests that fitness landscapes constructed from adaptive standing genetic variation alone are more rugged than networks including adaptive loci originating from either introgression or de novo mutation. Quantification of landscape ruggedness supported this hypothesis in all cases (Figure 5c; Supplementary file 1\u2013tables 18\u201319). Additionally, increasing landscape ruggedness significantly decreased the length of accessible paths to the nearest local peak [glm(min. path length ~ number of peaks, family = poisson): p < 0.0001, \u03b2 = \u20130.088, 95% CI = \u22120.095 to 0.081].\n\nScale-eater fitness genotypic fitness landscapes constructed from a combination of adaptive loci sourced from standing variation, introgression, and de novo mutations had significantly more accessible paths (scaled by network size) separating generalists from scale-eaters [OR and 95% CI = 1.879: (1.743, 2.041); LRT p < 0.0001; Figure 5a] and these paths were significantly shorter in length compared to networks constructed from standing variation alone [OR and 95% CI = 0.876: (0.823, 0.932); LRT p < 0.0001; Figure 5b]. The only exception to this pattern across all three fitness measures was for growth rate in genotypic fitness networks constructed for molluscivore adaptive loci; no significant difference was observed in the length of the shortest accessible path between networks constructed using standing variation alone or those constructed using introgressed alleles [OR and 95% CI = 0.994: (0.915, 1.079); LRT p = 0.8826; Supplementary file 1\u2013table 18]. Interestingly, however, for networks constructed from standing variation and introgressed alleles, we again observed a significant reduction in length of the shortest accessible paths [OR and 95% CI = 0.897: (0.835, 0.962); LRT p = 0.0050; Supplementary file 1\u2013table 18].\n\n## Discussion\n\nWe developed a new approach for estimating genotypic fitness landscapes for diploid organisms and applied it to a system in which phenotypic fitness landscapes have been extensively investigated. We were able to address long-standing questions posed by fitness landscape theory in an empirical system and assess the extent to which the shape of the fitness landscape and accessibility of adaptive walks are contingent upon the source of adaptive genetic variation. We show that not only are scale-eaters more isolated than molluscivores from generalists on the fitness landscape, but that the scale-eater fitness landscape is more rugged than molluscivores. This indicates that epistasis is more pervasive on the scale-eater fitness landscape, leading to less predictable evolutionary outcomes and fewer accessible trajectories from generalist to scale-eater genotypes. Overall, we found that most genotypic trajectories were inaccessible and included one or more mutational steps that decreased in fitness from generalist to specialist. This finding is consistent with the patterns observed by Weinreich et al., 2006, who constructed combinatorially complete fitness networks for five mutations contributing to antibiotic resistance in E. coli and found that only 18 of 120 possible genotypic trajectories were evolutionarily accessible. In contrast, Khan et al., 2011 estimated that over half of all trajectories were accessible on a complete fitness landscape constructed using the first five adaptive mutations to fix in an experimental population of E. coli.\n\nWe also show that fitness landscapes are most rugged, and therefore epistasis most pervasive, when constructed from standing genetic variation alone, ultimately leading to a reduction in the accessibility of fitness peaks on these landscapes (Figure 5). This finding has significant implications for the predictability of evolution in the earliest stages of the speciation process. Adaptation from standing genetic variation is thought to initially be more rapid due to its initial availability and potentially reduced genetic load within a population (Barrett and Schluter, 2008; Hermisson et al., 2017; Hedrick, 2013). In contrast, we consistently found that networks constructed from a combination of adaptive standing variation, introgression, and de novo mutations reduced the ruggedness of fitness landscapes and thus increased accessibility of interspecific evolutionary trajectories (Figure 5). This would suggest that adaptive introgression or de novo mutations reduce the impacts of epistasis, resulting in a smoother fitness landscape with a greater number of accessible adaptive walks, facilitating the colonization of new adaptive zones. Future studies testing the generality of these findings will be invaluable for our understanding of the speciation process.\n\nFurthermore, our results shed light on the classic problem of crossing fitness valleys on three-dimensional phenotypic fitness landscapes. We show that phenotypic fitness valleys may be circumvented by rare accessible paths on the genotypic fitness landscape. These results are consistent with increasing recognition that three-dimensional depictions of the fitness landscape may lead to incorrect intuitions about how populations evolve (Pigliucci and M\u00fcller, 2010; Fragata et al., 2019; Kaplan, 2008).\n\nOur study represents a significant contribution to the growing body of work applying fitness landscape theory to empirical systems (Karageorgi et al., 2019; Nosil et al., 2020; Pokusaeva et al., 2019; Gong et al., 2013; Gong and Bloom, 2014). Unlike previous studies that experimentally generated combinatorially complete fitness landscapes (Bank et al., 2016; Weinreich et al., 2006; Khan et al., 2011), we subsampled loci across the genome, enabling us to quantify aspects of the genotypic fitness landscape, despite the limitations imposed by large genome sizes and non-model vertebrates. One limitation of this approach is that subsampled fitness networks may not directly correspond to the full landscape (Fragata et al., 2019; Blanquart and Bataillon, 2016). For instance, a given subsampled fitness landscape may be present on multiple global, fully sampled fitness landscapes (Blanquart and Bataillon, 2016). Second, nodes (here, SNP haplotypes) can appear disconnected in a subsampled fitness landscape, but may be connected in the full fitness landscape (Fragata et al., 2019). Nevertheless, given that there are more possible genotypes for a gene of 1000 base-pairs than particles in the known universe (Wright, 1932; Szendro et al., 2013), nearly all empirical fitness landscapes must necessarily be subsampled at some scale.\n\nAlthough inferences from subsampled fitness networks have their limitations, so too do those obtained from combinatorially complete fitness landscapes, which may themselves be misleading (Whitlock et al., 1995). By including mutations that are not segregating in natural populations, the shape of the \u2018complete\u2019 fitness landscape and thus accessibility of fitness peaks may be quite different from what occurs in nature. The shape of fitness landscapes in nature is dictated by the \u2018realized\u2019 epistasis that occurs among naturally segregating loci (Whitlock et al., 1995). Changes to \u2018realized\u2019 epistasis induced by introgression or de novo mutations appear to be one mechanism altering the shape of the fitness landscape and thus accessibility of fitness peaks. Our findings that adaptive introgression and de novo mutations make fitness peaks more accessible points toward a pervasive role of epistasis in determining the predictability of evolution and the speciation process (Fragata et al., 2019; Kauffman and Levin, 1987; Bank et al., 2016; Wright, 1931; Aita et al., 2001; Neidhart et al., 2014).\n\nIn the present study we have taken snapshots of the fitness landscape from loci that have already undergone hard selective sweeps. Consequently, we cannot directly assess the influence of each adaptive allele on the fitness landscape through time as it increases in frequency. However, so far we have failed to detect evidence of frequency-dependent selection in this system after experimental manipulations, at least for morphological traits (Martin and Gould, 2020). Future experimental or simulation studies may track how novel adaptive alleles affect fitness landscape topography as they increase in frequency.\n\n### Conclusion\n\nOur findings are consistent with a growing body of evidence that de novo and introgressed adaptive variation may contribute to rapid speciation and evolution toward novel fitness peaks (Blount et al., 2008; Marques et al., 2019; Meier et al., 2017; Nelson et al., 2021; Svardal et al., 2020; Lamichhaney et al., 2018; Grant and Grant, 2019; Edelman and Mallet, 2021). We demonstrate that adaptive introgression smooths the fitness landscape and increases the accessibility of fitness peaks. This provides an alternative mechanism to explain why hybridization appears to play such a pervasive role in adaptive radiation and speciation. There are many examples of hybridization promoting or inducing rapid speciation and adaptive radiation. Whether in Galapagos finches (Grant and Grant, 2019), African cichlids (Richards et al., 2018; Meier et al., 2017; Svardal et al., 2020; Meier et al., 2019; Poelstra et al., 2018), or Heliconius butterflies (Pardo-Diaz et al., 2012; Moest et al., 2020), hybridization has been shown to play a generative role in adaptive radiation and the evolution of novelty. One mechanism is the increased genotypic, phenotypic, and ecological diversity generated by hybridization in the form of transgressive phenotypes (Seehausen, 2004; Lewontin and Birch, 1966; Rieseberg et al., 1999; Kagawa and Takimoto, 2018; Abbott et al., 2013). This diversity in turn facilitates the colonization of novel fitness peaks and ecological niches, particularly after colonization of a new environment rich in ecological opportunity (Mallet, 2007; Seehausen, 2004; Edelman and Mallet, 2021). However, this model often assumes that the fitness landscape remains static after adaptive introgression. Here, we show that adaptive introgression directly alters the shape of the fitness landscape, making novel fitness peaks more accessible to natural selection. Thus, hybridization not only generates genetic diversity, but this diversity can alter the shape of the fitness landscape, changing which genotypic combinations are favored by natural selection along with the adaptive walks that lead to them.\n\n## Materials and methods\n\n### Sampling\n\nOur final genomic dataset was comprised of 139 hybrids subsampled from two separate field experiments (Martin and Wainwright, 2013a; Martin and Gould, 2020) on San Salvador Island. Experiments were conducted in two lakes: Little Lake (N = 71) and Crescent Pond (N = 68). Hybrids in the first field experiment (Martin and Wainwright, 2013a) were comprised of F2 and backcrossed outbred juveniles resulting from crosses between all three species. Juveniles were raised for 2 months in the lab, individually tagged by injecting a stainless steel sequential coded wire tag (Northwest Marine Technologies, Inc) into their left dorsal musculature, and photographed pre-release for morphometric analyses. Experimental field enclosures consisted of high- and low-density treatments; density was varied by the number of tagged juveniles released into each enclosure. Hybrids in the second field experiment (Martin and Gould, 2020) were comprised of F4\u2013F5 outbred juveniles resulting from crosses between all three species. Individuals were spawned, raised, tagged, and photographed in the same way prior to release. The second field experiment consisted of high- and low-frequency treatments of approximately equal densities. The frequency of rare transgressive hybrid phenotypes was manipulated between treatments in each lake, such that the high- and low-frequency treatments harbored an artificially increased and decreased frequency of transgressive phenotypes, respectively (Martin and Gould, 2020).\n\nAll hybrids were measured for 32 external morphological traits (see below). Additionally, we sequenced parental species of the generalist (N = 17), molluscivores (N = 27), and scale-eaters (N = 25) sampled from these two lakes and previously included in Richards et al., 2021. Note that we treated samples from Little Lake and Osprey Lake as the same population because these two lakes are connected through a sand bar and fish from these populations are genetically undifferentiated (Martin and Feinstein, 2014; Richards et al., 2021). For morphological analyses, we additionally measured samples of 60 generalists, 38 molluscivores, and 60 scale-eaters raised in the same laboratory common garden environment as the hybrids used in field experiments. A full list of samples is included in the supplement (Supplementary file 1\u2013table 1).\n\n### Sequencing, genotyping, and filtering\n\nRaw reads from a combined set of 396 samples (see Supplementary file 1) were first mapped to the C. brontotheroides reference genome (genome size = 1.16 Gb; scaffold N50 = 32 Mb) (Richards et al., 2021) using bwa-mem (v. 0.7.2). Duplicate reads were identified using MarkDuplicates and BAM indices were subsequently generated using the Picard software package (Broad Institute, 2018). Samples were genotyped following Richards et al., 2021, according to GATK best practices (DePristo et al., 2011). Specifically, SNPs were called and filtered using hard-filtering criteria in HaplotypeCaller. We used the following criteria in our filtering approach: QD < 2.0; QUAL < 20; FS < 60; MQRankSum < \u201312.5; ReadPosRankSum < \u20138 (DePristo et al., 2011; Poplin et al., 2017; Marsden et al., 2014).\n\nFollowing initial genotyping with GATK, we subsequently filtered our data further using VCFtools (Danecek et al., 2011). Specifically, we filtered using the following flags: --maf 0.05; --min-alleles 2; --max-alleles 2; --min-meanDP 7; --max-meanDP 100; --max-missing 0.85. Indels were removed. To reduce non-independence among sites in our final dataset, we conservatively removed sites in strong linkage disequilibrium using plink v1.9 (--indep-pairwise 10['kb'] 50 0.5: Purcell et al., 2007). This resulted in the retention of 1,129,771 SNPs across 139 hybrid samples and the 69 wild-caught samples from Richards et al., 2021. Unless otherwise specified, these SNPs were used for all downstream analyses.\n\n### Hybrid fitness measures\n\nWe used three proxies for fitness: survival, growth, or a composite measure of the two. Survival was a binary trait indicating whether a fish survived (i.e. a tagged fish was recovered) or not during its exposure period in field enclosures. Growth was a continuous measure, defined as the proportional increase in standard length $(\\frac{Final\u00a0SL\u2212Starting\u00a0\u00a0SL}{Starting\u00a0\u00a0SL})$. Lastly, we defined composite fitness as survival \u00d7 growth, similar to the metric used in DiVittorio et al., 2020, and analogous to composite fitness in Hereford, 2009, who used fecundity as their second fitness measure, rather than growth. Composite fitness is equal to growth for survivors and equals zero for non-survivors because growth could not be assessed for non-surviving individuals. Because composite fitness represents the most information-rich metric of fitness, we report composite fitness results in the main text; results for growth and survival are included in the supplement.\n\n### Population genetic variation\n\nTo visualize genetic variation present in hybrids and across lakes (Crescent Pond and Little Lake), we first used a PCA of genetic variation using plink v1.90 (Purcell et al., 2007, Figure 1), plotting the first two principal component axes using R (version 3.6.3: R Development Core Team, 2019). We then estimated admixture proportions in hybrids using ADMIXTURE v1.3.0 (82). Populations of each species were substantially differentiated between Crescent Pond and Little Lake (Martin and Feinstein, 2014; Richards et al., 2021); thus, independent ADMIXTURE analyses were conducted for each lake. Because we were primarily interested in admixture proportions of hybrids, we set K = 3 in these analyses, corresponding to the three parental species used in hybrid crosses. Using admixture proportions of hybrid individuals, we tested the hypothesis that ancestry predicts hybrid composite fitness in experimental field enclosures by fitting a GAM including either (1) scale-eater ancestry or (2) molluscivore ancestry with fixed effects for experiment and lake. This was repeated for survival and growth separately. Composite fitness was analyzed using a tobit (zero-censored) model to account for zero-inflation using the censReg R package (Henningsen, 2020), survival was analyzed using a binomial model, and growth was analyzed using a Gaussian model. We conducted additional ADMIXTURE analyses that either (1) were supervised, with generalist, molluscivore, and scale-eater parentals a priori assigned to one of three populations, with only hybrid ancestry proportions being estimated by admixture, or (2) using only samples from the second field experiment. The same linear models described above were subsequently repeated using these alternative admixture proportions.\n\n### Genome-wide association tests\n\nTo identify SNPs that were most strongly associated with fitness (survival, growth, or composite), we implemented the LMM approach in GEMMA (version 0.98.1: Zhou and Stephens, 2012). This analysis was repeated using each fitness measure as the response variable. To account for relatedness among samples, we estimated the kinship matrix among all 139 hybrid samples, which in turn were used in downstream LMMs. To account for the potentially confounding effect of year/experiment and lake on estimated fitness measures, we included each as covariates in the LMMs. To ensure rare variants were not included in these analyses, we only included sites that had a minor allele frequency greater than 5% across all hybrids. A total of 933,520 SNPs were analyzed; 196,251 SNPS were excluded due to allele frequency change following removal of parental species. SNPs strongly associated with fitness were identified with (1) an FDR (Benjamini and Hochberg, 1995) less than 0.05 or a (2) p-value < 0.05 following Bonferroni correction. We focused primarily on the sites identified by the conservative Bonferroni correction, however.\n\n### Gene ontology enrichment\n\nWe annotated sites that were significantly associated with fitness using snpEff (Cingolani et al., 2012) and the annotated C. brontotheroides reference genome (Richards et al., 2021). We constructed a custom database within snpEff using the functional annotations originally produced by Richards et al., 2021, and subsequently extracted information on the annotations and putative functional consequences of each variant.\n\nUsing genes identified for each SNP that was significantly associated with one of the fitness measures, we performed gene ontology enrichment analyses using ShinyGO v0.61 (Ge et al., 2020). For genes identified as being intergenic, we included both flanking genes. As in Richards et al., 2021, the gene symbol (abbreviation) database that had the greatest overlap with ours was that of the human database; thus, we tested for enrichment of biological process ontologies curated for human gene functions, based on annotations from Ensembl. Results are reported for biological processes that were significantly enriched with FDR < 0.05. We then compared this list of candidate loci to those identified in past studies of San Salvador Island pupfishes (Richards et al., 2021; McGirr and Martin, 2020; McGirr and Martin, 2021).\n\n### Morphometrics\n\nWe measured 31 external morphological traits for all 139 hybrids and 69 parental individuals from Crescent Pond (30 generalists, 19 molluscivores, and 30 scale-eaters) and 85 from Little Lake (30 generalists, 25 molluscivores, and 30 scale-eaters). We digitally landmarked dorsal and lateral photographs (both sides) of each lab-reared hybrid (pre-release) or parent using DLTdv8 (Hedrick, 2008). Measurements included 27 linear distances and 3 angles. For nearly all individuals, lateral measurements were collected from both lateral photographs and averaged. Morphological variables were size-corrected using the residuals of a log10(trait) ~log10(standard length) regression standardized for selection analyses as outlined in the supplement. We used these 31 morphological traits to estimate two linear discriminant (LD) axes that best distinguished the generalist, molluscivore, and scale-eater using the lda function in the mass package in R. We then used the resultant LD model to predict LD scores for the 139 sequenced hybrids for later use in GAMs.\n\n### Estimation of adaptive landscapes\n\nWe fit GAMs using the mgcv package v1.8.28 (Wood, 2011) in R to estimate fitness landscapes for the two discriminant axes (LD1\u20132) and fitness. All models included a thin-plate spline fit to the two LD axes and we included both lake and experiment in all models as fixed effects. Lake by experiment interaction terms were also included in some models. Models were ranked using the corrected Akaike information criterion for small sample sizes (AICc) and were considered to be a substantially worse fit to the data if \u0394AICc > 4 from the best-fit model (Burnham and Anderson, 2002). The best-fit model from the above approach was in turn used to visualize fitness landscapes, plotting predicted values of fitness measures on the two discriminant axes in R (Figure 2).\n\nUsing these results, we tested whether inclusion of SNPs that were strongly associated with fitness (i.e. those that surpassed the 0.05 Bonferroni threshold) improved estimation of fitness landscapes. We first extracted genotypes for the highly significant SNPs identified by GEMMA (13 for composite fitness, 4 for only growth: see section Genome-wide association tests), and coded these as either reference, single, or double mutants using VCFtools (Danecek et al., 2011). We then used the best-fit models identified above and fit a range of models that included one or all SNPs. Individual fitness-associated SNPs were treated as ordered factors (i.e. transition from homozygous reference to heterozygote to homozygous alternate) and modeled using a factor smooth in the GAMs. Note that factor \u2018smooths\u2019 are effectively modeled as step functions.\n\nTo quantify whether the local features of the complete fitness landscape constructed using all morphological variables and the most strongly fitness-associated SNPs were robust to sampling uncertainty, we conducted a bootstrapping procedure for this model. Specifically, we resampled hybrids with replacement 10,000 times and refit the full model. We then calculated the mean predicted composite fitness for each LD axis in slices across the fitness landscape, both for our observed dataset and for each bootstrap replicate. Slices divided the fitness landscape into thirds for each LD axis. We then quantified the mean and standard deviation of the predicted composite fitness for each position along the other LD axis.\n\nWe quantified uncertainty (mean \u00b1 SD) around local features of the bootstrapped fitness landscapes as compared to the observed values of predicted fitness for the same \u2018slice\u2019 of the fitness landscape. We predicted values at the same 30 points along each LD axis. We then plotted the locations of parents along the x-axis (LD1 or LD2) to enable relation of features on the fitness landscape to parental phenotypic distributions.\n\n### Estimation of genotypic fitness networks\n\nWe first estimated genotypic networks using sites previously shown to be highly divergent (FST > 0.95) and showing significant evidence of a hard selective sweep in one of the trophic specialists (based on evidence from both SweeD and OmegaPlus: Richards et al., 2021; Pavlidis et al., 2013; Alachiotis et al., 2012). We identified the SNPs in our unpruned full dataset overlapping with sites inferred to have undergone selective sweeps (Richards et al., 2021), resulting in 380 SNPs for molluscivores and 1118 SNPs for scale-eaters. We subsequently constructed genotypic fitness networks in igraph v1.2.4.1 (142) following the procedure outlined in the supplement.\n\nTo visualize the high-dimensional genotypic fitness network, we randomly sampled 10 adaptive loci 100 times and plotted haplotypes connected by edges if they were within five mutational steps of one another (Figure 3C). Then, we calculated the mean distance between all species pairs (in number of mutational steps). We used pairwise Tukey\u2019s HSD tests to test whether inter-species distances differed.\n\n### Estimation of evolutionary accessibility\n\nWe tested whether the evolutionary accessibility of genotypic fitness trajectories through observed hybrid genotypes from generalist to each specialist species differed based on the source of genetic variation. We restricted our investigation to networks composed of adaptive loci as previously described (Figure 3A: Richards et al., 2021). This included a total of 380 SNPs in the molluscivores, and 1118 in the scale-eaters. The reduced number of adaptive SNPs sites in our dataset as compared to that of Richards et al., 2021 is due primarily to the increased stringency of our filtering. We further partitioned these SNPs by their respective sources: standing genetic variation (molluscivore N = 364; scale-eater N = 1029), de novo mutation (scale-eater N = 24), or introgression (molluscivore N = 16; scale-eater N = 65), again using the assignments from Richards et al., 2021. For analyses of trajectories between generalists and molluscivores, we included only SNPs found to be sweeping in molluscivores; likewise, we included only SNPs sweeping in scale-eaters for analysis of trajectories between generalists and scale-eaters.\n\nThe full procedure for constructing genotypic fitness networks, identifying accessible paths, and quantifying accessibility is outlined in the supplement. Briefly, we randomly generated 5000 datasets of five SNPs comprised of either (1) standing genetic variation, (2) adaptive introgression, (3) de novo mutation (scale-eaters only), (4) standing genetic variation + adaptive introgression, (5) standing genetic variation + denovo mutation, or (6) standing genetic variation + adaptive introgression + denovo mutation (scale-eaters only). We additionally repeated this procedure using both classes of SNPs for molluscivores to determine whether genotypic trajectories separating generalists to molluscivores are more accessible than those between generalists and scale-eaters. Because different sets of sites are sweeping in each specialist, we conducted these analyses separately for each species. We then constructed genotypic networks, in which nodes are haplotypes of SNPs encoded in 012 format (0 = homozygous reference, 1 = heterozygote, 2 = homozygous alternate), and edges link mutational neighbors. When determining whether a path was accessible or not, we only included paths for which each mutational step (i.e. each intervening haplotype) between generalist to specialist was observed in at least one hybrid sample.\n\nWith these networks, we sought to ask (1) whether molluscivores or scale-eaters are more accessible to generalists on their respective genotypic fitness landscapes, (2) whether the ruggedness of the genotypic fitness landscape varied among specialists, and (3) whether accessibility is contingent upon the source of genetic variation available to natural selection. For each random network sampled and for each measure of fitness, we calculated (1) the minimum length of accessible paths between a random generalist and specialist sampled from our sequenced individuals, (2) the number of accessible paths between the same generalist and specialist pair, (3) the number of nodes, (4) the number of edges in the network, (5) the number of peaks on the landscape (genotypes with no fitter neighbors; Ferretti et al., 2018), (6) the distance of parental nodes to these peaks, and (7) the number of accessible paths separating them. Larger networks often have a greater number of potential paths, including both accessible and inaccessible paths (Figure 4\u2014figure supplement 1), and we were interested in the relative availability of accessible adaptive pathways. Consequently, we divided the number of accessible paths in each random network sampled by the number of nodes. Using our six summary statistics, we tested whether accessibility and landscape ruggedness differed between networks constructed from SGV/introgression/de novo mutations (for scale-eaters) or SGV/introgression (for molluscivores). To do so, we calculated the mean and standard error of each summary statistic across all 5000 replicates. We then modeled the association between each summary statistic and species using a logistic regression, whereby species was modeled as a binary response variable (i.e. scale-eater networks = 0, molluscivore networks = 1), with each measure of accessibility as the predictor. We arbitrarily treated scale-eater networks as the control, and using the estimated coefficients obtained an OR that corresponds to the extent to which molluscivore networks either have increased (OR > 1) or decreased (OR < 1) accessibility measures relative to scale-eater networks. Significance was similarly assessed using a likelihood ratio test. Additional details on this procedure may be found in the supplement. Using the fitted logistic model, we conducted a likelihood ratio test to quantify significance. To explicitly test the hypothesis that increasing landscape ruggedness reduced the length of accessible paths to the nearest fitness peak, we fit a Poisson regression model in R in which the number of fitness peaks predicts the length of the shortest accessible path between any generalist or specialist node and any fitness peak on that landscape: glm(Min. Distance to Peak ~ Number of Peaks, family = \u2018poisson\u2019).\n\nA similar procedure was used to assess whether measures of accessibility (scaled number of accessible paths, length of the shortest accessible path) and landscape ruggedness (number of peaks) differed within species among networks constructed from different sources of genetic variation. Here, networks constructed from SGV were treated as the control, to which all other networks were compared. For example, to test whether accessibility of the generalist-to-scale-eater paths are greater in networks constructed from de novo mutations than those from SGV, a logistic model was fitted wherein the response variable for SGV networks was assigned to be 0, and 1 for de novo networks. As before, significance was similarly assessed using a likelihood ratio test, but here p-values were corrected for multiple testing using the FDR (Benjamini and Hochberg, 1995). We assessed whether differences in these measures among the two alternate generalist to specialist trajectories in networks constructed from all three sources of variation were significant using an ANOVA in R (R Development Core Team, 2019). Due to the highly skewed nature of these distributions, post hoc pairwise significance was assessed using a nonparametric Kruskal-Wallis one-way analysis of variance in the agricolae package (de Mendiburu, 2020) in R.\n",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "f2699482-77c3-429e-be48-caeef44ae0f9",
+      "submission_id": "7038974a-c3c7-41af-878e-7f69549b2475",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dieter Ebert, https://ror.org/02s6k3f65 University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72905.sa0](https://doi.org/10.7554/eLife.72905.sa0)\n\nThis study reports on the inference of the evolutionary trajectory of two specialist species that evolved from one generalist species. The process of speciation is explained as an adaptive process and the changing genetic architecture of the process is analyzed in great detail. The genomic dataset is big and the inference from it is solid. The authors reach the conclusion that introgression and de novo mutations played a major role in this adaptive process.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Dieter Ebert, https://ror.org/02s6k3f65 University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72905.sa1](https://doi.org/10.7554/eLife.72905.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The first genotypic fitness network in a vertebrate reveals that hybridization increases access to novel fitness peaks\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Molly Przeworski as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The entire paper is very specific to the system investigated and little attempts are made to reach out to other systems. The articles would gain strongly in doing so. I part the problem may be that the Results and Discussion is merged. This does not invite for a wider discussion. Separating the Results section from the discussion would work well here, or, alternatively one could suggest to have a section called \"Results and specific discussion\" and a section \"General discussion\". Clearly the later is largely missing. The conclusion does not rescue this.\n\n2) Data analysis: at several places the reviewers aired concerns about the analysis, both regarding the analysis itself as well as the explanation and justification of it (e.g. Admixture analysis, use of composite fitness, pooling of low and high density treatments). Details are found in the individual reviews below.\n\nReviewer #1 (Recommendations for the authors):\n\nIt is of little interest to learn that this is the first study doing exactly this type of work. In one way or the other, every study is unique, no need to stress this in several places, starting from the title(!), abstract, significance,.. conclusion.\n\nThe section about calculating the \"composite fitness\" (= survival * growth) seems odd to me. Survival is 0 or 1, and growth is a quantitative trait. If I understand correctly, growth cannot be assessed when the fish did not survive, so fitness would be NA (because growth is NA). Better describe it: composite fitness is equal to growth, unless the fish died, then it is zero.\n\nHow was \"composite fitness\" statistically analyzed. Tables S2, S8, S11 not allow me to reconstruct this. The distribution of the composite fitness data must be strongly zero inflated, making is hard to analyze them with linear models. I assume that the growth data were more or less normally distributed and survival data binary (0/1), right?\n\nThe assumption that mutations are de novo, when they are not known to occur otherwise in samples investigated from San Salvador Island, should be placed by a more realistic framework. There are certainly many rare alleles that are part of the standing genetic variation, but have previously not been observed. The first time they are seen, may suggest that they are novel mutations.\n\nExpressing differences in percent is tricky and potentially open to missunderstandings (e.g. 126 % more accessible). I suggest to use expressions that are more clear (e.g. something like an odd ratio).\n\nFigure 4a. what is the meaning of the different sizes of the coloured dots.\n\nReviewer #2 (Recommendations for the authors):\n\nL195-196: I wish the authors could expand a bit on this statement.\n\nL 412: \"the frequency of rare transgressive hybrid phenotypes was altered\" I am not sure what the authors are trying to convey here.\n\nFigure 2: l180, it should be panel d) and not c).\n\nCitation 66 is a duplicate of 18.\n\n19 papers co-authored by the last author were cited in the current manuscript. While they all seemed relevant, it still is a lot.\n\nReviewer #3 (Recommendations for the authors):\n\nLine 32: I think whether fitness valleys are crossed is also controversial.\n\nLine 42: \"most isolated\" Compared to what? Or is this supposed to say mostly isolated?\n\nLines 73-74: I think usually \"accessible\" is used to refer to peaks not trajectories, though I can't say your usage is incorrect.\n\nLine 77: The link between monotonically increasing fitness and plausibility of evolving is much broader than Fisher's geometric model; I think it would be better to just state the simple idea that, in large populations, paths with increasing fitness are taken much more readily than alternatives with neutral or deleterious steps.\n\nLine 102: Does this mean stable across all these axes of variation?\n\nLines 91-110: I'm not clear on how the fitness landscapes in previous work will be distinct from this work, and what parts of Figure 1 support these statements; I suggest a little expansion and reorganization to clarify these issues.\n\nWhy is Figure 3 cited in the paper before Figure 2?\n\nI would suggest explicitly defining the fitness measurement in the Results and Discussion, both to make the paper more readable in the current section order and to acknowledge the limitation that reproductive success isn't a part of the composite fitness measurement.\n",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fe1002bf-936f-4e9c-bfcc-c55421b6b24f",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C1",
+      "claim": "The adaptive radiation of pupfishes on San Salvador Island consists of three species: a generalist (Cyprinodon variegatus), a molluscivore (Cyprinodon brontotheroides), and a scale-eater (Cyprinodon desquamator).",
+      "claim_type": "EXPLICIT",
+      "source": "This radiation is comprised of two trophic specialists, a molluscivore (durophage: Cyprinodon brontotheroides) and a scale-eater (lepidophage: Cyprinodon desquamator), derived from a Caribbean-wide generalist (Cyprinodon variegatus) which also coexists in the same habitats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text directly states the three species and their trophic roles.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "ae664246-7fc4-409f-8f7a-6b759d5c726c",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C2",
+      "claim": "All three pupfish species occur in sympatry in the hypersaline lakes of San Salvador Island, Bahamas.",
+      "claim_type": "EXPLICIT",
+      "source": "These three species all occur in sympatry in the hypersaline lakes of San Salvador Island, Bahamas (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states sympatric occurrence and references Figure 1a showing the species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "57ff32de-62a1-4bce-b75a-1c72a61b7a7b",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C3",
+      "claim": "The three pupfish species all forage within the same benthic microhabitat with no habitat segregation observed in 14 years of field studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Found in the benthic littoral zone of each lake, all three species forage within the same benthic microhabitat; indeed, no habitat segregation has been observed in 14 years of field studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the lack of habitat segregation based on long-term field observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "cb6fff21-4005-43fc-bbdf-9eae5498c4bd",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C4",
+      "claim": "The adaptive radiation of San Salvador Island pupfishes originated less than 10,000 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Originating less than 10,000 years ago (based on geological age estimates for the lakes: Turner et al., 2008), the functional and trophic novelty harbored within this radiation is the product of exceptional rates of craniofacial morphological evolution (Martin and Wainwright, 2011; St John et al., 2020a; Martin et al., 2019; St John et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites geological age estimates from Turner et al., 2008 to support the timeframe.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "d6b2a68e-4b3a-488d-a578-d906a30d5683",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C5",
+      "claim": "The pupfish radiation exhibits exceptional rates of craniofacial morphological evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Originating less than 10,000 years ago (based on geological age estimates for the lakes: Turner et al., 2008), the functional and trophic novelty harbored within this radiation is the product of exceptional rates of craniofacial morphological evolution (Martin and Wainwright, 2011; St John et al., 2020a; Martin et al., 2019; St John et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies documenting exceptional rates of morphological evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "f22e0cfc-db33-4cb5-9965-8a197909ad2e",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C6",
+      "claim": "Species boundaries persist across multiple lake populations despite persistent admixture among species.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, species boundaries persist across multiple lake populations, despite persistent admixture among species (Martin and Feinstein, 2014; Richards et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies showing species boundaries persist despite admixture.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "f8331993-df59-432d-8065-f1d86a8082bb",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C7",
+      "claim": "Previous studies revealed a multi-peaked phenotypic fitness landscape that is stable across lake populations, year of study, and manipulation of the frequency of rare hybrid phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection analyses revealed a multi-peaked phenotypic fitness landscape that is stable across lake populations, year of study, and manipulation of the frequency of rare hybrid phenotypes (Martin and Wainwright, 2013a; Martin and Gould, 2020; Martin, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites previous studies that documented the multi-peaked fitness landscape.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "e27e786e-143d-4fc8-b17d-8641c7fed614",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C8",
+      "claim": "Hybrid phenotypes resembling the scale-eater were isolated in the lowest fitness region for both growth and survival relative to the other two species.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the strongest and most persistent trends across studies and treatments was that hybrid phenotypes resembling the scale-eater were isolated in the lowest fitness region for both growth and survival relative to the other two species (Martin and Wainwright, 2013a; Martin and Gould, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites previous studies showing scale-eater hybrids had lowest fitness.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "90b6f8c9-9724-4fd8-b5de-20f1c1c38d8d",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C9",
+      "claim": "Hybrids resembling the generalist occupied a fitness peak and were separated by a smaller fitness valley from hybrids resembling the molluscivore, which occurred on a second peak of higher fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, hybrids resembling the generalist occupied a fitness peak and were separated by a smaller fitness valley from hybrids resembling the molluscivore, which occurred on a second peak of higher fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the fitness landscape topology from previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "6c4184df-8433-4453-b55e-908a63df9ff6",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C10",
+      "claim": "The adaptive radiation of San Salvador Island pupfishes originated from a complex interplay of abundant standing genetic variation, adaptive introgression from neighboring islands, and several de novo single-nucleotide mutations and deletions found only in the scale-eater.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptive radiation of San Salvador Island pupfishes, like many others (Pease et al., 2016; Richards et al., 2018; Meier et al., 2017; McGee et al., 2020; Irisarri et al., 2018), appears to have originated from a complex interplay of abundant standing genetic variation, adaptive introgression from neighboring islands, and several de novo single-nucleotide mutations and deletions found only in the scale-eater (Richards et al., 2021; Richards et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies documenting the sources of genetic variation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "9dfac7f6-9379-444a-903a-96cbd489adde",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C11",
+      "claim": "Both specialists harbor numerous introgressed SNPs showing evidence of hard selective sweeps in the regulatory regions of known craniofacial genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both specialists harbor numerous introgressed single nucleotide polymorphisms (SNPs) showing evidence of hard selective sweeps in the regulatory regions of known craniofacial genes (Richards et al., 2021; Richards et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies documenting introgressed SNPs under selection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "9d7d9988-d0f2-4c6e-b807-7203867720a8",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C12",
+      "claim": "Hard selective sweeps of de novo mutations only appear in the scale-eating species, C. desquamator.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, hard selective sweeps of de novo mutations only appear in the scale-eating species, C. desquamator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this pattern of de novo mutations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "2509e01f-ff4f-491a-a50f-c6cd008f9b8e",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C13",
+      "claim": "139 hybrids were resequenced from two independent field experiments across six field enclosures and two lake populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We resequenced 139 hybrids (86 survivors, 56 deaths; Supplementary file 1\u2014table 1) from two independent field experiments across a total of six field enclosures and two lake populations 2011: two high-density 3 m diameter enclosures exposed for 3 months: Crescent Pond n = 796; Little Lake n = 875 F2 hybrids (Martin and Wainwright, 2013a); 2014/2015: four high-density 4 m diameter enclosures exposed for 3 months in Crescent Pond, n = 923 F4/F5 hybrids and 11 months in Little Lake, n = 842 F4/F5 hybrids (Martin and Gould, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific details about the sample collection and experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "ed04141a-fec1-4a57-97d8-4eb705254d1c",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C14",
+      "claim": "1,129,771 SNPs were genotyped with an average coverage of 9.79\u00d7 per individual.",
+      "claim_type": "EXPLICIT",
+      "source": "We genotyped 1,129,771 SNPs with an average coverage of 9.79\u00d7 per individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific sequencing statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "eda6f9aa-cf9d-45cf-98d7-a866a1c392b3",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C15",
+      "claim": "Principal component analysis of genetic variation strongly differentiated pupfishes sampled from Little Lake/Osprey Lake and Crescent Pond (PC1: 22.7% variance explained) and among species within each lake (PC2: 15.9% variance explained).",
+      "claim_type": "EXPLICIT",
+      "source": "Principal components analysis (PCA) of genetic variation strongly differentiated pupfishes sampled from Little Lake/Osprey Lake and Crescent Pond (PC1: 22.7% variance explained) and among species within each lake (PC2: 15.9% variance explained: Figure 1d; Figure 1\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text provides PCA results with variance explained and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "de149853-0550-4488-a15d-a7dea087daee",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C16",
+      "claim": "Some hybrids were genotypically transgressive, falling outside the genotypic distributions of the three parental species.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some hybrids were genotypically transgressive, falling outside the genotypic distributions of the three parental species (Figure 1\u2014figure supplement 2), leading ADMIXTURE to assign the third cluster to these hybrids, rather than generalists which often contain segregating variation found in trophic specialists (Froese and Pauly, 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes transgressive hybrids and references a figure showing this pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "32eeae33-1c25-4883-9c44-25e62012c72b",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C17",
+      "claim": "Pairwise genetic distances were significantly associated with pairwise morphological distances.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairwise genetic distances were significantly associated with pairwise morphological distances (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states a significant association and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "4c04a3ce-31f5-4e19-9659-5c3498e17f58",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C18",
+      "claim": "Genome-wide patterns of parental ancestry in hybrids were not associated with hybrid composite fitness, growth, or survival probability while controlling for effects of lake and experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in no case were genome-wide patterns of parental ancestry in hybrids (estimated from unsupervised ADMIXTURE analyses) associated with hybrid composite fitness (generalist p = 0.385; scale-eater p = 0.439; molluscivore p = 0.195), growth (generalist p = 0.119; scale-eater p = 0.283; molluscivore p = 0.328), or survival probability (generalist p = 0.440; scale-eater p = 0.804; molluscivore p = 0.313) while controlling for effects of lake and experiment (Figure 1\u2014figure supplement 5; Supplementary file 1\u2013table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text provides specific p-values from statistical tests and references supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "072f2837-4f8c-406c-8754-e0404a4a07e6",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C19",
+      "claim": "Genome-wide ancestry is not consistently associated with fitness in this system, highlighting the complex nonlinear relationship between genotype, phenotype, and fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in contrast to previous studies (Arnegard et al., 2014; Wang et al., 2002; Leimu et al., 2006), in this system genome-wide ancestry is not consistently associated with fitness, highlighting the complex nonlinear relationship between genotype, phenotype, and fitness within this nascent adaptive radiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion and contrasts it with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "45d8fbed-6873-485c-88f3-f8107c46a81c",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C20",
+      "claim": "132 SNPs in regions were strongly associated with composite fitness, including 13 which remained significant at the conservative Bonferroni-corrected threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "From our linear discriminant (LD)-pruned dataset, we used a linear mixed model (LMM) in GEMMA to identify 132 SNPs in regions that were strongly associated with composite fitness, including 13 which remained significant at the conservative Bonferroni-corrected threshold (Figure 2a, Supplementary file 1\u2013tables 6\u20137; see supplement for results for survival and growth alone (Supplementary file 1\u2013tables 8\u20139; Figure 2\u2014figure supplement 1)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text provides specific numbers of significant SNPs and references figures and tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "c66c3b77-43a9-46ee-adf8-157424979763",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C21",
+      "claim": "Gene ontologies for the 132 fitness-associated regions were significantly enriched for synaptic signaling and chemical synaptic transmission (FDR rate <0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontologies for these 132 fitness-associated regions were significantly enriched for synaptic signaling and chemical synaptic transmission (false discovery rate [FDR] rate <0.01; Figure 2\u2014figure supplement 2; Supplementary file 1\u2013table 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text provides specific enrichment results with FDR thresholds and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "ab9bde94-40ea-4776-9dc5-0f327f2b9298",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C22",
+      "claim": "No fitness-associated regions overlapped with regions showing significant evidence of a hard selective sweep.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, no fitness-associated regions overlapped with regions showing significant evidence of a hard selective sweep (Richards et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this surprising finding and cites the relevant study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "d8fdc226-f376-4870-a5f1-b4c0b77d8f59",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C23",
+      "claim": "Six fitness-associated genes were previously shown to contain either fixed divergent SNPs (csad, glcci1, ino80c, mag, pim2, mettl21e) or a fixed deletion between specialists (med25).",
+      "claim_type": "EXPLICIT",
+      "source": "However, six fitness-associated genes were previously shown to contain either fixed divergent SNPs (csad, glcci1, ino80c, mag, pim2, mettl21e) or a fixed deletion between specialists (med25) (McGirr and Martin, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a previous study documenting these genetic differences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "4a01dded-5cff-4df9-9d4f-66cbfeee8296",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C24",
+      "claim": "Med25 (mediator complex subunit 25) is a craniofacial transcription factor associated with cleft palate in humans and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Med25 (mediator complex subunit 25) is a craniofacial transcription factor associated with cleft palate in humans and zebrafish (Nakamura et al., 2011; Mork and Crump, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies documenting the function of Med25.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "6232e6a1-7a70-4945-b0e0-91e8259cfd5b",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C25",
+      "claim": "A precursor of mag (myelin-associated glycoprotein) was associated with the parallel evolution of the thick-lipped phenotype in Midas cichlids based on differential expression among morphs.",
+      "claim_type": "EXPLICIT",
+      "source": "a precursor of mag (myelin-associated glycoprotein) was also associated with the parallel evolution of the thick-lipped phenotype in Midas cichlids based on differential expression among morphs (Manousaki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a study documenting the role of mag in cichlid evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "bbb2518a-ea6a-4f3f-9b4c-a0fc4f8d914b",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C26",
+      "claim": "csad plays an important role in synthesizing taurine which is a rate-limiting enzyme affecting growth rate in parrotfishes, rainbow trout, and Japanese flounder.",
+      "claim_type": "EXPLICIT",
+      "source": "First, csad plays an important role in synthesizing taurine which is a rate-limiting enzyme affecting growth rate in parrotfishes (Lim et al., 2013), rainbow trout (Gaylord et al., 2006), and Japanese flounder (Yokoyama et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies documenting the role of csad in fish growth.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "8bc1db90-b8b2-409f-af64-913277ded863",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C27",
+      "claim": "glcci1 is associated with the body depth/length ratio in yellow croaker.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, glcci1 is associated with the body depth/length ratio in yellow croaker (Zhou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a study documenting the association of glcci1 with body shape.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "2c2024ce-2705-4cd7-adca-2498fc35e499",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C28",
+      "claim": "ino80c is associated with measures of body size in Nile tilapia.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, ino80c is associated with measures of body size in Nile tilapia (Yoshida and Y\u00e1\u00f1ez, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a study documenting the association of ino80c with body size.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "cb2aae3c-de94-4515-a23d-c2ba1d66e500",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C29",
+      "claim": "mettl21e was differentially expressed among specialists and also misexpressed in F1 hybrids between scale-eaters and molluscivores at 8 days post-fertilization and thus is a putative genetic incompatibility in this system.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, mettl21e was differentially expressed among specialists and also misexpressed in F1 hybrids between scale-eaters and molluscivores at 8 days post-fertilization and thus is a putative genetic incompatibility in this system that may impact their fitness in field enclosures (McGirr and Martin, 2020; Kulmuni and Westram, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies documenting the expression patterns and potential incompatibility.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "70a2ab0c-fa88-4440-8db8-fb4ead38c6f0",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C30",
+      "claim": "Models including fitness-associated SNPs were invariably favored over models with external morphology alone (\u0394AICc > 8.6).",
+      "claim_type": "EXPLICIT",
+      "source": "Models including fitness-associated SNPs were invariably favored over models with external morphology alone (\u0394AICc > 8.6: Supplementary file 1\u2013tables 14\u201315).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific model comparison statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "e3ebb16e-c550-47bb-a5cd-b42d7d3b9f42",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C31",
+      "claim": "Morphology-only models predicted a flat fitness surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphology-only models predicted a flat fitness surface (Figure 2b, Figure 2\u2014figure supplement 6; predictions restricted to observed hybrid morphospace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the model results and references figures showing the flat surface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "9fc52c59-4786-48f2-a078-b1737f4f1ecb",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C32",
+      "claim": "Models including fitness-associated SNPs predicted a complex and nonlinear fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, models including fitness-associated SNPs predicted a complex and nonlinear fitness landscape, despite our limited dataset of 139 sequenced hybrids relative to samples in previous morphology-only studies of >800 hybrids per enclosure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the model results and contrasts them with morphology-only models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "9696f55b-20cf-44ed-bf8f-0db56a3a20cb",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C33",
+      "claim": "The inferred adaptive landscape was characterized by a fitness peak near hybrids resembling the generalist phenotype separated by a small fitness valley from a second region of high fitness for hybrids resembling the molluscivore phenotype, with hybrids resembling the scale-eater phenotype occurring in a large fitness valley.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduced model was the best fit; the inferred adaptive landscape was complex and characterized by a fitness peak near hybrids resembling the generalist phenotype separated by a small fitness valley from a second region of high fitness for hybrids resembling the molluscivore phenotype. Hybrids resembling the scale-eater phenotype again occurred in a large fitness valley (Figure 2b\u20132d: For results pertaining to growth or survival, see Supplementary file 1: Figure 2\u2014figure supplement 6, Supplementary file 1\u2013tables 11\u201315).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the fitness landscape topology and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "1a972740-82aa-4305-8b47-3bac8e98b61a",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C34",
+      "claim": "Each of the fitness peaks and valleys were frequently recovered across 10,000 bootstrap replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these fitness peaks and valleys were frequently recovered across 10,000 bootstrap replicates; landscapes inferred from bootstrap replicates were often more complex with increased curvature relative to inferences from our observed dataset (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes bootstrap validation results and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "474961dc-4a44-460d-9f30-45d3874edc5b",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C35",
+      "claim": "The highest fitness optimum was shifted from the molluscivore to the generalist phenotype compared to previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to previous studies, the highest fitness optimum was shifted from the molluscivore to the generalist phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly compares results to previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "63f68062-7e91-4264-987a-16d2c0933a4c",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C36",
+      "claim": "Fitness-associated SNPs increased the fitness of hybrids resembling generalists beyond expectations based on their morphology alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that fitness-associated SNPs increased the fitness of hybrids resembling generalists beyond expectations based on their morphology alone, consistent with the hypothesis that fitness-associated SNPs are associated with unmeasured non-morphological traits affecting fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides an interpretation of the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "040c28fd-8924-4b39-a8cc-7865219a7ab4",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C37",
+      "claim": "One of the most common haplotypes was most frequent in hybrids resembling generalists near the peak of high fitness and rare in hybrids resembling either trophic specialist.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, visualization of observed haplotypes in hybrids across the fitness landscape supported this interpretation; one of the most common haplotypes was most frequent in hybrids resembling generalists near the peak of high fitness and rare in hybrids resembling either trophic specialist (Figure 2\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes haplotype distribution patterns and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "4b035b9f-8da4-4ce1-95bb-f71ddb69bfdc",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C38",
+      "claim": "Genotypic fitness networks were reconstructed from 1498 candidate adaptive alleles previously identified in this system.",
+      "claim_type": "EXPLICIT",
+      "source": "To accomplish this, we reconstructed genotypic fitness networks from 1498 candidate adaptive alleles previously identified in this system (e.g. Figure 3a; Richards et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the network construction method and cites the source of adaptive alleles.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "9e793fc9-877d-4773-b36d-f69fc38622c6",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C39",
+      "claim": "Adaptive alleles displayed significant evidence of a hard selective sweep using both site frequency spectrum and LD-based methods, SweeD and OmegaPlus, and contained fixed or nearly fixed SNPs (FST > 0.95) differentiating trophic specialists across lakes.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions displayed significant evidence of a hard selective sweep using both site frequency spectrum and LD-based methods, SweeD (Pavlidis et al., 2013) and OmegaPlus (Alachiotis et al., 2012), and contained fixed or nearly fixed SNPs (FST > 0.95) differentiating trophic specialists across lakes (Richards et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the criteria for identifying adaptive alleles and cites relevant studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "88d7e1c0-f31f-465d-a28b-e8cc4ff9e550",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C40",
+      "claim": "Adaptive alleles were classified as standing variation, introgressed, or de novo mutations based on extensive sampling of focal and related Cyprinodon pupfish species across San Salvador Island and neighboring Caribbean islands, as well as North and South American outgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive alleles were classified as standing variation, introgressed, or de novo mutations based on extensive sampling of focal and related Cyprinodon pupfish species across San Salvador Island and neighboring Caribbean islands, as well as North and South American outgroups (Richards et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the classification method and cites the relevant study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "9c6af622-d2c6-4c8e-a753-c37afeaa3af2",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C41",
+      "claim": "Generalists and molluscivores are closer on the genotypic fitness network than either is to scale-eaters.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we plotted edges between nodes up to five mutational steps away (e.g. Figure 3b) and found that generalists and molluscivores are closer on the genotypic fitness network than either is to scale-eaters (Figure 3c), as expected based on their genetic distance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the network analysis results and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "5a93e2d7-f5a6-4c19-8b00-944ff330f51a",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C42",
+      "claim": "Most scale-eaters are quite isolated in genotypic space, separated from the generalist cluster of nodes by 12.6 \u00b1 0.091 (mean \u00b1 SE: p < 0.001) mutational steps and from molluscivores by 16.3 \u00b1 0.060 steps (p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Most scale-eaters appear quite isolated in genotypic space, separated from the generalist cluster of nodes by 12.6 \u00b1 0.091 (mean \u00b1 SE: p < 0.001) mutational steps and from molluscivores by 16.3 \u00b1 0.060 steps (p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical results for genetic distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "2487d165-4ff1-4c1c-9f77-3255b71e6dbb",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C43",
+      "claim": "Molluscivores were separated from generalists by 5.37 \u00b1 0.103 steps (p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, molluscivores were separated from generalists by 5.37 \u00b1 0.103 steps (p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical results for genetic distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "a93b8efc-3e23-402a-8b36-431924daedad",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C44",
+      "claim": "Generalists show the greatest intrapopulation distances, separated from each other by 6.08 \u00b1 0.088 steps (p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Generalists show the greatest intrapopulation distances, separated from each other by 6.08 \u00b1 0.088 steps (p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical results for within-population genetic distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "53ce1b75-0fd9-40f2-b552-e806c6cadd94",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C45",
+      "claim": "Molluscivores exhibited the smallest intrapopulation distances, separated by 1.75 \u00b1 0.021 steps (p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, molluscivores exhibited the smallest intrapopulation distances, separated by 1.75 \u00b1 0.021 steps (p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical results for within-population genetic distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "b1776c00-6755-42d0-aefc-55651381d8f1",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C46",
+      "claim": "Scale-eater intrapopulation distances were intermediate (4.71 \u00b1 0.088 steps: p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Scale-eater intrapopulation distances were intermediate (4.71 \u00b1 0.088 steps: p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical results for within-population genetic distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "71a85e94-c429-4747-9754-6fe18c6b6c57",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C47",
+      "claim": "Molluscivore genotypes are more accessible to generalists than scale-eater genotypes on the genotypic fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that molluscivore genotypes were significantly more accessible to generalists on the fitness landscape than scale-eaters (Supplementary file 1\u2013table 17); molluscivore networks had significantly more accessible paths [OR: (95% CI) = 2.095: (1.934, 2.274)] that were significantly shorter [OR and 95% CI = 0.253: (0.231, 0.277)].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical results comparing accessibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "71c64993-f91b-442c-86f5-53ce9d686732",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C48",
+      "claim": "Molluscivore fitness networks were significantly less rugged than scale-eater networks, comprised of fewer peaks [OR and 95% CI = 0.604: (0.575, 0.634)].",
+      "claim_type": "EXPLICIT",
+      "source": "Not only were molluscivore genotypes more accessible to generalists, but molluscivore fitness networks were significantly less rugged than scale-eater networks, comprised of fewer peaks [OR and 95% CI = 0.604: (0.575, 0.634)], and connected by significantly more accessible paths [OR and 95% CI = 1.514: (1.404, 1.635)], that contained fewer mutational steps [OR and 95% CI = 0.539: (0.500, 0.579)].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical results comparing landscape ruggedness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "c8d41c48-eb67-4e92-9444-53926323c343",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C49",
+      "claim": "Genotypic trajectories between generalists and either trophic specialist in genotypic fitness networks constructed from introgressed or de novo adaptive mutations were significantly more accessible than networks constructed from standing genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that genotypic trajectories between generalists and either trophic specialist in genotypic fitness networks constructed from introgressed or de novo adaptive mutations were significantly more accessible than networks constructed from standing genetic variation (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the main finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "820a38d0-8b69-4084-9498-053d4b9fe909",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C50",
+      "claim": "Random networks that included alternate sources of adaptive variation contained significantly more accessible fitness paths from generalist to specialists than networks constructed from standing genetic variation alone, while controlling for differences in overall network size.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, random networks that included alternate sources of adaptive variation contained significantly more accessible fitness paths from generalist to specialists than networks constructed from standing genetic variation alone, while controlling for differences in overall network size (Figure 5a; Supplementary file 1\u2013table 18).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text provides specific results and references figures and tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "cc65b276-6534-43e3-a045-181a79aadc4f",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C51",
+      "claim": "Accessible paths between generalists and specialists in networks constructed from introgressed or de novo adaptive loci were significantly shorter in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, accessible paths between generalists and specialists in networks constructed from introgressed or de novo adaptive loci were significantly shorter in length (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "f0fc94c0-21e3-4934-a64a-0c5d04292f43",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C52",
+      "claim": "Fitness landscapes constructed from adaptive standing genetic variation alone are more rugged than networks including adaptive loci originating from either introgression or de novo mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding of increased accessibility of interspecific genotypic trajectories suggests that fitness landscapes constructed from adaptive standing genetic variation alone are more rugged than networks including adaptive loci originating from either introgression or de novo mutation. Quantification of landscape ruggedness supported this hypothesis in all cases (Figure 5c; Supplementary file 1\u2013tables 18\u201319).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the finding and provides supporting evidence from figures and tables.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "60c8e9a0-005d-48fe-955c-4bb790a8ad13",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C53",
+      "claim": "Increasing landscape ruggedness significantly decreased the length of accessible paths to the nearest local peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, increasing landscape ruggedness significantly decreased the length of accessible paths to the nearest local peak [glm(min. path length ~ number of peaks, family = poisson): p < 0.0001, \u03b2 = \u20130.088, 95% CI = \u22120.095 to 0.081].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical results from a regression model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "36838696-72ab-4205-818e-10c85aba0b6a",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C54",
+      "claim": "Scale-eater fitness genotypic fitness landscapes constructed from a combination of adaptive loci sourced from standing variation, introgression, and de novo mutations had significantly more accessible paths separating generalists from scale-eaters [OR and 95% CI = 1.879: (1.743, 2.041); LRT p < 0.0001].",
+      "claim_type": "EXPLICIT",
+      "source": "Scale-eater fitness genotypic fitness landscapes constructed from a combination of adaptive loci sourced from standing variation, introgression, and de novo mutations had significantly more accessible paths (scaled by network size) separating generalists from scale-eaters [OR and 95% CI = 1.879: (1.743, 2.041); LRT p < 0.0001; Figure 5a]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text provides specific statistical results and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "e770cc8a-94d0-487e-acc8-f77d5452ce06",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C55",
+      "claim": "Paths in scale-eater networks constructed from all three sources of variation were significantly shorter in length compared to networks constructed from standing variation alone [OR and 95% CI = 0.876: (0.823, 0.932); LRT p < 0.0001].",
+      "claim_type": "EXPLICIT",
+      "source": "and these paths were significantly shorter in length compared to networks constructed from standing variation alone [OR and 95% CI = 0.876: (0.823, 0.932); LRT p < 0.0001; Figure 5b].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text provides specific statistical results and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "6c259578-76ae-450d-b6c5-682c13abd180",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C56",
+      "claim": "Scale-eaters are more isolated than molluscivores from generalists on the fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that not only are scale-eaters more isolated than molluscivores from generalists on the fitness landscape, but that the scale-eater fitness landscape is more rugged than molluscivores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "fa8746bc-ddb6-47ed-82a4-e7540b1db2a1",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C57",
+      "claim": "The scale-eater fitness landscape is more rugged than molluscivores.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that not only are scale-eaters more isolated than molluscivores from generalists on the fitness landscape, but that the scale-eater fitness landscape is more rugged than molluscivores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "9c02f8a0-f3a1-4563-a5b0-b4c6613e0bae",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C58",
+      "claim": "Epistasis is more pervasive on the scale-eater fitness landscape, leading to less predictable evolutionary outcomes and fewer accessible trajectories from generalist to scale-eater genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that epistasis is more pervasive on the scale-eater fitness landscape, leading to less predictable evolutionary outcomes and fewer accessible trajectories from generalist to scale-eater genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides an interpretation of the results in terms of epistasis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "193dae72-748c-4f46-bbe1-58ff0e8bf62c",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C59",
+      "claim": "Most genotypic trajectories were inaccessible and included one or more mutational steps that decreased in fitness from generalist to specialist.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found that most genotypic trajectories were inaccessible and included one or more mutational steps that decreased in fitness from generalist to specialist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text summarizes a key finding about trajectory accessibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "ea13c055-35ff-4d34-bef9-bfe37d139e20",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C60",
+      "claim": "Fitness landscapes are most rugged, and therefore epistasis most pervasive, when constructed from standing genetic variation alone, ultimately leading to a reduction in the accessibility of fitness peaks on these landscapes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that fitness landscapes are most rugged, and therefore epistasis most pervasive, when constructed from standing genetic variation alone, ultimately leading to a reduction in the accessibility of fitness peaks on these landscapes (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states this conclusion and references a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "20217119-ef97-4973-8276-ae9ac5abbfed",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C62",
+      "claim": "Adaptive introgression and de novo mutations alter the shape of the fitness landscape, providing key connections in adaptive walks circumventing fitness valleys and triggering the evolution of novelty during adaptive radiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that adaptive introgression and de novo mutations alter the shape of the fitness landscape, providing key connections in adaptive walks circumventing fitness valleys and triggering the evolution of novelty during adaptive radiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "0bb32fea-dfae-4f87-b79d-3adffff4d21a",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C63",
+      "claim": "Adaptive introgression or de novo mutations reduce the impacts of epistasis, resulting in a smoother fitness landscape with a greater number of accessible adaptive walks, facilitating the colonization of new adaptive zones.",
+      "claim_type": "EXPLICIT",
+      "source": "This would suggest that adaptive introgression or de novo mutations reduce the impacts of epistasis, resulting in a smoother fitness landscape with a greater number of accessible adaptive walks, facilitating the colonization of new adaptive zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "751e59bd-535a-4842-86b5-565e03d53767",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C64",
+      "claim": "Phenotypic fitness valleys may be circumvented by rare accessible paths on the genotypic fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results shed light on the classic problem of crossing fitness valleys on three-dimensional phenotypic fitness landscapes. We show that phenotypic fitness valleys may be circumvented by rare accessible paths on the genotypic fitness landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "458b36f0-dfdf-4607-b26d-c01f341ac388",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C65",
+      "claim": "Adaptive introgression smooths the fitness landscape and increases the accessibility of fitness peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that adaptive introgression smooths the fitness landscape and increases the accessibility of fitness peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "07b37f05-cd52-4f67-90b0-53e9e62783ec",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C66",
+      "claim": "Hybridization not only generates genetic diversity, but this diversity can alter the shape of the fitness landscape, changing which genotypic combinations are favored by natural selection along with the adaptive walks that lead to them.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that adaptive introgression directly alters the shape of the fitness landscape, making novel fitness peaks more accessible to natural selection. Thus, hybridization not only generates genetic diversity, but this diversity can alter the shape of the fitness landscape, changing which genotypic combinations are favored by natural selection along with the adaptive walks that lead to them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "b3232be0-1827-40a6-9f2f-b2bf47bb6720",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C67",
+      "claim": "Lepidophagy (scale-eating) is a niche occupied by less than 0.3% of all fishes.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the patterns observed by Weinreich et al., 2006, who constructed combinatorially complete fitness networks for five mutations contributing to antibiotic resistance in E. coli and found that only 18 of 120 possible genotypic trajectories were evolutionarily accessible. In contrast, Khan et al., 2011 estimated that over half of all trajectories were accessible on a complete fitness landscape constructed using the first five adaptive mutations to fix in an experimental population of E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a database (Froese and Pauly, 2021) for this statistic.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "dc6d5396-2541-4f8e-9522-894eaf05cee4",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C68",
+      "claim": "Introgressed and de novo variants reduced fitness landscape ruggedness as compared to standing variation, increasing the accessibility of genotypic fitness paths from generalist to specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, introgressed and de novo variants reduced fitness landscape ruggedness as compared to standing variation, increasing the accessibility of genotypic fitness paths from generalist to specialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "f842c771-f7d8-441c-850c-7a280bab4622",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C69",
+      "claim": "The adaptive landscape describes the complex relationship between genotype or phenotype and fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "First conceptualized by Sewell Wright in 1932, the adaptive landscape describes the complex relationship between genotype or phenotype and fitness (Wright, 1932).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites Wright's original conceptualization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "32f5ac6c-62c5-4a08-bf7f-3bd30c3ac653",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C70",
+      "claim": "Fitness landscapes were originally depicted as high-dimensional networks spanning genotypic space in which each genotype is associated with fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitness landscapes were originally depicted as high-dimensional networks spanning genotypic space in which each genotype is associated with fitness (Wright, 1932).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites Wright's original conceptualization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "65f304d1-551c-491d-8809-dc409b0269b7",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C71",
+      "claim": "Simpson described phenotypic evolution of populations through time on a rugged landscape, in which isolated clusters of fitness peaks represent 'adaptive zones' relative to adjacent regions of low fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Simpson, 1944, later described phenotypic evolution of populations through time on a rugged landscape, in which isolated clusters of fitness peaks represent 'adaptive zones' relative to adjacent regions of low fitness (Kauffman and Levin, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites Simpson's work on adaptive zones.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "09b0d46d-1b00-437b-8c35-4638de66938f",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C72",
+      "claim": "Lande and Arnold formalized the analysis of selection and estimation of phenotypic fitness landscapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Lande and Arnold formalized the analysis of selection and estimation of phenotypic fitness landscapes (Lande and Arnold, 1983; Arnold et al., 2001; Arnold, 2003), leading to empirical studies of fitness landscapes in numerous systems (Schluter and Grant, 1984; Schluter, 1988; Hendry et al., 2009; Beausoleil et al., 2019; Benkman, 2003; Martin and Wainwright, 2013a; Martin and Gould, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites the foundational work of Lande and Arnold.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "dbbd7468-600b-4218-bae5-ce123309fb07",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C73",
+      "claim": "The existence of multiple peaks and valleys on the fitness landscape implies epistasis for fitness, or non-additive effects on fitness resulting from genotypic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the existence of multiple peaks and valleys on the fitness landscape implies epistasis for fitness, or non-additive effects on fitness resulting from genotypic interactions (Wright, 1931; Whitlock et al., 1995; Poelwijk et al., 2007; Poelwijk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies establishing this relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "fda6ca34-c005-442c-9e3f-ddc53ec71cf2",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C74",
+      "claim": "Fitness epistasis reduces the predictability of evolution because the resultant increase in the number of peaks increases the number of viable evolutionary outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitness epistasis reduces the predictability of evolution because the resultant increase in the number of peaks increases the number of viable evolutionary outcomes (Kauffman and Levin, 1987; Neidhart et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing this theoretical relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "a6161e38-fe49-4f65-962f-23c8169e5abf",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C75",
+      "claim": "Not all genotypic pathways are evolutionarily accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to a fundamental concept in fitness landscape theory: Not all genotypic pathways are evolutionarily accessible (Fragata et al., 2019; Poelwijk et al., 2007; Weinreich et al., 2006; Ferretti et al., 2018; Franke et al., 2011; de Visser and Krug, 2014; Smith, 1970; Ogbunugafor, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies establishing this fundamental concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "73cadc71-26a9-49c5-8e47-13d54fb32e0e",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C76",
+      "claim": "In large populations, paths through genotype space that monotonically increase in fitness at each mutational step are favored over alternatives with neutral or deleterious steps.",
+      "claim_type": "EXPLICIT",
+      "source": "In large populations, paths through genotype space that monotonically increase in fitness at each mutational step are favored over alternatives with neutral or deleterious steps (Fisher, 1930).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites Fisher's foundational work on natural selection.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "653b7211-1f78-4cd3-83fc-711c36c322f7",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "claim_id": "C77",
+      "claim": "Increasing landscape ruggedness decreases the length of adaptive walks to the nearest local optimum, owing to the corresponding increase in peak density.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, increasing landscape ruggedness decreases the length of adaptive walks to the nearest local optimum, owing to the corresponding increase in peak density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes a theoretical relationship in fitness landscape theory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3a71b2dd-a2a0-4fa3-ae35-67dfa6a15588",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The San Salvador Island pupfish radiation consists of three sympatric species (generalist, molluscivore, scale-eater) that originated less than 10,000 years ago, exhibit exceptional rates of craniofacial evolution, and maintain species boundaries despite admixture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 establish the study system through direct observations (C1-C3), geological dating (C4), and citations to prior work (C5-C6). The 14-year field observation period (C3) and multiple supporting studies provide strong evidence for the system's characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "69304e18-8892-43fc-af0e-71338452e098",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous studies documented a stable multi-peaked phenotypic fitness landscape with scale-eater hybrids in the lowest fitness region and generalist and molluscivore hybrids occupying separate fitness peaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 summarize prior work establishing the phenotypic fitness landscape. These are well-supported by citations to multiple previous studies (Martin and Wainwright 2013a; Martin and Gould 2020; Martin 2016) that documented consistent patterns across populations and years.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "6de83252-1583-408c-b60a-ceffec4352b6",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The adaptive radiation originated from standing genetic variation, adaptive introgression, and de novo mutations, with both specialists harboring introgressed SNPs under selection and only scale-eaters showing hard sweeps of de novo mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 describe the genetic basis of the radiation based on extensive prior genomic work (Richards et al. 2021, 2017). The classification of adaptive alleles by source and identification of selective sweeps provides strong support for these patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "2f3477d0-2740-4095-9124-39716e649af6",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Whole-genome sequencing of 139 hybrids from field experiments yielded 1,129,771 SNPs that differentiated populations by lake and species, with some transgressive hybrids and significant correlation between genetic and morphological distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 describe the genomic dataset with specific sample sizes, sequencing statistics, and PCA results. The methods are standard and appropriate, with clear documentation of variance explained (PC1: 22.7%, PC2: 15.9%) and reference to supporting figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "4f984fb4-d5ba-46ac-8d22-186ef8c16230",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genome-wide ancestry proportions were not significantly associated with hybrid fitness, growth, or survival, highlighting a complex nonlinear relationship between genotype, phenotype, and fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 report null results from statistical tests with specific p-values for all three fitness measures and ancestry types. The analysis controlled for lake and experiment effects, and results were consistent across multiple analytical approaches (unsupervised/supervised ADMIXTURE, PC axes).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GWAS identified 132 SNPs associated with composite fitness (13 at Bonferroni threshold), enriched for synaptic signaling genes, with six fitness-associated genes containing fixed divergent SNPs between specialists but no overlap with selective sweep regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C29 describe GWAS results with appropriate statistical thresholds, gene ontology enrichment (FDR < 0.01), and functional characterization of candidate genes. The surprising lack of overlap with sweep regions (C22) is explicitly noted. The functional roles of identified genes are supported by citations to studies in other fish species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "78d4cfd6-5c3f-4b70-9120-8c4c41376c77",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Models including fitness-associated SNPs predicted a complex nonlinear fitness landscape with peaks for generalist and molluscivore phenotypes and a valley for scale-eaters, outperforming morphology-only models and shifting the highest fitness optimum to generalists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C37 describe GAM results with strong model support (\u0394AICc > 8.6) and bootstrap validation (10,000 replicates). The shift in fitness optimum from molluscivores to generalists is supported by haplotype distribution patterns. However, the sample size (139 hybrids) is acknowledged as limited compared to previous studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genotypic fitness networks constructed from 1498 adaptive alleles show scale-eaters are highly isolated in genotypic space (12.6\u00b10.091 steps from generalists), while molluscivores are closer to generalists (5.37\u00b10.103 steps), with generalists showing the greatest intrapopulation diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C46 describe network construction and quantitative distances with statistical significance (all p < 0.001). The methods appropriately classify adaptive alleles based on prior work and use standard network approaches. The pattern of scale-eater isolation is consistent across multiple metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "808f677e-bec8-4eb9-9807-4ad0464edcbd",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Molluscivore genotypes are significantly more accessible to generalists than scale-eater genotypes, with more accessible paths (OR: 2.095) that are shorter (OR: 0.253), and molluscivore fitness networks are less rugged with fewer peaks (OR: 0.604).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 report odds ratios with 95% confidence intervals from 5000 random network samples. The statistical approach is appropriate for comparing accessibility metrics between specialists, and all reported differences are highly significant with non-overlapping confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "b9a36788-2301-4424-84e8-e50e24708e7f",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Networks constructed from introgressed or de novo mutations are significantly more accessible than those from standing variation alone, with more accessible paths that are shorter, and fitness landscapes from standing variation are more rugged with increasing ruggedness decreasing path length to nearest peaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 describe the main finding with statistical support from 5000 random networks per source. The regression analysis (C53: p < 0.0001, \u03b2 = -0.088) appropriately tests the relationship between ruggedness and path length. Results are consistent across fitness measures and validated with bootstrap replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "c95a4ec6-5fa7-4e53-924f-ba99347432f1",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Scale-eater networks combining all three sources of variation have significantly more accessible paths (OR: 1.879) that are shorter (OR: 0.876) compared to standing variation alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 provide specific statistical results with odds ratios, confidence intervals, and likelihood ratio test p-values. The findings are consistent with the broader pattern that alternative sources of variation increase accessibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "879884b6-e3de-4611-bc2a-4f2cb5ef10e2",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Scale-eaters are more isolated and have a more rugged fitness landscape than molluscivores, indicating more pervasive epistasis leading to less predictable evolution and fewer accessible trajectories, with most genotypic trajectories being inaccessible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 synthesize results from network analyses with appropriate interpretation regarding epistasis and predictability. The conclusions follow logically from the quantitative differences in isolation, ruggedness, and accessibility documented in earlier claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "9ec0e877-049d-49bd-b8b9-03bd6b9eb235",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Fitness landscapes constructed from standing genetic variation alone are most rugged with the most pervasive epistasis, while adaptive introgression and de novo mutations reduce epistasis, smooth the landscape, and increase accessible adaptive walks, facilitating colonization of new adaptive zones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C62-C63 present the study's main conclusions supported by the network analyses. The interpretation that introgression and de novo mutations alter landscape shape and reduce epistasis is well-supported by the quantitative differences in accessibility and ruggedness across network types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "ea897377-05e2-431b-9c91-db20a4c39de0",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Phenotypic fitness valleys can be circumvented by rare accessible paths on the genotypic fitness landscape, and adaptive introgression directly alters the fitness landscape shape, changing which genotypic combinations are favored by selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 provide mechanistic interpretation of how hybridization facilitates adaptive radiation. The conclusions are supported by the demonstration that genotypic networks reveal accessible paths not apparent in phenotypic space and that different sources of variation alter landscape topology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "056457f5-71e5-4d73-91e0-678c9e10dd50",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Lepidophagy (scale-eating) is a niche occupied by less than 0.3% of all fishes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 cites a fish database (Froese and Pauly 2021) for this statistic, providing context for the rarity of the scale-eating niche. This is a straightforward factual claim from an authoritative source.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "3bfd323d-286e-4698-b2f0-b73662d2959c",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Introgressed and de novo variants reduced fitness landscape ruggedness compared to standing variation, increasing the accessibility of genotypic fitness paths from generalist to specialists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 summarizes the main empirical finding stated in the abstract. This is well-supported by the detailed network analyses and statistical comparisons across sources of variation documented in claims C49-C55.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    },
+    {
+      "id": "56089b88-eef3-4301-b58f-7bfbe349e2e5",
+      "content_id": "37fa4d14-0080-47cb-9139-a3781c50847c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The adaptive landscape concept describes the relationship between genotype/phenotype and fitness, with multiple peaks implying epistasis that reduces evolutionary predictability, and not all genotypic pathways are evolutionarily accessible, with accessible paths requiring monotonic fitness increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 provide theoretical background on fitness landscapes, citing foundational work (Wright 1932, Simpson 1944, Lande and Arnold 1983, Fisher 1930). These are well-established concepts in evolutionary biology supported by extensive literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:16:58.753569Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fe1002bf-936f-4e9c-bfcc-c55421b6b24f",
+      "result_id": "3a71b2dd-a2a0-4fa3-ae35-67dfa6a15588"
+    },
+    {
+      "claim_id": "ae664246-7fc4-409f-8f7a-6b759d5c726c",
+      "result_id": "3a71b2dd-a2a0-4fa3-ae35-67dfa6a15588"
+    },
+    {
+      "claim_id": "57ff32de-62a1-4bce-b75a-1c72a61b7a7b",
+      "result_id": "3a71b2dd-a2a0-4fa3-ae35-67dfa6a15588"
+    },
+    {
+      "claim_id": "cb6fff21-4005-43fc-bbdf-9eae5498c4bd",
+      "result_id": "3a71b2dd-a2a0-4fa3-ae35-67dfa6a15588"
+    },
+    {
+      "claim_id": "d6b2a68e-4b3a-488d-a578-d906a30d5683",
+      "result_id": "3a71b2dd-a2a0-4fa3-ae35-67dfa6a15588"
+    },
+    {
+      "claim_id": "f22e0cfc-db33-4cb5-9965-8a197909ad2e",
+      "result_id": "3a71b2dd-a2a0-4fa3-ae35-67dfa6a15588"
+    },
+    {
+      "claim_id": "f8331993-df59-432d-8065-f1d86a8082bb",
+      "result_id": "69304e18-8892-43fc-af0e-71338452e098"
+    },
+    {
+      "claim_id": "e27e786e-143d-4fc8-b17d-8641c7fed614",
+      "result_id": "69304e18-8892-43fc-af0e-71338452e098"
+    },
+    {
+      "claim_id": "90b6f8c9-9724-4fd8-b5de-20f1c1c38d8d",
+      "result_id": "69304e18-8892-43fc-af0e-71338452e098"
+    },
+    {
+      "claim_id": "6c4184df-8433-4453-b55e-908a63df9ff6",
+      "result_id": "6de83252-1583-408c-b60a-ceffec4352b6"
+    },
+    {
+      "claim_id": "9dfac7f6-9379-444a-903a-96cbd489adde",
+      "result_id": "6de83252-1583-408c-b60a-ceffec4352b6"
+    },
+    {
+      "claim_id": "9d7d9988-d0f2-4c6e-b807-7203867720a8",
+      "result_id": "6de83252-1583-408c-b60a-ceffec4352b6"
+    },
+    {
+      "claim_id": "2509e01f-ff4f-491a-a50f-c6cd008f9b8e",
+      "result_id": "2f3477d0-2740-4095-9124-39716e649af6"
+    },
+    {
+      "claim_id": "ed04141a-fec1-4a57-97d8-4eb705254d1c",
+      "result_id": "2f3477d0-2740-4095-9124-39716e649af6"
+    },
+    {
+      "claim_id": "eda6f9aa-cf9d-45cf-98d7-a866a1c392b3",
+      "result_id": "2f3477d0-2740-4095-9124-39716e649af6"
+    },
+    {
+      "claim_id": "de149853-0550-4488-a15d-a7dea087daee",
+      "result_id": "2f3477d0-2740-4095-9124-39716e649af6"
+    },
+    {
+      "claim_id": "32eeae33-1c25-4883-9c44-25e62012c72b",
+      "result_id": "2f3477d0-2740-4095-9124-39716e649af6"
+    },
+    {
+      "claim_id": "4c04a3ce-31f5-4e19-9659-5c3498e17f58",
+      "result_id": "4f984fb4-d5ba-46ac-8d22-186ef8c16230"
+    },
+    {
+      "claim_id": "072f2837-4f8c-406c-8754-e0404a4a07e6",
+      "result_id": "4f984fb4-d5ba-46ac-8d22-186ef8c16230"
+    },
+    {
+      "claim_id": "45d8fbed-6873-485c-88f3-f8107c46a81c",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "c66c3b77-43a9-46ee-adf8-157424979763",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "ab9bde94-40ea-4776-9dc5-0f327f2b9298",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "d8fdc226-f376-4870-a5f1-b4c0b77d8f59",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "4a01dded-5cff-4df9-9d4f-66cbfeee8296",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "6232e6a1-7a70-4945-b0e0-91e8259cfd5b",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "bbb2518a-ea6a-4f3f-9b4c-a0fc4f8d914b",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "8bc1db90-b8b2-409f-af64-913277ded863",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "2c2024ce-2705-4cd7-adca-2498fc35e499",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "cb2aae3c-de94-4515-a23d-c2ba1d66e500",
+      "result_id": "a3b8553b-245f-4fc2-97f1-0334b3efb4e5"
+    },
+    {
+      "claim_id": "70a2ab0c-fa88-4440-8db8-fb4ead38c6f0",
+      "result_id": "78d4cfd6-5c3f-4b70-9120-8c4c41376c77"
+    },
+    {
+      "claim_id": "e3ebb16e-c550-47bb-a5cd-b42d7d3b9f42",
+      "result_id": "78d4cfd6-5c3f-4b70-9120-8c4c41376c77"
+    },
+    {
+      "claim_id": "9fc52c59-4786-48f2-a078-b1737f4f1ecb",
+      "result_id": "78d4cfd6-5c3f-4b70-9120-8c4c41376c77"
+    },
+    {
+      "claim_id": "9696f55b-20cf-44ed-bf8f-0db56a3a20cb",
+      "result_id": "78d4cfd6-5c3f-4b70-9120-8c4c41376c77"
+    },
+    {
+      "claim_id": "1a972740-82aa-4305-8b47-3bac8e98b61a",
+      "result_id": "78d4cfd6-5c3f-4b70-9120-8c4c41376c77"
+    },
+    {
+      "claim_id": "474961dc-4a44-460d-9f30-45d3874edc5b",
+      "result_id": "78d4cfd6-5c3f-4b70-9120-8c4c41376c77"
+    },
+    {
+      "claim_id": "63f68062-7e91-4264-987a-16d2c0933a4c",
+      "result_id": "78d4cfd6-5c3f-4b70-9120-8c4c41376c77"
+    },
+    {
+      "claim_id": "040c28fd-8924-4b39-a8cc-7865219a7ab4",
+      "result_id": "78d4cfd6-5c3f-4b70-9120-8c4c41376c77"
+    },
+    {
+      "claim_id": "4b035b9f-8da4-4ce1-95bb-f71ddb69bfdc",
+      "result_id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7"
+    },
+    {
+      "claim_id": "9e793fc9-877d-4773-b36d-f69fc38622c6",
+      "result_id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7"
+    },
+    {
+      "claim_id": "88d7e1c0-f31f-465d-a28b-e8cc4ff9e550",
+      "result_id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7"
+    },
+    {
+      "claim_id": "9c6af622-d2c6-4c8e-a753-c37afeaa3af2",
+      "result_id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7"
+    },
+    {
+      "claim_id": "5a93e2d7-f5a6-4c19-8b00-944ff330f51a",
+      "result_id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7"
+    },
+    {
+      "claim_id": "2487d165-4ff1-4c1c-9f77-3255b71e6dbb",
+      "result_id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7"
+    },
+    {
+      "claim_id": "a93b8efc-3e23-402a-8b36-431924daedad",
+      "result_id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7"
+    },
+    {
+      "claim_id": "53ce1b75-0fd9-40f2-b552-e806c6cadd94",
+      "result_id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7"
+    },
+    {
+      "claim_id": "b1776c00-6755-42d0-aefc-55651381d8f1",
+      "result_id": "bb8666ae-b5f9-41a9-8d2f-03b6af1ae8c7"
+    },
+    {
+      "claim_id": "71a85e94-c429-4747-9754-6fe18c6b6c57",
+      "result_id": "808f677e-bec8-4eb9-9807-4ad0464edcbd"
+    },
+    {
+      "claim_id": "71c64993-f91b-442c-86f5-53ce9d686732",
+      "result_id": "808f677e-bec8-4eb9-9807-4ad0464edcbd"
+    },
+    {
+      "claim_id": "c8d41c48-eb67-4e92-9444-53926323c343",
+      "result_id": "b9a36788-2301-4424-84e8-e50e24708e7f"
+    },
+    {
+      "claim_id": "820a38d0-8b69-4084-9498-053d4b9fe909",
+      "result_id": "b9a36788-2301-4424-84e8-e50e24708e7f"
+    },
+    {
+      "claim_id": "cc65b276-6534-43e3-a045-181a79aadc4f",
+      "result_id": "b9a36788-2301-4424-84e8-e50e24708e7f"
+    },
+    {
+      "claim_id": "f0fc94c0-21e3-4934-a64a-0c5d04292f43",
+      "result_id": "b9a36788-2301-4424-84e8-e50e24708e7f"
+    },
+    {
+      "claim_id": "60c8e9a0-005d-48fe-955c-4bb790a8ad13",
+      "result_id": "b9a36788-2301-4424-84e8-e50e24708e7f"
+    },
+    {
+      "claim_id": "36838696-72ab-4205-818e-10c85aba0b6a",
+      "result_id": "c95a4ec6-5fa7-4e53-924f-ba99347432f1"
+    },
+    {
+      "claim_id": "e770cc8a-94d0-487e-acc8-f77d5452ce06",
+      "result_id": "c95a4ec6-5fa7-4e53-924f-ba99347432f1"
+    },
+    {
+      "claim_id": "6c259578-76ae-450d-b6c5-682c13abd180",
+      "result_id": "879884b6-e3de-4611-bc2a-4f2cb5ef10e2"
+    },
+    {
+      "claim_id": "fa8746bc-ddb6-47ed-82a4-e7540b1db2a1",
+      "result_id": "879884b6-e3de-4611-bc2a-4f2cb5ef10e2"
+    },
+    {
+      "claim_id": "9c02f8a0-f3a1-4563-a5b0-b4c6613e0bae",
+      "result_id": "879884b6-e3de-4611-bc2a-4f2cb5ef10e2"
+    },
+    {
+      "claim_id": "193dae72-748c-4f46-bbe1-58ff0e8bf62c",
+      "result_id": "879884b6-e3de-4611-bc2a-4f2cb5ef10e2"
+    },
+    {
+      "claim_id": "ea13c055-35ff-4d34-bef9-bfe37d139e20",
+      "result_id": "9ec0e877-049d-49bd-b8b9-03bd6b9eb235"
+    },
+    {
+      "claim_id": "20217119-ef97-4973-8276-ae9ac5abbfed",
+      "result_id": "9ec0e877-049d-49bd-b8b9-03bd6b9eb235"
+    },
+    {
+      "claim_id": "0bb32fea-dfae-4f87-b79d-3adffff4d21a",
+      "result_id": "9ec0e877-049d-49bd-b8b9-03bd6b9eb235"
+    },
+    {
+      "claim_id": "751e59bd-535a-4842-86b5-565e03d53767",
+      "result_id": "ea897377-05e2-431b-9c91-db20a4c39de0"
+    },
+    {
+      "claim_id": "458b36f0-dfdf-4607-b26d-c01f341ac388",
+      "result_id": "ea897377-05e2-431b-9c91-db20a4c39de0"
+    },
+    {
+      "claim_id": "07b37f05-cd52-4f67-90b0-53e9e62783ec",
+      "result_id": "ea897377-05e2-431b-9c91-db20a4c39de0"
+    },
+    {
+      "claim_id": "b3232be0-1827-40a6-9f2f-b2bf47bb6720",
+      "result_id": "056457f5-71e5-4d73-91e0-678c9e10dd50"
+    },
+    {
+      "claim_id": "dc6d5396-2541-4f8e-9522-894eaf05cee4",
+      "result_id": "3bfd323d-286e-4698-b2f0-b73662d2959c"
+    },
+    {
+      "claim_id": "f842c771-f7d8-441c-850c-7a280bab4622",
+      "result_id": "56089b88-eef3-4301-b58f-7bfbe349e2e5"
+    },
+    {
+      "claim_id": "32f5ac6c-62c5-4a08-bf7f-3bd30c3ac653",
+      "result_id": "56089b88-eef3-4301-b58f-7bfbe349e2e5"
+    },
+    {
+      "claim_id": "65f304d1-551c-491d-8809-dc409b0269b7",
+      "result_id": "56089b88-eef3-4301-b58f-7bfbe349e2e5"
+    },
+    {
+      "claim_id": "09b0d46d-1b00-437b-8c35-4638de66938f",
+      "result_id": "56089b88-eef3-4301-b58f-7bfbe349e2e5"
+    },
+    {
+      "claim_id": "dbbd7468-600b-4218-bae5-ce123309fb07",
+      "result_id": "56089b88-eef3-4301-b58f-7bfbe349e2e5"
+    },
+    {
+      "claim_id": "fda6ca34-c005-442c-9e3f-ddc53ec71cf2",
+      "result_id": "56089b88-eef3-4301-b58f-7bfbe349e2e5"
+    },
+    {
+      "claim_id": "a6161e38-fe49-4f65-962f-23c8169e5abf",
+      "result_id": "56089b88-eef3-4301-b58f-7bfbe349e2e5"
+    },
+    {
+      "claim_id": "73cadc71-26a9-49c5-8e47-13d54fb32e0e",
+      "result_id": "56089b88-eef3-4301-b58f-7bfbe349e2e5"
+    },
+    {
+      "claim_id": "653b7211-1f78-4cd3-83fc-711c36c322f7",
+      "result_id": "56089b88-eef3-4301-b58f-7bfbe349e2e5"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C17",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "HPV-positive head and neck cancers show significantly lower mutation frequencies in the Hippo, p53, and cell cycle pathways compared to HPV-negative cancers. Analysis of TCGA data demonstrates that these three pathways exhibit the greatest difference in alteration frequency between HPV-positive and HPV-negative HNSCC and OPSCC, with Hippo pathway alterations including YAP1/TAZ amplifications or inactivating mutations in upstream inhibitors like PTPN14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C17, C41-C43 are well-supported by genomic analysis of TCGA data shown in Figure 1A and Figure 1\u2014figure supplement 1. The statistical analysis using Fisher's exact test demonstrates significant differences in pathway alteration frequencies between HPV-positive and HPV-negative cancers. The data presentation is clear and the conclusions are appropriately drawn from the genomic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C44",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C118"
+    ],
+    "result": "HPV E7 is sufficient to activate YAP1 in basal epithelial cells. Organotypic cultures of keratinocytes harboring HPV18 genome or expressing HPV16/18 E7 show increased YAP1 nuclear localization specifically in the basal layer, while HPV16 E6 shows only modest YAP1 activation compared to E7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C44, C47-C48, C50-C51, C118 are strongly supported by immunofluorescence data from organotypic cultures shown in Figure 1B-D and supplementary figures. The basal-specific YAP1 activation is clearly demonstrated with appropriate controls (parental HFK) and multiple replicates. Quantification in Figure 1\u2014figure supplement 5 provides statistical support for the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C55",
+      "C56",
+      "C123",
+      "C132"
+    ],
+    "result": "YAP1 activation by HPV E7 requires E7 binding to PTPN14. The HPV18 E7 R84S mutant, which cannot bind or degrade PTPN14, shows reduced YAP1 expression and nuclear localization in the basal layer compared to wild-type E7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C55-C56, C123, C132 are well-supported by experiments using the E7 R84S mutant shown in Figure 2B and supplementary figures. The use of a specific mutant that selectively disrupts PTPN14 binding provides strong mechanistic evidence. The immunofluorescence data clearly shows reduced YAP1 activation with the R84S mutant compared to wild-type E7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C52",
+      "C53",
+      "C54",
+      "C124"
+    ],
+    "result": "PTPN14 inactivation alone is sufficient to activate YAP1 in basal keratinocytes. PTPN14 knockout organotypic cultures show increased YAP1 levels and nuclear localization in the basal layer comparable to HPV E7-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C52-C54, C124 are supported by experiments using PTPN14 knockout cells shown in Figure 2A and Figure 2\u2014figure supplement 1. The use of CRISPR-mediated knockout provides clean genetic evidence. The phenotype is comparable to E7-expressing cells, supporting the sufficiency claim. Multiple independent organotypic cultures were analyzed with quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C135"
+    ],
+    "result": "PTPN14 expression is enriched in basal keratinocytes. Single-cell RNA-seq analysis shows PTPN14 mRNA enrichment in the basal-III cluster, and laser capture microdissection with qRT-PCR demonstrates approximately fivefold enrichment of PTPN14 mRNA in the basal epithelial layer compared to suprabasal layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C61, C63-C68, C135 are supported by multiple complementary approaches: reanalysis of published single-cell RNA-seq data (Figure 3B) and laser capture microdissection with qRT-PCR (Figure 3D-F). The basal markers (ITGA6, ITGB4) and differentiation markers (KRT1, IVL) show expected expression patterns, validating the layer separation. The pattern is consistent in both normal HFK and HPV18 E7-expressing cultures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C69",
+      "C133",
+      "C134",
+      "C137",
+      "C138"
+    ],
+    "result": "YAP1 activation by HPV E7 is restricted to the basal layer where PTPN14 is expressed. Even when E7 is expressed throughout the epithelium, YAP1 activation occurs only in basal cells, supporting that PTPN14 acts as a basal-specific YAP1 inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C69, C133-C134, C137-C138 are supported by the spatial restriction of YAP1 activation shown in Figures 1-2 combined with the basal-specific PTPN14 expression shown in Figure 3. The logic connecting E7 requirement for PTPN14 degradation with basal-specific YAP1 activation is sound. However, C137-C138 include speculative elements about the mechanism that go slightly beyond the direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C140",
+      "C142",
+      "C143"
+    ],
+    "result": "PTPN14 regulates differentiation gene expression through YAP1/TAZ but does not affect canonical YAP1/TAZ target genes (CTGF, CYR61). PTPN14 overexpression requires YAP1/TAZ to promote differentiation markers KRT1 and IVL. Similarly, knockdown of PTPN14, LATS1, or LATS2 decreases differentiation gene expression without affecting CTGF/CYR61 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C84, C86, C140, C142-C143 are supported by comprehensive siRNA knockdown and overexpression experiments shown in Figure 4. The data demonstrate that PTPN14 requires YAP1/TAZ for its effects on differentiation (Figure 4C-D), and that multiple Hippo pathway inhibitors have similar effects. The minimal overlap with canonical YAP1 signatures (Figure 4A) and lack of CTGF/CYR61 induction (Figure 4G-H) are clearly shown. C77-C78 involve some speculation about YAP1 vs TAZ specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "HPV-positive HNSCC show reduced differentiation marker expression compared to HPV-negative HNSCC, consistent with PTPN14 inactivation effects. Immunohistochemistry shows 43% of HPV-negative vs 12.5% of HPV-positive tumors are KRT1-positive. PDX models and transcriptomic data confirm lower expression of KRT1, KRT10, and IVL in HPV-positive tumors, while canonical YAP1/TAZ targets (CTGF, CYR61) show no significant difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by multiple lines of evidence from patient samples: immunohistochemistry (Figure 5A), qRT-PCR from PDX models (Figure 5B-C), and RNA-seq data analysis (Figure 5\u2014figure supplement 1). The pattern matches the in vitro findings from PTPN14 inactivation experiments. Statistical tests are appropriate (Fisher's exact test, Mann-Whitney test). Sample sizes are reasonable (14 HPV-negative, 48 HPV-positive tumors for IHC; 11 HPV-negative, 8 HPV-positive PDX).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C119",
+      "C174",
+      "C175"
+    ],
+    "result": "HPV E7 requires YAP1/TAZ-TEAD transcriptional activity to extend the lifespan of primary keratinocytes. TEADi (a competitive inhibitor of YAP1/TAZ-TEAD binding) reduced the lifespan-extending capacity of both HPV16 E7 and HPV18 E7, with E7 having minimal ability to promote growth in the presence of TEADi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29, C95-C98, C119, C174-C175 are supported by lifespan extension assays using TEADi shown in Figure 6. The experimental design is appropriate with doxycycline-inducible TEADi and tracking of population doublings over 38 days. Statistical analysis (two-way ANOVA with S\u00edd\u00e1k correction) is appropriate. The effect is stronger in E7-expressing cells than controls, supporting the requirement for YAP1/TAZ-TEAD activity in E7's transforming function. Two independent cell populations per condition provide replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C114",
+      "C115",
+      "C116",
+      "C120",
+      "C147",
+      "C148",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "YAP1 activation and PTPN14 degradation promote basal cell retention in stratified epithelia. Cell fate monitoring assays show that YAP1 overexpression (WT or S127A) increases basal cell retention from ~20% to ~60%, PTPN14 knockout increases retention to 60-70%, and HPV18 E7 WT increases retention to ~80%. The E7 R84S mutant (cannot degrade PTPN14) shows reduced retention (~60%), while E7 \u0394DLLC (cannot bind RB1) shows retention without clonal expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C39, C101-C110, C114-C116, C120, C147-C148, C154-C156 are supported by comprehensive cell fate monitoring experiments shown in Figure 7. The assay design is elegant, mixing GFP-labeled cells with unlabeled cells and tracking their distribution in organotypic cultures. Multiple conditions tested (YAP1 variants, PTPN14 KO, E7 mutants) provide strong mechanistic evidence. The YAP1 S94A mutant (cannot bind TEAD) shows intermediate retention, supporting the role of TEAD binding. Statistical analysis (ANOVA with Holm-S\u00edd\u00e1k correction) is appropriate. Multiple donors and independent cultures provide replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PTPN14 loss and E7 expression increase basal cell density without affecting suprabasal cell density. PTPN14 knockout increased basal cell density from 5.5 to 9.0 cells per 100 \u03bcm, and HPV18 E7 WT showed higher basal cell density (9.4 cells/100 \u03bcm) than E7 R84S (7.1 cells/100 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by quantification of cell density in organotypic cultures shown in Figure 2C-F. The measurements are objective and quantitative. Statistical tests (t-test, ANOVA) are appropriate. The selective effect on basal but not suprabasal density is consistent with the basal-specific YAP1 activation. Multiple independent organotypic cultures were analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C121",
+      "C122",
+      "C163"
+    ],
+    "result": "The authors propose that YAP1 activation resulting from PTPN14 inactivation is an essential, targetable activity of HPV E7 relevant to both HPV infection and carcinogenesis, and that YAP1 activation cooperates with RB1 inactivation to enable E7's transforming activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40, C121-C122, C163 represent the main conclusions/proposals of the paper. These are well-supported by the collective evidence: (1) E7 activates YAP1 through PTPN14 degradation (Figures 1-2), (2) YAP1 activity is required for E7's lifespan-extending function (Figure 6), (3) YAP1 activation promotes basal cell retention relevant to persistence (Figure 7), and (4) the pathway is altered in HPV-positive cancers (Figure 1A, Figure 5). While these are interpretive conclusions, they are strongly supported by the experimental data. The 'targetable' aspect is more speculative but reasonable given the TEADi results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The HPV18 E7 R84S mutant retains RB1 inactivation activity, and the authors interpret that proliferation of labeled basal cells in R84S experiments results from RB1 inactivation while basal retention requires PTPN14 degradation. The R84S mutant shows partial basal retention with clustered cells suggesting clonal expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112, C149-C152 are supported by the cell fate monitoring data in Figure 7F and the known properties of the R84S mutant. The interpretation that RB1 inactivation drives proliferation while PTPN14 degradation drives retention is logical and consistent with the data from both R84S and \u0394DLLC mutants. However, C152 is explicitly speculative. The clustering observation (C151) is descriptive and supported by the images.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The HPV18 E7 \u0394DLLC mutant (cannot bind RB1 but can degrade PTPN14) shows basal cell retention without clonal expansion, supporting that PTPN14 degradation is required for basal retention while RB1 inactivation is required for basal cell expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by cell fate monitoring experiments with the \u0394DLLC mutant shown in Figure 7\u2014figure supplement 2. The mutant shows single cells in the basal layer rather than clusters, consistent with retention without proliferation. This complements the R84S data and provides strong evidence for separable functions of E7. The interpretation is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Conservation of PTPN14-binding residues in E7 suggests YAP1 activation is shared among diverse papillomavirus E7 proteins. HPV18 E7 depletes PTPN14 more efficiently than HPV16 E7, consistent with stronger YAP1 nuclear localization effects observed for HPV18 E7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by comparison of HPV16 and HPV18 E7 effects in Figure 1 and citations to previous work on PTPN14 binding conservation. C127 is an implicit claim inferred from the data. The genotype-specific differences are clearly shown in the immunofluorescence images and quantification. The conservation argument (C125) is reasonable but relies on inference from sequence conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "While PTPN14 knockout reduces differentiation gene expression in monolayer culture, reduced differentiation was not observed in suprabasal layers of organotypic cultures grown from PTPN14 knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 are supported by observations from Figure 2A and Figure 2\u2014figure supplement 1, combined with previous published work. This apparent discrepancy between 2D and 3D culture is acknowledged by the authors. The immunofluorescence images show normal IVL staining in suprabasal layers of PTPN14 KO organotypic cultures. This observation is important for understanding the context-dependent effects of PTPN14.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C45",
+      "C62",
+      "C93",
+      "C94",
+      "C99",
+      "C100",
+      "C117",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C136",
+      "C139",
+      "C141",
+      "C153",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C166",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C173",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Background and contextual claims about HPV biology, Hippo pathway, epithelial biology, and cancer genomics that establish the scientific foundation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C2-C3, C10-C14, C16, C18-C26, C34-C38, C45, C62, C93-C94, C99-C100, C117, C128-C131, C136, C139, C141, C153, C157-C162, C166, C168-C171, C173, C176-C183) are primarily based on established knowledge and citations to published literature. They provide necessary context and are appropriately cited. These are not novel findings of this study but rather establish the scientific framework. C128-C131 acknowledge previous suggestions of HPV-YAP1 connections while noting the novelty of the current mechanistic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C27",
+      "C78",
+      "C144",
+      "C150",
+      "C152",
+      "C167",
+      "C184",
+      "C186"
+    ],
+    "result": "Speculative claims and acknowledged uncertainties about mechanisms, future research directions, and therapeutic implications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C27, C78, C144, C150, C152, C167, C184, C186 are explicitly speculative or acknowledge uncertainty. C9 proposes YAP1 activation as 'essential, targetable' which goes beyond the data. C27 notes lack of CTGF/CYR61 induction. C78 speculates about YAP1 vs TAZ specificity. C144 acknowledges unexplained observations. C150, C152 are interpretations with acknowledged speculation. C167 calls for future research. C184 proposes connection to BCC. C186 speculates about therapeutic potential. These are reasonable speculations but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C164",
+      "C165"
+    ],
+    "result": "Not every HPV E7-expressing cell was retained in the basal layer, leading the authors to conclude that YAP1 activation would not completely block differentiation-dependent HPV replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 are supported by the observation from cell fate monitoring experiments (Figure 7) that ~80% (not 100%) of E7-expressing cells are retained in the basal layer. The inference that this allows some differentiation-dependent replication is logical and consistent with HPV biology, though not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C172"
+    ],
+    "result": "The authors conclude that HPV E7 activates YAP1 to manipulate cell fate, opening new inquiry into how Hippo signaling impacts viral infections through tissue developmental processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C172 is a summary conclusion supported by the collective experimental evidence showing E7-mediated YAP1 activation (Figures 1-2), its requirement for E7 function (Figure 6), and its effect on cell fate (Figure 7). The broader implications for viral infections and developmental processes are reasonable extrapolations from the findings.",
+    "result_type": "MAJOR"
+  }
+]

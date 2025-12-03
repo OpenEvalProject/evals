@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33"
+    ],
+    "result": "Current mechanical stimulation methods for hair bundles have significant limitations. Glass fiber stimulation is limited to ~500 Hz due to hydrodynamic drag (time constant ~300 \u03bcs), while fluid jet methods are limited to <1 kHz due to calibration uncertainties. These methods also produce artifacts, especially for mammalian hair bundles with poor stereociliary cohesion, limiting quantitative understanding over >95% of the mammalian hearing range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C33 provide a well-documented critique of existing methods, supported by citations to prior work (C19, C21-C22, C25-C28, C33) and physical reasoning about hydrodynamic drag (C20-C22). The calculation linking time constant to cutoff frequency is correct, and the limitations for mammalian preparations are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors developed a method using tapered optical fibers with hemispherical ball lenses to deliver photonic force to hair bundles. Fibers were fabricated by chemical etching with hydrofluoric acid to reduce the 125 \u03bcm cladding diameter and expose the 5 \u03bcm core, followed by melting the tip to create a lens with ~11\u00b0 divergence angle in water. Fabrication takes ~1.5 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C47-C50, C143-C144 describe a well-documented fabrication protocol with specific technical details (dimensions, angles, timing). The method is supported by images in Figure 8 showing the tapered fibers and lenses. The citation to Turner's etching method (C143) provides precedent for the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The optical fiber was positioned at 20\u00b0 from horizontal, allowing the tip to approach within ~7 \u03bcm of target hair bundles while avoiding damage to neighboring bundles. This configuration accommodates both bullfrog saccular preparations (bundles 8 \u03bcm tall, 15 \u03bcm spacing) and rat cochlear preparations (10 \u03bcm spacing between inner and outer hair cell rows).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe the experimental geometry with specific measurements, while C51-C54 provide anatomical context. The 20\u00b0 angle is a practical solution to the geometric constraints of the microscope objective and preparation. However, no data are shown demonstrating that neighboring bundles are actually undamaged during experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Control experiments confirmed that photonic force from tapered optical fibers could move glass rods of stiffness comparable to hair bundles, eliciting prompt movements in the expected direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 describe control experiments with glass rods whose stiffness was independently measured via Brownian motion analysis. Data in Appendix 1-figure 1A support these claims. These controls are appropriate for validating that the method can deliver sufficient force.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Photonic stimulation of 40 bullfrog saccular hair bundles reliably elicited movements toward their tall edges with displacements up to 500 nm and time constants of 0.64\u00b10.06 ms (mean\u00b1SEM, N=16). Responses encompassed the range of complex trajectories reported in the literature, including slow adaptation movements in compliant bundles (>150 nm deflection) and twitch responses in stiffer bundles (~50 nm deflection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C72 are supported by experimental data in Figure 2 showing diverse response trajectories consistent with known adaptation mechanisms (C66-C67, citations to Howard & Hudspeth 1987). The time constants and displacement ranges are quantified with appropriate statistics. Comparison to literature (C65, citations to Benser et al. 1996, Tobin et al. 2019, Ricci et al. 2000) validates that responses are physiologically realistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The light-induced deflection of bullfrog hair bundles showed polarization dependence, declining monotonically as polarization was rotated to 40-50\u00b0 from the bundle's long axis, then remaining roughly constant. The response did not follow a simple cosine relationship, likely due to the complex array geometry of stereocilia with varying tilts and separations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe polarization experiments supported by data in Appendix 1-figure 3. The deviation from cosine dependence (C75) is a reasonable inference given stereociliary geometry. The authors appropriately controlled polarization in subsequent experiments (C76), though the mechanism underlying the polarization dependence remains incompletely explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Photonic stimulation successfully deflected rat cochlear hair bundles from both inner and outer hair cells. Consistent with mammalian bundles being stiffer than amphibian counterparts, deflection amplitudes were smaller (outer hair cells: 25-35 nm in 13/22 cells; inner hair cells: 75-100 nm in 7/9 cells) with time constants of a few hundred microseconds. Inner hair cell trajectories resembled those from bullfrog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 are supported by data in Figure 3A-D showing mammalian hair bundle responses. The comparison to bullfrog (C78-C79) is supported by citation to Tobin et al. 2019. However, the success rate for outer hair cells (13/22 = 59%) suggests technical challenges not fully addressed. Sample sizes are modest (3 preparations for outer hair cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The photonic stimulation method enabled diverse stimulus waveforms including sine waves, frequency sweeps, step pulses, and ramps. Bullfrog hair bundles followed sinusoidal frequency sweeps up to 2 kHz, with the upper frequency limit set by bundle mechanics rather than the stimulation method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by data in Figure 4 and Appendix 1-figure 4 showing various stimulus types. The inference that the 2 kHz limit reflects bundle mechanics (C89) is reasonable given the rapid laser modulation capability, though direct evidence (e.g., testing with stiffer bundles) is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Photonic stimulation can produce both photothermal effects (requiring intact tip links, time constant ~2 ms) and direct photonic force effects. BAPTA treatment to disrupt tip links abolished photothermal responses, revealing that bundles move in the direction of light propagation due to optical radiation force alone. The photothermal effect can be isolated in mammalian outer hair cells by directing light below the apical surface where mitochondria are concentrated laterally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C101 describe important control experiments to separate photothermal from photonic force effects. Data in Figure 3E and Appendix 1-figure 5 support these claims. However, BAPTA treatment disrupts tip links and likely alters bundle mechanics (stiffness, damping), potentially confounding interpretation. The 10-fold difference in time constants (C100) helps distinguish the effects, but the mechanism by which photonic force moves bundles after BAPTA treatment (when transduction is abolished) requires further explanation. The claim that movements stem \"solely\" from optical radiation force (C96) may be overstated without additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C114",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Photonic stimulation at powers sufficient to deflect bundles over their physiological range did not damage the mechanotransduction apparatus. Spontaneous oscillations in six bullfrog hair cells were preserved after 25 light pulses, with unchanged amplitudes and frequencies. FM1-43 uptake experiments showed no difference between laser-irradiated and control bundles, while mechanically damaged bundles showed reduced fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107, C114, C145-C147 describe critical viability controls supported by data in Figure 5 and Appendix 1-figure 6. Preservation of spontaneous oscillations (requiring functional transduction, C104) is strong evidence for cell health. However, the sample size is small (N=6 cells, C105), and no statistical tests are reported. The FM1-43 experiments provide additional support but are qualitative (\"no visible difference,\" C145). Longer-term viability and potential cumulative damage from repeated stimulation are not assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Theoretical analysis of photonic force generation indicates that simple reflection from planar surfaces would produce insufficient force (~0.45 pN for 10 mW), but the cylindrical geometry of stereocilia enables multiple modes of light propagation including total internal reflection. Reflectivity is significantly higher for curved objects, with cylinders of aspect ratio 15 showing ~3.5-fold higher reflectivity than spheres. The refractive index of stereocilia is estimated at ~1.4 based on protein concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C35, C41-C44, C125-C139 present theoretical arguments for how photonic force can be sufficient despite weak simple reflection. The physics principles (C125-C127) are correct, and the calculation for simple reflection (C134) appropriately shows inadequacy. However, the manuscript acknowledges that geometric optics is insufficient for structures comparable to light wavelength (C45), yet proceeds with qualitative arguments about cylindrical reflection (C136-C137, citing Ashkin 1970 and Gordon 2011) without rigorous wave-optics calculations. The speculation about interference effects (C138) is unsubstantiated. The large discrepancy between theoretical upper limit (~80 pN, C129) and empirical estimate (~40 pN, C142) suggests significant uncertainty in the force mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Empirical force estimation using a bullfrog hair bundle of measured stiffness (1.8\u00b10.2 mN\u00b7m\u207b\u00b9) indicated that 12.5 mW laser power delivering a 20 nm deflection corresponds to approximately 40 pN of photonic force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 describe a reasonable approach to force estimation using independently measured bundle stiffness. The calculation is straightforward (force = stiffness \u00d7 displacement). However, this is a single measurement (N=1 bundle), and the force estimate differs substantially from theoretical predictions (C129: ~80 pN for 10 mW), suggesting either the theoretical model is incomplete or there are experimental factors (e.g., beam geometry, partial illumination) not fully accounted for. Additional measurements across multiple bundles and laser powers would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The photonic stimulation method offers five key advantages: (1) rapid stimulation with rise times set by bundle mechanics rather than fiber drag or actuator inertia; (2) potential for even faster stimulation via \"supercharging\" with transient bright pulses; (3) no steady-state offset from fiber mispositioning or fluid leakage; (4) uniform illumination of stereocilia, beneficial for mammalian bundles with poor lateral coupling; and (5) applicability in restricted spaces such as hemicochlea or isolated cochlear segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C113, C118-C124 summarize the method's advantages. Some are well-supported: uniform illumination (C111-C112, C122) is demonstrated by the fiber geometry and beam characterization; absence of steady-state offset (C121) is inherent to the method. However, other claims are speculative or incompletely demonstrated: the \"supercharging\" approach (C120) is proposed by analogy but not tested; the claim that rise times are set by bundle mechanics \"without any effect\" of the stimulation method (C119) is an inference not directly validated; applicability to hemicochlea/cochlear segments (C124) is speculation. The comparison to existing methods' speed (C118) is not rigorously quantified\u2014the manuscript shows time constants of \"a few hundred microseconds\" similar to those reported for glass fiber stimulation (C21: ~300 \u03bcs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The photonic stimulation method has two main limitations: (1) fiber fabrication requires specialized equipment and safe handling of hydrofluoric acid; and (2) force calibration is not easily measured directly but can be estimated using targets of known stiffness such as glass fibers or passive hair bundles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 honestly acknowledge practical limitations. The fabrication requirement (C115) is accurate, though the manuscript shows it can be done in ~1.5 hours (C144). The calibration challenge (C116-C117) is a genuine limitation compared to glass fiber methods where Brownian motion provides direct force measurement. The proposed solution (C117) is reasonable but indirect and requires additional measurements.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors systematically identified and characterized 19 functional AGO proteins in C. elegans through genome-wide analysis. Phylogenetic analysis classified these AGOs into three clades: 7 AGOs in the AGO clade (ALG-1, ALG-2, ALG-3, ALG-4, ALG-5, ERGO-1, RDE-1), 1 in the PIWI clade (PRG-1), and 13 in the WAGO clade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19-C22 are well-supported by systematic genome searches (C19) and phylogenetic analysis (C20-C22) shown in Figure 1A. The update from 27 to 19 functional AGOs (C18) is justified by reclassification of some genes as pseudogenes. The methodology is clearly described and the phylogenetic tree provides visual confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "GFP::3xFLAG tags interfered with WAGO-1 and NRDE-3 function, but 3xFLAG-only tags preserved wild-type function. The authors validated tagged AGO functionality through phenotypic assays to ensure the tagged proteins were suitable for downstream analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by functional validation assays shown in Figure 1C and H. The observation that GFP::3xFLAG tags disrupted function while 3xFLAG tags preserved it demonstrates appropriate experimental controls and troubleshooting. This methodological validation is critical for interpreting subsequent IP-seq results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Classical miRNA-binding AGOs (ALG-1, ALG-2, ALG-5, RDE-1) primarily associate with miRNAs, with ALG-1 and ALG-2 showing ~98% miRNA reads, ALG-5 ~68%, and RDE-1 ~53%. RDE-1 also associates with 22G-RNAs targeting protein-coding genes (~21%, 536 genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by IP-seq data shown in Figure 2A-B. The percentages and enrichment numbers are clearly stated and consistent with known miRNA pathway components. The dual association of RDE-1 with both miRNAs and 22G-RNAs is a novel observation supported by the sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "26G-RNA-binding AGOs (ALG-3, ALG-4, ERGO-1) associate with both miRNAs and 26G-RNAs. ALG-3 shows ~55% miRNAs and ~17% 26G-RNAs, ALG-4 shows ~40% miRNAs and ~32% 26G-RNAs, and ERGO-1 shows ~26% miRNAs and ~15% 26G-RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by IP-seq data in Figure 2A-B. The dual association with both miRNAs and 26G-RNAs is unexpected and prompted further investigation (C52-C54). The percentages are clearly stated and the data quality appears robust based on the described enrichment criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "PRG-1 is the major piRNA-binding AGO with ~64% of reads corresponding to piRNAs (5932 enriched). PRG-1 also associates with 22G-RNAs (~21%) targeting 150 protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by IP-seq data in Figure 2A-B and are consistent with PRG-1's known role as the sole PIWI clade member. The association with 22G-RNAs represents a secondary finding that expands understanding of PRG-1 function beyond piRNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "22G-RNAs are the most abundant class of small RNAs associated with WAGO proteins, consistent with previous predictions and observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by IP-seq data in Figure 2A-B and is consistent with multiple prior studies (Guang et al., 2008; Gu et al., 2009; Buckley et al., 2012; Xu et al., 2018). This confirms expected results and validates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "190 miRNAs were enriched in AGO IPs, with RDE-1 showing unique enrichment patterns. RDE-1 enriched 103 miRNAs (55 exclusive), with the majority (63/103) not conserved with C. briggsae, suggesting RDE-1 may initially bind newly evolved miRNAs before they integrate into the ALG-1/2/5 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C45 are supported by sequencing data shown in Figure 3A. However, C46 is speculative inference without direct experimental validation. The evolutionary model proposed requires additional evidence such as temporal expression analysis or functional studies demonstrating miRNA transfer between pathways. The correlation with conservation is suggestive but not conclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "miRNAs loaded into RDE-1 showed lower average mismatches in their precursor duplexes compared to ALG-1/2/5, with perfectly matched precursors exclusively bound by RDE-1. This suggests endogenous miRNAs with higher precursor complementarity are preferentially loaded into RDE-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by precursor mismatch analysis shown in Figure 3B. This extends previous observations with transgenic let-7 (Steiner et al., 2007) to endogenous miRNAs. The data clearly show differential mismatch patterns, though C48 involves some inference about 'preferential' loading that could benefit from mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "AGO-enriched miRNAs were substantially depleted in alg-1, alg-2, alg-5, and rde-1 mutants. Loss of ALG-1 caused the most substantial effect with >2-fold decrease in global miRNA levels, indicating alg-1 is genetically required for stability of most miRNAs and potentially explaining more severe alg-1 mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by mutant sRNA-seq data in Figure 3C-D. The observation that ALG-1 loss has the broadest impact on miRNA stability is well-documented. C51 involves reasonable inference connecting molecular data to phenotypic severity, supported by citations (Bukhari et al., 2012; Brown et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ERGO-1 physically interacts with ALG-1 and ALG-2 in an RNA-dependent manner. RNase treatment of ERGO-1 IPs substantially reduced miRNAs while 26G-RNAs remained enriched. alg-1; ergo-1 double mutants showed severe synthetic phenotypes with only ~4% surviving past L4, indicating genetic interaction essential for survival into adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are well-supported by co-IP experiments (Figure 3E-F), RNase-treated IP-seq (Figure 3G-H), and double mutant phenotypic analysis (Figure 3I). The RNA-dependent interaction and genetic interaction data converge to support coordinated regulation by these pathways. The experimental design appropriately tests the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Using mirDeep2 analysis, 10 putative high-confidence novel miRNAs were identified in ALG-1 and ALG-2 complexes. Five of these were significantly depleted in alg-1 or alg-2 mutants, supporting their classification as bona fide miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by computational prediction (mirDeep2) and validation through mutant depletion (Figure 3K). The combination of AGO association and AGO-dependent stability provides strong evidence for genuine miRNA classification. However, only 5/10 showed significant depletion, suggesting the other 5 may require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Five sRNAs annotated as miRNAs (cel-miR-4936, cel-miR-8198-3p, cel-miR-8202-5p, cel-miR-78, cel-miR-798) are mis-annotated piRNAs. All five were enriched in PRG-1 IPs and depleted >60-fold in prg-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by PRG-1 IP enrichment, prg-1 mutant depletion data, and presence of Ruby motifs (Figure 4A). The combination of AGO association, mutant dependence, and genomic features provides strong evidence for reclassification. This corrects previous mis-annotations and demonstrates the utility of systematic AGO profiling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "prg-1 is required to maintain piRNA pools globally with ~13.9-fold reduction overall. The authors identified 466 previously uncharacterized piRNAs enriched in PRG-1 IPs and depleted in prg-1 mutants, with 375/466 originating from a known piRNA cluster on chromosome IV (4.5-7.0M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by mutant sRNA-seq (Figure 4B), PRG-1 IP enrichment, sequence analysis (Figure 4E-G), and genomic localization. The identification criteria (21U, 2-fold enriched, prg-1-dependent) are stringent. The clustering on chromosome IV is consistent with known piRNA organization (Ruby et al., 2006).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "10,127 protein-coding genes (>50% of genome) had sRNAs enriched \u22652-fold with at least one AGO. Hierarchical clustering identified four AGO clusters based on target similarity: WAGO cluster (WAGO-1, PPW-2, HRDE-1, PPW-1), ERGO-1 cluster (ERGO-1, SAGO-1, SAGO-2, NRDE-3), CSR-1 cluster (CSR-1, WAGO-4, VSRA-1), and ALG-3/4 cluster (RDE-1, WAGO-10, ALG-3, ALG-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by comprehensive IP-seq analysis and hierarchical clustering (Figure 5A-B). The clustering approach is appropriate and the four clusters show clear separation. The target numbers for each AGO are explicitly stated. This represents a major organizational framework for understanding C. elegans sRNA pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "490 pseudogenes and 150 transposable elements were enriched for antisense sRNAs across AGO IPs, with reads detected against all 163 annotated transposable elements. The WAGO cluster targets most transposable elements (134, with 104 unique), establishing it as the major regulator of transposable elements, particularly in the germline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by comprehensive sRNA mapping to pseudogenes and transposable elements (Figure 5D-E, Figure 5\u2014figure supplement 2B). The detection of reads against all TEs is notable. C73 involves reasonable inference from the clustering data and known WAGO germline expression, though the phrase 'major regulator' could be strengthened with functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "60 lincRNAs were enriched for antisense sRNAs across AGO IP datasets, with reads detected against 168 of 191 annotated lincRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by sRNA mapping to lincRNAs (Figure 5F). This identifies lincRNAs as an important but understudied category of sRNA targets. The data are straightforward and well-presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Loss of primary AGOs affects downstream secondary AGO sRNA levels. Loss of PRG-1 downregulated WAGO cluster sRNAs; loss of ERGO-1 depleted ERGO-1 cluster sRNAs including SAGO-1 and SAGO-2. PPW-1 acts downstream of both PRG-1 and ERGO-1 pathways depending on target type. VSRA-1 acts downstream of ERGO-1 for pseudogenes/transposons/lincRNAs and with CSR-1 for protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by mutant sRNA-seq analysis (Figure 5\u2014figure supplement 3) combined with clustering data (Figure 5A, D-F). The hierarchical relationships are inferred from genetic dependencies, which is appropriate. C78-C79 involve more complex inferences about dual roles but are supported by differential effects on different target classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of both CSR-1 isoforms depleted CSR-1 cluster sRNAs targeting protein-coding genes. Loss of HRDE-1 depleted both WAGO-1 and HRDE-1-associated sRNAs, indicating HRDE-1 is required for stability of most WAGO cluster sRNAs, likely reflecting its requirement for tertiary sRNA production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by mutant sRNA-seq (Figure 5\u2014figure supplement 3). The interpretation that HRDE-1 is required for WAGO cluster sRNA stability is reasonable and consistent with its known role in tertiary sRNA production (Sapetschnig et al., 2015). The data clearly show depletion patterns supporting these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "16/19 AGOs are expressed in the germline (8 germline-restricted, 8 also in soma), while 11/19 are expressed in soma (3 soma-restricted). Nine AGOs are constitutively expressed throughout germline development (RDE-1, ALG-5, PRG-1, CSR-1b, WAGO-1, PPW-2, WAGO-4, PPW-1, HRDE-1). ALG-3, ALG-4, WAGO-10, and CSR-1a are spermatogenesis-specific, while ALG-2, ERGO-1, and NRDE-3 are oocyte-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by comprehensive confocal microscopy throughout development (Figure 6A, F, Figure 7F, Figure 7\u2014figure supplements 1-8). The expression patterns are clearly documented with representative images. The temporal and spatial specificity is well-characterized and consistent with known AGO functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Eight germline AGOs are enriched in perinuclear germ granules (ALG-3, ALG-4, ALG-5, PRG-1, CSR-1a, CSR-1b, WAGO-1, PPW-2, WAGO-4). CSR-1 and WAGO-4 overlap equally with P and Z granules, while PPW-2 and WAGO-1 are strongly biased toward P granules. HRDE-1 and NRDE-3 are predominantly nuclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by confocal microscopy (Figure 6A, F) and quantitative colocalization analysis (Figure 6B). The Mander's coefficient analysis provides rigorous quantification of granule overlap. The nuclear localization of HRDE-1 and NRDE-3 is consistent with their known roles in nuclear RNAi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "At 20\u00b0C, seven ago mutants showed compromised fertility (alg-1, alg-2, alg-5, ergo-1, prg-1, rde-1, wago-1). At 25\u00b0C, four additional mutants showed fertility defects (alg-4, ppw-2, wago-4, hrde-1). Overall, >50% (10/19) of C. elegans AGOs contribute individually to optimal fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by systematic brood size assays at both temperatures (Figure 6D). The temperature-dependent phenotypes reveal stress-sensitive functions. The conclusion that >50% of AGOs affect fertility is well-supported, though the manuscript notes csr-1 is essential (sterile at both temperatures), which should be emphasized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Seven ago mutants showed Mortal germline (Mrt) phenotypes at 25\u00b0C with complete loss of fertility over varied generations: alg-5 (25 gen), rde-1 (24), prg-1 (8), wago-1 (11), ppw-2 (5), wago-4 (5), hrde-1 (4). The Mrt phenotype of wago-1, ppw-2, wago-4, and hrde-1 is reversible upon return to 20\u00b0C. Mrt wago mutants produced fewer germ cells at the mitotic zone, suggesting proliferation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by Mrt assays (Figure 6E), temperature shift experiments (Figure 6\u2014figure supplement 2A), and germ cell counts (Figure 6\u2014figure supplement 2B). The reversibility demonstrates the phenotype is not due to genotoxic stress. The proliferation defect is a novel mechanistic insight, though additional characterization would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The intestine expresses the most somatic AGOs (9 total: ALG-1, ALG-2, ERGO-1, RDE-1, CSR-1a, PPW-1, SAGO-2, SAGO-1, NRDE-3). SAGO-1, SAGO-2, and PPW-1 show distinctive accumulation along the apical membrane of intestinal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by confocal microscopy (Figure 7A-B). The apical membrane localization of SAGO-1, SAGO-2, and PPW-1 is a novel observation that may relate to their roles in intestinal immunity. The imaging clearly shows this distinctive localization pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "sago-2 and ppw-1 mutants are partially resistant to PA14 bacterial infection, while sago-2 mutants show increased Orsay virus infection similar to rde-1 mutants. This suggests SAGO-2 has dual roles in intestinal immunity: targeting immune response genes (affecting PA14 resistance) and participating in antiviral RNAi downstream of RDE-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by PA14 survival assays (Figure 7D) and Orsay virus infection assays (Figure 7E). C103 is reasonable inference integrating these observations with GO analysis and known RNAi mechanisms. However, the dual role model would benefit from additional mechanistic validation such as examining immune gene expression or viral sRNA loading into SAGO-2.",
+    "result_type": "MAJOR"
+  }
+]

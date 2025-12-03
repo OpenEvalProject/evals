@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "CICR from endoplasmic reticulum stores can repetitively amplify synaptically triggered Ca2+ transients, with the fraction of low-amplitude Ca2+ transients decreasing as Ca2+ pulse frequency and/or amplitude increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 describe a computational test of CICR amplification and its quantitative dependence on input parameters. The model results in Figure 1 demonstrate the predicted relationship, providing mechanistic support for the hypothesis that CICR can periodically amplify calcium transients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The two-neuron model produces inter-burst intervals on the order of hundreds of seconds, consistent with experimental observations of burstlets and bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 report model-generated timescales and compare them to experimental data (Kallurkar et al., 2020). The agreement between model output (Figure 2C1) and experimental timescales supports the model's ability to capture key temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C51"
+    ],
+    "result": "The model incorporates K+ currents (fast K+ and leak) with reversal potentials tuned to match experimental data from Koizumi and Smith, 2008.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C51 describe model construction and parameter fitting. Figure 3B shows the tuning of EK and ELeak to experimental data, demonstrating that the model is appropriately constrained by empirical measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C61",
+      "C143"
+    ],
+    "result": "The full preB\u00f6tC network model incorporating CICR and ICAN reproduces key experimental observations including the delay between burstlet generation and burst recruitment, and the K+-dependent burstlet fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C61, and C143 assert that the model reproduces multiple experimental features. Figures 4 and related text show qualitative agreement with experimental observations (Kallurkar et al., 2020), including burst/burstlet patterns, delays, and K+-dependence. The model successfully integrates multiple mechanisms to match diverse data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The model includes reciprocal synaptic connections from pattern-generating to rhythm-generating neurons, which prolong rhythmic neuron activity during bursts and increase inter-event intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 describes a model feature and its functional consequence. Figure 4G1 illustrates this effect, showing that feedback connections influence burst dynamics in a mechanistically interpretable way.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C70"
+    ],
+    "result": "Progressive blockade of postsynaptic Ca2+ transients increases burstlet fraction and decreases burst amplitude primarily through derecruitment, while ICAN blockade decreases amplitude through both derecruitment and reduced firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C68, and C70 describe distinct effects of calcium versus ICAN blockade. Figure 5 provides quantitative data showing differential effects on burstlet fraction, amplitude, and recruitment, supporting the mechanistic predictions of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The model reproduces experimental observations that opioids decrease burst frequency and increase burstlet fraction through combined GIRK activation and synaptic blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C76, C77, and C78 describe opioid effects in experiments and model. Figure 6 shows that the model captures the dose-dependent effects of DAMGO on frequency and burstlet fraction reported by Baertsch et al., 2021, providing mechanistic insight into the dual action of opioids.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The model reproduces holographic stimulation experiments showing that 3-9 neurons can elicit bursts with delays of hundreds of milliseconds, with probability and delay depending on timing and number of stimulated neurons, though the model's refractory period (1s) is longer than experimental measurements (500ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C86 describe holographic stimulation results. While the model captures key qualitative features (delays, probability dependence) shown in Figure 7, the quantitative mismatch in refractory period (C85-C86) indicates incomplete agreement with experimental data (Kam et al., 2013b). This discrepancy requires further investigation or model refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Recovery from synaptic depression and deinactivation of hNaP determine the probability of stimulus-evoked responses, while calcium-related effects primarily govern recruitment dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 interprets model mechanisms underlying refractoriness. Figure 7\u2014figure supplement 1 shows the timecourses of key variables, supporting the interpretation that synaptic depression and hNaP inactivation recovery align with loss of refractoriness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The model predicts that connection probability in the pattern-generating population must be 1-2% to match the experimental refractory period of ~500ms, with smaller connection probabilities and larger weights producing shorter refractory periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C91 make specific predictions about network connectivity. Figure 8F shows the relationship between connection probability and refractory period, with the 1-2% range matching experimental data (Kam et al., 2013b). The mathematical analysis of expected recruitment provides theoretical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Stimulating a larger proportion of pattern-generating neurons increases burst probability, and burst elicitation does not require stimulation of rhythmogenic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 describe which neurons are most effective for burst elicitation. Figure 8H shows the positive relationship between pattern-generating neuron stimulation and burst probability, supporting the model's prediction about the dominant role of this population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C189",
+      "C190",
+      "C192",
+      "C194",
+      "C195"
+    ],
+    "result": "The model makes several testable predictions including: burstlet fraction depends on CICR probability in pattern-forming neurons, postsynaptic Ca2+ transients increase with K+, Ca2+ blockade increases burstlet fraction, connection probability is 1-2%, and pattern-generating neurons are more effective stimulation targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C189, C190, C192, C194, and C195 enumerate model predictions. These predictions follow logically from the model structure and results shown in Figures 4, 5, and 8. The predictions are mechanistically grounded and experimentally testable, representing important contributions of the modeling work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C156"
+    ],
+    "result": "The model explains inconsistent experimental results on opioid effects by showing that different preparation sensitivities and the dual mechanisms of opioid action (GIRK activation vs. synaptic suppression) can account for varying effects on burstlet fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153, C154, and C156 provide a mechanistic explanation for discrepant experimental findings. Figure 6 and the model simulations demonstrate how the relative contributions of GIRK activation and synaptic blockade can produce different outcomes depending on dose sensitivity, reconciling results from Sun et al., 2019 and Baertsch et al., 2021.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The model captures long delays from holographic stimulation without requiring a special synaptic weight distribution, suggesting delays arise from pattern-forming population dynamics rather than network topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171, C172, and C173 propose an alternative mechanism for observed delays. Figure 7B and Figure 8H show that the model reproduces experimental delays through CICR dynamics rather than heavy-tailed weight distributions, offering a competing hypothesis to the percolation model (Slepukhin et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The model's slow CICR-based recruitment mechanism produces regular burst/burstlet patterns consistent with experimental observations, contradicting predictions of stochastic percolation theory which would produce irregular, broadly distributed patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C180 contrast model predictions with percolation theory. The logical argument is sound: stochastic percolation should produce irregular patterns, but experiments show regularity (Kam et al., 2013b; Sun et al., 2019; Kallurkar et al., 2020). The model's slow CICR process (C180) provides an alternative explanation consistent with observed regularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Voltage-gated calcium channels, primarily localized in distal dendrites, are likely involved in generating postsynaptic Ca2+ transients based on their sensitivity to Cd2+ and their role in preceding inspiratory bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C101 make inferences about calcium channel involvement based on experimental observations (Del Negro et al., 2011; Phillips et al., 2018). The reasoning is sound and consistent with the model's assumptions about calcium influx mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "CICR has been hypothesized to be involved in preB\u00f6tC dynamics and explored in models, but experimental evidence is contradictory, with some studies showing SERCA pump blockade abolishes rhythm while others show no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 review prior work on CICR. The characterization of contradictory experimental results (Mironov, 2008 vs. Beltran-Parrazal et al., 2012) is accurate based on the cited literature, and the acknowledgment of uncertainty (C118) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The model cannot determine which marker-defined neuronal subpopulations correspond to rhythm and pattern generators, and future measurements within preB\u00f6tC will be needed to map subpopulations to functional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C127, and C128 acknowledge model limitations and identify needed future work. This is an appropriate recognition that the model's functional populations may not directly correspond to anatomically or molecularly defined populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The model omits several known mechanisms (M-current, Ih, IA, inhibitory neurons) but predicts these are not critical for burstlet-to-burst transformation, though they may affect quantitative properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C141 acknowledge model limitations and make predictions about omitted mechanisms. While the justifications for omissions are reasonable (e.g., C141 on inhibition), the prediction that Ih and IA are not critical (C139) is untested and could be incorrect. The model's ability to reproduce key features without these mechanisms is suggestive but not definitive proof they are unnecessary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C181",
+      "C188"
+    ],
+    "result": "The burstlet-to-burst transition mechanism based on CICR is independent of the specific mechanism of burstlet rhythm generation, as demonstrated by similar results when burstlet rhythm is imposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181 and C188 assert modularity of the model's mechanisms. Figure 4\u2014figure supplement 1 provides supporting evidence by showing that imposed burstlet rhythms produce similar burst recruitment patterns, validating the independence of the recruitment mechanism from rhythm generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Burstlets are low-amplitude, subthreshold oscillations in the preB\u00f6tC that arise from a rhythmogenic subpopulation and persist at physiological K+ levels, with burstlet fraction decreasing sigmoidally with increasing extracellular K+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 summarize established experimental knowledge about burstlets and the preB\u00f6tC. These are well-supported by the cited literature and provide the empirical foundation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C30",
+      "C32",
+      "C33"
+    ],
+    "result": "Rhythm and pattern generation are separable processes in the preB\u00f6tC, with pattern generation depending on Ca2+-dependent mechanisms and ICAN, as supported by experimental and computational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C29, C30, C32, and C33 summarize prior experimental and computational findings that motivate the current study. The cited evidence (Koizumi et al., 2018; Picardo et al., 2019; Phillips et al., 2019a) supports the separability of rhythm and pattern generation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C28"
+    ],
+    "result": "There is ongoing debate about preB\u00f6tC rhythm generation mechanisms, fueled by contradictory pharmacological studies and new experimental findings, with proposed mechanisms remaining hypothetical and lacking quantitative validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C13, and C28 characterize the state of the field and identify the gap the manuscript addresses. The characterization of controversy and the lack of quantitative models is accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C96",
+      "C199"
+    ],
+    "result": "The modeling work provides a mechanistic basis that unifies experimental findings on rhythm generation and motor output recruitment in the preB\u00f6tC, offering a plausible foundation for burstlet theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C199 are summary statements about the overall contribution. Given the model's ability to reproduce multiple experimental observations (burstlet fraction, K+ dependence, opioid effects, stimulation delays), these claims are supported, though the word 'unify' may be somewhat strong given remaining discrepancies (e.g., refractory period).",
+    "result_type": "MAJOR"
+  }
+]

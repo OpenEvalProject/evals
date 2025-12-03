@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C71",
+      "C72",
+      "C96"
+    ],
+    "result": "The synaptonemal complex (SC) is a conserved ~100-nm-wide ladder-like structure present across all eukaryotic clades that aligns parental chromosomes and regulates crossovers during meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C12-C17, C71-C72, and C96 collectively establish the SC as a conserved structure with well-documented ultrastructure and function. These claims are supported by historical citations (Moses 1956, Fawcett 1956) and electron microscopy data across multiple organisms (Figure 1A), providing strong evidence for this foundational result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "SC proteins are highly divergent in primary amino acid sequence and cannot be identified across distant taxa based on sequence homology, despite conserved SC ultrastructure and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C24-C27, and C82-C84 demonstrate high sequence divergence of SC proteins with quantitative support (median substitutions per site = 1.64 for SC proteins vs 0.43 for other proteins, p=0.0005, Figure 1D). The inability to identify SC proteins across distant taxa is documented in multiple lineages (Drosophila, vertebrates), providing robust evidence for this paradoxical observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The high divergence of SC proteins in Caenorhabditis is explained by neutral evolution (lack of constraint) rather than positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by comprehensive statistical analyses using multiple methods (PAML CodeML models M1 vs M2, M7 vs M8, M8a vs M8, and Fixed Effects Likelihood, Table 1). No evidence for positive selection was found in any SC protein, and fewer than 50% of sites evolve under purifying selection, supporting the neutral evolution interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SC proteins exhibit striking conservation of coiled-coil domain position, length, and disruptions despite high sequence divergence, with significantly higher coiled-coil conservation scores than other proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C42 are well-supported by quantitative analysis (median coiled-coil conservation score 0.56 for SC proteins vs 0.12 for others, p=0.00019, Figure 2B) and detailed visualization (Figure 2A). The precise conservation of coiled-coil boundaries (e.g., SYP-1 positions 40-400, C33) and disruptions (C34-C36) provides strong evidence. The development of the coiled-coil conservation score metric (C42) adds methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "SC proteins show significantly lower variation in protein length compared to other proteins, with significant depletion of indels within coiled-coil domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by statistical analysis showing lower coefficient of variation in protein length (median 0.03 for SC proteins vs 0.16 for others, p=0.0004, Figure 2C) and significant indel depletion in coiled-coils (p<0.0001, Table 2, Figure 2D). Individual protein analysis (C46) strengthens the conclusion, though SYP-2 and SYP-3 had insufficient indels for statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The unconventional conservation signature of SC proteins (high divergence, conserved coiled-coils, conserved length) is present in Drosophila and mammals, though mammals show lower overall divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48-C52 demonstrate the conservation signature across phyla with quantitative data (Figure 3B-C, Figure 3\u2014supplements 2-4). The lower divergence in mammals (median 0.26 substitutions/site) compared to Caenorhabditis (1.64) and Drosophila (1.69) is documented, with a plausible explanation based on overall proteome divergence rates (C52). This cross-phyla validation strengthens the generality of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A novel SC protein, Ppa-SYP-1, was identified in Pristionchus pacificus using a bioinformatics pipeline based on the unconventional conservation signature, validated by CRISPR knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C85-C91 describe the successful application of the conservation signature to identify Ppa-SYP-1. The bioinformatics pipeline (Figure 4A-B) filtered 19,859 proteins to 8 candidates, including the known Ppa-SYP-4 (C88), validating the approach. CRISPR knockout of PPA16075 (C89-C90) confirmed it as an SC protein, while the other two candidates showed no meiotic phenotypes (C91), demonstrating specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C67",
+      "C68",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Ppa-SYP-1 is a transverse filament protein arranged in head-to-head orientation that appears to be a functional homolog of C. elegans SYP-1, despite lacking significant sequence homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C67-C68, and C92-C95 are supported by multiple lines of evidence: STED imaging showing C-terminal tracks spaced 114 nm apart and narrow N-terminal tracks (Figure 4F-H), similar coiled-coil lengths (55 nm for Ppa-SYP-1 vs 51 nm for C. elegans SYP-1), and conserved Polo-Box Domains. The lack of sequence homology (C55) despite functional similarity validates the unconventional conservation approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Ppa-syp-1 mutants lack crossovers and produce almost no viable self-progeny, confirming the essential meiotic function of Ppa-SYP-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by experimental data showing chromosomes lacking crossovers (Figure 4C) and near-complete loss of viable progeny (Figure 4D) in Ppa-syp-1 mutants. This phenotypic characterization confirms the functional importance of the identified protein and validates its classification as an SC protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Coiled-coils play wide-ranging roles in SC structure and function, with strong selection reflecting conserved biophysical and structural properties, potentially determining the 3D architecture of the SC lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C56-C57, C59-C61 represent interpretive conclusions about coiled-coil function. While C60 is supported by citations, C61 is explicitly stated as a hypothesis. The claim that coiled-coils determine 3D architecture lacks direct experimental validation in this study. The fitness landscape interpretation (C56) is reasonable but remains speculative without additional functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The SC assembles through phase-separation, and coiled-coils can facilitate this process, as demonstrated by SPD-5 which shares an evolutionary signature with SC proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by citations to prior work on SC phase-separation (Rog et al., 2017) and coiled-coil-mediated phase-separation (Schmidt and G\u00f6rlich, 2015; Li et al., 2012). The identification of SPD-5 as sharing the SC evolutionary signature (Figure 3\u2014supplement 1) and its known role in condensation (Woodruff et al., 2017) provides supporting evidence for the broader applicability of these principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C42"
+    ],
+    "result": "Expanding sequence analysis beyond per-site similarity measures (e.g., using coiled-coil conservation scores) can enhance understanding of protein evolution and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C42 are supported by the successful application of the coiled-coil conservation score to identify Ppa-SYP-1 and characterize SC protein evolution. The demonstration that this metric is more informative than binary coiled-coil prediction (C42) and the cross-phyla validation provide strong evidence for this methodological conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C58"
+    ],
+    "result": "Meiotic axis proteins show clear sequence homology across eukaryotic clades, contrasting with SC proteins and suggesting distinct evolutionary constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C58 are supported by multiple citations (Rillo-Bohn et al., 2021; Cobbe and Heck, 2004; Aravind and Koonin, 1998; van Hooff et al., 2017) documenting axis protein conservation. This contrast with SC proteins strengthens the argument for unconventional SC protein evolution and is used appropriately as a comparative control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "SC proteins (SYP-1 through SYP-6) are preserved across Caenorhabditis species for over 30 million years, with some instances of duplication, and are interdependent for function with elimination causing dramatic loss of viable progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C73-C81 are supported by phylogenetic analysis (Figure 1B, Figure 1\u2014supplements 1-2) and multiple citations documenting SC protein function and interdependence. The identification of three duplication events (C76-C78) and the inability to identify SYP-1 in C. plicata and C. monodelphis (C81) are appropriately documented with caveats about potential high divergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The uncoupling of indels and substitutions in SC proteins is unusual, and manual annotation corrected errors in 18% of sequences that would have been mistaken for length alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by citations documenting typical co-occurrence of indels and substitutions (T\u00f3th-Petr\u00f3czy and Tawfik, 2013; Leushkin et al., 2012) and by the authors' manual curation efforts. The 18% error rate (C66) highlights an important methodological consideration for genome-wide analyses of protein length variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Functionally important protein domains typically undergo purifying selection and evolve slowly, with exceptions like immune system proteins that undergo positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 represent established knowledge in protein evolution, appropriately cited (Sawyer et al., 2005; Mitchell et al., 2012; Daugherty and Malik, 2012) and used to contextualize the unconventional evolution of SC proteins. These background claims are well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "SC transverse filament proteins assume a stereotypical head-to-head orientation with N-termini pointing toward the center and C-termini pointing outward, and help determine SC width via central coiled-coil domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by established knowledge with appropriate citations (Sym and Roeder, 1995; Tung and Roeder, 1998; Billmyre et al., 2019; Ollinger et al., 2005) and illustrated in Figure 1A. This structural information provides important context for interpreting the conservation patterns and validating Ppa-SYP-1 characterization.",
+    "result_type": "MINOR"
+  }
+]

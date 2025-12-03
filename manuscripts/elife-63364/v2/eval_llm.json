@@ -1,0 +1,401 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C40",
+      "C52"
+    ],
+    "result": "The study quantified the effects of >14,000 mutations on A\u03b2 aggregation using deep mutational scanning. A library containing all possible single nucleotide variants of A\u03b242 was generated and 14,015 double amino acid variants were also quantified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35, C40, and C52 collectively establish the scope and methodology of the deep mutational scanning experiment. The library design, selection approach, and scale of variants tested (>14,000 total) are well-documented with experimental details and reproducibility data (C41-C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The in vivo nucleation assay is highly reproducible and correlates well with in vitro nucleation measurements. Enrichment scores were strongly correlated between replicates (R=0.85) and matched 14/16 previously reported in vitro effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 provide validation of the assay through replicate correlation (Figure 1B) and comparison to published in vitro data. The high correlation coefficients and agreement with prior measurements support the reliability of the nucleation scores.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Solubility scores from a prior deep mutational scan do not predict nucleation effects, while PC1 (hydrophobicity) predicts solubility but not nucleation. This suggests A\u03b2 aggregates by different mechanisms in the two assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 demonstrate differential predictive power of different metrics for nucleation vs. solubility, supported by correlation analyses in Figures 1D-E. The weak correlation between nucleation scores and solubility scores (Figure 1\u2014figure supplement 1D) and differential PC1 correlations support the conclusion of distinct aggregation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "Mutations more frequently decrease rather than increase A\u03b2 nucleation. 56% of single amino acid substitutions reduce nucleation while only 16% increase it, with an even stronger bias for double mutants (63% decrease, 5.5% increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 describe the overall distribution of mutational effects, supported by statistical testing (Z-test, FDR=0.1) and shown in Figure 2A-B. The quantitative percentages and statistical significance support this as a robust finding about the mutational landscape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "A\u03b2 has a modular mutational landscape with distinct N-terminal and C-terminal regions. Mutations that decrease nucleation are enriched in the C-terminus (>84% reduce nucleation), while effects are more balanced in the N-terminus (38.6% decrease, 20% increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 establish the modular organization through spatial analysis of mutational effects (Figure 2E-F). The quantitative differences between regions are statistically significant (FDR=0.1) and supported by K-medoids clustering analysis (Figure 2\u2014figure supplement 1B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The modular organization is reflected in the primary sequence, with a hydrophobic C-terminus and polar/charged N-terminus. Eight of nine charged residues are before position 24, and the peptide consists entirely of hydrophobic residues from position 29.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 describe sequence composition that correlates with functional modularity. The amino acid composition analysis is straightforward and the position-specific effects (e.g., K28 behaving like adjacent hydrophobic positions) support the modular interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Seven gatekeeper positions were identified where mutations frequently increase nucleation, including five negatively charged residues (D1, E3, D7, E11, E22), L17, and A42.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 identify specific gatekeeper positions based on statistical analysis (FDR=0.1, Figure 2D). The identification is data-driven and the positions show consistent enrichment for nucleation-increasing mutations, though the functional interpretation requires additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mutations in the C-terminus nearly all decrease nucleation, consistent with this region forming the tightly packed amyloid core. C-terminal fragments nucleate similarly or better than full-length A\u03b2, and specific side chain packing is important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 integrate mutational data with structural knowledge. The experimental testing of C-terminal fragments (C72, Figure 3\u2014figure supplement 1C) provides direct evidence, and the mutational effects are consistent with known fibril structures (C71). The moderate correlation with hydrophobicity (R=0.45) suggests additional complexity beyond simple hydrophobic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mutations in the N-terminus have more balanced effects on nucleation that are not well predicted by hydrophobicity or aggregation predictors. Introduction of asparagine, isoleucine, and valine most likely increases nucleation, while negative charges strongly reduce it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 characterize N-terminal mutational effects. The weak correlations with predictors (Figure 3\u2014figure supplement 1B,D,E) and amino acid-specific biases (Figure 3C) are well-documented. The differential effects of positive vs. negative charges between N- and C-terminus add mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Position-dependent effects of proline, isoleucine, valine, and threonine suggest that disruption of secondary structure in residues 13-21 may favor nucleation. This region was also identified as highly disordered in molecular dynamics simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 propose a mechanistic model based on position-dependent effects (Figure 3E) and correlation with simulation data (C86). While the mutational data are robust, the mechanistic interpretation about secondary structure disruption is speculative (C85 includes SPECULATION evidence type). The correlation with MD simulations provides support but does not definitively establish the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Negatively charged residues act as gatekeepers to limit nucleation. At five of six negatively charged positions, mutations frequently increase nucleation, while introducing negative charge at other positions decreases it. The gatekeeper model requires maintaining overall polar character of the N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 establish the gatekeeper concept through systematic analysis of charge effects (Figures 2D, 3A, 3D). The differential effects of mutating gatekeepers to different amino acid types (C91-C92) and the asymmetry between positive and negative charges (C90) support the mechanistic model, though it remains partially inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Both the overall net charge and the total number of charged residues control A\u03b2 nucleation rate. Reducing net charge from -3 increases nucleation, and for a given net charge, fewer total charged residues increases nucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 reveal a nuanced relationship between charge and nucleation using double mutant analysis (Figure 3G). The systematic variation of both net charge and total charge number, enabled by the comprehensive mutant library, provides strong evidence for both parameters independently affecting nucleation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Leucine at position 17 has a specific role in limiting nucleation. Nearly all mutations at L17 increase nucleation except cysteine, suggesting a specific gatekeeper function possibly related to secondary structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 identify L17 as an unusual hydrophobic gatekeeper (Figure 2C-D). The near-universal increase in nucleation upon mutation (7/8 mutations increase) is a strong data-driven finding, though the mechanistic interpretation linking to secondary structure (C99) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Position 42 has an unusual distribution of mutational effects, with mutations most often increasing nucleation, all to other aliphatic residues. This is notable given the increased toxicity and aggregation of A\u03b242 vs A\u03b240.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 identify A42 as a gatekeeper position with specific properties (Figure 2D). The restriction of nucleation-increasing mutations to aliphatic residues and the connection to known A\u03b242/A\u03b240 differences provide biological context, though the mechanistic link requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The nucleation scores accurately classify all 12 known dominant fAD mutations (ROC-AUC=0.9), while computational predictors, aggregation predictors, and prior solubility scores perform poorly (AUC=0.5-0.75). This validates the clinical relevance of the cell-based assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 demonstrate the predictive power for disease mutations through ROC analysis (Figure 4). The perfect classification of all 12 dominant fAD mutations as increasing nucleation, combined with poor performance of alternative predictors, provides strong validation. The statistical significance (p<2.2e-16) supports this as a robust finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Known fAD mutations are enriched in the N-terminus, and the data suggest many additional dominant fAD mutations beyond the 12 reported. The study prioritizes 63 variants as candidate fAD mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 extend the fAD analysis to predict novel disease mutations. The enrichment in the N-terminus (C110, Figure 2C) is consistent with the overall mutational landscape. The identification of 63 candidate variants (C113, C118) is data-driven, though clinical validation would be required to confirm pathogenicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Two recessive fAD variants (E22\u0394 and A2V) show different behavior. E22\u0394 is not in the library, while A2V does not have a dominant effect on nucleation, consistent with a different mechanism such as altered APP cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 address recessive variants. The lack of dominant effect for A2V (C116, Figure 2C) is consistent with its recessive inheritance pattern and supports the interpretation of a different mechanism (C117), though this remains inferential based on prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The data classify variants into three categories: 63 candidate fAD variants, 131 likely benign variants, and 262 variants that reduce nucleation and may be protective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 provide a comprehensive classification of variants based on nucleation scores. The categorization is data-driven and provides a resource for variant interpretation, though the protective effect of nucleation-reducing variants (C120) is speculative and would require clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "No correlation was observed between nucleation scores and disease age-of-onset with currently available patient data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 reports a negative result (Figure 4\u2014figure supplement 1E). This is appropriately reported as a limitation, though the small number of fAD mutations with age-of-onset data may limit statistical power to detect such a correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The mutational landscape reveals that specific hydrophobic contacts in the C-terminus are required for nucleation, while mutations in negatively charged gatekeepers and L17 in the N-terminus accelerate aggregation. Both net charge and total number of charged residues control nucleation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 summarize the major mechanistic findings. These are well-supported by the comprehensive mutational data and represent the key biological insights from the study, integrating observations about regional effects, gatekeeper residues, and charge properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The nucleation transition state likely resembles mature fibril structures with the C-terminus in the amyloid core and the N-terminus disordered. While the N-terminus is not required for nucleation, it affects the process and most nucleation-accelerating mutations are located there.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 integrate mutational data with structural knowledge. The consistency with known fibril structures (C127, Figure 5) and the experimental demonstration that C-terminal fragments can nucleate (C72) support this model. However, the structural interpretation of the transition state remains inferential as direct structural data on nucleation intermediates is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Accelerated nucleation is a common cause of fAD, supported by effects of mutations in APP, PSEN1, and PSEN2 that increase production of longer A\u03b2 peptides. A\u03b242 oligomers are hypothesized to be more toxic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 place the findings in broader context of fAD mechanisms. The support comes from the accurate classification of fAD mutations (C108) and established knowledge about other fAD genes (C133). However, C134 is explicitly noted as a hypothesis from the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Some mutations may affect nucleation through changes in A\u03b2 concentration rather than kinetic rate parameters, and some variants may have additional effects such as altering APP cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 acknowledge alternative mechanisms and limitations. These are appropriately stated as possibilities/speculations that the assay cannot distinguish. This represents good scientific practice in acknowledging limitations but does not constitute a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "In yeast, A\u03b2 can aggregate by at least two different pathways. The nucleation assay quantifies aggregation similar to human fAD, while the solubility assay quantifies a hydrophobicity-driven pathway less related to disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 compare the two yeast-based assays. The differential performance in classifying fAD mutations (C108 vs C106) and the correlation of solubility scores with PC1/hydrophobicity (C47, C140) support the conclusion of distinct aggregation mechanisms. This is an important validation of the nucleation assay's disease relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Deep mutational scanning combined with human genetics provides a general strategy to quantify disease relevance of biological assays. The yeast-based assay is well-validated as a model of fAD through comprehensive genetic testing, and this approach should be employed early in discovery programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 propose a general methodological principle. The successful validation of the nucleation assay through comprehensive genetic agreement with fAD mutations (C108) supports this approach. The argument that this provides better validation than testing one or a few mutations (C142) is logical, though the generalizability to other diseases remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The consistent effects of fAD mutations strengthen evidence that fAD is a 'nucleation disease' caused by increased amyloid nucleation rate. If correct, nucleation is the key biophysical target for AD prevention/treatment, and genetic validation of assays will be important in drug discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 present the broader implications for AD biology and therapeutics. The nucleation disease hypothesis is strongly supported by the perfect classification of fAD mutations (C108), though the therapeutic implications (C149) are more speculative. The recommendation for genetic validation in drug discovery (C150) follows logically from the study's success.",
+    "result_type": "MAJOR"
+  }
+]

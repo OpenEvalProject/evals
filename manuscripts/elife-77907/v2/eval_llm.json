@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C14",
+      "C15",
+      "C16",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "Behavioral variability significantly contributes to representational changes in neural activity across multiple cortical areas. Changes in pupil size and running speed bidirectionally modulate representational similarity between repeats of the same stimulus, with the largest representational drifts observed in animals showing the largest behavioral changes. This effect is consistent across sessions, animals, brain regions, and temporal scales, while passage of time per se does not contribute strongly to representational drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C40 provide converging evidence from multiple analyses showing that behavioral state changes (pupil size, running speed) correlate with representational similarity changes. The findings are robust across datasets, animals, brain regions, control conditions (sex, strain, z-scoring, time bins), and include appropriate controls for time effects (C34-C35). The correlation between behavioral changes and representational drift (C36-C37) and consistency across multiple experimental conditions strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C56"
+    ],
+    "result": "Behavioral modulation of neural activity occurs independently of stimulus-evoked responses rather than through gain modulation. The reliability of stimulus-evoked responses is independent of behavioral modulation at the single-unit level, and regression analysis shows no correlation between stimulus and behavioral modulation, consistent with an independent-mixing model rather than a signal-gain model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide direct evidence against the gain model through regression analysis showing no correlation between stimulus reliability and behavioral modulation (R\u00b2\u22480 in Figure 2h). This is supported by computational modeling (C7) and consistent with prior work (C46). The independence of stimulus and behavioral modulation is demonstrated across both datasets with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Behavioral modulation contributes significantly to low-dimensional population activity patterns. The first principal component, which explains most variance, is strongly correlated with pupil size and running speed but shows no relationship with stimulus reliability of individual units. This relationship holds when controlled for passage of time and is consistent across more than 20 mice in each dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 present a coherent analysis of principal components showing that behavioral state drives low-dimensional variance (C59: strong correlation with pupil/running) while being independent of stimulus reliability (C62, C66: no relationship). The control for time (C65) and consistency across animals (C63) strengthen the conclusion. The PCA methodology is appropriate and the findings are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Behavioral state modulates the setpoint (baseline) activity of neurons independent of stimulus. Setpoints are stable within blocks but change between blocks, with setpoint similarity strongly related to changes in pupil size. Complex interactions between behavioral parameters (pupil size, running, eye position) contribute to setpoint similarity changes, with a gradual ~50% increase in average activity paralleling increased pupil width during sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C86 provide extensive evidence for behavioral modulation of setpoint activity through correlation analyses (C74, C76: strong relationships), robustness checks (C75: single frames), and mechanistic explanations for nonmonotonic trends (C79-C83: eye position effects). The quantitative finding of ~50% activity increase (C85) is specific and verifiable. However, some mechanistic explanations (C79-C82) are speculative, though supported by correlational data (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Reliable but variable behavioral modulation can be misinterpreted as representational drift if representations are only characterized in stimulus space. This is demonstrated by observing similar drops in representational similarity in CA1, where units have no reliable visual representations, suggesting that setpoint similarity contributes to representational similarity independent of stimulus-evoked responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C87 present the key interpretive conclusion, which is supported by the CA1 example (C88) showing representational drift without stimulus reliability. This provides strong evidence that behavioral modulation can appear as drift when behavior is not accounted for. The logic is sound and the CA1 control is compelling, though this remains an interpretive rather than directly causal demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Behavioral tuning of neurons is reliable across time, stimulus types, and brain regions. More than half of units show significant modulation by running, with good correlation of tuning between blocks (R\u00b2=0.3-0.6). This reliability improves when controlling for behavioral state similarity and holds across different stimuli (natural movies, drifting gratings) and over long timescales (30-150 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C100 demonstrate reliability of behavioral tuning through multiple complementary analyses: correlation between blocks (C91-C93), consistency across stimulus types (C96-C97), long-term stability (C98), and spatial extent (C99). The use of bootstrapped correlations (referenced in methods) provides statistical rigor. The improvement with behavioral state matching (C92) strengthens the interpretation. The findings are consistent across both datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Stimulus type affects representational stability through both direct effects on response reliability and indirect effects on behavioral variability. Natural movies induced more behavioral variability than drifting gratings, with larger behavioral changes more prevalent during natural movie presentations leading to larger drops in setpoint similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 present a clear comparison between stimulus types with appropriate statistical tests (Figure 6a,d show significance). The finding that natural movies induce more behavioral variability (C101) and that this correlates with reduced setpoint similarity (C104) is well-supported. However, the causal interpretation (C105) about combined effects is somewhat speculative, though logically consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Behavioral modulation is detrimental to generalizability of stimulus decoding across blocks, and this can be circumvented by focusing on units with high stimulus reliability rather than high behavioral modulation. Focusing on reliable units improves discriminability (d') in out-of-distribution transfer from first to second block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 present decoding analysis results showing that selecting for stimulus reliability improves generalization while selecting for behavioral modulation does not (Figure 7, Figure 7\u2014supplement 1). This provides functional evidence for the independence of stimulus and behavioral signals. The analysis is appropriate and the conclusion follows logically from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Behavioral state can be reliably decoded from neural activity with high accuracy (60-90% correlation), with higher accuracy in dataset 2 likely due to longer stimulus presentations providing more behavioral variability for training. Importantly, behavioral decoding shows no systematic bias toward sensory inference (correlations near zero across stimulus repeats), supporting independent modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 present behavioral decoding results with specific quantitative accuracy measures (C111: 60-90% correlation). The interpretation of dataset differences (C112) is reasonable. The critical finding of no sensory bias (C113) directly supports the independence model and is well-demonstrated. The decoding analysis complements the earlier regression analyses showing independence of stimulus and behavioral modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work has established that neuronal responses change over time (representational drift) and that behavioral state modulates neural activity. Representational drift has been reported in sensory cortices over timescales from hours to weeks, and spontaneous behavior heavily modulates responses in awake animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C9-C12, C18-C20 accurately summarize established knowledge and prior findings with appropriate citations. These provide the scientific context for the current work. The claims are properly attributed to prior literature and represent accurate characterizations of the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C17"
+    ],
+    "result": "The Allen Brain Observatory datasets provide standardized visual stimulation, large-scale Neuropixels recordings, and systematic behavioral measurements across many animals, making them suitable for studying the relationship between behavioral variability and representational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C17 accurately describe the datasets used (Allen Brain Observatory, Neuropixels recordings). These are factual descriptions of publicly available, well-characterized datasets. The characterization is accurate and the datasets are appropriate for the research questions addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The relationship between behavioral state changes and representational similarity is robust to different analysis methods including z-scoring of activity, different temporal binning (2s bins), and holds across different mouse strains (wild-type only) and sexes (male and female analyzed separately).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present important control analyses showing robustness of the main findings. Z-scoring (C29-C30), temporal binning (C31), strain controls (C32), and sex controls (C33) all show consistent results. These controls strengthen confidence in the main findings by ruling out potential confounds, though they are confirmatory rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The relationship between representational drift and pupil changes was weaker in dataset 2, which has longer blocks (60 vs 20 repeats). Longer blocks increase the chance of behavioral changes within blocks, making average block-wise representational similarity a less reliable metric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 identify a limitation in the analysis related to experimental design. The observation (C38) is data-driven and the explanation (C39) is logical. This represents appropriate critical evaluation of the methodology and its limitations, though it's a minor methodological point rather than a major finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Prior work has shown that pupil area changes correlate with arousal levels and can modulate neuronal gain, though behavior can also contribute independently to neuronal activity rather than simply scaling stimulus-induced signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 accurately cite prior work on arousal/pupil relationships and different models of behavioral modulation. These provide theoretical context for the modeling approaches used in the current study. The citations are appropriate and the characterizations are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "There is wide heterogeneity in both stimulus reliability and behavioral modulation across recorded units. Most V1 units show variable responses to stimulus repeats (low reliability) but with a long tail of highly reliable units. Behavioral modulation shows a wide spectrum with most units positively correlated with pupil size. CA1 units show weak stimulus reliability but strong behavioral modulation comparable to V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 characterize the distributions of stimulus reliability and behavioral modulation with specific reference to figures showing these distributions. The CA1 example (C54-C55) is particularly compelling as it shows strong behavioral modulation without stimulus reliability. These are descriptive findings that support the independence model.",
+    "result_type": "MINOR"
+  }
+]

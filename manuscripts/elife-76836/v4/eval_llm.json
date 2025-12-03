@@ -1,0 +1,474 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Light-sheet fluorescence microscopy (iSPIM) at 3 Hz for >4.5 hours does not interfere with normal C. elegans embryonic development, as evidenced by normal timing of Q/V5 cell division, hatching, and absence of photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 provide converging validation evidence: the imaging parameters are specified (C24), and three independent developmental markers show no perturbation (C25-C27). The conclusion (C28) is appropriately conservative given the control measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A modified 3D U-Net convolutional neural network achieves best performance for seam cell nuclei detection, and MHHT tracking algorithm outperforms GNN tracking by leveraging correlated seam cell motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C32-C34 provide quantitative performance comparisons on test data with statistical significance. MHHT shows significantly lower error rates (1.43% vs 2.01% with annotations, 5.25% vs 5.88% with U-Net detection, both p<0.001), supporting the methodological advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "A comprehensive posture library of >150,000 annotated image volumes was generated for three control embryos from 530 mpf to hatch, tracking all seam cells at 3 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe the dataset generated. The scale (>150,000 volumes, 3 embryos, >4.5 hours) is consistent with stated acquisition parameters (3 Hz \u00d7 ~16,200 seconds = ~48,600 volumes per embryo). Data availability is stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Mean squared displacement analysis reveals that anterior seam cells are more motile than posterior cells, with H1 exploring the full eggshell volume. Motility is lowest at ~600 mpf, and late-stage embryos show more directed movement than early-stage embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 present a coherent analysis of spatial motion patterns. MSD saturation (C37), anterior-posterior gradient (C40), and developmental timing (C41) are internally consistent. The conclusion about full eggshell exploration (C39) follows logically from MSD plateau approximating egg radius (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Embryo speed and movement patterns change developmentally: immature embryos move nearly continuously in short trajectories, while mature embryos show prolonged bouts of forward/backward movement punctuated with pausing. Movement becomes increasingly punctuated in final hours of embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe temporal dynamics of movement. The increased coefficient of variation (C46) quantitatively supports the qualitative description of punctuated movement. Increased bout durations (C47-C48) are consistent with the mature vs immature comparison (C49-C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A high-throughput brightfield assay reveals stereotyped three-phase behavioral maturation (immature active, inactive, mature active) with a prominent 20-40 mHz frequency feature (slow wave twitch, SWT) occurring ~1 hour before hatching. SWT timing scales with hatch time across experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 establish an independent behavioral assay. The three-phase pattern (C53) is consistent with seam cell tracking results. The SWT feature (C54-C56) is identified by scalogram analysis. Scaling of SWT with hatch time (C58-C59) addresses experimental variability and supports developmental consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Four principal components capture ~88% of variance in embryonic posture. PC1 represents dorsal/ventral coiling, PC2-PC3 represent sinusoidal bending patterns. The developmental shift from PC1 to PC2/PC3 dominance reflects maturation from flipping to sinusoidal crawling, similar to adult locomotion patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 present a dimensionality reduction analysis. The variance explained (C60) is substantial. PC interpretations (C61-C62, C64-C65) are mechanistically reasonable. The developmental shift (C63) and comparison to adults (C66-C67) provide biological context. The anatomical explanation (C68-C69) is plausible but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The posture library captures a developmental progression from immature dorsoventral flipping (oscillating PC1) to mature sinusoidal crawling (phase-shifted PC2/PC3 cycling). Late-stage embryos exhibit a dorsal bias in posture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 synthesize the posture analysis. The dorsal bias (C70-C71) is observed in supplemental data with known left/right identities. The behavioral motifs (C72-C73) are clearly defined in PC space. The summary (C74) appropriately integrates the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Late-stage embryo movement (750 mpf) is strongly impaired in unc-13 mutants, but early-stage movement (530 mpf) is indistinguishable from controls, indicating that synaptic transmission is not required for immature embryo behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 establish stage-specific synaptic requirements. The unc-13 phenotype is well-characterized (C75-C76). The late-stage impairment (C77) contrasts with normal early-stage behavior (C80), supporting the conclusion (C81). The observation of residual movement (C78-C79) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Early embryonic flipping behavior (530 mpf) occurs at 3-4 flips/minute with stereotyped trajectories through posture space that are indistinguishable between control and unc-13 mutants, suggesting flipping is largely independent of UNC-13-mediated synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 provide detailed characterization of flipping. The quantitative parameters (C82-C83) and trajectory analysis (C84-C86) show no difference between genotypes. The conclusion (C88) is appropriately cautious, noting that alternative forms of transmission cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "SWT represents a rhythmic embryonic behavior with 25-50 second period that requires synaptic transmission. Peak SWT power ratio occurs ~1 hour before hatching and is markedly diminished in unc-13 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 establish synaptic dependence of SWT. The scalogram analysis (C90) isolates the unc-13-dependent signal. The timing (C91) and quantitative reduction in mutants (C92) support the conclusion (C93). The discrepancy between assays (C89) is explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "SWT requires cholinergic signaling through UNC-29-containing levamisole receptors in muscles. Peak SWT power ratios are strongly diminished in unc-17 (VAChT) and unc-29 mutants but not in mutants lacking other neurotransmitter systems or acr-16 receptors. The unc-29 defect is rescued by muscle-specific UNC-29 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C103 systematically dissect neurotransmitter requirements. The negative results (C94-C96, C102) establish specificity. The positive results for cholinergic transmission (C97-C98) and UNC-29 receptors (C100) are supported by rescue (C101). The conclusion (C103) is well-supported by the genetic dissection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Neuropeptide signaling is implicated in SWT behavior, as peak SWT power ratios are strongly diminished in mutants lacking pro-neuropeptide processing enzymes egl-3 (PC2) and egl-21 (CPE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 establish neuropeptide involvement. The use of two independent processing enzymes strengthens the conclusion. However, the specific neuropeptides involved are not identified at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114",
+      "C115"
+    ],
+    "result": "SWT is mediated by the RIS neuron through FLP-11 neuropeptides. Peak SWT power ratios are markedly reduced in aptf-1 (RIS-deficient) and flp-11 mutants but unaffected in ceh-17 (ALA-deficient) mutants. Late-stage movement is structured by periodic FLP-11 release from RIS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C115 identify the neural circuit. The correlation with pausing (C106-C107) provides behavioral context. The genetic dissection (C109-C110) specifically implicates RIS over ALA. The flp-11 requirement (C114) connects to known RIS function (C111). The conclusion (C115) integrates these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "flp-11 mutants exhibit superficially normal overall developmental progression of embryonic behavior (early and late active phases with intervening decreased mobility), suggesting FLP-11 specifically affects SWT rather than general behavioral maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 establish specificity of the flp-11 phenotype. The observation that general behavioral progression is maintained while SWT is disrupted supports a specific role for FLP-11 in rhythmic quiescence rather than overall development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "SWT quiescent bouts are not associated with specific body postures, as pauses occur throughout posture space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 characterize the relationship between SWT and posture. The observation (C116) and conclusion (C117) distinguish SWT from posture-specific quiescence, suggesting it represents a general behavioral state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "RIS calcium transients occur at 24.8\u00b11.6 mHz (within SWT frequency band) and are associated with behavioral slowing. In flp-11 mutants, RIS transient rate and duration are unchanged but amplitudes are increased, and behavioral slowdown is more transient and less likely to produce pauses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 link RIS activity to behavior. The calcium imaging frequency (C118) matches SWT frequency. The correlation with slowing (C124) is demonstrated. The flp-11 mutant phenotype (C120-C121, C125-C126) suggests FLP-11 modulates RIS activity and behavioral output. The autocrine hypothesis (C122) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Late-stage embryonic behavior features rhythmic quiescence elicited by two RIS neurotransmitters: GABA (associated with transient behavioral slowing) and FLP-11 (essential for sustained pausing). The behavioral effects are diminished in flp-11;unc-25 double mutants compared to flp-11 single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 establish dual neurotransmitter control. The double mutant analysis (C128) supports GABA involvement beyond FLP-11. The functional distinction (C130-C131) between transient (GABA) and sustained (FLP-11) effects is mechanistically informative. The conclusion (C129) appropriately integrates both transmitters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "SWT quiescence is reversible by light stimulation. UVB elicits behavioral arousal in both RISon and RISoff trials, but arousal duration is prolonged in flp-11 mutants, suggesting FLP-11 dampens responses to external stimuli during SWT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C154 establish reversibility and sensory gating. The arousal response (C150-C151) confirms reversibility (C152). The prolonged arousal in flp-11 mutants (C153) supports the conclusion that FLP-11 dampens sensory responses (C154), a characteristic of sleep-like states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "UVB irradiance evokes acute inhibition of RIS activity coincident with behavioral arousal, and both effects are eliminated in lite-1 mutants lacking the endogenous photoreceptor, suggesting RIS inhibition contributes to light-evoked arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 establish the mechanism of light-evoked arousal. The correlation between RIS inhibition and arousal (C155) and the lite-1 dependence (C157) support the mechanistic inference (C156). This connects to known LITE-1 function in larvae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Visible light evokes arousal responses that are prolonged in flp-11 mutants. Unlike UVB, visible light arousal is followed by motion slightly below baseline, which is lost in flp-11 mutants and may represent a homeostatic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C162 describe visible light responses. The prolonged arousal in flp-11 mutants (C158-C159) is consistent with UVB results. However, the homeostatic interpretation (C162) is speculative, and the difference from UVB (C160) is not explained. The statistical significance of the below-baseline motion is stated but the magnitude appears small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C163",
+      "C164"
+    ],
+    "result": "SWT quiescence is reversible and behavioral responses to arousing stimuli are dampened by FLP-11 during SWT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C164 synthesize the arousal experiments. The reversibility (C163) is demonstrated by light-evoked arousal. The dampening of responses by FLP-11 (C164) is supported by prolonged arousal in flp-11 mutants across multiple stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Salt/insulin-regulated quiescence and SWT quiescence occur at similar developmental stages and both require FLP-11, suggesting these forms of quiescence are mechanistically related.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C136 propose a relationship between different quiescence types. While the timing (C134) and FLP-11 requirement (C135) are stated, no direct experimental comparison is presented in this manuscript. The conclusion (C136) relies on cited work and shared molecular requirements, but mechanistic similarity requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "SWT shares multiple properties with lethargus quiescence: both are promoted by RIS release of FLP-11, occur during cuticle synthesis, have similar quiescent bout durations (~10s), and show matching transcriptional profiles. SWT may be similar to late-stage lethargus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C144 draw parallels between SWT and lethargus. The shared molecular mechanism (C139), developmental timing relative to cuticle synthesis (C140-C141), bout durations (C143), and transcriptional profiles (C144) provide multiple lines of convergent evidence. The speculation about late-stage lethargus (C142) is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Embryos follow a stereotyped behavioral trajectory: early dorsoventral flipping (tail-initiated) slowing into reduced motility, followed by mature behaviors (sinuous crawling, directed motion, rhythmic quiescence). Synaptic transmission is required for late-stage movement but not for early flipping or the intervening inactive period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C168 synthesize the major findings. The behavioral trajectory (C165) is supported by multiple analyses (MSD, speed, posture PCA). The stage-specific synaptic requirements (C166-C168) are demonstrated by unc-13 mutant analysis at different ages. This represents the primary conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C169"
+    ],
+    "result": "Rhythmic bouts of behavioral quiescence punctuating late-stage movement are elicited by rhythmic RIS activation and secretion of FLP-11 and GABA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C169 synthesizes the SWT mechanism. This is supported by calcium imaging showing rhythmic RIS activity at SWT frequency, genetic requirements for RIS function (aptf-1), FLP-11, and GABA (unc-25), and the functional distinction between the two transmitters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Flipping could be mediated by intrinsic muscle oscillations or UNC-13-independent neuronal signaling (e.g., gap junctions). Anti-correlated ventral and dorsal muscle contractions must exist to produce flipping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170-C172 are speculative about flipping mechanisms. While the logical requirement for anti-correlated contractions (C172) is sound, the proposed mechanisms (C170-C171) are not tested. These represent hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Early flipping is followed by decreased motion that is not neuronally evoked (independent of neuropeptide processing and UNC-13). This slowdown coincides with a shift from cytoskeletal to exoskeletal control of body morphology, though preliminary experiments suggest reduced motion results from decreased muscle activity rather than structural constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C173-C177 address the inactive phase. The lack of neuronal requirement (C174) is supported by mutant data. The correlation with cytoskeletal-to-exoskeletal transition (C175) is interesting but correlative. The claim about muscle activity vs. structural constraint (C176) is based on unpublished preliminary experiments, weakening support. The speculation about larval molts (C177) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Late-stage embryos exhibit mature motion (sinusoidal crawling, prolonged forward/reverse bouts, rhythmic quiescence) that is grossly disrupted in unc-13 mutants, implying these features are driven by synaptic circuits, specifically the forward and reversal locomotion circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C180 characterize mature motion and its synaptic dependence. The unc-13 disruption (C179) supports synaptic circuit involvement (C180). The specific circuit identification (C181) relies on prior work (Ardiel et al., 2017) rather than new data in this manuscript.",
+    "result_type": "MAJOR"
+  }
+]

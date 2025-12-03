@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript provides background on dengue disease burden, virology, immunity, and lack of effective interventions. Over 40% of the world population is at risk with ~105 million infections annually. Dengue is caused by four serotypes (DENV-1\u20134), with lifelong homologous but temporary heterologous immunity. Secondary heterologous infection increases disease risk. Traditional vector control and antiviral treatments have been ineffective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 present established background knowledge about dengue epidemiology, virology, and public health context, all supported by appropriate citations to published literature (C2, C4, C5, C6, C7) or stated as general knowledge (C1, C3, C8). These provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "CYD-TDV (Dengvaxia) is the only licensed dengue vaccine, a live attenuated tetravalent chimeric vaccine using dengue E and prM proteins with yellow fever 17D backbone. Phase 2 trials showed moderate efficacy (30.2%), and phase 3 trials (CYD14 in Southeast Asia with 10,275 children aged 2\u201314; CYD15 in Latin America with 20,869 children aged 9\u201316) showed overall efficacies of 56.5% and 60.8% respectively, with efficacy varying by serotype and prior exposure. Participants received three doses at 0, 6, and 12 months with active surveillance for 25 months followed by passive hospital surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C26 accurately describe the CYD-TDV vaccine composition, regulatory status, and phase 2/3 trial designs and results, all supported by appropriate citations to published trial reports (C13-C26) or stated as established facts about vaccine composition and licensing (C9-C12). This provides essential background for understanding the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Long-term follow-up revealed increased hospitalizations in 2\u20135 year old vaccinees compared to controls, despite overall vaccine benefit. The 'silent infection' hypothesis was proposed: vaccination acts as a disease-free infection priming immunity, causing seronegative children to experience 'secondary-like' infections with higher disease risk upon natural exposure, while seropositive children experience lower-risk 'tertiary-like' infections. However, the small immunogenicity subset with wide confidence intervals prevented conclusive determination of whether age or serostatus was the dominant factor. The vaccine was licensed for ages 9+ independent of serostatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C38 accurately describe the safety signal in young children, the proposed mechanistic hypothesis, and the limitations of the initial trial data that prevented definitive conclusions about age vs. serostatus effects. All claims are supported by citations to published follow-up data (C27-C30) or stated as limitations of the trial design (C33-C36). The licensing decision (C37-C38) is appropriately contextualized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A novel NS1 ELISA assay enabled retrospective assessment of baseline serostatus in trial participants. Because Dengvaxia expresses yellow fever NS1 (not dengue NS1), the assay can distinguish natural infection from vaccination. Analysis of blood samples from participants with virologically confirmed dengue provided clear evidence of enhanced hospitalization/severe disease risk in seronegative vaccinees, consistent with machine learning estimates. This led to WHO recommendation in November 2017 to vaccinate only those with confirmed prior dengue infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 accurately describe the NS1 assay methodology and its application to resolve the serostatus question, all supported by appropriate citations (C39, C43, C44, C45). The biological basis for the assay's specificity (C40-C41) is correctly stated. This represents a critical advance that resolved the age vs. serostatus ambiguity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The current study fits a survival model with time- and age-varying hazards to individual-level CYD14 and CYD15 data including the first year of hospital follow-up. The analysis characterizes vaccine efficacy profile and mode of action, finding consistency with the 'vaccine as silent infection' hypothesis. The study examines duration of protection and efficacy against both febrile and hospitalized disease, demonstrating the need for long-term follow-up in trials of other dengue vaccine candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 accurately describe the current study's methodology and objectives. The modeling approach (C46) is appropriate for the data structure. The findings about consistency with the silent infection hypothesis (C48) are supported by the detailed modeling results presented throughout. The inference about implications for other vaccine trials (C50) is reasonable given the long-term safety signals observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The trial data characteristics and model structure are described. Infecting serotype is known for 96.7% of cases overall (97.6% CYD14, 95.8% CYD15), while baseline serostatus is known for only 12.7% overall (19.3% CYD14, 9.6% CYD15). The model uses country-specific baseline hazards as splines, links seropositivity to age and transmission intensity, assumes exponential waning of transient immunity, and allows transient immunity magnitude to vary by age, serotype, and serostatus. The model incorporates serotype effects additively and includes an age-specific multiplier of baseline hazard.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 accurately describe the data characteristics and model structure. The high proportion of known serotypes (C51-C53) vs. low proportion of known serostatus (C54-C56) justifies the data augmentation approach. The model structure (C57-C62) is appropriate for the data and hypothesis being tested, with reasonable assumptions about immunity waning and age/serotype effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Trial data show clear vaccine benefit across all age groups during the active phase (25 months) when both hospitalized and non-hospitalized disease were detected. The passive phase had fewer cases due to shorter duration and detection of only hospitalizations. Vaccine benefits were reduced in the passive phase, with 2\u20135 year old vaccinees showing greatly increased hospitalization risk compared to controls. Both trials observed a mix of infecting serotypes among cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 accurately describe observed patterns in the trial data as shown in Figure 3. The differential surveillance between active and passive phases (C64) is correctly noted. The increased hospitalization risk in young vaccinees (C66) is the key safety signal that motivated the current analysis. These observations are directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Modeling results show vaccine has greatest benefit for seropositive recipients, with hazard ratios remaining low throughout active and first year passive phases, with mean and 95% credible intervals below 1 for all ages. For seronegative vaccinees, hazard ratios are neither significantly positive nor negative during the first year but rise dramatically afterward, reflecting low short-lived immunity combined with ~6-fold long-term increase in disease risk. This increase refers specifically to hospitalization risk and is consistent with 2017 NS1 data, to which the model was not fitted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 accurately describe the key modeling findings shown in Figure 4. The differential effects by serostatus (C68-C74) represent the core result. The interpretation that passive phase hazard ratios reflect hospitalization risk (C75) is correct given the surveillance design. The consistency with independent NS1 data (C76) and clarification that the model was not fitted to those data (C77) strengthen confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "When unstratified by serostatus, the vaccine is broadly beneficial, though hazard ratios rise over time and exceed 1 for 2\u20135 year olds in the first year of passive follow-up. Decreasing hazard ratios with age reflect increasing seropositivity with age and, to a lesser extent, increased transient immunity in seropositives. Low seroprevalence in 2\u20135 year olds is the driving factor for their increased risk, consistent with long-term follow-up data. Hazard ratios are similar between trials for comparable age groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 provide important context by showing aggregate effects (C78-C80) and explaining the age patterns (C81-C83) as primarily driven by serostatus distribution rather than age per se. The consistency between trials (C85) and with observed data (C84) supports model validity. These interpretations are well-supported by the modeling results in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Serotype-specific analysis shows vaccination offers least benefit to serotype 2 and greatest benefit to serotype 4. Hazard ratios are higher for serotype 2 though vaccine remains beneficial in seropositives. For serotypes 3 and 4, hazard ratios are lower and vaccination provides some initial protection even in seronegatives, though ratios rise over time. Risk enhancement in 2\u20135 year old vaccinees is much higher for serotypes 1 and 2 than for 3 and 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 describe serotype-specific efficacy patterns shown in Figure 4\u2014figure supplement 1. The differential efficacy by serotype (C86-C87) is consistent with known immunogenicity differences. The observation of some protection in seronegatives for serotypes 3 and 4 (C89-C90) but greater risk enhancement for serotypes 1 and 2 (C91) provides important granularity to the overall findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Parameter estimates show that among unvaccinated individuals, primary infection is 70% as likely (0.7, 95% CI 0.36\u20130.98) and tertiary/quaternary infection is 31% as likely (0.31, 95% CI 0.14\u20130.63) to cause symptomatic disease as secondary infection. Considering vaccination as a silent infection, seronegative vaccinees increase long-term symptomatic disease risk by 1.5-fold (1.0\u20132.7) while those with single prior infection reduce risk by 0.31-fold (0.14\u20130.63). For hospitalization, proportions are 0.053, 0.21, and 0.053 for primary, secondary, and tertiary/quaternary infections. Vaccination increases seronegative hospitalization risk 6.1-fold (4.1\u201311) but reduces it 0.078-fold (0.036\u20130.16) in those with single prior infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 present key parameter estimates from Table 1 that quantify the 'silent infection' mechanism. The relative risks by infection history (C92-C93) are biologically plausible. The derived estimates for vaccine effects (C94-C95, C97-C98) follow logically from the model structure. The ~6-fold increase in hospitalization risk for seronegatives (C97) is particularly important for public health decision-making.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Transient immunity estimates show serotype and age dependence. For seronegatives, estimates don't vary for older age groups but are lower for 2\u20135 year olds, lowest for serotype 2 (mean \u221211%, 95% CI \u221272 to 46% for 2\u20135 year olds) and relatively high for serotypes 3 and 4. For seropositives, estimates vary less by serotype but more by age, with immunity lower in younger than older children. Results imply transient immunity varies by age independently of serostatus, though more so in seropositives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 describe transient immunity patterns from Figure 5 and Table 1. The age and serotype dependencies (C99-C103) are clearly shown in the figures. The negative estimate for serotype 2 in young seronegatives (C100) suggests potential harm. The inference about age-independent effects (C104-C105) is supported by the model structure and results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Mean posterior estimates of transient immunity duration are 4.5 (1\u20139.6) years for seronegatives and 11 (2.3\u201320) years for seropositives. Posterior distributions show seropositives have 85% of mass above 5 years with approximately equal weight between 5\u201320 years, while seronegatives have modal estimate ~2 years with 62% of mass below 5 years. Models fixing seropositive transient immunity at zero don't reproduce trial data. For seropositives, long-lived transient immunity confers benefit beyond priming immunity, suggesting multitypic seropositives also benefit. In seronegatives, any positive benefit is short-lived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 describe duration estimates and their implications. The wide credible intervals (C106-C107) indicate uncertainty, but the posterior distributions (C108-C109) show clear differences between serostatus groups. The model comparison result (C110) supports the importance of transient immunity in seropositives. The inferences about benefit mechanisms (C111-C113) follow logically from the parameter estimates, though the caveat about inability to test monotypic-specific effects is appropriately noted (C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The age-specific hazard multiplier increases for 6\u201311 year olds (1.2, 0.91\u20131.5) but decreases for 12\u201316 year olds (1.1, 0.79\u20131.5) to be similar to 2\u20135 year olds in mean estimates. While credible intervals encompass 1, models omitting this multiplier give noticeably inferior visual fit. Seropositives are 0.77 (0.43\u20130.99) times as likely to be infected as seronegatives due to immunity to at least one serotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 describe additional model parameters. The age-specific hazard multiplier (C114-C115) shows a non-monotonic pattern that may reflect age-dependent exposure or susceptibility. The model comparison result (C116) supports including this parameter despite wide credible intervals. The reduced infection risk in seropositives (C117) is biologically plausible due to partial cross-protection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Serotype distribution estimates show substantial heterogeneity between countries. Puerto Rico's cases are almost exclusively serotype 1, while Brazil's are almost exclusively serotype 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 describe country-specific serotype distributions from Figure 5\u2014figure supplement 2. The substantial heterogeneity (C118) is clearly shown, with extreme examples in Puerto Rico and Brazil (C119-C120). This heterogeneity helps explain country-level differences in vaccine efficacy and supports the model's country-specific approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Observed Kaplan-Meier curves demonstrate clear overall vaccine benefit, with controls acquiring more symptomatic disease than vaccinees in every country and age group over the combined active and first year passive phases. Vaccine efficacy wanes over time in both trials. The model reproduces observed Kaplan-Meier curves well across countries and age groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 describe model fit to survival curves shown in Figure 6. The overall benefit (C121-C122) and waning efficacy (C123) are clearly visible in the data. The good model fit (C124) across multiple stratifications supports model validity and suggests the model captures key features of vaccine effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Observed attack rates varied widely by country, trial arm, phase, and age group, generally higher in CYD14 than CYD15 and decreasing with age in both arms. The main model captures this variation well, with mean predicted attack rates falling within confidence intervals of observed rates in every age group, country, trial arm, and phase. Importantly, mean estimates reproduce the increased hospitalization among 2\u20135 year old vaccinees in CYD14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 describe model fit to attack rates shown in Figure 7. The wide variation (C125-C127) reflects heterogeneity in transmission intensity and population immunity. The excellent model fit (C128-C129) across all stratifications is impressive. Most importantly, the model reproduces the key safety signal in young vaccinees (C130), demonstrating it captures the critical age-serostatus interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Severity analysis shows that for seropositives, temporal effects are minimal and vaccination confers high, long-lasting protection, more so against hospitalized than febrile disease. In seronegatives, against non-hospitalized disease, hazard ratios show only minor initial protection without dramatic rise. However, against hospitalized disease there is immediate risk enhancement that substantially worsens over time. Differences between seronegative and seropositive efficacy are greater against hospitalized than febrile disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 describe severity-specific effects from Figure 4\u2014figure supplement 2. The differential protection by severity in seropositives (C131-C132) and the immediate risk enhancement for hospitalized disease in seronegatives (C134) are important findings. The summary (C135) highlights that the safety concern is primarily for severe/hospitalized disease, which has major public health implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Serotype-specific severity analysis shows protection is greatest against serotype 4 and lowest against serotype 2. The rate of hospitalization risk enhancement in seronegatives varies by serotype: for serotype 2, risk increases immediately and rises slowly over three years to ~6-fold; for serotypes 3 and 4, eventual enhancement is lower (~4-fold) but follows a delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 describe serotype-specific severity effects from Figure 4\u2014figure supplements 3 and 4. The differential patterns by serotype (C137-C138) suggest different mechanisms or kinetics of risk enhancement. The immediate risk for serotype 2 vs. delayed risk for serotypes 3 and 4 is an interesting finding that may relate to immunogenicity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Severity analysis parameter estimates show proportions of secondary infections requiring hospitalization differ between CYD14 (0.30, 0.23\u20130.33) and CYD15 (0.16, 0.12\u20130.21), reflecting non-standardized criteria between countries. Relative risks of severe disease are considerably lower than hospitalized disease at 0.012, 0.047, and 0.012 for primary, secondary, and tertiary/quaternary infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 present severity-specific parameter estimates. The difference in hospitalization proportions between trials (C139) appropriately accounts for different healthcare systems and hospitalization thresholds. The lower severe disease risks (C140) are expected since severe disease is a subset of hospitalized disease. These estimates are important for understanding disease burden.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Summary findings show substantial heterogeneity in transient immunity by serotype and serostatus, with vaccine-induced protection higher in seropositives than seronegatives for each serotype, robust across model variants. Incorporating serotype-specific transient immunity improved fits to country but not age breakdowns. Transient immunity increases with age in seropositives and to a lesser extent in seronegatives. Heterogeneity between countries' Kaplan-Meier curves can be explained by serotype and seroprevalence, but these factors are insufficient to explain age differences, which require age-specific effects independent of serostatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C149 provide high-level summary of key findings. The heterogeneity by serotype and serostatus (C141-C142) is well-documented. The robustness across model variants (C143) strengthens confidence. The model comparison results (C144-C145) justify the model structure. The age effects (C146, C148-C149) represent an important finding that age matters beyond just being a proxy for serostatus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Across all model variants examined, vaccination substantially decreased disease risk in seropositives but increased risk in seronegatives, particularly for hospitalized/severe disease. Findings are consistent with and largely predict NS1 data and long-term follow-up data. Larger differences in efficacy between seropositives and seronegatives were found for hospitalized disease, with greater benefit to seropositives and greater risk enhancement in seronegatives than for febrile disease. Analysis demonstrates serostatus is the dominant factor in efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154 provide overarching summary of main findings. The consistency across model variants (C150-C151) and with independent data (C152) strongly support the conclusions. The severity-specific findings (C153) have important implications for vaccine policy. The conclusion that serostatus is dominant (C154) is well-supported, though the caveat about serotype order is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Current WHO guidance recommends serological testing before vaccination and only vaccinating seropositives. However, results suggest all seropositives are likely to benefit, and vaccinating them will be more beneficial than merely boosting immunity to that of someone with two natural infections. This means it may be more beneficial to vaccinate multitypic seropositives than other models predicted. High-resolution seropositivity maps are now available, and alongside improved rapid diagnostic tests and screen-then-vaccinate programs, optimal vaccine deployment could reduce worldwide dengue burden by as much as 30%. Therefore, targeting only seropositive recipients is an increasingly viable public health strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C161 discuss implications for vaccine policy. The WHO guidance (C155) is correctly cited. The inference that all seropositives benefit (C156-C157) is supported by the modeling results showing long-lived transient immunity. The comparison to other models (C158) is appropriately caveated. The potential 30% burden reduction (C160) is supported by citation. The conclusion about viability of screen-then-vaccinate (C161) is reasonable given available tools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Abstract summary states that modeling indicates vaccine-induced immunity is long-lived in seropositive recipients, giving higher protection than two natural infections. Long-term increased hospitalization risk outweighs short-lived immunity in seronegatives. Independently of serostatus, transient immunity increases with age and is highest against serotype 4. Benefit is higher in seropositives and risk enhancement greater in seronegatives against hospitalized vs. febrile disease. Results support vaccinating seropositives only, with rapid diagnostic tests enabling viable screen-then-vaccinate programs. Since CYD-TDV acts as a silent infection, long-term safety of other vaccine candidates must be closely monitored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C172 from the abstract accurately summarize the main findings. The key conclusions about long-lived immunity in seropositives (C162-C163), risk in seronegatives (C164), age and serotype effects (C165-C166), severity differences (C167-C168), and policy implications (C169-C170) are all well-supported by the detailed results. The warning about other vaccines (C171-C172) is an important inference given the silent infection mechanism.",
+    "result_type": "MAJOR"
+  }
+]

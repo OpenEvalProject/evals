@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The fMRI alertness index, derived from fMRI data alone using a template-based approach, tracks continuous variations in EEG alertness. The temporal cross-correlation between the fMRI and EEG alertness indices is significantly elevated above a null distribution created by random permutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 demonstrate that the fMRI alertness index correlates with EEG alertness measures. The methodology is clearly described (C23), statistical validation against a null distribution is provided (C24), and visual evidence in Figure 2 supports the temporal correspondence. The cross-validation approach (template trained on resting-state, tested on task data) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Hit trials are associated with higher pre-stimulus fMRI alertness compared to miss trials. EEG spectrograms show hit trials have greater alpha band power (8-12 Hz) while miss trials show greater low-frequency power. The fMRI alertness index significantly differentiates hits from misses in both pre-stimulus (p=3.34e-03, d=1.24) and post-stimulus (p=6.40e-06, d=2.39) intervals, with within-subject consistency (t(8)=3.35, p=0.01, d=1.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide converging evidence from EEG spectrograms and fMRI alertness indices that hits and misses are accompanied by distinct arousal states. Statistical tests show significant differences at both group and individual subject levels with large effect sizes. The pre-stimulus finding is particularly important as it suggests alertness predicts upcoming behavioral responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Fast hits are associated with higher pre-stimulus fMRI alertness compared to slow hits. Within subjects with both response types, all showed higher mean fMRI alertness during fast versus slow trials (t(9)=4.52, p=0.001, d=1.43). Both EEG and fMRI showed main effects of behavioral response (p<0.05, one-way ANOVA), with post-hoc tests revealing significant pairwise differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 demonstrate that the fMRI alertness index captures graded differences in behavioral performance beyond simple hit/miss categorization. The consistency across all subjects (C33), large effect size (d=1.43), and convergence with EEG measures strengthen the finding. Post-hoc tests appropriately control for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In the post-stimulus interval, both EEG and fMRI showed main effects of behavioral response (EEG: F(2)=8.82, p=0.001; fMRI: F(2)=14.12, p=5.75e-05). Post-hoc tests showed differences between fast/slow hits versus misses, but not between fast and slow hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe post-stimulus alertness patterns. The statistical tests are appropriate and show significant main effects. The lack of difference between fast and slow hits post-stimulus (C39) is interpreted as stimulus-induced arousal increases in slow trials, which is a reasonable speculation but remains an inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C61",
+      "C62"
+    ],
+    "result": "The fMRI alertness template can be reduced to its top 1% of positive and negative voxels with minimal loss in predictive power (only 5.7% decrease in EEG correlation). The reduced template maintains significant behavioral discrimination (F(2)=10.09, p=0.0005). Negative voxels localize to primary sensory/motor cortices, while positive voxels are in ventricles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46, C61-C62 demonstrate that alertness information is low-dimensional despite broad spatial patterns. The template thresholding experiment (Figure 5) shows maintained performance at 1% of voxels when both positive and negative voxels are retained jointly. The quantitative performance metric (5.7% decrease) and replication of behavioral effects support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "Including the fMRI alertness index as a covariate in GLM analysis increased t-scores in task-relevant regions (bilateral auditory cortex, left motor cortex, cerebellum) and salience network areas (anterior cingulate, insula), while reducing widespread negative BOLD responses. Using EEG alertness as a covariate produced similar but somewhat weaker effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C52 demonstrate that modeling alertness fluctuations impacts task activation detection. The GLM analyses (Figure 6) show clear differences in activation patterns when alertness is included as a covariate. However, the authors appropriately note uncertainty about whether this represents 'true' activation or removal of neural effects. The finding is descriptive and exploratory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "A lasso regression model yielded correlations with EEG alertness similar to, though slightly lower than, the template-based approach. The lasso model using 268-region atlas time series outperformed the voxelwise model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide a methodological comparison showing the template approach performs comparably or better than lasso regression. This supports the validity of the template method, though the lasso results are only briefly described and shown in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Projecting out low-frequency heart rate and respiratory volume fluctuations generally reduced the correlation between fMRI and EEG alertness measures, suggesting that retaining low-frequency systemic physiological components may provide useful information for extracting arousal fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 address the contribution of physiological signals to alertness estimation. The analysis (Figure 4\u2014figure supplement 3) shows reduced fMRI-EEG correlation after physiological regression. However, C73 is an inference about utility rather than a direct finding. The result suggests physiological signals contribute to the alertness measure, though causality and mechanisms remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study has a small sample size (14 subjects, 23 scans), which may lead to overestimated effect sizes and limited generalizability. However, long scan durations (24.5 min) and replication analyses provide some confidence in the findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 acknowledge a key limitation. The small sample size is a valid concern for generalizability and effect size estimation. The authors appropriately identify mitigating factors (long scans, replication analyses) but correctly note this remains a limitation. This is an honest assessment of study constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The fMRI alertness index detects primarily relative rather than absolute alertness levels, is restricted between -1 and 1 due to spatial correlation methodology, and may not detect slower baseline shifts due to detrending of fMRI signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 describe methodological limitations of the approach. These are logical consequences of the spatial correlation method and preprocessing steps. The limitations are clearly stated and represent honest assessment of what the method can and cannot measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study acquired simultaneous EEG-fMRI data from 14 subjects using multi-echo fMRI and 32-channel EEG during resting-state and auditory task conditions. Data were preprocessed using multi-echo ICA denoising, and EEG alertness was quantified using alpha/theta ratio. Sleep staging indicated 85.6% of epochs were wake, suggesting sleep was not a major factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C108 describe the experimental methods, data acquisition parameters, and preprocessing procedures. These are factual statements about the study design that are clearly documented. The methods appear appropriate for the research questions, including the use of multi-echo ICA for artifact reduction and established EEG metrics for alertness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Alertness is closely linked with behavior and cognition. Behavioral responses vary across repeated stimulus presentations, and neural variability may index individual cognitive differences. Fluctuating arousal is a major determinant of behavioral and neural variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C7 provide background context supported by citations to prior literature. These establish the motivation and theoretical framework for the study. While these are general statements rather than novel findings, they accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work has established that arousal interacts with decision-making, visuomotor performance, perception, and attention. Variations in behavioral responses have been linked to spontaneous fMRI signals. Previous studies have classified sleep stages from fMRI and extracted arousal indices that correlate with EEG and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 summarize prior literature establishing the relationship between arousal, fMRI signals, and behavior. These are appropriately cited claims that provide context for the current work. The citations appear relevant and support the stated relationships, though the accuracy of individual citations was not independently verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Previous work in macaque monkeys demonstrated that the vigilance template could be reduced to ~1% of voxels without considerable loss in predictive power, and that retaining both positive and negative voxels was critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 cite prior work (Chang et al., 2016) that motivated the current template thresholding experiment. These provide important context for interpreting the human results. The claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C75"
+    ],
+    "result": "The Discussion contextualizes findings within the neurobiology of arousal systems and prior fMRI studies. The template shows strongest positive correlations in CSF rather than thalamus (unlike macaque studies), which aligns with prior human EEG-fMRI studies. The pattern overlaps with sympathetic arousal signatures and may reflect concurrent central and peripheral arousal modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60, C63-C71, C74-C75 provide interpretation of the spatial template findings in the context of arousal neurobiology and prior literature. The comparisons to prior work are appropriately cited. The interpretation that CSF signals may relate to physiological effects is speculative but grounded in cited literature. The discussion appropriately distinguishes between findings and interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C84"
+    ],
+    "result": "The template map may reflect concurrent modulation of central and peripheral arousal and their systemic physiological correlates. Inter-subject variability in fMRI alertness estimation performance may reflect the degree of alertness fluctuation present in the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76 and C84 are explicitly speculative interpretations (C76 uses 'may', C84 notes questions are 'under investigation'). While these are reasonable hypotheses consistent with the data, they lack direct empirical support in the current study. The authors appropriately present these as speculations rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Natural drifts in wakefulness are common during fMRI, but few studies explicitly model dynamic arousal fluctuations in standard fMRI task analyses because concurrent EEG and pupillometry are relatively uncommon during routine scans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 describe the current state of the field and common practices in fMRI research. These are general knowledge statements that accurately characterize typical fMRI study designs and their limitations. This provides motivation for developing fMRI-only alertness estimation methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Inter-subject and inter-scan differences in fMRI alertness estimation performance have been observed in this study and prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 acknowledges observed variability in method performance, supported by both the current data and citation to prior work (Falahpour et al., 2018). This is an honest acknowledgment of method limitations and variability, though the sources of this variability are not fully characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C55"
+    ],
+    "result": "The fMRI alertness marker captures trial-to-trial behavioral responses using only a small fraction of voxels, and accounting for alertness increases statistical detection of task-activated brain areas. Time-resolved alertness predictions from fMRI alone may capture inter-trial behavioral responses and continuous internal state variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C55 represent the main conclusions of the study. These are well-supported by the experimental results: C2 by the hit/miss and fast/slow analyses (Figures 3-4), C3 by the template thresholding experiment (Figure 5), and C4 by the GLM analysis (Figure 6). C55 is a summary conclusion that appropriately synthesizes the findings. The small sample size (C85-C87) is a caveat for generalizability.",
+    "result_type": "MAJOR"
+  }
+]

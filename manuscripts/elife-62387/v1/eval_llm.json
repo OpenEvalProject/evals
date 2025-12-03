@@ -1,0 +1,451 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "CNC cells give rise to craniofacial skeletal tissues and regulate muscle development through cell-cell interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-established facts in the field, supported by multiple citations to prior work (Chai and Maxson, 2006; Heude et al., 2010; Le Douarin et al., 2004; Grimaldi et al., 2015; Han et al., 2014; Rinon et al., 2007). These are foundational background claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Single-cell RNA-seq identified 8 cell types and revealed heterogeneity within CNC-derived mesenchymal cells, including progenitors, midline mesenchymal cells, perimysial cells, and mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 are supported by single-cell RNA-seq data (Figure 1A-B) showing distinct clusters with characteristic marker gene expression. The identification of cell types is based on known markers and functional annotation, with appropriate citations to support the functional interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In situ hybridization validated the spatial distribution of identified cell clusters in the developing soft palate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 are supported by RNAscope in situ hybridization data (Figure 1E-L, M-T) showing the anatomical localization of cluster-specific markers. The spatial patterns are consistent with the predicted cell identities from scRNA-seq analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Perimysial markers are expressed in mesenchyme surrounding multiple craniofacial muscles, suggesting a common CNC-derived population involved in muscle development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by in situ hybridization showing perimysial marker expression in tongue, masseter, and other craniofacial muscle regions (Figure 1P-R, Figure 1\u2014figure supplement 2A-E). The inference that this represents a common population is reasonable but would benefit from lineage tracing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Perimysial markers show differential expression in hard versus soft palate, with Tbx15 absent from hard palate while Aldh1a2 and Hic1 are expressed around tooth germs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by in situ hybridization data (Figure 1\u2014figure supplement 3D-F). The inference that these markers have different functions in hard versus soft palate (C26) is reasonable but speculative without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Perimysial markers show temporal and spatial expression patterns in the tongue, with Aldh1a2 potentially associated with early myogenic populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by in situ hybridization showing temporal changes in marker expression (Figure 1\u2014figure supplement 3A-F). The inferences about association with myogenic populations (C30-C31) are reasonable but speculative without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CNC-derived cell heterogeneity decreases during development, with progenitor populations declining and differentiated populations increasing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by temporal scRNA-seq analysis (Figure 2A, Figure 2\u2014figure supplement 1A). The inference that declining clusters represent transient progenitors (C36) is supported by pseudotime analysis but could benefit from lineage tracing validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Pseudotime analysis predicts that Cluster 0 represents common progenitors that bifurcate into perimysial and midline mesenchymal lineages at E13.5-E14.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by Monocle 3 pseudotime trajectory analysis (Figure 2\u2014figure supplement 1B-C). However, pseudotime analysis is computational inference and would benefit from experimental validation through lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Runx2 expression decreases during development and is predominantly expressed in progenitor and perimysial populations, with minimal expression in midline mesenchymal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by scRNA-seq data showing temporal and cluster-specific Runx2 expression patterns (Figure 2B, C-J). The inference about Runx2's role in differentiation (C41) is reasonable but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Runx2 protein expression is spatially and temporally restricted during soft palate development, localizing to progenitor, perimysial, and osteogenic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by immunofluorescence and in situ hybridization data (Figure 2K-X) showing Runx2 expression patterns. The spatial restriction is well-documented across developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Runx2 may regulate CNC-derived cell differentiation in a cell-autonomous manner, indirectly affecting myogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 is a hypothesis inferred from Runx2 expression patterns and prior knowledge. While reasonable, this requires experimental validation through loss-of-function studies, which are presented later in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Osr2-Cre labels CNC-derived cells in the soft palate, including perimysial cells, and can be used to delete Runx2 in these populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by lineage tracing data (Figure 3\u2014figure supplement 1A-G) showing tdTomato+ cells in soft palate mesenchyme and co-expression with Runx2. This validates the genetic strategy for conditional deletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Loss of Runx2 in CNC-derived cells causes cleft soft palate (50% penetrance), muscle defects (100%), and skeletal defects with variable severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by phenotypic analysis of Osr2-Cre;Runx2fl/fl mice (Figure 3A-F, Figure 3\u2014figure supplement 2A-J). The correlation between skeletal defect severity and cleft penetrance (C56) is based on limited sample size (N=6) but shows a clear trend.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Loss of Runx2 causes pterygoid plate defects, abnormal muscle attachment, and tendon defects in the TVP region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by histological analysis and in situ hybridization (Figure 3G-H, L-M, Figure 3\u2014figure supplement 3I-L, Figure 3\u2014figure supplement 4A-D). The inference that muscle attachment defects are due to hard tissue and aponeurosis disruption (C61) is reasonable given the lack of Runx2 expression in TVP perimysium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Loss of Runx2 causes muscle defects in the LVP region, including reduced size, misoriented fibers, and centralized nuclei, indicating both direct and indirect effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by histological analysis (Figure 3I-P, Figure 3\u2014figure supplement 3C-D, G-H). The muscle fiber misorientation and centralized nuclei are well-documented. The conclusion about direct and indirect effects (C67) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Muscle defects in Runx2 mutants appear at E14.5, with delayed differentiation evidenced by reduced MHC expression and presence of immature myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are supported by temporal analysis of myogenic markers (Figure 4A-D, Figure 4\u2014figure supplement 1A-D). The inference about delayed differentiation (C71) is reasonable based on reduced late marker expression. The speculation about functional consequences (C74) is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CNC-derived cell proliferation is normal in Runx2 mutants, but myogenic cell proliferation is reduced at E15.5, with no change in apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by BrdU incorporation and caspase3 staining (Figure 4E-L, Figure 4\u2014figure supplement 1E-H). Statistical analysis shows significant reduction in myogenic proliferation at E15.5 (p=0.02). The inference about altered signaling (C79) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of Runx2 alters CNC-derived cell composition, with decreased perimysial cells and increased midline mesenchymal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by integration analysis of E14.5 scRNA-seq data (Figure 5A-B). The altered cell composition suggests a fate switch, though the analysis is descriptive and would benefit from quantitative statistical testing of cluster proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Loss of Runx2 reduces expression of perimysial markers and causes differential expression of CNC-derived cell-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by in situ hybridization and bulk RNA-seq (Figure 5\u2014figure supplement 1A-I). The data show consistent downregulation of perimysial markers and upregulation of other genes. The inference about myogenic defects (C84) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Twist1 shows complementary expression to Runx2 during soft palate development, with high expression in midline mesenchyme and low expression in perimysial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by scRNA-seq and in situ hybridization data (Figure 5\u2014figure supplement 2A-G, Figure 5D-G). The complementary expression patterns are well-documented. The inference about tight coordination (C93) is reasonable but descriptive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Loss of Runx2 causes upregulation of Twist1 in perimysial cells, potentially disrupting cell fate determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by in situ hybridization showing expanded Twist1 expression in Runx2 mutants (Figure 5H-K). The inference about fate determination (C95) is reasonable given the altered cell composition but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ATAC-seq reveals Runx2 and Twist1 binding sites near Aldh1a2, suggesting both factors may regulate its expression independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by ATAC-seq data (Figure 6A). The presence of binding sites suggests potential regulation, but the inference about independent regulation (C98) based on distance (>20 kb) is speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Twist1 haploinsufficiency rescues soft palate defects in Runx2 mutants, including cleft palate, pterygoid plate height, and muscle defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by histological analysis of Osr2-Cre;Runx2fl/fl;Twist1fl/+ mice (Figure 6B-H). The complete rescue of cleft palate (0/5 vs 5/10) and restoration of muscle and skeletal phenotypes provide strong evidence for genetic interaction. However, sample size is limited (N=5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Runx2 maintains Aldh1a2 expression by suppressing Twist1, as evidenced by rescue of Aldh1a2 expression in Twist1 haploinsufficient Runx2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by in situ hybridization showing downregulation of Aldh1a2 and upregulation of Twist1 in Runx2 mutants, with restoration in double mutants (Figure 6J-R). The genetic epistasis experiment provides strong evidence for the proposed regulatory mechanism (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Aldh1a2 and Hic1 are novel markers for CNC-derived perimysial tissues with pro-myogenic functions, based on their known roles in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by citations to prior work showing roles of Aldh1a2 in extraocular muscle development (Matt et al., 2008) and Hic1 in muscle regeneration (Scott et al., 2019). The inference that these are novel perimysial markers (C109) is reasonable but requires functional validation in the soft palate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The spatial distribution of CNC-derived cell types follows the lateral-to-medial growth pattern of palatal shelves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by in situ hybridization data (Figure 1G-K) and are consistent with known palatal shelf growth patterns (Bush and Jiang, 2012). This provides anatomical context for the differentiation hierarchy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Runx2 coordinates development of multiple soft palate tissues by regulating CNC-derived cell fate, with loss causing fate changes and reduced expression of pro-myogenic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are supported by the combined evidence from scRNA-seq, phenotypic analysis, and bulk RNA-seq. The coordinated regulation of multiple tissues (C112) is supported by prior work. The fate change (C114) and downregulation of pro-myogenic factors (C116) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Runx2 regulates different downstream targets in different tissues, with tissue-specific responses to Runx2 loss in soft palate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 are supported by comparison to prior work (James et al., 2006) and bulk RNA-seq data (Figure 5\u2014figure supplement 1I). The differential responses of perimysial versus midline markers are well-documented. The speculation about direct versus indirect effects (C121) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Loss of Runx2 causes abnormal upregulation of Twist1 in perimysial cells, and suppression of Twist1 by Runx2 is necessary to maintain Aldh1a2 expression and muscle development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by the genetic rescue experiment showing restoration of Aldh1a2 expression and muscle phenotypes in Osr2-Cre;Runx2fl/fl;Twist1fl/+ mice (Figure 6). This provides strong evidence for the proposed regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The Runx2-Twist1 regulatory mechanism in soft palate perimysial cells may be shared by other craniofacial musculoskeletal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is inferred from the widespread expression of perimysial markers in multiple craniofacial muscles (Figure 1P-R, Figure 1\u2014figure supplement 2A-E). While reasonable, this hypothesis requires functional validation in other craniofacial muscle systems.",
+    "result_type": "MINOR"
+  }
+]

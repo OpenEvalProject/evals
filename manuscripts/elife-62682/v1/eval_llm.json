@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "H3K14ub binds specifically and tightly to the Clr4 catalytic domain (Kd = 80 \u00b1 6 nM) and stimulates enzymatic activity by 250-fold through increased substrate affinity (100-fold lower KM) and 3-fold higher turnover. The isolated KMT domain is sufficient for this stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C28-C43 provide converging biochemical evidence from multiple assays (ITC, enzyme kinetics, fluorography) demonstrating tight binding and dramatic enzymatic stimulation. The kinetic parameters are precisely measured with error estimates, and the sufficiency of the KMT domain is experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The position of ubiquitin on H3 is critical for Clr4 stimulation, as H3K18ub shows significantly reduced activity compared to H3K14ub. Free ubiquitin does not stimulate activity, suggesting an induced-fit mechanism rather than allosteric regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C44-C47 demonstrate specificity through comparative experiments with H3K18ub and free ubiquitin competition assays. The data support the conclusion that covalent linkage at the correct position is required and that stimulation occurs through induced-fit rather than allosteric mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "HDX-MS analysis identified a ubiquitin binding region (UBR) in Clr4 residues 243-261 that shows unique protection upon H3K14ub binding. The H3 peptide interacts with residues 291-305, while ubiquitin binds via its \u03b1-helix (residues 25-43) to the UBR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 present HDX-MS data with appropriate controls comparing Clr4 alone, with H3, and with H3K14ub. The differential protection patterns clearly identify distinct binding regions for the H3 peptide and ubiquitin moiety, with structural mapping providing mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mutations in the UBR (Clr4-GS253 and Clr4-3FA) abolish H3K14ub binding as measured by ITC, while wild-type Clr4 binds H3K14ub with Kd = 80 \u00b1 6 nM in an enthalpy-driven reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 provide ITC data demonstrating complete loss of binding for both UBR mutants while maintaining protein stability. The thermodynamic characterization of wild-type binding is quantitative with appropriate error estimates, validating the functional importance of the UBR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The Clr4-3FA crystal structure (2.46 \u00c5 resolution) shows no significant structural changes compared to wild-type (RMSD = 0.37 \u00c5), indicating mutations disrupt binding through direct interface disruption rather than global misfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 present crystallographic data with appropriate resolution and structural comparison metrics. The low RMSD value provides strong evidence that the mutations specifically disrupt the binding interface without causing structural perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "UBR mutants show 27-48-fold reduced efficiency on H3K14ub due to decreased substrate affinity (higher KM), while retaining 78-91% activity on unmodified H3, demonstrating high specificity for disrupting the H3K14ub interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 provide comprehensive kinetic analysis showing differential effects on H3K14ub versus unmodified H3 substrates. The quantitative measurements with error estimates demonstrate that mutations specifically target the ubiquitin-dependent stimulation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In vivo, clr4-GS253 and clr4-3FA mutants show severe transcriptional silencing defects comparable to clr4\u0394 in growth assays and RT-qPCR, with clr4-3FA showing a slightly less severe phenotype. Mutant proteins are expressed normally and remain associated with the CLRC complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C87 demonstrate in vivo functional consequences through multiple complementary assays (growth on selective media, RT-qPCR, Western blot, co-IP). The phenotypic severity correlates with in vitro biochemical defects, and proper expression/complex association rules out indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "ChIP analysis shows complete loss of H3K9me2/3 at centromeric repeats in both UBR mutants, with elevated H3K9me1 in clr4-GS253 and clr4\u0394 but not clr4-3FA. RNA polymerase II occupancy is strongly increased at heterochromatic loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide ChIP data demonstrating loss of the enzymatic product (H3K9me2/3) and increased transcription at heterochromatic loci. The differential H3K9me1 pattern between mutants is interesting but the authors appropriately note they cannot explain this observation, maintaining scientific rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C107"
+    ],
+    "result": "The severity of in vivo phenotypes correlates with the degree of in vitro loss of enzymatic function on H3K14ub, establishing that Clr4's KMT domain-mediated recognition of H3K14ub is essential for heterochromatin formation and maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C107 synthesize the in vitro biochemical and in vivo functional data to establish causality. The correlation between biochemical defects and phenotypic severity, combined with the specificity of the mutations, strongly supports this mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "H3K14ub stimulation is conserved in mammalian SUV39H2 but not G9a or SUVH4, correlating with UBR sequence conservation. H3K14ub has been detected in human cells, suggesting the crosstalk mechanism is conserved in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99, C121-C124 demonstrate functional conservation through comparative enzyme assays and sequence analysis. The correlation between UBR sequence similarity and functional stimulation provides strong evidence for conservation, though the authors appropriately use cautious language ('suggests', 'potentially') for mammalian implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors propose a licensing model where H3K14ub licenses H3K9me2/3 deposition, with H3K14 acetylation preventing ubiquitination. HDACs Clr3/Sir2 regulate H3K14 availability for ubiquitination by CLRC, which is essential for heterochromatin establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 present a mechanistic model supported by the current data and consistent with prior literature (C103-C106 cite supporting evidence). While the model involves inference and speculation (C101), it is appropriately presented as a proposal and is well-supported by the experimental findings and genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Computational docking using HDX-MS and mutagenesis constraints generated a structural model of the Clr4-H3K14ub complex. The model suggests ubiquitin binding stabilizes the SET-I domain, similar to regulatory mechanisms in PRC2 and MLL complexes, potentially optimizing the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C119 present a computational model and mechanistic hypothesis based on structural similarities to other SET domain proteins. While the model is constrained by experimental data (HDX-MS, mutagenesis), it remains a prediction requiring experimental validation. The mechanistic speculation about SET-I domain stabilization (C117-C119) is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Bioinformatic analysis shows the UBR sequence is conserved in Ascomycetes fungi. SUV39H2's UBR motif is similar to Clr4, while G9a and SUVH4 diverge significantly, consistent with functional H3K14ub stimulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 present sequence conservation analysis that correlates with functional data. The correlation between sequence similarity and H3K14ub stimulation provides strong support for the functional importance of the UBR motif across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Background claims establishing the role of SUV39 proteins in H3K9 methylation, the S. pombe heterochromatin system, Clr4 domain architecture, and prior evidence for H3K14ub involvement in H3K9 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27, C74-C76 present established knowledge supported by citations to prior literature and general scientific consensus. These provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "A parallel study by Shan et al. showed H3K14ub and the Clr4 UBR are critical for sequestration of Clr4 on H3K9M mutants mimicking oncogenic histone mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 cites independent corroborating evidence from a parallel study, strengthening the conclusions about UBR functional importance.",
+    "result_type": "MINOR"
+  }
+]

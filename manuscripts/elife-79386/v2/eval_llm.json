@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Upon IAA-mediated RAD21 degradation in RAD21mAC cells, SA1 and SA2 proteins are retained on chromatin at reduced levels (22% and 63% reduction respectively), while CTCF is modestly reduced (16%). This retention is surprising given that SA proteins are considered part of a stable cohesin complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are supported by quantitative immunofluorescence measurements with statistically significant p-values (C2-C5). The experimental design using the auxin-inducible degron system is well-established (C1), and the interpretation (C6) is appropriately cautious. The differential effects on SA1 vs SA2 are consistently observed across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "SA proteins interact with CTCF and RAD21 in control cells with paralog-specific preferences (SA2 preferentially enriches RAD21, SA1 preferentially enriches CTCF). Upon RAD21 degradation, residual SA proteins retain CTCF interaction with enhanced SA1-CTCF binding, and approximately 20% of SA proteins remain chromatin-bound even in unperturbed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 are supported by co-immunoprecipitation experiments performed in both directions (SA IP and CTCF IP) and validated in multiple cell lines with orthogonal knockdown approaches (C12). The quantitative GFP-TRAP data (C13) provides additional biochemical support. The paralog-specific differences are consistently observed and align with published literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "STORM imaging reveals that CTCF, SA1, and SA2 form clusters in control cells with distinct spatial distributions (SA1 and CTCF show higher density and shorter inter-cluster distances than SA2). Upon RAD21 degradation, cluster density decreases (SA2 more affected than SA1) and clusters become more dispersed, but SA proteins and CTCF remain significantly co-localized compared to random distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 are supported by quantitative STORM imaging analysis using established methods (Ricci et al., 2015) with appropriate statistical comparisons including simulated random distributions as controls. The data were collected from two independent clones, providing biological replication. The nearest neighbor distance analyses are appropriately quantified with statistical significance reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "ChIP-seq analysis shows that RAD21 and SMC3 binding is dramatically lost upon IAA treatment, while residual SA1 and SA2 maintain substantial overlap with CTCF at sites characterized by active chromatin marks (H3K4me3, H3K27ac, phospho-S5 POLR2A) and enriched at TSSs, suggesting SA-CTCF interaction independent of cohesin is part of normal cohesin activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by ChIP-seq data from biological replicates with appropriate controls (IgG). The ChromHMM analysis provides orthogonal validation of chromatin state enrichments (C24). However, the interpretation in C25 that this represents a 'step in normal cohesin activity' is somewhat speculative, though reasonably supported by the data showing maintained binding at canonical sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Re-analysis of published Hi-C data shows that cohesin depletion causes loss of TAD structure and increased long-range contacts (LRCs) enriched for CTCF/active elements. SA-CTCF complexes remaining after RAD21 degradation are further enriched at these clustered LRCs, suggesting cohesin-independent SA may contribute to 3D organization of active chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are appropriately attributed to published work (Rao et al., 2017; Sofueva et al., 2013). The novel analysis (C29-C30) integrating ChIP-seq and Hi-C data is methodologically sound. However, the interpretation in C31 is speculative ('may itself contribute') and would benefit from additional functional validation. The enrichment analysis is appropriate but the causal role remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "SA proteins contain a conserved CES domain that mediates interactions with F/YXF-motif containing proteins. In RAD21-depleted cells, SA1 maintains and enhances interactions with F/YXF-motif proteins (CTCF, CHD6, MCM3, HNRNPUL2) independent of RAD21, while SA2 shows minimal interaction despite containing the CES domain, suggesting additional SA1-specific features stabilize these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 appropriately cite structural studies. The experimental validation (C35-C38) is supported by co-IP data in both control and IAA conditions. However, the inference that 'additional features in SA1' are responsible (C38) is reasonable but not directly demonstrated - alternative explanations such as differential post-translational modifications or conformational differences are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Mass spectrometry analysis of SA1 interactors in RAD21-depleted cells identified 136 high-confidence proteins (SA1\u0394Coh), with the majority (117/136) enriched upon RAD21 loss. These interactors are significantly enriched for RNA processing (FDR=3.62\u00d710\u207b\u00b3\u2079), RNA helicases (FDR=3.54\u00d710\u207b\u2070\u2078), RNA binding proteins (FDR=9.11\u00d710\u207b\u00b9\u00b9), ribosome biogenesis (FDR=2.20\u00d710\u207b\u00b3\u2070), and translation (p=1.64\u00d710\u207b\u2070\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 are supported by rigorous mass spectrometry analysis with three biological replicates, appropriate statistical thresholds (1.5-fold change, p<0.1), and validation by siRNA sensitivity. The STRING enrichment analysis uses appropriate statistical methods with genome-wide background. Eight high-ranking proteins were validated by orthogonal co-IP (C2d), strengthening confidence in the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Both SA1 and SA2 directly bind RNA as demonstrated by CLIP, and this RNA binding is maintained in RAD21-depleted cells in proportion to residual SA protein levels, demonstrating that cohesin is not required for SA-RNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by CLIP experiments with appropriate controls (\u00b1UV, \u00b1PNK, RNase titration, siRNA knockdown). The proportionality of RNA binding to protein levels after RAD21 depletion (C49) provides strong evidence for cohesin-independent RNA binding. Multiple technical controls strengthen confidence in the specificity of the RNA-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SA1 localizes to R-loops as evidenced by: (1) RNaseH overexpression reduces both S9.6 and SA1 signals (38% and 29% reduction respectively), (2) SA1 knockdown increases S9.6 signal (32% increase), and (3) STORM imaging shows SA1 enrichment within S9.6 domains after RAD21 degradation (ratio 1.24, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by multiple complementary approaches (IF, STORM) with appropriate statistical analysis. The correlation between SA1 and R-loop levels is demonstrated bidirectionally (RNaseH overexpression and SA1 knockdown). The STORM analysis (C53) provides high-resolution spatial evidence. However, the lack of significant S9.6 change by IF upon IAA treatment (noted in supplement) suggests some technical variability in R-loop detection methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The SA1\u0394Coh interactome is highly enriched for R-loop-associated proteins from published datasets (FDR=1.1\u00d710\u207b\u00b9\u2075 to 7.7\u00d710\u207b\u00b9\u2079), and S9.6 co-immunoprecipitation confirms that both SA1 and SA2 interact with R-loops along with known R-loop proteins (AQR, DHX9, RNase H2, MCM3, POLR2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by appropriate statistical analysis (hypergeometric distribution) comparing with published R-loop interactomes and validated by S9.6 co-IP with RNaseH treatment controls. The specificity is demonstrated by proportional reduction of SA1 co-IP with RNaseH treatment. The convergence of computational and experimental approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "DRIP-seq identified 50,338 RNaseH-sensitive R-loop sites that are also sensitive to RAD21 degradation (16.8% reduction). Two distinct regimes exist: (1) R-loops directly overlapping with SA/RAD21/CTCF at genes, sensitive to RAD21 loss, and (2) R-loops with adjacent SA binding in repressed chromatin, insensitive to RAD21 loss and actually enriched after depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by DRIP-seq with appropriate RNaseH controls and integration with ChIP-seq data. The identification of two distinct regimes is supported by ChromHMM analysis showing different chromatin state enrichments. However, the functional significance of these two regimes and the mechanism underlying the differential RAD21 sensitivity require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Cohesin reloading experiments show that NIPBL knockdown reduces RAD21 reloading to 58% of control (not statistically significant, p=0.33), while SA knockdown reduces reloading to 37% (p=0.002). Combined NIPBL+SA knockdown further reduces reloading (p=0.001), and SA1 knockdown has a stronger effect than SA2 knockdown, indicating SA proteins, particularly SA1, play a critical role in cohesin loading complementary to NIPBL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C68 present important findings but have statistical concerns. The NIPBL knockdown effect (C63) is not statistically significant (p=0.33), which undermines the conclusion of 'NIPBL-independent loading' - this could simply reflect incomplete knockdown or insufficient statistical power. The SA knockdown effects (C65-C66) are statistically significant and supported by both population and single-cell analyses. However, the interpretation requires caution as the residual loading could reflect incomplete knockdown rather than truly independent pathways. Additional experiments with more complete depletion or rescue experiments would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Transcription inhibition with Triptolide does not affect cohesin reloading, indicating RNA is not required for reloading per se. However, nascent RNA levels increase upon RAD21 degradation and return to normal upon reloading, and this increase is abolished by SA1 knockdown, suggesting SA1 stabilizes nascent RNA in the absence of cohesin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by EU incorporation assays measuring nascent RNA with appropriate controls. The dissociation between RNA levels and reloading efficiency (C69) is clearly demonstrated. The SA1-dependent stabilization of nascent RNA (C71-C72) is supported by the loss of the IAA-induced increase upon SA1 knockdown. However, the mechanism of this stabilization and its biological significance remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "STORM imaging shows that RAD21 is depleted from S9.6 domains in control conditions (ratio 0.95) but becomes significantly enriched in S9.6 domains upon reloading after IAA washoff (ratio 1.19, p=0.029), and this enrichment is sensitive to RNaseH treatment (ratio 0.98), suggesting SA1 mediates cohesin reloading at R-loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by quantitative STORM imaging with appropriate statistical analysis. The RNaseH sensitivity (C75) provides strong evidence for R-loop dependence. However, the interpretation in C76 that 'SA1 mediates reloading at R-loops' is somewhat inferential - while the spatial correlation is clear, direct mechanistic evidence for SA1's role in targeting cohesin to R-loops during reloading would require additional experiments such as SA1 knockdown during reloading combined with STORM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "VAST-tools analysis of RNA-seq data reveals conserved alternative splicing of C-terminal exons in SA proteins (exon 31 in SA1, exon 32 in SA2). SA1 predominantly includes exon 31 (PSI 97.7%), while SA2 predominantly excludes exon 32 (PSI 20.4%), confirmed by exon-specific esiRNA knockdown showing 85% SA1 reduction with e31 targeting but only 2% SA2 reduction with e32 targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by comprehensive RNA-seq analysis across multiple datasets (human and mouse) and validated by functional esiRNA experiments. The PSI values are consistent across datasets, and the esiRNA validation provides strong confirmation that the dominant SA2 isoform lacks exon 32. The conservation across species suggests functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The alternatively spliced exons encode highly basic domains (pI=10.4 for e31, pI=9.9 for e32) within otherwise acidic C-termini, conserved between paralogs. CLIP experiments show that while exon 32 does not affect SA2's RNA binding, SA2 containing exon 32 enriches RBPs of ~110-140 kDa molecular weight, suggesting the basic exon stabilizes SA-RBP interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by sequence analysis and pI calculations. The CLIP experiments (C84-C86) provide functional evidence, though the inference about stabilization (C86) is based on enrichment of specific molecular weight bands rather than direct binding measurements. Mass spectrometry identification of these RBPs (addressed in C89) strengthens this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Mass spectrometry comparison of SA2 isoforms shows that SA2\u0394e32 is enriched for post-translational modification proteins (FDR=0.0234), while SA2e32+ is enriched for RNA binding proteins (FDR=3.43\u00d710\u207b\u2075) including YTHDC1, YTHDF3, DIS3, and POLR2B (~110-140 kDa). S9.6 co-IP shows SA2e32+ is more enriched at R-loops than SA2\u0394e32 (1.8-fold vs 1.24-fold), supporting a role for the basic exon in stabilizing RBP and R-loop interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by rigorous mass spectrometry with three biological replicates and appropriate statistical analysis. The molecular weight correspondence between enriched RBPs and the CLIP bands strengthens confidence. The S9.6 co-IP provides orthogonal validation. However, the fold-enrichment differences are modest (1.8 vs 1.24), and the functional consequences of these differential interactions remain to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors propose that SA proteins have previously unappreciated roles in post-transcriptional gene regulation, are required for cohesin loading in NIPBL-deficient cells, and that SA1 uses R-loop platforms to link cohesin loading with diverse chromatin functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent the authors' interpretative framework and proposed model. While C39 and C93 are reasonably supported by the experimental data (RNA/DNA binding and reloading experiments), they represent synthetic conclusions. C92 and C94 are more speculative - the 'previously unappreciated role in post-transcriptional regulation' is inferred from the interactome but lacks direct functional evidence of effects on RNA processing, stability, or translation. The model in C94 is a reasonable synthesis but remains to be mechanistically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The introduction establishes the biological context by citing published work on cohesin's role in development and cancer, SA protein functions in yeast and mammalian systems, DNA structure recognition, and R-loop biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C108 appropriately cite published literature to establish context. These are background claims that frame the study's rationale. The citations appear appropriate and the statements accurately represent the cited work based on the references provided. These claims establish the foundation for the novel findings but are not themselves novel results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "NK cells eliminate disseminated tumor cells from the lung within 24 hours of arrival but not thereafter. Bioluminescence imaging shows that \u03b1AGM1 antibody depletes >97% of NK cells and prevents the rapid decrease in tumor cell numbers observed in control mice. After 24 hours, tumor cells begin proliferating with similar doubling times (~1 day) in both control and NK-depleted mice, indicating NK cells act primarily in the acute phase (<24 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C13, C16-C21 collectively demonstrate NK cell-mediated tumor elimination within 24 hours using bioluminescence imaging with appropriate controls (\u03b1AGM1 depletion). The biphasic elimination kinetics, flow cytometry confirmation of NK depletion, and quantitative analysis of tumor growth rates provide converging evidence. The conclusion that NK cells act primarily in the acute phase is well-supported by the data showing no difference in tumor proliferation rates after 24 hours.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C67",
+      "C68"
+    ],
+    "result": "The effectiveness of NK cell-mediated tumor killing decreases dramatically after 24 hours. In the first 4 hours, 47% of NK-tumor cell contacts result in Ca2+ influx (a marker of cell death), but this drops to nearly 0% after 24 hours. This correlates with decreased ERK activation in NK cells (from 68% to 8%) and loss of the activating ligand Necl5 from tumor cell surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C46-C48, C67-C68 provide strong evidence for time-dependent loss of NK cell effectiveness through multiple complementary measurements: Ca2+ influx in tumor cells (C46), ERK activation in NK cells (C4, C67), and Necl5 expression on tumor cells (C5, C47). The use of Necl5/Nectin2 knockout cells (C47) provides mechanistic validation. The temporal correlation between these three independent measurements strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "More than 95% of pulmonary NK cells are located in the vasculature, where they exhibit dynamic crawling behavior on endothelial cells. NK cells stall, crawl for a median of 2.5 minutes, then jump back into blood flow. This adhesion is mediated at least partially by LFA-1, as blocking antibodies reduce NK cell numbers on endothelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29-C34 are well-supported by flow cytometry with intravascular staining (C6, C29) and intravital two-photon microscopy (C30-C31). The LFA-1 dependence is demonstrated through antibody blocking experiments with appropriate controls (\u03b1Mac-1 as negative control, C33). The quantitative analysis of crawling duration (C31) provides precise characterization of NK cell behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "NK cell migration in pulmonary capillaries is sub-diffusive (\u03b1<1) and is altered by the presence of tumor cells. In the presence of tumors, NK cells move more slowly (4.8 vs 7.8 \u03bcm/min) and crawl for longer durations (median 30 vs 5 min). Based on quantitative parameters, a lodged tumor cell is contacted by flowing NK cells every ~10 minutes and by crawling NK cells every ~2 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by rigorous quantitative analysis of NK cell trajectories using mean square displacement analysis (C35-C36) and direct measurements of speed and duration (C37-C38). The calculation of contact frequencies (C40-C41) is based on measured parameters and physiological data compiled in Table 1. The observation that NK cells slow down even in regions without physical obstruction (C39) strengthens the inference of global endothelial activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Crawling NK cells are primarily responsible for tumor cell killing. Ca2+ influx (a marker of impending cell death) occurs in 47% of NK-tumor contacts with a median lag of 6 minutes, and 98% of cells with Ca2+ influx die by apoptosis. Crawling NK cells account for 77% of Ca2+ influx events. Blocking LFA-1 to prevent NK cell crawling markedly reduces tumor elimination both acutely (<24 hr) and long-term (10 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46, C49-C51 provide strong evidence through multiple complementary approaches: FRET-based caspase-3 imaging (C42-C43), Ca2+ imaging with GCaMP6s (C44-C46), classification of NK cell types (C49), and functional validation with LFA-1 blocking (C50-C51). The high correlation between Ca2+ influx and cell death (C44) validates Ca2+ as a surrogate marker. The LFA-1 blocking experiment provides causal evidence for the importance of crawling NK cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ERK activation in NK cells is required for tumor cell killing and is mediated by DNAM-1 engagement. ERK activation correlates with tumor cell apoptosis (47% of ERK-activated NK cells induce apoptosis vs 0% for non-activated), and MEK inhibition suppresses NK-mediated killing. In vivo, ERK activation precedes Ca2+ influx in tumor cells by a median of 4 minutes, and Ca2+ influx is only observed when NK cells show ERK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58, C62-C66 are well-supported by in vitro experiments with FRET-based ERK biosensors (C53-C55), pharmacological inhibition (C56), DNAM-1 sorting experiments (C57-C58), and in vivo simultaneous imaging of ERK and Ca2+ (C62-C65). The temporal sequence (ERK activation \u2192 Ca2+ influx \u2192 cell death) and the absolute requirement for ERK activation (C65) provide strong mechanistic evidence. However, the MEK inhibitor experiments (C56, C60-C61) have limitations as the inhibitor may affect other cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Tumor cells evade NK surveillance through thrombin-mediated shedding of Necl5. Cell surface Necl5 decreases markedly by 24 hours after tumor cell arrival in the lung. Anticoagulants (warfarin, edoxaban, dabigatran) that inhibit thrombin activity prevent Necl5 loss and enhance tumor elimination in an NK cell-dependent manner. Thrombin directly cleaves Necl5 in vitro, and dabigatran suppresses this cleavage in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C81 provide strong mechanistic evidence through multiple approaches: flow cytometry showing Necl5 loss (C72), fluorescent reporter showing extracellular domain loss (C73), functional rescue with anticoagulants (C74-C77), in vitro thrombin cleavage (C78), and in vivo validation (C79-C80). The observation that anticoagulants have no effect in NK-depleted mice (C76-C77) provides critical evidence that the mechanism operates through NK cells. The convergence of in vitro and in vivo data strongly supports the thrombin-Necl5 shedding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C27",
+      "C28"
+    ],
+    "result": "NK cell-mediated elimination of tumor cells operates across multiple tumor models and is independent of T cell immunity. The NK-dependent acute elimination is observed in melanoma-burdened mice, multiple tumor cell lines (BrafV600E melanoma, MC-38, 4T1), and in nude mice lacking T cells. In spontaneous metastasis models, NK depletion increases lung metastasis without affecting primary tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C27-C28 demonstrate the generalizability of NK-mediated tumor elimination across different experimental conditions. The use of multiple tumor cell lines (C23), tumor-bearing mice (C22), nude mice (C27), and spontaneous metastasis models (C28) provides strong evidence that this is a general phenomenon. The observation that NK depletion affects metastasis but not primary tumor growth (C28) is particularly important for understanding the specific role of NK cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C85",
+      "C86"
+    ],
+    "result": "Depletion of other immune cell types (basophils, monocytes, neutrophils, myeloid cells) does not affect the rapid elimination of disseminated tumor cells within 24 hours, indicating that NK cells are the primary effector cells in the acute phase of metastasis prevention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C85-C86 provide important negative controls demonstrating the specificity of NK cell involvement. The systematic depletion of other immune cell populations with appropriate antibodies and reagents (\u03b1CD200R3, clodronate liposomes, \u03b1Ly-6G) strengthens the conclusion that NK cells are the primary mediators. However, the authors note that depletion was not complete for some cell types, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "MEK inhibition attenuates tumor elimination within 24 hours and increases lung metastasis, with no additive effect in NK-depleted mice, suggesting that ERK signaling in NK cells contributes to tumor elimination in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 show that MEK inhibition reduces tumor elimination and that this effect is not additive with NK depletion, suggesting the MEK inhibitor acts through NK cells. However, the interpretation is limited because the MEK inhibitor is not cell-type specific and could affect tumor cells, endothelial cells, or other cell types. The lack of additivity with NK depletion (C61) provides some support but is not definitive proof that the effect is NK cell-specific. Additional experiments with NK cell-specific MEK deletion would be needed to confirm this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The role of DNAM-1-Necl5 interaction in NK-mediated tumor rejection is complex and context-dependent. While DNAM-1+ NK cells show stronger ERK activation and killing in vitro, and DNAM-1 serves as an adhesion molecule that may bias crawling NK cells toward DNAM-1+ cells, DNAM-1-Necl5 interaction is not the only mechanism of B16F10 rejection. The discrepancy between in vitro and in vivo results may be explained by missing-self recognition, NK cell education, and the role of other receptors (TIGIT, CD96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C91-C107 provide a nuanced discussion of the DNAM-1-Necl5 pathway supported by extensive citations to prior work (C91, C93, C94, C96-C106) and the authors' own data (C59, C92, C107). The authors appropriately acknowledge the complexity and cite multiple studies showing context-dependent effects (C96-C99). The discussion of receptor affinities (C102-C104) and NK cell education (C105-C106) provides plausible explanations for the observed discrepancies. The inference that Necl5/Nectin2 knockout cells are eliminated by an NK cell-dependent but Ca2+ influx-independent mechanism (C107) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "In the initial phase (<180 min), there are at least two mechanisms eliminating melanoma cells from the lung: a rapid NK-independent mechanism (<20 min) possibly involving blood flow or shear stress, and a slower NK-dependent mechanism (>20 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by the biphasic elimination kinetics observed in bioluminescence imaging (Figure 1A). The rapid initial phase occurs in both control and NK-depleted mice, while the slower phase is NK-dependent. However, the proposed mechanism for the rapid phase (blood flow/shear stress, C15) is speculative and not directly tested. The inference of two mechanisms (C14) is reasonable given the kinetic data, but the nature of the NK-independent mechanism remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Quantitative analysis shows that 2.4 million NK cells in the lung outnumber the 0.5 million melanoma cells injected into circulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by the detailed quantitative analysis presented in Table 1, which combines imaging data with physiological parameters from the literature. The calculation of total NK cell numbers in the lung is based on measured NK cell density and lung volume. However, the authors note that their estimate (2.4 million) is higher than previous reports (0.2-1 million), which they attribute to better recovery methods. This discrepancy should be noted but does not invalidate the conclusion that NK cells outnumber tumor cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Microthrombi around disseminated tumor cells are rarely observed, suggesting that platelets may promote metastasis by serving as a platform for thrombin activation rather than by physically protecting tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are based on intravital imaging showing rare microthrombi formation (C82, Figure 6\u2014figure supplement 2). The inference that platelets act through thrombin activation rather than physical protection (C83) is reasonable given the rarity of microthrombi and the strong effect of anticoagulants. However, this is somewhat speculative as the authors did not directly test platelet function or perform platelet depletion experiments. The mechanism by which platelets promote thrombin activation in this context is not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The principal role of NK cells in preventing lung metastasis is to destroy tumor cells shortly after their arrival in the pulmonary vasculature, primarily through crawling NK cells that are as efficient as CAR T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C86-C88 synthesize the major findings of the study. The conclusion that NK cells act primarily in the acute phase (C84, C86) is well-supported by the bioluminescence imaging data. The comparison to CAR T cells (C87) is based on the ~50% killing efficiency and a citation to Cazaux et al., 2019, which is reasonable but should be interpreted cautiously as the experimental systems differ. The conclusion that crawling NK cells are primarily responsible (C88) is supported by the data showing 77% of Ca2+ influx events are from crawling cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "LFA-1 engagement of ICAM on pulmonary endothelial cells likely contributes to NK cell pre-activation, and the slow migration speed of NK cells in the presence of tumor cells may indicate increased activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C90 are speculative interpretations based on known biology of LFA-1 (cited from Mace et al., 2009) and the observed decrease in NK cell migration speed. While the reasoning is plausible, these claims are not directly tested. The authors do not measure NK cell activation markers or cytoskeletal reorganization in vivo. The inference that slower migration indicates activation (C90) is reasonable but could have alternative explanations (e.g., increased adhesion, altered endothelial surface). These interpretations should be considered hypotheses for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Necl5 on tumor cells is a 'double-edged sword' that facilitates adhesion to lung capillaries but also invokes NK cell attack. Tumor cells evade NK surveillance by using thrombin to shed Necl5 within 24 hours after adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 provide a conceptual framework for understanding the temporal dynamics of NK-tumor interactions. The dual role of Necl5 in adhesion and NK activation (C111) is supported by citations to previous work (Takai et al., 2008) and the authors' data showing Necl5-dependent NK activation. The conclusion that tumor cells use thrombin to shed Necl5 (C112) is well-supported by the data on Necl5 loss, thrombin cleavage, and anticoagulant effects. This represents a novel mechanistic insight into tumor immune evasion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114"
+    ],
+    "result": "Prior work has established that NK cells in the lung may be hypofunctional, that inhibition of coagulation suppresses metastasis partly through NK cells, that ligand shedding is a mechanism of NK evasion for NKG2D, and that NK cell numbers correlate with patient outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C108-C110, C113-C114 accurately summarize relevant prior work with appropriate citations. These claims provide important context for the current study. The authors correctly cite previous studies showing lung NK cells may be hypofunctional (C8), the anti-metastatic effects of anticoagulants (C9-C10), ligand shedding for NKG2D (C108-C110), and clinical correlations (C113-C114). These claims are well-supported by the cited literature and provide appropriate background for the study.",
+    "result_type": "MINOR"
+  }
+]

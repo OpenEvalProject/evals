@@ -1,0 +1,2258 @@
+{
+  "submission": {
+    "id": "0e5c1425-dbfb-4007-b90d-4a15815ad226",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:03:11.298634Z",
+    "updated_at": "2025-12-03T17:03:11.298634Z"
+  },
+  "content": [
+    {
+      "id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "submission_id": "0e5c1425-dbfb-4007-b90d-4a15815ad226",
+      "content_type": "manuscript",
+      "content_text": "# Spatiotemporal properties of glutamate input support direction selectivity in the dendrites of retinal starburst amacrine cells\n\n## Authors\n\n- Prerna Srivastava<sup>1</sup> ([ORCID: 0000-0002-3429-7039](https://orcid.org/0000-0002-3429-7039))\n- Geoff de Rosenroll<sup>1</sup> ([ORCID: 0000-0002-5431-2814](https://orcid.org/0000-0002-5431-2814))\n- Akihiro Matsumoto<sup>2</sup>\n- Tracy Michaels<sup>1</sup>\n- Zachary Turple<sup>1</sup>\n- Varsha Jain<sup>1</sup>\n- Santhosh Sethuramanujam<sup>1</sup>\n- Benjamin L Murphy-Baum<sup>1</sup> ([ORCID: 0000-0001-6746-3091](https://orcid.org/0000-0001-6746-3091))\n- Keisuke Yonehara<sup>2</sup>\n- Gautam Bhagwan Awatramani<sup>1</sup> ([ORCID: 0000-0002-0610-5271](https://orcid.org/0000-0002-0610-5271)) \u2020\n\n### Affiliations\n\n1. Department of Biology, University of Victoria Victoria Canada ([ROR:04s5mat29](https://ror.org/04s5mat29))\n2. Danish Research Institute of Translational Neuroscience, Nordic-EMBL Partnership for Molecular Medicine, Department of Biomedicine, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe asymmetric summation of kinetically distinct glutamate inputs across the dendrites of retinal \u2018starburst\u2019 amacrine cells is one of the several mechanisms that have been proposed to underlie their direction-selective properties, but experimentally verifying input kinetics has been a challenge. Here, we used two-photon glutamate sensor (iGluSnFR) imaging to directly measure the input kinetics across individual starburst dendrites. We found that signals measured from proximal dendrites were relatively sustained compared to those measured from distal dendrites. These differences were observed across a range of stimulus sizes and appeared to be shaped mainly by excitatory rather than inhibitory network interactions. Temporal deconvolution analysis suggests that the steady-state vesicle release rate was ~3 times larger at proximal sites compared to distal sites. Using a connectomics-inspired computational model, we demonstrate that input kinetics play an important role in shaping direction selectivity at low stimulus velocities. Taken together, these results provide direct support for the \u2018space-time wiring\u2019 model for direction selectivity.\n\n## Introduction\n\nThe radiating dendrites of retinal GABAergic/cholinergic \u2018starburst\u2019 amacrine cells (starbursts) are the first points in the visual system to exhibit direction selectivity (Euler et al., 2002). Object motion away from the soma generates large calcium responses in distal starburst dendrites, from where they release GABA and acetylcholine (ACh). By contrast, motion toward the soma evokes weak responses. Starbursts play a critical role in shaping direction-selective (DS) responses of downstream ganglion cells (DSGCs), and thus, understanding how they compute direction is of principal interest. Decades of intense investigations have identified several mechanisms that underlie direction selectivity in starburst dendrites, although no single mechanism alone may be critically required (Ding et al., 2016; Hausselt et al., 2007; Kim et al., 2014; Hanson et al., 2019; reviewed by Murphy-Baum et al., 2021). A model that has garnered recent attention relies on the kinetic properties of distinct sources of glutamatergic input, which is referred to as the \u2018space-time wiring\u2019 model for direction selectivity (Greene et al., 2016; Kim et al., 2014). In this study, we sought to evaluate the kinetics of glutamatergic input to the ON starburst dendrites to understand their role in generating direction selectivity.\n\nThe space-time wiring model for direction selectivity is inspired by connectomic analysis in the mouse retina showing that the proximal and distal dendritic regions of ON and OFF type starburst amacrine cells receive synaptic inputs from anatomically distinct types of glutamatergic bipolar cells (BCs) (Greene et al., 2016; Kim et al., 2014). As the axon terminals of these BCs stratify at distinct depths within the inner plexiform layer (IPL; Ding et al., 2016; Greene et al., 2016; Kim et al., 2014)\u2014and in general BC axonal stratification patterns are linked to their kinetic properties (Awatramani and Slaughter, 2000; Baden et al., 2016; Franke et al., 2017; Gaynes et al., 2022; Strauss et al., 2022)\u2014it has been hypothesized that different types of BCs contacting proximal and distal starburst dendrites have distinct response kinetics (Greene et al., 2016; Kim et al., 2014). Specifically, it is predicted that proximal inputs near the starburst soma are mediated by BC types that support tonic patterns of glutamate release, while distal inputs are mediated by BC types that release their vesicles more transiently. This arrangement would result in an optimal input summation along starburst dendrites during centrifugal (soma-to-dendrite) motion, as experimentally noted.\n\nThe space-time wiring model for direction selectivity is algorithmically similar to classic correlation-type motion detectors described elsewhere in the visual system in both rodents and primates (Lien and Scanziani, 2018; De Valois and Cottaris, 1998), as well as the fly optic lobe (Haag et al., 2016; Leong et al., 2016; Behnia et al., 2014), and thus appears to reflect a core computational principle. While it is an attractive model for direction selectivity, there is scant evidence that the kinetics of glutamatergic input varies along the length of starburst dendrites. Direct electrophysiological measurements revealed that BC5s (including types 5i, o, and t) and BC7, which make \u2018ribbon\u2019 synapses predominantly on the distal and proximal dendrites of ON starbursts, respectively, have similar temporal properties (Ichinose et al., 2014). Regional differences in input kinetics were noted when BC output was measured postsynaptically using voltage-clamp techniques (Fransen and Borghuis, 2017; but see Stincic et al., 2016). However, these electrophysiological recordings do not provide precise information regarding the anatomical location of synaptic inputs.\n\nTo this end, genetically encoded fluorescent glutamate sensors (iGluSnFRs) have provided an alternate way to measure BC output kinetics (Borghuis et al., 2013; Marvin et al., 2013; Yonehara et al., 2013). However, recent imaging studies have found that most BCs of the same polarity (including the BC5s and BC7 types) have similar temporal properties, at least to spatially restricted stimuli that are relevant to local starburst dendritic computations (Franke et al., 2017; Strauss et al., 2022). Finally, optogenetic studies have demonstrated that direction selectivity remains intact under conditions in which all BC input to starbursts is pharmacologically blocked and the starburst network is directly stimulated in relative isolation (Hanson et al., 2019; Sethuramanujam et al., 2016). Taken together, previous results provide little support for the space-time wiring model for direction selectivity.\n\nIn the present study, we identify specific stimulus conditions under which stark kinetic differences can be observed in proximal and distal BC inputs. We did so by directly monitoring input kinetics across starburst dendrites using iGluSnFRs selectively expressed in these cells, across a range of stimuli and pharmacological conditions. We used temporal deconvolution to estimate vesicle release dynamics, and in a connectomics-inspired computational model, we tested how the specific spatial distributions of kinetically distinct glutamatergic inputs impact direction selectivity. We found that diverse BC kinetics play a role in shaping direction selectivity mainly in the context of relatively large objects, which move slowly across starburst\u2019s receptive field.\n\n## Results\n\n### Temporal diversity of glutamate responses along single starburst dendrites\n\nWe injected AAVs containing flex-iGluSnFR intravitreally into ChAT-Cre-expressing mice. In a few cases, we observed a strong but sparse expression of iGluSnFR in ON-type starburst cells (Figure 1A). This provided a unique opportunity to visualize glutamate response kinetics across the length of individual dendrites (Figure 1B). Signals from dendritic regions proximal to the starburst soma were captured in a different optical plane than the more distal dendrites, which are ~5 \u03bcm apart (Ding et al., 2016; Greene et al., 2016). Spots of light (200 \u03bcm in diameter) centered on the imaging field evoked robust iGluSnFR signals throughout the first ~60\u201380 \u03bcm section of starburst dendrites, where glutamatergic BCs are known to make synapses (Ding et al., 2016; Greene et al., 2016). The peak amplitudes of the iGluSnFR signals measured over small regions of interest (ROIs; 5\u00d75 \u03bcm2) were relatively stable across the length of single starburst dendrites (Figure 1C). However, the magnitude of the sustained phase significantly decreased as a function of distance (Figure 1C; \u0394F/F=0.80\u00b10.29 at proximal sites; \u0394F/F=0.29\u00b10.16 at distal sites, measured in 20 dendrites in 4 retinas from 4 mice; *p<0.001, t-test). As a result, the sustained/transient index (STi) computed from the plateau/peak ratio, systematically decreased with distance from the soma (Figure 1D; STi=0.33\u00b10.06 for proximal, 0.16\u00b10.05 for distal ROIs; *p<0.001, t-test) (Note, STi=0 indicates a purely transient response with no plateau phase, and STi=1 indicates a purely sustained response where peak and plateau phases are equal). Taken together, these results provide the first piece of direct evidence that the kinetics of glutamatergic input varies along starburst dendrites, supporting the \u2018space-time\u2019 wiring model for direction selectivity (Kim et al., 2014; Greene et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig1-v2.jpg)\n\n**Figure 1.:** (A) Two-photon z-stack image (left) of a single ON starburst amacrine cell expressing iGluSnFR. Changes in iGluSnFR fluorescence evoked by a 200-\u03bcm spot were measured across the single starburst dendrite (yellow box; left). Proximal and distal responses were captured in separate focal planes, and the resulting images were stitched together (right; the vertical white line separates the two planes). (B) Examples of time-varying iGluSnFR signals (\u0394F/F) (average; two trials) measured in small dendritic regions of interest (5\u00d75 \u03bcm2 ROIs; shown in (A)). The responses and ROIs are color-coded according to their sustained/transient indices (STis; color scale bar shown in (A)). The STis (mean; two trials) are indicated above each trace. (C) The amplitudes of the peak and plateau iGluSnFR responses are plotted as a function of radial distance from the soma. Each point indicates the value obtained from an individual ROI averaged over two trials; ROIs on the same dendrite share the same color (n=66 ROIs from 20 dendrites/4 retinas/4 mice). (D) STis computed from (C) plotted as a function of radial distance from the soma. ROI, region of interest.\n\nIn most experiments, iGluSnFR expression was more widespread across the starburst population. Individual dendrites leaving the starburst soma were easily visible, but as they dove deeper into the IPL, they merged with dendrites from other starbursts to form the intricate \u2018honeycomb\u2019 mesh that is characteristic of these cholinergic cells. By taking care to lay the retina down flat in the recording chamber, we were able to measure responses from proximal and distal starburst dendrites in separate imaging planes (Figure 2A). We found that STis were significantly lower in imaging planes that captured distal dendrites (STi=0.21\u00b10.07; \u03bc\u00b1s.d.); compared to those that captured proximal dendritic responses (STi=0.34\u00b10.07; \u03bc\u00b1s.d.) (n=242 proximal ROIs; n=563 distal ROIs; 8 retinas from 8 mice; 10 FOVs; *p<0.001, t-test; Figure 2A\u2013C), verifying our initial findings on a larger population level. The STi for individual ROIs measured across the population was independent of response amplitude, indicating that the estimated differences in signal kinetics are not strongly compromised by signal-to-noise and/or sensor saturation issues (Figure 3\u2014figure supplement 1). In addition, we also found that the latencies and rise times for responses measured at proximal and distal sites were similar (Figure 2D and E), indicating that the small differences in axonal path lengths between proximal and distal BCs do not result in significant transmission delays, as previously envisioned (Kim et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig2-v2.jpg)\n\n**Figure 2.:** (A) In the left scan field, proximal dendrites arising from the starburst soma expressing iGluSnFR can be visualized in relative isolation. Images that were taken ~5 \u03bcm deeper in the retina (right) reveal the dense \u2018honeycomb\u2019 structure formed by distal starburst dendrites. (B) Example iGluSnFR responses evoked by 200 \u03bcm static spot extracted for a few ROIs numbered in (A) with their STis indicated on the top. Yellow bands indicate stimulus duration. Black, mean responses; gray, \u00b1 s.e.m. of two trials. (C\u2013E) Distribution of STis (C), 80\u201320% rise times (D) and latencies (E) in the proximal and distal field of views (FOVs) of the individual (gray) and average (black) ROIs from different recordings (n=10 FOVs, 8 retinas, *p<0.001; t-test). ROI, region of interest; STi, sustained/transient index.\n\nAnatomical studies show that inputs to proximal starburst dendrites originate mainly from BC7s, while inputs to distal dendrites arise from BC5s (including types BC5i, o, and t; Greene et al., 2016; Ding et al., 2016), indicating that the kinetic differences of iGluSnFR responses may reflect the properties of distinct BC types. By using an AAV-8BP/2 vector containing a CAG promotor, we directly monitored glutamate release at BC7s axon terminals (Matsumoto et al., 2021; Figure 3). We identified axon terminals of BC7s based on the depth of ON starburst cell dendrites that were genetically labeled by tdTomato (Matsumoto et al., 2021). We found that iGluSnFR responses at BC7 terminals were sustained, regardless of their peak amplitude (Figure 3\u2014figure supplement 1). The most appreciable changes in iGluSnFR fluorescence occurred at the axon terminals, suggesting that the sensor signals reflect the vesicle release dynamics of individual BC7s (James et al., 2019). While these results lend support to the idea that BC7s are the source of sustained proximal input, we were unable to express the sensor in BC5s and could not directly confirm that these were the sources of transient signals observed in distal starburst dendrites.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cross-section of an image stack showing iGluSnFR labelled BC7 (left). The intensity profiles of the BC terminals labeled with iGluSnFR (gray), and starburst dendrites labeled with tdTomato (black) across the inner plexiform layer (IPL) show that BC terminals co-stratify with dendrites of ON starbursts (right). (B) iGluSnFR expression in BC7 terminals (top) imaged at the same depth as the proximal ON starburst dendrites labeled with tdTomato (bottom). (C) Light-evoked glutamate signals (right) extracted from three ROIs shown in (B) (left). The gray band indicates the stimulus duration. (D) Heat maps of the STis for all identified ROIs. (E) A histogram of STis for the light-evoked responses for all ROIs. Top, mean (circle), and s.d. (horizontal bar) of the STis. BC, bipolar cell; ROI, region of interest; STi, sustained/transient index.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Plateau/peak (STi) versus peak amplitude (\u0394F/F) for individual ROIs (gray circles, average from two trials) extracted from both proximal and distal field of views (FOVs) (n=313 proximal; 994 distal ROIs). (B) Same as (A) but for type 7 BCs. BC, bipolar cell; ROI, region of interest.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Average waveform of iGluSnFR responses to Gaussian white noise measured in the proximal (orange) or distal (blue) dendritic regions of starbursts. Shading indicates \u00b1 s.e.m. (B) Event-triggered average stimulus waveform, which represents the BCs\u2019 preferred stimulus, is shown for proximal and distal regions. Shading indicates \u00b1 s.e.m. (C) The intensity profile of the 20 Hz Gaussian white noise stimulus. (D) The iGluSnFR response to the stimulus in (C). (E) Model iGluSnFR response obtained by convolving stimulus with linear filter shown in (B). (F, G) Distributions of biphasic peak (F) and area (G) index for different ROIs in the proximal and distal regions (n=120 proximal; 218 distal ROIs). BC, bipolar cell; ROI, region of interest.\n\nWhen white-noise stimuli were used to characterize the temporal properties of BCs using reverse-correlation techniques, we failed to observe significant kinetic differences in proximal and distal iGluSnFR responses. We found the input impulse responses were biphasic for both proximal and distal inputs (Figure 3\u2014figure supplement 2). Thus, the probability of glutamate release from BC terminals appears to be transiently depressed, following a burst of vesicle release, during continuous stimulus regimes. Similar biphasic kernels have been observed in recent imaging studies (Franke et al., 2017; Strauss et al., 2022). As the biphasic nature of the distal\u2014but not proximal\u2014input is critical to the success of models generating direction selectivity (Kim et al., 2014; Fransen and Borghuis, 2017), we conclude that under conditions where the circuit is continually stimulated at high frequencies, input kinetics are unlikely to play a role in shaping direction selectivity in starburst dendrites.\n\n### BC output kinetic differences are shaped largely by excitatory network mechanisms\n\nNext, to investigate whether cell-intrinsic or network mechanisms shape BC kinetics, we examined how iGluSnFR responses were affected by stimulus size. Increasing the spot diameter systematically decreased the peak amplitude of BC responses, indicative of the recruitment of the inhibitory surround (Figure 4A; Franke et al., 2017). Importantly, the distinction in the kinetics of proximal and distal inputs remained clear across stimulus sizes, although they were generally more pronounced for stimuli that were >200 \u03bcm (Figure 4B\u2013E, control; n=71 proximal and 431 distal ROIs, 5 FOVs, 4 retinas from 4 mice; *p<0.001, Kolmogorov-Smirnov test). Indeed, the application of a cocktail of antagonists containing both GABA and ionotropic glutamate receptor antagonists (5 \u00b5M gabazine and 100 \u00b5M TPMPA, 20 \u00b5M CNQX, respectively)\u2014which blocks inhibitory inputs from amacrine and horizontal cells\u2014augmented responses, especially those evoked by larger spots (Figure 4A). These effects reduced the overall STi as compared to control, but the kinetics of the iGluSnFR responses at proximal and distal ROIs remained distinct (Figure 4B\u2013E, drug cocktail; n=71 proximal and 431 distal ROIs, 5 FOVs, 4 retinas from 4 mice; *p<0.001, Kolmogorov-Smirnov test). Thus, while the inhibitory networks modulate BC responses, they do not appear to account for the sustained/transient differences observed here.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig4-v2.jpg)\n\n**Figure 4.:** (A) The average iGluSnFR signals were evoked by spots of different diameters (100\u2013800 \u03bcm). Responses were averaged across five proximal (orange) or distal (blue) FOVs. Responses measured under control (dark traces) conditions and in the presence of synaptic blockers (SR, TPMPA, and CNQX; light traces) are overlaid. Shading indicates \u00b1 s.e.m. (B\u2013E) Cumulative distributions of STis for ROIs in the proximal and distal FOVs under control and blocker conditions for different stimulus sizes. (n=5 FOVs, 4 retinas, *p<0.001; Kolmogorov-Smirnov test). FOV, field of view; ROI, region of interest; STi, sustained/transient index.\n\nBlocking glutamate/GABA receptor-mediated pathways using the drug cocktail also revealed a somewhat unexpected spread of lateral excitation. Under inhibitory receptor blockade, the light-evoked iGluSnFR responses continued to grow even when the spots sizes were increased significantly beyond the size of BC dendritic fields (~50 \u00b5m; Figure 4A, n=71 proximal and 431 distal ROIs, 5 FOVs, 4 retinas from 4 mice; *p<0.01). The maximal peak response was evoked for spots that were ~200 \u00b5m diameter. Interestingly, the amplitude of the plateau phase was further increased by ~23% in the proximal and ~20% in the distal dendritic sites, between 200 \u00b5m and 800 \u00b5m (*p<0.01, t-test). Such lateral excitation is likely to be attributed to electrical coupling, which occurs between BCs as well as amacrine cells (Sigulinsky et al., 2020; Arai et al., 2010; Asari and Meister, 2014). The finding that the kinetic diversity of BC responses is maintained in the absence of inhibition, suggests that they are shaped in large part by excitatory network mechanisms.\n\n### BC output kinetics contribute to direction selectivity\n\nNext, we tested how the apparent kinetic diversity in BC input impacts direction selectivity. Since the BC kinetics inferred from iGluSnFR measurements are in part dictated by the properties of the indicator, it remains unclear how they relate to the starbursts\u2019 physiological responses mediated by endogenous AMPA receptors. To address this issue, we first used optical deconvolution methods (Awatramani et al., 2007) to estimate the time-varying vesicle release rates from individual BCs and then used a computational model to understand how trains of vesicles are transformed into AMPA receptor-driven voltage signals in starburst dendrites.\n\nTime-varying vesicle release rates from proximal and distal BCs were estimated by deconvolving the iGluSnFR response with an idealized quantal response described by an alpha function with decay kinetics ~30 ms (Figure 5B, inset), which was obtained by matching the kinetics of \u2018spontaneous\u2019 quantal responses (Figure 5A). The resulting release rates were discretized using a Poisson process, yielding an estimate of the temporal pattern of single vesicle release events (Figure 5C). For this analysis, the quantal size for each ROI was estimated using fluctuation analysis (see Materials and methods). Indeed, convolving the average quantal response with the inferred trains of vesicle release events (Figure 5C) produced a signal similar to the original iGluSnFR measurement (Figure 5D). The release profiles of proximal and distal BCs obtained in this manner support the notion that they have different capacities to release vesicles in response to light stimuli: proximal BCs release vesicles throughout the duration of the stimulus, while distal BCs release a large fraction of their vesicles at the onset of the light stimulus (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig5-v2.jpg)\n\n**Figure 5.:** (A) Spontaneous iGluSnFR signals measured in neighboring ROIs across a small dendritic section (color-coded to match ROIs). (B) A typical light-evoked iGluSnFR signal measured from proximal dendrites; inset: iGluSnFR quantal event fitted with an alpha function. (C) A time-varying release rate was estimated by deconvolving the iGluSnFR signal with the quantal signal (shown in (B)). (D) Convolving the estimated release rate with a unitary event recapitulates the shape of the original iGluSnFR response. (E) Example vesicle release rates for sustained (orange) and transient (blue) iGluSnFR responses. The solid line indicates the average vesicle release rates for all ROIs. n=50 each, proximal and distal ROIs. ROI, region of interest.\n\nPrevious experimental and modeling studies have shown starburst dendritic sectors to be relatively electrically isolated from each other (Poleg-Polsky et al., 2018; Morrie and Feller, 2018; Ozaita et al., 2004). Since the potential for intra-dendritic signaling is likely to be minimal, we constructed a simple ball-and-stick model (NEURON), rather than a more complex network model. Using previously described properties of starburst dendrites (Tukker et al., 2004; Vlasits et al., 2016), we directly tested how vesicle release dynamics impacts starburst dendritic computations, which is hard to achieve experimentally.\n\nSustained and transient BCs were assumed to reflect the properties of BC7 and BC5s, respectively, and their positions on the starburst dendrites were picked pseudo-randomly from the distributions described previously by Ding et al., 2016; Figure 6\u2014source data 1. The results shown are obtained from averaging many simulations, each with resampled BC complements (Figure 6A; also see Materials and methods). A simulated moving bar (400 \u03bcm wide) \u2018activated\u2019 BCs in succession, initiating streams of postsynaptic AMPA receptor-mediated miniature-like events (\u0399decay~0.54 ms; Vlasits et al., 2016) according to their location in the dendrite. In these simulations, we assumed the AMPA receptor-mediated events summed linearly (i.e., AMPA receptors did not saturate or desensitize during trains of activity). Synapses were sequentially turned off after the bar traversed BC receptive fields (60 \u03bcm diameter). Thus, the input duration at each point in the dendrite varied linearly with stimulus velocity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic representation of locations of somatic voltage and terminal Ca2+ recordings from a model SAC under simulated conditions (top). Bipolar cell conductances, somatic voltage, and terminal Ca2+ responses (bottom) were measured in the preferred and null direction from the model SAC when simulated using moving bars. (B) Direction selectivity index (DSi) of peak Ca2+ (terminal) responses versus velocity for different BC input distributions\u2014(i) sustained and transient inputs; when proximal (sustained) and distal (transient) inputs are distributed based on connectomics data (original model); (ii) transient-sustained inputs; when sustained and transient BC inputs are reversed at their locations; (iii) all transient inputs; when all proximal inputs are replaced by transient BCs; and (iv) all sustained inputs; when all distal inputs are replaced by sustained BCs. Shading indicates \u00b1 s.e.m. (C) DSi of peak Ca2+ (terminal) responses versus number of inputs from sustained BCs at a velocity of 0.15 mm/s. BC, bipolar cell.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Direction selectivity index (DSi) of peak Ca2+ responses in terminal dendrites as a function of the spatial offset between sustained and transient BC inputs. The spatial offset was calculated by subtracting the mean somatic distance of the proximal population from that of the distal population. (A) Control conditions, where proximal BCs are sustained, and distal BCs are transient. (B) Reverse conditions, where proximal BCs are transient and distal BCs are sustained.\n\nThe voltage responses measured from the model cell soma were qualitatively similar to those measured experimentally. For example, responses measured in the soma rose rapidly in the preferred direction compared to those evoked in the null direction, owing to the asymmetric distribution of inputs (Figure 6A, middle panel; Ankri et al., 2020). The model also accurately recapitulated direction selectivity measured in the distal intracellular Ca2+ signals (Figure 6A, bottom traces) similar to results from two-photon Ca2+ imaging experiments (Euler et al., 2002). As expected for a mechanism that relies on a fixed delay, this direction selectivity was strongly dependent on stimulus velocity. In our model based on the experimentally determined input kinetics, anisotropic summation occurs most robustly for slow-moving stimuli (<0.5 mm/s).\n\nFour lines of evidence highlight the importance of BC kinetics in enhancing direction selectivity. First, when the kinetics of proximal and distal BCs were exchanged (i.e., proximal BCs were made transient and the distal BCs were made sustained), the directional preference was reversed from preferring centrifugal to centripetal motion (resulting in a negative DSi; Figure 6B). Notably, the strength of the directional preference was stronger for the native compared to the switched BC distributions, indicating that the kinetic mechanisms work in concert with intrinsic dendritic mechanisms (Hausselt et al., 2007; Tukker et al., 2004). Second, DSi was strongly decreased when all BCs were made either sustained or transient (Figure 6B). In all cases, the direction selectivity was most robust for slow-moving stimuli, and we found that these BC distribution manipulations had a statistically significant effect on DSi up to 1 mm/s (p<0.05; one-way analysis of variance, ANOVA; Figure 6B). DSi was significantly higher in the condition when BC distribution followed the native sustained-transient distribution over when all BCs were sustained (p<0.0005; t-test), for velocities up to 0.5 mm/s. Third, when we fixed the BC input locations and incrementally converted sustained input into transient ones (starting from the proximal site furthest from the soma), direction selectivity decreased linearly (Figure 6C; velocity 0.15 mm/s). This is presumably because the amount of asymmetric temporal summation decreases as inputs with weaker plateau phases are swapped in.\n\nFinally, as the BC populations for each repeat were randomly distributed, we asked how much the average distance between the proximal and distal populations on a particular trial impacts the resulting DSi (Figure 6\u2014figure supplement 1). We found that for velocities with the strongest DS response (positive for the control condition, and negative for the swapped release profile condition), there were indeed linear relationships between the magnitude of DSi and the mean distance between the sustained and transient BC input (R2\u22480.208 and 0.269, respectively, Figure 6\u2014figure supplement 1). Thus, we conclude that in the context of realistic estimates of glutamate input kinetics, the \u2018space-time\u2019 wiring model for direction selectivity holds merit under specific stimulus conditions.\n\n## Discussion\n\nRecent models of direction selectivity in the primary sensing neurons in the fly visual system and mammalian retina incorporate key aspects of two classic models of direction selectivity reviewed by Borst et al., 2020, Murphy-Baum et al., 2021: one relying on multiplicative interactions between excitatory inputs (Hassenstein and Reichardt, 1956) and the other relying on divisive inhibition (Barlow and Levick, 1965). While the neural substrates underlying inhibition appear to be well worked out, defining the precise sources of excitation and their kinetics has proven to be more difficult. In this study, we used iGluSnFR imaging to directly estimate glutamate vesicle release rates along the length of starburst dendrites. This method circumvents many of the uncertainties associated with Ca2+ or electrophysiological measurements from the soma that has typically been applied to assess the properties of input kinetics. Our results demonstrate stark kinetic differences in glutamate input across starburst dendrites, supporting the idea that nonlinear excitatory interactions enhance direction selectivity (Kim et al., 2014; Greene et al., 2016).\n\nAt first pass, the input kinetic diversity across starburst dendrites we observed appears to contradict recent large-scale surveys which show BC types of the same response polarity to have similar kinetics (Franke et al., 2017). However, this discrepancy is easily explained by the choice of precise stimulus parameters. Specifically, robust kinetic differences between responses were measured in proximal and distal regions across a range of spot sizes, except for the smallest size that just covered the BC receptive field, which was used by Franke et al., 2017. Indeed, when larger spots or full-field stimuli are utilized BC kinetics are found to vary across the inner-plexiform layer (Borghuis et al., 2013; Gaynes et al., 2022; Franke et al., 2017).\n\nThe precise mechanisms that give rise to the kinetic diversity in BC input remain to be identified. Previous studies have shown the functional diversification of BC responses arises mainly from GABAergic and/or glycinergic inhibition (Franke et al., 2017; Franke and Baden, 2017). Thus, it was surprising to observe clear kinetic differences when all inhibitory pathways were blocked. This implied that BC kinetics could be influenced by inhibition, but inhibition was not required to generate kinetic differences. Additionally, kinetic differences persist when rod-mediated signals are blocked by CNQX suggesting that kinetic differences cannot be attributed solely to changes associated with rod/cone vision, consistent with a previous report (Awatramani and Slaughter, 2000). The finding that input kinetic differences manifest for spot sizes larger than BC dendritic fields implied that network mechanisms (Figure 4A), rather than cell-intrinsic factors are involved, although these mechanisms are not mutually exclusive (Awatramani and Slaughter, 2000). Specific types of BCs are known to be coupled to each other as well as to selective amacrine cells including the AII and A8 amacrine cells (Arai et al., 2010; Asari and Meister, 2014; Demb and Singer, 2012; Sigulinsky et al., 2020; Yadav et al., 2019; Zhang and Wu, 2009). Such coupling has been implicated in extending BC receptive fields spatially in salamander and fish retinas (Hare and Owen, 1990; Saito and Kujiraoka, 1988), and in mice, the electrical coupling can non-linearly affect the output of individual BCs (Kuo et al., 2016). However, whether BC7 have stronger coupling patterns compared to BC5 remains to be tested.\n\nAnother major advance made in this study is to relate iGluSnFR signals to endogenous vesicle release rates from BC terminals and eventually to starburst function. This is not a trivial problem as the properties of iGluSnFR signals may depend on a variety of factors including the expression pattern, affinity, and kinetic properties of iGluSnFR, and in general expected to be vastly different from glutamate receptors that mediate the starburst synaptic responses. Previous studies have shown iGluSnFR signals reflect local glutamate release from individual BC terminals despite being expressed uniformly along starburst dendrites (Borghuis et al., 2013; Franke et al., 2017; Gaynes et al., 2022; Matsumoto et al., 2021; Strauss et al., 2022). Here, we were also able to measure spontaneous \u2018quantal-like\u2019 events using high-speed imaging, which enabled estimates of vesicle release rates using temporal deconvolution. This analysis assumes that the light-evoked responses are made up of a linear superposition of quantal events and there is not a significant build-up of glutamate within the synaptic cleft during ongoing activity. With these assumptions in mind, we estimated the peak instantaneous release rate to be 5\u201310 vesicles/s, which is in line with previous in vivo estimates made in zebrafish BC terminals (James et al., 2021; James et al., 2019). We also estimated the steady-state release rates to be ~3 vesicles/s at proximal sites and ~1 vesicle/s at distal sites, which is well below the maximum release rate estimated for photoreceptor synapses, which also contain ribbons (Hays et al., 2021; Hays et al., 2020).\n\nEstimating the vesicle release rates at single dendritic sites was an important step because it allowed us to build simple a biophysical model to probe how starburst dendrites respond to distinct patterns of vesicle release evoked by stimuli moving in different directions, using their endogenous AMPA receptors. In a circuit model that is constrained by experimentally determined vesicle release rates and by the spatial distributions of sustained and transient input to starburst dendrites, we found that differences in input kinetics mainly enhance direction selectivity at low velocities (<500 \u03bcm/s). Our modeling approach contrasts with recent studies in which key parameters including the vesicle release rates and the specific distribution of BC types along starburst dendrites were determined by an algorithm that optimizes direction selectivity (Ezra-Tsur et al., 2021). It also contrasts with phenomenological models such as the linear-non-linear cascade models, which leave out the biophysical details of the starburst (Kim et al., 2014; Franke et al., 2017; Strauss et al., 2022; Fransen and Borghuis, 2017). It should be noted, however, that the intrinsic properties of the starburst remain poorly defined and future work is needed to experimentally verify how inputs with distinct kinetics are transformed into dendritic voltage responses. In addition, the robust direction selectivity that is experimentally observed in starbursts occurs across the range of velocities (100\u20132000 \u03bcm/s; Ding et al., 2016; Summers and Feller, 2022), indicating additional mechanisms are involved. Further work is needed to establish how the excitatory and inhibitory network mechanisms work together to produce direction selectivity that is invariant across a large range of velocities. It is also worth noting while our study emphasizes the role of BC kinetics in driving direction selectivity for slow-moving spots, for other stimuli, such as radial motion, or for stimuli that emerge suddenly, the inhibitory surrounds of BCs may enhance motion sensitivity in more complicated ways (Gaynes et al., 2022; Strauss et al., 2022).\n\nSpace-time wiring models for direction selectivity have been proposed in diverse systems including the primate retina (Patterson et al., 2022; Kim et al., 2022; Smith et al., 2022), visual cortex (Lien and Scanziani, 2018; De Valois and Cottaris, 1998), as well as the fly optic lobe (Haag et al., 2016; Leong et al., 2016; Behnia et al., 2014; Takemura et al., 2013; but see Takemura et al., 2017). Recent studies have made great strides in identifying the precise anatomical substrates underlying the computation, in all these model systems. Elegant studies assessing presynaptic dynamics, provide strong support that anisotropic summation of excitatory signals shapes direction selectivity (Lien and Scanziani, 2018; Groschner et al., 2022). Future studies using optical sensors will directly confirm whether the observed patterns of presynaptic activity are transformed into the distinct temporal patterns of excitation required to generate direction selectivity at the level of dendrites of DS neurons, as we have observed here for starburst dendrites in the mouse retina.\n\n## Materials and methods\n\n### Animals\n\nExperiments were performed using ChAT-IRES-Cre (\u0394neo) mice on a C57BL/6J background (Jackson Laboratory, #031661), in which the IRES-Cre was targeted to the ChAT locus. Mice were P21 or older and of either sex. Animals were housed under 12-hr light/dark cycles. All procedures were performed in accordance with the Canadian Council on Animal Care and approved by the University of Victoria\u2019s Animal Care Committee, or in accordance with Danish standard ethical guidelines and were approved by the Danish National Animal Experiment Committee (Permission nos. 2015-15-0201-00541 and 2020-15-0201-00452).\n\n### Viral injections\n\nFor intravitreal injections, mice were anesthetized by administering isoflurane (2\u20133% at 1\u20131.5 L/min; Fresenius Kabi Canada Ltd) mixed with oxygen (1\u20133%) through a vaporizer. Buprenorphine was administered subcutaneously (0.05\u20130.1 mg/kg body weight) as an analgesic. After creating a small hole at the margin of the sclera and cornea with a 30-gauge needle, a volume of 1\u20131.2 \u03bcl of the viral plasmid pAAV.hSyn.Flex.iGluSnFR.WPRE.SV40 (gift from Dr. Loren Looger; Addgene plasmid #98931; http://n2t.net/addgene:98931; RRID:Addgene_98931) was injected into the vitreous humor of either the left or right eye using a Hamilton syringe (syringe: 7633-01, needle: 7803-05, point style 3, and length 10 mm). Mice were returned to their home cage after their complete recovery, which was facilitated using a heating pad. Imaging experiments were performed at least 3 weeks after injections.\n\n### Tissue preparation\n\nMice were dark-adapted for at least 60 min before being anesthetized with isoflurane (Fresenius Kabi Canada Ltd) and decapitated. Retinas were extracted in Ringer\u2019s solution under a dissecting microscope equipped with infrared optics, and flat-mounted onto a glass poly-L-lysine (Sigma-Aldrich) coated coverslip before being placed into the recording chamber, perfused with oxygenated Ringer\u2019s solution (95% O2/5% CO2; 35\u00b0C). Retinas were visualized with a Spot RT3 CCD camera (Diagnostics Instruments) through a 40\u00d7 or 60\u00d7 water-immersion objective on a BX-51 WI microscope (Olympus Canada).\n\n### Two-photon imaging\n\nFor iGluSnFR imaging, we used an Insight DeepSee+ laser (Spectra-Physics) tuned to 920 nm, which was guided by an 8 kHz resonant-galvo-galvo mirror set (Vidrio Technology). Green and red fluorescent signals were detected using photomultiplier tubes (PMTs; Hamamatsu) that were equipped with appropriate bandpass filters (525/45 and 625/90, respectively; Semrock). Single-photon events were acquired using a high-speed current amplifier (200 MHz, Edmund Optics), and converted into images using ScanImage software (Pologruto et al., 2003). While most recordings from proximal and distal dendritic regions were acquired consecutively at a frame rate of 58.25 Hz (256\u00d7256 pixels), in some experiments the responses from the two regions were recorded near-simultaneously at a frame rate of 22.5 Hz (256\u00d7256 pixels) using an electrically tunable lens (ETLs; EL-10-30-TC-NIR-12D, Optotune; see Materials and methods; Murphy-Baum and Awatramani, 2022). Data using either method were compiled in Figure 2C\u2013D.\n\nFor iGluSnFR imaging from T7 BCs, the isolated retina was placed under the microscope (SliceScope, Scientifica) equipped with a galvo-galvo scanning mirror system, a mode-locked Ti: Sapphire laser tuned to 940 nm (MaiTai DeepSee, Spectra-Physics). The iGluSnFR signals emitted were passed through a set of optical filters (ET525/50m, Chroma; lp GG495, Schott) and collected with a GaAsP detector. Images were acquired at 8\u201310 Hz using custom software developed by Zoltan Raics (SENS Software).\n\n### Visual stimulation\n\nVisual stimuli were produced using a digital light projector and were focused onto the photoreceptor layer of the retina through the sub-stage condenser. Light stimuli were presented during the brief turn-around phase of the resonant mirror and thus did not interfere with the collection of fluorescent signals. The background illuminance was measured to be ~1000 photon/\u03bcm2/s. Visual stimuli were generated and presented using StimGen, a python-based visual stimulation interface (https://github.com/benmurphybaum/StimGen, archived at https://doi.org/10.5281/zenodo.7331820; Murphy-Baum, 2022). For all experiments, static spots of different sizes (100, 200, 400, and 800 \u03bcm diameter) were presented for a duration of 2 s. Stimuli were presented 4 s after the start of two-photon image acquisition.\n\n### Pharmacology\n\nThe following concentrations (in \u03bcM) of antagonists were used for experiments: 20 CNQX disodium salt (Hello Bio, UK), 100 TPMPA (Tocris Bioscience), and 5 SR-95531 (Hello Bio, UK). Antagonists were initially prepared as stock solutions in distilled water or DMSO in the case of CNQX. During experiments, drugs were freshly prepared from a stock solution in carboxygenated Ringer\u2019s solution. All drug solutions were bath applied to the tissue for at least 5 min prior to recording.\n\n### Quantification and statistical analysis\n\nAll imaging analysis and statistical comparisons were performed in Igor Pro (WaveMetrics). Fluorescence signals were measured in small ROIs (5\u00d75 \u03bcm2 or 10\u00d710 \u03bcm2) placed along single dendrites, or in a grid-like pattern over the starburst dendritic plexus. The size of these ROIs was chosen to ensure adequate signal-to-noise ratio (SNR) computed as:\n\n$$\nSNR=\\frac{Peakvalue}{s.d.ofthebaseline}\n$$\n\nwhere the standard deviation (s.d.) of the baseline fluorescence was measured in a 1-s window before the start of the stimulus. Only ROIs with SNR>4 were selected for further analysis.\n\nThe sustained transient index (STi) for each ROI was calculated as:\n\n$$\nSTi=\\frac{\\frac{\u0394F}{F}Plateauphase}{\\frac{\u0394F}{F}Peak}\n$$\n\nwhere the \u0394F/F for the plateau phase was averaged over the last 1 s of the light response.\n\n### Release rate estimates\n\nDiscrete Fourier transforms of responses (Response) to stationary spots of light were divided by the Fourier transforms of the idealized quantal response (Quantum). The inverse Fourier transform of the resulting ratio yielded estimates of the instantaneous release rate (RR) in the time domain from representative BCs, as previously described (Van der Kloot, 1988; Diamond and Jahr, 1995):\n\n$$\nRR=IFFT\\frac{FFTResponse}{FFTQuantum}\n$$\n\nThe temporal waveform for the idealized Quantum was obtained by fitting averaged spontaneous iGluSnR events with exponential functions (2 ms rise time and 30 ms decay time constants). The amplitude of the Quantum for each ROI was set according to the quantal size estimate (QSE). The QSE is defined following classical quantal analysis (Katz and Miledi, 1972), as:\n\n$$\nQSE=\\frac{2\\sigma^{2}}{\\mu}\n$$\n\nwhere \u03c3 and \u00b5 are the variance and the mean of the steady state of iGluSnFR responses, respectively. Averages responses from proximal and distal scan fields were used to calculate the prototypical sustained and transient release rates, which were assumed to correspond to BC7 and BC5s, respectively (n=50 ROIs, each proximal and distal site, 6 retinas, 7 FOVs).\n\n### Computational modeling\n\nA simple ball and stick compartmental model was constructed in the NEURON simulation environment (https://github.com/geoffder/spatiotemporal-starburst-model; copy archived at de Rosenroll, 2022), with one somatic compartment and three dendritic compartments (initial, middle, and terminal dendrites; Ding et al., 2016) with membrane properties and channels similar to those published previously (Ding et al., 2016; Vlasits et al., 2016; see Figure 6\u2014source data 1). Input to this isolated starburst dendritic computational unit was driven by model BC synapses that were pseudo-randomly distributed based on anatomical measurements (Ding et al., 2016). Specifically, for each trial repetition, 6 proximal locations and 12 distal locations were sampled from the probability density functions for BC7 and BC5s synapse locations, respectively (Ding et al., 2016) (see Figure 6\u2014source data 1). To simulate moving light bars, BC inputs were activated in sequence based on their location on the dendrite. Vesicle release from each BC ceased when the bar left its receptive field (60 \u00b5m in diameter). The precise temporal sequence of BC activation and the response duration was set to simulate 400 \u00b5m wide light bars moving over a range of velocities (0.1\u20132 mm/s).\n\nFor each synapse, on each stimulus presentation, the timing of each vesicle release event from individual BCs was obtained by discretizing the continuous release rates estimated from the deconvolution analysis via a Poisson process (sampled at a model time step of 1 ms). Glutamate released from each vesicle then activated AMPA receptor-mediated \u2018miniature\u2019 events modeled using a double exponential function (rise 0.14 ms, decay 0.54 ms, and reversal 0 mV; Vlasits et al., 2016). The synaptic conductances were scaled down linearly from 172.2 pS to 68.6 pS across the dendrite, to mimic the downward trend of experimentally measured glutamate responses (Vlasits et al., 2016). Finally, changes in the somatic membrane voltage and terminal dendritic Ca2+ accumulation in response to moving bars were recorded to assess post-synaptic activation (Jain et al., 2022; Ding et al., 2016; Tukker et al., 2004). The direction-selective index (DSi) of the model was assessed by subtraction of the peak terminal Ca2+ concentration in centripetal stimulation from that of centrifugal stimulation.\n\nTo quantify the temporal kernels extracted using reverse correlation (Figure 3\u2014figure supplement 2), we calculated the biphasic peak and area index as:\n\n$$\nTrough=max0,min0.5-mincontrast,1\n$$\n\n\n\n$$\nPeak=max0,minmaxcontrast-0.5,1\n$$\n\n\n\n$$\nBiphasicpeakindex=\\frac{Trough}{(Peak+Trough)}\n$$\n\n\n\n$$\nnegative=\\summaxmin-1,contrast-0.5,0\n$$\n\n\n\n$$\npositive=\\summaxmin0,contrast-0.5,1\n$$\n\n\n\n$$\nBiphasicareaindex=\\frac{\u2212negative}{(positive\u2212negative)}\n$$\n",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "1e1f84b4-e0b2-401a-a8e5-6003a12d7ed4",
+      "submission_id": "0e5c1425-dbfb-4007-b90d-4a15815ad226",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marla B Feller, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81533.sa0](https://doi.org/10.7554/eLife.81533.sa0)\n\nThis is an important paper that addresses a key mechanism that underlies the canonical computation of direction selectivity in the retina. By using fluorescence imaging of glutamate release from excitatory interneurons combined with a computational model of dendritic integration, the authors make a convincing case that the kinetics of glutamate release contributes to the direction-selectivity of individual neural processes in retinal neurons. This work will appeal to visual neuroscientists as well as cellular physiologists interested in dendritic computations.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marla B Feller, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81533.sa1](https://doi.org/10.7554/eLife.81533.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spatiotemporal properties of glutamate input support direction selectivity in the dendrites of retinal starburst amacrine cells\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Joshua Gold as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Katrin Franke (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Increase the n for experiments based on individual SAC dendrites. Reviewers note that this experiment summarized in Figure 1 is underpowered.\n\n2) There are several suggested revisions to the model \u2013 most of these suggestions can be addressed with a bit more explanation of the rationale, though there are some more substantive suggestions regarding the use of ball-and-stick models for dendrites. I am hoping that you read the reviewers' suggestions with an open mind as to what you think will best convey the primary point you'd like to make and explain these implemented changes in a way that addresses the issues raised by the reviewers. To be clear, you do not need to do everything all reviewers suggested regarding the model but please offer an explanation for your choices in response to reviewers' specific concerns.\n\nReviewer #2 (Recommendations for the authors):\n\nThe BC7 and deconvolution experiments in Figures 3 and 5 are very nice, but they come across as a bit descriptive/anecdotal in the absence of analyzed pooled data.\n\nGiven the nature of the conclusions, it would seem appropriate to recognize in the Discussion Hassenstein and Reichardt (1956) and at least one of Barlow's papers on the subject.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 In Suppl. Figure 2, the authors show that temporal response properties of type 7 bipolar cells do not change with signal to noise of the responses. They should also show the same analysis for the population data, together with the distribution of signal-to-noise ratios of proximal and distal ROIs. This will make sure that differences observed for proximal versus distal ROIs are unrelated to differences in response strength.\n\n\u2013 The authors should provide more details in the Methods section regarding ROI detection, the rationale behind ROI sizes, and the fraction of ROIs that passed their threshold. In addition, I suggest not using the peak value, but instead a percentile for estimating the signal-to-noise ratio, as this is more robust against outliers.\n\n\u2013 In Figure 6C, the authors should indicate which velocities are significantly different between the two conditions.\n\n\u2013 The first sentence of the abstract reads like the space-time-wiring model is the main proposed mechanism underlying direction selectivity. I suggest the authors rephrase this sentence to illustrate that this is one of many, well-described other mechanisms.\n\n\u2013 In the Discussion section, the authors write: \"Moreover, kinetic differences were discernable for stationary or slow-moving spots.\" I suggest rephrasing, as the slow-moving spot result was only predicted by their model.\n",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9c47e010-c567-4476-9639-468a2d807e90",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C1",
+      "claim": "The asymmetric summation of kinetically distinct glutamate inputs across the dendrites of retinal 'starburst' amacrine cells is one of the several mechanisms that have been proposed to underlie their direction-selective properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric summation of kinetically distinct glutamate inputs across the dendrites of retinal 'starburst' amacrine cells is one of the several mechanisms that have been proposed to underlie their direction-selective properties, but experimentally verifying input kinetics has been a challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to existing literature proposing this mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "fe73de36-604e-4663-9614-79354af6d943",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C2",
+      "claim": "Experimentally verifying input kinetics in starburst amacrine cells has been a challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric summation of kinetically distinct glutamate inputs across the dendrites of retinal 'starburst' amacrine cells is one of the several mechanisms that have been proposed to underlie their direction-selective properties, but experimentally verifying input kinetics has been a challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "cbfa8a61-090b-4b4e-9b74-b47675922234",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C3",
+      "claim": "Signals measured from proximal dendrites were relatively sustained compared to those measured from distal dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that signals measured from proximal dendrites were relatively sustained compared to those measured from distal dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "f859a013-7f2e-4942-96eb-2da5d7a15e4c",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C4",
+      "claim": "Differences in signal kinetics between proximal and distal dendrites were observed across a range of stimulus sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences were observed across a range of stimulus sizes and appeared to be shaped mainly by excitatory rather than inhibitory network interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing consistent differences across multiple stimulus conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "f0e6f2d8-1585-4454-b12a-2638ae552cc3",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C5",
+      "claim": "Kinetic differences between proximal and distal inputs appeared to be shaped mainly by excitatory rather than inhibitory network interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences were observed across a range of stimulus sizes and appeared to be shaped mainly by excitatory rather than inhibitory network interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pharmacological experiments blocking inhibitory pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "4f8c7a2f-965f-4c0c-a71c-e036e60c98d1",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C6",
+      "claim": "The steady-state vesicle release rate was approximately 3 times larger at proximal sites compared to distal sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal deconvolution analysis suggests that the steady-state vesicle release rate was ~3 times larger at proximal sites compared to distal sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from temporal deconvolution analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "14d60f69-b3a8-4781-8d18-8d49de204e4d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C7",
+      "claim": "Input kinetics play an important role in shaping direction selectivity at low stimulus velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a connectomics-inspired computational model, we demonstrate that input kinetics play an important role in shaping direction selectivity at low stimulus velocities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through computational modeling based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ed1ad4e4-25fc-405b-b1a2-e326d46525be",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C8",
+      "claim": "The results provide direct support for the 'space-time wiring' model for direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results provide direct support for the 'space-time wiring' model for direction selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "61b9c853-77a1-42f4-96ca-4e77d4eb71e1",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C9",
+      "claim": "The radiating dendrites of retinal GABAergic/cholinergic 'starburst' amacrine cells are the first points in the visual system to exhibit direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The radiating dendrites of retinal GABAergic/cholinergic 'starburst' amacrine cells (starbursts) are the first points in the visual system to exhibit direction selectivity (Euler et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Euler et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "96bfa9d9-138f-4e00-a033-e530d0d2d66f",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C10",
+      "claim": "Object motion away from the soma generates large calcium responses in distal starburst dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Object motion away from the soma generates large calcium responses in distal starburst dendrites, from where they release GABA and acetylcholine (ACh).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about starburst cell function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "049c7ba9-6ee2-4a6a-b05a-b870fd72807a",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C11",
+      "claim": "Motion toward the soma evokes weak responses in starburst dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, motion toward the soma evokes weak responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about starburst cell function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "2fe18d64-0e45-4925-8a3e-87782ae8925d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C12",
+      "claim": "Starbursts play a critical role in shaping direction-selective responses of downstream ganglion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Starbursts play a critical role in shaping direction-selective (DS) responses of downstream ganglion cells (DSGCs), and thus, understanding how they compute direction is of principal interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "c1003395-35ee-4fba-a31c-3e7f50591cba",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C13",
+      "claim": "No single mechanism alone may be critically required for direction selectivity in starburst dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Decades of intense investigations have identified several mechanisms that underlie direction selectivity in starburst dendrites, although no single mechanism alone may be critically required (Ding et al., 2016; Hausselt et al., 2007; Kim et al., 2014; Hanson et al., 2019; reviewed by Murphy-Baum et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "c2a3ef57-61b1-464f-ac27-b6cc135b2d83",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C14",
+      "claim": "The 'space-time wiring' model for direction selectivity relies on the kinetic properties of distinct sources of glutamatergic input.",
+      "claim_type": "EXPLICIT",
+      "source": "A model that has garnered recent attention relies on the kinetic properties of distinct sources of glutamatergic input, which is referred to as the 'space-time wiring' model for direction selectivity (Greene et al., 2016; Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Greene et al., 2016 and Kim et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "88351fdc-bd4f-44a6-82cc-ee1c1ea0d570",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C15",
+      "claim": "The proximal and distal dendritic regions of ON and OFF type starburst amacrine cells receive synaptic inputs from anatomically distinct types of glutamatergic bipolar cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The space-time wiring model for direction selectivity is inspired by connectomic analysis in the mouse retina showing that the proximal and distal dendritic regions of ON and OFF type starburst amacrine cells receive synaptic inputs from anatomically distinct types of glutamatergic bipolar cells (BCs) (Greene et al., 2016; Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by connectomic analysis cited from Greene et al., 2016 and Kim et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "25bb8afb-7ded-4bbb-88fd-26e2641aa8dc",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C16",
+      "claim": "The axon terminals of bipolar cells contacting starburst dendrites stratify at distinct depths within the inner plexiform layer.",
+      "claim_type": "EXPLICIT",
+      "source": "As the axon terminals of these BCs stratify at distinct depths within the inner plexiform layer (IPL; Ding et al., 2016; Greene et al., 2016; Kim et al., 2014)\u2014and in general BC axonal stratification patterns are linked to their kinetic properties (Awatramani and Slaughter, 2000; Baden et al., 2016; Franke et al., 2017; Gaynes et al., 2022; Strauss et al., 2022)\u2014it has been hypothesized that different types of BCs contacting proximal and distal starburst dendrites have distinct response kinetics (Greene et al., 2016; Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ding et al., 2016; Greene et al., 2016; Kim et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "a3605c38-65d0-4c7e-91eb-5f57ae62573f",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C17",
+      "claim": "BC axonal stratification patterns are linked to their kinetic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "As the axon terminals of these BCs stratify at distinct depths within the inner plexiform layer (IPL; Ding et al., 2016; Greene et al., 2016; Kim et al., 2014)\u2014and in general BC axonal stratification patterns are linked to their kinetic properties (Awatramani and Slaughter, 2000; Baden et al., 2016; Franke et al., 2017; Gaynes et al., 2022; Strauss et al., 2022)\u2014it has been hypothesized that different types of BCs contacting proximal and distal starburst dendrites have distinct response kinetics (Greene et al., 2016; Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "9ba41ab1-b6bc-4701-a6c8-3ee3d4138973",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C18",
+      "claim": "Proximal inputs near the starburst soma are predicted to be mediated by BC types that support tonic patterns of glutamate release.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it is predicted that proximal inputs near the starburst soma are mediated by BC types that support tonic patterns of glutamate release, while distal inputs are mediated by BC types that release their vesicles more transiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the space-time wiring model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "61fc42c4-84b8-4d1c-b1bb-4790e403cac7",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C19",
+      "claim": "Distal inputs are predicted to be mediated by BC types that release their vesicles more transiently.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it is predicted that proximal inputs near the starburst soma are mediated by BC types that support tonic patterns of glutamate release, while distal inputs are mediated by BC types that release their vesicles more transiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the space-time wiring model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "a2acdbe5-449b-4f14-8de6-cadedddc8fdc",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C20",
+      "claim": "The arrangement of sustained proximal and transient distal inputs would result in optimal input summation along starburst dendrites during centrifugal motion.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement would result in an optimal input summation along starburst dendrites during centrifugal (soma-to-dendrite) motion, as experimentally noted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "18fdfddb-c335-4f46-bd72-ca1b9d7e4068",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C21",
+      "claim": "The space-time wiring model for direction selectivity is algorithmically similar to classic correlation-type motion detectors described in rodents and primates.",
+      "claim_type": "EXPLICIT",
+      "source": "The space-time wiring model for direction selectivity is algorithmically similar to classic correlation-type motion detectors described elsewhere in the visual system in both rodents and primates (Lien and Scanziani, 2018; De Valois and Cottaris, 1998), as well as the fly optic lobe (Haag et al., 2016; Leong et al., 2016; Behnia et al., 2014), and thus appears to reflect a core computational principle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to work in other systems.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "4b0eb1a8-a4e3-42e4-af09-680fb299b8fd",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C22",
+      "claim": "The space-time wiring model appears to reflect a core computational principle.",
+      "claim_type": "EXPLICIT",
+      "source": "The space-time wiring model for direction selectivity is algorithmically similar to classic correlation-type motion detectors described elsewhere in the visual system in both rodents and primates (Lien and Scanziani, 2018; De Valois and Cottaris, 1998), as well as the fly optic lobe (Haag et al., 2016; Leong et al., 2016; Behnia et al., 2014), and thus appears to reflect a core computational principle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on similarities across species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "20fa2478-bd5c-4688-8741-fd244083028d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C23",
+      "claim": "There is scant evidence that the kinetics of glutamatergic input varies along the length of starburst dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is an attractive model for direction selectivity, there is scant evidence that the kinetics of glutamatergic input varies along the length of starburst dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of evidence prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "c0e3768f-d4f1-4dd6-802e-9ee296d61352",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C24",
+      "claim": "BC5s (including types 5i, o, and t) and BC7 make 'ribbon' synapses predominantly on the distal and proximal dendrites of ON starbursts, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct electrophysiological measurements revealed that BC5s (including types 5i, o, and t) and BC7, which make 'ribbon' synapses predominantly on the distal and proximal dendrites of ON starbursts, respectively, have similar temporal properties (Ichinose et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ichinose et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "341b8b05-d536-47f1-8ac7-dbb0b458ef3e",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C25",
+      "claim": "BC5s and BC7 have similar temporal properties according to direct electrophysiological measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct electrophysiological measurements revealed that BC5s (including types 5i, o, and t) and BC7, which make 'ribbon' synapses predominantly on the distal and proximal dendrites of ON starbursts, respectively, have similar temporal properties (Ichinose et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ichinose et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "249b2e68-6fab-470c-a9aa-0f09617e3219",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C26",
+      "claim": "Regional differences in input kinetics were noted when BC output was measured postsynaptically using voltage-clamp techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Regional differences in input kinetics were noted when BC output was measured postsynaptically using voltage-clamp techniques (Fransen and Borghuis, 2017; but see Stincic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fransen and Borghuis, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "e8405e0e-12cf-40e2-be5a-dd6ba52eccf6",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C27",
+      "claim": "Electrophysiological recordings do not provide precise information regarding the anatomical location of synaptic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these electrophysiological recordings do not provide precise information regarding the anatomical location of synaptic inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of electrophysiological methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "b3f74f29-748b-453b-ba17-55db303cacac",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C28",
+      "claim": "Genetically encoded fluorescent glutamate sensors (iGluSnFRs) have provided an alternate way to measure BC output kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, genetically encoded fluorescent glutamate sensors (iGluSnFRs) have provided an alternate way to measure BC output kinetics (Borghuis et al., 2013; Marvin et al., 2013; Yonehara et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Borghuis et al., 2013; Marvin et al., 2013; Yonehara et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "3187b165-c718-45fa-83bd-a9c158bfcf76",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C29",
+      "claim": "Most BCs of the same polarity (including the BC5s and BC7 types) have similar temporal properties to spatially restricted stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent imaging studies have found that most BCs of the same polarity (including the BC5s and BC7 types) have similar temporal properties, at least to spatially restricted stimuli that are relevant to local starburst dendritic computations (Franke et al., 2017; Strauss et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Franke et al., 2017 and Strauss et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "95b9c0b6-450e-415b-b7d7-302d413a4e4c",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C30",
+      "claim": "Direction selectivity remains intact under conditions in which all BC input to starbursts is pharmacologically blocked and the starburst network is directly stimulated in relative isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, optogenetic studies have demonstrated that direction selectivity remains intact under conditions in which all BC input to starbursts is pharmacologically blocked and the starburst network is directly stimulated in relative isolation (Hanson et al., 2019; Sethuramanujam et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hanson et al., 2019 and Sethuramanujam et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "554a8302-c96a-4798-98c0-ee825fe8832c",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C31",
+      "claim": "Previous results provide little support for the space-time wiring model for direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, previous results provide little support for the space-time wiring model for direction selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the state of evidence prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "230ffc95-c57e-4ab4-b80c-e31ef5036c4c",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C32",
+      "claim": "Spots of light (200 \u03bcm in diameter) centered on the imaging field evoked robust iGluSnFR signals throughout the first ~60\u201380 \u03bcm section of starburst dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Spots of light (200 \u03bcm in diameter) centered on the imaging field evoked robust iGluSnFR signals throughout the first ~60\u201380 \u03bcm section of starburst dendrites, where glutamatergic BCs are known to make synapses (Ding et al., 2016; Greene et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "a576922f-cbbf-4235-aec4-ece265e95827",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C33",
+      "claim": "Glutamatergic BCs are known to make synapses in the first ~60\u201380 \u03bcm section of starburst dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Spots of light (200 \u03bcm in diameter) centered on the imaging field evoked robust iGluSnFR signals throughout the first ~60\u201380 \u03bcm section of starburst dendrites, where glutamatergic BCs are known to make synapses (Ding et al., 2016; Greene et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ding et al., 2016 and Greene et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "edc2842f-978d-4273-9343-05fcb66b6614",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C34",
+      "claim": "The peak amplitudes of the iGluSnFR signals measured over small regions of interest were relatively stable across the length of single starburst dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak amplitudes of the iGluSnFR signals measured over small regions of interest (ROIs; 5\u00d75 \u03bcm2) were relatively stable across the length of single starburst dendrites (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ec64d18d-b12e-4b55-aafa-b6dab66efc0a",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C35",
+      "claim": "The magnitude of the sustained phase significantly decreased as a function of distance from the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the magnitude of the sustained phase significantly decreased as a function of distance (Figure 1C; \u0394F/F=0.80\u00b10.29 at proximal sites; \u0394F/F=0.29\u00b10.16 at distal sites, measured in 20 dendrites in 4 retinas from 4 mice; *p<0.001, t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data and statistical analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "fff01a7a-9753-4e92-b5f9-4ed64fde8cdf",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C36",
+      "claim": "The sustained/transient index (STi) systematically decreased with distance from the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the sustained/transient index (STi) computed from the plateau/peak ratio, systematically decreased with distance from the soma (Figure 1D; STi=0.33\u00b10.06 for proximal, 0.16\u00b10.05 for distal ROIs; *p<0.001, t-test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data and statistical analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "cc620e38-6c41-4390-897e-77ccdedac608",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C37",
+      "claim": "STi=0 indicates a purely transient response with no plateau phase.",
+      "claim_type": "EXPLICIT",
+      "source": "(Note, STi=0 indicates a purely transient response with no plateau phase, and STi=1 indicates a purely sustained response where peak and plateau phases are equal).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the STi metric used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "de0f71e2-d534-4602-a894-fe18fc82bd1e",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C38",
+      "claim": "STi=1 indicates a purely sustained response where peak and plateau phases are equal.",
+      "claim_type": "EXPLICIT",
+      "source": "(Note, STi=0 indicates a purely transient response with no plateau phase, and STi=1 indicates a purely sustained response where peak and plateau phases are equal).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the STi metric used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "851b5bbd-5762-4dbb-8ab2-8206fc1011f5",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C39",
+      "claim": "STis were significantly lower in imaging planes that captured distal dendrites compared to those that captured proximal dendritic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that STis were significantly lower in imaging planes that captured distal dendrites (STi=0.21\u00b10.07; \u03bc\u00b1s.d.); compared to those that captured proximal dendritic responses (STi=0.34\u00b10.07; \u03bc\u00b1s.d.) (n=242 proximal ROIs; n=563 distal ROIs; 8 retinas from 8 mice; 10 FOVs; *p<0.001, t-test; Figure 2A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data and statistical analysis shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "0f17a3dc-2e20-46ad-9012-3a46c0673bcb",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C40",
+      "claim": "The STi for individual ROIs measured across the population was independent of response amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "The STi for individual ROIs measured across the population was independent of response amplitude, indicating that the estimated differences in signal kinetics are not strongly compromised by signal-to-noise and/or sensor saturation issues (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "acbc62a5-db0c-4211-8713-d9ac0f5a026f",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C41",
+      "claim": "The latencies and rise times for responses measured at proximal and distal sites were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also found that the latencies and rise times for responses measured at proximal and distal sites were similar (Figure 2D and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "4cfca4df-2717-48b2-b215-f2aa2d3aa06c",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C42",
+      "claim": "Small differences in axonal path lengths between proximal and distal BCs do not result in significant transmission delays.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also found that the latencies and rise times for responses measured at proximal and distal sites were similar (Figure 2D and E), indicating that the small differences in axonal path lengths between proximal and distal BCs do not result in significant transmission delays, as previously envisioned (Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the latency and rise time data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "eadec50d-f428-40f8-9f2a-5cdd21bd46a3",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C43",
+      "claim": "Inputs to proximal starburst dendrites originate mainly from BC7s.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical studies show that inputs to proximal starburst dendrites originate mainly from BC7s, while inputs to distal dendrites arise from BC5s (including types BC5i, o, and t; Greene et al., 2016; Ding et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "1b7224e4-e08c-4c55-95bc-1e72abdf377d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C44",
+      "claim": "Inputs to distal starburst dendrites arise from BC5s (including types BC5i, o, and t).",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical studies show that inputs to proximal starburst dendrites originate mainly from BC7s, while inputs to distal dendrites arise from BC5s (including types BC5i, o, and t; Greene et al., 2016; Ding et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "eb047bd7-c865-4598-a0c2-382c14ce1ee2",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C45",
+      "claim": "The kinetic differences of iGluSnFR responses may reflect the properties of distinct BC types.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical studies show that inputs to proximal starburst dendrites originate mainly from BC7s, while inputs to distal dendrites arise from BC5s (including types BC5i, o, and t; Greene et al., 2016; Ding et al., 2016), indicating that the kinetic differences of iGluSnFR responses may reflect the properties of distinct BC types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on anatomical data and the observed kinetic differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "f6f069cc-2efb-45ae-82d6-46e41074998e",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C46",
+      "claim": "iGluSnFR responses at BC7 terminals were sustained, regardless of their peak amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that iGluSnFR responses at BC7 terminals were sustained, regardless of their peak amplitude (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "4cd76b46-6f2a-451a-b984-1f4a2981851c",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C47",
+      "claim": "The most appreciable changes in iGluSnFR fluorescence occurred at the axon terminals of BC7s.",
+      "claim_type": "EXPLICIT",
+      "source": "The most appreciable changes in iGluSnFR fluorescence occurred at the axon terminals, suggesting that the sensor signals reflect the vesicle release dynamics of individual BC7s (James et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "6591f284-4963-41fd-9e21-b1b5ee2f796d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C48",
+      "claim": "The sensor signals reflect the vesicle release dynamics of individual BC7s.",
+      "claim_type": "EXPLICIT",
+      "source": "The most appreciable changes in iGluSnFR fluorescence occurred at the axon terminals, suggesting that the sensor signals reflect the vesicle release dynamics of individual BC7s (James et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citation to James et al., 2019.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "6c722c89-7c59-4584-b9a7-f392c270d72a",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C49",
+      "claim": "BC7s are the source of sustained proximal input.",
+      "claim_type": "EXPLICIT",
+      "source": "While these results lend support to the idea that BC7s are the source of sustained proximal input, we were unable to express the sensor in BC5s and could not directly confirm that these were the sources of transient signals observed in distal starburst dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the sustained responses observed at BC7 terminals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ea9499a3-0efe-4f31-812c-914804fc00b3",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C50",
+      "claim": "The authors were unable to express the sensor in BC5s.",
+      "claim_type": "EXPLICIT",
+      "source": "While these results lend support to the idea that BC7s are the source of sustained proximal input, we were unable to express the sensor in BC5s and could not directly confirm that these were the sources of transient signals observed in distal starburst dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "22ca9f99-5169-4e3f-b9a7-396cf6f24739",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C51",
+      "claim": "When white-noise stimuli were used, the authors failed to observe significant kinetic differences in proximal and distal iGluSnFR responses.",
+      "claim_type": "EXPLICIT",
+      "source": "When white-noise stimuli were used to characterize the temporal properties of BCs using reverse-correlation techniques, we failed to observe significant kinetic differences in proximal and distal iGluSnFR responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from experiments using white-noise stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "f6d70384-d3d7-40ce-a1b0-e78b0ec4ef5d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C52",
+      "claim": "The input impulse responses were biphasic for both proximal and distal inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the input impulse responses were biphasic for both proximal and distal inputs (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "9f02d019-6fbf-4c16-9dd4-413f0adf3c8e",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C53",
+      "claim": "The probability of glutamate release from BC terminals appears to be transiently depressed following a burst of vesicle release during continuous stimulus regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the probability of glutamate release from BC terminals appears to be transiently depressed, following a burst of vesicle release, during continuous stimulus regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the biphasic impulse responses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "3729dd15-3a8b-400f-a15d-4f6d81221ce2",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C54",
+      "claim": "Similar biphasic kernels have been observed in recent imaging studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar biphasic kernels have been observed in recent imaging studies (Franke et al., 2017; Strauss et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Franke et al., 2017 and Strauss et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ad735d07-c3a9-4f42-8ba9-5249c9292744",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C55",
+      "claim": "Under conditions where the circuit is continually stimulated at high frequencies, input kinetics are unlikely to play a role in shaping direction selectivity in starburst dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "As the biphasic nature of the distal\u2014but not proximal\u2014input is critical to the success of models generating direction selectivity (Kim et al., 2014; Fransen and Borghuis, 2017), we conclude that under conditions where the circuit is continually stimulated at high frequencies, input kinetics are unlikely to play a role in shaping direction selectivity in starburst dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the white-noise stimulus results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "4d923ee0-4a96-4ae6-8db8-d33c29caba6d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C56",
+      "claim": "Increasing the spot diameter systematically decreased the peak amplitude of BC responses, indicative of the recruitment of the inhibitory surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, to investigate whether cell-intrinsic or network mechanisms shape BC kinetics, we examined how iGluSnFR responses were affected by stimulus size. Increasing the spot diameter systematically decreased the peak amplitude of BC responses, indicative of the recruitment of the inhibitory surround (Figure 4A; Franke et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A and citation to Franke et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "4ebe1548-2d61-40d8-99a1-6d08389b935b",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C57",
+      "claim": "The distinction in the kinetics of proximal and distal inputs remained clear across stimulus sizes, although they were generally more pronounced for stimuli that were >200 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the distinction in the kinetics of proximal and distal inputs remained clear across stimulus sizes, although they were generally more pronounced for stimuli that were >200 \u03bcm (Figure 4B\u2013E, control; n=71 proximal and 431 distal ROIs, 5 FOVs, 4 retinas from 4 mice; *p<0.001, Kolmogorov-Smirnov test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "fb018b85-33b1-4c99-bff8-73bab0eebd29",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C58",
+      "claim": "The application of a cocktail of antagonists containing both GABA and ionotropic glutamate receptor antagonists augmented responses, especially those evoked by larger spots.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the application of a cocktail of antagonists containing both GABA and ionotropic glutamate receptor antagonists (5 \u00b5M gabazine and 100 \u00b5M TPMPA, 20 \u00b5M CNQX, respectively)\u2014which blocks inhibitory inputs from amacrine and horizontal cells\u2014augmented responses, especially those evoked by larger spots (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ab0bb559-8240-4ee4-b155-cf0d74d54784",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C59",
+      "claim": "The kinetics of the iGluSnFR responses at proximal and distal ROIs remained distinct even in the presence of synaptic blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects reduced the overall STi as compared to control, but the kinetics of the iGluSnFR responses at proximal and distal ROIs remained distinct (Figure 4B\u2013E, drug cocktail; n=71 proximal and 431 distal ROIs, 5 FOVs, 4 retinas from 4 mice; *p<0.001, Kolmogorov-Smirnov test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "a446c7bc-60a8-4d86-ba2b-a210e781adc9",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C60",
+      "claim": "Inhibitory networks modulate BC responses but do not appear to account for the sustained/transient differences observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while the inhibitory networks modulate BC responses, they do not appear to account for the sustained/transient differences observed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "3d30451a-d09a-4c8e-860d-3bb87c827a2f",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C61",
+      "claim": "Blocking glutamate/GABA receptor-mediated pathways revealed a spread of lateral excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking glutamate/GABA receptor-mediated pathways using the drug cocktail also revealed a somewhat unexpected spread of lateral excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "fb67cc19-cbe0-4558-95c7-5f09361e53fb",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C62",
+      "claim": "Under inhibitory receptor blockade, the light-evoked iGluSnFR responses continued to grow even when the spots sizes were increased significantly beyond the size of BC dendritic fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Under inhibitory receptor blockade, the light-evoked iGluSnFR responses continued to grow even when the spots sizes were increased significantly beyond the size of BC dendritic fields (~50 \u00b5m; Figure 4A, n=71 proximal and 431 distal ROIs, 5 FOVs, 4 retinas from 4 mice; *p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "856a3816-bb0f-4a7f-b8cd-be018cca466d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C63",
+      "claim": "The maximal peak response was evoked for spots that were ~200 \u00b5m diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximal peak response was evoked for spots that were ~200 \u00b5m diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "0c8c735e-7229-4e4c-90af-80dfd29e68eb",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C64",
+      "claim": "The amplitude of the plateau phase was further increased by ~23% in the proximal and ~20% in the distal dendritic sites, between 200 \u00b5m and 800 \u00b5m spot sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the amplitude of the plateau phase was further increased by ~23% in the proximal and ~20% in the distal dendritic sites, between 200 \u00b5m and 800 \u00b5m (*p<0.01, t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "8e688be2-9e8c-4447-9496-352e91d15092",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C65",
+      "claim": "Lateral excitation is likely to be attributed to electrical coupling, which occurs between BCs as well as amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Such lateral excitation is likely to be attributed to electrical coupling, which occurs between BCs as well as amacrine cells (Sigulinsky et al., 2020; Arai et al., 2010; Asari and Meister, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to previous work on electrical coupling.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ff726757-3461-4f9f-97f4-d9c401ec19a1",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C66",
+      "claim": "The kinetic diversity of BC responses is maintained in the absence of inhibition, suggesting that they are shaped in large part by excitatory network mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that the kinetic diversity of BC responses is maintained in the absence of inhibition, suggests that they are shaped in large part by excitatory network mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "dee3c188-544c-4bc9-a40f-33317298e349",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C67",
+      "claim": "Time-varying vesicle release rates from proximal and distal BCs were estimated by deconvolving the iGluSnFR response with an idealized quantal response described by an alpha function with decay kinetics ~30 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-varying vesicle release rates from proximal and distal BCs were estimated by deconvolving the iGluSnFR response with an idealized quantal response described by an alpha function with decay kinetics ~30 ms (Figure 5B, inset), which was obtained by matching the kinetics of 'spontaneous' quantal responses (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the deconvolution method used to estimate release rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ff92d030-7b43-4786-ab75-9d74bc070232",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C68",
+      "claim": "Convolving the average quantal response with the inferred trains of vesicle release events produced a signal similar to the original iGluSnFR measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, convolving the average quantal response with the inferred trains of vesicle release events (Figure 5C) produced a signal similar to the original iGluSnFR measurement (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validates the deconvolution approach by showing it can reconstruct the original signal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "4aac1b52-2e1e-4769-9ceb-ac406c93f931",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C69",
+      "claim": "Proximal BCs release vesicles throughout the duration of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The release profiles of proximal and distal BCs obtained in this manner support the notion that they have different capacities to release vesicles in response to light stimuli: proximal BCs release vesicles throughout the duration of the stimulus, while distal BCs release a large fraction of their vesicles at the onset of the light stimulus (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the release rate estimates shown in Figure 5E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "52766878-5d73-4642-9305-fe23072876b7",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C70",
+      "claim": "Distal BCs release a large fraction of their vesicles at the onset of the light stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The release profiles of proximal and distal BCs obtained in this manner support the notion that they have different capacities to release vesicles in response to light stimuli: proximal BCs release vesicles throughout the duration of the stimulus, while distal BCs release a large fraction of their vesicles at the onset of the light stimulus (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the release rate estimates shown in Figure 5E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "e8dd5125-02fa-4602-b0a4-9abdb65fe9e7",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C71",
+      "claim": "Starburst dendritic sectors are relatively electrically isolated from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experimental and modeling studies have shown starburst dendritic sectors to be relatively electrically isolated from each other (Poleg-Polsky et al., 2018; Morrie and Feller, 2018; Ozaita et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "9be890d6-787e-42a1-8857-8e9500035bff",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C72",
+      "claim": "The potential for intra-dendritic signaling in starburst cells is likely to be minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the potential for intra-dendritic signaling is likely to be minimal, we constructed a simple ball-and-stick model (NEURON), rather than a more complex network model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on previous studies showing electrical isolation of dendritic sectors.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "3a2b6405-5d88-4c95-b2e8-ff42e258e18f",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C73",
+      "claim": "Responses measured in the soma rose rapidly in the preferred direction compared to those evoked in the null direction, owing to the asymmetric distribution of inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage responses measured from the model cell soma were qualitatively similar to those measured experimentally. For example, responses measured in the soma rose rapidly in the preferred direction compared to those evoked in the null direction, owing to the asymmetric distribution of inputs (Figure 6A, middle panel; Ankri et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational model supported by citation to Ankri et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "9ebae0a2-929c-4aa3-b5be-5b97853c3e8a",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C74",
+      "claim": "The model accurately recapitulated direction selectivity measured in the distal intracellular Ca2+ signals similar to results from two-photon Ca2+ imaging experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The model also accurately recapitulated direction selectivity measured in the distal intracellular Ca2+ signals (Figure 6A, bottom traces) similar to results from two-photon Ca2+ imaging experiments (Euler et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational model validated by comparison to experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "558b6206-f1e9-460b-ae87-45b862e94541",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C75",
+      "claim": "Direction selectivity in the model was strongly dependent on stimulus velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for a mechanism that relies on a fixed delay, this direction selectivity was strongly dependent on stimulus velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "d9d9a432-d838-4dc5-85b6-952ce8857f35",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C76",
+      "claim": "In the model based on experimentally determined input kinetics, anisotropic summation occurs most robustly for slow-moving stimuli (<0.5 mm/s).",
+      "claim_type": "EXPLICIT",
+      "source": "In our model based on the experimentally determined input kinetics, anisotropic summation occurs most robustly for slow-moving stimuli (<0.5 mm/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "fae31c82-8fdc-46ee-9de8-1f97ad94be5b",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C77",
+      "claim": "When the kinetics of proximal and distal BCs were exchanged, the directional preference was reversed from preferring centrifugal to centripetal motion.",
+      "claim_type": "EXPLICIT",
+      "source": "First, when the kinetics of proximal and distal BCs were exchanged (i.e., proximal BCs were made transient and the distal BCs were made sustained), the directional preference was reversed from preferring centrifugal to centripetal motion (resulting in a negative DSi; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational model shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "b0b84207-48c2-4ecf-bf58-05586d77fcf4",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C78",
+      "claim": "The strength of the directional preference was stronger for the native compared to the switched BC distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the strength of the directional preference was stronger for the native compared to the switched BC distributions, indicating that the kinetic mechanisms work in concert with intrinsic dendritic mechanisms (Hausselt et al., 2007; Tukker et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "14a8d262-ea7a-4b86-9523-c5d1ef0503a6",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C79",
+      "claim": "DSi was strongly decreased when all BCs were made either sustained or transient.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, DSi was strongly decreased when all BCs were made either sustained or transient (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational model shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "f359b670-87e4-4629-93c6-a18f95757029",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C80",
+      "claim": "BC distribution manipulations had a statistically significant effect on DSi up to 1 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the direction selectivity was most robust for slow-moving stimuli, and we found that these BC distribution manipulations had a statistically significant effect on DSi up to 1 mm/s (p<0.05; one-way analysis of variance, ANOVA; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of the model results shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "90d96250-4ea3-4178-9bf2-1cd7fe9abfdd",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C81",
+      "claim": "DSi was significantly higher in the condition when BC distribution followed the native sustained-transient distribution over when all BCs were sustained for velocities up to 0.5 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "DSi was significantly higher in the condition when BC distribution followed the native sustained-transient distribution over when all BCs were sustained (p<0.0005; t-test), for velocities up to 0.5 mm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "07a7742b-8bba-41d2-a7bf-f18d52ac21b0",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C82",
+      "claim": "When sustained input was incrementally converted into transient ones, direction selectivity decreased linearly.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, when we fixed the BC input locations and incrementally converted sustained input into transient ones (starting from the proximal site furthest from the soma), direction selectivity decreased linearly (Figure 6C; velocity 0.15 mm/s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational model shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "8f3c05e7-fd93-469b-bb41-6946a54440c5",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C83",
+      "claim": "The amount of asymmetric temporal summation decreases as inputs with weaker plateau phases are swapped in.",
+      "claim_type": "EXPLICIT",
+      "source": "This is presumably because the amount of asymmetric temporal summation decreases as inputs with weaker plateau phases are swapped in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "6643dad2-bcf7-4693-8416-64d51037b625",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C84",
+      "claim": "For velocities with the strongest DS response, there were linear relationships between the magnitude of DSi and the mean distance between the sustained and transient BC input.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for velocities with the strongest DS response (positive for the control condition, and negative for the swapped release profile condition), there were indeed linear relationships between the magnitude of DSi and the mean distance between the sustained and transient BC input (R2\u22480.208 and 0.269, respectively, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "e97f67db-d454-4cca-8066-df9efdbba2b1",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C85",
+      "claim": "In the context of realistic estimates of glutamate input kinetics, the 'space-time' wiring model for direction selectivity holds merit under specific stimulus conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that in the context of realistic estimates of glutamate input kinetics, the 'space-time' wiring model for direction selectivity holds merit under specific stimulus conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ebb5d72b-be16-4b63-a690-5827d0aa8e64",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C86",
+      "claim": "Recent models of direction selectivity in the fly visual system and mammalian retina incorporate key aspects of two classic models of direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent models of direction selectivity in the primary sensing neurons in the fly visual system and mammalian retina incorporate key aspects of two classic models of direction selectivity reviewed by Borst et al., 2020, Murphy-Baum et al., 2021: one relying on multiplicative interactions between excitatory inputs (Hassenstein and Reichardt, 1956) and the other relying on divisive inhibition (Barlow and Levick, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review articles and classic papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "07fed798-4cd6-42ab-83d6-3eca40637e48",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C87",
+      "claim": "The neural substrates underlying inhibition in direction selectivity appear to be well worked out.",
+      "claim_type": "EXPLICIT",
+      "source": "While the neural substrates underlying inhibition appear to be well worked out, defining the precise sources of excitation and their kinetics has proven to be more difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "c738f0cc-8c5f-4a97-ae9b-3b015b1a1696",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C88",
+      "claim": "Defining the precise sources of excitation and their kinetics in direction selectivity has proven to be more difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "While the neural substrates underlying inhibition appear to be well worked out, defining the precise sources of excitation and their kinetics has proven to be more difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "713db22d-8836-4186-b691-78ee13f88f0e",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C89",
+      "claim": "iGluSnFR imaging circumvents many of the uncertainties associated with Ca2+ or electrophysiological measurements from the soma that has typically been applied to assess the properties of input kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "This method circumvents many of the uncertainties associated with Ca2+ or electrophysiological measurements from the soma that has typically been applied to assess the properties of input kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the iGluSnFR method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "afac4dae-2366-4d8d-9ecc-df89773a95b9",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C90",
+      "claim": "The results demonstrate stark kinetic differences in glutamate input across starburst dendrites, supporting the idea that nonlinear excitatory interactions enhance direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate stark kinetic differences in glutamate input across starburst dendrites, supporting the idea that nonlinear excitatory interactions enhance direction selectivity (Kim et al., 2014; Greene et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "674a7674-53a6-459f-a15e-8224de4cf62e",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C91",
+      "claim": "The input kinetic diversity observed appears to contradict recent large-scale surveys which show BC types of the same response polarity to have similar kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "At first pass, the input kinetic diversity across starburst dendrites we observed appears to contradict recent large-scale surveys which show BC types of the same response polarity to have similar kinetics (Franke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ced00d46-69c7-40cd-95ee-762b943082a0",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C92",
+      "claim": "The discrepancy with previous studies is explained by the choice of precise stimulus parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this discrepancy is easily explained by the choice of precise stimulus parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the apparent contradiction with previous work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "4f04246c-fc0e-4657-985d-3bc490d33d75",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C93",
+      "claim": "Robust kinetic differences between responses were measured in proximal and distal regions across a range of spot sizes, except for the smallest size that just covered the BC receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, robust kinetic differences between responses were measured in proximal and distal regions across a range of spot sizes, except for the smallest size that just covered the BC receptive field, which was used by Franke et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "55022462-03a3-4c92-a79e-5fe59291424a",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C94",
+      "claim": "When larger spots or full-field stimuli are utilized, BC kinetics are found to vary across the inner-plexiform layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when larger spots or full-field stimuli are utilized BC kinetics are found to vary across the inner-plexiform layer (Borghuis et al., 2013; Gaynes et al., 2022; Franke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "df669287-57e9-4392-a48b-4cb9e863b836",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C95",
+      "claim": "Previous studies have shown the functional diversification of BC responses arises mainly from GABAergic and/or glycinergic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown the functional diversification of BC responses arises mainly from GABAergic and/or glycinergic inhibition (Franke et al., 2017; Franke and Baden, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "d2442d6e-518e-4ff8-9259-4ede4e305268",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C96",
+      "claim": "It was surprising to observe clear kinetic differences when all inhibitory pathways were blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it was surprising to observe clear kinetic differences when all inhibitory pathways were blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the unexpected nature of the finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "e0cbc0d2-277e-45b6-96a0-c1b6fca8d2a2",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C97",
+      "claim": "BC kinetics could be influenced by inhibition, but inhibition was not required to generate kinetic differences.",
+      "claim_type": "EXPLICIT",
+      "source": "This implied that BC kinetics could be influenced by inhibition, but inhibition was not required to generate kinetic differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pharmacological experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "4f4f0eac-7503-4313-96c1-ed0a979d5504",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C98",
+      "claim": "Kinetic differences persist when rod-mediated signals are blocked by CNQX.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, kinetic differences persist when rod-mediated signals are blocked by CNQX suggesting that kinetic differences cannot be attributed solely to changes associated with rod/cone vision, consistent with a previous report (Awatramani and Slaughter, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to Awatramani and Slaughter, 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "79b29705-d55b-4531-bc71-4a936b6e1375",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C99",
+      "claim": "Input kinetic differences manifest for spot sizes larger than BC dendritic fields, implying that network mechanisms rather than cell-intrinsic factors are involved.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that input kinetic differences manifest for spot sizes larger than BC dendritic fields implied that network mechanisms (Figure 4A), rather than cell-intrinsic factors are involved, although these mechanisms are not mutually exclusive (Awatramani and Slaughter, 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the stimulus size experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "31cf91a8-dbd5-4b47-b3fe-2e46ac1b3dec",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C100",
+      "claim": "Specific types of BCs are known to be coupled to each other as well as to selective amacrine cells including the AII and A8 amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific types of BCs are known to be coupled to each other as well as to selective amacrine cells including the AII and A8 amacrine cells (Arai et al., 2010; Asari and Meister, 2014; Demb and Singer, 2012; Sigulinsky et al., 2020; Yadav et al., 2019; Zhang and Wu, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "b6d5fca2-6e48-49f6-9251-980f680e185a",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C101",
+      "claim": "Electrical coupling has been implicated in extending BC receptive fields spatially in salamander and fish retinas.",
+      "claim_type": "EXPLICIT",
+      "source": "Such coupling has been implicated in extending BC receptive fields spatially in salamander and fish retinas (Hare and Owen, 1990; Saito and Kujiraoka, 1988), and in mice, the electrical coupling can non-linearly affect the output of individual BCs (Kuo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "8114919e-2a83-43ba-9b99-6e30d66f1dc2",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C102",
+      "claim": "In mice, electrical coupling can non-linearly affect the output of individual BCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such coupling has been implicated in extending BC receptive fields spatially in salamander and fish retinas (Hare and Owen, 1990; Saito and Kujiraoka, 1988), and in mice, the electrical coupling can non-linearly affect the output of individual BCs (Kuo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kuo et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "b3c1eedf-79e3-498c-8c73-776f68868439",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C103",
+      "claim": "Whether BC7 have stronger coupling patterns compared to BC5 remains to be tested.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether BC7 have stronger coupling patterns compared to BC5 remains to be tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a gap in knowledge.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "fe3d32c4-4771-4435-89b6-5bf3be585055",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C104",
+      "claim": "The properties of iGluSnFR signals may depend on a variety of factors including the expression pattern, affinity, and kinetic properties of iGluSnFR.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not a trivial problem as the properties of iGluSnFR signals may depend on a variety of factors including the expression pattern, affinity, and kinetic properties of iGluSnFR, and in general expected to be vastly different from glutamate receptors that mediate the starburst synaptic responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the complexity of interpreting iGluSnFR signals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "f5c86ffb-9ed3-44f4-acfb-3b5f964830bb",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C105",
+      "claim": "Previous studies have shown iGluSnFR signals reflect local glutamate release from individual BC terminals despite being expressed uniformly along starburst dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown iGluSnFR signals reflect local glutamate release from individual BC terminals despite being expressed uniformly along starburst dendrites (Borghuis et al., 2013; Franke et al., 2017; Gaynes et al., 2022; Matsumoto et al., 2021; Strauss et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "8de9c965-bab1-4c7c-8bc7-cdf9523b8846",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C106",
+      "claim": "The deconvolution analysis assumes that the light-evoked responses are made up of a linear superposition of quantal events.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis assumes that the light-evoked responses are made up of a linear superposition of quantal events and there is not a significant build-up of glutamate within the synaptic cleft during ongoing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the assumptions of the analysis method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "39b32e07-ce81-4dfa-baaa-c4ea038230bd",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C107",
+      "claim": "The peak instantaneous release rate was estimated to be 5\u201310 vesicles/s.",
+      "claim_type": "EXPLICIT",
+      "source": "With these assumptions in mind, we estimated the peak instantaneous release rate to be 5\u201310 vesicles/s, which is in line with previous in vivo estimates made in zebrafish BC terminals (James et al., 2021; James et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate from the deconvolution analysis supported by comparison to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "16ba7078-5063-43c9-a574-43c06ec58c92",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C108",
+      "claim": "The steady-state release rates were estimated to be ~3 vesicles/s at proximal sites and ~1 vesicle/s at distal sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We also estimated the steady-state release rates to be ~3 vesicles/s at proximal sites and ~1 vesicle/s at distal sites, which is well below the maximum release rate estimated for photoreceptor synapses, which also contain ribbons (Hays et al., 2021; Hays et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate from the deconvolution analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "8dcea9da-85b7-4922-84b9-9142475d94a3",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C109",
+      "claim": "The estimated steady-state release rates are well below the maximum release rate estimated for photoreceptor synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "We also estimated the steady-state release rates to be ~3 vesicles/s at proximal sites and ~1 vesicle/s at distal sites, which is well below the maximum release rate estimated for photoreceptor synapses, which also contain ribbons (Hays et al., 2021; Hays et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous work on photoreceptor synapses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "d6be24c3-286f-45c3-b12a-fc0b9b08dedc",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C110",
+      "claim": "The modeling approach contrasts with recent studies in which key parameters were determined by an algorithm that optimizes direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modeling approach contrasts with recent studies in which key parameters including the vesicle release rates and the specific distribution of BC types along starburst dendrites were determined by an algorithm that optimizes direction selectivity (Ezra-Tsur et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous modeling approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "b87709a5-f90c-48ce-8112-3e22edc57df8",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C111",
+      "claim": "The modeling approach contrasts with phenomenological models such as the linear-non-linear cascade models.",
+      "claim_type": "EXPLICIT",
+      "source": "It also contrasts with phenomenological models such as the linear-non-linear cascade models, which leave out the biophysical details of the starburst (Kim et al., 2014; Franke et al., 2017; Strauss et al., 2022; Fransen and Borghuis, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous modeling approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "e08b78e0-bc8b-4c03-80a9-07a9f7214046",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C112",
+      "claim": "The intrinsic properties of the starburst remain poorly defined.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted, however, that the intrinsic properties of the starburst remain poorly defined and future work is needed to experimentally verify how inputs with distinct kinetics are transformed into dendritic voltage responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations and future directions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "bcbf0c7e-8740-4227-bfbf-d4c709fa1f63",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C113",
+      "claim": "The robust direction selectivity that is experimentally observed in starbursts occurs across the range of velocities (100\u20132000 \u03bcm/s).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the robust direction selectivity that is experimentally observed in starbursts occurs across the range of velocities (100\u20132000 \u03bcm/s; Ding et al., 2016; Summers and Feller, 2022), indicating additional mechanisms are involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ding et al., 2016 and Summers and Feller, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "6ed317bc-e021-45a9-a120-afe8f8fd9ce2",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C114",
+      "claim": "Additional mechanisms beyond input kinetics are involved in producing robust direction selectivity across a large range of velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the robust direction selectivity that is experimentally observed in starbursts occurs across the range of velocities (100\u20132000 \u03bcm/s; Ding et al., 2016; Summers and Feller, 2022), indicating additional mechanisms are involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of model results to experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "5d783160-3d37-420d-9748-ad064e651208",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C115",
+      "claim": "The study emphasizes the role of BC kinetics in driving direction selectivity for slow-moving spots.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth noting while our study emphasizes the role of BC kinetics in driving direction selectivity for slow-moving spots, for other stimuli, such as radial motion, or for stimuli that emerge suddenly, the inhibitory surrounds of BCs may enhance motion sensitivity in more complicated ways (Gaynes et al., 2022; Strauss et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "f853fe7b-d060-4961-968b-d7d9eaa7da50",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C116",
+      "claim": "For other stimuli such as radial motion or stimuli that emerge suddenly, the inhibitory surrounds of BCs may enhance motion sensitivity in more complicated ways.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth noting while our study emphasizes the role of BC kinetics in driving direction selectivity for slow-moving spots, for other stimuli, such as radial motion, or for stimuli that emerge suddenly, the inhibitory surrounds of BCs may enhance motion sensitivity in more complicated ways (Gaynes et al., 2022; Strauss et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gaynes et al., 2022 and Strauss et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "e6ade800-7a54-4d43-9046-80bcd153a56d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C117",
+      "claim": "Space-time wiring models for direction selectivity have been proposed in diverse systems including the primate retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Space-time wiring models for direction selectivity have been proposed in diverse systems including the primate retina (Patterson et al., 2022; Kim et al., 2022; Smith et al., 2022), visual cortex (Lien and Scanziani, 2018; De Valois and Cottaris, 1998), as well as the fly optic lobe (Haag et al., 2016; Leong et al., 2016; Behnia et al., 2014; Takemura et al., 2013; but see Takemura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to work in different systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "a5d840af-4b75-4162-8195-194990b3e27d",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C118",
+      "claim": "Recent studies have made great strides in identifying the precise anatomical substrates underlying direction selectivity computation in diverse systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have made great strides in identifying the precise anatomical substrates underlying the computation, in all these model systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about progress in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "78d0dd58-b7c6-48cd-8056-67101b83fc56",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C119",
+      "claim": "Elegant studies assessing presynaptic dynamics provide strong support that anisotropic summation of excitatory signals shapes direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Elegant studies assessing presynaptic dynamics, provide strong support that anisotropic summation of excitatory signals shapes direction selectivity (Lien and Scanziani, 2018; Groschner et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lien and Scanziani, 2018 and Groschner et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "27ba2f6f-d19f-4386-b349-19658189aaf5",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C120",
+      "claim": "Proximal and distal starburst dendrites are approximately 5 \u03bcm apart in depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Signals from dendritic regions proximal to the starburst soma were captured in a different optical plane than the more distal dendrites, which are ~5 \u03bcm apart (Ding et al., 2016; Greene et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ding et al., 2016 and Greene et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "0f9625e7-a2d8-4cc1-9658-7b16aa73b6a4",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C121",
+      "claim": "BC7 terminals co-stratify with dendrites of ON starbursts.",
+      "claim_type": "IMPLICIT",
+      "source": "The intensity profiles of the BC terminals labeled with iGluSnFR (gray), and starburst dendrites labeled with tdTomato (black) across the inner plexiform layer (IPL) show that BC terminals co-stratify with dendrites of ON starbursts (right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A by the overlapping intensity profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "6c7ea803-66a3-4d04-844f-77cb82b422a0",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "claim_id": "C122",
+      "claim": "Differences in input kinetics between proximal and distal dendrites provide the first piece of direct evidence supporting the 'space-time' wiring model.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results provide the first piece of direct evidence that the kinetics of glutamatergic input varies along starburst dendrites, supporting the 'space-time' wiring model for direction selectivity (Kim et al., 2014; Greene et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the initial experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1811ab90-e6dc-487c-a540-662ebb4c1aee",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior to this study, the space-time wiring model for direction selectivity in starburst amacrine cells was proposed but lacked direct experimental verification of kinetically distinct glutamate inputs along dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C23, and C31 consistently establish the state of the field prior to this work. These claims accurately represent the gap in knowledge that motivated the study, supported by appropriate citations to prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "63050ccc-34fc-4d52-a015-0cf276b75a23",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Direct iGluSnFR imaging revealed that glutamate signals measured from proximal starburst dendrites were significantly more sustained compared to distal dendrites, with the sustained/transient index (STi) decreasing systematically with distance from the soma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C35, C36, and C39 present quantitative experimental data with appropriate statistical tests (p<0.001, t-test) showing clear kinetic differences between proximal and distal inputs. The measurements are supported by Figures 1 and 2, with adequate sample sizes (n=20 dendrites, 242 proximal ROIs, 563 distal ROIs). C122 correctly identifies this as the first direct evidence for the space-time wiring model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "3d797dfc-50c2-4fec-936e-a24ca66145d0",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Kinetic differences between proximal and distal inputs were observed across a range of stimulus sizes (100-800 \u03bcm), with differences most pronounced for stimuli >200 \u03bcm in diameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C57, and C93 are supported by systematic experimental data across multiple stimulus sizes shown in Figure 4. Statistical analysis (Kolmogorov-Smirnov test, p<0.001) confirms significant differences. The observation that smallest stimuli (~50 \u03bcm) did not show differences reconciles apparent contradictions with prior work (C91-C93).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "c50b7ed7-4a8c-4345-a7b8-2634a116d46e",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Kinetic differences between proximal and distal inputs persisted in the presence of pharmacological blockade of inhibitory pathways, indicating that excitatory rather than inhibitory network mechanisms primarily shape these differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C59, and C60 are supported by pharmacological experiments using GABA and glutamate receptor antagonists (Figure 4). The persistence of kinetic differences under blockade (p<0.001, Kolmogorov-Smirnov test) provides strong evidence that inhibition is not required for generating these differences, though C96-C97 appropriately note this was unexpected given prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "5d37247e-41b2-4b4d-a983-f4b336790e1b",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Under inhibitory receptor blockade, iGluSnFR responses showed unexpected lateral excitation extending beyond BC dendritic field sizes, likely attributable to electrical coupling between bipolar cells and amacrine cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 describe experimental observations from pharmacological experiments with appropriate statistical support (p<0.01). C65 and C99 provide reasonable mechanistic interpretations supported by citations to prior work on electrical coupling. However, C103 acknowledges that differential coupling between BC7 and BC5 remains untested, appropriately limiting the strength of this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "23e77db4-191d-49fa-83ff-a8bcf1da0fce",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Direct imaging of BC7 terminals confirmed sustained glutamate release kinetics, consistent with anatomical evidence that BC7s provide proximal input to starburst dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 establish anatomical connectivity from prior work. C46-C48 provide direct experimental evidence from BC7 imaging (Figure 3) showing sustained responses. C49 appropriately concludes BC7s are the source of sustained proximal input. However, C50 acknowledges a limitation: inability to image BC5s prevents direct confirmation they provide transient distal input.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "31a90eea-76f5-42cc-af9f-48357b12a765",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "White-noise stimulation revealed biphasic impulse responses for both proximal and distal inputs, suggesting that under high-frequency continuous stimulation, input kinetics are unlikely to contribute to direction selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 present experimental observations from white-noise experiments (Figure 3\u2014figure supplement 2). C53 provides a reasonable mechanistic interpretation. C55 draws an appropriate conclusion about the stimulus-dependence of the kinetic mechanism, though this somewhat limits the generality of the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "f3f0cb59-96d1-4fff-b426-a01dd42c6ee1",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Temporal deconvolution analysis estimated that steady-state vesicle release rates were approximately 3 times higher at proximal sites (~3 vesicles/s) compared to distal sites (~1 vesicle/s), with peak rates of 5-10 vesicles/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C68 describe the deconvolution method and validation. C69-C70 and C6 present the key quantitative findings. However, C106 acknowledges critical assumptions (linear superposition, no glutamate buildup) that may not hold. The estimates in C107-C108 are compared to prior work for plausibility, but the method's validity depends on untested assumptions about iGluSnFR properties (C104). Additional validation would strengthen these quantitative claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "7ee26dd2-d6da-4f69-93ed-772067a75b63",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A biophysically-constrained computational model demonstrated that experimentally-determined input kinetics contribute to direction selectivity primarily at low stimulus velocities (<0.5 mm/s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 justify the modeling approach based on prior work. C73-C74 show the model recapitulates experimental observations. C75-C76 and C7 present the key finding about velocity dependence. C85 and C115 appropriately conclude the space-time wiring model has merit under specific conditions. The model is well-constrained by experimental data, though C112 notes intrinsic starburst properties remain poorly defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "e809bbec-82da-4749-96a5-fb1d192d055c",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Computational modeling showed that swapping the kinetics of proximal and distal inputs reversed directional preference, and that direction selectivity decreased when all inputs were made uniform or when sustained inputs were incrementally converted to transient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C82 present systematic computational manipulations with appropriate statistical analysis (ANOVA p<0.05, t-test p<0.0005). C84 shows linear relationships between spatial offset and DSi (R\u00b2\u22480.21-0.27). These modeling results provide strong support for the importance of kinetic diversity, though the modest R\u00b2 values suggest other factors also contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "37163020-8384-4845-8adf-6f88c919219b",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The combined experimental and modeling results provide direct support for the space-time wiring model for direction selectivity in starburst amacrine cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C90, and C122 represent the main conclusion of the study. This is well-supported by the convergent experimental evidence (C3-C5, C46-C49) and computational modeling (C7, C77-C82). However, the conclusion is appropriately qualified by C55, C76, C85, and C115, which limit the model's applicability to specific stimulus conditions (large, slow-moving objects).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "e6e990c3-7ae2-4d8b-a382-78ec16bd458f",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Experimentally observed direction selectivity in starbursts occurs across a wide range of velocities (100-2000 \u03bcm/s), indicating that additional mechanisms beyond input kinetics are involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C114 appropriately acknowledge limitations of the kinetic mechanism based on comparison to prior experimental observations. This is an important caveat that prevents overinterpretation of the modeling results, which show kinetic contributions primarily at low velocities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "6d24634c-1ac9-4a21-a5ba-9ac531b3916f",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The sustained/transient index was independent of response amplitude, and latencies and rise times were similar for proximal and distal sites, indicating that kinetic differences are not due to signal-to-noise issues or transmission delays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 address important controls. C40 is supported by Figure 3\u2014figure supplement 1 showing no correlation between STi and amplitude. C41-C42 are supported by Figure 2D-E. These controls strengthen confidence that the observed kinetic differences reflect genuine biological properties rather than technical artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "a7b934a0-17ce-4cb9-ab0e-4eb93aabcb6e",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The apparent contradiction with prior studies showing similar BC kinetics is explained by differences in stimulus parameters, specifically that kinetic differences emerge for larger stimuli but not for small spots covering only the BC receptive field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94 appropriately reconcile the current findings with prior work (Franke et al., 2017). The explanation is supported by the systematic stimulus size experiments (C57, C93) and citations to prior work showing stimulus-dependent kinetic diversity (C94). This demonstrates careful consideration of the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "ee97e7e3-78df-45cd-a11f-a910e5a717aa",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Kinetic differences persist when rod-mediated signals are blocked by CNQX, indicating they cannot be attributed solely to rod/cone vision differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 presents an important control experiment ruling out an alternative explanation. The result is supported by citation to prior work (Awatramani and Slaughter, 2000) showing similar findings. This strengthens the conclusion that kinetic differences reflect intrinsic properties of BC types rather than photoreceptor input differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "e1b76ab9-9b29-4708-8dee-ac3b4d0a97a9",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Electrical coupling between bipolar cells and between BCs and amacrine cells may contribute to kinetic differences, though whether BC7 and BC5 have different coupling patterns remains untested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C102 cite prior work on electrical coupling and its effects. However, C103 explicitly acknowledges that differential coupling between BC7 and BC5 remains untested. This is presented as a plausible mechanism but lacks direct experimental support in this study. The speculation is reasonable but requires future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "8e8b8665-b4cd-43a9-8566-95d60f1a36e7",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Despite potential complexities in interpreting iGluSnFR signals, prior studies have shown these signals reflect local glutamate release from individual BC terminals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 appropriately acknowledges complexities in interpreting iGluSnFR signals. C105 cites multiple prior studies validating that iGluSnFR signals reflect local release despite uniform expression. This provides important context for interpreting the experimental results, though some uncertainty remains about quantitative accuracy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "88b04e10-6247-4309-a437-e872e1d62cf4",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The modeling approach differs from prior optimization-based and phenomenological models by using experimentally-constrained parameters, though starburst intrinsic properties remain poorly defined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C111 appropriately distinguish this modeling approach from prior work through citations. C112 acknowledges an important limitation: intrinsic starburst properties are poorly defined. This is an honest assessment of model limitations that appropriately qualifies the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    },
+    {
+      "id": "c76dad7c-5e8b-41ca-bfbd-e31386518724",
+      "content_id": "918bdf41-a709-4f73-9182-5655aeb483fb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "For other stimulus types such as radial motion or suddenly emerging stimuli, inhibitory surrounds of BCs may enhance motion sensitivity in more complex ways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C116 is speculative, supported only by citations to recent work (Gaynes et al., 2022; Strauss et al., 2022). This represents a reasonable hypothesis about stimulus-dependent mechanisms but is not directly tested in this study. It appropriately qualifies the scope of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:03:11.298634Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9c47e010-c567-4476-9639-468a2d807e90",
+      "result_id": "1811ab90-e6dc-487c-a540-662ebb4c1aee"
+    },
+    {
+      "claim_id": "fe73de36-604e-4663-9614-79354af6d943",
+      "result_id": "1811ab90-e6dc-487c-a540-662ebb4c1aee"
+    },
+    {
+      "claim_id": "20fa2478-bd5c-4688-8741-fd244083028d",
+      "result_id": "1811ab90-e6dc-487c-a540-662ebb4c1aee"
+    },
+    {
+      "claim_id": "554a8302-c96a-4798-98c0-ee825fe8832c",
+      "result_id": "1811ab90-e6dc-487c-a540-662ebb4c1aee"
+    },
+    {
+      "claim_id": "cbfa8a61-090b-4b4e-9b74-b47675922234",
+      "result_id": "63050ccc-34fc-4d52-a015-0cf276b75a23"
+    },
+    {
+      "claim_id": "230ffc95-c57e-4ab4-b80c-e31ef5036c4c",
+      "result_id": "63050ccc-34fc-4d52-a015-0cf276b75a23"
+    },
+    {
+      "claim_id": "edc2842f-978d-4273-9343-05fcb66b6614",
+      "result_id": "63050ccc-34fc-4d52-a015-0cf276b75a23"
+    },
+    {
+      "claim_id": "ec64d18d-b12e-4b55-aafa-b6dab66efc0a",
+      "result_id": "63050ccc-34fc-4d52-a015-0cf276b75a23"
+    },
+    {
+      "claim_id": "fff01a7a-9753-4e92-b5f9-4ed64fde8cdf",
+      "result_id": "63050ccc-34fc-4d52-a015-0cf276b75a23"
+    },
+    {
+      "claim_id": "851b5bbd-5762-4dbb-8ab2-8206fc1011f5",
+      "result_id": "63050ccc-34fc-4d52-a015-0cf276b75a23"
+    },
+    {
+      "claim_id": "6c7ea803-66a3-4d04-844f-77cb82b422a0",
+      "result_id": "63050ccc-34fc-4d52-a015-0cf276b75a23"
+    },
+    {
+      "claim_id": "f859a013-7f2e-4942-96eb-2da5d7a15e4c",
+      "result_id": "3d797dfc-50c2-4fec-936e-a24ca66145d0"
+    },
+    {
+      "claim_id": "4d923ee0-4a96-4ae6-8db8-d33c29caba6d",
+      "result_id": "3d797dfc-50c2-4fec-936e-a24ca66145d0"
+    },
+    {
+      "claim_id": "4ebe1548-2d61-40d8-99a1-6d08389b935b",
+      "result_id": "3d797dfc-50c2-4fec-936e-a24ca66145d0"
+    },
+    {
+      "claim_id": "4f04246c-fc0e-4657-985d-3bc490d33d75",
+      "result_id": "3d797dfc-50c2-4fec-936e-a24ca66145d0"
+    },
+    {
+      "claim_id": "f0e6f2d8-1585-4454-b12a-2638ae552cc3",
+      "result_id": "c50b7ed7-4a8c-4345-a7b8-2634a116d46e"
+    },
+    {
+      "claim_id": "fb018b85-33b1-4c99-bff8-73bab0eebd29",
+      "result_id": "c50b7ed7-4a8c-4345-a7b8-2634a116d46e"
+    },
+    {
+      "claim_id": "ab0bb559-8240-4ee4-b155-cf0d74d54784",
+      "result_id": "c50b7ed7-4a8c-4345-a7b8-2634a116d46e"
+    },
+    {
+      "claim_id": "a446c7bc-60a8-4d86-ba2b-a210e781adc9",
+      "result_id": "c50b7ed7-4a8c-4345-a7b8-2634a116d46e"
+    },
+    {
+      "claim_id": "ff726757-3461-4f9f-97f4-d9c401ec19a1",
+      "result_id": "c50b7ed7-4a8c-4345-a7b8-2634a116d46e"
+    },
+    {
+      "claim_id": "d2442d6e-518e-4ff8-9259-4ede4e305268",
+      "result_id": "c50b7ed7-4a8c-4345-a7b8-2634a116d46e"
+    },
+    {
+      "claim_id": "e0cbc0d2-277e-45b6-96a0-c1b6fca8d2a2",
+      "result_id": "c50b7ed7-4a8c-4345-a7b8-2634a116d46e"
+    },
+    {
+      "claim_id": "3d30451a-d09a-4c8e-860d-3bb87c827a2f",
+      "result_id": "5d37247e-41b2-4b4d-a983-f4b336790e1b"
+    },
+    {
+      "claim_id": "fb67cc19-cbe0-4558-95c7-5f09361e53fb",
+      "result_id": "5d37247e-41b2-4b4d-a983-f4b336790e1b"
+    },
+    {
+      "claim_id": "856a3816-bb0f-4a7f-b8cd-be018cca466d",
+      "result_id": "5d37247e-41b2-4b4d-a983-f4b336790e1b"
+    },
+    {
+      "claim_id": "0c8c735e-7229-4e4c-90af-80dfd29e68eb",
+      "result_id": "5d37247e-41b2-4b4d-a983-f4b336790e1b"
+    },
+    {
+      "claim_id": "8e688be2-9e8c-4447-9496-352e91d15092",
+      "result_id": "5d37247e-41b2-4b4d-a983-f4b336790e1b"
+    },
+    {
+      "claim_id": "79b29705-d55b-4531-bc71-4a936b6e1375",
+      "result_id": "5d37247e-41b2-4b4d-a983-f4b336790e1b"
+    },
+    {
+      "claim_id": "eadec50d-f428-40f8-9f2a-5cdd21bd46a3",
+      "result_id": "23e77db4-191d-49fa-83ff-a8bcf1da0fce"
+    },
+    {
+      "claim_id": "1b7224e4-e08c-4c55-95bc-1e72abdf377d",
+      "result_id": "23e77db4-191d-49fa-83ff-a8bcf1da0fce"
+    },
+    {
+      "claim_id": "eb047bd7-c865-4598-a0c2-382c14ce1ee2",
+      "result_id": "23e77db4-191d-49fa-83ff-a8bcf1da0fce"
+    },
+    {
+      "claim_id": "f6f069cc-2efb-45ae-82d6-46e41074998e",
+      "result_id": "23e77db4-191d-49fa-83ff-a8bcf1da0fce"
+    },
+    {
+      "claim_id": "4cd76b46-6f2a-451a-b984-1f4a2981851c",
+      "result_id": "23e77db4-191d-49fa-83ff-a8bcf1da0fce"
+    },
+    {
+      "claim_id": "6591f284-4963-41fd-9e21-b1b5ee2f796d",
+      "result_id": "23e77db4-191d-49fa-83ff-a8bcf1da0fce"
+    },
+    {
+      "claim_id": "6c722c89-7c59-4584-b9a7-f392c270d72a",
+      "result_id": "23e77db4-191d-49fa-83ff-a8bcf1da0fce"
+    },
+    {
+      "claim_id": "0f9625e7-a2d8-4cc1-9658-7b16aa73b6a4",
+      "result_id": "23e77db4-191d-49fa-83ff-a8bcf1da0fce"
+    },
+    {
+      "claim_id": "22ca9f99-5169-4e3f-b9a7-396cf6f24739",
+      "result_id": "31a90eea-76f5-42cc-af9f-48357b12a765"
+    },
+    {
+      "claim_id": "f6d70384-d3d7-40ce-a1b0-e78b0ec4ef5d",
+      "result_id": "31a90eea-76f5-42cc-af9f-48357b12a765"
+    },
+    {
+      "claim_id": "9f02d019-6fbf-4c16-9dd4-413f0adf3c8e",
+      "result_id": "31a90eea-76f5-42cc-af9f-48357b12a765"
+    },
+    {
+      "claim_id": "3729dd15-3a8b-400f-a15d-4f6d81221ce2",
+      "result_id": "31a90eea-76f5-42cc-af9f-48357b12a765"
+    },
+    {
+      "claim_id": "ad735d07-c3a9-4f42-8ba9-5249c9292744",
+      "result_id": "31a90eea-76f5-42cc-af9f-48357b12a765"
+    },
+    {
+      "claim_id": "4f8c7a2f-965f-4c0c-a71c-e036e60c98d1",
+      "result_id": "f3f0cb59-96d1-4fff-b426-a01dd42c6ee1"
+    },
+    {
+      "claim_id": "dee3c188-544c-4bc9-a40f-33317298e349",
+      "result_id": "f3f0cb59-96d1-4fff-b426-a01dd42c6ee1"
+    },
+    {
+      "claim_id": "ff92d030-7b43-4786-ab75-9d74bc070232",
+      "result_id": "f3f0cb59-96d1-4fff-b426-a01dd42c6ee1"
+    },
+    {
+      "claim_id": "4aac1b52-2e1e-4769-9ceb-ac406c93f931",
+      "result_id": "f3f0cb59-96d1-4fff-b426-a01dd42c6ee1"
+    },
+    {
+      "claim_id": "52766878-5d73-4642-9305-fe23072876b7",
+      "result_id": "f3f0cb59-96d1-4fff-b426-a01dd42c6ee1"
+    },
+    {
+      "claim_id": "8de9c965-bab1-4c7c-8bc7-cdf9523b8846",
+      "result_id": "f3f0cb59-96d1-4fff-b426-a01dd42c6ee1"
+    },
+    {
+      "claim_id": "39b32e07-ce81-4dfa-baaa-c4ea038230bd",
+      "result_id": "f3f0cb59-96d1-4fff-b426-a01dd42c6ee1"
+    },
+    {
+      "claim_id": "16ba7078-5063-43c9-a574-43c06ec58c92",
+      "result_id": "f3f0cb59-96d1-4fff-b426-a01dd42c6ee1"
+    },
+    {
+      "claim_id": "14d60f69-b3a8-4781-8d18-8d49de204e4d",
+      "result_id": "7ee26dd2-d6da-4f69-93ed-772067a75b63"
+    },
+    {
+      "claim_id": "e8dd5125-02fa-4602-b0a4-9abdb65fe9e7",
+      "result_id": "7ee26dd2-d6da-4f69-93ed-772067a75b63"
+    },
+    {
+      "claim_id": "9be890d6-787e-42a1-8857-8e9500035bff",
+      "result_id": "7ee26dd2-d6da-4f69-93ed-772067a75b63"
+    },
+    {
+      "claim_id": "3a2b6405-5d88-4c95-b2e8-ff42e258e18f",
+      "result_id": "7ee26dd2-d6da-4f69-93ed-772067a75b63"
+    },
+    {
+      "claim_id": "9ebae0a2-929c-4aa3-b5be-5b97853c3e8a",
+      "result_id": "7ee26dd2-d6da-4f69-93ed-772067a75b63"
+    },
+    {
+      "claim_id": "558b6206-f1e9-460b-ae87-45b862e94541",
+      "result_id": "7ee26dd2-d6da-4f69-93ed-772067a75b63"
+    },
+    {
+      "claim_id": "d9d9a432-d838-4dc5-85b6-952ce8857f35",
+      "result_id": "7ee26dd2-d6da-4f69-93ed-772067a75b63"
+    },
+    {
+      "claim_id": "e97f67db-d454-4cca-8066-df9efdbba2b1",
+      "result_id": "7ee26dd2-d6da-4f69-93ed-772067a75b63"
+    },
+    {
+      "claim_id": "5d783160-3d37-420d-9748-ad064e651208",
+      "result_id": "7ee26dd2-d6da-4f69-93ed-772067a75b63"
+    },
+    {
+      "claim_id": "fae31c82-8fdc-46ee-9de8-1f97ad94be5b",
+      "result_id": "e809bbec-82da-4749-96a5-fb1d192d055c"
+    },
+    {
+      "claim_id": "b0b84207-48c2-4ecf-bf58-05586d77fcf4",
+      "result_id": "e809bbec-82da-4749-96a5-fb1d192d055c"
+    },
+    {
+      "claim_id": "14a8d262-ea7a-4b86-9523-c5d1ef0503a6",
+      "result_id": "e809bbec-82da-4749-96a5-fb1d192d055c"
+    },
+    {
+      "claim_id": "f359b670-87e4-4629-93c6-a18f95757029",
+      "result_id": "e809bbec-82da-4749-96a5-fb1d192d055c"
+    },
+    {
+      "claim_id": "90d96250-4ea3-4178-9bf2-1cd7fe9abfdd",
+      "result_id": "e809bbec-82da-4749-96a5-fb1d192d055c"
+    },
+    {
+      "claim_id": "07a7742b-8bba-41d2-a7bf-f18d52ac21b0",
+      "result_id": "e809bbec-82da-4749-96a5-fb1d192d055c"
+    },
+    {
+      "claim_id": "8f3c05e7-fd93-469b-bb41-6946a54440c5",
+      "result_id": "e809bbec-82da-4749-96a5-fb1d192d055c"
+    },
+    {
+      "claim_id": "6643dad2-bcf7-4693-8416-64d51037b625",
+      "result_id": "e809bbec-82da-4749-96a5-fb1d192d055c"
+    },
+    {
+      "claim_id": "ed1ad4e4-25fc-405b-b1a2-e326d46525be",
+      "result_id": "37163020-8384-4845-8adf-6f88c919219b"
+    },
+    {
+      "claim_id": "afac4dae-2366-4d8d-9ecc-df89773a95b9",
+      "result_id": "37163020-8384-4845-8adf-6f88c919219b"
+    },
+    {
+      "claim_id": "6c7ea803-66a3-4d04-844f-77cb82b422a0",
+      "result_id": "37163020-8384-4845-8adf-6f88c919219b"
+    },
+    {
+      "claim_id": "bcbf0c7e-8740-4227-bfbf-d4c709fa1f63",
+      "result_id": "e6e990c3-7ae2-4d8b-a382-78ec16bd458f"
+    },
+    {
+      "claim_id": "6ed317bc-e021-45a9-a120-afe8f8fd9ce2",
+      "result_id": "e6e990c3-7ae2-4d8b-a382-78ec16bd458f"
+    },
+    {
+      "claim_id": "0f17a3dc-2e20-46ad-9012-3a46c0673bcb",
+      "result_id": "6d24634c-1ac9-4a21-a5ba-9ac531b3916f"
+    },
+    {
+      "claim_id": "acbc62a5-db0c-4211-8713-d9ac0f5a026f",
+      "result_id": "6d24634c-1ac9-4a21-a5ba-9ac531b3916f"
+    },
+    {
+      "claim_id": "4cfca4df-2717-48b2-b215-f2aa2d3aa06c",
+      "result_id": "6d24634c-1ac9-4a21-a5ba-9ac531b3916f"
+    },
+    {
+      "claim_id": "674a7674-53a6-459f-a15e-8224de4cf62e",
+      "result_id": "a7b934a0-17ce-4cb9-ab0e-4eb93aabcb6e"
+    },
+    {
+      "claim_id": "ced00d46-69c7-40cd-95ee-762b943082a0",
+      "result_id": "a7b934a0-17ce-4cb9-ab0e-4eb93aabcb6e"
+    },
+    {
+      "claim_id": "4f04246c-fc0e-4657-985d-3bc490d33d75",
+      "result_id": "a7b934a0-17ce-4cb9-ab0e-4eb93aabcb6e"
+    },
+    {
+      "claim_id": "55022462-03a3-4c92-a79e-5fe59291424a",
+      "result_id": "a7b934a0-17ce-4cb9-ab0e-4eb93aabcb6e"
+    },
+    {
+      "claim_id": "4f4f0eac-7503-4313-96c1-ed0a979d5504",
+      "result_id": "ee97e7e3-78df-45cd-a11f-a910e5a717aa"
+    },
+    {
+      "claim_id": "31cf91a8-dbd5-4b47-b3fe-2e46ac1b3dec",
+      "result_id": "e1b76ab9-9b29-4708-8dee-ac3b4d0a97a9"
+    },
+    {
+      "claim_id": "b6d5fca2-6e48-49f6-9251-980f680e185a",
+      "result_id": "e1b76ab9-9b29-4708-8dee-ac3b4d0a97a9"
+    },
+    {
+      "claim_id": "8114919e-2a83-43ba-9b99-6e30d66f1dc2",
+      "result_id": "e1b76ab9-9b29-4708-8dee-ac3b4d0a97a9"
+    },
+    {
+      "claim_id": "b3c1eedf-79e3-498c-8c73-776f68868439",
+      "result_id": "e1b76ab9-9b29-4708-8dee-ac3b4d0a97a9"
+    },
+    {
+      "claim_id": "fe3d32c4-4771-4435-89b6-5bf3be585055",
+      "result_id": "8e8b8665-b4cd-43a9-8566-95d60f1a36e7"
+    },
+    {
+      "claim_id": "f5c86ffb-9ed3-44f4-acfb-3b5f964830bb",
+      "result_id": "8e8b8665-b4cd-43a9-8566-95d60f1a36e7"
+    },
+    {
+      "claim_id": "d6be24c3-286f-45c3-b12a-fc0b9b08dedc",
+      "result_id": "88b04e10-6247-4309-a437-e872e1d62cf4"
+    },
+    {
+      "claim_id": "b87709a5-f90c-48ce-8112-3e22edc57df8",
+      "result_id": "88b04e10-6247-4309-a437-e872e1d62cf4"
+    },
+    {
+      "claim_id": "e08b78e0-bc8b-4c03-80a9-07a9f7214046",
+      "result_id": "88b04e10-6247-4309-a437-e872e1d62cf4"
+    },
+    {
+      "claim_id": "f853fe7b-d060-4961-968b-d7d9eaa7da50",
+      "result_id": "c76dad7c-5e8b-41ca-bfbd-e31386518724"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2173 @@
+{
+  "submission": {
+    "id": "9bf97266-ba27-44db-b308-720bd8b0063d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:36:56.465718Z",
+    "updated_at": "2025-12-03T20:36:56.465718Z"
+  },
+  "content": [
+    {
+      "id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "submission_id": "9bf97266-ba27-44db-b308-720bd8b0063d",
+      "content_type": "manuscript",
+      "content_text": "# Single-cell analysis of the aged ovarian immune system reveals a shift towards adaptive immunity and attenuated cell function\n\n## Authors\n\n- Tal Ben Yaakov<sup>1</sup> ([ORCID: 0009-0005-0550-2901](https://orcid.org/0009-0005-0550-2901))\n- Tanya Wasserman<sup>1</sup> ([ORCID: 0000-0003-0221-1891](https://orcid.org/0000-0003-0221-1891))\n- Eliel Aknin<sup>1</sup>\n- Yonatan Savir<sup>1</sup> ([ORCID: 0000-0002-5345-8491](https://orcid.org/0000-0002-5345-8491)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Biophysics and Systems Biology, Rappaport Faculty of Medicine, Technion \u2013 Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))\n2. Rappaport Family Institute for Research in the Medical Sciences Haifa Israel ([ROR:029hzjx43](https://ror.org/029hzjx43))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe immune system plays a major role in maintaining many physiological processes in the reproductive system. However, a complete characterization of the immune milieu in the ovary, and particularly how it is affected by female aging, is still lacking. Here, we utilize single-cell RNA sequencing and flow cytometry to construct the complete description of the murine ovarian immune system. We show that the composition of the immune cells undergoes an extensive shift with age towards adaptive immunity. We analyze the effect of aging on gene expression and chemokine and cytokine networks and show an overall decreased expression of inflammatory mediators together with an increased expression of senescent cells recognition receptors. Our results suggest that the fertile female\u2019s ovarian immune aging differs from the suggested female post-menopause inflammaging as it copes with the inflammatory stimulations during repeated cycles and the increasing need for clearance of accumulating atretic follicles.\n\n## Introduction\n\nOne of the effects of aging in mammalians is a decline in fertility and hence a diminished capability to give birth to offspring (Pal and Santoro, 2003). In women from their early 30\u2019s, there is a sharp decrease in fertility, accompanied by an exponentially increase in the odds of miscarriages and birth defects, alongside a drastically lower success rate of in-vitro fertilization (IVF) procedure (Madankumar et al., 2003; Nelson and Lawlor, 2011; Szamatowicz and Grochowski, 1998). Another well-documented effect of age is on the ability of the immune system to overcome illnesses and eliminate different pathogens (Kovacs et al., 2009; Plowden et al., 2004; Solana et al., 2006; Weiskopf et al., 2009).\n\nThe presence of immune cells such as macrophages (M\u03c6s), dendritic cells (DCs), granulocytes, T and B lymphocytes was identified through the entire female reproductive tract (Givan et al., 1997; Lee et al., 2015), and in the ovaries in particular (Best et al., 1996; Bukulmez and Arici, 2000; Carlock et al., 2013; Yang et al., 2019). These cells participate in many fertility-related processes in the ovaries \u2013 from follicle development up to ovulation and corpus luteum formation and regression (Cohen-Fredarow et al., 2014; Fair, 2015; Oakley et al., 2010; Wu et al., 2004; Yang et al., 2019). Ovulation, for example, is considered an inflammatory process that includes edema, vasodilation, pain, and heat (Duffy et al., 2019; Richards et al., 2008). Changes in the immune milieu, such as depletion of M\u03c6s and DCs have been shown to result in a decreased number of ovulated oocytes, depletion of endothelial cells, increased follicular atresia, and lead to a delayed progression of the estrus cycle (Cohen-Fredarow et al., 2014; Turner et al., 2011; Wu et al., 2004).\n\nCharacterizing the complete immune milieu in the ovary, and in particular how it is affected by female aging, is challenging mainly due to the small fraction of the immune cells compared to other cell types in the ovary (Lliberos et al., 2021; Wagner et al., 2020). For that reason, previous work using whole-ovary single-cell measurements did manage to portray the ovary\u2019s main cell types (oocytes, granulosa, theca, immune, etc.) yet didn\u2019t have the resolution to resolve the entire immune milieu (Fan et al., 2019; Lliberos et al., 2021; Wagner et al., 2020). Others have a priori focused on a limited set of cell types (Cohen-Fredarow et al., 2014; Wu et al., 2004), while additional studies have used bulk RNA sequencing experiments (Ma et al., 2020), hence did not capture the entire immune members in the ovaries. In this work, we were able to isolate the immune cells and perform consecutive single-cell analyses. Investigating the age effect on the immune system in the single-cell level have also been done in several recent studies (Almanzar et al., 2020; Kimmel et al., 2019; Mogilenko et al., 2021). However, their focus was on other non-fertility related tissues such as bladder, kidney, peritoneum and more. In addition, the aged group was very old, far past estropause. Attempts to characterize the effects of female age on the immune system in the ovary were limited to a small subset of cells (Lliberos et al., 2021; Zhang et al., 2020), addressing mainly changes in the macrophages fraction that decreases with age, and accumulation of inflammatory mediators such as cytokines and reactive oxygen species within the tissue (Lliberos et al., 2021; Zhang et al., 2020).\n\nIn this work, we provide the first complete detailed characterization of the murine ovarian immune system composition at the single-cell level. We show the presence of various immune cell populations, such as M\u03c6s, DC\u2019s, neutrophils (NTs), NK cells, NKT cells, innate lymphoid cells (ILCs), B cells, and several T cell types \u2013 including an ovary specific CD3+ CD4- CD8- double-negative T (DNT) cells. Moreover, we show an extensive tissue-specific effect of female age on the ovarian immune milieu, resulting in a shift towards adaptive immunity, mainly by a significant increase in the DNT population. In addition, we analyzed the changes in gene expression of the cells and discovered a global attenuation in their general function and responsiveness. We also found a decrease in the expression of inflammatory mediators such as cytokines and chemokines. Moreover, we identified some evidence for an increase in senescent cells recognition activity. Our results serve as an opening for a much more comprehensive understanding of the interaction between female aging and the immune system in fertile female mammals.\n\n## Results\n\n### The ovarian immune milieu is altered with age\n\nTo characterize the ovarian immune milieu, we have isolated immune cells (CD45+ cells) from the ovaries of young (11\u201315 weeks), adult (20\u201337 weeks), and old (40\u201347 weeks) virgin mice, and utilized flow cytometry and single-cell RNA sequencing (scRNA-seq) to characterize the ovarian immune cells and how they are affected by female age (Figure 1A). First, we performed scRNA-seq on isolated immune cells from the ovaries of 13 weeks old mice (n=2; 3307 cells). To cluster the cells and identify their type, we used a combination of both literature-based annotation and automatic annotation methods (Seurat R package and SingleR algorithm, \u201cMethods\u201d and Figure 1\u2014figure supplement 1). In addition, we performed a batch correction analysis to validate the clusters that emerged from the tSNE analysis (Figure 1\u2014figure supplement 2). The combination of these methods allowed us to identify within the ovaries the following cell types: M\u03c6s, DCs, NTs, B cells, NK cells, NKT cells, ILC1, ILC2, ILC3, and several clusters of T lymphocytes: CD8+ (CD8 T), CD4+ (CD4 T), and CD4- CD8- double-negative T cells (DNT cells) (Figure 1B and C and Figure 1\u2014figure supplement 3). Most of the cells were innate immune cells, mostly ILC1, M\u03c6s, NTs, and NK cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic illustration of the experimental pipeline (created with BioRender.com). Ovaries of female mice at different ages were extracted. Then, cells were gated for CD45 expression and further analyzed using single-cell RNA sequencing or flow cytometry. (B) tSNE plot of joint data from both samples (young and old), divided into clusters. (C) Violin plot of normalized expression for cluster-specific markers. Each row represents the normalized expression of a single marker across all immune clusters. Normalized expression values are between 0\u20131.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** tSNE plot of both young and old samples annotated using the SignleR algorithm. A correlation between each cell\u2019s transcriptomic signature is calculated with reference cell types signatures from ImmGen. Annotation is decided based on the reference cell type which correlated the most to the cell.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Clustering projection according to Seurat\u2019s clustering system using tSNE as dimension reduction method. (B) Data projected on tSNE according to age.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Each row represents the markers expression of different cell type, and each column represents different marker. The size of each dot represents the fraction of cells in each type that expresses each marker. The color of each dot represents the average expression of each marker in every cell type.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** After gating on PE-CD45+ cells (see Figure 1A) we used two set of panels in order to validate the presence of the immune cell populations found in our 10x experiments. Each row shows a representative experiment of one of the panels. The top panel was used in order to characterize Macrophages, Neutrophils, and Dendritic cells. The bottom panel was to characterize Group-1 Innate lymphoid cells (G1-ILCs), NKT, CD8 T, CD4 T, and DNT cells.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Young female mice\u2019s (n=3, 12 weeks old) immune cells were collected from the ovaries and spleen and were analyzed using flow cytometry for their group 1 innate lymphoid cells (CD45+ NK1.1+ CD3-) distribution. Each color represents measurement from a different mouse.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Violin plot of the expression levels of several literature-based markers for cDC1 and cDC2 reveal that cluster 3 (Figure 1C) corresponds to an expression pattern of cDC2, while cluster 4 corresponds to an expression pattern of cDC1. Each row represents the normalized expression of a single marker across dendritic cells clusters and the rest of the immune cells. Normalized expression values are between 0\u20131.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Old female mouse\u2019s (55 weeks) immune cells were collected from the ovaries, spleen and peritoneum and were analyzed using flow cytometry for their T-lymphocytes distribution. While most cells in the spleen and peritoneum were CD4+ and CD8+ T cells as anticipated, almost all T cells in the ovaries were CD4- CD8-.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** CD3+ CD4- CD8- cells from both spleen and ovaries, of young (14.5 weeks, n=2) and old (42.5\u201344.3 weeks, n=2) mice, were analyzed for their TCR\u03b3\u03b4 expression using flow cytometry. Ovarian CD3+ CD4- CD8- cells were predominantly TCR\u03b3\u03b4-, regardless of age (2.78% at young, 2.48% at old mice). Splenic CD3+ CD4- CD8- cells were used as positive control and were 47.7% TCR\u03b3\u03b4+ at young age and 23.09% at old age. Error bars denote standard deviation.\n\nTo validate the presence of the immune populations that emerged from our scRNA-seq experiments, we used flow cytometry (the gating strategy is shown in Figure 1\u2014figure supplement 4). First, we measured the fractions of group 1 of innate lymphoid cells (G1-ILC), CD45+ NK1.1+ CD3- cells (i.e. NK and ILC1) in the mouse ovaries and spleen (Figure 1\u2014figure supplement 5). The average fraction of G1-ILC in the spleen was 11.81% and in the ovary was 42.71%. These results are consistent with the high G1-ILC fraction resulting from the ovary scRNA-seq analysis (35.4% ILC1 and 9.8% NK), and previous results, which demonstrated that G1-ILC proportion in mice spleen is relatively low (Boulenouar et al., 2017). In addition, further characterization of the DCs clusters (3 and 4) revealed that their transcriptomic signature corresponds to conventional dendritic cells type 2 (cDC2) and type 1 (cDC1), respectively (Figure 1\u2014figure supplement 6). Among other cell types that were found, DNT cells are unique, somewhat less well-defined cell population.\n\nTo confirm the presence of CD4- CD8- T cells in the ovaries, we conducted a flow cytometry experiment comparing the fractions of CD4+, CD8+, and CD4- CD8- T cells in the mouse ovaries, spleen, and peritoneum (Figure 1\u2014figure supplement 7). Using additional flow cytometry experiments we validated that ovarian DNT cells are TCR\u03b3\u03b4- (Figure 1\u2014figure supplement 8). These measurements validate the scRNA-seq results and show that although present in other tissues at small fractions, CD3+ TCR\u03b2+ CD4- CD8- cells are tissue-specific cells to the ovaries.\n\nNext, we examined the changes in the ovarian immune milieu at older ages. Using cells isolated from old, near estropause mouse (43 weeks; the rodent equivalent of the human menopause; 5468 cells), we characterized the old ovarian immune system (using the same annotation methods) and compared it to its younger counterpart (Figure 2A and B). The results demonstrated a shift at older age towards a lymphocytes-rich environment that was accompanied by decreased fractions of several immune populations such as ILC1 cells, M\u03c6s, NTs, and NK cells (Figure 2B, Figure 2\u2014figure supplements 1\u20132). To both validate the scRNA-seq results and to check whether this effect is cycle-stage dependent, we conducted several flow cytometry experiments.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-v2.jpg)\n\n**Figure 2.:** (A) 3-D tSNE plot (left) and an overlay (right) of all ovarian CD45+ cells found in scRNA-seq, divided by age group. (B) The effect of female age on the fractions of each cell type, with a confidence interval of 95% at the top of each bar. The green and yellow rectangles mark the macrophages and CD3+ populations, respectively. (C) Violin plot of the changes in fraction distributions of macrophages and CD3+ lymphocytes as a function of age as measured by flow cytometry (Kolmogorov-Smirnov test, ** p-value <10\u20132, *** p-value <10\u20133). (D) Change in the fraction of different CD3+ population comparing old (for CD4 and CD8 T cells \u2013 42.6\u201349.6 weeks, n=4; for DNT and NKT cells \u2013 49.6 weeks, n=2) and young (for CD4 and CD8 T cells \u2013 10.1\u201314.5 weeks, n=5; for DNT and NKT cells \u2013 10.1 weeks, n=3) mice as measured using flow cytometry. Error bars denote standard deviation. (E) Comparison between transcriptome and protein level of immune populations within the ovaries at different female ages. Each spider plot shows the distribution of different immune cell types measured using scRNA-seq (left panel) and flow cytometry (right).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Using the MILO algorithm (which divides the population for neighborhoods of cells, see Methods for further details) we identified significant changes in several cell types. Each dot represents a neighborhood. Blue dots are neighborhoods which increase significantly at old age, and red dots are neighborhoods which decrease significantly at old age (p-value <0.05). The most prominent increase is of DNT (CD4- CD8- T) and NKT cells, while ILC1, macrophages, neutrophils and NK cells decrease at old age.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Flow cytometry measurements were used to analyze the fraction of Neutrophils, Dendritic cells (young, n=6; old, n=3) and group-1 ILCs (G1-ILCs; young, n=3; old, n=2). Neutrophils were characterized as CD45+ CD11b+ Ly6G+ cells; Dendritic cells were characterized as CD45+ CD11c+ cells; G1-ILCs were characterized as CD45+ NK1.1+ cells; * p-value <0.05; student\u2019s t-test. Error bars denote standard deviation.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Violin plot of macrophages and CD3+ lymphocytes fractions out of total CD45+ as shown in Figure 2C, separated by cell type.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Fraction of splenic CD45+ CD3+ cells from young (34.09%, 10\u201314.5 weeks old, n=3) and old (25.59%, 42.5\u201349.6 weeks old, n=3) mice, as measured using flow cytometry. (B) Fraction differences of various CD3+ cells populations between old and young mice. Error bars denote standard deviation.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Violin plot of macrophages and CD3+ lymphocytes fractions out of total CD45+ as shown in Figure 2C with an additional annotation of the cycle stage. Lines represent the mean fraction of each population in each stage of the estrus cycle (P \u2013 Proestrus; E \u2013 Estrus; M \u2013 Metestrus; D - Diestrus). NYoung_P = 1, NYoung_E = 1, NYoung_D = 2, NAdult_P = 2, NAdult_E = 4, NAdult_m = 4, NAdult_D = 5, NOld_P = 2, NOld_E = 2, NOld_M = 3, NOld_D = 5.\n\nTo measure the effect of female age on the fractions of T-lymphocytes (CD3+) and M\u03c6s (CD11b+ F4/80+) from total ovarian CD45+ cells, mice were divided into three groups of age: young (11\u201315 weeks, n=4), adult (20\u201337 weeks, n=15) and old (40\u201347 weeks, n=12). The results show a significant increase with age of CD3+ cells\u2019 fraction (young vs. adult and adult vs. old, Kolmogorov-Smirnov test, p-value <10\u20132), while the fraction of M\u03c6s was significantly decreased (young vs. adult and young vs. old, Kolmogorov-Smirnov test, p-value <10\u20133 and p-value <10\u20132, respectively) at older ages. Moreover, flow cytometry experiments validated that, as with the scRNA-seq results, most of the change in CD3+ lymphocytes\u2019 fraction is due to a substantial increase in DNT cells at old age (Figure 2C, D and E and Figure 2\u2014figure supplement 3). Furthermore, analysis of splenic CD3+ lymphocytes show that in contrast to the ovaries, the fraction of these cells decreases at old age, while the fraction of DNT cells doesn\u2019t change (Figure 2\u2014figure supplement 4). These age-dependent results are cycle-stage independent (Figure 2\u2014figure supplement 5). Taking the results both from the scRNA-seq and the flow cytometry (Figure 2E), there is a consistent shift towards adaptive immunity (an increase in the CD3+ lymphocytes fraction), while most innate immune cells\u2019 fraction (M\u03c6s, NKs, ILC1, and NTs) decreases.\n\n### The female aging effect on the ovarian immune cells\u2019 transcriptome\n\nAfter identifying the ovarian immune milieu and the changes it undergoes at older age, we characterized the changes in gene expression within each immune cluster (Supplementary file 1). Figure 3A depicts the differentially expressed genes patterns across all clusters. Several clusters, such as DNT cells, ILC1, NKT cells, and CD4 T cells exhibited an extremely skewed pattern, in which most of their differentially expressed genes (DEGs) were downregulated, compared to upregulated DEGs. This may imply that these cell types are more susceptible to female aging. After defining DEGs for each cell type, we explored changes in biological processes via GO enrichment analysis (Figure 3B, \u2018Methods\u2019). Most cell types showed an enriched set of processes that were downregulated with female age. Using the REVIGO platform (\u2018Methods\u2019), we eliminated redundant GO terms and counted the appearances of each GO term across all cell types (Supplementary file 2). Terms that were found in more than one cell type were classified as \u2018global\u2019, and cell type-unique terms as \u2018specific\u2019. For further analysis, we took all the global terms and used the REVIGO platform to cluster them according to their semantics distance (Figure 3B). The results show a global decrease in several clusters of processes. The clusters with the processes that were mostly shared among cell types included decreased biosynthesis and metabolism-related processes. Another distinct cluster includes a general loss of regulation over various processes. The third well-defined cluster includes a decrease in the cellular response to different stimuli.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig3-v2.jpg)\n\n**Figure 3.:** (A) Volcano plots of the scRNA-seq analysis for the different immune cell types. The vertical dashed lines mark twofold upregulation and downregulation, the blue horizontal dashed line marks p-value = 0.05, and the red horizontal dashed line marks FDR = 0.1. Genes in the top left section of each graph are significantly downregulated at old age, while genes in the top right section are upregulated at old age. Each grey dot represents the change in the expression of different genes. Red dots denote significantly changed chemokines and cytokines. (B) Each circle represents a downregulated biological process in the old mice, which appeared in at least two types of immune cells. The axes represent semantic similarities distance as calculated by REVIGO (\u2018Methods\u2019). The color of each term represents the number of immune cell types in which the process is downregulated with age. The size of each term represents the hierarchy of the biological process; the bigger the circle, the higher the hierarchy of the process is.\n\nAmong the cell-type-specific downregulated processes, M\u03c6s exhibit attenuation in immune and inflammatory responses, along with decreased tissue remodeling and wound healing processes. DCs show a decrease in cell activation and regulation of immune response. Several immune cell types showed a limited set of enriched upregulated processes, in which the most prominent ones were exhibited by M\u03c6s and DNT cells and included T cell activation and differentiation processes (Supplementary file 3).\n\n### Aging affects cytokines and chemokines connectome of ovarian immune cells\n\nTo get a better notion of the effect of aging on the different immune cell types, we estimated the effect of aging on the chemokine and cytokines interactions between the immune cells (Figure 4). For both chemokines and cytokines, we used the KEGG database to extract the network of ligands and receptors and their interactions (\u2018Methods\u2019). Within each network, we focused on significantly changed connections, which we defined as edges that both of their nodes (i.e. both the ligand and receptor) have been significantly decreased or increased in their expression at old age. Significant nodes can be in the same cell type, or each one in different cell type, and in at least one cell type. We found that almost all significant nodes and edges in both networks were downregulated (Figure 4C and D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig4-v2.jpg)\n\n**Figure 4.:** (A) A heat map of a significant (p-value <0.05; FDR \u22640.1) twofold decrease (red) or increase (green) in the expression levels of chemokines, cytokines, and their receptors in different immune cell types. (B) Cumulative probability distribution (CDF) of the fold change (FC) of chemokines (upper panel) and cytokines (lower panel) (red line). The gray lines are the CDFs of FC for random groups of genes at the same size as the chemokines/cytokines genes. The blue line is the CDF of the FC of all the genes. There is a significant decrease in the expression of chemokines and cytokines with age (Kolmogorov-Smirnov test p-value <0.01). (C) Downregulation of the chemokines network due to age. Upper panel - Edges within the chemokine network in which both the ligand and the receptor were significantly downregulated in at least one cell type are colored in red. Edges that only the ligand/receptor, or none of them, were significantly downregulated are colored in grey. The sub-graph that contains the affected interactions is magnified at the right-hand side of the figure. Bottom panel - Chord diagram that illustrate the decrease in chemokine ligand-receptor interactions between the different cell types. The color of each chord denotes the color of the cell type that underwent a reduction in ligand expression. In the upper semi-circles, the colors indicate the cell type that showed a decrease in receptor expression. In the lower semi-circle, the outer and inner colors denote the cell types in which ligands and target receptors were downregulated, respectively. (D) Downregulation in the cytokines network due to age. Same color-coding as in (C) for the cytokines interaction network.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Cell2Cell algorithm ('Methods') was applied on the chemokines network and found that the main receptor-ligand connections responsible for age differences involve mainly CCR5 and several of its ligands. (B) The fraction of ovarian CCR5+ Dendritic cells (CD11c+) cells was measured using flow cytometry in young (n=4, mean = 52%, SD = 17.54) and old (n=2, mean = 20.4%, SD = 1.97) female mice. CCR5 expression is significantly decreased at old age (* p-value <0.05; student\u2019s t-test).\n\nThe most prominent affected edges in the chemokines network involved Ccr5 expressed by DCs and ILC1 cells, Ccr2 expressed by ILC2 cells, and their ligands Ccl2, Ccl3, Ccl4, Ccl5, Ccl7, Ccl8, and Ccl12 (Figure 4C). Both of these receptors have been shown to take part in chemoattraction of immune cells in the context of various inflammatory processes (D\u2019Ambrosio et al., 2003; Mencarelli et al., 2016; Proudfoot, 2002). For further validation, we applied the cell2cell algorithm (Armingol et al., 2022), which also pointed out Ccr5 as the main chemokine receptor modulated by age (Figure 4\u2014figure supplement 1A). Thus, we measured experimentally the fraction of cells that express CCR5 using flow cytometry experiments, and show it is indeed decreases significantly (Figure 4\u2014figure supplement 1B). Moreover, Cxcl2, an inflammatory chemokine that mediates neutrophils trafficking (Lentini et al., 2020; Li et al., 2016), was significantly decreased in almost all immune cell types (Figure 4A). CCRL2 is an atypical chemokine receptor that was found to be upregulated in activated immune cells after induction of inflammatory signals (Del Prete et al., 2013). Ccrl2 was downregulated in several cell types such as ILC1 and NKT, although it is mainly expressed by myeloid cells such as NTs, DCs, and M\u03c6s (Del Prete et al., 2013).\n\nThe changes in the cytokines network were found mainly in the IL-1 superfamily (Il1r1 and Il1r2, along with Il1a, Il1b and Il1rn). Moreover, TNF-receptor Tnfsfr1b and its ligand Tnf (TNF\u03b1) also showed a significant decrease at old age (Figure 4A). As IL-1 and TNF superfamily members are considered inflammatory, along with the evident decrease in various inflammatory chemokines and their receptors, our results suggest that beyond overall inhibition in the ovarian immune function, aging also shifts its phenotype towards a less inflammatory state.\n\nTo account for possible global downregulation, as emerges from Figure 3A, that may lead to an artifact in which DEGs that were found, are not significant under the global downregulation, we\u2019ve performed another analysis. In this analysis, we considered only the top down/up-regulated genes with a p-value\u22640.025, defined by cumulative probability distribution (CDF) analysis. GO enrichment analysis using the new DEGs show that \u2018Inflammatory response\u2019 (GO:0006954) was downregulated in four different clusters (NTs, M\u03c6s, DCs and ILC3 cells). In addition, the process \u2018Negative regulation of neuroinflammatory response\u2019 (GO:0150079) was upregulated in NK cells (see Supplementary file 4).\n\nAnother evident downregulated edges in the cytokine network were in the TGF\u03b2 superfamily (Gdf11 and Inhba along with their receptors Acvr2a and Tgfbr1). Activin A, a dimer composed of two Inhibin-\u03b2A subunits (the translation product of Inhba), is produced among others by the gonads and promotes LH secretion from the pituitary. It plays an important role in expanding the primordial follicle pool and contributes to the early stages of follicular growth by increasing FSH receptor expression on granulosa cells (Namwanje and Brown, 2016). In addition, Activin A was found to activate resting macrophages \u2013 yet there are contradictory findings as to rather its effect is pro or anti-inflammatory (Morianos et al., 2019). Decreased expression of both Inhba and Acvr2a by ovarian macrophages at older age might suggest a specific role of macrophages in supporting follicular growth (via Activin secretion) during the estrous cycle, which decays as age progresses. Moreover, these results may present a mechanism in which macrophages are participating in inducing an inflammatory environment as part of the ovulation process as a response to Activin.\n\n### Aging affects recognition of senescent cells by ovarian immune cells\n\nInducing cell senescence, which is an irreversible state of growth arrest, is a mechanism the body uses to handle cell stress which can accumulate during aging (Campisi and d\u2019Adda di Fagagna, 2007) and may result in chronic diseases and tissue dysfunction (Mu\u00f1oz-Esp\u00edn and Serrano, 2014; Ovadya and Krizhanovsky, 2014). One of the main molecular features of senescent cells is the senescence-associated secretory phenotype (SASP), in which the senescent cells create an inflammatory environment by secreting inflammatory cytokines, chemokines, growth factors, extracellular remodeling factors, and more (Prata et al., 2018; Song et al., 2020). Immune cells respond to these factors, detect specific markers expression or their absence on the senescent cells\u2019 membrane and clear them either by phagocytosis (by M\u03c6s, for example) or by killing (by NTs or NK cells for example) (Song et al., 2020). Ovarian senescence was already studied in the past (Velarde and Menon, 2016); however, the specific mechanism of senescent cells clearance within the ovaries is still unclear.\n\nWe compiled a list of SASP receptors based on the literature containing 24 receptors (Supplementary file 5) and examined how their expression in different cell types depends on the female age. We found that the fraction of cells that express Ccr2, Csf2ra, and Csf1r, which are all receptors for known SASP proteins (Rhinn et al., 2019; Song et al., 2020), was significantly higher in old M\u03c6s. In addition, the fraction of old M\u03c6s that express cell surface markers that were previously reported to take part in the recognition of senescent cells, such as membrane IgM\u2019s (Ighm) and C-type lectin receptors (Clec4a2-3) (Burton and Stolzing, 2018) was also elevated. Moreover, old NTs and M\u03c6s showed upregulated expression of Ifngr1 (Figure 4A), a part of the IFN\u03b3 receptor, while the cytokine itself is overexpressed by senescent cells (Lujambio et al., 2013; Pan et al., 2021). In addition, both NTs and M\u03c6s, as well as NK cells showed a higher expression fraction of this receptor. In total, we found six SASP receptors that were significantly overexpressed by old M\u03c6s. The probability that six genes would be significantly modulated (p<0.01) out of a list of 24 random genes is low (FDR = 10\u201312, Figure 5). Moreover, across all cell types, only old M\u03c6s and NTs presented a significant elevated fractions of cells expressing SASP receptors (Figure 5B). As a complementary analysis, we checked the expression levels of all SASP receptors. Results show that SASP receptors expression in ovarian M\u03c6s is not altered at old age (Figure 5\u2014figure supplement 1). NTs also exhibited elevated fractions of Ccr1, a receptor for several SASP chemokines (Copp\u00e9 et al., 2010), while old NKT cells had higher levels of Cd74, a receptor for MIF, another SASP member (Copp\u00e9 et al., 2010; Kim et al., 2018). CXCR6 is another novel mediator of senescence control which was recently discovered as part of senescence surveillance in the liver by CD4 T and NKT cells (Mossanen et al., 2019). Cxcr6 expression was also increased in old M\u03c6s.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cumulative probability distribution (CDF) of the difference of a fraction of old and young macrophages that express 24 SASP genes (red line). The gray lines are the fraction difference CDFs of groups of 24 random genes (10,000 samples). The blue line is the CDF of the fraction difference of all the macrophage genes. There is a significant increase with age in the fraction of cells that express members of the SASP genes (Kolmogorov-Smirnov test p-value <0.01). (B) The false discovery rate (FDR) for significant change (p-value <0.01) in the fraction of different cell types that express SASP genes. Macrophages and neutrophils exhibit FDR which is much smaller than 0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The red line is the CDF of the fold change between old and young macrophages\u2019 expression in 24 SASP genes. The gray lines are the fold change CDFs of groups of 24 random genes (10,000 samples). The blue line is the CDF of the fold change of all the macrophage genes. There is no significant change with age.\n\n## Discussion\n\nIn this work, we characterized the first complete mouse ovarian immune milieu and its changes with female age up to near-estropause state, and discovered major changes in the fractions of different immune cell types (Figure 6). Our results present an elevation in CD3+ TCR\u03b2+ lymphocytes along with age, indicating a dramatic change in the fraction of DNT cells (from ~5% to ~35% at old age). Other identified DNT cells, in the blood or lymph nodes, for example, consist of 1\u20135% out of all the lymphocytes (Hillhouse and Lesage, 2013; Juvet and Zhang, 2012). These results are consistent with a previous study that showed an increase in the TCR\u03b2+ lymphocytes that is not due to CD4 or CD8 T cells change in mice before estropause (Lliberos et al., 2021). Double-negative T cells were found to be the most common lymphocyte across the female mice uterus and cervix (Johansson and Lycke, 2003). These cells were shown to have a regulatory function, showed no proliferation, inhibited the proliferation of splenic T cells when co-cultured together in vitro, and their origin was suggested to be extrathymic. The DNT population we observed in the ovary, showed almost no expression of classical thymocytes development markers at the double-negative stages such as Notch1, Socs3, Dtx1, Hes1, and more (Puthier et al., 2004). Other studies showed that DNT cells in peripheral blood or lymphoid organs have a suppressive role and assist in preventing allograft rejection and autoimmune responses (Hillhouse et al., 2013; Juvet and Zhang, 2012). Some studies suggest that DNT cells are the result of down-regulation of CD4 and CD8 due to chronic stimulation (Rodr\u00edguez-Rodr\u00edguez et al., 2015; Grishkan et al., 2013). The ovaries present ongoing cycles of inflammation processes in each ovulation, which may result in chronic stimulation of ovarian T cells and may be consistent with an increase of CD4 T cells after estropause (Lliberos et al., 2021). Furthermore, enrichment in CD3+ lymphocytes in the ovary was found to be associated with poor follicular reserve (Jasti et al., 2012) and thus may have an impact on ovarian autoimmune diseases. Moreover, one of the characteristics of polycystic ovary syndrome (PCOS) is an abnormal T lymphocyte milieu that is suspected to be involved in disease pathogenesis and ovarian dysfunction that leads to infertility (Li et al., 2019). Similarly, our results indicate an age-dependent change in the T lymphocytes population that may be involved in improper immune regulation in the ovary and hence lead to infertility. In addition, ILC1 cells are the largest population in the young mouse ovaries, and the second largest in the old ovaries, after the DNT population. These cells, along with NK cells, constitute the group 1 innate lymphoid cells. As opposed to NK cells, ILC1 have weak-to-no cytotoxic capabilities, and are more similar to Th1 cells in their function, that is, inducing type 1 immune response against intracellular pathogens and inflammatory responses (Vivier et al., 2018). In addition, ILC1 cells take part in the process of tissue remodelling (Jowett et al., 2020). Interestingly, ILC1 distribution was also found to be elevated in the epididymal adipose of male mouse testis (Boulenouar et al., 2017). As a dynamic, constantly changing environment, the ovaries, which involve cycles of developing and regressing structures, may use ILC1 cells as orchestrators of other cell types participating in these processes. Our results also show a decline in the macrophages population with age, which may result in fertility deterioration because of impaired ovarian vasculature (Turner et al., 2011).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig6-v2.jpg)\n\n**Figure 6.:** As the female ages, most innate immunity cells, such as NTs, M\u03c6s, ILCs, and NK cells exhibit a decrease in their fractions within the total immune population. Moreover, there is a substantial increase in the fraction of DNTs. The ovarian immune aging during the female fertile period is characterized by decreased inflammatory hallmarks, as opposed to the post-menopause inflammaging. (Created with BioRender.com).\n\nTaking together the observed changes in global processes and expression of immune mediators such as chemokines and cytokines, a state of general attenuation and unresponsiveness is emerging. GO enrichment analysis of joint processes for several cell types present a decrease in general activity, in which immune cells exhibit lower levels of metabolism-related processes accompanied by decreased responsiveness to different stimuli and loss of regulation over various processes. Analysis of the chemokines and cytokines networks also revealed general attenuation and decreased expression of various inflammatory mediators. Chemoattractants, such as Cxcl2, Ccl2, Ccl3, Ccl4, and Ccl5, as well as pronounced inflammatory cytokine transcripts such as TNF\u03b1, IFN\u03b3, IL1-\u03b1, and IL-1\u03b2 were all decreased in different immune cell types. Moreover, decreased expression of several members of the TGF\u03b2 superfamily by macrophages at old age, such as Inhba and Acvr2a, might be connected to impaired or decreased follicles growth. While previous studies suggested an inflammatory state in the post-estropausal ovaries (Lliberos et al., 2021), our results indicate a decrease in the inflammatory characteristics of ovarian immune cells during pre-estropause aging. We have found an increase in genes involved in senescent cell recognition by several immune cell types, mostly M\u03c6s but also NTs, NK, and NKT cells. Generally, as age progresses, senescent cells are accumulating within tissues (Childs et al., 2015; van Deursen, 2014; Velarde and Menon, 2016). In the ovaries, aging and senescence are accompanied by an increasing number of atretic follicles and cycle irregularities that end in estropause. Our results suggest that clearance of senescent ovarian cells by immune cells increases at old age to match the ovary needs.\n\nThere is a plethora of studies that suggest inflammaging - an age-related increase in the inflammatory environment that develops over time (Ferrucci and Fabbri, 2018; Franceschi et al., 2018; Giunta, 2006). Previous recently published papers who characterized the age effect in the single-cell level on the immune system in various fertility non-related tissues have demonstrated inflammaging (Almanzar et al., 2020; Kimmel et al., 2019; Mogilenko et al., 2021). There are several major differences between these papers to our research. First, these papers compared not just females, but also males. Moreover, they used very old, post-estropausal mice and analyzed mostly tissues that are not part of the reproductive system. Our results show that the most evident change in the ovaries of aging female mice before estropause is a shift from innate to adaptive immunity, which is associated with a dramatic increase of CD3+ lymphocytes, and a decrease in M\u03c6s, NTs, and ILC1 fractions. Besides the changes in the composition of the immune milieu, most cell types exhibit a decrease in inflammatory hallmarks. Our results portray a novel intermediate state, in which prior to the elevation in inflammatory hallmarks and the development of inflammaging, there is an apparent decrease in inflammatory characteristics in the ovary (Figure 6). Our results suggest that ovarian immune aging is not linear, but a complicated process that exhibits alternations between anti- and pro-inflammatory environment.\n\n## Methods\n\n### Mice\n\nAll experiments involving mice conform to the relevant regulatory standards (Technion IACUC and national animal welfare laws, guidelines, and policies). Hsd:ICR female mice were purchased from Envigo RMS (Israel) and were housed in a 12 hr light / 12 hr dark cycle. Assessment of estrous cycle stage for the mice begun 3 days prior each experiment via vaginal smears (McLean et al., 2012). Briefly, mice\u2019s vaginal canals were washed using 20 \u03bcL saline (PBS, 0.09% NaCl). The saline was then collected and mounted on a slide and observed under an inverted microscope (Olympus) equipped with X20 objective. The estrous cycle-stage was assessed according to epithelial cells morphology and the presence or absence of leukocytes. Mice that exhibited regular progress of their cycle for three consecutive days were eligible for further experiments.\n\n### Ovaries extraction and handling\n\nMice were anesthetized for 2 min using isoflurane and then euthanized by cervical dislocation. Each mouse\u2019s ovaries were extracted and washed in RPMI-1640 media (Sigma-Aldrich) containing 10% FBS and transferred to 1.5 mL microcentrifuge tubes containing the same media. Next, the ovaries were cut using scissors and incubated for 30 min with ~7800 IU/mL (Lot dependent) of collagenase type IV (Sigma-Aldrich) at 37\u00b0C. After which, 2.5\u03bc g/mL of DNase I (Sigma-Aldrich) was added, and tubes were incubated for additional 30 min. For proper tube content mixing, gentle tapping was performed every 5 min during incubation. Tissue homogenate was filtered through a 40 \u03bcm strainer (Greiner Bio-One) and washed with 0.5 mL RPMI media five times. Total cell count was then calculated using LUNA automated cell counter (Logos Biosystems). Cells were further processed for sorting (for single-cell RNA sequencing) or staining (for flow cytometry experiments).\n\n### Cell sorting\n\nCell samples went through a series of centrifugations (400g, 5 min, at 4\u00b0C) and were stained with PE anti-CD45 (30-F11, BioLegend) in staining buffer (see flow cytometry section) for 30 min at 4\u00b0C. CD45-positive cells were sorted and collected using FACSAria III Cell Sorter (BD Biosciences). Collected samples were centrifuged and brought to a final volume of ~50 \u03bcL, counted using LUNA automated cell counter (Logos Biosystems), and further processed for single-cell sample preparation.\n\n### Single-cell RNA sequencing\n\nSamples were prepared as outlined by the 10x Genomics Single Cell 3\u2032 v2 Reagent Kit user guide. Briefly, the samples were washed twice in PBS (Sigma-Aldrich) +0.04% BSA (Sigma-Aldrich) and re-suspended in PBS + 0.04% BSA. Sample viability was assessed with Trypan Blue (Biological Industries) using LUNA automated cell counter (Logos Biosystems) and validated using a hemocytometer. Following counting, the appropriate volume for each sample was calculated for a target capture of 10,000 and 7700 cells (old and young samples, respectively) and loaded onto the 10x Genomics single-cell-A chip. After droplet generation, samples were transferred onto a 96-well plate, and reverse transcription was performed using a Veriti 96-well thermal cycler (Thermo Fisher). After the reverse transcription, cDNA was recovered using Recovery Agent provided by 10x Genomics followed by a Silane DynaBead clean-up (Thermo Fisher) as outlined in the user guide. Purified cDNA was amplified before being cleaned up using SPRIselect beads (Beckman Coulter). Samples were quantified with Qubit Fluorometer (Invitrogen) and run on Agilent TapeStation for quality control. cDNA libraries were prepared as outlined by the Single Cell 3\u2032 Reagent Kits v2 user guide with appropriate modifications to the PCR cycles based on the calculated cDNA concentration (as recommended by 10x Genomics). Post library construction quantification and QC were performed as mentioned above for the post cDNA amplification step. Sequencing was performed with NextSeq500 system (Illumina), with ~50,000 reads per cell and 75 cycles for each read.\n\nSeurat R package (Butler et al., 2018) was used to read the 10x output data from Cell Ranger v3.0.1 according to the suggested protocol. Yield was 3693 and 5644 cells for young and old samples, respectively. Quality control tests were conducted to eliminate duplicates, and dead or low-quality cells \u2013 cells with less than 200 features, more than 2500 features, or more than 10% features of mitochondrial genes were excluded from further analysis. In total, we ended up with 3307 and 5468 cells for young and old samples (data available at Figure 1\u2014source data 1 and Figure 2\u2014source data 1).\n\n### Cell type annotations\n\nThe Seurat R package (version 4.1.0), along with the SingleR package (version 1.8.1) (Aran et al., 2019) were used to analyze single-cell RNA sequencing data. After using Seurat\u2019s normalization tool (\u2018LogNormalize\u2019, 10,000 scale) and clusters identification using Seurat\u2019s graph-based clustering method, t-distributed stochastic neighbor embedding (tSNE) was used as a dimension reduction and visualization tool, with PCA as the latent space (15 PC dimensions). The log-normalized data was scaled prior to dimensionality reduction (using \u2018scale.data\u2019). Next, the SingleR algorithm was used to achieve the automatic annotation for each cell. Briefly, the algorithm compares each cell\u2019s transcriptome to known transcriptomic \u2018signatures\u2019 from reference genomes taken from The Immunological Genome Project (ImmGen) (Heng et al., 2008). The algorithm calculates the correlation between the cell to different cell types, and based on the highest correlation suggests an annotation for the cell.\n\nIn addition, a set of literature-based gene markers was chosen to identify the different immune cell types. For each gene marker, a normalized score was calculated in every cell using the raw count matrix. Eg,i denotes the expression level of the gene g within the ith cell; Mg and mg denote the maximal and minimal expression of the gene g across all cells in the sample, respectively. Nc denotes the number of cells within cluster c, and Ng,c denotes the number of cells within cluster c that express the gene g. The normalized expression score, Sg,i,c, for the gene g in the ith cell within the cluster c is the multiplication of the gene relative expression and the relative fraction of cells within the cluster that express this gene, $S_{g,i,c}=(\\frac{E_{g,i}\u2212m_{g}}{M_{g}\u2212m_{g}})\u22c5(\\frac{N_{g,c}}{N_{c}})$. Figure 1c illustrates the distribution of the normalization score for a particular gene g over all the cells in cluster c. Normalized scores are between 0 and 1.\n\nThe identity of each cluster was determined by taking into account the majority type as given by the SingleR and the type according to the literature markers. For example, according to the literature markers, cluster 10 is CD8+ enriched, and cluster 11 is CD4+ enriched. While SingleR cell type ID is consistent with this classification, several cells in cluster 10 were classified as CD4+ cells, while other cells in cluster 11 were classified as CD8+ cells. Therefore, the final assignment of these cells is different than the SingleR ID.\n\n### Flow cytometry analysis\n\nOvarian cell suspensions were stained for flow cytometry analysis as the commercial protocol suggested (BD Biosciences). Briefly, cells were plated in 96-well U-shaped plates and went through a series of centrifugations (400g for 5 min, at 4\u00b0C) for media and debris cleaning. Next, samples were stained as the commercial protocol suggested using the following antibodies (purchased from BioLegend) diluted in staining buffer (PBS containing 0.09% sodium azide (Sigma-Aldrich)): PE anti-CD45 (30-F11), BV421 anti-CD11b (M1/70), APC/Cy7 anti-F4/80 (BM8), APC anti-F4/80 (BM8), BV711 anti-CD11c (N418), Alexa Fluor 700 anti-Ly6G (1A8), APC anti-CD3 (17A2), Pacific Blue anti-CD3 (145\u20132 C11), APC/Cy7 anti-NK1.1 (PK136), PE/Cy7 anti-TCR\u03b2 (H57-597), Alexa Fluor 700 anti-CD8a (53\u20136.7), FITC anti-CD4 (GK1.5), PE/Cy7 anti-TCR\u03b3\u03b4 (GL3) and APC anti-CCR5 (HM-CCR5). Staining was performed at 4\u00b0C for 30 min. Flow cytometry analyses were made using the S100EXi (Stratedigm) flow cytometer. Viability test of CD45+ cells was conducted using Zombie-NIR (BioLegend).\n\n### Statistical analyses\n\nAll statistical analyses were calculated using MATLAB R2019b (MathWorks).\n\nFor the flow cytometry experiments, we used two-sample Kolmogorov-Smirnov test for identifying significant changes in cell types fractions at different ages.\n\nTo determine DEGs between old and young samples, genes were considered significant if they had twofold change in their mean expression and if their FDR \u22640.1, using Storey q-values approach (Storey, 2002) for a p-value \u22640.05 (two-tailed student\u2019s t-test).\n\nFor analyzing significant changes in the fraction of each cell type, we used the MILO algorithm (Dann et al., 2022). Briefly, the algorithm constructs an undirected KNN graph of single cells based on the scRNA-seq, divides the data into neighborhoods of cells and compares how their size changes with different conditions. Therefore, we have used the batch-corrected data as input for it. To estimate the differential abundance in terms of cell types, the MILO algorithm assigns a cell type label to each neighborhood by finding the most abundant cell type within cells in each neighborhood (Figure 2\u2014figure supplement 1). MILO uses a weighted version of the Benjamini-Hochberg method to regulate the spatial FDR in the KNN graph. In this method, p-values were weighted by the reciprocal of the neighborhood connectivity to regulate the graph.\n\nThe FDR of having six genes that have significantly modulated fraction change (p-value <0.01) out of a list of 24 random genes, for each cell type, was calculated analytically. The FDR in this case, where all hypotheses are considered null, is equal to the family-wise error rate (FWER), which can be calculated analytically using multinomial distribution (Korthauer et al., 2019).\n\n### GO enrichment analysis\n\nSignificant downregulated or upregulated genes for each cell type were taken for GO enrichment analysis of biological processes using the g:Profiler platform (Raudvere et al., 2019) (database versions: Ensembl 108, Ensembl Genomes 55, and Wormbase ParaSite 17, published on 2/23/2023). Next, all significant processes were further analyzed using the REVIGO platform for eliminating redundant GO terms (Supek et al., 2011). Then, cell-type specific and global (for at least two cell types) processes were found and analyzed once more using the REVIGO platform in order to cluster them according to their semantics distance.\n\n### Cytokines and chemokines networks\n\nThe Kyoto Encyclopedia of Genes and Genomes (KEGG) was used to construct the chemokines and cytokines ligand-receptor networks. These were built based on the Cytokine-cytokine receptor interaction - Mus musculus (mouse) map (pathway map mmu04060) (Kanehisa, 2000).\n",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "52e6e0e9-e854-47fb-9e34-5c9d53bc2304",
+      "submission_id": "9bf97266-ba27-44db-b308-720bd8b0063d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sara H\u00e4gg, https://ror.org/056d84691 Karolinska Institutet Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74915.sa0](https://doi.org/10.7554/eLife.74915.sa0)\n\nThe study describes a single-cell analysis of the mammalian ovary in young, adult, and old mice, and is an important contribution to the field identifying clusters of immune cell populations across the different ages. The combination of single-cell RNA sequencing and flow cytometry used is a robust and unbiased approach that provides compelling evidence of immune cell alterations in aged ovaries.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sara H\u00e4gg, https://ror.org/056d84691 Karolinska Institutet Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74915.sa1](https://doi.org/10.7554/eLife.74915.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single-cell analysis of the aged ovarian immune system reveals a shift towards adaptive immunity and attenuated cell function\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ricardo Azziz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Figure 1-2 begins to tell an interesting story of changes in macrophage and an ovary specific CD3+ CD4- CD8- double negative T-cell abundances in aging. While the flow cytometry here backs up their claims, the statistical rigor of the single-cell analysis itself is questionable. Rather than further probing gene expression differences in these specific subpopulations, the next sections proceeds to do (1) a global analysis of gene expression changes, (2) a CCC analysis (independent of existing tools) that claims decreased inflammation (see below points about doubts regarding this), and (3) an analysis of SASP recognition that is very limited.\n\n2. Results for Figure 1-3 can be published with some changes. Figure 4 would need a lot of additional analyses and changes. The SASP section with no main figure associated shouldn't be included.\n\n3. Code for computational analyses should at least be available on Github, preferably on CodeOcean for reproducible runs.\n\n4. My concern regarding the single-cell results is that there does not seem to be a formal batch correction step. Figure 2A visually seems to show minimal batch effects, and a big positive is that flow cytometry results align with the single-cell observations. Unfortunately, it is impossible to rigorously claim from the scRNAseq that the cluster 12 frequency change is due to aging without a formal batch correction.\n\n5. The problem with applying a batch correction now, even if there aren't major batch effects, would be that it can change downstream results at some resolution (e.g. p-values and effect sizes). A solution would be to add a supplemental section demonstrating that there are not batch effects. This may be done by applying a batch correction (e.g., Harmony or Seurat integration), and demonstrating that downstream clustering patterns remain similar (indicating that the informative transcriptional space of the cells are consistent).\n\n6. A separate but complementary point regarding the question of frequency change in cluster 12 using scRNAseq: unlike microbiome, which has comprehensive compositional analysis methods, the question of cell abundance changes in single-cell is just recently beginning to be addressed. To more rigorously present these results, a few things would be useful:\n\n6.1 Higher resolution in Figure 2C,D \u2013 specifically, gating on the CD3+ lymphocyte subpopulations, as well as some control cell types that do not show a change in single-cell (preferably, all cell type frequencies validated with flow).\n\n6.2 More quantification of effect size or statistical assessment of Figure 1B using recently published tools. Some tools have been published on differential abundance testing in single-cell in the last couple years include scDC, MILO, and DA-seq.\n\n7. As a side note, MELD does not give a differential abundance p-value, but does quantify the likelihood of observing a given cell in a given condition at single-cell resolution and allows you to further partition the data based on those values. This can allow for higher resolution differential expression testing and may be useful to you for future analyses.\n\n8. There is a lack of multiple test correction (or stating of such correction) throughout statistical analyses which must be addressed.\n\n9. It is difficult to trust the \"skewed\" DE patterns, especially for DNT cells (Figure 3A) -- a global downregulation of genes?\n\n10. The claim regarding a decreased inflammatory state in aging is unconvincing. Currently, the results indicate a global downregulation of the transcriptome in aging, and so when you visualize just chemokines and cytokines, visually, it looks like inflammation is downregulated. The enrichment analysis would be better in supporting this claim -- the story could go: inflammatory response is a consistently enriched term in cell types X, Y, Z [the Results section regarding Figure 3], so we then focused on communicatory immune networks [Results section regarding Figure 4]. I had formatting issues in Supplementary Table 2, but it looks like the inflammatory response GO Term is only enriched in macrophages. Further discussion should be had to back up this claim.\n\n11. Senescent cells section seems like an afterthought. It is not sufficient to make the claim of increased senescent cell recognition by immune cells via single-cell analysis of immune cells alone, and even if it was, these analyses are not rigorous enough.\n\n12. There is no visualization of canonical SASP receptors expression changes across young vs old.\n\n13. Analysis is not systematic: should start with a comprehensive list of canonical SASP receptors, rather than choosing some from literature.\n\n14. Supplementary Figure S5 is an unorthodox analysis of gene expression changes. Were these genes differentially expressed in old macrophages?\n\n15. Throughout the paper, it is important to show (by either experiments or using publicly available resources) that the changes observed are indeed specific to the ovaries.\n\n16. The authors start the paper by discussing the reduced fertility as a function of age, so any of these results suggest a mechanisms for that? Some discussion of this point will be useful.\n\n17. Because the scRNA-seq data presented by the authors show that the CD4- CD8- double-negative T cell subset co-express Trbc2 (TCRb) and Tcrgc2 (TCRg) genes, it would be important to test if these cells also co-express TCRb and TCRg/d at the protein levels. Pro-inflammatory CD4- CD8- double-negative T cells co-expressing TCRb and TCRg/d have been found in mice (Edwards et al., J Ex Med 2020), and it would be interesting to test whether the ovarian DNT cells show phenotypical or functional similarities with this cell type.\n\n18. To better understand the function of double-negative T cell subset in aging ovaries, one possible way would be to purify these cells and measure which cytokines they produce after TCR activation in vitro and/or co-culture these cells with activated CD4/CD8 T cells in vitro to test if they are capable of suppressing T cell proliferation.\n\n19. For the cluster annotation of scRNA-seq data, it would be interesting to perform additional gene expression analyses to test whether the two clusters of dendritic cells correspond to cDC1 and cDC2 populations.\n\n20. Flow cytometry validation of scRNA-seq data in larger groups of mice presented in this study is chiefly limited by CD3+ T cells and CD11b+ cells. Additional flow cytometry experiments that validate alterations of central ovarian immune cell populations in old competed to adult mice would be helpful. Gating strategies for all flow cytometry experiments should be shown.\n\n21. It would be interesting to compare the scRNA-seq data generated by the authors with published datasets on the immune aging in various mouse tissue (e.g., Almanzar et al., Nature 2019; Kimmel et al., Genome Res 2019; Mogilenko et al., Immunity 2021) to identify common and tissue-specific immune changes in aging ovaries.\n\n22. Predicted changes in cytokine and chemokine expression levels and the crosstalk between immune and senescent cells presented in this study are based on scRNA-seq data but are lacking additional validation. For example, protein-level confirmation for some of these pathways would add important information about the mechanism of immune aging in the ovaries.\n\n23. In Methods: antibody clone 17A2 is used for CD3 and CD4 detection (possible mistake).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Single-cell analysis of the aged ovarian immune system reveals a shift towards adaptive immunity and attenuated cell function\" for further consideration by eLife. Your revised article has been evaluated by Ricardo Azziz (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewer #1 (Recommendations for the authors):\n\nIn this study, the authors present an exciting work that lies at the intersection of immunology, aging, and single-cell RNA-sequencing analysis. It provides a valuable and well-annotated single-cell resource for other researchers in the community to use. It provides solid analyses to probe mechanistic changes in ovarian immune cell functions. More specifically, it leverages single-cell RNA sequencing to probe changes in various immune functions within the ovary in aging. The data provided is the most comprehensive of ovarian immune cells at the resolution of single-cell transcriptomics to date and will be valuable to other researchers. The authors explore four distinct immune functions:\n\n1. Among other cell types, the authors identify macrophages and a unique CD3+ CD8- CD4- T-cell (DNT) subpopulation that changes in abundance with aging. The cell-type compositional analysis results are comprehensive and convincing.\n\n2. The authors also analyze changes in global gene expression across cell types using an enrichment analysis; Figure 3B summarizes potential global and cell-type specific changes in gene expression programs during aging.\n\n3. The authors infer differences in cell-cell communication mediated by various chemokines and cytokines, reasonably demonstrating a decreased inflammatory response.\n\n4. The authors provide evidence that the fraction of macrophages and neutrophils recognizing secretory-associated senescence phenotype (SASP) molecules increases with age.\n\nBoth the data and biology presented are quite interesting. The distinction between an aging-associated decreased inflammatory response and cytokine/chemokine communication and an increase in SASP recognition in some cell types, particularly macrophages, demonstrates the complexities of the immune response that are amenable to further exploration. The role of the unique DNT population, which demonstrates substantial compositional changes with aging, in these systemic changes will also be interesting to further dissect.\n\nOverall, while the authors have extensively addressed most of my concerns regarding the compositional analysis, the claims around a decreased inflammatory state with aging (particularly Figure 4B and the response regarding GO terms including both positive and negative regulators), and cell-cell communication analysis. I find the distinction between Figure 5 and Figure 5\u2014figure supplement 1 to be interesting, with SASP recognition seemingly affecting a larger fraction of macrophages but not the average expression between the conditions. I also find it interesting that this same cell type decreases in abundance with age, possibly indicating that a subpopulation of macrophages that are retained with age are those exhibiting SASP recognition as an alternative explanation to the more natural conclusion that macrophages overall increase SASP recognition over time. While I am excited about this work, there are still some outstanding concerns, that I present below.\n\n\u2013 Were the log-normalized data scaled prior to dimensionality reduction? PCA typically takes scaled data as input.\n\n\u2013 Reading through the methods, it is unclear whether the p-values used in DE testing were multiple tests corrected. Line 364 of the Related Manuscript File \"100652_1_related_ms_2716393_rmry4f.pdf\" states \"all other\" statistical analyses applied an FDR correction, implying that this wasn't applied to the DE and other statistical tests discussed in the \"Statistical analyses\" subsection of the Methods. Furthermore, in the Supplementary Table reporting DE results, there is only the column \"pVal\" indicating that this is not a multiple test corrected significance value. If multiple test correction was not applied to differential expression output p-values, they must be. Similar concerns for the GO enrichment results and MILO results, which also include many tests. Furthermore, given the LFC threshold filter, I wouldn't expect results to change drastically. However, if there are similar concerns to my original comments regarding how batch correction will affect downstream effect sizes, a demonstration that applying the multiple test correction does not change the results is a necessary minimum. I would suggest demonstrating that the genes identified as significantly differentially expressed with multiple test correction (perhaps with FDR \u2264 0.1) are consistent with those in the current list. This could be done by showing that the gene list sizes are similar and have a high Jaccard index.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors made substantial improvements to the manuscript by cross-referencing the data and adding validation experiments. However, limitations of this revised manuscript still include not optimal validation strategies: e.g., in flow cytometry validation experiments, the authors defined dendritic cells as CD45+ CD11c+ subset, which might include a variety of CD11c+ macrophages; ILC1s were defined as CD45+ NK1.1+ cells, which might consist of NKT cells. These limitations prevent direct comparison of scRNA-seq data with the results of biological validation experiments.\n",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b9e90fcc-6b46-44fc-95b7-e61ce3265741",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C1",
+      "claim": "The immune system plays a major role in maintaining many physiological processes in the reproductive system.",
+      "claim_type": "EXPLICIT",
+      "source": "The immune system plays a major role in maintaining many physiological processes in the reproductive system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the immune system's role in reproduction, supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "e896b57b-7049-4604-b085-ffc7649fb16a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C2",
+      "claim": "The composition of ovarian immune cells undergoes an extensive shift with age towards adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the composition of the immune cells undergoes an extensive shift with age towards adaptive immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from scRNA-seq and flow cytometry presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "b4a957c1-6e23-4be4-b165-208cc3cccf4d",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C3",
+      "claim": "Aging causes an overall decreased expression of inflammatory mediators in ovarian immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyze the effect of aging on gene expression and chemokine and cytokine networks and show an overall decreased expression of inflammatory mediators together with an increased expression of senescent cells recognition receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression analysis data from scRNA-seq experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "798d14f0-efd2-4ac9-9e58-81214824871c",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C4",
+      "claim": "Aging causes an increased expression of senescent cell recognition receptors in ovarian immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyze the effect of aging on gene expression and chemokine and cytokine networks and show an overall decreased expression of inflammatory mediators together with an increased expression of senescent cells recognition receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression analysis data from scRNA-seq experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "77d72d8b-17a9-408a-be48-8a3fa00d9d71",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C5",
+      "claim": "In women from their early 30's, there is a sharp decrease in fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "In women from their early 30's, there is a sharp decrease in fertility, accompanied by an exponentially increase in the odds of miscarriages and birth defects, alongside a drastically lower success rate of in-vitro fertilization (IVF) procedure (Madankumar et al., 2003; Nelson and Lawlor, 2011; Szamatowicz and Grochowski, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "e0f83c2e-87e9-4524-9831-0d99460e55e4",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C6",
+      "claim": "In women from their early 30's, there is an exponentially increase in the odds of miscarriages and birth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In women from their early 30's, there is a sharp decrease in fertility, accompanied by an exponentially increase in the odds of miscarriages and birth defects, alongside a drastically lower success rate of in-vitro fertilization (IVF) procedure (Madankumar et al., 2003; Nelson and Lawlor, 2011; Szamatowicz and Grochowski, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "2c7d034f-56f8-4a7a-8fef-da17965c14e8",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C7",
+      "claim": "In women from their early 30's, there is a drastically lower success rate of in-vitro fertilization (IVF) procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "In women from their early 30's, there is a sharp decrease in fertility, accompanied by an exponentially increase in the odds of miscarriages and birth defects, alongside a drastically lower success rate of in-vitro fertilization (IVF) procedure (Madankumar et al., 2003; Nelson and Lawlor, 2011; Szamatowicz and Grochowski, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "aea35ffd-5e50-493e-b4a3-fda0cabd32b2",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C8",
+      "claim": "Age affects the ability of the immune system to overcome illnesses and eliminate different pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Another well-documented effect of age is on the ability of the immune system to overcome illnesses and eliminate different pathogens (Kovacs et al., 2009; Plowden et al., 2004; Solana et al., 2006; Weiskopf et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "91e6533a-ad6a-4093-8917-146bf2798b91",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C9",
+      "claim": "Immune cells such as macrophages, dendritic cells, granulocytes, T and B lymphocytes are present throughout the entire female reproductive tract.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of immune cells such as macrophages (M\u03c6s), dendritic cells (DCs), granulocytes, T and B lymphocytes was identified through the entire female reproductive tract (Givan et al., 1997; Lee et al., 2015), and in the ovaries in particular (Best et al., 1996; Bukulmez and Arici, 2000; Carlock et al., 2013; Yang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "f21ecd88-5bd1-428e-bdad-c0b9b1ddfca0",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C10",
+      "claim": "Immune cells participate in many fertility-related processes in the ovaries from follicle development up to ovulation and corpus luteum formation and regression.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells participate in many fertility-related processes in the ovaries \u2013 from follicle development up to ovulation and corpus luteum formation and regression (Cohen-Fredarow et al., 2014; Fair, 2015; Oakley et al., 2010; Wu et al., 2004; Yang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "ea48fccc-c97a-4a23-9ff9-c82cf52e6282",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C11",
+      "claim": "Ovulation is considered an inflammatory process that includes edema, vasodilation, pain, and heat.",
+      "claim_type": "EXPLICIT",
+      "source": "Ovulation, for example, is considered an inflammatory process that includes edema, vasodilation, pain, and heat (Duffy et al., 2019; Richards et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "6c9d2b71-2624-4957-8478-b786a39d04fd",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C12",
+      "claim": "Depletion of macrophages and dendritic cells results in a decreased number of ovulated oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the immune milieu, such as depletion of M\u03c6s and DCs have been shown to result in a decreased number of ovulated oocytes, depletion of endothelial cells, increased follicular atresia, and lead to a delayed progression of the estrus cycle (Cohen-Fredarow et al., 2014; Turner et al., 2011; Wu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9a025a89-207d-48fc-8d81-6e4ca0ec973f",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C13",
+      "claim": "Depletion of macrophages and dendritic cells results in depletion of endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the immune milieu, such as depletion of M\u03c6s and DCs have been shown to result in a decreased number of ovulated oocytes, depletion of endothelial cells, increased follicular atresia, and lead to a delayed progression of the estrus cycle (Cohen-Fredarow et al., 2014; Turner et al., 2011; Wu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "7183acd2-f59c-453d-8b21-417453cec27f",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C14",
+      "claim": "Depletion of macrophages and dendritic cells results in increased follicular atresia.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the immune milieu, such as depletion of M\u03c6s and DCs have been shown to result in a decreased number of ovulated oocytes, depletion of endothelial cells, increased follicular atresia, and lead to a delayed progression of the estrus cycle (Cohen-Fredarow et al., 2014; Turner et al., 2011; Wu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "6545ce14-841f-41c2-9dc0-050b4828a207",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C15",
+      "claim": "Depletion of macrophages and dendritic cells leads to a delayed progression of the estrus cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the immune milieu, such as depletion of M\u03c6s and DCs have been shown to result in a decreased number of ovulated oocytes, depletion of endothelial cells, increased follicular atresia, and lead to a delayed progression of the estrus cycle (Cohen-Fredarow et al., 2014; Turner et al., 2011; Wu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "ddf9be2c-97bc-402f-833f-e6e1ade299b9",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C16",
+      "claim": "Characterizing the complete immune milieu in the ovary is challenging mainly due to the small fraction of immune cells compared to other cell types in the ovary.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterizing the complete immune milieu in the ovary, and in particular how it is affected by female aging, is challenging mainly due to the small fraction of the immune cells compared to other cell types in the ovary (Lliberos et al., 2021; Wagner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "74353c06-591e-4e7a-b9a5-c06633afa911",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C17",
+      "claim": "The murine ovarian immune system contains macrophages, dendritic cells, neutrophils, NK cells, NKT cells, innate lymphoid cells, B cells, CD8+ T cells, CD4+ T cells, and CD3+ CD4- CD8- double-negative T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of these methods allowed us to identify within the ovaries the following cell types: M\u03c6s, DCs, NTs, B cells, NK cells, NKT cells, ILC1, ILC2, ILC3, and several clusters of T lymphocytes: CD8+ (CD8 T), CD4+ (CD4 T), and CD4- CD8- double-negative T cells (DNT cells) (Figure 1B and C and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNA-seq data and flow cytometry validation shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "da5a6cc8-b44b-44fe-835d-01147fb3bd40",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C18",
+      "claim": "Most immune cells in young mouse ovaries are innate immune cells, mostly ILC1, macrophages, neutrophils, and NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the cells were innate immune cells, mostly ILC1, M\u03c6s, NTs, and NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNA-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "4c30bee8-8af9-4810-99f5-2bcfe1222c76",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C19",
+      "claim": "The average fraction of G1-ILC in the mouse spleen is 11.81%.",
+      "claim_type": "EXPLICIT",
+      "source": "The average fraction of G1-ILC in the spleen was 11.81% and in the ovary was 42.71%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "c3b72bdc-834f-4867-abed-547a153a0423",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C20",
+      "claim": "The average fraction of G1-ILC in the mouse ovary is 42.71%.",
+      "claim_type": "EXPLICIT",
+      "source": "The average fraction of G1-ILC in the spleen was 11.81% and in the ovary was 42.71%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "e0476e1d-a717-4424-a8e3-6a10698779cf",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C21",
+      "claim": "CD3+ TCR\u03b2+ CD4- CD8- cells are tissue-specific cells to the ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements validate the scRNA-seq results and show that although present in other tissues at small fractions, CD3+ TCR\u03b2+ CD4- CD8- cells are tissue-specific cells to the ovaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data comparing ovaries to spleen and peritoneum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "0908736a-0416-45cc-b5b1-f7a0c2fcc403",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C22",
+      "claim": "At older age, the ovarian immune system shifts towards a lymphocytes-rich environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated a shift at older age towards a lymphocytes-rich environment that was accompanied by decreased fractions of several immune populations such as ILC1 cells, M\u03c6s, NTs, and NK cells (Figure 2B, Figure 2\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNA-seq data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "8d53f46b-3156-466a-8a2c-6ca93e8991d6",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C23",
+      "claim": "At older age, the fractions of ILC1 cells, macrophages, neutrophils, and NK cells decrease in the ovary.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated a shift at older age towards a lymphocytes-rich environment that was accompanied by decreased fractions of several immune populations such as ILC1 cells, M\u03c6s, NTs, and NK cells (Figure 2B, Figure 2\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNA-seq data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "ef428cfb-0ab6-4834-ac0f-e2006cfc473a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C24",
+      "claim": "The fraction of CD3+ cells significantly increases with age in the ovary.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show a significant increase with age of CD3+ cells' fraction (young vs. adult and adult vs. old, Kolmogorov-Smirnov test, p-value <10\u20132), while the fraction of M\u03c6s was significantly decreased (young vs. adult and young vs. old, Kolmogorov-Smirnov test, p-value <10\u20133 and p-value <10\u20132, respectively) at older ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "91f0a25e-4a08-461a-bc1f-f4054cdef959",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C25",
+      "claim": "The fraction of macrophages significantly decreases with age in the ovary.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show a significant increase with age of CD3+ cells' fraction (young vs. adult and adult vs. old, Kolmogorov-Smirnov test, p-value <10\u20132), while the fraction of M\u03c6s was significantly decreased (young vs. adult and young vs. old, Kolmogorov-Smirnov test, p-value <10\u20133 and p-value <10\u20132, respectively) at older ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "3dffa022-3f5f-4f76-97b9-b4503977a239",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C26",
+      "claim": "Most of the change in CD3+ lymphocytes' fraction with age is due to a substantial increase in DNT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, flow cytometry experiments validated that, as with the scRNA-seq results, most of the change in CD3+ lymphocytes' fraction is due to a substantial increase in DNT cells at old age (Figure 2C, D and E and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "e23fa637-bde5-4135-b4ac-b6eb63d6ff84",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C27",
+      "claim": "In the spleen, the fraction of CD3+ lymphocytes decreases at old age.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, analysis of splenic CD3+ lymphocytes show that in contrast to the ovaries, the fraction of these cells decreases at old age, while the fraction of DNT cells doesn't change (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "c225f347-a7dd-4771-95b7-0eb91e6c205d",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C28",
+      "claim": "In the spleen, the fraction of DNT cells doesn't change with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, analysis of splenic CD3+ lymphocytes show that in contrast to the ovaries, the fraction of these cells decreases at old age, while the fraction of DNT cells doesn't change (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "886b81d5-71ce-443e-8db6-2253f3527473",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C29",
+      "claim": "The age-dependent changes in ovarian immune cell composition are cycle-stage independent.",
+      "claim_type": "EXPLICIT",
+      "source": "These age-dependent results are cycle-stage independent (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data analyzed by estrous cycle stage shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "7fa3a6cd-fd40-4152-ba72-8167e5901c9a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C30",
+      "claim": "Several immune cell clusters, such as DNT cells, ILC1, NKT cells, and CD4 T cells, exhibited an extremely skewed pattern in which most of their differentially expressed genes were downregulated with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Several clusters, such as DNT cells, ILC1, NKT cells, and CD4 T cells exhibited an extremely skewed pattern, in which most of their differentially expressed genes (DEGs) were downregulated, compared to upregulated DEGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by differential gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "56fbc6cf-bb44-4881-8978-4d0f027e71c4",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C31",
+      "claim": "DNT cells, ILC1, NKT cells, and CD4 T cells are more susceptible to female aging.",
+      "claim_type": "IMPLICIT",
+      "source": "Several clusters, such as DNT cells, ILC1, NKT cells, and CD4 T cells exhibited an extremely skewed pattern, in which most of their differentially expressed genes (DEGs) were downregulated, compared to upregulated DEGs. This may imply that these cell types are more susceptible to female aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that these cell types show predominantly downregulated genes with age.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "d7b20cd7-7322-400d-9687-aea6303fe3d0",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C32",
+      "claim": "Most ovarian immune cell types show a global decrease in biosynthesis and metabolism-related processes with age.",
+      "claim_type": "EXPLICIT",
+      "source": "The clusters with the processes that were mostly shared among cell types included decreased biosynthesis and metabolism-related processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "95aec932-6b6e-4f25-85b1-131c57999f04",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C33",
+      "claim": "Most ovarian immune cell types show a general loss of regulation over various processes with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Another distinct cluster includes a general loss of regulation over various processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "790b4c94-a7f6-4c3a-8ef8-29f584fe552f",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C34",
+      "claim": "Most ovarian immune cell types show a decrease in cellular response to different stimuli with age.",
+      "claim_type": "EXPLICIT",
+      "source": "The third well-defined cluster includes a decrease in the cellular response to different stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "1aeb01b5-60a9-4dd7-a27f-554e41fd9b6f",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C35",
+      "claim": "Macrophages exhibit attenuation in immune and inflammatory responses with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the cell-type-specific downregulated processes, M\u03c6s exhibit attenuation in immune and inflammatory responses, along with decreased tissue remodeling and wound healing processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes in macrophages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "a6d2f88c-c75e-47c1-a43e-9356351f3553",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C36",
+      "claim": "Macrophages show decreased tissue remodeling and wound healing processes with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the cell-type-specific downregulated processes, M\u03c6s exhibit attenuation in immune and inflammatory responses, along with decreased tissue remodeling and wound healing processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes in macrophages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "3aaa7f1d-8f4b-41ad-968d-f28da69ed81b",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C37",
+      "claim": "Dendritic cells show a decrease in cell activation and regulation of immune response with age.",
+      "claim_type": "EXPLICIT",
+      "source": "DCs show a decrease in cell activation and regulation of immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes in dendritic cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "cad8b606-4dd6-4b20-ac36-6faaa11690eb",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C38",
+      "claim": "Macrophages and DNT cells show upregulated T cell activation and differentiation processes with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Several immune cell types showed a limited set of enriched upregulated processes, in which the most prominent ones were exhibited by M\u03c6s and DNT cells and included T cell activation and differentiation processes (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "388c4c42-8aac-4115-ac43-7b9409dbcf85",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C39",
+      "claim": "Almost all significant nodes and edges in both chemokine and cytokine networks were downregulated with age.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that almost all significant nodes and edges in both networks were downregulated (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by network analysis of chemokine and cytokine expression data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "815212e6-2bca-4a1c-832b-24f22955bf89",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C40",
+      "claim": "The most prominent affected edges in the chemokines network involved Ccr5 expressed by DCs and ILC1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent affected edges in the chemokines network involved Ccr5 expressed by DCs and ILC1 cells, Ccr2 expressed by ILC2 cells, and their ligands Ccl2, Ccl3, Ccl4, Ccl5, Ccl7, Ccl8, and Ccl12 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by network analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "4c75b227-51ac-4c0d-bf21-dd97e25b5c30",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C41",
+      "claim": "CCR5 and CCR2 take part in chemoattraction of immune cells in the context of various inflammatory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these receptors have been shown to take part in chemoattraction of immune cells in the context of various inflammatory processes (D'Ambrosio et al., 2003; Mencarelli et al., 2016; Proudfoot, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9209f4a6-986c-41bf-9819-aa33477c9748",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C42",
+      "claim": "The fraction of ovarian dendritic cells expressing CCR5 decreases significantly with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we measured experimentally the fraction of cells that express CCR5 using flow cytometry experiments, and show it is indeed decreases significantly (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "2ade346f-ab36-484f-97f9-78ec4bf672e8",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C43",
+      "claim": "Cxcl2 is an inflammatory chemokine that mediates neutrophils trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Cxcl2, an inflammatory chemokine that mediates neutrophils trafficking (Lentini et al., 2020; Li et al., 2016), was significantly decreased in almost all immune cell types (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to published literature and expression data shown in Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "4c74ac11-84ce-48d9-a59a-938d3429cacd",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C44",
+      "claim": "Cxcl2 was significantly decreased in almost all immune cell types with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Cxcl2, an inflammatory chemokine that mediates neutrophils trafficking (Lentini et al., 2020; Li et al., 2016), was significantly decreased in almost all immune cell types (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by expression data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "22104053-32d4-4adb-86d3-e36265407e20",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C45",
+      "claim": "CCRL2 is an atypical chemokine receptor that is upregulated in activated immune cells after induction of inflammatory signals.",
+      "claim_type": "EXPLICIT",
+      "source": "CCRL2 is an atypical chemokine receptor that was found to be upregulated in activated immune cells after induction of inflammatory signals (Del Prete et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "ca4a05e7-4af3-4de4-bd28-688a8ef63c3a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C46",
+      "claim": "Ccrl2 was downregulated in several cell types such as ILC1 and NKT with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Ccrl2 was downregulated in several cell types such as ILC1 and NKT, although it is mainly expressed by myeloid cells such as NTs, DCs, and M\u03c6s (Del Prete et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data from scRNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "922833c4-3ed3-4afe-8e06-8694c27b2c4a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C47",
+      "claim": "The changes in the cytokines network with age were found mainly in the IL-1 superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes in the cytokines network were found mainly in the IL-1 superfamily (Il1r1 and Il1r2, along with Il1a, Il1b and Il1rn).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by network analysis of cytokine expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "cc8f757e-325c-4e7e-870b-3167f2def78e",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C48",
+      "claim": "TNF-receptor Tnfsfr1b and its ligand Tnf showed a significant decrease at old age.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TNF-receptor Tnfsfr1b and its ligand Tnf (TNF\u03b1) also showed a significant decrease at old age (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by expression data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9f34bf5e-bcd4-4222-988d-e1697606bff9",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C49",
+      "claim": "Aging shifts the ovarian immune phenotype towards a less inflammatory state.",
+      "claim_type": "EXPLICIT",
+      "source": "As IL-1 and TNF superfamily members are considered inflammatory, along with the evident decrease in various inflammatory chemokines and their receptors, our results suggest that beyond overall inhibition in the ovarian immune function, aging also shifts its phenotype towards a less inflammatory state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed decrease in inflammatory mediators.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "8f51698d-276b-405c-af15-3e9a192ebcd2",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C50",
+      "claim": "Activin A is produced by the gonads and promotes LH secretion from the pituitary.",
+      "claim_type": "EXPLICIT",
+      "source": "Activin A, a dimer composed of two Inhibin-\u03b2A subunits (the translation product of Inhba), is produced among others by the gonads and promotes LH secretion from the pituitary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about Activin A function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "271d8fe5-1597-48af-8e3a-aa8b178ea5a4",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C51",
+      "claim": "Activin A plays an important role in expanding the primordial follicle pool.",
+      "claim_type": "EXPLICIT",
+      "source": "It plays an important role in expanding the primordial follicle pool and contributes to the early stages of follicular growth by increasing FSH receptor expression on granulosa cells (Namwanje and Brown, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "8ccdc9ae-2814-4db0-96cf-a8306b9f11ab",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C52",
+      "claim": "Activin A contributes to the early stages of follicular growth by increasing FSH receptor expression on granulosa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It plays an important role in expanding the primordial follicle pool and contributes to the early stages of follicular growth by increasing FSH receptor expression on granulosa cells (Namwanje and Brown, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "2079b974-8a3a-4a95-9522-74ff2520b799",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C53",
+      "claim": "Activin A activates resting macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Activin A was found to activate resting macrophages \u2013 yet there are contradictory findings as to rather its effect is pro or anti-inflammatory (Morianos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "baf60311-d101-40b3-9c74-c3e0cb6529d5",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C54",
+      "claim": "Decreased expression of Inhba and Acvr2a by ovarian macrophages at older age might suggest a specific role of macrophages in supporting follicular growth via Activin secretion during the estrous cycle.",
+      "claim_type": "IMPLICIT",
+      "source": "Decreased expression of both Inhba and Acvr2a by ovarian macrophages at older age might suggest a specific role of macrophages in supporting follicular growth (via Activin secretion) during the estrous cycle, which decays as age progresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed decrease in Inhba and Acvr2a expression.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "df44777c-d106-4910-9192-484e4e927ff1",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C55",
+      "claim": "Macrophages may participate in inducing an inflammatory environment as part of the ovulation process as a response to Activin.",
+      "claim_type": "IMPLICIT",
+      "source": "Moreover, these results may present a mechanism in which macrophages are participating in inducing an inflammatory environment as part of the ovulation process as a response to Activin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the role of macrophages in ovulation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "2c51e2e5-9175-4381-a876-87bfa769e43a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C56",
+      "claim": "Cell senescence is an irreversible state of growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Inducing cell senescence, which is an irreversible state of growth arrest, is a mechanism the body uses to handle cell stress which can accumulate during aging (Campisi and d'Adda di Fagagna, 2007) and may result in chronic diseases and tissue dysfunction (Mu\u00f1oz-Esp\u00edn and Serrano, 2014; Ovadya and Krizhanovsky, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "08d13652-590d-464a-91ed-283825fe9777",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C57",
+      "claim": "Cell senescence may result in chronic diseases and tissue dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Inducing cell senescence, which is an irreversible state of growth arrest, is a mechanism the body uses to handle cell stress which can accumulate during aging (Campisi and d'Adda di Fagagna, 2007) and may result in chronic diseases and tissue dysfunction (Mu\u00f1oz-Esp\u00edn and Serrano, 2014; Ovadya and Krizhanovsky, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "888754e3-f837-4176-a453-0688f93bc93a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C58",
+      "claim": "Senescent cells create an inflammatory environment by secreting inflammatory cytokines, chemokines, growth factors, and extracellular remodeling factors.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main molecular features of senescent cells is the senescence-associated secretory phenotype (SASP), in which the senescent cells create an inflammatory environment by secreting inflammatory cytokines, chemokines, growth factors, extracellular remodeling factors, and more (Prata et al., 2018; Song et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "93edc3a6-57b2-4217-9dd9-d6ea3a0e9ad3",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C59",
+      "claim": "Immune cells respond to SASP factors and clear senescent cells by phagocytosis or killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Immune cells respond to these factors, detect specific markers expression or their absence on the senescent cells' membrane and clear them either by phagocytosis (by M\u03c6s, for example) or by killing (by NTs or NK cells for example) (Song et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "c3d6a00f-72d4-45e7-b34d-f40ff278e9e5",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C60",
+      "claim": "The fraction of old macrophages that express Ccr2, Csf2ra, and Csf1r is significantly higher than in young macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fraction of cells that express Ccr2, Csf2ra, and Csf1r, which are all receptors for known SASP proteins (Rhinn et al., 2019; Song et al., 2020), was significantly higher in old M\u03c6s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "19f9f254-e8b8-4662-abf4-02e3242bcb6b",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C61",
+      "claim": "The fraction of old macrophages that express Ighm and Clec4a2-3 is elevated.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the fraction of old M\u03c6s that express cell surface markers that were previously reported to take part in the recognition of senescent cells, such as membrane IgM's (Ighm) and C-type lectin receptors (Clec4a2-3) (Burton and Stolzing, 2018) was also elevated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "7da44347-cf81-4b73-a069-8daf7b980dbc",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C62",
+      "claim": "Old neutrophils and macrophages showed upregulated expression of Ifngr1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, old NTs and M\u03c6s showed upregulated expression of Ifngr1 (Figure 4A), a part of the IFN\u03b3 receptor, while the cytokine itself is overexpressed by senescent cells (Lujambio et al., 2013; Pan et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "5cdc7e39-2dfa-4a3d-84ea-8c9ce1d69e09",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C63",
+      "claim": "IFN\u03b3 is overexpressed by senescent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, old NTs and M\u03c6s showed upregulated expression of Ifngr1 (Figure 4A), a part of the IFN\u03b3 receptor, while the cytokine itself is overexpressed by senescent cells (Lujambio et al., 2013; Pan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9dbe779d-b382-47d5-be36-c5aff70bd2ff",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C64",
+      "claim": "Six SASP receptors were significantly overexpressed by old macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we found six SASP receptors that were significantly overexpressed by old M\u03c6s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "f0bed0e5-cdae-4831-8219-7a5ac33a74ba",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C65",
+      "claim": "The probability that six genes would be significantly modulated out of a list of 24 random genes is low (FDR = 10\u201312).",
+      "claim_type": "EXPLICIT",
+      "source": "The probability that six genes would be significantly modulated (p<0.01) out of a list of 24 random genes is low (FDR = 10\u201312, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "5a2ebb4a-5c8a-4ab8-9fd2-951b0cb7e94b",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C66",
+      "claim": "Old macrophages and neutrophils present significantly elevated fractions of cells expressing SASP receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, across all cell types, only old M\u03c6s and NTs presented a significant elevated fractions of cells expressing SASP receptors (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "2af1deb0-c194-4776-921b-224bc007a48f",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C67",
+      "claim": "SASP receptors expression levels in ovarian macrophages are not altered at old age.",
+      "claim_type": "EXPLICIT",
+      "source": "Results show that SASP receptors expression in ovarian M\u03c6s is not altered at old age (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by expression analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "c901b706-4e13-4256-870a-462c4ede64d1",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C68",
+      "claim": "Old neutrophils exhibited elevated fractions of Ccr1, a receptor for several SASP chemokines.",
+      "claim_type": "EXPLICIT",
+      "source": "NTs also exhibited elevated fractions of Ccr1, a receptor for several SASP chemokines (Copp\u00e9 et al., 2010), while old NKT cells had higher levels of Cd74, a receptor for MIF, another SASP member (Copp\u00e9 et al., 2010; Kim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "2c669593-9f76-4f22-9516-581dc914bc17",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C69",
+      "claim": "Old NKT cells had higher levels of Cd74, a receptor for MIF.",
+      "claim_type": "EXPLICIT",
+      "source": "NTs also exhibited elevated fractions of Ccr1, a receptor for several SASP chemokines (Copp\u00e9 et al., 2010), while old NKT cells had higher levels of Cd74, a receptor for MIF, another SASP member (Copp\u00e9 et al., 2010; Kim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "e3e72e6c-d1bb-42c7-b46e-8e1032c7d33f",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C70",
+      "claim": "CXCR6 is a mediator of senescence control in the liver by CD4 T and NKT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR6 is another novel mediator of senescence control which was recently discovered as part of senescence surveillance in the liver by CD4 T and NKT cells (Mossanen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "165ecb41-1274-473f-9beb-b2c1c6796518",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C71",
+      "claim": "Cxcr6 expression was increased in old macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Cxcr6 expression was also increased in old M\u03c6s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "a8c6cbe9-3046-4a23-8327-33e8487e20a3",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C72",
+      "claim": "DNT cells in the blood or lymph nodes consist of 1\u20135% out of all the lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Other identified DNT cells, in the blood or lymph nodes, for example, consist of 1\u20135% out of all the lymphocytes (Hillhouse and Lesage, 2013; Juvet and Zhang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "27ca99b2-3ad4-4bbb-b1f2-591a00b5fb1c",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C73",
+      "claim": "Double-negative T cells are the most common lymphocyte across the female mice uterus and cervix.",
+      "claim_type": "EXPLICIT",
+      "source": "Double-negative T cells were found to be the most common lymphocyte across the female mice uterus and cervix (Johansson and Lycke, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "f56a0a65-b024-45b7-bab5-1bee95aaa081",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C74",
+      "claim": "DNT cells in the uterus and cervix have a regulatory function and show no proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells were shown to have a regulatory function, showed no proliferation, inhibited the proliferation of splenic T cells when co-cultured together in vitro, and their origin was suggested to be extrathymic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (implied from context).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "212936c2-d3e6-4793-963c-449d80315af5",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C75",
+      "claim": "DNT cells in the uterus and cervix inhibit the proliferation of splenic T cells when co-cultured together in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells were shown to have a regulatory function, showed no proliferation, inhibited the proliferation of splenic T cells when co-cultured together in vitro, and their origin was suggested to be extrathymic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (implied from context).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9dba35ef-a8d1-42d5-a8ae-6f25ec6dc42a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C76",
+      "claim": "The origin of DNT cells in the uterus and cervix was suggested to be extrathymic.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells were shown to have a regulatory function, showed no proliferation, inhibited the proliferation of splenic T cells when co-cultured together in vitro, and their origin was suggested to be extrathymic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (implied from context).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "e41e0443-a275-4afa-b15f-ee3f4704b503",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C77",
+      "claim": "The DNT population in the ovary shows almost no expression of classical thymocytes development markers at the double-negative stages.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNT population we observed in the ovary, showed almost no expression of classical thymocytes development markers at the double-negative stages such as Notch1, Socs3, Dtx1, Hes1, and more (Puthier et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "2bedaa8a-d31d-4131-9e7a-b67aeb022257",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C78",
+      "claim": "DNT cells in peripheral blood or lymphoid organs have a suppressive role and assist in preventing allograft rejection and autoimmune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies showed that DNT cells in peripheral blood or lymphoid organs have a suppressive role and assist in preventing allograft rejection and autoimmune responses (Hillhouse et al., 2013; Juvet and Zhang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "c5bc4601-1301-464a-8b9b-d9b8154e3c84",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C79",
+      "claim": "DNT cells may be the result of down-regulation of CD4 and CD8 due to chronic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies suggest that DNT cells are the result of down-regulation of CD4 and CD8 due to chronic stimulation (Rodr\u00edguez-Rodr\u00edguez et al., 2015; Grishkan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "4f1a5b45-14a1-4696-a223-a75d633afa4a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C80",
+      "claim": "The ovaries present ongoing cycles of inflammation processes in each ovulation, which may result in chronic stimulation of ovarian T cells.",
+      "claim_type": "IMPLICIT",
+      "source": "The ovaries present ongoing cycles of inflammation processes in each ovulation, which may result in chronic stimulation of ovarian T cells and may be consistent with an increase of CD4 T cells after estropause (Lliberos et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known inflammatory nature of ovulation and the observed T cell changes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "0accb3d6-f10e-4cf2-afb5-287196627173",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C81",
+      "claim": "Enrichment in CD3+ lymphocytes in the ovary is associated with poor follicular reserve.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, enrichment in CD3+ lymphocytes in the ovary was found to be associated with poor follicular reserve (Jasti et al., 2012) and thus may have an impact on ovarian autoimmune diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "c7164dcd-1157-41ad-98f5-3e5fb6898402",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C82",
+      "claim": "One of the characteristics of polycystic ovary syndrome (PCOS) is an abnormal T lymphocyte milieu that is suspected to be involved in disease pathogenesis and ovarian dysfunction that leads to infertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, one of the characteristics of polycystic ovary syndrome (PCOS) is an abnormal T lymphocyte milieu that is suspected to be involved in disease pathogenesis and ovarian dysfunction that leads to infertility (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "748c3f49-2e85-4410-bd94-59bd4d99b8d6",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C83",
+      "claim": "Age-dependent changes in the T lymphocytes population may be involved in improper immune regulation in the ovary and lead to infertility.",
+      "claim_type": "IMPLICIT",
+      "source": "Similarly, our results indicate an age-dependent change in the T lymphocytes population that may be involved in improper immune regulation in the ovary and hence lead to infertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed T cell changes and their potential impact on fertility.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9a6cc1d1-e766-4b3e-b088-2273c437bbfa",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C84",
+      "claim": "ILC1 cells are the largest population in the young mouse ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ILC1 cells are the largest population in the young mouse ovaries, and the second largest in the old ovaries, after the DNT population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNA-seq data on cell type composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "fc24ad9b-7c1a-4bf5-a434-069850ca274c",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C85",
+      "claim": "ILC1 cells are the second largest population in the old mouse ovaries, after the DNT population.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ILC1 cells are the largest population in the young mouse ovaries, and the second largest in the old ovaries, after the DNT population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNA-seq data on cell type composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "390f959e-9517-4aa1-8185-129bd53978d4",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C86",
+      "claim": "ILC1 cells have weak-to-no cytotoxic capabilities and are more similar to Th1 cells in their function.",
+      "claim_type": "EXPLICIT",
+      "source": "As opposed to NK cells, ILC1 have weak-to-no cytotoxic capabilities, and are more similar to Th1 cells in their function, that is, inducing type 1 immune response against intracellular pathogens and inflammatory responses (Vivier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "8a83b9e3-672c-4ace-a5ec-1900514180a0",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C87",
+      "claim": "ILC1 cells take part in the process of tissue remodelling.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ILC1 cells take part in the process of tissue remodelling (Jowett et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "ea242424-c85b-4e67-afc5-374d1ff3f27b",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C88",
+      "claim": "ILC1 distribution is elevated in the epididymal adipose of male mouse testis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ILC1 distribution was also found to be elevated in the epididymal adipose of male mouse testis (Boulenouar et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9cd92054-9ae1-4b75-8b5d-e22b167b3b4c",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C89",
+      "claim": "The ovaries may use ILC1 cells as orchestrators of other cell types participating in tissue remodeling processes.",
+      "claim_type": "IMPLICIT",
+      "source": "As a dynamic, constantly changing environment, the ovaries, which involve cycles of developing and regressing structures, may use ILC1 cells as orchestrators of other cell types participating in these processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the role of ILC1 cells in the ovary based on their known functions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "4100f949-5f4c-4a49-9c74-9492b660b8cb",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C90",
+      "claim": "A decline in the macrophages population with age may result in fertility deterioration because of impaired ovarian vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also show a decline in the macrophages population with age, which may result in fertility deterioration because of impaired ovarian vasculature (Turner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data showing decreased macrophages and a citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "a6c23f46-be1b-4864-a8b7-e62037187ad6",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C91",
+      "claim": "A state of general attenuation and unresponsiveness is emerging in ovarian immune cells with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking together the observed changes in global processes and expression of immune mediators such as chemokines and cytokines, a state of general attenuation and unresponsiveness is emerging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed changes in gene expression and biological processes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "7d39ed53-7378-41ab-8623-5895f94ea236",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C92",
+      "claim": "Immune cells exhibit lower levels of metabolism-related processes with age.",
+      "claim_type": "EXPLICIT",
+      "source": "GO enrichment analysis of joint processes for several cell types present a decrease in general activity, in which immune cells exhibit lower levels of metabolism-related processes accompanied by decreased responsiveness to different stimuli and loss of regulation over various processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "3537fa09-06c7-45b6-9eba-f2c6446ad808",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C93",
+      "claim": "Immune cells exhibit decreased responsiveness to different stimuli with age.",
+      "claim_type": "EXPLICIT",
+      "source": "GO enrichment analysis of joint processes for several cell types present a decrease in general activity, in which immune cells exhibit lower levels of metabolism-related processes accompanied by decreased responsiveness to different stimuli and loss of regulation over various processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9ab73516-01cf-42b3-989b-e1af03106ecb",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C94",
+      "claim": "Immune cells exhibit loss of regulation over various processes with age.",
+      "claim_type": "EXPLICIT",
+      "source": "GO enrichment analysis of joint processes for several cell types present a decrease in general activity, in which immune cells exhibit lower levels of metabolism-related processes accompanied by decreased responsiveness to different stimuli and loss of regulation over various processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO enrichment analysis of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "35a5925a-9f0f-41ce-b5ab-4f4d39c08cb7",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C95",
+      "claim": "Decreased expression of Inhba and Acvr2a by macrophages at old age might be connected to impaired or decreased follicles growth.",
+      "claim_type": "IMPLICIT",
+      "source": "Moreover, decreased expression of several members of the TGF\u03b2 superfamily by macrophages at old age, such as Inhba and Acvr2a, might be connected to impaired or decreased follicles growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed decrease in these genes.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "488cbaff-2bfe-4b45-ad0b-7878a9aa9571",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C96",
+      "claim": "Previous studies suggested an inflammatory state in the post-estropausal ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous studies suggested an inflammatory state in the post-estropausal ovaries (Lliberos et al., 2021), our results indicate a decrease in the inflammatory characteristics of ovarian immune cells during pre-estropause aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "899f9a6e-2639-48a4-bcd1-9c3223cd059c",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C97",
+      "claim": "There is a decrease in the inflammatory characteristics of ovarian immune cells during pre-estropause aging.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous studies suggested an inflammatory state in the post-estropausal ovaries (Lliberos et al., 2021), our results indicate a decrease in the inflammatory characteristics of ovarian immune cells during pre-estropause aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression and network analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "39b553e2-70ea-4be4-b35e-1dce51817585",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C98",
+      "claim": "There is an increase in genes involved in senescent cell recognition by several immune cell types, mostly macrophages but also neutrophils, NK, and NKT cells, with age.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found an increase in genes involved in senescent cell recognition by several immune cell types, mostly M\u03c6s but also NTs, NK, and NKT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "11502508-1c54-49b1-ba06-35ca962934e5",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C99",
+      "claim": "Senescent cells accumulate within tissues as age progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, as age progresses, senescent cells are accumulating within tissues (Childs et al., 2015; van Deursen, 2014; Velarde and Menon, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "fb78ffb7-4f29-431e-b1ad-136ca70765a2",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C100",
+      "claim": "In the ovaries, aging and senescence are accompanied by an increasing number of atretic follicles and cycle irregularities that end in estropause.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ovaries, aging and senescence are accompanied by an increasing number of atretic follicles and cycle irregularities that end in estropause.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about ovarian aging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "a711461e-7e19-4e82-823e-5d82c9209637",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C101",
+      "claim": "Clearance of senescent ovarian cells by immune cells increases at old age to match the ovary needs.",
+      "claim_type": "IMPLICIT",
+      "source": "Our results suggest that clearance of senescent ovarian cells by immune cells increases at old age to match the ovary needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed increase in SASP receptor expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9aff4cd4-3df2-43af-a047-821bcb339936",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C102",
+      "claim": "Inflammaging is an age-related increase in the inflammatory environment that develops over time.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a plethora of studies that suggest inflammaging - an age-related increase in the inflammatory environment that develops over time (Ferrucci and Fabbri, 2018; Franceschi et al., 2018; Giunta, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "165d771d-d989-4628-a902-37cfa627e451",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C103",
+      "claim": "Previous papers that characterized the age effect on the immune system in various tissues have demonstrated inflammaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous recently published papers who characterized the age effect in the single-cell level on the immune system in various fertility non-related tissues have demonstrated inflammaging (Almanzar et al., 2020; Kimmel et al., 2019; Mogilenko et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "05e91ecf-e61b-436a-ba34-b1c1b1afd0b1",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C104",
+      "claim": "The most evident change in the ovaries of aging female mice before estropause is a shift from innate to adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the most evident change in the ovaries of aging female mice before estropause is a shift from innate to adaptive immunity, which is associated with a dramatic increase of CD3+ lymphocytes, and a decrease in M\u03c6s, NTs, and ILC1 fractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNA-seq and flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "5bac9247-59e9-4f94-bf6a-0c3abe8c978c",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C105",
+      "claim": "Most ovarian immune cell types exhibit a decrease in inflammatory hallmarks with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the changes in the composition of the immune milieu, most cell types exhibit a decrease in inflammatory hallmarks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression and network analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "61b0126e-5f14-42b5-961b-35f5154b6086",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C106",
+      "claim": "Prior to the elevation in inflammatory hallmarks and the development of inflammaging, there is an apparent decrease in inflammatory characteristics in the ovary.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results portray a novel intermediate state, in which prior to the elevation in inflammatory hallmarks and the development of inflammaging, there is an apparent decrease in inflammatory characteristics in the ovary (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data suggesting a novel intermediate state in ovarian aging.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "0de0d7d6-c6af-4275-a2c9-09245985ceca",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C107",
+      "claim": "Ovarian immune aging is not linear, but a complicated process that exhibits alternations between anti- and pro-inflammatory environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that ovarian immune aging is not linear, but a complicated process that exhibits alternations between anti- and pro-inflammatory environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data suggesting a non-linear aging process.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "17e5da90-8d76-4b01-b0e7-fa44ae148e02",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C108",
+      "claim": "Ovarian DNT cells are predominantly TCR\u03b3\u03b4-.",
+      "claim_type": "EXPLICIT",
+      "source": "Ovarian CD3+ CD4- CD8- cells were predominantly TCR\u03b3\u03b4-, regardless of age (2.78% at young, 2.48% at old mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 1\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "9128241f-8b89-4ea7-94ba-df82a94ecceb",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C109",
+      "claim": "The dendritic cell cluster 3 corresponds to an expression pattern of cDC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Violin plot of the expression levels of several literature-based markers for cDC1 and cDC2 reveal that cluster 3 (Figure 1C) corresponds to an expression pattern of cDC2, while cluster 4 corresponds to an expression pattern of cDC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by marker expression analysis shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "36a4b42e-1e1b-4f3f-b06d-725c21699f5a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C110",
+      "claim": "The dendritic cell cluster 4 corresponds to an expression pattern of cDC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Violin plot of the expression levels of several literature-based markers for cDC1 and cDC2 reveal that cluster 3 (Figure 1C) corresponds to an expression pattern of cDC2, while cluster 4 corresponds to an expression pattern of cDC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by marker expression analysis shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "f29fc733-5a5f-42d0-a1e8-58b07a9456b6",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C111",
+      "claim": "The MILO algorithm identified significant changes in several cell types with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the MILO algorithm (which divides the population for neighborhoods of cells, see Methods for further details) we identified significant changes in several cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MILO analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "4969069e-cef9-47b8-bc3d-f5904bd7f720",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C112",
+      "claim": "The most prominent increase with age is of DNT and NKT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent increase is of DNT (CD4- CD8- T) and NKT cells, while ILC1, macrophages, neutrophils and NK cells decrease at old age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MILO analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "bb558ea0-b2c1-4bea-ab01-f7c7ccf39032",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C113",
+      "claim": "ILC1, macrophages, neutrophils and NK cells decrease at old age.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent increase is of DNT (CD4- CD8- T) and NKT cells, while ILC1, macrophages, neutrophils and NK cells decrease at old age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MILO analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "0738d573-6649-40ae-80ac-c22f8a175d57",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C114",
+      "claim": "The cell2cell algorithm identified that the main receptor-ligand connections responsible for age differences involve mainly CCR5 and several of its ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell2Cell algorithm ('Methods') was applied on the chemokines network and found that the main receptor-ligand connections responsible for age differences involve mainly CCR5 and several of its ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cell2cell algorithm analysis shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "f79a1a99-c0b8-4125-9230-725010a49be3",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "claim_id": "C115",
+      "claim": "The fraction of ovarian CCR5+ dendritic cells is significantly decreased at old age.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of ovarian CCR5+ Dendritic cells (CD11c+) cells was measured using flow cytometry in young (n=4, mean = 52%, SD = 17.54) and old (n=2, mean = 20.4%, SD = 1.97) female mice. CCR5 expression is significantly decreased at old age (* p-value <0.05; student's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f99c37a1-3e4e-48da-a127-390928a93a29",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The murine ovarian immune system contains diverse immune cell populations including macrophages, dendritic cells (cDC1 and cDC2), neutrophils, NK cells, NKT cells, ILC1-3, B cells, CD8+ T cells, CD4+ T cells, and CD3+ CD4- CD8- double-negative T cells (DNT). In young mice, innate immune cells predominate, with ILC1 being the largest population, and DNT cells are predominantly TCR\u03b3\u03b4- and tissue-specific to the ovaries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21, C84-C85, and C108-C110 are well-supported by scRNA-seq data combined with flow cytometry validation (Figure 1). The cell type identification used multiple complementary methods (Seurat clustering, SingleR annotation, literature-based markers), and flow cytometry confirmed key populations including the ovary-specific DNT cells and high G1-ILC fractions. The characterization of DC subtypes (cDC1/cDC2) is supported by marker expression analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "993e2e35-fb7f-448b-b323-759d951197e8",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Aging causes a shift in ovarian immune composition from innate to adaptive immunity, characterized by a dramatic increase in CD3+ lymphocytes (primarily DNT cells) and significant decreases in macrophages, neutrophils, ILC1, and NK cells. This shift is cycle-stage independent and tissue-specific to the ovary, as the spleen shows opposite trends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C22-C29, C104, and C111-C113 are strongly supported by converging evidence from scRNA-seq (Figure 2A-B), flow cytometry validation across multiple age groups (Figure 2C-E), and MILO algorithm analysis (Figure 2\u2014figure supplement 1). Statistical significance is demonstrated with appropriate tests (Kolmogorov-Smirnov, p<0.01), adequate sample sizes (young n=4, adult n=15, old n=12), and tissue-specific controls showing opposite trends in spleen. The cycle-stage independence is validated in Figure 2\u2014figure supplement 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "171018c4-a3ea-4793-aa68-48a4f6ba1374",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Aging causes widespread transcriptional changes in ovarian immune cells, with DNT cells, ILC1, NKT cells, and CD4 T cells showing predominantly downregulated genes. GO enrichment analysis reveals global decreases in biosynthesis/metabolism, loss of regulation over various processes, and decreased cellular responsiveness to stimuli. Cell-type-specific changes include attenuated immune/inflammatory responses and decreased tissue remodeling in macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C38 and C91-C94 are supported by differential gene expression analysis (Figure 3A) and GO enrichment analysis (Figure 3B) from scRNA-seq data. The analysis used appropriate statistical thresholds (twofold change, FDR \u22640.1, p\u22640.05) and REVIGO clustering to identify shared and cell-type-specific processes. However, the inference that certain cell types are 'more susceptible to aging' (C31) is speculative and not directly tested. The global downregulation pattern is acknowledged and addressed with complementary CDF analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Aging causes decreased expression of inflammatory mediators in ovarian immune cells, with almost all significant chemokine and cytokine network connections downregulated. Key changes include decreased CCR5 expression in dendritic cells, reduced Cxcl2 across cell types, and decreased IL-1 and TNF superfamily members, collectively shifting the ovarian immune phenotype toward a less inflammatory state during pre-estropause aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39-C44, C46-C49, C97, C105, C114-C115 are well-supported by network analysis (Figure 4C-D), expression heatmaps (Figure 4A), CDF analysis (Figure 4B), and experimental validation via flow cytometry showing decreased CCR5+ dendritic cells (Figure 4\u2014figure supplement 1B, p<0.05). The cell2cell algorithm independently confirmed CCR5 as a key modulated receptor. The conclusion of a 'less inflammatory state' (C49, C97) is a reasonable inference from the comprehensive decrease in inflammatory mediators, though it remains an interpretation rather than direct functional measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Aging increases expression of senescent cell recognition receptors in ovarian immune cells, particularly in macrophages and neutrophils. Six SASP receptors (Ccr2, Csf2ra, Csf1r, Ighm, Clec4a2-3, Ifngr1) are significantly overexpressed in old macrophages, with statistical enrichment (FDR=10\u207b\u00b9\u00b2) indicating this is not random. The fraction of cells expressing SASP receptors increases significantly in macrophages and neutrophils, though expression levels remain unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C60-C62, C64-C69, C71, C98, and C101 are supported by scRNA-seq analysis showing increased fractions of cells expressing SASP receptors (Figure 5A-B), with rigorous statistical validation using CDF analysis and FDR calculations. The finding that 6/24 SASP receptors are significantly modulated in macrophages with FDR=10\u207b\u00b9\u00b2 is statistically robust. Complementary analysis (Figure 5\u2014figure supplement 1) appropriately distinguishes between fraction changes (increased) and expression level changes (unchanged). However, C101's inference about 'clearance increasing to match ovary needs' is speculative and not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "5f5815a3-6fdc-4e05-811d-ef20cfab1895",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Decreased expression of Inhba and Acvr2a by ovarian macrophages at older age might suggest a specific role of macrophages in supporting follicular growth via Activin secretion during the estrous cycle, and macrophages may participate in inducing an inflammatory environment as part of the ovulation process in response to Activin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54, C55, and C95 are explicitly speculative interpretations (using 'might suggest' and 'may') of observed gene expression changes. While the decrease in Inhba and Acvr2a is supported by data, the proposed mechanisms linking macrophages to follicular growth and ovulation-associated inflammation are not directly tested. These remain hypotheses requiring functional validation through experiments such as macrophage depletion studies or Activin supplementation assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "fe33ebd0-74e1-409e-92d5-2f68cb11fdcf",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DNT cells may result from down-regulation of CD4 and CD8 due to chronic stimulation from repeated ovulation cycles, and age-dependent changes in T lymphocyte populations may be involved in improper immune regulation leading to infertility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 and C83 are speculative interpretations connecting observed DNT cell increases to chronic stimulation and potential fertility impacts. While C79 cites literature suggesting DNT cells can arise from chronic stimulation, and C80 notes the inflammatory nature of ovulation, the causal link between ovulation cycles and DNT accumulation is not experimentally demonstrated. C83's connection to infertility is based on associations from cited literature (C81-C82) but lacks direct functional evidence in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "423214ed-c2b5-484b-9809-8d2acfd2f5b6",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ovaries may use ILC1 cells as orchestrators of other cell types participating in tissue remodeling processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is a speculative interpretation of ILC1 function based on their abundance (C84-C85) and known roles in tissue remodeling (C87). While the high fraction of ILC1 cells in ovaries is well-documented, their specific orchestrating role in ovarian tissue remodeling is not directly demonstrated through functional experiments such as ILC1 depletion or co-culture studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "6682f223-e401-4a84-9123-b7e602ce0de3",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior to post-menopausal inflammaging, there is a novel intermediate state during pre-estropause aging characterized by decreased inflammatory characteristics in the ovary, suggesting ovarian immune aging is non-linear with alternations between anti- and pro-inflammatory environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 represent a major interpretive conclusion supported by the comprehensive data showing decreased inflammatory mediators (C3, C39-C49, C97, C105) during pre-estropause aging, contrasting with cited literature on post-menopausal inflammaging (C96, C102-C103). The 'novel intermediate state' interpretation is reasonable given the convergent evidence from gene expression, network analysis, and GO enrichment. However, this remains an interpretation of a temporal pattern rather than longitudinal data tracking the same animals through estropause.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "feca44ea-99db-4ab8-830c-c6d6539ff103",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A decline in the macrophages population with age may result in fertility deterioration because of impaired ovarian vasculature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is supported by data showing decreased macrophage fractions with age (C23, C25) and cites literature (Turner et al., 2011) linking macrophage depletion to impaired ovarian vasculature. While the current study does not directly measure vasculature or fertility outcomes, the claim appropriately qualifies the connection as 'may result' and is grounded in both observed data and relevant prior work (C12-C15).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background and contextual claims about female reproductive aging, immune system function, ovarian immune cells, DNT cells, ILC1 cells, senescence, and inflammaging based on cited literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C16, C41, C45, C50-C53, C56-C59, C63, C70, C72-C76, C78, C81-C82, C86-C88, C96, C99-C100, C102-C103 are background claims supported by appropriate citations to published literature. These provide necessary context for interpreting the study's findings. The citations appear relevant and appropriately used to establish the scientific foundation for the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    },
+    {
+      "id": "ef702c3a-a158-4737-b7a8-656780394614",
+      "content_id": "1f89c534-9137-4f06-a8ac-50e630056240",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The immune system plays a major role in maintaining many physiological processes in the reproductive system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a general statement supported by established scientific knowledge and elaborated through specific examples in subsequent claims (C9-C15). This serves as the foundational premise for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:56.465718Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "74353c06-591e-4e7a-b9a5-c06633afa911",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "da5a6cc8-b44b-44fe-835d-01147fb3bd40",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "4c30bee8-8af9-4810-99f5-2bcfe1222c76",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "c3b72bdc-834f-4867-abed-547a153a0423",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "e0476e1d-a717-4424-a8e3-6a10698779cf",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "9a6cc1d1-e766-4b3e-b088-2273c437bbfa",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "fc24ad9b-7c1a-4bf5-a434-069850ca274c",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "17e5da90-8d76-4b01-b0e7-fa44ae148e02",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "9128241f-8b89-4ea7-94ba-df82a94ecceb",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "36a4b42e-1e1b-4f3f-b06d-725c21699f5a",
+      "result_id": "f99c37a1-3e4e-48da-a127-390928a93a29"
+    },
+    {
+      "claim_id": "e896b57b-7049-4604-b085-ffc7649fb16a",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "0908736a-0416-45cc-b5b1-f7a0c2fcc403",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "8d53f46b-3156-466a-8a2c-6ca93e8991d6",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "ef428cfb-0ab6-4834-ac0f-e2006cfc473a",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "91f0a25e-4a08-461a-bc1f-f4054cdef959",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "3dffa022-3f5f-4f76-97b9-b4503977a239",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "e23fa637-bde5-4135-b4ac-b6eb63d6ff84",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "c225f347-a7dd-4771-95b7-0eb91e6c205d",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "886b81d5-71ce-443e-8db6-2253f3527473",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "05e91ecf-e61b-436a-ba34-b1c1b1afd0b1",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "f29fc733-5a5f-42d0-a1e8-58b07a9456b6",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "4969069e-cef9-47b8-bc3d-f5904bd7f720",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "bb558ea0-b2c1-4bea-ab01-f7c7ccf39032",
+      "result_id": "993e2e35-fb7f-448b-b323-759d951197e8"
+    },
+    {
+      "claim_id": "7fa3a6cd-fd40-4152-ba72-8167e5901c9a",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "56fbc6cf-bb44-4881-8978-4d0f027e71c4",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "d7b20cd7-7322-400d-9687-aea6303fe3d0",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "95aec932-6b6e-4f25-85b1-131c57999f04",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "790b4c94-a7f6-4c3a-8ef8-29f584fe552f",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "1aeb01b5-60a9-4dd7-a27f-554e41fd9b6f",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "a6d2f88c-c75e-47c1-a43e-9356351f3553",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "3aaa7f1d-8f4b-41ad-968d-f28da69ed81b",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "cad8b606-4dd6-4b20-ac36-6faaa11690eb",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "a6c23f46-be1b-4864-a8b7-e62037187ad6",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "7d39ed53-7378-41ab-8623-5895f94ea236",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "3537fa09-06c7-45b6-9eba-f2c6446ad808",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "9ab73516-01cf-42b3-989b-e1af03106ecb",
+      "result_id": "171018c4-a3ea-4793-aa68-48a4f6ba1374"
+    },
+    {
+      "claim_id": "b4a957c1-6e23-4be4-b165-208cc3cccf4d",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "388c4c42-8aac-4115-ac43-7b9409dbcf85",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "815212e6-2bca-4a1c-832b-24f22955bf89",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "4c75b227-51ac-4c0d-bf21-dd97e25b5c30",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "9209f4a6-986c-41bf-9819-aa33477c9748",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "2ade346f-ab36-484f-97f9-78ec4bf672e8",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "4c74ac11-84ce-48d9-a59a-938d3429cacd",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "ca4a05e7-4af3-4de4-bd28-688a8ef63c3a",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "922833c4-3ed3-4afe-8e06-8694c27b2c4a",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "cc8f757e-325c-4e7e-870b-3167f2def78e",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "9f34bf5e-bcd4-4222-988d-e1697606bff9",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "899f9a6e-2639-48a4-bcd1-9c3223cd059c",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "5bac9247-59e9-4f94-bf6a-0c3abe8c978c",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "0738d573-6649-40ae-80ac-c22f8a175d57",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "f79a1a99-c0b8-4125-9230-725010a49be3",
+      "result_id": "1e30d6a4-d3a9-4495-a6d8-f2945ac7164a"
+    },
+    {
+      "claim_id": "798d14f0-efd2-4ac9-9e58-81214824871c",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "c3d6a00f-72d4-45e7-b34d-f40ff278e9e5",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "19f9f254-e8b8-4662-abf4-02e3242bcb6b",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "7da44347-cf81-4b73-a069-8daf7b980dbc",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "9dbe779d-b382-47d5-be36-c5aff70bd2ff",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "f0bed0e5-cdae-4831-8219-7a5ac33a74ba",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "5a2ebb4a-5c8a-4ab8-9fd2-951b0cb7e94b",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "2af1deb0-c194-4776-921b-224bc007a48f",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "c901b706-4e13-4256-870a-462c4ede64d1",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "2c669593-9f76-4f22-9516-581dc914bc17",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "165ecb41-1274-473f-9beb-b2c1c6796518",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "39b553e2-70ea-4be4-b35e-1dce51817585",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "a711461e-7e19-4e82-823e-5d82c9209637",
+      "result_id": "d9da8e12-c28c-432b-bc5b-05e2401a4c1a"
+    },
+    {
+      "claim_id": "baf60311-d101-40b3-9c74-c3e0cb6529d5",
+      "result_id": "5f5815a3-6fdc-4e05-811d-ef20cfab1895"
+    },
+    {
+      "claim_id": "df44777c-d106-4910-9192-484e4e927ff1",
+      "result_id": "5f5815a3-6fdc-4e05-811d-ef20cfab1895"
+    },
+    {
+      "claim_id": "35a5925a-9f0f-41ce-b5ab-4f4d39c08cb7",
+      "result_id": "5f5815a3-6fdc-4e05-811d-ef20cfab1895"
+    },
+    {
+      "claim_id": "c5bc4601-1301-464a-8b9b-d9b8154e3c84",
+      "result_id": "fe33ebd0-74e1-409e-92d5-2f68cb11fdcf"
+    },
+    {
+      "claim_id": "4f1a5b45-14a1-4696-a223-a75d633afa4a",
+      "result_id": "fe33ebd0-74e1-409e-92d5-2f68cb11fdcf"
+    },
+    {
+      "claim_id": "748c3f49-2e85-4410-bd94-59bd4d99b8d6",
+      "result_id": "fe33ebd0-74e1-409e-92d5-2f68cb11fdcf"
+    },
+    {
+      "claim_id": "9cd92054-9ae1-4b75-8b5d-e22b167b3b4c",
+      "result_id": "423214ed-c2b5-484b-9809-8d2acfd2f5b6"
+    },
+    {
+      "claim_id": "61b0126e-5f14-42b5-961b-35f5154b6086",
+      "result_id": "6682f223-e401-4a84-9123-b7e602ce0de3"
+    },
+    {
+      "claim_id": "0de0d7d6-c6af-4275-a2c9-09245985ceca",
+      "result_id": "6682f223-e401-4a84-9123-b7e602ce0de3"
+    },
+    {
+      "claim_id": "4100f949-5f4c-4a49-9c74-9492b660b8cb",
+      "result_id": "feca44ea-99db-4ab8-830c-c6d6539ff103"
+    },
+    {
+      "claim_id": "77d72d8b-17a9-408a-be48-8a3fa00d9d71",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "e0f83c2e-87e9-4524-9831-0d99460e55e4",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "2c7d034f-56f8-4a7a-8fef-da17965c14e8",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "aea35ffd-5e50-493e-b4a3-fda0cabd32b2",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "91e6533a-ad6a-4093-8917-146bf2798b91",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "f21ecd88-5bd1-428e-bdad-c0b9b1ddfca0",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "ea48fccc-c97a-4a23-9ff9-c82cf52e6282",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "6c9d2b71-2624-4957-8478-b786a39d04fd",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "9a025a89-207d-48fc-8d81-6e4ca0ec973f",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "7183acd2-f59c-453d-8b21-417453cec27f",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "6545ce14-841f-41c2-9dc0-050b4828a207",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "ddf9be2c-97bc-402f-833f-e6e1ade299b9",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "4c75b227-51ac-4c0d-bf21-dd97e25b5c30",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "22104053-32d4-4adb-86d3-e36265407e20",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "8f51698d-276b-405c-af15-3e9a192ebcd2",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "271d8fe5-1597-48af-8e3a-aa8b178ea5a4",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "8ccdc9ae-2814-4db0-96cf-a8306b9f11ab",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "2079b974-8a3a-4a95-9522-74ff2520b799",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "2c51e2e5-9175-4381-a876-87bfa769e43a",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "08d13652-590d-464a-91ed-283825fe9777",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "888754e3-f837-4176-a453-0688f93bc93a",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "93edc3a6-57b2-4217-9dd9-d6ea3a0e9ad3",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "5cdc7e39-2dfa-4a3d-84ea-8c9ce1d69e09",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "e3e72e6c-d1bb-42c7-b46e-8e1032c7d33f",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "a8c6cbe9-3046-4a23-8327-33e8487e20a3",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "27ca99b2-3ad4-4bbb-b1f2-591a00b5fb1c",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "f56a0a65-b024-45b7-bab5-1bee95aaa081",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "212936c2-d3e6-4793-963c-449d80315af5",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "9dba35ef-a8d1-42d5-a8ae-6f25ec6dc42a",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "2bedaa8a-d31d-4131-9e7a-b67aeb022257",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "0accb3d6-f10e-4cf2-afb5-287196627173",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "c7164dcd-1157-41ad-98f5-3e5fb6898402",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "390f959e-9517-4aa1-8185-129bd53978d4",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "8a83b9e3-672c-4ace-a5ec-1900514180a0",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "ea242424-c85b-4e67-afc5-374d1ff3f27b",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "488cbaff-2bfe-4b45-ad0b-7878a9aa9571",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "11502508-1c54-49b1-ba06-35ca962934e5",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "fb78ffb7-4f29-431e-b1ad-136ca70765a2",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "9aff4cd4-3df2-43af-a047-821bcb339936",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "165d771d-d989-4628-a902-37cfa627e451",
+      "result_id": "baf10fea-4096-4f08-9272-b02ba9bd9ebd"
+    },
+    {
+      "claim_id": "b9e90fcc-6b46-44fc-95b7-e61ce3265741",
+      "result_id": "ef702c3a-a158-4737-b7a8-656780394614"
+    }
+  ],
+  "comparisons": []
+}

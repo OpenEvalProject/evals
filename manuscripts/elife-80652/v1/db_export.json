@@ -1,0 +1,1821 @@
+{
+  "submission": {
+    "id": "d7986ace-2c33-46b3-8118-93ce0f3f5228",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:26:10.383558Z",
+    "updated_at": "2025-12-03T18:26:10.383558Z"
+  },
+  "content": [
+    {
+      "id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "submission_id": "d7986ace-2c33-46b3-8118-93ce0f3f5228",
+      "content_type": "manuscript",
+      "content_text": "# Sex and prior exposure jointly shape innate immune responses to a live herpesvirus vaccine\n\n## Authors\n\n- Foo Cheung<sup>1</sup>\n- Richard Apps<sup>1</sup> ([ORCID: 0000-0001-5140-0141](https://orcid.org/0000-0001-5140-0141))\n- Lesia Dropulic<sup>2</sup>\n- Yuri Kotliarov<sup>1</sup>\n- Jinguo Chen<sup>1</sup>\n- Tristan Jordan<sup>2</sup>\n- Marc Langweiler<sup>1</sup>\n- Julian Candia<sup>1</sup> ([ORCID: 0000-0001-5793-8989](https://orcid.org/0000-0001-5793-8989))\n- Angelique Biancotto<sup>1</sup>\n- Kyu Lee Han<sup>1</sup>\n- Nicholas Rachmaninoff<sup>3</sup>\n- Harlan Pietz<sup>2</sup> ([ORCID: 0000-0003-4792-5708](https://orcid.org/0000-0003-4792-5708))\n- Kening Wang<sup>2</sup>\n- John S Tsang<sup>1</sup> ([ORCID: 0000-0003-3186-3047](https://orcid.org/0000-0003-3186-3047)) \u2020\n- Jeffrey I Cohen<sup>2</sup> ([ORCID: 0000-0003-0238-7176](https://orcid.org/0000-0003-0238-7176)) \u2020\n\n### Affiliations\n\n1. Center for Human Immunology, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))\n2. Medical Virology Section, Laboratory of Infectious Diseases, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))\n3. Multiscale Systems Biology Section, Laboratory of Immune System Biology, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Both sex and prior exposure to pathogens are known to influence responses to immune challenges, but their combined effects are not well established in humans, particularly in early innate responses critical for shaping subsequent outcomes.Methods:We employed systems immunology approaches to study responses to a replication-defective, herpes simplex virus (HSV) 2 vaccine in men and women either naive or previously exposed to HSV.Results:Blood transcriptomic and cell population profiling showed substantial changes on day 1 after vaccination, but the responses depended on sex and whether the vaccinee was naive or previously exposed to HSV. The magnitude of early transcriptional responses was greatest in HSV naive women where type I interferon (IFN) signatures were prominent and associated negatively with vaccine-induced neutralizing antibody titers, suggesting that a strong early antiviral response reduced the uptake of this replication-defective virus vaccine. While HSV seronegative vaccine recipients had upregulation of gene sets in type I IFN (IFN-\u03b1/\u03b2) responses, HSV2 seropositive vaccine recipients tended to have responses focused more on type II IFN (IFN-\u03b3) genes.Conclusions:These results together show that prior exposure and sex interact to shape early innate responses that then impact subsequent adaptive immune phenotypes.Funding:Intramural Research Program of the NIH, the National Institute of Allergy and Infectious Diseases, and other institutes supporting the Trans-NIH Center for Human Immunology, Autoimmunity, and Inflammation. The vaccine trial was supported through a clinical trial agreement between the National Institute of Allergy and Infectious Diseases and Sanofi Pasteur. Clinical trial number: NCT01915212.\n\n## Introduction\n\nSystems vaccinology aims to improve understanding of vaccine outcomes, by using unbiased approaches to identify the major associated immune phenotypes, including peripheral blood cell population frequencies and gene expression (Pulendran et al., 2010). This has been particularly informative for dissecting the molecular and cellular correlates of natural human variation that can influence vaccine responses and outcomes in vivo (Tsang, 2015). Sex and prior exposure to the same or similar antigen are prominent examples of natural variation that influence vaccinee responses. However, immune response differences associated with sex and prior exposure have typically been defined and analyzed separately. These variables have not been examined together because vaccination studies often involve individuals who are either almost entirely previously exposed (e.g., influenza studies Bucasas et al., 2011; Nakaya et al., 2016; Nakaya et al., 2011; Tsang et al., 2014; Kotliarov et al., 2020) or naive (e.g., Ebola or yellow fever studies in US cohorts Gaucher et al., 2008; Querec et al., 2009; Rechtien et al., 2017) to the vaccine pathogen. Here, we utilize a unique cohort of herpes simplex virus (HSV) 2 vaccine recipients that includes both sexes, as well as naive and previously exposed subjects, thus allowing us to study the in vivo molecular and cellular response correlates of the joint effects of sex and prior exposure.\n\nSex is a well-known variable that can influence vaccine and disease responses. Females typically develop higher antibody responses and report more adverse reactions following vaccination than males (Klein et al., 2015). These differences could be a result of multiple sex dimorphic traits, including sex hormones and increased expression of X-linked genes escaping inactivation. Females in particular have been observed to show higher levels of Toll-like receptor (TLR)/interferon (IFN)-associated gene expression in innate responses to vaccination (Klein et al., 2010). Systems immunology studies have identified prevaccination differences that predict antibody titer responses, such as CD20+CD38high B cell frequency and plasmacytoid dendritic cell activation (Kotliarov et al., 2020). Prior exposure to antigen is another dominant factor in immune response, but its effects have most often been analyzed focusing on adaptive, antigen-specific responses. An example of particular interest for innate responses involved vaccine vectors using replication-defective viruses: trials testing an experimental adenovirus vector-based HIV vaccine revealed increased inflammatory responses in subjects seropositive for a prevalent adenovirus subtype and showed an enhanced risk of HIV infection that was associated with prior adenovirus exposure (Zak et al., 2012; Buchbinder et al., 2008; Gray et al., 2011).\n\nHere, we analyzed a unique cohort receiving a multidose, replication-defective vaccine, to interrogate the interaction of sex and prior exposure to infection. Subjects received an experimental HSV2 vaccine in a phase 1 clinical trial where comparisons could be made between three groups of volunteers based on their HSV serostatus prior to vaccination: HSV1\u2212/HSV2\u2212, HSV1+/HSV2\u2212, or HSV1\u00b1/HSV2+ (Dropulic et al., 2019). Each of these groups included subjects from both sexes. HSV2 is an important human pathogen. Persons infected with HSV2 have a threefold increased risk of acquiring HIV, and HSV2 infection causes genital herpes and severe disease in neonates, patients with AIDS, and transplant recipients (Koelle and Corey, 2008; Freeman et al., 2006). Prior attempts to produce an effective prophylactic vaccine for HSV2, including glycoprotein subunit or replication-competent vaccines, have been unsuccessful (Dropulic and Cohen, 2012). The replication-defective vaccine HSV529 studied here is deleted for two essential HSV genes, UL5 and UL29, and propagated in a cell line expressing these two proteins (Da Costa et al., 1999; Da Costa et al., 2000). Infection of cells not expressing these two essential genes results in expression of nearly all the viral genes, but viral DNA replication is abolished, and no virions are produced. The vaccine induced greater than fourfold increases in HSV-specific antibody titers in most HSV1\u2212/HSV2\u2212 vaccine recipients, but lower increases in antibody responses were observed in volunteers in the other serogroups; T cell responses were modest in all three serogroups (Dropulic et al., 2019).\n\nWe characterized immune responses longitudinally by analyzing blood transcriptomic profiles and high-dimensional immune cell phenotyping throughout the three-dose vaccine regimen (Dropulic et al., 2019). Vaccine-induced changes and correlates of outcomes such as neutralizing antibody titers and adverse reactions to the vaccine were determined. The transcriptomic responses were associated with both sex and prior exposure to HSV, but the responding genes and pathways also differed markedly based on the combination of both variables. Women showed stronger early inflammatory and type I IFN responses when compared to men, but this was only observed for HSV seronegative vaccine recipients. Thus, using unbiased systems immunology analyses, we show how prior exposure and sex interact to shape early, innate immune responses to a replication-defective vaccine, and identify transcriptional profiles that may shape the subsequent immune responses induced in vivo.\n\n## Materials and methods\n\n### Vaccine recipients and study design\n\nAll HSV529 vaccine recipients signed informed consent for a protocol (clinicaltrials.gov ID: NCT01915212) approved by the National Institute of Allergy and Infectious Diseases Institutional Review Board (Dropulic et al., 2019). The HSV529 vaccine was manufactured by Sanofi Pasteur. Peripheral blood was obtained at various timepoints and PBMCs were isolated by separation with Ficoll-Paque PLUS and cryopreserved. A web tool for visualization of experimental designs was used to summarize the samples and assays available at sampled timepoints (Cheung and CHI Consortium, 2020).\n\n### RNA sequencing\n\nFresh PBMCs were collected and lysed in TRIzol (Thermo Fisher, Waltham, MA), and total RNA was isolated and purified with an miRNeasy kit (Qiagen, Hilden, Germany). All blood samples at different timepoints from the same subject were processed together. RNA quality and quantity were estimated using Nanodrop (Thermo Scientific, Wilmington, DE) and Agilent 2100 Bioanalyzer (Agilent Technologies, Palo Alto, CA). Before sequencing analysis, all samples were batched according to their age, sex, race, and immunization status, but assayed blindly. Two reference samples were simultaneously processed with the vaccine study samples in each batch. Stranded cDNA sequencing libraries were generated with a TruSeq Stranded mRNA Library Prep Kit (Illumina, San Diego, CA) following the manufacturer\u2019s instructions. Briefly, 500 ng of total RNA was used for mRNA selection. After the reverse transcription to first strand cDNA, strand information was maintained with dUTP during second strand synthesis. A single nucleotide (containing adenine) was added to the dsDNA fragments and the products were ligated to an adapter. The products were then purified and amplified by PCR to create the final cDNA library. The library was qualified with an Agilent Bioanalyzer and quantified with a Qubit 2.0 fluorometer. The cluster generation and pair-end (2 \u00d7 75 bp) sequencing were performed on an Illumina HiSeq 3000. Up to 96 barcoded samples were pooled for one single run, which yielded at least 30 M passed filter paired reads per sample. Sequencing results were demultiplexed and converted to FASTQ format using Illumina bcl2fastq software. The sequencing reads were adapter and quality trimmed and then aligned to the human genome using STAR software, and read counts determined with HTSeqCount software. Raw read counts were normalized using the DESeq2, LIMMA packages, and R software.\n\n### Cells and flow cytometry\n\nViable PBMCs were isolated and cryopreserved according to Center for Human Immunology (CHI) protocols (https://chi.niaid.nih.gov/web/new/our-research/sop.html). High parameter flow cytometry was performed using the Human Immunology Project Consortium (HIPC) panels as previously described (Maecker et al., 2012; Finak et al., 2016; Langweiler and McCoy, 2019). Briefly, 4 parallel 10-color panels with a total of 26 unique markers enabled detection of 70 subsets of PBMCs represented as a fraction of their parent population (Supplementary file 1A, B).\n\nStaining was performed using dedicated lyophilized antibody plates for each of compensation, fluorescence-minus-one controls, and study sample staining (all BD Biosciences). Sample staining plates included up to 10 study samples in addition to control PBMCs from a healthy donor, and staining was preceded by an additional incubation with LIVE/DEAD Fixable Blue Dead Cell Stain (Thermo Fisher Scientific). Acquisition was performed with a Becton Dickinson LSRFortessa, using DIVA 8 software, acquiring 250,000 cells for each sample. Subsequent analysis to determine population frequencies used FlowJo version 9.6.2. Compensation performed with unstained cells and Becton Dickinson compensation beads was used to aid acquisition monitoring. Subsequently a final compensation matrix was calculated using FlowJo during postacquisition analysis.\n\n### Statistics and computational analysis\n\nBatching of samples, quality control filtering, and statistical analyses were performed using R/Bioconductor as well as R-Shiny web tools similar to those previously published (Cheung et al., 2017; Cheung, 2023, copy archived at swh:1:rev:5480d6351a4740b56297f2470b24402bd1b676b9). Longitudinal changes in flow cytometry populations were evaluated by Wilcoxon\u2019s signed-rank paired test, and p values were corrected for multiple comparisons using the Benjamini\u2013Hochberg method, using an R webtool. For transcriptomic responses the most significantly responding genes were initially identified using Bioconductor package DESeq2 and then responses were further analyzed using linear models for microarray data (LIMMA) (Smyth, 2004; Love et al., 2014). Low expressed genes were removed and day 1 expression after subtraction of baseline values were used to fit models based on log counts per million, with an interaction term included when comparing the effect of sex between groups based on prior exposure. The tmod package in R was used for blood transcription module (BTM) analysis (Zyla et al., 2019). Each BTM is a set of genes which has been shown to show coherent expression across many biological samples in conditions including in vivo responses to interventions such as vaccines (Bar-Joseph et al., 2003; Chaussabel and Baldwin, 2014). BTM analysis can used to identify significant enrichment of a set of foreground genes, in predefined transcriptional modules compared against a reference set. The hypergeometric test devised in tmodHGtest was used to calculate enrichments and p values employing Benjamini\u2013Hochberg correction for multiple sampling. All the statistical analyses and graphical presentations were performed in R. Gene set variation analysis (GSVA) was used to quantify subject-level variation in signatures of interest (Zyla et al., 2019; H\u00e4nzelmann et al., 2013).\n\n### Reactions to HSV529 vaccination\n\nSolicited systemic and local reactions to vaccine were graded based on a toxicity table as reported previously (Dropulic et al., 2019). Severity of disease, represented by aggregate symptom scores, wase determined by multiplying the severity of each symptom by the number of days it persisted. Welch\u2019s unpaired t-test was used to determine statistically significant differences (two-tailed p < 0.05) in aggregate symptom scores between women and men after each vaccine dose.\n\n## Results\n\n### Vaccination strategy and study design\n\nSixty subjects who comprised three groups based on their HSV serostatus prior to vaccination were studied: HSV1\u2212/HSV2\u2212, HSV1+/HSV2\u2212, and HSV1\u00b1/HSV2+ (Dropulic et al., 2019). The three groups each consisted of 20 volunteers who received intramuscular injection with either HSV529 vaccine (15 participants) or placebo (5 participants), and 50% of the vaccine recipients were women. The mean age of vaccine recipients was 31 years (range 21\u201340) and did not differ significantly between the groups defined by serology and sex. The vaccine regimen consisted of three vaccinations and peripheral blood samples were obtained on the day before each of these vaccinations, and at follow-up timepoints for all 60 subjects (Figure 1A). Bulk RNA-seq was performed at nine timepoints and flow cytometry at seven timepoints including the day of each vaccination, 1 day after the first vaccination, and 7 days after each of the three vaccinations. Measurements were also obtained for neutralizing antibody titers to HSV, complete blood count tests, and adverse reactions to the vaccination at various timepoints (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic outline of the vaccination strategy and study design. Each subject was randomized to receive three vaccinations with HSV529 or saline placebo on days 0, 30, and 180. Timepoints are marked at which blood was obtained for immune phenotyping assays, or when adverse events were scored. (B, C) Changes in HSV2 neutralizing antibody titer over time are shown for HSV529 vaccine recipients, plotted separately for subjects with no prior exposure to herpes simplex virus (HSV) (HSV1\u2212/HSV2\u2212) or for HSV1 seropositive subjects (HSV1+/HSV2\u2212). Subjects are shown classified by sex and as slow or fast responders to vaccination based on the increase in HSV2 neutralizing titer by day 30. Rapid responders were defined by an increase in neutralizing antibody responses at day 30 for subjects who were HSV1\u2212/HSV2\u2212 before vaccination. In subjects HSV1+/HSV2\u2212 prior to vaccination, in whom an increase in neutralizing antibody responses was observed by day 30 for most individuals, rapid responders were a distinct group marked by higher titer responses compared to slow responders at day 30. Significant changes are indicated for men and women separately (*p < 0.05, ***p < 0.001).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Aggregate systemic (A, C, E) and local (B, D, F) symptom scores for the first 7 days after each dose are shown for HSV529 in recipients which were HSV1\u2212/HSV2\u2212 (A, B), HSV1+/HSV2\u2212 (C, D), or HSV1\u00b1/HSV2+ (E, F). Long black horizontal lines indicate means and short red or blue horizontal lines are standard errors, each data point is a different vaccine recipient, and *p < 0.05. Aggregate symptom scores were determined by multiplying the severity of each symptom by the number of days it persisted and adding the values for each of the first 7 days after each dose of vaccine.\n\n### Prior exposure and sex are associated with the kinetics of the antibody response and adverse events induced by vaccination\n\nThe HSV529 vaccine induced increases in HSV-specific antibody titers in most recipients (Dropulic et al., 2019). These responses were most prominent in HSV1\u2212/HSV2\u2212 vaccine recipients, while in subjects previously exposed to HSV the vaccine responses were more modest particularly at later timepoints. Kinetic analysis of the profiles of HSV2 neutralizing antibody titers showed clear differences based on prior exposure to HSV. In subjects who were HSV1\u2212/HSV2\u2212 before vaccination, neutralizing antibody responses peaked at 1 month after the third dose of vaccine at day 210 (Wilcoxon\u2019s signed-rank paired test, p < 0.05), and antibody titers declined significantly by day 360 regardless of sex (p < 0.001) (Figure 1B). In contrast, individuals seropositive for HSV1 prior to vaccination showed neutralizing antibody responses that peaked at day 60 or earlier for the majority of subjects (Figure 1C). Neutralizing antibodies were only tested at day 0 and 210 in HSV2+ vaccine recipients, so for this group kinetics of the response could not be assessed.\n\nEffects of sex were observed particularly when focusing on kinetics of the neutralizing antibody responses to the first vaccination dose. Neutralizing antibodies increased significantly by day 30 compared to baseline in HSV1\u2212/HSV2\u2212 and HSV1+/HSV2\u2212 women, but not men; and this increase was most significant for HSV1\u2212/HSV2\u2212 women (p = 0.022) (Figure 1B, C). Within both the HSV1\u2212/HSV2\u2212 and HSV1+/HSV2\u2212 groups, subjects could be further separated into groups of approximately equal sizes of rapid and slow responders based on the neutralizing antibody responses observed by day 30 (Figure 1B, C). Women were more highly represented than men in the fast responder groups, with this most pronounced for HSV1\u2212/HSV2\u2212 subjects in which women comprised 89% of fast responders (Figure 1B).\n\nEvaluation of adverse events observed in this cohort also indicated effects of both serostatus and sex. HSV1\u2212/HSV2\u2212 women reported more systemic and local reactions to the vaccine than men. About 65% of HSV529 recipients had systemic reactions to the vaccine (compared with ~55% of placebo recipients), while ~90% of HSV529 recipients had local injection site reactions (compared with ~50% of placebo recipients) (Dropulic et al., 2019). Analysis of sex-specific differences in HSV1\u2212/HSV2\u2212 vaccine recipients showed that women were more likely to have more severe systemic reactions within the first 7 days of the first dose of vaccine than men (Welch\u2019s unpaired t-test, p = 0.015) and more severe local reactions within the first 7 days of the second dose of vaccine (p = 0.017) (Figure 1\u2014figure supplement 1). However, differences in systemic or local reactions were not noted between women and men in the HSV1+/HSV2\u2212 or HSV1\u00b1/HSV2+ groups. Together, these results demonstrate that both sex and prior exposure to HSV1 markedly affect the response to this vaccine with HSV1\u2212/HSV2\u2212 women showing the most robust early responses marked by a more rapid induction of HSV2 neutralizing antibody, and a higher frequency of adverse events.\n\n### The magnitude of the response to vaccination is greatest at day one after the first vaccine dose\n\nFor all 60 subjects, peripheral blood bulk RNA-seq and high parameter flow cytometry measurements were analyzed from seven matched timepoints, and at two further timepoints for RNA-seq (Figure 1A). Initially all subjects that received HSV529 were combined to identify genes differentially expressed longitudinally in response to vaccination, and gene set enrichment analysis was performed using BTMs to identify the highest responding biological pathways (Figure 2A, B; Subramanian et al., 2005; Li et al., 2014). Many of the responses previously observed in other vaccine studies were detected (Nakaya et al., 2011; Tsang et al., 2014; Querec et al., 2009; Kazmin et al., 2017). Inflammatory and IFN pathways, dendritic cell, T cell, and B cell responses were all detected at day 1 after the first vaccination. Cell cycling, T cell, and B cell responses were observed at day 7 after the first vaccination. A timepoint of 7 days after vaccination was chosen for analysis of the subsequent doses, and although after the first vaccine dose the magnitude of changes was reduced at the individual gene level, in terms of gene set enrichments the changes for subsequent doses resembled those after the first dose, particularly for dose 3. The individual genes most significantly upregulated on day 1 after the first dose of vaccine included those encoding IFN-induced proteins and Fc receptors (Supplementary file 1C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig2-v1.jpg)\n\n**Figure 2.:** (A) Transcriptomic phenotypes of PBMCs were characterized by RNA-seq and responses for all HSV529 recipients were defined by comparing observations at day 1 or 7 to day 0 (day of the first vaccination dose), and for subsequent doses by comparing between the day of the second or third vaccination dose and timepoints 7 days later (days 37 and 187). Functions represented by the genes differentially expressed were assessed by enrichment of blood transcription modules (BTMs), and all significantly enriched modules are shown (FDR adjusted p < 0.05) with plotted size and color indicating the normalized effect size and significance, respectively, for enrichments. (B) Volcano plots show the changes in individual genes for all HSV529 recipients, with significantly differentially expressed genes colored red (FDR adjusted p < 0.05), and the most significantly differentially expressed genes labeled. Note that the scale of the y axes differ between the days that were analyzed. (C) Flow cytometry was used to quantify the frequencies of 70 PBMC populations for all HSV529 recipients. Examples of populations that showed significant changes at either day 1 or 7 after the first vaccine dose compared to day 0 are shown (FDR adjusted p < 0.05). (D) Changes in gene expression between days 0 and 1 were next determined separately for subjects that received HSV529 and differed in their status in terms of prior exposure to HSV, or that received placebo and in which all groups of prior exposure were combined (y-axis). Jaccard index values and statistical significance, indicated by plotted size and color, respectively, are shown for overlap of these expression changes with the differentially expressed genes reported in previous studies of vaccine responses at day 1 to influenza (Tsang et al., 2014) and in two studies of yellow fever (x-axis) (Gaucher et al., 2008; Querec et al., 2009).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Network analysis of the pathways enriched in overlap between herpes simplex virus (HSV) seronegative HSV529 recipients and yellow fever vaccine recipients (Gaucher et al., 2008; Querec et al., 2009). The color intensity and size of nodes increase with the significance and size of enriched gene sets, respectively. Edge intensity increases with the number of overlapping genes, and type I interferon (IFN)-related gene sets are highlighted in red. (B) A similar network analysis for pathways enriched in overlap between HSV2 seropositive HSV529 recipients and influenza vaccine recipients, with IFN-\u03b3-related gene sets highlighted in red.\n\nMulti-parameter flow cytometry quantified 70 cell populations which were compared for the same timepoints as the transcriptomic analysis, for all subjects combined. Cell population changes occurring across broad lineages were observed as expected for vaccine responses (Figure 2C and Supplementary file 1D). Monocyte and NK cell frequencies significantly increased at day 1 after the first dose of vaccine, whereas the Th1 subset decreased, possibly reflecting polarization of the vaccine response. T follicular helper cells, T cells, and B cells were all significantly expanded by day 7 consistent with an activated adaptive response. Plasmablasts, defined as CD19+ CD20\u2212 CD27+ CD38high (Perez-Andres et al., 2010), were significantly expanded at both days 1 and 7 (Wilcoxon\u2019s signed-rank paired test with Benjamini\u2013Hochberg correction for multiple comparisons, p < 0.05) (Figure 2C). Although this analysis combined all subjects, the remarkably early rise in plasmablasts after vaccination may be related to the particularly rapid neutralizing antibody response to vaccination in HSV seronegative women described above.\n\nThe number of genes showing significant changes (FDR corrected p < 0.05) in response to vaccination was higher at 1 day after the first dose of vaccine than at later timepoints and after subsequent vaccine doses (Figure 2B). This was also true for the changes in cell populations and might be expected for a replication-defective vaccine which presents antigens to the immune system immediately after vaccination, but is not amplified over time like a replication-competent attenuated virus or vector-based vaccine. Therefore, we further focused analyses on day 1 after the first dose of vaccine, to investigate how subjects differing in sex or prior exposure vary in their responses to HSV529 vaccination.\n\n### Innate responses to HSV529 that differ based on prior exposure resemble differences between innate responses to yellow fever and influenza vaccinations\n\nWe analyzed the differentially expressed genes (DEGs) observed after HSV529 vaccination to investigate the transcriptomic responses which were associated with prior exposure to HSV. We compared day 1 DEGs in each of the three HSV serogroups that received HSV529 vaccine, with the early transcriptomic responses that have been previously reported in recipients of either yellow fever or influenza vaccines (Tsang et al., 2014; Gaucher et al., 2008; Querec et al., 2009). In the previous studies, yellow fever is a pathogen for which vaccine recipients had no prior exposure, whereas all subjects receiving the influenza vaccine were expected to have some degree of immunity due to prior influenza infection and vaccine exposure. Jaccard index values, reflecting the size of the intersection relative to the size of the union for two sample sets, were determined to quantify the overlap in day 1 transcriptomic responses to these different vaccines (Figure 2D). DEGs in HSV seronegative HSV529 recipients were strikingly similar to those seen in yellow fever vaccine recipients (p < 1 \u00d7 10\u221290, Jaccard index >0.35). In contrast, DEGs in both HSV seropositive groups were more similar to those seen in influenza vaccine recipients (p < 1 \u00d7 10\u221230, Jaccard index >0.13). Thus, transcriptomic responses observed in HSV naive and seropositive subjects mirror the responses to yellow fever and influenza vaccine recipients, respectively. This indicates that the effect of prior HSV exposure on response to HSV529 is consistent with differences observed between the early responses to vaccines for other pathogens that represent either naive responses or those mounted by individuals with existing adaptive immunity.\n\nNetwork analysis of pathways that were enriched in overlap between HSV seronegative HSV529 recipients and yellow fever vaccine recipients, showed central roles for gene sets involved in type I IFN (IFN-\u03b1/\u03b2) and antiviral innate responses (Figure 2\u2014figure supplement 1A). In contrast, network analysis of pathways that were enriched in overlap between HSV2 seropositive HSV529 recipients and influenza vaccine recipients, showed a more heterogenous pattern of relatedness that included type II IFN (IFN-\u03b3) and IL-12 responses (Figure 2\u2014figure supplement 1B). The 20 most significantly upregulated genes for HSV529 recipients in each of the 3 HSV serogroups emphasize the similarities in the two HSV2 seropositive groups and how different they are from the seronegative group (Table 1). GBP1, WARS, and IRF1, which are upregulated predominantly by IFN-\u03b3 (Megger et al., 2017; Sen et al., 2018) were among the genes most significantly upregulated in both of the HSV seropositive groups studied, while MX1 and ISG15, which are upregulated primarily by IFN-\u03b1 (Megger et al., 2017; Taylor et al., 1996), were among the most significantly upregulated genes in HSV seronegative subjects.\n\n**Table 1.**\n Twenty most significantly upregulated genes at day 1 for HSV529 recipients divided into three groups based on prior exposure to herpes simplex virus (HSV).Changes in expression compared to day 0 were analyzed using Bioconductor package DESeq2, with log 2 fold changes reported and p values corrected for multiple comparisons. Genes marked in red are present in both HSV1+/HSV2\u2212 and HSV1\u00b1/HSV2+, but not HSV1\u2212/HSV2\u2212 subjects.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">HSV1\u2212/HSV2\u2212</th>\n      <th colspan=\"3\">HSV1+/HSV2\u2212</th>\n      <th colspan=\"3\">HSV1\u00b1/HSV2+</th>\n    </tr>\n    <tr>\n      <th>Gene</th>\n      <th>Fold change</th>\n      <th>p adjusted</th>\n      <th>Gene</th>\n      <th>Fold change</th>\n      <th>p adjusted</th>\n      <th>Gene</th>\n      <th>Fold change</th>\n      <th>p adjusted</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MX1</td>\n      <td>1.95</td>\n      <td>7.02 \u00d7 10\u221231</td>\n      <td>GBP2</td>\n      <td>1.14</td>\n      <td>1.36 \u00d7 10\u221220</td>\n      <td>ANKRD22</td>\n      <td>5.44</td>\n      <td>4.37 \u00d7 10\u221244</td>\n    </tr>\n    <tr>\n      <td>EIF2AK2</td>\n      <td>1.28</td>\n      <td>3.99 \u00d7 10\u221228</td>\n      <td>GBP1</td>\n      <td>2.06</td>\n      <td>2.60 \u00d7 10\u221219</td>\n      <td>GBP5</td>\n      <td>1.94</td>\n      <td>6.39 \u00d7 10\u221241</td>\n    </tr>\n    <tr>\n      <td>IFI44</td>\n      <td>2.01</td>\n      <td>3.99 \u00d7 10\u221228</td>\n      <td>PSTPIP2</td>\n      <td>0.98</td>\n      <td>4.27 \u00d7 10\u221218</td>\n      <td>WARS</td>\n      <td>2.19</td>\n      <td>2.03 \u00d7 10\u221240</td>\n    </tr>\n    <tr>\n      <td>ISG15</td>\n      <td>2.10</td>\n      <td>3.99 \u00d7 10\u221228</td>\n      <td>ANKRD22</td>\n      <td>3.54</td>\n      <td>7.25 \u00d7 10\u221218</td>\n      <td>ETV7</td>\n      <td>4.12</td>\n      <td>5.08 \u00d7 10\u221240</td>\n    </tr>\n    <tr>\n      <td>IFI6</td>\n      <td>2.26</td>\n      <td>4.94 \u00d7 10\u221228</td>\n      <td>FCGR1B</td>\n      <td>2.32</td>\n      <td>4.39 \u00d7 10\u221217</td>\n      <td>GBP1</td>\n      <td>2.86</td>\n      <td>1.64 \u00d7 10\u221239</td>\n    </tr>\n    <tr>\n      <td>HERC5</td>\n      <td>1.66</td>\n      <td>3.52 \u00d7 10\u221227</td>\n      <td>WARS</td>\n      <td>1.44</td>\n      <td>9.49 \u00d7 10\u221217</td>\n      <td>GBP4</td>\n      <td>1.86</td>\n      <td>1.93 \u00d7 10\u221238</td>\n    </tr>\n    <tr>\n      <td>OAS3</td>\n      <td>1.95</td>\n      <td>3.52 \u00d7 10\u221227</td>\n      <td>GBP4</td>\n      <td>1.24</td>\n      <td>2.28 \u00d7 10\u221216</td>\n      <td>IDO1</td>\n      <td>4.02</td>\n      <td>4.50 \u00d7 10\u221238</td>\n    </tr>\n    <tr>\n      <td>CMPK2</td>\n      <td>2.12</td>\n      <td>5.75 \u00d7 10\u221227</td>\n      <td>LAP3</td>\n      <td>1.54</td>\n      <td>2.28 \u00d7 10\u221216</td>\n      <td>CD274</td>\n      <td>1.72</td>\n      <td>2.16 \u00d7 10\u221237</td>\n    </tr>\n    <tr>\n      <td>HERC6</td>\n      <td>1.02</td>\n      <td>5.75 \u00d7 10\u221227</td>\n      <td>GBP5</td>\n      <td>1.24</td>\n      <td>3.51 \u00d7 10\u221216</td>\n      <td>LAP3</td>\n      <td>2.26</td>\n      <td>7.50 \u00d7 10\u221237</td>\n    </tr>\n    <tr>\n      <td>IFI44L</td>\n      <td>2.68</td>\n      <td>1.52 \u00d7 10\u221226</td>\n      <td>GBP1P1</td>\n      <td>3.09</td>\n      <td>5.37 \u00d7 10\u221216</td>\n      <td>GBP2</td>\n      <td>1.46</td>\n      <td>1.71 \u00d7 10\u221236</td>\n    </tr>\n    <tr>\n      <td>LAMP3</td>\n      <td>1.94</td>\n      <td>2.86 \u00d7 10\u221226</td>\n      <td>FCGR1A</td>\n      <td>2.05</td>\n      <td>7.64 \u00d7 10\u221216</td>\n      <td>GBP1P1</td>\n      <td>4.40</td>\n      <td>6.42 \u00d7 10\u221234</td>\n    </tr>\n    <tr>\n      <td>IFIT1</td>\n      <td>2.92</td>\n      <td>1.39 \u00d7 10\u221225</td>\n      <td>STAT1</td>\n      <td>1.37</td>\n      <td>1.27 \u00d7 10\u221215</td>\n      <td>VAMP5</td>\n      <td>1.63</td>\n      <td>6.16 \u00d7 10\u221233</td>\n    </tr>\n    <tr>\n      <td>IFIT2</td>\n      <td>2.41</td>\n      <td>5.10 \u00d7 10\u221225</td>\n      <td>APOL4</td>\n      <td>3.12</td>\n      <td>2.45 \u00d7 10\u221215</td>\n      <td>CXCL10</td>\n      <td>4.50</td>\n      <td>1.98 \u00d7 10\u221232</td>\n    </tr>\n    <tr>\n      <td>SPATS2L</td>\n      <td>1.32</td>\n      <td>6.94 \u00d7 10\u221225</td>\n      <td>PSME2</td>\n      <td>0.84</td>\n      <td>3.67 \u00d7 10\u221215</td>\n      <td>FCGR1B</td>\n      <td>3.10</td>\n      <td>1.98 \u00d7 10\u221232</td>\n    </tr>\n    <tr>\n      <td>USP18</td>\n      <td>1.89</td>\n      <td>1.30 \u00d7 10\u221224</td>\n      <td>FCGR1C</td>\n      <td>2.55</td>\n      <td>5.59 \u00d7 10\u221214</td>\n      <td>SERPING1</td>\n      <td>3.79</td>\n      <td>2.05 \u00d7 10\u221232</td>\n    </tr>\n    <tr>\n      <td>PARP12</td>\n      <td>0.72</td>\n      <td>1.86 \u00d7 10\u221224</td>\n      <td>IRF1</td>\n      <td>0.89</td>\n      <td>1.52 \u00d7 10\u221213</td>\n      <td>PSME2</td>\n      <td>1.20</td>\n      <td>2.41 \u00d7 10\u221232</td>\n    </tr>\n    <tr>\n      <td>RSAD2</td>\n      <td>2.29</td>\n      <td>1.86 \u00d7 10\u221224</td>\n      <td>APOL2</td>\n      <td>0.64</td>\n      <td>2.19 \u00d7 10\u221213</td>\n      <td>BATF2</td>\n      <td>3.81</td>\n      <td>2.58 \u00d7 10\u221232</td>\n    </tr>\n    <tr>\n      <td>TRIM22</td>\n      <td>0.78</td>\n      <td>2.45 \u00d7 10\u221224</td>\n      <td>PARP9</td>\n      <td>1.14</td>\n      <td>3.14 \u00d7 10\u221213</td>\n      <td>IRF1</td>\n      <td>1.34</td>\n      <td>3.16 \u00d7 10\u221232</td>\n    </tr>\n    <tr>\n      <td>HELZ2</td>\n      <td>1.16</td>\n      <td>2.23 \u00d7 10\u221223</td>\n      <td>APOL3</td>\n      <td>0.55</td>\n      <td>3.89 \u00d7 10\u221213</td>\n      <td>APOL3</td>\n      <td>0.83</td>\n      <td>7.00 \u00d7 10\u221232</td>\n    </tr>\n    <tr>\n      <td>MX2</td>\n      <td>1.25</td>\n      <td>5.10 \u00d7 10\u221223</td>\n      <td>SAMD4A</td>\n      <td>1.24</td>\n      <td>3.89 \u00d7 10\u221213</td>\n      <td>SAMD4A</td>\n      <td>1.86</td>\n      <td>1.74 \u00d7 10\u221231</td>\n    </tr>\n  </tbody>\n</table>\n\nThere were also differences based on prior exposure to HSV in the cell population responses quantified by flow cytometry. HSV1\u2212/HSV2\u2212 vaccine recipients had significant changes in numbers of activated B cells, Th1, Tc1, and Tc17 cells on day 1, while these cell types were not significantly altered in HSV1+/HSV2\u2212 or HSV1\u00b1/HSV2+ vaccine recipients (Supplementary file 1E). This is consistent with the more robust responses in HSV naive subjects, but it was unexpected that adaptive lymphocyte populations would be activated as early as day 1. However, some cellular responses such as increases in activated NK cells were significantly increased on day 1 in vaccine recipients regardless of their HSV serostatus prior to vaccination. Although naive and memory B cells were monitored these were not among the populations observed to be significantly different, even at day 7, when either HSV1\u2212/HSV2\u2212 or HSV seropositive vaccine recipients were analyzed separately (Supplementary file 1F).\n\n### Gene expression responses associated with sex differ significantly between subjects previously naive or exposed to HSV\n\nWe next analyzed the transcriptomic changes after HSV529 vaccination to investigate responses associated with sex. Sex had showed a notable effect of faster neutralizing antibody responses in women compared to men within the HSV seronegative group (Figure 1B). We hypothesized that differences in early innate responses had contributed to this effect, so we compared transcriptomic responses at day 1 between men and women who were HSV1\u2212/HSV2\u2212 prior to vaccination, using LIMMA Smyth, 2004 followed by ranking of genes by the fold change in expression between sexes to analyze enrichment of BTMs (Li et al., 2014). Multiple pathways showed significant enrichment with modules including IFN responses, monocytes, and dendritic cell activation which were all upregulated in women, and T cell responses which were increased more in men (FDR adjusted p < 0.05) (Figure 3A and Figure 3\u2014figure supplement 1). The IFN and antiviral sensing module showed strong enrichment and for each of the six enriched gene sets from this module, all leading-edge genes that drove enrichment are indicated, with the change in expression at day 1 shown for all 15 HSV naive subjects (Figure 3B). Interestingly this revealed some heterogeneity, with most but not all women demonstrating stronger upregulation of IFN responses compared to men within HSV naive vaccine recipients. The prominent increase in the day 1 response of HSV naive women is shown for one example of these leading-edge genes, TLR7, which is of particular interest for these sex-associated effects as this gene is encoded on the X chromosome. This response was also vaccine specific as there were no responses in placebo recipients (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig3-v1.jpg)\n\n**Figure 3.:** (A) Changes in expression of all genes between days 0 and 1 were compared between men and women for HSV1\u2212/HSV2\u2212 subjects, and used to rank genes by fold change for hypergeometric enrichment analysis of blood transcription modules (BTMs). All pathways with significant enrichment in either sex are shown (FDR adjusted p < 0.05), with enrichment score and significance indicated by plotted color and size, respectively. (B) For the interferon and antiviral sensing module, responses of the 40 different leading-edge genes in 6 represented gene sets are shown in rows for the 15 HSV naive subjects in columns. The change in expression at day 1 compared to day 0 is shown with z-scores normalized separately for each of the six gene sets, where red indicates above and blue indicates below mean values.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Six gene sets from the IFN and antiviral sensing module were enriched when comparing sex differences within herpes simplex virus (HSV) naive subjects in day 1 transcriptional responses (Figure 3A). For these enrichments, plots show the fraction of genes included from each set (y-axis) when all genes tested are ranked by decreasing difference when comparing expression in women to men (x-axis), with bars on the x-axis showing the distribution of members of these gene sets as black marks.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Longitudinally monitored TLR expression is plotted for all 60 subjects, colored by sex and separated by herpes simplex virus (HSV) serostatus for vaccine recipients, or with all serogroups combined for placebo recipients.\n\nTo further assess whether the day 1 responses associated with sex depended on prior exposure to HSV, responses were next compared between men and women, and between each of the three HSV serogroups. Changes in gene expression associated with sex in each serogroup were used to determine differences between the HSV naive group and each HSV exposed group for every gene. This enabled two parallel enrichment analyses; all BTMs that were enriched and showed greater sex-associated differences in the HSV naive compared to exposed groups are shown (FDR adjusted p < 0.05) (Figure 4A and Figure 4\u2014figure supplement 1). Similar pathways, including IFN responses and dendritic cell activation, were enriched when the effect of sex in HSV naive subjects was compared to its effect in either HSV seropositive group (Figure 4A); these pathways were also similar to those enriched when comparing women to men in HSV1\u2212/HSV2\u2212 vaccine recipients (Figure 3A). These results confirm that the effect of sex on transcriptional response to HSV529 vaccination differs significantly between naive and HSV-exposed individuals.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig4-v1.jpg)\n\n**Figure 4.:** (A) Changes in expression of all genes between days 0 and 1 were compared between men and women separately for the three HSV serogroups of subjects based on prior exposure to HSV. For each gene those changes with sex were then used to compute a difference between the HSV naive group and either HSV exposed group (x-axis). These differences were used to rank genes for hypergeometric enrichment analysis of blood transcription modules (BTMs), and all pathways with significant positive enrichment in the HSV naive group are shown (FDR adjusted p < 0.05), with enrichment score and significance indicated by plotted color and size, respectively. (B) Comparison of sex differences between HSV naive and HSV1+/HSV2\u2212 subjects identified seven gene sets significantly enriched in the IFN antiviral sensing module. For these seven gene sets, responses of the 33 different leading-edge genes in rows, for all 45 vaccine recipients in columns are shown with the change in expression at day 1 compared to day 0 with z-scores normalized within each gene set, where red indicates above and blue indicates below mean values. (C) Principal component analysis was performed using expression of the 33 leading-edge genes from panel B, at all nine timepoints with RNA-seq data. The first principal component is plotted for all 60 subjects colored by sex and separated by HSV serostatus for vaccine recipients, or with all serogroups combined for placebo recipients. (D) For HSV naive women that were vaccinated, variation in day 1 IFN responses was quantified by gene set variation analysis (GSVA) of the antiviral IFN signature (y-axis), and correlated with HSV2 neutralizing antibody titers observed at day 30 or 60 (x-axis). Pearson coefficient and significance values are shown for the linear correlation in blue, with 95% confidence interval shaded red.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Seven gene sets from the IFN and antiviral sensing module were enriched when comparing sex differences between herpes simplex virus (HSV) naive and HSV1+/HSV2\u2212 subjects in day 1 transcriptional responses (Figure 4A). For these enrichments, plots show the fraction of genes included from each set (y-axis) when all genes tested are ranked by decreasing difference between HSV naive compared to HSV1+/HSV2\u2212 subjects for greater expression in women compared to men (x-axis), with bars on the x-axis showing the distribution of members of these gene sets as black marks.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Multiple gene sets from the IFN and antiviral sensing module were highly enriched when comparing sex differences between HSV naive and exposed subjects in day 1 transcriptional responses (Figure 4A). For the gene set with most significant enrichment, antiviral IFN signature, variation between individuals was analyzed for correlation with HSV2 neutralizing antibody titers observed for HSV naive women on day 30 (A) and day 60 (B). Here, the next five gene sets based on significance of enrichment in Figure 4A are also analyzed for correlation with HSV2 neutralizing antibody titers. Plots are as described for Figure 4D, and show Pearson coefficients ranging from \u22120.68 to \u22120.53, with significance values from p = 0.04 to p = 0.14.\n\n### The transcriptional response in HSV naive women is dominated by IFN responses and correlates negatively with vaccine-induced neutralizing antibody titer\n\nMultiple transcriptional pathways showed enrichment when responses at day 1 were analyzed for a greater effect of sex in HSV naive compared to HSV exposed subjects. These pathways included dendritic cell activation, antigen presentation, monocytes, and neutrophils which were all related to the most significantly enriched module involving IFN antiviral sensing (Figure 4A). Therefore, we next focused within the IFN antiviral sensing module, on the seven component gene sets that were each significantly enriched. Examining the leading-edge genes that drove enrichment of these gene sets in individual vaccine recipients revealed that while many of these genes were induced at day 1 in some men or HSV seropositive women, their trend of increasing expression occurred more frequently and consistently in HSV naive women (Figure 4B). When these leading-edge genes that drove IFN enrichment were used for principal component analysis of all timepoints and subjects studied, the plot of principal component 1 highlights how distinct day 1 IFN responses were for HSV seronegative women (Figure 4C). Thus, the major differences in responses that were shown by women compared to men in the HSV seronegative group, in IFN signatures, were also the major differences when effects of sex were compared between HSV naive and exposed subjects.\n\nThe day 1 transcriptional response associated with HSV naive women may have influenced their faster neutralizing antibody responses, which were observed more frequently in the first 30 days after vaccination in comparison to HSV naive men (Figure 1B). To test this, variation in magnitude of day 1 IFN responses was assessed for correlation with the early antibody titers induced for HSV naive women. GSVA quantified subject-level variation in antiviral IFN signature responses, which was the gene set from the IFN and antiviral sensing module that was most significantly enriched in transcriptional responses by HSV naive women (Figure 4A; H\u00e4nzelmann et al., 2013).\n\nVariation in antiviral IFN signature responses at day 1 showed significant negative correlations with HSV2 neutralizing antibody titers, observed either at day 30 or 60, for HSV naive women (Pearson coefficients \u22120.7, p < 0.04) (Figure 4D). Negative correlations for HSV naive women were also seen between HSV2 neutralizing antibody titers and the variation in each of the next five most significant gene sets from the IFN and antiviral sensing module that were enriched in day 1 responses by HSV naive women (Figure 4\u2014figure supplement 2). This suggests that the IFN-related transcriptional response that showed the greatest average increase in HSV naive women following vaccination, was associated with lower neutralizing antibody titers within the same group of HSV naive women.\n\n## Discussion\n\nTo understand the interaction between sex and prior exposure in the context of an immune response in vivo, we studied the response to a replication-defective HSV2 vaccine in persons with different prior exposure to HSV. We used a systems immunology approach characterizing peripheral blood transcriptomic and cell population phenotypes. While prior studies using systems approaches have been reported for live attenuated virus, subunit, and vectored vaccines, this is the first such study of a replication-defective vaccine in humans. After a longitudinal analysis throughout the three-dose vaccine regimen, we focused on transcriptional responses at day 1 after the first dose, as these exhibited the most robust changes associated with both sex and prior exposure. Changes in these phenotypes were determined and comparisons were made with other outcomes, such as the observation of more robust vaccination responses in women than men in subjects previously naive to HSV, revealed by faster neutralizing antibody responses. Thus, we provide insights for how prior exposure and sex interact to shape the early innate immune response.\n\nThe day 1 transcriptional responses differed between HSV529 vaccine recipients based on prior exposure to HSV. Responses to HSV529 by HSV seronegative individuals overlapped strongly with those previously reported for recipients of the yellow fever vaccine, whereas responses to HSV529 by HSV seropositive individuals were significantly different from those who were HSV seronegative and instead overlapped with persons who had been vaccinated with influenza. These findings support the notion that prior exposure to the pathogen against which the vaccine is targeting is a major determinant of the early innate immune response to the vaccine, independent of the vaccine type (live attenuated, subunit, or replication-defective) or the pathogen itself (yellow fever virus, influenza virus, or HSV).Interestingly, IFN responses appeared to be skewed toward IFN-\u03b1 in the HSV seronegative vaccine recipients but toward IFN-\u03b3 in the HSV seropositive group. Type I IFNs, including IFN-\u03b1, are produced very early after viral infections, including with HSV, and cellular RNA and DNA sensors for HSV produce type I IFNs in response to virus infection (Oh et al., 2016; Danastas et al., 2020). IFN-\u03b3 signals through a different receptor and is predominantly produced by natural killer cells and T cells during infection (Platanias, 2005). IFN-\u03b3 is particularly important for inhibiting HSV reactivation and thus may be more prominent when the immune system has previously been exposed to the virus (Decman et al., 2005). Both IFNs contribute to the induction of an antiviral state through the upregulation of molecules that can antagonize virus replication, but are increasingly being recognized to exert regulatory effects on the innate response that influence development of adaptive immunity (Lee and Ashkar, 2018).\n\nSex was associated with day 1 transcriptional responses, but the enriched pathways differed between HSV naive and seropositive individuals. A transcriptional profile of increased responses was observed for women, specifically for those previously naive to HSV. The transcriptomic modules and leading-edge genes that characterized this response were centered on type I IFN and antiviral pathways. This suggests that in the absence of prior exposure, the more robust transcriptional responses in women to a replication-defective virus may be due to an underlying difference in baseline inflammation or in the speed of induction of inflammation in comparison to men. Such IFN-associated broad immune activation has recently been found to underlie shared set point signatures for increased vaccine responsiveness in healthy individuals of both sexes (although this signature tends to be more elevated in females than males at baseline), as well as disease activity in patients with lupus (Kotliarov et al., 2020). Thus, the more robust day 1 transcriptional responses in HSV naive women could have contributed to the more rapid neutralizing antibody responses observed in HSV naive women in this cohort. Interestingly, we found that within HSV naive women the transcriptional IFN response correlated negatively with vaccine-induced antibody titers. Possibly, as HSV529 is a replication-defective vaccine dependent on an initial infection of host cells, early IFN responses inhibited the number of cells infected or the efficiency of viral antigen expression. This is consistent with the established role of IFN antagonizing natural HSV infection (Leib, 2002) and indicates how the effects of IFN responses on vaccine effectiveness may be context dependent. Further work will be necessary toassess whether similar observations can be replicated in other naive responses to replication-defective or live attenuated vaccines, including similar consequences for the induction of antibody titers.\n\nDespite the IFN response on day 1 that was associated with reduced antibody titers in HSV naive women, these individuals as a group showed the most robust antibody responses to HSV529, with more rapid antibody responses compared to HSV naive men. Overall, HSV naive individuals showed greater titer increases compared to HSV exposed subjects particularly at later timepoints. The diminished responses by HSV exposed subjects may also have resulted from suppression of HSV529 infection, in this case by preexisting neutralizing antibody or T cell immunity. This is supported by the large number of genes upregulated on day 1 after vaccination in HSV1\u2212/HSV2\u2212 persons in comparison with the much smaller number of genes upregulated in these same individuals with subsequent doses of vaccine, or in HSV1+/HSV2\u2212 or HSV1\u00b1/HSV2+ subjects at any timepoint. Evidence for preexisting antibody inhibiting live virus vaccination has been reported for other pathogens such as measles, for which efficacy improves if vaccination is administered later within the first year of life; clinical data combined with experimental models indicate this is more likely due to interference from maternal antibodies rather than immaturity of the neonatal system (Aaby et al., 2014; van Binnendijk et al., 1997), although the underlying mechanisms remain largely unclear. Another example is the live attenuated intranasal influenza vaccine which is approved in the United States for persons aged 2\u201349; prior exposure to influenza may lead to neutralization and reduced replication of the live influenza virus vaccine resulting in reduced efficacy in adults compared to children (Hoft et al., 2017; Monto et al., 2009; Grohskopf et al., 2021). In HSV exposed subjects a higher dose of HSV529 may be required to achieve a better response; indeed the live attenuated zoster vaccine is given at 14 times the dose of the varicella vaccine, in part, to overcome the effect of preexisting immunity (Cohen, 2008).\n\nMore robust responses by women compared to men have been described for several vaccines (Klein et al., 2015), and our findings demonstrate some overlap with prior studies of sex differences in the context of HSV. In two double-blind randomized studies of an HSV subunit vaccine, the vaccine was protective against genital herpes in women who were HSV1\u2212/HSV2\u2212 prior to vaccination, but the vaccine was not effective in men (Stanberry et al., 2002). A subsequent large double-blind placebo-controlled trial found that women reported more symptoms and developed higher levels of antibody than did men after vaccination; however, the differences in antibody titers were not significant, and a later large study focused on HSV1\u2212/HSV2\u2212 women failed to replicate efficacy against HSV2 infection or disease (Bernstein et al., 2005; Belshe et al., 2012). Murine studies have also implicated IFN responses in association with sex in the context of HSV. Male mice have a higher mortality rate after HSV infection than females which correlates with the difference in IFN-\u03b3 response, and male IFN-\u03b3 knockout mice have higher HSV reactivation rates than control mice whereas female IFN-\u03b3 knockout mice show no difference from controls (Han et al., 2001). We now show that in the context of human responses to HSV529, sex-associated differences in IFN and inflammatory signaling are significantly more pronounced in women not previously exposed to HSV.\n\nPrior studies suggest that HSV2 subunit vaccines are more effective in women than men (Stanberry et al., 2002), but the underlying mechanisms of the sex-dependent response may be different for the live, replication-defective HSV2 vaccine used in our study. For example, HSV is known to activate TLR9, and thus a replication-defective vaccine like ours would be expected to activate TLR9 by presenting viral DNA to the immune system. TLR9 responses are known to be sex dependent, with a role in autoimmune disorders disproportionately affecting females, and may have thus contributed to the more robust innate responses in females in our study (Lund et al., 2003; Marshak-Rothstein, 2006). A replication-defective live viral vaccine may also be more effective in triggering the presentation of processed viral peptides on the surface of the infected host cells to stimulate innate and virus-specific T cell responses compared to protein subunit vaccines. Thus, our HSV2 replication-defective vaccine may be more likely to trigger innate and cellular immune response pathways that are more robust in women, for example, similar to earlier observations of more robust IFN-\u03b1 production and CD8 T cell activation after stimulation of PBMCs with a viral peptide in HIV-infected women compared to men (Meier et al., 2009).\n\nDue to the more rapid vaccine response in seronegative women observed in this study, we analyzed changes in plasmablasts. In a trial of the malaria recombinant protein vaccine RTS,S, increased plasmablasts were observed on day 1, but only after the second and third doses of vaccine (Kazmin et al., 2017). We detected expansion of plasmablasts when analyzing all subjects at both days 1 and 7 after the first dose of vaccine, but these changes did not reach statistical significance when stratifying by prior exposure and sex. We also observed that the numbers of plasmablasts peaked around day 7 as others have reported, although the early response we observed at day 1 was unexpected (Wrammert et al., 2008; Magnani et al., 2017).\n\nSeveral individual genes were highlighted by our transcriptomic screen. TLR7 is an X-linked gene for which higher levels of expression have been reported in B cells of naive female versus male mice after vaccination with inactivated influenza vaccine, and these higher levels of TLR7 correlated with high levels of antibodies in the female mice (Fink et al., 2018). We also detected higher levels of TLR7 gene expression in HSV1\u2212/HSV2\u2212 women compared to men on day 1 after vaccination. TLR7 is important for immunoglobulin class switching and could represent a molecular mechanism for sex-based differences, which have been attributed to X-linked immune response genes as well as to hormonal differences (Harper and Flanagan, 2018; Klein and Flanagan, 2016). A further observation arising from the broad phenotypic characterization is the concordance between significant host gene expression responses and pathogen immune evasion. The most significantly upregulated individual genes were dominated at day 1 by IFN-stimulated (CXCL10, GBP1, and IFIT2) or Fc\u03b3 receptor genes (FCGR1A, FCGR1B, and FCGR1C). At day 7, the most significantly upregulated individual genes included integrins (ITGB3, ITGB5, and ITGA2B). HSV encodes immune evasion proteins that antagonize many of these specific gene functions: blocking IFN, antibody-mediated cytolysis, and activity of integrin \u03b23 (Leib, 2002; Lubinski et al., 1998; Gianni et al., 2012).\n\nOverall, our study confirms and adds to the substantial effects observed for prior exposure and sex in innate immune responses. We document at a systems level how these two variables interact in the context of response to a replication-defective vaccine, and determine resulting transcriptional response profiles that may form the basis for differences in neutralizing antibody responses in vivo. To improve vaccination effectiveness, it will thus be important to better understand how prior exposure and sex affect the innate responses that are increasingly being shown to shape subsequent adaptive immunity.\n",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "abf50e74-26b5-4115-862b-74126dc463b6",
+      "submission_id": "d7986ace-2c33-46b3-8118-93ce0f3f5228",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, https://ror.org/00cvxb145 University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80652.sa0](https://doi.org/10.7554/eLife.80652.sa0)\n\nThis important study uses a systems immunology approach to disentangle the effect of sex and prior exposure on an individual's response to viral vaccines. This work brings an impressive data assortment and present compelling evidence to support the conclusions. The paper would be of interest to researchers working in human immunology and vaccine development.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, https://ror.org/00cvxb145 University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80652.sa1](https://doi.org/10.7554/eLife.80652.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Sex and prior exposure jointly shape innate immune responses to a replication-defective herpesvirus vaccine\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Arturo Casadevall as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Assya Trofimov (Reviewer #1); Sita Awasthi (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. If data is available, the authors should check the enrichment of TLR7 (or lack thereof) in the placebo group to rule out the potential vaccine-driven effects.\n\n2. Extend the discussion on the BTM analysis in the Methods section. More details are necessary.\n\n3. Discuss the possibility of sex-specific variations in immunological outcomes after vaccination with a replication-defective virus compared to an adjuvanted subunit vaccine.\n\n4. Modify line 162 (or Figure S1) so the message is consistent.\n\n5. Please follow reviewers' suggestions to improve the readability of figures throughout the manuscript.\n\n6. Please correct the typos listed by the reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nSex and prior exposure to the antigen are known factors that influence the immune response to vaccines. In this study, the authors study how the combination of these factors changes the immune response to a multi-dose replication-defective herpes simplex virus (HSV) vaccine.\n\nStrengths\n\nThe main strength of this study is the variability in the data that was acquired and the granularity of the annotation. The authors meticulously established comparisons between the vaccine recipient subgroups and came up with interesting results and conclusions.\n\nWeakness\n\nSome analyses were challenging to understand and the methods section would have benefited from additional details.\n\nI would have wanted to see a more robust conclusion about the loss of sex-specific differences in antigen-experienced individuals compared to naive individuals. This conclusion is alluded to but not explicitly made.\n\nThe authors achieved their aims in quantifying the difference in the immune response between naive individuals and those with previous exposure to HSV as well as differences between males and females. Their results fully support the conclusions stated in the manuscript.\n\nThis manuscript provides a comprehensive assessment of the differences between male and female responders as well as naive and virus-experienced responders. These results show many interesting leads for a better understanding of these differences. These results are especially important in the context of the development of vaccines against viruses that establish lifelong infections, such as HSV, CMV and VZV. Since the authors have committed to releasing the data, this will likely offer other teams some rich data for subsequent analysis.\n\nI. Comments and questions:\n\na) Analysis for Figures B and C: Since all of the \u0394_Day0 Neutralizing Ab Titers are at zero on Day 0, I'm not sure the statistical test is accurate. The test compares means and since all values have a mean of zero on the first day (post normalization) and necessarily do not have a mean of zero at the next time points (as per the normalization procedure), this makes me conclude that the test is likely biased. Perhaps changing the strategy would be best. The authors seem to want to verify if the difference between men and women is significant. Perhaps simply comparing the values at the second timepoint would be a better use of a statistical test and reflect reality. So my suggestion is:\n\nttest(a, b) where a = women's normalized titer @ 30 Days and b = men's normalized titer @ 30 Days.\n\nb) Line 162: This statement is not entirely true. Since Supplementary Figure 1 only shows recorded responses for HSV- individuals (as per legend description), only based on that figure it is impossible to state that prior exposure markedly affects the response to the vaccine. These results are not even in that Figure! If they are, the legend should be adjusted, if not, they should be added to match the conclusion!\n\nc) Figure 2, 3, 4: For each of these Figures, the manuscript would benefit from clear indications of which subgroups are being compared.\n\nd) Methods should contain a clear description of the BTM analysis: how was it done? Which software was used? What are the gene sets used?\n\ne) I am curious about Dose 2. What happened to it? Why is there such a low cell enrichment (Figure 2A) and such a low number of differentially expressed genes (Figure 2B)? Was the immune response sustained from Day 7 to Dose 3 and this is why there are few differentially expressed genes? Was there a problem in the quantification?\n\nf) Why did the authors combine all responders for Figure 2C when they suspected differences in sex and between naive/antigen-experienced groups?\n\ng) I really like the analysis done in Figure 2D. I think the link to other vaccine studies is interesting. Since DEGs are often very dependent on the dataset, perhaps repeating the comparison but with enriched pathways or even the BTMs would be more convincing. I feel like the signal is slightly blurred with the DEGs and Jaccard index since DEGs are often dataset-specific and the Jaccard index is so highly dependent on the overall set size. I suspect the authors will find a greater signal using pathways instead.\n\nh) Line 246: IL-12 has some influence on Th1 adaptive immune response. Perhaps splitting the results from Figure 2C into seronegative and seropositive would have been better and would show the difference in IL-12-based Th1 cell enrichment.\n\ni) Line 300: The authors are correct to note that TLR7 is located on chromosome X. Would it be possible to check within the placebo group comparing males and females if TLR7 is still significantly enriched? This would rule out any vaccine-based effect compared to the sex-based only effect.\n\nj) Figure 4 and Lines 334 and 336. Authors state similar pathway enrichments but then conclude that there is a difference in the effect of sex between seropositive and seronegative groups. In Figure 4B, it seems like the biggest difference is seen between seronegative individuals. And yet there are the same genes enriched in.\n\nk) Figure 4A. Perhaps some additional explanation could reconcile this contradiction in this paragraph!\n\nLine 370: So if I understand correctly, seropositive females lose the high IFN response because of a higher neutralizing titer (as seen in seronegative/positive males?)\n\nl) Data was not available and is currently embargoed until October 2024!\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors study responses to a non-replicating human HSV vaccine. They find that the vaccine responses differ in males and females, predominantly in those individuals who are HSV seronegative.\n\nStrengths.\n\nThe authors have a relatively large cohort of patients enabling longitudinal studies in seronegative and seropositive male and female individuals\n\nThe authors performed a comprehensive study of the immune responses both on the level of neutralizing antibodies and gene activation for long time periods\n\nTheir work identified clear differences between males and females in seronegative individuals: females produce neutralizing ab's faster, but males have delayed but higher levels.\n\nThe work is able to relate some of the differences to the differences in the Type I IFN response.\n\nWeaknesses.\n\nMany of the observations reported in the paper have already been described in the literature, such as sex-specific immune responses to viral vaccines.\n\nThe possible causal connection between the kinetics of gene activation and the differences in ab responses is discussed but requires further work.\n\nThe paper leaves uncertain if this vaccine is going to be epidemiologically/clinically useful (as these are Phase 1 clinical trials).\n\nI am uncertain what is the significance of these results for understanding the fundamental biology of the immune responses to vaccination.\n\nI think this is a technically very strong paper that reports interesting results\n\nHowever, I am not sure it reports a breakthrough in our understanding of either the vaccine responses or the sex-linked differences.\n\nI think this is important work that might be more appropriate in a human immunology/vaccinology journal.\n\nReviewer #3 (Recommendations for the authors):\n\nThis study describes early antiviral innate responses of a replication-defective herpesvirus vaccine and the subsequent impact on adaptive responses based on the sex of the vaccinee and prior exposure to the virus. As early as one day after the vaccination the differences depended on sex and prior exposure to the virus were noted using blood transcriptomics and cell population profiling. Type I interferon (IFN) signature was found to be the most pronounced in HSV naive women and associated with lower neutralizing antibody titers, suggesting that a strong early antiviral response reduced the uptake of this replication-defective virus vaccine.\n\nStrengths:\n\nThe methodology used by the authors has a wider implication beyond the replication-defective herpes virus vaccine.\n\nThis is the first detailed study using the systems immunology approach to assess early immune responses and transcriptomic analysis for a replication-defective herpesvirus vaccine.\n\nThe authors have provided a robust data set to justify the conclusions.\n\nFigures are clear and statistical analysis is vigorous.\n\nWeaknesses:\n\nOverall, this manuscript has minimal weaknesses.\n\nThe manuscript shows that neutralizing activity is negatively correlated with IFN type 1 signatures in females, it would be of great interest to analyze whether overall gD2 binding or HSV-2 binding antibody levels are also lower in females compared to males or only the antibody with neutralizing activity.\n\nIf total binding antibody levels are not different, analyzing the Fc receptor-mediated activity such as ADCC would be of great interest.\n\nA few recommendations are made to improve the manuscript\n\n1. Since this study most likely used the same sets of samples that were used in a prior study (Dropulic et al. JID 2019 published by the same group), it may be possible to discuss whether the difference in binding antibody was noted. Alternatively, the data may be further analyzed by sex for discussion purposes.\n\n2. Day 1 following 1st immunization seems to show the most interesting pattern in HSV na\u00efve population. Conceptually, with a replication-defective viral vaccine, the subsequent immunizations in the HSV naive group are more likely to behave similar to that of the virus-exposed group and consequently, immune responses may be indicative of that. It is not clear whether later time point samples were assessed and analyzed based on the naive and prior exposure group.\n\n3. Volcano plot for figure 2B clearly shows the changes in individual genes in samples collected over time. The Y-axis scale variations among panels minimize the appearance of huge differences. If it is difficult to maintain the same scale for all the panels, a comment can be inserted in the figure legend to note the differences in the scale.\n\n4. Previously published phase III trials with subunit vaccines showed higher efficacy in the HSV na\u00efve women. It is to be noted that higher efficacy in females was not assessed for correlation with neutralizing activity in the prior study. One of the most interesting findings presented here is that a replication-defective vaccine had a smaller boost in neutralizing activity in females following 2nd immunization compared to men. It may be interesting to discuss the possibility of variations in immunological outcome based on the sex with a replication-defective viral vaccine compared to an adjuvanted subunit vaccine.\n",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "778e239f-61c5-4e3e-be8a-33d23e7463f5",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C1",
+      "claim": "Sixty subjects comprised three groups based on their HSV serostatus prior to vaccination: HSV1\u2212/HSV2\u2212, HSV1+/HSV2\u2212, and HSV1\u00b1/HSV2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixty subjects who comprised three groups based on their HSV serostatus prior to vaccination were studied: HSV1\u2212/HSV2\u2212, HSV1+/HSV2\u2212, and HSV1\u00b1/HSV2+ (Dropulic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of subjects and their grouping by serostatus, with citation to the original study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "dc41c88e-6d5a-4a55-ba93-5962b0104797",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C2",
+      "claim": "Each of the three HSV serostatus groups consisted of 20 volunteers who received either HSV529 vaccine (15 participants) or placebo (5 participants).",
+      "claim_type": "EXPLICIT",
+      "source": "The three groups each consisted of 20 volunteers who received intramuscular injection with either HSV529 vaccine (15 participants) or placebo (5 participants), and 50% of the vaccine recipients were women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the composition of each group in terms of vaccine vs placebo recipients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "0d61d3e2-5824-47b2-be48-d50156cfe1ef",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C3",
+      "claim": "50% of the vaccine recipients were women.",
+      "claim_type": "EXPLICIT",
+      "source": "The three groups each consisted of 20 volunteers who received intramuscular injection with either HSV529 vaccine (15 participants) or placebo (5 participants), and 50% of the vaccine recipients were women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the sex distribution of vaccine recipients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "6f45ffb6-4020-48ab-a86e-ce33b27e918e",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C4",
+      "claim": "The mean age of vaccine recipients was 31 years (range 21\u201340).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age of vaccine recipients was 31 years (range 21\u201340) and did not differ significantly between the groups defined by serology and sex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific demographic data about the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "8e516e7c-47f1-4855-b67f-fd5711bffc0c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C5",
+      "claim": "The mean age did not differ significantly between the groups defined by serology and sex.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age of vaccine recipients was 31 years (range 21\u201340) and did not differ significantly between the groups defined by serology and sex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that age was not significantly different across groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "644416ad-11e4-4710-9da2-e57735081dc9",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C6",
+      "claim": "The vaccine regimen consisted of three vaccinations.",
+      "claim_type": "EXPLICIT",
+      "source": "The vaccine regimen consisted of three vaccinations and peripheral blood samples were obtained on the day before each of these vaccinations, and at follow-up timepoints for all 60 subjects (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the vaccination schedule and references Figure 1A showing the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "f5eff010-19c9-48c7-9d6a-825bd1db6b21",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C7",
+      "claim": "Peripheral blood samples were obtained on the day before each vaccination and at follow-up timepoints for all 60 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The vaccine regimen consisted of three vaccinations and peripheral blood samples were obtained on the day before each of these vaccinations, and at follow-up timepoints for all 60 subjects (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the sampling schedule with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "ee0a5f45-ac47-4df6-badf-0e142db7b540",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C8",
+      "claim": "Bulk RNA-seq was performed at nine timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk RNA-seq was performed at nine timepoints and flow cytometry at seven timepoints including the day of each vaccination, 1 day after the first vaccination, and 7 days after each of the three vaccinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of timepoints for RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "67169f5f-c322-411b-b751-b1a283d4aa99",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C9",
+      "claim": "Flow cytometry was performed at seven timepoints including the day of each vaccination, 1 day after the first vaccination, and 7 days after each of the three vaccinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk RNA-seq was performed at nine timepoints and flow cytometry at seven timepoints including the day of each vaccination, 1 day after the first vaccination, and 7 days after each of the three vaccinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the flow cytometry sampling schedule.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "e650dadc-82b5-44f7-817d-d577628e8fbd",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C10",
+      "claim": "Neutralizing antibody titers peaked at 1 month after the third dose of vaccine at day 210 in HSV1\u2212/HSV2\u2212 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In subjects who were HSV1\u2212/HSV2\u2212 before vaccination, neutralizing antibody responses peaked at 1 month after the third dose of vaccine at day 210 (Wilcoxon's signed-rank paired test, p < 0.05), and antibody titers declined significantly by day 360 regardless of sex (p < 0.001) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the timing of peak antibody response with statistical significance and references Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "52914e6d-cc79-48d8-9ce8-9cd846dc10df",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C11",
+      "claim": "Antibody titers declined significantly by day 360 in HSV1\u2212/HSV2\u2212 subjects regardless of sex.",
+      "claim_type": "EXPLICIT",
+      "source": "In subjects who were HSV1\u2212/HSV2\u2212 before vaccination, neutralizing antibody responses peaked at 1 month after the third dose of vaccine at day 210 (Wilcoxon's signed-rank paired test, p < 0.05), and antibody titers declined significantly by day 360 regardless of sex (p < 0.001) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the decline in antibody titers with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "d73a04b3-8432-487c-8d45-86565ea60741",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C12",
+      "claim": "Individuals seropositive for HSV1 prior to vaccination showed neutralizing antibody responses that peaked at day 60 or earlier for the majority of subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, individuals seropositive for HSV1 prior to vaccination showed neutralizing antibody responses that peaked at day 60 or earlier for the majority of subjects (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the kinetics of antibody response in HSV1+ subjects with reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "da741f6b-6002-4ed5-adbc-7438ee835f5c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C13",
+      "claim": "Neutralizing antibodies increased significantly by day 30 compared to baseline in HSV1\u2212/HSV2\u2212 women.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutralizing antibodies increased significantly by day 30 compared to baseline in HSV1\u2212/HSV2\u2212 and HSV1+/HSV2\u2212 women, but not men; and this increase was most significant for HSV1\u2212/HSV2\u2212 women (p = 0.022) (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the significant increase in antibodies with p-value and figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "c5723fcb-f6bf-40e1-92d2-184eb8bb9892",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C14",
+      "claim": "Neutralizing antibodies increased significantly by day 30 compared to baseline in HSV1+/HSV2\u2212 women.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutralizing antibodies increased significantly by day 30 compared to baseline in HSV1\u2212/HSV2\u2212 and HSV1+/HSV2\u2212 women, but not men; and this increase was most significant for HSV1\u2212/HSV2\u2212 women (p = 0.022) (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the significant increase in antibodies for this group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "3e790299-b24a-4a91-9dca-230158bd0869",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C15",
+      "claim": "Neutralizing antibodies did not increase significantly by day 30 in HSV1\u2212/HSV2\u2212 or HSV1+/HSV2\u2212 men.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutralizing antibodies increased significantly by day 30 compared to baseline in HSV1\u2212/HSV2\u2212 and HSV1+/HSV2\u2212 women, but not men; and this increase was most significant for HSV1\u2212/HSV2\u2212 women (p = 0.022) (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states that men did not show significant increases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "00ec642b-72c4-4689-af9b-f369c4b942e3",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C16",
+      "claim": "Women comprised 89% of fast responders in the HSV1\u2212/HSV2\u2212 group.",
+      "claim_type": "EXPLICIT",
+      "source": "Women were more highly represented than men in the fast responder groups, with this most pronounced for HSV1\u2212/HSV2\u2212 subjects in which women comprised 89% of fast responders (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific percentage for the representation of women among fast responders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "64ea3b0b-948b-4c09-a045-28b6d49e2f88",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C17",
+      "claim": "About 65% of HSV529 recipients had systemic reactions to the vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "About 65% of HSV529 recipients had systemic reactions to the vaccine (compared with ~55% of placebo recipients), while ~90% of HSV529 recipients had local injection site reactions (compared with ~50% of placebo recipients) (Dropulic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages for adverse reactions with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "a4e5117f-e295-432f-b617-dea003079d51",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C18",
+      "claim": "About 90% of HSV529 recipients had local injection site reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "About 65% of HSV529 recipients had systemic reactions to the vaccine (compared with ~55% of placebo recipients), while ~90% of HSV529 recipients had local injection site reactions (compared with ~50% of placebo recipients) (Dropulic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages for local reactions with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "907e135c-caf7-48a9-bf57-8fbd63ec5fbb",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C19",
+      "claim": "HSV1\u2212/HSV2\u2212 women were more likely to have more severe systemic reactions within the first 7 days of the first dose of vaccine than men (p = 0.015).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of sex-specific differences in HSV1\u2212/HSV2\u2212 vaccine recipients showed that women were more likely to have more severe systemic reactions within the first 7 days of the first dose of vaccine than men (Welch's unpaired t-test, p = 0.015) and more severe local reactions within the first 7 days of the second dose of vaccine (p = 0.017) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the statistical comparison with p-value and figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "3a9051aa-e57e-48b8-8a10-ea0ec8fa1ab3",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C20",
+      "claim": "HSV1\u2212/HSV2\u2212 women had more severe local reactions within the first 7 days of the second dose of vaccine than men (p = 0.017).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of sex-specific differences in HSV1\u2212/HSV2\u2212 vaccine recipients showed that women were more likely to have more severe systemic reactions within the first 7 days of the first dose of vaccine than men (Welch's unpaired t-test, p = 0.015) and more severe local reactions within the first 7 days of the second dose of vaccine (p = 0.017) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the statistical comparison with p-value and figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "48096d8a-0044-4eed-a3a1-47d259baf745",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C21",
+      "claim": "Differences in systemic or local reactions were not noted between women and men in the HSV1+/HSV2\u2212 or HSV1\u00b1/HSV2+ groups.",
+      "claim_type": "EXPLICIT",
+      "source": "However, differences in systemic or local reactions were not noted between women and men in the HSV1+/HSV2\u2212 or HSV1\u00b1/HSV2+ groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the absence of sex differences in these groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "c57c6308-b63c-476a-83c6-6710e66be855",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C22",
+      "claim": "Inflammatory and IFN pathways, dendritic cell, T cell, and B cell responses were all detected at day 1 after the first vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Inflammatory and IFN pathways, dendritic cell, T cell, and B cell responses were all detected at day 1 after the first vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the pathways detected at day 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "6794f3fd-bfbb-48b2-9d2c-18ccff427841",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C23",
+      "claim": "Cell cycling, T cell, and B cell responses were observed at day 7 after the first vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell cycling, T cell, and B cell responses were observed at day 7 after the first vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the responses observed at day 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "912d630f-5422-4ae7-ab30-862950912173",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C24",
+      "claim": "Monocyte and NK cell frequencies significantly increased at day 1 after the first dose of vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocyte and NK cell frequencies significantly increased at day 1 after the first dose of vaccine, whereas the Th1 subset decreased, possibly reflecting polarization of the vaccine response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the significant changes in cell populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "78d1a873-d27e-49ba-a442-d2b88351f4d2",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C25",
+      "claim": "The Th1 subset decreased at day 1 after the first dose of vaccine, possibly reflecting polarization of the vaccine response.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocyte and NK cell frequencies significantly increased at day 1 after the first dose of vaccine, whereas the Th1 subset decreased, possibly reflecting polarization of the vaccine response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the decrease in Th1 cells and provides a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "7ab72269-1f12-4641-95f9-3c53cd378304",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C26",
+      "claim": "T follicular helper cells, T cells, and B cells were all significantly expanded by day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "T follicular helper cells, T cells, and B cells were all significantly expanded by day 7 consistent with an activated adaptive response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the significant expansion of these cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "202a1039-2132-4ca9-b887-c1e02e52dc28",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C27",
+      "claim": "Plasmablasts were significantly expanded at both days 1 and 7 (p < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmablasts, defined as CD19+ CD20\u2212 CD27+ CD38high (Perez-Andres et al., 2010), were significantly expanded at both days 1 and 7 (Wilcoxon's signed-rank paired test with Benjamini\u2013Hochberg correction for multiple comparisons, p < 0.05) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the significant expansion with statistical test and p-value, with citation for cell definition.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "bfcf7513-eedd-4a4a-8550-3538c1ad7149",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C28",
+      "claim": "DEGs in HSV seronegative HSV529 recipients were strikingly similar to those seen in yellow fever vaccine recipients (p < 1 \u00d7 10\u221290, Jaccard index >0.35).",
+      "claim_type": "EXPLICIT",
+      "source": "DEGs in HSV seronegative HSV529 recipients were strikingly similar to those seen in yellow fever vaccine recipients (p < 1 \u00d7 10\u221290, Jaccard index >0.35).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical measures of similarity between gene expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "b5c19917-9e7b-40ea-95a7-77c052ed2f2f",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C29",
+      "claim": "DEGs in both HSV seropositive groups were more similar to those seen in influenza vaccine recipients (p < 1 \u00d7 10\u221230, Jaccard index >0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DEGs in both HSV seropositive groups were more similar to those seen in influenza vaccine recipients (p < 1 \u00d7 10\u221230, Jaccard index >0.13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical measures of similarity between gene expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "29ca7708-b844-4ce8-823b-9e47e24c7540",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C30",
+      "claim": "GBP1, WARS, and IRF1 are upregulated predominantly by IFN-\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "GBP1, WARS, and IRF1, which are upregulated predominantly by IFN-\u03b3 (Megger et al., 2017; Sen et al., 2018) were among the genes most significantly upregulated in both of the HSV seropositive groups studied, while MX1 and ISG15, which are upregulated primarily by IFN-\u03b1 (Megger et al., 2017; Taylor et al., 1996), were among the most significantly upregulated genes in HSV seronegative subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the IFN-\u03b3 regulation of these genes with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "b63d9b2a-1096-4e7c-9fc9-a874ea14e97c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C31",
+      "claim": "MX1 and ISG15 are upregulated primarily by IFN-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "GBP1, WARS, and IRF1, which are upregulated predominantly by IFN-\u03b3 (Megger et al., 2017; Sen et al., 2018) were among the genes most significantly upregulated in both of the HSV seropositive groups studied, while MX1 and ISG15, which are upregulated primarily by IFN-\u03b1 (Megger et al., 2017; Taylor et al., 1996), were among the most significantly upregulated genes in HSV seronegative subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the IFN-\u03b1 regulation of these genes with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "b4b061d5-6569-460c-870a-06c0b32f7f5d",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C32",
+      "claim": "GBP1, WARS, and IRF1 were among the genes most significantly upregulated in both HSV seropositive groups.",
+      "claim_type": "EXPLICIT",
+      "source": "GBP1, WARS, and IRF1, which are upregulated predominantly by IFN-\u03b3 (Megger et al., 2017; Sen et al., 2018) were among the genes most significantly upregulated in both of the HSV seropositive groups studied, while MX1 and ISG15, which are upregulated primarily by IFN-\u03b1 (Megger et al., 2017; Taylor et al., 1996), were among the most significantly upregulated genes in HSV seronegative subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies these genes as highly upregulated in seropositive groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "213e3255-c189-4d9d-96d2-5647a9e91f50",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C33",
+      "claim": "MX1 and ISG15 were among the most significantly upregulated genes in HSV seronegative subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "GBP1, WARS, and IRF1, which are upregulated predominantly by IFN-\u03b3 (Megger et al., 2017; Sen et al., 2018) were among the genes most significantly upregulated in both of the HSV seropositive groups studied, while MX1 and ISG15, which are upregulated primarily by IFN-\u03b1 (Megger et al., 2017; Taylor et al., 1996), were among the most significantly upregulated genes in HSV seronegative subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies these genes as highly upregulated in seronegative subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "2eca38d6-4c06-4018-a7d9-a90b650d130e",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C34",
+      "claim": "Multiple pathways showed significant enrichment with modules including IFN responses, monocytes, and dendritic cell activation which were all upregulated in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple pathways showed significant enrichment with modules including IFN responses, monocytes, and dendritic cell activation which were all upregulated in women, and T cell responses which were increased more in men (FDR adjusted p < 0.05) (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the pathways enriched in women with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "4aba647a-fc65-4ad8-bfaa-f0b0068e1079",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C35",
+      "claim": "T cell responses were increased more in men than women among HSV1\u2212/HSV2\u2212 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple pathways showed significant enrichment with modules including IFN responses, monocytes, and dendritic cell activation which were all upregulated in women, and T cell responses which were increased more in men (FDR adjusted p < 0.05) (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states that T cell responses were higher in men.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "17087b0b-46e8-42cf-b94d-08b0460492c6",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C36",
+      "claim": "TLR7 is encoded on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The prominent increase in the day 1 response of HSV naive women is shown for one example of these leading-edge genes, TLR7, which is of particular interest for these sex-associated effects as this gene is encoded on the X chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the chromosomal location of TLR7.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "079075b1-6892-44e7-b4b4-182002a4325d",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C37",
+      "claim": "Variation in antiviral IFN signature responses at day 1 showed significant negative correlations with HSV2 neutralizing antibody titers at day 30 for HSV naive women (Pearson coefficient \u22120.7, p < 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in antiviral IFN signature responses at day 1 showed significant negative correlations with HSV2 neutralizing antibody titers, observed either at day 30 or 60, for HSV naive women (Pearson coefficients \u22120.7, p < 0.04) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides the correlation coefficient and p-value with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "0dc5e4f9-39e3-438c-b7e0-bbccb59b391d",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C38",
+      "claim": "Variation in antiviral IFN signature responses at day 1 showed significant negative correlations with HSV2 neutralizing antibody titers at day 60 for HSV naive women (Pearson coefficient \u22120.7, p < 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in antiviral IFN signature responses at day 1 showed significant negative correlations with HSV2 neutralizing antibody titers, observed either at day 30 or 60, for HSV naive women (Pearson coefficients \u22120.7, p < 0.04) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides the correlation coefficient and p-value with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "bae10f97-e8c9-4f9b-bc1b-4959fc345541",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C39",
+      "claim": "HSV529 is deleted for two essential HSV genes, UL5 and UL29.",
+      "claim_type": "EXPLICIT",
+      "source": "The replication-defective vaccine HSV529 studied here is deleted for two essential HSV genes, UL5 and UL29, and propagated in a cell line expressing these two proteins (Da Costa et al., 1999; Da Costa et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the genetic modifications of the vaccine with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "cc7c7b39-90db-45d0-8b2f-197bc4784bf4",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C40",
+      "claim": "HSV529 is propagated in a cell line expressing UL5 and UL29 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The replication-defective vaccine HSV529 studied here is deleted for two essential HSV genes, UL5 and UL29, and propagated in a cell line expressing these two proteins (Da Costa et al., 1999; Da Costa et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the propagation method with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "72822ce7-f8e8-4e2b-8b82-b1b94706ef7b",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C41",
+      "claim": "Infection of cells not expressing UL5 and UL29 results in expression of nearly all the viral genes, but viral DNA replication is abolished, and no virions are produced.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection of cells not expressing these two essential genes results in expression of nearly all the viral genes, but viral DNA replication is abolished, and no virions are produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the consequences of infection by the replication-defective vaccine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "ecf71ed8-c8e0-4975-b4ce-476a009842e3",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C42",
+      "claim": "The vaccine induced greater than fourfold increases in HSV-specific antibody titers in most HSV1\u2212/HSV2\u2212 vaccine recipients.",
+      "claim_type": "EXPLICIT",
+      "source": "The vaccine induced greater than fourfold increases in HSV-specific antibody titers in most HSV1\u2212/HSV2\u2212 vaccine recipients, but lower increases in antibody responses were observed in volunteers in the other serogroups; T cell responses were modest in all three serogroups (Dropulic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the magnitude of antibody response with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "3b22d036-4623-4664-8ce5-899b6b14c968",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C43",
+      "claim": "Lower increases in antibody responses were observed in HSV1+/HSV2\u2212 and HSV1\u00b1/HSV2+ volunteers compared to HSV1\u2212/HSV2\u2212 volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "The vaccine induced greater than fourfold increases in HSV-specific antibody titers in most HSV1\u2212/HSV2\u2212 vaccine recipients, but lower increases in antibody responses were observed in volunteers in the other serogroups; T cell responses were modest in all three serogroups (Dropulic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares antibody responses across serogroups with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "0e09bfec-2800-419b-8fe8-4a40df0b0d27",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C44",
+      "claim": "T cell responses were modest in all three serogroups.",
+      "claim_type": "EXPLICIT",
+      "source": "The vaccine induced greater than fourfold increases in HSV-specific antibody titers in most HSV1\u2212/HSV2\u2212 vaccine recipients, but lower increases in antibody responses were observed in volunteers in the other serogroups; T cell responses were modest in all three serogroups (Dropulic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly characterizes T cell responses with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "4ece269b-3cb8-483a-b6d9-0133772a113c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C45",
+      "claim": "Persons infected with HSV2 have a threefold increased risk of acquiring HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "Persons infected with HSV2 have a threefold increased risk of acquiring HIV, and HSV2 infection causes genital herpes and severe disease in neonates, patients with AIDS, and transplant recipients (Koelle and Corey, 2008; Freeman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the increased HIV risk with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "29f00edb-8084-4b80-9e91-3ce862ea1a61",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C46",
+      "claim": "HSV2 infection causes genital herpes and severe disease in neonates, patients with AIDS, and transplant recipients.",
+      "claim_type": "EXPLICIT",
+      "source": "Persons infected with HSV2 have a threefold increased risk of acquiring HIV, and HSV2 infection causes genital herpes and severe disease in neonates, patients with AIDS, and transplant recipients (Koelle and Corey, 2008; Freeman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the clinical consequences of HSV2 infection with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "2a52ef42-6473-4b8f-840c-42d1b134f74f",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C47",
+      "claim": "Prior attempts to produce an effective prophylactic vaccine for HSV2, including glycoprotein subunit or replication-competent vaccines, have been unsuccessful.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior attempts to produce an effective prophylactic vaccine for HSV2, including glycoprotein subunit or replication-competent vaccines, have been unsuccessful (Dropulic and Cohen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the history of HSV2 vaccine development with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "94d077d9-74c7-4a0e-8155-f4238b5ed5da",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C48",
+      "claim": "Females typically develop higher antibody responses and report more adverse reactions following vaccination than males.",
+      "claim_type": "EXPLICIT",
+      "source": "Females typically develop higher antibody responses and report more adverse reactions following vaccination than males (Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states general sex differences in vaccine responses with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "f0a58ff4-aee9-43d1-8e16-aed646fd3fb6",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C49",
+      "claim": "Females have been observed to show higher levels of Toll-like receptor (TLR)/interferon (IFN)-associated gene expression in innate responses to vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Females in particular have been observed to show higher levels of Toll-like receptor (TLR)/interferon (IFN)-associated gene expression in innate responses to vaccination (Klein et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states sex differences in gene expression with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "3a21cc56-f57b-4681-9430-69b0c71f2189",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C50",
+      "claim": "Systems immunology studies have identified prevaccination differences that predict antibody titer responses, such as CD20+CD38high B cell frequency and plasmacytoid dendritic cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Systems immunology studies have identified prevaccination differences that predict antibody titer responses, such as CD20+CD38high B cell frequency and plasmacytoid dendritic cell activation (Kotliarov et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings on predictive biomarkers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "934db098-4b44-4500-b1a5-1102a093a3b4",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C51",
+      "claim": "Trials testing an experimental adenovirus vector-based HIV vaccine revealed increased inflammatory responses in subjects seropositive for a prevalent adenovirus subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "An example of particular interest for innate responses involved vaccine vectors using replication-defective viruses: trials testing an experimental adenovirus vector-based HIV vaccine revealed increased inflammatory responses in subjects seropositive for a prevalent adenovirus subtype and showed an enhanced risk of HIV infection that was associated with prior adenovirus exposure (Zak et al., 2012; Buchbinder et al., 2008; Gray et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings on adenovirus vector vaccines.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "0826fe31-c0fc-479d-97eb-1e42dc21297e",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C52",
+      "claim": "Adenovirus vector-based HIV vaccine trials showed an enhanced risk of HIV infection that was associated with prior adenovirus exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "An example of particular interest for innate responses involved vaccine vectors using replication-defective viruses: trials testing an experimental adenovirus vector-based HIV vaccine revealed increased inflammatory responses in subjects seropositive for a prevalent adenovirus subtype and showed an enhanced risk of HIV infection that was associated with prior adenovirus exposure (Zak et al., 2012; Buchbinder et al., 2008; Gray et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings on HIV risk with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "43679ac3-b4c1-4ccb-a583-3fe49d95faf3",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C53",
+      "claim": "Type I IFNs, including IFN-\u03b1, are produced very early after viral infections, including with HSV.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I IFNs, including IFN-\u03b1, are produced very early after viral infections, including with HSV, and cellular RNA and DNA sensors for HSV produce type I IFNs in response to virus infection (Oh et al., 2016; Danastas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the timing of type I IFN production with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "b2539ef3-0d06-4ccf-a5c3-0c608d3ba434",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C54",
+      "claim": "Cellular RNA and DNA sensors for HSV produce type I IFNs in response to virus infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I IFNs, including IFN-\u03b1, are produced very early after viral infections, including with HSV, and cellular RNA and DNA sensors for HSV produce type I IFNs in response to virus infection (Oh et al., 2016; Danastas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the mechanism of type I IFN production with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "9904ceb6-b317-4274-9f46-928a5d0e22a8",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C55",
+      "claim": "IFN-\u03b3 is predominantly produced by natural killer cells and T cells during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN-\u03b3 signals through a different receptor and is predominantly produced by natural killer cells and T cells during infection (Platanias, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the cellular sources of IFN-\u03b3 with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "272747d7-aa15-4108-a26d-256a94ff56a2",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C56",
+      "claim": "IFN-\u03b3 is particularly important for inhibiting HSV reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN-\u03b3 is particularly important for inhibiting HSV reactivation and thus may be more prominent when the immune system has previously been exposed to the virus (Decman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the role of IFN-\u03b3 in HSV control with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "8e9be722-b892-4eaa-bda5-bf9ab7d2c91e",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C57",
+      "claim": "Both type I and type II IFNs contribute to the induction of an antiviral state through the upregulation of molecules that can antagonize virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Both IFNs contribute to the induction of an antiviral state through the upregulation of molecules that can antagonize virus replication, but are increasingly being recognized to exert regulatory effects on the innate response that influence development of adaptive immunity (Lee and Ashkar, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the antiviral function of IFNs with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "1cd90070-0868-4981-b0ee-b34b8edc1aa8",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C58",
+      "claim": "IFNs are increasingly being recognized to exert regulatory effects on the innate response that influence development of adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both IFNs contribute to the induction of an antiviral state through the upregulation of molecules that can antagonize virus replication, but are increasingly being recognized to exert regulatory effects on the innate response that influence development of adaptive immunity (Lee and Ashkar, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the regulatory role of IFNs with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "6d2a94dc-b2b4-441a-84a1-aa5c06629fe6",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C59",
+      "claim": "In a trial of the malaria recombinant protein vaccine RTS,S, increased plasmablasts were observed on day 1, but only after the second and third doses of vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "In a trial of the malaria recombinant protein vaccine RTS,S, increased plasmablasts were observed on day 1, but only after the second and third doses of vaccine (Kazmin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings on plasmablast kinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "36be970a-058e-4f57-a06d-f6edba020f77",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C60",
+      "claim": "Higher levels of TLR7 gene expression have been reported in B cells of naive female versus male mice after vaccination with inactivated influenza vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "TLR7 is an X-linked gene for which higher levels of expression have been reported in B cells of naive female versus male mice after vaccination with inactivated influenza vaccine, and these higher levels of TLR7 correlated with high levels of antibodies in the female mice (Fink et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings on TLR7 expression in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "0930ecbd-391d-4cef-bac3-f6ab554f6577",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C61",
+      "claim": "Higher levels of TLR7 in female mice correlated with high levels of antibodies after influenza vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "TLR7 is an X-linked gene for which higher levels of expression have been reported in B cells of naive female versus male mice after vaccination with inactivated influenza vaccine, and these higher levels of TLR7 correlated with high levels of antibodies in the female mice (Fink et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings on TLR7 and antibody correlation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "76fded1e-1121-489a-b5ab-162d4f5da118",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C62",
+      "claim": "HSV encodes immune evasion proteins that antagonize IFN, antibody-mediated cytolysis, and activity of integrin \u03b23.",
+      "claim_type": "EXPLICIT",
+      "source": "HSV encodes immune evasion proteins that antagonize many of these specific gene functions: blocking IFN, antibody-mediated cytolysis, and activity of integrin \u03b23 (Leib, 2002; Lubinski et al., 1998; Gianni et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states HSV immune evasion mechanisms with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "bcffc791-b3a9-4b8e-bd7e-7d01334d040c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C63",
+      "claim": "In two double-blind randomized studies of an HSV subunit vaccine, the vaccine was protective against genital herpes in women who were HSV1\u2212/HSV2\u2212 prior to vaccination, but the vaccine was not effective in men.",
+      "claim_type": "EXPLICIT",
+      "source": "In two double-blind randomized studies of an HSV subunit vaccine, the vaccine was protective against genital herpes in women who were HSV1\u2212/HSV2\u2212 prior to vaccination, but the vaccine was not effective in men (Stanberry et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous clinical trial results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "9869ec62-4f32-449b-bf59-755ac5b330d9",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C64",
+      "claim": "Male mice have a higher mortality rate after HSV infection than females which correlates with the difference in IFN-\u03b3 response.",
+      "claim_type": "EXPLICIT",
+      "source": "Male mice have a higher mortality rate after HSV infection than females which correlates with the difference in IFN-\u03b3 response, and male IFN-\u03b3 knockout mice have higher HSV reactivation rates than control mice whereas female IFN-\u03b3 knockout mice show no difference from controls (Han et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings from mouse studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "7c127924-da9e-4246-8d7a-126951dbf345",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C65",
+      "claim": "Male IFN-\u03b3 knockout mice have higher HSV reactivation rates than control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Male mice have a higher mortality rate after HSV infection than females which correlates with the difference in IFN-\u03b3 response, and male IFN-\u03b3 knockout mice have higher HSV reactivation rates than control mice whereas female IFN-\u03b3 knockout mice show no difference from controls (Han et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings from mouse studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "68fcd142-c2e2-493f-93aa-dd61f8c30236",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C66",
+      "claim": "Female IFN-\u03b3 knockout mice show no difference in HSV reactivation rates from controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Male mice have a higher mortality rate after HSV infection than females which correlates with the difference in IFN-\u03b3 response, and male IFN-\u03b3 knockout mice have higher HSV reactivation rates than control mice whereas female IFN-\u03b3 knockout mice show no difference from controls (Han et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings from mouse studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "6f635e6f-8288-4347-8910-a62633ce44ae",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C67",
+      "claim": "HSV is known to activate TLR9.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HSV is known to activate TLR9, and thus a replication-defective vaccine like ours would be expected to activate TLR9 by presenting viral DNA to the immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the activation of TLR9 by HSV based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "7d8afb27-e71c-4fa6-aa02-eacf19b345fd",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C68",
+      "claim": "TLR9 responses are known to be sex dependent, with a role in autoimmune disorders disproportionately affecting females.",
+      "claim_type": "EXPLICIT",
+      "source": "TLR9 responses are known to be sex dependent, with a role in autoimmune disorders disproportionately affecting females, and may have thus contributed to the more robust innate responses in females in our study (Lund et al., 2003; Marshak-Rothstein, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the sex-dependent nature of TLR9 responses with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "03b44fab-c939-46c1-a647-ef21bb059ba8",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C69",
+      "claim": "Evidence for preexisting antibody inhibiting live virus vaccination has been reported for measles.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for preexisting antibody inhibiting live virus vaccination has been reported for other pathogens such as measles, for which efficacy improves if vaccination is administered later within the first year of life; clinical data combined with experimental models indicate this is more likely due to interference from maternal antibodies rather than immaturity of the neonatal system (Aaby et al., 2014; van Binnendijk et al., 1997), although the underlying mechanisms remain largely unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings on measles vaccine interference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "fd4ff6fe-85c1-44ec-80d2-53fadc55c146",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C70",
+      "claim": "The live attenuated intranasal influenza vaccine is approved in the United States for persons aged 2\u201349.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is the live attenuated intranasal influenza vaccine which is approved in the United States for persons aged 2\u201349; prior exposure to influenza may lead to neutralization and reduced replication of the live influenza virus vaccine resulting in reduced efficacy in adults compared to children (Hoft et al., 2017; Monto et al., 2009; Grohskopf et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the approved age range with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "3f259924-7445-4135-8ee8-96859b5cd650",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C71",
+      "claim": "Prior exposure to influenza may lead to neutralization and reduced replication of the live influenza virus vaccine resulting in reduced efficacy in adults compared to children.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is the live attenuated intranasal influenza vaccine which is approved in the United States for persons aged 2\u201349; prior exposure to influenza may lead to neutralization and reduced replication of the live influenza virus vaccine resulting in reduced efficacy in adults compared to children (Hoft et al., 2017; Monto et al., 2009; Grohskopf et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings on influenza vaccine efficacy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "0eb4dfa8-5996-49f4-a995-a16e0863705c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C72",
+      "claim": "The live attenuated zoster vaccine is given at 14 times the dose of the varicella vaccine, in part, to overcome the effect of preexisting immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In HSV exposed subjects a higher dose of HSV529 may be required to achieve a better response; indeed the live attenuated zoster vaccine is given at 14 times the dose of the varicella vaccine, in part, to overcome the effect of preexisting immunity (Cohen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the dosing strategy for zoster vaccine.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "00187fa2-2a44-44b3-b8e3-aef91a485ec7",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C73",
+      "claim": "The number of genes showing significant changes in response to vaccination was higher at 1 day after the first dose of vaccine than at later timepoints and after subsequent vaccine doses.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of genes showing significant changes (FDR corrected p < 0.05) in response to vaccination was higher at 1 day after the first dose of vaccine than at later timepoints and after subsequent vaccine doses (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the comparison of gene expression changes across timepoints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "f3c367ba-b421-4080-8d33-84b5ed0c9352",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C74",
+      "claim": "HSV1\u2212/HSV2\u2212 vaccine recipients had significant changes in numbers of activated B cells, Th1, Tc1, and Tc17 cells on day 1.",
+      "claim_type": "EXPLICIT",
+      "source": "HSV1\u2212/HSV2\u2212 vaccine recipients had significant changes in numbers of activated B cells, Th1, Tc1, and Tc17 cells on day 1, while these cell types were not significantly altered in HSV1+/HSV2\u2212 or HSV1\u00b1/HSV2+ vaccine recipients (Supplementary file 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the cell population changes in seronegative subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "21cafbcc-76be-49e6-a953-2765b57a554d",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C75",
+      "claim": "Activated B cells, Th1, Tc1, and Tc17 cells were not significantly altered on day 1 in HSV1+/HSV2\u2212 or HSV1\u00b1/HSV2+ vaccine recipients.",
+      "claim_type": "EXPLICIT",
+      "source": "HSV1\u2212/HSV2\u2212 vaccine recipients had significant changes in numbers of activated B cells, Th1, Tc1, and Tc17 cells on day 1, while these cell types were not significantly altered in HSV1+/HSV2\u2212 or HSV1\u00b1/HSV2+ vaccine recipients (Supplementary file 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the absence of changes in seropositive subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "fd5c1759-74e1-4ef2-8328-08463ba630ce",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C76",
+      "claim": "Increases in activated NK cells were significantly increased on day 1 in vaccine recipients regardless of their HSV serostatus prior to vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some cellular responses such as increases in activated NK cells were significantly increased on day 1 in vaccine recipients regardless of their HSV serostatus prior to vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the NK cell response across all groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "8c2479c3-be35-4a2d-91d5-bd061df7cb2a",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C77",
+      "claim": "The strong early antiviral response in HSV naive women was associated negatively with vaccine-induced neutralizing antibody titers, suggesting that a strong early antiviral response reduced the uptake of this replication-defective virus vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of early transcriptional responses was greatest in HSV naive women where type I interferon (IFN) signatures were prominent and associated negatively with vaccine-induced neutralizing antibody titers, suggesting that a strong early antiviral response reduced the uptake of this replication-defective virus vaccine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the negative association and provides an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "2991272e-5b34-4891-b51e-3d16b3072a1f",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C78",
+      "claim": "HSV2 seronegative vaccine recipients had upregulation of gene sets in type I IFN (IFN-\u03b1/\u03b2) responses.",
+      "claim_type": "EXPLICIT",
+      "source": "While HSV seronegative vaccine recipients had upregulation of gene sets in type I IFN (IFN-\u03b1/\u03b2) responses, HSV2 seropositive vaccine recipients tended to have responses focused more on type II IFN (IFN-\u03b3) genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the type of IFN response in seronegative subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "ae5bcfbd-f672-4036-b567-3a6a4d4d5d32",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C79",
+      "claim": "HSV2 seropositive vaccine recipients tended to have responses focused more on type II IFN (IFN-\u03b3) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While HSV seronegative vaccine recipients had upregulation of gene sets in type I IFN (IFN-\u03b1/\u03b2) responses, HSV2 seropositive vaccine recipients tended to have responses focused more on type II IFN (IFN-\u03b3) genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the type of IFN response in seropositive subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "dc156481-6bda-4f63-b480-1c0eac39474c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C80",
+      "claim": "Prior exposure and sex interact to shape early innate responses that then impact subsequent adaptive immune phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results together show that prior exposure and sex interact to shape early innate responses that then impact subsequent adaptive immune phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "4ed75b15-8382-4b41-b1b2-540f29dc1af1",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C81",
+      "claim": "This is the first systems immunology study of a replication-defective vaccine in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "While prior studies using systems approaches have been reported for live attenuated virus, subunit, and vectored vaccines, this is the first such study of a replication-defective vaccine in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly claims novelty of the study type.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "0dd5c19b-42a8-413f-9c0d-cf9fa5674bb8",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C82",
+      "claim": "A replication-defective vaccine like HSV529 would be expected to activate TLR9 by presenting viral DNA to the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HSV is known to activate TLR9, and thus a replication-defective vaccine like ours would be expected to activate TLR9 by presenting viral DNA to the immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes an inference based on known HSV biology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "134eb30c-8e8e-4a64-ab20-a6c7ddbc8a31",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C83",
+      "claim": "TLR9 responses may have contributed to the more robust innate responses in females in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "TLR9 responses are known to be sex dependent, with a role in autoimmune disorders disproportionately affecting females, and may have thus contributed to the more robust innate responses in females in our study (Lund et al., 2003; Marshak-Rothstein, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the mechanism underlying sex differences.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "b95631fc-f4e6-4ba9-8c48-da1738a0aa8b",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C84",
+      "claim": "A replication-defective live viral vaccine may be more effective in triggering the presentation of processed viral peptides on the surface of the infected host cells to stimulate innate and virus-specific T cell responses compared to protein subunit vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "A replication-defective live viral vaccine may also be more effective in triggering the presentation of processed viral peptides on the surface of the infected host cells to stimulate innate and virus-specific T cell responses compared to protein subunit vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the advantages of replication-defective vaccines.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "55d80c3e-3daa-432b-bb0c-d1b58b87ef40",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C85",
+      "claim": "The HSV2 replication-defective vaccine may be more likely to trigger innate and cellular immune response pathways that are more robust in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our HSV2 replication-defective vaccine may be more likely to trigger innate and cellular immune response pathways that are more robust in women, for example, similar to earlier observations of more robust IFN-\u03b1 production and CD8 T cell activation after stimulation of PBMCs with a viral peptide in HIV-infected women compared to men (Meier et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the mechanism of sex differences with citation to supporting evidence.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "1b46b706-89bd-4463-9366-1f903ae384c7",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C86",
+      "claim": "In HSV exposed subjects a higher dose of HSV529 may be required to achieve a better response.",
+      "claim_type": "EXPLICIT",
+      "source": "In HSV exposed subjects a higher dose of HSV529 may be required to achieve a better response; indeed the live attenuated zoster vaccine is given at 14 times the dose of the varicella vaccine, in part, to overcome the effect of preexisting immunity (Cohen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on dosing strategy with supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "054957db-b4e0-4cfe-8520-bc92e39a1ad7",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C87",
+      "claim": "The diminished responses by HSV exposed subjects may have resulted from suppression of HSV529 infection by preexisting neutralizing antibody or T cell immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The diminished responses by HSV exposed subjects may also have resulted from suppression of HSV529 infection, in this case by preexisting neutralizing antibody or T cell immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the mechanism of reduced responses in exposed subjects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "d3096239-29d5-4c1f-9fe4-85d1722a4e09",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C88",
+      "claim": "As HSV529 is a replication-defective vaccine dependent on an initial infection of host cells, early IFN responses may have inhibited the number of cells infected or the efficiency of viral antigen expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Possibly, as HSV529 is a replication-defective vaccine dependent on an initial infection of host cells, early IFN responses inhibited the number of cells infected or the efficiency of viral antigen expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the mechanism of IFN effects on vaccine efficacy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "d7467883-baee-47f2-9464-34af818d4d2d",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C89",
+      "claim": "The early rise in plasmablasts after vaccination may be related to the particularly rapid neutralizing antibody response to vaccination in HSV seronegative women.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this analysis combined all subjects, the remarkably early rise in plasmablasts after vaccination may be related to the particularly rapid neutralizing antibody response to vaccination in HSV seronegative women described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the relationship between plasmablasts and antibody responses.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "a47cc6f6-a7e0-493f-8550-721f55240816",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C90",
+      "claim": "IFN-\u03b3 may be more prominent when the immune system has previously been exposed to HSV.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN-\u03b3 is particularly important for inhibiting HSV reactivation and thus may be more prominent when the immune system has previously been exposed to the virus (Decman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers the prominence of IFN-\u03b3 in exposed individuals based on cited knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "33c5e212-f89c-4900-86be-f1fb4744c730",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "claim_id": "C91",
+      "claim": "The more robust day 1 transcriptional responses in HSV naive women could have contributed to the more rapid neutralizing antibody responses observed in HSV naive women in this cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that in the absence of prior exposure, the more robust transcriptional responses in women to a replication-defective virus may be due to an underlying difference in baseline inflammation or in the speed of induction of inflammation in comparison to men. Such IFN-associated broad immune activation has recently been found to underlie shared set point signatures for increased vaccine responsiveness in healthy individuals of both sexes (although this signature tends to be more elevated in females than males at baseline), as well as disease activity in patients with lupus (Kotliarov et al., 2020). Thus, the more robust day 1 transcriptional responses in HSV naive women could have contributed to the more rapid neutralizing antibody responses observed in HSV naive women in this cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers a causal relationship between transcriptional responses and antibody kinetics.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c892bfba-5996-49fd-b737-8a65ded1e3f3",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study enrolled 60 subjects divided into three HSV serostatus groups (HSV1\u2212/HSV2\u2212, HSV1+/HSV2\u2212, HSV1\u00b1/HSV2+), with each group containing 20 volunteers receiving either HSV529 vaccine (15 participants) or placebo (5 participants). The cohort was balanced for sex (50% women) and age (mean 31 years, range 21-40), with no significant differences across groups. Blood samples were collected at multiple timepoints throughout a three-dose vaccine regimen for RNA-seq (9 timepoints) and flow cytometry (7 timepoints) analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide a comprehensive description of the study design that is internally consistent and well-documented. The demographic characteristics, sample sizes, and sampling schedule are explicitly stated with appropriate detail. The study design appears methodologically sound with balanced groups and appropriate controls (placebo recipients).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "b5088d19-922e-4cde-a8f2-d3b9b27f3598",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HSV1\u2212/HSV2\u2212 subjects showed neutralizing antibody responses that peaked at day 210 (p < 0.05) and declined by day 360 (p < 0.001), while HSV1+ subjects peaked earlier at day 60 or before. Sex differences were observed in early antibody kinetics: HSV1\u2212/HSV2\u2212 and HSV1+/HSV2\u2212 women showed significant increases by day 30 (p = 0.022 for HSV1\u2212/HSV2\u2212 women), while men did not. Women comprised 89% of fast responders in the HSV1\u2212/HSV2\u2212 group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 describe antibody response kinetics with appropriate statistical tests (Wilcoxon's signed-rank paired test) and p-values. The findings are supported by Figure 1B-C. The observation of sex differences in antibody response timing is well-documented, though the mechanism remains to be elucidated. The 89% statistic for women among fast responders is striking but appears to be based on a small sample size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "56e3ebd4-cbb8-44db-9d38-436e7c120236",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adverse reactions to HSV529 included systemic reactions in ~65% and local injection site reactions in ~90% of vaccine recipients. HSV1\u2212/HSV2\u2212 women experienced more severe systemic reactions after the first dose (p = 0.015) and more severe local reactions after the second dose (p = 0.017) compared to men. No sex differences in adverse reactions were observed in HSV1+/HSV2\u2212 or HSV1\u00b1/HSV2+ groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 describe adverse event patterns with appropriate statistical comparisons (Welch's unpaired t-test) and reference to Figure 1\u2014figure supplement 1. The finding that sex differences in adverse reactions are specific to HSV-naive individuals is consistent with the overall study findings. The cited percentages for adverse reactions include comparison to placebo, strengthening the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "01e7e1fe-f06f-466f-b1d2-ef11c10f051b",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Transcriptomic and cellular responses to vaccination were most robust at day 1 after the first dose, with inflammatory and IFN pathways, dendritic cell, T cell, and B cell responses detected. Cell population changes included increased monocyte and NK cell frequencies and decreased Th1 subset at day 1, while T follicular helper cells, T cells, B cells, and plasmablasts (p < 0.05) were expanded by day 7. The number of significantly changed genes was higher at day 1 after the first dose than at later timepoints or after subsequent doses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 and C73 describe the temporal dynamics of vaccine responses with appropriate statistical corrections (FDR, Benjamini-Hochberg). The finding that day 1 responses are most robust is well-supported by Figure 2A-C. The plasmablast expansion at both days 1 and 7 is notable and appropriately analyzed with paired statistical tests. The interpretation that decreased Th1 reflects polarization (C25) is speculative but reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "42b768fa-0e8b-429c-8bdd-af9e0a618a18",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Transcriptomic responses to HSV529 differed by prior HSV exposure: HSV seronegative recipients showed gene expression patterns similar to yellow fever vaccine recipients (p < 1\u00d710\u221290, Jaccard index >0.35), while HSV seropositive recipients resembled influenza vaccine recipients (p < 1\u00d710\u221230, Jaccard index >0.13). HSV seropositive groups showed upregulation of IFN-\u03b3-induced genes (GBP1, WARS, IRF1), while seronegative subjects showed upregulation of IFN-\u03b1-induced genes (MX1, ISG15).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 describe a key finding comparing transcriptomic responses across exposure groups and to other vaccines. The statistical significance is very strong (p < 1\u00d710\u221230 to 1\u00d710\u221290) and the Jaccard indices provide quantitative measures of similarity. The differential IFN response patterns (type I vs type II) are supported by citations and Table 1. This represents a novel insight into how prior exposure shapes vaccine responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "fa92aa6c-fe18-4852-9b66-3835dde02751",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Among HSV1\u2212/HSV2\u2212 subjects, women showed significantly greater upregulation of IFN responses, monocytes, and dendritic cell activation pathways compared to men (FDR adjusted p < 0.05), while T cell responses were higher in men. TLR7, an X-linked gene, showed prominent upregulation in HSV naive women. Notably, day 1 antiviral IFN signature responses in HSV naive women correlated negatively with HSV2 neutralizing antibody titers at days 30 and 60 (Pearson coefficient \u22120.7, p < 0.04).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 describe sex-specific transcriptomic differences with appropriate statistical methods (LIMMA, FDR correction, Pearson correlation). The negative correlation between IFN responses and antibody titers is counterintuitive but well-documented with Figure 4D. The focus on TLR7 as an X-linked gene is biologically relevant. However, the correlation analysis is based on a relatively small sample size of HSV naive women, which should be noted as a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "79eb80ac-2d80-4191-bda4-8e5a53e33d57",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Flow cytometry revealed that HSV1\u2212/HSV2\u2212 vaccine recipients had significant changes in activated B cells, Th1, Tc1, and Tc17 cells on day 1, while these populations were not significantly altered in HSV seropositive recipients. However, activated NK cells increased significantly on day 1 regardless of HSV serostatus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 describe cell population changes stratified by serostatus with reference to Supplementary file 1E. The finding that some responses (NK cells) are universal while others (adaptive lymphocytes) are serostatus-dependent is consistent with the overall study findings. The early activation of adaptive lymphocytes at day 1 is noted as unexpected by the authors, which is appropriate scientific caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "3dc2f3a9-7baf-4de4-9c1b-6061afb2b215",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study demonstrates that prior exposure and sex interact to shape early innate immune responses that impact subsequent adaptive immunity. HSV seronegative recipients showed type I IFN (IFN-\u03b1/\u03b2) responses, while seropositive recipients showed type II IFN (IFN-\u03b3) responses. The strong early antiviral response in HSV naive women was associated negatively with vaccine-induced neutralizing antibody titers, suggesting that robust early IFN responses may reduce uptake of this replication-defective vaccine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 represent the main conclusions of the study. The interaction between prior exposure and sex is well-supported by the data presented throughout. The differential IFN response patterns are documented with multiple lines of evidence. The interpretation that strong IFN responses reduce vaccine uptake (C77) is reasonable given the negative correlation, though the mechanism remains speculative. This represents a significant advance in understanding vaccine immunology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "1c10b573-9546-4f67-8174-5b5ecdf6667e",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HSV529 is a replication-defective vaccine deleted for two essential HSV genes (UL5 and UL29) and propagated in cells expressing these proteins. Infection of cells lacking these genes results in expression of nearly all viral genes but abolishes viral DNA replication and virion production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 describe the vaccine construct with appropriate citations to the original development work. This information is essential context for interpreting the study results and is well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "a3cdee75-8db9-459c-aac2-db21202c431c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The HSV529 vaccine induced greater than fourfold increases in HSV-specific antibody titers in most HSV1\u2212/HSV2\u2212 recipients, but lower increases were observed in HSV seropositive volunteers. T cell responses were modest in all three serogroups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 summarize previously published results from the phase 1 trial with appropriate citation. These findings provide important context for the current systems immunology analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "0bf9aedc-b050-40d5-bc88-dd808595362c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "This study represents the first systems immunology investigation of a replication-defective vaccine in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 asserts novelty of the study type. While prior systems studies of live attenuated, subunit, and vectored vaccines are acknowledged, the claim that this is the first for a replication-defective vaccine appears reasonable based on the literature context provided. However, comprehensive verification of this novelty claim would require extensive literature review beyond the scope of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "eb0f752d-466c-4acb-9e83-0349deb892d2",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "HSV activates TLR9, and thus the replication-defective HSV529 vaccine would be expected to activate TLR9 by presenting viral DNA. TLR9 responses are sex-dependent with roles in autoimmune disorders affecting females, which may have contributed to the more robust innate responses observed in females in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C83 and C67-C68 propose TLR9 as a mechanistic explanation for sex differences. While the activation of TLR9 by HSV is established knowledge (C67), the inference that HSV529 activates TLR9 (C82) is reasonable but not directly demonstrated in this study. The speculation that TLR9 contributed to sex differences (C83) is plausible given the citations but remains unproven without direct measurement of TLR9 activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "955eabb1-d546-4127-9cb1-75ea5b1e439f",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Replication-defective live viral vaccines may be more effective than protein subunit vaccines at triggering presentation of processed viral peptides to stimulate innate and virus-specific T cell responses. The HSV2 replication-defective vaccine may be more likely to trigger innate and cellular immune response pathways that are more robust in women.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C85 are speculative comparisons between vaccine types. While the reasoning is logical and supported by citation to HIV studies (C85), these claims are not directly tested in the current study. The manuscript appropriately presents these as speculative interpretations rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "241dbfb3-7b2e-4e5e-bbe7-007147a7c675",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The diminished responses in HSV-exposed subjects may result from suppression of HSV529 infection by preexisting neutralizing antibodies or T cell immunity, suggesting that higher vaccine doses may be required in exposed individuals. Early IFN responses may have inhibited the number of cells infected or efficiency of viral antigen expression by the replication-defective vaccine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C88 propose mechanisms for reduced responses in exposed individuals and the negative correlation between IFN and antibody responses. While these interpretations are reasonable and supported by analogy to zoster vaccine dosing (C86, C72), they remain speculative without direct experimental evidence. The proposed mechanisms (C87, C88) are plausible but not demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "a689014a-1315-411d-a876-2000e53cbfbf",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The early rise in plasmablasts may be related to the rapid neutralizing antibody response in HSV seronegative women. IFN-\u03b3 may be more prominent in HSV-exposed individuals given its role in inhibiting HSV reactivation. The robust day 1 transcriptional responses in HSV naive women could have contributed to their more rapid neutralizing antibody responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C91 propose causal relationships between observed phenomena. While the associations are documented, the causal interpretations remain speculative. The plasmablast-antibody relationship (C89) is plausible but the analysis combined all subjects. The IFN-\u03b3 prominence in exposed individuals (C90) is a reasonable inference from cited literature. The proposed contribution of day 1 responses to antibody kinetics (C91) is contradicted by the negative correlation observed, making this interpretation problematic.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    },
+    {
+      "id": "77592933-0048-49b8-a47d-4c5b8df76a9c",
+      "content_id": "2f937f6c-aef3-44cd-9702-7d573b68a1d5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on HSV2 disease burden, prior vaccine attempts, sex differences in vaccine responses, systems immunology approaches, prior exposure effects on vaccines, and IFN biology, all supported by appropriate citations to the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C72 represent background information and literature context, all appropriately cited. These claims establish the scientific rationale for the study and provide necessary context for interpreting the results. The citations appear appropriate and the background information is accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:10.383558Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "778e239f-61c5-4e3e-be8a-33d23e7463f5",
+      "result_id": "c892bfba-5996-49fd-b737-8a65ded1e3f3"
+    },
+    {
+      "claim_id": "dc41c88e-6d5a-4a55-ba93-5962b0104797",
+      "result_id": "c892bfba-5996-49fd-b737-8a65ded1e3f3"
+    },
+    {
+      "claim_id": "0d61d3e2-5824-47b2-be48-d50156cfe1ef",
+      "result_id": "c892bfba-5996-49fd-b737-8a65ded1e3f3"
+    },
+    {
+      "claim_id": "6f45ffb6-4020-48ab-a86e-ce33b27e918e",
+      "result_id": "c892bfba-5996-49fd-b737-8a65ded1e3f3"
+    },
+    {
+      "claim_id": "8e516e7c-47f1-4855-b67f-fd5711bffc0c",
+      "result_id": "c892bfba-5996-49fd-b737-8a65ded1e3f3"
+    },
+    {
+      "claim_id": "644416ad-11e4-4710-9da2-e57735081dc9",
+      "result_id": "c892bfba-5996-49fd-b737-8a65ded1e3f3"
+    },
+    {
+      "claim_id": "f5eff010-19c9-48c7-9d6a-825bd1db6b21",
+      "result_id": "c892bfba-5996-49fd-b737-8a65ded1e3f3"
+    },
+    {
+      "claim_id": "ee0a5f45-ac47-4df6-badf-0e142db7b540",
+      "result_id": "c892bfba-5996-49fd-b737-8a65ded1e3f3"
+    },
+    {
+      "claim_id": "67169f5f-c322-411b-b751-b1a283d4aa99",
+      "result_id": "c892bfba-5996-49fd-b737-8a65ded1e3f3"
+    },
+    {
+      "claim_id": "e650dadc-82b5-44f7-817d-d577628e8fbd",
+      "result_id": "b5088d19-922e-4cde-a8f2-d3b9b27f3598"
+    },
+    {
+      "claim_id": "52914e6d-cc79-48d8-9ce8-9cd846dc10df",
+      "result_id": "b5088d19-922e-4cde-a8f2-d3b9b27f3598"
+    },
+    {
+      "claim_id": "d73a04b3-8432-487c-8d45-86565ea60741",
+      "result_id": "b5088d19-922e-4cde-a8f2-d3b9b27f3598"
+    },
+    {
+      "claim_id": "da741f6b-6002-4ed5-adbc-7438ee835f5c",
+      "result_id": "b5088d19-922e-4cde-a8f2-d3b9b27f3598"
+    },
+    {
+      "claim_id": "c5723fcb-f6bf-40e1-92d2-184eb8bb9892",
+      "result_id": "b5088d19-922e-4cde-a8f2-d3b9b27f3598"
+    },
+    {
+      "claim_id": "3e790299-b24a-4a91-9dca-230158bd0869",
+      "result_id": "b5088d19-922e-4cde-a8f2-d3b9b27f3598"
+    },
+    {
+      "claim_id": "00ec642b-72c4-4689-af9b-f369c4b942e3",
+      "result_id": "b5088d19-922e-4cde-a8f2-d3b9b27f3598"
+    },
+    {
+      "claim_id": "64ea3b0b-948b-4c09-a045-28b6d49e2f88",
+      "result_id": "56e3ebd4-cbb8-44db-9d38-436e7c120236"
+    },
+    {
+      "claim_id": "a4e5117f-e295-432f-b617-dea003079d51",
+      "result_id": "56e3ebd4-cbb8-44db-9d38-436e7c120236"
+    },
+    {
+      "claim_id": "907e135c-caf7-48a9-bf57-8fbd63ec5fbb",
+      "result_id": "56e3ebd4-cbb8-44db-9d38-436e7c120236"
+    },
+    {
+      "claim_id": "3a9051aa-e57e-48b8-8a10-ea0ec8fa1ab3",
+      "result_id": "56e3ebd4-cbb8-44db-9d38-436e7c120236"
+    },
+    {
+      "claim_id": "48096d8a-0044-4eed-a3a1-47d259baf745",
+      "result_id": "56e3ebd4-cbb8-44db-9d38-436e7c120236"
+    },
+    {
+      "claim_id": "c57c6308-b63c-476a-83c6-6710e66be855",
+      "result_id": "01e7e1fe-f06f-466f-b1d2-ef11c10f051b"
+    },
+    {
+      "claim_id": "6794f3fd-bfbb-48b2-9d2c-18ccff427841",
+      "result_id": "01e7e1fe-f06f-466f-b1d2-ef11c10f051b"
+    },
+    {
+      "claim_id": "912d630f-5422-4ae7-ab30-862950912173",
+      "result_id": "01e7e1fe-f06f-466f-b1d2-ef11c10f051b"
+    },
+    {
+      "claim_id": "78d1a873-d27e-49ba-a442-d2b88351f4d2",
+      "result_id": "01e7e1fe-f06f-466f-b1d2-ef11c10f051b"
+    },
+    {
+      "claim_id": "7ab72269-1f12-4641-95f9-3c53cd378304",
+      "result_id": "01e7e1fe-f06f-466f-b1d2-ef11c10f051b"
+    },
+    {
+      "claim_id": "202a1039-2132-4ca9-b887-c1e02e52dc28",
+      "result_id": "01e7e1fe-f06f-466f-b1d2-ef11c10f051b"
+    },
+    {
+      "claim_id": "00187fa2-2a44-44b3-b8e3-aef91a485ec7",
+      "result_id": "01e7e1fe-f06f-466f-b1d2-ef11c10f051b"
+    },
+    {
+      "claim_id": "bfcf7513-eedd-4a4a-8550-3538c1ad7149",
+      "result_id": "42b768fa-0e8b-429c-8bdd-af9e0a618a18"
+    },
+    {
+      "claim_id": "b5c19917-9e7b-40ea-95a7-77c052ed2f2f",
+      "result_id": "42b768fa-0e8b-429c-8bdd-af9e0a618a18"
+    },
+    {
+      "claim_id": "29ca7708-b844-4ce8-823b-9e47e24c7540",
+      "result_id": "42b768fa-0e8b-429c-8bdd-af9e0a618a18"
+    },
+    {
+      "claim_id": "b63d9b2a-1096-4e7c-9fc9-a874ea14e97c",
+      "result_id": "42b768fa-0e8b-429c-8bdd-af9e0a618a18"
+    },
+    {
+      "claim_id": "b4b061d5-6569-460c-870a-06c0b32f7f5d",
+      "result_id": "42b768fa-0e8b-429c-8bdd-af9e0a618a18"
+    },
+    {
+      "claim_id": "213e3255-c189-4d9d-96d2-5647a9e91f50",
+      "result_id": "42b768fa-0e8b-429c-8bdd-af9e0a618a18"
+    },
+    {
+      "claim_id": "2eca38d6-4c06-4018-a7d9-a90b650d130e",
+      "result_id": "fa92aa6c-fe18-4852-9b66-3835dde02751"
+    },
+    {
+      "claim_id": "4aba647a-fc65-4ad8-bfaa-f0b0068e1079",
+      "result_id": "fa92aa6c-fe18-4852-9b66-3835dde02751"
+    },
+    {
+      "claim_id": "17087b0b-46e8-42cf-b94d-08b0460492c6",
+      "result_id": "fa92aa6c-fe18-4852-9b66-3835dde02751"
+    },
+    {
+      "claim_id": "079075b1-6892-44e7-b4b4-182002a4325d",
+      "result_id": "fa92aa6c-fe18-4852-9b66-3835dde02751"
+    },
+    {
+      "claim_id": "0dc5e4f9-39e3-438c-b7e0-bbccb59b391d",
+      "result_id": "fa92aa6c-fe18-4852-9b66-3835dde02751"
+    },
+    {
+      "claim_id": "f3c367ba-b421-4080-8d33-84b5ed0c9352",
+      "result_id": "79eb80ac-2d80-4191-bda4-8e5a53e33d57"
+    },
+    {
+      "claim_id": "21cafbcc-76be-49e6-a953-2765b57a554d",
+      "result_id": "79eb80ac-2d80-4191-bda4-8e5a53e33d57"
+    },
+    {
+      "claim_id": "fd5c1759-74e1-4ef2-8328-08463ba630ce",
+      "result_id": "79eb80ac-2d80-4191-bda4-8e5a53e33d57"
+    },
+    {
+      "claim_id": "8c2479c3-be35-4a2d-91d5-bd061df7cb2a",
+      "result_id": "3dc2f3a9-7baf-4de4-9c1b-6061afb2b215"
+    },
+    {
+      "claim_id": "2991272e-5b34-4891-b51e-3d16b3072a1f",
+      "result_id": "3dc2f3a9-7baf-4de4-9c1b-6061afb2b215"
+    },
+    {
+      "claim_id": "ae5bcfbd-f672-4036-b567-3a6a4d4d5d32",
+      "result_id": "3dc2f3a9-7baf-4de4-9c1b-6061afb2b215"
+    },
+    {
+      "claim_id": "dc156481-6bda-4f63-b480-1c0eac39474c",
+      "result_id": "3dc2f3a9-7baf-4de4-9c1b-6061afb2b215"
+    },
+    {
+      "claim_id": "bae10f97-e8c9-4f9b-bc1b-4959fc345541",
+      "result_id": "1c10b573-9546-4f67-8174-5b5ecdf6667e"
+    },
+    {
+      "claim_id": "cc7c7b39-90db-45d0-8b2f-197bc4784bf4",
+      "result_id": "1c10b573-9546-4f67-8174-5b5ecdf6667e"
+    },
+    {
+      "claim_id": "72822ce7-f8e8-4e2b-8b82-b1b94706ef7b",
+      "result_id": "1c10b573-9546-4f67-8174-5b5ecdf6667e"
+    },
+    {
+      "claim_id": "ecf71ed8-c8e0-4975-b4ce-476a009842e3",
+      "result_id": "a3cdee75-8db9-459c-aac2-db21202c431c"
+    },
+    {
+      "claim_id": "3b22d036-4623-4664-8ce5-899b6b14c968",
+      "result_id": "a3cdee75-8db9-459c-aac2-db21202c431c"
+    },
+    {
+      "claim_id": "0e09bfec-2800-419b-8fe8-4a40df0b0d27",
+      "result_id": "a3cdee75-8db9-459c-aac2-db21202c431c"
+    },
+    {
+      "claim_id": "4ed75b15-8382-4b41-b1b2-540f29dc1af1",
+      "result_id": "0bf9aedc-b050-40d5-bc88-dd808595362c"
+    },
+    {
+      "claim_id": "0dd5c19b-42a8-413f-9c0d-cf9fa5674bb8",
+      "result_id": "eb0f752d-466c-4acb-9e83-0349deb892d2"
+    },
+    {
+      "claim_id": "134eb30c-8e8e-4a64-ab20-a6c7ddbc8a31",
+      "result_id": "eb0f752d-466c-4acb-9e83-0349deb892d2"
+    },
+    {
+      "claim_id": "6f635e6f-8288-4347-8910-a62633ce44ae",
+      "result_id": "eb0f752d-466c-4acb-9e83-0349deb892d2"
+    },
+    {
+      "claim_id": "7d8afb27-e71c-4fa6-aa02-eacf19b345fd",
+      "result_id": "eb0f752d-466c-4acb-9e83-0349deb892d2"
+    },
+    {
+      "claim_id": "b95631fc-f4e6-4ba9-8c48-da1738a0aa8b",
+      "result_id": "955eabb1-d546-4127-9cb1-75ea5b1e439f"
+    },
+    {
+      "claim_id": "55d80c3e-3daa-432b-bb0c-d1b58b87ef40",
+      "result_id": "955eabb1-d546-4127-9cb1-75ea5b1e439f"
+    },
+    {
+      "claim_id": "1b46b706-89bd-4463-9366-1f903ae384c7",
+      "result_id": "241dbfb3-7b2e-4e5e-bbe7-007147a7c675"
+    },
+    {
+      "claim_id": "054957db-b4e0-4cfe-8520-bc92e39a1ad7",
+      "result_id": "241dbfb3-7b2e-4e5e-bbe7-007147a7c675"
+    },
+    {
+      "claim_id": "d3096239-29d5-4c1f-9fe4-85d1722a4e09",
+      "result_id": "241dbfb3-7b2e-4e5e-bbe7-007147a7c675"
+    },
+    {
+      "claim_id": "d7467883-baee-47f2-9464-34af818d4d2d",
+      "result_id": "a689014a-1315-411d-a876-2000e53cbfbf"
+    },
+    {
+      "claim_id": "a47cc6f6-a7e0-493f-8550-721f55240816",
+      "result_id": "a689014a-1315-411d-a876-2000e53cbfbf"
+    },
+    {
+      "claim_id": "33c5e212-f89c-4900-86be-f1fb4744c730",
+      "result_id": "a689014a-1315-411d-a876-2000e53cbfbf"
+    },
+    {
+      "claim_id": "4ece269b-3cb8-483a-b6d9-0133772a113c",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "29f00edb-8084-4b80-9e91-3ce862ea1a61",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "2a52ef42-6473-4b8f-840c-42d1b134f74f",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "94d077d9-74c7-4a0e-8155-f4238b5ed5da",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "f0a58ff4-aee9-43d1-8e16-aed646fd3fb6",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "3a21cc56-f57b-4681-9430-69b0c71f2189",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "934db098-4b44-4500-b1a5-1102a093a3b4",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "0826fe31-c0fc-479d-97eb-1e42dc21297e",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "43679ac3-b4c1-4ccb-a583-3fe49d95faf3",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "b2539ef3-0d06-4ccf-a5c3-0c608d3ba434",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "9904ceb6-b317-4274-9f46-928a5d0e22a8",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "272747d7-aa15-4108-a26d-256a94ff56a2",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "8e9be722-b892-4eaa-bda5-bf9ab7d2c91e",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "1cd90070-0868-4981-b0ee-b34b8edc1aa8",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "6d2a94dc-b2b4-441a-84a1-aa5c06629fe6",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "36be970a-058e-4f57-a06d-f6edba020f77",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "0930ecbd-391d-4cef-bac3-f6ab554f6577",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "76fded1e-1121-489a-b5ab-162d4f5da118",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "bcffc791-b3a9-4b8e-bd7e-7d01334d040c",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "9869ec62-4f32-449b-bf59-755ac5b330d9",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "7c127924-da9e-4246-8d7a-126951dbf345",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "68fcd142-c2e2-493f-93aa-dd61f8c30236",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "03b44fab-c939-46c1-a647-ef21bb059ba8",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "fd4ff6fe-85c1-44ec-80d2-53fadc55c146",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "3f259924-7445-4135-8ee8-96859b5cd650",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    },
+    {
+      "claim_id": "0eb4dfa8-5996-49f4-a995-a16e0863705c",
+      "result_id": "77592933-0048-49b8-a47d-4c5b8df76a9c"
+    }
+  ],
+  "comparisons": []
+}

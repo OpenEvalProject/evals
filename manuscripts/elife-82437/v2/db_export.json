@@ -1,0 +1,1819 @@
+{
+  "submission": {
+    "id": "b39ccd64-e12a-4f9c-b01b-f50d6031d20d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:29:36.352967Z",
+    "updated_at": "2025-12-03T16:29:36.352967Z"
+  },
+  "content": [
+    {
+      "id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "submission_id": "b39ccd64-e12a-4f9c-b01b-f50d6031d20d",
+      "content_type": "manuscript",
+      "content_text": "# Antibacterial T6SS effectors with a VRR-Nuc domain are structure-specific nucleases\n\n## Authors\n\n- Julia Takuno Hespanhol<sup>1</sup> ([ORCID: 0000-0001-6701-7286](https://orcid.org/0000-0001-6701-7286))\n- Daniel Enrique Sanchez-Limache<sup>1</sup> ([ORCID: 0000-0003-1364-7527](https://orcid.org/0000-0003-1364-7527))\n- Gianlucca Gon\u00e7alves Nicastro<sup>1</sup>\n- Liam Mead<sup>2</sup>\n- Edgar Enrique Llontop<sup>3</sup> ([ORCID: 0000-0003-4910-9667](https://orcid.org/0000-0003-4910-9667))\n- Gustavo Chagas-Santos<sup>1</sup>\n- Chuck Shaker Farah<sup>3</sup>\n- Robson Francisco de Souza<sup>1</sup> ([ORCID: 0000-0002-5284-4630](https://orcid.org/0000-0002-5284-4630))\n- Rodrigo da Silva Galhardo<sup>1</sup> ([ORCID: 0000-0002-5686-9704](https://orcid.org/0000-0002-5686-9704))\n- Andrew L Lovering<sup>2</sup>\n- Ethel Bayer-Santos<sup>1</sup> ([ORCID: 0000-0003-3832-3449](https://orcid.org/0000-0003-3832-3449)) \u2020\n\n### Affiliations\n\n1. Departamento de Microbiologia, Instituto de Ci\u00eancias Biom\u00e9dicas, Universidade de S\u00e3o Paulo S\u00e3o Paulo Brazil ([ROR:036rp1748](https://ror.org/036rp1748))\n2. Department of Biosciences, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))\n3. Departamento de Bioqu\u00edmica, Instituto de Qu\u00edmica, Universidade de S\u00e3o Paulo S\u00e3o Paulo Brazil ([ROR:036rp1748](https://ror.org/036rp1748))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe type VI secretion system (T6SS) secretes antibacterial effectors into target competitors. Salmonella spp. encode five phylogenetically distinct T6SSs. Here, we characterize the function of the SPI-22 T6SS of Salmonella bongori showing that it has antibacterial activity and identify a group of antibacterial T6SS effectors (TseV1\u20134) containing an N-terminal PAAR-like domain and a C-terminal VRR-Nuc domain encoded next to cognate immunity proteins with a DUF3396 domain (TsiV1\u20134). TseV2 and TseV3 are toxic when expressed in Escherichia coli and bacterial competition assays confirm that TseV2 and TseV3 are secreted by the SPI-22 T6SS. Phylogenetic analysis reveals that TseV1\u20134 are evolutionarily related to enzymes involved in DNA repair. TseV3 recognizes specific DNA structures and preferentially cleave splayed arms, generating DNA double-strand breaks and inducing the SOS response in target cells. The crystal structure of the TseV3:TsiV3 complex reveals that the immunity protein likely blocks the effector interaction with the DNA substrate. These results expand our knowledge on the function of Salmonella pathogenicity islands, the evolution of toxins used in biological conflicts, and the endogenous mechanisms regulating the activity of these toxins.\n\n## Introduction\n\nBacteria use a series of antagonistic mechanisms to counteract competitors. These processes either require physical contact between attacker and target cells or function in a contact-independent manner via soluble molecules secreted into the medium (Peterson et al., 2020). The type VI secretion system (T6SS) is a multiprotein contractile nanomachine evolutionarily related to bacteriophages (Leiman et al., 2009). This system is widespread in Gram-negative bacteria and secretes toxic effectors into target cells in a contact-dependent manner (Coulthurst, 2019). The T6SS is composed of three major complexes: the membrane complex, the baseplate, and the tail (Nguyen et al., 2018). The tail has a spear-like shape and is propelled against target cells upon a contraction event (Wang et al., 2017; Salih et al., 2018). The tail tube is composed of hexameric rings of Hcp (hemolysin coregulated protein) capped with a spike composed of a trimer of VgrG (valine\u2013glycine repeat protein G) and a PAAR protein (proline\u2013alanine\u2013alanine\u2013arginine repeats) (Mougous et al., 2006; Shneider et al., 2013; Renault et al., 2018). The effectors secreted via T6SSs associate with Hcp, VgrG, or PAAR either directly or indirectly via adaptor proteins (cargo effectors). In addition, so-called evolved effectors are fused to the C-terminus of Hcp, VgrG, or PAAR (Cianfanelli et al., 2016; Jana and Salomon, 2019). Several isoforms of VgrG, Hcp, and PAAR proteins can be encoded in the same bacterial genome, usually outside of the T6SS structural gene cluster (and are thus named orphans). These Hcp, VgrG, and PAAR proteins can assemble in different combinations to secrete specific subsets of effectors (Hachani et al., 2014; Bondage et al., 2016).\n\nT6SSs effectors can target eukaryotic cells, prokaryotic cells or contribute to the acquisition of micronutrients (Coulthurst, 2019). The variety of targets is related to the diversity of biochemical activities of T6SS effectors, which can be nucleases, peptidoglycan hydrolases, lipases, NADases, pore-forming proteins, or enzymes that post-translationally modify target proteins (Jur\u0117nas and Journet, 2021). Antibacterial effectors with nuclease activity are among the most potent weapons used by an attacker to poison target cells. Several T6SS effectors with nuclease activity have been reported including Dickeya dadantii RhsA-CT and RhsB-CT (Koskiniemi et al., 2013), Agrobacterium tumefaciens Tde1 and Tde2 (Ma et al., 2014), Pseudomonas aeruginosa PA0099 (Hachani et al., 2014), TseT (Burkinshaw et al., 2018), and Tse7 (Pissaridou, 2018), Serratia marcescens Rhs2 (Alcoforado Diniz and Coulthurst, 2015), Escherichia coli Hcp-ET1, -ET3, and -ET4 (Ma et al., 2017a), and Rhs-CT3, -CT4, -CT5, -CT6, -CT7, and -CT8 (Ma et al., 2017b), Acinetobacter baumannii Rhs2-CT (Fitzsimons et al., 2018), Vibrio parahaemolyticus PoNe (Jana et al., 2019), Aeromonas dhakensis TseI (Pei et al., 2020), and Burkholderia gladioli TseTBg (Yadav et al., 2021).\n\nThe majority of the nuclease domains mentioned above have been previously predicted by a seminal in silico study using comparative genomics (Zhang et al., 2012). Among those characterized are Ntox15 (PF15604) (Ma et al., 2014), Ntox30 (PF15532), Ntox34 (PF15606), and Ntox44 (PF15607) (Ma et al., 2017a), Tox-REase-1 (Jana et al., 2019), Tox-REase-3 (PF15647) (Ma et al., 2017a), Tox-REase-5 (PF15648) (Burkinshaw et al., 2018; Yadav et al., 2021), Tox-GHH2 (PF15635) (Hachani et al., 2014; Pissaridou, 2018), HNH (PF01844) (Koskiniemi et al., 2013; Alcoforado Diniz and Coulthurst, 2015; Ma et al., 2017b), Tox-JAB-2 (Ma et al., 2017a), AHH (PF14412) (Ma et al., 2017a; Fitzsimons et al., 2018), and Tox-HNH-EHHH (PF15657) (Pei et al., 2020). However, for most of these studies, the exact nucleotide sequence or structure that is targeted by the effector was not determined.\n\nIn Salmonella species, T6SSs are encoded in five distinct Salmonella pathogenicity islands (SPI-6, SPI-19, SPI-20, SPI-21, and SPI-22) acquired by different horizontal gene transfer events (Blondel et al., 2009; Bao et al., 2019). The S. enterica serovar Typhimurium SPI-6 T6SS is involved in competition with the host microbiota and gut colonization (Pezoa et al., 2014; Brunet et al., 2015; Sana et al., 2016; Sibinelli-Sousa et al., 2020) whereas the SPI-19 T6SS of S. Gallinarum is involved in survival within macrophages (Blondel et al., 2013; Schroll et al., 2019). So far, only two T6SS effectors have been characterized in Salmonella spp., both targeting peptidoglycan: Tae4 (type VI amidase effector 4) is a gamma-glutamyl-D,L-endopeptidases that cleaves between D-iGlu2 and mDAP3 within the same peptide stem (Russell et al., 2012; Benz et al., 2013; Zhang et al., 2013) and Tlde1 (type VI L,D-transpeptidase effector 1), which exhibits both L,D-carboxypeptidase and L,D-transpeptidase D-amino acid exchange activity, cleaving between mDAP3 and D-Ala4 of the acceptor tetrapeptide stem or replacing the D-Ala4 by a noncanonical D-amino acid, respectively (Sibinelli-Sousa et al., 2020).\n\nHerein we report the characterization of the SPI-22 T6SS of Salmonella bongori that displays antibacterial activity, and of a group of antibacterial effectors secreted by this system that contain a VRR-Nuc (virus-type replication-repair nuclease) domain (Kinch et al., 2005; Iyer et al., 2006), which has never been reported to play a role in biological conflicts \u2013 named type VI effector VRR-Nuc 1\u20134 (TseV1\u20134). TseV1\u20134 are encoded next to DUF3396-containing proteins, which function as immunity proteins (TsiV1\u20134) specific to each effector. Phylogenetic analysis revealed that TseVs effectors form a group with other antibacterial effectors belonging to the PD-(D/E)xK phosphodiesterase superfamily. This toxic clade is phylogenetically related to enzymes containing the VRR-Nuc domain involved in DNA repair and metabolism. TseV2 and TseV3 are toxic in E. coli, induce DNA double-strand breaks and activate the SOS response. TseV3 is a Mn2+-dependent nuclease that specifically cleaves Y-shaped DNA substrates resembling replication forks or transcription bubbles but not linear ssDNA or dsDNA. Our crystal structure of the TseV3:TsiV3 complex reveals that the immunity protein likely impairs effector toxicity by interacting with and occluding its DNA-binding site. Our results provide mechanistic knowledge about a new group of antibacterial toxins that coopted the VRR-Nuc domain for a previously undescribed role in bacterial antagonism, and further reveal the mode of neutralization via specific immunity protein complexation.\n\n## Results\n\n### The SPI-22 T6SS of S. bongori has antibacterial activity\n\nThe SPI-22 T6SS of S. bongori is phylogenetically related to the HSI-III (Hcp secretion island III) T6SS of P. aeruginosa (amino acid similarity ranging from 26% to 80%), and the CTS2 (Citrobacter rodentium T6SS cluster 2) of C. rodentium (amino acid similarity ranging from 63% to 93%) (Petty et al., 2010; Fookes et al., 2011; Figure 1A). Besides the structural T6SS components encoded within SPI-22, the genome of S. bongori NCTC 12419 encodes several orphan proteins comprising two VgrG (SBG_2715, SBG_3770), four Hcp (SBG_0599, SBG_3120, SBG_3143, SBG_3925), three DUF4150/PAAR-like proteins (SBG_1846, SBG_2718, SBG_2955), two adaptors containing DUF2169 (SBG_1847, SBG_2721), and one adaptor with DUF1795 (SBG_3173) (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig1-v2.jpg)\n\n**Figure 1.:** (A) Comparison between the SPI-22 T6SS of S. bongori with the systems of C. rodentium and P. aeruginosa. The T6SS proteins forming the three subcomplexes are in colors: membrane components (orange), sheath and inner tube (blue), and baseplate and spike components (green). (B) Representation of the circular genome of S. bongori with T6SS components highlighted: the structural cluster is marked by a black line; VgrG proteins are represented by green lines; Hcps are in blue; adaptor proteins are in orange; and PAAR or PAAR-like proteins are in red. TseV1, TseV2, and TseV3 fused to PAAR-like domain are also in red, and TseV4 is in gray. (C) Bacterial competition assays between S. bongori WT, \u0394tssB, or \u0394tssB complemented with pFPV25.1 tssB against E. coli in LB agar incubated for 24 hr. The prey recovery rate was calculated by dividing the colony-forming unit (CFU) counts of the output by the input. Data represent the mean \u00b1 standard deviation (SD) of six independent experiments and were analyzed through comparison with WT that were normalized to 1. One-way analysis of variance (ANOVA) followed by Dunnett\u2019s multiple comparison test. ***p < 0.01 and ns (not significant).\n\nTo analyze whether S. bongori SPI-22 T6SS has antibacterial activity, we performed bacterial competition assays using the wild-type (WT) or T6SS null mutant (\u0394tssB/SBG_1238) strains as attacker cells, and E. coli K12 W3110 as prey. Results showed that the prey recovery rate was higher when coincubation was performed with \u0394tssB compared to the WT (Figure 1C). In addition, competition with a \u0394tssB strain complemented with a plasmid expressing TssB restored the WT phenotype (Figure 1C). These results show that the SPI-22 T6SS of S. bongori is active in the conditions tested and contributes to interbacterial antagonism, thus priming investigation to further characterize this activity.\n\n### TseV2 and TseV3 are antibacterial SPI-22 T6SS effectors\n\nAfter verifying that the SPI-22 T6SS has antibacterial activity, we set out to identify the effectors contributing to the antagonistic effect. Initially, we performed in silico analysis using Bastion6 (Wang et al., 2018) to evaluate several candidates (10 genes up- and downstream of all T6SS components) (Figure 1B) for their probability of being a T6SS effector (cutoff score \u22650.5) (data not shown). Two candidates called our attention: SBG_2718 (TseV1) and SBG_2723 (TseV2), which contain an N-terminal PAAR-like domain and a C-terminal VRR-Nuc domain (Figure 2A; Kinch et al., 2005; Iyer et al., 2006). Both putative effectors are encoded next to pairs of genes encoding DUF3396-containing proteins that resemble putative immunity proteins: SBG_2719/TsiV1.1 and SBG_2720/TsiV1.2, and SBG_2724/TsiV2.1 and SBG_2725/TsiV2.2 (Figure 2A). Additional BLASTP searches in the genome of S. bongori identified two extra VRR-Nuc-containing proteins (SBG_1841/TseV3 and SBG_1828/TseV4), but only one of them encodes an N-terminal PAAR-like domain (SBG_1841). Similarly, SBG_1828 and SBG_1841 are encoded upstream of a DUF3396-containing protein (SBG_1829/TsiV4 and SBG_1842/TsiV3) (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig2-v2.jpg)\n\n**Figure 2.:** (A) Scheme of the genomic region containing VgrGs and TseV/TsiV effector/immunity pairs. VRR-Nuc domain (red), PAAR-like domain (dark green), VgrG (light green), and DUF3396-containing immunities (blue). (B) E. coli toxicity assay. Serial dilutions of E. coli containing pBRA and pEXT22 constructs, as indicated, spotted onto LB agar plates, and grown for 20 hr. Images are representative of three independent experiments. (C) Growth curve of E. coli harboring pBRA TseV2 or TseV3 before and after toxin induction by the addition of 0.2% l-arabinose (arrow). Results represent the mean \u00b1 standard deviation (SD) of three independent experiments performed in duplicate. **p < 0.01 (Student\u2019s t-test). (D) Time-lapse microscopy of E. coli carrying either pBRA TseV2 or pBRA TseV3 grown on LB agar pads containing either 0.2% d-glucose (repressed) or 0.2% l-arabinose (induced). Scale bar: 5 \u00b5m. Timestamps in hh:mm. (E) Bacterial competition assay using S. bongori WT, \u0394tssB, or \u0394tssB complemented with pFPV25.1 tssB against S. bongori \u0394tseV2/tsiV2.1/tsiV2.2 or \u0394tseV3/tsiV3 complemented or not with pFPV25.1 tsiV2.1 or pFPV25.1 tsiV3. Strains were coincubated for 20 hr (\u0394tseV2/tsiV2.1/tsiV2.2) or 6 hr (\u0394tseV3/tsiV3) prior to measuring CFU counts. The prey recovery rate was calculated by dividing the CFU of the output by the input. Data represent the mean \u00b1 SD of six independent experiments and were analyzed through comparison with WT that were normalized to 1. One-way analysis of variance (ANOVA) followed by Dunnett\u2019s multiple comparison test. **p < 0.01, and ***p < 0.001. (F) Bacterial competition assay using S. bongori WT, \u0394tssB, \u0394vgrG1, \u0394vgrG2, or \u0394vgrG3 against S. bongori \u0394tseV2/tsiV2.1/tsiV2.2 or \u0394tseV3/tsiV3. Strains were coincubated for 20 hr prior to measuring CFU counts. Prey recovery rate was calculated as in (E). Data represent the mean \u00b1 SD of six independent experiments. One-way ANOVA followed by Dunnett\u2019s multiple comparison test. *p < 0.05, **p < 0.01, and ns (not significant).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Only one specific immunity could abrogate the toxic effect. Images are representative of three independent experiments.\n\nTo analyze whether these proteins comprise four effector\u2013immunity pairs, we cloned these genes into compatible vectors under the control of different promoters. To evaluate the toxicity of TseV1\u20134 upon expression in E. coli, the C-terminal regions of TseV1\u20133 and the full-length TseV4 were cloned into the pBRA vector under the control of the PBAD promoter (inducible by l-arabinose and repressed by d-glucose). The putative immunity proteins were cloned into the pEXT22 vector under the control of the PTAC promoter, which is inducible by IPTG (isopropyl \u03b2-D-1-thiogalactopyranoside). E. coli strains carrying different combinations of pBRA and pEXT22 were serially diluted and spotted onto LB agar plates containing either 0.2% d-glucose or 0.2% l-arabinose plus 200 \u03bcM IPTG (Figure 2B). Results showed that TseV2 and TseV3 are toxic in the cytoplasm of E. coli, whereas TseV1 and TseV4 do not confer toxicity (Figure 2B). Coexpression of TseV2 with either TsiV2.1 or TsiV2.2 revealed that only the first immunity protein neutralizes TseV2 toxicity (Figure 2B). Similarly, the toxic effect of TseV3 can be neutralized by coexpression with TsiV3 (Figure 2B). Coexpression of TseV2 and TseV3 with all combinations of immunity proteins (TsiV1.1, TsiV1.2, TsiV2.1, TsiV2.2, TsiV3, and TsiV4) revealed that the effectors are neutralized only by the specific cognate immunity protein (Figure 2\u2014figure supplement 1). The effect of TseV2 and TseV3 on cell growth was also analyzed in liquid media by measuring the OD600 nm of E. coli carrying pBRA TseV2 or TseV3 (Figure 2C). Under these conditions, bacteria grew normally in media containing d-glucose; but once l-arabinose was added, the culture stopped growing, and the OD600 nm stabilized (Figure 2C).\n\nWe performed time-lapse microscopy to evaluate growth and morphology of individual E. coli cells harboring pBRA TseV2 or TseV3. Bacteria grew normally when incubated in LB agar pads containing 0.2% d-glucose (repressed) over a time frame of 8 hr (Figure 2D, Figure 2\u2014video 1, and Figure 2\u2014video 3). However, in the presence of 0.2% l-arabinose (induced) bacteria did not grow and remained mostly morphologically unaltered \u2013 displaying a modest increase in cell length (Figure 2D, Figure 2\u2014video 2, and Figure 2\u2014video 4).\n\nTo verify whether TseV2 and TseV3 are SPI-22 T6SS substrates, we performed bacterial competition assays using S. bongori WT or \u0394tssB (attacker) versus S. bongori lacking either TsiV2.1/2.2 (\u0394tseV2/tsiV2.1/2.2) or TsiV3 (\u0394tseV3/tsiV3) as prey (Figure 2E). Results demonstrated that the prey recovery rate was higher when prey cells were coincubated with \u0394tssB compared to WT (Figure 2E). Complementation of preys with a plasmid encoding either TsiV2.1 or TsiV3 increased the prey recovery rate, showing that prey became immune to the TseV2- and TseV3-induced toxicity (Figure 2E). These results confirm that TseV2 and TseV3 are antibacterial effectors secreted by the SPI-22 T6SS.\n\nAs TseV2 and TseV3 contain an N-terminal PAAR-like domain, which interacts with VgrG during T6SS assembly and effector secretion (Shneider et al., 2013), we decided to determine which of the three VgrG proteins encoded in the S. bongori genome (Figures 1B and 2A) were responsible for the secretion of TseV2 and TseV3. To shed light on this matter, we performed bacterial competition assays using S. bongori WT, \u0394tssB, \u0394vgrG1 (SBG_1246), \u0394vgrG2 (SBG_2715), or \u0394vgrG3 (SBG_3770) (attacker) versus \u0394tseV2/tsiV2.1/2.2 or \u0394tseV3/tsiV3 (prey) (Figure 2F). The prey recovery rate of \u0394tseV2/tsiV2.1/2.2 increased when this strain was coincubated with \u0394vgrG2, suggesting that VgrG2 is responsible for secreting TseV2 into target cells (Figure 2F). Conversely, the prey recovery rate of \u0394tseV3/tsiV3 increased when this strain was coincubated with \u0394vgrG3, suggesting that VgrG3 is responsible for secreting TseV3 into target cells (Figure 2F). VgrG2 and VgrG3 are 96.9% identical in their N-terminal region (VgrG21\u2013565 and VgrG31\u2013545), but display a distinct C-terminal domain with only 26% identity (VgrG2566\u2013709 and VgrG3546\u2013728) (Supplementary file 1), thus suggesting that this region is responsible for cargo selection (Liang et al., 2021). Together, these results show that each effector has its own mechanism of secretion, which is dependent on distinct VgrGs.\n\n### VRR-Nuc-containing effectors are evolutionarily related to Holliday junction resolvases and enzymes involved in DNA interstrand crosslink repair\n\nTseV2 and TseV3 contain a VRR-Nuc domain at their C-terminus, which was initially annotated as DUF994 (Kinch et al., 2005) and later renamed VRR-Nuc due to its association with enzymes linked to DNA metabolism (Iyer et al., 2006). VRR-Nuc-containing proteins are found in a wide range of organisms, including bacteria, bacteriophages, fungi, and eukaryotes (Iyer et al., 2006). Proteins containing this domain comprise a family (PF08774) belonging to the PD-(D/E)xK superfamily, which constitutes a large and functionally diverse group containing representatives involved in DNA replication (Holliday junction resolvases), restriction\u2013modification, repair, and tRNA-intron splicing (Steczkiewicz et al., 2012). Members of this superfamily exhibit low sequence similarity but display a common fold in their enzymatic core (with \u03b11\u03b21\u03b22\u03b23\u03b12\u03b24 topology), which contains conserved residues (Asp, Glu, and Lys) responsible for catalysis (Steczkiewicz et al., 2012).\n\nTo gain insight into the molecular function of TseV2 and TseV3 and understand their phylogenetic relationship, we used TseV1, TseV2, and TseV3 (TseV4 is 79.1% identical to TseV3 and was not used) amino acid sequences as queries in JackHMMER searches (Potter et al., 2018) for four iterations on the NCBI nr database (November 4, 2021) to fetch a total of 2254 sequences with significant similarity (inclusion threshold \u226410\u22129 and reporting threshold \u226410\u22126). Additional JackHMMER searches were performed using selected VRR-Nuc-containing proteins as queries (Bce1019, PmgM, T1p21, KIAA1018, HP1472, and Plu1493) (Iyer et al., 2006), and recently reported bona fide or putative T6SS effectors that also belong to the PD-(D/E)xK superfamily: TseT (Burkinshaw et al., 2018), PoNe (Jana et al., 2019), IdrD-CT (Sirias et al., 2020), TseTBg (Yadav et al., 2021), Aave_0499 (RhsB) (Pei et al., 2022), and TseVPA (Wang et al., 2021). A total of 39,159 sequences were collected. For each JackHMMER dataset, we produced alignments with representatives from clusters formed by sequences displaying 80% coverage and 50\u201370% identity. These alignments were manually inspected, and divergent/truncated sequences were removed. We observed that the \u03b22\u03b23\u03b12\u03b24 region of the enzymatic core was more conserved so we used this region for a new multiple sequence alignment to build a phylogenetic tree using maximum likelihood (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig3-v2.jpg)\n\n**Figure 3.:** (A) Maximum-likelihood phylogenetic tree of VRR-Nuc family members (Bce1019, PmgM, T1p21, KIAA1018, HP1472, and Plu1493) (Iyer et al., 2006) and recently reported bona fide or putative T6SS effectors belonging to the PD-(D/E)xK superfamily (TseT, PoNe, IdrD-CT, TseTBg, Aave_0499, and TseVPA). In the TseV clade (pink) the localization of TseV1 (\u25a1), TseV2 (\u0394), TseV3 (\u25a0), and Plu1493 (\u25ca) are marked. (B) Contextual network representation of domains and the genomic context of proteins belonging to Plu1493-like group (TseV, Aave_0499, IdrD, PoNe). Each circle represents a domain, which is either fused to (solid line) or encoded up- or downstream (dashed line) of the gene of interest (center). Borderless gray circles represent domains related to T6SS; bordered gray circles denote domains associated with a different bacterial secretion system; dashed nodes indicate pre-toxin domains; and light blue circles represent immunity proteins. (C) Sequence logo from the conserved \u03b22\u03b23\u03b12\u03b24 of the PD-(D/E)xK enzymatic core from all clades shown in (A). The arrow indicates conserved aspartic acid that was mutated in (D). (D) E. coli toxicity assay. Serial dilution of E. coli containing pBRA and pEXT22 constructs, as indicated, spotted onto LB agar plates and grown for 20 hr. Images are representative of three independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** All clades present enough similarity to be clustered together, while the homologs of P. aeruginosa TseT and B. gladioli TseTBg differ from the other models.\n\nThe resulting tree is composed of nine main clades, with five of these clades comprising PmgM, T1p21, KIAA1018, Bce1019, and HP1472 that reproduce the classification proposed by Iyer et al., 2006 in which each of these clades constitutes a subfamily of the VRR-Nuc family (Figure 3A, gray; Supplementary file 2). Bce1019 subfamily contains the endonuclease I from Bacteriophage T7 (PDB 1M0D) (Hadden et al., 2002) and the transposon Tn7 encoded nuclease protein TnsA from E. coli (PDB 1F1Z) (Hickman et al., 2000) (PDB 1T0F) (Ronning et al., 2004). The PmgM subfamily contains a nuclease with the same name from phage P1 (Iyer et al., 2006). The T1p21 subfamily contains proteins encoded upstream of helicases (Iyer et al., 2006). The KIAA1018 group includes the human Fanconi anemia-associated nuclease 1 (FAN1) (PDB 4REA and PDB 4RIA) (Kratz et al., 2010; Liu et al., 2010; MacKay et al., 2010; Smogorzewska et al., 2010; Wang et al., 2014; Zhao et al., 2014) and its bacterial homolog PaFAN1 (PDB 4R89), which are involved in DNA interstrand crosslink repair (Gwon et al., 2014; Wang et al., 2014; Zhao et al., 2014). Curiously, antibacterial T6SS effectors formed four groups (Figure 3A, colors) in which TseV2 and TseV3 clustered with Plu1493 (Iyer et al., 2006) and TseVPA (Wang et al., 2021), whereas homologs of Aave_0499 (Pei et al., 2022), IdrD (Sirias et al., 2020), and PoNe (Jana et al., 2019) formed separated clades (Figure 3A, colors; Supplementary file 2). These results indicate that TseV proteins are members of the Plu1493 subfamily (Iyer et al., 2006). Conversely, homologs of TseT were too divergent to be grouped in the phylogenetic tree and impaired its reproducibility, thus indicating that they probably have a distinct evolutionary origin (Figure 3\u2014figure supplement 1; Supplementary file 2).\n\nAll T6SS effectors (TseVs, Aave_0499, IdrD, and PoNe), except for TseT homologs, formed a clade with a bootstrap value higher than 75% (Figure 3A, colors). The genomic context of TseV/Plu1493 homologs is different from the other VRR-Nuc family members (Supplementary file 3). While most of VRR-Nuc members (PmgM, T1p21, KIAA1018, Bce1019, and HP1472) are encoded next to genes involved in DNA metabolism, the gene neighborhood of antibacterial T6SS effectors (TseVs, Aave_0499, IdrD, and PoNe) is enriched in proteins encoding components of the T6SS apparatus, adaptors, and immunity proteins (Figure 3B; Supplementary file 3). In addition, we observed proteins containing domains of other secretion systems involved in biological conflicts, such as CdiB and POTRA (T5SS) and LXG (T7SS) (Figure 3B; Supplementary file 3). Therefore, based on genomic context and biological function, we propose the name Plu1493-like subfamily for the group formed by the clades containing TseVs, Aave_0499, IdrD, and PoNe (Figure 3A, colors).\n\nMultiple amino acid sequence alignments from each clade revealed the conserved residues characteristic of the PD-(D/E)xK superfamily (Figure 3C), which comprise the aspartic acid (D), glutamic acid (E), and lysine (K) that are part of the catalytic site responsible for hydrolyzing phosphodiester bonds (Steczkiewicz et al., 2012). Using this information as a guide, substitution of the conserved aspartic acid for alanine in TseV2 (TseV2D282A) and TseV3 (TseV3D230A) abrogated toxicity in E. coli (Figure 3D). These results confirm that the enzymatic activity of the VRR-Nuc domain is essential for toxicity.\n\n### TseV2 and TseV3 induce DNA double-strand breaks and activate the SOS response\n\nWe set out to determine whether TseV2 and TseV3 could cause DNA damage by analyzing the activation of the SOS response \u2013 a stress response mechanism induced by the activation of RecA (recombinase protein A) in response to DNA damage (Walker, 1996). E. coli harboring the reporter plasmid pSC101-PrecA::GFP (Ronen et al., 2002), which carries the green fluorescent protein (GFP) under the control of the PrecA promoter, was cotransformed with either pBRA TseV2 or TseV3, or their corresponding catalytic mutants as a control (TseV2D282A and TseV3D230A), and grown in AB media containing either 0.2% d-glucose or 0.2% l-arabinose (Figure 4A, B). We observed an increase in GFP fluorescence when the expression of TseV2 or TseV3 was induced with l-arabinose, indicating the activation of the SOS response (Figure 4A, B). GFP expression levels were confirmed by western blot (Figure 4\u2014figure supplement 1). To further assess the impact of TseV2 and TseV3 on bacterial chromosome stability, we used DAPI (4\u2032,6-diamidino-2-phenylindole) to stain E. coli cells after inducing the expression of TseV2 or TseV3 for 1 hr and evaluated nucleoid integrity by measuring the mean DAPI fluorescence per cell (Figure 4C\u2013F). Cells expressing TseV2 or TseV3 revealed smaller/degraded nucleoids and displayed reduced DAPI fluorescence (Figure 4C\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig4-v2.jpg)\n\n**Figure 4.:** Activation of the SOS response was analyzed using E. coli cells harboring the reporter plasmid pSC101-PrecA::GFP and pBRA TseV2 (A) or pBRA TseV3 (B), which were grown in AB defined media with d-glucose or l-arabinose. Data is the mean \u00b1 standard deviation (SD) of three independent experiments. ***p < 0.001 (Student\u2019s t-test). Bright-field and DAPI images of E. coli cells carrying pBRA TseV2 (C) or pBRA TseV3 (D) grown in the presence of d-glucose (repressed) or l-arabinose (induced). Results are representative images of three independent experiments. (E, F) Quantification of the mean 4\u2032,6-diamidino-2-phenylindole (DAPI) fluorescence per cell of 200 cells. Data correspond to the mean \u00b1 SD of a representative experiment. Scale bar 2 \u03bcm. ***p < 0.001 (Student\u2019s t-test). (G) Representative bright-field and GFP images of E. coli coexpressing GamGFP and pEXT20 TseV2 or pEXT20 TseV3. Double-strand breaks appear as foci of GamGFP. Images are representatives of three independent experiments. Scale bar: 5 \u03bcm. (H) Quantification of the GamGFP foci shown in (G). Data are shown as the mean \u00b1 SD of the three independent experiments. **p < 0.01 (Student\u2019s t-test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig4-figsupp1-v2.jpg)\n\nTo evaluate whether TseV2 and TseV3 were degrading E. coli DNA, we extracted plasmid DNA after inducing the expression of the WT or catalytic mutant versions. Results revealed a modest degradation in the WT compared with the mutant in induced conditions (Supplementary file 4), suggesting that a small number of sites were being cleaved. To increase sensitivity and detect these small number of cleavage sites, we used a reporter double-strand break assay that employs E. coli strain SMR14354 encoding a chromosomal GFP fused to the Gam protein from bacteriophage Mu (GamGFP) under the control of the Ptet promoter (induced by tetracycline) (Shee et al., 2013). The Gam protein binds with high affinity and specificity to DNA double-strand ends, thus inducing the formation of GFP foci at specific sites (Shee et al., 2013). E. coli SMR14354 carrying an empty pEXT20 plasmid or encoding either TseV2 or TseV3 were grown with 0.2% d-glucose (repressed) or with 200 \u03bcM IPTG (induced) and examined by fluorescence microscopy (Figure 4G, H). Cells carrying an empty plasmid revealed an even distribution of GamGFP in the cytoplasm, with only a few foci representing spontaneous double-strand breaks (Figure 4G, H). Conversely, E. coli expressing either TseV2 or TseV3 revealed several intense GFP foci in more than 80% and 75% of cells, respectively (Figure 4G, H). The expression of the catalytic mutants TseV2D282A and TseV3D230A did not induce GFP foci formation, indicating that the observed phenotype is specific to the effector\u2019s enzymatic activity (Figure 4G, H). Interestingly, the expression of TseV2 leads to the formation of fewer intense foci per cell, whereas the expression of TseV3 induces the development of several less intense foci per cell (Figure 4G, H), suggesting that TseV3 might cleave DNA at more sites than TseV2. Together, these results suggest that TseV2 and TseV3 cause target cell death by inducing DNA double-strand breaks.\n\n### TseV3 is a Mn2+-dependent structure-specific nuclease\n\nVRR-Nuc-containing enzymes have been shown to be specific for certain DNA structures rather than sequences, both in eukaryotes (Kratz et al., 2010; Liu et al., 2010; MacKay et al., 2010; Smogorzewska et al., 2010) and prokaryotes (Gwon et al., 2014; Pennell et al., 2014). In these cases, the prefered DNA structure is a 5\u2032 flap (Gwon et al., 2014) \u2013 a Y-shaped DNA form in which one of the arms (5\u2032) is a single strand and the other (3\u2032) is a double strand. In both human FAN1 and P. aeruginosa PaFAN1, the 5\u2032 flap is cleaved a couple of nucleotides (1\u20135 nt) downstream from the arms junction and later the opposite strand is cleaved creating a double-strand end (Gwon et al., 2014; Pennell et al., 2014). Besides endonuclease activity, FAN1 enzymes also display 5\u2032\u20133\u2032 exonuclease activity (Kratz et al., 2010; Gwon et al., 2014).\n\nTo confirm whether TseVs were able to cleave DNA in vitro, we coexpressed and purified the complex TseV3:TsiV3, and after refolding of TseV3, performed enzymatic assays with an array of different oligonucleotide structures resembling intermediates of replication (splayed arm, 5\u2032 flap, 3\u2032 flap, and three-way junction) (Figure 5\u2014figure supplement 1). We used oligonucleotide sequences that were first described in the characterization of human FAN1 (Kratz et al., 2010), but in our case oligonucleotides were labeled with the fluorophore FAM (6-carboxyfluorescein) at the 5\u2032 end (oligonucleotide F9). Results revealed that TseV3 preferentially cleaves the splayed arm substrate, with some minor activity on the 3\u2032 flap substrate (Figure 5A). The activity was specific as no degradation was detected for the catalytic mutant TseV3D230A (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig5-v2.jpg)\n\n**Figure 5.:** (A) In vitro enzymatic assay with recombinant TseV3 or TseV3D230A coincubated with different DNA substrates at 37\u00b0C for 1 hr. Oligonucleotide F9 was labeled with FAM at the 5\u2032 end (green circle). Image is representative of four independent experiments. (B) TseV3 was coincubated with splayed arm substrate at 37\u00b0C for 1 hr with 5 mM of the indicated cofactors. Image is representative of three independent experiments. (C) Time-course degradation of splayed arm by TseV3. Images are representative of three independent experiments.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) of recombinant proteins during purification steps to obtain purified protein for enzymatic assays. First affinity chromatography with noninduced culture extracts (NI), induced (I), and eluted fractions; size-exclusion chromatography (SEC) with eluted fractions; second affinity chromatography of samples after urea denaturation, flow through (FT), and eluted fraction; on the right, purified and refolded proteins TseV3WT and TseV3D230A used for enzymatic assays. (B) DNA substrate sequences with indicated oligonucleotides labeled with FAM at the 5\u2032 end (green). (C) Annealed oligonucleotides visualized on native and denaturing 20% polyacrylamide gel. (D) Time-course degradation of splayed arm by TseV3 overlayed with silver-stained oligonucleotide markers.\n\nHuman FAN1 and P. aeruginosa PaFAN1 are metal-dependent nucleases that use Mn2+ as a cofactor (Kratz et al., 2010; Gwon et al., 2014). We analyzed the activity of TseV3 on the splayed arm in the presence of MnCl2 and MgCl2, and some inhibitors of metal-dependent nucleases such as the chelating agent EDTA (ethylenediaminetetraacetic acid) and ZnCl2 (Kratz et al., 2010). Results revealed that TseV3 requires Mn2+ as a cofactor, and its activity was inhibited by EDTA and partially affected by Zn2+ (Figure 5B). A time-course experiment revealed the band pattern generated by degradation of the splayed arm substrate containing oligonucleotide F9 with its 5\u2032 labeled with FAM (Figure 5C). The same band pattern is observed from 5 to 60 min of incubation, with a decrease in the intensity of the uncleaved substrate (60-mer) and an increase in the intensity of degraded products (Figure 5C). In agreement with the reported activity of FAN1 and PaFAN1, we observed the appearance of a range of fragments around 35-mer, suggesting that TseV3 cleaves the splayed arm at variable distances after the arms junction (Figure 5C), thus resembling what is observed for PaFAN1 in 5\u2032 flap that cleaves the third to fifth nucleotide downstream from the junction (Gwon et al., 2014). The presence of additional smaller fragments could reflect further endo or exonuclease activities of TseV3 (Figure 5C). Together, these results confirm that TseV3 displays a unique activity and behaves as a structure-specific nuclease.\n\n### TsiV3 interacts with the putative DNA-binding site of TseV3 to neutralize toxicity\n\nTo obtain information about the inhibitory mechanism of TsiV3, we coexpressed it with TseV3 and analyzed the purified complex using size-exclusion chromatography coupled to multiple-angle light scattering (SEC-MALS) (Figure 6\u2014figure supplement 1). The MALS calculated average mass for the complex was 66.4 \u00b1 3.3 kDa, which is close to the sum of the theoretical values of their monomers: 26.8 and 37.4 kDa for 6xHis-TseV3 and TsiV3, respectively. Sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) analysis of the mixture confirmed the presence of 6xHis-TseV3 and TsiV3 (Figure 6\u2014figure supplement 1). These results reveal that TseV3 and TsiV form a 1:1 heterodimeric complex.\n\nWe were able to obtain crystals of the TseV3:TsiV3 complex, which belong to space group P21 and diffracted to a moderate resolution of 4 \u00c5 (Supplementary file 6). Matthews coefficient analysis indicated that two TseV3:TsiV3 complexes would be the most likely composition in the asymmetric unit. We used AlphaFold (Jumper et al., 2021) models of TseV3132\u2013281 and TsiV310\u2013327 for molecular replacement using Phaser (McCoy et al., 2007), which was able to place two copies of each monomer in the asymmetric unit with a final LLG (log-likelihood gain) of 486.87 and TFZ (translation function Z-score) of 12.4 \u2013 with both heterodimeric complexes adopting the same pose (our docked model is available using accession code ma-oyho8 at modelarchive.org). Therefore, the molecular replacement solution using the AlphaFold models most likely represents the correct relative orientation of the two subunits in the TseV3:TsiV3 complex (Figure 6A). Given the relatively low resolution of the X-ray diffraction data, we chose not to refine these models against the processed dataset; however, our molecular replacement solution using the AlphaFold models was confirmed by identical placement using experimental PDB homologs taken from the DALI search described below \u2013 both TsiV and TsiT can be successfully utilized as search models for our experimental data, producing TFZ scores of 8.3 and 9.2, respectively. Attempts to cofold the TseV3 and TsiV3 complex with AlphaFold did not result in the extensive interface we observe in our experimentally docked single models, thus confirming the requirement for data-derived docking.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig6-v2.jpg)\n\n**Figure 6.:** (A) Constrained model of the TseV3:TsiV3 heterodimer with two different views: TsiV3 in blue (I10\u2013D327) nd TseV3 in orange (L134\u2013C289). Models are labeled to assist interpretation. PD-(D/E)xK superfamily conserved residues of TseV3 (D230, D245, and K247) are shown in stick form and colored light gray, confirming that they converge to form a putative consensus active site. (B) Prediction of interface-compromising mutants in the TseV3:TsiV3 heterodimer. TsiV3 (blue) and TseV3 (orange) with putative active sites labeled with asterisk. Residues L131 of TsiV3 and P256 of TseV3 (both in stick form, magenta) form the closest point of contact in the heterodimer and are at the center of a hydrophobic-rich interface. (C) E. coli toxicity assay using cells carrying plasmids with wild-type or point mutations in TsiV3 (L131K) or TseV3 (P256K) as a potential means to destabilize the TseV3:TsiV3 complex interaction. (D) Superimposition of the TseV3:TsiV3 coordinates with those of the PaFAN1:DNA complex (PDB 4R89). PaFAN1 protein in white, DNA duplex in green, and catalytic Mn2+ are depicted as purple spheres. The overlay (right) is presented in the same orientation as the individual complexes: TseV3:TsiV3 (left, catalytic residues in magenta) and PaFAN1:DNA (middle).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82437/elife-82437-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) SEC-MALS analysis shows the formation of a stable complex between TseV3:TsiV3. The line corresponds to the calculated molecular mass. Right panel: Coomassie stained sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) showing the apparent molecular mass of proteins eluted from SEC-MALS peak. (B) SEC showing the formation of a complex between TseV3:TsiV3, TseV3P256K:TsiV3 and TseV3:TsiV3L131K. Right: Coomassie stained SDS\u2013PAGE showing proteins from the central peak.\n\nTsiV3 possesses a central \u03b2-sheet that is flanked by \u03b1-helices on one side and exposed on the other (Figure 6A). This exposed \u03b2-sheet surface of TsiV3 binds to an \u03b1\u2013\u03b2 element of TseV3 that flanks its putative active site (composed of residues D230, D245, and K247) (Figure 6A). In this configuration, the TseV3-interacting \u03b1-helix, which corresponds to the \u03b12 of the classical PD-(D/E)xK \u03b11\u03b21\u03b22\u03b23\u03b12\u03b24 core topology, projects its N-terminus toward the TsiV3 \u03b2-sheet (Figure 6A).\n\nTo validate the accuracy of our TseV3:TsiV3 structural model, we designed point mutations to interfere with the interaction surface between the two proteins without perturbing the active site or its ability to bind DNA. Thus, residue P256 at the N-terminus of \u03b12 of TseV3 was replaced by lysine (TseV3P256K), and residue L131 in the central \u03b2-sheet of TsiV3 was also replaced by lysine (TsiV3L131K) (Figure 6B). Native and mutated versions of the effector and immunity protein were cotransformed in E. coli to analyze toxicity (Figure 6C). Results revealed that TsiV3L131K was unable to neutralize TseV3 toxicity. In addition, the mutated TseV3P256K maintained its enzymatic activity, displaying toxicity in E. coli; however, this mutant was not neutralized by coexpression with the native immunity protein (TsiV3) (Figure 6C). Although point mutations did not completely disrupt effector:immunity complex formation (Figure 6\u2014figure supplement 1), the interference with the interaction was sufficient to prevent neutralization of the effector in toxicity assays (Figure 6C). Together, these results reinforce the accuracy of our model, which is comprised of both experimental constraints and theoretical model components.\n\nSearches for structures similar to TseV3132\u2013281 and TsiV310\u2013327 using the DALI server (Holm, 2020) revealed matches to proteins of related function (a top Z-score of 33.5 for the immunity protein PA0821 PDB:7DRG and TsiV3; and a top Z-score of 3.8 between psNUC PDB:4QBL and TseV3). The modest RMSD (root-mean-square deviation) for the C\u03b1 positions in TseV3 and other VRR-Nuc enzymes indicates that TseV3 represents a variant of the VRR-Nuc fold. Nevertheless, the PD-(D/E)xK consensus catalytic residues are identifiable as the modified sequence MD230IXnD245VK247 in TseV3. These residues are found in positions commensurate with active nucleases of the PD-(D/E)xK superfamily. Accordingly, superimposition of TseV3 with the well-characterized VRR-Nuc member PaFAN1 (PDB 4R89) (Gwon et al., 2014) (clade KIAA1018 in Figure 3A) matches residues D230, D245, and K247 of the former with residues D507, E522, and K524 of the latter (Figure 6D).\n\nPaFAN1 is the bacterial homolog of human FAN1 (MacKay et al., 2010), which is involved in the repair of DNA interstrand crosslinks. Human FAN1 is comprised of four domains: ubiquitin-binding zinc (UBZ); SAF-A/B, Acinus, and PIAS (SAP); tetratricopeptide repeat (TPR); and VRR-Nuc. Conversely, PaFAN1 lacks the UBZ domain and contains an uncharacterized N-terminal domain (NTD), followed by SAP, TPR, and VRR-Nuc (Iyer et al., 2006; Gwon et al., 2014). The structure of PaFAN1 has been solved in complex with a 5\u2032 flap (PDB 4R89) (Figure 6D, middle). As the catalytic residues of TseV3 align with those of PaFAN1, we used the structure of the latter as a guide to analyze the likely mechanism by which TsiV3 may neutralize TseV3 activity. Comparison between the PaFAN1:DNA and TseV3:TsiV3 complexes reveals that the path of the DNA substrate is potentially incompatible with the presence of TsiV3 (Figure 6D). Hence, assuming the mode of substrate recognition is similar between PaFAN1 and TseV3, this result suggests that the binding of TsiV3 sterically blocks the toxin active site. In our model of the complex, TsiV3 occlusion of the TseV3 active site would be enabled by a TsiV3 loop, which projects into the putative TseV3 DNA-binding pocket (Figure 6A, D).\n\n## Discussion\n\nBacterial antagonistic strategies targeting nucleic acids are very effective as these components are critical for life. In this study, we characterized a group of effectors containing the VRR-Nuc domain, which comprise the first example of effectors with a structure-specific nuclease activity. This domain has not previously been reported to be used in biological conflicts (Zhang et al., 2012), but recently was suggested to work as a T6SS effector due to its localization next to a PAAR protein in P. aeruginosa (Wang et al., 2021) \u2013 for consistency we decided to keep the name TseV for this group of effectors. Proteins containing the VRR-Nuc domain comprise a family (Iyer et al., 2006) belonging to the PD-(D/E)xK superfamily, which contain a conserved enzymatic core composed by \u03b11\u03b21\u03b22\u03b23\u03b12\u03b24 (Steczkiewicz et al., 2012). The conserved catalytic residues (D, E, and K) are located in the central \u03b22\u03b23-sheet, while the \u03b11-helix is associated with the formation of the active site and \u03b12-helix with substrate binding (Steczkiewicz et al., 2012). Curiously, S. bongori encodes four TseV homologs: TseV2 and TseV3 are toxic in E. coli, whereas TseV1 and TseV4 are not toxic (Figure 2). Based on what is known about the catalytic mechanism of PD-(D/E)xK nucleases, we hypothesize that the lack of \u03b12- and \u03b11-helix in TseV1 and TseV4, respectively, might explain the lack of toxicity (Supplementary file 5). Another curiosity is the presence of two homologs of the DUF3396 immunity genes downstream of both TseV2 and TseV1 (Figure 2A). Such genomic organization is also conserved in other bacterial species like Photorhabdus thracensis (VY86_01065, VY86_01040), Photorhabdus asymbiotica (PAU_03539, PAU_03660) (Enterobacterales), Marinobacter nauticus (MARHY2492) (Pseudomonadales), and Herbaspirillum huttiense (E2K99_00955) (Burkholderiales). The fact that only one immunity protein (TsiV2.1) can neutralize the effector (TseV2) makes us wonder about the role of the additional immunity protein gene \u2013 and why such genomic context is conserved in other bacterial species (Supplementary file 3). One possibility is that the extra immunity protein could regulate the effector at the transcriptional level as has been reported for the immunity protein TsiTBg known to regulate a different PD-(D/E)xK effector (TseTBg) (Yadav et al., 2021). It is worth mentioning that such genomic organization for immunity proteins have been reported for the SUKH superfamily of immunity proteins, which are encoded next to various nucleases (Zhang et al., 2011).\n\nThe complexity of the PD-(D/E)xK superfamily and the rapid evolution of polymorphic toxins make it difficult to categorize antibacterial effectors belonging to this group. However, our phylogenetic analysis was able to confidently group VRR-Nuc-containing effectors into one clade (TseV) and show that this group is different from the clades formed by the homologs of additional T6SS effectors (Aave_0499, IdrD, and PoNe) (Figure 3). Although proteins belonging to clades Aave_0499, IdrD, and PoNe are not recognized by the Pfam model of VRR-Nuc, these proteins share similar genetic architectures concerning domain fusions and gene vicinity (Figure 3B); therefore, we decided to call this larger group Plu1493-like subfamily to respect the original nomenclature proposed by Iyer et al., 2006.\n\nThe enzymatic activity of proteins belonging to the PD-(D/E)xK superfamily is quite diverse, but we were able to narrow down the possibilities and reveal that TseV3 is a structure-specific nuclease that retains the peculiar activity displayed by their related homologs containing the VRR-Nuc domain that work in DNA interstrand crosslink repair (FAN1 and PaFAN1); however, TseV3 diverged in terms of substrate specificity and preferentially cleaves splayed arms instead of 5\u2032 flaps. Given the biochemical evidence suggesting that TseV3 cleaves splayed arms, we hypothesize that TseV3 acts on replication forks or transcription bubbles of target cells. The effector activity could be directly responsible for creating the double-strand breaks detected in the GamGFP reporter assay, which can detect up to a four-base single-strand DNA overhang (Akroyd and Symonds, 1986; Shee et al., 2013); or its activity on replication forks could promote the collapse of the replication machinery, thus inducing double-strand breaks (Kuzminov, 1999).\n\nT6SSs effector\u2013immunity complexes are related to type II toxin\u2013antitoxin (TA) systems, which play several roles in bacterial physiology ranging from genomic stabilization and abortive phage infection to stress modulation and antibiotic persistence (Fraikin et al., 2020). Most T6SS immunity proteins described to date bind to effectors to regulate their enzymatic activity (Benz et al., 2012; Benz et al., 2013; Dong et al., 2013; Li et al., 2013; Lu et al., 2014; Robb et al., 2016). An exception is Tri1 (type VI secretion ADP-ribosyltransferase immunity 1) from Serratia proteamaculans, which exhibits two modes of inhibition: active site occlusion and enzymatic removal of a post-translational modification (Ting et al., 2018). The neutralization mechanism of TsiT, which counteracts the PD-(D/E)xK effector TseT from P. aeruginosa, was also proposed to be different: TsiT interferes with the effector oligomerization state and hinders its nuclease activity (Wen et al., 2021). Our structural model of the TseV3:TsiV3 complex revealed that TsiV3 \u03b2-sheet binds to the \u03b12-helix of TseV3, which is involved in DNA binding in other PD-(D/E)xK members (Steczkiewicz et al., 2012). In addition, the superposition of the TseV3:TsiV3 complex with the structure of PaFAN1 bound to DNA reinforces the hypothesis that TsiV3 likely occludes the substrate-binding site of TseV3.\n\nThis work adds to the diversity of antibacterial weapons, placing the structure-specific nucleases from the VRR-Nuc family within the remit of antibacterial effectors. Knowledge about the phylogeny and mechanism of action of this group of effectors will be important in interpreting its function in other bacterial species, including the requirements of neutralization by very specific immunity pairings.\n\n## Materials and methods\n\n### Bacterial strains and growth conditions\n\nA list of bacterial strains used in this work can be found in Supplementary file 7. Strains were grown at 37\u00b0C in Lysogeny Broth (10 g/l tryptone, 10 g/l NaCl, 5 g/l yeast extract) under agitation. Cultures were supplemented with antibiotics in the following concentration when necessary: 50 \u03bcg/ml kanamycin, 100 \u03bcg/ml ampicillin, and 50 \u03bcg/ml streptomycin.\n\n### Cloning and mutagenesis\n\nPutative effectors SBG_1828, SBG_1841, SBG_2718, and SBG_2723 were amplified by PCR and cloned into pBRA vector under the control of PBAD promoter (Souza et al., 2015). Immunity proteins SBG_1828, SBG_1842, SBG_2719, SBG_2720, SBG_2724, and SBG_2725 were cloned into pEXT22 under the control of PTAC promoter (Dykxhoorn et al., 1996). TseV2 and TseV3 were cloned in the pEX20 vector under the control of PTAC promoter (Dykxhoorn et al., 1996) for GamGFP assays. For complementation, SBG_1238 (TssB), SBG_1842 (TsiV3), and SBG_2724 (TsiV2.1) were cloned into pFPV25.1 by replacing the GFP mut3 coding region for the genes of interest (Valdivia and Falkow, 1996). Point mutations were created using QuikChange II XL Site-Directed Mutagenesis Kit (Agilent Technologies) and pBRA TseV2 and pBRA TseV3 plasmids as templates. S. bongori mutant strains were constructed by \u03bb-Red recombination engineering using a one-step inactivation procedure (Datsenko and Wanner, 2000). All constructs were confirmed by sequencing.\n\n### Interbacterial competition assay\n\nBacterial competition assays were performed using S. bongori (WT, \u2206tssB, \u2206tseV2/tsiV2.1/tsiV2.2, or \u2206tseV3/tsiV3) as attackers, and E. coli K-12 W3110 carrying pEXT22 KmR as prey. Overnight cultures of the attacker and prey cells were subcultured in LB (1:30) until reaching OD600 nm 1.6, then adjusted to OD600 nm 0.4 and mixed in a 10:1 ratio (attacker:prey), 5 \u03bcl of the mixture were spotted onto 0.22-\u03bcm nitrocellulose membranes (1 \u00d7 1 cm) and incubated on LB agar (1.5%) at 37\u00b0C for the indicated periods. Membranes containing the bacterial mixture were placed on 1.5 ml tubes containing 1 ml of LB, homogenized by vortex, serially diluted, and plated on selective plates containing antibiotics. The prey recovery rate was calculated by dividing the CFUs (colony-forming units) counts of the output by the CFU of the input.\n\n### E. coli toxicity assays\n\nOvernight cultures of E. coli DH5\u03b1 (LB with 0.2% d-glucose) carrying effectors (in pBRA) and immunity proteins (in pEXT22) were adjusted to OD600 nm 1, serially diluted in LB (1:4) and 5 \u03bcl were spotted onto LB agar plates containing either 0.2% d-glucose or 0.2% l-arabinose plus 200 \u03bcM IPTG \u2013 both supplemented with streptomycin and kanamycin \u2013 and incubated at 37\u00b0C for 20 hr. For growth curves, overnight cultures of E. coli carrying pBRA TseV2 or TseV3 were inoculated in LB (1:50) with 0.2% d-glucose and grown at 37\u00b0C (180 rpm) for 1.5 hr. Next, media was replaced with either fresh warm LB containing 0.2% d-glucose or 0.2% l-arabinose.\n\n### Time-lapse microscopy\n\nFor time-lapse microscopy, LB agar (1.5%) pads were prepared by cutting a rectangular piece out of a double-sided adhesive tape, which was taped onto a microscopy slide as described previously (Bayer-Santos et al., 2019). E. coli DH5\u03b1 harboring pBRA TseV2 or TseV3 were subcultured in LB (1:50) with 0.2% d-glucose until reaching OD600 nm 0.4\u20130.6 and adjusted to OD600 nm 1.0. Cultures were spotted onto LB agar pads supplemented either with 0.2% d-glucose or 0.2% l-arabinose plus antibiotics. Images were acquired every 15 min for 16 hr using a Leica DMi-8 epifluorescent microscope fitted with a DFC365 FX camera (Leica) and Plan-Apochromat \u00d763 oil objective (HC PL APO \u00d763/1.4 Oil ph3 objective Leica). Images were analyzed using FIJI software (Schindelin et al., 2012).\n\n### Bioinformatic analysis\n\nIterative profile searches using JackHMMER (Eddy, 2011) with a cutoff e-value of 10\u22126 and a maximum of four iterations were performed to search a non-redundant (nr) protein database from the National Center for Biotechnology Information (NCBI) (Sayers et al., 2019). Similarity-based clustering of proteins was carried out using MMseqs software (Steinegger and S\u00f6ding, 2017). Sequence alignments were produced with MAFFT (RRID:SCR_011811) local-pair algorithm (Katoh and Standley, 2013), and noninformative columns were removed with trimAl software (RRID:SCR_017334) (Capella-Guti\u00e9rrez et al., 2009). Approximately maximum-likelihood phylogenetic trees were built using FastTree 2 (RRID:SCR_015501) (Price et al., 2010). Sequence logos were generated using Jalview (RRID:SCR_006459) (Waterhouse et al., 2009). HMM models were produced for each sequence alignment and compared against each other with the HH-suite package (RRID:SCR_016133) (Steinegger et al., 2019). Proteins were annotated using the HHMER package (Eddy, 2011) or HHPRED software (RRID:SCR_010276) (S\u00f6ding et al., 2005) and Pfam (RRID:SCR_004726) (Bateman et al., 2004), PDB (Berman et al., 2007), or Scope (Fox et al., 2014) databases. An in-house Python script was used to collect the gene neighborhoods based on information downloaded from the complete genomes and nucleotide sections of the NCBI database (Sayers et al., 2019).\n\nTseV1\u20134 sequence alignments were produced with MAFFT local-pair algorithm (Katoh and Standley, 2013) and analyzed in AilView (Larsson, 2014) to separate the regions of interest. Sequence logos were produced using the Jalview (Waterhouse et al., 2009). Protein structure predictions were performed with ColabFold (Mirdita et al., 2021) and AlphaFold (Jumper et al., 2021), and visualization was performed using Pymol (DeLano, 2002).\n\n### SOS response assays\n\nOvernight cultures of E. coli MG1655 harboring the reporter plasmid pSC101-PrecA::GFP (Ronen et al., 2002) and pBRA TseV2 and TseV2D282A or TseV3 and TseV3D230A were subcultured (1:50) in LB with 0.2% d-glucose and grown at 37\u00b0C until OD600 nm 0.4\u20130.6. Bacteria were harvested and resuspended in AB defined media (0.2% (NH4)2SO4, 0.6% Na2HPO4, 0.3% KH2PO4, 0.3% NaCl, 0.1 mM CaCl2, 1 mM MgCl2, 3 \u03bcM FeCl3) supplemented with 0.2% sucrose, 0.2% casamino acids, 10 \u03bcg/ml thiamine, and 25 \u03bcg/ml uracil (Bayer-Santos et al., 2019). Cells (OD600 nm 1.0) were placed in a black 96-well plate with clear bottom (Costar) with 0.2% d-glucose or 0.2% l-arabinose to a final volume of 200 \u03bcl. GFP fluorescence was monitored in a plate reader SpectraMax Paradigm Molecular Devices for 6 hr at 30\u00b0C.\n\n### DAPI staining\n\nE. coli DH5\u03b1 carrying pBRA TseV2 and TseV3 were subcultured in LB with 0.2% d-glucose (1:50) and grown at 37 \u00b0C (180 rpm) until OD600 nm 0.4\u20130.6. Cells were harvested and resuspended in new media with 0.2% d-glucose or 0.2% l-arabinose and growth for an additional 1 hr. Bacteria were fixed with 4% paraformaldehyde for 15 min on ice, washed in phosphate-buffered saline (PBS) and stained with DAPI (3 \u03bcg/ml) for 15 min at room temperature. Samples were washed once with PBS before transferring 1 \u00b5l of each culture to a 1.5% PBS-agarose pad for visualization. Images were acquired in Leica DMi-8 epifluorescent microscope fitted with a DFC365 FX camera (Leica) and Plan-Apochromat \u00d763 and \u00d7100 oil objectives (HC PL APO \u00d763 and \u00d7100/1.4 Oil ph3 objectives Leica). Images were analyzed using FIJI software (Schindelin et al., 2012). To assess DNA integrity, the mean pixel fluorescence per cell was manually measured from 200 bacteria from different fields from each experiment. The cell area was determined using the bright field, and the mean pixel fluorescence per cell was measured in the DAPI channel subtracting the background.\n\n### DNA double-strand break assay\n\nE. coli SMR14354 containing a chromosomal GamGFP under the control of Ptet promotor (Shee et al., 2013) and harboring an empty pEXT20 or encoding TseV2 or TseV3 or catalytic mutants TseV2D282A or TseV3D230A were subcultured in LB (1:100) with 0.2% d-glucose grown for 1.5 hr at 37\u00b0C (180 rpm) before the induction of GamGFP with 50 ng/ml tetracycline for 2 hr. Bacteria were resuspended in new media with either 0.2% d-glucose or 200 \u03bcM IPTG and grown for 1 hr. One microliter of each culture was spotted onto a 1.5% AB agarose pad. Images were acquired in a Leica DMi-8 epifluorescent microscope fitted with a DFC365 FX camera (Leica) and Plan-Apochromat \u00d7100 oil objective (HC PL APO \u00d7100/1.4 Oil ph3 objective Leica). Images were analyzed using FIJI software (Schindelin et al., 2012). At least 400 bacteria from each experiment were quantified.\n\n### Protein expression and purification\n\nE. coli SHuffle cells carrying pRSFDuet 6xHis-TseV3:TsiV3 were grown in LB supplemented with kanamycin (30\u00b0C, 180 rpm) until OD600 nm 0.4\u20130.6. Expression was induced with 0.5 mM IPTG followed by incubation at 16\u00b0C for 16 hr. Cells were harvested via centrifugation at 9000 \u00d7 g for 15 min, and pellets were resuspended in buffer A (50 mM Tris\u2013HCl pH 7.5, 200 mM NaCl, 5 mM imidazole) and lysed at 4\u00b0C using an Avestin EmulsiFlex-C3 homogenizer. The lysate was collected and centrifuged (48,000 \u00d7 g) for 1 hr at 4\u00b0C. The supernatant was loaded onto a 5-ml HisTrap HP cobalt column (GE Healthcare) equilibrated in buffer A. The column was washed with 10 column volumes (CV) of buffer A before running an elution gradient of 0\u201350% buffer B (50 mM Tris\u2013HCl pH 7.5, 200 mM NaCl, 500 mM imidazole) over 10 CV, followed by a final 10 CV wash with 100% buffer B. The presence of TseV3:TsiV3 was confirmed by SDS\u2013PAGE of eluted fractions. TseV3:TsiV3 was concentrated using a Vivaspin spin-concentrator and further purified by size-exclusion chromatography on a Superdex 200 26/60 column (GE Healthcare) equilibrated in 50 mM Tris\u2013HCl pH 7.5, 150 mM NaCl.\n\nSEC-MALS analyses were used to determine the molar mass of the TseV3\u2013TsiV3 complex (concentration 3.2 mg/ml). Protein samples (400 \u03bcl injection volume) were separated using a Superdex 200 10/300 column (GE Healthcare) equilibrated with buffer (50 mM Tris\u2013HCl pH 7.5, 20 mM NaCl) coupled to a miniDAWN TREOS multiangle light scattering system and an Optilab rEX refractive index detector. Data analysis was performed using the Astra Software package version 7.1 (Wyatt TechnologyCorp). Molecular mass was calculated assuming a refractive index increment dn/dc = 0.185 ml/g (Wen et al., 1996). Fractions were analyzed in SDS\u2013PAGE to confirm protein molecular weight.\n\nFor enzymatic assays, E. coli BL21(DE3) carrying pRSFDuet 6xHis-TseV3:TsiV3 or 6xHis-TseV3D230A:TsiV3 were grown in LB supplemented with kanamycin (37\u00b0C, 180 rpm) until OD600 nm 0.6. Protein expression was induced with 200 \u00b5M IPTG at 18\u00b0C for 16 hr. Cells were harvested at 9000 \u00d7 g for 15 min, pellets were resuspended in buffer A (50 mM Tris\u2013HCl pH 7.5, 200 mM NaCl, 5 mM imidazole) and lysed at 4\u00b0C using an Avestin EmulsiFlex-C3 homogenizer. The lysate was centrifuged at 48,000 \u00d7 g for 45 min at 4\u00b0C, and the supernatant loaded onto a 5-ml HisTrap HP column (GE Healthcare) equilibrated in buffer A. The column was washed with 10 CV of buffer A before elution with 5%, 10%, 15%, 20%, and 50% of buffer B (50 mM Tris\u2013HCl pH 7.5, 200 mM NaCl, 500 mM imidazole). TseV3:TsiV3 complexes were concentrated using a Vivaspin spin-concentrator and further purified by size-exclusion chromatography at 4\u00b0C on a Superdex 75 16/600 column (GE Healthcare) equilibrated in 25 mM Tris\u2013HCl pH 7.5, 50 mM NaCl, and 5% glycerol. Eluted complexes were denatured in 6 M urea at 4\u00b0C for 16 hr, then loaded onto a 5 ml HisTrap column to remove the immunity protein (the same buffers were used but containing 6 M urea). The pooled protein fractions containing only 6xHis-TseV3 were concentrated to 0.2\u20130.7 g/l and diluted drop wise into 1 l of refolding buffer (50 mM Tris\u2013HCl pH 7.5, 200 mM NaCl, 5% glycerol) using a peristaltic pump at 4\u00b0C under constant stirring. The refolded TseV3 was finally applied onto 5 ml HiTrap column to concentrate.\n\n### Nuclease activity\n\nFor in vitro biochemical assays, oligonucleotides\u2019 sequences were retrieved from Kratz et al., 2010; Figure 5\u2014figure supplement 1. PAGE purified DNA oligonucleotides were purchased from Thermo Fisher Scientific, in which F9 was labeled with FAM (6-Carboxyfluorescein) at the 5\u2032 end. Oligonucleotides were annealed by mixing in 1:3 ratio F9-FAM and additional oligonucleotides (400:1200 nM) in buffer containing 25 mM Tris\u2013HCl (pH 7.5), 50 mM NaCl, and heated for 5 min at 95\u00b0C prior to slow cooling to room temperature. Annealed substrates were checked in a native 20% polyacrylamide gel separated in TBE (Tris/borate/EDTA) buffer, visualized in a Bio-Rad ChemiDoc Universal Hood III Gel Documentation System with Image Lab software.\n\nFor the endonuclease assay, 80 nM of labeled substrates were incubated with 800 nM of enzyme (TseV3WT or TseV3D230A) in 25 mM Tris\u2013HCl (pH 7.5), 50 mM NaCl, BSA 0.1 mg/ml and 5 mM MnCl2 at final volume of 10 \u00b5l for 1 hr at 37\u00b0C. Reactions were stopped with 10 \u00b5l of stop buffer (50% formamide, 30 mM EDTA, 6% glycerol, 0.25% bromophenol blue), heated for 10 min at 95\u00b0C and separated on a 20% denaturing polyacrylamide gel with 7 M urea in TBE with warm buffer (50\u201360\u00b0C). Gels were visualized in a Bio-Rad ChemiDoc Universal Hood III Gel Documentation System with Image Lab software. To test the cofactors, reactions were carried as described before, but using only the splayed arm substrate and with the addition of 5 mM EDTA, 5 mM ZnCl2 or 5 mM MgCl2 as indicated. Time-course degradation was carried out with 160 nM of labeled splayed arm substrate preincubated with 1600 nM of TseV3WT for 10 min at 37\u00b0C in 25 mM Tris\u2013HCl (pH 7.5), 50 mM NaCl, and BSA 0.1 mg/ml to allow binding to occur. The reaction was started by the addition of 5 mM MnCl2 and stopped with stop buffer at the indicated time-points. Samples were heated for 10 min at 95\u00b0C and run on a denaturing 20% polyacrylamide gel with oligonucleotides of known sizes as markers (Figure 5\u2014figure supplement 1) and visualized in a Bio-Rad ChemiDoc Universal Hood III Gel Documentation System with Image Lab software. The same gel was also silver stained to allow visualization of the markers. The ssDNA substrate used as control was a 59mer poly-T with a 5\u2032-FAM to prevent the formation of secondary structures, which could be recognized by the enzyme.\n\nFor in vivo analysis of nuclease activity, E. coli DH5\u03b1 harboring pBRA TseV2WT, TseV2D282A, and TseV3WT or TseV3D230A were subcultured in LB with 0.2% d-glucose (1:50) and grown at 37\u00b0C (180 rpm) until OD600 nm 0.4\u20130.6. Cells were harvested and resuspended in new media with 0.2% l-arabinose and growth for an additional 1 or 2 hr. Plasmids were extracted from 4 ml of culture with OD600 nm adjusted to 1 with GeneJET Plasmid Miniprep Kit (#K0503 Thermo Fisher Scientific) and separated on 1% agarose gel stained with Syber Safe using GeneRuler 1 kb (#SM0311 Thermo Fisher Scientific) as marker.\n\n### Crystallography and structure determination\n\nTseV3\u2013TsiV3 was concentrated to 18 mg/ml and crystalized in 0.1 M HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid) pH 7.5 and 30% (vol/vol) PEG Smear Low (12.5% [vol/vol] PEG 400, 12.5% [vol/vol] PEG 500, monomethylether, 12.5% [vol/vol] PEG 600, 12.5% [vol/vol] PEG 1000). The crystals were cryoprotected in the mother liquor supplemented with 20% ethylene glycol and subsequently cryo-cooled in liquid nitrogen. X-ray diffraction data were collected at Diamond Light Source on beamline i04, and initial data processing was performed using the xia2-dials pipeline (Winter, 2010; Winter et al., 2018). The data were phased by molecular replacement in Phaser (McCoy et al., 2007) (RRID:SCR_014219) using AlphaFold (Jumper et al., 2021) models of TseV3134\u2013289 and TsiV310\u2013327, which were trimmed to include only the high-confidence regions and omit the N-terminal DUF4150 domain of TseV3.\n\n### Quantification and statistical analyses\n\nStatistical test, number of events, mean values, and standard deviations are reported in each figure legend accordingly. Statistical analyses were performed using GraphPad Prism5 software and significance is determined by the value of p < 0.05.\n",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "1df4ebff-1699-40a7-9d18-d60917a7b305",
+      "submission_id": "b39ccd64-e12a-4f9c-b01b-f50d6031d20d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sophie Helaine, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82437.sa0](https://doi.org/10.7554/eLife.82437.sa0)\n\nThis paper will be of interest to microbiologists studying the molecular mechanisms by which bacteria compete with one another, bacterial physiology and toxins in general. Hespanhol et al. report here the characterization of the antibacterial VRR-Nuc family of type VI secretion system effectors that are endonucleases that display antibacterial activity by inducing DNA double-strand breaks.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sophie Helaine, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82437.sa1](https://doi.org/10.7554/eLife.82437.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors resubmitted a revised version of the paper for consideration. What follows is the authors\u2019 response to the first round of review.]\n\nThank you for submitting the paper \"Antibacterial T6SS effectors with a VRR-Nuc domain induce target cell death via DNA Double-Strand Breaks\" for consideration by eLife. Your article has been reviewed the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation, we have decided that this work will not be considered further for publication by eLife.\n\nSpecifically, this manuscript requires protein biochemistry to be considered a complete and novel study. This effector family has the potential to be interesting but needs evidence from biochemical assays using purified protein to determine what this protein family actually does. If this effector family has a unique biochemistry that is distinct from previously published T6SS DNase effectors, this manuscript would make an excellent contribution.\n\nThe suggested essential revisions are extensive and beyond what is normally considered reasonable. Some of the suggested experiments may already be in progress by the authors. For these reasons, we reject this full submission but leave open the possibility of a re-submission of a novel manuscript that would be considered as revision and for which we would make an effort to be reviewed by the same individuals.\n\nEssential revisions:\n\n1) The lack of protein-nucleic acid biochemistry in this manuscript makes some of the stated conclusions untrue. For example, the title of the manuscript states that these effectors cause DNA double-stranded breaks but there no direct evidence of this. The DAPI staining and SOS reporter data are interesting preliminary data, but protein biochemistry that directly demonstrates the proposed activity by the toxin is lacking. The authors should use purified wild type and catalytic mutant proteins to show DSB formation in vitro.\n\n2) The GamGFP data are interesting but could reflect a downstream consequence of the toxin's activity rather than being directly due the toxin itself. The authors note that they do not see any obvious degradation of genomic DNA (though this data are not shown and probably should be shown). Even if the bacterial chromosome is only hydrolyzed at a small number of sites as the authors propose, this should be obvious by gel electrophoresis. DSB formation in cells should be directly demonstrated.\n\n3) The structural biology section speculates about inhibition mechanism and DNA binding. Biochemical analysis of the TsiV3-L131K and TseV3-P256K showing defective complex formation would significantly strengthen the validation of the structural model.\n\n4) In Figure 1C, the wild-type competition experiment does not appear to have any error associated with it. This seems unusual and the authors may want to compare their methodology with what is typically done in the T6SS field. Additionally, the magnitudes of the reported competition phenotypes throughout the manuscript (ranging from 1.5-2.0 fold) are quite small compared to almost all other characterized T6SSs.\n\nOrthogonal methods to show that TseV2 and TseV3 are secreted from S. bongori in a T6SS-dependent manner would strengthen the conclusion.\n\nPrey recovery is normalized to wildtype. Please add information in the legend or text, what the recovery rate is in wildtype, in other words how effective is the anti-bacterial activity? This applies also to Figure 2E, F.\n\n5) In Figure 2E and Figure 2F, the differences are small (~2 fold or less) and the authors use a small number of biological replicates (N = 3 \u2013 4). Although the differences are statistically significant, one concern is the reproducibility of these small phenotypes, especially if there is a possibility of small differences in the conditions used during experimentation. The author's conclusions from these data would be strengthened if the authors repeated these experiments to demonstrate the reproducibility of these findings. This is important given that this is the first time these T6SS effectors have been described to have antibacterial activity.\n\n6) Figure 3D lacks the control of no TseV2 or 3 to compare the catalytic mutant with the absence of the effector protein.\n\n7) Figure 4: Add controls to express Ts3V2 and 3 catalytic mutants in cells with Gam-GFP and recA::GFP.\n\nIn Figures 4A and Figure 4B, GFP fluorescence signal can be influenced by other factors (such as oxygen). Using alternative methods such as RNA or protein levels to measure expression of recA would strengthen the author's conclusions.\n",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a149f104-3e07-4256-a3af-ea81a534641a",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C1",
+      "claim": "The SPI-22 T6SS of S. bongori is phylogenetically related to the HSI-III T6SS of P. aeruginosa with amino acid similarity ranging from 26% to 80%",
+      "claim_type": "EXPLICIT",
+      "source": "The SPI-22 T6SS of S. bongori is phylogenetically related to the HSI-III (Hcp secretion island III) T6SS of P. aeruginosa (amino acid similarity ranging from 26% to 80%), and the CTS2 (Citrobacter rodentium T6SS cluster 2) of C. rodentium (amino acid similarity ranging from 63% to 93%) (Petty et al., 2010; Fookes et al., 2011; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by amino acid similarity data presented in the manuscript and referenced to prior publications (Petty et al., 2010; Fookes et al., 2011)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "6c41c89b-725a-447a-9f74-f8d8a3d3f0f5",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C2",
+      "claim": "The SPI-22 T6SS of S. bongori is phylogenetically related to the CTS2 of C. rodentium with amino acid similarity ranging from 63% to 93%",
+      "claim_type": "EXPLICIT",
+      "source": "The SPI-22 T6SS of S. bongori is phylogenetically related to the HSI-III (Hcp secretion island III) T6SS of P. aeruginosa (amino acid similarity ranging from 26% to 80%), and the CTS2 (Citrobacter rodentium T6SS cluster 2) of C. rodentium (amino acid similarity ranging from 63% to 93%) (Petty et al., 2010; Fookes et al., 2011; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by amino acid similarity data presented in the manuscript and referenced to prior publications (Petty et al., 2010; Fookes et al., 2011)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "3d31f573-3461-424e-bb6f-95392fc91858",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C3",
+      "claim": "The genome of S. bongori NCTC 12419 encodes two VgrG proteins (SBG_2715, SBG_3770)",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the structural T6SS components encoded within SPI-22, the genome of S. bongori NCTC 12419 encodes several orphan proteins comprising two VgrG (SBG_2715, SBG_3770), four Hcp (SBG_0599, SBG_3120, SBG_3143, SBG_3925), three DUF4150/PAAR-like proteins (SBG_1846, SBG_2718, SBG_2955), two adaptors containing DUF2169 (SBG_1847, SBG_2721), and one adaptor with DUF1795 (SBG_3173) (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on genomic data analysis of S. bongori NCTC 12419",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "7acaaffc-ab1a-4c8f-9db1-4ae3a6eb9883",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C4",
+      "claim": "The genome of S. bongori NCTC 12419 encodes four Hcp proteins (SBG_0599, SBG_3120, SBG_3143, SBG_3925)",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the structural T6SS components encoded within SPI-22, the genome of S. bongori NCTC 12419 encodes several orphan proteins comprising two VgrG (SBG_2715, SBG_3770), four Hcp (SBG_0599, SBG_3120, SBG_3143, SBG_3925), three DUF4150/PAAR-like proteins (SBG_1846, SBG_2718, SBG_2955), two adaptors containing DUF2169 (SBG_1847, SBG_2721), and one adaptor with DUF1795 (SBG_3173) (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on genomic data analysis of S. bongori NCTC 12419",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "9c242ee1-fbba-478d-b041-5f6a45958885",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C5",
+      "claim": "The genome of S. bongori NCTC 12419 encodes three DUF4150/PAAR-like proteins (SBG_1846, SBG_2718, SBG_2955)",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the structural T6SS components encoded within SPI-22, the genome of S. bongori NCTC 12419 encodes several orphan proteins comprising two VgrG (SBG_2715, SBG_3770), four Hcp (SBG_0599, SBG_3120, SBG_3143, SBG_3925), three DUF4150/PAAR-like proteins (SBG_1846, SBG_2718, SBG_2955), two adaptors containing DUF2169 (SBG_1847, SBG_2721), and one adaptor with DUF1795 (SBG_3173) (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on genomic data analysis of S. bongori NCTC 12419",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "f1e6eb4b-258f-4ea9-9fb2-82233bfab58a",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C6",
+      "claim": "The prey recovery rate was higher when coincubation was performed with \u0394tssB compared to the WT S. bongori",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that the prey recovery rate was higher when coincubation was performed with \u0394tssB compared to the WT (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial competition assay data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "46196892-4889-4864-9cc8-d776f67db386",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C7",
+      "claim": "Competition with a \u0394tssB strain complemented with a plasmid expressing TssB restored the WT phenotype",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, competition with a \u0394tssB strain complemented with a plasmid expressing TssB restored the WT phenotype (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial competition assay data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "68f25783-d912-4a71-aa5e-e2a67fa3dbc6",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C8",
+      "claim": "The SPI-22 T6SS of S. bongori is active in the conditions tested and contributes to interbacterial antagonism",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the SPI-22 T6SS of S. bongori is active in the conditions tested and contributes to interbacterial antagonism, thus priming investigation to further characterize this activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the bacterial competition assay results showing differential prey recovery rates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "7439e9fc-ef53-461c-95c4-34d269480402",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C9",
+      "claim": "SBG_2718 (TseV1) contains an N-terminal PAAR-like domain and a C-terminal VRR-Nuc domain",
+      "claim_type": "EXPLICIT",
+      "source": "Two candidates called our attention: SBG_2718 (TseV1) and SBG_2723 (TseV2), which contain an N-terminal PAAR-like domain and a C-terminal VRR-Nuc domain (Figure 2A; Kinch et al., 2005; Iyer et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on in silico domain analysis and supported by citations to prior work (Kinch et al., 2005; Iyer et al., 2006)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "542c6e0a-5f72-4148-8241-70337677e552",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C10",
+      "claim": "SBG_2723 (TseV2) contains an N-terminal PAAR-like domain and a C-terminal VRR-Nuc domain",
+      "claim_type": "EXPLICIT",
+      "source": "Two candidates called our attention: SBG_2718 (TseV1) and SBG_2723 (TseV2), which contain an N-terminal PAAR-like domain and a C-terminal VRR-Nuc domain (Figure 2A; Kinch et al., 2005; Iyer et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on in silico domain analysis and supported by citations to prior work (Kinch et al., 2005; Iyer et al., 2006)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "dfa713e4-873a-4db4-b9d8-76c3c66e29b6",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C11",
+      "claim": "TseV1 is encoded next to two DUF3396-containing proteins (SBG_2719/TsiV1.1 and SBG_2720/TsiV1.2)",
+      "claim_type": "EXPLICIT",
+      "source": "Both putative effectors are encoded next to pairs of genes encoding DUF3396-containing proteins that resemble putative immunity proteins: SBG_2719/TsiV1.1 and SBG_2720/TsiV1.2, and SBG_2724/TsiV2.1 and SBG_2725/TsiV2.2 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on genomic context analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "e6a5c892-4435-4fdc-b218-3791aab12ca2",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C12",
+      "claim": "TseV2 is encoded next to two DUF3396-containing proteins (SBG_2724/TsiV2.1 and SBG_2725/TsiV2.2)",
+      "claim_type": "EXPLICIT",
+      "source": "Both putative effectors are encoded next to pairs of genes encoding DUF3396-containing proteins that resemble putative immunity proteins: SBG_2719/TsiV1.1 and SBG_2720/TsiV1.2, and SBG_2724/TsiV2.1 and SBG_2725/TsiV2.2 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on genomic context analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "6741e301-75c6-4a12-bab1-3dad33753f56",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C13",
+      "claim": "SBG_1841 (TseV3) contains an N-terminal PAAR-like domain",
+      "claim_type": "EXPLICIT",
+      "source": "Additional BLASTP searches in the genome of S. bongori identified two extra VRR-Nuc-containing proteins (SBG_1841/TseV3 and SBG_1828/TseV4), but only one of them encodes an N-terminal PAAR-like domain (SBG_1841).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on BLASTP search results and domain analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "d831113b-6e24-4462-9d19-a4bb914c94fe",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C14",
+      "claim": "SBG_1828 (TseV4) does not encode an N-terminal PAAR-like domain",
+      "claim_type": "EXPLICIT",
+      "source": "Additional BLASTP searches in the genome of S. bongori identified two extra VRR-Nuc-containing proteins (SBG_1841/TseV3 and SBG_1828/TseV4), but only one of them encodes an N-terminal PAAR-like domain (SBG_1841).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on BLASTP search results and domain analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "002eac90-1fc5-48b2-9f16-d441aa3cca1b",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C15",
+      "claim": "TseV3 is encoded upstream of a DUF3396-containing protein (SBG_1842/TsiV3)",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SBG_1828 and SBG_1841 are encoded upstream of a DUF3396-containing protein (SBG_1829/TsiV4 and SBG_1842/TsiV3) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on genomic context analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "4551fd80-3191-4a88-bcc9-c810c10c3a0e",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C16",
+      "claim": "TseV4 is encoded upstream of a DUF3396-containing protein (SBG_1829/TsiV4)",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SBG_1828 and SBG_1841 are encoded upstream of a DUF3396-containing protein (SBG_1829/TsiV4 and SBG_1842/TsiV3) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on genomic context analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "704a748e-895a-4124-b7fd-e72ccedf4f2f",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C17",
+      "claim": "TseV2 is toxic when expressed in E. coli",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that TseV2 and TseV3 are toxic in the cytoplasm of E. coli, whereas TseV1 and TseV4 do not confer toxicity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "beb0494c-69b2-4734-8000-6392fc3308a0",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C18",
+      "claim": "TseV3 is toxic when expressed in E. coli",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that TseV2 and TseV3 are toxic in the cytoplasm of E. coli, whereas TseV1 and TseV4 do not confer toxicity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "f3a424c0-cf20-466f-961b-497cad6d1a89",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C19",
+      "claim": "TseV1 does not confer toxicity when expressed in E. coli",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that TseV2 and TseV3 are toxic in the cytoplasm of E. coli, whereas TseV1 and TseV4 do not confer toxicity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "3a4ba870-a95a-4042-9ed3-ddc2d2e6599f",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C20",
+      "claim": "TseV4 does not confer toxicity when expressed in E. coli",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that TseV2 and TseV3 are toxic in the cytoplasm of E. coli, whereas TseV1 and TseV4 do not confer toxicity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "dc3844cd-a489-4fdf-8aee-4baa8001d003",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C21",
+      "claim": "Only TsiV2.1 neutralizes TseV2 toxicity",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression of TseV2 with either TsiV2.1 or TsiV2.2 revealed that only the first immunity protein neutralizes TseV2 toxicity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "0006e6d2-7440-4ec2-a931-d78905f2d7de",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C22",
+      "claim": "TsiV3 neutralizes TseV3 toxicity",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the toxic effect of TseV3 can be neutralized by coexpression with TsiV3 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "e96a429e-4acc-47a5-9493-e2b2ba4912a7",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C23",
+      "claim": "TseV2 and TseV3 are neutralized only by their specific cognate immunity proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression of TseV2 and TseV3 with all combinations of immunity proteins (TsiV1.1, TsiV1.2, TsiV2.1, TsiV2.2, TsiV3, and TsiV4) revealed that the effectors are neutralized only by the specific cognate immunity protein (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "1fb1dec8-47ea-4010-bc0b-d33a65f808f7",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C24",
+      "claim": "E. coli carrying pBRA TseV2 stopped growing once l-arabinose was added",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, bacteria grew normally in media containing d-glucose; but once l-arabinose was added, the culture stopped growing, and the OD600 nm stabilized (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth curve data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "614983f8-e266-427b-927c-b1dc1304aa40",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C25",
+      "claim": "E. coli carrying pBRA TseV3 stopped growing once l-arabinose was added",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, bacteria grew normally in media containing d-glucose; but once l-arabinose was added, the culture stopped growing, and the OD600 nm stabilized (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth curve data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "3473f6ae-b4b8-49c6-bde1-4f030c125275",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C26",
+      "claim": "E. coli expressing TseV2 or TseV3 did not grow and remained mostly morphologically unaltered in the presence of l-arabinose",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the presence of 0.2% l-arabinose (induced) bacteria did not grow and remained mostly morphologically unaltered \u2013 displaying a modest increase in cell length (Figure 2D, Figure 2\u2014video 2, and Figure 2\u2014video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 2D and associated videos",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "85168929-2676-4ee1-a69d-a2021ef4002c",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C27",
+      "claim": "The prey recovery rate was higher when \u0394tseV2/tsiV2.1/2.2 prey cells were coincubated with \u0394tssB compared to WT S. bongori",
+      "claim_type": "EXPLICIT",
+      "source": "Results demonstrated that the prey recovery rate was higher when prey cells were coincubated with \u0394tssB compared to WT (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial competition assay data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "1307717d-fa8d-4771-9c46-3a4a9845f53b",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C28",
+      "claim": "Complementation of \u0394tseV2/tsiV2.1/2.2 prey with a plasmid encoding TsiV2.1 increased the prey recovery rate",
+      "claim_type": "EXPLICIT",
+      "source": "Complementation of preys with a plasmid encoding either TsiV2.1 or TsiV3 increased the prey recovery rate, showing that prey became immune to the TseV2- and TseV3-induced toxicity (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial competition assay data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "16833246-0437-4593-b0ff-6d987a083ce8",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C29",
+      "claim": "Complementation of \u0394tseV3/tsiV3 prey with a plasmid encoding TsiV3 increased the prey recovery rate",
+      "claim_type": "EXPLICIT",
+      "source": "Complementation of preys with a plasmid encoding either TsiV2.1 or TsiV3 increased the prey recovery rate, showing that prey became immune to the TseV2- and TseV3-induced toxicity (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial competition assay data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "fa01c9a5-914d-4f00-bed2-ace18dc355db",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C30",
+      "claim": "TseV2 and TseV3 are antibacterial effectors secreted by the SPI-22 T6SS",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that TseV2 and TseV3 are antibacterial effectors secreted by the SPI-22 T6SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from bacterial competition assay results showing that immunity proteins protect prey cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "12abeea3-9646-4d95-887b-683ea765c81a",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C31",
+      "claim": "VgrG2 is responsible for secreting TseV2 into target cells",
+      "claim_type": "EXPLICIT",
+      "source": "The prey recovery rate of \u0394tseV2/tsiV2.1/2.2 increased when this strain was coincubated with \u0394vgrG2, suggesting that VgrG2 is responsible for secreting TseV2 into target cells (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from bacterial competition assay data shown in Figure 2F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "fce96c18-d50f-4578-a35b-4209a4b39aea",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C32",
+      "claim": "VgrG3 is responsible for secreting TseV3 into target cells",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the prey recovery rate of \u0394tseV3/tsiV3 increased when this strain was coincubated with \u0394vgrG3, suggesting that VgrG3 is responsible for secreting TseV3 into target cells (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from bacterial competition assay data shown in Figure 2F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "44450044-4549-43b3-9911-17d395965d7a",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C33",
+      "claim": "VgrG2 and VgrG3 are 96.9% identical in their N-terminal region (VgrG21\u2013565 and VgrG31\u2013545)",
+      "claim_type": "EXPLICIT",
+      "source": "VgrG2 and VgrG3 are 96.9% identical in their N-terminal region (VgrG21\u2013565 and VgrG31\u2013545), but display a distinct C-terminal domain with only 26% identity (VgrG2566\u2013709 and VgrG3546\u2013728) (Supplementary file 1), thus suggesting that this region is responsible for cargo selection (Liang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence comparison data presented in Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "6c910912-d3bf-44e9-af02-d78bdd62ddeb",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C34",
+      "claim": "VgrG2 and VgrG3 display a distinct C-terminal domain with only 26% identity (VgrG2566\u2013709 and VgrG3546\u2013728)",
+      "claim_type": "EXPLICIT",
+      "source": "VgrG2 and VgrG3 are 96.9% identical in their N-terminal region (VgrG21\u2013565 and VgrG31\u2013545), but display a distinct C-terminal domain with only 26% identity (VgrG2566\u2013709 and VgrG3546\u2013728) (Supplementary file 1), thus suggesting that this region is responsible for cargo selection (Liang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence comparison data presented in Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "fc9f93ae-dcaa-4223-9a45-27062d4b3c75",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C35",
+      "claim": "The C-terminal region of VgrG2 and VgrG3 is responsible for cargo selection",
+      "claim_type": "EXPLICIT",
+      "source": "VgrG2 and VgrG3 are 96.9% identical in their N-terminal region (VgrG21\u2013565 and VgrG31\u2013545), but display a distinct C-terminal domain with only 26% identity (VgrG2566\u2013709 and VgrG3546\u2013728) (Supplementary file 1), thus suggesting that this region is responsible for cargo selection (Liang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from sequence comparison data and supported by citation to Liang et al., 2021",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "27d37a67-556a-4f9f-bd8f-fdbbc101f5a1",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C36",
+      "claim": "VRR-Nuc domain was initially annotated as DUF994",
+      "claim_type": "EXPLICIT",
+      "source": "TseV2 and TseV3 contain a VRR-Nuc domain at their C-terminus, which was initially annotated as DUF994 (Kinch et al., 2005) and later renamed VRR-Nuc due to its association with enzymes linked to DNA metabolism (Iyer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Kinch et al., 2005; Iyer et al., 2006)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "d3618c32-3175-4a6c-b620-deac0d26314b",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C37",
+      "claim": "VRR-Nuc domain was renamed from DUF994 due to its association with enzymes linked to DNA metabolism",
+      "claim_type": "EXPLICIT",
+      "source": "TseV2 and TseV3 contain a VRR-Nuc domain at their C-terminus, which was initially annotated as DUF994 (Kinch et al., 2005) and later renamed VRR-Nuc due to its association with enzymes linked to DNA metabolism (Iyer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Kinch et al., 2005; Iyer et al., 2006)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "2d296ccc-f8fe-481c-a398-4e00dac7efef",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C38",
+      "claim": "VRR-Nuc-containing proteins are found in bacteria, bacteriophages, fungi, and eukaryotes",
+      "claim_type": "EXPLICIT",
+      "source": "VRR-Nuc-containing proteins are found in a wide range of organisms, including bacteria, bacteriophages, fungi, and eukaryotes (Iyer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Iyer et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "cb8d87ea-6818-4a68-9935-e71d39240da5",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C39",
+      "claim": "Proteins containing the VRR-Nuc domain comprise a family (PF08774) belonging to the PD-(D/E)xK superfamily",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins containing this domain comprise a family (PF08774) belonging to the PD-(D/E)xK superfamily, which constitutes a large and functionally diverse group containing representatives involved in DNA replication (Holliday junction resolvases), restriction\u2013modification, repair, and tRNA-intron splicing (Steczkiewicz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Steczkiewicz et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "47ab07d1-921e-4627-aa96-3a5c77e59905",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C40",
+      "claim": "Members of the PD-(D/E)xK superfamily exhibit low sequence similarity but display a common fold in their enzymatic core (with \u03b11\u03b21\u03b22\u03b23\u03b12\u03b24 topology)",
+      "claim_type": "EXPLICIT",
+      "source": "Members of this superfamily exhibit low sequence similarity but display a common fold in their enzymatic core (with \u03b11\u03b21\u03b22\u03b23\u03b12\u03b24 topology), which contains conserved residues (Asp, Glu, and Lys) responsible for catalysis (Steczkiewicz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Steczkiewicz et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "c6d1b8dd-9a3f-445a-a7cc-467cab8cfbc9",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C41",
+      "claim": "The enzymatic core of PD-(D/E)xK superfamily members contains conserved residues (Asp, Glu, and Lys) responsible for catalysis",
+      "claim_type": "EXPLICIT",
+      "source": "Members of this superfamily exhibit low sequence similarity but display a common fold in their enzymatic core (with \u03b11\u03b21\u03b22\u03b23\u03b12\u03b24 topology), which contains conserved residues (Asp, Glu, and Lys) responsible for catalysis (Steczkiewicz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Steczkiewicz et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "0d2e796c-80f1-4bf6-8a3f-b439917efb9d",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C42",
+      "claim": "Antibacterial T6SS effectors (TseVs, Aave_0499, IdrD, and PoNe) formed a clade with a bootstrap value higher than 75%",
+      "claim_type": "EXPLICIT",
+      "source": "All T6SS effectors (TseVs, Aave_0499, IdrD, and PoNe), except for TseT homologs, formed a clade with a bootstrap value higher than 75% (Figure 3A, colors).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phylogenetic analysis data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "e22482e4-d429-4b0b-be78-06a8bdc8c453",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C43",
+      "claim": "The genomic context of TseV/Plu1493 homologs is enriched in proteins encoding components of the T6SS apparatus, adaptors, and immunity proteins",
+      "claim_type": "EXPLICIT",
+      "source": "While most of VRR-Nuc members (PmgM, T1p21, KIAA1018, Bce1019, and HP1472) are encoded next to genes involved in DNA metabolism, the gene neighborhood of antibacterial T6SS effectors (TseVs, Aave_0499, IdrD, and PoNe) is enriched in proteins encoding components of the T6SS apparatus, adaptors, and immunity proteins (Figure 3B; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on genomic context analysis shown in Figure 3B and Supplementary file 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "7a833429-d59d-49a7-90f0-8584aea57728",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C44",
+      "claim": "Substitution of the conserved aspartic acid for alanine in TseV2 (TseV2D282A) abrogated toxicity in E. coli",
+      "claim_type": "EXPLICIT",
+      "source": "Using this information as a guide, substitution of the conserved aspartic acid for alanine in TseV2 (TseV2D282A) and TseV3 (TseV3D230A) abrogated toxicity in E. coli (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "e9800ae9-2736-4868-8bf9-da4845b6bb77",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C45",
+      "claim": "Substitution of the conserved aspartic acid for alanine in TseV3 (TseV3D230A) abrogated toxicity in E. coli",
+      "claim_type": "EXPLICIT",
+      "source": "Using this information as a guide, substitution of the conserved aspartic acid for alanine in TseV2 (TseV2D282A) and TseV3 (TseV3D230A) abrogated toxicity in E. coli (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "c9e6298c-6e27-40f5-b8eb-93b462bbe665",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C46",
+      "claim": "The enzymatic activity of the VRR-Nuc domain is essential for toxicity",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that the enzymatic activity of the VRR-Nuc domain is essential for toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from mutagenesis data showing that catalytic mutants are not toxic",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "1df5bb21-14fe-4ede-969b-eac71fc854d5",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C47",
+      "claim": "E. coli expressing TseV2 or TseV3 showed an increase in GFP fluorescence when expression was induced with l-arabinose, indicating activation of the SOS response",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase in GFP fluorescence when the expression of TseV2 or TseV3 was induced with l-arabinose, indicating the activation of the SOS response (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SOS response reporter assay data shown in Figure 4A and 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "cbb2886a-b81f-4abe-9d4b-3857416b29a5",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C48",
+      "claim": "Cells expressing TseV2 or TseV3 revealed smaller/degraded nucleoids and displayed reduced DAPI fluorescence",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing TseV2 or TseV3 revealed smaller/degraded nucleoids and displayed reduced DAPI fluorescence (Figure 4C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DAPI staining data shown in Figure 4C-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "72ee0d04-0869-4586-8dac-7c71064d82d7",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C49",
+      "claim": "E. coli expressing either TseV2 or TseV3 revealed several intense GFP foci in more than 80% and 75% of cells, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, E. coli expressing either TseV2 or TseV3 revealed several intense GFP foci in more than 80% and 75% of cells, respectively (Figure 4G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GamGFP double-strand break assay data shown in Figure 4G and 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "8857d12f-847c-4886-ada5-10e66730f6d5",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C50",
+      "claim": "The expression of the catalytic mutants TseV2D282A and TseV3D230A did not induce GFP foci formation",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of the catalytic mutants TseV2D282A and TseV3D230A did not induce GFP foci formation, indicating that the observed phenotype is specific to the effector's enzymatic activity (Figure 4G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GamGFP double-strand break assay data shown in Figure 4G and 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "bc26109b-9ddd-46de-a067-f88abe9b55a3",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C51",
+      "claim": "TseV2 and TseV3 cause target cell death by inducing DNA double-strand breaks",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that TseV2 and TseV3 cause target cell death by inducing DNA double-strand breaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple experimental results including SOS response activation, nucleoid degradation, and GamGFP foci formation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "dc9fb3ca-e0e7-4c77-a4ae-625b3529f172",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C52",
+      "claim": "VRR-Nuc-containing enzymes have been shown to be specific for certain DNA structures rather than sequences in eukaryotes",
+      "claim_type": "EXPLICIT",
+      "source": "VRR-Nuc-containing enzymes have been shown to be specific for certain DNA structures rather than sequences, both in eukaryotes (Kratz et al., 2010; Liu et al., 2010; MacKay et al., 2010; Smogorzewska et al., 2010) and prokaryotes (Gwon et al., 2014; Pennell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Kratz et al., 2010; Liu et al., 2010; MacKay et al., 2010; Smogorzewska et al., 2010)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "5e056561-0b76-4952-9dc8-6e1de20aa9f7",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C53",
+      "claim": "VRR-Nuc-containing enzymes have been shown to be specific for certain DNA structures rather than sequences in prokaryotes",
+      "claim_type": "EXPLICIT",
+      "source": "VRR-Nuc-containing enzymes have been shown to be specific for certain DNA structures rather than sequences, both in eukaryotes (Kratz et al., 2010; Liu et al., 2010; MacKay et al., 2010; Smogorzewska et al., 2010) and prokaryotes (Gwon et al., 2014; Pennell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Gwon et al., 2014; Pennell et al., 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "db5b8a5f-a80a-4b24-862f-1cefa5404b93",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C54",
+      "claim": "The preferred DNA structure for human FAN1 and P. aeruginosa PaFAN1 is a 5\u2032 flap",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, the prefered DNA structure is a 5\u2032 flap (Gwon et al., 2014) \u2013 a Y-shaped DNA form in which one of the arms (5\u2032) is a single strand and the other (3\u2032) is a double strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Gwon et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "396f6a64-77bc-43e2-8d91-93e036a837d4",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C55",
+      "claim": "In both human FAN1 and P. aeruginosa PaFAN1, the 5\u2032 flap is cleaved a couple of nucleotides (1\u20135 nt) downstream from the arms junction",
+      "claim_type": "EXPLICIT",
+      "source": "In both human FAN1 and P. aeruginosa PaFAN1, the 5\u2032 flap is cleaved a couple of nucleotides (1\u20135 nt) downstream from the arms junction and later the opposite strand is cleaved creating a double-strand end (Gwon et al., 2014; Pennell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Gwon et al., 2014; Pennell et al., 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "982e7b98-e1b5-4854-a8e2-fb465ee3d270",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C56",
+      "claim": "FAN1 enzymes display 5\u2032\u20133\u2032 exonuclease activity",
+      "claim_type": "EXPLICIT",
+      "source": "Besides endonuclease activity, FAN1 enzymes also display 5\u2032\u20133\u2032 exonuclease activity (Kratz et al., 2010; Gwon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Kratz et al., 2010; Gwon et al., 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "bd6262d8-6f41-40d7-b853-048997d53c45",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C57",
+      "claim": "TseV3 preferentially cleaves the splayed arm substrate, with some minor activity on the 3\u2032 flap substrate",
+      "claim_type": "EXPLICIT",
+      "source": "Results revealed that TseV3 preferentially cleaves the splayed arm substrate, with some minor activity on the 3\u2032 flap substrate (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro enzymatic assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "cd51e5e0-4e8f-4c2e-a0fb-97f4b404d412",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C58",
+      "claim": "No degradation was detected for the catalytic mutant TseV3D230A",
+      "claim_type": "EXPLICIT",
+      "source": "The activity was specific as no degradation was detected for the catalytic mutant TseV3D230A (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro enzymatic assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "9612c130-c743-459e-865b-a93d0113e518",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C59",
+      "claim": "Human FAN1 and P. aeruginosa PaFAN1 are metal-dependent nucleases that use Mn2+ as a cofactor",
+      "claim_type": "EXPLICIT",
+      "source": "Human FAN1 and P. aeruginosa PaFAN1 are metal-dependent nucleases that use Mn2+ as a cofactor (Kratz et al., 2010; Gwon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Kratz et al., 2010; Gwon et al., 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "1106dcfb-749a-454f-8cac-1fab227087d5",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C60",
+      "claim": "TseV3 requires Mn2+ as a cofactor",
+      "claim_type": "EXPLICIT",
+      "source": "Results revealed that TseV3 requires Mn2+ as a cofactor, and its activity was inhibited by EDTA and partially affected by Zn2+ (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro enzymatic assay data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "86875695-4e22-41a7-96b2-54a43f721ba6",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C61",
+      "claim": "TseV3 activity was inhibited by EDTA",
+      "claim_type": "EXPLICIT",
+      "source": "Results revealed that TseV3 requires Mn2+ as a cofactor, and its activity was inhibited by EDTA and partially affected by Zn2+ (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro enzymatic assay data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "b16a7b76-09ef-4e0b-90ec-46ba9403dd7d",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C62",
+      "claim": "TseV3 activity was partially affected by Zn2+",
+      "claim_type": "EXPLICIT",
+      "source": "Results revealed that TseV3 requires Mn2+ as a cofactor, and its activity was inhibited by EDTA and partially affected by Zn2+ (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro enzymatic assay data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "20f3665c-774a-47f1-baff-6c7ddbbf3a13",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C63",
+      "claim": "TseV3 cleaves the splayed arm at variable distances after the arms junction",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the reported activity of FAN1 and PaFAN1, we observed the appearance of a range of fragments around 35-mer, suggesting that TseV3 cleaves the splayed arm at variable distances after the arms junction (Figure 5C), thus resembling what is observed for PaFAN1 in 5\u2032 flap that cleaves the third to fifth nucleotide downstream from the junction (Gwon et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from time-course degradation assay data shown in Figure 5C and comparison with PaFAN1 activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "d55261ae-0e41-4ef4-a814-76f7b7742f08",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C64",
+      "claim": "TseV3 displays a unique activity and behaves as a structure-specific nuclease",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results confirm that TseV3 displays a unique activity and behaves as a structure-specific nuclease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple in vitro enzymatic assay results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "4d58b9d0-ec67-4857-9cc1-b8518efa683c",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C65",
+      "claim": "The MALS calculated average mass for the TseV3:TsiV3 complex was 66.4 \u00b1 3.3 kDa",
+      "claim_type": "EXPLICIT",
+      "source": "The MALS calculated average mass for the complex was 66.4 \u00b1 3.3 kDa, which is close to the sum of the theoretical values of their monomers: 26.8 and 37.4 kDa for 6xHis-TseV3 and TsiV3, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by SEC-MALS experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "3c610444-aef8-4631-a235-d4908432bd41",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C66",
+      "claim": "TseV3 and TsiV3 form a 1:1 heterodimeric complex",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that TseV3 and TsiV form a 1:1 heterodimeric complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from SEC-MALS data showing the molecular mass of the complex",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "5ff74869-516a-4b17-b784-fb3e29489a17",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C67",
+      "claim": "Crystals of the TseV3:TsiV3 complex belong to space group P21 and diffracted to a moderate resolution of 4 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to obtain crystals of the TseV3:TsiV3 complex, which belong to space group P21 and diffracted to a moderate resolution of 4 \u00c5 (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on X-ray crystallography data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "2ed613d8-5198-4cc2-a4a8-dd9d5ffd9520",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C68",
+      "claim": "Matthews coefficient analysis indicated that two TseV3:TsiV3 complexes would be the most likely composition in the asymmetric unit",
+      "claim_type": "EXPLICIT",
+      "source": "Matthews coefficient analysis indicated that two TseV3:TsiV3 complexes would be the most likely composition in the asymmetric unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on crystallographic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "f547b481-4e86-4db8-a8b1-6ac224d49a6c",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C69",
+      "claim": "Molecular replacement using AlphaFold models of TseV3132\u2013281 and TsiV310\u2013327 was able to place two copies of each monomer in the asymmetric unit with a final LLG of 486.87 and TFZ of 12.4",
+      "claim_type": "EXPLICIT",
+      "source": "We used AlphaFold (Jumper et al., 2021) models of TseV3132\u2013281 and TsiV310\u2013327 for molecular replacement using Phaser (McCoy et al., 2007), which was able to place two copies of each monomer in the asymmetric unit with a final LLG (log-likelihood gain) of 486.87 and TFZ (translation function Z-score) of 12.4 \u2013 with both heterodimeric complexes adopting the same pose (our docked model is available using accession code ma-oyho8 at modelarchive.org).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on molecular replacement analysis using AlphaFold models",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "aba36b90-2344-4d8b-bcf2-b128673af552",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C70",
+      "claim": "TsiV3 possesses a central \u03b2-sheet that is flanked by \u03b1-helices on one side and exposed on the other",
+      "claim_type": "EXPLICIT",
+      "source": "TsiV3 possesses a central \u03b2-sheet that is flanked by \u03b1-helices on one side and exposed on the other (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on structural analysis of the TseV3:TsiV3 complex model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "2b6a033d-4e30-4374-b7ff-e64d60aa3258",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C71",
+      "claim": "The exposed \u03b2-sheet surface of TsiV3 binds to an \u03b1\u2013\u03b2 element of TseV3 that flanks its putative active site",
+      "claim_type": "EXPLICIT",
+      "source": "This exposed \u03b2-sheet surface of TsiV3 binds to an \u03b1\u2013\u03b2 element of TseV3 that flanks its putative active site (composed of residues D230, D245, and K247) (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on structural analysis of the TseV3:TsiV3 complex model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "76716328-02af-49f1-ac83-6bacdedf9f8f",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C72",
+      "claim": "TsiV3L131K was unable to neutralize TseV3 toxicity",
+      "claim_type": "EXPLICIT",
+      "source": "Results revealed that TsiV3L131K was unable to neutralize TseV3 toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "a2dd6507-9c8d-4a44-9105-51839ac13598",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C73",
+      "claim": "TseV3P256K maintained its enzymatic activity, displaying toxicity in E. coli",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the mutated TseV3P256K maintained its enzymatic activity, displaying toxicity in E. coli; however, this mutant was not neutralized by coexpression with the native immunity protein (TsiV3) (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "3078151b-9402-41bd-9ce6-1549c32c180c",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C74",
+      "claim": "TseV3P256K was not neutralized by coexpression with the native immunity protein (TsiV3)",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the mutated TseV3P256K maintained its enzymatic activity, displaying toxicity in E. coli; however, this mutant was not neutralized by coexpression with the native immunity protein (TsiV3) (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by E. coli toxicity assay data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "a54277b1-1e3a-484e-9e7b-df9e1030e1c7",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C75",
+      "claim": "Residues D230, D245, and K247 of TseV3 match residues D507, E522, and K524 of PaFAN1",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, superimposition of TseV3 with the well-characterized VRR-Nuc member PaFAN1 (PDB 4R89) (Gwon et al., 2014) (clade KIAA1018 in Figure 3A) matches residues D230, D245, and K247 of the former with residues D507, E522, and K524 of the latter (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on structural superimposition analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "75e35695-bca4-4500-8acd-2736a3fc24ab",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C76",
+      "claim": "The path of the DNA substrate is potentially incompatible with the presence of TsiV3 in the TseV3:TsiV3 complex",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison between the PaFAN1:DNA and TseV3:TsiV3 complexes reveals that the path of the DNA substrate is potentially incompatible with the presence of TsiV3 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from structural comparison between PaFAN1:DNA and TseV3:TsiV3 complexes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "248baeb0-69b5-4679-a112-a7ff9fdb5a1e",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C77",
+      "claim": "The binding of TsiV3 sterically blocks the TseV3 active site",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, assuming the mode of substrate recognition is similar between PaFAN1 and TseV3, this result suggests that the binding of TsiV3 sterically blocks the toxin active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from structural comparison and assumes similar substrate recognition modes",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "87eb58c0-31fb-49dc-9a63-e49770088cab",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C78",
+      "claim": "TsiV3 occlusion of the TseV3 active site would be enabled by a TsiV3 loop, which projects into the putative TseV3 DNA-binding pocket",
+      "claim_type": "EXPLICIT",
+      "source": "In our model of the complex, TsiV3 occlusion of the TseV3 active site would be enabled by a TsiV3 loop, which projects into the putative TseV3 DNA-binding pocket (Figure 6A, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on structural model analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "fc9a35bc-e8b0-434f-ac8c-7952eb57f280",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C79",
+      "claim": "TseV effectors are the first example of effectors with a structure-specific nuclease activity",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we characterized a group of effectors containing the VRR-Nuc domain, which comprise the first example of effectors with a structure-specific nuclease activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the characterization of TseV effectors and comparison with previously reported effectors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "2180eaa5-8f52-424d-ac70-f0f099a0941f",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C80",
+      "claim": "The VRR-Nuc domain has not previously been reported to be used in biological conflicts",
+      "claim_type": "EXPLICIT",
+      "source": "This domain has not previously been reported to be used in biological conflicts (Zhang et al., 2012), but recently was suggested to work as a T6SS effector due to its localization next to a PAAR protein in P. aeruginosa (Wang et al., 2021) \u2013 for consistency we decided to keep the name TseV for this group of effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Zhang et al., 2012; Wang et al., 2021)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "47989c56-579d-4de5-8ff0-39d895a047f6",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C81",
+      "claim": "TseV3 acts on replication forks or transcription bubbles of target cells",
+      "claim_type": "EXPLICIT",
+      "source": "Given the biochemical evidence suggesting that TseV3 cleaves splayed arms, we hypothesize that TseV3 acts on replication forks or transcription bubbles of target cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis based on biochemical evidence of TseV3 substrate specificity",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "8bf451d9-0ae9-4c36-9be9-e7726356a123",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C82",
+      "claim": "TseV3 activity on replication forks could promote the collapse of the replication machinery, thus inducing double-strand breaks",
+      "claim_type": "EXPLICIT",
+      "source": "The effector activity could be directly responsible for creating the double-strand breaks detected in the GamGFP reporter assay, which can detect up to a four-base single-strand DNA overhang (Akroyd and Symonds, 1986; Shee et al., 2013); or its activity on replication forks could promote the collapse of the replication machinery, thus inducing double-strand breaks (Kuzminov, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis supported by citations to prior work (Akroyd and Symonds, 1986; Shee et al., 2013; Kuzminov, 1999)",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "ef94dc16-9811-48ee-b84c-fabf03058585",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C83",
+      "claim": "Most T6SS immunity proteins bind to effectors to regulate their enzymatic activity",
+      "claim_type": "EXPLICIT",
+      "source": "Most T6SS immunity proteins described to date bind to effectors to regulate their enzymatic activity (Benz et al., 2012; Benz et al., 2013; Dong et al., 2013; Li et al., 2013; Lu et al., 2014; Robb et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Benz et al., 2012; Benz et al., 2013; Dong et al., 2013; Li et al., 2013; Lu et al., 2014; Robb et al., 2016)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "db37c9bf-b1cc-4b94-9cf8-c7259e7b9138",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C84",
+      "claim": "Tri1 from Serratia proteamaculans exhibits two modes of inhibition: active site occlusion and enzymatic removal of a post-translational modification",
+      "claim_type": "EXPLICIT",
+      "source": "An exception is Tri1 (type VI secretion ADP-ribosyltransferase immunity 1) from Serratia proteamaculans, which exhibits two modes of inhibition: active site occlusion and enzymatic removal of a post-translational modification (Ting et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ting et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "201e8a65-1b82-432e-948a-bb2942f4cd5b",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C85",
+      "claim": "TsiT interferes with TseT oligomerization state and hinders its nuclease activity",
+      "claim_type": "EXPLICIT",
+      "source": "The neutralization mechanism of TsiT, which counteracts the PD-(D/E)xK effector TseT from P. aeruginosa, was also proposed to be different: TsiT interferes with the effector oligomerization state and hinders its nuclease activity (Wen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Wen et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "0f907a9d-b9a1-488b-8e8d-bd967f206b1e",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C86",
+      "claim": "TsiV3 \u03b2-sheet binds to the \u03b12-helix of TseV3, which is involved in DNA binding in other PD-(D/E)xK members",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural model of the TseV3:TsiV3 complex revealed that TsiV3 \u03b2-sheet binds to the \u03b12-helix of TseV3, which is involved in DNA binding in other PD-(D/E)xK members (Steczkiewicz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural model analysis and supported by citation to Steczkiewicz et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "112ccabe-cac1-4587-bc25-0cb41a4ca251",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "claim_id": "C87",
+      "claim": "TsiV3 likely occludes the substrate-binding site of TseV3",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the superposition of the TseV3:TsiV3 complex with the structure of PaFAN1 bound to DNA reinforces the hypothesis that TsiV3 likely occludes the substrate-binding site of TseV3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from structural superposition analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eab4638e-cf2b-47e8-b29b-9ac5a6d132f6",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The SPI-22 T6SS of S. bongori is phylogenetically related to T6SS systems in P. aeruginosa and C. rodentium, and the S. bongori genome encodes multiple orphan T6SS components including VgrG, Hcp, PAAR-like proteins, and adaptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide genomic and phylogenetic characterization of the SPI-22 T6SS. The amino acid similarity data (C1-C2) and genomic inventory (C3-C5) are supported by sequence analysis and cited prior work, establishing the evolutionary context and genetic architecture of this system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "9d107112-9eaf-405a-ab74-55395e172c0d",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The SPI-22 T6SS of S. bongori has antibacterial activity against E. coli, as demonstrated by bacterial competition assays showing reduced prey recovery with wild-type compared to \u0394tssB mutant, with complementation restoring the wild-type phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 demonstrate T6SS functionality through competition assays with appropriate controls (deletion mutant and complementation). The experimental design includes proper negative controls and genetic complementation, providing strong evidence for antibacterial activity. Statistical significance is reported (p < 0.01).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "9d498de7-b72f-418d-a0f2-f5260466f46a",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "S. bongori encodes four VRR-Nuc domain-containing proteins (TseV1-4), with TseV1-3 containing N-terminal PAAR-like domains, and each is encoded adjacent to putative DUF3396-containing immunity proteins (TsiV1-4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 describe the genomic organization and domain architecture of candidate effector-immunity pairs based on bioinformatic analysis. The domain predictions are supported by established domain databases (Pfam) and the genomic context analysis follows standard approaches for identifying effector-immunity pairs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "c47da511-e6e9-4c3e-a519-a6b3a2b0cf30",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TseV2 and TseV3 are toxic when expressed in E. coli, while TseV1 and TseV4 are not toxic. Each toxic effector is specifically neutralized only by its cognate immunity protein (TsiV2.1 for TseV2 and TsiV3 for TseV3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 demonstrate effector toxicity and immunity protein specificity through systematic E. coli toxicity assays. The experimental design includes appropriate controls (all four effectors tested, multiple immunity proteins tested in combination), and the specificity of neutralization is rigorously demonstrated in Figure 2\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "8ad368d3-e1b7-491f-86e5-1f2d75989a9b",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "E. coli expressing TseV2 or TseV3 stops growing upon induction with l-arabinose and displays minimal morphological changes except modest cell elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 characterize the cellular response to effector expression using growth curves and time-lapse microscopy. The data show clear growth arrest upon induction with appropriate controls (glucose repression), and morphological observations are documented with microscopy. Statistical significance is reported (p < 0.01).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "eb410a55-17c9-4fb2-b385-f423a3792549",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TseV2 and TseV3 are antibacterial effectors secreted by the SPI-22 T6SS, as demonstrated by bacterial competition assays showing that prey cells lacking immunity proteins are killed by wild-type S. bongori but not by \u0394tssB mutants, and complementation with immunity proteins restores prey survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 establish TseV2 and TseV3 as bona fide T6SS effectors through competition assays with appropriate genetic controls. The experimental design includes T6SS-deficient mutants, immunity-deficient prey, and complementation controls, providing strong evidence for T6SS-dependent secretion and antibacterial activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "61151b6e-3c5d-47db-a16a-5a1625058460",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "VgrG2 secretes TseV2 and VgrG3 secretes TseV3, as indicated by competition assays with VgrG deletion mutants. VgrG2 and VgrG3 share 96.9% identity in their N-terminal regions but only 26% identity in their C-terminal domains, suggesting the C-terminal region determines cargo specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 identify specific VgrG proteins responsible for effector secretion through deletion analysis and propose a mechanism for cargo selection based on sequence analysis. The competition assays with VgrG mutants provide functional evidence, and the sequence comparison supports the cargo selection hypothesis, though C35 is somewhat speculative and relies on a single citation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "bd628694-e42a-47c0-b0cb-15c185a4aa54",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The VRR-Nuc domain, initially annotated as DUF994, belongs to the PD-(D/E)xK superfamily of nucleases. This superfamily is widespread across organisms and characterized by a conserved enzymatic core with \u03b11\u03b21\u03b22\u03b23\u03b12\u03b24 topology containing catalytic Asp, Glu, and Lys residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 provide background on the VRR-Nuc domain based entirely on prior literature. These claims accurately represent established knowledge about this protein family and are appropriately cited. This contextual information is important for interpreting the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "4485a416-a252-4c42-b735-422523c792a2",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis reveals that antibacterial T6SS effectors containing VRR-Nuc domains (TseVs, Aave_0499, IdrD, PoNe) form a distinct clade with bootstrap support >75%, and their genomic context is enriched for T6SS components rather than DNA metabolism genes typical of other VRR-Nuc family members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 present phylogenetic and genomic context analyses that distinguish antibacterial effectors from other VRR-Nuc family members. The bootstrap value >75% provides statistical support for the phylogenetic grouping, and the genomic context analysis is systematic and well-documented in supplementary files.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "640667b6-938e-4499-aa4d-c31f47acc9d2",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mutation of the conserved catalytic aspartic acid to alanine (TseV2D282A and TseV3D230A) abolishes toxicity in E. coli, confirming that the enzymatic activity of the VRR-Nuc domain is essential for toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 demonstrate the requirement for catalytic activity through site-directed mutagenesis of conserved residues. The experimental design is sound, targeting residues predicted to be catalytic based on superfamily conservation, and the complete loss of toxicity in both mutants strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "336b53bc-641f-483c-a5eb-ddc5008dc676",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TseV2 and TseV3 induce DNA double-strand breaks in target cells, as evidenced by SOS response activation, nucleoid degradation with reduced DAPI fluorescence, and formation of GamGFP foci at double-strand break sites. Catalytic mutants do not induce these phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 provide multiple lines of evidence for DNA damage using complementary assays (SOS reporter, DAPI staining, GamGFP foci). The inclusion of catalytic mutants as negative controls strengthens the conclusions. Quantification is provided (>80% and 75% of cells with foci for TseV2 and TseV3, respectively) with statistical significance (p < 0.01).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "194d6d64-5e1b-4a36-bd1e-fd3af1811492",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "VRR-Nuc-containing enzymes, including human FAN1 and P. aeruginosa PaFAN1, are structure-specific nucleases that preferentially cleave 5' flap substrates and display both endonuclease and 5'-3' exonuclease activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 summarize established knowledge about VRR-Nuc enzyme activities from prior literature. These claims are appropriately cited and provide important context for interpreting the biochemical characterization of TseV3. This background is essential for the comparative analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "b816ba7a-4c4c-4175-8c1a-00be023a6eb7",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TseV3 is a Mn2+-dependent structure-specific nuclease that preferentially cleaves splayed arm substrates at variable distances from the junction, with minor activity on 3' flap substrates. Activity is inhibited by EDTA and partially by Zn2+, and the catalytic mutant TseV3D230A shows no activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 characterize TseV3 biochemical activity through systematic in vitro assays with multiple DNA substrates and cofactors. The experimental design includes appropriate controls (catalytic mutant, various metal ions, EDTA), and the substrate specificity differs from related enzymes (splayed arm vs. 5' flap), representing a novel finding. The experiments are well-controlled and reproducible (n=3-4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "872c67d5-3795-4d3d-9e06-8d6a182c7552",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TseV3 and TsiV3 form a 1:1 heterodimeric complex with a molecular mass of 66.4 \u00b1 3.3 kDa as determined by SEC-MALS, matching the sum of monomer theoretical masses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 determine the stoichiometry of the effector-immunity complex using SEC-MALS, a gold-standard technique for molecular mass determination in solution. The measured mass closely matches the predicted 1:1 complex mass, and SDS-PAGE confirms the presence of both proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "7aa1604a-e402-4987-b053-3a792df1f770",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The TseV3:TsiV3 complex crystallizes in space group P21 and diffracts to 4 \u00c5 resolution. Molecular replacement using AlphaFold models successfully placed two heterodimeric complexes in the asymmetric unit (LLG=486.87, TFZ=12.4), revealing that TsiV3's exposed \u03b2-sheet binds to an \u03b1-\u03b2 element of TseV3 flanking the putative active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 describe the crystal structure determination using a hybrid approach combining experimental crystallography with AlphaFold modeling. The moderate resolution (4 \u00c5) is acknowledged, and the molecular replacement statistics (LLG and TFZ scores) indicate a confident solution. The use of AlphaFold models for molecular replacement is validated by successful placement and is confirmed with experimental homologs. The structural description is consistent with the data quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "0dfa4674-ff5c-4f56-8020-b627c21982a1",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Interface mutations TsiV3L131K and TseV3P256K disrupt effector-immunity neutralization: TsiV3L131K cannot neutralize TseV3 toxicity, and TseV3P256K remains toxic but cannot be neutralized by wild-type TsiV3, validating the structural model of the complex interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 validate the structural model through rational mutagenesis of predicted interface residues. The complementary effects of mutations on each partner (immunity protein loses neutralization ability, effector loses ability to be neutralized) provide strong support for the proposed interaction interface. SEC analysis confirms partial complex formation, indicating the mutations weaken but don't completely abolish binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "b8f792f1-410a-4ac7-8384-456944a62cbe",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Structural superposition of TseV3 with PaFAN1 shows that catalytic residues D230, D245, and K247 of TseV3 align with D507, E522, and K524 of PaFAN1. Comparison of TseV3:TsiV3 with PaFAN1:DNA complexes suggests TsiV3 sterically blocks the TseV3 active site, with a TsiV3 loop projecting into the putative DNA-binding pocket.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 propose a neutralization mechanism through structural comparison with a well-characterized homolog. The alignment of catalytic residues supports functional similarity, and the steric clash analysis is reasonable given the structural data. However, C77 involves some speculation as it assumes similar substrate recognition modes, and the 4 \u00c5 resolution limits detailed analysis of the interface. The mutagenesis data (C72-C74) provide experimental support for the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "7813082d-c37a-4e4d-acba-7fe7758c14f4",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "TseV effectors represent the first example of T6SS effectors with structure-specific nuclease activity, and the VRR-Nuc domain has not previously been reported in biological conflicts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 assert the novelty of this work. C80 is supported by citations indicating the VRR-Nuc domain was not previously known in biological conflicts (though recently suggested in P. aeruginosa). C79's claim of being the 'first example' of structure-specific nuclease activity in T6SS effectors is supported by the characterization presented and comparison with previously reported effectors, though the specificity of other nuclease effectors may not have been as thoroughly characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "247dd526-d8b7-4876-9fa4-98aba3e637c4",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Based on TseV3's preference for splayed arm substrates, the authors hypothesize that TseV3 acts on replication forks or transcription bubbles, either directly creating double-strand breaks or promoting replication machinery collapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C82 present mechanistic hypotheses about TseV3's cellular targets. While the substrate specificity data (splayed arms) support the hypothesis that TseV3 targets replication forks or transcription bubbles, direct evidence for this mechanism in vivo is lacking. The GamGFP assay detects double-strand breaks but doesn't distinguish between direct cleavage and indirect effects. These are reasonable hypotheses requiring further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "e11b09d9-7601-44be-bf75-8272f9dba963",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Most T6SS immunity proteins neutralize effectors by binding to regulate enzymatic activity, with exceptions including Tri1 (dual mechanism) and TsiT (interfering with oligomerization).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 summarize established knowledge about T6SS immunity protein mechanisms from prior literature. These claims are appropriately cited and provide context for interpreting the TseV3:TsiV3 neutralization mechanism. This background is important for discussing the novelty of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    },
+    {
+      "id": "6104c916-2ebe-4d4d-9bd7-eea3ec4609ec",
+      "content_id": "8ed1d364-cb78-4d3e-a91a-8d56aacbbbb0",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The TsiV3 \u03b2-sheet binds to the \u03b12-helix of TseV3 (involved in DNA binding in other PD-(D/E)xK members), and superposition with PaFAN1:DNA structure suggests TsiV3 occludes the TseV3 substrate-binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 propose the neutralization mechanism based on structural analysis and comparison with PaFAN1. The identification of the \u03b12-helix interaction is supported by the structural model and literature on PD-(D/E)xK enzymes. The occlusion mechanism is inferred from structural superposition and is supported by mutagenesis data (C72-C74), though direct biochemical evidence (e.g., DNA binding assays with and without immunity protein) would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:29:36.352967Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a149f104-3e07-4256-a3af-ea81a534641a",
+      "result_id": "eab4638e-cf2b-47e8-b29b-9ac5a6d132f6"
+    },
+    {
+      "claim_id": "6c41c89b-725a-447a-9f74-f8d8a3d3f0f5",
+      "result_id": "eab4638e-cf2b-47e8-b29b-9ac5a6d132f6"
+    },
+    {
+      "claim_id": "3d31f573-3461-424e-bb6f-95392fc91858",
+      "result_id": "eab4638e-cf2b-47e8-b29b-9ac5a6d132f6"
+    },
+    {
+      "claim_id": "7acaaffc-ab1a-4c8f-9db1-4ae3a6eb9883",
+      "result_id": "eab4638e-cf2b-47e8-b29b-9ac5a6d132f6"
+    },
+    {
+      "claim_id": "9c242ee1-fbba-478d-b041-5f6a45958885",
+      "result_id": "eab4638e-cf2b-47e8-b29b-9ac5a6d132f6"
+    },
+    {
+      "claim_id": "f1e6eb4b-258f-4ea9-9fb2-82233bfab58a",
+      "result_id": "9d107112-9eaf-405a-ab74-55395e172c0d"
+    },
+    {
+      "claim_id": "46196892-4889-4864-9cc8-d776f67db386",
+      "result_id": "9d107112-9eaf-405a-ab74-55395e172c0d"
+    },
+    {
+      "claim_id": "68f25783-d912-4a71-aa5e-e2a67fa3dbc6",
+      "result_id": "9d107112-9eaf-405a-ab74-55395e172c0d"
+    },
+    {
+      "claim_id": "7439e9fc-ef53-461c-95c4-34d269480402",
+      "result_id": "9d498de7-b72f-418d-a0f2-f5260466f46a"
+    },
+    {
+      "claim_id": "542c6e0a-5f72-4148-8241-70337677e552",
+      "result_id": "9d498de7-b72f-418d-a0f2-f5260466f46a"
+    },
+    {
+      "claim_id": "dfa713e4-873a-4db4-b9d8-76c3c66e29b6",
+      "result_id": "9d498de7-b72f-418d-a0f2-f5260466f46a"
+    },
+    {
+      "claim_id": "e6a5c892-4435-4fdc-b218-3791aab12ca2",
+      "result_id": "9d498de7-b72f-418d-a0f2-f5260466f46a"
+    },
+    {
+      "claim_id": "6741e301-75c6-4a12-bab1-3dad33753f56",
+      "result_id": "9d498de7-b72f-418d-a0f2-f5260466f46a"
+    },
+    {
+      "claim_id": "d831113b-6e24-4462-9d19-a4bb914c94fe",
+      "result_id": "9d498de7-b72f-418d-a0f2-f5260466f46a"
+    },
+    {
+      "claim_id": "002eac90-1fc5-48b2-9f16-d441aa3cca1b",
+      "result_id": "9d498de7-b72f-418d-a0f2-f5260466f46a"
+    },
+    {
+      "claim_id": "4551fd80-3191-4a88-bcc9-c810c10c3a0e",
+      "result_id": "9d498de7-b72f-418d-a0f2-f5260466f46a"
+    },
+    {
+      "claim_id": "704a748e-895a-4124-b7fd-e72ccedf4f2f",
+      "result_id": "c47da511-e6e9-4c3e-a519-a6b3a2b0cf30"
+    },
+    {
+      "claim_id": "beb0494c-69b2-4734-8000-6392fc3308a0",
+      "result_id": "c47da511-e6e9-4c3e-a519-a6b3a2b0cf30"
+    },
+    {
+      "claim_id": "f3a424c0-cf20-466f-961b-497cad6d1a89",
+      "result_id": "c47da511-e6e9-4c3e-a519-a6b3a2b0cf30"
+    },
+    {
+      "claim_id": "3a4ba870-a95a-4042-9ed3-ddc2d2e6599f",
+      "result_id": "c47da511-e6e9-4c3e-a519-a6b3a2b0cf30"
+    },
+    {
+      "claim_id": "dc3844cd-a489-4fdf-8aee-4baa8001d003",
+      "result_id": "c47da511-e6e9-4c3e-a519-a6b3a2b0cf30"
+    },
+    {
+      "claim_id": "0006e6d2-7440-4ec2-a931-d78905f2d7de",
+      "result_id": "c47da511-e6e9-4c3e-a519-a6b3a2b0cf30"
+    },
+    {
+      "claim_id": "e96a429e-4acc-47a5-9493-e2b2ba4912a7",
+      "result_id": "c47da511-e6e9-4c3e-a519-a6b3a2b0cf30"
+    },
+    {
+      "claim_id": "1fb1dec8-47ea-4010-bc0b-d33a65f808f7",
+      "result_id": "8ad368d3-e1b7-491f-86e5-1f2d75989a9b"
+    },
+    {
+      "claim_id": "614983f8-e266-427b-927c-b1dc1304aa40",
+      "result_id": "8ad368d3-e1b7-491f-86e5-1f2d75989a9b"
+    },
+    {
+      "claim_id": "3473f6ae-b4b8-49c6-bde1-4f030c125275",
+      "result_id": "8ad368d3-e1b7-491f-86e5-1f2d75989a9b"
+    },
+    {
+      "claim_id": "85168929-2676-4ee1-a69d-a2021ef4002c",
+      "result_id": "eb410a55-17c9-4fb2-b385-f423a3792549"
+    },
+    {
+      "claim_id": "1307717d-fa8d-4771-9c46-3a4a9845f53b",
+      "result_id": "eb410a55-17c9-4fb2-b385-f423a3792549"
+    },
+    {
+      "claim_id": "16833246-0437-4593-b0ff-6d987a083ce8",
+      "result_id": "eb410a55-17c9-4fb2-b385-f423a3792549"
+    },
+    {
+      "claim_id": "fa01c9a5-914d-4f00-bed2-ace18dc355db",
+      "result_id": "eb410a55-17c9-4fb2-b385-f423a3792549"
+    },
+    {
+      "claim_id": "12abeea3-9646-4d95-887b-683ea765c81a",
+      "result_id": "61151b6e-3c5d-47db-a16a-5a1625058460"
+    },
+    {
+      "claim_id": "fce96c18-d50f-4578-a35b-4209a4b39aea",
+      "result_id": "61151b6e-3c5d-47db-a16a-5a1625058460"
+    },
+    {
+      "claim_id": "44450044-4549-43b3-9911-17d395965d7a",
+      "result_id": "61151b6e-3c5d-47db-a16a-5a1625058460"
+    },
+    {
+      "claim_id": "6c910912-d3bf-44e9-af02-d78bdd62ddeb",
+      "result_id": "61151b6e-3c5d-47db-a16a-5a1625058460"
+    },
+    {
+      "claim_id": "fc9f93ae-dcaa-4223-9a45-27062d4b3c75",
+      "result_id": "61151b6e-3c5d-47db-a16a-5a1625058460"
+    },
+    {
+      "claim_id": "27d37a67-556a-4f9f-bd8f-fdbbc101f5a1",
+      "result_id": "bd628694-e42a-47c0-b0cb-15c185a4aa54"
+    },
+    {
+      "claim_id": "d3618c32-3175-4a6c-b620-deac0d26314b",
+      "result_id": "bd628694-e42a-47c0-b0cb-15c185a4aa54"
+    },
+    {
+      "claim_id": "2d296ccc-f8fe-481c-a398-4e00dac7efef",
+      "result_id": "bd628694-e42a-47c0-b0cb-15c185a4aa54"
+    },
+    {
+      "claim_id": "cb8d87ea-6818-4a68-9935-e71d39240da5",
+      "result_id": "bd628694-e42a-47c0-b0cb-15c185a4aa54"
+    },
+    {
+      "claim_id": "47ab07d1-921e-4627-aa96-3a5c77e59905",
+      "result_id": "bd628694-e42a-47c0-b0cb-15c185a4aa54"
+    },
+    {
+      "claim_id": "c6d1b8dd-9a3f-445a-a7cc-467cab8cfbc9",
+      "result_id": "bd628694-e42a-47c0-b0cb-15c185a4aa54"
+    },
+    {
+      "claim_id": "0d2e796c-80f1-4bf6-8a3f-b439917efb9d",
+      "result_id": "4485a416-a252-4c42-b735-422523c792a2"
+    },
+    {
+      "claim_id": "e22482e4-d429-4b0b-be78-06a8bdc8c453",
+      "result_id": "4485a416-a252-4c42-b735-422523c792a2"
+    },
+    {
+      "claim_id": "7a833429-d59d-49a7-90f0-8584aea57728",
+      "result_id": "640667b6-938e-4499-aa4d-c31f47acc9d2"
+    },
+    {
+      "claim_id": "e9800ae9-2736-4868-8bf9-da4845b6bb77",
+      "result_id": "640667b6-938e-4499-aa4d-c31f47acc9d2"
+    },
+    {
+      "claim_id": "c9e6298c-6e27-40f5-b8eb-93b462bbe665",
+      "result_id": "640667b6-938e-4499-aa4d-c31f47acc9d2"
+    },
+    {
+      "claim_id": "1df5bb21-14fe-4ede-969b-eac71fc854d5",
+      "result_id": "336b53bc-641f-483c-a5eb-ddc5008dc676"
+    },
+    {
+      "claim_id": "cbb2886a-b81f-4abe-9d4b-3857416b29a5",
+      "result_id": "336b53bc-641f-483c-a5eb-ddc5008dc676"
+    },
+    {
+      "claim_id": "72ee0d04-0869-4586-8dac-7c71064d82d7",
+      "result_id": "336b53bc-641f-483c-a5eb-ddc5008dc676"
+    },
+    {
+      "claim_id": "8857d12f-847c-4886-ada5-10e66730f6d5",
+      "result_id": "336b53bc-641f-483c-a5eb-ddc5008dc676"
+    },
+    {
+      "claim_id": "bc26109b-9ddd-46de-a067-f88abe9b55a3",
+      "result_id": "336b53bc-641f-483c-a5eb-ddc5008dc676"
+    },
+    {
+      "claim_id": "dc9fb3ca-e0e7-4c77-a4ae-625b3529f172",
+      "result_id": "194d6d64-5e1b-4a36-bd1e-fd3af1811492"
+    },
+    {
+      "claim_id": "5e056561-0b76-4952-9dc8-6e1de20aa9f7",
+      "result_id": "194d6d64-5e1b-4a36-bd1e-fd3af1811492"
+    },
+    {
+      "claim_id": "db5b8a5f-a80a-4b24-862f-1cefa5404b93",
+      "result_id": "194d6d64-5e1b-4a36-bd1e-fd3af1811492"
+    },
+    {
+      "claim_id": "396f6a64-77bc-43e2-8d91-93e036a837d4",
+      "result_id": "194d6d64-5e1b-4a36-bd1e-fd3af1811492"
+    },
+    {
+      "claim_id": "982e7b98-e1b5-4854-a8e2-fb465ee3d270",
+      "result_id": "194d6d64-5e1b-4a36-bd1e-fd3af1811492"
+    },
+    {
+      "claim_id": "bd6262d8-6f41-40d7-b853-048997d53c45",
+      "result_id": "b816ba7a-4c4c-4175-8c1a-00be023a6eb7"
+    },
+    {
+      "claim_id": "cd51e5e0-4e8f-4c2e-a0fb-97f4b404d412",
+      "result_id": "b816ba7a-4c4c-4175-8c1a-00be023a6eb7"
+    },
+    {
+      "claim_id": "1106dcfb-749a-454f-8cac-1fab227087d5",
+      "result_id": "b816ba7a-4c4c-4175-8c1a-00be023a6eb7"
+    },
+    {
+      "claim_id": "86875695-4e22-41a7-96b2-54a43f721ba6",
+      "result_id": "b816ba7a-4c4c-4175-8c1a-00be023a6eb7"
+    },
+    {
+      "claim_id": "b16a7b76-09ef-4e0b-90ec-46ba9403dd7d",
+      "result_id": "b816ba7a-4c4c-4175-8c1a-00be023a6eb7"
+    },
+    {
+      "claim_id": "20f3665c-774a-47f1-baff-6c7ddbbf3a13",
+      "result_id": "b816ba7a-4c4c-4175-8c1a-00be023a6eb7"
+    },
+    {
+      "claim_id": "d55261ae-0e41-4ef4-a814-76f7b7742f08",
+      "result_id": "b816ba7a-4c4c-4175-8c1a-00be023a6eb7"
+    },
+    {
+      "claim_id": "4d58b9d0-ec67-4857-9cc1-b8518efa683c",
+      "result_id": "872c67d5-3795-4d3d-9e06-8d6a182c7552"
+    },
+    {
+      "claim_id": "3c610444-aef8-4631-a235-d4908432bd41",
+      "result_id": "872c67d5-3795-4d3d-9e06-8d6a182c7552"
+    },
+    {
+      "claim_id": "5ff74869-516a-4b17-b784-fb3e29489a17",
+      "result_id": "7aa1604a-e402-4987-b053-3a792df1f770"
+    },
+    {
+      "claim_id": "2ed613d8-5198-4cc2-a4a8-dd9d5ffd9520",
+      "result_id": "7aa1604a-e402-4987-b053-3a792df1f770"
+    },
+    {
+      "claim_id": "f547b481-4e86-4db8-a8b1-6ac224d49a6c",
+      "result_id": "7aa1604a-e402-4987-b053-3a792df1f770"
+    },
+    {
+      "claim_id": "aba36b90-2344-4d8b-bcf2-b128673af552",
+      "result_id": "7aa1604a-e402-4987-b053-3a792df1f770"
+    },
+    {
+      "claim_id": "2b6a033d-4e30-4374-b7ff-e64d60aa3258",
+      "result_id": "7aa1604a-e402-4987-b053-3a792df1f770"
+    },
+    {
+      "claim_id": "76716328-02af-49f1-ac83-6bacdedf9f8f",
+      "result_id": "0dfa4674-ff5c-4f56-8020-b627c21982a1"
+    },
+    {
+      "claim_id": "a2dd6507-9c8d-4a44-9105-51839ac13598",
+      "result_id": "0dfa4674-ff5c-4f56-8020-b627c21982a1"
+    },
+    {
+      "claim_id": "3078151b-9402-41bd-9ce6-1549c32c180c",
+      "result_id": "0dfa4674-ff5c-4f56-8020-b627c21982a1"
+    },
+    {
+      "claim_id": "a54277b1-1e3a-484e-9e7b-df9e1030e1c7",
+      "result_id": "b8f792f1-410a-4ac7-8384-456944a62cbe"
+    },
+    {
+      "claim_id": "75e35695-bca4-4500-8acd-2736a3fc24ab",
+      "result_id": "b8f792f1-410a-4ac7-8384-456944a62cbe"
+    },
+    {
+      "claim_id": "248baeb0-69b5-4679-a112-a7ff9fdb5a1e",
+      "result_id": "b8f792f1-410a-4ac7-8384-456944a62cbe"
+    },
+    {
+      "claim_id": "87eb58c0-31fb-49dc-9a63-e49770088cab",
+      "result_id": "b8f792f1-410a-4ac7-8384-456944a62cbe"
+    },
+    {
+      "claim_id": "fc9a35bc-e8b0-434f-ac8c-7952eb57f280",
+      "result_id": "7813082d-c37a-4e4d-acba-7fe7758c14f4"
+    },
+    {
+      "claim_id": "2180eaa5-8f52-424d-ac70-f0f099a0941f",
+      "result_id": "7813082d-c37a-4e4d-acba-7fe7758c14f4"
+    },
+    {
+      "claim_id": "47989c56-579d-4de5-8ff0-39d895a047f6",
+      "result_id": "247dd526-d8b7-4876-9fa4-98aba3e637c4"
+    },
+    {
+      "claim_id": "8bf451d9-0ae9-4c36-9be9-e7726356a123",
+      "result_id": "247dd526-d8b7-4876-9fa4-98aba3e637c4"
+    },
+    {
+      "claim_id": "ef94dc16-9811-48ee-b84c-fabf03058585",
+      "result_id": "e11b09d9-7601-44be-bf75-8272f9dba963"
+    },
+    {
+      "claim_id": "db37c9bf-b1cc-4b94-9cf8-c7259e7b9138",
+      "result_id": "e11b09d9-7601-44be-bf75-8272f9dba963"
+    },
+    {
+      "claim_id": "201e8a65-1b82-432e-948a-bb2942f4cd5b",
+      "result_id": "e11b09d9-7601-44be-bf75-8272f9dba963"
+    },
+    {
+      "claim_id": "0f907a9d-b9a1-488b-8e8d-bd967f206b1e",
+      "result_id": "6104c916-2ebe-4d4d-9bd7-eea3ec4609ec"
+    },
+    {
+      "claim_id": "112ccabe-cac1-4587-bc25-0cb41a4ca251",
+      "result_id": "6104c916-2ebe-4d4d-9bd7-eea3ec4609ec"
+    }
+  ],
+  "comparisons": []
+}

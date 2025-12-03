@@ -1,0 +1,1710 @@
+{
+  "submission": {
+    "id": "a7ca9f17-93df-4a13-a998-993297989151",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:23:21.187690Z",
+    "updated_at": "2025-12-03T17:23:21.187690Z"
+  },
+  "content": [
+    {
+      "id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "submission_id": "a7ca9f17-93df-4a13-a998-993297989151",
+      "content_type": "manuscript",
+      "content_text": "# Variation in the ACE2 receptor has limited utility for SARS-CoV-2 host prediction\n\n## Authors\n\n- Nardus Mollentze<sup>1</sup> ([ORCID: 0000-0002-2452-6416](https://orcid.org/0000-0002-2452-6416)) \u2020\n- Deborah Keen<sup>1</sup> ([ORCID: 0000-0002-6735-6330](https://orcid.org/0000-0002-6735-6330))\n- Uuriintuya Munkhbayar<sup>1</sup>\n- Roman Biek<sup>1</sup> ([ORCID: 0000-0003-3471-5357](https://orcid.org/0000-0003-3471-5357))\n- Daniel G Streicker<sup>1</sup> ([ORCID: 0000-0001-7475-2705](https://orcid.org/0000-0001-7475-2705))\n\n### Affiliations\n\n1. School of Biodiversity, One Health & Veterinary Medicine, College of Medical, Veterinary, and Life Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))\n2. Medical Research Council \u2013 University of Glasgow Centre for Virus Research Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransmission of SARS-CoV-2 from humans to other species threatens wildlife conservation and may create novel sources of viral diversity for future zoonotic transmission. A variety of computational heuristics have been developed to pre-emptively identify susceptible host species based on variation in the angiotensin-converting enzyme 2 (ACE2) receptor used for viral entry. However, the predictive performance of these heuristics remains unknown. Using a newly compiled database of 96 species, we show that, while variation in ACE2 can be used by machine learning models to accurately predict animal susceptibility to sarbecoviruses (accuracy = 80.2%, binomial confidence interval [CI]: 70.8\u201387.6%), the sites informing predictions have no known involvement in virus binding and instead recapitulate host phylogeny. Models trained on host phylogeny alone performed equally well (accuracy = 84.4%, CI: 75.5\u201391.0%) and at a level equivalent to retrospective assessments of accuracy for previously published models. These results suggest that the predictive power of ACE2-based models derives from strong correlations with host phylogeny rather than processes which can be mechanistically linked to infection biology. Further, biased availability of ACE2 sequences misleads projections of the number and geographic distribution of at-risk species. Models based on host phylogeny reduce this bias, but identify a very large number of susceptible species, implying that model predictions must be combined with local knowledge of exposure risk to practically guide surveillance. Identifying barriers to viral infection or onward transmission beyond receptor binding and incorporating data which are independent of host phylogeny will be necessary to manage the ongoing risk of establishment of novel animal reservoirs of SARS-CoV-2.\n\n## Introduction\n\nThe global spread and high incidence of severe acute respiratory syndrome-associated virus 2 (SARS-CoV-2) has enabled human-to-animal transmission (hereafter, \u2018reverse zoonotic\u2019 transmission) in a variety of taxa and environmental contexts. For example, reports have described household transmission to domestic dogs and cats, transmission to lions and tigers in zoos, transmission to farmed mink, and transmission to free-living white-tailed deer (Barrs et al., 2020; Kuchipudi et al., 2022; McAloose et al., 2020; Sit et al., 2020). While the majority of such spillovers are likely to be dead-ends for the virus, repeated introductions followed by onward transmission have been reported in both European mink and North American deer (Kuchipudi et al., 2022; Oreshkova et al., 2020; Oude Munnink et al., 2021). The potential for reverse zoonotic transmission to both threaten wild and domestic animal health and to foster viral evolutionary diversification that could ultimately be re-introduced into humans (Hammer et al., 2021; Oude Munnink et al., 2021) has led to a surge of interest in pro-actively identifying potentially susceptible species in which surveillance could more efficiently detect reverse zoonotic spillover or sustained transmission of SARS-CoV-2.\n\nEvidence-based prioritisation of SARS-CoV-2 surveillance in animals has proven intractable through traditional approaches. Animal infection experiments have demonstrated that a broad range of species spanning multiple mammalian orders are susceptible (Freuling et al., 2020; Munster et al., 2020; Mykytyn et al., 2021; Schlottau et al., 2020; Shi et al., 2020; Zhao et al., 2020). Yet, infection experiments also suggest fine-scaled variation in susceptibility within mammalian orders. For example, Egyptian fruit bats (Rousettus aegyptiacus) can be infected experimentally with SARS-CoV-2, while attempts to establish infection in big brown bats (Eptesicus fuscus) have thus far failed (Hall et al., 2020; Schlottau et al., 2020). This combination of wide host range with variable susceptibility within groups creates logistical and financial challenges to establishing susceptibility using experimental infections, since large numbers of taxa would need to be investigated. Cell culture-based compatibility assays, an alternative to in vivo infections for evaluating potential host range, are more scalable, but how well they map to susceptibility remains unclear.\n\nA large number of computational heuristics have been developed to address the challenge of predicting the host range of SARS-CoV-2 in the absence of comprehensive experimental evidence. Most utilise the amino acid sequence of angiotensin-converting enzyme 2 (ACE2, the host receptor involved in entry of SARS-CoV-2) and base predictions on measures of similarity to human ACE2, reasoning that changes relative to this sequence (particularly at amino acid positions known to interact with the SARS-CoV-2 spike protein) decrease the probability of successful infection (Ahmed et al., 2021; Alexander et al., 2020; Damas et al., 2020; Frank et al., 2020; Kumar et al., 2021; Luan et al., 2020; Melin et al., 2020; Qiu et al., 2020). A related structural approach has compared computational estimates of binding strength (here grouped together as \u2018binding affinity\u2019) between the modelled ACE2 protein structures of different species and the SARS-CoV-2 spike protein, reasoning that stronger binding supports susceptibility (Huang et al., 2020; Lam et al., 2020; Rodrigues et al., 2020). A final approach predicted whether binding strength was above a fixed threshold which was assumed to represent susceptibility and capacity for onward transmission, using ecological and physiological traits of host species (Fischhoff et al., 2021). A limitation common to all efforts to date is that they have focused on untested surrogates of susceptibility, namely ACE2 similarity or binding affinity. This has two immediate drawbacks. First, how these surrogates map to susceptibility is unknown, leading to the development of largely arbitrary thresholds for deciding risk of infection. Second, since no model has been trained or validated using observed data on susceptibility (the outcome of interest), standard metrics of predictive value (e.g., sensitivity, specificity, accuracy) have not been quantified.\n\nThe recent accumulation of reports of SARS-CoV-2 spillover to various species, alongside ongoing efforts to characterise the host range of sarbecoviruses experimentally and via virus discovery, provides an exciting opportunity to develop verifiable models of sarbecovirus host range. Here, we assembled a database of compatibility across 96 species and trained sets of machine learning models to distinguish susceptible from non-susceptible species. We sought to understand the relative predictive power of commonly employed sequence and structural binding-based representations of ACE2 and to retrospectively assess the accuracy of previously published prediction methods against our compatibility database. By incorporating new metrics into model training, we also tested whether the exclusive focus on ACE2 is warranted, and whether predictive performance could be improved by considering evolutionary relationships among hosts. Finally, we used the best-performing models to assess geographic and taxonomic biases in the distribution of predicted sarbecovirus hosts that may arise depending on input data available and explore whether sarbecovirus host range prediction can be used to generate actionable insights for ongoing SARS-CoV-2 surveillance efforts in non-human animals.\n\n## Results\n\nOur final dataset contained records of interactions between sarbecoviruses and 96 mammalian and avian host species. Reports included natural infections (N=25) and the outcomes of experimental inoculations of captive animals (N=28), where in both cases subsequent detection of viral RNA in, or virus isolation from, nasal or rectal swabs or faeces was considered evidence of susceptibility. We also separately recorded whether species were shown to shed infectious virus (either through virus isolation or infection of other animals), but available data were limited to 23 species, of which only 17 shed infectious virus (Figure 1). To investigate the utility of in vitro data in the absence of natural infections or in vivo data, we also collected evidence of compatibility in cell culture experiments which involved either direct inoculation of cell cultures from each species (N=4) or inoculation of cells expressing heterologous ACE2 (N=39). We treated these different sources of information hierarchically, considering the best available evidence for compatibility or incompatibility in each host species (natural infection > experimental infection > cell culture > heterologous ACE2 cell culture experiments). Importantly, we included records from any strain of Severe Acute Respiratory Syndrome Coronavirus, a species which includes SARS-CoV, SARS-CoV-2, and several related strains. Therefore, a key assumption of our work is that susceptibility to different sarbecoviruses overlaps sufficiently to be modelled jointly. In support of this assumption, most susceptible species in our data (88%) have been linked to at least one sarbecovirus known to use the ACE2 receptor, and among the 10 included host species with records of natural SARS-CoV-2 infection, many were also reported to be susceptible to other sarbecoviruses (N=6), primarily SARS-CoV (N=5, Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig1-v1.jpg)\n\n**Figure 1.:** (A) Species for which susceptibility to infection and shedding of infectious virus have been assessed. Colours indicate the best available evidence, while symbols show the viruses involved. Blank rows in the shedding panel indicate missing data. A composite phylogeny derived from TimeTree indicates evolutionary relationships and median estimated divergence times. (B) Measurements of phylogenetic clustering when considering increasingly relaxed evidence quality thresholds, based on the phylogeny in (A). Outlined circles show likelihood ratio p-values \u22640.003, indicating greater clustering of infection records than expected by chance, while the cross indicates a p-value of 0.186. (C\u2013D) Pairwise cophenetic distances between each host and its closest infected (C) or non-infected (D) neighbour. (E\u2013F) Total Grantham distance between the angiotensin-converting enzyme 2 (ACE2) sequence of each host and its closest infected (E) or non-infected (F) neighbour. p-Values from a Wilcoxon rank sum test are indicated in (C\u2013F), and overlapping values from different hosts are jittered horizontally. Note that while both p-values and boxplots are based on a single value for each host, overlapping symbols at the same position are used to indicate different viruses (e.g., a species known to be susceptible to both SARS-CoV [\u25b2] and SARS-CoV-2 [\u25bc] would be indicated using a star formed of overlapping triangles).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Tanglegram linking species across the two phylogenies, with sarbecovirus-susceptible species indicated in orange and putatively non-susceptible species in blue. Grey lines indicate species with unknown susceptibility. The maximum likelihood ACE2 phylogeny was constructed using an alignment of all available ACE2 ortholog sequences from species also occurring in the TimeTree database (N=253). The TimeTree phylogeny was trimmed to contain the same species. (B) Correlation between pairwise cophenetic distances calculated from the two phylogenies. A linear regression trendline is shown for visualisation purposes only.\n\nTo explore the host range of sarbecoviruses and how susceptibility varies within animal groups, we first quantified how susceptible and non-susceptible species were distributed across both a general time-scaled phylogeny based on the accepted patterns of evolutionary divergence among hosts (derived from TimeTree; Kumar et al., 2017) and a maximum likelihood phylogeny constructed from ACE2 orthologs (using the NCBI reference sequence for each species in most cases, see Methods). Sarbecovirus susceptibility was highly conserved within both host phylogenies (Pagel\u2019s \u03bb>0.686, likelihood ratio test p-values \u22640.003; Figure 1A\u2013B). Clustering was particularly strong among non-susceptible species, which tended to be closer to other non-susceptible species than known susceptible host species, both in terms of divergence dates and ACE2 amino acid distances (Figure 1C\u2013F). This remained true when focusing on mammals only (Wilcoxon rank sum test p-value <0.001), indicating that results were not driven by the large evolutionary divergence between birds (mostly non-susceptible) and mammals, which comprised the majority of susceptible records. Further, a phylogeny based on all available ACE2 ortholog sequences closely matched the topology and branch lengths of the time-scaled phylogeny (Baker\u2019s \u03b3 correlation coefficient = 0.934, permutation test p-value <0.001; Spearman\u2019s \u03c1 correlation of pairwise distances = 0.870, Figure 1\u2014figure supplement 1). Together, these results show that variation in ACE2 largely mirrors host evolutionary relationships, but it is still possible that current ACE2-based heuristics for predicting susceptibility to SARS-CoV-2 leverage areas of phylogenetic incongruence.\n\nWe therefore trained a series of machine learning models using metrics which captured the breadth of currently used representations of the information embedded in ACE2 (sequence dissimilarity and binding affinity with SARS-CoV-2 spike). We also tested whether representing information about individual ACE2 amino acid positions could outperform these commonly used representations. Individual positions were represented by either the observed amino acids (\u2018AA categorical\u2019), the physicochemical properties of observed amino acids (\u2018AA properties\u2019), or as a distance to the most common amino acid observed among susceptible species at the same position (\u2018AA consensus distance\u2019). In terms of sensitivity, no ACE2 representation performed markedly better than a null model which randomly assigned species as \u2018susceptible\u2019 or \u2018non-susceptible\u2019 in proportion to the frequency of susceptible species in the training data (Figure 2). In contrast, specificity varied more dramatically among representations and all outperformed the null model, indicating that ACE2 can rule out non-susceptible species. However, since non-susceptible species were rare in our training data (N=21), only two models (using either the AA consensus distance or AA properties representations) clearly outperformed the null in terms of overall accuracy. The best-performing model (AA consensus distance) correctly predicted the susceptibility or non-susceptibility of 77 of 96 species (80.2%, 95% binomial confidence interval [CI]: 70.8\u201387.6%). Among other models, we found that encoding ACE2 amino acid distances relative to the closest susceptible species (\u2018distance to susceptible\u2019) outperformed the widely used metric of distance to human ACE2 (\u2018distance to humans\u2019) in terms of specificity while maintaining high sensitivity. The AA categorical model performed considerably worse than the null across all performance metrics (Figure 2). Combining all representations of ACE2 had little effect on performance (74.0% accurate, CI: 64.0\u201382.4%), suggesting that divergence at key ACE2 amino acids from the susceptible consensus (and most other possible representations of ACE2 sequences) and structural models of binding affinity supply equivalent information. However, mis-classified species differed between individual models, meaning performance was improved by averaging predictions from any two ACE2-based models (ensemble models, Figure 2). This included an ensemble averaging predictions from two iterations of a model trained on the same ACE2 representation, suggesting that these minor improvements in performance stem purely from random variation between models (likely driven by the large numbers of features available for selection in any one representation) and not from unique information in different sequence representations (AA consensus distance/AA consensus distance ensemble, Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig2-v1.jpg)\n\n**Figure 2.:** Bars represent proportions from leave-one-out cross-validation, with error bars indicating 95% binomial confidence intervals. Dashed vertical lines indicate the performance expected from a null model which randomly assigns susceptibility in proportion to its frequency in the training data (78.12% of available hosts are considered susceptible, N=96). Dotted vertical lines highlight performance of the best model in each panel.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Bars represent proportions from leave-one-out cross-validation, with error bars indicating 95% binomial confidence intervals. Dashed vertical lines indicate the performance expected from a null model which randomly assigns shedding/non-shedding labels in proportion to their frequency in the training data (73.9% of hosts were reported to shed infectious virus, N=23). Dotted vertical lines highlight performance of the best model in each panel. The low number of species for which their ability to shed infectious virus has been reported means no tested model currently outperforms random guessing across both sensitivity and specificity.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Performance of different models trained on all available data. Holdout predictions for individual species were grouped by the best available evidence of susceptibility or non-susceptibility to calculate performance metrics only. N/A indicates no suitable observations in a given category (e.g., cell culture data added no new susceptible species, meaning we cannot calculate the sensitivity of models on cell culture data). These are the same models as in Figure 2. (B) Performance of two alternative models trained using all ACE2 representations combined with phylogenetic eigenvectors, but with subsets of the full dataset as training data. The first panel in both rows indicates the size of each data subset. In all other panels, bars represent proportions from leave-one-out cross-validation, with error bars indicating 95% binomial confidence intervals. Since there are no consistent trends in model performance across data sources in (A), we conclude that the inclusion of cell culture and heterologous ACE2-based data are not affecting our ability to compare different models. In contrast, removing these data sources leads to severe decreases in model performance, likely due to low sample sizes (B). This identifies cell culture experiments, including experiments testing only binding of heterologous ACE2, as useful additional sources of compatibility data when this would otherwise be limited.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The model was trained on all hosts, with performance evaluated using leave-one-out cross-validation. In the first panel, bars represent sample sizes for susceptible species (orange) and non-susceptible species (blue). In all other panels, bars represent the proportion of species in each category accurately predicted, with error bars indicating 95% binomial confidence intervals. Similar performance suggests that ACE2-based models are equally capable of predicting the susceptibility of species thus far linked only to non-ACE2-utilising sarbecoviruses and those linked to other sarbecoviruses.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The model was trained on all hosts, with performance evaluated using leave-one-out cross-validation. In the first panel, bars represent sample sizes for susceptible species (orange) and non-susceptible species (blue). In all other panels, bars represent the proportion of species in each category accurately predicted, with error bars indicating 95% binomial confidence intervals. As was the case for ACE2-based models (Figure 2\u2014figure supplement 3), phylogeny-based models are equally capable of predicting the susceptibility of species thus far linked only to non-ACE2-utilising sarbecoviruses and those linked to other sarbecoviruses.\n\nHigh congruence between the overall host phylogeny and the phylogeny of ACE2 (Figure 1, Figure 1\u2014figure supplement 1) raised the possibility that successful prediction of sarbecovirus hosts could arise through the correlation of variation in ACE2 with other evolutionarily conserved features of host biology which define susceptibility, rather than reflecting the disproportionate mechanistic importance of ACE2. Exploiting this correlation would be practically desirable since it would produce models which could be applied to all species, rather than only those with publicly available ACE2 sequences. We therefore tested models of sarbecovirus susceptibility which used phylogenetic eigenvectors to represent the time-scaled phylogeny for all amniotes (the taxonomic clade including both mammals and birds). The phylogeny-only model performed equivalently to the best ACE2-only models, correctly predicting susceptibility labels of 81 species (84.4%, CI: 75.5\u201391.0%) with a nearly identical sensitivity alongside improved specificity (\u2018phylogenetic eigenvectors\u2019, Figure 2). Combining phylogeny with either the best-performing ACE2 representation or all ACE2 representations performed similarly to phylogeny alone (Figure 2), suggesting that ACE2 sequences and measures of binding affinity supply information that is redundant with host divergence patterns. Similar performance was also observed when averaging numeric predictions from individual ACE2-based and phylogeny-only models (\u2018All ACE2 representations/phylogeny ensemble\u2019, Figure 2; 81.2% accurate, CI: 72.0\u201388.5%).\n\nDeeper analysis of the features used by our ACE2-only models to classify host susceptibility supported the hypothesis that much of their accuracy derives from correlation with host phylogeny. The model trained with all ACE2-representations (but not phylogeny) retained 25 features, of which just two were clearly linked to virus interaction (both representations of binding affinity, Figure 3\u2014figure supplement 1). The remaining 23 features described information about individual ACE2 positions, primarily in the form of amino acid properties (hydrophobicity, polarity, and Van der Waals volume). Several of these features represented the same positions (e.g., hydrophobicity and Van der Waals volume of position 752), meaning the model used just 18 positions in the ACE2 alignment (Figure 3\u2014figure supplement 1). Notably, only one of these positions is known to interact with the SARS-CoV-2 spike protein (position 82), but included positions did contain more phylogenetic information than average (as measured by Shannon entropy, Figure 3; Wilcoxon rank sum test p-value <0.001), suggesting they largely reconstructed host phylogeny. Similar results were observed in the best-performing ACE2-only model (the individual site-based \u2018AA consensus distance\u2019 model), which retained no known spike-binding sites (Figure 3). This implies that the inclusion of binding affinity measurements cannot explain the \u2018All ACE2 representation\u2019 model\u2019s selection of phylogenetically informative sites over known spike-binding sites. It is possible that the model-selected sites were randomly selected proxies for the same information in correlated spike-binding sites. However, it is unclear why the same sites would have been repeatedly selected from among the large number of correlated alternatives (Figure 3), and why they would be consistently preferred over spike-interacting sites themselves. Further, a model based only on spike-binding sites performed considerably worse than other ACE2-based models (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig3-v1.jpg)\n\n**Figure 3.:** Positions are stratified by whether or not they form part of any features retained by the combined ACE2-based model (i.e., the model trained with access to all ACE2 representations, left panel) or the best-performing ACE2-based model, which lacked binding affinity information (right panel). Colours indicate whether the site in question is known to interact with the SARS-CoV-2 spike protein (based on annotations in the human reference sequence, accession number NP_001358344.1) or belongs to a cluster of correlated features which also contains at least one such spike-interacting site. Clusters were obtained using affinity propagation clustering of pairwise Spearman correlations between sites. p-Values obtained through a Wilcoxon rank sum test. Sequence positions indicated next to selected points refer to locations in the human ACE2 reference sequence. Overlapping points are jittered horizontally.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Importance of individual features in determining final predictions. Importance was measured using mean absolute SHAP values across all host species in the training data. An inset shows the same mean effect magnitudes calculated separately for rhinolophid bats and other species, with a dashed line indicating a 1:1 relationship. Both axes of the inset plot are shown on a log10 scale for clarity. Since all effect magnitudes are similar between rhinolophid bats and other species (indicated by being close to the dashed line), we conclude that the ACE2-based model trained on all species uses the same limited number of features and sequence positions to predict susceptibility of both groups. (B) Combined importance for individual ACE2 sequence positions, obtained by summing values from (A) whenever features represent the same position. Sequence positions refer to locations in the human ACE2 reference sequence (accession number NP_001358344.1).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Both models represent individual ACE2 sites as a distance between the observed amino acid and the most common amino acid at that site among known susceptible species. Spike-binding sites were identified from annotations to the human ACE2 sequence (accession number NP_001358344.1). Removing phylogenetically informative sites to focus on ACE2 positions with known mechanistic links to susceptibility decreases our ability to predict susceptibility to sarbecovirus infection.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Excluding rhinolophid bats has no effect on model performance, suggesting that any potentially different evolutionary pressures on the ACE2 sequences of putative sarbecovirus reservoirs compared to other species did not negatively affect our models.\n\nTo ensure that our machine learning approach adequately captured earlier representations of ACE2 sequences, we next compared predictions from our ACE2- and host phylogeny-based models to those of previously published heuristics. Strong correlations between predictions from our combined ACE2-based model and those from earlier studies confirmed that it was broadly representative of earlier approaches (Figure 4\u2014figure supplement 1). Direct comparisons of model performance were difficult given the absence of performance metrics for previously published heuristics and wide variation in the number and identity of species for which prediction was attempted. However, performance appeared to be broadly similar across studies, with binding affinity-based predictions performing best (Huang et al., 2020), followed by distance-based and finally host trait-based approaches (Figure 4). Most distance-based approaches achieved their high accuracy by prioritising sensitivity (i.e., accurate prediction of susceptible species, which dominate current data), and had very low specificity (Figure 4B). The performance of our models based on fitted values (the most comparable approach to previous heuristics) was equivalent to that of the best previously published heuristic (Huang et al., 2020). Formal holdout-based measurements of performance for our ensemble and phylogeny-only models also overlapped with the best performing heuristics, further suggesting comparable performance, despite the more stringent evaluation. This identifies predictions based on host phylogeny as a viable alternative to ACE2 sequences for which availability remains limited.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig4-v1.jpg)\n\n**Figure 4.:** (A) Overall accuracy, based on all species in our data for which predictions were available in each study. Accuracy measurements are arranged by increasing sample size, also indicated in colour. A dashed line indicates the performance expected from a null model which assigns labels in proportion to the frequency of susceptible species observed in the full training dataset. Note that variation in the number of species and the exact focus of predictions across studies necessitates cautious interpretation of performance metrics. (B) Trade-offs between sensitivity and specificity. A dotted line indicates balanced sensitivity and specificity, colours as in (A). For clarity, only studies providing predictions for \u226530 species in our data are shown. In both panels, error bars represent 95% binomial confidence intervals. Earlier studies provided no formal metrics of model performance and used fixed cutoff values selected based on observed susceptibility in the predicted species, rather than from independent data. This makes it impossible to calculate performance metrics directly comparable to the formal holdout-based measures used in this study. To allow comparison, we therefore include the equivalent measures of performance based on training data for our models (\u2018fitted values\u2019), including the best-performing ACE2-based model (AA consensus distance/AA consensus distance ensemble) and the host phylogeny-based model. Note, however, that all such measures will overestimate performance on new taxa. Performance metrics based on \u2018holdout predictions\u2019 (Figure 2) provide a more generalisable view of future performance.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Heatmap comparing overlapping quantitative predictions for the same species across studies, where susceptibility is known. Quantitative scores from all studies were re-scaled to lie in [0, 1] to allow comparison. A time-scaled phylogeny along the left edge shows evolutionary relationships between species (derived from TimeTree, scale bar indicates millions of years), while the hierarchical clustering dendrogram above the heatmap shows similarities between studies based on pairwise Spearman correlations (\u03c1) across all overlapping species (including species with unknown susceptibility). (B) Ability of different heuristics to separate known susceptible and non-susceptible species. Boxplots were calculated using one observation per species, but overlapping symbols at the same position are used to indicate known susceptibility or non-susceptibility to multiple viruses. To allow comparison with published heuristics, the displayed quantitative scores from this study were taken from models fitted to all data, meaning they represent fitted values rather than holdout predictions. This matches the way quantitative scores were produced in earlier heuristics; all other plots use holdout predictions. Clustering of our \u2018All ACE2 representations\u2019 model in the midst of previously published heuristics (panel A, maximum \u03c1=0.744) confirms that our ACE2-based models capture the bulk of currently used approaches for predicting sarbecovirus host range as intended, meaning our formal holdout-based results showing an inability of ACE2-based models to outperform phylogeny likely extends to these earlier heuristics (also visible in (B)).\n\nFinally, we investigated how including host phylogeny when predicting host range would influence recommendations for targeted surveillance of sarbecovirus spillovers. We produced predictions for all mammals and birds with available ACE2 sequences or which were included in our time-scaled phylogeny, but focus our analysis on mammals since training data for birds were extremely limited (Supplementary file 2). Our best-performing ACE2-based model, the AA consensus distance/AA consensus distance ensemble, predicted 87.6% of mammals to be susceptible (N=178). This is broadly in line with currently available data, where 82.2% of mammals are reported to be susceptible (N=90; Figure 1). Mapping the distribution of terrestrial wild mammal species predicted to be susceptible by this model revealed an apparent hotspot in South-East Asia (Figure 5C), as previously observed by Fischhoff et al., 2021. However, species in this region were not more likely to be susceptible to sarbecoviruses than expected by chance (Figure 5E). Instead, the observed concentration of putatively susceptible species appears to be shaped largely by the increased availability of ACE2 sequences for species from this region (Figure 5A). Indeed, the only regions in which more susceptible species were predicted than expected under a uniform spatial distribution were areas containing very few species with available ACE2 sequences (e.g., the arctic and the Sahara desert).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) Number of species available for prediction by (A) ACE2-based models (limited by ACE2 availability) and (B) phylogeny-based models (nearly all mammals, in this figure limited primarily by the availability of IUCN range data). (C\u2013D) Number of species predicted to be susceptible by (C) the best ACE2-based model (AA consensus distance/AA consensus distance ensemble), and (D) the host phylogeny-only model (phylogenetic eigenvectors). (E\u2013F) Observed over expected ratio comparing the proportion of species in each location predicted as susceptible to the baseline expectation in which the overall proportion of mammal species predicted as susceptible by the relevant model is distributed homogeneously. Values below one indicate a lower proportion than expected, while values above one indicate a higher proportion than expected (i.e., putative hotspots of susceptibility). (E) Predictions from the best ACE2-based model; (F) predictions from the phylogeny-only model.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Mammal species are arranged by model output, with higher scores indicating species predicted as more likely to be susceptible to sarbecovirus infection. A dashed line shows the optimised cutoff beyond which species were predicted as susceptible. Colours indicate known susceptible or non-susceptible species. Tick marks along the x-axis indicate the location of species known to also shed infectious virus after infection, with a limited selection of species labelled for orientation. Red boxes highlight the effect of focusing surveillance effort on the top-ranked species only, with the percentage of all species included indicated by vertical labels. Horizontal labels highlight the number of mammal species included by each cutoff, with the proportion of all known susceptible species included indicated in parentheses. Attempts to limit the number of species requiring surveillance to feasible numbers by focusing only on the most confident predictions risks missing large numbers of susceptible species.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Proportion of species either observed or predicted to be susceptible by different models. Error bars indicate 95% binomial confidence intervals. A time-scaled phylogeny illustrates divergence patterns between groups (derived from TimeTree). Taxonomic orders which were polyphyletic in this phylogeny were merged, and are indicated using a forward-slash (e.g., Coraciiformes/Leptosomiformes). Red branches and bold labels highlight the Boreoeutheria clade. (B) Relationship between the number of susceptible species in each taxonomic order and the size of each order. Models can exclude some taxonomic orders from requiring surveillance, but most orders which do contain susceptible species show limited variation in susceptibility. This limits our ability to target surveillance below the taxonomic order level (but see Figure 5\u2014figure supplement 3).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** All taxonomic orders within the Boreoeutheria clade containing at least one observed or predicted susceptible species are shown. Error bars indicate 95% binomial confidence intervals. The Chiroptera and Rodentia orders include several families predicted to contain no susceptible species, but both current observations and model predictions suggest little variation in susceptibility below the family level.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80329/elife-80329-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** All taxonomic orders within the Boreoeutheria clade containing at least one species predicted as susceptible are shown. Only bats and rodents show variation, likely due to family-level differences in susceptibility (Figure 5\u2014figure supplement 3).\n\nBy allowing predictions on species without available ACE2 sequences, the phylogeny-only model leads to different conclusions on how surveillance might be targeted. This model reduces the proportion of susceptible mammals from 87.6% to 42.7% (N=4183), but this still implies the need for surveillance in 1785 mammal species (Figure 5\u2014figure supplement 1). In contrast to the ACE2-based predictions, geographic risk was diffused across most of the tropics and subtropics with apparent hotspots limited to areas with very low species diversity (Figure 5D and F). Thus, this model \u2013 which performs comparably to or better than ACE2-based models \u2013 suggests that clearly defined geographic hotspots of host susceptibility suitable for targeted surveillance are unlikely to exist. Consistent with observed data, in most mammalian taxonomic orders that contained susceptible species, all included species were predicted to be susceptible (Figure 5\u2014figure supplement 2). Interestingly however, primates, rodents, and bats deviated from this pattern, containing several families with no species predicted as susceptible (Figure 5\u2014figure supplement 3, Figure 5\u2014figure supplement 4). Thus, while the wide host range of sarbecoviruses makes it impractical to specifically target surveillance, it may be possible to exclude some groups from consideration.\n\n## Discussion\n\nFrequent spillovers of SARS-CoV-2 from human to non-human hosts has led to a surge in the development of heuristics that seek to predict which species are likely to be susceptible. However, the predictive power of these heuristics or their utility for guiding research and surveillance remained unclear. By cataloguing available data on sarbecovirus host range, we show that while a variety of ACE2-based approaches produce relatively sensitive and specific predictions, these predictions largely derive from strong correlations with host phylogeny, and limitations and biases in their input data limit their actionability. Models based on host phylogeny alone perform equivalently, enabling scalable prediction across nearly all mammals, but imply that in the absence of additional metrics of inter-species exposures, vast numbers of species would need to be surveyed with limited geographic or taxonomic focus.\n\nACE2 sequences showed surprising accuracy for predicting sarbecovirus host range, both in the formally trained models produced here and in earlier heuristics. However, various lines of evidence suggest the predictive power of ACE2-based models derives primarily from the correlation of ACE2 variation with host phylogeny. First, susceptibility to sarbecovirus infection was highly conserved, clustering in patterns consistent with the evolutionary history of potential host species. Second, ACE2 is also evolutionarily conserved, and a phylogeny derived from ACE2 sequences was highly congruent with one reflecting broader evolutionary history. Third, commonly used approaches for representing ACE2 sequence differences are largely equivalent in the amount of susceptibility information carried (Figure 2, Figure 4\u2014figure supplement 1), despite measuring biologically distinct aspects of ACE2 sequence variation and its interaction with sarbecovirus spike proteins. Fourth, models based on host evolutionary history performed similarly to the best ACE2-based models, while considering ACE2 in addition to evolutionary history provided no detectable improvements. Finally, in ACE2-based models with access to information about individual amino acid positions, most predictive power was derived from phylogenetically-informative sites rather than virus-binding sites, even when measures of binding affinity and sequence similarity were removed. This held true for both rhinolophid bats (the putative ancestral hosts of sarbecoviruses which may have different host-virus interactions due to long-term co-evolutionary dynamics) and other species, with the same features and sites used across all species without affecting predictive accuracy (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 3). Taken together, these results question the exclusive focus on ACE2 as a predictor of sarbecovirus host range. Biologically, the apparent success of ACE2-based models in predicting sarbecovirus host range cannot be interpreted as evidence for a disproportionate mechanistic influence of ACE2 variation in restricting host range. While there is experimental evidence suggesting that variation in ACE2 alone can block infection (e.g., Guo et al., 2020; Thakur et al., 2022), how widely alleles conferring complete resistance occur in nature (particularly in species with no history of sarbecovirus exposure) remains unclear. Indeed, our data show that a broad diversity of ACE2 variation is permissive for infection, so such examples, though biologically verified, may be extremes that do not generalise across taxa. Instead, sarbecovirus host range is likely to be shaped by a range of factors all showing some level of phylogenetic conservation (e.g., receptor distribution, innate immunity, behaviour). These results also mean caution is needed when interpreting the predictive power of specific sites in ACE2 sequences, as phylogenetic correlation means their biological significance cannot be adequately assessed from observational data.\n\nA key drawback of ACE2-based models is that data are only available for a small fraction of potential host species (Figure 5A). This limits their applied use and may also introduce biases since many ACE2 sequences likely stem from existing sarbecovirus research which is geographically biased. One previous effort circumvented the limited availability of ACE2 sequences using host traits believed to follow similar patterns of phylogenetic conservation as ACE2 sequences (Fischhoff et al., 2021). However, although we reiterate that quantitative measures of performance should be considered cautiously, this approach appeared to have reduced performance relative to models directly incorporating host phylogeny (Figure 4). Further, by conditioning a key stage of model development on ACE2 binding, we speculate that this approach may have introduced the same biases plaguing ACE2 sequences. For example, the top 10% of hosts presented as capable of transmitting SARS-CoV-2 by Fischhoff et al., 2021, have a similar geographic distribution to our ACE2-based models (Figure 5C), which in turn mirror overall geographic biases in mammalian ACE2 sequence availability (Figure 5A). Our results show host phylogeny as a viable alternative, which performs comparably to the best ACE2-based models. Anecdotally, this accuracy extends to species only recognised as susceptible after data collection for this study had ended, with 11 of 12 species more recently reported as naturally infected accurately predicted by the phylogeny-based model (Supplementary file 2; Allender et al., 2022; Kuchipudi et al., 2022; Padilla-Blanco et al., 2022; Pereira et al., 2022; United States Department of Agriculture, 2022; United States Department of Agriculture, 2021a; United States Department of Agriculture, 2021b; United States Department of Agriculture, 2021c; Wang et al., 2022). However, beyond data availability, the wide host range of sarbecoviruses represents a more significant practical hurdle, since the scope of surveillance suggested by these models is massive. This issue does not stem from the models, which show high accuracy on current data, but rather are representative of a pattern of widespread susceptibility seen consistently across experimental infections (65.2% of mammals susceptible, CI: 42.7\u201383.6%), our wider training data (82.2%, CI: 72.7\u201389.5%), and predictions from both the ACE2-based ensemble and host phylogeny-based models (87.6% and 42.6%, respectively). In essence, the potential host range of sarbecoviruses may be genuinely too broad for accurate predictions to be actionable in the absence of information on the likelihood of cross-species exposures.\n\nGiven the broad predicted host range of sarbecoviruses, how should research and surveillance actions proceed? While it may be possible to improve predictive performance further by considering variation in additional host proteins linked to infection (e.g., TMPRSS2; Hoffmann et al., 2020), this is unlikely to be practically useful given expected correlation with phylogeny and the low numbers of species for which sequences of multiple relevant genes will be realistically attainable. Such an approach is also unlikely to significantly reduce the number of susceptible hosts predicted. Alternatively, surveillance might be better informed by targeting hosts in proportion to their predicted risk. However, while conditioning our predictions on the top 30% of species captures the majority of currently known susceptibles (73%), this still means at least 1255 mammals require surveillance while introducing a significant risk of missing key spillovers (Figure 5\u2014figure supplement 1). In the interim, surveillance might therefore target species for which local knowledge indicates high human-animal contact, further refined by our model predictions (e.g., knowledge of likely non-susceptible groups, Figure 5\u2014figure supplement 2, Figure 5\u2014figure supplement 3). Looking further into the future, our data suggest that the majority of susceptible hosts are unlikely to transmit the virus effectively (Figure 1A), and indeed only a limited number of natural spillovers have thus far resulted in onward transmission (Kuchipudi et al., 2022; Oude Munnink et al., 2021). Predicting broader reservoir competence instead of susceptibility to infection may therefore be a path forward to optimise surveillance (Becker et al., 2020). However, the inability of current data to produce models capable of accurately predicting virus shedding (Figure 2\u2014figure supplement 1) indicates a need for greater investment to gather sufficient data on the ability of hosts to transmit sarbecoviruses. Careful interrogation of observed spillover events to evaluate sustained transmission (Kuchipudi et al., 2022; Oude Munnink et al., 2021) and inclusion of na\u00efve hosts in experimental infections to track transmission (Freuling et al., 2020; Shi et al., 2020) would be particularly valuable.\n\nA clear limitation of our approach is the relatively small number of species for which sarbecovirus susceptibility data are available. Combining diverse data sources and expanding the scope to all sarbecoviruses allowed us to evaluate the rapidly growing number of untested heuristics predicting SARS-CoV-2 host range. However, limited numbers of known non-susceptible species in particular made it difficult to distinguish variation in the specificity of alternative approaches with confidence, a problem exacerbated by low levels of overlap between available data and the species for which predictions were available in individual studies (wide CIs, Figure 4B). Although our strategy to maximise sample size meant including data from cell culture-based experiments, we found no evidence to suggest that this skewed results (Figure 2\u2014figure supplement 2). Nevertheless, once more data are available it may be more appropriate to train separate models for each data type (i.e., separate models predicting receptor binding, susceptibility in experimental infections, etc.), as this would allow training an ensemble model to learn the optimal weighting of predictions based on different data types when predicting real-world susceptibility. We were also unable to incorporate polymorphism in ACE2 sequences or suspected variation in susceptibility below the species level, which has been reported in some rhinolophid bats (Guo et al., 2020), since these fine-scale data were unavailable for most species. SARS-CoV-2 is also continuously evolving and this evolution may ultimately alter host range in ways that cannot be predicted by current models (Thakur et al., 2022), which are necessarily based on infections reported with earlier strains. While previous approaches were not explicitly designed for non-SARS-CoV-2 sarbecoviruses, our results suggest the inclusion of additional sarbecoviruses did not adversely impact model performance (Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4, Figure 4\u2014figure supplement 1). This may be because most species (90.8%) included in our dataset have been either linked to or tested for susceptibility to sarbecoviruses known to use ACE2 as an entry receptor (Khaledian et al., 2022; Starr et al., 2022), including all non-susceptible species (Supplementary file 1). Nine susceptible host species have so far only been reported to be infected by sarbecoviruses which are either not known to use ACE2 (due to a lack of published experiments involving the viruses in question) or are suspected to use an alternative receptor (based on an inability to bind the ACE2 orthologs tested thus far); we detected no differences in accuracy when predicting the susceptibility of these species (Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4, Figure 4\u2014figure supplement 1). This convergence in performance for viruses that putatively use different receptors lends further support to our conclusion that sarbecovirus host range is determined by factors other than ACE2 sequence variation. Finally, available susceptibility data may be affected by the same taxonomic and geographic biases affecting ACE2 sequence availability. For example, directly observed data will be biased to countries with capacity for surveillance, in vivo data will be limited to animal models that can be maintained in captivity, and heterologous ACE2 experiments are limited by requiring prior knowledge of ACE2 sequences. However, while this implies that predictions could be periodically updated as new observations become available, we see no mechanism through which current biases could produce a false equivalence between ACE2 sequences and host phylogeny.\n\nOur results imply major challenges for predicting the host range of generalist viruses such as SARS-CoV-2, even when models are reasonably accurate. Both current data and model predictions suggest a significant ongoing risk of reverse zoonosis to a wide range of species, implying a need for continued surveillance among species in contact with humans. Our results provide quantitatively validated predictions of sarbecovirus susceptibility across all mammals, which together with complementary data on exposure risk could be used to narrow such surveillance. However, they also highlight a data gap which currently precludes models that predict not just susceptibility but competence for onward transmission. Such models will be vital to understand the risk that reverse zoonosis poses for establishing novel reservoirs of SARS-CoV-2 genetic diversity that may compromise global efforts to control the ongoing pandemic.\n\n## Methods\n\n### Data collection\n\nData on sarbecovirus host range were collected through literature searches and targeted follow-up of news reports, focusing on identifying reports of natural spillover and experimental infections. These were supplemented with records from cell culture infection assays and two studies which used functional assays in which cells expressing heterologous ACE2 from various species were inoculated with SARS-CoV-2 (Liu et al., 2021; Mykytyn et al., 2021). This allowed us to test the utility of adding in vitro data when information on susceptibility is limited at the organismal level. In all cases, data were treated in a hierarchical manner, preferentially recording susceptibility from the most reliable data type found (natural infection > experimental infection > cell culture > heterologous ACE2 experiment). Data were summarised to the host species level, allowing more reliable data sources to overrule observations from other sources (e.g., an observed natural infection was allowed to overrule negative experimental infections involving the same species, as such experiments may have failed for a variety of reasons such as insufficient dose). Where multiple equivalent studies provided conflicting evidence for the same species (e.g., one successful and one unsuccessful experimental infection), we recorded the species as susceptible, reflecting our desire to predict whether a species had ever been observed as susceptible to any sarbecovirus.\n\nWe also recorded whether or not species reported as susceptible were capable of shedding infectious virus, either through reports of onward transmission (e.g., to co-housed na\u00efve individuals) or through isolation of virus from nasal or rectal swabs or from faeces. Species were recorded as negative for virus excretion only when either virus isolation or co-housing with na\u00efve individuals was specifically attempted. These data were available for 23 species.\n\nSequence data for ACE2 orthologs were obtained from the NCBI Gene database, retaining the first reference sequence accession number listed for each species (GeneID: 59272; list of all orthologs downloaded 16 March 2022). This provided us with a curated set of sequences \u2013 maximising data quality \u2013 while also avoiding any biases which may be introduced when attempting to incorporate multiple ACE2 sequences for the limited number of species for which more than one sequence was available. This NCBI-curated dataset was supplemented by specific searches for host species with available susceptibility data to identify additional ACE2 sequences. For species with susceptibility data but no available ACE2 sequence, we used ACE2 sequences from their closest available relative (based on a time-scaled phylogeny from TimeTree; Kumar et al., 2017). This replacement affected 21 species in the final dataset, and most (62%) involved replacement sequences from the same genus (Supplementary file 1).\n\n### Evaluating phylogenetic clustering\n\nAmino acid sequences for all ACE2 orthologs were downloaded from the NCBI protein database and aligned using the E-INS-i option of MAFFT version 7.471 (Katoh and Standley, 2013). A maximum likelihood phylogeny was then generated using version 1.6.12 of IQ-TREE (Minh et al., 2020), with built-in model selection used to choose the substitution model minimising the Bayesian information criterion (Kalyaanamoorthy et al., 2017). The best model used the Jones, Taylor, and Thornton substitution matrix (Jones et al., 1992) with empirical amino acid frequencies and six categories of rate variation in the \u2018FreeRate\u2019 model of Soubrier et al., 2012.\n\nWe also obtained a phylogeny reflecting the estimated divergence dates of all amniotes from TimeTree version 4 (Kumar et al., 2017). To allow comparison between phylogenies, the time-scaled phylogeny was trimmed to species with available ACE2 sequences, before calculating Baker\u2019s \u03b3 correlation coefficient (Baker, 1974) using version 1.15.1 of the dendextend library in R version 4.1.0 (Galili, 2015; R Development Core Team, 2021) along with version 2.1.0 of the phylogram library (Wilkinson and Davy, 2018). To calculate the expected null distribution of \u03b3 values given these particular phylogenies, species names on both phylogenies were randomly shuffled 1000 times.\n\nTo measure the amount of phylogenetic clustering among susceptible and non-susceptible species, we calculated Pagel\u2019s \u03bb using version 0.7_80 of the phytools R library (Pagel, 1999; Revell, 2012). Pagel\u2019s \u03bb was re-calculated while cumulatively adding data from species with susceptibility or non-susceptibility known from natural infection, experimental infection, cell culture, and finally heterologous ACE2 experiments. We also compared distances to the closest other susceptible or non-susceptible species, using both cophenetic distances and ACE2 amino acid distances. Cophenetic distances were calculated on the time-scaled (TimeTree) phylogeny using version 5.5 of the APE R library (Paradis et al., 2004), while amino acid distances were calculated as the total Grantham distance separating any two species across all sites in the ACE2 alignment (Grantham, 1974).\n\n### Sequence representations\n\nCurrent heuristics for predicting susceptibility to SARS-CoV-2 infection focus on either some measure of ACE2 amino acid distance from its human counterpart or the predicted binding affinity between each ACE2 protein and the SARS-CoV-2 spike protein. To compare such metrics in a common framework, we calculated or obtained a range of amino acid sequence representations that broadly captured current approaches alongside novel alternatives. This included binding affinities from two recent studies (Fischhoff et al., 2021; Huang et al., 2020) (\u2018binding affinity\u2019, represented as 2 separate feature columns). Neither study supplied binding affinity measures for all ACE2 sequences in our training data, but combined ensured at least one value for each included sequence. To represent the widely used distance to human ACE2, we calculated the total amino acid distance between each species\u2019 ACE2 protein and that of humans (termed \u2018distance to humans\u2019 in all figures, and calculated as described above, 1 feature). Despite variation in which amino acid positions were included by previous distance-based studies, all measures were highly correlated (Figure 4\u2014figure supplement 1), making the total amino acid distance (i.e., the distance calculated while considering all amino acid positions) to human ACE2 a reasonable proxy. Although this metric is commonly used, whether human ACE2 is the appropriate baseline is unclear given the relatively recent association between SARS-CoV-2 and humans. We therefore also included a similar metric capturing the total amino acid distance to the ACE2 of the closest known susceptible species. This distance was calculated with reference to the relevant training dataset only, and separately expressed the distance to the closest susceptible known from either direct observations, experimental infections, heterologous ACE2 experiments, or across all data (\u2018distance to susceptible\u2019, 4 features; data contained no susceptibles known only from cell culture experiments).\n\nWe also sought to include more nuanced information about specific ACE2 sites by including representations of individual positions in the ACE2 protein alignment. The amino acids observed at each alignment position showing variation was represented using one-hot encoding of all amino acids observed at a frequency >10%, alongside an additional binary variable taking a value of 1 for all amino acids observed less frequently at a given position, and 0 otherwise (\u2018AA categorical\u2019, 1657 features). We also summarised the amino acids at each variable alignment position using the physicochemical properties hydrophobicity, polarity, net charge, and Van der Waals volume (\u2018AA properties\u2019, 1841 features), with values for individual amino acids obtained from the AAindex database (accessions JURD980101, ZIMJ680103, KLEP840101, FAUJ880103) (Fauch\u00e8re et al., 1988; Jureti\u0107 et al., 1998; Kawashima et al., 1999; Klein et al., 1984; Zimmerman et al., 1968). Finally, we included the Grantham distance between each observed amino acid and the most common amino acid observed at that site among susceptible species (\u2018AA consensus distance\u2019, calculated with reference to the relevant training dataset only, 531 features).\n\n### Phylogenetic eigenvectors\n\nThe machine learning algorithms we used (described below) cannot directly represent phylogenetic information. Therefore, to include evolutionary relationships among possible hosts in our models, we used phylogenetic eigenvectors calculated from the time-scaled phylogeny described above and including all amniotes. Phylogenetic eigenvectors were calculated using version 0.3\u20136 of the MPSEM library in R, assuming Brownian motion (Gu\u00e9nard et al., 2013). The first 50 eigenvectors were retained and included in models (\u2018phylogenetic eigenvectors\u2019, 50 features).\n\n### Machine learning\n\nWe trained a series of gradient-boosted classification tree models to predict the susceptibility of individual species using various combinations of ACE2 sequence representations or the phylogenetic eigenvectors. Models were constructed using XGBoost version 1.4.0 in R alongside version 0.1.3 of the tidymodels suite of helper libraries (Chen and Guestrin, 2016; Kuhn and Wickham, 2020). Given the relatively small amount of training data available, performance was evaluated using leave-one-out cross-validation. Throughout, we report proportions of species accurately predicted, alongside binomial CIs calculated using the binom.test function in R (Clopper and Pearson, 1934).\n\nModels were trained in a nested process to allow simultaneous tuning and evaluation of performance. For each species, data were split into training data and the single holdout species for cross-validation (\u2018outer split\u2019). The training data were then randomly split again, keeping 75% for model training with a given combination of tuning parameters, with performance evaluated on the remaining data (\u2018inner split\u2019). This inner split was repeated for each unique tuning parameter combination, testing 100 parameter combinations across a maximum entropy grid (Dupuy et al., 2015). After training an initial model on a given tuning parameter combination, a search was performed for the cutoff which best balanced sensitivity and specificity on the inner split\u2019s testing data when converting quantitative scores produced by the model into binary predictions. This was achieved by calculating the mean of sensitivity and specificity (\u2018balanced accuracy\u2019) for each cutoff. The tuning parameter and cutoff combination which maximised balanced accuracy was used to train a final model on all training data (i.e., all data except for the single species held back in the outer split). This nested tuning and evaluation process was repeated to generate holdout predictions for all species, allowing calculation of the final reported performance statistics.\n\n### Ensemble models\n\nIn addition to the direct combination of different ACE2 sequence representations and phylogenetic eigenvectors in the same model, we also tested whether training separate models before combining predictions would improve performance. Models were combined by averaging the quantitative holdout predictions for each species. To convert these averages to binary predictions, we calculated the optimal cutoff balancing sensitivity and specificity as described above, using the averaged quantitative predictions for all species except a given focal species to evaluate potential cutoffs, before using the best cutoff to generate a binary prediction for the focal species. This procedure was repeated to generate predictions for all species.\n\n### Feature importance\n\nThe importance of individual features in shaping model predictions was measured using SHAP values (Lundberg and Lee, 2017), which measure the contribution of individual features to the final quantitative prediction for a given host species. Using a final model trained on all available data, we calculated feature importance as the mean of absolute SHAP values across all species.\n\nSince many features represented individual ACE2 positions which are expected to co-vary, we also sought to characterise the correlation between positions. For each position in a given ACE2 sequence, we first calculated the Grantham distance between the observed amino acid and the most common amino acid observed at that position across all sequences used in model training. We then calculated Spearman correlations in this distance metric for all possible pairs of ACE2 positions, before using the correlations to perform affinity propagation clustering with version 1.4.8 of the apcluster library in R (Bodenhofer et al., 2011; Frey and Dueck, 2007). The resulting clusters were used to annotate positions in Figure 3, separating known spike-binding sites (\u2018S-binding\u2019), sites occurring in the same cluster as a known spike-binding site (\u2018correlated with S-binding site\u2019), and all other sites (\u2018other\u2019).\n\n### Comparison of other studies\n\nTo compare predictions across our models and to those from previously published heuristics, we collected both binary predictions and the underlying quantitative scores/heuristics used to make these predictions from 12 studies. We compared predictions at the species level. In rare cases where previous studies provided predictions for multiple representatives of a given species (e.g., predictions for subspecies or for different ACE2 sequences of the same species), we used the mean of quantitative scores and the most common binary prediction. Scores from each study were re-scaled to lie between 0 and 1, allowing us to plot them on the same scale. Where needed, scores were reversed to ensure that higher values always reflected species considered more likely to be susceptible.\n\nThe similarity of predictions across our models and earlier heuristics was summarised by calculating pairwise Spearman correlations, using all overlapping species in each pair of models/heuristics. These correlations were used for agglomerative hierarchical clustering, using the mean correlation across all points as the distance metric between clusters (i.e., the unweighted pair-group arithmetic average method) in version 2.1.2 of the cluster R library (Kaufman and Rousseeuw, 1990).\n\nFor studies which supplied binary or categorical predictions, we also estimated sensitivity, specificity, and overall accuracy, all in light of the new susceptibility dataset generated here. Two studies supplied categorical rather than binary (susceptible/non-susceptible) predictions. In the case of Melin et al., 2020, we treated species predicted as having high susceptibility as susceptible, and those predicted to have low susceptibility as non-susceptible. Similarly, species predicted as having very high, high, or medium susceptibility by Damas et al., 2020, were considered susceptible, treating predictions of low and very low susceptibility as non-susceptible. A third study, Fischhoff et al., 2021, transformed observed ACE2-sarbecovirus binding strength values into binary labels where the \u2018positive\u2019 category was believed to reflect capacity for both infection and virus shedding and trained models to predict this category for other species. Since this prediction category was analogous to other studies (i.e., using a fixed threshold of binding strength as a proxy for the infection variable of interest), we included them in our model comparisons, treating all species with positive predictions as susceptible.\n\nImportantly, performance estimates for all published heuristics relied on predictions as published. Since these heuristics did not withhold species with known infection outcomes as an independent test set, cutoffs chosen to judge susceptibility or non-susceptibility to SARS-CoV-2 would have been defined by some or all species to which the heuristic was applied (e.g., selecting minimum heuristic values which appeared consistent with infection records). This is likely to artificially inflate their performance beyond what could be expected when applying these heuristics to host species that were not involved in the development of the heuristic. In contrast, our approach of withholding empirical susceptibility records during model development gives a more accurate representation of how performance will generalise to new potential host species.\n\n### Mapping predictions\n\nTo visualise the spatial distribution of species predicted as susceptible (and of available ACE2 sequences), we summarised IUCN range maps for terrestrial mammals into a grid with cells measuring 1/6 \u00d7 1/6 of a degree. Using predictions from models trained on all available data, we counted the number of susceptible species with ranges overlapping each grid cell. We also measured whether the proportion of predicted susceptible species in any one grid cell was higher than expected by chance by dividing the proportion of species predicted as susceptible in each cell by the overall proportion of species predicted as susceptible across the entire dataset. This meant we were comparing the observed frequency of susceptible species in any one location to a baseline assumption of uniform geographic distribution of susceptible species.\n",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "e3c6db77-0a11-4bf7-99f4-0986d1989205",
+      "submission_id": "a7ca9f17-93df-4a13-a998-993297989151",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sarah E Cobey, https://ror.org/024mw5h28 University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80329.sa0](https://doi.org/10.7554/eLife.80329.sa0)\n\nMany approaches to predict which animals species might be at risk of infection by SARS-CoV-2 focus on features of the ACE2 host cell receptor to which the virus binds. This important study shows that such methods are not uncovering a true biological signal. Instead, Mollentze and colleagues show that ACE2 sequences are effectively only a proxy for generic species relationships, and species phylogeny alone can provide equivalent predictive power.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sarah E Cobey, https://ror.org/024mw5h28 University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80329.sa1](https://doi.org/10.7554/eLife.80329.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Variation in the ACE2 receptor has limited utility for SARS-CoV-2 host prediction\" for consideration by eLife. I apologize for the delay in the review process.\n\nYour article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Miles Davenport as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Tyler Starr (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWe have decided there are no truly essential revisions. However, the reviewers have suggested ways to strengthen the writing and analysis. Please consider them carefully. We deem the requested clarifications important enough to merit a revision or reply.\n\nReviewer #1 (Recommendations for the authors):\n\n1. I found the logical flow a bit indirect. As the authors point out in the introduction, ACE2 binding is necessary but not sufficient in conferring susceptibility. However, the focus they then ascribe to ACE2-based data and ACE2-based predictions weakens the forcefulness with which they introduce this idea that determinants beyond ACE2 binding are going to be important in a full evaluation of animal susceptibilities. For example, the plurality of points in their collated dataset on \"susceptibility\" derives from (although acknowledges and de-prioritizes the significance of) heterologous ACE2 expression in cell culture viral entry assays, thereby missing all downstream determinants of susceptibility. Furthermore, more and more elaborate models based on ACE2 alone are built (e.g. amino acid classifications, site-wise determinants, ACE2 distance). My interpretation is that this is an attempt to \"do the best that can be done\" with ACE2 sequence alone so as not to create a straw-man argument for the ACE2 sequence features to then compare to phylogeny alone. This is why I present this as a logical flow issue, and perhaps not a scientific issue. Some ideas to improve this flow could be to spend more of the Introduction emphasizing the importance the field typically puts on ACE2 sequence alone and not as forcefully explain why this is unlikely to be a sufficient proxy (can leave this description until results or discussion), leaving the punchiness of the conclusion that it is indeed not that powerful as a less obvious outcome than is currently presented after the Introduction.\n\n2. Toward the question of the sufficiency of ACE2 binding data alone for predicting susceptibility: when evaluating the hierarchy of evidence used in the final collated dataset (where animal-based studies trump heterologous ACE2 cell culture experiments), were there any cases where an ACE2 receptor is known to be sufficient to enable cell entry but the animal itself is not experimentally susceptible? Highlighting any observations of this seems the most direct evidence to the point that ACE2 sequence alone is insufficient to predict susceptibility.\n\n3. I wonder whether a more pseudo-mechanistic two-step model could be considered or proposed in the Discussion \u2013 a first step based on ACE2 sequence (the \"first step\" necessary for susceptibility), and the second based on broader determinants of susceptibility (which would be best captured by phylogeny given complexity of unknown unknowns). The reason this may be helpful is that ACE2 binding can be \"flipped\" on or off with individual amino acid mutations and therefore more quickly deviate from phylogenetic trends (e.g. due to virus-host arms races in Rhinolophus bats, PMID 32699095, but see point 6 below). The broader determinants of susceptibility involve many complex components from cell biology to physiology, and so of course can not be tractably ascribed to a single gene sequence, but also may be better captured by a phylogenetic scale anyway. Such a two-tiered model could also better accommodate the multi-tiered data that is collapsed into a single training paradigm in the current study \u2013 for example, the simpler heterologous ACE2 entry assays could be incorporated only for the \"first step\" of model evaluation, while the whole-animal susceptibility data could serve as a target for the second step / integrated two-step model. This model would lose the utility of the phylogenetic model as illustrated in Figure 5, in that ACE2 sequence would need to be known, but could better incorporate multi-modal data to improve predictive accuracy.\n\n4. Many species of bats show dramatic ACE2 polymorphism centered on positions contacted by sarbecoviruses, and this variation is known to influence binding of certain sarbecoviruses (e.g., PMID 32699095). How did you account for ACE2 polymorphism in analyses -- did you just resolve each species to a single ACE2 sequence? And how do you incorporate into the model possibilities that certain ACE2 alleles within a single species are permissive to entry by some sarbecoviruses while others are not?\n\n5. Related to the above point (and a concern that I had about species like R. pearsonii which are seemingly not susceptible to ACE2-utilizing sarbecoviruses, but then I saw Figure 2 \u2013 supplement 2): given that the dynamics of long-term host:virus coevolution that exist in Rhinolophus bats are so different from the dynamics of susceptibility that are germane to questions of reverse zoonotic and intermediate/amplifying potential of other species \u2013 might it be wise to exclude Rhinolophus species from the analyses as they may require different forms of \"signal\" for prediction of susceptibility compared to the rest of mammals?\n\nReviewer #2 (Recommendations for the authors):\n\nPg 2 L11-12 \u2013 has anyone looked at the correlation between susceptibility in cell culture vs in vivo (for any virus)? Might be complex as often comparing across tissue types as well as species. Some support from https://doi.org/10.1371/journal.ppat.1004475 but not sure if there are other studies such as this looking directly at susceptibility?\n\nPg 3 \u2013 L23-30 \u2013 re the assumption that infection with SARS-CoV suggests susceptibility also to SARS-CoV-2 and vice versa \u2013 this seems reasonable, although may expect some instances of virus by species interactions meaning this is not the case.. Looking at the supp data it looks like in the 6 species tested with both SARS-1 and -2 they can be infected by both (ie 6/6) \u2013 is that correct? If so maybe alter the text to say this specifically, and offer some more general support for your approach with (eg their own recent paper in PNAS or https://onlinelibrary.wiley.com/doi/10.1111/tbed.14361)\n\nPg 4 L3-10 felt some more detail was needed here on ACE2 data to help the reader follow the approach\n\nThe authors use the described modelling approach to predict what species are susceptible to sarbecovirus infection, aggregated by taxonomic order (Figure 5, Figure Supplement 2). From the figure it is apparent that the observed data set contains primarily mammalian samples where as the predicted dataset contains a considerably higher proportion of avian samples. Given that the narrative around reverse zoonosis is largely focused on mammals, it would be helpful to have more of a discussion around the role of avian species both in these analyses and in the transmission of sarbecoviruses.\n\nData and scripts are available via a doi.\n\nReviewer #3 (Recommendations for the authors):\n\nYou write\n\n\"Second, since no model has been trained or validated using observed data on infection (the outcome of interest)\"\n\nThen later:\n\n\"Understanding the value of ACE2-based host range predictions for guiding surveillance therefore requires developing models based on the outcome of interest \u2013 susceptibility \u2013 and quantifying the accuracy of their predictions.\"\n\nAnd later again:\n\n\"We treated these different sources of information hierarchically, considering the best available evidence for compatibility or incompatibility in each host species (natural infection > experimental infection > cell culture > heterologous ACE2 cell culture experiments).\"\n\nI'd recommend changing \"infection\" to susceptibility in the first-quoted passage. To me (maybe just me?) \"infection\" makes me think infection of a live animal, even though I know that cells in culture can be infected too.\n",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b7b7bbb4-d1c8-40cd-a5f6-f688abe13633",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C1",
+      "claim": "Transmission of SARS-CoV-2 from humans to other species threatens wildlife conservation and may create novel sources of viral diversity for future zoonotic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission of SARS-CoV-2 from humans to other species threatens wildlife conservation and may create novel sources of viral diversity for future zoonotic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the implications of SARS-CoV-2 transmission, drawing on established scientific understanding of zoonotic disease dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "4eae2c3b-2efe-4948-ba20-623147c90acf",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C2",
+      "claim": "Variation in ACE2 can be used by machine learning models to accurately predict animal susceptibility to sarbecoviruses with an accuracy of 80.2% (binomial confidence interval [CI]: 70.8\u201387.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a newly compiled database of 96 species, we show that, while variation in ACE2 can be used by machine learning models to accurately predict animal susceptibility to sarbecoviruses (accuracy = 80.2%, binomial confidence interval [CI]: 70.8\u201387.6%), the sites informing predictions have no known involvement in virus binding and instead recapitulate host phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from machine learning models trained on a database of 96 species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "407f9287-e601-4406-a0c1-a8c375a83526",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C3",
+      "claim": "The sites in ACE2 informing predictions have no known involvement in virus binding and instead recapitulate host phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a newly compiled database of 96 species, we show that, while variation in ACE2 can be used by machine learning models to accurately predict animal susceptibility to sarbecoviruses (accuracy = 80.2%, binomial confidence interval [CI]: 70.8\u201387.6%), the sites informing predictions have no known involvement in virus binding and instead recapitulate host phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of feature importance in the models, showing that selected sites are phylogenetically informative rather than mechanistically linked to binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "bc14f834-688c-4d9b-acdc-90ceb33c394d",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C4",
+      "claim": "Models trained on host phylogeny alone performed equally well with an accuracy of 84.4% (CI: 75.5\u201391.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "Models trained on host phylogeny alone performed equally well (accuracy = 84.4%, CI: 75.5\u201391.0%) and at a level equivalent to retrospective assessments of accuracy for previously published models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from machine learning models trained on phylogenetic eigenvectors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "04ad6c6e-b916-48c8-ba86-d1b13a272d7d",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C5",
+      "claim": "The predictive power of ACE2-based models derives from strong correlations with host phylogeny rather than processes which can be mechanistically linked to infection biology.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the predictive power of ACE2-based models derives from strong correlations with host phylogeny rather than processes which can be mechanistically linked to infection biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that phylogeny-only models perform as well as ACE2-based models and that ACE2 phylogeny closely matches host phylogeny.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "73ce6904-ee4d-4e66-8c38-e65a87e42b35",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C6",
+      "claim": "Biased availability of ACE2 sequences misleads projections of the number and geographic distribution of at-risk species.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, biased availability of ACE2 sequences misleads projections of the number and geographic distribution of at-risk species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing geographic biases in ACE2 sequence availability and their effect on predicted susceptibility hotspots.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "493347a5-5dd4-4ac3-9f1b-d7f81de75d8c",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C7",
+      "claim": "Models based on host phylogeny reduce bias from ACE2 sequence availability but identify a very large number of susceptible species.",
+      "claim_type": "EXPLICIT",
+      "source": "Models based on host phylogeny reduce this bias, but identify a very large number of susceptible species, implying that model predictions must be combined with local knowledge of exposure risk to practically guide surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that phylogeny-based models predict 42.7% of mammals as susceptible (N=1785 species).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "cf356fc0-500f-4fc5-bf47-23dad3a1cc06",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C8",
+      "claim": "Household transmission of SARS-CoV-2 to domestic dogs and cats has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, reports have described household transmission to domestic dogs and cats, transmission to lions and tigers in zoos, transmission to farmed mink, and transmission to free-living white-tailed deer (Barrs et al., 2020; Kuchipudi et al., 2022; McAloose et al., 2020; Sit et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "a22ca73d-ed0f-4173-9a5b-3264dc7cb707",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C9",
+      "claim": "Transmission of SARS-CoV-2 to lions and tigers in zoos has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, reports have described household transmission to domestic dogs and cats, transmission to lions and tigers in zoos, transmission to farmed mink, and transmission to free-living white-tailed deer (Barrs et al., 2020; Kuchipudi et al., 2022; McAloose et al., 2020; Sit et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "3d650c55-db2d-45ee-ac2d-3057b501ca14",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C10",
+      "claim": "Transmission of SARS-CoV-2 to farmed mink has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, reports have described household transmission to domestic dogs and cats, transmission to lions and tigers in zoos, transmission to farmed mink, and transmission to free-living white-tailed deer (Barrs et al., 2020; Kuchipudi et al., 2022; McAloose et al., 2020; Sit et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "de4d70dc-7fad-4527-bbc8-8ccbdcbad35b",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C11",
+      "claim": "Transmission of SARS-CoV-2 to free-living white-tailed deer has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, reports have described household transmission to domestic dogs and cats, transmission to lions and tigers in zoos, transmission to farmed mink, and transmission to free-living white-tailed deer (Barrs et al., 2020; Kuchipudi et al., 2022; McAloose et al., 2020; Sit et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "03febed7-bb8d-4509-8483-2a6d14480352",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C12",
+      "claim": "Repeated introductions of SARS-CoV-2 followed by onward transmission have been reported in both European mink and North American deer.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of such spillovers are likely to be dead-ends for the virus, repeated introductions followed by onward transmission have been reported in both European mink and North American deer (Kuchipudi et al., 2022; Oreshkova et al., 2020; Oude Munnink et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "70a9bf31-af00-4db8-aa3b-3fc0f07a6405",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C13",
+      "claim": "Animal infection experiments have demonstrated that a broad range of species spanning multiple mammalian orders are susceptible to SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal infection experiments have demonstrated that a broad range of species spanning multiple mammalian orders are susceptible (Freuling et al., 2020; Munster et al., 2020; Mykytyn et al., 2021; Schlottau et al., 2020; Shi et al., 2020; Zhao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "15a8d260-0931-47b5-856b-2cc906a39109",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C14",
+      "claim": "Egyptian fruit bats (Rousettus aegyptiacus) can be infected experimentally with SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Egyptian fruit bats (Rousettus aegyptiacus) can be infected experimentally with SARS-CoV-2, while attempts to establish infection in big brown bats (Eptesicus fuscus) have thus far failed (Hall et al., 2020; Schlottau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "009a107d-46a4-4262-9611-99f9d680cb65",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C15",
+      "claim": "Attempts to establish SARS-CoV-2 infection in big brown bats (Eptesicus fuscus) have thus far failed.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Egyptian fruit bats (Rousettus aegyptiacus) can be infected experimentally with SARS-CoV-2, while attempts to establish infection in big brown bats (Eptesicus fuscus) have thus far failed (Hall et al., 2020; Schlottau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "150e9c8f-919f-4bb4-9933-2a7e3468afea",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C16",
+      "claim": "Most computational heuristics for predicting SARS-CoV-2 host range utilise the amino acid sequence of ACE2 and base predictions on measures of similarity to human ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Most utilise the amino acid sequence of angiotensin-converting enzyme 2 (ACE2, the host receptor involved in entry of SARS-CoV-2) and base predictions on measures of similarity to human ACE2, reasoning that changes relative to this sequence (particularly at amino acid positions known to interact with the SARS-CoV-2 spike protein) decrease the probability of successful infection (Ahmed et al., 2021; Alexander et al., 2020; Damas et al., 2020; Frank et al., 2020; Kumar et al., 2021; Luan et al., 2020; Melin et al., 2020; Qiu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple published heuristics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "73dc6c4b-4e92-4361-aaef-28617017a331",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C17",
+      "claim": "A structural approach has compared computational estimates of binding strength between modelled ACE2 protein structures of different species and the SARS-CoV-2 spike protein.",
+      "claim_type": "EXPLICIT",
+      "source": "A related structural approach has compared computational estimates of binding strength (here grouped together as 'binding affinity') between the modelled ACE2 protein structures of different species and the SARS-CoV-2 spike protein, reasoning that stronger binding supports susceptibility (Huang et al., 2020; Lam et al., 2020; Rodrigues et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "8661b917-8ddb-4afa-8122-e9a14d08614a",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C18",
+      "claim": "An approach predicted whether binding strength was above a fixed threshold assumed to represent susceptibility and capacity for onward transmission, using ecological and physiological traits of host species.",
+      "claim_type": "EXPLICIT",
+      "source": "A final approach predicted whether binding strength was above a fixed threshold which was assumed to represent susceptibility and capacity for onward transmission, using ecological and physiological traits of host species (Fischhoff et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "d0815f6e-4a39-4fb3-8f36-ef4ed9a23c92",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C19",
+      "claim": "The final dataset contained records of interactions between sarbecoviruses and 96 mammalian and avian host species.",
+      "claim_type": "EXPLICIT",
+      "source": "Our final dataset contained records of interactions between sarbecoviruses and 96 mammalian and avian host species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset compiled for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "33c7d6f1-8146-418d-bbbf-92aa8d7e9969",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C20",
+      "claim": "The dataset included 25 species with natural infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports included natural infections (N=25) and the outcomes of experimental inoculations of captive animals (N=28), where in both cases subsequent detection of viral RNA in, or virus isolation from, nasal or rectal swabs or faeces was considered evidence of susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "65be6932-59db-461e-91ad-d5c13143dfc4",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C21",
+      "claim": "The dataset included 28 species with experimental inoculations.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports included natural infections (N=25) and the outcomes of experimental inoculations of captive animals (N=28), where in both cases subsequent detection of viral RNA in, or virus isolation from, nasal or rectal swabs or faeces was considered evidence of susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "aea8c7d0-ee57-41b6-b0cb-6d8d0fc897c9",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C22",
+      "claim": "Data on whether species shed infectious virus were limited to 23 species, of which only 17 shed infectious virus.",
+      "claim_type": "EXPLICIT",
+      "source": "We also separately recorded whether species were shown to shed infectious virus (either through virus isolation or infection of other animals), but available data were limited to 23 species, of which only 17 shed infectious virus (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the limited availability of data on virus shedding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "af318497-2547-4e4a-ac4d-a878157d041c",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C23",
+      "claim": "88% of susceptible species in the dataset have been linked to at least one sarbecovirus known to use the ACE2 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this assumption, most susceptible species in our data (88%) have been linked to at least one sarbecovirus known to use the ACE2 receptor, and among the 10 included host species with records of natural SARS-CoV-2 infection, many were also reported to be susceptible to other sarbecoviruses (N=6), primarily SARS-CoV (N=5, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the compiled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "0131d644-9767-4664-886e-d606971a75d6",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C24",
+      "claim": "Among the 10 host species with records of natural SARS-CoV-2 infection, 6 were also reported to be susceptible to other sarbecoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this assumption, most susceptible species in our data (88%) have been linked to at least one sarbecovirus known to use the ACE2 receptor, and among the 10 included host species with records of natural SARS-CoV-2 infection, many were also reported to be susceptible to other sarbecoviruses (N=6), primarily SARS-CoV (N=5, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the compiled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "8a09dd9a-bafb-4a40-b1b4-9ee0a65af675",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C25",
+      "claim": "Sarbecovirus susceptibility was highly conserved within both host phylogenies (Pagel's \u03bb>0.686, likelihood ratio test p-values \u22640.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Sarbecovirus susceptibility was highly conserved within both host phylogenies (Pagel's \u03bb>0.686, likelihood ratio test p-values \u22640.003; Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of phylogenetic clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "b3702cc9-fff9-4fb3-9fec-03c09a6705d6",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C26",
+      "claim": "Non-susceptible species tended to be closer to other non-susceptible species than known susceptible host species, both in terms of divergence dates and ACE2 amino acid distances.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering was particularly strong among non-susceptible species, which tended to be closer to other non-susceptible species than known susceptible host species, both in terms of divergence dates and ACE2 amino acid distances (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of pairwise distances shown in Figure 1C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "03cb7307-86ab-4560-8f95-3f59a81f3085",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C27",
+      "claim": "A phylogeny based on all available ACE2 ortholog sequences closely matched the topology and branch lengths of the time-scaled phylogeny (Baker's \u03b3 correlation coefficient = 0.934, permutation test p-value <0.001; Spearman's \u03c1 correlation of pairwise distances = 0.870).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a phylogeny based on all available ACE2 ortholog sequences closely matched the topology and branch lengths of the time-scaled phylogeny (Baker's \u03b3 correlation coefficient = 0.934, permutation test p-value <0.001; Spearman's \u03c1 correlation of pairwise distances = 0.870, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical comparison of phylogenies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "aaa6ab02-97ad-4ae6-bdf6-55bee5e87eb2",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C28",
+      "claim": "No ACE2 representation performed markedly better than a null model in terms of sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of sensitivity, no ACE2 representation performed markedly better than a null model which randomly assigned species as 'susceptible' or 'non-susceptible' in proportion to the frequency of susceptible species in the training data (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model performance data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "607452da-a0f7-4d06-8f23-ec2863b5bba2",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C29",
+      "claim": "All ACE2 representations outperformed the null model in terms of specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, specificity varied more dramatically among representations and all outperformed the null model, indicating that ACE2 can rule out non-susceptible species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model performance data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "3c66f340-3cf1-48db-8036-6d9e3212e7e9",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C30",
+      "claim": "Only two models (using either the AA consensus distance or AA properties representations) clearly outperformed the null in terms of overall accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since non-susceptible species were rare in our training data (N=21), only two models (using either the AA consensus distance or AA properties representations) clearly outperformed the null in terms of overall accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model performance data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "02b5f2ce-3f43-4036-a841-a64effe1878c",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C31",
+      "claim": "The best-performing model (AA consensus distance) correctly predicted the susceptibility or non-susceptibility of 77 of 96 species (80.2%, 95% binomial confidence interval [CI]: 70.8\u201387.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "The best-performing model (AA consensus distance) correctly predicted the susceptibility or non-susceptibility of 77 of 96 species (80.2%, 95% binomial confidence interval [CI]: 70.8\u201387.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "7a9cdf3c-af4c-4ce8-9cac-7b646e4e17d2",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C32",
+      "claim": "Encoding ACE2 amino acid distances relative to the closest susceptible species ('distance to susceptible') outperformed the widely used metric of distance to human ACE2 ('distance to humans') in terms of specificity while maintaining high sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other models, we found that encoding ACE2 amino acid distances relative to the closest susceptible species ('distance to susceptible') outperformed the widely used metric of distance to human ACE2 ('distance to humans') in terms of specificity while maintaining high sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model performance comparisons shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "b09fe8af-1a92-4d17-ae36-96245bb527ae",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C33",
+      "claim": "The AA categorical model performed considerably worse than the null across all performance metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "The AA categorical model performed considerably worse than the null across all performance metrics (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model performance data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "363aaae5-47bb-4e6b-9bbf-cefd02490b41",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C34",
+      "claim": "Combining all representations of ACE2 had little effect on performance (74.0% accurate, CI: 64.0\u201382.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "Combining all representations of ACE2 had little effect on performance (74.0% accurate, CI: 64.0\u201382.4%), suggesting that divergence at key ACE2 amino acids from the susceptible consensus (and most other possible representations of ACE2 sequences) and structural models of binding affinity supply equivalent information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "8dec478e-4ee9-454d-8aa4-0f4a9aee8900",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C35",
+      "claim": "The phylogeny-only model correctly predicted susceptibility labels of 81 species (84.4%, CI: 75.5\u201391.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogeny-only model performed equivalently to the best ACE2-only models, correctly predicting susceptibility labels of 81 species (84.4%, CI: 75.5\u201391.0%) with a nearly identical sensitivity alongside improved specificity ('phylogenetic eigenvectors', Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model performance data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "29384387-e39d-4401-a3e2-139f1f5953d7",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C36",
+      "claim": "Combining phylogeny with either the best-performing ACE2 representation or all ACE2 representations performed similarly to phylogeny alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining phylogeny with either the best-performing ACE2 representation or all ACE2 representations performed similarly to phylogeny alone (Figure 2), suggesting that ACE2 sequences and measures of binding affinity supply information that is redundant with host divergence patterns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model performance data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "129ee4e3-5f00-4389-9a22-7e755537b8ab",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C37",
+      "claim": "The model trained with all ACE2-representations retained 25 features, of which just two were clearly linked to virus interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The model trained with all ACE2-representations (but not phylogeny) retained 25 features, of which just two were clearly linked to virus interaction (both representations of binding affinity, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by feature importance analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "30cf7817-92c5-4155-9849-c04c8880bfff",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C38",
+      "claim": "Only one of the 18 ACE2 positions used by the model is known to interact with the SARS-CoV-2 spike protein (position 82).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only one of these positions is known to interact with the SARS-CoV-2 spike protein (position 82), but included positions did contain more phylogenetic information than average (as measured by Shannon entropy, Figure 3; Wilcoxon rank sum test p-value <0.001), suggesting they largely reconstructed host phylogeny.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of selected features shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "3d1422bf-8f78-48a2-a822-75a603f572ad",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C39",
+      "claim": "Included ACE2 positions contained more phylogenetic information than average (as measured by Shannon entropy, Wilcoxon rank sum test p-value <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only one of these positions is known to interact with the SARS-CoV-2 spike protein (position 82), but included positions did contain more phylogenetic information than average (as measured by Shannon entropy, Figure 3; Wilcoxon rank sum test p-value <0.001), suggesting they largely reconstructed host phylogeny.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "f828e423-7850-42dc-8e52-d661525b5408",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C40",
+      "claim": "The best-performing ACE2-only model (AA consensus distance) retained no known spike-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were observed in the best-performing ACE2-only model (the individual site-based 'AA consensus distance' model), which retained no known spike-binding sites (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by feature importance analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "34dbf598-eb5c-4517-9d38-969da62b46cd",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C41",
+      "claim": "A model based only on spike-binding sites performed considerably worse than other ACE2-based models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unclear why the same sites would have been repeatedly selected from among the large number of correlated alternatives (Figure 3), and why they would be consistently preferred over spike-interacting sites themselves. Further, a model based only on spike-binding sites performed considerably worse than other ACE2-based models (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model performance data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "3678684b-89db-4d35-aaf4-c6c061c9d1f5",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C42",
+      "claim": "Strong correlations exist between predictions from the combined ACE2-based model and those from earlier studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong correlations between predictions from our combined ACE2-based model and those from earlier studies confirmed that it was broadly representative of earlier approaches (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "ff444727-92e1-41b1-8895-79a3e6b942a7",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C43",
+      "claim": "Binding affinity-based predictions performed best among previously published heuristics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, performance appeared to be broadly similar across studies, with binding affinity-based predictions performing best (Huang et al., 2020), followed by distance-based and finally host trait-based approaches (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by retrospective performance assessment shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "7dc9f442-f008-45e7-9934-52d63e5f848d",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C44",
+      "claim": "Most distance-based approaches achieved their high accuracy by prioritising sensitivity and had very low specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most distance-based approaches achieved their high accuracy by prioritising sensitivity (i.e., accurate prediction of susceptible species, which dominate current data), and had very low specificity (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by performance analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "65bbf0ad-98d7-4eeb-945c-c91020647a52",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C45",
+      "claim": "The best ACE2-based model predicted 87.6% of mammals to be susceptible (N=178).",
+      "claim_type": "EXPLICIT",
+      "source": "Our best-performing ACE2-based model, the AA consensus distance/AA consensus distance ensemble, predicted 87.6% of mammals to be susceptible (N=178).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by predictions from the trained model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "6403c819-8f04-4798-8c39-8c9deeefdac0",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C46",
+      "claim": "82.2% of mammals in available data are reported to be susceptible (N=90).",
+      "claim_type": "EXPLICIT",
+      "source": "This is broadly in line with currently available data, where 82.2% of mammals are reported to be susceptible (N=90; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the compiled dataset shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "6b62cae1-514f-4b3c-93f8-73fecacd8cbf",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C47",
+      "claim": "Species in South-East Asia were not more likely to be susceptible to sarbecoviruses than expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, species in this region were not more likely to be susceptible to sarbecoviruses than expected by chance (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spatial analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "9f215a6f-443d-4b03-9000-38fd4b81b8aa",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C48",
+      "claim": "The observed concentration of putatively susceptible species in South-East Asia appears to be shaped largely by the increased availability of ACE2 sequences for species from this region.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the observed concentration of putatively susceptible species appears to be shaped largely by the increased availability of ACE2 sequences for species from this region (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of ACE2 sequence availability and predicted susceptibility shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "92521376-110d-4dc6-b544-84c040fcf284",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C49",
+      "claim": "The phylogeny-only model reduces the proportion of susceptible mammals from 87.6% to 42.7% (N=4183), implying the need for surveillance in 1785 mammal species.",
+      "claim_type": "EXPLICIT",
+      "source": "By allowing predictions on species without available ACE2 sequences, the phylogeny-only model leads to different conclusions on how surveillance might be targeted. This model reduces the proportion of susceptible mammals from 87.6% to 42.7% (N=4183), but this still implies the need for surveillance in 1785 mammal species (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by predictions from the phylogeny-based model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "d4aff9f3-7f56-431a-8a4c-c15d36aaa917",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C50",
+      "claim": "In most mammalian taxonomic orders that contained susceptible species, all included species were predicted to be susceptible.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with observed data, in most mammalian taxonomic orders that contained susceptible species, all included species were predicted to be susceptible (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by taxonomic analysis shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "c680aed1-738f-4299-8b3a-97703e3c73b2",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C51",
+      "claim": "Primates, rodents, and bats contained several families with no species predicted as susceptible.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly however, primates, rodents, and bats deviated from this pattern, containing several families with no species predicted as susceptible (Figure 5\u2014figure supplement 3, Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by taxonomic analysis shown in Figure 5\u2014figure supplement 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "7b6bcf1c-6569-438e-8eb9-91d04f722d4b",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C52",
+      "claim": "Susceptibility to sarbecovirus infection was highly conserved, clustering in patterns consistent with the evolutionary history of potential host species.",
+      "claim_type": "EXPLICIT",
+      "source": "First, susceptibility to sarbecovirus infection was highly conserved, clustering in patterns consistent with the evolutionary history of potential host species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic analysis showing high Pagel's \u03bb values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "1fa0d4ff-472f-4957-9991-fcdfbd34a6e5",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C53",
+      "claim": "ACE2 is evolutionarily conserved, and a phylogeny derived from ACE2 sequences was highly congruent with one reflecting broader evolutionary history.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, ACE2 is also evolutionarily conserved, and a phylogeny derived from ACE2 sequences was highly congruent with one reflecting broader evolutionary history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic comparison showing high correlation coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "ac7a7e2a-ff16-430f-9a09-3402af61d168",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C54",
+      "claim": "Commonly used approaches for representing ACE2 sequence differences are largely equivalent in the amount of susceptibility information carried.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, commonly used approaches for representing ACE2 sequence differences are largely equivalent in the amount of susceptibility information carried (Figure 2, Figure 4\u2014figure supplement 1), despite measuring biologically distinct aspects of ACE2 sequence variation and its interaction with sarbecovirus spike proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model performance comparisons and correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "59e190ec-2d1f-43d6-8005-a1f5bc6d4759",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C55",
+      "claim": "Models based on host evolutionary history performed similarly to the best ACE2-based models.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, models based on host evolutionary history performed similarly to the best ACE2-based models, while considering ACE2 in addition to evolutionary history provided no detectable improvements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model performance comparisons shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "0261ff09-9e0b-4eaa-9d92-23c4c69aad4e",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C56",
+      "claim": "In ACE2-based models with access to information about individual amino acid positions, most predictive power was derived from phylogenetically-informative sites rather than virus-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in ACE2-based models with access to information about individual amino acid positions, most predictive power was derived from phylogenetically-informative sites rather than virus-binding sites, even when measures of binding affinity and sequence similarity were removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by feature importance analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "065a5926-45c5-4417-a373-71f99bcee2b3",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C57",
+      "claim": "The same features and sites were used across all species without affecting predictive accuracy for both rhinolophid bats and other species.",
+      "claim_type": "EXPLICIT",
+      "source": "This held true for both rhinolophid bats (the putative ancestral hosts of sarbecoviruses which may have different host-virus interactions due to long-term co-evolutionary dynamics) and other species, with the same features and sites used across all species without affecting predictive accuracy (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by feature importance analysis shown in Figure 3\u2014figure supplement 1 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "3768924a-578f-45ae-9f8f-452a87d90a2e",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C58",
+      "claim": "There is experimental evidence suggesting that variation in ACE2 alone can block infection.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is experimental evidence suggesting that variation in ACE2 alone can block infection (e.g., Guo et al., 2020; Thakur et al., 2022), how widely alleles conferring complete resistance occur in nature (particularly in species with no history of sarbecovirus exposure) remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "78050852-a8b0-4b06-b1aa-b64dde2e75ce",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C59",
+      "claim": "A broad diversity of ACE2 variation is permissive for infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our data show that a broad diversity of ACE2 variation is permissive for infection, so such examples, though biologically verified, may be extremes that do not generalise across taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high proportion of susceptible species across diverse ACE2 sequences in the dataset.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "c33e8bea-612c-423a-aa6c-ffa4fbf776f9",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C60",
+      "claim": "Sarbecovirus host range is likely to be shaped by a range of factors all showing some level of phylogenetic conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, sarbecovirus host range is likely to be shaped by a range of factors all showing some level of phylogenetic conservation (e.g., receptor distribution, innate immunity, behaviour).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that phylogeny alone predicts susceptibility as well as ACE2.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "ccb1fae3-27eb-44b6-ac22-02c413a794da",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C61",
+      "claim": "ACE2 sequences are only available for a small fraction of potential host species.",
+      "claim_type": "EXPLICIT",
+      "source": "A key drawback of ACE2-based models is that data are only available for a small fraction of potential host species (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the geographic distribution of ACE2 sequence availability shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "8fd04e8b-3560-45e2-aac2-250fffc33ede",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C62",
+      "claim": "Many ACE2 sequences likely stem from existing sarbecovirus research which is geographically biased.",
+      "claim_type": "EXPLICIT",
+      "source": "This limits their applied use and may also introduce biases since many ACE2 sequences likely stem from existing sarbecovirus research which is geographically biased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed geographic concentration of ACE2 sequences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "5098be94-b950-4bc6-96ba-a911cc00f1bc",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C63",
+      "claim": "The host trait-based approach appeared to have reduced performance relative to models directly incorporating host phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although we reiterate that quantitative measures of performance should be considered cautiously, this approach appeared to have reduced performance relative to models directly incorporating host phylogeny (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by performance comparisons shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "d2fce191-334f-453c-9873-78e9dc274e7a",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C64",
+      "claim": "11 of 12 species more recently reported as naturally infected were accurately predicted by the phylogeny-based model.",
+      "claim_type": "EXPLICIT",
+      "source": "Anecdotally, this accuracy extends to species only recognised as susceptible after data collection for this study had ended, with 11 of 12 species more recently reported as naturally infected accurately predicted by the phylogeny-based model (Supplementary file 2; Allender et al., 2022; Kuchipudi et al., 2022; Padilla-Blanco et al., 2022; Pereira et al., 2022; United States Department of Agriculture, 2022; United States Department of Agriculture, 2021a; United States Department of Agriculture, 2021b; United States Department of Agriculture, 2021c; Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by post-hoc validation using newly reported infections.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "2fb8610c-e118-4c15-ad0f-2fcdb7467369",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C65",
+      "claim": "65.2% of mammals tested in experimental infections were susceptible (CI: 42.7\u201383.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "This issue does not stem from the models, which show high accuracy on current data, but rather are representative of a pattern of widespread susceptibility seen consistently across experimental infections (65.2% of mammals susceptible, CI: 42.7\u201383.6%), our wider training data (82.2%, CI: 72.7\u201389.5%), and predictions from both the ACE2-based ensemble and host phylogeny-based models (87.6% and 42.6%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of experimental infection data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "ec642efd-964b-4f5d-96d1-c7933258b9a6",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C66",
+      "claim": "Conditioning predictions on the top 30% of species captures the majority of currently known susceptibles (73%), but still means at least 1255 mammals require surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while conditioning our predictions on the top 30% of species captures the majority of currently known susceptibles (73%), this still means at least 1255 mammals require surveillance while introducing a significant risk of missing key spillovers (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of prediction thresholds shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "a64b6459-c06e-4e30-b301-33f69cf30fcb",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C67",
+      "claim": "The majority of susceptible hosts are unlikely to transmit the virus effectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking further into the future, our data suggest that the majority of susceptible hosts are unlikely to transmit the virus effectively (Figure 1A), and indeed only a limited number of natural spillovers have thus far resulted in onward transmission (Kuchipudi et al., 2022; Oude Munnink et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data on virus shedding shown in Figure 1A and citations to transmission studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "f6739c23-1ebb-49a3-9d07-d3a21f0af7b6",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C68",
+      "claim": "Current data cannot produce models capable of accurately predicting virus shedding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the inability of current data to produce models capable of accurately predicting virus shedding (Figure 2\u2014figure supplement 1) indicates a need for greater investment to gather sufficient data on the ability of hosts to transmit sarbecoviruses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model performance data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "191815f1-d025-4584-a9a7-d35ac9d4ad6c",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C69",
+      "claim": "The relatively small number of species for which sarbecovirus susceptibility data are available is a clear limitation of the approach.",
+      "claim_type": "EXPLICIT",
+      "source": "A clear limitation of our approach is the relatively small number of species for which sarbecovirus susceptibility data are available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the limitations of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "18a41294-e14e-4801-ac37-72beaa91a6b0",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C70",
+      "claim": "Limited numbers of known non-susceptible species made it difficult to distinguish variation in the specificity of alternative approaches with confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining diverse data sources and expanding the scope to all sarbecoviruses allowed us to evaluate the rapidly growing number of untested heuristics predicting SARS-CoV-2 host range. However, limited numbers of known non-susceptible species in particular made it difficult to distinguish variation in the specificity of alternative approaches with confidence, a problem exacerbated by low levels of overlap between available data and the species for which predictions were available in individual studies (wide CIs, Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the limitations of the analysis, supported by wide confidence intervals in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "e27a3cf8-6979-4a4c-a375-9aaaa28de074",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C71",
+      "claim": "There was no evidence to suggest that including data from cell culture-based experiments skewed results.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our strategy to maximise sample size meant including data from cell culture-based experiments, we found no evidence to suggest that this skewed results (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "835bbe35-edf5-49f8-9e91-c1801acdf8f7",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C72",
+      "claim": "The inclusion of additional sarbecoviruses did not adversely impact model performance.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous approaches were not explicitly designed for non-SARS-CoV-2 sarbecoviruses, our results suggest the inclusion of additional sarbecoviruses did not adversely impact model performance (Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model performance analysis shown in Figure 2\u2014figure supplement 3, 4, and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "fba2e1fd-60c3-4f63-9ad4-2eb9cfc6d0c2",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C73",
+      "claim": "Most species (90.8%) included in the dataset have been either linked to or tested for susceptibility to sarbecoviruses known to use ACE2 as an entry receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be because most species (90.8%) included in our dataset have been either linked to or tested for susceptibility to sarbecoviruses known to use ACE2 as an entry receptor (Khaledian et al., 2022; Starr et al., 2022), including all non-susceptible species (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the dataset composition.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "3d86690e-3342-4e3b-90b9-c42a2c6b1f4e",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C74",
+      "claim": "Nine susceptible host species have so far only been reported to be infected by sarbecoviruses which are either not known to use ACE2 or are suspected to use an alternative receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine susceptible host species have so far only been reported to be infected by sarbecoviruses which are either not known to use ACE2 (due to a lack of published experiments involving the viruses in question) or are suspected to use an alternative receptor (based on an inability to bind the ACE2 orthologs tested thus far); we detected no differences in accuracy when predicting the susceptibility of these species (Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of model performance on different subsets of species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "60ac7337-27ee-44e6-8b2a-25fcbbf2af8a",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C75",
+      "claim": "No differences in accuracy were detected when predicting the susceptibility of species linked only to non-ACE2-utilising sarbecoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine susceptible host species have so far only been reported to be infected by sarbecoviruses which are either not known to use ACE2 (due to a lack of published experiments involving the viruses in question) or are suspected to use an alternative receptor (based on an inability to bind the ACE2 orthologs tested thus far); we detected no differences in accuracy when predicting the susceptibility of these species (Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model performance analysis shown in Figure 2\u2014figure supplement 3, 4, and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "71400979-b6b9-400b-b342-edd4443a825e",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C76",
+      "claim": "Convergence in performance for viruses that putatively use different receptors lends further support to the conclusion that sarbecovirus host range is determined by factors other than ACE2 sequence variation.",
+      "claim_type": "EXPLICIT",
+      "source": "This convergence in performance for viruses that putatively use different receptors lends further support to our conclusion that sarbecovirus host range is determined by factors other than ACE2 sequence variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that models perform similarly for species linked to different sarbecoviruses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "d66b8ceb-fe78-4b88-9908-48370af677b5",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C77",
+      "claim": "Available susceptibility data may be affected by the same taxonomic and geographic biases affecting ACE2 sequence availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, available susceptibility data may be affected by the same taxonomic and geographic biases affecting ACE2 sequence availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential biases in the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "60bc9207-e06d-4bab-bf7f-9fb6beda3469",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C78",
+      "claim": "Directly observed data will be biased to countries with capacity for surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, directly observed data will be biased to countries with capacity for surveillance, in vivo data will be limited to animal models that can be maintained in captivity, and heterologous ACE2 experiments are limited by requiring prior knowledge of ACE2 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential sources of bias in the data.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "4b4d4ce2-61fe-404e-8d30-37e54a393273",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C79",
+      "claim": "In vivo data will be limited to animal models that can be maintained in captivity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, directly observed data will be biased to countries with capacity for surveillance, in vivo data will be limited to animal models that can be maintained in captivity, and heterologous ACE2 experiments are limited by requiring prior knowledge of ACE2 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential sources of bias in the data.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "5a99d23a-b8e1-45e0-9f77-cf257a5983d8",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C80",
+      "claim": "Heterologous ACE2 experiments are limited by requiring prior knowledge of ACE2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, directly observed data will be biased to countries with capacity for surveillance, in vivo data will be limited to animal models that can be maintained in captivity, and heterologous ACE2 experiments are limited by requiring prior knowledge of ACE2 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential sources of bias in the data.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "0dc61b90-ea34-4bf4-9944-6fffc8960f00",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C81",
+      "claim": "Current biases could not produce a false equivalence between ACE2 sequences and host phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while this implies that predictions could be periodically updated as new observations become available, we see no mechanism through which current biases could produce a false equivalence between ACE2 sequences and host phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the robustness of the main finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "800a6ebb-6095-468a-9247-9dfacdce33fa",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "claim_id": "C82",
+      "claim": "Both current data and model predictions suggest a significant ongoing risk of reverse zoonosis to a wide range of species.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results imply major challenges for predicting the host range of generalist viruses such as SARS-CoV-2, even when models are reasonably accurate. Both current data and model predictions suggest a significant ongoing risk of reverse zoonosis to a wide range of species, implying a need for continued surveillance among species in contact with humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the high proportion of susceptible species predicted by models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6fede98b-d229-48f0-a9ee-58bfba67b18b",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors compiled a dataset of 96 mammalian and avian species with records of sarbecovirus interactions, including 25 species with natural infections, 28 with experimental inoculations, and limited data on virus shedding (23 species, 17 shedding). Most susceptible species (88%) were linked to ACE2-utilizing sarbecoviruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 describe the dataset composition and are directly supported by the data collection methodology and Figure 1. The hierarchical treatment of evidence types and the overlap between SARS-CoV-2 and other sarbecovirus susceptibility provide adequate justification for pooling data across viruses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "585e4ee3-c5a2-4cc2-802b-bd86e962c1dd",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sarbecovirus susceptibility is highly phylogenetically conserved (Pagel's \u03bb>0.686, p\u22640.003), with non-susceptible species clustering closer to each other than to susceptible species. ACE2 phylogeny closely matches host phylogeny (Baker's \u03b3=0.934, Spearman's \u03c1=0.870).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27, C52-C53 are well-supported by statistical analyses shown in Figure 1 and Figure 1\u2014figure supplement 1. The phylogenetic signal tests and correlation analyses provide strong quantitative evidence for phylogenetic conservation of both susceptibility and ACE2 sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "c19ba409-145c-4771-aaec-83112e6de695",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ACE2-based machine learning models predict sarbecovirus susceptibility with 80.2% accuracy (CI: 70.8-87.6%), but perform poorly on sensitivity compared to null models while showing better specificity. Only two ACE2 representations (AA consensus distance and AA properties) clearly outperformed null models in overall accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C28-C31 are supported by rigorous leave-one-out cross-validation results shown in Figure 2. The nested tuning procedure and appropriate statistical testing provide confidence in the reported performance metrics, though the limited number of non-susceptible species (N=21) constrains specificity estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "b6009b71-6963-4043-b5ea-5e7b1ea41715",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Phylogeny-only models performed equivalently to or better than ACE2-based models (84.4% accuracy, CI: 75.5-91.0%), and combining phylogeny with ACE2 provided no improvement, suggesting ACE2 information is redundant with host phylogeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C35-C36, C55 are strongly supported by model comparison data in Figure 2. The overlapping confidence intervals and lack of improvement when combining features provide compelling evidence that phylogeny captures the same information as ACE2 sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "fe591b79-1627-4c4e-933b-9065c5232ce8",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ACE2-based models derive predictive power from phylogenetically informative sites rather than virus-binding sites. Only 1 of 18 ACE2 positions used by models is known to interact with spike protein (position 82), and these positions contain significantly more phylogenetic information than average (p<0.001). Models using only spike-binding sites performed considerably worse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C37-C41, C56 are well-supported by feature importance analyses in Figure 3 and supplements. The Shannon entropy analysis and poor performance of spike-binding-only models provide strong evidence that predictive power derives from phylogenetic rather than mechanistic information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "b2b8b5df-fc18-47b2-8332-36bbc5b0c3f4",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The predictive power of ACE2-based models derives from correlations with host phylogeny rather than mechanistic links to infection biology. Different ACE2 representations carry equivalent information, and models perform similarly for viruses using different receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C34, C54, C76 represent the central conclusion and are supported by multiple converging lines of evidence: equivalent performance across ACE2 representations (C54), phylogeny-only models matching ACE2 models (C4, C35), feature importance showing phylogenetic sites (C3, C56), and similar performance for non-ACE2 viruses (C74-C76).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "9e474f2d-7682-4023-9db0-011fe7d4f9ff",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Previously published ACE2-based heuristics showed broadly similar performance to the authors' models, with binding affinity-based predictions performing best, followed by distance-based approaches. Most distance-based approaches achieved high accuracy through high sensitivity but very low specificity. Host trait-based approaches showed reduced performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44, C63 are supported by retrospective analysis in Figure 4 and supplements. However, the authors appropriately note that wide confidence intervals and limited species overlap make quantitative comparisons uncertain (C70). The comparison is fair but should be interpreted cautiously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "2300dd68-3e10-4409-b36f-77999d983c9f",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Biased availability of ACE2 sequences misleads geographic projections of at-risk species. The apparent hotspot in South-East Asia reflects ACE2 sequence availability rather than true elevated susceptibility, as species in this region were not more likely to be susceptible than expected by chance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47-C48, C61-C62 are supported by spatial analyses in Figure 5. The comparison between ACE2 sequence availability (Figure 5A) and predicted susceptibility patterns (Figure 5C, E) clearly demonstrates geographic bias. However, the inference about causation (C62) is reasonable but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "36e9b13c-0970-4831-81c3-355d16d3d232",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phylogeny-based models reduce geographic bias but predict 42.7% of mammals as susceptible (1785 species), compared to 87.6% for ACE2-based models. Most taxonomic orders show uniform susceptibility, though primates, rodents, and bats contain families predicted as non-susceptible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C45-C46, C49-C51 are supported by predictions shown in Figure 5 and supplements. The large number of predicted susceptible species is consistent across observed data (82.2%), ACE2 models (87.6%), and phylogeny models (42.7%), though the phylogeny model's lower estimate may reflect broader taxonomic coverage rather than improved accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "7ef81937-bd6e-46af-b624-264e3e6fb9e8",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The phylogeny-based model accurately predicted 11 of 12 species reported as naturally infected after data collection ended, providing post-hoc validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by citations to recent reports and comparison to model predictions (Supplementary file 2). This provides valuable external validation, though the small sample size and potential for publication bias (newly infected species more likely to be reported) should be noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "cfcc10ed-bbf0-4e95-89eb-d92657107e2c",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Conditioning predictions on the top 30% of species captures 73% of known susceptibles but still requires surveillance of 1255 mammals. Both data and models suggest significant ongoing risk of reverse zoonosis to a wide range of species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C82 are supported by threshold analysis in Figure 5\u2014figure supplement 1 and the overall pattern of widespread susceptibility. The practical implications are appropriately cautious, acknowledging that even aggressive filtering leaves an impractically large number of species requiring surveillance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "8776aa4d-35f0-48fe-a3f0-e0111426e10f",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The majority of susceptible hosts are unlikely to transmit virus effectively (Figure 1A), but current data cannot produce models capable of accurately predicting virus shedding, indicating need for more transmission data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by virus shedding data in Figure 1A and poor model performance in Figure 2\u2014figure supplement 1. However, the limited data (N=23 species, only 17 shedding) means this conclusion should be considered preliminary and requires substantial additional data for confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "ea4224d9-be19-45d3-92ef-cb992ffbee1a",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study has limitations including small sample size (96 species), limited non-susceptible species (N=21), and potential biases. However, including cell culture data did not skew results, and including non-SARS-CoV-2 sarbecoviruses did not adversely impact performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C75 appropriately acknowledge limitations while providing evidence that methodological choices (including cell culture data, pooling sarbecoviruses) were justified. The analyses in Figure 2\u2014figure supplements 2-4 support these claims, though the fundamental limitation of small sample size remains.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "314efcac-f68d-4b9a-a8f5-6a8c613989d9",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Distance to closest susceptible species outperformed distance to human ACE2 in specificity while maintaining sensitivity. The AA categorical model performed considerably worse than null across all metrics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by model comparisons in Figure 2. These findings provide useful methodological insights about ACE2 representation, though they are secondary to the main conclusions about phylogenetic signal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "d03597ca-9de0-4a28-9966-8d7bcd6f08bd",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The same ACE2 features and sites were used for both rhinolophid bats and other species without affecting predictive accuracy, suggesting no special evolutionary dynamics in putative reservoir hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by feature importance analysis in Figure 3\u2014figure supplement 1 and performance analysis in Figure 3\u2014figure supplement 3. This addresses a potential confounding factor (different evolutionary pressures in reservoir hosts) and strengthens the main conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "5d6ac32f-1956-4772-9904-d891577124f1",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "While experimental evidence shows ACE2 variation can block infection in some cases, a broad diversity of ACE2 variation is permissive for infection. Sarbecovirus host range is likely shaped by multiple phylogenetically conserved factors beyond ACE2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by the high proportion of susceptible species across diverse ACE2 sequences and the equivalent performance of phylogeny-only models. However, C60 is largely inferential\u2014the specific factors remain unidentified, and this represents a hypothesis rather than a demonstrated mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "8a16c108-785c-4492-8816-d4039fcf32ab",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Available susceptibility data may be affected by taxonomic and geographic biases, but current biases could not produce false equivalence between ACE2 and phylogeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 appropriately acknowledge potential biases (C77-C80 are speculative but reasonable) while arguing that the core finding is robust (C81). The reasoning in C81 is sound\u2014systematic biases in data collection would not be expected to create the specific pattern of phylogenetic signal observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "12901e2f-eccb-45a3-90cb-b577a79617fc",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background context on SARS-CoV-2 reverse zoonosis, experimental susceptibility studies, and existing computational approaches for predicting host range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C18 provide background context supported by appropriate citations. These are literature review claims that establish motivation and context for the study rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    },
+    {
+      "id": "ecdd8319-238a-48d3-a70e-bd008c59cc48",
+      "content_id": "9d916f78-d48a-488f-8013-f5c54e12b23c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Widespread susceptibility is observed across experimental infections (65.2% of mammals, CI: 42.7-83.6%), training data (82.2%, CI: 72.7-89.5%), and model predictions (87.6% and 42.6% for ACE2 and phylogeny models respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by consistent patterns across multiple data sources. However, the wide confidence interval for experimental infections (42.7-83.6%) reflects substantial uncertainty, and the different estimates from ACE2 vs phylogeny models suggest some methodological dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:21.187690Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d0815f6e-4a39-4fb3-8f36-ef4ed9a23c92",
+      "result_id": "6fede98b-d229-48f0-a9ee-58bfba67b18b"
+    },
+    {
+      "claim_id": "33c7d6f1-8146-418d-bbbf-92aa8d7e9969",
+      "result_id": "6fede98b-d229-48f0-a9ee-58bfba67b18b"
+    },
+    {
+      "claim_id": "65be6932-59db-461e-91ad-d5c13143dfc4",
+      "result_id": "6fede98b-d229-48f0-a9ee-58bfba67b18b"
+    },
+    {
+      "claim_id": "aea8c7d0-ee57-41b6-b0cb-6d8d0fc897c9",
+      "result_id": "6fede98b-d229-48f0-a9ee-58bfba67b18b"
+    },
+    {
+      "claim_id": "af318497-2547-4e4a-ac4d-a878157d041c",
+      "result_id": "6fede98b-d229-48f0-a9ee-58bfba67b18b"
+    },
+    {
+      "claim_id": "0131d644-9767-4664-886e-d606971a75d6",
+      "result_id": "6fede98b-d229-48f0-a9ee-58bfba67b18b"
+    },
+    {
+      "claim_id": "8a09dd9a-bafb-4a40-b1b4-9ee0a65af675",
+      "result_id": "585e4ee3-c5a2-4cc2-802b-bd86e962c1dd"
+    },
+    {
+      "claim_id": "b3702cc9-fff9-4fb3-9fec-03c09a6705d6",
+      "result_id": "585e4ee3-c5a2-4cc2-802b-bd86e962c1dd"
+    },
+    {
+      "claim_id": "03cb7307-86ab-4560-8f95-3f59a81f3085",
+      "result_id": "585e4ee3-c5a2-4cc2-802b-bd86e962c1dd"
+    },
+    {
+      "claim_id": "7b6bcf1c-6569-438e-8eb9-91d04f722d4b",
+      "result_id": "585e4ee3-c5a2-4cc2-802b-bd86e962c1dd"
+    },
+    {
+      "claim_id": "1fa0d4ff-472f-4957-9991-fcdfbd34a6e5",
+      "result_id": "585e4ee3-c5a2-4cc2-802b-bd86e962c1dd"
+    },
+    {
+      "claim_id": "4eae2c3b-2efe-4948-ba20-623147c90acf",
+      "result_id": "c19ba409-145c-4771-aaec-83112e6de695"
+    },
+    {
+      "claim_id": "02b5f2ce-3f43-4036-a841-a64effe1878c",
+      "result_id": "c19ba409-145c-4771-aaec-83112e6de695"
+    },
+    {
+      "claim_id": "aaa6ab02-97ad-4ae6-bdf6-55bee5e87eb2",
+      "result_id": "c19ba409-145c-4771-aaec-83112e6de695"
+    },
+    {
+      "claim_id": "607452da-a0f7-4d06-8f23-ec2863b5bba2",
+      "result_id": "c19ba409-145c-4771-aaec-83112e6de695"
+    },
+    {
+      "claim_id": "3c66f340-3cf1-48db-8036-6d9e3212e7e9",
+      "result_id": "c19ba409-145c-4771-aaec-83112e6de695"
+    },
+    {
+      "claim_id": "bc14f834-688c-4d9b-acdc-90ceb33c394d",
+      "result_id": "b6009b71-6963-4043-b5ea-5e7b1ea41715"
+    },
+    {
+      "claim_id": "8dec478e-4ee9-454d-8aa4-0f4a9aee8900",
+      "result_id": "b6009b71-6963-4043-b5ea-5e7b1ea41715"
+    },
+    {
+      "claim_id": "29384387-e39d-4401-a3e2-139f1f5953d7",
+      "result_id": "b6009b71-6963-4043-b5ea-5e7b1ea41715"
+    },
+    {
+      "claim_id": "59e190ec-2d1f-43d6-8005-a1f5bc6d4759",
+      "result_id": "b6009b71-6963-4043-b5ea-5e7b1ea41715"
+    },
+    {
+      "claim_id": "407f9287-e601-4406-a0c1-a8c375a83526",
+      "result_id": "fe591b79-1627-4c4e-933b-9065c5232ce8"
+    },
+    {
+      "claim_id": "129ee4e3-5f00-4389-9a22-7e755537b8ab",
+      "result_id": "fe591b79-1627-4c4e-933b-9065c5232ce8"
+    },
+    {
+      "claim_id": "30cf7817-92c5-4155-9849-c04c8880bfff",
+      "result_id": "fe591b79-1627-4c4e-933b-9065c5232ce8"
+    },
+    {
+      "claim_id": "3d1422bf-8f78-48a2-a822-75a603f572ad",
+      "result_id": "fe591b79-1627-4c4e-933b-9065c5232ce8"
+    },
+    {
+      "claim_id": "f828e423-7850-42dc-8e52-d661525b5408",
+      "result_id": "fe591b79-1627-4c4e-933b-9065c5232ce8"
+    },
+    {
+      "claim_id": "34dbf598-eb5c-4517-9d38-969da62b46cd",
+      "result_id": "fe591b79-1627-4c4e-933b-9065c5232ce8"
+    },
+    {
+      "claim_id": "0261ff09-9e0b-4eaa-9d92-23c4c69aad4e",
+      "result_id": "fe591b79-1627-4c4e-933b-9065c5232ce8"
+    },
+    {
+      "claim_id": "04ad6c6e-b916-48c8-ba86-d1b13a272d7d",
+      "result_id": "b2b8b5df-fc18-47b2-8332-36bbc5b0c3f4"
+    },
+    {
+      "claim_id": "ac7a7e2a-ff16-430f-9a09-3402af61d168",
+      "result_id": "b2b8b5df-fc18-47b2-8332-36bbc5b0c3f4"
+    },
+    {
+      "claim_id": "363aaae5-47bb-4e6b-9bbf-cefd02490b41",
+      "result_id": "b2b8b5df-fc18-47b2-8332-36bbc5b0c3f4"
+    },
+    {
+      "claim_id": "71400979-b6b9-400b-b342-edd4443a825e",
+      "result_id": "b2b8b5df-fc18-47b2-8332-36bbc5b0c3f4"
+    },
+    {
+      "claim_id": "3678684b-89db-4d35-aaf4-c6c061c9d1f5",
+      "result_id": "9e474f2d-7682-4023-9db0-011fe7d4f9ff"
+    },
+    {
+      "claim_id": "ff444727-92e1-41b1-8895-79a3e6b942a7",
+      "result_id": "9e474f2d-7682-4023-9db0-011fe7d4f9ff"
+    },
+    {
+      "claim_id": "7dc9f442-f008-45e7-9934-52d63e5f848d",
+      "result_id": "9e474f2d-7682-4023-9db0-011fe7d4f9ff"
+    },
+    {
+      "claim_id": "5098be94-b950-4bc6-96ba-a911cc00f1bc",
+      "result_id": "9e474f2d-7682-4023-9db0-011fe7d4f9ff"
+    },
+    {
+      "claim_id": "73ce6904-ee4d-4e66-8c38-e65a87e42b35",
+      "result_id": "2300dd68-3e10-4409-b36f-77999d983c9f"
+    },
+    {
+      "claim_id": "6b62cae1-514f-4b3c-93f8-73fecacd8cbf",
+      "result_id": "2300dd68-3e10-4409-b36f-77999d983c9f"
+    },
+    {
+      "claim_id": "9f215a6f-443d-4b03-9000-38fd4b81b8aa",
+      "result_id": "2300dd68-3e10-4409-b36f-77999d983c9f"
+    },
+    {
+      "claim_id": "ccb1fae3-27eb-44b6-ac22-02c413a794da",
+      "result_id": "2300dd68-3e10-4409-b36f-77999d983c9f"
+    },
+    {
+      "claim_id": "8fd04e8b-3560-45e2-aac2-250fffc33ede",
+      "result_id": "2300dd68-3e10-4409-b36f-77999d983c9f"
+    },
+    {
+      "claim_id": "493347a5-5dd4-4ac3-9f1b-d7f81de75d8c",
+      "result_id": "36e9b13c-0970-4831-81c3-355d16d3d232"
+    },
+    {
+      "claim_id": "65bbf0ad-98d7-4eeb-945c-c91020647a52",
+      "result_id": "36e9b13c-0970-4831-81c3-355d16d3d232"
+    },
+    {
+      "claim_id": "6403c819-8f04-4798-8c39-8c9deeefdac0",
+      "result_id": "36e9b13c-0970-4831-81c3-355d16d3d232"
+    },
+    {
+      "claim_id": "92521376-110d-4dc6-b544-84c040fcf284",
+      "result_id": "36e9b13c-0970-4831-81c3-355d16d3d232"
+    },
+    {
+      "claim_id": "d4aff9f3-7f56-431a-8a4c-c15d36aaa917",
+      "result_id": "36e9b13c-0970-4831-81c3-355d16d3d232"
+    },
+    {
+      "claim_id": "c680aed1-738f-4299-8b3a-97703e3c73b2",
+      "result_id": "36e9b13c-0970-4831-81c3-355d16d3d232"
+    },
+    {
+      "claim_id": "d2fce191-334f-453c-9873-78e9dc274e7a",
+      "result_id": "7ef81937-bd6e-46af-b624-264e3e6fb9e8"
+    },
+    {
+      "claim_id": "ec642efd-964b-4f5d-96d1-c7933258b9a6",
+      "result_id": "cfcc10ed-bbf0-4e95-89eb-d92657107e2c"
+    },
+    {
+      "claim_id": "800a6ebb-6095-468a-9247-9dfacdce33fa",
+      "result_id": "cfcc10ed-bbf0-4e95-89eb-d92657107e2c"
+    },
+    {
+      "claim_id": "a64b6459-c06e-4e30-b301-33f69cf30fcb",
+      "result_id": "8776aa4d-35f0-48fe-a3f0-e0111426e10f"
+    },
+    {
+      "claim_id": "f6739c23-1ebb-49a3-9d07-d3a21f0af7b6",
+      "result_id": "8776aa4d-35f0-48fe-a3f0-e0111426e10f"
+    },
+    {
+      "claim_id": "191815f1-d025-4584-a9a7-d35ac9d4ad6c",
+      "result_id": "ea4224d9-be19-45d3-92ef-cb992ffbee1a"
+    },
+    {
+      "claim_id": "18a41294-e14e-4801-ac37-72beaa91a6b0",
+      "result_id": "ea4224d9-be19-45d3-92ef-cb992ffbee1a"
+    },
+    {
+      "claim_id": "e27a3cf8-6979-4a4c-a375-9aaaa28de074",
+      "result_id": "ea4224d9-be19-45d3-92ef-cb992ffbee1a"
+    },
+    {
+      "claim_id": "835bbe35-edf5-49f8-9e91-c1801acdf8f7",
+      "result_id": "ea4224d9-be19-45d3-92ef-cb992ffbee1a"
+    },
+    {
+      "claim_id": "fba2e1fd-60c3-4f63-9ad4-2eb9cfc6d0c2",
+      "result_id": "ea4224d9-be19-45d3-92ef-cb992ffbee1a"
+    },
+    {
+      "claim_id": "3d86690e-3342-4e3b-90b9-c42a2c6b1f4e",
+      "result_id": "ea4224d9-be19-45d3-92ef-cb992ffbee1a"
+    },
+    {
+      "claim_id": "60ac7337-27ee-44e6-8b2a-25fcbbf2af8a",
+      "result_id": "ea4224d9-be19-45d3-92ef-cb992ffbee1a"
+    },
+    {
+      "claim_id": "7a9cdf3c-af4c-4ce8-9cac-7b646e4e17d2",
+      "result_id": "314efcac-f68d-4b9a-a8f5-6a8c613989d9"
+    },
+    {
+      "claim_id": "b09fe8af-1a92-4d17-ae36-96245bb527ae",
+      "result_id": "314efcac-f68d-4b9a-a8f5-6a8c613989d9"
+    },
+    {
+      "claim_id": "065a5926-45c5-4417-a373-71f99bcee2b3",
+      "result_id": "d03597ca-9de0-4a28-9966-8d7bcd6f08bd"
+    },
+    {
+      "claim_id": "3768924a-578f-45ae-9f8f-452a87d90a2e",
+      "result_id": "5d6ac32f-1956-4772-9904-d891577124f1"
+    },
+    {
+      "claim_id": "78050852-a8b0-4b06-b1aa-b64dde2e75ce",
+      "result_id": "5d6ac32f-1956-4772-9904-d891577124f1"
+    },
+    {
+      "claim_id": "c33e8bea-612c-423a-aa6c-ffa4fbf776f9",
+      "result_id": "5d6ac32f-1956-4772-9904-d891577124f1"
+    },
+    {
+      "claim_id": "d66b8ceb-fe78-4b88-9908-48370af677b5",
+      "result_id": "8a16c108-785c-4492-8816-d4039fcf32ab"
+    },
+    {
+      "claim_id": "60bc9207-e06d-4bab-bf7f-9fb6beda3469",
+      "result_id": "8a16c108-785c-4492-8816-d4039fcf32ab"
+    },
+    {
+      "claim_id": "4b4d4ce2-61fe-404e-8d30-37e54a393273",
+      "result_id": "8a16c108-785c-4492-8816-d4039fcf32ab"
+    },
+    {
+      "claim_id": "5a99d23a-b8e1-45e0-9f77-cf257a5983d8",
+      "result_id": "8a16c108-785c-4492-8816-d4039fcf32ab"
+    },
+    {
+      "claim_id": "0dc61b90-ea34-4bf4-9944-6fffc8960f00",
+      "result_id": "8a16c108-785c-4492-8816-d4039fcf32ab"
+    },
+    {
+      "claim_id": "b7b7bbb4-d1c8-40cd-a5f6-f688abe13633",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "cf356fc0-500f-4fc5-bf47-23dad3a1cc06",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "a22ca73d-ed0f-4173-9a5b-3264dc7cb707",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "3d650c55-db2d-45ee-ac2d-3057b501ca14",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "de4d70dc-7fad-4527-bbc8-8ccbdcbad35b",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "03febed7-bb8d-4509-8483-2a6d14480352",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "70a9bf31-af00-4db8-aa3b-3fc0f07a6405",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "15a8d260-0931-47b5-856b-2cc906a39109",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "009a107d-46a4-4262-9611-99f9d680cb65",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "150e9c8f-919f-4bb4-9933-2a7e3468afea",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "73dc6c4b-4e92-4361-aaef-28617017a331",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "8661b917-8ddb-4afa-8122-e9a14d08614a",
+      "result_id": "12901e2f-eccb-45a3-90cb-b577a79617fc"
+    },
+    {
+      "claim_id": "2fb8610c-e118-4c15-ad0f-2fcdb7467369",
+      "result_id": "ecdd8319-238a-48d3-a70e-bd008c59cc48"
+    }
+  ],
+  "comparisons": []
+}

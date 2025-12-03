@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "78% of Pvalb mRNA-containing neurons in and around stratum pyramidale co-express both Oprm1 and Oprd1 mRNA, demonstrating co-expression of MORs and DORs in PV-BCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is supported by fluorescence in situ hybridization data with clear quantification (171/218 cells) and visual evidence in Figure 1\u2014figure supplement 1A, B. The methodology is appropriate for detecting mRNA co-localization, and the sample size is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Both DAMGO (MOR agonist) and SNC162 (DOR agonist) strongly suppress optically evoked IPSCs to similar degrees, with sequential application producing only slightly more suppression than either drug alone, indicating mutual occlusion. Both drugs increase paired-pulse ratio, consistent with presynaptic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C10 are well-supported by quantitative electrophysiological data with appropriate statistical testing (one-way ANOVA, Wilcoxon tests). The mutual occlusion pattern (C5: no significant difference between single and combined drug application) and PPR increases (C6, C7) provide converging evidence for presynaptic action. Sample sizes are adequate (n=8-18 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "With electrical stimulation, DAMGO and SNC162 exhibit strong mutual occlusion of eIPSCs similar to optogenetic stimulation. CB1R agonist WIN55,212 produces only modest suppression, indicating minimal contribution from CCK-BCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are supported by quantitative measurements with appropriate statistical testing. The WIN55,212 data (C11, C12) effectively controls for CCK-BC contribution. The mutual occlusion pattern with electrical stimulation (C13) replicates the optogenetic findings, strengthening the conclusion. The differential PPR effects between DAMGO (significant) and SNC162 (non-significant, p=0.055) are interesting but the biological significance is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Using photoactivatable leucine-enkephalin (LE), DORs exhibit approximately threefold greater potency than MORs in suppressing perisomatic inhibition (EC50 values). DOR activation largely accounts for LE actions in the absence of antagonists. MOR-mediated suppression shows surprisingly slow kinetics (tau ~683 ms at 20 Hz) compared to DOR (tau ~419 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 are supported by power-response curves and kinetic measurements using photoactivatable peptides. The EC50 values clearly demonstrate DOR dominance (C16), and the power-response curves in ACSF closely match those in CTOP (C17), supporting DOR dominance. The kinetic measurements (C18, C19) are statistically significant (p=0.0046). However, the claim that MOR kinetics are 'surprisingly slow' (C19) is subjective and depends on comparison to other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "DAMGO and SNC162 each reduce presynaptic Ca2+ transients by approximately 30%, while combined application produces approximately 40% suppression. This reduction in presynaptic Ca2+ is consistent with strong IPSC suppression and suggests convergence on the same pool of voltage-sensitive calcium channels (VSCCs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 are supported by two-photon calcium imaging data with appropriate quantification. The ~30% reduction by individual drugs and ~40% by combined drugs (C23-C27) demonstrates partial occlusion at the level of calcium influx. The inference that VSCC inhibition is the primary mechanism (C30) is reasonable given the calcium imaging data, though alternative mechanisms cannot be completely ruled out. The citation to Wu and Saggau 1997 (C28) appropriately supports the nonlinear relationship between calcium and release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In somato-dendritic compartments, DORs dominate the response to enkephalin photorelease, with MOR blockade having no measurable effect on light-evoked currents while DOR blockade greatly reduces them. MOR-mediated currents activate threefold more slowly than DOR-mediated currents (tau ~844 ms vs ~395 ms), suggesting inefficient MOR signaling in CA1 PV-BCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by voltage-clamp recordings with appropriate statistical testing. The lack of effect of CTOP (C31) contrasts sharply with the large effect of TIPP-Psi (C32), demonstrating DOR dominance. The kinetic measurements (C35) are statistically significant (p=0.019) and include comparison to prior literature. However, the inference that MOR signaling is 'inefficient' (C36) is somewhat subjective and could reflect low expression rather than inefficient signaling per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Ba2+ blocks the majority (~60-68%) but not all of the MOR- and DOR-mediated currents, consistent with GIRK channels as the primary effector. Additional HCN channel blocker ZD7288 does not further block DOR-mediated current, suggesting involvement of additional ion channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by pharmacological experiments with appropriate statistical testing. The Ba2+ data (C37) clearly demonstrate GIRK involvement, though the incomplete block suggests additional mechanisms. The lack of additional effect of ZD7288 (C38) is appropriately interpreted as suggesting other channels are involved, though the identity of these channels remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Viral overexpression of human MOR enhances both the magnitude and kinetics of MOR-mediated currents, with both parameters correlating strongly with mCherry fluorescence (expression level). This indicates that low MOR expression levels account for the modest effects of MOR activation in PV-BCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by experiments comparing MOR-overexpressing cells to controls with appropriate statistical testing (p<0.0001 for magnitude, p=0.0052 for kinetics). The strong correlations with fluorescence (C40: r=0.8314 for peak, r=-0.8538 for tau) provide compelling evidence that expression level determines functional properties. This is a key mechanistic insight explaining the DOR dominance observed earlier.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "MORs and DORs do not undergo heterologous desensitization in CA1 PV-BCs. Desensitization of MORs with DAMGO does not affect DOR function, and desensitization of DORs with deltorphin II does not affect MOR function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by desensitization experiments with power-response curves showing no change in EC50 values after desensitizing the other receptor. The experimental design is appropriate for testing heterologous desensitization. This is important evidence against functional interactions between the receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The DOR antagonist TIPP-Psi does not alter the kinetics, maximal effect, or power dependence of MOR-mediated responses (using photoactivatable DAMGO) in either somato-dendritic or synaptic compartments. This indicates MORs and DORs do not interact in a manner consistent with heteromers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by comprehensive experiments using photoactivatable DAMGO (CNV-Y-DAMGO) with and without TIPP-Psi. The lack of effect on kinetics (C47, C48), maximal effect (C49), and EC50 values (C50) across both compartments provides strong evidence against heteromer formation. The optogenetic confirmation (C52) strengthens this conclusion. This is a critical negative result that directly addresses the heteromer hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Background claims establishing the context for the study, including the role of MORs and DORs as targets for analgesics, prior evidence for and against MOR/DOR interactions in various systems, and the established co-expression of these receptors in hippocampal PV-BCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C74 are primarily literature review and background information supported by appropriate citations. These establish the rationale for the study and the gap in knowledge (C74: lack of direct comparison of MOR and DOR actions in CA1 PV-BCs). The citations appear appropriate and the characterization of prior work is reasonable, though the authors note conflicting evidence in the literature (C66).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Summary claims concluding that MORs and DORs activate partially overlapping pools of effectors, suppress synaptic output in a mutually occlusive manner, but do not show evidence of synergy or heteromer formation. DORs dominate the response to enkephalin, possibly due to low MOR expression. The receptors signal in a parallel, functionally independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 represent the main conclusions of the study, which are well-supported by the totality of experimental evidence. The partial overlap in somato-dendritic compartments (C75) is supported by the unidirectional occlusion data. The lack of synergy or heteromers (C77) is supported by the desensitization and TIPP-Psi experiments. The DOR dominance (C79) is supported by the potency and kinetics data. The speculation about low MOR expression (C80) is supported by the overexpression experiments. The conclusion of functionally independent signaling (C78, C83, C84) is the most parsimonious interpretation of the data.",
+    "result_type": "MAJOR"
+  }
+]

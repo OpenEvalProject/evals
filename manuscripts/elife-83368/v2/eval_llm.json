@@ -1,0 +1,175 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript provides background on protein kinases, stating that the human genome contains approximately 500 eukaryotic protein kinases, with 351 (~70%) classified as STKs and 90 (~18%) as TKs according to the GO database. STKs are described as ancient, predating the divergence of the three domains of life, while TKs diverged from STKs about 600 million years ago during early metazoan evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5) are well-supported by citations to established literature (Manning 1995, Modi and Dunbrack 2019a, Stancik et al. 2018, Miller 2012, Seb\u00e9-Pedr\u00f3s et al. 2016) and reference to the GO database. These are standard background facts in the kinase field and serve as context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript describes the structural and functional properties of type-II inhibitors, which bind only when kinases adopt an inactive 'DFG-out' conformation. The activation loop is approximately 20 residues long and undergoes a ~17 \u00c5 reorganization when transitioning from active 'extended' to classical DFG-out 'folded' conformation. Type-II inhibitors have a long chemical fragment that binds across the gatekeeper to the back pocket, while type-I inhibitors can bind to either DFG-in or DFG-out conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 provide well-established background on kinase conformational states and inhibitor types, supported by citations (Modi and Dunbrack 2019b) and consistent with structural biology knowledge. The ~17 \u00c5 reorganization is a key structural feature that is central to the manuscript's hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript reports that different kinase sequences have different propensities to adopt DFG-out in the absence of inhibitor. Analysis of type-II hit rate distributions from the Davis assay shows that STKs have an unfavorable contribution to type-II inhibitor binding relative to TKs. Gatekeeper size has an important influence on type-II binding for both STKs and TKs, with TKs tending to have smaller gatekeepers than STKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by analysis of experimental binding assay data (Davis et al. 2011) shown in Figure 1A and by multiple citations. The observation that gatekeeper size influences type-II binding is confirmed, but the authors note that gatekeeper size alone cannot fully explain the difference in hit rates between TKs and STKs, motivating further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Recent solution NMR experiments with Abl kinase revealed two DFG-out conformational states: one with a 'minimally perturbed' active-like activation loop and another classical 'folded' DFG-out conformation where the activation loop has moved ~17 \u00c5. Type-II inhibitors preferentially bind to the folded DFG-out state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by citation to Xie et al. 2020 NMR experiments and crystallographic observations shown in Figure 1B. This provides important experimental validation that type-II inhibitors specifically target the folded DFG-out conformation, which is central to the manuscript's hypothesis about conformational selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C13"
+    ],
+    "result": "Analysis of a previously published kinome-wide assay suggests that TKs have properties which privilege the binding of type-II inhibitors in comparison to STKs, leading to the hypothesis of an evolutionary divergence in their conformational energy landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C13 are supported by analysis of the Davis et al. 2011 kinome-wide assay data shown in Figure 1A. The observation that TKs show higher type-II hit rates than STKs, even after controlling for gatekeeper size, provides the initial evidence motivating the central hypothesis of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The manuscript describes the construction of an MSA of 236,572 protein kinase catalytic domains with 259 columns, classification of 10,345 raw sequences as TKs (1069 effective sequences) and 210,862 raw sequences as STKs (22,893 effective sequences), acquisition of 497 human kinase sequences from Modi and Dunbrack 2019b (447 remaining after filtering), and classification of gatekeeper residues as small (<110 \u00c5\u00b3) or large (>110 \u00c5\u00b3). Structural analysis identified 4268 active DFG-in structures (3643 STKs, 625 TKs) and 510 classical DFG-out structures (224 STKs, 286 TKs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 describe methodological details that are clearly documented with appropriate citations (McGee et al. 2021, Modi and Dunbrack 2019b, Miller et al. 1987). The sequence classification criteria and structural analysis methods are well-defined, providing a solid foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "A total of 94 different kinase-inhibitor complexes were simulated to calculate ABFEs via the alchemical DDM, with 74 of these free-energy calculations guided by insights from the Potts model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe the computational methodology employed in the study. The scale of simulations (94 complexes) is substantial and the Potts-guided approach for target selection is clearly described. The methods are appropriate for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "BIRB-796 binds to MAPK14 about 7 kcal/mol more strongly than imatinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by comparison of binding affinities with citation to Pargellis et al. 2002. This observation is used to demonstrate that highly potent type-II inhibitors can overcome the large reorganization penalty of STKs like MAPK14, which is an important point for the manuscript's argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C53"
+    ],
+    "result": "The manuscript concludes that TK catalytic domains have a molecular evolutionary bias that shifts their conformational equilibrium toward the inactive 'folded activation loop' DFG-out state, while STKs have a more stable active conformation favored over the DFG-out state. Structure-based and sequence-based analyses suggest TKs evolved to have free-energy penalties for the classical DFG-out conformation that are, on average, 4\u20136 kcal/mol smaller than the corresponding values for STKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, and C53 represent the central conclusions of the manuscript, drawn from combined Potts model and ABFE simulation analyses. The 4\u20136 kcal/mol difference is supported by Figure 4 showing strong correlation (R\u00b2=0.75, P\u224810\u207b\u00b3) between \u0394G_reorg from simulations and \u0394E_Potts, and Figure 5 showing \u0394\u0394E=3.2 (\u22484.3 kcal/mol) between STK and TK distributions with p\u226410\u207b\u00b9\u2075. The convergence of sequence-based and structure-based methods strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C54",
+      "C55"
+    ],
+    "result": "Potts statistical energy analysis suggests that TKs have, on average, weaker N-terminal anchor, RD-pocket, and C-terminal anchor interactions than STKs in the active conformation. The activation loops of TKs are more weakly 'anchored' against the catalytic loop motif in the active conformation and form more stable substrate-mimicking interactions in the inactive conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C54, and C55 describe the molecular basis for the observed differences in conformational landscapes, inferred from Potts statistical energy analysis. The analysis of residue-residue interactions (Figure 6, Figure 6\u2014figure supplement 1, Figure 6\u2014figure supplement 2) identifies specific structural motifs responsible for ~75% of the \u0394\u0394E. The detailed structural analysis of N-terminal anchor, RD-pocket, and C-terminal anchor interactions provides mechanistic insight, though these are computational predictions that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In the folded DFG-out conformation, the activation loop of TKs binds to the kinase's own active site as though engaging a peptide substrate in trans, while STKs rarely adopt a folded DFG-out conformation with substrate-mimicking properties. The Potts model suggests this substrate mimicry in TKs is highly dependent on the presence of a Tyr phosphorylation site at a specific position in the activation loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by structural observations (Figure 6B, 6C) and Potts model analysis, with citation to Nolen et al. 2004. The substrate-mimicking behavior is illustrated in Figure 6\u2014figure supplement 1 with reference to the trans-autophosphorylating FGFR3 structure. This provides a compelling evolutionary explanation for the divergent conformational landscapes of TKs and STKs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The most potent type-II inhibitors from the literature which target STKs bind with nanomolar Kds, similar to that for TKs, despite the substantial additional reorganization penalty that STKs must overcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by literature-reported binding affinity data and the ABFE simulations shown in Figure 2 and Figure 3. The observation that potent type-II inhibitors can overcome the large \u0394G_reorg of STKs (e.g., BIRB-796 binding to MAPK14) suggests that medicinal chemists have implicitly optimized \u0394G_bind^ABFE to compensate for the conformational penalty, which has important implications for drug design.",
+    "result_type": "MAJOR"
+  }
+]

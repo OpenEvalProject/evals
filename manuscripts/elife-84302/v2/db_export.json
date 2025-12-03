@@ -1,0 +1,2343 @@
+{
+  "submission": {
+    "id": "2ccc7504-20c8-4010-a488-cde9dfa4043e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:38:59.510427Z",
+    "updated_at": "2025-12-03T18:38:59.510427Z"
+  },
+  "content": [
+    {
+      "id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "submission_id": "2ccc7504-20c8-4010-a488-cde9dfa4043e",
+      "content_type": "manuscript",
+      "content_text": "# Structures of human dynein in complex with the lissencephaly 1 protein, LIS1\n\n## Authors\n\n- Janice M Reimer<sup>1</sup>\n- Morgan E DeSantis<sup>2</sup> ([ORCID: 0000-0002-4096-8548](https://orcid.org/0000-0002-4096-8548))\n- Samara L Reck-Peterson<sup>1</sup> ([ORCID: 0000-0002-1553-465X](https://orcid.org/0000-0002-1553-465X)) \u2020\n- Andres E Leschziner<sup>1</sup> ([ORCID: 0000-0002-7732-7023](https://orcid.org/0000-0002-7732-7023)) \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Medicine, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n2. Department of Molecular, Cellular and Developmental Biology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n3. Department of Cell and Developmental Biology, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n4. Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))\n5. Department of Molecular Biology, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe lissencephaly 1 protein, LIS1, is mutated in type-1 lissencephaly and is a key regulator of cytoplasmic dynein-1. At a molecular level, current models propose that LIS1 activates dynein by relieving its autoinhibited form. Previously we reported a 3.1 \u00c5 structure of yeast dynein bound to Pac1, the yeast homologue of LIS1, which revealed the details of their interactions (Gillies et al., 2022). Based on this structure, we made mutations that disrupted these interactions and showed that they were required for dynein\u2019s function in vivo in yeast. We also used our yeast dynein-Pac1 structure to design mutations in human dynein to probe the role of LIS1 in promoting the assembly of active dynein complexes. These mutations had relatively mild effects on dynein activation, suggesting that there may be differences in how dynein and Pac1/LIS1 interact between yeast and humans. Here, we report cryo-EM structures of human dynein-LIS1 complexes. Our new structures reveal the differences between the yeast and human systems, provide a blueprint to disrupt the human dynein-LIS1 interactions more accurately, and map type-1 lissencephaly disease mutations, as well as mutations in dynein linked to malformations of cortical development/intellectual disability, in the context of the dynein-LIS1 complex.\n\n## Introduction\n\nCytoplasmic dynein-1 (dynein here) is a conserved microtubule-based molecular motor. In humans, dynein moves dozens of distinct cargos towards the minus ends of microtubules (Reck-Peterson et al., 2018), while in yeast, dynein has a single known role in aligning the mitotic spindle (Markus et al., 2020). Active dynein complexes are composed of one or two dimers of dynein, the dynactin complex, and an activating adaptor (Grotjahn et al., 2018; McKenney et al., 2014; Schlager et al., 2014; Urnavicius et al., 2018). In cells, dynein dimers are thought to exist primarily in an autoinhibited form (Amos, 1989; Torisawa et al., 2014; Zhang et al., 2017), which is relieved for cargo movement. Recent work has shown that LIS1 has a conserved role in relieving dynein autoinhibition (Elshenawy et al., 2020; Gillies et al., 2022; Htet et al., 2020; Marzo et al., 2020; Qiu et al., 2019). At a functional level, Lis1 is a dimer of two \u03b2-propellers (Kim et al., 2004; Tarricone et al., 2004). LIS1 was originally described as the gene mutated in patients with type-1 lissencephaly (Parrini et al., 2016; Reiner et al., 1993). Later work linked LIS1 to the dynein pathway (Sasaki et al., 2000; Smith et al., 2000; Tai et al., 2002; Xiang et al., 1995). Mutations in the dynein motor-containing heavy chain (DYNC1H1) have also been linked to malformations of cortical development (Lipka et al., 2013; Parrini et al., 2016). Despite the importance of LIS1 in understanding these human diseases, no three-dimensional structures of a human dynein-LIS1 complex have been reported.\n\nCytoplasmic dynein is a member of the AAA+ (ATPase associated with various cellular activities) family of proteins. Unlike most members of the AAA +family, which are oligomers, the AAA +domains in dynein\u2019s \u2018heavy chain\u2019 are fused into a single polypeptide and have diverged over time (Canty and Yildiz, 2020). Of dynein\u2019s six AAA +domains, four can bind ATP (AAA1-4), and three hydrolyze it (AAA1, AAA3, and AAA4). AAA2 is missing the catalytic glutamic acid needed to hydrolyse ATP, and AAA5 and AAA6 have diverged enough to no longer be able to bind nucleotides (Schmidt and Carter, 2016). Dynein\u2019s heavy chain can be divided into several elements with specific functions (Figure 1A). At its amino-terminus, the \u2018tail\u2019 is responsible for dimerization, and is the site for binding of several accessory subunits. The tail is followed by the \u2018linker\u2019, a mechanical element that undergoes conformational changes, bending at a \u2018hinge\u2019 in response to the nucleotide state of dynein\u2019s AAA+ \u2018ring\u2019 to drive movement. Two elements protrude from dynein\u2019s ring: the \u2018stalk\u2019, a long antiparallel coiled-coil that protrudes from the ring and ends in dynein\u2019s microtubule-binding domain (MTBD), and the \u2018buttress\u2019, a short antiparallel coiled-coil that couples conformational changes in the ring with conformational changes in the MTBD by altering the register between the two alpha helices in the stalk (Cianfrocco et al., 2015; Niekamp et al., 2019; Rao et al., 2019). Dynein\u2019s AAA+ ring mainly exists in one of two conformations driven by the nucleotide state of its AAA+ domains: an \u2018open\u2019 conformation coupled to high affinity for the microtubule at the MTBD, and a \u2018closed\u2019 conformation that leads to low affinity for the microtubule (Schmidt et al., 2015; Schmidt et al., 2012). Dynein\u2019s affinity for the microtubule is controlled by conformational changes in the MTBD. Those changes are coupled to the nucleotide state (and therefore conformation) of dynein\u2019s motor domain through shifts in the register between the two coiled-coil alpha helices that form dynein\u2019s stalk (Carter et al., 2008; Gibbons et al., 2005; Redwine et al., 2012). In dynein\u2019s autoinhibited state, called \u2018Phi\u2019 due to its resemblance to the Greek letter, the two heavy chains come together face to face, thus pointing in opposite directions and preventing the motor from engaging microtubules in a manner that would allow it to walk (Amos, 1989; Torisawa et al., 2014; Zhang et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84302/elife-84302-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon schematic of dynein showing domain organization. The names of the major structural elements in dynein are indicated inside boxes. MTBD: MicroTubule Binding Domain. The four AAA+ domains that can bind nucleotide are indicated with the black circles. The color coding used throughout the figures to indicate their nucleotide state is shown below dynein\u2019s cartoon. (B, C) Cryo-EM maps of the motor domain of human dynein bound to (B) one (dynein-LIS1) or (C) two (dynein-(LIS1)2) LIS1 \u03b2-propellers. (D) An overlay of the two human dynein-LIS1 structures solved here. (E) An overlay of the human Phi dynein (PDB 5NVU) and the human dynein-(LIS1)2 structures, aligned on AAA4. The inset shows that the conformation of AAA3 and AAA4 are the same. (F) An overlay of the yeast dynein-(Pac1)2 (carrying a point mutation at E2488Q; PDB 7MGM) and the human dynein-(LIS1)2 structures, aligned on AAA4. The inset shows there is a slight difference in AAA4 relative to AAA3 between the two structures.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84302/elife-84302-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) CryoEM data processing pipeline for human dynein bound to LIS1. Particle extraction was carried out in Relion 3.0 and all other jobs were performed in cryoSPARC. Particles belonging to volumes colored in teal were included in subsequent processing jobs. (B, C, D) Local resolution map (B), and FSC (C) and angular distribution (D) plots for human dynein-LIS1 (one \u03b2-propeller). (E, F, G) Local resolution map (E), and FSC (F) and angular distribution (G) plots for human dynein-(LIS1)2 (two \u03b2-propellers).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84302/elife-84302-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013D) Nucleotides bound to dynein in the dynein-LIS1 (one \u03b2-propeller) structure at AAA1 (A), AAA2 (B), AAA3 (C) and AAA4 (D). (E\u2013H) Nucleotides bound to dynein in the dynein-(LIS1)2 (twp \u03b2-propellers) structure at AAA1 (E), AAA2 (F), AAA3 (G) and AAA4 (H).\n\nWe recently reported a 3.1 \u00c5 structure of the yeast dynein-Pac1 complex (Gillies et al., 2022). In this structure, dynein is present as a single motor domain bound to two Pac1 \u03b2-propellers. This was the first high-resolution structure of a complex between dynein and Pac1 and revealed a number of interactions that earlier, lower resolution maps of the complex had failed to identify (DeSantis et al., 2017; Huang et al., 2012; Toropova et al., 2014). By designing mutants based on this new structure, we showed that binding of Pac1 to dynein, either to its AAA+ ring (sitering) or its stalk (sitestalk), and the interaction between the two Pac1 \u03b2-propellers were essential for dynein\u2019s function in yeast in vivo (Gillies et al., 2022). We also used our model of the yeast dynein-Pac1 complex to generate mutations in human dynein to probe the role of LIS1 in relieving human dynein autoinhibition (Gillies et al., 2022). These mutations had relatively mild effects on dynein activation, suggesting that that there may be differences in how dynein and LIS1 interact between yeast and humans that our modeling did not capture.\n\nHere, we set out to determine a high-resolution structure of the human dynein-LIS1 complex. Previously we had obtained 2D class averages from cryo-EM datasets of human dynein in the presence of LIS1 showing that LIS1 binds dynein simultaneously at sitestalk and sitering, as was the case in yeast (Htet et al., 2020). The human and yeast structures appeared very similar at the level of the 2D class averages (Htet et al., 2020). We now report 3D cryo-EM structures of human dynein bound to one and two human LIS1 \u03b2-propeller domains. We show that there are differences in how human LIS1 binds dynein relative to its yeast counterpart. For both human and yeast, we compare the interactions between dynein and LIS1 at sitestalk and sitering and the LIS1-LIS1 interaction. Overall, our work provides a model for how human LIS1 interacts with human dynein. Importantly, our structures also allow us to map missense mutations in type-1 lissencephaly, as well as missense disease mutations in dynein, including those that cause malformations of cortical development and intellectual disability, in the context of dynein\u2019s interaction with LIS1.\n\n## Results and discussion\n\n### Structures of human dynein bound to LIS1\n\nWe revisited our cryo-EM datasets of human dynein and LIS1 (Htet et al., 2020) and, with additional processing, solved the structures of human dynein bound to one and two LIS1 \u03b2-propellers to 4.0 \u00c5 and 4.1 \u00c5, respectively (Figure 1B and C; Figure 1\u2014figure supplement 1; Supplementary file 1). In both structures, dynein is in the closed ring conformation and the linker domain is disordered before the hinge region. The conformation of dynein is the same regardless of whether LIS1 is bound only at sitering or both at sitering and sitestalk (Figure 1D). The closed state of the motor domain seen in our structures is the same as that observed in the autoinhibited Phi conformation of human dynein (Figure 1E; Zhang et al., 2017).\n\nWe prepared our samples with ATP and vanadate included in the buffer. Hydrolysis of ATP by dynein in the presence of vanadate leads to the formation of ADP-Vi, a post-hydrolysis ADP.Pi analogue. Based on map density, ADP is bound to AAA1 and AAA4, while AAA2 contains either ATP or ADP- Vi (Figure 1\u2014figure supplement 2). The nucleotide state of AAA3 is unclear from the density, but we chose to model ADP (Figure 1\u2014figure supplement 2) as AAA3 has the same conformation as the ADP-bound AAA3 domain observed in the structure of human Phi dynein (Figure 1E), while the conformation of AAA3 in yeast dynein (carrying a point mutation, E2488Q, at AAA3 to prevent the hydrolysis of ATP) is different when bound to ATP (Figure 1F).\n\n### LIS1 binding to dynein at sitering\n\nHuman LIS1 binds dynein in a manner similar to that of yeast dynein at sitering. At sitering, the main contact between LIS1 and dynein involves the same AAA4 helix used by yeast dynein, as well as the same AAA5 loop and the loop bridging AAA3-AAA4 (Figure 2A; Video 1). We previously showed that the AAA4 and AAA5 interactions with yeast Pac1 are important for dynein regulation (Gillies et al., 2022). There is a minor rotation in human LIS1ring relative to yeast Pac1ring that causes a slight shift in how LIS1 interacts with dynein (Figure 2B and C; Video 1). Despite these changes, the interfaces between dynein and LIS1 we saw in our yeast dynein-Pac1 structure are maintained; the AAA5 loop appears to make a small compensating shift to preserve its contact with LIS1 (Figure 2B). Additionally, the placement of LIS1 at sitering is the same whether one or two LIS1s are bound to human dynein (Figure 1D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84302/elife-84302-fig2-v2.jpg)\n\n**Figure 2.:** (A) LIS1 at sitering interacts with dynein via the AAA3-AAA4 bridging loop, a AAA4 helix and a AAA5 loop. (B) An overlay of the human and yeast dynein structures bound to LIS1 /Pac1, aligned on AAA4 (human, light grey; yeast, dark grey). (C) LIS1 (light grey) and Pac1 (dark grey) from panel (B) are viewed facing the \u03b2 propeller, with dynein removed for clarity. This panel shows the rotation, highlighted by the purple markers and arrows of LIS1 relative to Pac1 at sitering. (D) The AAA3-AAA4 bridging loop contacts LIS1 and preserves a hydrophobic pocket in AAA4.\n\n![Video 1.](https://cdn.elifesciences.org/articles/84302/elife-84302-video1.mp4.jpg)\n\n**Video 1.:** The video compares the human (dynein-(LIS1)2) and yeast (dynein-(Pac1)2; PDB 7MGM) structures, highlighting some of the major interactions, and the differences in the positions adopted by LIS1/Pac1 at sitering and sitestalk in the two systems.\n\nThe contact between the AAA3-AAA4 bridging loop and LIS1 (Figure 2D) is the pivot point about which the position of LIS1ring rotates between the human and yeast systems (Video 1). Given the conservation of this interaction between the two systems, an intriguing possibility is that this contact relays information about the nucleotide state of AAA3, a regulatory site in dynein (Bhabha et al., 2014; DeSantis et al., 2017; DeWitt et al., 2015; Dutta and Jana, 2019; Nicholas et al., 2015; Qiu et al., 2021), to LIS1/Pac1. Although ATP hydrolysis at AAA1 is the main driver of dynein motility, AAA3 has been shown to play a major role in controlling the communication between AAA1 and dynein\u2019s MTBD; AAA3:apo or ATP blocks communication, leading to tight microtubule binding, while AAA3:ADP restores dynein\u2019s normal mechanochemical cycle (DeWitt et al., 2015). The AAA3-AAA4 bridging loop forms a hydrophobic pocket with the small domain of AAA3 (AAA3S), and nucleotide-induced conformational changes in AAA3 may cause this loop and AAA3S to shift together (Figure 2D). Therefore, the bridging loop could act as a tether between LIS1 and AAA3 that allows Lis1 to prevent release of ADP from AAA3. Determining if and how LIS1 modulates the nucleotide state of AAA3 will require structural information on dynein-LIS1 complexes formed in the presence of ATP, as opposed to ATP analogs, allowing dynein to go through its mechanochemical cycle.\n\n### LIS1 binding to dynein at sitestalk\n\nAt sitestalk, LIS1 interacts with dynein at both the CC1 helix in the stalk (the helix leading from dynein\u2019s ring to the MTBD) and at a loop in AAA4 (residues 3112\u20133119) (Figure 3A). Human LIS1 is pivoted around the stalk helix relative to yeast Pac1 to a larger extent than at sitering (Figure 3B and Video 1). We originally used a yeast dyneinE3012A Q3014A N3018A mutant (\u201cdyneinEQN\u201d) (DeSantis et al., 2017) to probe the importance of the Pac1-stalk interaction (Figure 3C). These mutation sites were chosen based on sequence conservation and low resolution cryo-EM models. Comparing our yeast dynein-Pac1 structure to our new human dynein-LIS1 structure shows that the EQN triad residues are shifted relative to where we had previously modeled them in the human system (Video 1), providing an explanation for the modest phenotype we observed when we mutated these residues in human dynein (Gillies et al., 2022).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84302/elife-84302-fig3-v2.jpg)\n\n**Figure 3.:** (A) An overlay of human and yeast dynein bound to LIS1/Pac1, aligned on AAA4. (B) LIS1 (light grey) and Pac1 (dark grey) from panel (B) are viewed facing the \u03b2-propeller, with dynein removed for clarity. This panel shows the rotation, highlighted by the purple markers and arrows of LIS1 relative to Pac1 at sitestalk. The area where LIS1/Pac1 interacts with dynein\u2019s CC1 stalk helix is shown in yellow. (C) The yeast dynein-Pac1stalk interaction. (D) The human dynein-LIS1stalk interaction. (E) The AAA4 loop\u2013LIS1stalk interaction.\n\nThe structure of yeast dynein-Pac1 (Gillies et al., 2022) showed that N3018 is the only residue in the EQN triad that forms a hydrogen bond with Pac1, although Q3014 may act to stabilize N3018 by forming a small hydrogen bonding network. R3015 and Q3011 form two additional hydrogen bonds with the backbone of Pac1. Hence, a yeast dyneinR3015 Q3011 N3018 mutant may be better than the original dyneinE2012 Q3014 N3018 mutant used to disrupt Pac1 regulation at sitestalk. Similarly, the equivalent EQN triad in human dynein, E3196, Q3198, and N3202, follows the same interaction pattern, where Q3198 interacts with N3202, but only N3202 hydrogen bonds with the backbone of LIS1 (Figure 3D). R3206 is in position to form a salt bridge with LIS1 D151, which is made possible by the rotation of LIS1 in the human structure relative to the yeast one. We predict that point mutations M3199A, N3202A, and R3206A in human dynein would disrupt LIS1 regulation at sitestalk to a greater extent than dyneinE3196 Q3198 N3202. A septuple mutant we designed in human dynein, dyneinK2898A E2902G E2903S E2904G E3196A Q3198A N3202A, which comprised the EQN mutations, was still capable of binding LIS1 (Gillies et al., 2022).\n\nPreviously, we showed that yeast Pac1S248Q acts as a separation-of-function mutant that disrupts the regulation of Pac1 at sitestalk without affecting its function at sitering (Gillies et al., 2022). In the human structure, the LIS1stalk-AAA4 loop interaction is primarily mediated through backbone interactions. Based on sequence alignments, T187 in human LIS1 is homologous to yeast S248; however, in our structure T187 faces away from dynein and is poised to hydrogen bond with K175. To make a separation-of-function mutant in human LIS1, the neighboring residue, R186, which extends towards dynein, may serve as a better mutation candidate in future studies (Figure 3E).\n\n### LIS1-LIS1 interaction\n\nThe biggest difference between the human dynein-LIS1 and yeast dynein-Pac1 complexes is in the LIS1-LIS1/Pac1-Pac1 interaction (Video 1). The rotation of LIS1 at sitering and sitestalk in the human complex causes the LIS1-LIS1 interface to become significantly smaller, with approximately half the amount of buried surface area (~301 \u00c52) compared to the yeast Pac1-Pac1 interface (~590 \u00c52) (Figure 4A and B). However, the chemical nature of the interface is also different: while the yeast Pac1-Pac1 interaction is moderately hydrophobic, the human LIS1-LIS1 interface is more electrostatic (Figure 4C and D), which may compensate for the smaller surface area.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84302/elife-84302-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Residues involved in the LIS1-LIS1 interaction are shown in the context of the dynein-(LIS1/Pac1)2 structures and mapped onto a surface representation of LIS1 (A) or Pac1 (B). Residues involved in the interaction with sitering (LIS1ring) are shown in orange and those involved in the interaction with sitestalk (LIS1stalk) are shown in yellow. (C) The human LIS1-LIS1 interaction does not use residues equivalent to those in the yeast Pac1-Pac1 interaction. (D) The human LIS1-LIS1 interface.\n\nThe yeast Pac1-Pac1 interface mutations (F189D, I189D, R494A) we previously tested (Gillies et al., 2022) were designed to disrupt the Pac1-Pac1 interface and are not conserved. Based on structure and sequence alignments, the equivalent residues in human LIS1 (T139, F142, R410) do not participate in the LIS1-LIS1 interface and mutating them would likely not have a disruptive effect (Figure 4C). Instead, S121, D136 and K147 may be better candidates to disrupt human LIS1-LIS1 interface (Figure 4D).\n\n### Lissencephaly disease-causing mutations\n\nLissencephaly is a neurodevelopmental disease caused by mutations in LIS1 that result in impaired neuronal migration (Parrini et al., 2016; Reiner et al., 1993). Lissencephaly is a disease of haploinsufficiency and the majority of disease-causing mutations in LIS1 include large deletions or nonsense mutations that lead to truncated products (Cardoso et al., 2002; Haverfield et al., 2009; Lipka et al., 2013; Pilz et al., 1998; Sapir et al., 1999). Mutations are located in both the amino-terminal dimerization domain (LisH) and the WD40 domain (Figure 5A). Missense mutations are less common. Several missense mutations found in the interior of the WD40 domain are part of the DHSW motifs involved in stabilizing the \u03b2-propeller fold and are likely to disrupt the structure of the domain. In Video 2 we show the location of those missense lissencephaly mutations where a destabilizing effect was not obvious from an inspection of the structure. In addition to the lissencephaly mutations, Video 2 also shows the location of mutations in LIS1 associated with Miller-Dieker lissencephaly syndrome, subcortical band heterotopia and double cortex syndrome (Haverfield et al., 2009; Pilz et al., 1998; Reiner et al., 1993; Sapir et al., 1999, p. 2). Supplementary file 2 lists all the disease mutations shown in Video 2, along with the references first reporting them.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84302/elife-84302-fig5-v2.jpg)\n\n**Figure 5.:** (A) AlphaFold (Jumper et al., 2021; Senior et al., 2020) model of full length human LIS1 with residues colored by either interface or lissencephaly mutation. Sitering, medium blue; sitestalk, dark blue; LIS1-LIS1, turquoise; lissencephaly small deletions leading to a frame shift, purple; missense mutations, salmon. (B) Two views are shown of disease-linked mutations in dynein located near sites of LIS1 binding. H277P, a lissencephaly mutation, and R342P, a double cortex syndrome mutation, are close to sitering. G3658E, associated with intellectual disability, is located at the tip of the AAA5 beta hairpin loop that is part of sitering.\n\n![Video 2.](https://cdn.elifesciences.org/articles/84302/elife-84302-video2.mp4.jpg)\n\n**Video 2.:** This video shows the location of amino acids in LIS1 mutated in type-1 lissencephaly, and residues in dynein that are mutated in several neurodevelopmental or nondegenerative disorders (Charcot-Marie-Tooth, Spinal Muscular Atrophy, Autism Spectrum Disorders, and Malformations of cortical development/ Intellectual disability). We only show residues where we determined that the reported mutation(s) do not have an obvious destabilizing effect based on an inspection of the structure.\n\nOnly two known disease-related missense mutations in LIS1 are near a dynein binding site: both H277P, a lissencephaly mutation, and R342P, a double cortex syndrome mutation, are close to sitering (Figure 5B). Although neither amino acid makes a direct contact with dynein, both are involved in hydrogen bonds with nearby residues in the area that comprises the main interface involved in binding to the AAA4 helix at sitering. It is likely that local disruption of the structure in the Proline mutants would affect the binding of LIS1 to dynein. H389Y, a subcortical band heterotopia mutation, is located near the LIS1-LIS1 interface. While not part of that interface, H389 makes hydrogen bonds with residues on the same LIS1 \u03b2-propeller, including Y137, located in the loop that contains the interface-forming T139.\n\nVideo 2 also shows the location of missense mutations in dynein associated with several neurodevelopmental and neurodegenerative disorders: Charcot-Marie-Tooth, spinal muscular atrophy, autism spectrum disorders, and intellectual disability/malformations of cortical development (Lipka et al., 2013; Reiner et al., 2016; Sabblah et al., 2018; Weedon et al., 2011). One mutation is intriguing in terms of LIS1 regulation of dynein: G3658E, which is associated with intellectual disability (Hertecant et al., 2016). Although G3658 does not interact with LIS1, it is located at the tip of the AAA5 beta hairpin loop that is part of sitering and is likely involved in the formation of the beta hairpin (Figure 5B).\n\n### Conclusions\n\nThe cryo-EM structures of human dynein-LIS1 complexes we reported here revealed that while the overall structure of dynein\u2019s interaction with LIS1/Pac1 is conserved from yeast to humans, there are important differences in the specifics of the dynein-LIS1/Pac1 and LIS1/Pac1-LIS1/Pac1 interactions. The data and discussion presented here provide a blueprint to better disrupt the human dynein-LIS1 interfaces and to map human disease mutations discovered in the future in the context of the human dynein-LIS1 complex.\n\n## Materials and methods\n\n### Protein purification\n\nThe motor domain of human dynein and LIS1 were purified as previously described (Htet et al., 2020). In brief, human dynein monomer and LIS1 constructs were expressed in Sf9 cells. Cells were harvested and lysed in dynein-lysis buffer (50 mM HEPES pH 7.4, 100 mM sodium chloride, 1 mM dithiothreitol (DTT), 0.1 mM Mg-ATP, 0.5 mM Pefabloc and 10% (v/v) glycerol) or LIS1-lysis buffer (30 mM HEPES pH 7.4, 50 mM postassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 300 mM potassium chloride, 1 mM DTT, 0.5 mM Pefablock and 10% (v/v) glycerol). Proteins were initially purified using IgG Sepharose 6 Fast Flow beads, following release using TEV protease. Dynein monomer was further purified using size-exclusion chromatography on a TSKgel G4000SWXL column (TOSOH Bioscience) with GF150 buffer (25 mM HEPES pH 7.4, 150 mM KCl, 1 mM MgCl2, 5 mM DTT and 0.1 mM Mg-ATP). LIS1s final buffer was 10 mM Tris-HCL pH 8.0, 2 mM magnesium acetate, 150 mM potassium acetate, 1 mM EGTA, 1 mM DTT and 10% (v/v) glycerol.\n\n### EM sample preparation\n\nGrids were prepared as previously described (Htet et al., 2020). Briefly, UltraAuFoil R1.2/1.3 300 mesh grids (Electron Microscopy Sciences) were glow discharged with 20 mA negative current for 30 s. A 4 \u00b5L sample of 3.5 \u03bcM dynein monomer, 3.5 uM HaloTag-Lis1 and 2.5 mM ATP-VO4 was applied to the grid and vitrified using a Vitrobot Mark IV robot (FEI) set at 100% humidity and 4 \u00b0C.\n\n### EM data collection\n\nData collection was performed as previously described (Htet et al., 2020). Three datasets were collected and initially processed separately. Briefly, each dataset was processed in cryoSPARC using the patch motion correction and patch CTF extraction jobs to align micrographs and perform CTF estimation, respectively. Micrographs with a CTF estimation of >5 \u00c5 were discarded. Dose weighted images were used for particle picking using the crYOLO training model generated in Gillies et al., 2022; Wagner et al., 2019. Particles were extracted in Relion 3.0 (***ref***) with a 1.16 \u00c5/pixel. Several rounds of 2D classification were carried out in cryoSPARC to remove bad particles. Particles belonging to good 2D class averages in datasets 1 and 2 were combined and ab initio reconstruction was carried out. Particles belonging to dynein were combined and heterogeneous refinement was carried out to separate intact dynein from partially unfolded dynein. Another round of heterogenous refinement was carried out that included the good particles from Dataset 3. Particles were separated into 1 Lis1 and 2 Lis1 classes, and each resulting map was used in nonuniform refinement (Punjani et al., 2020). The final resolution of human dynein-Lis1 and human dynein-(Lis1)2 was 4.0 \u00c5 and 4.1 \u00c5, respectively.\n\nWe note that the overall resolution of our structures was limited due to preferred orientation. These datasets were collected on open hole grids before we began using streptavidin affinity grids, which helped reduce this problem in our most recent structure of yeast dynein-Pac1.\n\n### Model building\n\nThe structure of Phi dynein (PDB 5 NUG) and the AlphaFold model of human Lis1 (model P43034) were used as initial models for the human dynein-Lis1 structure and fit into the map using UCSF ChimeraX (Pettersen et al., 2021). Refinement of the model was carried out using a combination of Phenix Real Space Refine (Afonine et al., 2018) and Rosetta Relax (ver 3.13). Parts of the model were manually rebuilt using COOT (Emsley et al., 2010). Following completion of the human dynein-Lis1 model, it was used as a starting model for dynein-(Lis1)2 where Lis1ring was duplicated and fit into the position at sitestalk using UCSF ChimeraX. Refinement proceeded using the same method as for dynein-Lis1.\n",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "9d9f6f7b-f984-4fbf-9107-08e96b9d4c65",
+      "submission_id": "2ccc7504-20c8-4010-a488-cde9dfa4043e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, https://ror.org/04pp8hn57 Utrecht University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84302.sa0](https://doi.org/10.7554/eLife.84302.sa0)\n\nThis study presents the cryo-EM structure of the dynein regulator Lis1 bound to human dynein providing important insight into how these two proteins interact. The evidence supporting the claims of the authors is convincing overall. The work will be of interest to researchers working with motor proteins and neurodevelopmental disorders as it helps to rationalize how mutations in Lis1 or dynein lead to disease.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, https://ror.org/04pp8hn57 Utrecht University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84302.sa1](https://doi.org/10.7554/eLife.84302.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structures of human dynein in complex with the lissencephaly 1 protein, Lis1\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Xin Xiang (Reviewer #1); Deanna Smith (Reviewer #2); Kashish Singh (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please address specific points 1 and 2 of Reviewer 3. Specifically, please try to improve the resolution of the reported structures and please clarify the nucleotide state of AAA1.\n\n2) Please include a detailed Supplementary table specifying the mutations you have mapped with appropriate references.\n\n3) Please consider the other suggestions of the reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have previously reported a 3.1\u00c5 structure of yeast dynein bound to Pac1 (budding yeast LIS1) (Gillies et al., 2022, eLife). However, mutations they designed using the yeast dynein-PAC1 structure had mild effects on human dynein activation. Here they reported cryo-EM structures of human dynein-LIS1 complexes. While LIS1 and Pac1 binds to roughly the same sites of the dynein motor domains at the level of the 2D class averages, their current 3D cryo-EM structures of human dynein bound to one and two human LIS1 \u03b2-propeller domains (4.0 \u00c5 and 4.1 \u00c5 resolution respectively) have revealed interesting similarities and differences in the interaction sites. Although this work does not contain functional analyses on the involved amino acids in interaction interfaces (unlike the Gillies et al., 2022 paper), the authors have provided detailed information that could be followed to perform such analyses in the future. In addition, they have also provided the locations of missense mutations of LIS1 and dynein that cause lissencephaly and other human brain developmental or neurodegenerative disorders in the context of the human dynein-LIS1 structure. Overall, I found the work very interesting and well presented. This first detailed structural analysis on human dynein-LIS1 interaction is likely to have a high impact in the field.\n\nI have the following suggestions.\n\n1. I really enjoyed the two videos, especially Video 2, which shows lissencephaly disease mutations, as well as mutations causing brain development disorders and intellectual disability, in the context of dynein-LIS1 interaction. If space permits, it would be helpful to have a supplementary table listing each of these mutations and specific references. The authors did describe the mutations in the final section of the text with references, but multiple references are cited together and the reader would need to go through them to find the correct reference. For example, I was curious why the R342P mutation (line 191) in LIS1 causes double cortex (as the lis1 gene is not X-chromosome-linked), and is the original reference Jamuar\u2026\u2026 Walsh (2014)?\n\n2. Line 38, add Marzo et al. 2020. Line 52-59, it may be better to also include a few new references after the 2015 review, for example, Rao et al. 2019; Niekamp et al., 2019.\n\nLine 123, add Bhabha et al., 2014.\n\n3. It is interesting that the closed state of the motor domain seen by the authors in their structures is similarly observed in the Phi dynein, which contains ADP in AAA3 (Zhang et al., 2017). Since the yeast AAA3 walker B dynein (contains ATP) has Pac1 bound to the ring and stalk, I wonder if this represents a difference between the two systems and is worthy of a brief discussion. Also, since the phi structure was previously predicted to be incompatible for LIS1 binding (Htet et al., 2020; Marzo et al., 2020), a brief discussion may help the understanding of the new data too. It would also be better to point out in Figure 1 or in Materials and methods that the motor domain of human dynein rather than full-length dynein is used for this study.\n\n4. Line 148-149 \"\u2026point mutations at M3199A, N3202A, and R3206A\", remove \"A\" after the residues as you are talking about the position, unless you remove \"at\".\n\n5. Line 155-158 \"\u2026. in human LIS1 is homologous to yeast S248; however, in our structure T187 faces away from dynein and is poised to hydrogen bond with K175. To make a separation-of-function mutant in human LIS1, the neighboring residue, R186, which extends towards dynein, may serve as a better mutation candidate in future studies (Figure 3E).\" It may be better to add a sentence or two here to say what the predicted effect of such a separation-of-function mutation would be on human dynein activation based on the previous data from the budding yeast.\n\n6. Although I do not think functional tests are essential for publication of this structural paper, it would be nice to test if some mutations (designed according to the new structure) affect LIS1's ability to bind dynein or enhance the speed of dynein motility in vitro. Cell-based tests are even better, as the seperation-of-function mutation may affect dynein-mediated cargo transport but not dynein accumulation at the microtubule plus end (Splinter et al., 2012). However, functional assays in humans cells are much harder than those in budding yeast, and some functional tests may need to be done after the publication of this new structure.\n\nReviewer #2 (Recommendations for the authors):\n\nI recommend determining whether the K147A mutation in fact disrupts the interaction between b-propellars in human LIS1 and if that prevents dynein stimulation.\n",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c19f1114-1784-426a-9f45-8ccb7946f3b9",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C1",
+      "claim": "LIS1 is mutated in type-1 lissencephaly.",
+      "claim_type": "EXPLICIT",
+      "source": "The lissencephaly 1 protein, LIS1, is mutated in type-1 lissencephaly and is a key regulator of cytoplasmic dynein-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature on lissencephaly",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "a4458fc1-a1f4-4072-8252-77d425b7b80c",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C2",
+      "claim": "LIS1 is a key regulator of cytoplasmic dynein-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The lissencephaly 1 protein, LIS1, is mutated in type-1 lissencephaly and is a key regulator of cytoplasmic dynein-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge and citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "8d3ad1cb-6414-454b-9c03-dc45a104b2d5",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C3",
+      "claim": "Current models propose that LIS1 activates dynein by relieving its autoinhibited form.",
+      "claim_type": "EXPLICIT",
+      "source": "At a molecular level, current models propose that LIS1 activates dynein by relieving its autoinhibited form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on current scientific models and literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "708302ad-cc3e-421a-bdbd-33dd5a7c6255",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C4",
+      "claim": "A 3.1 \u00c5 structure of yeast dynein bound to Pac1 was previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we reported a 3.1 \u00c5 structure of yeast dynein bound to Pac1, the yeast homologue of LIS1, which revealed the details of their interactions (Gillies et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to previously published work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d8ddf215-9b38-4748-8c84-1f0cd5053aa4",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C5",
+      "claim": "Pac1 is the yeast homologue of LIS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we reported a 3.1 \u00c5 structure of yeast dynein bound to Pac1, the yeast homologue of LIS1, which revealed the details of their interactions (Gillies et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established by citation and scientific knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "5d538b35-c2e1-414c-a9cf-c958ed9e72cd",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C6",
+      "claim": "Mutations disrupting yeast dynein-Pac1 interactions were required for dynein's function in vivo in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this structure, we made mutations that disrupted these interactions and showed that they were required for dynein's function in vivo in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to experimental results from previous work",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "0cb13035-22f4-4e1c-8c02-d85bd3690796",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C7",
+      "claim": "Mutations in human dynein designed based on yeast dynein-Pac1 structure had relatively mild effects on dynein activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations had relatively mild effects on dynein activation, suggesting that there may be differences in how dynein and Pac1/LIS1 interact between yeast and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations from previous work",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "cb17fa54-07a5-4378-8527-1346941466bb",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C8",
+      "claim": "There may be differences in how dynein and Pac1/LIS1 interact between yeast and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations had relatively mild effects on dynein activation, suggesting that there may be differences in how dynein and Pac1/LIS1 interact between yeast and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results showing mild effects of mutations",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "bcc4fcea-4770-41b4-b528-8e186fd551cf",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C9",
+      "claim": "Cryo-EM structures of human dynein-LIS1 complexes are reported in this work.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report cryo-EM structures of human dynein-LIS1 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding of the manuscript supported by structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ea2f8cb4-f294-4f91-b2a0-5d90a0fa8240",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C10",
+      "claim": "The new structures reveal differences between the yeast and human systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new structures reveal the differences between the yeast and human systems, provide a blueprint to disrupt the human dynein-LIS1 interactions more accurately, and map type-1 lissencephaly disease mutations, as well as mutations in dynein linked to malformations of cortical development/intellectual disability, in the context of the dynein-LIS1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural comparison data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "c2ca48fa-a65d-4a02-8ada-10d049b98852",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C11",
+      "claim": "The structures provide a blueprint to disrupt human dynein-LIS1 interactions more accurately.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new structures reveal the differences between the yeast and human systems, provide a blueprint to disrupt the human dynein-LIS1 interactions more accurately, and map type-1 lissencephaly disease mutations, as well as mutations in dynein linked to malformations of cortical development/intellectual disability, in the context of the dynein-LIS1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis and inference from the data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "69770da8-c0a6-4951-87b2-042aa60ed74e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C12",
+      "claim": "The structures map type-1 lissencephaly disease mutations in the context of the dynein-LIS1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new structures reveal the differences between the yeast and human systems, provide a blueprint to disrupt the human dynein-LIS1 interactions more accurately, and map type-1 lissencephaly disease mutations, as well as mutations in dynein linked to malformations of cortical development/intellectual disability, in the context of the dynein-LIS1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural data and mapping of known mutations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "cb2e9367-71e2-46ab-aef0-7439aad6176a",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C13",
+      "claim": "The structures map mutations in dynein linked to malformations of cortical development/intellectual disability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new structures reveal the differences between the yeast and human systems, provide a blueprint to disrupt the human dynein-LIS1 interactions more accurately, and map type-1 lissencephaly disease mutations, as well as mutations in dynein linked to malformations of cortical development/intellectual disability, in the context of the dynein-LIS1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural data and mapping of known mutations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "5f10f77f-f553-412c-9134-fb0be434649e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C14",
+      "claim": "Cytoplasmic dynein-1 is a conserved microtubule-based molecular motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic dynein-1 (dynein here) is a conserved microtubule-based molecular motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "8e1b2176-9e1d-4234-a61f-66ac314d481d",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C15",
+      "claim": "In humans, dynein moves dozens of distinct cargos towards the minus ends of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, dynein moves dozens of distinct cargos towards the minus ends of microtubules (Reck-Peterson et al., 2018), while in yeast, dynein has a single known role in aligning the mitotic spindle (Markus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "9683f23f-f117-4faa-99c5-2d1cebe9c2cc",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C16",
+      "claim": "In yeast, dynein has a single known role in aligning the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, dynein moves dozens of distinct cargos towards the minus ends of microtubules (Reck-Peterson et al., 2018), while in yeast, dynein has a single known role in aligning the mitotic spindle (Markus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "84f4902b-27d6-4944-8d5f-b856a01b70ba",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C17",
+      "claim": "Active dynein complexes are composed of one or two dimers of dynein, the dynactin complex, and an activating adaptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Active dynein complexes are composed of one or two dimers of dynein, the dynactin complex, and an activating adaptor (Grotjahn et al., 2018; McKenney et al., 2014; Schlager et al., 2014; Urnavicius et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "93af9198-8241-47dd-b878-ba336b0b9132",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C18",
+      "claim": "In cells, dynein dimers are thought to exist primarily in an autoinhibited form.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, dynein dimers are thought to exist primarily in an autoinhibited form (Amos, 1989; Torisawa et al., 2014; Zhang et al., 2017), which is relieved for cargo movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "37a31c3b-66c9-4e1f-837c-175ba3c4ec8c",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C19",
+      "claim": "LIS1 has a conserved role in relieving dynein autoinhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has shown that LIS1 has a conserved role in relieving dynein autoinhibition (Elshenawy et al., 2020; Gillies et al., 2022; Htet et al., 2020; Marzo et al., 2020; Qiu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple recent citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "96921b93-da66-4c99-a433-7144c0cb4e35",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C20",
+      "claim": "At a functional level, Lis1 is a dimer of two \u03b2-propellers.",
+      "claim_type": "EXPLICIT",
+      "source": "At a functional level, Lis1 is a dimer of two \u03b2-propellers (Kim et al., 2004; Tarricone et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to structural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "77486390-ca16-4366-9d75-25166d7462b7",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C21",
+      "claim": "LIS1 was originally described as the gene mutated in patients with type-1 lissencephaly.",
+      "claim_type": "EXPLICIT",
+      "source": "LIS1 was originally described as the gene mutated in patients with type-1 lissencephaly (Parrini et al., 2016; Reiner et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to original discovery",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "40defc0c-f289-40ed-9ca5-e99255cb2c57",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C22",
+      "claim": "Later work linked LIS1 to the dynein pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Later work linked LIS1 to the dynein pathway (Sasaki et al., 2000; Smith et al., 2000; Tai et al., 2002; Xiang et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to subsequent research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "7d2ed0f8-76e4-4de6-afd1-0d0095e50218",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C23",
+      "claim": "Mutations in the dynein motor-containing heavy chain (DYNC1H1) have been linked to malformations of cortical development.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the dynein motor-containing heavy chain (DYNC1H1) have also been linked to malformations of cortical development (Lipka et al., 2013; Parrini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "c8e52dcc-837a-4841-8af1-316b14a9f65e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C24",
+      "claim": "No three-dimensional structures of a human dynein-LIS1 complex have been reported prior to this work.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the importance of LIS1 in understanding these human diseases, no three-dimensional structures of a human dynein-LIS1 complex have been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of the field prior to this work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "731ce133-65eb-492d-a757-43449a188678",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C25",
+      "claim": "Cytoplasmic dynein is a member of the AAA+ family of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic dynein is a member of the AAA+ (ATPase associated with various cellular activities) family of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "eaf45f5f-3ddf-4cf8-a103-c7940acd5f1c",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C26",
+      "claim": "The AAA+ domains in dynein's heavy chain are fused into a single polypeptide, unlike most AAA+ family members which are oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike most members of the AAA +family, which are oligomers, the AAA +domains in dynein's 'heavy chain' are fused into a single polypeptide and have diverged over time (Canty and Yildiz, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and established knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "445197b2-c283-40ca-9890-9cf2f3f224a9",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C27",
+      "claim": "Of dynein's six AAA+ domains, four can bind ATP (AAA1-4).",
+      "claim_type": "EXPLICIT",
+      "source": "Of dynein's six AAA +domains, four can bind ATP (AAA1-4), and three hydrolyze it (AAA1, AAA3, and AAA4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about dynein structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "7adb2bdb-a8f4-4182-b394-6a4810757ae6",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C28",
+      "claim": "Three of dynein's AAA+ domains hydrolyze ATP (AAA1, AAA3, and AAA4).",
+      "claim_type": "EXPLICIT",
+      "source": "Of dynein's six AAA +domains, four can bind ATP (AAA1-4), and three hydrolyze it (AAA1, AAA3, and AAA4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about dynein structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ab933e26-7fdc-432a-a4cc-b7012b7882f2",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C29",
+      "claim": "AAA2 is missing the catalytic glutamic acid needed to hydrolyse ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "AAA2 is missing the catalytic glutamic acid needed to hydrolyse ATP, and AAA5 and AAA6 have diverged enough to no longer be able to bind nucleotides (Schmidt and Carter, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to structural/biochemical studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d015f21c-b47f-45cf-9f77-159c6b1555e3",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C30",
+      "claim": "AAA5 and AAA6 have diverged enough to no longer be able to bind nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "AAA2 is missing the catalytic glutamic acid needed to hydrolyse ATP, and AAA5 and AAA6 have diverged enough to no longer be able to bind nucleotides (Schmidt and Carter, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to structural/biochemical studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "721edee4-4928-4704-8bd6-52f9c1e99e65",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C31",
+      "claim": "Dynein's tail is responsible for dimerization and is the site for binding of several accessory subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "At its amino-terminus, the 'tail' is responsible for dimerization, and is the site for binding of several accessory subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about dynein structure and function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "9bb2026f-9aaa-47a3-995f-bcd6ec15310a",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C32",
+      "claim": "The linker is a mechanical element that undergoes conformational changes, bending at a hinge in response to the nucleotide state of dynein's AAA+ ring to drive movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The tail is followed by the 'linker', a mechanical element that undergoes conformational changes, bending at a 'hinge' in response to the nucleotide state of dynein's AAA+ 'ring' to drive movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about dynein mechanochemistry",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "e2d5075a-bb6a-4c9d-b24f-70299bc70d55",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C33",
+      "claim": "The stalk is a long antiparallel coiled-coil that protrudes from the ring and ends in dynein's microtubule-binding domain (MTBD).",
+      "claim_type": "EXPLICIT",
+      "source": "Two elements protrude from dynein's ring: the 'stalk', a long antiparallel coiled-coil that protrudes from the ring and ends in dynein's microtubule-binding domain (MTBD), and the 'buttress', a short antiparallel coiled-coil that couples conformational changes in the ring with conformational changes in the MTBD by altering the register between the two alpha helices in the stalk (Cianfrocco et al., 2015; Niekamp et al., 2019; Rao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about dynein structure supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "0302f7e0-74f3-4dee-a9d2-97bba05f18a3",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C34",
+      "claim": "The buttress couples conformational changes in the ring with conformational changes in the MTBD by altering the register between the two alpha helices in the stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "Two elements protrude from dynein's ring: the 'stalk', a long antiparallel coiled-coil that protrudes from the ring and ends in dynein's microtubule-binding domain (MTBD), and the 'buttress', a short antiparallel coiled-coil that couples conformational changes in the ring with conformational changes in the MTBD by altering the register between the two alpha helices in the stalk (Cianfrocco et al., 2015; Niekamp et al., 2019; Rao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to mechanistic studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "be08e325-cb0f-443c-bb56-7211e4704fc6",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C35",
+      "claim": "Dynein's AAA+ ring mainly exists in one of two conformations driven by the nucleotide state: an 'open' conformation coupled to high affinity for the microtubule and a 'closed' conformation that leads to low affinity for the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynein's AAA+ ring mainly exists in one of two conformations driven by the nucleotide state of its AAA+ domains: an 'open' conformation coupled to high affinity for the microtubule at the MTBD, and a 'closed' conformation that leads to low affinity for the microtubule (Schmidt et al., 2015; Schmidt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to structural and biochemical studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "232208c9-e33d-4a39-801b-5aa4340c70e3",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C36",
+      "claim": "Dynein's affinity for the microtubule is controlled by conformational changes in the MTBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynein's affinity for the microtubule is controlled by conformational changes in the MTBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about dynein mechanochemistry",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "37d210cb-9168-4586-9e2d-9ce551ab7b28",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C37",
+      "claim": "Conformational changes in the MTBD are coupled to the nucleotide state of dynein's motor domain through shifts in the register between the two coiled-coil alpha helices that form dynein's stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "Those changes are coupled to the nucleotide state (and therefore conformation) of dynein's motor domain through shifts in the register between the two coiled-coil alpha helices that form dynein's stalk (Carter et al., 2008; Gibbons et al., 2005; Redwine et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to mechanistic studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "5d149b1c-2d55-4bc6-a856-b938de519e81",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C38",
+      "claim": "In dynein's autoinhibited state, called 'Phi', the two heavy chains come together face to face, pointing in opposite directions and preventing the motor from engaging microtubules in a manner that would allow it to walk.",
+      "claim_type": "EXPLICIT",
+      "source": "In dynein's autoinhibited state, called 'Phi' due to its resemblance to the Greek letter, the two heavy chains come together face to face, thus pointing in opposite directions and preventing the motor from engaging microtubules in a manner that would allow it to walk (Amos, 1989; Torisawa et al., 2014; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to structural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d2a6532e-c1c4-49d6-83f8-6167e7fbd23e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C39",
+      "claim": "The structure of human dynein bound to one LIS1 \u03b2-propeller was solved to 4.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We revisited our cryo-EM datasets of human dynein and LIS1 (Htet et al., 2020) and, with additional processing, solved the structures of human dynein bound to one and two LIS1 \u03b2-propellers to 4.0 \u00c5 and 4.1 \u00c5, respectively (Figure 1B and C; Figure 1\u2014figure supplement 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary structural data from cryo-EM analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d20b4ec2-6b98-45a7-bf0e-f7efaa132757",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C40",
+      "claim": "The structure of human dynein bound to two LIS1 \u03b2-propellers was solved to 4.1 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We revisited our cryo-EM datasets of human dynein and LIS1 (Htet et al., 2020) and, with additional processing, solved the structures of human dynein bound to one and two LIS1 \u03b2-propellers to 4.0 \u00c5 and 4.1 \u00c5, respectively (Figure 1B and C; Figure 1\u2014figure supplement 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary structural data from cryo-EM analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "063d6c9a-6262-4b4b-a908-cd7b6fe3207d",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C41",
+      "claim": "In both structures, dynein is in the closed ring conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In both structures, dynein is in the closed ring conformation and the linker domain is disordered before the hinge region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "4f7804bd-b00e-4166-8fd9-9fe1e999d1ea",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C42",
+      "claim": "The linker domain is disordered before the hinge region in both structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In both structures, dynein is in the closed ring conformation and the linker domain is disordered before the hinge region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ea9e2573-1a73-419e-9cec-851828ee2e3e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C43",
+      "claim": "The conformation of dynein is the same regardless of whether LIS1 is bound only at sitering or both at sitering and sitestalk.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformation of dynein is the same regardless of whether LIS1 is bound only at sitering or both at sitering and sitestalk (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "964285d3-87ab-43f8-91de-6d6a99d9a0b7",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C44",
+      "claim": "The closed state of the motor domain in the structures is the same as that observed in the autoinhibited Phi conformation of human dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "The closed state of the motor domain seen in our structures is the same as that observed in the autoinhibited Phi conformation of human dynein (Figure 1E; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previously published structure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d4caa2a1-0898-4e7f-b2fd-506f093c2dbc",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C45",
+      "claim": "Samples were prepared with ATP and vanadate included in the buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "We prepared our samples with ATP and vanadate included in the buffer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "7802568a-0123-425c-9f2c-1f30df7462c6",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C46",
+      "claim": "Hydrolysis of ATP by dynein in the presence of vanadate leads to the formation of ADP-Vi, a post-hydrolysis ADP.Pi analogue.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrolysis of ATP by dynein in the presence of vanadate leads to the formation of ADP-Vi, a post-hydrolysis ADP.Pi analogue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "2bd973de-2890-474c-a22d-c5a6264a0a1f",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C47",
+      "claim": "Based on map density, ADP is bound to AAA1 and AAA4.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on map density, ADP is bound to AAA1 and AAA4, while AAA2 contains either ATP or ADP- Vi (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from cryo-EM density maps",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "03a1ec33-45e9-414f-86c8-a8aa1f3ee014",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C48",
+      "claim": "AAA2 contains either ATP or ADP-Vi.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on map density, ADP is bound to AAA1 and AAA4, while AAA2 contains either ATP or ADP- Vi (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from cryo-EM density maps",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "34d9dc56-67ba-43ce-9975-06083b9b621e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C49",
+      "claim": "The nucleotide state of AAA3 is unclear from the density.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleotide state of AAA3 is unclear from the density, but we chose to model ADP (Figure 1\u2014figure supplement 2) as AAA3 has the same conformation as the ADP-bound AAA3 domain observed in the structure of human Phi dynein (Figure 1E), while the conformation of AAA3 in yeast dynein (carrying a point mutation, E2488Q, at AAA3 to prevent the hydrolysis of ATP) is different when bound to ATP (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on structural comparison",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "b1ee3916-0566-4e40-bff1-d5aec35ab188",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C50",
+      "claim": "ADP was modeled at AAA3 because AAA3 has the same conformation as the ADP-bound AAA3 domain observed in the structure of human Phi dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleotide state of AAA3 is unclear from the density, but we chose to model ADP (Figure 1\u2014figure supplement 2) as AAA3 has the same conformation as the ADP-bound AAA3 domain observed in the structure of human Phi dynein (Figure 1E), while the conformation of AAA3 in yeast dynein (carrying a point mutation, E2488Q, at AAA3 to prevent the hydrolysis of ATP) is different when bound to ATP (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on structural comparison",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "3f7d8a6c-0632-47cb-950b-d45a593f659a",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C51",
+      "claim": "Human LIS1 binds dynein in a manner similar to that of yeast dynein at sitering.",
+      "claim_type": "EXPLICIT",
+      "source": "Human LIS1 binds dynein in a manner similar to that of yeast dynein at sitering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ec616026-f173-4481-afb9-44d0926ebca5",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C52",
+      "claim": "At sitering, the main contact between LIS1 and dynein involves the same AAA4 helix used by yeast dynein, as well as the same AAA5 loop and the loop bridging AAA3-AAA4.",
+      "claim_type": "EXPLICIT",
+      "source": "At sitering, the main contact between LIS1 and dynein involves the same AAA4 helix used by yeast dynein, as well as the same AAA5 loop and the loop bridging AAA3-AAA4 (Figure 2A; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "923174f9-283d-4226-997a-75ccef2d8682",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C53",
+      "claim": "The AAA4 and AAA5 interactions with yeast Pac1 are important for dynein regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the AAA4 and AAA5 interactions with yeast Pac1 are important for dynein regulation (Gillies et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous experimental work",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "9eba17a6-fc63-4741-999d-c1bcfd12dc03",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C54",
+      "claim": "There is a minor rotation in human LIS1ring relative to yeast Pac1ring that causes a slight shift in how LIS1 interacts with dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a minor rotation in human LIS1ring relative to yeast Pac1ring that causes a slight shift in how LIS1 interacts with dynein (Figure 2B and C; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "601272ca-1047-4bd1-bc83-f46e43079f53",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C55",
+      "claim": "Despite changes in LIS1 position, the interfaces between dynein and LIS1 seen in the yeast dynein-Pac1 structure are maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these changes, the interfaces between dynein and LIS1 we saw in our yeast dynein-Pac1 structure are maintained; the AAA5 loop appears to make a small compensating shift to preserve its contact with LIS1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "0ad0a40d-e461-4f24-850b-8472b7c7656a",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C56",
+      "claim": "The AAA5 loop appears to make a small compensating shift to preserve its contact with LIS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these changes, the interfaces between dynein and LIS1 we saw in our yeast dynein-Pac1 structure are maintained; the AAA5 loop appears to make a small compensating shift to preserve its contact with LIS1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d42d4aad-b76a-41de-a0fa-623b4642d722",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C57",
+      "claim": "The placement of LIS1 at sitering is the same whether one or two LIS1s are bound to human dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the placement of LIS1 at sitering is the same whether one or two LIS1s are bound to human dynein (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "857977e7-373f-42f6-913a-a260050b4e4c",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C58",
+      "claim": "The contact between the AAA3-AAA4 bridging loop and LIS1 is the pivot point about which the position of LIS1ring rotates between the human and yeast systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The contact between the AAA3-AAA4 bridging loop and LIS1 (Figure 2D) is the pivot point about which the position of LIS1ring rotates between the human and yeast systems (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from structural comparison",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "b39db734-9302-43eb-8d92-231e5f3ac56a",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C59",
+      "claim": "The AAA3-AAA4 bridging loop contact with LIS1 may relay information about the nucleotide state of AAA3 to LIS1/Pac1.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the conservation of this interaction between the two systems, an intriguing possibility is that this contact relays information about the nucleotide state of AAA3, a regulatory site in dynein (Bhabha et al., 2014; DeSantis et al., 2017; DeWitt et al., 2015; Dutta and Jana, 2019; Nicholas et al., 2015; Qiu et al., 2021), to LIS1/Pac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on structural observation",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "2205a866-83f3-4f03-8e6b-5c6da51f1390",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C60",
+      "claim": "AAA3 is a regulatory site in dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the conservation of this interaction between the two systems, an intriguing possibility is that this contact relays information about the nucleotide state of AAA3, a regulatory site in dynein (Bhabha et al., 2014; DeSantis et al., 2017; DeWitt et al., 2015; Dutta and Jana, 2019; Nicholas et al., 2015; Qiu et al., 2021), to LIS1/Pac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "5633e57a-8d30-440b-8690-2eb75cfcf5cc",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C61",
+      "claim": "ATP hydrolysis at AAA1 is the main driver of dynein motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ATP hydrolysis at AAA1 is the main driver of dynein motility, AAA3 has been shown to play a major role in controlling the communication between AAA1 and dynein's MTBD; AAA3:apo or ATP blocks communication, leading to tight microtubule binding, while AAA3:ADP restores dynein's normal mechanochemical cycle (DeWitt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to mechanistic studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "5728d3b4-34f8-41cd-ba29-9286cbc50ba6",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C62",
+      "claim": "AAA3 plays a major role in controlling the communication between AAA1 and dynein's MTBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ATP hydrolysis at AAA1 is the main driver of dynein motility, AAA3 has been shown to play a major role in controlling the communication between AAA1 and dynein's MTBD; AAA3:apo or ATP blocks communication, leading to tight microtubule binding, while AAA3:ADP restores dynein's normal mechanochemical cycle (DeWitt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to mechanistic studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ea4c3a6b-d927-4531-9aed-d63fe41f4af1",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C63",
+      "claim": "AAA3:apo or ATP blocks communication between AAA1 and MTBD, leading to tight microtubule binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ATP hydrolysis at AAA1 is the main driver of dynein motility, AAA3 has been shown to play a major role in controlling the communication between AAA1 and dynein's MTBD; AAA3:apo or ATP blocks communication, leading to tight microtubule binding, while AAA3:ADP restores dynein's normal mechanochemical cycle (DeWitt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to mechanistic studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "4d0bc2cc-4cc2-4dba-8689-78f3a5bfe7ed",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C64",
+      "claim": "AAA3:ADP restores dynein's normal mechanochemical cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ATP hydrolysis at AAA1 is the main driver of dynein motility, AAA3 has been shown to play a major role in controlling the communication between AAA1 and dynein's MTBD; AAA3:apo or ATP blocks communication, leading to tight microtubule binding, while AAA3:ADP restores dynein's normal mechanochemical cycle (DeWitt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to mechanistic studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ca484e86-c920-441a-b7a3-7fc73cb94489",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C65",
+      "claim": "The AAA3-AAA4 bridging loop forms a hydrophobic pocket with the small domain of AAA3 (AAA3S).",
+      "claim_type": "EXPLICIT",
+      "source": "The AAA3-AAA4 bridging loop forms a hydrophobic pocket with the small domain of AAA3 (AAA3S), and nucleotide-induced conformational changes in AAA3 may cause this loop and AAA3S to shift together (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "acd61506-1cdb-4fe4-bd55-acc1244ac6fd",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C66",
+      "claim": "Nucleotide-induced conformational changes in AAA3 may cause the AAA3-AAA4 bridging loop and AAA3S to shift together.",
+      "claim_type": "EXPLICIT",
+      "source": "The AAA3-AAA4 bridging loop forms a hydrophobic pocket with the small domain of AAA3 (AAA3S), and nucleotide-induced conformational changes in AAA3 may cause this loop and AAA3S to shift together (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative inference from structural observation",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "6db17935-5b36-4560-96a3-a66bee5f5403",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C67",
+      "claim": "The bridging loop could act as a tether between LIS1 and AAA3 that allows Lis1 to prevent release of ADP from AAA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the bridging loop could act as a tether between LIS1 and AAA3 that allows Lis1 to prevent release of ADP from AAA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis based on structural observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "eb0b4571-a7c2-4821-81dc-8aff8e79c460",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C68",
+      "claim": "At sitestalk, LIS1 interacts with dynein at both the CC1 helix in the stalk and at a loop in AAA4 (residues 3112\u20133119).",
+      "claim_type": "EXPLICIT",
+      "source": "At sitestalk, LIS1 interacts with dynein at both the CC1 helix in the stalk (the helix leading from dynein's ring to the MTBD) and at a loop in AAA4 (residues 3112\u20133119) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "1314dcd2-7a04-45ce-abf4-ed492d625ba5",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C69",
+      "claim": "Human LIS1 is pivoted around the stalk helix relative to yeast Pac1 to a larger extent than at sitering.",
+      "claim_type": "EXPLICIT",
+      "source": "Human LIS1 is pivoted around the stalk helix relative to yeast Pac1 to a larger extent than at sitering (Figure 3B and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "4d659d70-28be-401c-89f9-0b3c18e63dff",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C70",
+      "claim": "The EQN triad residues are shifted relative to where they had been previously modeled in the human system.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing our yeast dynein-Pac1 structure to our new human dynein-LIS1 structure shows that the EQN triad residues are shifted relative to where we had previously modeled them in the human system (Video 1), providing an explanation for the modest phenotype we observed when we mutated these residues in human dynein (Gillies et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural comparison and inference about previous results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "71ea998c-73c7-4fc4-9272-28e717329a1e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C71",
+      "claim": "The shift in EQN triad residues provides an explanation for the modest phenotype observed when these residues were mutated in human dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing our yeast dynein-Pac1 structure to our new human dynein-LIS1 structure shows that the EQN triad residues are shifted relative to where we had previously modeled them in the human system (Video 1), providing an explanation for the modest phenotype we observed when we mutated these residues in human dynein (Gillies et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference connecting structural observation to previous experimental results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "de1dd1ad-b8d2-477a-bd27-24bcd20fe59e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C72",
+      "claim": "In yeast dynein-Pac1, N3018 is the only residue in the EQN triad that forms a hydrogen bond with Pac1.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of yeast dynein-Pac1 (Gillies et al., 2022) showed that N3018 is the only residue in the EQN triad that forms a hydrogen bond with Pac1, although Q3014 may act to stabilize N3018 by forming a small hydrogen bonding network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from previous structural analysis",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "a67678a4-2faa-46b3-9c2f-4bddfe4851bb",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C73",
+      "claim": "Q3014 may act to stabilize N3018 by forming a small hydrogen bonding network.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of yeast dynein-Pac1 (Gillies et al., 2022) showed that N3018 is the only residue in the EQN triad that forms a hydrogen bond with Pac1, although Q3014 may act to stabilize N3018 by forming a small hydrogen bonding network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural observation",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "2396812c-deee-4b81-ae35-6e68199769c4",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C74",
+      "claim": "R3015 and Q3011 form two additional hydrogen bonds with the backbone of Pac1.",
+      "claim_type": "EXPLICIT",
+      "source": "R3015 and Q3011 form two additional hydrogen bonds with the backbone of Pac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "98c345ef-2e98-4959-9fe7-fb0d73a70bf9",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C75",
+      "claim": "A yeast dyneinR3015 Q3011 N3018 mutant may be better than the original dyneinE2012 Q3014 N3018 mutant used to disrupt Pac1 regulation at sitestalk.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, a yeast dyneinR3015 Q3011 N3018 mutant may be better than the original dyneinE2012 Q3014 N3018 mutant used to disrupt Pac1 regulation at sitestalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "676104fb-274b-4c57-ba63-fd8144d6597e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C76",
+      "claim": "In human dynein, the equivalent EQN triad is E3196, Q3198, and N3202.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the equivalent EQN triad in human dynein, E3196, Q3198, and N3202, follows the same interaction pattern, where Q3198 interacts with N3202, but only N3202 hydrogen bonds with the backbone of LIS1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "38c386e9-152e-48cd-8877-fe103c00839c",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C77",
+      "claim": "In human dynein, Q3198 interacts with N3202, but only N3202 hydrogen bonds with the backbone of LIS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the equivalent EQN triad in human dynein, E3196, Q3198, and N3202, follows the same interaction pattern, where Q3198 interacts with N3202, but only N3202 hydrogen bonds with the backbone of LIS1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "a1b9a7f2-3957-4293-b70d-7b5d8ee24e60",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C78",
+      "claim": "R3206 is in position to form a salt bridge with LIS1 D151.",
+      "claim_type": "EXPLICIT",
+      "source": "R3206 is in position to form a salt bridge with LIS1 D151, which is made possible by the rotation of LIS1 in the human structure relative to the yeast one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "903df46e-8feb-441d-a326-cc706c9ca02c",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C79",
+      "claim": "The salt bridge between R3206 and LIS1 D151 is made possible by the rotation of LIS1 in the human structure relative to the yeast one.",
+      "claim_type": "EXPLICIT",
+      "source": "R3206 is in position to form a salt bridge with LIS1 D151, which is made possible by the rotation of LIS1 in the human structure relative to the yeast one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural comparison",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "3baeb7db-d3dd-445d-bc5e-0cfce2692186",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C80",
+      "claim": "Point mutations M3199A, N3202A, and R3206A in human dynein are predicted to disrupt LIS1 regulation at sitestalk to a greater extent than dyneinE3196 Q3198 N3202.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that point mutations M3199A, N3202A, and R3206A in human dynein would disrupt LIS1 regulation at sitestalk to a greater extent than dyneinE3196 Q3198 N3202.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on structural analysis",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d099d2ad-0e28-45e1-b742-425d7142363f",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C81",
+      "claim": "A septuple mutant in human dynein, dyneinK2898A E2902G E2903S E2904G E3196A Q3198A N3202A, was still capable of binding LIS1.",
+      "claim_type": "EXPLICIT",
+      "source": "A septuple mutant we designed in human dynein, dyneinK2898A E2902G E2903S E2904G E3196A Q3198A N3202A, which comprised the EQN mutations, was still capable of binding LIS1 (Gillies et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous experimental results",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "9b919ab3-8393-4221-bb3e-e5881a5c6e00",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C82",
+      "claim": "Yeast Pac1S248Q acts as a separation-of-function mutant that disrupts the regulation of Pac1 at sitestalk without affecting its function at sitering.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that yeast Pac1S248Q acts as a separation-of-function mutant that disrupts the regulation of Pac1 at sitestalk without affecting its function at sitering (Gillies et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous experimental results",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "06aa98a7-780f-4af5-9c90-d7ee081d5de1",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C83",
+      "claim": "In the human structure, the LIS1stalk-AAA4 loop interaction is primarily mediated through backbone interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human structure, the LIS1stalk-AAA4 loop interaction is primarily mediated through backbone interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "43ab9110-b7a9-4655-8ac3-558d37abacb7",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C84",
+      "claim": "Based on sequence alignments, T187 in human LIS1 is homologous to yeast S248.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on sequence alignments, T187 in human LIS1 is homologous to yeast S248; however, in our structure T187 faces away from dynein and is poised to hydrogen bond with K175.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence alignment and structural observation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "49487dfb-76d9-4742-89b7-43d8572b0070",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C85",
+      "claim": "In the structure, T187 faces away from dynein and is poised to hydrogen bond with K175.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on sequence alignments, T187 in human LIS1 is homologous to yeast S248; however, in our structure T187 faces away from dynein and is poised to hydrogen bond with K175.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "eb4671c5-5813-4eaa-87ca-39f095e3197e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C86",
+      "claim": "R186 may serve as a better mutation candidate than T187 to make a separation-of-function mutant in human LIS1.",
+      "claim_type": "EXPLICIT",
+      "source": "To make a separation-of-function mutant in human LIS1, the neighboring residue, R186, which extends towards dynein, may serve as a better mutation candidate in future studies (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Prediction based on structural analysis",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "9635c8ff-a268-492d-b784-bc726749e057",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C87",
+      "claim": "The biggest difference between the human dynein-LIS1 and yeast dynein-Pac1 complexes is in the LIS1-LIS1/Pac1-Pac1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The biggest difference between the human dynein-LIS1 and yeast dynein-Pac1 complexes is in the LIS1-LIS1/Pac1-Pac1 interaction (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "1a54bcb2-b928-4937-afb6-8a9a7c723a0d",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C88",
+      "claim": "The rotation of LIS1 at sitering and sitestalk in the human complex causes the LIS1-LIS1 interface to become significantly smaller, with approximately half the amount of buried surface area (~301 \u00c52) compared to the yeast Pac1-Pac1 interface (~590 \u00c52).",
+      "claim_type": "EXPLICIT",
+      "source": "The rotation of LIS1 at sitering and sitestalk in the human complex causes the LIS1-LIS1 interface to become significantly smaller, with approximately half the amount of buried surface area (~301 \u00c52) compared to the yeast Pac1-Pac1 interface (~590 \u00c52) (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis of structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "cc5f33d0-eaef-44c4-96ef-2f4c5ab0c377",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C89",
+      "claim": "The yeast Pac1-Pac1 interaction is moderately hydrophobic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the chemical nature of the interface is also different: while the yeast Pac1-Pac1 interaction is moderately hydrophobic, the human LIS1-LIS1 interface is more electrostatic (Figure 4C and D), which may compensate for the smaller surface area.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "99d9fb14-a93b-446d-ba80-141495173d2b",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C90",
+      "claim": "The human LIS1-LIS1 interface is more electrostatic than the yeast Pac1-Pac1 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the chemical nature of the interface is also different: while the yeast Pac1-Pac1 interaction is moderately hydrophobic, the human LIS1-LIS1 interface is more electrostatic (Figure 4C and D), which may compensate for the smaller surface area.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "54faaac1-58da-4cb7-b5c0-34633f92e774",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C91",
+      "claim": "The electrostatic nature of the human LIS1-LIS1 interface may compensate for the smaller surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the chemical nature of the interface is also different: while the yeast Pac1-Pac1 interaction is moderately hydrophobic, the human LIS1-LIS1 interface is more electrostatic (Figure 4C and D), which may compensate for the smaller surface area.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative inference from structural observation",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "224e15fa-7ef2-4bb6-af13-f00a93a165ab",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C92",
+      "claim": "The yeast Pac1-Pac1 interface mutations (F189D, I189D, R494A) previously tested are not conserved in human LIS1.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast Pac1-Pac1 interface mutations (F189D, I189D, R494A) we previously tested (Gillies et al., 2022) were designed to disrupt the Pac1-Pac1 interface and are not conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from sequence and structural comparison",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "bd3acd01-eb19-454f-9f81-3cd8c5667c4f",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C93",
+      "claim": "The equivalent residues in human LIS1 (T139, F142, R410) do not participate in the LIS1-LIS1 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on structure and sequence alignments, the equivalent residues in human LIS1 (T139, F142, R410) do not participate in the LIS1-LIS1 interface and mutating them would likely not have a disruptive effect (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "75dc7f73-7fbd-4b13-b11f-a2f3981b0924",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C94",
+      "claim": "Mutating T139, F142, R410 in human LIS1 would likely not have a disruptive effect on the LIS1-LIS1 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on structure and sequence alignments, the equivalent residues in human LIS1 (T139, F142, R410) do not participate in the LIS1-LIS1 interface and mutating them would likely not have a disruptive effect (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from structural observation",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "e6c0b0cc-8e55-4946-a654-01ebebd2df8c",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C95",
+      "claim": "S121, D136 and K147 may be better candidates to disrupt human LIS1-LIS1 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, S121, D136 and K147 may be better candidates to disrupt human LIS1-LIS1 interface (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Prediction based on structural analysis",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "9a1d9eff-4608-4c13-aa2b-912ae3b289fd",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C96",
+      "claim": "Lissencephaly is a neurodevelopmental disease caused by mutations in LIS1 that result in impaired neuronal migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Lissencephaly is a neurodevelopmental disease caused by mutations in LIS1 that result in impaired neuronal migration (Parrini et al., 2016; Reiner et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "44d3208a-18d5-466f-bec7-7751a43aec15",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C97",
+      "claim": "Lissencephaly is a disease of haploinsufficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Lissencephaly is a disease of haploinsufficiency and the majority of disease-causing mutations in LIS1 include large deletions or nonsense mutations that lead to truncated products (Cardoso et al., 2002; Haverfield et al., 2009; Lipka et al., 2013; Pilz et al., 1998; Sapir et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "cae07218-140a-4362-b0ee-a7c714e62409",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C98",
+      "claim": "The majority of disease-causing mutations in LIS1 include large deletions or nonsense mutations that lead to truncated products.",
+      "claim_type": "EXPLICIT",
+      "source": "Lissencephaly is a disease of haploinsufficiency and the majority of disease-causing mutations in LIS1 include large deletions or nonsense mutations that lead to truncated products (Cardoso et al., 2002; Haverfield et al., 2009; Lipka et al., 2013; Pilz et al., 1998; Sapir et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "11881611-935c-43b4-8437-09368d6ea9b0",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C99",
+      "claim": "Mutations in LIS1 are located in both the amino-terminal dimerization domain (LisH) and the WD40 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations are located in both the amino-terminal dimerization domain (LisH) and the WD40 domain (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from mapping mutations onto structure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "41ea8f83-6a20-4e74-8d0c-1ffc4cdc18ec",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C100",
+      "claim": "Missense mutations in LIS1 are less common than large deletions or nonsense mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Missense mutations are less common.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the relative frequency of mutation types",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ae58bf2b-6bd4-4006-8b72-386a7ce792ed",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C101",
+      "claim": "Several missense mutations found in the interior of the WD40 domain are part of the DHSW motifs involved in stabilizing the \u03b2-propeller fold and are likely to disrupt the structure of the domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Several missense mutations found in the interior of the WD40 domain are part of the DHSW motifs involved in stabilizing the \u03b2-propeller fold and are likely to disrupt the structure of the domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural knowledge and mutation location",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "b95153c3-560d-427d-887a-af4d5bec4cc8",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C102",
+      "claim": "H277P is a lissencephaly mutation located close to sitering.",
+      "claim_type": "EXPLICIT",
+      "source": "Only two known disease-related missense mutations in LIS1 are near a dynein binding site: both H277P, a lissencephaly mutation, and R342P, a double cortex syndrome mutation, are close to sitering (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mapping of known disease mutation onto structure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "2412902f-ffb4-40a4-814b-68107bfe3e10",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C103",
+      "claim": "R342P is a double cortex syndrome mutation located close to sitering.",
+      "claim_type": "EXPLICIT",
+      "source": "Only two known disease-related missense mutations in LIS1 are near a dynein binding site: both H277P, a lissencephaly mutation, and R342P, a double cortex syndrome mutation, are close to sitering (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mapping of known disease mutation onto structure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "6f5dc51b-af2b-4532-a84e-8679dfe6f816",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C104",
+      "claim": "H277 and R342 are involved in hydrogen bonds with nearby residues in the area that comprises the main interface involved in binding to the AAA4 helix at sitering.",
+      "claim_type": "EXPLICIT",
+      "source": "Although neither amino acid makes a direct contact with dynein, both are involved in hydrogen bonds with nearby residues in the area that comprises the main interface involved in binding to the AAA4 helix at sitering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "9c98a47a-29dd-48a7-a103-144f9913774a",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C105",
+      "claim": "Local disruption of the structure in the H277P and R342P mutants would likely affect the binding of LIS1 to dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that local disruption of the structure in the Proline mutants would affect the binding of LIS1 to dynein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "a615f6c3-5901-45de-a277-cff9a0ccd159",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C106",
+      "claim": "H389Y is a subcortical band heterotopia mutation located near the LIS1-LIS1 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "H389Y, a subcortical band heterotopia mutation, is located near the LIS1-LIS1 interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mapping of known disease mutation onto structure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "240d4455-f06b-4002-9df2-4c0c09798971",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C107",
+      "claim": "H389 makes hydrogen bonds with residues on the same LIS1 \u03b2-propeller, including Y137, located in the loop that contains the interface-forming T139.",
+      "claim_type": "EXPLICIT",
+      "source": "While not part of that interface, H389 makes hydrogen bonds with residues on the same LIS1 \u03b2-propeller, including Y137, located in the loop that contains the interface-forming T139.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ed425167-c1fb-442f-8ef2-9e8e5b0d529d",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C108",
+      "claim": "G3658E is a dynein mutation associated with intellectual disability.",
+      "claim_type": "EXPLICIT",
+      "source": "One mutation is intriguing in terms of LIS1 regulation of dynein: G3658E, which is associated with intellectual disability (Hertecant et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to clinical literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d8eeed74-a174-4987-9e10-a43348b45ccd",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C109",
+      "claim": "G3658 is located at the tip of the AAA5 beta hairpin loop that is part of sitering.",
+      "claim_type": "EXPLICIT",
+      "source": "Although G3658 does not interact with LIS1, it is located at the tip of the AAA5 beta hairpin loop that is part of sitering and is likely involved in the formation of the beta hairpin (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "337df425-9e14-42cf-91f2-b58657668a86",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C110",
+      "claim": "G3658 is likely involved in the formation of the beta hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although G3658 does not interact with LIS1, it is located at the tip of the AAA5 beta hairpin loop that is part of sitering and is likely involved in the formation of the beta hairpin (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from structural analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "f69f11c1-858c-4da5-b7da-b67fc51ca652",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C111",
+      "claim": "While the overall structure of dynein's interaction with LIS1/Pac1 is conserved from yeast to humans, there are important differences in the specifics of the dynein-LIS1/Pac1 and LIS1/Pac1-LIS1/Pac1 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM structures of human dynein-LIS1 complexes we reported here revealed that while the overall structure of dynein's interaction with LIS1/Pac1 is conserved from yeast to humans, there are important differences in the specifics of the dynein-LIS1/Pac1 and LIS1/Pac1-LIS1/Pac1 interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ae886cf6-b291-4a8b-b536-3b98e392afc2",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C112",
+      "claim": "The data and discussion provide a blueprint to better disrupt the human dynein-LIS1 interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The data and discussion presented here provide a blueprint to better disrupt the human dynein-LIS1 interfaces and to map human disease mutations discovered in the future in the context of the human dynein-LIS1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement about the utility of the work",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "376bb8d2-33bc-4b30-bb90-801fc47ee8bb",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C113",
+      "claim": "The data and discussion enable mapping of human disease mutations discovered in the future in the context of the human dynein-LIS1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The data and discussion presented here provide a blueprint to better disrupt the human dynein-LIS1 interfaces and to map human disease mutations discovered in the future in the context of the human dynein-LIS1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement about the utility of the work",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "2f1b061b-5528-4fd0-bac5-cebee750dfe4",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C114",
+      "claim": "Human dynein monomer and LIS1 constructs were expressed in Sf9 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, human dynein monomer and LIS1 constructs were expressed in Sf9 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "0106a423-6a61-43f5-a19a-833aa0530380",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C115",
+      "claim": "Proteins were initially purified using IgG Sepharose 6 Fast Flow beads, following release using TEV protease.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins were initially purified using IgG Sepharose 6 Fast Flow beads, following release using TEV protease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d52559b6-9f83-4891-b663-ca11d6ec4957",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C116",
+      "claim": "Dynein monomer was further purified using size-exclusion chromatography on a TSKgel G4000SWXL column.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynein monomer was further purified using size-exclusion chromatography on a TSKgel G4000SWXL column (TOSOH Bioscience) with GF150 buffer (25 mM HEPES pH 7.4, 150 mM KCl, 1 mM MgCl2, 5 mM DTT and 0.1 mM Mg-ATP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "bfa93ab4-2139-4704-ae12-6bd350ba0aec",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C117",
+      "claim": "UltraAuFoil R1.2/1.3 300 mesh grids were glow discharged with 20 mA negative current for 30 s.",
+      "claim_type": "EXPLICIT",
+      "source": "UltraAuFoil R1.2/1.3 300 mesh grids (Electron Microscopy Sciences) were glow discharged with 20 mA negative current for 30 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "d427da38-ed7f-4294-b9a3-73be018c1e18",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C118",
+      "claim": "A 4 \u00b5L sample of 3.5 \u03bcM dynein monomer, 3.5 uM HaloTag-Lis1 and 2.5 mM ATP-VO4 was applied to the grid and vitrified.",
+      "claim_type": "EXPLICIT",
+      "source": "A 4 \u00b5L sample of 3.5 \u03bcM dynein monomer, 3.5 uM HaloTag-Lis1 and 2.5 mM ATP-VO4 was applied to the grid and vitrified using a Vitrobot Mark IV robot (FEI) set at 100% humidity and 4 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "8fdf1941-610f-4875-a709-69a6856fcd7e",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C119",
+      "claim": "Three datasets were collected and initially processed separately.",
+      "claim_type": "EXPLICIT",
+      "source": "Three datasets were collected and initially processed separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data collection methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "40144f3a-ecf9-4fb4-9526-b3dd5443ff28",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C120",
+      "claim": "Micrographs with a CTF estimation of >5 \u00c5 were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Micrographs with a CTF estimation of >5 \u00c5 were discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "84926f7a-1c58-4460-83d5-81a545bcab22",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C121",
+      "claim": "Particles were extracted in Relion 3.0 with a 1.16 \u00c5/pixel.",
+      "claim_type": "EXPLICIT",
+      "source": "Particles were extracted in Relion 3.0 (***ref***) with a 1.16 \u00c5/pixel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ba7ad8f2-9e7e-4981-8301-cb39edef9857",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C122",
+      "claim": "The overall resolution of the structures was limited due to preferred orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the overall resolution of our structures was limited due to preferred orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of technical limitation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "653eb1a7-6e44-4aaf-9eac-edf7236a7301",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C123",
+      "claim": "The datasets were collected on open hole grids before the use of streptavidin affinity grids.",
+      "claim_type": "EXPLICIT",
+      "source": "These datasets were collected on open hole grids before we began using streptavidin affinity grids, which helped reduce this problem in our most recent structure of yeast dynein-Pac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "081b5626-64f8-482a-817f-5f7c5e616e61",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C124",
+      "claim": "Streptavidin affinity grids helped reduce the preferred orientation problem in the most recent structure of yeast dynein-Pac1.",
+      "claim_type": "EXPLICIT",
+      "source": "These datasets were collected on open hole grids before we began using streptavidin affinity grids, which helped reduce this problem in our most recent structure of yeast dynein-Pac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to methodological improvement",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "b348db1b-27a8-468b-b21f-60d25226fd65",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C125",
+      "claim": "The structure of Phi dynein (PDB 5 NUG) and the AlphaFold model of human Lis1 (model P43034) were used as initial models for the human dynein-Lis1 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of Phi dynein (PDB 5 NUG) and the AlphaFold model of human Lis1 (model P43034) were used as initial models for the human dynein-Lis1 structure and fit into the map using UCSF ChimeraX (Pettersen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model building methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "b90eb83c-c8d3-465d-82a2-15ffef4ddd26",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C126",
+      "claim": "Refinement of the model was carried out using a combination of Phenix Real Space Refine and Rosetta Relax.",
+      "claim_type": "EXPLICIT",
+      "source": "Refinement of the model was carried out using a combination of Phenix Real Space Refine (Afonine et al., 2018) and Rosetta Relax (ver 3.13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model refinement methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "ea4be17b-e6a8-47d4-a9f7-60f7e095fcd1",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "claim_id": "C127",
+      "claim": "Parts of the model were manually rebuilt using COOT.",
+      "claim_type": "EXPLICIT",
+      "source": "Parts of the model were manually rebuilt using COOT (Emsley et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model building methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "76e140aa-3875-441d-8416-315b3615888d",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined cryo-EM structures of human dynein bound to one LIS1 \u03b2-propeller (4.0 \u00c5) and two LIS1 \u03b2-propellers (4.1 \u00c5). In both structures, dynein adopts a closed ring conformation with a disordered linker domain, matching the autoinhibited Phi conformation. Nucleotide states were assigned based on density, with ADP at AAA1 and AAA4, ATP or ADP-Vi at AAA2, and ADP modeled at AAA3 based on conformational similarity to the Phi structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C50 collectively describe the primary structural results with appropriate resolution, conformational states, and nucleotide assignments. The structures are supported by cryo-EM data (C39-C40), structural observations (C41-C44), and reasonable inference for nucleotide modeling at AAA3 (C49-C50) based on conformational comparison. The methods and data processing are adequately described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "cfd881f0-cf96-43ce-902b-869a6abe4bb1",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Human LIS1 binds dynein at sitering using the same AAA4 helix, AAA5 loop, and AAA3-AAA4 bridging loop as in yeast. A minor rotation of human LIS1 relative to yeast Pac1 causes a slight shift in interactions, but the key interfaces are maintained through compensatory movements of the AAA5 loop. The AAA3-AAA4 bridging loop serves as the pivot point for this rotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C58 describe the sitering binding interface with structural evidence from comparative analysis. The observations of conserved binding elements (C52), minor rotational differences (C54), and compensatory shifts (C55-C56) are well-supported by structural data. The identification of the pivot point (C58) is a reasonable inference from the structural comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors propose that the AAA3-AAA4 bridging loop may relay information about AAA3 nucleotide state to LIS1. AAA3 is a regulatory site controlling communication between AAA1 and the MTBD, with AAA3:ADP restoring normal mechanochemistry. The bridging loop forms a hydrophobic pocket with AAA3S and could act as a tether allowing LIS1 to prevent ADP release from AAA3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59, C66, and C67 are explicitly speculative hypotheses about functional mechanisms. While the structural observations (C65) and prior knowledge about AAA3 function (C60-C64) are well-supported, the proposed mechanism for how LIS1 might regulate AAA3 nucleotide state lacks direct experimental validation. This requires functional studies with different nucleotide states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "5ba90fd9-576e-41aa-8f16-8da0793ca352",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "At sitestalk, LIS1 interacts with the CC1 stalk helix and an AAA4 loop. Human LIS1 is more pivoted relative to yeast Pac1 than at sitering, causing shifts in the EQN triad residues. This explains the modest phenotype of previous human dynein mutations. The authors identify specific residues (N3202, R3206, M3199) that would better disrupt the human dynein-LIS1 interaction at sitestalk than previously tested mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C81 describe the sitestalk interface with structural evidence and provide a mechanistic explanation for previous experimental results (C70-C71). The identification of key hydrogen bonding residues (C72-C77) is supported by structural data. Predictions for improved mutations (C75, C80) are reasonable inferences from the structure, though they remain untested. The connection to prior work (C81) provides validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "16186489-84f3-4c27-8989-a39928fef6cf",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose that R186 in human LIS1 may be a better candidate than T187 for creating a separation-of-function mutant that disrupts sitestalk regulation without affecting sitering function, analogous to yeast Pac1S248Q. T187, though homologous to yeast S248, faces away from dynein in the structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C86 propose a mutation strategy based on structural analysis and analogy to yeast. While the structural observations (C84-C85) are supported, the prediction that R186 would create a separation-of-function mutant (C86) is speculative and requires experimental validation. The homology-based reasoning is weakened by the different structural context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "a9cb2830-82c4-44ce-8a37-1688eab6697f",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The LIS1-LIS1 interface differs substantially from the yeast Pac1-Pac1 interface. The human interface has approximately half the buried surface area (~301 \u00c5\u00b2 vs ~590 \u00c5\u00b2) but is more electrostatic rather than hydrophobic, potentially compensating for the smaller area. Previously tested yeast interface mutations are not conserved in human LIS1, and the authors identify alternative residues (S121, D136, K147) for disrupting the human interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C95 describe quantitative differences in the LIS1-LIS1 interface with structural measurements (C88) and chemical characterization (C89-C90). The speculation about electrostatic compensation (C91) is reasonable but unproven. The identification of non-conserved residues (C92-C93) and predictions for better mutation candidates (C95) are well-supported by structural analysis, though experimental validation is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "c60408af-4201-4b11-a121-0ecefbbfaef4",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors map lissencephaly disease mutations onto the dynein-LIS1 structure. Most mutations are large deletions or nonsense mutations, consistent with haploinsufficiency. Two missense mutations near sitering (H277P and R342P) likely affect LIS1-dynein binding through local structural disruption. H389Y, near the LIS1-LIS1 interface, makes hydrogen bonds with residues in the interface-forming loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C107 map known disease mutations onto the structure and provide structural interpretations. The clinical background (C96-C98) is well-cited. The structural mapping (C99, C102-C103, C106) is supported by data. The mechanistic interpretations (C104-C105, C107) are reasonable inferences from structural analysis, though functional validation would strengthen these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "a76b4b74-46eb-4ae4-a60c-6967263518c1",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The dynein mutation G3658E, associated with intellectual disability, is located at the tip of the AAA5 beta hairpin loop that forms part of sitering. While G3658 does not directly interact with LIS1, it is likely involved in beta hairpin formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C110 map a disease mutation in dynein onto the structure and provide structural context. The location at the AAA5 loop (C109) is supported by structural data. The inference about beta hairpin formation (C110) is reasonable given glycine's role in turns, though the functional impact on LIS1 binding is indirect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "94ba24ec-4a72-457a-ae8f-2b878e878847",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The structures reveal that while the overall architecture of dynein-LIS1/Pac1 interaction is conserved from yeast to humans, there are important differences in the specific interactions at sitering, sitestalk, and the LIS1-LIS1 interface. This work provides a blueprint for designing better mutations to disrupt human dynein-LIS1 interactions and for mapping future disease mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C113 provide summary conclusions about the work's significance. The conservation with differences (C111) is well-supported by the structural comparisons throughout. The utility claims (C112-C113) are reasonable given the detailed structural analysis and mutation predictions, though the actual effectiveness of proposed mutations requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide background on dynein structure, function, and regulation by LIS1, including the autoinhibited Phi state and the role of LIS1 in relieving autoinhibition. They note that previous yeast dynein-Pac1 structures and mutations had mild effects in human dynein, suggesting species differences. No prior 3D structures of human dynein-LIS1 existed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C38 provide established background knowledge about dynein and LIS1, well-supported by citations to the literature. The observations about mild effects of yeast-based mutations in human dynein (C7-C8) provide motivation for the current work. These are primarily literature review claims that establish context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    },
+    {
+      "id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4",
+      "content_id": "ee9422d8-eecf-4e6b-96fc-5d299a69f138",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors describe their methods for protein expression, purification, cryo-EM sample preparation, data collection, and model building. They note that resolution was limited by preferred orientation due to using open hole grids rather than streptavidin affinity grids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C127 describe standard methods for cryo-EM structure determination. The methods are adequately detailed and the acknowledgment of technical limitations (C122-C124) is appropriate. These methodological claims support the primary structural results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:38:59.510427Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d2a6532e-c1c4-49d6-83f8-6167e7fbd23e",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "d20b4ec2-6b98-45a7-bf0e-f7efaa132757",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "063d6c9a-6262-4b4b-a908-cd7b6fe3207d",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "4f7804bd-b00e-4166-8fd9-9fe1e999d1ea",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "ea9e2573-1a73-419e-9cec-851828ee2e3e",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "964285d3-87ab-43f8-91de-6d6a99d9a0b7",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "d4caa2a1-0898-4e7f-b2fd-506f093c2dbc",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "7802568a-0123-425c-9f2c-1f30df7462c6",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "2bd973de-2890-474c-a22d-c5a6264a0a1f",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "03a1ec33-45e9-414f-86c8-a8aa1f3ee014",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "34d9dc56-67ba-43ce-9975-06083b9b621e",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "b1ee3916-0566-4e40-bff1-d5aec35ab188",
+      "result_id": "76e140aa-3875-441d-8416-315b3615888d"
+    },
+    {
+      "claim_id": "3f7d8a6c-0632-47cb-950b-d45a593f659a",
+      "result_id": "cfd881f0-cf96-43ce-902b-869a6abe4bb1"
+    },
+    {
+      "claim_id": "ec616026-f173-4481-afb9-44d0926ebca5",
+      "result_id": "cfd881f0-cf96-43ce-902b-869a6abe4bb1"
+    },
+    {
+      "claim_id": "923174f9-283d-4226-997a-75ccef2d8682",
+      "result_id": "cfd881f0-cf96-43ce-902b-869a6abe4bb1"
+    },
+    {
+      "claim_id": "9eba17a6-fc63-4741-999d-c1bcfd12dc03",
+      "result_id": "cfd881f0-cf96-43ce-902b-869a6abe4bb1"
+    },
+    {
+      "claim_id": "601272ca-1047-4bd1-bc83-f46e43079f53",
+      "result_id": "cfd881f0-cf96-43ce-902b-869a6abe4bb1"
+    },
+    {
+      "claim_id": "0ad0a40d-e461-4f24-850b-8472b7c7656a",
+      "result_id": "cfd881f0-cf96-43ce-902b-869a6abe4bb1"
+    },
+    {
+      "claim_id": "d42d4aad-b76a-41de-a0fa-623b4642d722",
+      "result_id": "cfd881f0-cf96-43ce-902b-869a6abe4bb1"
+    },
+    {
+      "claim_id": "857977e7-373f-42f6-913a-a260050b4e4c",
+      "result_id": "cfd881f0-cf96-43ce-902b-869a6abe4bb1"
+    },
+    {
+      "claim_id": "b39db734-9302-43eb-8d92-231e5f3ac56a",
+      "result_id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344"
+    },
+    {
+      "claim_id": "2205a866-83f3-4f03-8e6b-5c6da51f1390",
+      "result_id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344"
+    },
+    {
+      "claim_id": "5633e57a-8d30-440b-8690-2eb75cfcf5cc",
+      "result_id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344"
+    },
+    {
+      "claim_id": "5728d3b4-34f8-41cd-ba29-9286cbc50ba6",
+      "result_id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344"
+    },
+    {
+      "claim_id": "ea4c3a6b-d927-4531-9aed-d63fe41f4af1",
+      "result_id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344"
+    },
+    {
+      "claim_id": "4d0bc2cc-4cc2-4dba-8689-78f3a5bfe7ed",
+      "result_id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344"
+    },
+    {
+      "claim_id": "ca484e86-c920-441a-b7a3-7fc73cb94489",
+      "result_id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344"
+    },
+    {
+      "claim_id": "acd61506-1cdb-4fe4-bd55-acc1244ac6fd",
+      "result_id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344"
+    },
+    {
+      "claim_id": "6db17935-5b36-4560-96a3-a66bee5f5403",
+      "result_id": "2b37c916-9497-4c6b-87bd-22a1b5d9e344"
+    },
+    {
+      "claim_id": "eb0b4571-a7c2-4821-81dc-8aff8e79c460",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "1314dcd2-7a04-45ce-abf4-ed492d625ba5",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "4d659d70-28be-401c-89f9-0b3c18e63dff",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "71ea998c-73c7-4fc4-9272-28e717329a1e",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "de1dd1ad-b8d2-477a-bd27-24bcd20fe59e",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "a67678a4-2faa-46b3-9c2f-4bddfe4851bb",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "2396812c-deee-4b81-ae35-6e68199769c4",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "98c345ef-2e98-4959-9fe7-fb0d73a70bf9",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "676104fb-274b-4c57-ba63-fd8144d6597e",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "38c386e9-152e-48cd-8877-fe103c00839c",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "a1b9a7f2-3957-4293-b70d-7b5d8ee24e60",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "903df46e-8feb-441d-a326-cc706c9ca02c",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "3baeb7db-d3dd-445d-bc5e-0cfce2692186",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "d099d2ad-0e28-45e1-b742-425d7142363f",
+      "result_id": "5ba90fd9-576e-41aa-8f16-8da0793ca352"
+    },
+    {
+      "claim_id": "9b919ab3-8393-4221-bb3e-e5881a5c6e00",
+      "result_id": "16186489-84f3-4c27-8989-a39928fef6cf"
+    },
+    {
+      "claim_id": "06aa98a7-780f-4af5-9c90-d7ee081d5de1",
+      "result_id": "16186489-84f3-4c27-8989-a39928fef6cf"
+    },
+    {
+      "claim_id": "43ab9110-b7a9-4655-8ac3-558d37abacb7",
+      "result_id": "16186489-84f3-4c27-8989-a39928fef6cf"
+    },
+    {
+      "claim_id": "49487dfb-76d9-4742-89b7-43d8572b0070",
+      "result_id": "16186489-84f3-4c27-8989-a39928fef6cf"
+    },
+    {
+      "claim_id": "eb4671c5-5813-4eaa-87ca-39f095e3197e",
+      "result_id": "16186489-84f3-4c27-8989-a39928fef6cf"
+    },
+    {
+      "claim_id": "9635c8ff-a268-492d-b784-bc726749e057",
+      "result_id": "a9cb2830-82c4-44ce-8a37-1688eab6697f"
+    },
+    {
+      "claim_id": "1a54bcb2-b928-4937-afb6-8a9a7c723a0d",
+      "result_id": "a9cb2830-82c4-44ce-8a37-1688eab6697f"
+    },
+    {
+      "claim_id": "cc5f33d0-eaef-44c4-96ef-2f4c5ab0c377",
+      "result_id": "a9cb2830-82c4-44ce-8a37-1688eab6697f"
+    },
+    {
+      "claim_id": "99d9fb14-a93b-446d-ba80-141495173d2b",
+      "result_id": "a9cb2830-82c4-44ce-8a37-1688eab6697f"
+    },
+    {
+      "claim_id": "54faaac1-58da-4cb7-b5c0-34633f92e774",
+      "result_id": "a9cb2830-82c4-44ce-8a37-1688eab6697f"
+    },
+    {
+      "claim_id": "224e15fa-7ef2-4bb6-af13-f00a93a165ab",
+      "result_id": "a9cb2830-82c4-44ce-8a37-1688eab6697f"
+    },
+    {
+      "claim_id": "bd3acd01-eb19-454f-9f81-3cd8c5667c4f",
+      "result_id": "a9cb2830-82c4-44ce-8a37-1688eab6697f"
+    },
+    {
+      "claim_id": "75dc7f73-7fbd-4b13-b11f-a2f3981b0924",
+      "result_id": "a9cb2830-82c4-44ce-8a37-1688eab6697f"
+    },
+    {
+      "claim_id": "e6c0b0cc-8e55-4946-a654-01ebebd2df8c",
+      "result_id": "a9cb2830-82c4-44ce-8a37-1688eab6697f"
+    },
+    {
+      "claim_id": "9a1d9eff-4608-4c13-aa2b-912ae3b289fd",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "44d3208a-18d5-466f-bec7-7751a43aec15",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "cae07218-140a-4362-b0ee-a7c714e62409",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "11881611-935c-43b4-8437-09368d6ea9b0",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "41ea8f83-6a20-4e74-8d0c-1ffc4cdc18ec",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "ae58bf2b-6bd4-4006-8b72-386a7ce792ed",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "b95153c3-560d-427d-887a-af4d5bec4cc8",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "2412902f-ffb4-40a4-814b-68107bfe3e10",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "6f5dc51b-af2b-4532-a84e-8679dfe6f816",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "9c98a47a-29dd-48a7-a103-144f9913774a",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "a615f6c3-5901-45de-a277-cff9a0ccd159",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "240d4455-f06b-4002-9df2-4c0c09798971",
+      "result_id": "c60408af-4201-4b11-a121-0ecefbbfaef4"
+    },
+    {
+      "claim_id": "ed425167-c1fb-442f-8ef2-9e8e5b0d529d",
+      "result_id": "a76b4b74-46eb-4ae4-a60c-6967263518c1"
+    },
+    {
+      "claim_id": "d8eeed74-a174-4987-9e10-a43348b45ccd",
+      "result_id": "a76b4b74-46eb-4ae4-a60c-6967263518c1"
+    },
+    {
+      "claim_id": "337df425-9e14-42cf-91f2-b58657668a86",
+      "result_id": "a76b4b74-46eb-4ae4-a60c-6967263518c1"
+    },
+    {
+      "claim_id": "f69f11c1-858c-4da5-b7da-b67fc51ca652",
+      "result_id": "94ba24ec-4a72-457a-ae8f-2b878e878847"
+    },
+    {
+      "claim_id": "ae886cf6-b291-4a8b-b536-3b98e392afc2",
+      "result_id": "94ba24ec-4a72-457a-ae8f-2b878e878847"
+    },
+    {
+      "claim_id": "376bb8d2-33bc-4b30-bb90-801fc47ee8bb",
+      "result_id": "94ba24ec-4a72-457a-ae8f-2b878e878847"
+    },
+    {
+      "claim_id": "c19f1114-1784-426a-9f45-8ccb7946f3b9",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "a4458fc1-a1f4-4072-8252-77d425b7b80c",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "8d3ad1cb-6414-454b-9c03-dc45a104b2d5",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "708302ad-cc3e-421a-bdbd-33dd5a7c6255",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "d8ddf215-9b38-4748-8c84-1f0cd5053aa4",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "5d538b35-c2e1-414c-a9cf-c958ed9e72cd",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "0cb13035-22f4-4e1c-8c02-d85bd3690796",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "cb17fa54-07a5-4378-8527-1346941466bb",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "5f10f77f-f553-412c-9134-fb0be434649e",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "8e1b2176-9e1d-4234-a61f-66ac314d481d",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "9683f23f-f117-4faa-99c5-2d1cebe9c2cc",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "84f4902b-27d6-4944-8d5f-b856a01b70ba",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "93af9198-8241-47dd-b878-ba336b0b9132",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "37a31c3b-66c9-4e1f-837c-175ba3c4ec8c",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "96921b93-da66-4c99-a433-7144c0cb4e35",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "77486390-ca16-4366-9d75-25166d7462b7",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "40defc0c-f289-40ed-9ca5-e99255cb2c57",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "7d2ed0f8-76e4-4de6-afd1-0d0095e50218",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "c8e52dcc-837a-4841-8af1-316b14a9f65e",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "731ce133-65eb-492d-a757-43449a188678",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "eaf45f5f-3ddf-4cf8-a103-c7940acd5f1c",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "445197b2-c283-40ca-9890-9cf2f3f224a9",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "7adb2bdb-a8f4-4182-b394-6a4810757ae6",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "ab933e26-7fdc-432a-a4cc-b7012b7882f2",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "d015f21c-b47f-45cf-9f77-159c6b1555e3",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "721edee4-4928-4704-8bd6-52f9c1e99e65",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "9bb2026f-9aaa-47a3-995f-bcd6ec15310a",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "e2d5075a-bb6a-4c9d-b24f-70299bc70d55",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "0302f7e0-74f3-4dee-a9d2-97bba05f18a3",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "be08e325-cb0f-443c-bb56-7211e4704fc6",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "232208c9-e33d-4a39-801b-5aa4340c70e3",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "37d210cb-9168-4586-9e2d-9ce551ab7b28",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "5d149b1c-2d55-4bc6-a856-b938de519e81",
+      "result_id": "29ae6fd8-1e8e-4ff4-8b5f-0626ee7e54b1"
+    },
+    {
+      "claim_id": "2f1b061b-5528-4fd0-bac5-cebee750dfe4",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "0106a423-6a61-43f5-a19a-833aa0530380",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "d52559b6-9f83-4891-b663-ca11d6ec4957",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "bfa93ab4-2139-4704-ae12-6bd350ba0aec",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "d427da38-ed7f-4294-b9a3-73be018c1e18",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "8fdf1941-610f-4875-a709-69a6856fcd7e",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "40144f3a-ecf9-4fb4-9526-b3dd5443ff28",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "84926f7a-1c58-4460-83d5-81a545bcab22",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "ba7ad8f2-9e7e-4981-8301-cb39edef9857",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "653eb1a7-6e44-4aaf-9eac-edf7236a7301",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "081b5626-64f8-482a-817f-5f7c5e616e61",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "b348db1b-27a8-468b-b21f-60d25226fd65",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "b90eb83c-c8d3-465d-82a2-15ffef4ddd26",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    },
+    {
+      "claim_id": "ea4be17b-e6a8-47d4-a9f7-60f7e095fcd1",
+      "result_id": "0f59ba24-ddfe-4608-98e1-348ba8f488e4"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study cohort consisted of 26 HCM patients (median age 53 years, 19% female) diagnosed based on LV wall thickness \u226515 mm, all clinically referred for prophylactic ICD implantation. Thirteen patients (50%) experienced clinical VAs based on appropriate ICD firing during follow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C88-C92 provide consistent demographic and clinical outcome data for the study cohort. The diagnostic criteria, patient selection, imaging timing, and outcome measures are clearly stated and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C110",
+      "C111"
+    ],
+    "result": "Clinical parameters traditionally associated with SCD in HCM (FHSCD, unexplained syncope, MWT, Max LVOTG, age, LA diameter) showed no statistically significant differences between patients with and without clinical VA. Regional hypertrophy measurements also showed no significant differences between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C110 provide specific p-values (all >0.05) demonstrating lack of statistical significance. Claims C26, C111 appropriately infer that clinical data and hypertrophy levels alone cannot discriminate VA risk, which is a reasonable conclusion from the statistical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Patient-specific T1-based thresholding resulted in significantly higher diffuse fibrosis in LGE-T1 models (40.5\u00b19.4%) compared to LGE-only models (8.9\u00b11.7%, p<0.0001). The personalized threshold for diffuse fibrosis (TDiffuse=1.1\u00b10.7 SD) differed significantly from the standard 3 SD threshold, while dense fibrosis thresholds remained similar (TDense=5.1\u00b10.5 SD vs 5 SD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide quantitative data with statistical significance (p<0.0001 for diffuse fibrosis comparison, p=0.30 for dense fibrosis). The findings are internally consistent and demonstrate the impact of personalized T1-based thresholding on model construction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The amounts of diffuse fibrosis and dense scar did not differ significantly between patients with and without clinical VA in either LGE-T1 or LGE-only models. Therefore, imaging characteristics of structural remodeling alone cannot discriminate between patients who will and will not develop clinical VA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide specific p-values (all >0.05) and confidence intervals demonstrating lack of statistical significance. Claim C34's inference that imaging characteristics alone cannot discriminate VA risk is appropriately supported by the statistical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A total of 182 simulations (26 patients \u00d7 7 pacing locations) were performed. Of 26 LGE-T1 models, 14 were inducible for VA, compared to only 12 LGE-only models, indicating that diffuse fibrosis increases VA inducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide clear quantitative simulation results. Claim C38's inference about diffuse fibrosis increasing inducibility is reasonable given the 14 vs 12 inducible models comparison, though the difference is modest and no statistical test is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "LGE-T1 models had 24 unique VAs (from 32 total episodes) with 1-3 morphologies per model, while LGE-only models had 15 unique VAs (from 17 episodes) with 1-2 morphologies per model. This indicates that T1-based diffuse fibrosis increases the number of unique VAs in each substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide specific quantitative data on VA morphologies. Claim C42's inference is reasonable given the higher number of unique VAs and morphologies in LGE-T1 models, though statistical significance is not explicitly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "There is a moderate negative correlation (R=0.40, p=0.157) between diffuse fibrosis amount and number of unique VAs in LGE-T1 inducible models, suggesting that fibrosis distribution is more important than amount for VA inducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C43 reports a correlation that is not statistically significant (p=0.157). Claim C44's inference about distribution being more important than amount is speculative given the non-significant correlation and lack of direct evidence comparing distribution patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In LGE-T1 models, 32/98 pacing sites (33%) induced VA compared to 17/84 (20%) in LGE-only models. The sectors with most and least VA induction were the same in both model types, suggesting T1-based diffuse fibrosis localizes to existing arrhythmogenic regions and increases vulnerability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide clear quantitative data showing higher induction rates in LGE-T1 models. Claims C47-C49 make reasonable inferences about increased vulnerability and localization patterns, though statistical testing of the difference in induction rates is not reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "LGE-T1 modeling correctly predicted VA occurrence in 11/13 patients with clinical VAs (compared to 9/13 for LGE-only), demonstrating increased fidelity. LGE-T1 models also showed increased unique VA morphologies (maximum 3 vs 2 in LGE-only).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide clear predictive accuracy data. Claims C52-C53 make appropriate inferences about improved fidelity and increased morphological complexity with T1-based modeling, supported by the quantitative improvements shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Two patients underwent clinical electrophysiology studies, and the simulated VAs in LGE-T1 models matched the locations of clinical VAs documented by chart review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 describe validation against clinical data, but with only 2 patients and no quantitative metrics or details about how 'matching' was determined, the evidence is limited. This represents anecdotal validation rather than systematic assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The LGE-T1 virtual-heart approach achieved 84.6% sensitivity, 76.9% specificity, and 80.1% accuracy in predicting VA events, significantly outperforming ACCF/AHA (46.2% for all metrics) and ESC (53.9% sensitivity, 38.5% specificity, 46.2% accuracy) clinical risk models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56-C59 provide specific quantitative performance metrics showing clear superiority of the virtual-heart approach. However, no statistical tests are reported for the comparison, and the small sample size (N=26) limits generalizability. The term 'significantly outperformed' (C5, C59) may overstate the finding without formal statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Even LGE-only virtual-heart technology (without T1 personalization) outperformed clinical risk stratifiers, indicating that assessing substrate arrhythmogenic propensity is paramount to VA risk stratification even without accurate diffuse fibrosis representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by the performance data in Table 3 (LGE-only: 73.1% accuracy vs 46.2% for clinical models). Claim C61's inference about the importance of substrate assessment is reasonable given this finding, though 'paramount' may be overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The presence of diffuse fibrosis increases arrhythmogenic propensity in HCM patients by enabling new VAs beyond those from scar and rendering substrates inducible from more ectopic locations. The arrhythmogenic propensity is patient-specific, determined by both the amount and distribution of fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C68-C69 are supported by the simulation data showing increased inducibility and VA morphologies in LGE-T1 models. Claims C70-C71 make reasonable inferences about patient-specificity and the importance of both amount and distribution, supported by the variability observed across models and the moderate correlation findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "All 26 HCM patients were deemed high risk by ACCF/AHA criteria and received ICDs for primary prevention, but only 13 (50%) actually experienced VA with appropriate ICD firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide consistent data demonstrating the poor specificity of current clinical criteria, with 50% of patients receiving ICDs without experiencing VA events. This supports the motivation for improved risk stratification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study has a small sample size (N=26) due to imaging artifacts (aliasing, motion, incomplete scans) that prevented reconstruction of more virtual hearts. Additional limitations include minor resolution discrepancies between T1 maps and LGE-CMR, and inability to represent small structural heterogeneities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 appropriately acknowledge study limitations. The small sample size is a significant limitation for generalizability, and the technical imaging limitations are transparently reported. These are honest assessments of methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The virtual-heart technology does not incorporate cardiac mechanics, but this is not expected to alter VA prediction based on prior work showing mechanics only modifies arrhythmia stability, not inducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 accurately states a limitation. Claims C86-C87 justify excluding mechanics based on one citation (Salvador et al., 2021), but this is a single study and the generalizability to HCM specifically is uncertain. The expectation that mechanics won't alter prediction is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C107"
+    ],
+    "result": "The methodology involved 1.5T CMR imaging with specific resolution parameters, validated segmentation methods, high-resolution finite-element meshes (355\u00b169 \u03bcm), rule-based fiber orientation assignment, and a validated rapid pacing protocol from seven distributed LV locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96, C99-C101, C107 describe the technical methodology with appropriate citations to prior validation studies. The methods appear rigorous and well-documented, with mesh resolution meeting established requirements (C100) for electrophysiological simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The electrophysiological models used the ten Tusscher-Panfilov human ventricular myocyte model with added INaL for normal myocardium, and modified ionic kinetics based on Coppini et al. 2013 for diffuse fibrosis regions. Dense fibrosis was modeled as electrically inexcitable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 describe the cellular electrophysiology modeling with appropriate citations. The use of Coppini et al. 2013 data from hypertrophied regions as a proxy for diffuse fibrosis is reasonable given the histopathological association (C105), though this represents an approximation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Patients were classified as at risk of VA if arrhythmia was induced from at least one pacing site in their virtual heart. Simulation results were blinded to clinical outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 describe the risk classification criterion and blinding procedure. The binary classification approach is clearly defined, and blinding is appropriate for preventing bias in this retrospective study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C76"
+    ],
+    "result": "The virtual-heart technology's superior performance is attributed to its comprehensive evaluation of substrate arrhythmogenicity through distributed pacing, with T1 maps conferring higher personalization through patient-specific segmentation thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76 make reasonable mechanistic inferences about why the approach works, supported by the demonstrated performance improvements and the quantitative differences in fibrosis representation with T1-based personalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "In clinical application, patients would be reimaged at different time points and risk assessment repeated to account for changes in arrhythmia susceptibility as the heart remodels over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is speculative about future clinical implementation. While reasonable given HCM's progressive nature (C77-C78), this represents a proposed workflow rather than demonstrated practice, and no data on optimal timing or frequency of reassessment is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background context establishes that HCM is associated with SCD risk from VAs due to fibrosis proliferation, has 1:500 incidence, is the leading cause of SCD in young people, and that current ACCF/AHA and ESC risk stratification criteria inadequately identify at-risk patients. LGE-CMR detects focal fibrosis but not diffuse fibrosis, which requires T1 mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C20 provide background context supported by appropriate citations to established literature. These claims establish the clinical problem, epidemiology, current limitations, and imaging capabilities that motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Prior work has suggested diffuse fibrosis as a risk factor for VA in other cardiomyopathies and atrial fibrillation, but its contribution to arrhythmogenic propensity in HCM patients has never been assessed before this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 appropriately cite prior work on diffuse fibrosis in other contexts. Claim C67 asserts novelty for HCM specifically, which appears reasonable given the citations provided, though comprehensive literature review is not presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The RV was not reconstructed due to blood pool artifacts and lack of hypertrophy/fibrotic substrate in HCM. T1 relaxation times <350 ms and 350-450 ms represent dense and diffuse fibrosis respectively, based on histopathological evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 provides reasonable justification for excluding RV based on HCM pathophysiology. Claim C98 is supported by multiple histopathological studies (Ellims et al. 2012, 2014; Iles et al. 2008; Mewton et al. 2011), providing validation for the T1 threshold interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "In three LGE-T1 virtual hearts from patients with known clinical VAs shown in Figure 3, a single VA morphology was induced in all cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 describes specific examples shown in Figure 3. This is a straightforward descriptive finding from the simulation results for illustrative purposes.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2029 @@
+{
+  "submission": {
+    "id": "7ccbb31f-78be-4f04-a5ee-fcecb78dbb98",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:33:03.671459Z",
+    "updated_at": "2025-12-03T18:33:03.671459Z"
+  },
+  "content": [
+    {
+      "id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "submission_id": "7ccbb31f-78be-4f04-a5ee-fcecb78dbb98",
+      "content_type": "manuscript",
+      "content_text": "# RNA sequence to structure analysis from comprehensive pairwise mutagenesis of multiple self-cleaving ribozymes\n\n## Authors\n\n- Jessica M Roberts<sup>1</sup> ([ORCID: 0000-0003-3164-7256](https://orcid.org/0000-0003-3164-7256))\n- James D Beck<sup>2</sup> ([ORCID: 0000-0002-9086-2653](https://orcid.org/0000-0002-9086-2653))\n- Tanner B Pollock<sup>3</sup>\n- Devin P Bendixsen<sup>1</sup> ([ORCID: 0000-0003-0831-7646](https://orcid.org/0000-0003-0831-7646))\n- Eric J Hayden<sup>1</sup> ([ORCID: 0000-0001-6078-5418](https://orcid.org/0000-0001-6078-5418)) \u2020\n\n### Affiliations\n\n1. Biomolecular Sciences Graduate Programs, Boise State University Boise United States ([ROR:02e3zdp86](https://ror.org/02e3zdp86))\n2. Computing PhD Program, Boise State University Boise United States ([ROR:02e3zdp86](https://ror.org/02e3zdp86))\n3. Department of Biological Science, Boise State University Boise United States ([ROR:02e3zdp86](https://ror.org/02e3zdp86))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSelf-cleaving ribozymes are RNA molecules that catalyze the cleavage of their own phosphodiester backbones. These ribozymes are found in all domains of life and are also a tool for biotechnical and synthetic biology applications. Self-cleaving ribozymes are also an important model of sequence-to-function relationships for RNA because their small size simplifies synthesis of genetic variants and self-cleaving activity is an accessible readout of the functional consequence of the mutation. Here, we used a high-throughput experimental approach to determine the relative activity for every possible single and double mutant of five self-cleaving ribozymes. From this data, we comprehensively identified non-additive effects between pairs of mutations (epistasis) for all five ribozymes. We analyzed how changes in activity and trends in epistasis map to the ribozyme structures. The variety of structures studied provided opportunities to observe several examples of common structural elements, and the data was collected under identical experimental conditions to enable direct comparison. Heatmap-based visualization of the data revealed patterns indicating structural features of the ribozymes including paired regions, unpaired loops, non-canonical structures, and tertiary structural contacts. The data also revealed signatures of functionally critical nucleotides involved in catalysis. The results demonstrate that the data sets provide structural information similar to chemical or enzymatic probing experiments, but with additional quantitative functional information. The large-scale data sets can be used for models predicting structure and function and for efforts to engineer self-cleaving ribozymes.\n\n## Introduction\n\nChallenges with predicting the functional effects of changing an RNA sequence continues to limit the study and design of RNA molecules. Recently, machine learning approaches have made considerable advancements in predicting an RNA structure from a sequence. However, these approaches rely heavily on crystal structures of RNA molecules and sequence conservation of homologs, both of which are limited for RNA molecules compared to proteins (Calonaci et al., 2020; Townshend et al., 2021). In addition, describing an RNA molecule as a single structure can be inaccurate, and regulatory elements such as riboswitches demonstrate the importance of an ensemble of structures for an RNA function. It is unclear that predictions based on individual structures alone will be able to predict the functional effects of mutations with the precision needed for many biotechnical and synthetic biology applications, or to predict disease-associated mutations in RNA molecules (Halvorsen et al., 2010). This suggests that new experimental data types might be important for understanding, designing, and manipulating the transcriptome.\n\nSelf-cleaving ribozymes provide a useful model to study sequence-structure-function relationships in RNA molecules. Self-cleaving ribozymes are catalytic RNA molecules that cleave their own phosphodiester backbone. They were first discovered in viruses and viroids, but numerous families of self-cleaving ribozymes have since been discovered in all domains of life (Prody et al., 1986). The CPEB3 ribozyme, for example, was discovered in the human genome and found to be highly conserved in mammals (Bendixsen et al., 2021; Salehi-Ashtiani et al., 2006). Other self-cleaving ribozymes, such as the hammerhead and twister ribozymes, are found broadly distributed across eukaryotic and prokaryotic genomes (Perreault et al., 2011; Roth et al., 2014). The biological roles of ribozymes in different genomes and different genetic contexts remain an active area of investigation (Jimenez et al., 2015). In addition to being widespread across the tree of life, self-cleaving ribozymes have also been used for several bioengineering applications (Liang et al., 2011; Peng et al., 2021; Wei and Smolke, 2015; Zhong et al., 2016). For example, self-cleaving ribozymes are being combined with aptamers to develop synthetic gene regulatory devices, which have biotechnical and biomedical applications where ligand-dependent control of gene expression is desired (Kobori et al., 2017; Kobori et al., 2015; Stifel et al., 2019; Townshend et al., 2015).\n\nThe testing of mutational effects in ribozyme sequences has been accelerated by high-throughput experimental approaches. Most self-cleaving ribozymes are fairly small (<200 nt), and genetic variants can be made by chemical synthesis of a single DNA oligonucleotide that is then used as a template for in vitro transcription. The self-cleavage activity of the ribozyme requires a precise three-dimensional structure, and therefore activity can be used as a sensitive indirect readout of native structure. Mutations that disrupt the native structure are detected as reduced activity compared to the unmutated \u2018wild-type\u2019 ribozyme. Several methods have been developed to enable the detection of ribozyme function by high-throughput sequencing of biochemical reactions (Bendixsen et al., 2019; Hayden, 2016; Kobori and Yokobayashi, 2016; Shen et al., 2021). For self-cleaving ribozymes, each read from the data reports both the mutations and whether or not that molecule was reacted (cleaved) or unreacted (uncleaved). Therefore, high-throughput sequencing allows numerous genetic variants to be pooled together and still observed hundreds to thousands of times in the data. This provides confidence in the fraction cleaved (FC) for each genetic variant in a given experiment, and genetic variants are compared to determine relative activity (RA). Importantly, the data are internally controlled because both reacted and unreacted molecules are observed, which controls for differences in their abundance due to synthesis steps (chemical DNA synthesis, transcription, reverse-transcription, and PCR).\n\nA common approach to confirm structural interactions in RNA and proteins is through analysis of pairs of mutations (Dutheil et al., 2010; Olson et al., 2014). In this context, it can be useful to calculate pairwise epistasis, which measures deviations in the mutational effects of double mutants relative to the effects of each individual mutation (assuming an additive model of mutational effects). For example, in the case of a base pair, each single mutation would disrupt the base-pairing interaction, destabilizing the catalytically active RNA structure and reducing activity. However, if two mutants together restore a base pair, the RA of the double mutant would have much higher activity than expected from the additive effects of the individual mutations (positive epistasis). In contrast to paired nucleotides, double mutants at non-paired nucleotides tend to have a more reduced activity than expected from each individual mutation (negative epistasis) (Bendixsen et al., 2017; Li et al., 2016). In the case of two mutations that create a different base pair (i.e., G-C to A-U), it is known that the stacking with neighboring base pairs is also structurally important, and some base pair substitutions will not be equivalent in a given structural context. This creates a range of possible epistatic effects even for two mutations at paired nucleotide positions. In addition, some non-canonical base interactions within tertiary contacts may also show epistasis even when they do not involve Watson-Crick or GU wobble base-pairing interactions. Nevertheless, the propensity for positive epistasis between physically interacting nucleotides suggests that a comprehensive evaluation of pairwise mutational effects should contain considerable structural information.\n\nHere, we report comprehensive analysis of mutational effects for all single and double mutants for five different self-cleaving ribozymes. RA effects of all single and double mutations were determined by high-throughput sequencing of co-transcriptional self-cleavage reactions, and this data was used to calculate epistasis between pairs of mutations. The ribozymes studied include a mammalian CPEB3 ribozyme, a hepatitis delta virus (HDV) ribozyme, a twister ribozyme from Oryza sativa, a hairpin ribozyme derived from the satellite RNA from tobacco ringspot virus, and a hammerhead ribozyme (Bendixsen et al., 2021; Burke and Greathouse, 2005; Chadalavada et al., 2007; Liu et al., 2014; M\u00fcller et al., 2012). For each reference ribozyme, a single DNA oligo template library was synthesized with 97% wild-type nucleotides at each position, and 1% of each of the three other nucleotides. This mutagenesis strategy was expected to produce all possible single and double mutants, as well as a random sampling of combinations of three or more mutations. The mutagenized templates were transcribed in vitro, all under identical conditions, where active ribozymes had the opportunity to self-cleave co-transcriptionally. All ribozyme constructs studied cleave near the 5\u2032-end of the RNA, and a template switching reverse transcription protocol was used to append a common primer binding site to both cleaved and uncleaved molecules. Subsequently, low-cycle PCR was used to add indexed Illumina adapters for high-throughput sequencing. Each mutagenized ribozyme template was transcribed separately and in triplicate, and amplified with unique indexes so that all replicates could be pooled and sequenced together on an Illumina sequencer. The sequencing data was then used to count the number of times each unique sequence was observed as cleaved or uncleaved, and this data was used to calculate the FC. The FC of single and double mutants was normalized to the unmutated reference sequence to determine RA. The RA values of the single and double mutants were used to calculate all possible pairwise epistatic interactions in all five ribozymes. We mapped epistasis values to each ribozyme structure to evaluate correlations between structural elements and patterns of pairwise epistasis values. The results indicated that structural features of the ribozymes are revealed in the data, suggesting that these data sets will be useful for developing models for predicting sequence-structure-function relationships in RNA molecules.\n\n## Results and discussion\n\n### Epistatic effects in paired nucleotide positions show stability-dependent signatures\n\nTo evaluate how the effects of mutations mapped to the ribozyme structures, we plotted the RA values as heatmaps, similar to previous publications by others (Andreasson et al., 2020; Kobori and Yokobayashi, 2016; Figure 1, Figure 2, Figure 3, Figure 4, Figure 5, panel A, large plot). We then used this data to calculate epistasis between pairs of mutations. We first inspected nucleotide positions known to be involved in base-paired regions of the secondary structure of each ribozyme. In this heatmap layout, many paired regions showed an anti-diagonal line of high-activity double mutant variants with strong positive epistasis (Figures 1\u20145, insets, red to blue plots). In addition, pairs of mutations off the anti-diagonal tended to show negative or non-positive epistasis. Pseudoknot elements that involve Watson-Crick base pairs also showed this pattern, including the single base pair T1 element in CPEB3 (Figure 1) and the two base pair T1 element in HDV (Figure 2). The layout of mutations in the heatmap places paired nucleotide positions along the anti-diagonal and compensatory double mutants that change one Watson-Crick base pair to another are found on this anti-diagonal. Individual mutations that break a base pair will often reduce ribozyme activity, but the activity can be restored by a second compensatory mutation resulting in positive epistasis. In contrast, double mutants off-diagonal usually disrupt two base pairs (unless they result in a GU wobble base pair). It is expected that breaking two base pairs in the same paired region would be more deleterious to ribozyme activity than breaking one base pair. The epistasis data indicates that two non-compensatory mutations in the same paired region are more deleterious than expected from an additive assumption, and frequently create negative epistasis off-diagonal within paired regions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig1-v2.jpg)\n\n**Figure 1.:** (A) Relative activity heatmap depicting all possible pairwise effects of mutations on the cleavage activity of a mammalian CPEB3 ribozyme. Base-paired regions P1, P2, P3, P4, and T1 are highlighted and color coordinated along the axes, and surrounded by black squares within the heatmap. Pairwise epistasis interactions observed for each paired regions are each shown as expanded insets for easy identification of the specific epistatic effects measured for each pair of mutations. Instances of positive epistasis are shaded blue, and negative epistasis is shaded red, with higher color intensity indicating a greater magnitude of epistasis. Catalytic residues are indicated by stars along the axes (A is reproduced from Figure 1B from Beck et al., 2022). (B) Secondary structure of the CPEB3 ribozyme used in this study. Each nucleotide is shaded to indicate the average relative cleavage activity of all single mutations at that position. (C) Distributions of epistasis values in the paired regions of the CPEB3 ribozyme. Data were categorized as double mutations that result in two mismatches (2 Mismatch), a single mismatch (1 Mismatch), or no mismatches because of a new Watson-Crick base pair or GU wobble results (WC/GU).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig2-v2.jpg)\n\n**Figure 2.:** (A) Relative activity heatmap depicting all possible pairwise effects of mutations on the cleavage activity of an HDV ribozyme. Base-paired regions P1, P2, P3, P4, and T1 are highlighted and color coordinated along the axes, and surrounded by black squares within the heatmap. Pairwise epistasis interactions observed for each paired regions are each shown as expanded insets for easy identification of the specific epistatic effects measured for each pair of mutations. Instances of positive epistasis are shaded blue, and negative epistasis is shaded red, with higher color intensity indicating a greater magnitude of epistasis. Catalytic residues are indicated by stars along the axes. (B) Secondary structure of the HDV ribozyme used in this study. Each nucleotide is shaded to indicate the average relative cleavage activity of all single mutations at that position. (C) Distributions of epistasis values in the paired regions of the HDV ribozyme. Data were categorized as double mutations that result in two mismatches (2 Mismatch), a single mismatch (1 Mismatch), or no mismatches because of a new Watson-Crick base pair or GU wobble results (WC/GU). HDV, hepatitis delta virus.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig3-v2.jpg)\n\n**Figure 3.:** (A) Relative activity heatmap depicting all possible pairwise effects of mutations on the cleavage activity of a twister ribozyme. Base-paired regions P2, P4, T1, and T2 are highlighted and color coordinated along the axes, and surrounded by black squares within the heatmap. Pairwise epistasis interactions observed for each paired region are each shown as expanded insets for easy identification of the specific epistatic effects measured for each pair of mutations. Instances of positive epistasis are shaded blue, and negative epistasis is shaded red, with higher color intensity indicating a greater magnitude of epistasis. Catalytic residues are indicated by stars along the axes. (B) Secondary structure of the twister ribozyme used in this study. Each nucleotide is shaded to indicate the average relative cleavage activity of all single mutations at that position. (C) Distributions of epistasis values in the paired regions of the twister ribozyme. Data were categorized as double mutations that result in two mismatches (2 Mismatch), a single mismatch (1 Mismatch), or no mismatches because of a new Watson-Crick base pair or GU wobble results (WC/GU).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig4-v2.jpg)\n\n**Figure 4.:** (A) Relative activity heatmap depicting all possible pairwise effects of mutations on the cleavage activity of a hairpin ribozyme. Base-paired regions P1, P2, and P3 are highlighted and color coordinated along the axes, and surrounded by black squares within the heatmap. Pairwise epistasis interactions observed for each paired region are each shown as expanded insets for easy identification of the specific epistatic effects measured for each pair of mutations. Instances of positive epistasis are shaded blue, and negative epistasis is shaded red, with higher color intensity indicating a greater magnitude of epistasis. Catalytic residues are indicated by stars along the axes. (B) Secondary structure of the hairpin ribozyme used in this study. Each nucleotide is shaded to indicate the average relative cleavage activity of all single mutations at that position. (C) Distributions of epistasis values in the paired regions of the hairpin ribozyme. Data were categorized as double mutations that result in two mismatches (2 Mismatch), a single mismatch (1 Mismatch), or no mismatches because of a new Watson-Crick base pair or GU wobble results (WC/GU). (D) The distributions of epistasis values in all terminal stem loops across all five ribozymes, and epistasis observed within loop A, loop B, and between loop A and loop B in the hairpin ribozyme.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Secondary structure of the loop domains in hairpin. Loop B nucleotides are shaded blue, and loop A nucleotides are shaded in orange. Canonical base pairs are connected by lines, non-canonical pairs are indicated by connecting dots. (B) Crystal structure of a hairpin ribozyme (PDB 1M5K) showing loop A and loop B domain interactions. Loop B is shaded in blue, and loop A is shaded in orange. Hydrogen bonds are shown as dashed yellow lines.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig5-v2.jpg)\n\n**Figure 5.:** (A) Relative activity heatmap depicting all possible pairwise effects of mutations on the cleavage activity of a hammerhead ribozyme. Base-paired regions, P1 and P2, are highlighted and color coordinated along the axes, and surrounded by black squares within the heatmap. Pairwise epistasis interactions observed for each paired region are each shown as expanded insets for easy identification of the specific epistatic effects measured for each pair of mutations. Instances of positive epistasis are shaded blue, and negative epistasis is shaded red, with higher color intensity indicating a greater magnitude of epistasis. Catalytic residues are indicated by stars along the axes. (B) Secondary structure of the hammerhead ribozyme used in this study. Each nucleotide is shaded to indicate the average relative cleavage activity of all single mutations at that position. (C) Distributions of epistasis values in the paired regions of the hammerhead ribozyme. Data were categorized as double mutations that result in two mismatches (2 Mismatch), a single mismatch (1 Mismatch), or no mismatches because of a new Watson-Crick base pair or GU wobble results (WC/GU). (D) Crystal structure of a hammerhead ribozyme (3ZD5) with C20 and G25 indicated (orange) and hydrogen bonds between the nucleotides shown as yellow dashed lines.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig5-figsupp1-v2.jpg)\n\nTo further evaluate epistasis within base-paired regions, we separated epistasis data into three categories based on the number of base pairs that the mutations disrupt. For each ribozyme, we plotted the distribution of epistasis values as violin plots (Figures 1\u20145, panel C). For all ribozymes, the analysis revealed a clear trend. On average, disrupting two base pairs resulted in negative epistasis (mean of distribution), disrupting one base pair shifted the distribution toward more positive epistasis values, and the highest epistasis values (mean and max) were found for double mutants that result in zero disrupted base pairs because the two mutations together create a new Watson-Crick or GU Wobble pair. This trend was observed for paired regions in every ribozyme, and in all cases the distributions were significantly different (p<0.05\u20130.001, Mann-Whitney U test). This pattern of epistasis in paired regions demonstrates the potential for identifying base-paired regions in RNA structures using comprehensive double-mutant activity data.\n\nTo further evaluate the potential of epistasis data to identify base-paired regions, we analyzed the epistasis values for each paired region individually. For this analysis, we separated the epistasis values calculated for double mutants that result in a Watson-Crick base pair (\u2018on-diagonal\u2019 in heatmaps) from all other double mutants (\u2018off-diagonal\u2019 in heatmaps) in each paired region (Figure 6). Short-paired regions showed the largest differences in the distributions of epistatic effects for on-diagonal and off-diagonal double mutants, while longer-paired regions showed small differences in these distributions. For example, short-paired regions P3 in CPEB3 and HDV (3 bp), and T1 in the twister (4 bp) showed very large differences in the mean of the distributions. These small regions were highly sensitive to individual mutations, and most pairs of mutations within this region resulted in almost no detectable activity except when they created a different Watson-Crick base pair, leading to the large positive epistasis values (Figures 1\u20145). In addition, in these short-paired regions, we do not see strong negative epistasis. It appears that the strong deleterious effect of a single mutation in these short regions makes a second mutation no more disruptive to activity, resulting in a mean of the distribution near zero for double mutants off-diagonal. In contrast, the largest paired region (HDV P4, 14 bp) showed a very small difference between the distribution of epistasis values found on-diagonal and off-diagonal. This can be rationalized because losing one base pair was not deleterious to the HDV ribozyme activity under our experimental conditions (Figure 2), and this does not allow for positive epistasis upon a second mutation. Even the loss of two base pairs in P4 was somewhat tolerated, leading to very little negative epistasis for two mutations at unpaired positions. Taken together, the results are consistent with other observations in both RNA and proteins, where it has been observed that the effects of mutations, and their additivity, have been shown to be dependent on the local thermodynamics of the structured region (Kraut et al., 2003; Moody and Bevilacqua, 2003).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig6-v2.jpg)\n\n**Figure 6.:** For each region, epistasis values were separated into double mutants that restore a Watson-Crick base pair (\u2018on-diagonal\u2019, blue) and all other double mutants (\u2018off-diagonal\u2019, gray). The mean of each distribution (\u00b5) is reported and indicated by the dashed line. The p value is the probability that values were drawn from the same distribution by chance (Mann-Whitney U test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Relationship between the Gibbs free energy (\u0394G) of each base-paired region belonging to the hairpin, hammerhead, CPEB3, HDV, and twister ribozymes, and the median relative activity of all single mutants within each base-paired region (Pearson correlation=\u20130.53, p=0.029, R2=0.27).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The distribution of RA values for sequences with pairs of mutations where one mutation is a catalytic nucleotide is shown in blue. The specific catalytic nucleotide is indicated in the title above each plot. The distributions for all pairs of mutations for each ribozyme that do not involve a catalytic nucleotide are shown in gray. The mean values (\u00b5) for each distribution are marked by dashed lines.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig6-figsupp3-v2.jpg)\n\nTo explicitly investigate the influence of thermodynamic stability on mutational effects in the data, we calculated the minimum free energy for each paired region and compared mutational effects. We split each paired region into two separate RNA sequences that contained only the base-paired nucleotides, eliminating loop nucleotides, and used nearest neighbor rules to calculate the minimum free energy of their interaction (NUPACK). This approach neglects thermodynamic contributions from terminal loops, but allowed for a consistent approach to compare internal and terminal paired regions. We found a significant negative correlation between the median deleterious effects of single mutations and the minimum free energy of the paired regions (Figure 6\u2014figure supplement 1). Clearly, though, thermodynamic stability alone does not explain every mutational effect. For example, CPEB3 P1 is more sensitive to mutations than CPEB3 P2 or P4 even though the latter are less stable. This is likely because P1 is immediately adjacent to the site of self-cleavage, while P2 and P4 are not. Overall, this analysis of thermodynamic stability indicates that for RNA\u2019s with unknown structures, more stable structural elements may be harder to identify from epistatic effects alone when there is not a strong deleterious effect of individual mutations. However, it is also possible that more stable elements would show stronger epistasis under different experimental conditions, such as different temperatures or magnesium concentrations (Peri et al., 2022).\n\n### Catalytic residues do not have any high-activity mutants\n\nSelf-cleaving ribozymes often utilize a concerted acid-base catalysis mechanism where specific nucleobases act as proton donors (acid) or acceptors (base) (Jimenez et al., 2015), and mutations at these positions abolish activity. Analyzing the effects of individual mutations will not distinguish catalytic nucleotides from structurally important nucleotides. Comprehensive pairwise mutations, on the other hand, can potentially distinguish between catalytic residues that cannot be rescued by a second mutation, and structurally important nucleotides that can be rescued (positive epistasis). The catalytic cytosines of the CPEB3 (C57) and HDV (C75) act as proton donors due to perturbed pKa values (Nakano et al., 2000; Skilandat et al., 2016). For the twister ribozyme (Figure 3), the guanosine at position G39 acts as a general base, and the adenosine at position A1 acts as a general acid (Wilson et al., 2016). The catalytic nucleotides for the Hammerhead ribozyme (Figure 5) are the Guanosines located at positions G25 and G39 (Scott et al., 2013). The hairpin ribozyme (Figure 4) contains catalytic nucleotides at positions G29 and A59 (Wilson et al., 2006). In the RA heatmaps, the columns and rows associated with these nucleotides result in low activity values (Figures 1\u20145, Figure 6\u2014figure supplement 2). It is important to note that because there is complete coverage of all double mutants in this data set, we can be certain that there are no possible compensatory mutations. These results show how catalytic residues can be identified in the comprehensive pairwise mutagenesis data.\n\n### Unpaired nucleotides show mutational effects that depend on tertiary structure\n\nRibozymes with mutations to nucleotides found in terminal loops that are not involved in tertiary structure elements showed high RA for most single and double mutants, and essentially no epistasis. This is not surprising if these loops reside on the periphery of the ribozyme and are not involved in structural contacts with other nucleotides. This is the case for L4 of CPEB3 (Figure 1), L4 of HDV (Figure 2), and L1 and L3 of the hairpin ribozyme (Figure 4). Two mutations within these loops do not reduce activity, and mutations in these loops do not rescue other deleterious mutations such as those that break a base pair.\n\nThe internal loops LA and LB of the hairpin ribozyme are structurally important (Figure 4). Interactions between nucleotides within LB include six non-Watson-Crick base-pairing interactions that are important for the formation of an active ribozyme structure (Figure 4\u2014figure supplement 1). Several non-canonical base-base and sugar-base hydrogen bonds between nucleotides within LA are also important for the formation of the active site (Fedor, 2000; Wilson et al., 2006). Docking between LA and LB is necessary for the formation of a catalytically active ribozyme and is facilitated by a Watson-Crick base pair between nucleotides numbered G1 and C46 in the version of the ribozyme used here (Rupert and Ferr\u00e9-D\u2019Amar\u00e9, 2001). In contrast to terminal loop regions, most single mutations within LA and LB resulted in low self-cleavage activity in our data (Figure 4). In addition, the double mutants within and between loop A and loop B show several instances of strong positive epistasis (Figure 4\u2014figure supplement 1C), and the distributions of epistasis within and between these loops are significantly different than the terminal loops that are not structurally important (Figure 4D). This positive epistasis indicates that many of the important structural contacts can be achieved by other specific pairs of nucleotides. For example, the double mutant G1C and C46G shows strong epistasis suggesting that swapping a C-G base pair for the G-C base pair can restore activity by facilitating docking between the two loops. Several double mutants at positions that form non-canonical interactions in LB show positive epistasis. For example, mutation A41G shows positive epistasis when the interacting nucleotide C65 is mutated to a G or U. The non-canonical A45:A59 interaction shows positive epistasis for several pairs of mutations (A45U A59C, A45C A59C, and A45G A59U). Finally, the non-canonical base pair A47:G57 in LB, shows positive epistasis for the A47U:G57A double mutant. The difference between terminal loops and loops with structural importance highlights how activity-based data can help identify non-canonical structures that are challenging to predict computationally, and that might be difficult to identify by other common approaches, such as chemical probing experiments (Walter et al., 2000).\n\nAnother example of structurally important unpaired regions can be found in the CUGA uridine turn (U-turn) motif in the hammerhead ribozyme (Figure 5). This CUGA turn forms the catalytic pocket and positions a catalytic cytosine (-1C) at the cleavage site (Doudna, 1995). Crystal structures of the sTRSV ribozyme show a base pair between the nucleotides corresponding to the nucleotides numbered here as C20 and G25 in the ribozyme construct used for our experiments (Chi et al., 2008; Martick and Scott, 2006). These two nucleotides showed strong positive epistasis for the mutations C20G and G25C, which substitutes a G:C base pair for the original C:G base pair. All other single and double mutants in this region showed low activity, and no instances of strong positive epistasis within or between this motif (Figure 5). The low activity resulting from mutations in this region confirms the functional importance of this motif, and indicates that this motif cannot be easily formed or rescued by sequences with up to two mutational differences, except for the G:C base pair swap.\n\nTertiary interactions between loops in the hammerhead ribozyme provide another example of structurally important loop regions. Type III hammerhead ribozymes, like the one used in this study, contain tertiary interactions between nucleotides in the loops of P1 and P2 that are implicated in structural organization of the catalytic core. A crystal structure of this loop-loop interaction showed a network of interhelical non-canonical base pairs and stacks, with several nucleobases in stem-loop I interacting with more than one nucleobase in stem-loop II (Chi et al., 2008; Martick and Scott, 2006). However, there are numerous different loop sequences in naturally occurring hammerhead ribozymes indicating that this loop-loop interaction can be formed by a variety of different sequences (Burke and Greathouse, 2005; Perreault et al., 2011). We therefore anticipated that we would observe a significant level of positive epistasis between these two loops for double mutations that were capable of maintaining these tertiary interactions. Surprisingly, however, we found that most individual and double mutations do not reduce activity (Figure 5), and double mutants do not show positive epistasis (Figure 5\u2014figure supplement 1). This indicates that the multiple interactions between the loops compensate for mutations that break a single interaction. It is interesting to note that the mutational robustness of these loops has been exploited in bioengineering applications, where insertion of an aptamer into one of the loops and randomization of the other allowed for the selection of synthetic riboswitches (Townshend et al., 2015). The identification of robust structural elements through high-throughput mutational data could be useful for identifying better targets for aptamer integration in other ribozymes.\n\nWe also find support for a two-nucleotide T1 pseudoknot in CPEB3 involving a non-canonical U-U base pair. While no crystal structure of the CPEB3 ribozyme has been solved, this U:U base pair has been confirmed and implicated as a magnesium binding site based on NMR and Tb3+ cleavage data (Skilandat et al., 2016). In our data, we find that G:C and C:G base pairs can support activity. We see negative epistasis for several pairs of mutations that result in \u2018mismatches\u2019 (A:G, A:A, and A:C) and positive or no epistasis for pairs of mutations that result in G:C and C:G base pairs, which all supports the formation of a second base pair in T1. We note that because the starting base pair is a U:U, the location of double mutants resulting in WC/GU pairs do not lie on the anti-diagonal in the heatmaps. Because a crystal structure of the CPEB3 ribozyme has not been solved, the CPEB3 data provides an example of how comprehensive mutational data can be useful for RNA with unknown structures.\n\n### Evaluation of read depth and mutational coverage\n\nThe accuracy of our RA measurements depends on the number of reads we observe that map to each unique ribozyme sequence (read depth). Each reference ribozyme has a different nucleotide length resulting in different numbers of possible single and double mutants. In addition, the pooling of experimental replicates for sequencing does not result in equal mixtures of each replicate. In order to determine read depth, we mapped reads to the reference sequences and counted the number of reads that matched each ribozyme, while allowing for one or two mutations. We observed every single and double mutant for all ribozymes in each replicate, indicating 100% coverage of these mutant classes for all of our data sets. The distributions of observations for each single and double mutant of each ribozyme are shown in Figure 6\u2014figure supplement 3. The HDV data showed the lowest depth, possibly because it is a larger ribozyme (87 nt), and fewer reads mapped to the single and double mutants (Table 1). Nevertheless, this analysis confirms that the data contain complete coverage of all single and double mutants and ample read depth for all five ribozymes.\n\n**Table 1.**\n Summary of the lengths of each self-cleaving ribozyme used in this study, the number of single and double mutants whose cleavage activity was analyzed, and the average fraction cleaved observed for all single and double mutants.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Ribozyme name</th>\n      <th>Ribozyme length</th>\n      <th>Possible single Mmutants</th>\n      <th>Possible double mutants</th>\n      <th>Total mapped reads</th>\n      <th>Wild-type fraction cleaved</th>\n      <th>Single mutant average fraction cleaved</th>\n      <th>Double mutant average fraction cleaved</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CPEB3</td>\n      <td>69</td>\n      <td>207</td>\n      <td>21,114</td>\n      <td>9,238,603</td>\n      <td>0.90</td>\n      <td>0.69</td>\n      <td>0.44</td>\n    </tr>\n    <tr>\n      <td>HDV</td>\n      <td>87</td>\n      <td>261</td>\n      <td>33,669</td>\n      <td>3,316,380</td>\n      <td>0.60</td>\n      <td>0.40</td>\n      <td>0.25</td>\n    </tr>\n    <tr>\n      <td>Twister</td>\n      <td>48</td>\n      <td>144</td>\n      <td>10,152</td>\n      <td>7,762,863</td>\n      <td>0.60</td>\n      <td>0.41</td>\n      <td>0.21</td>\n    </tr>\n    <tr>\n      <td>Hairpin</td>\n      <td>71</td>\n      <td>213</td>\n      <td>22,365</td>\n      <td>5,067,216</td>\n      <td>0.52</td>\n      <td>0.29</td>\n      <td>0.17</td>\n    </tr>\n    <tr>\n      <td>Hammerhead</td>\n      <td>45</td>\n      <td>135</td>\n      <td>8,910</td>\n      <td>8,054,498</td>\n      <td>0.34</td>\n      <td>0.27</td>\n      <td>0.19</td>\n    </tr>\n  </tbody>\n</table>\n\n### Epistasis plots are an informative approach to visualizing high-throughput activity data\n\nPrevious studies have reported comprehensive pairwise mutagenesis of ribozymes that provide interesting opportunities for comparison to the data presented here. For example, all pairwise mutations in a 42-nucleotide region of the same twister ribozyme were previously reported (Kobori and Yokobayashi, 2016). Compared to our experiments, these previous experiments used a later transcriptional time point (2 hr) and lower magnesium concentration (6 mM). They did not calculate epistasis, and reported the RA of all double mutants using heatmaps, inspiring the figures presented here. The results were highly similar, and the authors were able to identify paired regions in the data. The similarity between the results illustrates the reliability of this sequencing-based approach, which is promising for future data sharing and meta-analysis efforts. In another prior work, all pairwise mutations in the glmS ribozyme were analyzed using a custom-built fluorescent RNA array (Andreasson et al., 2020). The power of this approach is that they were able to monitor self-cleavage over short and long time scales, which enables differentiating both very slow and very fast self-cleaving variants. While the authors did not calculate pairwise epistasis, they reported RA heatmaps and also \u2018rescue effects\u2019 when the activity of a double mutant is sufficiently higher than the activity of a single mutant. This rescue analysis is very similar to positive epistasis, but only takes into account one mutation at a time. This analysis was also able to identify many of the know base-pair interactions and some tertiary contacts in the glmS ribozyme. In addition, they were able to observe some minor secondary structure rearrangement, where mutations in some nucleotides were able to rescue neighboring nucleotides by shifting the base-pairing slightly. The pairwise epistasis analysis presented here adds an additional approach to extract information from such high-throughput sequencing-based analysis of self-cleaving ribozymes. Unlike the rescue analysis, which can only identify positive interactions, the ability to detect negative epistatic interactions may help further identify structurally important regions for RNA sequence design and engineering efforts. It is possible that all of these analysis approaches could be used for RNA functions other than self-cleavage, if they can be detected by high-throughput sequencing. This could include ribozyme activities that can be enriched by in vitro selections (Pressman et al., 2019), or mutations in natural RNA molecules that affect growth rates (Li et al., 2016).\n\n### Conclusion\n\nWe have determined the RA for all single and double mutants of five self-cleaving ribozymes and use this data to calculate epistasis for all possible pairs of nucleotides. The data was collected under identical co-transcriptional conditions, facilitating direct comparison of the data sets. The data revealed signatures of structural elements including paired regions and non-canonical structures. In addition, the comprehensiveness of the double mutants enabled identification of catalytic residues. Recently, there has been significant progress toward predicting RNA structures from sequence using machine learning approaches (Calonaci et al., 2020; Townshend et al., 2021; Zhao et al., 2021). The machine learning models are typically trained on structural biology data from x-ray crystallography, chemical probing (SHAPE), and natural sequence conservation. Self-cleaving ribozymes have been central to this effort. Our approach is similar to SHAPE in that it can be obtained with common lab equipment and commercially available reagents. The activity data presented provides information similar to natural sequence conservation, except that it provides quantitative effects of mutations, not just frequency. For example, secondary structures have been predicted based on comparative sequence analysis by identifying covarying nucleotide positions in homologous RNA sequences. These approaches are important because they do not require any experimental evaluation of sequences. However, this \u2018comparative approach\u2019 may not be able to identify important nucleotides or structural elements other than canonical base pairs. We hope that the activity-based data presented here will provide information not present in these other training data sets and help advance computational predictions.\n\n## Materials and methods\n\n### Mutational library design and preparation of self-cleaving ribozymes\n\nSingle-stranded DNA molecules used as templates for in vitro transcription were synthesized as described previously (Kobori and Yokobayashi, 2016), using doped oligos containing 97% of the base of the reference sequence and 1% of the three other remaining bases at each position (Keck Oligo Synthesis Resource, Yale). A constant structured RNA cassette was appended to the template sequences to provide a reverse transcription primer binding site (Wilkinson et al., 2006). The ssDNA library was made double-stranded to allow for T7 transcription via low-cycle PCR using Taq DNA polymerase.\n\n### Co-transcriptional self-cleavage assay\n\nThe co-transcriptional self-cleavage reactions were carried out in triplicate by combining 20 \u03bcL 10\u00d7 T7 transcription buffer (500 \u03bcL 1 M Tris pH 7.5, 50 \u03bcL 1 M DTT, 20 \u03bcL 1 M Spermidine, 150 \u03bcL 1 M MgCl2, 280 \u03bcL RNase-free water), 4 \u03bcL rNTP (25 mM, NEB, Ipswich, Ma), 8 \u03bcL T7 RNA Polymerase-Plus enzyme mix (1600 U, Invitrogen, Waltham, MA), 160 \u03bcL nuclease-free water, and 8 \u03bcL of double-stranded DNA template (4 pmol, 0.5 \u03bcM PCR product) at 37\u00b0C for 30 min. The transcription and co-transcription self-cleavage reactions were quenched by adding 60 \u03bcL of 50 mM EDTA. The resulting RNA was purified and concentrated using Direct-zol RNA MicroPrep Kit with TRI-Reagent (Zymo Research, Irvine, CA), and eluted in 7 \u03bcL nuclease-free water. Concentrations were determined via absorbance at 260 nm (ThermoFisher NanoDrop, Waltham, MA), and normalized to 5 \u03bcM.\n\n### Reverse transcription and Illumina indexing PCR\n\nReverse transcription was carried out using a 5\u2032 RACE protocol using phased template switching oligo\u2019s (TSO1-4, Supplementary file 1) as described previously (Bendixsen et al., 2020). Briefly, reverse transcription reactions used 5 pmol RNA and 20 pmol of reverse transcription primer in a volume of 10 \u03bcL. RNA and primer were heated to 72\u00b0C for 3 min and cooled on ice. Reverse transcription was initiated by adding 4 \u03bcL SMARTScribe 5\u00d7 First-Strand Buffer (TaKaRa, San Jose, CA), 2 \u03bcL dNTP (10 mM), 2 \u03bcL DTT (20 mM), 2 \u03bcL phased template switching oligo mix (10 \u03bcM), and 2 \u03bcL SMARTScribe Reverse Transcriptase (200 units, TaKaRa). Four different template switching oligos (TSO 1\u20134) with different lengths and nucleotide compositions were used such that the first nucleotides read during sequencing are a balance of all four nucleotides, and the ribozymes are sequenced in four different frames relative to the primer. The mixture was incubated at 42\u00b0C for 90 min and the reaction was stopped by heating to 72\u00b0C for 15 min. The resulting cDNA was purified on a silica-based column (DCC-5, Zymo Research) and eluted into 7 \u03bcL water. Illumina adapter sequences and indexes were added using high-fidelity PCR. A unique index combination was assigned to each ribozyme and for each replicate. The PCR reaction contained 3 \u03bcL purified cDNA, 12.5 \u03bcL KAPA HiFi HotStart ReadyMix (2\u00d7, KAPA Biosystems, Wilmington, MA), 2.5 \u03bcL forward, 2.5 \u03bcL reverse primer (Illumina Nextera Index Kit), and 5 \u03bcL water. Several cycles of PCR were examined using gel electrophoresis and a PCR cycle was chosen that was still in logarithmic amplification, prior to saturation. Each PCR cycle consisted of 98\u00b0C for 10 s, 63\u00b0C for 30 s, and 72\u00b0C for 30 s. PCR DNA was purified on silica-based columns (DCC-5, Zymo Research) and eluted in 22.5 \u03bcL water. The final product was then verified using gel electrophoresis.\n\n### High-throughput sequencing\n\nThe indexed PCR products for all replicates were pooled together at equimolar concentrations based on absorbance at 260 nm. Paired-end sequencing reads were obtained for the pooled libraries using an Illumina HiSeq 4000 (Genomics and Cell Characterization Core Facility, University of Oregon).\n\n### Sequencing data analysis\n\nPaired-end sequencing reads were joined using FLASh, allowing \u2018outies\u2019 due to overlapping reads. The joined sequencing reads were analyzed using custom Julia scripts available at https://gitlab.com/bsu/biocompute-public/mut_12 (Beck, 2023). Our analysis implemented a sequence-length sliding window to screen for double mutant variants of a reference ribozyme. Nucleotide identities for each mutant were identified and then counted as either cleaved or uncleaved based on the presence or absence of the 5\u2032-cleavage product sequence. The RA was calculated as previously described (Kobori and Yokobayashi, 2016). Briefly, a FC was calculated for each genotype in each replicate as FC=Nclv/(Nclv+Nunclv). This value was normalized to the reference/wild-type FC as RA=FC/FCwt. The RA values were averaged across the three replicates and then plotted as a heatmap. Epistasis interactions for each double mutant (i, j) were quantified as previously described (Bendixsen et al., 2017), where $Epistasis(\\epsilon)=log\\frac{RAi,j}{(RAi)(RAj)}$ . In order to eliminate false positive detection of epistasis interactions, values were filtered to eliminate instances where the difference between the double and any of the single mutants was less than 1\u22123\u03c3 of the overall distribution of differences between the single and double mutant relative activities. Values greater than 1 indicate positive epistasis, and values less than 0 indicate negative epistasis. Mann-Whitney U test was used to determine the probability that epistasis or activity values of different structural elements were from the same distribution.\n\n### Correlation of thermodynamic stability of paired regions and observed mutational effects\n\nEach base-paired region was split into two separate RNA sequences containing only the nucleotides involved in base-pairing, omitting nucleotides belonging to stem loops. Complex formation between each pair of strands at was analyzed in Nupack using Serrra and Turner RNA energy parameters in order to obtain minimum free energy values for each paired region (37\u00b0C, [1 \u03bcM]). Using custom Julia scripts, the median RA for single mutations to each paired region was plotted as a function of the calculated free energy and a Pearson correlation coefficient was calculated.\n",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "5de00e46-bd2b-43d5-af9d-4442a80bcde1",
+      "submission_id": "7ccbb31f-78be-4f04-a5ee-fcecb78dbb98",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, https://ror.org/051fd9666 Case Western Reserve University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80360.sa0](https://doi.org/10.7554/eLife.80360.sa0)\n\nThis is a valuable study that provides compelling evidence for important nucleotides in five self-cleaving ribozymes. Epistasis analyses are novel in this field.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, https://ror.org/051fd9666 Case Western Reserve University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80360.sa1](https://doi.org/10.7554/eLife.80360.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"RNA sequence to structure analysis from comprehensive pairwise mutagenesis of multiple self-cleaving ribozymes\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Timothy Nilsen as Reviewing Editor and James Manley as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Philip Bevilacqua (Reviewer #1); Beno\u00eet Masquida (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAll the reviewers felt that the work was, in principle, suitable for publication in eLife. Nevertheless, the reviewers felt that the data was under-interpreted and that analyses from a 3D perspective would improve the paper significantly. Please see the reviews below. In this case, any revised manuscript will be subject to rereview.\n\nReviewer #1 (Recommendations for the authors):\n\n1. p8. The longer size of HDV does not explain the fewer reads for it because it is only slightly longer than the other ribozymes. What about the stability of the HDV ribozyme and RT not being able to read through it?\n\n2. p8. What is the minimum number of reads per single mutant in HDV? double mutants? For the latter, the average is only 50 (Figure S1) and the minimum appears to be ~10 reads. Can reliable data be attained with so few reads? What is the statistical significance for low read singles and double mutations?\n\n3. p8. more precise language is needed. Suggestions below. These words do not have to be used but some should be provided to guide the reader. \"We plotted the relative activity value as heat maps (Figures 1-5 a large plot, shows only blue color).\" \"We then used this data to calculate epistasis between pairs of mutations (Figures 1-5 insets red to blue colors)\".\n\n4. p8. \"many paired regions showed an anti-diagonal line of high activity double mutant variants with strong positive epistasis\". It would be helpful to dissect this anti-diagonal into two different distributions: WC+wobbles and mismatches. In other words, there are off-diagonal elements within the anti-diagonal square that are meaningful. This should provide an interesting sub-anativealysis in panel C; specifically, it will allow a look at double mutants that lead to the loss of a single base pair (off-diagonal elements within the anti-diagonal square) vs. a loss of two pairs (off-diagonal squares).\n\n5. Overall fraction cleaved varies wildly between the five ribozymes, from 0.19 to 0.68 (Table 1). It would be helpful to know what the fraction cleaved was for the wild-type ribozymes that emerged from the deep sequencing versus just making the wild-type ribozyme alone and measuring the bulk fraction cleaved from a radiolabeled experiment. This could help the authors discuss how sensitive or robust a given ribozyme is to mutations and then speculate why.\n\n6. Why is panel A different colors for different ribozymes? This seems unnecessary and random (e.g. two of them are blue).\n\n7. p9. Not only were the epistasis values for on- anti-diagonal \"consistently more positive than two mutations in positions that are not directly base-paired (off-diagonal)\" the latter were often negative (at least the mean was), which should be stated. i.e. \"more positive\" implies both distributions were positive.\n\n8. Figure 4. The inset for LA/LA is not positioned correctly on the main figure. A28-A31 are should be left-shifted. Moreover, epistasis between LA and LB could not be judged, as the authors would like the reader to do on p12. The authors should provide an LA/LB inset for the reader to look at. Additionally, the authors would like the reader to think about interactions of 1 and 46 but don't draw the pair in panel B, making this hard to visualize. The \"positive epistasis\" for G42U and A64G is missing in the inset which is entirely white for this square. And the A47:G57 showing \"positive epistasis for double mutants that result in an AU base pair\" doesn't make sense because this can happen with a single mutant at G57U.\n\n9. p14. The authors give details on epistasis between positions 20 and 25 but nothing is shown in the off-diagonals and this data cannot be had on the main diagram in A.\n\n10. p10. The discussion that \"differences between epistasis in short and long base-paired regions suggests that the thermodynamic stability of each paired region is important for the observed activity\" is clearly supported by the data but should be explained. Short regions cannot withstand the loss of one and especially two base pairs because they are short and once broken cannot be broken again. Bevilacqua and Herschlag have discussed this and could be consulted and referenced. 1. Moody, E. M. and Bevilacqua, P. C. (2003). Folding a stable DNA motif involves a highly cooperative network of interactions. J. Am. Chem. Soc. 125, 16285-16293. 2. Kraut, D. A., Carroll, K. S. and Herschlag, D. (2003). Challenges in enzyme mechanism and energetics. Annu. Rev. Biochem. 72, 517-571.\n\n11. Methods. The authors did reverse transcription. From Table S1, it appears that extra bases were appended to the 3'end of each ribozyme to provide an RT primer binding site [it appears this way from the first unbolded bases listed at the 5'-end of the template in Table S1]. If so how do those bases affect the fraction cleaved of the wild-type? And then the mutants? See comment 5 above. Also, I was unable to understand how the sequence of the RT primer in Table S1 works with the templates.\n\n12. In the epistasis equation, which should be numbered, what are the authors taking the log of? RA? Shouldn't there be a plus sign between the two terms in the denominator? For e.g. assume additivity RAi = RAj = 10^-1, and RAij = 10^-2, we need a plus sign to have this come out to unity; as it would come out to -2. Also, how does it follow that negative epistasis is less than 0? Shouldn't negative be >1 and positive be <1?\n\n13. We could see some trend in the length of paired regions and the intensity of the epistasis effect, but it was hard to tell whether the negative correlation between the median deleterious effects of single mutations and the minimum free energy of the paired regions was significant from the plot in Supplementary Figure 3 and the given Pearson Correlation = -0.53. Also, it may be good to address and explain the difference in the distribution of epistasis value of CPEB3 P1, P2, and P4, which all have 7 base pairs but are very different in the distribution of epistasis value.\n\nReviewer #2 (Recommendations for the authors):\n\nRegarding the CPEB3 ribozyme, an open question is about the role of the U21-U42 base pair. Figure 1 indicates that positive epistasis has been measured for some sequence combinations. It would be very sound to frame this region of the heat map together with the T1 interaction to discuss the heuristic power of the presented approach since the CPEB3 ribozyme is the only ribozyme studied in this manuscript for which no crystal structure has yet been made available.\n\nReviewer #3 (Recommendations for the authors):\n\n1) For example, the way the ribozymes have been randomized is already described in Kobori and Yokobayashi (2016). On the other side, it would be necessary to provide more experimental information on the way the template switching reverse transcription is performed. This is not well explained as there is no clear explanation for the usage of the TSO1-4 oligos\u2026 The authors should rewrite the experimental method section of their article so that anybody who wants to use this approach could do it without struggling\u2026\n\n2) While some of this 3D information is seldom mentioned in the text, there is no easy way for the reader to find this information in the data provided. A figure exemplifying some of the key 3D interactions of these ribozymes would be most useful.\n\nFor example, it would be nice to have more structural details by eventually showing some of the results within the context of the 3D structures of each ribozyme.\n\nFor instance, the Watson-Crick base pair interaction G1C-C46G between LA/LB in the hairpin ribozyme could be shown\u2026 The same thing with the base pair C20G-G25C in the hammerhead ribozyme. In fact, the 2D structure of the hammerhead ribozyme could be improved as it does not correspond to the active form.\n\nThe authors should also provide more data information (as well as supportive figures) about the tertiary interactions that involve non-canonical base pairs and that show positive epistasis\u2026 After all, this is a piece of information that has not yet been obtained before for these ribozymes as it cannot be easily obtained by other approaches.\n\n3) The authors could have certainly enhanced dramatically the scope of their article by trying to validate the structure of a self-cleaving ribozyme for which the 3D structure is not known yet. This would have provided a clear test for their approach and would have enhanced dramatically their claim that it could complement chemical and enzymatic probing.\n",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dec1eaad-86b8-4a44-81b0-464c2702e21e",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C1",
+      "claim": "Self-cleaving ribozymes are RNA molecules that catalyze the cleavage of their own phosphodiester backbones.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-cleaving ribozymes are RNA molecules that catalyze the cleavage of their own phosphodiester backbones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement presented in the abstract that defines what self-cleaving ribozymes are.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "dc9f600d-9132-4be1-b949-1b8ab295a8d6",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C2",
+      "claim": "Self-cleaving ribozymes are found in all domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "These ribozymes are found in all domains of life and are also a tool for biotechnical and synthetic biology applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about the distribution of self-cleaving ribozymes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "e7862dd1-49d9-4c69-adab-4e5c5178df06",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C3",
+      "claim": "Self-cleaving ribozymes are a tool for biotechnical and synthetic biology applications.",
+      "claim_type": "EXPLICIT",
+      "source": "These ribozymes are found in all domains of life and are also a tool for biotechnical and synthetic biology applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about the applications of self-cleaving ribozymes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "61926639-b4f7-4412-b65c-b8006dc01de3",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C4",
+      "claim": "The study determined the relative activity for every possible single and double mutant of five self-cleaving ribozymes using a high-throughput experimental approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used a high-throughput experimental approach to determine the relative activity for every possible single and double mutant of five self-cleaving ribozymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology and scope of the study, which is supported by the data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "cc229e2f-91d2-4add-a204-c234d6cc78d8",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C5",
+      "claim": "The study comprehensively identified non-additive effects between pairs of mutations (epistasis) for all five ribozymes.",
+      "claim_type": "EXPLICIT",
+      "source": "From this data, we comprehensively identified non-additive effects between pairs of mutations (epistasis) for all five ribozymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the epistasis calculations and analyses presented throughout the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "e31693b2-51a6-48be-b510-512b53ee7d37",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C6",
+      "claim": "Heatmap-based visualization of the data revealed patterns indicating structural features of the ribozymes including paired regions, unpaired loops, non-canonical structures, and tertiary structural contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Heatmap-based visualization of the data revealed patterns indicating structural features of the ribozymes including paired regions, unpaired loops, non-canonical structures, and tertiary structural contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the heatmap figures (Figures 1-5) and the analysis of structural features throughout the results section.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "0c316331-2931-4907-a091-b614244877d7",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C7",
+      "claim": "The data revealed signatures of functionally critical nucleotides involved in catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The data also revealed signatures of functionally critical nucleotides involved in catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis of catalytic residues presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "2d8362f1-5156-4d36-8a65-3ec5acb4065c",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C8",
+      "claim": "Machine learning approaches have made considerable advancements in predicting an RNA structure from a sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, machine learning approaches have made considerable advancements in predicting an RNA structure from a sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent literature on machine learning approaches for RNA structure prediction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "ac0bed77-c1ac-4d4e-9450-4c41a7a56bf4",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C9",
+      "claim": "Machine learning approaches for RNA structure prediction rely heavily on crystal structures of RNA molecules and sequence conservation of homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these approaches rely heavily on crystal structures of RNA molecules and sequence conservation of homologs, both of which are limited for RNA molecules compared to proteins (Calonaci et al., 2020; Townshend et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature discussing the limitations of current machine learning approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "cd1b4589-6255-4e92-8b40-9f31e971c228",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C10",
+      "claim": "Crystal structures and sequence conservation data are more limited for RNA molecules compared to proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these approaches rely heavily on crystal structures of RNA molecules and sequence conservation of homologs, both of which are limited for RNA molecules compared to proteins (Calonaci et al., 2020; Townshend et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature discussing the relative availability of structural data for RNA versus proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "0b12bc3b-87bd-4ff9-8cc0-0584518ac9cc",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C11",
+      "claim": "Self-cleaving ribozymes were first discovered in viruses and viroids.",
+      "claim_type": "EXPLICIT",
+      "source": "They were first discovered in viruses and viroids, but numerous families of self-cleaving ribozymes have since been discovered in all domains of life (Prody et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This historical statement is supported by a citation to the original discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "6b944201-aa47-4dc2-9ef6-cdc62a13a3e1",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C12",
+      "claim": "Numerous families of self-cleaving ribozymes have been discovered in all domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "They were first discovered in viruses and viroids, but numerous families of self-cleaving ribozymes have since been discovered in all domains of life (Prody et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about the widespread distribution of self-cleaving ribozymes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "32134ad1-b261-430e-a895-660632436ef8",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C13",
+      "claim": "The CPEB3 ribozyme was discovered in the human genome and found to be highly conserved in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The CPEB3 ribozyme, for example, was discovered in the human genome and found to be highly conserved in mammals (Bendixsen et al., 2021; Salehi-Ashtiani et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies that discovered and characterized the CPEB3 ribozyme.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "2d286253-0716-4c55-a4a7-293bfb6452ea",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C14",
+      "claim": "Hammerhead and twister ribozymes are found broadly distributed across eukaryotic and prokaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Other self-cleaving ribozymes, such as the hammerhead and twister ribozymes, are found broadly distributed across eukaryotic and prokaryotic genomes (Perreault et al., 2011; Roth et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies documenting the distribution of these ribozymes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "6f5980f8-448c-42c3-8a32-eab4da4b8d46",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C15",
+      "claim": "Self-cleaving ribozymes have been used for several bioengineering applications.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to being widespread across the tree of life, self-cleaving ribozymes have also been used for several bioengineering applications (Liang et al., 2011; Peng et al., 2021; Wei and Smolke, 2015; Zhong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies demonstrating bioengineering applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "8b8d123b-a21c-47d3-8919-b7acf8141ed3",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C16",
+      "claim": "Self-cleaving ribozymes are being combined with aptamers to develop synthetic gene regulatory devices.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, self-cleaving ribozymes are being combined with aptamers to develop synthetic gene regulatory devices, which have biotechnical and biomedical applications where ligand-dependent control of gene expression is desired (Kobori et al., 2017; Kobori et al., 2015; Stifel et al., 2019; Townshend et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies developing synthetic gene regulatory devices.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "70e5ef49-d5f8-4124-a92b-97837022f09b",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C17",
+      "claim": "Most self-cleaving ribozymes are fairly small (<200 nt).",
+      "claim_type": "EXPLICIT",
+      "source": "Most self-cleaving ribozymes are fairly small (<200 nt), and genetic variants can be made by chemical synthesis of a single DNA oligonucleotide that is then used as a template for in vitro transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the typical size range of self-cleaving ribozymes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "eb5e3056-8817-4179-9e83-8ac142d16835",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C18",
+      "claim": "The self-cleavage activity of ribozymes requires a precise three-dimensional structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The self-cleavage activity of the ribozyme requires a precise three-dimensional structure, and therefore activity can be used as a sensitive indirect readout of native structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the relationship between RNA structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "a50b5c1c-904a-43c7-be28-c41a1dbf13df",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C19",
+      "claim": "Activity can be used as a sensitive indirect readout of native structure in ribozymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The self-cleavage activity of the ribozyme requires a precise three-dimensional structure, and therefore activity can be used as a sensitive indirect readout of native structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between structure and function in ribozymes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "7d8efee6-bba1-4747-abc1-18b7cff82c11",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C20",
+      "claim": "Mutations that disrupt the native structure are detected as reduced activity compared to the unmutated 'wild-type' ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that disrupt the native structure are detected as reduced activity compared to the unmutated 'wild-type' ribozyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the principle that structural disruption leads to functional impairment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "42c089c8-7406-4d48-b98e-141c5ab3c533",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C21",
+      "claim": "Several methods have been developed to enable the detection of ribozyme function by high-throughput sequencing of biochemical reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Several methods have been developed to enable the detection of ribozyme function by high-throughput sequencing of biochemical reactions (Bendixsen et al., 2019; Hayden, 2016; Kobori and Yokobayashi, 2016; Shen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies developing high-throughput sequencing methods for ribozyme analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "16423004-1ff0-4a0f-a8cb-e16e2100741f",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C22",
+      "claim": "For self-cleaving ribozymes, each read from the data reports both the mutations and whether or not that molecule was reacted (cleaved) or unreacted (uncleaved).",
+      "claim_type": "EXPLICIT",
+      "source": "For self-cleaving ribozymes, each read from the data reports both the mutations and whether or not that molecule was reacted (cleaved) or unreacted (uncleaved).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nature of the sequencing data obtained from the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "301ef5fb-5aad-4fe5-abf4-0cd3e6245a61",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C23",
+      "claim": "Pairwise epistasis measures deviations in the mutational effects of double mutants relative to the effects of each individual mutation (assuming an additive model of mutational effects).",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, it can be useful to calculate pairwise epistasis, which measures deviations in the mutational effects of double mutants relative to the effects of each individual mutation (assuming an additive model of mutational effects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement explaining what pairwise epistasis measures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "8acea747-0341-49aa-8743-87814b6dda0f",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C24",
+      "claim": "In the case of a base pair, each single mutation would disrupt the base-pairing interaction, destabilizing the catalytically active RNA structure and reducing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the case of a base pair, each single mutation would disrupt the base-pairing interaction, destabilizing the catalytically active RNA structure and reducing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about how mutations affect base pairing and RNA structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "0a9cadc6-b034-40c8-b6b8-f2a4ac5443c4",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C25",
+      "claim": "If two mutants together restore a base pair, the RA of the double mutant would have much higher activity than expected from the additive effects of the individual mutations (positive epistasis).",
+      "claim_type": "EXPLICIT",
+      "source": "However, if two mutants together restore a base pair, the RA of the double mutant would have much higher activity than expected from the additive effects of the individual mutations (positive epistasis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the principle of compensatory mutations in base pairs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "e3b78aa0-fcfd-4310-8855-67a956dc2780",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C26",
+      "claim": "Double mutants at non-paired nucleotides tend to have a more reduced activity than expected from each individual mutation (negative epistasis).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to paired nucleotides, double mutants at non-paired nucleotides tend to have a more reduced activity than expected from each individual mutation (negative epistasis) (Bendixsen et al., 2017; Li et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies observing this pattern.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "1a56350e-a41f-4fcd-8194-b6c3da624fff",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C27",
+      "claim": "The ribozymes studied include a mammalian CPEB3 ribozyme, a hepatitis delta virus (HDV) ribozyme, a twister ribozyme from Oryza sativa, a hairpin ribozyme derived from the satellite RNA from tobacco ringspot virus, and a hammerhead ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The ribozymes studied include a mammalian CPEB3 ribozyme, a hepatitis delta virus (HDV) ribozyme, a twister ribozyme from Oryza sativa, a hairpin ribozyme derived from the satellite RNA from tobacco ringspot virus, and a hammerhead ribozyme (Bendixsen et al., 2021; Burke and Greathouse, 2005; Chadalavada et al., 2007; Liu et al., 2014; M\u00fcller et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific ribozymes studied, supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "b5230595-777a-4910-a763-d39d7e524a69",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C28",
+      "claim": "For each reference ribozyme, a single DNA oligo template library was synthesized with 97% wild-type nucleotides at each position, and 1% of each of the three other nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "For each reference ribozyme, a single DNA oligo template library was synthesized with 97% wild-type nucleotides at each position, and 1% of each of the three other nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mutagenesis strategy used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "64e06a4f-c51b-4977-9b63-e236c10dfad8",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C29",
+      "claim": "This mutagenesis strategy was expected to produce all possible single and double mutants, as well as a random sampling of combinations of three or more mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutagenesis strategy was expected to produce all possible single and double mutants, as well as a random sampling of combinations of three or more mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the expected outcome of the mutagenesis strategy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "454a5e49-9814-4d36-a4ac-97916813eacb",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C30",
+      "claim": "All ribozyme constructs studied cleave near the 5\u2032-end of the RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "All ribozyme constructs studied cleave near the 5\u2032-end of the RNA, and a template switching reverse transcription protocol was used to append a common primer binding site to both cleaved and uncleaved molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a common feature of the ribozyme constructs used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "bd5f2d04-8b2f-4b60-8a15-261696e349c3",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C31",
+      "claim": "Many paired regions showed an anti-diagonal line of high-activity double mutant variants with strong positive epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this heatmap layout, many paired regions showed an anti-diagonal line of high-activity double mutant variants with strong positive epistasis (Figures 1\u20145, insets, red to blue plots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by the heatmap visualizations in Figures 1-5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "f8ccaa9c-01a1-45bc-bf04-17acade387bc",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C32",
+      "claim": "Pairs of mutations off the anti-diagonal tended to show negative or non-positive epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, pairs of mutations off the anti-diagonal tended to show negative or non-positive epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by the epistasis data shown in the heatmaps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "d37e3c7b-c6bf-43a2-97d9-e8757fbf3290",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C33",
+      "claim": "Pseudoknot elements that involve Watson-Crick base pairs showed the pattern of positive epistasis on the anti-diagonal.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudoknot elements that involve Watson-Crick base pairs also showed this pattern, including the single base pair T1 element in CPEB3 (Figure 1) and the two base pair T1 element in HDV (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "a9136ece-e0a0-4a50-8867-0e94f7363811",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C34",
+      "claim": "For all ribozymes, disrupting two base pairs resulted in negative epistasis (mean of distribution).",
+      "claim_type": "EXPLICIT",
+      "source": "For all ribozymes, the analysis revealed a clear trend. On average, disrupting two base pairs resulted in negative epistasis (mean of distribution), disrupting one base pair shifted the distribution toward more positive epistasis values, and the highest epistasis values (mean and max) were found for double mutants that result in zero disrupted base pairs because the two mutations together create a new Watson-Crick or GU Wobble pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the violin plot analysis shown in Figures 1-5, panel C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "c207c154-20d5-4569-98db-1139ef5c6580",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C35",
+      "claim": "Disrupting one base pair shifted the distribution toward more positive epistasis values.",
+      "claim_type": "EXPLICIT",
+      "source": "For all ribozymes, the analysis revealed a clear trend. On average, disrupting two base pairs resulted in negative epistasis (mean of distribution), disrupting one base pair shifted the distribution toward more positive epistasis values, and the highest epistasis values (mean and max) were found for double mutants that result in zero disrupted base pairs because the two mutations together create a new Watson-Crick or GU Wobble pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the violin plot analysis shown in Figures 1-5, panel C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "cf942dc9-0eb0-4a1e-a6f1-f6d99e63461e",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C36",
+      "claim": "The highest epistasis values (mean and max) were found for double mutants that result in zero disrupted base pairs because the two mutations together create a new Watson-Crick or GU Wobble pair.",
+      "claim_type": "EXPLICIT",
+      "source": "For all ribozymes, the analysis revealed a clear trend. On average, disrupting two base pairs resulted in negative epistasis (mean of distribution), disrupting one base pair shifted the distribution toward more positive epistasis values, and the highest epistasis values (mean and max) were found for double mutants that result in zero disrupted base pairs because the two mutations together create a new Watson-Crick or GU Wobble pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the violin plot analysis shown in Figures 1-5, panel C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "4f1cfe0c-c4a1-4cb3-bba5-83a83aaed0ab",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C37",
+      "claim": "This trend was observed for paired regions in every ribozyme, and in all cases the distributions were significantly different (p<0.05\u20130.001, Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "This trend was observed for paired regions in every ribozyme, and in all cases the distributions were significantly different (p<0.05\u20130.001, Mann-Whitney U test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the epistasis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "743149a7-e7f4-419e-9012-239263e0dab8",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C38",
+      "claim": "Short-paired regions showed the largest differences in the distributions of epistatic effects for on-diagonal and off-diagonal double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-paired regions showed the largest differences in the distributions of epistatic effects for on-diagonal and off-diagonal double mutants, while longer-paired regions showed small differences in these distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "4a13a50c-95ee-43b6-8abe-9182ee9b2888",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C39",
+      "claim": "Longer-paired regions showed small differences in the distributions of epistatic effects for on-diagonal and off-diagonal double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-paired regions showed the largest differences in the distributions of epistatic effects for on-diagonal and off-diagonal double mutants, while longer-paired regions showed small differences in these distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "5b6f1a8e-0f25-45e3-85a8-0bee36ed6c31",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C40",
+      "claim": "Short-paired regions P3 in CPEB3 and HDV (3 bp), and T1 in the twister (4 bp) showed very large differences in the mean of the distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, short-paired regions P3 in CPEB3 and HDV (3 bp), and T1 in the twister (4 bp) showed very large differences in the mean of the distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "b24e9c39-8dac-4909-8288-e83c4355670e",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C41",
+      "claim": "The largest paired region (HDV P4, 14 bp) showed a very small difference between the distribution of epistasis values found on-diagonal and off-diagonal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the largest paired region (HDV P4, 14 bp) showed a very small difference between the distribution of epistasis values found on-diagonal and off-diagonal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "12407508-81a7-49cb-b822-26bb743e34d3",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C42",
+      "claim": "Losing one base pair in HDV P4 was not deleterious to the HDV ribozyme activity under the experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be rationalized because losing one base pair was not deleterious to the HDV ribozyme activity under our experimental conditions (Figure 2), and this does not allow for positive epistasis upon a second mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the activity data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "fd5e6e99-fc1f-4b1e-85f4-6b76fa9edeaf",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C43",
+      "claim": "The effects of mutations, and their additivity, have been shown to be dependent on the local thermodynamics of the structured region.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results are consistent with other observations in both RNA and proteins, where it has been observed that the effects of mutations, and their additivity, have been shown to be dependent on the local thermodynamics of the structured region (Kraut et al., 2003; Moody and Bevilacqua, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on the thermodynamic dependence of mutational effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "58832ecf-95e0-4396-a6e5-10be73defba6",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C44",
+      "claim": "There is a significant negative correlation between the median deleterious effects of single mutations and the minimum free energy of the paired regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant negative correlation between the median deleterious effects of single mutations and the minimum free energy of the paired regions (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "95207b18-95f4-4074-91a3-767ac221cfa0",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C45",
+      "claim": "Self-cleaving ribozymes often utilize a concerted acid-base catalysis mechanism where specific nucleobases act as proton donors (acid) or acceptors (base).",
+      "claim_type": "EXPLICIT",
+      "source": "Self-cleaving ribozymes often utilize a concerted acid-base catalysis mechanism where specific nucleobases act as proton donors (acid) or acceptors (base) (Jimenez et al., 2015), and mutations at these positions abolish activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature on ribozyme catalytic mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "86e31d4a-1f35-483b-ab61-81fc6aaf78c7",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C46",
+      "claim": "Mutations at catalytic positions abolish activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-cleaving ribozymes often utilize a concerted acid-base catalysis mechanism where specific nucleobases act as proton donors (acid) or acceptors (base) (Jimenez et al., 2015), and mutations at these positions abolish activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the importance of catalytic residues.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "c86ad11a-19a3-4f13-b1f0-4211baead55e",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C47",
+      "claim": "Comprehensive pairwise mutations can potentially distinguish between catalytic residues that cannot be rescued by a second mutation, and structurally important nucleotides that can be rescued (positive epistasis).",
+      "claim_type": "EXPLICIT",
+      "source": "Comprehensive pairwise mutations, on the other hand, can potentially distinguish between catalytic residues that cannot be rescued by a second mutation, and structurally important nucleotides that can be rescued (positive epistasis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential of comprehensive pairwise mutation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "3fca0dde-4b3d-4fbd-906c-e315929882e1",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C48",
+      "claim": "The catalytic cytosines of the CPEB3 (C57) and HDV (C75) act as proton donors due to perturbed pKa values.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic cytosines of the CPEB3 (C57) and HDV (C75) act as proton donors due to perturbed pKa values (Nakano et al., 2000; Skilandat et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies characterizing these catalytic residues.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "b07af253-5467-4bcf-89c6-0577de0be32e",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C49",
+      "claim": "For the twister ribozyme, the guanosine at position G39 acts as a general base, and the adenosine at position A1 acts as a general acid.",
+      "claim_type": "EXPLICIT",
+      "source": "For the twister ribozyme (Figure 3), the guanosine at position G39 acts as a general base, and the adenosine at position A1 acts as a general acid (Wilson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study characterizing the catalytic mechanism of the twister ribozyme.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "a7f57a6a-1e86-48d6-9a7c-7e47adc07320",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C50",
+      "claim": "The catalytic nucleotides for the Hammerhead ribozyme are the Guanosines located at positions G25 and G39.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic nucleotides for the Hammerhead ribozyme (Figure 5) are the Guanosines located at positions G25 and G39 (Scott et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study identifying the catalytic residues of the hammerhead ribozyme.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "5a175971-238f-4f3c-b97b-41da4a8c904d",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C51",
+      "claim": "The hairpin ribozyme contains catalytic nucleotides at positions G29 and A59.",
+      "claim_type": "EXPLICIT",
+      "source": "The hairpin ribozyme (Figure 4) contains catalytic nucleotides at positions G29 and A59 (Wilson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study identifying the catalytic residues of the hairpin ribozyme.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "7e3f864b-7ee0-4d45-8057-8042e5b2bb00",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C52",
+      "claim": "In the RA heatmaps, the columns and rows associated with catalytic nucleotides result in low activity values.",
+      "claim_type": "EXPLICIT",
+      "source": "In the RA heatmaps, the columns and rows associated with these nucleotides result in low activity values (Figures 1\u20145, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the heatmap data shown in Figures 1-5 and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "903540ae-f40b-4516-adfe-3ad179e5a003",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C53",
+      "claim": "There are no possible compensatory mutations for catalytic residues in this data set.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that because there is complete coverage of all double mutants in this data set, we can be certain that there are no possible compensatory mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comprehensive coverage of double mutants in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "ed30cfb0-72ba-4f21-b888-933f0bf4af0c",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C54",
+      "claim": "Ribozymes with mutations to nucleotides found in terminal loops that are not involved in tertiary structure elements showed high RA for most single and double mutants, and essentially no epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribozymes with mutations to nucleotides found in terminal loops that are not involved in tertiary structure elements showed high RA for most single and double mutants, and essentially no epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data for terminal loops shown in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "eb9912f6-0238-440c-8dd4-3cce56e67823",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C55",
+      "claim": "L4 of CPEB3, L4 of HDV, and L1 and L3 of the hairpin ribozyme are terminal loops on the periphery of the ribozyme not involved in structural contacts with other nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not surprising if these loops reside on the periphery of the ribozyme and are not involved in structural contacts with other nucleotides. This is the case for L4 of CPEB3 (Figure 1), L4 of HDV (Figure 2), and L1 and L3 of the hairpin ribozyme (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the mutational data and structural knowledge.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "77ba30e1-5e53-44fa-a1c8-e14be01f589a",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C56",
+      "claim": "The internal loops LA and LB of the hairpin ribozyme are structurally important.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal loops LA and LB of the hairpin ribozyme are structurally important (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mutational data and structural information.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "33ae23a0-7a2d-4ef1-8b5e-4b6e14db922b",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C57",
+      "claim": "Interactions between nucleotides within LB include six non-Watson-Crick base-pairing interactions that are important for the formation of an active ribozyme structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between nucleotides within LB include six non-Watson-Crick base-pairing interactions that are important for the formation of an active ribozyme structure (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural information shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"IMAGE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "60a624e6-3bce-4ca5-a074-86dd1b752d9a",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C58",
+      "claim": "Several non-canonical base-base and sugar-base hydrogen bonds between nucleotides within LA are important for the formation of the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Several non-canonical base-base and sugar-base hydrogen bonds between nucleotides within LA are also important for the formation of the active site (Fedor, 2000; Wilson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies characterizing the hairpin ribozyme structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "f3b68dc5-fa4e-4850-ac72-ef8d64861e70",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C59",
+      "claim": "Docking between LA and LB is necessary for the formation of a catalytically active ribozyme and is facilitated by a Watson-Crick base pair between nucleotides numbered G1 and C46.",
+      "claim_type": "EXPLICIT",
+      "source": "Docking between LA and LB is necessary for the formation of a catalytically active ribozyme and is facilitated by a Watson-Crick base pair between nucleotides numbered G1 and C46 in the version of the ribozyme used here (Rupert and Ferr\u00e9-D'Amar\u00e9, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study characterizing the hairpin ribozyme structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "b8bd22e1-33d0-4867-b360-4257d20b099b",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C60",
+      "claim": "Most single mutations within LA and LB resulted in low self-cleavage activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to terminal loop regions, most single mutations within LA and LB resulted in low self-cleavage activity in our data (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the activity data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "087c4f8a-7b97-4f41-bbad-d1f9bedea1cb",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C61",
+      "claim": "The double mutants within and between loop A and loop B show several instances of strong positive epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the double mutants within and between loop A and loop B show several instances of strong positive epistasis (Figure 4\u2014figure supplement 1C), and the distributions of epistasis within and between these loops are significantly different than the terminal loops that are not structurally important (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the epistasis data shown in Figure 4\u2014figure supplement 1C and Figure 4D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "0137571a-1f83-4fbe-a809-f1065decc618",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C62",
+      "claim": "The distributions of epistasis within and between loop A and loop B are significantly different than the terminal loops that are not structurally important.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the double mutants within and between loop A and loop B show several instances of strong positive epistasis (Figure 4\u2014figure supplement 1C), and the distributions of epistasis within and between these loops are significantly different than the terminal loops that are not structurally important (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the statistical comparison shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "537964c9-faff-4c7b-8840-c3aa2d00f519",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C63",
+      "claim": "The double mutant G1C and C46G shows strong epistasis suggesting that swapping a C-G base pair for the G-C base pair can restore activity by facilitating docking between the two loops.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the double mutant G1C and C46G shows strong epistasis suggesting that swapping a C-G base pair for the G-C base pair can restore activity by facilitating docking between the two loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the epistasis data and structural knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "3d96b158-d959-4131-96a0-c36cc41f7d0f",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C64",
+      "claim": "Crystal structures of the sTRSV ribozyme show a base pair between the nucleotides corresponding to the nucleotides numbered here as C20 and G25 in the ribozyme construct used for the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of the sTRSV ribozyme show a base pair between the nucleotides corresponding to the nucleotides numbered here as C20 and G25 in the ribozyme construct used for our experiments (Chi et al., 2008; Martick and Scott, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to crystal structure studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "fb5da690-5c39-4038-a5f4-c4071a2ab945",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C65",
+      "claim": "C20 and G25 showed strong positive epistasis for the mutations C20G and G25C, which substitutes a G:C base pair for the original C:G base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "These two nucleotides showed strong positive epistasis for the mutations C20G and G25C, which substitutes a G:C base pair for the original C:G base pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the epistasis data for the hammerhead ribozyme.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "c9a8d0c3-172a-4c5a-b806-f8a25d73a72a",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C66",
+      "claim": "All other single and double mutants in the CUGA turn region showed low activity, and no instances of strong positive epistasis within or between this motif.",
+      "claim_type": "EXPLICIT",
+      "source": "All other single and double mutants in this region showed low activity, and no instances of strong positive epistasis within or between this motif (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "0dbb5dd5-0e92-476e-94b4-73216fecf1f0",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C67",
+      "claim": "Type III hammerhead ribozymes contain tertiary interactions between nucleotides in the loops of P1 and P2 that are implicated in structural organization of the catalytic core.",
+      "claim_type": "EXPLICIT",
+      "source": "Type III hammerhead ribozymes, like the one used in this study, contain tertiary interactions between nucleotides in the loops of P1 and P2 that are implicated in structural organization of the catalytic core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Type III hammerhead ribozymes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "04165e29-b16d-426b-8c03-aea3a7dba575",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C68",
+      "claim": "A crystal structure of the loop-loop interaction in hammerhead ribozyme showed a network of interhelical non-canonical base pairs and stacks, with several nucleobases in stem-loop I interacting with more than one nucleobase in stem-loop II.",
+      "claim_type": "EXPLICIT",
+      "source": "A crystal structure of this loop-loop interaction showed a network of interhelical non-canonical base pairs and stacks, with several nucleobases in stem-loop I interacting with more than one nucleobase in stem-loop II (Chi et al., 2008; Martick and Scott, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to crystal structure studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "507aa753-b3db-4d2e-85c3-61d4a343c18b",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C69",
+      "claim": "There are numerous different loop sequences in naturally occurring hammerhead ribozymes indicating that this loop-loop interaction can be formed by a variety of different sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are numerous different loop sequences in naturally occurring hammerhead ribozymes indicating that this loop-loop interaction can be formed by a variety of different sequences (Burke and Greathouse, 2005; Perreault et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies analyzing natural hammerhead ribozyme sequences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "22668b0f-9fc3-400e-bf78-395a0eff3645",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C70",
+      "claim": "Most individual and double mutations in the hammerhead loop regions do not reduce activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, we found that most individual and double mutations do not reduce activity (Figure 5), and double mutants do not show positive epistasis (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5 and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "54201038-41e8-48ef-bf24-96181451b93e",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C71",
+      "claim": "The multiple interactions between the loops compensate for mutations that break a single interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the multiple interactions between the loops compensate for mutations that break a single interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mutational data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "7288a799-2d88-4a5e-b541-ad6bbeaf6b0d",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C72",
+      "claim": "The mutational robustness of the hammerhead loops has been exploited in bioengineering applications, where insertion of an aptamer into one of the loops and randomization of the other allowed for the selection of synthetic riboswitches.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the mutational robustness of these loops has been exploited in bioengineering applications, where insertion of an aptamer into one of the loops and randomization of the other allowed for the selection of synthetic riboswitches (Townshend et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study developing synthetic riboswitches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "88e18071-92c3-4e6a-a2f7-b156e8057484",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C73",
+      "claim": "There is support for a two-nucleotide T1 pseudoknot in CPEB3 involving a non-canonical U-U base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find support for a two-nucleotide T1 pseudoknot in CPEB3 involving a non-canonical U-U base pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mutational data for CPEB3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "f6d3e088-ab17-4044-ab5a-e6e0fd5c3174",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C74",
+      "claim": "The U:U base pair in CPEB3 T1 has been confirmed and implicated as a magnesium binding site based on NMR and Tb3+ cleavage data.",
+      "claim_type": "EXPLICIT",
+      "source": "While no crystal structure of the CPEB3 ribozyme has been solved, this U:U base pair has been confirmed and implicated as a magnesium binding site based on NMR and Tb3+ cleavage data (Skilandat et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study characterizing the CPEB3 structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "97d69176-c1b9-4522-aae6-1b59e6879450",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C75",
+      "claim": "G:C and C:G base pairs can support activity in the CPEB3 T1 pseudoknot.",
+      "claim_type": "EXPLICIT",
+      "source": "In our data, we find that G:C and C:G base pairs can support activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mutational data for CPEB3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "76361ffb-1c63-4139-ab09-36c645683f1f",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C76",
+      "claim": "Every single and double mutant was observed for all ribozymes in each replicate, indicating 100% coverage of these mutant classes for all data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed every single and double mutant for all ribozymes in each replicate, indicating 100% coverage of these mutant classes for all of our data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the completeness of the sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "a05e3168-5f55-40a8-9776-034a439acc1c",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C77",
+      "claim": "The HDV data showed the lowest depth, possibly because it is a larger ribozyme (87 nt), and fewer reads mapped to the single and double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The HDV data showed the lowest depth, possibly because it is a larger ribozyme (87 nt), and fewer reads mapped to the single and double mutants (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the read depth data shown in Table 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "ca294a7d-e122-47e8-835c-9b40ddd9b35b",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C78",
+      "claim": "All pairwise mutations in a 42-nucleotide region of the same twister ribozyme were previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, all pairwise mutations in a 42-nucleotide region of the same twister ribozyme were previously reported (Kobori and Yokobayashi, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "dee659e7-19b2-493d-a71e-c5de7e6f32aa",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C79",
+      "claim": "Previous experiments on the twister ribozyme used a later transcriptional time point (2 hr) and lower magnesium concentration (6 mM) compared to the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to our experiments, these previous experiments used a later transcriptional time point (2 hr) and lower magnesium concentration (6 mM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes differences in experimental conditions between studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "a7d060d0-3386-497f-a194-7e62ff9dbce9",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C80",
+      "claim": "The results from the previous twister ribozyme study were highly similar to the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "The results were highly similar, and the authors were able to identify paired regions in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous work supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "70beafb5-241e-418a-bf10-fa05e8e49b4d",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C81",
+      "claim": "All pairwise mutations in the glmS ribozyme were analyzed using a custom-built fluorescent RNA array.",
+      "claim_type": "EXPLICIT",
+      "source": "In another prior work, all pairwise mutations in the glmS ribozyme were analyzed using a custom-built fluorescent RNA array (Andreasson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "6d7c1747-6892-4402-a72f-48f9a983e679",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C82",
+      "claim": "The fluorescent RNA array approach enabled differentiating both very slow and very fast self-cleaving variants by monitoring self-cleavage over short and long time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "The power of this approach is that they were able to monitor self-cleavage over short and long time scales, which enables differentiating both very slow and very fast self-cleaving variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of the fluorescent RNA array method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "903c9752-b7c7-4418-9ee5-5bfd4e9e9b9d",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C84",
+      "claim": "The pairwise epistasis analysis adds an additional approach to extract information from high-throughput sequencing-based analysis of self-cleaving ribozymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The pairwise epistasis analysis presented here adds an additional approach to extract information from such high-throughput sequencing-based analysis of self-cleaving ribozymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the contribution of the current study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "fbc1afe7-a25b-47cd-8a62-c4500cdb6132",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C85",
+      "claim": "Unlike the rescue analysis, which can only identify positive interactions, the ability to detect negative epistatic interactions may help further identify structurally important regions for RNA sequence design and engineering efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the rescue analysis, which can only identify positive interactions, the ability to detect negative epistatic interactions may help further identify structurally important regions for RNA sequence design and engineering efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential utility of epistasis analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "63f4d274-4841-4b4c-a7f3-28ffe23d5c33",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C86",
+      "claim": "The data revealed signatures of structural elements including paired regions and non-canonical structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The data revealed signatures of structural elements including paired regions and non-canonical structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "0a1458af-e9b2-4fe0-a78d-b3a4f72fb65b",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C87",
+      "claim": "The comprehensiveness of the double mutants enabled identification of catalytic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the comprehensiveness of the double mutants enabled identification of catalytic residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis of catalytic residues in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "c25f0431-a1c2-40c2-a623-b3468bf58d5e",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C88",
+      "claim": "Recently, there has been significant progress toward predicting RNA structures from sequence using machine learning approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, there has been significant progress toward predicting RNA structures from sequence using machine learning approaches (Calonaci et al., 2020; Townshend et al., 2021; Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent machine learning studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "c5eb7eea-d754-45a8-9b96-4867c316a55e",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C89",
+      "claim": "Machine learning models for RNA structure prediction are typically trained on structural biology data from x-ray crystallography, chemical probing (SHAPE), and natural sequence conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "The machine learning models are typically trained on structural biology data from x-ray crystallography, chemical probing (SHAPE), and natural sequence conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the typical training data for machine learning models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "936f7f28-e360-4236-915e-1038bb51c964",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C90",
+      "claim": "The approach used in this study is similar to SHAPE in that it can be obtained with common lab equipment and commercially available reagents.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is similar to SHAPE in that it can be obtained with common lab equipment and commercially available reagents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the experimental approach to SHAPE.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "a0b8964b-4615-4878-863a-7cb7233c1e07",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C91",
+      "claim": "The activity data presented provides information similar to natural sequence conservation, except that it provides quantitative effects of mutations, not just frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity data presented provides information similar to natural sequence conservation, except that it provides quantitative effects of mutations, not just frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the data type to natural sequence conservation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "2725e2eb-ad6b-4966-9a6d-31b97137c964",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C92",
+      "claim": "The comparative approach based on covarying nucleotide positions may not be able to identify important nucleotides or structural elements other than canonical base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this 'comparative approach' may not be able to identify important nucleotides or structural elements other than canonical base pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the limitations of comparative sequence analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "b6fa1a28-85d3-49ca-bf65-c919e8a86ffd",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C93",
+      "claim": "The activity-based data presented will provide information not present in other training data sets and help advance computational predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "We hope that the activity-based data presented here will provide information not present in these other training data sets and help advance computational predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential impact of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "224b54f5-c3d1-44cf-90a7-bac922d30fbf",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C94",
+      "claim": "Single-stranded DNA molecules used as templates for in vitro transcription were synthesized using doped oligos containing 97% of the base of the reference sequence and 1% of the three other remaining bases at each position.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-stranded DNA molecules used as templates for in vitro transcription were synthesized as described previously (Kobori and Yokobayashi, 2016), using doped oligos containing 97% of the base of the reference sequence and 1% of the three other remaining bases at each position (Keck Oligo Synthesis Resource, Yale).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the library synthesis method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "d639cb06-e0c3-4f61-8445-60a5c500de6f",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C95",
+      "claim": "A constant structured RNA cassette was appended to the template sequences to provide a reverse transcription primer binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "A constant structured RNA cassette was appended to the template sequences to provide a reverse transcription primer binding site (Wilkinson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical aspect of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "8cbe863b-3c74-4901-a1ec-1a2bfbf73b99",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C96",
+      "claim": "The co-transcriptional self-cleavage reactions were carried out in triplicate.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-transcriptional self-cleavage reactions were carried out in triplicate by combining 20 \u03bcL 10\u00d7 T7 transcription buffer (500 \u03bcL 1 M Tris pH 7.5, 50 \u03bcL 1 M DTT, 20 \u03bcL 1 M Spermidine, 150 \u03bcL 1 M MgCl2, 280 \u03bcL RNase-free water), 4 \u03bcL rNTP (25 mM, NEB, Ipswich, Ma), 8 \u03bcL T7 RNA Polymerase-Plus enzyme mix (1600 U, Invitrogen, Waltham, MA), 160 \u03bcL nuclease-free water, and 8 \u03bcL of double-stranded DNA template (4 pmol, 0.5 \u03bcM PCR product) at 37\u00b0C for 30 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental replication strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "f78bd07d-274f-4ece-8e61-93e65fd90d33",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C97",
+      "claim": "Reverse transcription was carried out using a 5\u2032 RACE protocol using phased template switching oligos.",
+      "claim_type": "EXPLICIT",
+      "source": "Reverse transcription was carried out using a 5\u2032 RACE protocol using phased template switching oligo's (TSO1-4, Supplementary file 1) as described previously (Bendixsen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reverse transcription method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "4d6fd5f0-eebc-4701-be34-46b8454008f1",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C98",
+      "claim": "Four different template switching oligos (TSO 1\u20134) with different lengths and nucleotide compositions were used such that the first nucleotides read during sequencing are a balance of all four nucleotides, and the ribozymes are sequenced in four different frames relative to the primer.",
+      "claim_type": "EXPLICIT",
+      "source": "Four different template switching oligos (TSO 1\u20134) with different lengths and nucleotide compositions were used such that the first nucleotides read during sequencing are a balance of all four nucleotides, and the ribozymes are sequenced in four different frames relative to the primer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical aspect of the sequencing strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "197cacc9-2127-4b98-83d3-663f7f86c8ba",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C99",
+      "claim": "A unique index combination was assigned to each ribozyme and for each replicate.",
+      "claim_type": "EXPLICIT",
+      "source": "A unique index combination was assigned to each ribozyme and for each replicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the indexing strategy for multiplexed sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "b89f5bed-0343-4942-9fd4-ba348e353a1a",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C100",
+      "claim": "Paired-end sequencing reads were obtained for the pooled libraries using an Illumina HiSeq 4000.",
+      "claim_type": "EXPLICIT",
+      "source": "Paired-end sequencing reads were obtained for the pooled libraries using an Illumina HiSeq 4000 (Genomics and Cell Characterization Core Facility, University of Oregon).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing platform used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "73828c66-0a94-48a9-85f3-d37c10d6124f",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C101",
+      "claim": "Paired-end sequencing reads were joined using FLASh, allowing 'outies' due to overlapping reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Paired-end sequencing reads were joined using FLASh, allowing 'outies' due to overlapping reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bioinformatic processing of sequencing reads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "68b58b72-5d54-4e96-9fb1-2697b12c83df",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C102",
+      "claim": "The joined sequencing reads were analyzed using custom Julia scripts.",
+      "claim_type": "EXPLICIT",
+      "source": "The joined sequencing reads were analyzed using custom Julia scripts available at https://gitlab.com/bsu/biocompute-public/mut_12 (Beck, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "90a1a5c9-3b7b-42b3-b54c-a1a5096d1b3c",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C104",
+      "claim": "Values greater than 1 indicate positive epistasis, and values less than 0 indicate negative epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Values greater than 1 indicate positive epistasis, and values less than 0 indicate negative epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the interpretation of epistasis values.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "c03a3150-de09-485e-a5b8-fa36f0474862",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "claim_id": "C105",
+      "claim": "Mann-Whitney U test was used to determine the probability that epistasis or activity values of different structural elements were from the same distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Mann-Whitney U test was used to determine the probability that epistasis or activity values of different structural elements were from the same distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical test used for comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2410c750-3474-49d4-b5d5-1af194d55bbf",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study generated comprehensive mutational data for five self-cleaving ribozymes (CPEB3, HDV, twister, hairpin, and hammerhead) using a high-throughput sequencing approach with 97% wild-type/1% mutant synthesis strategy, achieving 100% coverage of all single and double mutants across triplicate experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C27, C28, C29, C76, and C96 collectively establish the experimental scope and completeness. The mutagenesis strategy (C28-C29), triplicate design (C96), and confirmed 100% coverage (C76) provide strong evidence for comprehensive data generation across all five ribozymes (C27). The methodology is well-documented and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "59ab397f-37de-42ae-8b58-7394de198edb",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Paired regions in all five ribozymes showed characteristic epistasis patterns: positive epistasis on the anti-diagonal (compensatory mutations restoring base pairs) and negative epistasis off-diagonal (disrupting two base pairs). The trend was statistically significant (p<0.05-0.001) across all ribozymes, with the highest epistasis for mutations creating new Watson-Crick or GU wobble pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 describe a consistent pattern observed across all five ribozymes with statistical validation (C37). The heatmap visualizations (Figures 1-5) and violin plot analyses support the systematic relationship between base-pair disruption and epistasis values. The pattern is biologically coherent and reproducible across different ribozyme structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "805db05b-063e-4b45-9bfa-04d063e26647",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The magnitude of epistatic effects in paired regions depends on thermodynamic stability: short paired regions (3-4 bp) showed large differences between on-diagonal and off-diagonal epistasis, while longer regions (14 bp) showed minimal differences. A significant negative correlation exists between median mutational effects and minimum free energy of paired regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 establish a thermodynamic basis for epistasis patterns supported by Figure 6 and Figure 6\u2014supplement 1. The correlation analysis (C44) provides quantitative support, and the HDV P4 example (C41-C42) demonstrates how stability affects mutational tolerance. The interpretation is consistent with cited prior work (C43) on thermodynamic dependence of mutational effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Catalytic residues in all five ribozymes were identified by their characteristic signature: all mutations at these positions abolished activity with no compensatory mutations possible. The comprehensive double-mutant coverage definitively ruled out any rescue mutations for catalytic nucleotides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C53 establish both the biological basis (C45-C46) and experimental identification (C52-C53) of catalytic residues. The specific catalytic residues for each ribozyme (C48-C51) are supported by literature citations and confirmed by the heatmap data (Figures 1-5, Figure 6\u2014supplement 2). The comprehensive coverage (C53, C76) provides certainty about the absence of compensatory mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "61ef6db4-feb4-43d4-8140-93b4582d5449",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Terminal loops not involved in tertiary structure (L4 of CPEB3 and HDV, L1 and L3 of hairpin) showed high activity for most mutations with minimal epistasis, while structurally important internal loops (LA and LB of hairpin) showed low activity for single mutations and significant positive epistasis for double mutants, with distributions significantly different from terminal loops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C63 establish a clear distinction between structurally important and peripheral loop regions supported by Figure 4 and Figure 4\u2014supplement 1. The statistical comparison (C62) and specific examples of compensatory mutations (C63) provide strong evidence. The structural basis is supported by citations (C57-C59) and crystal structure data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "131062ae-2d17-4d23-9e77-479d2160c84e",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The hammerhead ribozyme CUGA turn motif showed strict sequence requirements with only one compensatory mutation (C20G/G25C base pair swap) restoring activity, while the loop-loop tertiary interactions showed unexpected mutational robustness with most single and double mutations maintaining activity, indicating compensatory interactions between multiple contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C72 describe two contrasting structural elements in the hammerhead ribozyme. The CUGA turn data (C64-C66, Figure 5) shows strict requirements, while the loop-loop interaction data (C67-C71, Figure 5\u2014supplement 1) demonstrates robustness. Both observations are supported by crystal structure citations (C64, C68) and natural sequence variation (C69). The bioengineering application (C72) provides independent validation of the robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "bd56d614-de16-4b9c-b5ba-4c5804b9bd2b",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The CPEB3 T1 pseudoknot shows evidence for a two-nucleotide structure involving a non-canonical U:U base pair that can be functionally replaced by G:C and C:G Watson-Crick pairs, supporting NMR and Tb3+ cleavage data identifying this as a magnesium binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 provide mutational evidence for the CPEB3 T1 structure that corroborates prior structural studies (C74). The ability of Watson-Crick pairs to substitute (C75) is demonstrated in the data and provides functional validation of the structural model in the absence of a crystal structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "6346290f-8888-4e79-9de4-682ba61ec1c8",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Heatmap visualization of comprehensive mutational data revealed structural features including paired regions, unpaired loops, non-canonical structures, tertiary contacts, and catalytic residues across all five ribozymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C86, and C87 are summary statements supported by the detailed analyses in other result groups. The heatmap approach (Figures 1-5) successfully revealed multiple structural features as demonstrated by the specific findings for paired regions, loops, and catalytic residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "39f21399-01a0-4625-91cf-a49126d79c39",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The pairwise epistasis analysis approach adds capability beyond previous methods (rescue analysis) by detecting both positive and negative epistatic interactions. Results were highly similar to a previous study on the twister ribozyme despite different experimental conditions, demonstrating reproducibility of the sequencing-based approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 establish comparisons to prior work showing consistency (C80) despite methodological differences (C79, C82). Claims C84-C85 position the epistasis analysis as complementary to existing approaches. The comparison provides validation of the method, though C85 is somewhat speculative about future utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "8f1bff16-e746-450a-94e7-1c50b781f856",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The activity-based mutational data provides information complementary to existing training data for machine learning models (crystal structures, SHAPE, sequence conservation), offering quantitative functional effects rather than just frequency, and may help identify structural elements beyond canonical base pairs that comparative approaches miss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C89 establish the context of machine learning approaches (supported by citations), while C90-C91 make reasonable comparisons to existing methods. However, C92-C93 are speculative about the limitations of comparative approaches and the potential impact of this data on computational predictions. No direct evidence is provided that this data type improves machine learning predictions or identifies features missed by other approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "cf735a46-f0a8-42a3-aa7d-e0d795aa4f6d",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HDV showed the lowest sequencing depth among the five ribozymes, possibly due to its larger size (87 nt) resulting in fewer reads mapping to single and double mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is directly supported by Table 1 data showing HDV had the lowest total mapped reads (3,316,380) compared to other ribozymes. The explanation relating size to read depth is plausible, though the causal relationship is not definitively established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "78064edd-9129-4458-bb93-75e16ca66c3c",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The experimental workflow included DNA library synthesis with doped oligonucleotides, co-transcriptional self-cleavage, template-switching reverse transcription with phased oligos, indexed PCR amplification, Illumina HiSeq 4000 sequencing, and analysis using custom Julia scripts with Mann-Whitney U tests for statistical comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C102 and C105 describe the complete methodological pipeline. Each step is clearly documented with appropriate technical details, citations to prior methods, and software availability. The methods are standard for this type of analysis and internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "63fd69a0-c550-438f-a0bc-262077b3f81a",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Self-cleaving ribozymes are catalytic RNAs found across all domains of life that have been used for bioengineering applications. Their small size, requirement for precise 3D structure for activity, and amenability to high-throughput sequencing make them suitable models for studying RNA sequence-structure-function relationships through mutational analysis and epistasis calculations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C26 provide background knowledge and conceptual framework supported by appropriate citations. These establish the biological context (C1-C2, C11-C16), technical feasibility (C17, C21-C22), and analytical framework (C18-C20, C23-C26) for the study. All claims are well-established in the literature or are logical inferences from established principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "77f5b833-d3cf-49e3-85c7-db09f3af23a5",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Machine learning approaches for RNA structure prediction have made considerable advancements but rely heavily on crystal structures and sequence conservation data, both of which are more limited for RNA compared to proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are supported by appropriate citations to recent literature (Calonaci et al., 2020; Townshend et al., 2021). These establish the motivation for developing alternative data types for RNA structure prediction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "5e1902d9-9f6d-4999-9b8f-1949d06beeee",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "All ribozyme constructs cleave near the 5\u2032-end of the RNA, and a constant structured RNA cassette was appended to provide a common reverse transcription primer binding site for both cleaved and uncleaved molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C95 describe a key design feature enabling the internal control aspect of the method. This is a standard approach cited to prior work (Wilkinson et al., 2006) and is essential for the quantitative activity measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    },
+    {
+      "id": "3e106fdc-d530-41bf-a798-b7724e540f24",
+      "content_id": "0b3ed339-552d-4eeb-b6d3-7e525067f9b7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Epistasis values greater than 1 indicate positive epistasis, and values less than 0 indicate negative epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 is a definitional statement that correctly describes the interpretation of the epistasis metric used throughout the study. This is consistent with standard definitions in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:33:03.671459Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "61926639-b4f7-4412-b65c-b8006dc01de3",
+      "result_id": "2410c750-3474-49d4-b5d5-1af194d55bbf"
+    },
+    {
+      "claim_id": "cc229e2f-91d2-4add-a204-c234d6cc78d8",
+      "result_id": "2410c750-3474-49d4-b5d5-1af194d55bbf"
+    },
+    {
+      "claim_id": "1a56350e-a41f-4fcd-8194-b6c3da624fff",
+      "result_id": "2410c750-3474-49d4-b5d5-1af194d55bbf"
+    },
+    {
+      "claim_id": "b5230595-777a-4910-a763-d39d7e524a69",
+      "result_id": "2410c750-3474-49d4-b5d5-1af194d55bbf"
+    },
+    {
+      "claim_id": "64e06a4f-c51b-4977-9b63-e236c10dfad8",
+      "result_id": "2410c750-3474-49d4-b5d5-1af194d55bbf"
+    },
+    {
+      "claim_id": "76361ffb-1c63-4139-ab09-36c645683f1f",
+      "result_id": "2410c750-3474-49d4-b5d5-1af194d55bbf"
+    },
+    {
+      "claim_id": "8cbe863b-3c74-4901-a1ec-1a2bfbf73b99",
+      "result_id": "2410c750-3474-49d4-b5d5-1af194d55bbf"
+    },
+    {
+      "claim_id": "bd5f2d04-8b2f-4b60-8a15-261696e349c3",
+      "result_id": "59ab397f-37de-42ae-8b58-7394de198edb"
+    },
+    {
+      "claim_id": "f8ccaa9c-01a1-45bc-bf04-17acade387bc",
+      "result_id": "59ab397f-37de-42ae-8b58-7394de198edb"
+    },
+    {
+      "claim_id": "d37e3c7b-c6bf-43a2-97d9-e8757fbf3290",
+      "result_id": "59ab397f-37de-42ae-8b58-7394de198edb"
+    },
+    {
+      "claim_id": "a9136ece-e0a0-4a50-8867-0e94f7363811",
+      "result_id": "59ab397f-37de-42ae-8b58-7394de198edb"
+    },
+    {
+      "claim_id": "c207c154-20d5-4569-98db-1139ef5c6580",
+      "result_id": "59ab397f-37de-42ae-8b58-7394de198edb"
+    },
+    {
+      "claim_id": "cf942dc9-0eb0-4a1e-a6f1-f6d99e63461e",
+      "result_id": "59ab397f-37de-42ae-8b58-7394de198edb"
+    },
+    {
+      "claim_id": "4f1cfe0c-c4a1-4cb3-bba5-83a83aaed0ab",
+      "result_id": "59ab397f-37de-42ae-8b58-7394de198edb"
+    },
+    {
+      "claim_id": "743149a7-e7f4-419e-9012-239263e0dab8",
+      "result_id": "805db05b-063e-4b45-9bfa-04d063e26647"
+    },
+    {
+      "claim_id": "4a13a50c-95ee-43b6-8abe-9182ee9b2888",
+      "result_id": "805db05b-063e-4b45-9bfa-04d063e26647"
+    },
+    {
+      "claim_id": "5b6f1a8e-0f25-45e3-85a8-0bee36ed6c31",
+      "result_id": "805db05b-063e-4b45-9bfa-04d063e26647"
+    },
+    {
+      "claim_id": "b24e9c39-8dac-4909-8288-e83c4355670e",
+      "result_id": "805db05b-063e-4b45-9bfa-04d063e26647"
+    },
+    {
+      "claim_id": "12407508-81a7-49cb-b822-26bb743e34d3",
+      "result_id": "805db05b-063e-4b45-9bfa-04d063e26647"
+    },
+    {
+      "claim_id": "fd5e6e99-fc1f-4b1e-85f4-6b76fa9edeaf",
+      "result_id": "805db05b-063e-4b45-9bfa-04d063e26647"
+    },
+    {
+      "claim_id": "58832ecf-95e0-4396-a6e5-10be73defba6",
+      "result_id": "805db05b-063e-4b45-9bfa-04d063e26647"
+    },
+    {
+      "claim_id": "95207b18-95f4-4074-91a3-767ac221cfa0",
+      "result_id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385"
+    },
+    {
+      "claim_id": "86e31d4a-1f35-483b-ab61-81fc6aaf78c7",
+      "result_id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385"
+    },
+    {
+      "claim_id": "c86ad11a-19a3-4f13-b1f0-4211baead55e",
+      "result_id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385"
+    },
+    {
+      "claim_id": "3fca0dde-4b3d-4fbd-906c-e315929882e1",
+      "result_id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385"
+    },
+    {
+      "claim_id": "b07af253-5467-4bcf-89c6-0577de0be32e",
+      "result_id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385"
+    },
+    {
+      "claim_id": "a7f57a6a-1e86-48d6-9a7c-7e47adc07320",
+      "result_id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385"
+    },
+    {
+      "claim_id": "5a175971-238f-4f3c-b97b-41da4a8c904d",
+      "result_id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385"
+    },
+    {
+      "claim_id": "7e3f864b-7ee0-4d45-8057-8042e5b2bb00",
+      "result_id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385"
+    },
+    {
+      "claim_id": "903540ae-f40b-4516-adfe-3ad179e5a003",
+      "result_id": "c37871d6-f68a-48a5-b2b4-d26dcc78f385"
+    },
+    {
+      "claim_id": "ed30cfb0-72ba-4f21-b888-933f0bf4af0c",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "eb9912f6-0238-440c-8dd4-3cce56e67823",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "77ba30e1-5e53-44fa-a1c8-e14be01f589a",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "33ae23a0-7a2d-4ef1-8b5e-4b6e14db922b",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "60a624e6-3bce-4ca5-a074-86dd1b752d9a",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "f3b68dc5-fa4e-4850-ac72-ef8d64861e70",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "b8bd22e1-33d0-4867-b360-4257d20b099b",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "087c4f8a-7b97-4f41-bbad-d1f9bedea1cb",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "0137571a-1f83-4fbe-a809-f1065decc618",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "537964c9-faff-4c7b-8840-c3aa2d00f519",
+      "result_id": "61ef6db4-feb4-43d4-8140-93b4582d5449"
+    },
+    {
+      "claim_id": "3d96b158-d959-4131-96a0-c36cc41f7d0f",
+      "result_id": "131062ae-2d17-4d23-9e77-479d2160c84e"
+    },
+    {
+      "claim_id": "fb5da690-5c39-4038-a5f4-c4071a2ab945",
+      "result_id": "131062ae-2d17-4d23-9e77-479d2160c84e"
+    },
+    {
+      "claim_id": "c9a8d0c3-172a-4c5a-b806-f8a25d73a72a",
+      "result_id": "131062ae-2d17-4d23-9e77-479d2160c84e"
+    },
+    {
+      "claim_id": "0dbb5dd5-0e92-476e-94b4-73216fecf1f0",
+      "result_id": "131062ae-2d17-4d23-9e77-479d2160c84e"
+    },
+    {
+      "claim_id": "04165e29-b16d-426b-8c03-aea3a7dba575",
+      "result_id": "131062ae-2d17-4d23-9e77-479d2160c84e"
+    },
+    {
+      "claim_id": "507aa753-b3db-4d2e-85c3-61d4a343c18b",
+      "result_id": "131062ae-2d17-4d23-9e77-479d2160c84e"
+    },
+    {
+      "claim_id": "22668b0f-9fc3-400e-bf78-395a0eff3645",
+      "result_id": "131062ae-2d17-4d23-9e77-479d2160c84e"
+    },
+    {
+      "claim_id": "54201038-41e8-48ef-bf24-96181451b93e",
+      "result_id": "131062ae-2d17-4d23-9e77-479d2160c84e"
+    },
+    {
+      "claim_id": "7288a799-2d88-4a5e-b541-ad6bbeaf6b0d",
+      "result_id": "131062ae-2d17-4d23-9e77-479d2160c84e"
+    },
+    {
+      "claim_id": "88e18071-92c3-4e6a-a2f7-b156e8057484",
+      "result_id": "bd56d614-de16-4b9c-b5ba-4c5804b9bd2b"
+    },
+    {
+      "claim_id": "f6d3e088-ab17-4044-ab5a-e6e0fd5c3174",
+      "result_id": "bd56d614-de16-4b9c-b5ba-4c5804b9bd2b"
+    },
+    {
+      "claim_id": "97d69176-c1b9-4522-aae6-1b59e6879450",
+      "result_id": "bd56d614-de16-4b9c-b5ba-4c5804b9bd2b"
+    },
+    {
+      "claim_id": "e31693b2-51a6-48be-b510-512b53ee7d37",
+      "result_id": "6346290f-8888-4e79-9de4-682ba61ec1c8"
+    },
+    {
+      "claim_id": "0c316331-2931-4907-a091-b614244877d7",
+      "result_id": "6346290f-8888-4e79-9de4-682ba61ec1c8"
+    },
+    {
+      "claim_id": "63f4d274-4841-4b4c-a7f3-28ffe23d5c33",
+      "result_id": "6346290f-8888-4e79-9de4-682ba61ec1c8"
+    },
+    {
+      "claim_id": "0a1458af-e9b2-4fe0-a78d-b3a4f72fb65b",
+      "result_id": "6346290f-8888-4e79-9de4-682ba61ec1c8"
+    },
+    {
+      "claim_id": "ca294a7d-e122-47e8-835c-9b40ddd9b35b",
+      "result_id": "39f21399-01a0-4625-91cf-a49126d79c39"
+    },
+    {
+      "claim_id": "dee659e7-19b2-493d-a71e-c5de7e6f32aa",
+      "result_id": "39f21399-01a0-4625-91cf-a49126d79c39"
+    },
+    {
+      "claim_id": "a7d060d0-3386-497f-a194-7e62ff9dbce9",
+      "result_id": "39f21399-01a0-4625-91cf-a49126d79c39"
+    },
+    {
+      "claim_id": "70beafb5-241e-418a-bf10-fa05e8e49b4d",
+      "result_id": "39f21399-01a0-4625-91cf-a49126d79c39"
+    },
+    {
+      "claim_id": "6d7c1747-6892-4402-a72f-48f9a983e679",
+      "result_id": "39f21399-01a0-4625-91cf-a49126d79c39"
+    },
+    {
+      "claim_id": "903c9752-b7c7-4418-9ee5-5bfd4e9e9b9d",
+      "result_id": "39f21399-01a0-4625-91cf-a49126d79c39"
+    },
+    {
+      "claim_id": "fbc1afe7-a25b-47cd-8a62-c4500cdb6132",
+      "result_id": "39f21399-01a0-4625-91cf-a49126d79c39"
+    },
+    {
+      "claim_id": "c25f0431-a1c2-40c2-a623-b3468bf58d5e",
+      "result_id": "8f1bff16-e746-450a-94e7-1c50b781f856"
+    },
+    {
+      "claim_id": "c5eb7eea-d754-45a8-9b96-4867c316a55e",
+      "result_id": "8f1bff16-e746-450a-94e7-1c50b781f856"
+    },
+    {
+      "claim_id": "936f7f28-e360-4236-915e-1038bb51c964",
+      "result_id": "8f1bff16-e746-450a-94e7-1c50b781f856"
+    },
+    {
+      "claim_id": "a0b8964b-4615-4878-863a-7cb7233c1e07",
+      "result_id": "8f1bff16-e746-450a-94e7-1c50b781f856"
+    },
+    {
+      "claim_id": "2725e2eb-ad6b-4966-9a6d-31b97137c964",
+      "result_id": "8f1bff16-e746-450a-94e7-1c50b781f856"
+    },
+    {
+      "claim_id": "b6fa1a28-85d3-49ca-bf65-c919e8a86ffd",
+      "result_id": "8f1bff16-e746-450a-94e7-1c50b781f856"
+    },
+    {
+      "claim_id": "a05e3168-5f55-40a8-9776-034a439acc1c",
+      "result_id": "cf735a46-f0a8-42a3-aa7d-e0d795aa4f6d"
+    },
+    {
+      "claim_id": "224b54f5-c3d1-44cf-90a7-bac922d30fbf",
+      "result_id": "78064edd-9129-4458-bb93-75e16ca66c3c"
+    },
+    {
+      "claim_id": "d639cb06-e0c3-4f61-8445-60a5c500de6f",
+      "result_id": "78064edd-9129-4458-bb93-75e16ca66c3c"
+    },
+    {
+      "claim_id": "f78bd07d-274f-4ece-8e61-93e65fd90d33",
+      "result_id": "78064edd-9129-4458-bb93-75e16ca66c3c"
+    },
+    {
+      "claim_id": "4d6fd5f0-eebc-4701-be34-46b8454008f1",
+      "result_id": "78064edd-9129-4458-bb93-75e16ca66c3c"
+    },
+    {
+      "claim_id": "197cacc9-2127-4b98-83d3-663f7f86c8ba",
+      "result_id": "78064edd-9129-4458-bb93-75e16ca66c3c"
+    },
+    {
+      "claim_id": "b89f5bed-0343-4942-9fd4-ba348e353a1a",
+      "result_id": "78064edd-9129-4458-bb93-75e16ca66c3c"
+    },
+    {
+      "claim_id": "73828c66-0a94-48a9-85f3-d37c10d6124f",
+      "result_id": "78064edd-9129-4458-bb93-75e16ca66c3c"
+    },
+    {
+      "claim_id": "68b58b72-5d54-4e96-9fb1-2697b12c83df",
+      "result_id": "78064edd-9129-4458-bb93-75e16ca66c3c"
+    },
+    {
+      "claim_id": "c03a3150-de09-485e-a5b8-fa36f0474862",
+      "result_id": "78064edd-9129-4458-bb93-75e16ca66c3c"
+    },
+    {
+      "claim_id": "dec1eaad-86b8-4a44-81b0-464c2702e21e",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "dc9f600d-9132-4be1-b949-1b8ab295a8d6",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "e7862dd1-49d9-4c69-adab-4e5c5178df06",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "0b12bc3b-87bd-4ff9-8cc0-0584518ac9cc",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "6b944201-aa47-4dc2-9ef6-cdc62a13a3e1",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "32134ad1-b261-430e-a895-660632436ef8",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "2d286253-0716-4c55-a4a7-293bfb6452ea",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "6f5980f8-448c-42c3-8a32-eab4da4b8d46",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "8b8d123b-a21c-47d3-8919-b7acf8141ed3",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "70e5ef49-d5f8-4124-a92b-97837022f09b",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "eb5e3056-8817-4179-9e83-8ac142d16835",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "a50b5c1c-904a-43c7-be28-c41a1dbf13df",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "7d8efee6-bba1-4747-abc1-18b7cff82c11",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "42c089c8-7406-4d48-b98e-141c5ab3c533",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "16423004-1ff0-4a0f-a8cb-e16e2100741f",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "301ef5fb-5aad-4fe5-abf4-0cd3e6245a61",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "8acea747-0341-49aa-8743-87814b6dda0f",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "0a9cadc6-b034-40c8-b6b8-f2a4ac5443c4",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "e3b78aa0-fcfd-4310-8855-67a956dc2780",
+      "result_id": "63fd69a0-c550-438f-a0bc-262077b3f81a"
+    },
+    {
+      "claim_id": "2d8362f1-5156-4d36-8a65-3ec5acb4065c",
+      "result_id": "77f5b833-d3cf-49e3-85c7-db09f3af23a5"
+    },
+    {
+      "claim_id": "ac0bed77-c1ac-4d4e-9450-4c41a7a56bf4",
+      "result_id": "77f5b833-d3cf-49e3-85c7-db09f3af23a5"
+    },
+    {
+      "claim_id": "cd1b4589-6255-4e92-8b40-9f31e971c228",
+      "result_id": "77f5b833-d3cf-49e3-85c7-db09f3af23a5"
+    },
+    {
+      "claim_id": "454a5e49-9814-4d36-a4ac-97916813eacb",
+      "result_id": "5e1902d9-9f6d-4999-9b8f-1949d06beeee"
+    },
+    {
+      "claim_id": "d639cb06-e0c3-4f61-8445-60a5c500de6f",
+      "result_id": "5e1902d9-9f6d-4999-9b8f-1949d06beeee"
+    },
+    {
+      "claim_id": "90a1a5c9-3b7b-42b3-b54c-a1a5096d1b3c",
+      "result_id": "3e106fdc-d530-41bf-a798-b7724e540f24"
+    }
+  ],
+  "comparisons": []
+}

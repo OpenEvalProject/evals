@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "qBBr is a positively charged fluorescent probe with properties suitable for mimicking gating charges. The probe has a molecular weight of ~295 Da (bulkier than arginine at 101 Da), but the distance from the carbon backbone to the positive charge (~5.5 \u00c5) is similar to arginine (~5.3-6.5 \u00c5). Tryptophan strongly quenches qBBr fluorescence, tyrosine weakly quenches it, and other amino acids (histidine, phenylalanine, methionine, aspartate, arginine) do not quench it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16-C23 establish the chemical and optical properties of qBBr based on prior literature (C21-C23) and molecular modeling (C18). The similarity in charge-to-backbone distance between qBBr-cysteine and native arginine (C18-C19) provides structural rationale for C20's inference that qBBr may mimic gating charges. The quenching properties are well-established in cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "qBBr conjugation to R1C and R2C produces functional channels with altered electrophysiological properties. R1C-qBBr shows faster gating currents than wild-type but comparable voltage dependence. R2C-qBBr shows a less shallow QV relationship with one component instead of two, though it does not fully recover wild-type voltage dependence. Upon depolarization, R1C-qBBr fluorescence decreases dramatically while R2C-qBBr fluorescence does not change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 are supported by experimental data in Figure 2. The electrophysiological characterization (C29-C32) demonstrates that qBBr labeling produces functional channels, though with some altered properties. The differential fluorescence responses (C35-C36) provide the foundation for using qBBr to track charge movement. The inference that qBBr mimics gating charge movement (C33-C34) is reasonable given the functional data, though C34 acknowledges energetic differences for R2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "W454 is responsible for quenching R1C-qBBr fluorescence during activation. Based on homology modeling and prior functional studies, R1 should reside near W454 at the extracellular side of S6 in the active state. Mutation of W454 to alanine or phenylalanine abolishes the voltage-dependent fluorescence change. This indicates that R1C-qBBr comes near the pore domain (W454) upon activation, while R2C-qBBr does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 are well-supported by the mutagenesis experiments in Figure 2E and prior structural/functional data (C38-C39, C44). The W454A and W454F mutations abolishing fluorescence changes (C40-C41) provide strong evidence that W454 is the quencher. The conclusions about R1 and R2 positioning (C42-C43) are logical inferences from the data. The agreement with crystallographic and functional data (C44) strengthens confidence in the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "E247W produces voltage-dependent unquenching of R1C-qBBr fluorescence during activation, indicating that R1C-qBBr moves away from position 247 upon activation. The fluorescence signal shows voltage-sensitive amplitude and kinetics similar to gating currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by experimental data in Figure 3. The unquenching response (C46) and the inference about movement away from E247W (C47) are consistent with the theoretical framework established earlier. The voltage-dependent properties (C48-C49) demonstrate that the fluorescence signal reports on voltage sensor movement, validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "R1C-qBBr activation pathway involves both rotation and tilted translation (~30\u00b0 from membrane normal). During activation, R1C-qBBr is quenched by W454 and Y415W, and unquenched from F244W, E247W, I320W, and T326W. No fluorescence changes occur with F290W or L294W. This indicates R1C-qBBr moves from a resting position near F244, I320, T326, and E247 to an active position near the pore domain (W454, Y415).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 are supported by systematic mutagenesis data in Figure 4. The pattern of quenching and unquenching from multiple positions (C50-C53) provides strong constraints on the R1 pathway. The inference of a tilted translation with rotation (C54) is consistent with the data and prior models. The lack of interaction with F290W and L294W (C53) is important for understanding the resting state position. The pathway description (C55-C56) integrates the data coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "R2C-qBBr follows a distinct activation pathway from R1C-qBBr. Upon activation, R2C-qBBr moves closer to Y415W, F416W, and T326W, and away from I241W, F244W, I287W, and L294W. In the active state, R2C-qBBr resides between the extracellular sides of S3 and S5, not encountering S6. The resting state is near F290. R2 shows rotation but less evident than R1. The fluorescence responses differ qualitatively between R1 and R2 for L294, T326, and W454 substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are supported by systematic mutagenesis data in Figure 5. The distinct pattern of quenching/unquenching for R2 compared to R1 (C57-C58, C63) demonstrates that the two charges follow different paths. The inferences about active and resting state positions (C59-C61) are reasonable based on the quenching data. The observation of less evident rotation for R2 (C62) is a qualitative assessment supported by the data. The conclusion that R1 and R2 travel distinct paths (C64) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Y415, W289, and F244 produce similar responses from both R1C-qBBr and R2C-qBBr. W289 does not quench either charge, suggesting S2 does not undergo large rotations. Y415W quenches both R1 and R2, indicating both charges reach the extracellular surface. F416W quenches R2C-qBBr but does not express with R1C-qBBr. Prior work shows F416 bridges to both R1 and R2, and F244 interacts with R2 in an intermediate state and R3 in the active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 integrate current findings with prior literature. The similar responses for Y415, W289, and F244 (C65) are supported by the data. The inferences about S2 rotation (C67) and charge positioning (C68) are reasonable. The F416W result (C69) is interesting but complicated by expression issues. The citations to prior work (C70-C73) appropriately contextualize the findings and show consistency with previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Both R1 and R2 undergo tilted translation from intracellular to extracellular side with rotation during activation. The discrete and unique pathways mapped by R1 and R2 provide new clarity into how these charges move distinctly from each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 synthesize the major findings from the R1 and R2 pathway mapping. The conclusion that both charges undergo tilted translation with rotation (C74) is supported by the systematic mutagenesis data and is consistent with prior models. The statement about providing new clarity (C75) is justified given the detailed, charge-specific pathway information obtained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "qBBr fluorescence tracks deactivation transitions as well as activation. Deactivation is slower than activation and shows voltage-dependent slowing corresponding to pore opening. During deactivation, leftward shifts in QVs are observed for R1C-qBBr:W454A constructs E247W and T326W (but not I320W) and R2C-qBBr constructs F244W and I287W. FVs also show leftward shifts in deactivation. Deactivation kinetics are generally slower than activation kinetics. qBBr follows the different energetic paths during deactivation and activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 are supported by experimental data in Figure 6 and prior literature (C76-C77). The observation of leftward shifts in QVs and FVs during deactivation (C78-C80) demonstrates that qBBr reports on the different energetic landscape of deactivation. The kinetic differences (C82) and the exception for T326W (C83) are consistent with known channel behavior. The conclusions that qBBr tracks deactivation (C84-C85) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "FVs and QVs show different voltage dependencies in some constructs. The activation FV of R1C-qBBr:W454A;E247W is right-shifted compared to activation QV, and the deactivation FV of R1C-qBBr:W454A;T326W is right-shifted compared to deactivation QV. This difference likely reflects that QV measures all gating charges relative to the electric field, while FV measures a single charge relative to a specific VSD residue. R1C-qBBr requires more energy to move past E247W during activation and less energy to move toward T326W during deactivation compared to bulk voltage sensor movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe subtle but important differences between FV and QV measurements. The observations (C86-C87) are supported by the data. The interpretation (C88) is a reasonable inference about what the two measurements report. The energetic interpretations (C89-C90) are logical conclusions from the shifts observed, though they are somewhat speculative. Overall, these claims highlight the ability of the technique to resolve individual charge movements from bulk sensor movement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "After a prolonged depolarizing pulse, return to hyperpolarized potential produces a further left-shifted FV compared to normal activation and deactivation FVs. This may be related to the relaxed state or mode shift reached by S4-based voltage sensors, which is characterized by leftward QV shifts and slowed kinetics after prolonged depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 present an interesting observation (C91, supported by Figure 6 and supplement) and speculate about its relationship to the relaxed state (C92-C93). While the observation is clear, the interpretation is explicitly speculative (\"may be related\") and the authors note additional investigation is required. The connection to the relaxed state is plausible given prior literature (C93) but not definitively established here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "R1C-qBBr:W454A;F290W shows a slow fluorescence reduction at extreme hyperpolarization (-160 mV) that differs from gating current kinetics and becomes slower with longer hyperpolarizing pulses, consistent with the Cole-Moore shift. At extreme hyperpolarization, R1C-qBBr moves near F290W, populating closed states responsible for the Cole-Moore shift. This indicates R1 normally resides extracellular to the hydrophobic plug (F290) and only moves past it at extreme hyperpolarization, providing a molecular basis for the Cole-Moore shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C103 present a major finding linking R1 movement to the Cole-Moore shift. The experimental observations (C94-C96) are supported by Figure 7. The interpretation that extreme hyperpolarization populates additional closed states (C99-C100) is a reasonable inference from the data. The connection to prior work showing R1C-I287C linkage (C97) and metal-ion bridge studies (C101) strengthens the interpretation. The conclusion that R1 normally resides extracellular to F290 (C102) is well-supported and provides important mechanistic insight into the Cole-Moore shift.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C137"
+    ],
+    "result": "The qBBr approach extends to CiVSP. CiVSP R1C-qBBr shows voltage-dependent fluorescence changes that are abolished by Y206A mutation while voltage dependence remains intact. This reveals an interaction between R1 of CiVSP and tyrosine Y206 in the S3-S4 linker, in agreement with crystal structures of the VSD in the active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 and C137 demonstrate proof-of-principle for extending the technique to other voltage sensors. The experimental data (Figure 8) show voltage-dependent fluorescence (C104) that is abolished by Y206A (C105) without disrupting voltage dependence (C106). The agreement with crystal structures (C137) validates the approach. This is important for establishing the generalizability of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Theoretical modeling predicts that in a two-state system, fluorescence kinetics are independent of quencher position, but in multi-state systems, kinetics depend on quencher position and can be biphasic. Simulations show three-state systems produce multi-exponential fluorescence with potential biphasic responses depending on intermediate state position and dwell time. Experimentally, fluorescence changes are always monotonic (unidirectional) with multiple time constants, suggesting brief intermediate state dwell times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C116-C121 present theoretical predictions and their experimental validation. The mathematical framework (C25-C26, C116-C117) is sound. The simulation results (C27-C28, C118-C119) follow logically from the model. The experimental observation of monotonic changes (C120) and the interpretation regarding brief intermediate dwell times (C121) are reasonable. This theoretical framework is important for interpreting the fluorescence data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The PET quenching mechanism requires van der Waals contact (<10 \u00c5 center-to-center) and is distinct from resonance energy transfer. The maximum alpha carbon distance for TrIQ with qBBr is ~10-15 \u00c5, but rotamer variations affect quenching efficiency. For example, Y415W produces much stronger quenching of R2C-qBBr than F416W despite <4 \u00c5 difference in alpha carbon distance. This underscores the importance of using multiple tryptophan substitution sites to improve spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C115 discuss the spatial resolution and limitations of the technique. The quenching mechanism properties (C107-C110) are well-established in cited literature. The observation about Y415W vs F416W (C112) is supported by the data and illustrates the rotamer issue (C111, C113). The conclusions about experimental design (C114-C115) are reasonable inferences. This discussion appropriately addresses the limitations and proper interpretation of the technique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Fluorescence kinetics can be compared to gating current kinetics within the same construct. For R1C-qBBr and R1C-qBBr:W454A;E247W, fluorescence kinetics align with the slow component of double-exponential gating kinetics, suggesting R1C-qBBr rotation from VSD-facing to pore-facing occurs later in the gating process than bulk charge movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 are supported by kinetic analysis in Figure 9. The comparison of fluorescence and gating current kinetics (C123) shows clear alignment with the slow component. The inference about the timing of R1 rotation (C124) is a reasonable interpretation of this observation. This provides insight into the temporal sequence of voltage sensor movements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "In the normal resting state, R1 does not contact F290 or L294, while R2 is near L294. In the active state, R1 contacts W454 and Y415, while R2 contacts Y415 but not W454. R1C:W454A;I287W and R2C:F290W constructs were lethal. R1 closely interacting with I287 in the resting state agrees with prior disulfide bonding, fluorimetry, and modeling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 synthesize the resting and active state positions of R1 and R2. The inferences about positioning (C125-C128) are well-supported by the systematic mutagenesis data. The lethality observation (C129) is interesting but its mechanistic interpretation is uncertain. The agreement with prior work (C130) strengthens confidence in the resting state position of R1. These claims provide important constraints on charge positions in different states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Each gating charge undergoes rotation with translation at ~60\u00b0 to the membrane plane. R1 shows greater rotation than R2, suggesting some movement may come from side chain motion or transient \u03b1-helix to 3\u2081\u2080-helix transitions rather than exclusively backbone movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 present interpretations of the overall movement patterns. The general description of rotation with translation (C131) is supported by the data. The observation of differential rotation between R1 and R2 (C132) is supported by the qualitative differences in their pathways. The speculation about side chain movement or helical transitions (C133) is reasonable given the data and prior literature, though it remains speculative. These claims appropriately integrate the findings with mechanistic hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The qBBr technique should be transferrable to other voltage-sensing proteins. Numerous voltage sensors have been studied with site-directed fluorimetry. Extension of qBBr quenching to other sensors is expected to provide new findings about individual charge movements. Tyrosine can also serve as a quencher, potentially minimizing limitations of tryptophan substitution. The technique should be useful in conducting channels to correlate gating with ion conductance. Further mapping should improve understanding of voltage sensor diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C142 discuss the broader applicability and future potential of the technique. The transferability (C134) is demonstrated by the CiVSP results. The potential for new findings (C136, C141) is reasonable given the unique capabilities of the method. The discussion of tyrosine as an alternative quencher (C138-C139) is supported by the CiVSP data. The speculation about applications (C140) and relevance to VSD diversity (C142) are reasonable forward-looking statements. These claims appropriately discuss the significance and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "A current limitation is that qBBr labeling is restricted by accessibility to cysteine-substituted gating charges. The authors were unable to label R368 (the third gating charge). Future use of unnatural amino acid versions of qBBr or similar fluorescent amino acids may expand the technique to additional charges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 honestly acknowledge a significant limitation of the technique. The accessibility limitation (C143) is a known issue with cysteine labeling approaches. The specific example of R368 (C144) demonstrates this limitation. The suggestion for future improvements (C145) is reasonable. This transparent discussion of limitations is appropriate.",
+    "result_type": "MINOR"
+  }
+]

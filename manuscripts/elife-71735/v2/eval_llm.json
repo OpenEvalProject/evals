@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Melanoma exhibits two main cell states, melanocytic (MEL) and mesenchymal-like (MES), which display distinct epigenomic and transcriptomic profiles resulting in divergent phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-supported by multiple citations to published literature (Hoek et al., 2008; Hoek et al., 2006; Verfaillie et al., 2015; Wouters et al., 2020). These are established findings in the melanoma field that provide the biological context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C89"
+    ],
+    "result": "The H3K27ac-based enhancer selection strategy achieved a high success rate, with 75% of MEL-specific regions and 26% of MES-specific regions displaying significant enhancer activity in MM001.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10, C11, and C89 are supported by experimental MPRA data with appropriate statistical testing (Benjamini-Hochberg adjusted p-values < 0.05). The success rate of 60-75% for H3K27ac-based selection is consistent with similar studies cited in the manuscript and represents a methodological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C98",
+      "C99"
+    ],
+    "result": "Enhancer activity is contained within ATAC-seq peaks, with 92.2% of active tiles located within these peaks, and short 190 bp sequences can often recapitulate the activity of larger H3K27ac regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15, C98, and C99 are supported by consistent MPRA data across multiple library designs (H3K27ac, ATAC-seq, and tiling libraries). The 92.2% overlap statistic is clearly stated and the recapitulation of activity by short sequences is demonstrated experimentally, though the authors appropriately note this is not always the case (C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "DeepMEL2, a deep learning model trained on ATAC-seq data from 30 melanoma lines, predicts enhancer accessibility and activity with moderate precision (11-17.3% for MEL topics), with low precision explained by the model's training on accessibility rather than activity data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 are supported by citations to the published DeepMEL2 model (Atak et al., 2021) and experimental validation in this study. The precision and recall values are explicitly stated, and the authors provide a reasonable explanation for the low precision. However, the moderate performance suggests DeepMEL2 has limitations for predicting enhancer activity specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "TYR gene expression in MEL lines is largely dependent on distal enhancers rather than the promoter region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by MPRA data showing high activity in distal enhancers (TYR_-9-D and TYR_-1-D) but low activity at the promoter (TYR_P) as shown in Figure 2c. This is a specific example demonstrating the importance of distal regulatory elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C36",
+      "C37",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Not all subtype-specific ATAC-seq peaks function as stand-alone enhancers, with success rates varying widely by selection strategy (60-75% for H3K27ac near marker genes vs. 15.1% for SOX10-KD ATAC peaks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C36, C37, C91-C93 are supported by experimental data comparing different library designs. The 54% activity rate for differentially accessible peaks (C36) and 15.1% for SOX10-KD peaks (C64) demonstrate that chromatin accessibility alone is insufficient to predict enhancer function. This is an important methodological finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "H3K27ac signal correlates well with ATAC-seq signal (r=0.77), but ATAC-seq peak mean signal is not a good predictor of enhancer activity level (Spearman's rho=0.48).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by statistical analyses with explicit correlation coefficients. The moderate correlation between ATAC-seq signal and activity (rho=0.48) is appropriately interpreted as indicating that peak signal intensity is not a reliable predictor of enhancer strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Closed chromatin regions can harbor enhancer activity in episomal MPRAs, suggesting differences between genomic and episomal chromatin states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C94-C96 are supported by MPRA data showing activity in regions lacking ATAC-seq signal, with support from published STARR-seq studies (Arnold et al., 2013; Liu et al., 2017a). The inference about chromatin state differences (C96) is reasonable but represents a limitation of the episomal assay system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "MES enhancers display activity at both H3K27ac and ATAC-seq levels in MM029, with DeepMEL2 topic 19 predictions overlapping active tiles (18.1% precision, 53.7% recall).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by MPRA data in MM029 and comparison with DeepMEL2 predictions. The precision and recall values are explicitly stated, and the 92.1% of active enhancers residing within ATAC-seq peaks is consistent with findings in MEL lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Intermediate melanoma lines show the same proportion of active MEL and MES enhancers as pure MEL and MES lines respectively, but with intermediate activity strength for MES enhancers, while MEL enhancers display consistent specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are supported by MPRA data across seven cell lines with appropriate statistical analyses (correlation coefficients provided). The gradient of MES enhancer activity (MM001 < intermediate < MES) is clearly demonstrated, while MEL enhancer specificity is maintained. This is a key finding about enhancer behavior across cell states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Enhancer activity is driven by expression of subtype-specific transcription factors (SOX10, MITF, TFAP for MEL; AP-1, TEAD for MES), with MITF alone being insufficient for MEL enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by citation to published work (Verfaillie et al., 2015) and inference from the observation that MM029 expresses MITF but lacks MEL enhancer activity. This provides mechanistic insight into the transcriptional regulation underlying the observed enhancer patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "TFAP does not significantly affect MEL enhancer activity in the tested regions, while SOX and MITF binding sites both significantly influence activity, with mutation of either site abolishing activity in specific enhancers like KIT_114-D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C113-C116 are supported by MPRA data comparing wild-type and mutant tiles. The lack of TFAP effect contradicts some prior literature (Seberg et al., 2017), which the authors acknowledge and attribute to either limited region selection or reduced TFAP influence in their melanoma lines. The speculation (C115-C116) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Individual 190 bp tiles do not necessarily recapitulate the full enhancer activity and specificity of whole accessible regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by the observation that KIT_114-D(A) is the most active full region but tiles with higher activity exist in other regions. This highlights a limitation of the tiling approach and suggests context-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Motif enrichment analysis reveals MITF (E-box) is enriched in both active and accessible MEL tiles, SOX only in accessible tiles, and AP-1 only in active tiles, with significant enrichment of MITF and SOX10 ChIP-seq signals in MEL-specific regions (p<10^-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are supported by HOMER motif enrichment analysis and statistical analysis of ChIP-seq data with highly significant p-values. The discrepancy between SOX mutation effects and lack of enrichment in active tiles (C59) is acknowledged as potentially due to limited sample size, which is appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Luciferase assays confirm that mutation of MITF or SOX binding sites significantly reduces MEL enhancer activity in three tested ATAC regions, while mutating ZEB motifs increases activity in two regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by luciferase assay data in MM001 with appropriate statistical testing. This provides independent validation of the MPRA findings using a different assay system, strengthening the conclusions about TF binding site functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In a SOX10-knockdown library, 15.1% of selected ATAC-seq peaks exhibit enhancer function, with only MITF ChIP-seq signal enriched in active tiles, indicating SOX10-dependent regions containing MITF sites are preferentially active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by MPRA data in MM087 and GSEA analysis of ChIP-seq data. The low success rate (15.1%) contrasts with the H3K27ac-based approach, and the MITF enrichment provides mechanistic insight into which SOX10-dependent regions are functional enhancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Synthetic enhancer experiments reveal that MEL enhancer activity progressively increases with SOX motif number, MITF motifs additionally increase activity only when SOX is present, and the number of binding sites is the predominant factor determining activity regardless of positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are supported by MPRA data from synthetic SOX-MITF motif combinations and confirmed by DeepMEL2 predictions. This demonstrates a clear cis-regulatory grammar for MEL enhancers, with support from published work on pluripotency enhancers (King et al., 2020). This is a major mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "There is an interaction between SOX and MITF where SOX dimer motifs greatly increase activity of MITF-containing enhancers, though the mechanism (direct cooperation vs. pioneer function) remains unclear, and SOX motifs are not strictly required in enhancers with few MITF motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 are supported by synthetic MPRA data and tiling/luciferase data showing active sequences with few MITF and no SOX motifs. The speculation about mechanisms (C118-C120) is appropriately qualified with citation to relevant literature (Julian et al., 2017). The nuanced conclusion acknowledges complexity in the regulatory grammar.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "AP-1 shows positive effects on enhancer activity in all cell lines while TEAD shows limited effects; in COL5A1_-17-D, AP-1 drives activity in specific tiles, with a ZEB repressor motif suppressing activity in adjacent tiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 are supported by MPRA data comparing wild-type and mutant tiles, with DeepExplainer analysis identifying the ZEB repressor motif. The agreement between DeepMEL2 predictions and observed activity (C79) validates the model's utility. The identification of both activator and repressor elements demonstrates regulatory complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Only AP-1 is enriched in both active and accessible MES tiles, with AP-1 ChIP-seq signal enriched in active H3K27ac regions (p<10^-16), and luciferase assays confirming AP-1 is necessary for MES enhancer activity while TEAD's cis-regulatory role remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by HOMER motif enrichment, highly significant ChIP-seq enrichment statistics, luciferase assays, and MPRA data. The conclusion that only AP-1 has direct effects while TEAD's role is unknown is appropriately cautious given the limited TEAD mutation effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The MPRA library design allowed precise localization of enhancer activity, but 190 bp tiles don't always capture full regulatory information, with activator and repressor elements spread over >190 bp in regions like KIT_114DA and COL5A1_-17-D, necessitating ~500 bp sequences for confident evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C100-C102 are supported by comparison of activity between different sequence lengths and detailed analysis of specific regions. The recommendation for ~500 bp sequences (C102) is a reasonable inference from the data, though it represents a methodological limitation rather than a definitive requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Not all regions with similar chromatin profiles harbor enhancer activity, suggesting enhancer cooperativity may be required, and deep learning models like DeepMEL2 provide powerful tools for identifying key TFs and evaluating activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by MPRA data from multiple regions near the same genes, with C104 supported by citations to published work (Hnisz et al., 2015; Huang et al., 2016). The utility of DeepMEL2 (C105) is demonstrated throughout the study despite its limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "MES enhancers show a gradient of activity (MM001 < intermediate < MES) that doesn't match chromatin profiles, more pronounced with short sequences, possibly due to AP-1 stress activation or episomal assay artifacts, requiring genome-integrated assays for clarification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C108 are supported by MPRA data, but C109-C112 are speculative explanations. The discrepancy between enhancer activity and chromatin profiles is clearly demonstrated, but the mechanistic explanations remain hypothetical. The suggestion for genome-integrated assays (C112) is appropriate but indicates the current data cannot definitively explain the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132"
+    ],
+    "result": "Short enhancer sequences may be less efficiently chromatinized in episomal reporters, potentially uncoupling measured activities from endogenous locus behavior, with evidence including reduced SOX influence and increased ectopic activation in shorter sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C128 are supported by data comparing different sequence lengths, but C124, C126, C129-C130, and C132 are speculative. While the hypothesis about differential chromatinization is plausible and supported by citation (Riu et al., 2007; Kheradpour et al., 2013), it remains unproven. The suggestion for integrated MPRA or chromatin accessibility measurements (C132) indicates additional experiments are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Melanoma subtype-specific enhancers can be identified down to 190 bp, synthetic MEL enhancers can be designed by adding SOX and MITF motifs to random sequences with activity controlled by motif number, opening avenues for enhancer/gene therapy applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133, C135-C136 are supported by tiling MPRA data and synthetic enhancer experiments. However, C134 and C137 are speculative about future applications. While the technical feasibility is demonstrated, the therapeutic utility remains to be established. The claim about therapy applications should be considered preliminary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Some enhancers may rely on 3D chromatin structure and enhancer-promoter looping for activation via long-range interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is speculation supported by citation (Liu et al., 2017b) but not directly tested in this study. This represents a potential explanation for why some enhancers don't show activity in the episomal assay, but no experimental evidence is provided to support this specific mechanism.",
+    "result_type": "MINOR"
+  }
+]

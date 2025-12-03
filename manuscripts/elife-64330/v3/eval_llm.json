@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C39",
+      "C41",
+      "C66",
+      "C67",
+      "C70",
+      "C74",
+      "C91",
+      "C92"
+    ],
+    "result": "COVID-19 patients show significant reductions in mRNA transcripts for key regulatory proteins in the kallikrein-kinin, coagulation, and fibrinolytic pathways in BALF. Specifically, C1-inhibitor (80-fold decrease), ACE (8-fold decrease), thrombomodulin (22-fold decrease), EPCR (33-fold decrease), protein S (54-fold decrease), uPA (37-fold decrease), and uPAR (42-fold decrease) were all significantly reduced, while protein C inhibitor was increased 786-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C39, C41, C66-C67, C70, C74, C91-C92 report consistent transcriptional changes with statistical significance (FDR values provided in Table 1). The data are derived from RNA-seq analysis with appropriate controls and statistical methods (edgeR with Benjamini-Hochberg correction). The magnitude and direction of changes are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C8",
+      "C48",
+      "C49"
+    ],
+    "result": "Tissue factor (TF) transcripts were not increased in COVID-19 BALF compared to controls, while TFPI transcripts increased 8-fold. This suggests that pulmonary fibrin deposition does not stem from enhanced local TF production and that COVID-19 may dampen TF-dependent mechanisms in the lungs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C8 report direct observations from Table 1 showing no significant change in F3 (fold change -1.0, FDR=1) and 8-fold increase in TFPI. The inference in C48-C49 is reasonable given that TF upregulation is typical in inflammatory conditions (C43) but absent here, though the mechanistic interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "FXII transcripts were slightly decreased (4-fold) while FXI (81-fold increase) and FIX (190-fold increase) transcripts were substantially elevated in COVID-19 BALF. Local increases in FIX or FXI expression may enhance thrombin generation and promote thrombus formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54, C56-C57 report direct observations from Table 1. However, C59 is speculative ('Perhaps...may enhance') and the authors acknowledge uncertainty about whether pulmonary tissues normally produce FXI or FIX. The functional significance of local production versus systemic sources is unclear, and protein-level validation is absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Fibrinogen chain transcripts (FGA, FGB, FGG) were increased in COVID-19 BALF, suggesting local fibrinogen expression is upregulated during the acute phase response and may provide additional substrate for local thrombin-mediated fibrin production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 reports direct observations from Table 1 showing increased fibrinogen transcripts. However, C89-C90 involve inference about functional significance. While fibrinogen is primarily hepatocyte-derived (C85), local lung production has been reported (C86-C87). The contribution of local versus systemic fibrinogen to pathology remains unclear without protein measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C72",
+      "C73"
+    ],
+    "result": "Protein C transcripts were markedly increased (227-fold) in COVID-19 BALF, consistent with moderately elevated plasma protein C levels in COVID-19 patients. Protein S transcripts were reduced (54-fold), consistent with moderately reduced plasma protein S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 reports direct transcriptional data from the study. Claims C72-C73 cite published clinical observations (Panigada et al., 2020) showing concordance between BALF transcript patterns and plasma protein levels, providing external validation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "tPA transcripts were very low in healthy BALF and elevated 5-fold in COVID-19 BALF, but absolute expression remained low compared to uPA and uPAR in controls. Plasminogen transcripts were also elevated but remained low compared to other transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 report direct observations from the RNA-seq data with reference to Table 1 and Figure 2. The distinction between fold-change and absolute expression levels is appropriately noted, providing important context for interpreting the biological significance of these changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C76",
+      "C97",
+      "C100",
+      "C106"
+    ],
+    "result": "The transcriptional changes indicate enhanced propagation of coagulation and decreased fibrinolysis as drivers of coagulopathy in COVID-19 lungs. Reduced expression of thrombomodulin, EPCR, uPA, and uPAR would compromise anticoagulant and fibrinolytic pathway functions, suggesting diminished capacity to downregulate local thrombin generation and loss of local fibrinolytic capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C76, C97, C100, C106 represent mechanistic inferences from the transcriptional data (C3-C7, C66-C67, C91-C92). The reasoning is sound given established knowledge about these pathways (C60-C65, C77-C83), though direct functional validation is lacking. The conclusions are appropriately qualified as suggestions rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Pronounced transcriptional changes in coagulation, fibrinolysis, and inflammation-related genes create an environment where plasma proteins are exposed to extravascular space, resulting in increased fibrin production and reduced degradation. These changes enable fibrin deposits observed in autopsies and contribute to viral virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 summarizes the study findings. Claims C101-C104 integrate transcriptional data with the bradykinin storm hypothesis and autopsy findings (C17-C20, C103). While the logic is coherent, the causal chain from transcriptional changes to protein function to pathological outcomes lacks direct experimental validation. The contribution to 'virulence' (C104) is particularly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C107"
+    ],
+    "result": "The lack of F3 increase coupled with TFPI increase raises the possibility that pathways unrelated to the FVIIa/TF complex may play a significant role in COVID-19-associated thrombosis. Changes in regulation or activation of the plasma kallikrein-kinin system and contact activation may be important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105 and C107 are explicitly speculative ('raises the possibility', 'may be important'). While the observations about F3/TFPI are data-driven (C46-C47), the mechanistic implications remain hypothetical. Alternative explanations for thrombosis are not systematically evaluated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "COVID-19 patients exhibit extensive fibrin deposition in lungs, altered circulating coagulation proteins, and various pathological features including fibrin in alveolar capillaries, thrombi in arteries and arterioles, and elevated levels of fibrinogen, factor VIII, von Willebrand factor, and D-dimer. These features contribute to hypoxemia through restricted oxygen transfer and ventilation-perfusion defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C17-C29 cite established observations from multiple published autopsy and clinical studies. These represent prior knowledge that motivates the current study rather than novel findings. The citations are appropriate and the characterization of COVID-19 pathology is well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study analyzed 9 BALF samples from 5 severe COVID-19 patients in Wuhan ICU (late December 2019) compared to 40 controls with diverse morbidities (smokers/non-smokers, asthmatics/non-asthmatics, obese/non-obese). The diverse control group represents an informative control as statistically significant changes are not just subtle variance shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C120 accurately describe the study design with reference to Table 2. However, C121's assertion that the diverse control group is 'informative' is debatable. The small COVID-19 sample size (n=5 patients, 9 samples) and heterogeneous control group may introduce confounding. The controls were from a different study (asthma/obesity) and may not represent healthy lung baseline. Statistical power is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C71",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Background knowledge claims about the kallikrein-kinin system, coagulation pathways, anticoagulant mechanisms, and fibrinolytic system are established and well-cited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38, C40, C42-C45, C50-C53, C55, C60-C65, C71, C75, C77-C85 represent established knowledge about hemostatic pathways, appropriately cited from the literature. These provide necessary context for interpreting the transcriptional findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The bradykinin storm model for COVID-19 pathogenesis was previously developed by the authors and has been supported by clinical studies. COVID-19 triggers a bradykinin storm involving increased bradykinin production, reduced degradation, and increased receptor expression, enhancing vasodilation and vascular permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 appropriately cite prior work by the authors and subsequent clinical validation studies. Claims C108-C111 reference this established model to contextualize the current findings. While the bradykinin storm hypothesis itself is not evaluated here, the citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C58"
+    ],
+    "result": "Background claims about SARS-CoV-2 tissue tropism, COVID-19 disease progression timeline, and correlations between FIX/FXI levels and thrombotic risk are supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C58 cite published literature to establish context. These represent established knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Fibrin deposits and thrombi have been observed in kidney and spleen of COVID-19 patients. It is speculated that transcriptional changes observed in BALF may occur in these other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 cite published observations. Claim C114 is explicitly speculative ('tempting to speculate') and lacks supporting data. The study only examined BALF, so extrapolation to other organs is hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "SARS-CoV-2 is associated with reduced expression of thrombomodulin and EPCR on vascular endothelium based on reduced transcripts in BALF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 infers protein expression on vascular endothelium from BALF transcripts (C66-C67). However, BALF contains multiple cell types (lung parenchymal, epithelial, alveolar, immune cells) and the specific cellular source of these transcripts is not identified. The inference about vascular endothelium specifically is not directly validated.",
+    "result_type": "MINOR"
+  }
+]

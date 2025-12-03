@@ -1,0 +1,1743 @@
+{
+  "submission": {
+    "id": "69a3e2b3-c9c5-44f7-b990-a614eea6cf12",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:51:25.754451Z",
+    "updated_at": "2025-12-03T14:51:25.754451Z"
+  },
+  "content": [
+    {
+      "id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "submission_id": "69a3e2b3-c9c5-44f7-b990-a614eea6cf12",
+      "content_type": "manuscript",
+      "content_text": "# Pre-existing chromosomal polymorphisms in pathogenic E. coli potentiate the evolution of resistance to a last-resort antibiotic\n\n## Authors\n\n- Pramod K Jangir<sup>1</sup> ([ORCID: 0000-0001-8330-0655](https://orcid.org/0000-0001-8330-0655)) \u2020\n- Qiue Yang<sup>2</sup>\n- Liam P Shaw<sup>1</sup>\n- Julio Diaz Caballero<sup>1</sup>\n- Lois Ogunlana<sup>1</sup>\n- Rachel Wheatley<sup>1</sup> ([ORCID: 0000-0003-1212-2286](https://orcid.org/0000-0003-1212-2286))\n- Timothy Walsh<sup>1</sup>\n- R Craig MacLean<sup>1</sup> ([ORCID: 0000-0002-7941-813X](https://orcid.org/0000-0002-7941-813X)) \u2020\n\n### Affiliations\n\n1. Department of Zoology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n2. Fujian Provincial Key Laboratory of Soil Environmental Health and Regulation, College of Resources and Environment, Fujian Agriculture and Forestry University Fuzhou China ([ROR:04kx2sy84](https://ror.org/04kx2sy84))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacterial pathogens show high levels of chromosomal genetic diversity, but the influence of this diversity on the evolution of antibiotic resistance by plasmid acquisition remains unclear. Here, we address this problem in the context of colistin, a \u2018last line of defence\u2019 antibiotic. Using experimental evolution, we show that a plasmid carrying the MCR-1 colistin resistance gene dramatically increases the ability of Escherichia coli to evolve high-level colistin resistance by acquiring mutations in lpxC, an essential chromosomal gene involved in lipopolysaccharide biosynthesis. Crucially, lpxC mutations increase colistin resistance in the presence of the MCR-1 gene, but decrease the resistance of wild-type cells, revealing positive sign epistasis for antibiotic resistance between the chromosomal mutations and a mobile resistance gene. Analysis of public genomic datasets shows that lpxC polymorphisms are common in pathogenic E. coli, including those carrying MCR-1, highlighting the clinical relevance of this interaction. Importantly, lpxC diversity is high in pathogenic E. coli from regions with no history of MCR-1 acquisition, suggesting that pre-existing lpxC polymorphisms potentiated the evolution of high-level colistin resistance by MCR-1 acquisition. More broadly, these findings highlight the importance of standing genetic variation and plasmid/chromosomal interactions in the evolutionary dynamics of antibiotic resistance.\n\n## Introduction\n\nDecades of research on the genetics of antibiotic resistance have shown that pathogenic bacteria evolve resistance to clinically relevant doses of antibiotics by acquiring a small number of mutations or by acquiring mobile elements carrying dedicated antibiotic resistance gene (MacLean and San Millan, 2019; Partridge et al., 2018). An open and unresolved question in evolutionary biology and genetics is the extent to which the other genes in bacterial genomes contribute to the evolution of resistance by modifying the rate of acquisition and effects of resistance determinants (Luka\u010di\u0161inov\u00e1 et al., 2020; Vogwill et al., 2014; Bethke et al., 2020; Card et al., 2019; Vogwill et al., 2016; Bottery et al., 2017; MacLean et al., 2010; Torres Ortiz et al., 2021).\n\nMany of the bacterial pathogens where resistance poses a high risk to public health are opportunistic pathogens with high levels of chromosomal genetic diversity (Baker et al., 2018; Didelot et al., 2012; Smith et al., 2000). Although these pathogens acquire resistance determinants against a backdrop of extensive chromosomal diversity, the importance of this diversity in shaping the evolution of resistance remains poorly understood (Torres Ortiz et al., 2021; Baker et al., 2018; Didelot et al., 2012; Smith et al., 2000; Papkou et al., 2020). One approach to addressing this problem has been to challenge diverse collections of clinical/environmental strains with evolving resistance to a controlled antibiotic pressure using laboratory experimental evolution (Vogwill et al., 2014; Bethke et al., 2020; Papkou et al., 2020; Gifford et al., 2018). These studies have shown that strains evolve resistance at different rates, and it has been possible to identify \u2018potentiator\u2019 genes that accelerate the evolution of resistance by epistatically increasing the effects of canonical chromosomal resistance mutations (Papkou et al., 2020; Gifford et al., 2018). For example, strains of Staphylococcus aureus with high levels of expression of the norA efflux pump rapidly evolve resistance to fluoroquinolone antibiotics because high levels of norA expression increase the effect of classical fluoroquinolone resistance mutations in DNA topoisomerase (Papkou et al., 2020). Although these studies have focussed on resistance evolution by chromosomal mutations, most resistance in important pathogenic bacteria is caused by the acquisition of plasmids carrying mobile resistance genes (MacLean and San Millan, 2019; Partridge et al., 2018). It is equally conceivable that chromosomal polymorphisms shape the evolution of resistance by altering the acquisition and fitness effects of horizontally acquired resistance genes (Bottery et al., 2017).\n\nOne important challenge of using experimental evolution to identify potentiator genes is that pathogen isolates often differ from each other by thousands of single-nucleotide polymorphisms (SNPs) and variation in the presence/absence of accessory genes. Previous studies have used transcriptomic methods and genome-wide association study to identify genes that cause variation in evolvability between strains, but identifying these causal variants is challenging using this approach (Torres Ortiz et al., 2021; Baker et al., 2018; Didelot et al., 2012; Smith et al., 2000; Papkou et al., 2020). Given that potentiator genes interact epistatically with resistance genes, it follows that the presence of a resistance gene should also generate selection on potentiator genes under antibiotic pressure. According to this logic, comparing genomic changes between populations that carry established resistance determinants and sensitive control populations that arise during selection for elevated antibiotic resistance should provide a simple way to search for potentiator genes that interact epistatically with classical \u2018resistance\u2019 genes.\n\nTo test this idea, we challenged populations of Escherichia coli carrying an MCR-1 (mobile colistin resistance) plasmid and wild-type control populations with adapting to colistin, a last line of defence antibiotic that is used in the treatment of infections caused by multidrug-resistant pathogens (Li et al., 2006). E. coli has adapted to the widespread use of colistin in agriculture by acquiring a range of conjugative plasmids carrying the MCR-1 gene (Liu et al., 2016; Sun et al., 2018; Wang et al., 2018). MCR-1 is selectively advantageous in the presence of colistin (Liu et al., 2016; Sun et al., 2018), but it generates a colistin resistance phenotype that is of borderline clinical significance (Liu et al., 2016; Bardet et al., 2017; Doumith et al., 2016; Yang et al., 2017). In our experiments, MCR-1 populations consistently evolved high-level colistin resistance by acquiring mutations in lpxC, an essential gene involved in lipopolysaccharide (LPS) biosynthesis, that interacts epistatically with MCR-1 to increase resistance. Wild-type populations, on the other hand, were unable to evolve increased colistin resistance under the strong selective regime used in our experiments. We then tested for associations between MCR-1 and lpxC polymorphisms in pathogenic and commensal E. coli using large genomic datasets to better understand the consequences of this interaction in vivo.\n\n## Results\n\n### Accelerated evolution of colistin resistance in MCR-1 E. coli\n\nTo search for genes that interact with MCR-1 to increase colistin resistance, we evolved populations of E. coli carrying MCR-1 encoded on an IncX4 plasmid (MCREC) and wild-type control populations under strong selection for increased colistin resistance. Our selection experiment used an \u2018evolutionary ramp\u2019 in which the concentration of colistin was doubled daily from a very low dose (1/8 minimum inhibitory concentration [MIC]) to a very high dose (16\u00d7 MIC) (see Methods). Antibiotic doses were standardized relative to the MICs of the two parental strains to ensure that the strength of selection was equivalent for the two strains. The rapid increase in antibiotic concentration in the \u2018evolutionary ramp\u2019 treatment ensures that populations must either evolve increased resistance or face extinction (once concentrations exceed the MIC of the parental strains) (Gifford et al., 2018; San Millan et al., 2016). Thus, the rate of populations extinction defines the measure of the evolvability of a strain.\n\nPrevious selection experiments have shown that mutants with low resistance tend to have high resistance evolvability, generating characteristic patterns of diminishing returns adaptation (MacLean et al., 2010) that has been reported for other microbial phenotypes (Kryazhimskiy et al., 2014; Wiser et al., 2013). All else being equal, we would therefore expect that control populations (initial MIC = 0.5mg/l) would have higher evolvability than the MCREC populations (initial MIC = 4mg/l). In contrast to this expectation, MCREC populations showed consistent evidence of adaptation to colistin, whereas only a very small minority of control populations were able to evolve increased resistance (Figure 1; proportional hazard likelihood ratio = 116, p = <0.0001).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig1-v1.jpg)\n\n**Figure 1.:** The plot shows the survival of wild-type and MCR-1 carrying populations of E. coli (n\u2009=\u2009120) populations for E. coli and n = 60 populations for E. coli + MCR-1 (PN23 IncX4) over time under increasing selection for colistin resistance. MCR-1 carrying populations showed increased survival, which is indicative of higher colistin evolvability. The numbers shown at the bottom represent the colistin concentration for wild-type E. coli (black) and for E. coli with MCR-1 (orange).\n\n### Mechanistic basis of the evolution of high-level colistin resistance\n\nThe increased evolvability of MCREC populations suggests that the presence of MCR-1 opened up new pathways to evolving elevated colistin resistance that were not accessible to wild-type populations. To test this idea, we sequenced the genomes of n = 21 independently evolved MCREC clones from day 6 of the experiment (4\u00d7 MIC). All of the evolved clones had increased colistin resistance (mean MIC = 19.2mg/l, range = 8\u201332mg/l) compared to the MCREC parental strain (MIC = 4mg/l) (Supplementary file 1).\n\nStrikingly, the majority of MCREC clones (n = 11/21) carried mutations in LpxC (Figure 2a), an UDP-3-O-acyl-N-acetylglucosamine deacetylase that catalyses the first step in lipid A biosynthesis and is important for membrane composition and asymmetry (Guest et al., 2021; Fivenson and Bernhardt, 2020). lpxC is an essential gene (Beall and Lutkenhaus, 1987), suggesting that its evolution should be constrained. Consistent with this idea, lpxC mutations were clustered in the coding sequence and both of the observed deletions kept the coding sequence in frame. Interestingly, several clones had mutations in the metal- (zinc) binding domain site which is very important for lpxC activity (Jackman et al., 2001; Figure 2b). For example, mutations at positions 79, 238, 242, and 246 lead to a hundred to thousand-fold decrease in lpxC activity (Jackman et al., 2001; Clayton et al., 2013; Lee et al., 2014), and many of our mutations map closely to these important sites (Figure 2b). Mutations in other genes involved in LPS biosynthesis were found in evolved clones that lacked lpxC mutations, including lpxA (n = 2) and rfaY (n = 1) (Figure 2a). Interestingly, a minority of clones lacked mutations and/or structural variants (n = 4). The colistin resistance of these clones did not differ suggesting that adaptive plasticity in gene expression and/or unstable genetic changes (i.e., heteroresistance; Andersson et al., 2019) can also contribute to increased colistin resistance (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig2-v1.jpg)\n\n**Figure 2.:** (a) List of mutations identified in colistin-evolved MCR-1-positive clones. (b) Figure shows the mutations identified in LpxC. LpxC positions 79, 238, 242, and 246 are important for Zn binding and LpxC activity (Jackman et al., 2001). nt \u2013 nucleotide; \u25b3 \u2013 deletion; SNP \u2013 single-nucleotide polymorphism; Indel \u2013 insertions/deletions of nucleotides.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** There was no significant difference between the groups (Wilcoxon rank-sum test). Each clone represents one data point.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The sequence of plasmid PN23 was assembled in a single sequence, and the sequence of plasmid p193 was distributed in three contigs. Plasmid copy number for each population was calculated by dividing the average depth of coverage of each plasmid by the depth of coverage of the chromosome.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** x-Axis represents the position of each CDS in the respective replicon. Coverage was normalized given its GC content and calculated using CNOGpro (Brynildsrud et al., 2015) and the d0-5-1 reference chromosome sequence.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** x-Axis represents the position of each CDS in the respective replicon. Coverage was normalized given its GC content and calculated using CNOGpro (Brynildsrud et al., 2015) and the d0-5-1 reference PN23 plasmid sequence.\n\n### Testing for interactions between LpxC and MCR-1\n\nThe presence of lpxC mutations in MCREC populations suggests that the presence of MCR-1 increases the selective advantage provided by lpxC mutations in the presence of colistin. To test this hypothesis, we focussed on measuring the interaction between MCR-1 and a lpxC mutation from a domain that is critical for LpxC function (i.e., I244N). The MCR-1 natural plasmid used in our experiments (i.e., IncX4:MCR-1) is an intermediate size plasmid (approx. 34kb) that also carries genes for housekeeping and conjugation, as well as cargo genes of unknown function (Yang et al., 2017). To examine the interaction between LpxC and MCR-1 more directly, we cloned MCR-1 into pSEVA121, a low copy number (approx. 5 copies/cell) synthetic plasmid that confers a similar level of colistin resistance (MIC = 5mg/l) to the IncX4:MCR-1 plasmid used the selection experiment (MIC = 4mg/l). The key advantage of the pSEVA system is that this makes it possible to measure the impact of realistic levels of MCR-1 expression while controlling for any background plasmid effects using an empty vector control.\n\nOur approach to measure the interaction between LpxC and MCR-1 was to test for epistasis between these genes in quantitative traits that were key targets of selection in our experiment. Epistasis occurs when different genes make a non-additive contribution to phenotypes (Dur\u00e3o et al., 2018). For any quantitative trait, epistasis (e) can be calculated as e = wAB*wab \u2212 wAbwaB where wAB is the value of the trait in the wild type, ab is the double mutants, and the single mutants are represented as Ab and aB (Trindade et al., 2009). Negative epistasis (e < 0) occurs when the value of the trait is less in the double mutant than would be expected from the single mutant, and vice versa for positive epistasis (e > 0). Although evolutionary biologists typically focus on epistatic interactions for fitness, the same methods can be applied to calculate epistasis for any quantitative trait.\n\nThe rapid increase in colistin concentration in our experiment implies that colistin resistance is likely to have been a key target of selection. MCR-1 increased the colistin resistance of the E. coli parental strain from 0.5 to 4mg/l, which is the clinical breakpoint MIC for colistin resistance (The European Committee on Antimicrobial Susceptibility Testing, 2022). The lpxC mutation, on the other hand, marginally decreased colistin resistance in the wild-type strain (~35% decrease in MIC) (Figure 3a). However, the combination of lpxC and MCR-1 increased colistin resistance to about 2\u00d7 higher than the levels observed in the MCR-1 strain, revealing positive sign epistasis between lpxC and MCR-1 for colistin resistance (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig3-v1.jpg)\n\n**Figure 3.:** (a) Bacterial susceptibility to colistin was tested by measuring minimum inhibitory concentration (MIC) (n = 3 biological replicates per strain). (b) Relative change in membrane surface charge was measured by using fluorescein isothiocyanate-labelled poly-L-lysine (FITC-PLL)-binding assay (n = 5 biological replicates/strain) (see Methods). The changes were compared to wild-type (WT) control strain. (c) Bacterial fitness was measured using in vitro competition assay where strains were competed against a tester E. coli strain carrying a chromosomally integrated GFP (n = 5 biological replicates per competition). Statistical significance was determined by pairwise comparisons using the Wilcoxon rank-sum test, and double asterisks show differences with a p value <0.01. Central horizontal lines represent mean values of biological replicates. WT \u2013 wild type; EV \u2013 empty vector.\n\nElectrostatic attractions occur between colistin, which is positively charged, and the bacterial outer membrane, which is negatively charged. MCR-1 increases resistance to colistin in part by decreasing the net negative charge on the bacterial outer membrane by modifying LPS (Sabnis et al., 2021). Given that lpxC is involved in LPS biosynthesis, we reasoned that lpxC and MCR-1 may interact epistatically to reduce membrane surface charge. As expected, the MCR-1 gene led to a substantial reduction in cell surface charge (Figure 3b). The lpxC mutation led to a small reduction in net cell surface charge that was not statistically significant (Wilcoxon rank-sum test p = 0.150). However, the combination of the lpxC mutation and MCR-1 reduced the surface charge to a greater extent than the MCR-1 alone (Figure 3b). The surface charge of the lpxC-MCR-1 double mutant was marginally less than the additive expectation, providing evidence of weak negative epistasis for cell surface charge (e = \u22120.059, error = 0.0355).\n\nAntibiotic resistance is associated with costs that modulate the selective benefit of resistance (Andersson and Hughes, 2010). Previous work has shown that MCR-1 expression is associated with fitness costs (Yang et al., 2017), and it is possible that lpxC mutations provide a fitness advantage by compensating for the costs of MCR expression. To address this possibility, we measured the fitness of mutants in antibiotic-free culture medium. As expected, MCR-1 was associated with a fitness cost (Figure 3c). lpxC is an essential gene and extensive pleiotropic effects of lpxC mutations have been reported, including defective cell division, altered membrane composition, and leakage of periplasmic enzymes (Young and Silver, 1991; Kloser et al., 1996), suggesting that mutations in lpxC should be deleterious. Consistent with this idea, the lpxC mutation was associated with a high fitness cost in both the presence and absence of MCR-1, allowing us to rule out the possibility that lpxC mutations represent a compensatory adaptation for MCR-1 (Figure 3c). Interestingly, the fitness of double mutant was marginally less than we would expect under an additive model, revealing weak negative epistasis for fitness (\u03b5 = \u22120.0244, error = 0.0089).\n\n### Association between MCR-1 and LpxC in pathogenic E. coli\n\nThe large-scale use of colistin as a growth promoter in agriculture drove the spread of MCR-1 across agricultural, environmental, and human-associated populations of E. coli in South East Asia (Sun et al., 2018; Wang et al., 2018). To test the importance of lpxC in colistin resistance, we searched for lpxC polymorphisms in a recently published dataset of MCREC isolates from China collected from a diversity of agricultural, environmental, and human-associated sources (Shen et al., 2020). Notably, the frequency of lpxC polymorphisms in pathogenic E. coli isolates collected from infections was higher than the level found in patients colonized with E. coli and in the environment (Figure 4\u2014figure supplement 1). Colistin is used as a last line of defence antibiotic for the treatment of infections caused by multidrug-resistant pathogens (Li et al., 2006) and this association between lpxC and MCR-1 in pathogenic E. coli is worrying, as it suggests that high-level colistin resistance may be common in pathogenic MCR-1-positive isolates.\n\nAlthough this association between MCR and lpxC mutations in pathogenic E. coli appears compelling, the population structure of E. coli differs between isolate sources. This is an important issue to address, as it is not clear a priori if the high diversity of lpxC in pathogenic E. coli reflects the high diversity of this niche as opposed to the high diversity of particular phylogroups. In particular, extraintestinal pathogenic E. coli usually belong to phylogroup B2 and D (Picard et al., 1999; Johnson et al., 2001; Moulin-Schouleur et al., 2007), with B2 the main lineage for the majority of bloodstream E. coli infections in the UK (Kallonen et al., 2017). Similarly, the majority of B2 isolates in the Shen dataset were from patients infected with MRCEC (n = 10/18). It is not clear whether these lpxC mutations in pathogenic MCREC were acquired after MCR-1 (as in our experiments) or if these are pre-existing lpxC polymorphisms that were present in the B2 phylogroup prior to the acquisition of MCR-1. To address this issue, we analysed lpxC diversity in genomic datasets of commensal, pathogenic, and animal-associated E. coli from the UK, where MCR-1 is effectively absent (Davies et al., 2020; Shaw et al., 2021). The diversity of lpxC was consistently highest in isolates from the B2 phylogroup in this MCR-1 naive population of E. coli (Figure 5), suggesting that high levels of lpxC in B2 pre-date the acquisition of MCR-1 plasmids by HGT, and that this phylogroup is effectively primed to evolve high-level colistin resistance by MCR-1 plasmid acquisition.\n\nThe vast majority of SNPs seen in lpxC were synonymous (n = 6746/6783), suggesting that lpxC is under strong purifying selection. Only 37/1429 isolates had non-synonymous alleles. Strikingly, the majority were within B2 from the Davies infection dataset (33/37, 89%), despite B2 making up only around half of the filtered dataset (n = 659, 46%). This greater proportion of isolates with non-synonymous SNPs in B2 compared to other phylogroups was significant (chi-squared test p < 0.001, X-squared = 26.7; 33/659 B2 vs. 44/771 non-B2). We verified this higher diversity of lpxC in phylogroup B2 using complete RefSeq assemblies (Figure 5\u2014figure supplement 1). However, RefSeq isolates did not show a greater proportion of non-synonymous SNPs in B2, with both having ~2% of isolates with non-synonymous SNPs (chi-squared test p = 1, X-squared <0.001; 6/278 B2 vs. 35/1611 non-B2). It may be relevant that the Davies dataset was from bloodstream infections whereas RefSeq includes a diverse range of isolates.\n\nThe greater diversity of lpxC in the pathogenic B2 phylogroup across studies is intriguing. Levels of overall genetic diversity are known to differ between E. coli phylogroups, with phylogroup D having the highest nucleotide diversity across 112 core E. coli gene families in a recent study (Touchon et al., 2020). However, phylogroup B2 was found to have similar overall nucleotide diversity to major phylogroups such as A or B1, suggesting that our observation here of higher diversity in lpxC from phylogroup B2 is not simply an artefact of higher overall genetic diversity. Altogether, this analysis suggests that pathogenic populations of E. coli already contain higher levels of standing genetic variation in lpxC, which may pre-dispose them to evolving high-level colistin resistance by acquiring conjugative plasmids carrying MCR-1.\n\nAs a final test for the importance of interactions between lpxC and MCR-1 in clinical settings, we compared the mutations observed in our evolved clones with those found in B2 isolates. We found no shared mutations between the clinical isolates and the lab-evolved isolates, either at the level of individual nucleotides or codons (Figure 5\u2014figure supplement 2). However, it is unclear if we should expect to see an overlap for two reasons.\n\nFirst, the mutations found in clinical isolates likely reflect a combination of beneficial mutations, neutral mutations, and weakly deleterious mutations across multiple strains, whereas the mutations found in our isolates reflect mutations that were beneficial under colistin treatment in a single MCR-1 carrying strain. Given this, it is unclear to what extent we should expect to see a strong overlap of mutated sites, but this is nonetheless an interesting comparison to make.\n\nSecond, our data suggest that a large number of mutations in lpxC can interact with MCR-1 to increase colistin resistance. Experimental evolution studies have shown that while parallel evolution at the level of the gene is quite common, parallelism at the level of individual nucleotides is rare (Stern, 2013; Tenaillon et al., 2012; Schenk et al., 2022). The notable exception to this is cases where strong selective constraints limit the potential number of adaptive mutations, as has been observed for hotspot mutations in DNA gyrase and topoisomerase that are associated with fluoroquinolone resistance (Papkou et al., 2020; Wong et al., 2012). In our evolution experiment, we found no cases of parallel evolution at the nucleotide level and only a single example of codon-level parallelism (I86 S/N), giving an estimate of the probability of codon-level parallelism of (1/92 = 1/81). This low probability of parallel evolution implies that a very large number of mutations in lpxC are likely to interact epistatically with MCR-1 to increase resistance. Given this, it is perhaps not surprising that we did not observe any overlap between lab-evolved mutations and naturally occurring polymorphisms in lpxC. Furthermore, lpxC mutations will have many other impacts beyond colistin resistance. It seems plausible that pathogenic E. coli may have higher lpxC diversity due to the different host environment they may have recently inhabited compared to non-pathogenic E. coli.\n\n## Discussion\n\nThe acquisition of specialized antibiotic resistance genes through horizontal gene transfer has played a key role in the evolution of antibiotic resistance in pathogenic bacteria. One of the key insights from genomics studies has been that human pathogens are highly polymorphic (Baker et al., 2018; Didelot et al., 2012), but the role of chromosomal genetic variation in shaping the acquisition and fitness effects of mobile resistance genes remains poorly understood (Bottery et al., 2017; McNally et al., 2016; San Millan et al., 2015). Here, we show that the evolution of high-level colistin resistance is driven by epistatic interactions between the MCR-1 mobile colistin resistance and lpxC, a chromosomal gene involved in LPS biosynthesis (Figures 1\u20143). lpxC mutations are more common in pathogenic MCR-positive E. coli (MCREC) than commensal MCREC, highlighting the clinical relevance of this interaction (Figure 4). Crucially, lpxC polymorphisms are over-represented in pathogenic lineages for E. coli from populations with no history of MCR-1 acquisition, suggesting that pre-existing polymorphisms in lpxC potentiated the evolution of high-level colistin resistance through the acquisition of conjugative plasmids carrying MCR-1 (Figure 5). The underlying causes of high lpxC diversity in pathogenic E. coli are unclear, and we hope that future work will shed light on the impact of lpxC polymorphisms on E. coli virulence and infection.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig4-v1.jpg)\n\n**Figure 4.:** Data shown are from n = 673 unfiltered MCR-1 plasmid carrying isolates collected in 2016 by Shen et al., 2020. (a) Single-nucleotide polymorphisms (SNPs) in lpxC determined by the alignment of the lpxC sequence for each assembled isolate against the reference lpxC sequence from E. coli MG1655 (NC_000913.3:106557\u2013107474). Mean values (\u00b1 standard error) are shown by red points (lines). Isolates from patients infected with Enterobacteriaceae have significantly more SNPs than other sources, for example, those from patients only colonized with Enterobacteriaceae (Wilcoxon rank-sum test, W = 1150, p < 0.001). ***p < 0.001. However, this difference is associated with (b) the population structure of E. coli, with a greater proportion of phylogroups B2 and D in isolates from infected patients. The same plot for filtered isolates (Figure 4\u2014figure supplement 1) showed a similar pattern although the comparison between patients infected vs. colonized was not significant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig4-figsupp1-v1.jpg)\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig5-v1.jpg)\n\n**Figure 5.:** The diversity of lpxC within phylogroup B2 is greater across three different datasets (called Davies et al., 2020, Shaw et al., 2021, Shen et al., 2020) (see Methods for details). Left: boxplots of the pairwise single-nucleotide polymorphisms (SNPs) between lpxC sequences of the same phylogroup within different studies. Dashed line shows the median pairwise distance (six SNPs) between isolates of different phylogroups. Right: a midpoint-rooted neighbour-joining tree of lpxC diversity, with coloured tips in each panel showing the location of isolates from each main phylogroup (A-G). Assembled isolates were filtered to only include high-quality assemblies (see Methods).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig5-figsupp1-v1.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78834/elife-78834-fig5-figsupp2-v1.jpg)\n\nOne of the most surprising features of our results is that approximately 20% of clones that were recovered from MCR-1-positive populations growing at 4\u00d7 MIC (16mg/l) did not have any detectable mutations or structural variants, a phenomenon that we have also reported in Pseudomonas aeruginosa (Kapel et al., 2022). There are a number of examples of adaptation to colistin through the acquisition of unstable resistance mutations that rapidly revert when selection for resistance is relaxed (i.e. heteroresistance Andersson et al., 2019). Importantly, we cultured clones for DNA extraction on a medium containing a low dose of colistin (1mg/l, \u00bc MIC) that may not have generated effective selection for the maintenance of unstable resistance determinants. Alternatively, it is possible that these clones were sampled from populations that adapted to colistin phenotypically, for example, due to the growth of a subset of cells with altered expression of genes involved in LPS biosynthesis. Given the importance of colistin as a \u2018last line of defence\u2019 antibiotic, an important goal for future work will be to investigate the mechanisms that underpin revertible colistin resistance and how these interact with MCR-1.\n\nThere is growing evidence that standing genetic variation (i.e., pre-existing variation) in pathogen species has played an important role in the evolution of antibiotic resistance. For example, at least two of the major lineages of methicillin-resistant S. aureus originated well before the clinical introduction of methicillin (Harkins et al., 2017; Gill et al., 2021). Our study builds on previous work (Vogwill et al., 2014; Bethke et al., 2020; Papkou et al., 2020; Gifford et al., 2018) by demonstrating that epistatic interactions between mobile resistance genes and chromosomal variants shape the evolution of resistance. One limitation of our study is that we only focussed on interactions between the chromosome and the MCR-1 resistance gene. We suggest that an important goal for future work will be to study the importance of genetic interactions between bacterial chromosomes and mobile elements that transfer AMR genes (Partridge et al., 2018) more broadly. We speculate that chromosome\u2013mobile element interactions likely to be particularly important for highly mobile resistance genes, such as MCR-1 (Liu et al., 2016; Wang et al., 2018; Wang et al., 2017) and carbapenemases (Le\u00f3n-Sampedro et al., 2021) that are rapidly transferred between divergent bacterial strains and species. Our findings suggest that understanding interactions between mobile resistance genes and background genetic variation could help to develop methods for predicting the spread of resistance in pathogen populations, which is an important goal for evolutionary microbiology.\n\n## Methods\n\n### Bacterial strains and growth condition\n\nAll the experiments were carried out in E. coli J53. Experiments were conducted in Luria-Bertani (LB) medium (Sigma-Aldrich).\n\n### pSEVA:MCR-1 vector construction\n\nA synthetic MCR-1 plasmid was constructed by cloning mcr-1 gene into pSEVA121 plasmid (Wong et al., 2012). The mcr-1 gene along with its natural promoter was amplified from the natural PN16 (IncI2) plasmid using Q5 High-Fidelity DNA Polymerase (New England BioLabs). The amplified and purified mcr-1 fragment was assembled together with PCR-amplified pSEVA121 backbone using NEBuilder HiFi DNA Assembly Master Mix according to the manufacturer\u2019s instructions. The assembled plasmid was then transformed into E. coli J53 using the standard electroporation method. Cells were recovered in 1 ml SOC (super optimal broth with catabolite repression) medium, followed by 1-hr incubation at 37\u00b0C. Different dilutions of transformant mixture were made and were plated onto Petri dishes containing LB agar supplemented with 100 \u00b5g/ml ampicillin. The culture plates were incubated at 37\u00b0C for overnight. PCR and sequence verification by Sanger sequencing were performed to ensure the presence of the correctly assembled recombinant plasmid. A full list of the primers used is given in Supplementary file 2.\n\n### Experimental evolution\n\nThe experimental evolution experiment was carried out using our previously established \u2018evolutionary ramp\u2019 method (Gifford et al., 2018; San Millan et al., 2016). Briefly, wild-type E. coli (control) and E. coli with PN23 IncX4:MCR-1 plasmid were grown on LB agar medium supplemented with appropriate antibiotic at 37\u00b0C for overnight. To ensure reproducibility, we had 120 and 60 independent replicates for E. coli control and E. coli-MCR-1 strain (MCREC), respectively. Parallel cultures were propagated in 96-well microtitre plates where the inner 60 wells were used for bacterial cultures and the outer wells for blank measurement and contamination controls. We used checkerboard layout on the plate to control for potential cross-contaminations. The plates were incubated for 22 hr and then overnight grown cultures were diluted 1:400-fold into fresh LB medium plates with increasing concentration of colistin. The concentration of colistin was doubled daily from the very low dose (1/8 MIC) to a very high dose (16\u00d7 MIC). At the end of each transfer, the optical density was measured, and the experiment was carried out until more than >90% of cultures have gone extinct (i.e. OD595 less than 0.05). In total, eight transfers were performed in LB medium with colistin. The evolved E. coli-MCR-1 and control populations were preserved at \u221280\u00b0C in 15% glycerol solution. We tested for a difference between the survival of control populations (n = 120) and plasmid carrying populations (n = 60) using Cox\u2019s proportional hazard model. Each population was considered extinct on the day when OD fell below our 0.05 threshold.\n\n### DNA extraction, whole-genome sequencing, and data analysis\n\nTo identify the polymorphisms associated with colistin resistance evolution, we selected 21 evolved populations from day 6 (4\u00d7 MIC). Bacterial DNA was extracted using DNeasy Blood & Tissue Kit (Qiagen) on a QIAcube automated system (Qiagen). The concentration of each genomic DNA sample was determined using a QuantiFluor dsDNA System (Promega) following the manufacturer\u2019s protocol. The purified genomic DNA samples were subjected to Illumina HiSeq 4000 platform at the Oxford Genomics Centre (Wellcome Centre for Human Genetics, University of Oxford, UK). The ancestral isolate was sequenced on an Oxford nanopore MinION platform using a FLO-MIN106 flow-cell and the SQK-LSK109 Ligation Sequencing kit.\n\nRaw Illumina reads were quality controlled with Trimmomatic v. 0.39 (Bolger et al., 2014) using the ILLUMINACLIP (2:30:10) and SLIDING WINDOW (4:15) parameters. Raw nanopore reads were basecalled using guppy v. 0.0.0+7,969d57 and reads were demultiplexed using qcat v. 1.1.0 (https://github.com/nanoporetech/qcat; Rescheneder, 2019). Resulting sequencing reads were assembled using unicycler v. 0.4.8 (Wick et al., 2017), which used SAMtools v. 1.9 (Li et al., 2009), pilon v. 1.23 (Walker et al., 2014), and bowtie2 v. 2.3.5.1 (Langmead and Salzberg, 2012), in hybrid mode with respective Illumina reads. The resulting assembly was annotated using Prokka v. 1.14.0 (Seemann, 2014).\n\nSmall variants were identified using breseq v. 0.34.0 (Deatherage and Barrick, 2014) in the polymorphism prediction mode, which implemented bowtie2 v. 2.3.5.1. Copy number variants were estimated with the default parameters of the package CNOGpro v. 1.1 (Brynildsrud et al., 2015) in R (R Development Core Team, 2021). The plasmid copy number was calculated by dividing the average sequencing coverage of each plasmid by the average sequencing coverage of the chromosome using the SAMtools depth algorithm (Figure 2\u2014figure supplements 2\u20134).\n\n### Construction of I244N lpxC mutant (lpxC*)\n\nA previously described pORTMAGE method (Nyerges et al., 2016) was applied to introduce I244N lpxC mutation into the wild-type E. coli J53. The mutant was constructed via synthetic ssDNA-mediated recombineering using the pORTMAGE3 plasmid. The MODEST tool was used to design 90 nucleotides long ssDNA oligos that had complementary sequences to the replicating lagging strand with a minimized secondary structure (\u2265\u221212 kcal mol\u22121) (Bonde et al., 2014). The oligos were ordered from Integrated DNA Technologies (Coralville, IA, USA). For the recombineering, pORTMAGE3 vector was transformed into E. coli J53 electrocompetent cells using standard electroporation method. E. coli carrying pORTMAGE3 vector was further used for recombineering. pORTMAGE3 was induced at 42\u00b0C for 15 min to allow for efficient mutation incorporation and to avoid off-target mutagenesis. 1 \u00b5l of the 100 \u00b5M mutation carrying oligo was transformed into induced electrocompetent cells. Following the electroporation, cells were recovered in 5 ml Terrific-Broth (TB) media (24 g yeast extract, 12 g tryptone, 9.4 g K2HPO4, and 2 g KH2PO4 per 1\u2009l of water) and incubated at 30\u00b0C for 60 min. After the incubation period, 5 ml of LB medium was added, and cells were further incubated at 30\u00b0C overnight. Appropriate dilutions of the cultures were then plated onto LB agar plates to form individual colonies and incubated at 30\u00b0C overnight. Individual colonies were screened for the mutation using Sanger capillary-sequencing. Finally, the pORTMAGE3 plasmid was cured from the sequence-verified colony by growing the cells at 42\u00b0C for overnight in antibiotic-free LB medium.\n\nA list of oligos used for the mutation construction is given in Supplementary file 2.\n\n### Determination of MIC\n\nMICs were determined using a standard serial broth dilution method with a minor modification that we previously optimized to capture small differences in MIC (Kintses et al., 2019). Specifically, smaller colistin concentration steps were used (typically 1.5-fold). Ten-step serial dilution of colistin was prepared in fresh LB medium in 96-well microtitre plates. Three wells contained only LB medium to monitor the bacterial growth in the absence of colistin. Bacterial strains were grown in LB medium supplemented with appropriate antibiotic (100 \u03bcg/ml ampicillin for E. coli pSEVA:MCR-1) at 30\u00b0C for overnight. Following overnight incubation, approximately 5 \u00d7 105 cells were inoculated into the each well of the 96-well microtitre plate. Three independent replicates for each strain and the corresponding control were used. The top and bottom row in the 96-well plate were filled with LB medium to obtain the background OD value of the growth medium. Plates were incubated at 30\u00b0C with continuous shaking at 250 rpm. After 20\u201324 hr of incubation, OD600 values were measured in a microplate reader (Biotek Synergy 2). After background subtraction, MIC was defined as the lowest concentration of colistin where the OD600 <0.05.\n\n### Membrane surface charge measurement\n\nTo measure bacterial membrane surface charge, we carried out a fluorescein isothiocyanate-labelled poly-L-lysine- (FITC-PLL) (Sigma) binding assay (Kintses et al., 2019; Rossetti et al., 2004). FITC-PLL is a polycationic molecule that binds to an anionic lipid membrane in a charge-dependent manner and is used to investigate the interaction between cationic peptides and charged lipid bilayer membranes. The assay was performed as previously described (Kintses et al., 2019). Briefly, bacterial cells were grown overnight in LB medium, and then centrifuged, and washed twice with 1\u00d7 phosphate-buffered saline (PBS) buffer (pH 7.4). The washed bacterial cells were re-suspended in 1\u00d7 PBS buffer to a final OD600 of 0.1. A freshly prepared FITC-PLL solution was added to the bacterial suspension at a final concentration of 6.5 \u00b5g/ml. The suspension was incubated at room temperature for 10 min, and pelleted by centrifugation. The remaining amount of FITC-PLL in the supernatant was determined fluorometrically (excitation at 500 nm and emission at 530 nm) with or without bacterial exposure. The quantity of bound molecules was calculated from the difference between these values. A lower binding of FITC-PLL indicates a less net negative surface charge of the outer bacterial membrane.\n\n### In vitro competition assay\n\nWe carried out in vitro competition experiment using a flow cytometry-based sensitive and reproducible method developed in our laboratory (Gifford et al., 2018; San Millan et al., 2016; Jangir et al., 2022). Flow cytometry was performed on an Accuri C6 (Becton Dickenson, Biosciences, UK). The test strains were competed against a GFP-labelled E. coli strain J53 to measure the relative fitness. All competitions were carried out in LB medium with five biological replicates per strain, as previously described (San Millan et al., 2016; Jangir et al., 2022). Briefly, the bacterial cells were grown in LB medium for overnight. The overnight grown cultures were washed with filtered PBS buffer. The washed cells were diluted into a fresh LB medium and mixed approximately at 1:1 ratio with GFP-labelled E. coli J53. Before starting the competition, the total cell density in the competition mix was around half million cells, as we also used for MIC assay. The initial density of fluorescent and non-fluorescent cells was estimated in the mix using medium flow rate, recoding 10,000 events and discarding events with forward scatter <10,000 and side scatter <8000. After confirming the actual ratio close to 1:1, the competition plates were incubated at 30\u00b0C with shaking at 250 rpm. After overnight incubation, the competition mix was diluted in PBS buffer and cell densities were adjusted around 1000 per microlitre. The final density of fluorescent and non-fluorescent cells was estimated in the competition mix. Using the initial and final density of fluorescent and non-fluorescent cells, the relative fitness was calculated as described below:\n\n$$\nRelative fitness=\\frac{log_{2}(\\frac{d_{1}(non-fluorescent)}{d_{0}(non-fluorescent)})}{log_{2}(\\frac{d1(fluorescent)}{do(fluorescent)})}\n$$\n\nwhere d0 and d1 represent cell density before and after the competition, respectively.\n\n### Analysis of E. coli genomes datasets\n\nWe downloaded three short-read datasets of E. coli genomes to investigate lpxC diversity: mcr-1-positive E. coli from China from a range of sources including human infection isolates, collected 2016\u20132018 (n = 688; Shen dataset) ( Shen et al., 2020); mcr-1-negative E. coli bloodstream infection isolates from Oxfordshire, UK, collected 2013\u20132015 (n = 981 short-read datasets from n = 976 isolates; Davies dataset) (Davies et al., 2020); and mcr-1-negative E. coli from UK, mainly from livestock, collected 2017 (n = 502; REHAB dataset) (Shaw et al., 2021).\n\nScripts and data for analysis, including assemblies, are available on figshare (doi:10.6084/m9.figshare.18591347). In brief, genomes for the Shen and Davies datasets were assembled from short reads downloaded from the NCBI SRA. These reads were filtered with Trimmomatic v0.39 with default parameters (Bolger et al., 2014) and assembled with Spades v3.15.3 (Bankevich et al., 2012). Genomes from the REHAB dataset were downloaded from previously assembled genomes from hybrid assembly. We screened genomes for a full-length lpxC using blastn against lpxC from E. coli MG1655 (NZ_LR881938.1_cds_WP_000595482.1_97; identical to lpxC in strain J53; both phylogroup A). We discarded genomes without a full-length lpxC match (n = 5), those where lpxC had >12 SNPs compared to the reference suggesting poor assembly (n = 20, all from Shen dataset) leaving n = 2146 isolates to analyse. Details of these isolates including accessions, phylogroup, and SNPs in lpxC are given in Supplementary file 3. We assigned phylogroup with ClermonTyper and analysed the n = 2,127 isolates which were in the main phylogroups (A, B1, B2, C, D, E, F, and G). To visualize lpxC diversity we plotted a midpoint-rooted neighbour-joining tree including the reference. After obtaining initial results similar to Figure 5 (not shown), we subsequently filtered isolates to include only higher-quality assemblies (L90 <100, <999 contigs) to ensure that assembly quality was not driving the patterns, resulting in n = 1429 isolates. Numbers given in Results refer to this filtered dataset.\n\nTo reproduce our finding of higher lpxC diversity in phylogroup B2 on another dataset, we downloaded all complete E. coli assemblies on NCBI RefSeq (as of 13 January 2022, n = 1903). Of these, n = 1887 (>99%) were from the main phylogroups and had a full-length lpxC with <13 SNPs against the reference lpxC.\n",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "a1dc0bc3-533f-4ed1-9bab-dcb6fd1faf61",
+      "submission_id": "69a3e2b3-c9c5-44f7-b990-a614eea6cf12",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sara Mitri, https://ror.org/019whta54 University of Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78834.sa0](https://doi.org/10.7554/eLife.78834.sa0)\n\nThis paper combines evolution experiments with genomic analysis of environmental samples to study the evolution of colistin resistance in Escherichia coli. It highlights the importance of pre-existing genomic variations on the chromosomes of clinical strains in driving the evolution of antibiotic resistance. The results are relevant for clinical and non-clinical microbiologists studying antibiotic resistance to last-resort drugs like colistin. The design of the research is simple and elegant, and the genomic data analysis connects the in vitro findings to the real world.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sara Mitri, https://ror.org/019whta54 University of Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78834.sa1](https://doi.org/10.7554/eLife.78834.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Pre-existing chromosomal polymorphisms in pathogenic E. coli potentiate the evolution of resistance to a last-resort antibiotic\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Sara Mitri as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Camilo Barbosa (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe choice of experimental conditions and their limitations need to be discussed more thoroughly. In particular, there were suggestions for alternative experimental designs of the ramp experiment: \"repeating the evolution experiments with clinical isolates from different phylogroups and varying levels of standing genetic variation\"; \"If they perform the evolutionary ramp experiment with a strain carrying lpxC mutant strain, will they see faster evolution of high MIC mutants?\"; \"The authors may replicate the experiment with their low-copy clone of mcr-1 which would make it easier for the authors to have empty vector in WT as a proper control\". While we have agreed that redoing the evolutionary experiments with new conditions is beyond the scope of the paper, your design decisions should be added to the discussion.\n\nIt would also be important to clarify/discuss the mismatch between the evolution experiment and the clinical dataset. A related point that we would like to see in a revised manuscript is \"adding the lpxC variants reported in figure 2 to the trees of figure 4 (right).\" This should help to make the data less speculative.\n\nReviewer #1 (Recommendations for the authors):\n\n\u00ad\u2013 Figure 2: it was unclear to me whether the mutations in lpxC are exclusively found in the MCR-1 positive lines or also in the WT lines. This should be more clearly specified in the figure and the text: How many times were lpxC mutations observed in the control lines?\n\n\u2013 Why does the lpxC mutation in WT reduce its fitness even if it reduces the charge of the cell surface?\n\n\u2013 Figure 4A, the x-axis label should specify SNPs in lpxC\n\n\u2013 Also, for Figure 4, do all these isolates have the MCR-1 plasmid? I later understood that from the methods section, but it would be better to spell it out in the figure caption\n\n\u2013 It took me a while (after reading the discussion) to understand the argument behind the diversity of B2 phylogroup. It might be helpful to explicitly hypothesise that this group would be more susceptible to picking up the MCR-1 plasmid under antibiotic selection\n\nReviewer #2 (Recommendations for the authors):\n\nMy main concern lies in the potential overinterpretation of the experimental data and how the analysis of the clinical datasets, which albeit can be more complex, do not necessarily align with the experimental data. The experimental data suggest that the presence of MCR-1 facilitates the diversification of lpxC and through epistatic interactions, increases resistance against colistin compared to control groups. The evidence and experimental confirmation for it are compelling and well presented. However, the analysis of the two clinical datasets indicated two major findings: First, standing genetic variation in lpxC, and essential gene, is high regardless of the presence of MCR-1. And second, that this genetic diversity is strongly associated with particular phylogenetic groups. While this doesn't necessarily contradict the experimental data, it at least makes me wonder if the authors could give more information about the ancestral strain. I think having information about its standing genetic variation at lpxC and its place among the phylogroups could make the experimental data more powerful and corroborate the clinical data in a better way. As a suggestion, and realizing this may be beyond the scope of this paper and is rather for a follow-up study, I would consider repeating the evolution experiments with clinical isolates from different phylogroups and varying levels of standing genetic variation, if available or possible.\n\nReviewer #3 (Recommendations for the authors):\n\nThe main concern I have with this work is with the correlation that the lpxC variations in clinical data are the same/similar to what authors found in their experiments reported in figure 1. Adding the lpxC variants from the experiments in the trees of figure 4 (right) will make it clear if their conclusion is justified.\n",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ef492a1b-ca89-4ce6-8096-61d7ae4a2af5",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C1",
+      "claim": "Bacterial pathogens show high levels of chromosomal genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial pathogens show high levels of chromosomal genetic diversity, but the influence of this diversity on the evolution of antibiotic resistance by plasmid acquisition remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about bacterial pathogens that draws from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "675f2942-5c31-4016-af42-464efe6c8d6f",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C2",
+      "claim": "The influence of chromosomal genetic diversity on the evolution of antibiotic resistance by plasmid acquisition remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial pathogens show high levels of chromosomal genetic diversity, but the influence of this diversity on the evolution of antibiotic resistance by plasmid acquisition remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in current scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "cc74bb25-289d-482a-b220-9aa7597055bf",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C3",
+      "claim": "A plasmid carrying the MCR-1 colistin resistance gene dramatically increases the ability of Escherichia coli to evolve high-level colistin resistance by acquiring mutations in lpxC.",
+      "claim_type": "EXPLICIT",
+      "source": "Using experimental evolution, we show that a plasmid carrying the MCR-1 colistin resistance gene dramatically increases the ability of Escherichia coli to evolve high-level colistin resistance by acquiring mutations in lpxC, an essential chromosomal gene involved in lipopolysaccharide biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental evolution data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "9d4f5136-ec74-49d6-844b-392465be5be1",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C4",
+      "claim": "lpxC is an essential chromosomal gene involved in lipopolysaccharide biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using experimental evolution, we show that a plasmid carrying the MCR-1 colistin resistance gene dramatically increases the ability of Escherichia coli to evolve high-level colistin resistance by acquiring mutations in lpxC, an essential chromosomal gene involved in lipopolysaccharide biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the lpxC gene function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "01f53fbb-c891-421f-a95c-96c472589486",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C5",
+      "claim": "lpxC mutations increase colistin resistance in the presence of the MCR-1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, lpxC mutations increase colistin resistance in the presence of the MCR-1 gene, but decrease the resistance of wild-type cells, revealing positive sign epistasis for antibiotic resistance between the chromosomal mutations and a mobile resistance gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing MIC changes in different genetic backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "635ac4c3-9708-4df8-b53a-d4b6376be21e",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C6",
+      "claim": "lpxC mutations decrease the resistance of wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, lpxC mutations increase colistin resistance in the presence of the MCR-1 gene, but decrease the resistance of wild-type cells, revealing positive sign epistasis for antibiotic resistance between the chromosomal mutations and a mobile resistance gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental MIC measurements shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "50452585-460d-4c99-a9cb-cd19019c09da",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C7",
+      "claim": "There is positive sign epistasis for antibiotic resistance between lpxC chromosomal mutations and the MCR-1 mobile resistance gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, lpxC mutations increase colistin resistance in the presence of the MCR-1 gene, but decrease the resistance of wild-type cells, revealing positive sign epistasis for antibiotic resistance between the chromosomal mutations and a mobile resistance gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the differential effects of lpxC mutations in different genetic backgrounds, as shown in experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "6ceceac2-1f84-4076-83b0-34ed8aff0768",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C8",
+      "claim": "lpxC polymorphisms are common in pathogenic E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of public genomic datasets shows that lpxC polymorphisms are common in pathogenic E. coli, including those carrying MCR-1, highlighting the clinical relevance of this interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of public genomic datasets as shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "420b7e1f-bf0d-432e-9d0c-a09fa9c6bcb4",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C9",
+      "claim": "lpxC polymorphisms are common in pathogenic E. coli carrying MCR-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of public genomic datasets shows that lpxC polymorphisms are common in pathogenic E. coli, including those carrying MCR-1, highlighting the clinical relevance of this interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic analysis of MCR-1 positive isolates from the Shen dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "68ad6e64-808b-4bf9-b934-ae61e48899c6",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C10",
+      "claim": "lpxC diversity is high in pathogenic E. coli from regions with no history of MCR-1 acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, lpxC diversity is high in pathogenic E. coli from regions with no history of MCR-1 acquisition, suggesting that pre-existing lpxC polymorphisms potentiated the evolution of high-level colistin resistance by MCR-1 acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of UK E. coli datasets (Davies and Shaw) where MCR-1 is effectively absent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "3d256878-52ef-40dc-a4c3-911131200fe9",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C11",
+      "claim": "Pre-existing lpxC polymorphisms potentiated the evolution of high-level colistin resistance by MCR-1 acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, lpxC diversity is high in pathogenic E. coli from regions with no history of MCR-1 acquisition, suggesting that pre-existing lpxC polymorphisms potentiated the evolution of high-level colistin resistance by MCR-1 acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of high lpxC diversity in MCR-1 naive populations combined with experimental evolution results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "42fa310b-9715-44aa-8f69-126499752391",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C12",
+      "claim": "Pathogenic bacteria evolve resistance to clinically relevant doses of antibiotics by acquiring a small number of mutations or by acquiring mobile elements carrying dedicated antibiotic resistance genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Decades of research on the genetics of antibiotic resistance have shown that pathogenic bacteria evolve resistance to clinically relevant doses of antibiotics by acquiring a small number of mutations or by acquiring mobile elements carrying dedicated antibiotic resistance gene (MacLean and San Millan, 2019; Partridge et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "9a1a42a5-2fa7-44c9-b5c4-1d0ac94b5c80",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C13",
+      "claim": "Many bacterial pathogens where resistance poses a high risk to public health are opportunistic pathogens with high levels of chromosomal genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the bacterial pathogens where resistance poses a high risk to public health are opportunistic pathogens with high levels of chromosomal genetic diversity (Baker et al., 2018; Didelot et al., 2012; Smith et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "05ab3465-7432-426f-9d8c-a867806555f6",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C14",
+      "claim": "Colistin is a 'last line of defence' antibiotic that is used in the treatment of infections caused by multidrug-resistant pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this idea, we challenged populations of Escherichia coli carrying an MCR-1 (mobile colistin resistance) plasmid and wild-type control populations with adapting to colistin, a last line of defence antibiotic that is used in the treatment of infections caused by multidrug-resistant pathogens (Li et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and represents established medical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "0db6e067-1b3a-4f6f-b61f-19cb4b0b9635",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C15",
+      "claim": "E. coli has adapted to the widespread use of colistin in agriculture by acquiring a range of conjugative plasmids carrying the MCR-1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli has adapted to the widespread use of colistin in agriculture by acquiring a range of conjugative plasmids carrying the MCR-1 gene (Liu et al., 2016; Sun et al., 2018; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "2b1fac23-12bb-4272-b56c-4ecee527a6ec",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C16",
+      "claim": "MCR-1 is selectively advantageous in the presence of colistin.",
+      "claim_type": "EXPLICIT",
+      "source": "MCR-1 is selectively advantageous in the presence of colistin (Liu et al., 2016; Sun et al., 2018), but it generates a colistin resistance phenotype that is of borderline clinical significance (Liu et al., 2016; Bardet et al., 2017; Doumith et al., 2016; Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "3f0cf43c-6aa8-404a-8bbf-7b123003efd3",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C17",
+      "claim": "MCR-1 generates a colistin resistance phenotype that is of borderline clinical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "MCR-1 is selectively advantageous in the presence of colistin (Liu et al., 2016; Sun et al., 2018), but it generates a colistin resistance phenotype that is of borderline clinical significance (Liu et al., 2016; Bardet et al., 2017; Doumith et al., 2016; Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "4eedec38-66ad-4076-9bb7-7aa1fe3b1910",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C18",
+      "claim": "MCREC populations showed consistent evidence of adaptation to colistin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this expectation, MCREC populations showed consistent evidence of adaptation to colistin, whereas only a very small minority of control populations were able to evolve increased resistance (Figure 1; proportional hazard likelihood ratio = 116, p = <0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental evolution data shown in Figure 1 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "dd1f5e69-9e37-4bc2-8c19-08426c82b8a7",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C19",
+      "claim": "Only a very small minority of control populations were able to evolve increased resistance to colistin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this expectation, MCREC populations showed consistent evidence of adaptation to colistin, whereas only a very small minority of control populations were able to evolve increased resistance (Figure 1; proportional hazard likelihood ratio = 116, p = <0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental evolution data shown in Figure 1 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "07338235-4813-46fb-82f7-8fb520ae9460",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C20",
+      "claim": "The majority of MCREC clones (n = 11/21) carried mutations in LpxC.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the majority of MCREC clones (n = 11/21) carried mutations in LpxC (Figure 2a), an UDP-3-O-acyl-N-acetylglucosamine deacetylase that catalyses the first step in lipid A biosynthesis and is important for membrane composition and asymmetry (Guest et al., 2021; Fivenson and Bernhardt, 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole-genome sequencing data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "77c09300-ecae-4408-bd81-1f9a78b638b0",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C21",
+      "claim": "LpxC is an UDP-3-O-acyl-N-acetylglucosamine deacetylase that catalyses the first step in lipid A biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the majority of MCREC clones (n = 11/21) carried mutations in LpxC (Figure 2a), an UDP-3-O-acyl-N-acetylglucosamine deacetylase that catalyses the first step in lipid A biosynthesis and is important for membrane composition and asymmetry (Guest et al., 2021; Fivenson and Bernhardt, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research describing LpxC function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "59b045b7-0fe2-46ec-8db0-116022985c1e",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C22",
+      "claim": "LpxC is important for membrane composition and asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the majority of MCREC clones (n = 11/21) carried mutations in LpxC (Figure 2a), an UDP-3-O-acyl-N-acetylglucosamine deacetylase that catalyses the first step in lipid A biosynthesis and is important for membrane composition and asymmetry (Guest et al., 2021; Fivenson and Bernhardt, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "e5751dd0-c942-4655-bb16-bf1a6e1058c6",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C23",
+      "claim": "lpxC is an essential gene.",
+      "claim_type": "EXPLICIT",
+      "source": "lpxC is an essential gene (Beall and Lutkenhaus, 1987), suggesting that its evolution should be constrained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "8ea16c51-16bd-4330-a44f-3e1db887c185",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C24",
+      "claim": "lpxC mutations were clustered in the coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, lpxC mutations were clustered in the coding sequence and both of the observed deletions kept the coding sequence in frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequencing data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "daf4a1a5-4330-4064-8931-03e16c3ace43",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C25",
+      "claim": "Both of the observed deletions in lpxC kept the coding sequence in frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, lpxC mutations were clustered in the coding sequence and both of the observed deletions kept the coding sequence in frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequencing data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "4d07af79-5d1f-4f21-b712-dca1d1602e36",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C26",
+      "claim": "Several clones had mutations in the metal- (zinc) binding domain site which is very important for lpxC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, several clones had mutations in the metal- (zinc) binding domain site which is very important for lpxC activity (Jackman et al., 2001; Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genomic sequencing data shown in Figure 2b and citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "ccbba26f-c4f9-4b44-ade2-ca730e85a9ed",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C27",
+      "claim": "Mutations at positions 79, 238, 242, and 246 lead to a hundred to thousand-fold decrease in lpxC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations at positions 79, 238, 242, and 246 lead to a hundred to thousand-fold decrease in lpxC activity (Jackman et al., 2001; Clayton et al., 2013; Lee et al., 2014), and many of our mutations map closely to these important sites (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "0bd47c39-c903-4026-9f98-114bbe2e0b24",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C28",
+      "claim": "Many of the mutations identified in the study map closely to important lpxC sites.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations at positions 79, 238, 242, and 246 lead to a hundred to thousand-fold decrease in lpxC activity (Jackman et al., 2001; Clayton et al., 2013; Lee et al., 2014), and many of our mutations map closely to these important sites (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of experimental mutations with known functional sites, shown in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "70500e7b-188f-4c47-90fa-149570f63454",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C29",
+      "claim": "Mutations in other genes involved in LPS biosynthesis were found in evolved clones that lacked lpxC mutations, including lpxA (n = 2) and rfaY (n = 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in other genes involved in LPS biosynthesis were found in evolved clones that lacked lpxC mutations, including lpxA (n = 2) and rfaY (n = 1) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole-genome sequencing data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "4561a168-0bd8-4d7e-8230-f1ef1b1a50ca",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C30",
+      "claim": "A minority of clones lacked mutations and/or structural variants (n = 4).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a minority of clones lacked mutations and/or structural variants (n = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by whole-genome sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "64f0d52a-d768-426b-9ba2-9c2a71d0abc3",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C31",
+      "claim": "Adaptive plasticity in gene expression and/or unstable genetic changes (i.e., heteroresistance) can contribute to increased colistin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "The colistin resistance of these clones did not differ suggesting that adaptive plasticity in gene expression and/or unstable genetic changes (i.e., heteroresistance; Andersson et al., 2019) can also contribute to increased colistin resistance (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that some resistant clones lack detectable mutations, combined with citation to previous work on heteroresistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "fb2775cb-3741-4f65-beb3-03f2416c777f",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C32",
+      "claim": "MCR-1 increased the colistin resistance of the E. coli parental strain from 0.5 to 4mg/l.",
+      "claim_type": "EXPLICIT",
+      "source": "MCR-1 increased the colistin resistance of the E. coli parental strain from 0.5 to 4mg/l, which is the clinical breakpoint MIC for colistin resistance (The European Committee on Antimicrobial Susceptibility Testing, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MIC measurements shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "6b26993d-0e98-4242-86ae-509b3f15b699",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C33",
+      "claim": "4mg/l is the clinical breakpoint MIC for colistin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "MCR-1 increased the colistin resistance of the E. coli parental strain from 0.5 to 4mg/l, which is the clinical breakpoint MIC for colistin resistance (The European Committee on Antimicrobial Susceptibility Testing, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to clinical guidelines.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "f7e2198a-7d9a-4c23-a535-5fd44dc4ca1f",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C34",
+      "claim": "The lpxC mutation marginally decreased colistin resistance in the wild-type strain (~35% decrease in MIC).",
+      "claim_type": "EXPLICIT",
+      "source": "The lpxC mutation, on the other hand, marginally decreased colistin resistance in the wild-type strain (~35% decrease in MIC) (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MIC measurements shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "4d94f39e-b880-4abf-b407-69f043b14faa",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C35",
+      "claim": "The combination of lpxC and MCR-1 increased colistin resistance to about 2\u00d7 higher than the levels observed in the MCR-1 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the combination of lpxC and MCR-1 increased colistin resistance to about 2\u00d7 higher than the levels observed in the MCR-1 strain, revealing positive sign epistasis between lpxC and MCR-1 for colistin resistance (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MIC measurements shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "a48cf3fc-e498-43e6-8f1b-681f84ee1eca",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C36",
+      "claim": "MCR-1 increases resistance to colistin in part by decreasing the net negative charge on the bacterial outer membrane by modifying LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "MCR-1 increases resistance to colistin in part by decreasing the net negative charge on the bacterial outer membrane by modifying LPS (Sabnis et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "6308ac1c-a8f0-43ec-acfb-1578e8e11a38",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C37",
+      "claim": "The MCR-1 gene led to a substantial reduction in cell surface charge.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the MCR-1 gene led to a substantial reduction in cell surface charge (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FITC-PLL binding assay data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "00257394-be3b-4547-a5e1-bb1c4d597a41",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C38",
+      "claim": "The lpxC mutation led to a small reduction in net cell surface charge that was not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The lpxC mutation led to a small reduction in net cell surface charge that was not statistically significant (Wilcoxon rank-sum test p = 0.150).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by FITC-PLL binding assay data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "81cff56c-694c-4d92-9a59-5675b4337fde",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C39",
+      "claim": "The combination of the lpxC mutation and MCR-1 reduced the surface charge to a greater extent than the MCR-1 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the combination of the lpxC mutation and MCR-1 reduced the surface charge to a greater extent than the MCR-1 alone (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FITC-PLL binding assay data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "f41a5950-ed4c-40cc-a1cd-3276edbb90fd",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C40",
+      "claim": "The surface charge of the lpxC-MCR-1 double mutant was marginally less than the additive expectation, providing evidence of weak negative epistasis for cell surface charge (e = \u22120.059, error = 0.0355).",
+      "claim_type": "EXPLICIT",
+      "source": "The surface charge of the lpxC-MCR-1 double mutant was marginally less than the additive expectation, providing evidence of weak negative epistasis for cell surface charge (e = \u22120.059, error = 0.0355).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on quantitative analysis of surface charge measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "261df3bc-c8b8-471a-9a57-4b626a85c050",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C41",
+      "claim": "MCR-1 expression is associated with fitness costs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that MCR-1 expression is associated with fitness costs (Yang et al., 2017), and it is possible that lpxC mutations provide a fitness advantage by compensating for the costs of MCR expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "b7de7250-628e-4cda-b1cf-c3d3a9823bb7",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C42",
+      "claim": "MCR-1 was associated with a fitness cost.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, MCR-1 was associated with a fitness cost (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vitro competition assay data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "8ba66200-23d6-4dd8-a7d1-859e66c75a86",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C43",
+      "claim": "Extensive pleiotropic effects of lpxC mutations have been reported, including defective cell division, altered membrane composition, and leakage of periplasmic enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "lpxC is an essential gene and extensive pleiotropic effects of lpxC mutations have been reported, including defective cell division, altered membrane composition, and leakage of periplasmic enzymes (Young and Silver, 1991; Kloser et al., 1996), suggesting that mutations in lpxC should be deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "acddea39-bab3-40d5-aca7-79db8d4a0912",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C44",
+      "claim": "The lpxC mutation was associated with a high fitness cost in both the presence and absence of MCR-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, the lpxC mutation was associated with a high fitness cost in both the presence and absence of MCR-1, allowing us to rule out the possibility that lpxC mutations represent a compensatory adaptation for MCR-1 (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vitro competition assay data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "cf83c867-ab5a-4068-a697-35c979d3e7e3",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C45",
+      "claim": "The fitness of double mutant was marginally less than expected under an additive model, revealing weak negative epistasis for fitness (\u03b5 = \u22120.0244, error = 0.0089).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the fitness of double mutant was marginally less than we would expect under an additive model, revealing weak negative epistasis for fitness (\u03b5 = \u22120.0244, error = 0.0089).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on quantitative analysis of fitness measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "a7b9e205-e90f-4fc4-84f7-9d4c1de4cb4e",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C46",
+      "claim": "The large-scale use of colistin as a growth promoter in agriculture drove the spread of MCR-1 across agricultural, environmental, and human-associated populations of E. coli in South East Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "The large-scale use of colistin as a growth promoter in agriculture drove the spread of MCR-1 across agricultural, environmental, and human-associated populations of E. coli in South East Asia (Sun et al., 2018; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "55bb5df5-b738-4dab-94d1-c50d78db1593",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C47",
+      "claim": "The frequency of lpxC polymorphisms in pathogenic E. coli isolates collected from infections was higher than the level found in patients colonized with E. coli and in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the frequency of lpxC polymorphisms in pathogenic E. coli isolates collected from infections was higher than the level found in patients colonized with E. coli and in the environment (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of genomic data from the Shen dataset shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "b607d72b-4561-4a5a-b0f5-d1056d82739a",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C48",
+      "claim": "Extraintestinal pathogenic E. coli usually belong to phylogroup B2 and D.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, extraintestinal pathogenic E. coli usually belong to phylogroup B2 and D (Picard et al., 1999; Johnson et al., 2001; Moulin-Schouleur et al., 2007), with B2 the main lineage for the majority of bloodstream E. coli infections in the UK (Kallonen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "d8d2ab40-d033-4b2a-a028-5475fbe4cc24",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C49",
+      "claim": "B2 is the main lineage for the majority of bloodstream E. coli infections in the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, extraintestinal pathogenic E. coli usually belong to phylogroup B2 and D (Picard et al., 1999; Johnson et al., 2001; Moulin-Schouleur et al., 2007), with B2 the main lineage for the majority of bloodstream E. coli infections in the UK (Kallonen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "c5dee2bd-db7f-4898-918a-1844714184d3",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C50",
+      "claim": "The majority of B2 isolates in the Shen dataset were from patients infected with MRCEC (n = 10/18).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the majority of B2 isolates in the Shen dataset were from patients infected with MRCEC (n = 10/18).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of the Shen dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "3c3387c9-da3a-42c2-8fd1-e706b30c1b4e",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C51",
+      "claim": "The diversity of lpxC was consistently highest in isolates from the B2 phylogroup in the MCR-1 naive population of E. coli from the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of lpxC was consistently highest in isolates from the B2 phylogroup in this MCR-1 naive population of E. coli (Figure 5), suggesting that high levels of lpxC in B2 pre-date the acquisition of MCR-1 plasmids by HGT, and that this phylogroup is effectively primed to evolve high-level colistin resistance by MCR-1 plasmid acquisition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of UK E. coli datasets shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "cb9483cb-cf01-4c1a-b1b0-c13c4917e9bb",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C52",
+      "claim": "High levels of lpxC diversity in B2 pre-date the acquisition of MCR-1 plasmids by HGT.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of lpxC was consistently highest in isolates from the B2 phylogroup in this MCR-1 naive population of E. coli (Figure 5), suggesting that high levels of lpxC in B2 pre-date the acquisition of MCR-1 plasmids by HGT, and that this phylogroup is effectively primed to evolve high-level colistin resistance by MCR-1 plasmid acquisition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation of high lpxC diversity in MCR-1 naive B2 populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "68035357-4d93-4e1d-8cae-e580124b4559",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C53",
+      "claim": "Phylogroup B2 is effectively primed to evolve high-level colistin resistance by MCR-1 plasmid acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of lpxC was consistently highest in isolates from the B2 phylogroup in this MCR-1 naive population of E. coli (Figure 5), suggesting that high levels of lpxC in B2 pre-date the acquisition of MCR-1 plasmids by HGT, and that this phylogroup is effectively primed to evolve high-level colistin resistance by MCR-1 plasmid acquisition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the combination of high lpxC diversity in B2 and experimental evolution results showing epistasis between lpxC and MCR-1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "490642a9-3c7b-4073-bf2f-3429df8c6b66",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C54",
+      "claim": "The vast majority of SNPs seen in lpxC were synonymous (n = 6746/6783).",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of SNPs seen in lpxC were synonymous (n = 6746/6783), suggesting that lpxC is under strong purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of lpxC sequences from multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "2a0560fe-e048-4c32-8867-5df3a05e6e23",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C55",
+      "claim": "lpxC is under strong purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of SNPs seen in lpxC were synonymous (n = 6746/6783), suggesting that lpxC is under strong purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the high proportion of synonymous mutations in lpxC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "d156f1e8-b4b9-4c5f-af4e-341e1b736538",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C56",
+      "claim": "Only 37/1429 isolates had non-synonymous alleles in lpxC.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 37/1429 isolates had non-synonymous alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of lpxC sequences from filtered datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "ec9e11f7-fe9b-4559-ac68-3b2f598215db",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C57",
+      "claim": "The majority of isolates with non-synonymous lpxC alleles were within B2 from the Davies infection dataset (33/37, 89%).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the majority were within B2 from the Davies infection dataset (33/37, 89%), despite B2 making up only around half of the filtered dataset (n = 659, 46%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of the Davies dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "f6aa20a7-86dc-479c-b0b5-7668b69c8ec5",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C58",
+      "claim": "The greater proportion of isolates with non-synonymous SNPs in B2 compared to other phylogroups was significant (chi-squared test p < 0.001, X-squared = 26.7; 33/659 B2 vs. 44/771 non-B2).",
+      "claim_type": "EXPLICIT",
+      "source": "This greater proportion of isolates with non-synonymous SNPs in B2 compared to other phylogroups was significant (chi-squared test p < 0.001, X-squared = 26.7; 33/659 B2 vs. 44/771 non-B2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of genomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "adac9887-8136-40cd-bb01-6f338435de2d",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C59",
+      "claim": "Phylogroup D has the highest nucleotide diversity across 112 core E. coli gene families.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of overall genetic diversity are known to differ between E. coli phylogroups, with phylogroup D having the highest nucleotide diversity across 112 core E. coli gene families in a recent study (Touchon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "ae51cce3-ec8f-45a6-b71b-91e40c7d3636",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C60",
+      "claim": "Phylogroup B2 has similar overall nucleotide diversity to major phylogroups such as A or B1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, phylogroup B2 was found to have similar overall nucleotide diversity to major phylogroups such as A or B1, suggesting that our observation here of higher diversity in lpxC from phylogroup B2 is not simply an artefact of higher overall genetic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research (Touchon et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "88b57c45-e7d9-4d74-b1dc-f23cfd03c79a",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C61",
+      "claim": "There were no shared mutations between the clinical isolates and the lab-evolved isolates, either at the level of individual nucleotides or codons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no shared mutations between the clinical isolates and the lab-evolved isolates, either at the level of individual nucleotides or codons (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of mutations from experimental evolution and clinical isolates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "c5aa48ca-3d50-4fbb-b652-702b70099568",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C62",
+      "claim": "A large number of mutations in lpxC can interact with MCR-1 to increase colistin resistance.",
+      "claim_type": "IMPLICIT",
+      "source": "This low probability of parallel evolution implies that a very large number of mutations in lpxC are likely to interact epistatically with MCR-1 to increase resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of parallel evolution at the nucleotide and codon level in the experimental evolution study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "ada05069-fc0b-4a89-898d-db14a6f226b3",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C63",
+      "claim": "There was only a single example of codon-level parallelism (I86 S/N) in the evolution experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In our evolution experiment, we found no cases of parallel evolution at the nucleotide level and only a single example of codon-level parallelism (I86 S/N), giving an estimate of the probability of codon-level parallelism of (1/92 = 1/81).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of mutations from the experimental evolution study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "b8d8648e-3c78-4a25-9084-22ce0511f209",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C64",
+      "claim": "The probability of codon-level parallelism in lpxC mutations is approximately 1/81.",
+      "claim_type": "EXPLICIT",
+      "source": "In our evolution experiment, we found no cases of parallel evolution at the nucleotide level and only a single example of codon-level parallelism (I86 S/N), giving an estimate of the probability of codon-level parallelism of (1/92 = 1/81).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the observed frequency of parallel evolution in the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "20c18bf9-3cf3-4941-afb4-10cf7a42b5ab",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C65",
+      "claim": "The evolution of high-level colistin resistance is driven by epistatic interactions between the MCR-1 mobile colistin resistance and lpxC.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the evolution of high-level colistin resistance is driven by epistatic interactions between the MCR-1 mobile colistin resistance and lpxC, a chromosomal gene involved in LPS biosynthesis (Figures 1\u20143).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental evolution data and epistasis measurements shown in Figures 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "98f5edd7-7196-4015-bf5d-e5b15477f2d7",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C66",
+      "claim": "lpxC mutations are more common in pathogenic MCR-positive E. coli (MCREC) than commensal MCREC.",
+      "claim_type": "EXPLICIT",
+      "source": "lpxC mutations are more common in pathogenic MCR-positive E. coli (MCREC) than commensal MCREC, highlighting the clinical relevance of this interaction (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of genomic data from the Shen dataset shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "d59d1f94-18d0-4f7c-8c0c-0698c1d24e93",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C67",
+      "claim": "lpxC polymorphisms are over-represented in pathogenic lineages for E. coli from populations with no history of MCR-1 acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, lpxC polymorphisms are over-represented in pathogenic lineages for E. coli from populations with no history of MCR-1 acquisition, suggesting that pre-existing polymorphisms in lpxC potentiated the evolution of high-level colistin resistance through the acquisition of conjugative plasmids carrying MCR-1 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of UK E. coli datasets shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "f51972c4-fdf9-4c35-8ef1-69bdc1107e38",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C68",
+      "claim": "All experiments were carried out in E. coli J53.",
+      "claim_type": "EXPLICIT",
+      "source": "All the experiments were carried out in E. coli J53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "9193e0dc-104d-4ea7-9d1c-0c61ad5ddd58",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C69",
+      "claim": "The experimental evolution experiment used an 'evolutionary ramp' in which the concentration of colistin was doubled daily from a very low dose (1/8 minimum inhibitory concentration [MIC]) to a very high dose (16\u00d7 MIC).",
+      "claim_type": "EXPLICIT",
+      "source": "Our selection experiment used an 'evolutionary ramp' in which the concentration of colistin was doubled daily from a very low dose (1/8 minimum inhibitory concentration [MIC]) to a very high dose (16\u00d7 MIC) (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "2631922a-b4bb-4ac0-b99d-f6e23d19d0f8",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C70",
+      "claim": "All of the evolved clones had increased colistin resistance (mean MIC = 19.2mg/l, range = 8\u201332mg/l) compared to the MCREC parental strain (MIC = 4mg/l).",
+      "claim_type": "EXPLICIT",
+      "source": "All of the evolved clones had increased colistin resistance (mean MIC = 19.2mg/l, range = 8\u201332mg/l) compared to the MCREC parental strain (MIC = 4mg/l) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MIC measurements of evolved clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "5112da16-0e75-42ec-865a-44db07f0d300",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C71",
+      "claim": "The IncX4:MCR-1 plasmid used in the experiments is an intermediate size plasmid (approx. 34kb).",
+      "claim_type": "EXPLICIT",
+      "source": "The MCR-1 natural plasmid used in our experiments (i.e., IncX4:MCR-1) is an intermediate size plasmid (approx. 34kb) that also carries genes for housekeeping and conjugation, as well as cargo genes of unknown function (Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research characterizing the plasmid.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "89230146-87c2-42b5-a5df-766cc40a37b0",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C72",
+      "claim": "The IncX4:MCR-1 plasmid carries genes for housekeeping and conjugation, as well as cargo genes of unknown function.",
+      "claim_type": "EXPLICIT",
+      "source": "The MCR-1 natural plasmid used in our experiments (i.e., IncX4:MCR-1) is an intermediate size plasmid (approx. 34kb) that also carries genes for housekeeping and conjugation, as well as cargo genes of unknown function (Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research characterizing the plasmid.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "c7a76c14-a1eb-49aa-89a4-25528ac1ffbf",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C73",
+      "claim": "The pSEVA121 plasmid confers a similar level of colistin resistance (MIC = 5mg/l) to the IncX4:MCR-1 plasmid (MIC = 4mg/l).",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the interaction between LpxC and MCR-1 more directly, we cloned MCR-1 into pSEVA121, a low copy number (approx. 5 copies/cell) synthetic plasmid that confers a similar level of colistin resistance (MIC = 5mg/l) to the IncX4:MCR-1 plasmid used the selection experiment (MIC = 4mg/l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MIC measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "cb0bbd4c-b806-4dd8-b1f8-1549aeac88d0",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C74",
+      "claim": "pSEVA121 is a low copy number (approx. 5 copies/cell) synthetic plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the interaction between LpxC and MCR-1 more directly, we cloned MCR-1 into pSEVA121, a low copy number (approx. 5 copies/cell) synthetic plasmid that confers a similar level of colistin resistance (MIC = 5mg/l) to the IncX4:MCR-1 plasmid used the selection experiment (MIC = 4mg/l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the plasmid properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "ab2ef4ba-2f68-4f1e-8e5a-9a149f3f1564",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C75",
+      "claim": "Colistin is positively charged.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrostatic attractions occur between colistin, which is positively charged, and the bacterial outer membrane, which is negatively charged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the chemical properties of colistin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "f7a0cb67-2b9e-4871-a7d1-ad33b5b5f8d0",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C76",
+      "claim": "The bacterial outer membrane is negatively charged.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrostatic attractions occur between colistin, which is positively charged, and the bacterial outer membrane, which is negatively charged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial membrane properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "8b95a779-21df-436a-8aa5-230147d29f26",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C77",
+      "claim": "At least two of the major lineages of methicillin-resistant S. aureus originated well before the clinical introduction of methicillin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at least two of the major lineages of methicillin-resistant S. aureus originated well before the clinical introduction of methicillin (Harkins et al., 2017; Gill et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "3d49d596-eb2b-446d-84e0-ff6e2600b3cb",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C78",
+      "claim": "MCR-1 is effectively absent in the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this issue, we analysed lpxC diversity in genomic datasets of commensal, pathogenic, and animal-associated E. coli from the UK, where MCR-1 is effectively absent (Davies et al., 2020; Shaw et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on MCR-1 prevalence in the UK.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "36497666-736c-4dab-9b4e-57d4a7bcb081",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C79",
+      "claim": "MCREC populations consistently evolved high-level colistin resistance by acquiring mutations in lpxC.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, MCR-1 populations consistently evolved high-level colistin resistance by acquiring mutations in lpxC, an essential gene involved in lipopolysaccharide (LPS) biosynthesis, that interacts epistatically with MCR-1 to increase resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental evolution and genomic sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "6294118a-5921-4b7d-a5ff-d7e736b61d2c",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C80",
+      "claim": "Wild-type populations were unable to evolve increased colistin resistance under the strong selective regime used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type populations, on the other hand, were unable to evolve increased colistin resistance under the strong selective regime used in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental evolution data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "a40b192a-ee53-495e-9a77-e079ec7eebcd",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C81",
+      "claim": "The initial MIC of control populations was 0.5mg/l.",
+      "claim_type": "EXPLICIT",
+      "source": "All else being equal, we would therefore expect that control populations (initial MIC = 0.5mg/l) would have higher evolvability than the MCREC populations (initial MIC = 4mg/l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the initial MIC of the control strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "ba5aa386-8390-496a-bbf1-0aab3fbdeb09",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C82",
+      "claim": "The initial MIC of MCREC populations was 4mg/l.",
+      "claim_type": "EXPLICIT",
+      "source": "All else being equal, we would therefore expect that control populations (initial MIC = 0.5mg/l) would have higher evolvability than the MCREC populations (initial MIC = 4mg/l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the initial MIC of the MCREC strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "0e5aa1ee-5064-4a7f-ab3b-9e505409b2b3",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C83",
+      "claim": "The rapid increase in antibiotic concentration in the 'evolutionary ramp' treatment ensures that populations must either evolve increased resistance or face extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid increase in antibiotic concentration in the 'evolutionary ramp' treatment ensures that populations must either evolve increased resistance or face extinction (once concentrations exceed the MIC of the parental strains) (Gifford et al., 2018; San Millan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design logic, supported by citations to previous work using this method.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "727b3cfe-ed75-439e-917c-564e81cf103e",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C84",
+      "claim": "The rate of population extinction defines the measure of the evolvability of a strain in the evolutionary ramp experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the rate of populations extinction defines the measure of the evolvability of a strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of how evolvability is measured in the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "b57fad66-ec22-4846-a935-016f75dee69e",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C85",
+      "claim": "Previous selection experiments have shown that mutants with low resistance tend to have high resistance evolvability, generating characteristic patterns of diminishing returns adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous selection experiments have shown that mutants with low resistance tend to have high resistance evolvability, generating characteristic patterns of diminishing returns adaptation (MacLean et al., 2010) that has been reported for other microbial phenotypes (Kryazhimskiy et al., 2014; Wiser et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "5d5b5a4f-c7f8-4cc3-a1e3-92f2e8ae157e",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C86",
+      "claim": "Diminishing returns adaptation has been reported for other microbial phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous selection experiments have shown that mutants with low resistance tend to have high resistance evolvability, generating characteristic patterns of diminishing returns adaptation (MacLean et al., 2010) that has been reported for other microbial phenotypes (Kryazhimskiy et al., 2014; Wiser et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "bfd23bd5-64fd-4306-bb75-61bc3f267209",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C87",
+      "claim": "The increased evolvability of MCREC populations suggests that the presence of MCR-1 opened up new pathways to evolving elevated colistin resistance that were not accessible to wild-type populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased evolvability of MCREC populations suggests that the presence of MCR-1 opened up new pathways to evolving elevated colistin resistance that were not accessible to wild-type populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential survival of MCREC vs. wild-type populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "000d49fe-b3a1-4996-a857-412074faa8e5",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C88",
+      "claim": "n = 21 independently evolved MCREC clones from day 6 of the experiment (4\u00d7 MIC) were sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this idea, we sequenced the genomes of n = 21 independently evolved MCREC clones from day 6 of the experiment (4\u00d7 MIC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "babbb1b8-1be7-432c-a4c3-17e0385d2552",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C89",
+      "claim": "There are examples of adaptation to colistin through the acquisition of unstable resistance mutations that rapidly revert when selection for resistance is relaxed (i.e. heteroresistance).",
+      "claim_type": "EXPLICIT",
+      "source": "There are a number of examples of adaptation to colistin through the acquisition of unstable resistance mutations that rapidly revert when selection for resistance is relaxed (i.e. heteroresistance Andersson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "f6bb5847-f69b-4b06-a720-d82fd739decc",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C90",
+      "claim": "Clones were cultured for DNA extraction on a medium containing a low dose of colistin (1mg/l, \u00bc MIC) that may not have generated effective selection for the maintenance of unstable resistance determinants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we cultured clones for DNA extraction on a medium containing a low dose of colistin (1mg/l, \u00bc MIC) that may not have generated effective selection for the maintenance of unstable resistance determinants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods and a speculation about its implications.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "bed82c33-bd2a-4641-8b76-86efece2b2df",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C91",
+      "claim": "Epistatic interactions between mobile resistance genes and chromosomal variants shape the evolution of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study builds on previous work (Vogwill et al., 2014; Bethke et al., 2020; Papkou et al., 2020; Gifford et al., 2018) by demonstrating that epistatic interactions between mobile resistance genes and chromosomal variants shape the evolution of resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the study and builds on previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "88bedb31-cd98-42a7-b76e-97b9cecab392",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C92",
+      "claim": "Chromosome\u2013mobile element interactions are likely to be particularly important for highly mobile resistance genes, such as MCR-1 and carbapenemases that are rapidly transferred between divergent bacterial strains and species.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that chromosome\u2013mobile element interactions likely to be particularly important for highly mobile resistance genes, such as MCR-1 (Liu et al., 2016; Wang et al., 2018; Wang et al., 2017) and carbapenemases (Le\u00f3n-Sampedro et al., 2021) that are rapidly transferred between divergent bacterial strains and species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the study findings, supported by citations to previous research on mobile resistance genes.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "672e6164-bac4-4c9a-a204-f8986bf209fb",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "claim_id": "C93",
+      "claim": "Understanding interactions between mobile resistance genes and background genetic variation could help to develop methods for predicting the spread of resistance in pathogen populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that understanding interactions between mobile resistance genes and background genetic variation could help to develop methods for predicting the spread of resistance in pathogen populations, which is an important goal for evolutionary microbiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the implications of the study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4d7d58a3-dac9-4a21-8e6e-6b5a249f2226",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MCR-1 plasmid dramatically increases the evolvability of E. coli for high-level colistin resistance. MCREC populations consistently evolved increased resistance while wild-type populations largely failed under the same selective pressure, demonstrating that MCR-1 opens new evolutionary pathways to resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18, C19, C79, C80, and C87 collectively demonstrate that MCR-1 significantly enhances the ability of E. coli to evolve colistin resistance. The experimental evolution data (Figure 1) shows statistically significant differences (p<0.0001) in survival between MCREC and control populations, with appropriate statistical testing (Cox proportional hazard model). The experimental design using an evolutionary ramp is well-established and properly controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "f832aaa3-62e1-432c-a769-dfcf449d484e",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The majority of evolved MCREC clones (11/21) acquired mutations in lpxC, an essential gene involved in LPS biosynthesis. These mutations clustered in functionally important regions including the zinc-binding domain, and all evolved clones showed increased colistin resistance (mean MIC = 19.2 mg/l).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C24-C26, C28, C70, and C88 are well-supported by whole-genome sequencing data (Figure 2) and MIC measurements. The identification of lpxC mutations in 11/21 clones represents a clear majority, and the clustering of mutations in functionally important regions is consistent with selection. The constraint that deletions remained in-frame supports the essentiality of lpxC.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "1354d708-50ab-4187-a7c2-199057e43641",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "lpxC mutations exhibit positive sign epistasis with MCR-1 for colistin resistance. The lpxC mutation decreases resistance in wild-type cells (~35% decrease) but increases resistance approximately 2-fold when combined with MCR-1, demonstrating that the effect of lpxC mutations depends on the genetic background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C32-C35 are supported by MIC measurements shown in Figure 3a. The demonstration of positive sign epistasis is clear: lpxC mutations are deleterious in wild-type but beneficial in MCR-1 background. However, the manuscript would benefit from reporting the number of biological replicates and statistical tests for the MIC comparisons to fully assess significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "7225efec-fbea-48c3-8a4c-c13d499bc6f1",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MCR-1 and lpxC mutations interact to reduce bacterial cell surface charge. MCR-1 alone substantially reduces surface charge, lpxC mutation alone has no significant effect (p=0.150), but the combination reduces charge more than MCR-1 alone, showing weak negative epistasis for this phenotype (\u03b5=-0.059).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by FITC-PLL binding assay data (Figure 3b) with appropriate statistical testing (Wilcoxon rank-sum test) and n=5 biological replicates. The epistasis calculation is properly performed and reported with error estimates. The weak negative epistasis for surface charge contrasts with positive epistasis for resistance, providing mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "90810eaf-b8ea-4d4a-9255-e2f0f9b7506d",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both MCR-1 and lpxC mutations impose fitness costs in antibiotic-free medium, with weak negative epistasis for fitness (\u03b5=-0.0244). The lpxC mutation is costly in both wild-type and MCR-1 backgrounds, ruling out compensatory adaptation as an explanation for lpxC selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C44, and C45 are supported by in vitro competition assays (Figure 3c) with n=5 biological replicates and appropriate statistical testing. The demonstration that lpxC mutations are costly in both backgrounds effectively rules out the compensatory adaptation hypothesis. The epistasis calculation is properly performed with error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "12d2cf14-5889-41c5-981d-a8819eacd037",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "lpxC polymorphisms are common in pathogenic E. coli, including MCR-1 positive isolates, and are more frequent in pathogenic isolates from infections compared to colonized patients or environmental sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C47, and C66 are supported by analysis of the Shen dataset (n=673 MCR-1 positive isolates) shown in Figure 4. The higher frequency of lpxC polymorphisms in infection isolates compared to colonization/environment is statistically significant (Wilcoxon rank-sum test, p<0.001), though this association is confounded by phylogroup structure as the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "5378f7a3-c354-4b6e-b69e-f267b333080c",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "lpxC diversity is high in pathogenic E. coli phylogroup B2 from UK populations where MCR-1 is effectively absent, suggesting that pre-existing lpxC polymorphisms in pathogenic lineages pre-date and may potentiate the evolution of high-level colistin resistance following MCR-1 acquisition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C51, C52, and C67 are supported by analysis of UK E. coli datasets (Davies, Shaw, REHAB) shown in Figure 5, where MCR-1 is effectively absent. The consistent finding of higher lpxC diversity in B2 across multiple independent datasets strengthens the conclusion. However, the causal claim that this diversity 'potentiates' resistance evolution is an inference that, while reasonable, is not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "f4e12cb8-460b-458a-918e-ebd0868511b3",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The vast majority of lpxC SNPs are synonymous (6746/6783), indicating strong purifying selection. Non-synonymous alleles are rare (37/1429 isolates) and significantly enriched in phylogroup B2 from infection isolates (33/37, 89%; chi-squared test p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by comprehensive sequence analysis across multiple datasets with appropriate statistical testing. The high proportion of synonymous mutations strongly supports purifying selection. The significant enrichment of non-synonymous mutations in B2 infection isolates is properly tested and controlled for phylogroup representation in the dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "d0f161ba-224a-4f79-9f63-39e90b8e99a2",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pre-existing lpxC polymorphisms in pathogenic E. coli populations potentiated the evolution of high-level colistin resistance by MCR-1 acquisition, and phylogroup B2 is effectively primed to evolve high-level resistance upon acquiring MCR-1 plasmids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11 and C53 represent important inferences that integrate experimental evolution and genomic data, but the causal relationship is not directly demonstrated. While the high lpxC diversity in MCR-1 naive B2 populations is well-documented (C51), and epistasis between lpxC and MCR-1 is demonstrated experimentally (C7), the claim that pre-existing diversity 'potentiated' resistance evolution requires showing that natural lpxC variants interact epistatically with MCR-1 similarly to lab-evolved mutations. The lack of shared mutations between clinical and lab isolates (C61) complicates this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "0338dbc5-0d64-46c1-ba96-0b02cc1cf932",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Some evolved clones acquired mutations in other LPS biosynthesis genes (lpxA, rfaY), while a minority (4/21) lacked detectable mutations, suggesting that adaptive plasticity or heteroresistance may contribute to colistin resistance evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C31 are based on whole-genome sequencing data, but the interpretation of clones lacking mutations is speculative. While the authors cite heteroresistance literature (C89) and note that culture conditions may not maintain unstable mutations (C90), no direct evidence for heteroresistance or adaptive plasticity is provided. The similar MIC values of clones with and without mutations (Figure 2\u2014figure supplement 1) is consistent with this hypothesis but does not confirm it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "3fa784fe-70e5-44b8-b3e1-5c7f48a4379a",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "No shared mutations were found between clinical and lab-evolved isolates at nucleotide or codon level. Only one instance of codon-level parallelism (I86 S/N) was observed among lab-evolved clones, suggesting that a large number of different lpxC mutations can interact with MCR-1 to increase resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 are supported by comparative sequence analysis (Figure 5\u2014figure supplement 2). The lack of parallel evolution and calculation of parallelism probability (1/81) is properly performed. The inference that many mutations can interact with MCR-1 (C62) is reasonable given the low parallelism, though the exact number remains unknown. This finding has important implications for predicting resistance evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "d664a385-689d-4e00-bc9c-64ad3a62d627",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Phylogroup B2 has similar overall nucleotide diversity to phylogroups A and B1 across core genes, while phylogroup D has the highest diversity. This indicates that the elevated lpxC diversity in B2 is gene-specific rather than reflecting genome-wide diversity patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C60 are supported by citation to Touchon et al. 2020, which analyzed 112 core E. coli genes. This comparison is important for ruling out the alternative explanation that high lpxC diversity in B2 simply reflects higher overall genetic diversity. The authors appropriately use published data to contextualize their findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "53bb5cf2-2d38-4987-a785-c36257db4465",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The experimental evolution used E. coli J53 with an evolutionary ramp design where colistin concentration doubled daily from 1/8 MIC to 16\u00d7 MIC. Control populations started at 0.5 mg/l MIC and MCREC at 4 mg/l MIC. Population extinction rate measures evolvability in this design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C69, C81-C84 describe the experimental design and are well-documented in the Methods section. The evolutionary ramp approach is established in the literature (cited appropriately) and the logic that extinction rate measures evolvability is sound. The standardization of antibiotic doses relative to MIC ensures comparable selection pressure between strains.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "4c9d051f-51d5-4baa-9701-52351abded48",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The synthetic pSEVA121:MCR-1 plasmid (low copy number, ~5 copies/cell) confers similar colistin resistance (MIC=5 mg/l) to the natural IncX4:MCR-1 plasmid (MIC=4 mg/l), allowing controlled testing of MCR-1 effects independent of other plasmid genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C74 are supported by MIC measurements and describe an important methodological control. Using the synthetic plasmid system allows the authors to isolate MCR-1 effects from other genes on the natural plasmid, strengthening the mechanistic conclusions about lpxC-MCR-1 interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "048616db-9635-419d-96e6-c3464621cd69",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Bacterial pathogens show high chromosomal genetic diversity, but the influence of this diversity on antibiotic resistance evolution by plasmid acquisition remains unclear. This represents a knowledge gap that the study addresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C12, and C13 establish the background and motivation for the study, supported by appropriate citations. These claims accurately represent the state of knowledge and identify a genuine gap in understanding the role of chromosomal diversity in resistance evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    },
+    {
+      "id": "05544b74-2b30-406c-a663-db4cdef3b80b",
+      "content_id": "189eca90-ba09-45e8-a013-5ad18283427c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study demonstrates that epistatic interactions between mobile resistance genes and chromosomal variants shape resistance evolution. Such interactions may be particularly important for highly mobile genes like MCR-1 and carbapenemases, and understanding these interactions could help predict resistance spread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 represent the broader implications of the work. C91 is well-supported by the experimental data and appropriately builds on previous work. C92 and C93 are reasonable speculation based on the findings, appropriately qualified as such in the manuscript. These claims appropriately contextualize the significance of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:25.754451Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cc74bb25-289d-482a-b220-9aa7597055bf",
+      "result_id": "4d7d58a3-dac9-4a21-8e6e-6b5a249f2226"
+    },
+    {
+      "claim_id": "4eedec38-66ad-4076-9bb7-7aa1fe3b1910",
+      "result_id": "4d7d58a3-dac9-4a21-8e6e-6b5a249f2226"
+    },
+    {
+      "claim_id": "dd1f5e69-9e37-4bc2-8c19-08426c82b8a7",
+      "result_id": "4d7d58a3-dac9-4a21-8e6e-6b5a249f2226"
+    },
+    {
+      "claim_id": "36497666-736c-4dab-9b4e-57d4a7bcb081",
+      "result_id": "4d7d58a3-dac9-4a21-8e6e-6b5a249f2226"
+    },
+    {
+      "claim_id": "6294118a-5921-4b7d-a5ff-d7e736b61d2c",
+      "result_id": "4d7d58a3-dac9-4a21-8e6e-6b5a249f2226"
+    },
+    {
+      "claim_id": "bfd23bd5-64fd-4306-bb75-61bc3f267209",
+      "result_id": "4d7d58a3-dac9-4a21-8e6e-6b5a249f2226"
+    },
+    {
+      "claim_id": "07338235-4813-46fb-82f7-8fb520ae9460",
+      "result_id": "f832aaa3-62e1-432c-a769-dfcf449d484e"
+    },
+    {
+      "claim_id": "8ea16c51-16bd-4330-a44f-3e1db887c185",
+      "result_id": "f832aaa3-62e1-432c-a769-dfcf449d484e"
+    },
+    {
+      "claim_id": "daf4a1a5-4330-4064-8931-03e16c3ace43",
+      "result_id": "f832aaa3-62e1-432c-a769-dfcf449d484e"
+    },
+    {
+      "claim_id": "4d07af79-5d1f-4f21-b712-dca1d1602e36",
+      "result_id": "f832aaa3-62e1-432c-a769-dfcf449d484e"
+    },
+    {
+      "claim_id": "0bd47c39-c903-4026-9f98-114bbe2e0b24",
+      "result_id": "f832aaa3-62e1-432c-a769-dfcf449d484e"
+    },
+    {
+      "claim_id": "2631922a-b4bb-4ac0-b99d-f6e23d19d0f8",
+      "result_id": "f832aaa3-62e1-432c-a769-dfcf449d484e"
+    },
+    {
+      "claim_id": "000d49fe-b3a1-4996-a857-412074faa8e5",
+      "result_id": "f832aaa3-62e1-432c-a769-dfcf449d484e"
+    },
+    {
+      "claim_id": "01f53fbb-c891-421f-a95c-96c472589486",
+      "result_id": "1354d708-50ab-4187-a7c2-199057e43641"
+    },
+    {
+      "claim_id": "635ac4c3-9708-4df8-b53a-d4b6376be21e",
+      "result_id": "1354d708-50ab-4187-a7c2-199057e43641"
+    },
+    {
+      "claim_id": "50452585-460d-4c99-a9cb-cd19019c09da",
+      "result_id": "1354d708-50ab-4187-a7c2-199057e43641"
+    },
+    {
+      "claim_id": "fb2775cb-3741-4f65-beb3-03f2416c777f",
+      "result_id": "1354d708-50ab-4187-a7c2-199057e43641"
+    },
+    {
+      "claim_id": "f7e2198a-7d9a-4c23-a535-5fd44dc4ca1f",
+      "result_id": "1354d708-50ab-4187-a7c2-199057e43641"
+    },
+    {
+      "claim_id": "4d94f39e-b880-4abf-b407-69f043b14faa",
+      "result_id": "1354d708-50ab-4187-a7c2-199057e43641"
+    },
+    {
+      "claim_id": "6308ac1c-a8f0-43ec-acfb-1578e8e11a38",
+      "result_id": "7225efec-fbea-48c3-8a4c-c13d499bc6f1"
+    },
+    {
+      "claim_id": "00257394-be3b-4547-a5e1-bb1c4d597a41",
+      "result_id": "7225efec-fbea-48c3-8a4c-c13d499bc6f1"
+    },
+    {
+      "claim_id": "81cff56c-694c-4d92-9a59-5675b4337fde",
+      "result_id": "7225efec-fbea-48c3-8a4c-c13d499bc6f1"
+    },
+    {
+      "claim_id": "f41a5950-ed4c-40cc-a1cd-3276edbb90fd",
+      "result_id": "7225efec-fbea-48c3-8a4c-c13d499bc6f1"
+    },
+    {
+      "claim_id": "b7de7250-628e-4cda-b1cf-c3d3a9823bb7",
+      "result_id": "90810eaf-b8ea-4d4a-9255-e2f0f9b7506d"
+    },
+    {
+      "claim_id": "acddea39-bab3-40d5-aca7-79db8d4a0912",
+      "result_id": "90810eaf-b8ea-4d4a-9255-e2f0f9b7506d"
+    },
+    {
+      "claim_id": "cf83c867-ab5a-4068-a697-35c979d3e7e3",
+      "result_id": "90810eaf-b8ea-4d4a-9255-e2f0f9b7506d"
+    },
+    {
+      "claim_id": "6ceceac2-1f84-4076-83b0-34ed8aff0768",
+      "result_id": "12d2cf14-5889-41c5-981d-a8819eacd037"
+    },
+    {
+      "claim_id": "420b7e1f-bf0d-432e-9d0c-a09fa9c6bcb4",
+      "result_id": "12d2cf14-5889-41c5-981d-a8819eacd037"
+    },
+    {
+      "claim_id": "55bb5df5-b738-4dab-94d1-c50d78db1593",
+      "result_id": "12d2cf14-5889-41c5-981d-a8819eacd037"
+    },
+    {
+      "claim_id": "98f5edd7-7196-4015-bf5d-e5b15477f2d7",
+      "result_id": "12d2cf14-5889-41c5-981d-a8819eacd037"
+    },
+    {
+      "claim_id": "68ad6e64-808b-4bf9-b934-ae61e48899c6",
+      "result_id": "5378f7a3-c354-4b6e-b69e-f267b333080c"
+    },
+    {
+      "claim_id": "3c3387c9-da3a-42c2-8fd1-e706b30c1b4e",
+      "result_id": "5378f7a3-c354-4b6e-b69e-f267b333080c"
+    },
+    {
+      "claim_id": "cb9483cb-cf01-4c1a-b1b0-c13c4917e9bb",
+      "result_id": "5378f7a3-c354-4b6e-b69e-f267b333080c"
+    },
+    {
+      "claim_id": "d59d1f94-18d0-4f7c-8c0c-0698c1d24e93",
+      "result_id": "5378f7a3-c354-4b6e-b69e-f267b333080c"
+    },
+    {
+      "claim_id": "490642a9-3c7b-4073-bf2f-3429df8c6b66",
+      "result_id": "f4e12cb8-460b-458a-918e-ebd0868511b3"
+    },
+    {
+      "claim_id": "2a0560fe-e048-4c32-8867-5df3a05e6e23",
+      "result_id": "f4e12cb8-460b-458a-918e-ebd0868511b3"
+    },
+    {
+      "claim_id": "d156f1e8-b4b9-4c5f-af4e-341e1b736538",
+      "result_id": "f4e12cb8-460b-458a-918e-ebd0868511b3"
+    },
+    {
+      "claim_id": "ec9e11f7-fe9b-4559-ac68-3b2f598215db",
+      "result_id": "f4e12cb8-460b-458a-918e-ebd0868511b3"
+    },
+    {
+      "claim_id": "f6aa20a7-86dc-479c-b0b5-7668b69c8ec5",
+      "result_id": "f4e12cb8-460b-458a-918e-ebd0868511b3"
+    },
+    {
+      "claim_id": "3d256878-52ef-40dc-a4c3-911131200fe9",
+      "result_id": "d0f161ba-224a-4f79-9f63-39e90b8e99a2"
+    },
+    {
+      "claim_id": "68035357-4d93-4e1d-8cae-e580124b4559",
+      "result_id": "d0f161ba-224a-4f79-9f63-39e90b8e99a2"
+    },
+    {
+      "claim_id": "70500e7b-188f-4c47-90fa-149570f63454",
+      "result_id": "0338dbc5-0d64-46c1-ba96-0b02cc1cf932"
+    },
+    {
+      "claim_id": "4561a168-0bd8-4d7e-8230-f1ef1b1a50ca",
+      "result_id": "0338dbc5-0d64-46c1-ba96-0b02cc1cf932"
+    },
+    {
+      "claim_id": "64f0d52a-d768-426b-9ba2-9c2a71d0abc3",
+      "result_id": "0338dbc5-0d64-46c1-ba96-0b02cc1cf932"
+    },
+    {
+      "claim_id": "88b57c45-e7d9-4d74-b1dc-f23cfd03c79a",
+      "result_id": "3fa784fe-70e5-44b8-b3e1-5c7f48a4379a"
+    },
+    {
+      "claim_id": "c5aa48ca-3d50-4fbb-b652-702b70099568",
+      "result_id": "3fa784fe-70e5-44b8-b3e1-5c7f48a4379a"
+    },
+    {
+      "claim_id": "ada05069-fc0b-4a89-898d-db14a6f226b3",
+      "result_id": "3fa784fe-70e5-44b8-b3e1-5c7f48a4379a"
+    },
+    {
+      "claim_id": "b8d8648e-3c78-4a25-9084-22ce0511f209",
+      "result_id": "3fa784fe-70e5-44b8-b3e1-5c7f48a4379a"
+    },
+    {
+      "claim_id": "ae51cce3-ec8f-45a6-b71b-91e40c7d3636",
+      "result_id": "d664a385-689d-4e00-bc9c-64ad3a62d627"
+    },
+    {
+      "claim_id": "adac9887-8136-40cd-bb01-6f338435de2d",
+      "result_id": "d664a385-689d-4e00-bc9c-64ad3a62d627"
+    },
+    {
+      "claim_id": "f51972c4-fdf9-4c35-8ef1-69bdc1107e38",
+      "result_id": "53bb5cf2-2d38-4987-a785-c36257db4465"
+    },
+    {
+      "claim_id": "9193e0dc-104d-4ea7-9d1c-0c61ad5ddd58",
+      "result_id": "53bb5cf2-2d38-4987-a785-c36257db4465"
+    },
+    {
+      "claim_id": "a40b192a-ee53-495e-9a77-e079ec7eebcd",
+      "result_id": "53bb5cf2-2d38-4987-a785-c36257db4465"
+    },
+    {
+      "claim_id": "ba5aa386-8390-496a-bbf1-0aab3fbdeb09",
+      "result_id": "53bb5cf2-2d38-4987-a785-c36257db4465"
+    },
+    {
+      "claim_id": "0e5aa1ee-5064-4a7f-ab3b-9e505409b2b3",
+      "result_id": "53bb5cf2-2d38-4987-a785-c36257db4465"
+    },
+    {
+      "claim_id": "727b3cfe-ed75-439e-917c-564e81cf103e",
+      "result_id": "53bb5cf2-2d38-4987-a785-c36257db4465"
+    },
+    {
+      "claim_id": "c7a76c14-a1eb-49aa-89a4-25528ac1ffbf",
+      "result_id": "4c9d051f-51d5-4baa-9701-52351abded48"
+    },
+    {
+      "claim_id": "cb0bbd4c-b806-4dd8-b1f8-1549aeac88d0",
+      "result_id": "4c9d051f-51d5-4baa-9701-52351abded48"
+    },
+    {
+      "claim_id": "ef492a1b-ca89-4ce6-8096-61d7ae4a2af5",
+      "result_id": "048616db-9635-419d-96e6-c3464621cd69"
+    },
+    {
+      "claim_id": "675f2942-5c31-4016-af42-464efe6c8d6f",
+      "result_id": "048616db-9635-419d-96e6-c3464621cd69"
+    },
+    {
+      "claim_id": "42fa310b-9715-44aa-8f69-126499752391",
+      "result_id": "048616db-9635-419d-96e6-c3464621cd69"
+    },
+    {
+      "claim_id": "9a1a42a5-2fa7-44c9-b5c4-1d0ac94b5c80",
+      "result_id": "048616db-9635-419d-96e6-c3464621cd69"
+    },
+    {
+      "claim_id": "bed82c33-bd2a-4641-8b76-86efece2b2df",
+      "result_id": "05544b74-2b30-406c-a663-db4cdef3b80b"
+    },
+    {
+      "claim_id": "88bedb31-cd98-42a7-b76e-97b9cecab392",
+      "result_id": "05544b74-2b30-406c-a663-db4cdef3b80b"
+    },
+    {
+      "claim_id": "672e6164-bac4-4c9a-a204-f8986bf209fb",
+      "result_id": "05544b74-2b30-406c-a663-db4cdef3b80b"
+    }
+  ],
+  "comparisons": []
+}

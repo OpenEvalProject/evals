@@ -1,0 +1,2087 @@
+{
+  "submission": {
+    "id": "005b3d23-d8bd-4eab-88fc-db599d32f9ac",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:46:46.906669Z",
+    "updated_at": "2025-12-03T05:46:46.906669Z"
+  },
+  "content": [
+    {
+      "id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "submission_id": "005b3d23-d8bd-4eab-88fc-db599d32f9ac",
+      "content_type": "manuscript",
+      "content_text": "# Type VI secretion system killing by commensal Neisseria is influenced by expression of type four pili\n\n## Authors\n\n- Rafael Custodio<sup>1</sup> ([ORCID: 0000-0002-7561-5515](https://orcid.org/0000-0002-7561-5515))\n- Rhian M Ford<sup>1</sup>\n- Cara J Ellison<sup>1</sup>\n- Guangyu Liu<sup>1</sup>\n- Gerda Mickute<sup>1</sup> ([ORCID: 0000-0002-2477-7565](https://orcid.org/0000-0002-2477-7565))\n- Christoph M Tang<sup>1</sup> ([ORCID: 0000-0001-8366-3245](https://orcid.org/0000-0001-8366-3245))\n- Rachel M Exley<sup>1</sup> ([ORCID: 0000-0001-9120-5586](https://orcid.org/0000-0001-9120-5586)) \u2020\n\n### Affiliations\n\n1. Sir William Dunn School of Pathology, University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nType VI Secretion Systems (T6SSs) are widespread in bacteria and can dictate the development and organisation of polymicrobial ecosystems by mediating contact dependent killing. In Neisseria species, including Neisseria cinerea a commensal of the human respiratory tract, interbacterial contacts are mediated by Type four pili (Tfp) which promote formation of aggregates and govern the spatial dynamics of growing Neisseria microcolonies. Here, we show that N. cinerea expresses a plasmid-encoded T6SS that is active and can limit growth of related pathogens. We explored the impact of Tfp on N. cinerea T6SS-dependent killing within a colony and show that pilus expression by a prey strain enhances susceptibility to T6SS compared to a non-piliated prey, by preventing segregation from a T6SS-wielding attacker. Our findings have important implications for understanding how spatial constraints during contact-dependent antagonism can shape the evolution of microbial communities.\n\n## Introduction\n\nThe human microbiota is critical for the development of a healthy gastrointestinal immune system (Round and Mazmanian, 2009; Sommer and B\u00e4ckhed, 2013) and can also protect the host from invasion by pathogenic bacteria (Kamada et al., 2013). The microbes that carry out these important functions live as part of complex communities shaped by their fitness and ability to adapt to their environment, and which can be remodeled through mutualistic and antagonistic interactions (Garc\u00eda-Bayona and Comstock, 2018; Little et al., 2008; Nadell et al., 2016). Competition for niche and host-derived resources has therefore driven the evolution in bacteria of an array of mechanisms to suppress growth of or kill neighbouring microbes. One mechanism, the Type VI Secretion System (T6SS), provides an effective strategy to eliminate competitors in a contact-dependent manner and is widespread in Gram negative bacteria from many different environments (Coulthurst, 2019). The T6SS is a contractile, bacteriophage-like nanomachine that delivers toxins into target organisms (Cianfanelli et al., 2016; Ho et al., 2014). T6SS-associated effectors possess a broad range of activities, including nucleases (Koskiniemi et al., 2013; Ma et al., 2014; Pissaridou et al., 2018), phospholipases (Flaugnatti et al., 2016; Russell et al., 2013), peptidoglycan hydrolases (Whitney et al., 2013), and pore-forming proteins (Mariano et al., 2019); each effector is associated with a cognate immunity protein to prevent self-intoxication and to protect against kin cells (Alcoforado Diniz et al., 2015; Unterweger et al., 2014). In pathogens such as Pseudomonas, Vibrio, Salmonella, and Shigella, the impact of the T6SS in pathogenesis and bacterial competition has been established in vitro and in some cases in vivo (Anderson et al., 2017; Sana et al., 2016). Commensal bacteria also harbour T6SSs, although how these systems combat pathogens has only been elucidated for Bacteroidetes in the intestinal tract (Russell et al., 2014); further studies are needed to gain a greater appreciation of how T6SSs in commensals influence microbial communities and pathogens in other niches.\n\nThe human nasopharynx hosts a polymicrobial community (Kumpitsch et al., 2019; Cleary and Clarke, 2017; Ramos-Sevillano et al., 2019), which can include the obligate human pathogen\u00a0Neisseria meningitidis, as well as related but generally non-pathogenic, commensal Neisseria species (Diallo et al., 2016; Dorey et al., 2019; Gold et al., 1978; Knapp and Hook, 1988; Sheikhi et al., 2015). In vivo studies have demonstrated an inverse relationship between carriage of commensal Neisseria lactamica and N. meningitidis (Deasy et al., 2015), whereas in vitro studies have revealed that some commensal Neisseria demonstrate potentially antagonistic effects against their pathogenic relatives (Custodio et al., 2020; Kim et al., 2019). Commensal and pathogenic Neisseria species have also been shown to interact closely in mixed populations (Custodio et al., 2020; Higashi et al., 2011). Social interactions among Neisseria are mediated by surface structures known as Type IV pili (Tfp). These filamentous organelles enable pathogenic Neisseria to adhere to host cells (Nassif et al., 1993; Virji et al., 1991) and are crucial for microbe-microbe interactions and the formation of bacterial aggregates and microcolonies (Helaine et al., 2007; Higashi et al., 2007). In addition, Tfp interactions can dictate bacterial positioning within a community; non-piliated strains have been shown to be excluded to the expanding edge of colonies growing on solid media (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017) while heterogeneity in pili, for example through post translational modifications, can alter how cells integrate into microcolonies (Z\u00f6llner et al., 2017).\n\nNeisseria cinerea is one of the commensal Neisseria species that has been previously isolated from the upper respiratory tracts of adults and children (Knapp and Hook, 1988; Sheikhi et al., 2015). This species expresses Tfp that promote microcolony formation, can closely interact with N. meningitidis in a Tfp-dependent manner and impairs meningococcal association with human epithelial cells (Custodio et al., 2020). Here, whole genome sequence analysis revealed that the N. cinerea isolate used in our studies encodes a T6SS. Similarly, T6SS genes have been recently identified in other Neisseria spp. isolated from human throat swab cultures (Calder et al., 2020). Here, we provide the first description of a functional T6SS in Neisseria spp. We show that the N. cinerea T6SS is encoded on a plasmid and antagonises pathogenic relatives, N. meningitidis and Neisseria gonorrhoeae. Moreover, we examined whether Tfp influence the competitiveness of microbes in response to T6SS-mediated antagonism and demonstrate that T6SS\u2013mediated competition is facilitated by Tfp in bacterial communities.\n\n## Results\n\n### N. cinerea 346T encodes a functional T6SS on a plasmid\n\nWe identified a single locus in N. cinerea isolate CCUG346T (346T) (https://www.ccug.se/strain?id=346) that encodes homologues of all 13 components that are necessary for a functional T6SS (Cascales and Cambillau, 2012), including genes predicted to encode canonical T6SS components Hcp and VgrG (Figure 1A and Supplementary file 1). We used T6SS-effector prediction software tools (Li et al., 2015) to search for putative effectors. In total we identified six putative effector and immunity genes, termed nte and nti for Neisseria T6SS effector/immunity, respectively.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of T6SS genes in N. cinerea 346T. Canonical tss nomenclature was used for genes in the T6SS cluster. (B) Map of the T6SS-associated genes encoded by the N. cinerea 346T plasmid. See also Figure 1\u2014figure supplement 1. (C) Expression and secretion of Hcp by wild-type N. cinerea 346T (Wt) and the tssB\u00a0mutant (\u0394tssB). Hcp protein was detected in the whole cell lysates (W) and supernatants (S) by western blot analysis. For strain \u0394tssB::tssBsfGFP, bacteria were grown in the presence (+) or absence (-) of 1 mM IPTG; molecular weight marker shown in kDa. RecA is only detected in whole cell lysates. (D) Survival of the prey, N. cinerea 27178A, after 4 and 24 h\u00a0co-incubation with wild-type N. cinerea 346T or the T6SS mutant (\u0394T6SS) at approximately 10:1 ratio, attacker:prey. The mean \u00b1 SD of three independent experiments is shown: ***p < 0.0001 using unpaired two-tailed Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Overlapping PCR and sequencing confirms extra-chromosomally closed circular DNA fragment. A total of 25 PCR fragments (pink bars) were amplified from N. cinerea 346T gDNA to confirm the plasmid predicted by PacBio whole-genome sequencing. Yellow shows regions which were sequenced, and green indicates the overlapping amplified regions.\n\nOf note, all predicted T6SS-related orfs and Nte/Ntis in N. cinerea 346T were found to be encoded on a 108,141 bp plasmid, revealed by PacBio sequencing, and confirmed by PCR and sequencing. Nte/Nti 1\u20135 are encoded adjacent to the structural gene cluster, with Nte6/Nti6 encoded elsewhere in the plasmid (Figure 1B and Figure 1\u2014figure supplement 1). No other PAAR, Rhs, or VgrG homologues were found outside the plasmid. Thus, our analysis reveals that the human commensal N. cinerea 346T\u00a0harbours a plasmid-borne T6SS together with six putative effector-immunity pairs.\n\nContraction of the T6SS leads to Hcp secretion, a hallmark of a functional T6SS (Cascales and Cambillau, 2012). Therefore, to establish whether the N. cinerea T6SS is functional, we assessed Hcp levels in whole cell lysates and supernatants from wild-type N. cinerea and a \u0394tssB mutant, based on previous work demonstrating that TssB is a component of the T6SS-tail-sheath required for contraction (Brackmann et al., 2018). A \u0394T6SS mutant which lacks 10 core genes including hcp was analysed as a negative control. As expected, Hcp was detected in both fractions from the wild-type strain but not in the negative control strain (\u0394T6SS mutant) (Figure 1C). Importantly, Hcp was present in cell lysates from the \u0394tssB mutant, but not detected in cell supernatants, while Hcp secretion was restored by complementation of the \u0394tssB mutant by chromosomal expression of TssB with a C-terminal sfGFP fusion (\u0394tssB::tssB-sfGFP) (Figure 1C).\n\nNext, we performed competition assays between N. cinerea 346T or the \u0394T6SS mutant against N. cinerea 27178A which lacks a T6SS and Nte/Nti pairs identified in N. cinerea 346T. The survival of N. cinerea 27178A was reduced by around an order of magnitude following incubation with N. cinerea 346T compared with the \u0394T6SS mutant (Figure 1D), confirming that the N. cinerea 346T T6SS is active during inter-bacterial competition.\n\n### Dynamic behaviour of the Neisseria T6SS in the presence of prey cells\n\nWe further analysed the activity of the T6SS by visualising assembly and contraction in N. cinerea 346T\u0394tssB::tssB-sfGFP; this strain exhibits comparable T6SS killing as wild-type N. cinerea 346T (Figure 2\u2014figure supplement 1). Time-lapse microscopy revealed dynamic T6SS foci inside bacteria, with structures extending/contracting over seconds (Figure 2A and Figure 2\u2014video 1) consistent with T6SS activity (Gerc et al., 2015; Ringel et al., 2017). To further confirm T6SS activity, we deleted the gene encoding the TssM homologue in strain 346T\u0394tssB::tssB-sfGFP, abolishing T6SS activity (Figure 2B and Figure 2\u2014figure supplement 1) and confirmed that in the absence of TssM, fluorescent structures were rarely seen (< 5% of cells in the \u0394tssM background, compared with > 60% in the strain expressing TssM; Figure 2C and Figure 2\u2014video 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig2-v1.jpg)\n\n**Figure 2.:** (A) Assembly and contraction of the T6SS in N. cinerea; white arrows indicate contracting T6SSs. Time-lapse images of N. cinerea 346T\u0394tssB::tssBsfGFP (green) and prey N. cinerea 27178A_ sfCherry (red); the arrowhead shows a non-dynamic focus, scale bar, 1 \u00b5m. See also Figure 2\u2014video 1. (B) Representative images of N. cinerea strains with the TssB::sfGFP fusion with (upper panels) or without (lower panels) TssM. Loss of fluorescent foci upon deletion of tssM indicates that foci correspond to active T6SSs. The scale bar represents 2 \u00b5m. (C) Quantification of TssB-sfGFP foci in different strains. T6SS foci were quantified using \u2018analyse particle\u2019 (Fiji) followed by manual inspection. For each strain, at least two images from gel pads were obtained on two independent occasions. Percentage of cells with 0, 1, or 2+ foci are shown and n = number of cells analysed. Data shown are mean \u00b1 SD of two independent experiments: ***p<0.0001 using two-way ANOVA test for multiple comparison. See also Figure 2\u2014video 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Competition assay measuring the recovery of prey (N. meningitidis 8013) after 4 hr co-incubation with wild-type N. cinerea 346T (Wt) and specified mutants at ratio of 100:1 (attacker:prey). Data shown are the mean \u00b1 SD of two independent experiments: NS, not significant, **p < 0.005 using one-way ANOVA test for multiple comparisons.\n\nFinally, we examined whether T6SS assembly induces lysis of prey cells. We imaged N. cinerea 346T\u0394tssB::tssB-sfGFP with N. cinerea 27178 expressing sfCherry on gel pads with SYTOX Blue as an indicator of target cell permeability (Ringel et al., 2017). Interestingly, we detected increased SYTOX staining of prey cells immediately adjacent to predator bacteria displaying T6SS activity (Figure 3 and Figure 3\u2014video 1), indicating that the N. cinerea T6SS induces cell damage and lysis of its prey.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig3-v1.jpg)\n\n**Figure 3.:** (A) Assembly of T6SSs and prey lysis. Time-lapse series of merged images with phase contrast, N. cinerea 346T \u0394tssB+tssBsfGFP (green), and N. cinerea 27178A sfCherry (red); scale bar, 1 \u00b5m. (B) Top row shows merged images of GFP (green, indicating T6SS assembly/contraction), mCherry (red, prey strain), and SYTOX Blue (cyan, showing membrane permeabilisation) channels. The bottom row arrows highlight a prey cell losing membrane integrity (increase in SYTOX Blue staining inside cells) arrows. Representative image from two biological repeats. Scale bars represent 1 \u00b5m. See also Figure 3\u2014video 1.\n\n### N. cinerea T6SS effectors are functional toxin/immunity pairs\n\nTo characterise the six putative T6SS effectors identified, we first used sequence analysis to determine their predicted domain structure. As shown in Figure 4, all Ntes contain a conserved Rhs domain, frequently associated with polymorphic toxins (Busby et al., 2013), and a C-terminal region with predicted activities previously described in T6SS effectors (Alcoforado Diniz et al., 2015). Nte1 contains an N-terminal PAAR motif, which can associate with the VgrG tip of the T6SS (Shneider et al., 2013) and C-terminal phospholipase domain (cd00618). Nte2 also contains an N-terminal PAAR domain and has a predicted RNase domain (pfam15606) in its C-terminal region. Using BLASTp analysis and the PAAR-like domain sequence from Nte1 as the\u00a0query sequence, we did not identify any other PAAR encoding genes in the WGS of 346T. Nte3 is a putative endonuclease of the HNH/Endo VII family with conserved LHH (pfam14411). Nte4 contains a GIY-YIG nuclease domain (cd00719) and Nte5 is predicted to be an HNH/endo VII nuclease with conserved AHH (pfam14412), with Nte6 predicted to contain an HNHc endonuclease active site (cd00085).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig4-v1.jpg)\n\n**Figure 4.:** Schematic representation of bioinformatically identified effectors\u00a0in N. cinerea 346T. The domain organisation of the putative effectors is shown, with PAAR motifs indicated in orange, Rhs domains in blue, endonuclease motifs (Tox-LHH pfam14411; Tox-GIY/YIG cd00719; Tox-AHH pfam14412; and Tox-HNHc cd00085) in green, RNase (Ntox34, pfam15606) motif in yellow and the phospholipase (PLA2_like, cd00618) domain in red. The conserved domains annotation was retrieved from the NCBI database.\n\nTo further characterise the possible effector/immunity pairs, we expressed each Nte alone or with its corresponding Nti using an inducible expression plasmid in E. coli (Figure 5). We were only able to clone wild-type Nte6 in presence of its immunity protein, so Nte6R1300S was used to analyse toxicity of this protein. In addition, as Nte1 encodes a predicted phospholipase that should be active against cell membranes (Flaugnatti et al., 2016), we targeted the putative phospholipase domain of Nte1 to the periplasm by fusing it to the PelB signal sequence (Singh et al., 2013);\u00a0cytoplasmic expression of the Nte1 phospholipase domain does not inhibit bacterial growth (Figure 5\u2014figure supplement 1). All Ntes are toxic, with their expression leading to decreased viability and reduced optical density (OD) of E. coli cultures compared to empty vector controls; toxicity was counteracted by co-expression of the corresponding Nti.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig5-v1.jpg)\n\n**Figure 5.:** (A) Arabinose (Ara)-induced expression of T6SS effector Nte1 in periplasm of E. coli leads to reduction in CFU and OD at 600 nm (OD600). Co-expression of putative immunity Nti1 restores growth to levels of strain with empty vector (pBAD33). See also Figure 5\u2014figure supplement 1. (B-E) Cytoplasmic expression of putative effectors Nte2-5 without cognate immunity reduces growth and survival of E. coli. (F) Expression of Nte6R1300S reduces viability and growth when expressed in E. coli. Expression of Nti6 with Nte6 does not impact growth. In (A-F) number of CFU at 120 min post-induction are shown. Data shown are the mean \u00b1 SD of three independent experiments: NS, not significant, ***p<0.0001, *p<0.05 using two-way ANOVA test for multiple comparison. Images of colonies for Nte1 and Nte6 are composite as strains were spotted to different areas of the same plates.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Toxicity of Nte1 with or without the PelB signal sequence (ssPelB) following expression in E. coli. Expression was induced with L-arabinose at 60 min and bacterial growth was monitored by measuring the OD600 of cultures. A reduction on OD600 was only observed when Nte1 was expressed with ssPelB. (B) Samples collected after addition of arabinose were plated to media containing glucose to repress toxin expression and enumerated. Data shown are mean \u00b1 SD of three independent experiments: NS, not significant, ***p<0.0001, *p<0.05 using two-way ANOVA test for multiple comparison.\n\n### Commensal Neisseria T6SS kills human pathogens\n\nWe next investigated whether N. cinerea can deploy the T6SS to antagonise the related pathogenic species, N. meningitidis and N. gonorrhoeae. We performed competition assays with three N. meningitidis strains (belonging to different lineages and expressing different polysaccharide capsules i.e., serogroup B or C), and a strain of N. gonorrhoeae. N. cinerea 346T caused between a 50- to 100-fold decrease in survival of the meningococcus compared with the \u0394T6SS strain, irrespective of lineage or serogroup (Figure 6A) and an approximately fivefold reduction in survival of the gonococcus (Figure 6B). We also investigated whether the meningococcal capsule protects against T6SS assault. Using a capsule-null strain (\u0394siaD) in competition assays with wild-type N. cinerea 346T or the T6SS mutant, we found reduced survival of the unencapsulated mutant compared to the wild-type (Figure 6C). Therefore, the meningococcal capsule protects bacteria against T6SS attack.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig6-v1.jpg)\n\n**Figure 6.:** (A) Recovery of wild-type N. meningitidis (Nm8013, NmMC58, NmS3) after 4 hr co-incubation with N. cinerea 346T wild-type (Wt) or the T6SS mutant (\u0394T6SS) at approx. 100:1 attacker:prey ratio. (B) Recovery of wild-type N. gonorrhoeae (FA1090) after 4 hr co-incubation with N. cinerea 346T wild-type (Wt) or the T6SS mutant (\u0394T6SS) at approximately 10:1 attacker:prey ratio. (C) Unencapsulated N. meningitidis (NmMC58\u0394siaD) is more susceptible to T6SS-mediated killing than wild-type N. meningitidis. Recovery of NmMC58 or the capsule-null mutant (NmMC58\u0394siaD) after 4 hr co-culture with N. cinerea 346T (Wt) or a T6SS-deficient mutant (\u0394T6SS) at ratio of approximately 100:1, attacker:prey. Data shown are the mean \u00b1 SD of three independent experiments: NS, not significant, ***p < 0.0001, **p < 0.001 using unpaired two-tailed Student\u2019s t-test for pairwise comparison (B and C) or one-way ANOVA test for multiple comparison (A).\n\n### Spatial segregation driven by type IV pili dictates prey survival against T6SS assault\n\nDespite the potency of the T6SS in Neisseria warfare, this nanomachine operates when bacteria are in close proximity, so we hypothesised that Tfp, which are critical for the formation of Neisseria microcolonies and organisation of bacterial communities (Higashi et al., 2007; Mairey et al., 2006; Oldewurtel et al., 2015; Z\u00f6llner et al., 2017), could influence T6SS-mediated antagonism. To test this, we constructed fluorophore expressing \u2018prey\u2019 strains (i.e. sfCherry-expressing 346T\u0394nte/i3-5; Figure 7\u2014figure supplement 1) with and without Tfp. Prey strains were mixed with piliated attacker strain N. cinerea 346T expressing sfGFP at a 1:1 ratio on solid media, and the spatiotemporal dynamics of bacterial growth examined by time-lapse stereo microscopy over 24 hr, while the relative proportion of each strain was analysed by flow cytometry at 24 hr (Figure 7\u2014figure supplement 2). As expected based on previous observations of Tfp-mediated cell sorting in Neisseria (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017), the non-piliated prey strain (346T\u0394nte/i3-5\u0394pilE1/2_sfCherry; red) segregates to the periphery of the colony, in this location the prey strain escapes T6SS-mediated assault and dominates the expanding colony (Figure 7A and Figure 7\u2014video 1). In contrast, when the prey is piliated, pilus-mediated cell interactions prevent displacement of cells to the expanding front (Oldewurtel et al., 2015; P\u00f6nisch et al., 2018; Z\u00f6llner et al., 2017), so the susceptible strain (Tfp-expressing 346T\u0394nte/i3-5_sfCherry Tfp+, red) is outcompeted by the T6SS+ strain (Tfp-expressing 346T_sfGfp Tfp+, green) (Figure 7B and Figure 7\u2014video 2). When both strains are piliated and immune to T6SS attack, there is no dominance of either strain (Figure 7C and Figure 7\u2014video 3). Assessment of the relative recovery of piliated and non-piliated prey in competition assays also supported the observation that the piliation status of the prey impacts survival against T6SS (Figure 7D and Figure 7\u2014figure supplement 3). These results highlight that Tfp influence the outcome of T6SS-mediated antagonism through structuring and partitioning bacteria in mixed microcolonies.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig7-v1.jpg)\n\n**Figure 7.:** (A) Fluorescence microscopy images taken at specific times after inoculation of mixed (1:1 ratio) bacterial colonies. A T6SS-susceptible, non-piliated prey strain (346T\u0394nte/i3-5\u0394pilE1/2_sfCherry, red) migrates to the expanding edge of the colony over time, segregating from the T6SS+ attacker strain (N. cinerea 346T_gfp, green) and dominating the expanding population. See also Figure 7\u2014video 1, (B) The same susceptible prey strain but expressing pili does not segregate, and after 24 hr is outcompeted by the piliated T6SS+ attacker. See also Figure 7\u2014video 2. (C) The non-T6SS-susceptible, piliated prey strain (346T_sfCherry, red) and piliated attacker strain (346T_sfGfp, green) do not segregate, but due to immunity against T6SS attack, no dominance is observed. Images of colonies are representative of three independent experiments. See also Figure 7\u2014video 3. Scale bar, 500 \u00b5m. Expanding colony edge images are stills at indicated times from time-lapse imaging performed on one occasion. Scale bar 100 \u00b5m. Flow cytometry data are presented in Figure 7\u2014figure supplement 2. (D) The influence of piliation on T6SS killing. Recovery of non-piliated and piliated prey strains after 24 hr co-culture with N. cinerea 346T (Wt) and a tssM-deficient mutant (\u0394tssM) at ratio of approx. 10:1, attacker:prey. Relative survival is defined as the fold change in recovery of prey following incubation with wild-type attacker N. cinerea compared to N. cinerea \u0394tssM. Data shown are the mean \u00b1 SD of three independent experiments: **p < 0.01 using unpaired two-tailed Student\u2019s t-test for pairwise comparison. See also Figure 7\u2014figure supplement 3.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Competition assay measuring the recovery of the indicated N. cinerea 346T\u0394Nte/i3-5 mutant strain after 4 hr of co-incubation wild-type N. cinerea 346T (Wt) or a tssM-deficient mutant (\u0394tssM) at ratio of 10:1 (attacker: prey). Data shown are the mean \u00b1 SD of three independent experiments performed in triplicate: *p<0.05 using unpaired two-tailed Student\u2019s t-test. (B) N. cinerea 346T WT and mutant strains expressing fluorophores were grown in liquid BHI media for 8 hr at 37\u00b0C with 5% CO2. Growth was monitored by measuring the OD600 of cultures. Data are representative of two independent experiments: NS, not significant, using two-way ANOVA test for multiple comparison.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Representative FACS plots corresponding to analysis of fixed input suspensions of indicated attacker and prey strains mixed at a 1:1 ratio. Plots revealed a population of dual labelled (sfCherry+sfGFP+) particles which likely correspond to associated sfGFP+ and sfCherry+ cells, although additional experiments are required to confirm this. Data from two experiments indicated no significant difference in the % of total population between sfGFP+ and sfCherry+ strains. (B) Total bacteria in mixed colonies grown on agar plates for 24 hr (Figure 7A-C) were collected, fixed, and analysed by Flow cytometry. Plots are representative of two independent experiments and show relative proportion of sfCherry+ (prey), sfGFP+ (attacker), non-fluorescent (NF), and dual-labelled populations (sfCherry+sfGFP+) populations. To determine whether the dual labelled population could affect interpretation of the relative overall proportions of attacker (sfGFP+) and prey (sfCherry+) cells, the fluorescence of this population was analysed further. The Median fluorescence Intensity (MFI) for sfGFP and sfCherry of this population was determined. MFI values were normalised relative to the MFI of the sfGFP or sfCherry single populations respectively, to allow a comparison of the red and green fluorescence of this dual labelled population. This revealed no significant difference for all samples except for the Wt attacker vs Tfp- prey, in which we observed a slight increase towards the dominant population, that\u00a0is, MFIsfCherry>MFIsfGFP of the sfGFP+sfCherry+ population. Therefore, dual fluorescence populations were excluded from analysis and graphs indicate the percentage of total population for sfGFP+ and sfCherry+ populations as mean \u00b1 SD of two independent experiments with duplicate samples. When WT:WT are mixed (both strains are T6SS+ and Tfp+) both were detected in approximately equal proportions (red 346T_sfCherry 29 \u00b1 1%, green 346T_gfp 31 \u00b1 1%, p=0.046). In the context of piliated attacker and prey strains, the attacker cells constitute the majority of the population (red prey 346T\u0394Nte/i3-5 9 \u00b1 2%, green attacker 346T_gfp 65 \u00b1 5%, p<0.0001); however, when non-piliated, the prey strain (red) dominates, despite being susceptible to T6SS-mediated attack (red prey 346T\u0394Nte/i3-5\u0394pilE1/2_sfCherry 56 \u00b1 4%, green attacker 346T_gfp 13 \u00b1 3%; p<0.0001). NS, not significant, ***p < 0.0001 using unpaired two-tailed Student\u2019s t-test.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) Data shown in Figure 7D presented as total recovery in CFU/ml of non-piliated (346T\u0394nte/i3-5\u0394pilE1/2 as Tfp-prey) and piliated prey (346T\u0394nte/i3-5 as Tfp+prey) strains after 24 hr co-culture with N. cinerea 346T (Wt) and a tssM-deficient mutant (\u0394tssM) at ratio of 10:1, attacker:prey. (B) Data shown in Figure 7D presented as percentage survival of prey (Tfp-prey and Tfp+prey) relative to input levels of each prey strain following incubation with wild-type attacker N. cinerea. Data shown are the mean \u00b1 SD of three independent experiments: NS, not significant *p<0.05 and **p<0.01 using or two-way ANOVA test for multiple comparison.\n\nWe also considered that Tfp might contribute to increased prey survival through mechanisms other than the spatial organisation of strains within bacterial colonies. For example, Tfp-Tfp interactions are known to contribute to kin recognition (Adams et al., 2019) and promote aggregation (H\u00e9laine et al., 2005), which could impact T6SS activity by anchoring neighbouring cells in closer proximity. Alternatively, Tfp may have a role in provoking T6SS activity, similar to the T6SS response to exogenous T6SS (Basler et al., 2013) or cell envelope perturbations in Pseudomonas (Ho et al., 2013; Stolle et al., 2021). To address this, we compared the survival of piliated and non-piliated prey, in presence of Tfp+ or Tfp- attacker strain. Where pili are expressed on both or neither strain, segregation should not occur, enabling comparative analysis of the impact of Tfp on prey survival, independent of segregation. Competition assays to assess prey survival revealed that increased prey survival is only observed when the prey is non-piliated, but not when the attacker is non-piliated. Moreover, prey survival was equivalent when attacker and prey either both have, or both lack Tfp (Figure 8A and Figure 8\u2014figure supplement 1). These data support the idea that the enhanced prey survival is due to segregation of the non-piliated prey from the piliated attacker, allowing the prey to achieve a favourable position for outgrowth at the edge of the colony.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig8-v1.jpg)\n\n**Figure 8.:** (A) Role of Tfp in the attacker and prey population during competition. Recovery of non-piliated (346T\u0394nte/i3-5\u0394pilE1/2_sfCherry) and piliated prey (346T\u0394nte/i3-5_sfCherry) strains after 24 hr co-culture with piliated N. cinerea 346T (346T_sfGfp) and non-piliated attacker (346T\u0394pilE1/2_sfGfp) strains at ratio of approx. 10:1, attacker:prey. Data shown are the mean \u00b1 SD of three independent experiments: NS, not significant, **p<0.001 using one-way ANOVA test for multiple comparison. See also Figure 8\u2014figure supplement 1. (B) Fluorescence microscopy images taken at 24 hr after inoculation of mixed (1:1 ratio) bacterial colonies. A T6SS-susceptible, piliated prey strain (Tfp+ prey, 346T\u0394nte/i3-5_sfCherry, red) does not segregate, and after 24 hr is outcompeted by the piliated T6SS+ attacker (Tfp+ attacker, 346T_sfGfp, green). The same prey, but non-piliated (Tfp- prey, 346T\u0394nte/i3-5\u0394pilE1/2_sfCherry, red), segregates from the piliated T6SS+attacker strain (Tfp+ attacker, 346T_sfGfp, green) and dominates the edge of the colony. When the prey is piliated (Tfp+ prey, 346T\u0394nte/i3-5_sfCherry, red) and attacker is non-piliated (Tfp- attacker, 346T\u0394pilE1/2_sfGfp, green), the non-piliated attacker population segregates to the edge and dominates the outer region of the colony. In a mixed population with a non-piliated prey (Tfp- prey, 346T\u0394nte/i3-5\u0394pilE1/2_sfCherry, red) and a non-piliated attacker (Tfp- attacker, 346T\u0394pilE1/2_sfGfp, green), the prey does not segregate from attacker and attacker and prey form expanding sectors in the region of outgrowth at the colony edge. Images of colonies are representative of three independent experiments. Scale bar, 500 \u00b5m. See also Figure 8\u2014figure supplement 2.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Data shown in Figure 8A presented as percentage of prey (Tfp-prey and Tfp+prey) relative to input, following incubation with attacker N. cinerea (Tfp- attacker and Tfp+ attacker). Data shown are the mean \u00b1 SD of three independent experiments: NS, not significant ***p < 0.0001 using one-way ANOVA test for multiple comparison.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63755/elife-63755-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** Additional examples of fluorescence microscopy images taken at 24 hr after inoculation of mixed (1:1 ratio) bacterial colonies. Gfp-expressing attacker, with Tfp (Tfp+, 346T_sfGfp, green) or without Tfp (Tfp-, 346T_sfGfp\u0394pilE1/2, green) and sfCherry-expressing T6SS susceptible prey strains with Tfp (346T\u0394nte/i3-5_sfCherry, red) or without Tfp (346T\u0394nte/i3-5\u0394pilE1/2_sfCherry, red) were mixed as indicated.\n\nWe also used fluorescently labelled piliated and non-piliated attacker and prey to observe the same strains in mixed colonies as previously. Given that Tfp heterogeneity impacts segregation within a colony (Oldewurtel et al., 2015; P\u00f6nisch et al., 2018; Z\u00f6llner et al., 2017), when one of the two strains lacks pili, the non-piliated strain segregates and outgrowth is clearly visible at the edge of the colony (Figure 8B and Figure 7A). In the case where the non-piliated attacker segregates and dominates the colony edge, this appears to prevent any expansion of the prey, consistent with the lack of enhanced prey survival observed in competition assays. Interestingly, comparison of colonies where both attacker and prey are piliated with colonies where neither strain expresses Tfp revealed differences in prey expansion at the edge of the colony. In colonies with both strains lacking Tfp, we observe higher abundance of expanding sectors of the emerging prey population compared to colonies where attacker and prey cells are piliated (Figure 8B and Figure 8\u2014figure supplement 2). One possible explanation is that Tfp interactions at the expanding edge bring adjacent attacker and prey cells into close proximity and thus result in a more effective reduction in the prey compared to when neither is piliated. Although competition assays did not reveal any difference in levels of prey survival when neither or both attacker and prey are piliated, this could be due to methodological limitations which mean that this very local effect is not detected at the population level. Further work is therefore necessary to explore the contribution of Tfp to T6SS-mediated attack beyond the impact on spatial reorganisation within a colony. Overall, data presented here confirm that Tfp influence the outcome of T6SS-mediated antagonism.\n\n## Discussion\n\nHere, we identified a T6SS in a commensal Neisseria spp. which can kill T6SS-deficient N. cinerea isolates and the related pathogens, N. meningitidis, with which it shares an ecological niche (Knapp and Hook, 1988), and N. gonorrhoeae. Of note, the N. cinerea T6SS is encoded on a large plasmid, with structural genes for the single T6SS apparatus clustered in one locus, similar to other T6SSs (Anderson et al., 2017; Liaw et al., 2019; Sana et al., 2016). To date, plasmid encoded T6SSs have only been described in Campylobacter species (Marasini and Fakhr, 2016), with this plasmid T6SS mobilised via conjugation (Marasini et al., 2020). Although other small plasmids have been reported in N. cinerea (Knapp et al., 1984; Roberts, 1989) and N. cinerea can be a recipient of N. gonorrhoeae plasmids (Genco et al., 1984), it is not yet known whether T6SS plasmids are widespread among Neisseria, or whether the plasmid can be mobilised by conjugation or transformation. Interestingly, in Acinetobacter baylyi, T6SS-induced prey cell lysis contributes to acquisition of plasmids from target cells (Ringel et al., 2017). Therefore, it will be interesting to see whether other Neisseria species with T6SS genes (Marri et al., 2010) harbour T6SS-expressing plasmids.\n\nIn total six genes encoding putative effectors were identified based on their proximity to the T6SS locus, their pairwise arrangement with genes encoding proteins with homology to immunity proteins and the presence of conserved domains such as PAAR and Rhs domains in the predicted proteins (Alcoforado Diniz et al., 2015). Our bioinformatic predictions suggest Nte3, 4, 5, and 6 may\u00a0be cargo effectors while Nte1 and Nte2 are more typical of specialised or evolved effectors with integral PAAR domains at their N-termini (Durand et al., 2014). Of note nte5 encodes a protein with a shorter Rhs domain compared to the other five putative effectors (319AA compared to 695-735AA), raising the possibility that this may represent an orphan Rhs-CT, as described in other genomes (Kirchberger et al., 2017). Based on previous work, Hcp, or VgrG could be responsible for delivery of effectors encoded nearby in the T6SS locus (Hachani et al., 2014), with or without the involvement of the adjacent DUF2169 family protein (Figure 1). As nte/nti6 are not part of the T6SS locus and are encoded elsewhere on the plasmid, Nte/Nti6 may not be associated with the T6SS. Thus, although our bioinformatic analysis and protein expression in E. coli suggests Nte1-6 as effectors, additional experimentation will be needed to further confirm their contributions to T6SS activity and killing, and to demonstrate direct secretion via the T6SS.\n\nExamination of N. cinerea T6SS activity revealed several interesting features. Microscopy demonstrated that T6SS attack (tit-for-tat) is not required to provoke firing of the system. Instead, the T6SS appears to be constitutively active in N. cinerea (Figure 2). Furthermore, the system is capable of inducing lysis of prey bacteria (Figure 3). The consequences of T6SS attack are determined by the repertoire and activities of effectors, and their site of delivery. Many different effector activities have been proposed including lipases, peptidoglycan hydrolases, metalloproteases, and nucleases (Lewis et al., 2019). Effector activities can result in target cell lysis to varying degrees (Ringel et al., 2017; Smith et al., 2020). Of the six Ntes we identified, lysis could be mediated by Nte1 which harbours a putative phospholipase domain in the C-terminus. Alternatively, a combination of effectors might be needed to elicit prey lysis.\n\nPolysaccharide capsules are largely thought to provide bacteria with a strategy for evading host immune killing (Lewis and Ram, 2014). Here, we found that the meningococcal capsule has an alternative role in defence against other bacteria. Meningococcal strains lacking a capsule were at a significant disadvantage in the face of a T6SS-expressing competitor implicating this surface polysaccharide in protection against T6SS assault. Similar findings have been reported for other bacteria; for example, the extracellular polysaccharide of V. cholerae and the colanic acid capsule of E. coli confer defence against T6SS attack (Hersch et al., 2020; Toska et al., 2018). One potential mechanism is that the capsule sterically impairs the ability of the T6SS to penetrate the target cell membrane, and/or inhibits access of T6SS effectors to their cellular targets. Interestingly, recent genetic evidence indicates that some commensal Neisseria species also have capacity to produce polysaccharide capsules (Clemence et al., 2018), which might also confer a survival advantage in mixed populations that include strains expressing T6SS.\n\nMost bacteria exist within complex polymicrobial communities in which the spatial and temporal dynamics of proliferation and death have a major effect on their fitness and survival (Nadell et al., 2016). While structured complex microbial societies can benefit all their members (Gabrilska and Rumbaugh, 2015; Wolcott et al., 2013), antagonistic neighbours, especially those deploying contact-dependent killing mechanisms, can disrupt communities. Although T6SS-mediated killing can be advantageous to a producing strain during bacterial competition, this requires intimate association with its prey (MacIntyre et al., 2010; Russell et al., 2014). Thus, one way for susceptible bacteria to evade T6SS killing is to avoid direct contact with attacking cells (Borenstein et al., 2015; Smith et al., 2020). In Neisseria, the Tfp is a key mediator of interbacterial and interspecies interactions (Custodio et al., 2020; Higashi et al., 2011) and pilus-mediated interactions influence the spatial structure of a growing community (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017). In N. gonorrhoeae, non-piliated bacteria segregate to the expanding front of the colony and Tfp-mediated spatial reorganisation can allow bacteria to avoid external stresses or strains competing for resources (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017). We predicted that this would be especially relevant in the context of T6SS-mediated antagonism. For example, physical exclusion driven by Tfp-loss or modification could be an effective strategy to evade and survive an antagonistic interaction, while pilus-mediated interactions might be less favourable for a susceptible prey. Importantly, Tfp loss may occur naturally in a polymicrobial environment and is an established phenomenon in pathogenic Neisseria (Hagblom et al., 1985; Helm and Seifert, 2010). Our results demonstrate that within a bacterial community of attacker and prey cells with or without pili, the sorting of the non-piliated prey to the colony edge results in enhanced survival, likely through segregation of the prey from the attacker. Reduction in prey survival was equivalent whether both or neither the attacker and prey express Tfp, demonstrating that Tfp are not required for T6SS activity. However, observation of the prey in mixed colonies where both strains are piliated compared to when neither strain expresses Tfp suggests a possible localised contribution of Tfp. It will be interesting to further explore the contribution of Tfp to T6SS activity at the single-cell level, to ascertain their localised impact and explore for example how this affected by pilus retraction or pilin sequence variation. It is noteworthy that many bacteria (e.g. Pseudomonas aeruginosa, Vibrio cholerae, Acinetobacter baumannii, enteropathogenic E. coli) that employ T6SSs for inter-bacterial competition also express Tfp. Therefore, our findings are of broad relevance for the impact of contact-dependent killing, and further emphasise how precise spatial relationships can have profound effects on how antagonistic and mutualistic factors combine to influence the development of microbial communities.\n\n## Materials and methods\n\n### Bacterial strains and growth\n\nBacterial strains used in this study are shown in Key Resources Table (Appendix). Neisseria spp. were grown on Brain Heart Infusion (BHI, Oxoid) agar with 5% defibrinated horse blood or in BHI broth at 37\u00b0C with 5% CO2 or GC-medium supplemented with 1.5% base agar (w/v) and 1% Vitox (v/v; Oxoid). GW-medium (Wade and Graver, 2007) was used for N. cinerea microscopy experiments. E. coli was grown on LB (Lennox Broth base, Invitrogen) agar or in liquid LB at 37\u00b0C with shaking. Antibiotics were added at the following concentrations: for E. coli, carbenicillin (carb) 100 \u00b5g/ml, kanamycin (kan) 50 \u00b5g/ml, and chloramphenicol (cm) 20 \u00b5g/ml; for Neisseria spp. kan 75 \u00b5g/ml, spectinomycin (spec) 65 \u00b5g/ml, erythromycin (ery) 15 \u00b5g/ml, and polymyxin B (pmB) 10 \u00b5g/ml.\n\n### DNA isolation and whole-genome sequencing (WGS)\n\nGenomic DNA was extracted using the Wizard Genomic Kit (Promega), and sequenced by PacBio (Earlham Institute, Norwich) using single-molecule real-time (SMRT) technology; reads were assembled de novo with HGAP3 (Chin et al., 2013).\n\n### Bioinformatic analysis of putative T6SS genes\n\nAll ORFs on the N. cinerea 346T plasmid were analysed manually using NCBI BLASTp against non-redundant protein databases at NCBI using default search parameters to confirm the presence of T6SS-associated conserved domains. The PAAR-like domain and Rhs domain from N. cinerea 346T Nte1 plus VgrG amino acid sequences from N. cinerea 346T T6SS locus were used as query sequences in BLASTp analysis using the PubMLST BLAST tool. The default parameter of word size (length of the initial identical match that is required before extending a hit) of 11 was used for all searches. Output of 10 hits per isolate was selected to enable identification of multiple homologues within a genome. BLAST results were then subjected to further manual refinement by filtering the hits obtained using a cut-off of at least 20% homology to the query sequence and 20% coverage. The FASTA nucleotide sequence of the hits (including 100 bp flanking sequence) were extracted from the PubMLST database and mapped onto the 346T PacBio genome using SnapGene. Each of the ORFs mapped on the genome were further analysed by NCBI BLASTx against non-redundant protein databases at NCBI using default search parameters to confirm the presence of T6SS-associated conserved domains. T6SS-effector prediction software tools (Li et al., 2015) were also used to identify putative effectors.\n\n### Construction of N. cinerea mutants\n\nPrimers used in this study are listed in key resources table (Appendix). Target genes were replaced with antibiotic cassettes as previously (W\u00f6rmann et al., 2016). Constructs were assembled into pUC19 by Gibson Assembly (New England Biolabs), and hosted in Escherichia coli DH5\u03b1. Plasmids were linearised with ScaI, and gel extracted, relevant linearised fragments used to transform N. cinerea; transformants were checked by PCR and sequencing. Complementation or chromosomal insertion of genes encoding fluorophores was achieved using pNCC1-Spec, a spectinomycin-resistant derivative of pNCC1 (W\u00f6rmann et al., 2016). For visualisation of T6SS-sheaths, sfgfp was cloned in-frame with tssB and a short linker (encoding 3\u00d7Ala 3\u00d7Gly) by Gibson Assembly (New England Biolabs) into pNCC1-Spec to allow IPTG-inducible expression of TssB-sfGFP. PCR was performed using Herculase II (Agilent) or Q5 High-fidelity DNA Polymerase (New England Biolabs).\n\n### Analysis of effector/immunity activity in E. coli\n\nPutative effector coding sequences with or without cognate immunity gene were amplified by PCR from N. cinerea 346T gDNA and either assembled by Gibson Assembly (NEB) into pBAD33 or, for Nte1 with or without addition of the PelB signal sequence, cloned in to pBAD33 using XbaI / SphI restriction enzyme sites. All forward primers also included the E. coli ribosomal binding site (RBS: AAGAAGG) upstream of the start codon. Plasmids were transformed into E. coli DH5\u03b1 and verified by sequencing (Source Bioscience). For assessment of toxicity, strains with recombinant or empty pBAD33 plasmids were grown overnight in LB supplemented with 0.8% glucose (w/v), then diluted to an OD600 of 0.1 and incubated for 1 hr at 180 rpm and 37\u00b0C; bacteria were pelleted and resuspended in LB with arabinose (0.8% w/v) to induce expression and incubated at 37\u00b0C, 180 rpm for a further 4 hr. The OD600 and CFU/ml of cultures were determined; aliquots were diluted and plated to media containing 0.8% glucose at relevant time points up to 5 hr.\n\n### Hcp protein expression, purification, and antibody generation\n\nCodon optimised hcp was synthesised with a sequence encoding an N-terminal 6x His Tag and a 3C protease cleavage site, and flanked by NcoI and XhoI restriction sites (ThermoFisher). The fragment was ligated into NcoI and XhoI sites in pET28a (Novagen) using QuickStick T4 DNA Ligase (Bioline) and transformed into E. coli B834. Bacteria were grown at 37\u00b0C, 150 rpm to an OD600 of 1.0, and expression of 6xHis-3C-Hcp was induced with 1 mM IPTG for 24 hr at 16\u00b0C. Cells were resuspended in Buffer A (50 mM Tris-HCl buffer pH 7.5, 10 mM Imidazole, 500 mM NaCl, 1 mM DTT) containing protease inhibitors, 1 mg/mL lysozyme and 100 \u03bcg/mL DNase then subsequently homogenised with an EmulsiFlex-C5 (Avestin). Lysed cells were ultracentrifuged, and the cleared supernatant loaded onto a Ni Sepharose 6 Fast Flow His Trap column (GE Healthcare) equilibrated with Buffer A. The column was washed with Buffer A, then Buffer B (50 mM Tris-HCl buffer pH 7.5, 35 mM Imidazole, 500 mM NaCl, 1 mM DTT) before elution with 10 mL of Buffer C (50 mM Tris-HCl buffer pH 7.5, 300 mM Imidazole, 150 mM NaCl, 1 mM DTT). The eluate was incubated with the HRV-3C protease (Sigma) then applied to a Ni Sepharose column. The eluate containing protease and cleaved protein was concentrated using Amicon Ultra 10,000 MWCO (Millipore), then passed through a Superdex-200 column (GE Healthcare, Buckinghamshire, UK). Fractions were analysed by SDS-PAGE and Coomassie blue staining, and those with Hcp pooled and used to generate polyclonal antibodies (EuroGentec).\n\n### Hcp secretion assay\n\nBacteria were grown in BHI broth for 4\u20135 hr then harvested and lysed in an equal volume of SDS-PAGE lysis buffer (500 mM Tris-HCl [pH 6.8], 5% SDS, 15% glycerol, 0.5% bromophenol blue containing 100 mM \u03b2-mercaptoethanol); supernatants were filtered (0.22 \u00b5m pore, Millipore) and proteins precipitated with 20% (v/v) trichloroacetic acid. Hcp was detected by Western blot with anti-Hcp (1:10,000 dilution) and goat anti-rabbit IgG\u2013HRP (1:5000, sc-2004; Santa Cruz). Anti-RecA (1:5000 dilution, ab63797; Abcam) followed by goat anti-rabbit IgG\u2013HRP and detection with ECL detection Reagent (GE Healthcare) or Coomassie blue staining were used as loading controls.\n\n### Live cell imaging of T6SS activity\n\nBacteria were grown overnight on BHI agar, resuspended in PBS and 20 \u00b5l spotted onto fresh BHI agar containing 1 mM IPTG and incubated for 4 hr at 37\u00b0C. After incubation, 500 \u00b5l of 109 CFU/mL bacterial suspension of attacker was mixed with the prey strain at a 1:1 ratio. Cells were harvested by centrifugation for 3 min at 6000 rpm, resuspended in 100 \u03bcL of PBS or GW media and 2 \u00b5l spotted on 1% agarose pads (for T6SS dynamics) or GW media with 0.1 mM IPTG and 0.5 \u00b5M SYTOXBlue (Thermo Fisher Scientific) for assessment of prey permeability. Fluorescence microscopy image sequences were acquired within 20\u201330 min of sample preparation with an inverted Zeiss 880 Airyscan microscope equipped with Plan-Apochromat 63\u00d7/1.4-NA oil lens and fitted with a climate chamber mounted around the objective to perform the imaging at 37\u00b0C with 5% CO2. Automated images were collected at 1 s, 10 s or 1 min intervals and processed with Fiji (Schindelin et al., 2012). Background noise was reduced using the \u2018Despeckle\u2019 filter. The XY drift was corrected using StackReg with \u2018Rigid Body\u2019 transformation (Th\u00e9venaz et al., 1998). Experiments and imaging were performed on at least two independent occasions.\n\n### Quantitative competition assays\n\nStrains grown overnight on BHI agar were resuspended in PBS and diluted to 109 CFU/mL based on OD quantification, mixed at an approximate ratio of ~10:1 for N. cinerea/ N. cinerea and N. cinerea/N. gonorrhoeae, or ~100:1 for N. cinerea/ N. meningitidis (actual CFU are indicated in source data files where available), then 20 \u00b5l spotted onto BHI agar in triplicate and incubated at 37\u00b0C with 5% CO2. At specific time-points, entire spots were harvested and resuspended in 1 mL of PBS. The cellular suspension was then serially diluted in PBS and aliquots spotted onto selective media. Colonies were counted after ~16 hr incubation at 37\u00b0C with 5% CO2. Experiments were performed on at least three independent occasions. For different prey analysis, relative survival was defined as the fold change in recovery of prey following incubation with wild-type attacker N. cinerea compared to a T6SS-deficient N. cinerea.\n\n### Competition assays assessed by fluorescence microscopy and flow cytometry\n\nBacteria were grown overnight on BHI, resuspended in PBS and diluted to 109 CFU/mL. 100 \u00b5l of each suspension (attacker/prey) were mixed thoroughly (i.e., a 1:1 ratio) and 1 \u00b5l spotted in duplicate onto GC-medium supplemented with 0.5% base agar (w/v) and 1% Vitox (v/v; Oxoid). Plates were incubated for 24 hr at 37\u00b0C, 5% CO2. For flow cytometry analysis, the remaining input suspension was then centrifuged for 3 mins at 6000 rpm then pellets resuspended in 500 \u00b5L of 4% paraformaldehyde and fixed for 20 min at room temperature. Following centrifugation, the fixed bacteria were then resuspended in 250 \u00b5L PBS and stored at 4\u00b0C for 24 hr prior to analysis. At various time points, expanding colonies were imaged using a M125C stereo microscope equipped with a DFC310FX digital camera (Leica Microsystems), and images processed with Fiji. Images were imported using \u2018Image Sequence\u2019 and corrected with StackReg as described above. At 24 hr, colonies were harvested, fixed with 4% PFA for 20 min then washed with PBS. Samples were analysed using a Cytoflex LX (Beckman Coulter), and at least 104 events recorded. Fluorescence, forward and side scatter data were collected to distinguish between debris and bacteria. Results were analysed by calculating the number of events positive for either GFP or Cherry signal in FlowJo v10 software (Becton Dickinson Company). The negative population (non-fluorescent cells) was established using 346T Wt, the GFP+ population was determined using N. cinerea 346T Wt_sfGFP, and the\u00a0Cherry+ population\u00a0using N. cinerea 346T Wt_sfCherry. Quadrants were set to delineate the GFP+, Cherry+, GFP+Cherry+ and the percentage of cells representing each\u00a0population within the different competition spots was recorded. Flow cytometry analysis was performed on two independent occasions. Stereo microscopy analysis was performed on three independent occasions with technical duplicates each time.\n\n### Statistical analyses\n\nGraphpad Prism7 software (San Diego, CA) was used for statistical analysis. We used One-way/two-way ANOVA with Tukey post hoc testing for multiple comparisons and unpaired two-tailed Student\u2019s t-test for pairwise comparisons. In all cases, p < 0.05 was considered statistically significant.\n",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "cfb6a01f-b01b-4acd-970c-4b61d9554ab5",
+      "submission_id": "005b3d23-d8bd-4eab-88fc-db599d32f9ac",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alain Filloux, Imperial College United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63755.sa1](https://doi.org/10.7554/eLife.63755.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe type VI secretion system (T6SS) is an antibacterial system that has been characterized in a large number of Gram-negative bacteria either pathogenic or environmental. This study represents the first functional description of T6SS in the genus Neisseria, which, unusually, is plasmid encoded. The work demonstrates that this T6SS may be important in allowing commensal Neisseria cinerea to resist pathogenic Neisseria, and has implications for understanding how spatial considerations impact T6SS-mediated inter-bacterial interactions.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Type VI secretion system killing by commensal Neisseria is influenced by the spatial dynamics of bacteria\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Alain Filloux as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our policy on revisions we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe type VI secretion system (T6SS) is an antibacterial system that has been characterized in a large number of Gram-negative bacteria either pathogenic or environmental.\n\nThis works represents the first functional description of T6SS in the genus Neisseria, which, unusually, is plasmid encoded, demonstrates that this T6SS may be important in allowing commensal Neisseria cinerea to resist pathogenic Neisseria, assess the role of T6SS effectors and how the capsule on the target cell reduces the efficacy of T6SS killing.\n\nIt brings important new aspects to the emerging theme in the field that spatial considerations are critical to understanding T6SS-mediated inter-bacterial interactions. Notably, it demonstrates how the type four pilus (Tfp) on the target cell contributes to T6SS-dependent killing. In a mixed population of bacteria possessing or not the Tfp, bacteria without Tfp are excluded at the edge of the microcolony where they can outgrow suggesting that both T6SS and Tfp contribute to the spatial organisation of the microcolonies.\n\nOverall, the findings will be of great interest to the T6SS field and also those interested in microbial interactions more broadly.\n\nEssential revisions:\n\n1. The focus of the paper is on the spatial dynamics/spatial segregration in mixed microcolonies. Yet, the authors do not exclude a very localized role of the Tfp at the interface between the attacker and the prey. It is not clear for me whether the impact of the Tfp is due to organisation of the bacterial community (with Tfp minus strains segregating at the periphery of the colony) or whether the Tfp has a very localized impact either by bringing the attacker and the prey in close contact or triggering a response of the attacker as described for vibrio T4SS/mating pair formation system. Indeed, in figure 6, it seems that there are also major differences in the center of the inoculation zone between Tfp- and Tfp+ strains.\n\nAssessing the role of Tfp in the attacker cells (in the experiment presented in Figure 6) would be very helpful for the understanding of the role of Tfp.\n\n2. There are 6 toxin/immunity pairs described. While Nte1-5 are encoded in the T6SS cluster, nte6/nti6 is found as a remote pair. What suggests that Nte6 is a T6SS-dependent toxin? In this respect there are no demonstration of a direct T6SS-dependent secretion of any of the 6 toxins. This is not essential but if tools available and at least one toxin could be tested it will add value to this publication.\n\n3. There does not seem to be any paar gene in the cluster. Is there any elsewhere on the plasmid? If not which of the Ntes have a PAAR-like at the N terminus. Only Nte1 and Nte2? If this is true, then deletion of these two should likely prevent the other toxins to be delivered since it is accepted that at least one PAAR is required for the T6SS to be effective. This may be worth assessing but at least some more information on the domain organisation would be helpful. Along this line, the Nte5 (and to a lesser extent Nte4) effector is much smaller than a typical full-length T6SS-associated Rhs protein would be. Is it (or both) actually an 'orphan' Rhs CT- immunity pair (presumed to be displaced from the upstream full-length Rhs by homologous recombination, leaving only a part of the Rhs domain)? Perhaps this could be discussed?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Type VI secretion system killing by commensal Neisseria is influenced by the spatial dynamics of bacteria\" for further consideration by eLife. Your revised article has been evaluated by Gisela Storz as the Senior Editor, and a Reviewing Editor.\n\nAll previous reviewers have had the opportunity to look carefully at the changes you made and we are happy to say that there is a consensus that most comments have been well addressed. However, there is still the pending issue that the contribution of type IV pili (Tfp) loss to increased prey survival may not simply be due to the gross spatial reorganisation in the colony. One way to look a bit further into this would be for example to have attacker and prey both lacking pili so that the role of Tfp in T6SS-dependent combat independently of segregation could be further tested. One reviewer suggests for example an experiment where you make one more strain (GFP Tfp- strain to be used as T6SS+/Tfp- attacker) and then use this with the Tfp+ and Tfp- prey cells (Tfp- attacker with Tfp- prey would give a non-segregated population but might retain other aspects of loss of Tfp, so would be interesting to see if prey still survive better/T6SS still less efficient).\n\nThe eLife policy is not to ask for a second round of revision. However, in this case we thought we could give you the opportunity to address this point, especially since we felt that it should not be a too challenging experiment.\n\nWill you decide not to perform the experiment then we would ask you to modify your text accordingly so that the discussion about the role of Tfp takes all possible aspects into consideration. We would also suggest to modify the title to highlight the role of the Tfp without any emphasis on the spatial dynamics.\"\n",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ee051cbe-c910-4f40-be22-d5a8d2ac1aba",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C1",
+      "claim": "N. cinerea isolate CCUG346T (346T) encodes a single locus containing homologues of all 13 components necessary for a functional T6SS.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a single locus in N. cinerea isolate CCUG346T (346T) (https://www.ccug.se/strain?id=346) that encodes homologues of all 13 components that are necessary for a functional T6SS (Cascales and Cambillau, 2012), including genes predicted to encode canonical T6SS components Hcp and VgrG (Figure 1A and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by bioinformatic analysis of the genome sequence and reference to established T6SS components.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "e8e6045d-6903-4b79-955a-acc3cd23a11d",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C2",
+      "claim": "Six putative effector and immunity gene pairs (nte and nti) were identified in N. cinerea 346T using T6SS-effector prediction software.",
+      "claim_type": "EXPLICIT",
+      "source": "We used T6SS-effector prediction software tools (Li et al., 2015) to search for putative effectors. In total we identified six putative effector and immunity genes, termed nte and nti for Neisseria T6SS effector/immunity, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational prediction using specialized software and is supported by citation to the prediction tool.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "6d7e31b7-c963-47d6-9660-0689982139a5",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C3",
+      "claim": "All predicted T6SS-related orfs and Nte/Ntis in N. cinerea 346T are encoded on a 108,141 bp plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, all predicted T6SS-related orfs and Nte/Ntis in N. cinerea 346T were found to be encoded on a 108,141 bp plasmid, revealed by PacBio sequencing, and confirmed by PCR and sequencing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole genome sequencing data (PacBio) and confirmed by PCR and sequencing experiments, as shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "70481183-d724-4db5-961d-a8f1c6542b10",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C4",
+      "claim": "Nte/Nti 1\u20135 are encoded adjacent to the structural gene cluster, with Nte6/Nti6 encoded elsewhere in the plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Nte/Nti 1\u20135 are encoded adjacent to the structural gene cluster, with Nte6/Nti6 encoded elsewhere in the plasmid (Figure 1B and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the plasmid map shown in Figure 1B and confirmed by PCR analysis in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "9690fa16-785e-4766-81d9-23794654b3c3",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C5",
+      "claim": "Hcp was detected in both whole cell lysates and supernatants from wild-type N. cinerea 346T but not in the \u0394T6SS mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Hcp was detected in both fractions from the wild-type strain but not in the negative control strain (\u0394T6SS mutant) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "c11961a8-a184-4306-afa4-d69ed781f0fb",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C6",
+      "claim": "Hcp was present in cell lysates from the \u0394tssB mutant but not detected in cell supernatants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Hcp was present in cell lysates from the \u0394tssB mutant, but not detected in cell supernatants, while Hcp secretion was restored by complementation of the \u0394tssB mutant by chromosomal expression of TssB with a C-terminal sfGFP fusion (\u0394tssB::tssB-sfGFP) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot analysis shown in Figure 1C demonstrating differential Hcp localization in the mutant versus complemented strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "b756db1d-7581-473a-ae4b-4a0bd24f82e4",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C7",
+      "claim": "Hcp secretion was restored by complementation of the \u0394tssB mutant with chromosomal expression of TssB-sfGFP fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Hcp was present in cell lysates from the \u0394tssB mutant, but not detected in cell supernatants, while Hcp secretion was restored by complementation of the \u0394tssB mutant by chromosomal expression of TssB with a C-terminal sfGFP fusion (\u0394tssB::tssB-sfGFP) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data in Figure 1C showing Hcp in supernatants of the complemented strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "03c78a87-c550-4e4e-a1e6-8121faecd5c3",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C8",
+      "claim": "The survival of N. cinerea 27178A was reduced by around an order of magnitude following incubation with N. cinerea 346T compared with the \u0394T6SS mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival of N. cinerea 27178A was reduced by around an order of magnitude following incubation with N. cinerea 346T compared with the \u0394T6SS mutant (Figure 1D), confirming that the N. cinerea 346T T6SS is active during inter-bacterial competition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative competition assay data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "08dbc07d-f817-4de9-961f-48e2ae2ffd16",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C9",
+      "claim": "The N. cinerea 346T T6SS is active during inter-bacterial competition.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival of N. cinerea 27178A was reduced by around an order of magnitude following incubation with N. cinerea 346T compared with the \u0394T6SS mutant (Figure 1D), confirming that the N. cinerea 346T T6SS is active during inter-bacterial competition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the competition assay results showing T6SS-dependent killing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "287ddcc4-c683-47cb-9ec6-40671ac3de44",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C10",
+      "claim": "Time-lapse microscopy revealed dynamic T6SS foci inside N. cinerea 346T\u0394tssB::tssB-sfGFP bacteria, with structures extending/contracting over seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse microscopy revealed dynamic T6SS foci inside bacteria, with structures extending/contracting over seconds (Figure 2A and Figure 2\u2014video 1) consistent with T6SS activity (Gerc et al., 2015; Ringel et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 2A and video, and is consistent with published observations of T6SS dynamics.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "b2f89671-3e58-4ed0-8b05-910e3b7a74a7",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C11",
+      "claim": "Deletion of tssM in strain 346T\u0394tssB::tssB-sfGFP abolished T6SS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To further confirm T6SS activity, we deleted the gene encoding the TssM homologue in strain 346T\u0394tssB::tssB-sfGFP, abolishing T6SS activity (Figure 2B and Figure 2\u2014figure supplement 1) and confirmed that in the absence of TssM, fluorescent structures were rarely seen (< 5% of cells in the \u0394tssM background, compared with > 60% in the strain expressing TssM; Figure 2C and Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data in Figure 2B and quantification in Figure 2C, as well as competition assay data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "ea6c7638-d490-426b-a486-ae34eadc92d3",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C12",
+      "claim": "In the absence of TssM, fluorescent T6SS structures were rarely seen (< 5% of cells) compared with > 60% in the strain expressing TssM.",
+      "claim_type": "EXPLICIT",
+      "source": "To further confirm T6SS activity, we deleted the gene encoding the TssM homologue in strain 346T\u0394tssB::tssB-sfGFP, abolishing T6SS activity (Figure 2B and Figure 2\u2014figure supplement 1) and confirmed that in the absence of TssM, fluorescent structures were rarely seen (< 5% of cells in the \u0394tssM background, compared with > 60% in the strain expressing TssM; Figure 2C and Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of fluorescent foci shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "02ab7807-1339-44d8-80af-2cab3b25c90c",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C13",
+      "claim": "Increased SYTOX staining of prey cells was detected immediately adjacent to predator bacteria displaying T6SS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we detected increased SYTOX staining of prey cells immediately adjacent to predator bacteria displaying T6SS activity (Figure 3 and Figure 3\u2014video 1), indicating that the N. cinerea T6SS induces cell damage and lysis of its prey.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data showing SYTOX Blue staining in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "640d6b33-aba1-419f-a23d-8dfe93ae335b",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C14",
+      "claim": "The N. cinerea T6SS induces cell damage and lysis of its prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we detected increased SYTOX staining of prey cells immediately adjacent to predator bacteria displaying T6SS activity (Figure 3 and Figure 3\u2014video 1), indicating that the N. cinerea T6SS induces cell damage and lysis of its prey.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the SYTOX staining data which indicates membrane permeabilization and cell lysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "f72d6ea6-7127-4402-9c6c-407f1895d43d",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C15",
+      "claim": "All Ntes contain a conserved Rhs domain and a C-terminal region with predicted activities previously described in T6SS effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4, all Ntes contain a conserved Rhs domain, frequently associated with polymorphic toxins (Busby et al., 2013), and a C-terminal region with predicted activities previously described in T6SS effectors (Alcoforado Diniz et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bioinformatic analysis shown in Figure 4 and references to published work on Rhs domains and T6SS effectors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "d425f099-6a05-4a8c-b1b7-be595fbe56cc",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C16",
+      "claim": "Nte1 contains an N-terminal PAAR motif and C-terminal phospholipase domain (cd00618).",
+      "claim_type": "EXPLICIT",
+      "source": "Nte1 contains an N-terminal PAAR motif, which can associate with the VgrG tip of the T6SS (Shneider et al., 2013) and C-terminal phospholipase domain (cd00618).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by domain analysis shown in Figure 4 and citation to work on PAAR domains.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "2b5dfc2b-4adf-4488-94e6-109ca4ce7ec8",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C17",
+      "claim": "Nte2 contains an N-terminal PAAR domain and has a predicted RNase domain (pfam15606) in its C-terminal region.",
+      "claim_type": "EXPLICIT",
+      "source": "Nte2 also contains an N-terminal PAAR domain and has a predicted RNase domain (pfam15606) in its C-terminal region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by domain analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "f2e94b86-580e-4b4c-bfa9-d528da0c8da4",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C18",
+      "claim": "Nte3 is a putative endonuclease of the HNH/Endo VII family with conserved LHH (pfam14411).",
+      "claim_type": "EXPLICIT",
+      "source": "Nte3 is a putative endonuclease of the HNH/Endo VII family with conserved LHH (pfam14411).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by domain analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "5bb4c124-4ecf-4b92-9e12-6a4b5eb27538",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C19",
+      "claim": "Nte4 contains a GIY-YIG nuclease domain (cd00719).",
+      "claim_type": "EXPLICIT",
+      "source": "Nte4 contains a GIY-YIG nuclease domain (cd00719) and Nte5 is predicted to be an HNH/endo VII nuclease with conserved AHH (pfam14412), with Nte6 predicted to contain an HNHc endonuclease active site (cd00085).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by domain analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "cdcc830c-9e07-49b3-95f4-124cf85c0b61",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C20",
+      "claim": "Nte5 is predicted to be an HNH/endo VII nuclease with conserved AHH (pfam14412).",
+      "claim_type": "EXPLICIT",
+      "source": "Nte4 contains a GIY-YIG nuclease domain (cd00719) and Nte5 is predicted to be an HNH/endo VII nuclease with conserved AHH (pfam14412), with Nte6 predicted to contain an HNHc endonuclease active site (cd00085).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by domain analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "5a713916-fbeb-48b1-86e1-0e44ba992d81",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C21",
+      "claim": "Nte6 is predicted to contain an HNHc endonuclease active site (cd00085).",
+      "claim_type": "EXPLICIT",
+      "source": "Nte4 contains a GIY-YIG nuclease domain (cd00719) and Nte5 is predicted to be an HNH/endo VII nuclease with conserved AHH (pfam14412), with Nte6 predicted to contain an HNHc endonuclease active site (cd00085).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by domain analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "61758d85-f2da-4586-8122-71ef0087fe8d",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C22",
+      "claim": "All Ntes are toxic when expressed in E. coli, leading to decreased viability and reduced optical density compared to empty vector controls.",
+      "claim_type": "EXPLICIT",
+      "source": "All Ntes are toxic, with their expression leading to decreased viability and reduced optical density (OD) of E. coli cultures compared to empty vector controls; toxicity was counteracted by co-expression of the corresponding Nti.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth curves and CFU data shown in Figure 5A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "1311a6fb-de7c-45c9-8ff1-f02c3a24bffc",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C23",
+      "claim": "Toxicity of Ntes was counteracted by co-expression of the corresponding Nti in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "All Ntes are toxic, with their expression leading to decreased viability and reduced optical density (OD) of E. coli cultures compared to empty vector controls; toxicity was counteracted by co-expression of the corresponding Nti.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth curves and CFU data shown in Figure 5A-F demonstrating rescue of toxicity by immunity proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "a27103ae-81ab-45ea-9ce8-087e2e6fed1f",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C24",
+      "claim": "N. cinerea 346T caused between a 50- to 100-fold decrease in survival of N. meningitidis compared with the \u0394T6SS strain, irrespective of lineage or serogroup.",
+      "claim_type": "EXPLICIT",
+      "source": "N. cinerea 346T caused between a 50- to 100-fold decrease in survival of the meningococcus compared with the \u0394T6SS strain, irrespective of lineage or serogroup (Figure 6A) and an approximately fivefold reduction in survival of the gonococcus (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by competition assay data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "7cd979f0-bdc5-4d14-a949-b1dd1a719a23",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C25",
+      "claim": "N. cinerea 346T caused an approximately fivefold reduction in survival of N. gonorrhoeae.",
+      "claim_type": "EXPLICIT",
+      "source": "N. cinerea 346T caused between a 50- to 100-fold decrease in survival of the meningococcus compared with the \u0394T6SS strain, irrespective of lineage or serogroup (Figure 6A) and an approximately fivefold reduction in survival of the gonococcus (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by competition assay data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "ae46f60a-70a4-461f-99b7-7190c3cadc76",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C26",
+      "claim": "The meningococcal capsule protects bacteria against T6SS attack.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a capsule-null strain (\u0394siaD) in competition assays with wild-type N. cinerea 346T or the T6SS mutant, we found reduced survival of the unencapsulated mutant compared to the wild-type (Figure 6C). Therefore, the meningococcal capsule protects bacteria against T6SS attack.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by competition assay data comparing encapsulated and unencapsulated strains shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "bbd41c31-82a3-42e4-8647-4dd48f8d7fa1",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C27",
+      "claim": "Non-piliated prey strain segregates to the periphery of the colony and escapes T6SS-mediated assault, dominating the expanding colony.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected based on previous observations of Tfp-mediated cell sorting in Neisseria (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017), the non-piliated prey strain (346T\u0394nte/i3-5\u0394pilE1/2_sfCherry; red) segregates to the periphery of the colony, in this location the prey strain escapes T6SS-mediated assault and dominates the expanding colony (Figure 7A and Figure 7\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 7A and video, and is consistent with published observations of Tfp-mediated sorting.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "47f8a2ac-1c08-4e66-8460-144869670405",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C28",
+      "claim": "When the prey is piliated, pilus-mediated cell interactions prevent displacement of cells to the expanding front, so the susceptible strain is outcompeted by the T6SS+ strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the prey is piliated, pilus-mediated cell interactions prevent displacement of cells to the expanding front (Oldewurtel et al., 2015; P\u00f6nisch et al., 2018; Z\u00f6llner et al., 2017), so the susceptible strain (Tfp-expressing 346T\u0394nte/i3-5_sfCherry Tfp+, red) is outcompeted by the T6SS+ strain (Tfp-expressing 346T_sfGfp Tfp+, green) (Figure 7B and Figure 7\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 7B and video, and references to published work on Tfp-mediated interactions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "8eff85e7-70e4-4b2b-b4b8-2c54977ae37a",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C29",
+      "claim": "When both strains are piliated and immune to T6SS attack, there is no dominance of either strain.",
+      "claim_type": "EXPLICIT",
+      "source": "When both strains are piliated and immune to T6SS attack, there is no dominance of either strain (Figure 7C and Figure 7\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 7C and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "9fdf472f-dfdd-48ac-853a-3654a0aa741f",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C30",
+      "claim": "The piliation status of the prey impacts survival against T6SS.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment of the relative recovery of piliated and non-piliated prey in competition assays also supported the observation that the piliation status of the prey impacts survival against T6SS (Figure 7D and Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by competition assay data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "928325d9-c4e7-4362-8f1b-09070741898e",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C31",
+      "claim": "Tfp influence the outcome of T6SS-mediated antagonism through structuring and partitioning bacteria in mixed microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "These results highlight that Tfp influence the outcome of T6SS-mediated antagonism through structuring and partitioning bacteria in mixed microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined microscopy and competition assay data showing differential outcomes based on piliation status.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "1547e7e3-4d33-4b82-b90d-aca3a1e572da",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C32",
+      "claim": "Enhanced prey survival is due to segregation of the non-piliated prey from the piliated attacker, allowing the prey to achieve a favourable position for outgrowth at the edge of the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the idea that the enhanced prey survival is due to segregation of the non-piliated prey from the piliated attacker, allowing the prey to achieve a favourable position for outgrowth at the edge of the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from competition assay data in Figure 8A showing that prey survival is enhanced only when prey is non-piliated, combined with microscopy observations of spatial segregation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "98c6c909-bb16-474f-919d-3f0ada645f86",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C33",
+      "claim": "Reduction in prey survival was equivalent whether both or neither the attacker and prey express Tfp.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, prey survival was equivalent when attacker and prey either both have, or both lack Tfp (Figure 8A and Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by competition assay data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "89f36084-1e59-4d1a-8a27-946c5b551493",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C34",
+      "claim": "Tfp are not required for T6SS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction in prey survival was equivalent whether both or neither the attacker and prey express Tfp, demonstrating that Tfp are not required for T6SS activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that T6SS-mediated killing occurs regardless of whether both strains have or lack Tfp.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "ed48dc0e-d13b-40bc-9fdd-a3ccc9cd1ff3",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C35",
+      "claim": "The N. cinerea T6SS is encoded on a plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide the first description of a functional T6SS in Neisseria spp. We show that the N. cinerea T6SS is encoded on a plasmid and antagonises pathogenic relatives, N. meningitidis and Neisseria gonorrhoeae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PacBio sequencing data and PCR confirmation shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "676b3072-4310-47ed-8cc8-83c846d59da4",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C36",
+      "claim": "The N. cinerea T6SS antagonises pathogenic relatives N. meningitidis and N. gonorrhoeae.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide the first description of a functional T6SS in Neisseria spp. We show that the N. cinerea T6SS is encoded on a plasmid and antagonises pathogenic relatives, N. meningitidis and Neisseria gonorrhoeae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by competition assay data shown in Figure 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "2c7e411d-e4dc-40e4-a7e4-5b6c65e37c39",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C37",
+      "claim": "Pilus expression by a prey strain enhances susceptibility to T6SS compared to a non-piliated prey, by preventing segregation from a T6SS-wielding attacker.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored the impact of Tfp on N. cinerea T6SS-dependent killing within a colony and show that pilus expression by a prey strain enhances susceptibility to T6SS compared to a non-piliated prey, by preventing segregation from a T6SS-wielding attacker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy and competition assay data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "627440b5-15ad-4f4b-8345-7ce126823d3f",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C38",
+      "claim": "N. cinerea is a commensal of the human respiratory tract.",
+      "claim_type": "EXPLICIT",
+      "source": "In Neisseria species, including Neisseria cinerea a commensal of the human respiratory tract, interbacterial contacts are mediated by Type four pili (Tfp) which promote formation of aggregates and govern the spatial dynamics of growing Neisseria microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about N. cinerea ecology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "5a3b2f48-2303-4a8e-9b28-f0696046defc",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C39",
+      "claim": "Type four pili (Tfp) mediate interbacterial contacts in Neisseria species.",
+      "claim_type": "EXPLICIT",
+      "source": "In Neisseria species, including Neisseria cinerea a commensal of the human respiratory tract, interbacterial contacts are mediated by Type four pili (Tfp) which promote formation of aggregates and govern the spatial dynamics of growing Neisseria microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Tfp function in Neisseria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "9f35be12-a27d-4d7e-881d-ca40356b5fba",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C40",
+      "claim": "Type four pili promote formation of aggregates in Neisseria species.",
+      "claim_type": "EXPLICIT",
+      "source": "In Neisseria species, including Neisseria cinerea a commensal of the human respiratory tract, interbacterial contacts are mediated by Type four pili (Tfp) which promote formation of aggregates and govern the spatial dynamics of growing Neisseria microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Tfp function in Neisseria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "7b2dc8b5-9c79-442b-81db-e60cbbeda72e",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C41",
+      "claim": "Type four pili govern the spatial dynamics of growing Neisseria microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In Neisseria species, including Neisseria cinerea a commensal of the human respiratory tract, interbacterial contacts are mediated by Type four pili (Tfp) which promote formation of aggregates and govern the spatial dynamics of growing Neisseria microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Tfp function in Neisseria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "2c294b65-45dd-494f-bacd-2f665b6ad90d",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C42",
+      "claim": "The human microbiota is critical for the development of a healthy gastrointestinal immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The human microbiota is critical for the development of a healthy gastrointestinal immune system (Round and Mazmanian, 2009; Sommer and B\u00e4ckhed, 2013) and can also protect the host from invasion by pathogenic bacteria (Kamada et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "518f5d77-17c9-42b7-bb22-965d665575df",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C43",
+      "claim": "The human microbiota can protect the host from invasion by pathogenic bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The human microbiota is critical for the development of a healthy gastrointestinal immune system (Round and Mazmanian, 2009; Sommer and B\u00e4ckhed, 2013) and can also protect the host from invasion by pathogenic bacteria (Kamada et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "ffb7798a-4fba-4e06-a743-ee8e28949d42",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C44",
+      "claim": "The Type VI Secretion System (T6SS) provides an effective strategy to eliminate competitors in a contact-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "One mechanism, the Type VI Secretion System (T6SS), provides an effective strategy to eliminate competitors in a contact-dependent manner and is widespread in Gram negative bacteria from many different environments (Coulthurst, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "a689d858-ec8d-4b96-8476-743b09c7393d",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C45",
+      "claim": "T6SS is widespread in Gram negative bacteria from many different environments.",
+      "claim_type": "EXPLICIT",
+      "source": "One mechanism, the Type VI Secretion System (T6SS), provides an effective strategy to eliminate competitors in a contact-dependent manner and is widespread in Gram negative bacteria from many different environments (Coulthurst, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "49604736-f50c-4856-b545-a979b027dd87",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C46",
+      "claim": "The T6SS is a contractile, bacteriophage-like nanomachine that delivers toxins into target organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The T6SS is a contractile, bacteriophage-like nanomachine that delivers toxins into target organisms (Cianfanelli et al., 2016; Ho et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "8b628042-4012-4a64-961c-b3125e99425f",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C47",
+      "claim": "T6SS-associated effectors possess a broad range of activities, including nucleases, phospholipases, peptidoglycan hydrolases, and pore-forming proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "T6SS-associated effectors possess a broad range of activities, including nucleases (Koskiniemi et al., 2013; Ma et al., 2014; Pissaridou et al., 2018), phospholipases (Flaugnatti et al., 2016; Russell et al., 2013), peptidoglycan hydrolases (Whitney et al., 2013), and pore-forming proteins (Mariano et al., 2019); each effector is associated with a cognate immunity protein to prevent self-intoxication and to protect against kin cells (Alcoforado Diniz et al., 2015; Unterweger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "e1527ebc-5ddf-49f1-8a0f-58ae665a9c2c",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C48",
+      "claim": "Each T6SS effector is associated with a cognate immunity protein to prevent self-intoxication and to protect against kin cells.",
+      "claim_type": "EXPLICIT",
+      "source": "T6SS-associated effectors possess a broad range of activities, including nucleases (Koskiniemi et al., 2013; Ma et al., 2014; Pissaridou et al., 2018), phospholipases (Flaugnatti et al., 2016; Russell et al., 2013), peptidoglycan hydrolases (Whitney et al., 2013), and pore-forming proteins (Mariano et al., 2019); each effector is associated with a cognate immunity protein to prevent self-intoxication and to protect against kin cells (Alcoforado Diniz et al., 2015; Unterweger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "e0593b89-df98-4639-a1f6-ae0c149c29db",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C49",
+      "claim": "The impact of the T6SS in pathogenesis and bacterial competition has been established in vitro and in some cases in vivo in pathogens such as Pseudomonas, Vibrio, Salmonella, and Shigella.",
+      "claim_type": "EXPLICIT",
+      "source": "In pathogens such as Pseudomonas, Vibrio, Salmonella, and Shigella, the impact of the T6SS in pathogenesis and bacterial competition has been established in vitro and in some cases in vivo (Anderson et al., 2017; Sana et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "39ac5cec-68f2-4ee0-90c0-a37463c40707",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C50",
+      "claim": "Commensal bacteria harbour T6SSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Commensal bacteria also harbour T6SSs, although how these systems combat pathogens has only been elucidated for Bacteroidetes in the intestinal tract (Russell et al., 2014); further studies are needed to gain a greater appreciation of how T6SSs in commensals influence microbial communities and pathogens in other niches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "fad8eeea-42fd-478f-960b-9a59b62f1929",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C51",
+      "claim": "How T6SSs in commensals combat pathogens has only been elucidated for Bacteroidetes in the intestinal tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Commensal bacteria also harbour T6SSs, although how these systems combat pathogens has only been elucidated for Bacteroidetes in the intestinal tract (Russell et al., 2014); further studies are needed to gain a greater appreciation of how T6SSs in commensals influence microbial communities and pathogens in other niches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "09c82670-28b8-4818-8cbc-a041e382b097",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C52",
+      "claim": "The human nasopharynx hosts a polymicrobial community.",
+      "claim_type": "EXPLICIT",
+      "source": "The human nasopharynx hosts a polymicrobial community (Kumpitsch et al., 2019; Cleary and Clarke, 2017; Ramos-Sevillano et al., 2019), which can include the obligate human pathogen Neisseria meningitidis, as well as related but generally non-pathogenic, commensal Neisseria species (Diallo et al., 2016; Dorey et al., 2019; Gold et al., 1978; Knapp and Hook, 1988; Sheikhi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "eaeb6f70-590e-40de-bd02-04f137d6cb8f",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C53",
+      "claim": "The human nasopharynx can include the obligate human pathogen Neisseria meningitidis, as well as related but generally non-pathogenic, commensal Neisseria species.",
+      "claim_type": "EXPLICIT",
+      "source": "The human nasopharynx hosts a polymicrobial community (Kumpitsch et al., 2019; Cleary and Clarke, 2017; Ramos-Sevillano et al., 2019), which can include the obligate human pathogen Neisseria meningitidis, as well as related but generally non-pathogenic, commensal Neisseria species (Diallo et al., 2016; Dorey et al., 2019; Gold et al., 1978; Knapp and Hook, 1988; Sheikhi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "9189bace-1c7f-4aea-9c6f-cddae679859f",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C54",
+      "claim": "In vivo studies have demonstrated an inverse relationship between carriage of commensal Neisseria lactamica and N. meningitidis.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo studies have demonstrated an inverse relationship between carriage of commensal Neisseria lactamica and N. meningitidis (Deasy et al., 2015), whereas in vitro studies have revealed that some commensal Neisseria demonstrate potentially antagonistic effects against their pathogenic relatives (Custodio et al., 2020; Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "1589efb7-6cc3-4a3b-8597-e736b1b1ff63",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C55",
+      "claim": "In vitro studies have revealed that some commensal Neisseria demonstrate potentially antagonistic effects against their pathogenic relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo studies have demonstrated an inverse relationship between carriage of commensal Neisseria lactamica and N. meningitidis (Deasy et al., 2015), whereas in vitro studies have revealed that some commensal Neisseria demonstrate potentially antagonistic effects against their pathogenic relatives (Custodio et al., 2020; Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "bf325cec-cc83-435d-af0a-14a4f642557d",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C56",
+      "claim": "Commensal and pathogenic Neisseria species have been shown to interact closely in mixed populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Commensal and pathogenic Neisseria species have also been shown to interact closely in mixed populations (Custodio et al., 2020; Higashi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "4374dff8-5069-4bed-b8fc-5e96a44fb157",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C57",
+      "claim": "Type IV pili enable pathogenic Neisseria to adhere to host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These filamentous organelles enable pathogenic Neisseria to adhere to host cells (Nassif et al., 1993; Virji et al., 1991) and are crucial for microbe-microbe interactions and the formation of bacterial aggregates and microcolonies (Helaine et al., 2007; Higashi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "d92d8493-31c6-4756-9a65-eba67b066d5e",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C58",
+      "claim": "Type IV pili are crucial for microbe-microbe interactions and the formation of bacterial aggregates and microcolonies in Neisseria.",
+      "claim_type": "EXPLICIT",
+      "source": "These filamentous organelles enable pathogenic Neisseria to adhere to host cells (Nassif et al., 1993; Virji et al., 1991) and are crucial for microbe-microbe interactions and the formation of bacterial aggregates and microcolonies (Helaine et al., 2007; Higashi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "d6f47da2-d7a9-45ef-802e-124efedb7c9c",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C59",
+      "claim": "Tfp interactions can dictate bacterial positioning within a community.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Tfp interactions can dictate bacterial positioning within a community; non-piliated strains have been shown to be excluded to the expanding edge of colonies growing on solid media (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017) while heterogeneity in pili, for example through post translational modifications, can alter how cells integrate into microcolonies (Z\u00f6llner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "a89d4eaf-8c11-4c66-8cd8-b263bb386192",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C60",
+      "claim": "Non-piliated strains have been shown to be excluded to the expanding edge of colonies growing on solid media.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Tfp interactions can dictate bacterial positioning within a community; non-piliated strains have been shown to be excluded to the expanding edge of colonies growing on solid media (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017) while heterogeneity in pili, for example through post translational modifications, can alter how cells integrate into microcolonies (Z\u00f6llner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "2ac7c9fd-d15f-4550-967c-57f9806337e4",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C61",
+      "claim": "Heterogeneity in pili can alter how cells integrate into microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Tfp interactions can dictate bacterial positioning within a community; non-piliated strains have been shown to be excluded to the expanding edge of colonies growing on solid media (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017) while heterogeneity in pili, for example through post translational modifications, can alter how cells integrate into microcolonies (Z\u00f6llner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "3128c1e9-72ce-4cf3-af41-62078d6bd497",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C62",
+      "claim": "N. cinerea expresses Tfp that promote microcolony formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This species expresses Tfp that promote microcolony formation, can closely interact with N. meningitidis in a Tfp-dependent manner and impairs meningococcal association with human epithelial cells (Custodio et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "6f71272d-6b1a-4147-ad1f-1ddc95c2d9e9",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C63",
+      "claim": "N. cinerea can closely interact with N. meningitidis in a Tfp-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This species expresses Tfp that promote microcolony formation, can closely interact with N. meningitidis in a Tfp-dependent manner and impairs meningococcal association with human epithelial cells (Custodio et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "b9b06fdb-f86d-4fa7-b075-e7c618269d42",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C64",
+      "claim": "N. cinerea impairs meningococcal association with human epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This species expresses Tfp that promote microcolony formation, can closely interact with N. meningitidis in a Tfp-dependent manner and impairs meningococcal association with human epithelial cells (Custodio et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "6c4b93fb-745c-4eab-b899-7c6ca2c530e2",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C65",
+      "claim": "T6SS genes have been identified in other Neisseria spp. isolated from human throat swab cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, T6SS genes have been recently identified in other Neisseria spp. isolated from human throat swab cultures (Calder et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "e81c4bfd-3b5e-49cd-998a-a1c08b76a6af",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C66",
+      "claim": "This study provides the first description of a functional T6SS in Neisseria spp.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide the first description of a functional T6SS in Neisseria spp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the novelty of the findings presented in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "0513b2f8-63d6-4e06-8026-91c413edaf18",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C67",
+      "claim": "Contraction of the T6SS leads to Hcp secretion, a hallmark of a functional T6SS.",
+      "claim_type": "EXPLICIT",
+      "source": "Contraction of the T6SS leads to Hcp secretion, a hallmark of a functional T6SS (Cascales and Cambillau, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature establishing Hcp secretion as a marker of T6SS function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "34b5de94-19f7-47d9-a7d4-bfc9c0264bb4",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C68",
+      "claim": "TssB is a component of the T6SS-tail-sheath required for contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, to establish whether the N. cinerea T6SS is functional, we assessed Hcp levels in whole cell lysates and supernatants from wild-type N. cinerea and a \u0394tssB mutant, based on previous work demonstrating that TssB is a component of the T6SS-tail-sheath required for contraction (Brackmann et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "a2cd8713-460c-4ac6-909e-3f93627362c7",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C69",
+      "claim": "N. cinerea 27178A lacks a T6SS and Nte/Nti pairs identified in N. cinerea 346T.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we performed competition assays between N. cinerea 346T or the \u0394T6SS mutant against N. cinerea 27178A which lacks a T6SS and Nte/Nti pairs identified in N. cinerea 346T.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on genomic analysis of the strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "fc43314b-8369-47ab-ab66-5a53abae8494",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C70",
+      "claim": "Strain 346T\u0394tssB::tssB-sfGFP exhibits comparable T6SS killing as wild-type N. cinerea 346T.",
+      "claim_type": "EXPLICIT",
+      "source": "We further analysed the activity of the T6SS by visualising assembly and contraction in N. cinerea 346T\u0394tssB::tssB-sfGFP; this strain exhibits comparable T6SS killing as wild-type N. cinerea 346T (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by competition assay data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "170e326e-09ac-4892-94e7-1e71b24ed7db",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C71",
+      "claim": "The N. cinerea T6SS appears to be constitutively active.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of N. cinerea T6SS activity revealed several interesting features. Microscopy demonstrated that T6SS attack (tit-for-tat) is not required to provoke firing of the system. Instead, the T6SS appears to be constitutively active in N. cinerea (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from microscopy data showing T6SS activity in the absence of prey attack.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "91d38bf2-6b93-4ece-b22b-c18dd31d2ff4",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C72",
+      "claim": "The N. cinerea T6SS is capable of inducing lysis of prey bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the system is capable of inducing lysis of prey bacteria (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SYTOX Blue staining data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "a4f3adfb-6a88-4f34-a965-950562f9881e",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C73",
+      "claim": "Lysis of prey bacteria could be mediated by Nte1 which harbours a putative phospholipase domain in the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the six Ntes we identified, lysis could be mediated by Nte1 which harbours a putative phospholipase domain in the C-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the predicted domain structure of Nte1.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "2b4adda0-d484-4c87-974f-4515cb763837",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C74",
+      "claim": "A combination of effectors might be needed to elicit prey lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, a combination of effectors might be needed to elicit prey lysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "1314eb66-c079-4ad4-96fc-5127dd036611",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C75",
+      "claim": "Polysaccharide capsules are largely thought to provide bacteria with a strategy for evading host immune killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Polysaccharide capsules are largely thought to provide bacteria with a strategy for evading host immune killing (Lewis and Ram, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "3c6948e1-9244-442b-9bd1-4c3fe774519a",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C76",
+      "claim": "The meningococcal capsule has an alternative role in defence against other bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the meningococcal capsule has an alternative role in defence against other bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the competition assay data showing enhanced susceptibility of capsule-null mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "5db76d97-d81c-4d49-9916-e1f320cac511",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C77",
+      "claim": "The extracellular polysaccharide of V. cholerae and the colanic acid capsule of E. coli confer defence against T6SS attack.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar findings have been reported for other bacteria; for example, the extracellular polysaccharide of V. cholerae and the colanic acid capsule of E. coli confer defence against T6SS attack (Hersch et al., 2020; Toska et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "bd5e71db-6383-47bd-8d1d-6712a53995ae",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C78",
+      "claim": "The capsule may sterically impair the ability of the T6SS to penetrate the target cell membrane, and/or inhibit access of T6SS effectors to their cellular targets.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential mechanism is that the capsule sterically impairs the ability of the T6SS to penetrate the target cell membrane, and/or inhibits access of T6SS effectors to their cellular targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a potential mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "08aff188-0cbe-495a-b7be-b77be4bff0f3",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C79",
+      "claim": "Some commensal Neisseria species have capacity to produce polysaccharide capsules.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent genetic evidence indicates that some commensal Neisseria species also have capacity to produce polysaccharide capsules (Clemence et al., 2018), which might also confer a survival advantage in mixed populations that include strains expressing T6SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "c6107689-e32f-4c4d-9229-bae583e204db",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C80",
+      "claim": "Polysaccharide capsules in commensal Neisseria might confer a survival advantage in mixed populations that include strains expressing T6SS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent genetic evidence indicates that some commensal Neisseria species also have capacity to produce polysaccharide capsules (Clemence et al., 2018), which might also confer a survival advantage in mixed populations that include strains expressing T6SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, extrapolating from the findings about meningococcal capsule.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "b4f07992-f392-4b86-bcde-d052621de95f",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C81",
+      "claim": "T6SS-mediated killing requires intimate association with prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Although T6SS-mediated killing can be advantageous to a producing strain during bacterial competition, this requires intimate association with its prey (MacIntyre et al., 2010; Russell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "31f73c42-65c0-4a7d-b756-1644d5017534",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C82",
+      "claim": "One way for susceptible bacteria to evade T6SS killing is to avoid direct contact with attacking cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, one way for susceptible bacteria to evade T6SS killing is to avoid direct contact with attacking cells (Borenstein et al., 2015; Smith et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "6a9700d1-2f56-4d15-982a-caaa2e27db9a",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C83",
+      "claim": "The Tfp is a key mediator of interbacterial and interspecies interactions in Neisseria.",
+      "claim_type": "EXPLICIT",
+      "source": "In Neisseria, the Tfp is a key mediator of interbacterial and interspecies interactions (Custodio et al., 2020; Higashi et al., 2011) and pilus-mediated interactions influence the spatial structure of a growing community (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "bc236950-5526-4f8f-904e-6e506168a311",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C84",
+      "claim": "Pilus-mediated interactions influence the spatial structure of a growing Neisseria community.",
+      "claim_type": "EXPLICIT",
+      "source": "In Neisseria, the Tfp is a key mediator of interbacterial and interspecies interactions (Custodio et al., 2020; Higashi et al., 2011) and pilus-mediated interactions influence the spatial structure of a growing community (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "0f92a37c-bc21-4984-b085-10a08c86c9da",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C85",
+      "claim": "In N. gonorrhoeae, non-piliated bacteria segregate to the expanding front of the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "In N. gonorrhoeae, non-piliated bacteria segregate to the expanding front of the colony and Tfp-mediated spatial reorganisation can allow bacteria to avoid external stresses or strains competing for resources (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "9d451c1e-86bd-437b-8d3d-94ad4aa57411",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C86",
+      "claim": "Tfp-mediated spatial reorganisation can allow bacteria to avoid external stresses or strains competing for resources.",
+      "claim_type": "EXPLICIT",
+      "source": "In N. gonorrhoeae, non-piliated bacteria segregate to the expanding front of the colony and Tfp-mediated spatial reorganisation can allow bacteria to avoid external stresses or strains competing for resources (Oldewurtel et al., 2015; Z\u00f6llner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "e9d36402-42f5-467e-80d6-5f6f6aeaea89",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C87",
+      "claim": "Physical exclusion driven by Tfp-loss or modification could be an effective strategy to evade and survive an antagonistic interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted that this would be especially relevant in the context of T6SS-mediated antagonism. For example, physical exclusion driven by Tfp-loss or modification could be an effective strategy to evade and survive an antagonistic interaction, while pilus-mediated interactions might be less favourable for a susceptible prey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on prior knowledge of Tfp-mediated sorting.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "4b408fe6-a201-4325-b271-123c9761d38a",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C88",
+      "claim": "Pilus-mediated interactions might be less favourable for a susceptible prey in the context of T6SS-mediated antagonism.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted that this would be especially relevant in the context of T6SS-mediated antagonism. For example, physical exclusion driven by Tfp-loss or modification could be an effective strategy to evade and survive an antagonistic interaction, while pilus-mediated interactions might be less favourable for a susceptible prey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on prior knowledge of Tfp-mediated interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "f14d788e-cfdb-4d05-b4cb-57c241ffabd6",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C89",
+      "claim": "Tfp loss may occur naturally in a polymicrobial environment and is an established phenomenon in pathogenic Neisseria.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Tfp loss may occur naturally in a polymicrobial environment and is an established phenomenon in pathogenic Neisseria (Hagblom et al., 1985; Helm and Seifert, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "44e3d7f5-759f-4cab-9a19-893610cc929e",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C90",
+      "claim": "Many bacteria that employ T6SSs for inter-bacterial competition also express Tfp.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that many bacteria (e.g. Pseudomonas aeruginosa, Vibrio cholerae, Acinetobacter baumannii, enteropathogenic E. coli) that employ T6SSs for inter-bacterial competition also express Tfp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about bacterial species that possess both T6SS and Tfp.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "0194158f-aed3-4bd8-8a51-15981287862a",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C91",
+      "claim": "The findings are of broad relevance for the impact of contact-dependent killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our findings are of broad relevance for the impact of contact-dependent killing, and further emphasise how precise spatial relationships can have profound effects on how antagonistic and mutualistic factors combine to influence the development of microbial communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "c3bd1543-be3f-493a-a3e7-6a965b400210",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C92",
+      "claim": "Precise spatial relationships can have profound effects on how antagonistic and mutualistic factors combine to influence the development of microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our findings are of broad relevance for the impact of contact-dependent killing, and further emphasise how precise spatial relationships can have profound effects on how antagonistic and mutualistic factors combine to influence the development of microbial communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "15eeda0e-0030-409e-baff-1dad3950eb36",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C93",
+      "claim": "To date, plasmid encoded T6SSs have only been described in Campylobacter species.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, plasmid encoded T6SSs have only been described in Campylobacter species (Marasini and Fakhr, 2016), with this plasmid T6SS mobilised via conjugation (Marasini et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "51f66644-2241-4e44-a2e0-65165d4107f9",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C94",
+      "claim": "The Campylobacter plasmid T6SS is mobilised via conjugation.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, plasmid encoded T6SSs have only been described in Campylobacter species (Marasini and Fakhr, 2016), with this plasmid T6SS mobilised via conjugation (Marasini et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "dad07d7c-f4d9-462e-b8fb-65369038503b",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C95",
+      "claim": "Other small plasmids have been reported in N. cinerea.",
+      "claim_type": "EXPLICIT",
+      "source": "Although other small plasmids have been reported in N. cinerea (Knapp et al., 1984; Roberts, 1989) and N. cinerea can be a recipient of N. gonorrhoeae plasmids (Genco et al., 1984), it is not yet known whether T6SS plasmids are widespread among Neisseria, or whether the plasmid can be mobilised by conjugation or transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "2f3fce37-8eff-4aa8-b601-4091a4f652a3",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C96",
+      "claim": "N. cinerea can be a recipient of N. gonorrhoeae plasmids.",
+      "claim_type": "EXPLICIT",
+      "source": "Although other small plasmids have been reported in N. cinerea (Knapp et al., 1984; Roberts, 1989) and N. cinerea can be a recipient of N. gonorrhoeae plasmids (Genco et al., 1984), it is not yet known whether T6SS plasmids are widespread among Neisseria, or whether the plasmid can be mobilised by conjugation or transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "838c3b5a-eb54-475f-b45e-a34ea501efec",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C97",
+      "claim": "It is not yet known whether T6SS plasmids are widespread among Neisseria.",
+      "claim_type": "EXPLICIT",
+      "source": "Although other small plasmids have been reported in N. cinerea (Knapp et al., 1984; Roberts, 1989) and N. cinerea can be a recipient of N. gonorrhoeae plasmids (Genco et al., 1984), it is not yet known whether T6SS plasmids are widespread among Neisseria, or whether the plasmid can be mobilised by conjugation or transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "3509d733-4e4f-42ca-8741-e041cf165bb5",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C98",
+      "claim": "It is not yet known whether the N. cinerea T6SS plasmid can be mobilised by conjugation or transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although other small plasmids have been reported in N. cinerea (Knapp et al., 1984; Roberts, 1989) and N. cinerea can be a recipient of N. gonorrhoeae plasmids (Genco et al., 1984), it is not yet known whether T6SS plasmids are widespread among Neisseria, or whether the plasmid can be mobilised by conjugation or transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "a4fe6f61-2b70-4c9e-9d4f-9e04e50fca4a",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C99",
+      "claim": "In Acinetobacter baylyi, T6SS-induced prey cell lysis contributes to acquisition of plasmids from target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in Acinetobacter baylyi, T6SS-induced prey cell lysis contributes to acquisition of plasmids from target cells (Ringel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "62cc1a0f-d4ca-487b-b370-8d3b425c755a",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C100",
+      "claim": "Six genes encoding putative effectors were identified based on their proximity to the T6SS locus, their pairwise arrangement with genes encoding proteins with homology to immunity proteins and the presence of conserved domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In total six genes encoding putative effectors were identified based on their proximity to the T6SS locus, their pairwise arrangement with genes encoding proteins with homology to immunity proteins and the presence of conserved domains such as PAAR and Rhs domains in the predicted proteins (Alcoforado Diniz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on bioinformatic analysis and established criteria for identifying T6SS effectors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "e952ae2b-bfb1-4a4e-9fde-0e5be23471b0",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C101",
+      "claim": "Nte3, 4, 5, and 6 may be cargo effectors while Nte1 and Nte2 are more typical of specialised or evolved effectors with integral PAAR domains at their N-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Our bioinformatic predictions suggest Nte3, 4, 5, and 6 may be cargo effectors while Nte1 and Nte2 are more typical of specialised or evolved effectors with integral PAAR domains at their N-termini (Durand et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on bioinformatic predictions and citation to published work on PAAR-containing effectors.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "f204a277-f09b-443f-b5f3-49adde1c34c0",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C102",
+      "claim": "nte5 may represent an orphan Rhs-CT.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note nte5 encodes a protein with a shorter Rhs domain compared to the other five putative effectors (319AA compared to 695-735AA), raising the possibility that this may represent an orphan Rhs-CT, as described in other genomes (Kirchberger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on comparison of domain sizes and citation to published work on orphan Rhs-CT.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "11b1989f-0bf3-41a6-a4aa-fce8fe019127",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C103",
+      "claim": "Hcp or VgrG could be responsible for delivery of effectors encoded nearby in the T6SS locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on previous work, Hcp, or VgrG could be responsible for delivery of effectors encoded nearby in the T6SS locus (Hachani et al., 2014), with or without the involvement of the adjacent DUF2169 family protein (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from published work on T6SS effector delivery mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "f0651068-a3c5-43de-ac24-31693841550d",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C104",
+      "claim": "Nte/Nti6 may not be associated with the T6SS.",
+      "claim_type": "EXPLICIT",
+      "source": "As nte/nti6 are not part of the T6SS locus and are encoded elsewhere on the plasmid, Nte/Nti6 may not be associated with the T6SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the genomic location of nte/nti6.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "af2a59b5-6568-49a3-becc-9e08cec54fee",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "claim_id": "C105",
+      "claim": "Additional experimentation will be needed to confirm the contributions of Nte1-6 to T6SS activity and killing, and to demonstrate direct secretion via the T6SS.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although our bioinformatic analysis and protein expression in E. coli suggests Nte1-6 as effectors, additional experimentation will be needed to further confirm their contributions to T6SS activity and killing, and to demonstrate direct secretion via the T6SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim acknowledges limitations of the current study and the need for further experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1027eb2a-f963-4ea9-b11e-4520f16d307e",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "N. cinerea 346T encodes a complete T6SS with six effector/immunity pairs on a 108,141 bp plasmid, with Nte/Nti 1-5 adjacent to the structural gene cluster and Nte6/Nti6 encoded elsewhere on the plasmid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C35 are well-supported by bioinformatic analysis, PacBio sequencing, PCR confirmation, and T6SS-effector prediction software (Figure 1A-B, Figure 1\u2014figure supplement 1). The plasmid location is confirmed by multiple independent methods including sequencing and PCR validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "c630271a-26d7-4b4a-8e5a-64d94d383445",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The N. cinerea T6SS is functional as demonstrated by Hcp secretion in wild-type but not in \u0394tssB mutant, with secretion restored by complementation with TssB-sfGFP fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are supported by Western blot data (Figure 1C) showing differential Hcp localization. The use of Hcp secretion as a functional marker is validated by citations (C67, C68). The complementation experiment provides strong evidence for TssB's role in T6SS function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "9498f05e-f0d5-460c-9147-a7c2584f2ea8",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The N. cinerea 346T T6SS is active during inter-bacterial competition, reducing survival of N. cinerea 27178A by approximately 10-fold compared to the \u0394T6SS mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 are supported by quantitative competition assay data (Figure 1D) showing T6SS-dependent killing. The use of N. cinerea 27178A as prey is appropriate as it lacks the T6SS and effector/immunity pairs (C69). Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "af3c9913-fe92-4f60-8584-fb57a5b7a645",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Time-lapse microscopy reveals dynamic T6SS foci with extension/contraction over seconds in N. cinerea 346T\u0394tssB::tssB-sfGFP, with activity abolished by tssM deletion and appearing constitutively active.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 are supported by microscopy data (Figure 2A-C, videos) showing dynamic T6SS structures. The complemented strain exhibits comparable killing to wild-type (C70, Figure 2\u2014figure supplement 1). The constitutive activity claim (C71) is inferred from microscopy showing activity without prey attack, though this interpretation could benefit from additional controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "aab6ade0-1683-4a75-89d8-4b9361570281",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The N. cinerea T6SS induces cell damage and lysis of prey bacteria, as evidenced by increased SYTOX staining of prey cells adjacent to predator bacteria displaying T6SS activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 and C72 are supported by SYTOX Blue staining data (Figure 3) showing membrane permeabilization adjacent to T6SS-active cells. SYTOX staining is an established indicator of membrane integrity loss, supporting the lysis interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "30e3312d-8a1d-4df1-b602-17fe360660ea",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All six Ntes contain conserved Rhs domains and C-terminal regions with predicted activities characteristic of T6SS effectors, including PAAR domains (Nte1, Nte2), phospholipase (Nte1), RNase (Nte2), and various nuclease domains (Nte3-6).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C21, C100-C101 are supported by bioinformatic domain analysis (Figure 4) and citations to established T6SS effector characteristics. The identification criteria (proximity to T6SS locus, pairwise arrangement with immunity genes, conserved domains) are appropriate and well-established in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "d3658f4d-a684-4e4a-8017-eea435c101ef",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "All six Ntes are toxic when expressed in E. coli, causing decreased viability and reduced optical density, with toxicity counteracted by co-expression of corresponding immunity proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are well-supported by growth curves and CFU data (Figure 5A-F) showing toxicity of all Ntes and rescue by cognate immunity proteins. The use of E. coli as a heterologous system is appropriate for testing effector/immunity function. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "8ad6bb4a-d02f-49c8-be07-0d324b1fcc8a",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "N. cinerea 346T T6SS antagonizes pathogenic Neisseria species, causing 50-100 fold reduction in N. meningitidis survival (irrespective of lineage/serogroup) and approximately 5-fold reduction in N. gonorrhoeae survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 and C36 are supported by competition assay data (Figure 6A-B) testing multiple N. meningitidis strains and N. gonorrhoeae. The differential killing efficiency between species is interesting but the mechanism is not explored. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "3d958bd4-1acf-43ab-ae88-4865316457f0",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The meningococcal polysaccharide capsule protects bacteria against T6SS attack, as demonstrated by enhanced susceptibility of capsule-null mutants compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C76 are supported by competition assay data (Figure 6C) comparing encapsulated and unencapsulated strains. The result is consistent with published findings in other bacteria (C77). However, the mechanism of protection (C78) remains speculative and requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "597dd201-90be-4d06-819d-6e24d5d65fbf",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Type IV pili influence T6SS-mediated antagonism through spatial organization: non-piliated prey segregate to colony periphery and escape T6SS attack, while piliated prey remain intermixed and are outcompeted by T6SS+ attackers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 and C37 are supported by time-lapse microscopy (Figure 7A-C, videos) and competition assays (Figure 7D). The observations are consistent with published Tfp-mediated sorting behavior (citations provided). Flow cytometry data (Figure 7\u2014figure supplement 2) supports the microscopy observations, though dual-labeled populations complicate interpretation slightly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "6b80ec6b-c88e-47b9-8d3b-c900ec074476",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Enhanced prey survival is due to spatial segregation of non-piliated prey from piliated attackers rather than Tfp being required for T6SS activity, as prey survival is equivalent when both or neither strain expresses Tfp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by competition assay data (Figure 8A) showing that prey survival enhancement occurs only when prey lacks Tfp, not when attacker lacks Tfp. The equivalent survival when both have or both lack Tfp demonstrates Tfp are not required for T6SS function per se. However, microscopy observations (Figure 8B) suggest possible localized Tfp contributions that warrant further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "7e10ea88-700f-4f52-83c6-c4c252ca46d8",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Several mechanistic hypotheses are proposed but remain speculative, including: Nte1 phospholipase mediating lysis, capsule sterically blocking T6SS, commensal Neisseria capsules conferring T6SS protection, and Tfp-loss as an evasion strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74, C78, C80, C87-C88, C102, and C104 are explicitly speculative or acknowledge uncertainty. While these hypotheses are reasonable based on domain predictions and analogies to other systems, they lack direct experimental validation in this study. These represent important directions for future work but cannot be considered supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "d039cef2-9fb8-40df-b95d-3efbe9c5f225",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors acknowledge that additional experimentation is needed to confirm Nte1-6 contributions to T6SS activity and demonstrate direct secretion via the T6SS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 appropriately acknowledges limitations of the current study. While bioinformatic analysis and E. coli toxicity assays suggest Nte1-6 are effectors, direct demonstration of secretion via T6SS and their specific contributions to killing in Neisseria remain to be established. This is a reasonable and scientifically appropriate acknowledgment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "7587c18b-6c01-4f39-ab28-9f4d4e3fbda5",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "This study provides the first description of a functional T6SS in Neisseria species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by the comprehensive characterization of T6SS function through multiple approaches (Hcp secretion, microscopy, competition assays). While T6SS genes were previously identified in Neisseria (C65), this is the first functional characterization. The novelty claim is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "663bf917-8b39-4864-9c80-e38911741d7b",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about microbiota, T6SS systems, Neisseria ecology, and Type IV pili are supported by appropriate citations to published literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C96 and C99 provide background context supported by citations to published literature. These establish the scientific foundation for the study and are appropriately referenced. No concerns about accuracy of cited work are evident.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "f79a1d54-a34c-44c2-b264-92eb56bbc0de",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The findings have broad relevance for contact-dependent killing and demonstrate how spatial relationships profoundly affect microbial community development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 represent reasonable interpretations of the study's broader significance. The demonstration that Tfp-mediated spatial organization affects T6SS-mediated competition in Neisseria, combined with the observation that many T6SS-expressing bacteria also have Tfp (C90), supports the claim of broad relevance. This is an appropriate conclusion based on the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "652dbe60-3f0e-402e-810a-ec7a01818464",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The prevalence of T6SS plasmids among Neisseria and whether the plasmid can be mobilized by conjugation or transformation remain unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 appropriately acknowledge gaps in current knowledge. While the plasmid location is established (C3, C35), its distribution among Neisseria species and mechanisms of horizontal transfer are important open questions. This honest acknowledgment of limitations is scientifically appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    },
+    {
+      "id": "58fd7ba4-506d-422f-a6e6-f47c3b695254",
+      "content_id": "bdb41f17-483d-4eb6-a90d-ef8677bee66e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Hcp or VgrG could be responsible for delivery of effectors encoded nearby in the T6SS locus, possibly with involvement of the adjacent DUF2169 family protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is based on inference from published work on T6SS effector delivery mechanisms but lacks direct experimental validation in this system. While the hypothesis is reasonable based on established T6SS biology, the specific delivery mechanism for N. cinerea effectors remains to be experimentally determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:46:46.906669Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ee051cbe-c910-4f40-be22-d5a8d2ac1aba",
+      "result_id": "1027eb2a-f963-4ea9-b11e-4520f16d307e"
+    },
+    {
+      "claim_id": "e8e6045d-6903-4b79-955a-acc3cd23a11d",
+      "result_id": "1027eb2a-f963-4ea9-b11e-4520f16d307e"
+    },
+    {
+      "claim_id": "6d7e31b7-c963-47d6-9660-0689982139a5",
+      "result_id": "1027eb2a-f963-4ea9-b11e-4520f16d307e"
+    },
+    {
+      "claim_id": "70481183-d724-4db5-961d-a8f1c6542b10",
+      "result_id": "1027eb2a-f963-4ea9-b11e-4520f16d307e"
+    },
+    {
+      "claim_id": "ed48dc0e-d13b-40bc-9fdd-a3ccc9cd1ff3",
+      "result_id": "1027eb2a-f963-4ea9-b11e-4520f16d307e"
+    },
+    {
+      "claim_id": "9690fa16-785e-4766-81d9-23794654b3c3",
+      "result_id": "c630271a-26d7-4b4a-8e5a-64d94d383445"
+    },
+    {
+      "claim_id": "c11961a8-a184-4306-afa4-d69ed781f0fb",
+      "result_id": "c630271a-26d7-4b4a-8e5a-64d94d383445"
+    },
+    {
+      "claim_id": "b756db1d-7581-473a-ae4b-4a0bd24f82e4",
+      "result_id": "c630271a-26d7-4b4a-8e5a-64d94d383445"
+    },
+    {
+      "claim_id": "0513b2f8-63d6-4e06-8026-91c413edaf18",
+      "result_id": "c630271a-26d7-4b4a-8e5a-64d94d383445"
+    },
+    {
+      "claim_id": "34b5de94-19f7-47d9-a7d4-bfc9c0264bb4",
+      "result_id": "c630271a-26d7-4b4a-8e5a-64d94d383445"
+    },
+    {
+      "claim_id": "03c78a87-c550-4e4e-a1e6-8121faecd5c3",
+      "result_id": "9498f05e-f0d5-460c-9147-a7c2584f2ea8"
+    },
+    {
+      "claim_id": "08dbc07d-f817-4de9-961f-48e2ae2ffd16",
+      "result_id": "9498f05e-f0d5-460c-9147-a7c2584f2ea8"
+    },
+    {
+      "claim_id": "a2cd8713-460c-4ac6-909e-3f93627362c7",
+      "result_id": "9498f05e-f0d5-460c-9147-a7c2584f2ea8"
+    },
+    {
+      "claim_id": "287ddcc4-c683-47cb-9ec6-40671ac3de44",
+      "result_id": "af3c9913-fe92-4f60-8584-fb57a5b7a645"
+    },
+    {
+      "claim_id": "b2f89671-3e58-4ed0-8b05-910e3b7a74a7",
+      "result_id": "af3c9913-fe92-4f60-8584-fb57a5b7a645"
+    },
+    {
+      "claim_id": "ea6c7638-d490-426b-a486-ae34eadc92d3",
+      "result_id": "af3c9913-fe92-4f60-8584-fb57a5b7a645"
+    },
+    {
+      "claim_id": "fc43314b-8369-47ab-ab66-5a53abae8494",
+      "result_id": "af3c9913-fe92-4f60-8584-fb57a5b7a645"
+    },
+    {
+      "claim_id": "170e326e-09ac-4892-94e7-1e71b24ed7db",
+      "result_id": "af3c9913-fe92-4f60-8584-fb57a5b7a645"
+    },
+    {
+      "claim_id": "02ab7807-1339-44d8-80af-2cab3b25c90c",
+      "result_id": "aab6ade0-1683-4a75-89d8-4b9361570281"
+    },
+    {
+      "claim_id": "640d6b33-aba1-419f-a23d-8dfe93ae335b",
+      "result_id": "aab6ade0-1683-4a75-89d8-4b9361570281"
+    },
+    {
+      "claim_id": "91d38bf2-6b93-4ece-b22b-c18dd31d2ff4",
+      "result_id": "aab6ade0-1683-4a75-89d8-4b9361570281"
+    },
+    {
+      "claim_id": "f72d6ea6-7127-4402-9c6c-407f1895d43d",
+      "result_id": "30e3312d-8a1d-4df1-b602-17fe360660ea"
+    },
+    {
+      "claim_id": "d425f099-6a05-4a8c-b1b7-be595fbe56cc",
+      "result_id": "30e3312d-8a1d-4df1-b602-17fe360660ea"
+    },
+    {
+      "claim_id": "2b5dfc2b-4adf-4488-94e6-109ca4ce7ec8",
+      "result_id": "30e3312d-8a1d-4df1-b602-17fe360660ea"
+    },
+    {
+      "claim_id": "f2e94b86-580e-4b4c-bfa9-d528da0c8da4",
+      "result_id": "30e3312d-8a1d-4df1-b602-17fe360660ea"
+    },
+    {
+      "claim_id": "5bb4c124-4ecf-4b92-9e12-6a4b5eb27538",
+      "result_id": "30e3312d-8a1d-4df1-b602-17fe360660ea"
+    },
+    {
+      "claim_id": "cdcc830c-9e07-49b3-95f4-124cf85c0b61",
+      "result_id": "30e3312d-8a1d-4df1-b602-17fe360660ea"
+    },
+    {
+      "claim_id": "5a713916-fbeb-48b1-86e1-0e44ba992d81",
+      "result_id": "30e3312d-8a1d-4df1-b602-17fe360660ea"
+    },
+    {
+      "claim_id": "62cc1a0f-d4ca-487b-b370-8d3b425c755a",
+      "result_id": "30e3312d-8a1d-4df1-b602-17fe360660ea"
+    },
+    {
+      "claim_id": "e952ae2b-bfb1-4a4e-9fde-0e5be23471b0",
+      "result_id": "30e3312d-8a1d-4df1-b602-17fe360660ea"
+    },
+    {
+      "claim_id": "61758d85-f2da-4586-8122-71ef0087fe8d",
+      "result_id": "d3658f4d-a684-4e4a-8017-eea435c101ef"
+    },
+    {
+      "claim_id": "1311a6fb-de7c-45c9-8ff1-f02c3a24bffc",
+      "result_id": "d3658f4d-a684-4e4a-8017-eea435c101ef"
+    },
+    {
+      "claim_id": "a27103ae-81ab-45ea-9ce8-087e2e6fed1f",
+      "result_id": "8ad6bb4a-d02f-49c8-be07-0d324b1fcc8a"
+    },
+    {
+      "claim_id": "7cd979f0-bdc5-4d14-a949-b1dd1a719a23",
+      "result_id": "8ad6bb4a-d02f-49c8-be07-0d324b1fcc8a"
+    },
+    {
+      "claim_id": "676b3072-4310-47ed-8cc8-83c846d59da4",
+      "result_id": "8ad6bb4a-d02f-49c8-be07-0d324b1fcc8a"
+    },
+    {
+      "claim_id": "ae46f60a-70a4-461f-99b7-7190c3cadc76",
+      "result_id": "3d958bd4-1acf-43ab-ae88-4865316457f0"
+    },
+    {
+      "claim_id": "3c6948e1-9244-442b-9bd1-4c3fe774519a",
+      "result_id": "3d958bd4-1acf-43ab-ae88-4865316457f0"
+    },
+    {
+      "claim_id": "bbd41c31-82a3-42e4-8647-4dd48f8d7fa1",
+      "result_id": "597dd201-90be-4d06-819d-6e24d5d65fbf"
+    },
+    {
+      "claim_id": "47f8a2ac-1c08-4e66-8460-144869670405",
+      "result_id": "597dd201-90be-4d06-819d-6e24d5d65fbf"
+    },
+    {
+      "claim_id": "8eff85e7-70e4-4b2b-b4b8-2c54977ae37a",
+      "result_id": "597dd201-90be-4d06-819d-6e24d5d65fbf"
+    },
+    {
+      "claim_id": "9fdf472f-dfdd-48ac-853a-3654a0aa741f",
+      "result_id": "597dd201-90be-4d06-819d-6e24d5d65fbf"
+    },
+    {
+      "claim_id": "928325d9-c4e7-4362-8f1b-09070741898e",
+      "result_id": "597dd201-90be-4d06-819d-6e24d5d65fbf"
+    },
+    {
+      "claim_id": "2c7e411d-e4dc-40e4-a7e4-5b6c65e37c39",
+      "result_id": "597dd201-90be-4d06-819d-6e24d5d65fbf"
+    },
+    {
+      "claim_id": "1547e7e3-4d33-4b82-b90d-aca3a1e572da",
+      "result_id": "6b80ec6b-c88e-47b9-8d3b-c900ec074476"
+    },
+    {
+      "claim_id": "98c6c909-bb16-474f-919d-3f0ada645f86",
+      "result_id": "6b80ec6b-c88e-47b9-8d3b-c900ec074476"
+    },
+    {
+      "claim_id": "89f36084-1e59-4d1a-8a27-946c5b551493",
+      "result_id": "6b80ec6b-c88e-47b9-8d3b-c900ec074476"
+    },
+    {
+      "claim_id": "a4f3adfb-6a88-4f34-a965-950562f9881e",
+      "result_id": "7e10ea88-700f-4f52-83c6-c4c252ca46d8"
+    },
+    {
+      "claim_id": "2b4adda0-d484-4c87-974f-4515cb763837",
+      "result_id": "7e10ea88-700f-4f52-83c6-c4c252ca46d8"
+    },
+    {
+      "claim_id": "bd5e71db-6383-47bd-8d1d-6712a53995ae",
+      "result_id": "7e10ea88-700f-4f52-83c6-c4c252ca46d8"
+    },
+    {
+      "claim_id": "c6107689-e32f-4c4d-9229-bae583e204db",
+      "result_id": "7e10ea88-700f-4f52-83c6-c4c252ca46d8"
+    },
+    {
+      "claim_id": "e9d36402-42f5-467e-80d6-5f6f6aeaea89",
+      "result_id": "7e10ea88-700f-4f52-83c6-c4c252ca46d8"
+    },
+    {
+      "claim_id": "4b408fe6-a201-4325-b271-123c9761d38a",
+      "result_id": "7e10ea88-700f-4f52-83c6-c4c252ca46d8"
+    },
+    {
+      "claim_id": "f204a277-f09b-443f-b5f3-49adde1c34c0",
+      "result_id": "7e10ea88-700f-4f52-83c6-c4c252ca46d8"
+    },
+    {
+      "claim_id": "f0651068-a3c5-43de-ac24-31693841550d",
+      "result_id": "7e10ea88-700f-4f52-83c6-c4c252ca46d8"
+    },
+    {
+      "claim_id": "af2a59b5-6568-49a3-becc-9e08cec54fee",
+      "result_id": "d039cef2-9fb8-40df-b95d-3efbe9c5f225"
+    },
+    {
+      "claim_id": "e81c4bfd-3b5e-49cd-998a-a1c08b76a6af",
+      "result_id": "7587c18b-6c01-4f39-ab28-9f4d4e3fbda5"
+    },
+    {
+      "claim_id": "627440b5-15ad-4f4b-8345-7ce126823d3f",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "5a3b2f48-2303-4a8e-9b28-f0696046defc",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "9f35be12-a27d-4d7e-881d-ca40356b5fba",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "7b2dc8b5-9c79-442b-81db-e60cbbeda72e",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "2c294b65-45dd-494f-bacd-2f665b6ad90d",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "518f5d77-17c9-42b7-bb22-965d665575df",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "ffb7798a-4fba-4e06-a743-ee8e28949d42",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "a689d858-ec8d-4b96-8476-743b09c7393d",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "49604736-f50c-4856-b545-a979b027dd87",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "8b628042-4012-4a64-961c-b3125e99425f",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "e1527ebc-5ddf-49f1-8a0f-58ae665a9c2c",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "e0593b89-df98-4639-a1f6-ae0c149c29db",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "39ac5cec-68f2-4ee0-90c0-a37463c40707",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "fad8eeea-42fd-478f-960b-9a59b62f1929",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "09c82670-28b8-4818-8cbc-a041e382b097",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "eaeb6f70-590e-40de-bd02-04f137d6cb8f",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "9189bace-1c7f-4aea-9c6f-cddae679859f",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "1589efb7-6cc3-4a3b-8597-e736b1b1ff63",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "bf325cec-cc83-435d-af0a-14a4f642557d",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "4374dff8-5069-4bed-b8fc-5e96a44fb157",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "d92d8493-31c6-4756-9a65-eba67b066d5e",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "d6f47da2-d7a9-45ef-802e-124efedb7c9c",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "a89d4eaf-8c11-4c66-8cd8-b263bb386192",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "2ac7c9fd-d15f-4550-967c-57f9806337e4",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "3128c1e9-72ce-4cf3-af41-62078d6bd497",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "6f71272d-6b1a-4147-ad1f-1ddc95c2d9e9",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "b9b06fdb-f86d-4fa7-b075-e7c618269d42",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "6c4b93fb-745c-4eab-b899-7c6ca2c530e2",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "1314eb66-c079-4ad4-96fc-5127dd036611",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "5db76d97-d81c-4d49-9916-e1f320cac511",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "08aff188-0cbe-495a-b7be-b77be4bff0f3",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "b4f07992-f392-4b86-bcde-d052621de95f",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "31f73c42-65c0-4a7d-b756-1644d5017534",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "6a9700d1-2f56-4d15-982a-caaa2e27db9a",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "bc236950-5526-4f8f-904e-6e506168a311",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "0f92a37c-bc21-4984-b085-10a08c86c9da",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "9d451c1e-86bd-437b-8d3d-94ad4aa57411",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "f14d788e-cfdb-4d05-b4cb-57c241ffabd6",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "44e3d7f5-759f-4cab-9a19-893610cc929e",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "15eeda0e-0030-409e-baff-1dad3950eb36",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "51f66644-2241-4e44-a2e0-65165d4107f9",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "dad07d7c-f4d9-462e-b8fb-65369038503b",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "2f3fce37-8eff-4aa8-b601-4091a4f652a3",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "a4fe6f61-2b70-4c9e-9d4f-9e04e50fca4a",
+      "result_id": "663bf917-8b39-4864-9c80-e38911741d7b"
+    },
+    {
+      "claim_id": "0194158f-aed3-4bd8-8a51-15981287862a",
+      "result_id": "f79a1d54-a34c-44c2-b264-92eb56bbc0de"
+    },
+    {
+      "claim_id": "c3bd1543-be3f-493a-a3e7-6a965b400210",
+      "result_id": "f79a1d54-a34c-44c2-b264-92eb56bbc0de"
+    },
+    {
+      "claim_id": "838c3b5a-eb54-475f-b45e-a34ea501efec",
+      "result_id": "652dbe60-3f0e-402e-810a-ec7a01818464"
+    },
+    {
+      "claim_id": "3509d733-4e4f-42ca-8741-e041cf165bb5",
+      "result_id": "652dbe60-3f0e-402e-810a-ec7a01818464"
+    },
+    {
+      "claim_id": "11b1989f-0bf3-41a6-a4aa-fce8fe019127",
+      "result_id": "58fd7ba4-506d-422f-a6e6-f47c3b695254"
+    }
+  ],
+  "comparisons": []
+}

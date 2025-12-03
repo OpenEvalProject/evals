@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C65"
+    ],
+    "result": "Deep mutational scanning was performed on four homologous bacterial allosteric transcription factors (TetR, TtgR, MphR, and RolR) with high structural similarity (1-3 \u00c5 RMSD) but low sequence identity (14-19%). Comprehensive single-mutant libraries were generated with approximately 3800 mutants per protein using single-site saturation mutagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, C13-C16, C17, and C65 provide consistent and detailed experimental design information. The structural and sequence properties are explicitly stated with specific measurements, and the library construction methodology is clearly described with appropriate scale (~3800 mutants per protein).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Dead variants were identified as well-folded proteins that bind DNA and repress transcription but cannot be induced with ligand. Using a weighted scoring system and Q3 threshold, 53, 51, 48, and 57 residues were designated as hotspots in TetR, TtgR, MphR, and RolR respectively. After excluding ligand-contacting residues, 41, 43, 29, and 51 hotspots remained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C66-C68 describe a systematic approach to hotspot identification with explicit criteria (Q3 threshold, read threshold of 5). The robustness is demonstrated by testing different read thresholds (5 vs 10) with minimal impact on results (C67), supporting the reliability of the classification method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C58"
+    ],
+    "result": "Allosteric hotspots are distributed protein-wide rather than being restricted to pathways linking allosteric and active sites. Hotspots of TetR and MphR were concentrated in the C-terminal half, while those of TtgR and RolR were distributed across the entire structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C22, and C58 consistently describe the protein-wide distribution of hotspots, challenging the conventional pathway model. The distribution patterns are explicitly stated and supported by visual evidence in Figure 1B-C, providing clear empirical support for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C26"
+    ],
+    "result": "The location of allosteric hotspots is not superimposable across the four aTF homologs despite structural homology, and hotspots are not statistically more conserved than non-hotspots when compared to close sequence homologs (>50% sequence identity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C26 are supported by explicit statements and reference to Figure 1\u2014figure supplement 6. The lack of statistical significance in conservation analysis (C26) provides quantitative support for the non-superimposability observation (C3), indicating sequence-specific rather than structurally conserved hotspot locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C59"
+    ],
+    "result": "Despite protein-wide distribution, hotspots show structural enrichment patterns: high fraction at the dimer interface, high fraction on \u03b14 helix (suggesting mechanical linkage between LBD and DBD), and very few in the DBD compared to other regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C59 describe consistent structural patterns across the four proteins with reference to Figure 1\u2014figure supplement 5. These observations reveal a conserved structural mechanism despite non-superimposable hotspot locations, providing important mechanistic insights into allosteric signal transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C60",
+      "C72"
+    ],
+    "result": "Long-range interactions (LRIs), defined as residues separated by \u226510 positions in sequence but within 8 \u00c5 in C\u03b1-C\u03b1 distance, are more prevalent among hotspots than non-hotspots (p=0.07). Hotspots in TetR and MphR show especially strong LRI enrichment (28% vs 17% non-hotspots), while the gap is smaller in TtgR and RolR (23% vs 20%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C60, and C72 provide explicit definitions and quantitative measurements of LRI enrichment. The p-value of 0.07 (C29) is marginally non-significant but shows a consistent trend across all four proteins. The specific percentages for each protein (C30-C31) provide detailed quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C73"
+    ],
+    "result": "K-means clustering of LRIs identified 10 optimal clusters per protein using the Elbow method. The dimer interface emerged as the first-ranked LRI cluster in TetR, MphR, and RolR, but not in TtgR, consistent with fewer hotspots at TtgR's dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C73 describe a systematic clustering analysis with explicit methodology (Elbow method) and clear results. The consistency between cluster rankings and hotspot distribution (C34) provides internal validation. Figure 2\u2014figure supplement 2 supports the optimal cluster determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62"
+    ],
+    "result": "Common signatures emerge when comparing hotspots coincident with long-range interactions, suggesting a generally similar allostery mechanism is conserved among homologs, though mechanisms may differ substantially in fine molecular details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C61, and C62 synthesize the findings about conserved mechanisms versus divergent details. The evidence from LRI clustering (C32-C34) and distribution patterns (C21-C22) supports both the conservation of general mechanism and divergence in details, providing a nuanced understanding of allosteric evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Aromatic amino acids (Phe, Trp, Tyr) were enriched among dead variants (20%) over not-dead variants (15%), with proline also enriched (5% vs 3.8%). Statistically significant differences were observed in polarizability, SASA, and mass, but not in hydrophilicity, hydrophobicity, or polarity. Small branched amino acids (Ser, Cys, Ala) were depleted among dead variants (12% vs 18%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C40 provide specific quantitative measurements with statistical testing. Figure 3A-B supports these findings. The pattern of enrichment/depletion and the specific physicochemical properties that differ provide mechanistic insights into what makes mutations disruptive to allostery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C41"
+    ],
+    "result": "Aromatic and strongly aliphatic amino acids have the highest interaction energies in the PDB (-4 to -6 RT units). Structural modeling of the inactive C144F TetR variant showed F144 forming strong aromatic interactions at the dimer interface with F140 and H139, potentially stabilizing the inactive state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C41 connect physicochemical properties to structural mechanisms. C39 cites established knowledge (Chan et al., 2004), while C41 provides specific structural evidence from modeling (Figure 3C). Together they explain why aromatic mutations are enriched in dead variants through increased interaction energies stabilizing the inactive state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49"
+    ],
+    "result": "A comprehensive set of 27 features (8 physicochemical, 8 local structural, 11 global) was assembled for machine learning analysis. For all four aTFs, global features have the highest F scores while physicochemical features have the lowest. The five most frequent features in optimal models consist of 71.4% global features, 14.8% local features, and 14.8% physicochemical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C48-C49 describe a systematic feature engineering approach with explicit categorization and quantitative analysis. The consistent pattern across all four proteins (C44) and the specific breakdown of feature frequencies (C48) provide strong support for the importance of global structural properties in determining hotspots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Machine learning models using genetic algorithm-optimized neural networks achieved F1 scores of 0.83 (TetR), 0.82 (MphR), 0.64 (RolR), and 0.54 (TtgR), all significantly outperforming random models (0.19, 0.16, 0.26, 0.21 respectively). RolR and TtgR exhibited significant numbers of false positive hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C47 provide explicit performance metrics demonstrating that global structural and dynamic properties are strong predictors. The variation in performance across proteins (better for TetR/MphR than RolR/TtgR) is acknowledged and explained by differences in hotspot distribution patterns, showing appropriate critical evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C63"
+    ],
+    "result": "Transfer learning enables cross-protein prediction: models trained on one protein can predict hotspots in homologs. CPP_TL significantly outperforms CPP and models trained with only 10% data for the test protein. Neural networks trained with data from three proteins generally outperform those trained with data from only one protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50-C51, and C63 demonstrate successful transfer learning with explicit comparisons (Figure 5A). The systematic evaluation of different training data combinations (one protein vs three proteins vs 10% target protein) provides strong evidence for the transferability of allosteric principles across homologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C64"
+    ],
+    "result": "Transfer learning with homology models achieves relative performances above 83% despite sequence identities as low as 15.4%. Model performance generally increases with sequence similarity and decreases with RMSD between template and target proteins, but is not highly sensitive to structural model resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C64 demonstrate robustness of the transfer learning approach with homology models. The trends with sequence identity and RMSD (Figure 6) are explicitly stated, and the >83% performance despite low sequence identity is remarkable. This has important practical implications for predicting hotspots in proteins without crystal structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "UniRep feature-based models perform significantly better than random baselines in both mutation phenotype prediction and hotspot prediction for all four aTFs. However, there is a noticeable gap between UniRep-based hotspot prediction and optimal models using 27 physical features. Combining UniRep features with physical features yields marginal but consistent improvement in mutation phenotype prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 provide systematic comparison of sequence-based (UniRep) versus structure-based features with explicit performance metrics in Tables 1-2. The gap between UniRep and optimal models (C56) and the marginal improvement from combining features (C57) are clearly documented, providing important insights into the relative value of different feature types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "The overall allosteric mechanism is embedded in the structural fold of the aTF family, but the finer molecular details are sequence-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 synthesizes the major findings: conserved structural mechanism (C23-C25, C33-C34, C61) versus non-superimposable hotspot locations (C3, C21-C22) and sequence-specific details (C26, C62). This conclusion is well-supported by the comprehensive experimental and computational evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background context: All allosteric proteins obey a thermodynamic principle where ligand binding stabilizes the active state. Previous DMS of TetR showed hotspots distributed throughout the protein, contrasting with the commonly held view that hotspots fall along well-defined pathways. The TetR family shares similar structure despite diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 provide appropriate background context with proper citations. C8 cites established thermodynamic principles, C9 cites prior work (Leander et al., 2020), C10 cites the conventional view with multiple references, and C11 describes the TetR family with citations. These claims establish the scientific context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The Ohm webserver predictions show modest overlap with experimental hotspots and involve mostly DBD residues, while experimental hotspots are distributed across the protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by explicit comparison with reference to Figure 1\u2014figure supplement 7. The modest overlap and focus on DBD residues in computational predictions versus protein-wide experimental hotspots highlights limitations of pathway-based computational approaches and validates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Detailed computational methods: Sequence conservation analysis used HMM search against UniProtKB with conservation score \u22657 as highly conserved. Contact maps were generated using CMView. Rosetta v3.9 was used for structural modeling with ddg_monomer application. Various features were calculated using established tools and databases (AAindex, PLOPS, DSSP, AWSEM-MD Frustratometer, ENM, NAPS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C82 provide comprehensive methodological details with appropriate tool citations and specific parameters. These methods are standard in the field and properly documented, enabling reproducibility. The explicit specification of tools, versions, and parameters supports the rigor of the computational analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Neural network architecture and hyperparameters: All NNs (except UniRep-based) have one hidden layer with 10 neurons (RELU activation) and 2 output neurons (softmax activation). Xavier initialization, Adams optimizer, categorical cross-entropy loss, and learning rate of 0.0007 were used consistently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide explicit specification of neural network architecture and hyperparameters. This level of detail is essential for reproducibility of the machine learning results. The consistent use of these parameters across all analyses (except UniRep-based models) ensures fair comparison.",
+    "result_type": "MINOR"
+  }
+]

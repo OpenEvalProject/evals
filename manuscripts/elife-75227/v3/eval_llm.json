@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The CPTAC dataset analyzed comprises approximately 700 tumor samples from seven cancer types with multi-omic data including DNA (WGS/WES), RNA (RNAseq), and protein (TMT mass spectrometry) measurements for 7-12K genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 describe the dataset composition and data types. These are straightforward descriptive claims about the data used in the study, supported by direct statements in the manuscript and supplementary materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Protein-level compensation is widespread across tumor types and stronger for protein complex genes than non-complex genes for both DNA gains and losses. RNA-level compensation is less common and shows significant tissue specificity, with some cancers (COAD, ccRCC, BRCA, OV) showing RNA-level compensation while others (LUAD) show none. These findings are validated across multiple datasets including CCLE, TCGA, and isogenic aneuploid cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C34 collectively demonstrate protein and RNA compensation patterns with extensive statistical support (FDR < 0.001 for most comparisons), validation across multiple independent datasets (CPTAC, CCLE, TCGA, hCEC), and control analyses addressing technical confounders (TMT ratio compression, genome doubling, ribosomal genes). The bootstrapping statistical approach is appropriate for the data structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Protein complex genes have stronger protein-level regulation (lower RNA-protein correlation, median=0.36) and weaker RNA-level regulation (higher DNA-RNA correlation, median=0.44) compared to non-complex genes (RNA-protein correlation median=0.42, DNA-RNA correlation median=0.31). This pattern is consistent across all seven tumor types, validated in CCLE, NCI-60, TCGA datasets, isogenic aneuploid cells, and normal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C52 establish differential regulation patterns between complex and non-complex genes using correlation analysis. The findings are statistically significant (FDR < 0.001), validated across multiple independent datasets including normal tissues, and robust to control analyses excluding low-abundance genes, accounting for DNA variance, and excluding ribosomal genes. The logic connecting correlation values to regulatory mechanisms (C35-C37) is clearly explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Evolutionary conservation (phyloP score) is associated with gene regulation patterns: more conserved genes show stronger protein-level regulation and weaker RNA-level regulation (FDR < 0.001). Protein complex genes are significantly more conserved than non-complex genes (mean phyloP: 0.11 vs 0.09, FDR < 0.001). Non-exponential degradation score predicts strong protein-level regulation, while other biophysical properties show no significant association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 report associations between gene features and regulation patterns with appropriate statistical testing (FDR < 0.001). The evolutionary conservation analysis is well-supported with specific quantitative comparisons. The finding about non-exponential degradation is consistent with prior literature (C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "There is a strong negative association between DNA-RNA and RNA-protein correlations at both gene level (slope=-0.33, rho=-0.78, p=7.9E-07) and pathway level (rho=-0.75, p=1.7E-07). Genes with high DNA-RNA/low RNA-protein correlations (Group 1) are enriched in mitochondrial, translation, and RNA processing pathways, while genes with low DNA-RNA/high RNA-protein correlations (Group 2) are enriched in cell structure, adhesion, and migration pathways. This pattern is consistent across tumor types and validated in CCLE, NCI-60, and hCEC datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C79 demonstrate a fundamental inverse relationship between RNA and protein-level regulation with strong statistical support and extensive validation. The GO enrichment analyses show clear functional patterns (FDR values ranging from 1.0E-07 to 0.044). Control analyses confirm the association is not due to complex gene composition (C75) or DNA variance artifacts (C76). RNA half-life associations (C77-C78) provide mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The inverse relationship between RNA-level and protein-level regulation observed in aneuploid cancer cells is also present in normal tissues, as demonstrated by significant negative association between RNA-protein correlations from normal tissues and DNA-RNA correlations from tumor tissues (rho=-0.63, p=5.3E-05). This indicates that studying gene regulation in aneuploid cells can inform understanding of regulation in normal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 extend the main findings to normal tissues with appropriate statistical support. The logic connecting aneuploid cell findings to normal cell regulation is supported by citation to prior work (C80) and validated through analysis combining normal tissue and tumor data (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Subcellular localization influences regulation patterns: ribosome, proteasome, and mitochondrial protein complex genes show significantly stronger protein-level regulation (lower RNA-protein correlation, FDR < 0.002) compared to other compartments. In contrast, plasma membrane genes (both complex and non-complex) show weaker protein-level regulation and stronger RNA-level regulation (FDR < 0.001), with enrichment in cell adhesion and leading edge pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 identify subcellular location as a predictor of regulation type with strong statistical support (FDR < 0.002). The finding that plasma membrane genes have distinct regulation patterns is particularly notable and supported by GO enrichment analysis (C89, FDR=1.5E-20 for cell substrate adhesion).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Single-cell RNA-seq analysis reveals that genes preferentially regulated at the RNA level (Group 2) have higher expression variability across individual cells compared to genes predominantly regulated at the protein level (Group 1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 provides single-cell validation of bulk findings using VarID analysis on colorectal cancer patient data. The result is statistically significant (p < 0.001 with Bonferroni correction) and provides mechanistic insight into the consequences of different regulation strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Highly aneuploid tumors show enrichment of pathways related to DNA replication, chromatin organization, RNA processing, protein translation, and mitochondrial function at the protein level (NES values 2.33-3.49, FDR < 0.001), with depletion of cytoskeleton, cell adhesion, and immune response pathways. These changes are more evident at the protein level than RNA level (24 vs 1 significantly enriched pathway in pan-cancer analysis) and are independent of tumor purity, cell cycle score, and gene-level copy number variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C108 identify pathway changes in highly aneuploid tumors using linear regression with appropriate covariates and GSEA. The statistical support is strong (FDR < 0.001 for most pathways), and extensive control analyses address potential confounders (purity, cell cycle, mitochondrial genes, gene-level CNV). The finding that protein-level changes are more pronounced than RNA-level changes is consistent with earlier results about preferential protein-level regulation of these pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Summary of main findings: Genes and pathways with stronger protein-level regulation tend to have weaker RNA-level regulation and vice versa. Protein translation, mRNA processing, and cellular respiration pathways show strong protein-level regulation, while cell adhesion and chemotaxis show strong RNA-level regulation. Protein-level compensation is common across tumor types and stronger for protein complex genes for both gains and losses, consistent with prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C118 summarize the main findings with appropriate citations to supporting prior work (C114, C116, C117). These summary claims are well-supported by the extensive data presented in earlier claim groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Tissue-specific patterns of compensation exist: six of seven tumor types show protein-level compensation stronger at SCNA extremes; breast cancer shows compensation for losses only in complex proteins; lung adenocarcinoma shows no compensation; UCEC and HNSC show only protein-level compensation; four tumors show RNA-level compensation with variable patterns. This is the first study to systematically investigate tissue-specific RNA and protein-level compensation across tumor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 describe tissue-specific patterns supported by the data in Figure 1C-D. The novelty claim (C126) is reasonable given the comprehensive multi-tumor analysis. The patterns are clearly documented though the mechanistic basis for tissue specificity remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Genes with similar regulation patterns are enriched in functional pathways: translation and RNA processing genes show stronger protein-level regulation, while cell structure and adhesion genes show stronger RNA-level regulation. This suggests genes sharing similar biological functions have evolved similar types of regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 connect functional similarity to regulatory similarity with support from GO enrichment analyses. The evolutionary interpretation (C130) is reasonable though speculative. Citation to similar findings in prior work (C131) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Proposed explanation for inverse RNA/protein regulation relationship: For certain genes (e.g., cell adhesion proteins), protein-level regulation may be difficult once proteins are transported to their functional location, favoring RNA-level regulation. For protein complex genes, coordinated RNA-level regulation of scattered subunits may be difficult in mammalian genomes, favoring protein-level regulation despite potential energetic costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C138 propose mechanistic explanations for the observed inverse relationship. While the logic is reasonable and supported by citations (C137, C138), these are largely speculative proposals (C133-C136 are marked as SPECULATION). The explanations are plausible but lack direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Mitochondrial protein complex genes show strong protein-level regulation because these proteins are synthesized in the cytoplasm before import, requiring protein-level regulation and complex assembly within the organelle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 provide a mechanistic explanation for mitochondrial gene regulation patterns. The logic is sound and supported by established knowledge about mitochondrial protein synthesis (C140 with citation). This connects the observed correlation patterns to biological mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "RNA-level regulation leads to increased cell-to-cell variability in RNA molecule numbers, while reduced RNA-level regulation implies robustness. Strong RNA-level regulation comes at the cost of increased variability, likely due to increased stochastic gene regulatory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 interpret the single-cell variability findings (C90). The inference about variability consequences is reasonable and supported by the data, though the mechanistic explanation about stochastic interactions (C144) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Ribosome, proteasome, and mitochondrial complexes show the strongest protein-level regulation. Plasma membrane proteins show weaker protein-level and stronger RNA-level regulation compared to other compartments. While protein degradation mechanisms in cytosol/ER are well understood, little is known about quality control for plasma membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 summarize subcellular location findings with appropriate citation (C145). The identification of a knowledge gap regarding plasma membrane protein quality control (C148-C149) is well-supported and highlights an important area for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Pathways with strong protein-level regulation have low RNA half-life, while pathways with strong RNA-level regulation have high RNA half-life. This suggests RNA-level regulation occurs primarily at the transcriptional level rather than through RNA degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 connect RNA half-life to regulation patterns with statistical support (C77-C78: rho=0.51 and -0.52, p=0.001-0.002). The inference about transcriptional vs. degradation mechanisms (C152) is logical given the RNA half-life associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Ribosome biogenesis was strongly enriched in serous uterine cancer (the most aneuploid subtype) in a previous CPTAC study. Pathways upregulated in primary tumors are not enriched in aneuploid cell lines, suggesting the tumor microenvironment plays an important role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C156 connect current findings to prior work and identify differences between primary tumors and cell lines. The citations support the claims (C153, C155), and the inference about tumor microenvironment importance (C156) is reasonable though requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Current understanding of protein-level regulation mechanisms: Previous studies suggested protein degradation as the primary mechanism, but recent evidence shows protein synthesis regulation coexists with degradation, with synthesis being the major mechanism for certain complexes and degradation providing fine-tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 summarize the current state of knowledge about protein regulation mechanisms with appropriate citations. This provides important context for interpreting the compensation findings, though the current study does not directly address these mechanisms.",
+    "result_type": "MINOR"
+  }
+]

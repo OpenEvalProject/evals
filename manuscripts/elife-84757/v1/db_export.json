@@ -1,0 +1,1624 @@
+{
+  "submission": {
+    "id": "b7f5f975-a873-4a5e-b77e-61766a22bc6f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:39:58.151748Z",
+    "updated_at": "2025-12-03T20:39:58.151748Z"
+  },
+  "content": [
+    {
+      "id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "submission_id": "b7f5f975-a873-4a5e-b77e-61766a22bc6f",
+      "content_type": "manuscript",
+      "content_text": "# Patterning precision under non-linear morphogen decay and molecular noise\n\n## Authors\n\n- Jan Andreas Adelmann<sup>1</sup> ([ORCID: 0000-0003-0876-3363](https://orcid.org/0000-0003-0876-3363))\n- Roman Vetter<sup>1</sup> ([ORCID: 0000-0003-2901-7036](https://orcid.org/0000-0003-2901-7036))\n- Dagmar Iber<sup>1</sup> ([ORCID: 0000-0001-8051-1035](https://orcid.org/0000-0001-8051-1035)) \u2020\n\n### Affiliations\n\n1. Department of Biosystems Science and Engineering, ETH Zurich Basel Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n2. Swiss Institute of Bioinformatics Basel Switzerland ([ROR:002n09z45](https://ror.org/002n09z45))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMorphogen gradients can instruct cells about their position in a patterned tissue. Non-linear morphogen decay has been suggested to increase gradient precision by reducing the sensitivity to variability in the morphogen source. Here, we use cell-based simulations to quantitatively compare the positional error of gradients for linear and non-linear morphogen decay. While we confirm that non-linear decay reduces the positional error close to the source, the reduction is very small for physiological noise levels. Far from the source, the positional error is much larger for non-linear decay in tissues that pose a flux barrier to the morphogen at the boundary. In light of this new data, a physiological role of morphogen decay dynamics in patterning precision appears unlikely.\n\n## Introduction\n\nAccording to Wolpert\u2019s famous French flag model (Wolpert, 1969), morphogen gradients encode readout positions $x_{\\theta}$ via concentration thresholds $C_{\\theta}=C\u2062(x_{\\theta})$, and differentiating cells base their fate decisions on whether the local morphogen concentration lies above or below such thresholds (Figure 1A). Thus, these readout positions mark the boundary locations between domains of different cell fates. Variations in the morphogen profile result in variations in the readout positions. The accuracy of the spatial information carried by morphogen gradients can be quantified with the positional error, which is defined as the standard deviation of the readout positions over different gradient realizations (Vetter and Iber, 2022):\n\n$$\n\\sigma_{x}=stddev\u2061[x_{\\theta}].\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84757/elife-84757-fig1-v1.jpg)\n\n**Figure 1.:** (A) According to the French flag model, morphogen gradients provide the spatial information required for tissue patterning via concentration thresholds $C_{\\theta}$, numbered by $\\theta=1,2,3$ etc. If a cell lies above or below a certain threshold $C_{\\theta}$, it switches fate, resulting in domain boundaries forming at the respective cell borders at $x=x_{\\theta}$ (blue and red lines). The morphogen source is located at $x=x_{0}=0$. (B) Linear decay leads to exponential gradients. Changes in the gradient amplitude C0 (different colours) lead to a shift $\u0394\u2062x$ that is independent of the amplitude. (C) Non-linear decay ($n=2$) leads to power-law gradients. The shift $\u0394\u2062x$ due to a change of C0 is amplitude-dependent. (D, E) Noisy example gradients obtained numerically. Cell boundaries are denoted by black ticks along the patterning axis. Molecular kinetic noise and cell area variability leads to noisy gradients. For a fixed readout threshold $C_{\\theta}$, variable gradients result in different readout positions $x_{\\theta,j}$ (inset plots). Non-linear decay (E) leads to shallower gradients further in the patterning domain compared to linear decay (D).\n\nHow the observed precision of tissue patterns arising from this principle is achieved, in spite of natural molecular noise in morphogen production, transport, decay, internalization, turnover and other sources of variability, is a key question in developmental biology (Lander, 2011; Vetter and Iber, 2022; Iber and Vetter, 2022).\n\nMorphogen dynamics are often described by reaction-diffusion equations of the form (Lander et al., 2009).\n\n$$\n\\frac{\u2202C}{\u2202t}=D\u0394C\u2212dC^{n}/C_{ref}^{n\u22121}\n$$\n\nwith morphogen concentration $C$, diffusion coefficient $D$, and decay rate $d$. $C_{ref}$ is a constant reference concentration that we introduce to make all units independent of $n$. The exponent $n$ models linear ($n=1$) or non-linear ($n>1$) decay of the morphogen. Linear decay leads to exponential gradient profiles (Figure 1B) of the form (Lander et al., 2002).\n\n$$\nC(x)=C_{0}e^{\u2212x/\\lambda},\\lambda=\\sqrt{\\frac{D}{d}}\n$$\n\nwith an amplitude C0 at the source at $x=0$, and a characteristic decay length $\\lambda$, set by the diffusion coefficient $D$ and the degradation rate $d$. Non-linear decay, on the other hand, results in shifted power-law gradients (Figure 1C; Eldar et al., 2003)\n\n$$\nC(x)=C_{0}(1+\\frac{x}{m\\lambda_{m}})^{\u2212m},m=\\frac{2}{n\u22121}\n$$\n\nwhere $\\lambda_{m}$ is a gradient length scale that depends on $D/d$, $n$ and $C_{0}/C_{ref}$ (see Appendix 1). Non-linear decay would for instance arise in case of cell lineage transport, when ligands interact with receptor clusters, or if ligand binding results in receptor upregulation, as is the case for several morphogens, most prominently for Hedgehog (Hh) (Eldar et al., 2003; Nahmad and Stathopoulos, 2009; Wartlick et al., 2009; Balaskas et al., 2012). Most reported morphogen gradient profiles have been fitted assuming linear decay ($n=1$) (Gregor et al., 2007; Gregor et al., 2008; Kicheva et al., 2007; Wartlick et al., 2011; Wartlick et al., 2014; Cohen et al., 2015; Zagorski et al., 2017; Mateus et al., 2020). For the FGF8 gradient in the developing mouse brain, $n\u22484$ has been reported (Chan et al., 2017).\n\nEmbryos are subject to molecular noise, which can cause fluctuations in morphogen production and transport rates, and consequently, in the gradient amplitudes and morphogen fluxes from the source to the patterned cells. This results in shifts $\u0394\u2062x$ between different gradient realisations (Figure 1B and C). In the case of linear decay, the shift is only related to the relative morphogen influx or amplitude and not to the absolute morphogen levels (Appendix 1, Equation 11). However, with non-linear decay, the shift depends on the absolute levels, with higher influxes resulting in smaller shifts (Appendix 1, Equation 12). Previous research (Eldar et al., 2003) suggested that the circumstance that this shift vanishes for power-law gradients at sufficiently large morphogen influx values leads to more robust patterning, because the readout position becomes independent of the influx in this limit when the morphogen decay is non-linear (Appendix 1). In other words, if two tissues are patterned by two different noise-free power-law gradients, both with high (but different) morphogen influxes from the source, the resulting gradients will be nearly identical, resulting in a reproducible pattern. For exponential gradients, the shift will not disappear, and the gradients will thus differ. However, the gradients that result from non-linear decay also possess significantly shallower tails, relative to the higher concentration (Figure 1C). Their usefulness for patterning has therefore been questioned (Lander et al., 2009), and it has remained unclear whether nonlinearity in the morphogen decay would in fact help achieving higher positional accuracy. Indeed, to first order, the positional error of variable gradients is inversely proportional to the magnitude of their slope (Gregor et al., 2007; Vetter and Iber, 2022) according to\n\n$$\n\\sigma_{x}\u2248|\\frac{\u2202C}{\u2202x}|^{\u22121}\\sigma_{C},\n$$\n\nwhere $\\sigma_{C}$ is the standard deviation of local morphogen concentration and $x$ denotes the patterning axis. This suggests that for patterning precision, the benefit of a smaller positional shift of gradients with $n>1$ might be offset or even overcompensated by their flatter shape further from the source.\n\nIn the previous analysis (Eldar et al., 2003), molecular noise was considered only in the form of a fold-change in the morphogen amplitude or influx between different gradient realisations, resulting in shifted deterministic gradients, as shown in Figure 1B and C. To account for the intrinsic stochasticity of biological systems, we now extend this deterministic view by incorporating kinetic variability into the model, as depicted in Figure 1D and E. This is achieved by introducing randomness into all kinetic parameters of the reaction-diffusion equation. Our model is cell-based, meaning that each cell in the tissue is assigned its own specific variable kinetic parameters, emulating inter-cellular variability (Methods). With this quantitative statistical tool, we demonstrate numerically that the positional error of noisy morphogen gradients does not significantly improve with non-linear decay. In the contrary, if the morphogen cannot leave the patterned tissue opposite of the source, the power-law gradients become shallow in a substantial part of the domain, leading to reduced positional accuracy with non-linear decay.\n\n## Results\n\n### Noisy gradient model\n\nWe simulated steady-state diffusion to study the impact of non-linear decay on the precision of noisy morphogen gradients. Our model uses a one-dimensional cellular domain composed of a source of length $L_{s}$ and a patterning region of length $L_{p}$ (Figure 1D and E). To represent morphogen-secreting source cells explicitly, the diffusion equation (Equation 2) was extended by a morphogen production term, resulting in\n\n$$\n0=D\\frac{\u2202^{2}C}{\u2202x^{2}}\u2212dC^{n}/C_{ref}^{n\u22121}+pH(\u2212x).\n$$\n\nHere, $H\u2062(x)$ is the Heaviside function, ensuring that production at rate $p$ only occurs in the source ($x<0$). Zero-flux boundary conditions were used at both outer ends of the tissue, mimicking a situation in which morphogen molecules are restricted to the patterned tissue by an impermeable boundary:\n\n$$\n\\frac{\u2202C}{\u2202x}(\u2212L_{s})=0=\\frac{\u2202C}{\u2202x}(L_{p}).\n$$\n\nWe generated variable morphogen gradients by numerically solving Equation 6 with kinetic parameters pi, di and $D_{i}$, and cell areas $A_{i}$ independently drawn from log-normal distributions for each cell $i=1,\u2026,N$ in the domain (Vetter and Iber, 2022; Adelmann et al., 2022; Figure 2, for details see Methods). The individual gradient realisations $C_{j}\u2062(x)$ can be thought of as representing different embryos, denoted by the index $j$. They exhibit inter- and intra-tissue variability due to the stochastic nature of the three kinetic parameters that vary from cell to cell. Cells have to convert the spatial morphogen distribution they are exposed to into a single concentration value, which determines their fate in the tissue according to the French flag model. There are several ways cells may achieve this, such as averaging the morphogen signal over their entire cell surface, beyond their cell surface via a cilium, or reading out the signal at a single point. In a recent study, we found that the readout mechanism has little impact on the gradient precision perceived by the cells (Adelmann et al., 2022). We therefore only analysed the case where cells average the morphogen signal over their cell surface, or over their diameter in the 1D model here, respectively. The concentration in each cell is then compared to the threshold concentration $C_{\\theta}$ and the location $x_{\\theta,j}$ of the first cell whose sensed concentration subceeds this threshold is recorded. This process is repeated for all gradients $j$, allowing to compute the positional error according to its definition (Equation 1), $\\sigma_{x}=stddev_{j}\u2061{x_{\\theta,j}}$ to quantify the precision of the positional information conveyed by the morphogen gradients.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84757/elife-84757-fig2-v1.jpg)\n\n**Figure 2.:** A 1D cellular domain is constructed by drawing cell areas from log-normal distributions with mean cell area $\\mu_{A}$ and standard deviation $\\sigma_{A}$. Cell areas are then converted to diameters ($\\delta_{i}$). This procedure is repeated $N$ times until source and patterning domains of length $L_{s}$ and $L_{p}$ are filled with cells. Kinetic parameters $k=p,d,D$ are drawn independently from log-normal distributions with a mean $\\mu_{k}$ and standard deviation $\\sigma_{k}$ for each cell. Production only takes place in the source (blue cells). Then, the reaction-diffusion equation (Equation 6) is solved on the cellular domain, generating one noisy gradient $C_{j}\u2062(x)$. To determine a unique readout concentration of a cell, the average concentration along the cell boundary is computed for each cell in the patterning domain. Based on these concentrations the readout position $x_{\\theta,j}$ where $C_{j}\u2062(x_{\\theta,j})=C_{\\theta}$ is recorded for each gradient. This step is repeated 1000 times. Lastly, the average readout position $\\mu_{x}$ and the positional error $\\sigma_{x}$ is calculated based on the 1000 noisy gradients. PDF denotes the probability density function.\n\n#### Model parameters\n\nTo define the stochastic nature of the morphogen kinetics involved in the formation of the gradients, we express the mean value and standard deviation of a parameter $q$ by $\\mu_{q}$ and $\\sigma_{q}$, respectively (Figure 2). Based on measurements of the Hedgehog morphogen gradient in the Drosophila wing disc and mouse neural tube (Kicheva et al., 2007; Cohen et al., 2015; Vetter and Iber, 2022), we used a mean diffusivity of $\\mu_{D}=0.033$ \u00b5m2/s and a mean gradient length $\\mu_{\\lambda}=20$ \u00b5m. We furthermore set the average degradation rate to $\\mu_{d}=\\mu_{D}/\\mu_{\\lambda}^{2}$, and the average production rate to $\\mu_{p}=\\mu_{d}\u2062C_{ref}$, where $C_{ref}=1$ arb. units to normalise the concentrations. Other specific values of gradient parameters would not change the results reported here, which are for the steady state, but would only alter the timescale it takes for the steady state to be reached. The noise-to-signal ratio in each quantity $q$ is given by the corresponding coefficient of variation, $CV_{q}=\\sigma_{q}/\\mu_{q}$. Reported physiological noise levels in morphogen production, decay, and transport differ between morphogens and tissues, but are around $CV_{p,d,D}\u22480.3$ (Vetter and Iber, 2022), which we use to define the distribution widths of the kinetic parameters.\n\nIn addition to the morphogen kinetics, our simulations also include cell-to-cell variability in the cell areas. The widths and cross-sectional areas of cells vary in all layers along the apical-basal axis (G\u00f3mez et al., 2021). Most quantifications have been carried out on the apical surface. One of the highest reported values for the apical area CV is found in the vertebrate neural tube ($CV_{A}\u22480.9$) (Escudero et al., 2011; Guerrero et al., 2019; Bocanegra-Moreno et al., 2022), but most values are considerably lower (Kokic et al., 2019). We therefore used $CV_{A}=0.5$ in all simulations unless specified otherwise.\n\nThe diffusion coefficient, $D$, and the degradation rate, $d$, set the steady-state patterning length scale, $\\lambda=\\sqrt{D/d}$. Thus, our results are independent of the absolute values chosen for $D$ and $d$, and only depend on their ratio. Positional quantities, such as the positional error, are reported relative to the average cell diameter, which in turn was chosen to be a fixed multiple of the average gradient decay length. We fixed the average cell diameter at a fourth of the exponential gradient length, $\\mu_{\\delta}/\\mu_{\\lambda}=1/4$, as found in the developing mouse neural tube (Kicheva et al., 2014; Cohen et al., 2015).\n\n### Impact of non-linear decay on gradient precision\n\nWe previously showed that in case of linear decay, there is a negligible impact of cell area variability as long as $CV_{A}<1$ (Adelmann et al., 2022). We now find that this holds similarly for non-linear decay (Figure 3A), justifying the use of a fixed $CV_{A}=0.5$ in the remainder of our analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84757/elife-84757-fig3-v1.jpg)\n\n**Figure 3.:** (A) Physiological variability in the cross-sectional cell areas has no significant impact on gradient precision. The positional error $\\sigma_{x}$ is plotted in units of the mean cell diameter $\\mu_{\\delta}$ at different readout positions in the patterning domain (symbols), and for different degrees of non-linearity (colours). (B) The positional error increases with the square root of the cell diameter, irrespective of $n$. Dotted lines show $\\sigma_{x}=\\alpha\u2062\\sqrt{\\mu_{\\delta}}$ for $\\alpha=2.6,5.2$ for reference, with lengths in units of \u00b5m. $L_{p}=100\u2062\\mu_{\\delta}$. (C) Non-linear decay leads to a marginally lower positional error close to the morphogen source. Inset plot shows $\\sigma_{x}/\\mu_{\\delta}$ at a distance of two cells from the source as a function of decay non-linearity. With a no-flux boundary at $x=L_{p}$, the shallowness of gradients from non-linear decay lets the positional error increase strongly far from the source. Colours correspond to different decay exponents $n$, as specified in panel D. (D) Variability in the production rate alone has no effect on the positional error along the domain for linear decay (blue). The stronger the non-linearity, the smaller the positional error close to the source (inset). Far from the source, the positional error increases rapidly with non-linear decay. (E) Difference between the positional error for $n>1$ and for $n=1$ relative to the mean cell diameter, at fixed readout positions (colours). (F) Effect of finite patterning domain size. The positional error increases close to the distant zero-flux boundary in case of non-linear decay (shades of blue, $n=2$). Patterning remains precise across a larger distance in the case of linear decay (black, $n=1$). In all panels, each data point represents the mean from 103 independent simulations. Error bars represent standard errors.\n\nMuch as for linear decay (Adelmann et al., 2022), the positional error scales with the square root of the mean cell diameter also for non-linear decay (Figure 3B). Small cell diameters, as observed in all known tissues that employ gradient-based patterning (Adelmann et al., 2022), are therefore important for high spatial precision also in case of non-linear decay.\n\nThe positional error increases from less than one cell diameter close to the source to about two cell diameters at a distance of 75 cell diameters away from the source (Figure 3C). Close to the distant domain boundary opposite of the source, where a no-flux condition was imposed, the positional error rapidly increases for non-linear decay, while remaining relatively low for linear decay. If only the production in the source is varied ($CV_{p}=0.3$, $CV_{d,D}=0$), the positional error remains constant as the readout distance from the source increases, but increases again sharply close to the distant end in case of non-linear decay (Figure 3D). But even for strong non-linearity ($n=4$), the positional error remains in the sub-cellular range when only production noise is considered, as long as the readout position is further than about $\\lambda$ away from the distal end.\n\nIndependent of whether all parameters are varied or only the production rate, the positional error drops in close vicinity to the source with stronger non-linearity in the decay (insets of Figure 3C and D). However, with less than 20% of a single cell diameter from $n=1$ to $n=4$, the effect is likely too small to be physiologically relevant. Further away from the source, linear decay yields a smaller positional error than non-linear decay (Figure 3D\u2013E). No matter how long the patterning domain is, non-linearity always increases the positional error as the distal tissue boundary is approached (Figure 3F).\n\nWhat then causes the increased positional errors with non-linear decay near the distal domain boundary? A zero-flux boundary condition there implies shallower gradients than on infinite domains: $C^{\u2032}\u2062(x)\u21920$ as $x\u2192L_{p}$. This effect occurs irrespective of $n$, but the spatial range over which the gradient flattens (and thus deviates from the pure exponential and shifted power-law forms for infinite domains, Equations 3; 4) increases with $n$. By virtue of Equation 5, non-linear decay thus leads to greater positional errors at readout positions in the vicinity of the distal boundary compared to linear decay.\n\nIn summary, our computer simulations of noisy morphogen gradients suggest that it is insufficient to quantify gradient robustness and patterning precision by considering variability in the morphogen production alone. Moreover, if the morphogen cannot exit the patterning domain opposite of the source, shifted power-law gradients that result from non-linear morphogen decay flatten over a significantly larger range than exponential gradients, leading to increased positional errors. The gain in positional accuracy close to the source for non-linear decay is negligible and therefore barely physiologically relevant. Overall, exponential gradients lead to more robust patterning.\n\n### Impact of boundary condition at the source\n\nGiven the impact of the distal domain boundary, we wondered whether the representation of the morphogen source by either a spatial production domain (Figure 4A), by a flux boundary condition $-D\u2062C^{\u2032}\u2062(0)=j_{0}$ (Figure 4B) as used by Eldar et al., 2003, or by a fixed gradient amplitude $C\u2062(0)=C_{0}$ (Figure 4C) would affect the positional error predicted by the model. While there are small quantitative differences, the gradient shapes (Figure 4A\u2013C) and positional errors (Figure 4D\u2013F) are overall very similar.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84757/elife-84757-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C) Noise-free gradient shapes when the morphogen is either secreted in a source domain at rate $p$ (Equation 6) (A), with flux BC, $-D\u2062\\partial\u2061C/\\partial\u2061x|_{x=0}=j_{0}$ (B), or Dirichlet BC, $C\u2062(0)=C_{0}$ (C). No-flux BC were imposed at at the far end of the tissue (at $x=L_{p}$). (D\u2013F) Positional error as a function of morphogen abundance variability, at different readout positions (symbols) and degrees of non-linearity (colours). Greater variability in the morphogen production rate (D), influx (E), and gradient amplitude (F) leads to a larger positional error above a certain threshold variability $CV\u2a860.1\u22120.3$. Kinetic variability was fixed at $CV_{d,D}=0.3$ (except for $CV_{p}$ in D). Further parameters: $\\mu_{j_{0}}=\\mu_{D}\u2062C_{ref}/\\mu_{\\lambda}$ (E), $\\mu_{C_{0}}=C_{ref}$ (F). In panels D\u2013F, each data point represents the mean from 103 independent simulations. Error bars represent standard errors.\n\nAs we increase the variability in the production rate via $CV_{p}$ (Figure 4D), in the influx from the source via $CV_{j_{0}}$ (Figure 4E), or in the gradient amplitude at the source boundary via $CV_{C_{0}}$ (Figure 4F), we find the smallest increase in the positional error for the production rate and the largest increase for the gradient amplitude. Neumann or Dirichlet boundary conditions thus overestimate the positional error when the variability in the source is high. Instead of using such boundary conditions, a spatial source domain should explicitly be modeled, where applicable. With the physiological values $CV_{p}\u22480.3$ and $CV_{C_{0}}\u2a850.3$ (Vetter and Iber, 2022), however, variability in the morphogen production plays merely a subordinate to moderate role in the overall gradient variability. Molecular noise in morphogen degradation and diffusivity dominates the patterning precision.\n\n### Impact of the morphogen source strength\n\nAs the gradient amplitude determines the sensitivity of the readout position to amplitude changes for non-linear decay (Appendix 1, Equation 12) but not for linear decay (Appendix 1, Equation 11), the average morphogen production rate is expected to affect the patterning accuracy in the case of non-linear decay, but not for linear decay. We put this theoretical prediction to the test by varying the mean relative production rate, the mean influx from the source, and the mean morphogen amplitude in the three different simulated morphogen production models. Changes in these parameters have no effect on the positional error if morphogen degradation is linear, which is consistent with the theory (Figure 5A\u2013F, blue lines). With non-linear decay, on the other hand, we indeed observe the positional error to be highly dependent on morphogen abundance. Precision arguments previously brought forward for deterministic morphogen gradients (Eldar et al., 2003) do not appear to directly quantitatively translate to the positional error in settings where cell-to-cell variability is included, and where morphogen production remains at physiological levels.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84757/elife-84757-fig5-v1.jpg)\n\n**Figure 5.:** Numerically obtained spatial patterning accuracy in units of average cell diameters $\\mu_{\\delta}$ at different positions in the tissue (symbols) and for different degrees of non-linearity (colours). (A\u2013C) Readout close to the source, at $x_{\\theta}=5\u2062\\mu_{\\delta}$; (D\u2013F) Readout far from the source, at $x_{\\theta}=150\u2062\\mu_{\\delta}$. Morphogen production scenarios are identical to Figure 4: Production in a source domain with morphogen-secreting cells (A,D), with a morphogen influx from the source at the source boundary (B,E), and with a specified morphogen concentration at the source boundary (C,F). Very low (high) influxes or amplitudes lead to flat (steep) gradients at strong decay non-linearity, limiting the parameter range over which the positional error can be reliably determined for $n=4$ (B,C,E,F). In all panels, each data point represents the mean from 103 independent simulations, error bars represent standard errors.\n\nFor high morphogen supply levels, non-linear decay leads to a smaller positional error close to the source (Figure 5A\u2013C). The effect is, however, substantially less pronounced in the model that includes a spatial morphogen source domain (Figure 5A) than in those that do not (Figure 5B and C), highlighting once again the limitations of the latter. With an explicit source domain, non-linear decay yields only marginally more spatial accuracy, when production is high ($p/dC_{ref}\u2a860.4$). Lower production levels increase the positional error close to the source substantially in all three models, reaching several cell diameters, for $n>1$. The gradients effectively flatten out at low production, reducing their usefulness for spatial tissue patterning. The stronger the non-linearity in the degradation, the more pronounced this loss of patterning precision.\n\nFurther away from the source, the benefit of non-linear decay is lost entirely, and exponential gradients remain more precise than shifted power-law gradients also at high morphogen supply levels (Figure 5D\u2013F).\n\nIn summary, simplified models without explicit representation of morphogen-secreting cells overestimate the beneficial impact of non-linear decay on patterning precision. In all models considered here, the benefit of non-linear morphogen decay is restricted to a close vicinity of the morphogen source, where patterning precision is high anyway (Vetter and Iber, 2022) and may thus not be as critical for robust development, and to a regime of very strong morphogen production. Further into the tissue, and at moderate morphogen abundance, linear decay yields more accurate patterning.\n\n## Discussion\n\nNon-linear morphogen decay was proposed as a potential precision-enhancing mechanism for tissue patterning in the seminal theoretical work by Eldar et al., 2003 in a deterministic setting, where morphogen gradients are devoid of noise. Here we have explored this idea with a stochastic model, taking noisy gradients into account, as they arise from cell-to-cell variability in morphogen kinetics. The surprising outcome of our quantitative analysis is that, while a small advantageous effect indeed exists near the morphogen source, this gain is outweighed by a substantial loss of precision in the spatial information that signalling gradients provide to cells in the interior and distal parts of a patterned tissue when morphogen decay is non-linear. In tissues that pose a diffusion barrier to the signalling molecule at their boundary, shifted power-law gradients that emerge with self-enhanced degradation, flatten out over a substantial portion of the spatial domain, whereas exponential gradients remain more graded (Figure 1). This leads to greater spatial precision with linear decay (Figure 3), and is contrary to the original expectation (Eldar et al., 2003).\n\nThis long-range boundary effect is not the only reason why linear morphogen decay is favourable for precise pattern formation. The positional error, which is the decisive quantity that measures the spatial accuracy with which cells can determine their location in the pattern, and ultimately their fate in differentiation, is highly sensitive to morphogen supply levels when morphogen decay is non-linear, but largely insensitive when decay is linear (Figure 5). This implies that patterning is more robust to variations in the size and strength of the morphogen-secreting source, if decay is linear. These results challenge the established view that power-law gradients buffer fluctuations in morphogen production (Eldar et al., 2003). We find that the positional error behaves in the opposite way, buffering production fluctuations only with linear, but not with non-linear decay. From an evolutionary perspective, the linear case may be favoured, as patterning precision is unaffected by changes in the size and kinetics of the morphogen-secreting source only if $n=1$.\n\nOur study demonstrates that a stochastic approach is required to quantify patterning precision of real noisy gradients. Moreover, we find the positional error to be overestimated in simplified models that replace the morphogen-secreting cells by a Neumann or Dirichlet boundary condition (Figure 4). Based on this, we recommend to include an explicit representation of the source in future theoretical or numerical work on the subject, as we did with Equation 6.\n\nDistinguishing exponential gradients from shifted power laws can be very difficult in practice, as they can appear similar over the short distances over which they can be reliably measured with classical imaging techniques. The FGF8 gradient in the developing mouse brain is the only case we are aware of where $n>1$ has been reported robustly (Chan et al., 2017), and whether this is linked to patterning precision in any way remains unclear. Available gradient data in other systems, such as Sonic Hedgehog and Bone Morphogenetic Protein in the neural tube (Zagorski et al., 2017), is too variable to confidently reject the hypothesis that $n=1$. Most further reports of morphogen gradient shapes (Gregor et al., 2007; Gregor et al., 2008; Kicheva et al., 2007; Wartlick et al., 2011; Wartlick et al., 2014; Cohen et al., 2015; Zagorski et al., 2017; Mateus et al., 2020) are consistent with exponentials within measurement accuracy. New measurement techniques are needed to determine whether non-linear decay is at work in the formation of known morphogen gradients during development. In light of our findings, a physiological role of non-linear ligand decay in patterning precision appears implausible. If anything, our data suggest an overall advantage of linear decay, also considering the evolutionary aspect of tissue size and protein synthesis rate differences between species.\n\nThe morphogen concentration declines significantly over several orders of magnitude, independent of whether there is linear or non-linear decay. At low morphogen concentrations, thermal fluctuations and stochastic binding kinetics of ligands and receptors will affect gradient and readout precision (Berg and Purcell, 1977; Lauffenburger and Linderman, 1996; Lander et al., 2009). Cells can, in principle, achieve high readout precision despite such fluctuations via spatial and temporal averaging (Lauffenburger and Linderman, 1996). To assess such effects, quantitative measurements of morphogen numbers and cellular responses would be required far away from the source. This requires the further development of more sensitive measurement technology (Lelek et al., 2021). Once the absolute concentration levels of the morphogen gradients can be determined, it can be assessed whether the approximation of the gradients by a continuous functions is valid along the whole tissue or, whether discrete models have to be considered.\n\nIn future work, the simulated gradients can be used as inputs to complex downstream networks, and the effect of noise in the readout can be studied. However, these downstream networks would not alter the relative precision of gradients generated by linear and non-linear decay. In conclusion, non-linear decay may slightly enhance precision close to the source, but it rapidly deteriorates far from the source.\n\n## Methods\n\n### Generation of variable morphogen gradients\n\nTo generate noisy morphogen gradients numerically, we constructed the one-dimensional cellular domains in an iterative process, cell by cell. For each cell $i$, an area $A_{i}$ was drawn from a log-normal distribution with specified mean value $\\mu_{A}$ and coefficient of variation $CV_{A}$ (Adelmann et al., 2022). The drawn area was then converted to a cell diameter $\\delta_{i}=2\u2062\\sqrt{A_{i}}/\\pi$. Using the transformation properties of log-normal distributions, the cell areas was drawn according to\n\n$$\n\\mu_{A}=\\pi(\\mu_{\\delta}/2)^{2}(1+CV_{A}^{2})^{1/4},\n$$\n\nallowing to accurately fix the mean cell diameter $\\mu_{\\delta}$. This procedure was repeated for cells $i=1,2,3\u2062\u2026$ until the sum of the diameters equaled the source length $L_{s}$ or the patterning domain length $L_{p}$. The spatial axis was then discretized into cellular sub-intervals accordingly (Figure 2). We used a patterning domain length of 200 cells ($L_{p}=200\u2062\\mu_{\\delta}$) and a source domain length of 5 cells ($L_{s}=5\u2062\\mu_{\\delta}$), unless otherwise stated.\n\nOnce the patterning axis was constructed, the kinetic parameters $p_{i},d_{i},D_{i}$, were drawn from log-normal distributions for each cell $i$ independently. For simulations without explicit source domain, a random morphogen influx j0 or an amplitude C0 was also drawn from a log-normal distribution. We then numerically solved Equation 6 using Matlab\u2019s built-in fourth-order boundary value problem solver bvp4c (version R2020b). At cell boundaries, we imposed continuity of both the morphogen concentration and flux. Repeating this procedure 103 times using independent random parameters and cell areas yielded statistically independent realisations of noisy morphogen gradients. To estimate the standard errors of the positional errors as shown in the plots, we used bootstrapping.\n\n### Choice of parameter distribution\n\nIn this article, we assume log-normally distributed cell areas and kinetic parameters, analogous to our previous works (Vetter and Iber, 2022; Adelmann et al., 2022). For the cell areas, this choice is rooted in the reported distributions of apical areas in the Drosophila larval and prepupal wing discs, and in the mouse neural tube (S\u00e1nchez-Guti\u00e9rrez et al., 2016; Guerrero et al., 2019). The results reported here are, however, largely independent of the probability distribution, as long as it satisfies certain physiological criteria:\n\nIn recent related work (Adelmann et al., 2022), we demonstrated that other distributions which fulfill the above criteria yield similar results.\n\nIf the morphogen source is not modeled explicitly (omitting the production term in Equation 6), the gradient amplitude or morphogen influx levels at the source boundary can serve as a proxy for the production of the morphogen. For these simulations, the amplitudes and fluxes were also drawn from log-normal distributions. The width of these distributions is controlled via their coefficients of variation, $CV_{C_{0}}$ or $CV_{j_{0}}$ as specified in the respective figures.\n",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "64cd8b52-2b01-4421-8a91-db91773d47ed",
+      "submission_id": "b7f5f975-a873-4a5e-b77e-61766a22bc6f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, https://ror.org/03czfpz43 Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84757.sa0](https://doi.org/10.7554/eLife.84757.sa0)\n\nThe authors use analytic calculations and numerical simulations to convincingly show that the purported benefits of nonlinear decay in morphogen gradients may be marginal in some cases and completely reversed in others (far from the concentration source). This is a valuable contribution to the field, as it questions common assumptions about the biological function of non-linear morphogen decays during development.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, https://ror.org/03czfpz43 Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84757.sa1](https://doi.org/10.7554/eLife.84757.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Patterning precision under non-linear morphogen decay and molecular noise\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Gordon J Berman as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAlthough the reviewers all agreed that the study was rigorously performed and reaches an interesting and valuable conclusion, the paper is difficult read for people unfamiliar with the current literature. The reviewers ask that the authors clarify the text of the article (see reviews below), allowing a reader uninformed in the field of morphogen gradient calculations (e.g., a biophysicist working in another field) to have an easier time understanding the key findings here.\n\nReviewer #1 (Recommendations for the authors):\n\nThese morphogens often serve as transcription factors to help set up other, also noisy, downstream morphogen gradients. Thus, it would be interesting to have the authors' comment on whether having a linear + a non-linear or a non-linear + a non-linear set of decay functionals might change the readout accuracy further away from the source. As these calculations might be time-consuming, I'm not specifically asking for them to be done, but it would be good to get the authors' take on the matter for the Discussion section.\n\nMy main concern with the submission is that the article is written in a very short format that is very difficult for someone outside the field (myself included) to read. All of the information was there and I was able to figure things out, but only with significant effort. I would recommend expanding the text somewhat and providing a bit more detail as to where previous mathematical approaches ended and where this one starts.\n\nReviewer #2 (Recommendations for the authors):\n\n1. This is a bit of author preference, but I find that I prefer a free-standing methods section as opposed to having them interleaved into the results, as they are now. I think the free-standing section allows for a bit more elaboration on details without detracting from the narrative.\n\n2. I generally found this paper a nice exploration of the question of how non-linear decay affects patterning. The paper is written in such a way that it may be challenging to read for those less familiar with the equations and conventions of mathematical modeling. If the authors wish to make the paper more accessible, I would suggest (in addition to the separation of methods) spending a bit more time defining the variables and parameters used throughout the paper, the justification for the different types of x/y axes used in the different graphs, and perhaps adding a cartoon or two illustrating a hypothetical tissue being patterned by a morphogen with some of the parameters/variables depicted. In addition, giving specific biological examples that correspond to some of the model considerations (e.g. boundary conditions) may be interesting for some readers.\n\n3. It might be interesting to add two points to the Discussion section. First, the simulations here explore the effect of parameter variation, which might be a good representation of, e.g. how genetic variability between individuals affects parameters and therefore patterning. However, even with consistent mean parameter values, molecular stochasticity can also impact these processes \u2013 is this worth exploring in future work? Second, given that most (all?) morphogens seem to operate in more complex regulatory networks, with features like opposing gradients or mutual inhibition of morphogen targets, might the interaction between non-linear decay and these other features be worth exploring in the future?\n\nReviewer #3 (Recommendations for the authors):\n\nI find that this paper is very hard to read. The results of this paper are interesting, but, as written, this paper will appeal to a very narrow audience of researchers who have worked or work on modeling the production/diffusion/degradation model of morphogen gradients. This stems from two reasons. First, there is a lack of conceptual explanation of what the relevant questions really are. The authors refer to a previous paper but do not explain what the arguments in that paper really were. As far as I understand, the previous paper claimed that the non-linear degradation will buffer against fluctuations in the levels of the source. That is interesting in principle, but there are other sources of noise and all of it is hard to get. I would urge the authors to rewrite their paper putting themselves in the shoes of someone who is not deeply familiar with all the details of the literature. The second reason why I find this paper confusing is that it is in part difficult to understand what the authors did. I had to check a previous paper to find some explanation of how molecular noise was introduced in the simulations. However, even after quickly checking that paper I remain confused about what the real assumptions were and how much I can trust the choice of parameters, etc. Again I would strongly recommend that the authors write a paper that is easier to read and contains all the relevant information.\n",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6c02ebc7-0dfa-4430-bf7f-3285b158ee10",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C1",
+      "claim": "Morphogen gradients can instruct cells about their position in a patterned tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphogen gradients can instruct cells about their position in a patterned tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement in the abstract that draws from established scientific consensus in developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "327c4a58-c974-478e-b317-370ce4456301",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C2",
+      "claim": "Non-linear morphogen decay has been suggested to increase gradient precision by reducing the sensitivity to variability in the morphogen source.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-linear morphogen decay has been suggested to increase gradient precision by reducing the sensitivity to variability in the morphogen source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior theoretical work, implicitly citing previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "17d6be57-6f23-4ddc-b2fe-60c445c0afca",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C3",
+      "claim": "Non-linear decay reduces the positional error close to the source.",
+      "claim_type": "EXPLICIT",
+      "source": "While we confirm that non-linear decay reduces the positional error close to the source, the reduction is very small for physiological noise levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cell-based simulations presented in the manuscript, as shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "e084198c-a116-49bc-8d2b-74964f967df0",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C4",
+      "claim": "The reduction in positional error from non-linear decay is very small for physiological noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While we confirm that non-linear decay reduces the positional error close to the source, the reduction is very small for physiological noise levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "72dc5a90-e161-4ecf-85d4-72ccb9dbe22f",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C5",
+      "claim": "Far from the source, the positional error is much larger for non-linear decay in tissues that pose a flux barrier to the morphogen at the boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Far from the source, the positional error is much larger for non-linear decay in tissues that pose a flux barrier to the morphogen at the boundary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the simulations shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "324f7c7f-431d-4181-a3d2-b9f5891f0b70",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C6",
+      "claim": "A physiological role of morphogen decay dynamics in patterning precision appears unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of this new data, a physiological role of morphogen decay dynamics in patterning precision appears unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "778b87c3-a906-4f27-b478-3a66f299249d",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C8",
+      "claim": "Readout positions mark the boundary locations between domains of different cell fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these readout positions mark the boundary locations between domains of different cell fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the French flag model described in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "fa1d90ff-07e9-4316-85df-0f15783f89d2",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C9",
+      "claim": "Variations in the morphogen profile result in variations in the readout positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Variations in the morphogen profile result in variations in the readout positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the French flag model and the definition of readout positions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "6a94a4db-63b0-4745-af1c-7c0bfd716447",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C10",
+      "claim": "The accuracy of the spatial information carried by morphogen gradients can be quantified with the positional error, defined as the standard deviation of the readout positions over different gradient realizations.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of the spatial information carried by morphogen gradients can be quantified with the positional error, which is defined as the standard deviation of the readout positions over different gradient realizations (Vetter and Iber, 2022):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This definition is cited from Vetter and Iber, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "b96074c1-9225-4347-8c7b-8de66f553b16",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C11",
+      "claim": "Morphogen dynamics are often described by reaction-diffusion equations of a specific form.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphogen dynamics are often described by reaction-diffusion equations of the form (Lander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement cites Lander et al., 2009 and describes a common modeling approach.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "0d2d0f66-65a3-430f-bfeb-1be6f4b1d2e9",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C12",
+      "claim": "Linear decay leads to exponential gradient profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear decay leads to exponential gradient profiles (Figure 1B) of the form (Lander et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Lander et al., 2002 and shown in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "199b0027-40cc-4eda-8c4a-6543eb9c6319",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C13",
+      "claim": "Non-linear decay results in shifted power-law gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-linear decay, on the other hand, results in shifted power-law gradients (Figure 1C; Eldar et al., 2003)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Eldar et al., 2003 and shown in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "4836a102-1b29-4f8e-8a03-1763fd481044",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C14",
+      "claim": "Non-linear decay would arise in case of cell lineage transport, when ligands interact with receptor clusters, or if ligand binding results in receptor upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-linear decay would for instance arise in case of cell lineage transport, when ligands interact with receptor clusters, or if ligand binding results in receptor upregulation, as is the case for several morphogens, most prominently for Hedgehog (Hh) (Eldar et al., 2003; Nahmad and Stathopoulos, 2009; Wartlick et al., 2009; Balaskas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations describing mechanisms that lead to non-linear decay.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "41bb4469-0012-4f46-b537-1b6acf9ca6e0",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C17",
+      "claim": "Embryos are subject to molecular noise, which can cause fluctuations in morphogen production and transport rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos are subject to molecular noise, which can cause fluctuations in morphogen production and transport rates, and consequently, in the gradient amplitudes and morphogen fluxes from the source to the patterned cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "3e031ed7-12be-4938-a2ca-01165fcebbbc",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C18",
+      "claim": "In the case of linear decay, the shift is only related to the relative morphogen influx or amplitude and not to the absolute morphogen levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of linear decay, the shift is only related to the relative morphogen influx or amplitude and not to the absolute morphogen levels (Appendix 1, Equation 11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from mathematical analysis presented in Appendix 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "3ebe4b54-be98-420a-9cf4-2072966fa539",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C19",
+      "claim": "With non-linear decay, the shift depends on the absolute levels, with higher influxes resulting in smaller shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with non-linear decay, the shift depends on the absolute levels, with higher influxes resulting in smaller shifts (Appendix 1, Equation 12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from mathematical analysis presented in Appendix 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "6fa6751b-714c-461c-ad0f-4ae064af182b",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C20",
+      "claim": "Previous research suggested that the circumstance that the shift vanishes for power-law gradients at sufficiently large morphogen influx values leads to more robust patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research (Eldar et al., 2003) suggested that the circumstance that this shift vanishes for power-law gradients at sufficiently large morphogen influx values leads to more robust patterning, because the readout position becomes independent of the influx in this limit when the morphogen decay is non-linear (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous theoretical work by Eldar et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "01bd3285-f2b0-46c1-b3f8-03a7a559afc6",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C21",
+      "claim": "Gradients that result from non-linear decay possess significantly shallower tails relative to higher concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the gradients that result from non-linear decay also possess significantly shallower tails, relative to the higher concentration (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and is a mathematical property of power-law gradients.",
+      "evidence_type": "[\"IMAGE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "aec90c04-2c47-4ced-a850-baa8f6df4778",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C22",
+      "claim": "The usefulness of non-linear decay gradients for patterning has been questioned.",
+      "claim_type": "EXPLICIT",
+      "source": "Their usefulness for patterning has therefore been questioned (Lander et al., 2009), and it has remained unclear whether nonlinearity in the morphogen decay would in fact help achieving higher positional accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites Lander et al., 2009 who questioned the utility of non-linear decay.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "eb42f335-072e-41fb-aa37-01d137d4b1fd",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C23",
+      "claim": "To first order, the positional error of variable gradients is inversely proportional to the magnitude of their slope.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, to first order, the positional error of variable gradients is inversely proportional to the magnitude of their slope (Gregor et al., 2007; Vetter and Iber, 2022) according to",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gregor et al., 2007 and Vetter and Iber, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "8adae9c3-50ed-42f3-99cb-a04d44cde786",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C25",
+      "claim": "The positional error of noisy morphogen gradients does not significantly improve with non-linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "With this quantitative statistical tool, we demonstrate numerically that the positional error of noisy morphogen gradients does not significantly improve with non-linear decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "d9793e09-ca8d-4b1f-a8c5-e2334d5a5d86",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C26",
+      "claim": "If the morphogen cannot leave the patterned tissue opposite of the source, the power-law gradients become shallow in a substantial part of the domain, leading to reduced positional accuracy with non-linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "In the contrary, if the morphogen cannot leave the patterned tissue opposite of the source, the power-law gradients become shallow in a substantial part of the domain, leading to reduced positional accuracy with non-linear decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "1da7a349-8523-43f2-85b6-82d95c55a1d3",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C29",
+      "claim": "The positional error increases with the square root of the cell diameter, irrespective of n.",
+      "claim_type": "EXPLICIT",
+      "source": "Much as for linear decay (Adelmann et al., 2022), the positional error scales with the square root of the mean cell diameter also for non-linear decay (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B and cites previous work.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "985987c8-4232-4157-8c15-6025e86ba0c0",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C30",
+      "claim": "Small cell diameters are important for high spatial precision also in case of non-linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Small cell diameters, as observed in all known tissues that employ gradient-based patterning (Adelmann et al., 2022), are therefore important for high spatial precision also in case of non-linear decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the scaling relationship shown in Figure 3B and cites Adelmann et al., 2022.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "5bff1021-81ab-41ae-93ed-882689fb21f5",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C31",
+      "claim": "The positional error increases from less than one cell diameter close to the source to about two cell diameters at a distance of 75 cell diameters away from the source.",
+      "claim_type": "EXPLICIT",
+      "source": "The positional error increases from less than one cell diameter close to the source to about two cell diameters at a distance of 75 cell diameters away from the source (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "43c6f544-11cc-4c35-9ef2-aaa53f8004db",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C32",
+      "claim": "Close to the distant domain boundary opposite of the source, the positional error rapidly increases for non-linear decay, while remaining relatively low for linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Close to the distant domain boundary opposite of the source, where a no-flux condition was imposed, the positional error rapidly increases for non-linear decay, while remaining relatively low for linear decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3C and is a key finding of the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "2d68a56e-1e8a-4259-872c-432bfd3dd726",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C35",
+      "claim": "The positional error drops in close vicinity to the source with stronger non-linearity in the decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of whether all parameters are varied or only the production rate, the positional error drops in close vicinity to the source with stronger non-linearity in the decay (insets of Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the insets of Figures 3C and D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "a4936707-2f05-4de3-813f-15d4cdda2ebe",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C37",
+      "claim": "Further away from the source, linear decay yields a smaller positional error than non-linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Further away from the source, linear decay yields a smaller positional error than non-linear decay (Figure 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 3D-E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "652c1d4b-3138-43fb-a3af-8d65ee1a579e",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C38",
+      "claim": "No matter how long the patterning domain is, non-linearity always increases the positional error as the distal tissue boundary is approached.",
+      "claim_type": "EXPLICIT",
+      "source": "No matter how long the patterning domain is, non-linearity always increases the positional error as the distal tissue boundary is approached (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "006537c3-4c8c-4951-b3b0-df7c6ebcb56a",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C41",
+      "claim": "Non-linear decay leads to greater positional errors at readout positions in the vicinity of the distal boundary compared to linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "By virtue of Equation 5, non-linear decay thus leads to greater positional errors at readout positions in the vicinity of the distal boundary compared to linear decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between gradient slope and positional error (Equation 5) and the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "d2547ad5-9bfe-4ba0-a289-98673acd957e",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C42",
+      "claim": "It is insufficient to quantify gradient robustness and patterning precision by considering variability in the morphogen production alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our computer simulations of noisy morphogen gradients suggest that it is insufficient to quantify gradient robustness and patterning precision by considering variability in the morphogen production alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "a3cc7113-c3ba-461b-be65-25d6d67ea8b3",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C43",
+      "claim": "If the morphogen cannot exit the patterning domain opposite of the source, shifted power-law gradients flatten over a significantly larger range than exponential gradients, leading to increased positional errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if the morphogen cannot exit the patterning domain opposite of the source, shifted power-law gradients that result from non-linear morphogen decay flatten over a significantly larger range than exponential gradients, leading to increased positional errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "40aed9ff-fafd-4c61-a800-2e50176dd539",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C44",
+      "claim": "The gain in positional accuracy close to the source for non-linear decay is negligible and therefore barely physiologically relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "The gain in positional accuracy close to the source for non-linear decay is negligible and therefore barely physiologically relevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the quantitative simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "05d01f7d-d6fd-496d-aad2-72ba28ea9af3",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C45",
+      "claim": "Overall, exponential gradients lead to more robust patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, exponential gradients lead to more robust patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "23799afd-a153-4036-9f41-b9fa840905d5",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C46",
+      "claim": "The gradient shapes and positional errors are overall very similar whether the morphogen source is represented by a spatial production domain, by a flux boundary condition, or by a fixed gradient amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are small quantitative differences, the gradient shapes (Figure 4A\u2013C) and positional errors (Figure 4D\u2013F) are overall very similar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 4A-F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "bb59f08c-4e83-4406-8ad5-f04974ba8999",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C48",
+      "claim": "Neumann or Dirichlet boundary conditions overestimate the positional error when the variability in the source is high.",
+      "claim_type": "EXPLICIT",
+      "source": "Neumann or Dirichlet boundary conditions thus overestimate the positional error when the variability in the source is high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing the results in Figures 4D-F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "a69a8e92-0c28-42a4-9338-c39504074e2e",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C49",
+      "claim": "A spatial source domain should explicitly be modeled, where applicable.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of using such boundary conditions, a spatial source domain should explicitly be modeled, where applicable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the comparison of different modeling approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "6489f3ff-e6e0-4d92-a9b1-a5d2746fe902",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C51",
+      "claim": "Molecular noise in morphogen degradation and diffusivity dominates the patterning precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular noise in morphogen degradation and diffusivity dominates the patterning precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the simulation results comparing different sources of variability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "d288f687-7d51-4b84-baf0-6cb06e9ed07b",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C52",
+      "claim": "The average morphogen production rate is expected to affect the patterning accuracy in the case of non-linear decay, but not for linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "As the gradient amplitude determines the sensitivity of the readout position to amplitude changes for non-linear decay (Appendix 1, Equation 12) but not for linear decay (Appendix 1, Equation 11), the average morphogen production rate is expected to affect the patterning accuracy in the case of non-linear decay, but not for linear decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on mathematical analysis in Appendix 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "c935f749-fd33-44a1-aaf9-f2658cba164b",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C53",
+      "claim": "Changes in morphogen production parameters have no effect on the positional error if morphogen degradation is linear.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in these parameters have no effect on the positional error if morphogen degradation is linear, which is consistent with the theory (Figure 5A\u2013F, blue lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 5A-F and is consistent with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "9746f7e8-2e65-4b8b-a8d3-f18f7aab1dbd",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C54",
+      "claim": "With non-linear decay, the positional error is highly dependent on morphogen abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "With non-linear decay, on the other hand, we indeed observe the positional error to be highly dependent on morphogen abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "dff81137-3f0e-43ed-9d33-26e9915cdc03",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C55",
+      "claim": "Precision arguments previously brought forward for deterministic morphogen gradients do not appear to directly quantitatively translate to the positional error in settings where cell-to-cell variability is included.",
+      "claim_type": "EXPLICIT",
+      "source": "Precision arguments previously brought forward for deterministic morphogen gradients (Eldar et al., 2003) do not appear to directly quantitatively translate to the positional error in settings where cell-to-cell variability is included, and where morphogen production remains at physiological levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the current stochastic results with previous deterministic theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "52db9e89-dba1-4218-a301-4ee6fb6d61d8",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C56",
+      "claim": "For high morphogen supply levels, non-linear decay leads to a smaller positional error close to the source.",
+      "claim_type": "EXPLICIT",
+      "source": "For high morphogen supply levels, non-linear decay leads to a smaller positional error close to the source (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 5A-C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "5b6a4ba5-12f3-44c0-900a-6498411aa827",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C57",
+      "claim": "The effect of non-linear decay on positional error is substantially less pronounced in the model that includes a spatial morphogen source domain than in those that do not.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect is, however, substantially less pronounced in the model that includes a spatial morphogen source domain (Figure 5A) than in those that do not (Figure 5B and C), highlighting once again the limitations of the latter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing Figures 5A with 5B and 5C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "fc3084f1-4088-477d-b706-61011f391008",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C60",
+      "claim": "The gradients effectively flatten out at low production, reducing their usefulness for spatial tissue patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "The gradients effectively flatten out at low production, reducing their usefulness for spatial tissue patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results showing increased positional error at low production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "bf6bb952-6637-4512-9f05-80bae116515f",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C61",
+      "claim": "The stronger the non-linearity in the degradation, the more pronounced the loss of patterning precision at low production.",
+      "claim_type": "EXPLICIT",
+      "source": "The stronger the non-linearity in the degradation, the more pronounced this loss of patterning precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "284ae018-2f05-4dff-a672-5fa6524f0b00",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C62",
+      "claim": "Further away from the source, the benefit of non-linear decay is lost entirely, and exponential gradients remain more precise than shifted power-law gradients also at high morphogen supply levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Further away from the source, the benefit of non-linear decay is lost entirely, and exponential gradients remain more precise than shifted power-law gradients also at high morphogen supply levels (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 5D-F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "a9bc352c-c494-4ba2-aa73-a8457c6bbd65",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C63",
+      "claim": "Simplified models without explicit representation of morphogen-secreting cells overestimate the beneficial impact of non-linear decay on patterning precision.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, simplified models without explicit representation of morphogen-secreting cells overestimate the beneficial impact of non-linear decay on patterning precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing the different modeling approaches in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "2e50926e-b559-4c04-b23d-690aabaab06f",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C64",
+      "claim": "The benefit of non-linear morphogen decay is restricted to a close vicinity of the morphogen source, where patterning precision is high anyway, and to a regime of very strong morphogen production.",
+      "claim_type": "EXPLICIT",
+      "source": "In all models considered here, the benefit of non-linear morphogen decay is restricted to a close vicinity of the morphogen source, where patterning precision is high anyway (Vetter and Iber, 2022) and may thus not be as critical for robust development, and to a regime of very strong morphogen production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the simulation results and cites Vetter and Iber, 2022.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "bd1633a8-5240-4784-b492-5e246f9096c1",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C65",
+      "claim": "Further into the tissue, and at moderate morphogen abundance, linear decay yields more accurate patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Further into the tissue, and at moderate morphogen abundance, linear decay yields more accurate patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "10f3f88e-e985-47bd-aac8-3dfa8df8eb6e",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C66",
+      "claim": "While a small advantageous effect of non-linear decay exists near the morphogen source, this gain is outweighed by a substantial loss of precision in the interior and distal parts of a patterned tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The surprising outcome of our quantitative analysis is that, while a small advantageous effect indeed exists near the morphogen source, this gain is outweighed by a substantial loss of precision in the spatial information that signalling gradients provide to cells in the interior and distal parts of a patterned tissue when morphogen decay is non-linear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the quantitative analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "7036edeb-db5a-43f4-a7c0-5b69547eb619",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C67",
+      "claim": "In tissues that pose a diffusion barrier to the signalling molecule at their boundary, shifted power-law gradients flatten out over a substantial portion of the spatial domain, whereas exponential gradients remain more graded.",
+      "claim_type": "EXPLICIT",
+      "source": "In tissues that pose a diffusion barrier to the signalling molecule at their boundary, shifted power-law gradients that emerge with self-enhanced degradation, flatten out over a substantial portion of the spatial domain, whereas exponential gradients remain more graded (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and is a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "45343431-5eae-4d08-8ef1-1a90127ed908",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C68",
+      "claim": "The flattening of power-law gradients leads to greater spatial precision with linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to greater spatial precision with linear decay (Figure 3), and is contrary to the original expectation (Eldar et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3 and contradicts previous theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "a7cb0850-a444-4945-9c3d-6e967d56a851",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C69",
+      "claim": "The positional error is highly sensitive to morphogen supply levels when morphogen decay is non-linear, but largely insensitive when decay is linear.",
+      "claim_type": "EXPLICIT",
+      "source": "The positional error, which is the decisive quantity that measures the spatial accuracy with which cells can determine their location in the pattern, and ultimately their fate in differentiation, is highly sensitive to morphogen supply levels when morphogen decay is non-linear, but largely insensitive when decay is linear (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "6fe9e304-3fad-4d98-967c-ee7f13366232",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C70",
+      "claim": "Patterning is more robust to variations in the size and strength of the morphogen-secreting source if decay is linear.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that patterning is more robust to variations in the size and strength of the morphogen-secreting source, if decay is linear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the finding that positional error is insensitive to morphogen supply with linear decay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "0bac5d94-877c-4fe4-b7de-0cb3ca90e1bb",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C71",
+      "claim": "The results challenge the established view that power-law gradients buffer fluctuations in morphogen production.",
+      "claim_type": "EXPLICIT",
+      "source": "These results challenge the established view that power-law gradients buffer fluctuations in morphogen production (Eldar et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion that contradicts previous theoretical work cited.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "80134cc8-c177-4282-b240-53bcbdd5b27a",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C72",
+      "claim": "The positional error buffers production fluctuations only with linear, but not with non-linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the positional error behaves in the opposite way, buffering production fluctuations only with linear, but not with non-linear decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "b6e86ec1-da3b-4a7b-a03e-d0469fbd85d9",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C74",
+      "claim": "A stochastic approach is required to quantify patterning precision of real noisy gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrates that a stochastic approach is required to quantify patterning precision of real noisy gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "e56d7682-4910-4eed-b016-6ddd88bd0f19",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C75",
+      "claim": "The positional error is overestimated in simplified models that replace the morphogen-secreting cells by a Neumann or Dirichlet boundary condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find the positional error to be overestimated in simplified models that replace the morphogen-secreting cells by a Neumann or Dirichlet boundary condition (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "6dbf4299-6cfd-48c0-a4eb-c1738ca2599d",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C76",
+      "claim": "An explicit representation of the source should be included in future theoretical or numerical work on the subject.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this, we recommend to include an explicit representation of the source in future theoretical or numerical work on the subject, as we did with Equation 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "dac22d15-b203-4e13-9dff-a7527a39665f",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C77",
+      "claim": "Distinguishing exponential gradients from shifted power laws can be very difficult in practice.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinguishing exponential gradients from shifted power laws can be very difficult in practice, as they can appear similar over the short distances over which they can be reliably measured with classical imaging techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental limitations based on knowledge of measurement techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "7e9e0c41-6662-4960-81d9-82700b6c6dd0",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C80",
+      "claim": "Most further reports of morphogen gradient shapes are consistent with exponentials within measurement accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Most further reports of morphogen gradient shapes (Gregor et al., 2007; Gregor et al., 2008; Kicheva et al., 2007; Wartlick et al., 2011; Wartlick et al., 2014; Cohen et al., 2015; Zagorski et al., 2017; Mateus et al., 2020) are consistent with exponentials within measurement accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites multiple experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "06fee2b0-faac-45aa-bfa1-da7a67ccdfe2",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C81",
+      "claim": "New measurement techniques are needed to determine whether non-linear decay is at work in the formation of known morphogen gradients during development.",
+      "claim_type": "EXPLICIT",
+      "source": "New measurement techniques are needed to determine whether non-linear decay is at work in the formation of known morphogen gradients during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the limitations of current measurement techniques.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "4283ae28-05aa-4271-b4d8-754f5f6d973a",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C82",
+      "claim": "The data suggest an overall advantage of linear decay, also considering the evolutionary aspect of tissue size and protein synthesis rate differences between species.",
+      "claim_type": "EXPLICIT",
+      "source": "If anything, our data suggest an overall advantage of linear decay, also considering the evolutionary aspect of tissue size and protein synthesis rate differences between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion and speculation based on the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "985ad4fd-9933-4e9f-b2bd-9450cc95443b",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C83",
+      "claim": "The morphogen concentration declines significantly over several orders of magnitude, independent of whether there is linear or non-linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphogen concentration declines significantly over several orders of magnitude, independent of whether there is linear or non-linear decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the figures and is a property of both types of gradients.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "05cfdc0c-600b-4f22-bdd4-a6173bdbb8f2",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C84",
+      "claim": "At low morphogen concentrations, thermal fluctuations and stochastic binding kinetics of ligands and receptors will affect gradient and readout precision.",
+      "claim_type": "EXPLICIT",
+      "source": "At low morphogen concentrations, thermal fluctuations and stochastic binding kinetics of ligands and receptors will affect gradient and readout precision (Berg and Purcell, 1977; Lauffenburger and Linderman, 1996; Lander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites theoretical work on molecular fluctuations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "34b201a0-8746-41a8-8ea7-eccd550542eb",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C85",
+      "claim": "Cells can, in principle, achieve high readout precision despite fluctuations via spatial and temporal averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells can, in principle, achieve high readout precision despite such fluctuations via spatial and temporal averaging (Lauffenburger and Linderman, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites theoretical work on cellular averaging mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "a1312d8c-e587-406c-95cb-94d3d8f8ff77",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C86",
+      "claim": "Quantitative measurements of morphogen numbers and cellular responses would be required far away from the source to assess effects of low concentration fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess such effects, quantitative measurements of morphogen numbers and cellular responses would be required far away from the source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what would be needed for future experimental work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "e48906fb-af6d-49ab-ad6f-cc2ae5dc6192",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C87",
+      "claim": "More sensitive measurement technology needs to be developed to measure morphogen concentrations far from the source.",
+      "claim_type": "EXPLICIT",
+      "source": "This requires the further development of more sensitive measurement technology (Lelek et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites work on measurement technology and identifies a need for future development.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "63583ebf-3cca-44ca-8850-6a86c1bbaef5",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C88",
+      "claim": "Once absolute concentration levels can be determined, it can be assessed whether the approximation of gradients by continuous functions is valid along the whole tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the absolute concentration levels of the morphogen gradients can be determined, it can be assessed whether the approximation of the gradients by a continuous functions is valid along the whole tissue or, whether discrete models have to be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future work that would be enabled by better measurements.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "7799f150-f612-4028-9e41-404a5f45a1f4",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C89",
+      "claim": "Downstream networks would not alter the relative precision of gradients generated by linear and non-linear decay.",
+      "claim_type": "EXPLICIT",
+      "source": "In future work, the simulated gradients can be used as inputs to complex downstream networks, and the effect of noise in the readout can be studied. However, these downstream networks would not alter the relative precision of gradients generated by linear and non-linear decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future work and its expected outcomes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "b3e01e86-456c-447c-8826-9c1bd2e72e06",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C90",
+      "claim": "Non-linear decay may slightly enhance precision close to the source, but it rapidly deteriorates far from the source.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, non-linear decay may slightly enhance precision close to the source, but it rapidly deteriorates far from the source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the final conclusion summarizing the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "0bf2ef4c-054c-4f2c-8034-528eb5654210",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C92",
+      "claim": "Zero-flux boundary conditions were used at both outer ends of the tissue, mimicking a situation in which morphogen molecules are restricted to the patterned tissue by an impermeable boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Zero-flux boundary conditions were used at both outer ends of the tissue, mimicking a situation in which morphogen molecules are restricted to the patterned tissue by an impermeable boundary:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "aa2e82db-d284-4cfe-a85b-70d036660b06",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "claim_id": "C94",
+      "claim": "The readout mechanism has little impact on the gradient precision perceived by the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study, we found that the readout mechanism has little impact on the gradient precision perceived by the cells (Adelmann et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "56eac16c-a30e-4929-bfc0-64646963b20a",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Non-linear decay reduces positional error close to the morphogen source, but the reduction is very small (<20% of a cell diameter from n=1 to n=4) for physiological noise levels and is therefore barely physiologically relevant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C35, and C44 collectively demonstrate that while non-linear decay does reduce positional error near the source (shown in Figure 3C-D insets), the magnitude of this reduction is negligible at physiological noise levels. The quantitative simulation data directly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "e685e2d5-f927-4700-9481-7908e6308788",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Far from the source, non-linear decay leads to substantially larger positional errors than linear decay in tissues with no-flux boundary conditions, because power-law gradients flatten over a larger spatial range than exponential gradients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C26, C32, C37, C38, C41, C43, and C67 are consistently supported by simulation data shown in Figures 3C-F and Figure 1. The mechanism (gradient flattening near boundaries) is explained through Equation 5 relating slope to positional error, providing both empirical and theoretical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "9ada1e46-1c49-4040-ab96-3afbe63d2aad",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Overall, exponential gradients (linear decay) lead to more robust patterning than power-law gradients (non-linear decay) when considering noisy morphogen gradients, contrary to previous deterministic predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C45, C66, C68, and C90 represent the main conclusion of the study, supported by comprehensive simulation data across multiple figures (Figures 3-5). This conclusion integrates findings from both near-source and far-from-source regions and is well-supported by the quantitative analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "9a7b7d51-e9e4-464a-887b-30804200ae57",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The positional error scales with the square root of mean cell diameter for both linear and non-linear decay, indicating that small cell diameters are important for high spatial precision regardless of decay mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C30 are directly supported by Figure 3B showing the square root scaling relationship. This extends previous findings (Adelmann et al., 2022) to the non-linear decay case and is well-demonstrated empirically.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "97b75840-a317-4774-857b-13a76dce8bcf",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "With linear decay, positional error is insensitive to morphogen production levels, while with non-linear decay it is highly sensitive to morphogen abundance. This means linear decay buffers production fluctuations while non-linear decay does not, challenging the established view.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, C69, C70, C71, and C72 are strongly supported by Figure 5 showing differential sensitivity to production parameters. The theoretical basis is provided in Appendix 1 (Equations 11-12), and the empirical data clearly demonstrates the contrasting behavior between linear and non-linear decay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "72cee836-8981-4027-9f0c-0e535af11c44",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Simplified models using Neumann or Dirichlet boundary conditions overestimate positional error compared to models with explicit spatial source domains, particularly at high source variability. Explicit source representation should be included in future modeling work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C48, C49, C63, C75, and C76 are supported by Figure 4 comparing the three modeling approaches. The quantitative differences are documented, and the recommendation for explicit source modeling is justified by the demonstrated overestimation in simplified models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "91159756-a58c-41df-af9f-964df786710d",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Molecular noise in morphogen degradation and diffusivity dominates patterning precision, and it is insufficient to quantify gradient robustness by considering variability in morphogen production alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51 and C42 are supported by comparing simulation results with different sources of variability (Figures 3-4). The data shows that degradation and diffusivity noise have larger effects than production noise alone, supporting this methodological conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "79d0ae70-867a-43a0-89a0-6dcb204adb65",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At high morphogen supply levels, non-linear decay provides marginal benefit close to the source, but this effect is less pronounced with explicit source domains and is lost entirely further from the source where linear decay yields more accurate patterning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C57, C62, C64, and C65 are supported by Figure 5A-F showing position-dependent and production-level-dependent effects. The data demonstrates the limited spatial and parametric regime where non-linear decay provides any advantage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "27ee405c-1eb3-4ad1-8168-d17f93c01d48",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Stochastic modeling is required to quantify patterning precision of noisy gradients, as deterministic precision arguments do not directly translate to positional error in settings with cell-to-cell variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C71, and C74 represent a key methodological finding supported by the discrepancy between current stochastic results and previous deterministic predictions (Eldar et al., 2003). The comparison demonstrates the necessity of stochastic approaches for realistic noise modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "84f9649b-c746-4ee8-9025-5a434dcfd058",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "At low morphogen production levels, gradients with non-linear decay flatten substantially, reducing their usefulness for spatial patterning, with stronger non-linearity causing more pronounced loss of precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C61 are supported by Figure 5A-C showing increased positional error at low production levels for non-linear decay. The dose-dependent relationship between non-linearity strength and precision loss is clearly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "7ff35cc5-43e6-4971-b0df-bc7b617698cd",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Distinguishing exponential from power-law gradients is experimentally difficult with current imaging techniques, most reported gradients are consistent with exponentials, and new measurement techniques are needed to determine if non-linear decay operates in developmental systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C80, and C81 are supported by citations to multiple experimental studies and discussion of measurement limitations. The assessment of experimental evidence and technical constraints is reasonable and well-referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "aa3bb1f5-ab02-403f-bbde-0c2627d67c51",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A physiological role of morphogen decay dynamics in patterning precision appears unlikely, with data suggesting an overall advantage of linear decay from evolutionary and functional perspectives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C82 represent the overarching conclusion integrating all simulation results. While C82 includes some speculation about evolutionary aspects, the core conclusion about the unlikely physiological role of non-linear decay is well-supported by the comprehensive simulation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "7dba6ef9-41c7-4722-86a1-f4a585e058f8",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Morphogen gradients instruct cells about position via concentration thresholds (French flag model), with positional error quantified as the standard deviation of readout positions across gradient realizations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8, C9, and C10 establish the foundational framework and definitions used throughout the study. These are well-established concepts in developmental biology (C1, C8, C9) and the positional error definition (C10) is properly cited to Vetter and Iber, 2022.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "56dbc959-ca5b-41d2-ad50-4123b14a4b3d",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Morphogen dynamics are described by reaction-diffusion equations where linear decay (n=1) produces exponential gradients and non-linear decay (n>1) produces shifted power-law gradients, with non-linear decay arising from mechanisms like receptor clustering or ligand-induced receptor upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C12, C13, and C14 describe established mathematical models with appropriate citations (Lander et al., 2009; Lander et al., 2002; Eldar et al., 2003) and are supported by Figure 1B-C. The biological mechanisms for non-linear decay are well-referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "21e2fac9-baac-4215-b85e-f930cd43d9d6",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "For linear decay, readout position shifts depend only on relative morphogen levels, while for non-linear decay they depend on absolute levels with higher influxes producing smaller shifts. Previous work suggested this leads to more robust patterning, and positional error is inversely proportional to gradient slope.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, C20, and C23 describe theoretical predictions from prior work (Appendix 1, Eldar et al., 2003, Gregor et al., 2007) that motivate the current study. These are properly cited and mathematically derived, providing the theoretical foundation for the simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "4ae70c07-32e0-4762-b5b4-f21e1974714b",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The positional error increases from less than one cell diameter close to the source to about two cell diameters at 75 cell diameters from the source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is directly supported by Figure 3C showing the spatial profile of positional error. This is a straightforward empirical observation from the simulation data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "3dd64802-2b05-4e03-80e3-0de458130701",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Morphogen concentrations decline over several orders of magnitude regardless of decay type. At low concentrations, thermal fluctuations affect precision, but cells can achieve high precision via averaging. Future work requires more sensitive measurement technology to assess these effects and validate continuous function approximations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 discuss limitations and future directions. C83 is supported by the figures, C84-C85 are properly cited to theoretical work, and C86-C88 represent reasonable recommendations for future experimental work based on current limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "ac5bbf78-20b7-4abb-8044-57419c583521",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Downstream signaling networks would not alter the relative precision of gradients generated by linear versus non-linear decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is speculative about future work without supporting evidence. While the reasoning may be plausible, no data or analysis is provided to support this assertion about how downstream networks would or would not affect relative precision.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "b014fdd1-ef2b-457c-8650-d9c7d397ef70",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The computational model uses zero-flux boundary conditions at tissue ends and assumes cells average morphogen concentration over their surface, with previous work showing readout mechanism has little impact on gradient precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92 and C94 describe methodological choices in the model. C92 is clearly stated as a model assumption, and C94 cites previous work (Adelmann et al., 2022) justifying the choice of readout mechanism, making these methodological decisions well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "20313b47-a771-4d98-94ba-c0e50611e461",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior theoretical work suggested non-linear decay increases gradient precision by reducing sensitivity to source variability, but the shallower tails of power-law gradients led others to question their usefulness for patterning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20, C21, and C22 accurately summarize prior work (Eldar et al., 2003; Lander et al., 2009) that motivated this study. The citations are appropriate and the characterization of the debate in the field is fair and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "ade74eed-2205-4ce0-abde-b0288f31ae2c",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Embryos are subject to molecular noise causing fluctuations in morphogen production and transport rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 states established knowledge about biological systems and molecular noise. This is a well-accepted principle in developmental biology and provides justification for the stochastic modeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    },
+    {
+      "id": "25f55152-6a2a-4454-9ae1-8d61aa5cab21",
+      "content_id": "c9cd79d5-a0e6-47fd-bc15-fe3d812a57e3",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The average morphogen production rate is theoretically expected to affect patterning accuracy for non-linear but not linear decay based on mathematical analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is a theoretical prediction derived from mathematical analysis in Appendix 1 (Equations 11-12). This prediction is subsequently tested and confirmed in the simulations (Figure 5), making it well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:39:58.151748Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "17d6be57-6f23-4ddc-b2fe-60c445c0afca",
+      "result_id": "56eac16c-a30e-4929-bfc0-64646963b20a"
+    },
+    {
+      "claim_id": "e084198c-a116-49bc-8d2b-74964f967df0",
+      "result_id": "56eac16c-a30e-4929-bfc0-64646963b20a"
+    },
+    {
+      "claim_id": "2d68a56e-1e8a-4259-872c-432bfd3dd726",
+      "result_id": "56eac16c-a30e-4929-bfc0-64646963b20a"
+    },
+    {
+      "claim_id": "40aed9ff-fafd-4c61-a800-2e50176dd539",
+      "result_id": "56eac16c-a30e-4929-bfc0-64646963b20a"
+    },
+    {
+      "claim_id": "72dc5a90-e161-4ecf-85d4-72ccb9dbe22f",
+      "result_id": "e685e2d5-f927-4700-9481-7908e6308788"
+    },
+    {
+      "claim_id": "d9793e09-ca8d-4b1f-a8c5-e2334d5a5d86",
+      "result_id": "e685e2d5-f927-4700-9481-7908e6308788"
+    },
+    {
+      "claim_id": "43c6f544-11cc-4c35-9ef2-aaa53f8004db",
+      "result_id": "e685e2d5-f927-4700-9481-7908e6308788"
+    },
+    {
+      "claim_id": "a4936707-2f05-4de3-813f-15d4cdda2ebe",
+      "result_id": "e685e2d5-f927-4700-9481-7908e6308788"
+    },
+    {
+      "claim_id": "652c1d4b-3138-43fb-a3af-8d65ee1a579e",
+      "result_id": "e685e2d5-f927-4700-9481-7908e6308788"
+    },
+    {
+      "claim_id": "006537c3-4c8c-4951-b3b0-df7c6ebcb56a",
+      "result_id": "e685e2d5-f927-4700-9481-7908e6308788"
+    },
+    {
+      "claim_id": "a3cc7113-c3ba-461b-be65-25d6d67ea8b3",
+      "result_id": "e685e2d5-f927-4700-9481-7908e6308788"
+    },
+    {
+      "claim_id": "7036edeb-db5a-43f4-a7c0-5b69547eb619",
+      "result_id": "e685e2d5-f927-4700-9481-7908e6308788"
+    },
+    {
+      "claim_id": "8adae9c3-50ed-42f3-99cb-a04d44cde786",
+      "result_id": "9ada1e46-1c49-4040-ab96-3afbe63d2aad"
+    },
+    {
+      "claim_id": "05d01f7d-d6fd-496d-aad2-72ba28ea9af3",
+      "result_id": "9ada1e46-1c49-4040-ab96-3afbe63d2aad"
+    },
+    {
+      "claim_id": "10f3f88e-e985-47bd-aac8-3dfa8df8eb6e",
+      "result_id": "9ada1e46-1c49-4040-ab96-3afbe63d2aad"
+    },
+    {
+      "claim_id": "45343431-5eae-4d08-8ef1-1a90127ed908",
+      "result_id": "9ada1e46-1c49-4040-ab96-3afbe63d2aad"
+    },
+    {
+      "claim_id": "b3e01e86-456c-447c-8826-9c1bd2e72e06",
+      "result_id": "9ada1e46-1c49-4040-ab96-3afbe63d2aad"
+    },
+    {
+      "claim_id": "1da7a349-8523-43f2-85b6-82d95c55a1d3",
+      "result_id": "9a7b7d51-e9e4-464a-887b-30804200ae57"
+    },
+    {
+      "claim_id": "985987c8-4232-4157-8c15-6025e86ba0c0",
+      "result_id": "9a7b7d51-e9e4-464a-887b-30804200ae57"
+    },
+    {
+      "claim_id": "c935f749-fd33-44a1-aaf9-f2658cba164b",
+      "result_id": "97b75840-a317-4774-857b-13a76dce8bcf"
+    },
+    {
+      "claim_id": "9746f7e8-2e65-4b8b-a8d3-f18f7aab1dbd",
+      "result_id": "97b75840-a317-4774-857b-13a76dce8bcf"
+    },
+    {
+      "claim_id": "a7cb0850-a444-4945-9c3d-6e967d56a851",
+      "result_id": "97b75840-a317-4774-857b-13a76dce8bcf"
+    },
+    {
+      "claim_id": "6fe9e304-3fad-4d98-967c-ee7f13366232",
+      "result_id": "97b75840-a317-4774-857b-13a76dce8bcf"
+    },
+    {
+      "claim_id": "0bac5d94-877c-4fe4-b7de-0cb3ca90e1bb",
+      "result_id": "97b75840-a317-4774-857b-13a76dce8bcf"
+    },
+    {
+      "claim_id": "80134cc8-c177-4282-b240-53bcbdd5b27a",
+      "result_id": "97b75840-a317-4774-857b-13a76dce8bcf"
+    },
+    {
+      "claim_id": "23799afd-a153-4036-9f41-b9fa840905d5",
+      "result_id": "72cee836-8981-4027-9f0c-0e535af11c44"
+    },
+    {
+      "claim_id": "bb59f08c-4e83-4406-8ad5-f04974ba8999",
+      "result_id": "72cee836-8981-4027-9f0c-0e535af11c44"
+    },
+    {
+      "claim_id": "a69a8e92-0c28-42a4-9338-c39504074e2e",
+      "result_id": "72cee836-8981-4027-9f0c-0e535af11c44"
+    },
+    {
+      "claim_id": "a9bc352c-c494-4ba2-aa73-a8457c6bbd65",
+      "result_id": "72cee836-8981-4027-9f0c-0e535af11c44"
+    },
+    {
+      "claim_id": "e56d7682-4910-4eed-b016-6ddd88bd0f19",
+      "result_id": "72cee836-8981-4027-9f0c-0e535af11c44"
+    },
+    {
+      "claim_id": "6dbf4299-6cfd-48c0-a4eb-c1738ca2599d",
+      "result_id": "72cee836-8981-4027-9f0c-0e535af11c44"
+    },
+    {
+      "claim_id": "6489f3ff-e6e0-4d92-a9b1-a5d2746fe902",
+      "result_id": "91159756-a58c-41df-af9f-964df786710d"
+    },
+    {
+      "claim_id": "d2547ad5-9bfe-4ba0-a289-98673acd957e",
+      "result_id": "91159756-a58c-41df-af9f-964df786710d"
+    },
+    {
+      "claim_id": "52db9e89-dba1-4218-a301-4ee6fb6d61d8",
+      "result_id": "79d0ae70-867a-43a0-89a0-6dcb204adb65"
+    },
+    {
+      "claim_id": "5b6a4ba5-12f3-44c0-900a-6498411aa827",
+      "result_id": "79d0ae70-867a-43a0-89a0-6dcb204adb65"
+    },
+    {
+      "claim_id": "284ae018-2f05-4dff-a672-5fa6524f0b00",
+      "result_id": "79d0ae70-867a-43a0-89a0-6dcb204adb65"
+    },
+    {
+      "claim_id": "2e50926e-b559-4c04-b23d-690aabaab06f",
+      "result_id": "79d0ae70-867a-43a0-89a0-6dcb204adb65"
+    },
+    {
+      "claim_id": "bd1633a8-5240-4784-b492-5e246f9096c1",
+      "result_id": "79d0ae70-867a-43a0-89a0-6dcb204adb65"
+    },
+    {
+      "claim_id": "dff81137-3f0e-43ed-9d33-26e9915cdc03",
+      "result_id": "27ee405c-1eb3-4ad1-8168-d17f93c01d48"
+    },
+    {
+      "claim_id": "0bac5d94-877c-4fe4-b7de-0cb3ca90e1bb",
+      "result_id": "27ee405c-1eb3-4ad1-8168-d17f93c01d48"
+    },
+    {
+      "claim_id": "b6e86ec1-da3b-4a7b-a03e-d0469fbd85d9",
+      "result_id": "27ee405c-1eb3-4ad1-8168-d17f93c01d48"
+    },
+    {
+      "claim_id": "fc3084f1-4088-477d-b706-61011f391008",
+      "result_id": "84f9649b-c746-4ee8-9025-5a434dcfd058"
+    },
+    {
+      "claim_id": "bf6bb952-6637-4512-9f05-80bae116515f",
+      "result_id": "84f9649b-c746-4ee8-9025-5a434dcfd058"
+    },
+    {
+      "claim_id": "dac22d15-b203-4e13-9dff-a7527a39665f",
+      "result_id": "7ff35cc5-43e6-4971-b0df-bc7b617698cd"
+    },
+    {
+      "claim_id": "7e9e0c41-6662-4960-81d9-82700b6c6dd0",
+      "result_id": "7ff35cc5-43e6-4971-b0df-bc7b617698cd"
+    },
+    {
+      "claim_id": "06fee2b0-faac-45aa-bfa1-da7a67ccdfe2",
+      "result_id": "7ff35cc5-43e6-4971-b0df-bc7b617698cd"
+    },
+    {
+      "claim_id": "324f7c7f-431d-4181-a3d2-b9f5891f0b70",
+      "result_id": "aa3bb1f5-ab02-403f-bbde-0c2627d67c51"
+    },
+    {
+      "claim_id": "4283ae28-05aa-4271-b4d8-754f5f6d973a",
+      "result_id": "aa3bb1f5-ab02-403f-bbde-0c2627d67c51"
+    },
+    {
+      "claim_id": "6c02ebc7-0dfa-4430-bf7f-3285b158ee10",
+      "result_id": "7dba6ef9-41c7-4722-86a1-f4a585e058f8"
+    },
+    {
+      "claim_id": "778b87c3-a906-4f27-b478-3a66f299249d",
+      "result_id": "7dba6ef9-41c7-4722-86a1-f4a585e058f8"
+    },
+    {
+      "claim_id": "fa1d90ff-07e9-4316-85df-0f15783f89d2",
+      "result_id": "7dba6ef9-41c7-4722-86a1-f4a585e058f8"
+    },
+    {
+      "claim_id": "6a94a4db-63b0-4745-af1c-7c0bfd716447",
+      "result_id": "7dba6ef9-41c7-4722-86a1-f4a585e058f8"
+    },
+    {
+      "claim_id": "b96074c1-9225-4347-8c7b-8de66f553b16",
+      "result_id": "56dbc959-ca5b-41d2-ad50-4123b14a4b3d"
+    },
+    {
+      "claim_id": "0d2d0f66-65a3-430f-bfeb-1be6f4b1d2e9",
+      "result_id": "56dbc959-ca5b-41d2-ad50-4123b14a4b3d"
+    },
+    {
+      "claim_id": "199b0027-40cc-4eda-8c4a-6543eb9c6319",
+      "result_id": "56dbc959-ca5b-41d2-ad50-4123b14a4b3d"
+    },
+    {
+      "claim_id": "4836a102-1b29-4f8e-8a03-1763fd481044",
+      "result_id": "56dbc959-ca5b-41d2-ad50-4123b14a4b3d"
+    },
+    {
+      "claim_id": "3e031ed7-12be-4938-a2ca-01165fcebbbc",
+      "result_id": "21e2fac9-baac-4215-b85e-f930cd43d9d6"
+    },
+    {
+      "claim_id": "3ebe4b54-be98-420a-9cf4-2072966fa539",
+      "result_id": "21e2fac9-baac-4215-b85e-f930cd43d9d6"
+    },
+    {
+      "claim_id": "6fa6751b-714c-461c-ad0f-4ae064af182b",
+      "result_id": "21e2fac9-baac-4215-b85e-f930cd43d9d6"
+    },
+    {
+      "claim_id": "eb42f335-072e-41fb-aa37-01d137d4b1fd",
+      "result_id": "21e2fac9-baac-4215-b85e-f930cd43d9d6"
+    },
+    {
+      "claim_id": "5bff1021-81ab-41ae-93ed-882689fb21f5",
+      "result_id": "4ae70c07-32e0-4762-b5b4-f21e1974714b"
+    },
+    {
+      "claim_id": "985ad4fd-9933-4e9f-b2bd-9450cc95443b",
+      "result_id": "3dd64802-2b05-4e03-80e3-0de458130701"
+    },
+    {
+      "claim_id": "05cfdc0c-600b-4f22-bdd4-a6173bdbb8f2",
+      "result_id": "3dd64802-2b05-4e03-80e3-0de458130701"
+    },
+    {
+      "claim_id": "34b201a0-8746-41a8-8ea7-eccd550542eb",
+      "result_id": "3dd64802-2b05-4e03-80e3-0de458130701"
+    },
+    {
+      "claim_id": "a1312d8c-e587-406c-95cb-94d3d8f8ff77",
+      "result_id": "3dd64802-2b05-4e03-80e3-0de458130701"
+    },
+    {
+      "claim_id": "e48906fb-af6d-49ab-ad6f-cc2ae5dc6192",
+      "result_id": "3dd64802-2b05-4e03-80e3-0de458130701"
+    },
+    {
+      "claim_id": "63583ebf-3cca-44ca-8850-6a86c1bbaef5",
+      "result_id": "3dd64802-2b05-4e03-80e3-0de458130701"
+    },
+    {
+      "claim_id": "7799f150-f612-4028-9e41-404a5f45a1f4",
+      "result_id": "ac5bbf78-20b7-4abb-8044-57419c583521"
+    },
+    {
+      "claim_id": "0bf2ef4c-054c-4f2c-8034-528eb5654210",
+      "result_id": "b014fdd1-ef2b-457c-8650-d9c7d397ef70"
+    },
+    {
+      "claim_id": "aa2e82db-d284-4cfe-a85b-70d036660b06",
+      "result_id": "b014fdd1-ef2b-457c-8650-d9c7d397ef70"
+    },
+    {
+      "claim_id": "327c4a58-c974-478e-b317-370ce4456301",
+      "result_id": "20313b47-a771-4d98-94ba-c0e50611e461"
+    },
+    {
+      "claim_id": "6fa6751b-714c-461c-ad0f-4ae064af182b",
+      "result_id": "20313b47-a771-4d98-94ba-c0e50611e461"
+    },
+    {
+      "claim_id": "01bd3285-f2b0-46c1-b3f8-03a7a559afc6",
+      "result_id": "20313b47-a771-4d98-94ba-c0e50611e461"
+    },
+    {
+      "claim_id": "aec90c04-2c47-4ced-a850-baa8f6df4778",
+      "result_id": "20313b47-a771-4d98-94ba-c0e50611e461"
+    },
+    {
+      "claim_id": "41bb4469-0012-4f46-b537-1b6acf9ca6e0",
+      "result_id": "ade74eed-2205-4ce0-abde-b0288f31ae2c"
+    },
+    {
+      "claim_id": "d288f687-7d51-4b84-baf0-6cb06e9ed07b",
+      "result_id": "25f55152-6a2a-4454-9ae1-8d61aa5cab21"
+    }
+  ],
+  "comparisons": []
+}

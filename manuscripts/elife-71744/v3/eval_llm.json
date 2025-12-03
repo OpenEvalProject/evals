@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Hh uptake by target cells is regulated and independent of production levels. Less than 5% of Hh produced in the P compartment is taken up by A compartment cells, and this amount remains constant across genotypes with 1-4 hh gene copies despite proportional increases in Hh production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 and C50-C52 provide converging quantitative evidence from antibody staining and tagged Hh:GFP experiments showing constant Hh uptake despite varying production. The dilution experiment (C50-C52) provides particularly strong evidence for regulated delivery. Statistical analysis confirms no significant differences in A compartment Hh across genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C44",
+      "C45",
+      "C48"
+    ],
+    "result": "Hh signaling outputs (Ptc band width, Knot expression, wing dimensions) are insensitive to 2-4 fold changes in Hh production. Both hh RNA and Hh protein scale linearly with gene dosage (1-4 copies), but downstream signaling remains constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 establish proportional production with gene dosage using qPCR and antibody staining. Claims C42, C44-C45 demonstrate no changes in multiple independent readouts of Hh signaling. The convergence of molecular (Ptc, Knot) and phenotypic (wing size/shape) measurements strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Wg delivery to target cells is regulated independently of production levels. Despite 1-7 fold differences in Wg production, the amount received by neighboring cells remains constant, and target gene expression (Sens, Dll) is unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 provide quantitative measurements showing constant Wg in receiving cells despite varying production. Claims C72-C73 confirm unchanged target gene expression patterns. The fraction of transmitted Wg decreases proportionally with increased production (C71), supporting regulated delivery rather than constitutive release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Dpp signaling is insensitive to 2-fold increases in production. Wing size, pMAD band width, and Salm expression remain constant despite doubling Dpp production, and tagged Dpp:Cherry shows dilution in receiving cells consistent with regulated delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 demonstrate constant signaling outputs despite doubled Dpp production using multiple independent readouts (wing size, pMAD, Salm). The Dpp:Cherry dilution experiment (C65-C67) parallels the Hh:GFP results and supports regulated transmission. The BAC rescue experiment (C57-C58) validates the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C131"
+    ],
+    "result": "Hh delivery to the wing disc is independent of competing target tissues. Genetic ablation of ASP or myoblasts does not increase Hh signaling in remaining disc cells, indicating that target cells do not draw from a common extracellular pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 provide direct experimental evidence from tissue ablation experiments. The lack of compensatory increase in disc signaling when other target tissues are removed (C7, C98) is inconsistent with diffusion from a shared pool and supports directed delivery. This is a critical test distinguishing between diffusion and cytoneme-mediated models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C46",
+      "C47",
+      "C49",
+      "C80",
+      "C82"
+    ],
+    "result": "The buffering capacity of regulated Hh delivery is limited. Approximately 15-fold overexpression of Hh using hh-Gal4 overwhelms the regulatory system, causing changes in Ptc band size/shape, wing morphology, and ASP phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C43, C46-C47 document the effects of ~15-fold overexpression on multiple phenotypes. Claims C49 and C82 interpret this as evidence for limited buffering capacity. The contrast between modest (1-4x) and extreme (15x) overexpression strengthens the conclusion that a regulatory mechanism exists but has finite capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C75",
+      "C122",
+      "C123"
+    ],
+    "result": "Extracellular morphogen levels suggest gating at the basal membrane. Extracellular Hh:GFP is constant and independent of production level, and extracellular Wg increases with production, suggesting that basal membrane placement or release may be rate-limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C55 and C122-C123 provide evidence for gating at the basal membrane, but the extracellular staining protocol has limitations (cannot distinguish surface vs. cytoneme-associated protein, requires different conditions than total staining). The interpretation that placement at the basal membrane is gated (C55, C122) is reasonable but not definitively proven. Claim C76 acknowledges uncertainty about the rate-limiting step.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "ASP morphology, En expression, and cytoneme number are insensitive to 2-4 fold changes in Hh production but respond to extreme overexpression. The number of ASP cytonemes remains constant across genotypes with 1-4 hh genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C83 provide direct measurements of ASP phenotypes and cytoneme numbers across genotypes. Claim C80 shows sensitivity to extreme overexpression. The parallel between ASP and wing disc responses (both show buffering with limited capacity) strengthens the overall model. Cytoneme counting provides an independent measure of signaling capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Ihog overexpression increases cytoneme stability and Hh signaling, revealing sensitivity to Hh production levels. In the wing disc, Ihog overexpression increases Ptc band width and confers sensitivity to hh gene dosage, with significant differences between 1 and 2 copies but not 2 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 provide experimental evidence that manipulating cytoneme numbers (via Ihog overexpression) alters signaling and sensitivity to production levels. This supports the model that cytoneme number is a regulatory component. However, the limited capacity even with Ihog overexpression (C88, C90) suggests additional regulatory mechanisms beyond cytoneme number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Expression of known morphogen pathway modulators (shf, brk, pent, sog, cv-2, Notum) does not change with morphogen gene dosage, suggesting these feedback mechanisms do not compensate for production changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93-C94 provide qPCR data showing no changes in modulator expression. This negative result helps rule out transcriptional feedback as the regulatory mechanism. However, the analysis is limited to a subset of known modulators and does not exclude post-transcriptional regulation or unknown factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C101",
+      "C102",
+      "C104",
+      "C130",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors conclude that morphogen delivery is regulated through controlled cell-to-cell exchanges rather than constitutive release into a shared extracellular pool. This regulated delivery is proposed as a defining feature of morphogen dispersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion integrates multiple lines of evidence: constant uptake despite varying production (C2-C5), independence from competing tissues (C7), and dilution experiments (C50-C52, C65-C67). The tissue ablation experiments (C98-C99) provide particularly strong evidence against a shared pool model. The conclusion is well-supported by the data, though the precise molecular mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C56",
+      "C76",
+      "C103",
+      "C110",
+      "C119",
+      "C124",
+      "C128",
+      "C129"
+    ],
+    "result": "Multiple aspects of the regulatory mechanism remain unknown, including whether morphogens are stored in synaptic vesicles, the precise rate-limiting step(s), and how release/uptake at cytoneme synapses is controlled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately identify knowledge gaps and limitations of the current study. Claims C23-C24, C128-C129 explicitly state what remains to be determined. Claims C56, C76, C103, C110, C119, C124 acknowledge uncertainties in interpretation. This honest assessment of limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C77",
+      "C78",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The manuscript provides extensive background on morphogen signaling, diffusion models, cytoneme-mediated transport, and analogies to neuronal synapses, drawing on prior literature to contextualize the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize established knowledge and prior work, appropriately supported by citations. They provide necessary context for interpreting the current results. The analogies to neuronal synapses (C20-C22, C125-C127) motivate the investigation of regulated release. The critique of diffusion models (C105-C109) is fair and well-supported.",
+    "result_type": "MINOR"
+  }
+]

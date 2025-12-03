@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C35",
+      "C36",
+      "C53",
+      "C54",
+      "C55",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "High-quality reference genomes were successfully assembled from roadkill samples for the Southern aardwolf (P. c. cristatus) and Southern bat-eared fox (O. m. megalotis) using a hybrid assembly approach combining Illumina short reads (50-60x coverage) and Nanopore long reads (11-13x coverage) with the MaSuRCA assembler. The assemblies showed high contiguity (N50 of 1.3 Mb for aardwolf and 728 kb for bat-eared fox) and completeness (high BUSCO scores), comparing favorably to other carnivoran genome assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11, C35-C36, C53-C55, and C69-C71 collectively provide strong evidence for successful genome assembly from roadkill samples. The sequencing statistics (C6-C8), assembly metrics (C9-C10), quality assessments (C11), and comparative analyses (C36, C55) are well-documented in Table 1 and supplementary figures. The methodological improvements (C53-C54) are supported by citations to prior work. The gene recovery data (C69-C71) confirms assembly completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mitochondrial genome analysis revealed patristic distances of 0.045 substitutions per site between aardwolf subspecies and 0.020 between bat-eared fox subspecies. A threshold of approximately 0.02 substitutions per site was identified as separating intraspecific polymorphism from interspecific divergence in Carnivora based on COX1 and CYTB genes. The aardwolf subspecies showed genetic distances exceeding this threshold (0.054 for both genes), while bat-eared fox subspecies fell in an ambiguous zone (0.020 for COX1, 0.032 for CYTB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 and C61-C63 are well-supported by phylogenetic analysis data presented in Figure 2 and Supplementary file 1. The mitogenomic phylogeny was robust (91.4% of nodes with >95% bootstrap support, C61), and the barcoding gap analysis was based on large datasets (3,657 COX1 and 6,159 CYTB sequences, C62-C63). The threshold determination (C14) and comparative distances (C13, C15-C16) provide clear evidence for differential divergence patterns between the two species pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Genome-wide heterozygosity analysis revealed lower genetic diversity in Eastern populations compared to Southern populations for both species (aardwolf: 0.121 vs 0.189 per kb; bat-eared fox: 0.127 vs 0.209 per kb). The genetic differentiation index (GDI) between aardwolf subspecies (0.533) exceeded that between well-defined species pairs like wolf and golden jackal (0.44), while the GDI between bat-eared fox subspecies (0.294) was lower than all reference species pairs examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 are supported by genome-wide analyses presented in Figure 3 and associated supplementary figures. The heterozygosity estimates (C17-C19) are based on resampling analysis (10 replicates of 100 regions), and the GDI comparisons (C20-C23) use appropriate reference species pairs. The robustness checks (subsampling to 15x coverage and permutation analysis with Ursus) strengthen confidence in the results. However, the small sample size (n=3 per species) limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C58"
+    ],
+    "result": "Based on integrated mitochondrial and nuclear genome analyses, the authors conclude that the two subspecies of P. cristatus warrant elevation to species level (P. cristatus and P. septentrionalis), while the O. megalotis subspecies do not warrant species status but are likely undergoing incipient speciation in the 'gray zone' of the speciation continuum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C58 represent the main taxonomic conclusions supported by multiple lines of evidence: mitochondrial distances (C12-C16), genome-wide GDI analysis (C20-C23), and comparative species delineation. The aardwolf subspecies show genetic differentiation exceeding that of recognized species pairs, while bat-eared fox subspecies show intermediate differentiation. The conclusion is logically derived from the data, though the 'gray zone' designation for O. megalotis (C58) acknowledges the inherent ambiguity in species delimitation during active speciation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PSMC analysis revealed that Eastern African populations of both species showed continuous decreases in effective population size over time, with lower recent Ne than Southern populations. Bat-eared fox population trajectories synchronized approximately 200 kya ago, potentially indicating divergence time. Southern populations of both species showed marked population size increases between 10-30 kya followed by sharp recent declines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by PSMC analysis presented in Figure 4. The demographic trajectories are clearly shown for all individuals, and the patterns described are evident in the figure. However, C27 includes speculative interpretation ('could correspond to the time of divergence'), which is appropriately qualified. The PSMC method has known limitations with recent time periods and assumes constant mutation rates and generation times, which may affect accuracy of recent population size estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C64",
+      "C65",
+      "C68",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "A comprehensive phylogenomic analysis of Carnivora was conducted using 14,307 single-copy orthologous genes from 52 species, resulting in a highly supported phylogeny that resolves major relationships within the order. Key findings include support for Pinnipedia+Musteloidea grouping within Arctoidea (though with evidence of incomplete lineage sorting), Mephitidae as the basal Musteloidea family, and controversial node supports within Felidae consistent with ancient hybridization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34, C48-C52, C64-C65, C68, C72-C81 collectively describe a robust phylogenomic analysis presented in Figure 5. The dataset is comprehensive (C29-C30, C68), the phylogenetic support is strong (C72), and the results are consistent with prior work (C48). The concordance factor analyses (C33-C34, C49) appropriately identify nodes with conflicting signals, and the interpretation of incomplete lineage sorting (C51) is supported by citations. The incongruence between mitogenomic and nuclear phylogenies for Musteloidea relationships (C64-C65, C81) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The earliest available name for the East African aardwolf subspecies is P. c. septentrionalis (Rothschild, 1902), originally distinguished by pelage characteristics (creamy white without gray tinge vs. ashy gray in P. c. cristatus). Morphometric analysis confirmed that postorbital breadth is significantly greater in P. c. septentrionalis than P. c. cristatus, though other skull measurements showed no significant differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C40 provide taxonomic and morphological support for subspecies distinction. The nomenclatural priority (C37) and historical descriptions (C38-C39) are well-cited to Rothschild, 1902. However, the morphometric analysis (C40) is based on limited sample sizes from literature sources, and the authors acknowledge this limitation. The pelage differences are described as variable and potentially phenotypic responses to environmental conditions. While the postorbital breadth difference is statistically significant, the biological significance and consistency across larger samples remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C66",
+      "C67"
+    ],
+    "result": "The demographic patterns observed in aardwolf and bat-eared fox populations are interpreted in the context of Plio-Pleistocene African climate change, though the long-term climate trends remain debated. The authors propose that population declines may reflect fragmentation of ancestral ranges due to development of tropical rainforest in central Africa during wetter periods, and note that several bird species show similar disjunct distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C47 and C66-C67 provide ecological and biogeographic context for the demographic results. However, the interpretation is highly speculative (C45-C46 explicitly use 'could' and 'may'), and the climate literature cited shows contradictory trends (C41-C43). The correlation between population size changes and climate is not directly tested. The observation of similar distributions in bird species (C47) provides circumstantial support but does not constitute direct evidence for the proposed mechanism. The ecological information (C66-C67) is well-established but does not directly support the demographic interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The hybrid assemblies could serve as foundations for future chromosome-length assemblies with additional HiC data, and the cost of producing each genome was 5,000-10,000 USD, demonstrating the feasibility of cost-effective high-quality mammalian genome sequencing from roadkill.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are straightforward statements about future applications and costs. The cost estimate (C57) is explicitly stated and represents actual expenditure data. The potential for chromosome-length assemblies (C56) is appropriately qualified as future work and is supported by citations to relevant methods (HiC) and initiatives (Vertebrate Genome Project, DNA Zoo). These claims accurately represent the practical implications of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Natural hybridization has been reported between C. aureus and C. lupus, yet the taxonomic rank of these two species as separate species is well accepted, providing context for species delimitation despite gene flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide comparative context for species delimitation. Both claims are well-supported by citations (Galov et al., 2015; Gopalakrishnan et al., 2018) and represent established knowledge in carnivoran systematics. This example is appropriately used to support the argument that genetic differentiation can warrant species status even when hybridization occurs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study utilized roadkill samples of bat-eared fox and aardwolf, two frequently encountered roadkill species in South Africa, collected under appropriate permits. No prior genetic or genomic assessment of population differentiation had been conducted for these subspecies. Data and materials have been deposited in public repositories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C5, and C82-C86 provide background information, sampling details, and data availability statements. All claims are either well-cited to external sources (C1-C3) or represent factual statements about permits (C82-C83), conservation status (C84), and data deposition (C85-C86). The claim about lack of prior genetic work (C5) is appropriately qualified and cited. These are straightforward factual claims that support the study's rationale and reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Single-cell RNA sequencing of meninges one week after mild TBI in young mice revealed 21 unique cell populations including immune cells, endothelial cells, fibroblasts, and other cell types. Following TBI, there was increased frequency of 'Activated Macrophages 1' expressing complement-related genes and substantially increased frequency of fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are well-supported by the experimental design (Figure 1a), scRNA-seq data analysis (Figures 1b-e, Table 1), and appropriate computational methods. The pooling of 5 mice per group provides adequate biological material, and the identification of cell populations using established clustering methods is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Meningeal macrophages showed significant transcriptional changes one week post-TBI, with 321 upregulated and 369 downregulated genes. Type I interferon response genes (Ifnar1, Ifi203, Irf2bp2, Irf5) were significantly upregulated, validated by qPCR. Re-clustering identified six macrophage subpopulations, with increased frequencies of 'Anti-Inflammatory' and 'Resolution Phase' macrophages after TBI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 are supported by differential gene expression analysis (Figure 2a-d), qPCR validation (Figure 2e-h), and sub-clustering analysis (Figure 2i-k). The use of FDR<0.1 is appropriate, and qPCR validation strengthens the RNA-seq findings. The identification of distinct macrophage subpopulations with different functional profiles is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Fibroblasts exhibited 368 activated and 320 repressed genes after TBI, with increased collagen density validated by immunohistochemistry. Neurodegenerative disease pathways were among the most upregulated, and dural fibroblast markers (Foxc2, Fxyd5) were significantly upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are supported by differential gene expression analysis (Figure 3a-b), immunohistochemical validation of collagen (Figure 3c-e), KEGG pathway analysis (Figure 3g), and marker expression analysis (Figure 3h-i). The validation of sequencing results with orthogonal methods strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Adaptive immune cells showed differential gene expression after TBI: T cells (151 up, 286 down), B cells (102 up, 158 down), and dendritic cells (183 up, 149 down). T cells included CD8+, Th2, and Th17 subsets, while B cells showed five sub-clusters with differentiation trajectories. Both populations upregulated activation genes alongside immunoregulatory genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 are supported by differential expression analysis (Figure 4a), sub-clustering (Figure 4b-c), pseudotime analysis (Figure 4d-e), and functional gene categorization (Figure 4f-g). The pseudotime analysis appropriately characterizes B cell maturation trajectories, and the identification of both pro-inflammatory and regulatory gene expression is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "NicheNet analysis predicted that macrophage-derived Tgfb1 best predicted gene expression patterns in other cell populations, suggesting an environment of cell growth, differentiation, and alternative macrophage activation. Fibroblast ligands promoted angiogenesis, growth, inflammation, and wound healing, illustrating a proliferative, pro-inflammatory state with balanced immune upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C113-C115 are supported by NicheNet computational analysis (Figure 2\u2014supplement 2, Figure 3\u2014supplement 1) and alignment with experimental observations (e.g., increased collagen production). However, these are predicted interactions requiring experimental validation. The predictions are biologically plausible and consistent with observed phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Bulk RNA-seq at 1.5 months post-TBI showed age as the main driver of differential gene expression. Young TBI mice had only 22 differentially expressed genes versus young sham, while aged TBI had 364 versus aged sham. Aged mice showed 1772 DEGs versus young sham and 2936 versus young TBI, with 917 downregulated and 639 upregulated genes unique to aged TBI, suggesting prolonged effects and delayed recovery in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 and C116-C120 are supported by PCA analysis (Figure 5b), differential expression analysis (Figure 5c-d), and appropriate statistical methods (DESeq2 with FDR<0.1). The use of 3 biological replicates per group (each pooling 2-3 mice) provides adequate statistical power. The conclusions about age-related differences are well-supported by the magnitude of transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Aged sham mice showed striking upregulation of antibody production genes (50% of top 20 upregulated genes) and immune/defense response pathways. Immunoglobulin genes (Ighm, Ighg2b, Igha, Igkc, Jchain) were highly upregulated, with increased J-chain deposition along sinuses. However, B220+ cell numbers were significantly lower in aged mice, suggesting functional changes rather than increased B cell recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 and C121-C123 are supported by bulk RNA-seq (Figure 6a-c), immunohistochemistry (Figure 6d-e), and flow cytometry (Figure 6f-g, supplement 1). The apparent contradiction with other studies (Brioschi et al., 2021; Mrdjen et al., 2018) is acknowledged. The conclusion that increased antibody gene expression reflects functional changes rather than cell number increases is reasonable given the data, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Aged mice showed increased expression of type I interferon-related genes including Ifit1, Ifit2, Irf7, Ifi213, and Mx1 in the bulk RNA-seq dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by bulk RNA-seq analysis (Figure 6h) with appropriate statistical methods. The identification of type I IFN signature in aged meninges is consistent with the scRNA-seq findings in young TBI mice and represents a baseline inflammatory state in aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C124"
+    ],
+    "result": "Genes unique to aged TBI versus young TBI comparison showed downregulation of collagen-related genes (Col4a1, Col4a2, Col5a2) and junction proteins (Jup), validated by qPCR. These wound healing pathways were upregulated in young TBI but downregulated in aged TBI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 and C124 are supported by GO term analysis (Figure 7a), differential expression analysis (Figure 7b), and qPCR validation (Figure 7c). The validation strengthens the RNA-seq findings. The comparison with young TBI response (Figure 3) appropriately contextualizes the aged response as deficient in wound healing capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Aged TBI mice showed profound upregulation of immune activation genes compared to young TBI mice, with enrichment of 'defense response' and 'immune system process' GO terms. Upregulated genes included those for immunoglobulin production (Ighg2c), T/B cell signaling (Cd24a, Zap70, Cxcr6), and cell death (Casp12, C2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by differential expression analysis and GO term enrichment (Figure 7d-e). The identification of prolonged immune activation in aged TBI mice is consistent with the overall pattern of impaired resolution observed in the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Comparison of scRNA-seq (1 week post-TBI, young) and bulk RNA-seq (1.5 months post-TBI, aged) datasets revealed 139 shared genes with aging alone and 119 shared genes with aged TBI. Shared downregulated genes involved wound healing and connective tissue maintenance, while shared upregulated genes involved immune activation. These genes were transiently expressed in young mice but remained dysregulated in aged mice, indicating persistent immune activation and defective healing in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 and C128-C133 are supported by cross-dataset comparison (Figure 8a-d) and appropriate functional annotation. The temporal comparison between acute response in young mice and chronic response in aged mice is logical and well-supported. However, the comparison involves different time points and ages, which limits direct mechanistic interpretation. The conclusion about persistent dysregulation in aging is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The mild TBI model used does not result in appreciable alterations in balance, motor coordination, reflex, and alertness, and shows no appreciable differences in CD31 blood vasculature staining at 24 hours. Only modest increases in gliosis (Iba1, GFAP) and MHCII+ staining were detected at 24 hours post-TBI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by prior work (C95, citation to Bolte et al., 2020) and immunohistochemical analysis (C96-C98, Figure 1\u2014supplement 1). These findings appropriately characterize the injury model as mild and validate that the observed meningeal changes are not due to severe parenchymal damage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Mild TBI in aged mice results in prolonged activation of immune genes and decreased expression of genes involved in extracellular matrix remodeling and cellular junctions. The meningeal transcriptome in young mice returns almost completely to baseline by 1.5 months post-TBI, while aged meninges continue to exhibit substantial transcriptional alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 synthesize findings from multiple analyses (Figures 5, 7) and represent major conclusions of the study. The evidence strongly supports differential recovery trajectories between young and aged mice, with young mice showing transcriptional resolution and aged mice showing persistent dysregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Clinical studies show that meningeal enhancement on MRI occurs in 50% of mild TBI patients within minutes of injury, with blood-brain barrier compromise indicated by contrast extravasation. Most patients show resolution by 19 days, but 15% have persistent enhancement at 3 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are supported by citations to published clinical studies (Roth et al., 2014; Turtzo et al., 2020; Russo et al., 2018). These claims establish clinical relevance for the study but are not original findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The meninges contain lymphatic vessels draining to peripheral lymph nodes and a full array of immune cells communicating with neurons and glia. Meningeal immune cells produce cytokines (IFN-\u03b3, IL-4, IL-17a) that influence behavior, learning, and memory. Age-related decline in CCR7 expression by meningeal T cells may contribute to cognitive impairment and neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 are supported by citations to published literature and establish the biological context for the study. These are not original findings but appropriately frame the importance of meningeal biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Prior literature establishes that elderly individuals experience more severe TBI consequences, prolonged immune activation contributes to negative outcomes, meningeal macrophages play important roles in TBI pathogenesis, and the meningeal lymphatic system modulates brain inflammation. The meningeal response to TBI can be divided into acute, sub-acute, and chronic phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C104 are supported by extensive citations to published literature. These claims establish the scientific context and rationale for the study but are not original findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors speculate that upregulation of antibody production genes may be a protective strategy against BBB integrity loss in aging and TBI, that meninges may play a role in differential age-related TBI responses, that baseline type I IFN signature and antibody production in aging may render aged brains prone to worse outcomes, that meningeal lymphatic impairment may contribute to aged meningeal inflammation, and that plasmacytoid dendritic cells could contribute to type I IFN signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C109 are explicitly speculative and proposed as hypotheses for future investigation. While these speculations are reasonable given the data, they lack direct experimental support and are appropriately presented as areas requiring further study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors infer that the dural compartment likely undergoes increased fibroblast frequency one week after TBI, that metabolic changes in fibroblasts may underlie disease-related processes, and that TBI drives B cell activation and maturation in the meningeal compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are reasonable inferences from the data (increased dural marker expression, overlap of KEGG terms, upregulation of B cell maturation genes). While these are interpretations rather than direct observations, they are well-supported by the experimental evidence and represent logical conclusions.",
+    "result_type": "MINOR"
+  }
+]

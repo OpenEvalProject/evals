@@ -1,0 +1,2103 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Sensorimotor electrocorticography (ECoG) and subthalamic local field potentials (LFP) were recorded intraoperatively from 11 Parkinson's disease patients undergoing deep brain stimulation (DBS) electrode implantation.",
+    "claim_type": "EXPLICIT",
+    "source": "We analyzed sensorimotor ECoG and subthalamic LFP data recorded intraoperatively from 11 PD patients undergoing DBS implantation during performance of a Go/No-Go based cued grip-force task (Figure 1A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the data sources and patient population in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "ECoG is superior to subthalamic LFP for accurate grip-force decoding in Parkinson's disease patients.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate that ECoG is superior to subthalamic LFP for accurate grip-force decoding.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Gradient boosted decision trees (XGBOOST) outperformed other model architectures for grip-force decoding.",
+    "claim_type": "EXPLICIT",
+    "source": "Gradient boosted decision trees (XGBOOST) outperformed other model architectures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the abstract and demonstrated through comparative analysis in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "ECoG based decoding performance negatively correlated with motor impairment in Parkinson's disease.",
+    "claim_type": "EXPLICIT",
+    "source": "ECoG based decoding performance negatively correlated with motor impairment, which could be attributed to subthalamic beta bursts in the motor preparation and movement period.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is stated in the abstract and supported by correlation analyses with UPDRS-III scores shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Subthalamic beta bursts in the motor preparation and movement period are associated with reduced ECoG decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "ECoG based decoding performance negatively correlated with motor impairment, which could be attributed to subthalamic beta bursts in the motor preparation and movement period.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This relationship is demonstrated through correlation analyses presented in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Connectomic fingerprints can predict grip-force decoding performance of individual ECoG channels across patients.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we developed a connectomic analysis that could predict grip-force decoding performance of individual ECoG channels across patients by using their connectomic fingerprints.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is stated in the abstract and demonstrated through cross-validated predictions shown in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Parkinson's disease has been associated with increased beta synchronization and beta bursts in the basal ganglia.",
+    "claim_type": "EXPLICIT",
+    "source": "PD has been associated with increased beta synchronization and beta bursts in the basal ganglia (K\u00fchn et al., 2006; Neumann et al., 2016; Kehnemouyi et al., 2021)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Symptom severity in the OFF medication state correlates with resting beta power in the STN across Parkinson's disease patients.",
+    "claim_type": "EXPLICIT",
+    "source": "Symptom severity in the OFF medication state was shown to correlate with resting beta power in the STN across patients (K\u00fchn et al., 2006; Neumann et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Adaptive deep brain stimulation (aDBS) triggered by beta power can achieve significant clinical benefit and reduced side-effects.",
+    "claim_type": "EXPLICIT",
+    "source": "In a series of seminal papers it was shown that significant clinical benefit and reduced side-effects could be achieved, when stimulation was triggered by beta power (Little et al., 2013; Velisar et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous clinical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Including preceding signals up to 500 ms before the decoded sample improves grip-force decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "A performance saturation becomes visible when concatenating 5 time-points from 500ms (prior to target sample) to 0ms (target sample), resulting in an optimal input vector of 8 frequency bands with 5 time-points (=40 features) for further analyses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is demonstrated through systematic analysis shown in Figure 2C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "STN-LFP decoding performance was above chance level.",
+    "claim_type": "EXPLICIT",
+    "source": "Given the relatively low decoding performances for STN-LFP, we applied permutation tests to confirm that performance was above chance (contralateral p=0.025, ipsilateral p=0.028).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is confirmed through permutation testing as stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Varying combinations of multiple ECoG and/or STN channels did not lead to significant performance advantages over single best channels.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, varying combinations of multiple ECoG and/or STN channels did not lead to significant performance advantages (Figure 3 C+D), which is important for the utility and design of machine learning enabled implantables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is demonstrated in Figure 3 C+D and discussed in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Preoperative OFF medication total UPDRS-III scores negatively correlated with best ECoG channel decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we correlated preoperative OFF medication total UPDRS-III scores, which revealed negative correlations for best ECoG (\u03c1=\u20130.55, p=0.039) and STN-LFP (\u03c1=\u20130.55, p=0.042) channels (Figure 4 A+B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This correlation is explicitly stated with statistical values in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Preoperative OFF medication total UPDRS-III scores negatively correlated with best STN-LFP channel decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we correlated preoperative OFF medication total UPDRS-III scores, which revealed negative correlations for best ECoG (\u03c1=\u20130.55, p=0.039) and STN-LFP (\u03c1=\u20130.55, p=0.042) channels (Figure 4 A+B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This correlation is explicitly stated with statistical values in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The correlation between UPDRS-III scores and decoding performance was temporally specific to decoding of ongoing grip-force.",
+    "claim_type": "EXPLICIT",
+    "source": "This correlation was temporally specific to decoding of ongoing grip-force, indicative of the models' underestimation of motor output (Figure 4C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This temporal specificity is demonstrated through movement-aligned sample-wise correlations shown in Figure 4C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Euclidean distance to target locations could not predict decoding performance across channels or patients.",
+    "claim_type": "EXPLICIT",
+    "source": "Repeating the analyses across electrodes and patients in a cross-validated manner revealed no significant predictive value (p>0.05). Thus, Euclidean distance to hand knob area for ECoG and therapeutic target for STN was significantly correlated with decoding performance within patients, but could not predict decoding performance across channels or patients.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This lack of cross-patient predictive value is explicitly stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Structural connectivity fingerprints can significantly predict decoding performance of left out channels in cross-validation.",
+    "claim_type": "EXPLICIT",
+    "source": "The specific fiber distributions included structural projections spanning sensory, motor and prefrontal cortex, and could significantly predict decoding performance of left out channels (\u03c1=0.38, p<0.0001; thresholded at a false discovery rate \u03b1=0.05) and patients (\u03c1=0.37, p<0.0001) in a cross validated manner (Figure 7D).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This predictive value is demonstrated through cross-validated analysis shown in Figure 7D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Structural connectivity fingerprints can significantly predict decoding performance of left out patients in cross-validation.",
+    "claim_type": "EXPLICIT",
+    "source": "The specific fiber distributions included structural projections spanning sensory, motor and prefrontal cortex, and could significantly predict decoding performance of left out channels (\u03c1=0.38, p<0.0001; thresholded at a false discovery rate \u03b1=0.05) and patients (\u03c1=0.37, p<0.0001) in a cross validated manner (Figure 7D).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This predictive value is demonstrated through cross-validated analysis shown in Figure 7D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Age did not significantly correlate with grip-force decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Age (\u03c1=\u20130.16, p=0.32), disease duration in years (\u03c1=0.31, p=0.17) and number of movements (\u03c1=\u20130.41, p=0.11) and movement variability (Rho = \u20130.49, p=0.06) did not reveal significant correlations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This lack of correlation is explicitly stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Disease duration did not significantly correlate with grip-force decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Age (\u03c1=\u20130.16, p=0.32), disease duration in years (\u03c1=0.31, p=0.17) and number of movements (\u03c1=\u20130.41, p=0.11) and movement variability (Rho = \u20130.49, p=0.06) did not reveal significant correlations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This lack of correlation is explicitly stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Number of movements did not significantly correlate with grip-force decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Age (\u03c1=\u20130.16, p=0.32), disease duration in years (\u03c1=0.31, p=0.17) and number of movements (\u03c1=\u20130.41, p=0.11) and movement variability (Rho = \u20130.49, p=0.06) did not reveal significant correlations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This lack of correlation is explicitly stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Movement variability did not significantly correlate with grip-force decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Age (\u03c1=\u20130.16, p=0.32), disease duration in years (\u03c1=0.31, p=0.17) and number of movements (\u03c1=\u20130.41, p=0.11) and movement variability (Rho = \u20130.49, p=0.06) did not reveal significant correlations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This lack of correlation is explicitly stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The study analyzed data from 11 Parkinson's disease patients undergoing DBS electrode implantation.",
+    "claim_type": "EXPLICIT",
+    "source": "We analyzed sensorimotor ECoG and subthalamic LFP data recorded intraoperatively from 11 PD patients undergoing DBS implantation during performance of a Go/No-Go based cued grip-force task (Figure 1A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The patient population is explicitly described in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "A total of 2685 movements were analyzed across all patients.",
+    "claim_type": "EXPLICIT",
+    "source": "Individual electrode localizations in Montreal Neurological institute (MNI) space are shown in Figure 1B with typical responses (K\u00fchn et al., 2004; Androulidakis et al., 2007; Kondylis et al., 2016; Lofredi et al., 2018) in Figure 1C aligned to onset of grip force (total n=2685, on average n=244 \u00b1 149 STD movements per patient, see Figure 1\u2014figure supplement 1 for more detail on grip-force variability).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The total number of movements is explicitly stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "On average, 244 \u00b1 149 STD movements per patient were analyzed.",
+    "claim_type": "EXPLICIT",
+    "source": "Individual electrode localizations in Montreal Neurological institute (MNI) space are shown in Figure 1B with typical responses (K\u00fchn et al., 2004; Androulidakis et al., 2007; Kondylis et al., 2016; Lofredi et al., 2018) in Figure 1C aligned to onset of grip force (total n=2685, on average n=244 \u00b1 149 STD movements per patient, see Figure 1\u2014figure supplement 1 for more detail on grip-force variability).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The average number of movements per patient is explicitly stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Features were extracted at 10 Hz with an adaptive window length from 1000 to 100ms of past data.",
+    "claim_type": "EXPLICIT",
+    "source": "To get an estimate of amplitude of the activity in the filtered signals, variance was extracted in intervals of 1 s in a sliding window of 100ms resulting in a time resolution of 10 Hz.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The feature extraction parameters are explicitly described in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "All features were normalized to the median of the past 10 s to compensate for potential signal changes over time.",
+    "claim_type": "EXPLICIT",
+    "source": "All variance estimates were normalized by subtracting and dividing by the median in a sliding window of 10 s to account for differences in impedance and proximity to the source before subjecting the data to the machine learning analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The normalization procedure is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "A rigorous nested cross-validation approach was implemented for machine learning model evaluation.",
+    "claim_type": "EXPLICIT",
+    "source": "A rigorous nested cross-validation approach was implemented. An outer threefold cross validation split the data into folds of two third training and one third test set.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The cross-validation methodology is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Bayesian Optimization hyperparameter search was conducted for 10 rounds using the training set only.",
+    "claim_type": "EXPLICIT",
+    "source": "For each individual channel, a Bayesian Optimization hyperparameter search (Frazier, 2018) was then conducted for 10 rounds using the training set only.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The hyperparameter optimization procedure is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Beta bursts were defined as threshold crossings of the beta feature vector above the 75th percentile of the baseline period.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the beta feature time-series were used and a threshold constituting the 75th percentile of the rest periods were calculated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The beta burst definition is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Beta bursts were required to have a minimum duration of 100ms.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, threshold crossings of at least 100ms lengths in the motor preparation (\u22121\u20130 s with respect to movement) and movement execution (0\u20131 s with respect to movement execution) were marked as bursts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The minimum burst duration is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "All patients were in the OFF medication state during intraoperative testing, with dopaminergic medications withheld for at least 12 hours before surgery.",
+    "claim_type": "EXPLICIT",
+    "source": "Dopaminergic medications were withheld for at least 12 hr before intraoperative testing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The medication status is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Subjects were fully awake during the task, with no anesthetic agents administered for at least 1 hour before the task procedure.",
+    "claim_type": "EXPLICIT",
+    "source": "Subjects were fully awake, and no anesthetic agents were administered for at least 1 hr before the task procedure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The anesthesia status is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The average number of ECoG channels was 9.45 \u00b1 11.15 per hemisphere.",
+    "claim_type": "EXPLICIT",
+    "source": "The number of ECoG channels (average n=9.45 \u00b1 11.15 STD per hemisphere) is higher compared to the number of STN LFP channels (n=3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This information is provided in the Figure 1 caption.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Three bipolar STN-LFP channels were derived from four adjacent contacts in one DBS electrode.",
+    "claim_type": "EXPLICIT",
+    "source": "All LFP recordings were referenced bipolarly, against the adjacent contacts (0\u20131, 1\u20132, 2\u20133 with contact 0 being the lowest by convention of the manufacturer).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The bipolar referencing scheme is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "ECoG recordings were referenced by subtracting the common average of all ECoG electrodes.",
+    "claim_type": "EXPLICIT",
+    "source": "ECoG recordings were referenced by subtracting the common average of all ECoG electrodes, therefore the number of channels per ECoG electrode is equal to the number of contacts per strip.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The ECoG referencing scheme is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Excessive synchronization in the STN may impair flexible motor control by decreasing information coding capacity and neural entropy.",
+    "claim_type": "EXPLICIT",
+    "source": "An obvious interpretation of this finding is that excessive synchronization in the STN may impair flexible motor control by decreasing information coding capacity and neural entropy as previously suggested in animal studies (Mallet et al., 2008; Cruz et al., 2009) and recently suggested for subthalamic beta bursts (Velasco et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This interpretation is stated in the Discussion and supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "If subthalamic beta bursts indicate phasic decreases in dopaminergic innervation, this could explain the loss of invigoration and reinforcement of ongoing neural population activity in the cortex-basal ganglia-thalamic loop.",
+    "claim_type": "EXPLICIT",
+    "source": "If subthalamic beta bursts indicate phasic decreases in dopaminergic innervation, we could expect a loss of invigoration and reinforcement of ongoing neural population activity in the cortex \u2013 basal ganglia \u2013 thalamic loop, which offers an elegant explanation for the lower decoding performance from ECoG signals in the absence of obvious cortical activity patterns.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is presented as a speculative explanation in the Discussion.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "In the hypodopaminergic state, the model output underestimated the grip force extent produced by the patients.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, in the hypodopaminergic state, the model output underestimated the grip force extent produced by the patients.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This observation is stated in the Discussion section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The underestimation of grip force by the model could reflect a loss of neural vigor representations related to insufficient dopaminergic modulation.",
+    "claim_type": "EXPLICIT",
+    "source": "This could reflect a loss of neural vigor representations related to insufficient dopaminergic modulation (Turner and Desmurget, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This interpretation is stated in the Discussion and supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Dopamine plays a key role in coding and modulating neural representations of movement kinematics in the human brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, our results corroborate the notion that dopamine plays a key role in coding and modulating neural representations of movement kinematics in the human brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is stated in the Discussion based on the study findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Future machine learning based aDBS approaches could be complemented by algorithms that inform the stimulation on behavioral and motor adjustments to mimic intrinsic phasic dopamine signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, in order to support the intrinsic dopaminergic capacity of PD patients, future machine learning based aDBS approaches could be complemented by algorithms that inform the stimulation on behavioral and motor adjustments to mimic intrinsic phasic dopamine signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is presented as a future direction in the Discussion.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Phasic decreases in beta in the basal ganglia are correlated to phasic dopamine signals during movement in non-human primates.",
+    "claim_type": "EXPLICIT",
+    "source": "As highlighted above it was recently shown in non-human primates that phasic decreases in beta in the basal ganglia are correlated to phasic dopamine signals during movement (Schwerdt et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to a study in non-human primates.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "DBS may constitute a network modulation that is similar to dopamine transients by suppressing local firing of the subthalamic nucleus.",
+    "claim_type": "EXPLICIT",
+    "source": "We may speculate that DBS constitutes a network modulation that is similar to dopamine transients by suppressing local firing of the subthalamic nucleus (Milosevic et al., 2018) and shifting the balance of basal ganglia from indirect to direct pathway activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is presented as speculation in the Discussion, supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The study used a Go/No-Go based cued grip-force task.",
+    "claim_type": "EXPLICIT",
+    "source": "We analyzed sensorimotor ECoG and subthalamic LFP data recorded intraoperatively from 11 PD patients undergoing DBS implantation during performance of a Go/No-Go based cued grip-force task (Figure 1A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The task paradigm is explicitly described in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The task included randomized inter-trial interval durations.",
+    "claim_type": "EXPLICIT",
+    "source": "The task included Go/No-Go cues with randomized inter-trial interval durations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The task design is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Subjects performed the task for a cumulative total time of 10-25 minutes.",
+    "claim_type": "EXPLICIT",
+    "source": "Subjects performed the task for a cumulative total time of 10\u201325 min.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The task duration is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The cue remained on screen for 1000-2000ms before the go/no-go signal.",
+    "claim_type": "EXPLICIT",
+    "source": "The cue remained on screen for 1000\u20132000ms, followed by the traffic light changing either green or red, signaling a 'go cue' and 'no-go cue', respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The task timing is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Electrode strips were implanted temporarily through standard frontal burr holes located near the coronal suture and aimed posteriorly to the hand knob motor cortex region.",
+    "claim_type": "EXPLICIT",
+    "source": "Subdural electrode strips were implanted temporarily through standard frontal burr holes located near the coronal suture and aimed posteriorly to the hand knob motor cortex region.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The surgical approach is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "STN-DBS electrodes were implanted bilaterally, targeting the dorsolateral motor area of the STN.",
+    "claim_type": "EXPLICIT",
+    "source": "STN-DBS electrodes were implanted bilaterally, targeting the dorsolateral motor area of the STN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The DBS targeting is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "ECoG and STN signals were filtered (0.3-7.5 kHz), amplified, and digitized at 30 kHz using a Grapevine neural interface processor.",
+    "claim_type": "EXPLICIT",
+    "source": "ECoG and STN signals were filtered (0.3\u20137.5 kHz), amplified, and digitized at 30 kHz using a Grapevine neural interface processor (Ripple Inc).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The recording parameters are explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "All signals were resampled to 1 kHz for offline analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "All signals were resampled to 1 kHz for offline analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The resampling procedure is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The study used normative connectome data from 74 Parkinson's disease patients from the Parkinson's Progression Markers Initiative (PPMI).",
+    "claim_type": "EXPLICIT",
+    "source": "The PPMI connectomes of patients with PD (n = 74) was priorly computed (Ewert et al., 2018) and has been used in context of DBS multiple times (Horn et al., 2017c; Neumann et al., 2018; de Almeida Marcelino et al., 2019; Lofredi et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The connectome data source is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "No patient-specific diffusion or functional MRI was required for the connectomic analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "No patient-specific diffusion or functional MRI was required for this analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This methodological detail is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The study provides a neurophysiological and computational framework for invasive brain signal decoding to aid the development of an individualized precision-medicine approach to intelligent adaptive DBS.",
+    "claim_type": "EXPLICIT",
+    "source": "Our study provides a neurophysiological and computational framework for invasive brain signal decoding to aid the development of an individualized precision-medicine approach to intelligent adaptive DBS.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a key contribution in the abstract.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The study addresses an unmet need for understanding the impact of neural source, computational methods and PD pathophysiology on decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Brain signal decoding can extend the clinical utility of adaptive DBS but the impact of neural source, computational methods and PD pathophysiology on decoding performance are unknown. This represents an unmet need for the development of future neurotechnology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This unmet need is explicitly stated in the abstract.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "First bidirectional BCI implants for adaptive deep brain stimulation are now available in Parkinson's disease.",
+    "claim_type": "EXPLICIT",
+    "source": "In Parkinson's disease (PD), first bidirectional BCI implants for adaptive deep brain stimulation (DBS) are now available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement about the current state of technology is made in the abstract.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Grip-force decoding is a representative movement decoding application.",
+    "claim_type": "EXPLICIT",
+    "source": "To address this, we developed an invasive brain-signal decoding approach based on intraoperative sensorimotor electrocorticography (ECoG) and subthalamic LFP to predict grip-force, a representative movement decoding application, in 11 PD patients undergoing DBS.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This characterization is stated in the abstract.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The study's grip-force decoding approach is motivated by the well-described relationship of vigor, movement velocity, bradykinesia, and dopamine in Parkinson's disease.",
+    "claim_type": "EXPLICIT",
+    "source": "In the future, smart implants may become available that combine invasive brain signal decoding with real-time stimulation adaptation, toward a precision medicine approach to adaptive DBS in PD and other brain disorders. However, the identification of optimal decoding strategies and the characterization of relevant factors with impact on decoding performance remains and unmet need. With the present study, we address this by a thorough investigation grip-force decoding that is motivated by the well-described relationship of vigor, movement velocity, bradykinesia, and dopamine in Parkinson's disease (Turner and Desmurget, 2010; Yttri and Dudman, 2016; Lofredi et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This motivation is explicitly stated in the Introduction with supporting citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The study used state-of-art machine learning algorithms with multimodal invasive neurophysiology and whole-brain connectomics.",
+    "claim_type": "EXPLICIT",
+    "source": "We use state-of-art machine learning algorithms with multimodal invasive neurophysiology and whole-brain connectomics in PD patients undergoing DBS electrode implantation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This methodological approach is stated in the Introduction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The study establishes a link between decoding performance and motor impairment in PD.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results highlight the utility of cortical vs. subcortical signals to accurately decode grip-force and establish a link between decoding performance and motor impairment in PD.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a key finding in the Introduction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The study demonstrates the predictive power of connectomic fingerprints for brain signal decoding.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we investigate brain networks from ECoG recording locations with normative structural and functional connectomics and demonstrate the predictive power of connectomic fingerprints for brain signal decoding.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a key finding in the Introduction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Parkinson's disease has been associated with exaggerated phase amplitude coupling and waveform sharpness asymmetry in cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "PD has been associated with increased beta synchronization and beta bursts in the basal ganglia (K\u00fchn et al., 2006; Neumann et al., 2016; Kehnemouyi et al., 2021) and exaggerated phase amplitude coupling and waveform sharpness asymmetry in cortex (de Hemptinne et al., 2015; Cole et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Machine-learning for aDBS applications can integrate multivariate feature sets for adaptive DBS control beyond beta power.",
+    "claim_type": "EXPLICIT",
+    "source": "Machine-learning for aDBS applications can integrate multivariate feature sets for adaptive DBS control beyond beta power.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement about the potential of machine learning is made in the Introduction.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "First trials on machine learning based movement classification to trigger adaptive DBS using ECoG or subcortical LFP in essential tremor have shown promising results.",
+    "claim_type": "EXPLICIT",
+    "source": "First trials on machine learning based movement classification to trigger adaptive DBS either using electrocorticography (ECoG) or subcortical local field potentials (LFP) in essential tremor have shown promising results (Opri et al., 2020; He et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The identification of optimal decoding strategies and the characterization of relevant factors with impact on decoding performance remains an unmet need.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the identification of optimal decoding strategies and the characterization of relevant factors with impact on decoding performance remains and unmet need.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This unmet need is explicitly stated in the Introduction.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The analysis is retrospective in nature.",
+    "claim_type": "EXPLICIT",
+    "source": "Our analysis is retrospective in nature and the data were obtained in context of a Go/No-Go task, which may have implications on the generalizability of the findings in the application during naturalistic behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is explicitly stated in the Discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "All model training and evaluations were conducted offline.",
+    "claim_type": "EXPLICIT",
+    "source": "All model training and evaluations were conducted offline.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This methodological detail is explicitly stated in the Discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The overall number of patients in this study is low.",
+    "claim_type": "EXPLICIT",
+    "source": "The overall number of patients in this study is low. This may have limited a more detailed analysis of bias and other factors, beyond the described correlation of clinical symptom severity, subthalamic beta burst dynamics, electrode location and connectomics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is explicitly acknowledged in the Discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The signal to noise ratio may impact decoding accuracies differently for ECoG and LFP signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Most importantly, the signal to noise ratio may further impact decoding accuracies differently for ECoG and LFP signals. This could in part explain why decoding from ECoG signals may benefit more from complex and non-linear model architectures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This potential confound is discussed as a limitation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The comparability of ECoG and LFP recordings was affected by the higher number of available ECoG channels compared to only three bipolar LFP channels.",
+    "claim_type": "EXPLICIT",
+    "source": "The comparability of ECoG and LFP recordings was further affected by the higher number of available ECoG channels, when compared to only three bipolar LFP channels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is explicitly acknowledged in the Discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The large effect size of superior decoding performances with ECoG may indicate that the bias from different channel numbers does not relevantly impact the interpretation of findings.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the large effect size of superior decoding performances with ECoG may indicate that this bias does not relevantly impact the interpretation of our findings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This interpretation is stated in the Discussion.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The relatively small amount of available data per patient was constrained by the intraoperative setting.",
+    "claim_type": "EXPLICIT",
+    "source": "An additional limitation was the relatively small amount of available data per patient, which was constrained by the intraoperative setting (see Table 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is explicitly stated in the Discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "For deep learning approaches, better performances are expected with increased dataset sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "For deep learning approaches, we expect better performances with increased dataset sizes, which may become available, either through externalized extraoperative recordings (He et al., 2021) or sensing enabled implantable devices (Opri et al., 2020; Gilron et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This expectation is stated in the Discussion with supporting citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The finding that decoding performances from single contacts outperform multi-electrode models may be a consequence of short recording durations, suboptimal computational model selection, and the fact that sensorimotor cortex and STN are part of the same synchronized circuit.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, our finding that decoding performances from single contacts outperform multi-electrode models may be a consequence of a combination of short recording durations in this study, suboptimal computational model selection and the fact that sensorimotor cortex and STN are part of the same circuit that is synchronized in oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This interpretation is stated in the Discussion.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The exploration of the neural feature space in this study was non-exhaustive.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we should acknowledge that the exploration of the neural feature space in this study was non-exhaustive, and further raw data features, such as the local motor potential (Mehring et al., 2004), waveform shape features (Cole and Voytek, 2017), and aperiodic signal components (Wilson et al., 2022) could further improve decoding performances in future movement decoding studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is explicitly acknowledged in the Discussion.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "ECoG-based movement decoding of varying movement types has been previously investigated in epilepsy patients.",
+    "claim_type": "EXPLICIT",
+    "source": "ECoG-based movement decoding of varying movement types has been previously investigated in epilepsy patients that underwent electrophysiological monitoring (Leuthardt et al., 2004) through which local motor potentials and gamma band activity were highlighted as informative features (Gunduz et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "First analyses based on STN-LFPs in PD patients have shown that Wiener Filter architectures can be successfully used for grip-force decoding.",
+    "claim_type": "EXPLICIT",
+    "source": "First analyses based on STN-LFPs in PD patients have shown that Wiener Filter architectures can be successfully used for grip-force decoding (Tan et al., 2016; Shah et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The present study extends previous reports to a continuous non-trial-based decoding approach.",
+    "claim_type": "EXPLICIT",
+    "source": "The present study extends these previous reports to a continuous non-trial-based decoding approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This extension is stated in the Discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "A direct comparison of ECoG and LFP performance with relation to systematic machine learning methods was lacking in previous literature.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, a direct comparison of ECoG and LFP performance with relation to systematic machine learning methods was lacking.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This gap in the literature is stated in the Discussion.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "It is difficult to derive the relative importance of different brain regions for grip-force and vigor processing from the comparison of ECoG and LFP due to differences in electrode size, shape, and spatial orientation.",
+    "claim_type": "EXPLICIT",
+    "source": "While this finding is robust, we should acknowledge that the size and shape of electrodes (see Supplementary file 1a) and the spatial orientation and size of the neural architectures that are sampled are not directly comparable across these methods. Thus, it is difficult to derive the relative importance of the different brain regions for grip-force and vigor processing in motor control from this comparison.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is explicitly acknowledged in the Discussion.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The machine learning approach developed in this study can be adopted to extend the clinical utility of invasive brain stimulation approaches for other brain disorders.",
+    "claim_type": "EXPLICIT",
+    "source": "In the future, this machine learning approach can be adopted to extend the clinical utility of invasive brain stimulation approaches for other brain disorders, e.g. through decoding of tics or obsessive compulsive behavior in neuropsychiatric DBS indications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This potential application is stated in the Discussion.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Different control policies of subthalamic beta band activity are now tested in clinical trials to improve the treatment for patients with akinetic rigid dominant PD.",
+    "claim_type": "EXPLICIT",
+    "source": "For Parkinson's disease, different control policies of subthalamic beta band activity are now tested in clinical trials to improve the treatment for patients with akinetic rigid dominant PD (https://clinicaltrials.gov/ Identifier: NCT04681534, NCT04547712) (Little et al., 2013; Arlotti et al., 2018; Velisar et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by clinical trial identifiers and citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "ECoG recordings were previously used to successfully decode the presence of dyskinesia through elevated levels of gamma band synchronization.",
+    "claim_type": "EXPLICIT",
+    "source": "Beyond subthalamic beta power, ECoG recordings were previously used to successfully decode the presence of dyskinesia through elevated levels of gamma band synchronization. This could be used to reduce stimulation intensity to alleviate medication and stimulation induced dyskinesia (Swann et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to a previous study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Single biomarker approaches have the advantage that pathophysiological mechanisms may be the direct target of intervention.",
+    "claim_type": "EXPLICIT",
+    "source": "Such single biomarker approaches have the advantage that pathophysiological mechanisms may be the direct target of intervention, while machine learning based decoding methods derive correlates of symptoms and behavior indirectly through learning potentially noisy correlations (Neumann et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This comparison is stated in the Discussion with a supporting citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Single biomarkers alone cannot account for the diverse and complex set of clinical signs of PD and behavior during gait, speech, and tremor.",
+    "claim_type": "EXPLICIT",
+    "source": "However, single biomarkers alone cannot account for the diverse and complex set of clinical signs of PD and behavior, for example during gait (Molina et al., 2021; Thenaisie et al., 2022), speech, and tremor (Hirschmann et al., 2013; Hirschmann et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is stated in the Discussion with supporting citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "A versatile decoding based control algorithm may further improve clinical outcome for PD patients in the future.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, a versatile decoding based control algorithm may further improve clinical outcome for these patients in the future (Neumann et al., 2019; Merk et al., 2022a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This potential future application is stated in the Discussion with supporting citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Machine learning-based decoding has been successfully described in first translational breakthrough studies.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, machine learning-based decoding has been successfully described in first translational breakthrough studies (Opri et al., 2020; Gilron et al., 2021; He et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to recent studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Future aDBS studies increasing DBS amplitude during periods of higher movement vigor may advance the successful treatment of bradykinesia in PD.",
+    "claim_type": "EXPLICIT",
+    "source": "In a complementary approach, we focused on direct grip-force decoding, motivated by the hypothesis that future aDBS studies increasing DBS amplitude during periods of higher movement vigor may advance the successful treatment of bradykinesia in PD.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This hypothesis is stated in the Discussion.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Beta power correlates negatively with phasic dopamine release.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, recent reports that beta power correlates negatively with phasic dopamine release may further substantiate the idea of movement/kinematics based STN stimulation to support intrinsic movement related dopamine signals (Schwerdt et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to a recent study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The proposed adaptive stimulation would require a fast algorithmic adaptation of stimulation to ongoing behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the proposed adaptive stimulation would require a fast algorithmic adaptation of stimulation to ongoing behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This requirement is stated in the Discussion.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Beta-activity-based adaptive stimulation can be well suited to track the patient's overall symptom state.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically for PD, beta-activity-based adaptive stimulation can be well suited to track the patient's overall symptom state (Tinkhauser and Moraud, 2021)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The utility of vigor-based stimulation and the combination of this approach with additional slower adaptation algorithms require further proof-of-concept studies before the clinical utility can be foreseen.",
+    "claim_type": "EXPLICIT",
+    "source": "The utility of vigor-based stimulation and the combination of this approach with additional slower adaptation algorithms, require further proof-of-concept studies before the clinical utility can be foreseen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This need for future research is stated in the Discussion.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Motor symptom severity can have direct and negative effects on decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "In our study, we demonstrate that motor symptom severity itself can have direct and negative effects on decoding performance, which we should keep in mind during clinical decision making.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is stated in the Discussion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The presence of beta bursts correlated with motor performance in cortex and STN.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies have shown that the presence of beta bursts correlated with motor performance in cortex (Little, 2019) and STN (Torrecillos et al., 2018), which could degrade decoding performance (Khawaldeh et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Dopamine was shown to precede and invigorate future movement.",
+    "claim_type": "EXPLICIT",
+    "source": "Dopamine was shown to precede and invigorate future movement (da Silva et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to a previous study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Decoding performance for clinical BCI may be drastically improved when adjusting brain signal recording sites to the underlying interconnected network that is relevant for encoding of the specific target behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Decoding performance for clinical BCI may be drastically improved when adjusting brain signal recording sites to the underlying interconnected network that is relevant for encoding of the specific target behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This principle is stated in the Discussion.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Broca's and Wernicke's regions form a network with direct connections via the Arcuate Fascicle.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, when decoding language or speech, one could envision that recordings at either Broca's or Wernicke's region could be helpful, but a combination of both could be optimal. The two regions form a network with direct connections via the Arcuate Fascicle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an example in the Discussion.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Proximity to landmarks alone does not reliably help the identification of optimal recording sites.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, proximity to landmarks alone does not reliably help the identification of optimal recording sites.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is stated in the Discussion based on the study findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Whole-brain connectomics outperform single region of interest based distance metrics for predicting informative recording locations.",
+    "claim_type": "EXPLICIT",
+    "source": "Given the complexity and vast distribution of movement related brain areas, from cerebellum to frontal cortex to parietal cortex, it may not be surprising that whole-brain connectomics outperform single region of interest based distance metrics for predicting informative recording locations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is stated in the Discussion based on the study findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Preoperative identification of brain networks would allow the design of optimal electrode architectures and targeted implantation to cover strategic nodes of distributed networks for decoding of clinical variables and behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Preoperative identification of brain networks would allow the design of optimal electrode architectures and targeted implantation to cover strategic nodes of distributed networks for decoding of clinical variables and behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This potential application is stated in the Discussion.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Connectomic approaches can inform the optimal spatial feature selection of pretrained machine learning models to facilitate brain signal decoding without the requirement for individual (re-)training.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, connectomic approaches can inform the optimal spatial feature selection of pretrained machine learning models to facilitate brain signal decoding without the requirement for individual (re-)training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This potential application is stated in the Discussion.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The connectomic models can be trained based on multiple dimensions of input-output relationships, for example for decoding of behavior like grip-force, but also for decoding clinical signs, such as tremor or mood disturbances.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the connectomic models that we used can be trained based on multiple dimensions of input-output relationships, for example for decoding of behavior like grip-force, but also for decoding clinical signs, such as tremor or mood disturbances.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This generalizability is stated in the Discussion.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "When implanting a high-density ECoG grid, connectomic analyses can generate target specific contact combinations, for example focusing on primary cortex for tremor and supplementary motor area for motor intention and bradykinesia.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, when implanting a high-density ECoG grid, connectomic analyses can generate target specific contact combinations, for example focusing on primary cortex for tremor and supplementary motor area for motor intention and bradykinesia.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This potential application is stated in the Discussion.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "In the future, neurosurgeons may not target individual sensing locations in isolation, but instead determine optimal implant trajectories in accordance with whole-brain connectomic fingerprints for optimal BCI performance.",
+    "claim_type": "EXPLICIT",
+    "source": "In the future, neurosurgeons may not target individual sensing locations in isolation, but instead determine optimal implant trajectories in accordance with whole-brain connectomic fingerprints for optimal BCI performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This future direction is stated in the Discussion.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Future neurotechnological treatments may have the potential to outperform traditional drug regimes, due to a key advantage in the temporal and spatial precision of therapeutic delivery.",
+    "claim_type": "EXPLICIT",
+    "source": "We hypothesize that future neurotechnological treatments may have the potential to outperform traditional drug regimes, due to a key advantage in the temporal and spatial precision of therapeutic delivery towards a precision medicine approach for intelligent adaptive DBS (Neumann et al., 2019; Neumann and Rodriguez-Oroz, 2021; Merk et al., 2022a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This hypothesis is stated in the Conclusion with supporting citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "The study is based on previously published data.",
+    "claim_type": "EXPLICIT",
+    "source": "The current study is based on previously published data (Alhourani et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Materials and methods section.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The study was approved by the Institutional Review Board of the University of Pittsburgh under protocol #PRO13110420.",
+    "claim_type": "EXPLICIT",
+    "source": "In accordance with protocol #PRO13110420, approved by the Institutional Review Board of the University of Pittsburgh, informed consent for all patients was obtained prior to any surgical procedure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The ethical approval is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "UPDRS Part III scores for the off-medication conditions were collected in a time period of 1-3 months prior to surgery by movement disorder neurologists.",
+    "claim_type": "EXPLICIT",
+    "source": "UPDRS Part III scores for the off-medication conditions were collected in a time period of 1\u20133 months prior to surgery by movement disorder neurologists.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The timing of clinical assessments is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "The behavioral task was previously described.",
+    "claim_type": "EXPLICIT",
+    "source": "The behavioral task performed for this study was previously described (Kondylis et al., 2016; Alhourani et al., 2020; Fischer et al., 2020) and it is schematically shown in Figure 1A.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Materials and methods section with supporting citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "Time-series were virtually streamed as continuous data to simulate real-time grip-force decoding, irrespective of task trials.",
+    "claim_type": "EXPLICIT",
+    "source": "In the present analyses, time-series were virtually streamed as continuous data to simulate real-time grip-force decoding, irrespective of task trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This methodological approach is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The task paradigm was implemented using the Psychophysics Toolbox on a portable computer.",
+    "claim_type": "EXPLICIT",
+    "source": "The task paradigm was implemented using the Psychophysics Toolbox (Brainard, 1997) on a portable computer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The software used is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "All sessions containing valid movements were merged per subject for further analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "As the present study focuses on grip-force decoding performance based on the electrophysiological signals, all sessions containing valid movements were merged per subject for further analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This data processing step is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "Subdural electrode reconstructions were obtained by aligning pre-operative MRI, intra-operative fluoroscopy, and postoperative CT.",
+    "claim_type": "EXPLICIT",
+    "source": "Subdural electrode reconstructions were obtained by aligning pre-operative MRI, intra-operative fluoroscopy, and postoperative CT.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The reconstruction method is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "The CT and MRI were co-registered using mutual information using the SPM software library.",
+    "claim_type": "EXPLICIT",
+    "source": "In short, the CT and MRI were co-registered using mutual information using the SPM software library and rendered onto 3D skull and brain surfaces using Osirix (v7.5) (Rosset et al., 2004) and Freesurfer (v5.3) software packages (Dale et al., 1999), respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The co-registration method is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Deep brain stimulation electrode locations were reconstructed using the advanced neuroimaging pipeline defined by Lead-DBS using default settings.",
+    "claim_type": "EXPLICIT",
+    "source": "Deep brain stimulation electrode locations were reconstructed using the advanced neuroimaging pipeline defined by Lead-DBS using default settings (Horn et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The reconstruction method is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Preoperative MRI and postoperative CT scans were co-registered and normalized to MNI 2009b NLIN ASYM space.",
+    "claim_type": "EXPLICIT",
+    "source": "In brief, preoperative MRI and postoperative CT scans were co-registered and normalized to MNI 2009b NLIN ASYM space.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The normalization procedure is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The preprocessing pipeline was optimized for real-time performance and inspired by the Berlin Brain Computer Interface.",
+    "claim_type": "EXPLICIT",
+    "source": "The entire preprocessing pipeline used in the present study was optimized for real-time performance and inspired by the Berlin Brain Computer Interface (Blankertz, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The pipeline design is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "Processing was performed in Python using custom code based on MNE-python, mne_bids and pybv.",
+    "claim_type": "EXPLICIT",
+    "source": "Processing was performed in Python using custom code based on MNE-python (Gramfort et al., 2013), mne_bids (Appelhoff et al., 2019) and pybv (https://pybv.readthedocs.io/en/stable/).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The software tools used are explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "All raw data files were saved in the iEEG-BIDS structure.",
+    "claim_type": "EXPLICIT",
+    "source": "All raw data files were saved in the iEEG-BIDS structure (Holdgraf et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The data format is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "The force traces were cleaned using a normalization approach presented for previous ECoG finger trajectory decoding.",
+    "claim_type": "EXPLICIT",
+    "source": "To account for baseline drifts, the force traces were cleaned using a normalization approach presented for previous ECoG finger trajectory decoding (Xie et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The cleaning method is explicitly described in the Materials and methods section with a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "All features were clipped as an artifact rejection mechanism when they exceeded a normalized value of [-2 2].",
+    "claim_type": "EXPLICIT",
+    "source": "All features were clipped as an artifact rejection mechanism when they exceeded a normalized value of [\u20132 2].",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The artifact rejection procedure is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "The used normalization is fully compatible with a real-time prediction approach, as data acquired in the future do not influence the present predictions.",
+    "claim_type": "EXPLICIT",
+    "source": "The used normalization is fully compatible with a real-time prediction approach, as data acquired in the future do not influence the present predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This property of the normalization is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "Morlet wavelets (7 cycles) were used for visualization of the entire time-frequency decomposition.",
+    "claim_type": "EXPLICIT",
+    "source": "For the purpose of visualization, Morlet wavelets (7 cycles) were used to demonstrate the entire time-frequency decomposition (Figure 1C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The visualization method is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "Post-hoc assessment confirmed convergence in performance after a maximum of 5 rounds in all recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "Post-hoc assessment confirmed convergence in performance after a maximum of 5 rounds in all recordings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This convergence finding is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "The study investigated elastic net regularized linear models, linear Wiener filters, neural networks, gradient boosted decision trees (XGBOOST) and source power comodulation.",
+    "claim_type": "EXPLICIT",
+    "source": "The present study investigated commonly used and promising linear and non-linear machine learning algorithms, specifically elastic net regularized linear models, linear Wiener filters, neural networks, gradient boosted decision trees (XGBOOST) and source power comodulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The machine learning methods are explicitly listed in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "Linear models can capture underlying feature dependencies and reveal those as correlations in each weight parameter.",
+    "claim_type": "EXPLICIT",
+    "source": "Linear models can capture underlying feature dependencies and reveal those as correlations in each weight parameter.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This property of linear models is stated in the Materials and methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "The implementation of elastic net models was done using the scikit learn Python package.",
+    "claim_type": "EXPLICIT",
+    "source": "The implementation was done using the scikit learn Python package (Pedregosa, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The software package used is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "Wiener filters essentially implement a multivariable linear model with multiple time-steps.",
+    "claim_type": "EXPLICIT",
+    "source": "Wiener filters essentially implement a multivariable linear model with multiple time-steps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This characterization is stated in the Materials and methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Neural networks can learn non-linearities and have a higher risk to overfit with increasing complexity.",
+    "claim_type": "EXPLICIT",
+    "source": "While linear models and Wiener filters may underfit the data, neural networks can be very complex and have a higher risk to overfit with increasing complexity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This property of neural networks is stated in the Materials and methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "Neural networks were implemented using the TensorFlow framework.",
+    "claim_type": "EXPLICIT",
+    "source": "Neural Networks were implemented using the TensorFlow framework (Abadi, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The software framework used is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Decision trees and random forests were first described by Breiman, 2001.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, decision trees and random forests, first described by Breiman, 2001, were proven to be a robust, accurate and successful tool for solving machine learning tasks, including classification, regression, density estimation and manifold learning or semi-supervised learning (Gall and Lempitsky, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This historical attribution is stated in the Materials and methods section with a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "Random forests are an ensemble method consisting of many decision trees.",
+    "claim_type": "EXPLICIT",
+    "source": "Random forests are an ensemble method consisting of many decision trees.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This definition is stated in the Materials and methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "AdaBoost is an adaptive learning algorithm that builds up successive decision trees iteratively.",
+    "claim_type": "EXPLICIT",
+    "source": "AdaBoost (Schapire, 2009) is an adaptive learning algorithm that builds up successive decision trees iteratively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This description is stated in the Materials and methods section with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "Gradient Boosting fits each decision tree based on the residuals of a defined objective function.",
+    "claim_type": "EXPLICIT",
+    "source": "Gradient Boosting is built using the same concept. According to Empirical Risk Minimization it fits each decision tree based on the residuals of a defined objective function.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This description is stated in the Materials and methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "Source Power Comodulation (SPoC) is a state-of-the-art movement prediction approach.",
+    "claim_type": "EXPLICIT",
+    "source": "A state-of-the-art movement prediction approach is the source separating framework called Source Power Comodulation (SPoC) (D\u00e4hne et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This characterization is stated in the Materials and methods section with a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "SPoC was implemented using the MNE framework.",
+    "claim_type": "EXPLICIT",
+    "source": "SPoC was implemented using the MNE framework (Gramfort et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The software framework used is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "Bayesian Optimization formulates the hyperparameter search problem into an optimization problem.",
+    "claim_type": "EXPLICIT",
+    "source": "Bayesian Optimization formulates this problem into an optimization problem.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This description is stated in the Materials and methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "The implementation of Bayesian optimization was done using the scikit-optimize framework.",
+    "claim_type": "EXPLICIT",
+    "source": "The implementation was done using the scikit-optimize framework (https://scikit-optimize.github.io/stable/).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The software framework used is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "Previous studies have demonstrated that using a single optimal channel in the STN is advantageous over using all available channels.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies have repeatedly demonstrated that using a single optimal channel in the STN is advantageous over using all available channels (Shah et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to a previous study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "Addition of more channels leads to decreased generalization and higher risk of overfitting with little performance benefit.",
+    "claim_type": "EXPLICIT",
+    "source": "Most importantly, addition of more channels leads to decreased generalization and higher risk of overfitting with little performance benefit.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is made in the Materials and methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "The study adopted a previously validated approach to movement related burst analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "To investigate a potential relationship between grip-force decoding performance and beta burst activity, we have adopted a previously validated approach to movement related burst analyses (Torrecillos et al., 2018; Lofredi et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This methodological choice is stated in the Materials and methods section with supporting citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "In previous reports, the most informative metric was the 'time spent in burst'.",
+    "claim_type": "EXPLICIT",
+    "source": "In previous reports, the most informative metric was the 'time spent in burst' which is calculated as the sum of burst durations in the time period of interest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by reference to previous reports.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "The time spent in burst metric is directly proportional to the burst probability at a given time-point.",
+    "claim_type": "EXPLICIT",
+    "source": "This metric is directly proportional to the burst probability at a given time-point.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This relationship is stated in the Materials and methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "ECoG electrode recording locations were projected to normative structural and functional MRI data from the Parkinson's Progression Markers Initiative (PPMI) using Lead-DBS software.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, ECoG electrode recording locations were projected to normative structural and functional MRI data (Parkinson's Progression Markers Initiative [PPMI]; https://www.ppmi-info.org/) using Lead-DBS software in Matlab (https://www.lead-dbs.org/). (Horn et al., 2019)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The data projection method is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "The PPMI connectome has been used in context of DBS multiple times.",
+    "claim_type": "EXPLICIT",
+    "source": "The PPMI connectomes of patients with PD (n = 74) was priorly computed (Ewert et al., 2018) and has been used in context of DBS multiple times (Horn et al., 2017c; Neumann et al., 2018; de Almeida Marcelino et al., 2019; Lofredi et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "The study adapted three previously published methods leveraging normative connectomes as predictive models.",
+    "claim_type": "EXPLICIT",
+    "source": "We have adapted three previously published methods leveraging normative connectomes as predictive models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This methodological approach is stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "Only fibers with significant t-scores surviving FDR correction at an alpha level 0.05 were considered.",
+    "claim_type": "EXPLICIT",
+    "source": "Only fibers with significant t-scores surviving FDR correction at an alpha level 0.05 were considered further.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The statistical threshold is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "Statistical parametric mapping was used to confirm the described correlations of structural and functional connectivity using linear-mixed effects models.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, statistical parametric mapping was used to confirm the described correlations of structural and functional connectivity using linear-mixed effects models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This validation approach is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "Statistical voxel-wise correlation was corrected for multiple comparisons with random field theory as implemented in the Statistical parametric mapping (SPM12) toolbox.",
+    "claim_type": "EXPLICIT",
+    "source": "Statistical voxel-wise correlation between decoding performance and structural and functional connectivity, separate mixed effects models, with a subject based random effect, were corrected for multiple comparisons with random field theory as implemented in the Statistical parametric mapping (SPM12) toolbox (https://www.fil.ion.ucl.ac.uk/spm/).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The multiple comparison correction method is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "Functional connectivity strengths between recording sites and sensorimotor cortex, parietal lobe, striatum, and cerebellum accounted for decoding performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Functional connectivity strengths between recording sites and sensorimotor cortex (peak coordinate x = \u201338, y = \u201322, z=72), parietal lobe (x=6, y = \u201332, z=82), striatum (x = \u201334, y = \u201324, z=26). and cerebellum (x=18, y = \u201350, z = \u201350 and x = \u201322, y = \u201352, z = \u201354) accounted for decoding performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "A significant cluster in the sensorimotor region correlated with high decoding performance for structural connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, for structural connectivity, a significant cluster in the sensorimotor region (x = \u201344, y = \u201318, z=70) correlated with high decoding performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "Results are stated as mean \u00b1 standard deviation.",
+    "claim_type": "EXPLICIT",
+    "source": "Results are stated as mean \u00b1 standard deviation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This reporting convention is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "All significance testing was performed using two-sided Monte-Carlo permutation tests and bootstrapping.",
+    "claim_type": "EXPLICIT",
+    "source": "All significance testing was performed using two-sided Monte-Carlo permutation tests and bootstrapping.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The statistical testing approach is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "p-Values were obtained by shuffling value positions and determining the resulting original rho value percentile in the distribution of surrogate combinations.",
+    "claim_type": "EXPLICIT",
+    "source": "p-Values were obtained by shuffling value positions and determining the resulting original rho value percentile in the distribution of surrogate combinations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The p-value calculation method is explicitly described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "Spearman's correlations were performed because of small sample size and varying distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "Spearman's correlations were performed because of small sample size and varying distributions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The rationale for using Spearman's correlations is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "Clinical correlations were performed using preoperative UPDRS-III total scores.",
+    "claim_type": "EXPLICIT",
+    "source": "Clinical correlations were performed using preoperative UPDRS-III total scores.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The clinical measure used is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "Multiple comparisons were corrected by adjusting the significance threshold \u03b1 to the false discovery rate.",
+    "claim_type": "EXPLICIT",
+    "source": "Multiple comparisons were corrected by adjusting the significance threshold \u03b1 to the false discovery rate (Benjamini and Hochberg, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The multiple comparison correction method is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "All raw data in BIDS for iEEG format are openly available through the Harvard Dataverse.",
+    "claim_type": "EXPLICIT",
+    "source": "All raw data in BIDS for iEEG format are openly available through the Harvard Dataverse (https://doi.org/10.7910/DVN/IO2FLM).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The data availability is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "Code and derived source data for the reproduction of all figures and the machine learning and statistical analysis are provided through GitHub.",
+    "claim_type": "EXPLICIT",
+    "source": "Code and derived source data for the reproduction of all figures and the machine learning and statistical analysis are provided through GitHub (https://github.com/neuromodulation/ECoG_vs_STN; Merk, 2022b; copy archived at swh:1:rev:09d3ea5b846681d28edb26943b4315ae5f5a37dd).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The code availability is explicitly stated in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

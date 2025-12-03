@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C50",
+      "C51",
+      "C52",
+      "C18",
+      "C1",
+      "C73"
+    ],
+    "result": "Both unsigned RPEs at reward outcome and signed RPEs at reward cue dynamically modulate learning rate during reinforcement learning. Unsigned outcome RPEs boost learning rate (Pearce-Hall component), while signed cue RPEs anti-correlate with learning rate (Mackintosh component). Computational models including both components fit behavioral data better than models without these attentional components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 provide direct statistical evidence for RPE modulation of learning rates. Claims C50-C52 and C18 demonstrate that computational models incorporating both Pearce-Hall and Mackintosh components significantly outperform simpler models via likelihood-ratio tests. Model recovery analysis (C99) validates that the data can distinguish between competing models. The convergence of empirical learning rate analysis and formal model comparison provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C53",
+      "C2",
+      "C74"
+    ],
+    "result": "Unsigned RPEs at reward outcome enhance memory for outcome images across all experiments, with effects driven by both reward variance and change points. This effect extends weakly to cue images in Experiment 1 but not Experiment 2. Signed outcome RPEs do not influence memory for either cue or outcome images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 provide consistent statistical evidence across multiple experiments using both Bayesian hierarchical modeling and mixed-effects regression. The null effect of signed outcome RPEs (C32) is well-powered and consistent with prior work (cited). The differential effects on cue vs. outcome memory are appropriately qualified and supported by interaction analyses. Effect sizes and confidence intervals are reported throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C54",
+      "C55",
+      "C56",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Memory for cue events increases with learning in Experiment 2 but not Experiment 1. This increase is supported by signed cue RPEs (enhancing memory for higher-value cues) and unsigned cue RPEs (reflecting learned value separation). Individual learning performance predicts the magnitude of cue memory increase, particularly in the incidental memory condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 establish the differential pattern across experiments with appropriate statistical controls. Claims C33-C37 demonstrate the mechanistic contributions of both signed and unsigned cue RPEs with Bayesian and frequentist analyses. The individual differences analysis (C26-C27) provides converging evidence linking learning to memory enhancement. The failure to find effects in the 40\u00a2-60\u00a2 incidental condition (C24) is appropriately explained by worse learning performance in that condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "High reward variance in Experiment 1 produced an interaction effect on memory: lower memory for cue events and higher memory for outcome events compared to low variance conditions, with the effect significant for outcome events but not cue events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 report a significant interaction with appropriate statistical testing. However, the interpretation is somewhat limited as the within-interaction effects show significance only for outcome events. The result is consistent with the unsigned outcome RPE findings but the asymmetry between cue and outcome effects within the interaction warrants caution in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Participants showed better value learning in the easier 20\u00a2-80\u00a2 condition compared to the 40\u00a2-60\u00a2 condition, and better learning in the instructed memory version compared to the incidental memory version. Participants tested during the pandemic showed more pessimistic reward expectations overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 report straightforward manipulation checks and descriptive findings with appropriate statistical support. The pandemic effect (C16) is interesting but somewhat tangential to the main hypotheses. These results establish that the experimental manipulations worked as intended and document important differences between conditions that inform interpretation of memory results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Reward outcomes and value estimates alone did not predict memory when controlling for RPEs. In Experiment 2, value estimates were highly correlated with signed cue RPEs (r > 0.80) and showed trending or significant effects on memory, but these effects are attributable to prediction errors rather than values alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide appropriate control analyses demonstrating that RPE effects are not simply driven by reward magnitude or value. The high correlation between value estimates and cue RPEs (C40) is acknowledged and appropriately handled. The inference that effects are due to RPEs rather than values (C43) is supported by the null result in Experiment 1 where cue RPEs were absent. This strengthens the main RPE findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C58",
+      "C72"
+    ],
+    "result": "In choice tests, participants preferred images associated with higher rewards and values in both instructed and incidental memory conditions. When choosing between cue and outcome images from the same trial (same reward/value), signed outcome RPEs biased preference toward outcome events, an effect that persisted when controlling for unsigned RPEs and may reflect affective changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 demonstrate robust preference effects with appropriate statistical modeling. The 'irrational' preference effect (C58) is well-controlled and provides novel insight into signed RPE effects on preference despite null memory effects. The affective interpretation (C72) is appropriately qualified as speculative but is supported by citations. The choice data provide converging evidence for value learning and reveal dissociations between memory and preference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C66"
+    ],
+    "result": "The mnemonic benefits of RPEs are not due to strategic encoding, as similar results were obtained in both instructed and incidental memory conditions. The findings demonstrate a collaborative interaction between reinforcement learning and episodic memory systems, with more rewarding cues and surprising outcomes prioritized in memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by the replication of key effects across instructed and incidental memory conditions, though some differences exist (e.g., C33 vs C34). Claim C66 appropriately synthesizes the overall pattern of results. The conclusion about non-strategic encoding is strengthened by the incidental memory condition, though the instructed condition showed some differences in learning (C15) that complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The manuscript reviews established neuroscientific knowledge about RPE signaling: dopaminergic systems convey signed RPEs and modulate hippocampal plasticity, while the locus coeruleus-norepinephrine system responds to unsigned RPEs and co-releases dopamine to the hippocampus. These systems are proposed to support different memory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 and C59-C62 accurately cite established literature on dopaminergic and noradrenergic signaling. The citations are appropriate and the characterizations are consistent with the cited work. These claims provide the theoretical framework for interpreting the behavioral findings but do not constitute novel empirical results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors predict that phasic signed RPEs at cue would initiate sustained reward anticipation leading to memory benefits for subsequent events, drawing on computational models and neural circuit proposals from prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is explicitly speculative and not tested in the current experiments. Claims C64-C65 accurately cite prior computational and neural circuit models but these are not validated here. While the speculation is reasonable given the findings, it remains untested and represents future work rather than a supported result from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Prior work has shown that reinforcement learning and memory systems can compete, with compromised feedback-based learning associated with enhanced episodic memory, contrasting with the collaborative interaction found in the current experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 accurately cite prior literature showing competition between learning and memory systems. These claims provide important context for interpreting the current collaborative findings but do not represent results from the current study. The citations are appropriate and the characterization is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study recruited 100 participants for Experiment 1, 400 for Experiment 2 instructed memory, and 500 for Experiment 2 incidental memory from Amazon Mechanical Turk. After applying exclusion criteria (memory score < 0.5 or >3 missed trials), final samples were 81, 331, and 354 participants respectively. Procedures were IRB-approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 provide straightforward methodological details about sample sizes, exclusions, and ethical approval. The exclusion criteria are reasonable and clearly stated. Sample sizes appear adequate based on the reported power analysis (C76). These are standard methodological details that are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The manuscript describes the experimental designs for Experiments 1 and 2, including trial structure, reward distributions, variance manipulations, memory tests, and choice tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C96 provide detailed methodological descriptions of the experimental procedures. These are clearly stated and internally consistent. The designs are appropriate for testing the stated hypotheses about RPE effects on learning and memory. These are standard methodological details necessary for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study employed appropriate computational modeling (Rescorla-Wagner variants), statistical analysis (mixed-effects models), and Bayesian hierarchical modeling approaches. Model recovery analysis validated that the data could distinguish between competing models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 describe the analytical approaches used. The methods are appropriate and well-established. Model recovery (C99) is a critical validation that strengthens confidence in model comparison results. The combination of frequentist and Bayesian approaches provides complementary perspectives. These methodological choices are sound and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Participants in Experiment 1 were paid 10% of rewards regardless of estimate accuracy to create a Pavlovian environment. Predictions were requested to ensure attention. The choice preference effects are consistent with RPEs driving affective state changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe design rationale that is reasonable and clearly stated. Claim C71 cites appropriate literature on RPEs and affect. These claims provide context for interpreting the Pavlovian learning paradigm and choice results, though C71's affective interpretation is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Prior work by the authors and others found that unsigned RPEs at outcome boost learning and memory, while signed RPEs at cue enhance memory, providing the foundation for the current hypotheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 accurately cite prior literature including the authors' own work and related studies. These citations appropriately motivate the current experiments and hypotheses. The characterization of prior findings is accurate based on the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C75"
+    ],
+    "result": "The study demonstrates that both signed and unsigned RPEs enhance memory, potentially through midbrain dopamine and locus coeruleus norepinephrine modulation of hippocampal plasticity, reconciling separate findings in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C75 represent high-level summary statements of the main findings. These are well-supported by the detailed results (C28-C37) and appropriately qualified regarding neural mechanisms ('potentially'). The claim to reconcile prior literature is reasonable given the demonstration of both signed and unsigned RPE effects in a single paradigm, though the neural mechanisms are inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  }
+]

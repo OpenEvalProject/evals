@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "OC43 and 229E phylogenies exhibit ladder-like topologies with temporal clustering, indicating single global populations. OC43 consists of two co-evolving lineages (A and B) that bifurcate from the root, with clock rates of 5\u00d710\u207b\u2074 and 6\u00d710\u207b\u2074 substitutions per site per year for OC43 and 229E respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are well-supported by phylogenetic data shown in Figure 1. The ladder-like topology, temporal clustering, lineage structure, and clock rates are directly observable in the phylogenetic trees and represent standard phylogenetic inference results with appropriate methodology described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Recombination is common in coronaviruses, with evidence of inter-gene recombination between RdRp and spike in OC43, and more limited intragenic recombination between S1 and S2 domains, consistent with the inverse relationship between genetic distance and recombination linkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by tanglegram analyses (Figure 1\u2014figure supplement 1) showing phylogenetic incongruence indicative of recombination. The observation that intragenic recombination is more limited than inter-gene recombination is consistent with established recombination biology and properly interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The S1 domain of spike in OC43 and 229E shows higher substitution rates and nonsynonymous divergence compared to S2 and RdRp. Nonsynonymous divergence increases steadily over time in spike (particularly S1) while remaining near zero in RdRp, suggesting positive selection on S1 and purifying selection on RdRp and S2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 are well-supported by divergence analysis data shown in Figures 2A and 3. The differential patterns of nonsynonymous vs synonymous divergence across genomic regions provide strong evidence for the inferred selective pressures. The methodology is appropriate and the conclusions follow logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The ratio of nonsynonymous divergence in spike to RdRp exceeds the equivalent synonymous ratio, and dN/dS estimates are higher in spike than RdRp and in S1 than S2. The OC43 spike dN/dS estimate (~0.3) is consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by data in Figure 3\u2014figure supplement 2 and Table 1. The divergence ratio analysis addresses potential confounding from differential synonymous rates, and the dN/dS results from MEME analysis corroborate the divergence findings. Agreement with prior literature (C66) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Using the Bhatt method, OC43 lineage A accumulated adaptive substitutions continuously in S1 (1.4 per year) but not in S2 or RdRp over >30 years. The linear accumulation pattern suggests continuous selective pressure. OC43 lineage B shows 1.7 adaptive substitutions per year in S1, while 229E shows 0.76 per year.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 are supported by Bhatt method analyses shown in Figures 4 and 5. The method is appropriate for detecting positive selection in RNA viruses, the linear accumulation pattern is clearly demonstrated, and the quantitative estimates include bootstrap confidence intervals. The interpretation of continuous selective pressure from linear accumulation is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Comparative analysis shows that OC43 and 229E S1 domains accumulate adaptive substitutions at rates similar to influenza B strains and approximately half the rate of influenza A/H3N2 HA1 (2-3\u00d7 faster than HCoVs). No adaptive substitutions were detected in measles receptor-binding protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by comparative Bhatt method analysis shown in Figure 6. The comparison provides important context for interpreting HCoV evolution rates. The methodology is consistently applied across viruses, and the results for influenza and measles align with known antigenic evolution patterns, validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Simulation analysis demonstrates that estimates of adaptive evolution using the Bhatt method are not biased by recombination events, as higher positive selection is detected regardless of recombination level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by simulation results in Figure 7. The simulations appropriately test whether recombination confounds the Bhatt method by varying both recombination and selection independently. The finding that selection strength, not recombination level, determines detected adaptation rates validates the method's robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "TMRCA analysis shows lower values in spike than RdRp and in S1 versus S2 for both OC43 lineage A and 229E, suggesting strong directional selection in S1 driven by immune evasion. The S1-S2 TMRCA difference also indicates intra-spike recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by TMRCA data in Table 2. The TMRCA patterns are consistent with directional selection reducing coalescence times in S1. However, the interpretation is complicated by recombination effects (C85), which the authors appropriately acknowledge. The inference of immune-driven selection is reasonable but somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "For HKU1, insufficient longitudinal sequencing data (41 isolates over 13 years) limits confident conclusions about adaptive evolution. When analyzed as one lineage, no signal is detected; when split into two lineages, HKU1 lineage A shows elevated S1 adaptation. Simulations confirm that limited data reduces detection power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C86-C91 appropriately acknowledge data limitations for HKU1. The simulation analysis (C90, Figure 7\u2014figure supplement 1) validates that sparse sampling reduces detection power and increases uncertainty. The authors correctly refrain from strong conclusions given these limitations, demonstrating appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Despite substantially more sequencing data for NL63 compared to HKU1 (159 isolates over 37 years), no evidence for adaptive evolution is observed in NL63 spike, likely reflecting an actual lack of adaptive evolution rather than insufficient data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by analyses shown in Figure 3\u2014figure supplement 1A and Figure 5\u2014figure supplement 1A, combined with adequate sample size. The conclusion that lack of signal reflects true absence of adaptation (rather than data limitations) is reasonable given the sample size and is consistent with prior observations of NL63 reinfection patterns (C36-C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C98",
+      "C127"
+    ],
+    "result": "OC43 and 229E undergo adaptive evolution in the S1 domain of spike protein exposed to human humoral immunity. The most parsimonious explanation is antigenic drift, where mutations escaping population immunity are positively selected, potentially contributing to reinfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C98, C127 represent the study's main conclusion, supported by converging evidence from multiple analyses (divergence, Bhatt method, TMRCA). The inference of antigenic drift is parsimonious and well-supported, though the authors appropriately note that alternative selective pressures are formally possible (C99). This is a major finding with important implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The estimated rates of adaptive evolution correlate with known antigenic drift rates and vaccine update frequencies for influenza and measles. Based on this comparison, vaccines against OC43 or 229E might require updates as frequently as influenza B components (4 updates since 2006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 are supported by the correlation between calculated rates and known vaccine update patterns, providing validation. However, C106 is speculative about future vaccine requirements. While the comparison is reasonable, vaccine update frequency depends on multiple factors beyond adaptation rate (e.g., clinical severity, cross-protection, immunological memory). The speculation is appropriately hedged with 'might' but remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The computational findings of S1 adaptive evolution agree with prior observations of 229E heterologous reinfection, OC43 genotype replacement, and frequent HCoV reinfection (every 1.5-2.5 years vs. 5 years for H3N2). Frequent reinfection likely results from combined waning immunity, incomplete protection, and antigenic drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113, C115-C117 appropriately contextualize the study's findings with prior literature. The agreement between computational and experimental/epidemiological observations strengthens the conclusions. The multifactorial explanation for reinfection frequency (C117) is appropriately nuanced, acknowledging that antigenic drift is one of several contributing factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "A 1980s human challenge study showed that subjects re-inoculated with the same 229E strain after ~1 year did not develop symptoms, but most subjects re-inoculated with heterologous strains did, suggesting strain-specific immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 accurately describe findings from Reed (1984). This prior work provides important context for interpreting the current study's findings of adaptive evolution. The inference of strain-specific immunity (C29) is reasonable from the challenge study results and supports the hypothesis of antigenic diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Prior studies identified eight OC43 genotypes with temporal replacement in East Asian populations and alternating prevalence of two genetic groupings in Japan. Previous dN/dS analyses suggested positive selection in OC43 and 229E spike, and antigenic differences may contribute to epidemic switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 accurately summarize prior literature with appropriate citations. These findings provide important context and motivation for the current study. The suggestion that antigenic differences contribute to epidemic switching (C35) is appropriately attributed to prior work and marked as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Prior surveillance in Kenya found that NL63 genotypes persist long-term, people are reinfected by the same genotype, and reinfections are sometimes enhanced by prior infection. These findings are inconsistent with antigenic evolution and suggest possible purifying selection at epitope sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C107-C110 accurately describe findings from Kiyuka et al. (2018) that contrast with the OC43/229E results. The inference that these observations are inconsistent with antigenic evolution (C39) is logical. The hypothesis of purifying selection (C110) is appropriately attributed to the cited authors and provides a potential mechanistic explanation for the different evolutionary patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C131"
+    ],
+    "result": "It is unclear whether findings for OC43 and 229E predict that SARS-CoV-2 will evolve adaptively in S1. If SARS-CoV-2 evolves like OC43, spike-based vaccines may require frequent reformulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129 and C131 are appropriately speculative about SARS-CoV-2 evolution. The authors correctly note uncertainty due to complexity of coronavirus receptor binding and pathology. The conditional statement about vaccine reformulation (C131) is reasonable but speculative. Notably, subsequent real-world data has shown SARS-CoV-2 does undergo significant antigenic evolution, partially validating this speculation, but this was unknown at time of writing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background information on seasonal coronaviruses: four HCoVs (OC43, 229E, NL63, HKU1) are endemic, causing typically mild infections with seasonal patterns and 2-4 year cycles. Three severe HCoVs (SARS-CoV-1, MERS, SARS-CoV-2) emerged in the past 20 years. No HCoV vaccines were available at time of writing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7-C15 provide established background knowledge with appropriate citations. These are well-documented facts about coronavirus epidemiology and biology that provide necessary context for the study. The temporal statement about vaccine availability (C14-C15) was accurate at time of writing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on viral evolution: coronaviruses have large (~30 kB) RNA genomes with error-prone polymerases and high recombination rates, creating diversity. Antigenic evolution leaves signatures of positive selection in surface proteins. Some RNA viruses (influenza) evolve antigenically requiring frequent vaccine updates, while others (measles) do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C26 provide established background knowledge about viral evolution with appropriate citations. These are well-documented principles of virology and evolutionary biology that frame the study's hypotheses and methods. The contrasting examples of influenza and measles effectively motivate the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "Methodological expectations: RdRp should be under purifying selection due to its essential function and lack of antibody exposure. If HCoVs evolve antigenically, adaptive evolution is expected in S1 due to its surface exposure and receptor interaction. Neutralizing antibodies bind both NTD and RBD within S1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C55 state reasonable a priori expectations based on established knowledge of coronavirus biology and immune responses. These hypotheses appropriately guide the analytical approach. The focus on S1 rather than just RBD (C55) is well-justified by antibody binding data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Coronavirus diversity and receptor binding: HCoVs span two genera (alpha: NL63, 229E; beta: OC43, HKU1, MERS, SARS, SARS-CoV-2) with diverse receptor usage. Protein-binding CoVs use S1-CTD while sugar-binding CoVs use S1-NTD, roughly aligning with observed mutation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 provide accurate background on coronavirus taxonomy and receptor binding with appropriate citations. The observation that mutation patterns align with receptor-binding domains (C126) provides biological plausibility for the adaptive evolution findings. This contextualizes why different HCoVs might show different evolutionary patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C132",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Methods: Sequences were obtained from ViPR, phylogenies constructed using IQ-Tree and TimeTree, adaptive evolution calculated using the Bhatt method, TMRCA estimated using PACT, and evolution simulated using SANTA-SIM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132, C135-C138 describe the computational methods used. The methods are appropriate for the research questions, well-established in the field, and adequately described. Code and data availability statements support reproducibility. The combination of multiple complementary methods strengthens the conclusions.",
+    "result_type": "MINOR"
+  }
+]

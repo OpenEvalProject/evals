@@ -1,0 +1,604 @@
+{
+  "submission": {
+    "id": "d29c7451-e3e8-4dd6-a8f9-60ccc804d5f2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:27:20.583072Z",
+    "updated_at": "2025-12-03T07:27:20.583072Z"
+  },
+  "content": [
+    {
+      "id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "submission_id": "d29c7451-e3e8-4dd6-a8f9-60ccc804d5f2",
+      "content_type": "manuscript",
+      "content_text": "# Optimal plasticity for memory maintenance during ongoing synaptic change\n\n## Authors\n\n- Dhruva V Raman<sup>1</sup> ([ORCID: 0000-0002-8992-1353](https://orcid.org/0000-0002-8992-1353)) \u2020\n- Timothy O'Leary<sup>1</sup> ([ORCID: 0000-0002-1029-0158](https://orcid.org/0000-0002-1029-0158)) \u2020\n\n### Affiliations\n\n1. Department of Engineering, University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nSynaptic connections in many brain circuits fluctuate, exhibiting substantial turnover and remodelling over hours to days. Surprisingly, experiments show that most of this flux in connectivity persists in the absence of learning or known plasticity signals. How can neural circuits retain learned information despite a large proportion of ongoing and potentially disruptive synaptic changes? We address this question from first principles by analysing how much compensatory plasticity would be required to optimally counteract ongoing fluctuations, regardless of whether fluctuations are random or systematic. Remarkably, we find that the answer is largely independent of plasticity mechanisms and circuit architectures: compensatory plasticity should be at most equal in magnitude to fluctuations, and often less, in direct agreement with previously unexplained experimental observations. Moreover, our analysis shows that a high proportion of learning-independent synaptic change is consistent with plasticity mechanisms that accurately compute error gradients.\n\n## Introduction\n\nLearning depends upon systematic changes to the connectivity and strengths of synapses in neural circuits. This has been shown across experimental systems (Moczulska et al., 2013; Lai et al., 2012; Hayashi-Takagi et al., 2015) and is assumed by most theories of learning (Hebb, 1949; Bienenstock et al., 1982; Gerstner et al., 1996).\n\nNeural circuits are required not only to learn, but also to retain previously learned information. One might therefore expect synaptic stability in the absence of an explicit learning signal. However, many recent experiments in multiple brain areas have documented substantial ongoing synaptic modification in the absence of any obvious learning or change in behaviour (Attardo et al., 2015; Pfeiffer et al., 2018; Holtmaat et al., 2005; Loewenstein et al., 2015; Yasumatsu et al., 2008; Loewenstein et al., 2011).\n\nThis ongoing synaptic flux is heterogeneous in its magnitude and form. For instance, the expected lifetime of dendritic spines in mouse CA1 hippocampus has been estimated as 1\u20132 weeks (Attardo et al., 2015). Elsewhere in the brain, over 70% of spines in mouse barrel cortex are found to persist for 18 months (Zuo et al., 2005), although these persistent spines exhibited large deviations in size over the imaging period (on average, a >25% deviation in spine head diameter).\n\nThe sources of these ongoing changes remain unaccounted for, but are hypothesised to fall into systematic changes associated with learning, development and homeostatic maintenance, and unsystematic changes due to random turnover (Rule et al., 2019; Mongillo et al., 2017; Ziv and Brenner, 2018). A number of experimental studies have attempted to disambiguate and quantify the contributions of different biological processes to overall synaptic changes, either by directly interfering with synaptic plasticity, or by correlating changes to circuit-wide measurements of ongoing physiological activity (Nagaoka et al., 2016; Quinn et al., 2019; Yasumatsu et al., 2008; Minerbi et al., 2009; Dvorkin and Ziv, 2016). Consistently, these studies find that the total rate of ongoing synaptic change is reduced by only 50% or less in the absence of neural activity or when plasticity pathways are blocked.\n\nThus, the bulk of steady-state synaptic changes seem to arise from fluctuations that are independent of activity patterns at pre/post synaptic neurons or known plasticity induction pathways. As such, it seems unlikely that their source is some external learning signal or internal reconsolidation mechanism. This is surprising, because maintenance of neural circuit properties and learned behaviour would intuitively require changes across synapses to be highly co-ordinated. To our knowledge, there is no theoretical account or model prediction that explains these observations.\n\nOne way of reconciling stable circuit function with unstable synapses is to assume that ongoing synaptic changes are localised to \u2018unimportant\u2019 synapses, which do not affect circuit function. While this may hold in particular circuits and contexts (Mongillo et al., 2017), at least some of the ongoing synaptic changes are likely associated with ongoing learning, which must somehow affect overall circuit function to be effective (Rule et al., 2020). Furthermore, this model does not account for the dominant contribution of fluctuations among those synapses that do not remain stable over time.\n\nIn this work we explore another, non-mutually exclusive hypothesis that active plasticity mechanisms continually maintain the overall function of a neural circuit by compensating changes that degrade memories and learned task performance. This fits within the broad framework of memory maintenance via internal replay and reconsolidation, a widely hypothesised class of mechanisms for which there is widespread evidence (Carr et al., 2011; Foster, 2017; Nader and Einarsson, 2010; Tronson and Taylor, 2007).\n\nCompensatory plasticity can be induced by external reinforcement signals (Kappel et al., 2018), interactions between different brain areas and circuits (Acker et al., 2018), or spontaneous, network-level reactivation events (Fauth and van Rossum, 2019). Either way, we can conceptually divide plasticity processes into two types: those that degrade previously learned information, and those that protect against such degradation. We will typically refer to memory-degrading processes as \u2018fluctuations\u2019. While these may be stochastic in origin, for example due to intrinsic molecular noise in synapses, we do not demand that this is the case. Fluctuations will therefore account for any synaptic change, random or systematic, that disrupts stored information.\n\nThe central question we address in this work is how compensatory plasticity should act in order to optimally maintain stored information at the circuit level, in the presence of ongoing synaptic fluctuations. To do this, we develop a general modelling framework and conduct a first-principles mathematical analysis that is independent of specific plasticity mechanism and circuit architectures. We find that the rate of compensatory plasticity should not exceed that of the synaptic fluctuations, in direct agreement with experimental measurements. Moreover, fluctuations should dominate as the precision of compensatory plasticity mechanisms increases, where \u2018precision\u2019 is defined as the quality of approximation of an error gradient. This provides a potential means of accounting for differences in relative magnitudes of fluctuations in different neural circuits. We validate our theoretical predictions through simulation. Together, our results explain a number of consistent but puzzling experimental findings by developing the hypothesis that synaptic plasticity is optimised for dynamic maintenance of learned information.\n\n## Results\n\n### Review of key experimental findings\n\nTo motivate the main analysis in this paper we begin with a brief survey of quantitative, experimental measurements of ongoing synaptic dynamics. These studies, summarised in Table 1, provide quantifications of the rates of systematic/activity-dependent plasticity relative to ongoing synaptic fluctuations.\n\n**Table 1.**\n Synaptic plasticity rates across experimental models, and the effect of activity suppression.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reference</th>\n      <th>Experimental system</th>\n      <th>Total baseline synaptic change</th>\n      <th>% synaptic change that is activity / learning-independent</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pfeiffer et al., 2018</td>\n      <td>Adult mouse hippocampus</td>\n      <td>40% turnover over 4 days</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Loewenstein et al., 2011</td>\n      <td>Adult mouse auditory cortex</td>\n      <td>&gt;70% of spines changed size by &gt;50% over 20 days</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Zuo et al., 2005</td>\n      <td>Adult mouse (barrel, primary motor, frontal) cortex</td>\n      <td>3\u20135% turnover over 2 weeks for all regions. 73.9 \u00b1 2.8% of spines stable over 18 months (barrel cortex)</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Nagaoka et al., 2016</td>\n      <td>Adult mouse visual cortex</td>\n      <td>8% turnover per 2 days in visually deprived environment. 15% in visually enriched environment. 7\u20138% in both environments under pharmacological suppression of spiking.</td>\n      <td>\u224850% (turnover)</td>\n    </tr>\n    <tr>\n      <td>Quinn et al., 2019</td>\n      <td>Glutamatergic synapses, dissociated rat hippocampal culture</td>\n      <td>28 \u00b1 3.7% of synapses formed over 24 hr period. 28.6 \u00b1 2.3% eliminated. Activity suppression through tetanus neurotoxin -light chain. Plasticity rate unmeasured.</td>\n      <td>\u224875% (turnover)</td>\n    </tr>\n    <tr>\n      <td>Yasumatsu et al., 2008</td>\n      <td>CA1 pyramidal neurons, primary culture, rat hippocampus</td>\n      <td>Measured rates of synaptic turnover and spine-head volume change. Baseline conditions vs activity suppression (NMDAR inhibitors). Turnover rates: 32.8 \u00b1 3.7% generation/elimination per day (control) vs 22.0 \u00b1 3.6% (NMDAR inhibitor). Rate of spine-head volume change:</td>\n      <td>\u224867\u00b117% (turnover). Size-dependent, but consistently &gt;50% (spine-head volume)</td>\n    </tr>\n    <tr>\n      <td>Dvorkin and Ziv, 2016</td>\n      <td>Glutamatergic synapses in cultured networks of mouse cortical neurons</td>\n      <td>Partitioned commonly innervated (CI) synapses sharing same axon and dendrite, and non-CI synapses. Quantified covariance in fluorescence change for CI vs non-CI synapses to estimate relative contribution of activity histories to synaptic remodelling</td>\n      <td>62\u201364% (plasticity)</td>\n    </tr>\n    <tr>\n      <td>Minerbi et al., 2009</td>\n      <td>Rat cortical neurons in primary culture</td>\n      <td>Created \u2018relative synaptic remodeling measure\u2019 (RRM) based on frequency of changes in the rank ordering of synapses by fluorescence. Compared baseline RRM to when neural activity was suppressed by tetrodotoxin (TTX). RRM: 0.4 (control) vs 0.3 (TTX) after 30 hr.</td>\n      <td>\u224875% (plasticity)</td>\n    </tr>\n    <tr>\n      <td>Kasthuri et al., 2015</td>\n      <td>Adult mouse neocortex (Three-dimensional post mortem reconstruction using electron microscopy).</td>\n      <td>Data on 124 pairs of \u2018redundant\u2019 synapses sharing a pre/post-synaptic neuron was analysed in Dvorkin and Ziv, 2016. They calculated the correlation coefficient of spine volumes and post-synaptic density sizes between redundant pairs. This should be one if pre/post-synaptic activity history perfectly explains these variables.</td>\n      <td>77% (post-synaptic density, r2=0.23). 66% (spine volume, r2=0.34)</td>\n    </tr>\n    <tr>\n      <td>Ziv and Brenner, 2018</td>\n      <td>Literature review across multiple systems</td>\n      <td>\u2018Collectively these findings suggest that the contributions of spontaneous processes and specific activity histories to synaptic remodeling are of similar magnitudes\u2019</td>\n      <td>\u224850%</td>\n    </tr>\n  </tbody>\n</table>\n\nWe focused on studies that measured \u2018baseline\u2019 synaptic changes that occur outside of any behavioural learning paradigm, and which controlled for stimuli that may induce widespread changes in synaptic strength. The approaches fall into two categories:\n\nThe studies in Table 1 consistently report that the the main component (more than 50%) of baseline synaptic dynamics is due to synaptic fluctuations that are independent of neural activity and/or easily identifiable plasticity signals. This is surprising because such a large contribution of fluctuations might be expected to disrupt circuit function. A key question that we address in this study is whether such a large relative magnitude of fluctuations can be accounted for from first principles, assuming that neural circuits need to protect overall function against perturbations.\n\nThe hypothesis we assumed is that some active plasticity mechanism compensates for the degradation of a learned memory trace or circuit function caused by ongoing synaptic fluctuations. We will thus express overall plasticity as a combination of synaptic fluctuations (task-independent processes that degrade memory quality) and compensatory plasticity, which counteracts this effect. There are various ways such a compensatory mechanism might access information on the integrity of overall circuit function, memory quality or \u2019task performance\u2019. It could use external reinforcement signals (Kappel et al., 2018; Rule et al., 2020). Alternatively, such information could come from another brain region, as hypothesised in for example Acker et al., 2018, where cortical memories are stabilised by hippocampal replay events. Spontaneous, network-level reactivation events internal to the neural circuit itself could also plausibly induce performance-increasing plasticity (Fauth and van Rossum, 2019). Regardless, the decomposition of total ongoing plasticity into fluctuations and systematic plasticity allows us to derive relationships between both that are independent of the underlying mechanisms, which are not the focus of this study.\n\nWe must acknowledge that it is difficult, experimentally, to pin down and control for all physiological factors that regulate synaptic changes, or indeed to measure such changes accurately. However, even if one does not take the observations in Table 1 \u2013 or their interpretation \u2013 at face value, the conceptual question we ask remains relevant for any neural circuit that needs to retain information in the face of ongoing synaptic change.\n\n### Modelling setup\n\nSuppose a neural circuit is maintaining previously learned information on a task. The circuit is subject to task-independent synaptic fluctuations which can degrade the quality of learned information. Meanwhile, some compensatory plasticity mechanism counteracts this degradation. Throughout this paper, we treat \u2018memory\u2019 and \u2018task performance\u2019 as interchangeable because our framework analyses the effect of synaptic weight change on overall circuit function. In this context, we ask:\n\nif a network optimally maintains learned task performance, what rate of compensatory plasticity is required relative to the rate of synaptic fluctuations?\n\nBy \u2018rate\u2019 we mean magnitude of change in a given time interval. Our setup is depicted in Figure 1. We make the following assumptions, which are also stated mathematically in Box 1:\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62912/elife-62912-fig1-v2.jpg)\n\n**Figure 1.:** (a) We consider a network attempting to retain previously learned information that is subject to ongoing synaptic changes due to synaptic fluctuations and compensatory plasticity. (b) Simulations performed in this study use an abstract, rate based neural network (described in section Motivating example). The rate of synaptic fluctuations is constant over time. By iteratively increasing the compensatory plasticity rate in steps we observe a \u2018sweet-spot\u2019 compensatory plasticity rate, which is lower than that of the synaptic fluctuations, and which best controls task error. (c) A snapshot of the simulation described in b, at the point where the rates of synaptic fluctuations and compensatory plasticity are matched. Even as task error fluctuates around a mean value, individual weights experience systematic changes.\n\nThe magnitude and direction of plasticity may or may not change continually over time. Correspondingly, we may pick an appropriately small time interval, $\u0394\u2062t$, (which is not necessarily infinitesimally small) over which the directions of plasticity can be assumed constant, and write\n\n$$\n\u0394\u2062\ud835\udc30\u2062(t)=\u0394\u2062\ud835\udc1c\u2062(t)+\u0394\u2062\u03f5\u2062(t),\n$$\n\nwhere for any time-dependent variable $x\u2062(t)$, we use the notation $\u0394\u2062x\u2062(t):=x\u2062(t+\u0394\u2062t)-x\u2062(t)$. We regard $\u0394\u2062\ud835\udc1c\u2062(t)$ and $\u0394\u2062\u03f5\u2062(t)$ as coming from unknown probability distributions, which obey the following constraints:\n\n### Motivating example\n\nHaving described a generic modelling framework, we next uncover a key observation using a simple simulation.\n\nFigure 1 depicts an abstract, artificial neural network trying to maintain a given input-output mapping over time, which is analogous to preservation of a memory trace or learned task. At every timestep, synaptic fluctuations corrupt the weights, and a compensatory plasticity mechanism acts to reduce any error in the input-output mapping (see Equation (1)). We fix the rate (i.e. magnitude per timestep) of synaptic fluctuations throughout. We increase the compensatory plasticity rate in stages, ranging from a level far below the synaptic fluctuation rate, to a level far above it. Each stage is maintained so that task error can settle to a steady state.\n\nTwo interesting phenomena emerge. The task error of the network is smallest when the compensatory plasticity rate is smaller than the synaptic fluctuation rate (Figure 1b). Meanwhile, individual weights in the network continually change even as overall task error remains stable due to redundancy in the weight configuration (Figure 1c), (see e.g. Rule et al., 2019 for a review).\n\nIn this simple simulation, we made a number of arbitrary and non-biologically motivated choices. In particular, we used an abstract, rate-based network, and synthesised compensatory plasticity directions using the biologically questionable backpropagation rule (see Materials and methods for full simulation details). Nevertheless, Figure 1 highlights a phenomenon that we claim is more general:\n\nThe \u2018sweet-spot\u2019 compensatory plasticity rate that leads to optimal, steady-state retention of previously learned information is at most equal to the rate of synaptic fluctuations, and often less.\n\nIn the remainder of the results section, we will build intuition as to when and why this claim holds. We will also explore factors influence the precise \u2018sweet-spot\u2019 compensatory plasticity rate.\n\n### The loss landscape\n\nIn order to analyse a general learning scenario that can accommodate biologically relevant assumptions about synaptic plasticity, we will develop a few general mathematical constructs that will allow us to draw conclusions about how synaptic weights affect the overall function of a network.\n\nWe first describe the \u2018loss landscape\u2019: a conceptually useful, geometrical visualisation of task error $F\u2062[\ud835\udc30]$ (see also Figure 2). Every point on the landscape corresponds to a different network state $\ud835\udc30$. Whereas any point on a standard three-dimensional landscape has two lateral (xy) co-ordinates, any point on the loss landscape has $N$ co-ordinates representing each synaptic strength. Plasticity changes $\ud835\udc30$, and thus corresponds to movement on the landscape. Any movement $\u0394\u2062\ud835\udc30$ has both a direction $\u0394\u2062\ud835\udc30^$ (where hats denote normalised vectors), and a magnitude $\u2225\u0394\u2062\ud835\udc30\u2225_{2}$. Meanwhile, the elevation of a point $\ud835\udc30$ on the landscape represents the degree of task error, $F\u2062[\ud835\udc30]$. Compensatory plasticity improves task error, and thus moves downhill, regardless of the underlying plasticity mechanism.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62912/elife-62912-fig2-v2.jpg)\n\n**Figure 2.:** (a) Task error is visualised as the height of a \u2018landscape\u2019. Lateral co-ordinates represent the values of different synaptic strengths (only two are visualisable in 3D). Any point on the landscape defines a network state, and the height of the point is the associated task error. Both compensatory plasticity and synaptic fluctuations alter network state, and thus task error, by changing synaptic strengths. Compensatory plasticity reduces task error by moving \u2018downwards\u2019 on the landscape. (b) Eventually, an approximate steady state is reached where the effect of the two competing plasticity sources on task error cancel out. The synaptic weights wander over a rough level set of the landscape. (c) The effect of synaptic fluctuations on task error depends on local curvature in the landscape. Top: a flat landscape without curvature. Even though the landscape is sloped, synaptic fluctuations have no effect on task error in expectation: up/downhill directions are equally likely. Bottom: Although up/downhill synaptic fluctuations are still equally likely, most directions are upwardly curved. Thus, uphill directions increase task error more, and downhill directions decrease task error less. So in expectation, synaptic fluctuations wander uphill.\n\n### Understanding curvature in the loss landscape\n\nIntuitively, one would expect task-independent synaptic fluctuations to increase task error. This is true even if fluctuations are unbiased in moving in an uphill or downhill direction on the loss landscape (see Equation (3a)) due to the curvature of the landscape (see Figure 2C). For instance, the slope (mathematically represented by the gradient $\\nabla\u2061F\u2062[\ud835\udc30]$) at the bottom of a valley is zero. However, every direction is positively curved, and thus moves uphill. More generally, consider a fluctuation that is unbiased in selecting uphill or downhill directions, at a network state $\ud835\udc30$. The fluctuation will increase task error in expectation if the total curvature of the upwardly curved directions at $\ud835\udc30$ exceeds that of the downwardly curved directions, as illustrated in Figure 2c. We refer to such a state as partially trained. If all directions are upwardly curved, such as at/near the bottom of a valley, we refer to the state as highly trained. Mathematical definitions for these terms are provided in Box 2.\n\nComparison of the upward curvature of different plasticity directions plays an important role in the remainder of the section. Therefore, we introduce the following operator:\n\n$$\nQ_{w}[v]=v^^{T}\u2207^{2}F[w]v^.\n$$\n\n$Q_{\ud835\udc30}\u2062[\ud835\udc2f]$ is mathematical shorthand for the degree of curvature in the direction $\ud835\udc2f$, at point $\ud835\udc30$ on the loss landscape, and is depicted in Figure 3a. Note that $Q_{\ud835\udc30}\u2062[\ud835\udc2f]$ depends solely upon the direction, and not the magnitude, of $\ud835\udc2f$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62912/elife-62912-fig3-v2.jpg)\n\n**Figure 3.:** (a) Geometrical intuition behind the operator $Q_{\ud835\udc30}$. The operator charts the degree to which a (normalised) direction is upwardly curved (i.e. lifts off the tangent plane depicted in grey). The red, shaded areas filling the region between the tangent plane and the upwardly curved directions are proportional to $Q_{\ud835\udc30}\u2062[v_{1}]$, and $Q_{\ud835\udc30}\u2062[v_{2}]$, respectively. (b) Compensatory plasticity points in a direction of locally decreasing task-error. Excessive plasticity in this direction can be detrimental, due to upward curvature (\u2018overshoot\u2019). The optimal magnitude for a given direction is smaller if upward curvature (i.e. the $Q$-value) is large, as for cases (i) and (ii), and if the initial slope is shallow, as for case (ii). It is greater if the initial slope is steep, as for case (iii). This intuition underlies Equation (6) for the optimal magnitude of a given compensatory plasticity direction, which includes as a coefficient the ratio of slope to curvature. (c) Equation (11) depends upon the ratio of the upward curvatures in the two plasticity directions, $\u0394\u2062\ud835\udc1c$, and $\u0394\u2062\u03f5$. As illustrated, steep downhill directions often exhibit more upward curvature than arbitrary directions. In such cases, the optimal magnitude of compensatory plasticity should be outcompeted by synaptic fluctuations.\n\n### An expression for the optimal degree of compensatory plasticity during learning\n\nThe rates of compensatory plasticity and synaptic fluctuations, at time $t$, are $\ud835\udc1c\u02d9\u2062(t)$ and $\u03f5\u02d9\u2062(t)$, respectively. These rates may change continually over time. Let\u2019s temporarily assume they are fixed over a small time interval $[t,t+\u0394\u2062t]$. Thus,\n\n$$\n\u0394c=c\u02d9(t)\u0394t\u0394\u03f5=\u03f5\u02d9(t)\u0394t.\n$$\n\nWhat magnitude of compensatory plasticity, $\u2225\u0394\u2062\ud835\udc1c\u2225_{2}$, most decreases task error over $\u0394\u2062t$? The answer is\n\n$$\n\u2016\u0394c\u2016_{2}^{\u2217}=\\frac{\u2212\u0394c^^{T}\u2207F^[w]}{Q_{w}[\u0394c]}\u2016\u2207F[w]\u2016_{2}.\n$$\n\nA mathematical derivation is contained in Box 3, with geometric intuition in Figure 3b. Note that our answer turns out to be independent of the synaptic fluctuation rate $\u03f5\u02d9\u2062(t)$. Here,\n\nFor now, Equation (6) is valid only if the compensatory plasticity direction is fixed during $\u0394\u2062t$. If we want Equation (6) to also be compatible with continually changing compensatory plasticity directions, it needs to be valid for an arbitrarily small $\u0394\u2062t$. However, enacting a non-negligible magnitude $\u2225\u0394\u2062\ud835\udc1c\u2225_{2}^{*}$ of plasticity over an arbitrarily small time interval $\u0394\u2062t$ would require an unattainable, \u2018infinitely-fast\u2019 plasticity rate.\n\nIn fact, we show in the next section that our expression for $\u2225\u0394\u2062\ud835\udc1c\u2225_{2}^{*}$ does become compatible with continuously changing plasticity at the end of learning, when task-error is stable.\n\n### Characterising the optimal rate of compensatory plasticity at steady state\n\nConsider a scenario where task error is approximately stable. In this case, $\u0394\u2062F\u22480$ over $\u0394\u2062t$. In this scenario, Equation (6) simplifies to\n\n$$\n\\frac{\u2016\u0394c\u2016_{2}^{\u22172}}{\u2016\u0394\u03f5\u2016_{2}^{2}}=\\frac{Q_{w}[\u0394\u03f5]}{Q_{w}[\u0394c]},\n$$\n\nas derived in Box 4 and illustrated geometrically in Figure 3c. We see that the magnitude $\u2225\u0394\u2062\ud835\udc1c\u2225_{2}^{*}$ is proportional to $\u2225\u0394\u2062\u03f5\u2225_{2}$, which is itself proportional to $\u0394\u2062t$ from Equation (5), given some fixed rate of synaptic fluctuations. Thus, $\u2225\u0394\u2062\ud835\udc1c\u2225_{2}^{*}$ is attainable even as $\u0394\u2062t$ shrinks to zero, and is thus compatible with continually changing compensatory plasticity directions. In this case, Equation (9) can be rewritten as\n\n$$\n\\frac{\u2016c\u02d9(t)\u2016_{2}^{\u2217,2}}{\u2016\u03f5\u02d9(t)\u2016_{2}^{2}}=\\frac{Q_{w}[\u03f5\u02d9(t)]}{Q_{w}[c\u02d9(t)]}.\n$$\n\nEquation (9) is a key result of the paper. It applies regardless of the underlying plasticity mechanisms that induced $\u0394\u2062\ud835\udc1c$ and $\u0394\u2062\u03f5$. It is compatible with continually or occasionally changing directions of compensatory plasticity (i.e. infinitesimal or non-infinitesimal $\u0394\u2062t$). It says that the optimal compensatory plasticity rate, relative to the rate of synaptic fluctuations, depends on the relative upward curvature of these two plasticity directions on the loss landscape.\n\nA corollary is that the optimal rate of compensatory plasticity is greater during learning than at steady state. If we substitute the steady-state requirement: $\ud835\udd3c\u2062[\u0394\u2062F]=0$, with the condition for learning: $\ud835\udd3c\u2062[\u0394\u2062F]<0$, in the derivation of Box 4, then we get\n\n$$\n\\frac{\u2016\u0394c\u2016_{2}^{\u22172}}{\u2016\u0394\u03f5\u2016_{2}^{2}}\\geq\\frac{Q_{w}[\u0394\u03f5]}{Q_{w}[\u0394c]}.\n$$\n\nIndeed, the faster the optimal potential learning rate $\ud835\udd3c\u2062[\u0394\u2062F]$, the greater the optimal compensatory plasticity rate. Thus $\u2225\u0394\u2062\ud835\udc1c\u2225_{2}^{*}$ decreases as learning slows to a halt, eventually reaching the level of Equation (9b).\n\n#### Main claim\n\nWe now claim that generically, the optimal compensatory plasticity rate should not outcompete the rate of synaptic fluctuations at steady state error. We will first provide geometric intuition for our claim, before bolstering with analytical arguments and making precise our notion of \u2018generically\u2019.\n\nFrom Equation (9), our main claim holds if\n\n$$\nQ_{w}[\u0394c]\\geqQ_{w}[\u0394\u03f5],\n$$\n\nthat is, $\u0394\u2062\ud835\udc1c$ points in a more upwardly curved direction than $\u0394\u2062\u03f5$. When would this be true?\n\nFirst consider $\u0394\u2062\u03f5$. Statistical independence from the task error means it should point in an \u2018averagely\u2019 curved direction. Mathematically (see SI secton 2.1), this means\n\n$$\nE[Q_{w}[\u0394\u03f5]]=\\frac{Tr(\u2207^{2}F[w])}{N}.\n$$\n\nOur assumption of \u2018average\u2019 curvature fails if synaptic fluctuations are specialised to \u2018unimportant\u2019 synapses whose changes have little effect on task error. In this case $Q_{\ud835\udc30}\u2062[\u0394\u2062\u03f5]$ would be even smaller, since $\u0394\u2062\u03f5$ would be constrained to consistently shallow, less-curved directions. Thus, this possibility does not interfere with our main claim.\n\nFor Equation (11) to hold, $\u0394\u2062\ud835\udc1c$ should point in directions of \u2018more-than-average\u2019 upward curvature. This follows intuitively because a steep downhill direction, which effectively reduces task error, will usually have higher upward curvature than an arbitrary direction (see Figure 3c for intuition). It remains to formalise this argument mathematically, and consider edge cases where it doesn\u2019t hold.\n\n### Dependence of the optimal magnitude of steady-state, compensatory plasticity on the mechanism\n\nCompensatory plasticity is analogous to learning, since it acts to reduce task error. We do not yet know the algorithms that neural circuits use to learn, although constructing biologically plausible learning algorithms is an active research area. Nevertheless, all the potential learning algorithms we are aware of fit into three broad categories. For each category, we shall show why and when our main claim holds. We will furthermore investigate quantitative differences in the optimal compensatory plasticity rate, across and within categories. A full mathematical justification of all the assertions we make is found in SI section 1.3.\n\nWe first highlight a few general points:\n\nLearning algorithms attempt to move to the bottom of the loss landscape. But they are blind. Spying a distant valley equates to \u2018magically\u2019 predicting that a very different network state will have very low task error. How do they find their way downhill? There are three broad strategies (Raman and O'Leary, 2021):\n\nTable 2 shows the categories for which our main claim holds.\n\n**Table 2.**\n Table elements highlighted in teal correspond to scenarios in which our main claim holds, as Equation (11) is satisfied.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Quadratic F\u2062[\ud835\udc30]</th>\n      <th>Nonlinear F\u2062[\ud835\udc30], low steady-state error</th>\n      <th>Nonlinear F\u2062[\ud835\udc30], high steady-state error</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0th order algorithm</td>\n      <td>Q\u2062[\u0394\u2062\ud835\udc1c]\u2248Q\u2062[\u0394\u2062\u03f5]</td>\n      <td>Q\u2062[\u0394\u2062\ud835\udc1c]\u2248Q\u2062[\u0394\u2062\u03f5]</td>\n      <td>Q\u2062[\u0394\u2062\ud835\udc1c]\u2248Q\u2062[\u0394\u2062\u03f5]</td>\n    </tr>\n    <tr>\n      <td>0st order algorithm</td>\n      <td>Q\u2062[\u0394\u2062\ud835\udc1c]\u2265Q\u2062[\u0394\u2062\u03f5]</td>\n      <td>Q\u2062[\u0394\u2062\ud835\udc1c]\u2265Q\u2062[\u0394\u2062\u03f5]</td>\n      <td>Q\u2062[\u0394\u2062\ud835\udc1c]\u2248Q\u2062[\u0394\u2062\u03f5]</td>\n    </tr>\n    <tr>\n      <td>0nd order algorithm</td>\n      <td>Q\u2062[\u0394\u2062\ud835\udc1c]\u2248Q\u2062[\u0394\u2062\u03f5]</td>\n      <td>Q\u2062[\u0394\u2062\ud835\udc1c]\u2248Q\u2062[\u0394\u2062\u03f5]</td>\n      <td>Q\u2062[\u0394\u2062\ud835\udc1c]\u2264Q\u2062[\u0394\u2062\u03f5]</td>\n    </tr>\n  </tbody>\n</table>\n\nWe first consider the simplest case of a quadratic loss function $F\u2062[\ud835\udc30]$. Here, directions of curvature in any direction are constant (mathematically, the hessian $\\nabla^{2}\u2061F\u2062[\ud835\udc30]$ does not vary with network state). Moreover, the gradient obeys a consistent relationship with the hessian:\n\n$$\n\u2207F[w]=\u2207^{2}F[w^{\u2217}](w\u2212w^{\u2217}).\n$$\n\nComponents of $(\ud835\udc30-\ud835\udc30^{*})$ with high upward curvature are magnified under the transformation $\\nabla^{2}\u2061F\u2062[\ud835\udc30^{*}]$, since they correspond to eigenvectors of $\\nabla^{2}\u2061F\u2062[\ud835\udc30^{*}]$ with high eigenvalue. Conversely, components with low upward curvature are shrunk. As the gradient $\\nabla\u2061F\u2062[\ud835\udc30]$ is the output of such a transformation from Equation (13), this suggests it is biased towards directions of high upward curvature. Indeed, we can quantify this bias. Let ${\\lambda_{i}}$ be the eigenvalues of $\\nabla^{2}\u2061F\u2062[\ud835\udc30^{*}]$, and ${c_{i}}$ the projections of the corresponding eigenvectors onto $\ud835\udc30-\ud835\udc30^{*}$. Then\n\n$$\nQ_{w}[\u2207F[w]]=\\frac{\\sumi=1Nc_{i}^{2}\\lambda_{i}^{3}}{\\sumi=1Nc_{i}^{2}\\lambda_{i}^{2}}.\n$$\n\nThe value of Equation (14) depends on the values ${c_{i}}$. In the \u2018average\u2019 case, where they are equal, and $\ud835\udc30-\ud835\udc30^{*}$ is thus a direction of \u2018average\u2019 curvature, $Q_{\ud835\udc30}\u2062[\\nabla\u2061F\u2062[\ud835\udc30]]\\geqQ_{\ud835\udc30}\u2062[\u0394\u2062\u03f5]$ holds. This inequality gap widens with increasing anisotropy in the curvature of different directions (i.e. with a wider spread of eigenvalues $\\lambda_{i}$, corresponding to more elliptical/less circular level sets in the illustration of Figure 4b). Indeed, simulation results in Figure 5\u2014figure supplement 1 (top row) show how the ratio $\u2225\u0394\u2062\ud835\udc1c\u2225_{2}:\u2225\u0394\u2062\u03f5\u2225_{2}$ that optimises steady-state task error is significantly less than one, in a quadratic error function where compensatory plasticity accurately follows the gradient, and for different synaptic fluctuation rates.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62912/elife-62912-fig4-v2.jpg)\n\n**Figure 4.:** Colours depict level sets of the loss landscape. Elliptical level sets correspond to a quadratic loss function (which approximates any loss function in the neighbourhood of a local minimum). In c and d, we depict compensatory plasticity and synaptic fluctuations as sequential, alternating processes for illustrative purposes, although they are modelled as concurrent throughout the paper. (a) Compensatory plasticity directions locally decrease task error, so point from darker to lighter colours. Optimal magnitude is reached when the vectors \u2018kiss\u2019 a smaller level set, that is, intersect that level set while running parallel to its border. Increasing magnitude past this past this point increases task error, by moving network state to a higher-error level set. (b) If compensatory plasticity is parallel to the gradient (i.e. it enacts gradient descent), then it runs perpendicular to the border of the level set on which it lies (i.e. the tangent plane). This is shown explicitly for the \u2018exact gradient\u2019 direction of plasticity. The optimal magnitude of plasticity in this direction is smaller than that of a corrupted gradient descent direction, even though the former is more effective in reducing task error, because the exact gradient points in a more highly curved direction. (c) Synaptic fluctuations of a certain magnitude perturb the network state. The optimal magnitude of compensatory plasticity (in the exact gradient descent direction, for this example) is significantly smaller than that of the synaptic fluctuations, using the geometric heuristic explained in (a). If the magnitude of compensation increased to match the synaptic fluctuation magnitude there would be overshoot, and task error would converge to a higher steady state. (d) If compensatory plasticity mechanisms can perfectly calculate both the local gradient and hessian (curvature) of the loss landscape, then network state will move in the direction of the \u2018Newton step\u2019. In the quadratic case (elliptical level sets), this will directly \u2018backtrack\u2019 the synaptic fluctuations. Thus, the optimal magnitude of compensatory plasticity will be equal to that of the synaptic fluctuations. However, time delays in the sensing of synaptic fluctuations and limited precision of the compensatory plasticity mechanism will preclude this.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62912/elife-62912-fig5-v2.jpg)\n\n**Figure 5.:** Each $(x,y)$ value on a given graph corresponds to an 8000 timepoint nonlinear neural network simulation (see \u2018Methods\u2019 for details). The $y$ value gives the steady-state task error (average task error of the last 500 timepoints) of the simulation, while the $x$ value gives the ratio of the magnitudes of the compensatory plasticity and synaptic fluctuations terms. Steady state error is averaged across 8 simulation repeats; shading depicts one standard deviation. Between graphs, we change simulation parameters. Down rows, we increase the proportionate noise corruption of the compensatory plasticity term (see Materials and methods section for details). Across columns, we increase the magnitude of synaptic fluctuations.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62912/elife-62912-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The description of this figure is identical to that of Figure 5. The only difference is the choice of network. Here, we use the linear networks as described in Methods.\n\nWhat about the case of a nonlinear loss function? Close to a minimum $\ud835\udc30^{*}$, the relationship of Equation (13) approximately holds (the loss function is locally quadratic). So if steady-state error is very low, we can directly transport the intuition of the quadratic case. However when steady state error increases, Equation (13) becomes increasingly approximate. In the limiting case, we could consider $\\nabla\u2061F\u2062[\ud835\udc30]$ as being completely uncorrelated from $\\nabla^{2}\u2061F\u2062[\ud835\udc30]$, in which case $Q_{\ud835\udc30}\u2062[\\nabla\u2061F\u2062[\ud835\udc30]]\u2248Q_{\ud835\udc30}\u2062[\u0394\u2062\u03f5]$ would hold. Numerical results in Figure 5 supports this assertion in nonlinear networks: the optimal ratio satisfies $\u2225\u0394\u2062\ud835\udc1c\u2225_{2}:\u2225\u0394\u2062\u03f5\u2225_{2}\u22481$ in conditions where steady-state task error is high, and $\u2225\u0394\u2062\ud835\udc1c\u2225_{2}:\u2225\u0394\u2062\u03f5\u2225_{2}\\leq1$ in conditions where it is low.\n\nOverall, we see that if $\u0394\u2062\ud835\udc1c\u221d-\\nabla\u2061F\u2062[\ud835\udc30]$ (i.e. compensatory plasticity enacts gradient descent), then we would expect compensatory plasticity to be outcompeted by synaptic fluctuations to maintain optimal steady-state error.\n\nEven if compensatory plasticity does not move in the steepest direction of error decrease (i.e. the error gradient), it must move in an approximate downhill direction to improve task error (see e.g. Raman et al., 2019). Furthermore, the worse the quality of the gradient approximation, the larger the optimal level of compensatory plasticity (illustrated conceptually in Figure 4b\u2013c, and numerically in Figure 5 and Figure 5\u2014figure supplement 1). Why? We can rewrite such a learning rule as\n\n$$\n\u0394\u2062\ud835\udc1c\u221d-\\nabla\u2061F\u2062[\ud835\udc30]+\u03bd,\n$$\n\nwhere $\u03bd$ represents systematic error in the gradient approximation. The upward curvature in the direction $\u0394\u2062\ud835\udc1c$ becomes a (nonlinear) interpolation of the upward curvatures in the directions $\\nabla\u2061F\u2062[\ud835\udc30]$ and $\u03bd$ (see Equation (A6) of the SI). As long as $\u03bd$ is less biased towards high curvature directions than $\\nabla\u2061F\u2062[\ud835\udc30]$ itself, then this decreases the upward curvature in the direction $\u0394\u2062\ud835\udc1c^$, and thus increases the optimal compensatory plasticity rate. Indeed Figure 5 shows in simulation that this rate increases for more inaccurate compensatory plasticity mechanisms.\n\nWe now turn to zero-order learning algorithms, such as REINFORCE. These do not explicitly approximate a gradient, but generate random plasticity directions, which are retained/opposed based upon their observed effect on task error. We would expect randomly generated plasticity directions to have \u2018average\u2019 upward curvature, similarly to synaptic fluctuations. In this case, we would therefore get $Q_{\ud835\udc30}\u2062[\u0394\u2062\ud835\udc1c]\u2248Q_{\ud835\udc30}\u2062[\u0394\u2062\u03f5]$, and compensatory plasticity should thus equal synaptic fluctuations in magnitude.\n\nFinally, we consider second-order learning algorithms, and in particular the Newton update:\n\n$$\n\\nabla^{2}\u2061F\u2062[\ud835\udc30]\u2062\u0394\u2062\ud835\udc1c=-\\nabla\u2061F\u2062[\ud835\udc30].\n$$\n\nAs previously discussed, we assume that learning algorithms that require detailed information about the Hessian are biologically implausible. As such, our treatment is brief, and mainly contained in SI section 2.2.2.\n\nIn a linear network, the Newton update corresponds to compensatory plasticity making a direct \u2018beeline\u2019 for $\ud835\udc30^{*}$ (see Figure 4d). As such $Q_{\ud835\udc30}\u2062[\u0394\u2062\ud835\udc1c]=Q_{\ud835\udc30}\u2062[\u0394\u2062\u03f5]$ and the optimal magnitude of compensatory plasticity should match synaptic fluctuations. The same is true for a nonlinear network in a near-optimal state. However if steady-state task error is high in a nonlinear network, then compensatory plasticity should outcompete synaptic fluctuations. This case does not contradict our central claim however, since high task error at steady state implies that the task is not truly learned.\n\nTogether our results and analyses show that the magnitude of compensatory plasticity, at steady state task error, should be less or equal to that of synaptic fluctuations. This conclusion does not depend upon circuit architecture, or choice of biologically plausible learning algorithm.\n\n## Discussion\n\nA long-standing question in neuroscience is how neural circuits maintain learned memories while being buffeted by synaptic fluctuations from noise and other task-independent processes (Fusi et al., 2005). There are several hypotheses that offer potential answers, none of which are mutually exclusive. One possibility is that fluctuations only occur in a subset of volatile connections that are relatively unimportant for learned behaviours (Moczulska et al., 2013; Chambers and Rumpel, 2017; Kasai et al., 2003). Following this line of thought, circuit models have been proposed that only require stability in a subset of synapses for stable function (Clopath et al., 2017; Mongillo et al., 2018; Susman et al., 2018).\n\nAnother hypothesis is that any memory degradation due to fluctuations is counteracted by restorative plasticity processes that allow circuits to continually \u2018relearn\u2019 stored associations. The information source directing this restorative plasticity could come from an external reinforcement signal (Kappel et al., 2018), from interactions with other circuits (Acker et al., 2018), or spontaneous, network-level reactivation events (Fauth and van Rossum, 2019). A final possibility is that ongoing synaptic fluctuations are accounted for by behavioural changes unrelated to learned task performance .\n\nAll these hypotheses share two core assumptions that we make, and several include a third that our results depend on:\n\nWe extracted mathematical consequences of these three assumptions by building a general framework. We first modelled the the degree of degradation of previously learned information in terms of an abstract, scalar-valued, task error function or \u2018loss landscape\u2019. The brain may not have, and in any case does not require, explicit representation of such a function for a specific task. All that is required is error feedback from the environment and/or some internal prediction.\n\nWe then noted that compensatory plasticity should act to decrease task error, and thus point in a downhill direction on the \u2018loss landscape\u2019. We stress that we do not assume a gradient-based learning rule such as the backpropagation algorithm, the plausibility of which is an ongoing debate (Whittington and Bogacz, 2019).\n\nOur results do not depend on whether synaptic changes during learning are gradual, or occur in large, abrupt steps. Although most theory work assumes plasticity to be gradual, there is evidence that plasticity can proceed in discrete jumps. For instance, abrupt potentiation of synaptic inputs that lead to the formation of place fields in mouse CA1 hippocampal neurons can occur within seconds as an animal explores a new environment (Bittner et al., 2017). Even classical plasticity paradigms that depend upon millisecond level precision in the relative timing of pre/post synaptic spikes follow a paradigm where there is a short \u2018induction phase\u2019 of a minute or so, following which there is a large and sustained change in synaptic efficacy (e.g. Markram et al., 1997; Bi and Poo, 1998). It is therefore an open question as to whether various forms of synaptic plasticity are best accounted for as an accumulation of small changes or a threshold phenomenon that results in a stepwise change. Our analysis is valid in either case. We quantify plasticity rate by picking a (large or small) time interval over which the net plasticity direction is approximately constant, and evaluate the optimal, steady-state magnitude of compensatory plasticity over this interval, relative to the magnitude of synaptic fluctuations.\n\nA combination of learning-induced and learning-independent plasticity should lead to an eventual steady state level of task error, at which point the quality of stored information does not decay appreciably over time. The absolute quality of this steady state depends upon both the magnitude of the synaptic fluctuations, and the effectiveness of the compensatory plasticity.\n\nOur main finding was that the quality of this steady state is optimal when the rate of compensatory plasticity does not outcompete that of the synaptic fluctuations. This result, which is purely mathematical in nature, is far from obvious. While it is intuitively clear that retention of circuit function will suffer when compensatory plasticity is absent or too weak, it is far less intuitive that the same is true generally when compensatory plasticity is too strong.\n\nWe also found that the precision of compensatory plasticity influenced its optimal rate. When \u2018precision\u2019 corresponds to the closeness of an approximation to a gradient-based compensatory plasticity rule, an increase in precision resulted in the optimal rate of compensatory plasticity being strictly less than that of fluctuations. In other words, sophisticated learning rules need to do less work to optimally overcome the damage done by learning-independent synaptic fluctuations. Indeed experimental estimates (see Table 1) suggest that activity-independent synaptic fluctuations can significantly outcompete systematic, activity-dependent changes in certain experimental contexts. Tentatively, this means that the high degree of synaptic turnover in these systems is in fact evidence for the operation of precise synaptic plasticity mechanisms as opposed to crude and imprecise mechanisms.\n\nOur results are generic, in that they follow from fundamental mathematical relationships in optimisation theory, and hence are not dependent on particular circuit architectures or plasticity mechanisms. We considered cases in which synaptic fluctuations were distributed across an entire neural circuit. However, the basic framework easily extends, allowing for predictions in more specialised cases. For instance, recent theoretical work (Clopath et al., 2017; Mongillo et al., 2018; Susman et al., 2018) have hypothesised that synaptic fluctuations could be restricted to \u2018unimportant\u2019 synapses. These correspond to low curvature (globally insensitive) directions in the \u2018loss landscape\u2019. Our framework (Equation (9) in particular) immediately predicts that the optimal rate of compensatory plasticity will decrease proportionately with this curvature.\n\nPrecise experimental isolation/elimination of the plasticity sources attributable to learning and retention of memories remains challenging. Nevertheless, in conventional theories of learning (e.g. Hebbian learning), neural networks learn through plasticity induced by patterns of pre- and postsynaptic neural activity. A reasonable approximation, therefore, is to equate the \u2018compensatory/learning-induced\u2019 plasticity of our paper with \u2018activity-dependent\u2019 plasticity in experimental setups. With this assumption, our results provide several testable predictions.\n\nFirstly, our results show that that the rate of compensatory (i.e. learning-dependent) plasticity is greater when a neural circuit is in a phase of active learning, as opposed to maintaining previously learned information (see Equation (10) and the surrounding discussion). Consequently, the relative contribution of synaptic fluctuations to the overall plasticity rate should be lower in this case. It would be interesting to test whether this were indeed the case, by comparing brain circuits in immature vs mature organisms, and in neural circuits thought to be actively learning vs those thought to be retaining previously learned information. One way to do this would be to measure the covariance of functional synaptic strengths at coinnervated synapses using EM reconstructions of neural tissue. A higher covariance implies a lower proportion of activity-dependent (i.e. compensatory) plasticity, since co-innervated synapses share presynaptic activity histories. Interestingly, two very similar experiments (Bartol et al., 2015) and (Dvorkin and Ziv, 2016) did indeed examine covariance in EM reconstructions of hippocampus and neocortex, respectively. This covariance appears to be much lower in hippocampus (compare Figure 1 of Bartol et al., 2015 to Figure 8 of Dvorkin and Ziv, 2016). Many cognitive theories characterise hippocampus as a continual learner and neocortex as a consolidator of previously learned information (e.g. O'Reilly and Rudy, 2001). Our analysis provides support for this hypothesis at a mechanistic level by linking low covariance in coinnervated hippocampal synapses to continual learning.\n\nSecondly, a number of experimental studies (Nagaoka et al., 2016; Quinn et al., 2019; Yasumatsu et al., 2008; Minerbi et al., 2009; Dvorkin and Ziv, 2016) note a persistence of the bulk of synaptic plasticity in the absence of activity-dependent plasticity or other correlates of an explicit learning signal, as explained in our review of key experimental findings. However, there are two important caveats for relating our work to these experimental observations:\n\nThus, while our results offer a surprising agreement with a number of experimental observations, we believe it is important to further replicate measurements of synaptic modification in a variety of settings, both in vivo and in vitro. We hope our analysis provides an impetus for this difficult experimental work by offering a first-principles theory for the volatility of connections in neural circuits.\n\n## Materials and methods\n\n### Simulations\n\nWe simulated two types of network, which we refer to as linear (Figure 5\u2014figure supplement 1) and nonlinear (Figures 1 and 5) respectively. We ran our simulations in the Julia programming language (version 1.3), and in particular used the Flux.jl software package (version 0.9) to construct and update networks. Source code is available at https://github.com/Dhruva2/OptimalPlasticityRatios (copy archived at swh:1:rev:fcb1717a822f90b733c49d62bfc2f970155b7364, Raman, 2021).\n\n### Nonlinear networks\n\nNetworks were rate-based, with the firing rate $r\u2062(t)$ of a given neuron defined as\n\n$$\nr\u2062(t)=\\sigma\u2062(w^{T}\u2062(t)\u2062u\u2062(t)),\n$$\n\nwhere $w$ is the vector of presynaptic strengths, $u$ represents the firing rate of the associated presynaptic neurons, and $\\sigma\u2062(x):=\\frac{1}{1+exp\u2061(-x)}$ is the sigmoid function. Initial weight values were generated randomly, according to the standard Xavier distribution (Glorot and Bengio, 2010). Networks were organised into three layers, containing 12, 20, and 10 neurons, respectively. Any given neuron was connected to all neurons in the previous layer. For the first layer, the firing rates of the \u2018previous layer\u2019 corresponded to the network inputs.\n\n### Linear networks\n\nNetworks were organised into an input layer of 12 neurons, and an output layer of 10 neurons. Each output neuron was connected to all input layer neurons. Networks were rate-based, with the firing rate $r\u2062(t)$ of a given neuron defined as\n\n$$\nr\u2062(t)=w^{T}\u2062(t)\u2062u\u2062(t),\n$$\n\nwhere $u_{i}\u2062(t)$ corresponds to the $i^{t\u2062h}$ input (input-layer neuron) or the firing rate of the $i^{t\u2062h}$ input-layer neuron (output-layer neuron). Initial weight values were generated randomly, according to the Xavier distribution (Glorot and Bengio, 2010).\n\n### Task error\n\nFor each network, we generated 1000 different, random, input vectors. Each component of the vector was generated from a unit Gaussian distribution. Task error, at the $t^{t\u2062h}$ timestep, was taken as the mean squared error of the network in recreating the outputs of the initial ($t=0$) network, in response to the suite of inputs. Mathematically, this equates to\n\n$$\nF[w(t)]=\\frac{1}{|\ud835\udcb0|}\\sumu\\in\ud835\udcb0\u2016y(w(t),u)\u2212y(w(0),u)\u2016_{2}^{2},\n$$\n\nwhere $y\u2062(\ud835\udc30\u2062(t),u)$ denotes the output of the network given the synaptic strengths at time $t$, in response to input $u\\in\ud835\udcb0$. Note that this task error recreates the \u2018student-teacher\u2019 framework of e.g. (Levin et al., 1990; Seung et al., 1992), where a fixed copy of the initial network is the teacher.\n\n### Weight dynamics\n\nAt each simulation timestep, synaptic weights were updated as\n\n$$\n\u0394w_{t+1}=\u0394c_{t}+\u0394\u03f5_{t}.\n$$\n\nWe took the synaptic fluctuations term, $\u0394\u2062\u03f5_{t}$, as scaled white noise, that is,\n\n$$\n\u0394\u2062\u03f5_{t}\u221d\ud835\udca9\u2062(0,\ud835\udd40)\n$$\n\nThe constant of proportionality was calculated so that the magnitude $\u2225\u0394\u2062\u03f5\u2225_{2}$ conformed to a pre-specified value. This magnitude was 2 in the simulation of Figure 1, and was a graphed variable in the simulations of Figure 5 and Figure 5\u2014figure supplement 1.\n\nThe compensatory plasticity term, $\u0394\u2062\ud835\udc1c_{t}$, was calculated in two stages. First we applied the backpropagation algorithm, using $y\u2062(\ud835\udc30\u2062(0),u)$ as the ideal network outputs to train against. This generated an \u2018ideal\u2019 direction of compensatory plasticity , proportional to the negative gradient $\\nabla\u2061F\u2062[\ud835\udc30\u2062(t)]$. For Figure 5 and Figure 5\u2014figure supplement 1 we then corrupted this gradient with a tunable proportion of white noise. Overall, this gives,\n\n$$\n\u0394\u2062\ud835\udc1c_{t}=-\\gamma_{1}\u2062\\nabla\u2061F^\u2062[\ud835\udc30]_{t}+\\gamma_{2}\u2062\u03bd^_{t},\n$$\n\nwhere $\u03bd_{t}\u223c\ud835\udca9\u2062(0,\ud835\udd40)$ is the noise corruption term, and $\\gamma_{1},\\gamma_{2}>0$ are tunable hyperparameters. The higher the ratio $\\gamma_{2}:\\gamma_{1}$, the greater the noise corruption. Meanwhile, $\\sqrt{\\gamma_{1}^{2}+\\gamma_{2}^{2}}$ sets the overall magnitude of compensatory plasticity . By tuning $\\gamma_{1}$ and $\\gamma_{2}$, we can therefore independently modify the magnitude and precision of the compensatory plasticity term. In Figure 1, we set $\\gamma_{2}=0$.\n",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "fe14e251-4828-47cc-afdd-77d02195e08f",
+      "submission_id": "d29c7451-e3e8-4dd6-a8f9-60ccc804d5f2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Srdjan Ostojic, Ecole Normale Superieure Paris France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62912.sa1](https://doi.org/10.7554/eLife.62912.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe half-century research on synaptic plasticity has primarily focused on how neural activity gives rise to changes in synaptic connections, and how these changes underlie learning and memory. However, recent studies have shown that in fact, most of the synaptic changes are activity-independent. This result is surprising given the generally held belief that activity-dependent changes in connectivity underlie network functionality. This manuscript proposes a theoretical explanation of why this should be the case. Specifically, this work presents a mathematical analysis of the amount of synaptic plasticity required to maintain learned circuit function in presence of random synaptic changes. The central finding, supported by simulations, is that for an \"optimal\" learning algorithm that rectifies random changes in connectivity, task-related plasticity should generally be smaller than the magnitude of the fluctuations. All reviewers agreed that this is a very interesting theoretical perspective on an important biological problem.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Optimal synaptic dynamics for memory maintenance in the presence of noise\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Timothy Behrens as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Yonatan Loewenstein (Reviewer #2); Matthias H Hennig (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe half-century research on synaptic plasticity has primarily focused on how neural activity gives rise to changes in synaptic connections, and how these changes underlie learning and memory. However, recent studies have shown that in fact, most of the synaptic changes are activity-independent. This result is surprising given the generally held belief that activity-dependent changes in connectivity underlie network functionality. This manuscript proposes an explanation of why this should be the case.\n\nSpecifically, this work presents a mathematical analysis of the amount of synaptic plasticity required to maintain learned circuit function in presence of random synaptic changes. The central finding, supported by simulations, is that for an \"optimal\" learning algorithm that rectifies random changes in connectivity, task-related plasticity should generally be smaller than the magnitude of the fluctuations.\n\nAll reviewers agreed that this is a very interesting perspective on an important biological problem. However the reviewers have had difficulties fully understanding the specific claim, its derivation and potential implications. These issues are detailed in the Main Comments below, and need to be clarified. Additional suggestions are summarised in Other Comments.\n\nMain comments:\n\n1. How much does the main claim depend on the assumed learning algorithm? What is the family of learning algorithms that the authors refer to as \"optimal\" that have the property that directed changes are smaller in their magnitude than the noise-driven changes?\n\nThe reviewers' current understanding is the following, please clarify whether it is correct:\n\nA) If the learning algorithm simply backtracks the noise, then the magnitude of learning-induced changes will be trivially equal that of the noise-induced changes. An optimal algorithm will not be worse than this trivial one.\n\nB) If the learning algorithm (slowly) goes in the direction of the gradient of the objective function then (1) if the network is in a maximum of the objective function and changes are small then the magnitude of learning-induced changes will be equal to that of the noise-induced changes; (2) if the network is NOT in a maximum of the objective function then unless the noise is in the opposite direction to the gradient, the learning-induced path to the same level of performance would be shorter. Thus, the magnitude of learning-induced changes would be smaller that of that of the noise-induced changes\n\nC) There exist (inefficient) learning algorithms such that the magnitude of the learning-induced changes are larger than the magnitude of the noise-induced ones. A learning algorithm that overshoots because of a too-large learning rate could be one of them, and it is trivial to construct other inefficient learning algorithms.\n\n2. The reviewers have found the mathematical derivation in the main text difficult to follow, in part because it seems to use an unnecessarily complex set of mathematical notations and arguments. The reviewers suggest to focus on intuitive arguments in the main text, to make the arguments more transparent, and the paper more accessible to the broad neuroscience audience. Ultimately, this is up to authors to decide. In any case, the main arguments need to be clarified as laid out above.\n\n3. The reviewers were not convinced by the role played by the numerical simulations. On one hand, it was not clear what the simulations added with respect to the analytical derivations. Is the purpose to check any specific approximation? On the other hand, the model does not seem to help link the derivations to the original biological question, as it is quite far removed from a biological setup. A minimal suggestion would be to use the model to illustrate more directly the geometric intuition behind the derivation, for instance by showing movements of weights along with some view of the gradient, contrasting optimal and sub-optimal.\n\nOther comments:\n\n4. The whole argument rests on an assumption that biological networks optimise a cost function, in particular during reconsolidation. How that assumption applies to the experimental setups detailed in the first part is unclear. At the very least, a clear statement and motivation of this assumption is needed.\n\n5. One of the reviewers was not convinced (but happy to debate) cellular noise is such a major contributor to synaptic changes as stated in the introduction and in Table 1, as silencing neural activity pharmacologically will almost certainly affect synaptic function strongly. Strong synapses (big spines) tend to be more stable, and in any case it would be very difficult to know which of the observed modifications reported in the referenced papers have functional consequences. It would be very interesting to see what turnover (or weight dynamics) this model would predict under optimal and non-optimal conditions. In Figure 1 it is implied that weight changes continues unchanged in presence of noise (and optimal learning to maintain the objective), is this actually the case? What concrete experimental predictions the authors would (dare to) make?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Optimal plasticity for memory maintenance in the presence of synaptic fluctuations\" for further consideration by eLife. Your revised article has been evaluated by Timothy Behrens (Senior Editor) and a Reviewing Editor.\n\nAll reviewers have found that the manuscript has been very much improved and should be eventually published. The reviewers now fully understand the mathematical framework and the main mathematical result. During the consultation, it has however appeared that all reviewers feel that the main message of the manuscript, and in particular its implications for biology, need to be further clarified. Two main issues remain, which we suggest should be either addressed in the Results section or discussed in detail:\n\n1. How much do the results rely on the assumption that synaptic changes are \"strong\"? To what extent is this assumption consistent with experiments? Is this theoretical framework really needed when infinitesimally small noise is immediately corrected by a learning signal, as often assumed (see below for more details)? Is the main result trivial when changes are small? Is the main contribution is to show that the result also holds far from this trivial regime, when noise and corrections are large?\n\n2. what are the implications of the main mathematical result for interpreting measurable experimental quantities? The relation with experiments listed in the Discussion seems rather indirect (eg on lines 330-335 the interpretations of EM reconstructions in the authors' modelling framework seems unclear; it would be worth unpacking how the papers listed on lines 347-348 are consistent with the main result). Moreover, in many of the panels shown in Figures5-6, the dependence of the loss on the ratio between compensatory plasticity and synaptic fluctuations is rather flat; what does this imply for experimental data?\n\nMore details on the first point from one of the reviewers:\n\nWhen studying learning in neuronal networks, the underlying assumption is always (\"always\" to the best of my knowledge) that learning-induced changes are gradual. For example, some form of activity-dependent plasticity has, on average, a negative projection on the gradient of the loss function of the current state. Small changes to synaptic efficacies are made and now the network is in a slightly different (improved) state. Activity-dependent plasticity in that new state has, again, a negative projection on the (new) gradient of the loss function at the new state, etc. If learning is sufficiently slow, we can average over the stochasticities in the learning process, organism's actions, rewards etc. and learning will improve performance.\n\nIn contrast to this approach, this paper suggests a very different learning process: activity-independent \"noise\" induces a LARGE change in the synaptic efficacies. This change is followed by a SINGLE LARGE compensatory learning-induced change. The question addressed in this manuscript is how large should this single optimal compensatory learning-induced change be relative to the single noise-induced change. The fact that the compensatory changes are not assumed to be small and that learning is done in a single step, rather than learning being gradual, allowing the local sampling of the loss function, complicates the mathematical analysis. While for analyzing infinitesimally-small changes we only need to consider the local gradient of the loss function, higher-order terms are required when considering single large changes.\n\nWhat is the justification to this approach given that gradual learning is what we seem to observe in the experiments, specifically those cited in this manuscript? There is a lot of evidence of gradual changes in numbers of spines or synaptic efficacies, etc. If everything is gradual, why not \"recompute\" the gradient on the fly as is done in all previous models of learning?\n",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "439a493a-cf60-4f1f-8074-7c135f73135f",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C1",
+      "claim": "Synaptic connections in many brain circuits fluctuate, exhibiting substantial turnover and remodelling over hours to days.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic connections in many brain circuits fluctuate, exhibiting substantial turnover and remodelling over hours to days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the experimental citations and data presented throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "9a43b50c-c04c-4a08-ae48-d8934b6ed2fe",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C2",
+      "claim": "Most of the flux in connectivity persists in the absence of learning or known plasticity signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, experiments show that most of this flux in connectivity persists in the absence of learning or known plasticity signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations cited in Table 1 and discussed throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "9c1061d7-091c-4344-8eab-36b6b2fa675a",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C3",
+      "claim": "Compensatory plasticity should be at most equal in magnitude to fluctuations, and often less.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we find that the answer is largely independent of plasticity mechanisms and circuit architectures: compensatory plasticity should be at most equal in magnitude to fluctuations, and often less, in direct agreement with previously unexplained experimental observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical finding of the paper, derived mathematically and validated through simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "2d2a5c43-b327-4d60-bfc2-d8d4be551871",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C4",
+      "claim": "A high proportion of learning-independent synaptic change is consistent with plasticity mechanisms that accurately compute error gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our analysis shows that a high proportion of learning-independent synaptic change is consistent with plasticity mechanisms that accurately compute error gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the theoretical analysis showing that more precise gradient-based plasticity requires lower compensatory plasticity rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "134741d1-66fe-46c6-be4d-263107d5be32",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C5",
+      "claim": "Learning depends upon systematic changes to the connectivity and strengths of synapses in neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning depends upon systematic changes to the connectivity and strengths of synapses in neural circuits. This has been shown across experimental systems (Moczulska et al., 2013; Lai et al., 2012; Hayashi-Takagi et al., 2015) and is assumed by most theories of learning (Hebb, 1949; Bienenstock et al., 1982; Gerstner et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental citations and theoretical frameworks.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "da3ce194-a3ce-4903-8828-bdb0cbbaa1c6",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C6",
+      "claim": "Many recent experiments in multiple brain areas have documented substantial ongoing synaptic modification in the absence of any obvious learning or change in behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many recent experiments in multiple brain areas have documented substantial ongoing synaptic modification in the absence of any obvious learning or change in behaviour (Attardo et al., 2015; Pfeiffer et al., 2018; Holtmaat et al., 2005; Loewenstein et al., 2015; Yasumatsu et al., 2008; Loewenstein et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "57dcfad5-ef6e-4dcc-a574-7fe88eb381c9",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C7",
+      "claim": "The expected lifetime of dendritic spines in mouse CA1 hippocampus has been estimated as 1\u20132 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the expected lifetime of dendritic spines in mouse CA1 hippocampus has been estimated as 1\u20132 weeks (Attardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific experimental measurement cited from Attardo et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "35364893-8951-4022-bb0c-a5d9d5c05b56",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C8",
+      "claim": "Over 70% of spines in mouse barrel cortex are found to persist for 18 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Elsewhere in the brain, over 70% of spines in mouse barrel cortex are found to persist for 18 months (Zuo et al., 2005), although these persistent spines exhibited large deviations in size over the imaging period (on average, a >25% deviation in spine head diameter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific experimental measurement cited from Zuo et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "13b71c0a-3425-4d24-aeb3-2e761ab0ece3",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C9",
+      "claim": "Persistent spines in mouse barrel cortex exhibited large deviations in size over the imaging period (on average, a >25% deviation in spine head diameter).",
+      "claim_type": "EXPLICIT",
+      "source": "Elsewhere in the brain, over 70% of spines in mouse barrel cortex are found to persist for 18 months (Zuo et al., 2005), although these persistent spines exhibited large deviations in size over the imaging period (on average, a >25% deviation in spine head diameter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific experimental measurement cited from Zuo et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "cdca5fdc-d1ec-45eb-bfce-1ba198459392",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C10",
+      "claim": "The total rate of ongoing synaptic change is reduced by only 50% or less in the absence of neural activity or when plasticity pathways are blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, these studies find that the total rate of ongoing synaptic change is reduced by only 50% or less in the absence of neural activity or when plasticity pathways are blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings from multiple studies cited in Table 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "c6a9e1ae-d83c-414b-871d-592f76ee5a01",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C11",
+      "claim": "The bulk of steady-state synaptic changes seem to arise from fluctuations that are independent of activity patterns at pre/post synaptic neurons or known plasticity induction pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the bulk of steady-state synaptic changes seem to arise from fluctuations that are independent of activity patterns at pre/post synaptic neurons or known plasticity induction pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations that activity suppression only reduces synaptic changes by ~50%.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "4b7bd7ab-983e-42cf-b360-0ed56781b626",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C12",
+      "claim": "The main component (more than 50%) of baseline synaptic dynamics is due to synaptic fluctuations that are independent of neural activity and/or easily identifiable plasticity signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies in Table 1 consistently report that the the main component (more than 50%) of baseline synaptic dynamics is due to synaptic fluctuations that are independent of neural activity and/or easily identifiable plasticity signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "0aea1b6d-0a8e-49f6-982e-2ac302c71c2c",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C13",
+      "claim": "The task error of the network is smallest when the compensatory plasticity rate is smaller than the synaptic fluctuation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The task error of the network is smallest when the compensatory plasticity rate is smaller than the synaptic fluctuation rate (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation results shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "af1a0204-bf0d-4926-a040-9d30646e25ca",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C14",
+      "claim": "Individual weights in the network continually change even as overall task error remains stable due to redundancy in the weight configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, individual weights in the network continually change even as overall task error remains stable due to redundancy in the weight configuration (Figure 1c), (see e.g. Rule et al., 2019 for a review).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation results shown in Figure 1c and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "d238a873-8552-43a6-b8fc-0345a3091e0c",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C15",
+      "claim": "The 'sweet-spot' compensatory plasticity rate that leads to optimal, steady-state retention of previously learned information is at most equal to the rate of synaptic fluctuations, and often less.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'sweet-spot' compensatory plasticity rate that leads to optimal, steady-state retention of previously learned information is at most equal to the rate of synaptic fluctuations, and often less.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical claim derived from the mathematical analysis and validated through simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "5bfa1d5a-5555-4ed4-8f03-bc9af4a99f70",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C16",
+      "claim": "Compensatory plasticity improves task error, and thus moves downhill, regardless of the underlying plasticity mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensatory plasticity improves task error, and thus moves downhill, regardless of the underlying plasticity mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about compensatory plasticity in the context of the loss landscape framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "c865f66f-88dc-4700-8a55-4738050be605",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C17",
+      "claim": "Task-independent synaptic fluctuations increase task error in expectation due to the curvature of the landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, one would expect task-independent synaptic fluctuations to increase task error. This is true even if fluctuations are unbiased in moving in an uphill or downhill direction on the loss landscape (see Equation (3a)) due to the curvature of the landscape (see Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explained through mathematical reasoning and illustrated in Figure 2C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "77c345f1-8e08-4a71-9191-d3aaf99969c4",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C18",
+      "claim": "The optimal compensatory plasticity rate is greater during learning than at steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "A corollary is that the optimal rate of compensatory plasticity is greater during learning than at steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically from Equation (10) by comparing learning conditions to steady-state conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "868d5fc6-0dcd-4302-8c64-b11d27955641",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C19",
+      "claim": "The optimal compensatory plasticity rate should not outcompete the rate of synaptic fluctuations at steady state error.",
+      "claim_type": "EXPLICIT",
+      "source": "We now claim that generically, the optimal compensatory plasticity rate should not outcompete the rate of synaptic fluctuations at steady state error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical claim derived from the mathematical analysis in Equation (9) and (11).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "81558dba-107c-4a79-a522-dd8dc20d5d08",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C20",
+      "claim": "A steep downhill direction will usually have higher upward curvature than an arbitrary direction.",
+      "claim_type": "EXPLICIT",
+      "source": "This follows intuitively because a steep downhill direction, which effectively reduces task error, will usually have higher upward curvature than an arbitrary direction (see Figure 3c for intuition).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explained through geometric intuition illustrated in Figure 3c.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "db3eb96e-0040-4041-89e7-4f95028083d4",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C21",
+      "claim": "The worse the quality of the gradient approximation, the larger the optimal level of compensatory plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the worse the quality of the gradient approximation, the larger the optimal level of compensatory plasticity (illustrated conceptually in Figure 4b\u2013c, and numerically in Figure 5 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through conceptual illustration and numerical simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "371a98cd-f449-4fb2-8f17-9eeb7a15024e",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C22",
+      "claim": "Covariance in coinnervated hippocampal synapses appears to be much lower than in neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This covariance appears to be much lower in hippocampus (compare Figure 1 of Bartol et al., 2015 to Figure 8 of Dvorkin and Ziv, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing figures in two different cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "1a26ed52-1383-4991-91c6-4ebabee34943",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C23",
+      "claim": "Many cognitive theories characterise hippocampus as a continual learner and neocortex as a consolidator of previously learned information.",
+      "claim_type": "EXPLICIT",
+      "source": "Many cognitive theories characterise hippocampus as a continual learner and neocortex as a consolidator of previously learned information (e.g. O'Reilly and Rudy, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to cognitive theory literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "7109b56b-f1b6-4d0c-a88e-9e9a89d30ebe",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C24",
+      "claim": "The relative contribution of synaptic fluctuations to the overall plasticity rate should be lower during active learning compared to memory maintenance.",
+      "claim_type": "IMPLICIT",
+      "source": "Firstly, our results show that that the rate of compensatory (i.e. learning-dependent) plasticity is greater when a neural circuit is in a phase of active learning, as opposed to maintaining previously learned information (see Equation (10) and the surrounding discussion). Consequently, the relative contribution of synaptic fluctuations to the overall plasticity rate should be lower in this case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence derived from the theoretical result in Equation (10).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "0099f94b-7e8f-4738-908b-9d6610797331",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C25",
+      "claim": "A higher covariance in functional synaptic strengths at coinnervated synapses implies a lower proportion of activity-dependent (i.e. compensatory) plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "A higher covariance implies a lower proportion of activity-dependent (i.e. compensatory) plasticity, since co-innervated synapses share presynaptic activity histories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained through logical reasoning about the relationship between covariance and activity-dependent plasticity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "65c656e1-7755-424a-aa3b-05c1ea4336f8",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "claim_id": "C50",
+      "claim": "The magnitude of compensatory plasticity at steady state task error should be less or equal to that of synaptic fluctuations, independent of circuit architecture or choice of biologically plausible learning algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our results and analyses show that the magnitude of compensatory plasticity, at steady state task error, should be less or equal to that of synaptic fluctuations. This conclusion does not depend upon circuit architecture, or choice of biologically plausible learning algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion synthesizing all the theoretical and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc9be3b2-260d-4231-9183-689bb78cca6d",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Experimental observations across multiple brain regions show that synaptic connections exhibit substantial ongoing turnover and modification (hours to days timescale), with more than 50% of this plasticity persisting even when neural activity or known plasticity pathways are suppressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C6-C12 collectively present a consistent picture from multiple experimental systems (Table 1) showing that synaptic fluctuations dominate baseline plasticity. The cited studies use diverse approaches (activity suppression, covariance analysis) and consistently find >50% activity-independent changes. The specific quantitative measurements (C7-C9) from cited sources provide concrete support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "9c49a20c-e066-47d9-a492-c98a542b3ed0",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors' theoretical analysis predicts that optimal compensatory plasticity should be at most equal in magnitude to synaptic fluctuations at steady state, and often less, independent of circuit architecture or biologically plausible learning algorithm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15, C19, and C50 state the main theoretical finding, which is derived mathematically (Equations 9-11) and validated through simulations (Figures 1, 5). The mathematical framework using loss landscape geometry provides rigorous support, and simulation results across linear and nonlinear networks confirm the prediction across different parameter regimes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "09dfcd6f-4e11-408f-8d0a-7c488c57d287",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Simulations demonstrate that task error is minimized when compensatory plasticity rate is smaller than synaptic fluctuation rate, while individual synaptic weights continually change despite stable overall performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 are directly supported by simulation data shown in Figure 1b-c. The simulations systematically vary the ratio of compensatory plasticity to fluctuations and measure resulting task error, clearly showing an optimal ratio <1. The weight dynamics in Figure 1c visually confirm ongoing changes at steady state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "90117758-0ea2-4262-b25f-e8431c0f408d",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The precision of compensatory plasticity mechanisms inversely correlates with the optimal magnitude of compensatory plasticity: more accurate gradient-based learning requires lower compensatory plasticity rates relative to fluctuations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C21 are supported by both theoretical analysis (Equation 15 and surrounding discussion) and numerical simulations (Figure 5, Figure 5\u2014figure supplement 1). The simulations systematically vary gradient corruption (\u03b3\u2082/\u03b3\u2081 ratio) and show that higher noise corruption increases the optimal compensatory plasticity rate, confirming the theoretical prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "a57b4ab8-ce41-44fe-a979-c9317ace66fa",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The loss landscape framework establishes that compensatory plasticity moves downhill (reduces error) while synaptic fluctuations increase error in expectation due to landscape curvature, with steep downhill directions typically exhibiting higher upward curvature than arbitrary directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 and C20 describe fundamental geometric properties of the loss landscape framework that underpin the main results. These are mathematically rigorous statements illustrated in Figures 2-3. The curvature argument (C17) is formalized through the Q operator and Hessian analysis, providing solid theoretical foundation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "274aa7b6-9717-43ef-af21-7d10ed77ac7a",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The optimal compensatory plasticity rate is higher during active learning than at steady state, implying that synaptic fluctuations should contribute relatively less to total plasticity during learning phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18 and C24 follow logically from Equation 10, which shows that the learning condition (E[\u0394F]<0) requires higher compensatory plasticity than the steady-state condition (E[\u0394F]=0). This is a mathematical consequence of the framework and represents a testable prediction, though direct experimental validation is not provided in this theoretical study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "7cbad7a5-33f6-4923-b9cd-1da5b4510a9f",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Covariance measurements in coinnervated synapses differ between hippocampus and neocortex, potentially reflecting different learning regimes (continual learning vs. consolidation) as predicted by the theory linking covariance to activity-dependent plasticity proportions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C22 compares figures from two different studies (Bartol et al. 2015, Dvorkin and Ziv 2016) without quantitative analysis or statistical comparison. While C23 correctly cites cognitive theory and C25 provides logical reasoning, the inference connecting hippocampal/neocortical differences to learning regimes is speculative. The comparison relies on visual assessment of figures from different experimental systems, which may have methodological differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    },
+    {
+      "id": "316a1b01-4f61-4fcb-b8db-5621b99c2202",
+      "content_id": "f391829b-a4a4-4478-83fa-fa5c745b138a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Learning depends on systematic changes to synaptic connectivity and strengths in neural circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is a well-established principle in neuroscience, supported by multiple experimental citations (Moczulska et al., Lai et al., Hayashi-Takagi et al.) and theoretical frameworks (Hebb, Bienenstock et al., Gerstner et al.). This represents accepted background knowledge rather than a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:20.583072Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "439a493a-cf60-4f1f-8074-7c135f73135f",
+      "result_id": "dc9be3b2-260d-4231-9183-689bb78cca6d"
+    },
+    {
+      "claim_id": "9a43b50c-c04c-4a08-ae48-d8934b6ed2fe",
+      "result_id": "dc9be3b2-260d-4231-9183-689bb78cca6d"
+    },
+    {
+      "claim_id": "da3ce194-a3ce-4903-8828-bdb0cbbaa1c6",
+      "result_id": "dc9be3b2-260d-4231-9183-689bb78cca6d"
+    },
+    {
+      "claim_id": "57dcfad5-ef6e-4dcc-a574-7fe88eb381c9",
+      "result_id": "dc9be3b2-260d-4231-9183-689bb78cca6d"
+    },
+    {
+      "claim_id": "35364893-8951-4022-bb0c-a5d9d5c05b56",
+      "result_id": "dc9be3b2-260d-4231-9183-689bb78cca6d"
+    },
+    {
+      "claim_id": "13b71c0a-3425-4d24-aeb3-2e761ab0ece3",
+      "result_id": "dc9be3b2-260d-4231-9183-689bb78cca6d"
+    },
+    {
+      "claim_id": "cdca5fdc-d1ec-45eb-bfce-1ba198459392",
+      "result_id": "dc9be3b2-260d-4231-9183-689bb78cca6d"
+    },
+    {
+      "claim_id": "c6a9e1ae-d83c-414b-871d-592f76ee5a01",
+      "result_id": "dc9be3b2-260d-4231-9183-689bb78cca6d"
+    },
+    {
+      "claim_id": "4b7bd7ab-983e-42cf-b360-0ed56781b626",
+      "result_id": "dc9be3b2-260d-4231-9183-689bb78cca6d"
+    },
+    {
+      "claim_id": "9c1061d7-091c-4344-8eab-36b6b2fa675a",
+      "result_id": "9c49a20c-e066-47d9-a492-c98a542b3ed0"
+    },
+    {
+      "claim_id": "d238a873-8552-43a6-b8fc-0345a3091e0c",
+      "result_id": "9c49a20c-e066-47d9-a492-c98a542b3ed0"
+    },
+    {
+      "claim_id": "868d5fc6-0dcd-4302-8c64-b11d27955641",
+      "result_id": "9c49a20c-e066-47d9-a492-c98a542b3ed0"
+    },
+    {
+      "claim_id": "65c656e1-7755-424a-aa3b-05c1ea4336f8",
+      "result_id": "9c49a20c-e066-47d9-a492-c98a542b3ed0"
+    },
+    {
+      "claim_id": "0aea1b6d-0a8e-49f6-982e-2ac302c71c2c",
+      "result_id": "09dfcd6f-4e11-408f-8d0a-7c488c57d287"
+    },
+    {
+      "claim_id": "af1a0204-bf0d-4926-a040-9d30646e25ca",
+      "result_id": "09dfcd6f-4e11-408f-8d0a-7c488c57d287"
+    },
+    {
+      "claim_id": "2d2a5c43-b327-4d60-bfc2-d8d4be551871",
+      "result_id": "90117758-0ea2-4262-b25f-e8431c0f408d"
+    },
+    {
+      "claim_id": "db3eb96e-0040-4041-89e7-4f95028083d4",
+      "result_id": "90117758-0ea2-4262-b25f-e8431c0f408d"
+    },
+    {
+      "claim_id": "5bfa1d5a-5555-4ed4-8f03-bc9af4a99f70",
+      "result_id": "a57b4ab8-ce41-44fe-a979-c9317ace66fa"
+    },
+    {
+      "claim_id": "c865f66f-88dc-4700-8a55-4738050be605",
+      "result_id": "a57b4ab8-ce41-44fe-a979-c9317ace66fa"
+    },
+    {
+      "claim_id": "81558dba-107c-4a79-a522-dd8dc20d5d08",
+      "result_id": "a57b4ab8-ce41-44fe-a979-c9317ace66fa"
+    },
+    {
+      "claim_id": "77c345f1-8e08-4a71-9191-d3aaf99969c4",
+      "result_id": "274aa7b6-9717-43ef-af21-7d10ed77ac7a"
+    },
+    {
+      "claim_id": "7109b56b-f1b6-4d0c-a88e-9e9a89d30ebe",
+      "result_id": "274aa7b6-9717-43ef-af21-7d10ed77ac7a"
+    },
+    {
+      "claim_id": "371a98cd-f449-4fb2-8f17-9eeb7a15024e",
+      "result_id": "7cbad7a5-33f6-4923-b9cd-1da5b4510a9f"
+    },
+    {
+      "claim_id": "1a26ed52-1383-4991-91c6-4ebabee34943",
+      "result_id": "7cbad7a5-33f6-4923-b9cd-1da5b4510a9f"
+    },
+    {
+      "claim_id": "0099f94b-7e8f-4738-908b-9d6610797331",
+      "result_id": "7cbad7a5-33f6-4923-b9cd-1da5b4510a9f"
+    },
+    {
+      "claim_id": "134741d1-66fe-46c6-be4d-263107d5be32",
+      "result_id": "316a1b01-4f61-4fcb-b8db-5621b99c2202"
+    }
+  ],
+  "comparisons": []
+}

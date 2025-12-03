@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C121",
+      "C122",
+      "C126"
+    ],
+    "result": "Apical actin caps in the early syncytial Drosophila embryo undergo rapid, cyclic formation and disassembly through distinct phases (expansion, stabilization, elongation, fragmentation). During cycle 11, caps expand ~6-fold in area within 2 minutes while actin intensity increases only ~39%, suggesting spatially regulated actin recruitment. The expansion phase follows exponential growth kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10, C121-C122, and C126 provide comprehensive quantitative characterization of actin cap dynamics through live imaging with validated markers (C2, C60). The temporal measurements, area quantifications, intensity measurements, and exponential fitting (C126) are well-documented with figure references and specific numerical values. The interpretation of spatially regulated actin recruitment (C7) is appropriately supported by the disproportionate growth in area versus intensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C95",
+      "C96"
+    ],
+    "result": "Arp2/3 is the major regulator of apical actin cap formation, with disruption causing ~53% reduction in actin intensity and near-complete loss of cap expansion, while Diaphanous contributes moderately (~35% reduction in cap area, ~18% reduction in intensity). The two networks do not significantly affect each other's localization, and Arp2/3 disruption produces hollowed-out cap structures lacking internal actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C24 provide quantitative functional analysis of Diaphanous and Arp2/3 with specific measurements (C16-C19) supported by figure references. The independence of the two networks is demonstrated by localization studies (C21-C22). The morphological observations (C20) and prior literature context (C11-C13, C95-C96) strengthen the conclusions. The quantitative data and multiple experimental approaches support the conclusion that Arp2/3 is the major regulator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Different ANRPs have distinct, non-redundant functions in actin cap formation: DPod1 is required for overall actin intensities but not expansion; Cortactin drives continued cap growth and maintenance at the periphery; Coronin has dual roles in both intensity and early cap growth; Scar affects both early intensity and delayed expansion. Carmil, Wasp, and Wash have minimal effects. These functional differences correlate with differential effects on Arp3:GFP recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C47 provide systematic functional analysis of seven ANRPs with quantitative measurements of cap area, intensity, and Arp3 recruitment (C38-C41). The specificity is validated with independent shRNA lines (C37). The distinct phenotypes are well-characterized with specific temporal and spatial patterns (C29-C36), and the correlations between function and Arp3 recruitment (C40-C41) strengthen the mechanistic interpretation. The negative results for Carmil, Wasp, and Wash (C28, C47) are appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C93",
+      "C94"
+    ],
+    "result": "Coronin and Cortactin display complementary spatial localization in mature caps, with Coronin enriched in the cap interior and Cortactin at the periphery. Coronin is required for Cortactin's transition to peripheral localization, suggesting a regulatory relationship consistent with previous studies showing competition between these proteins at actin branch points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 provide expression data (C48-C50), localization data from multiple approaches (C51-C54), and functional epistasis experiments (C56-C57). The complementary localization (C54) is well-documented with figure references, and the requirement for Coronin in Cortactin localization (C56) provides strong evidence for a regulatory relationship. The interpretation is appropriately supported by prior literature (C93-C94). The use of multiple detection methods (UAS, CRISPR, antibodies) strengthens the localization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Actin recovery after photobleaching is rapid in wild-type caps (T50=8.2s) but becomes approximately twice as fast when Arp2/3 or Diaphanous are disrupted (T50=4.2s and 4.1s respectively). Stabilizing F-actin or reducing G-actin availability slows recovery, while disrupting Cofilin does not. This suggests that Arp2/3 and Diaphanous networks compete for a limited G-actin pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C70 provide comprehensive FRAP analysis with specific quantitative measurements (C58, C59, C62) and appropriate controls (C60, C63, C64, C67). The counterintuitive finding of faster recovery upon nucleator disruption is well-documented and tested with multiple perturbations. The interpretation of G-actin competition (C65-C66, C70) is appropriately presented as a model supported by the data, though alternative explanations are acknowledged. The Cofilin control (C67) strengthens the argument against a turnover-based explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Mito-tagged ANRPs can recruit Arp3:GFP and activate Arp2/3 function in vivo, with DPod1 showing the strongest recruitment ability, Coronin the weakest, and Cortactin/Scar intermediate. Cortactin shows high colocalization but low recruitment, while Scar shows moderate colocalization but high recruitment. Double mito-tag experiments suggest inhibitory interaction between Coronin and Cortactin, and synergistic activation by DPod1 and Scar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 describe a novel in vivo recruitment assay with appropriate controls (C72) and quantitative measurements of both colocalization and recruitment ability (C74-C78). The differential behaviors of Cortactin and Scar (C77-C78) provide insight into distinct mechanisms. The double mito-tag experiments (C79-C82) strengthen mechanistic interpretations. The limitations of the approach are appropriately acknowledged (C102-C103), and the partial Scar colocalization (C104) is noted as potentially significant. The method provides complementary in vivo data to biochemical studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Nuclear fallout in Arp2/3-compromised embryos occurs even after apparently normal cell divisions and correlates strongly with reduced cap area expansion (R\u00b2=0.77) but not with cap intensity (R\u00b2=0.08). This indicates that cap expansion and organization, mediated by Cortactin, Coronin, and Scar, are essential for nuclear positioning and apical anchorage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 provide clear correlation analysis linking ANRP function to a developmental phenotype. The observation that nuclei with normal divisions still fall out (C84) rules out mitotic defects as the primary cause. The strong correlation with cap area but not intensity (C85-C86) is quantitatively demonstrated and provides mechanistic insight. The conclusion (C87) appropriately integrates the functional data from earlier results. This represents a clear functional consequence of the actin cap defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study reveals a combinatorial model for actin cap construction: DPod1 supports overall actin intensities without directing expansion; Cortactin drives continued growth and expansion; Coronin has dual roles in both intensity and cap growth with the earliest function; and Cortactin and Scar function in mid-to-late cap growth and maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide an integrative summary of the functional analysis presented throughout the manuscript. These conclusions are well-supported by the comprehensive quantitative data on cap dynamics, ANRP disruption phenotypes, localization patterns, and temporal analysis. The combinatorial model synthesizes multiple lines of evidence into a coherent framework for understanding how different regulators contribute distinct functions to build complex actin structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C55",
+      "C81",
+      "C93",
+      "C110"
+    ],
+    "result": "The authors propose mechanistic models including: (1) Arp2/3 polymerizes F-actin internally with a dispersion mechanism flowing filaments to edges; (2) Coronin and Cortactin exhibit antagonistic interactions; (3) Cortactin's branch-stabilizing function may explain its role in edge outgrowth. These models are presented as speculative interpretations of the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C26, C55, C81, C93, and C110 present mechanistic models that are appropriately labeled as speculative or suggestive. While these models are consistent with the observed data (hollowed-out structures, complementary localization, peripheral enrichment), they lack direct experimental validation. The models draw on prior literature (C93-C94, C108-C110) but represent hypotheses requiring future testing rather than demonstrated mechanisms. The authors appropriately present these as interpretations rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "The manuscript contextualizes findings within prior literature on Formin-Arp2/3 interplay, ANRP biochemical functions, and regulatory mechanisms. Previous studies have shown interdependence between networks, multiple functions for individual ANRPs, and competition between Coronin and Cortactin at branch points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C111 accurately represent prior literature with appropriate citations. These claims provide important context for interpreting the current findings and acknowledge the complexity of ANRP functions beyond simple Arp2/3 activation. The authors appropriately note where their findings differ from or extend previous work (C101) and acknowledge alternative mechanisms that may contribute to observed phenotypes (C100, C105).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The manuscript provides background on Drosophila syncytial development, describing the 13 rounds of nuclear replication, migration to the periphery at cycle 10, formation of transient actin caps and furrows during cycles 10-13, and the essential role of these structures in genomic stability and nuclear positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 provide accurate background information on the Drosophila syncytial embryo system, supported by appropriate citations to established literature. This contextual information is essential for understanding the experimental system and the biological significance of the findings. The claims accurately represent well-established developmental biology of this model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The study demonstrates that Formin and Arp2/3 networks build cortical structures, individual ANRPs have distinct functions in guiding cap growth and intensities, and ANRP disruption leads to faster actin network recoveries, potentially indicating competition for limited G-actin pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 provide high-level summary statements of the major findings. These are well-supported by the comprehensive experimental data presented throughout the manuscript. C125 appropriately presents the G-actin competition model as suggestive rather than definitive. These summary claims accurately reflect the scope and conclusions of the work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Single-cell expression profiling reveals extensive cell-to-cell variability, but destructive measurements provide only snapshot data, making it difficult to separate intrinsic noise (dynamic variability within cells) from extrinsic noise (variability across the population).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the fundamental challenge in single-cell analysis: destructive measurements lose temporal information, preventing separation of intrinsic and extrinsic noise sources. These are well-established observations in the field, supported by citations and general knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C52",
+      "C53",
+      "C54",
+      "C58",
+      "C59",
+      "C60",
+      "C96"
+    ],
+    "result": "It is mathematically impossible to identify sources of variability (intrinsic vs. extrinsic noise) from transcript abundance distributions alone. Any Telegraph distribution with fixed parameters can be identically obtained from a Telegraph distribution with parameter variation, and extrinsic noise invariably inflates the apparent burstiness of the system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C52-C54 provide rigorous mathematical proofs of non-identifiability, supported by theoretical derivations (equations 3-5) and simulations (Figure 2). Claims C58-C60 and C96 demonstrate the practical consequence that extrinsic noise makes systems appear burstier. The mathematical representations are explicitly derived and validated computationally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C61",
+      "C95",
+      "C97"
+    ],
+    "result": "Extrinsic noise distorts the apparent degree of burstiness, and additional information beyond copy number distributions is required to constrain possible dynamics and determine true burstiness levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C95-C97 follow logically from the non-identifiability results. C61 connects these findings to prior empirical observations. The claims are consistent with the mathematical proofs and represent important implications of the non-identifiability results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The dual-reporter method can separate noise into intrinsic and extrinsic components by measuring correlations between two independent, identically distributed reporter genes, but dual reporters are rarely identically regulated and their independence cannot always be guaranteed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 accurately describe the dual-reporter method and its limitations, all supported by appropriate citations. These establish the motivation for developing an alternative approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C66",
+      "C67",
+      "C98"
+    ],
+    "result": "The Noise Decomposition Principle (NDP) shows that non-identical and not-necessarily independent reporters from the same biochemical pathway can provide an analogous noise decomposition to dual reporters, circumventing the requirement for conditionally independent and identically regulated reporter genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C66-C67, and C98 present the core theoretical contribution. The NDP is mathematically derived (with proof in Appendix A) based on the Law of Total Covariance. The principle is rigorously established and represents a direct generalization of the dual-reporter framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C70",
+      "C71",
+      "C72",
+      "C100"
+    ],
+    "result": "For constitutive gene expression, the pathway-reporter method produces results identical to dual reporters, with excellent agreement demonstrated by stochastic simulations across multiple parameter combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C70-C72, and C100 are supported by theoretical analysis and extensive simulations (Table 2, Supplementary file 1). The mathematical proof for constitutive expression is provided, and simulations across 60+ parameter combinations validate the approach. Slightly higher variation in pathway-reporter results (C71) is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Despite mRNA and protein not being strictly independent, they can replace dual reporters for practical noise decomposition at the transcriptional level, though both methods show slower convergence at low copy numbers and pathway reporters show fractionally more variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by simulations (Table 3) and theoretical analysis showing the intrinsic contribution to covariance is negligible under typical conditions. The limitations regarding convergence and variation are honestly reported based on simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C102",
+      "C103"
+    ],
+    "result": "For bursty systems, the pathway-reporter method provides a satisfactory approximation except in extreme cases. Nascent-protein reporters perform well for most genes, while mature-protein reporters are less reliable and require more stringent conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C88-C89, C91-C92, C102-C103 are supported by extensive computational analysis including heatmaps (Figure 5) and simulations (Table 4). The analysis of parameter ranges from literature data (Larsson et al. 2019, Cao and Grima 2020) supports the claim that nascent-protein reporters work for a substantial fraction of genes. Limitations are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C85"
+    ],
+    "result": "Analysis of experimental data shows that over 90% of genes with mean mRNA levels >5 have \u03bb \u2265 0.5 in mouse and human fibroblasts, and mRNA lifetimes are typically much shorter than protein lifetimes in E. coli and yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C85 are supported by analysis of published datasets (Larsson et al. 2019) and cited literature (Taniguchi et al. 2010, Belle et al. 2006). These provide empirical justification for the parameter ranges where the pathway-reporter method is expected to work well.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C104"
+    ],
+    "result": "The pathway-reporter approach is remarkably insensitive to the specific dynamics of mRNA and protein synthesis, with correlations between reporter pairs not strongly depending on the details of the gene expression model used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 and C104 are supported by validation on multiple gene expression models (cases 1-4 described in text and Figure 6), including models with fixed maturation times, multiscale transcription dynamics, and cell-cycle effects. Results are described in supplementary material (Appendix on Convergence).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The pathway-reporter approach assumes extrinsic noise sources act independently, but this may not always hold experimentally (e.g., transcription and translation rates may anticorrelate in E. coli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 honestly acknowledge a key assumption and potential limitation of the method, with citation support (Hilfinger et al. 2016, Cole and Luthey-Schulten 2017) for cases where the assumption may be violated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Extrinsic noise distorts the multivariate copy number distribution of gene expression pathway species, and reliable noise estimates will assist in better practices for model fitting and inference in single-cell data analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is supported by the theoretical analysis and simulations (Figure 3). Claim C109 is a reasonable expectation based on the demonstrated ability to estimate noise. Claim C110 is appropriately framed as speculation about future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Extrinsic noise produces more correlated joint distributions of pathway species. Correlation increases when parameters reduce delay between species or when the system undergoes long timescale changes (low \u03bb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 are supported by visual evidence (Figure 3, Figure 4B-C) and provide intuition for when the intrinsic contribution to covariance becomes significant. The mechanistic explanation is consistent with the mathematical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on noise in gene expression: noise is fundamental to cellular processes, can be functionally important, and is separable into intrinsic and extrinsic components, but identifying sources from transcriptomic measurements has been difficult due to loss of temporal information in destructive measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C19 provide established background knowledge, all supported by appropriate citations. These set the context for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C47",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The Telegraph model and compound distribution framework provide the mathematical foundation for modeling gene expression with intrinsic and extrinsic noise, accounting for promoter switching, transcription, degradation, and cell-to-cell parameter variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C51 describe well-established models with appropriate citations. The compound distribution framework (C45, C47) is properly attributed and its validity conditions are stated. These provide the necessary mathematical background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "A compound Poisson distribution uniquely determines the compounding distribution, making constitutive expression an exception to the non-identifiability problem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a well-known mathematical result (Feller 1943) that establishes constitutive expression as a special case where the extrinsic noise distribution is identifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The noise decomposition applies to dynamic noise and is equivalent to the normalized Law of Total Variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by citations (Hilfinger and Paulsson 2011, Ross 2014) and establish the mathematical foundation for the noise decomposition framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Burstiness is the most common mode of gene expression reported experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by multiple citations and provides motivation for focusing on bursty systems in the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C107"
+    ],
+    "result": "The pathway-reporter method is experimentally more easily implementable than dual reporters, with nascent-mature mRNA measurements readily obtainable from current single-cell data, and recent developments allowing simultaneous transcript and protein measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101, and C107 are supported by citations to current experimental capabilities (Shah et al. 2018, La Manno et al. 2018, Stoeckius et al. 2017, etc.) and represent practical advantages of the approach.",
+    "result_type": "MINOR"
+  }
+]

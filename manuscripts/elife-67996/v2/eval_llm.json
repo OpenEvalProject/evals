@@ -1,0 +1,456 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "APP+ is a fluorescent substrate that is transported by DAT, NET, and SERT with different kinetic properties. APP+ induced both peak and steady-state currents in DAT (KM ~27.7 \u00b5M for fluorescence, ~21.5 \u00b5M for currents), but only peak currents in NET and SERT despite linear accumulation over time. APP+ is a low-affinity substrate for all three transporters compared to their cognate substrates (dopamine KM ~4.4 \u00b5M for DAT, 5-HT KM ~3.6 \u00b5M for SERT), with KM values of ~37.3 \u00b5M for NET and ~32.0 \u00b5M for SERT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C48 provide converging evidence from fluorescence and electrophysiological measurements showing APP+ is transported by all three transporters with distinct kinetic profiles. The KM values are determined from concentration-response curves with appropriate fitting (Figures 2J-L), and the differential current responses (steady-state vs. peak only) are clearly documented. The characterization as a low-affinity substrate is supported by direct comparison to cognate substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "APP+ uptake by DAT and NET is strongly voltage-dependent, decreasing to ~25% and ~35% respectively at +30 mV compared to -90 mV, while SERT-mediated APP+ uptake is essentially voltage-independent (~80% at +30 mV). The voltage dependence of APP+-induced steady-state currents in DAT overlaps with uptake measurements, and serotonin-induced currents in SERT show ~50% reduction at +30 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C60 are well-supported by systematic voltage-clamp experiments (Figure 3) showing clear differences in voltage dependence between transporters. The quantitative measurements at different voltages are internally consistent, with fluorescence uptake and current measurements showing concordant voltage dependencies for DAT. The modest voltage effect on SERT uptake contrasts sharply with DAT/NET, establishing a fundamental functional difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "The uptake-voltage relationships for APP+ were similar in the presence of high intracellular K+ (163 mM) or absence of K+ (163 mM NMDG) for all three transporters (DAT p=0.42, NET p=0.65, SERT p=0.63). High intracellular Na+ (163 mM) significantly reduced uptake by all three transporters compared to physiological conditions (DAT p=0.0135, NET p<0.0001, SERT p<0.0001), consistent with impaired substrate dissociation on the intracellular side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by systematic manipulation of intracellular ionic conditions via patch pipette (Figure 4A-F) with appropriate statistical testing (F-tests). The lack of effect of K+ removal on voltage dependence is surprising but statistically validated, while the Na+ effect is mechanistically consistent with known transport mechanisms. However, the interpretation for SERT (C65-C66) requires consideration of alternative proton antiport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Removal of intracellular K+ eliminated steady-state currents through SERT but not DAT, and significantly altered the slope of voltage dependence of peak currents for all three transporters (DAT p<0.0001, NET p=0.019, SERT p<0.0001). Replacement with Li+ (which does not support transport) produced IV relations similar to K+ removal in DAT and NET, demonstrating that K+ specifically binds to the intracellular side of all three transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C78 are strongly supported by electrophysiological measurements under different ionic conditions (Figure 5) with rigorous statistical analysis. The Li+ substitution experiments (C76-C78) provide critical control evidence that the effects are specific to K+ binding rather than non-specific ionic strength effects. The differential effects on steady-state vs. peak currents reveal mechanistic differences between transporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The IV relations of peak currents were similar in the presence of 163 mM intracellular K+ and 163 mM intracellular Na+ for all three transporters (DAT, NET, and SERT), consistent with Na+ and K+ binding to overlapping sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by direct comparison of IV curves under different ionic conditions (Figure 5J-L). The similarity of voltage dependence with K+ vs. Na+ provides evidence for competitive or overlapping binding sites, though the inference about site overlap (C84) is reasonable but not definitively proven without structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Steady-state current amplitudes through DAT were smaller in the absence than presence of intracellular K+ (p=0.0334 at -20 mV), suggesting DAT carries an uncoupled current component. NET showed no steady-state currents regardless of ionic composition. SERT mediates an inwardly directed uncoupled current that is eliminated by K+ removal, despite its electroneutral stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by voltage-clamp measurements (Figure 6A-C) with statistical validation for DAT. The interpretation of uncoupled currents (C86, C88) is consistent with prior literature and the observation that K+ affects current amplitude without affecting transport rate. The SERT findings align with previous reports (Schicker et al., 2012; Hasenhuetl et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The catalytic rates of DAT and NET were very similar in the presence or absence of intracellular K+ (measured by two-pulse recovery protocol), while SERT showed approximately twofold deceleration in the absence of K+. High intracellular Na+ accelerated recovery of all three transporters, consistent with exchange mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are well-supported by two-pulse recovery experiments (Figure 6E-G) that directly measure transporter cycling rates. The differential effect of K+ on SERT vs. DAT/NET is a key finding that distinguishes their mechanisms. The Na+ control (C93) validates the experimental approach by showing expected exchange mode behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "A kinetic model proposes that all monoamine transporters bind intracellular K+, but DAT and NET release K+ on the intracellular side prior to the return step, while SERT antiports K+ by releasing it on the extracellular side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 present a mechanistic model that parsimoniously explains the experimental observations. The model is explicitly tested through kinetic simulations (Figure 7) that reproduce key experimental findings including voltage dependence, K+ effects on currents, and recovery rates. While the model is not uniquely determined by the data, it provides a plausible and testable framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Kinetic models based on transient K+ binding for DAT/NET and K+ antiport for SERT faithfully reproduce experimental findings: (i) voltage-independent APP+ uptake only by SERT, (ii) K+ removal abrogating steady-state current only in SERT, and (iii) K+ removal not slowing DAT/NET return but reducing SERT rate twofold. The differences in K+ handling are necessary and sufficient to account for functional differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 demonstrate that the kinetic models (Figure 7, based on Erreger et al., 2008 for DAT) can quantitatively reproduce multiple independent experimental observations. The synthetic data match experimental results across different conditions, supporting the model's validity. The claim of necessity and sufficiency (C101) is strong but justified by the model's explanatory power across diverse experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Intracellular K+ binds to the inward-facing state of DAT and NET but is released prior to the return step from inward- to outward-facing conformations. Substrate uptake by DAT and NET is voltage-dependent under physiological ionic gradients, and absence of intracellular K+ has no appreciable effect on transport rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 summarize key findings from the study that are supported by multiple lines of evidence: voltage-clamp experiments (C30), two-pulse recovery assays (C31), and peak current analysis (C28-C29). These claims integrate observations from Figures 3-6 and are central to the paper's main conclusions about mechanistic differences between transporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "All major differences between DAT, NET, and SERT can be accounted for by distinct handling of intracellular K+. In SERT, physiological K+ accelerated uptake twofold compared to its absence, while DAT and NET returned to outward-facing state at the same rate regardless of K+ presence. SERT catalytic rate was voltage-independent in physiological conditions, while DAT and NET were voltage-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 present the paper's central unifying conclusion, supported by comprehensive experimental data from uptake assays (C106-C108, Figure 4, 6G) and voltage-clamp experiments (C109-C111, Figures 3, 5). The claim that K+ handling accounts for all major differences (C105) is a strong interpretive statement that is well-justified by the breadth of supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "In all three transporters, release of intracellular Na+ from the inward-facing conformation is electrogenic. In SERT, this is canceled out by electrogenic K+ binding and antiport, rendering cycle completion voltage-independent. In DAT and NET, cycle completion remains voltage-dependent despite voltage-dependent K+ binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 provide mechanistic interpretation of the voltage dependence observations. The inference about electrogenic Na+ release (C112) is reasonable based on known transporter mechanisms and the observed voltage effects. The explanation for SERT voltage independence (C113) is consistent with the K+ antiport model and experimental data, though the charge compensation mechanism is inferred rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The steady current in SERT is produced by uncoupled Na+ flux through a channel state in equilibrium with the K+-bound inward-facing conformation. DAT carries both coupled transport currents and an uncoupled current component that is contingent on intracellular K+ presence, contrary to original models of strictly coupled currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 interpret the steady-state current observations (Figure 6A-C) in light of previous work (Schicker et al., 2012; Erreger et al., 2008). The evidence for uncoupled DAT currents (C118-C119) comes from the K+-dependent change in steady-state current amplitude (C85), which is statistically significant. The mechanistic model (C115) is consistent with prior SERT literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The Na2 site is proposed as the K+ binding site based on molecular dynamics simulations and structural conservation. The amino acids forming the Na2 site are absolutely conserved in all three transporters. Voltage dependence of peak amplitudes is identical with high intracellular Na+ and K+, supporting mutually exclusive binding at the Na2 site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 integrate structural and functional data to propose a specific binding site. The conservation argument (C121) is supported by structural studies (Penmatsa et al., 2013; Coleman et al., 2016). The functional evidence for mutually exclusive binding (C124-C125) comes from Figure 5J-L showing identical voltage dependence with Na+ or K+. However, definitive proof of the Na2 site would require mutagenesis or structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The most parsimonious explanation is that K+ is antiported by SERT but not by DAT and NET. All three transporters carry a negative charge (presumably a negatively charged amino acid) through the membrane on return, which is neutralized by counter-transported K+ in SERT. The slow, rate-limiting return step determines voltage dependence of substrate uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 present the paper's mechanistic model. The parsimony argument (C126) is justified by the model's ability to explain diverse observations. However, the charge carrier identity (C127) is speculative (\"presumably\"), and the rate-limiting step assignment (C129) is inferred from kinetic behavior rather than directly measured. The model is plausible and well-supported but contains speculative elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "SERT can alternatively antiport protons to complete its catalytic cycle, supporting the return step from inward- to outward-facing conformation. In contrast, DAT and NET return from substrate-free inward- to outward-facing conformation in the absence of K+, and protons cannot be antiported by DAT (H+ failed to accelerate catalytic rate, IV slope remained steep).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by prior literature (Keyes and Rudnick, 1982; Hasenhuetl et al., 2016) and explain SERT's ability to transport in the absence of K+. Claims C132-C133 are supported by recovery rate measurements (Figure 6E-F) and proton experiments (Figure 5\u2014figure supplement 2). The differential proton sensitivity distinguishes DAT from SERT mechanistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "APP+ is a full substrate of DAT with currents indistinguishable from dopamine, but a poor substrate for SERT that traps transporters in conformational intermediates. While APP+ has similar KM values for DAT and SERT, the catalytic rate is equivalent to cognate substrate in DAT but substantially lower in SERT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 characterize the differential substrate properties of APP+ across transporters. The classification as full vs. poor substrate is supported by current profiles (Figures 2, 3) and comparison to cognate substrates. The mechanistic interpretation for SERT (C135) is reasonable given the lack of steady-state currents despite accumulation, though \"trapping\" is inferred rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "NET shows only peak currents (no steady-state) with the rapid superfusion system, attributable to very slow catalytic rate. NET dwells in the inward-facing state with lifetime \u03c4 ~7 s, which is >10-20 times longer than DAT (\u03c4 ~0.3 s) and SERT (\u03c4 ~0.6 s). This slow turnover explains the absence of NET-mediated currents despite electrogenic stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C146 explain the unique behavior of NET. The dwell time measurements (C142-C144) from Figure 6E-G provide quantitative support for the slow cycling claim. The explanation for absent steady-state currents (C141, C146) is mechanistically sound given the timescale of measurements. The comparison to prior literature (C139, C145) contextualizes the findings appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "A unifying concept proposes that in SERT, the K+ binding site remains intact during conformational conversion, while in DAT and NET, this site is less stable, leading to K+ shedding prior to return. This predicts that DAT/NET concentrative power is independent of the K+ gradient but dependent on membrane voltage (if stoichiometry is electrogenic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 present the paper's conceptual framework integrating all findings. The stability difference (C147-C149) is a reasonable inference from the kinetic data, though not directly measured. The predictions about energy sources (C150-C151) are logical consequences of the model, though steady-state validation is noted as challenging (C152). The framework is well-reasoned but contains elements that require future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "All three monoamine transporters can transport substrate in the absence of K+, suggesting mixed stoichiometry rather than fixed stoichiometry. DAT and NET are less likely than SERT to antiport K+, while SERT antiports K+ in the majority of cycles but may return empty in some instances. The differences represent a continuum in ionic coupling rather than divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C155 present a nuanced interpretation acknowledging the complexity of transporter behavior. The evidence for K+-independent transport (C152) comes from Figures 4, 6. The probabilistic framing (C153-C154) is appropriately cautious given the data cannot definitively rule out occasional K+ antiport by DAT/NET. The continuum concept (C155) is a thoughtful interpretation that avoids oversimplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The differences in K+ handling may reflect evolutionary adaptation to physiological requirements. SERT is the most divergent transporter, expressed in both neurons and non-excitable cells with membrane potentials ranging from 0 to -84 mV. Voltage independence may allow SERT to maintain constant transport across varying potentials, while DAT can exploit membrane hyperpolarization. This represents a trade-off: SERT maintains constant rate but cannot exploit voltage, while DAT/NET harvest voltage energy but have voltage-dependent rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C170 present evolutionary and physiological speculation. While the sequence divergence (C161) and expression patterns (C162-C163) are factual, the adaptive explanations (C164-C165) are speculative. The trade-off concept (C166-C170) is logical and consistent with the data, but lacks direct experimental validation of physiological consequences. These are reasonable hypotheses for future testing rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on monoamine transporters: DAT, NET, and SERT are SLC6 family members that mediate neurotransmitter reuptake using Na+ gradients, operate via alternate access mechanism, share structural similarity and overlapping pharmacology, but differ in transport stoichiometry (SERT electroneutral, DAT/NET electrogenic) and K+ handling (SERT antiports K+, DAT/NET do not according to prior literature).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide established background knowledge supported by extensive citations to prior literature. These are not new findings but contextual information that frames the study's questions. The structural similarity (C11-C13) and pharmacological overlap (C14-C16) are well-documented. The prior understanding of K+ handling (C23-C24) is what this study challenges and refines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "APP+ is a fluorescent analog of the neurotoxin MPP+ that is taken up by cells expressing DAT, NET, and SERT, with well-understood fluorescent properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe the experimental tool used in the study. These are supported by prior literature (Javitch et al., 1985; Pifl et al., 1991; Solis et al., 2012; Karpowicz et al., 2013; Wilson et al., 2014) and validated by the current study's observations. This is methodological background rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Comparison to SLC1 glutamate transporters: This family includes K+-dependent and K+-independent members, but K+ binds to the same sites in both subfamilies. Similarly, K+ is not obligatory for monoamine transporters, and even SERT can transport substrate without K+ at lower velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159 draw parallels to another transporter family to contextualize the findings. The SLC1 information (C156-C157) is supported by citations (Alleva and Machtens, 2021; Wang et al., 2019; Kortzak et al., 2019). The monoamine transporter observations (C158-C159) are supported by the current study's data (Figure 6G) and prior work. This provides useful comparative context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "SERT showed shallow IV relations of peak currents with high intracellular Li+ compared to absence of K+, indicative of Li+ binding to SERT on the intracellular side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 report an unexpected observation that SERT, unlike DAT and NET, shows evidence of Li+ binding (Figure 5L). This is a novel finding that differs from the behavior of DAT/NET (C76-C77). However, the authors note this requires further investigation, appropriately acknowledging the preliminary nature of this observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C62",
+      "C66"
+    ],
+    "result": "The hypothesis that differences in intracellular K+ interaction may account for divergent uptake-voltage relations, and that SERT can alternatively antiport protons to complete its catalytic cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C66 state hypotheses that motivated the experimental design. C62 is validated by subsequent experiments, while C66 is supported by prior literature (Keyes and Rudnick, 1982; Hasenhuetl et al., 2016) and helps explain the SERT results in the absence of K+. These are important framing statements for the study's logic.",
+    "result_type": "MINOR"
+  }
+]

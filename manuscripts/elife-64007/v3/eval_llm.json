@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors identify PRD-2 as the gene NCU01019 through whole genome sequencing revealing a 322 kb inversion disrupting NCU01019 expression. Knockout of NCU01019 phenocopies the prd-2 long period, and ectopic expression rescues the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 provide converging genetic, molecular, and rescue evidence that NCU01019 encodes PRD-2. The inversion mapping (C44, C47), knockout phenocopy (C48), reduced expression in mutants (C49), dose-response with inducible promoter (C50), and ectopic rescue (C51) collectively establish gene identity with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "PRD-2 contains an SUZ domain and proline-rich C-terminus required for clock function, while the R3H domain is dispensable. PRD-2 localizes exclusively to the cytoplasm throughout the circadian cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are supported by domain deletion experiments in two independent genetic backgrounds (C53, Figure 2B-C), protein expression validation (C57), and subcellular fractionation over time (C58-C59). The dispensability of R3H despite its known RNA-binding function is unexpected but clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C74",
+      "C76"
+    ],
+    "result": "PRD-2 is an RNA-binding protein that directly binds and stabilizes the ck-1a transcript. The ck-1a mRNA half-life is reduced ~3-fold in \u0394prd-2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C74, C76 are supported by RNA stability assays showing dramatically reduced ck-1a half-life in \u0394prd-2 (Figure 3B: 9.4 min vs 28.6 min) and CLIP experiments demonstrating direct PRD-2 binding to ck-1a transcripts (Figure 3C). The combination of stability and binding data provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C75"
+    ],
+    "result": "Among core clock genes, ck-1a shows the largest expression change in \u0394prd-2 mutants by RNA-seq, while frq mRNA stability is not significantly altered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C75 are supported by RNA-seq data (Figure 3A) showing ck-1a as the most affected core clock gene and RNA stability assays (Figure 3\u2014figure supplement 2) showing no significant change in frq half-life. This specificity strengthens the conclusion that ck-1a is the primary clock-relevant target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C80",
+      "C81"
+    ],
+    "result": "CKI is the clock-relevant target of PRD-2, demonstrated by partial rescue of \u0394prd-2 long period through increased ck-1a expression and complete epistasis of hyperactive CKISHORT over \u0394prd-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C80-C81 are supported by genetic rescue experiments. High QA induction partially rescues period (Figure 4A), and CKISHORT is completely epistatic to \u0394prd-2 (Figure 4B). The epistasis experiment is particularly strong evidence, though the partial rescue with QA induction suggests additional complexity in PRD-2 function beyond simply increasing ck-1a levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "All three NMD subunit knockouts (\u0394upf1, \u0394upf2, \u0394upf3) are epistatic to \u0394prd-2, and ck-1a is the most affected core clock gene in \u0394upf1prd-6 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by luciferase reporter assays showing epistasis for all NMD subunits (Figure 5A) and re-analysis of published RNA-seq data showing elevated ck-1a in \u0394upf1prd-6 (Figure 5B). The consistency across all three NMD subunits strengthens the conclusion that NMD pathway activity, not off-target effects, regulates ck-1a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C94",
+      "C95",
+      "C99"
+    ],
+    "result": "The ck-1a transcript has an exceptionally long 3'-UTR (1739 bp, among top 100 in the genome) and an intron 70 nt from the stop codon, making it a strong candidate for NMD-mediated degradation independent of EJC/CBC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C94-C95, C99 are supported by genome annotation analysis (Figure 5C) and functional validation showing \u0394cbp80 does not affect clock period or interact with \u0394prd-2 (Figure 5\u2014figure supplement 1). The structural features and CBC independence are consistent with EJC-independent NMD targeting of long 3'-UTR transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Titrating ck-1a levels rescues the short period of \u0394upf1prd-6 mutants, and CKI protein levels are 2-3\u00d7 elevated in NMD mutants and 3\u00d7 reduced in \u0394prd-2, placing NMD, PRD-2, and CKI in the same genetic pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are supported by dose-response rescue experiments (Figure 5D-E) and western blots quantifying CKI levels (Figure 5F). The bidirectional rescue (increasing ck-1a rescues \u0394prd-2, decreasing rescues \u0394upf1prd-6) and protein level measurements provide strong evidence for the epistasis pathway and mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C43",
+      "C107"
+    ],
+    "result": "Two classical Neurospora period mutants (prd-2 and upf1prd-6) both affect circadian period through distinct mechanisms regulating ck-1a transcript levels, demonstrating exquisite sensitivity of circadian period to CKI levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C6, C43, C107 represent the main conclusions synthesized from all experimental data. The convergence of two independent mutants on ck-1a regulation through opposing mechanisms (stabilization by PRD-2, degradation by NMD) strongly supports the conclusion about period sensitivity to CKI levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "PRD-2 protein shows weak rhythms peaking in early subjective morning, driven post-transcriptionally, while PRD-2 RNA is not light-induced or rhythmically expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by published RNA-seq data (cited references), mass spectrometry data (Figure 2\u2014figure supplement 1B), and luciferase fusion experiments (Figure 2\u2014figure supplement 1C). The post-transcriptional regulation is inferred from non-rhythmic RNA with rhythmic protein, which is reasonable but could benefit from additional mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Hundreds of genes are affected by loss of PRD-2, but no consensus sequence motif or functional category was identified for the PRD-2 regulon, suggesting PRD-2 plays multiple cellular roles including regulation of carbohydrate and secondary metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by RNA-seq analysis (Figure 3\u2014figure supplement 1) showing 421 differentially expressed genes with functional enrichment in metabolism. The lack of consensus motif is a negative result but appropriately reported. The inference about multiple cellular roles is reasonable given pleiotropic phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "prd-2 mutants show slight growth defects, reduced fertility as female in crosses, but normal temperature and nutritional compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by race tube growth observations (Figure 1C), unpublished fertility data, and compensation assays (Figure 2\u2014figure supplement 2). These are secondary phenotypes that help characterize the mutant but are not central to the clock mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The nuclear cap-binding complex (CBC) component CBP80 is not required for normal circadian period and does not interact genetically with \u0394prd-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by luciferase reporter assays showing \u0394cbp80 has wild-type period and no genetic interaction with \u0394prd-2 (Figure 5\u2014figure supplement 1). This negative result is important for ruling out CBC-dependent NMD mechanisms and supporting the long 3'-UTR model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "A synergistic growth defect occurs in Pqa-2-ck-1a \u0394prd-2 double mutants at low QA concentrations, consistent with ck-1a being essential in Neurospora.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by observations in Figure 4A and cited references establishing ck-1a essentiality. This observation explains the lack of complete rescue and provides additional validation that the manipulations affect CKI levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "A CKISHORT mutant lacking the C-terminal autoinhibitory domain has a 17.5 hr short period, consistent with hyperactive kinase activity leading to faster feedback loop closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by luciferase reporter data (Figure 4B) and inference from prior work on FRQ-CKI binding (cited reference). The mechanistic interpretation is reasonable but somewhat indirect, relying on published models of CKI regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "PRD-2 is well conserved among Ascomycota fungi (BLASTp <e-70), while only its R3H/SUZ domains show similarity to insect and mammalian proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by bioinformatic analysis. This evolutionary context is useful for understanding PRD-2 function and potential conservation, though it does not directly test the mechanism in Neurospora.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Long 3'-UTR length appears conserved across CKI orthologs in Drosophila and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by comparative genomic analysis (Figure 5\u2014figure supplement 2) showing long UTRs in dbt (Drosophila) and CSNK1D/E (mouse and human). This suggests potential conservation of NMD regulation, though functional validation in other organisms is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background claims establishing the Neurospora circadian clock architecture, conservation with mammalian clocks, regulation of negative arm components, CKI function across species, and prior characterization of Neurospora period mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C36 are background knowledge supported by extensive cited literature. These establish the context for the current work and are appropriately referenced. They are not novel findings but necessary foundation for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Background on NMD mechanisms in Neurospora and prior speculation about FRQ as an NMD target, which is inconsistent with long-FRQ only strains having wild-type period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 are supported by cited literature and provide important context for why the NMD target remained unclear. The logical argument against FRQ as the primary target (C89-C90) is sound and motivates the search for alternative targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C129",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Discussion claims about conservation of post-transcriptional regulation across clock systems, CKI regulation in other organisms, and biomedical relevance of CKI in Alzheimer's disease and FASPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C142 are discussion points supported by cited literature. They appropriately contextualize the findings within broader circadian biology and human health, though they do not present new experimental data from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C137",
+      "C143"
+    ],
+    "result": "Statements about future research directions including whether PRD-2 functions like PTBP1, investigation of CKI isoform regulation, and potential NMD regulation of CKI in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110, C137, C143 are speculative statements about future work. They are reasonable directions based on the current findings but represent hypotheses rather than tested conclusions. These are appropriately framed as future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The upf1prd-6 short period is completely epistatic to prd-2 long period, and the two proteins use distinct mechanisms to play opposing roles in regulating ck-1a levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by classical genetic epistasis experiments (cited references, confirmed in Figure 5A) and the molecular data showing PRD-2 stabilizes while NMD degrades ck-1a. This genetic relationship was key to uncovering the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C40",
+      "C100",
+      "C108",
+      "C118",
+      "C120",
+      "C121"
+    ],
+    "result": "Mechanistic model claims: the long 3'-UTR makes ck-1a subject to NMD, PRD-2's cytoplasmic localization is consistent with protecting transcripts from NMD, and NMD regulation of CKI is novel and occurs throughout the circadian cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C100, C108, C118, C120-C121 represent mechanistic interpretations well-supported by the data. The long 3'-UTR/NMD connection is established (C40, C118), cytoplasmic localization is consistent with the model (C108), and constitutive regulation is inferred from non-rhythmic components (C120). The novelty claim (C121) appears accurate based on literature review.",
+    "result_type": "MAJOR"
+  }
+]

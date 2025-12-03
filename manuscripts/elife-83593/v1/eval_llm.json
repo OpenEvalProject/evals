@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C50",
+      "C51"
+    ],
+    "result": "TRNP1 protein evolution rate (\u03c9) significantly correlates with brain size (r=0.83, pp=0.97) and gyrification index (r=0.75, pp=0.98), with brain size showing the highest partial correlation (r=0.4). These correlations are stronger than for >95% of control proteins, and body mass shows much weaker correlation, indicating TRNP1 co-evolves specifically with brain traits rather than general body size effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C23 provide consistent statistical evidence from Coevol analysis showing significant correlations between TRNP1 \u03c9 and brain phenotypes. The comparison with 124 control proteins (C3, C20, C51) effectively controls for confounding factors like effective population size. Partial correlation analysis (C21) appropriately disentangles the relative contributions of correlated traits. The statistical framework is sound and the conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Eight codons in TRNP1 show signatures of positive selection, with seven residing in the first intrinsically disordered region (IDR) and one in the second IDR. These IDRs mediate protein-protein interactions and are relevant for TRNP1-dependent phase separation and cell cycle regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 report PAML analysis results identifying positively selected sites with appropriate statistical thresholds (Pr(\u03c9>1)>0.95). The localization of selected sites to functionally important IDRs (C27, cited from prior work) provides biological context. The methods are standard and appropriately applied for detecting positive selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C49"
+    ],
+    "result": "TRNP1 orthologues from species with larger brains induce higher proliferation rates in neural stem cells. Dolphin TRNP1 induced the highest proliferation, followed by human, both significantly higher than galago and macaque. Proliferation rates significantly predict brain size (R\u00b2=0.89, BH-adjusted p=0.0018) and GI (R\u00b2=0.69, BH-adjusted p=0.016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29 present experimental proliferation assay data with appropriate statistical analysis (logistic regression, PGLS). The phylogenetic correction (PGLS) properly accounts for non-independence of species data. Sample sizes appear adequate (7-12 replicates per condition), and the correlation between functional activity and phenotypes is statistically significant. The experimental design appropriately tests the functional consequences of sequence evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The intron CRE of TRNP1 shows association with gyrification that becomes considerably stronger when restricted to catarrhines (PGLS p=0.003, Bonferroni-corrected p=0.02). Permutation testing shows only 0.8% of random CRE combinations achieve comparable significance. Independent evidence from Reilly et al. shows gain of enhancer activity in this region on the human lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 show the association is not significant across all mammals (p=0.097) but becomes significant in catarrhines. While the authors provide justification for clade-specific analysis (regulatory element turnover), this post-hoc restriction raises concerns about multiple testing. The permutation test (C39) and independent corroboration (C40) provide some support, but the statistical evidence remains marginal. The Bonferroni correction for 7 regions is appropriate, but the initial non-significant result and subsequent clade restriction weaken confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Twenty-two transcription factors with enriched binding sites in the catarrhine intron CRE were identified, enriched for biological processes regulating cell proliferation. Three TFs (CTCF, ZBTB26, SOX8) best explain intron CRE activity variation, with CTCF binding scores co-varying with GI. ChIP-seq and Hi-C data support CTCF binding at this site in human NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C46 present TF binding site analysis with appropriate enrichment methods. However, the statistical support is explicitly acknowledged as weak (screening 22 TFs in only 10 species, uncorrected p<0.05). The supporting ChIP-seq (C47) and Hi-C data (C48) from independent sources strengthen the CTCF hypothesis, but these are correlative. The small sample size (n=10 catarrhines) limits statistical power, and multiple testing across 22 TFs without correction is concerning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "The study compiled 45 mammalian TRNP1 coding sequences (99% complete) and phenotypic data for 30 species. Seven putative CREs were identified using DNase-seq, with 351 orthologous sequences obtained across 75 species. An MPRA library of 4251 CRE tiles (86% of designed) was constructed and tested, showing exon 1, intron, and downstream CREs have highest activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C32-C34, C36 describe data collection and MPRA methodology. The sequence collection methods (BLAST, RBB) are standard and appropriate. The MPRA library construction achieved good representation (86% of designed tiles). Activity measurements are internally consistent across replicates (Figure 3\u2014figure supplement 2). The methods are well-documented and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "TRNP1 was expressed in the NPC samples used for MPRA, with significantly higher expression in human NPC lines compared to cynomolgus macaque (BH-adjusted p<0.05), consistent with higher intron CRE activity in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 present RNA-seq data showing TRNP1 expression in the relevant cell system with appropriate differential expression analysis (DESeq2, BH correction). The consistency between expression levels and CRE activity strengthens the biological relevance of the MPRA system. The statistical methods are standard and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C53",
+      "C64"
+    ],
+    "result": "The authors conclude that coding and regulatory changes that increased TRNP1 activity were positively selected as a cause or consequence of increases in brain size and cortical folding. They interpret the correlations as co-evolution of TRNP1 activity with brain traits, with structural changes appearing stronger than regulatory changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C52-C53, C64 represent interpretive conclusions synthesizing multiple lines of evidence: protein evolution correlations (C2, C17-C23), functional activity data (C4, C29), and regulatory element analysis (C37-C38). The authors appropriately acknowledge uncertainty about causality ('either as a cause or a consequence') and provide mechanistic reasoning based on prior work (C10-C13, C59-C63). The interpretation is cautious and well-supported by the convergent evidence, though the regulatory evidence is weaker than the coding sequence evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The manuscript cites extensive prior work establishing: TRNP1's role in neural progenitor proliferation in mice and ferrets; brain development mechanisms involving NECs, aRGCs, and bRGCs; examples of genes affecting brain evolution (ARHGAP11B, TKTL1, NOTCH2, etc.); and roles of identified transcription factors in neural development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C13, C55-C63, C66-C75 cite established knowledge from the literature with appropriate references. These provide essential context for the current study. The citations appear accurate and relevant, establishing the biological framework and prior functional evidence for TRNP1's role in brain development. These are appropriately used to motivate and interpret the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C65"
+    ],
+    "result": "The authors note that current measures of regulatory activity are inherently less precise than counting amino acid changes, which deflates estimated association strength. They claim TRNP1 is the first case combining protein sequence, regulatory activity, and protein activity analyses across a larger phylogeny to investigate a candidate gene in brain evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 appropriately acknowledges methodological limitations of regulatory element analysis with supporting citations. Claim C65 makes a priority claim about the integrative approach. While difficult to verify exhaustively, the combination of phylogenetic protein evolution analysis, MPRA across many species, and functional assays does appear novel in scope for brain evolution studies. The acknowledgment of limitations is scientifically appropriate.",
+    "result_type": "MINOR"
+  }
+]

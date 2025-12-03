@@ -1,0 +1,1404 @@
+{
+  "submission": {
+    "id": "ee77984f-384c-4f21-bbac-7b9ed13c530a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:26:02.009170Z",
+    "updated_at": "2025-12-03T07:26:02.009170Z"
+  },
+  "content": [
+    {
+      "id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "submission_id": "ee77984f-384c-4f21-bbac-7b9ed13c530a",
+      "content_type": "manuscript",
+      "content_text": "# Heterogeneous side effects of cortical inactivation in behaving animals\n\n## Authors\n\n- Ariana R Andrei<sup>1</sup> ([ORCID: 0000-0003-2152-2580](https://orcid.org/0000-0003-2152-2580))\n- Samantha Debes<sup>1</sup>\n- Mircea Chelaru<sup>1</sup>\n- Xiaoqin Liu<sup>1</sup>\n- Elsa Rodarte<sup>2</sup>\n- John L Spudich<sup>3</sup> ([ORCID: 0000-0003-4167-8590](https://orcid.org/0000-0003-4167-8590))\n- Roger Janz<sup>1</sup>\n- Valentin Dragoi<sup>1</sup> ([ORCID: 0000-0002-9526-0926](https://orcid.org/0000-0002-9526-0926)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology and Anatomy, McGovern Medical School, University of Texas Houston United States\n2. Department of Neurology, McGovern Medical School, University of Texas Houston United States\n3. Center for Membrane Biology, Department of Biochemistry and Molecular Biology, McGovern Medical School, University of Texas Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCortical inactivation represents a key causal manipulation allowing the study of cortical circuits and their impact on behavior. A key assumption in inactivation studies is that the neurons in the target area become silent while the surrounding cortical tissue is only negligibly impacted. However, individual neurons are embedded in complex local circuits composed of excitatory and inhibitory cells with connections extending hundreds of microns. This raises the possibility that silencing one part of the network could induce complex, unpredictable activity changes in neurons outside the targeted inactivation zone. These off-target side effects can potentially complicate interpretations of inactivation manipulations, especially when they are related to changes in behavior. Here, we demonstrate that optogenetic inactivation of glutamatergic neurons in the superficial layers of monkey primary visual cortex (V1) induces robust suppression at the light-targeted site, but destabilizes stimulus responses in the neighboring, untargeted network. We identified four types of stimulus-evoked neuronal responses within a cortical column, ranging from full suppression to facilitation, and a mixture of both. Mixed responses were most prominent in middle and deep cortical layers. These results demonstrate that response modulation driven by lateral network connectivity is diversely implemented throughout a cortical column. Importantly, consistent behavioral changes induced by optogenetic inactivation were only achieved when cumulative network activity was homogeneously suppressed. Therefore, careful consideration of the full range of network changes outside the inactivated cortical region is required, as heterogeneous side effects can confound interpretation of inactivation experiments.\n\n## Introduction\n\nDetermining causal relationships between neuronal circuits and behavior represents a fundamental goal of systems neuroscience. Establishing causality, and not just correlation, is difficult and is typically done by externally modulating neural activity, that is, using optogenetics, thermal cooling, or pharmacological agents, and observing the effects on behavior. In a typical cortical inactivation experiment, a particular neural population is silenced, and if a behavioral impairment is observed, that specific population is believed to be causally involved in modulating that specific behavior. Cortical neurons, however, are embedded in densely interconnected local networks spanning hundreds of microns (Douglas and Martin, 2004; Hirsch and Martinez, 2006; Stettler et al., 2002). These local connections are crucial for contextually modulating neural responses, and they underlie canonical cortical computations such as divisive normalization (Carandini and Heeger, 2011) and surround suppression (Adesnik et al., 2012; Angelucci et al., 2017; Trott and Born, 2015). It is unknown how focal suppression influences activity in the local network (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left, glutamatergic neurons were targeted using a lentivirus construct, containing the gene for GtACR2, under the control of an \u03b1-CamKII promoter. Right, optogenetic suppression of a focal neural population may result in a spread of suppression across the network (\u2018Suppression only\u2019) or in a heterogeneous response in the network (\u2018Mixed effects\u2019). (B) Immunohistochemical analysis performed on biopsied tissue from one monkey, after experiments were complete, confirmed that expression of green fluorescent protein (GFP)-tagged GtACR2 was confined exclusively to excitatory neurons. White arrowheads indicate neurons immuno-positive for NeuN (pan-neuronal marker, top left panel), \u03b1-CamKII (glutamatergic neuron marker, top right panel), and GFP (GtACR2 marker, bottom left panel). Right, bar graph shows counts for immuno-positive cells counted across five separate sections. No inhibitory neurons (NeuN+/CamKII-) were found to be positive for GFP. Scale bar is 25 \u03bcm. (C) Animals viewed 300-ms contrast-varying oriented gratings on a computer monitor. Optogenetic suppression was present on 50% of trials in a randomly interleaved manner. Light duration was 300 ms and was synchronized with stimulus presentation. (D) Electrophysiological recordings using laminar electrodes were made either proximal to the fiber optic location or at distal sites ~300 \u03bcm away. (E) Neural responses near the light source. Population responses (n = 48) with (blue trace) and without (black trace) laser activation of GtACR2, while animals fixated. Horizontal black bar shows time of light on. Error envelopes show sem. (F\u2013I) Examples of neural responses recorded distal from the fiber optic, across four visual stimulus conditions (columns). Columns are arranged with increasing stimulus contrast (0%, leftmost column, to 100%, rightmost column). Black traces show the mean firing rate on control trials. Colored traces show mean firing rates on laser trials. Horizontal black line shows timing of the visual stimulus and light on; red arrowheads mark regions of interest.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of the recording setup using two laminar electrodes separated by 300 \u00b5m. A fiber optic is closely coupled with one of the electrodes. (B, C) Heatmaps showing the differences in firing rates (laser minus control trials) across all simultaneously recorded channels from the distal electrode in the local network (B) and the electrode coupled to the fiber optic light source (C). Upper and lower heatmaps show response differences during stimuli of 10% and 100% contrast, respectively. Arrows with numbers show the units depicted in panels (D\u2013I). Blue traces show results from optical suppression (\u2018Laser\u2019) trials. Black traces show control trials. (D\u2013I) Contrast response function of 3 units from the distal probe (D\u2013F) and 3 units from the optical suppression site (G\u2013I). Responses were calculated for the 150 ms window that evoked the strongest response on control trials, typically 0\u2013150 ms from stimulus onset (see \u2018Materials and methods\u2019 for details). (J, K) Peri-stimulus time histograms for 2 units, one from the distal probe (J) and one from the optical suppression site (K). Left panels show average firing rates during 0% contrast trials in control (black) and optical suppression (blue) trials. Right panels show average firing rates during 100% contrast trials. Stimulus orientation was close to the preferred orientation of the distal probe population, but not optimized. All errors show sem. (L) Type 1 cells recorded 300 \u00b5m from the light source (\u2018indirect\u2019; n = 91) displayed significantly longer latencies to reach maximum suppression compared to cells near the light source (\u2018direct\u2019; n = 41), measured as the first time after light onset at which the maximum percent suppression during light and visual stimulation is reached. (M) Subdividing the Type 1 indirect cells across layers (n = 12, 21, and 28 for supragranular (SG), granular (G), and infragranular (IG) layers, respectively) also showed that the indirect cells had a longer response latency compared to direct cells across all layers. This strongly supports the idea that the indirect effects are mediated by local circuitry.\n\nIn principle, silencing a neural population could likely cause substantial activity disruption in the neighboring connected network. In small-brained animals, such as rodents and fruit flies, it is physically possible to silence an entire cortical area with a small amount of light (Li et al., 2019; Mauss et al., 2017). However, for deep-brain structures, where light penetration is more difficult, or in animals with larger brains, such as monkeys, complete inactivation of a brain region is often not possible (Acker et al., 2016; Galvan et al., 2017; Gerits et al., 2012). In these latter scenarios, off-target effects of inactivation manipulations must be considered when interpreting behavioral results since nearby neurons are equally likely to contribute to any observed behavioral changes. Such off-target network effects are particularly troublesome for studies that do not record neural activity during light-induced suppression, but rather assume that the net impact on the targeted network is equivalent to the effect of the opsin on an individual cell. However, despite the importance of these issues, the indirect effects of optogenetic silencing on the neighboring neural population activity and on animal\u2019s behavior are largely unknown.\n\nHere, we explicitly examined off-target, network-mediated effects through population recordings of neural activity across the cortical layers of primary visual cortex (V1) of behaving monkeys while optogenetically inactivating a local population of excitatory cells using the suppressive opsin GtACR2 (Figure 1A). We found that optogenetic suppression unmasks highly heterogeneous effects in the lateral columnar networks ranging from full suppression to full facilitation. Furthermore, the degree of heterogeneity of indirect network effects following optogenetic inactivation varies as a function of cortical layer. A computational model indicates that these diverse responses can be explained by differences in the strength of local intracortical inputs during distal inactivation, and are likely due to the same circuitry that mediates normalization processes, such as contrast gain control. Finally, we show that behavioral performance is consistently impaired only when the net activities of both the on- and off-target sites are uniformly suppressed, while heterogeneous off-target activity resulted in heterogeneous behavioral changes. Such off-target, network-mediated effects provide a viable explanation for the diversity of results reported in optogenetic studies in non-human primates (Tremblay et al., 2020).\n\n## Results\n\n### Optogenetic suppression of V1 responses\n\nTo examine whether focal silencing of a population of V1 neurons leads to uniform or heterogeneous off-target responses in the neighboring local network, GtACR2, a chloride-conducting channelrhodopsin, was expressed in populations of glutamatergic cells (see \u2018Materials and methods\u2019). GtACR2 has been shown to be more sensitive to light and produce stronger hyperpolarizing currents than other inhibitory opsins (Govorunova et al., 2015). To our knowledge, this is the first usage of this opsin in the monkey brain. To quantify the specificity of gene expression using this novel construct, we developed a novel biopsy technique to extract cortical tissue for immunohistochemical analysis (see \u2018Materials and methods\u2019). Gene expression was robust and specific to neurons expressing glutamatergic marker \u03b1-CamKII (Figure 1B), with 97% of cells positive for \u03b1-CamKII also positive for green fluorescent protein (GFP, co-expressed with GtACR2), and no neurons (NeuN+, a pan-neuronal nuclear antigen marker) that were negative for \u03b1-CamKII and positive for GFP (corresponding to inhibitory cells).\n\nMonkeys performed a contrast detection task in which optogenetic suppression was randomly interleaved on 50% of trials (Figure 1C, see \u2018Materials and methods\u2019). Extracellular recordings were made using multi-contact laminar electrodes and light was emitted by an independently movable fiber optic (Figure 1D). We positioned the fiber optic such as to inactivate the superficial layers of V1 (Andrei et al., 2019) and measured the amount of direct suppression (the light source was coupled to the recording electrode; Figure 1D\u2013E). As expected, light activation reduced firing rates by 24.9% \u00b1 2.1% compared to control trials (mean \u00b1 sem, over the entire 300 ms light stimulation interval; 18.1 \u00b1 2.1 sp/s control trials, 11.6 \u00b1 1.4 laser trials, p = 0.0064, Wilcoxon rank sum test, n = 41). The direct suppression was long-lasting, and responses returned to baseline 387.9 ms \u00b1 38.7 ms after light offset (median \u00b1 sem), consistent with previously measured kinetics of GtACR2 (Govorunova et al., 2015).\n\n### Heterogeneous network side effects during optogenetic inactivation\n\nNext, we examined the off-target effects of optogenetic inactivation by measuring the changes in neural responses away from the light stimulation site (Figure 1D, left). This was done by separating the electrode from the light source by a fixed distance, ~300 \u03bcm, around the stimulation site, using a custom grid placed inside the recording chamber. This allowed us to assess whether the nearby columnar networks that were not directly inactivated by light undergo changes in population activity. We recorded a total of 214 units across 21 sessions (both single- and multi-unit responses were included: 127 units from Monkey 1 and 87 units from Monkey 2), with statistically significant differences in firing rate during laser trials compared to control (no laser) trials at one or more visual contrast conditions (Wilcoxon ranked sum test, p<0.005). Although firing rates of neurons did not change in the blank 0%, contrast condition (Figure 1F\u2013I; laser vs control trials), the stimulus-triggered responses were highly heterogeneous. The changes in neural responses varied between robust suppression (Figure 1F) and excitation (Figure 1I), or mixed effects at various contrasts (Figure 1G\u2013H). The lack of suppression in the blank condition indicates these responses cannot be due to direct activation of GtACR2 at the distal site. We further confirmed that both direct silencing (Figure 1E) and heterogeneous responses in the local network (Figure 1F\u2013I) are present simultaneously by performing additional recordings using two laminar electrodes, one coupled to the light source, and the other positioned hundreds of microns away (Figure 1\u2014figure supplement 1A-K). Further, to assess whether the suppressive responses (such as those in Figure 1F) at the distal site were not due to a small amount of scattered light originating from the fiber optic, we measured the suppression latency on laser trials in the presence of visual stimulus (Figure 1\u2014figure supplement 1L,M).\n\nAs expected from a network-mediated effect, the suppressed cells at the off-target site took significantly longer to exhibit response inactivation (92.9 \u00b1 1.1 ms, mean \u00b1 sem) compared to the cells at the direct site (31.2 \u00b1 1.2 ms; p = 0.0007, Wilcoxon ranked sum test). These results demonstrate that local optogenetic suppression results in largely heterogeneous effects across neurons in the vicinity of the directly suppressed cell population. To quantify the diversity of light-induced responses, we first measured the contrast-evoked spike counts for each light-responsive neuron for laser and control trials (see \u2018Materials and methods\u2019). Next, we fitted the contrast responses with an implementation of the normalization equation tailored for optogenetics experiments (Nassi et al., 2015; Sato et al., 2014):\n\n$$\nRc=\\frac{R_{m}*R_{o}+c^{n}+P}{C50+c^{n}+Q}\n$$\n\nwhere R is the modeled response to visual stimulus contrast (c), Rm is the maximum firing rate, Ro is the baseline firing rate, n is the neuron\u2019s sensitivity to contrast, C50 is the semi-saturation constant, and P and Q represent the extent to which the local network provides activation and divisive suppression, respectively. The normalization model provided good fits for the observed contrast responses (Figure 2\u2014figure supplement 1B, C) and was able to capture the diversity of light-modulated neural responses (Figure 2A). Across the population, there was a continuum of responses (Figure 2A and C), but four basic response patterns clearly emerged following optogenetic inactivation of the nearby network (see the example cells in Figure 2A and population responses in Figure 2B; see also Figure 2\u2014figure supplement 1A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative examples for the four distinct response patterns observed. Points show mean \u00b1 standard error of firing rates scaled relative to the maximum across trials. Solid lines show normalization model fits to data points. Black points/lines show basic responses. Colored points/lines show responses during optogenetic suppression of local network. (B) Population contrast responses for each response type. *p<0.05, Wilcoxon signed rank test, with false discovery rate correction. Insets show average waveforms from all cells. (C) Response types across the population. Heatmap shows differences in firing rate (laser minus control) as predicted by normalization fits for each recorded neuron. Types were classified based on the model fit pattern and ordered based on the mean change in firing rate between laser and control trials across contrasts. (D) Example current-sink density estimate for one session, used to assign layer identity. Black horizontal bar shows the time of stimulus presentation. Dashed horizontal black lines show layer boundaries (see \u2018Materials and methods\u2019). (E) Distributions of response types per layer as a percent of all cells recorded in each layer across all sessions. Black vertical line represents the median. Edges of boxes represent the 25th and 75th percentiles. Dashed lines represent the range. Red crosses represent outliers. Inset shows the percent of each response type within each layer. (F) Proportion of each response type within each layer. (G) Results of statistical comparisons of distributions shown in panel (E) (Kruskal-Wallis test, post-hoc Tukey test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Change in firing rate on laser trials compared to control across contrasts for all neurons (n = 214), classified according to the normalization fits (Types 1\u20134; see also Figure 2). Black dots represent the mean of each distribution. *p<0.05, Wilcoxon signed rank test, median different from zero, with false discovery rate correction for multiple comparisons. (B) Actual firing rate changes for each contrast that models were fit to and ordered as in panel (B). Color scheme is identical to that in panel (B). (C) Variance explained values for model fits of the entire population of neurons. Vertical lines show the median of the entire population (black solid line) and the medians of groups divided by response types (colored dashed lines). (D, E) To validate that the response type classification procedure based on the normalization fits captured the actual firing rate changes for each cell, we used a uniform manifold approximation and projection (\u2018UMAP\u2019) algorithm to cluster the firing rate differences (laser minus control) across all contrasts for all cells (n = 214). Firing rate differences across contrasts with correctly ascribed labels produce four distinct clusters (D), while randomly ascribed labels to the same firing rate data produce only one cluster (E). The number of clusters was assessed using the silhouette criterion (E, inset; highest value corresponds to the optimal number of clusters; blue line shows criterion values for K-means clustering of UMAP values obtained from the actual data, as shown in panel (D), while the gray dashed line shows criterion values for clustering based on random assigned labels, panel (E) main). This demonstrates that the clustering obtained in (D) does not arise by chance and confirms that the UMAP method, based on the actual data, produces four highly separable clusters. (F) As a secondary validation that the response type classification method we implemented a linear discriminant classifier to classify the ascribed response type based on the firing rate differences (laser minus control) across all contrasts for each cell. The overall performance of the classifier is shown on the left (black bar, mean \u00b1 sem based on five runs) and performed significantly (**p<0.0001, t-test, two-way, unpaired; n = 5 runs) above chance (gray bar, same firing rate data but with randomly shuffled class labels). The area under the receiver operating characteristic curves for each response type is significantly above chance (**p<0.0001, t-test, two-way, unpaired; n = 5 runs) for all response types (right side).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Contrast response curve from an example cell based on responses to nine visual contrasts. Dashed red line shows c50 of the fit. Blue arrow shows the c50 parameter of the normalization fit (based on Naka-Rushton equation). (B) Same cell as in panel (A), with contrast response curve fit using a subset of five contrasts. (C) c50 measured from contrast response curves fit using nine vs five contrasts. Inset details the R and p-values of the Pearson correlation, and the p-value of a two-way, paired t-test comparing the nine and five contrast groups (n = 54). (D) Comparison of other normalization fit parameters from nine vs five point fits. (E, F) Contrast response curve for an example cell that does not show response saturation at high-contrast fits with either nine (E) or five contrasts (F). For these cells, the estimated c50 parameter (blue arrow) does not correspond with the measured c50 (red dashed line). (G) Normalization c50 parameter for each response type. Bars show the mean and standard error of each group. **p<0.001, Kruskal-Wallis test, with post-hoc Tukey test. (H) Percent of cells with model parameter c50 values greater than 80% contrast, indicative of non-saturating behavior, for each response type. (I) Distribution of model parameter c50 values for each response type. (J\u2013L) Oversampling the high-contrast range still shows cells that do not saturate at even very high contrasts. (J) Left and right panels show example cells with non-saturating behavior. (K) Example cell simultaneously recorded with those in panel (J), which exhibit more typical high-contrast saturating behavior. (L) Distribution of model parameter c50 values obtained from the high-contrast oversampling experiment. This distribution is very similar to those in panel (I), strongly suggesting that the non-saturating cells in panel (I) are a true category, rather than an artifact due to under-sampling at high contrasts.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Response types per layer as a percent of all cells recorded in each layer across all sessions. Black vertical line represents the median. Edges of boxes represent the 25th and 75th percentiles. Dashed lines represent the range. Red crosses represent outliers. N = 8 sessions, with 66 total units. Results are comparable to those of the complete dataset shown in Figure 3. (B) Results of statistical comparisons of distributions shown in panel (A) (Kruskal-Wallis test, post-hoc Tukey test). (C) Given the lack of clear consensus about the thickness of the granular layer in the macaque brain, we also classified layers using a smaller 300-\u00b5m granular layer convention to check whether it produced less heterogeneity across layers. The distribution of response types per layer, however, was very similar to that using the 400 \u00b5m convention (Figure 2F). (D) Reducing the granular layer thickness convention from 400 \u00b5m to 300 \u00b5m resulted in layer assignment changes (granular (G) to supragranular (SG)) for 16 cells (n = 7 Type 1, n = 5 Type 2, n = 4 Type 3, and n = 0 Type 4).\n\nTo categorize individual cell responses into specific types, two converging approaches were used, utilizing both the normalization fits and the raw firing rates across contrasts (Figure 2\u2014figure supplement 1A) for all light-responsive neurons. For each neuron, contrast response differences between laser and control conditions were assigned to one of the four possible categories based on visual inspection. For example, cells that showed a decrease in firing rate at most contrasts on laser compared to control trials were tentatively classified as Type 1. Next, the differences in the normalization fits between the laser and control conditions were algorithmically classified into four classes based on the average difference at low contrasts (1% to c50 of each cell) and at high contrasts (90\u2013100%). These two methods converged on the same result for 88.3% of the cells. For disagreements, the category that best matched the firing rate pattern was chosen. To validate that these four response categories were representative of the light-evoked firing rate changes of the cell populations and not an artifact of the classification procedure, we used two additional methods. First, we used a clustering algorithm (uniform manifold approximation and projection) (Meehan et al., 2021) to group the firing rate differences (laser minus control) across contrasts for all cells (Figure 2\u2014figure supplement 1D, E). This method produced four distinct clusters for the actual data (Figure 2\u2014figure supplement 1D), but not for the randomly labeled data (Figure 2\u2014figure supplement 1E). Second, a linear discriminant classifier (Figure 2\u2014figure supplement 1F) correctly classified firing rates into the ascribed response types with an overall accuracy of 74.3% \u00b1 2.6% (mean \u00b1 sem across five training and validation implementations of the classifier), which was well above chance 33.2% \u00b1 1.9% (p = 1.34 \u00d7 10\u20136, t-test, two-way, unpaired, n = 5).\n\nLastly, since our experimental design focused on the low-contrast range of visual stimuli (where behavioral differences are more evident), we verified that the normalization model fit with five pre-dominantly low contrasts produced comparable results to fitting with more numerous, evenly spaced contrasts. To do this, we conducted additional experiments using nine stimulus contrasts (Figure 2\u2014figure supplement 2A-D) and recorded the evoked responses of 54 additional units. We fit neuron responses using all nine contrasts and a subsample of five contrasts (with a similar range as the optogenetics experiments). There was a high degree of correlation between the measured c50 and the slope of the fits based on nine vs five contrasts (Pearson R = 0.89, p<0.001), demonstrating that the normalization model parameters based on five contrasts were sufficient to capture close to the \u2018true\u2019 contrast response parameters of each cell.\n\nUsing this classification strategy in the distal network, we found that a significant fraction of neurons exhibited suppression across all visual stimulus contrasts (labeled Type 1, 42.5% of all light-modulated cells). However, the majority of light-responsive neurons (57.5%) in the distant network exhibited either mixed effects or facilitation\u2014Type 2: facilitation at low contrasts and suppression at high contrasts (28.5% of cells); Type 3: suppression at low contrasts and facilitation at high contrasts (20.1% of cells); and Type 4: facilitation across all contrasts (8.9% of cells).\n\n### Response heterogeneity is not due to direct optogenetic suppression\n\nIn addition to the latency analysis described above (Figure 1\u2014figure supplement 1L, M), there are several other reasons why the distal effects we have revealed cannot be due to direct optogenetic suppression. First, direct suppression caused by light activation of GtACR2 channels has a very characteristic pattern, comprising a strong hyperpolarization (or decreased firing rate) that persists hundreds of milliseconds after light offset. This has been demonstrated in vitro (Govorunova et al., 2015) and confirmed in our in vivo data (Figure 1E and Figure 1\u2014figure supplement 1C). These long-lasting responses are only found at recording sites adjacent to the light source, but never at the distal recording sites. Second, the distal recording sites are located well within the area targeted by the virus injections. Injections were spaced across the cortical surface within a rectangular area spanning 1.0 \u00d7 0.7 mm (four horizontally spaced columns, with 1 \u00b5l \u00d7 5 vertically spaced injections in each column; see \u2018Materials and methods\u2019). Given that 1 \u00b5l of a lentiviral suspension has been shown to transfect cells within 1 mm3 (Han et al., 2009), glutamatergic neurons at the distal site would also be expected to express GtACR2 and should be suppressed if exposed to light. This is particularly true since GtACR2 is much more sensitive to light than traditional channelrhodopsins (Govorunova et al., 2015). This also means that the distal heterogeneous effects are not due to retrograde transport of the virus, since the neurons at the distal site are located within the injection boundaries. Thus, if light traveled to these distal sites, the transfected cells should exhibit characteristic GtACR2-mediated suppression, and this effect would be most apparent in the absence of a visual stimulus. However, we never observed cells exhibiting the characteristic long-lasting suppression at distal recording sites. Further, neural responses at the distal sites had no significant light-induced modulation in the absence of the visual stimulation (Figure 2B, Figure 2\u2014figure supplement 1A; the 0-contrast condition). This latter finding is consistent with the network-based modulation activated by the visual stimulus, but cannot be attributed to direct activation of GtACR2 channels by stray light. Lastly, blue light (473 nm wavelength) is known to scatter rapidly in brain tissue (Diester et al., 2011), with virtually no light penetrating laterally beyond the collimated area (Li et al., 2019). We confirmed the absence of direct light activation at the distal site by performing experiments with simultaneous recordings at both the light-application site and a second distal site (Figure 1\u2014figure supplement 1). In these experiments, we confirmed that direct, long-lasting suppression, regardless of stimulus contrast, was only found along the electrode adjacent to the light source (Figure 1\u2014figure supplement 1C, n = 12). Despite being located within the injection-targeted area, not such characteristic, direct-light-mediated responses were found at the distal sites. The responses along the distal probe were only of the stimulus-dependent, heterogeneous variety (Figure 1\u2014figure supplement 1B, n = 5; n = 3 Type 2 and n = 2 Type 3 response motifs).\n\n### Laminar distribution of response types\n\nWe next asked whether there is a laminar specificity to the different response type patterns induced by the suppression of the nearby cell population in the superficial layers. In principle, local intracortical connections could be involved in transmitting the direct optogenetic suppressive effects observed at the light stimulation site to nearby cortical columns. However, since local connections are distance-dependent, the suppression of cortical responses at the light stimulation site could result in direct suppression in the superficial layers of adjacent microcolumns, whereas the effects at larger depths could be mixed.\n\nTo measure these effects, we identified V1 layers using a standard current-sink density (CSD) analysis (Hansen et al., 2012) based on the local field potentials recorded in response to a large (5\u00b0) full-contrast dynamic visual stimulus presented for 1600 ms (Figure 2D, see \u2018Materials and methods\u2019). A clear laminar profile could be identified in 15/21 sessions. Allocating units in these sessions to their respective layers (n = 24, 51, 80 for supragranular (SG), granular (G), and infragranular (IG), respectively) reveals different proportions of response types across layers (Figure 2E\u2013G). Specifically, Type 1 responses dominate in SG, while all types are evenly distributed in G and IG (Figure 2E and Figure 2\u2014figure supplement 3). Type 1 (purely suppressed) units were evenly distributed throughout all layers, while Type 2, 3, and 4 responses were primarily found in G and IG. These cumulative population results were confirmed by subsequent analyses restricted to sessions in which light-modulated units were simultaneously recorded across all three laminar divisions (n = 8 sessions, Figure 2\u2014figure supplement 3). Further, given the considerable variability in the thickness of the granular layer across anatomical studies (ranging between 360 and 580 microns from our literature survey), to check whether our 400-\u00b5m granular layer convention impacted the laminar distributions of response types, we also redefined granular as spanning 300 \u00b5m. However, this did not substantially alter our previous results (Figure 2\u2014figure supplement 3C, D).\n\n### Response heterogeneity can be explained by variations in network connectivity\n\nCritically, all four response types were found simultaneously within individual recording sessions, when visual stimulus properties and light delivery parameters were identical (Figure 3A). This means that the overall diversity of responses cannot be explained by subtle differences in experimental parameters that can vary across sessions. All sessions with multiple simultaneously recorded neurons had more than one response type (data from individual sessions are shown in Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig3-v2.jpg)\n\n**Figure 3.:** (A) Proportion of neurons in each category type recorded in each session. Horizontal black line shows the mean across sessions. (B) Proportion of neurons in each category across sessions in each monkey. *p<0.05, Kruskal-Wallis test, post-hoc Tukey test. (C) Sample-size effect. Sessions with higher overall cell counts have a greater proportion of Type 2\u20134 cells and fewer Type 1 cells. The y-axis represents the percent of each response type as a function of the total number of cells recorded in each session (n = 22). Lines represent linear fits of each response type. (D\u2013F) Normalization model fit parameters for each response type, showing the divisive (D) and additive (E) components as well as the slope (F). (G) Contrast that elicits 50% of the maximum response (c50), measured from fits. Bars show the mean and standard error of each group. *p<0.05, **p<0.001, Kruskal-Wallis test, with post-hoc Tukey test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We assessed whether the variations in response types across sessions could be explained by other factors. The panels in the left column have sessions ordered by the % Type 1 responses contained. The panels in the right column show the same data arranged in the chronological recording order, with a small gap indicating data from individual monkeys (\u2018M1\u2019, \u2018M2\u2019). (A, F) Percent Type 1 cells of total cells recorded in each session. The size of dots is proportional to the total number of cells in each session, ranging from 1 to 17 cells. (B, G) Distribution of all response types per session. Trial counts for each session numbered 1\u201321 are 128, 320, 288, 192, 144, 288, 432, 480, 480, 384, 240, 288, 480, 432, 282, 244, 480, 480, 480, 240, and 480, respectively. (C, H) Distribution of cells in each layer division (supragranular (SG), granular (G), infragranular (IG)). Sessions without data did not have clear laminar information. (D, I) Relative depth of recording electrode, zeroed to a pre-defined point on the microdrive apparatus prior to mounting it on the chamber. Dot size represents the number of cells in the session, like panels (A, F). (E, J) Four different fiber optic cables were used in these experiments, identified here by numbers 1\u20134. Dot size is proportional to the laser power setting from the collimator to the fiber optic (numerical values of 6 or 10).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Orientation preference of light-responsive neurons was assessed using a reverse-correlation fixation task presenting static gratings of eight orientations. Sessions that have no data (n = 5) did not include this additional fixation task, when time did not permit. To measure the heterogeneity of orientation tuning within individual sessions, we calculated the standard deviation of preferred orientation across all light-responsive neurons within each Type 1 dominant session (blue circles) and mixed-type session (red circles). Sessions are arranged according to the % Type 1 cells in the descending order (left panel) or the chronological recording order (right panel). (B) Standard deviation of the orientation selectivity index (OSI) across the light-responsive cells in each session. Same conventions as in panel (A). (C) Difference in orientation between each light-responsive neuron and the actual stimulus orientation was not different across response types (p = 0.725, Kruskal-Wallis test, df = 3). (D) Orientation selectivity was not different across response classes (p = 0.120, Kruskal-Wallis test, df = 3).\n\nThe overall proportions of each response type were consistent within sessions (Figure 3A) and similar across monkeys (Figure 3B; p<0.0001, Kruskal-Wallis test, post-hoc Tukey test; within-type comparisons were not significantly different across monkeys, p>0.05). However, there was some variation in the types of responses observed day-to-day (Figure 3A, Figure 3\u2014figure supplement 1B). Variability across sessions could be due to something trivial, such as sample-size effects (Figure 3C; rarer Type 3\u20134 responses were more likely to be found in sessions where more cells were simultaneously recorded), or due to other factors that could vary across sessions (Figure 3\u2014figure supplement 1). To address these latter possible sources of heterogeneity across sessions, we considered whether the patterns of heterogeneity were correlated with four measurable factors. Sessions were organized either according to the proportion of Type 1 responses (Figure 3\u2014figure supplement 1, left column) or in their chronological recording order (Figure 3\u2014figure supplement 1, right column). We then asked whether the distribution of response types could be correlated with cumulative damage to the cortex (as indicated by the chronological order; Figure 3\u2014figure supplement 1F), differences in laminar sampling (Figure 3\u2014figure supplement 1C, H), recording depth (Figure 3\u2014figure supplement 1D, I), or the identity of fiber optic used for light delivery on specific days (Figure 3\u2014figure supplement 1E, J; laser power was the same across sessions). However, none of these factors correlated with heterogeneous response patterns observed in each session.\n\nIn primates, stimulus representation is anisotropically represented across the cortical surface. Our acute recordings sampling different neural populations could be located within different network orientation preference contexts of V1 (i.e., the column\u2019s proximity to pinwheel centers would influence the range of orientations represented in a given population). The visual stimulus orientation was optimized for the recorded cell population but could vary for individual cells within a session. We first examined whether the distribution of orientation preferences across neurons varied across sessions. More diversity of orientation preferences would be expected closer to pinwheel centers. However, we found no difference in either the distributions of orientation preferences observed in each session (Figure 3\u2014figure supplement 2A; p = 0.497, t-test, two-way) or the orientation selectivity of the cells (indicative of the sharpness of tuning) across sessions (Figure 3\u2014figure supplement 2B; p = 0.600, t-test, two-way).\n\nNext, we examined the tuning of the response types (Figure 3\u2014figure supplement 2C, D) but found no differences across types with respect to the difference between the cell\u2019s preferred orientation and that of the visual stimulus (Figure 3\u2014figure supplement 2C; p = 0.06, Kruskal-Wallis test). Nor was there a difference across response types in the sharpness of tuning (Figure 3\u2014figure supplement 2D; p = 0.12, Kruskal-Wallis test). Since cells within the suppressed column would also have largely overlapping orientation preferences, differences in orientation preference between the recorded and suppressed cortical columns fail to explain the heterogeneous responses found within sessions. Further, we did not measure any significant difference in population tuning properties across sessions, which would have been indicative of sampling functionally different portions of the V1 network. We conclude that differences in orientation preference do not adequately explain cross-session variability within our data.\n\nHaving ruled out the above factors, and given that suppressing the local network consistently produces the four basic simultaneous response types within a column, we reasoned that the response heterogeneity revealed here is most likely due to variations in functional connectivity patterns between the lateral network and individual cells within a distal cortical column. We examined this issue by quantifying the differences in the normalization model fit parameters associated with each response class (Figure 3D\u2013G). Specifically, model parameters P (additive, Figure 3E) and Q (divisive, Figure 3D) represent the input provided by the local network, while n (slope, Figure 3F) and c50 (semi-saturation constant; measured from the fits in Figure 3G; model parameter value in Figure 2\u2014figure supplement 2G) represent the intrinsic stimulus responsivity. Note that P and Q are measured on the trials with optogenetic suppression (\u2018laser trials\u2019). This analysis revealed distinct stimulus response properties associated with each class. For example, Type 1 cells were sensitive to a broader range of stimulus contrasts (evident by the lower slope, Figure 3F, and higher c50, Figure 3G) and were more strongly modulated by the local network (Figure 3D\u2013E) compared to Type 2 cells. Type 1 cells were also less sensitive to low-contrast stimuli compared to Type 2 or Type 4 cells (evident from the higher c50 value, Figure 3G). The Type 2 class displayed the lowest values for the network inputs (Figure 3D\u2013E) compared to other cell classes. We also quantified the portion of cells in each type that did not exhibit saturating responses at high contrasts (Figure 2\u2014figure supplement 2E, L), and thus maintained sensitivity in that range. These cells comprised the majority of Type 3 responses (54.8%) and were least represented in the Type 2 group (12.2%) (Figure 2\u2014figure supplement 2H, I). Interestingly, the stimulus responses (Figure 3F\u2013G) of Type 1, 3, and 4 classes were statistically similar but varied mostly in their additive and divisive network inputs (Figure 3D\u2013E).\n\nAltogether, these results suggest that intracortical connections control the heterogeneity of responses within the local network. This is surprising for two reasons. First, they reveal that normalization by the local population is not uniformly applied on columnar neurons. That is, individual neurons receive different degrees of normalization from their local network. Second, the presence of four consistent response patterns (Types 1\u20134) suggests that normalization could come in four \u2018motifs\u2019 mediated by four underlying connectivity profiles between columnar neurons and their local network. We further asked what type of intracortical interactions could possibly explain the four response types observed after the optogenetic suppression of neurons located at distal locations.\n\n### Heterogeneous response types can be captured by a simple network model\n\nWe devised a small-scale firing-rate model in which the response of a model neuron is determined by a linear combination of feedforward excitatory drive and local recurrent excitatory and inhibitory inputs (Figure 4A). The output neuron represents the experimental recording site at the distal location (Figure 1D, left), while the local network represents the activity of the suppressed network at the light source (Figure 1D, right). The optogenetic suppression of the nearby network was modeled as a constant reduction in the firing rates of network excitatory cells (equivalent to a 12.9 sp/s decrease in firing, as observed experimentally; Figure 1E). We tested the impact of two possible factors that could differentially modulate neuronal activity to generate the heterogeneous response types observed experimentally. First, the stimulus sensitivity of the network drive to individual cells could vary, i.e., the different response types could be due to differences in the cumulative contrast response function of the normalization pool impacting each neuron. Here, the sensitivity variable, implemented as a multiplicative gain, refers to the dynamic range of the stimulus response across contrasts (Figure 4A, right). Second, the balance of excitatory and inhibitory currents (\u2018E/I ratio\u2019) could vary slightly across response types. In our model, the amount of inhibitory synaptic current was determined by scaling the excitatory current by the E/I ratio. Since E/I ratio is tightly controlled in cortical networks, we hypothesized that even minor fluctuations could produce the diversity of observed responses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cartoon model (left). The response of the output neuron is calculated as a linear summation of a feedforward and a local network component. Feedforward drive is purely excitatory, while the local network is represented as a mixture of excitation and inhibition currents. Inhibition followed excitation according to a fixed ratio (\u2018E\u2013I ratio\u2019). The gain of the excitatory current is modulated by a multiplicative parameter (\u2018sensitivity\u2019). (Right) The firing rate of the output neuron as network sensitivity is varied. Solid colored traces show model responses on control trials. Dashed lines represent optogenetic suppression trials. (B\u2013E) Varying the sensitivity of the network input while holding E/I ratio stable produces the four basic response motifs observed experimentally. The parameters used to generate these responses are shown in panels (F, G). (F, G) Differences in the model firing rate between laser and control trials for low-contrast (F) and high-contrast stimuli (G), while varying the local network sensitivity (y-axis) and E/I ratio (x-axis). Overlaid numbers represent the parameter combinations for generating the response types in panels (B\u2013E). (H) Boundaries of parameter space dividing the four response types based on changes in firing rate associated with optogenetic suppression for low (H)- and high (G)-contrast conditions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Model neuron implementation identical to Figure 4, except that the sensitivity of the feedforward input (orange box) was varied, while the drive of the local network (normalization pool) was kept constant. The local network stimulus response was modeled as a hyperbolic ratio, with a slope, n = 0.8, an sem i-saturation constant, c50 = 25% contrast, and a baseline firing rate of 20 sp/s. Optogenetic suppression was again represented as a fixed reduction of 12.9 sp/s in the steady-state excitatory component of local network activity. (B, C) Varying the sensitivity of the feedforward input can reproduce two of the four experimentally observed response types. Parameters used to generate these responses are shown in panels (D, E). Unlike the results of varying the gain of the local network (Figure 4), simultaneous observation of both types could only occur under different excitation-inhibition regimes. (D, E) Changes in the model firing rate between laser and control trials for low-contrast stimuli (D) and high-contrast stimuli (E), while varying the feedforward input stimulus sensitivity (y-axis) and the excitation-inhibition (E-I) ratio of the local network drive (x-axis). Overlaid numbers refer to parameter combinations used to generate the response types shown in panels (B, C). (F) Division of parameter space into response types based on changes in firing rate associated with optogenetic suppression observed in low (D)- versus high (E)-contrast conditions. Black dashed line shows the minimum range of sensitivity and E-I ratio values required to be present in the entire population to simultaneously account for all four response types.\n\nOur crucial observation was that modulating local network sensitivity alone (while keeping feedforward input and E/I ratio fixed) can reproduce all four types of responses observed experimentally (Figure 4B\u2013E). In other words, for a given feedforward input (such that from the lateral geniculate nucleus), our model neuron could be coaxed to reproduce all four response motifs when the local network input was suppressed. Which response motif was modeled depended on how strongly the network input was driven by the stimulus. We also tested the effect of altering the sensitivity of the feedforward gain (rather than the local excitatory network gain), but this manipulation did not reproduce all four experimentally observed response motifs (Figure 4\u2014figure supplement 1). Next, we examined the combined effects of altering both the network sensitivity and E/I ratio. Figure 4F\u2013G shows the difference in the model neuron responses between control and laser-suppression conditions across the range of sensitivity and E/I ratio parameters tested, both for the low (Figure 4F)- and high (Figure 4G)-contrast stimuli (the superimposed numbers on the heatmaps correspond to the conditions under which the examples in Figure 4B\u2013E were obtained; \u20181\u2019 refers to model Type 1 in Figure 4B, etc.). The difference in responses between the low (Figure 4F)- and high (Figure 4G)-contrast conditions yielded a feature-space map revealing the combinations of sensitivity and E/I ratios under which various response types can be generated (Figure 4H). We found that for a limited range of E/I ratios (1.95\u20132), all four response types can be generated solely by altering the local network sensitivity. However, there is no equivalent range of network sensitivity values that could produce all four response types if only the E/I ratio is modulated.\n\nThese modeling results indicate that differences in the stimulus sensitivity of network inputs to individual neurons, located within a column, are sufficient to account for the heterogeneous contrast responses experimentally observed following inactivation of the lateral network (Figure 1F\u2013I), but differences in E/I ratios are not. When the network sensitivity is low, Type 1 responses dominate, but as stimulus sensitivity increases, Type 2, 3, and 4 responses emerge. Since Type 1 responses are dominant, the majority of neurons receive network input with relatively low stimulus sensitivity. This is consistent with the standard normalization model, where the normalizing pool consists of a broadly tuned population. Surprisingly, our results demonstrate that the normalization is applied idiosyncratically to neurons within a population and can account for the heterogeneous continuum of experimentally observed responses. One limitation of our simple model is that it does not distinguish between individual network inputs but represents the cumulative synaptic current from the entire local network. Further, our experiments only utilized static oriented gratings of varying contrasts. Thus, it is quite possible that varying other visual features represented in V1 (such as spatial frequency or color) could reveal different patterns of local connectivity.\n\n### Relationship between response heterogeneity and behavioral performance\n\nWe next asked whether the heterogeneity of neural responses observed during optogenetic suppression of the distal network can influence behavior. The prevalent idea in neuroscience studies is that inactivating sensory cortical responses should yield a marked change, typically suppressive, in behavioral performance. However, our results in Figures 1\u20143 raise the issue of whether the diversity of response changes during cortical inactivation could be associated with diverse changes in behavioral performance. We directly examined this issue by training monkeys to perform a contrast detection task (see \u2018Materials and methods\u2019) while inactivating cortical responses as previously described (Figure 1C). Specifically, animals detected oriented gratings presented for 300 ms at various contrasts. While the orientation of the stimulus was optimized for the distal recording site, the size of the stimulus was large enough to cover the receptive fields of both the direct and indirect sites, and thus the activity at both sites could contribute to the behavioral choice. Control and laser trials, and contrast conditions were randomly interleaved. Laser stimulation was delivered as one continuous pulse for 300 ms and was synchronized with the visual stimulus.\n\nAcross daily sessions and contrast conditions, we found that behavioral performance was significantly changed on 57.9% of laser suppression trials compared to control trials (31.6% impaired and 26.3% facilitated; Figure 5\u2014figure supplement 1A, B). This raises the possibility that these diverse changes could be explained, at least in part, by the diversity of neural responses outside the target inactivated area. To investigate how the changes in behavioral performance correlate with the observed neural activity changes following optogenetic inactivation, we divided sessions based on the proportions of response types within individual sessions, and if more than 50% of the recorded units in a session were categorized as Type 1, we labeled the session as Type 1 session.\n\nFirst, we examined the sessions containing predominantly Type 1, purely suppressive, responses at distal cortical locations (Figure 5A; p = 2.30 \u00d7 10\u20136, one-way Kruskal-Wallis test, df = 3, Chi-sq = 28.94, post-hoc t-test). Across the 10 sessions dominated by Type 1 responses, we found that detection performance was impaired on laser trials (target reports on laser trials: 9.3 \u00b1 1.9%; control trials: 19.5 \u00b1 5.1%, mean \u00b1 sem) for the lowest contrast stimuli (Figure 5B; p = 0.04, t-test, paired, two-way), while detection performance did not change during the blank condition (Figure 5C) or for higher contrasts (p>0.1, Figure 5\u2014figure supplement 1C). The fact that behavioral changes are only observed for the low-contrast stimuli is not surprising and is consistent with previous studies (Afraz et al., 2006; Andrei et al., 2019; Bisley et al., 2001; Ditterich et al., 2003), as sub-optimal stimuli better reveal subtle changes to psychometric curves. Second, we examined the remaining sessions (n = 11) with more balanced proportions of the four response types, with Type 1 responses occurring as often as other response types (Figure 5D; Types 1\u20133 are uniformly distributed, with more Type 2 than Type 4 cells, p = 0.022, one-way Kruskal-Wallis test, df = 3, Chi-sq = 9.67, post-hoc t-test). However, in the sessions in which V1 responses were highly heterogeneous, detection performance remained unchanged between laser and control trials both for the low (Figure 5E\u2013F; p = 0.40, t-test, paired, two-way) and high contrasts (Figure 5\u2014figure supplement 1D). Importantly, performance on control trials was not significantly different between Type 1 dominant sessions and the remaining sessions at this contrast (p = 0.33, two-way t-test). For a subset of these mixed-type sessions, where Type 2 responses were dominant ( >35% of Type 2 cells recorded, n = 6 sessions; Figure 5\u2014figure supplement 1F, p = 0.0032, one-way Kruskal-Wallis, df = 3, Chi-sq = 13.8, post-hoc t-test), we found a significant impairment in detection performance at the 20% contrast in laser trials compared to control (Figure 5\u2014figure supplement 1E, G, H; p = 0.016, t-test, paired, two-way), consistent with the range of contrasts for which the Type 2 cells are suppressed by light (Figure 2A and B). Furthermore, although strongly facilitated detection performance was often evident (Figure 5\u2014figure supplement 1A, points below the diagonal), facilitated responses were not systematically consistent across sessions and contrasts, and did not meet our statistical criteria for significance. We could not assess the behavioral performance for Type 3 or Type 4 response types because those types were rare and were always outnumbered by Type 1 or Type 2 responses.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig5-v2.jpg)\n\n**Figure 5.:** (A) Proportions of cell response types found in those sessions containing >50% Type 1 responses. Dots show individual sessions. Bar graphs show mean \u00b1 sem. **p = 2.30 \u00d7 10\u20136, one-way Kruskal-Wallis test (df = 3, Chi-sq = 28.94, post-hoc t-test). (B) Task performance in Type 1 dominant sessions showing % trials in which animals reported the presence of a visual stimulus on laser (blue) and control (gray) trials. *p = 0.04, t-test, paired, two-way. Session counts per contrast, ascending (left to right), are 10, 7, 10, 9, 3, and 8. Points show mean \u00b1 sem. Fits are third-order polynomials. Inset bar graph shows performance difference (laser minus control) across contrasts. (C) Target reports for Type 1 dominant sessions (n = 10) for 0% (open gray circles) and 3.5% (red filled circles) contrast. The unity line (solid gray diagonal) shows \u00b1 sem behavior responses across all contrasts in control condition (flanking dashed diagonal lines). (D) Same conventions as in panel (A), but for the sessions with mixed response types; *p = 0.022, one-way Kruskal-Wallis test (df = 3, Chi-sq = 9.67, post-hoc t-test). (E) Same conventions as in panel (B), showing no change in behavioral performance across laser (red) and control (gray) trials. Session counts per contrast, ascending (left to right), are 11, 5, 10, 11, 6, and 9. (F) Same conventions as in panel (C), but for mixed-type dominant sessions (n = 11).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Percent target reports across sessions and contrast conditions on laser (x-axis) and control (y-axis) trials. The diagonal unity line (solid black line) is flanked by \u00b1 5%. Points above the diagonal (shaded blue) show instances where the laser impaired detection performance by >5%, while those below the diagonal show sessions where detection was improved on laser trials by >5%. (B) Histogram showing distribution of changes in behavioral responses across conditions (laser minus control trials) for the raw data shown in panel (A). (C\u2013E) Target reports on laser (x-axis) and control (y-axis) trials across all contrasts for Type 1 dominant sessions (C), mixed-type sessions (D), and Type 2 dominant sessions (E). The unity line (solid gray diagonal) shows \u00b1 sem behavior responses across all contrasts in the control condition (flanking dashed diagonal lines). (F) Proportions of cell response types found with sessions containing greater than 35% Type 2 responses. Dots show individual sessions. Bar graphs show mean \u00b1 sem. *p = 0.0032, one-way Kruskal-Wallis (df = 3, Chi-sq = 13.8, post-hoc t-test). (G) Task performance on Type 2 dominant sessions showing percent of trials on which animals reported the presence of a visual stimulus on laser (orange) and control (gray) trials. *p = 0.016, t-test, paired, two-way. Session counts per contrast, ascending (left to right), are 6, 2, 6, 6, 4, and 6. Points show mean \u00b1 sem. Fits are third-order polynomials. (H) Target reports for individual Type 2 dominant sessions for 10% (yellow), 20% (light green), and 100% (dark green). The unity line (solid gray diagonal) shows \u00b1 sem behavior responses across all contrasts and sessions in the control condition (flanking dashed diagonal lines).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66400/elife-66400-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013C) Type 1 dominant sessions. (A) Eye position traces from an example Type 1 dominant session during a 300 ms stimulus period for all 3.5% contrast trials on laser (blues) and control (pinks). Color shades denote individual trials. (B) Distribution of p-values (Wilcoxon rank sum test) comparing eye coordinate positions between laser and control trials across sessions. Box edges show 25th and 75th percentiles, whiskers extend to extreme data points, and the red center line shows the median. Dashed horizontal red line shows the Bonferroni-corrected alpha value for comparisons across all contrasts (\u03b1 = 0.000417). Eye position was not significantly different between laser and control trials at any stimulus contrast condition for any session. (C) Same conventions as in panel (B), but comparing the average pupil size during the 300 ms laser/stimulus period. No statistically significant differences in pupil size with laser stimulation were observed under any condition. (D\u2013F) Mixed-type sessions. (D) Eye position traces from an example mixed-type session for the 3.5% contrast trials. Same convention as in panel (A). (E) p-value distributions for mixed-type sessions (\u03b1 = 0.000333). Same conventions as in panel (B). Eye position was not significantly different between laser and control trials at any stimulus contrast condition for any session. (F) Same as in panel (C), but for mixed-type sessions. Pupil size was not significantly different between control and laser trials under any condition.\n\nAs small changes in eye position could have a significant impact on V1 responses (McFarland et al., 2016), we examined whether the behavioral performance differences between the two types of sessions that we analyzed separately (Figure 5B and E) could be accounted for by significant differences in eye position (Figure 5\u2014figure supplement 2). However, across sessions and stimulus conditions, we did not observe a significant difference in eye position (Figure 5\u2014figure supplement 2A, B, D, E; median p-value = 0.493, Wilcoxon ranked sum test) or pupil size (Figure 5\u2014figure supplement 2C, F; median p-value = 0.498, Wilcoxon ranked sum test) between laser and control conditions. Importantly, there were no statistically significant differences (p>0.1) in eye movements and pupil size between Type 1 dominant and mixed-type sessions. Rather, both fixation locations (see \u2018Materials and methods\u2019), eye movements, and pupil size were remarkably stable across sessions. Altogether, these results indicate that consistent behavioral changes were only observed when neuronal responses at the optogenetically targeted site and at the off-target distal sites were both suppressed. When the distal neural population is dominated by heterogeneous changes in firing rates, changes in behavioral choices are mixed and inconsistent across sessions.\n\n## Discussion\n\nContrary to the commonly held assumption that cortical inactivation has a negligible impact on surrounding cortical tissue, our study reveals highly heterogeneous changes in neural population responses hundreds of microns away. The most surprising effect is the uncovering of response facilitation and mixture of facilitation and suppression in the middle and deep cortical layers of the distal network, with significant consequences for behavioral performance. Since the laminar structure is ubiquitous across the sensory cortex, these results may be broadly applicable across multiple cortical areas and species.\n\nOur study demonstrates that focal optogenetic suppression induces complex changes in the functional properties of nearby neural populations. Contrary to our expectation, cortical inactivation did not result in a simple distance-based decay effect of suppression as a function of proximity to light source. Instead, we found a mix of facilitatory and suppressive effects at distal cortical sites surrounding the directly inactivated region, which were related to changes in behavioral performance. Indeed, the relationship between potential off-target effects of cortical inactivation and behavior has not been previously studied. Previous causal investigations assumed that cortical inactivation silences neurons in the target area while the surrounding tissue is only negligibly impacted. However, our findings that off-target side effects are highly heterogeneous complicate the interpretations of inactivation manipulations, especially when they are related to changes in behavior.\n\nWe have shown that behavioral performance is consistently impaired only when the net activity of both on- and off-target sites is suppressive (Figure 5B). In contrast, heterogeneous off-target responses result in heterogeneous changes in behavioral performance (Figure 5\u2014figure supplement 1G). Furthermore, complex changes in responses during suppression of distal cortical activity were predominantly present in deeper cortical layers, and hence studies limiting electrophysiological (Nassi et al., 2015; Sato et al., 2014) and optical recordings (Michel et al., 2018) to superficial layers would underestimate these important network effects. We suggest that the mixed off-target effects found here could possibly explain the highly variable changes in behavioral performance during optogenetic inactivation, particularly observed in non-human primate studies (Dai et al., 2014). Therefore, new strategies need to be developed to limit, or at least monitor, such off-target network effects. One potential approach for future inactivation studies, particularly those involving behavioral measurements, would be the use of a secondary recording electrode distal to the targeted illumination site to record any side effects produced in the local network.\n\nFurthermore, our results provide strong experimental support for prior untested hypotheses that the local network is a source of normalizing drive to cortical neurons. Normalization has been proposed to be one of the canonical computations in the cortex (Carandini and Heeger, 2011); yet it presently lacks a clear mechanism. We have shown here that the local network does indeed provide normalizing inputs to neurons within a column. However, this normalizing input is not uniform, but rather it is idiosyncratically tailored for each neuron. We have shown that the heterogeneous normalizing effects fall along a continuum, with four basic motifs. This diversity of normalizing responses has not been previously addressed. Type 3 and Type 4 response motifs, in particular, with their rather surprising instances of response augmentation at high contrasts, have never been previously described. These four types of responses might serve functionally distinct roles in stimulus encoding. For example, normalization has been shown to stabilize neural responses and thus reduce variability to repeated stimulus presentations (Coen-Cagli and Solomon, 2019). The heterogeneous responses may also reflect the mechanisms by which the network retains sensitivity over the entire range of contrasts, despite the fact that most cells saturate their responses at high contrasts. In other words, although our model is able to generate all four responses solely by modulating the local network inputs to a single cell, it is also possible that the heterogeneity could arise from differences in the intrinsic contrast response properties across cells. Further work is required to understand why the local network modulates neurons within a column so differently.\n\nHeterogeneity of normalization has not been well studied, nor is it well defined for populations of neurons. The denominator of the normalization equation represents the cumulative activity of the local network (or \u2018normalization pool\u2019). Since the model is implemented for one neuron at a time, the model is agnostic to whether the normalization pool is the same or different for individual neurons. At the site of light application, Nassi et al., 2015 showed heterogeneous responses, owing to evoked normalization in the network, but because neurons were mostly recorded one at a time, they could comment on the source of the heterogeneity, since all responses were not simultaneously present.\n\nOur experimental results are focused on columnar interactions separated by a short range of about 300 \u00b5m distance. However, it is quite possible that some of the heterogeneity is produced by network connections that span much further. Computational studies have found that tuning curves can be sharpened when short-range connections are primarily excitatory and longer-range connections are predominantly inhibitory, creating Mexican-hat-shaped interactions between columns (Ben-Yishai et al., 1995; Spiridon and Gerstner, 2009). It is quite possible that some of the effects recorded at 300 \u00b5m distance could be due to activity changes that occurred at a longer distance ( > 500 \u00b5m) primarily mediated by long-range inhibitory projections.\n\nThe degree of off-target response heterogeneity exhibits session-by-session variability. Indeed, although the types of neuronal responses outside the directly inactivated cortical region were consistent across sessions and monkeys (Figure 3A\u2013B), there was variability in the distribution of response types, that is, some sessions were dominated by Type 1 responses, whereas others contained more mixed response types (Figure 3\u2014figure supplement 1). This variability could be partially attributed to random sampling inherent in acute electrophysiological recordings (Figure 3C; see also Figure 3\u2014figure supplement 1). However, the fact that we observed a significant difference in task performance between the Type 1 dominant sessions relative to the more heterogeneous \u2018mixed-type\u2019 sessions strongly suggests that these cross-session variations are due to differences in local circuit connectivity patterns (Chelaru and Dragoi, 2008; Keller and Martin, 2015). Indeed, it has been shown that the responses of nearby neurons located within the same functional column exhibit a high degree of heterogeneity in their receptive field properties (Hubel and Wiesel, 1962; Lee et al., 1998; Ringach et al., 2002), and this heterogeneity has been frequently linked to the heterogeneity of local excitatory and inhibitory intracortical circuits (Chelaru and Dragoi, 2008; Landau et al., 2016; Padmanabhan and Urban, 2010). Additionally, while our model (Figure 4) shows that for a given E/I ratio, all four response types can be generated, excitatory and inhibitory currents can be differentially tuned, and the E/I ratio can vary depending on stimulus orientation (Wilson et al., 2018). In our model, changing the E/I ratio alters the distribution of response types observed (Figure 4H), which could also explain the variations of response types across sessions. This raises the possibility that heterogeneities in the strength of local intracortical inputs to V1 neurons, which control the different response types after optogenetic suppression of the distal network, can explain the \u2018cross-session\u2019 variability in response types shown here.\n\nThe exact network mechanism involved in generating the response heterogeneity revealed here is unknown. We reasoned that the source of contrast gain modulation at off-target sites after optogenetic inactivation is the change in the strength of local network inputs. In mouse visual cortex, parvalbumin-positive (PV) interneurons are believed to be critically involved in the gain modulation of nearby pyramidal neurons (Atallah et al., 2012; Wilson et al., 2012). However, PV interneurons in mouse auditory cortex do not modulate the overall gain of local pyramidal cells in a stimulus-dependent manner, as would be required by contrast normalization mechanisms (Cooke et al., 2020). The basis of our heterogeneous responses in the lateral network could be explained by the horizontal connections made by PV interneurons. For instance, axons of basket cells (morphologically defined PV cells [Scala et al., 2020]) in cat visual cortex can target neurons up to 1360 \u03bcm away and do not obey orientation domain boundaries, with 57% of projections synapsing at sites with orientation preferences differing by >30\u00b0 from the location of the basket cell\u2019s soma (Kisv\u00e1rday et al., 1994). One possibility is that the optogenetic suppression of excitatory neurons in our experiments might have led to a decreased drive to nearby PV cells, which in turn reduces inhibition on both local and distant pyramidal cells that they target. The heterogeneous responses in the lateral network could thus result from a combination of local excitatory and inhibitory inputs. This is captured by our model (Figure 4), which shows that varying the net response gain (\u2018sensitivity\u2019) of the local network input to a model cell can reproduce all four response types. This hypothesis is consistent with the observed continuum of responses observed within each response class (Figure 2B).\n\nPrevious studies silencing cortical populations, particularly those using optogenetic tools, have primarily focused on the light-targeted zone without investigating collateral effects on the nearby local network (Diester et al., 2011; Fetsch et al., 2018; Han et al., 2011; Nassi et al., 2015; Ohayon et al., 2013; Trouche et al., 2016). Crook and Eysel, 1992 have previously shown that inactivating visual cortex, using gamma-aminobutyric acid (GABA) microiontophoresis, could substantially broaden tuning curves of neurons located 600 microns away, but only if the inactivated site had a preferred orientation drastically different from the recording site. A recent study by Li et al., 2019 examined the effects of cortical inactivation on more distant cortical sites by comparing the spatiotemporal profiles of several suppressive opsin constructs in awake, but otherwise passive, mice. This study thus measured differences in spontaneous activity in the absence of sensory inputs. Similarly, we found that in the absence of a visual stimulus (the 0% contrast condition), firing rates in the distal network are not significantly influenced by optogenetic suppression (Figure 1F\u2013I, Figure 2\u2014figure supplement 1). Heterogeneous responses emerged only when optogenetic suppression was paired with a visual stimulus. This detail is important because the presence of stimulus in visual cortex activates otherwise minimal local network connections to produce characteristic response features such as contrast normalization and near-surround suppression. Further, stimulus-paired optogenetic manipulations are commonly employed in experimental designs that closely monitor behavioral responses (Acker et al., 2016; Andrei et al., 2019). Our findings demonstrate that focal optogenetic suppression has unpredictable effects in the surrounding network. While this finding provides a potent method with which to investigate local circuits, it adds complexity to interpreting the causal relationship to behavior.\n\n## Materials and methods\n\n### Animal subjects\n\nThis study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to the approved institutional animal care and use committee (IACUC) protocols of the University of Texas, Houston. The protocol was approved by the Committee on the Ethics of Animal Experiments of the University of Houston (protocol number: AWC-20\u20130075). Two male rhesus monkeys (Macaca mulatta) were trained for a contrast detection task and were implanted with a 19 mm titanium chamber (Crist Instruments) over V1. All surgery was performed under general anesthesia, and every effort was made to minimize suffering.\n\n### Viral vector preparation and injection\n\nThe anion channelrhodopsin GtACR2 (Forli et al., 2018; Govorunova et al., 2015; Mauss et al., 2017; Mohammad et al., 2017) was packaged in a lentiviral construct under the control of the promoter \u03b1-CamKII (LV-CaMKII\u03b1-GtACR2-GFP). The vector was prepared by the University of North Carolina Vector Core, with a titer of 109 IU/ml. Four V1 columns, and five sites per column (spaced every 250 \u00b5m), were targeted for injection per animal. The virus was injected using a 29 gauge needle attached to a Hamilton syringe. The syringe was advanced using a computer-interfaced micromanipulator (NAN Instruments). For each injected column, the needle and syringe were lowered to the deepest site at which neural activity had been recorded in the previous days. After a 15min waiting period (5 min waiting period for every subsequent site within the column), the plunger was independently advanced, delivering 1 \u00b5l of the viral suspension over a 10 min period. After a 5 min waiting period, the needle was retracted upward to the next site. The process was repeated for each additional site within the column and then for each additional column. A custom-built grid (Crist Instruments) was used during the injection as well as during subsequent recordings to precisely target the tissue expressing the virus.\n\n### Cortical biopsy and immunohistochemical tissue staining\n\nIn order to avoid unnecessary animal sacrifice, we developed a method to biopsy cortical tissue in awake macaques. After concluding all experiments, a transfected column of the cortex was biopsied using an aseptic aspiration technique. A small amount of lidocaine was applied to the cortical surface, and an 18 gauge needle attached to a syringe filled with phosphate-buffered saline (PBS) was positioned over the biopsy site (recording site significantly modulated by optical stimulation). The syringe was then lowered to a predetermined depth (previous recording site with laser-responsive cells) with a computer-interfaced micromanipulator (NAN instruments). The syringe was then rotated in order to cut surrounding tissue connections. After a 5 min waiting period, the plunger was manually retracted at a very slow speed until tissue is apparent in the PBS of the syringe. The syringe and needle were immediately retracted and the biopsied tissue was fixed in paraformaldehyde (1% solution) for 6 hr. This technique provides an adequate amount of tissue with minimal impact to the animal.\n\nTissue was fixed in paraformaldehyde (4%) in PBS for 1 hr and then cryoprotected in sucrose (30%) in PBS at 4\u00b0C overnight before sections were cut (20 \u03bcm). Sections were incubated with primary antibodies against NeuN (polyclonal Guinea pig [Synaptic Systems, G\u00f6ttingen, Germany], used at 1:250), CamKII\u03b1 (monoclonal mouse, used at 1:500 [Dr. Neal Waxham (UT Houston)]), and GFP (polyclonal rabbit [Synaptic Systems, G\u00f6ttingen, Germany], used at 1:1000) at 4\u00b0C overnight. Sections were incubated with secondary antibodies against the primary antibodies for NeuN (Alexa 647-conjugated goat anti-Guinea pig IgG, used at 1:300), CamKII\u03b1 (Alexa 568-conjugated goat anti-mouse IgG, used at 1:300), and GFP (Alexa 488-conjugated goat anti-rabbit IgG, used at 1:300) at room temperature for 1 hr. All secondary antibodies were obtained from Thermo Fisher Scientific. Sections were mounted with Vectashield mounting medium with 4', 6-diamidino-2-phenylindole (DAPI) (Vector Labs). Images were obtained using a Zeiss LSM800 confocal microscope and analyzed using the ZEN 3.0 software.\n\n### Behavioral experiments\n\nMonkeys completed a contrast detection task using sine-wave gratings presented at recorded cell population\u2019s preferred orientation and a fixed spatial frequency. Stimuli were generated using Matlab (Mathworks) with Psychophysics Toolbox (Brainard, 1997) and were presented on a gray screen 19 inch cathode ray tube(CRT) monitor, located 90 cm away from the animal. On each trial, animals held a response lever and fixated on a central point (0.5\u00b0, with 1\u00b0 fixation window). If fixation was broken before the end of the trial, or if the response lever was lifted before the response period, the trial was aborted. Eye position was continuously monitored using an infrared eye tracking system (EyeLink II, SR Research) with a 1 kHz sampling rate. On 50% of trials, a stimulus was presented over the receptive fields of recorded cells. Stimuli were presented at four contrast levels per session (five total contrasts were used across sessions: 3.5, 5, 10, 20, and 100%) on a gray background. Laser onset was synchronized with the stimulus onset, which both lasted 300 ms (light was continuously on during this period). Stimuli had a median size of 2.5\u00b0 (\u00b1 0.6\u00b0) and a spatial frequency of 2 cycles per degree. Additionally, on half of the trials, optical stimulation was delivered simultaneously with the visual stimulus (or when the visual stimulus would have appeared on a no-stimulus trial) and was delivered equally throughout all stimulus contrast conditions. During the response period (600\u20131800 ms after stimulus onset), animals released the bar to signal the presence of a stimulus or continued to hold the bar to signal the absence of a stimulus in that trial. Correct behavioral responses were rewarded with five juice drops. Animals completed 128\u2013480 trials per session (inter-trial intervals were dependent on the animal and averaged 5.0 s \u00b1 4.7 sem).\n\n### Electrophysiology\n\nExtracellular recordings were completed using 16 or 24 channel laminar electrodes (U-probe, Plexon Inc), advanced by a computer-interfaced micromanipulator (NAN Instruments). Contacts were 25 \u00b5m in diameter, equally spaced (100 \u00b5m intercontact spacing) and coated in platinum iridium. Neural activity was recorded in real-time using a Multichannel Acquisition Processor system (MAP, Plexon Inc). For 20 of the 21 sessions, one laminar electrode was inserted into V1 and a separate optical fiber (see below) was inserted approximately 300 \u00b5m away from the electrode. In this manner, the optical fiber silenced one population of cells, with no direct effects on the population recorded by the laminar electrode. For 1 of the 21 sessions, two laminar electrodes were inserted, such that one recorded the activity of cells being directly suppressed by the laser (probe was as close to the optical fiber as possible) and of cells being indirectly suppressed by the laser (probe was about 300 \u00b5m away from the optical fiber). An additional seven sessions were recorded with the laminar electrode and the optical fiber as close as possible (~150 \u03bcm) in order to record the direct, light-induced suppression of GtACR2 activation. At the directly suppressed site, light-responsive cells were vertically clustered within 457.1 \u00b1 104.3 \u00b5m (mean \u00b1 sem, n = 31 cells with maximum suppression within 30 ms of light onset), as measured by the maximum distance between electrode contacts for these units. This measurement includes both directly suppressed cells, and the nearby directly connected cells, as detecting suppression with millisecond precision is more difficult than detecting activation.\n\n### Optogenetic stimulation\n\nOptical activation of opsins was delivered via a 100 mW blue laser (473 nm; Laserglow Technologies) coupled to a penetrating optical fiber. The 200-\u03bcm diameter optical fiber was encased in a stainless steel cannula for mechanical support and advanced into the brain using a computer-interfaced micromanipulator (NAN Instruments). Prior to each experiment, the optical fiber was aligned to the upper third of recording contacts on the laminar electrode. Registration lines drawn onto the shafts of the electrode and fiber optic ensured that this spacing was preserved during recordings. Laser stimulation parameters were controlled by a waveform generator (Agilent Technologies). Optical stimulation was delivered as one continuous pulse for 300 ms and was synchronized with the visual stimulus. Light power output at the end of the fiber optic was periodically measured using an integrating sphere sensor (S124C, Thor Labs) and was kept consistent across sessions (~7\u201314 mW per mm2). Importantly, the optical fiber was scissor-cut and the direction of the light was perpendicular to the cortical surface, meaning that the maximum light power was vertical, parallel to cortical columns. The lateral position of the fiber optic was approximately 300 \u00b5m away from the probe, such that the optical stimulation affected a nearby but distinct population of cells relative to the recorded responses. The spacing between devices was achieved using guidetubes placed inside a custom grid that sat inside the chamber.\n\n### Cell classification\n\nUnits were sorted offline (Plexon Offline Sorter). On average, per session, we were able to identify 5 (\u00b1 4) single units and 7 (\u00b1 3.5) units (single or multiunit activity) whose activity could be significantly modulated by light application. Cells that were significantly modulated by light were identified by comparing activity in trials with optical stimulation and trials without optical stimulation. The transient response (0\u2013150 ms of optical stimulation) and sustained response (150\u2013300 ms of optical stimulation) were independently analyzed. If either the transient or the sustained response during optical stimulation was significantly different (p<0.005, Wilcoxon ranked sum test, with Bonferroni correction for multiple comparisons) from the control activity during the same time period, it was determined that the cell could be modulated by optical stimulation and was therefore considered light responsive.\n\n### Layer identification\n\nCSD was performed to identify cortical layers of V1 (Hansen et al., 2012; Nigam et al., 2019; Schroeder et al., 1998). Evoked response potentials in response to a high-contrast stimulus were recorded from equally spaced laminar contacts. The second spatial derivative of the evoked response potentials was computed (iCSD toolbox [Pettersen et al., 2006] for Matlab) and the granular layer was identified by finding the first sink, measured in nA/mm3. Channels located in the primary sink were identified as the granular layer, while channels above the sink were identified as the supragranular layer and channels below the sink were identified as the infragranular layer.\n\n### Contrast response functions and normalization fits\n\nFor all light-responsive units, we considered the 150 ms epoch containing the maximum stimulus response. To identify this epoch, stimulus responses on control (no laser) trials were divided into four non-overlapping 150 ms bins, aligned with the stimulus onset, and the bin with the maximum spike count across trials was identified. We then compared the responses on laser trials during the same epoch. For the zero-contrast (no-stimulus) condition, the epoch that most often yielded the strongest response during stimulus present trials was used. This variable epoch approach was preferred over a fixed epoch, which assumes neural responses to occur within a prescribed interval. Due to the wide range of visual contrasts utilized, many units displayed clear shifts in response latency as a function of stimulus contrast (visible in Figure 1F\u2013I), a well-known phenomenon (Carandini et al., 1997). This approach allowed us to tailor our analyses to the peak response of each neuron. For the majority of units (72.9%), the peak response averaged across stimuli occurred in 150\u2013300 ms after stimulus onset.\n\nWe then fit the contrast responses with the normalization equation, using a procedure similar to that by Nassi et al., 2015 and Sato et al., 2014. We first fit the firing rates in the control (no laser) condition with a hyperbolic ratio function using a least-squares method,\n\n$$\nr(c)=r_{0}+r_{max}\\frac{c_{n}}{c_{50}^{n}+c^{n}}\n$$\n\nwhere r0 is the baseline firing rate, rmax is the maximum firing rate, c50 is the semi-saturation constant, and n is the slope of the function. Then, for laser trials, we used the same c50 and n parameters and solved for the remaining parameters, P and Q, using the full normalization equation (Equation 1). Quality of fits was assessed as the percentage explained variance, where R2 = [1-(error sum of squares/total sum of squares)].\n\n### Orientation selectivity\n\nOrientation tuning for the recorded population was measured separately prior to the contrast detection task with optogenetic suppression. For this task, monkeys fixated on a central spot on the computer screen, while a movie stimulus consisting of a sequence of 48 circular 100% contrast sinusoidal gratings (eight equidistant orientations randomly flashed at 30 Hz) was presented for a total duration of 1.6 s. The size and location of the stimuli were kept identical to the ones used in the subsequent detection task. The preferred orientation and orientation selectivity index (OSI) for each neuron were computed from Fourier components extracted from the orientation tuning curves as described previously (Dragoi et al., 2002). Variance of tuning across the population of units in individual sessions was computed using circular statistics (CircStat toolbox for MATLAB [Berens, 2009]).\n\n### Computational model\n\nWe built a firing-rate model of a single output neuron receiving excitatory and inhibitory synaptic currents from the local network and driven by a feedforward excitatory input. The total synaptic current, Is, is given by\n\n$$\n\\tau\\frac{dI_{s}}{dt}=-I_{s}+aR_{ex}-bR_{ix}+I_{}\n$$\n\nwhere \u03c4 is a time constant, a and b are positive coefficients, Rex and Rix are the aggregate excitatory and inhibitory firing rates of the local network, and Iin is the feedforward input. The firing rate R of the output neuron is computed from the synaptic currents with R = Fe(Is), where Fe is a monotonic increasing function. The model dynamics are given by\n\n$$\n\\tau\\frac{dI_{s}}{dt}=\u2212I_{s}+J_{ee}R_{ex}\u2217G\u2212J_{ie}R_{ix}+J_{inp}S(pc);R=F_{e}(I_{s})\\tau\\frac{dI_{ex}}{dt}=\u2212I_{ex}+I_{exin};R_{ex}=F_{e}(I_{ex})\\tau\\frac{dI_{ix}}{dt}=\u2212I_{ix}+I_{ixin};R_{ix}=F_{i}(I_{ix})\n$$\n\nWe used $\\tau$ = 15 ms, $J_{ee}$ = 12 nA/sp/s, $J_{ie}$ = $\\frac{J_{ee}}{E/Iratio}$ , and $J_{inp}$ = 12.5 nA/sp/s. The E/I ratio was varied between 1.75 and 2.25. The gain of the excitatory current, G, varied between 1 and 55. The stimulus S varied logarithmically with the percent stimulus contrast, pc,\n\n$$\nSpc=15+25*log_{10}pc/65\n$$\n\nwhere 2.5%<pc<100%. The stimulus was presented for 300 ms. The reported rates are steady-state rates, sampled at 150 ms. Optogenetic suppression was modeled as a reduction in Rex of 12.9 sp/s (in accordance with experimental data). For excitatory neurons, the firing rate R was computed from the synaptic current Is as R = Fe(Is):\n\n$$\nF_{e}x=100/1+e^{-0.1x-50}\n$$\n\nwhile for inhibitory neurons we used function Fi:\n\n$$\nF_{i}x=150/1+e^{-0.13x-46}\n$$\n\nBy changing the local excitatory network gain G (in Equation 3) we were able to reproduce all four response types found in the experiment (see Figure 4). We examined whether changing the sensitivity of the feedforward input, rather than the local network input, could produce similar effects as altering the gain of the local excitatory network. To this end, we fixed the local excitatory network gain G to 1 and multiplied the feedforward drive (equation 5) by a gain factor that varied between 0.01 and 55. This arrangement, however, could not replicate all four contrast response types observed experimentally (see also Figure 3\u2014figure supplement 2).\n",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "6109a185-424b-41ab-91ff-acf4aba8bc06",
+      "submission_id": "ee77984f-384c-4f21-bbac-7b9ed13c530a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Martin Vinck, Ernst Str\u00fcngmann Institute (ESI) for Neuroscience in Cooperation with Max Planck Society Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66400.sa1](https://doi.org/10.7554/eLife.66400.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe visual cortex contains an abundant of recurrent connections that are critical for computation. The authors show how local optogenetic inactivation of a column in macaque V1 leads to heterogeneous and layer-dependent activity changes mediated by lateral interactions. These changes range from full suppression to facilitation, and a mixture of both. The authors further demonstrate that these lateral interactions determine behavioral outcomes, hence suggesting that behavioral outcomes cannot be predicted based on the focal inactivation alone.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Heterogeneous side-effects of cortical inactivation in behaving animals\" for peer review at eLife. Your article has been reviewed by four peer reviewers, including Martin Vinck as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Joshua Gold as the Senior Editor.\n\nAs you will see from the reviewers, they are mixed, although three reviewers make numerous positive remarks (and also some critical comments) about the interest of the paper. Notably there are a number of concerns that need to be addressed, in particular the potential need for additional experiments related to the sampling of the contrast. Reviewers raised the concern that sampling of the contrast axis should be based on 7-8 contrasts, and that the under-sampling of contrast space in combination with low trial numbers might affect the claims about increased activity at low vs. high contrasts and the conclusions on heterogeneity. It would be important to understand how this concern will be addressed. One option could be, e.g., to validate the findings in a smaller set of experiments, if possible. Besides this point, you will find numerous other concerns to be addressed below.\n\nEssential revisions:\n\nReviewer #1:\n\nThe authors use focal optogenetic inactivation together with dual laminar recordings in awake primates to study the impact of activity in one column on the activity in another column. With this technique, they investigate the nature of lateral interactions and normalization mechanisms in V1. The key findings are that: (1) Optogenetic inactivation does not yield an overall facilitation or suppression in a nearby column. (2) This is explained by heterogeneous changes in activity that are stimulus dependent, with four main types of responses, the most common one being general suppression across all stimulus contrasts, in particular in the supra-granular layers. (3) A simple E/I network can predict these four types depending on two parameters. (4) There exists a high degree of variability across sessions, however in sessions with predominantly Type-1 responses (suppression), behavioral outcome is also affected. Together, these findings suggest that the effect of optogenetic inactivation on the local circuit is highly complex, that lateral interactions are highly heterogeneous across cells and that focal optogenetics inactivation might impact behavior in a complex manner. My main comments pertain to the statistical analyses:\n\n1. It was not entirely clear to me how the four subgroups were statistically quantified.\n\nA. Where the individual neurons that belong to the four types statistically significant?\n\nB. Was the distribution in four types statistically different from chance?\n\nC. How was the choice of four categories motivated, was this done through a clustering mechanism?\n\n2. It would be useful to discuss how the contrast-dependence of lateral interactions (with visual stimuli) fits or does not fit with the present results.\n\n3. The nature of the model is not entirely clear: Which variables represent the local site and which variables represent the distant site? Do both have E/I neurons? What are the connections between those?\n\n4. It would be useful to explain better what standard normalization models would predict. There is some discussion on this, but it is not clear why one would expect suppression of a distal site rather than activation at these retinotopic distances. In this context it would also be useful to discuss Mexican-hat profiles of activation/suppression in relationship to the present findings.\n\n5. Detailing criteria for spike sorting would be useful for future studies comparing to the present findings.\n\n6. Figure 2C misses a color bar.\n\n7. Unless my PDF renderer has a problem, Figure S5 seems to be the wrong figure (duplicate of Figure 5) and this control should be fixed.\n\nReviewer #2:\n\nAndrei and colleagues performed an optogenetic experiment in area V1 of monkeys, whereby they inactivated glutamatergic neurons using a lentiviral vector approach with CamKII as promotor and the chloride conducting GtACR2 opsin. To investigate the local network effects of the optogenetic inactivation, they recorded single and multiunit activity nearby the optic fiber and at about 300 micron distance. The major claim of the authors is that local reversible inactivation leads to unexpected or unpredictable activity changes in (nearby and) distant neurons. Neurons affected by the light were classified in 4 groups, depending on the optogenetic-induced dynamic activity changes. These 4 types of responses could be predicted based on a simple spiking model with a linear combination of excitatory feedforward drive and local recurrent excitatory and inhibitory inputs. In addition, monkeys also performed a contrast detection task, and performance was impaired only when the activity in the majority of the (recorded) neurons was suppressed.\n\nThis study yielded a number of interesting findings, but contrary to the framing of the authors, (\"unexpected\" \"unpredicted\" \"most surprising\" \"unpredictable\", \"off-target effects have never been investigated\u2026\"etc.), a variety of immediate downstream \"off-target\" effects after optogenetic activation and inactivation have been amply described in primates -already starting with the first optogenetic study in monkeys (Han et al., 2009). The main 'selling' point of the study is unsurprising. Virtually every study so far showed, predictably, a mixture of facilitation and suppression at single unit level, independent of the type of opsin used. In general, more suppression is found with a hyperpolarizing opsin and more (or net) enhancement with depolarizing opsins. That said, the current findings whereby neighboring and distant effects at neuronal level are compared, are certainly a nice addition to the literature, as is the apparent division in four response classes. The authors should significantly tone down their language, however. Of course, this has also consequences for the impact of the paper.\n\nThis reviewer also questions the usefulness of GtARC2 due the exceedingly long after hyperpolarization, which may have contributed to the potentially stronger off-target (i.e. facilitation) effects compared to other hyperpolarizing opsins. Also, it is unfortunate that continuous stimulation was used, which prohibits a latency analysis in the distant neurons. Such an analysis would have made the discussion about direct versus indirect effects much simpler, at least compared to the current argumentation of the authors.\n\nThe authors argue twice that it is troublesome to interpret optogenetic -induced effects without measuring neuronal activity at distant sites during light exposure. This reviewer does not argue about the usefulness of concurrent recordings. However, it is almost impossible to cover all sites which may show off-target effects. In the present study, one only recorded at (some sites) at 300 micron distance. Yet, all sites connected with the neurons directly affected by the light might show \"off-target\" effects, even those in remote areas. It is impossible to 'cover' all these sites with electrophysiological recordings. Hence the solution offered by the authors is not workable. Whole brain imaging may be an alternative, yet it remains challenging to relate changes in imaging signals with alterations in neuronal activity.\n\nThe authors categorized the optogenetic induced neuronal responses at a distance in four classes, which is a nice finding. It is unclear, however, how the neurons were clustered. Unless I missed it, no clustering approach with objective criteria to determine the number of relevant clusters was used. Please elaborate on this.\n\nThe authors emphasize the degree of heterogeneity of the indirect network effects, but this may be highly related to the transduction efficiency and layer-specificity of transduction.\n\nFigure S5 is the same as Figure 5.\n\nReviewer #3:\n\nThe manuscript investigates the important question how local optogenetic silencing of V1 neurons affects neural populations that are located nearby, and whether these effects can impact on behaviour. Based on contrast response functions, the authors identify 4 different effect types, which range from inhibition only through mixed effects that depend on stimulus contrast to facilitation only.\n\nThe diversity of effects could be replicated in a network model by varying stimulus sensitivity of network inputs.\n\nBehavioural effects on contrast detection occurred only when off target effects were dominated by type I effects, i.e. those that show inhibition at all contrast levels.\n\nThe idea of studying the effects of optogenetic silencing on off target neurons is important, but there are problems with the identification of different effect types given the coarse sampling of stimulus contrasts. Also, the effect on behaviour would benefit from more detailed investigation, e.g. limiting the stimulus dimensions to off target locations, as well as obtaining a lager data base to study effects of other response types on behaviour more quantitatively.\n\n1. In methods the injection procedures are described, but it remains unclear how 'the deepest point' of a column was determined? Was it a fixed depth that was targeted? Also, the 5 injections per column were probably evenly spaced. But the distance between sites should still be given.\n\n2. Methods: \"If either the transient or sustained response during optical stimulation was significantly different (P<0.05, Wilcoxon rank sum test)\" -- was this corrected for multiple comparisons? After all 2 tests are done on the same activity.\n\n3. The contrast fitting function (aka Nassi) is problematic due to the number of contrasts tested in a single experiment. It has 4 free parameters for 5 data points (when 4 +0% contrast was used). Also, the equation has no numbering.\n\n4. Were the oriented gratings really flashed at 30Hz? i.e. 33ms on time per stimulus? This could induce strong masking effects.\n\n5. In methods the authors state that the light guide was close to the recording electrode in 7 sessions. In figure 1E it states that n=48, while in the text it states that n=41 when the statistics are mentioned. Also, it is unclear whether this is neurons or contacts? Were there depth differences for these n=48(41).\n\n6. Were the effects of light stimulation at different contrasts corrected for multiple comparison? If not, they should be.\n\n7. Unless I am mistaken, equation 1 has 4 free parameters (r0, rmax, P,Q, with c50 and n fixed) that are fit to each neuron with optogenetic stimulation? If so, this is problematic for the reasons mentioned above. The authors only measured 5 data points, and the model is thus likely to overfit. Hence the variance accounted for is not very impressive. If my understanding of the fitting procedure is mistaken, then the authors should explain in detail how it was implemented.\n\n8. The authors should describe in detail how the classification of the 4 response types was arrived at. How was the 'Type' category defined? Ideally this would be done, based on the terms P and Q yielding significant improvements to the fit?\n\n9. The data shown in figure 3D-G are puzzling. The P values are mostly negative, i.e. they seem subtractive, rather than additive? That suggests the network does not provide excitation, unlike stated in the main text. Also, the c50 values of many neurons appear very high, and are in a range where sampling was basically absent. All examples shown in figure 2 have c50 values much lower.\n\n10. While the claim that type 2 neurons are more sensitive to low contrast than other types, is correct, this cannot be inferred from the slope of the fitting function, but from the c50. If a neuron did not respond to any contrast including 20%, but strongly to 100% stimuli, it would have a c50>20%, but could have a very steep response function, which would be an artefact of the fitting in conjunction with the sampling.\n\nReviewer #4:\n\nIn this study the authors examine the effects of optogenetic inactivation directed onto a cortical site on neuronal activity of nearby lateral loci (off-target), and on behavioral performance.\n\nThey find that inactivation of the superficial layers, while reliably suppressing activity at the inactivation site, causes heterogeneous effects at off-target cortical loci, with some laminar-bias. The authors further determined that changes in behavioral performance were consistently observed only in sessions where suppressive effects among recorded cells dominated. The study is overall well executed, and well presented, and it is of interest to a broad audience. Some additional analysis would strengthen the claim that photostimulation at the inactivation site does not spread to nearby loci, where the recordings are made. Moreover, it is unclear whether the observed heterogeneous effects would become more homogenous at higher light intensities.\n\n1) Could the effects seen at off-target sites depend on the specific temporal dynamics of the inactivating opsin used in this study? This point should be addressed in the discussion.\n\n2) To strengthen the main claim of the paper, that off-target sites 300\u00b5m away from the inactivation site are not directly inactivated by light, the authors should determine the onset latency of suppressive effects at the on vs off-sites. The expectation would be that the latter are suppressed significantly later in time than the former if, indeed suppression is a network effect. While I do not expect that light could inactivate directly the deep layers at the off-site, it could easily spread 300\u00b5m away and directly affect the superficial layer cells. In support of this, the type I cells dominate in the superficial layers. Moreover, some of the off-site suppression, e.g. in the example cells in Figure 1F-G, seems to occur very early, possibly suggesting direct inactivation by light spreading to the off-site. Importantly, the latency analysis should be performed on a layer-by-layer basis because it is possible that only the superficial layer cells at the off-site are directly affected by light, while those in deep layers are a result of network effects. On p. 4 the authors state that:\" The lack of suppression in the blank condition indicates these responses cannot be due to direct activation of GtACR2 at the distal site\". First, the authors could strengthen this claim by showing this at the population level, rather than simply showing the few example cells in Figure 1F-I. On p. 6 the authors further make the point that the temporal profile of suppression seen at the inactivation site is rather different from that at the off-site, with long-lasting responses only found at the inactivation site near the light source. However, one could imagine that these different profiles may result from different light intensities at the inactivation site compared to the off-site; light scatter in tissue may result in reduced photostimulation intensity at the off-site. For the same reason, reduced light intensity at the off-site may also cause significant suppression only when the cell is driven by a visual stimulus, but not be apparent in the baseline response. For all these reasons, an analysis of onset latency of suppression (in the stimulus-driven condition) at the inactivated site vs the off-site could strengthen the authors' claim that the off-site is not directly affected by light.\n\n3) I could not find the light intensity values used for inactivation anywhere in the manuscript. This should be added.\n\n4) Figure 1E. rather than one example cell, it would be preferable to show the full laminar profile of suppression at the photoactivated site to demonstrate that light is, indeed, limited to the SG layers. This is shown in Figure S1B-C, but this figure is difficult to interpret correctly because the Y axis is not labeled, and the estimated top and bottom of cortex as well as L4C are not indicated on the laminar plot.\n\n5) Figure 2E. Judging from the CSD analysis, here the top of the cortex would seem to be contact 2, rather than 0, and the thickness assigned to the G layer is too large. The latter in vivo typically spans about 3, not 4, contacts (if the penetration are vertical which this appears to be). Moreover, the earliest current sink, which is the criterion for identifying layer 4C, would seem such that the top of G should be moved down by at least one contact. The selection should be based on a latency analysis. I am raising this issue because with layers more properly assigned the laminar data could potentially clean up and appear less heterogeneous.\n\n6) Model. Could the 4 different types of responses depend on intrinsic properties of cells (for example their contrast response function), rather than, or in addition to the lateral network connectivity?\n\n7) Model. What determines how strongly the network is driven by the stimulus, in the model and possibly in the real brain? In other words, what determines network sensitivity? Is this the weights of the local connections?\n\n8) There should be a discussion of whether these results could change depending on photostimulation intensity. Is it possible that at higher light intensities the off-site would be more homogeneously suppressed for ex.?\n\n9) Please add all sample size to the figure legends. For ex, sample sizes are missing in panels C and F of Figure 5.\n\n10) Isn't it odd that effects on behavioral performance in Figure S7E are only seen at 20% contrast given that type 2 cells are suppressed at contrasts {greater than or equal to} 10?\n\n11) P. 25 Layer Identification. The granular layer in the CSD analysis should be defined as the location of the earliest current sink, not the \"maximum sink\" as sated.\n",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4a424eca-fb43-4de6-8517-5f34d2c4fac9",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C1",
+      "claim": "GtACR2 is a chloride-conducting channelrhodopsin that has been shown to be more sensitive to light and produce stronger hyperpolarizing currents than other inhibitory opsins.",
+      "claim_type": "EXPLICIT",
+      "source": "GtACR2, a chloride-conducting channelrhodopsin, was expressed in populations of glutamatergic cells (see 'Materials and methods'). GtACR2 has been shown to be more sensitive to light and produce stronger hyperpolarizing currents than other inhibitory opsins (Govorunova et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Govorunova et al., 2015, which provides external evidence for the properties of GtACR2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "bd236d46-8b63-4f36-bc23-f9087a6df9aa",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C2",
+      "claim": "This is the first usage of GtACR2 opsin in the monkey brain.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first usage of this opsin in the monkey brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge and review of existing literature, representing an inference about the novelty of their work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "47c4d0b5-86a9-4253-b40a-83671790ae9f",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C3",
+      "claim": "Gene expression of GtACR2 was robust and specific to neurons expressing glutamatergic marker \u03b1-CamKII.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression was robust and specific to neurons expressing glutamatergic marker \u03b1-CamKII (Figure 1B), with 97% of cells positive for \u03b1-CamKII also positive for green fluorescent protein (GFP, co-expressed with GtACR2), and no neurons (NeuN+, a pan-neuronal nuclear antigen marker) that were negative for \u03b1-CamKII and positive for GFP (corresponding to inhibitory cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical data presented in Figure 1B showing quantitative analysis of cell marker expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "1726ae8f-c4ea-41ee-8fc6-42eb1dc73ed8",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C4",
+      "claim": "Light activation reduced firing rates by 24.9% \u00b1 2.1% compared to control trials at the direct suppression site.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, light activation reduced firing rates by 24.9% \u00b1 2.1% compared to control trials (mean \u00b1 sem, over the entire 300 ms light stimulation interval; 18.1 \u00b1 2.1 sp/s control trials, 11.6 \u00b1 1.4 laser trials, p = 0.0064, Wilcoxon rank sum test, n = 41).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data comparing firing rates between laser and control conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "32905888-6b77-40af-9f25-5f192cef067e",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C5",
+      "claim": "The direct suppression was long-lasting, with responses returning to baseline 387.9 ms \u00b1 38.7 ms after light offset.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct suppression was long-lasting, and responses returned to baseline 387.9 ms \u00b1 38.7 ms after light offset (median \u00b1 sem), consistent with previously measured kinetics of GtACR2 (Govorunova et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental measurements of response kinetics and is consistent with previously published data on GtACR2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "4dde8e36-37b9-419f-866d-19a03941625a",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C6",
+      "claim": "A total of 214 units were recorded across 21 sessions with statistically significant differences in firing rate during laser trials compared to control trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded a total of 214 units across 21 sessions (both single- and multi-unit responses were included: 127 units from Monkey 1 and 87 units from Monkey 2), with statistically significant differences in firing rate during laser trials compared to control (no laser) trials at one or more visual contrast conditions (Wilcoxon ranked sum test, p<0.005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data collection and statistical testing across multiple recording sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "1b06ce6c-3679-4aae-9f5f-eb3bf8effad0",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C7",
+      "claim": "Firing rates of neurons did not change in the blank 0% contrast condition between laser and control trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Although firing rates of neurons did not change in the blank 0%, contrast condition (Figure 1F\u2013I; laser vs control trials), the stimulus-triggered responses were highly heterogeneous.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1F-I comparing responses in the 0% contrast condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "d7679862-bcbc-4cb0-b3ab-9e07ae861519",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C8",
+      "claim": "The suppressed cells at the off-target site took significantly longer to exhibit response inactivation (92.9 \u00b1 1.1 ms) compared to cells at the direct site (31.2 \u00b1 1.2 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from a network-mediated effect, the suppressed cells at the off-target site took significantly longer to exhibit response inactivation (92.9 \u00b1 1.1 ms, mean \u00b1 sem) compared to the cells at the direct site (31.2 \u00b1 1.2 ms; p = 0.0007, Wilcoxon ranked sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison of suppression latencies between direct and indirect recording sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "271eeea7-2f04-4015-9595-44f7f0c59d3d",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C9",
+      "claim": "Four basic response patterns emerged following optogenetic inactivation of the nearby network.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the population, there was a continuum of responses (Figure 2A and C), but four basic response patterns clearly emerged following optogenetic inactivation of the nearby network (see the example cells in Figure 2A and population responses in Figure 2B; see also Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and visualization in Figure 2A, 2B, 2C, and supplementary figures showing distinct response patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "7c26ee75-0b82-44fd-afb1-ff2b0afcc970",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C10",
+      "claim": "Type 1 responses (suppression across all contrasts) comprised 42.5% of all light-modulated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this classification strategy in the distal network, we found that a significant fraction of neurons exhibited suppression across all visual stimulus contrasts (labeled Type 1, 42.5% of all light-modulated cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by classification and quantification of recorded neural responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "7bdc444a-ef25-4f49-8415-5d1f92114fdf",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C11",
+      "claim": "Type 2 responses (facilitation at low contrasts and suppression at high contrasts) comprised 28.5% of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of light-responsive neurons (57.5%) in the distant network exhibited either mixed effects or facilitation\u2014Type 2: facilitation at low contrasts and suppression at high contrasts (28.5% of cells)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by classification and quantification of recorded neural responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "04fa0135-fb75-4d08-9106-453720ae2646",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C12",
+      "claim": "Type 3 responses (suppression at low contrasts and facilitation at high contrasts) comprised 20.1% of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Type 3: suppression at low contrasts and facilitation at high contrasts (20.1% of cells)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by classification and quantification of recorded neural responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "ef801ec0-2ec9-46f0-8d34-437d8767de3b",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C13",
+      "claim": "Type 4 responses (facilitation across all contrasts) comprised 8.9% of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and Type 4: facilitation across all contrasts (8.9% of cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by classification and quantification of recorded neural responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "a0d061c2-9c60-43f5-a3cc-716db8f309b3",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C14",
+      "claim": "The distal effects cannot be due to direct optogenetic suppression because the distal recording sites are located well within the area targeted by virus injections.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the distal recording sites are located well within the area targeted by the virus injections. Injections were spaced across the cortical surface within a rectangular area spanning 1.0 \u00d7 0.7 mm (four horizontally spaced columns, with 1 \u00b5l \u00d7 5 vertically spaced injections in each column; see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental design and spatial arrangement of virus injections, providing logical inference about the source of observed effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "4d3cbc50-bbdd-4510-b540-d88f5eee3d7c",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C15",
+      "claim": "1 \u00b5l of a lentiviral suspension has been shown to transfect cells within 1 mm\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that 1 \u00b5l of a lentiviral suspension has been shown to transfect cells within 1 mm3 (Han et al., 2009), glutamatergic neurons at the distal site would also be expected to express GtACR2 and should be suppressed if exposed to light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Han et al., 2009, providing external evidence for viral transfection volume.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "c6295114-27cc-4a18-b6af-7c19b29e1f91",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C16",
+      "claim": "GtACR2 is much more sensitive to light than traditional channelrhodopsins.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly true since GtACR2 is much more sensitive to light than traditional channelrhodopsins (Govorunova et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Govorunova et al., 2015, providing external evidence for GtACR2 light sensitivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "bb896720-27e1-459b-9cbf-82628bad9077",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C17",
+      "claim": "Neural responses at the distal sites had no significant light-induced modulation in the absence of visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we never observed cells exhibiting the characteristic long-lasting suppression at distal recording sites. Further, neural responses at the distal sites had no significant light-induced modulation in the absence of the visual stimulation (Figure 2B, Figure 2\u2014figure supplement 1A; the 0-contrast condition).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2B and supplementary figures showing no modulation at 0% contrast.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "f52e6daa-97ee-4107-b659-63a04fb4faf5",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C18",
+      "claim": "Blue light (473 nm wavelength) is known to scatter rapidly in brain tissue, with virtually no light penetrating laterally beyond the collimated area.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, blue light (473 nm wavelength) is known to scatter rapidly in brain tissue (Diester et al., 2011), with virtually no light penetrating laterally beyond the collimated area (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Diester et al., 2011 and Li et al., 2019, providing external evidence for light scattering properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "7cd4cb69-d07e-4dc5-b076-8fcc8472370c",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C19",
+      "claim": "Type 1 responses dominate in supragranular layers, while all types are evenly distributed in granular and infragranular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Type 1 responses dominate in SG, while all types are evenly distributed in G and IG (Figure 2E and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by laminar analysis data shown in Figure 2E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "14b30228-3fe3-45ba-b0c7-886622d482d5",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C20",
+      "claim": "Type 1 (purely suppressed) units were evenly distributed throughout all layers, while Type 2, 3, and 4 responses were primarily found in granular and infragranular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Type 1 (purely suppressed) units were evenly distributed throughout all layers, while Type 2, 3, and 4 responses were primarily found in G and IG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by laminar distribution analysis of response types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "09c3eee3-5961-4d00-bc39-c7d79d005280",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C21",
+      "claim": "All four response types were found simultaneously within individual recording sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, all four response types were found simultaneously within individual recording sessions, when visual stimulus properties and light delivery parameters were identical (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A demonstrating co-occurrence of response types within sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "1028fcf6-1ce7-4c80-88e9-d33773b5acb7",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C22",
+      "claim": "All sessions with multiple simultaneously recorded neurons had more than one response type.",
+      "claim_type": "EXPLICIT",
+      "source": "All sessions with multiple simultaneously recorded neurons had more than one response type (data from individual sessions are shown in Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by session-by-session data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "4e26dbd9-890d-486b-b26a-28e4c0bad95b",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C23",
+      "claim": "The overall proportions of each response type were consistent within sessions and similar across monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall proportions of each response type were consistent within sessions (Figure 3A) and similar across monkeys (Figure 3B; p<0.0001, Kruskal-Wallis test, post-hoc Tukey test; within-type comparisons were not significantly different across monkeys, p>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis comparing response type distributions within and across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "1c926d49-b990-4623-8bb4-a7f12cec3e38",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C24",
+      "claim": "Type 1 cells were sensitive to a broader range of stimulus contrasts (evident by lower slope and higher c50) compared to Type 2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Type 1 cells were sensitive to a broader range of stimulus contrasts (evident by the lower slope, Figure 3F, and higher c50, Figure 3G) and were more strongly modulated by the local network (Figure 3D\u2013E) compared to Type 2 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of normalization model parameters shown in Figures 3D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "96f98f58-8f93-45f2-90c2-2741688f4236",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C25",
+      "claim": "Type 1 cells were less sensitive to low-contrast stimuli compared to Type 2 or Type 4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Type 1 cells were also less sensitive to low-contrast stimuli compared to Type 2 or Type 4 cells (evident from the higher c50 value, Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of c50 values shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "464870c5-236d-4e22-80b7-e29b248e7d18",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C26",
+      "claim": "The Type 2 class displayed the lowest values for network inputs compared to other cell classes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Type 2 class displayed the lowest values for the network inputs (Figure 3D\u2013E) compared to other cell classes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of normalization model parameters shown in Figures 3D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "f153b84e-6e5e-4c62-8818-23ae41631da8",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C27",
+      "claim": "Non-saturating cells comprised the majority of Type 3 responses (54.8%) and were least represented in the Type 2 group (12.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "These cells comprised the majority of Type 3 responses (54.8%) and were least represented in the Type 2 group (12.2%) (Figure 2\u2014figure supplement 2H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of non-saturating cells across response types shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "bff216b7-cdb8-4f78-9551-7a952199b135",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C28",
+      "claim": "The stimulus responses of Type 1, 3, and 4 classes were statistically similar but varied mostly in their additive and divisive network inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the stimulus responses (Figure 3F\u2013G) of Type 1, 3, and 4 classes were statistically similar but varied mostly in their additive and divisive network inputs (Figure 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical comparison of normalization model parameters across response types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "6a4e5a70-19e4-4800-8231-77678de480f0",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C29",
+      "claim": "Modulating local network sensitivity alone (while keeping feedforward input and E/I ratio fixed) can reproduce all four types of responses observed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Our crucial observation was that modulating local network sensitivity alone (while keeping feedforward input and E/I ratio fixed) can reproduce all four types of responses observed experimentally (Figure 4B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results shown in Figure 4B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "57f4e8bb-c6e3-427c-ba6a-1f378f1eb971",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C30",
+      "claim": "Altering the sensitivity of the feedforward gain (rather than the local excitatory network gain) did not reproduce all four experimentally observed response motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the effect of altering the sensitivity of the feedforward gain (rather than the local excitatory network gain), but this manipulation did not reproduce all four experimentally observed response motifs (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "23cab5c2-21fd-4b30-b147-94269fb23930",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C31",
+      "claim": "For a limited range of E/I ratios (1.95\u20132), all four response types can be generated solely by altering the local network sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for a limited range of E/I ratios (1.95\u20132), all four response types can be generated solely by altering the local network sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling analysis of parameter space.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "c4ee7003-7963-47a1-8178-7c53f8e8acd0",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C32",
+      "claim": "There is no equivalent range of network sensitivity values that could produce all four response types if only the E/I ratio is modulated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is no equivalent range of network sensitivity values that could produce all four response types if only the E/I ratio is modulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling analysis of parameter space.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "8918d265-27d0-406b-9907-cd2a07d5d1bb",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C33",
+      "claim": "Behavioral performance was significantly changed on 57.9% of laser suppression trials compared to control trials (31.6% impaired and 26.3% facilitated).",
+      "claim_type": "EXPLICIT",
+      "source": "Across daily sessions and contrast conditions, we found that behavioral performance was significantly changed on 57.9% of laser suppression trials compared to control trials (31.6% impaired and 26.3% facilitated; Figure 5\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by behavioral data analysis shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "d3ce5d54-fb56-4d79-b81e-fca2267b627d",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C34",
+      "claim": "In Type 1 dominant sessions, detection performance was impaired on laser trials (9.3 \u00b1 1.9%) compared to control trials (19.5 \u00b1 5.1%) for the lowest contrast stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the 10 sessions dominated by Type 1 responses, we found that detection performance was impaired on laser trials (target reports on laser trials: 9.3 \u00b1 1.9%; control trials: 19.5 \u00b1 5.1%, mean \u00b1 sem) for the lowest contrast stimuli (Figure 5B; p = 0.04, t-test, paired, two-way)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of behavioral performance data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "b868d47d-01dc-43f3-ba83-4f3a29aba0ab",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C35",
+      "claim": "In sessions with highly heterogeneous V1 responses, detection performance remained unchanged between laser and control trials for both low and high contrasts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the sessions in which V1 responses were highly heterogeneous, detection performance remained unchanged between laser and control trials both for the low (Figure 5E\u2013F; p = 0.40, t-test, paired, two-way) and high contrasts (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of behavioral performance data shown in Figure 5E-F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "eaf12b86-5c00-4f03-a293-fcab05ea279d",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C36",
+      "claim": "For Type 2 dominant sessions, there was a significant impairment in detection performance at 20% contrast in laser trials compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "For a subset of these mixed-type sessions, where Type 2 responses were dominant ( >35% of Type 2 cells recorded, n = 6 sessions; Figure 5\u2014figure supplement 1F, p = 0.0032, one-way Kruskal-Wallis, df = 3, Chi-sq = 13.8, post-hoc t-test), we found a significant impairment in detection performance at the 20% contrast in laser trials compared to control (Figure 5\u2014figure supplement 1E, G, H; p = 0.016, t-test, paired, two-way)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of behavioral performance data in Type 2 dominant sessions shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "a6c2d4f3-7531-48b2-b80a-acd1e3a650dd",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C37",
+      "claim": "Across sessions and stimulus conditions, there was no significant difference in eye position between laser and control conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, across sessions and stimulus conditions, we did not observe a significant difference in eye position (Figure 5\u2014figure supplement 2A, B, D, E; median p-value = 0.493, Wilcoxon ranked sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of eye tracking data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "064cf9fb-d55e-4937-b453-18727c00757d",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C38",
+      "claim": "There was no significant difference in pupil size between laser and control conditions across sessions and stimulus conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "or pupil size (Figure 5\u2014figure supplement 2C, F; median p-value = 0.498, Wilcoxon ranked sum test) between laser and control conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of pupil size measurements shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "89a6199f-330c-482f-8ff0-6e9eada18cb3",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C39",
+      "claim": "There were no statistically significant differences in eye movements and pupil size between Type 1 dominant and mixed-type sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there were no statistically significant differences (p>0.1) in eye movements and pupil size between Type 1 dominant and mixed-type sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison of eye tracking and pupil measurements across session types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "a7f56a4c-61d1-4da2-8fca-0cae8e2f18df",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C40",
+      "claim": "Consistent behavioral changes were only observed when neuronal responses at both the optogenetically targeted site and the off-target distal sites were suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results indicate that consistent behavioral changes were only observed when neuronal responses at the optogenetically targeted site and at the off-target distal sites were both suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the combined behavioral and neural data across different session types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "4ff17c29-533e-47d9-a712-4c7405038cec",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C41",
+      "claim": "When the distal neural population is dominated by heterogeneous changes in firing rates, changes in behavioral choices are mixed and inconsistent across sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "When the distal neural population is dominated by heterogeneous changes in firing rates, changes in behavioral choices are mixed and inconsistent across sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the combined behavioral and neural data across different session types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "f5b47ebd-593a-4ec9-876a-c4116f0c21f3",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C42",
+      "claim": "Focal optogenetic suppression induces complex changes in the functional properties of nearby neural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrates that focal optogenetic suppression induces complex changes in the functional properties of nearby neural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the overall findings from the experimental data presented throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "f8c11b69-903d-40ee-83cd-bc0e25612723",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C43",
+      "claim": "Cortical inactivation did not result in a simple distance-based decay effect of suppression as a function of proximity to light source.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to our expectation, cortical inactivation did not result in a simple distance-based decay effect of suppression as a function of proximity to light source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed heterogeneous response patterns rather than uniform suppression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "e971e220-3e96-4631-97bd-ebef7ead4f68",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C44",
+      "claim": "Complex changes in responses during suppression of distal cortical activity were predominantly present in deeper cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, complex changes in responses during suppression of distal cortical activity were predominantly present in deeper cortical layers, and hence studies limiting electrophysiological (Nassi et al., 2015; Sato et al., 2014) and optical recordings (Michel et al., 2018) to superficial layers would underestimate these important network effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the laminar distribution data and is supported by inference about implications for other studies with citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "9cb6da39-4c1f-4a8f-a919-e033d6132e9e",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C45",
+      "claim": "The mixed off-target effects could possibly explain the highly variable changes in behavioral performance during optogenetic inactivation observed in non-human primate studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the mixed off-target effects found here could possibly explain the highly variable changes in behavioral performance during optogenetic inactivation, particularly observed in non-human primate studies (Dai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a possible explanation for variability in other studies with a supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "1530afc4-e03e-4020-b845-20d19ea8ed34",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C46",
+      "claim": "The local network is a source of normalizing drive to cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results provide strong experimental support for prior untested hypotheses that the local network is a source of normalizing drive to cortical neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing network-mediated effects consistent with normalization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "b1212246-8efd-48de-95ed-898a50ad2db1",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C47",
+      "claim": "Normalization has been proposed to be one of the canonical computations in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization has been proposed to be one of the canonical computations in the cortex (Carandini and Heeger, 2011); yet it presently lacks a clear mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Carandini and Heeger, 2011, representing established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "dcea4e17-9fff-49f0-ba86-958d52f4105f",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C48",
+      "claim": "The normalizing input from the local network is not uniform, but rather is idiosyncratically tailored for each neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown here that the local network does indeed provide normalizing inputs to neurons within a column. However, this normalizing input is not uniform, but rather it is idiosyncratically tailored for each neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed heterogeneity in response types and normalization parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "d558d473-e423-4ba8-8a7a-e7e549259cab",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C49",
+      "claim": "Type 3 and Type 4 response motifs, with their instances of response augmentation at high contrasts, have never been previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "Type 3 and Type 4 response motifs, in particular, with their rather surprising instances of response augmentation at high contrasts, have never been previously described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the literature, representing an inference about the novelty of these findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "f204ad59-c98b-40c1-898d-7048d0f5d582",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C50",
+      "claim": "Normalization has been shown to stabilize neural responses and thus reduce variability to repeated stimulus presentations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, normalization has been shown to stabilize neural responses and thus reduce variability to repeated stimulus presentations (Coen-Cagli and Solomon, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Coen-Cagli and Solomon, 2019, providing external evidence for the function of normalization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "24506870-bc26-4ad6-9e0e-fd808dfc71fb",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C51",
+      "claim": "Parvalbumin-positive (PV) interneurons in mouse visual cortex are believed to be critically involved in the gain modulation of nearby pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse visual cortex, parvalbumin-positive (PV) interneurons are believed to be critically involved in the gain modulation of nearby pyramidal neurons (Atallah et al., 2012; Wilson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Atallah et al., 2012 and Wilson et al., 2012, providing external evidence from mouse studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "8896c58e-f09e-40f8-b340-fca0dccc0ab5",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C52",
+      "claim": "PV interneurons in mouse auditory cortex do not modulate the overall gain of local pyramidal cells in a stimulus-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PV interneurons in mouse auditory cortex do not modulate the overall gain of local pyramidal cells in a stimulus-dependent manner, as would be required by contrast normalization mechanisms (Cooke et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cooke et al., 2020, providing external evidence from mouse auditory cortex studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "f44084f5-48d8-4395-9c78-c82b255062c4",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C53",
+      "claim": "Axons of basket cells in cat visual cortex can target neurons up to 1360 \u03bcm away and do not obey orientation domain boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, axons of basket cells (morphologically defined PV cells [Scala et al., 2020]) in cat visual cortex can target neurons up to 1360 \u03bcm away and do not obey orientation domain boundaries, with 57% of projections synapsing at sites with orientation preferences differing by >30\u00b0 from the location of the basket cell's soma (Kisv\u00e1rday et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Scala et al., 2020 and Kisv\u00e1rday et al., 1994, providing external evidence from cat visual cortex studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "f0bddd48-3b3a-4ee4-9f08-9ddbb36fa6ab",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C54",
+      "claim": "Previous studies silencing cortical populations have primarily focused on the light-targeted zone without investigating collateral effects on the nearby local network.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies silencing cortical populations, particularly those using optogenetic tools, have primarily focused on the light-targeted zone without investigating collateral effects on the nearby local network (Diester et al., 2011; Fetsch et al., 2018; Han et al., 2011; Nassi et al., 2015; Ohayon et al., 2013; Trouche et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous optogenetic studies, representing a review of existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "0918122f-a391-4728-829c-0aa5a5b76070",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C55",
+      "claim": "Crook and Eysel (1992) showed that inactivating visual cortex using GABA microiontophoresis could substantially broaden tuning curves of neurons located 600 microns away.",
+      "claim_type": "EXPLICIT",
+      "source": "Crook and Eysel, 1992 have previously shown that inactivating visual cortex, using gamma-aminobutyric acid (GABA) microiontophoresis, could substantially broaden tuning curves of neurons located 600 microns away, but only if the inactivated site had a preferred orientation drastically different from the recording site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Crook and Eysel, 1992, providing external evidence from a previous inactivation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "45db8d2c-5eca-4149-a2e4-a1d5a1f13398",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C56",
+      "claim": "Li et al. (2019) examined the effects of cortical inactivation on more distant cortical sites by comparing the spatiotemporal profiles of several suppressive opsin constructs in awake mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study by Li et al., 2019 examined the effects of cortical inactivation on more distant cortical sites by comparing the spatiotemporal profiles of several suppressive opsin constructs in awake, but otherwise passive, mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Li et al., 2019, providing external evidence from a recent mouse study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "a09c1265-8377-4e2f-92ec-42b7d7b83bc2",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C57",
+      "claim": "Heterogeneous responses emerged only when optogenetic suppression was paired with a visual stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that in the absence of a visual stimulus (the 0% contrast condition), firing rates in the distal network are not significantly influenced by optogenetic suppression (Figure 1F\u2013I, Figure 2\u2014figure supplement 1). Heterogeneous responses emerged only when optogenetic suppression was paired with a visual stimulus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the data showing no modulation at 0% contrast but heterogeneous responses with visual stimuli.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "395b9524-9b39-4500-a1ab-a2c73b59e5ad",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C58",
+      "claim": "The presence of stimulus in visual cortex activates otherwise minimal local network connections to produce characteristic response features such as contrast normalization and near-surround suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "This detail is important because the presence of stimulus in visual cortex activates otherwise minimal local network connections to produce characteristic response features such as contrast normalization and near-surround suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about visual cortex function and inference from the experimental results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "ba990602-f8f9-43d9-8589-fa7f1fcb5cc3",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C59",
+      "claim": "The lentiviral vector LV-CaMKII\u03b1-GtACR2-GFP was prepared by the University of North Carolina Vector Core with a titer of 10^9 IU/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "The anion channelrhodopsin GtACR2 (Forli et al., 2018; Govorunova et al., 2015; Mauss et al., 2017; Mohammad et al., 2017) was packaged in a lentiviral construct under the control of the promoter \u03b1-CamKII (LV-CaMKII\u03b1-GtACR2-GFP). The vector was prepared by the University of North Carolina Vector Core, with a titer of 109 IU/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental materials and methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "24c045a8-2984-4aa3-aba6-f77167e83c67",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C60",
+      "claim": "Four V1 columns, and five sites per column (spaced every 250 \u00b5m), were targeted for injection per animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Four V1 columns, and five sites per column (spaced every 250 \u00b5m), were targeted for injection per animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental injection protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "4dcad1bb-0caf-4840-9dbd-b0e4d416a7fe",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C61",
+      "claim": "For each injected column, 1 \u00b5l of the viral suspension was delivered over a 10 min period at each site.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 15min waiting period (5 min waiting period for every subsequent site within the column), the plunger was independently advanced, delivering 1 \u00b5l of the viral suspension over a 10 min period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental injection protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "2e88d920-4866-47e8-bd0a-e4cc06d1230a",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C62",
+      "claim": "Monkeys completed a contrast detection task using sine-wave gratings presented at the recorded cell population's preferred orientation and a fixed spatial frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Monkeys completed a contrast detection task using sine-wave gratings presented at recorded cell population's preferred orientation and a fixed spatial frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the behavioral task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "5ab76858-0f3e-4685-88e4-e1c269e1416a",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C63",
+      "claim": "On 50% of trials, optical stimulation was delivered simultaneously with the visual stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, on half of the trials, optical stimulation was delivered simultaneously with the visual stimulus (or when the visual stimulus would have appeared on a no-stimulus trial) and was delivered equally throughout all stimulus contrast conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "50232c11-2583-4fed-8a06-bc33105e159b",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C64",
+      "claim": "Stimuli had a median size of 2.5\u00b0 (\u00b1 0.6\u00b0) and a spatial frequency of 2 cycles per degree.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli had a median size of 2.5\u00b0 (\u00b1 0.6\u00b0) and a spatial frequency of 2 cycles per degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the visual stimulus parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "3d3e4f35-b0e1-4ca6-9ca0-afd6c38e378b",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C65",
+      "claim": "Light power output at the end of the fiber optic was kept consistent across sessions at approximately 7\u201314 mW per mm\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Light power output at the end of the fiber optic was periodically measured using an integrating sphere sensor (S124C, Thor Labs) and was kept consistent across sessions (~7\u201314 mW per mm2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the optogenetic stimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "7ad53418-b4f4-4d73-bd87-63d94abeba00",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C66",
+      "claim": "The optical fiber was scissor-cut and the direction of the light was perpendicular to the cortical surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the optical fiber was scissor-cut and the direction of the light was perpendicular to the cortical surface, meaning that the maximum light power was vertical, parallel to cortical columns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the optogenetic stimulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "27f915fd-2396-4541-b482-f224e200458a",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C67",
+      "claim": "On average, per session, 5 (\u00b1 4) single units and 7 (\u00b1 3.5) units whose activity could be significantly modulated by light application were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, per session, we were able to identify 5 (\u00b1 4) single units and 7 (\u00b1 3.5) units (single or multiunit activity) whose activity could be significantly modulated by light application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the data collection results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "ad8fbc20-00cd-4137-abd5-ce86cba2f421",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "claim_id": "C68",
+      "claim": "For the majority of units (72.9%), the peak response averaged across stimuli occurred in 150\u2013300 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "For the majority of units (72.9%), the peak response averaged across stimuli occurred in 150\u2013300 ms after stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the temporal characteristics of neural responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c3a91614-e72f-4548-b833-f4c02689c346",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GtACR2, a chloride-conducting channelrhodopsin, was successfully expressed specifically in glutamatergic neurons in monkey V1 using a lentiviral vector under \u03b1-CamKII promoter control. This represents the first usage of GtACR2 in the monkey brain, with 97% specificity for excitatory neurons and no expression in inhibitory cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C59-C61 collectively establish successful and specific viral transduction. The immunohistochemical validation (C3) demonstrates high specificity (97% co-localization with \u03b1-CamKII, 0% with inhibitory markers), and the methodological details (C59-C61) are clearly documented. The novelty claim (C2) is based on author knowledge but is reasonable given the recent development of GtACR2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "314c2181-a5d7-48b6-bdff-5e5741ff13ce",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Direct optogenetic activation of GtACR2 at the light-targeted site produced significant suppression of neural activity (24.9% \u00b1 2.1% reduction in firing rates, p=0.0064) with long-lasting kinetics (387.9 ms \u00b1 38.7 ms return to baseline), consistent with known GtACR2 properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 provide statistically significant evidence for direct suppression with appropriate controls and statistical testing. The kinetics match previously published GtACR2 data (Govorunova et al., 2015), providing external validation. Sample size (n=41) is adequate for the statistical test used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic suppression at a focal site induced heterogeneous off-target effects in the distal network (~300 \u03bcm away), with four distinct response types emerging only during visual stimulation: Type 1 (42.5%, suppression across all contrasts), Type 2 (28.5%, facilitation at low contrasts/suppression at high), Type 3 (20.1%, suppression at low/facilitation at high), and Type 4 (8.9%, facilitation across all contrasts). All four types were found simultaneously within individual sessions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C13, C17, C21-C23 provide comprehensive evidence for heterogeneous network effects. The classification is validated through multiple methods (normalization fits, UMAP clustering, linear discriminant analysis per supplementary data). The stimulus-dependence (C7, C17) rules out direct light effects. Statistical consistency across sessions and monkeys (C23) strengthens the findings. The sample size (214 units across 21 sessions) is substantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "7f9526b9-a2ed-48c0-a949-57b8d94b8fe0",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The heterogeneous distal effects are mediated by network connectivity rather than direct light activation, as evidenced by significantly longer suppression latencies at off-target sites (92.9 ms vs 31.2 ms, p=0.0007), absence of modulation without visual stimulation, and physical constraints on light penetration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C14-C18 provide converging evidence that distal effects are network-mediated. The latency difference (C8) is statistically significant and mechanistically interpretable. The spatial arguments (C14-C15) are logical given viral injection parameters. Light scattering properties (C18) are supported by citations. The absence of effects at 0% contrast (C17) is critical evidence against direct light activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "970648d6-94cf-467f-9e53-5408939d0ab5",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The heterogeneous response types showed laminar specificity, with Type 1 responses dominating in supragranular layers while Types 2-4 were primarily found in granular and infragranular layers, indicating that complex network effects are predominantly present in deeper cortical layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20, C44 demonstrate laminar organization of response types using CSD analysis for layer identification. The finding that heterogeneity is concentrated in deeper layers is well-supported by the data (Figure 2E-F). However, the sample size for laminar analysis is smaller (n=155 units with clear laminar assignment from 15/21 sessions), which is acknowledged but still adequate for the statistical comparisons performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "ebdeab19-5f24-479c-ad9f-4e7582f53019",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The four response types exhibited distinct normalization properties: Type 1 cells showed broader contrast sensitivity (lower slope, higher c50) and stronger network modulation compared to Type 2 cells, while Types 1, 3, and 4 had similar stimulus responses but differed in their additive and divisive network inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 provide detailed characterization of response types using normalization model parameters. The statistical comparisons are appropriate (Kruskal-Wallis with post-hoc tests), and the model fits are good (median R\u00b2>0.9 per supplementary data). The finding that network inputs (P and Q parameters) differ more than intrinsic stimulus properties across types is well-supported and mechanistically important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "ab1dcd31-fd78-4860-a697-f487190c46e6",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A computational model demonstrates that modulating local network sensitivity alone (while keeping feedforward input and E/I ratio fixed) can reproduce all four experimentally observed response types, whereas modulating feedforward gain or E/I ratio alone cannot. For a limited E/I ratio range (1.95-2), all four response types can be generated solely by varying network sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 present modeling results that provide mechanistic insight. The model successfully reproduces all four response types by varying a single parameter (network sensitivity), which is parsimonious and testable. The failure of alternative models (C30) strengthens the conclusion. However, the model is simplified (firing-rate based, single output neuron) and makes assumptions about network architecture that are not directly validated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "c095feb0-d8c6-4350-b786-c4b7fb13516a",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Behavioral performance was consistently impaired only when both on-target and off-target sites showed suppression (Type 1 dominant sessions: 9.3% vs 19.5% detection at low contrast, p=0.04), while heterogeneous neural responses resulted in inconsistent behavioral changes. Eye position and pupil size did not differ between laser and control conditions, ruling out these as confounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C41 establish a critical link between neural heterogeneity and behavioral variability. The behavioral impairment in Type 1 dominant sessions (C34) is statistically significant, while mixed-type sessions show no consistent effect (C35). Type 2 dominant sessions show intermediate effects (C36). The control analyses for eye position and pupil size (C37-C39) are thorough and rule out important confounds. The inference that consistent behavioral changes require uniform suppression (C40-C41) is well-supported by the data pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "26cf1058-3259-40cd-a0df-f5b1ce6c3371",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Focal optogenetic suppression induces complex, non-uniform changes in nearby neural populations rather than simple distance-based decay, providing experimental support that the local network provides idiosyncratically tailored normalizing inputs to individual neurons within a column.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43, C46, C48 represent the main conclusions synthesizing the experimental findings. The evidence for heterogeneous rather than uniform effects is strong (supported by results above). The inference about normalization (C46, C48) is well-supported by the modeling and the diversity of network input parameters across response types. However, the claim about normalization is somewhat indirect\u2014the study manipulates the network and observes effects consistent with normalization theory, but does not directly measure normalization per se.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "7efd7322-ac54-45c0-a442-bcb1ccfae351",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mixed off-target effects observed could possibly explain the highly variable behavioral changes during optogenetic inactivation reported in non-human primate studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C45 is explicitly speculative (\"could possibly explain\") and extends the findings to explain variability in other studies. While the hypothesis is reasonable and supported by one citation (Dai et al., 2014), it remains untested. The current study demonstrates heterogeneous effects and their behavioral consequences, but does not directly examine whether this explains variability in other studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "62685eb4-9d98-4cdc-bffb-3250fd7d9554",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Type 3 and Type 4 response motifs, showing response augmentation at high contrasts, have never been previously described.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C49 asserts novelty based on the authors' literature knowledge. While the response patterns are clearly documented in this study, the claim of complete novelty is difficult to verify without exhaustive literature review. The patterns are indeed surprising and well-characterized here, but the absolute novelty claim should be treated cautiously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "774af8aa-c747-49df-88b0-10f1ab7b10be",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within existing literature on opsins, normalization theory, inhibitory circuits, and previous inactivation studies, noting that heterogeneous responses emerged only when optogenetic suppression was paired with visual stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C16, C47, C50-C58 provide literature context through citations. These are appropriately used to establish background (GtACR2 properties, normalization theory, PV interneuron function, previous inactivation studies). The stimulus-dependence of heterogeneous effects (C57-C58) is an important finding that distinguishes this work from Li et al. 2019, which examined spontaneous activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    },
+    {
+      "id": "d47ad2da-7b09-4904-b08e-de7143c155d1",
+      "content_id": "fe4e45f9-eb20-4d51-9c4b-d1eda9890501",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The behavioral task and recording methods are described: monkeys performed contrast detection with sine-wave gratings at preferred orientation, with 50% of trials including 300ms optogenetic stimulation (7-14 mW/mm\u00b2) delivered perpendicular to cortical surface, yielding on average 5\u00b14 single units and 7\u00b13.5 light-modulated units per session.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 describe methodological details that are clearly documented and appropriate for the study. The task design (C62-C64), optogenetic parameters (C63, C65-C66), and recording yields (C67-C68) are all factual statements about the experimental procedures. These details are important for reproducibility and interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:02.009170Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4a424eca-fb43-4de6-8517-5f34d2c4fac9",
+      "result_id": "c3a91614-e72f-4548-b833-f4c02689c346"
+    },
+    {
+      "claim_id": "bd236d46-8b63-4f36-bc23-f9087a6df9aa",
+      "result_id": "c3a91614-e72f-4548-b833-f4c02689c346"
+    },
+    {
+      "claim_id": "47c4d0b5-86a9-4253-b40a-83671790ae9f",
+      "result_id": "c3a91614-e72f-4548-b833-f4c02689c346"
+    },
+    {
+      "claim_id": "ba990602-f8f9-43d9-8589-fa7f1fcb5cc3",
+      "result_id": "c3a91614-e72f-4548-b833-f4c02689c346"
+    },
+    {
+      "claim_id": "24c045a8-2984-4aa3-aba6-f77167e83c67",
+      "result_id": "c3a91614-e72f-4548-b833-f4c02689c346"
+    },
+    {
+      "claim_id": "4dcad1bb-0caf-4840-9dbd-b0e4d416a7fe",
+      "result_id": "c3a91614-e72f-4548-b833-f4c02689c346"
+    },
+    {
+      "claim_id": "1726ae8f-c4ea-41ee-8fc6-42eb1dc73ed8",
+      "result_id": "314c2181-a5d7-48b6-bdff-5e5741ff13ce"
+    },
+    {
+      "claim_id": "32905888-6b77-40af-9f25-5f192cef067e",
+      "result_id": "314c2181-a5d7-48b6-bdff-5e5741ff13ce"
+    },
+    {
+      "claim_id": "4dde8e36-37b9-419f-866d-19a03941625a",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "1b06ce6c-3679-4aae-9f5f-eb3bf8effad0",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "d7679862-bcbc-4cb0-b3ab-9e07ae861519",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "271eeea7-2f04-4015-9595-44f7f0c59d3d",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "7c26ee75-0b82-44fd-afb1-ff2b0afcc970",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "7bdc444a-ef25-4f49-8415-5d1f92114fdf",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "04fa0135-fb75-4d08-9106-453720ae2646",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "ef801ec0-2ec9-46f0-8d34-437d8767de3b",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "bb896720-27e1-459b-9cbf-82628bad9077",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "09c3eee3-5961-4d00-bc39-c7d79d005280",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "1028fcf6-1ce7-4c80-88e9-d33773b5acb7",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "4e26dbd9-890d-486b-b26a-28e4c0bad95b",
+      "result_id": "4c9a0297-3f5b-47ed-9414-744cebe1cc01"
+    },
+    {
+      "claim_id": "d7679862-bcbc-4cb0-b3ab-9e07ae861519",
+      "result_id": "7f9526b9-a2ed-48c0-a949-57b8d94b8fe0"
+    },
+    {
+      "claim_id": "a0d061c2-9c60-43f5-a3cc-716db8f309b3",
+      "result_id": "7f9526b9-a2ed-48c0-a949-57b8d94b8fe0"
+    },
+    {
+      "claim_id": "4d3cbc50-bbdd-4510-b540-d88f5eee3d7c",
+      "result_id": "7f9526b9-a2ed-48c0-a949-57b8d94b8fe0"
+    },
+    {
+      "claim_id": "c6295114-27cc-4a18-b6af-7c19b29e1f91",
+      "result_id": "7f9526b9-a2ed-48c0-a949-57b8d94b8fe0"
+    },
+    {
+      "claim_id": "bb896720-27e1-459b-9cbf-82628bad9077",
+      "result_id": "7f9526b9-a2ed-48c0-a949-57b8d94b8fe0"
+    },
+    {
+      "claim_id": "f52e6daa-97ee-4107-b659-63a04fb4faf5",
+      "result_id": "7f9526b9-a2ed-48c0-a949-57b8d94b8fe0"
+    },
+    {
+      "claim_id": "7cd4cb69-d07e-4dc5-b076-8fcc8472370c",
+      "result_id": "970648d6-94cf-467f-9e53-5408939d0ab5"
+    },
+    {
+      "claim_id": "14b30228-3fe3-45ba-b0c7-886622d482d5",
+      "result_id": "970648d6-94cf-467f-9e53-5408939d0ab5"
+    },
+    {
+      "claim_id": "e971e220-3e96-4631-97bd-ebef7ead4f68",
+      "result_id": "970648d6-94cf-467f-9e53-5408939d0ab5"
+    },
+    {
+      "claim_id": "1c926d49-b990-4623-8bb4-a7f12cec3e38",
+      "result_id": "ebdeab19-5f24-479c-ad9f-4e7582f53019"
+    },
+    {
+      "claim_id": "96f98f58-8f93-45f2-90c2-2741688f4236",
+      "result_id": "ebdeab19-5f24-479c-ad9f-4e7582f53019"
+    },
+    {
+      "claim_id": "464870c5-236d-4e22-80b7-e29b248e7d18",
+      "result_id": "ebdeab19-5f24-479c-ad9f-4e7582f53019"
+    },
+    {
+      "claim_id": "f153b84e-6e5e-4c62-8818-23ae41631da8",
+      "result_id": "ebdeab19-5f24-479c-ad9f-4e7582f53019"
+    },
+    {
+      "claim_id": "bff216b7-cdb8-4f78-9551-7a952199b135",
+      "result_id": "ebdeab19-5f24-479c-ad9f-4e7582f53019"
+    },
+    {
+      "claim_id": "6a4e5a70-19e4-4800-8231-77678de480f0",
+      "result_id": "ab1dcd31-fd78-4860-a697-f487190c46e6"
+    },
+    {
+      "claim_id": "57f4e8bb-c6e3-427c-ba6a-1f378f1eb971",
+      "result_id": "ab1dcd31-fd78-4860-a697-f487190c46e6"
+    },
+    {
+      "claim_id": "23cab5c2-21fd-4b30-b147-94269fb23930",
+      "result_id": "ab1dcd31-fd78-4860-a697-f487190c46e6"
+    },
+    {
+      "claim_id": "c4ee7003-7963-47a1-8178-7c53f8e8acd0",
+      "result_id": "ab1dcd31-fd78-4860-a697-f487190c46e6"
+    },
+    {
+      "claim_id": "8918d265-27d0-406b-9907-cd2a07d5d1bb",
+      "result_id": "c095feb0-d8c6-4350-b786-c4b7fb13516a"
+    },
+    {
+      "claim_id": "d3ce5d54-fb56-4d79-b81e-fca2267b627d",
+      "result_id": "c095feb0-d8c6-4350-b786-c4b7fb13516a"
+    },
+    {
+      "claim_id": "b868d47d-01dc-43f3-ba83-4f3a29aba0ab",
+      "result_id": "c095feb0-d8c6-4350-b786-c4b7fb13516a"
+    },
+    {
+      "claim_id": "eaf12b86-5c00-4f03-a293-fcab05ea279d",
+      "result_id": "c095feb0-d8c6-4350-b786-c4b7fb13516a"
+    },
+    {
+      "claim_id": "a6c2d4f3-7531-48b2-b80a-acd1e3a650dd",
+      "result_id": "c095feb0-d8c6-4350-b786-c4b7fb13516a"
+    },
+    {
+      "claim_id": "064cf9fb-d55e-4937-b453-18727c00757d",
+      "result_id": "c095feb0-d8c6-4350-b786-c4b7fb13516a"
+    },
+    {
+      "claim_id": "89a6199f-330c-482f-8ff0-6e9eada18cb3",
+      "result_id": "c095feb0-d8c6-4350-b786-c4b7fb13516a"
+    },
+    {
+      "claim_id": "a7f56a4c-61d1-4da2-8fca-0cae8e2f18df",
+      "result_id": "c095feb0-d8c6-4350-b786-c4b7fb13516a"
+    },
+    {
+      "claim_id": "4ff17c29-533e-47d9-a712-4c7405038cec",
+      "result_id": "c095feb0-d8c6-4350-b786-c4b7fb13516a"
+    },
+    {
+      "claim_id": "f5b47ebd-593a-4ec9-876a-c4116f0c21f3",
+      "result_id": "26cf1058-3259-40cd-a0df-f5b1ce6c3371"
+    },
+    {
+      "claim_id": "f8c11b69-903d-40ee-83cd-bc0e25612723",
+      "result_id": "26cf1058-3259-40cd-a0df-f5b1ce6c3371"
+    },
+    {
+      "claim_id": "1530afc4-e03e-4020-b845-20d19ea8ed34",
+      "result_id": "26cf1058-3259-40cd-a0df-f5b1ce6c3371"
+    },
+    {
+      "claim_id": "dcea4e17-9fff-49f0-ba86-958d52f4105f",
+      "result_id": "26cf1058-3259-40cd-a0df-f5b1ce6c3371"
+    },
+    {
+      "claim_id": "9cb6da39-4c1f-4a8f-a919-e033d6132e9e",
+      "result_id": "7efd7322-ac54-45c0-a442-bcb1ccfae351"
+    },
+    {
+      "claim_id": "d558d473-e423-4ba8-8a7a-e7e549259cab",
+      "result_id": "62685eb4-9d98-4cdc-bffb-3250fd7d9554"
+    },
+    {
+      "claim_id": "4a424eca-fb43-4de6-8517-5f34d2c4fac9",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "c6295114-27cc-4a18-b6af-7c19b29e1f91",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "b1212246-8efd-48de-95ed-898a50ad2db1",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "f204ad59-c98b-40c1-898d-7048d0f5d582",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "24506870-bc26-4ad6-9e0e-fd808dfc71fb",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "8896c58e-f09e-40f8-b340-fca0dccc0ab5",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "f44084f5-48d8-4395-9c78-c82b255062c4",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "f0bddd48-3b3a-4ee4-9f08-9ddbb36fa6ab",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "0918122f-a391-4728-829c-0aa5a5b76070",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "45db8d2c-5eca-4149-a2e4-a1d5a1f13398",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "a09c1265-8377-4e2f-92ec-42b7d7b83bc2",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "395b9524-9b39-4500-a1ab-a2c73b59e5ad",
+      "result_id": "774af8aa-c747-49df-88b0-10f1ab7b10be"
+    },
+    {
+      "claim_id": "2e88d920-4866-47e8-bd0a-e4cc06d1230a",
+      "result_id": "d47ad2da-7b09-4904-b08e-de7143c155d1"
+    },
+    {
+      "claim_id": "5ab76858-0f3e-4685-88e4-e1c269e1416a",
+      "result_id": "d47ad2da-7b09-4904-b08e-de7143c155d1"
+    },
+    {
+      "claim_id": "50232c11-2583-4fed-8a06-bc33105e159b",
+      "result_id": "d47ad2da-7b09-4904-b08e-de7143c155d1"
+    },
+    {
+      "claim_id": "3d3e4f35-b0e1-4ca6-9ca0-afd6c38e378b",
+      "result_id": "d47ad2da-7b09-4904-b08e-de7143c155d1"
+    },
+    {
+      "claim_id": "7ad53418-b4f4-4d73-bd87-63d94abeba00",
+      "result_id": "d47ad2da-7b09-4904-b08e-de7143c155d1"
+    },
+    {
+      "claim_id": "27f915fd-2396-4541-b482-f224e200458a",
+      "result_id": "d47ad2da-7b09-4904-b08e-de7143c155d1"
+    },
+    {
+      "claim_id": "ad8fbc20-00cd-4137-abd5-ce86cba2f421",
+      "result_id": "d47ad2da-7b09-4904-b08e-de7143c155d1"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,424 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C77"
+    ],
+    "result": "The ventral anterior temporal lobe (vATL) plays a central role in semantic memory as a hub that coordinates distributed semantic representations and supports conceptual similarity structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C22, and C77 establish vATL's role as a semantic hub through extensive citations to prior work including neuropsychological, lesion-symptom mapping, functional/structural imaging, and TMS studies. This represents well-established prior knowledge that forms the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Two competing theoretical views exist for semantic representation: a feature-based hierarchical view versus a distributed and dynamic view, with different implications for interpreting neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C13 describe established theoretical perspectives in the field, supported by multiple citations to prior work. These claims accurately characterize the theoretical landscape and motivate the study's research question. The logical implications of each view for neural interpretation are clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "A hypothetical example demonstrates that independent univariate analysis can mischaracterize distributed and dynamic neural codes, leading to incorrect conclusions about semantic representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 present a clear thought experiment illustrated in Figure 1 that logically demonstrates how independent analysis of neural populations can yield misleading conclusions when the true code is distributed and dynamic. This effectively motivates the methodological approach of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Detecting distributed and dynamic semantic codes requires high spatiotemporal resolution data, multivariate methods, and has not been adequately addressed in prior computational modeling work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 identify methodological requirements and gaps in the literature, supported by citations to prior work. These claims effectively establish the rationale for the study's methodological choices (ECoG, multivariate decoding) and its novel contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29"
+    ],
+    "result": "The study combined computational modeling, multivariate pattern classification, and ECoG to demonstrate that animacy information in vATL is encoded by a distributed code that changes dynamically with stimulus processing, reconciling feature-based and distributed-dynamic views.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 and C29 describe the study's approach and main conclusion. The methodology is clearly described (C21), the model predictions are established (C24-C25), and the ECoG findings match these predictions (C26-C27). The reconciliation claim (C29) is supported by the combined simulation and empirical results showing different patterns in posterior versus anterior regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "A recurrent neural network model implementing the hub-and-spokes theory was trained on 90 items from three domains and successfully learned to complete visual and verbal patterns with >99% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C119-C129 provide detailed specifications of the model architecture, training procedure, and performance. The model is well-specified with clear parameters, training procedures are standard and appropriate, and the reported performance (>99% accuracy) demonstrates successful learning. The model implements an established theory (C119) with proper citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The trained model exhibits nonlinear trajectories in representational space during stimulus processing, with individual units showing mixed patterns when analyzed independently, but the full distributed pattern elaborates conceptual structure throughout processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 describe simulation results visualized in Figures 2B-D. The nonlinear trajectories are demonstrated in both MDS space (C34, Figure 2B) and raw unit activations (C35, Figure 2C), ruling out data-reduction artifacts. Independent unit analysis shows mixed patterns (C36, Figure 2D), while the distributed pattern is coherent (C37). These findings are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Multivariate classifiers applied to sparse samples of model hub activations show an 'overlapping waves' pattern of temporal generalization that reflects nonlinear dynamics and is specific to deep, distributed, interactive networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C49 describe the temporal generalization analysis of the model. The methodology is appropriate (C38-C39), results show the predicted overlapping waves pattern (C40-C43, Figure 3), and the interpretation linking this to nonlinear trajectories is logical (C44-C45). Comparative simulations (C46-C47) demonstrate specificity to the model architecture. The predicted signature for ECoG data (C48-C49) follows logically from these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "ECoG data were collected from 8 patients with electrodes in left vATL during picture naming of 100 matched animate/inanimate items, preprocessed appropriately, and analyzed using L1-regularized logistic regression with nested cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C130-C147 provide comprehensive methodological details for the ECoG study. Patient characteristics are documented (C130-C135), stimuli are well-controlled and matched (C136-C139), preprocessing is standard (C141-C144), and classification methods are appropriate with proper regularization and cross-validation (C145-C147). The Chamfer matching analysis (C139) confirms that animacy is not trivially decodable from low-level visual features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C63"
+    ],
+    "result": "In ECoG data, animacy decoding exceeded chance from 200ms post-onset throughout the processing window, with an overlapping waves pattern of temporal generalization strikingly similar to model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 and C63 describe the core ECoG decoding results shown in Figures 4A-D. Decoding is statistically reliable from 200ms onward (C54, C63), temporal generalization shows the predicted overlapping waves pattern (C55-C57), and the similarity to simulation results is visually apparent in the figures. Statistical reliability is properly assessed with confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Classifier coefficients reveal a spatially and temporally stable code in mid-posterior regions consistent with feature-based views, but a fluctuating code in anterior regions consistent with distributed-dynamic views.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe the spatial pattern of classifier coefficients shown in Figure 4E and Video 1. The stable posterior pattern (C58-C59) and fluctuating anterior pattern (C60-C62) are clearly visible in the visualizations. The interpretation connecting these patterns to theoretical views (C59, C62) is reasonable given the data, though somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Statistical analysis confirms that the overlapping waves pattern is reliable across subjects, with each classifier cluster performing reliably better than others at specific timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe statistical validation shown in Figure 5A. The analysis uses appropriate paired t-tests with FDR correction across subjects. The finding that each cluster (except first and last) is reliably best at some timepoint provides strong statistical support for the overlapping waves pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The temporal generalization window widens linearly over the first ~500ms of processing (r\u00b2=0.70, p<0.002) before hitting ceiling, as determined by piecewise-linear regression with a breakpoint at 473ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 describe the analysis shown in Figure 5B. The piecewise-linear regression approach is appropriate for detecting changes in trend, the model selection using BIC is standard, and the reported statistics (r\u00b2=0.70, p<0.002) indicate strong linear widening in the first segment. The analysis uses non-overlapping windows to ensure independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Classifier coefficients fluctuate more in anterior than posterior temporal cortex, with anterior/posterior location predicting variance of coefficient change (r\u00b2=0.73, p<0.002) and this relationship being reliable across participants (t(7)=2.58, p<0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe the analysis shown in Figure 5C. The variance of coefficient change metric is appropriate for quantifying temporal fluctuation, the regression analysis shows strong spatial prediction (r\u00b2=0.73), and the across-subject reliability test is properly conducted. This provides statistical support for the qualitative observation from Figure 4E/Video 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C76"
+    ],
+    "result": "At the scale of intracranial EEG, neural signals throughout ventral temporal lobe jointly express animacy from ~200ms post-onset via a distributed code that is stable posteriorly but dynamic anteriorly, supporting the proposal that vATL encodes distributed semantic representations that change dynamically due to its role as a deep hub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C76 synthesize the main empirical findings. These conclusions are well-supported by the convergent evidence from decoding accuracy (C54-C57), temporal generalization patterns (C64-C68), and spatial patterns of coefficient change (C58-C62, C69-C71). The interpretation linking these findings to vATL's hub role (C76) is reasonable given the model predictions and anatomical considerations discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The overlapping waves pattern observed in ECoG arises in simulations only when combining distributed representation, interactive processing, and deep architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 summarize the simulation findings and their specificity. While the main text references Appendix analyses (A-1, A-2) showing that the pattern requires all three architectural features, these appendix results are not fully detailed in the provided manuscript. However, the claims are consistent with the reported findings that shallow networks and linear models do not show this pattern (C46-C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Despite vATL's established importance for semantic memory, multivariate neuroimaging studies rarely identify semantic representations in vATL, possibly because distributed and dynamic codes are destroyed by the spatial/temporal averaging inherent in non-invasive methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 identify an important puzzle in the literature and propose a resolution. The null results in multivariate studies are documented with citations (C78-C79), the methodological limitations of non-invasive techniques are accurately characterized (C80), and the proposed explanation (C81) follows logically from the current findings. This effectively contextualizes the study's contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The stable posterior code observed in ECoG corresponds to regions where fMRI studies report category effects, with the signal remaining detectable in fMRI due to spatial/temporal stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 connect the current findings to prior fMRI literature. The fMRI findings are properly cited (C82), the correspondence with the current stable posterior pattern is reasonable (C83), and the explanation for why fMRI detects this but not the anterior pattern (C84) follows logically from the differential stability observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Multiple lines of evidence rule out the possibility that anterior electrodes merely subtract correlated noise: anterior-only classifiers show reliable decoding equal to posterior-only classifiers, prior RSA found vATL uniquely encodes semantic similarity, the pattern was predicted by validated simulations, and vATL's importance is established by converging evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 address a potential alternative interpretation. The noise-subtraction concern is legitimate (C85), and four independent lines of evidence are provided: anterior-only decoding (C86-C87, Appendix A-4), prior RSA results (C88), model predictions (C89), and broader literature (implied). While the appendix analyses are not fully detailed, the multiple converging arguments strengthen the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Unlike prior MEG studies showing narrow unchanging temporal generalization, the current ECoG results show gradual widening that reflects an increasingly stable representational code rather than autocorrelation, explained by the model as rapid early changes slowing as the network settles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 compare the current findings to prior MEG work. The MEG pattern is properly cited (C90), the difference is clearly stated (C91), the autocorrelation control analysis rules out a trivial explanation (C92, Appendix A-5), and the interpretation (C93-C94) follows from the simulation results. This effectively distinguishes the current findings from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "While animacy is not transparently captured by low-level visual structure (Chamfer matching accuracy=0.51), it remains possible that decoders exploit some confounded property, though the information would still be expressed in a distributed, dynamically-changing code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 acknowledge an important limitation. The Chamfer matching analysis (C95-C96) provides evidence that animacy is not trivially visual, the acknowledgment of possible confounds (C97) is appropriately cautious, and the key point that the code's distributed-dynamic nature holds regardless (C98) is valid. This represents appropriate scientific humility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Common methods like RSA and generative approaches have limitations for assessing distributed codes; future work should consider multivariate approaches that predict stimulus embeddings in multidimensional semantic space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 discuss methodological limitations and future directions. The limitations of RSA (C99-C100) and generative approaches (C101) are properly cited and logically explained. The suggestion for future work (C102) is constructive and appropriately cited. This provides useful context for interpreting the current binary classification approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study analyzed raw voltages rather than time-frequency decompositions because neural network models lack oscillatory analogs, and prior ECoG work shows that semantic processing in ATL modulates beta-band power rather than gamma, possibly reflecting long-distance coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 justify the choice to analyze voltages rather than frequency bands. The explanation regarding model analogs (C106) is reasonable, the prior ECoG findings are properly cited (C107-C108), and the interpretation regarding beta oscillations and long-distance interactions (C109) is plausible. This addresses a potential methodological concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "vATL's anatomical position as a hub connecting visual, linguistic, action, sensory, and limbic systems may explain why dynamic distributed codes arise there but not in more peripheral modality-specific regions, suggesting feature-based approaches may be less suited for understanding tertiary association cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C118 provide anatomical context and theoretical synthesis. The anatomical connectivity is properly cited (C111-C113), the hub interpretation (C114) follows logically, the mechanistic speculation about dynamics (C115) is reasonable though speculative, the contrast with peripheral regions (C116) is supported by citations and model results, and the broader implications (C117-C118) are appropriately cautious. This provides a satisfying theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The neural code exploited by classifiers changed over time and across the ventral temporal surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is a summary statement supported by the detailed analyses in C58-C62 and C69-C71. The spatiotemporal changes in classifier coefficients are well-documented in Figure 4E, Video 1, and Figure 5C. This claim accurately summarizes a key finding.",
+    "result_type": "MAJOR"
+  }
+]

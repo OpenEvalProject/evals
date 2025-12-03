@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "LPLC2 neurons have a distinctive anatomical structure with dendrites in the lobula and four layers of the lobula plate (LP1-LP4), where each layer receives motion information in one of four cardinal directions. The dendritic branches align with preferred motion directions and form an outward radial structure matching looming object edges, with over 200 LPLC2 neurons converging onto giant fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe well-established anatomical features of LPLC2 neurons supported by citations to prior experimental work (Klapoetke et al., 2017; Maisak et al., 2013; Ache et al., 2019) and illustrated in Figure 1. These anatomical descriptions form the foundation for the computational modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Objects on collision courses create radially expanding visual flow fields, while non-colliding approaching objects expand with respect to the object's center rather than radially outward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 describe fundamental properties of visual optics that are well-established in the field and illustrated in the videos. These represent general knowledge about looming stimuli that motivates the computational problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Training anatomically-constrained neural networks to detect collisions yields two distinct solution types with opposing spatial structures: outward solutions resembling LPLC2 anatomy and inward solutions with opposite configuration. Only the outward solutions match actual LPLC2 dendritic weighting, with excitatory components resembling LPLC2 dendrites and inhibitory components consistent with LPi interneuron properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C19-C24 describe the central finding shown in Figures 5-6. The emergence of two solution types from optimization is demonstrated through clustering analysis, and the correspondence between outward solutions and LPLC2 anatomy is supported by comparison with cited experimental data. The filter structures are clearly visualized and quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C38",
+      "C58"
+    ],
+    "result": "Both outward and inward solutions can solve the collision detection problem with high accuracy when population size is large enough, with models containing 256 units detecting hits more accurately than 32-unit models, and outward solution performance matching inward solutions as unit number increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C38, C58 are supported by performance metrics shown in Figures 8-9, including ROC-AUC and PR-AUC scores approaching 1.0 for larger populations. The convergence of performance between solution types with increasing population size is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C29",
+      "C31",
+      "C57"
+    ],
+    "result": "Outward and inward units exhibit different baseline activities and response patterns: outward units have zero baseline and respond to hits from the receptive field center, while inward units have above-zero baseline and respond to hits from the periphery (30-90 degrees), making individual inward units sensitive to more hit cases than outward ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C29, C31, C57 are supported by analysis in Figure 7 showing response patterns as a function of incoming angle. The differential sensitivity patterns are clearly demonstrated and explained mechanistically in terms of filter structure and baseline activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C39",
+      "C64"
+    ],
+    "result": "Outward solutions suppress miss and retreat signals better than inward solutions, while inward solutions better suppress rotation signals. Outward solutions exhibit sparse coding with fewer active units, while inward solutions show denser representations. Both solution types predict higher hit probabilities for near misses than far misses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C39, C64 are supported by data in Figure 8 showing differential suppression of non-hit stimuli and population activity patterns. The sparsity difference between solution types is clearly demonstrated through visualization of active units.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The broad inhibition in outward solutions is consistent with large LPi neuron receptive fields from experiments, arises naturally after optimization, increases in extent as more units are added, and appears to suppress non-hit stimuli responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C66-C69 are supported by filter visualizations in Figure 6 showing increasing inhibitory extent with population size, and by comparison with cited experimental data (Mauss et al., 2015; Klapoetke et al., 2017). The functional role is demonstrated through response patterns to different stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C45"
+    ],
+    "result": "For RI models, the proportion of outward solutions increases with unit number, and the form and position of nonlinearity in the circuit play a role in selecting between different optimized solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C45 are supported by data in Figure 9\u2014figure supplement 2 showing the ratio of solution types across different model architectures (LRF with ReLU, LRF with ELU, RI with ReLU). The differential behavior between model types is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C56"
+    ],
+    "result": "The LPLC2-like outward solutions reproduce experimentally observed LPLC2 neuron responses across many stimuli types, including selectivity for loom signals, responses to expanding bars with inhibitory effects of inward motion, periphery inhibition, and orientation-dependent responses, despite never being trained on neural data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C46-C50, C56 are supported by comprehensive comparisons in Figure 10 between model predictions and experimental data from Klapoetke et al., 2017. The model reproduces multiple distinct response properties without being trained on neural recordings, which is a strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C62"
+    ],
+    "result": "The trained model reliably encodes angular size rather than angular velocity despite only having angular velocities as inputs, clarifying how LPLC2 neurons transform direction-selective motion signals to computations of angular size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C62 are supported by analysis in Figure 10I-L showing response curves collapse when plotted against angular size but not angular velocity. This emergent property is particularly notable given the model's input structure and matches experimental observations (Ache et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The inward solution cannot reproduce the neural data from LPLC2 recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by Figure 10\u2014figure supplement 1 showing poor correspondence between inward solution predictions and experimental LPLC2 responses. This negative result helps validate that the outward solution specifically matches biological implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C54",
+      "C55"
+    ],
+    "result": "LPLC2 neuron properties and tuning are predicted by optimizing an anatomically-constrained neural network to detect impending collisions, with one class of optimized solution matching the anatomy of motion inputs to LPLC2 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C54-C55 represent the main conclusion of the study, supported by the convergence of evidence from optimization results (Figures 5-6), anatomical correspondence (Figure 1), and functional validation (Figure 10). The normative approach successfully predicts neural properties from task optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The optimized solutions depend on the number of detectors, likely related to increasing receptive field overlap as the population grows, suggesting that understanding individual neuron properties requires considering population responses and that individual LPLC2 responses should be interpreted in light of the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by the systematic analysis across population sizes in Figures 6-9 showing how filter properties and performance change with unit number. This represents an important conceptual insight about population-level optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Many species rely on visual cues to identify looming objects, LPLC2 neurons send axons to giant fibers that trigger escape behaviors, and the dendritic structure favors responses to radially outward motion while strong inhibition suppresses responses to stimuli partially matching the radial structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 provide background context supported by multiple citations to prior work. These establish the biological and behavioral significance of the system being modeled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Inhibitory circuits play an important role for the selectivity of LPLC2 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is a general statement supported by references to experimental findings. This motivates the inclusion of inhibitory components in the model architecture.",
+    "result_type": "MINOR"
+  }
+]

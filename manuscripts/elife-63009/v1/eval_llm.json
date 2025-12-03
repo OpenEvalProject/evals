@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C85"
+    ],
+    "result": "The study used data from the Global Enteric Multicenter Study (GEMS), a prospective case-control study conducted from 2007-2011 across seven countries in Africa and Asia, enrolling 9,439 children with moderate-to-severe diarrhea. Of 3,366 patients with attributable pathogens identified using qPCR-based attribution models, 1,049 cases (31%) were attributable to viral-only etiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C85 provide consistent descriptive information about the GEMS study design, enrollment, and data collection procedures. The study characteristics are well-documented with appropriate citations, and the viral etiology prevalence (31%) is clearly stated from the analyzed dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The patient prediction model (Model A) was constructed using five clinically accessible variables selected through random forest variable importance screening: age (most important with variance reduction of 51.6), blood in stool, vomiting, breastfeeding status, and mid-upper arm circumference (MUAC). Variables like fever and diarrhea duration, though important in previous studies, did not improve model performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C64-C66 describe a systematic variable selection process with clear justification. The use of random forest screening (C64) with citation to prior work, identification of age as the most important predictor (C24), and empirical testing showing fever/duration did not improve performance (C66) provide coherent support for the final model specification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C62",
+      "C63",
+      "C67",
+      "C68"
+    ],
+    "result": "Climate data from NOAA's Integrated Surface Database was incorporated as a predictive model component, using 14-day weighted averages of temperature and rainfall from stations near GEMS sites. The data exhibit seasonal patterns (as shown in The Gambia), with periods of higher viral diarrhea cases associated with low temperatures and less rain, consistent with known seasonal patterns of rotavirus, norovirus, cholera, and Salmonella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22, C25, C62-C63, C67-C68 collectively establish the rationale and implementation of climate features. The claims are supported by appropriate citations for seasonal patterns of specific pathogens (C17-C21), visual evidence from Figure 1 (C22, C25), and clear description of data sources and processing methods (C62-C63, C67-C68).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Standardized seasonal sine and cosine curves with 365.25-day periodicity correlate with rolling averages of daily viral etiology rates in The Gambia and can be used to model country-specific seasonality of viral etiology rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by Figure 1\u2014figure supplement 2 showing the correlation between sine/cosine functions and viral rates. The mathematical approach using periodic functions to capture seasonality is appropriate and the visual evidence demonstrates the relationship, though the strength of correlation is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C83",
+      "C84"
+    ],
+    "result": "Model performance was evaluated using within rolling-origin-recalibration evaluation (sequentially moving test data to training set) and leave-one-site-out validation. Decision thresholds were set to achieve model specificities of 0.90 and 0.95, chosen due to potential harm if patients needing antibiotics did not receive them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74, C83-C84 describe appropriate validation methods for temporal data with proper citation (C72). The choice of high specificity thresholds (C83-C84) is justified by clinical safety considerations. The dual validation approach (within-study temporal and leave-one-site-out) provides reasonable assessment of model generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C3"
+    ],
+    "result": "The integrative post-test odds models significantly outperformed the traditional patient-only model for predicting viral etiology of diarrhea. The best integrative model (pre-test odds + patient model) achieved AUC of 0.839 (0.808-0.870) compared to 0.809 (0.776-0.842) for the traditional model (p=0.01, DeLong test). Models incorporating either seasonal curves (AUC 0.830) or pre-test odds (AUC 0.839) performed best.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C3 provide consistent evidence of improved performance with appropriate statistical testing. The AUC improvements are modest but statistically significant (C26), with confidence intervals provided. The identification of best-performing model components (C28) is supported by Figure 4. The improvement represents meaningful but incremental gains in discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Model performance varied substantially by site, with AUC ranging from 0.63 in Kenya to 0.95 in Bangladesh using 80% training/20% testing. In leave-one-site-out validation, climate-based models tended to outperform seasonality models. African sites had fewer patients in training/testing sets due to lower enrollment and fewer cases with known etiologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C86-C89 are supported by Table 2 and Figure 4\u2014figure supplement 2. The wide variation in site-specific performance (C30) is clearly documented. The observation about climate vs. seasonality in leave-one-out validation (C86) and explanation for smaller African site samples (C88-C89) provide important context for interpreting generalizability, though the large performance variation raises questions about model robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C90",
+      "C91"
+    ],
+    "result": "Sensitivity analyses showed that using conventional diagnostic methods instead of qPCR for pre-test odds calculation reduced AUC only slightly (0.839 to 0.829). Including both climate and seasonality components (not as joint density) appeared to reduce performance. Smaller test sets increased AUC but also increased variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C91 describe important sensitivity analyses. The minimal impact of using conventional diagnostics (C29) supports practical applicability. The observation that combining climate and seasonality reduces performance (C90) is counterintuitive but documented in Figure 4. The test set size effect (C91) follows expected statistical behavior and is shown in Figure 4\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Addition of a diagnostic test with 70% sensitivity/specificity increased AUC by 3-5%, while a more specific test (95% specificity) increased AUC by 10%. Models with pre-test information and seasonal information achieved similar sensitivity/specificity levels. The overall performance of combined models exceeded the diagnostic alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C92-C94 are supported by Table 3 and Figure 5. The simulation results (C31-C32) demonstrate quantified improvements with additional diagnostics. The ROC curve analysis (C92-C94) shows that integrating diagnostics with prediction models provides synergistic benefit beyond either component alone, supporting the integrative approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C109"
+    ],
+    "result": "Simulation studies demonstrated that the post-test odds model's performance deteriorates as conditional independence assumptions are violated. With conditional correlation of -0.90, one-dimensional kernel density AUC decreased by 11% (0.838 to 0.725), while two-dimensional kernel density estimates maintained consistent performance (AUC ~0.830), demonstrating that 2D-KDE can overcome conditional dependence between tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C109 are supported by Table 4 showing systematic simulation results. The demonstration that 1D-KDE performance degrades with conditional dependence while 2D-KDE remains robust (C35) provides important methodological validation. The simulation design appropriately tests the conditional independence assumption underlying the post-test odds formulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C48",
+      "C49",
+      "C50",
+      "C4"
+    ],
+    "result": "Of 3,366 patients, 2,653 (79%) received antibiotics, including 806 (30%) with viral-only etiology. In the test set (n=681), the integrative model with pre-test odds at 0.90 specificity correctly identified 88 (53%) viral cases while misclassifying 29 non-viral cases. Adding a diagnostic with 70% sensitivity/specificity increased correct viral identification to 102 (61%) cases, representing a 61% reduction in inappropriate antibiotic prescriptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40, C48-C50, and C4 provide consistent evidence from Table 3 about potential clinical impact. The baseline antibiotic overprescription rate (30% to viral cases) is clearly documented (C37). The model's performance at high specificity (C39-C40) and the incremental benefit of adding diagnostics (C50) are well-supported. However, this represents simulated impact on historical data, not prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C112"
+    ],
+    "result": "The majority of false positives (29-30 cases) were episodes attributed to Shigella, ST-ETEC, and combinations of rotavirus with non-viral pathogens. All but one false positive case had non-bloody diarrhea and would have been deemed not requiring antibiotics by WHO IMCI guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C112 are supported by Table 3\u2014source data 1 and provide important characterization of model errors. The observation that most false positives had non-bloody diarrhea (C42) and would not require antibiotics per WHO guidelines (C112) suggests the clinical consequences of false positives may be limited, though this inference requires knowledge of WHO IMCI guidelines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "Three diagnostic test scenarios were simulated: (1) 70% sensitivity/95% specificity, (2) 90% sensitivity/95% specificity, and (3) 70% sensitivity/70% specificity. For each of 500 bootstrapped samples, test results were randomly simulated based on specified sensitivity/specificity. Conditional dependence simulations used 100 iterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 and C79 clearly describe the simulation methodology. The choice of diagnostic performance scenarios (C75) covers a reasonable range. The bootstrap approach with 500 samples (C76) and 100 iterations for conditional dependence testing (C79) provide adequate replication for stable estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C59",
+      "C60",
+      "C61",
+      "C101"
+    ],
+    "result": "The study demonstrates that external data sources (prior patients, seasonal factors) improve predictive performance for infectious disease diagnosis. The modular framework allows flexible inclusion/exclusion of components based on data availability, enables real-time updating as new data is collected, and has potential to improve pediatric diarrhea management and reduce inappropriate antibiotic use in low-resource settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C59-C61, and C101 represent the study's main conclusions about the integrative approach. The improved performance with external data (C2) is supported by the AUC comparisons. The flexibility advantage (C59) and updating capability (C60) are logical inferences from the modular design. The potential clinical impact (C61, C101) is supported by the antibiotic reduction analysis, though actual implementation and prospective validation are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors acknowledge several limitations: requirement for robust training sets of cases and non-cases for kernel density estimation, lack of feature-level interpretability compared to logistic regression, only internal validation without external validation or field implementation, potential biases from using clinical research study data, and unexplored effects of using AFe\u22650.5 cutoff which may exclude bacterial cases that could benefit from antibiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 represent appropriate acknowledgment of study limitations. The need for robust training data (C52), interpretability limitations (C53), lack of external validation (C54), and potential selection biases (C55, C58) are important caveats. The unexplored effect of the AFe cutoff (C56-C57) is a significant limitation as this threshold determines case classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The introduction establishes context that traditional clinical prediction models focus on individual patient parameters, while clinical decision support tools are used to improve diagnosis accuracy and reduce inappropriate antibiotic use. External data sources like climate and seasonality inform communicable disease models, and machine learning has enabled incorporation of large data sources, though connectivity and infrastructure limitations exist in low-resource settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C11 provide appropriate background context with citations to support general statements about clinical decision support (C5), use of external data (C6-C7), existing tools (C8-C9), and infrastructure challenges (C10). These establish the rationale for the study's approach, though they are primarily literature review rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C95",
+      "C96"
+    ],
+    "result": "The clinical context establishes that viral diarrhea prediction is meaningful since viral infections don't benefit from antibiotics, diarrhea burden is highest in LMICs where antibiotics are over-prescribed, and unnecessary antibiotic use causes adverse events (allergic reactions, C. difficile infection) and antimicrobial resistance. Most diarrhea cases don't benefit from antibiotics and many are self-limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C43-C47, C95-C96 establish the clinical rationale with appropriate citations. The link between viral etiology and lack of antibiotic benefit (C16) is established medical knowledge. The burden in LMICs (C43-C44), harms of unnecessary antibiotics (C45-C47), and self-limiting nature of many cases (C95-C96) are well-supported by citations and provide strong justification for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C106",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "The discussion notes that kernel density estimates have been used in Na\u00efve Bayes classifiers, and the post-test odds framework allows combining complicated machine learning models with simple diagnostics. Neural networks could be used instead of logistic regression, and RDT results can be incorporated at point-of-care. Higher-dimensional densities are possible but face computational limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C106-C108, C110 discuss methodological flexibility and extensions. The prior use of KDE in Na\u00efve Bayes (C51) is cited. The flexibility to use different models (C106-C107) and incorporate RDTs (C108) are logical inferences from the framework design. The computational limitations of higher dimensions (C110) is reasonable speculation based on curse of dimensionality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "The authors recommend that development of rapid diagnostic tools (RDTs) for antibiotic stewardship should not be performed in isolation, and integration into clinical prediction algorithms should be considered, though cost-effectiveness in low-resource settings is uncertain. Further research is needed on clinician certainty requirements for altering treatment decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99, C100, C102 represent recommendations and future directions. The WHO call for RDTs (C97) is cited. The recommendation for integrated development (C98-C99) follows logically from the demonstrated synergy between models and diagnostics. The uncertainty about cost-effectiveness (C100) and need for implementation research (C102) are appropriate caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors propose that a mobile phone application would be an ideal platform for implementing the decision support tool in low-resource settings, potentially downloading patient/climate data via internet and facilitating clinician data entry through portability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C105 represent speculation about implementation without supporting data. While mobile platforms are plausible for low-resource settings, no evidence is provided about feasibility, user acceptance, or technical requirements. The automatic data downloading (C104) assumes infrastructure availability that may not exist given earlier statements about connectivity limitations (C10).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Cases with unknown etiologies have similar distributions of viral predictions using the patient model as cases with known etiologies, based on prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by citation to Brintz et al., 2020, providing justification for excluding unknown etiology cases from model training. This addresses a potential selection bias concern, though the cited work should be verified.",
+    "result_type": "MINOR"
+  }
+]

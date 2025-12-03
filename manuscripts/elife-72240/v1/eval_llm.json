@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C60",
+      "C80",
+      "C65",
+      "C84",
+      "C85"
+    ],
+    "result": "Optogenetic suppression of AAF offset responses significantly impairs sound termination detection in mice. Activating PV+ interneurons to minimize offset responses decreased performance (\u0394ODI = 0.23\u00b10.06 for slow ramps, 0.25\u00b10.09 for fast ramps) and increased reaction times. Control experiments showed no effect of laser alone in wild-type mice or when applied during ongoing sound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C80 provide quantitative behavioral data with appropriate controls (C62-C64, C81-C83). The experimental design includes proper controls for laser effects and timing specificity. Statistical significance is reported with effect sizes, and the conclusion (C65, C84, C85) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Fast fall-ramps (0.01 ms) evoke significantly larger offset responses than slow ramps (10 ms), but mice can detect sound termination with both ramp types. At the beginning of test sessions, mice performed better with fast ramps, but this difference disappeared with training. Control experiments confirmed these are genuine offset responses, not artifacts from spectral splatter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 provide comprehensive controls for spectral splatter artifacts including acoustic measurements (C69), BF analysis (C70), correlation analysis (C71, \u03c1=0.71, p<0.0001), and synaptic independence tests (C72). Behavioral data (C74-C77) show task-difficulty dependent effects consistent with cited literature (C78). The controls are rigorous and address potential confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Logistic regression decoding of AAF population activity shows that offset responses (66.4\u00b11.5% accuracy) and late responses (76.7\u00b11.2%) predict animal behavior significantly better than spontaneous (59.8\u00b11.4%) or sustained responses (60.8\u00b11.5%). However, onset and offset decoding accuracies were not significantly different, suggesting sound perception and termination detection are linked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 provides quantitative decoding accuracies with appropriate shuffled controls and cross-validation. The statistical comparisons are clearly stated. The inference (C89) about linked perception is reasonable given the similar decoding performance between onset and offset windows (C88), though this interpretation is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "K-means clustering of MGB and AAF neurons reveals distinct temporal response profiles. AAF shows dramatic overrepresentation of onset-offset cells (83.2%) compared to MGB (33.0%), while MGB contains more onset-only cells (40.1% vs 3.2%) and suppressed cells (12.3% vs 0%). This indicates AAF specialization for sound termination processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C101 provide detailed quantitative distributions from clustering analysis with appropriate validation (Davies-Bouldin criterion, Figure 4-supplement 1). The proportions are clearly stated and the anatomical clustering within MGB (C93) is supported by both data and citation. The conclusion (C102) follows logically from the dramatic difference in onset-offset cell proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Antidromic stimulation experiments show that MGB cells projecting to AAF are predominantly onset-offset cells (82%), with smaller proportions of sustained (9%) and onset-only (9%) cells. This indicates offset responses in AAF are mainly inherited from MGB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 describe antidromic identification criteria based on established methods (cited Serkov et al., 1976) with appropriate latency (1-3 ms) and jitter (<0.3 ms) thresholds. The proportions are clearly quantified. However, the conclusion (C106) that offset responses are \"mainly inherited\" is somewhat overstated given that 82% inheritance still allows for 18% de novo generation or other sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "AAF shows significant amplification of offset response dependence on sound duration compared to MGB. In AAF, offset responses increase significantly with duration (\u03c1=0.25, p<0.0001), while MGB shows weak correlation (\u03c1=0.05, p=0.019). This effect is present in both L2/3 and L4, and in both FS and RS neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 provide clear quantitative comparisons with statistical tests. Layer-specific (C110) and cell-type specific (C113) analyses rule out confounds. The correlation values and p-values are reported. However, the MGB correlation, while weak, is still statistically significant (p=0.019), which somewhat complicates the interpretation of \"almost no difference\" stated in C108.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "White noise bursts evoke offset responses in AAF but not in MGB, revealing de novo generation of offset responses in cortex. AAF shows distinct response patterns to WN including bursting activity every ~200 ms and differential involvement of FS vs RS neurons. WN-evoked offset responses do not increase with sound duration in either region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 provide clear evidence for de novo generation with appropriate statistical comparisons (Figure 7c,d). Layer-specific (C120-C121) and cell-type analyses (C123-C125) are thorough. However, the mechanistic explanation (C126) is speculative. The bursting pattern (C129, C134) is descriptive but lacks mechanistic explanation. Claim C132 shows no duration dependence for WN, which is important for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C183"
+    ],
+    "result": "Offset responses encode more than silence, responding to removal of individual frequency components in multifrequency stimuli. Single MGB neurons typically encode removal of 1-2 components, while most AAF neurons encode all component removals. At the population level, both regions encode all three component terminations, but with different patterns (MGB: strongest for final component; AAF: strongest for middle component).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C141 provide clear single-cell and population-level comparisons with statistical significance (Figure 8g,h). The differential encoding patterns between MGB and AAF are well-documented. The inference about broader functional roles (C142, C143, C183) is reasonable but somewhat speculative. The data clearly support that offset responses encode more than just silence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C145"
+    ],
+    "result": "Cortical offset responses are inherited from the periphery, amplified, and generated de novo. This is demonstrated through antidromic identification of MGB-AAF projections, duration-dependent amplification in AAF, and de novo generation for white noise stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim (C5, C145) is supported by the combination of results from antidromic experiments (inheritance), duration dependence studies (amplification), and white noise experiments (de novo generation). Each component is individually well-supported by the data in Figures 4-7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mice were successfully trained on a sound termination detection task using 9 kHz pure tones with variable durations (1, 1.5, 2 s). Training criteria included increased hit rate, decreased reaction time, and significant difference from chance level licking. The task design included randomized durations to prevent timing-based responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 describe the behavioral paradigm with appropriate controls and training criteria. The variable duration design (C53) addresses a potential confound. Learning criteria (C56-C58) are clearly defined with statistical validation shown in supplementary figures. This is standard behavioral methodology appropriately implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C79"
+    ],
+    "result": "Reaction times were significantly longer in laser-on trials compared to laser-off trials for the standard ramp condition, but there was no significant difference in reaction times between fast and slow ramp conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C79 report reaction time measurements with statistical comparisons. The data are shown in Figure 1-supplement 4. These findings support the interpretation that offset response suppression affects detection speed, while ramp speed does not affect reaction time once the task is learned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C162",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Comprehensive controls confirm that fast fall-ramp stimuli evoke genuine offset responses rather than onset responses to spectral splatter artifacts. Controls include acoustic measurements, BF-independent responses, high correlation between fast and slow ramp responses, and differential synaptic suppression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 and C162 provide multiple independent lines of evidence ruling out artifacts. The spectral splatter is quantified (C69: <0.5 ms, 6-30 kHz), BF analysis shows no preferential response (C70), correlation is high (C71: \u03c1=0.71), and synaptic independence is demonstrated (C72). This is thorough experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C165",
+      "C163",
+      "C164"
+    ],
+    "result": "A prominent PV+ network in AAF with strong offset responses could be crucial for evoking duration-dependent offset responses. AAF has more PV+ cells than A1, and the presence of FS interneurons in AAF but not MGB may contribute to functional differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C165 propose a mechanistic hypothesis but acknowledge it is speculative (\"could be\"). While C164 cites evidence for more PV+ cells in AAF, and C113 shows both FS and RS neurons have duration-dependent responses, the causal role of the PV network is not directly tested. This remains a plausible but unproven hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C142",
+      "C143",
+      "C184",
+      "C185"
+    ],
+    "result": "Offset responses have broader functional roles beyond coding silence, including tracking sound duration and detecting changes in frequency and level within temporally discontinuous sounds. This is important for processing speech and vocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C46, C136-C141 provide direct experimental evidence that offset responses encode frequency component changes, not just silence. Claims C44, C107-C109 show duration dependence. The broader functional implications (C7, C48, C49, C143, C184, C185) are reasonable inferences from the data, though some aspects remain speculative regarding speech and vocalization processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C131",
+      "C176",
+      "C177"
+    ],
+    "result": "Proposed mechanisms for differential WN offset responses include: reduced inhibition from decreased FS neuron offset responses leading to enhanced excitatory cell activity, increased pre-offset activity reducing response capacity, and lack of proper inhibition-excitation balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126, C131, C176, C177 propose mechanistic explanations but are explicitly speculative (\"could\", \"could result\"). While the observations they attempt to explain are well-documented (C125, C130), the proposed mechanisms are not directly tested. These remain plausible hypotheses requiring further experimental validation.",
+    "result_type": "MINOR"
+  }
+]

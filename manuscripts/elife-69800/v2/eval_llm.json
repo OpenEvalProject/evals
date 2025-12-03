@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C38",
+      "C39",
+      "C40",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors determined cryo-EM structures of full-length and caspase-cleaved rXKR9 at 3.66 \u00c5 and 4.3 \u00c5 resolution, respectively. The structures reveal that XKR9 is a 43 kDa monomeric protein with a novel fold consisting of two structurally related repeats, each containing four transmembrane helices and a partly membrane-inserted helix (IH1 and IH2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49-C50 document the structural determination with appropriate resolution. Claims C5-C8, C38-C40, C57-C59, C62-C63 describe the architectural features consistently supported by the cryo-EM data shown in Figures 2-4. The novel fold (C80-C81) is well-documented through structural analysis. The use of sybodies to facilitate structure determination is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C82",
+      "C83",
+      "C96"
+    ],
+    "result": "The C-terminus of full-length XKR9 binds to a hydrophobic pocket at the intracellular side, acting as an autoinhibitor. Caspase-3 cleavage releases 16 residues of the C-terminus, exposing the pocket to the cytoplasm without causing large conformational changes (RMSD 0.72 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C70-C75 are directly supported by structural data in Figures 2 and 6, showing the C-terminus binding site and its absence after cleavage. Mass spectrometry confirms cleavage (C11, C41). The autoinhibitory mechanism (C10, C82-C83) is a reasonable inference from the structural data. The minimal conformational change (C75) is quantified and documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C87"
+    ],
+    "result": "Purified rXKR9 showed no scrambling activity in liposome-based assays, regardless of caspase-3 cleavage. The authors suggest this may be due to the absence of an essential cofactor or accessory protein required for activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by experimental data in Figure 1D and supplementary figures showing lack of activity compared to TMEM16F controls. However, the explanation (C45, C87) remains speculative. The negative result is appropriately documented but limits mechanistic conclusions about scramblase function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C46"
+    ],
+    "result": "rXKR9 does not form a complex with basigin, unlike hXKR8 which robustly associates with basigin. This suggests basigin is not an essential interaction partner for rXKR9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by biochemical data in Figure 1E-G showing differential basigin binding between hXKR8 and rXKR9. The in-gel fluorescence and cryo-EM data provide clear evidence. The conclusion that basigin is not essential for rXKR9 (C48) is a reasonable inference, though species-specific differences could exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Caspase-cleaved rXKR9 remains monomeric in detergent solution with no strong evidence of dimerization, contrasting with previous reports for XKR8 and XKR4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by SEC data in Figure 1B showing monomeric elution. However, the authors acknowledge this is in detergent solution, which may not reflect native membrane conditions. The contrast with prior literature (C36-C37) is appropriately noted but the discrepancy is not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C89"
+    ],
+    "result": "Three cavities (C1, C2, C3) of appropriate size to harbor lipids were identified at the protein surface. Bound lipid densities were observed in C1 and C2, but the cavities are predominantly hydrophobic and do not offer obvious polar interactions for lipid headgroups during translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by structural analysis in Figure 5 showing the cavities and bound lipid densities. The hydrophobic character (C69, C89) is documented but renders the mechanism ambiguous. The cluster of basic residues in C2 (C68) is speculative but structurally supported. The lack of clear scramblase features is honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "A cluster of buried acidic residues, particularly in TM3, is strongly conserved among XKR family members assigned as scramblases. The functional role of these residues is unknown but they might influence lipid-headgroup interactions through long-range electrostatic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is supported by structural and sequence analysis in Figure 5E-G. However, claims C91-C92 are explicitly speculative. The authors acknowledge the role is unknown and propose a possible mechanism without experimental validation. The conservation suggests functional importance but the mechanism remains to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The hydrophilic TM3 was not predicted as transmembrane by hydropathy analysis, while IH2 was incorrectly predicted as transmembrane. The structure reveals discrepancies with computational predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by comparison of predictions (Figure 4\u2014figure supplement 1) with the actual structure. This highlights the unusual hydrophilic character of TM3 and the limitations of prediction algorithms for this protein family. The structural data clearly resolves the topology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The general architecture of XKR9 closely resembles the recently reported structure of XKR8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by citation to the XKR8 structure (Sakuragi et al., 2021) and is consistent with the high sequence similarity (C39, 76% identity). This validates the structural findings and suggests the fold is conserved across family members.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Addition of a sybody to increase complex size to 60 kDa was sufficient to obtain high-quality cryo-EM data for the 43 kDa rXKR9 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by the successful structure determination at 3.66 \u00c5 and 4.3 \u00c5 resolution. The methodological approach using synthetic nanobodies is well-documented and represents a useful strategy for small membrane proteins. The quality of the maps validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Caspase-3 treatment results in complete cleavage of the C-terminus of rXKR9, confirmed by mass spectrometry showing the predicted molecular weight reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by mass spectrometry data (Figure 1\u2014figure supplement 2D) showing the expected molecular weight of 41,614 Da for cleaved protein. SDS-PAGE also shows the shift (Figure 1C). The cleavage is complete and specific as expected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C76"
+    ],
+    "result": "No large conformational rearrangements were observed upon caspase cleavage in the cryo-EM structures. The authors suggest that conformational changes might be prevented by the bound sybody or absence of accessory factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by structural comparison (Figure 6B, RMSD 0.72 \u00c5). However, claims C86 and C76 are appropriately cautious speculations about why larger changes might not be observed. The authors acknowledge this limitation and do not overinterpret the static structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The detergent micelle surrounding rXKR9 does not show clear evidence of membrane distortion, unlike fungal TMEM16 scramblases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by visual inspection of the cryo-EM density (Figure 2\u2014figure supplement 4A,C) and comparison to TMEM16 literature. This negative observation is relevant for understanding the scramblase mechanism but may be influenced by the detergent environment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The authors note that opsins function as scramblases without obvious structural features, and that fungal TMEM16 hallmarks are not displayed in TMEM16F structures, providing context for the lack of clear scramblase features in XKR9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by appropriate citations and provide important context. This demonstrates that the absence of obvious scramblase features in XKR9 does not preclude function, as precedents exist in other scramblase families.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The introduction provides established background on lipid asymmetry, scramblases, and the XKR family, including their role in apoptosis, activation by caspases, and association with accessory proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 represent background knowledge appropriately cited from the literature. These establish the biological context and prior work on XKR proteins, TMEM16 scramblases, and apoptotic signaling. The citations appear appropriate and the knowledge claims are standard in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "The study defined the architecture of XKR9 and provided initial insight into caspase activation. The authors propose multiple possible activation mechanisms including conformational changes, dimerization, or binding of interaction partners, which could work in concert.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 accurately summarizes the contributions. Claims C97-C98 are explicitly presented as speculative scenarios for future investigation, appropriately acknowledging the limitations of the current work. The authors do not overstate their conclusions and identify clear directions for follow-up studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The rXKR9-sybody complex dimensions and surface properties were characterized, including overall size (80 \u00c5 high, 40\u00d735 \u00c5 in membrane plane), minimal extracellular extension, absence of glycosylation sites, and sybody binding interface (1466 \u00c5\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 provide quantitative structural details supported by the cryo-EM structures. These measurements are straightforward to derive from the atomic models and are consistent with the reported resolution and quality of the maps.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1335 @@
+{
+  "submission": {
+    "id": "1eb83b91-a12c-406f-8326-b0db05a0280b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:03:16.659401Z",
+    "updated_at": "2025-12-03T15:03:16.659401Z"
+  },
+  "content": [
+    {
+      "id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "submission_id": "1eb83b91-a12c-406f-8326-b0db05a0280b",
+      "content_type": "manuscript",
+      "content_text": "# Defining hierarchical protein interaction networks from spectral analysis of bacterial proteomes\n\n## Authors\n\n- Mark A Zaydman<sup>1</sup> ([ORCID: 0000-0002-4236-1459](https://orcid.org/0000-0002-4236-1459)) \u2020\n- Alexander S Little<sup>2</sup>\n- Fidel Haro<sup>2</sup>\n- Valeryia Aksianiuk<sup>2</sup>\n- William J Buchser<sup>3</sup>\n- Aaron DiAntonio<sup>4</sup> ([ORCID: 0000-0002-7262-0968](https://orcid.org/0000-0002-7262-0968))\n- Jeffrey I Gordon<sup>1</sup> ([ORCID: 0000-0001-8304-3548](https://orcid.org/0000-0001-8304-3548))\n- Jeffrey Milbrandt<sup>3</sup>\n- Arjun S Raman<sup>2</sup> ([ORCID: 0000-0002-0070-1953](https://orcid.org/0000-0002-0070-1953)) \u2020\n\n### Affiliations\n\n1. Department of Pathology and Immunology, Washington University School of Medicine St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n2. Duchossois Family Institute, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n3. Department of Genetics, Washington University School of Medicine St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n4. Department of Developmental Biology, Washington University School of Medicine St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n5. The Edison Family Center for Genome Sciences and Systems Biology, Washington University School of Medicine St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n6. Department of Pathology, University of Chicago, Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n7. Center for the Physics of Evolving Systems, University of Chicago, Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCellular behaviors emerge from layers of molecular interactions: proteins interact to form complexes, pathways, and phenotypes. We show that hierarchical networks of protein interactions can be defined from the statistical pattern of proteome variation measured across thousands of diverse bacteria and that these networks reflect the emergence of complex bacterial phenotypes. Our results are validated through gene-set enrichment analysis and comparison to existing experimentally derived databases. We demonstrate the biological utility of our approach by creating a model of motility in Pseudomonas aeruginosa and using it to identify a protein that affects pilus-mediated motility. Our method, SCALES (Spectral Correlation Analysis of Layered Evolutionary Signals), may be useful for interrogating genotype-phenotype relationships in bacteria.\n\n## Introduction\n\nA fundamental problem in biology is to understand how proteins interact to create a complex phenotype (Barab\u00e1si and Oltvai, 2004; Chuang et al., 2010; Hartwell et al., 1999; Costanzo et al., 2016). Biochemical and genetic studies have illustrated that complex behaviors emerge from layers of protein interactions: proteins interact to form complexes, complexes interact to form pathways, and pathways interact to create phenotypes (Papin et al., 2004; Ravasz, 2009; Nurse, 2008). Current strategies for identifying protein-protein interactions (PPIs) span both experiment and computation. Experimental methods are rapidly becoming more high-throughput and comprehensive (Rajagopala et al., 2014; Schoenrock et al., 2017; H\u00e4user et al., 2014; Koo et al., 2017; Luck et al., 2017). Computational methods based on statistical patterns of co-occurrence or co-proximity of functionally related genes first appeared shortly after publication of whole genome sequences and are an active area of research (Eisen, 2017; Pellegrini et al., 2017; Enright et al., 2017; Valencia and Pazos, 2002). More recent efforts have advanced the state-of-the-art in computational methods by incorporating evolutionary models (phylogenomics), interaction models borrowed from statistical physics, or spectral methods borrowed from signal processing (Nagy et al., 2020; Franceschini et al., 2016; Moi et al., 2020; Croce et al., 2019; Cong et al., 2019; Green et al., 2021).\n\nUnderstanding how a phenotype emerges from a collection of proteins requires the ability to relate different \u2018scales\u2019 of interactions, from pairwise to higher-order. While higher-order interactions can be inferred from pairwise interactions, recent experimental evidence shows that such inferences are incomplete (Kuzmin et al., 2018). Using bacteria as a model, here we show that both pairwise and higher-order interactions can be extracted from coevolutionary statistics to create a single multi-scale hierarchical model describing the emergence of complex phenotypes.\n\n## Results\n\n### Global patterns of covariation between bacterial orthologs arise from phylogeny\n\nThe power of using the kingdom bacteria as a model for evolutionary analysis is the availability of thousands of high-quality proteomes originating from diverse organisms. To broadly sample extant bacterial diversity, we downloaded all bacterial proteomes from the UniProt Reference Proteome Database (UniProt Consortium, 2019; downloaded May 20, 2020). Each proteome was annotated using orthologous gene groups (OGGs)\u2014a robust and computationally tractable way of inferring orthologs\u2014and rare OGGs present in less than 1% of proteomes were filtered (Overbeek et al., 1999). The resulting data matrix, DOGG, consisted of 7047 proteomes (rows) and 10,177 OGGs (columns), where each entry is the number of times an OGG was observed in a proteome (Figure 1A, Materials and methods; Huerta-Cepas et al., 2017; Huerta-Cepas et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig1-v2.jpg)\n\n**Figure 1.:** (A) DOGG. Rows are 7047 bacterial proteomes, columns are 10,177 orthologous gene groups (OGGs), entries are the number of annotations of an OGG within a bacterial proteome (Figure 1\u2014source data 1). (B) Percent variance explained versus spectral component (singular value decomposition [\u2018SVD] component\u2019) number; fit is to a power-law distribution with the indicated exponent (\u03b3). (C) Contributions of bacterial proteomes (colored dots) onto SVD components 1 through 4 (percent variance indicated in parenthesis on axis labels). Dots are colored according to phylum designation (color key).\n\nTo explore the structure of ortholog covariation across bacteria, we analyzed DOGG using a technique called singular value decomposition (SVD), a generalized form of principal components analysis (PCA; Klema and Laub, 1980). SVD defines a spectrum of components of covariation (an \u2018SVD spectrum\u2019) where component 1 (SVD1) explains more data variance than any other component, SVD2 the second most, and so on (Figure 1B). We observed that bacteria sharing the same phylum clustered together on SVD1 through SVD4 suggesting that the most dominant patterns of bacterial variation arise from phylogeny (Figure 1C). These observations are consistent with prior reports that strong phylogenetic signals confound PPI inference using comparative genomics (Sch\u00e4fer and Strimmer, 2005; Sul et al., 2018). Taken together, SVD1 to SVD4 explained only 17% of the overall data variance, motivating us to ask what information lies in the remaining data variance\u2014more phylogenetic signal, functional signal, or noise?\n\n### Global to local patterns of bacterial covariation progressively reveal phylogeny, pathways, and protein complexes\n\nWe analyzed the SVD spectrum for information regarding (i) phylogeny, (ii) indirect interactions between proteins reflecting biological pathways, and (iii) direct (physical) interactions between proteins reflecting protein complexes. The workflow for our analysis was as follows. SVD applied to DOGG output three separate matrices: bacterial projections onto left-singular vectors (UOGG), a set of singular values, and OGG projections onto right-singular vectors (VOGG; Figure 2A). We determined the statistical similarity of two bacterial proteomes across the SVD spectrum by dividing UOGG into five-component spectral windows and computing the correlated SVD projections (\u2018spectral correlations\u2019) for all pairs of proteomes within a spectral window (Figure 2B and C). We determined the extent to which two proteins in a proteome statistically interact across the SVD spectrum by (i) approximating projections of proteins onto right-singular vectors by averaging their constituent OGG content to create Vprotein, (ii) dividing Vprotein into five-component spectral windows, and (iii) computing protein-protein spectral correlations (Figure 2\u2014figure supplement 1, Figure 2D and E). We then measured the information shared between spectral correlations and the three categories of biological benchmarks using mutual information (MI) and boostrap statistical support (Figure 2F; Materials and methods). For an estimation of the background MI attributed to finite sampling, we shuffled the SVD projections by random permutation across a row of VOGG or UOGG and computed the MI of the shuffled projections with the benchmark (Figure 2\u2014figure supplement 2). This operation maintained the distribution of SVD projections while destroying spectral correlations arising from biology, thereby providing a null expectation for MI arising solely from sampling constraints. Collections of biological benchmarks were created from curating publicly available databases and previously published results (Materials and methods) (NCBI Resource Coordinators, 2018; Szklarczyk et al., 2019; Gene Ontology Consortium, 2021; Keseler et al., 2017; Cong et al., 2019). We focused our analysis of protein interactions on the proteome of Escherichia coli K12 because of the wealth of existing data regarding indirect and direct PPIs for this organism.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig2-v2.jpg)\n\n**Figure 2.:** (A) Singular value decomposition (SVD) performed on DOGG yields UOGG (rows are proteomes, columns are \u2018left singular vectors\u2019 [LSVs]) and VOGG (columns are OGGs, rows are \u2018right singular vectors\u2019 [RSVs]). UOGG is used to relate information in the SVD spectrum with phylogenetic benchmarks. VOGG is used to relate information in the SVD spectrum with protein interaction benchmarks. (B,C) Spectral correlations between bacterial proteomes are calculated by defining spectral windows of five LSVs each (panel A) and computing correlated projections between proteomes across all spectral windows (panel B). (D,E) Spectral correlations between proteins within a proteome are calculated by (i) approximating the projections of proteins onto RSVs, (ii) defining spectral windows of five RSVs each (panel C), and (iii) computing correlated projections between proteins across all spectral windows (panel D). (F) The final step is to compute the information shared between spectral correlations and biological benchmarks of phylogenetic relationships (left panel) or protein interactions (right panel). Shown are example distributions of spectral correlations that have \u2018high\u2019 and \u2018low\u2019 amounts of MI with a benchmark.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Shown here is an example of computing protein-protein spectral correlations using ArgA and ArgH in Escherichia coli K12. (A,B) The orthologous gene group (OGG) structures of E. coli K12 ArgA (panel A) and ArgH (panel B). (C,D) The projections ($\u0393$) of the OGGs encoded in ArgA (COG0548 and COG1246) (panel C) and ArgH (COG0165) (panel D) onto SVD1 to SVD200 of the SVD (singular value decomposition) spectrum. (E,F) The approximated projections ($\u03a9$) of ArgA (panel E) and ArgH (panel F) derived by averaging the projections for the OGGs encoded within each protein. (G) Overlay of the approximated protein projections of ArgA and ArgH. These two proteins project similarly across SVD1 to SVD200 resulting in a positive spectral correlation value (Pearson correlation value shown).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (Top) Mdata consists of contributions of six variables (rows) onto six singular value decomposition (SVD) components (columns). If the variables correspond to the rows or columns of DOGG, the initial data matrix, Mdata corresponds to the UOGG or VOGG matrices produced by application of SVD to DOGG, respectively. Mdata is windowed to components 1\u20135. Next Pearson correlations are computed between all pairs of variables to produce the spectral correlation matrix Cdata1:5. The MI shared between Cdata1:5 and a benchmark reflects the degree to which the distribution of spectral correlation values in SVD1 to SVD5 differs for variable pairs that share the benchmark (\u2018Benchmark positive\u2019) and variable pairs that do not share the benchmark (\u2018Benchmark negative\u2019). (Bottom) To estimate the MI produced by spurious spectral correlations (i.e. \u2018background MI\u2019), Mdata is subjected to random row permutation to generate Mshuffled. This process maintains the distribution of spectral contributions for each variable but erases non-random spectral correlations leaving only random correlations produced by finite sampling. Mshuffled is subjected to the identical windowing, row correlation computation, and MI calculations as described above forMdata. We compute the biologically meaningful MI as the difference between the MI for Cdata1:5 and Cshuffled1:5.\n\nWe found that the information for the different types of benchmarks was distributed distinctly across the SVD spectrum. The top tens of components contained phylogenetic information, the top hundreds contained indirect PPI information, and the top thousands contained direct PPI information (Figure 3A). Even SVD components 2996 through 3000 harboring 0.025% data variance contain non-random biological information reflecting direct PPIs (Figure 3B). Beyond component 3000, the MI shared between protein spectral correlations and PPIs converged to the estimation of background MI. Comparing the relative distributions of these different types of information across the SVD spectrum, we observed an order of phylum, class, order, family, genus, indirect PPIs, mixed indirect/direct PPIs, and direct PPIs (Figure 3C, Materials and methods). The ordering of these distributions across the SVD spectrum was robust to subsampling DOGG to account for uneven phylogenetic distributions of bacterial strains in the UniProt database (Figure 3\u2014figure supplement 1). These results show that global to local patterns of bacterial covariation reflect an intuitive hierarchy of biological scale\u2014phylogeny, pathway, protein complex.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig3-v2.jpg)\n\n**Figure 3.:** (A) Distribution of information (y-axis, \u2018mutual information [MI] density\u2019) for each benchmark (see legend) measured across the singular value decomposition (SVD) spectrum (x-axis, \u2018spectral position\u2019). Gray line in each plot is the distribution of background MI (see Figure 2\u2014figure supplement 2). Lines and shaded contours represent the mean\u00b12 standard deviations for bootstraps of each benchmark. (B) Information shared between three benchmarks of direct protein-protein interactions (PPIs) (x-axis) and spectral correlations computed across SVD2996 to SVD3000. Each dot is the MI value for a single bootstrap of the indicated benchmark. Colored dots are non-random MI, gray dots are MI values for background spectral correlations. Values of statistical significance are shown above each distribution (p-value, Student\u2019s t-test). (C) The degree to which information within the SVD spectrum reflects a biological benchmark, reported by the \u2018cumulative density of MI\u2019 (y-axis). As a curve for a benchmark approaches a value of \u20181\u2019, deeper spectral components contain progressively less information regarding the benchmark. Colors follow those of panel A. Shaded regions are \u00b12 standard deviations of the mean MI value.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Histogram of the number of proteomes belonging to each of the top 15 out of a total 116 phyla in the data matrix DOGG. Inset is the four most abundant phyla. (B) Percent variance versus component number is plotted for the singular value decomposition (SVD) spectra of the initial data matrix DOGG and a \u2018down-sampled\u2019 version where the top four phyla were randomly subsampled to 50% their initial representation. (C) Distribution of information (y-axis, \u2018cumulative MI density\u2019) for each benchmark measured across the SVD spectrum of the down-sampled matrix (x-axis, \u2018spectral position\u2019). Gray line in each plot is the background MI. Lines and shaded contours represent mean \u00b12 standard deviations across 10 bootstraps of each benchmark. (D) Cumulative mutual information (MI) density for each benchmark across the SVD spectrum of the down-sampled matrix. Colors follow those of panel C. Lines and shaded contours represent mean \u00b12 standard deviations across 10 bootstraps of each benchmark.\n\n### A statistical approach for predicting the organization of emergent phenotype\n\nGiven the results shown in Figure 3, we hypothesized that by relating deep and shallow SVD components, we could create a statistical representation of emergence\u2014the integration of local scales of protein interactions into global scales reflecting collective biological functions. Operationally, the way we related statistical information across shallow and deeper SVD components involved five steps. First, we removed SVD components enriched for phylogenetic signal and noise (components 1\u201333 and 3001\u20137047) (Figure 4A). Second, we computed spectral correlations between all proteins in a proteome across the remaining components (Figure 4B). Third, we removed spurious spectral correlations by developing a model of statistical significance. The model defined an optimal spectral window of 100 components for computing spectral correlations as well as a threshold for what constitutes \u2018statistically significant\u2019 spectral correlations (Figure 4\u2014figure supplement 1, Materials and methods). Fourth, we defined the position in the SVD spectrum at which the spectral correlation between two proteins first dropped below the significance threshold; we term this position the \u2018spectral depth\u2019 of correlation between two proteins. Fifth, we discard all spectral correlations, significant or not, deeper than the spectral depth (Figure 4C). The effect of the last step is to condition spectral correlations found in deep regions of the SVD spectrum upon those found in shallow regions. Our rationale was that for a local interaction, like that in a protein complex, to contribute to a biological hierarchy, it must also contribute to a more global interaction network like a pathway.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig4-v2.jpg)\n\n**Figure 4.:** (A) Spectral components enriched for indirect and direct protein interactions (25th to 75th interquartile range of cumulative mutual information [MI] density) are selected, thereby filtering components enriched for phylogeny and noise. (B) Spectral correlations are computed for all pairs of proteins within a proteome; spurious spectral correlations introduced by finite sampling are filtered. Plotted here are spectral correlations (y-axis) as a function of spectral position (x-axis) for two pairs of proteins in Escherichia coli K12: MotA-MotB and MotA-CheR. Dashed line reflects the threshold defining statistically significant spectral correlations. (C) \u2018Spectral depth\u2019 is the spectral position at which the correlation value first reaches the threshold of statistical significance. Spectral depths of MotA-MotB and MotA-CheR are shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Cumulative distribution functions (cdfs) for spectral correlations between all proteins in Escherichia coli K12 across windows of different widths (legend) centered on SVD component 1001. (B) Variance of the distributions in panel A plotted versus window width. Vertical line indicates a window width of 100 components. (C) Cdfs for spectral correlations between all protein pairs in E. coli K12 across the different 100-component spectral windows (legend). (D) Cdfs for spectral correlations for all proteins in proteomes from diverse organisms (legend) across the 100-component window centered on SVD component 84. (E) p-Value versus correlation threshold for spectral correlations between proteins in E. coli K12 across components enriched for protein-protein interaction (PPI) information: SVD34 to SVD134. The chosen correlation threshold (0.29) is associated with a p-value of 0.018. SVD, singular value decomposition.\n\nFollowing this five-step approach, we attempted to statistically re-derive the pathway of directed motility in E. coli K12. We chose to study this pathway because (i) there is a wealth of previous biological data regarding its constituent parts and interactions and (ii) it is an illustrative example of a global phenotype that emerges from several layers of protein interactions. From the KEGG hierarchy of directed motility in E. coli K12 (KEGG hierarchy, BRITE ECO:02035), there are three levels of molecular interactions. At the lowest levels, physical interactions between proteins create small units of collective structure and function, such as a basal body, rod, ring, motor, and filament. Integration of these structures and their individual functions produces the flagellum, a machine that turns to move the cell. Integration of the flagellum and the chemotaxis system produces directed motility\u2014the ability to move purposefully along a chemical gradient. We used the flagellar filament, FliC, as a \u2018bait\u2019 for identifying spectrally correlated proteins in E. coli K12 putatively related to motility. Aside from this, no other biological knowledge was used: that is, no information regarding components or interactions producing complexes or collective structures contributing to directed motility. We found that 75 proteins were spectrally correlated with FliC (Figure 5A). We computed the spectral depth across all pairs of proteins (Figure 5B). We observed that the pattern of spectral depths was heterogeneous: a majority of protein pairs exhibited shallow spectral depths while sparse groups of proteins exhibited deeper spectral depths (Figure 5B). To depict the structure of spectral depths across all pairs of proteins, we thresholded spectral depth at three different levels: 50, 300, and 1000. These thresholds were chosen to reflect areas of the SVD spectrum found to be enriched for different types of biological information per Figure 3C. If two proteins had a spectral depth deeper than the threshold, they were considered to \u2018statistically interact\u2019 (Figure 5C, Supplementary file 1). Network graphs at each thresholded spectral depth were created where nodes are proteins and edges between nodes represent a statistically significant spectral correlation between two proteins.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig5-v2.jpg)\n\n**Figure 5.:** (A) Proteins that shared significant spectral correlations with FliC after filtering for phylogeny and noise. (B) Hierarchically clustered spectral depth matrix for all pairs of proteins in panel A. (C) Set of matrices derived from thresholding the spectral depth matrix. Red pixels indicate that two proteins have a spectral depth deeper than the indicated threshold and therefore \u2018statistically interact\u2019. White pixels indicate that two proteins have a spectral depth of interaction shallower than the indicated threshold and therefore do not statistically interact.\n\nAt a spectral depth of 50, we observed a single densely connected network devoid of obvious substructure (Figure 6A, top panel). Gene-set enrichment analysis (GSEA) indicated that this network was enriched for functional terms related to \u2018flagellar system\u2019 (p<10\u201345; Huang et al., 2009a; Huang et al., 2009b, Materials and methods). Progressing to spectral depth of 300, we observed that the network at 50 fractured into four discrete subnetworks (Figure 6A, middle panel). These subnetworks were significantly enriched for terms related to \u2018chemotaxis signaling\u2019 (p<10\u201315), \u2018flagellum\u2019 (p<10\u201356), \u2018LPS biosynthesis\u2019 (p<10\u20133), or \u2018cyclic di-GMP signaling\u2019 (p<10\u201321). Progressing to spectral depth of 1000, the subnetworks at 300 fractured further yielding 9 discrete subnetworks. Each subnetwork was significantly enriched for terms related to a specific function such as \u2018cyclic di-GMP catabolism\u2019 (p<10\u201325) and \u2018cyclic di-GMP synthesis\u2019 (p<10\u201313) or \u2018chemotransmission\u2019 (p<10\u20134) and \u2018chemoreception\u2019 (p<10\u201312 ; Figure 6A, bottom panel). Notably, considering additional spectral depths revealed further details of relevant hierarchical functional relationships within this pathway (Figure 6\u2014figure supplement 1). Taken together the three network diagrams derived at spectral depths 50, 300, and 1000 depict a hierarchy of structure and function. Subnetworks observed at deeper spectral depths integrate to form the subnetworks observed at shallower spectral depths. As the subnetworks coalesced, the p-value associated with GSEA remained highly significant while the ontology of the significantly enriched terms changed. We interpret these observations to mean that as we ascend the statistical hierarchy, collective structures corresponding to new biological functions emerge from the integration of functional units at lower levels.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig6-v2.jpg)\n\n**Figure 6.:** (A) Statistical interaction networks defined at spectral depths 50 (top), 300 (middle), and 1000 (bottom). Nodes (yellow circles) are proteins; edges (red lines) reflect statistical interactions between proteins; contours are drawn around groups of connected proteins; assignment of function associated with contours is based on gene-set enrichment analysis (GSEA) with p-value of most-enriched GSEA term in parenthesis (Supplementary file 1). (B) Comparison of the statistically derived model (left) to the KEGG model (BR:eco02035, right) of E. coli K12 motility. Venn diagrams represent the overlap between the sets of proteins in the indicated subnetwork of panel A (left) and the indicated KEGG category (right).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Nodes, edges, and contours are defined in the same manner as described in Figure 6A.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Statistical interaction networks defined by thresholding spectral depth at 50 (top panel), 300 (middle panel), and 1000 (bottom panel) (Supplementary file 2). Nodes, edges, and contours are defined in the same manner as described in Figure 6A. (B) Comparison of the statistically derived model using MotB (left) to the KEGG model (BR:eco02035, right) of E. coli K12 motility. (C) Number of statistically identified proteins found in KEGG, in existing literature, and putative novel effectors.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Statistical interaction networks defined by thresholding spectral depth at 50 (top panel), 300 (middle panel), and 1000 (bottom panel; Supplementary file 3). Nodes, edges, and contours are defined in the same manner as described in Figure 6A. (B) Comparison of the statistically derived model using Hag (left) to the KEGG model (BR:bsu02035, right) of B. subtilis 168 motility. (C) Number of statistically identified proteins found in KEGG, in existing literature, and putative novel effectors.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A) Statistical interaction networks defined by thresholding spectral depth at 300 and 1000. Nodes, edges, and contours are defined in the same manner as described in Figure 6\u2014figure supplement 1, Supplementary file 4.\n\nTo validate our statistical model of motility, we compared it to the experimentally derived model of E. coli K12 motility detailed within the KEGG database (BR:eco02035; Kanehisa and Goto, 2000; Kanehisa, 2019; Kanehisa et al., 2021; Figure 6B). The two models were similar in several ways. First, 44 of 55 of the proteins listed in the KEGG hierarchy also appeared in the statistical hierarchy. Second, 7 of the 12 categories listed in the KEGG hierarchy had a one-to-one correspondence with a subnetwork of the statistical model sharing an overlapping set of proteins and similar descriptive label. Finally, both hierarchies shared a conserved architecture consisting of the integration of chemoreception and chemotransmission into chemotaxis signaling, the integration of flagellar substructures into the flagellum, and at the most global level the integration of chemotaxis and the flagellum. The most striking difference was that our statistical hierarchy included subnetworks related to cyclic-di-GMP signaling and LPS biosynthesis which were absent from the KEGG hierarchy. Prior experimental studies have provided direct genetic evidence that these systems are involved in E. coli K12 motility (Paul et al., 2010; Walker et al., 2004). Overall, of the 75 proteins in our hierarchical model of E. coli K12 motility, 44 (59%) were represented in the KEGG hierarchy, 28 (37%) were missing from the KEGG hierarchy but supported by prior experimental evidence in the literature, and only 3 (4%) remained unvalidated (CsgG, PpdD, TorS; Supplementary file 1). Taken together, these results illustrate that our approach for extracting a hierarchy of spectral correlations from the SVD spectrum produced a valid multi-scale, hierarchical model of directed motility in E. coli K12.\n\nWe performed four additional analyses to test the robustness and generalizability of our approach. First, we produced a hierarchical model of motility in E. coli K12 using MotB, the flagellar motor protein, as a query. We found a similar architecture as observed using FliC as the query with chemotaxis signaling, flagellum, and cyclic-di-GMP signaling modules appearing at spectral depth 300, and more fine-grained subnetworks appearing in deeper layers (Figure 6\u2014figure supplement 2Supplementary file 2). To test generalizability across different bacteria, we created a model of motility in Bacillus subtilis 168 using its flagellar filament protein as a query (Hag). This analysis again produced a hierarchical model of motility that (i) recapitulated the corresponding KEGG hierarchy, (ii) identified proteins missing from the KEGG hierarchy that are known effectors of B. subtilis motility, and (iii) identified a small number of putative motility effectors (Figure 6\u2014figure supplement 3Supplementary file 3). Next, we tested if our method could generalize to non-physically coupled pathways. We produced a model of amino acid metabolism in E. coli K12 using the query protein HisG, an enzyme involved in histidine biosynthesis. The resultant hierarchical model identified 130 proteins that were densely connected at spectral depth of 50. Progressing to deeper spectral depths revealed modules corresponding to specific functions, such as amino acid and nucleotide biosynthesis. At yet deeper spectral depths, modules enriched for proteins involved in the synthesis of specific amino acids became evident (Figure 6\u2014figure supplement 4Supplementary file 4). Taken together, these analyses demonstrated that our approach of defining a hierarchy of spectral correlations produced valid hierarchical models of biological pathways across different query proteins, organisms, and pathways.\n\n### Inferring functions for an uncharacterized protein from a model of emergent organization\n\nWe hypothesized that our statistical models could be used to assign general and specific functions to previously uncharacterized proteins in bacteria. To test this idea, we applied our approach to Pseudomonas aeruginosa, an organism with many uncharacterized proteins. We defined a hierarchical protein interaction network using PilA, a core structural element of the pilus, as a query; 141 proteins were spectrally correlated with PilA. At a spectral depth of 50, these proteins were found to collectively associate with motility of P. aeruginosa (Figure 7\u2014figure supplement 1ASupplementary file 5; Burrows, 2004). Progressing to the spectral depth of 300, the global structure fractured into subnetworks associated with specific functions. Two major subnetworks related to specific types of motility, \u2018pilus motility\u2019 (p<10\u201317) and \u2018bacterial flagellum\u2019 (p<10\u201321), were evident, consistent with the ability of P. aeruginosa to use pilus or flagellar-based mechanisms of movement (Kearns et al., 2004; Rashid and Kornberg, 2004; Figure 7A, Figure 7\u2014figure supplement 1B). Four uncharacterized proteins (Q9I5G6, Q9I5R2, Q9I0G2, Q9I0G1) were included in the pilus subnetwork that had not previously been associated with PilA in P. aeruginosa (Figure 7BSupplementary file 6). Our hierarchical models suggested that these proteins may contribute to the general function of directed motility by affecting the specific function of pilus-based motility but not flagellar-based motility.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig7-v2.jpg)\n\n**Figure 7.:** (A) Statistical network derived by applying a spectral depth threshold of 300 to the set of 141 protein in P. aeruginosa (strain PAO1) that were significantly correlated with PilA across SVD34 to SVD134 (see Figure 7\u2014figure supplement 1). Nodes, edges, shaded contours, gene-set enrichment analysis (GSEA) enrichment terms, and p-values are defined in the same manner as in Figure 6A. (B) The pilus motility subnetwork from panel A. Nodes representing PilA and Q9I5G6 are colored blue and green, respectively. (C) Time-course of pilus-based motility for parent (WT), two transposon mutants of Q9I5G6 (Tn(1) Q9I5G6, Tn(2) Q9I5G6), and transposon mutants complemented with Q9I5G6 (Tn(1) Q9I5G6+Q9I5G6, Tn(2) Q9I5G6+Q9I5G6). Inset shows results of flagellar motility for the parent strain (WT), and the two transposon mutants of Q9I5G6 (Tn(1), Tn(2)) 24 hr post-inoculation. Representative images of the crystal-violet stained plates are shown. SVD, singular value decomposition.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Statistical interaction network defined by thresholding spectral depth at 50. The inset illustrates significantly enriched terms resulting from gene-set enrichment analysis (GSEA) of the entire network. (B) Statistical interaction network defined by thresholding spectral depth at 300 (Supplementary file 5). Nodes, edges, shaded contours, GSEA enrichment terms, and p-values are defined in the same manner as in Figure 6A.\n\nTo test these predictions, we assayed single-gene transposon mutants of P. aeruginosa (PAO1) for twitch-based motility mediated by the pilus or flagellar-based motility (Materials and methods) (Kearns et al., 2004; Rashid and Kornberg, 2004; Little et al., 2018). Transposon mutants of Q9I5R2, Q9I0G2, and Q9I0G1 exhibited motility that was not significantly different from the parent strain in both assays (Supplementary file 7). In contrast, we found that two different transposon mutants of Q9I5G6 exhibited significantly reduced pilus-based motility over 24, 48, and 72 hr compared to the parent strain (Figure 7C, p<10\u20134 by Dunnett\u2019s multiple comparisons test). This phenotype resembled that of a knockout strain of PilA and was reversed upon trans-complementation. In contrast, flagellar-based motility of the transposon mutants in Q9I5G6 was not significantly different from that of the parent strain (Figure 7C\u2014inset, p>0.05). These results illustrate that Q9I5G6 is a previously unappreciated effector of directed motility in P. aeruginosa that specifically impacts twitch-based motility. Compared to the background expectation of finding a protein that affects twitch motility (22 \u2018pilus assembly proteins\u2019 in BRITE KO02035 out of 5564 proteins in the PAO1 proteome equating to a 0.4% background rate of association), our experimental results represent a statistically significant enrichment (25% association rate, p<10\u20134 by chi-squared). Moreover, the results of our statistical approach shown in Figure 7B illustrate a far higher enrichment of functional association with identifying 19 effectors of twitch motility out of 22 proteins in the \u2018pilus motility module\u2019. Overall, these experiments provide a proof of concept of how our hierarchical models may aid in discovering novel genotype-phenotype relationships.\n\n### Using spectral correlations to predict proteome-wide functional and physical protein interaction networks\n\nMicrobiome science has taught us that diverse bacteria affect human and environmental health. Therefore, there is a critical need to expand our knowledge of biology more broadly beyond the few well-studied model organisms. Comparative genomics has been critical to inferring functionally relevant interaction networks in newly sequenced organisms. However, these methods are limited in their ability to isolate functional and physical interaction networks from each other as well as from the admixed phylogenetic signal and noise due to finite sampling (Sch\u00e4fer and Strimmer, 2005; Sul et al., 2018; Nagy et al., 2020). Our spectral approach offers a unique opportunity to isolate interactions arising at a specific biological scale. We hypothesized that spectral correlations could be used to accurately predict proteome-wide functional and physical interaction networks across diverse bacteria.\n\nTo test this hypothesis, we classified all possible pairs of proteins in the E. coli K12 proteome as functionally interacting (indirect PPI), physically interacting (direct PPI), or not-interacting (Materials and methods). These predictions were based on protein-protein spectral correlations across three different spectral windows chosen to isolate phylogenetic, indirect PPI, and direct PPI information, respectively (Figure 8\u2014figure supplement 1). For comparison, we predicted the same interaction classes using quantitative features of various existing computational and experimental methods. To compare the various methods, we computed F-scores for each interaction class using a composite gold-standard benchmark as well as three individual database-wide benchmarks (Figure 8\u2014figure supplement 2; Rajagopala et al., 2014; Babu et al., 2014; Babu et al., 2018; Hu et al., 2009). F-score is the harmonic mean of precision and recall; to achieve an F-score of 1, the predictions must be both accurate and complete.\n\nWe found that our predictions based on windowed spectral correlations produced significantly greater F-scores for all three interaction classes compared to 18 alternative methods in all four validation tasks (Figure 8A, Figure 8\u2014figure supplement 3, statistical comparisons by Wilcoxon rank-sum test). Of the alternative methods tested, the most mathematically similar to ours is SVD-phy (Franceschini et al., 2016). SVD-phy is a PCA-based approach that also uses SVD but assumes that only the top (most global) components are useful for predicting PPIs. In contrast our approach to selecting specific SVD components is data-driven, guided by the results shown in Figure 3C. We found that the performance of SVD-phy depended on how many of the top components were retained. Including the most shallow SVD components yielded predictions at or below the median rank of all methods across all three interaction classes. Including the shallowest 100 SVD components yielded better indirect PPI prediction without improvement of predicting direct PPIs. Including components beyond SVD100 improved the prediction of direct PPIs while decreasing F-scores for indirect PPIs. These results show that SVD-phy can be tuned for predicting either indirect or direct interactions, but not both simultaneously. In addition, the tuned performance on either class was inferior compared to our method of windowed spectral correlations.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig8-v2.jpg)\n\n**Figure 8.:** See Figure 8\u2014figure supplement 1 for definition of \u2018MIWSCs\u2019. (A) F-scores for predicting interaction classes for Escherichia coli K12 protein pairs using random forest (RF) models trained on MIWSCs or features from several different methods (see legend). Violin plots show distribution of F-scores for models trained and validated on 50 random partitions of the gold-standard dataset. Numbering indicates the rank of the median F-score for models trained on each feature (Figure 8\u2014source data 1). (B) Precision (left) and recall (right) for predictions of any (indirect or direct), direct, or indirect PPIs in 12 bacteria using RF models trained on the MIWSCs of E. coli K12 proteins benchmarked against the experimentally supported PPIs in the STRING database (experimental score > 0). Comparisons are made to a set of 10,000 randomly selected pairs and to the \u2018medium confidence\u2019 predictions (score > 400) in the STRING database subchannels for GC, GN, and GF. Vertical dashed line indicates the median value for the best performing method. ** in legend indicates an organism that was not part of the input dataset DOGG (Figure 8\u2014source data 1). (C) Precision-recall curves were constructed for the methods of GC, GN, GF by thresholding the subchannel scores at 150 (\u2018low confidence\u2019), 400 (\u2018medium confidence\u2019), 700 (\u2018high confidence\u2019), and 900 (\u2018highest confidence\u2019). The precision versus recall is plotted for any (indirect or direct), direct, or indirect PPIs predicted using the RF models trained on MIWSCs. Symbols and whiskers represent the median and 25\u201375 percentile range, respectively, for the predictions produced for the 12 organisms in panel B (Figure 8\u2014source data 1). (D) Percent of predicted direct PPIs in Mycobacterium tuberculosis H37Rv supported by an absent (0), low (0\u20130.4), or high (>0.4) composite score (left) or an absent (0) or present (>0) experimental subchannel score (right) in the STRING database. Comparisons were made between the methods of random selection (Random), amino acid coevolution (Cong et al., 2019), or RF models trained on MIWSC features of E. coli K12 proteins (MIWSC). Numbers of predicted interactions in each bin are indicated (Figure 8\u2014source data 1).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** The five-step process described here yielded RF models trained to predict protein-protein interaction (PPI) class (either not-interacting, indirect PPIs, or direct PPIs) from the set of three MIWSC values.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** A gold-standard dataset of well-characterized E. coli K12 protein pairs was assembled and partitioned into training and validation datasets. The labeled examples from the training set were used to train RF models to classify protein interactions. RF models were trained based on either mutual information windowed spectral correlations (MIWSCs), existing experimental features, existing computational features, or features derived from analysis of DOGG. The performance of the various RF models was benchmarked and compared by computing F-scores for classifying PPIs in the validation dataset, out-of-bag examples in the training dataset, and PPIs in four additional comprehensive benchmarks. This process of partitioning the gold-standard dataset, training, and validation was repeated 50 times to evaluate the reproducibility of RF model performance.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74104/elife-74104-fig8-figsupp3-v2.jpg)\n\n**Figure 8\u2014figure supplement 3.:** The violin plots describe the distribution of F-scores for models trained and validated on 50 random partitions of the gold-standard dataset (Figure 8\u2014figure supplement 1). Numbering indicates the rank of the median F-score for models trained on each feature (Figure 8\u2014source data 1).\n\nOur choice of SVD windows used to compute spectral correlations was guided by MI distributions generated using known E. coli K12 PPIs. This observation led to the concern that our approach to PPI prediction may not generalize well to other organisms. On the other hand, the underlying spectral correlations were defined from a large ensemble of bacterial proteomes, suggesting that our approach may accurately predict PPIs across diverse bacteria. To test this idea, we predicted proteome-wide direct PPIs for 11 additional phylogenetically diverse bacteria, including one organism (Azotobacter vinelandii) that was not represented in DOGG (Materials and methods). We computed the precision and recall for our predictions of any (indirect or direct), indirect, or direct PPIs using the experimentally supported PPIs in the STRING database as a benchmark (score > 0 in the STRING \u2018experimental\u2019 subchannel). We compared these results to those produced by the well-established methods of gene co-occurrence, gene neighborhood, and gene fusion by thresholding the corresponding STRING subchannel scores at different confidence levels (low, medium, high, highest). Figure 8B shows this comparison at the \u2018medium\u2019 confidence level. Figure 8C summarizes the entire analysis showing the precision-recall curves across all thresholds tested. We found that the sets of any indirect or direct PPIs produced by our method exhibited a higher precision for a given recall compared to the established methods. These results show that though the SVD windows used to compute spectral correlations were chosen based on analysis of PPIs in the E. coli K12 proteome, our approach for predicting PPIs performs as well or better than established methods across different organisms.\n\nThe state-of-the-art PPI prediction method is that produced by Cong and colleagues (Coev+) that infers direct PPIs from proteome-wide amino acid coevolution (AA Coev) (Cong et al., 2019). Briefly, they predict direct PPIs from primary sequence using a method called \u2018direct coupling analysis\u2019 (DCA) borne out of the field of statistical physics. Using the direct PPIs for Mycobacterium tuberculosis H37Rv found in the STRING database as a benchmark, we found that our approach exhibited significantly greater precision and recall whether using the STRING composite score (as done by Cong et al.) or the STRING experimental subscores (Figure 8D, Materials and methods). While we limited our comparative analysis to only M. tuberculosis, these results illustrate that our spectral approach to purifying biological information arising from a specific scale can produce predictions that are on par or better than a more computationally expensive alternative that leverages a higher-resolution genomic feature.\n\n## Discussion\n\nWe developed a statistical method that predicts hierarchical protein interaction networks reflecting the emergence of complex functions in bacteria. This method involves two aspects: (i) spectral decomposition of variation across bacterial proteomes into components enriched for specific biological scales, (ii) relating covariation structure across components to define hierarchical statistical networks. These hierarchical networks closely resembled the known organization for several well-studied bacterial phenotypes. We call our approach SCALES\u2014Spectral Correlation Analysis of Layered Evolutionary Signals. Having shown that SCALES can be useful for guiding biological discovery, we have developed the following resources: (i) a precomputed database of proteome-wide indirect (122,725,727) and direct (19,546,063) PPI predictions for all 7047 UniProt reference bacterial proteomes; (ii) a tool for predicting indirect and direct PPIs for a user-input proteome; (iii) a tool for generating and interrogating a hierarchical model for a query protein of interest. All of these can be found at scales.cri.uchicago.edu.\n\n### The challenge of recovering functional interactions using comparative genomics\n\nThe admixture of signals arising from phylogeny, function, and noise negatively impact the accuracy of PPI predictions using comparative genomics (Sch\u00e4fer and Strimmer, 2005; Sul et al., 2018). One approach to address this problem is to use PCA which assumes that only global covariation is not statistical noise (Wigner, 1967; Franceschini et al., 2016). A known source of variability between orthologs is phylogenetic relatedness. As SVD achieves spectral clustering and phylogenetic reconstruction achieves hierarchical clustering, we do expect some level of coherence between the two approaches. However, our results also illustrate that relevant biological signal is contained throughout the SVD spectrum, including components harboring a minutiae of data variance. Components in different regions of the spectrum contained information about different biological scales\u2014shallow components phylogeny, deeper components pathways, even deeper components protein complexes, and the very deepest noise, thereby signifying a \u2018cross-over\u2019 from phylogenetic to functional information. Our interpretation of these results is that while statistical variance reflecting large-scale properties can be \u2018compressed\u2019 into just a few shallow components, information about \u2018local\u2019 biological scales is distributed broadly across the spectrum. As a result, discarding global components enriched for phylogeny improved prediction of functionally relevant interactions. These results demonstrate that percent variance per component is not a good proxy for relevant biological signal. In the absence of a suitable alternative, we used knowledge in public databases to define the information content of each component. Future work will be needed to provide a theoretical basis for finding relevant signal in cases where such prior knowledge is not available.\n\n### Extracting a multi-scale, hierarchical model of biology from coevolutionary statistics\n\nUnderstanding the origins of complex biological functions requires defining hierarchical relationships describing how protein interactions integrate to create scales of biological organization. While the use of SVD is fundamental to our method, SVD itself does not define hierarchical relationships; SVD defines orthogonal components of variance ordered according to the amount of variance explained. Two results of our study were key for being able to use the SVD spectrum to produce hierarchical models. First, different components contain information regarding different biological scales. Second, the information in different components could be related by tracking the persistence of spectral correlations across components (\u2018spectral depth\u2019). These two results enabled extracting hierarchical statistical relationships that predict the integration of PPIs into complex structures approximating pathways and phenotypes. To our knowledge, this is a fundamentally new way of constructing hierarchical models. Instead of predicting pairwise interaction networks and then inferring higher-order networks, we infer an entire hierarchy directly from coevolutionary statistics.\n\n### Comparison of our results with AA Coev\n\nRecently, Cong and colleagues reported a method, AA Coev, for inferring direct PPIs from bacterial genome sequences. Their method represented a significant advance for two reasons: (i) it considered coevolution at the resolution of amino acids and (ii) it applied DCA, to entire bacterial proteomes. Like our method, AA Coev tries to extract signal related to a specific scale of biology from admixed signals of phylogeny and noise using coevolutionary statistics of genomes. Specifically, DCA is a statistical physical approach that isolates local (i.e. direct) interactions. However, we observed significant differences in quality and breadth of direct PPI inferences, scalability, and ability to reconstruct hierarchical networks.\n\nWhen we compared our direct PPI predictions in M. tuberculosis with those of AA Coev, we predicted significantly more interactions with significantly greater precision. This was a surprising result given that our approach considers lower-information features\u2014OGGs versus amino acid sequence-level information. One explanation may be that our predictions were derived by explicitly using correlations across three different spectral windows that provided information about three different scales of biology: phylogeny, indirect PPIs, and direct PPIs. In contrast, AA Coev discards signal unrelated to direct PPIs. It may be the case that phylogenetic and pathway-level information provides context clues for enhancing subtle statistical signals related to direct PPIs. In other words, the confidence in assigning a putative physical interaction is increased by additional signals suggesting that the interaction also contributes to a pathway-level function among phylogenetically related bacteria. The power of our method may lie in its ability to simultaneously deconvolute yet leverage information related to these different scales. Further work is needed to better understand the differences between our method and AA Coev and to determine if the observed difference in PPI prediction is consistent across additional organisms outside of M. tuberculosis.\n\nA striking difference between the two approaches is related to computational scalability. AA Coev is computationally expensive and, as a result, has been applied to just two organisms thus far. In contrast, we note that our approach can compute proteome-wide PPIs in a matter of minutes, enabling us to provide predictions for all 7047 UniProt Reference Proteomes. As identifying and characterizing different strains of bacteria is becoming increasingly important, scalable computational tools becomes a necessity.\n\nA final difference between the two methods is how a hierarchy can be constructed. Cong et al. predicted collective units of structure, using a \u2018bottom-up\u2019 approach by putting together their direct PPI predictions. However, compared to the networks produced by SCALES, these networks tended to be smaller and less representative of higher-order collective structure, reinforcing results reported by Kuzmin et al. illustrating that building collective organization from pairwise networks results in incomplete hierarchical descriptions of biology. We therefore pose that though SCALES does not consider as information-rich of a feature as AA Coev, it may prove to be a useful framework to extract hierarchical relationships for connecting bacterial genotype with phenotype.\n\n### Limitations\n\nWe observed two major limitations related to our use of OGGs as orthologous feature. First, many proteins have no annotated OGG\u2014for example, 295 of the ~4000 E. coli K12 proteins (6.7%). These proteins cannot be assigned to interactions or units of function by our method. Second, many proteins share the same OGGs and appear to interact at all spectral depths. These putative interactions may or may not be related to biological function. We anticipate that ortholog annotations will continue to improve with additional bacterial genome sequences, helping to alleviate these limitations. Moreover, the use of phylogenomic methods that incorporate models of the phylogenetic history of proteins to improve ortholog definition might create superior inputs for the methods developed here (Nagy et al., 2020).\n\nAnother limitation of the methods developed here is that they are inherently \u2018mechanism-free\u2019: they leverage evolutionary constraint without knowledge of the specific pressures driving the selection of interactions. As a result, our methods identify functionally relevant interactors but cannot reveal their collective function or the detailed molecular basis of the interactions.\n\n### The potential of generalizing SCALES to other biological systems\n\nTo what degree are the approaches developed here applicable to other biological systems? Practically, we note that the spectral properties of any given dataset will be unique. As such, re-application of these methods to a new dataset will require following the steps outlined in this work: creating a diverse ensemble, identifying relevant benchmarks, using the benchmarks to find different scales of interactions in the SVD spectrum, and enforcing the necessary statistical constraints to define hierarchical relationships. Sufficient diversity and suitable benchmarks may not currently be available for other systems as they were for bacteria. Moreover, the parameters used in this work to enable analysis\u2014width of spectral windows, bin width for MI calculations, threshold of spectral correlation value used to define spectral depth\u2014likely need to be derived de novo for other datasets. However, aside from these practical considerations, SCALES represents a statistical way to describe emergence\u2014the integration of individual components into layers of collective units of function. The property of emergence spans biological systems, from proteins to ecosystems. Thus, while it remains to be tested, it may be true that SCALES is a generally useful approach to learning the hierarchical architecture of biological systems.\n\n## Materials and methods\n\n### Generating DOGG\n\nAll bacterial proteomes (n=7047) in the 2020_02 release of the Uniprot Reference Proteome database were downloaded on May 20, 2020 (UniProt Consortium, 2019). OGGs were annotated using eggNOG-mapper V2 at the level of bacteria (\u2018@2\u2019; Huerta-Cepas et al., 2017; Huerta-Cepas et al., 2019). An OGG count matrix was assembled (DOGG, Figure 1A) where rows were defined as proteomes, columns were defined as OGGs, and the value in each cell was the number of annotations an OGG in a proteome. The number of annotations was used to preserve as much information as possible versus the strategy of considering binary occurrence. All OGGs present in fewer than 1% of the proteomes were removed leaving 10,177 unique columns in DOGG.\n\n### Assembling benchmarks described in Figure 3A\n\nThe various benchmarks described within this section can be found in Figure 3\u2014source data 1, Figure 3\u2014source data 2.\n\n#### Phylogeny benchmarks\n\nNCBI phylogenetic strings were mapped to the NCBI taxonometric IDs for each of the 7047 bacteria represented in DOGG using taxonkit 5.0 (https://bioinf.shenwei.me/taxonkit/). Five different benchmarks were generated corresponding to pairs of proteomes that share identical phylogenetic substrings down to the level of phylum (n=5,841,696), class (n=2,460,194), order (n=807,338), family (n=434,753), or genus (n=267,794).\n\n#### STRING Nonbinding benchmark\n\nSTRING database annotations were downloaded for the E. coli K12 proteome (STRING ID 511145) on July 22, 2019. A benchmark was assembled to include all protein pairs (n=14,793) with a non-zero combined STRING score that did not share a \u2018binding\u2019 action annotation. This benchmark was expected to be enriched for indirect PPIs.\n\n#### GO terms benchmark\n\n\u2018Biological function\u2019 GO term annotations were mapped for the 4391 proteins in the E. coli K12 proteome through the UniProtKB API. A benchmark was assembled containing the 79,794 protein pairs that share at least one GO term annotation. This benchmark likely contained a mixture of indirect and direct PPIs.\n\n#### STRING benchmark\n\nSTRING database annotations were downloaded for the E. coli K12 proteome (STRING ID 511145). A benchmark was assembled comprised of all (n=20,216) protein pairs with a non-zero combined STRING score. This benchmark included a mixture of pairs with (n=14,793) and without (n=5423) a \u2018binding\u2019 annotation and therefore is presumed to contain a mixture of direct and indirect PPIs.\n\n#### ECOCYC benchmark\n\nA previously published benchmark included 915 pairs of E. coli K12 proteins selected from the set of complexes in the ECOCYC database after intentionally excluding large complexes with greater than 10 proteins to enrich for directly interacting pairs of proteins (Keseler et al., 2017). This benchmark is assumed to primarily represent direct PPIs.\n\n#### Coev+ benchmark\n\nA previously published set of 1600 direct PPIs in E. coli K12 identified by a hybrid method combining the results of AA Coev and prior experimental data (Cong et al., 2019).\n\n#### PDB benchmark\n\nA previously published set of 809 direct PPIs in E. coli K12 selected by the criteria that they, or closely homologous proteins, have been observed to interact in a crystal structure in the PDB (Cong et al., 2019).\n\n### Computing proteome-proteome spectral correlations\n\nA row vector in the matrix UOGG contains the projections of a single proteome onto each of the left singular vectors.\n\n$$\n[\\omega_{i}|1>\u22c5\u22c5\u22c5\\omega_{i}|n>\u22c5\u22c5\u22c5\\omega_{i}|N>]\n$$\n\nwhere $\\omega_{i}$ is proteome $i$, $\\omega_{i}\u2223n>$ is the projection of $\\omega_{i}$ onto the left singular vector n 1 \u2264n \u2264N, and N is the total number of left singular vectors. The \u2018spectral correlation\u2019 is computed as the Pearson correlation between proteome $\\omega_{i}$ and proteome $\\omega_{j}$ within the window of left singular vectors spanning SVD components $a$ to $b$ (\u2018spectral window\u2019):\n\n$$\n\u03c1_{\\omega_{i}\\omega_{j}}^{a:b}=corr\\omega_{i,a:b},\\omega_{j,a:b}\n$$\n\n### Computing protein-protein spectral correlations\n\nA row vector in the matrix VOGG contains the projections of a single OGG onto each of the right singular vectors:\n\n$$\n[f_{i}|1>\u22c5\u22c5\u22c5f_{i}|m>\u22c5\u22c5\u22c5f_{i}|M>]\n$$\n\nwhere fi is the OGG in row i of matrix VOGG, $f_{i}\u2223m>$ is the projection of fi onto right singular vector m (1 \u2264m \u2264M), and M is the total number of SVD components. Each protein in a proteome may comprise up to several OGGs:\n\n$$\nP_{l}^{\\omega}={f_{i},\u2026,f_{j}}\n$$\n\nwhere $P_{l}^{\\omega}$ is the $l$ th protein in proteome $\\omega$; $f_{i}$ is OGG $i$ and $f_{j}$ is OGG $j$. The contribution of a protein onto each right singular vector was estimated by averaging the contributions of each constituent OGG on each right singular vector. An example of this process is illustrated in Figure 2\u2014figure supplement 1A-F. The \u2018spectral correlation\u2019 is computed as the Pearson correlation between protein $l$ and protein $m$ within the window of right singular vectors spanning SVD components $a$ to $b$ (\u2018spectral window\u2019):\n\n$$\n\u03c1_{lm}^{a:b}=corrP_{l,a:b}^{\\omega},P_{m,a:b}^{\\omega}\n$$\n\nAn example of this process is illustrated in Figure 2\u2014figure supplement 1G.\n\n### Computing MI between spectral correlations and benchmarks of biological knowledge\n\nSpectral correlations were computed by first segmenting the top 3000 SVD components into windows comprised of five components each and calculating spectral correlations across all pairs of variables (either proteome-proteome or protein-protein) within each window. Computing the MI between the distribution of spectral correlations within a window and a biological benchmark quantitates how much knowing the distribution of spectral correlations reduces uncertainty about the benchmark. Because spectral correlations within a window comprise a finite distribution (i.e. not infinite), there exists intrinsic uncertainty due to the need to define a bin width in the distribution. The process of computing this uncertainty has been formalized and is calculated as the \u2018differential entropy\u2019 (Cover and Thomas, 2005):\n\n$$\nH\u03c1^{a:b}=-\\sum_{i}\\Deltap\u03c1_{i}^{a:b}log_{2}p\u03c1_{i}^{a:b}-log_{2}\u0394\n$$\n\n$\u03c1^{a:b}$ is the vector of spectral correlations over the window ranging from SVD components a to b, $H\u03c1^{a:b}$ is the differential entropy of $\u03c1^{a:b}$ , $\u03c1_{i}^{a:b}$ is the ith set of correlation values, $p\u03c1_{i}^{a:b}$ is the probability of observing a correlation value within $\u03c1_{i}^{a:b}$ , and $\u0394$ is the width of the quantization bins. In the present study  $\u0394$ = 0.25.\n\nMI is the difference between the intrinsic uncertainty in spectral correlations, $H\u03c1^{a:b}$ , and the uncertainty computed given a benchmark c, $H(\u03c1^{a:b}|c)$ .\n\n$$\nI(\u03c1^{a:b},c)=H(\u03c1^{a:b})\u2212H(\u03c1^{a:b}|c)\n$$\n\nThe uncertainty in spectral correlations given knowledge of a benchmark is evaluated in the following way. A benchmark c can be either \u20181\u2019 if two variables share the benchmark (i.e. two proteins share the same phylogenetic classification or two proteins are found to interact in a database) or \u20180\u2019 if two variables do not share the benchmark. The \u2018conditional entropy\u2019 of spectral correlations is the differential entropy conditioned on knowledge of the probability distribution of benchmarks. So, $H(\u03c1^{a:b}|c)$ is mathematically defined as:\n\n$$\nH(\u03c1^{a:b}|c)=p(c=1)H(\u03c1^{a:b}|c=1)+p(c=0)H(\u03c1^{a:b}|c=0)\n$$\n\nwhere p(c=1) and p(c=0) are the probability of observing a \u20181\u2019 or \u20180\u2019 in c respectively; and $H\u03c1^{a:b}c=1$ and $H\u03c1^{a:b}c=0$ are the differential entropies of spectral correlations conditioned upon variables that share (c=1) and do not share (c=0) a benchmark, respectively. A model of random MI was generated by computing the MI shared between the spectral correlations within row-shuffled versions of UOGG or VOGG and the benchmarks of phylogeny and protein interactions, respectively (Figure 2\u2014figure supplement 2).\n\nFor each phylogenetic benchmark, 100 bootstraps were generated consisting of equal numbers of randomly selected pairs of proteomes that do or do not share an identical phylogenetic substring annotation in the benchmark. For each protein interaction benchmark, 1000 bootstraps were generated consisting of equal numbers of randomly selected pairs of proteins that do or do not share an interaction annotation in the benchmark. For bootstraps of both phylogenetic and protein interaction benchmarks, the number of pairs sharing an annotation was equal to the number of pairs indicated for each respective benchmark in the section \u2018Assembling benchmarks described in Figure 3A\u2019.\n\n### Calculation of MI cumulative distribution functions shown in Figure 3C\n\nEach point in the MI cumulative distribution functions (cdfs) shown in Figure 3C was computed as following for the window centered on component w of the SV\n\n$$\ncdf_{w}=\\frac{\\sum_{i=1}^{w}MI_{i}^{data}-MI_{i}^{random}}{\\sum_{i=1}^{W}MI_{i}^{data}-MI_{i}^{random}}\n$$\n\nwhere cdfw is the value of the cdf at spectral position w, MIidata is the MI observed in window i, MIirandom is the MI produced by random correlations in window i, W is the total number of windows, and 1\u2264w \u2264 W. Because we considered five-component spectral windows within the first 3000 components, W=2997.\n\n### A model of spectral correlations between non-interacting proteins\n\nTo define a model of spectral correlations between non-interacting proteins, we first considered the distribution of all pairwise spectral correlations centered on SVD1000 for the proteins encoded in the proteome of E. coli K12. Our rationale was that since the vast majority of proteins do not interact, the distribution of all-by-all spectral correlations approximates correlations between proteins that do not functionally interact. The variance of this distribution decreased rapidly as the correlation window widened until a width of 100 components. This motivated our choice of computing spectral correlations over sets of 100 components (Figure 4\u2014figure supplement 1A, B). We computed distributions of all-by-all spectral correlations between E. coli K12 proteins across windows centered on different regions of the SVD spectrum and found them to be superimposable (Figure 4\u2014figure supplement 1C). Additionally, we computed such distributions for proteins from other diverse bacteria and found them to be superimposable with those derived from E. coli K12 (Figure 4\u2014figure supplement 1D). These properties enabled defining a constant threshold for significant spectral correlations between two proteins across any 100-component SVD window. The p-value derived from the empirical cumulative distribution function of this model decreased rapidly until a threshold value of 0.29 (Figure 4\u2014figure supplement 1E). Therefore, we chose the value of 0.29 associated with a p-value of 0.018 as the threshold of spectral correlations signifying functional interactions between proteins derived from any bacterial proteome within any region of the SVD spectrum.\n\n### GSEA performed on statistical model of E. coli K12 motility\n\nGSEA was performed on the sets of proteins defined by the statistical networks and subnetworks using DAVID analysis (v6.8). The ontological term with the lowest p-value is indicated for each statistical module shown in Figure 6A. A full list of significant ontological terms and their associated p-values for each statistical module is listed in Supplementary file 1.\n\n### Assaying strains of P. aeruginosa for pilus and flagellar motility\n\nAll P. aeruginosa strains used in this study were ordered from the Manoil Lab. All strains were grown at 37\u00b0C on LB supplemented with 25 \u00b5g/ml irgasan and gentamicin (75 \u00b5g/ml) as necessary. E. coli XL1-Blue was maintained on LB agar plates with gentamicin (15 \u00b5g/ml) as necessary.\n\nP. aeruginosa growth was at 37\u00b0C on LB supplemented with 25 \u00b5g/ml irgasan and gentamicin (75 \u00b5g/ml) as necessary. Strains were assayed for subsurface twitching motility as previously described (Alm and Mattick, 1995, Little et al., 2018). Strains were grown overnight and stab inoculated in the interstitial space between the basal surface of 1.0% LB agar and a plastic Petri dish. Plates were incubated for 48 hr at 37\u00b0C. Agar was removed and cells attached to the plate were stained with 0.5% crystal violet; twitch zone diameter was measured and plates were imaged.\n\nSurface twitching motility assays were performed as previously described (Little et al., 2018; Kearns et al., 2004). P. aeruginosa strains of interest were grown overnight and concentrated in morpholinepropanesulfonic acid (MOPS) buffer (10 mM MOPS, 8 mM MgSO4, pH 7.6). A 2.5 \u00b5l volume of the MOPS buffered bacterial suspension was spotted onto buffered twitching motility plates (10 mM Tris, 8 mM MgSO4, 1 mM NaPO4, 0.5% glucose, 1.5% agar, pH 7.6) and was incubated for 24 hr at 37\u00b0C. The twitching zone was measured and imaged.\n\nSwimming motility was performed as previously described (Rashid and Kornberg, 2004). Overnight cultures were stab inoculated into the surface of LB-0.3% bacto agar and were incubated for 24 hr at 37\u00b0C. The resulting swimming zone was measured.\n\nFor complementation of genes of interest into P. aeruginosa strains, the complementation vector pBBR1-MCS5-PA0769 was created using Gibson assembly. The vector was transferred to P. aeruginosa by electroporation using 2.2 kV in a 2 mm gap cuvette and subsequent selection using gentamicin.\n\n### Training and validating RF models for predicting PPIs in E. coli K12 using MIWSCs\n\n#### Assembling a \u2018gold-standard\u2019 dataset\n\nPredicting PPIs is challenging in part because of the inherent class imbalance in biological systems: the number of non-interacting pairs greatly outnumber true interactors. We tried to design a relevant task by modeling this class imbalance using a previously published estimate of the ratio of these classes (Rajagopala et al., 2014). A \u2018gold-standard\u2019 dataset for E. coli K12 PPIs was assembled and consisted of 72,000 not-interacting, 1226 indirect PPIs, and 72 direct PPIs. All pairs defined as \u2018direct PPI\u2019 satisfied three criteria: they shared amino acid level coevolution (Coev+ benchmark), were annotated in the same protein complex in the ECOCYC benchmark, and interacted in the PDB benchmark. All indirect PPIs were selected based on the following criteria: they shared a \u2018non-binding\u2019 type interaction annotation in the STRING Nonbinding benchmark, shared a \u2018biological function\u2019 interaction in the GO benchmark, and did not share an interaction annotation in any of the benchmarks of direct PPIs (Coev+, ECOCYC, or PDB). The \u2018not-interacting\u2019 pairs did not share an interaction annotation in any of the benchmarks (GO, STRING Nonbinding, STRING, Coev+, ECOCYC, or PDB). The not-interacting set was subsampled to exceed the number of physically interacting pairs by 1000-fold (Rajagopala et al., 2014; Cong et al., 2019).\n\nThe gold-standard pairs were randomly partitioned into training (60%) and validation (40%) datasets. Fifty such random partitions were generated to assess the reproducibility of the results of the machine-learning task described below. Our rationale in partitioning the entire dataset randomly, instead of independent partitioning for each interaction class, was to produce fluctuations in the number of positives and degree of class imbalance.\n\n#### Training and validating RF models\n\nThe workflow of training and validating RF models on MIWSCs is depicted in Figure 8\u2014figure supplement 1. RF models consisting of 100 decision trees were trained to classify pairs of proteins in E. coli K12 as not-interacting, indirect PPIs, or direct PPIs by feeding the labeled training set examples to the TreeBagger algorithm (Matlab, v2020a). This process was repeated for each random partition of the gold-standard dataset yielding an ensemble of 50 RF models per feature. Each trained RF model was subjected to three validation tasks of classifying interaction types for unlabeled pairs of E. coli K12 proteins in the validation portion of the gold standard (40%). The model performance was evaluated by computing an F-score for each interaction type (not-interacting, indirect PPIs, direct PPIs), where F-score is the harmonic mean of precision and recall, precision is the ratio of the number of correctly predicted interactions within a class to the total number of predicted interactions in a class, and recall is the ratio of the number of correctly predicted interactions within a class to the total number of interactions of that class. F-scores for RF models trained on MIWSCs and used to predict the validation portion of the gold standard are shown in Figure 8A.\n\n### Training and validating RF models on quantitative features of existing methods\n\nFor each feature extracted from existing methods described below, RF models were trained and validated using the identical protocol as for MIWSCs (described in the section \u2018Training and validating RF models\u2019 for predicting PPIs in E. coli K12 using MIWSCs).\n\n#### Existing experimental features\n\nPreviously published datasets derived from large-scale experimental PPI screens in E. coli K12 were used to generate a set of four different experimental features including: gene interaction scores from a gene epistasis screen (epistasis, n=41,820), sum log-likelihood scores from an affinity purification mass spectrometry screen (APMS1, n=12,801), protein interaction scores from an affinity purification mass spectrometry screen (APMS2, n=291), and binary pairs from a yeast-two hybrid screen (Y2H, n=1766) (Rajagopala et al., 2014; Babu et al., 2014; Babu et al., 2018; Hu et al., 2009).\n\n#### Existing computational features\n\nGene co-occurrence, gene fusion, and gene neighborhood subscores for E. coli K12 (STRING ID 511145) were extracted from the STRING database (Szklarczyk et al., 2019; Rajagopala et al., 2014; Babu et al., 2014; Babu et al., 2018; Hu et al., 2009). Any pairs without an interaction annotation in the STRING database were assigned a subscore of zero.\n\n#### Binary MI feature\n\nThe binary MI (b-MI) feature was modeled after the popular phylogenetic profiling method of Pellegrini et al., 2017. First, a binary OGG content matrix was defined as follows:\n\n$$\nB^{OGG}={1,D^{OGG}>0.0,otherwise.\n$$\n\nwhere BOGG is the binary OGG content matrix and has the same dimensions as DOGG.\n\nThe phylogenetic profile of an OGG across all 7047 proteomes was defined as:\n\n$$\npp_{i}=B^{OGG}_{i}\n$$\n\nwhere $pp_{i}$ is the phylogenetic profile of OGG $i$. The degree to which phylogenetic profiles for a pairs of proteins in the E. coli K12 were similar was computed by averaging the MI between phylogenetic profiles of the OGGs encoded in the protein pair. The MI shared between two phylogenetic profiles was computed using Shannon\u2019s formulation for the MI between two discrete random variables (, ; Cover and Thomas, 2005).\n\n#### Covariation feature\n\nThe covariation between a pair of OGGs was described by:\n\n$$\nCov_{ij}=\\frac{1}{\u03a9}\\sum\\omega=1\u03a9(f_{i}^{\\omega}\u2212<f_{i}>)(f_{j}^{\\omega}\u2212<f_{i}>)\n$$\n\nwhere $Cov_{ij}$ is the covariation between OGGs $i$ and $j$, $\u03a9$ is the total number of proteomes (rows) in DOGG, $f_{i}^{\\omega}$ is the number of OGG $i$ in proteome $\\omega$, $f_{j}^{\\omega}$ is the number of OGG $j$ in proteome $\\omega$, and $<f_{i}>$ is the average number of OGG $i$ across all proteomes.\n\n#### PCA-based spectral correlations features\n\nThese features were inspired by the approach of Franceschini and colleagues and the typical use of SVD to produce a low rank approximation of the initial data matrix in an effort to \u2018denoise\u2019 the data (Franceschini et al., 2016). For each pair of proteins in the E. coli K12 proteome spectral correlations were computed as described in the section \u2018Computing protein-protein spectral correlations\u2019 over windows ranging from component 1 to component k, where k=5, 10, 20, 50, 100, 500, 1000, 5000, or 7047.\n\nF-scores for RF models trained on various experimental or computational features and used to predict the validation portion of the gold standard are shown in Figure 8A.\n\n### Validating RF models in two additional validation tasks\n\n#### Training dataset task\n\nEach decision tree within an RF model was tasked with predicting interaction classes for the out-of-bag examples from the training datasets. F-scores were computed for the consensus predictions of each model.\n\n#### Comprehensive benchmark task\n\nBiological interactions are typically sparse: the number of not-interacting pairs of proteins vastly outnumber the number of interacting pairs. As such, we desired to challenge each of the RF models in a validation task reflective of this asymmetry. To do so, each RF model was tasked with predicting classes for all pairs of proteins in the E. coli K12 proteome after exclusion of pairs used in the gold-standard dataset. These predictions were validated against four different comprehensive benchmarks: the indirect PPIs in the STRING Nonbinding benchmark (n=5423 indirect PPIs, 9,637,213 not-interacting), the mixed indirect/direct PPIs in the GO (n=79,794 indirect or direct PPIs, 9,562,842 not-interacting) and STRING benchmarks (n=20,216 indirect or direct PPIs, 9,622,420 not-interacting), and the direct PPIs in the entire PDB benchmark (n=809 direct PPIs, 9,614,827 not-interacting).\n\nF-scores for RF models trained on MIWSCs, published experimental, or published computational features and used to predict the out-of-bag examples of non-interacting proteins, indirect PPIs, or direct PPIs are shown in Figure 8\u2014figure supplement 3.\n\n### Predicting proteome-wide direct PPIs for 11 phylogenetically unrelated bacteria\n\n#### Proteomes represented in DOGG\n\nEach of the 50 RF models trained to classify interactions in E. coli K12 using MIWSCs were used to predict proteome-wide indirect and direct PPIs in the following bacteria (Uniprot Proteome ID, NCBI taxonomy ID in parentheses): Aliivibrio fischeri ES114 (UP000000537, 312309), A. vinelandii DJ (UP000002424, 322710), B. subtilis 168 (UP000001570, 224308), Caulobacter vibrioides (UP000053705, 155892), Helicobacter pylori 26695 (UP000000429, 85962), M. tuberculosis H37Rv (UP000001584, 83332), Mycoplasma genitalium G37 (UP000000807, 243273), Pseudomonas fluorescens F113 (UP000005437, 1114970), Staphylococcus aureus NCTC 8325 (UP000008816, 93061), Streptomyces coelicolor A3(2) (UP000001973, 100226), Synechocystis sp. PCC 6803 (UP000001425, 1111708). For each proteome, a set of consensus PPIs was defined as those for which a majority of the models (>25) produced the same classification of \u2018indirect PPI\u2019 or \u2018direct PPI\u2019.\n\n#### Proteomes not represented in DOGG\n\nTo predict interactions for a proteome that was not represented in DOGG (e.g. A. vinelandii DJ, UP000002424, 322710), OGGs were mapped using EggNOG mapper V2 and MIWSCs were extracted using the OGG projections in VOGG (Huerta-Cepas et al., 2017; Huerta-Cepas et al., 2019). These features were used to predict proteome-wide indirect and direct PPIs as described for the Uniprot Reference Proteomes above.\n\n### Validating direct PPI predictions against experimental evidence in the STRING database\n\nThe predicted direct PPIs were benchmarked against the sets of interactions in the STRING database with a non-zero experimental subchannel score for E. coli K12 and the 11 additional organisms described above.\n\n### A head-to-head comparison with the approach of Cong and colleagues\n\nCong and colleagues have provided proteome-wide PPI predictions for E. coli K12 and M. tuberculosis H37Rv (Cong et al., 2019). Their predictions of E. coli PPIs were based on AA Coev supplemented with existing knowledge (\u2018Coev+\u2019). In contrast, their predictions of PPIs in M. tuberculosis were based on AA Coev alone (\u2018Coev\u2019). Therefore, for a head-to-head comparison, we compared the predictions produced by our RF models trained on MIWSCs with their PPI predictions in M. tuberculosis. We benchmarked these interactions using two strategies. The first strategy mirrored that used by Cong and colleagues, computing the fraction of interactions assigned a STRING combined score of 0, 0\u20130.4, or >0.4. The second strategy used orthogonal experimental evidence by computing the fraction of interactions assigned a STRING experimental subchannel score of 0 and >0.\n",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "23821d46-d84c-49da-8207-8472be2f3299",
+      "submission_id": "1eb83b91-a12c-406f-8326-b0db05a0280b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, https://ror.org/04mhzgx49 Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74104.sa0](https://doi.org/10.7554/eLife.74104.sa0)\n\nSince the inception of comparative genomics, mining phyletic patterns has been a powerful approach for the discovery of previously unknown biological interactions. The authors use a combination of singular value decomposition of the phyletic pattern matrix and random forests classification method to uncover potential protein-protein interactions. The work illustrates the utility of such methods, which are finding increasing application in addressing various computational biological problems, such as predicting protein-protein interactions from genomic information.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, https://ror.org/04mhzgx49 Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74104.sa1](https://doi.org/10.7554/eLife.74104.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Defining hierarchical protein interaction networks from spectral analysis of bacterial proteomes\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The basic predictive power of their MIWSC approach is demonstrated in Figure 2C. However, we were surprised by the extremely low recall shown in the right panel. A recall of 10e-5 is very low indeed, and would preclude this method from having much practical value. We went ahead and recomputed both panels in Figure 2C, based on the author's raw prediction data that we downloaded for E. coli from their 'scales' website (14429 predictions). We could by-and-large confirm the left panel, but for the right panel we got recall values in the 10e-02 range, which is about 1000 times higher. Is this perhaps a mislabeled axis in the plot, or a misunderstanding on our part?\n\n2) Also related to Figure 2C: this panel demonstrates specificity and sensitivity, but only for the author's prediction class of \"direct\" associations. The authors, however, also predict \"indirect\" associations \u2026 these in fact outnumber their \"direct\" predictions. Is it possible to also show specificity and sensitivity for those, similar to Figure 2C, for the same set of organisms? This could be done by taking KEGG-pathway membership or GO terms as the benchmark; in our own testing we found that the overall prediction power of their \"indirect MIWSC\" class is less impressive \u2013 more in line with previous efforts, which might be of interest to the reader.\n\n3) Bacteria tree is not uniformly sequenced. There is an overrepresentation of certain lineages, e.g., of gammaproteobacteria and terrabacteria (Bacillus group) in the starting matrix. This could potentially bias the quality of the correlations that are obtained in the ``mid-range' SVD components.\n\n4) The actual biological inferences drawn for the role of the tested gene in twitching mobility might be over-interpreted. Briefly, the authors recover 4 uncharacterized proteins (Q9I5G6, Q9I5R2, Q9I0G2, Q9I0G1) as part of their T4 pilus sub-graph and infer a general function for them in the twitching mobility. They chose Q9I5G6 because it was the only one with a supposed domain of unknown function (DUF4845). However, it should be noted that Q9I5R2 also contains another such domain DUF805 along with a Zn-ribbon domain. Further, Q9I0G2 is a T2SS secretion platform protein and Q9I0G1i is the ATPase engine for the pilus. Genomic neighborhood analysis by this referee revealed that DUF4845 likely functions with the signal peptidase in secretion. Thus, given the role of the pilus in secretion and mobility, the best one could infer is a role for DUF4845 in pilus function perhaps with a greater intersection with secretion. This could even indirectly affect the mobility function which the authors' experiments are said to support. However, the authors state right in the abstract they have uncovered a twitching mobility effector. At best they could say they have uncovered a potential component that might be functionally linked to the T4 pilus which might affect secretion or twitching mobility. Indeed, the phyletic pattern of DUF4845 does not immediately suggest that all organisms with it also possess definitive twitching mobility.\n\n5) The authors found 4 proteins of unknown function associated with pilus motility in P. aeruginosa. Only one shows positive experimental results. It would be nice to have some idea how general this is, i.e. how many times proteins get associated by the approach, even if they have biologically known but totally distinct functions.\n\n6) The authors might experiment with using a matrix that removes closely related gammaproteobacterial, actinobacterial and terrabacterial lineages to see its effects on their training and predictions.\n\n7) When the manuscript speaks of scales of protein interactions represented in the spectrum, is this visible in the singular vectors? We would imagine that large-scale properties should correspond to distributed vectors (and not only large singular values), while local scales should intuitively correspond to localised vectors.\n\n8) It is quite evident that the first singular vectors are related to phylogeny, which is known to be a major source of variability between orthologs (at the end SVD achieves spectral clustering, and phylogeny reconstruction hierarchical clustering, which are expected to show some level of coherence). What is more interesting is the crossover from phylogenetic to functional information.\n\n9) The MI is not really well defined, it would be hard to reproduce on the basis of what is written in the Methods section.\n\n10) We have some doubts concerning the gold standard. If non-interacting pairs are randomly chosen, and fractions of interacting and non-interacting pairs are given in their approximate true proportions, the non-interacting set should contain about the same number of actually interacting pairs as given in the positive examples. The choice of so many random pairs to represent non-interacting pairs is therefore dangerous and potentially misleading. It remains also unclear how the extreme bias towards non-interacting pairs in the dataset is handled (most machine-learning algorithms run into problems in this case). When partitioning into training and validation sets, is this done independently for each class, or for the entire dataset? In the latter case, the number of positive examples might fluctuate a lot in the training set.\n\n11) The comparison with Cong et al., might be potentially spectacular, but it is hard to understand it from the little paragraph. This should be explained better. One should also keep in mind that Cong et al., use an unsupervised approach as compared to the supervised in the present manuscript.\n\n12) The notation in Materials and methods requires revision. To give an example (beyond the MI part already mentioned), n is the number of proteomes in the first paragraph, and the number of OGGs in the second. Please use consistent notations!\n\n13) Is Figure 1S2B really showing normalized columns? They appear optically to have very different variances, even if they all should be normalized to variance 1.\n\n14) The code should be made available.\n\nPresentation:\n\n1) The paper is very hard to read and to understand. It is written in a semi-technical jargon mixing spectral analysis, machine learning and information theory. Even having expertise in these fields, we had to continuously jump between the main text, the methods and the figure (including the supplementary figures \u2013 a total of 86 pages) to follow the argumentation of the paper. This style is not suitable for a journal with a broad and interdisciplinary readership. The authors should make a serious effort to clean up their presentation, such that the main messages become accessible. Currently, even for disciplinary journals in computational biology or bioinformatics, the presentation would require simplifications.\n\n2) The general reader would benefit from an opening figure that clearly lays out the steps in the workflow starting with SVD (giving some general background) to random forest training. It can augment what is shown in the current figure 1 and one of the supplements to figure 2.\n\n3) The abstract repeats 8 times the word \"hierarchy\" or \"hierarchical\". Avoid such excessive repetitions.\n\n4) The introduction was a bit short in giving credit to previous efforts in this area. Yes, the founding papers from the 90s are cited, but there have been quite a number of studies in the meantime, including the use of SVD, reviewed for example here: Nagy et al., NAR 2020, https://doi.org/10.1093/nar/gkz1241 or Moi et al., PLoS computational biology 2020, 16 (7), e1007553\n\n5) The results on motility are really nice. We suggest placing them much earlier in the paper, and do the more technical stuff with random forest etc. later. It could come directly after Figure 1C has been explained.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Defining hierarchical protein interaction networks from spectral analysis of bacterial proteomes\" for further consideration by eLife. Your revised article has been evaluated by Aleksandra Walczak (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewer #1 (Recommendations for the authors):\n\nGeneral Summary:\n\nWhile the authors have made clearly visible efforts to improve the presentation of their manuscript, the major problem remains: while the results are very interesting, the presentation of the technical details is cumbersome, and reading the paper without massive reference to the huge number of supplementary figures is hardly possible. I think another round of simplification is unavoidable.\n\nDetailed report:\n\nI am still convinced that this paper has very interesting results, which fully merit publication. But in particular, the initial part of the paper is hard to read. In a nutshell, the method is quite simple: (a) extract a large matrix of phylogenetic profiles (here many proteomes annotated via OGGs), (b) perform a standard SVD, and represent OGGs via their projection to the singular vectors, (c) extract proteins having correlated projections in small spectral windows. The innovative part of the paper is a clever use of these spectral windows going from the singular values/vectors describing the large-scale organisation of the data, to smaller and smaller singular values, far beyond the few typically used in PCA, showing that these deep parts of the spectrum contain finer and finer information \u2013 here going from large functional categories via pathways to PPI. It should be possible to present this in a simple way.\n\nI would like to make a number of more specific points:\n\n1. The reading is impossible without the massive use of supplementary figures. To give one example (out of many), the singular vectors in UOGG and VOGG are used in methods but introduced only in Figure 1 Supp. 1. In addition, the left and right singular values are denoted equally as |n>, which is a bit confusing (even more since as mentioned, the matrices are not defined in the text). In general, the authors should revise the paper such that the supplement gives supplementary information, and the paper can be read without having ~50 pages of supplement in your hands.\n\n2. The method heavily relies on subjective hyperparameters and thresholds: For the number of singular values considered, for the bin size in the MI calculation, for the size of the spectral window, for the used cutoffs of the spectral depth. Together with the somewhat anecdotal results (concentration mostly on motility), this gives the impression that the biological system and parameters are hand selected to show nicely interpretable results. I sincerely hope this is not the case, but if the authors would, e.g., show the tree generated by changing spectral depth from largest to smallest values, the different levels of organisation could become more evident (in case well-separated levels exist).\n\n3. In some cases, it is hard to understand if the results are significant. If one considers Figure 1E, even a uniform MI distribution would have a similar shape as the blue curves, since the cumulative would be linear, and represented with a log-scale of the spectral position.\n\n4. In some places, results imposed by the analysis are presented as astonishing findings. The most evident case is the hierarchical structure when changing spectral depth. Since spectral depth is defined as the depth where correlations are for the first time non-significant, the edge set of the graphs at higher spectral depth is necessarily proper subsets of those at lower spectral depth, and thus connected components are proper subsets, too. If all statistically significant correlations in each spectral window would have been taken into account, edges between proteins might disappear at some depth, and reappear at a deeper one, making the network potentially non-hierarchical.\n\n5. Heavy but somewhat random statements like \"Understanding the molecular basis of a phenotype requires (i) defining interactions that create units of collective function at different biological scales and (ii) relating these scales to create a hierarchical model of emergent phenotype.\" should be avoided.\n",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6c5d76df-4eec-499a-9071-87ca62586343",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C1",
+      "claim": "DOGG consisted of 7047 proteomes (rows) and 10,177 OGGs (columns), where each entry is the number of times an OGG was observed in a proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting data matrix, DOGG, consisted of 7047 proteomes (rows) and 10,177 OGGs (columns), where each entry is the number of times an OGG was observed in a proteome (Figure 1A, Materials and methods; Huerta-Cepas et al., 2017; Huerta-Cepas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the construction of the data matrix DOGG with specific dimensions and content, supported by citations to methods and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "be57053f-58e2-4854-ab3d-120a55fdc365",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C2",
+      "claim": "Bacteria sharing the same phylum clustered together on SVD1 through SVD4.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that bacteria sharing the same phylum clustered together on SVD1 through SVD4 suggesting that the most dominant patterns of bacterial variation arise from phylogeny (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is directly stated and supported by reference to Figure 1C showing the clustering pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "1644c4fa-f0c1-429e-9c31-32ff13d9fa54",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C3",
+      "claim": "The most dominant patterns of bacterial variation arise from phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that bacteria sharing the same phylum clustered together on SVD1 through SVD4 suggesting that the most dominant patterns of bacterial variation arise from phylogeny (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the clustering pattern observed in the SVD analysis, supported by the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "daf0f78c-002a-4dd7-a7a3-1244b5fb69c7",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C4",
+      "claim": "SVD1 to SVD4 explained only 17% of the overall data variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, SVD1 to SVD4 explained only 17% of the overall data variance, motivating us to ask what information lies in the remaining data variance\u2014more phylogenetic signal, functional signal, or noise?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the percentage of variance explained by the first four SVD components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "3df70650-ab78-43f4-922f-ae2f7809b3fc",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C5",
+      "claim": "Strong phylogenetic signals confound PPI inference using comparative genomics.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with prior reports that strong phylogenetic signals confound PPI inference using comparative genomics (Sch\u00e4fer and Strimmer, 2005; Sul et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "b78a8f34-8750-4434-a9d2-8c0e34483437",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C6",
+      "claim": "The top tens of components contained phylogenetic information, the top hundreds contained indirect PPI information, and the top thousands contained direct PPI information.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the information for the different types of benchmarks was distributed distinctly across the SVD spectrum. The top tens of components contained phylogenetic information, the top hundreds contained indirect PPI information, and the top thousands contained direct PPI information (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the distribution of different types of biological information across the SVD spectrum, supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "3e3bfc58-cbbb-49c3-9d2f-c59d60518958",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C7",
+      "claim": "SVD components 2996 through 3000 harboring 0.025% data variance contain non-random biological information reflecting direct PPIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Even SVD components 2996 through 3000 harboring 0.025% data variance contain non-random biological information reflecting direct PPIs (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states that these deep components contain biologically meaningful information, supported by statistical analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "d80331f2-7f47-40d2-a6c4-65bc7d19f78c",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C8",
+      "claim": "Beyond component 3000, the MI shared between protein spectral correlations and PPIs converged to the estimation of background MI.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond component 3000, the MI shared between protein spectral correlations and PPIs converged to the estimation of background MI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the convergence to background MI beyond component 3000.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "8a91008b-791f-4977-8d4f-9b444346dd28",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C9",
+      "claim": "Global to local patterns of bacterial covariation reflect an intuitive hierarchy of biological scale\u2014phylogeny, pathway, protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that global to local patterns of bacterial covariation reflect an intuitive hierarchy of biological scale\u2014phylogeny, pathway, protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the results presented in Figure 3, describing the hierarchical organization of biological information across the SVD spectrum.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "6d11b02d-213f-4307-bc5e-a4f9c55e48fc",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C10",
+      "claim": "The ordering of distributions across the SVD spectrum was robust to subsampling DOGG to account for uneven phylogenetic distributions of bacterial strains in the UniProt database.",
+      "claim_type": "EXPLICIT",
+      "source": "The ordering of these distributions across the SVD spectrum was robust to subsampling DOGG to account for uneven phylogenetic distributions of bacterial strains in the UniProt database (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the robustness of the results to subsampling, supported by Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "daf95d9b-5260-4a16-99da-8911975a841c",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C11",
+      "claim": "75 proteins were spectrally correlated with FliC in E. coli K12.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 75 proteins were spectrally correlated with FliC (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number of proteins correlated with FliC, supported by Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "b4d6b411-5eae-4652-be9a-ef8945cde871",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C12",
+      "claim": "At a spectral depth of 50, a single densely connected network devoid of obvious substructure was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At a spectral depth of 50, we observed a single densely connected network devoid of obvious substructure (Figure 6A, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the network structure at spectral depth 50, supported by Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "c584ba9c-32fa-4653-93e9-86c8abcbf03f",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C13",
+      "claim": "The network at spectral depth 50 was enriched for functional terms related to 'flagellar system' (p<10\u201345).",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-set enrichment analysis (GSEA) indicated that this network was enriched for functional terms related to 'flagellar system' (p<10\u201345; Huang et al., 2009a; Huang et al., 2009b, Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the GSEA results with a specific p-value, supported by citations to the GSEA method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "b3736c44-c0a8-40d3-b0da-ab0cb74b1439",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C14",
+      "claim": "At spectral depth of 300, the network fractured into four discrete subnetworks enriched for 'chemotaxis signaling', 'flagellum', 'LPS biosynthesis', or 'cyclic di-GMP signaling'.",
+      "claim_type": "EXPLICIT",
+      "source": "Progressing to spectral depth of 300, we observed that the network at 50 fractured into four discrete subnetworks (Figure 6A, middle panel). These subnetworks were significantly enriched for terms related to 'chemotaxis signaling' (p<10\u201315), 'flagellum' (p<10\u201356), 'LPS biosynthesis' (p<10\u20133), or 'cyclic di-GMP signaling' (p<10\u201321).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the network structure and enrichment results at spectral depth 300, supported by Figure 6A and GSEA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "1f74ab42-1a3f-44e2-a22c-5dd1f8304bf8",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C15",
+      "claim": "At spectral depth of 1000, the subnetworks fractured further yielding 9 discrete subnetworks.",
+      "claim_type": "EXPLICIT",
+      "source": "Progressing to spectral depth of 1000, the subnetworks at 300 fractured further yielding 9 discrete subnetworks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of subnetworks at spectral depth 1000.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "1cef2bb1-9218-4868-9ed0-5930ac5ab7a3",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C16",
+      "claim": "44 of 55 of the proteins listed in the KEGG hierarchy also appeared in the statistical hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "First, 44 of 55 of the proteins listed in the KEGG hierarchy also appeared in the statistical hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the overlap between the KEGG hierarchy and the statistical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "112903c3-a726-4434-96d5-b221fbc9e5c8",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C17",
+      "claim": "7 of the 12 categories listed in the KEGG hierarchy had a one-to-one correspondence with a subnetwork of the statistical model sharing an overlapping set of proteins and similar descriptive label.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, 7 of the 12 categories listed in the KEGG hierarchy had a one-to-one correspondence with a subnetwork of the statistical model sharing an overlapping set of proteins and similar descriptive label.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the correspondence between KEGG categories and statistical subnetworks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "729e9499-1875-432c-8b17-1e4206f14b9d",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C18",
+      "claim": "The statistical hierarchy included subnetworks related to cyclic-di-GMP signaling and LPS biosynthesis which were absent from the KEGG hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "The most striking difference was that our statistical hierarchy included subnetworks related to cyclic-di-GMP signaling and LPS biosynthesis which were absent from the KEGG hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the differences between the statistical and KEGG hierarchies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "c700cdda-879c-4c36-a7f2-823ba8e96c78",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C19",
+      "claim": "Prior experimental studies have provided direct genetic evidence that cyclic-di-GMP signaling and LPS biosynthesis systems are involved in E. coli K12 motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior experimental studies have provided direct genetic evidence that these systems are involved in E. coli K12 motility (Paul et al., 2010; Walker et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites prior experimental studies supporting the involvement of these systems in motility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "6f477825-95a7-4f61-b5ba-c817aeb6e765",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C20",
+      "claim": "Of the 75 proteins in the hierarchical model of E. coli K12 motility, 44 (59%) were represented in the KEGG hierarchy, 28 (37%) were missing from the KEGG hierarchy but supported by prior experimental evidence in the literature, and only 3 (4%) remained unvalidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, of the 75 proteins in our hierarchical model of E. coli K12 motility, 44 (59%) were represented in the KEGG hierarchy, 28 (37%) were missing from the KEGG hierarchy but supported by prior experimental evidence in the literature, and only 3 (4%) remained unvalidated (CsgG, PpdD, TorS; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the breakdown of validation for proteins in the model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "15264764-c64c-4448-8796-51f5caa66a8b",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C21",
+      "claim": "Four uncharacterized proteins (Q9I5G6, Q9I5R2, Q9I0G2, Q9I0G1) were included in the pilus subnetwork that had not previously been associated with PilA in P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Four uncharacterized proteins (Q9I5G6, Q9I5R2, Q9I0G2, Q9I0G1) were included in the pilus subnetwork that had not previously been associated with PilA in P. aeruginosa (Figure 7BSupplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies four uncharacterized proteins in the pilus subnetwork, supported by Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "3cd3ed76-5cba-450e-a106-23d1d672ff59",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C22",
+      "claim": "Two different transposon mutants of Q9I5G6 exhibited significantly reduced pilus-based motility over 24, 48, and 72 hr compared to the parent strain (p<10\u20134 by Dunnett's multiple comparisons test).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that two different transposon mutants of Q9I5G6 exhibited significantly reduced pilus-based motility over 24, 48, and 72 hr compared to the parent strain (Figure 7C, p<10\u20134 by Dunnett's multiple comparisons test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the experimental results with statistical significance, supported by Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "967c8887-692c-4cf1-8560-967f7109fd77",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C23",
+      "claim": "Flagellar-based motility of the transposon mutants in Q9I5G6 was not significantly different from that of the parent strain (p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, flagellar-based motility of the transposon mutants in Q9I5G6 was not significantly different from that of the parent strain (Figure 7C\u2014inset, p>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the experimental results with statistical significance, supported by Figure 7C inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "981aee8c-7d76-4370-8b33-be7b69b2710c",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C24",
+      "claim": "Q9I5G6 is a previously unappreciated effector of directed motility in P. aeruginosa that specifically impacts twitch-based motility.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrate that Q9I5G6 is a previously unappreciated effector of directed motility in P. aeruginosa that specifically impacts twitch-based motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results showing specific effects on twitch motility but not flagellar motility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "0cd089bf-878a-4508-9484-6573719f2129",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C25",
+      "claim": "The experimental results represent a statistically significant enrichment (25% association rate, p<10\u20134 by chi-squared) compared to the background expectation of finding a protein that affects twitch motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the background expectation of finding a protein that affects twitch motility (22 'pilus assembly proteins' in BRITE KO02035 out of 5564 proteins in the PAO1 proteome equating to a 0.4% background rate of association), our experimental results represent a statistically significant enrichment (25% association rate, p<10\u20134 by chi-squared).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the statistical comparison between the observed and expected rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "2d463109-c79e-48b1-b385-720aafb08321",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C26",
+      "claim": "Predictions based on windowed spectral correlations produced significantly greater F-scores for all three interaction classes compared to 18 alternative methods in all four validation tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that our predictions based on windowed spectral correlations produced significantly greater F-scores for all three interaction classes compared to 18 alternative methods in all four validation tasks (Figure 8A, Figure 8\u2014figure supplement 3, statistical comparisons by Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the comparison results with statistical testing, supported by Figures 8A and 8\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "45aa0266-ded6-4ab3-b193-69cd52bd09b0",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C28",
+      "claim": "The tuned performance of SVD-phy on either interaction class was inferior compared to the method of windowed spectral correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the tuned performance on either class was inferior compared to our method of windowed spectral correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of performance metrics between SVD-phy and the windowed spectral correlations method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "2fabdc00-4a41-4517-9812-d6258f36d2aa",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C30",
+      "claim": "The windowed spectral correlations approach exhibited significantly greater precision and recall compared to the Coev+ method for predicting direct PPIs in M. tuberculosis H37Rv.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the direct PPIs for Mycobacterium tuberculosis H37Rv found in the STRING database as a benchmark, we found that our approach exhibited significantly greater precision and recall whether using the STRING composite score (as done by Cong et al.) or the STRING experimental subscores (Figure 8D, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the comparison results, supported by Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "28e9b5a3-08a1-4c22-bff1-1cd5c5d6f80f",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C31",
+      "claim": "Cellular behaviors emerge from layers of molecular interactions: proteins interact to form complexes, pathways, and phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular behaviors emerge from layers of molecular interactions: proteins interact to form complexes, pathways, and phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biological organization presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "b872abbb-2bd7-4327-a36a-5f0d6e41a33c",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C32",
+      "claim": "Hierarchical networks of protein interactions can be defined from the statistical pattern of proteome variation measured across thousands of diverse bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that hierarchical networks of protein interactions can be defined from the statistical pattern of proteome variation measured across thousands of diverse bacteria and that these networks reflect the emergence of complex bacterial phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main claim of the study presented in the abstract, summarizing the overall approach and findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "0fcd38b3-1dbe-429a-8fdb-356a42621391",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C33",
+      "claim": "The hierarchical networks reflect the emergence of complex bacterial phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that hierarchical networks of protein interactions can be defined from the statistical pattern of proteome variation measured across thousands of diverse bacteria and that these networks reflect the emergence of complex bacterial phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main claim of the study presented in the abstract, describing the biological relevance of the networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "6de24f98-8f41-4c81-9bbd-7e486c256dea",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C34",
+      "claim": "The results are validated through gene-set enrichment analysis and comparison to existing experimentally derived databases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are validated through gene-set enrichment analysis and comparison to existing experimentally derived databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the validation approach used in the study, presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "9588a44d-5a72-430b-8d9a-1779caec2778",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C35",
+      "claim": "A model of motility in Pseudomonas aeruginosa was created and used to identify a protein that affects pilus-mediated motility.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the biological utility of our approach by creating a model of motility in Pseudomonas aeruginosa and using it to identify a protein that affects pilus-mediated motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental validation of the method, presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "83b53426-b859-494a-86f9-90292805671e",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C36",
+      "claim": "SCALES may be useful for interrogating genotype-phenotype relationships in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method, SCALES (Spectral Correlation Analysis of Layered Evolutionary Signals), may be useful for interrogating genotype-phenotype relationships in bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential utility of the method, presented in the abstract.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "499aaef1-b976-440f-b08d-b3dad6d6f7b1",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C37",
+      "claim": "Complex behaviors emerge from layers of protein interactions: proteins interact to form complexes, complexes interact to form pathways, and pathways interact to create phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical and genetic studies have illustrated that complex behaviors emerge from layers of protein interactions: proteins interact to form complexes, complexes interact to form pathways, and pathways interact to create phenotypes (Papin et al., 2004; Ravasz, 2009; Nurse, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about biological organization supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "ce646e3c-24de-4f9a-8865-effd1d16b2a3",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C38",
+      "claim": "Experimental methods for identifying protein-protein interactions are rapidly becoming more high-throughput and comprehensive.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental methods are rapidly becoming more high-throughput and comprehensive (Rajagopala et al., 2014; Schoenrock et al., 2017; H\u00e4user et al., 2014; Koo et al., 2017; Luck et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of experimental methods supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "bfda15ff-3d23-4e39-b0bd-cf59fff89ef5",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C39",
+      "claim": "Computational methods based on statistical patterns of co-occurrence or co-proximity of functionally related genes first appeared shortly after publication of whole genome sequences and are an active area of research.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational methods based on statistical patterns of co-occurrence or co-proximity of functionally related genes first appeared shortly after publication of whole genome sequences and are an active area of research (Eisen, 2017; Pellegrini et al., 2017; Enright et al., 2017; Valencia and Pazos, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the history and current state of computational methods supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "2ca2b01b-50e6-4d0a-be15-2d190fbdc131",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C40",
+      "claim": "Recent efforts have advanced the state-of-the-art in computational methods by incorporating evolutionary models (phylogenomics), interaction models borrowed from statistical physics, or spectral methods borrowed from signal processing.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent efforts have advanced the state-of-the-art in computational methods by incorporating evolutionary models (phylogenomics), interaction models borrowed from statistical physics, or spectral methods borrowed from signal processing (Nagy et al., 2020; Franceschini et al., 2016; Moi et al., 2020; Croce et al., 2019; Cong et al., 2019; Green et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about recent advances in computational methods supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "99a23dfb-fcfe-46d3-ac11-8e5dc1db8702",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C41",
+      "claim": "While higher-order interactions can be inferred from pairwise interactions, recent experimental evidence shows that such inferences are incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "While higher-order interactions can be inferred from pairwise interactions, recent experimental evidence shows that such inferences are incomplete (Kuzmin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of inferring higher-order interactions from pairwise interactions, supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "9b370700-0436-421f-84d1-c640bb7d2cbe",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C42",
+      "claim": "Both pairwise and higher-order interactions can be extracted from coevolutionary statistics to create a single multi-scale hierarchical model describing the emergence of complex phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using bacteria as a model, here we show that both pairwise and higher-order interactions can be extracted from coevolutionary statistics to create a single multi-scale hierarchical model describing the emergence of complex phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main claim of the study presented in the introduction, summarizing the overall approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "cb921207-6877-4e5b-87f8-23a9cfb7cf53",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C43",
+      "claim": "All bacterial proteomes from the UniProt Reference Proteome Database were downloaded on May 20, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "To broadly sample extant bacterial diversity, we downloaded all bacterial proteomes from the UniProt Reference Proteome Database (UniProt Consortium, 2019; downloaded May 20, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data source and download date.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "a3f3110e-32e9-4309-b430-f53c6c76ecb2",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C46",
+      "claim": "The percent variance explained by the SVD spectrum follows a power-law distribution with exponent \u03b3 = -0.89.",
+      "claim_type": "EXPLICIT",
+      "source": "Percent variance explained versus spectral component (singular value decomposition ['SVD] component') number; fit is to a power-law distribution with the indicated exponent (\u03b3).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 1B shows the fit to a power-law distribution with the indicated exponent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "0340bb67-2ca1-4d20-ad52-005d919bcc73",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C47",
+      "claim": "The variance of the distribution of spectral correlations decreased rapidly as the correlation window widened until a width of 100 components.",
+      "claim_type": "EXPLICIT",
+      "source": "The variance of this distribution decreased rapidly as the correlation window widened until a width of 100 components. This motivated our choice of computing spectral correlations over sets of 100 components (Figure 4\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the observation and its implication for choosing the window width, supported by Figure 4\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "3a8f9d64-80a6-47d9-9b8a-700dffadcbb5",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C48",
+      "claim": "Distributions of all-by-all spectral correlations between E. coli K12 proteins across windows centered on different regions of the SVD spectrum were superimposable.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed distributions of all-by-all spectral correlations between E. coli K12 proteins across windows centered on different regions of the SVD spectrum and found them to be superimposable (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the observation, supported by Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "a60f2d98-e105-49b0-98f3-b14602e694bb",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C49",
+      "claim": "Distributions of all-by-all spectral correlations for proteins from diverse bacteria were superimposable with those derived from E. coli K12.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we computed such distributions for proteins from other diverse bacteria and found them to be superimposable with those derived from E. coli K12 (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the observation, supported by Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "03d4b1ad-741f-41e5-840c-0d8dd2a1691d",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C50",
+      "claim": "A constant threshold for significant spectral correlations between two proteins across any 100-component SVD window was defined at 0.29 associated with a p-value of 0.018.",
+      "claim_type": "EXPLICIT",
+      "source": "The p-value derived from the empirical cumulative distribution function of this model decreased rapidly until a threshold value of 0.29 (Figure 4\u2014figure supplement 1E). Therefore, we chose the value of 0.29 associated with a p-value of 0.018 as the threshold of spectral correlations signifying functional interactions between proteins derived from any bacterial proteome within any region of the SVD spectrum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the threshold value and its associated p-value, supported by Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "56ab91ff-1c29-45d2-8500-c6a90c1b9504",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C51",
+      "claim": "A precomputed database of proteome-wide indirect (122,725,727) and direct (19,546,063) PPI predictions for all 7047 UniProt reference bacterial proteomes has been developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Having shown that SCALES can be useful for guiding biological discovery, we have developed the following resources: (i) a precomputed database of proteome-wide indirect (122,725,727) and direct (19,546,063) PPI predictions for all 7047 UniProt reference bacterial proteomes; (ii) a tool for predicting indirect and direct PPIs for a user-input proteome; (iii) a tool for generating and interrogating a hierarchical model for a query protein of interest. All of these can be found at scales.cri.uchicago.edu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the resources developed and made available.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "86d4b6d1-5140-4759-a013-a0aa8f281857",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C52",
+      "claim": "The admixture of signals arising from phylogeny, function, and noise negatively impact the accuracy of PPI predictions using comparative genomics.",
+      "claim_type": "EXPLICIT",
+      "source": "The admixture of signals arising from phylogeny, function, and noise negatively impact the accuracy of PPI predictions using comparative genomics (Sch\u00e4fer and Strimmer, 2005; Sul et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a known challenge in comparative genomics, supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "7a444454-1041-4603-a9b5-b38773691afb",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C53",
+      "claim": "Relevant biological signal is contained throughout the SVD spectrum, including components harboring a minutiae of data variance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results also illustrate that relevant biological signal is contained throughout the SVD spectrum, including components harboring a minutiae of data variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results showing biological information in deep SVD components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "2ce67d66-d9e5-4277-a53f-e9803d9b0da5",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C54",
+      "claim": "Percent variance per component is not a good proxy for relevant biological signal.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that percent variance per component is not a good proxy for relevant biological signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that deep components with low variance contain biologically meaningful information.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "c4112f07-b3d4-44db-9b84-4415fee03654",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C55",
+      "claim": "AA Coev represented a significant advance for two reasons: (i) it considered coevolution at the resolution of amino acids and (ii) it applied DCA to entire bacterial proteomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Their method represented a significant advance for two reasons: (i) it considered coevolution at the resolution of amino acids and (ii) it applied DCA, to entire bacterial proteomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advances made by the AA Coev method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "3c085cc8-ef24-4ebf-b2c5-7a94d00ab33c",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C56",
+      "claim": "AA Coev is computationally expensive and has been applied to just two organisms thus far.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking difference between the two approaches is related to computational scalability. AA Coev is computationally expensive and, as a result, has been applied to just two organisms thus far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the computational limitations of the AA Coev method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "c004e855-d80b-41dc-a5ec-c97512d71c12",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C57",
+      "claim": "The SCALES approach can compute proteome-wide PPIs in a matter of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we note that our approach can compute proteome-wide PPIs in a matter of minutes, enabling us to provide predictions for all 7047 UniProt Reference Proteomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the computational efficiency of the SCALES method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "402a27b0-cc4b-4288-accb-6da891f8eec0",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C58",
+      "claim": "Many proteins have no annotated OGG\u2014for example, 295 of the ~4000 E. coli K12 proteins (6.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "First, many proteins have no annotated OGG\u2014for example, 295 of the ~4000 E. coli K12 proteins (6.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the method related to OGG annotation coverage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "b63f235d-3fa3-4906-b3b7-61969ae3c68c",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C59",
+      "claim": "Proteins with no annotated OGG cannot be assigned to interactions or units of function by the SCALES method.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins cannot be assigned to interactions or units of function by our method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the method for proteins without OGG annotations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "21dd0ce0-5a37-44ee-899e-1791c7d7a479",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C60",
+      "claim": "Many proteins share the same OGGs and appear to interact at all spectral depths.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, many proteins share the same OGGs and appear to interact at all spectral depths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the method related to proteins sharing OGGs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "f0ba1896-9eb8-49d3-aa41-8592b77ba0d0",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C61",
+      "claim": "The SCALES methods are inherently 'mechanism-free': they leverage evolutionary constraint without knowledge of the specific pressures driving the selection of interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Another limitation of the methods developed here is that they are inherently 'mechanism-free': they leverage evolutionary constraint without knowledge of the specific pressures driving the selection of interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a conceptual limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "8809f39e-e230-4e94-b25f-a1f16819606c",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C62",
+      "claim": "The SCALES methods identify functionally relevant interactors but cannot reveal their collective function or the detailed molecular basis of the interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, our methods identify functionally relevant interactors but cannot reveal their collective function or the detailed molecular basis of the interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of what the method can reveal.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "0d5b35c7-8186-4ac9-9ca0-64b1a864d208",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C63",
+      "claim": "SCALES represents a statistical way to describe emergence\u2014the integration of individual components into layers of collective units of function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, aside from these practical considerations, SCALES represents a statistical way to describe emergence\u2014the integration of individual components into layers of collective units of function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the conceptual contribution of SCALES.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "345acd07-ad9e-4b63-a3ff-13c88b34aa3a",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C64",
+      "claim": "The property of emergence spans biological systems, from proteins to ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "The property of emergence spans biological systems, from proteins to ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generality of the concept of emergence in biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "08693c40-4297-4ccd-9efc-171bf58fa315",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "claim_id": "C65",
+      "claim": "SCALES may be a generally useful approach to learning the hierarchical architecture of biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while it remains to be tested, it may be true that SCALES is a generally useful approach to learning the hierarchical architecture of biological systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential generalizability of SCALES.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f1bc4bd2-aa6d-4301-9a78-90449750e519",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The DOGG data matrix was constructed from 7047 bacterial proteomes and 10,177 OGGs downloaded from UniProt on May 20, 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C43 describe the data source and matrix construction with explicit dimensions and dates. The methodology is clearly documented with appropriate citations to the database and annotation tools used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "d71db16c-27ba-4a7d-9c1a-ec16b138a53d",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The first four SVD components (SVD1-SVD4) capture phylogenetic signal, explaining only 17% of variance, with bacteria clustering by phylum, consistent with known phylogenetic confounding in comparative genomics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 are mutually consistent and supported by Figure 1C showing phylum-based clustering. The 17% variance explained (C4) is explicitly stated, and the phylogenetic interpretation (C3, C5) is supported by both the data and citations to prior work on phylogenetic confounding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "dbacea7f-1820-4b22-b692-6535ff0e156f",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Different biological scales are distributed hierarchically across the SVD spectrum: phylogeny in shallow components (tens), indirect PPIs in intermediate components (hundreds), and direct PPIs in deep components (thousands), with this pattern robust to subsampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 describe a core finding supported by Figure 3A-C showing distinct MI distributions for different biological benchmarks across the SVD spectrum. The statistical significance of deep components (C7) is demonstrated in Figure 3B, and robustness to subsampling (C10) is shown in supplementary figures. This represents a key methodological advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "41838da1-1e97-4ab1-b11e-6455157924ad",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The variance explained by SVD components follows a power-law distribution with exponent \u03b3 = -0.89.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is explicitly stated and supported by Figure 1B showing the power-law fit. This characterizes the spectral properties of the data matrix.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "caf0b452-b01e-4f82-bd3a-783cce9c748e",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A statistical model for significant spectral correlations was developed using 100-component windows with a threshold of 0.29 (p=0.018), based on empirical distributions that were superimposable across different spectral regions and organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 describe the development of a statistical significance model supported by Figure 4\u2014figure supplement 1. The choice of window width (C47) and threshold (C50) are justified by empirical observations of distribution properties (C48, C49). The methodology is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "3c1617b2-41fa-4fcf-9ed0-8fb288c500de",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A hierarchical model of E. coli K12 motility was constructed from 75 proteins correlated with FliC, revealing progressive network fragmentation at different spectral depths (50, 300, 1000) corresponding to different functional scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 describe the construction and properties of the E. coli motility model, supported by Figures 5 and 6A. The number of proteins (C11), network structures at different depths (C12, C14, C15), and GSEA enrichments (C13, C14) are explicitly documented with highly significant p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "ac715aa1-f5d4-4123-bd49-b78f559e50f3",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The statistical hierarchy of E. coli K12 motility showed substantial agreement with the KEGG hierarchy (44/55 proteins, 7/12 categories) but additionally identified cyclic-di-GMP and LPS biosynthesis modules supported by prior experimental evidence, with 96% of predicted proteins validated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 describe validation of the E. coli motility model against KEGG and literature. The quantitative overlaps (C16, C17, C20) are explicitly stated, differences are identified (C18), and literature support is cited (C19). The high validation rate (96%) provides strong support for the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "de3d4779-5198-4ca8-9210-2efad3469b59",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Four uncharacterized proteins were predicted to affect P. aeruginosa pilus motility; experimental validation showed Q9I5G6 specifically reduces pilus-based motility (p<10\u207b\u2074) without affecting flagellar motility, representing significant enrichment over background expectation (p<10\u207b\u2074).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 describe prediction and experimental validation of novel motility effectors. The predictions (C21) are tested experimentally with appropriate controls (C22, C23), statistical significance is demonstrated (C22, C25), and specificity is shown (C23, C24). This represents successful prospective validation of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "3780db6f-ffcf-4090-bed3-6bbf430a25e7",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Windowed spectral correlations (MIWSCs) produced significantly higher F-scores than 18 alternative methods for predicting all three interaction classes, outperforming the mathematically similar SVD-phy method even when tuned.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C28 describe comparative performance supported by Figure 8A and statistical testing (Wilcoxon rank-sum). The superiority over multiple methods including the similar SVD-phy approach is clearly demonstrated across multiple validation tasks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "c3df1248-03f8-4912-a037-aebcf439e462",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The SCALES approach exhibited significantly greater precision and recall than the Coev+ method for predicting direct PPIs in M. tuberculosis H37Rv.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by Figure 8D showing superior performance compared to the state-of-the-art AA Coev method. This demonstrates competitive performance despite using lower-resolution features (OGGs vs. amino acid sequences).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "e84068d4-cccf-4d7e-b00c-4a9940e5bc20",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A precomputed database of 122,725,727 indirect and 19,546,063 direct PPI predictions for all 7047 UniProt reference bacterial proteomes was developed and made publicly available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 explicitly describes the resource developed, with specific numbers of predictions and availability information. This represents a significant practical contribution to the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "6a7ea6ca-0544-4f58-8edd-a95aa32a772a",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Relevant biological signal is distributed throughout the SVD spectrum including components with minimal variance, demonstrating that percent variance per component is not a good proxy for biological relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C54 represent a key conceptual finding supported by the observation that deep components (e.g., SVD2996-3000) with only 0.025% variance contain statistically significant biological information (C7). This challenges conventional dimensionality reduction approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "5e92e63a-fc97-49da-85bd-dc515ce8dfc2",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Compared to AA Coev which is computationally expensive and applied to only two organisms, SCALES can compute proteome-wide PPIs in minutes, enabling analysis of all 7047 reference proteomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 compare computational scalability between methods. The characterization of AA Coev (C55, C56) is factual, and the computational efficiency of SCALES (C57) is demonstrated by the comprehensive analysis performed. This represents a significant practical advantage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "3d217c74-231c-48b1-a100-c84c0889bde9",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The method has limitations related to OGG annotations: 6.7% of E. coli K12 proteins lack OGG annotations and cannot be analyzed, and proteins sharing OGGs appear to interact at all spectral depths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 honestly describe methodological limitations with specific quantification (C58). These are inherent to the OGG-based approach and appropriately acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "536dbb91-3bf4-4f48-829d-6f92991a6625",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "SCALES is inherently 'mechanism-free', identifying functionally relevant interactors without revealing their collective function or detailed molecular basis of interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C62 describe conceptual limitations of the approach. This is a fair characterization of what correlation-based methods can and cannot reveal about biological mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "eeaeab6f-0d40-43f9-b184-896efdce7a78",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SCALES represents a statistical approach to describing emergence\u2014the integration of components into hierarchical functional units\u2014a property spanning biological systems, suggesting potential general applicability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C65 describe the conceptual framework and potential generalizability. While C63 and C64 are reasonable characterizations, C65 is explicitly speculative ('may be true', 'remains to be tested'). The generalizability beyond bacteria requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "8ceb6620-93ba-44e3-9764-21e3fabefbb9",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Hierarchical networks of protein interactions reflecting emergence of complex bacterial phenotypes can be defined from statistical patterns of proteome variation across thousands of bacteria, validated through enrichment analysis, database comparison, and experimental testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 and C42 represent the main thesis and approach of the study. The hierarchical network construction (C32, C33) is supported by multiple lines of evidence including GSEA (C34), KEGG comparison (C16-C20), and experimental validation (C21-C25). The approach is well-validated across multiple test cases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    },
+    {
+      "id": "eef8a809-1c09-4abf-97df-889c82f02678",
+      "content_id": "cc4fb973-c45d-4e1e-9819-db4f7f20eb60",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study builds on a foundation of experimental and computational PPI methods, addressing the known limitation that higher-order interactions cannot be completely inferred from pairwise interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 provide context from prior work, appropriately cited. These establish the motivation for developing methods that can capture hierarchical organization directly rather than inferring it from pairwise interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:03:16.659401Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6c5d76df-4eec-499a-9071-87ca62586343",
+      "result_id": "f1bc4bd2-aa6d-4301-9a78-90449750e519"
+    },
+    {
+      "claim_id": "cb921207-6877-4e5b-87f8-23a9cfb7cf53",
+      "result_id": "f1bc4bd2-aa6d-4301-9a78-90449750e519"
+    },
+    {
+      "claim_id": "be57053f-58e2-4854-ab3d-120a55fdc365",
+      "result_id": "d71db16c-27ba-4a7d-9c1a-ec16b138a53d"
+    },
+    {
+      "claim_id": "1644c4fa-f0c1-429e-9c31-32ff13d9fa54",
+      "result_id": "d71db16c-27ba-4a7d-9c1a-ec16b138a53d"
+    },
+    {
+      "claim_id": "daf0f78c-002a-4dd7-a7a3-1244b5fb69c7",
+      "result_id": "d71db16c-27ba-4a7d-9c1a-ec16b138a53d"
+    },
+    {
+      "claim_id": "3df70650-ab78-43f4-922f-ae2f7809b3fc",
+      "result_id": "d71db16c-27ba-4a7d-9c1a-ec16b138a53d"
+    },
+    {
+      "claim_id": "b78a8f34-8750-4434-a9d2-8c0e34483437",
+      "result_id": "dbacea7f-1820-4b22-b692-6535ff0e156f"
+    },
+    {
+      "claim_id": "3e3bfc58-cbbb-49c3-9d2f-c59d60518958",
+      "result_id": "dbacea7f-1820-4b22-b692-6535ff0e156f"
+    },
+    {
+      "claim_id": "d80331f2-7f47-40d2-a6c4-65bc7d19f78c",
+      "result_id": "dbacea7f-1820-4b22-b692-6535ff0e156f"
+    },
+    {
+      "claim_id": "8a91008b-791f-4977-8d4f-9b444346dd28",
+      "result_id": "dbacea7f-1820-4b22-b692-6535ff0e156f"
+    },
+    {
+      "claim_id": "6d11b02d-213f-4307-bc5e-a4f9c55e48fc",
+      "result_id": "dbacea7f-1820-4b22-b692-6535ff0e156f"
+    },
+    {
+      "claim_id": "a3f3110e-32e9-4309-b430-f53c6c76ecb2",
+      "result_id": "41838da1-1e97-4ab1-b11e-6455157924ad"
+    },
+    {
+      "claim_id": "0340bb67-2ca1-4d20-ad52-005d919bcc73",
+      "result_id": "caf0b452-b01e-4f82-bd3a-783cce9c748e"
+    },
+    {
+      "claim_id": "3a8f9d64-80a6-47d9-9b8a-700dffadcbb5",
+      "result_id": "caf0b452-b01e-4f82-bd3a-783cce9c748e"
+    },
+    {
+      "claim_id": "a60f2d98-e105-49b0-98f3-b14602e694bb",
+      "result_id": "caf0b452-b01e-4f82-bd3a-783cce9c748e"
+    },
+    {
+      "claim_id": "03d4b1ad-741f-41e5-840c-0d8dd2a1691d",
+      "result_id": "caf0b452-b01e-4f82-bd3a-783cce9c748e"
+    },
+    {
+      "claim_id": "daf95d9b-5260-4a16-99da-8911975a841c",
+      "result_id": "3c1617b2-41fa-4fcf-9ed0-8fb288c500de"
+    },
+    {
+      "claim_id": "b4d6b411-5eae-4652-be9a-ef8945cde871",
+      "result_id": "3c1617b2-41fa-4fcf-9ed0-8fb288c500de"
+    },
+    {
+      "claim_id": "c584ba9c-32fa-4653-93e9-86c8abcbf03f",
+      "result_id": "3c1617b2-41fa-4fcf-9ed0-8fb288c500de"
+    },
+    {
+      "claim_id": "b3736c44-c0a8-40d3-b0da-ab0cb74b1439",
+      "result_id": "3c1617b2-41fa-4fcf-9ed0-8fb288c500de"
+    },
+    {
+      "claim_id": "1f74ab42-1a3f-44e2-a22c-5dd1f8304bf8",
+      "result_id": "3c1617b2-41fa-4fcf-9ed0-8fb288c500de"
+    },
+    {
+      "claim_id": "1cef2bb1-9218-4868-9ed0-5930ac5ab7a3",
+      "result_id": "ac715aa1-f5d4-4123-bd49-b78f559e50f3"
+    },
+    {
+      "claim_id": "112903c3-a726-4434-96d5-b221fbc9e5c8",
+      "result_id": "ac715aa1-f5d4-4123-bd49-b78f559e50f3"
+    },
+    {
+      "claim_id": "729e9499-1875-432c-8b17-1e4206f14b9d",
+      "result_id": "ac715aa1-f5d4-4123-bd49-b78f559e50f3"
+    },
+    {
+      "claim_id": "c700cdda-879c-4c36-a7f2-823ba8e96c78",
+      "result_id": "ac715aa1-f5d4-4123-bd49-b78f559e50f3"
+    },
+    {
+      "claim_id": "6f477825-95a7-4f61-b5ba-c817aeb6e765",
+      "result_id": "ac715aa1-f5d4-4123-bd49-b78f559e50f3"
+    },
+    {
+      "claim_id": "15264764-c64c-4448-8796-51f5caa66a8b",
+      "result_id": "de3d4779-5198-4ca8-9210-2efad3469b59"
+    },
+    {
+      "claim_id": "3cd3ed76-5cba-450e-a106-23d1d672ff59",
+      "result_id": "de3d4779-5198-4ca8-9210-2efad3469b59"
+    },
+    {
+      "claim_id": "967c8887-692c-4cf1-8560-967f7109fd77",
+      "result_id": "de3d4779-5198-4ca8-9210-2efad3469b59"
+    },
+    {
+      "claim_id": "981aee8c-7d76-4370-8b33-be7b69b2710c",
+      "result_id": "de3d4779-5198-4ca8-9210-2efad3469b59"
+    },
+    {
+      "claim_id": "0cd089bf-878a-4508-9484-6573719f2129",
+      "result_id": "de3d4779-5198-4ca8-9210-2efad3469b59"
+    },
+    {
+      "claim_id": "2d463109-c79e-48b1-b385-720aafb08321",
+      "result_id": "3780db6f-ffcf-4090-bed3-6bbf430a25e7"
+    },
+    {
+      "claim_id": "45aa0266-ded6-4ab3-b193-69cd52bd09b0",
+      "result_id": "3780db6f-ffcf-4090-bed3-6bbf430a25e7"
+    },
+    {
+      "claim_id": "2fabdc00-4a41-4517-9812-d6258f36d2aa",
+      "result_id": "c3df1248-03f8-4912-a037-aebcf439e462"
+    },
+    {
+      "claim_id": "56ab91ff-1c29-45d2-8500-c6a90c1b9504",
+      "result_id": "e84068d4-cccf-4d7e-b00c-4a9940e5bc20"
+    },
+    {
+      "claim_id": "7a444454-1041-4603-a9b5-b38773691afb",
+      "result_id": "6a7ea6ca-0544-4f58-8edd-a95aa32a772a"
+    },
+    {
+      "claim_id": "2ce67d66-d9e5-4277-a53f-e9803d9b0da5",
+      "result_id": "6a7ea6ca-0544-4f58-8edd-a95aa32a772a"
+    },
+    {
+      "claim_id": "c4112f07-b3d4-44db-9b84-4415fee03654",
+      "result_id": "5e92e63a-fc97-49da-85bd-dc515ce8dfc2"
+    },
+    {
+      "claim_id": "3c085cc8-ef24-4ebf-b2c5-7a94d00ab33c",
+      "result_id": "5e92e63a-fc97-49da-85bd-dc515ce8dfc2"
+    },
+    {
+      "claim_id": "c004e855-d80b-41dc-a5ec-c97512d71c12",
+      "result_id": "5e92e63a-fc97-49da-85bd-dc515ce8dfc2"
+    },
+    {
+      "claim_id": "402a27b0-cc4b-4288-accb-6da891f8eec0",
+      "result_id": "3d217c74-231c-48b1-a100-c84c0889bde9"
+    },
+    {
+      "claim_id": "b63f235d-3fa3-4906-b3b7-61969ae3c68c",
+      "result_id": "3d217c74-231c-48b1-a100-c84c0889bde9"
+    },
+    {
+      "claim_id": "21dd0ce0-5a37-44ee-899e-1791c7d7a479",
+      "result_id": "3d217c74-231c-48b1-a100-c84c0889bde9"
+    },
+    {
+      "claim_id": "f0ba1896-9eb8-49d3-aa41-8592b77ba0d0",
+      "result_id": "536dbb91-3bf4-4f48-829d-6f92991a6625"
+    },
+    {
+      "claim_id": "8809f39e-e230-4e94-b25f-a1f16819606c",
+      "result_id": "536dbb91-3bf4-4f48-829d-6f92991a6625"
+    },
+    {
+      "claim_id": "0d5b35c7-8186-4ac9-9ca0-64b1a864d208",
+      "result_id": "eeaeab6f-0d40-43f9-b184-896efdce7a78"
+    },
+    {
+      "claim_id": "345acd07-ad9e-4b63-a3ff-13c88b34aa3a",
+      "result_id": "eeaeab6f-0d40-43f9-b184-896efdce7a78"
+    },
+    {
+      "claim_id": "08693c40-4297-4ccd-9efc-171bf58fa315",
+      "result_id": "eeaeab6f-0d40-43f9-b184-896efdce7a78"
+    },
+    {
+      "claim_id": "28e9b5a3-08a1-4c22-bff1-1cd5c5d6f80f",
+      "result_id": "8ceb6620-93ba-44e3-9764-21e3fabefbb9"
+    },
+    {
+      "claim_id": "b872abbb-2bd7-4327-a36a-5f0d6e41a33c",
+      "result_id": "8ceb6620-93ba-44e3-9764-21e3fabefbb9"
+    },
+    {
+      "claim_id": "0fcd38b3-1dbe-429a-8fdb-356a42621391",
+      "result_id": "8ceb6620-93ba-44e3-9764-21e3fabefbb9"
+    },
+    {
+      "claim_id": "6de24f98-8f41-4c81-9bbd-7e486c256dea",
+      "result_id": "8ceb6620-93ba-44e3-9764-21e3fabefbb9"
+    },
+    {
+      "claim_id": "9588a44d-5a72-430b-8d9a-1779caec2778",
+      "result_id": "8ceb6620-93ba-44e3-9764-21e3fabefbb9"
+    },
+    {
+      "claim_id": "83b53426-b859-494a-86f9-90292805671e",
+      "result_id": "8ceb6620-93ba-44e3-9764-21e3fabefbb9"
+    },
+    {
+      "claim_id": "499aaef1-b976-440f-b08d-b3dad6d6f7b1",
+      "result_id": "8ceb6620-93ba-44e3-9764-21e3fabefbb9"
+    },
+    {
+      "claim_id": "9b370700-0436-421f-84d1-c640bb7d2cbe",
+      "result_id": "8ceb6620-93ba-44e3-9764-21e3fabefbb9"
+    },
+    {
+      "claim_id": "ce646e3c-24de-4f9a-8865-effd1d16b2a3",
+      "result_id": "eef8a809-1c09-4abf-97df-889c82f02678"
+    },
+    {
+      "claim_id": "bfda15ff-3d23-4e39-b0bd-cf59fff89ef5",
+      "result_id": "eef8a809-1c09-4abf-97df-889c82f02678"
+    },
+    {
+      "claim_id": "2ca2b01b-50e6-4d0a-be15-2d190fbdc131",
+      "result_id": "eef8a809-1c09-4abf-97df-889c82f02678"
+    },
+    {
+      "claim_id": "99a23dfb-fcfe-46d3-ac11-8e5dc1db8702",
+      "result_id": "eef8a809-1c09-4abf-97df-889c82f02678"
+    }
+  ],
+  "comparisons": []
+}

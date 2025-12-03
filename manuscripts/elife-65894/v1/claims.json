@@ -1,0 +1,2439 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Automated segmentation of cellular electron microscopy (EM) datasets remains a challenge.",
+    "claim_type": "EXPLICIT",
+    "source": "Automated segmentation of cellular electron microscopy (EM) datasets remains a challenge.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the state of the field presented in the abstract without specific supporting data in this sentence.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Supervised deep learning (DL) methods that rely on region-of-interest (ROI) annotations yield models that fail to generalize to unrelated datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Supervised deep learning (DL) methods that rely on region-of-interest (ROI) annotations yield models that fail to generalize to unrelated datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is presented as established knowledge about limitations of supervised DL methods in the abstract.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Pre-training on currently available EM datasets is computationally expensive.",
+    "claim_type": "EXPLICIT",
+    "source": "Newer unsupervised DL algorithms require relevant pre-training images, however, pre-training on currently available EM datasets is computationally expensive and shows little value for unseen biological contexts, as these datasets are large and homogeneous.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a problem with current datasets in the abstract.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Currently available EM datasets show little value for unseen biological contexts because these datasets are large and homogeneous.",
+    "claim_type": "EXPLICIT",
+    "source": "Newer unsupervised DL algorithms require relevant pre-training images, however, pre-training on currently available EM datasets is computationally expensive and shows little value for unseen biological contexts, as these datasets are large and homogeneous.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement provides reasoning about why current datasets have limited value.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "CEM500K is a 25 GB dataset of 0.5 \u00d7 10^6 unique 2D cellular EM images.",
+    "claim_type": "EXPLICIT",
+    "source": "To address this issue, we present CEM500K, a nimble 25 GB dataset of 0.5 \u00d7 106 unique 2D cellular EM images curated from nearly 600 three-dimensional (3D) and 10,000 two-dimensional (2D) images from >100 unrelated imaging projects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the dataset created by the authors with specific measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "CEM500K was curated from nearly 600 three-dimensional (3D) and 10,000 two-dimensional (2D) images from >100 unrelated imaging projects.",
+    "claim_type": "EXPLICIT",
+    "source": "To address this issue, we present CEM500K, a nimble 25 GB dataset of 0.5 \u00d7 106 unique 2D cellular EM images curated from nearly 600 three-dimensional (3D) and 10,000 two-dimensional (2D) images from >100 unrelated imaging projects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the source material for the CEM500K dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Models pre-trained on CEM500K learn features that are biologically relevant.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that models pre-trained on CEM500K learn features that are biologically relevant and resilient to meaningful image augmentations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study presented in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Models pre-trained on CEM500K learn features that are resilient to meaningful image augmentations.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that models pre-trained on CEM500K learn features that are biologically relevant and resilient to meaningful image augmentations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study presented in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Transfer learning from CEM500K pre-trained models achieved state-of-the-art results on six publicly available benchmark segmentation tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Critically, we evaluate transfer learning from these pre-trained models on six publicly available and one newly derived benchmark segmentation task and report state-of-the-art results on each.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result of the study stated in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Transfer learning from CEM500K pre-trained models achieved state-of-the-art results on one newly derived benchmark segmentation task.",
+    "claim_type": "EXPLICIT",
+    "source": "Critically, we evaluate transfer learning from these pre-trained models on six publicly available and one newly derived benchmark segmentation task and report state-of-the-art results on each.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result of the study stated in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Segmentation of volume EM (vEM) data has enabled researchers to address questions about the organization of neural circuits.",
+    "claim_type": "EXPLICIT",
+    "source": "Segmentation of volume EM (vEM) data has enabled researchers to address questions of fundamental biological interest, including the organization of neural circuits (Takemura et al., 2015; Kasthuri et al., 2015) and the structure of various organelles (Vincent et al., 2017; Vincent et al., 2019; Hoffman et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Segmentation of volume EM (vEM) data has enabled researchers to address questions about the structure of various organelles.",
+    "claim_type": "EXPLICIT",
+    "source": "Segmentation of volume EM (vEM) data has enabled researchers to address questions of fundamental biological interest, including the organization of neural circuits (Takemura et al., 2015; Kasthuri et al., 2015) and the structure of various organelles (Vincent et al., 2017; Vincent et al., 2019; Hoffman et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Supervised deep learning (DL) models are effective at the segmentation of objects in natural images.",
+    "claim_type": "EXPLICIT",
+    "source": "While supervised deep learning (DL) models are effective at the segmentation of objects in natural images (e.g. of people, cars, furniture, and landscapes) (Wang et al., 2020; Tao et al., 2020; Carion et al., 2020; He et al., 2020), they require significant human oversight and correction when applied to the organelles and cellular structures captured by EM (Lichtman et al., 2014; Plaza and Funke, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Supervised DL models require significant human oversight and correction when applied to organelles and cellular structures captured by EM.",
+    "claim_type": "EXPLICIT",
+    "source": "While supervised deep learning (DL) models are effective at the segmentation of objects in natural images (e.g. of people, cars, furniture, and landscapes) (Wang et al., 2020; Tao et al., 2020; Carion et al., 2020; He et al., 2020), they require significant human oversight and correction when applied to the organelles and cellular structures captured by EM (Lichtman et al., 2014; Plaza and Funke, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Many limitations of supervised DL segmentation models for cellular EM data result from a lack of large and diverse training datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Many of the limitations of supervised DL segmentation models for cellular EM data result from a lack of large and, importantly, diverse training datasets (Goodfellow, 2016; Pereira et al., 2009; Sun et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Several annotated image datasets for cell and organelle segmentation are publicly available.",
+    "claim_type": "EXPLICIT",
+    "source": "Although several annotated image datasets for cell and organelle segmentation are publicly available, these often exclusively consist of images from a single experiment or tissue type, and a single imaging approach (Guay et al., 2020; \u017derovnik Meku\u010d et al., 2020; Casser et al., 2018; Perez et al., 2014; Berning et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Publicly available annotated image datasets for cell and organelle segmentation often exclusively consist of images from a single experiment or tissue type, and a single imaging approach.",
+    "claim_type": "EXPLICIT",
+    "source": "Although several annotated image datasets for cell and organelle segmentation are publicly available, these often exclusively consist of images from a single experiment or tissue type, and a single imaging approach (Guay et al., 2020; \u017derovnik Meku\u010d et al., 2020; Casser et al., 2018; Perez et al., 2014; Berning et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The homogeneity of publicly available datasets often means that they are ineffective for training DL models to accurately segment images from unseen experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "The homogeneity of such datasets often means that they are ineffective for training DL models to accurately segment images from unseen experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the characteristics of existing datasets.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The norm when confronted with new EM data is to extract and annotate small regions-of-interest (ROIs) from the EM image, train a model on the ROIs, and then apply the model to infer segmentations for the remaining unlabeled data.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead, when confronted with new data, the norm is to extract and annotate small regions-of-interest (ROIs) from the EM image, train a model on the ROIs, and then apply the model to infer segmentations for the remaining unlabeled data (Guay et al., 2020; \u017derovnik Meku\u010d et al., 2020; Casser et al., 2018; Perez et al., 2014; Berning et al., 2015; Januszewski et al., 2018; Funke et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement describes common practice supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Dataset-specialized models often fail to generalize even to parts of the same dataset that are spatially distant from the training ROIs.",
+    "claim_type": "EXPLICIT",
+    "source": "Often, not only are these models dataset-specialized, reducing their utility, they often fail to generalize even to parts of the same dataset that are spatially distant from the training ROIs (\u017derovnik Meku\u010d et al., 2020; Buhmann, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Gathering more annotated data for model training from disparate sources could improve a model's ability to generalize to unseen images.",
+    "claim_type": "EXPLICIT",
+    "source": "First, gathering more annotated data for model training from disparate sources could certainly improve a model's ability to generalize to unseen images, yet it is rarely feasible for typical research laboratories to generate truly novel datasets; most have expertise in a particular imaging technique, organism, or tissue type.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about potential solutions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "It is rarely feasible for typical research laboratories to generate truly novel datasets because most have expertise in a particular imaging technique, organism, or tissue type.",
+    "claim_type": "EXPLICIT",
+    "source": "First, gathering more annotated data for model training from disparate sources could certainly improve a model's ability to generalize to unseen images, yet it is rarely feasible for typical research laboratories to generate truly novel datasets; most have expertise in a particular imaging technique, organism, or tissue type.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about practical limitations in research laboratories.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Manual segmentation of EM data is time-consuming.",
+    "claim_type": "EXPLICIT",
+    "source": "Beyond collecting the EM data, manual segmentation is time-consuming and, unlike for natural images, difficult to crowdsource because of the extensive domain knowledge required to identify objects in novel cellular contexts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known characteristic of manual segmentation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Manual segmentation of EM data is difficult to crowdsource because of the extensive domain knowledge required to identify objects in novel cellular contexts.",
+    "claim_type": "EXPLICIT",
+    "source": "Beyond collecting the EM data, manual segmentation is time-consuming and, unlike for natural images, difficult to crowdsource because of the extensive domain knowledge required to identify objects in novel cellular contexts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known characteristic of manual segmentation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "There are limitations to the range of structures that can be accurately segmented by volunteers in citizen science projects for EM data.",
+    "claim_type": "EXPLICIT",
+    "source": "Promising work is being done in the area of citizen science as it pertains to EM data, but it is clear that there are limitations to the range of structures that can be accurately segmented by volunteers (Spiers, 2020; EyeWirers et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Structure-specific annotations will not solve the generalization problem for all possible EM segmentation targets.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, structure-specific annotations will not solve the generalization problem for all possible EM segmentation targets; for example, thousands of hours spent labeling neurites is unlikely to buy any gains for mitochondrial segmentation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the limitations of structure-specific annotations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "In transfer learning, a DL model is pre-trained on a general task and its parameters are reused for more specialized downstream tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "In transfer learning, a DL model is pre-trained on a general task and its parameters are reused for more specialized downstream tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definition of transfer learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Transfer learning is the default approach for extracting the best performance out of small training datasets when relevant pre-trained parameters are available.",
+    "claim_type": "EXPLICIT",
+    "source": "Transfer learning, when relevant pre-trained parameters are available, is the default approach for extracting the best performance out of small training datasets (Huh et al., 2016; Devlin et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "ImageNet pre-trained models are sometimes used for cellular EM segmentation tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "While ImageNet pre-trained models are sometimes used for cellular EM segmentation tasks (Karaba\u011f et al., 2020; Devan et al., 2019), high-level features learned from ImageNet may not be applicable to biological imaging domains (Raghu et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "High-level features learned from ImageNet may not be applicable to biological imaging domains.",
+    "claim_type": "EXPLICIT",
+    "source": "While ImageNet pre-trained models are sometimes used for cellular EM segmentation tasks (Karaba\u011f et al., 2020; Devan et al., 2019), high-level features learned from ImageNet may not be applicable to biological imaging domains (Raghu et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "It required multiple years to annotate the 3.2 \u00d7 10^6 images that form the basis of ImageNet.",
+    "claim_type": "EXPLICIT",
+    "source": "Building a more domain-specific annotated dataset large enough for pre-training would be a significant bottleneck, and indeed, it required multiple years to annotate the 3.2 \u00d7 106 images that form the basis of ImageNet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the ImageNet dataset creation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Recent advances in unsupervised learning algorithms have enabled effective pre-training and transfer learning without the need for any up-front annotations.",
+    "claim_type": "EXPLICIT",
+    "source": "Fortunately, recent advances in unsupervised learning algorithms have now enabled effective pre-training and transfer learning without the need for any up-front annotations; in fact, on many tested benchmarks, unsupervised pre-training leads to better transfer learning performance (Tian et al., 2019; Chen et al., 2020a; He et al., 2019; Donahue and Simonyan, 2019; Ji et al., 2018; Wu et al., 2018; Kolesnikov, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "On many tested benchmarks, unsupervised pre-training leads to better transfer learning performance than supervised pre-training.",
+    "claim_type": "EXPLICIT",
+    "source": "Fortunately, recent advances in unsupervised learning algorithms have now enabled effective pre-training and transfer learning without the need for any up-front annotations; in fact, on many tested benchmarks, unsupervised pre-training leads to better transfer learning performance (Tian et al., 2019; Chen et al., 2020a; He et al., 2019; Donahue and Simonyan, 2019; Ji et al., 2018; Wu et al., 2018; Kolesnikov, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "CEMraw contains images from 101 unrelated biological projects.",
+    "claim_type": "EXPLICIT",
+    "source": "To provide a resource for the EM community to explore these exciting advances, we constructed an unlabeled cellular EM dataset which we call CEMraw, containing images from 101 unrelated biological projects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the dataset created by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The CEMraw image data superset comprises 591 3D image volumes and 9,626 2D images.",
+    "claim_type": "EXPLICIT",
+    "source": "The image data superset, comprising 591 3D image volumes and 9,626 2D images, is collated from a collection of experiments conducted in our own laboratory as well as data from publicly available sources.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the composition of CEMraw.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "CEMraw is collated from experiments conducted in the authors' laboratory as well as data from publicly available sources.",
+    "claim_type": "EXPLICIT",
+    "source": "The image data superset, comprising 591 3D image volumes and 9,626 2D images, is collated from a collection of experiments conducted in our own laboratory as well as data from publicly available sources.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the sources of CEMraw.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The authors created a pipeline to remove nearly identical images and filter out low-quality and low-information images from CEMraw.",
+    "claim_type": "EXPLICIT",
+    "source": "After gathering this set of heterogeneous images, we create a pipeline where we first remove many nearly identical images and then filter out low-quality and low-information images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the curation process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The curation pipeline results in a highly information-rich, relevant, and non-redundant 25 GB 2D image dataset comprising 0.5 \u00d7 10^6 images.",
+    "claim_type": "EXPLICIT",
+    "source": "This results in a highly information-rich, relevant, and non-redundant 25 GB 2D image dataset comprising 0.5 \u00d7 106 images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the result of the curation process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The authors pre-trained a DL model on CEM500K using the MoCoV2 unsupervised algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "As a proof of concept for its potential applications, we pre-trained a DL model on CEM500K using an unsupervised algorithm, MoCoV2 (Chen et al., 2020b), and evaluated the results for transfer learning on six publicly available benchmarks: CREMI Synaptic Clefts (CREMI, 2016), Guay (Guay et al., 2020), Kasthuri++ and Lucchi++ (Casser et al., 2018), Perez (Perez et al., 2014) and UroCell (\u017derovnik Meku\u010d et al., 2020).and one newly derived benchmark that we introduce in this work.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "CEM500K pre-trained models significantly outperformed randomly initialized and ImageNet pre-trained models on the tested benchmarks.",
+    "claim_type": "EXPLICIT",
+    "source": "CEM500K pre-trained models significantly outperformed randomly initialized and ImageNet pre-trained models, as well as previous baseline results from benchmark-associated publications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "CEM500K pre-trained models outperformed previous baseline results from benchmark-associated publications.",
+    "claim_type": "EXPLICIT",
+    "source": "CEM500K pre-trained models significantly outperformed randomly initialized and ImageNet pre-trained models, as well as previous baseline results from benchmark-associated publications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The authors selected 'in-house' datasets corresponding to 251 reconstructed FIB-SEM volumes from 33 unrelated experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "We selected 'in-house' datasets corresponding to 251 reconstructed FIB-SEM volumes from 33 unrelated experiments and 2975 transmission EM (TEM) images from 35 additional experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data collection process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The authors selected 2975 transmission EM (TEM) images from 35 additional experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "We selected 'in-house' datasets corresponding to 251 reconstructed FIB-SEM volumes from 33 unrelated experiments and 2975 transmission EM (TEM) images from 35 additional experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data collection process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Externally sourced data included 340 EM image volumes from 26 experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Included in this batch of data were 340 EM image volumes (some derived from video data) from 26 experiments and 9792 2D images from 14 other experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the externally sourced data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Externally sourced data included 9792 2D images from 14 other experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Included in this batch of data were 340 EM image volumes (some derived from video data) from 26 experiments and 9792 2D images from 14 other experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the externally sourced data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The externally gathered datasets had disparate file types including avi, mp4, png, tiff, jpeg, mrc, and nii.gz.",
+    "claim_type": "EXPLICIT",
+    "source": "Among the externally gathered datasets, there were disparate file types (avi, mp4, png, tiff, jpeg, mrc, nii.gz) and pixel/voxel data types (signed and unsigned, 32-bit float, 8-bit and 16-bit integer) as well as a mixture of image volumes with isotropic or anisotropic voxels, and regular or inverted intensities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the heterogeneity of the externally sourced data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The data were standardized into 2D tiff images of 224 \u00d7 224 8-bit unsigned pixels.",
+    "claim_type": "EXPLICIT",
+    "source": "These data were standardized into 2D tiff images, or patches, of 224 \u00d7 224 8-bit unsigned pixels (see 'Materials and methods'); the resulting set of 5.3 \u00d7 106 images constitutes what we term CEMraw (Figure 1d, top).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the standardization process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The resulting set of 5.3 \u00d7 10^6 images constitutes CEMraw.",
+    "claim_type": "EXPLICIT",
+    "source": "These data were standardized into 2D tiff images, or patches, of 224 \u00d7 224 8-bit unsigned pixels (see 'Materials and methods'); the resulting set of 5.3 \u00d7 106 images constitutes what we term CEMraw (Figure 1d, top).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the size of CEMraw.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Within CEMraw, most images were redundant.",
+    "claim_type": "EXPLICIT",
+    "source": "Within CEMraw, however, most images were redundant.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about CEMraw.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Nearly identical patches existed because of the similarity between adjacent cross-sections in high-resolution 3D volumes as well as in patches cropped from uniform intensity regions like empty resin.",
+    "claim_type": "EXPLICIT",
+    "source": "Nearly identical patches existed because of the similarity between adjacent cross-sections in high-resolution 3D volumes as well as in patches cropped from uniform intensity regions like empty resin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the source of redundancy in CEMraw.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Duplicates may induce undesirable biases toward the most frequently sampled features in the dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Duplicates are not only memory and computationally inefficient, but they may also induce undesirable biases toward the most frequently sampled features in the dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a reasoning about the negative effects of duplicates.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The authors obtained an 80% decrease in the number of patches when compared to CEMraw through deduplication.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result of this operation, we obtained an 80% decrease in the number of patches when compared to CEMraw; this 'deduplicated' subset of 1.1 \u00d7 106 image patches we refer to as CEMdedup (Figure 1d, middle).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the result of the deduplication process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "CEMdedup consists of 1.1 \u00d7 10^6 image patches.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result of this operation, we obtained an 80% decrease in the number of patches when compared to CEMraw; this 'deduplicated' subset of 1.1 \u00d7 106 image patches we refer to as CEMdedup (Figure 1d, middle).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the size of CEMdedup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Many images in CEMdedup contained little information useful to the segmentation of organelles or cellular structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Upon visual inspection, it was clear that many of the images in CEMdedup contained little information useful to the segmentation of organelles or cellular structures, for example, images dominated by empty resin, background padding, or homogeneously stained interiors of nuclei or cytoplasm (Appendix 1\u2014figure 1a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from visual inspection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The authors separated an arbitrary subset of 12,000 images from CEMdedup into informative and uninformative classes and trained a DL model to perform binary classification on the entire dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead, we separated an arbitrary subset of 12,000 images from CEMdedup into informative and uninformative classes and trained a DL model to perform binary classification on the entire dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the filtering approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The classifier achieved an area under the receiver operating characteristic (AUROC) score of 0.962 on a holdout test set of 2000 images.",
+    "claim_type": "EXPLICIT",
+    "source": "The classifier achieved an area under the receiver operating characteristic (AUROC) score of 0.962 on a holdout test set of 2000 images, as shown in Appendix 1\u2014figure 1b, suggesting that it could reliably distinguish between the informative and uninformative image classes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured performance metric.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Classification of the remaining unlabeled images yielded 0.5 \u00d7 10^6 patches with a visibly higher density of views containing organelles and cellular structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Classification of the remaining unlabeled images with this model yielded 0.5 \u00d7 106 patches with a visibly higher density of views containing organelles and cellular structures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the result of the classification process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The MoCoV2 algorithm is a relatively new and computationally efficient approach for unsupervised pre-training.",
+    "claim_type": "EXPLICIT",
+    "source": "We then decided to test CEM500K for unsupervised pre-training of a DL model, using the MoCoV2 algorithm, a relatively new and computationally efficient approach (He et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The MoCoV2 algorithm works by training a DL model to match differently augmented pairs of images.",
+    "claim_type": "EXPLICIT",
+    "source": "The algorithm works by training a DL model to match differently augmented (e.g., cropped, rotated, zoomed in, and brightened) pairs of images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of how the algorithm works.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Models pre-trained on ImageNet with the MoCoV2 algorithm have shown superior transfer learning performance over supervised methods when applied to a variety of tasks including segmentation.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, models pre-trained on ImageNet with the MoCoV2 algorithm have shown superior transfer learning performance over supervised methods when applied to a variety of tasks including segmentation (Chen et al., 2020b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The authors chose six publicly available benchmark datasets for evaluation: CREMI Synaptic Clefts, Guay, Kasthuri++, Lucchi++, Perez, and UroCell.",
+    "claim_type": "EXPLICIT",
+    "source": "Before we were able to evaluate the MoCoV2 algorithm on CEM500K, it was necessary to define a set of downstream tasks to quantify and compare performance. We chose six publicly available benchmark datasets: CREMI Synaptic Clefts (CREMI, 2016), Guay (Guay et al., 2020), Kasthuri++ and Lucchi++ (Casser et al., 2018), Perez (Perez et al., 2014), and UroCell (\u017derovnik Meku\u010d et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the benchmark selection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The benchmarks included a total of eight organelles or subcellular structures for segmentation.",
+    "claim_type": "EXPLICIT",
+    "source": "The benchmarks included a total of eight organelles or subcellular structures for segmentation (mitochondria, lysosomes, nuclei, nucleoli, canalicular channels, alpha granules, dense granules, dense granule cores, and synaptic clefts).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the content of the benchmarks.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Performance on each benchmark was measured using the standard Intersection-over-Union (IoU) score.",
+    "claim_type": "EXPLICIT",
+    "source": "Performance on each benchmark was measured using the standard Intersection-over-Union (IoU) score.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the evaluation metric.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Many benchmark datasets are not difficult enough to expose the gap in performance between different models because they only require the segmentation of a single organelle within a test set that is often from the same image volume as the training set.",
+    "claim_type": "EXPLICIT",
+    "source": "Considered on their own, many of these benchmark datasets are not difficult enough to expose the gap in performance between different models: they only require the segmentation of a single organelle within a test set that is often from the same image volume as the training set.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the limitations of existing benchmarks.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The authors derived an additional benchmark called All Mitochondria, which is a combination of the training and test sets from each of the five benchmarks that contain label maps for mitochondria.",
+    "claim_type": "EXPLICIT",
+    "source": "To address the lack of variety within the benchmark training and test sets, we derived an additional benchmark that we call All Mitochondria, which is a combination of the training and test sets from each of the five benchmarks that contain label maps for mitochondria (Guay, Perez, UroCell, Lucchi++, and Kasthuri++; the labels for all other objects were removed).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the creation of a new benchmark.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The All Mitochondria benchmark is challenging because it requires a model to learn features that are general for mitochondria from image volumes generated independently and from unrelated experiments and imaging parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Although this benchmark is specific to a single organelle, it is challenging in that it requires a model to learn features that are general for mitochondria from image volumes generated independently and from unrelated experiments and imaging parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why the All Mitochondria benchmark is challenging.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Pre-training was performed by applying the MoCoV2 algorithm to learn parameters for a ResNet50 before transferring the parameters into the encoder of a U-net.",
+    "claim_type": "EXPLICIT",
+    "source": "Pre-training was performed by applying the MoCoV2 algorithm to learn parameters for a ResNet50 (He et al., 2016) before transferring the parameters into the encoder of a U-net (Ronneberger et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the pre-training and transfer process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Once transferred, the parameters were frozen such that no updates were made during training on the benchmark tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "For this section, once transferred, the parameters were frozen such that no updates were made during training on the benchmark tasks; this enabled us to isolate the effects of pre-training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Some benchmarks permit strikingly good performance with randomly initialized and frozen encoder parameters, with IoU scores of over 0.75 on both Lucchi++ and Kasthuri++.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that in our architecture, the encoder includes approximately 23 \u00d7 106 parameters and the decoder approximately 9 \u00d7 106 parameters, some 70% of the model's parameters were never updated during training. Still, some benchmarks permit strikingly good performance, with IoU scores of over 0.75 on both Lucchi++ and Kasthuri++.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the baseline experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Pre-training on CEM500K gave better or equivalent results than the CEMraw superset and CEMdedup subset for every benchmark.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that pre-training on CEM500K gave better or equivalent results than the CEMraw superset and CEMdedup subset for every benchmark.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result comparing different dataset versions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The average increase in performance of CEM500K over CEMraw was 4.5%.",
+    "claim_type": "EXPLICIT",
+    "source": "The average increase in performance of CEM500K over CEMraw was 4.5%, and CEM500K over CEMdedup was 2.0%, with a maximum increase of 12.3% and 4.1%, respectively, on the UroCell benchmark (IoU scores increased from 0.652 and 0.699 to 0.729).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured performance improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The average increase in performance of CEM500K over CEMdedup was 2.0%.",
+    "claim_type": "EXPLICIT",
+    "source": "The average increase in performance of CEM500K over CEMraw was 4.5%, and CEM500K over CEMdedup was 2.0%, with a maximum increase of 12.3% and 4.1%, respectively, on the UroCell benchmark (IoU scores increased from 0.652 and 0.699 to 0.729).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured performance improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The maximum increase in performance of CEM500K over CEMraw was 12.3% on the UroCell benchmark.",
+    "claim_type": "EXPLICIT",
+    "source": "The average increase in performance of CEM500K over CEMraw was 4.5%, and CEM500K over CEMdedup was 2.0%, with a maximum increase of 12.3% and 4.1%, respectively, on the UroCell benchmark (IoU scores increased from 0.652 and 0.699 to 0.729).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured performance improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The maximum increase in performance of CEM500K over CEMdedup was 4.1% on the UroCell benchmark.",
+    "claim_type": "EXPLICIT",
+    "source": "The average increase in performance of CEM500K over CEMraw was 4.5%, and CEM500K over CEMdedup was 2.0%, with a maximum increase of 12.3% and 4.1%, respectively, on the UroCell benchmark (IoU scores increased from 0.652 and 0.699 to 0.729).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured performance improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Curation is valuable for reducing the computational cost of using CEM500K because the final filtered subset is 90% smaller than the raw superset.",
+    "claim_type": "EXPLICIT",
+    "source": "Besides these gains, curation is valuable for reducing the computational cost of using CEM500K: the final filtered subset is 90% smaller than the raw superset (25 GB compared to 250 GB).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the benefits of curation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Deduplication and filtering likely contributed to the performance gain by enabling both faster convergence and the learning of more relevant feature detectors.",
+    "claim_type": "EXPLICIT",
+    "source": "Deduplication and filtering likely contributed to the performance gain by enabling both faster convergence and the learning of more relevant feature detectors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about why curation improves performance.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The authors considered an alternative pre-training dataset consisting exclusively of 1 \u00d7 10^6 images from a single large connectomics volume of mouse brain tissue.",
+    "claim_type": "EXPLICIT",
+    "source": "To test this, we considered an alternative pre-training dataset consisting exclusively of 1 \u00d7 106 images from a single large connectomics volume of mouse brain tissue (Bloss et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an alternative dataset used for comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Images in the Bloss dataset show much less variation in cellular features than those in CEM500K.",
+    "claim_type": "EXPLICIT",
+    "source": "Coming from a single volume of a highly homogeneous tissue type, images in this dataset show much less variation in cellular features than those in CEM500K (a random sampling of images is shown in Appendix 1\u2014figure 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the Bloss dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Compared to the Bloss pre-training dataset, CEMraw, CEMdedup, and CEM500K all demonstrated significantly higher performance on four of the seven benchmarks.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to the Bloss pre-training dataset, CEMraw, CEMdedup, and CEM500K all demonstrated significantly higher performance on four of the seven benchmarks, as shown in Figure 2e (the actual IoU scores are shown in Table 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result comparing CEM datasets to the Bloss dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The average increase in IoU scores from the Bloss baseline to CEM500K over four benchmarks was 9.1%.",
+    "claim_type": "EXPLICIT",
+    "source": "The average increase in IoU scores from the Bloss baseline to CEM500K over these four benchmarks was 9.1%, with a maximum of 13.8% for the UroCell benchmark (increase in IoU score from 0.638 to 0.729).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured performance improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The maximum increase in IoU scores from the Bloss baseline to CEM500K was 13.8% for the UroCell benchmark.",
+    "claim_type": "EXPLICIT",
+    "source": "The average increase in IoU scores from the Bloss baseline to CEM500K over these four benchmarks was 9.1%, with a maximum of 13.8% for the UroCell benchmark (increase in IoU score from 0.638 to 0.729).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured performance improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The three benchmarks on which Bloss pre-trained models performed comparably well (Kasthuri++, Lucchi++, and Perez) were the only benchmarks that exclusively contained images from mouse brain tissue.",
+    "claim_type": "EXPLICIT",
+    "source": "Tellingly, the three benchmarks on which Bloss pre-trained models performed comparably well (Kasthuri++, Lucchi++, and Perez) were the only benchmarks that exclusively contained images from mouse brain tissue, like the Bloss dataset itself.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about which benchmarks the Bloss dataset performed well on.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Pre-training on large but biologically narrow datasets is insufficient for learning general-purpose features that apply equally well across a broad spectrum of contexts.",
+    "claim_type": "EXPLICIT",
+    "source": "It is clear that pre-training on large but biological narrow datasets is insufficient for learning general-purpose features that apply equally well across a broad spectrum of contexts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the comparison with the Bloss dataset.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The pre-training dataset ought to include image examples from as many different tissues, organisms, sample preparation protocols, and EM techniques as possible to guard against potential biases.",
+    "claim_type": "EXPLICIT",
+    "source": "To guard against potential biases, our results instead suggest that the pre-training dataset ought to include image examples from as many different tissues, organisms, sample preparation protocols, and EM techniques as possible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation based on the results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "A set of diverse benchmark datasets is essential for identifying biases when they do arise.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, a set of diverse benchmark datasets is essential for identifying such biases when they do arise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation based on the results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Neurons in CEM500K-moco models had consistently stronger invariance to all tested transformations compared to IN-moco models, with two exceptions.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that neurons in CEM500K-moco models had consistently stronger invariance to all tested transformations (Figure 3a). The two exceptions were a reduction in invariance when contrast was very high and a smaller reduction when scale factors were very large (Figure 3a,v and vi, respectively).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the invariance analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Virtually all the neurons in the CEM500K-moco model were remarkably invariant to rotation compared to about 70% of the neurons in the IN-moco model.",
+    "claim_type": "EXPLICIT",
+    "source": "First, with regard to rotation, virtually all the neurons in the CEM500K-moco model were remarkably invariant to rotation compared to about 70% of the neurons in the IN-moco model, reflecting the fact that orientation matters for representing images in ImageNet but, appropriately, not for CEM500K.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the rotation invariance analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Neurons in the CEM500K-moco model fire more consistently when presented with increasingly blurry and noisy images compared to IN-moco.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, neurons in the CEM500K-moco model fire more consistently when presented with increasingly blurry and noisy images, in both cases falling off significantly later as compared to IN-moco, when, presumably, meaningful information in the images has been lost.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the blur and noise invariance analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The CEM500K-moco model had a noticeably greater invariance to both more brightened and more darkened images compared to IN-moco.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, while both of the tested pre-trained models responded comparably to increasing image brightness, the CEM500K-moco model had a noticeably greater invariance to both more brightened and more darkened images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the brightness invariance analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Very low-contrast images are common in CEM500K and cellular EM data more broadly, while very high-contrast images are not.",
+    "claim_type": "EXPLICIT",
+    "source": "This was indicative of the distribution of images in CEM500K, and cellular EM data more broadly: very low-contrast images are common, very high-contrast images are not.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the characteristics of EM data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Heatmaps from the CEM500K-moco model shared a higher correlation with the presence of an organelle than features from the equivalent IN-moco model for ER, mitochondria, and nucleus.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that these derived heatmaps from the CEM500K-moco model shared a higher correlation with the presence of an organelle than features from the equivalent IN-moco model, irrespective of whether the organelle interrogated was ER, mitochondria, or nucleus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the feature selectivity analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "For the CEM500K-moco model, Point-Biserial correlation coefficients were 0.418, 0.680, and 0.888 for ER, mitochondria, and nucleus.",
+    "claim_type": "EXPLICIT",
+    "source": "For the CEM500K-moco model, Point-Biserial correlation coefficients were 0.418, 0.680, and 0.888 for ER, mitochondria, and nucleus compared to 0.329, 0.608, and 0.803 for the IN-moco model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured correlation coefficient.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "For the IN-moco model, Point-Biserial correlation coefficients were 0.329, 0.608, and 0.803 for ER, mitochondria, and nucleus.",
+    "claim_type": "EXPLICIT",
+    "source": "For the CEM500K-moco model, Point-Biserial correlation coefficients were 0.418, 0.680, and 0.888 for ER, mitochondria, and nucleus compared to 0.329, 0.608, and 0.803 for the IN-moco model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured correlation coefficient.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The segmentations created by binarizing the mean responses have a greater IoU with ground truth segmentations for CEM500K-moco (0.284, 0.517, and 0.887 for ER, mitochondria, and nucleus) compared to IN-moco (0.208, 0.325, and 0.790).",
+    "claim_type": "EXPLICIT",
+    "source": "The segmentations created by binarizing the mean responses also have a greater IoU with ground truth segmentations (CEM500K-moco: 0.284, 0.517, and 0.887 for ER, mitochondria, and nucleus; IN-moco: 0.208, 0.325, and 0.790, respectively) for the model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured IoU score.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Features learned from ImageNet displayed some selectivity for mitochondria and nuclei.",
+    "claim_type": "EXPLICIT",
+    "source": "Unexpectedly, features learned from ImageNet displayed some selectivity for mitochondria and nuclei, emphasizing the surprising transferability of features to domains that are seemingly unrelated to a model's training dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the feature selectivity analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Occlusion analysis showed that the model spontaneously learned to use organelles as 'landmarks' in the images without any guidance.",
+    "claim_type": "EXPLICIT",
+    "source": "Results are displayed as heatmaps overlaid on the occluded image (Figure 3c) and show, importantly, that without any guidance the model spontaneously learned to use organelles as 'landmarks' in the images, visible as 'hot spots' around such features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the occlusion analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Sample preparation protocols for electron microscopy are explicitly designed to accentuate organelles and membranes relative to other content.",
+    "claim_type": "EXPLICIT",
+    "source": "That these prominent objects should happen to be organelles is not coincidental as sample preparation protocols for electron microscopy are explicitly designed to accentuate organelles and membranes relative to other content.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about EM sample preparation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "CEM500K-moco was the best initialization method across all benchmarks with performance increases over random initialization ranging from 0.2% on the Lucchi++ benchmark to 73% on UroCell.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the board, CEM500K-moco was the best initialization method with performance increases over random initialization ranging from 0.2% on the Lucchi++ benchmark to a massive 73% on UroCell; the mean improvement (excluding CREMI Synaptic Clefts) was 30%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result from the benchmark evaluation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The mean improvement of CEM500K-moco over random initialization (excluding CREMI Synaptic Clefts) was 30%.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the board, CEM500K-moco was the best initialization method with performance increases over random initialization ranging from 0.2% on the Lucchi++ benchmark to a massive 73% on UroCell; the mean improvement (excluding CREMI Synaptic Clefts) was 30%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured performance improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "On average, IN-super and IN-moco achieved 11% and 14% higher IoU scores than random initialization, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "On average, IN-super and IN-moco achieved 11% and 14% higher IoU scores than random initialization, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured performance improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Parameters pre-trained with the unsupervised MoCoV2 algorithm transfer better to new tasks than parameters pre-trained on the ImageNet supervised classification task.",
+    "claim_type": "EXPLICIT",
+    "source": "Parameters pre-trained with the unsupervised MoCoV2 algorithm thus appear to transfer better to new tasks than parameters pre-trained on the ImageNet supervised classification task (He et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the results, supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The 14% average increase in IoU scores from CEM500K-moco over IN-moco reveals the advantage of pre-training on a domain-specific dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Crucially, the 14% average increase in IoU scores from CEM500K-moco over IN-moco reveals the advantage of pre-training on a domain-specific dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Models pre-trained with the MoCoV2 algorithm converged the fastest.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that models pre-trained with the MoCoV2 algorithm converged the fastest (Figure 4d, top).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the convergence analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Within just 500 iterations, MoCoV2 pre-trained models reach over 90% of their performance at 10,000 training iterations.",
+    "claim_type": "EXPLICIT",
+    "source": "Within just 500 iterations, these models reach over 90% of their performance at 10,000 training iterations, and within only 100 iterations, they achieve over 80%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the convergence analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Within only 100 iterations, MoCoV2 pre-trained models achieve over 80% of their performance at 10,000 training iterations.",
+    "claim_type": "EXPLICIT",
+    "source": "Within just 500 iterations, these models reach over 90% of their performance at 10,000 training iterations, and within only 100 iterations, they achieve over 80%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the convergence analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "In some cases, 100 iterations required less than 45 s of training on the authors' hardware, which included an Nvidia P100 GPU.",
+    "claim_type": "EXPLICIT",
+    "source": "In some cases, 100 iterations required less than 45 s of training on our hardware, which included an Nvidia P100 GPU, making this approach more feasible for resource-limited work.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured training time.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The faster training associated with the MoCoV2 algorithm stems from the much lower magnitudes of feature activations, which facilitates training with higher learning rates.",
+    "claim_type": "EXPLICIT",
+    "source": "We posit that the faster training associated with the MoCoV2 algorithm stems from the much lower magnitudes of feature activations, as observed in Tian et al., 2019, which facilitates training with higher learning rates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about why MoCoV2 trains faster, supported by a citation.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The performance of randomly initialized models leveled off after 5000 iterations.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, the plot of average IoU scores over a range of training iterations showed that the performance of randomly initialized models leveled off after 5000 iterations, see Figure 4d, bottom.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the training iteration analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "After 30,000 iterations of training on the easiest benchmarks (Perez, Lucchi++, and Kasthuri++), the performance of randomly initialized models effectively reached parity with CEM500K-moco models.",
+    "claim_type": "EXPLICIT",
+    "source": "Previously, it has been observed that granted enough time to converge, randomly initialized models can often achieve comparable results to pre-trained models (He et al., 2018), and we did observe this for the easiest benchmarks (Perez, Lucchi++, and Kasthuri++, data not shown). After 30,000 iterations of training on these benchmarks, the performance of randomly initialized models effectively reached parity with CEM500K-moco models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from extended training experiments, supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "For the hard benchmarks, randomly initialized models never reached the average IoU scores measured at even just 500 training iterations for CEM500K-moco models.",
+    "claim_type": "EXPLICIT",
+    "source": "However, for the hard benchmarks, randomly initialized models never reached the average IoU scores measured at even just 500 training iterations for CEM500K-moco models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the training iteration analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "CEM500K-moco pre-trained models outperformed the customized algorithms and training schemes presented as baselines for four of the benchmarks tested (by 3.0% on Guay, 8.6% on Kasthuri++, 1.2% on Lucchi++, and 10% on Perez).",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, these models outperformed the customized algorithms and training schemes presented as baselines for four of the benchmarks that we tested (by 3.0% on Guay, 8.6% on Kasthuri++, 1.2% on Lucchi++, and 10% on Perez), see Table 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with previously published results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "CEM500K is a diverse, relevant, information-rich, and non-redundant dataset of unlabeled cellular EM images designed to aid in the development of more robust and general DL models.",
+    "claim_type": "EXPLICIT",
+    "source": "CEM500K is a diverse, relevant, information-rich, and non-redundant dataset of unlabeled cellular EM images designed expressly to aid in the development of more robust and general DL models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about CEM500K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "CEM500K is derived from a far greater variety of tissue types, experimental conditions, and imaging techniques than other larger, publicly available EM datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Above all, two features distinguish CEM500K from other larger, publicly available EM datasets that make it superior for DL applications. First, it is derived from a far greater variety of tissue types, experimental conditions, and imaging techniques, resulting in models with less bias toward such specific variables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with other datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "CEM500K is condensed by aggressively deleting redundant and uninformative images, which improves model performance and renders CEM500K more accessible to users.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, it is condensed by aggressively deleting redundant and uninformative images; this improves model performance and renders CEM500K more accessible to users.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key feature of CEM500K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Models pre-trained on CEM500K performed better on average than those pre-trained on a dataset extracted from a single large EM volume (Bloss) when evaluated on seven benchmarks.",
+    "claim_type": "EXPLICIT",
+    "source": "By evaluating on seven benchmarks that represent different segmentation tasks and biological contexts, we demonstrate that, on average, models pre-trained on CEM500K performed better than those pre-trained on a dataset extracted from a single large EM volume (Bloss).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The targeted removal of 90% of the images from the original corpus of data to generate CEM500K returned a significant increase in the quality of pre-trained parameters as measured by segmentation IoU scores.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, the targeted removal of 90% of the images from the original corpus of data to generate CEM500K returned a significant increase in the quality of pre-trained parameters as measured by segmentation IoU scores.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key finding about the value of curation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Pre-training exclusively on images of mouse brain tissue (Bloss) did not improve performance over CEM500K on benchmarks from that same tissue.",
+    "claim_type": "EXPLICIT",
+    "source": "Pre-training exclusively on images of mouse brain tissue (Bloss) did not improve performance over CEM500K on benchmarks from that same tissue (see Figure 2e).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the comparison with the Bloss dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "As dataset size decreases, it becomes more likely that a model will overfit to the pre-training task and learn image features that are irrelevant for other downstream tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, we speculate that as dataset size decreases, it becomes more likely that a model will overfit to the pre-training task and learn image features that are irrelevant for other downstream tasks (Tian and Sun, 2020; Minderer et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation supported by citations.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Parameters trained on CEM500K are a strong and general-purpose starting point for improving downstream segmentation models.",
+    "claim_type": "EXPLICIT",
+    "source": "Regardless, we have shown here that parameters trained on CEM500K are a strong and general-purpose starting point for improving downstream segmentation models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion from the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "U-Nets pre-trained on CEM500K significantly outperformed randomly initialized U-Nets on all of the segmentation benchmarks tested, with the largest improvements corresponding to the most difficult benchmarks.",
+    "claim_type": "EXPLICIT",
+    "source": "U-Nets pre-trained on CEM500K significantly outperformed randomly initialized U-Nets on all of the segmentation benchmarks that we tested, with the largest improvements corresponding to the most difficult benchmarks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "CEM500K pre-trained models achieved state-of-the-art IoU scores on all benchmarks for which comparison with previous results was possible.",
+    "claim_type": "EXPLICIT",
+    "source": "Impressively, such pre-trained models achieved state-of-the-art IoU scores on all benchmarks for which comparison with previous results was possible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key result of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "Pre-trained parameters have been shown to guide downstream models to converge to more general optima than they would from random initialization.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, pre-trained parameters have been shown to guide downstream models to converge to more general optima than they would from random initialization (Huh et al., 2016; Yosinski et al., 2014; Neyshabur et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "As the number of examples in the training dataset increases, the generalization benefits from transfer learning start to diminish (gains in training speed are retained).",
+    "claim_type": "EXPLICIT",
+    "source": "As the number of examples in the training dataset increases the generalization benefits from transfer learning start to diminish (gains in training speed are retained)(Zoph, 2020; He et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Using CEM500K as seed data provides a path forward for creating general segmentation models that reliably segment features of interest for data generated by novel experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "However, using CEM500K as seed data provides a path forward for tackling this much more difficult challenge.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the potential future use of CEM500K.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "CEM500K is the most comprehensive and diversified resource of cellular EM images to the authors' knowledge.",
+    "claim_type": "EXPLICIT",
+    "source": "With 0.5 \u00d7 106 uniquely informative images representing approximately six hundred 3D and ten thousand 2D images corresponding to more than 100 completely unrelated biological projects, CEM500K is to our knowledge the most comprehensive and diversified resource of cellular EM images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the uniqueness of CEM500K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "Annotating images from CEM500K will enable the creation of new task-specific training datasets with substantially more variety than previously available.",
+    "claim_type": "EXPLICIT",
+    "source": "Annotating images from CEM500K (or identifying them as negative examples) will enable the creation of new task-specific training datasets with substantially more variety than previously available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the potential future use of CEM500K.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Models trained on datasets created by annotating CEM500K images will likely be better equipped to handle data from new microscopes, biological contexts, and sample preparation protocols.",
+    "claim_type": "EXPLICIT",
+    "source": "Models trained on such datasets will likely be better equipped to handle data from new microscopes, biological contexts, and sample preparation protocols.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about future models.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Each image chosen for annotation from CEM500K is likely to be uniquely informative for a model because of the extensive deduplication and filtering pipeline.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, each image chosen for annotation from CEM500K is likely to be uniquely informative for a model because of the extensive deduplication and filtering pipeline that we have created and used here, and which we share for future work by the community.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the value of images in CEM500K.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "All but one of the available benchmarks involved the annotation of mitochondria.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, all but one of the benchmarks involved the annotation of mitochondria and three of the seven were from mouse brain tissue.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the benchmark datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "Three of the seven benchmarks were from mouse brain tissue.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, all but one of the benchmarks involved the annotation of mitochondria and three of the seven were from mouse brain tissue.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the benchmark datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Benchmark variety is essential to identify biases in pre-trained parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that benchmark variety is essential to identify biases in pre-trained parameters and that difficult tasks are a necessary and stringent test of pre-training algorithms or datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "Difficult tasks are a necessary and stringent test of pre-training algorithms or datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that benchmark variety is essential to identify biases in pre-trained parameters and that difficult tasks are a necessary and stringent test of pre-training algorithms or datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "The authors only tested semantic and not instance segmentation.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, we only tested semantic and not instance segmentation (i.e. all objects from one class share one label).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "The authors made the decision to focus on semantic segmentation in order to avoid the more complex model architectures, postprocessing, and hyperparameters that usually accompany instance segmentation.",
+    "claim_type": "EXPLICIT",
+    "source": "We made this decision in order to avoid the more complex model architectures, postprocessing, and hyperparameters that usually accompany instance segmentation (Heinrich et al., 2018; Funke et al., 2019; Januszewski et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for focusing on semantic segmentation, supported by citations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "2D models work well for semantic segmentation in both 2D and 3D.",
+    "claim_type": "EXPLICIT",
+    "source": "2D models work well for semantic segmentation in both 2D and 3D (our 2D models beat the state-of-the-art results set by 3D models on some of the benchmarks, see Table 2) and from a computational standpoint, running training and inference on 2D data typically requires fewer resources.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the effectiveness of 2D models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "The authors' 2D models beat the state-of-the-art results set by 3D models on some of the benchmarks.",
+    "claim_type": "EXPLICIT",
+    "source": "2D models work well for semantic segmentation in both 2D and 3D (our 2D models beat the state-of-the-art results set by 3D models on some of the benchmarks, see Table 2) and from a computational standpoint, running training and inference on 2D data typically requires fewer resources.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the benchmark evaluation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "2D pre-trained parameters are broadly useful for cellular EM researchers, especially for laboratories with limited access to high-performance computing.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we believe that 2D pre-trained parameters are broadly useful for cellular EM researchers, especially for laboratories with limited access to high-performance computing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion about the utility of 2D pre-trained parameters.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "For some complex tasks like 3D instance segmentation, 2D models may perform poorly.",
+    "claim_type": "EXPLICIT",
+    "source": "For some complex tasks like 3D instance segmentation, an important and common task in cellular EM connectomics research, 2D models may perform poorly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of 2D models.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "Unsupervised pre-training on 3D data is currently an underexplored research area.",
+    "claim_type": "EXPLICIT",
+    "source": "Unsupervised pre-training on 3D data is currently an underexplored research area and algorithms like MoCoV2 should work for pre-training 3D models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current state of research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "Algorithms like MoCoV2 should work for pre-training 3D models.",
+    "claim_type": "EXPLICIT",
+    "source": "Unsupervised pre-training on 3D data is currently an underexplored research area and algorithms like MoCoV2 should work for pre-training 3D models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about the applicability of MoCoV2 to 3D data.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "The creation of a 3D image dataset similar to CEM500K is likely to be of great use to the nascent volume EM community.",
+    "claim_type": "EXPLICIT",
+    "source": "The creation of a 3D image dataset similar to the resource reported here is likely to be of great use to the nascent volume EM community.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about future work.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The goal of this work is to begin the process of creating a data ecosystem for cellular EM images and datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "The goal of this work is to begin the process of creating a data ecosystem for cellular EM images and datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the goal of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "CEM500K will be a valuable resource for experimenting with and taking advantage of the latest developments in DL research.",
+    "claim_type": "EXPLICIT",
+    "source": "CEM500K will be a valuable resource for experimenting with and taking advantage of the latest developments in DL research, where access to troves of image data is usually taken for granted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the value of CEM500K.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "To further increase the utility of CEM500K, more data from uncommon organisms, tissue and cell types, sample preparation protocols, and acquisition parameters will be needed.",
+    "claim_type": "EXPLICIT",
+    "source": "To further increase its utility, more data from uncommon organisms, tissue and cell types, sample preparation protocols, and acquisition parameters will be needed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about future improvements to CEM500K.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "In the current state, CEM500K is still heavily skewed to a few common organisms like mice and tissues like brain.",
+    "claim_type": "EXPLICIT",
+    "source": "In the current state, the dataset is still heavily skewed to a few common organisms like mice and tissues like brain, and it is clear that there is much room for greater sampling and heterogeneity (Appendix 1\u2014figure 6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the current composition of CEM500K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "The dataset has been made available for download on EMPIAR (ID 10592).",
+    "claim_type": "EXPLICIT",
+    "source": "The dataset has been made available for download on EMPIAR (ID 10592).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about data availability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "The massive reduction in dataset size from curation makes the sharing of data relatively quick and easy.",
+    "claim_type": "EXPLICIT",
+    "source": "The massive reduction in dataset size from curation makes the sharing of data relatively quick and easy; moreover, the elimination of 3D context from volume EM datasets ensures that the shared data can only reasonably be used for DL applications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the benefits of curation for data sharing.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The elimination of 3D context from volume EM datasets ensures that the shared data can only reasonably be used for DL applications.",
+    "claim_type": "EXPLICIT",
+    "source": "The massive reduction in dataset size from curation makes the sharing of data relatively quick and easy; moreover, the elimination of 3D context from volume EM datasets ensures that the shared data can only reasonably be used for DL applications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the implications of the curation process.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "The quality of the pre-trained parameters for transfer learning will improve logarithmically as CEM500K grows.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar to pre-training on natural images, we expect that the quality of the pre-trained parameters for transfer learning will improve logarithmically as CEM500K grows (Mahajan, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about future improvements, supported by a citation.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "Datasets generated from microscopes in the authors' lab were already in the desired standardized format: 8-bit unsigned volumes or 2D tiff images.",
+    "claim_type": "EXPLICIT",
+    "source": "Datasets generated from microscopes in our lab were already in the desired standardized format: 8-bit unsigned volumes or 2D tiff images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the format of in-house data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "To reduce the memory requirements of large 3D volumes, datasets were downsampled such that no individual dataset was larger than 5 GB (affecting only seven of the total 591 image volumes).",
+    "claim_type": "EXPLICIT",
+    "source": "To reduce the memory requirements of large 3D volumes, datasets were downsampled such that no individual dataset was larger than 5 GB (affecting only seven of the total 591 image volumes).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a preprocessing step.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "For all isotropic voxel data and for any anisotropic voxel data in which the z resolution was less than 20% different from the x and y resolutions, 2D cross-sections from the xy, xz, and yz planes were sequentially extracted.",
+    "claim_type": "EXPLICIT",
+    "source": "For all isotropic voxel data and for any anisotropic voxel data in which the z resolution was less than 20% different from the x and y resolutions, 2D cross-sections from the xy, xz, and yz planes were sequentially extracted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a preprocessing step.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "Anisotropic voxel data with a greater than 20% difference in axial versus lateral resolutions were only sliced into cross-sections in the xy plane.",
+    "claim_type": "EXPLICIT",
+    "source": "Anisotropic voxel data with a greater than 20% difference in axial versus lateral resolutions were only sliced into cross-sections in the xy plane.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a preprocessing step.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "Images were cropped into 224 \u00d7 224 patches without any overlap.",
+    "claim_type": "EXPLICIT",
+    "source": "These images were cropped into 224 \u00d7 224 patches without any overlap.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a preprocessing step.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "If the image's width or height was not a multiple of 224, then crops from the remaining area were discarded if either of their dimensions were less than 112.",
+    "claim_type": "EXPLICIT",
+    "source": "If the image's width or height was not a multiple of 224, then crops from the remaining area were discarded if either of their dimensions were less than 112.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a preprocessing step.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "Cloud Volume API was used to randomly sample 1000 2D patches from the xy planes of each available dataset from the Open Connectome Project.",
+    "claim_type": "EXPLICIT",
+    "source": "As these volumes were too large to reasonably download and store (tens of TB), Cloud Volume API was used to randomly sample 1000 2D patches from the xy planes of each available dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a data collection method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "The 'Bloss baseline' dataset was extracted and generated with the Cloud Volume API method, with 1 \u00d7 10^6 patches collected from that single data volume to roughly match the number of images in CEMraw.",
+    "claim_type": "EXPLICIT",
+    "source": "The 'Bloss baseline' dataset (Bloss et al., 2018) was also extracted and generated with this method; however, 1 \u00d7 106 patches were collected from that single data volume to roughly match the number of images in CEMraw (Appendix 1\u2014figure 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the creation of the Bloss baseline dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "Difference hashes gave the best results of all the hashing algorithms tested for deduplication.",
+    "claim_type": "EXPLICIT",
+    "source": "Difference hashes gave the best results of all the hashing algorithms tested (Kind of Like That, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the choice of hashing algorithm.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "A hash size of 8 results in a 64-bit array to encode each 224 \u00d7 224 image.",
+    "claim_type": "EXPLICIT",
+    "source": "A hash size of 8 results in a 64-bit array to encode each 224 \u00d7 224 image.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the hashing parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "Sets of hashes with a distance <12 between them were considered a group of near-duplicates.",
+    "claim_type": "EXPLICIT",
+    "source": "Sets of hashes with a distance <12 (distance cutoff chosen by visual inspection of groups) between them were considered a group of near-duplicates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the deduplication threshold.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "A random subset of 14,000 images from CEMdedup were manually labeled either informative or uninformative.",
+    "claim_type": "EXPLICIT",
+    "source": "A random subset of 14,000 images from CEMdedup were manually labeled either informative or uninformative.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the manual labeling process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "Images with 80% or more of their area occupied by uniform intensity structures like nuclei, cytoplasm, or resin are classified as uninformative.",
+    "claim_type": "EXPLICIT",
+    "source": "Concretely, this means that images with 80% or more of their area occupied by uniform intensity structures like nuclei, cytoplasm, or resin are classified as uninformative.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the criteria for uninformative images.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "2000 labeled images were set aside as a test set and the remaining 12,000 were used as training data for a model classifier.",
+    "claim_type": "EXPLICIT",
+    "source": "2000 labeled images were set aside as a test set and the remaining 12,000 were used as training data for a model classifier: a ResNet34 pre-trained on ImageNet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the train-test split for the classifier.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "The fourth layer of residual blocks and the classification head of the ResNet34 model were fine-tuned for 30 epochs on a P100 GPU with the Adam optimizer and a learning rate of 0.001.",
+    "claim_type": "EXPLICIT",
+    "source": "The fourth layer of residual blocks and the classification head of the model were fine-tuned for 30 epochs on a P100 GPU with the Adam optimizer and a learning rate of 0.001.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training parameters for the classifier.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "Pre-training was completed on a machine with four Nvidia V100 GPUs using a batch size of 128 and queue length of 65,536.",
+    "claim_type": "EXPLICIT",
+    "source": "Pre-training was completed on a machine with four Nvidia V100 GPUs using a batch size of 128 and queue length of 65,536.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the hardware and hyperparameters for pre-training.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "The initial learning rate for MoCoV2 pre-training was set to 0.015 and divided by 10 at epochs 120 and 160.",
+    "claim_type": "EXPLICIT",
+    "source": "The initial learning rate was set to 0.015 and divided by 10 at epochs 120 and 160.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the learning rate schedule for pre-training.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "360\u00b0 rotations and Gaussian noise with a standard deviation range of 1 \u00d7 10^-5 to 1 \u00d7 10^-4 were added to the data augmentations for MoCoV2 pre-training.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, 360\u00b0 rotations and Gaussian noise with a standard deviation range of 1 \u00d7 10\u22125 to 1 \u00d7 10\u22124 were added to the data augmentations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes additional data augmentations used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "For pre-training comparisons between different EM datasets, 4.5 \u00d7 10^5 total parameter updates (iterations) were run for each model, which is equivalent to 120 passes (epochs) through all the images in CEM500K.",
+    "claim_type": "EXPLICIT",
+    "source": "For pre-training comparisons between different EM datasets, that is the three subsets of CEM plus Bloss (Figure 2d,e), 4.5 \u00d7 105 total parameter updates (iterations) were run for each model, which is equivalent to 120 passes (epochs) through all the images in CEM500K.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training schedule for comparison experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "The average training time for each pre-training model in the comparison experiments was 2.5 days.",
+    "claim_type": "EXPLICIT",
+    "source": "The average training time for each of these models was 2.5 days.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measured training time.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "The final pre-trained parameters generated for results shown in Figure 4b,c were trained on CEM500K for an additional 80 epochs: a total of 200 epochs and 4 days of training.",
+    "claim_type": "EXPLICIT",
+    "source": "The final pre-trained parameters generated for results shown in Figure 4b,c were trained on CEM500K for an additional 80 epochs: a total of 200 epochs and 4 days of training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training schedule for the final model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "The One Cycle Policy and AdamW optimizer with maximum learning rate 0.003, weight decay 0.1, batch size 16, and (binary) cross-entropy loss were used for all benchmarks.",
+    "claim_type": "EXPLICIT",
+    "source": "The One Cycle Policy and AdamW optimizer with maximum learning rate 0.003, weight decay 0.1, batch size 16, and (binary) cross-entropy loss were used for all benchmarks (Loshchilov and Hutter, 2017; Smith, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training parameters for benchmark evaluation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "For the Guay and Urocell benchmarks, the cross-entropy loss was weighted by the prevalence of each class.",
+    "claim_type": "EXPLICIT",
+    "source": "For the Guay and Urocell benchmarks, which required multiclass segmentation, the cross-entropy loss was weighted by the prevalence of each class; we observed that this yielded better IoU scores on the Guay validation dataset (Supplementary file 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a modification to the loss function for specific benchmarks.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "Classes that accounted for less than 10% of all pixels in the dataset were given a weight of 3, those that accounted for more than 10% were given a weight of 1, and all background classes were given a weight of 0.1.",
+    "claim_type": "EXPLICIT",
+    "source": "Classes that accounted for less than 10% of all pixels in the dataset were given a weight of 3, those that accounted for more than 10% were given a weight of 1, and all background classes were given a weight of 0.1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the class weighting scheme.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "Data augmentations for benchmark training included randomly resized crops with scaling from 0.08 to 1 and aspect ratio from 0.5 to 1.5, 360\u00b0 rotations, random 30% brightness and contrast adjustments, and horizontal and vertical flips.",
+    "claim_type": "EXPLICIT",
+    "source": "Data augmentations included randomly resized crops with scaling from 0.08 to 1 and aspect ratio from 0.5 to 1.5, 360\u00b0 rotations, random 30% brightness and contrast adjustments, and horizontal and vertical flips.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data augmentations used for benchmark training.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "For the Guay benchmark, Gaussian noise with a variance limit of 400\u20131200 and Gaussian blur with a maximum standard deviation of 7 were also added.",
+    "claim_type": "EXPLICIT",
+    "source": "For the Guay benchmark, and consequently the All Mitochondria benchmark, Gaussian noise with a variance limit of 400\u20131200 and Gaussian blur with a maximum standard deviation of 7 were also added.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes additional data augmentations for specific benchmarks.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "Different crop sizes were used for each benchmark: 512 \u00d7 512 for Guay, CREMI, Synaptic Cleft, Kasthuri++, and Lucchi++; 480 \u00d7 480 for Perez; and 224 \u00d7 224 for UroCell and All Mitochondria.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, different crop sizes were used for each benchmark: 512 \u00d7 512 for Guay, CREMI, Synaptic Cleft, Kasthuri++, and Lucchi++; 480 \u00d7 480 for Perez; and 224 \u00d7 224 for UroCell and All Mitochondria.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the crop sizes used for different benchmarks.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "Orthoplane inference was used for the UroCell test set because its test volume has isotropic voxels.",
+    "claim_type": "EXPLICIT",
+    "source": "Orthoplane inference was used for the UroCell test set because its test volume has isotropic voxels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the inference method used for a specific benchmark.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C178",
+    "claim": "2D stack inference was used for the Guay and CREMI Synaptic Cleft test volumes because they are anisotropic.",
+    "claim_type": "EXPLICIT",
+    "source": "Because both the Guay and CREMI Synaptic Cleft test volumes are anisotropic, we used 2D stack inference instead.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the inference method used for specific benchmarks.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C179",
+    "claim": "For the Perez datasets, the authors ignored areas in the predicted segmentations that did not coincide with a labeled instance in the ground truth because test images did not have labels for all instances of an object.",
+    "claim_type": "EXPLICIT",
+    "source": "First, test images in the Perez datasets did not have labels for all instances of an object; for example, only one nucleus was labeled in an image containing two nuclei. To circumvent this problem, we ignored areas in the predicted segmentations that did not coincide with a labeled instance in the ground truth.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a modification to the evaluation procedure for a specific benchmark.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "For the UroCell benchmark, a simpler evaluation was run on a single split of the data with four volumes used for training and one volume used for testing.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, a simpler evaluation was run on a single split of the data with four volumes used for training and one volume used for testing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the evaluation procedure for the UroCell benchmark.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "For the CREMI Synaptic Cleft benchmark, volumes A and B were used exclusively for training and IoU scores were evaluated on volume C.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, volumes A and B were used exclusively for training and IoU scores were evaluated on volume C.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the train-test split for the CREMI benchmark.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "Neuron firing thresholds were determined by passing 1000 images of randomly sampled noise through each pre-trained ResNet50 model and calculating the 99th percentile of responses.",
+    "claim_type": "EXPLICIT",
+    "source": "Following Goodfellow et al., 2009, neuron firing thresholds were determined by passing 1000 images of randomly sampled noise through each pre-trained ResNet50 model and calculating the 99th percentile of responses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the method for determining neuron firing thresholds.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "Only the neurons in the output of the global average pooling layer were considered for the mean firing rate analysis, such that there were 2048.",
+    "claim_type": "EXPLICIT",
+    "source": "In our experiments, only the neurons in the output of the global average pooling layer were considered such that there were 2048.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes which neurons were analyzed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C184",
+    "claim": "The authors eliminated the last four downsampling operations in the ResNet50 for ER feature selectivity analysis such that the output feature map was only 2x smaller than the input.",
+    "claim_type": "EXPLICIT",
+    "source": "For thin and small organelles like ER, the final feature maps were too coarse to accurately show the localization of responses. Therefore, we eliminated the last four downsampling operations such that the output feature map was only 2x smaller than the input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a modification to the architecture for feature selectivity analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C185",
+    "claim": "The authors eliminated the last two downsampling operations for mitochondria feature selectivity analysis such that the output was 8x smaller than the input.",
+    "claim_type": "EXPLICIT",
+    "source": "Following similar logic, we eliminated the last two downsampling operations for mitochondria and the last downsampling operation for nuclei \u2013 8x and 16x smaller than the input images, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a modification to the architecture for feature selectivity analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C186",
+    "claim": "The authors eliminated the last downsampling operation for nuclei feature selectivity analysis such that the output was 16x smaller than the input.",
+    "claim_type": "EXPLICIT",
+    "source": "Following similar logic, we eliminated the last two downsampling operations for mitochondria and the last downsampling operation for nuclei \u2013 8x and 16x smaller than the input images, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a modification to the architecture for feature selectivity analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C187",
+    "claim": "For occlusion analysis, sequential regions of 61 \u00d7 61 pixels spaced every 30 pixels (in both x and y dimensions) were zeroed out in each image.",
+    "claim_type": "EXPLICIT",
+    "source": "Sequential regions of 61 \u00d7 61 pixels spaced every 30 pixels (in both x and y dimensions) were zeroed out in each image.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the occlusion analysis method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

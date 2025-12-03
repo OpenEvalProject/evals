@@ -1,0 +1,1930 @@
+{
+  "submission": {
+    "id": "1d56d441-3468-42df-a16b-2544995eddcb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:18:13.388633Z",
+    "updated_at": "2025-12-03T16:18:13.388633Z"
+  },
+  "content": [
+    {
+      "id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "submission_id": "1d56d441-3468-42df-a16b-2544995eddcb",
+      "content_type": "manuscript",
+      "content_text": "# Determination of oligomeric states of proteins via dual-color colocalization with single molecule localization microscopy\n\n## Authors\n\n- Hua Leonhard Tan<sup>1</sup> ([ORCID: 0000-0002-3938-3454](https://orcid.org/0000-0002-3938-3454))\n- Stefanie Bungert-Pl\u00fcmke<sup>1</sup> ([ORCID: 0000-0002-4650-3274](https://orcid.org/0000-0002-4650-3274))\n- Daniel Kortzak<sup>1</sup>\n- Christoph Fahlke<sup>1</sup>\n- Gabriel St\u00f6lting<sup>1</sup> ([ORCID: 0000-0002-2339-0545](https://orcid.org/0000-0002-2339-0545)) \u2020\n\n### Affiliations\n\n1. Institute of Biological Information Processing, Molecular and Cellular Physiology (IBI-1), Forschungszentrum J\u00fclich J\u00fclich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))\n2. Berlin Institute of Health at Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin, Center of Functional Genomics, Hypertension and Molecular Biology of Endocrine Tumors, Charit\u00e9platz Berlin Germany ([ROR:0493xsw21](https://ror.org/0493xsw21))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe oligomeric state of plasma membrane proteins is the result of the interactions between individual subunits and an important determinant of their function. Most approaches used to address this question rely on extracting these complexes from their native environment, which may disrupt weaker interactions. Therefore, microscopy techniques have been increasingly used in recent years to determine oligomeric states in situ. Classical light microscopy suffers from insufficient resolution, but super-resolution methods such as single molecule localization microscopy (SMLM) can circumvent this problem. When using SMLM to determine oligomeric states of proteins, subunits are labeled with fluorescent proteins that only emit light following activation or conversion at different wavelengths. Typically, individual molecules are counted based on a binomial distribution analysis of emission events detected within the same diffraction-limited volume. This strategy requires low background noise, a high recall rate for the fluorescent tag and intensive post-imaging data processing. To overcome these limitations, we developed a new method based on SMLM to determine the oligomeric state of plasma membrane proteins. Our dual-color colocalization (DCC) approach allows for accurate in situ counting even with low efficiencies of fluorescent protein detection. In addition, it is robust in the presence of background signals and does not require temporal clustering of localizations from individual proteins within the same diffraction-limited volume, which greatly simplifies data acquisition and processing. We used DCC-SMLM to resolve the controversy surrounding the oligomeric state of two SLC26 multifunctional anion exchangers and to determine the oligomeric state of four members of the SLC17 family of organic anion transporters.\n\n## Introduction\n\nMost membrane proteins form oligomeric assemblies, in which individual subunits cooperate to fulfill specialized functions. Some membrane proteins also form larger clusters, in which distinct classes of proteins interact with each other. The number of subunits within such protein structures is a crucial determinant of their function (Lussier et al., 2019). Native gel electrophoresis has been successfully used to determine oligomeric states of proteins and the molecular determinants of oligomeric assemblies (Detro-Dassen et al., 2008; Gendreau et al., 2004; Sch\u00e4gger and von Jagow, 1991). However, this technique relies on isolating protein complexes from their native environment, which can disrupt some protein interactions. To overcome this limitation, in situ methods such as fluorescence correlation spectroscopy (Chen et al., 2003), stepwise photobleaching (Ulbrich and Isacoff, 2007), and single molecule localization microscopy (SMLM) (Annibale et al., 2011; Sengupta et al., 2011) have become increasingly popular in recent years.\n\nStepwise photobleaching relies on the irreversible and stochastic photobleaching of fluorescent tags linked to the subunit to be counted, and the resulting intensity steps depend on the number of subunits within the complex being tested. Such data can be acquired using comparatively inexpensive microscopes which has undoubtedly led to the widespread adoption of this method (Bartoi et al., 2014; Coste et al., 2012; Lussier et al., 2019; Ulbrich and Isacoff, 2007). However, this approach is only feasible for low expression densities as it is limited by the resolution of light microscopy. Therefore, Xenopus laevis oocytes, which are large in diameter and in which ectopic protein expression can be controlled by adjusting the amount of injected RNA, are most often used for this method (Ulbrich and Isacoff, 2007). However, some proteins exhibit a different oligomeric state when expressed in the Xenopus system compared with mammalian expression systems (Krashia et al., 2010). For mammalian cells, the resolution limit of light microscopy can be circumvented using super-resolution microscopy methods (Durisic et al., 2014; Hummer et al., 2016; Lee et al., 2012; Nan et al., 2013; Nicovich et al., 2017; Puchner et al., 2013; Sengupta et al., 2011). SMLM increases resolution by reconstructing the precise positions of isolated fluorophore emissions detected over thousands of frames (Betzig et al., 2006; Rust et al., 2006). The fluorophores used for quantitative SMLM are usually photoactivatable or photoconvertible fluorescent proteins that are activated or converted at wavelengths different from that of the excitation laser (Li and Vaughan, 2018). Their positions in each frame may then be assigned to individual proteins in post-processing, to produce accurate information about the number and position of proteins subunits (Sengupta et al., 2011).\n\nSeveral problems have to be overcome during image acquisition and processing to determine the oligomeric state of proteins: To increase the resolution in SMLM, the simultaneous activation of multiple fluorophores within the same diffraction-limited volume must be avoided. To assign signals to individual subunits within the same protein complex, the activation and emission of each fluorophore need to be well separated in time. This criterion can only be fulfilled if the probability of activating a certain protein is kept minimal through a gradually increased activation laser intensity. Algorithms to optimize laser control have been developed, but they are not intended to temporally separate clusters of emissions from individual proteins (Lee et al., 2012). During the long recordings required for SMLM, inherent mechanical and thermal fluctuations, as well as the sample drift, combine to reduce spatial resolution. The complex photophysics of fluorescent protein blinking may additionally result in over- or undercounting (Annibale et al., 2011; Lee et al., 2012). Another source of miscounting is the background noise, which cannot be easily distinguished from genuine signals at the single molecule level (Shivanandan et al., 2014; Zhao et al., 2018). Furthermore, it is impossible to detect all fluorophores in the sample because the probability of having a fluorescent marker detected during the imaging period (i.e., the recall rate) is always less than one. This likely arises from a combination of incomplete protein translation or misfolding, failure to get activated or converted, and pre-imaging bleaching (Durisic et al., 2014; Nicovich et al., 2017). Thus, the observed counts are not equal to the oligomeric state of interest but instead follow a binomial distribution that depends on both the real number of subunits per complex and the recall rate. This binomial strategy demands a recall rate of about 0.5or higher to ensure reasonable resolution between different oligomeric states (Durisic et al., 2014; Ulbrich and Isacoff, 2007). Such a demand for high recall rates poses challenges with respect to fluorescent protein selection, sample preparation, data acquisition, and post-imaging data processing (Shivanandan et al., 2014). These criteria and drawbacks have limited the application of SMLM on counting.\n\nHere, we developed a new strategy, dual-color colocalization SMLM (DCC-SMLM), which utilizes two spectrally different fluorescent proteins attached to the same protein of interest (POI). DCC-SMLM is very tolerant of the background noise and low recall rates of fluorescent proteins and does not require stringent control of the activation laser. We tested the new DCC-SMLM approach on proteins with known subunit composition, and then used it to study proteins from two plasma membrane transporter families with controversial or unknown oligomeric states: the SLC26 and SLC17 families.\n\nThe human SLC26 family has 10 members that function as anion transporters or channels as well as the motor protein in cochlear outer hair cells. The physiological importance of these proteins is illustrated by the growth defects, chronic diarrhea or deafness associated with naturally occurring mutations. Biochemical and recent structural studies indicated that the proteins exist as dimers (Detro-Dassen et al., 2008; Geertsma et al., 2015; Walter et al., 2019), whereas other studies have proposed a tetrameric state (Hallworth and Nichols, 2012; Sinha et al., 2010; Zheng et al., 2006). The SLC17 family includes proton-driven vesicular glutamate, aspartate, sialic acid, and nucleotide transporters, as well as Na+-coupled phosphate transporters. Using DCC-SMLM, we determined the oligomeric states for two SLC26 proteins, the human epithelial chloride-bicarbonate exchanger SLC26A3 and the rat motor protein prestin (Slc26a5), and for four members of the SLC17 family: mouse vGlut1, -2, and -3 (Slc17a7, Slc17a6, and Slc17a8, respectively) and human sialin (SLC17A5).\n\n## Results\n\n### DCC-SMLM for determining oligomeric states\n\nA protein complex of n identical subunits, each labeled with a single indicator fluorescent protein (F) with a recall rate of p, will be detected with a probability Pd as\n\n$$\nP_{d}=1\u2212(1\u2212p)^{n}\n$$\n\nIn theory, Pd is equal to the ratio of the number of proteins with visible fluorescence (NF) to the number of labeled proteins in total (N), namely,\n\n$$\nP_{d}=\\frac{N_{F}}{N}\n$$\n\nHowever, direct determination of Pd from single-color microscopy images is impossible, as the total number of proteins, including those not exhibiting fluorescence, is unknown. Therefore, in order to experimentally determine Pd, we additionally labeled each protein subunit with another fluorescent protein (M) as a baseline marker (Figure 1A). As for F, the number of proteins observable by the fluorescence of M (NM) will be smaller than N. Assuming that the fluorescence of F and M is independent, Pd can be determined from the ratio of the number of proteins showing fluorescence from both M and F (NMF) to that of the proteins showing fluorescence from M (NM),\n\n$$\nP_{d}=\\frac{N_{MF}}{N_{M}}\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig1-v2.jpg)\n\n**Figure 1.:** (A) Model of a dimeric fusion protein used for DCC-single molecule localization microscopy (SMLM). The protein of interest is marked with a white \u2018X\u2019, whereas the marker and indicator fluorescent proteins are labeled \u2018M\u2019 and \u2018F\u2019, respectively. (B) A reconstructed SMLM image from an HEK293T cell expressing Kir2.1 labeled with both mVenus (green) and PAmCherry (magenta). White indicates colocalization of the two color signals. Scale bar: 1 \u03bcm. (C) The probability of detecting a protein complex changes with the number (n) and recall rate (p) of the fluorescent proteins it contains. Each color indicates a different recall rate from 0.1 to 0.9 in steps of 0.1. (D) A representative image reconstructed from a recording of a bare coverslip surface showing background signals in the PAmCherry (magenta) and mVenus channels (green). Scale bar: 1 \u03bcm. (E) The mean background cluster densities (\u00b1 SEM) in the mVenus (green, g.) and the PAmCherry (red, r.) recording channels. A cluster comprises a series of fluorescent signals that are spatially close and clustered with the DBSCAN (density-based spatial clustering of applications with noise) algorithm. N=283 recordings. (F) As the background signals in the green channel are negligible, only three types of signals are considered: signals from mVenus (mV.), signals from PAmCherry (pC.), and background signals in the red channel (r.bkg).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The results of Equation 4 were calculated using the indicated values of p and m for the indicated as well as the next smaller and larger oligomeric state. Differentiation was then calculated either as the difference from monomer to dimers (for the detection of monomers) or by the product of the differences to the next smaller and larger oligomeric state. Values were normalized by the maximum difference obtained for each panel and plotted using the indicated color code. The sensitivity of Equation 1 can be seen where m=0.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig1-figsupp2-v2.jpg)\n\nBoth NMF and NM can be counted from dual-color microscopy images (Figure 1B). The values of Pd obtained for proteins with known oligomeric states were used to solve Equation 1 for p, which could then be used to determine unknown oligomeric states (Figure 1C).\n\nIndependence of both fluorescence signals was guaranteed by using proteins with separate emission and excitation spectra as well as performing sequential rather than simultaneous imaging of color channels. However, based on our experience with solubilizing ion channels and transporters tagged with fluorescent proteins (Guzman et al., 2022; St\u00f6lting et al., 2014; St\u00f6lting et al., 2015a; Tan et al., 2017), we expected that a fraction of fluorescent proteins might be cleaved off within the linker region or within M, leading to the simultaneous removal of both F and M. We introduced an additional factor, m, to describe the probability of this phenomenon occurring. Notwithstanding that we cannot exclude other possibilities contributing to the loss of both fluorescent proteins, m remains generally as the probability of both M and F simultaneously being dysfunctional. Dysfunction of F alone is still represented by the factor p. With m included, the probability Pd was hence described as\n\n$$\nP_{d}=\\sumk=1n{\\frac{(nk)(1\u2212m)^{k}m^{n\u2212k}}{1\u2212m^{n}}[1\u2212(1\u2212p)^{k}]}\n$$\n\nTo assess how the values of m and p might alter the performance of the DCC strategy, an in silico sensitivity analysis based on Equation 4 demonstrated that the optimal separation from monomers to tetramers roughly occurred in the range 0.2 < p < 0.4, while m should best remain below 0.3 (Figure 1\u2014figure supplement 1).\n\nIn SMLM, diffraction-limited video frames, which capture the temporally isolated emission events of individual fluorophores, are fit to yield coordinates associated with additional attributes such as intensity and precision of the fit. These multi-feature coordinates are termed \u2018localizations\u2019 and are used to reconstruct super-resolution images after processing (Betzig et al., 2006). The emission from individual fluorophores typically remains active over several frames, depending on the video acquisition rate and fluorophore kinetics (e.g., for Durisic et al., 2014; Subach et al., 2009b), resulting in a cluster of localizations per emission event. Ideally, when the sample drift and chromatic aberrations are well corrected, all emission events from a single point emitter (e.g., a fluorescent protein) in a fixed sample fall into the same cluster.\n\nWe chose mVenus (Nagai et al., 2002) as the fluorescent marker protein M because of the very low background signal in its detection channel (Figure 1D\u2013E). mVenus is derived from yellow fluorescent protein with several improvements such as faster maturation, a monomeric structure, and high tolerance to cellular acidification, and the halide concentration (Nagai et al., 2002). Like other GFP derivatives, it blinks by cycling between fluorescent and dark states under continuous illumination with the excitation laser (Dickson et al., 1997). PAmCherry was chosen as the indicator because it is quickly bleached by continuous excitation after activation (Durisic et al., 2014). However, this channel had considerably more background signals.\n\nTo deal with background signals, we partially corrected for the background by setting a minimum number of localizations for clustering (see Materials and methods). However, some background signals were still indistinguishable from genuine PAmCherry signals, which explains the higher background level in that color channel (Figure 1D\u2013F). To reduce the contribution of the background noise to the final result, as illustrated in Figure 1F, we corrected Pd as\n\n$$\nP_{d}=\\frac{N_{MF}\u2212N_{M}P_{rb}}{N_{M}\u2212N_{M}P_{rb}}\n$$\n\nin which Prb is the probability of the mVenus cluster colocalizing with red background clusters. For any given mVenus cluster, the number (Nrb) of background clusters from the red channel located in its radial vicinity d follows the Poisson distribution: Nrb ~Pois(\u03c0d2Drb), in which Drb is the average density of red background clusters measured from the area on the coverslip outside of the cell. Therefore, we have\n\n$$\nP_{rb}=1\u2212e^{\u2212\\pid^{2}D_{rb}}\n$$\n\nTo prevent miscounting due to protein aggregation, we excluded the small fraction of clusters with large diameters (>500 nm) (Figure 1\u2014figure supplement 2).\n\n### Correction of sample drift, chromatic aberrations, and definition of colocalization\n\nThe resolution of SMLM is compromised by sample drift and optical aberrations, which affect the determination of colocalization. We recorded sample drift using TetraSpeck beads as fiducial markers and corrected the drift during post-imaging data processing (Yi et al., 2016). This correction reduced the radius of clustered signals to ~30 nm (Figure 2A and B). Since our approach relies on colocalization of the marker and the indicator in two color channels, we also corrected chromatic aberrations resulting from different refractive indices at different emission light wavelengths. We confirmed earlier reports that lateral chromatic aberration (LCA) can be described as a set of linear functions centered on the optical axis of the microscope (Erdelyi et al., 2013; Kozubek and Matula, 2000). Values from a linear fit of the measured inter-color distances of individual beads to their coordinates were used for correction (Figure 2C). This way the LCA could be reduced to 13.8\u00b18.9 nm for bead samples (Figure 2D and E). Chromatic aberrations may also be corrected by determining regional averages with similar results (Figure 2\u2014figure supplement 1; Churchman and Spudich, 2012; Georgieva et al., 2016). The axial chromatic aberration (ACA) determined as the focus offset between colors was less than 100 nm and thus considered negligible for SMLM signal registration in only two dimensions (Figure 2F). Unlike fluorescent proteins , beads show an intense and long-lasting fluorescent signal. To evaluate the correction in fixed cell samples and to determine the offset threshold for colocalization, we applied the correction to cell samples expressing monomeric barttin (Scholl et al., 2006; Est\u00e9vez et al., 2001), or tetrameric Kir2.1 (Kcnj2, Doyle et al., 1998), each subunit tagged with a copy of mVenus and PAmCherry (Figure 2G). We calculated the radial distribution function (RDF) of the red clusters around each mVenus cluster (Figure 2H). Prior to the correction of chromatic aberrations, the RDFs from both proteins showed high densities peaked at a distance of about 150 nm. Following correction, highest densities of red clusters were found within a radius of ~100 nm around mVenus clusters for both proteins, representing the achievable two-color resolution of our experimental setup. We therefore chose 100 nm as the threshold distance for colocalization.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig2-v2.jpg)\n\n**Figure 2.:** (A) A single molecule localization microscopy (SMLM) image of a bead sample reconstructed from 13,000 frames recorded over \u223c18.5 min. The small magenta smears indicate the trajectory of the sample drift. The corrected positions are displayed in green or, when overlapping, in white. Scale bar: 1 \u03bcm. (B) The mean cluster radius of positions extracted from 41 beads before (b.) and after (a.) drift correction, with error bars indicating the SEM. The cluster radius is defined as \u03bc+2\u03c3 of the Euclidean distances (di) of all localizations (with coordinates (xi, yi)) to the center (mean coordinates) of the cluster, as shown in the inset. (C) Plot of the lateral chromatic aberration between the red and green channels, (Ax, Ay), versus the distance from the red coordinates to an arbitrary center point (x0, y0). Data from both dimensions are included in the graph. Linear regression (black line) yielded the values of the slope K, x0, and y0. The fit is a representative from a single recording of a bead sample. (D) Lateral chromatic aberrations from nine recordings of a bead sample with a total of 1980 beads were corrected with the values obtained in (C), with blue and orange indicating before and after the correction, respectively. Black lines show the Gaussian fitting. (E) Reconstructed images of nine representative beads from different areas before and after drift and chromatic aberration corrections. The green and magenta indicate signals from the mVenus and PAmCherry channels, respectively. Scale bar: 200 nm. (F) The mean intensities of the beads recorded at the green and the red channels changed along the axial position of the sample. The axial distance between the two peaks indicates the axial chromatic aberration (ACA). (G) Representative reconstructed images showing the mVenus (green) and PAmCherry clusters (magenta) recorded from HEK293T cells expressing barttin-mVenus-PAmCherry before and after drift and chromatic aberration corrections. Non-clustered localizations were omitted from the images. Scale bars indicate 1 \u03bcm and 200 nm respectively in the bottom and the zoomed-in images. (H) Radial distribution of barttin (17 cells, 1 preparation) and Kir2.1 (35 cells, 3 preparations) PAmCherry clusters around mVenus clusters before and after drift and chromatic aberration corrections. Non-clustered localizations were excluded from the analysis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The whole microscopic field of view was divided into 100 squares and the mean lateral chromatic aberration (Aijk) measured in each square was taken as the offset (Aij) for correction. (B) Distribution of the optical shift before (blue) and after (orange) correction by regional lateral chromatic aberration correction (rCA). Data are from the same recordings as in Figure 2D. Black lines show the result of a Gaussian fit.\n\n### Fixation conditions and the fusion pattern of the fluorescent proteins\n\nA critical prerequisite for DCC studies is to sufficiently immobilize the studied proteins while preserving the function of fluorescent proteins. A large proportion of membrane proteins remain mobile after fixation with paraformaldehyde (PFA) alone, requiring the addition of glutaraldehyde (GA) or the use of cold methanol (MeOH) for adequate immobilization (Stanly et al., 2016; Tanaka et al., 2010). To test whether these fixation methods affect mVenus and PAmCherry fluorescence in SMLM, we stably expressed the ClC-K \u03b2-subunit barttin (Est\u00e9vez et al., 2001) C-terminally tagged with both PAmCherry and mVenus. Both fixation methods led to comparable correlation distances between the two colors (Figure 3A and B). However, upon MeOH fixation we observed a significantly higher signal density, a higher ratio of PAmCherry clusters to mVenus clusters and a higher colocalization ratio than with the aldehyde fixation (Figure 3A\u2019, B\u2019 and C\u2013F). Similar results were obtained for many of the other proteins used in this study (Table 1). Therefore, we concluded that fixation with cold methanol better preserved the function of the fluorescent proteins compared with PFA/GA fixation and, therefore, we chose cold methanol as our routine fixation reagent.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) Results from the radial distribution function g(r) for PAmCherry clusters around mVenus clusters recorded in Flp-In T-REx 293 cells expressing barttin-mVenus-PAmCherry and fixed with cold methanol (A, MeOH, 24 cells) or para-formaldehyde plus glutaraldehyde (B, aldehyde, 29 cells). The inset shows the histograms of the nearest neighbor distances. (A\u2019 and B\u2019) Reconstructed images from recordings of cells expressing barttin-mVenus-PAmCherry fixed with cold methanol (A\u2019) or the aldehyde (B\u2019), with green indicating mVenus clusters and magenta for PAmCherry clusters. Scale bar: 1 \u00b5m. (C and D) The densities of mVenus (C, p=0.0028) and PAmCherry (D, p=4.9 \u00d7 10\u20135) clusters in samples prepared using the two fixation methods. (E) The relative density of PAmCherry (pC.) clusters to mVenus (mV.) clusters, p=0.02. (F) The measured colocalization ratio of mVenus with PAmCherry, p=1.6 \u00d7 10\u201310. *: 0.0 5 > p > 0.01, **: 0.01 > p > 0.001, ***: p<0.001, Student\u2019s t-test. Data is shown as mean \u00b1 SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013E) The colocalization ratios of mVenus with PAmCherry fused to the C-terminus of five different proteins transiently transfected in HEK293T cells fixed with cold methanol. The two fusion patterns POI-PAmCherry-mVenus (r-g) and POI-mVenus-PAmCherry (g-r) are compared for each protein. Data is shown as mean \u00b1 SEM. The number of cells included in the analysis are (r-g/g-r) barttin: 23/17 , ClC-2: 12/32, bClC-K: 9/15, and Kcnj2: 14/35, respectively.\n\n**Table 1.**\n Colocalization ratio (Pd) of mVenus clusters with PAmCherry clusters of fusion proteins fixed with PFA+GA or cold methanol.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Protein</th>\n      <th colspan=\"2\">PFA +GA</th>\n      <th colspan=\"2\">Cold methanol</th>\n    </tr>\n    <tr>\n      <th>Pd</th>\n      <th>N</th>\n      <th>Pd</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ClC-2</td>\n      <td>0.215</td>\n      <td>19</td>\n      <td>0.237</td>\n      <td>32</td>\n    </tr>\n    <tr>\n      <td>bClC-K</td>\n      <td>n/a</td>\n      <td>n/a</td>\n      <td>0.241</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>EAAT2</td>\n      <td>n/a</td>\n      <td>n/a</td>\n      <td>0.293</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>Kcnj2 (Kir2.1)</td>\n      <td>0.248</td>\n      <td>23</td>\n      <td>0.411</td>\n      <td>35</td>\n    </tr>\n    <tr>\n      <td>SLC26A3</td>\n      <td>n/a</td>\n      <td>n/a</td>\n      <td>0.214</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>Prestin</td>\n      <td>0.176</td>\n      <td>27</td>\n      <td>0.251</td>\n      <td>33</td>\n    </tr>\n    <tr>\n      <td>vGlut1</td>\n      <td>0.119</td>\n      <td>25</td>\n      <td>0.170</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>vGlut2</td>\n      <td>0.111</td>\n      <td>25</td>\n      <td>0.165</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>vGlut3</td>\n      <td>0.131</td>\n      <td>26</td>\n      <td>0.163</td>\n      <td>32</td>\n    </tr>\n    <tr>\n      <td>sialin</td>\n      <td>n/a</td>\n      <td>n/a</td>\n      <td>0.172</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>barttin</td>\n      <td>0.078</td>\n      <td>27</td>\n      <td>0.172</td>\n      <td>17</td>\n    </tr>\n  </tbody>\n</table>\n\nSince proteins of interest (POIs) were tagged with both PAmCherry and mVenus, we investigated whether the fusion pattern affected the outcome. We compared the colocalization ratios when PAmCherry and mVenus were tagged to the C-terminus of POIs in two different ways: either PAmCherry or mVenus preceding the other. The results, as shown in Figure 3\u2014figure supplement 1, indicated that the fusion pattern did affect the colocalization ratio.\n\n### Calibration of the DCC model\n\nGiven that the recall rate (p) of fluorescent proteins may differ between experimental setups (Durisic et al., 2014; Wang et al., 2014), we first calibrated the DCC model (Equations 4\u20136) using standards with known oligomeric state: the monomeric ClC-K chloride channel \u03b2-subunit barttin (Scholl et al., 2006; Est\u00e9vez et al., 2001), the dimeric chloride channels ClC-2 and ClC-K (Park et al., 2017; St\u00f6lting et al., 2014; Thiemann et al., 1992), the trimeric glutamate transporter EAAT2 (Canul-Tec et al., 2017; Nothmann et al., 2011) and the tetrameric potassium channel Kir2.1 (Kcnj2, Doyle et al., 1998). All proteins were C-terminally tagged with PAmCherry and mVenus via two short peptide linkers (Table 2).\n\n**Table 2.**\n The linkers used in the fusion of proteins of interest (POIs) to the fluorescent protein.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Amino acid sequence</th>\n      <th>Length (a.a.)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Linker #1</td>\n      <td>GGSGG PSGLR SGSGG GSASG GSGS</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>Linker #2</td>\n      <td>PPVGT ELGST</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Linker #3</td>\n      <td>GGSGG PGGSG GSPVG TELGS T</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td>Linker #4</td>\n      <td>GSGSG GGSAS GGSGS</td>\n      <td>15</td>\n    </tr>\n  </tbody>\n</table>\n\n_In this project two fusion patterns were tested: POI-Linker #1-PAmCherry-Linker #2-mVenus (r-g) and POI-Linker #3-mVenus-Linker #4-PAmCherry (g-r) (both written from the N- to C-terminus) with the following linker sequences._\n\nAs an independent confirmation of the reported oligomeric state as well as of the function of our constructs, we performed high-resolution clear native electrophoresis (hrCNE) with these proteins (Figure 4\u2014figure supplement 2). Our results also demonstrate that the two linked fluorescent proteins did not interfere with the reported quaternary structure.\n\nAfter correction for sample drift and chromatic aberrations, localizations were assigned to clusters using the DBSCAN (density-based spatial clustering of applications with noise) algorithm (Ester et al., 1996). Background subtracted colocalization ratios for mVenus and PAmCherry clusters were then calculated (Equations 5 and 6, Figure 4A). We used the known oligomeric states (n) to obtain the recall rate (p) of PAmCherry from Equation 1, or p and the modification factor (m) from Equation 4 of the DCC model. A global fit of bootstrap resampled (10,000 resamples) experimental data from all five proteins with known oligomeric states to Equation 1 suggested a low recall rate (p) of 0.12 (95% confidence interval [CI]: 0.12\u20130.13) for PAmCherry. In general, the fit did describe the data reasonably well (R\u00b2 = 0.95) but showed a large deviation for the monomeric reference protein as expected (Figure 4A). Fitting to Equation 4 gave values of 0.30 (95% CI: 0.21\u20130.39) for m and 0.17 (95% CI: 0.15\u20130.18) for p. As expected, this model only aligns slightly better with the data (R2 = 0.97) compared to the simpler model (Equations 1\u20133). However, the improvement is especially visible for the monomeric reference protein (Figure 4A), and we therefore chose Equation 4 to analyze proteins with contradictory or unknown oligomeric states.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig4-v2.jpg)\n\n**Figure 4.:** (A) The colocalization ratios for mVenus and PAmCherry linked to proteins with known oligomeric states for calibration. Red lines show the fit with Equation 1 and black lines show the fit with Equation 4 including the modification factor m. The number of cells included in the analysis are (in brackets): barttin (13), ClC-2 (30), bClC-K (14), EAAT2 (19), and Kir2.1 (34). Individual values are shown as gray circles and the mean value is shown as a black open diamond. (B) Colocalization ratios for mVenus and PAmCherry linked to the indicated proteins of interest. The number of cells included are 24, 27, 22, 25, 30, and 22, respectively. (C\u2013H) The coefficient of mismatch (M2) calculated for all the proteins of interest at assumed oligomeric states of monomer (1), dimer (2), trimer (3), and tetramer (4). Error bars correspond to the range of the 95% confidence intervals as determined by a global bootstrap resampling (10,000 resamples). (I\u2013N): Two-sample Kolmogorov-Smirnov (K.-S.) tests of the observed colocalization ratios from each protein of interest compared with the protein standards in (A). The dashed horizontal line indicates the Bonferroni-corrected threshold for the \u03b1-level (0.0125).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** As expected, the determination of the monomeric state of SLC17 (vGlut and Sialin) proteins is not possible using the COM based only on Equation 1 (top row). Determination of dimers as seen for the SLC26 proteins is much less affected (top row). Error bars correspond to the range of the 95% confidence intervals as determined by a global bootstrap resampling (10,000 resamples). The comparison of the observed colocalization ratios with those of reference proteins using the Kolmogorov-Smirnov test is unaffected (bottom row).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) hrCNE of standard proteins with known oligomeric state. Depending on their oligomeric state, protein bands are indicated with an increasing number of red stars (monomer, *; dimer, **, timer, ***; tetramer, ****). (B) hrCNE of VGLUTs and sialin. To minimize artifacts due to protein glycosylation, proteins were treated with PNGaseF at 34 \u00b0C for 30 min. For comparison, enzyme treated (+) and untreated (-) samples were loaded. (C) hrCNE of SLC26A3 and SLC26A5/prestin. Both proteins are natively glycosylated, therefore dimers exhibit two bands in non-PNGaseF-treated samples. Proteins were also treated with a final concentration of 0.05% SDS for 15 min at 37 \u00b0C to dissociate oligomers (right half of the gel). The calculated molecular masses of protein monomers are shown in green.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig4-figsupp3-v2.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Proteins were simulated with p = 0.15, m = 1 at a density of 5 clusters/\u00b5m\u00b2. Protein coordinates were set randomly and DBSCAN (density-based spatial clustering of applications with noise) clustering was applied as stated in Materials and Methods. Blue lines represent expected values for monomeric through tetrameric values. The standard error of the mean is smaller than the symbols.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Blue lines represent a fit of a linear function to the data and the shaded areas represent the 95%confidence interval (CI) of this fit as determined by 10,000 bootstrap resamples each.\n\n### Using DCC-SMLM to determine the oligomeric states of SLC26 and SLC17 proteins\n\nWe next used DCC-SMLM to resolve the oligomeric states of several SLC26 and SLC17 proteins. The colocalization ratios of mVenus and PAmCherry clusters for these proteins were determined (Figure 4B) and compared with those expected for different oligomeric states using the DCC model (Equation 4). To quantify the difference between expected and observed values, we introduced the coefficient of mismatch M2 (Equation 15). An M2 value of 0 indicates a perfect match, with larger values indicating larger differences. The calculated value is dependent on an accurate determination of p and m in Equation 4 as well as of the colocalization ratios of the POIs. To include the combined error of these measurements, we used bootstrap resampling over all of these parameters to calculate means and 95% confidence intervals. As shown in Figure 4C-H, M2 values reached their lowest values for a dimeric state of SLC26 proteins and for a monomeric state of all SLC17 proteins. As predicted for a monomer, accurate determination with Equation 1 alone (only p, no m) was not feasible as seen for the SLC17 proteins (Figure 4\u2014figure supplement 1).\n\nEven using Equation 4, the confidence interval at the dimeric state for SLC26A3 overlapped with that of the monomeric state (Figure 4C), preventing the confident designation as a dimer based on the M2 values alone. To resolve these uncertainties, we additionally used a two-sample Kolmogorov-Smirnov (K.-S.) test (Figure 4I\u2013N), which allows for the determination of the most likely oligomeric state by comparing the colocalization ratios from the POI with those from proteins with known stoichiometry, thereby foregoing the need to determine p and m. With this test, we confirmed the results of the M2 values and also demonstrated that SLC26A3 is most likely a dimeric protein as it showed a significantly different distribution compared to reference proteins with other oligomeric states (Figure 4I). Moreover, we independently confirmed our results for the oligomeric states of SLC26 and SLC17 proteins with hrCNE utilizing the same constructs and expression system as in our DCC-SMLM experiments (Figure 4\u2014figure supplement 2).\n\n## Discussion\n\nWe have developed a novel DCC-SMLM technique to determine the oligomeric state of plasma membrane protein complexes in situ in mammalian cells. Using mVenus as the marker fluorescent protein and PAmCherry as the indicator fluorescent protein for counting, we established a dimeric state for two representatives of the SLC26 family, the epithelial anion exchanger SLC26A3 and the motor protein prestin (Slc26a5); and a monomeric state for four representatives of the SLC17 family, the vesicular glutamate transporters vGlut1, -2, and -3 and the lysosomal sialic acid transporter sialin.\n\nOur DCC-SMLM approach (Figure 4\u2014figure supplement 3) overcomes several limitations of the methods commonly used to determine the oligomeric state of proteins. Unlike for biochemical methods, no solubilization or purification of proteins is necessary as DCC-SMLM works with proteins in situ. In comparison to photobleaching experiments, DCC-SMLM can be applied reliably even in small mammalian cells where the high densities of protein expression are usually problematic. In contrast to previously reported quantitative SMLM methods, DCC-SMLM simplifies the procedure and offers greater reliability of counting. Binomial SMLM counting strategies require clustering of signals in at least three dimensions (x, y, and time) to identify individual protein subunits. This demands stringent control of the activation laser and intensive post-imaging data processing (Lee et al., 2012). Another recently published SMLM-based quantification strategy also foregoes the need for temporal clustering as it utilizes the blinking behavior of some fluorescent proteins (Fricke et al., 2015; Hummer et al., 2016). This, however, requires fluorescent proteins that show blinking behavior (multiple on \u2194 off sequences) which is not guaranteed for all fluorescence proteins or dyes (Durisic et al., 2014; Subach et al., 2009a). Additionally, all previously published SMLM quantification and photobleaching step analysis methods require large recall rates (p \u2265 0.5) as they are otherwise unable to resolve the small oligomers typically observed for most membrane proteins. In contrast, DCC-SMLM only relies on the relationship between the total detection probability for a protein complex and the number of fluorophores within the complex, as displayed in Equations 1 and 4. This relationship is independent of temporal separation or demanding fluorophore properties, such as high recall rates, thereby simplifying the data acquisition and post-processing.\n\nAt the single molecule level, noise and genuine signals become hard to distinguish, especially for photoactivatable fluorescent proteins with low brightness such as PAmCherry (Subach et al., 2009b). Since DCC considers the overlap of two colors, the effect of background signals on the indicator is greatly reduced. The probability of noise signals falling within the colocalization threshold distance of a given mVenus cluster follows a Poisson distribution. Our measured background signal density in the PAmCherry channel of ~0.8 clusters/\u00b5m\u00b2 inside cells (Figure 1E) suggests that only 2.6% of all mVenus molecules erroneously colocalize with the background clusters from the red channel (Equation 6). Given the colocalization ratios greater than 0.2 (for dimers and higher oligomeric forms; Figure 4), this noise level results in a signal-to-noise ratio greater than 10. This estimate compares favorably with single-color experiments: transfected cells showed a mean density of ~2.2 PAmCherry clusters/\u00b5m\u00b2 consistent with a signal-to-noise ratio less than 4 for this fluorescent protein alone. Higher background noise levels in the marker detection channel would lead to the over-counting of marker clusters, resulting in a falsified colocalization ratio and should be avoided. Our use of the bright mVenus tag as the marker allowed us to use a narrow detection window, resulting in very low levels of background noise (Figure 1D and Table 3).\n\n**Table 3.**\n The settings used for single molecule localization microscopy (SMLM) imaging.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Channel</th>\n      <th>FP</th>\n      <th>Excitation laser</th>\n      <th>Emission filter</th>\n      <th>Collection range</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Green</td>\n      <td>mVenus</td>\n      <td>514 nm@ 6.1/4.4 mW</td>\n      <td>FF01-485/537/627\u221225+FF03-525/50-25</td>\n      <td>526\u2013546 nm</td>\n    </tr>\n    <tr>\n      <td>Red</td>\n      <td>PAmCherry</td>\n      <td>561 nm@ 6.5/5.4 mW</td>\n      <td>FF01-609/57-25</td>\n      <td>580\u2013537 nm</td>\n    </tr>\n  </tbody>\n</table>\n\n_The dichroic mirror Di01-R442/514/561\u221225x36 was used for imaging of both fluorescent proteins. All filters and dichroic mirrors were acquired from Semrock. The laser power was measured at the sample plane and before the rear entrance of the objective. The power of the 405 nm activation laser for PAmCherry was varied between 4.4 \u00b5W and 10.2 mW near the rear entrance, corresponding to 3.0 \u00b5W to 4.8 mW in the sample plane._\n\nFor data processing, filtering of noise signals is important for determining the recall rate accurately. The higher tolerance to background noise enabled us to solely use a simple filter based on an empirical threshold of the minimal number of localizations for a single PAmCherry cluster (Figure 5). This was based on our observation that signal clusters recorded from background regions showed mostly only small clusters with few localizations (Figure 5). Fusion of two fluorescent proteins linked sequentially did not interfere with their structure as indicated by our hrCNE results (Figure 4\u2014figure supplement 2). This may not be surprising as similar results have been reported previously for similar constructs in other contexts (Leeman et al., 2018; Liang et al., 2018; Murata et al., 2005; Ranade et al., 2014).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig5-v2.jpg)\n\n**Figure 5.:** (A) The cumulative probability distribution of the number of localizations per cluster in the background and within Flp-In T-Rex 293 cells expressing Barttin-mVenus-PAmCherry.While most clusters in the background only exhibit a small number of localizations, clusters within cells exhibit a higher proportion of larger clusters. (B) The dependence of the colocalization ratio p versus the lower cutoff to be considered a genuine cluster. A cutoff of 2 results in low ratios due to the inclusion of a large number of background red clusters, which interfere with the computation algorithm by excluding a large amount of colocalizations of the genuine clusters. While data on the stoichiometry in large protein clusters and macro-structures can be relevant, dual-color colocalization (DCC)-single molecule localization microscopy (SMLM) was developed to only resolve smaller oligomeric structures in situ as they are typically the smallest functional units of proteins. We therefore removed larger structures from further analysis. The number of clusters removed, however, was very low with typically more than 98% remaining (Figure 1\u2014figure supplement 1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76631/elife-76631-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** SMLM was recorded for mVenus and PAmCherry in HEK293T cells expressing barttin-mVenus-PAmCherry. N=17 recordings. Dashed lines connect the same recordings. (A and B) The cluster densities collected within the cell (A) and in the background (B), with green indicating the mVenus channel and red the PAmCherry channel. (C and D) The localization densities collected within the cell (C) and in the background (D). (E) Comparison of colocalization ratios (p) of mVenus and PAmCherry clusters collected within the cell (p = 0.82). Paired Student\u2019s t-tests were used to compare SMAP and SNSMIL extractions, with *** indicating p<0.001, ** 0.001 \u2264 p < 0.01, * 0.01 \u2264 p < 0.05, n.s. p \u2265 0.05.\n\nIn conventional binomial analyses of SMLM data, a low recall rate (p<0.5) is a significant limitation when determining oligomeric states of proteins (Durisic et al., 2014). Theoretically, DCC-SMLM can optimally distinguish oligomeric states from monomer to pentamer if p is between 0.2 and 0.4 (Figure 1C; Figure 1\u2014figure supplement 1), dependent on the oligomeric state of interest. This makes PAmCherry and other fluorescent proteins with low recall rates suitable for determining oligomeric states with DCC-SMLM (Figure 4). The original DCC model (Equations 1\u20133) suggested a recall rate of only 0.12 for PAmCherry, but did not result in an optimal fit for our experimental data from reference proteins (Figure 4A). We reasoned that the function of the two fluorescent proteins may somehow become impaired in the context of fusion proteins. Therefore, we introduced a modification factor, m, to describe the probability of both fluorescent proteins becoming dysfunctional. Fitting this modified DCC model to our reference data suggested a slightly higher recall rate of 0.17 for PAmCherry, and aligned well with the experimental data (Figure 4A). Previously reported recall rates for PAmCherry range from 0.04 when expressed in Escherichia coli (Wang et al., 2014) to about 0.5 in Xenopus oocytes (Durisic et al., 2014). This variability implies that the expression system may influence the functionality of fluorescent proteins. Nevertheless, it may also result from differences in image acquisition and data processing. The software SNSMIL (Tang et al., 2015), which was used in our study to extract localizations, is no longer optimal, and newer software such as SMAP (Ries, 2020) may be more sensitive in localization extraction and yield different recall rates. In comparison with SNSMIL, however, SMAP did not significantly improve the colocalization ratios because of its higher sensitivity to background signals (Figure 5\u2014figure supplement 1). However, this may not be representative as SNSMIL was developed on our microscope and may thus perform better than expected and we recommend to use more up-to-date software. It should also be considered that many fluorescent proteins and dyes are sensitive to their specific microenvironment and it may not be taken for granted that the same values of p and m can be used in every circumstance. However, in our case, the same values gave reasonable results that matched the oligomeric states as determined by hrCNE (Figure 4\u2014figure supplement 2).\n\nIntroduction of the modification factor m improved our original DCC model. Different from the factor p, which describes the recall rate of PAmCherry alone, m additionally regards those behaviors that lead to loss of fluorescence of both mVenus and PAmCherry simultaneously. This takes away the independence of the two signals and invalidates the use of p alone. Based on our experience with fluorescent protein-linked proteins, we assume that the most likely cause for such behavior is truncation within or proximal to mVenus. We often observe such events when solubilizing proteins containing fluorescent proteins that show up as smaller, additional bands on polyacrylamide gels such as seen in hrCNE (Figure 4\u2014figure supplement 1). We currently suspect that this is largely dependent on the linker sequence used. Therefore, we recommend to use the same linker for calibration proteins and POIs.\n\nAnother reason to carefully consider is the expression of endogenous proteins that can form oligomers with the transfected POIs. This would also reduce the apparent colocalization ratios due to the inclusion of subunits without fluorescent proteins. We used a publicly available database of protein expression (https://www.proteinatlas.org/) to make sure that our calibration proteins and POIs are not expressed in the HEK293T cells that we used. The only protein with meaningful expression in this cell line was ClC-2 which is why we also used the bovine ClC-K channel as another dimer control. Colocalization ratios obtained for ClC-2, however, were similar to those of bClC-K (Figure 4A), indicating that dimerization with endogenous channels was negligible.\n\nIf the interest is only in determining higher oligomeric states (larger than dimers), the factor m may be omitted. However, as theoretically expected, the determination of a monomeric state becomes almost impossible without m (Figure 4C\u2013H) when taking the uncertainty of all values into account. Alternatively, the determination of the most likely oligomeric state can be performed without the knowledge of either p or m using a comparison to the recorded colocalization ratios of reference proteins. We used the two-sample K.-S. test with Bonferroni-adjusted significance thresholds (Figure 4I\u2013N). This has the potential to further simplify the determination of oligomeric states but is dependent on very accurate recordings of reference protein values.\n\nTo achieve the necessary spatial resolution across two colors, we implemented and compared simple methods of cell fixation of cells and post-imaging correction of common artifacts such as drift and chromatic aberrations. While our implementation is based on SMLM, it could also be adapted for other types of microscopy as stated above. In our experiments, there was no difference between a linear fit of chromatic aberrations and local average correction (Figure 2 and Figure 2\u2014figure supplement 1); however, this may depend on the quality of the optical setup and should be carefully evaluated for every instrument.\n\nIt should be emphasized that DCC-SMLM does not consider the behavior of individual protein complexes; instead, it is based on statistical information from a large number of protein complexes. Therefore, if the protein complex of interest does not exist in a single oligomeric state, DCC-SMLM counting can only report an average oligomeric state (simulated in Figure 4\u2014figure supplement 4). Future efforts should aim to explore whether additional information obtained from DCC-SMLM experiments or other experimental designs could be used to increase its usefulness in analyzing proteins that adopt a mixture of oligomeric states.\n\nTo exclude an effect of expression density on the oligomeric state of our observed proteins, we used cells which covered a wide range of expression densities. A plot of the colocalization ratio versus the density of expressed clusters (Figure 4\u2014figure supplement 5) did not reveal any significant correlation between the two values, effectively ruling out aggregation over the expression densities achieved in our samples. It would also be expected that higher expression densities may be used to decrease the variability of the results as the inclusion of more clusters per recordings would help the mean colocalization ratio per recording to fall closer to the actual mean.\n\nUsing DCC-SMLM, we determined the oligomeric state of proteins from the SLC26 and SLC17 families. Studies using Blue native electrophoresis (Detro-Dassen et al., 2008) and X-ray and cryo-EM (Geertsma et al., 2015; Walter et al., 2019) previously reported a dimeric assembly for SLC26, whereas microscopy approaches supported a tetrameric assembly (Hallworth and Nichols, 2012; Sinha et al., 2010). This discrepancy might indicate that SLC26 forms stable dimers that survive protein purification and solubilization as well as weakly associated \u2018dimer-of-dimer\u2019 tetramers in native membranes that may only be visible in intact cells. Although we cannot exclude the possibility that a minor fraction of prestin forms tetrameric structures, our results show that both prestin and SLC26A3 predominantly form dimers in intact HEK293T cells (Figure 4B\u2013D).\n\nWe also studied the oligomeric state of vGlut1, -2, and -3 (Slc17a7, Slc17a6, and Slc17a8, respectively), and sialin (SLC17A5) and found that they are likely to be monomeric. Again, these results are consistent with native gel electrophoresis (Figure 4\u2014figure supplement 2). An earlier report suggested dimeric organization for SLC17 transporters based on SDS-PAGE results (Andersen, 2004) but a recent cryo-EM study reported a monomeric structure (Li et al., 2020). Functional expression studies have also demonstrated that vesicular glutamate transporters and sialin can function without accessory subunits (Eriksen et al., 2016; Morin et al., 2004), which, when considered alongside our results, confirms that SLC17 proteins are functional monomers.\n\nOur study provides a new approach to determine the oligomeric state of membrane proteins in situ. DCC-SMLM overcomes many of the drawbacks and requirements of previous methods, making determination of oligomeric states more reliable and much easier to perform. In fact, while we use the x- and y-coordinates provided by SMLM, the DCC principle is not reliant on SMLM and the algorithm may also be used with other microscopy modalities given enough spatial resolution to separate individual protein complexes. Examples may include structured illumination (Kner et al., 2009) and super-resolution radial fluctuations (Gustafsson et al., 2016) which are otherwise difficult to quantify at the single molecule level because they rely on the mathematical processing of multiple raw images to yield super-resolution images removing much of the information required by other algorithms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>tsa201 (HEK293T)</td>\n      <td>ECACC via Sigma Aldrich</td>\n      <td>Cat# 96121229-1VL</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Flp-In T-Rex 293</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# R78007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>SLC26A3</td>\n      <td>10.1074/jbc.M704924200</td>\n      <td>GenBank:NM_000111</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Rattus norvegicus)</td>\n      <td>Slc26a5 (Prestin)</td>\n      <td>10.1074/jbc.M704924200</td>\n      <td>GenBank:NM_030840</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>ClC-2</td>\n      <td>10.1093/hmg/4.3.407</td>\n      <td>Swiss-Prot:P51788</td>\n      <td>With Y17H and R210H inserted to conform to 360 control chromosomes (Haug et al., 2003)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Bos taurus)</td>\n      <td>bClC-K</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cloned from bovine kidney tissue</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>EAAT2</td>\n      <td>10.1074/jbc.M110.187492</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Mus musculus)</td>\n      <td>vGlut1</td>\n      <td>Other</td>\n      <td></td>\n      <td>From Dr R Guzman, FZ J\u00fclich.Carries a mutation of the di-leucin motif to alanine to facilitate plasma membrane insertion (see Eriksen et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Mus musculus)</td>\n      <td>vGlut2</td>\n      <td>Other</td>\n      <td></td>\n      <td>From Dr R Guzman, FZ J\u00fclich.Carries a mutation of the di-leucin motif to alanine to facilitate plasma membrane insertion (see Eriksen et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Mus musculus)</td>\n      <td>vGlut3</td>\n      <td>Other</td>\n      <td></td>\n      <td>From Dr R Guzman, FZ J\u00fclich.Carries a mutation of the di-leucin motif to alanine to facilitate plasma membrane insertion (see Eriksen et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Mus musculus)</td>\n      <td>Sialin</td>\n      <td>Other</td>\n      <td></td>\n      <td>From Dr R Guzman, FZ J\u00fclich.Carries a mutation of the di-leucin motif to alanine to facilitate plasma membrane insertion (see Eriksen et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>Barttin</td>\n      <td>10.1097/HJH.0b013e3283140c9e</td>\n      <td>GenBank:NM_057176</td>\n      <td>Obtained via Dr AL George</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>Kir2.1</td>\n      <td>10.1073/pnas.102609499</td>\n      <td></td>\n      <td>Obtained via Prof. Dr J Daut</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TetraSpeck fluorescent beads (100 nm)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# T7279</td>\n      <td>Fluorescent microspheres used for the correction of drift and chromatic aberration, as well as for the general calibration of the microscope</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and DNA constructs\n\nHEK293T cells and Flp-In T-REx 293 cells were grown in DH10 medium (DMEM supplemented with 50 U/ml penicillin-streptomycin and 10% FBS at 37 \u00b0C and 5% CO2; Tan et al., 2017). For Flp-In T-REx 293 cells, the medium was additionally supplemented with 10 \u03bcg/ml blasticidin S HCl and 100 \u03bcg/ml hygromycin B. None of the cell lines used were authenticated. However, no commonly misidentified lines were used. Cell lines were tested for mycoplasma contamination twice per year. cDNAs encoding the fusion proteins were inserted into the cloning site of the pcDNA5/FRT/TO or pcDNA3 vector plasmid via overlap extension PCR, restriction digestion, and DNA ligation.\n\n### Cleaning of coverslips\n\nPiranha solution was made by slowly adding 1 volume of hydrogen peroxide solution (30%, Merck) into 3 volumes of concentrated sulfuric acid (> 95%, Sigma-Aldrich) while stirring. Caution: Piranha solution reacts violently with organic matter and must be handled and disposed of according to institutional guidelines! Coverslips (VWR) were placed in a glass container and freshly prepared piranha solution was added. Following incubation for 4\u20137 days at room temperature, coverslips were rinsed with double distilled water at least 20 times. Afterward, coverslips were stored in double distilled water at 4 \u00b0C for experiments within the next 2 weeks.\n\n### Preparation of cells for SMLM imaging\n\nFor SMLM imaging, HEK293T cells were sparsely seeded onto clean 25 mm coverslips in 1.5 ml DH10 in 3.5 cm Petri dishes 2\u20133 hr before transfection. Cells were transfected with 0.5\u20131.0 \u03bcg plasmid DNA plus 1.0 \u03bcl Lipofectamine 2000 (Life Technologies) according to the manufacturer\u2019s instructions and cultured overnight (12\u201316 hr) before fixation. Flp-In T-REx 293 cells were seeded on coverslips in the same way and 0.01 \u03bcg/mL tetracycline was added to the culture medium 14.5 hr before fixation.\n\nAfterwards, cells were washed three times with 2 ml, 4 \u00b0C PBS and fixed in 1 ml of \u201320 \u00b0C cold methanol (Gradient grade for liquid chromatography, Merck) for 5 min at \u201320 \u00b0C. Methanol was then removed and the cells were washed five times with 4 \u00b0C cold PBS.\n\nFor experiments using aldehyde fixation, 4 g PFA (Merck) was dissolved in 80 ml PBS heated to 60 \u00b0C. Once completely dissolved, the solution was filled to 100 ml with PBS. One ml aliquots were stored at \u201320 \u00b0C for long-term storage. Prior to fixation, aliquots were warmed to 37 \u00b0C and vortexed to dissolve precipitates. Eight \u00b5l of a 25% GA solution (Electron microscopy grade, Agra Scientific) was added to the PFA aliquot for a final concentration of 0.2% (w/v) GA. Cells were washed three times with 37 \u00b0C warm PBS and fixed in 1 ml of the PFA/GA solution for 30 min at 37 \u00b0C. Afterward, cells were washed three times with PBS, followed by incubation in 0.5% (w/v in PBS) ice-cold NaBH4 (Sigma-Aldrich) solution for 1 hr at 4 \u00b0C. Fixed cells were stored in 2 ml PBS in the dark at 4 \u00b0C until imaging within 24 hr.\n\n### Preparation of bead samples for imaging\n\nTo prepare bead samples, 5 \u03bcl multi-color TetraSpeck fluorescent bead solution (100 nm diameter, Thermo Fisher Scientific) was diluted with 400 \u03bcl double distilled water, added to cleaned coverslips and let dry.\n\n### SMLM imaging\n\nImaging was performed on a custom-built wide field and total internal reflection fluorescence microscope described previously (St\u00f6lting et al., 2015b; Tang et al., 2015). We used 561 and 405 nm diode lasers for imaging and photoactivation of PAmCherry, respectively. Prior to imaging, the sample was washed three times with PBS and mounted in the chamber. One \u00b5l TetraSpeck fluorescent bead solution was diluted in 0.5 ml PBS, added to the coverslip, and incubated for 1\u20132 hr in the dark. Afterward, the solution was removed and 1 ml PBS was added for imaging. To reduce vaporization, the chamber was covered.\n\nThe focal plane was adjusted using red color signals of the fluorescent beads on the coverslip surface. A transmission image was taken to record positions of cells and beads. Videos were recorded at an exposure of 85.59 ms per frame, during which the illumination lasted for 50 ms. Background signals were bleached by illumination with the 561 nm laser at full power for 500\u20131000 frames before the recording started. Color channels were recorded sequentially, starting with the green channel (for mVenus), followed by the red channel (for PAmCherry). See Table 3 for details about the laser power and filter settings. The intensity of the 405 nm laser used for photoactivation of PAmCherry was gradually increased during the recording to keep signals sparsely distributed over time. The recording was stopped when no signals appeared. After recording both color channels, the focus was re-adjusted using the fluorescent beads, and the displacement of the sample stage was taken as the axial drift. Recordings with an axial drift > 300 nm were discarded.\n\n### Extraction of SMLM signals\n\nRaw videos were processed by SNSMIL (Tang et al., 2015) with the following parameters: optical magnification, 200; numerical aperture, 1.49; gain, 300; e/AD count, 11.9; excess noise factor square, 2; pixel diameter, 16 \u00b5m; bias offset (AD counts), 100; quality threshold, 1; PSF width tolerance, 3; fitting model, fixed SD 2D Gaussian non-integral model. For recordings of the green channel (mVenus and beads), the peak emission wavelength was set to 528 nm and for the red channel (PAmCherry and beads) to 595 nm. Coordinates obtained from SNSMIL were translated from pixels to nm using the known size of 80 \u00d7 80 nm/pixel. Binary reconstructions were plotted using a custom written python script using the package Pillow (v.6.0.0). The same parameter settings were used when SMAP was used for data extraction.\n\n### Drift correction\n\nThe algorithm was adapted from a previously reported application using nanodiamonds (Yi et al., 2016). First, the drift was corrected relative to the first frame of each color. Beads close to the recorded cells were manually selected from the reconstructed image using Fiji (Schindelin et al., 2012) and precise coordinates were extracted from the output of SNSMIL using a custom Python script. In a recording with n total frames, the average drift (\u03b4k) on the kth frame (k = 1, 2, 3, \u2026, n) was calculated across all m beads (with the index i = 1, ..., m) relative to the first frame as:\n\n$$\n\\delta_{k}=\\frac{\\sumi=1m(x_{i,k}\u2212x_{i,1},y_{i,k}\u2212y_{i,1})}{m_{k}}\n$$\n\nThe drift was subtracted from each localization (pk) to give the drift corrected position for each frame (p\u2019k):\n\n$$\np^{\u2032}\u00a0_{k}=p_{k}\u2212\\delta_{k}\n$$\n\nAs the red channel was recorded after the green channel, the corrected positions of the red channel were further corrected relative to the last frame in the green channel:\n\n$$\np^{\u2033}\u00a0_{Red}=p^{\u2032}\u00a0_{Red}\u2212\\delta_{Green,n}\n$$\n\n### Determination of ACA\n\nTo determine ACA, a bead sample was used. First, the focus was set in the red channel. The stage was moved from 700 nm above to 700 nm below the focal plane in 100 nm steps and 10 frames in each color channel were recorded at each step. The mean intensities of the signals from each step were then analyzed.\n\n### Correction of LCA\n\nFor the determination of LCA, multiple beads (> 10 beads) without cells were recorded in wide field mode for 50 frames in the green and red channel, respectively. Data from multiple recordings were concatenated into a single dataset (100\u2013200 beads in total, evenly distributed around the field of view) for each color channel. In this dataset, the coordinates of signals were clustered using the DBSCAN implementation of the python package scikit-learn (v.0.21.0) (Pedregosa et al., 2011) to assign localizations to individual beads. The parameter eps defines the upper threshold of the Euclidean distances between any two localizations for a single bead and was empirically determined as 40 nm. The parameter min samples defines the lower threshold of localizations required for each cluster and was set to 50 to ensure that localizations must occur in every frame of the recording. Following clustering in separate color channels, distances to the nearest neighboring cluster in the other color channel were calculated and considered to be from the same bead if within 200 nm. The second (red) was corrected toward the first recorded color (green). For every bead in the dataset, the LCA was determined as the shift between the mean coordinates of the clustered localizations in the red (pRed) and green (pGreen) channels:\n\n$$\nA=p_{Red}\u2212p_{Green}\n$$\n\nIn general, correction of LCA was performed relative to the green channel according to yield corrected coordinates for each localization:\n\n$$\np^{\u2034}\u00a0_{Red}=p^{\u2033}\u00a0_{Red}\u2212A\n$$\n\nFor the regional LCA correction (rCA) (Churchman and Spudich, 2012; Georgieva et al., 2016), the field of view was divided into 100 squares (each 1049 \u00d7 1049 nm2). Within each square with the coordinates (i,j), the mean LCA (Ai,j) was calculated by averaging the LCA from the individual beads found within this square. For squares without any beads, Ai,j was interpolated from neighboring regions. rCA for samples of interest was performed by subtracting Ai,j from the localizations in each square according to Equation 11.\n\nTo correct LCA by linear fit (fCA) (Erdelyi et al., 2013; Kozubek and Matula, 2000), the LCA (Ax, Ay) was determined as described above along the positions of all beads detected in the red channel (x, y). The LCA varies across the field of view according to:\n\n$$\nA_{x}A_{y}=Kx-x_{0}y-y_{0}\n$$\n\nK, x0, and y0 were determined by a fit of the LCA and positions of all beads present in the sample. With these values, the LCA (As) of any given localization with position (xs, ys) in samples of interest was then calculated by\n\n$$\nA_{s}=K(x_{s}\u2212x_{0}y_{s}\u2212y_{0})\n$$\n\nLCA correction was then performed according to Equation 11.\n\n### Cluster analysis of mVenus and PAmCherry localizations\n\nOne emission event from either mVenus or PAmCherry lasts for several frames, generating a series of localizations that are temporally and spatially close (Durisic et al., 2014; Nan et al., 2013). Similar to the assignment of localizations to individual beads, we used DBSCAN for a cluster analysis of localizations. The parameter \u2018eps\u2019 was empirically determined as 40 nm while \u2018min samples\u2019 was set to 10 for mVenus and 6 for PAmCherry (Figure 5). Non-clustered signals were discarded from further analysis.\n\n### Pair correlation analysis and computation of colocalization ratios\n\nMean coordinates of localization clusters for each color channel were used to represent the positions of the fluorescent proteins. To determine the cutoff value of the inter-color distance for colocalization, we performed pair correlation analysis across both color channels (Sengupta et al., 2011; Sengupta and Lippincott-Schwartz, 2012). In short, the densities of PAmCherry localization clusters around any given mVenus cluster was calculated according to\n\n$$\ng_{MF}(r)=\\frac{a}{\\piN_{M}N_{F}}\\sumi=1N_{M}\\frac{dN_{Fi}(r)}{(2r+dr)dr}\n$$\n\nin which a is the area of the selected ROI; NM and NF are the numbers of green and red clusters in the ROI, respectively; dNFi(r) represents the number of red clusters that fall into the annulus around the ith cluster with the inner radius r and the outer radius r + dr. To accelerate computing, distances to all PAmCherry clusters within 400 nm from each mVenus cluster were calculated using the spatial.distance.cdist function from the python package SciPy v.1.2.1 (Virtanen et al., 2020). The values were grouped into bins of 20 nm width and the pair correlation calculated for each bin. The correlation length from the pair correlation analysis was used as the maximum colocalization distance between clusters (100 nm; Figure 2H). Colocalization was registered for an mVenus cluster if a single red cluster was found in a distance shorter than this maximum colocalization distance. The numbers of clusters and colocalizations were counted in cellular and background regions and applied to Equations 5 and 6 to calculate colocalization ratios.\n\nIn addition, to prevent miscounting due to protein aggregation, those clusters with a diameter larger than 500 nm were excluded from counting. The radius of a cluster was determined as \u03bc + 2\u03c3 of the Euclidean distances of all localizations to the center (mean coordinates) of the cluster, as shown Figure 2B.\n\n### Estimation of the oligomeric state of the POI\n\nTo estimate the oligomeric state of POIs and the observed colocalization ratios, we defined the coefficient of mismatch, M2(n) as\n\n$$\nM^{2}(n)\u22611\u2212\\frac{\\sumi(x_{i}\u2212x\u00af)^{2}}{\\sumi[x_{i}\u2212E(n)]^{2}}\n$$\n\nin which x is the mean of all observations (xi) and E(n) is the expected colocalization ratio for the oligomeric state n. The expected value was calculated from Equation 4 with the optimal values of m and p, or from Equation 1 with the optimal p alone, as determined by the respective fitting to the calibration data (Figure 4A). For the bootstrapping analysis to determine 95% confidence intervals of the mean, M2 was calculated from resamples of the colocalization ratios measured from each POI and the reference proteins. The Python module scipy.stats.ks_2samp was used to perform the two-sample K.-S. test.\n\n### Fitting of the DCC model to the experimental data\n\nm and p were determined as the fit parameters of Equation 4 to the experimental data. The value pair (m, p), with m ranging from 0 to 1 and p from 0 to 0.4, both with a 0.01 increment, was used to calculate the theoretical colocalization ratios for oligomeric states n = 1, 2, 3, and 4. The calculated ratios were then compared with the experimental values obtained from all the proteins with known oligomeric states to calculate the coefficient of determination (R2). In the case when m was not included, the fitting method was similar, but with m left out.\n\n### High-resolution clear native electrophoresis\n\nHEK293T cells were transfected with 3\u20135 \u00b5g of plasmid DNA using the calcium phosphate method and treated as described previously (Guzman et al., 2017). In brief, cells were washed with ice-cold PBS and incubated for 15 min with a lysis buffer containing 0.1 M sodium phosphate, either 0.5% (w/v) digitonin or 20 mM DDM, protease inhibitors, and 20 mM iodoacetamide. The buffer was then transferred into a 1.5 ml Eppendorf tube. After centrifugation at 4 \u00b0C, an aliquot of the supernatant containing approximately 10 \u00b5g of protein was loaded into a native gel. The 4\u201314% acrylamide gradient gels were prepared as described (Wittig et al., 2007). The anode buffer contained 25 mM imidazole/HCl, pH 7.0, and the cathode buffer contained 50 mM tricine, 7.5 mM imidazole/HCl, pH 7.0 supplemented with the anionic detergent DOC (0.05%), and the non-ionic detergent Triton X-100 (0.05%) (Wittig et al., 2007). The gels were run in a cold room (4 \u00b0C) and the starting voltage was set to 100 V. After 1 hr, the voltage was increased to 150 V for another 2 hr. Gels were scanned on a fluorescence gel scanner (Typhoon FLA 9500, GE Healthcare, Freiburg, Germany) at 100 \u00b5m resolution. mVenus was excited with the built-in 473 nm laser and the emission was filtered with a 530/20 bandpass filter. Gel images were visualized using Fiji (Schindelin et al., 2012).\n",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "4c92db7c-787a-4a70-a474-91e71a9694cc",
+      "submission_id": "1d56d441-3468-42df-a16b-2544995eddcb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marcel P Goldschen-Ohm, https://ror.org/00hj54h04 University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76631.sa0](https://doi.org/10.7554/eLife.76631.sa0)\n\nThe authors present a method for measuring the average oligomerization state of fluorescently tagged membrane proteins by single-molecule localization microscopy (SMLM). In contrast to many other SMLM methods which aim to count subunits in membrane protein complexes, the authors aim to deduce the average oligomerization state from the probabilistic co-detection of at least 1 'reporter' fluorophore, which has relatively poor detection efficiency, with the detection of at least 1 fused 'marker' fluorophore. They calibrate the method against a set of proteins with known oligomerization states (validated against high-resolution clear native gel electrophoresis) and then apply it to convincingly clarify the oligomerization state of SLC26 and SLC17 family member membrane proteins. Although the approach is limited to measurements of the average oligomerization state, and as such is not suitable to measure a distribution of (higher) oligomerization states, it is nonetheless potentially very useful for identifying oligomerization states of unknown proteins in native cells, and furthermore works well with fluorophores that have poor detection efficiencies. The provided software should be sufficient to allow other researchers with some experience in Python to perform this analysis on their own data.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marcel P Goldschen-Ohm, https://ror.org/00hj54h04 University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76631.sa1](https://doi.org/10.7554/eLife.76631.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Determination of protein stoichiometries via dual-color colocalization with single molecule localization microscopy\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Marcel P Goldschen-Ohm as Reviewing Editor and Reviewer #1, and the evaluation has been overseen Richard Aldrich as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nPlease address all of the comments from both reviewers. In particular, pay close attention to the following points:\n\n1) On the theory side, a rigorous probabilistic framework for the assignment of the most likely oligomerisation state is missing. This includes a sensitivity analysis of Equation 1 (or, better, of Equation 6) which highlights at which n or p this method is most sensitive. Also, no confidence intervals for fitted values of m and p were provided which could be used in such a sensitivity analysis. For example, it is clear that a high detection efficiency p renders the method insensitive. The optimal range p = 0.2-0.4 mentioned in the discussion is not substantiated. Also, the uncertainty of the experimentally determined values p and m could be accounted for by error propagation.\n\n2) The SMLM detection/processing details are not state-of-the-art (PSF fit with fixed SD 2D Gaussian; not using maximum likelihood estimation for fitting; DBSCAN algorithm to group raw (single-frame) data). In conjunction with setting a minimum value of 6 (PAmCherry) and 10 (mVenus) for the number of localisations per cluster, these together might contribute to the poor detection efficiency for PAmCherry of 0.12, which is in contrast to the reported maturation efficiency of the protein, and which the authors attribute to protein misfolding. The detection, localisation and grouping of fluorescent events could be substantially improved by using maximum likelihood fitting of experimental point spread functions and post-filtering according to the log-likelihood ratio (LLR), as e.g. offered by the open source software SMAP (Ries, 2020, Nature Methods). This is expected to improve the detection of short fluorophore blinks while improving the rejection of background events. This may also impact the large variation observed from cell to cell, the limitations/requirements of which should be discussed.\n\n3) The manuscript would also benefit from more discussion regarding the origin of the factor 'm'. Do HEK293T cells natively express any untagged protein corresponding to the transfected POIs? If not, it would be important to state this explicitly in the text. If yes, this violates the assumption of the analysis; in fact, it would be expected to contribute to the 'm' factor in equation 6 and lead to a significant variation of this factor from cell to cell, depending on the relative expression levels of tagged and untagged protein. Thus, a knock-out cell line needs first to be created before introducing the tagged POI. Also, it is unlikely that the author's attribution of the very low detection efficiency to a 'misfolded' fraction of proteins is the only possible explanation. For example, the coexistence of different oligomerisation states is expected to have a similar effect than terminated translation. This could be systematically explored by computer simulations to better justify the introduction of this factor and the limitations this implies for the calibration of the method. Finally, is Equation 6 even necessary to determine the oligomerization state?\n\n4) The word stoichiometry in the title of the paper is misleading. Although the technique could be applied to measure the oligomerisation state of different subunits in independent samples using different expression constructs, and thus an average stoichiometry could be determined, it is not suitable to directly measure stoichiometries of different subunits in the same sample.\n\n5) An open-source software tool would find wider-spread application and complement existing methods to measure the oligomerisation state of membrane proteins from monomers to tetramers using relatively standard PALM approaches.\n\n6) Some of the semantics need to be better defined for a more general readership.\n\n7) Regarding the fits to the data in Figure 4A, I assume that all of the (e.g., red) points were globally fit to the data for all 5 proteins with known stoichiometries using a single value of p. However, this is not stated in the text, which made it initially difficult for me to understand what the authors were doing here. Please describe the fitting in more detail in the text.\n\nReviewer #1 (Recommendations for the authors):\n\n1. I am under the impression that the approach requires identification of distinct proteins, hence the need for SMLM. The authors state that they achieve a 30nm radial resolution, so I assume that an inherent assumption here is that multiple proteins within 30nm of each other must be assumed to be rare? Even assuming this is ok, a 100nm cutoff is used for determining colocalization of spots in the two color channels. Why so much larger than 30nm? How do the authors ensure that only one protein is within each of these 100nm spots? Or can multiple PAmCherry spots be colocalized with the same mVenus spot, or vice-versa? This seems confusing to me. Or if this does not matter, please explain as the theory (e.g., Equation 3) requires counts of numbers of proteins. In the discussion, the authors suggest that their approach is actually not reliant on SMLM at all, and only requires \"enough spatial resolution\". Please define what \"enough\" means. And again, if resolving individual proteins is actually not required here, then this needs to be clarified.\n\n2. Some of the semantics need to be better defined for a more general readership. What is a \"localization\"? Observation of a single fluorophore on a single frame, or the identified location of a single fluorophore across frames? Does a cluster of localizations represent a single protein, or a cluster of proteins? If it is the former, then requiring at least 3 localizations for a cluster to be analyzed (e.g., see Figure 5B) may limit background noise, but would also remove proteins where PAmCherry bleached within a couple of frames. What is the distribution of bleach times for PAmCherry, and what fraction are discarded by this cutoff? The authors suggest that this cutoff removes PAmCherry localizations that are likely to be background noise which do not colocalize with mVenus clusters. But if they do not colocalize, then how do they affect the computation at all, as I thought only colocalized clusters were considered? Overall, the methods should be described in more detail for a general readership.\n\n3. I have some reservations regarding the use of Equation 6, which to some extent appears to be a fudge factor given that the data does not quite fit the initial simple theory (Equation 1). First, it is my understanding that p encompasses all of the things that can lead to a fluorophore not being observed. So why then are some ways in which this could occur such as misfolding or truncation treated separately? Second, Equation 6 needs to be better explained as to why it is appropriate to describe misfolding or truncation events. Third, I would like to see Figure 4C-N repeated without using the fudge factor m. Is Equation 6 really needed to reliably determine the stoichiometries of the tested exchangers/transporters? And lastly, why should we expect m to be the same for different proteins? It seems to me that misfolding or truncation may be highly protein dependent. If m does differ from protein to protein, then it seems like this entire approach is no longer robust, at least for monomers.\n\n4. Equation 4 is introduced as a means to limit the contribution of background noise, but thereafter it appears that the authors just apply Equation 3 to their data. If so, what is the point of Equation 4, or is this a mistake in the text? Also, the variable N_CO in Equation 4 seems to be the same thing as N_MF in Equation 3? If so, please stick to one or the other, and if not please clarify.\n\n5. Regarding the fits to the data in Figure 4A, I assume that all of the (e.g., red) points were globally fit to the data for all 5 proteins with known stoichiometries using a single value of p. However, this is not stated in the text, which made it initially difficult for me to understand what the authors were doing here. Please describe the fitting in more detail in the text.\n\n6. The blue points in Figure 4A are hard to distinguish from the black points. Please choose a better representation. Also, for Figure 4A,B please show all of the data points rather than just box plots plus outliers. There are not so many data points to make this unreasonable in this case.\n\nReviewer #2 (Recommendations for the authors):\n\nThe detection, localisation and grouping of fluorescent events could be substantially improved by using maximum likelihood fitting of experimental point spread functions and post-filtering according to the log-likelihood ratio (LLR), as e.g. offered by the open source software SMAP (Ries, 2020, Nature Methods). This is expected to improve the detection of short fluorophore blinks while improving the rejection of background events.\n\nThe full potential, but also the limitations of the approach do not become clear because Equation 1 (or Equation 6) are not rigorously analysed with respect to their sensitivity/ability to differentiate different oligomerisation states. For example, it is clear that a high detection efficiency p renders the method insensitive. The optimal range p = 0.2-0.4 mentioned in the discussion is not substantiated. Also, the uncertainty of the experimentally determined values p and m could be accounted for by error propagation.\n\nThe manuscript would also benefit from more discussion regarding\n\n\u2013 The origin of the factor 'm'. Do HEK293T cells natively express any untagged protein corresponding to the transfected POIs? If not, it would be important to state this explicitly in the text. If yes, this violates the assumption of the analysis; in fact, it would be expected to contribute to the 'm' factor in equation 6 and lead to a significant variation of this factor from cell to cell, depending on the relative expression levels of tagged and untagged protein. Thus, a knock-out cell line needs first to be created before introducing the tagged POI.\n\n\u2013 The large variation observed from cell to cell. Figure 4, A and B, as well as Figure 4 \u2014figure supplement 4 show substantial variation of the colocalization ratio P measured from cell to cell, as large as ranging from 0.15 to 0.45 (EAAT2) or 0.1 to 0.4 (CIC-2). The methods do not state how large the imaged/analysed FOV in a single cell was. According to Figure 1B, it was at least 5x5 \u00b5m2. With 1-2 clusters per \u00b5m2, this corresponds to 25-50 clusters. Together with the low detection efficiency p=0.12 for PAmCherry, this is expected to result in a substantial variability of P from measurement to measurement. This underlines how an improved detection efficiency, as could be achieved when using state-of-the-art SMLM, might translate in more accurate measurements.\n",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ac0cb0f2-b8d5-4e4a-9c1a-26a34ab732e8",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C1",
+      "claim": "The oligomeric state of plasma membrane proteins is an important determinant of their function.",
+      "claim_type": "EXPLICIT",
+      "source": "The oligomeric state of plasma membrane proteins is the result of the interactions between individual subunits and an important determinant of their function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "e65473fc-8ff1-4938-9a7c-81d0a4d6789a",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C2",
+      "claim": "Most approaches to determine oligomeric states rely on extracting protein complexes from their native environment, which may disrupt weaker interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Most approaches used to address this question rely on extracting these complexes from their native environment, which may disrupt weaker interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "33446e19-97ea-48ef-aab7-5b14a04425eb",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C3",
+      "claim": "Classical light microscopy suffers from insufficient resolution for determining oligomeric states.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical light microscopy suffers from insufficient resolution, but super-resolution methods such as single molecule localization microscopy (SMLM) can circumvent this problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "2cdabb4a-ed19-40b3-8fb9-af0bf6d4bb82",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C4",
+      "claim": "Super-resolution methods such as SMLM can circumvent the resolution problem of classical light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical light microscopy suffers from insufficient resolution, but super-resolution methods such as single molecule localization microscopy (SMLM) can circumvent this problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of SMLM in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "883aff94-95cf-488c-b2e6-8a59ea70bd38",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C5",
+      "claim": "Traditional SMLM counting strategies require low background noise, high recall rate for fluorescent tags, and intensive post-imaging data processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy requires low background noise, a high recall rate for the fluorescent tag and intensive post-imaging data processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing SMLM methods in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "5058fbcd-e541-4367-a6ba-c196e8423400",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C6",
+      "claim": "The dual-color colocalization (DCC) approach allows for accurate in situ counting even with low efficiencies of fluorescent protein detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dual-color colocalization (DCC) approach allows for accurate in situ counting even with low efficiencies of fluorescent protein detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage of the developed method in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "71c2b3a3-59e6-4aba-a6e5-9a440d2c9090",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C7",
+      "claim": "DCC-SMLM is robust in the presence of background signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is robust in the presence of background signals and does not require temporal clustering of localizations from individual proteins within the same diffraction-limited volume, which greatly simplifies data acquisition and processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "795ef7f0-3305-4c15-b73b-df57196b30a1",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C8",
+      "claim": "DCC-SMLM does not require temporal clustering of localizations from individual proteins within the same diffraction-limited volume.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is robust in the presence of background signals and does not require temporal clustering of localizations from individual proteins within the same diffraction-limited volume, which greatly simplifies data acquisition and processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "ce7643d1-ed3c-42c1-944c-5ab91c94f122",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C9",
+      "claim": "The oligomeric state of SLC26 multifunctional anion exchangers has been controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "We used DCC-SMLM to resolve the controversy surrounding the oligomeric state of two SLC26 multifunctional anion exchangers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "74f057a0-900e-4c82-92cd-5c58b4c47006",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C10",
+      "claim": "Most membrane proteins form oligomeric assemblies in which individual subunits cooperate to fulfill specialized functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Most membrane proteins form oligomeric assemblies, in which individual subunits cooperate to fulfill specialized functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "b1dab075-f5c8-46de-8ba1-a4d1c03e132e",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C11",
+      "claim": "The number of subunits within protein structures is a crucial determinant of their function.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of subunits within such protein structures is a crucial determinant of their function (Lussier et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lussier et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "21db450b-f017-452f-80e0-bc47b862adce",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C12",
+      "claim": "Native gel electrophoresis has been successfully used to determine oligomeric states of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Native gel electrophoresis has been successfully used to determine oligomeric states of proteins and the molecular determinants of oligomeric assemblies (Detro-Dassen et al., 2008; Gendreau et al., 2004; Sch\u00e4gger and von Jagow, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "6865613f-cb74-45fb-b097-fe1e54fd58eb",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C13",
+      "claim": "Native gel electrophoresis relies on isolating protein complexes from their native environment, which can disrupt some protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this technique relies on isolating protein complexes from their native environment, which can disrupt some protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of native gel electrophoresis in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "df8d3d6c-40de-466e-bbe1-b9a3177b9598",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C14",
+      "claim": "In situ methods such as fluorescence correlation spectroscopy, stepwise photobleaching, and SMLM have become increasingly popular for determining oligomeric states.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this limitation, in situ methods such as fluorescence correlation spectroscopy (Chen et al., 2003), stepwise photobleaching (Ulbrich and Isacoff, 2007), and single molecule localization microscopy (SMLM) (Annibale et al., 2011; Sengupta et al., 2011) have become increasingly popular in recent years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "933706a8-5140-4000-8411-4bbe7acb9139",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C15",
+      "claim": "Stepwise photobleaching relies on the irreversible and stochastic photobleaching of fluorescent tags linked to the subunit to be counted.",
+      "claim_type": "EXPLICIT",
+      "source": "Stepwise photobleaching relies on the irreversible and stochastic photobleaching of fluorescent tags linked to the subunit to be counted, and the resulting intensity steps depend on the number of subunits within the complex being tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the stepwise photobleaching method in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "22fbdb39-2347-4162-a771-36e4acf52faf",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C16",
+      "claim": "Stepwise photobleaching is only feasible for low expression densities as it is limited by the resolution of light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach is only feasible for low expression densities as it is limited by the resolution of light microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of stepwise photobleaching in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "d01f095f-c34f-43e5-b972-e459efa4c1ab",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C17",
+      "claim": "Xenopus laevis oocytes are most often used for stepwise photobleaching because they are large in diameter and ectopic protein expression can be controlled by adjusting the amount of injected RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Xenopus laevis oocytes, which are large in diameter and in which ectopic protein expression can be controlled by adjusting the amount of injected RNA, are most often used for this method (Ulbrich and Isacoff, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ulbrich and Isacoff, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "c8059dfd-ffef-4955-ab34-21e5cd8c7b70",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C18",
+      "claim": "Some proteins exhibit a different oligomeric state when expressed in the Xenopus system compared with mammalian expression systems.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some proteins exhibit a different oligomeric state when expressed in the Xenopus system compared with mammalian expression systems (Krashia et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Krashia et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "fb41987c-c455-4fe7-9814-419a3a806aaa",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C19",
+      "claim": "For mammalian cells, the resolution limit of light microscopy can be circumvented using super-resolution microscopy methods.",
+      "claim_type": "EXPLICIT",
+      "source": "For mammalian cells, the resolution limit of light microscopy can be circumvented using super-resolution microscopy methods (Durisic et al., 2014; Hummer et al., 2016; Lee et al., 2012; Nan et al., 2013; Nicovich et al., 2017; Puchner et al., 2013; Sengupta et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "2e5a3ee6-6c68-4d0a-af3d-b533d5140cca",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C20",
+      "claim": "SMLM increases resolution by reconstructing the precise positions of isolated fluorophore emissions detected over thousands of frames.",
+      "claim_type": "EXPLICIT",
+      "source": "SMLM increases resolution by reconstructing the precise positions of isolated fluorophore emissions detected over thousands of frames (Betzig et al., 2006; Rust et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Betzig et al., 2006 and Rust et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "72846f9f-589b-47d6-b692-6a09f955fdfb",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C21",
+      "claim": "The fluorophores used for quantitative SMLM are usually photoactivatable or photoconvertible fluorescent proteins that are activated or converted at wavelengths different from that of the excitation laser.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorophores used for quantitative SMLM are usually photoactivatable or photoconvertible fluorescent proteins that are activated or converted at wavelengths different from that of the excitation laser (Li and Vaughan, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li and Vaughan, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "a2102d6d-0c05-47eb-9f32-9038e041cd5d",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C22",
+      "claim": "To increase the resolution in SMLM, the simultaneous activation of multiple fluorophores within the same diffraction-limited volume must be avoided.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase the resolution in SMLM, the simultaneous activation of multiple fluorophores within the same diffraction-limited volume must be avoided.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for SMLM in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "e5d1846f-3929-4523-b138-360ebf7013f0",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C23",
+      "claim": "During long SMLM recordings, inherent mechanical and thermal fluctuations, as well as sample drift, combine to reduce spatial resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "During the long recordings required for SMLM, inherent mechanical and thermal fluctuations, as well as the sample drift, combine to reduce spatial resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a challenge in SMLM in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "11626029-0cb9-449b-bdd6-5c569482aa20",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C24",
+      "claim": "The complex photophysics of fluorescent protein blinking may result in over- or undercounting.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex photophysics of fluorescent protein blinking may additionally result in over- or undercounting (Annibale et al., 2011; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Annibale et al., 2011 and Lee et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "bab26ed6-45d1-4c75-8dca-724c77c7abe2",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C25",
+      "claim": "Background noise cannot be easily distinguished from genuine signals at the single molecule level.",
+      "claim_type": "EXPLICIT",
+      "source": "Another source of miscounting is the background noise, which cannot be easily distinguished from genuine signals at the single molecule level (Shivanandan et al., 2014; Zhao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shivanandan et al., 2014 and Zhao et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "ec94b3e5-9c4b-4d91-a4c3-db294312f919",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C26",
+      "claim": "It is impossible to detect all fluorophores in the sample because the probability of having a fluorescent marker detected during the imaging period (the recall rate) is always less than one.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is impossible to detect all fluorophores in the sample because the probability of having a fluorescent marker detected during the imaging period (i.e., the recall rate) is always less than one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental limitation in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "dd985f94-404c-4c2d-8632-39afd57de661",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C27",
+      "claim": "Low recall rates likely arise from a combination of incomplete protein translation or misfolding, failure to get activated or converted, and pre-imaging bleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely arises from a combination of incomplete protein translation or misfolding, failure to get activated or converted, and pre-imaging bleaching (Durisic et al., 2014; Nicovich et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Durisic et al., 2014 and Nicovich et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "90a97190-a8f0-41bc-acec-884ed1f7bbbf",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C28",
+      "claim": "The binomial strategy demands a recall rate of about 0.5 or higher to ensure reasonable resolution between different oligomeric states.",
+      "claim_type": "EXPLICIT",
+      "source": "This binomial strategy demands a recall rate of about 0.5or higher to ensure reasonable resolution between different oligomeric states (Durisic et al., 2014; Ulbrich and Isacoff, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Durisic et al., 2014 and Ulbrich and Isacoff, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "c34f88af-1b3a-4384-8d06-fd919e85ad20",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C29",
+      "claim": "The human SLC26 family has 10 members that function as anion transporters or channels as well as the motor protein in cochlear outer hair cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The human SLC26 family has 10 members that function as anion transporters or channels as well as the motor protein in cochlear outer hair cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "00937813-ffab-4146-a39b-f772ecf1b31b",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C30",
+      "claim": "Naturally occurring mutations in SLC26 proteins are associated with growth defects, chronic diarrhea or deafness.",
+      "claim_type": "EXPLICIT",
+      "source": "The physiological importance of these proteins is illustrated by the growth defects, chronic diarrhea or deafness associated with naturally occurring mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "79a6f94e-b3b8-4ce3-9bf2-da0f78744d04",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C31",
+      "claim": "Biochemical and recent structural studies indicated that SLC26 proteins exist as dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical and recent structural studies indicated that the proteins exist as dimers (Detro-Dassen et al., 2008; Geertsma et al., 2015; Walter et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "9d6afe10-30ab-46c5-999c-998c47ad3f36",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C32",
+      "claim": "Other studies have proposed a tetrameric state for SLC26 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas other studies have proposed a tetrameric state (Hallworth and Nichols, 2012; Sinha et al., 2010; Zheng et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "7fca6c5f-8131-4ee8-9e8e-f3194cfa9f2b",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C33",
+      "claim": "The SLC17 family includes proton-driven vesicular glutamate, aspartate, sialic acid, and nucleotide transporters, as well as Na+-coupled phosphate transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The SLC17 family includes proton-driven vesicular glutamate, aspartate, sialic acid, and nucleotide transporters, as well as Na+-coupled phosphate transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "0a93fff4-d13e-4c0d-8aa3-b32bf9cd0aa6",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C35",
+      "claim": "Direct determination of Pd from single-color microscopy images is impossible, as the total number of proteins, including those not exhibiting fluorescence, is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, direct determination of Pd from single-color microscopy images is impossible, as the total number of proteins, including those not exhibiting fluorescence, is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation in the Results section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "127f6207-b545-4944-8122-caf150d50e80",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C36",
+      "claim": "mVenus was chosen as the fluorescent marker protein M because of the very low background signal in its detection channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose mVenus (Nagai et al., 2002) as the fluorescent marker protein M because of the very low background signal in its detection channel (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "ff4942ca-8733-4c89-b0b8-b35ab8fc2185",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C37",
+      "claim": "mVenus is derived from yellow fluorescent protein with several improvements such as faster maturation, a monomeric structure, and high tolerance to cellular acidification, and the halide concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "mVenus is derived from yellow fluorescent protein with several improvements such as faster maturation, a monomeric structure, and high tolerance to cellular acidification, and the halide concentration (Nagai et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nagai et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "bc8491b5-518c-416a-a8af-2602585d7b6d",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C38",
+      "claim": "mVenus blinks by cycling between fluorescent and dark states under continuous illumination with the excitation laser.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other GFP derivatives, it blinks by cycling between fluorescent and dark states under continuous illumination with the excitation laser (Dickson et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Dickson et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "1317e55d-cf1b-491a-8cad-c19b2f64f6f8",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C39",
+      "claim": "PAmCherry was chosen as the indicator because it is quickly bleached by continuous excitation after activation.",
+      "claim_type": "EXPLICIT",
+      "source": "PAmCherry was chosen as the indicator because it is quickly bleached by continuous excitation after activation (Durisic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Durisic et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "af2e2330-be7b-4dc8-81ad-c01c061207b1",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C40",
+      "claim": "The PAmCherry channel had considerably more background signals than the mVenus channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this channel had considerably more background signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "adf57ad9-e76e-4608-8288-44a2d8eb522b",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C41",
+      "claim": "Drift correction reduced the radius of clustered signals to ~30 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "This correction reduced the radius of clustered signals to ~30 nm (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "204a17a1-2035-4eac-9804-27dcb7ff3b87",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C42",
+      "claim": "Lateral chromatic aberration (LCA) can be described as a set of linear functions centered on the optical axis of the microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed earlier reports that lateral chromatic aberration (LCA) can be described as a set of linear functions centered on the optical axis of the microscope (Erdelyi et al., 2013; Kozubek and Matula, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Erdelyi et al., 2013 and Kozubek and Matula, 2000.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "1d78f6df-1008-42f0-92a8-01628b02ac6c",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C43",
+      "claim": "LCA could be reduced to 13.8\u00b18.9 nm for bead samples using linear fit correction.",
+      "claim_type": "EXPLICIT",
+      "source": "This way the LCA could be reduced to 13.8\u00b18.9 nm for bead samples (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "50b4f072-331f-4d28-9c18-9b5e3d443b59",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C44",
+      "claim": "The axial chromatic aberration (ACA) was less than 100 nm and thus considered negligible for SMLM signal registration in only two dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "The axial chromatic aberration (ACA) determined as the focus offset between colors was less than 100 nm and thus considered negligible for SMLM signal registration in only two dimensions (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "0decab47-67ee-4c76-a7de-c3288e3c9d2e",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C45",
+      "claim": "Following correction of chromatic aberrations, highest densities of red clusters were found within a radius of ~100 nm around mVenus clusters for both barttin and Kir2.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Following correction, highest densities of red clusters were found within a radius of ~100 nm around mVenus clusters for both proteins, representing the achievable two-color resolution of our experimental setup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "1f1e505a-0760-4296-9013-2fe45336e199",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C46",
+      "claim": "100 nm was chosen as the threshold distance for colocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore chose 100 nm as the threshold distance for colocalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on the RDF analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "58650d4c-d755-48ee-a70c-baa3370930c3",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C47",
+      "claim": "A large proportion of membrane proteins remain mobile after fixation with paraformaldehyde (PFA) alone, requiring the addition of glutaraldehyde (GA) or the use of cold methanol (MeOH) for adequate immobilization.",
+      "claim_type": "EXPLICIT",
+      "source": "A large proportion of membrane proteins remain mobile after fixation with paraformaldehyde (PFA) alone, requiring the addition of glutaraldehyde (GA) or the use of cold methanol (MeOH) for adequate immobilization (Stanly et al., 2016; Tanaka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Stanly et al., 2016 and Tanaka et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "18aff6f3-95e2-4abe-873e-48b168ed0ad0",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C48",
+      "claim": "Both MeOH and aldehyde fixation methods led to comparable correlation distances between the two colors.",
+      "claim_type": "EXPLICIT",
+      "source": "Both fixation methods led to comparable correlation distances between the two colors (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "af47e745-8cf7-4064-addf-d779acfddb2b",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C49",
+      "claim": "Upon MeOH fixation, a significantly higher signal density, a higher ratio of PAmCherry clusters to mVenus clusters and a higher colocalization ratio were observed compared with aldehyde fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon MeOH fixation we observed a significantly higher signal density, a higher ratio of PAmCherry clusters to mVenus clusters and a higher colocalization ratio than with the aldehyde fixation (Figure 3A', B' and C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "67171b90-d61e-417f-aa0c-35f2a02694e9",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C50",
+      "claim": "Fixation with cold methanol better preserved the function of the fluorescent proteins compared with PFA/GA fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we concluded that fixation with cold methanol better preserved the function of the fluorescent proteins compared with PFA/GA fixation and, therefore, we chose cold methanol as our routine fixation reagent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Results section based on the comparison data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "9d26a14e-ff4b-4f18-8e8b-63f4844a3fd2",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C51",
+      "claim": "The fusion pattern of PAmCherry and mVenus affected the colocalization ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "The results, as shown in Figure 3\u2014figure supplement 1, indicated that the fusion pattern did affect the colocalization ratio.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "0aa31ebe-45c2-4630-9464-e918ebbba206",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C52",
+      "claim": "Barttin is a monomeric protein.",
+      "claim_type": "EXPLICIT",
+      "source": "the monomeric ClC-K chloride channel \u03b2-subunit barttin (Scholl et al., 2006; Est\u00e9vez et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Scholl et al., 2006 and Est\u00e9vez et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "03e9b13b-252b-49e1-97a4-87f2bb4a7976",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C53",
+      "claim": "ClC-2 and ClC-K are dimeric chloride channels.",
+      "claim_type": "EXPLICIT",
+      "source": "the dimeric chloride channels ClC-2 and ClC-K (Park et al., 2017; St\u00f6lting et al., 2014; Thiemann et al., 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "817caa27-aa75-4633-a5f2-4d31953afb0e",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C54",
+      "claim": "EAAT2 is a trimeric glutamate transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "the trimeric glutamate transporter EAAT2 (Canul-Tec et al., 2017; Nothmann et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Canul-Tec et al., 2017 and Nothmann et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "a4914188-7cdd-4175-bd3b-63cbb9530327",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C55",
+      "claim": "Kir2.1 (Kcnj2) is a tetrameric potassium channel.",
+      "claim_type": "EXPLICIT",
+      "source": "the tetrameric potassium channel Kir2.1 (Kcnj2, Doyle et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Doyle et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "4b7e4fc1-2b17-4067-be72-2e2e353e2e51",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C56",
+      "claim": "hrCNE results confirmed the reported oligomeric states of the calibration proteins and demonstrated that the two linked fluorescent proteins did not interfere with the reported quaternary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also demonstrate that the two linked fluorescent proteins did not interfere with the reported quaternary structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "a48da849-d0f2-4786-bad3-f272ed91625c",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C57",
+      "claim": "A global fit of bootstrap resampled experimental data from all five proteins with known oligomeric states to Equation 1 suggested a low recall rate (p) of 0.12 (95% confidence interval [CI]: 0.12\u20130.13) for PAmCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "A global fit of bootstrap resampled (10,000 resamples) experimental data from all five proteins with known oligomeric states to Equation 1 suggested a low recall rate (p) of 0.12 (95% confidence interval [CI]: 0.12\u20130.13) for PAmCherry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on fitting analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "7e2121aa-efb9-43cb-8d09-15fda4d70124",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C58",
+      "claim": "Fitting to Equation 4 gave values of 0.30 (95% CI: 0.21\u20130.39) for m and 0.17 (95% CI: 0.15\u20130.18) for p.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting to Equation 4 gave values of 0.30 (95% CI: 0.21\u20130.39) for m and 0.17 (95% CI: 0.15\u20130.18) for p.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on fitting analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "795b99ab-af15-48bf-8f3b-7a762b9de1e4",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C59",
+      "claim": "The model with modification factor m (Equation 4) aligns better with the data compared to the simpler model (Equations 1\u20133), especially for the monomeric reference protein.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this model only aligns slightly better with the data (R2 = 0.97) compared to the simpler model (Equations 1\u20133). However, the improvement is especially visible for the monomeric reference protein (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "5b6e914f-b601-4070-b4b6-6053b8e6e48a",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C60",
+      "claim": "M2 values reached their lowest values for a dimeric state of SLC26 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4C-H, M2 values reached their lowest values for a dimeric state of SLC26 proteins",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 4C-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "0ca92b3e-09c0-4cfb-81e6-423ccec039ef",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C61",
+      "claim": "M2 values reached their lowest values for a monomeric state of all SLC17 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4C-H, M2 values reached their lowest values for a dimeric state of SLC26 proteins and for a monomeric state of all SLC17 proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 4C-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "7d966f51-cc20-4190-b84a-92ed78c5f76e",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C62",
+      "claim": "The two-sample K.-S. test confirmed that SLC26A3 is most likely a dimeric protein.",
+      "claim_type": "EXPLICIT",
+      "source": "With this test, we confirmed the results of the M2 values and also demonstrated that SLC26A3 is most likely a dimeric protein as it showed a significantly different distribution compared to reference proteins with other oligomeric states (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "21bc10cb-d0f8-428b-b8a4-58d99e41ddbe",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C63",
+      "claim": "hrCNE independently confirmed the oligomeric states of SLC26 and SLC17 proteins determined by DCC-SMLM.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we independently confirmed our results for the oligomeric states of SLC26 and SLC17 proteins with hrCNE utilizing the same constructs and expression system as in our DCC-SMLM experiments (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "a0afa4d7-abee-4514-be9e-475913ca1893",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C64",
+      "claim": "DCC-SMLM established a dimeric state for the epithelial anion exchanger SLC26A3.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mVenus as the marker fluorescent protein and PAmCherry as the indicator fluorescent protein for counting, we established a dimeric state for two representatives of the SLC26 family, the epithelial anion exchanger SLC26A3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "67d721b9-2c83-40bc-a1fc-6e738dc716a0",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C65",
+      "claim": "DCC-SMLM established a dimeric state for the motor protein prestin (Slc26a5).",
+      "claim_type": "EXPLICIT",
+      "source": "Using mVenus as the marker fluorescent protein and PAmCherry as the indicator fluorescent protein for counting, we established a dimeric state for two representatives of the SLC26 family, the epithelial anion exchanger SLC26A3 and the motor protein prestin (Slc26a5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "7ca4592a-b98f-4f3d-a0cc-3d2e257a79b8",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C66",
+      "claim": "DCC-SMLM established a monomeric state for vGlut1, -2, and -3.",
+      "claim_type": "EXPLICIT",
+      "source": "and a monomeric state for four representatives of the SLC17 family, the vesicular glutamate transporters vGlut1, -2, and -3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "ee3a8c59-f52d-4d47-a7c8-4c7c73151021",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C67",
+      "claim": "DCC-SMLM established a monomeric state for the lysosomal sialic acid transporter sialin.",
+      "claim_type": "EXPLICIT",
+      "source": "and a monomeric state for four representatives of the SLC17 family, the vesicular glutamate transporters vGlut1, -2, and -3 and the lysosomal sialic acid transporter sialin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "f637b9d9-c8c3-49f9-8670-903bf531837f",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C68",
+      "claim": "DCC-SMLM overcomes several limitations of methods commonly used to determine the oligomeric state of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our DCC-SMLM approach (Figure 4\u2014figure supplement 3) overcomes several limitations of the methods commonly used to determine the oligomeric state of proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "b79c5560-f857-4814-8535-0f0b295c9b88",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C69",
+      "claim": "Unlike biochemical methods, no solubilization or purification of proteins is necessary for DCC-SMLM as it works with proteins in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike for biochemical methods, no solubilization or purification of proteins is necessary as DCC-SMLM works with proteins in situ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "c9afd2e6-4f3e-49f7-9050-61588c9e5051",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C70",
+      "claim": "DCC-SMLM can be applied reliably even in small mammalian cells where the high densities of protein expression are usually problematic for photobleaching experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to photobleaching experiments, DCC-SMLM can be applied reliably even in small mammalian cells where the high densities of protein expression are usually problematic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "4e0984f7-6059-4808-840f-2881fb823742",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C71",
+      "claim": "DCC-SMLM simplifies the procedure and offers greater reliability of counting compared to previously reported quantitative SMLM methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previously reported quantitative SMLM methods, DCC-SMLM simplifies the procedure and offers greater reliability of counting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "67754cf8-4526-4ab0-a931-585007de9387",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C72",
+      "claim": "Binomial SMLM counting strategies require clustering of signals in at least three dimensions (x, y, and time) to identify individual protein subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Binomial SMLM counting strategies require clustering of signals in at least three dimensions (x, y, and time) to identify individual protein subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "c3091e13-351e-4097-857e-32ee8049c525",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C73",
+      "claim": "DCC-SMLM only relies on the relationship between the total detection probability for a protein complex and the number of fluorophores within the complex, which is independent of temporal separation or demanding fluorophore properties.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DCC-SMLM only relies on the relationship between the total detection probability for a protein complex and the number of fluorophores within the complex, as displayed in Equations 1 and 4. This relationship is independent of temporal separation or demanding fluorophore properties, such as high recall rates, thereby simplifying the data acquisition and post-processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "0a1502e4-f04d-41d6-b55a-422aee6cb529",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C74",
+      "claim": "At the single molecule level, noise and genuine signals become hard to distinguish, especially for photoactivatable fluorescent proteins with low brightness such as PAmCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "At the single molecule level, noise and genuine signals become hard to distinguish, especially for photoactivatable fluorescent proteins with low brightness such as PAmCherry (Subach et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Subach et al., 2009b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "d1884e0b-8e32-49a4-a48b-142519d6b773",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C75",
+      "claim": "The measured background signal density in the PAmCherry channel of ~0.8 clusters/\u00b5m\u00b2 inside cells suggests that only 2.6% of all mVenus molecules erroneously colocalize with the background clusters from the red channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measured background signal density in the PAmCherry channel of ~0.8 clusters/\u00b5m\u00b2 inside cells (Figure 1E) suggests that only 2.6% of all mVenus molecules erroneously colocalize with the background clusters from the red channel (Equation 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section based on calculations from measured data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "f959a34f-8a38-4ba9-8227-a88f19088811",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C76",
+      "claim": "Given the colocalization ratios greater than 0.2 (for dimers and higher oligomeric forms), the background noise level results in a signal-to-noise ratio greater than 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the colocalization ratios greater than 0.2 (for dimers and higher oligomeric forms; Figure 4), this noise level results in a signal-to-noise ratio greater than 10.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section based on calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "d88a93bd-eb1a-4207-905c-4d46f299ae37",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C77",
+      "claim": "The use of the bright mVenus tag as the marker allowed for a narrow detection window, resulting in very low levels of background noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Our use of the bright mVenus tag as the marker allowed us to use a narrow detection window, resulting in very low levels of background noise (Figure 1D and Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by Figure 1D and Table 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "37546d6d-6474-4707-9f56-f188180b92ed",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C78",
+      "claim": "Fusion of two fluorescent proteins linked sequentially did not interfere with their structure as indicated by hrCNE results.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion of two fluorescent proteins linked sequentially did not interfere with their structure as indicated by our hrCNE results (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "46d949c0-6395-47b8-9db1-f7d44a1dd342",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C79",
+      "claim": "Similar results for sequential fusion of fluorescent proteins have been reported previously for similar constructs in other contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "This may not be surprising as similar results have been reported previously for similar constructs in other contexts (Leeman et al., 2018; Liang et al., 2018; Murata et al., 2005; Ranade et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "59d80ced-66b0-4436-b91b-88025733be2d",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C80",
+      "claim": "DCC-SMLM can optimally distinguish oligomeric states from monomer to pentamer if p is between 0.2 and 0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretically, DCC-SMLM can optimally distinguish oligomeric states from monomer to pentamer if p is between 0.2 and 0.4 (Figure 1C; Figure 1\u2014figure supplement 1), dependent on the oligomeric state of interest.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by Figure 1C and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "53b9732b-d641-443f-b497-53544ea7eeb1",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C81",
+      "claim": "The original DCC model (Equations 1\u20133) suggested a recall rate of only 0.12 for PAmCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "The original DCC model (Equations 1\u20133) suggested a recall rate of only 0.12 for PAmCherry, but did not result in an optimal fit for our experimental data from reference proteins (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "75809394-92fc-43ca-b0c5-31917a4d3e33",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C82",
+      "claim": "The modified DCC model with modification factor m suggested a slightly higher recall rate of 0.17 for PAmCherry and aligned well with the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting this modified DCC model to our reference data suggested a slightly higher recall rate of 0.17 for PAmCherry, and aligned well with the experimental data (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "27ddcc17-a828-4820-8692-39c01ec3cb4b",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C83",
+      "claim": "Previously reported recall rates for PAmCherry range from 0.04 when expressed in Escherichia coli to about 0.5 in Xenopus oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously reported recall rates for PAmCherry range from 0.04 when expressed in Escherichia coli (Wang et al., 2014) to about 0.5 in Xenopus oocytes (Durisic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2014 and Durisic et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "945f260e-15b1-43cf-b8a3-59ec43a27a3e",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C84",
+      "claim": "The variability in recall rates implies that the expression system may influence the functionality of fluorescent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This variability implies that the expression system may influence the functionality of fluorescent proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "2ff5ac3a-18df-4f1f-b7f0-b870fc5f2d58",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C85",
+      "claim": "The most likely cause for simultaneous loss of both fluorescent proteins is truncation within or proximal to mVenus.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our experience with fluorescent protein-linked proteins, we assume that the most likely cause for such behavior is truncation within or proximal to mVenus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assumption based on experience in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "8e5cf8d2-28cb-4ae5-87b1-71ed70bd1a53",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C86",
+      "claim": "If the interest is only in determining higher oligomeric states (larger than dimers), the factor m may be omitted.",
+      "claim_type": "EXPLICIT",
+      "source": "If the interest is only in determining higher oligomeric states (larger than dimers), the factor m may be omitted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "0e9bce96-4490-4fda-92ba-053a4b02838b",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C87",
+      "claim": "The determination of a monomeric state becomes almost impossible without m when taking the uncertainty of all values into account.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as theoretically expected, the determination of a monomeric state becomes almost impossible without m (Figure 4C\u2013H) when taking the uncertainty of all values into account.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by Figure 4C-H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "667da794-da8b-464e-b5e8-77a29f7b2367",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C88",
+      "claim": "DCC-SMLM does not consider the behavior of individual protein complexes; instead, it is based on statistical information from a large number of protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be emphasized that DCC-SMLM does not consider the behavior of individual protein complexes; instead, it is based on statistical information from a large number of protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "050ee410-7d9a-4fe0-bcd3-a3c493d8b1ec",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C89",
+      "claim": "If the protein complex of interest does not exist in a single oligomeric state, DCC-SMLM counting can only report an average oligomeric state.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if the protein complex of interest does not exist in a single oligomeric state, DCC-SMLM counting can only report an average oligomeric state (simulated in Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a limitation in the Discussion section and supported by Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "18651d1f-6e95-4652-b4d5-75a86c83d996",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C90",
+      "claim": "A plot of the colocalization ratio versus the density of expressed clusters did not reveal any significant correlation between the two values, effectively ruling out aggregation over the expression densities achieved in the samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of the colocalization ratio versus the density of expressed clusters (Figure 4\u2014figure supplement 5) did not reveal any significant correlation between the two values, effectively ruling out aggregation over the expression densities achieved in our samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "45e2c2c4-cadd-47fb-a61d-3c847813dbd2",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C91",
+      "claim": "Studies using Blue native electrophoresis previously reported a dimeric assembly for SLC26.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies using Blue native electrophoresis (Detro-Dassen et al., 2008) and X-ray and cryo-EM (Geertsma et al., 2015; Walter et al., 2019) previously reported a dimeric assembly for SLC26",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "23873c0c-6d21-49ae-9457-d269106c0110",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C92",
+      "claim": "X-ray and cryo-EM studies previously reported a dimeric assembly for SLC26.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies using Blue native electrophoresis (Detro-Dassen et al., 2008) and X-ray and cryo-EM (Geertsma et al., 2015; Walter et al., 2019) previously reported a dimeric assembly for SLC26",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "6088daf1-2b3d-45ca-9198-463d96a758e1",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C93",
+      "claim": "Microscopy approaches supported a tetrameric assembly for SLC26.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas microscopy approaches supported a tetrameric assembly (Hallworth and Nichols, 2012; Sinha et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "78412afe-471b-440d-ac3f-1f7d81ec5a0e",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C94",
+      "claim": "The discrepancy in SLC26 oligomeric state might indicate that SLC26 forms stable dimers that survive protein purification and solubilization as well as weakly associated 'dimer-of-dimer' tetramers in native membranes that may only be visible in intact cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy might indicate that SLC26 forms stable dimers that survive protein purification and solubilization as well as weakly associated 'dimer-of-dimer' tetramers in native membranes that may only be visible in intact cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "424086cd-9986-496e-8cf9-3776306a407f",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C95",
+      "claim": "Both prestin and SLC26A3 predominantly form dimers in intact HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot exclude the possibility that a minor fraction of prestin forms tetrameric structures, our results show that both prestin and SLC26A3 predominantly form dimers in intact HEK293T cells (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "fe760a02-e03b-4d67-93ff-7cbdccd2f232",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C96",
+      "claim": "vGlut1, -2, and -3 (Slc17a7, Slc17a6, and Slc17a8, respectively), and sialin (SLC17A5) are likely to be monomeric.",
+      "claim_type": "EXPLICIT",
+      "source": "We also studied the oligomeric state of vGlut1, -2, and -3 (Slc17a7, Slc17a6, and Slc17a8, respectively), and sialin (SLC17A5) and found that they are likely to be monomeric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "1b065366-3b93-45a1-bdc5-5e99633ebc20",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C97",
+      "claim": "The results for SLC17 proteins are consistent with native gel electrophoresis.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, these results are consistent with native gel electrophoresis (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "402576ac-3216-4895-93de-a008c86b2bcc",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C98",
+      "claim": "An earlier report suggested dimeric organization for SLC17 transporters based on SDS-PAGE results.",
+      "claim_type": "EXPLICIT",
+      "source": "An earlier report suggested dimeric organization for SLC17 transporters based on SDS-PAGE results (Andersen, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Andersen, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "e75bd8da-9be3-490f-b7fd-a6648a4e1f0b",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C99",
+      "claim": "A recent cryo-EM study reported a monomeric structure for SLC17 transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "but a recent cryo-EM study reported a monomeric structure (Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "1b1870b2-8575-4457-9528-22322eb6411c",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C100",
+      "claim": "Functional expression studies have demonstrated that vesicular glutamate transporters and sialin can function without accessory subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional expression studies have also demonstrated that vesicular glutamate transporters and sialin can function without accessory subunits (Eriksen et al., 2016; Morin et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Eriksen et al., 2016 and Morin et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "19d9fa46-0a13-4ccd-9008-9ac28477ec6d",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C101",
+      "claim": "SLC17 proteins are functional monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "which, when considered alongside our results, confirms that SLC17 proteins are functional monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "19ed2513-1d0c-4c6e-8bd4-6d8a02f028fb",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C102",
+      "claim": "The DCC principle is not reliant on SMLM and the algorithm may also be used with other microscopy modalities given enough spatial resolution to separate individual protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, while we use the x- and y-coordinates provided by SMLM, the DCC principle is not reliant on SMLM and the algorithm may also be used with other microscopy modalities given enough spatial resolution to separate individual protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential extension in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "30a89bda-0e36-4827-99e4-777281b0e16d",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "claim_id": "C103",
+      "claim": "Examples of other microscopy modalities that could potentially use DCC include structured illumination and super-resolution radial fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples may include structured illumination (Kner et al., 2009) and super-resolution radial fluctuations (Gustafsson et al., 2016) which are otherwise difficult to quantify at the single molecule level because they rely on the mathematical processing of multiple raw images to yield super-resolution images removing much of the information required by other algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kner et al., 2009 and Gustafsson et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a dual-color colocalization single molecule localization microscopy (DCC-SMLM) method that allows accurate in situ counting of protein oligomeric states even with low fluorescent protein detection efficiencies, is robust to background signals, and does not require temporal clustering of localizations. The method uses mVenus as a marker and PAmCherry as an indicator, with corrections for drift and chromatic aberrations achieving ~100 nm two-color resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8, C36-C46, and C68-C77 collectively demonstrate the development and validation of the DCC-SMLM method. The experimental data (Figures 1-3) show low background in the mVenus channel, effective drift and chromatic aberration corrections, and robustness to background noise. The method's advantages over existing approaches are well-supported by both theoretical considerations and experimental validation with reference proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "b6d70615-2e8a-403a-a459-ad45a4844c68",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cold methanol fixation better preserved fluorescent protein function compared to paraformaldehyde/glutaraldehyde fixation, showing significantly higher signal density, higher PAmCherry to mVenus cluster ratios, and higher colocalization ratios. The fusion pattern of fluorescent proteins affected colocalization ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by experimental data in Figure 3 and Table 1, showing statistically significant differences between fixation methods. The comparison is methodologically sound with appropriate controls, though the mechanistic explanation for why methanol is superior remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The DCC-SMLM method was calibrated using proteins with known oligomeric states (monomeric barttin, dimeric ClC-2 and ClC-K, trimeric EAAT2, and tetrameric Kir2.1). Fitting experimental data to a modified model (Equation 4) with modification factor m yielded p=0.17 and m=0.30, providing better fit than the simpler model, especially for monomeric proteins. The dual fluorescent protein tags did not interfere with protein quaternary structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 and C78-C79 are well-supported by experimental data (Figure 4A, Figure 4\u2014figure supplement 2) and appropriate statistical analysis including bootstrap resampling. The hrCNE validation independently confirms the oligomeric states and demonstrates that the fluorescent protein tags do not disrupt protein structure. The introduction of modification factor m is justified by improved model fit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using DCC-SMLM, the authors determined that SLC26A3 and prestin (Slc26a5) are predominantly dimeric in intact HEK293T cells, while vGlut1, vGlut2, vGlut3, and sialin are monomeric. These results were confirmed by hrCNE and are consistent with recent structural studies for SLC26 and functional studies for SLC17 proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 and C95-C97, C101 are supported by multiple lines of evidence: M2 coefficient analysis (Figure 4C-H), Kolmogorov-Smirnov tests (Figure 4I-N), and independent hrCNE validation (Figure 4\u2014figure supplement 2). The results resolve previous controversies about SLC26 oligomeric states and are consistent with recent cryo-EM and functional data for both protein families.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "2032fa8d-712a-4366-a818-572b47bd9128",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The optimal recall rate (p) for DCC-SMLM to distinguish oligomeric states from monomer to pentamer is between 0.2 and 0.4. The measured recall rate for PAmCherry was 0.17 with the modified model, lower than the theoretical optimum but sufficient for determination. The modification factor m (0.30) likely accounts for truncation or simultaneous loss of both fluorescent proteins and is essential for accurate determination of monomeric states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C87 are supported by theoretical analysis (Figure 1C, Figure 1\u2014figure supplement 1) and experimental fitting (Figure 4A). The interpretation of the modification factor m as representing truncation is reasonable based on the authors' experience, though somewhat speculative. The necessity of m for monomer determination is clearly demonstrated in Figure 4C-H.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "eba52f5b-773a-41a8-b77d-48ed3d086c22",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DCC-SMLM is based on statistical information from large numbers of protein complexes and can only report average oligomeric states for proteins existing in multiple oligomeric forms. Analysis of expression density versus colocalization ratio showed no significant correlation, ruling out aggregation artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 appropriately describe limitations of the method. The lack of correlation between expression density and colocalization ratio (Figure 4\u2014figure supplement 5) effectively rules out aggregation as a confounding factor. The limitation regarding mixed oligomeric states is acknowledged with supporting simulation (Figure 4\u2014figure supplement 4).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "b8dfbac8-ad8b-4c61-a662-d5645b4fdc97",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Previous studies reported conflicting oligomeric states for SLC26 proteins: biochemical and structural studies (Blue native electrophoresis, X-ray, cryo-EM) indicated dimers, while microscopy approaches suggested tetramers. This discrepancy might indicate stable dimers that survive purification and weakly associated 'dimer-of-dimer' tetramers visible only in intact cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C93 accurately cite prior literature showing the controversy. However, claim C94 is speculative\u2014while the authors' data support a predominantly dimeric state, they cannot definitively rule out minor tetrameric populations or confirm the 'dimer-of-dimer' hypothesis. The speculation is reasonable but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "7fb2b8c9-1760-42c5-9065-7c4d5eb0240a",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Previous studies on SLC17 proteins showed conflicting results: an earlier SDS-PAGE study suggested dimers, while recent cryo-EM reported monomers. Functional expression studies demonstrated that vesicular glutamate transporters and sialin can function without accessory subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 accurately cite and summarize prior literature on SLC17 proteins. The citations are appropriate and the summary of functional studies supporting monomeric function is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "87c94682-90cc-4095-a06e-8183e9bd6a8e",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The DCC principle is not reliant on SMLM and could potentially be used with other microscopy modalities with sufficient spatial resolution, such as structured illumination or super-resolution radial fluctuations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C103 are speculative about future applications. While the reasoning is sound that the DCC principle relies on colocalization rather than SMLM-specific features, no experimental validation with other microscopy modalities is provided. This represents a reasonable hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "ab75987a-70e7-4cec-a279-08b072dd90ca",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide comprehensive background on the importance of oligomeric states, limitations of existing methods (biochemical approaches, photobleaching, conventional SMLM), and the biological context for SLC26 and SLC17 protein families. Traditional SMLM methods require high recall rates (~0.5), low background noise, and temporal clustering, which are technically demanding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C33, C72, and C74 accurately summarize established knowledge and prior work, supported by appropriate citations. These background claims provide context for the development of DCC-SMLM and are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    },
+    {
+      "id": "6d2080d5-415a-44d7-825c-3f2e13cd9548",
+      "content_id": "c6ca3119-3e7d-478a-a28d-6724a71904ba",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Direct determination of detection probability from single-color microscopy is impossible because the total number of proteins (including non-fluorescent ones) is unknown. Membrane protein fixation requires glutaraldehyde addition to paraformaldehyde or cold methanol for adequate immobilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C47 state fundamental limitations and requirements that are well-established in the field and supported by appropriate citations. These are accurate statements of technical constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:13.388633Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5058fbcd-e541-4367-a6ba-c196e8423400",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "71c2b3a3-59e6-4aba-a6e5-9a440d2c9090",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "795ef7f0-3305-4c15-b73b-df57196b30a1",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "127f6207-b545-4944-8122-caf150d50e80",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "1317e55d-cf1b-491a-8cad-c19b2f64f6f8",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "af2e2330-be7b-4dc8-81ad-c01c061207b1",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "adf57ad9-e76e-4608-8288-44a2d8eb522b",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "204a17a1-2035-4eac-9804-27dcb7ff3b87",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "1d78f6df-1008-42f0-92a8-01628b02ac6c",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "50b4f072-331f-4d28-9c18-9b5e3d443b59",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "0decab47-67ee-4c76-a7de-c3288e3c9d2e",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "1f1e505a-0760-4296-9013-2fe45336e199",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "f637b9d9-c8c3-49f9-8670-903bf531837f",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "b79c5560-f857-4814-8535-0f0b295c9b88",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "c9afd2e6-4f3e-49f7-9050-61588c9e5051",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "4e0984f7-6059-4808-840f-2881fb823742",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "c3091e13-351e-4097-857e-32ee8049c525",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "d1884e0b-8e32-49a4-a48b-142519d6b773",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "f959a34f-8a38-4ba9-8227-a88f19088811",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "d88a93bd-eb1a-4207-905c-4d46f299ae37",
+      "result_id": "cc9ef8d8-f08a-43e6-892c-5d5fb47003da"
+    },
+    {
+      "claim_id": "18aff6f3-95e2-4abe-873e-48b168ed0ad0",
+      "result_id": "b6d70615-2e8a-403a-a459-ad45a4844c68"
+    },
+    {
+      "claim_id": "af47e745-8cf7-4064-addf-d779acfddb2b",
+      "result_id": "b6d70615-2e8a-403a-a459-ad45a4844c68"
+    },
+    {
+      "claim_id": "67171b90-d61e-417f-aa0c-35f2a02694e9",
+      "result_id": "b6d70615-2e8a-403a-a459-ad45a4844c68"
+    },
+    {
+      "claim_id": "9d26a14e-ff4b-4f18-8e8b-63f4844a3fd2",
+      "result_id": "b6d70615-2e8a-403a-a459-ad45a4844c68"
+    },
+    {
+      "claim_id": "0aa31ebe-45c2-4630-9464-e918ebbba206",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "03e9b13b-252b-49e1-97a4-87f2bb4a7976",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "817caa27-aa75-4633-a5f2-4d31953afb0e",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "a4914188-7cdd-4175-bd3b-63cbb9530327",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "4b7e4fc1-2b17-4067-be72-2e2e353e2e51",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "a48da849-d0f2-4786-bad3-f272ed91625c",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "7e2121aa-efb9-43cb-8d09-15fda4d70124",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "795b99ab-af15-48bf-8f3b-7a762b9de1e4",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "37546d6d-6474-4707-9f56-f188180b92ed",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "46d949c0-6395-47b8-9db1-f7d44a1dd342",
+      "result_id": "fbdbb066-f8e8-487a-aa84-e9eeb0eefde5"
+    },
+    {
+      "claim_id": "5b6e914f-b601-4070-b4b6-6053b8e6e48a",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "0ca92b3e-09c0-4cfb-81e6-423ccec039ef",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "7d966f51-cc20-4190-b84a-92ed78c5f76e",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "21bc10cb-d0f8-428b-b8a4-58d99e41ddbe",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "a0afa4d7-abee-4514-be9e-475913ca1893",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "67d721b9-2c83-40bc-a1fc-6e738dc716a0",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "7ca4592a-b98f-4f3d-a0cc-3d2e257a79b8",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "ee3a8c59-f52d-4d47-a7c8-4c7c73151021",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "424086cd-9986-496e-8cf9-3776306a407f",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "fe760a02-e03b-4d67-93ff-7cbdccd2f232",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "1b065366-3b93-45a1-bdc5-5e99633ebc20",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "19d9fa46-0a13-4ccd-9008-9ac28477ec6d",
+      "result_id": "d64ad32d-0540-40ee-ab8e-4ff005bdcb16"
+    },
+    {
+      "claim_id": "59d80ced-66b0-4436-b91b-88025733be2d",
+      "result_id": "2032fa8d-712a-4366-a818-572b47bd9128"
+    },
+    {
+      "claim_id": "53b9732b-d641-443f-b497-53544ea7eeb1",
+      "result_id": "2032fa8d-712a-4366-a818-572b47bd9128"
+    },
+    {
+      "claim_id": "75809394-92fc-43ca-b0c5-31917a4d3e33",
+      "result_id": "2032fa8d-712a-4366-a818-572b47bd9128"
+    },
+    {
+      "claim_id": "27ddcc17-a828-4820-8692-39c01ec3cb4b",
+      "result_id": "2032fa8d-712a-4366-a818-572b47bd9128"
+    },
+    {
+      "claim_id": "945f260e-15b1-43cf-b8a3-59ec43a27a3e",
+      "result_id": "2032fa8d-712a-4366-a818-572b47bd9128"
+    },
+    {
+      "claim_id": "2ff5ac3a-18df-4f1f-b7f0-b870fc5f2d58",
+      "result_id": "2032fa8d-712a-4366-a818-572b47bd9128"
+    },
+    {
+      "claim_id": "8e5cf8d2-28cb-4ae5-87b1-71ed70bd1a53",
+      "result_id": "2032fa8d-712a-4366-a818-572b47bd9128"
+    },
+    {
+      "claim_id": "0e9bce96-4490-4fda-92ba-053a4b02838b",
+      "result_id": "2032fa8d-712a-4366-a818-572b47bd9128"
+    },
+    {
+      "claim_id": "667da794-da8b-464e-b5e8-77a29f7b2367",
+      "result_id": "eba52f5b-773a-41a8-b77d-48ed3d086c22"
+    },
+    {
+      "claim_id": "050ee410-7d9a-4fe0-bcd3-a3c493d8b1ec",
+      "result_id": "eba52f5b-773a-41a8-b77d-48ed3d086c22"
+    },
+    {
+      "claim_id": "18651d1f-6e95-4652-b4d5-75a86c83d996",
+      "result_id": "eba52f5b-773a-41a8-b77d-48ed3d086c22"
+    },
+    {
+      "claim_id": "45e2c2c4-cadd-47fb-a61d-3c847813dbd2",
+      "result_id": "b8dfbac8-ad8b-4c61-a662-d5645b4fdc97"
+    },
+    {
+      "claim_id": "23873c0c-6d21-49ae-9457-d269106c0110",
+      "result_id": "b8dfbac8-ad8b-4c61-a662-d5645b4fdc97"
+    },
+    {
+      "claim_id": "6088daf1-2b3d-45ca-9198-463d96a758e1",
+      "result_id": "b8dfbac8-ad8b-4c61-a662-d5645b4fdc97"
+    },
+    {
+      "claim_id": "78412afe-471b-440d-ac3f-1f7d81ec5a0e",
+      "result_id": "b8dfbac8-ad8b-4c61-a662-d5645b4fdc97"
+    },
+    {
+      "claim_id": "402576ac-3216-4895-93de-a008c86b2bcc",
+      "result_id": "7fb2b8c9-1760-42c5-9065-7c4d5eb0240a"
+    },
+    {
+      "claim_id": "e75bd8da-9be3-490f-b7fd-a6648a4e1f0b",
+      "result_id": "7fb2b8c9-1760-42c5-9065-7c4d5eb0240a"
+    },
+    {
+      "claim_id": "1b1870b2-8575-4457-9528-22322eb6411c",
+      "result_id": "7fb2b8c9-1760-42c5-9065-7c4d5eb0240a"
+    },
+    {
+      "claim_id": "19ed2513-1d0c-4c6e-8bd4-6d8a02f028fb",
+      "result_id": "87c94682-90cc-4095-a06e-8183e9bd6a8e"
+    },
+    {
+      "claim_id": "30a89bda-0e36-4827-99e4-777281b0e16d",
+      "result_id": "87c94682-90cc-4095-a06e-8183e9bd6a8e"
+    },
+    {
+      "claim_id": "ac0cb0f2-b8d5-4e4a-9c1a-26a34ab732e8",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "e65473fc-8ff1-4938-9a7c-81d0a4d6789a",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "33446e19-97ea-48ef-aab7-5b14a04425eb",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "2cdabb4a-ed19-40b3-8fb9-af0bf6d4bb82",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "883aff94-95cf-488c-b2e6-8a59ea70bd38",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "ce7643d1-ed3c-42c1-944c-5ab91c94f122",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "74f057a0-900e-4c82-92cd-5c58b4c47006",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "b1dab075-f5c8-46de-8ba1-a4d1c03e132e",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "21db450b-f017-452f-80e0-bc47b862adce",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "6865613f-cb74-45fb-b097-fe1e54fd58eb",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "df8d3d6c-40de-466e-bbe1-b9a3177b9598",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "933706a8-5140-4000-8411-4bbe7acb9139",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "22fbdb39-2347-4162-a771-36e4acf52faf",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "d01f095f-c34f-43e5-b972-e459efa4c1ab",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "c8059dfd-ffef-4955-ab34-21e5cd8c7b70",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "fb41987c-c455-4fe7-9814-419a3a806aaa",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "2e5a3ee6-6c68-4d0a-af3d-b533d5140cca",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "72846f9f-589b-47d6-b692-6a09f955fdfb",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "a2102d6d-0c05-47eb-9f32-9038e041cd5d",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "e5d1846f-3929-4523-b138-360ebf7013f0",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "11626029-0cb9-449b-bdd6-5c569482aa20",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "bab26ed6-45d1-4c75-8dca-724c77c7abe2",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "ec94b3e5-9c4b-4d91-a4c3-db294312f919",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "dd985f94-404c-4c2d-8632-39afd57de661",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "90a97190-a8f0-41bc-acec-884ed1f7bbbf",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "c34f88af-1b3a-4384-8d06-fd919e85ad20",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "00937813-ffab-4146-a39b-f772ecf1b31b",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "79a6f94e-b3b8-4ce3-9bf2-da0f78744d04",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "9d6afe10-30ab-46c5-999c-998c47ad3f36",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "7fca6c5f-8131-4ee8-9e8e-f3194cfa9f2b",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "67754cf8-4526-4ab0-a931-585007de9387",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "0a1502e4-f04d-41d6-b55a-422aee6cb529",
+      "result_id": "ab75987a-70e7-4cec-a279-08b072dd90ca"
+    },
+    {
+      "claim_id": "0a93fff4-d13e-4c0d-8aa3-b32bf9cd0aa6",
+      "result_id": "6d2080d5-415a-44d7-825c-3f2e13cd9548"
+    },
+    {
+      "claim_id": "58650d4c-d755-48ee-a70c-baa3370930c3",
+      "result_id": "6d2080d5-415a-44d7-825c-3f2e13cd9548"
+    }
+  ],
+  "comparisons": []
+}

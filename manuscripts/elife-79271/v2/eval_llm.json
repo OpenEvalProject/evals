@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Shear stress reversibly altered NaChBac kinetic properties and increased maximum current in whole-cell experiments. Both wild-type and T220A (inactivation-removed) NaChBac responded to shear stress with increased conductance (47% and 34% respectively, compared to 26% for NaV1.5), accelerated kinetics, and slight negative shifts in half-activation voltage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C40-C52 are well-supported by experimental data in Figures 1 and Table 1, showing consistent mechanosensitive responses across multiple parameters (current amplitude, kinetics, voltage dependence). The reversibility is demonstrated in Figure 3. Statistical significance is reported with appropriate sample sizes (n=7-10 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C57",
+      "C61",
+      "C62",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Single-channel patch-clamp experiments demonstrated that patch suction reversibly increased open probability (PO) of NaChBac T220A in a voltage- and pressure-dependent manner. PO remained zero at extremely negative voltages but increased significantly at more positive voltages within the activation range (-80 to -20 mV), with responses dependent on suction strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C53, C57, C61-C70 are supported by single-channel data in Figures 2 and 3, demonstrating mechanosensitivity at the single-channel level. The technical achievement of resolving sub-pA sodium channel events under pressure clamp is notable. The use of Piezo1-knockout cells (C53) provides appropriate negative controls. Sample sizes are adequate (n=7-21 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The mechanosensitive responses were reversible in both whole-cell and single-channel experiments. Upon removal of mechanical stimulation, currents and open probabilities returned to baseline values, though the transition was not instantaneous due to kinetic state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by data in Figure 3 and supplementary figures. The reversibility is demonstrated quantitatively with 20/21 cells responding at -60 mV (C75). The observation that some NaV1.5 kinetic changes were not fully reversible (C73) is appropriately noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C136",
+      "C137"
+    ],
+    "result": "Force alone does not open NaChBac channels but enhances voltage-driven openings, suggesting that mechanical force modifies the energetics of existing transitions rather than creating new conformational states. Inactivation is unlikely to play a significant role in mechanosensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84, C136-C137 are logical inferences well-supported by the observation that force does not induce openings at voltages where channels are normally closed (Figures 1-2). The argument that inactivation is not critical is supported by the similar mechanosensitive responses of T220A (lacking inactivation) and wild-type channels (C82), and the different inactivation mechanisms between NaChBac and NaV1.5 (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C108",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Kinetic modeling comparing mechanosensitive activation (MSA) versus mechanosensitive opening (MSO) models strongly favors the MSO model. The MSO model, which assigns tension sensitivity to the voltage-insensitive pore opening transition (C5\u2192O6), accurately predicts the experimentally observed increases in maximum response and slope of activation curves under tension, while the MSA model fails to match these key features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C99, C108, C141-C143 present a rigorous model comparison supported by data in Figure 4. The MSO model predictions match experimental observations of increased steepness and maximum value of activation curves under tension (C92, C95), while MSA model predictions diverge (C93). The model parameters were manually adjusted to fit data, which is appropriate for this exploratory analysis, though formal parameter optimization would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Single-channel dwell time analysis revealed that pressure primarily affects the opening rate (15-21% decrease in closed state lifetimes) rather than the closing rate, supporting the MSO model and suggesting that force destabilizes the closed state. The MSO model accurately captures the time course of average currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 are supported by dwell time analysis in Figure 4E. The quantitative measurements show significant pressure-dependent changes in opening rates (C101-C102) with minimal changes in closing rates at -10 mmHg (C103), though changes appear at -50 mmHg (C104). The analysis acknowledges potential underestimation due to bandwidth limitations (~1 ms). Sample sizes are adequate (n=124 traces from 10 patches at -10 mmHg; n=23 traces from 3 patches at -50 mmHg).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Structural analysis comparing closed (NaVAb) and open (NaVMs) prokaryotic sodium channel structures identified the intracellular S6 segment as undergoing the largest lateral displacement around a 'gating hinge' during pore opening, consistent with the MSO model prediction of cross-sectional area changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 are supported by structural analysis in Figure 5A-B and citations to prior structural and functional studies. The identification of S6 lateral movement is consistent with the 'swinging door' model of channel gating. However, the analysis relies on comparing structures from different channels (NaVAb and NaVMs) rather than NaChBac itself, which introduces some uncertainty about direct applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122",
+      "C123"
+    ],
+    "result": "Site-directed mutagenesis experiments showed that the voltage sensor mutant D93A maintained mechanosensitivity despite shifted voltage dependence, while the pore hinge mutant I228G nearly eliminated mechanosensitivity (~7-fold reduction) while preserving voltage-dependent gating, providing experimental evidence that mechanical forces interact primarily with the pore opening transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120, C122-C123 are supported by mutagenesis data in Figure 5 and Table 2. The D93A mutant shows intact mechanosensitivity (C116), while I228G shows dramatically reduced mechanosensitivity (C118-C120) with quantitative measurements at multiple voltages. The ~7-fold reduction is statistically significant. However, the interpretation that I228G specifically disrupts mechanosensitivity of the opening transition (rather than altering the overall gating scheme) requires caution, as acknowledged in C121.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C170",
+      "C171"
+    ],
+    "result": "NaChBac is intrinsically mechanosensitive due to mechanosensitivity of a voltage-insensitive gating step associated with pore opening, likely involving the intracellular gate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C170-C171 represent the main conclusions of the study, well-supported by the convergence of whole-cell experiments (C6-C7), single-channel recordings (C8), kinetic modeling (C108), structural analysis (C113), and mutagenesis (C123). The use of multiple complementary approaches strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C146",
+      "C150"
+    ],
+    "result": "The mechanosensitivity mechanism identified in NaChBac may apply to eukaryotic VGICs, including NaV1.5, based on structural conservation of the intracellular gate across VGICs from prokaryotes to eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C146, C150 are speculative extrapolations (evidence_type includes SPECULATION) based on observed similarities between NaChBac and NaV1.5 responses (C132) and structural conservation (citations in C150). While plausible, direct experimental validation in eukaryotic channels is needed. The similar mechanosensitive responses provide suggestive but not conclusive evidence for shared mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C168"
+    ],
+    "result": "The 'force-from-lipid' model provides a mechanistic framework for NaChBac mechanosensitivity, where lateral forces at the protein-lipid interface (compression from hydrophobic core, tension from headgroups) act on the channel during conformational changes. The lipid-protein interface is crucial for VGIC mechanosensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C151-C160, C168 synthesize established biophysical principles (supported by multiple citations) with the current findings. The force-from-lipid model is well-established for mechanosensitive channels (C156) and provides a plausible mechanism for how membrane tension reaches the pore. The inference that lipids contribute to force sensing (C158) is reasonable given the evidence that lipid-permeable compounds alter mechanosensitivity (C160), though direct measurement of lipid-protein interactions would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "NaChBac is mechanosensitive with responses closely resembling NaV1.5, validating NaChBac as a model system for studying mechanosensitivity in eukaryotic voltage-gated sodium channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 are supported by comparative data in Figure 1 showing similar mechanosensitive responses between NaChBac and NaV1.5. The consistency with previous studies on eukaryotic NaVs (C133, multiple citations) strengthens the validity of NaChBac as a model system. This establishes the rationale for using the simpler prokaryotic channel to investigate mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C144",
+      "C145"
+    ],
+    "result": "Patch suction modified NaChBac voltage-gating in a state-dependent manner, where mechanical energy modifies the energy landscape of gating without overcoming voltage-gating. Voltage and force sensitivities are kinetically intertwined, requiring voltage activation before tension response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140, C144-C145 are supported by single-channel data and kinetic modeling. The state-dependent effect (C139) is demonstrated by the voltage-dependence of mechanosensitivity. The interpretation that mechanical energy modifies but does not overcome voltage-gating (C140) is supported by citations and consistent with observations. The conclusion that channels must activate by voltage before responding to tension (C145) is a logical consequence of the MSO model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The small residual mechanosensitivity in the I228G mutant could be explained by partial S6 displacement during pore opening or another weakly mechanosensitive transition, with partial displacement being more plausible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 is speculative (evidence_type: SPECULATION) and represents an attempt to explain the ~7-fold but not complete elimination of mechanosensitivity in I228G. While the reasoning is logical, distinguishing between these possibilities requires additional experiments. The preference for partial S6 displacement (C122) is based on indirect evidence from the D93A mutant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C169",
+      "C172"
+    ],
+    "result": "VGIC mechanosensitivity has important physiological implications for regulating excitability and may be relevant to diseases like long-QT syndrome and IBS. The lipid-protein interface may provide a novel pharmacological target, as amphipathic compounds can block mechanosensitivity separately from their effects on voltage-gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C169, C172 discuss physiological and therapeutic implications but are largely speculative (evidence_type includes SPECULATION for C161, C165, C169). The disease associations (C164) are supported by citations but represent prior work rather than findings of this study. The pharmacological observations (C166-C167) are from cited studies, not new data. These represent important context and future directions but are not directly tested in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background context establishing that VGICs orchestrate electrical activities in contractile tissues, are mechanosensitive across multiple channel families, and that the mechanisms of mechanosensitivity remain poorly understood, particularly for NaV channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C15-C31 provide established background knowledge supported by extensive citations. These claims establish the scientific context and rationale for the study but do not represent new findings. They are well-documented in the literature and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Rationale for using NaChBac as a model system: VGICs are mechanosensitive but mechanisms remain poorly understood due to structural complexity. Bacterial NaVs like NaChBac offer advantages including simpler structure, slower kinetics, and removable inactivation while sharing key properties with eukaryotic NaVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C32-C39, C128-C130 establish the rationale for the experimental approach. The advantages of NaChBac (C37-C39) are supported by citations. The statement that mechanisms remain poorly understood (C4, C28, C129) accurately reflects the state of the field and motivates the study. These are appropriate justifications for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C46"
+    ],
+    "result": "Methodological rationale: NaChBac T220A mutant was used to remove inactivation, allowing separation of activation and opening responses from inactivation, with the observation that mechanical forces act predominantly on activation/opening steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44, C46 describe methodological choices and initial interpretations. The use of T220A to remove inactivation (C44) is a standard approach supported by citations. The inference that forces act predominantly on activation/opening (C46) is supported by the observation that T220A still responds to shear stress (Figure 1C).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64"
+    ],
+    "result": "Technical and methodological details of single-channel experiments: high-speed pressure clamp was used to apply controlled suction; sodium channels have tiny single-channel amplitudes (~1 pA); pressure-clamping introduces noise; patches have non-zero resting tension; discrepancies between whole-cell and single-channel activation curves likely reflect unmeasurable resting potentials in cell-attached recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C58-C60, C63-C64 describe technical aspects and limitations of the experimental approach. These are appropriately acknowledged and supported by citations (C54, C58, C59). The explanation for the discrepancy between whole-cell and single-channel curves (C64) is a reasonable inference. The technical achievement of resolving these small currents under pressure clamp is notable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Methodological consideration: some previous studies showed irreversible changes from shear stress and patch pressure, motivating specific testing for reversibility in the current preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by citations to prior studies and explains the rationale for the reversibility experiments. This represents appropriate experimental design based on prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Physiological context: electrically excitable cells use VGICs to generate action potentials; mechanical organs like heart and gut experience membrane tension changes that can affect membrane proteins through mechano-electrical feedback; VGIC mechanosensitivity may integrate electrical and mechanical signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 provide physiological context supported by citations. These establish the broader significance of the work but represent established knowledge rather than new findings. Claim C127 about integration of signals is somewhat speculative but supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "Force produced a rise in peak current evoked by membrane depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 is a straightforward observation from the experimental data, representing a summary of the main effect observed in whole-cell experiments. This is well-supported but represents a restatement of findings already covered in other result groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Prior functional and structural studies support the 'swinging door' model of VGIC gating, where targeting S6 residues around the pore's hinge impedes gating, pore opening leads to physical expansion of the inner leaflet, and S6 stores mechanical energy of gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 summarize prior work from cited studies that supports the mechanistic interpretation. These are appropriately cited and provide context for the current findings but do not represent new results from this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "CarD protein levels decrease under starvation conditions despite increased carD transcript levels. This was observed across multiple starvation conditions (carbon, nitrogen, phosphorus) and during stationary phase growth in M. smegmatis, including in a carD overexpression strain. CarD levels recovered when nutrients were restored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 provide converging evidence from multiple experimental approaches (qRT-PCR, Western blot, growth phase analysis, nutrient supplementation) showing the paradoxical increase in carD mRNA but decrease in CarD protein under starvation. The consistency across different starvation conditions and the reversibility upon nutrient addition strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "CarD protein reduction under starvation is conserved across mycobacterial species. CarD levels decreased under carbon, nitrogen, and phosphorus starvation in M. bovis BCG and M. tuberculosis H37Ra, and during stationary phase in both species, indicating this is a conserved mycobacterial adaptive mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 demonstrate that the CarD reduction phenomenon observed in M. smegmatis is conserved in pathogenic mycobacteria (BCG and H37Ra), supporting the biological significance of this regulatory mechanism. The experimental data from Figure 2 provides clear evidence across multiple species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "CarD levels decrease under host-relevant stress conditions including low pH and hypoxia. CarD reduction under these conditions suggests this mechanism contributes to mycobacterial adaptation to the host environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 extend the starvation findings to physiologically relevant host conditions. The experimental data (Figure 2E-F) clearly show CarD reduction under acidic and hypoxic conditions, with reversibility upon reaeration, supporting the proposed adaptive role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Clp protease, specifically ClpP2, is essential for CarD degradation under starvation and stationary phase conditions. Using a conditional clpP2 mutant, the authors show that CarD persists when ClpP2 is not induced but is degraded when ClpP2 is expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 provide strong genetic evidence using a conditional mutant system. The experimental design with ATc-inducible clpP2 expression provides clear cause-and-effect evidence that ClpP2 is required for CarD degradation (Figure 3A-D and supplementary figures).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CarD contains a conserved C-terminal 'LAAAS' motif similar to Clp protease recognition sequences. Deletion of the 'AAAS' sequence prevents CarD degradation under stress conditions, indicating this motif mediates Clp-dependent degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 provide sequence analysis and functional validation. The conservation analysis (Figure 3E) and deletion mutant experiments (Figure 3F-G) demonstrate that the AAAS motif is necessary for efficient CarD degradation, supporting the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CarD interacts with ClpC1 but not ClpX, and ClpC1 levels increase during stationary phase. The upregulation of ClpC1 during stationary phase contributes to efficient CarD degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide biochemical evidence (pull-down assay, Figure 3H) and temporal correlation (Western blots, Figure 3I). The data show specific interaction with ClpC1 and its upregulation during stationary phase, supporting the proposed mechanism for enhanced degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "An antisense RNA (AscarD) complementary to carD is induced at stationary phase onset in a SigF-dependent manner. AscarD expression increases under carbon starvation and requires SigF for induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 provide multiple lines of evidence including RNA-seq data, 5'-RACE mapping, promoter analysis, sigF deletion experiments, and reporter assays (Figure 4). The convergence of these approaches strongly supports SigF-dependent regulation of AscarD under starvation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "AscarD inhibits CarD protein synthesis. Reporter assays, overexpression, and knockdown experiments show that AscarD reduces CarD protein levels, and AscarD overexpression increases sensitivity to oxidative stress, DNA damage, and antibiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide functional evidence through multiple complementary approaches (lacZ reporter, overexpression, knockdown, stress sensitivity assays in Figure 5). The consistency across different experimental systems strongly supports AscarD's inhibitory role on CarD synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C123",
+      "C124"
+    ],
+    "result": "AscarD inhibits CarD expression at the translational level rather than affecting mRNA stability. AscarD overexpression increases carD transcript stability while reducing CarD protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C123-C124 provide evidence that AscarD acts post-transcriptionally. The observation that AscarD increases rather than decreases carD mRNA levels (Figure 5\u2014figure supplement 1C) while reducing protein levels clearly indicates translational inhibition rather than mRNA destabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "AscarD is upregulated under multiple stress conditions including hypoxia and acid stress, suggesting a broad role in stress adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 extend the AscarD findings to additional stress conditions using qRT-PCR data. The 4.5-fold and 2.3-fold increases under hypoxia and acid stress respectively support a general stress response role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "AscarD and Clp protease work synergistically to regulate CarD levels under stress. Clp protease dominates CarD regulation, but both mechanisms are important for mycobacterial survival, with their combined action preventing futile cycles of CarD synthesis and degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 integrate the two regulatory mechanisms using double mutant analysis (Figure 6). The Western blot and survival assays show that while Clp protease has a stronger effect, both mechanisms contribute to survival, and their synergistic action is most important. The experimental design appropriately tests the relative contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors propose a model where mycobacterial cells adjust transcription and translation rates by regulating CarD levels in response to environmental conditions. Under nutrient-rich conditions, CarD stabilizes RPo and promotes rRNA transcription; under starvation, AscarD and Clp protease reduce CarD to slow translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 synthesize the experimental findings into a coherent model (Figure 7). The model is well-supported by the experimental data presented throughout the manuscript and integrates prior knowledge about CarD's role in RPo stabilization with the new regulatory mechanisms discovered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "CarD and carD transcript levels both increase under genotoxic stress (H2O2, MMS, CIP), consistent with CarD's role in DNA damage repair. The reduction in CarD under starvation is proposed as an adaptive response to reduce rRNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C17-C19 provide context for the starvation findings by showing that CarD responds differently to genotoxic versus nutritional stress. The data (Figure 1A-B) clearly show coordinate increases in mRNA and protein under genotoxic stress, contrasting with the starvation response. The adaptive interpretation is reasonable given CarD's known role in rRNA transcription.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Analysis of RNA-seq data from a CarD mutant shows that CarD represses dormancy regulon genes. The authors propose that CarD reduction during starvation/hypoxia may facilitate mycobacterial dormancy and persistence in host cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C105 provide bioinformatic analysis of published RNA-seq data showing enrichment of dormancy genes among CarD-repressed genes. While the correlation is interesting, the causal link between CarD reduction and dormancy induction is speculative (C104 explicitly marked as speculation). Direct experimental validation of this proposed mechanism is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "ClpC1 upregulation during stationary phase is conserved across bacteria. The increased ClpC1 enhances both substrate unfolding and ClpP1P2 proteolytic activity, contributing to efficient CarD degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 place the ClpC1 findings in broader context through literature citations and propose a dual mechanism (unfolding + protease activation). The conservation across bacteria (C107-C108) is well-supported by citations. The dual mechanism proposal (C111) is a reasonable inference combining the experimental data with cited literature about AAA+ unfoldase function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors speculate on additional mechanisms that may contribute to efficient CarD degradation during stationary phase, including protective protein complexes in exponential phase, adaptor proteins, and post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C120 are explicitly speculative (marked as SPECULATION in evidence_type). While these are reasonable hypotheses based on analogies to other systems (e.g., C116, C119 cite examples from other bacteria), they lack direct experimental support in this study. These represent future research directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors propose mechanisms for how AscarD inhibits CarD translation, including blocking the Shine-Dalgarno sequence and interfering with transcription-translation coupling through head-on RNAP collision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C122 cite general mechanisms of antisense RNA action. Claims C125-C126 note that the 3'-end of AscarD was not determined but infer it may block the SD sequence. Claim C128 speculates about transcription-translation coupling effects. While these are plausible mechanisms, the lack of 3'-RACE data and the speculative nature of the coupling mechanism limit confidence in the specific molecular details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "AscarD provides a backup mechanism when Clp protease is insufficient or inhibited, preventing CarD overaccumulation and saving energy by avoiding futile synthesis-degradation cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 provide a functional rationale for the dual regulatory system. The logic is supported by the double mutant data (Figure 6) showing that both mechanisms contribute to survival. The citations about Clp substrates (C130-C132) and natural inhibitors (C133) support the premise that Clp may be limiting under some conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors speculate that SigA and SigB jointly regulate carD transcription, with SigA providing basal transcription and SigB mediating stress-induced transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C137 cite prior work showing SigB regulation but continued transcription in sigB mutants. Claim C138 is explicit speculation about dual regulation. While the hypothesis is reasonable given the similarity of SigA and SigB recognition sequences, it lacks direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Analysis of carD promoters from 91 mycobacterial species reveals conserved elements including an extended -10 element, a conserved 'CG' dinucleotide, and two upstream conserved regions. The authors speculate these may regulate carD expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 provide comparative genomic analysis (Figure 7\u2014figure supplement 1) showing conservation of promoter elements. The conservation data (C140, C143, C144) are well-supported. The functional speculation (C142, C145) is reasonable given the high conservation but lacks experimental validation. The comparison to Rhodobacter (C139) provides context but direct applicability to mycobacteria is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background information on bacterial starvation response, CarD function, and mycobacterial transcription. CarD is an essential transcription factor that stabilizes RNAP-promoter open complexes and regulates approximately two-thirds of M. tuberculosis genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C17-C18, C80-C96 provide established background knowledge supported by extensive citations to prior literature. These claims set the context for the study but are not novel findings. They are appropriately cited and accurately represent the current understanding of CarD function and bacterial starvation responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on Clp protease in mycobacteria. Mycobacteria have two ClpP isoforms (ClpP1 and ClpP2) that form heterotetradecamers, and prior proteomics showed CarD upregulation in a clpP2 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide background on the Clp system supported by citations. These establish the rationale for investigating Clp's role in CarD regulation but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Background on mycobacterial pathogens and the knowledge gap. M. tuberculosis kills ~1.5 million people annually and enters dormancy in response to host stresses. Starvation response mechanisms in mycobacteria remain obscure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 provide epidemiological and biological context for the study. These are well-established facts that motivate the research but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

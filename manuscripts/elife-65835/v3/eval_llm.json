@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "In healthy mice, microarousals occur preferentially during fragility periods of an infraslow (~50 s, 0.02 Hz) fluctuation in sigma power during NREMS. The mean preferred phase of microarousal onset was 151.6\u00b0 \u00b1 1.1\u00b0 (with 180\u00b0 representing the sigma power trough), and 89% of microarousals clustered between 90-270\u00b0. This phase relationship persisted across time of day, though microarousal density increased toward the end of the light phase and during the dark phase. Across the 24-hour cycle, a median of 33.6% of fragility periods contained a microarousal, meaning most fragility periods occurred with NREMS remaining consolidated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 collectively demonstrate that microarousals in healthy mice are phase-locked to an infraslow fluctuation in sigma power. The statistical evidence is robust (Rayleigh test p<1\u00d710\u207b\u00b9\u2076 for phase clustering, n=9476 microarousals from 30 mice), and the phase relationship is consistent across multiple time scales (4, 8, 12 s before onset) and times of day. The data in Figure 1 clearly support the temporal relationship between the 0.02 Hz fluctuation and microarousal occurrence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Three weeks after SNI surgery (D20+), mice showed signatures of neuropathic pain in brain activity during wakefulness. Power spectral analysis during quiet wakefulness revealed increased relative power in theta (5-10 Hz), beta (16-25 Hz), and low gamma (26-40 Hz) ranges in S1HL, and increased theta power in PrL, compared to Sham controls. These spectral changes are consistent with previously described signatures of pain states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are well-supported by statistical analysis (mixed-model ANOVAs with significant treatment \u00d7 frequency band interactions, post-hoc tests with Bonferroni correction) of LFP recordings from S1HL (5 Sham, 9 SNI) and PrL (6 Sham, 8 SNI). The findings align with prior literature (LeBlanc et al., 2014) on pain-related spectral signatures. The distinction between quiet and active wakefulness strengthens the interpretation by controlling for movement-related theta activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C33"
+    ],
+    "result": "Sleep macroarchitecture remained largely preserved after SNI. At D20+, SNI and Sham mice spent similar amounts of time in wake, NREMS, and REMS during both light and dark phases. Both groups showed minor increases (2.4-3%) in NREMS time at D20+ compared to baseline. NREMS and REMS bout length distributions were similar between groups, with only minor shifts toward smaller values in SNI. Sleep onset latency and microarousal frequency were not altered by treatment. Characteristic spectral peaks in delta (NREMS) and theta (REMS) frequencies were indistinguishable between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27, C30, C33 are supported by comprehensive polysomnographic analysis (n=18 per group, 48-hour recordings at baseline and D20+) with appropriate statistical tests (mixed-model ANOVAs, Kolmogorov-Smirnov tests). The lack of significant differences in conventional sleep measures is consistently demonstrated across multiple parameters. However, the claim that mice \"do not suffer from major alterations in sleep-wake behaviors\" (C33) may be overstated given the subsequent findings of elevated gamma power and heart rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C31",
+      "C34"
+    ],
+    "result": "Despite preserved sleep architecture, SNI mice showed pathological changes during sleep. Heart rate was significantly higher in NREMS after SNI at D20+ compared to baseline (p=0.002), suggesting elevated sympathetic cardiovascular activation. Relative gamma power (60-80 Hz) was increased in NREMS in SNI mice at D20+ compared to baseline (p=0.0092). These wake-related brain rhythms and autonomic changes persisted into sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C31, C34 are supported by statistical analysis of heart rate (mixed-model ANOVA with significant three-way interaction, post-hoc paired t-test) and gamma power (one-sample t-test). The heart rate analysis included 17 Sham and 14 SNI animals with suitable EMG signals. The interpretation of elevated heart rate as reflecting sympathetic activation (C29) is reasonable but somewhat inferential. Notably, C32 shows no correlation between gamma power changes and sleep architecture alterations, suggesting these are independent phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The 0.02 Hz fluctuation and its relationship to microarousals remained unaltered after SNI. The amplitude, frequency, and number of cycles per hour of NREMS were not different between Sham and SNI groups. Phase-coupling of microarousals to the 0.02 Hz fluctuation was preserved (mean angles: 152.3\u00b0 \u00b1 1.4\u00b0 for Sham, 150.4\u00b0 \u00b1 1.3\u00b0 for SNI). Sleep deprivation produced characteristic delta power rebound and decreased microarousal frequency in both groups, with no treatment differences. Phase-coupling remained unaltered even under high sleep pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 demonstrate that conventional measures of spontaneous arousability and homeostatic regulation are preserved after SNI. The statistical evidence is robust (n=18 per group for most analyses, n=12 per group for sleep deprivation), with appropriate tests showing no significant treatment effects. This preservation of the infraslow fluctuation and its relationship to microarousals provides a critical baseline for interpreting the novel local cortical arousal findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Local field potential recordings revealed region-specific alterations in spectral dynamics during NREMS after SNI. In S1HL (but not PrL), SNI mice showed lower delta power during fragility periods compared to Sham (mixed-model ANOVA interaction p=0.001). Sham controls showed a distinct rapid upstroke of delta power peaking during fragility periods (p=0.001), which was absent in SNI (p=0.44), indicating destabilized fragility periods. High-frequency bands (beta and low-gamma) showed tonic increases throughout continuity and fragility periods in S1HL after SNI (beta: p=0.01, p=1.3\u00d710\u207b\u2079; low gamma: p=0.005, p=1.4\u00d710\u207b\u00b9\u2070), with milder increases in high-gamma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by detailed spectral analysis of LFP recordings from S1HL (5 Sham, 9 SNI) and PrL (6 Sham, 8 SNI). The statistical evidence is strong with significant treatment \u00d7 period interactions and appropriate post-hoc tests. The region-specificity (S1HL but not PrL) strengthens the interpretation that these changes relate to pain processing. The altered delta dynamics during fragility periods represent a novel finding that would not be detected by conventional sleep scoring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SNI mice showed more frequent local cortical arousals during NREMS without accompanying EMG activity. An activation index (AI, ratio of high-frequency to low-frequency power) was higher in SNI specifically during fragility periods (mixed-model ANOVA interaction p=0.039, post-hoc p=0.005). A subset of fragility periods continuing into NREMS contained intermittent AI peaks resembling those in microarousals (75.2% \u00b1 4.1% of microarousals showed such peaks). These AI peaks were accompanied by distinctly higher heart rates (mixed-model ANOVA peak \u00d7 period interaction p=0.007) and were more frequent after SNI (t-test p=0.02), following similar time-of-day dependence as classical microarousals. The increased occurrence was specific to S1HL, absent in PrL and contralateral EEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C62 describe a novel type of arousal event. The statistical support is adequate (mixed-model ANOVAs with appropriate factors, t-tests), though sample sizes for LFP recordings are modest (S1HL: 5 Sham, 9 SNI). The key strength is the convergence of multiple lines of evidence: (1) cortical activation (AI peaks), (2) autonomic activation (heart rate increases), (3) increased frequency in SNI, (4) anatomical specificity (S1HL), and (5) similarity to conventional microarousals. The interpretation that these represent \"local cortical arousals\" (C59-C62) is reasonable but somewhat inferential, as direct evidence of local vs. global cortical activation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A machine learning approach successfully predicted fragility and continuity periods online based on EEG/EMG recordings. The neural network was trained on 642,000 labeled 200-second chunks from 13 animals. Online detection of microarousals significantly exceeded chance prediction (fragility periods: p=0.0004; continuity periods: p=0.0028), validating the method for probing variations in evoked arousability from NREMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by the validation analysis comparing real vs. shuffled detection (n=12 animals for validation). The statistical evidence (comparison to percentile distributions from random shuffling) demonstrates that the online detection performs significantly better than chance. The method description is detailed (Figure 7, Figure 7\u2014figure supplement 1), though some technical details about network architecture and performance metrics (beyond comparison to chance) would strengthen the evaluation. The successful validation enables the subsequent closed-loop stimulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C66",
+      "C67"
+    ],
+    "result": "Closed-loop mechanovibrational stimulation revealed elevated sensory arousability in SNI mice. After SNI, wake-up probability in response to mild vibrations was elevated for both continuity and fragility periods, with highest values during fragility periods (mixed-model ANOVA: treatment p=0.0049, online period p=1.31\u00d710\u207b\u2078). This increase in sensory arousability was present across the entire light phase with conserved time-of-day dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C66, C67 are supported by closed-loop stimulation experiments (8 Sham, 8 SNI) with appropriate statistical analysis. The vibration intensity was carefully calibrated to produce approximately equal wake-up/sleep-through chances in Sham controls during continuity periods, providing a good baseline. The finding of elevated arousability in both continuity and fragility periods (no interaction) suggests a tonic increase in arousal susceptibility after SNI, complementing the phasic local cortical arousals. The time-of-day analysis strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Chronic pain in the SNI model preserved conventional sleep measures but resulted in elevated spontaneous and evoked arousability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is a summary statement supported by the convergence of findings from multiple result groups: preserved sleep architecture (C22-C27), increased local cortical arousals (C52-C62), and elevated sensory arousability (C66-C67). This represents the central conclusion of the manuscript and is well-supported by the data, though the term \"spontaneous arousability\" requires careful interpretation as conventional microarousal frequency was unchanged (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Microarousals in mice are defined as \u226416 s awakenings accompanied by movement activity in the EMG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 cites Franken et al., 1999 as the source for this definition and is consistently applied throughout the manuscript. This is a methodological definition that is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "There were no correlations between relative changes in gamma power and alterations in sleep architecture in individual mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by correlation analysis showing no relationship between gamma power changes and either microarousal frequency (R\u00b2=0.09, p=0.08) or total NREMS time (R\u00b2=0.02, p=0.36). This negative result is important as it suggests that elevated gamma power and local cortical arousals may be independent phenomena, or that the relationship is more complex than a simple linear correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose that infraslow fluctuations in brain excitability determine vulnerability of NREMS to both spontaneous and evoked arousals, and that sensory arousals and microarousals may have common mechanistic origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68, C72-C74 are interpretive and speculative, drawing on the observed relationships between the 0.02 Hz fluctuation and both spontaneous and evoked arousals. While the temporal associations are well-documented, the mechanistic claims about causality and common origins are not directly tested. The citations to prior work (L\u00e9na et al., 2004; Huang et al., 2006; Dvir et al., 2018; M\u00e1ty\u00e1s et al., 2018) provide some support, but these remain hypotheses requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The authors suggest that increased delta power and decreased activation index during fragility periods continuing into NREMS signal momentarily increased sleep depth, likely due to incompatibility between sigma and delta power in sensory thalamocortical loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 are interpretive and somewhat speculative. While the observation of increased delta power during fragility periods is supported by data (C45), the interpretation as \"increased sleep depth\" and the proposed mechanism involving thalamocortical loops (citing Fernandez et al., 2018) are not directly tested. The authors acknowledge this seems \"at odds\" with the vulnerability interpretation, suggesting some uncertainty in the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors provide extensive discussion of prior work on pain models, sleep disorders, and potential mechanisms, and propose that SNI in mice qualifies as a rodent model replicating physiological correlates of sleep disorders hidden behind normal sleep architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C92 are primarily citations of prior work and interpretive discussion. The citations appear accurate and appropriate. The proposal that SNI serves as a model for sleep disorders with preserved architecture (C89) is supported by the convergence of findings in this study, though it remains a proposal requiring further validation. The mechanistic speculations (C79, C80, C81, C83) are appropriately tentative and cite relevant literature. The comparisons to human insomnia (C86, C87) are reasonable but require caution given species differences.",
+    "result_type": "MINOR"
+  }
+]

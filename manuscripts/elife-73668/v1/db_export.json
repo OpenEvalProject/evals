@@ -1,0 +1,1333 @@
+{
+  "submission": {
+    "id": "a40a3c28-8e65-40ce-9454-8d78f23dee4b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:37:27.418617Z",
+    "updated_at": "2025-12-03T09:37:27.418617Z"
+  },
+  "content": [
+    {
+      "id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "submission_id": "a40a3c28-8e65-40ce-9454-8d78f23dee4b",
+      "content_type": "manuscript",
+      "content_text": "# Parallel processing by distinct classes of principal neurons in the olfactory cortex\n\n## Authors\n\n- Shivathmihai Nagappan<sup>1</sup> ([ORCID: 0000-0001-5910-040X](https://orcid.org/0000-0001-5910-040X))\n- Kevin M Franks<sup>1</sup> ([ORCID: 0000-0002-6386-9518](https://orcid.org/0000-0002-6386-9518)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology, Duke University Medical School Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding how distinct neuron types in a neural circuit process and propagate information is essential for understanding what the circuit does and how it does it. The olfactory (piriform, PCx) cortex contains two main types of principal neurons, semilunar (SL) and superficial pyramidal (PYR) cells. SLs and PYRs have distinct morphologies, local connectivity, biophysical properties, and downstream projection targets. Odor processing in PCx is thought to occur in two sequential stages. First, SLs receive and integrate olfactory bulb input and then PYRs receive, transform, and transmit SL input. To test this model, we recorded from populations of optogenetically identified SLs and PYRs in awake, head-fixed mice. Notably, silencing SLs did not alter PYR odor responses, and SLs and PYRs exhibited differences in odor tuning properties and response discriminability that were consistent with their distinct embeddings within a sensory-associative cortex. Our results therefore suggest that SLs and PYRs form parallel channels for differentially processing odor information in and through PCx.\n\n## Introduction\n\nThe brain contains a diverse array of neuron types that are each thought to play a specific role in neural circuit computations (Sanes and Masland, 2015; Kim et al., 2020; Yao et al., 2021). Understanding the specific role each neuron type plays will therefore provide mechanistic insight into what a neural circuit does and how it does it (Zeng and Sanes, 2017). Piriform cortex (PCx) is a three-layered allocortex with principal neurons primarily located in layer II. Superficial pyramidal (PYR) cells in deeper layer II receive afferent olfactory bulb (OB) inputs on their distal apical dendrites, dense excitatory intracortical inputs on their proximal apical dendrites, and top-down inputs from other brain regions on their basal dendrites. By contrast, semilunar (SL) cells in superficial layer II receive strong OB inputs on their distal apical dendrites, few, if any, excitatory intracortical inputs, and lack basal dendrites (Figure 1a; Heimer and Kalil, 1978; Haberly, 1983; Bekkers and Suzuki, 2013). These differences in input sources and local connectivity between SLs and PYRs have motivated predictions about how odor information is routed through and processed within PCx.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic of SL and pyramidal (PYR) connectivity and input sources within piriform cortex (PCx). (b) Coronal sections from a Ntng1Cre/Ai14 mouse brain showing tdTomato labeling from anterior to posterior PCx. tdTomato labeling is restricted to superficial layer II of PCx. Scale bar is 200 \u03bcm. (c) Whole-cell current-clamp recordings were obtained from acute brain slices isolated from Ntng1Cre/Ai14 mice. Example voltage responses to direct current injections for a Ntng1+ (tdTomato+) cell. (d) As in (a). but for a Ntng1- (unlabeled) cell. (e) Resting membrane potentials of Ntng1+ and Ntng1- cells (Ntng1+: \u201365.4 mV [\u201370,\u201360], n = 11 cells; Ntng1-: \u201377.0 mV [\u201380.6,\u201372.9], n = 7 cells; p=5.27 \u00d7 10\u20134, unpaired t-test). (f) Input resistances of Ntng1+ and Ntng1- cells (Ntng1+: 541 M\u03a9 [415, 669], n = 9 cells; Ntng1-: 166 M\u03a9 [104, 243], n = 8 cells; p=2.15 \u00d7 10\u20134, unpaired t-test). (g) Membrane time constants of Ntng1+ and Ntng1- cells (Ntng1+: 32.1 ms [27.7, 35.8], n = 11 cells; Ntng1-: 13.6 ms [11.2, 16.0], n = 8 cells; p=1.29 \u00d7 10\u20135, unpaired t-test). (h) Burst indices of Ntng1+ and Ntng1- cells (Ntng1+: 1.16 [0.926, 1.41], n = 8 cells; Ntng1-: 4.57 [3.12, 6.19], n = 8 cells; p=1.43 \u00d7 10\u20134, unpaired t-test). (i) Coronal section of anterior PCx from an experimental Ntng1Cre/Ai14 mouse showing selective and robust expression of the inhibitory opsin, Jaws, in SLs. Scale bar is 200 \u03bcm. (j) Schematic of recording probe and optic fiber positioning for opto-tagging (left). Histology showing actual positioning of the recording probe and optic fiber in PCx after both were painted with DiI (right). (k) Raster plots with trials aligned to the onset of each light pulse for six example units that were later categorized as either Jaws+ (top) or Jaws- (bottom). (l) Distribution of spontaneous spike rates for SLs (blue, n = 426 cells) and PYRs (black, n = 464 cells).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A series of coronal sections through a Ntng1Cre/Ai14 mouse showing Ntng1 expression patterns throughout the brain.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) A low titer of Cre-dependent GFP was injected into anterior piriform cortex (PCx) to sparsely label a small subset of Ntng1+ neurons. This allowed better visibility or GFP+ cell morphology and laminar location. Scale bar is 200 \u03bcm. (b) Quantification of the fraction of GFP+ cells that have SL morphology (half-moon-shaped somata, two prominent apical dendrites, no basal dendrites) and were located in layer IIa.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Left and middle: experimental schematic. Cre-dependent ChR2 was injected focally into anterior piriform cortex (PCx) of Ntng1Cre/Ai14 mice. Whole-cell voltage-clamp recordings were obtained from ChR2-expressing Ntng1+ (tdTomato+) and Ntng1- cells while illuminating the slice with blue (473 nm) light. Right: large, sustained photocurrents were recorded in Ntng1+/tdTomato+ cells (blue) but not in Ntng1-/tdTomato- cells (black). Disynaptic EPSCs were recorded in Ntng1- cells. (b) Left: experimental schematic. Light-evoked synaptic responses in Ntng1- cells to strong, brief (1 ms) light pulses were recorded while holding the cell at \u201370 mV, to isolate excitatory postsynaptic currents, and at +5 mV, to isolate inhibitory postsynaptic currents. Right: light-driven activation of Ntng1+/ChR2+ cells evoked large, transient inward and outward responses in Ntng1- cells at \u201370 mV and +5 mV, respectively. Responses at both holding potentials were completely blocked by glutamate receptor antagonists (10 \u03bcM NBQX and 10 \u03bcM CPP). Ntng1+ cells are therefore glutamatergic. (c) Experimental schematic. As in (a), but whole-cell recordings were obtained from Ntng1+ cells that were located away from the injection site (i.e., cells that were not expressing ChR2). (d) Example EPSC traces evoked in Ntng1+/ChR2- (blue) and Ntng1- (black) cells by light-driven activation of Ntng1+/ChR2+ cells. (e) Summary plot of EPSC amplitude in Ntng1+ (25.3 pA [16.4, 34.8], n = 12 cells, three mice) and Ntng1- cells (429 pA [234, 647], n = 13 cells, three mice) in response to light-driven activation of Ntng1+/ChR2+ cells. (f) Experimental schematic. As in (a) and (c) but a non-conditional ChR2 was injected focally into anterior PCx. (g) Example EPSC traces evoked in Ntng1+/ChR2- (blue) and Ntng1-/ChR2- (black) cells by light-driven activation of all ChR2+ cells. (h) Summary plot of EPSC amplitude in Ntng1+ (187 pA [125, 245], n = 14 cells, three mice) and Ntng1- cells (1060 pA [771, 1402], n = 12 cells, three mice) in response to light-driven activation of all ChR2+ cells.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Fraction of recorded cells that were categorized as semilunars (SLs) in each experiment for data shown in Figures 4 and 5. (b) Histology from 6/10 mice that were used in the experiments shown in Figures 4 and 5 showing Ntng1+ cells (tdTomato+) expressing Jaws (YFP+).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Selection criteria for identifying light-responsive cells \u2013 cells were categorized as SL if (1) their spike counts during the light-on epoch of 300 ms was reliably (area under the receiver operating characteristic curve [auROC] < 0.5) and significantly (Wilcoxon rank-sum test, p<1 \u00d7 10\u20137) lower than during the 300 ms epoch prior to light onset and (2) their light-evoked suppression occurred within 10 ms of light onset (change point < 10 ms). (b) Distribution of burst indices for SLs (blue) and pyramidals (PYRs) (black). Burst indices for each cell were determined by dividing the median interspike interval (ISI) during a 4 s period between odor delivery (spontaneous spiking) by the mean ISI. Although there were more PYRs that were \u2018bursty,\u2019 the distributions for SLs and PYRs were largely overlapping, thus burst indices could not be used as an additional method for cell classification. (c) Heatmaps of trial-averaged responses during opto-tagging as a function of time for all SLs and PYRs used in the odor response properties characterization experiments. Across all recorded cells, SLs show rapid and strong suppression during the light-on epoch. (d) Additional example cells with low spontaneous firing rates that were reliably identified as SLs using inhibitory opto-tagging. (e) Heatmaps of trial-averaged responses during opto-tagging as a function of time for all SLs and PYRs used in the optogenetic suppression experiments. In 5/9 experiments, SLs were identified using the criteria described in (a) (top). In the remaining 4/9 experiments, we delivered 60 light pulses to opto-tag SLs, thus we could not reliably determine the change points for these cells. However, we still observe rapid and strong suppression in cells categorized as SLs in these experiments. (f) Heatmaps of trial-averaged responses during opto-tagging as a function of time for all SLs and PYRs used in the chemogenetic suppression experiments. (g) Raw voltage traces, high-pass filtered at 500 Hz using a three-pole Butterworth filter from a representative experiment (showing 12/32 channels). Red bars indicate light pulses. We do not observe light-induced artifacts.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (a) An example spike waveform with annotated characteristics used in the analysis (left). Waveform characteristics of semilunars (SLs) (blue) and pyramidals (PYRs) (black) from one example experiment (right). There appears to be a cluster of high-firing rate cells that have narrow spike width in the top-right corner of the 3D plot. However, some of these cells are SL, which we have shown in slice recordings to be glutamatergic (Figure 1\u2014figure supplement 3b). (b) Spike widths of all recorded SLs and PYRs plotted against their spontaneous firing rates (left). The percentage of cells across all experiments that have spike width less than 0.4 s (Sturgill and Isaacson, 2015) is 10.7% (middle and right). (c) Spike asymmetry of all recorded SLs and PYRs plotted against their spontaneous firing rates (left). The percentage of cells across all experiments that have spike asymmetry greater than 0.1 is 3.31% (middle and right).\n\nIn the prevailing model, odor information flows sequentially through SLs and PYRs and is processed hierarchically, first by SLs and then by PYRs. Support for this sequential model stems from observations that SLs receive stronger OB inputs than PYRs but little or no intracortical excitatory inputs, and that SLs respond 2\u20134 ms earlier than PYRs following electrical stimulation of OB mitral cell axons in the lateral olfactory tract (LOT) (Ketchum and Haberly, 1993; Suzuki and Bekkers, 2006; Suzuki and Bekkers, 2011; Wiegand et al., 2011; Choy et al., 2017). According to this model, SLs are thought to be the primary recipients of OB input, and their activity necessary to recruit PYRs. Alternatively, SLs and PYRs may form parallel processing streams, such as described in various sensory and motor neocortices, where principal neurons projecting to distinct downstream regions encode different features of a stimulus or are differentially modulated during task learning (Glickfeld et al., 2013; Chen et al., 2015; Economo et al., 2018; Williamson and Polley, 2019). That SLs and PYRs project to distinct downstream regions (Diodato et al., 2016; Mazo et al., 2017) lends support to a parallel model. Finally, SLs and PYRs may be embedded within a parallel loop where mitral cells project onto both SLs and PYRs, and SLs additionally project onto PYRs, similar in organization to the entorhinal cortex-dentate gyrus-CA3 circuit in the hippocampus (Hainmueller and Bartos, 2020).\n\nPCx is a sensory-associative cortex, containing both afferent OB inputs and recurrent or intracortical excitatory inputs (Johnson et al., 2000; Franks et al., 2011; Suzuki and Bekkers, 2011; Wiegand et al., 2011; Hagiwara et al., 2012). The dual afferent and associative inputs provide PCx neurons the substrate to integrate elemental sensory information from the OB to form distributed odor-specific neuronal ensembles and transform these ensembles through the recurrent, associative network (Barkai et al., 1994; Haberly, 2001; Poo and Isaacson, 2011; Bolding and Franks, 2018; Bolding et al., 2020; Pashkovski et al., 2020). SLs and PYRs could represent the two ends of the PCx sensory-associative continuum, where SLs simply combine afferent OB inputs while PYRs form dynamic odor ensembles that can be transformed through the recurrent, associative network. If so, we might expect SL odor representations to reflect sensory information more faithfully and PYR odor representations to benefit from associative learning mechanisms and be more reliable and discriminable.\n\nWe recorded extracellularly from layer II PCx neurons in awake, head-fixed NetrinG1Cre (Ntng1Cre) mice that selectively express Cre-recombinase in SLs (Bolding et al., 2020). This allowed us to distinguish SLs from PYRs in populations of layer II PCx neurons and to selectively manipulate SL activity. We found that neither optogenetic nor chemogenetic suppression of SLs affected PYR odor responses and that SLs and PYRs responded with similar latencies, arguing against the sequential model. SLs were more broadly tuned, and odors were more discriminable in PYRs than in SLs, suggesting that distinct principal neuron types in PCx differentially encode odors, and in ways that reflect their local connectivity profiles. Together, these findings support a parallel processing model, where SLs and PYRs both receive direct OB inputs and transform the information to varying degrees, perhaps for use in different behavioral contexts by their distinct downstream targets.\n\n## Results\n\n### Ntng1Cre transgenic mouse enables selective targeting of SLs in vivo\n\nWe recently generated a knock-in mouse line that expresses Cre-recombinase in Ntng1-expressing (Ntng1+) cells throughout the brain (Bolding et al., 2020; Figure 1\u2014figure supplement 1). In PCx, Cre-expressing cells were largely restricted to the superficial half of layer II (i.e., layer IIa), where SLs are located (Figure 1b). Ntng1+ cells displayed hallmark morphological characteristics of SLs: half-moon-shaped somata, two prominent apical dendrites emerging directly from the cell body and no basal dendrites (percent Ntng1+ cells with SL morphology, mean \u00b1 SD: 87.9% \u00b1 3.54%, n = 3 mice; Figure 1\u2014figure supplement 2). Additionally, Ntng1+ and Ntng1- cells exhibited the intrinsic biophysical properties described in SLs and PYRs, respectively (Figure 1c\u2013h; Suzuki and Bekkers, 2006; Suzuki and Bekkers, 2011). Previous studies have reported that SLs form excitatory synaptic connections onto PYRs and local inhibitory interneurons but receive few intracortical excitatory inputs (Suzuki and Bekkers, 2011; Choy et al., 2017). To confirm that this synaptic organization was also true for Ntng1+ and Ntng1- cells, we injected Cre-dependent adeno-associated viruses (AAVs) into the PCx of Ntng1Cre/Ai14 mice to express channelrhodopsin-2 (ChR2) in a focal subset of Ntng1+ cells (Figure 1\u2014figure supplement 3a). We then obtained whole-cell voltage-clamp recordings from uninfected Ntng1+ and Ntng1- cells located away from the infection site (Figure 1\u2014figure supplement 3c). We observed large, rapid inward currents in all recorded Ntng1- cells in response to brief (1 ms) light pulses but almost no inward currents in Ntng1+ cells (Figure 1\u2014figure supplement 3d and e). These light-evoked responses were completely blocked by glutamate receptor antagonists (NBQX and CPP) (Figure 1\u2014figure supplement 3b). Thus, Ntng1+ cells make glutamatergic synapses onto Ntng1- cells, but not onto other Ntng1+ cells, consistent with the synaptic connectivity of SLs and PYRs. Taken together, the Ntng1Cre mouse expresses Cre-recombinase in a subpopulation of PCx principal neurons whose laminar, morphological, intrinsic, and local connectivity properties are congruent with those of SLs. Therefore, henceforth we refer to Ntng1+ and Ntng1- cells within layer II of PCx as SLs and PYRs, respectively.\n\nAlthough SLs do not receive excitatory inputs from other SLs, it is not known if they receive excitatory inputs from other, non-SL PCx neurons. We therefore obtained whole-cell voltage-clamp recordings in mice focally injected with non-conditional AAVs to express ChR2 in all PCx neurons (Figure 1\u2014figure supplement 3f). We observed even larger rapid inward currents in PYRs, consistent with the dense recurrent connectivity between PYRs. Interestingly, we now observed small inward currents in SLs, indicating that SLs do receive some intracortical excitatory inputs from other PCx neurons, although these were 5.4\u00d7 weaker than inputs received by PYRs (Figure 1\u2014figure supplement 3g and h).\n\nTo distinguish between SLs and PYRs in vivo, we first injected Cre-dependent AAVs expressing the inhibitory opsin, Jaws (Chuong et al., 2014), into anterior PCx of Ntng1Cre/Ai14 mice (Figure 1i, Figure 1\u2014figure supplement 4b). After allowing 3\u20134 weeks for Jaws expression, we recorded the extracellular spiking activity of layer II PCx neurons at the injected site in awake, head-fixed mice (Figure 1j). We used an optogenetic tagging strategy to classify recorded cells as SLs. We presented a series of brief 635 nm light pulses (1000 pulses, 300 ms, 1 Hz) to suppress spiking in Ntng1+ cells. Cells were classified as SLs if their activity was reliably (i.e., spike rate greater during baseline than during the light-on period, two-tailed t-test, p<1 \u00d7 10\u20137) and rapidly (i.e., suppression latency determined using change point analysis <10 ms) suppressed by light (Wolff et al., 2014; Rowland et al., 2018; Figure 1j and k, Figure 1\u2014figure supplement 5). Across all experiments, approximately half of the recorded cells were SLs (Figure 1\u2014figure supplement 4a). To minimize false negatives due to poor infection and/or mistargeted recordings, we omitted experiments in which less than 25% of cells were suppressed. We previously found that only 7% of all recorded PCx neurons, and fewer than 1% of layer II PCx neurons, were GABAergic inhibitory neurons (Bolding and Franks, 2018). The remaining units were therefore classified as PYRs. SLs had higher spontaneous spike rates than PYRs (median SL: 1.99 Hz, n = 426 cells; median PYR: 1.03 Hz, n = 464 cells; p=5.08 \u00d7 10\u201313, unpaired t-test; Figure 1l), indicating that we can resolve differences in spiking activity between SLs and PYRs. Importantly, our ability to tag neurons with very low spontaneous firing rates (e.g., Figure 1k, Figure 1\u2014figure supplement 5d) indicate that our optogenetic tagging protocol was robust for identifying cells with low spontaneous firing rates. We did not find systematic differences in spike waveforms between SLs and PYRs (Figure 1\u2014figure supplement 6).\n\n### Optogenetic suppression of SLs does not weaken or reshape PYR odor responses\n\nWe first asked if odor information from the OB is processed sequentially in PCx, in which case PYRs would require SL activity to respond. We optogenetically suppressed SLs while recording baseline and odor-evoked activity in PYRs (Figure 2a). To maximize the area of PCx suppressed, we injected Cre-dependent Jaws in three-four sites along its anterior-posterior axis (Figure 2b, Figure 2\u2014figure supplement 1b) and used a 400 \u03bcm optic fiber, positioned at an angle to the recording probe to deliver light (Figures 1j and 2c). We opto-tagged SLs at the end of each experiment (fraction of identified SLs, mean \u00b1 SD: 0.458 \u00b1 0.0996, n = 9 experiments, six mice, Figure 2\u2014figure supplement 1a). Every 10 s, we delivered 1-s-long odor pulses, triggered on exhalation (Figure 2d). On alternating odor trials, we delivered a 3-s-long light pulse, spanning 1 s before to 1 s after odor presentation to suppress SLs. Spiking activity was aligned to the inhalation phase of the first sniff following odor presentation (Figure 2d; Bolding and Franks, 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig2-v1.jpg)\n\n**Figure 2.:** (a) SLs were selectively optogenetically suppressed during recording to reveal the role of SL input on PYRs. (b) The inhibitory opsin, Jaws, was injected in three-four sites along the anterior-posterior axis (left to right) of PCx to maximize SL suppression throughout PCx. Scale bar is 200 \u03bcm. (c) Schematic of experimental setup for recording odor responses from awake, head-fixed Ntng1Cre mice. (d) Example respiration trace from one odor trial (top). A 1-s-long odor pulse (gray) is triggered on exhalation. Spiking activity was aligned to the onset of the inhalation of the first subsequent sniff (brown). Example trial-averaged SL and PYR responses (PSTHs) to the control stimulus and two different odors. (e) Average spontaneous spike rate of SLs (blue) and PYRs (black) during light off (solid line) and light on (dotted line) trials. (f) Example odor response from one SL and one PYR cell during light-on (magenta trace) and light-off (black trace) trials. The magenta bar indicates when the light was on, and the gray bar indicates when the odor was presented. (g) Heatmaps of trial-averaged spike rates in the first sniff for SL and PYR cell-odor pairs from two example experiments, one with complete (left) and one with incomplete (right) SL suppression. Light-on and light-off trials are plotted separately. (h) Odor-evoked response peaks for significantly activated SLs (blue, n = 101 cell-odor pairs) and PYRs (black, n = 97 cell-odor pairs) during light-on trials plotted against light-off trials. Median response peak is shown in magenta. (i) Mean odor-evoked response peaks within each experiment for each condition for all activated SLs and PYRs. Each point is an experiment (n = 9). (j) Pearson\u2019s correlation coefficients of response vectors between the light-on and light-off conditions (off-on, n = 5 odors) or in just the light-off condition (off-off, n = 5 odors) for each odor. Firing rates in the first sniff following odor presentation for individual neurons were averaged within the two trial sets (light-off and light-on). Then, the pseudopopulation response vector consisting of trial-averaged light-off responses was correlated with the pseudopopulation response vector consisting of trial-averaged light-on responses. (k) Odor classification accuracy determined using a linear support vector machine for SLs (blue) and PYRs (black) for two example experiments as a function of cell number in the light-on (thick line) and light-off (thin line) conditions separately. The decoder was asked to classify responses (spike counts in a 500 ms time window beginning at odor inhalation) on a single trial to the panel of five odors. (l) Summary plot for within condition decoding (as in k) for a size-matched population of SLs and PYRs for individual experiments. Each point is an experiment (n = 9). (m) Odor classification accuracy for SLs and PYRs in each experiment, where the classifier was trained on trials from the light-off condition and tested on trials from the light-on condition. Each point is an experiment (n = 9).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Fraction of recorded cells that were categorized as semilunars (SLs) in each experiment. (b) Histology from 4/6 mice that were used in the optogenetic suppression experiments showing robust Jaws expression (YFP+) along the anterior-posterior axis of piriform cortex (PCx).\n\nDuring a 500 ms period before odor onset, we observed strong and sustained light-evoked suppression of SLs, as well as a slight decrease in PYR spike rates, indicating that SLs contribute to spontaneous PYR activity (Figure 2e). We then examined the odor-evoked spike rates of SLs and PYRs. To avoid confounds of odor-evoked suppression, we first only considered \u2018activated\u2019 responses during the light-off trials (response index > 0, see Materials and methods). During light-on trials, odor-evoked activity, measured as response peaks in a 300 ms period after odor inhalation, was markedly suppressed in SLs but remained unchanged in PYRs (Figure 2f and g). This was the case when we only considered robustly activated responses (median peak firing rate for significantly activated responses [p<0.05, Wilcoxon rank-sum test]: SL, light-off: 29.7 Hz, light-on: 13.0 Hz; n = 101 cell-odor pairs; p=2.71 \u00d7 10\u201312, paired t-test; PYR, light-off: 24.9 Hz, light-on: 28.2 Hz; n = 97 cell-odor pairs; p=0.234; Figure 2h), or all activated responses (within experiment mean peak firing rate of all active responses averaged across experiments [lower and upper limit of 95% bootstrapped confidence intervals]: SL, light-off: 17.4 Hz [14.6, 20.1], light-on: 7.47 Hz [5.49, 9.76]; n = 9 experiments; p=6.51 \u00d7 10\u20135, paired t-test; PYR, light-off: 14.0 Hz [10.6, 17.7], light-on: 12.9 Hz [9.27, 16.6]; p=0.0686; Figure 2i).\n\nAlthough the strength of individual activated PYR responses was unaffected by SL suppression, subtle changes in odor responses, including odor-evoked suppression, may alter the pattern of odor-evoked activity across the population. To quantify changes in the population response pattern of SLs and PYRs, we determined the correlation between trial-averaged population responses for each odor in the light-on and light-off conditions. Responses were spike count vectors in the first sniff after odor onset for all recorded SLs and PYRs. As a control, we determined the correlation between trial-averaged population responses for each odor in alternating light-off trials. SL response patterns across odors were significantly altered in the light-on trials compared to the light-off (off-off, 0.895 [0.888, 0.901]; on-off, 0.583 [0.526, 0.633]; unpaired t-test, p=5.10 \u00d7 10\u20136; Figure 2j), while PYR response patterns were unchanged (off-off, 0.834 [0.816, 0.861]; on-off, 0.838 [0.792, 0.876]; unpaired t-test, p=0.882).\n\nWe next used a linear support vector machine (SVM) trained and tested on single-trial spike count vectors to classify responses to the panel of presented odors. Odor identity decoding within each condition revealed a substantial decrease in SL performance in the light-on condition, with no change in PYR performance (SL, p=0.0116; PYR, p=0.919, paired t-test; Figure 2k and l). If anything, in an experiment where SL suppression was complete and decoding performance decreased to chance in the light-on condition, decoding in PYRs improved, perhaps due to an increase in the signal-to-noise ratio in the absence of SL input (Figure 2k, bottom). These data indicate that odor responses in PYRs can be accurately classified when SLs are suppressed, but not whether PYR representations remain unchanged across conditions. To address this question, we performed a decoding analysis where the classifier was trained on light-off trials and then tested on light-on trials. In line with the correlation analysis, we observed a substantial decrease in SL decoding accuracy with no significant change in PYR decoding accuracy (SL, p=0.0035; PYR, p=0.236, paired t-test; Figure 2m), indicating that odor-evoked population activity in PYRs is independent of SL input.\n\n### Chemogenetic suppression of SLs does not weaken or reshape PYR odor responses\n\nThe mouse PCx is a large structure measuring ~4 mm along its anterior-posterior axis, with long-range intracortical connectivity (Johnson et al., 2000; Franks et al., 2011; Hagiwara et al., 2012). To assuage concerns that our optogenetic SL suppression may be too spatially restricted, we repeated the SL suppression experiment using a chemogenetic approach (Figure 3a). AAVs expressing a Cre-dependent inhibitory DREADD, hm4di, were injected at four sites along the anterior-posterior axis of PCx (Figure 3b, Figure 3\u2014figure supplement 1b). At one of the sites, we co-injected AAVs expressing Cre-dependent Archaerhodopsin (Arch) to opto-tag SLs (fraction of identified SLs, mean \u00b1 SD: 0.546 \u00b1 0.146; n = 5 experiments, four mice, Figure 3\u2014figure supplement 1a). Following administration of the DREADD agonists, CNO or Compound 21 (C21), we observed a gradual and marked decrease in SL spontaneous activity and a concomitant small decrease in PYR spontaneous activity (Figure 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig3-v1.jpg)\n\n**Figure 3.:** (a) SLs were selectively suppressed throughout PCx during recordings using the inhibitory DREADD, hm4di. (b) Coronal sections showing selective expression of hm4di-mCherry and Archaerhodopsin (Arch) in SLs. AAVs expressing Cre-dependent hm4di was injected in four sites along the anterior-posterior axis (left to right) of PCx to maximize SL suppression. Arch was co-injected into one of the sites for opto-tagging. Scale bar is 200 \u03bcm. (c) The average spontaneous spike rate of SLs (left) and PYRs (right) as a function of trials from the experimental and two control groups. CNO/C21 was administered intraperitoneally during the recording, in the 21st trial (dotted line). Confidence intervals are shown. (d) Odor response of an example SL and PYR from an experimental mouse (hm4di/Arch + CNO/C21). CNO/C21 trials are shown in magenta and baseline trials in black. Each tick is a spike, and each row of ticks is a trial. (e) Heatmaps of trial-averaged spike rates in the first sniff for SL and PYR cell-odor pairs from an example experiment with baseline and CNO/C21 trials plotted separately. (f) Odor-evoked response peak firing rates for significantly activated SLs (blue, n = 124 cell-odor pairs) and PYRs (black, n = 96 cell-odor pairs) during CNO/C21 trials plotted against baseline trials. Median response peak is shown in magenta. Only the experimental group (hm4di/Arch + CNO/C21) is plotted. (g) Mean odor-evoked response peak firing rates within experiments for all activated SLs and PYRs. Each point is an experiment (n = 5). Only the experimental group (hm4di/Arch + CNO/C21) is plotted. (h) Correlation coefficients of response vectors between baseline and CNO/C21 trials (filled circles, n = 6 odors) or alternating baseline trials (open circles, n = 6 odors) for each odor for SLs (left) and PYRs (right) for the experimental (magenta) and two control groups (green and orange).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Fraction of recorded cells that were categorized as semilunars (SLs) in each experiment. (b) Histology from 4/4 mice from the experimental group showing robust hm4di expression (mCherry+) along the anterior-posterior axis of piriform cortex (Pcx). (c) Histology from one example mouse from the control group where Cre-dependent mCherry was injected instead of hm4di.\n\nWe examined SL and PYR odor-evoked spike rates before (trials 2\u201320) and after (trials 41\u201359) CNO/C21 administration, again only considering cells with activated responses in the baseline condition. As with the optogenetic suppression experiments, odor-evoked response peaks in SLs were lower after CNO/C21 injection, while PYR responses were largely unaffected (Figure 3d and e). This was the case for both robustly activated responses (median peak firing rate: SL, baseline: 14.8 Hz, CNO/C21: 6.38 Hz; n = 124 cell-odor pairs; paired t-test, p=0.0086; PYR, baseline: 18.5 Hz, CNO/C21: 17.1 Hz; p=0.0338; n = 96 cell-odor pairs; Figure 3f), and for all activated responses (within experiment mean peak firing rate averaged across experiments: SL, baseline: 14.6 Hz [11.6, 19.0], CNO/C21: 10.7 Hz [8.49, 13.3]; n = 5 experiments; paired t-test, p=0.0101; PYR, baseline: 15.1 Hz [10, 22.1], CNO/C21: 12.3 Hz [8.04, 18.1]; p=0.285; Figure 3g).\n\nTo determine if PYR population odor response patterns were altered after hm4di-mediated suppression of SLs, we calculated the correlation between trial-averaged responses of SLs and PYRs for each odor before and after CNO/C21 injection. As a control, we calculated the correlation between trial-averaged responses for each odor in alternating baseline trials. Responses measured before and after CNO/C21 were markedly different in SLs (baseline-baseline, 0.944 [0.920, 0.953]; CNO/C21-baseline, 0.300 [0.220, 0.393]; p=1.46 \u00d7 10\u20137, unpaired t-test; Figure 3h). PYR responses also changed after CNO/C21 administration (baseline-baseline, 0.950 [0.913, 0.968]; CNO/C21-baseline, 0.729 [0.7, 0.759]; p=2.53 \u00d7 10\u20136; Figure 3h), although this difference was substantially smaller than that observed for SLs (CNO/C21-baseline for SLs versus PYRs, p=9.34 \u00d7 10\u20136, unpaired t-test). However, unlike the optogenetic suppression experiments in which we compared alternating light-on and light-off trials, the chemogenetic suppression experiments required comparing responses before and after CNO/C21 had taken effect, which was typically 30 min and 20 trials later.\n\nTherefore, to determine the extent to which the changes we observed after CNO/C21 administration in both SLs and PYRs were directly due to the suppression of SL activity by the activation of hm4di, rather than adaptation, desensitization, attentional changes, or repeated odor exposure (Jacobson et al., 2018), we recorded from Ntng1Cre mice that were injected with Cre-dependent mCherry and Arch, for 60 trials without injecting CNO or C21 (fraction of identified SLs, mean \u00b1 SD: 0.449 \u00b1 0.146, n = 6 experiments, four mice, Figure 3\u2014figure supplement 1a and c). Both SL and PYR responses were decorrelated between the early (trials 2\u201320) and later trials (trials 41\u201359), indicating that some changes in response patterns occur with time or following repeated odor presentations (SLs, early-early, 0.952 [0.943, 0.969]; late-early, 0.915 [0.897, 0.934]; p=0.0041; PYRs, early-early, 0.930 [0.910, 0.955]; late-early, 0.849 [0.815, 0.884]; p=6.67 \u00d7 10\u20134; Figure 3h). Additionally, in a separate set of mice injected with AAVs expressing mCherry and Arch, we administered CNO/C21 to account for any nonspecific, hm4di-independent effects of CNO/C21 (fraction of identified SLs, mean \u00b1 SD: 0.545 \u00b1 0.229, n = 3 experiments, three mice). Similar to the previous control, we found that the response patterns changed between the baseline and CNO/C21 conditions in both SLs and PYRs (SLs, baseline-baseline, 0.953 [0.944 0.961]; CNO/C21-baseline, 0.852 [0.824, 0.880]; p=1.23 \u00d7 10\u20134; PYRs, baseline-baseline, 0.926 [0.893, 0.949]; CNO/C21-baseline, 0.747 [0.653, 0.823]; p=0.0052; Figure 3h). Importantly, the changes in SL responses in the experimental group (hm4di/Arch + CNO) were significantly and substantially greater than the changes in the mCherry/Arch + CNO control group (CNO/C21-baseline for SLs in hm4di/Arch + CNO vs. mCherry/Arch + CNO, p=8.79 \u00d7 10\u20137; Figure 3h), while changes in PYR responses in the experimental and control groups were comparable (CNO/C21-baseline for PYRs in hm4di/Arch + CNO vs. mCherry/Arch + CNO, p=0.491), indicating that the effect we observed in PYRs was not due to hm4di-mediated suppression of SLs.\n\nIn summary, SL responses were substantially degraded following hm4di activation while effects on PYR responses were negligible. Thus, consistent with the optogenetic suppression experiments, PYR odor responses are largely independent of SL input.\n\n### SLs and PYRs have similar response latencies\n\nNext, we determined whether odor-evoked activity in SLs preceded that in PYRs, another prediction of the sequential model. We recorded the odor responses of SLs and PYRs to a panel of 10 odors in a separate set of mice (fraction of optogenetically identified SLs, mean \u00b1 SD: 0.486 \u00b1 0.142; n = 15 experiments, 10 mice). We measured the time from inhalation onset to both the response peak (Figure 4a) and response onset (i.e., when the odor-evoked spike rate exceeded 2 SD above baseline activity) in a 300 ms time window after inhalation onset for each cell-odor pair (Figure 4c). Only activated responses (response index > 0) were analyzed. In both measures, the distributions of response latencies of SLs and PYRs were similar (median latency to peak: SL, 59.0 ms; PYR, 57.0 ms; Wilcoxon rank-sum test: p=0.199; median onset latency: SL, 38.2 ms; PYR, 38.2 ms; Wilcoxon rank-sum test: p=0.587, Figure 4b and d). Furthermore, the performance of SLs and PYRs in a classifier trained on spike counts in a 10 or 30 ms sliding window, beginning with inhalation onset, were equivalent (Figure 4e). This indicates that odor information accumulates at the same rate in SLs and PYRs. Taken together, our data do not support a sequential activation model in which SL activity precedes PYR activity (limitations of our latency analyses are considered in Discussion).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig4-v1.jpg)\n\n**Figure 4.:** (a) SL and PYR odor responses from one example experiment sorted by latency to response peak. Dotted line at t = 0 s marks inhalation onset. Magenta dots indicate the time of response peaks. (b) Cumulative distribution of latencies to peak for active (response index > 0) SL (blue, n = 1352) and PYR (black, n = 1305) cell-odor pairs. Inset shows histogram of latencies to peak within 100 ms of inhalation onset. (c) As in (a) but sorted by onset latencies. Magenta dots indicate the time at which each odor response reaches 2 SD above pre-odor baseline. (d) As in (b) but showing onset latencies for SL (blue, n = 918) and PYR (black, n = 865) cell-odor pairs. (e) Odor classification accuracy using a linear support vector machine in a sliding window of either 30 ms or 10 ms (inset).\n\n### Odor response properties of SLs and PYRs\n\nWe then asked if and how SLs and PYRs differentially encode odors. If the dense intracortical inputs received by PYRs facilitate the stabilization of odor representations, then PYRs should be more odor selective, their responses less variable across trials, and more discriminable between different odors. We first examined the distributions of activated and suppressed responses of SLs and PYRs, defined using response indices. A value of 1 or \u20131 indicates that an ideal observer can perfectly discriminate an increase or decrease in firing rate relative to baseline (pre-odor sniff) activity. Both cell types exhibited similar patterns of odor-activated and -suppressed responses but SLs had slightly more suppressed odor responses than PYRs (Figure 5a and b), likely due, in part, to their higher baseline firing rates.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig5-v1.jpg)\n\n**Figure 5.:** (a) Heatmaps of spike rates in the first sniff and response indices for cell-odor pairs from an example experiment for SLs and PYRs sorted by number of activated responses. (b) Distribution of response indices for SL (blue, n = 4260) and PYR (black, n = 4640) cell-odor pairs across all experiments. (c) Distribution of lifetime sparseness for SLs (blue, n = 426 cells) and PYRs (black, n = 464 cells). (d) Population sparseness for SL and PYRs. Each circle is the average across experiments for an odor (n = 10 odors). (e) Trial-by-trial z-scored spike count correlation (Pearson\u2019s) matrices sorted by odor for SLs and PYRs. Correlation matrices were generated for each experiment individually and then averaged across experiments. (f) Mean correlation across trials within each odor (circles) for SLs (blue) and PYRs (black) and between odors (crosses). (g) Principal components analysis was performed on z-scored SL (left) and PYR (right) pseudopopulation responses. Responses were projected onto the first three principal components. Each colored sphere represents an odor centered on the mean and encompasses one standard deviation. Colored dots indicate individual trials. (h) Distribution of Euclidean distances between the mean of the first six principal components for pairs of odors for SLs (blue) and PYRs (black). Distances are shown as confusion matrices on the right. (i) SL (blue) and PYR (black) odor classification accuracy determined using a linear support vector machine as a function of pseudopopulation size. The decoder was asked to classify responses on a single trial to the panel of 10 odors. Classification accuracy was averaged across 100 iterations for each pseudopopulation size. Dashed line indicates chance performance. Confusion matrices, averaged across 100 iterations, on the right show the probability that an odor was predicted.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73668/elife-73668-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Mean firing rate in the first sniff for SLs and PYRs in light-on and light-off trials. Cells were identified as \u2018activated\u2019 (area under the receiver operating characteristic curve [auROC] > 0.5 and Wilcoxon rank-sum test p<0.05), \u2018suppressed\u2019 (auROC < 0.5 and Wilcoxon rank-sum test p<0.05) or \u2018no response\u2019 (auROC = 0.5) based on their responses in the light-off trials. There is a slight increase in the firing rate of PYRs that were suppressed in the light-off trials (off: 1.33 Hz [0.982, 1.76], on: 2.14 Hz [1.50, 2.85]; p=0.0037, paired t-test). (b) Distribution of response indices for PYRs in the light-off (black) and light-on (magenta) trials. (c) The mean lifetime sparseness across experiments for PYRs does not change during light-on trials (off: 0.491 [0.451, 0.534], on: 0.527 [0.502, 0.554]; p=0.286, paired t-test). The population sparseness increases slightly (off: 0.703 [0.689, 0.718], on: 0.738 [0.722, 0.755]; p=0.0284, paired t-test). (d) The correlation structure of PYR responses does not change during light-on trials. (e) The mean correlation within odor (p=0.600, paired t-test) and between odors (p=0.603, paired t-test) does not change during light-on trials. (f) The distance between pairs of odors in principal component space for PYR responses does not change during light-on trials (p=0.525, paired t-test). (g) Distribution of Euclidean distances between the mean of the first six principal components for pairs of odors for PYRs in the light-off (black) and light-on (magenta) conditions.\"\n\nWe determined the odor selectivity of SLs and PYRs by calculating a lifetime sparseness value for each cell, which describes its firing rate distribution across the panel of odors. A value of 0 means the cell responded identically to all odors, and a value of 1 means the cell responded to only one odor. SLs had significantly lower lifetime sparseness values than PYRs, indicating that SLs are less odor selective than PYRs (mean lifetime sparseness: SL, 0.434 [0.414, 0.458], n = 426 cells; PYR, 0.558 [0.536, 0.581], n = 464 cells; p=2.61 \u00d7 10\u201314, unpaired t-test; Figure 5c). We also calculated the population sparseness for SLs and PYRs, which describes the firing rate distribution of the population to each odor. Here, a value of 0 means all cells contributed equally to the population odor response, and a value of 1 means the population odor response was driven by just one neuron. The SL population response to each odor was significantly less sparse than the PYR population response (SL, 0.686 [0.681, 0.691]; PYR, 0.755 [0.737, 0.771]; n = 10 odors; p=1.61 \u00d7 10\u20136, unpaired t-test; Figure 5d). Together, these data indicate that SLs are less odor selective and their population responses less sparse than PYRs.\n\nWe next compared the reliability and discriminability of SL and PYR odor responses. We used z-scored single-trial population response vectors to generate trial-by-trial correlation matrices for SLs and PYRs (Figure 5e). We calculated the mean correlation across trials within each odor as a measure of response reliability, and the mean correlation between different odors as a measure of odor discriminability. By this metric, response reliability was similar between SLs and PYRs (SL, 0.474 [0.452, 0.497]; PYR, 0.499 [0.472, 0.525]; n = 10 odors; p=0.191, unpaired t-test), but odors were slightly more discriminable in PYR responses (SL, 0.266 [0.254, 0.279]; PYR, 0.238 [0.220, 0.253]; p=0.0193; Figure 5f).\n\nTo further investigate the discriminability of odor responses, we performed principal components analysis (PCA) and, for visualization, projected SL and PYR z-scored pseudopopulation responses onto their first three principal components for each odor (Figure 5g). We quantified the Euclidean distances between the means of the first six principal components of pairs of odors and found that odors were more separable in PYR responses than in SL responses (median distance: SL, 19.4; PYR, 27.4; n = 45 odor pairs; p=3.21 \u00d7 10\u20137, unpaired t-test; Figure 5h). In PYRs but not SLs, odor responses to valeraldehyde, \u03b3-terpinene, and ethyl acetate were more distinct than their responses to the other presented odors (Figure 5e and g), resulting in a larger spread in distances between pairs of odors in PYRs. Finally, we asked if a downstream decoder could more accurately identify odors based on PYR versus SL odor-evoked activity. However, odor classification accuracy, at all pseudopopulation sizes, was similar in SLs and PYRs (Figure 5i, left).\n\nTo summarize, odors were slightly more discriminable in PYRs than in SLs, consistent with the idea that the recurrent network decorrelates PYR responses to different odors. However, the trial-to-trial variability and the odor decoding performance of SLs and PYRs were equivalent. We additionally analyzed if and how the odor response properties of PYRs changed when SLs were suppressed and found no substantial effects, further suggesting that SLs and PYRs encode odor information in parallel (Figure 5\u2014figure supplement 1).\n\nIf both SL and PYR responses derive solely from their sensory inputs, then similar odors should evoke similar responses in both cell types. Interestingly, however, we noticed some subtle but distinct differences in the off-diagonal structure of the correlation matrices for SL and PYR responses as well as in the confusion matrices of pairwise Euclidean distances between odors (Figure 5e and h). For example, valeraldehyde and \u03b3-terpinene responses were more strongly decorrelated from other odor responses in PYRs than in SLs. Also, methyl tiglate responses were more like ethyl tiglate than acetophenone in SLs, while the reverse was true in PYRs. These differences were similarly reflected in the confusion matrices showing predicted odors when decoding using just 25 randomly selected cells for SLs and PYRs (scale adjusted to emphasize classification errors) (Figure 5i, right). These observations indicate that SLs and PYRs are transforming odor information from the OB differently, and that their outputs do not simply reflect their sensory inputs.\n\n## Discussion\n\nThe Ntng1Cre mouse line allowed us to distinguish between SLs and PYRs and selectively suppress SLs in extracellular recordings of layer II PCx neurons in awake, head-fixed mice. We found that odor responses in SLs and PYRs are largely independent as suppressing SLs, both optogenetically and chemogenetically, did not weaken or alter the response pattern of PYRs. We additionally did not find differences in odor response latencies between SLs and PYRs. These results are not consistent with a sequential processing model in which SLs are the primary cortical recipients of OB input whose activity is required to drive PYR responses. We found that SLs are more broadly tuned, less sparse, and their population odor responses less discriminable compared to PYRs. Taken together, our data support a parallel processing model in which OB input drives both SL and PYR odor responses, which then perform different computations on this information before routing it to different downstream areas.\n\n### Stimulus selectivity, discriminability, and response variability\n\nIndividual PCx neurons integrate convergent inputs from different combinations of glomeruli (Apicella et al., 2010; Davison and Ehlers, 2011). SLs almost exclusively receive afferent OB inputs, while PYRs receive both afferent OB inputs and dense intracortical inputs from SLs and other PYRs (Johnson et al., 2000; Franks et al., 2011; Suzuki and Bekkers, 2011; Hagiwara et al., 2012). If intracortical connectivity is random, then sensory information from the OB received by PCx neurons would be uniformly redistributed among PYRs via the recurrent network. Individual PYRs would therefore effectively sample a far larger subset of glomeruli than individual SLs, resulting in more broadly tuned and overlapping responses among PYRs (Suzuki and Bekkers, 2011). Alternatively, coordinated activity within PCx could actively sculpt the recurrent circuitry so that PYRs that are regularly co-activated, because they respond to similar chemical features, become preferentially interconnected, resulting in more narrowly tuned, reliable, and discriminable responses than those in SLs (Haberly, 2001). Our results are largely consistent with the latter model in that we found PYR responses to be more narrowly tuned and discriminable than those in SLs. A recent study showed that odor responses in layer III of PCx, which only contains PYRs, were more correlated between chemically similar odor stimuli than responses in layer II, which contain both SLs and PYRs, or the OB (Pashkovski et al., 2020), providing further evidence for structured associative inputs. It was therefore surprising that PYR responses were not more reliable than SL responses.\n\nOur findings on the stimulus selectivity and discriminability of SLs and PYRs are also comparable to those reported in two zebrafish odor centers downstream of the OB: cells in the ventral telencephalon (Vv) receive primarily OB inputs and exhibit broader stimulus tuning and more overlapping odor representations than those in the dorsal telencephalon (Dp), which is the teleost homolog of PCx (Yaksi et al., 2009). Finally, in the control experiments for the DREADD suppression of SLs, we noticed that PYR responses seemed to change more with time and/or stimulus presentation than SL responses. This result is consistent with an activity-dependent sculpting of recurrent connectivity so that PYR responses evolve while SL responses continue to faithfully represent the stimulus (Jacobson et al., 2018; Bolding et al., 2020; Pashkovski et al., 2020; Schoonover et al., 2021).\n\n### Interpreting effect size\n\nAlthough the response properties of SLs and PYRs are consistent with a more sensory and a more associative network, respectively, the differences we observed were less pronounced than we expected. There are several possible explanations for this. First, although SLs and PYRs are the two main classes of principal neurons in layer II, some neurons have intermediate morphological and intrinsic properties that lie on a gradient from canonical SLs to canonical PYRs (Yang et al., 2004; Suzuki and Bekkers, 2011; Wiegand et al., 2011). These cells, which may or may not be Ntng1+, could be diluting the differences that we observed. Additionally, although we have used multiple stringent selection criteria (Figure 1\u2014figure supplement 5) to reliably identify SLs, and have omitted experiments with a low fraction of opto-tagged cells, it may still be possible that some SLs have been miscategorized as PYRs and vice versa. Second, although SLs receive stronger OB inputs than PYRs, this difference is relative and does not mean that OB inputs onto PYRs are weak or that PYRs are not directly driven by the OB, as this is sometimes interpreted. Third, unlike in slice recordings, the recurrent network and top-down inputs are preserved in in vivo recordings. Therefore, while SL activity is driven largely by sensory input, PYR activity is also influenced by ongoing background activity that provide non-olfactory inputs to PYRs, rendering their responses to odors more variable and less discriminable than might be expected (Stringer et al., 2019). Why did we find no difference in the response latencies of SLs and PYRs even though SLs responded approximately 2\u20134 ms earlier than PYRs in response to LOT stimulation in brain slice experiments or in anesthetized rats (Ketchum and Haberly, 1993; Suzuki and Bekkers, 2011; Wiegand et al., 2011)? In vivo, ongoing recurrent and top-down inputs in awake animals may depolarize PYRs and thereby shorten their response latencies. More importantly, electrical LOT stimulation generates a single, synchronous barrage of afferent inputs into PCx. However, different mitral cells respond to odors with variable latencies that tile the entire ~300 ms sniff cycle (Cury and Uchida, 2010; Shusterman et al., 2011; Bolding and Franks, 2018), making it difficult to compare SL and PYR onset latencies to a given odor-activated input. Precise optogenetic stimulation of OB glomeruli with high temporal precision (Chong et al., 2020) can be used to address this question more directly.\n\n### Potential limitations of optogenetic and chemogenetic suppression\n\nWith optogenetics, we were able to effectively suppress the SLs we were recording from on alternating trials, thus providing a robust and ongoing comparison of PYR responses with and without SL input. However, PCx spans ~4 mm along its anterior-posterior axis and is a long-range recurrent network with neurons forming intracortical connections with neurons >1 mm away (Johnson et al., 2000; Franks et al., 2011; Hagiwara et al., 2012). Hence, to effectively remove SL inputs onto PYRs, we needed to suppress SLs located far from the recording site. However, the spatial resolution of optogenetic suppression using 532 nm light, determined using a photobleaching assay, is slightly less than 1 mm (Li et al., 2019). To broaden the area of suppression, we used a thicker (400 \u03bcm) optic fiber and Jaws, a red-light (635 nm)-activated opsin, as red light scatters less in tissue (Chuong et al., 2014; Wiegert et al., 2017). We also injected the virus in 3\u20134 sites along the anterior-posterior axis of PCx to suppress axon terminals, at the recording site, of remote cell bodies outside of the light cone. Nevertheless, it is possible that we failed to disrupt PYR responses in light-on trials simply because we were not suppressing enough SLs across PCx. If so, we might expect that more complete SL suppression would decrease PYR responses and impair their odor decoding. However, odor decoding accuracy in PYRs trended upward on light-on trials in experiments with robust local SL suppression, indicating that SL suppression did affect PYRs, and suggesting that SLs were suppressed well beyond the recording area. Chemogenetics alleviates the spatial limitations of optogenetics, but the suppression of odor-evoked activity in SLs was less robust than in the optogenetic experiments. Additionally, we had to wait 20\u201330 min for cells to be suppressed, which allowed for shifts in odor representations. Novel techniques that enable more effective axon terminal suppression with high spatiotemporal precision and efficacy may enable a more robust interrogation of the effects of suppressing SLs on PYRs. These caveats notwithstanding, both the optogenetic and chemogenetic experiments showed effective SL suppression and indicated that SL suppression had little to no effect on PYR odor responses.\n\n### Roles of SLs and PYRs in odor processing\n\nOur data do not support a two-stage sequential activation model, where odor information from the OB is transmitted first to SLs and then from SLs to PYRs. Instead, both SLs and PYRs can be driven by OB input and appear to differentially process odor information, as indicated by their distinct tuning properties and by the differences we observed in the off-diagonal structure of their response correlation matrices. Interestingly, SLs preferentially project to the posterior PCx, posteromedial cortical amygdala, and lateral entorhinal cortex while PYRs project back to the OB, medial prefrontal and orbitofrontal cortices (Diodato et al., 2016; Mazo et al., 2017). Because SLs are less driven by intracortical inputs, downstream regions receiving SL inputs may receive odor information that more closely reflects the stimulus. By contrast, PYRs integrate afferent OB input with inputs from SLs and other PYRs, as well as inputs from other brain areas to form contextual odor representations and provide a substrate for the storage of odor representations. Thus, the varying ratios of afferent versus associative connectivity between SLs and PYRs perhaps enable each cell type to extract distinct features of odor information and route this information to different downstream regions.\n\nAlthough it may not be surprising that PYRs are able to respond to odors without SL input, our finding that PYR odor representations are essentially equivalent with and without SL input is nevertheless puzzling. Why might this be and what does this imply about the function of SL projections onto PYRs? Inputs onto PYRs from other PYRs are approximately five times stronger than inputs from SLs (Figure 1\u2014figure supplement 3e and h). It might be that under our very simplified conditions, with pure odors delivered at relatively high concentrations (0.3% vol./vol.), the contribution from SLs becomes insignificant and may be more apparent in more naturalistic odor environments. Alternatively, in the optogenetic experiments, we suppressed SLs hundreds of milliseconds before odor onset, which could be sufficient time for the network to re-equilibrate (Bolding and Franks, 2018). Perhaps rapid suppression of SLs during or immediately before the odor would have a more pronounced effect. We also presented odors passively, in nonbehaving mice, and it is possible that differences between, and dependencies on, the different cell types might emerge in mice engaged in a behavioral task (Chen et al., 2015). However, this seems unlikely given recent evidence that odor representations in PCx do not appear to encode odor value or be task-specific (Gadziola et al., 2020; Millman and Murthy, 2020; Wang et al., 2020) and that any \u2018top-down\u2019 effects would almost certainly influence PYR output more than SL. Finally, perhaps SLs and PYRs do not simply represent odor identity and we are looking at the wrong feature of the odor response. Future experiments will be required to resolve this, but our data make clear that odor processing in PCx does not occur through a two-stage process mediated first by SLs and then by PYRs.\n\n### Parallel loops in PCx and hippocampus\n\nAlthough we have proposed a parallel model for processing odor information in PCx, it is not strictly correct as PYRs receive input from both OB and SLs. This organization may be better described as a parallel-loop motif, as in the hippocampus. PCx and the hippocampus are analogous structures. Both are trilaminar paleocortices with extensive recurrent networks (Guzman et al., 2016) that support unsupervised learning (Barkai et al., 1994; Haberly, 2001; Rolls, 2013). In terms of morphology and connectivity, PYRs are analogous to CA3 pyramidal cells and SLs to dentate gyrus (DG) granule cells. The roles of DG and CA3 in the encoding of episodic memories are relatively well characterized; DG granule cells are thought to drive the acquisition of memories, but not retrieval, and perform pattern separation while CA3 pyramidal cells are thought to store and retrieve memories and perform pattern completion (Leutgeb et al., 2007; Neunuebel and Knierim, 2014; Madar et al., 2019; Hainmueller and Bartos, 2020). It is important to note that although DG granule cells synapse onto CA3 pyramidal cells, the DG-CA3 circuit is not exclusively sequential. CA3 also receives direct input from the entorhinal cortex, and when DG projections to CA3 are silenced or ablated, the ability of CA3 to retrieve memories is unimpaired (Lee and Kesner, 2004). In our previous study with the Ntng1Cre mouse line, we found that PYRs were more robust to degraded afferent OB inputs and exhibited more persistent odor-evoked activity after stimulus offset than SLs (Bolding et al., 2020). Both features are consistent with an associative network performing computations that stabilize and enable reliable retrieval of odor ensembles, characteristic of a pattern completing network (Rolls, 2013; Inagaki et al., 2019). However, there is yet to be evidence implicating SLs, specifically, as pattern separators in the olfactory circuit (Chapuis and Wilson, 2011). A key property of DG granule cells that enable them to effectively decorrelate similar activity patterns is their sparseness (Leutgeb et al., 2007). However, we found that SLs had higher spontaneous spike rates, were individually more broadly tuned, and their population response less sparse than PYRs.\n\n### Conclusion\n\nIn conclusion, our data do not support a sequential processing model for PCx in which odor information from OB is first integrated in SLs, and then routed from SLs to PYRs. Instead, we propose that these distinct excitatory cell types form largely parallel processing schemes, where each cell type receives varying amounts of sensory and associative inputs, performs distinct local computations, and projects the information to distinct downstream regions.\n\n## Materials and methods\n\nAll experimental protocols were approved by the Duke University Institutional Animal Care and Use Committee. Information about the Ntng1Cre mouse line is described in Bolding et al., 2020. Methods for in vivo extracellular recording and preliminary analysis have been reported in detail in Bolding and Franks, 2017 and Bolding et al., 2020 and are summarized here.\n\n### Subjects\n\nAll experiments were performed on adult (6\u201310 weeks old) Ntng1Cre knock-in mice, which were generated by inserting the DNA sequence encoding Cre-recombinase at the start codon of the Ntng1 gene using CRISPR. All mice were heterozygotes, crossed to either Ai14 (B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J, 007914) or C57BL/6J (000664) mice obtained from The Jackson Laboratory.\n\n### Statistics\n\nUnless otherwise stated, data are reported as mean [LL UL], where LL and UL are the lower and upper bounds of 95% confidence intervals for the mean, respectively. Confidence intervals were calculated by bootstrapping the data 1000 times and calculating the mean for each sample using MATLAB\u2019s \u2018bootci\u2019 function. Statistical significance of comparisons between groups was determined using MATLAB\u2019s \u2018ttest,\u2019 \u2018ttest2,\u2019 or \u2018ranksum\u2019 functions.\n\n### Stereotaxic injections and headpost placement\n\nMice were given buprenorphine-SR (0.1 mg/kg, s.c.) 10 min before the start of surgery and then placed in a closed glass box filled with 5% isoflurane to induce anesthesia. Afterward, they were moved to a stereotaxic frame and maintained on isoflurane anesthesia (0.5\u20132% in 0.8 L/min O2) throughout the procedure. A local anesthetic, bupivacaine, was injected under the skin over the skull and an incision was made along the midline to expose the skull. Between 1 and 4 burr holes, depending on the experiment, were made over PCx using coordinates relative to bregma. AAVs (either AAV5-hSyn-DIO-GFP, AAV8-hSyn-DIO-Jaws-eYFP or AAV5-hSyn-DIO-ArchT3.0-eYFP or AAV5-hSyn-DIO-hm4di-mCherry or AAV5-hSyn-FLEX-mCherry, all obtained from UNC Vector Core) were then delivered through a glass pipette using a Nanoject pump (Drummond) (200 nL/site at 60 nL/min). The following coordinates were used (in mm, AP 2.0, ML 2.15, DV 3.8; AP 1.3, ML 2.82, DV 3.95; AP 0.5, ML 3.5, DV 4.05; AP \u20130.6, ML 3.8, DV 4.10). After slowly retracting the pipette, burr holes were covered using KwikCast sealant and a custom titanium headpost was lowered onto the exposed skull and attached using Metabond (Parkell, Inc). Mice were placed on a heating pad for 30 min after surgery while they recovered from anesthesia.\n\n### In vitro electrophysiology and analysis\n\nMice were anesthetized with isoflurane and decapitated, and the cortex was quickly removed in ice-cold artificial CSF (aCSF). Parasagittal brain slices (300 \u03bcm) were cut using a vibrating microtome (Leica) in a solution containing (in mM): 10 NaCl, 2.5 KCl, 0.5 CaCl2, 7 MgSO4, 1.25 NaH2PO4, 25 NaHCO3, 10 glucose, and 195 sucrose, equilibrated with 95% O2 and 5% CO2. Slices were incubated at 34\u00b0C for 30 min in aCSF containing 125 mM NaCl, 2.5 mM KCl, 1.25 mM NaH2PO4, 25 mM NaHCO3, 25 mM glucose, 2 mM CaCl2, 1 mM MgCl2, 2 NaPyruvate. Slices were then maintained at room temperature until they were transferred to a recording chamber on an upright microscope (Olympus) equipped with a \u00d740 objective.\n\nFor current-clamp recordings, patch electrodes (3\u20136 megohm) contained 130 K methylsulfonate, 5 mM NaCl, 10 HEPES, 12 phosphocreatine, 3 MgATP, 0.2 NaGTP, 0.1 EGTA, 0.05 AlexaFluor 594 cadaverine. For voltage-clamp experiments, electrodes contained 130 D-gluconic acid, 130 CsOH, 5 mM NaCl, 10 HEPES, 12 phosphocreatine, 3 MgATP, 0.2 NaGTP, 10 EGTA, 0.05 AlexaFluor 594 cadaverine. Voltage- and current-clamp responses were recorded with a MultiClamp 700B amplifier, filtered at 2\u20134 kHz, and digitized at 10 kHz (Digidata 1440). Series resistance was typically ~10 megohm, always <20 megohm, and was compensated at 80\u201395%. The bridge was balanced using the automated MultiClamp function in current-clamp recordings. Data were collected and analyzed offline using AxographX and IGOR Pro (Wavemetrics). Junction potentials were not corrected.\n\n### Intrinsic properties\n\nRecordings were targeted to SLs (tdTomato+) and PYRs (unlabeled) located in layer II. Cells were also visualized using a fluorescent indicator (Alexa 594 Cadaverine) to confirm that they were correctly identified as SL or PYR. Intrinsic properties were measured at current clamp in response to a series of 1-s-long current pulses stepped up in 50 pA increments.\n\n### Synaptic connectivity\n\nAll experiments were performed 3\u20134 weeks after virus injection (AAV-hSyn-DIO-Chr2 or AAV-hSyn-ChR2). We recorded from uninfected SLs (tdTomato+) and PYRs (unlabeled) adjacent to the infection site. To ensure cells were uninfected, we first examined responses to weak, 1-s-long light pulses (470 nm, CoolLED) delivered through the \u00d740 objective. Cells that exhibited large and sustained photocurrents were discarded. Uninfected cells were held at either \u201370 mV or +5 mV to isolate excitatory or inhibitory synaptic currents, respectively. Brief (1 ms, ~10 mW) pulses were delivered every 10 s to activate ChR2+ axon terminals.\n\n### In vivo extracellular recordings\n\n#### Electrode placement and data acquisition\n\nRecordings were performed 3\u20136 weeks after virus injections. On the day of the recording, the Metabond and KwikCast covering the craniotomy made during virus injection was removed. A 32-site polytrode acute probe, either with a 50 \u03bcm optic fiber attached (A1x32-Poly3-5mm-25s-177-OA32LP, Neuronexus, Ann Arbor, MI) or without (A1x32-Poly3-5mm-25s-177-A32, Neuronexus) was positioned over the craniotomy and lowered into one of the virus injection sites using a Patchstar Micromanipulator (Scientifica, UK). No additional craniotomies were made on the day of the recording, thus mice were never anesthetized. Recordings were targeted to 3.8\u20134.3 mm ventral to the brain surface, and the probe was lowered until a band of intense spiking activity, reflecting the densely packed layer II of PCx, was observed. Electrophysiological signals were acquired through an A32-OM32 adaptor (Neuronexus), digitized at 30 kHz at a CerePlex digital headstage (Blackrock Microsystems, Salt Lake City, UT) and recorded using a Cerebus multichannel data acquisition system (Blackrock Microsystems). Experimental events (e.g., odor delivery times, laser pulse times) and respiration signals were acquired at 2 kHz by analog inputs of the Cerebus system. Respiration was monitored using a microbridge mass airflow sensor (Honeywell AWM3300V) positioned opposite the animal\u2019s nose.\n\n### Spike sorting\n\nIndividual units were isolated using Spyking-Circus (https://github.com/spyking-circus) (Yger et al., 2018). Isolated clusters were manually curated to remove those with >1% of interspike intervals (ISIs) violating the refractory period (<2 ms) or that looked like noise artifacts. Pairs of clusters with similar waveforms and coordinated refractory periods in the cross-correlograms were merged into a single cluster. The odor response recording session and the opto-tagging recording session for each experiment were merged and sorted as one session and later split for subsequent analysis.\n\n### Opto-tagging\n\nOpto-tagging was performed at the end of each experiment (or at the start for experiments using DREADDs). When the probe without the attached optic fiber was used, a separate 200 \u03bcm or 400 \u03bcm optic fiber (ThorLabs) was implanted at a 12\u00b0 angle to the probe, and a distance of 500\u2013600 \u03bcm away from the probe\u2019s ventral coordinate. The optic fiber was connected to a mechanical shutter (Uniblitz, Vincent Associates, Rochester, NY) and then to either a 532 nm or 635 nm laser (OptoEngine LLC, Midvale, UT) using a patch cable (ThorLabs). The mechanical shutter was controlled using TTL pulses sent from an analog output of the Cerebus system, which then allowed light pulses through the optic fiber. A series of 1000 pulses (300 ms, 1 Hz) were delivered to opto-tag cells. A limitation of using inhibitory opto-tagging is that spontaneously low-firing Ntng1+ cells may not be identified. To alleviate this issue, we delivered a high number of light pulses and recorded for ~18 min to ensure the spiking activity of spontaneously low-firing cells was sufficiently sampled. The same TTL pulse was also sent to an analog input channel on the Cerebus system to align light pulses with electrophysiological recordings post hoc. Another limitation of opto-tagging is we may incorrectly identify Jaws- cells that are synaptically connected to Jaws+ cells as light-responsive. We therefore added a selection criterion based on the time course of suppression of each cell. Latency to suppression was determined by change point analysis (Wolff et al., 2014; Rowland et al., 2018). PSTHs were generated for each unit using 2 ms bins spanning 100 ms before to 100 ms after laser onset, and a change point within that time was determined using MATLAB\u2019s \u2018findchangepts\u2019 function. A cell was categorized as light-responsive if (1) its trial-averaged baseline activity was significantly higher than that during the laser pulse (Wilcoxon rank-sum test, p<1 \u00d7 10\u20137), (2) the area under the receiver operating characteristic (auROC) curve was less than 0.5, and (3) the change point value was lesser than 10 ms from the laser on time. In 4/9 optogenetic suppression experiments, we delivered 60 light pulses that were triggered by a TTL pulse to the laser (i.e., no shutter), and thus we were not able to accurately determine change points. For these experiments, light-responsive cells were determined using the rank-sum test and auROC criteria, followed by manual curation. Units that exhibited fast suppression were categorized as light-responsive, while units that exhibited visibly slow or delayed suppression were categorized as non-light responsive.\n\n### Odor stimuli\n\nThe odor stimulus set consisted of 2-hexanone (Sigma, 02473), octanal (Aldrich, O5608), isoamyl acetate (Tokyo Chemical Industries, A0033), ethyl butyrate (Aldrich, E15701), valeraldehyde (Aldrich, 110132), ethyl tiglate (Alfa Aesar, A12029), acetophenone (Fluka, 00790), \u03b3-terpinene (Aldrich, 223190), ethyl acetate (Sigma-Aldrich, 34858), and methyl tiglate (Alfa Aesar, A11964).\n\n### Odor delivery\n\nOdors were delivered using a custom-built 16-valve olfactometer. House air was passed through a filter and then split three ways into three mass flow controllers (MFCs) (Aalborg, Orangeburg, NY). MFC1 flowed filtered air at a constant rate of 1 L/min while airflow through MFC2 and MFC3 were varied to vary the concentration of odors delivered while maintaining a total airflow out of the olfactometer at 1 L/min. Custom Arduino software was used to control odor solenoid opening and closing as well as to log which odor was delivered at each trial. Monomolecular odorants were diluted to 1% v./v. in mineral oil. Normally, a 1 L/min clean air stream from MFC1 was directed to the mouse\u2019s nose. During a trial, air from either MFC2 or MFC3 was directed through one of the odor vials and the odorized air stream was directed to exhaust for an equilibration period of 6 s before rapid switching of a final valve, triggered on exhalation, redirected the odorized air to the nose and neutral air to exhaust. Odors or mineral oil blank control stimuli were presented for 1 s, and stimuli were presented every 10 s in random order. Odors were presented at 0.3% air dilution for the optogenetic and chemogenetic suppression experiments and at 1% for analyzing odor response latencies and properties.\n\n### Spontaneous firing rate\n\nSpontaneous firing rates in Figure 1l were determined by counting the number of spikes in a 4 s inter-trial window starting 4 s after odor offset. Spontaneous firing rates in Figures 2e and 3c were determined by counting the number of spikes in a 500 ms window before odor presentation.\n\n### Individual cell-odor responses\n\nWe omitted the first-odor trial in all analyses (Jacobson et al., 2018). Individual trial-averaged cell-odor responses as a function of time were visualized by computing kernel density functions (KDFs) smoothed using a 10 ms Gaussian kernel (Chronux Toolkit). The reliability of responses was determined using the auROC metric. auROC values were computed from the U-statistic of the rank-sum test comparing spike counts of each cell-odor pair during the first sniff after odor presentation to spike counts during the sniff preceding odor presentation. auROC values were then converted to response indices using the formula: auROC * 2 \u2013 1. A value of \u20131 or 1 indicates a suppressed or activated odor response that was perfectly distinguishable from the pre-odor baseline response while a value of 0 indicates no difference between the odor and pre-odor baseline response.\n\nTo determine response peaks, KDFs were first computed for each cell-odor pair and the maximum value within the specified time window was then determined as the peak. Significantly active cell-odor pairs were ones with a response index > 0 and a p-value<0.05 (Wilcoxon rank-sum test) comparing spike counts in the first sniff with spike counts in the pre-odor sniff. Responses where no peaks were found within the specified time window were given a value of 0 for Figures 2h and 3f.\n\n### Latency analysis\n\nResponse latencies were determined for all activated cell-odor pairs (response index > 0). For peak latencies, KDFs were first computed from spike counts occurring in a 300 ms time window from inhalation onset using a 10 ms Gaussian kernel. Then, the time of the maximum value of the KDF was identified and taken as the latency to peak. For onset latencies, KDFs were similarly computed but for a time window of 600 ms, spanning 300 ms before inhalation onset (baseline) and 300 ms after. The mean firing rate and standard deviation were determined for the baseline period, and the time after inhalation onset at which the KDF first exceeded 2 SDs above the baseline was then taken as the onset latency.\n\nOdor classification accuracy in a sliding window was determined using a linear multiclass SVM classifier using leave-one-out cross-validation, as described in the \u2018Population decoding analysis\u2019 section. Within each time window, the pseudopopulation spike count vector for one trial was omitted, the classifier trained on the remaining trials, and the odor presented during the omitted trial was predicted using the trained SVM. Classification within each window was repeated 100 times, and accuracies for each window are the average across all iterations.\n\n### Sparseness\n\nLifetime sparseness describes the firing rate distribution of individual neurons to all of the odors presented and reflects the tuning width of neurons. A value of 1 indicates the cell responded to just one odor, and a value of 0 indicates the cell\u2019s firing rate was distributed uniformly across all odors. Population sparseness is a measure of the density of responses of a population of cells, where a value of 1 indicates the population response to a given odor was driven by just one cell and a value of 0 indicates uniform contribution of all neurons in the population to a given odor response. Lifetime and population sparseness values were calculated for each experiment individually:\n\n$$\nlifetimesparseness=\\frac{1\u2212(\\sum\\frac{r_{i}}{n})^{2}/\\sum\\frac{r_{i}^{2}}{n}}{1\u2212\\frac{1}{n}}\n$$\n\nwhere ri is the trial-averaged response to the ith odor and n is the number of odors. Population sparseness for each odor was calculated with the same formula but ri is now the trial-averaged response of the ith cell and n is the number of cells.\n\n### Trial-trial population vector distances and principal components analysis\n\nThe similarity of population odor responses, which are vectors of z-scored spike counts in the first 500 ms after inhalation onset, was determined by correlating response vectors from pairs of trials in each experiment separately. Spike counts were z-scored to a 500 ms epoch before inhalation onset (\u20130.6 to \u20130.1 s before inhalation onset [t = 0]). The mean within-odor correlation was calculated by averaging correlation coefficients of trials from the same odor while the mean between-odor correlation was calculated by averaging correlation coefficients of all trials except those of the same odor. PCA was performed using MATLAB\u2019s built-in \u2018pca\u2019 function (singular value decomposition algorithm) by using z-scored pseudopopulation (responses from all experiments were pooled together) spike count vectors.\n\n### Population decoding analysis\n\nOdor classification accuracy was determined with a linear multiclass SVM classifier using leave-one-out cross-validation (LIBLINEAR, solver 4 \u2013support vector classification by the Crammer and Singer method, https://www.csie.ntu.edu.tw/~cjlin/liblinear/). The feature vectors used in the classifier in Figure 5 were pseudopopulation vectors of raw spike counts in the first 500 ms after inhalation onset. To determine classification accuracy at increasing numbers of cells, populations of varying sizes were constructed by subsampling the total pseudopopulation 100 times and averaging the classification accuracy across all 100 iterations for that population size. Decoding in individual experiments as in Figures 2 and 3 was performed using the same decoder but with size-matched populations of SLs and PYRs from each experiment.\n\n### DREADD agonists dosage and delivery\n\n250 \u03bcL of either CNO (4 mg/kg, Sigma, C0832) or compound 21 (1 mg/kg, Sigma, SML2392) diluted in sterile 0.9% saline solution was injected intraperitoneally during the recording session.\n\n### Immunohistochemistry\n\nMice were anesthetized with isoflurane and then perfused transcardially with cold 4% paraformaldehyde in 0.2 M phosphate buffer (4% PFA). Brains were dissected and post-fixed for 48 hrs in 4% PFA at 4\u00b0C and then placed in a vibrating microtome, submerged in cold 1\u00d7 phosphate buffered saline (PBS, Sigma, P4417) to slice 50 \u03bcm sections of OB and PCx. To stain for GFP and mCherry, sections were permeabilized using 0.1% Triton X-100 (Acros Organics, 327371000) in 1\u00d7 PBS (t-PBS) for three washes and then with 0.3% t-PBS for one wash. Slices were incubated with chicken anti-gfp (1:400, Invitrogen, A10262), rabbit anti-rfp (1:400, Rockland, 600-401-379) in blocking buffer (5% normal goat serum; EMD Millipore, S26) in 0.3% t-PBS overnight at 4\u00b0C. The next day, slices were rinsed in 0.1% t-PBS for three washes and then incubated in AlexaFluor 488 goat anti-chicken (1:400, Life Technologies, A11039), AlexaFluor 555 goat anti-rabbit (1:400, Invitrogen, A32732), and NeuroTrace 435/455 (1:300, Life Technologies, N21479) in blocking buffer overnight at 4\u00b0C. Slices were again washed in 0.1% t-PBS and then mounted and cover-slipped with Fluoromount-G. Fluorescence images were taken using a Zeiss 780 inverted confocal microscope and adjusted for brightness and contrast using ImageJ.\n",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "7915a2b8-ce5d-4d79-b2df-bf31d5ecf83e",
+      "submission_id": "a40a3c28-8e65-40ce-9454-8d78f23dee4b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andreas T Schaefer, The Francis Crick Institute United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73668.sa0](https://doi.org/10.7554/eLife.73668.sa0)\n\nIn this timely study, Nagappan and Franks challenge a long-held model of sequential odor processing by two classes of excitatory principal neurons in the olfactory cortex (semilunar neurons and superficial pyramidal neurons). The main findings of this study support an alternate interpretation that semilunar and pyramidal neurons process olfactory information in parallel rather than sequentially. This work is highly relevant to the olfactory field as well as those scientists who aim to understand the roles of diverse neural classes in sensory processing. The work is executed very well, properly controlled and analysed, and the claims are very well supported by the data.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Andreas T Schaefer, The Francis Crick Institute United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73668.sa1](https://doi.org/10.7554/eLife.73668.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Parallel processing by distinct classes of principal neurons in the olfactory cortex\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Diego Restrepo (Reviewer #1).\n\nThe three reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAs you can see from the comments below, all reviewers agree that the work is important and well executed. There are several suggestions below that can be addressed with textual revisions and minor additional data analysis. All reviewers, however, agree that the opto-tagging procedure requires more in-depth attention. While new experiments (e.g. excitatory opto-tagging) could be beneficial, they are not essential. To unambiguously delineate the applicability of the opto-tagging procedure, consider analysis of viral spread (and fraction of doubly-labelled cells where possible) to estimate efficiency of tagging, a more detailed analysis across population data including firing patterns and the type of light-evoked responses, analysis of spike waveforms to estimate the \"contamination\" with putative inhibitory interneurons, and a detailed discussion of the caveats and limitations of the opto-tagging procedure. These analyses could be incorporated in the main text and figures or in a set of supplementary figures.\n\nReviewer #1:\n\nI enjoyed reading this manuscript. I found that the study was solid and makes a contribution to the understanding of the role of semilunar (SL) and pyramidal (PYR) cells within the circuit in piriform cortex by showing that the data are not consistent with a sequential model where the SL cells respond and integrate the odorant stimulus and transmit the information to the PYR cells that subsequently transform and transmit the information to other brain regions. My main concern is that it would be useful for the authors to make it clear how well they can optotag these units.\n\n1. The patch clamp data show burst firing for the PYR cells, but not for the SL cells. Is this reflected in a peak at low interspike intervals (ISIs) in the ISI histogram for the firing of single PYR units in the extracellular recordings as found, for example, for PYR cells in CA1?\n\n2. The authors use SEM as a measure of variability in the different figures. It is now recognized that SEM is not useful because it conveys little information on the difference between two distributions. A much more useful statistical measure is the 95% confidence interval that can be calculated by bootstrapping (see for example Halsey et al., The fickle P value generates irreproducible results. Nature methods 12, 179-185, 2015).\n\n3. The validity of the results in the manuscript bank on reliable differentiation between units by optogenetic tagging with jaws. The example units in Figure 1 k are clearly different in their response to the optgenetic inhibition with jaws. However, reading the methods raises the question of how reliable the criteria were in differentiating two separable populations. The manuscript would benefit greatly from a supplementary figure with population data showing how reliable the optogenetic tagging of \"SL\" vs \"PYR\" cells was. Also, please show raw voltage traces. Is there a light-induced artifact?\n\n4. I was surprised by the relatively small differences in the odor response properties between SL and PYR units shown in Figure 5. The number of units is small, but the histogram of the Euclidean distance appears to be bimodal for PYR units. Could this be due to cross-contamination of the \"SL\" and \"PYR\" unit classification? Or could it be that these two groups of cells are functionally heterogeneous within groups in terms of sparseness? Did the authors try to sort the responses using measures such as the burstiness of the cells? I would advise to change the title of the figure.\n\nReviewer #2:\n\nIn this study, the authors investigate the odor responses of two classes of principal excitatory neurons in olfactory cortex- semilunar neurons (SL) and pyramidal neurons (PYR). Previous in vitro work has suggested that these two classes are sequentially activated by olfactory bulb afferent input. SL neurons are recruited first, then PYR neurons are recruited by a combination of afferent input and SL input. The suggests a sequential structure for odor processing within the olfactory cortex. The present study tests this hypothesis in vivo, using a recently developed transgenic mouse line that allows for the selective targeting of SL neurons. The authors use optogenetic methods to distinguish SL from PYR neurons as well as optogenetic or chemogenetic silencing of SL neurons. Two main findings strongly support the interpretation that SL and PYR neurons are not sequentially activated during odor processing. First, silencing of SL neurons does not impair or change the odor response properties of PYR neurons. Second, the odor response latencies of SL or PYR neurons do not differ. A third finding that PYR and SL differentially represent olfactory information, is subtle. Altogether, the main conclusion of the study is that SL and PYR neurons are members of parallel networks for odor processing.\n\nOverall the experiments and analyses presented in this study are designed and conducted well. Both in vitro and in vivo experiments were performed and are complementary. Optogenetic and chemogenetic silencing were employed to mitigate the limitations of each technique on the interpretation of the findings. The authors discuss some of the caveats and limitations of these tools. The main results of silencing SL neurons using either technique support the interpretation that sequential activation of SL and PYR neurons is not required for PYR odor representations. A subsequent analysis of odor coding suggests that PYR neurons more sparsely represent odors and are more discriminating between odors compared to SL neurons. These differences between SL and PYR odor representations were statistically significant but somewhat small. The authors interpretation of these findings is that SL and PYR neurons act in parallel to differentially process olfactory information. An alternative interpretation is that SL and PYR have differential output projection and act in parallel to inform to different downstream brain targets. They may or may not convey similar information. These need not be mutually exclusive.\n\nRecommendations for the authors:\n\n1) The authors state that generally half of the recorded neurons in vivo were rapidly suppressed by optogenetic inactivation. Suppressed neurons were classified as SL while non-suppressed were classified as PYR. This raises a number of questions pertaining to the interpretation of cell type during in vivo recordings.\n\na. The authors state that they omitted experiments when less than 25% of cells were suppressed assuming this was due to poor infection or mistargeted recordings. While the positions of the optical fiber and recording electrode were verified post hoc, it does not appear that the quality of viral infection was quantified. It appears that high double labeling (tdTom/Jaws-YFP) is shown in Figure 2i, which is good. Was the proportion of SL cells expressing virus consistent across animals included in the study?\n\nb. Were all non-suppressed neurons categorized as PYR? Presumably some responsive neurons are also inhibitory interneurons. Was any attempt made to spike sort based on waveform? What proportion of non-suppressed cells might be interneurons?\n\nc. How much heterogeneity was there in the responses to optical inactivation of SL neurons. Was there any attempt to categorize or quantify the frequency of occurrence for these various responses? For example, suppressing SL cells could decrease excitatory drive to some classes of inhibitory interneuron which would also potentially appear suppressed, albeit with a different time course. Is it possible that slowly suppressed neurons that were also included in the PYR group are interneurons? Alternatively, In Figure 1k- lower middle panel, the neuron shown appears to be increasing responses at light offset (rebound spiking?) and slowly adapting between light pulses. What did the firing pattern of this neuron look like in the absence of light stimulation? None of the panels in Figure 1k show baseline spontaneous firing rates, since all start with light ON. While it is difficult to ascertain cell type from spike waveform alone, the caveat that some neurons in the PYR group may be inhibitory interneurons should at least be stated and discussed, if not somehow quantified.\n\n2) The analysis extensively uses correlation coefficients, it is not clear how these are conducted. Were neuron vectors in one trial first averaged across the population, then the average vectors correlated between trials in light ON or light OFF conditions? This would result in a different outcome than averaging the ON-OFF correlations of vectors for individual neurons. Individualistic differences might be lost with population averaging prior to correlation. In general, more description in the methods section would be helpful for interpretation and reproduction of the findings and the metric (i.e. Pearson's Correlation) should be stated.\n\n3) Was the cross-correlation between SL and PYR vectors on the same trial performed in addition to determining latency to response. It seems if one is looking for a temporal relationship between the two classes that might be a way to find it. Alternatively, it could show that there is no temporal dependence of PYR activity on SL activity which would support the main findings of the study.\n\n4) The last paragraph of the Results section is a bit hand-waving. The results described are not really quantified and more observational. This does not seem to add much to the overall study.\n\n5) The details of anesthesia for day-of recording preparations are absent. What anesthesia was used? How long was allowed for the animal to wake before recording?\n\nReviewer #3:\n\nFranks et al., ask a critical question about the olfactory cortex circuitry: How do two adjacent and connected cell classes interact in-vivo. They use a transgenic mouse line to express inhibitory opsins or DREADDs exclusively in SLs and show that silencing SLs has very little effect on the peak firing rate of odour activated non-SL pyramidal cells. This indicates that SLs are not a key contributor to PYR cell activity, which allows them to rule out a largely feedforward model of SLs feeding odour information to PYRs. in addition they find that odour response latencies are comparable, further supporting a parallel rather than serial circuit. Finally, they find that odour responses are themselves distinct in SLs and PYRs.\n\nThe experiments are well conducted and the conclusions are for the most part well supported by the experiments. However, I have a few concerns.\n\nFirst, I have a technical concern regarding opto-tagging. The authors employ inhibitory opsins to identify SL cells using opto-tagging. The choice of inhibitory opsins is important because they subsequently inhibit the SL population with them. However, they use a fairly long 10ms window for identifying opto-tagged cells, which opens the possibility of the inhibition being synaptic rather than opto. Also, detecting a drop in activity from a low baseline is inherently difficult. One possible way of establishing that their results are not influenced by poor opto-tagging classification is to use excitatory tagging in a separate group of animals, and conduct the same characterisation analysis as Figure 5, and seeing if they obtain similar baseline firing rates and other response properties. Excitatory tagging would be advantageous, considering that SLs have very little connections among each other and weak connections to PYR cells, alleviating usual concerns of spillover in excitatory opto-tagging. This is not essential but should be considered.\n\nFurther, the authors find about twice the baseline firing rate of SLs, this could reflect that inhibitory opto-tagging in this case is biased to pick up higher firing rate cells, since with lower firing rate cells it will be difficult to detect small drops in firing rate. I do not understand why the authors claim the inhibitory tagging is not biasing to higher firing rate cells, just because their method categorises some low firing rate cells as opto-tagged.\n\nIn Figures 2 and 3, the authors suppress SLs and find that the peak firing rate of PYRs is unchanged in positively responding cells. My concern is that peak firing rate is a limited view of the cell's response. The authors could look at other metrics, such as the median or profile of response. Further, while the decoding analysis is excellent, it would be well complemented by an encoding analysis, where the authors could look at response properties such as stimulus selectivity and ask whether this changes. Indeed, the authors have explored these very metrics in Figure 5. It would be very insightful to compare these metrics of sparseness, selectivity, correlations etc while silencing SLs. Also, an important control that seems to be missing is the no-opsin light stimulation control. This control would be important when looking at the broader range of response metrics and establishing whether any changes observed are accounted for by light alone.\n\nThe authors make a major claim of the study in Figures 2 and 3 by restricting the analysis to odour activated cells only. I would find it useful to include the results for cells inhibited by odours also, and indeed the full distribution across the population.\n\nIn summary, as the authors mention in the discussion, it would be truly surprising if a cell population anatomically adjacent to and connected to PYRs has no discernible effect on the PYRs response properties. To establish such a surprising result would require a more comprehensive use of firing metrics and wider selection of cells.\n",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "81c09ed5-af56-4774-afac-cf51317c35b4",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C1",
+      "claim": "The olfactory (piriform, PCx) cortex contains two main types of principal neurons: semilunar (SL) and superficial pyramidal (PYR) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The olfactory (piriform, PCx) cortex contains two main types of principal neurons, semilunar (SL) and superficial pyramidal (PYR) cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PCx anatomy that is stated directly in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "b5589dce-a9c1-4e95-91fb-c2a32df3f417",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C2",
+      "claim": "SLs and PYRs have distinct morphologies, local connectivity, biophysical properties, and downstream projection targets.",
+      "claim_type": "EXPLICIT",
+      "source": "SLs and PYRs have distinct morphologies, local connectivity, biophysical properties, and downstream projection targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations throughout the manuscript and is presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "76b4bc49-9c89-4b42-8c0d-ee15a93aa49d",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C3",
+      "claim": "Silencing SLs did not alter PYR odor responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, silencing SLs did not alter PYR odor responses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "3e3f7336-8e81-4d7e-9949-8648eba499be",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C4",
+      "claim": "SLs and PYRs exhibited differences in odor tuning properties and response discriminability.",
+      "claim_type": "EXPLICIT",
+      "source": "SLs and PYRs exhibited differences in odor tuning properties and response discriminability that were consistent with their distinct embeddings within a sensory-associative cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by experimental data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "5321d3b7-4fdb-494d-a739-8d2882bbc72c",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C5",
+      "claim": "SLs and PYRs form parallel channels for differentially processing odor information in and through PCx.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results therefore suggest that SLs and PYRs form parallel channels for differentially processing odor information in and through PCx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the experimental results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "b873d1fa-a97c-4b0a-9bf6-4642e7223a83",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C6",
+      "claim": "Superficial pyramidal (PYR) cells in deeper layer II receive afferent olfactory bulb (OB) inputs on their distal apical dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Superficial pyramidal (PYR) cells in deeper layer II receive afferent olfactory bulb (OB) inputs on their distal apical dendrites, dense excitatory intracortical inputs on their proximal apical dendrites, and top-down inputs from other brain regions on their basal dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge supported by the citations provided (Heimer and Kalil, 1978; Haberly, 1983; Bekkers and Suzuki, 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "647f87c4-e04c-4fd1-bf19-c846e0cfd6d1",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C7",
+      "claim": "Semilunar (SL) cells in superficial layer II receive strong OB inputs on their distal apical dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, semilunar (SL) cells in superficial layer II receive strong OB inputs on their distal apical dendrites, few, if any, excitatory intracortical inputs, and lack basal dendrites (Figure 1a; Heimer and Kalil, 1978; Haberly, 1983; Bekkers and Suzuki, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge supported by citations and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "2dcc6092-74cc-4937-a4bd-5782ee583d01",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C8",
+      "claim": "SL cells receive few, if any, excitatory intracortical inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, semilunar (SL) cells in superficial layer II receive strong OB inputs on their distal apical dendrites, few, if any, excitatory intracortical inputs, and lack basal dendrites (Figure 1a; Heimer and Kalil, 1978; Haberly, 1983; Bekkers and Suzuki, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior literature as indicated by the citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "e4c69e38-a01a-4cbc-85fb-0b7884a41f7a",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C9",
+      "claim": "SL cells lack basal dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, semilunar (SL) cells in superficial layer II receive strong OB inputs on their distal apical dendrites, few, if any, excitatory intracortical inputs, and lack basal dendrites (Figure 1a; Heimer and Kalil, 1978; Haberly, 1983; Bekkers and Suzuki, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "771fc61b-b33b-4f4a-afc1-76c6f4c39fcd",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C10",
+      "claim": "SLs and PYRs project to distinct downstream regions.",
+      "claim_type": "EXPLICIT",
+      "source": "That SLs and PYRs project to distinct downstream regions (Diodato et al., 2016; Mazo et al., 2017) lends support to a parallel model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "810f9f63-48df-41af-bf4b-011d3d56f3c3",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C11",
+      "claim": "SLs responded 2\u20134 ms earlier than PYRs following electrical stimulation of OB mitral cell axons in the lateral olfactory tract (LOT).",
+      "claim_type": "EXPLICIT",
+      "source": "Support for this sequential model stems from observations that SLs receive stronger OB inputs than PYRs but little or no intracortical excitatory inputs, and that SLs respond 2\u20134 ms earlier than PYRs following electrical stimulation of OB mitral cell axons in the lateral olfactory tract (LOT) (Ketchum and Haberly, 1993; Suzuki and Bekkers, 2006; Suzuki and Bekkers, 2011; Wiegand et al., 2011; Choy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior studies as indicated by the citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "6cff37f8-734b-4f77-b0b2-d6b304a1958b",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C12",
+      "claim": "In PCx, Cre-expressing cells were largely restricted to the superficial half of layer II (i.e., layer IIa), where SLs are located.",
+      "claim_type": "EXPLICIT",
+      "source": "In PCx, Cre-expressing cells were largely restricted to the superficial half of layer II (i.e., layer IIa), where SLs are located (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "703349c0-6052-464d-990f-7ba71430183a",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C13",
+      "claim": "87.9% \u00b1 3.54% of Ntng1+ cells displayed hallmark morphological characteristics of SLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ntng1+ cells displayed hallmark morphological characteristics of SLs: half-moon-shaped somata, two prominent apical dendrites emerging directly from the cell body and no basal dendrites (percent Ntng1+ cells with SL morphology, mean \u00b1 SD: 87.9% \u00b1 3.54%, n = 3 mice; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "a00272d8-dbce-415d-818e-599b65682499",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C14",
+      "claim": "Ntng1+ and Ntng1- cells exhibited the intrinsic biophysical properties described in SLs and PYRs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Ntng1+ and Ntng1- cells exhibited the intrinsic biophysical properties described in SLs and PYRs, respectively (Figure 1c\u2013h; Suzuki and Bekkers, 2006; Suzuki and Bekkers, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 1c-h and comparison to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "71f88e1b-c06c-4ec3-a3e7-1b36c04b7a4c",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C15",
+      "claim": "Ntng1+ cells make glutamatergic synapses onto Ntng1- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These light-evoked responses were completely blocked by glutamate receptor antagonists (NBQX and CPP) (Figure 1\u2014figure supplement 3b). Thus, Ntng1+ cells make glutamatergic synapses onto Ntng1- cells, but not onto other Ntng1+ cells, consistent with the synaptic connectivity of SLs and PYRs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 1\u2014figure supplement 3b showing pharmacological blockade.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "1ca16d5b-9d5a-4e3d-81d8-121e9429d8ee",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C16",
+      "claim": "Ntng1+ cells do not make glutamatergic synapses onto other Ntng1+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Ntng1+ cells make glutamatergic synapses onto Ntng1- cells, but not onto other Ntng1+ cells, consistent with the synaptic connectivity of SLs and PYRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing minimal light-evoked currents in Ntng1+ cells when Ntng1+ cells expressing ChR2 were activated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "76f471e4-93c0-4b8a-bbd8-211196e3401d",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C17",
+      "claim": "SLs receive some intracortical excitatory inputs from other PCx neurons, although these were 5.4\u00d7 weaker than inputs received by PYRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we now observed small inward currents in SLs, indicating that SLs do receive some intracortical excitatory inputs from other PCx neurons, although these were 5.4\u00d7 weaker than inputs received by PYRs (Figure 1\u2014figure supplement 3g and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from experimental data shown in Figure 1\u2014figure supplement 3g and h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "89af35fc-a3f4-4c65-9cfb-f07495411128",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C18",
+      "claim": "SLs had higher spontaneous spike rates than PYRs (median SL: 1.99 Hz, n = 426 cells; median PYR: 1.03 Hz, n = 464 cells; p=5.08 \u00d7 10\u201313).",
+      "claim_type": "EXPLICIT",
+      "source": "SLs had higher spontaneous spike rates than PYRs (median SL: 1.99 Hz, n = 426 cells; median PYR: 1.03 Hz, n = 464 cells; p=5.08 \u00d7 10\u201313, unpaired t-test; Figure 1l)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 1l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "eb2bf625-be14-45a6-a7e1-0a3bcae303b1",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C19",
+      "claim": "During light-on trials, odor-evoked activity was markedly suppressed in SLs but remained unchanged in PYRs.",
+      "claim_type": "EXPLICIT",
+      "source": "During light-on trials, odor-evoked activity, measured as response peaks in a 300 ms period after odor inhalation, was markedly suppressed in SLs but remained unchanged in PYRs (Figure 2f and g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 2f and g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "61de2ded-63b5-40cc-836b-c760bfb8ee59",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C20",
+      "claim": "Median peak firing rate for significantly activated SL responses was 29.7 Hz during light-off and 13.0 Hz during light-on (n = 101 cell-odor pairs; p=2.71 \u00d7 10\u201312).",
+      "claim_type": "EXPLICIT",
+      "source": "This was the case when we only considered robustly activated responses (median peak firing rate for significantly activated responses [p<0.05, Wilcoxon rank-sum test]: SL, light-off: 29.7 Hz, light-on: 13.0 Hz; n = 101 cell-odor pairs; p=2.71 \u00d7 10\u201312, paired t-test; PYR, light-off: 24.9 Hz, light-on: 28.2 Hz; n = 97 cell-odor pairs; p=0.234; Figure 2h)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "8033c700-4b1a-49d9-a948-445fad60c1aa",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C21",
+      "claim": "Median peak firing rate for significantly activated PYR responses was 24.9 Hz during light-off and 28.2 Hz during light-on (n = 97 cell-odor pairs; p=0.234).",
+      "claim_type": "EXPLICIT",
+      "source": "This was the case when we only considered robustly activated responses (median peak firing rate for significantly activated responses [p<0.05, Wilcoxon rank-sum test]: SL, light-off: 29.7 Hz, light-on: 13.0 Hz; n = 101 cell-odor pairs; p=2.71 \u00d7 10\u201312, paired t-test; PYR, light-off: 24.9 Hz, light-on: 28.2 Hz; n = 97 cell-odor pairs; p=0.234; Figure 2h)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "ed2d3c5b-f93c-4db7-bcfb-bebba06adfea",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C22",
+      "claim": "SL response patterns across odors were significantly altered in the light-on trials compared to the light-off (off-off, 0.895 [0.888, 0.901]; on-off, 0.583 [0.526, 0.633]; unpaired t-test, p=5.10 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "SL response patterns across odors were significantly altered in the light-on trials compared to the light-off (off-off, 0.895 [0.888, 0.901]; on-off, 0.583 [0.526, 0.633]; unpaired t-test, p=5.10 \u00d7 10\u20136; Figure 2j)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 2j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "1b1f40b6-0e5c-4e96-a5a9-d6cc79484312",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C23",
+      "claim": "PYR response patterns were unchanged between light-on and light-off conditions (off-off, 0.834 [0.816, 0.861]; on-off, 0.838 [0.792, 0.876]; unpaired t-test, p=0.882).",
+      "claim_type": "EXPLICIT",
+      "source": "while PYR response patterns were unchanged (off-off, 0.834 [0.816, 0.861]; on-off, 0.838 [0.792, 0.876]; unpaired t-test, p=0.882).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "89185719-7a0c-4f1d-897f-52419ce14d60",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C24",
+      "claim": "Odor identity decoding within each condition revealed a substantial decrease in SL performance in the light-on condition (p=0.0116), with no change in PYR performance (p=0.919).",
+      "claim_type": "EXPLICIT",
+      "source": "Odor identity decoding within each condition revealed a substantial decrease in SL performance in the light-on condition, with no change in PYR performance (SL, p=0.0116; PYR, p=0.919, paired t-test; Figure 2k and l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from decoding analysis shown in Figure 2k and l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "0670b6f3-7b6b-4c5c-99ef-b4cac762deea",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C25",
+      "claim": "Following administration of CNO/C21, there was a gradual and marked decrease in SL spontaneous activity and a concomitant small decrease in PYR spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Following administration of the DREADD agonists, CNO or Compound 21 (C21), we observed a gradual and marked decrease in SL spontaneous activity and a concomitant small decrease in PYR spontaneous activity (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "413d5ef5-c1a4-4449-a7a0-00f3331adde2",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C26",
+      "claim": "Odor-evoked response peaks in SLs were lower after CNO/C21 injection (median peak firing rate: SL, baseline: 14.8 Hz, CNO/C21: 6.38 Hz; n = 124 cell-odor pairs; paired t-test, p=0.0086).",
+      "claim_type": "EXPLICIT",
+      "source": "This was the case for both robustly activated responses (median peak firing rate: SL, baseline: 14.8 Hz, CNO/C21: 6.38 Hz; n = 124 cell-odor pairs; paired t-test, p=0.0086; PYR, baseline: 18.5 Hz, CNO/C21: 17.1 Hz; p=0.0338; n = 96 cell-odor pairs; Figure 3f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "2f87a651-fb79-453c-80f9-ca328d629fe0",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C27",
+      "claim": "PYR odor-evoked response peaks were largely unaffected after CNO/C21 injection (median peak firing rate: PYR, baseline: 18.5 Hz, CNO/C21: 17.1 Hz; p=0.0338; n = 96 cell-odor pairs).",
+      "claim_type": "EXPLICIT",
+      "source": "This was the case for both robustly activated responses (median peak firing rate: SL, baseline: 14.8 Hz, CNO/C21: 6.38 Hz; n = 124 cell-odor pairs; paired t-test, p=0.0086; PYR, baseline: 18.5 Hz, CNO/C21: 17.1 Hz; p=0.0338; n = 96 cell-odor pairs; Figure 3f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "5d9d2b89-160a-479d-8353-fd171d5c59db",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C28",
+      "claim": "SL responses measured before and after CNO/C21 were markedly different (baseline-baseline, 0.944 [0.920, 0.953]; CNO/C21-baseline, 0.300 [0.220, 0.393]; p=1.46 \u00d7 10\u20137).",
+      "claim_type": "EXPLICIT",
+      "source": "Responses measured before and after CNO/C21 were markedly different in SLs (baseline-baseline, 0.944 [0.920, 0.953]; CNO/C21-baseline, 0.300 [0.220, 0.393]; p=1.46 \u00d7 10\u20137, unpaired t-test; Figure 3h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 3h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "40b0516c-88df-41a9-9ad6-edd22a97ed7d",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C29",
+      "claim": "PYR responses also changed after CNO/C21 administration (baseline-baseline, 0.950 [0.913, 0.968]; CNO/C21-baseline, 0.729 [0.7, 0.759]; p=2.53 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "PYR responses also changed after CNO/C21 administration (baseline-baseline, 0.950 [0.913, 0.968]; CNO/C21-baseline, 0.729 [0.7, 0.759]; p=2.53 \u00d7 10\u20136; Figure 3h)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 3h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "4786e4b7-3753-4323-9bdc-a5bd32719dca",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C30",
+      "claim": "The distributions of response latencies of SLs and PYRs were similar (median latency to peak: SL, 59.0 ms; PYR, 57.0 ms; Wilcoxon rank-sum test: p=0.199).",
+      "claim_type": "EXPLICIT",
+      "source": "In both measures, the distributions of response latencies of SLs and PYRs were similar (median latency to peak: SL, 59.0 ms; PYR, 57.0 ms; Wilcoxon rank-sum test: p=0.199; median onset latency: SL, 38.2 ms; PYR, 38.2 ms; Wilcoxon rank-sum test: p=0.587, Figure 4b and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 4b and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "6b270c93-b655-466a-8da9-b7295b483b5b",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C31",
+      "claim": "Median onset latency for SLs was 38.2 ms and for PYRs was 38.2 ms (Wilcoxon rank-sum test: p=0.587).",
+      "claim_type": "EXPLICIT",
+      "source": "In both measures, the distributions of response latencies of SLs and PYRs were similar (median latency to peak: SL, 59.0 ms; PYR, 57.0 ms; Wilcoxon rank-sum test: p=0.199; median onset latency: SL, 38.2 ms; PYR, 38.2 ms; Wilcoxon rank-sum test: p=0.587, Figure 4b and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 4b and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "8b496292-622f-4ee1-8116-8ea7a05e24bf",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C32",
+      "claim": "SLs had slightly more suppressed odor responses than PYRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cell types exhibited similar patterns of odor-activated and -suppressed responses but SLs had slightly more suppressed odor responses than PYRs (Figure 5a and b), likely due, in part, to their higher baseline firing rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experimental data shown in Figure 5a and b, with an inference about the cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "4f89b4c8-d98f-485d-a46c-13eb67a6660a",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C33",
+      "claim": "SLs had significantly lower lifetime sparseness values than PYRs (mean lifetime sparseness: SL, 0.434 [0.414, 0.458], n = 426 cells; PYR, 0.558 [0.536, 0.581], n = 464 cells; p=2.61 \u00d7 10\u201314).",
+      "claim_type": "EXPLICIT",
+      "source": "SLs had significantly lower lifetime sparseness values than PYRs, indicating that SLs are less odor selective than PYRs (mean lifetime sparseness: SL, 0.434 [0.414, 0.458], n = 426 cells; PYR, 0.558 [0.536, 0.581], n = 464 cells; p=2.61 \u00d7 10\u201314, unpaired t-test; Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "2dd1d88f-0bbb-4633-9190-dd0ecb6a1f05",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C34",
+      "claim": "The SL population response to each odor was significantly less sparse than the PYR population response (SL, 0.686 [0.681, 0.691]; PYR, 0.755 [0.737, 0.771]; n = 10 odors; p=1.61 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "The SL population response to each odor was significantly less sparse than the PYR population response (SL, 0.686 [0.681, 0.691]; PYR, 0.755 [0.737, 0.771]; n = 10 odors; p=1.61 \u00d7 10\u20136, unpaired t-test; Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "e9d28863-57c8-40dc-82ee-f10a67427dac",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C35",
+      "claim": "Response reliability was similar between SLs and PYRs (SL, 0.474 [0.452, 0.497]; PYR, 0.499 [0.472, 0.525]; n = 10 odors; p=0.191).",
+      "claim_type": "EXPLICIT",
+      "source": "By this metric, response reliability was similar between SLs and PYRs (SL, 0.474 [0.452, 0.497]; PYR, 0.499 [0.472, 0.525]; n = 10 odors; p=0.191, unpaired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "ecd11184-d0a0-4cce-8753-172a0709fabd",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C36",
+      "claim": "Odors were slightly more discriminable in PYR responses (SL, 0.266 [0.254, 0.279]; PYR, 0.238 [0.220, 0.253]; p=0.0193).",
+      "claim_type": "EXPLICIT",
+      "source": "but odors were slightly more discriminable in PYR responses (SL, 0.266 [0.254, 0.279]; PYR, 0.238 [0.220, 0.253]; p=0.0193; Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "190df6a0-90ad-4ac5-ae07-babc38ff9fe3",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C37",
+      "claim": "Odors were more separable in PYR responses than in SL responses (median distance: SL, 19.4; PYR, 27.4; n = 45 odor pairs; p=3.21 \u00d7 10\u20137).",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the Euclidean distances between the means of the first six principal components of pairs of odors and found that odors were more separable in PYR responses than in SL responses (median distance: SL, 19.4; PYR, 27.4; n = 45 odor pairs; p=3.21 \u00d7 10\u20137, unpaired t-test; Figure 5h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 5h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "9fdb0055-0f76-40de-912e-4a8eaf1cc239",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C38",
+      "claim": "Odor classification accuracy, at all pseudopopulation sizes, was similar in SLs and PYRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we asked if a downstream decoder could more accurately identify odors based on PYR versus SL odor-evoked activity. However, odor classification accuracy, at all pseudopopulation sizes, was similar in SLs and PYRs (Figure 5i, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from decoding analysis shown in Figure 5i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "bfde79cc-ff42-495b-b1a7-7d8c6910da31",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C39",
+      "claim": "The Ntng1Cre mouse line expresses Cre-recombinase in a subpopulation of PCx principal neurons whose laminar, morphological, intrinsic, and local connectivity properties are congruent with those of SLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the Ntng1Cre mouse expresses Cre-recombinase in a subpopulation of PCx principal neurons whose laminar, morphological, intrinsic, and local connectivity properties are congruent with those of SLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental observations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "62152f34-7f42-4244-88ea-f9d6b7673b35",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C40",
+      "claim": "SLs preferentially project to the posterior PCx, posteromedial cortical amygdala, and lateral entorhinal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SLs preferentially project to the posterior PCx, posteromedial cortical amygdala, and lateral entorhinal cortex while PYRs project back to the OB, medial prefrontal and orbitofrontal cortices (Diodato et al., 2016; Mazo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "2b42c176-c15a-4a34-b9a3-621ebb69ea26",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C41",
+      "claim": "PYRs project back to the OB, medial prefrontal and orbitofrontal cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SLs preferentially project to the posterior PCx, posteromedial cortical amygdala, and lateral entorhinal cortex while PYRs project back to the OB, medial prefrontal and orbitofrontal cortices (Diodato et al., 2016; Mazo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "206f1586-09e8-4c85-87d7-dd22ec735628",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C42",
+      "claim": "Inputs onto PYRs from other PYRs are approximately five times stronger than inputs from SLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Inputs onto PYRs from other PYRs are approximately five times stronger than inputs from SLs (Figure 1\u2014figure supplement 3e and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from experimental data shown in Figure 1\u2014figure supplement 3e and h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "aadc4332-dbbf-4292-b247-7cd7a0807767",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C43",
+      "claim": "Resting membrane potentials of Ntng1+ cells were \u201365.4 mV [\u201370,\u201360] (n = 11 cells) and Ntng1- cells were \u201377.0 mV [\u201380.6,\u201372.9] (n = 7 cells; p=5.27 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "(e) Resting membrane potentials of Ntng1+ and Ntng1- cells (Ntng1+: \u201365.4 mV [\u201370,\u201360], n = 11 cells; Ntng1-: \u201377.0 mV [\u201380.6,\u201372.9], n = 7 cells; p=5.27 \u00d7 10\u20134, unpaired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "f8737f07-799a-4153-ba1a-8754f739ae15",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C44",
+      "claim": "Input resistances of Ntng1+ cells were 541 M\u03a9 [415, 669] (n = 9 cells) and Ntng1- cells were 166 M\u03a9 [104, 243] (n = 8 cells; p=2.15 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "(f) Input resistances of Ntng1+ and Ntng1- cells (Ntng1+: 541 M\u03a9 [415, 669], n = 9 cells; Ntng1-: 166 M\u03a9 [104, 243], n = 8 cells; p=2.15 \u00d7 10\u20134, unpaired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "6f864e57-efa0-444c-adf1-266324be58a8",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C45",
+      "claim": "Membrane time constants of Ntng1+ cells were 32.1 ms [27.7, 35.8] (n = 11 cells) and Ntng1- cells were 13.6 ms [11.2, 16.0] (n = 8 cells; p=1.29 \u00d7 10\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "(g) Membrane time constants of Ntng1+ and Ntng1- cells (Ntng1+: 32.1 ms [27.7, 35.8], n = 11 cells; Ntng1-: 13.6 ms [11.2, 16.0], n = 8 cells; p=1.29 \u00d7 10\u20135, unpaired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "8e09cc9e-a1f9-473f-bb92-b791f59ad8cb",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C46",
+      "claim": "Burst indices of Ntng1+ cells were 1.16 [0.926, 1.41] (n = 8 cells) and Ntng1- cells were 4.57 [3.12, 6.19] (n = 8 cells; p=1.43 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "(h) Burst indices of Ntng1+ and Ntng1- cells (Ntng1+: 1.16 [0.926, 1.41], n = 8 cells; Ntng1-: 4.57 [3.12, 6.19], n = 8 cells; p=1.43 \u00d7 10\u20134, unpaired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "c23c0f84-ebe7-46ea-be58-4d10d98f9da1",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C47",
+      "claim": "PCx is a three-layered allocortex with principal neurons primarily located in layer II.",
+      "claim_type": "EXPLICIT",
+      "source": "Piriform cortex (PCx) is a three-layered allocortex with principal neurons primarily located in layer II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about PCx.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "add2efd5-9bab-4a55-a96a-777575ce4642",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C48",
+      "claim": "Individual PCx neurons integrate convergent inputs from different combinations of glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual PCx neurons integrate convergent inputs from different combinations of glomeruli (Apicella et al., 2010; Davison and Ehlers, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "dfb0b798-8523-4504-9e9f-c2f22ac4aab8",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C49",
+      "claim": "SLs almost exclusively receive afferent OB inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "SLs almost exclusively receive afferent OB inputs, while PYRs receive both afferent OB inputs and dense intracortical inputs from SLs and other PYRs (Johnson et al., 2000; Franks et al., 2011; Suzuki and Bekkers, 2011; Hagiwara et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "0aa2a0fa-f5e9-4d24-96a6-38d5ad2c576c",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C50",
+      "claim": "PYRs receive both afferent OB inputs and dense intracortical inputs from SLs and other PYRs.",
+      "claim_type": "EXPLICIT",
+      "source": "SLs almost exclusively receive afferent OB inputs, while PYRs receive both afferent OB inputs and dense intracortical inputs from SLs and other PYRs (Johnson et al., 2000; Franks et al., 2011; Suzuki and Bekkers, 2011; Hagiwara et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "bbd7e851-9bf3-4f3f-a924-3414e5bedd79",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C51",
+      "claim": "Odor responses in layer III of PCx were more correlated between chemically similar odor stimuli than responses in layer II or the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that odor responses in layer III of PCx, which only contains PYRs, were more correlated between chemically similar odor stimuli than responses in layer II, which contain both SLs and PYRs, or the OB (Pashkovski et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study as indicated by the citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "f6d50c21-cf6c-4e1c-90f7-4d5bdf8b7c03",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C52",
+      "claim": "Cells in the ventral telencephalon (Vv) of zebrafish receive primarily OB inputs and exhibit broader stimulus tuning and more overlapping odor representations than those in the dorsal telencephalon (Dp).",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings on the stimulus selectivity and discriminability of SLs and PYRs are also comparable to those reported in two zebrafish odor centers downstream of the OB: cells in the ventral telencephalon (Vv) receive primarily OB inputs and exhibit broader stimulus tuning and more overlapping odor representations than those in the dorsal telencephalon (Dp), which is the teleost homolog of PCx (Yaksi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study as indicated by the citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "f5232320-3923-496a-9f38-29127e3d0f20",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C53",
+      "claim": "The dorsal telencephalon (Dp) in zebrafish is the teleost homolog of PCx.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings on the stimulus selectivity and discriminability of SLs and PYRs are also comparable to those reported in two zebrafish odor centers downstream of the OB: cells in the ventral telencephalon (Vv) receive primarily OB inputs and exhibit broader stimulus tuning and more overlapping odor representations than those in the dorsal telencephalon (Dp), which is the teleost homolog of PCx (Yaksi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "18354832-6907-4997-ba3d-a9fba88df7dc",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C54",
+      "claim": "Different mitral cells respond to odors with variable latencies that tile the entire ~300 ms sniff cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "However, different mitral cells respond to odors with variable latencies that tile the entire ~300 ms sniff cycle (Cury and Uchida, 2010; Shusterman et al., 2011; Bolding and Franks, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "fa10bc4e-3819-499a-adef-fb9a8ece45ee",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C55",
+      "claim": "PCx spans ~4 mm along its anterior-posterior axis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PCx spans ~4 mm along its anterior-posterior axis and is a long-range recurrent network with neurons forming intracortical connections with neurons >1 mm away (Johnson et al., 2000; Franks et al., 2011; Hagiwara et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an anatomical measurement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "fd6d8ba1-ad3c-4fca-8157-2130a710e0fd",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C56",
+      "claim": "PCx is a long-range recurrent network with neurons forming intracortical connections with neurons >1 mm away.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PCx spans ~4 mm along its anterior-posterior axis and is a long-range recurrent network with neurons forming intracortical connections with neurons >1 mm away (Johnson et al., 2000; Franks et al., 2011; Hagiwara et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "092a63ab-f99c-4884-a390-287f40f6d74c",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C57",
+      "claim": "PCx and the hippocampus are analogous structures.",
+      "claim_type": "EXPLICIT",
+      "source": "PCx and the hippocampus are analogous structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement based on structural and functional similarities.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "30e515b6-8708-4926-8fc3-1dbf6bfe6718",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C58",
+      "claim": "Both PCx and hippocampus are trilaminar paleocortices with extensive recurrent networks that support unsupervised learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Both are trilaminar paleocortices with extensive recurrent networks (Guzman et al., 2016) that support unsupervised learning (Barkai et al., 1994; Haberly, 2001; Rolls, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "899a8e21-c59f-4802-b5a3-fef903043c17",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C59",
+      "claim": "In terms of morphology and connectivity, PYRs are analogous to CA3 pyramidal cells and SLs to dentate gyrus (DG) granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of morphology and connectivity, PYRs are analogous to CA3 pyramidal cells and SLs to dentate gyrus (DG) granule cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement based on structural similarities.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "3ae97774-7af6-4a0d-b686-a8b8056e4db2",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C60",
+      "claim": "DG granule cells are thought to drive the acquisition of memories, but not retrieval, and perform pattern separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The roles of DG and CA3 in the encoding of episodic memories are relatively well characterized; DG granule cells are thought to drive the acquisition of memories, but not retrieval, and perform pattern separation while CA3 pyramidal cells are thought to store and retrieve memories and perform pattern completion (Leutgeb et al., 2007; Neunuebel and Knierim, 2014; Madar et al., 2019; Hainmueller and Bartos, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from hippocampal research supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "b8f4c3b5-fb92-4692-a394-21078cb36a84",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C61",
+      "claim": "CA3 pyramidal cells are thought to store and retrieve memories and perform pattern completion.",
+      "claim_type": "EXPLICIT",
+      "source": "The roles of DG and CA3 in the encoding of episodic memories are relatively well characterized; DG granule cells are thought to drive the acquisition of memories, but not retrieval, and perform pattern separation while CA3 pyramidal cells are thought to store and retrieve memories and perform pattern completion (Leutgeb et al., 2007; Neunuebel and Knierim, 2014; Madar et al., 2019; Hainmueller and Bartos, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from hippocampal research supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "25b9be98-b8e6-4819-83c2-e28416df315e",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C62",
+      "claim": "When DG projections to CA3 are silenced or ablated, the ability of CA3 to retrieve memories is unimpaired.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that although DG granule cells synapse onto CA3 pyramidal cells, the DG-CA3 circuit is not exclusively sequential. CA3 also receives direct input from the entorhinal cortex, and when DG projections to CA3 are silenced or ablated, the ability of CA3 to retrieve memories is unimpaired (Lee and Kesner, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study as indicated by the citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "b2941d63-4a3c-4311-95af-36e968a12d7c",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C63",
+      "claim": "PYRs were more robust to degraded afferent OB inputs and exhibited more persistent odor-evoked activity after stimulus offset than SLs.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study with the Ntng1Cre mouse line, we found that PYRs were more robust to degraded afferent OB inputs and exhibited more persistent odor-evoked activity after stimulus offset than SLs (Bolding et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study by the authors as indicated by the citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "a97a3677-4821-4bb2-b677-b2ae161bb1d7",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C64",
+      "claim": "Only 7% of all recorded PCx neurons, and fewer than 1% of layer II PCx neurons, were GABAergic inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that only 7% of all recorded PCx neurons, and fewer than 1% of layer II PCx neurons, were GABAergic inhibitory neurons (Bolding and Franks, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study by the authors as indicated by the citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "e3e4357d-07eb-4cd4-8312-a80115b90c88",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "claim_id": "C65",
+      "claim": "Odor representations in PCx do not appear to encode odor value or be task-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this seems unlikely given recent evidence that odor representations in PCx do not appear to encode odor value or be task-specific (Gadziola et al., 2020; Millman and Murthy, 2020; Wang et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "70b20cba-56bc-4fa4-82f4-f3937abbbd50",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Ntng1Cre mouse line selectively labels semilunar (SL) cells in piriform cortex layer IIa with appropriate morphological, laminar, and biophysical properties. Ntng1+ cells showed SL-characteristic morphology (87.9% \u00b1 3.54%), were restricted to layer IIa, and exhibited distinct biophysical properties compared to Ntng1- cells including more depolarized resting potentials, higher input resistance, longer time constants, and lower burst indices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 and C39 provide converging anatomical and morphological evidence, while C43-C46 provide quantitative biophysical measurements with appropriate statistical tests (all p<0.001). The data demonstrate that the Ntng1Cre line is a valid genetic tool for targeting SLs, which is foundational for all subsequent experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "49fa0505-a887-4efc-acf3-ebf141a589d1",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SLs make glutamatergic synapses onto PYRs but not onto other SLs, and receive weak intracortical excitatory inputs. Optogenetic activation of Ntng1+ cells evoked glutamate receptor-dependent responses in PYRs but minimal responses in other SLs. When all PCx neurons were activated, SLs received intracortical inputs that were 5.4\u00d7 weaker than those received by PYRs, and PYR-to-PYR connections were ~5\u00d7 stronger than SL-to-PYR connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 and C42 are supported by pharmacological validation (complete blockade by NBQX/CPP) and quantitative measurements from voltage-clamp recordings shown in Figure 1\u2014figure supplement 3. The connectivity pattern is consistent with prior literature and validates the functional properties of the Ntng1Cre-labeled cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "8a57cbe6-a9af-48e2-a026-38cfecfedd09",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic suppression of SLs markedly reduced SL odor responses but did not alter PYR odor responses or population response patterns. During light-on trials, SL median peak firing decreased from 29.7 Hz to 13.0 Hz (p=2.71\u00d710\u207b\u00b9\u00b2), while PYR responses remained unchanged (24.9 Hz vs 28.2 Hz, p=0.234). SL response patterns were significantly altered (correlation: 0.895 vs 0.583, p=5.10\u00d710\u207b\u2076), but PYR patterns were unchanged (0.834 vs 0.838, p=0.882).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C19-C24 present the core optogenetic manipulation result with appropriate statistical tests and controls. The data convincingly show that PYR odor responses are independent of SL activity, contradicting the sequential processing model. Sample sizes are adequate (n=9 experiments, 101 SL and 97 PYR cell-odor pairs) and the effect sizes are substantial for SLs but absent for PYRs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "0c85e491-ad36-41a9-a130-ce92aa75e029",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chemogenetic suppression of SLs using hm4di/CNO confirmed that PYR odor responses are largely independent of SL input. CNO/C21 administration caused gradual suppression of SL spontaneous and odor-evoked activity (baseline: 14.8 Hz, CNO: 6.38 Hz, p=0.0086), while PYR responses were minimally affected (baseline: 18.5 Hz, CNO: 17.1 Hz, p=0.0338). SL response patterns changed dramatically (correlation: 0.944 vs 0.300, p=1.46\u00d710\u207b\u2077), while PYR changes were smaller (0.950 vs 0.729, p=2.53\u00d710\u207b\u2076) and comparable to control conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 provide chemogenetic validation of the optogenetic findings with appropriate controls (mCherry/Arch without CNO, and mCherry/Arch with CNO). The temporal confound (30 min between baseline and CNO conditions) is acknowledged and controlled for. The effect on PYRs in the experimental group was not significantly different from controls (p=0.491), supporting independence of PYR responses from SL input.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "5ea411b6-723d-4a7b-b3e9-4212d7680bab",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SLs and PYRs exhibited similar odor response latencies. Median latency to peak was 59.0 ms for SLs and 57.0 ms for PYRs (p=0.199), and median onset latency was 38.2 ms for both cell types (p=0.587).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 are supported by quantitative latency measurements from a large dataset (n=15 experiments, 1352 SL and 1305 PYR cell-odor pairs for peak latency). The statistical tests are appropriate (Wilcoxon rank-sum) and show no significant difference. This contradicts the sequential model prediction that SLs should respond earlier than PYRs, though the authors acknowledge limitations of latency analysis in awake animals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "b1844a63-b473-4069-97c5-9c4ac65bcbba",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SLs and PYRs exhibit distinct odor tuning properties. SLs were less odor-selective (lifetime sparseness: 0.434 vs 0.558, p=2.61\u00d710\u207b\u00b9\u2074), had less sparse population responses (0.686 vs 0.755, p=1.61\u00d710\u207b\u2076), and odors were more discriminable in PYRs (correlation between odors: 0.266 vs 0.238, p=0.0193; Euclidean distance: 19.4 vs 27.4, p=3.21\u00d710\u207b\u2077). However, response reliability was similar (0.474 vs 0.499, p=0.191) and odor classification accuracy was equivalent at all population sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 provide comprehensive characterization of odor response properties with appropriate statistical tests and large sample sizes (426 SLs, 464 PYRs). The findings are internally consistent: SLs are more broadly tuned and less sparse, while PYRs show better discriminability. The lack of difference in decoding accuracy despite differences in discriminability is surprising but honestly reported. The data support the parallel processing model with differential encoding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "85636595-1b0d-47ba-a3f9-3e935c978dfd",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SLs and PYRs form parallel channels for differentially processing odor information in and through PCx, rather than operating in a sequential hierarchy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 represents the main conclusion, which is well-supported by the convergence of multiple lines of evidence: (1) PYR responses are independent of SL activity (C3, C19-C29), (2) response latencies are similar (C30-C31), (3) tuning properties differ in ways consistent with their connectivity (C32-C37), and (4) both cell types project to distinct downstream targets (C10, C40-C41). The parallel processing model is more consistent with the data than the sequential model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "5f8e1e27-eddd-4b30-9fba-ec5f58e7063a",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PCx contains two main types of principal neurons (SLs and PYRs) with distinct anatomical properties. PCx is a three-layered allocortex with principal neurons in layer II. PYRs receive OB inputs on distal apical dendrites, intracortical inputs on proximal apical dendrites, and top-down inputs on basal dendrites. SLs receive strong OB inputs on distal apical dendrites, few intracortical inputs, and lack basal dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C6-C9 describe established anatomical knowledge supported by multiple citations (Heimer and Kalil, 1978; Haberly, 1983; Bekkers and Suzuki, 2013). This provides essential background context for the study. C47 is basic anatomical knowledge about PCx structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "9d73a8bb-b30a-4e2e-ac18-fce6e2b3ae34",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SLs and PYRs project to distinct downstream regions and show differential response timing in slice preparations. SLs project to posterior PCx, posteromedial cortical amygdala, and lateral entorhinal cortex, while PYRs project to OB, medial prefrontal and orbitofrontal cortices. In slice experiments with LOT stimulation, SLs responded 2-4 ms earlier than PYRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C40-C41 cite prior literature (Diodato et al., 2016; Mazo et al., 2017; Ketchum and Haberly, 1993; Suzuki and Bekkers, 2006, 2011; Wiegand et al., 2011; Choy et al., 2017). These establish the anatomical basis for the parallel processing hypothesis and provide context for why the sequential model was previously favored. The authors' in vivo latency data (C30-C31) contradict the slice-based latency findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "cc462a2e-4591-4f64-a121-073e5f308a22",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SLs had higher spontaneous spike rates than PYRs (median: 1.99 Hz vs 1.03 Hz, p=5.08\u00d710\u207b\u00b9\u00b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 is a straightforward quantitative finding with appropriate statistics and large sample sizes (426 SLs, 464 PYRs). This validates that the recording and cell identification methods can resolve differences between cell types. Higher spontaneous rates in SLs may contribute to their higher suppressed odor responses (C32).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "bc52460a-90eb-439d-a63e-8177af073d54",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior studies have established that PCx neurons integrate convergent glomerular inputs, SLs primarily receive OB inputs while PYRs receive both OB and intracortical inputs, layer III PYR responses are more correlated for similar odors, zebrafish olfactory centers show analogous organization, mitral cells respond with variable latencies across the sniff cycle, and PCx is a long-range recurrent network spanning ~4 mm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C56 cite relevant prior literature that provides context for interpreting the current findings. These are appropriately cited background claims that help frame the discussion of results. The citations appear accurate based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "83afdda6-f16c-4772-9bfe-cdeb4ddd34c8",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PCx and hippocampus are analogous structures with similar organization. Both are trilaminar paleocortices with recurrent networks supporting unsupervised learning. PYRs are analogous to CA3 pyramidal cells and SLs to DG granule cells. In hippocampus, DG drives memory acquisition and pattern separation while CA3 stores/retrieves memories and performs pattern completion. CA3 memory retrieval is unimpaired when DG projections are silenced. Previous work showed PYRs are more robust to degraded OB input than SLs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 draw analogies between PCx and hippocampus based on structural and functional similarities, supported by appropriate citations. The analogy is used to interpret the parallel-loop organization and the independence of PYR responses from SL input (similar to CA3 independence from DG for retrieval). C63 cites the authors' prior work (Bolding et al., 2020). The analogies are reasonable but speculative regarding functional roles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    },
+    {
+      "id": "09350aca-4ed2-41b7-a6f8-c9df89d5a115",
+      "content_id": "fc84896a-a0c3-4d03-8ff5-d2e2ee6c9f6e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Only 7% of recorded PCx neurons were GABAergic inhibitory neurons, and odor representations in PCx do not encode odor value or appear task-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 cite prior work to support methodological decisions (justifying classification of non-SL units as PYRs) and to argue against task-dependent explanations for the findings. The citations appear appropriate (Bolding and Franks, 2018; Gadziola et al., 2020; Millman and Murthy, 2020; Wang et al., 2020).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:37:27.418617Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6cff37f8-734b-4f77-b0b2-d6b304a1958b",
+      "result_id": "70b20cba-56bc-4fa4-82f4-f3937abbbd50"
+    },
+    {
+      "claim_id": "703349c0-6052-464d-990f-7ba71430183a",
+      "result_id": "70b20cba-56bc-4fa4-82f4-f3937abbbd50"
+    },
+    {
+      "claim_id": "a00272d8-dbce-415d-818e-599b65682499",
+      "result_id": "70b20cba-56bc-4fa4-82f4-f3937abbbd50"
+    },
+    {
+      "claim_id": "bfde79cc-ff42-495b-b1a7-7d8c6910da31",
+      "result_id": "70b20cba-56bc-4fa4-82f4-f3937abbbd50"
+    },
+    {
+      "claim_id": "aadc4332-dbbf-4292-b247-7cd7a0807767",
+      "result_id": "70b20cba-56bc-4fa4-82f4-f3937abbbd50"
+    },
+    {
+      "claim_id": "f8737f07-799a-4153-ba1a-8754f739ae15",
+      "result_id": "70b20cba-56bc-4fa4-82f4-f3937abbbd50"
+    },
+    {
+      "claim_id": "6f864e57-efa0-444c-adf1-266324be58a8",
+      "result_id": "70b20cba-56bc-4fa4-82f4-f3937abbbd50"
+    },
+    {
+      "claim_id": "8e09cc9e-a1f9-473f-bb92-b791f59ad8cb",
+      "result_id": "70b20cba-56bc-4fa4-82f4-f3937abbbd50"
+    },
+    {
+      "claim_id": "71f88e1b-c06c-4ec3-a3e7-1b36c04b7a4c",
+      "result_id": "49fa0505-a887-4efc-acf3-ebf141a589d1"
+    },
+    {
+      "claim_id": "1ca16d5b-9d5a-4e3d-81d8-121e9429d8ee",
+      "result_id": "49fa0505-a887-4efc-acf3-ebf141a589d1"
+    },
+    {
+      "claim_id": "76f471e4-93c0-4b8a-bbd8-211196e3401d",
+      "result_id": "49fa0505-a887-4efc-acf3-ebf141a589d1"
+    },
+    {
+      "claim_id": "206f1586-09e8-4c85-87d7-dd22ec735628",
+      "result_id": "49fa0505-a887-4efc-acf3-ebf141a589d1"
+    },
+    {
+      "claim_id": "76b4bc49-9c89-4b42-8c0d-ee15a93aa49d",
+      "result_id": "8a57cbe6-a9af-48e2-a026-38cfecfedd09"
+    },
+    {
+      "claim_id": "eb2bf625-be14-45a6-a7e1-0a3bcae303b1",
+      "result_id": "8a57cbe6-a9af-48e2-a026-38cfecfedd09"
+    },
+    {
+      "claim_id": "61de2ded-63b5-40cc-836b-c760bfb8ee59",
+      "result_id": "8a57cbe6-a9af-48e2-a026-38cfecfedd09"
+    },
+    {
+      "claim_id": "8033c700-4b1a-49d9-a948-445fad60c1aa",
+      "result_id": "8a57cbe6-a9af-48e2-a026-38cfecfedd09"
+    },
+    {
+      "claim_id": "ed2d3c5b-f93c-4db7-bcfb-bebba06adfea",
+      "result_id": "8a57cbe6-a9af-48e2-a026-38cfecfedd09"
+    },
+    {
+      "claim_id": "1b1f40b6-0e5c-4e96-a5a9-d6cc79484312",
+      "result_id": "8a57cbe6-a9af-48e2-a026-38cfecfedd09"
+    },
+    {
+      "claim_id": "89185719-7a0c-4f1d-897f-52419ce14d60",
+      "result_id": "8a57cbe6-a9af-48e2-a026-38cfecfedd09"
+    },
+    {
+      "claim_id": "0670b6f3-7b6b-4c5c-99ef-b4cac762deea",
+      "result_id": "0c85e491-ad36-41a9-a130-ce92aa75e029"
+    },
+    {
+      "claim_id": "413d5ef5-c1a4-4449-a7a0-00f3331adde2",
+      "result_id": "0c85e491-ad36-41a9-a130-ce92aa75e029"
+    },
+    {
+      "claim_id": "2f87a651-fb79-453c-80f9-ca328d629fe0",
+      "result_id": "0c85e491-ad36-41a9-a130-ce92aa75e029"
+    },
+    {
+      "claim_id": "5d9d2b89-160a-479d-8353-fd171d5c59db",
+      "result_id": "0c85e491-ad36-41a9-a130-ce92aa75e029"
+    },
+    {
+      "claim_id": "40b0516c-88df-41a9-9ad6-edd22a97ed7d",
+      "result_id": "0c85e491-ad36-41a9-a130-ce92aa75e029"
+    },
+    {
+      "claim_id": "4786e4b7-3753-4323-9bdc-a5bd32719dca",
+      "result_id": "5ea411b6-723d-4a7b-b3e9-4212d7680bab"
+    },
+    {
+      "claim_id": "6b270c93-b655-466a-8da9-b7295b483b5b",
+      "result_id": "5ea411b6-723d-4a7b-b3e9-4212d7680bab"
+    },
+    {
+      "claim_id": "8b496292-622f-4ee1-8116-8ea7a05e24bf",
+      "result_id": "b1844a63-b473-4069-97c5-9c4ac65bcbba"
+    },
+    {
+      "claim_id": "4f89b4c8-d98f-485d-a46c-13eb67a6660a",
+      "result_id": "b1844a63-b473-4069-97c5-9c4ac65bcbba"
+    },
+    {
+      "claim_id": "2dd1d88f-0bbb-4633-9190-dd0ecb6a1f05",
+      "result_id": "b1844a63-b473-4069-97c5-9c4ac65bcbba"
+    },
+    {
+      "claim_id": "e9d28863-57c8-40dc-82ee-f10a67427dac",
+      "result_id": "b1844a63-b473-4069-97c5-9c4ac65bcbba"
+    },
+    {
+      "claim_id": "ecd11184-d0a0-4cce-8753-172a0709fabd",
+      "result_id": "b1844a63-b473-4069-97c5-9c4ac65bcbba"
+    },
+    {
+      "claim_id": "190df6a0-90ad-4ac5-ae07-babc38ff9fe3",
+      "result_id": "b1844a63-b473-4069-97c5-9c4ac65bcbba"
+    },
+    {
+      "claim_id": "9fdb0055-0f76-40de-912e-4a8eaf1cc239",
+      "result_id": "b1844a63-b473-4069-97c5-9c4ac65bcbba"
+    },
+    {
+      "claim_id": "5321d3b7-4fdb-494d-a739-8d2882bbc72c",
+      "result_id": "85636595-1b0d-47ba-a3f9-3e935c978dfd"
+    },
+    {
+      "claim_id": "81c09ed5-af56-4774-afac-cf51317c35b4",
+      "result_id": "5f8e1e27-eddd-4b30-9fba-ec5f58e7063a"
+    },
+    {
+      "claim_id": "b5589dce-a9c1-4e95-91fb-c2a32df3f417",
+      "result_id": "5f8e1e27-eddd-4b30-9fba-ec5f58e7063a"
+    },
+    {
+      "claim_id": "b873d1fa-a97c-4b0a-9bf6-4642e7223a83",
+      "result_id": "5f8e1e27-eddd-4b30-9fba-ec5f58e7063a"
+    },
+    {
+      "claim_id": "647f87c4-e04c-4fd1-bf19-c846e0cfd6d1",
+      "result_id": "5f8e1e27-eddd-4b30-9fba-ec5f58e7063a"
+    },
+    {
+      "claim_id": "2dcc6092-74cc-4937-a4bd-5782ee583d01",
+      "result_id": "5f8e1e27-eddd-4b30-9fba-ec5f58e7063a"
+    },
+    {
+      "claim_id": "e4c69e38-a01a-4cbc-85fb-0b7884a41f7a",
+      "result_id": "5f8e1e27-eddd-4b30-9fba-ec5f58e7063a"
+    },
+    {
+      "claim_id": "c23c0f84-ebe7-46ea-be58-4d10d98f9da1",
+      "result_id": "5f8e1e27-eddd-4b30-9fba-ec5f58e7063a"
+    },
+    {
+      "claim_id": "771fc61b-b33b-4f4a-afc1-76c6f4c39fcd",
+      "result_id": "9d73a8bb-b30a-4e2e-ac18-fce6e2b3ae34"
+    },
+    {
+      "claim_id": "810f9f63-48df-41af-bf4b-011d3d56f3c3",
+      "result_id": "9d73a8bb-b30a-4e2e-ac18-fce6e2b3ae34"
+    },
+    {
+      "claim_id": "62152f34-7f42-4244-88ea-f9d6b7673b35",
+      "result_id": "9d73a8bb-b30a-4e2e-ac18-fce6e2b3ae34"
+    },
+    {
+      "claim_id": "2b42c176-c15a-4a34-b9a3-621ebb69ea26",
+      "result_id": "9d73a8bb-b30a-4e2e-ac18-fce6e2b3ae34"
+    },
+    {
+      "claim_id": "89af35fc-a3f4-4c65-9cfb-f07495411128",
+      "result_id": "cc462a2e-4591-4f64-a121-073e5f308a22"
+    },
+    {
+      "claim_id": "add2efd5-9bab-4a55-a96a-777575ce4642",
+      "result_id": "bc52460a-90eb-439d-a63e-8177af073d54"
+    },
+    {
+      "claim_id": "dfb0b798-8523-4504-9e9f-c2f22ac4aab8",
+      "result_id": "bc52460a-90eb-439d-a63e-8177af073d54"
+    },
+    {
+      "claim_id": "0aa2a0fa-f5e9-4d24-96a6-38d5ad2c576c",
+      "result_id": "bc52460a-90eb-439d-a63e-8177af073d54"
+    },
+    {
+      "claim_id": "bbd7e851-9bf3-4f3f-a924-3414e5bedd79",
+      "result_id": "bc52460a-90eb-439d-a63e-8177af073d54"
+    },
+    {
+      "claim_id": "f6d50c21-cf6c-4e1c-90f7-4d5bdf8b7c03",
+      "result_id": "bc52460a-90eb-439d-a63e-8177af073d54"
+    },
+    {
+      "claim_id": "f5232320-3923-496a-9f38-29127e3d0f20",
+      "result_id": "bc52460a-90eb-439d-a63e-8177af073d54"
+    },
+    {
+      "claim_id": "18354832-6907-4997-ba3d-a9fba88df7dc",
+      "result_id": "bc52460a-90eb-439d-a63e-8177af073d54"
+    },
+    {
+      "claim_id": "fa10bc4e-3819-499a-adef-fb9a8ece45ee",
+      "result_id": "bc52460a-90eb-439d-a63e-8177af073d54"
+    },
+    {
+      "claim_id": "fd6d8ba1-ad3c-4fca-8157-2130a710e0fd",
+      "result_id": "bc52460a-90eb-439d-a63e-8177af073d54"
+    },
+    {
+      "claim_id": "092a63ab-f99c-4884-a390-287f40f6d74c",
+      "result_id": "83afdda6-f16c-4772-9bfe-cdeb4ddd34c8"
+    },
+    {
+      "claim_id": "30e515b6-8708-4926-8fc3-1dbf6bfe6718",
+      "result_id": "83afdda6-f16c-4772-9bfe-cdeb4ddd34c8"
+    },
+    {
+      "claim_id": "899a8e21-c59f-4802-b5a3-fef903043c17",
+      "result_id": "83afdda6-f16c-4772-9bfe-cdeb4ddd34c8"
+    },
+    {
+      "claim_id": "3ae97774-7af6-4a0d-b686-a8b8056e4db2",
+      "result_id": "83afdda6-f16c-4772-9bfe-cdeb4ddd34c8"
+    },
+    {
+      "claim_id": "b8f4c3b5-fb92-4692-a394-21078cb36a84",
+      "result_id": "83afdda6-f16c-4772-9bfe-cdeb4ddd34c8"
+    },
+    {
+      "claim_id": "25b9be98-b8e6-4819-83c2-e28416df315e",
+      "result_id": "83afdda6-f16c-4772-9bfe-cdeb4ddd34c8"
+    },
+    {
+      "claim_id": "b2941d63-4a3c-4311-95af-36e968a12d7c",
+      "result_id": "83afdda6-f16c-4772-9bfe-cdeb4ddd34c8"
+    },
+    {
+      "claim_id": "a97a3677-4821-4bb2-b677-b2ae161bb1d7",
+      "result_id": "09350aca-4ed2-41b7-a6f8-c9df89d5a115"
+    },
+    {
+      "claim_id": "e3e4357d-07eb-4cd4-8312-a80115b90c88",
+      "result_id": "09350aca-4ed2-41b7-a6f8-c9df89d5a115"
+    }
+  ],
+  "comparisons": []
+}

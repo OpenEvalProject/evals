@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C54",
+      "C55"
+    ],
+    "result": "Multiglomerular optogenetic activation evokes robust, widespread, and enduring gamma-frequency spike-time synchrony among tufted cells (TCs) that is significantly greater than among mitral cells (MCs). TCs synchronized across both fast- and slow-gamma frequencies with sweeping deceleration dynamics, while MC synchrony was weaker and concentrated in slow-gamma frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19-C34, C54-C55 collectively demonstrate differential synchrony between TCs and MCs through multiple complementary analyses (cross-correlograms, CPSD spectrograms, ridge detection). The data show 92% of TC pairs vs. 31% of MC pairs exhibited CPSD ridges (C29), with TCs showing higher precision and frequency of periodic synchrony (C30). Controls using Poisson simulations (C23) confirm synchrony exceeds chance levels (C24, C25, C33, C34), and the findings persist throughout the photostimulation cycle (C33, C34), ruling out stimulus artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Spike-time synchrony is enhanced among homotypic cell pairs (sharing glomerular input) compared to heterotypic pairs, independent of cell type. This enhancement occurs for both TCs and MCs, though cell-type differences in synchrony persist regardless of glomerular organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C44 demonstrate that homotypic pairs exhibit stronger synchrony than heterotypic pairs (C44) while maintaining cell-type differences (C41, C42). The proportion of homotypic/heterotypic pairs did not differ between cell types (C40), and CPSD ridges were detected at comparable rates in both configurations (C43), supporting that glomerular convergence enhances but does not fully explain cell-type differences in synchrony.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Spike-time synchrony among TCs occurs independent of intraglomerular lateral excitation. Homotypic TCs exhibited no lateral excitation despite robust periodic synchrony, while 100% of homotypic MC pairs showed asymmetric lateral excitation. Electrical coupling was comparable between cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C47 provide direct experimental evidence that TCs lack lateral excitation (C45) while MCs consistently exhibit it (C46), yet TCs show robust synchrony. Electrical coupling measurements were comparable (C47), indicating the absence of lateral excitation in TCs is not due to coupling differences. This surprising finding challenges assumptions about mechanisms underlying synchrony and is well-supported by the data, though the mechanistic interpretation (C48, C49) remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cell-type differences in spike-time synchrony cannot be attributed to differences in the synchronization of synaptic inhibition. Both TCs and MCs received comparable levels of synchronous inhibitory input, with no cell-type difference in IPSC-time cross-correlogram peaks. Periodic synchronization of IPSCs was minimal and attributable to chance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C64-C76 comprehensively demonstrate through voltage-clamp recordings that inhibitory synchrony does not differ between cell types in ways that would explain spike-time synchrony differences. Multiple analyses (cross-correlograms C68, synchronous/asynchronous IPSC ratios C70, precision measures C71, CPSD analysis C73-C74) consistently show no greater inhibitory synchrony in TCs. Comparison to Poisson simulations (C74) confirms minimal gamma-frequency patterning in IPSCs. This refutes the temporal gating hypothesis and is a critical negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Greater TC than MC spike-time synchrony parallels greater oscillatory behavior (firing periodicity) among TCs. TCs exhibited highly periodic firing across fast- and slow-gamma frequencies with lower CV2 values, while MCs showed less periodic firing concentrated in slow-gamma frequencies. Oscillatory behavior directly correlated with spike-time synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C79-C91 establish a strong correlation between firing periodicity and synchrony through multiple complementary measures (APSD spectrograms, ridge detection, CV2 analysis). The data show 85% of TCs vs. 44% of MCs exhibited APSD ridges (C82), TCs had lower median CV2 (C85), and periodic pairs almost exclusively exhibited CPSD ridges (C88). The direct correlation between APSD and cross-correlogram peaks (C90) supports a mechanistic link. This is well-supported by converging evidence from multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "TC and MC synchrony emerged in patterns consistent with densely synchronous network oscillations, where instantaneous firing rates closely matched periodic synchrony frequencies with near-unity correspondence. This indicates spike-time synchrony across multiple consecutive oscillatory cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C92-C95 demonstrate that firing rate matched CPSD ridge frequency with mean correspondence approaching unity in both cell types (C93), with TCs extending into faster frequencies (C94). This 1:1 relationship (C95) is consistent with dense synchrony arising from phase-resetting of periodically firing neurons, contrasting with sparse synchrony models. The data directly support this interpretation, though the mechanistic inference relies on theoretical frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Subthreshold resonance is more widespread among TCs (92%) than MCs (50%) and more faithfully entrains TC firing. TCs exhibited a 1:1 relationship between firing rate and subthreshold oscillation (STO) frequency, while MCs exhibited a 1:2 relationship, despite comparable phase-locking of spike times to STOs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C106 provide strong evidence from analysis of a separate dataset showing greater prevalence of resonance in TCs (C98, C99) and differential entrainment (C103-C106). The 1:1 vs. 1:2 firing rate to STO frequency relationship (C105) is clearly demonstrated. However, the mechanistic implications (C107, C108) regarding specific conductances and STO synchronization are more speculative and would benefit from additional experimental validation. The core findings on differential resonance are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The optogenetic stimulation approach recapitulates key aspects of in vivo odor-evoked firing patterns. TCs and MCs exhibited comparable excitatory current amplitudes with broadly distributed latencies (10-25 ms) and no gamma-frequency patterning in excitatory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 validate the experimental approach by comparing to in vivo studies (C35) and characterizing synaptic inputs. The comparable excitatory currents (C36, C37), distributed latencies (C38), and absence of gamma-frequency patterning in excitation (C39) support that observed synchrony is network-driven rather than stimulus-driven. This is important for interpreting the main findings, though the comparison to in vivo data relies on citations rather than direct measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Intersomatic distance and somatic depth do not account for cell-type differences in spike-time synchrony. TC pairs had shorter lateral distances than MC pairs, but distance did not correlate with synchrony measures among TCs, and only modestly correlated among MCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 address potential confounds by showing that anatomical factors (intersomatic distance, somatic depth) do not explain the observed cell-type differences in synchrony. The lack of correlation between distance and synchrony in TCs (C51) and weak correlation in MCs (C52) support that the fundamental differences are not due to sampling bias. This is a well-executed control analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Limited MC synchrony in the dataset constrains characterization of MC periodic synchronization frequency, and the results do not exclude MC contributions to fast-gamma oscillations. However, the results definitively identify TC synchrony as a major contributor to MOB gamma oscillations, as TC CPSD spectrograms resemble in vivo LFP recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 appropriately acknowledge limitations (C56, C57) while drawing supported conclusions about TC contributions (C58). The comparison to in vivo LFP recordings (C59) strengthens the physiological relevance, though this relies on visual similarity to cited work rather than quantitative comparison. The cautious interpretation regarding MC contributions is appropriate given the data limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "TC firing exhibited substantially greater theta-frequency synchronization than MC firing. This pattern generalized across different photostimulation frequencies (2, 5, and 8 Hz), suggesting TC synchrony conveys cross-frequency coupled information to downstream areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60, C62 are supported by experimental data showing greater theta synchrony in TCs and similar patterns across frequencies. However, claims C61 and C63 regarding information transmission to downstream areas and generalization across olfactory sampling strategies are more speculative. The testing at different frequencies (C62) was not systematic and involved only a subset of pairs, limiting the strength of the generalization claim (C63). The functional interpretation (C61) requires additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Relative firing rate differences were lower within TC than MC pairs and negatively correlated with spike-time synchrony measures, consistent with phase-resetting mechanisms where rate differences attenuate synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by experimental data showing both lower rate differences in TC pairs and negative correlation with synchrony measures. The citations to Burton et al., 2012 and Zhou et al., 2013 provide theoretical support for the interpretation. This finding supports the phase-resetting mechanism hypothesis, though it is a correlative observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background claims establishing prior knowledge about MOB gamma oscillations, TC/MC differences, and competing theories of synchronization mechanisms (temporal gating vs. phase-resetting).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 are background/context claims supported by appropriate citations to prior literature. These establish the scientific context and motivation for the study. C12 and C15 explicitly note untested hypotheses that the current work addresses. These are appropriately cited and provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Neural synchrony generates fast network oscillations throughout the brain, including the main olfactory bulb (MOB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general statement of established neuroscience knowledge that provides context for the study. This is well-established in the field and appropriately serves as background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The minimal gamma-frequency synchrony in inhibitory and excitatory inputs contrasts with temporal gating mechanisms in other brain regions, though synaptic inhibition remains necessary for MOB oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 draw appropriate comparisons to other brain regions (supported by citations) and make reasonable inferences about the necessity of inhibition based on prior work. The contrast with temporal gating mechanisms elsewhere is well-supported by the data showing lack of gamma-frequency patterning in synaptic inputs. However, the statement about necessity (C78) is an inference from prior work rather than directly tested here.",
+    "result_type": "MINOR"
+  }
+]

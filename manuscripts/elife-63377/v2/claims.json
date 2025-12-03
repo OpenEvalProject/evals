@@ -1,0 +1,3578 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Videos of animal behavior are used to quantify researcher-defined behaviors of interest to study neural function, gene mutations, and pharmacological therapies.",
+    "claim_type": "EXPLICIT",
+    "source": "Videos of animal behavior are used to quantify researcher-defined behaviors of interest to study neural function, gene mutations, and pharmacological therapies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the use of behavioral videos in research, representing established practice in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Behaviors of interest are often scored manually, which is time-consuming, limited to few behaviors, and variable across researchers.",
+    "claim_type": "EXPLICIT",
+    "source": "Behaviors of interest are often scored manually, which is time-consuming, limited to few behaviors, and variable across researchers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes current limitations of manual behavior scoring methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "DeepEthogram uses supervised machine learning to convert raw video pixels into an ethogram.",
+    "claim_type": "EXPLICIT",
+    "source": "We created DeepEthogram: software that uses supervised machine learning to convert raw video pixels into an ethogram, the behaviors of interest present in each video frame.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct description of the DeepEthogram method presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "DeepEthogram is designed to be general-purpose and applicable across species, behaviors, and video-recording hardware.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram is designed to be general-purpose and applicable across species, behaviors, and video-recording hardware.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a stated design goal of the software.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "DeepEthogram uses convolutional neural networks to compute motion, extract features from motion and images, and classify features into behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "It uses convolutional neural networks to compute motion, extract features from motion and images, and classify features into behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical architecture of DeepEthogram.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Behaviors are classified with above 90% accuracy on single frames in videos of mice and flies.",
+    "claim_type": "EXPLICIT",
+    "source": "Behaviors are classified with above 90% accuracy on single frames in videos of mice and flies, matching expert-level human performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a performance claim supported by experimental results in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "DeepEthogram matches expert-level human performance in behavior classification.",
+    "claim_type": "EXPLICIT",
+    "source": "Behaviors are classified with above 90% accuracy on single frames in videos of mice and flies, matching expert-level human performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparative performance claim supported by experimental data comparing model and human labeler performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "DeepEthogram accurately predicts rare behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram accurately predicts rare behaviors, requires little training data, and generalizes across subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a performance claim supported by experimental results showing high performance on infrequent behaviors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "DeepEthogram requires little training data.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram accurately predicts rare behaviors, requires little training data, and generalizes across subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experiments showing performance with varying amounts of training data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "DeepEthogram generalizes across subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram accurately predicts rare behaviors, requires little training data, and generalizes across subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by testing on videos from different individual animals.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "A graphical interface allows beginning-to-end analysis without end-user programming.",
+    "claim_type": "EXPLICIT",
+    "source": "A graphical interface allows beginning-to-end analysis without end-user programming.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of the software implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Manual behavior scoring often takes researcher time equal to or greater than the duration of the video per individual subject.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach takes immense amounts of researcher time, often equal to or greater than the duration of the video per individual subject.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the time requirements of manual behavior scoring.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Manual behavior scoring often only allows analysis of one or a small number of behaviors at a time.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, because this approach requires manual viewing, often only one or a small number of behaviors are studied at a time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of manual behavior scoring methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Manual behavior scoring can vary greatly between researchers, especially as new researchers are trained.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, scoring of behaviors can vary greatly between researchers especially as new researchers are trained (Segalin, 2020) and can be subject to bias.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes inter-rater variability in manual scoring, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Researchers study behavioral patterns of animals to investigate the effect of a gene mutation, understand the efficacy of potential pharmacological therapies, or uncover the neural underpinnings of behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, researchers study behavioral patterns of animals to investigate the effect of a gene mutation, understand the efficacy of potential pharmacological therapies, or uncover the neural underpinnings of behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes common research applications of behavioral analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Important details of behavior involve subtle actions that are hard to quantify, such as changes in the prevalence of grooming in models of anxiety, licking a limb in models of pain, and manipulation of food objects for fine sensorimotor control.",
+    "claim_type": "EXPLICIT",
+    "source": "Increasingly, researchers are finding that important details of behavior involve subtle actions that are hard to quantify, such as changes in the prevalence of grooming in models of anxiety (Pe\u00e7a et al., 2011), licking a limb in models of pain (Browne, 2017), and manipulation of food objects for fine sensorimotor control (Neubarth, 2020; Sauerbrei et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes specific examples of subtle behaviors of research interest, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "DeepEthogram uses Hidden Two-Stream Networks and Temporal Gaussian Mixture networks to detect actions in videos.",
+    "claim_type": "EXPLICIT",
+    "source": "We use convolutional neural networks (CNNs), specifically Hidden Two-Stream Networks (Zhu et al., 2017) and Temporal Gaussian Mixture (TGM) networks (Piergiovanni and Ryoo, 2018), to detect actions in videos, and we pretrained the networks on large open-source datasets (Deng, 2008; Carreira et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the specific neural network architectures used, with citations to the original methods.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "DeepEthogram networks are pretrained on large open-source datasets including ImageNet and Kinetics700.",
+    "claim_type": "EXPLICIT",
+    "source": "We use convolutional neural networks (CNNs), specifically Hidden Two-Stream Networks (Zhu et al., 2017) and Temporal Gaussian Mixture (TGM) networks (Piergiovanni and Ryoo, 2018), to detect actions in videos, and we pretrained the networks on large open-source datasets (Deng, 2008; Carreira et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the pretraining strategy, with citations to the datasets.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "DeepEthogram was validated on nine datasets from two species.",
+    "claim_type": "EXPLICIT",
+    "source": "We validated our approach's performance on nine datasets from two species, with each dataset posing distinct challenges for behavior classification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the validation experiments performed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "DeepEthogram automatically classifies behaviors with high performance, often reaching levels obtained by expert human labelers.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram automatically classifies behaviors with high performance, often reaching levels obtained by expert human labelers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a performance claim supported by comparison experiments with human labelers.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "High performance is achieved with only a few minutes of positive example data.",
+    "claim_type": "EXPLICIT",
+    "source": "High performance is achieved with only a few minutes of positive example data and even when the behaviors occur at different locations in the behavioral arena and at distinct orientations of the animal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experiments varying the amount of training data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "DeepEthogram achieves high performance even when behaviors occur at different locations in the behavioral arena and at distinct orientations of the animal.",
+    "claim_type": "EXPLICIT",
+    "source": "High performance is achieved with only a few minutes of positive example data and even when the behaviors occur at different locations in the behavioral arena and at distinct orientations of the animal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the spatial invariance property of the model, supported by experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Specialized video recording hardware is not required for DeepEthogram.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, specialized video recording hardware is not required, and the entire pipeline requires no programming by the end-user because we developed a graphical user interface (GUI) for annotating videos, training models, and generating predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design feature of the software.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The entire DeepEthogram pipeline requires no programming by the end-user.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, specialized video recording hardware is not required, and the entire pipeline requires no programming by the end-user because we developed a graphical user interface (GUI) for annotating videos, training models, and generating predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a usability feature of the software.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The task of automatically classifying an animal's actions into user-defined behaviors falls in the category of supervised machine learning.",
+    "claim_type": "EXPLICIT",
+    "source": "The task of automatically classifying an animal's actions into user-defined behaviors falls in the category of supervised machine learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a classification of the computational problem being addressed.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "In computer vision, automatic behavior classification is called 'action detection,' 'temporal action localization,' 'action recognition,' or 'action segmentation.'",
+    "claim_type": "EXPLICIT",
+    "source": "In computer vision, this task is called 'action detection,' 'temporal action localization,' 'action recognition,' or 'action segmentation.'",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides terminology from the computer vision field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Supervised behavior classification is distinct from unsupervised learning methods in which machine learning models discover behavioral modules from the data, irrespective of researcher labels.",
+    "claim_type": "EXPLICIT",
+    "source": "This task is distinct from other emerging behavioral analysis methods based on unsupervised learning, in which machine learning models discover behavioral modules from the data, irrespective of researcher labels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This distinguishes the approach from alternative methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Unsupervised methods like Motion Sequencing, MotionMapper, BehaveNet, and B-SOiD can discover behavioral modules not obvious to the researcher.",
+    "claim_type": "EXPLICIT",
+    "source": "Although unsupervised methods, such as Motion Sequencing (Wiltschko, 2015; Wiltschko et al., 2020), MotionMapper (Berman et al., 2014), BehaveNet (Batty, 2019), B-SOiD (Hsu and Yttri, 2019), and others (Datta et al., 2019), can discover behavioral modules not obvious to the researcher, their outputs are not designed to perfectly match up to behaviors of interest in cases in which researchers have strong prior knowledge about the specific behaviors relevant to their experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes capabilities and limitations of unsupervised methods, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Unsupervised method outputs are not designed to perfectly match up to behaviors of interest when researchers have strong prior knowledge about specific behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "Although unsupervised methods, such as Motion Sequencing (Wiltschko, 2015; Wiltschko et al., 2020), MotionMapper (Berman et al., 2014), BehaveNet (Batty, 2019), B-SOiD (Hsu and Yttri, 2019), and others (Datta et al., 2019), can discover behavioral modules not obvious to the researcher, their outputs are not designed to perfectly match up to behaviors of interest in cases in which researchers have strong prior knowledge about the specific behaviors relevant to their experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of unsupervised approaches for certain research goals.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "JAABA, SimBA, MARS, Live Mouse Tracker, and others have made important progress toward supervised classification of behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "Pioneering work, including JAABA (Kabra et al., 2013), SimBA (Nilsson, 2020), MARS (Segalin, 2020), Live Mouse Tracker (de Chaumont et al., 2019), and others (Segalin, 2020; Dankert et al., 2009; Sturman et al., 2020), has made important progress toward the goal of supervised classification of behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges prior work in the field, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Existing supervised behavior classification methods track specific features of an animal's body and use the time series of these features to classify whether a behavior is present.",
+    "claim_type": "EXPLICIT",
+    "source": "These methods track specific features of an animal's body and use the time series of these features to classify whether a behavior is present at a given timepoint.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach of existing methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "In computer vision, skeleton-based behavior classification is known as 'skeleton-based action detection.'",
+    "claim_type": "EXPLICIT",
+    "source": "In computer vision, this is known as 'skeleton-based action detection.'",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides terminology from computer vision.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "JAABA fits ellipses to the outline of an animal's body and uses these ellipses to classify behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "In JAABA, ellipses are fit to the outline of an animal's body, and these ellipses are used to classify behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the specific approach of JAABA, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "SimBA classifies behaviors based on the positions of 'keypoints' on the animal's body, such as limb joints.",
+    "claim_type": "EXPLICIT",
+    "source": "SimBA classifies behaviors based on the positions of 'keypoints' on the animal's body, such as limb joints.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the specific approach of SimBA.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "MARS takes a similar approach to SimBA with a focus on social behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "MARS takes a similar approach with a focus on social behaviors (Segalin, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach of MARS, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Skeleton-based approaches have become easier with recent pose estimation methods, including DeepLabCut.",
+    "claim_type": "EXPLICIT",
+    "source": "These approaches have become easier with recent pose estimation methods, including DeepLabCut (Mathis, 2018; Nath, 2019; Lauer, 2021) and similar algorithms (Pereira, 2018a; Graving et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how pose estimation methods have facilitated skeleton-based approaches, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Skeleton-based approaches utilize a pipeline with two major steps: reducing a video to user-defined features using pose estimation, then using these pose estimates as inputs to classifiers.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, these approaches utilize a pipeline with two major steps. First, researchers reduce a video to a set of user-defined features of interest (e.g., limb positions) using pose estimation software. Second, these pose estimates are used as inputs to classifiers that identify the behaviors of interest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the two-step pipeline of skeleton-based methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Skeleton-based approaches have the advantage of providing information beyond whether a behavior is present, allowing detailed analyses of movement.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach has the advantage that it provides information beyond whether a behavior of interest is present or absent at each timepoint. Because the parts of the animal's body that contribute to the behavior are tracked, detailed analyses of movement and how these movements contribute to behaviors of interest can be performed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of skeleton-based approaches.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "DeepEthogram classifies behaviors directly from the raw pixel values of videos.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we took a different approach based on models that classify behaviors directly from the raw pixel values of videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the fundamental approach of DeepEthogram.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Classification from raw pixels has the potential to simplify the pipeline for classifying behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "Drawing from extensive work in this area in computer vision (He et al., 2015; Piergiovanni and Ryoo, 2018; Zhu et al., 2017; Simonyan and Zisserman, 2014), this approach has the potential to simplify the pipeline for classifying behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a stated advantage of the pixel-based approach, with citations to related work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Pixel-based classification requires only one type of human annotation (labels for behaviors of interest) instead of labels for both pose keypoints and behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "It requires only one type of human annotation \u2013 labels for behaviors of interest \u2013 instead of labels for both pose keypoints and behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of the pixel-based approach in terms of annotation requirements.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Pixel-based classification requires only a single model for behavior classification instead of models for pose estimation and behavior classification.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, this approach requires only a single model for behavior classification instead of models for pose estimation and behavior classification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a simplification advantage of the pixel-based approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Classification from raw pixels is in principle generally applicable to any dataset that has video frames and training data in the form of frame-by-frame binary behavior labels.",
+    "claim_type": "EXPLICIT",
+    "source": "Classification from raw pixels is in principle generally applicable to any dataset that has video frames and training data for the model in the form of frame-by-frame binary behavior labels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the general applicability of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Some recent work has performed behavior classification from pixels but only focused on motor deficits or one species and setup.",
+    "claim_type": "EXPLICIT",
+    "source": "Some recent work has performed behavior classification from pixels but only focused on motor deficits (Ryait, 2019) or one species and setup (van Dam et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes limitations of prior pixel-based approaches, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Other recent work uses image and motion features but focuses on classifying the timepoint at which a behavior starts, instead of classifying every frame.",
+    "claim_type": "EXPLICIT",
+    "source": "Other recent work uses image and motion features, similar to the approaches we developed here, except with a focus on classifying the timepoint at which a behavior starts, instead of classifying every frame into one or more behaviors (Kwak et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a related but different approach, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "DeepEthogram is a modular pipeline for automatically classifying each frame of a video into a set of user-defined behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method, called DeepEthogram, is a modular pipeline for automatically classifying each frame of a video into a set of user-defined behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the overall structure and function of DeepEthogram.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "DeepEthogram uses a supervised deep-learning model that takes a video with T frames and K behaviors and generates a binary [T, K] matrix.",
+    "claim_type": "EXPLICIT",
+    "source": "It uses a supervised deep-learning model that, with minimal user-based training data, takes a video with T frames and a user-defined set of K behaviors and generates a binary [T, K] matrix (Figure 1A; Piergiovanni and Ryoo, 2018; Zhu et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the input-output structure of the model, with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The [T, K] matrix indicates whether each behavior is present or absent on each frame, termed an 'ethogram'.",
+    "claim_type": "EXPLICIT",
+    "source": "This matrix indicates whether each behavior is present or absent on each frame, which we term an 'ethogram': the set of behaviors that are present at a given timepoint (Figure 1B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines the term 'ethogram' as used in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "DeepEthogram uses convolutional neural networks to detect actions in videos.",
+    "claim_type": "EXPLICIT",
+    "source": "We use convolutional neural networks (CNNs), specifically Hidden Two-Stream Networks (Zhu et al., 2017) and Temporal Gaussian Mixture (TGM) networks (Piergiovanni and Ryoo, 2018), to detect actions in videos, and we pretrained the networks on large open-source datasets (Deng, 2008; Carreira et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the neural network architectures used, with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The methods used in DeepEthogram have been introduced in previous work and adapted for application to biomedical research of animal behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous work has introduced the methods we use here (He et al., 2015; Piergiovanni and Ryoo, 2018; Zhu et al., 2017; Simonyan and Zisserman, 2014), and we have adapted and extended these methods for application to biomedical research of animal behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges prior work and describes the contribution as adaptation and extension, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "DeepEthogram's approach was validated on nine datasets from two species, with each dataset posing distinct challenges.",
+    "claim_type": "EXPLICIT",
+    "source": "We validated our approach's performance on nine datasets from two species, with each dataset posing distinct challenges for behavior classification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the validation experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "DeepEthogram automatically classifies behaviors with high performance, often reaching levels obtained by expert human labelers.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram automatically classifies behaviors with high performance, often reaching levels obtained by expert human labelers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a performance claim supported by comparison with human labelers.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "High performance is achieved with only a few minutes of positive example data.",
+    "claim_type": "EXPLICIT",
+    "source": "High performance is achieved with only a few minutes of positive example data and even when the behaviors occur at different locations in the behavioral arena and at distinct orientations of the animal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experiments varying training data amount.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "DeepEthogram achieves high performance even when behaviors occur at different locations and orientations.",
+    "claim_type": "EXPLICIT",
+    "source": "High performance is achieved with only a few minutes of positive example data and even when the behaviors occur at different locations in the behavioral arena and at distinct orientations of the animal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes spatial invariance, supported by experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The overall architecture of DeepEthogram includes estimating motion (optic flow), compressing optic flow and images into features, and using a sequence of features to estimate behavior probabilities.",
+    "claim_type": "EXPLICIT",
+    "source": "The overall architecture of our solution includes (1) estimating motion (optic flow) from a small snippet of video frames, (2) compressing a snippet of optic flow and individual still images into a lower dimensional set of features, and (3) using a sequence of the compressed features to estimate the probability of each behavior at each frame in a video (Figure 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the three-part architecture, with reference to Figure 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "DeepEthogram incorporates optic flow because some behaviors are only obvious by looking at the animal's movements between frames.",
+    "claim_type": "EXPLICIT",
+    "source": "We incorporate optic flow because some behaviors are only obvious by looking at the animal's movements between frames, such as distinguishing standing still and walking.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for including optic flow.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "DeepEthogram includes single frames separately because some behaviors are obvious from a single still image.",
+    "claim_type": "EXPLICIT",
+    "source": "We include single frames separately because some behaviors are obvious from a single still image, such as identifying licking just by seeing an extended tongue.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for including spatial features.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "A sequence model is used because humans know that information present seconds ago can be useful for estimating the behavior of the current frame.",
+    "claim_type": "EXPLICIT",
+    "source": "We use this sequence model because our CNNs only 'look at' either 1 frame (spatial) or about 11 frames (optic flow), but when labeling videos, humans know that sometimes the information present seconds ago can be useful for estimating the behavior of the current frame.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for the sequence model based on temporal context.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "DeepEthogram thresholds probabilities to get binary predictions for each behavior at each timepoint, with the possibility that multiple behaviors can occur simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "We threshold these probabilities to get a binary prediction for each behavior at each timepoint, with the possibility that multiple behaviors can occur simultaneously (Figure 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the conversion from probabilities to binary predictions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "For the flow generator, DeepEthogram uses the MotionNet architecture to generate 10 optic flow frames from 11 images.",
+    "claim_type": "EXPLICIT",
+    "source": "For the flow generator, we use the MotionNet (Zhu et al., 2017) architecture to generate 10 optic flow frames from 11 images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the specific architecture used for flow generation, with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "For the feature extractors, DeepEthogram uses the ResNet family of models to extract both flow features and spatial features.",
+    "claim_type": "EXPLICIT",
+    "source": "For the feature extractors, we use the ResNet family of models (He et al., 2015; Hara et al., 2018) to extract both flow features and spatial features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architecture used for feature extraction, with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "DeepEthogram uses TGM models as the sequence model to perform the ultimate classification.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we use TGM (Piergiovanni and Ryoo, 2018) models as the sequence model to perform the ultimate classification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the sequence model architecture, with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "DeepEthogram has three versions (fast, medium, slow) that trade off accuracy and speed.",
+    "claim_type": "EXPLICIT",
+    "source": "We therefore created three versions of DeepEthogram that use variants of these models, with the aim of trading off accuracy and speed: DeepEthogram-fast, DeepEthogram-medium, and DeepEthogram-slow.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the three model variants.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "DeepEthogram-fast uses TinyMotionNet for the flow generator and ResNet18 for the feature extractors.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram-fast uses TinyMotionNet (Zhu et al., 2017) for the flow generator and ResNet18 (He et al., 2015) for the feature extractors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the specific architectures in the fast version, with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "DeepEthogram-fast has the fewest parameters, fastest training, fastest inference time, and smallest computational requirements.",
+    "claim_type": "EXPLICIT",
+    "source": "It has the fewest parameters, the fastest training of the flow generator and feature extractor models, the fastest inference time, and the smallest requirement for computational resources.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes characteristics of the fast version.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "DeepEthogram-fast tends to have slightly worse performance than the other versions.",
+    "claim_type": "EXPLICIT",
+    "source": "As a tradeoff for this speed, DeepEthogram-fast tends to have slightly worse performance than the other versions (see below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a performance tradeoff of the fast version.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "DeepEthogram-slow uses TinyMotionNet3D for its flow generator and 3D-ResNet34 for its feature extractors.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, DeepEthogram-slow uses a novel architecture TinyMotionNet3D for its flow generator and 3D-ResNet34 (He et al., 2015; Simonyan and Zisserman, 2014; Hara et al., 2018) for its feature extractors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architectures in the slow version, with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "DeepEthogram-slow has the most parameters, slowest training and inference times, and highest computational demands, but has the capacity to produce the best performance.",
+    "claim_type": "EXPLICIT",
+    "source": "It has the most parameters, the slowest training and inference times, and the highest computational demands, but it has the capacity to produce the best performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes characteristics and tradeoffs of the slow version.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "DeepEthogram-medium is intermediate and uses MotionNet and ResNet50 for its flow generator and feature extractors.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram-medium is intermediate and uses MotionNet (Zhu et al., 2017) and ResNet50 (He et al., 2015) for its flow generator and feature extractors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architectures in the medium version, with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "All versions of DeepEthogram use the same sequence model.",
+    "claim_type": "EXPLICIT",
+    "source": "All versions of DeepEthogram use the same sequence model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a commonality across model versions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "All variants of the flow generators and feature extractors are pretrained on the Kinetics700 video dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "All variants of the flow generators and feature extractors are pretrained on the Kinetics700 video dataset (Carreira et al., 2019), so that model parameters do not have to be learned from scratch (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the pretraining strategy, with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "TGM networks represent the state of the art on various action detection benchmarks as of 2019.",
+    "claim_type": "EXPLICIT",
+    "source": "TGM networks represent the state of the art on various action detection benchmarks as of 2019 (Piergiovanni and Ryoo, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the performance of TGM networks on benchmarks, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Recent work based on multiple temporal resolutions, graph convolutional networks, and transformer architectures has exceeded TGM performance.",
+    "claim_type": "EXPLICIT",
+    "source": "However, recent work based on multiple temporal resolutions (Feichtenhofer et al., 2019; Kahatapitiya and Ryoo, 2021), graph convolutional networks (Zeng, 2019), and transformer architectures (Nawhal and Mori, 2021) has exceeded this performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes more recent advances in the field, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "DeepEthogram's components were chosen based on their performance, parameter count, and hardware requirements.",
+    "claim_type": "EXPLICIT",
+    "source": "We carefully chose DeepEthogram's components based on their performance, parameter count, and hardware requirements.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design criteria for component selection.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "DeepEthogram as a whole and its component parts are not aimed to be the state of the art on standard computer vision temporal action localization datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram as a whole and its component parts are not aimed to be the state of the art on standard computer vision temporal action localization datasets and instead are focused on practical application to biomedical research of animal behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This clarifies the design goals of DeepEthogram.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "In practice, the first step in running DeepEthogram is to train the flow generator on a set of videos, which occurs without user input.",
+    "claim_type": "EXPLICIT",
+    "source": "In practice, the first step in running DeepEthogram is to train the flow generator on a set of videos, which occurs without user input (Figure 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the workflow, with reference to Figure 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "A user must label each frame in a set of training videos for the presence of each behavior of interest.",
+    "claim_type": "EXPLICIT",
+    "source": "In parallel, a user must label each frame in a set of training videos for the presence of each behavior of interest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a required user action in the workflow.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "User labels are used to train independently the spatial feature extractor and the flow feature extractor.",
+    "claim_type": "EXPLICIT",
+    "source": "These labels are then used to train independently the spatial feature extractor and the flow feature extractor to produce separate estimates of the probability of each behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The extracted feature vectors for each frame are saved and used to train the sequence models.",
+    "claim_type": "EXPLICIT",
+    "source": "The extracted feature vectors for each frame are then saved and used to train the sequence models to produce the final predicted probability of each behavior at each frame.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The models are trained in series rather than all at once from end-to-end due to concerns about backpropagating error across diverse models, overfitting, and computational capacity.",
+    "claim_type": "EXPLICIT",
+    "source": "We chose to train the models in series, rather than all at once from end-to-end, due to a combination of concerns about backpropagating error across diverse models, overfitting with extremely large models, and computational capacity (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for the training strategy.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Nine different neuroscience research datasets spanning two species were used to test DeepEthogram performance.",
+    "claim_type": "EXPLICIT",
+    "source": "To test the performance of our model, we used nine different neuroscience research datasets that span two species and present distinct challenges for computer vision approaches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the test datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Five datasets of mice in various behavioral arenas were collected.",
+    "claim_type": "EXPLICIT",
+    "source": "We collected five datasets of mice in various behavioral arenas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mouse datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The Mouse-Ventral1 and Mouse-Ventral2 datasets are bottom-up videos of a mouse in an open field and small chamber, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "The 'Mouse-Ventral1' and 'Mouse-Ventral2' datasets are bottom-up videos of a mouse in an open field and small chamber, respectively (Figure 2A,B, Figure 2\u2014figure supplement 1A, B, Videos 1\u20132).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes specific datasets, with references to figures and videos.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The Mouse-Openfield dataset includes commonly used top-down videos of a mouse in an open arena.",
+    "claim_type": "EXPLICIT",
+    "source": "The 'Mouse-Openfield' dataset includes commonly used top-down videos of a mouse in an open arena (Figure 2C, Figure 2\u2014figure supplement 2A, Video 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a specific dataset, with references to figures and videos.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The Mouse-Homecage dataset are top-down videos of a mouse in its home cage with bedding, a hut, and two objects.",
+    "claim_type": "EXPLICIT",
+    "source": "The 'Mouse-Homecage' dataset are top-down videos of a mouse in its home cage with bedding, a hut, and two objects (Figure 2D, Figure 2\u2014figure supplement 3, Video 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a specific dataset, with references to figures and videos.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The Mouse-Social dataset are top-down videos of two mice interacting in an open arena.",
+    "claim_type": "EXPLICIT",
+    "source": "The 'Mouse-Social' dataset are top-down videos of two mice interacting in an open arena (Figure 2E, Figure 2\u2014figure supplement 4, Video 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a specific dataset, with references to figures and videos.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Three datasets from published work by Sturman et al., 2020 consist of mice in common behavior assays: the EPM, FST, and OFT.",
+    "claim_type": "EXPLICIT",
+    "source": "We also tested three datasets from published work by Sturman et al., 2020 that consist of mice in common behavior assays: the EPM, forced swim test (FST), and open field test (OFT) (Figure 2F\u2013H, Figure 2\u2014figure supplements 5\u20136, Videos 6\u20138).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes datasets from published work, with citation and references to figures and videos.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The Fly dataset includes side view videos of a Drosophila melanogaster and aims to identify a coordinated walking pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we tested a different species in the 'Fly' dataset that includes side view videos of a Drosophila melanogaster and aims to identify a coordinated walking pattern (Fujiwara et al., 2017; Figure 2D, Figure 2\u2014figure supplement 2B, Video 9).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the fly dataset, with citation and references to figures and videos.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The datasets include distinct view angles, a variety of illumination levels, and different resolutions and video qualities.",
+    "claim_type": "EXPLICIT",
+    "source": "Collectively, these datasets include distinct view angles, a variety of illumination levels, and different resolutions and video qualities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the diversity of the datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The datasets pose various challenges for computer vision, including the subject occupying a small fraction of pixels, complex backgrounds, objects that occlude the subject, poor contrast of body parts, little motion from frame-to-frame, and few training examples.",
+    "claim_type": "EXPLICIT",
+    "source": "They also pose various challenges for computer vision, including the subject occupying a small fraction of pixels (Mouse-Ventral1, Mouse-Openfield, Mouse-Homecage, Sturman-EPM, Sturman-OFT), complex backgrounds with non-uniform patterns (bedding and objects in Mouse-Homecage) or irrelevant motion (moving water in Sturman-FST), objects that occlude the subject (Mouse-Homecage), poor contrast of body parts (Mouse-Openfield, Sturman-EPM, Sturman-OFT), little motion from frame-to-frame (Fly, due to high video rate), and few training examples (Sturman-EPM, only five videos and only three that contain all behaviors).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes specific challenges in the datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "In most datasets, some behaviors of interest are rare and occur in only a few percent of the total video frames.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, in most datasets, some behaviors of interest are rare and occur in only a few percent of the total video frames.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the class imbalance challenge in the datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "In each dataset, a behavior was labeled as present regardless of the location where it occurred and the orientation of the subject when it occurred.",
+    "claim_type": "EXPLICIT",
+    "source": "In each dataset, we labeled a behavior as present regardless of the location where it occurred and the orientation of the subject when it occurred.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the labeling approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Position or direction information was not noted, and video frames were not spatially cropped or aligned before training the model.",
+    "claim_type": "EXPLICIT",
+    "source": "We did not note position or direction information, and we did not spatially crop the video frames or align the animal before training our model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes what preprocessing was not done.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "In all datasets, frames on which none of the behaviors of interest were present were labeled as 'background'.",
+    "claim_type": "EXPLICIT",
+    "source": "In all datasets, we labeled the frames on which none of the behaviors of interest were present as 'background,' following the convention in computer vision.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the labeling convention for background frames.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Each video in a dataset was recorded using a different individual mouse or fly.",
+    "claim_type": "EXPLICIT",
+    "source": "Each video in a dataset was recorded using a different individual mouse or fly, and thus training and testing the model across videos measured generalization across individual subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for testing generalization.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Training and testing the model across videos measured generalization across individual subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "Each video in a dataset was recorded using a different individual mouse or fly, and thus training and testing the model across videos measured generalization across individual subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes what the experimental design measures.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Each dataset was split into three subsets: training, validation, and test.",
+    "claim_type": "EXPLICIT",
+    "source": "We split each dataset into three subsets: training, validation, and test (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data splitting approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The training set was used to update model parameters, such as the weights of the CNNs.",
+    "claim_type": "EXPLICIT",
+    "source": "The training set was used to update model parameters, such as the weights of the CNNs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the use of the training set.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The validation set was used to set appropriate hyperparameters, such as the thresholds used to turn probabilities into binary predictions.",
+    "claim_type": "EXPLICIT",
+    "source": "The validation set was used to set appropriate hyperparameters, such as the thresholds used to turn the probabilities of each behavior into binary predictions about whether each behavior was present.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the use of the validation set.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The test set was used to report performance on new data not used in training the model.",
+    "claim_type": "EXPLICIT",
+    "source": "The test set was used to report performance on new data not used in training the model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the use of the test set.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Five random splits of the data into training, validation, and test sets were generated and results were averaged across these five splits.",
+    "claim_type": "EXPLICIT",
+    "source": "We generated five random splits of the data into training, validation, and test sets and averaged our results across these five splits, unless noted otherwise (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for robustness.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Accuracy could be high even if the model did not perform well on each behavior, especially for rare behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that in theory accuracy could be high even if the model did not perform well on each behavior. For example, in the Mouse-Ventral2 dataset, some behaviors were incredibly rare, occurring in only ~2% of frames (Figure 2B). Thus, the model could in theory achieve ~98% accuracy simply by guessing that the behavior was absent on all frames.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains a limitation of the accuracy metric for imbalanced data.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The F1 score is a metric ranging from 0 (bad) to 1 (perfect) that takes into account the rates of false positives and false negatives.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we also computed the F1 score, a metric ranging from 0 (bad) to 1 (perfect) that takes into account the rates of false positives and false negatives.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines the F1 score metric.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The F1 score is the geometric mean of the precision and recall of the model.",
+    "claim_type": "EXPLICIT",
+    "source": "The F1 score is the geometric mean of the precision and recall of the model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines how F1 score is calculated.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Precision is the fraction of frames labeled by the model as a given behavior that are actually that behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Precision is the fraction of frames labeled by the model as a given behavior that are actually that behavior (true positives/(true positives + false positives)).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines the precision metric.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Recall is the fraction of frames actually having a given behavior that are correctly labeled as that behavior by the model.",
+    "claim_type": "EXPLICIT",
+    "source": "Recall is the fraction of frames actually having a given behavior that are correctly labeled as that behavior by the model (true positives/(true positives + false negatives)).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines the recall metric.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "The AUROC summarizes performance as a function of the threshold.",
+    "claim_type": "EXPLICIT",
+    "source": "Because the accuracy and F1 score depend on our choice of a threshold to turn the probability of a given behavior on a given frame into a binary prediction about the presence of that behavior, we also computed the area under the receiver operating curve (AUROC), which summarizes performance as a function of the threshold.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the AUROC metric and why it is used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "DeepEthogram performed with greater than 85% accuracy on the test data for all datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram performed with greater than 85% accuracy on the test data for all datasets (Figure 3A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a performance result, with reference to Figure 3A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The model achieved high overall F1 scores, with high precision and recall.",
+    "claim_type": "EXPLICIT",
+    "source": "The model achieved high overall F1 scores, with high precision and recall (Figure 3B, Figure 3\u2014figure supplement 1A, Figure 3\u2014figure supplement 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a performance result, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "High overall performance was observed with the AUROC measures.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, high overall performance was observed with the AUROC measures (Figure 3\u2014figure supplement 3A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a performance result, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The model was able to capture the overall patterns of behavior in videos.",
+    "claim_type": "EXPLICIT",
+    "source": "These results indicate that the model was able to capture the overall patterns of behavior in videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the performance results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The model achieved F1 scores of 0.7 or higher for many behaviors, even reaching F1 scores above 0.9 in some cases.",
+    "claim_type": "EXPLICIT",
+    "source": "The model achieved F1 scores of 0.7 or higher for many behaviors, even reaching F1 scores above 0.9 in some cases (Figure 3C\u2013K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a performance result for individual behaviors, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "DeepEthogram's performance significantly exceeded chance levels of performance on nearly all behaviors across datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram's performance significantly exceeded chance levels of performance on nearly all behaviors across datasets (Figure 3C\u2013K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical comparison result, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "F1 scores similar to the means for the datasets were consistent with overall accurate predictions.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that F1 scores may not be intuitive to understand in terms of their values, we examined individual snippets of videos with a range of F1 scores and found that F1 scores similar to the means for our datasets were consistent with overall accurate predictions (Figure 3P, Figure 3\u2014figure supplements 4\u201311).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of F1 scores based on visual inspection, with references to figures.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The F1 score is a demanding metric, and even occasional differences on single frames or a small number of frames can substantially decrease the F1 score.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that the F1 score is a demanding metric, and even occasional differences on single frames or a small number of frames can substantially decrease the F1 score.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation of the sensitivity of the F1 metric.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "The model achieved high precision, recall, and AUROC values for individual behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "Relatedly, the model achieved high precision, recall, and AUROC values for individual behaviors (Figure 3\u2014figure supplement 1B\u2013J, Figure 3\u2014figure supplement 2B\u2013J, Figure 3\u2014figure supplement 3B\u2013J).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a performance result, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "The performance of the model depended on the frequency with which a behavior occurred.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of the model depended on the frequency with which a behavior occurred (c.f. Figure 2 right panels and Figure 3C\u2013J).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation about performance trends, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "Performance was relatively high even for behaviors that occurred rarely, in less than 10% of video frames.",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, however, performance was relatively high even for behaviors that occurred rarely, that is, in less than 10% of video frames (Figure 3M, Figure 3\u2014figure supplement 1L, Figure 3\u2014figure supplement 2L, and Figure 3\u2014figure supplement 3K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a performance result for rare behaviors, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The performance tended to be highest for DeepEthogram-slow and worst for DeepEthogram-fast, but the differences between model versions were generally small and varied across behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance tended to be highest for DeepEthogram-slow and worst for DeepEthogram-fast, but the differences between model versions were generally small and varied across behaviors (Figure 3A,B, Figure 3\u2014figure supplement 1A, Figure 3\u2014figure supplement 2A, Figure 3\u2014figure supplement 3A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison of model versions, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "The high-performance values are impressive given that they were calculated based on single-frame predictions for each behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "The high-performance values are, in our opinion, impressive given that they were calculated based on single-frame predictions for each behavior, and thus performance will be reduced if the model misses the onset or offset of a behavior bout by even a single frame.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the performance results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "Performance will be reduced if the model misses the onset or offset of a behavior bout by even a single frame.",
+    "claim_type": "EXPLICIT",
+    "source": "The high-performance values are, in our opinion, impressive given that they were calculated based on single-frame predictions for each behavior, and thus performance will be reduced if the model misses the onset or offset of a behavior bout by even a single frame.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains a factor that makes the performance metric demanding.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "The high values suggest that the model not only correctly predicted which behaviors happened and when but also had the resolution to correctly predict the onset and offset of bouts.",
+    "claim_type": "EXPLICIT",
+    "source": "These high values suggest that the model not only correctly predicted which behaviors happened and when but also had the resolution to correctly predict the onset and offset of bouts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the performance results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Multiple researchers with extensive experience in monitoring and analyzing mouse behavior videos independently labeled the same set of videos for several datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Multiple researchers with extensive experience in monitoring and analyzing mouse behavior videos independently labeled the same set of videos for the Mouse-Ventral1, Mouse-Ventral2, Mouse-Openfield, Mouse-Social, and Mouse-Homecage datasets, allowing us to measure the consistency across human experts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the human labeling for benchmarking.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Sturman et al. released the labels of each of three expert human labelers.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, Sturman et al. released the labels of each of three expert human labelers (Sturman et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the availability of multiple human labels for the Sturman datasets, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Human-human performance was calculated by defining one labeler as the 'ground truth' and the other labelers as 'predictions' and then computing the same performance metrics as for DeepEthogram.",
+    "claim_type": "EXPLICIT",
+    "source": "Human-human performance was calculated by defining one labeler as the 'ground truth' and the other labelers as 'predictions' and then computing the same performance metrics as for DeepEthogram.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the method for calculating human-human agreement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "'Human accuracy' is the same as the percentage of scores on which two humans agreed.",
+    "claim_type": "EXPLICIT",
+    "source": "In this way, 'human accuracy' is the same as the percentage of scores on which two humans agreed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines human accuracy in the context of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "The overall accuracy, F1 scores, precision, and recall for DeepEthogram approached that of expert human labelers.",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, the overall accuracy, F1 scores, precision, and recall for DeepEthogram approached that of expert human labelers (Figure 3A, B, C, E, H, I, J and L, Figure 3\u2014figure supplement 1A,B,D,G,H,I,K, Figure 3\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison result with human performance, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "In many cases, DeepEthogram's performance was statistically indistinguishable from human-level performance.",
+    "claim_type": "EXPLICIT",
+    "source": "In many cases, DeepEthogram's performance was statistically indistinguishable from human-level performance, and in the cases in which humans performed better, the difference in performance was generally small.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical comparison result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "In cases where humans performed better than DeepEthogram, the difference in performance was generally small.",
+    "claim_type": "EXPLICIT",
+    "source": "In many cases, DeepEthogram's performance was statistically indistinguishable from human-level performance, and in the cases in which humans performed better, the difference in performance was generally small.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "The behaviors for which DeepEthogram had the lowest performance tended to be the behaviors for which humans had less agreement.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the behaviors for which DeepEthogram had the lowest performance tended to be the behaviors for which humans had less agreement (lower human-human F1 score) (Figure 3L, Figure 3\u2014figure supplement 1K, Figure 3\u2014figure supplement 2K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation about the relationship between model and human performance, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "DeepEthogram performed best on the frames in which the human labelers agreed and did more poorly in the frames in which humans disagreed.",
+    "claim_type": "EXPLICIT",
+    "source": "Relatedly, DeepEthogram performed best on the frames in which the human labelers agreed and did more poorly in the frames in which humans disagreed (Figure 3N and O, Figure 3\u2014figure supplement 1M, Figure 3\u2014figure supplement 2M).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an analysis of performance based on human agreement, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "There is a strong correlation between DeepEthogram and human performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, there is a strong correlation between DeepEthogram and human performance, and the values for DeepEthogram's performance approach those of expert human labelers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the comparison with human performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The values for DeepEthogram's performance approach those of expert human labelers.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, there is a strong correlation between DeepEthogram and human performance, and the values for DeepEthogram's performance approach those of expert human labelers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the comparison with human performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "The behavior with the worst model performance was 'defecate' from the Mouse-Openfield dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "The behavior with the worst model performance was 'defecate' from the Mouse-Openfield dataset (Figures 2C and 3E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This identifies a specific case of poor performance, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "Defecation was incredibly rare, occurring in only 0.1% of frames.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, defecation was incredibly rare, occurring in only 0.1% of frames.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the frequency of the defecation behavior.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "The act of defecation was not actually visible from the videos.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the act of defecation was not actually visible from the videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the video data for this behavior.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Human labelers marked the 'defecate' behavior when new fecal matter appeared, which involved knowledge of the foreground and background, tracking objects, and inferring unseen behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Rather, human labelers marked the 'defecate' behavior when new fecal matter appeared, which involved knowledge of the foreground and background, tracking objects, and inferring unseen behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how humans labeled this behavior.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "Defecation is expected to be challenging for DeepEthogram because the model is based on images and local motion and thus will fail when the behavior cannot be directly observed visually.",
+    "claim_type": "EXPLICIT",
+    "source": "This type of behavior is expected to be challenging for DeepEthogram because the model is based on images and local motion and thus will fail when the behavior cannot be directly observed visually.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why the model performed poorly on this behavior.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "The model was able to accurately predict the presence of a behavior even when that behavior happened in different locations in the environment and with different orientations of the animal.",
+    "claim_type": "EXPLICIT",
+    "source": "The model was able to accurately predict the presence of a behavior even when that behavior happened in different locations in the environment and with different orientations of the animal (Figure 3\u2014figure supplement 12).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes spatial invariance of the model, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "The model predicted face grooming accurately both when the mouse was in the top-left quadrant facing north and when the mouse was in the bottom-right quadrant facing west.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the model predicted face grooming accurately both when the mouse was in the top-left quadrant of the chamber and facing north and when the mouse was in the bottom-right quadrant facing west.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specific example of spatial invariance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Spatial invariance is particularly important for many analyses of behavior that are concerned with the behavior itself, rather than where that behavior happens.",
+    "claim_type": "EXPLICIT",
+    "source": "This result is particularly important for many analyses of behavior that are concerned with the behavior itself, rather than where that behavior happens.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the importance of spatial invariance.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "DeepEthogram's high performance even on rare behaviors is a striking feature.",
+    "claim_type": "EXPLICIT",
+    "source": "One striking feature was DeepEthogram's high performance even on rare behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This highlights a notable aspect of performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "Simpler models performed well on behaviors that occurred frequently and performed poorly on the infrequent behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "From our preliminary work building up to the model presented here, we found that simpler models performed well on behaviors that occurred frequently and performed poorly on the infrequent behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes findings from preliminary work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "In many datasets, the behaviors of interest are infrequent.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that, in many datasets, the behaviors of interest are infrequent (Figure 2), we placed a major emphasis on performance in cases with large class imbalances, meaning when some behaviors only occurred in a small fraction of frames.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a characteristic of the datasets, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "Major emphasis was placed on performance in cases with large class imbalances.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that, in many datasets, the behaviors of interest are infrequent (Figure 2), we placed a major emphasis on performance in cases with large class imbalances, meaning when some behaviors only occurred in a small fraction of frames.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design priority.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "Class imbalances were accounted for in the initialization of the model parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "In brief, we accounted for class imbalances in the initialization of the model parameters (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a technical approach to handling class imbalance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "The cost function was changed to weight errors on rare classes more heavily than errors on common classes.",
+    "claim_type": "EXPLICIT",
+    "source": "We also changed the cost function to weight errors on rare classes more heavily than errors on common classes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a technical approach to handling class imbalance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "A form of regularization specific to transfer learning was used to reduce overfitting.",
+    "claim_type": "EXPLICIT",
+    "source": "We used a form of regularization specific to transfer learning to reduce overfitting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a technical approach to prevent overfitting.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "The threshold for converting the model's probability of a given behavior into a classification of whether that behavior was present was tuned.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we tuned the threshold for converting the model's probability of a given behavior into a classification of whether that behavior was present.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a technical approach for classification.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "Without these added features, the model simply learned to ignore rare classes.",
+    "claim_type": "EXPLICIT",
+    "source": "Without these added features, the model simply learned to ignore rare classes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes what happened without the technical approaches for handling class imbalance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "Steps toward identifying rare behaviors are considered to be of major significance for effective application in common experimental datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "We consider these steps toward identifying rare behaviors to be of major significance for effective application in common experimental datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assessment of the importance of handling rare behaviors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "DeepEthogram produces predictions on individual frames, allowing for subsequent analyses of behavior bouts.",
+    "claim_type": "EXPLICIT",
+    "source": "Because DeepEthogram produces predictions on individual frames, it allows for subsequent analyses of behavior bouts, such as the number of bouts, the duration of bouts, and the transition probability from one behavior to another.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of the model output.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "Statistics of bouts are often not available if researchers only record the overall time spent on a behavior with a stopwatch.",
+    "claim_type": "EXPLICIT",
+    "source": "These statistics of bouts are often not available if researchers only record the overall time spent on a behavior with a stopwatch, rather than providing frame-by-frame labels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of traditional manual methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "A strong correspondence was found for the statistics of behavior bouts between the predictions of DeepEthogram and those from human labels.",
+    "claim_type": "EXPLICIT",
+    "source": "We found a strong correspondence for the statistics of behavior bouts between the predictions of DeepEthogram and those from human labels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result about bout statistics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "For the time spent on each behavior, the model predictions and human labels were statistically indistinguishable for the Mouse-Ventral1 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "For the time spent on each behavior, the model predictions and human labels were statistically indistinguishable (one-way ANOVA, p>0.05; Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical comparison result for bout statistics, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "For the number of bouts and bout duration, the model was statistically indistinguishable from the labels of Human 1, on which it was trained.",
+    "claim_type": "EXPLICIT",
+    "source": "For the number of bouts and bout duration, the model was statistically indistinguishable from the labels of Human 1, on which it was trained.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical comparison result for bout statistics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "Some differences were present between the model predictions and the other human labels not used for training.",
+    "claim_type": "EXPLICIT",
+    "source": "Some differences were present between the model predictions and the other human labels not used for training (Figure 4B,C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes differences in bout statistics, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "The magnitude of differences between model and other human labels was within the range of differences between the multiple human labelers.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the magnitude of these differences was within the range of differences between the multiple human labelers (Figure 4B,C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison of model-human and human-human differences, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "The values from the model were highly similar to those from the labels on which it was trained for time spent per behavior, number of bouts, and mean bout duration across all datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "The values from the model were highly similar to the those from the labels on which it was trained (Human 1 labels) for the time spent per behavior, the number of bouts, and the mean bout duration (Figure 4D\u2013F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a summary of bout statistics performance across datasets, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "DeepEthogram accurately predicts bout statistics that might be of interest to biologist end-users.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, these results show that DeepEthogram accurately predicts bout statistics that might be of interest to biologist end-users.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the bout statistics results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "Model agreement with Human 1 was significantly worse than human-human agreement when considering individual videos for time spent on behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "Model agreement was significantly worse than human-human agreement when considering individual videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical comparison result for individual videos.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "The magnitude of the difference between model agreement and human-human agreement was small for time spent on behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the magnitude of this difference was small, implying that discrepancies in behavior labels introduced by the model were only marginally larger than the variability between multiple human labelers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the comparison result.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "For time spent per behavior, number of bouts, and mean bout length, the human-model differences were similar, and not significantly different, in magnitude to the differences between humans when averaged across videos.",
+    "claim_type": "EXPLICIT",
+    "source": "For time spent per behavior, number of bouts, and mean bout length, the human-model differences were similar, and not significantly different, in magnitude to the differences between humans (Figure 5C\u2013E, right column).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical comparison result for bout statistics averaged across videos, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "The transition probabilities between behaviors were broadly similar between Human 1, Human 2, and the model.",
+    "claim_type": "EXPLICIT",
+    "source": "The transition probabilities between behaviors were also broadly similar between Human 1, Human 2, and the model (Figure 5F\u2013H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison result for transition probabilities, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "Model-human differences and human-human differences were significantly correlated for bout statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, model-human differences and human-human differences were significantly correlated (Figure 5C\u2013E, right column), again showing that DeepEthogram models are more reliable for situations in which multiple human labelers agree (see Figure 3N\u2013O, Figure 3\u2014figure supplement 1M, Figure 3\u2014figure supplement 2M).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a correlation result, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "DeepEthogram models are more reliable for situations in which multiple human labelers agree.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, model-human differences and human-human differences were significantly correlated (Figure 5C\u2013E, right column), again showing that DeepEthogram models are more reliable for situations in which multiple human labelers agree (see Figure 3N\u2013O, Figure 3\u2014figure supplement 1M, Figure 3\u2014figure supplement 2M).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the correlation result, with references to figures.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "The model predictions are noisier than human-human agreement on the level of individual videos.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the results from Figure 5A,B indicate that the model predictions are noisier than human-human agreement on the level of individual videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the individual video results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "When averaged across multiple videos, the noise in model predictions averages out and results in similar levels of variability for the model and multiple human labelers.",
+    "claim_type": "EXPLICIT",
+    "source": "However, when averaged across multiple videos (Figure 5C\u2013E), this noise averages out and results in similar levels of variability for the model and multiple human labelers.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the averaged results, with references to figures.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "DeepEthogram performed slightly worse on F1 scores relative to expert humans but performed similarly to humans on bout statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that DeepEthogram performed slightly worse on F1 scores relative to expert humans but performed similarly to humans on bout statistics, it is possible that for rare behaviors DeepEthogram misses a small number of bouts, which would minimally affect bout statistics but could decrease the overall F1 score.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison and interpretation of different performance metrics.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "For rare behaviors, DeepEthogram may miss a small number of bouts, which would minimally affect bout statistics but could decrease the overall F1 score.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that DeepEthogram performed slightly worse on F1 scores relative to expert humans but performed similarly to humans on bout statistics, it is possible that for rare behaviors DeepEthogram misses a small number of bouts, which would minimally affect bout statistics but could decrease the overall F1 score.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about model behavior.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "DeepEthogram's predictions match well the labels defined by expert human researchers.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, our results from Figures 3\u20145 and Figure 3\u2014figure supplements 1\u20133 indicate that DeepEthogram's predictions match well the labels defined by expert human researchers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the comparison with human performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "Model predictions allow easy post-hoc analysis of additional statistics of behaviors, which may be challenging to obtain with traditional manual methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, these model predictions allow easy post-hoc analysis of additional statistics of behaviors, which may be challenging to obtain with traditional manual methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of the model output.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "The accuracy and F1 scores for DeepEthogram generally exceeded those identified from classifiers based on features of keypoints tracked by DeepLabCut.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the accuracy and F1 scores for DeepEthogram generally exceeded those identified from classifiers based on features of these keypoints (Figure 5\u2014figure supplement 1D\u2013G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison result with keypoint-based methods, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C178",
+    "claim": "For bout statistics, DeepEthogram and keypoint-based methods performed similarly well.",
+    "claim_type": "EXPLICIT",
+    "source": "For bout statistics, the two methods performed similarly well (Figure 5\u2014figure supplement 1F\u2013J).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison result for bout statistics, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C179",
+    "claim": "For at least one type of video and dataset, DeepEthogram outperformed an established keypoint-based approach.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, for at least one type of video and dataset, DeepEthogram outperformed an established approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the comparison with keypoint-based methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "The videos tested were relatively low resolution, which restricted the number of keypoints on the mouse's body that could be labeled.",
+    "claim_type": "EXPLICIT",
+    "source": "First, the videos tested were relatively low resolution, which restricted the number of keypoints on the mouse's body that could be labeled.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "High-resolution videos with more keypoints may improve the keypoint-based classification approach.",
+    "claim_type": "EXPLICIT",
+    "source": "High-resolution videos with more keypoints may improve the keypoint-based classification approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about how keypoint-based methods might improve.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "The videos were recorded with a top-down view, which means that the paw positions were often occluded by the mouse's body.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, our videos were recorded with a top-down view, which means that the paw positions were often occluded by the mouse's body.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "A bottom-up or side view could allow for better identification of keypoints and may result in improved performance for the keypoint-based methods.",
+    "claim_type": "EXPLICIT",
+    "source": "A bottom-up or side view could allow for better identification of keypoints and may result in improved performance for the keypoint-based methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about how keypoint-based methods might improve.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C184",
+    "claim": "An alternative approach to DeepEthogram could be to use unsupervised behavior classification followed by human labeling of behavior clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "An alternative approach to DeepEthogram and other supervised classification pipelines could be to use an unsupervised behavior classification followed by human labeling of behavior clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an alternative approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C185",
+    "claim": "The advantage of unsupervised clustering with post-hoc labeling is that it involves less researcher time due to the lack of supervised labeling.",
+    "claim_type": "EXPLICIT",
+    "source": "The advantage of this approach is that it involves less researcher time due to the lack of supervised labeling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of the alternative approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C186",
+    "claim": "Unsupervised clustering with post-hoc labeling is not designed to identify predefined behaviors of interest and thus might not be well suited for the goal of supervised classification.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this approach is not designed to identify predefined behaviors of interest and thus, in principle, might not be well suited for the goal of supervised classification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the alternative approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C187",
+    "claim": "B-SoID identified 11 behavior clusters for the Mouse-Openfield dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We used B-SoID (Hsu and Yttri, 2019), an unsupervised classification pipeline for animal behavior, which identified 11 behavior clusters for this dataset (Figure 5\u2014figure supplement 2A, B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from applying B-SoID, with citation and reference to a figure.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C188",
+    "claim": "B-SoID clusters were separable in a low-dimensional behavior space.",
+    "claim_type": "EXPLICIT",
+    "source": "These clusters were separable in a low-dimensional behavior space (Figure 5\u2014figure supplement 2B), and B-SoID's fast approximation algorithm showed good performance (Figure 5\u2014figure supplement 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from applying B-SoID, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C189",
+    "claim": "B-SoID's fast approximation algorithm showed good performance.",
+    "claim_type": "EXPLICIT",
+    "source": "These clusters were separable in a low-dimensional behavior space (Figure 5\u2014figure supplement 2B), and B-SoID's fast approximation algorithm showed good performance (Figure 5\u2014figure supplement 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from applying B-SoID, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C190",
+    "claim": "There appeared to be little correspondence between B-SoID clusters and human labels.",
+    "claim_type": "EXPLICIT",
+    "source": "By looking at the joint distributions of B-SoID clusters and human labels, there appeared to be little correspondence (Figure 5\u2014figure supplement 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from comparing B-SoID and human labels, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C191",
+    "claim": "For most behaviors, DeepEthogram performed better than the unsupervised clustering with post-hoc assignment pipeline.",
+    "claim_type": "EXPLICIT",
+    "source": "For most behaviors, DeepEthogram performed better than this alternative pipeline (Figure 5\u2014figure supplement 2E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison result, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C192",
+    "claim": "The unsupervised clustering with post-hoc assignment of human labels is not the use for which B-SoID and other unsupervised algorithms were designed.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that the unsupervised clustering with post-hoc assignment of human labels is not the use for which B-SoID (Hsu and Yttri, 2019) and other unsupervised algorithms (Wiltschko, 2015; Berman et al., 2014) were designed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This clarifies the intended use of unsupervised methods, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C193",
+    "claim": "Unsupervised approaches are designed to discover repeated behavior motifs directly from data, without humans predefining the behaviors of interest.",
+    "claim_type": "EXPLICIT",
+    "source": "Unsupervised approaches are designed to discover repeated behavior motifs directly from data, without humans predefining the behaviors of interest (Datta et al., 2019; Egnor and Branson, 2016), and B-SoID succeeded in this goal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design goal of unsupervised methods, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C194",
+    "claim": "B-SoID succeeded in discovering repeated behavior motifs directly from data.",
+    "claim_type": "EXPLICIT",
+    "source": "Unsupervised approaches are designed to discover repeated behavior motifs directly from data, without humans predefining the behaviors of interest (Datta et al., 2019; Egnor and Branson, 2016), and B-SoID succeeded in this goal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assessment of B-SoID's performance on its intended task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C195",
+    "claim": "If one's goal is the automatic labeling of human-defined behaviors, DeepEthogram or other supervised machine learning approaches are better choices than unsupervised methods.",
+    "claim_type": "EXPLICIT",
+    "source": "However, if one's goal is the automatic labeling of human-defined behaviors, our results show that DeepEthogram or other supervised machine learning approaches are better choices.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the comparison results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C196",
+    "claim": "The models performed at high levels even with only one labeled video in the training set for all but the rarest behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "For all but the rarest behaviors, the models performed at high levels even with only one labeled video in the training set (Figure 6A\u2013C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result about training data requirements, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C197",
+    "claim": "For all the behaviors studied across datasets, the performance measured as accuracy or F1 score approached seemingly asymptotic levels after training on approximately 12 videos.",
+    "claim_type": "EXPLICIT",
+    "source": "For all the behaviors studied across datasets, the performance measured as accuracy or F1 score approached seemingly asymptotic levels after training on approximately 12 videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result about training data requirements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C198",
+    "claim": "A training set of approximately 12 videos or less is likely sufficient for many cases.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, a training set of this size or less is likely sufficient for many cases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the training data results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C199",
+    "claim": "The model performed with more than 90% accuracy when trained with only 80 example frames of a given behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Combining all these splits, datasets, and behaviors together, we found that the model performed with more than 90% accuracy when trained with only 80 example frames of a given behavior and over 95% accuracy with only 100 positive example frames (Figure 6D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result about training data requirements, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C200",
+    "claim": "The model performed with over 95% accuracy when trained with only 100 positive example frames of a given behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Combining all these splits, datasets, and behaviors together, we found that the model performed with more than 90% accuracy when trained with only 80 example frames of a given behavior and over 95% accuracy with only 100 positive example frames (Figure 6D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result about training data requirements, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C201",
+    "claim": "DeepEthogram achieved an F1 score of 0.7 with only 9000 positive example frames, which corresponds to about 5 min of example behavior at 30 frames per second.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, DeepEthogram achieved an F1 score of 0.7 with only 9000 positive example frames, which corresponds to about 5 min of example behavior at 30 frames per second (Figure 6E, see Figure 3P for an example of ~0.7 F1 score).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result about training data requirements, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C202",
+    "claim": "When the sequence model was used instead of using the predictions directly from the feature extractors, model performance was higher.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, when the sequence model was used instead of using the predictions directly from the feature extractors, model performance was higher (Figure 6F,G) and required less training data (data not shown), emphasizing the importance of using long timescale information in the prediction of behaviors.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison result showing the benefit of the sequence model, with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C203",
+    "claim": "Using the sequence model required less training data than using predictions directly from feature extractors.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, when the sequence model was used instead of using the predictions directly from the feature extractors, model performance was higher (Figure 6F,G) and required less training data (data not shown), emphasizing the importance of using long timescale information in the prediction of behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result about training data requirements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C204",
+    "claim": "The results emphasize the importance of using long timescale information in the prediction of behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, when the sequence model was used instead of using the predictions directly from the feature extractors, model performance was higher (Figure 6F,G) and required less training data (data not shown), emphasizing the importance of using long timescale information in the prediction of behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the sequence model results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C205",
+    "claim": "DeepEthogram models require little training to achieve high performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, DeepEthogram models require little training to achieve high performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the training data results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C206",
+    "claim": "As more training data are added, the performance of the model improves.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, as more training data are added, the performance of the model improves, but this rather light dependency on the amount of training data makes DeepEthogram amenable for even small-scale projects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the relationship between training data and performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C207",
+    "claim": "The light dependency on the amount of training data makes DeepEthogram amenable for even small-scale projects.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, as more training data are added, the performance of the model improves, but this rather light dependency on the amount of training data makes DeepEthogram amenable for even small-scale projects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the training data results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C208",
+    "claim": "On modern computer hardware, the flow generator and feature extractors can be trained in approximately 24 hr.",
+    "claim_type": "EXPLICIT",
+    "source": "On modern computer hardware, the flow generator and feature extractors can be trained in approximately 24 hr.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training time.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C209",
+    "claim": "In many cases, the flow generator and feature extractors only need to be trained once.",
+    "claim_type": "EXPLICIT",
+    "source": "In many cases, these models only need to be trained once.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the reusability of trained models.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C210",
+    "claim": "Inference can be performed at ~150 frames per second for videos at 256 \u00d7 256 resolution for DeepEthogram-fast.",
+    "claim_type": "EXPLICIT",
+    "source": "Afterwards, performing inference to make predictions about the behaviors present on each frame can be performed at ~150 frames per second for videos at 256 \u00d7 256 resolution for DeepEthogram-fast, at 80 frames per second for DeepEthogram-medium, and 13 frames per second for DeepEthogram-slow (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference speed result, with reference to a table.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C211",
+    "claim": "Inference can be performed at 80 frames per second for videos at 256 \u00d7 256 resolution for DeepEthogram-medium.",
+    "claim_type": "EXPLICIT",
+    "source": "Afterwards, performing inference to make predictions about the behaviors present on each frame can be performed at ~150 frames per second for videos at 256 \u00d7 256 resolution for DeepEthogram-fast, at 80 frames per second for DeepEthogram-medium, and 13 frames per second for DeepEthogram-slow (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference speed result, with reference to a table.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C212",
+    "claim": "Inference can be performed at 13 frames per second for videos at 256 \u00d7 256 resolution for DeepEthogram-slow.",
+    "claim_type": "EXPLICIT",
+    "source": "Afterwards, performing inference to make predictions about the behaviors present on each frame can be performed at ~150 frames per second for videos at 256 \u00d7 256 resolution for DeepEthogram-fast, at 80 frames per second for DeepEthogram-medium, and 13 frames per second for DeepEthogram-slow (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference speed result, with reference to a table.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C213",
+    "claim": "For a standard 30 min video collected at 60 frames per second, inference could be finished in 12 min for DeepEthogram-fast or 2 hr for DeepEthogram-slow.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, for a standard 30 min video collected at 60 frames per second, inference could be finished in 12 min for DeepEthogram-fast or 2 hr for DeepEthogram-slow.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a calculation of inference time for a typical video.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C214",
+    "claim": "The training of the models and the inference involve zero user time because they do not require manual input or observation from the user.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the training of the models and the inference involve zero user time because they do not require manual input or observation from the user.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a usability feature.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C215",
+    "claim": "The inference speed is rapid enough to get results quickly after experiments to allow fast analysis and experimental iteration.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, this speed is rapid enough to get results quickly after experiments to allow fast analysis and experimental iteration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assessment of the practical utility of the inference speed.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C216",
+    "claim": "The inference time is not fast enough for online or closed-loop experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the inference time is not fast enough for online or closed-loop experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the inference speed.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C217",
+    "claim": "A GUI was developed for labeling videos, training models, and running inference.",
+    "claim_type": "EXPLICIT",
+    "source": "We developed a GUI for labeling videos, training models, and running inference (Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a software feature, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C218",
+    "claim": "The DeepEthogram GUI is similar in behavior to those for BORIS and JAABA.",
+    "claim_type": "EXPLICIT",
+    "source": "Our GUI is similar in behavior to those for BORIS (Friard et al., 2016) and JAABA (Kabra et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This compares the GUI to existing tools, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C220",
+    "claim": "The GUI interface requires no programming by the end-user.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, this interface requires no programming by the end-user.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a usability feature of the GUI.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C221",
+    "claim": "The GUI includes an option for users to manually check and edit the predictions output by the model.",
+    "claim_type": "EXPLICIT",
+    "source": "The GUI also includes an option for users to manually check and edit the predictions output by the model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of the GUI.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C222",
+    "claim": "The process of checking and editing predictions is expected to be fast because the large majority of frames are expected to be labeled correctly.",
+    "claim_type": "EXPLICIT",
+    "source": "This process is expected to be fast because the large majority of frames are expected to be labeled correctly, based on our accuracy results, so the user can focus on the small number of frames associated with rare behaviors or behaviors that are challenging to detect automatically.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an expectation based on the accuracy results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C223",
+    "claim": "Corrected labels can be used to retrain the models to obtain better performance on future experimental videos.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, these new labels can then be used to retrain the models to obtain better performance on future experimental videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature for iterative improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C224",
+    "claim": "Modern computer vision methods for action detection based on pretrained deep neural networks can be readily applied to animal behavior datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that modern computer vision methods for action detection based on pretrained deep neural networks can be readily applied to animal behavior datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion from the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C225",
+    "claim": "DeepEthogram performed well on multiple datasets and generalized across videos and animals, even for identifying rare behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram performed well on multiple datasets and generalized across videos and animals, even for identifying rare behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of performance results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C226",
+    "claim": "By design, CNNs ignore absolute spatial location and thus are able to identify behaviors even when animals are in different locations and orientations within a behavioral arena.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, by design, CNNs ignore absolute spatial location and thus are able to identify behaviors even when animals are in different locations and orientations within a behavioral arena (Figure 3\u2014figure supplement 12).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This explains a property of CNNs and its benefit, with reference to a figure.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C227",
+    "claim": "The software package is anticipated to save researchers great amounts of time.",
+    "claim_type": "EXPLICIT",
+    "source": "We anticipate this software package will save researchers great amounts of time, will lead to more reproducible results by eliminating inter-researcher variability, and will enable experiments that may otherwise not be possible by increasing the number of experiments a lab can reasonably perform or the number of behaviors that can be investigated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an anticipated benefit of the software.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C228",
+    "claim": "The software package is anticipated to lead to more reproducible results by eliminating inter-researcher variability.",
+    "claim_type": "EXPLICIT",
+    "source": "We anticipate this software package will save researchers great amounts of time, will lead to more reproducible results by eliminating inter-researcher variability, and will enable experiments that may otherwise not be possible by increasing the number of experiments a lab can reasonably perform or the number of behaviors that can be investigated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an anticipated benefit of the software.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C229",
+    "claim": "The software package is anticipated to enable experiments that may otherwise not be possible by increasing the number of experiments a lab can reasonably perform or the number of behaviors that can be investigated.",
+    "claim_type": "EXPLICIT",
+    "source": "We anticipate this software package will save researchers great amounts of time, will lead to more reproducible results by eliminating inter-researcher variability, and will enable experiments that may otherwise not be possible by increasing the number of experiments a lab can reasonably perform or the number of behaviors that can be investigated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an anticipated benefit of the software.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C230",
+    "claim": "The models presented performed well for all datasets tested.",
+    "claim_type": "EXPLICIT",
+    "source": "The models presented here performed well for all datasets tested.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of performance results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C231",
+    "claim": "The models are expected to perform well in cases in which there is a high degree of agreement between separate human labelers.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, we expect the models will perform well in cases in which there is a high degree of agreement between separate human labelers, as our results in Figures 3\u20145 indicate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an expectation based on the results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C232",
+    "claim": "The models do better with more training data.",
+    "claim_type": "EXPLICIT",
+    "source": "As we have shown, the models do better with more training data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result about training data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C233",
+    "claim": "A common use of DeepEthogram is anticipated to be making automated predictions followed by rapid user-based checking and editing of labels for inaccurately labeled frames.",
+    "claim_type": "EXPLICIT",
+    "source": "We anticipate that a common use of DeepEthogram will be to make automated predictions for each video frame followed by rapid and easy user-based checking and editing of the labels in the GUI for the small number of frames that may be inaccurately labeled.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an anticipated use case.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C234",
+    "claim": "Revised labels can be used as additional training data to continually update the models and improve performance on subsequent videos.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that these revised labels can then be used as additional training data to continually update the models and thus improve the performance on subsequent videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature for iterative improvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C235",
+    "claim": "One goal for DeepEthogram was to make it general-purpose and applicable to all videos with behavior labels.",
+    "claim_type": "EXPLICIT",
+    "source": "One of our goals for DeepEthogram was to make it general-purpose and applicable to all videos with behavior labels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design goal.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C236",
+    "claim": "DeepEthogram operating directly on raw video pixels is advantageous because preprocessing is not required and the researcher does not need to make decisions about which features of the animal to track.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram operates directly on the raw video pixels, which is advantageous because preprocessing is not required and the researcher does not need to make decisions about which features of the animal to track.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C237",
+    "claim": "Skeleton-based action recognition models require a consistent skeleton as their input.",
+    "claim_type": "EXPLICIT",
+    "source": "Skeleton-based action recognition models, in which keypoints are used to predict behaviors, require a consistent skeleton as their input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a requirement of skeleton-based methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C238",
+    "claim": "A crucial step in skeleton-based action recognition is feature engineering, which means turning the x and y coordinates of keypoints into features suitable for classification.",
+    "claim_type": "EXPLICIT",
+    "source": "A crucial step in skeleton-based action recognition is feature engineering, which means turning the x and y coordinates of keypoints (such as paws or joints) into features suitable for classification (such as the angle of specific joints).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a step in skeleton-based methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C239",
+    "claim": "With different skeletons or numbers of animals, features in skeleton-based methods must be carefully redesigned.",
+    "claim_type": "EXPLICIT",
+    "source": "With different skeletons (such as mice, flies, or humans) or numbers of animals (one or more), these features must be carefully redesigned.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of skeleton-based methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C240",
+    "claim": "Using raw pixel values as inputs to DeepEthogram allows for a general-purpose pipeline that can be applied to videos of all types, without the need to tailor preprocessing steps.",
+    "claim_type": "EXPLICIT",
+    "source": "Using raw pixel values as inputs to DeepEthogram allows for a general-purpose pipeline that can be applied to videos of all types, without the need to tailor preprocessing steps depending on the behavior of interest, species, number of animals, video angles, resolution, and maze geometries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of the pixel-based approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C241",
+    "claim": "DeepEthogram models are not expected to generalize across videos that differ substantially in parameters like view angle, species, number of animals, resolution, or maze geometry.",
+    "claim_type": "EXPLICIT",
+    "source": "However, DeepEthogram models are not expected to generalize across videos that differ substantially in any of these parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C242",
+    "claim": "Models that detect grooming in top-down videos are unlikely to identify grooming in side-view videos.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, models that detect grooming in top-down videos are unlikely to identify grooming in side-view videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an example of the generalization limitation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C243",
+    "claim": "Because DeepEthogram is a general-purpose pipeline, it will not perform as well as pipelines that are engineered for a specific task, arena, or species.",
+    "claim_type": "EXPLICIT",
+    "source": "Because DeepEthogram is a general-purpose pipeline, it will not perform as well as pipelines that are engineered for a specific task, arena, or species.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a tradeoff of the general-purpose approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C244",
+    "claim": "MARS was exquisitely engineered for social interactions between a black and white mouse and thus is expected to outperform DeepEthogram on videos of this type.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, MARS was exquisitely engineered for social interactions between a black and white mouse (Segalin, 2020) and thus is expected to outperform DeepEthogram on videos of this type.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an example of a specialized method that may outperform DeepEthogram, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C245",
+    "claim": "Because DeepEthogram operates on raw pixels, it is possible that the models may perform more poorly on zoomed-out videos in which the animal is only a few pixels.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, because DeepEthogram operates on raw pixels, it is possible that our models may perform more poorly on zoomed-out videos in which the animal is only a few pixels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential limitation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C246",
+    "claim": "If the recording conditions change greatly, such as moving the camera or altering the arena background, it is likely that DeepEthogram will have to be retrained.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, if the recording conditions change greatly, such as moving the camera or altering the arena background, it is likely that DeepEthogram will have to be retrained.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation regarding changes in recording conditions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C247",
+    "claim": "Using pose for classification could make behavior classifiers faster to train, less susceptible to overfitting, and less demanding of computational resources.",
+    "claim_type": "EXPLICIT",
+    "source": "Using pose for classification could make behavior classifiers faster to train, less susceptible to overfitting, and less demanding of computational resources.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes potential advantages of skeleton-based methods.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C248",
+    "claim": "Using pose as an intermediate feature could allow the user to more easily assess model performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Using pose as an intermediate feature could allow the user to more easily assess model performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential advantage of skeleton-based methods.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C249",
+    "claim": "Skeleton-based action recognition could aid multi-animal experiments by more easily predicting behaviors separately for each animal.",
+    "claim_type": "EXPLICIT",
+    "source": "Depending on the design, such skeleton-based action recognition could aid multi-animal experiments by more easily predicting behaviors separately for each animal, as JAABA does (Kabra et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential advantage of skeleton-based methods, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C250",
+    "claim": "DeepEthogram can accurately identify social interactions but does not have the ability to track the identities of multiple mice and identify behaviors separately for each mouse.",
+    "claim_type": "EXPLICIT",
+    "source": "While we demonstrated that DeepEthogram can accurately identify social interactions, it does not have the ability to track the identities of multiple mice and identify behaviors separately for each mouse.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of DeepEthogram for multi-animal experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C251",
+    "claim": "Tracking keypoints on the animal gives valuable, human-understandable information for further analysis, such as time spent near walls, distance traveled, and measures of velocity.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, tracking keypoints on the animal gives valuable, human-understandable information for further analysis, such as time spent near the walls of an arena, distance traveled, and measures of velocity (Pennington, 2019; Sturman et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of keypoint tracking, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C252",
+    "claim": "Specific aspects of an animal's movements, such as limb positions and angles derived from keypoint tracking, can be directly related to each behavior of interest, providing an additional layer of interpretation and analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, specific aspects of an animal's movements, such as limb positions and angles derived from keypoint tracking, can be directly related to each behavior of interest, providing an additional layer of interpretation and analysis of the behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of keypoint tracking.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C253",
+    "claim": "DeepEthogram does not track parts of the animal's body or position and velocity information, and instead focuses only on the classification of human-defined behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram does not track parts of the animal's body or position and velocity information, and instead it focuses only on the classification of human-defined behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of DeepEthogram compared to keypoint-based methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C254",
+    "claim": "Because DeepEthogram uses 11 frames at a time for inputs and relatively large models, it is not easily applicable to real-time applications.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, because DeepEthogram uses 11 frames at a time for inputs, as well as relatively large models, it is not easily applicable to real-time applications, such as the triggering of optogenetic stimulation based on ongoing behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation for real-time use.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C255",
+    "claim": "DeepEthogram may prove to be especially useful when a large number of videos or behaviors need to be analyzed in a given project.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram may prove to be especially useful when a large number of videos or behaviors need to be analyzed in a given project.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an anticipated use case.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C256",
+    "claim": "DeepEthogram could be useful for drug discovery projects or projects in which multiple genotypes need to be compared.",
+    "claim_type": "EXPLICIT",
+    "source": "These cases could include drug discovery projects or projects in which multiple genotypes need to be compared.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes potential use cases.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C257",
+    "claim": "DeepEthogram could be used for standardized behavioral assays, such as those run frequently in a behavioral core facility or across many projects with standardized conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, DeepEthogram could be used for standardized behavioral assays, such as those run frequently in a behavioral core facility or across many projects with standardized conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential use case.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C258",
+    "claim": "User time scales linearly with the number of videos for manual labeling of behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, whereas user time scales linearly with the number of videos for manual labeling of behaviors, user time for DeepEthogram is limited to only the labeling of initial videos for training the models and then can involve essentially no time on the user's end for all subsequent movies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the scaling of manual labeling.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C259",
+    "claim": "User time for DeepEthogram is limited to only the labeling of initial videos for training the models and then can involve essentially no time for all subsequent movies.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, whereas user time scales linearly with the number of videos for manual labeling of behaviors, user time for DeepEthogram is limited to only the labeling of initial videos for training the models and then can involve essentially no time on the user's end for all subsequent movies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the scaling advantage of DeepEthogram.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C260",
+    "claim": "It took approximately 1\u20133 hr for an expert researcher to label five behaviors in a 10 min movie from the Mouse-Openfield dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "In our hands, it took approximately 1\u20133 hr for an expert researcher to label five behaviors in a 10 min movie from the Mouse-Openfield dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the time required for manual labeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C261",
+    "claim": "If only approximately 10 human-labeled movies are needed for training the model, then only approximately 10\u201330 hr of user time would be required.",
+    "claim_type": "EXPLICIT",
+    "source": "If only approximately 10 human-labeled movies are needed for training the model, then only approximately 10\u201330 hr of user time would be required.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a calculation of total user time for training.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C262",
+    "claim": "Subsequently, tens of movies could be analyzed, across projects with similar recording conditions, without additional user time.",
+    "claim_type": "EXPLICIT",
+    "source": "Subsequently, tens of movies could be analyzed, across projects with similar recording conditions, without additional user time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the time savings after training.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C263",
+    "claim": "DeepEthogram requires a fair amount of computer time.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram does require a fair amount of computer time (see Inference time above, Materials and methods); however, we believe that trading increasingly cheap and available computer time for valuable researcher effort is worthwhile.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a computational requirement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C264",
+    "claim": "Trading increasingly cheap and available computer time for valuable researcher effort is worthwhile.",
+    "claim_type": "EXPLICIT",
+    "source": "DeepEthogram does require a fair amount of computer time (see Inference time above, Materials and methods); however, we believe that trading increasingly cheap and available computer time for valuable researcher effort is worthwhile.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an opinion about the tradeoff.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C265",
+    "claim": "The use of DeepEthogram should make results more reproducible across studies and reduce variability imposed by inter-human labeling differences.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the use of DeepEthogram should make results more reproducible across studies and reduce variability imposed by inter-human labeling differences.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an anticipated benefit.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C266",
+    "claim": "In neuroscience experiments, DeepEthogram could aid identification of the starts and stops of behaviors to relate to neural activity measurements or manipulations.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, in neuroscience experiments, DeepEthogram could aid identification of the starts and stops of behaviors to relate to neural activity measurements or manipulations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential application.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C267",
+    "claim": "DeepEthogram could be easily combined with an algorithm to track an animal's location in an environment.",
+    "claim_type": "EXPLICIT",
+    "source": "First, DeepEthogram could be easily combined with an algorithm to track an animal's location in an environment (Pennington, 2019), thus allowing the identification of behaviors of interest and where those behaviors occur.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential future extension, with citation.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C268",
+    "claim": "It would be interesting to use DeepEthogram's optic flow snippets as inputs to unsupervised behavior pipelines to help uncover latent structure in animal behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, it would be interesting to use DeepEthogram's optic flow snippets as inputs to unsupervised behavior pipelines, where they could help to uncover latent structure in animal behavior (Wiltschko, 2015; Berman et al., 2014; Batty, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential future extension, with citations.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C269",
+    "claim": "Testing different sequence modeling approaches and loss functions in the DeepEthogram pipeline could further improve performance.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, while the use of CNNs for classification is standard practice in machine learning, recent works in temporal action detection use widely different sequence modeling approaches and loss functions (Piergiovanni and Ryoo, 2018; Zeng, 2019; Monfort, 2020). Testing these different approaches in the DeepEthogram pipeline could further improve performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential future improvement, with citations.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C270",
+    "claim": "DeepEthogram was designed in a modular way to allow easy incorporation of new approaches as they become available.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, DeepEthogram was designed in a modular way to allow easy incorporation of new approaches as they become available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design feature.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C271",
+    "claim": "Further development could improve inference speed by using low-precision weights, model quantization, or pruning.",
+    "claim_type": "EXPLICIT",
+    "source": "While inference is already fast, further development could improve inference speed by using low-precision weights, model quantization, or pruning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes potential future improvements.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C272",
+    "claim": "The model is currently designed for temporal action localization.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, although our model is currently designed for temporal action localization, DeepEthogram could be extended by incorporating models for spatiotemporal action localization, in which there can be multiple actors (i.e., animals) performing different behaviors on each frame.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the current scope of the model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C273",
+    "claim": "DeepEthogram could be extended by incorporating models for spatiotemporal action localization for multi-animal scenarios.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, although our model is currently designed for temporal action localization, DeepEthogram could be extended by incorporating models for spatiotemporal action localization, in which there can be multiple actors (i.e., animals) performing different behaviors on each frame.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential future extension.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C15",
+      "C16",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors developed a sparse labeling method using vsx1:GFP plasmid microinjection to identify and track individual sister V2a/b neuron pairs arising from single progenitor divisions in zebrafish. Time-lapse imaging confirmed progenitor elongation before division, and co-labeling with chx10 was required to properly identify V2a/b pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C15, C16, C30, and C31 collectively describe a validated methodological approach. The time-lapse imaging data (C16, Figure 1C), quantitative co-labeling results (C17-C20, Figure 1E), and the conclusion that chx10 co-label is required (C31) provide converging evidence that the sparse labeling approach successfully identifies clonal V2a/b pairs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Approximately 75% of vsx1+ progenitors divide into V2a/b pairs, while the remaining ~25% divide into V2b/s pairs. No triplets or singlets were observed, indicating vsx1 progenitors undergo a single terminal division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C29 present quantitative co-labeling data showing that 66.3% of vsx1+ pairs in chx10:Red background included one V2a neuron, 92.1% in gata3:Red included one V2b, and 24.6% in sox1:GFP included one V2s neuron. The absence of triplets/singlets (C28, 0/195) supports the single division conclusion. The inference that ~75% are V2a/b pairs and ~25% are V2b/s pairs (C27) is mathematically consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Sister V2a/b neurons remain in close proximity throughout development, with inter-soma distances of ~7 \u03bcm at 24 hpf and ~9 \u03bcm at 48 hpf. V2b neurons are typically positioned more dorsally than their V2a counterparts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 present quantitative distance measurements from time-lapse imaging (Figure 2B-C) showing sister neurons remain closer than non-sister neurons and maintain proximity through development. The dorsoventral positioning data (C38, Figure 2D) is statistically significant (p=5.2\u00d710\u207b\u2074). The conclusion that sister neurons remain adjacent (C37, C40) is well-supported by comparing inter-soma distances (~9 \u03bcm) to soma size (~10 \u03bcm).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Sister V2a neurons have axons 61% longer than their V2b counterparts, consistent with Notch-mediated attenuation of axon growth. Despite different lengths, sister V2a/b axons follow similar trajectories, with a median of 37.1% of V2b axon length within 5 \u03bcm of the V2a axon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 present quantitative morphological data from axon reconstructions (Figure 3B-C). The 61% length difference (C42) is statistically significant (p=1.9\u00d710\u207b\u2075), and the axon proximity measurement (C45, 37.1% within 5 \u03bcm) is clearly quantified. The interpretation that this is consistent with Notch effects (C43) is appropriately cited. However, C46 is speculative about shared targets and should not be considered definitively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "Sister V2a/b neurons receive asynchronous synaptic input from distinct presynaptic sources during light-evoked locomotion. This pattern extends to non-clonal V2a/b pairs in the same segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 present paired electrophysiology data (n=13 pairs, Figure 4D-G) showing asynchronous EPSC timing between sister neurons. The EPSC-triggered averages show minimal synchronous input, and the statistical analysis (Figure 4G) demonstrates significant differences between detected EPSCs and simultaneously recorded signals. The inference that asynchronous timing indicates distinct presynaptic sources (C52) is appropriately cited and logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Sister V2a/b neurons do not form direct synaptic connections with each other. This lack of interconnectivity extends to non-clonal V2a/b pairs in the same segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 present paired recording data (n=10 clonal pairs, n=7 non-clonal pairs, Figure 5C-D) showing no detectable evoked currents in either direction. The experimental design appropriately tested both directions of connectivity using current-clamp stimulation and voltage-clamp recording. The conclusion that V2a/b neurons in the same segment do not form direct synapses (C58) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Optogenetic stimulation using CoChR2-tdTomato successfully and selectively activates vsx1+ neurons. All CoChR2+ neurons (n=13) fired action potentials in response to light, while all CoChR2- neurons (n=22) remained inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 present validation data for the optogenetic approach (Figure 6C-E). The 100% success rate for CoChR2+ neurons and 0% activation of CoChR2- neurons demonstrates specificity. The observation of prolonged spiking (C63) and its attribution to CoChR2 kinetics (C64) is appropriately cited. This establishes the method as feasible for downstream connectivity assessment (C65).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C74"
+    ],
+    "result": "Sister V2a/b neurons rarely share downstream synaptic targets. Of 99 recorded neurons, only 2 received input from both V2a and V2b of a clonal pair, while 6 received input only from V2a and 6 only from V2b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 and C73-C74 present optogenetic connectivity mapping data (Figure 7B-E, Table 1). The quantitative results show 85/99 neurons with no response, 6 with EPSC only, 6 with IPSC only, and 2 with both. The experimental design appropriately isolated EPSCs and IPSCs using different holding potentials, and pharmacological validation was performed in a subset (C67, C68). The conclusion that sister neurons do not preferentially share targets (C74) is well-supported by the low frequency (2/14) of shared connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A subset of target neurons (10/99) exhibited slow depolarizing currents with lower amplitude and longer rise time than fast EPSCs, possibly due to weak disynaptic electrical connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 describe an additional observation of slow currents (Figure 7D, F-G). While the quantitative characterization (C71) is supported by data, the interpretation as disynaptic electrical connections (C72) is speculative and could not be confirmed with gap junction blockers. The mechanistic explanation remains uncertain, though the observation itself is valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Sister V2a/b neurons share anatomical characteristics (proximity, similar axon trajectories) but diverge into separate circuits with largely distinct presynaptic and postsynaptic partners. This represents the first evidence of Notch-differentiated circuit integration in vertebrates and resembles Drosophila hemilineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C75-C79 synthesize the major findings. The anatomical similarity (C11, C76) is supported by proximity data (Figure 2) and axon trajectory data (Figure 3). The circuit divergence (C12, C77) is supported by the electrophysiology data showing distinct inputs (Figure 4), no interconnectivity (Figure 5), and largely distinct targets (Figure 7). The novelty claim (C79) is reasonable given the comprehensive literature review. The comparison to Drosophila (C78) is appropriate and illustrated in Figure 7I.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Some vsx1+ progenitors may give rise to V2b/s sister pairs in addition to V2a/b pairs, potentially due to delayed Notch activity causing later-born vsx1+ sister neurons to adopt V2b/s identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 are speculative interpretations of the co-labeling data. While the observation that ~25% of vsx1+ pairs lack V2a neurons is supported (C20, C24-C25), the inference that these are V2b/s pairs (C85) is not directly demonstrated. The temporal hypothesis (C87) is plausible but lacks direct experimental evidence. This requires additional experiments to confirm V2b/s pairing and temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The results suggest that Notch-differentiated divisions preferentially integrate into distinct networks in both invertebrates and vertebrates, potentially representing an efficient mechanism for generating diverse cell types in earlier-evolved neural structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 present broad evolutionary and mechanistic interpretations. While the comparison to invertebrates (C92) is supported by the data and literature, the broader claims about evolutionary mechanisms (C94-C95) are speculative. These interpretations go beyond what the zebrafish spinal cord data can definitively support and would require comparative studies across multiple systems and species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Despite sharing a birthdate, sister V2a/b neurons may integrate into different temporal cohorts or participate in different behaviors, potentially allowing independent control of excitatory and inhibitory components of movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102 present speculative interpretations about temporal cohorts and behavioral roles. While the observation that sister neurons share a birthdate (C99) is definitionally true, the mechanistic explanations (C100) and functional implications (C101-C102) are not directly tested. The study measured inputs during light-evoked locomotion at slow-medium speeds (C103), leaving open the possibility of shared inputs in other contexts (C54, C104).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "The study has limitations: inputs were measured only during light-evoked locomotion at slow-medium speeds, and it remains unclear whether sister neurons are explicitly discouraged from sharing targets or if the pattern is random.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C103-C106, and C108 appropriately acknowledge experimental limitations. The restriction to specific behavioral conditions (C103) is clearly stated, and the authors appropriately note they cannot rule out shared inputs in other contexts (C54, C104). The uncertainty about mechanisms preventing shared targets (C105) is honest and appropriate given the observation of 2 cases with shared connectivity.",
+    "result_type": "MINOR"
+  }
+]

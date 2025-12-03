@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "NK receptor genes (Klra, Klrc1, Klrk1) harbor accessible chromatin sites (Hss1/5'E elements) ~5 kb upstream of transcription start sites that exhibit enhancer identity based on H3K4me1:me3 ratios, p300 binding, and transcription factor occupancy (Runx3, T-bet).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal chromatin profiling methods (ATAC-seq, ChIP-seq for histone marks and transcription factors) consistently identify these elements as enhancers. The H3K4me1:me3 ratio analysis is quantitative and places these elements in the top 32% of accessible peaks, while promoters rank in the bottom 21%. The classification is further validated by p300 binding, a well-established enhancer marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CRISPR/Cas9-mediated targeting of Klrc15'E and Klra7Hss1 enhancers in mature NK cells results in loss of receptor expression, demonstrating that these enhancers are functionally required for maintaining expression in mature cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nucleofection experiments show specific loss of receptor expression upon enhancer targeting (20-40% increase in negative cells for Klrc15'E, marked loss for Klra7Hss1) with appropriate controls. However, the editing efficiency is modest (~30% for control Ptprc locus), which limits the magnitude of observable effects. The results contradict prior claims that Hss1 elements function only in immature cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Enhancers (Klrc15'E, Klra7Hss1, Klra7Hss5) are accessible and enriched in H3K27ac on both active and inactive alleles in cells sorted by allelic expression status, while promoters are accessible only at active alleles, demonstrating decoupling of enhancer activation from gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The allele-specific ATAC-seq and CUT&RUN analyses in sorted F1 hybrid cells provide direct evidence for this decoupling. The use of SNPsplit to distinguish parental alleles is methodologically sound. The H3K27ac enrichment on enhancers regardless of expression status is particularly compelling, as this mark specifically indicates active (not poised) enhancers. This represents a technical advance over prior clonal cell line studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Germline deletion of Klra1Hss1 completely eliminates Ly49A expression in homozygotes, with heterozygotes showing intermediate expression frequency, while other Ly49 receptors remain unaffected, demonstrating proximal and independent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The germline deletion experiments provide clean genetic evidence with appropriate littermate controls. The complete loss in homozygotes, intermediate phenotype in heterozygotes, and lack of effect on other receptors strongly support the conclusions. Statistical analysis (one-way ANOVA) is appropriate for the multi-group comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Germline deletion of Klrc15'E eliminates NKG2A expression in homozygotes with reduced frequency in heterozygotes, and F1 hybrid analysis demonstrates that the enhancer acts in cis and independently of the other allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic data are robust with two independent deletion alleles tested. The F1 hybrid experiments with allele-specific antibodies provide direct evidence for cis-acting, independent regulation. The observed frequencies closely match predictions based on stochastic allelic regulation, strengthening the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Deletion of the secondary enhancer Klra7Hss5 reduces Ly49G2 expression frequency from ~50% to ~35% in homozygotes with minimal effect on per-cell expression levels, demonstrating that enhancer strength quantitatively controls expression probability rather than expression level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a key result supporting the binary model of enhancer action. The distinction between frequency and intensity (MFI) is clearly documented. The F1 hybrid data confirm cis-acting regulation. The comparison with Klra1 (which lacks a strong Hss5 element and shows lower expression frequency) provides correlative support for the model. Two independent deletion alleles strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Deletion of Klrk15'E converts the universally expressed NKG2D gene into a variegated gene expressed by ~65% of NK cells with mitotically stable expression states, demonstrating that enhancer deletion can create RME de novo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the most striking result of the paper. The conversion of a universally expressed gene to RME through enhancer deletion directly demonstrates that RME can arise from general enhancer properties. The mitotic stability is well-documented through expansion experiments (~10-100 fold). The heterozygote analysis showing lower frequency than homozygotes supports stochastic, independent allelic regulation. Two independent deletion alleles provide replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The engineered Klrk15'E deletion recapitulates key features of natural RME: random co-expression with other RME receptors following the product rule, promoter accessibility only at active alleles, and constitutive enhancer accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-expression analysis demonstrates stochastic independence. The ATAC-seq data showing differential promoter but not enhancer accessibility mirrors natural RME genes. However, the 3' enhancer accessibility in both populations is noted but not functionally tested, leaving some mechanistic questions about residual enhancer activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Silent Klrk1 alleles in Klrk15'E deletion mice show promoter hypermethylation, and analysis of hematopoietic stem cells reveals that RME gene promoters (Klrk1, Klrc1, Klra1, Klra7) are methylated in progenitors, suggesting activation involves demethylation rather than de novo methylation of silent alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bisulfite sequencing data are clear for the Klrk1 promoter. The analysis of published WGBS data from hematopoietic stem cells extends this observation to other RME genes. However, the authors appropriately note that DNA methylation is not universally associated with RME and cite evidence that methyltransferase inhibitors don't reactivate these genes, suggesting methylation is correlative rather than causative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Silent NK receptor gene alleles lack repressive histone modifications (H3K27me3, H2AK119Ub1, H3K9me3) and resemble inactive but not repressed chromatin states, similar to lineage-inappropriate genes (Cd19, Mstn) but distinct from actively repressed fate-determining genes (Bcl11b, Pax5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CUT&RUN analysis across multiple repressive marks is comprehensive. The ChromHMM three-state model appropriately distinguishes active, inactive, and repressed chromatin. The comparison across gene classes (NK-appropriate, lineage non-specific, repressed) is informative. This challenges models requiring active repression for RME maintenance, though it raises questions about what maintains the silent state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Analysis of Klrk1 heterozygotes reveals that ~2.5% of NK cells lack NKG2D expression, indicating rare monoallelic expression of the wild-type gene that is obscured in homozygotes where at least one allele is typically expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The flow cytometry data clearly show NKG2D-negative cells in heterozygotes but not wild-type mice. The random co-expression with other RME receptors supports the interpretation. This is an important observation demonstrating that even 'universally expressed' genes exhibit some degree of RME, though the frequency is very low.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Approximately 0.01% of B and T cells in Ptprca/b heterozygous mice express only one CD45 allele, with monoallelic expression being mitotically stable through expansion and reflecting transcriptional rather than post-transcriptional differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detection of rare monoallelic populations (~0.01%) in millions of cells analyzed by flow cytometry is technically impressive. The mitotic stability through 5-8 fold expansion and Sanger sequencing confirmation of transcriptional monoallelism strengthen the conclusion. This extends RME to a gene considered universally expressed in lymphohematopoietic cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Approximately 0.1% of CD8\u03b2+ T cells in F1 mice show monoallelic CD8\u03b1 expression, with mitotic stability demonstrated through cell expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data parallel the CD45 analysis with appropriate allele-specific antibodies and expansion experiments. The gating on CD8\u03b2+ cells is important to ensure analysis of the relevant population. The frequency is higher than CD45 but still rare.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Approximately 5% of CD4+ T cells in F1 mice show monoallelic Thy1 expression with mitotic stability, representing an RME gene with remarkably high allelic failure rate; notably, the Thy1 promoter contains a CpG island, indicating RME is not restricted to low-CpG promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ~5% frequency is substantially higher than other lineage-defining genes examined, making this a striking example. The mitotic stability is well-documented. The CpG island observation is important for generalizing RME mechanisms beyond low-CpG promoters, though the functional significance of this feature is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C7",
+      "C8",
+      "C10",
+      "C11"
+    ],
+    "result": "The authors propose that RME is a consequence of general enhancer properties rather than RME-specific programs, with genes existing along a continuum of allelic failure rates, and that intrinsically probabilistic gene regulation is a general property of enhancer-controlled expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching model is well-supported by the collective data: (1) enhancer deletion creates RME de novo, (2) enhancer strength correlates with expression frequency, (3) lineage-defining genes show rare RME, (4) no RME-specific repressive chromatin is required. The continuum model is supported by the range of failure rates observed (0.01% for CD45 to 5% for Thy1 to 50% for some Klra genes). However, the model is somewhat speculative regarding 'many and perhaps all genes' showing RME, as only selected genes were tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Enhancers of RME NK receptor genes are accessible and enriched in H3K27ac on silent and active alleles alike, suggesting enhancer activation and gene expression status can be decoupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is directly supported by the ATAC-seq and CUT&RUN data presented in the manuscript (covered in detail in an earlier result grouping). The decoupling is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Enhancer deletion reduced gene expression frequency in genes with multiple enhancers, converting the universally expressed NKG2D gene into an RME gene that recapitulates all aspects of natural RME including mitotic stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central experimental result of the paper (covered in detail in earlier result grouping). The claim that it recapitulates 'all aspects' is strong but supported by the data on frequency, mitotic stability, stochastic co-expression, and chromatin accessibility patterns.",
+    "result_type": "MAJOR"
+  }
+]

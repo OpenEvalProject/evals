@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Cancer mutations in Ras occur predominantly at three hotspots (Gly 12, Gly 13, and Gln 61), accounting for 90-98% of all Ras mutations in cancer, with K-Ras being the most frequently mutated isoform and single-nucleotide variants representing ~99.7% of mutations at these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C21 are well-supported by COSMIC database analysis shown in Figure 1\u2014figure supplement 1A-C. The data directly demonstrate the frequency distribution of mutations across Ras isoforms and the predominance of single-nucleotide variants, providing strong empirical evidence for these established observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C103",
+      "C104"
+    ],
+    "result": "The bacterial two-hybrid assay with Ras+GAP conditions accurately predicts Ras mutational effects in mammalian Ba/F3 cells, demonstrating that Ras is under constitutive GAP surveillance in Ba/F3 cells and validating the bacterial assay as a reliable platform for studying Ras mutational landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C27, C103, and C104 are strongly supported by ROC analysis (Figure 2B) showing high AUC values (0.84-0.95) for Ras+GAP experiments predicting Ba/F3 data. The correlation is substantially higher than for unregulated or Ras+GAP+GEF conditions, providing compelling evidence for GAP surveillance as the dominant regulatory mechanism in Ba/F3 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C106"
+    ],
+    "result": "Both bacterial and mammalian mutagenesis experiments reveal numerous activating mutations beyond the three cancer hotspots with similar activation levels, but these experiments do not explain why Gly 12, Gly 13, and Gln 61 predominate in cancer databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, and C106 are supported by the mutational heatmaps in Figure 2A showing multiple sites (e.g., Val 14, Lys 117, Asp 119, Ala 146) with strong activation comparable to cancer hotspots. However, the discrepancy between experimental activation profiles and cancer frequencies remains unexplained by the mutagenesis data alone, requiring additional mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C31",
+      "C32",
+      "C75",
+      "C89"
+    ],
+    "result": "Mutations at cancer hotspots (Gly 12, Gly 13, Gln 61) activate Ras independently of construct stability, while mutations at lower-frequency sites (e.g., Val 14, Asp 119) show stability-dependent activation, being activating in longer constructs but neutral or deleterious in shorter constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C31, C32, C75, and C89 are well-supported by epistasis analysis comparing H-Ras2-166 and H-Ras2-180 constructs (Figure 7A-D). The data clearly demonstrate that cancer hotspot mutations maintain consistent activation across constructs, while stability-dependent mutations show construct-dependent phenotypes, providing strong evidence for distinct activation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C51",
+      "C52",
+      "C53",
+      "C56"
+    ],
+    "result": "Three non-hotspot activating Ras mutants (H27G, L120A, Y157Q) show globally increased HDX rates (average twofold increase) consistent with protein destabilization, with the largest changes occurring around the nucleotide-binding pocket, while the neutral Q99A variant shows HDX rates similar to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C30, C51-C53, and C56 are supported by NMR HDX measurements (Figure 5D, Figure 5\u2014figure supplement 2) showing increased exchange rates for activating mutants but not for Q99A. The data are internally consistent and validated by mass spectrometry HDX (Figure 5\u2014figure supplement 3), providing strong biophysical evidence for destabilization as a mechanism of activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C58",
+      "C107",
+      "C120",
+      "C121"
+    ],
+    "result": "Mutations that destabilize Ras increase nucleotide dissociation rates, enabling activation by spontaneous nucleotide exchange, revealing that Ras has substantial innate capacity for activation by destabilizing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C58, C107, C120, and C121 are supported by the combination of HDX data (Figure 5), stability measurements (Figure 4), and literature citations showing that mutations at sites like Lys 117 and Asp 119 increase intrinsic nucleotide release rates (C43). The mechanistic model is consistent with the observed correlation between destabilization and activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C109",
+      "C110",
+      "C122"
+    ],
+    "result": "Further stability decrease beyond a threshold leads to insufficient levels of folded Ras and loss of function, with the overall stability of the Ras fold determining the balance between increased signal output and decreased signaling capacity due to protein unfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C109, C110, and C122 are supported by the epistasis data showing that destabilizing mutations are deleterious in shorter constructs but activating in longer constructs (Figure 7A-B), and by the conceptual model in Figure 8. The stability threshold concept is well-supported by the data, though the precise threshold values are not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C72",
+      "C88",
+      "C117"
+    ],
+    "result": "Cancer hotspot mutations are mechanism-based activators that interfere directly with GAP action, with Gly 12, Gly 13, and Gln 61 playing specialized roles in GAP interaction and nucleotide hydrolysis catalysis, enabling activation without severe consequences for protein stability or nucleotide coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C72, C88, and C117 are supported by the strong activation of cancer hotspot mutations in Ras+GAP conditions (Figure 2A), stability measurements showing minimal destabilization (Figure 4B), and established knowledge about GAP mechanism. The data consistently demonstrate that these mutations activate through GAP evasion rather than destabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C33",
+      "C34",
+      "C59",
+      "C102"
+    ],
+    "result": "GAP surveillance and protein stability are critical determinants of Ras mutational sensitivity, with many activating mutations impacting thermodynamic stability, and the destabilizing effect correlating with low cancer frequency, making the ability of cancer hotspot mutations to block GAP without compromising protein fold integrity ideal for oncogenic activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C33, C34, C59, and C102 are supported by the high correlation between Ras+GAP experiments and Ba/F3 data (Figure 2B), stability measurements (Figure 4), epistasis analysis (Figure 7), and cancer database comparisons (Figure 6). The integrated evidence from multiple experimental approaches strongly supports this central conclusion of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Truncating the C-terminal helix destabilizes H-Ras by approximately 7 kJ/mol, with H-Ras1-173 having \u0394Gunf of 29.9\u00b11.4 kJ\u00b7mol\u207b\u00b9 (CD) or 31.1\u00b11.5 kJ\u00b7mol\u207b\u00b9 (pulse proteolysis) and H-Ras1-166 having \u0394Gunf of 22.2\u00b11.6 kJ\u00b7mol\u207b\u00b9 (CD) or 24.3\u00b11.3 kJ\u00b7mol\u207b\u00b9 (pulse proteolysis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C35-C39 are directly supported by experimental measurements using two independent methods (CD and pulse proteolysis) shown in Figure 4A. The agreement between methods (within ~2 kJ/mol) and the consistent ~7 kJ/mol difference between constructs provide strong quantitative evidence for the stabilizing effect of the C-terminal helix extension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C100"
+    ],
+    "result": "Cancer hotspot variants G12V and Q61L have stability indistinguishable from wild-type, G13D destabilizes H-Ras by ~10 kJ/mol, while K117N and D119A destabilize H-Ras by ~25 kJ/mol, demonstrating that cancer hotspot variants are more stable than stability-dependent gain-of-function variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C100 are supported by pulse proteolysis measurements in Figure 4B showing quantitative \u0394Gunf values for each variant. The data clearly demonstrate the differential stability effects, with cancer hotspot mutations showing minimal destabilization compared to stability-dependent mutations, supporting the mechanistic distinction between these mutation classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "H-Ras1-173 is more stable than K-Ras1-173 by approximately 7 kJ/mol (\u0394Gunf of 24.2\u00b10.1 kJ\u00b7mol\u207b\u00b9 for K-Ras), and activating mutations in H-Ras datasets have higher enrichment values than in K-Ras assays, hypothesized to result from K-Ras's lower stability reducing the activating effect of many mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by pulse proteolysis measurements (Figure 4C) and comparison of mutational heatmaps (Figures 2A and 3A). The stability difference is quantitatively measured, and the correlation with mutational profiles is observed, though the mechanistic link (C48) remains a hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "L120A destabilizes H-Ras1-166 by approximately 10 kJ/mol (\u0394Gunf of 14.0\u00b10.3 kJ\u00b7mol\u207b\u00b9), while Q99A has stability similar to wild-type (\u0394Gunf of 23.0\u00b10.7 kJ\u00b7mol\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C55 are directly supported by pulse proteolysis measurements shown in Figure 5\u2014figure supplement 1. The quantitative stability values are consistent with the HDX data showing increased exchange for L120A but not Q99A, providing convergent evidence for the differential stability effects of these mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "At least 70 sites in Ras have mutations in the COSMIC database, with 28 sites having \u22655 counts; Gly 12, Gly 13, and Gln 61 are mutated ~40,000, ~8,000, and ~6,500 times respectively, while Asp 119 mutations occur only 7 times in H-Ras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are directly supported by COSMIC database analysis shown in Figure 6A. The counts are explicitly stated and provide quantitative evidence for the dramatic frequency differences between cancer hotspots and other activating sites, establishing the empirical basis for investigating why certain mutations are rare despite being activating.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C105"
+    ],
+    "result": "Saturation-mutagenesis datasets accurately predict cancer mutations, with AUC values of 0.89 for H-Ras1-188 in Ba/F3 cells, 0.85 for H-Ras2-180+GAP and K-Ras2-173+GAP, and 0.86 and 0.82 for H-Ras2-166+GAP and K-Ras2-165+GAP respectively, demonstrating that variants escaping GAP surveillance correlate well with cancer database variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 and C105 are supported by ROC analysis in Figure 6B and Figure 6\u2014figure supplement 1. The high AUC values (0.82-0.89) demonstrate strong predictive accuracy, with appropriate use of COSMIC and gnomAD databases for true positives and negatives. The statistical approach is sound and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "At least 24 activating mutation sites were identified in bacterial H-Ras+GAP screens, classified into three groups: cancer hotspots, Switch II sites, and 16 stability-dependent gain-of-function sites (Val 8, Val 14, Leu 19, Leu 53, Gly 77, Gly 115, Asn 116, Lys 117, Asp 119, Thr 144, Ser 145, Ala 146, Lys 147, Val 152, Ala 155, Phe 156), with most stability-dependent sites clustering around the nucleotide and likely activating through destabilization-mediated nucleotide exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, C83-C85 are supported by epistasis analysis (Figure 7A) and structural mapping (Figure 7C), with sites listed in Figure 7\u2014figure supplement 4. The classification is data-driven and the mechanistic interpretation (C85) is consistent with HDX data and structural location, though the mechanism remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Switch II residues (Ala 59, Glu 62, Glu 63, Tyr 64, Met 67, Arg 68) show diminished activation in Ba/F3 compared to bacterial assays because the bacterial assay depends only on Raf-RBD interaction (Switch I-dependent), while proper biological function requires Switch II for GEF and effector interactions; mutations of Gln 63, Tyr 64, Met 67, and Tyr 71 reduce SOS-catalyzed nucleotide exchange rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by comparison of mutational profiles (Figure 7B), structural analysis (Figure 7\u2014figure supplement 1A-D), and in vitro SOS-stimulated nucleotide exchange measurements (Figure 7\u2014figure supplement 1E). The mechanistic explanation is well-supported by both the mutagenesis data and direct biochemical measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The mutational profile of K-Ras2-173 Q61L resembles unregulated K-Ras2-173 rather than the shorter K-Ras2-165 construct, indicating that Q61L does not substantially destabilize Ras, consistent with stability measurements; the catalytic impairment by Q61L renders GAP ineffective, making Ras+GAP conditions resemble unregulated conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by mutational profile comparisons (Figure 7\u2014figure supplement 2B-C), stability measurements of Q61L (Figure 4B), and established knowledge about Q61L's effect on catalysis. The data are internally consistent and the interpretation is well-supported by both the current experiments and cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C115",
+      "C116"
+    ],
+    "result": "The nine most-activating sites in H-Ras1-188 Ba/F3 cells (Gly 12, Gly 13, Gln 61, Val 14, Lys 117, Asp 119, Ser 145, Ala 146, Phe 156) are highly conserved in metazoan Ras orthologs, but in the Ras superfamily alignment, stability-dependent sites (especially Lys 117 and Asp 119) are more conserved than cancer hotspots, which are replaced by other residues in proteins like Rab29 and Rap1B, indicating that cancer hotspots are not structurally essential while stability-dependent sites play essential roles in maintaining the Ras fold and nucleotide coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C99, C115, and C116 are supported by sequence conservation analysis shown in Figure 7E and structural comparisons in Figure 7\u2014figure supplement 3B. The Shannon entropy analysis quantitatively demonstrates differential conservation patterns, and the interpretation is consistent with the functional and stability data. The conclusion about structural essentiality is well-supported by the integrated evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C117"
+    ],
+    "result": "Gly 12, Gly 13, and Gln 61 residues are not structurally essential but play specialized roles in GAP interaction and nucleotide hydrolysis catalysis, enabling mutations at these sites to activate Ras without severe consequences for protein stability or nucleotide coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C117 are supported by the combination of stability measurements showing minimal destabilization (Figure 4B), sequence conservation analysis showing lower conservation than stability-dependent sites (Figure 7E), and established knowledge about GAP mechanism. The conclusion is well-supported by multiple lines of evidence and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Nucleotide binding in Ras is coupled to its C-terminal helix, with changes in stability and mutational sensitivity of Ras constructs with varied C-terminal helix length manifesting this coupling, analogous to heterotrimeric G proteins where GPCR-mediated activation involves allosteric GDP release through C-terminal helix modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113 and C114 are speculative inferences based on analogy with heterotrimeric G proteins (C111, C112) and the observed stability effects of C-terminal truncation. While the stability data (Figure 4A) and epistasis analysis (Figure 7) are consistent with coupling, direct evidence for the proposed allosteric mechanism is lacking. The hypothesis is plausible but requires additional structural or biophysical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Ras proteins do not appear to be protected by chaperones like HSP90, allowing differences in non-specific chaperone activity between cell types to determine the extent of destabilizing mutation activation; combined with effects from post-translational modifications and membrane-induced stress, this might explain why destabilizing mutations are less frequent in cancer and why there are tissue-specific patterns of activating mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C128 are largely speculative, based on inference from the lack of evidence for specific chaperone protection and cited literature about other proteins. While the hypothesis is plausible and consistent with the observed data, it lacks direct experimental support in this manuscript. The proposed explanation for tissue-specific patterns requires additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Extension of the C-terminal helix improves correlation between bacterial and mammalian experiments, with H-Ras2-180+GAP achieving AUC of 0.95 (vs. 0.84 for H-Ras2-166+GAP) and K-Ras2-173+GAP achieving AUC of 0.93 (vs. 0.75 for K-Ras2-165+GAP) for predicting Ba/F3 data; K-Ras behaves similarly to H-Ras regarding mutational tolerance, which is clinically relevant for ClinVar variant classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 are supported by ROC analysis (Figure 2B) and mutational profile comparisons (Figures 2A and 3A). The improved AUC values with longer constructs are quantitatively demonstrated, and the similar behavior of K-Ras and H-Ras is evident from the data. The clinical relevance statement (C135) is appropriately supported by citation to ClinVar practices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Longer H-Ras2-180 and K-Ras2-173 constructs are less sensitive to hydrophobic core mutations than shorter constructs; wild-type Ras generates signal in the absence of GAP in bacterial assays, and substitution of hydrophobic core residues by polar residues causes measurable signaling decreases in unregulated experiments but not in Ras+GAP experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 are supported by comparison of mutational profiles in Figure 3A-C. The differential sensitivity to hydrophobic core mutations between constructs and between unregulated and Ras+GAP conditions is clearly demonstrated in the heatmaps, providing evidence for the stabilizing effect of the C-terminal extension and the masking effect of GAP on destabilizing mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C57",
+      "C108"
+    ],
+    "result": "Mutations at sites including Lys 117, Asp 119, Val 14, Phe 28, Leu 120, Ala 146, Lys 147, and Phe 156 increase intrinsic nucleotide release rates; V14I and A146T facilitate nucleotide exchange by destabilization and opening of the GTP-binding site; stability and nucleotide affinity in Ras are coupled, with Ras stability being dependent on nucleotide binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C57, and C108 are supported by extensive literature citations and are consistent with the HDX data (Figure 5) and stability measurements (Figure 4) presented in this manuscript. The coupling between stability and nucleotide affinity is well-established in the field and the current data provide additional supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background information on Ras biology: Ras cycles between GTP-bound (active) and GDP-bound (inactive) states; there are four principal human Ras isoforms; GTP-bound Ras binds effector RBDs triggering proliferation; Ras has weak intrinsic GTPase activity; GAPs stimulate GTP hydrolysis; GEFs accelerate nucleotide exchange; the bacterial two-hybrid assay couples Ras-Raf-RBD interaction to antibiotic resistance; Ba/F3 cells are IL-3 dependent but this can be bypassed by activated kinases or Ras mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 and C22-C25 represent established knowledge in the field, supported by appropriate citations and illustrated in Figure 1. These background claims provide necessary context for the experimental work and are well-documented in the literature. The descriptions of the experimental systems are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "L120A, H27G, and Y157Q are mildly activating in unregulated and Ras+GAP experiments, while Q99A is neutral or nearly so rather than activating, based on statistically more robust new data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 are supported by the saturation mutagenesis data shown in Figures 2A and 3A, and by HDX measurements (Figure 5) showing that Q99A behaves differently from the activating mutants. The revision of Q99A's classification from the previous study demonstrates appropriate re-evaluation based on improved statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C123",
+      "C124"
+    ],
+    "result": "Activating mutations that decrease conformational stability and accelerate GDP dissociation have been reported for other GTPases (Rac1a, G-\u03b1); the high affinity of GTPases for GDP prevents GEF-independent activation; protein kinases are activated by destabilizing mutations (e.g., B-Raf V600E), with HSP90 protecting destabilized kinases from degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118, C119, C123, and C124 represent established knowledge from the literature, appropriately cited to provide context for the current findings. These claims help position the Ras results within the broader understanding of GTPase and kinase regulation, demonstrating that destabilization-mediated activation is a general phenomenon.",
+    "result_type": "MINOR"
+  }
+]

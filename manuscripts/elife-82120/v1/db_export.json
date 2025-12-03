@@ -1,0 +1,1670 @@
+{
+  "submission": {
+    "id": "28fb91f0-018a-492c-9588-8b137d1aaa8a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:10:23.343915Z",
+    "updated_at": "2025-12-03T20:10:23.343915Z"
+  },
+  "content": [
+    {
+      "id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "submission_id": "28fb91f0-018a-492c-9588-8b137d1aaa8a",
+      "content_type": "manuscript",
+      "content_text": "# Aggregating in vitro-grown adipocytes to produce macroscale cell-cultured fat tissue with tunable lipid compositions for food applications\n\n## Authors\n\n- John Se Kit Yuen Jr<sup>1</sup> ([ORCID: 0000-0001-9854-1654](https://orcid.org/0000-0001-9854-1654))\n- Michael K Saad<sup>1</sup>\n- Ning Xiang<sup>1</sup>\n- Brigid M Barrick<sup>1</sup>\n- Hailey DiCindio<sup>1</sup>\n- Chunmei Li<sup>1</sup>\n- Sabrina W Zhang<sup>1</sup>\n- Miriam Rittenberg<sup>2</sup>\n- Emily T Lew<sup>1</sup>\n- Kevin Lin Zhang<sup>1</sup>\n- Glenn Leung<sup>1</sup>\n- Jaymie A Pietropinto<sup>1</sup>\n- David L Kaplan<sup>1</sup> ([ORCID: 0000-0002-9245-7774](https://orcid.org/0000-0002-9245-7774)) \u2020\n\n### Affiliations\n\n1. Biomedical Engineering Department, Tissue Engineering Resource Center, Tufts University Medford United States ([ROR:05wvpxv85](https://ror.org/05wvpxv85))\n2. Biological Engineering Department, MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe present a method of producing bulk cell-cultured fat tissue for food applications. Mass transport limitations (nutrients, oxygen, waste diffusion) of macroscale 3D tissue culture are circumvented by initially culturing murine or porcine adipocytes in 2D, after which bulk fat tissue is produced by mechanically harvesting and aggregating the lipid-filled adipocytes into 3D constructs using alginate or transglutaminase binders. The 3D fat tissues were visually similar to fat tissue harvested from animals, with matching textures based on uniaxial compression tests. The mechanical properties of cultured fat tissues were based on binder choice and concentration, and changes in the fatty acid compositions of cellular triacylglyceride and phospholipids were observed after lipid supplementation (soybean oil) during in vitro culture. This approach of aggregating individual adipocytes into a bulk 3D tissue provides a scalable and versatile strategy to produce cultured fat tissue for food-related applications, thereby addressing a key obstacle in cultivated meat production.\n\n## Introduction\n\nCultivated meat (also cultured, cell-cultured, in vitro meat) uses tissue engineering to produce meat for food (Datar and Betti, 2010; Post, 2012; Post and Hocquette, 2017). Canonically, this research has focused on recreating the muscle component of meat (Post, 2012; Benjaminson et al., 2002; Simsa et al., 2019; Ben-Arye et al., 2020; Furuhashi et al., 2021; Verbruggen et al., 2018). However, fat is key to the taste and texture of meat (He et al., 2020; Moritz et al., 2015; Frank et al., 2016; Frank et al., 2017). For example, peak evaluation scores were achieved with beef samples containing ~36% crude fat (Iida et al., 2015). Hundreds of volatile compounds are released when meat is cooked, with a majority originating from lipids (Frank et al., 2017; Ba et al., 2012; Mottram et al., 1982). Fat is also responsible for the species-specific flavor of meat, making it important for reproducing the flavors of specific animals (Ramalingam et al., 2019). In addition to cultivated meat, in vitro-grown fat could also be used to enhance existing plant-based meats, as complex species-specific flavors of animals are difficult to recapitulate de novo (Fish et al., 2020; van Vliet et al., 2021; Bohrer, 2019).\n\nWhile cultured fat stands to greatly improve the quality of alternative proteins, producing macroscale tissues remains a major challenge due to mass transport limitations. Even millimeter-scale in vitro tissues are challenging to generate, as oxygen and nutrients are only able to diffuse through several hundred microns of dense tissue (Coyle et al., 2019; Murphy et al., 2017; Helmlinger et al., 1997; Jain et al., 2005). Various approaches have been implemented in tissue engineering to overcome diffusion limitations, such as vascularization and the incorporation of perfusion channels (Kolesky et al., 2016; Sarig-Nadir et al., 2009; Li et al., 2018; Lovett et al., 2007; Lai et al., 2009; Muller et al., 2019; Kang et al., 2009; Louis et al., 2021; Volz et al., 2019; Wittmann et al., 2015; Yang et al., 2020). However, current strategies are often limited by scalability and complexity. A dense array is required when incorporating perfusion channels, as all tissues must remain within several hundred microns of a channel (Yamamoto et al., 2012). For adipose tissue, lipid accumulation decreases considerably once cells are ~1 mm away from a perfusion channel (Li et al., 2018). Vascularization of macroscale tissues is achieved via co-culture with endothelial cells, which spontaneously organize into capillary-sized vessels (Andr\u00e9e et al., 2019). However, spontaneous vessel formation may not be feasible for centimeter- to meter-scale tissues, as cultivated cells may die during the time required for the vasculature to form (Unal et al., 2018). Capillaries may also be too small to deliver a sufficient volume of media when supporting larger tissues (Tetzlaff and Fischer, 2018; Moya et al., 2013). Thus, many challenges remain to scale fat (and other) tissues to bulk production levels.\n\nIn this study, our goal was to develop a relatively simple method of producing bulk cultured fat tissue that circumvents contemporary mass transport limitations. This was achieved by growing murine and porcine adipocytes in thin layers with easy access to the culture media, followed by post-growth aggregation into 3D adipose after sufficient adipocyte maturation (Figure 1). Aggregation at the end of cell culture removed the need for nutrient delivery via vascularization or elaborate 3D tissue perfusion, thus reducing costs and improving scalability. This approach is feasible when creating tissue solely for food purposes, as there is no requirement for continued cell survival once the final edible tissue is produced. This paradigm allows for simpler approaches and outcomes in comparison to regenerative medicine goals.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig1-v1.jpg)\n\nWe hypothesized that aggregating individual adipocytes would be sufficient to reproduce the taste, nutrition, and texture profile of fat, as adipose tissue in vivo is a dense aggregation of lipid-filled adipocytes with a sparse extracellular matrix (ECM) (Mescher, 2021). Lipid-filled adipocytes were grown in vitro and aggregated into bulk macroscale tissues within suitable matrices, then compared with native adipose tissue from various animals. Cultured fat and native adipose samples were characterized for lipid droplet morphology and mechanical properties to infer textural characteristics. The fatty acid compositions of cultured adipocytes were also analyzed to garner insight into flavor and nutrition.\n\n## Results\n\n### Murine adipogenic precursor cells accumulate lipid and express adipogenic markers during 2D in vitro culture, resembling native adipocytes after 30 days of adipogenesis\n\nTo obtain individual fat cells needed to test the concept of adipocyte aggregation into 3D fat tissue, we cultured murine 3T3-L1 cells using 2D culture for good cellular access to nutrition and simple cell harvest. 3T3-L1s were chosen for initial experiments as they are readily obtainable from cell banks, and because effective fat differentiation protocols for the cell line already exist (Li et al., 2018; Scott et al., 2011). After reaching confluency, 3T3-L1s were induced to differentiate into adipocytes for 2 days, then switched to lipid accumulation media until 15\u201330 days of culture (Figure 2A). At day 15, cultured adipocytes were 81.6% (\u00b15.5%) positive for peroxisome proliferator-activated receptor gamma (PPAR\u03b3) (Figure 2B, Supplementary file 1). 30-day adipocytes contained ~3 times more lipid per cell than 15-day adipocytes (Figure 2C and D). During cell culture, gentle treatment of the cells (e.g., when changing culture media) was key to preventing lift-off of lipid-filled adipocytes (detailed technique outlined in Video 1 and the Materials and methods). A positive correlation was observed between adipogenic culture duration and lipid droplet size (Figure 2E, Supplementary file 2). Mean lipid droplet diameters for 15- and 30-day adipocytes were 8.1 \u00b5m (\u00b10.04 SEM) and 11.1 \u00b5m (\u00b10.1 SEM), respectively. Cultured adipocytes exhibited the appearance of packed lipid droplets observed when imaging native adipocytes from various animals, particularly that of 7-day old mouse (7D mouse) and chicken (Figure 2F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig2-v1.jpg)\n\n**Figure 2.:** (A) Timeline of 3T3-L1 adipogenic differentiation. Confluent preadipocytes were grown in adipogenic induction medium for 2 days, then switched to lipid accumulation media for 15 or 30 days, where cells were stained and imaged, or harvested for lipidomics and 3D cultured fat tissue formation. (B) 15-day adipocytes stained for the adipogenic transcription factor peroxisome proliferator-activated receptor gamma (PPAR\u03b3) (magenta), as well as nuclei via DAPI (blue). (C) Lipid-stained (BODIPY, green) adipocytes after 15 and 30 days of adipogenesis. The in vitro adipocytes were also stained for DNA via DAPI (blue) and fatty acid synthetase (magenta). (D) The mean degree of lipid accumulation in 15- and 30-day cultured adipocytes, normalized by the number of cells detected via nucleus counting. Sample groups were compared using an unpaired t test with Welch\u2019s correction, where p\u22640.01 (**). (E) Frequency distributions of lipid droplet diameters from cultured adipocytes adipogenically grown for 15 and 30 days, compared via chi-square test in Supplementary file 2. (D) represents n=4 technical replicates from one experiment, while (E) represents n=4 technical replicates from a second experiment. (F) Lipid staining images (BODIPY) of 30-day in vitro 3T3-L1s compared to native adipocytes from chicken and mice of two ages. \u20187D Mouse\u2019 and \u201867D Mouse\u2019 refer to 7- and 67-day-old mice, respectively. Scale bar (same for all images) represents 100 \u00b5m.\n\n![Video 1.](https://cdn.elifesciences.org/articles/82120/elife-82120-video1.mp4.jpg)\n\n**Video 1.:** Inversion during media (liquid) aspiration (0:06). Dispensing to sidewall of flask during inversion (1:18). Reinverting flask carefully from inverted position (1:42).\n\n### Aggregated in vitro adipocytes form macroscale cultured fat tissue constructs\n\nAfter 15\u201330 days of adipogenesis, cultured adipocytes were harvested with a cell scraper (Figure 3A and B). Adipocytes were scraped mechanically due to insufficient detachment when using Accumax (incubation time: >20 min, data not shown). During cell harvest, cultured adipocytes aggregated by the mechanical action of the cell scraper appeared like fat tissue or lipoaspirate (Figure 3\u2014figure supplement 1, Video 2). Micrographs of a piece of aggregated adipocytes are available in Figure 3\u2014figure supplement 2. We found that one culture flask with 175 cm2 surface area generally yielded ~0.8 g of cell-scraped adipocytes (data not shown). After harvest, scraped adipocytes successfully formed macroscale 3D tissues that subsequently stayed as one mass after mixing with binders to hold individual cells together (Figure 3C and D). Sodium alginate and microbial transglutaminase (mTG) as \u2018generally recognized as safe\u2019 (GRAS) materials in the United States were selected as binders for cultured adipocytes, with precedent for alginate as a fat replacer and mTG as a binder in meat products (Figure 3\u2014figure supplement 3; ECFR, 1982; FDA, 1999).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013D) Steps for producing 3D macroscale cultured fat tissues through the aggregation of individual adipocytes grown in vitro. (A) Adipogenesis: Adipocytes were differentiated in vitro for 15\u201330 days. Lipid-accumulating fat cells turned the bottom of the cell culture flask opaque. Scale bar 5 cm. (B) Cell harvest: Adipocytes were mechanically collected with a cell scraper, which aggregated the cells into masses of cultured fat. Scale bars 5 and 1.5 cm for the top and bottom images, respectively. (C) Binding into 3D tissue: Harvested fat was combined with a binder (e.g., alginate, transglutaminase) in a mold to add structure. Scale bar 3 cm. (D) 3D cultured fat: Cylinders of structured cultured fat tissue after removal from the mold. A piece of 3D cultured fat tissue made with 1.6% alginate is shown in the right tube, while the left tube contains 1.6% alginate without fat cells. Scale bar 1 cm. (E and F) Mechanical testing of cultured and native fat tissues (uniaxial compression). (E, i) shows the compressive strength of alginate-based cultured fat tissues formed using 15- or 30-day adipocytes, while (F, i) shows the same for microbial transglutaminase (mTG)-based cultured fat tissues. Solid lines represent mean values, while the shaded areas represent standard deviations. (E, ii) A compressive strength comparison of alginate-based cultured fat tissues with intact pig, cow, and chicken adipose tissues. Data points represent mean values, and the overall data represent tissue loading from 0% to 50% strain over 30 s, followed by unloading to 0% strain over the same duration. (F, ii) The same compressive strength comparison as (E, ii) but with mTG fat tissues alongside rendered animal fats from pigs (lard) and cows (tallow). (E, iii) depicts macroscale alginate-based cultured fat tissues on the mechanical testing apparatus prior to compression. (F, iii) depicts the same for mTG-based cultured fat tissues. n=4 for all alginate-based cultured fat constructs. n=3 and 5 for 15- and 30-day mTG cultured fat constructs, respectively. n=5, 6, 7 for beef, pork, and chicken adipose samples respectively. n=4 for lard and tallow samples respectively. All \u2018n\u2019 values refer to technical replicates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (Left) Cell-scraped adipocytes prepared on a glass slide (25\u00d775 mm2) with mounting media for subsequent microscopy. (Right) Cell-scraped adipocytes from three T175 cell culture flasks collected in a 50 ml conical tube. The bulk aggregated cells take on an appearance similar to lipoaspirate.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (i\u2013iii) Brightfield micrographs of a small piece of aggregated murine adipocytes after cell scraping to illustrate cultured fat adipocyte and lipid droplet morphology (no binder or crosslinker added). (iv) Fluorescent staining of the cultured fat piece with BODIPY (lipids) and Hoescht 33342 (nuclei).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Created using BioRender.com.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig3-figsupp4-v1.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/82120/elife-82120-video2.mp4.jpg)\n\n### Alginate-based macroscale cultured fat tissues exhibit a similar compressive strength with native fat tissues from cow, pig, and chicken\n\nAfter forming macroscale constructs, cultured fat tissue samples were subjected to uniaxial compression testing as a proxy for food texture. For alginate-based cultured fat tissues, 1.6% (final concentration) was selected after preliminary experiments (Figure 3\u2014figure supplement 4). The degree of adipocyte lipid accumulation (cultured fat tissues produced using 15- versus 30-day-old adipocytes) did not have a significant impact on resistance to compression (Figure 3Ei, Fi). Alginate fat tissues containing 15- and 30-day adipocytes exhibited mean compressive stresses of 11.1 kPa (\u00b15.2) and 12.8 kPa (\u00b17.3) at 50% strain respectively (p=0.7304, Welch\u2019s t-test). For 15- and 30-day mTG-based cultured fat tissues, the mean resistances to compression were 0.5 kPa (\u00b10.2) and 0.7 kPa (\u00b10.2) at 50% strain, respectively (p=0.1030, Welch\u2019s t-test).\n\nThe stress-strain profile of alginate-based cultured fat tissues were within the general range of livestock and poultry fat tissues, while displaying similar hysteresis behavior during loading and unloading (Figure 3E, ii). At 50% strain, mean compressive stresses for beef and pork fat tissues were 20.2 kPa (\u00b112.5) and 35.6 kPa (\u00b117.5), respectively, while the mean value for chicken fat tissue was 6.2 kPa (\u00b12.0). mTG-based cultured fat tissues were more similar to rendered fats, although lard and tallow samples appeared stronger with mean compressive stresses of 4.6 kPa (\u00b11.4) and 2.5 kPa (\u00b10.9) at 50% strain, respectively (Figure 3F, ii). mTG fat tissues maintained some resistance during unloading, while rendered fats did not rebound after compression.\n\n### The fatty acid compositions of in vitro murine adipocytes can be tuned by lipid supplementation during cell culture\n\nNext, we looked to compare the intracellular lipids of in vitro- and in vivo-grown mouse adipocytes. In vitro adipocytes were cultured with 0\u20131000 \u00b5g/ml of Intralipid (a soybean oil-based lipid emulsion) during the lipid accumulation phase of adipogenic differentiation (d2-d30). Here, the goal was to investigate any positive or negative effects of lipid supplementation on adipocyte fatty acid (FA) composition relative to in vivo adipocytes. Lipid supplementation (e.g., with Intralipid) has been reported to enhance adipogenic differentiation and may thus be a useful strategy in enhancing fat cell lipid accumulation during cultured fat production (El Hadri et al., 2004; Ding et al., 2003; Kokta et al., 2008; Kim et al., 2015; Yanting et al., 2018; Malodobra-Mazur et al., 2019; Jurek et al., 2020; Kim et al., 2020).\n\nWhen comparing the intracellular triacylglycerides (TAGs) of in vitro adipocytes (also termed in vitro fats [IVFs]) without lipid supplementation (other than lipids in fetal bovine serum [FBS]) and native mouse fats, the major difference observed was an enrichment of 16:1 and a lack of 18 carbon FAs (Figure 4A). Unsupplemented IVFs contained significantly less 18:1 and 18:2 versus 7D and 67D mouse fats, as well as slightly less 18:0 and 18:3 than 67D mouse. 16:0 was observed at similar levels to 67D mouse, while being lower than 7D mouse. Lower carbon FAs were found at higher levels in unsupplemented IVFs (e.g., 6:0), but these FAs were also occasionally enriched in 7D mouse (14:0, 12:0, 10:0). The addition of lipids (500\u20131000 \u00b5g/ml Intralipid) during cell culture altered adipocyte TAGs dose dependently, generally bringing FA compositions closer to that of the native fats largely through a reduction in 16:1 and increase in 18:1. Intralipid-treated IVFs had elevated levels of 16:0 and 18 carbon FAs (18:0, 18:1, 18:2, 18:3), which correlates with the composition of soybean oil, the major constituent of Intralipid (aside from water) (Supplementary file 3; Abdelghany et al., 2020). Notably, the increase in 18:3 in lipid supplemented adipocytes may reflect the uptake of alpha-linoleic acid from the Intralipid (Figure 4E). Principal component analysis (PCA) shows lipid supplementation bringing in vitro murine TAG compositions closer to their native equivalents, particularly to 7D mouse (Figure 4\u2014figure supplement 1). When looking at TAG FA saturation, samples did not vary greatly in terms of monounsaturated FAs (MUFAs), except for 7D mouse fat (Figure 4C). Unsupplemented IVFs contained low levels (2.9%\u00b10.1) of polyunsaturated FAs (PUFAs), but this increased to 12.3% (\u00b12.7) with 1000 \u00b5g/ml of Intralipid, similar to that of 7D mouse. PUFA increases for Intralipid IVFs were mirrored by a decrease in saturated FAs (SFAs), going from 48.2% (\u00b10.9, unsupplemented IVFs) to 39.9% (\u00b13.0, 1000 \u00b5g/ml Intralipid).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig4-v1.jpg)\n\n**Figure 4.:** (A, B) The fatty acid (FA) composition of (A) triacylglycerides (TAGs) and (B) phospholipids from in vitro (30 days of adipogenesis, 0\u20131000 \u00b5g/ml Intralipid) and native murine fats. The stacked graphs on the left illustrate the overall FA composition within each sample group (top 6 FAs color coded). The top-down order of FAs shown are the same in the graph and the legend. The column graphs on the right show the top 8 most prevalent FAs across all the sample groups with error bars (SD). The top-down order in the legend is the same as the left-right order of the samples in the column charts. Tables containing the proportions of all detected FAs, as well as principal component analysis (PCA) graphs, are available (Supplementary files 4 and 5; Figure 4\u2014figure supplement 1). (C, D) FA compositions categorized by degree of saturation are shown for (C) TAGs and (D) phospholipids. The top-down order of monounsaturated (monounsat.), polyunsaturated (polyunsat.), and saturated FAs are the same in the graph and the legend. Column graphs of (C) and (D) with p\u22640.05 comparisons are available in Figure 4\u2014figure supplement 3. (E) The 18:3 (TAG fraction) content of 3T3-L1 adipocytes adipogenically cultured for 30 days with various levels of fatty acid (Intralipid) supplementation, versus native mouse fat samples. For all column graphs, \u2018a\u2019 and \u2018b\u2019 represent a difference of p\u22640.05 versus 0 \u00b5g/ml Intralipid and 1000 \u00b5g/ml Intralipid, respectively (analysis of variance [ANOVA] with Tukey\u2019s post-hoc tests). \u2018IN-0\u2019, \u2018IN-500\u2019, \u2018IN-1000\u2019 stand for Intralipid 0, 500, 1000 \u00b5g/ml Intralipid, respectively. \u20187D Mouse\u2019 and \u20187M\u2019 represent 7-day-old mouse adipose, while \u201867D Mouse\u2019 and \u201867M\u2019 represent 67-day-old mouse adipose. n=3 (technical) for all sample groups.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Circles (\u25cf) represent in vitro mouse fats while triangles (\u25b2) represent native mouse fats.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (*) represents p<0.05.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** \u2018a\u2019 and \u2018b\u2019 represent a difference of p\u22640.05 versus 0 \u00b5g/ml Intralipid and 1000 \u00b5g/ml Intralipid, respectively (analysis of variance [ANOVA] with Tukey\u2019s post-hoc tests).\n\nIn addition to TAGs, we also looked at phospholipid FA compositions due to their potential role in the flavor of meat (Mottram and Edwards, 1983; Huang et al., 2010). Like the TAGs, unsupplemented IVFs were high in 16:1s (Figure 4B). 16:0 levels were high and above that of 67D mouse, but similar to 7D mouse. 18:1 levels were lower than 67D mouse, but higher than 7D mouse. Unsupplemented IVFs contained noticeably fewer 18:0s and 20:4s than native fats. Lipid supplementation (Intralipid) had a muted effect on IVF phospholipids, with smaller changes in 16:1 (\u20138.3%\u00b11.4) and 18:1 (+3.9% \u00b1 0.6) between 0 and 1000 \u00b5g/ml Intralipid-treated cells. No significant changes were observed for 16:0 and 18:2. When looking at FA saturation for the phospholipids, these changes are reflected by a decrease in MUFAs for lipid supplemented adipocytes, accompanied by an increase in SFA content (Figure 4D). Lipid supplementation ultimately results in a decrease in overall SFA levels though, as TAGs make up the majority of lipids within adipocytes (Figure 4\u2014figure supplement 2).\n\n### Porcine adipocytes can be grown in vitro and aggregated into 3D cultured fat\n\nWe additionally investigated whether it was possible to grow porcine adipocytes for aggregation into macroscale cultured fat. Primary porcine preadipocytes were observed to readily accumulate lipid (Figure 5A). As animal component-free culture media is key to cultivated meat, we also investigated reducing serum in our culture media. Interestingly, sample groups cultured in adipogenic media with 2% FBS contained over 2\u00d7 fewer cells, yet had over 2\u00d7 the lipid accumulation, versus groups with 20% FBS (Figure 5A and B). Similar effects were seen in preliminary experiments with 0% FBS (Figure 5\u2014figure supplement 1). After 30 days of adipogenesis, cultured porcine adipocytes were also successfully combined with alginate to form macroscale cultured fat constructs (Figure 5C). When compared to native adipose from food animals (pig, chicken, cow), lipids within cultured porcine adipocytes were multilocular, unlike native adipose from food animals (pig, chicken, cow) (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig5-v1.jpg)\n\n**Figure 5.:** (A) Pig DFAT cells cultured under adipogenic conditions containing 2% or 20% fetal bovine serum (FBS) for 30 days. Fat cells are stained for lipid using BODIPY (green) and for cell nuclei using Hoescht 33342 (blue). Scale bars 100 \u03bcm. (B) Lipid and cell number quantification of 30-day pig adipocytes, based on BODIPY and Hoescht 33342 staining, respectively. AU stands for arbitrary units. Results tagged with \u2018a\u2019 represent a difference of p\u22640.0001, while \u2018b\u2019 represents p\u22640.01. n=4 (technical) for both groups. (C, Left) Cell-free 1.6% alginate gels on the left. (C, Right) Porcine adipocytes (differentiated in 2% FBS media) mixed with alginate (1.6% final concentration) to form bulk cultured fat. Scale bar represents 1 mm. (D) Lipid staining images (BODIPY) of 30-day in vitro porcine adipocytes, juxtaposed with native adipocytes from a 97-day old (97D) pig, as well as a chicken and a cow. Scale bars represent 100 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cells were grown similarly to adipocytes cultured in adipogenic media containing 2% FBS, except the media did not contain GlutaMAX or FBS. The induction and lipid accumulation phases lasted 6 and 24 days, respectively. Lipid staining is BODIPY (green) and nuclei staining is Hoescht 33342 (blue). Scale bar represents 100 \u03bcm.\n\n### In vitro and native pig fat compositions exhibit similarities and can be tuned via lipid supplementation during cell culture\n\nWhen exploring the effects of Intralipid on primary porcine adipocytes, we observed that lipid supplementation greatly increased their lipid accumulation (Figure 6\u2014figure supplement 1). Due to this, we also performed lipidomics to see if primary porcine adipocytes cultured with and without Intralipid also differed in terms of their fatty acid compositions. For the porcine DFAT cells, 500 \u00b5g/ml of Intralipid instead of 1000 \u00b5g/ml was selected as the test dosage in order to not risk excessive adipocyte cell detachment during differentiation, as a minor increase cell detachment was observed when the cells were treated with 500 \u00b5g/ml of Intralipid (data not shown).\n\nUnlike 3T3-L1s, in vitro and native porcine fats exhibited more similar FA profiles, especially within the TAG fractions (Figure 6A and B). The only major difference observed between in vitro and native fat samples was a lack of 20:4 (>10% difference) in the phospholipids, with smaller differences observed for 18:0, 18:1, 16:0, also within the phospholipid fraction. Additionally, mild deficiencies of 18:2 and 18:3, as well as a slight abundance of 20:1, were observed across the TAG and phospholipid fractions for in vitro samples (versus native porcine fat). Intralipid supplementation appeared to rescue 18:2 and 18:3 levels (while also decreasing 20:1) of in vitro porcine adipocytes, but supplementation also caused FA levels to deviate from native pig fat in other ways (e.g., 15:0, 16:1, 20:3, 20:4, 22:4). These changes can be observed in the PCAs of in vitro and in vivo porcine TAGs and phospholipids, where Intralipid appears to both increase and decrease in vitro adipocyte similarity to native cells depending on the principal component (Figure 6\u2014figure supplement 2). When looking at FA saturation however, in vitro and in vivo porcine adipocytes appear to share similar ratios of MUFAs, PUFAs, and SFAs, with Intralipid treatment generally improving the similarity of in vitro and native fats (Figure 6C and D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig6-v1.jpg)\n\n**Figure 6.:** (A, B) The fatty acid (FA) composition of (A) triacylglycerides (TAGs) and (B) phospholipids from in vitro (12 days of adipogenesis, 0\u2013500 \u00b5g/ml Intralipid) and native porcine fats. The stacked graphs on the left illustrate the overall FA composition within each sample group (top 6 FAs color coded). The top-down order of FAs shown are the same in the graph and the legend. The column graphs on the right show the top 8 most prevalent FAs across all the sample groups with error bars (SD). \u2018a\u2019 and \u2018b\u2019 represent a difference of p\u22640.05 versus 0 \u00b5g/ml Intralipid and 500 \u00b5g/ml Intralipid, respectively (analysis of variance [ANOVA] with Tukey\u2019s post-hoc tests). The top-down order in the legend is the same as the left-right order of the samples in the column charts. Tables containing the proportions of all detected FAs are available in Supplementary files 6 and 7. (C, D) FA compositions categorized by degree of saturation are shown for (C) TAGs and (D) phospholipids, displayed similarly as in (A) and (B). \u2018IN-0\u2019 and \u2018IN-500\u2019 stand for Intralipid 0 and 500 \u00b5g/ml Intralipid groups, respectively. \u2018P\u2019 represents native pig adipose. n=3 (technical) for all sample groups. TAGs and phospholipids versus total lipids are available in Figure 6\u2014figure supplement 3.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Scale bars represent 250 \u00b5m.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Circles (\u25cf) represent native pig fats, triangles, (\u25b2) represent in vitro adipocytes sans Intralipid, and diamonds (\u2b25) represent in vitro adipocytes with Intralipid.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (***) represents p<0.001 and (****) represents p<0.0001.\n\n## Discussion\n\nOur goal was to generate macroscale fat tissue for food applications. To achieve this, we circumvented the limitations of macroscale tissue engineering and 3D cell culture by first culturing murine and porcine adipocytes on 2D surfaces with ample access to the culture media, then aggregating the cells into macroscale 3D tissues after in vitro adipogenesis. This approach is feasible for food applications, as opposed to regenerative medicine needs, because cell viability does not need to be maintained once the final macroscale fat tissue is produced.\n\nWe were first able to generate considerable amounts of highly lipid-laden murine adipocytes bearing morphological resemblance to native adipose tissues. Most studies that investigate 3T3-L1 adipogenesis in 2D are of limited culture duration (\u226415 days), with lipid accumulation manifesting as small lipid droplets (Sheng et al., 2014; Neal and Clipstone, 2002; Sharma et al., 2018; Wang et al., 2013; Pazienza et al., 2016; Bogan et al., 2001; Park et al., 2018). Here, we show that extended 2D culture (30 days) of in vitro adipocytes resulted in the emergence of larger lipid droplets, a key trait of white adipose tissue. Abundant lipids were also observed in porcine adipocytes, especially with 0\u20132% serum. Enhanced adipogenesis in low serum or serum-free media has been reported by numerous groups; the diminished lipid accumulation found in adipocytes differentiated in high serum conditions (e.g., 20% in this study) may be due to factors in FBS, such as transforming growth factor \u03b2, that have been found to be pro-proliferative and anti-adipogenic (Jurek et al., 2020; Miti\u0107 et al., 2023; Lee et al., 2012; Entenmann and Hauner, 1996; Sandhu et al., 2017; Sprenger et al., 2021; Boone et al., 2000; Suryawan and Hu, 1993). Indeed, our results with porcine adipocytes in 20% FBS show increased nuclei and decreased lipid accumulation during differentiation. Despite the abundant lipid accumulation observed in in vitro porcine adipocytes cultured with 0-2% FBS, intracellular lipid accumulation was multilocular. A multilocular phenotype can signify adipocyte browning, indicating the presence of beige or brown fat (Jung et al., 2019). However, the lipid morphology observed in the Yorkshire pig DFAT cells of this study likely represents an immature white adipocyte phenotype, as Yorkshire pigs reportedly have no brown adipose tissue (due to the lack of a functional UCP1 gene) (Zheng et al., 2017; Berg et al., 2006). Optimizations to the in vitro environment and culture regime may help enhance lipid accumulation and promote a unilocular phenotype (Hsiao et al., 2016; Sun et al., 2013). For example, in this study we found that Intralipid supplementation drastically increased porcine cell adipogenesis. In this study, porcine dedifferentiated fat (DFAT) cells were used as adipocytes as they been reported to proliferate and accumulate lipids for at least 50 passages while maintaining expression of adipocyte-specific genes such as PPAR\u03b3 (Nobusue and Kano, 2010). Additionally, DFAT cells have been shown to accumulate more intracellular lipids than adipose-derived stromal vascular cells, making them a better choice for large-scale cultured fat production (Peng et al., 2015).\n\nAfter in vitro adipocyte generation, mechanical aggregation of the cells during cell scraping immediately produced what looked like fat tissue. Murine adipocytes were then combined with food-relevant binders to maintain aggregation and tissue integrity. Uniaxial compression testing of alginate-based cultured fat tissues revealed similar stress-strain behaviors to native fat tissues, while mTG crosslinked adipocytes exhibited weaker resistance to compression closer to rendered fats. As mTG has been shown to greatly strengthen protein-rich materials, the weaker mTG fat tissues may be due to a lack of extracellular protein available for crosslinking among the aggregated in vitro adipocytes (Broderick et al., 2005). Thus, to strengthen mTG fat tissues it may be beneficial to mix in additional proteins such as soy (Dreher et al., 2020). It would also be interesting to investigate whether upregulating ECM deposition would improve mTG crosslinking, especially since ECM-promoting culture media components like ascorbic acid have also been shown to improve in vitro adipogenesis (Jurek et al., 2020; Cuaranta-Monroy et al., 2014; Liu et al., 2017; Kim et al., 2013; Thorrez et al., 2018). Ultimately, the mechanical properties of aggregated cultured fat tissues were tunable based on the binding technique used (alginate versus mTG), as well as via the concentration of binder (0.8 versus 1.6% alginate).\n\nWhen investigating the TAG compositions of in vitro-grown fats, we found murine 3T3-L1 cells to differ from native fats, notably being deficient in 18:1 and 18:2 while being enriched in 16:1 and shorter chained SFAs. It has been shown that rodents lacking dietary oleic acid (18:1 \u03c9-9) compensated with higher levels of 16:1, as endogenous production of oleic acid is insufficient to achieve the amounts typically found in normal tissue (Bourre et al., 1997). Primary porcine adipocytes on the other hand achieved a closer FA profile their native equivalents, though slightly lacking in certain FAs such as 18:2. The scarce presence of 18:2 for both murine and porcine cells is likely due an inability for mammals to synthesize linoleic acid (18:2 \u03c9-6), which may highlight the importance of its supplementation during in vitro culture (Hansen, 1986; Malcicka et al., 2018). Indeed, Intralipid treatment (44\u201362% linoleic acid) enriched 18:2 and raised overall PUFA levels for all in vitro adipocytes, with murine cells additionally achieving more similarity to native mouse fats in terms of 16:1 and 18:1 levels (Abdelghany et al., 2020). The increase in 18:3 from Intralipid across murine and porcine adipocytes represents a potential enrichment in omega 3 PUFAs, as 18:3 in soybean oil is alpha-linoleic acid. These changes suggest that lipid supplementation may be useful for tuning in vitro adipocyte TAGs to address deficiencies in particular FAs, enhance specific FAs, or more closely match the composition of native fats.\n\nAs phospholipids have been reported to contribute significantly to meat flavor, we additionally looked at IVF phospholipid FAs (Mottram and Edwards, 1983; Huang et al., 2010). In vitro porcine adipocytes were found to contain similar ratios of phospholipid FAs with their in vivo counterparts, although they notably contained fewer 20:4 and 18:2 FAs than the native fat samples tested. As linoleic acid (18:2) is a precursor to arachidonic acid (20:4 \u03c9-6), it was possible that low 20:4 was due to a lack of 18:2. However, Intralipid-treated porcine IVFs did not show increased 20:4 despite having increases in 18:2. 20:4 levels in porcine IVFs were not uncommonly low though, achieving the same value as reported elsewhere for pig fat (1.4% of all FAs) (Dinh et al., 2021). High 20:4 in our native pig samples could be related to how native pork fat FAs are very pliable based on the animal\u2019s diet (Wood et al., 2008). Ultimately, optimal intracellular 20:4 levels are unclear, as arachidonic acid has been linked with both inflammation and enhanced meat flavor (Calder, 2006; Adam et al., 2003; Takahashi, 2018). If desired, raising 20:4 may be possible through supplementation during cell culture, or via genetic interventions (Takahashi, 2018; Rouzer et al., 2006; Gol et al., 2018). For murine IVF phospholipids, Intralipid did not raise 18:2 despite its high linoleic acid content (Abdelghany et al., 2020). This could be due to genetic influence over phospholipid FAs and our use of the 3T3-L1 cell line (less representative of native adipocytes). It has been reported that different strains of mice can have varying phospholipid compositions when fed the same diet (Hulbert et al., 2006). While useful as a preliminary assessment on the potential flavor or aroma profiles of cultured fat, phospholipid FA profiles are not considered a definitive analysis on fat flavor and aroma. There is thus a need in the field for further research comparing the flavor profiles of cultured fats with native fats and plant-based alternatives, such as via sensory evaluation panels where human participants taste or smell food samples with cultured fat (Iida et al., 2015). Gas chromatography/mass spectrometry approaches may also be explored for a quantitative analysis of the various volatile compounds present in the aromas of cultured and in vivo fats (Watanabe et al., 2008).\n\nAs a result of the comparable fatty acid compositions between in vitro and native fats (especially for primary porcine cells), similar caloric values may be expected for in vitro and native fats on a \u2018per gram of lipid\u2019 basis. However, structured cultured fat tissues in this study may have lowered caloric values due to adipocyte dilution (e.g., the 1:1 mixing of alginate and adipocytes in this study). Here, alternate adipocyte binding protocols and materials may be pursued to create cultured fat tissues with larger proportions of cultured adipocytes. For example, mixing cell-cultured adipocytes with more concentrated alginate would allow a smaller volume to be added for the same final alginate percentage. Other binder materials such as locust bean gum may also be used, which can be dispersed into cultured adipocytes as a powder and then formed into a gel after heating (thus minimally diluting the in vitro-grown adipocytes) (Dion\u00edsio and Grenha, 2012). With future efforts, characterizations such as calorimetry may be useful for quantifying any differences in caloric value between cultured and in vivo fat tissues. In this realm, thermogravimetric analyses may also be useful for assessing the cooking behavior of cultured fat tissues.\n\nAggregating in vitro adipocytes to generate cell-cultured animal fat using various binders unlocks a simplified approach of producing bulk cultured fat tissue with lower costs and direct scalability, addressing a key obstacle in cultivated meat production and contributing to the paradigm of food production using cell culture techniques. The adipocyte aggregation approach is cell type and species agnostic, as demonstrated via the 3T3-L1s (adipogenic fibroblasts) and primary porcine DFAT cells (mesenchymal stem cell-like cells) in this study. While laboratory techniques (2D culture in tissue culture flasks) were used to produce the adipocytes for aggregation in this study, the concept of generating adipose tissues for food via the aggregation of individual fat cells should be applicable to cells generated in larger-scale bioreactor systems (Figure 7). For example, adherent preadipocytes could be proliferated and differentiated en masse in various fixed bed bioreactors, after which they are harvested (e.g., by spraying fluid onto the cells to detach them) (Leinonen et al., 2020; P\u00f6rtner and Platas Barradas, 2007; Hanley et al., 2014; Leung et al., 2022; Yuen et al., 2022). The large-scale generation of adipocytes might also be achieved in suspension bioreactors using microcarrier, spheroid/aggregate approaches, or through cell adaptation to single cell suspension (Yuen et al., 2022; Frye and Patrick, 2006; Lohr et al., 2010; Nahmias and Cohen, 2020; Bellani et al., 2020). Once produced, adipocytes can then be formed into structured cultured fat tissues by mixing with binder or crosslinking ingredients. Cultured adipocytes can also be directly added to food products (e.g., soups and sauces) as an unstructured fat biomass. Incorporating cultured fats or fat tissues into plant-based meats permits the creation of hybrid products, where sustainable and low-cost plant ingredients are enhanced by the complex species-specific flavors that arise from added animal fat cells. Taken together, these approaches offer a potential path to producing meat (or realistic meat alternatives) without animal slaughter, while potentially being more sustainable than conventional meat production (Tuomisto et al., 2014; Tuomisto and de Mattos, 2011; Sun et al., 2015; Mattick et al., 2015; Odegard and Sinke, 2021).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/82120/elife-82120-fig7-v1.jpg)\n\n**Figure 7.:** As opposed to cell scraping methods with cell culture flasks, large-scale adipose production could utilize different types of bioreactors, including suspension bioreactors (e.g., rotating wall vessel and stirred tank) and adherent bioreactors (e.g., fixed bed, hollow fiber) for cell proliferation and differentiation. The adipocytes are then harvested and aggregated for incorporation into food products. For products requiring structured cultured fat tissues, fat cells are combined with binders or crosslinking ingredients to form a rigid construct. Adipocytes can also be directly included in food products that do not require the cultured fat to be structured.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>3T3-L1; murine adipocytes</td>\n      <td>American Type Culture Collection</td>\n      <td>CL-173; RRID: CVCL_0123</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Sus scrofa domesticus)</td>\n      <td>DFAT cells; porcine adipocytes</td>\n      <td>This paper</td>\n      <td>Subcutaneous fat (pork belly)</td>\n      <td>Isolation technique outlined in Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Bos taurus)</td>\n      <td>Beef fat</td>\n      <td>This paper</td>\n      <td>Pectoralis minor (brisket point cut)</td>\n      <td>Obtained from local butcher shop</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Gallus gallus domesticus)</td>\n      <td>Chicken fat</td>\n      <td>This paper</td>\n      <td>Chicken thigh</td>\n      <td>Obtained from local butcher shop</td>\n    </tr>\n    <tr>\n      <td>Biological sample (S. scrofa domesticus)</td>\n      <td>Pork fat</td>\n      <td>This paper</td>\n      <td>Subcutaneous fat (pork belly)</td>\n      <td>Obtained from local butcher shop</td>\n    </tr>\n    <tr>\n      <td>Biological sample (S. scrofa domesticus)</td>\n      <td>Lard (Porcine)</td>\n      <td>Goya</td>\n      <td>\u2013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (B. taurus)</td>\n      <td>Tallow (Bovine)</td>\n      <td>Epic Provisions</td>\n      <td>\u2013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>300 \u00b5m cell strainer</td>\n      <td>pluriSelect</td>\n      <td>43-50300-03</td>\n      <td>For primary cell isolation (separating cells from debris)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Collagenase</td>\n      <td>Worthington Biochemical</td>\n      <td>LS004176</td>\n      <td>For primary cell isolation (digesting ECM)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM</td>\n      <td>Thermo Fisher</td>\n      <td>10569044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Advanced DMEM/F12</td>\n      <td>Thermo Fisher</td>\n      <td>12634-028</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GlutaMAX</td>\n      <td>Thermo Fisher</td>\n      <td>35050-061</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Bovine calf serum</td>\n      <td>Sigma-Aldrich</td>\n      <td>12,133C</td>\n      <td>Culture media component</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fetal bovine serum (FBS)</td>\n      <td>Thermo Fisher</td>\n      <td>A31606-01;Lot: 2129571</td>\n      <td>Culture media component</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Antibiotic/antimycotic</td>\n      <td>Thermo Fisher</td>\n      <td>15240062</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Primocin</td>\n      <td>InvivoGen</td>\n      <td>ant-pm-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Accumax</td>\n      <td>Innovative Cell Technologies</td>\n      <td>AM105</td>\n      <td>Cell detachment reagent</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>NucleoCounter</td>\n      <td>Chemometec</td>\n      <td>NC-200</td>\n      <td>Cell counter</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Insulin</td>\n      <td>Sigma-Aldrich</td>\n      <td>I0516</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dexamethasone</td>\n      <td>Sigma-Aldrich</td>\n      <td>D4902</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IBMX</td>\n      <td>Sigma-Aldrich</td>\n      <td>I5879</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rosiglitazone</td>\n      <td>TCI America</td>\n      <td>R0106</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Intralipid</td>\n      <td>Sigma-Aldrich</td>\n      <td>I141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotin</td>\n      <td>TCI America</td>\n      <td>B04631G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Calcium-D-pantothenate</td>\n      <td>TCI America</td>\n      <td>P001225G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Stereolithography 3D Printer</td>\n      <td>Formlabs</td>\n      <td>Form 2</td>\n      <td>For making custom molds when producing 3D cultured fats</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biocompatible 3D printing resin</td>\n      <td>Formlabs</td>\n      <td>Surgical guide resin</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Medical device adhesive</td>\n      <td>Henkel Adhesives</td>\n      <td>Loctite 3556</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium alginate</td>\n      <td>Modernist Pantry</td>\n      <td>1007-50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Calcium carbonate</td>\n      <td>Modernist Pantry</td>\n      <td>1505-50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glucono delta-lactone</td>\n      <td>Modernist Pantry</td>\n      <td>1159-50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Microbial transglutaminase (mTG)</td>\n      <td>Ajinomoto</td>\n      <td>Activa TI</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Goat serum</td>\n      <td>Thermo Fisher</td>\n      <td>16210-064</td>\n      <td>For use during immunofluorescent staining</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BODIPY 493/503</td>\n      <td>Invitrogen</td>\n      <td>D3922</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>Thermo Fisher</td>\n      <td>62248</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hoescht 33342</td>\n      <td>Invitrogen</td>\n      <td>H3570</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-fatty acid synthetase (rabbit, monoclonal)</td>\n      <td>Invitrogen</td>\n      <td>MA5-14887; RRID: AB_10980075</td>\n      <td>(1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-peroxisome proliferator-activated receptor gamma (rabbit, polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab45036; RRID: AB_1603934</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit Alexa Fluor plus 647 (goat, polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>A32733; RRID: AB_2633282</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Mounting media</td>\n      <td>Vector Laboratories</td>\n      <td>H-1700</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image analysis/quantification</td>\n      <td>CellProfiler (https://cellprofiler.org)</td>\n      <td>CellProfiler 4.2.1; RRID: SCR_007358</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Cell scraper (large)</td>\n      <td>Sarstedt</td>\n      <td>83.3952</td>\n      <td>For harvest and aggregation of differentiated adipocytes</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methyl tert-butyl ether</td>\n      <td>Alfa Aesar</td>\n      <td>41839AK</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methanol</td>\n      <td>Thermo Fisher</td>\n      <td>BPA4544</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Graphing and statistical software</td>\n      <td>GraphPad Prism (https://www.graphpad.com)</td>\n      <td>GraphPad Prism 9.3.0; RRID: SCR_002798</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Preadipocyte cell culture\n\nAdipogenic mouse (Mus musculus) 3T3-L1 cells were obtained from the American Type Culture Collection (CL-173; ATCC, Manassas, VA, USA) and used to generate cultured fat tissues. 3T3-L1s were received at passage X+13 (with X being an unknown number of passages as stated by ATCC) and expanded in high glucose Dulbecco\u2019s modified eagle medium (DMEM) with GlutaMAX, phenol red, and sodium pyruvate (10569044; Thermo Fisher, Waltham, MA, USA) supplemented with 10% bovine calf serum (12,133C; Sigma, Burlington, MA, USA) and 1% antibiotic/antimycotic (Anti/Anti, 15240062; Thermo Fisher) in a 37\u00b0C, 5% CO2 incubator. 3T3-L1 cell line identity was confirmed via short tandem repeat profiling, and the cells tested negative for mycoplasma (Case CX4-015723; Labcorp, Burlington, NC, USA) (Robin et al., 2020). General cell counting was performed using an automated cell counter (NucleoCounter NC-200; Chemometec, Liller\u00f8d, Denmark) and cell detachment was achieved enzymatically using Accumax (AM105; Innovative Cell Technologies Inc, San Diego, CA, USA). For cryopreservation, the same medium was mixed with dimethylsulfoxide (DMSO, D2438; Sigma) at a ratio of 9:1 (medium:DMSO) and cells were frozen overnight at \u201380\u00b0C in an isopropanol-based freezing container (5100-0001; Thermo Fisher). (Long-term storage in liquid nitrogen) 3T3-L1s were used between passages X+15 and X+18.\n\nDedifferentiated (DFAT) porcine (Sus domesticus) cells were generated by isolating mature adipocytes from the subcutaneous adipose tissue of a Yorkshire pig (93 days of age) and was based off several studies on porcine DFAT cells in the literature (Nobusue and Kano, 2010; Peng et al., 2015). In brief, porcine tissue was procured from the Tufts University Medical Center and transported to the laboratory on ice (~25 min). The tissue was disinfected with a solution of Dulbecco\u2019s phosphate buffered saline (14190250; Thermo Fisher) containing 10% Anti/Anti. Five g of tissue was collected from the disinfected tissue and minced into <1 mm3 pieces in the DPBS-Anti/Anti solution. The tissue was then incubated in 25 ml of DMEM containing 0.1% collagenase (LS004176; Worthington Biochemical, Lakewood, NJ, USA) and 10% Anti/Anti for 1.5 hr at 37\u00b0C, then 45 min at room temperature (RT). During incubation, the collagenase-adipose solution was inverted every 15 min. Afterwards, the collagenase-adipose solution was filtered through a 300 \u00b5m cell strainer (43-50300-03; pluriSelect, San Diego, CA, USA) and centrifuged for 5 min at 500 \u00d7 g. Mature adipocytes were collected from the floating lipid layer in the centrifuged solution and added to 10 ml of DMEM containing 20% FBS (A31606-01, Lot: 2129571; Thermo Fisher) and 100 \u00b5g/ml Primocin (ant-pm-1; InvivoGen, San Diego, CA, USA), then centrifuged again (500 \u00d7 g, 5 min). Mature adipocytes were collected and transferred to a T25 tissue culture flask (Nunc EasYFlask, 156367; Thermo Fisher) containing 3.5 ml of DMEM with 20% FBS and 100 \u00b5g/ml Primocin and incubated at 39\u00b0C with 5% CO2. After 2 days, the floating lipid layer was transferred into a new T25 flask and completely filled (~75 ml) with DMEM+20% FBS+100 \u00b5g/ml Primocin. The filled flask was kept at upside down at 39\u00b0C, 5% CO2 for 5 days, during which the mature adipocytes attached to the top surface and dedifferentiated. The flask was then drained, flipped around, and used normally with 3.5 ml of culture media. DFAT cells were used up to passage 3, grown using DMEM+20% FBS+100 \u00b5g/ml Primocin, and cryopreserved with a 9:1 solution of culture medium and DMSO.\n\n### Adipogenic differentiation\n\nDuring terminal passages (where cells were differentiated instead of passaged for further cell culture), 3T3-L1s were grown DMEM with 10% FBS and 1% Anti/Anti until 100% confluency. Twenty-four to 48 hr after reaching confluency, cells were switched to an adipogenic induction medium (differentiation medium) consisting of DMEM with 10% FBS, 1% Anti/Anti, 10 \u00b5g/ml insulin (I0516; Sigma), 1 \u00b5M dexamethasone (D4902; Sigma), 0.5 mM 3-isobutyl-1-methylxanthine (IBMX, I5879; Sigma) and 2 \u03bcM rosiglitazone (R0106; TCI America, Portland, OR, USA). After 2 days of adipogenic induction, 3T3-L1s were switched to a lipid accumulation medium for 13\u201328 days with feeding every 2\u20133 days. During cell feedings, great care was taken to handle the cells gently to prevent lift-off of lipid-laden adipocytes (Video 1). During the aspiration of used culture media, the tissue culture flask is inverted gently to collect media on the top and sidewalls. Dispensing new media (or other liquids) is also performed in the inverted position to avoid direct pipetting on the cells. The flask is then carefully reinverted to its upright position to allow gentle contact with the cells on the bed of the flask. The lipid accumulation medium consisted of DMEM with 10% FBS and 1% Anti/Anti, with 120 \u00b5g/ml Intralipid (I141; Sigma) and 10 \u00b5g/ml insulin. For experiments on the effects of fatty acid supplementation on cultured adipocytes, Intralipid concentration varied from 0 to 1000 \u00b5g/ml. \u2018Fifteen-day\u2019 cultured adipocytes refer to 2 days of adipogenic induction and 13 days of lipid accumulation post-induction, while \u201830-day\u2019 adipocytes refer to 2 days of induction and 28 days of accumulation.\n\nPorcine DFAT cells were differentiated similarly to 3T3-L1s, except the adipogenic induction and lipid accumulation phases lasted for 4 and 26 days, respectively (total 30 days). Different adipogenic media were also used. The induction medium consisted of Advanced DMEM/F12 (12634-028; Thermo Fisher) supplemented with 2 or 20% FBS, 0 or 500 \u00b5g/ml Intralipid, 100 \u00b5g/ml Primocin, 0.5 \u00b5M dexamethasone, 0.5 mM IBMX, 5 \u03bcM rosiglitazone, 2 mM (1\u00d7) GlutaMAX (35050-061; Thermo Fisher), 20 \u00b5M biotin (B04631G; TCI America, Portland, OR, USA), and 10 \u00b5M calcium-D-pantothenate (P001225G; TCI America). During lipid accumulation, the same medium was used sans IBMX.\n\n### Harvest of lipid-laden adipocytes and formation of 3D cultured fat tissues\n\nAfter adipogenic differentiation, adipocytes were rinsed with DPBS after gentle aspiration of the culture media. Flasks were kept on their sides for 5\u201310 min to more thoroughly drain the DPBS, then cells were harvested using a cell scraper (83.3952; Sarstedt, N\u00fcmbrecht, Germany) via a series of raking motions (as opposed to the windshield wiper approach) into a pre-weighed 50 ml centrifuge tube.\n\nAll reconstructed cultured fat tissues were generated in cylindrical 3D printed molds open from the top and bottom (\u00d8 6 mm, 3 mm height) using a biocompatible resin (Surgical Guide resin; Formlabs, Somerville, MA, USA) and a stereolithography 3D printer (Form2 Printer; Formlabs). A glass coverslip was adhered (Loctite 3556; Henkel Adhesives, D\u00fcsseldorf, Germany) to the bottom of the mold to hold the adipocytes during tissue formation and was taken off afterwards to facilitate tissue removal. Two approaches were carried out to form the 3D cultured fat tissues. The first method involved mixing cell-scraped in vitro adipose with a sterile-filtered 15% (w/v) mTG solution (Activa TI; Ajinomoto, Itasca, IL, USA) at a 4:1 ratio (adipose:transglutaminase) and incubating the mixed tissue at 37\u00b0C overnight. The second method involved embedding the in vitro adipose in slow gelling alginate of various concentrations, with the approach adapted from the literature (Growney Kalaf et al., 2016). Here, 1.6% or 3.2% (w/v) medium viscosity sodium alginate solutions (1007-50; Modernist Pantry, Eliot, ME, USA) were prepared by adding powder to water and allowing the alginate to hydrate for at least 1 hr. After hydration, calcium carbonate powder (CaCO3, 1505-50; Modernist Pantry, Eliot, ME, USA) was added to the alginate solutions to achieve 25 mM and vortexed for 10\u201360 s to yield evenly dispersed suspensions. To initiate delayed gelation, glucono delta-lactone powder (1159-50; Modernist Pantry, Eliot, ME, USA) was added to the alginate-calcium mixtures to achieve 50 mM and vortexed again for 10\u201360 s. Finally, the 1.6% and 3.2% alginate solutions were mixed 1:1 (volumetrically) with cell-scraped adipocytes to obtain alginate-cultured fat constructs of 0.8% and 1.6% alginate, respectively. For cultured porcine fat, scraped adipocytes were mixed with 3.2% alginate at a 1:1 (volumetric) ratio. All macroscale cultured fat tissues were stored at 4\u00b0C for a maximum of 3 days prior to mechanical testing.\n\n### Native animal adipose samples\n\nBeef fat tissue (Bos taurus) from the pectoralis minor (brisket point cut) and chicken fat tissue (Gallus gallus) from the thigh were purchased from a local butcher shop. Both samples were displayed at refrigerator temperatures in the shop and transported to the laboratory at RT (~15 min). Two types of pork fat tissues were used in this study. For lipidomics, pork fat from the belly was purchased from a local butcher shop. For mechanical testing and fluorescence imaging, adipose from the belly of a freshly sacrificed 97-day-old Yorkshire pig was obtained at the Tufts University Medical Center and transported to the laboratory on ice (~25 min). Food-grade lard (Goya, Secaucus, NJ, USA) and tallow (Epic Provisions, Austin, TX, USA) were purchased commercially for mechanical testing and shaped with the same 3D printed molds used for forming macroscale IVF tissues. For lipidomics, beef, pork, and chicken samples were flash frozen in liquid nitrogen and stored at \u201380\u00b0C, then thawed for lipid extraction. For mechanical (compressive) testing and fluorescence imaging, beef, pork, and chicken adipose samples were directly used after acquisition. Mouse fat tissue samples were obtained from the perigonadal regions of 7- and 67-day-old mice (CD-1 strain; Charles River, Wilmington, MA, USA) and directly used for lipidomics and fluorescence imaging.\n\n### Mechanical testing\n\nUnconfined uniaxial compressive testing was carried out using a dynamic mechanical analyzer (RSA3; TA Instruments, New Castle, DE, USA). Cultured fat tissue samples (\u00d8 6 mm, 3 mm height) were taken from storage at 4\u00b0C and allowed to warm to RT (25\u00b0C as measured by an infrared thermometer) prior to testing. Beef, pork, and chicken fat tissue samples were cut using 6 mm biopsy punches, cut to 3 mm heights, and tested at 25\u00b0C. During testing, fat tissue samples were placed between parallel stainless steel plates and compressed. Compressive stress responses and elastic recoveries were measured up to 50% strain at a rate of 1.667% s\u20131. Stress/strain curve data were obtained using the TA Universal Analysis software and represent mean values over n.\n\n### Fluorescence and immunofluorescence staining\n\nCultured adipocytes in 48-well tissue culture plates were stained to confirm lipid accumulation and to check for markers of adipogenic differentiation. Here, 15- and 30-day 3T3-L1s adipocytes were stained for neutral lipids using DMEM 10% FBS 1% Anti/Anti culture media supplemented with 2 \u00b5M BODIPY 493/503 (4,4-difluoro-4-bora-3a,4a-diaza-s-indacene, D3922; Invitrogen, Waltham, MA, USA). Cells were first rinsed with DPBS, then incubated at 37\u00b0C for 15\u201330 min with 140 \u00b5l of the BODIPY-culture media solution in each well. After BODIPY incubation, cells were rinsed twice with DPBS and then fixed in 4% PFA for 10\u201315 min at RT protected from light. After fixation, cells were rinsed twice in DPBS then simultaneously blocked and permeabilized with B/P buffer (DPBS with 0.1% Tween 20 [P2287; Sigma], 0.1 M glycine [161-0718; Bio-Rad, Hercules, CA, USA], 0.02% sodium azide [S2002; Sigma], and 5% goat serum [16210-064; Thermo Fisher]). Cells were then incubated overnight with primary antibodies at 4\u00b0C in B/P buffer containing either 1:50 rabbit anti-fatty acid synthetase (MA5-14887; Invitrogen, Waltham, MA, USA, RRID:AB_10980075) or 1:500 rabbit anti-PPAR\u03b3 (ab45036, Abcam, Waltham, MA, USA, RRID:AB_1603934). The next day, cells were rinsed in DPBS and incubated with 2 \u00b5g/ml DAPI (4\u2032,6-diamidino-2-phenylindole, 62248; Thermo Fisher) and 1:500 Alexa Fluor Plus 647 conjugated goat anti-rabbit secondary antibodies (A32733; Invitrogen, Waltham, MA, USA, AB_2633282) for 1 hr at RT. Finally, cells were rinsed in DPBS twice and stored in mounting media (H-1700; Vector Laboratories, Burlingame, CA, USA) at RT. Porcine DFAT adipocytes were stained for lipids via a 15\u201330 min incubation at 37\u00b0C in lipid accumulation media (sans Intralipid) supplemented with 2 \u00b5M BODIPY 493/503 and 2 \u00b5g/ml Hoescht 33342 (H3570; Invitrogen). DFAT cells were then fixed in 4% PFA at RT for 10\u201315 min, then rinsed with DPBS and stored in mounting media.\n\nFor lipid staining of native adipose samples, chicken, beef, pork, and mouse tissues were first fixed in 4% PFA at 4\u00b0C overnight. After fixation, adipose tissues were incubated in optimal cutting temperature compound (OCT, 4583; Sakura Finetek, Torrance, CA, USA) overnight at 4\u00b0C. Samples were then placed in molds with additional OCT and flash frozen with liquid nitrogen. Blocks of fat embedded in OCT were then cryosectioned (Leica CM1950; Wetzlar, Germany) and dried on glass slides (Superfrost Plus Gold, 22-035813; Fisher Scientific, Waltham, MA, USA) at RT for 15\u201330 min. After drying, slides with tissue sections were rehydrated in DPBS for 10 min to dissolve the OCT, then stained with 2 \u00b5M BODIPY 493/503 for 30 min at RT. Stained tissues were then cleaned with DPBS and mounted with a coverslip plus mounting media. Staining jars (EasyDip; Simport Scientific, Saint-Mathie-de-Beloeil, QC, Canada) were used whenever possible to minimize sample loss that was sometimes observed when pipetting solutions directly onto the glass slides.\n\nZ-stack images of all samples were taken using a confocal microscope (SP8; Leica, Wetzlar, Germany) using 405, 488, 638 nm lasers as appropriate. Quantifications of lipid accumulation (degree of BODIPY staining) were performed by first segmenting images into stain versus background regions using ilastik, followed by measurements of the stain area in CellProfiler (Berg et al., 2019; Stirling et al., 2021). BODIPY staining area was divided by the number of nuclei detected to calculate the amount of lipid accumulation per cell. PPAR\u03b3 % was calculated by counting the number of PPAR\u03b3 positive nuclei in CellProfiler (after ilastik segmentation), then dividing by total nuclei. Lipid droplet diameters were measured by first segmenting BODIPY images in ilastik, then taking the mean diameter of each BODIPY object (lipid droplet) in CellProfiler.\n\n### Lipid extraction\n\nLipids were extracted from in vitro adipocytes and native adipose tissues for downstream lipidomics analyses. For this analysis, 10 cm2 worth of in vitro adipocytes were rinsed three times with DPBS with 5 min waits to remove residual culture media, followed by detachment with a cell scraper after the removal of residual DPBS via vacuum aspiration. This cell-scraped cultured fat was used for lipid extractions and lipidomics. Native adipose samples were thawed from \u201380\u00b0C storage (previously flash frozen with liquid nitrogen) and 10 mg (pork, beef, chicken) or 15 mg (mouse) samples were minced with tweezers and scissors prior to lipid extraction. All groups were performed in triplicate.\n\nLipid extractions were performed using a methyl tert-butyl ether-based (MTBE, 41839AK; Alfa Aesar, Haverhill, MA, USA) approach scaled down for 1.5 ml Eppendorf tubes (Wong et al., 2019). Four-hundred \u00b5l of methanol (BPA4544; Thermo Fisher) was added to the fat samples in a 1.5 ml centrifuge tube and vortexed for 1 min, followed by an addition of 500 \u00b5l MTBE with occasional mixing for 1 hr at RT. Next, 500 \u00b5l of water was added and solutions were vortexed for 1 min. Aqueous and organic phases were separated by centrifuging samples at 10,000 \u00d7 g for 5 min. The upper organic phase was then transferred to a new tube while the aqueous phase was re-extracted using 200 \u00b5l of MTBE, 1 min of vortexing, and 5 min of centrifugation. The combined organic phases were then dried under nitrogen and stored at \u201380\u00b0C.\n\n### Lipidomics analyses\n\nLipidomics analyses were performed at the Beth Israel Deaconess Medical Center Mass Spectrometry Facility (John Asara Laboratory) according to prior procedures (Breitkopf et al., 2017). In brief, liquid chromatography-mass spectrometry/mass spectrometry (LC-MS/MS) using a Thermo Fisher QExactive Orbitrap Plus mass spectrometer coupled with an Agilent 1200 high pressure liquid chromatography (HPLC) system and an Imtakt Cadenza CD-C18 HPLC column (CD025, 3.0 \u00b5m particle size, 2.0 mm inner diameter \u00d7 150 mm length) was used to characterize lipid samples. Lipid species identification and peak alignment was achieved using LipidSearch (Thermo Fisher), after which the prevalence of different fatty acids within TAGs and phospholipids were quantified using a custom Python script which is available at: https://github.com/mksaad28/Yuen_et_al; copy archived at Saad, 2023.\n\n### Statistical analyses\n\nStatistical analyses were carried out in GraphPad Prism 9.3.0. The specific analyses used are indicated in the text and include: Analysis of variance (ANOVA) with Tukey\u2019s post-hoc tests, t-tests with Welsh\u2019s correction, PCAs, and chi-square tests. Error bars and \u00b1ranges represent standard deviations unless specified with SEM (standard error of the mean). 0.05 was the cut-off p value for statistical significance. All experiments in this study were carried out with at least triplicate samples (n\u22653, technical). The aggregation of 2D grown adipocytes into bulk 3D tissues has been repeated over five times over numerous experiments.\n",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "d7b7a31c-f84e-4e14-b1dc-0948e5616345",
+      "submission_id": "28fb91f0-018a-492c-9588-8b137d1aaa8a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Milica Radisic, https://ror.org/03dbr7087 University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82120.sa0](https://doi.org/10.7554/eLife.82120.sa0)\n\nThis paper describes an important new method to cultivate fat tissues in vitro for meat production, by cell aggregation after the adipocytes have fully differentiated in a two-dimensional monolayer. The authors present exceptional evidence that this approach is scalable and that the lipid treatment of the cultured adipocytes modifies their fatty acid composition in the triglyceride as well as the phospholipid portions, which is important for engineering the taste component in cellular agriculture. The work will be of broad interest to bioengineers, tissue engineers, biomaterial scientists, and stem cell biologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Milica Radisic, https://ror.org/03dbr7087 University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82120.sa1](https://doi.org/10.7554/eLife.82120.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Aggregating in vitro-grown Adipocytes to Produce Macroscale Cell-Cultured Fat with Tunable Lipid Compositions for Food Applications\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Milica Radisic as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Carlos Isales as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Vera M Pieters (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe authors are encouraged to comment on scalability in terms of reaching the appropriate flat surface area and scraping in industrial applications.\n\nIs it possible to assess the caloric value of these types of products and how far away they are from real products as well as how they change upon thermal processing?\n\nPlease improve the statistical analysis.\n\nProvide a rationale for the use of murine cells.\n\nConsider replacing the word fat with fat tissues.\n\nConsider reviewer comments for improving the clarity of the graphical abstract and Figure 1.\n\nThe rationale for using dedifferentiated porcine cells as opposed to isolating the adipose-derived stromal mesenchymal cell fraction for adipocyte differentiation is not explained.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors are encouraged to comment on scalability in terms of reaching the appropriate flat surface area and scraping in industrial applications- ie what would be suitable alternative processes?\n\nOne of my additional questions would relate to the ability for thermal processing. Is it possible to assess the caloric value of these types of products and how far away they are from real products as well as how they change upon thermal processing?\n\nReviewer #2 (Recommendations for the authors):\n\nThank you for compiling this interesting work. Below I have outlined a few suggestions and concerns that when addressed could strengthen the manuscript.\n\nI would suggest describing in the figure legends what the 'n' of that specific figure section consists of. For example, an n=4 can describe analyzing 4 images of cells from 4 repeated experiments, or 4 images of the same flask.\n\nThe use of 3D 'fats' in the abstract and throughout the text might be confusing to the reader. 'Fats' can also refer to lipid molecules, so using the term '3D fat tissues' might describe your structures better.\n\nThe graphical abstract is a great addition to the paper. However, a graphical abstract might be more effective with less text. This graphical abstract almost resembles a conference poster.\n\nThe first half of the paper describes the development of macroscale fat tissues and lipid treatment of 3T3-L1 cells. The rationale for using this murine cell line for a paper describing a strategy for developing cultivated fat for food consumption is not well explained.\n\nLine 91: It would be appropriate to describe here what the rationale is for using these binders, as opposed to describing it later in the paper (line 127).\n\nFigure 1E: There are no visible error bars.\n\nFigure 1F and 4D: Scale bars are not visible/not uniform through the different images.\n\nLine 148: The description of 'additionally culture with \u2026' causes confusion. It would be helpful if the authors describe the Intralipid treatment in the context of the timeline described in Figure 1A. The authors could elaborate on the composition of Intralipid and the rationale for using this lipid treatment.\n\nIf possible, I would suggest combining Supplemental Figure 4 to Figure 3A.\n\nThe text accompanying Figure 3 and Figure 5 is not as easily readable as the rest of the results. The authors could consider maintaining a similar sentence and paragraph structure when describing the results of each of the sub-figures. Such flow might improve readability.\n\nThe results of Figure 4A are quite interesting, but not further discussed in this paper. The authors could consider hypothesizing what happens here. Possibly, initially, fewer cells attach in the 2% FBS group after which relatively more lipid from the lipid accumulation media is available to each cell.\n\nLine 212: Lipid accumulation of 33-L1 after Intralipid treatment is not shown.\n\nLine 213: primary PORCINE adipocytes\n\nLine 213: It is unclear what the adipocytes differed from.\n\nFigure 5. It is not clear why the 1000ug/ml Intralipid treatment was not performed here.\n\nLine 247: The authors might be referring to the unlikeliness that they are observing adipose tissue browning in these cultures, however, this might not be clear to an audience not familiar with UCP1 function.\n\nLine 320: The rationale for using dedifferentiated porcine cells as opposed to isolating the adipose-derived stromal mesenchymal cell fraction for adipocyte differentiation is not explained.\n",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f68ef27c-6ae5-4041-9817-cd40472d3700",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C1",
+      "claim": "Mass transport limitations (nutrients, oxygen, waste diffusion) of macroscale 3D tissue culture are circumvented by initially culturing murine or porcine adipocytes in 2D.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass transport limitations (nutrients, oxygen, waste diffusion) of macroscale 3D tissue culture are circumvented by initially culturing murine or porcine adipocytes in 2D, after which bulk fat tissue is produced by mechanically harvesting and aggregating the lipid-filled adipocytes into 3D constructs using alginate or transglutaminase binders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental approach used to overcome mass transport limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "28fc6ff3-f7ac-4cfc-a571-3b90b967277c",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C2",
+      "claim": "Bulk fat tissue is produced by mechanically harvesting and aggregating lipid-filled adipocytes into 3D constructs using alginate or transglutaminase binders.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass transport limitations (nutrients, oxygen, waste diffusion) of macroscale 3D tissue culture are circumvented by initially culturing murine or porcine adipocytes in 2D, after which bulk fat tissue is produced by mechanically harvesting and aggregating the lipid-filled adipocytes into 3D constructs using alginate or transglutaminase binders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the method used to produce bulk fat tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "383938a7-df57-496d-baf0-871ad0227d29",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C3",
+      "claim": "The 3D fat tissues were visually similar to fat tissue harvested from animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D fat tissues were visually similar to fat tissue harvested from animals, with matching textures based on uniaxial compression tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports visual similarity based on observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "9d6ab2fc-53c1-41f6-945f-1fc065b526b5",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C4",
+      "claim": "The 3D fat tissues had matching textures to animal fat tissue based on uniaxial compression tests.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D fat tissues were visually similar to fat tissue harvested from animals, with matching textures based on uniaxial compression tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports mechanical testing data comparing cultured and native fat tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "859ec857-f2bd-4243-a363-9233d7f4d319",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C5",
+      "claim": "The mechanical properties of cultured fat tissues were based on binder choice and concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanical properties of cultured fat tissues were based on binder choice and concentration, and changes in the fatty acid compositions of cellular triacylglyceride and phospholipids were observed after lipid supplementation (soybean oil) during in vitro culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports mechanical testing data showing differences based on binder type and concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "dc6abff0-5e5e-4b67-9a67-8b9d6cb946c7",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C6",
+      "claim": "Changes in the fatty acid compositions of cellular triacylglyceride and phospholipids were observed after lipid supplementation (soybean oil) during in vitro culture.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanical properties of cultured fat tissues were based on binder choice and concentration, and changes in the fatty acid compositions of cellular triacylglyceride and phospholipids were observed after lipid supplementation (soybean oil) during in vitro culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports lipidomics data showing changes in fatty acid composition with Intralipid supplementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "aab2e1d0-2dfd-460f-a488-7434609f786b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C7",
+      "claim": "Fat is key to the taste and texture of meat.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fat is key to the taste and texture of meat (He et al., 2020; Moritz et al., 2015; Frank et al., 2016; Frank et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "753fb7fd-2caf-48c0-83be-45e4bf5a0e6a",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C8",
+      "claim": "Peak evaluation scores were achieved with beef samples containing ~36% crude fat.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, peak evaluation scores were achieved with beef samples containing ~36% crude fat (Iida et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "bf9f1570-1df4-4d11-ae6f-8a0ab0a7dc00",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C9",
+      "claim": "Hundreds of volatile compounds are released when meat is cooked, with a majority originating from lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Hundreds of volatile compounds are released when meat is cooked, with a majority originating from lipids (Frank et al., 2017; Ba et al., 2012; Mottram et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "b27bad6a-18bc-4f24-a8cf-45d03813a45b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C10",
+      "claim": "Fat is responsible for the species-specific flavor of meat.",
+      "claim_type": "EXPLICIT",
+      "source": "Fat is also responsible for the species-specific flavor of meat, making it important for reproducing the flavors of specific animals (Ramalingam et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "89c5676c-d73a-4d5f-b23c-369604c17a39",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C11",
+      "claim": "In vitro-grown fat could be used to enhance existing plant-based meats.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to cultivated meat, in vitro-grown fat could also be used to enhance existing plant-based meats, as complex species-specific flavors of animals are difficult to recapitulate de novo (Fish et al., 2020; van Vliet et al., 2021; Bohrer, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations and represents a potential application.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "62c2b222-a444-4057-991d-82eb82920fad",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C12",
+      "claim": "Complex species-specific flavors of animals are difficult to recapitulate de novo in plant-based meats.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to cultivated meat, in vitro-grown fat could also be used to enhance existing plant-based meats, as complex species-specific flavors of animals are difficult to recapitulate de novo (Fish et al., 2020; van Vliet et al., 2021; Bohrer, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "d61cf266-ccfe-4b57-bbff-d93d1e63683b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C13",
+      "claim": "Producing macroscale tissues remains a major challenge due to mass transport limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "While cultured fat stands to greatly improve the quality of alternative proteins, producing macroscale tissues remains a major challenge due to mass transport limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge in tissue engineering.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "03bc8612-fb55-492b-9d71-01a5ea03a766",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C14",
+      "claim": "Oxygen and nutrients are only able to diffuse through several hundred microns of dense tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Even millimeter-scale in vitro tissues are challenging to generate, as oxygen and nutrients are only able to diffuse through several hundred microns of dense tissue (Coyle et al., 2019; Murphy et al., 2017; Helmlinger et al., 1997; Jain et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "39ac76c0-d5d8-4077-b06d-bd85c4dd816f",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C15",
+      "claim": "All tissues must remain within several hundred microns of a perfusion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "A dense array is required when incorporating perfusion channels, as all tissues must remain within several hundred microns of a channel (Yamamoto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "50497422-9d1f-467e-874a-7b171352d8e0",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C16",
+      "claim": "Lipid accumulation decreases considerably once cells are ~1 mm away from a perfusion channel in adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "For adipose tissue, lipid accumulation decreases considerably once cells are ~1 mm away from a perfusion channel (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "a9bc5e26-7984-438d-99e1-6e8fc5faf981",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C17",
+      "claim": "Spontaneous vessel formation may not be feasible for centimeter- to meter-scale tissues, as cultivated cells may die during the time required for the vasculature to form.",
+      "claim_type": "EXPLICIT",
+      "source": "However, spontaneous vessel formation may not be feasible for centimeter- to meter-scale tissues, as cultivated cells may die during the time required for the vasculature to form (Unal et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "2fded18c-a7ca-4585-b582-ab06333586a5",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C18",
+      "claim": "Capillaries may be too small to deliver a sufficient volume of media when supporting larger tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Capillaries may also be too small to deliver a sufficient volume of media when supporting larger tissues (Tetzlaff and Fischer, 2018; Moya et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "8461bf12-54ee-4177-b51c-a1081740c642",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C19",
+      "claim": "Adipose tissue in vivo is a dense aggregation of lipid-filled adipocytes with a sparse extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that aggregating individual adipocytes would be sufficient to reproduce the taste, nutrition, and texture profile of fat, as adipose tissue in vivo is a dense aggregation of lipid-filled adipocytes with a sparse extracellular matrix (ECM) (Mescher, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "5dc00dee-6fae-43b6-85a9-f916dad5e38f",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C20",
+      "claim": "At day 15, cultured adipocytes were 81.6% (\u00b15.5%) positive for peroxisome proliferator-activated receptor gamma (PPAR\u03b3).",
+      "claim_type": "EXPLICIT",
+      "source": "At day 15, cultured adipocytes were 81.6% (\u00b15.5%) positive for peroxisome proliferator-activated receptor gamma (PPAR\u03b3) (Figure 2B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "f700521e-d4be-4c1c-a19b-f18d1ad7fbc2",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C21",
+      "claim": "30-day adipocytes contained ~3 times more lipid per cell than 15-day adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "30-day adipocytes contained ~3 times more lipid per cell than 15-day adipocytes (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "e92175af-4572-47e5-b1d6-aa27d50c9e88",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C22",
+      "claim": "A positive correlation was observed between adipogenic culture duration and lipid droplet size.",
+      "claim_type": "EXPLICIT",
+      "source": "A positive correlation was observed between adipogenic culture duration and lipid droplet size (Figure 2E, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lipid droplet diameter distribution data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "58af35ae-312c-4458-988f-941c87ce085f",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C23",
+      "claim": "Mean lipid droplet diameters for 15- and 30-day adipocytes were 8.1 \u00b5m (\u00b10.04 SEM) and 11.1 \u00b5m (\u00b10.1 SEM), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean lipid droplet diameters for 15- and 30-day adipocytes were 8.1 \u00b5m (\u00b10.04 SEM) and 11.1 \u00b5m (\u00b10.1 SEM), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantification of lipid droplet sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "2947e047-1808-4381-83ee-35a5ec2704a2",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C24",
+      "claim": "Cultured adipocytes exhibited the appearance of packed lipid droplets observed when imaging native adipocytes from various animals, particularly that of 7-day old mouse (7D mouse) and chicken.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultured adipocytes exhibited the appearance of packed lipid droplets observed when imaging native adipocytes from various animals, particularly that of 7-day old mouse (7D mouse) and chicken (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual comparison in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "ee1c5b39-f09c-4d65-8cc2-6fb87606c7a0",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C25",
+      "claim": "One culture flask with 175 cm2 surface area generally yielded ~0.8 g of cell-scraped adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that one culture flask with 175 cm2 surface area generally yielded ~0.8 g of cell-scraped adipocytes (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "86196787-04cd-44cd-9173-5c8014dddfdb",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C26",
+      "claim": "Sodium alginate and microbial transglutaminase (mTG) as 'generally recognized as safe' (GRAS) materials in the United States were selected as binders for cultured adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sodium alginate and microbial transglutaminase (mTG) as 'generally recognized as safe' (GRAS) materials in the United States were selected as binders for cultured adipocytes, with precedent for alginate as a fat replacer and mTG as a binder in meat products (Figure 3\u2014figure supplement 3; ECFR, 1982; FDA, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to regulatory documents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "7018b641-1b34-47a1-9f7a-b959f3c46470",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C27",
+      "claim": "Alginate fat tissues containing 15- and 30-day adipocytes exhibited mean compressive stresses of 11.1 kPa (\u00b15.2) and 12.8 kPa (\u00b17.3) at 50% strain respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Alginate fat tissues containing 15- and 30-day adipocytes exhibited mean compressive stresses of 11.1 kPa (\u00b15.2) and 12.8 kPa (\u00b17.3) at 50% strain respectively (p=0.7304, Welch's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mechanical testing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "457f7ad0-05f8-4310-8078-c5f5f615960f",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C28",
+      "claim": "For 15- and 30-day mTG-based cultured fat tissues, the mean resistances to compression were 0.5 kPa (\u00b10.2) and 0.7 kPa (\u00b10.2) at 50% strain, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For 15- and 30-day mTG-based cultured fat tissues, the mean resistances to compression were 0.5 kPa (\u00b10.2) and 0.7 kPa (\u00b10.2) at 50% strain, respectively (p=0.1030, Welch's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mechanical testing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "cdccccdc-aa23-4799-9c56-760c7e9307ac",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C29",
+      "claim": "At 50% strain, mean compressive stresses for beef and pork fat tissues were 20.2 kPa (\u00b112.5) and 35.6 kPa (\u00b117.5), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "At 50% strain, mean compressive stresses for beef and pork fat tissues were 20.2 kPa (\u00b112.5) and 35.6 kPa (\u00b117.5), respectively, while the mean value for chicken fat tissue was 6.2 kPa (\u00b12.0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mechanical testing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "506477b3-f047-4c9a-9327-648261624fe5",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C30",
+      "claim": "The mean compressive stress for chicken fat tissue at 50% strain was 6.2 kPa (\u00b12.0).",
+      "claim_type": "EXPLICIT",
+      "source": "At 50% strain, mean compressive stresses for beef and pork fat tissues were 20.2 kPa (\u00b112.5) and 35.6 kPa (\u00b117.5), respectively, while the mean value for chicken fat tissue was 6.2 kPa (\u00b12.0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mechanical testing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "35a40225-80ab-4dcb-955d-a37172cc7a43",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C31",
+      "claim": "Lard and tallow samples had mean compressive stresses of 4.6 kPa (\u00b11.4) and 2.5 kPa (\u00b10.9) at 50% strain, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "mTG-based cultured fat tissues were more similar to rendered fats, although lard and tallow samples appeared stronger with mean compressive stresses of 4.6 kPa (\u00b11.4) and 2.5 kPa (\u00b10.9) at 50% strain, respectively (Figure 3F, ii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mechanical testing data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "6570a56f-6b3c-41b3-aeb1-575ae02e35ca",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C32",
+      "claim": "mTG fat tissues maintained some resistance during unloading, while rendered fats did not rebound after compression.",
+      "claim_type": "EXPLICIT",
+      "source": "mTG fat tissues maintained some resistance during unloading, while rendered fats did not rebound after compression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mechanical testing observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "c7e464d0-e879-4389-a400-97e920224d3a",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C33",
+      "claim": "Lipid supplementation has been reported to enhance adipogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid supplementation (e.g., with Intralipid) has been reported to enhance adipogenic differentiation and may thus be a useful strategy in enhancing fat cell lipid accumulation during cultured fat production (El Hadri et al., 2004; Ding et al., 2003; Kokta et al., 2008; Kim et al., 2015; Yanting et al., 2018; Malodobra-Mazur et al., 2019; Jurek et al., 2020; Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "a96526ae-74c3-47b6-b3ba-022f7c022eaa",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C34",
+      "claim": "Unsupplemented IVFs contained significantly less 18:1 and 18:2 versus 7D and 67D mouse fats.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupplemented IVFs contained significantly less 18:1 and 18:2 versus 7D and 67D mouse fats, as well as slightly less 18:0 and 18:3 than 67D mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lipidomics data comparing fatty acid compositions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "3b93f0b0-f904-4f15-b7e5-8e824ebb91aa",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C35",
+      "claim": "The addition of lipids (500\u20131000 \u00b5g/ml Intralipid) during cell culture altered adipocyte TAGs dose dependently.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of lipids (500\u20131000 \u00b5g/ml Intralipid) during cell culture altered adipocyte TAGs dose dependently, generally bringing FA compositions closer to that of the native fats largely through a reduction in 16:1 and increase in 18:1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lipidomics data showing dose-dependent changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "d790e88f-7acb-4833-9626-fbf673fb17b3",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C36",
+      "claim": "Intralipid-treated IVFs had elevated levels of 16:0 and 18 carbon FAs (18:0, 18:1, 18:2, 18:3), which correlates with the composition of soybean oil.",
+      "claim_type": "EXPLICIT",
+      "source": "Intralipid-treated IVFs had elevated levels of 16:0 and 18 carbon FAs (18:0, 18:1, 18:2, 18:3), which correlates with the composition of soybean oil, the major constituent of Intralipid (aside from water) (Supplementary file 3; Abdelghany et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lipidomics data and a citation about soybean oil composition.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "fdbd16b5-3c3b-4cbb-8d28-2a03911a842d",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C37",
+      "claim": "The increase in 18:3 in lipid supplemented adipocytes may reflect the uptake of alpha-linoleic acid from the Intralipid.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the increase in 18:3 in lipid supplemented adipocytes may reflect the uptake of alpha-linoleic acid from the Intralipid (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from lipidomics data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "8ece08da-5435-4696-b882-56be1cb4be2a",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C38",
+      "claim": "Unsupplemented IVFs contained low levels (2.9%\u00b10.1) of polyunsaturated FAs (PUFAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupplemented IVFs contained low levels (2.9%\u00b10.1) of polyunsaturated FAs (PUFAs), but this increased to 12.3% (\u00b12.7) with 1000 \u00b5g/ml of Intralipid, similar to that of 7D mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lipidomics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "641371e2-91af-46aa-bab1-1cd93497dfa4",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C39",
+      "claim": "PUFA levels increased to 12.3% (\u00b12.7) with 1000 \u00b5g/ml of Intralipid, similar to that of 7D mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupplemented IVFs contained low levels (2.9%\u00b10.1) of polyunsaturated FAs (PUFAs), but this increased to 12.3% (\u00b12.7) with 1000 \u00b5g/ml of Intralipid, similar to that of 7D mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lipidomics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "d822a247-2e9d-444e-9053-a92e58325713",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C40",
+      "claim": "Saturated FAs decreased from 48.2% (\u00b10.9, unsupplemented IVFs) to 39.9% (\u00b13.0, 1000 \u00b5g/ml Intralipid).",
+      "claim_type": "EXPLICIT",
+      "source": "PUFA increases for Intralipid IVFs were mirrored by a decrease in saturated FAs (SFAs), going from 48.2% (\u00b10.9, unsupplemented IVFs) to 39.9% (\u00b13.0, 1000 \u00b5g/ml Intralipid).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lipidomics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "bd1e38f0-b262-44ea-aa5e-28ff5dfeab99",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C41",
+      "claim": "Phospholipids have been reported to contribute significantly to meat flavor.",
+      "claim_type": "EXPLICIT",
+      "source": "As phospholipids have been reported to contribute significantly to meat flavor, we additionally looked at IVF phospholipid FAs (Mottram and Edwards, 1983; Huang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "c662dc0b-2eb2-4fff-8df3-a85cba405b2c",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C42",
+      "claim": "Sample groups cultured in adipogenic media with 2% FBS contained over 2\u00d7 fewer cells, yet had over 2\u00d7 the lipid accumulation, versus groups with 20% FBS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, sample groups cultured in adipogenic media with 2% FBS contained over 2\u00d7 fewer cells, yet had over 2\u00d7 the lipid accumulation, versus groups with 20% FBS (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "9d46e5d1-2356-4fc8-bc09-0f7c09ab8c1e",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C43",
+      "claim": "Lipids within cultured porcine adipocytes were multilocular, unlike native adipose from food animals (pig, chicken, cow).",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to native adipose from food animals (pig, chicken, cow), lipids within cultured porcine adipocytes were multilocular, unlike native adipose from food animals (pig, chicken, cow) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy images shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "05e52111-2315-4187-9a3c-ef6b8ffd25b7",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C44",
+      "claim": "In vitro and native porcine fats exhibited more similar FA profiles than murine cells, especially within the TAG fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike 3T3-L1s, in vitro and native porcine fats exhibited more similar FA profiles, especially within the TAG fractions (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lipidomics data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "5ccb8d29-54a1-4ea4-9919-ab4c014a4535",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C45",
+      "claim": "The only major difference observed between in vitro and native porcine fat samples was a lack of 20:4 (>10% difference) in the phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The only major difference observed between in vitro and native fat samples was a lack of 20:4 (>10% difference) in the phospholipids, with smaller differences observed for 18:0, 18:1, 16:0, also within the phospholipid fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lipidomics data comparing in vitro and native porcine fats.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "fdc466b8-1d9a-41f8-b821-ce6e4684329f",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C46",
+      "claim": "Extended 2D culture (30 days) of in vitro adipocytes resulted in the emergence of larger lipid droplets, a key trait of white adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that extended 2D culture (30 days) of in vitro adipocytes resulted in the emergence of larger lipid droplets, a key trait of white adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lipid droplet size data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "c9eaca6a-91f9-471a-a37f-d46c871769d0",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C47",
+      "claim": "Enhanced adipogenesis in low serum or serum-free media has been reported by numerous groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced adipogenesis in low serum or serum-free media has been reported by numerous groups; the diminished lipid accumulation found in adipocytes differentiated in high serum conditions (e.g., 20% in this study) may be due to factors in FBS, such as transforming growth factor \u03b2, that have been found to be pro-proliferative and anti-adipogenic (Jurek et al., 2020; Miti\u0107 et al., 2023; Lee et al., 2012; Entenmann and Hauner, 1996; Sandhu et al., 2017; Sprenger et al., 2021; Boone et al., 2000; Suryawan and Hu, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "864e6d5b-99f4-4ba2-ba77-55a72779c677",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C48",
+      "claim": "The diminished lipid accumulation found in adipocytes differentiated in high serum conditions may be due to factors in FBS, such as transforming growth factor \u03b2, that have been found to be pro-proliferative and anti-adipogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced adipogenesis in low serum or serum-free media has been reported by numerous groups; the diminished lipid accumulation found in adipocytes differentiated in high serum conditions (e.g., 20% in this study) may be due to factors in FBS, such as transforming growth factor \u03b2, that have been found to be pro-proliferative and anti-adipogenic (Jurek et al., 2020; Miti\u0107 et al., 2023; Lee et al., 2012; Entenmann and Hauner, 1996; Sandhu et al., 2017; Sprenger et al., 2021; Boone et al., 2000; Suryawan and Hu, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature and inference from experimental data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "57c2869c-d917-4f1a-83fe-d44b952c5cb7",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C49",
+      "claim": "Yorkshire pigs reportedly have no brown adipose tissue due to the lack of a functional UCP1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lipid morphology observed in the Yorkshire pig DFAT cells of this study likely represents an immature white adipocyte phenotype, as Yorkshire pigs reportedly have no brown adipose tissue (due to the lack of a functional UCP1 gene) (Zheng et al., 2017; Berg et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "5253351d-d79c-41a3-a1cd-9b35969a4cc7",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C50",
+      "claim": "Intralipid supplementation drastically increased porcine cell adipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in this study we found that Intralipid supplementation drastically increased porcine cell adipogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "1dc6d8cd-a751-4369-8b9b-5338845c4ce2",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C51",
+      "claim": "DFAT cells have been shown to accumulate more intracellular lipids than adipose-derived stromal vascular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, DFAT cells have been shown to accumulate more intracellular lipids than adipose-derived stromal vascular cells, making them a better choice for large-scale cultured fat production (Peng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "1a3c393f-ba8d-4b3b-b713-c18f5e942e1d",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C52",
+      "claim": "mTG has been shown to greatly strengthen protein-rich materials.",
+      "claim_type": "EXPLICIT",
+      "source": "As mTG has been shown to greatly strengthen protein-rich materials, the weaker mTG fat tissues may be due to a lack of extracellular protein available for crosslinking among the aggregated in vitro adipocytes (Broderick et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "93de54aa-cda0-46ef-8e0d-62ee14c585d4",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C53",
+      "claim": "The weaker mTG fat tissues may be due to a lack of extracellular protein available for crosslinking among the aggregated in vitro adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "As mTG has been shown to greatly strengthen protein-rich materials, the weaker mTG fat tissues may be due to a lack of extracellular protein available for crosslinking among the aggregated in vitro adipocytes (Broderick et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from mechanical testing data and knowledge about mTG.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "9fd25023-d89f-46e9-b56d-3a6b092e4cc0",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C54",
+      "claim": "ECM-promoting culture media components like ascorbic acid have been shown to improve in vitro adipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "It would also be interesting to investigate whether upregulating ECM deposition would improve mTG crosslinking, especially since ECM-promoting culture media components like ascorbic acid have also been shown to improve in vitro adipogenesis (Jurek et al., 2020; Cuaranta-Monroy et al., 2014; Liu et al., 2017; Kim et al., 2013; Thorrez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "728ba4a8-8831-47f6-b882-5ece5b60cb25",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C55",
+      "claim": "Rodents lacking dietary oleic acid (18:1 \u03c9-9) compensated with higher levels of 16:1, as endogenous production of oleic acid is insufficient to achieve the amounts typically found in normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that rodents lacking dietary oleic acid (18:1 \u03c9-9) compensated with higher levels of 16:1, as endogenous production of oleic acid is insufficient to achieve the amounts typically found in normal tissue (Bourre et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "7e1de38e-78c7-4e3e-9041-cfbb2c6f1ccd",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C56",
+      "claim": "The scarce presence of 18:2 for both murine and porcine cells is likely due an inability for mammals to synthesize linoleic acid (18:2 \u03c9-6).",
+      "claim_type": "EXPLICIT",
+      "source": "The scarce presence of 18:2 for both murine and porcine cells is likely due an inability for mammals to synthesize linoleic acid (18:2 \u03c9-6), which may highlight the importance of its supplementation during in vitro culture (Hansen, 1986; Malcicka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from lipidomics data and citations about mammalian fatty acid synthesis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "419c2bcc-6ddf-4a80-9773-4d5af2c6c2cd",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C57",
+      "claim": "Intralipid contains 44\u201362% linoleic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Intralipid treatment (44\u201362% linoleic acid) enriched 18:2 and raised overall PUFA levels for all in vitro adipocytes, with murine cells additionally achieving more similarity to native mouse fats in terms of 16:1 and 18:1 levels (Abdelghany et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation about Intralipid composition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "99f5b619-11e3-4599-86af-47c8b64ed67b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C58",
+      "claim": "The increase in 18:3 from Intralipid across murine and porcine adipocytes represents a potential enrichment in omega 3 PUFAs, as 18:3 in soybean oil is alpha-linoleic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in 18:3 from Intralipid across murine and porcine adipocytes represents a potential enrichment in omega 3 PUFAs, as 18:3 in soybean oil is alpha-linoleic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from lipidomics data and knowledge about soybean oil composition.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "3095374e-6ffd-457b-b35f-2a688684b44b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C59",
+      "claim": "20:4 levels in porcine IVFs were not uncommonly low, achieving the same value as reported elsewhere for pig fat (1.4% of all FAs).",
+      "claim_type": "EXPLICIT",
+      "source": "20:4 levels in porcine IVFs were not uncommonly low though, achieving the same value as reported elsewhere for pig fat (1.4% of all FAs) (Dinh et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "37552399-341e-4e1e-b70d-f1cf6b4ea661",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C60",
+      "claim": "High 20:4 in native pig samples could be related to how native pork fat FAs are very pliable based on the animal's diet.",
+      "claim_type": "EXPLICIT",
+      "source": "High 20:4 in our native pig samples could be related to how native pork fat FAs are very pliable based on the animal's diet (Wood et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference and a citation to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "64fadc6f-9e8c-431a-adfb-e3d092b8a7a9",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C61",
+      "claim": "Arachidonic acid has been linked with both inflammation and enhanced meat flavor.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, optimal intracellular 20:4 levels are unclear, as arachidonic acid has been linked with both inflammation and enhanced meat flavor (Calder, 2006; Adam et al., 2003; Takahashi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "2c86e77f-8ec5-4bbc-b51c-ec02c30a51af",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C62",
+      "claim": "Different strains of mice can have varying phospholipid compositions when fed the same diet.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that different strains of mice can have varying phospholipid compositions when fed the same diet (Hulbert et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "d9a0253c-2c6d-45cf-9d66-421ad3ec8f58",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C63",
+      "claim": "Aggregating in vitro adipocytes to generate cell-cultured animal fat using various binders unlocks a simplified approach of producing bulk cultured fat tissue with lower costs and direct scalability.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggregating in vitro adipocytes to generate cell-cultured animal fat using various binders unlocks a simplified approach of producing bulk cultured fat tissue with lower costs and direct scalability, addressing a key obstacle in cultivated meat production and contributing to the paradigm of food production using cell culture techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the overall findings and implications of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "150b0263-89bb-4a1d-ba90-7c57ebc2e4da",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C64",
+      "claim": "The adipocyte aggregation approach is cell type and species agnostic.",
+      "claim_type": "EXPLICIT",
+      "source": "The adipocyte aggregation approach is cell type and species agnostic, as demonstrated via the 3T3-L1s (adipogenic fibroblasts) and primary porcine DFAT cells (mesenchymal stem cell-like cells) in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data using different cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "e986855c-9f96-4ed7-bd1b-058e26df1c17",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C65",
+      "claim": "Incorporating cultured fats or fat tissues into plant-based meats permits the creation of hybrid products, where sustainable and low-cost plant ingredients are enhanced by the complex species-specific flavors that arise from added animal fat cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating cultured fats or fat tissues into plant-based meats permits the creation of hybrid products, where sustainable and low-cost plant ingredients are enhanced by the complex species-specific flavors that arise from added animal fat cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a potential application based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "be569f7e-6e70-4bd9-8a1a-ed263986066b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C66",
+      "claim": "Cultivated meat may be more sustainable than conventional meat production.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these approaches offer a potential path to producing meat (or realistic meat alternatives) without animal slaughter, while potentially being more sustainable than conventional meat production (Tuomisto et al., 2014; Tuomisto and de Mattos, 2011; Sun et al., 2015; Mattick et al., 2015; Odegard and Sinke, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature on sustainability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "ad4f1f26-ae73-43bf-9861-2bbbf589d48e",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C67",
+      "claim": "The degree of adipocyte lipid accumulation (cultured fat tissues produced using 15- versus 30-day-old adipocytes) did not have a significant impact on resistance to compression.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of adipocyte lipid accumulation (cultured fat tissues produced using 15- versus 30-day-old adipocytes) did not have a significant impact on resistance to compression (Figure 3Ei, Fi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mechanical testing data shown in Figure 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "571484c4-d945-4f42-905d-ef98369a7a91",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C68",
+      "claim": "The stress-strain profile of alginate-based cultured fat tissues were within the general range of livestock and poultry fat tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The stress-strain profile of alginate-based cultured fat tissues were within the general range of livestock and poultry fat tissues, while displaying similar hysteresis behavior during loading and unloading (Figure 3E, ii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mechanical testing data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "a5fce753-99e8-4ee7-8bd6-36f2c1fedda0",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C69",
+      "claim": "During cell scraping, cultured adipocytes aggregated by the mechanical action of the cell scraper appeared like fat tissue or lipoaspirate.",
+      "claim_type": "EXPLICIT",
+      "source": "During cell harvest, cultured adipocytes aggregated by the mechanical action of the cell scraper appeared like fat tissue or lipoaspirate (Figure 3\u2014figure supplement 1, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual observations shown in Figure 3\u2014figure supplement 1 and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "b128a985-b008-4752-8b69-be5f05819d3b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C70",
+      "claim": "Gentle treatment of the cells during culture media changes was key to preventing lift-off of lipid-filled adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "During cell culture, gentle treatment of the cells (e.g., when changing culture media) was key to preventing lift-off of lipid-filled adipocytes (detailed technique outlined in Video 1 and the Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations during cell culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "fb15a92d-710d-4847-acca-b94f7381dc9c",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C71",
+      "claim": "Adipocytes were scraped mechanically due to insufficient detachment when using Accumax.",
+      "claim_type": "EXPLICIT",
+      "source": "Adipocytes were scraped mechanically due to insufficient detachment when using Accumax (incubation time: >20 min, data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "75e90415-0976-40c0-9527-88d7f506370b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C72",
+      "claim": "Most studies that investigate 3T3-L1 adipogenesis in 2D are of limited culture duration (\u226415 days), with lipid accumulation manifesting as small lipid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Most studies that investigate 3T3-L1 adipogenesis in 2D are of limited culture duration (\u226415 days), with lipid accumulation manifesting as small lipid droplets (Sheng et al., 2014; Neal and Clipstone, 2002; Sharma et al., 2018; Wang et al., 2013; Pazienza et al., 2016; Bogan et al., 2001; Park et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "f19b591a-a6a8-4b8b-84c5-74a6d023e2ca",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C73",
+      "claim": "A multilocular phenotype can signify adipocyte browning, indicating the presence of beige or brown fat.",
+      "claim_type": "EXPLICIT",
+      "source": "A multilocular phenotype can signify adipocyte browning, indicating the presence of beige or brown fat (Jung et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "2b7a934f-6d41-4b8d-b3bc-5082b47fc0ad",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C74",
+      "claim": "DFAT cells have been reported to proliferate and accumulate lipids for at least 50 passages while maintaining expression of adipocyte-specific genes such as PPAR\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, porcine dedifferentiated fat (DFAT) cells were used as adipocytes as they been reported to proliferate and accumulate lipids for at least 50 passages while maintaining expression of adipocyte-specific genes such as PPAR\u03b3 (Nobusue and Kano, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "4c3f3f1e-d42d-4229-8be8-ddd792423b70",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C75",
+      "claim": "Intralipid supplementation appeared to rescue 18:2 and 18:3 levels of in vitro porcine adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intralipid supplementation appeared to rescue 18:2 and 18:3 levels (while also decreasing 20:1) of in vitro porcine adipocytes, but supplementation also caused FA levels to deviate from native pig fat in other ways (e.g., 15:0, 16:1, 20:3, 20:4, 22:4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lipidomics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "fdc215f7-e075-4240-bed0-657a6ca6d90d",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C76",
+      "claim": "In vitro and in vivo porcine adipocytes share similar ratios of MUFAs, PUFAs, and SFAs.",
+      "claim_type": "EXPLICIT",
+      "source": "When looking at FA saturation however, in vitro and in vivo porcine adipocytes appear to share similar ratios of MUFAs, PUFAs, and SFAs, with Intralipid treatment generally improving the similarity of in vitro and native fats (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lipidomics data shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "01a1cb39-7e42-4e8c-93fb-1349809db27b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C77",
+      "claim": "Lipid supplementation greatly increased primary porcine adipocyte lipid accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "When exploring the effects of Intralipid on primary porcine adipocytes, we observed that lipid supplementation greatly increased their lipid accumulation (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "70c9266f-2254-4392-b982-aa72a7520a00",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "claim_id": "C78",
+      "claim": "This approach of aggregating individual adipocytes into a bulk 3D tissue provides a scalable and versatile strategy to produce cultured fat tissue for food-related applications.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach of aggregating individual adipocytes into a bulk 3D tissue provides a scalable and versatile strategy to produce cultured fat tissue for food-related applications, thereby addressing a key obstacle in cultivated meat production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents the main conclusion of the study based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "617c392c-65fd-430d-8073-1ee23ad16f73",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a method to produce bulk cultured fat tissue by growing adipocytes in 2D culture and then mechanically harvesting and aggregating them into 3D constructs using food-grade binders (alginate or transglutaminase). This approach circumvents mass transport limitations inherent in direct 3D culture of macroscale tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C69, C70, and C71 collectively demonstrate a functional method for producing bulk fat tissue. The 2D culture approach with gentle handling (C70) followed by mechanical harvesting (C71) and aggregation with binders (C2) successfully produces macroscale constructs that visually resemble fat tissue (C69). The method is well-documented with visual evidence and procedural details.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "9e8fcc7e-c132-4114-bd6a-5a5bb7da1d6a",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Extended 2D culture (30 days) of murine 3T3-L1 adipocytes results in substantial lipid accumulation with larger lipid droplets resembling native white adipose tissue. At day 15, 81.6% of cells were PPAR\u03b3-positive, and 30-day adipocytes contained ~3\u00d7 more lipid per cell than 15-day adipocytes with mean droplet diameters of 11.1 \u00b5m vs 8.1 \u00b5m.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24, C46, and C72 provide converging evidence from immunofluorescence, quantitative lipid measurements, and morphological analysis. The data show clear adipogenic differentiation with time-dependent increases in lipid accumulation and droplet size. Statistical significance is reported (C21) and the results are supported by appropriate imaging (Figure 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cultured fat tissues exhibit mechanical properties comparable to native animal fat tissues, with tunability based on binder choice and concentration. Alginate-based tissues (11-13 kPa at 50% strain) fall within the range of native livestock fat (6-36 kPa), while mTG-based tissues (0.5-0.7 kPa) more closely resemble rendered fats (2.5-4.6 kPa).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C27-C32, C67, and C68 are supported by systematic uniaxial compression testing with appropriate controls (native tissues from multiple species). The data show that adipocyte maturation time (15 vs 30 days) does not significantly affect mechanical properties (C67, p>0.05), while binder type has a major effect. Stress-strain profiles and hysteresis behavior are documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "9439b3b4-e0d5-4b0a-9f6f-8450bb2d9444",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The mechanical properties of cultured fat tissues are tunable based on binder choice (alginate vs mTG) and concentration, using GRAS-approved food-grade materials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C26 are supported by mechanical testing data showing clear differences between alginate and mTG tissues, and by regulatory citations confirming GRAS status. The tunability is demonstrated through concentration experiments (Figure 3\u2014figure supplement 4) and the choice of food-safe materials is appropriate for the application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "77396c46-60db-47e5-8820-327e44f4b7d2",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lipid supplementation with Intralipid (soybean oil emulsion) during culture dose-dependently alters the fatty acid composition of murine adipocyte triacylglycerides. Supplementation increases 18:1, 18:2, and 18:3 levels while decreasing 16:1, bringing the FA profile closer to native mouse fat. PUFA levels increased from 2.9% to 12.3% with 1000 \u00b5g/ml Intralipid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C34-C40 are supported by comprehensive lipidomics analysis (LC-MS/MS) with triplicate samples. The dose-dependent effects are clearly demonstrated, and the changes correlate with soybean oil composition (C36). Statistical significance is reported with appropriate post-hoc tests. The data show that lipid supplementation can be used to tune fatty acid profiles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "c46b6608-bc9f-4af3-8f48-255ce9cdc451",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Porcine DFAT cells cultured in low serum (2% FBS) conditions show enhanced adipogenesis compared to high serum (20% FBS), with 2\u00d7 fewer cells but 2\u00d7 more lipid accumulation. However, cultured porcine adipocytes exhibit multilocular lipid morphology unlike the unilocular phenotype of native adipose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C43, C47, and C48 are supported by quantitative imaging data (Figure 5B) with statistical significance (p\u22640.01 and p\u22640.0001) and microscopy showing morphological differences (Figure 5D). The interpretation regarding serum factors is supported by multiple literature citations (C47, C48). The multilocular phenotype represents a limitation that is honestly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "5abc91c8-e740-4c9e-b815-2969708cb63d",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Primary porcine adipocytes exhibit fatty acid profiles more similar to native pig fat than murine 3T3-L1 cells, particularly in TAG fractions. The main difference is lower 20:4 (arachidonic acid) in phospholipids (>10% difference). Intralipid supplementation rescues 18:2 and 18:3 levels while maintaining similar ratios of MUFAs, PUFAs, and SFAs to native tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C45, C75, and C76 are supported by comprehensive lipidomics data (Figure 6) with statistical analysis. The closer similarity of porcine cells to native tissue compared to murine cells is clearly demonstrated. The effects of Intralipid supplementation are documented with both benefits (rescuing certain FAs) and trade-offs (deviations in other FAs) honestly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "30c45ca5-61cd-4b19-a566-863fa0ef437e",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Intralipid supplementation drastically increases lipid accumulation in primary porcine adipocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C77 are supported by microscopy data (Figure 6\u2014figure supplement 1) showing clear visual differences in lipid accumulation with Intralipid treatment. While quantitative data would strengthen the claim, the visual evidence is compelling and consistent with the lipidomics results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "6950303d-ee7d-432e-8e22-1f39edd12cc0",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The weaker mechanical properties of mTG-based cultured fat tissues compared to alginate-based tissues may be due to insufficient extracellular protein for transglutaminase crosslinking. ECM-promoting culture components like ascorbic acid could potentially improve both mTG crosslinking and adipogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52, C53, and C54 represent reasonable hypotheses supported by literature citations, but lack direct experimental validation in this study. The inference about protein availability (C53) is logical given mTG's mechanism, but no ECM quantification or ascorbic acid experiments were performed. This represents a limitation and suggests future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "1afa3ccd-d2fd-4c1e-971b-0fa3aee7b6d1",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The fatty acid profiles of cultured adipocytes reflect dietary/supplementation sources and mammalian biosynthetic limitations. High 16:1 in unsupplemented cells compensates for low dietary oleic acid (18:1), while low 18:2 reflects mammals' inability to synthesize linoleic acid. Intralipid (44-62% linoleic acid) enriches 18:2 and 18:3 (alpha-linolenic acid), potentially increasing omega-3 PUFAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 integrate experimental lipidomics data with established biochemical knowledge (supported by citations C55, C56, C57). The interpretations are consistent with known fatty acid metabolism and the composition of Intralipid. The inference about omega-3 enrichment (C58) is reasonable given that 18:3 in soybean oil is alpha-linolenic acid.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "8a925b05-add5-40ff-abfe-37eecacf1d89",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The 20:4 (arachidonic acid) levels in cultured porcine adipocytes (1.4% of total FAs) match reported values for pig fat, though native samples in this study showed higher levels possibly due to dietary influences. The optimal 20:4 level is unclear given its dual roles in inflammation and meat flavor enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 appropriately contextualize the 20:4 findings with literature comparisons (C59, C60, C61, C62). The authors acknowledge uncertainty about optimal levels (C61) and provide reasonable explanations for variability (C60, C62). The discussion is balanced and supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "5c234d9b-174f-4b88-b0c3-f06bf5dbf172",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The adipocyte aggregation approach provides a scalable, versatile, and simplified method for producing bulk cultured fat tissue for food applications. The method is cell type and species agnostic, demonstrated with both murine 3T3-L1 cells and primary porcine DFAT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C64, and C78 represent the main conclusions of the study, supported by the collective experimental evidence. The method's feasibility is demonstrated with two different cell types from different species (C64). While true industrial-scale production is not demonstrated, the conceptual scalability is reasonable given the 2D culture approach and simple aggregation method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "9bddd3fc-da55-4a95-ace3-94db5f6c1ff6",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "One T175 culture flask yields approximately 0.8 g of cell-scraped adipocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 provides practical yield information based on experimental observations. While noted as 'data not shown,' this is a straightforward measurement that informs scalability considerations. The claim is credible given the described methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "1bbabf4a-f109-425d-8e82-75b2de320c45",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Fat is critical for meat taste and texture, with optimal beef containing ~36% crude fat. Hundreds of volatile compounds released during cooking originate primarily from lipids, and fat is responsible for species-specific meat flavors that are difficult to replicate de novo in plant-based alternatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 and C12 establish the scientific rationale for the study through appropriate literature citations. These are well-established facts in food science that justify the importance of developing cultured fat for meat alternatives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "b850a405-27b7-4a17-b3fa-e1719aff8084",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cultured fat could be used to enhance plant-based meats by providing complex species-specific flavors, enabling hybrid products that combine sustainable plant ingredients with animal fat cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C65 represent reasonable applications of the technology supported by citations about the difficulty of replicating animal flavors (C12). While speculative regarding future implementation, the concept is logical and represents a valid potential use case for the developed technology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "4242cf70-01cf-4254-86bf-dc73bd164ea5",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Producing macroscale tissues faces major challenges due to mass transport limitations, with oxygen and nutrients diffusing only through several hundred microns of dense tissue. Current vascularization and perfusion strategies have significant scalability limitations for centimeter- to meter-scale tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 establish the technical problem that motivates the study's approach. All claims are supported by appropriate citations to tissue engineering literature. These represent established knowledge in the field and justify the need for alternative approaches like the one presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "b0674ac6-4a64-4d48-840c-6a40f6e44b57",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Native adipose tissue is a dense aggregation of lipid-filled adipocytes with sparse extracellular matrix, supporting the hypothesis that aggregating individual adipocytes could reproduce fat tissue properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by a citation to a histology textbook and represents established anatomical knowledge. This provides the biological rationale for the aggregation approach\u2014if native fat has minimal ECM, then simply aggregating adipocytes with minimal binder should be sufficient.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "fe660853-51ce-467f-a4ae-e221a1014c34",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Lipid supplementation has been reported to enhance adipogenic differentiation, and phospholipids contribute significantly to meat flavor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C41 are supported by multiple literature citations and provide rationale for the lipid supplementation experiments and phospholipid analysis performed in the study. These represent established knowledge that informs the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "f6783011-b0a5-440d-b4ed-3ff8d678f65b",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The multilocular phenotype observed in cultured porcine adipocytes likely represents immature white adipocytes rather than brown/beige fat, as Yorkshire pigs lack functional UCP1 and thus have no brown adipose tissue. DFAT cells can proliferate and accumulate lipids for at least 50 passages while maintaining adipogenic gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C73, and C74 are supported by appropriate literature citations. The interpretation of the multilocular phenotype (C49) is reasonable given the genetic background of Yorkshire pigs. The properties of DFAT cells (C74) justify their selection for this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "f9fef60b-f70a-4813-b84f-c2b2dc6cb32a",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "DFAT cells accumulate more intracellular lipids than adipose-derived stromal vascular cells, making them preferable for large-scale cultured fat production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by a literature citation and provides justification for the cell type selection. This represents prior knowledge that informed the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    },
+    {
+      "id": "f6b02fba-35d6-4d0f-a71e-c9bbfd562a95",
+      "content_id": "da26e867-0028-4fa5-98ac-a5a7e5be1498",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Cultivated meat may be more sustainable than conventional meat production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 is supported by citations to sustainability studies, but the word 'may' indicates uncertainty. The sustainability of cultivated meat depends on many factors (energy sources, scale, efficiency) that are not addressed in this study. This represents a potential benefit rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:23.343915Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f68ef27c-6ae5-4041-9817-cd40472d3700",
+      "result_id": "617c392c-65fd-430d-8073-1ee23ad16f73"
+    },
+    {
+      "claim_id": "28fc6ff3-f7ac-4cfc-a571-3b90b967277c",
+      "result_id": "617c392c-65fd-430d-8073-1ee23ad16f73"
+    },
+    {
+      "claim_id": "a5fce753-99e8-4ee7-8bd6-36f2c1fedda0",
+      "result_id": "617c392c-65fd-430d-8073-1ee23ad16f73"
+    },
+    {
+      "claim_id": "b128a985-b008-4752-8b69-be5f05819d3b",
+      "result_id": "617c392c-65fd-430d-8073-1ee23ad16f73"
+    },
+    {
+      "claim_id": "fb15a92d-710d-4847-acca-b94f7381dc9c",
+      "result_id": "617c392c-65fd-430d-8073-1ee23ad16f73"
+    },
+    {
+      "claim_id": "5dc00dee-6fae-43b6-85a9-f916dad5e38f",
+      "result_id": "9e8fcc7e-c132-4114-bd6a-5a5bb7da1d6a"
+    },
+    {
+      "claim_id": "f700521e-d4be-4c1c-a19b-f18d1ad7fbc2",
+      "result_id": "9e8fcc7e-c132-4114-bd6a-5a5bb7da1d6a"
+    },
+    {
+      "claim_id": "e92175af-4572-47e5-b1d6-aa27d50c9e88",
+      "result_id": "9e8fcc7e-c132-4114-bd6a-5a5bb7da1d6a"
+    },
+    {
+      "claim_id": "58af35ae-312c-4458-988f-941c87ce085f",
+      "result_id": "9e8fcc7e-c132-4114-bd6a-5a5bb7da1d6a"
+    },
+    {
+      "claim_id": "2947e047-1808-4381-83ee-35a5ec2704a2",
+      "result_id": "9e8fcc7e-c132-4114-bd6a-5a5bb7da1d6a"
+    },
+    {
+      "claim_id": "fdc466b8-1d9a-41f8-b821-ce6e4684329f",
+      "result_id": "9e8fcc7e-c132-4114-bd6a-5a5bb7da1d6a"
+    },
+    {
+      "claim_id": "75e90415-0976-40c0-9527-88d7f506370b",
+      "result_id": "9e8fcc7e-c132-4114-bd6a-5a5bb7da1d6a"
+    },
+    {
+      "claim_id": "383938a7-df57-496d-baf0-871ad0227d29",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "9d6ab2fc-53c1-41f6-945f-1fc065b526b5",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "7018b641-1b34-47a1-9f7a-b959f3c46470",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "457f7ad0-05f8-4310-8078-c5f5f615960f",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "cdccccdc-aa23-4799-9c56-760c7e9307ac",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "506477b3-f047-4c9a-9327-648261624fe5",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "35a40225-80ab-4dcb-955d-a37172cc7a43",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "6570a56f-6b3c-41b3-aeb1-575ae02e35ca",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "ad4f1f26-ae73-43bf-9861-2bbbf589d48e",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "571484c4-d945-4f42-905d-ef98369a7a91",
+      "result_id": "5fb2554a-d5f0-4aff-9856-def25ef3c64f"
+    },
+    {
+      "claim_id": "859ec857-f2bd-4243-a363-9233d7f4d319",
+      "result_id": "9439b3b4-e0d5-4b0a-9f6f-8450bb2d9444"
+    },
+    {
+      "claim_id": "86196787-04cd-44cd-9173-5c8014dddfdb",
+      "result_id": "9439b3b4-e0d5-4b0a-9f6f-8450bb2d9444"
+    },
+    {
+      "claim_id": "dc6abff0-5e5e-4b67-9a67-8b9d6cb946c7",
+      "result_id": "77396c46-60db-47e5-8820-327e44f4b7d2"
+    },
+    {
+      "claim_id": "a96526ae-74c3-47b6-b3ba-022f7c022eaa",
+      "result_id": "77396c46-60db-47e5-8820-327e44f4b7d2"
+    },
+    {
+      "claim_id": "3b93f0b0-f904-4f15-b7e5-8e824ebb91aa",
+      "result_id": "77396c46-60db-47e5-8820-327e44f4b7d2"
+    },
+    {
+      "claim_id": "d790e88f-7acb-4833-9626-fbf673fb17b3",
+      "result_id": "77396c46-60db-47e5-8820-327e44f4b7d2"
+    },
+    {
+      "claim_id": "fdbd16b5-3c3b-4cbb-8d28-2a03911a842d",
+      "result_id": "77396c46-60db-47e5-8820-327e44f4b7d2"
+    },
+    {
+      "claim_id": "8ece08da-5435-4696-b882-56be1cb4be2a",
+      "result_id": "77396c46-60db-47e5-8820-327e44f4b7d2"
+    },
+    {
+      "claim_id": "641371e2-91af-46aa-bab1-1cd93497dfa4",
+      "result_id": "77396c46-60db-47e5-8820-327e44f4b7d2"
+    },
+    {
+      "claim_id": "d822a247-2e9d-444e-9053-a92e58325713",
+      "result_id": "77396c46-60db-47e5-8820-327e44f4b7d2"
+    },
+    {
+      "claim_id": "c662dc0b-2eb2-4fff-8df3-a85cba405b2c",
+      "result_id": "c46b6608-bc9f-4af3-8f48-255ce9cdc451"
+    },
+    {
+      "claim_id": "9d46e5d1-2356-4fc8-bc09-0f7c09ab8c1e",
+      "result_id": "c46b6608-bc9f-4af3-8f48-255ce9cdc451"
+    },
+    {
+      "claim_id": "c9eaca6a-91f9-471a-a37f-d46c871769d0",
+      "result_id": "c46b6608-bc9f-4af3-8f48-255ce9cdc451"
+    },
+    {
+      "claim_id": "864e6d5b-99f4-4ba2-ba77-55a72779c677",
+      "result_id": "c46b6608-bc9f-4af3-8f48-255ce9cdc451"
+    },
+    {
+      "claim_id": "05e52111-2315-4187-9a3c-ef6b8ffd25b7",
+      "result_id": "5abc91c8-e740-4c9e-b815-2969708cb63d"
+    },
+    {
+      "claim_id": "5ccb8d29-54a1-4ea4-9919-ab4c014a4535",
+      "result_id": "5abc91c8-e740-4c9e-b815-2969708cb63d"
+    },
+    {
+      "claim_id": "4c3f3f1e-d42d-4229-8be8-ddd792423b70",
+      "result_id": "5abc91c8-e740-4c9e-b815-2969708cb63d"
+    },
+    {
+      "claim_id": "fdc215f7-e075-4240-bed0-657a6ca6d90d",
+      "result_id": "5abc91c8-e740-4c9e-b815-2969708cb63d"
+    },
+    {
+      "claim_id": "5253351d-d79c-41a3-a1cd-9b35969a4cc7",
+      "result_id": "30c45ca5-61cd-4b19-a566-863fa0ef437e"
+    },
+    {
+      "claim_id": "01a1cb39-7e42-4e8c-93fb-1349809db27b",
+      "result_id": "30c45ca5-61cd-4b19-a566-863fa0ef437e"
+    },
+    {
+      "claim_id": "1a3c393f-ba8d-4b3b-b713-c18f5e942e1d",
+      "result_id": "6950303d-ee7d-432e-8e22-1f39edd12cc0"
+    },
+    {
+      "claim_id": "93de54aa-cda0-46ef-8e0d-62ee14c585d4",
+      "result_id": "6950303d-ee7d-432e-8e22-1f39edd12cc0"
+    },
+    {
+      "claim_id": "9fd25023-d89f-46e9-b56d-3a6b092e4cc0",
+      "result_id": "6950303d-ee7d-432e-8e22-1f39edd12cc0"
+    },
+    {
+      "claim_id": "728ba4a8-8831-47f6-b882-5ece5b60cb25",
+      "result_id": "1afa3ccd-d2fd-4c1e-971b-0fa3aee7b6d1"
+    },
+    {
+      "claim_id": "7e1de38e-78c7-4e3e-9041-cfbb2c6f1ccd",
+      "result_id": "1afa3ccd-d2fd-4c1e-971b-0fa3aee7b6d1"
+    },
+    {
+      "claim_id": "419c2bcc-6ddf-4a80-9773-4d5af2c6c2cd",
+      "result_id": "1afa3ccd-d2fd-4c1e-971b-0fa3aee7b6d1"
+    },
+    {
+      "claim_id": "99f5b619-11e3-4599-86af-47c8b64ed67b",
+      "result_id": "1afa3ccd-d2fd-4c1e-971b-0fa3aee7b6d1"
+    },
+    {
+      "claim_id": "3095374e-6ffd-457b-b35f-2a688684b44b",
+      "result_id": "8a925b05-add5-40ff-abfe-37eecacf1d89"
+    },
+    {
+      "claim_id": "37552399-341e-4e1e-b70d-f1cf6b4ea661",
+      "result_id": "8a925b05-add5-40ff-abfe-37eecacf1d89"
+    },
+    {
+      "claim_id": "64fadc6f-9e8c-431a-adfb-e3d092b8a7a9",
+      "result_id": "8a925b05-add5-40ff-abfe-37eecacf1d89"
+    },
+    {
+      "claim_id": "2c86e77f-8ec5-4bbc-b51c-ec02c30a51af",
+      "result_id": "8a925b05-add5-40ff-abfe-37eecacf1d89"
+    },
+    {
+      "claim_id": "d9a0253c-2c6d-45cf-9d66-421ad3ec8f58",
+      "result_id": "5c234d9b-174f-4b88-b0c3-f06bf5dbf172"
+    },
+    {
+      "claim_id": "150b0263-89bb-4a1d-ba90-7c57ebc2e4da",
+      "result_id": "5c234d9b-174f-4b88-b0c3-f06bf5dbf172"
+    },
+    {
+      "claim_id": "70c9266f-2254-4392-b982-aa72a7520a00",
+      "result_id": "5c234d9b-174f-4b88-b0c3-f06bf5dbf172"
+    },
+    {
+      "claim_id": "ee1c5b39-f09c-4d65-8cc2-6fb87606c7a0",
+      "result_id": "9bddd3fc-da55-4a95-ace3-94db5f6c1ff6"
+    },
+    {
+      "claim_id": "aab2e1d0-2dfd-460f-a488-7434609f786b",
+      "result_id": "1bbabf4a-f109-425d-8e82-75b2de320c45"
+    },
+    {
+      "claim_id": "753fb7fd-2caf-48c0-83be-45e4bf5a0e6a",
+      "result_id": "1bbabf4a-f109-425d-8e82-75b2de320c45"
+    },
+    {
+      "claim_id": "bf9f1570-1df4-4d11-ae6f-8a0ab0a7dc00",
+      "result_id": "1bbabf4a-f109-425d-8e82-75b2de320c45"
+    },
+    {
+      "claim_id": "b27bad6a-18bc-4f24-a8cf-45d03813a45b",
+      "result_id": "1bbabf4a-f109-425d-8e82-75b2de320c45"
+    },
+    {
+      "claim_id": "62c2b222-a444-4057-991d-82eb82920fad",
+      "result_id": "1bbabf4a-f109-425d-8e82-75b2de320c45"
+    },
+    {
+      "claim_id": "89c5676c-d73a-4d5f-b23c-369604c17a39",
+      "result_id": "b850a405-27b7-4a17-b3fa-e1719aff8084"
+    },
+    {
+      "claim_id": "e986855c-9f96-4ed7-bd1b-058e26df1c17",
+      "result_id": "b850a405-27b7-4a17-b3fa-e1719aff8084"
+    },
+    {
+      "claim_id": "d61cf266-ccfe-4b57-bbff-d93d1e63683b",
+      "result_id": "4242cf70-01cf-4254-86bf-dc73bd164ea5"
+    },
+    {
+      "claim_id": "03bc8612-fb55-492b-9d71-01a5ea03a766",
+      "result_id": "4242cf70-01cf-4254-86bf-dc73bd164ea5"
+    },
+    {
+      "claim_id": "39ac76c0-d5d8-4077-b06d-bd85c4dd816f",
+      "result_id": "4242cf70-01cf-4254-86bf-dc73bd164ea5"
+    },
+    {
+      "claim_id": "50497422-9d1f-467e-874a-7b171352d8e0",
+      "result_id": "4242cf70-01cf-4254-86bf-dc73bd164ea5"
+    },
+    {
+      "claim_id": "a9bc5e26-7984-438d-99e1-6e8fc5faf981",
+      "result_id": "4242cf70-01cf-4254-86bf-dc73bd164ea5"
+    },
+    {
+      "claim_id": "2fded18c-a7ca-4585-b582-ab06333586a5",
+      "result_id": "4242cf70-01cf-4254-86bf-dc73bd164ea5"
+    },
+    {
+      "claim_id": "8461bf12-54ee-4177-b51c-a1081740c642",
+      "result_id": "b0674ac6-4a64-4d48-840c-6a40f6e44b57"
+    },
+    {
+      "claim_id": "c7e464d0-e879-4389-a400-97e920224d3a",
+      "result_id": "fe660853-51ce-467f-a4ae-e221a1014c34"
+    },
+    {
+      "claim_id": "bd1e38f0-b262-44ea-aa5e-28ff5dfeab99",
+      "result_id": "fe660853-51ce-467f-a4ae-e221a1014c34"
+    },
+    {
+      "claim_id": "57c2869c-d917-4f1a-83fe-d44b952c5cb7",
+      "result_id": "f6783011-b0a5-440d-b4ed-3ff8d678f65b"
+    },
+    {
+      "claim_id": "f19b591a-a6a8-4b8b-84c5-74a6d023e2ca",
+      "result_id": "f6783011-b0a5-440d-b4ed-3ff8d678f65b"
+    },
+    {
+      "claim_id": "2b7a934f-6d41-4b8d-b3bc-5082b47fc0ad",
+      "result_id": "f6783011-b0a5-440d-b4ed-3ff8d678f65b"
+    },
+    {
+      "claim_id": "1dc6d8cd-a751-4369-8b9b-5338845c4ce2",
+      "result_id": "f9fef60b-f70a-4813-b84f-c2b2dc6cb32a"
+    },
+    {
+      "claim_id": "be569f7e-6e70-4bd9-8a1a-ed263986066b",
+      "result_id": "f6b02fba-35d6-4d0f-a71e-c9bbfd562a95"
+    }
+  ],
+  "comparisons": []
+}

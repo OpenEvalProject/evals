@@ -1,0 +1,1703 @@
+{
+  "submission": {
+    "id": "7268e919-6d1d-4f0b-8806-6f90f0f75766",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:30:00.568712Z",
+    "updated_at": "2025-12-03T18:30:00.568712Z"
+  },
+  "content": [
+    {
+      "id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "submission_id": "7268e919-6d1d-4f0b-8806-6f90f0f75766",
+      "content_type": "manuscript",
+      "content_text": "# Future COVID19 surges prediction based on SARS-CoV-2 mutations surveillance\n\n## Authors\n\n- Fares Z Najar<sup>1</sup>\n- Evan Linde<sup>1</sup> ([ORCID: 0000-0002-2053-6721](https://orcid.org/0000-0002-2053-6721))\n- Chelsea L Murphy<sup>1</sup> ([ORCID: 0000-0001-5367-8593](https://orcid.org/0000-0001-5367-8593))\n- Veniamin A Borin<sup>1</sup>\n- Huan Wang<sup>3</sup>\n- Shozeb Haider<sup>3</sup> ([ORCID: 0000-0003-2650-2925](https://orcid.org/0000-0003-2650-2925))\n- Pratul K Agarwal<sup>1</sup> ([ORCID: 0000-0002-3848-9492](https://orcid.org/0000-0002-3848-9492)) \u2020\n\n### Affiliations\n\n1. High-Performance Computing Center, Oklahoma State University Stillwater United States ([ROR:01g9vbr38](https://ror.org/01g9vbr38))\n2. Department of Physiological Sciences, Oklahoma State University Stillwater United States ([ROR:01g9vbr38](https://ror.org/01g9vbr38))\n3. University College London School of Pharmacy, Pharmaceutical and Biological Chemistry London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n4. University College London Centre for Advanced Research Computing London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCOVID19 has aptly revealed that airborne viruses such as SARS-CoV-2 with the ability to rapidly mutate combined with high rates of transmission and fatality can cause a deadly worldwide pandemic in a matter of weeks (Plato et al., 2021). Apart from vaccines and post-infection treatment options, strategies for preparedness will be vital in responding to the current and future pandemics. Therefore, there is wide interest in approaches that allow predictions of increase in infections (\u2018surges\u2019) before they occur. We describe here real-time genomic surveillance particularly based on mutation analysis, of viral proteins as a methodology for a priori determination of surge in number of infection cases. The full results are available for SARS-CoV-2 at http://pandemics.okstate.edu/covid19/, and are updated daily as new virus sequences become available. This approach is generic and will also be applicable to other pathogens.\n\n## Introduction\n\nProtein and genome sequence analyses identify molecular level changes that enable viral adaptations for increased spread through the host population. Concrete evidence for a direct relationship between specific mutations and increase in rates of infection (and fatality) requires extensive laboratory studies that need significant time. The availability of unprecedented number of SARS-CoV-2 genome sequences is making possible identification of number and types of mutations, which in turn can provide vital knowledge in real time, crucial for decision making by health professionals for medical interventions. We are investigating several different approaches (synonymous, non-synonymous, and non-synonymous/synonymous ratio for the nucleotide sequences [Zhang et al., 2006] and conservative or radical substitutions for the amino acid sequences) for using number and types of mutations as a means to predict surge in infections as well as to monitor the changes in critical viral proteins. Recently, such analysis has been reported for single SARS-CoV-2 proteins (Kistler et al., 2022). Our approach, however, is based on the whole viral genome analysis and moreover it is performed continually in real time.\n\n## Materials and methods\n\nThe SARS-CoV-2 genomic sequences data and the number of COVID19 (Platto et al., 2021) sequences are continually obtained from the sources described below. The genomic sequences are carefully filtered for quality control and used for calculations of non-synonymous (Ka) and synonymous (Ks) mutation rates for each of the 26 proteins separately.\n\n### Data and data sources\n\nData for the number of reported COVID19 cases was accessed from Johns Hopkins University\u2019s Our World In Data project (https://ourworldindata.org/coronavirus-source-data) (Dong et al., 2020).\n\n### Genomic sequence data\n\nAn in-house pipeline of scripts (using Linux commands) was designed around the eUtils tools (Nadkarni and Parikh, 2012) from NCBI in order to download and process the SARS-CoV-2 records from NCBI\u2019s GenBank (https://www.ncbi.nlm.nih.gov/genbank/). Briefly, we used esearch and efetch commands to obtain these GenBank records. Search string \u2018SARS-CoV-2\u2019, refined to \u2018SARS-CoV-2 [ORGN]\u2019, was used to download the identified records in the GenBank text format. After workflow optimization, post May 2022, the search process used NCBI\u2019s newer datasets and dataformat command-line tools to identify sequences of interest while continuing to use the efetch tool to download records in the GenBank text format. Collectively as of November 21, 2022, a total of 6,468,196 records were searched and a total of 3,126,129 sequences matching the search criterion and passing the quality control steps were used for the results presented here .\n\n### Quality control\n\nIncomplete and ambiguous SARS-CoV-2 genomic sequences and records containing incomplete collection dates were filtered out using the designed pipeline. For the records passing the quality control steps, the nucleotide sequence for each gene was extracted. A non-redundant version of the extracted nucleotide sequences was derived and translated to the cognate amino acid sequences. In the final phase of the pipeline, the accession numbers for each viral isolate with the nucleotide sequences, the associated protein sequences, the collection dates, and the country of collection were stored in SQLite relational database where they were indexed with unique identifiers to allow the retrieval and analysis of any part of the parsed data.\n\n### Frequency of data updates\n\nAs of July 2022, the described sources are monitored daily for updates. New data is continually downloaded and used for analysis.\n\n### Alignments and non-synonymous (Ka), synonymous (Ks) calculations\n\nThe translated proteins and nucleotides sequences were aligned using clustal-omega (Sievers and Higgins, 2014) and Pal2Nal (Suyama et al., 2006) programs to align the codons with their associated amino acids. The resulting alignments were then processed through the program kaks_calculator (Zhang, 2022) to calculate non-synonymous (Ka) and synonymous (Ks) values, and their ratio (Ka/Ks) which were used to assess the mutational adaptation for each protein. The parameters required for the kaks_calculator were based on the maximum-likelihood method derived from the work of Goldman and Yang, 1994. The first reported SARS-CoV-2 genomic sequence (\u2018the Wuhan sequence\u2019) (Wu et al., 2020) was used as a reference for all the Ka, Ks, and Ka/Ks calculations. We explored the possibility of using other sequence(s) as references (e.g., the previous day or the previous month), however, due to the increasing number of variations available every day, it is difficult to select a representative sequence on an ongoing basis. It was also found that using the Wuhan sequence as a reference provided the most intuitive and interpretable results.\n\n### List of proteins investigated\n\nThe number of unique nucleotide sequences observed till date for each of the 26 proteins/open reading frames (ORFs) are listed in Table 1. The full results are available on the project website https://pandemics.okstate.edu/covid19/, which are continually updated.\n\n**Table 1.**\n Number of unique records for the 26 proteins/open reading frames (ORFs).Total number of quality-controlled SARS-CoV-2 sequences analyzed: 3,126,129 (as of November 21, 2022). Only three proteins showing the most relevant results and one other protein (marked by *) for comparison are depicted in the figures. These proteins are shown in bold.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Unique records</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Envelope protein</td>\n      <td>1314</td>\n    </tr>\n    <tr>\n      <td>Membrane protein</td>\n      <td>11,338</td>\n    </tr>\n    <tr>\n      <td>Nucleocapsid protein</td>\n      <td>70,579</td>\n    </tr>\n    <tr>\n      <td>Spike protein</td>\n      <td>188,166</td>\n    </tr>\n    <tr>\n      <td>Non-structural protein 1 (NSP1), leader protein</td>\n      <td>11,656</td>\n    </tr>\n    <tr>\n      <td>NSP2</td>\n      <td>67,837</td>\n    </tr>\n    <tr>\n      <td>NSP3</td>\n      <td>245,627</td>\n    </tr>\n    <tr>\n      <td>NSP4</td>\n      <td>31,257</td>\n    </tr>\n    <tr>\n      <td>NSP5, 3C-like proteinase</td>\n      <td>11,879</td>\n    </tr>\n    <tr>\n      <td>NSP6</td>\n      <td>16,479</td>\n    </tr>\n    <tr>\n      <td>NSP7</td>\n      <td>1304</td>\n    </tr>\n    <tr>\n      <td>NSP8</td>\n      <td>4490</td>\n    </tr>\n    <tr>\n      <td>NSP9</td>\n      <td>2848</td>\n    </tr>\n    <tr>\n      <td>NSP10</td>\n      <td>2429</td>\n    </tr>\n    <tr>\n      <td>NSP11</td>\n      <td>88</td>\n    </tr>\n    <tr>\n      <td>NSP12, RNA-dependent RNA polymerase (RDRP)*</td>\n      <td>60,575</td>\n    </tr>\n    <tr>\n      <td>NSP13, helicase</td>\n      <td>35,421</td>\n    </tr>\n    <tr>\n      <td>NSP14, 3'-to-5' exonuclease</td>\n      <td>28,501</td>\n    </tr>\n    <tr>\n      <td>NSP15, endoRNAse</td>\n      <td>12,901</td>\n    </tr>\n    <tr>\n      <td>NSP16, 2'-O-ribose methyltransferase</td>\n      <td>7636</td>\n    </tr>\n    <tr>\n      <td>ORF3a</td>\n      <td>41,694</td>\n    </tr>\n    <tr>\n      <td>ORF6</td>\n      <td>2117</td>\n    </tr>\n    <tr>\n      <td>ORF7a</td>\n      <td>9312</td>\n    </tr>\n    <tr>\n      <td>ORF7b</td>\n      <td>1368</td>\n    </tr>\n    <tr>\n      <td>ORF8</td>\n      <td>7036</td>\n    </tr>\n    <tr>\n      <td>ORF10</td>\n      <td>710</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results\n\nIt was found that collective non-synonymous mutations in key proteins of SARS-CoV-2 showed significant increase 10\u201314 days before the rapid rise in COVID19 cases, particularly related to the surges that occurred after the emergence of Gamma, Delta, Omicron, and BA.5 variants (Figure 1 and the related Figure 1\u2014figure supplement 1 with the unnormalized results). At present, over 6.4 million SARS-CoV-2 genome sequences collected all over the world are available from GenBank (https://www.ncbi.nlm.nih.gov/sars-cov-2/), which were used for analysis of 26 SARS-CoV-2 proteins, including the structural (spike, envelope, membrane, nucleocapsid) proteins, non-structural proteins (NSPs), and ORFs. Note, our analysis was performed with the first reported (\u2018Wuhan\u2019) SARS-CoV-2 sequence as a reference (Wu et al., 2020). In other words, the computed mutations are calculated in comparison to this reference sequence. The reason for an increase in mutations ahead of a surge is the search for adaptation against the acquired immunity (or gain in function) in either a single protein or a combination of proteins. The case of the Omicron variant indicates the development of the most drastic changes in several different proteins, which coincided with the largest increase in rate of infections (Figure 1). Non-synonymous mutations (Ka) in several proteins show significant increase before the increase in rate of infections (or surges), therefore, allowing a means for surge prediction.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82980/elife-82980-fig1-v2.jpg)\n\n**Figure 1.:** Non-synonymous mutations over the course of the COVID19 outbreak were identified by analysis of 6.4 million sequences. Gray dots indicate individual mutations, while black lines show weighted means for each day. Red lines show new COVID19 cases (averaged weekly) across the world. The green arrows mark the time when new mutations occurred in significant numbers before the outbreaks, allowing prediction of future outbreaks. The mutation values have been normalized using average of all mutations in the year 2020 (the first full year of the pandemic) as 1 (marked by dashed lines). Raw results are available in Figure 1\u2014figure supplement 1. Values of 0 indicate same sequence as the Wuhan sequence, while larger values indicate more mutations. Note that each gray dot corresponds to a unique sequence, and there can be multiple records showing the same mutation. The weighted mean for the day is calculated by using all sequences reported for the day. The peaks for COVID19 cases are labeled with prevalent variants. Alpha/Beta, Omicron, and Omicron BA.2, BA.5 were the prevalent variants at the time of labeled peaks. For the two peaks in 2021 the case was less clear, with Gamma and Delta variants being observed at different times in different parts of the world.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82980/elife-82980-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** See Figure 1 in the main manuscript for more details. Here, the raw results for the four proteins are plotted for the non-synonymous mutations. Note that the same y-axis scale is used for comparison of the mutations across all the four proteins shown.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82980/elife-82980-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** This commonly used indicator did not provide a reliable signal for surge prediction for most proteins. The ratio for only the membrane protein shows increase before the surges associated with some variants. The information from this ratio can be used as a secondary signal to support the primary signal from Ka.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82980/elife-82980-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The rate is calculated as a numerical derivative of data shown in Figure 1\u2014figure supplement 1. The rate shows most noticeable increase before the Omicron surge, other periods are inconclusive. Note that the nature of ongoing current data is expected to be noisy (few samples, weightings that change over days), therefore, the rate of mutations appears to be unreliable in predicting surges.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82980/elife-82980-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The quantities shown here are same as depicted in Figure 1 (main manuscript) and Figure 1\u2014figure supplements 2 and 3. See the legends of other figures for details.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/82980/elife-82980-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** The number of infection cases showed a sustained increase after the issue of our watch on June 29. This watch was elevated to a warning on July 14 (note, warning is considered more severe than a watch) and the number of cases showed a further increase. The warning was removed on August 30, 2022. The number of cases peaked roughly a month after our watch was issued.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/82980/elife-82980-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The number of infection cases showed a sustained increase in Europe and several individual countries, after we issued our watch. The data did not warrant a further elevation and this watch was eventually removed on November 14, 2022.\n\n### Use of mutational rates as a surge predictor\n\nIn addition to using non-synonymous mutations, a number of other metrics were also investigated for a reliable prediction signal. In particular, the commonly used non-synonymous to synonymous mutations ratio, Ka/Ks (Figure 1\u2014figure supplement 2), and the rate of mutations (derivative of observed number of mutations with respect to time) (Figure 1\u2014figure supplement 3) were also investigated in detail for suitability as a signal for surge prediction. As seen in Figure 1\u2014figure supplement 2, Ka/Ks did not provide a reliable surge prediction signal. Figure 1\u2014figure supplement 3 shows rate of mutations (calculated as a numerical derivative). For the case of Omicron surge, the proteins did show increased rate of mutations, however, for all other cases a clear signal was absent. Furthermore, the rate of mutations approach presented two additional challenges. First, a number of instances were observed where the rate of mutations increased but did not show increase in reported infections (false positive signal). Second, the nature of incoming genomic data is generally noisy (due to smaller number of samples and weighting of different mutations shows large variations) and changes quickly, therefore, the ongoing most recent rate of mutations is very noisy as well. It was concluded that at this stage, rate (derivative) of mutations is not a reliable signal for surge prediction. In the future, this could be revisited with more stable reporting of genomic sequences with shorter sample collection to sequence publication timeframes. Figure 1\u2014figure supplement 4 presents side-by-side comparison of the metrics investigated. Overall, it appears that collective non-synonymous mutations (Ka) provides the most reliable signal for surge prediction. In the remaining text, we discuss the key results and their importance.\n\n### Spike protein\n\nSpike protein interacts with the angiotensin-converting enzyme 2 receptor and plays a vital role in infecting the human cells (Xia, 2021). Spike protein has been the target of mRNA-based vaccines. Viral sequences show significant changes in synonymous and non-synonymous mutations in the spike protein (188,166 unique sequences observed so far), with large increases ahead of the surge in reported human infections, most noticeably with the surges associated with the Gamma/Delta and the Omicron variants (Figure 1A). It is important to note that the mutations show increase 10\u201314 days before the increase in human infections. It is also interesting to note that the synonymous mutations (data available on the website) show decrease post surges. The decrease in mutations prior to the Omicron BA.2 surge corresponds to reversal mutations (returning to reference sequence). However, at present the non-synonymous and synonymous mutations post the Omicron variant remain elevated, more so than any period during the COVID19 outbreak.\n\n### Proteins showing significant mutations\n\nIn addition to the spike protein, SARS-CoV-2 membrane (Lu et al., 2021; Figure 1B, 11,338 unique sequences observed so far) and envelope (Zheng et al., 2021; Figure 1C, 1314 unique sequences observed so far) proteins have also shown significant mutations, starting just before the Omicron variant (November 2021 onward). For the case of membrane protein, there was a significant increase that started in the Gamma/Delta variants (June 2021 onward) and further increased just before the BA.5 surge. The spike, membrane, and envelope proteins are all located on the surface of SARS-CoV-2 and potentially interact with the components of the immune system. The large increase in mutations in all these external proteins assumes importance in post-vaccination period (discussed further below).\n\n### Other proteins\n\nFor comparison, Figure 1D shows mutations from RNA-dependent RNA polymerase (RDRP, 60,575 unique sequences observed so far), which has been targeted for development of antiviral drug therapies. Till present, RDRP has shown comparatively lower magnitude of non-synonymous mutations. Note that gray dots are individual mutations, the mean (black line) is weighted by number of sequences for each day by the mutations. Significant increases in mutations are also observed in NSPs 1, 4, 6, 13, 15, ORFs 6, 7a, and 7b (data available on the project website). Overall, this analysis allows us to monitor ongoing mutations in different proteins; when rapid rise is observed over a short period of time, we issue surveillance watches and warnings (reserved for most extreme cases) for new possible variants with combination of proteins showing new mutations.\n\n### Vaccination and mutational frequencies\n\nWidespread vaccination against SARS-CoV-2 (December 2020 onward) coincides with significant increase in mutation rates of several SARS-CoV-2 proteins. Spike, membrane, and envelope proteins have shown rapid mutations especially in the Omicron variant (gray dots in Figure 1). This is possibly due to viral adaptations under the selective pressure exerted by the vaccine, as a significant number of mutations were observed in 2021, especially for the spike protein (gray dots in Figure 1A indicate spike protein has mutated much more than any other protein). The long-term effectiveness of mRNA-based SARS-CoV-2 vaccines remains unknown. After the initial regimen of two doses, the administration of additional booster (third and fourth) doses has decreased due to improvement in COVID19 fatality rates as well as political reasons (Sabahelzain et al., 2021). This situation raises concerns. Other proteins have shown reversal mutations (higher similarity with the reference sequence) after periods of significant increase in mutations, however, post vaccination the significant mutations observed in the spike, envelope, and membrane protein related to the Omicron variant remain at extremely elevated levels. As Omicron, BA.2, BA.5, and subsequent variants are showing increased rates of transmission, gain or improvement of function in other proteins could lead to emergence of newer variants of concern. Over long term this needs to be addressed by vaccines with longer periods of effectiveness and post-infection treatment options including antiviral drugs.\n\n### Surge prediction\n\nThe methodology presented here allows monitoring the potential increase in reported number of human infections. To date, spike protein has shown the most direct correlation in the rate of non-synonymous mutations and the rates of human infection. In particular, in the case of Omicron variant and also the Gamma variant, spike protein showed rapid increase in mutations about 10\u201314 days ahead of time. Furthermore, membrane protein showed rapid mutations before surge related to BA.5. Therefore, such increase in mutations serves as an indication of upcoming surges. For example, we issued a surge watch on the website on June 29, 2022, which was converted to a warning on July 14. This was confirmed by increase in infection cases worldwide throughout July (see Figure 1\u2014figure supplement 5). Further, we issued an additional warning on September 7, 2022, which was confirmed by surge in several European countries, including France, United Kingdom, Germany, and Italy (see Figure 1\u2014figure supplement 6).\n\nThe role of different (or dominant) SARS-CoV-2 variants in major surges is unclear at this time and needs further research. Different variants have been prevalent in different geographic regions at different times over the course of COVID19 outbreak, therefore, it is difficult to assign the surges to individual variants. In particular, Gamma and Delta variants were both prevalent in different countries in 2021. We are working on enabling this analysis by geographic locations and the results will be available through the website. However, at present our analysis is able to make predictions about collective surges before they occur, as illustrated by the case of BA.5.\n\nIn the future, a number of factors could affect the performance of the presented approach. In particular, as the pandemic situation has improved in the second half of 2022, the number of tests being performed and the sequences being deposited into public repositories have decreased. Furthermore, it is widely being discussed that the population is showing increased immunity against the virus due to vaccination and naturally acquired immunity. The presented approach is dependent on availability of sequences, therefore, we hope that scientific community will continue to urge the medical community and public health agencies to commit resources to sequencing the samples from COVID19 positive patients on a regular basis. Nonetheless, even with availability of smaller number of sequences, our approach is weighted by mutations and percentage of sequences showing non-synonymous mutations. Therefore, whenever new mutations show up in large percentages, our approach will still be able to work. On the other hand, viruses continue to evolve and if the population acquires large-scale immunity leading to drastic reduction in number of infections, our surveillance approach would still allow preparation in cases of significant viral genome changes (such as going from SARS-CoV to SARS-CoV-2) whenever they occur and lead to the possibility of another major outbreak.\n\n## Discussion\n\nThe methodology and the website described here provide real-time mutational changes of 26 SARS-CoV-2 proteins and ORFs. The changes in non-synonymous mutations correlate with the increase in reported cases of infections. Apart from identifying mutations of concern for in-depth scientific studies, the website is intended to keep the medical community informed about potential upcoming surges. Warnings of increase in mutations and expected surges are displayed on the website (and also available through email alerts). It should be noted that this real-time analysis is dependent on the various health labs and medical facilities for swiftly depositing the viral genome sequences into the public databases such as the GenBank. The shorter the lag time in depositing the sequences by the wider community, more accurate and effective the prediction capabilities of our approach and the website will be.\n",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "7e938f18-95cc-4700-9f4f-f2967378ec4f",
+      "submission_id": "7268e919-6d1d-4f0b-8806-6f90f0f75766",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jameel Iqbal, DaVita Labs United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82980.sa0](https://doi.org/10.7554/eLife.82980.sa0)\n\nThis paper details the creation and data behind the website http://pandemics.okstate.edu/covid19/. The authors explore if there is a cause and effect between the detection of unusually increased mutation activity in the genomic surveillance databases and subsequent near-term surges in SARS-CoV-2 case numbers.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jameel Iqbal, DaVita Labs United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82980.sa1](https://doi.org/10.7554/eLife.82980.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Future COVID19 surges prediction based on SARS-CoV-2 mutations surveillance\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Update the manuscript to include recent prediction/performance data on the Omicron variants.\n\n2) Please address in detail all the recommendations made by the two reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nThe following should be addressed:\n\nThe paper notes that the ratio of non-synonymous to synonymous mutations (ka/ks) which is typically used, did not provide clear trends.\n\nIdeally, these would be plotted against the best model that the authors are proposing. Separate graphs fail to demonstrate where one model fails and another succeeds.\n\nThe paper has numerous typos and careful proofreading is warranted. For example, line 170 \"Therefore, such increase is mutations serve\" should read \"in\"\n\nLine 182 \"reported cases of infections. Apart from identifying mutations of concerns for in-depth scientific studies\" should read \"concern\"\n\nLine 183 \"the website is intended to keep the medical community informed about the potential surges.\" should read \"about potential\" without \"the\".\n\nAdditionally, potentially off-putting text should be rephrased. For example, line 157 \"improvement in COVID-19 fatality rates as well as political reasons. This situation raises concerns.\" should be re-phrased to eliminate politics as a conjecture unless there is a documented reference to such.\n\nReviewer #2 (Recommendations for the authors):\n\nThis work suggests an interesting approach to stay ahead of the virological case curve but is too preliminary. The manuscript itself doesn't make any firm conclusions as to which protein or set of proteins is the most predictive. The claim of 14 days is hard to verify from the data provided in Figure 1 and is likely restricted to the detection of the Omicron variant. Furthermore, the method does not do a good job of predicting the variants evolving from the Omicron variant, suggesting that the baseline comparison needs to be refreshed. Given that the authors' focus is on infectivity, perhaps a more targeted focus at receptor binding domains of the spike protein may provide a more robust method, similarly providing comparisons based on major locations of the world (e.g. US, Europe, South Africa, India) might provide cleaner data as it could detect the local emergence of strains. The authors should also discuss the usefulness of such an approach in light of increased population immunity and decline in testing, which will negate the advantage of sequencing over case detection.\n",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d3ca8b74-51dd-4d4f-bfdc-81efc4660b71",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C1",
+      "claim": "Airborne viruses such as SARS-CoV-2 with the ability to rapidly mutate combined with high rates of transmission and fatality can cause a deadly worldwide pandemic in a matter of weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID19 has aptly revealed that airborne viruses such as SARS-CoV-2 with the ability to rapidly mutate combined with high rates of transmission and fatality can cause a deadly worldwide pandemic in a matter of weeks (Plato et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Plato et al., 2021, which provides scholarly support for this assertion about SARS-CoV-2's pandemic potential.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "b9cc0b9d-7e47-4ed7-a805-4aee9bcdfceb",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C2",
+      "claim": "Real-time genomic surveillance based on mutation analysis of viral proteins can be used for a priori determination of surge in number of infection cases.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe here real-time genomic surveillance particularly based on mutation analysis, of viral proteins as a methodology for a priori determination of surge in number of infection cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the manuscript describing their methodological approach. The claim is supported by data presented in the figures showing correlations between mutations and surges.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "d6a4a90f-3dcc-488f-a5cd-c13c8dca64f9",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C3",
+      "claim": "The full results for SARS-CoV-2 are available at http://pandemics.okstate.edu/covid19/ and are updated daily as new virus sequences become available.",
+      "claim_type": "EXPLICIT",
+      "source": "The full results are available for SARS-CoV-2 at http://pandemics.okstate.edu/covid19/, and are updated daily as new virus sequences become available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the availability and update frequency of their results on a specific website.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "b6d5d8b0-6798-4d33-b8f3-15a0d083b6bc",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C4",
+      "claim": "The genomic surveillance approach is generic and will be applicable to other pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach is generic and will also be applicable to other pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the generalizability of their approach to other pathogens beyond SARS-CoV-2.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "c035cb04-0899-4acc-a4b8-8f51840007a3",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C5",
+      "claim": "Protein and genome sequence analyses identify molecular level changes that enable viral adaptations for increased spread through the host population.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein and genome sequence analyses identify molecular level changes that enable viral adaptations for increased spread through the host population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws on established scientific knowledge about how sequence analysis can reveal viral adaptations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "9e3ce91d-6427-485f-9291-48fb63414a75",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C6",
+      "claim": "Concrete evidence for a direct relationship between specific mutations and increase in rates of infection (and fatality) requires extensive laboratory studies that need significant time.",
+      "claim_type": "EXPLICIT",
+      "source": "Concrete evidence for a direct relationship between specific mutations and increase in rates of infection (and fatality) requires extensive laboratory studies that need significant time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about the requirements for establishing causal relationships in virology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "4424a4bf-5de7-47b8-88ef-91c64a2d60e0",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C7",
+      "claim": "The availability of unprecedented number of SARS-CoV-2 genome sequences is making possible identification of number and types of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The availability of unprecedented number of SARS-CoV-2 genome sequences is making possible identification of number and types of mutations, which in turn can provide vital knowledge in real time, crucial for decision making by health professionals for medical interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data described in the manuscript showing analysis of over 6.4 million sequences.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "109c50e3-7d8a-4bec-a5b4-fc4f523abbe7",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C8",
+      "claim": "The authors are investigating several different approaches (synonymous, non-synonymous, and non-synonymous/synonymous ratio for the nucleotide sequences and conservative or radical substitutions for the amino acid sequences) for using number and types of mutations as a means to predict surge in infections.",
+      "claim_type": "EXPLICIT",
+      "source": "We are investigating several different approaches (synonymous, non-synonymous, and non-synonymous/synonymous ratio for the nucleotide sequences [Zhang et al., 2006] and conservative or radical substitutions for the amino acid sequences) for using number and types of mutations as a means to predict surge in infections as well as to monitor the changes in critical viral proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approaches being investigated, with citation support for the Ka/Ks ratio approach.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "300a4e7b-e246-457b-8db3-703c59dc7f11",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C9",
+      "claim": "Recently, mutation analysis has been reported for single SARS-CoV-2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, such analysis has been reported for single SARS-CoV-2 proteins (Kistler et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kistler et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "bdcb494a-7b00-4d28-a2a2-c34189e77b67",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C10",
+      "claim": "The authors' approach is based on the whole viral genome analysis and is performed continually in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach, however, is based on the whole viral genome analysis and moreover it is performed continually in real time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key distinguishing feature of their approach compared to prior work, supported by their data collection and analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "a87ab4f6-539f-4f0d-b4a2-7ded3b71a133",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C11",
+      "claim": "Data for the number of reported COVID19 cases was accessed from Johns Hopkins University's Our World In Data project.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for the number of reported COVID19 cases was accessed from Johns Hopkins University's Our World In Data project (https://ourworldindata.org/coronavirus-source-data) (Dong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about their data source, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "42afe259-c7cf-4a19-8ced-69d5ce16ae07",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C12",
+      "claim": "An in-house pipeline of scripts was designed around the eUtils tools from NCBI to download and process SARS-CoV-2 records from NCBI's GenBank.",
+      "claim_type": "EXPLICIT",
+      "source": "An in-house pipeline of scripts (using Linux commands) was designed around the eUtils tools (Nadkarni and Parikh, 2012) from NCBI in order to download and process the SARS-CoV-2 records from NCBI's GenBank (https://www.ncbi.nlm.nih.gov/genbank/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes their computational methodology with citation support for the eUtils tools.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "504e99c1-11a0-42b4-a544-0edcdf5e5e19",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C13",
+      "claim": "As of November 21, 2022, a total of 6,468,196 records were searched and a total of 3,126,129 sequences matching the search criterion and passing the quality control steps were used for the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively as of November 21, 2022, a total of 6,468,196 records were searched and a total of 3,126,129 sequences matching the search criterion and passing the quality control steps were used for the results presented here .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the data analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "833b4252-141a-43d8-80a9-9676f66810df",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C14",
+      "claim": "Incomplete and ambiguous SARS-CoV-2 genomic sequences and records containing incomplete collection dates were filtered out using the designed pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "Incomplete and ambiguous SARS-CoV-2 genomic sequences and records containing incomplete collection dates were filtered out using the designed pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes their quality control methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "3cb2e4cf-cd55-4863-8f03-9db982938776",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C15",
+      "claim": "As of July 2022, the described sources are monitored daily for updates.",
+      "claim_type": "EXPLICIT",
+      "source": "As of July 2022, the described sources are monitored daily for updates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about their data monitoring frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "eaa67e9e-f418-433d-b002-47aca99b11a0",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C16",
+      "claim": "The translated proteins and nucleotides sequences were aligned using clustal-omega and Pal2Nal programs.",
+      "claim_type": "EXPLICIT",
+      "source": "The translated proteins and nucleotides sequences were aligned using clustal-omega (Sievers and Higgins, 2014) and Pal2Nal (Suyama et al., 2006) programs to align the codons with their associated amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes their alignment methodology with citations to the software tools used.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "6e95c583-b64b-4213-be51-eaa7a87f0d24",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C17",
+      "claim": "The resulting alignments were processed through the program kaks_calculator to calculate non-synonymous (Ka) and synonymous (Ks) values, and their ratio (Ka/Ks).",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting alignments were then processed through the program kaks_calculator (Zhang, 2022) to calculate non-synonymous (Ka) and synonymous (Ks) values, and their ratio (Ka/Ks) which were used to assess the mutational adaptation for each protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes their computational analysis method with citation support.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "4a08208a-f34a-44ad-b96c-48cf669b6db8",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C18",
+      "claim": "The parameters required for the kaks_calculator were based on the maximum-likelihood method derived from the work of Goldman and Yang, 1994.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameters required for the kaks_calculator were based on the maximum-likelihood method derived from the work of Goldman and Yang, 1994.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific parameters used in their analysis, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "c388b2d6-c603-4457-96d7-49c5682e7624",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C19",
+      "claim": "The first reported SARS-CoV-2 genomic sequence ('the Wuhan sequence') was used as a reference for all the Ka, Ks, and Ka/Ks calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "The first reported SARS-CoV-2 genomic sequence ('the Wuhan sequence') (Wu et al., 2020) was used as a reference for all the Ka, Ks, and Ka/Ks calculations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes their choice of reference sequence with citation support.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "a3d67bc9-8163-46d2-8d36-6bc7922a236e",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C20",
+      "claim": "Using the Wuhan sequence as a reference provided the most intuitive and interpretable results.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also found that using the Wuhan sequence as a reference provided the most intuitive and interpretable results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on their exploration of different reference sequence options.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "665131b4-1d72-401d-aeca-7cd532396572",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C21",
+      "claim": "Collective non-synonymous mutations in key proteins of SARS-CoV-2 showed significant increase 10\u201314 days before the rapid rise in COVID19 cases, particularly related to the surges that occurred after the emergence of Gamma, Delta, Omicron, and BA.5 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that collective non-synonymous mutations in key proteins of SARS-CoV-2 showed significant increase 10\u201314 days before the rapid rise in COVID19 cases, particularly related to the surges that occurred after the emergence of Gamma, Delta, Omicron, and BA.5 variants (Figure 1 and the related Figure 1\u2014figure supplement 1 with the unnormalized results).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by data shown in Figure 1 and its supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "4cc549c5-12f1-4311-8276-45cf8cc08a4d",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C22",
+      "claim": "Over 6.4 million SARS-CoV-2 genome sequences collected all over the world are available from GenBank.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, over 6.4 million SARS-CoV-2 genome sequences collected all over the world are available from GenBank (https://www.ncbi.nlm.nih.gov/sars-cov-2/), which were used for analysis of 26 SARS-CoV-2 proteins, including the structural (spike, envelope, membrane, nucleocapsid) proteins, non-structural proteins (NSPs), and ORFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the data available and analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "435f9b22-83cb-4131-a541-980f934b97ec",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C23",
+      "claim": "The analysis was performed with the first reported ('Wuhan') SARS-CoV-2 sequence as a reference.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, our analysis was performed with the first reported ('Wuhan') SARS-CoV-2 sequence as a reference (Wu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes their analytical approach with citation support.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "56b33d80-7c30-4cce-9ec5-3eae1ab97e62",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C24",
+      "claim": "The computed mutations are calculated in comparison to the Wuhan reference sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the computed mutations are calculated in comparison to this reference sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies their computational approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "5aac963c-09da-485a-8b87-19aff0220d8c",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C25",
+      "claim": "The reason for an increase in mutations ahead of a surge is the search for adaptation against the acquired immunity (or gain in function) in either a single protein or a combination of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for an increase in mutations ahead of a surge is the search for adaptation against the acquired immunity (or gain in function) in either a single protein or a combination of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the biological mechanism underlying the observed pattern, based on established knowledge of viral evolution.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "081fd098-bae8-4a2e-8d4f-012a4b89eb5f",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C26",
+      "claim": "The case of the Omicron variant indicates the development of the most drastic changes in several different proteins, which coincided with the largest increase in rate of infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The case of the Omicron variant indicates the development of the most drastic changes in several different proteins, which coincided with the largest increase in rate of infections (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "a80ce38c-9ae1-491b-9dcc-9301e3ef2420",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C27",
+      "claim": "Non-synonymous mutations (Ka) in several proteins show significant increase before the increase in rate of infections (or surges), therefore, allowing a means for surge prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-synonymous mutations (Ka) in several proteins show significant increase before the increase in rate of infections (or surges), therefore, allowing a means for surge prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study, supported by the data presented in the figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "5660f51a-6269-4830-9dae-49b81078a9e2",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C28",
+      "claim": "The mutation values have been normalized using average of all mutations in the year 2020 (the first full year of the pandemic) as 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation values have been normalized using average of all mutations in the year 2020 (the first full year of the pandemic) as 1 (marked by dashed lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the normalization method used in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "2a24828c-1f75-4eb7-bd98-dc6d1410cf1c",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C29",
+      "claim": "Values of 0 indicate same sequence as the Wuhan sequence, while larger values indicate more mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Values of 0 indicate same sequence as the Wuhan sequence, while larger values indicate more mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the interpretation of the mutation values in their analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "1a91bb6d-c4b8-4b9f-a1aa-38f5ab7c8d58",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C30",
+      "claim": "Each gray dot corresponds to a unique sequence, and there can be multiple records showing the same mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that each gray dot corresponds to a unique sequence, and there can be multiple records showing the same mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies the representation of data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "7f3eaf0e-60d7-42e8-af0f-3389a9000ca3",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C31",
+      "claim": "The weighted mean for the day is calculated by using all sequences reported for the day.",
+      "claim_type": "EXPLICIT",
+      "source": "The weighted mean for the day is calculated by using all sequences reported for the day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calculation method for the black lines in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "02bb74b4-4ed5-4a0f-a8b3-57f0cae4df22",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C32",
+      "claim": "Alpha/Beta, Omicron, and Omicron BA.2, BA.5 were the prevalent variants at the time of labeled peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Alpha/Beta, Omicron, and Omicron BA.2, BA.5 were the prevalent variants at the time of labeled peaks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a factual statement about which variants were prevalent during specific peaks shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "cd583133-076e-4745-b0f7-dc17891191ef",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C33",
+      "claim": "For the two peaks in 2021 the case was less clear, with Gamma and Delta variants being observed at different times in different parts of the world.",
+      "claim_type": "EXPLICIT",
+      "source": "For the two peaks in 2021 the case was less clear, with Gamma and Delta variants being observed at different times in different parts of the world.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This acknowledges uncertainty in variant attribution for specific peaks.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "e8168705-35fd-4777-888e-863bd3e9e8d0",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C34",
+      "claim": "Ka/Ks did not provide a reliable signal for surge prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the commonly used non-synonymous to synonymous mutations ratio, Ka/Ks (Figure 1\u2014figure supplement 2), and the rate of mutations (derivative of observed number of mutations with respect to time) (Figure 1\u2014figure supplement 3) were also investigated in detail for suitability as a signal for surge prediction. As seen in Figure 1\u2014figure supplement 2, Ka/Ks did not provide a reliable surge prediction signal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "7dfa71d3-1b89-4ad5-aeb2-3e24d3dca296",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C35",
+      "claim": "The ratio for only the membrane protein shows increase before the surges associated with some variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio for only the membrane protein shows increase before the surges associated with some variants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "6c4c7591-ce01-4d30-b4d5-aee9cbfba6cd",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C36",
+      "claim": "For the case of Omicron surge, the proteins did show increased rate of mutations, however, for all other cases a clear signal was absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1\u2014figure supplement 3 shows rate of mutations (calculated as a numerical derivative). For the case of Omicron surge, the proteins did show increased rate of mutations, however, for all other cases a clear signal was absent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "53920019-a676-4c3c-a03f-12ee79ca4e28",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C37",
+      "claim": "The nature of incoming genomic data is generally noisy (due to smaller number of samples and weighting of different mutations shows large variations) and changes quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the nature of incoming genomic data is generally noisy (due to smaller number of samples and weighting of different mutations shows large variations) and changes quickly, therefore, the ongoing most recent rate of mutations is very noisy as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the characteristics of the data being analyzed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "c235b396-60cd-417f-b61e-b0fd6f1188c6",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C38",
+      "claim": "At this stage, rate (derivative) of mutations is not a reliable signal for surge prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "It was concluded that at this stage, rate (derivative) of mutations is not a reliable signal for surge prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on their analysis of the rate of mutations approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "70b48758-dbfa-43e1-a0b3-8ba66a8ec09b",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C39",
+      "claim": "Collective non-synonymous mutations (Ka) provides the most reliable signal for surge prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, it appears that collective non-synonymous mutations (Ka) provides the most reliable signal for surge prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion based on comparison of different metrics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "7d055a40-2de2-47e1-ac2d-569e7def68fe",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C40",
+      "claim": "Spike protein interacts with the angiotensin-converting enzyme 2 receptor and plays a vital role in infecting the human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike protein interacts with the angiotensin-converting enzyme 2 receptor and plays a vital role in infecting the human cells (Xia, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to established knowledge about spike protein function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "bf335c23-dbf0-4f1e-bf14-0a27bded8f3d",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C41",
+      "claim": "Spike protein has been the target of mRNA-based vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike protein has been the target of mRNA-based vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about COVID-19 vaccine design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "d394cfc7-9f53-4390-99e4-dbbaab6d0225",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C42",
+      "claim": "Viral sequences show significant changes in synonymous and non-synonymous mutations in the spike protein (188,166 unique sequences observed so far).",
+      "claim_type": "EXPLICIT",
+      "source": "Viral sequences show significant changes in synonymous and non-synonymous mutations in the spike protein (188,166 unique sequences observed so far), with large increases ahead of the surge in reported human infections, most noticeably with the surges associated with the Gamma/Delta and the Omicron variants (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A and the number of unique sequences analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "e70ca9ee-3df8-42cf-ac8b-7dea60f4dec6",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C43",
+      "claim": "The mutations show increase 10\u201314 days before the increase in human infections.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that the mutations show increase 10\u201314 days before the increase in human infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding supported by the temporal patterns shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "05e442af-5e8a-49fd-a9bc-4c2b9ca67b42",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C44",
+      "claim": "The synonymous mutations show decrease post surges.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also interesting to note that the synonymous mutations (data available on the website) show decrease post surges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on data available on their website.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "7227945e-cdbe-481a-8446-3fc5e0841b42",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C45",
+      "claim": "The decrease in mutations prior to the Omicron BA.2 surge corresponds to reversal mutations (returning to reference sequence).",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in mutations prior to the Omicron BA.2 surge corresponds to reversal mutations (returning to reference sequence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed decrease in mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "e1a7a1a1-66b2-4a6e-9b89-bf66ca32fe92",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C46",
+      "claim": "At present the non-synonymous and synonymous mutations post the Omicron variant remain elevated, more so than any period during the COVID19 outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at present the non-synonymous and synonymous mutations post the Omicron variant remain elevated, more so than any period during the COVID19 outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "c1d6d492-4466-4511-93fa-bb4c90ea8543",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C47",
+      "claim": "SARS-CoV-2 membrane protein has shown significant mutations, starting just before the Omicron variant (November 2021 onward).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the spike protein, SARS-CoV-2 membrane (Lu et al., 2021; Figure 1B, 11,338 unique sequences observed so far) and envelope (Zheng et al., 2021; Figure 1C, 1314 unique sequences observed so far) proteins have also shown significant mutations, starting just before the Omicron variant (November 2021 onward).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "6770fa9b-7cb1-4657-ae16-5e98e463e642",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C48",
+      "claim": "SARS-CoV-2 envelope protein has shown significant mutations, starting just before the Omicron variant (November 2021 onward).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the spike protein, SARS-CoV-2 membrane (Lu et al., 2021; Figure 1B, 11,338 unique sequences observed so far) and envelope (Zheng et al., 2021; Figure 1C, 1314 unique sequences observed so far) proteins have also shown significant mutations, starting just before the Omicron variant (November 2021 onward).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1C and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "8f237561-7119-45ac-8bb1-cc47054d50ac",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C49",
+      "claim": "For the case of membrane protein, there was a significant increase that started in the Gamma/Delta variants (June 2021 onward) and further increased just before the BA.5 surge.",
+      "claim_type": "EXPLICIT",
+      "source": "For the case of membrane protein, there was a significant increase that started in the Gamma/Delta variants (June 2021 onward) and further increased just before the BA.5 surge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "0ee4de03-26ee-4362-97e4-7d3b6c3a25a9",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C50",
+      "claim": "The spike, membrane, and envelope proteins are all located on the surface of SARS-CoV-2 and potentially interact with the components of the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The spike, membrane, and envelope proteins are all located on the surface of SARS-CoV-2 and potentially interact with the components of the immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of SARS-CoV-2 structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "4d81be4f-11c2-494a-81a9-d8813b0e9c6a",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C51",
+      "claim": "The large increase in mutations in all these external proteins assumes importance in post-vaccination period.",
+      "claim_type": "EXPLICIT",
+      "source": "The large increase in mutations in all these external proteins assumes importance in post-vaccination period (discussed further below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the significance of the observed mutations in the context of vaccination.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "819acba7-f92e-4e88-8ef7-7b83b515ad7f",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C52",
+      "claim": "RNA-dependent RNA polymerase (RDRP) has been targeted for development of antiviral drug therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, Figure 1D shows mutations from RNA-dependent RNA polymerase (RDRP, 60,575 unique sequences observed so far), which has been targeted for development of antiviral drug therapies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about RDRP as a drug target.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "90c062d9-ed3d-4ebb-9cfb-6a7823c24b03",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C53",
+      "claim": "Till present, RDRP has shown comparatively lower magnitude of non-synonymous mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Till present, RDRP has shown comparatively lower magnitude of non-synonymous mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "5f0cf24d-8414-48e1-ab9c-76a88864b549",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C54",
+      "claim": "Significant increases in mutations are also observed in NSPs 1, 4, 6, 13, 15, ORFs 6, 7a, and 7b.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant increases in mutations are also observed in NSPs 1, 4, 6, 13, 15, ORFs 6, 7a, and 7b (data available on the project website).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data available on their website.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "1305e7f9-09b8-4079-a70f-b1ac61b217d8",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C55",
+      "claim": "Widespread vaccination against SARS-CoV-2 (December 2020 onward) coincides with significant increase in mutation rates of several SARS-CoV-2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Widespread vaccination against SARS-CoV-2 (December 2020 onward) coincides with significant increase in mutation rates of several SARS-CoV-2 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation of temporal correlation between vaccination rollout and mutation rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "e10c5a5f-0223-49c3-8f46-0349f8bf8689",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C56",
+      "claim": "Spike, membrane, and envelope proteins have shown rapid mutations especially in the Omicron variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike, membrane, and envelope proteins have shown rapid mutations especially in the Omicron variant (gray dots in Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "7737e659-f2c5-4a4b-95e6-b2d6fa3b1f61",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C57",
+      "claim": "The rapid mutations in spike, membrane, and envelope proteins are possibly due to viral adaptations under the selective pressure exerted by the vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "This is possibly due to viral adaptations under the selective pressure exerted by the vaccine, as a significant number of mutations were observed in 2021, especially for the spike protein (gray dots in Figure 1A indicate spike protein has mutated much more than any other protein).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative inference about the mechanism driving the observed mutations, based on evolutionary principles.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "cd34e9a4-a2d8-4485-a6ce-91ec8d648572",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C58",
+      "claim": "The long-term effectiveness of mRNA-based SARS-CoV-2 vaccines remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The long-term effectiveness of mRNA-based SARS-CoV-2 vaccines remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge regarding vaccine effectiveness.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "f87a79a8-d660-4ecf-b955-c28d7d5c508f",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C59",
+      "claim": "After the initial regimen of two doses, the administration of additional booster (third and fourth) doses has decreased due to improvement in COVID19 fatality rates as well as political reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "After the initial regimen of two doses, the administration of additional booster (third and fourth) doses has decreased due to improvement in COVID19 fatality rates as well as political reasons (Sabahelzain et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and reflects observed trends in vaccination practices.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "84c97660-0794-4b2e-87e8-1a1ec483e532",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C60",
+      "claim": "Post vaccination the significant mutations observed in the spike, envelope, and membrane protein related to the Omicron variant remain at extremely elevated levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Other proteins have shown reversal mutations (higher similarity with the reference sequence) after periods of significant increase in mutations, however, post vaccination the significant mutations observed in the spike, envelope, and membrane protein related to the Omicron variant remain at extremely elevated levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "a90482fc-95aa-49a4-892f-ffd5a4114053",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C61",
+      "claim": "Omicron, BA.2, BA.5, and subsequent variants are showing increased rates of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "As Omicron, BA.2, BA.5, and subsequent variants are showing increased rates of transmission, gain or improvement of function in other proteins could lead to emergence of newer variants of concern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observed epidemiological data about variant transmission.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "1dc066ba-292d-47f7-8399-9abad261698b",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C62",
+      "claim": "Gain or improvement of function in other proteins could lead to emergence of newer variants of concern.",
+      "claim_type": "EXPLICIT",
+      "source": "As Omicron, BA.2, BA.5, and subsequent variants are showing increased rates of transmission, gain or improvement of function in other proteins could lead to emergence of newer variants of concern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about future variant emergence based on evolutionary principles.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "4fd66fdc-e952-4ab0-86ce-cd51be82ac81",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C63",
+      "claim": "Over long term this needs to be addressed by vaccines with longer periods of effectiveness and post-infection treatment options including antiviral drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Over long term this needs to be addressed by vaccines with longer periods of effectiveness and post-infection treatment options including antiviral drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the implications of their findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "1e4487e6-333a-4ddb-b9d0-68627429a446",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C64",
+      "claim": "To date, spike protein has shown the most direct correlation in the rate of non-synonymous mutations and the rates of human infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, spike protein has shown the most direct correlation in the rate of non-synonymous mutations and the rates of human infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on their analysis of multiple proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "1394c7a2-9941-4542-b61b-1b8fa1092f1b",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C65",
+      "claim": "In the case of Omicron variant and also the Gamma variant, spike protein showed rapid increase in mutations about 10\u201314 days ahead of time.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, in the case of Omicron variant and also the Gamma variant, spike protein showed rapid increase in mutations about 10\u201314 days ahead of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "cb464e38-ac4d-4830-8d76-1d822715ff9d",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C66",
+      "claim": "Membrane protein showed rapid mutations before surge related to BA.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, membrane protein showed rapid mutations before surge related to BA.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "ebe6c784-a60f-441a-9ef9-30c403ecaff3",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C67",
+      "claim": "The authors issued a surge watch on the website on June 29, 2022, which was converted to a warning on July 14.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we issued a surge watch on the website on June 29, 2022, which was converted to a warning on July 14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about actions taken by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "983233bd-1f19-4274-9f60-ac0273ed7962",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C68",
+      "claim": "The surge watch issued on June 29, 2022 was confirmed by increase in infection cases worldwide throughout July.",
+      "claim_type": "EXPLICIT",
+      "source": "This was confirmed by increase in infection cases worldwide throughout July (see Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "9d5ee9dc-599f-48f8-a4a9-52edc7e72eea",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C69",
+      "claim": "The authors issued an additional warning on September 7, 2022, which was confirmed by surge in several European countries, including France, United Kingdom, Germany, and Italy.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we issued an additional warning on September 7, 2022, which was confirmed by surge in several European countries, including France, United Kingdom, Germany, and Italy (see Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "6a3d84a3-df5c-49cb-aaa0-1847d78e9fd2",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C70",
+      "claim": "The role of different (or dominant) SARS-CoV-2 variants in major surges is unclear at this time and needs further research.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of different (or dominant) SARS-CoV-2 variants in major surges is unclear at this time and needs further research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation in current understanding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "8c2b7806-758a-4524-ad48-a7c19eb38076",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C71",
+      "claim": "Different variants have been prevalent in different geographic regions at different times over the course of COVID19 outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "Different variants have been prevalent in different geographic regions at different times over the course of COVID19 outbreak, therefore, it is difficult to assign the surges to individual variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on epidemiological knowledge about variant distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "31694cac-9813-43b1-a625-fedf43831bd3",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C72",
+      "claim": "At present the authors' analysis is able to make predictions about collective surges before they occur, as illustrated by the case of BA.5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at present our analysis is able to make predictions about collective surges before they occur, as illustrated by the case of BA.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by their successful prediction of the BA.5 surge.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "6aed7cce-1991-49e4-8727-35d99830453a",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C73",
+      "claim": "As the pandemic situation has improved in the second half of 2022, the number of tests being performed and the sequences being deposited into public repositories have decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, as the pandemic situation has improved in the second half of 2022, the number of tests being performed and the sequences being deposited into public repositories have decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about trends in data availability.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "38a7ebc3-0837-40ad-a1d2-b0843c57718a",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C74",
+      "claim": "The population is showing increased immunity against the virus due to vaccination and naturally acquired immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is widely being discussed that the population is showing increased immunity against the virus due to vaccination and naturally acquired immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects current scientific discourse about population immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "0c3250d4-8631-4de9-94f7-ec397f424f15",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C75",
+      "claim": "The presented approach is dependent on availability of sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented approach is dependent on availability of sequences, therefore, we hope that scientific community will continue to urge the medical community and public health agencies to commit resources to sequencing the samples from COVID19 positive patients on a regular basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of their approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "eb40da73-879e-448e-bd48-e7d2fb48031a",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C76",
+      "claim": "Even with availability of smaller number of sequences, the approach is weighted by mutations and percentage of sequences showing non-synonymous mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, even with availability of smaller number of sequences, our approach is weighted by mutations and percentage of sequences showing non-synonymous mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of their methodology that provides some robustness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "0c76e576-6ca6-4bd1-b6ed-24cdc6757d11",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C77",
+      "claim": "Whenever new mutations show up in large percentages, the approach will still be able to work.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, whenever new mutations show up in large percentages, our approach will still be able to work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the robustness of their approach under different data availability scenarios.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "59a55da3-f4b6-407d-86a7-d1d56bbcd304",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C78",
+      "claim": "Viruses continue to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, viruses continue to evolve and if the population acquires large-scale immunity leading to drastic reduction in number of infections, our surveillance approach would still allow preparation in cases of significant viral genome changes (such as going from SARS-CoV to SARS-CoV-2) whenever they occur and lead to the possibility of another major outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about viral evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "68e729cc-6fb3-418c-a7bb-e12fb7aae43f",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C79",
+      "claim": "The surveillance approach would still allow preparation in cases of significant viral genome changes whenever they occur and lead to the possibility of another major outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, viruses continue to evolve and if the population acquires large-scale immunity leading to drastic reduction in number of infections, our surveillance approach would still allow preparation in cases of significant viral genome changes (such as going from SARS-CoV to SARS-CoV-2) whenever they occur and lead to the possibility of another major outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the future utility of their approach.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "dfc0e673-75f7-4c66-97a4-98e79c3cfe6f",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C80",
+      "claim": "The methodology and the website provide real-time mutational changes of 26 SARS-CoV-2 proteins and ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "The methodology and the website described here provide real-time mutational changes of 26 SARS-CoV-2 proteins and ORFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about what their system provides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "4fd71cf9-bbc0-42d7-a0b0-2f062917b8c8",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C81",
+      "claim": "The changes in non-synonymous mutations correlate with the increase in reported cases of infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes in non-synonymous mutations correlate with the increase in reported cases of infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "077fc3f4-e8eb-4640-80ac-93e3d919f38c",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C82",
+      "claim": "The website is intended to keep the medical community informed about potential upcoming surges.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from identifying mutations of concern for in-depth scientific studies, the website is intended to keep the medical community informed about potential upcoming surges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the intended purpose of their website.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "6a2adeb1-8aa6-4aad-89ad-4c55a915423a",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C83",
+      "claim": "Warnings of increase in mutations and expected surges are displayed on the website (and also available through email alerts).",
+      "claim_type": "EXPLICIT",
+      "source": "Warnings of increase in mutations and expected surges are displayed on the website (and also available through email alerts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about features of their website.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "973c4b7e-d4ce-4855-b034-01de08b47c8a",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C84",
+      "claim": "This real-time analysis is dependent on the various health labs and medical facilities for swiftly depositing the viral genome sequences into the public databases such as the GenBank.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that this real-time analysis is dependent on the various health labs and medical facilities for swiftly depositing the viral genome sequences into the public databases such as the GenBank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a dependency of their approach on external data sources.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "7b6d8365-1eab-4845-904e-480bf9a1f92f",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C85",
+      "claim": "The shorter the lag time in depositing the sequences by the wider community, more accurate and effective the prediction capabilities of the approach and the website will be.",
+      "claim_type": "EXPLICIT",
+      "source": "The shorter the lag time in depositing the sequences by the wider community, more accurate and effective the prediction capabilities of our approach and the website will be.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how data timeliness affects prediction accuracy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "f088d80f-1bcd-41ba-99d2-51257249a4bc",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C86",
+      "claim": "The number of infection cases showed a sustained increase after the issue of the watch on June 29.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of infection cases showed a sustained increase after the issue of our watch on June 29.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "0ef3bec0-54f8-484f-ab4e-edefdb12a488",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C87",
+      "claim": "The watch was elevated to a warning on July 14 (note, warning is considered more severe than a watch) and the number of cases showed a further increase.",
+      "claim_type": "EXPLICIT",
+      "source": "This watch was elevated to a warning on July 14 (note, warning is considered more severe than a watch) and the number of cases showed a further increase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "2c2f3c6c-17e0-4182-ae0c-dfa565ed13af",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C88",
+      "claim": "The warning was removed on August 30, 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "The warning was removed on August 30, 2022.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a factual statement about actions taken, shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "a662d150-15e7-47b3-87f0-a85e1f813bfc",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C89",
+      "claim": "The number of cases peaked roughly a month after the watch was issued.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of cases peaked roughly a month after our watch was issued.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "385da015-b784-4aae-8651-fcb5c04aae06",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C90",
+      "claim": "The number of infection cases showed a sustained increase in Europe and several individual countries, after the watch was issued.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of infection cases showed a sustained increase in Europe and several individual countries, after we issued our watch.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "0a2cbde9-0248-43eb-9d04-1e953108cc5f",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "claim_id": "C91",
+      "claim": "The watch issued on September 7, 2022 was eventually removed on November 14, 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "The data did not warrant a further elevation and this watch was eventually removed on November 14, 2022.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a factual statement about actions taken, shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cd4137da-e61b-4466-8edb-018581773ce5",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a computational pipeline to download, quality-control, and analyze SARS-CoV-2 genomic sequences from GenBank. As of November 21, 2022, they analyzed 3,126,129 sequences out of 6,468,196 records, using the Wuhan reference sequence for Ka/Ks calculations with clustal-omega, Pal2Nal, and kaks_calculator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C20 describe the data sources, computational methods, quality control procedures, and analytical choices. These methodological claims are well-documented with appropriate citations (C11, C12, C16, C17, C18, C19) and specific details about data volumes (C13) and processing steps (C14). The choice of reference sequence is justified (C20).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "9cb43157-dbad-4989-91db-c3ae4e4eec88",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Non-synonymous mutations (Ka) in key SARS-CoV-2 proteins showed significant increases 10-14 days before rapid rises in COVID-19 cases, particularly for Gamma, Delta, Omicron, and BA.5 variant surges. This metric provided the most reliable signal for surge prediction compared to Ka/Ks ratio or mutation rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C21, C27, C39, C43, and C81 represent the core finding. While Figure 1 shows temporal correlations between Ka increases and case surges, several critical issues undermine confidence: (1) no statistical testing of the claimed 10-14 day lead time is provided; (2) the normalization method (C28) using 2020 averages is arbitrary and may introduce bias; (3) the weighting scheme (C31) is not fully described; (4) the authors acknowledge difficulty assigning surges to specific variants (C33, C70, C71), creating ambiguity in the claimed associations; (5) confounding factors like testing rates, reporting delays, and variant-specific biology are not addressed; (6) the predictive claim requires prospective validation, not just retrospective correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "dd1d6769-2fc0-4f9f-8b0a-fee47ccb8758",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ka/Ks ratio and mutation rate (derivative) were investigated as surge prediction signals but found unreliable. Ka/Ks showed predictive signal only for membrane protein in some variants, while mutation rate was too noisy and showed false positives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by data in Figure 1\u2014supplements 2 and 3. The authors appropriately tested alternative metrics and documented their limitations, including data noisiness (C37) and lack of clear signals for most cases (C36). This negative result strengthens their conclusion that Ka is the most reliable metric (C39).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spike protein showed significant non-synonymous mutations (188,166 unique sequences) with increases 10-14 days before infection surges, most notably for Gamma/Delta and Omicron variants. Spike protein showed the most direct correlation between mutation rate and infection rate among all proteins analyzed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C46 and C64-C65 focus on spike protein findings. While C40-C41 are established knowledge and C42 documents substantial sequence data, the temporal correlation claims (C43, C65) lack statistical validation. The observation about synonymous mutations decreasing post-surge (C44) and reversal mutations (C45) are interesting but not rigorously quantified. The claim of \"most direct correlation\" (C64) is not supported by correlation coefficients or comparative statistical analysis across proteins. The elevated mutation levels post-Omicron (C46) are descriptive observations without statistical thresholds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "472f3dab-91b8-40ed-ab16-c2f00bf9918b",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Membrane and envelope proteins showed significant mutations starting before the Omicron variant (November 2021 onward), with membrane protein also showing increases before the BA.5 surge. These surface proteins potentially interact with immune system components, making their mutations particularly important in the post-vaccination period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 and C66 are supported by data in Figures 1B and 1C with appropriate citations (Lu et al., 2021; Zheng et al., 2021). The observation about membrane protein preceding the BA.5 surge (C49, C66) is documented in the figures. The biological interpretation about surface protein location (C50) is established knowledge, and the inference about post-vaccination importance (C51) is reasonable given the temporal patterns, though speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "5384b833-ff28-4e27-b462-dc8f22b9439d",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNA-dependent RNA polymerase (RDRP) showed comparatively lower magnitude of non-synonymous mutations compared to surface proteins. Significant mutation increases were also observed in NSPs 1, 4, 6, 13, 15, and ORFs 6, 7a, 7b.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by Figure 1D for RDRP and reference to website data for other proteins. The comparison showing lower RDRP mutations (C53) is visually apparent in Figure 1D. The claim about other proteins (C54) relies on website data not shown in the manuscript, which is a limitation but acceptable given the scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "ee4f49b9-e861-435f-a559-28a12a9592c4",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Widespread vaccination (December 2020 onward) coincided with significant increases in mutation rates, particularly in spike, membrane, and envelope proteins. This is possibly due to viral adaptation under vaccine-induced selective pressure, with mutations remaining elevated post-Omicron.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C55-C57 and C60-C62 make causal inferences about vaccination driving mutations based on temporal correlation. This is a classic correlation-causation fallacy. Alternative explanations include: (1) increased sequencing efforts post-vaccination; (2) natural viral evolution independent of vaccination; (3) relaxation of non-pharmaceutical interventions allowing more transmission; (4) sampling biases. The claim is \"possibly due to\" (C57) which acknowledges speculation, but the framing throughout suggests causation. Claims C61-C62 about future variant emergence are purely speculative. This interpretation requires experimental evidence (e.g., in vitro evolution studies under vaccine pressure) that is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "6672a567-34d6-4741-add0-df74fa6549a1",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors issued a surge watch on June 29, 2022, elevated it to a warning on July 14, and removed it on August 30, 2022. This prediction was confirmed by sustained increases in infection cases worldwide throughout July, with cases peaking roughly a month after the watch was issued.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 and C86-C89 document a prospective prediction with subsequent confirmation shown in Figure 1\u2014supplement 5. This represents genuine prospective validation of their approach, which is stronger evidence than retrospective correlation. The temporal sequence (watch \u2192 warning \u2192 case increase \u2192 peak \u2192 warning removal) is clearly documented and supports the predictive utility of their method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "aeeac506-9f32-4810-86d1-3bec56ab3ae9",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A second watch was issued on September 7, 2022, confirmed by surges in several European countries (France, UK, Germany, Italy), and removed on November 14, 2022.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C91 document a second prospective prediction with confirmation shown in Figure 1\u2014supplement 6. This provides additional validation of the predictive approach across different geographic regions, strengthening the evidence for the method's utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "800b42db-bfd7-4608-93e9-a25fdb8a518f",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "While the role of specific variants in major surges remains unclear due to geographic and temporal variation in variant prevalence, the analysis can predict collective surges before they occur, as demonstrated by the BA.5 case.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 appropriately acknowledge limitations (C70, C71) while asserting predictive capability for aggregate surges (C72). This is a reasonable and honest assessment supported by the prospective predictions documented in C67-C69 and C86-C91.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "24f8fef3-129f-4679-9c86-c054f4fffd77",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The approach depends on timely sequence deposition, which has decreased in late 2022 as the pandemic situation improved. However, the weighting by mutations and percentage of sequences showing non-synonymous mutations provides some robustness to smaller sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C77 and C84-C85 discuss data dependency and robustness. While the dependency on sequence availability (C75, C84) is obvious, the claims about robustness to smaller sample sizes (C76, C77) are not validated. No analysis is shown demonstrating that the method maintains predictive power with reduced sequencing. The weighting scheme is mentioned but not fully described or tested under varying data availability scenarios. This is a critical limitation that needs empirical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "67ae4d41-dcbd-4651-8ad8-57bec46c0ddc",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The real-time genomic surveillance methodology provides daily updates of mutational changes for 26 SARS-CoV-2 proteins via a public website with warnings and email alerts. The approach is generic and could be applicable to other pathogens and future outbreaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2, C4, C79, C80, C82, C83 describe the system and its potential generalizability. The website functionality (C3, C80, C82, C83) is verifiable and represents a valuable resource. However, the claims about generalizability to other pathogens (C4) and future outbreaks (C79) are speculative and untested. Different pathogens have different evolutionary dynamics, mutation rates, and relationships between genotype and phenotype. The approach would need validation for each new pathogen.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    },
+    {
+      "id": "60a7ca16-3fd5-44e9-bda6-ff0d1bae8bc0",
+      "content_id": "6e8d4c6d-48df-44d6-b589-a2cddde79bb1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The long-term effectiveness of mRNA vaccines remains unknown, and booster uptake has decreased. This situation needs to be addressed with longer-lasting vaccines and post-infection treatments including antivirals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 and C63 reflect established knowledge about vaccine effectiveness uncertainty (C58) and observed trends in booster uptake (C59, with citation). The recommendation for improved interventions (C63) is a reasonable policy implication, though speculative about solutions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:00.568712Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a87ab4f6-539f-4f0d-b4a2-7ded3b71a133",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "42afe259-c7cf-4a19-8ced-69d5ce16ae07",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "504e99c1-11a0-42b4-a544-0edcdf5e5e19",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "833b4252-141a-43d8-80a9-9676f66810df",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "3cb2e4cf-cd55-4863-8f03-9db982938776",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "eaa67e9e-f418-433d-b002-47aca99b11a0",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "6e95c583-b64b-4213-be51-eaa7a87f0d24",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "4a08208a-f34a-44ad-b96c-48cf669b6db8",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "c388b2d6-c603-4457-96d7-49c5682e7624",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "a3d67bc9-8163-46d2-8d36-6bc7922a236e",
+      "result_id": "cd4137da-e61b-4466-8edb-018581773ce5"
+    },
+    {
+      "claim_id": "665131b4-1d72-401d-aeca-7cd532396572",
+      "result_id": "9cb43157-dbad-4989-91db-c3ae4e4eec88"
+    },
+    {
+      "claim_id": "a80ce38c-9ae1-491b-9dcc-9301e3ef2420",
+      "result_id": "9cb43157-dbad-4989-91db-c3ae4e4eec88"
+    },
+    {
+      "claim_id": "70b48758-dbfa-43e1-a0b3-8ba66a8ec09b",
+      "result_id": "9cb43157-dbad-4989-91db-c3ae4e4eec88"
+    },
+    {
+      "claim_id": "e70ca9ee-3df8-42cf-ac8b-7dea60f4dec6",
+      "result_id": "9cb43157-dbad-4989-91db-c3ae4e4eec88"
+    },
+    {
+      "claim_id": "4fd71cf9-bbc0-42d7-a0b0-2f062917b8c8",
+      "result_id": "9cb43157-dbad-4989-91db-c3ae4e4eec88"
+    },
+    {
+      "claim_id": "e8168705-35fd-4777-888e-863bd3e9e8d0",
+      "result_id": "dd1d6769-2fc0-4f9f-8b0a-fee47ccb8758"
+    },
+    {
+      "claim_id": "7dfa71d3-1b89-4ad5-aeb2-3e24d3dca296",
+      "result_id": "dd1d6769-2fc0-4f9f-8b0a-fee47ccb8758"
+    },
+    {
+      "claim_id": "6c4c7591-ce01-4d30-b4d5-aee9cbfba6cd",
+      "result_id": "dd1d6769-2fc0-4f9f-8b0a-fee47ccb8758"
+    },
+    {
+      "claim_id": "53920019-a676-4c3c-a03f-12ee79ca4e28",
+      "result_id": "dd1d6769-2fc0-4f9f-8b0a-fee47ccb8758"
+    },
+    {
+      "claim_id": "c235b396-60cd-417f-b61e-b0fd6f1188c6",
+      "result_id": "dd1d6769-2fc0-4f9f-8b0a-fee47ccb8758"
+    },
+    {
+      "claim_id": "7d055a40-2de2-47e1-ac2d-569e7def68fe",
+      "result_id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded"
+    },
+    {
+      "claim_id": "bf335c23-dbf0-4f1e-bf14-0a27bded8f3d",
+      "result_id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded"
+    },
+    {
+      "claim_id": "d394cfc7-9f53-4390-99e4-dbbaab6d0225",
+      "result_id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded"
+    },
+    {
+      "claim_id": "e70ca9ee-3df8-42cf-ac8b-7dea60f4dec6",
+      "result_id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded"
+    },
+    {
+      "claim_id": "05e442af-5e8a-49fd-a9bc-4c2b9ca67b42",
+      "result_id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded"
+    },
+    {
+      "claim_id": "7227945e-cdbe-481a-8446-3fc5e0841b42",
+      "result_id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded"
+    },
+    {
+      "claim_id": "e1a7a1a1-66b2-4a6e-9b89-bf66ca32fe92",
+      "result_id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded"
+    },
+    {
+      "claim_id": "1e4487e6-333a-4ddb-b9d0-68627429a446",
+      "result_id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded"
+    },
+    {
+      "claim_id": "1394c7a2-9941-4542-b61b-1b8fa1092f1b",
+      "result_id": "fc54b7d4-2c23-4697-8d33-b9905c3c0ded"
+    },
+    {
+      "claim_id": "c1d6d492-4466-4511-93fa-bb4c90ea8543",
+      "result_id": "472f3dab-91b8-40ed-ab16-c2f00bf9918b"
+    },
+    {
+      "claim_id": "6770fa9b-7cb1-4657-ae16-5e98e463e642",
+      "result_id": "472f3dab-91b8-40ed-ab16-c2f00bf9918b"
+    },
+    {
+      "claim_id": "8f237561-7119-45ac-8bb1-cc47054d50ac",
+      "result_id": "472f3dab-91b8-40ed-ab16-c2f00bf9918b"
+    },
+    {
+      "claim_id": "0ee4de03-26ee-4362-97e4-7d3b6c3a25a9",
+      "result_id": "472f3dab-91b8-40ed-ab16-c2f00bf9918b"
+    },
+    {
+      "claim_id": "4d81be4f-11c2-494a-81a9-d8813b0e9c6a",
+      "result_id": "472f3dab-91b8-40ed-ab16-c2f00bf9918b"
+    },
+    {
+      "claim_id": "cb464e38-ac4d-4830-8d76-1d822715ff9d",
+      "result_id": "472f3dab-91b8-40ed-ab16-c2f00bf9918b"
+    },
+    {
+      "claim_id": "819acba7-f92e-4e88-8ef7-7b83b515ad7f",
+      "result_id": "5384b833-ff28-4e27-b462-dc8f22b9439d"
+    },
+    {
+      "claim_id": "90c062d9-ed3d-4ebb-9cfb-6a7823c24b03",
+      "result_id": "5384b833-ff28-4e27-b462-dc8f22b9439d"
+    },
+    {
+      "claim_id": "5f0cf24d-8414-48e1-ab9c-76a88864b549",
+      "result_id": "5384b833-ff28-4e27-b462-dc8f22b9439d"
+    },
+    {
+      "claim_id": "1305e7f9-09b8-4079-a70f-b1ac61b217d8",
+      "result_id": "ee4f49b9-e861-435f-a559-28a12a9592c4"
+    },
+    {
+      "claim_id": "e10c5a5f-0223-49c3-8f46-0349f8bf8689",
+      "result_id": "ee4f49b9-e861-435f-a559-28a12a9592c4"
+    },
+    {
+      "claim_id": "7737e659-f2c5-4a4b-95e6-b2d6fa3b1f61",
+      "result_id": "ee4f49b9-e861-435f-a559-28a12a9592c4"
+    },
+    {
+      "claim_id": "84c97660-0794-4b2e-87e8-1a1ec483e532",
+      "result_id": "ee4f49b9-e861-435f-a559-28a12a9592c4"
+    },
+    {
+      "claim_id": "a90482fc-95aa-49a4-892f-ffd5a4114053",
+      "result_id": "ee4f49b9-e861-435f-a559-28a12a9592c4"
+    },
+    {
+      "claim_id": "1dc066ba-292d-47f7-8399-9abad261698b",
+      "result_id": "ee4f49b9-e861-435f-a559-28a12a9592c4"
+    },
+    {
+      "claim_id": "ebe6c784-a60f-441a-9ef9-30c403ecaff3",
+      "result_id": "6672a567-34d6-4741-add0-df74fa6549a1"
+    },
+    {
+      "claim_id": "983233bd-1f19-4274-9f60-ac0273ed7962",
+      "result_id": "6672a567-34d6-4741-add0-df74fa6549a1"
+    },
+    {
+      "claim_id": "f088d80f-1bcd-41ba-99d2-51257249a4bc",
+      "result_id": "6672a567-34d6-4741-add0-df74fa6549a1"
+    },
+    {
+      "claim_id": "0ef3bec0-54f8-484f-ab4e-edefdb12a488",
+      "result_id": "6672a567-34d6-4741-add0-df74fa6549a1"
+    },
+    {
+      "claim_id": "2c2f3c6c-17e0-4182-ae0c-dfa565ed13af",
+      "result_id": "6672a567-34d6-4741-add0-df74fa6549a1"
+    },
+    {
+      "claim_id": "a662d150-15e7-47b3-87f0-a85e1f813bfc",
+      "result_id": "6672a567-34d6-4741-add0-df74fa6549a1"
+    },
+    {
+      "claim_id": "9d5ee9dc-599f-48f8-a4a9-52edc7e72eea",
+      "result_id": "aeeac506-9f32-4810-86d1-3bec56ab3ae9"
+    },
+    {
+      "claim_id": "385da015-b784-4aae-8651-fcb5c04aae06",
+      "result_id": "aeeac506-9f32-4810-86d1-3bec56ab3ae9"
+    },
+    {
+      "claim_id": "0a2cbde9-0248-43eb-9d04-1e953108cc5f",
+      "result_id": "aeeac506-9f32-4810-86d1-3bec56ab3ae9"
+    },
+    {
+      "claim_id": "6a3d84a3-df5c-49cb-aaa0-1847d78e9fd2",
+      "result_id": "800b42db-bfd7-4608-93e9-a25fdb8a518f"
+    },
+    {
+      "claim_id": "8c2b7806-758a-4524-ad48-a7c19eb38076",
+      "result_id": "800b42db-bfd7-4608-93e9-a25fdb8a518f"
+    },
+    {
+      "claim_id": "31694cac-9813-43b1-a625-fedf43831bd3",
+      "result_id": "800b42db-bfd7-4608-93e9-a25fdb8a518f"
+    },
+    {
+      "claim_id": "6aed7cce-1991-49e4-8727-35d99830453a",
+      "result_id": "24f8fef3-129f-4679-9c86-c054f4fffd77"
+    },
+    {
+      "claim_id": "38a7ebc3-0837-40ad-a1d2-b0843c57718a",
+      "result_id": "24f8fef3-129f-4679-9c86-c054f4fffd77"
+    },
+    {
+      "claim_id": "0c3250d4-8631-4de9-94f7-ec397f424f15",
+      "result_id": "24f8fef3-129f-4679-9c86-c054f4fffd77"
+    },
+    {
+      "claim_id": "eb40da73-879e-448e-bd48-e7d2fb48031a",
+      "result_id": "24f8fef3-129f-4679-9c86-c054f4fffd77"
+    },
+    {
+      "claim_id": "0c76e576-6ca6-4bd1-b6ed-24cdc6757d11",
+      "result_id": "24f8fef3-129f-4679-9c86-c054f4fffd77"
+    },
+    {
+      "claim_id": "973c4b7e-d4ce-4855-b034-01de08b47c8a",
+      "result_id": "24f8fef3-129f-4679-9c86-c054f4fffd77"
+    },
+    {
+      "claim_id": "7b6d8365-1eab-4845-904e-480bf9a1f92f",
+      "result_id": "24f8fef3-129f-4679-9c86-c054f4fffd77"
+    },
+    {
+      "claim_id": "b9cc0b9d-7e47-4ed7-a805-4aee9bcdfceb",
+      "result_id": "67ae4d41-dcbd-4651-8ad8-57bec46c0ddc"
+    },
+    {
+      "claim_id": "b6d5d8b0-6798-4d33-b8f3-15a0d083b6bc",
+      "result_id": "67ae4d41-dcbd-4651-8ad8-57bec46c0ddc"
+    },
+    {
+      "claim_id": "68e729cc-6fb3-418c-a7bb-e12fb7aae43f",
+      "result_id": "67ae4d41-dcbd-4651-8ad8-57bec46c0ddc"
+    },
+    {
+      "claim_id": "dfc0e673-75f7-4c66-97a4-98e79c3cfe6f",
+      "result_id": "67ae4d41-dcbd-4651-8ad8-57bec46c0ddc"
+    },
+    {
+      "claim_id": "077fc3f4-e8eb-4640-80ac-93e3d919f38c",
+      "result_id": "67ae4d41-dcbd-4651-8ad8-57bec46c0ddc"
+    },
+    {
+      "claim_id": "6a2adeb1-8aa6-4aad-89ad-4c55a915423a",
+      "result_id": "67ae4d41-dcbd-4651-8ad8-57bec46c0ddc"
+    },
+    {
+      "claim_id": "cd34e9a4-a2d8-4485-a6ce-91ec8d648572",
+      "result_id": "60a7ca16-3fd5-44e9-bda6-ff0d1bae8bc0"
+    },
+    {
+      "claim_id": "f87a79a8-d660-4ecf-b955-c28d7d5c508f",
+      "result_id": "60a7ca16-3fd5-44e9-bda6-ff0d1bae8bc0"
+    },
+    {
+      "claim_id": "4fd66fdc-e952-4ab0-86ce-cd51be82ac81",
+      "result_id": "60a7ca16-3fd5-44e9-bda6-ff0d1bae8bc0"
+    }
+  ],
+  "comparisons": []
+}

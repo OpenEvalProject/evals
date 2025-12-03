@@ -1,0 +1,1456 @@
+{
+  "submission": {
+    "id": "99a60591-3f56-4469-97a3-5141c5b4ac39",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:49:02.466501Z",
+    "updated_at": "2025-12-03T14:49:02.466501Z"
+  },
+  "content": [
+    {
+      "id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "submission_id": "99a60591-3f56-4469-97a3-5141c5b4ac39",
+      "content_type": "manuscript",
+      "content_text": "# Estimation and worldwide monitoring of the effective reproductive number of SARS-CoV-2\n\n## Authors\n\n- Jana S Huisman<sup>1</sup> ([ORCID: 0000-0002-1782-8109](https://orcid.org/0000-0002-1782-8109)) \u2020\n- J\u00e9r\u00e9mie Scire<sup>2</sup>\n- Daniel C Angst<sup>1</sup> ([ORCID: 0000-0002-6512-4595](https://orcid.org/0000-0002-6512-4595))\n- Jinzhou Li<sup>4</sup>\n- Richard A Neher<sup>2</sup> ([ORCID: 0000-0003-2525-1407](https://orcid.org/0000-0003-2525-1407))\n- Marloes H Maathuis<sup>4</sup>\n- Sebastian Bonhoeffer<sup>1</sup> ([ORCID: 0000-0001-8052-3925](https://orcid.org/0000-0001-8052-3925))\n- Tanja Stadler<sup>2</sup> ([ORCID: 0000-0001-6431-535X](https://orcid.org/0000-0001-6431-535X)) \u2020\n\n### Affiliations\n\n1. Department of Environmental Systems Science, ETH Zurich, Swiss Federal Institute of Technology Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n2. Swiss Institute of Bioinformatics Lausanne Switzerland ([ROR:002n09z45](https://ror.org/002n09z45))\n3. Department of Biosystems Science and Engineering, ETH Zurich, Swiss Federal Institute of Technology Basel Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n4. Department of Mathematics, ETH Zurich, Swiss Federal Institute of Technology Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n5. Biozentrum, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe effective reproductive number Re is a key indicator of the growth of an epidemic. Since the start of the SARS-CoV-2 pandemic, many methods and online dashboards have sprung up to monitor this number through time. However, these methods are not always thoroughly tested, correctly placed in time, or are overly confident during high incidence periods. Here, we present a method for timely estimation of Re, applied to COVID-19 epidemic data from 170 countries. We thoroughly evaluate the method on simulated data, and present an intuitive web interface for interactive data exploration. We show that, in early 2020, in the majority of countries the estimated Re dropped below 1 only after the introduction of major non-pharmaceutical interventions. For Europe the implementation of non-pharmaceutical interventions was broadly associated with reductions in the estimated Re. Globally though, relaxing non-pharmaceutical interventions had more varied effects on subsequent Re estimates. Our framework is useful to inform governments and the general public on the status of epidemics in their country, and is used as the official source of Re estimates for SARS-CoV-2 in Switzerland. It further allows detailed comparison between countries and in relation to covariates such as implemented public health policies, mobility, behaviour, or weather data.\n\n## Introduction\n\nDuring an infectious-disease outbreak, such as the SARS-CoV-2 pandemic, accurate monitoring of the epidemic situation is critical to the decision-making process of governments and public health authorities. The magnitude of an epidemic, as well as its spatial and temporal infection dynamics determine the exposure risk posed to citizens in the near and long-term future, the pressure on critical infrastructure like hospitals, and the overall burden of disease to society.\n\nThe effective reproductive number $R_{e}$ is a key indicator to describe how efficiently a pathogen spreads in a given population at a given time (Anderson and May, 1991; Cauchemez et al., 2006; Wallinga and Lipsitch, 2007). It quantifies the average number of secondary infections caused by a primary infected individual. It also has a natural threshold value of 1, below which the epidemic reduces in size Anderson and May, 1991; Nishiura and Chowell, 2009. $R_{e}$ typically changes during the course of an epidemic as a result of the depletion of susceptible individuals, changed contact behaviour, seasonality of the pathogen, or the effect of pharmaceutical and non-pharmaceutical interventions (NPIs) (Anderson and May, 1991; Delamater et al., 2019; Scire et al., 2020; Ali et al., 2020; Flaxman et al., 2020).\n\nDifferent methods have been developed to estimate $R_{e}$. They broadly fall into two categories: those based on compartmental models, (e.g. Delamater et al., 2019; Kucharski et al., 2020; Zhou et al., 2020), and those that infer the number of secondary infections per infected individual directly, based on a time series of infection incidence, (e.g. Wallinga and Teunis, 2004; Cori et al., 2013). We focus on the latter class of methods as they rely on few, simple assumptions, are less prone to model misspecifications, and are well-suited for ongoing monitoring of the epidemic (Gostic et al., 2020). In particular, we consider the EpiEstim method of Cori et al., 2013.\n\nThe infection incidence based methods face the difficulty that infection events cannot be observed directly (Gostic et al., 2020). These events can only be surmised with a certain time lag, e.g. when individuals show symptoms and are tested, via contact tracing, or via periodic testing of a cohort of individuals (Nishiura and Chowell, 2009). To use these methods, one must thus employ a proxy for infection events (e.g. the observed incidence of confirmed cases, hospitalisations, or deaths). This proxy is either used directly in lieu of the infection incidence, or it is used as an indirect observation to infer past infections (Gostic et al., 2020). It is important to relate $R_{e}$ estimates to the timing of infection events because this allows multiple proxies of infection events, with differing delays, to be used separately to monitor the same epidemic (Scire et al., 2020). In addition, any factors that may affect transmission dynamics will do so at the time infections occurred. If $R_{e}$ is placed properly on this timescale, it can be compared directly to external covariates like weather and interventions (Flaxman et al., 2020; Soltesz et al., 2020). However, depending on the method used to infer the timing of infections from the observed incidence time series, one can also introduce biases such as smoothing sudden changes in $R_{e}$ (Gostic et al., 2020; Goldstein et al., 2009; Petermann and Wyler, 2020).\n\nSeveral methods, software packages, and online dashboards have been developed to monitor developments in $R_{e}$ during the SARS-CoV-2 pandemic (e.g. Abbott et al., 2020b; Systrom et al., 2020; Teb\u00e9 et al., 2020; Scott et al., 2020; Hamouda, 2020; Richter et al., 2020). A pipeline for the continuous estimation of $R_{e}$ using infection incidence based methods should include four critical steps: (i) gathering and curating observable proxy data of infection incidence, (ii) reconstruction of the unobserved infection events, (iii) $R_{e}$ estimation, and (iv) communication of the results, including uncertainty and potential biases. These four axes also define the differences between existing methods. The first step dictates e.g. the geographical scope of the $R_{e}$ estimates reported. During the SARS-CoV-2 epidemic, many local public health authorities have made case data publicly available. Depending on the data sources used, estimated $R_{e}$ values span from the scale of a city, region, country, or the entire globe (Systrom et al., 2020; Pan et al., 2020; Robert Koch-Institut, 2020). The second step, i.e. going from a noisy time series of indirect observations to an infection incidence time series, is technically challenging. Biases can be introduced easily, and accurately assessing the uncertainty around the inferred infection incidence is a challenge in itself (Gostic et al., 2020). For the third step, i.e. to estimate $R_{e}$ from a timeline of infection events, there are ready-to-use software packages (Cori et al., 2013; Obadia et al., 2012), which produce $R_{e}$ estimates along with an estimate of the uncertainty resulting from this step. Finally, the communication of results to the general public and decision makers is essential, but often overlooked. We present a pipeline, together with an online dashboard, for timely monitoring of $R_{e}$. We use publicly available data gathered by different public health authorities. Wherever possible, we show results obtained from different types of case reports (confirmed cases, hospitalisations or deaths). This allows comparison across observation types and to balance the biases inherent in the different types. Results are updated daily, and can be found on https://ibz-shiny.ethz.ch/covid-19-re-international/. The results of this method have been used directly in public health policy making in Switzerland for the past 2 years, and were also communicated by the Federal Office of Public Health on https://www.covid19.admin.ch/en/overview during that time. Through continuous engagement with the public, scientific experts, and thorough evaluation on simulated scenarios, we have created a robust and transparent method of enduring relevance for the current and future epidemics.\n\nBecause $R_{e}$ estimates reflect changes in virus transmission dynamics, they can be used to assess the impact of public health interventions. Prior work on the relative impact of specific non-pharmaceutical interventions on $R_{e}$ has shown conflicting results (Flaxman et al., 2020; Esra et al., 2020; Banholzer et al., 2021; Soltesz et al., 2020; Haug et al., 2020; Kohanovski et al., 2022). These differences can be attributed mostly to different model formulations (Soltesz et al., 2020; Sharma et al., 2020; Banholzer et al., 2022), including differing assumptions on the independence of NPIs (Sharma et al., 2020), differing timescales over which the effect of the NPI was analysed (Flaxman et al., 2020; Haug et al., 2020), whether the time point of the NPI was assumed fixed or allowed to vary (Kohanovski et al., 2022), and differing geographical scope. There is a need to address whether the strength of measures and the speed of their implementation resulted in a larger and faster decrease of $R_{e}$, and specifically whether highly restrictive lockdowns were necessary to achieve $R_{e}<1$. Further, it remains unclear how the impact of interventions differed across time and geographical regions. We add to this debate by using our $R_{e}$ estimates across geographical regions and timescales that include the lifting of many NPIs. While we cannot determine causal relationships, we use our method to assess likely associations.\n\n## Results\n\n### A pipeline to estimate the effective reproductive number of SARS-CoV-2\n\nWe have developed a pipeline to estimate the time-varying effective reproductive number of SARS-CoV-2 from observed COVID-19 case incidence time series (see Materials and Methods). The objective was to achieve stable estimates for multiple types of data, and with an adequate representation of uncertainty. At the core, we use the EpiEstim method (Cori et al., 2013) to estimate $R_{e}$ from a time series of infection incidence. To infer the infection incidence from a time series of (noisy) observations, we extended the deconvolution method by Goldstein et al. to deal with partially observed data and time-varying delay distributions (Gostic et al., 2020; Goldstein et al., 2009). We smooth the data prior to deconvolution to reduce numerical artefacts resulting from their weekly patterns and overall noisy nature. We compute point-wise 95% confidence intervals for the true $R_{e}$ values, using the union of a block bootstrap method, designed to account for variation in the case observations, and the credible intervals from EpiEstim. As observed incidence data we use COVID-19 confirmed case data, hospital admissions, and deaths (with type specific delay distributions, see Materials and Methods). We publish separate $R_{e}$ estimates for each of these types of incidence data. The most recent $R_{e}$ estimate lies further in the past than the most recent observed incidence data due to the delay between infection and case observation.\n\n### Evaluation on simulated data\n\nTo evaluate our method, we used simulations of several epidemic scenarios (see Materials and Methods for more details). For each scenario, we specified an $R_{e}$ time series. The specified $R_{e}$ trajectories were parametrised in a piecewise linear fashion. To mimic the course of the COVID-19 outbreaks observed in many European countries in 2020 (Lemaitre et al., 2020), we started with $R_{e}$ values around 3, then dropped to a value below 1 (the \u2018initial decrease\u2019), stayed around 1 in summer and slightly above 1 (the \u2018second wave\u2019) in autumn (Figure 1). From each specified $R_{e}$ trajectory, we stochastically simulated 100 time series of infections and their resulting case observations. To account for reporting effects and to better mimic observed COVID-19 case data from around the world, we added additional autocorrelated noise to the case observations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71345/elife-71345-fig1-v2.jpg)\n\n**Figure 1.:** (A) The specified $R_{e}$ trajectory (black line) was used to stochastically simulate 100 trajectories of observed cases. From each trajectory, we estimated $R_{e}$ (yellow boxplots) and constructed a 95% confidence interval (purple boxplots of the lower/upper endpoint). (B) Fraction of simulations for which the true $R_{e}$ value was within the 95% confidence interval. The dashed red line indicates the nominal 95% coverage. (C) Root mean squared relative error for every time point. (D) Fraction of simulations for which $R_{e}$ is estimated to be significantly above or below one, depending on the true value of $R_{e}$.\n\nWe then used our method to infer the infection incidence and $R_{e}$ from each simulated time series of case observations, and compared these to the true underlying $R_{e}$ values (Figure 1). The results show that the method accurately estimates the effective reproductive number (Figure 1; metrics described in Materials and Methods). Across most time points, the 95% confidence interval includes the true $R_{e}$ value (coverage; Figure 1B). The low root mean squared error (RMSE) indicates that our point estimates closely track the true $R_{e}$ value (Figure 1C). Importantly, we correctly infer whether $R_{e}$ is significantly above or below 1 in this scenario: we never infer that $R_{e}$ is significantly above 1 when the true value is below 1, and only for two time points the estimates are significantly below 1 for some simulations when the true value is a little above 1 (Figure 1D). Due to the smoothing step prior to deconvolution, we slightly misestimate $R_{e}$ during steep changes (see Appendix 2, and Appendix 3\u2014figure 1 for more scenarios). However, the inclusion of smoothing greatly improves the performance across scenarios with different types of observation noise (Appendix 3\u2014figures 2 and 3). For a wide range of infection incidences, the 95% confidence interval is informative and covers the true value of $R_{e}$ (Appendix 3\u2014figures 4 and 5). Our block-bootstrapping method greatly improves coverage compared to the out-of-the-box EpiEstim method. Our method also outperforms the common approach of using a fixed delay to infer the infection incidence time series (Appendix 3\u2014figure 6).\n\nWe further tested the impact of misspecifying the delay between infections and observations. Misspecifying the mean of the delay distribution between infection and case observation by up to 2 days does not have a strong effect on the $R_{e}$ estimates, whereas larger misspecifications by 5 or 10 days lead to a more substantial decrease in coverage (Appendix 3\u2014figure 7). Correspondingly, allowing for time-varying delay distributions has a pronounced effect on the estimated $R_{e}$ only when changes in the mean of the delay distribution are large (Appendix 3\u2014figure 8). The impact of other model misspecifications, e.g. of the generation time interval, have been investigated by Gostic et al., 2020 for this class of methods.\n\n### Stability of the Re estimates in an outbreak monitoring context\n\nAs our $R_{e}$ estimates for SARS-CoV-2 were directly policy relevant in Switzerland, we investigated their stability as new data becomes available (up to 21 additional days of data; Figure 2). With each new day of incidence data, it becomes possible to estimate $R_{e}$ for an additional day in the past. The most recent available $R_{e}$ estimate will be delayed with respect to the observed case incidence by at least the median delay from infection to observation to ensures sufficient information is available in the data (and can be delayed further if required; see below). As time passes and more observations become available, one can estimate more recent values of $R_{e}$. Importantly, the estimated $R_{e}\u2062(t)$ for a day $t$ is updated whenever additional data is added. This means that the $R_{e}\u2062(t)$ estimates initially change with each passing day before they settle on a long-term, stable value. In the analysis of Swiss COVID-19 case data in Figure 2B, $R_{e}$ estimates for Sept. 1 2020 to April 1 2021 based on data up to April 30 2021 are referred to as \u2018stable $R_{e}$ estimates\u2019. During rapid changes in the real $R_{e}$, the initial estimates for $R_{e}\u2062(t)$ can occasionally under- or overshoot the long-term stable value. However, with our improved 95% confidence intervals (CI), the percentage of the first estimated CI for $R_{e}\u2062(t)$ that is contained within the stable CI is substantially improved compared to purely EpiEstim-based uncertainty intervals (Figure 2). This difference is particularly striking during periods of high case incidence (e.g. October 2020), when the EpiEstim uncertainty interval is very narrow.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71345/elife-71345-fig2-v2.jpg)\n\n**Figure 2.:** Stability of the Swiss $R_{e}$ estimates based on confirmed COVID-19 cases, upon adding additional days of observations.(A) Line segments correspond to 3 weeks of estimates made with the same input data (e.g. data up to December 1st). The segments were assigned an arbitrary colour for ease of distinction. For each day, $R_{e}$ estimates and associated 95% confidence intervals (CIs) are overlaid, from the first possible estimate for that day up to estimates including 3 additional weeks of data. The latter, always the left end of a line segment, corresponds to the stable estimate. (B) Percentage of the first estimated CI that is contained in the stable CI based on data from 30 April 2021. This percentage was calculated as the width of the intersection of both CIs, divided by the width of the first CI. The colour indicates whether the stable $R_{e}$ estimate was contained in the first reported CI. In both rows, the left column shows uncertainty intervals from EpiEstim on the original data, and the right our improved 95% CIs. Both columns use the same pipeline, and differ only in the construction of the uncertainty intervals.\n\nWe complemented this analysis on empirical data with an assessment of the stability of $R_{e}$ estimates on synthetic data. Using the set-up described before, we simulated 4 $R_{e}$ scenarios: a constant trend, a slow increase, a slow decrease, and an abrupt decrease in $R_{e}$. Contrary to before, we estimated $R_{e}$ repeatedly, adding an additional day to the simulation in each iteration (Appendix 4\u2014figure 1). For each scenario, we compare \u2018raw\u2019 $R_{e}$ estimates to trajectories for which the 4 most recent $R_{e}$ estimates were removed. This analysis shows that the last few $R_{e}$ estimates can lay outside of the stabilized confidence interval, in particular when the real $R_{e}$ trend is increasing. Instead, the truncated trajectories appear more stable as their most recent estimate has already been consolidated over 4 days. This highlights a trade-off between timeliness and accuracy when publishing $R_{e}$ estimates. On our online dashboard we present truncated $R_{e}$ estimates for Swiss cantons since these estimates were directly policy-relevant in Switzerland.\n\n### Detailed data allows more precise analysis: the example of Switzerland\n\nWhen detailed epidemiological data about individual cases is available (in the form of a line list), the precision of our method can be increased by relaxing the assumptions that (i) distributions of delays between infection and observation do not change through time and (ii) outbreaks occur in populations that are isolated at the country-level. In particular, we collaborated with the Federal Office of Public Health (FOPH) in Switzerland to relax these assumptions and further refine the monitoring of the Swiss SARS-CoV-2 epidemic.\n\nThe FOPH line list contains information on the delays between onset of symptoms and reporting - of a positive test, hospitalisation or death - for a substantial fraction of the reported cases. For each of these three types of case report, we estimate the time-varying empirical delay distribution for the delay from infection to reporting. We use this time-varying distribution as input to the deconvolution step, instead of the fixed delay distribution from the literature which is used for countries without an available line list (for details see Materials and Methods section 4.3). Each delay distribution is thus tailored to the specifics of the Swiss population and health system. Since each distribution varies through time, it reflects changes caused by e.g. improved contact tracing or overburdened health offices (see Appendix 4\u2014figure 2; Appendix 1). Whenever available in the FOPH line list, we use the symptom onset date of patients as the date of observation and thus only deconvolve the incubation period to obtain a time series of infection dates. This was most relevant until early 2021, after which the date of symptom onset was rarely recorded anymore. For most days, the effect of these modifications on the $R_{e}$ point estimates is slight (Appendix 4\u2014figure 3; shown for confirmed case data), yet the difference for a particular day can be as big as 20%.\n\nUsing FOPH data on the fraction of cases infected abroad, we can correct our $R_{e}$ estimate for imported cases. This is especially important in phases during which the local epidemic is seeded from abroad, and local transmission occurs at a low rate relative to case importation (Appendix 4\u2014figure 4). This correction, which relies on EpiEstim (Cori et al., 2013), treats imported cases as pure infectors, and not infectees. It further assumes that imported cases transmit at the same rate as local cases. When this is not the case, e.g. when strict quarantines are imposed on travellers or travellers have more contacts compared to the rest of the population, and when a large fraction of all cases are imported, this can bias results (Tsang et al., 2021). Additionally, since we do not have data on the number of cases infected in Switzerland that are \u201cexported\" to other countries, we cannot correct for exports. Thus, the estimated $R_{e}$ value corrected for imports is a lower bound for the $R_{e}$ estimate which would be obtained if we could account for the location of infection of all cases detected in Switzerland or exported out of the country.\n\n### Comparison with existing methods\n\nDuring the COVID-19 pandemic, research groups and local public health authorities around the world developed and used methods to estimate the effective reproductive number (Abbott et al., 2020a; Scott et al., 2020; Hamouda, 2020; Richter et al., 2020). To put our method into context, we compare against EpiNow2, a prominent R-package to estimate (Abbott et al., 2020a), and the official $R_{e}$ estimates for Germany (developed by the Robert Koch-Institut, 2020; RKI Hamouda, 2020) and Austria (developed by the Austrian Agency for Health and Food Safety; AGES Richter et al., 2020). A detailed comparison of the structure and features of these methods \u2014with the addition of the epidemia R-package (Scott et al., 2020)\u2014 can be found in Supplementary file 2. To the best of our knowledge, our method is the only one that can account for variations through time in delay distributions and combine symptom onset data with case data.\n\nWe compiled publicly available $R_{e}$ estimates for Switzerland, Austria and Germany from these research groups and institutions (Figure 3; Abbott et al., 2022; Heiden, 2021; TU Graz AGES, 2021). In this case the underlying truth is unknown, yet we can compare how well the point estimates and confidence intervals correspond between different methods. Both the RKI and AGES publish very narrow confidence intervals, which are unlikely to accurately capture the uncertainty around the estimates (similar to Figure 2). In addition, the trend of AGES estimates appear shifted closer to the present than our estimates (Figure 3). This is because AGES applies EpiEstim directly to observed case data, thus indirectly assuming that case confirmation occurs on the day of infection. The estimates from EpiNow2 and ours follow a qualitatively similar trend, although the EpiNow2 estimates are smoother and there is a small lag between both estimates, likely due to differences in the specified observation delay distribution. An in-depth comparison exploring the accuracy and stability of estimates produced by all available methods lies beyond the scope of this work, but would certainly be beneficial to give a full picture of the state-of-the-art of $R_{e}$ estimation methods.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71345/elife-71345-fig3-v2.jpg)\n\n**Figure 3.:** Comparison of published $R_{e}$ estimates for three countries.Point estimates are presented with a solid line and 95% confidence intervals are presented as coloured ribbons.\n\n### Monitoring Re during the COVID-19 pandemic\n\nWe developed an online dashboard (https://ibz-shiny.ethz.ch/covid-19-re-international/) on which we present daily-updated results of this $R_{e}$ estimation method applied to COVID-19 case data from 170 countries (Figure 4). For most countries, we include multiple observation sources, such as daily incidence of COVID-19 cases and deaths, and, when available, hospital admissions. We estimate $R_{e}$ separately from each incidence type and make the estimates available for download, as an open resource for other researchers and the general public alike.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71345/elife-71345-fig4-v2.jpg)\n\n**Figure 4.:** (A) Swiss case incidence with evidence of weekly testing patterns (top row), $R_{e}$ estimates with associated 95% confidence intervals from four types of observation data (middle row), and timeline of stringency index and vaccination coverage (bottom row). (B) World map of incidence per 100\u2019000 inhabitants over the last 14 days. One can also display the worldwide $R_{e}$ estimates instead. (C) Comparison of $R_{e}$ estimates across four countries (Austria, Chile, India and Morocco), with timelines of stringency indices and vaccination coverage. All panels were extracted on May 12, 2022. Dashboard url: https://ibz-shiny.ethz.ch/covid-19-re-international.\n\nThe online app allows for comparison through time within a single country, between multiple observation traces, and between multiple countries. The data download further allows users to put these estimates in relation to external covariates such as mobility, weather, or behavioural data. The map view enables comparison across larger geographical areas and additionally reports the cases per 100\u2019000 inhabitants per 14 days. We additionally show the Oxford Stringency Index and vaccination coverage for context (Hale et al., 2021; Roser et al., 2020).\n\n### The effect of lockdowns in spring 2020 on the estimated Re of SARS-CoV-2\n\nWe assessed the association between non-pharmaceutical interventions (NPIs) and the estimated effective reproductive number $R_{e}$ during the early stage of the COVID-19 pandemic. We selected 20 European countries for which the reported data was free of major gaps or spikes, and for which we could estimate $R_{e}$ prior to the nationwide implementation of a lockdown in spring 2020. The dates of interventions were extracted from news reports (sources listed in Appendix 6\u2014table 2), and \u2018lockdown\u2019 taken to refer to stay-at-home orders of differing intensity. Of the countries investigated, all except Sweden implemented a lockdown (19/20). Using case data, we inferred that $R_{e}$ was significantly above one prior to the lockdown measures in nearly all countries with a lockdown (15/19; Table 1). Denmark, which had a complex outbreak consisting of two initial waves, and Germany, which experienced a cluster of early cases, had an estimated $R_{e}$ significantly below one prior to this date. For countries with very short delays between the lockdown and the estimated date that $R_{e}<1$ (e.g. Austria, Switzerland) we can not exclude the possibility that the \u2018true\u2019 $R_{e}$ may have been below 1 prior to the lockdown since our pipeline introduces smoothing to the estimates (see Appendix 2). The results are remarkably consistent across the different observation types (Appendix 6\u2014table 1). However, the 95% confidence intervals tend to be wider for the estimates based on death incidence data because the number of deaths is much smaller than the number of cases, and the relative noise in observations tends to be higher.\n\n**Table 1.**\n Investigating the relation between the date of \u2018lockdown\u2019 and the date when the estimated $R_{e}$ based on case reports dropped below 1.Based on news reports, we report when a country implemented stay-at-home orders (a \u2018lockdown\u2019). The column \u2018$R^_{e}<1$\u2019 indicates when the $R_{e}$ point estimate first dropped below 1. The column \u2018CI includes 1\u2019 details the corresponding time interval where the 95% confidence interval included 1. Of the investigated countries that implemented a nationwide lockdown, four (Denmark, Germany, the Netherlands, Slovenia) had 95% confidence intervals that included 1 or were below before a nationwide lockdown was implemented. The column \u2018Time until $R^_{e}<1$\u2019 indicates the number of days between the lockdown and the date that the $R_{e}$ point estimate dropped below 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Country</th>\n      <th>Lockdown</th>\n      <th>Re &lt;1</th>\n      <th>CI includes 1</th>\n      <th>Time until Re &lt;1</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Austria</td>\n      <td>16\u201330</td>\n      <td>20\u201330</td>\n      <td>[20-03, 20-03]</td>\n      <td>4 days</td>\n    </tr>\n    <tr>\n      <td>Belgium</td>\n      <td>18\u201330</td>\n      <td>30\u201330</td>\n      <td>[25-03, 03-04]</td>\n      <td>12 days</td>\n    </tr>\n    <tr>\n      <td>Denmark</td>\n      <td>18\u201330</td>\n      <td>\u226410\u201303</td>\n      <td>[\u226410\u201303, 20\u201306]</td>\n      <td>\u20138 days</td>\n    </tr>\n    <tr>\n      <td>Finland</td>\n      <td>16\u201330</td>\n      <td>01-Feb</td>\n      <td>[29-03, 30-04]</td>\n      <td>17 days</td>\n    </tr>\n    <tr>\n      <td>France</td>\n      <td>17\u201330</td>\n      <td>27\u201330</td>\n      <td>[23-03, 07-04]</td>\n      <td>10 days</td>\n    </tr>\n    <tr>\n      <td>Germany</td>\n      <td>22\u201330</td>\n      <td>18\u201330</td>\n      <td>[17-03, 19-03]</td>\n      <td>\u20134 days</td>\n    </tr>\n    <tr>\n      <td>Ireland</td>\n      <td>27\u201330</td>\n      <td>01\u2013100</td>\n      <td>[04\u201304, 15\u201304]</td>\n      <td>12 days</td>\n    </tr>\n    <tr>\n      <td>Italy</td>\n      <td>01\u2013300</td>\n      <td>18\u201330</td>\n      <td>[17-03, 19-03]</td>\n      <td>8 days</td>\n    </tr>\n    <tr>\n      <td>Netherlands</td>\n      <td>23\u201330</td>\n      <td>01-Jan</td>\n      <td>[22-03, 10-04]</td>\n      <td>13 days</td>\n    </tr>\n    <tr>\n      <td>Norway</td>\n      <td>14\u201330</td>\n      <td>21\u201330</td>\n      <td>[17-03, 19-03]</td>\n      <td>7 days</td>\n    </tr>\n    <tr>\n      <td>Poland</td>\n      <td>25\u201330</td>\n      <td>01-Jan</td>\n      <td>[31-03, 17-04]</td>\n      <td>8 days</td>\n    </tr>\n    <tr>\n      <td>Portugal</td>\n      <td>16\u201330</td>\n      <td>28\u201330</td>\n      <td>[23-03, 15-04]</td>\n      <td>12 days</td>\n    </tr>\n    <tr>\n      <td>Romania</td>\n      <td>24\u201330</td>\n      <td>01-Jun</td>\n      <td>[31-03, 29-04]</td>\n      <td>13 days</td>\n    </tr>\n    <tr>\n      <td>Russian Federation</td>\n      <td>30\u201330</td>\n      <td>01-Apr</td>\n      <td>[01\u201305, 08\u201305]</td>\n      <td>35 days</td>\n    </tr>\n    <tr>\n      <td>Slovenia</td>\n      <td>20\u201330</td>\n      <td>23\u201330</td>\n      <td>[\u226413\u201303, 26\u201303]</td>\n      <td>3 days</td>\n    </tr>\n    <tr>\n      <td>Spain</td>\n      <td>14\u201330</td>\n      <td>26\u201330</td>\n      <td>[25-03, 26-03]</td>\n      <td>12 days</td>\n    </tr>\n    <tr>\n      <td>Sweden</td>\n      <td></td>\n      <td>01-Jan</td>\n      <td>[06\u201303,\u226503-05-2021]</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Switzerland</td>\n      <td>17\u201330</td>\n      <td>22\u201330</td>\n      <td>[20-03, 22-03]</td>\n      <td>5 days</td>\n    </tr>\n    <tr>\n      <td>Turkey</td>\n      <td>21\u201330</td>\n      <td>01-Aug</td>\n      <td>[01\u201304, 13\u201304]</td>\n      <td>18 days</td>\n    </tr>\n    <tr>\n      <td>United Kingdom</td>\n      <td>24\u201330</td>\n      <td>30\u201330</td>\n      <td>[28-03, 20-04]</td>\n      <td>6 days</td>\n    </tr>\n  </tbody>\n</table>\n\nTo consider the association between NPIs and the estimated $R_{e}$ for countries outside of Europe, we used the stringency index (SI) of the Blavatnik School of Government (Hale et al., 2020) to describe the public health response in different countries (Figure 4C). This is a compound measure describing e.g. whether a state has closed borders, schools, or workplaces. For example, a country with widespread information campaigns, partially closed borders, closed schools, and a ban on public events and gatherings with more than 10 people would have an SI slightly above 50. As reference date, we used the date when a country first exceeded a stringency index of 50 ($t_{S\u2062I\u206250}$). Then, we investigated whether the estimated $R_{e}$ was significantly above 1 prior to the reference date (i.e. the lower bound of the 95% confidence interval was above 1). We excluded countries without $R_{e}$ estimates before the reference date $t_{S\u2062I\u206250}$. Worldwide, for 35 out of the 42 countries which fulfilled the criteria for inclusion (list in Appendix 6), $R_{e}$ was significantly above 1 prior to $t_{S\u2062I\u206250}$. As a sensitivity analysis, we performed the same calculation with a different reference date $t_{m\u2062a\u2062x}$, defined as the date with the biggest increase in SI in the preceding 7 days. The results were very similar, with 38/45 countries significantly above one before $t_{m\u2062a\u2062x}$ (Appendix 6).\n\n### Insights into continent-specific impacts of NPIs\n\nTo further investigate the association between non-pharmaceutical interventions and changes in the estimated reproductive number of SARS-CoV-2, we extended our analysis beyond the first 2020 epidemic wave. We included both the implementation and lifting of NPIs until May 3rd 2021 (increases and decreases in stringency). For each week and each country, we calculated the change in stringency index over the preceding week ($\u0394\u2062S\u2062I_{t}=S\u2062I\u2062(t)-S\u2062I\u2062(t-7)$) and the corresponding change in the estimated $R_{e}$ (during the same week $\u0394\u2062R^_{e,t}=R^_{e}\u2062(t)-R^_{e}\u2062(t-7)$, 1 week later $\u0394\u2062R^_{e,t+7}=R^_{e}\u2062(t+7)-R^_{e}\u2062(t)$, or 2 weeks later $\u0394\u2062R^_{e,t+14}=R^_{e}\u2062(t+14)-R^_{e}\u2062(t)$). If NPIs were effective, we expect increases in stringency to be associated with decreases in the estimated $R_{e}$ and vice versa. We do find such an association for increases in stringency e.g. in Europe. In Europe we also see that large increases in stringency are associated with larger decreases in $R_{e}$ 7\u201314 days after the change in SI. However, the association between decreases in stringency and changes in $R_{e}$ is heterogeneous on all continents (Figure 5A). This suggests that reversing non-pharmaceutical interventions had a different effect than introducing them.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71345/elife-71345-fig5-v2.jpg)\n\n**Figure 5.:** The association between the implementation or lifting of non-pharmaceutical interventions and changes in $R_{e}$ until May 2021.(A) The change in the estimated $R_{e}$ at the same time as ($R\u2062(t)$) or following ($R\u2062(t+7)$ and $R\u2062(t+14)$) the implementation (above x-axis) or lifting (below x-axis) of NPIs in a given week. (B) The change in the estimated $R_{e}$ related to the change in mobility in the same week. The error bars indicate the Q1 and Q3 quartiles.\n\nWe repeated the same analysis for Europe, comparing against various measures of Google mobility data (Figure 5B). Increased mobility in residential areas, and decreased mobility at workplaces or grocery stores is associated with decreases in $R_{e}$.\n\n## Discussion\n\nWe have developed a pipeline to estimate the effective reproductive number $R_{e}$ of SARS-CoV-2 for both timely monitoring and retrospective investigation. We evaluated our estimates on simulated data. We showed that the inferred $R_{e}$ curve can be over-smoothed on simulated data, but that this disadvantage is outweighed by the increased stability of the estimates. Overall, we show that the relative error in the $R_{e}$ estimates is small.\n\nDuring the ongoing SARS-CoV-2 pandemic, $R_{e}$ estimates are of interest to health authorities, politicians, decision makers, the media and the general public. Because of this broad interest and the importance of $R_{e}$ estimates, it is crucial to communicate both the results as well as the associated uncertainty and caveats in an open, transparent and accessible way. This is why we display daily updated results on an online dashboard, accessible at https://ibz-shiny.ethz.ch/covid-19-re-international/. The dashboard shows $R_{e}$ estimates in the form of time series for each included country or region, and a global map containing the latest $R_{e}$ estimates and normalised incidence. For all countries, we further display a timeline of the stringency index of the Blavatnik School of Government (Hale et al., 2021), and current vaccination coverage.\n\nA unique advantage of the monitoring method we have developed is the parallel use of different types of observation data, all reflecting the same underlying infection process (Scire et al., 2020). Wherever we have data of sufficient quality, we estimate $R_{e}$ separately based on confirmed cases, hospitalisations and death reports. The advantages and disadvantages of the different observation types are discussed in the Appendix 1. Comparing estimates from several types of data is a powerful way to evaluate the sensitivity of the results to the type of observations they were derived from. More generally, the method is applicable to any other type of incidence data, such as admissions to intensive care units or excess death data. We have also extended this method to make use of daily measurements of SARS-CoV-2 viral concentrations in wastewater (Huisman et al., 2022). The potential limitations of our $R_{e}$ estimation method are discussed in detail in the Appendix 1.\n\nAny decision to implement, remove or otherwise adjust measures aimed at infection control will be informed by epidemiological, social and economic factors (Sebhatu et al., 2020). We can aid this decision making process by investigating the association between adjustments of public-health measures and the estimated $R_{e}$. In particular, the merits of nation-wide lockdowns in the context of the COVID-19 pandemic have been heavily discussed, both in the scientific literature and the public sphere (Flaxman et al., 2020; Haug et al., 2020; Banholzer et al., 2021; Soltesz et al., 2020; Karberg, 2020). Analyses showing that $R_{e}$ estimates had dropped below 1 before the strictest measures were enforced were frequently used to claim that a lockdown was not necessary (Karberg, 2020). We showed that this argumentation cannot be applied universally: for 15 out of 20 European countries, we found that the estimated $R_{e}$ was significantly above 1 prior to the lockdown in spring of 2020. Interestingly, the result we obtain for Germany critically depends on whether we use symptom onset data, or more widely available case reports.\n\nExtending our analysis beyond the first wave, we find differences between continents in the association between changes in the stringency of NPIs and changes in $R_{e}$. This could reflect differences in the speed with which lockdowns were put into practice (Kohanovski et al., 2022), the de facto lockdown stringency, or socio-cultural aspects (Sebhatu et al., 2020; Mbow et al., 2020). It is often argued that, especially in countries with a large informal business sector, there may be a difference between the official containment measures and those adhered to or implemented de facto (Mbow et al., 2020). However, for continents where we find no significant correlation, this could also be because a large fraction of NPIs were implemented at a time for which we could not estimate changes in $R_{e}$. Many African countries had early and strict government responses, often prior to the first detected cases. These are thought to have delayed the virus in establishing a foothold on the continent (Mbow et al., 2020).\n\nImportantly, our analysis suggests that reversing non-pharmaceutical interventions may have a very different effect than introducing them. This could be because the situation is not fully reverted: due to increased public awareness, testing, contact tracing, and quarantine measures still in place. In addition, the epidemic situation - in terms of number of infected individuals - is likely different when measures are implemented or lifted.\n\nOur analysis could be confounded by economic, social, and psychological factors motivating the implementation or release of measures. With the current stringency measures we cannot account for diversity in adherence to NPIs across geographic regions and through time. Cultural norms, defiance towards public authorities, \"lockdown fatigue\", and economic pressures are all among the factors that may determine whether NPIs are in fact adhered to. In addition, there is increasing evidence that weather may be a factor influencing $R_{e}$ through its effect on people\u2019s behaviour and on properties of the virus (Morris et al., 2021). In the future, our tools to estimate $R_{e}$ could be used to explore associations of these many factors with $R_{e}$ estimates, with the aim of identifying minimal sets of factors that may ensure an $R_{e}<1$ for a particular location.\n\n## Materials and methods\n\n### Overview of the software pipeline\n\nThe software pipeline we developed allows the estimation of $R_{e}$ from different proxies for the infection incidence, such as the time series of confirmed cases, hospitalisations or deaths. It provides a separate estimate of the $R_{e}$ trajectory through time for each proxy. In a first step, we smooth the case observations and deconvolve the smoothed observations by the type-specific delay distribution to obtain an estimate of the infection incidence time series. Second, we use the package EpiEstim to estimate the effective reproductive number Re from this infection incidence. We assess the uncertainty in the estimates using the union of a block bootstrap method, designed to account for variation in the case observations, and the credible intervals from EpiEstim.\n\n### Smoothing the case observations\n\nTo reduce the influence of weekly patterns in case reporting data, as well as reporting irregularities, we smooth the observed incidence data prior to deconvolution. To smooth the incidence data, we use local polynomial regression (LOESS) with 1st order polynomials and tricubic weights. The smoothing parameter alpha is set such that we include 21 days of data in the local neighbourhood of each point. After smoothing, we normalise to the original total number of cases. Here we use smoothing parameter 21 because it performs best overall in our simulations. We investigated the effect of this tuning parameter in simulations, see Appendix 5\u2014figure 5.\n\n### Estimating the infection incidence through deconvolution\n\nTo recover the non-observed time series of infection incidence, we deconvolve the smoothed observed time series of COVID-19 case incidence with a delay distribution specific to the type of case detection (case confirmation, hospital admission, death). To this end, we extended the deconvolution method of Goldstein et al., 2009, which is itself an adaptation of the Richardson-Lucy algorithm (Richardson, 1972; Lucy, 1974) (essentially an expectation maximisation algorithm), to deal with zero-incidence case observations and time-varying delay distributions.\n\nFormally, the method infers a deconvolved output time series $(\\lambda_{1},\u2026,\\lambda_{N})$ from an input time series $(D\u00af_{K},\u2026,D\u00af_{N})$, where $K\\geq1$ and $D\u00af_{i}$ indicates the smoothed number of observations on day $i$ (e.g. confirmed cases, hospitalisations, or deaths). Let $m_{l}^{j}$ be the probability that an infection on day $j$ takes $l\\geq0$ days to be observed. If no line list data is available, $m_{l}^{j}=m_{l}$ and no time-variation of the delay distribution is assumed. Let qj be the probability that an infection that occurred on day $j$ is observed during the time-window of observations, i.e. is counted towards $(D\u00af_{K},\u2026,D\u00af_{N})$. Then:\n\n$$\nq_{j}=\\sum_{l=K-j}^{N-j}m_{l}^{j}.\n$$\n\nLet $E_{i}$ be the expected number of observed cases on day $i$, for a given infection incidence $(\\lambda_{k})$:\n\n$$\nE_{i}={\\sumj=1i\\lambda_{j}m_{i\u2212j}^{j}forK\\geqi\\geqN0for0<i<K.\n$$\n\nThe deconvolution algorithm uses expectation maximisation (Dempster et al., 1977) to find a final infection incidence estimate, which has the highest likelihood of explaining the observed input time series. To do so, it starts from an initial guess of the infection incidence time series $\u039b^{0}=(\\lambda_{1}^{0},\u2026,\\lambda_{N}^{0})$, used to compute $E_{i}^{0}$ according to equation 2, and updates the estimate in each iteration $n$ according to the following formula:\n\n$$\n\\lambda_{j}^{n+1}=\\frac{\\lambda_{j}^{n}}{q_{j}}\u22c5\\sumi=KN\\frac{m_{i-j}^{j}\u2062D\u00af_{i}}{E_{i}^{n}}.\n$$\n\nThe iteration proceeds until a termination criterion is reached. Here, we follow Goldstein et al. and iterate until the $\u03c7^{2}$ statistic drops below 1 (Goldstein et al., 2009):\n\n$$\n\u03c7^{2}=\\frac{1}{N-K+1}\u2062\\sumi=KN\\frac{(E_{i}^{n}-D\u00af_{i})^{2}}{E_{i}^{n}},\n$$\n\nor 100 iterations have been reached.\n\nConvergence is typically fast and the stopping criterion based on the $\u03c7^{2}$ statistic is reached in a few iterations. Due to the smoothing prior to deconvolution, this is the case for the vast majority of the empirical data we analyzed. In some cases, e.g. when the observed incidence is especially noisy, convergence is slower and the threshold of 100 iterations is reached (on 26.5.2022, this was the case for 13 of the countries analyzed).\n\nFor the initial estimate of the incidence time series $\u039b^{0}$, we shift the observation time series backwards in time by the mode of the delay distribution \u03bc Goldstein et al., 2009. However, this leaves a gap of unspecified values at the start and end of the time series $\u039b_{0}$. Contrary to Goldstein et al., we augment the shifted time series with the first observed value ($D\u00af_{K}$) on the left, and with the last observed value ($D\u00af_{N}$) on the right, to avoid initialising with a zero-value anywhere. If a day is initialised with zero incidence, it will also have zero incidence in the final estimate (compare equation (3)), which would be a potential source of bias.\n\nWe note that the Richardson-Lucy deconvolution algorithm accounts for \u2018right truncation\u2019, i.e. that not all infections are observed within the given observation time window (due to delay until symptoms/reporting), through the qj indices.\n\n### Use of line list data\n\nWhen information on the time variation of delays between symptom onset and observation is available (e.g. through a line list), this can be taken into account directly during the deconvolution step. In this case, we perform the deconvolution in two separate steps: first with the time-varying empirical onset-to-observation distributions, and then with the constant-through-time incubation period distribution. For those cases where symptom onset data is available, we only deconvolve with the incubation period distribution.\n\nThe $(m_{0}^{j},\u2026,m_{l_{m\u2062a\u2062x}}^{j})$ time-varying delay distributions from onset of symptoms to observation are determined as follows: for each date $j$, at least 300 of the most recent recorded delays between symptom onset and observation, with onset date before $j$, are taken into account; $l_{m\u2062a\u2062x}$ being the highest observed delay. To avoid biases caused by the intensity of testing and reporting varying throughout the week, recorded delays are included in full weeks going in the past, until at least 00 delays are included.\n\nAs the incidence data is right-truncated, we have to fix the distribution for the reporting delay ($m_{l}^{j}$) after a certain day $j$, so that delay distributions are not downward biased for infection dates close to the present. Let $(m\u00af_{0},\u2026,m\u00af_{l_{m\u2062a\u2062x}})$ be the empirical probability density function of the delay (aggregated over the entire window of observations) and $n$ the 99th percentile of this distribution ($n$ is the smallest integer for which $\\sumi=1nm\u00af_{i}\\geq0.99$). For infection dates $z$ that are closer to the present than $n$ (i.e. $N\u2212z<n$, where $N$ is the index of the last available data point), we fix $(m_{0}^{z},\u2026,m_{l_{m\u2062a\u2062x}}^{z})$ to be equal to $(m_{0}^{N-n},\u2026,m_{l_{m\u2062a\u2062x}}^{N-n})$.\n\n### Estimating the effective reproductive number Re\n\nOnce we have obtained an estimate for the time series of infection incidence, we use the method developed by Cori et al., 2013, implemented in the EpiEstim R package, to estimate $R_{e}$.\n\nDisease transmission is modelled with a Poisson process. At time $t$, an individual infected at time $t-s$ causes new infections at a rate $R_{e}\u2062(t)\u22c5w_{s}$, where ws is the value of the infectivity profile $s$ days after infection. The infectivity profile sums to 1, and can be approximated by the (discretised) serial interval distribution (Cori et al., 2013). The likelihood of the incidence $I_{t}$ at time $t$ is thus given by:\n\n$$\nP\u2062(I_{t}|I_{0},\u2026,I_{t-1},R_{e}\u2062(t))=\\frac{(R_{e}\u2062(t)\u2062\u039b_{t})^{I_{t}}\u2062e^{-R_{e}\u2062(t)\u2062\u039b_{t}}}{I_{t}!},\n$$\n\n\n\n$$\nwhere\u2003\u2003\u2002\u2003\u039b_{t}=\\sum_{s=1}^{t}I_{t-s}\u2062w_{s}.\n$$\n\nThe $R_{e}$ inference is performed in a Bayesian framework, and an analytical solution can be derived for the posterior distribution of $R_{e}\u2062(t)$ (see Cori et al., 2013; Web Appendix 1). We choose a gamma distributed prior on $R_{e}\u2062(t)$ with mean 1, and standard deviation 5.\n\nFor the gradually-changing $R_{e}$ estimates, we assume $R_{e}$ is constant over a sliding window of 3 days ($\\tau=3$ in EpiEstim), i.e. the reported $R_{e}$ estimate for day $T$ summarises the average $R_{e}$ over a 3 day period ending on day $T$. In addition to these smooth estimates, we provide step-wise estimates of $R_{e}$ on our dashboard. In the step-wise analysis, $R_{e}$ is assumed to be constant on a number of intervals spanning the entire epidemic time window. These intervals are determined by dates at which public health interventions were implemented, altered, or lifted. All results reported here are based on the smooth $R_{e}$ estimates. In both cases, we use the mean of the posterior distribution of $R_{e}$ as the point estimate.\n\n### Estimating the uncertainty intervals\n\nTo account for the uncertainty in the case observations, we construct 95% bootstrap confidence intervals for $R_{e}$. We first re-sample case observations as follows: given the original case observations $D_{t},t=K,\u2026,N$, we apply the LOESS with smoothing parameter 21 days on the log-transformed data $l\u2062o\u2062g\u2062(D_{t}+1)$ to obtain the smoothed value $\\mu^_{t}$ and additive residuals et. Here we use log-transformation to stabilise the variance of the residuals because it is the best overall choice among the transformations we tried. We compare to the commonly used square root transformation in Appendix 5\u2014figure 1.\n\nAfter obtaining the residuals et, we resample them to get bootstrap residuals $e_{t}^{*}$ and obtain the bootstrap case observations by\n\n$$\nD_{t}^{*}=max\u2061(exp\u2061(\\mu^_{t}+e_{t}^{*})-1,0).\n$$\n\nWe now discuss how we obtain a set of bootstrapped residuals $e_{t}^{*}$, $t=K,\u2026,N$. Since the empirical residuals of most countries are autocorrelated (see Appendix 5\u2014figure 2), we use an overlapping block bootstrap. Specifically, given the original residuals $(e_{K},\u2026,e_{N})$, we start by taking a random block of $b$ consecutive residuals, which we denote by $(e_{1}^{*1},\u2026,e_{b}^{*1})$. To account for weekly patterns in the case observations, we need to match the day of the week to the original case observations. That is, we keep the longest subvector $(e_{m_{1}}^{*1},\u2026,e_{b}^{*1})$ of $(e_{1}^{*1},\u2026,e_{b}^{*1})$ such that $e_{m_{1}}^{*1}$ has the same day of the week as $e_{K}$ (e.g., both correspond to Fridays). We then randomly take a new block of $b$ consecutive residuals, which we denote by $(e_{1}^{*2},\u2026,e_{b}^{*2})$. We keep its longest part $(e_{m_{2}}^{*2},\u2026,e_{b}^{*2})$ such that $e_{m_{2}}^{*2}$ has the day of the week that follows on that of $e_{b}^{*1}$ (e.g. if $e_{b}^{*1}$ corresponds to a Tuesday, then $e_{m_{2}}^{*2}$ must correspond to a Wednesday). We then glue these two sampled blocks together to get $(e_{m_{1}}^{*1},\u2026,e_{b}^{*1},e_{m_{2}}^{*2},\u2026,e_{b}^{*2})$. We repeat this process of adding blocks until the length of the re-sampled residuals is at least as large as that of the original residuals. If it is longer, we simply cut off the last part of the re-sampled residuals so that its length is the same. Finally, we re-index the re-sampled residuals as $(e_{K}^{*},\u2026,e_{N}^{*})$. We present a concrete example in Appendix 2.\n\nChoosing an optimal block size $b$ for the block bootstrap method is generally difficult. To capture week effects, we need a block size of at least 7. We tried different sizes and found that $b=10$ tended to work well in various simulation settings (Appendix 5\u2014figure 6).\n\nGiven a set of bootstrap case observations $(D_{K}^{*},\u2026,D_{N}^{*})$, we apply our method to obtain an estimate for $R_{e}\u2062(t)$. For ease of notation, we now denote this by $\\theta^^{*}\u2062(t)$. By repeating the above steps 100 times, we obtain $\\theta^_{1}^{*}\u2062(t),\u2026,\\theta^_{100}^{*}\u2062(t)$. Then, we construct a Normal based bootstrap confidence interval for each time point $t$ by:\n\n$$\n[\\theta^\u2062(t)-q_{z}\u2062(1-\\frac{\\alpha}{2})\u2062s\u2062d^\u2062(\\theta^^{*}\u2062(t)),\\theta^\u2062(t)+q_{z}\u2062(1-\\frac{\\alpha}{2})\u2062s\u2062d^\u2062(\\theta^^{*}\u2062(t))],\n$$\n\nwhere $\\theta^\u2062(t)$ denotes the estimated $R_{e}\u2062(t)$ based on the original case observations, $q_{z}\u2062(1-\\frac{\\alpha}{2})$ denotes the $1-\\frac{\\alpha}{2}$ quantile of the standard normal distribution, and $s\u2062d^\u2062(\\theta^^{*})$ denotes the empirical standard deviation of $\\theta^_{1}^{*}\u2062(t),\u2026,\\theta^_{100}^{*}\u2062(t)$. In this paper, we aim at a confidence interval level of 95%, so $\\alpha=0.05$. We use the Normal based bootstrap interval because we found that it performed best overall with respect to coverage in our simulations, when compared to other common choices like quantile and reversed-quantile bootstrap confidence intervals (Appendix 3\u2014figure 3).\n\nThe above bootstrap method implicitly assumes that the variance of the residuals et is constant over time $t$ and does not depend on the value of the log-transformed data $log\u2061(D_{t}+1)$. This assumption roughly holds when the case incidence is high. During periods of low case incidence (e.g. deaths or regional data in summer 2020 in Switzerland), this assumption is no longer appropriate. Therefore, to be conservative and rather err on the side of too wide uncertainty intervals, we also consider the credible interval of $R_{e}$ which is obtained by taking the 0.025 and 0.975 quantiles from the posterior distribution of $R_{e}\u2062(t)$ using EpiEstim based on the original data $(D_{K},\u2026,D_{N})$. The final reported interval is then the union of the credible interval and the 95% bootstrap confidence interval. Based on our experience, the credible interval is typically wider during periods of very low case incidence and will then be reported. But at high case numbers, the bootstrap confidence interval will tend to be much wider than the credible interval and will be the reported one.\n\nFinally, we point out that the choices of transformation, block size, smoothing parameters and type of bootstrap confidence interval in this paper might not be universal. The best choice can be different for different data sets (e.g., data sets from different countries).\n\n### Data\n\nWe gather case incidence data directly from public health authorities. Whenever accessible, we rely on data from local authorities. Otherwise, we use data from \u2018Our World in Data\u2019 since the European Centre for Disease Control (ECDC) has stopped its daily updates (December 2020) (Roser et al., 2020; European Centre for Disease Prevention and Control (ECDC), 2022). A table summarising the incidence data sources is available in Supplementary file 1. Information on the start and end of interventions, or major changes in testing policy, are obtained from media reports and the websites of public health authorities. The stringency index of the Blavatnik School of Government is accessed from their publicly available github repository (Hale et al., 2020). The vaccination coverage is taken from \u2018Our World in Data\u2019 (Roser et al., 2020).\n\nWe parametrise the discretised infectivity profile ws using COVID-19 serial interval estimates from the literature (Nishiura et al., 2020). For a review of published serial interval estimates, see Griffin et al. (Griffin et al., 2020). The incubation period is parametrised by a gamma distribution with mean 5.3 days and SD 3.2 days (Linton et al., 2020). For countries for which we do not have access to line list data, i.e. all except Switzerland, Germany and Hong Kong at the time of writing, we assume delays from symptom onset to observation to be gamma-distributed, with parameters taken from the literature. Table 2 summarises the distributions used in our pipeline.\n\n**Table 2.**\n Gamma distributions used in the pipeline: serial interval, incubation period, and the delay distributions assumed for each observation type.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Distribution</th>\n      <th>Mean (days)</th>\n      <th>SD (days)</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Serial interval</td>\n      <td>4.8</td>\n      <td>2.3</td>\n      <td>Nishiura et al., 2020</td>\n    </tr>\n    <tr>\n      <td>Infection to onset of symptoms</td>\n      <td>5.3</td>\n      <td>3.2</td>\n      <td>Linton et al., 2020</td>\n    </tr>\n    <tr>\n      <td>Onset of symptoms to case confirmation</td>\n      <td>5.5</td>\n      <td>3.8</td>\n      <td>Bi et al., 2020</td>\n    </tr>\n    <tr>\n      <td>Onset of symptoms to hospital admission</td>\n      <td>5.1</td>\n      <td>4.2</td>\n      <td>Pellis et al., 2021</td>\n    </tr>\n    <tr>\n      <td>Onset of symptoms to death</td>\n      <td>15.0</td>\n      <td>6.9</td>\n      <td>Linton et al., 2020</td>\n    </tr>\n  </tbody>\n</table>\n\nFor Switzerland, Germany and Hong Kong, we use line lists to build time-varying empirical distributions on delays between symptom onset and case confirmation, hospitalisation or death. During the deconvolution step we use the empirical delay distribution of the last 300 recorded cases prior to the infection date. Moreover, for the fraction of cases for which the date of onset of symptoms is known, we use the onset date directly instead of deconvolving a delay from onset to reporting, allowing for more precise estimation of the infection date. For Switzerland, line lists contain information on which cases were infected abroad. By considering imported cases and locally-transmitted cases separately in the deconvolution step, we obtain two separate time series, one for local infections and one for imported infections. EpiEstim can then estimate a corrected $R_{e}$ that excludes infections incurred abroad from the local transmission dynamics.\n\nFor comparison between methods, epiforecasts.io $R_{e}$ estimates were collected from https://github.com/epiforecasts/covid-rt-estimates/blob/master/national/cases/summary/rt.csv, accessing file versions from December 5 2020, March 15, June 24, October 1, November 10 2021 and January 10 2022. Robert Koch Institute estimates were collected from https://raw.githubusercontent.com/robert-koch-institut/SARS-CoV-2-Nowcasting_und_-R-Schaetzung/main/Nowcast_R_aktuell.csv, last accessed on January 10 2022. AGES estimates were collected from https://www.ages.at/fileadmin/AGES2015/Wissen-Aktuell/COVID19/R_eff.csv, last accessed on January 10 2022.\n\n### Simulations\n\nIn the simulations, we start by specifying different $R_{e}$ trajectories. To assess a range of scenarios, we parametrise $R_{e}$ as a piecewise linear trajectory, where we fix its plateau values and the time-points at which its slope changes. From each $R_{e}$ trajectory, we stochastically simulate 100 time series of infections and their corresponding case observations. We then use our pipeline to estimate $R_{e}\u2062(t)$ from each of these 100 times series and compare it to the true underlying value of $R_{e}\u2062(t)$.\n\nAssuming I0 infected individuals on the first day, the infection incidence is simulated forward in time. The infection incidence on day $t$ is drawn from a Poisson distribution, corresponding to equation (6), using the specified $R_{e}$ time series and the discretised serial interval for SARS-CoV-2 (Nishiura et al., 2020) as the infectivity profile (see Cori et al., 2013; Web Appendix 11). These simulated infections are convolved with the observation type-specific delay distribution (Linton et al., 2020) to obtain the raw observation time series $D~_{t}$.\n\nSince the raw observation time series $D~_{t}$ are too smooth compared to the real data (Appendix 5\u2014figure 4), we add noise to obtain our final simulated observation time series $D_{t}$. The additional noise accounts for aspects of the observation process that are not covered by the delay distribution, such as weekend and holiday effects, the random and occasional delay in the recording of confirmed cases, and irregular components such as confirmed cases that are imported from abroad.\n\nTo obtain a realistic noise model for $D_{t}$, we considered the empirical noise observed in real SARS-CoV-2 case data. For most countries the residuals are autocorrelated (Appendix 5\u2014figure 2), which led us to fit ARIMA models to the observed residuals. We considered five simulation settings with different noise models obtained based on the confirmed case data from five countries (Switzerland, China, France, New Zealand, United States of America). Specifically, we first apply the LOESS smoother with smoothing parameter 21 days on the log-transformed confirmed case data to obtain additive residuals. We then chose the ARIMA model by fitting ARIMA models of various orders and assessing the resulting ACF and PACF plots of their residuals. This leads to five ARIMA models: ARIMA(2,0,1)(0,1,1), ARIMA(1,0,1)(0,0,0), ARIMA(0,0,6)(0,1,1), ARIMA(4,0,1)(1,0,0), and ARIMA(4,0,0)(0,0,0), based on the data from CHE, CHN, FRA, NZL, and USA, respectively. The final observation time series $D_{t}=D~_{t}\u22c5exp\u2061(e_{t})$, where et is simulated from the fitted ARIMA model. We present the simulated observations with the noise model based on CHE data in Appendix 5\u2014figure 4. We emphasize that the ARIMA model is only used in simulations to obtain simulated observations that look roughly realistic. Our main approach to obtain the estimated $R_{e}$ and the related confidence intervals does not require fitting an ARIMA model. In particular, the block bootstrap method is fully non-parametric.\n\nIn the case of time-varying delay distributions, we assume that the mean of the delay distribution decreases by a fixed amount (1/20) each day, to a minimum of 2 days (e.g. for the confirmed cases this results in a range from 5.5 to 2). When estimating with a time-varying delay distribution, we draw observations from the true distributions, similar to line list information recorded by public health authorities. To assess the added value of the deconvolution method, we further compare against a method where we estimate the infection time series by shifting the observations back by the mean of the delay distribution (termed \u2018fixed shift method\u2019).\n\nTo quantify the performance of our method on the simulated scenarios, we compute the root mean squared error (RMSE) at time point $j$:\n\n$$\nR\u2062M\u2062S\u2062E\u2062(j)=\\sqrt{\\frac{1}{M}\u2062\\sum_{m=1}^{M}(R^_{e}\u2062(j,m)-R_{e}\u2062(j))^{2}},\n$$\n\nwhere $M$ is the total number of simulations, $R^_{e}\u2062(j,m)$ the estimated $R_{e}$ and $R_{e}\u2062(j)$ the true $R_{e}$ at time $j$, for simulation $m$.\n\nFor each simulation we also compute the 95% confidence interval (CI) of our estimates across 100 bootstrap replicates. The empirical coverage indicates the fraction of simulations for which our CI includes the true $R_{e}$ value.\n\n### Implementation and method availability\n\nDaily updated results of our method on global COVID-19 data are available online on https://ibz-shiny.ethz.ch/covid-19-re-international/.\n\nThe source code of the software pipeline is openly accessible at https://github.com/covid-19-Re/shiny-dailyRe; Angst, 2022, and the code necessary to reproduce the figures and analyses presented in this paper is available at https://github.com/covid-19-Re/paper-code; Huisman, 2022.\n",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "e88ef9d9-ca60-4cf9-a4f0-e6efbb1391a3",
+      "submission_id": "99a60591-3f56-4469-97a3-5141c5b4ac39",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Miles P Davenport, https://ror.org/03r8z3t63 University of New South Wales Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71345.sa0](https://doi.org/10.7554/eLife.71345.sa0)\n\nUnderstanding the trajectory of epidemic growth and predicting it in real-time is an important goal of epidemiological modelling. This work aggregates data from 170 countries in an effort to better understand how the effective reproduction number of SARS-CoV-2 spread evolved over time and across the world.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Miles P Davenport, https://ror.org/03r8z3t63 University of New South Wales Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71345.sa1](https://doi.org/10.7554/eLife.71345.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Estimation and worldwide monitoring of the effective reproductive number of SARS-CoV-2\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Miles Davenport as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) In addition to the stringency index, please incorporate mobility in selected countries where relevant data are available.\n\n2) Moreover, please integrate additional data types, eg case series, hospitalizations and deaths, to estimate a single set of R_e (t), rather than separate analyses on each data stream.\n\n3) Please address the uncertainty estimation procedure as queried by Reviewer #1.\n\nReviewer #1 (Recommendations for the authors):\n\n1) Explain more for the simulation approach in the paper, such as why the noise should be computed in this way, instead of just based on the theoretical delay distribution from infection to death/hospitalization/reported, to simulate the input time series.\n\n2) More simulations to validate the real-time property of the estimates of Rt\n\n3) A potential framework that can use both time series for cases, hospitalization and death to jointly infer the infection time series.\n\nThe results are easy to be assessed and presented clearly, which is good. I am not sure how I can get the data and also the code to replicate the analysis. Ideally it should be available.\n\n(Note from Ed: Data and code must be available to conform with eLife data policies)\n",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8ab3972e-a9a7-40ca-80dc-690180c0f27c",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C1",
+      "claim": "The effective reproductive number Re is a key indicator of the growth of an epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The effective reproductive number Re is a key indicator of the growth of an epidemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a foundational concept.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "ece22c22-aa87-4555-a76f-51bd0db4794c",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C2",
+      "claim": "In early 2020, in the majority of countries the estimated Re dropped below 1 only after the introduction of major non-pharmaceutical interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that, in early 2020, in the majority of countries the estimated Re dropped below 1 only after the introduction of major non-pharmaceutical interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data analysis in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "f21877c8-5130-4804-9a46-33aed0978fbb",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C3",
+      "claim": "For Europe the implementation of non-pharmaceutical interventions was broadly associated with reductions in the estimated Re.",
+      "claim_type": "EXPLICIT",
+      "source": "For Europe the implementation of non-pharmaceutical interventions was broadly associated with reductions in the estimated Re.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by analysis in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "ef630b75-cb6a-464f-ba2a-ddd5e8f45dcb",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C4",
+      "claim": "Relaxing non-pharmaceutical interventions had more varied effects on subsequent Re estimates globally.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally though, relaxing non-pharmaceutical interventions had more varied effects on subsequent Re estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by analysis in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "e18f27b2-b87e-47de-a84f-b9e8d541f595",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C5",
+      "claim": "The framework is used as the official source of Re estimates for SARS-CoV-2 in Switzerland.",
+      "claim_type": "EXPLICIT",
+      "source": "Our framework is useful to inform governments and the general public on the status of epidemics in their country, and is used as the official source of Re estimates for SARS-CoV-2 in Switzerland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a factual claim about the method's application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "f9dbc8f7-696c-4361-8f43-197147ec8d1a",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C6",
+      "claim": "The effective reproductive number Re quantifies the average number of secondary infections caused by a primary infected individual.",
+      "claim_type": "EXPLICIT",
+      "source": "It quantifies the average number of secondary infections caused by a primary infected individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the introduction, drawing on established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "2335112f-1efe-4f92-b742-ff6997838191",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C7",
+      "claim": "Re has a natural threshold value of 1, below which the epidemic reduces in size.",
+      "claim_type": "EXPLICIT",
+      "source": "It also has a natural threshold value of 1, below which the epidemic reduces in size Anderson and May, 1991; Nishiura and Chowell, 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established epidemiological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "ae052cd4-2ef6-471b-9046-8b176327a60d",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C8",
+      "claim": "Re typically changes during the course of an epidemic as a result of the depletion of susceptible individuals, changed contact behaviour, seasonality of the pathogen, or the effect of pharmaceutical and non-pharmaceutical interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Re typically changes during the course of an epidemic as a result of the depletion of susceptible individuals, changed contact behaviour, seasonality of the pathogen, or the effect of pharmaceutical and non-pharmaceutical interventions (NPIs) (Anderson and May, 1991; Delamater et al., 2019; Scire et al., 2020; Ali et al., 2020; Flaxman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to epidemiological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "b9bae8ba-568c-45cb-a2b4-a98c60b991f0",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C9",
+      "claim": "Infection incidence based methods rely on few, simple assumptions and are less prone to model misspecifications compared to compartmental models.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on the latter class of methods as they rely on few, simple assumptions, are less prone to model misspecifications, and are well-suited for ongoing monitoring of the epidemic (Gostic et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for method choice, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "b6f28e84-ecd4-49d4-a00e-478502d153a2",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C10",
+      "claim": "Infection events cannot be observed directly.",
+      "claim_type": "EXPLICIT",
+      "source": "The infection incidence based methods face the difficulty that infection events cannot be observed directly (Gostic et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental challenge in epidemiology, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "c7549ef2-53d4-46cb-8a25-79c2349004e3",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C11",
+      "claim": "It is important to relate Re estimates to the timing of infection events because this allows multiple proxies of infection events, with differing delays, to be used separately to monitor the same epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to relate Re estimates to the timing of infection events because this allows multiple proxies of infection events, with differing delays, to be used separately to monitor the same epidemic (Scire et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological rationale supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "fc6b6e63-3497-48c6-a9da-e07febaa16e0",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C12",
+      "claim": "If Re is placed properly on the infection timescale, it can be compared directly to external covariates like weather and interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "If Re is placed properly on this timescale, it can be compared directly to external covariates like weather and interventions (Flaxman et al., 2020; Soltesz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological advantage supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "af1f67fa-75b5-4749-b168-834eeda68503",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C13",
+      "claim": "Depending on the method used to infer the timing of infections from the observed incidence time series, one can introduce biases such as smoothing sudden changes in Re.",
+      "claim_type": "EXPLICIT",
+      "source": "However, depending on the method used to infer the timing of infections from the observed incidence time series, one can also introduce biases such as smoothing sudden changes in Re (Gostic et al., 2020; Goldstein et al., 2009; Petermann and Wyler, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological challenge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "5fbf73b0-1f23-4d79-9142-634442323c2c",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C14",
+      "claim": "The method accurately estimates the effective reproductive number.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that the method accurately estimates the effective reproductive number (Figure 1; metrics described in Materials and Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation results shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "a03586b1-2554-4157-b92a-4fa82595d036",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C15",
+      "claim": "Across most time points, the 95% confidence interval includes the true Re value.",
+      "claim_type": "EXPLICIT",
+      "source": "Across most time points, the 95% confidence interval includes the true Re value (coverage; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "2a00dbb4-f0c1-4212-8ee8-d452a63c28ae",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C16",
+      "claim": "The low root mean squared error (RMSE) indicates that the point estimates closely track the true Re value.",
+      "claim_type": "EXPLICIT",
+      "source": "The low root mean squared error (RMSE) indicates that our point estimates closely track the true Re value (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "8430d01a-f747-49d8-9c0e-cfff6a116374",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C17",
+      "claim": "The method correctly infers whether Re is significantly above or below 1 in the simulated scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we correctly infer whether Re is significantly above or below 1 in this scenario: we never infer that Re is significantly above 1 when the true value is below 1, and only for two time points the estimates are significantly below 1 for some simulations when the true value is a little above 1 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "a74a4cd0-b22f-4448-9e21-c1706ba8be54",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C18",
+      "claim": "Due to the smoothing step prior to deconvolution, the method slightly misestimates Re during steep changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the smoothing step prior to deconvolution, we slightly misestimate Re during steep changes (see Appendix 2, and Appendix 3\u2014figure 1 for more scenarios).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation identified through simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "b1cd279e-bbd8-4c35-bc51-5f8ca96d4076",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C19",
+      "claim": "The inclusion of smoothing greatly improves the performance across scenarios with different types of observation noise.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the inclusion of smoothing greatly improves the performance across scenarios with different types of observation noise (Appendix 3\u2014figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results in Appendix 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "fc451c27-d686-4b88-bf1a-c54c386b68cc",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C20",
+      "claim": "The block-bootstrapping method greatly improves coverage compared to the out-of-the-box EpiEstim method.",
+      "claim_type": "EXPLICIT",
+      "source": "Our block-bootstrapping method greatly improves coverage compared to the out-of-the-box EpiEstim method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological improvement based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "600d910e-8bbc-41ce-afc3-418787349a1b",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C21",
+      "claim": "The method outperforms the common approach of using a fixed delay to infer the infection incidence time series.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method also outperforms the common approach of using a fixed delay to infer the infection incidence time series (Appendix 3\u2014figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparative simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "7fd61282-0e7c-4cd5-bb70-1b840d8c12de",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C22",
+      "claim": "Misspecifying the mean of the delay distribution between infection and case observation by up to 2 days does not have a strong effect on the Re estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Misspecifying the mean of the delay distribution between infection and case observation by up to 2 days does not have a strong effect on the Re estimates, whereas larger misspecifications by 5 or 10 days lead to a more substantial decrease in coverage (Appendix 3\u2014figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by sensitivity analysis in simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "0674d452-6274-4e9e-bea0-dbfba82f3b58",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C23",
+      "claim": "Allowing for time-varying delay distributions has a pronounced effect on the estimated Re only when changes in the mean of the delay distribution are large.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, allowing for time-varying delay distributions has a pronounced effect on the estimated Re only when changes in the mean of the delay distribution are large (Appendix 3\u2014figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "ac316204-ac7c-4157-8bcf-d1c4387b09e5",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C24",
+      "claim": "The most recent Re estimate lies further in the past than the most recent observed incidence data due to the delay between infection and case observation.",
+      "claim_type": "EXPLICIT",
+      "source": "The most recent Re estimate lies further in the past than the most recent observed incidence data due to the delay between infection and case observation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological characteristic of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "2d651007-b431-4831-b6ff-e16ece658a58",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C27",
+      "claim": "The difference in confidence interval performance is particularly striking during periods of high case incidence when the EpiEstim uncertainty interval is very narrow.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference is particularly striking during periods of high case incidence (e.g. October 2020), when the EpiEstim uncertainty interval is very narrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the stability analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "ea49d7f4-65b1-40f8-98a2-4233c4f251b2",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C28",
+      "claim": "The last few Re estimates can lay outside of the stabilized confidence interval, in particular when the real Re trend is increasing.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that the last few Re estimates can lay outside of the stabilized confidence interval, in particular when the real Re trend is increasing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by simulation analysis in Appendix 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "15b65287-4e8b-475e-b2d3-2f21b34c732d",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C29",
+      "claim": "There is a trade-off between timeliness and accuracy when publishing Re estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights a trade-off between timeliness and accuracy when publishing Re estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stability analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "37ad05d1-2b83-4f19-9975-628e69b65350",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C30",
+      "claim": "For each of the three types of case report in Switzerland, the authors estimate the time-varying empirical delay distribution for the delay from infection to reporting.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of these three types of case report, we estimate the time-varying empirical delay distribution for the delay from infection to reporting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach described for Swiss data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "dd110642-71cd-4320-b068-fece076934ee",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C31",
+      "claim": "Using FOPH data on the fraction of cases infected abroad, the authors can correct the Re estimate for imported cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Using FOPH data on the fraction of cases infected abroad, we can correct our Re estimate for imported cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach described for Swiss data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "2bc53654-1fe7-498a-b7d5-62fe33273461",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C32",
+      "claim": "The estimated Re value corrected for imports is a lower bound for the Re estimate which would be obtained if the authors could account for the location of infection of all cases detected in Switzerland or exported out of the country.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the estimated Re value corrected for imports is a lower bound for the Re estimate which would be obtained if we could account for the location of infection of all cases detected in Switzerland or exported out of the country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation stated based on methodological reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "7932e520-f42b-4964-81d1-16170012cb85",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C33",
+      "claim": "The estimates from EpiNow2 and the authors' method follow a qualitatively similar trend.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimates from EpiNow2 and ours follow a qualitatively similar trend, although the EpiNow2 estimates are smoother and there is a small lag between both estimates, likely due to differences in the specified observation delay distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the comparison shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "a6fae765-e7b9-4362-8a2e-f15d2e8def3c",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C34",
+      "claim": "The authors' method is the only one that can account for variations through time in delay distributions and combine symptom onset data with case data.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, our method is the only one that can account for variations through time in delay distributions and combine symptom onset data with case data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a unique feature of the method based on comparison with other methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "2981e45b-fc15-4f44-bf37-432dbfa0c9ca",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C35",
+      "claim": "The authors developed an online dashboard presenting daily-updated results of the Re estimation method applied to COVID-19 case data from 170 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed an online dashboard (https://ibz-shiny.ethz.ch/covid-19-re-international/) on which we present daily-updated results of this Re estimation method applied to COVID-19 case data from 170 countries (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the implementation of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "fa643b0d-1ea2-480b-8412-2d5555302f53",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C36",
+      "claim": "For most countries, the authors include multiple observation sources, such as daily incidence of COVID-19 cases and deaths, and, when available, hospital admissions.",
+      "claim_type": "EXPLICIT",
+      "source": "For most countries, we include multiple observation sources, such as daily incidence of COVID-19 cases and deaths, and, when available, hospital admissions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the data used in the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "59e8a17a-8d6b-4a87-862f-5f101c13df04",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C37",
+      "claim": "Of the 20 investigated European countries, all except Sweden implemented a lockdown in spring 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the countries investigated, all except Sweden implemented a lockdown (19/20).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement based on data collection from news reports.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "c5b61ab9-ec68-4baa-9c67-c7f4c9834168",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C38",
+      "claim": "Using case data, Re was inferred to be significantly above one prior to the lockdown measures in nearly all countries with a lockdown (15/19).",
+      "claim_type": "EXPLICIT",
+      "source": "Using case data, we inferred that Re was significantly above one prior to the lockdown measures in nearly all countries with a lockdown (15/19; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on analysis of European data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "aa335d11-6fe8-464d-b722-ba2abfefe4b7",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C39",
+      "claim": "Denmark and Germany had an estimated Re significantly below one prior to the lockdown date.",
+      "claim_type": "EXPLICIT",
+      "source": "Denmark, which had a complex outbreak consisting of two initial waves, and Germany, which experienced a cluster of early cases, had an estimated Re significantly below one prior to this date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an exception to the general finding, based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "883c09c8-02ca-48a7-8fcc-8c17ad5872d7",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C40",
+      "claim": "For countries with very short delays between the lockdown and the estimated date that Re<1, the authors cannot exclude the possibility that the 'true' Re may have been below 1 prior to the lockdown since the pipeline introduces smoothing to the estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "For countries with very short delays between the lockdown and the estimated date that Re<1 (e.g. Austria, Switzerland) we can not exclude the possibility that the 'true' Re may have been below 1 prior to the lockdown since our pipeline introduces smoothing to the estimates (see Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat stated based on methodological limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "98d19887-c06c-47ee-be0f-2f9451a1b4d3",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C42",
+      "claim": "In Europe, large increases in stringency are associated with larger decreases in Re 7\u201314 days after the change in stringency index.",
+      "claim_type": "EXPLICIT",
+      "source": "In Europe we also see that large increases in stringency are associated with larger decreases in Re 7\u201314 days after the change in SI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "1ed784d3-dbfa-4dfa-9400-6aafe7664993",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C43",
+      "claim": "The association between decreases in stringency and changes in Re is heterogeneous on all continents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the association between decreases in stringency and changes in Re is heterogeneous on all continents (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "4cc2cc8b-ff80-4954-9aab-472bfe5b0d85",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C44",
+      "claim": "Reversing non-pharmaceutical interventions had a different effect than introducing them.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that reversing non-pharmaceutical interventions had a different effect than introducing them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the heterogeneous association observed in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "72beb13c-ac98-4868-a38c-9f7a6b512f41",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C45",
+      "claim": "In Europe, increased mobility in residential areas, and decreased mobility at workplaces or grocery stores is associated with decreases in Re.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased mobility in residential areas, and decreased mobility at workplaces or grocery stores is associated with decreases in Re.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the analysis shown in Figure 5B for Europe.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "d222c2e9-44fc-45ea-8ab8-e669ad77af96",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C46",
+      "claim": "The inferred Re curve can be over-smoothed on simulated data, but this disadvantage is outweighed by the increased stability of the estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the inferred Re curve can be over-smoothed on simulated data, but that this disadvantage is outweighed by the increased stability of the estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "93f99430-5415-438f-a0a1-9cd81b929c86",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C47",
+      "claim": "The relative error in the Re estimates is small.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we show that the relative error in the Re estimates is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "d636ec3f-f3e2-4fbf-9767-b45099314dcf",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C48",
+      "claim": "A unique advantage of the monitoring method is the parallel use of different types of observation data, all reflecting the same underlying infection process.",
+      "claim_type": "EXPLICIT",
+      "source": "A unique advantage of the monitoring method we have developed is the parallel use of different types of observation data, all reflecting the same underlying infection process (Scire et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological advantage, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "5a17482b-75d5-465d-b7a8-c97d41bbe761",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C49",
+      "claim": "Comparing estimates from several types of data is a powerful way to evaluate the sensitivity of the results to the type of observations they were derived from.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing estimates from several types of data is a powerful way to evaluate the sensitivity of the results to the type of observations they were derived from.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological advantage.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "6749db52-0069-4d6d-ac18-8e84ff503a9f",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C50",
+      "claim": "The method is applicable to any other type of incidence data, such as admissions to intensive care units or excess death data.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the method is applicable to any other type of incidence data, such as admissions to intensive care units or excess death data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general applicability of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "59aaa505-8f80-49af-bd6f-d3cfc4b4797b",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C51",
+      "claim": "The authors have extended this method to make use of daily measurements of SARS-CoV-2 viral concentrations in wastewater.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also extended this method to make use of daily measurements of SARS-CoV-2 viral concentrations in wastewater (Huisman et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an extension of the method, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "2b3a21f8-43ba-4b9f-9faa-7934f45797cc",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C52",
+      "claim": "For 15 out of 20 European countries, the estimated Re was significantly above 1 prior to the lockdown in spring of 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that this argumentation cannot be applied universally: for 15 out of 20 European countries, we found that the estimated Re was significantly above 1 prior to the lockdown in spring of 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on analysis of European data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "e1d42cb0-b3cb-45bc-ab4a-b6c7287674c9",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C53",
+      "claim": "Differences between continents in the association between changes in the stringency of NPIs and changes in Re could reflect differences in the speed with which lockdowns were put into practice, the de facto lockdown stringency, or socio-cultural aspects.",
+      "claim_type": "EXPLICIT",
+      "source": "This could reflect differences in the speed with which lockdowns were put into practice (Kohanovski et al., 2022), the de facto lockdown stringency, or socio-cultural aspects (Sebhatu et al., 2020; Mbow et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations for observed differences, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "f8ce8fd6-b6b6-4eb0-85fc-5d2b86409f75",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C54",
+      "claim": "Many African countries had early and strict government responses, often prior to the first detected cases, which are thought to have delayed the virus in establishing a foothold on the continent.",
+      "claim_type": "EXPLICIT",
+      "source": "Many African countries had early and strict government responses, often prior to the first detected cases. These are thought to have delayed the virus in establishing a foothold on the continent (Mbow et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "ff7bdfda-596d-4173-83a8-63d350f94a64",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C55",
+      "claim": "The analysis suggests that reversing non-pharmaceutical interventions may have a very different effect than introducing them.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our analysis suggests that reversing non-pharmaceutical interventions may have a very different effect than introducing them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "d48b093e-cea4-418c-9dbc-ba656fa2a375",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C56",
+      "claim": "The difference in effect between implementing and lifting NPIs could be because the situation is not fully reverted: due to increased public awareness, testing, contact tracing, and quarantine measures still in place.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be because the situation is not fully reverted: due to increased public awareness, testing, contact tracing, and quarantine measures still in place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations for observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "934d9bfe-28df-4e2b-9414-8f0035f23bba",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C57",
+      "claim": "There is increasing evidence that weather may be a factor influencing Re through its effect on people's behaviour and on properties of the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there is increasing evidence that weather may be a factor influencing Re through its effect on people's behaviour and on properties of the virus (Morris et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as emerging evidence, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "c32fb420-b5f9-461f-83f3-efe0aa1dd839",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C58",
+      "claim": "The authors use local polynomial regression (LOESS) with 1st order polynomials and tricubic weights to smooth the observed incidence data prior to deconvolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To smooth the incidence data, we use local polynomial regression (LOESS) with 1st order polynomials and tricubic weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail of the pipeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "149bdc4e-1672-4423-92dd-3a4c2597b230",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C59",
+      "claim": "The smoothing parameter alpha is set such that 21 days of data are included in the local neighbourhood of each point.",
+      "claim_type": "EXPLICIT",
+      "source": "The smoothing parameter alpha is set such that we include 21 days of data in the local neighbourhood of each point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail of the pipeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "bc85749a-128f-4b89-91fb-c489e0634168",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C60",
+      "claim": "The authors extended the deconvolution method of Goldstein et al., 2009 to deal with zero-incidence case observations and time-varying delay distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we extended the deconvolution method of Goldstein et al., 2009, which is itself an adaptation of the Richardson-Lucy algorithm (Richardson, 1972; Lucy, 1974) (essentially an expectation maximisation algorithm), to deal with zero-incidence case observations and time-varying delay distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological contribution described in the methods section.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "3a890482-05fd-4ba1-b856-da2684a360d5",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C61",
+      "claim": "The authors use the EpiEstim method to estimate Re from a time series of infection incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Once we have obtained an estimate for the time series of infection incidence, we use the method developed by Cori et al., 2013, implemented in the EpiEstim R package, to estimate Re.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "8e3f97f2-4093-42c5-91a9-97a4fa955306",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C63",
+      "claim": "For the gradually-changing Re estimates, Re is assumed to be constant over a sliding window of 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "For the gradually-changing Re estimates, we assume Re is constant over a sliding window of 3 days (\u03c4=3 in EpiEstim), i.e. the reported Re estimate for day T summarises the average Re over a 3 day period ending on day T.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail of the estimation approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "d5e4a3d8-961c-4f0e-a476-6bb84342ee4e",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C64",
+      "claim": "The authors use the mean of the posterior distribution of Re as the point estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, we use the mean of the posterior distribution of Re as the point estimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail of the estimation approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "9d36965e-ab76-427d-b1d8-ca8fa00039cc",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C65",
+      "claim": "The authors construct 95% bootstrap confidence intervals for Re to account for the uncertainty in the case observations.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for the uncertainty in the case observations, we construct 95% bootstrap confidence intervals for Re.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail of the uncertainty quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "8003df77-ed60-4b68-8cb5-917a786306c8",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C66",
+      "claim": "The authors use an overlapping block bootstrap because the empirical residuals of most countries are autocorrelated.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the empirical residuals of most countries are autocorrelated (see Appendix 5\u2014figure 2), we use an overlapping block bootstrap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice justified by data characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "9e53397c-78cb-4298-b849-4ed0a528558d",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C67",
+      "claim": "The authors use a block size of 10 for the block bootstrap method because it tended to work well in various simulation settings.",
+      "claim_type": "EXPLICIT",
+      "source": "We tried different sizes and found that b=10 tended to work well in various simulation settings (Appendix 5\u2014figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "015c2e06-eda7-4f51-bc37-6d40b823e0eb",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C68",
+      "claim": "The final reported interval is the union of the credible interval and the 95% bootstrap confidence interval.",
+      "claim_type": "EXPLICIT",
+      "source": "The final reported interval is then the union of the credible interval and the 95% bootstrap confidence interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail of the uncertainty quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "870b8722-ad00-47a2-b7e3-fd9955c9e07f",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C69",
+      "claim": "The authors parametrise the discretised infectivity profile using COVID-19 serial interval estimates from Nishiura et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We parametrise the discretised infectivity profile ws using COVID-19 serial interval estimates from the literature (Nishiura et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "36da2b81-8b4a-4bf3-8154-8e511a2e170e",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C70",
+      "claim": "The incubation period is parametrised by a gamma distribution with mean 5.3 days and SD 3.2 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The incubation period is parametrised by a gamma distribution with mean 5.3 days and SD 3.2 days (Linton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "75c7e913-7268-4a65-88cc-f6caa50afa96",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C71",
+      "claim": "For countries without access to line list data, delays from symptom onset to observation are assumed to be gamma-distributed, with parameters taken from the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "For countries for which we do not have access to line list data, i.e. all except Switzerland, Germany and Hong Kong at the time of writing, we assume delays from symptom onset to observation to be gamma-distributed, with parameters taken from the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail, with parameters from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "4bcf9dbc-e0b0-4855-9590-a122b9eb9a5e",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C76",
+      "claim": "For Switzerland, Germany and Hong Kong, the authors use line lists to build time-varying empirical distributions on delays between symptom onset and case confirmation, hospitalisation or death.",
+      "claim_type": "EXPLICIT",
+      "source": "For Switzerland, Germany and Hong Kong, we use line lists to build time-varying empirical distributions on delays between symptom onset and case confirmation, hospitalisation or death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail for specific countries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "a8e58732-16e7-490c-93fc-b45d9ccaf64a",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C77",
+      "claim": "The infection incidence is simulated forward in time from a Poisson distribution, corresponding to equation (6), using the specified Re time series and the discretised serial interval for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The infection incidence on day t is drawn from a Poisson distribution, corresponding to equation (6), using the specified Re time series and the discretised serial interval for SARS-CoV-2 (Nishiura et al., 2020) as the infectivity profile (see Cori et al., 2013; Web Appendix 11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail of the simulation approach, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "29a531d4-34eb-40d9-bd3e-94d39446177a",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C79",
+      "claim": "Daily updated results of the method on global COVID-19 data are available online at https://ibz-shiny.ethz.ch/covid-19-re-international/.",
+      "claim_type": "EXPLICIT",
+      "source": "Daily updated results of our method on global COVID-19 data are available online on https://ibz-shiny.ethz.ch/covid-19-re-international/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the availability of results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "966a5001-5133-4f30-98b1-954084312544",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C80",
+      "claim": "The source code of the software pipeline is openly accessible at https://github.com/covid-19-Re/shiny-dailyRe.",
+      "claim_type": "EXPLICIT",
+      "source": "The source code of the software pipeline is openly accessible at https://github.com/covid-19-Re/shiny-dailyRe; Angst, 2022",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "048a9923-e48c-450b-95e8-5f34b84fbf7e",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "claim_id": "C81",
+      "claim": "The code necessary to reproduce the figures and analyses presented in this paper is available at https://github.com/covid-19-Re/paper-code.",
+      "claim_type": "EXPLICIT",
+      "source": "the code necessary to reproduce the figures and analyses presented in this paper is available at https://github.com/covid-19-Re/paper-code; Huisman, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acff3837-38ee-44a3-9ce5-7c453436edba",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The method accurately estimates Re on simulated data with good coverage, low RMSE, and correct inference of whether Re is above or below 1. The smoothing step slightly misestimates Re during steep changes but greatly improves performance across different noise scenarios. The block-bootstrap method improves coverage compared to EpiEstim alone, and the method outperforms fixed-delay approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 provide comprehensive simulation evidence showing accurate Re estimation with proper uncertainty quantification. The trade-offs (C18, C46) are acknowledged and justified (C19). The validation includes multiple metrics (coverage, RMSE) and sensitivity analyses for delay misspecification and time-varying distributions, all supporting the method's performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "ad70fe48-38ca-4cc7-b09c-f377f8743d6b",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The improved confidence intervals substantially outperform EpiEstim-only intervals during high incidence periods. The last few Re estimates can lie outside stabilized confidence intervals when Re is increasing, highlighting a trade-off between timeliness and accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by empirical analysis on Swiss data (Figure 2) and simulation studies (Appendix 4). The comparison clearly demonstrates improved stability of the combined bootstrap and credible interval approach, particularly during high case incidence when EpiEstim intervals are too narrow.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "20e6edba-48b1-4475-be4e-99f8a7327053",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In early 2020, for 15 out of 19 European countries with lockdowns, Re was significantly above 1 prior to lockdown implementation. Denmark and Germany were exceptions. For countries with very short delays between lockdown and Re<1, the true Re may have been below 1 before lockdown due to smoothing in the pipeline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C37-C40, C52 are supported by systematic analysis of 20 European countries with documented lockdown dates (Table 1). The authors appropriately acknowledge limitations for countries with short delays (C40) where smoothing may affect conclusions. The finding is consistent across different observation types (Appendix 6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "52b930e5-c561-487a-bf94-d808fec31f67",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In Europe, implementation of NPIs was broadly associated with reductions in Re, with larger stringency increases associated with larger Re decreases 7-14 days later. However, the association between decreasing stringency and changes in Re was heterogeneous globally, suggesting that reversing NPIs had different effects than implementing them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C42-C44, C55 are supported by analysis shown in Figure 5A examining changes in stringency index and Re across continents. The asymmetry between implementing and lifting NPIs is clearly demonstrated through data, though the authors appropriately note this is associational rather than causal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "05bb69a7-1183-4b17-b207-f6c5b64421d6",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Globally, relaxing NPIs had varied effects on Re. Differences between continents could reflect variations in implementation speed, de facto stringency, socio-cultural factors, weather effects, or that many African countries implemented early strict responses. The asymmetry between implementing and lifting NPIs may be due to increased public awareness and ongoing measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C53-C57 present speculative explanations for observed heterogeneity. While C4 is supported by data (Figure 5A), claims C53-C57 are explicitly speculative (marked as SPECULATION in evidence_type) and lack direct empirical validation. These represent plausible hypotheses rather than demonstrated findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "cb49de46-bf09-4139-a7ff-8b839db8183a",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In Europe, increased residential mobility and decreased workplace/grocery mobility were associated with decreases in Re.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by analysis of Google mobility data shown in Figure 5B for Europe. The associations are clearly demonstrated, though the authors appropriately present these as correlations rather than causal relationships.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "ed1c6957-7363-4da6-a841-80ea5e8b5156",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For Switzerland, Germany, and Hong Kong, time-varying empirical delay distributions were estimated from line list data. For Switzerland, Re estimates were corrected for imported cases, though this represents a lower bound as exports cannot be accounted for.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C76 describe methodological refinements for countries with detailed data. The approach is clearly described and the limitation regarding exports (C32) is appropriately acknowledged. This represents a transparent handling of data availability and methodological constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "09edc97f-3fdc-4d1e-b514-8714a1645eac",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors' method produces estimates qualitatively similar to EpiNow2 but is the only method that can account for time-varying delay distributions and combine symptom onset with case data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C33 is supported by comparison in Figure 3, but C34's claim of uniqueness is based on the authors' knowledge rather than systematic comparison. The statement 'to the best of our knowledge' indicates uncertainty. A comprehensive comparison of all available methods' capabilities is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors developed an online dashboard with daily-updated Re estimates for 170 countries using multiple observation sources. The method's unique advantage is parallel use of different data types, and it is applicable to various incidence data including wastewater. Code and results are openly available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C48-C51, C79-C81 describe the implementation and availability of the method. These are factual statements about the dashboard, data sources, and code availability that can be verified. The methodological advantages (C48-C50) are logical consequences of the design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "9abbc1d6-e04d-4ed8-a09c-19ba7d19b316",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The framework is used as the official source of Re estimates for SARS-CoV-2 in Switzerland.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is a factual statement about the method's official use in Switzerland, stated in both the abstract and introduction. This represents real-world validation and policy relevance of the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The pipeline uses LOESS smoothing with 21-day windows, extended Richardson-Lucy deconvolution for time-varying delays, EpiEstim for Re estimation with 3-day sliding windows, and overlapping block bootstrap (block size 10) combined with credible intervals for uncertainty quantification. Delay distributions are parametrized from literature or empirical line lists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C71, C77 provide detailed methodological specifications. These are clearly described in the Materials and Methods section with appropriate citations. The choices are justified through simulation studies (e.g., C67 for block size, C59 for smoothing parameter).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Re is a key epidemiological indicator quantifying average secondary infections with a threshold at 1. It changes due to various factors including interventions. Infection incidence methods are preferred for monitoring as they rely on fewer assumptions, though infection events cannot be observed directly and methods can introduce biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C13 establish foundational epidemiological concepts and methodological rationale. These are well-established principles supported by multiple citations to epidemiological literature and represent accurate characterization of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    },
+    {
+      "id": "3ec0888d-3a06-4e7a-aee8-0c6704771619",
+      "content_id": "5eebda0e-26d5-460f-a83f-e70726d55862",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The most recent Re estimate lies further in the past than the most recent observed incidence data due to the delay between infection and case observation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is a logical consequence of the deconvolution approach that accounts for observation delays. This is an inherent characteristic of the method that ensures Re estimates correspond to infection times rather than observation times.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:49:02.466501Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5fbf73b0-1f23-4d79-9142-634442323c2c",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "a03586b1-2554-4157-b92a-4fa82595d036",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "2a00dbb4-f0c1-4212-8ee8-d452a63c28ae",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "8430d01a-f747-49d8-9c0e-cfff6a116374",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "a74a4cd0-b22f-4448-9e21-c1706ba8be54",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "b1cd279e-bbd8-4c35-bc51-5f8ca96d4076",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "fc451c27-d686-4b88-bf1a-c54c386b68cc",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "600d910e-8bbc-41ce-afc3-418787349a1b",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "7fd61282-0e7c-4cd5-bb70-1b840d8c12de",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "0674d452-6274-4e9e-bea0-dbfba82f3b58",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "d222c2e9-44fc-45ea-8ab8-e669ad77af96",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "93f99430-5415-438f-a0a1-9cd81b929c86",
+      "result_id": "acff3837-38ee-44a3-9ce5-7c453436edba"
+    },
+    {
+      "claim_id": "2d651007-b431-4831-b6ff-e16ece658a58",
+      "result_id": "ad70fe48-38ca-4cc7-b09c-f377f8743d6b"
+    },
+    {
+      "claim_id": "ea49d7f4-65b1-40f8-98a2-4233c4f251b2",
+      "result_id": "ad70fe48-38ca-4cc7-b09c-f377f8743d6b"
+    },
+    {
+      "claim_id": "15b65287-4e8b-475e-b2d3-2f21b34c732d",
+      "result_id": "ad70fe48-38ca-4cc7-b09c-f377f8743d6b"
+    },
+    {
+      "claim_id": "ece22c22-aa87-4555-a76f-51bd0db4794c",
+      "result_id": "20e6edba-48b1-4475-be4e-99f8a7327053"
+    },
+    {
+      "claim_id": "59e8a17a-8d6b-4a87-862f-5f101c13df04",
+      "result_id": "20e6edba-48b1-4475-be4e-99f8a7327053"
+    },
+    {
+      "claim_id": "c5b61ab9-ec68-4baa-9c67-c7f4c9834168",
+      "result_id": "20e6edba-48b1-4475-be4e-99f8a7327053"
+    },
+    {
+      "claim_id": "aa335d11-6fe8-464d-b722-ba2abfefe4b7",
+      "result_id": "20e6edba-48b1-4475-be4e-99f8a7327053"
+    },
+    {
+      "claim_id": "883c09c8-02ca-48a7-8fcc-8c17ad5872d7",
+      "result_id": "20e6edba-48b1-4475-be4e-99f8a7327053"
+    },
+    {
+      "claim_id": "2b3a21f8-43ba-4b9f-9faa-7934f45797cc",
+      "result_id": "20e6edba-48b1-4475-be4e-99f8a7327053"
+    },
+    {
+      "claim_id": "f21877c8-5130-4804-9a46-33aed0978fbb",
+      "result_id": "52b930e5-c561-487a-bf94-d808fec31f67"
+    },
+    {
+      "claim_id": "98d19887-c06c-47ee-be0f-2f9451a1b4d3",
+      "result_id": "52b930e5-c561-487a-bf94-d808fec31f67"
+    },
+    {
+      "claim_id": "1ed784d3-dbfa-4dfa-9400-6aafe7664993",
+      "result_id": "52b930e5-c561-487a-bf94-d808fec31f67"
+    },
+    {
+      "claim_id": "4cc2cc8b-ff80-4954-9aab-472bfe5b0d85",
+      "result_id": "52b930e5-c561-487a-bf94-d808fec31f67"
+    },
+    {
+      "claim_id": "ff7bdfda-596d-4173-83a8-63d350f94a64",
+      "result_id": "52b930e5-c561-487a-bf94-d808fec31f67"
+    },
+    {
+      "claim_id": "ef630b75-cb6a-464f-ba2a-ddd5e8f45dcb",
+      "result_id": "05bb69a7-1183-4b17-b207-f6c5b64421d6"
+    },
+    {
+      "claim_id": "e1d42cb0-b3cb-45bc-ab4a-b6c7287674c9",
+      "result_id": "05bb69a7-1183-4b17-b207-f6c5b64421d6"
+    },
+    {
+      "claim_id": "f8ce8fd6-b6b6-4eb0-85fc-5d2b86409f75",
+      "result_id": "05bb69a7-1183-4b17-b207-f6c5b64421d6"
+    },
+    {
+      "claim_id": "d48b093e-cea4-418c-9dbc-ba656fa2a375",
+      "result_id": "05bb69a7-1183-4b17-b207-f6c5b64421d6"
+    },
+    {
+      "claim_id": "934d9bfe-28df-4e2b-9414-8f0035f23bba",
+      "result_id": "05bb69a7-1183-4b17-b207-f6c5b64421d6"
+    },
+    {
+      "claim_id": "72beb13c-ac98-4868-a38c-9f7a6b512f41",
+      "result_id": "cb49de46-bf09-4139-a7ff-8b839db8183a"
+    },
+    {
+      "claim_id": "37ad05d1-2b83-4f19-9975-628e69b65350",
+      "result_id": "ed1c6957-7363-4da6-a841-80ea5e8b5156"
+    },
+    {
+      "claim_id": "dd110642-71cd-4320-b068-fece076934ee",
+      "result_id": "ed1c6957-7363-4da6-a841-80ea5e8b5156"
+    },
+    {
+      "claim_id": "2bc53654-1fe7-498a-b7d5-62fe33273461",
+      "result_id": "ed1c6957-7363-4da6-a841-80ea5e8b5156"
+    },
+    {
+      "claim_id": "4bcf9dbc-e0b0-4855-9590-a122b9eb9a5e",
+      "result_id": "ed1c6957-7363-4da6-a841-80ea5e8b5156"
+    },
+    {
+      "claim_id": "7932e520-f42b-4964-81d1-16170012cb85",
+      "result_id": "09edc97f-3fdc-4d1e-b514-8714a1645eac"
+    },
+    {
+      "claim_id": "a6fae765-e7b9-4362-8a2e-f15d2e8def3c",
+      "result_id": "09edc97f-3fdc-4d1e-b514-8714a1645eac"
+    },
+    {
+      "claim_id": "2981e45b-fc15-4f44-bf37-432dbfa0c9ca",
+      "result_id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02"
+    },
+    {
+      "claim_id": "fa643b0d-1ea2-480b-8412-2d5555302f53",
+      "result_id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02"
+    },
+    {
+      "claim_id": "d636ec3f-f3e2-4fbf-9767-b45099314dcf",
+      "result_id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02"
+    },
+    {
+      "claim_id": "5a17482b-75d5-465d-b7a8-c97d41bbe761",
+      "result_id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02"
+    },
+    {
+      "claim_id": "6749db52-0069-4d6d-ac18-8e84ff503a9f",
+      "result_id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02"
+    },
+    {
+      "claim_id": "59aaa505-8f80-49af-bd6f-d3cfc4b4797b",
+      "result_id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02"
+    },
+    {
+      "claim_id": "29a531d4-34eb-40d9-bd3e-94d39446177a",
+      "result_id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02"
+    },
+    {
+      "claim_id": "966a5001-5133-4f30-98b1-954084312544",
+      "result_id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02"
+    },
+    {
+      "claim_id": "048a9923-e48c-450b-95e8-5f34b84fbf7e",
+      "result_id": "eb5e3bb7-9478-40bb-ad14-c2ebbf553f02"
+    },
+    {
+      "claim_id": "e18f27b2-b87e-47de-a84f-b9e8d541f595",
+      "result_id": "9abbc1d6-e04d-4ed8-a09c-19ba7d19b316"
+    },
+    {
+      "claim_id": "c32fb420-b5f9-461f-83f3-efe0aa1dd839",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "149bdc4e-1672-4423-92dd-3a4c2597b230",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "bc85749a-128f-4b89-91fb-c489e0634168",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "3a890482-05fd-4ba1-b856-da2684a360d5",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "8e3f97f2-4093-42c5-91a9-97a4fa955306",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "d5e4a3d8-961c-4f0e-a476-6bb84342ee4e",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "9d36965e-ab76-427d-b1d8-ca8fa00039cc",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "8003df77-ed60-4b68-8cb5-917a786306c8",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "9e53397c-78cb-4298-b849-4ed0a528558d",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "015c2e06-eda7-4f51-bc37-6d40b823e0eb",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "870b8722-ad00-47a2-b7e3-fd9955c9e07f",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "36da2b81-8b4a-4bf3-8154-8e511a2e170e",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "75c7e913-7268-4a65-88cc-f6caa50afa96",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "a8e58732-16e7-490c-93fc-b45d9ccaf64a",
+      "result_id": "fb6f2827-e4bc-45c3-9231-5ef3c7800d32"
+    },
+    {
+      "claim_id": "8ab3972e-a9a7-40ca-80dc-690180c0f27c",
+      "result_id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe"
+    },
+    {
+      "claim_id": "f9dbc8f7-696c-4361-8f43-197147ec8d1a",
+      "result_id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe"
+    },
+    {
+      "claim_id": "2335112f-1efe-4f92-b742-ff6997838191",
+      "result_id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe"
+    },
+    {
+      "claim_id": "ae052cd4-2ef6-471b-9046-8b176327a60d",
+      "result_id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe"
+    },
+    {
+      "claim_id": "b9bae8ba-568c-45cb-a2b4-a98c60b991f0",
+      "result_id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe"
+    },
+    {
+      "claim_id": "b6f28e84-ecd4-49d4-a00e-478502d153a2",
+      "result_id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe"
+    },
+    {
+      "claim_id": "c7549ef2-53d4-46cb-8a25-79c2349004e3",
+      "result_id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe"
+    },
+    {
+      "claim_id": "fc6b6e63-3497-48c6-a9da-e07febaa16e0",
+      "result_id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe"
+    },
+    {
+      "claim_id": "af1f67fa-75b5-4749-b168-834eeda68503",
+      "result_id": "b4eb67a5-f97b-4e30-9891-fc27ffa97afe"
+    },
+    {
+      "claim_id": "ac316204-ac7c-4157-8bcf-d1c4387b09e5",
+      "result_id": "3ec0888d-3a06-4e7a-aee8-0c6704771619"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors identified a synonymous polymorphism in the Fcer1a gene (GC haplotype) in a natural population of field voles sampled over 3 years across seven sites. The GC haplotype was present at a frequency of 0.08, with three other haplotypes (AC, AT, GT) present at frequencies of 0.81, 0.10, and 0.01 respectively. The two SNPs composing the haplotype were tightly linked (r\u00b2 = 0.50; D' = 0.70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C53 provide clear descriptive data about the study population, sampling design, and haplotype frequencies. The linkage statistics and sample sizes are explicitly reported, providing adequate support for the identification and characterization of the polymorphism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C8",
+      "C9",
+      "C10",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C68",
+      "C69",
+      "C70",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The GC haplotype has sex-dependent effects on immune gene expression. In unstimulated splenocytes, males with the GC haplotype showed stronger expression of pro-inflammatory genes (GO:0050729: p=0.007), while females showed stronger expression of anti-inflammatory genes (GO:0050728: p=0.001). The top differentially expressed genes differed by sex: Il33 in males (logFC=2.76, p<0.001, q<0.001) and Socs3 in females (logFC=1.07, p<0.001, q=0.05). In stimulated splenocytes, females with the GC haplotype expressed lower levels of Il17a (estimate=-0.12, 95% CI=-0.19 to -0.04), while males showed no difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C8-C10, C55-C60, C63-C64, C68-C70, C144-C146 collectively demonstrate sex-dependent effects on immune gene expression with multiple lines of evidence: DGE analysis (n=53 males, 31 females), GSEA showing opposing inflammatory biases, and Q-PCR validation. Statistical support is provided throughout with p-values, q-values, and confidence intervals. The control for cestode burden (C63-C64) strengthens the inference that effects are not confounded by parasite infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C11",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The GC haplotype has sex-dependent effects on susceptibility to Babesia microti infection. Females with the GC haplotype were more likely to be infected (log odds ratio=1.25, 95% CI=0.44-2.07), while males showed no difference (log odds ratio=0.14, 95% CI=-0.76 to 1.03). The genotype by sex interaction was marginally significant (LRT p=0.048). No effect was found for other parasites (Bartonella spp., ticks, fleas, cestodes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C11, C74-C77 provide statistical evidence for sex-dependent effects on B. microti infection with appropriate confidence intervals and p-values. The marginally significant interaction (p=0.048) is borderline but the sex-specific effect sizes and confidence intervals support the conclusion. The null findings for other parasites (C77) are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C12",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The GC haplotype has sex-dependent effects on reproductive success. Males with the GC haplotype had 2.2 fewer offspring on average (p=0.04), while females showed no significant difference. These effects were not driven by differences in microparasite infection, as controlling for microparasites had little effect on the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C12, C78-C81 demonstrate reduced reproductive success in males with statistical support (p=0.04) and appropriate sample sizes. The null finding in females (C79) is reported with acknowledgment of larger sample size and lower variability. The control analysis for microparasite infection (C80-C81) strengthens the inference that the effect is not confounded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Individuals with the AT haplotype had lower SOD1 activity compared with other haplotypes, including the GC haplotype (p=0.04), irrespective of sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 reports a statistically significant finding (p=0.04) for SOD1 activity associated with the AT haplotype. However, this is a secondary finding about a different haplotype than the main focus (GC), and the effect size and sample size are not explicitly reported in the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "This study describes a polymorphism with effects across immune gene expression, oxidative stress, susceptibility to infection, and reproductive success in a natural population. Effects often differed between sexes, with opposing effects for unstimulated immune gene expression and sex-specific effects for stimulated expression, infection susceptibility, and reproductive success. However, smaller effects in the opposite sex cannot be ruled out due to insufficient statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 provide an accurate summary of the study's findings with appropriate caveats about statistical power (C87). The integration across multiple phenotypes is well-supported by the individual results, though the authors appropriately acknowledge limitations in detecting smaller effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C29"
+    ],
+    "result": "This is a rare example of a polymorphism whose consequences can be followed across immunity, infection, and reproduction for both males and females in a natural population. The authors claim there is no documented example of such comprehensive investigation in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13 and C29 make assertions about the novelty of the study based on the authors' knowledge of the literature. While the study does integrate multiple phenotypes across sexes, the claim of being the first or only such example cannot be independently verified from the manuscript alone and depends on the completeness of the authors' literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The work is consistent with previous findings linking FCER1 polymorphisms to inflammatory disease in humans. The authors suggest the polymorphism may exaggerate background sex differences in inflammatory activity, potentially driven by sex hormones that have been implicated in differential expression of autosomal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89, C98-C100 provide interpretations connecting the findings to prior work and proposing mechanisms. While the consistency with human studies is appropriately cited (C88), the mechanistic explanations (C98, C100) are speculative and not directly tested in this study. The role of sex hormones is plausible but remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "57% of post-juvenile females were pregnant or lactating at capture. Pregnancy is an anti-inflammatory state in mammals to protect the fetus. Testosterone in males has anti-inflammatory effects but also drives behaviors (increased space use, aggression) that might increase infection risk and immune stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 provide contextual information about sex differences in physiology and behavior. C91 reports descriptive data from the study. C92-C96 cite established knowledge about pregnancy and testosterone effects. C97 is a reasonable inference about behavioral consequences, though not directly tested. These claims provide important context for interpreting the sex-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The effect of Fcer1a polymorphism on inflammatory responses may affect susceptibility to infection. The authors propose that females with the GC haplotype are more likely to be infected with B. microti due to a lower pro-inflammatory to anti-inflammatory cytokine ratio, as pro-inflammatory cytokines may help resist B. microti infection. However, the observational study design cannot establish causal relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102, C106-C110 propose a mechanistic link between inflammatory gene expression and infection susceptibility. While the association between the GC haplotype and B. microti infection is supported (see Result 3), the proposed mechanism (C108, C110) is speculative. The authors appropriately acknowledge the limitation of observational studies in establishing causation (C107).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The reduced reproductive success in males with the GC haplotype may result from costs of inflammation or oxidative stress. Possible mechanisms include: (1) energetic costs of mounting pro-inflammatory responses, (2) oxidative damage to sperm (which are susceptible to ROS), or (3) impaired olfactory sexual signals (MUPs) due to oxidative stress. Sperm competition is important in microtines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C121 propose mechanisms for reduced male reproductive success. While the association between the GC haplotype and reduced reproductive success is supported (see Result 4), the proposed mechanisms (C115, C117, C121) are speculative and not directly tested. The cited background information about sperm competition (C118-C119) and ROS susceptibility (C120) is appropriate, but the specific pathways remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Haplotype frequencies remained relatively stable over seven years (2008-2010: 0.12, 0.76, 0.07, 0.05; 2015-2017: 0.08, 0.81, 0.10, 0.01), suggesting the GC haplotype may be under balancing selection despite detrimental effects. The authors speculate that the GC haplotype's pro-inflammatory bias might be advantageous during population 'crash' phases (high parasitism risk) but disadvantageous during 'peak' phases (low parasitism risk). The study sampled during a peak phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C141 present temporal data on haplotype frequencies and propose balancing selection. The stability of frequencies (C127-C128) is documented, and the inference of possible balancing selection (C129) is reasonable given the persistence despite fitness costs. However, no direct evidence for an advantage of the GC haplotype was found (C131), and the proposed context-dependent selection scenario (C135-C136, C140-C141) is speculative. The population dynamics data (C137-C139) provide context but do not directly test the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "Considering genotype in isolation can be misleading for precision medicine, as the same polymorphism can have different outcomes for immune gene expression, susceptibility to infection, and reproductive success in males and females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 draws an appropriate inference about implications for precision medicine based on the demonstrated sex-dependent effects across multiple phenotypes. This is a reasonable conclusion given the comprehensive evidence for genotype-by-sex interactions throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C54",
+      "C61",
+      "C62",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C72",
+      "C90",
+      "C103",
+      "C104",
+      "C105",
+      "C111",
+      "C112",
+      "C113",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C142",
+      "C147"
+    ],
+    "result": "Background and context claims establishing: (1) the importance of genotype for immune function and fitness, (2) challenges in studying genotype-environment interactions, (3) the value of natural populations as study systems, (4) prior work on FCER1 polymorphisms and IgE-mediated immunity, (5) sex differences in immunity, (6) the role of inflammation and oxidative stress, and (7) concepts of balancing selection and immunoheterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14-C45, C54, C61-C62, C65-C67, C71-C72, C90, C103-C105, C111-C113, C122-C126, C142, C147 provide background knowledge and context from the literature, appropriately cited throughout. These establish the rationale for the study and provide necessary context for interpreting the findings. The claims about prior work are supported by citations and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C47",
+      "C48",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "Tret1-1 expression is upregulated upon starvation at both protein and transcriptional levels. Starvation increases Tret1-1 protein levels in perineurial glial cells (C37, C47, C72), with more protein localized to the plasma membrane (C48). The Tret1-1 promoter is induced upon starvation as shown by increased stgGFP reporter expression (C67, C68, C69, C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence support this result: immunostaining shows increased Tret1-1 protein (C47, C72, Figure 1), western blot quantification confirms promoter induction (C67, Figure 3A), and fluorescence quantification demonstrates significant upregulation (C68, Figure 3B). The convergence of protein-level and transcriptional data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Tret1-1 upregulation is specifically triggered by carbohydrate deprivation rather than general nutrient restriction. Larvae fed sugar-only food show Tret1-1 levels comparable to normally fed animals (C73), indicating that dietary sugar abolishes Tret1-1 induction (C74) and that other nutrients like amino acids are not important for upregulation (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sugar rescue experiment (C73, Figure 4) provides clear evidence that carbohydrate availability specifically controls Tret1-1 expression. The comparison of three conditions (fed, starved, sugar-fed) with quantification (Figure 4B) demonstrates that sugar alone is sufficient to prevent upregulation, supporting the hypoglycemia-dependent mechanism (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C131"
+    ],
+    "result": "Tret1-1 transports both glucose and trehalose but not fructose efficiently. Heterologous expression in Xenopus oocytes demonstrates that Tret1-1PA facilitates uptake of glucose (C78) and trehalose (C79), while fructose uptake is minimal (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The radiotracer uptake assays in oocytes (Figure 5A) provide direct biochemical evidence for substrate specificity. The data confirm previous findings for trehalose (C32) and extend them to glucose transport. The experimental design with multiple substrate concentrations and appropriate controls supports the conclusions about transport capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C87",
+      "C88",
+      "C39"
+    ],
+    "result": "Starvation-induced Tret1-1 upregulation increases glucose uptake efficiency into the brain. FRET-based glucose sensor measurements show significantly increased glucose uptake rates in starved animals compared to fed controls (C82), and this increase is abolished when Tret1-1 is knocked down (C83, C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FRET sensor experiments (Figure 5D-F) provide functional validation that Tret1-1 upregulation has physiological consequences. The genetic rescue experiment with Tret1-1 knockdown (C83) demonstrates causality. However, the elevated baseline glucose in fed Tret1-1 knockdown animals (C84) suggests potential compensatory mechanisms that warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C136"
+    ],
+    "result": "Tret1-1 homeostasis depends on Rab-GTPase-mediated intracellular trafficking. Rab7 knockdown reduces Tret1-1 levels (C56, C57, C58), suggesting negative feedback when degradation is blocked (C59). Rab10 knockdown causes cytosolic accumulation of Tret1-1 (C60, C61), indicating Rab10's role in plasma membrane delivery (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trafficking experiments use multiple approaches (RNAi knockdown and dominant-negative constructs) with consistent phenotypes (Figure 2). The opposing effects of Rab7 (reduced levels) versus Rab10 (cytosolic accumulation) support distinct roles in degradation versus membrane delivery. The colocalization data (Figure 2\u2014supplement 1) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Tret1-1 upregulation upon starvation is independent of insulin and AKH signaling. Expression of dominant-negative insulin receptors does not affect Tret1-1 levels in fed or starved conditions (C92, C93, C94). Similarly, Akh mutants show normal Tret1-1 induction upon starvation (C97, C98, C99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic experiments with insulin receptor mutants (Figure 6A-D) and Akh mutants (Figure 6E-H) provide clear negative results. Multiple alleles and approaches were tested, strengthening the conclusion. This is an important finding as it rules out the most obvious candidate pathways and motivates investigation of alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119"
+    ],
+    "result": "Tret1-1 upregulation depends on the BMP branch of TGF-\u03b2 signaling, specifically through Put and Tkv receptors. Knockdown of the type II receptor Put completely abolishes starvation-induced Tret1-1 upregulation (C108, C109, C110), while Wit knockdown has no effect (C111). Among type I receptors, Tkv knockdown blocks upregulation (C119) while Sax knockdown does not (C118). Babo knockdown (activin branch) does not affect upregulation (C114, C115).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic dissection of TGF-\u03b2 signaling components (Figure 7) using multiple RNAi lines provides strong evidence. The specificity for Put/Tkv over Wit/Sax and the lack of effect with Babo knockdown clearly implicate the BMP branch. Quantification (Figure 7J) shows statistical significance. The use of multiple independent RNAi lines for key components strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C168"
+    ],
+    "result": "The BMP ligand Gbb induces Tret1-1 expression and is upregulated upon starvation. Overexpression of Gbb in BBB cells significantly upregulates Tret1-1 in fed animals (C124), an effect specific to Gbb and not Dpp (C125, C126). Gbb is expressed in perineurial and other glial cells (C127), and both Gbb and Tret1-1 expression increase upon starvation (C128, C129).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gain-of-function experiment with Gbb overexpression (Figure 8A-D) demonstrates sufficiency, while the specificity control with Dpp strengthens the conclusion. The immunostaining showing endogenous Gbb expression and its upregulation upon starvation (Figure 8E-I) provides correlative support. Together with the receptor data, this establishes a coherent Gbb-Put-Tkv signaling axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C151"
+    ],
+    "result": "Jeb/ALK signaling is not involved in Tret1-1 regulation. Alk knockdown in glial cells does not affect Tret1-1 expression in fed conditions (C102) and Tret1-1 is still upregulated upon starvation in Alk knockdown animals (C103, C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result with Alk knockdown (Figure 6\u2014supplement 1) is clearly demonstrated. While the authors note that jeb knockdown caused lethality preventing analysis, the Alk data alone is sufficient to exclude this pathway from Tret1-1 regulation, distinguishing it from the brain sparing mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C145",
+      "C162",
+      "C169"
+    ],
+    "result": "The TGF-\u03b2-dependent regulation of carbohydrate transporters at the BBB is likely evolutionarily conserved between Drosophila and mammals. Mammalian GLUT1 is upregulated upon hypoglycemia (C43) and can be induced by TGF-\u03b2/BMP signaling in other tissues (C44, C161), suggesting conservation of the regulatory mechanism (C42, C145, C162, C169).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the comparative analysis is logical and the cited mammalian studies support individual components (GLUT1 upregulation upon hypoglycemia, BMP regulation of GLUT1 in chondrocytes), direct evidence that mammalian BBB GLUT1 is regulated by TGF-\u03b2 signaling is lacking. The inference is reasonable but requires experimental validation in mammalian BBB endothelial cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C55"
+    ],
+    "result": "Tret1-1-positive vesicles colocalize with multiple Rab-GTPases including Rab7, Rab10, Rab19, and Rab23, but only Rab7 and Rab10 functionally regulate Tret1-1. Colocalization is observed for all four Rabs (C50), but knockdown of Rab19 or Rab23 has no effect on Tret1-1 (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EYFP-Rab library screen (Figure 2\u2014supplement 1) identifies candidate regulators through colocalization. The functional validation through knockdown experiments appropriately distinguishes between mere colocalization and functional involvement. This demonstrates proper experimental logic in moving from descriptive to functional analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The Tret1-1 promoter fragment drives expression that colocalizes with endogenous Tret1-1 protein in perineurial glial cells and some neurons. Tret1-1-Gal4 driven RFP colocalizes with Tret1-1 antibody staining (C64, C65), and stgGFP colocalizes with the perineurial marker Apontic (C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation experiments (Figure 3\u2014supplement 1) appropriately confirm that the promoter fragment recapitulates endogenous expression patterns. This is essential for interpreting the promoter-reporter experiments used to demonstrate transcriptional regulation. The use of both antibody and cell-type marker validation strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Fed Tret1-1 knockdown animals show elevated glucose levels compared to controls, possibly due to compensatory upregulation of other transporters like MFS3 and Pippin. The observation (C84) is explained by speculation about compensation (C86) based on the known expression of other transporters (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of elevated glucose in fed Tret1-1 knockdown animals (Figure 5E) is clearly documented, but the compensatory mechanism is speculative (C86). No direct evidence is provided for upregulation of MFS3 or Pippin. This represents an interesting observation that requires follow-up experiments to determine the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C148",
+      "C167"
+    ],
+    "result": "Tret1-1 upregulation represents a brain-sparing mechanism that protects the nervous system from nutrient restriction. The increased carbohydrate transport capacity upon starvation (C133) likely protects the brain from malnutrition effects (C148, C167).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional glucose uptake data (Figure 5) combined with the demonstration that this increase depends on Tret1-1 provides strong support. The connection to brain sparing is logical given the known phenomenon in Drosophila (C33, C149) and the specific upregulation in BBB cells. However, direct demonstration of brain protection (e.g., maintained neuronal function or survival under starvation) would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  }
+]

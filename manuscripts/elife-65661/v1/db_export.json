@@ -1,0 +1,1419 @@
+{
+  "submission": {
+    "id": "4bc5e34e-a4eb-41a9-966a-39471ceeb3f0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:31:38.773144Z",
+    "updated_at": "2025-12-03T15:31:38.773144Z"
+  },
+  "content": [
+    {
+      "id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "submission_id": "4bc5e34e-a4eb-41a9-966a-39471ceeb3f0",
+      "content_type": "manuscript",
+      "content_text": "# Evidence accumulation, not \u2018self-control\u2019, explains dorsolateral prefrontal activation during normative choice\n\n## Authors\n\n- Cendri A Hutcherson<sup>1</sup> ([ORCID: 0000-0002-4441-4809](https://orcid.org/0000-0002-4441-4809)) \u2020\n- Anita Tusche<sup>3</sup> ([ORCID: 0000-0003-4180-8447](https://orcid.org/0000-0003-4180-8447))\n\n### Affiliations\n\n1. Department of Psychology, University of Toronto Scarborough Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n2. Department of Marketing, Rotman School of Management, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n3. Division of Humanities and Social Sciences, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))\n4. Departments of Psychology and Economics, Queen\u2019s University Kingston Canada ([ROR:02y72wh86](https://ror.org/02y72wh86))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhat role do regions like the dorsolateral prefrontal cortex (dlPFC) play in normative behavior (e.g., generosity, healthy eating)? Some models suggest that dlPFC activation during normative choice reflects controlled inhibition or modulation of default hedonistic preferences. Here, we develop an alternative account, showing that evidence accumulation models predict trial-by-trial variation in dlPFC response across three fMRI paradigms and two self-control contexts (altruistic sacrifice and healthy eating). Using these models to simulate a variety of self-control dilemmas generated a novel prediction: although dlPFC activity might typically increase for norm-consistent choices, deliberate self-regulation focused on normative goals should decrease or even reverse this pattern (i.e., greater dlPFC response for hedonistic, self-interested choices). We confirmed these predictions in both altruistic and dietary choice contexts. Our results suggest that dlPFC response during normative choice may depend more on value-based evidence accumulation than inhibition of our baser instincts.\n\n## Introduction\n\nSelf-control dilemmas typically involve tradeoffs between short-term, hedonic considerations and longer-term or more abstract standards and values. For example, social interactions often force an individual to weigh self-interest against norms favoring equity and other-regard. Similarly, dietary decisions often require weighing the immediate pleasure of consumption against personal standards or societal norms favoring healthy eating. Understanding when, why, and how people choose normatively preferred responses (e.g., generosity over selfishness, healthy over unhealthy eating, etc.) has represented a central goal of the decision sciences for decades. What neural and computational processes must be engaged to support more normative behavior? What makes such choices frequently feel so conflicted and effortful, and how can we make them easier? To what extent does following social or personal norms depend on activation in brain regions associated with inhibitory control, such as the dorsolateral prefrontal cortex (dlPFC)?\n\nPrevious research has provided a wealth of evidence suggesting that dlPFC activation is associated with normative choices in both the social and non-social domain. For instance, compared to unhealthy food choices, healthier choices in successful dieters were accompanied by greater activation in a posterior region of the dlPFC (Hare et al., 2009). Greater dlPFC response in a similar region has also been observed when individuals make normatively favored choices in both social decision making (Strombach et al., 2015; Cutler and Campbell-Meiklejohn, 2019) and intertemporal choice (Luo et al., 2012; McClure et al., 2004). Moreover, activation in the dlPFC increases when individuals explicitly focus on eating healthy (Hare et al., 2011a) or on decreasing craving for food (Kober et al., 2010). Electrical disruption of this area also decreases patience (Figner et al., 2010) and reduces normative behavior in cooperative contexts like the Ultimatum game (Ruff et al., 2013). Collectively, these results have been taken to support the notion that the dlPFC may be recruited to modulate values or bias choices in favor of normative responses, perhaps especially when those responses conflict with default preferences. Such findings are also consistent with the notion that this region might play a more general role in inhibitory control.\n\nYet, a variety of results seem inconsistent with this view. For example, researchers often fail to observe increased dlPFC recruitment when individuals make pro-social or intertemporally normative choices (Zaki and Mitchell, 2011; Tusche et al., 2016; Magen et al., 2014). Moreover, electrical disruption of the dlPFC has been observed both to decrease appetitive valuation of foods (Camus et al., 2009) and to increase generous behavior in altruistic choice tasks like the Dictator game (Ruff et al., 2013). Such findings conflict with the idea that this region consistently promotes normative concerns over immediate, hedonistic desires. Thus, it remains unclear how to predict whether and when one might observe a positive association between dlPFC response and choices typically associated with successful self-control.\n\nHere, we propose a computational account of fMRI BOLD response in the dlPFC that may resolve many of these apparent inconsistencies. This account draws on prior research in both perceptual and value-based decision making, which consistently finds that the posterior dlPFC region associated with both normative \u2018self-control success\u2019 and inhibitory control tasks also activates during choices that are more difficult to discriminate in simple perceptual and value-based choices lacking a self-control conflict (e.g., Heekeren et al., 2004; Noppeney et al., 2010; Pedersen et al., 2015). Our account is also inspired by findings that the dlPFC may be one hub in a larger neural circuit \u2013 encompassing additional regions like the dorsal anterior cingulate cortex [dACC], supplementary motor area, and inferior frontal gyrus/anterior insula [IFG/aIns] \u2013 that selects actions for execution using a process of evidence accumulation toward a threshold for response (Hanks et al., 2015; Hare et al., 2011b; Pisauro et al., 2017; Gluth et al., 2012; Rodriguez et al., 2015). Based on this evidence, we developed a computational model of self-control dilemmas, rooted in the logic of evidence accumulation, that successfully predicts not only when an individual will choose in a normative rather than hedonistic (In the following results, we examine choices in two domains often associated with self-control:altruistic choice and healthy eating. We use the term \u2018normative\u2019 choices to describe generous and healthy decisions in these contexts, respectively. To contrast with normative choices, we refer to both selfish and unhealthy decisions using the term \u2018hedonistic\u2019 choices, although we acknowledge that decisions about money, even if selfish, would not be considered hedonistic in the classical sense of referring to sensory pleasure. Instead, we here use the term hedonistic in the sense of promoting immediate self-gratification. Similarly, we use the term \u2018hedonic attribute\u2019 to refer to attributes associated with immediate self-gratification (i.e., self-serving outcomes, food tastiness), whether or not they are directly linked to sensory pleasure.) fashion, but also when, why, and to what degree response in the dlPFC will be recruited during that process. We also note that we focus here on inhibitory control-related regions of the dlPFC rather than value-related dlPFC regions, which lie in somewhat more anterior areas of the lateral prefrontal cortex and frontal pole (Tusche and Hutcherson, 2018; Plassmann et al., 2007). Our model also applies in theory when observing similar relationships to other brain areas frequently associated with conflict and inhibitory control, including regions of the IFG/aIns and dACC.\n\nBased on work examining simple perceptual and value-based choices (Milosavljevic et al., 2010; Krajbich et al., 2010; Busemeyer et al., 2019), we assume that the brain makes decisions through a process of value-based attribute integration and evidence accumulation (Figure 1). More specifically, choices are resolved by accumulating information about the value of choice-relevant information (attributes), weighted by their momentary goal relevance, until a critical threshold for choice is reached. Some of these attributes are associated with hedonism (e.g., self-regarding concerns in altruistic choice), and some are associated with social norms and standards for behavior (e.g., other-regarding concerns). For expository purposes, we refer to these respectively as hedonic and normative attributes. Intuitively, whether a process of value-based evidence accumulation results in a hedonistic or normative choice depends not only on the magnitude of hedonic and normative attributes, but also on their weight: higher weights on normative attributes lead to more norm-consistent responses.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65661/elife-65661-fig1-v1.jpg)\n\n**Figure 1.:** Input. Each option\u2019s hedonic and normative attributes (e.g., high tastiness and low healthiness for the sundae) are weighted by their current importance (e.g., wTaste [wT] and wHealth [wH]) and summed to construct relative option values [VO1 \u2013 VO2]. Model. In the computational model (upper right panel), these values, corrupted by momentary noise at time t [\u03b5t], serve as the inputs to an evidence accumulation process (Et) representing the two options (Sunday vs. apple). This evidence accumulates over time, moving by an increment dE at each moment, until it hits one of two predefined thresholds, determining the simulated response time (RT), the simulated choice, and the simulated neural activity (the sum of the absolute value of the evidence from t=0 to t=RT). Choices are classified as normative if the option with higher normative attribute value is selected (in this example, higher healthiness, i.e., the apple in option 2). Simulation. Simulating this process thousands of times (lower right panel) allows distributions to be constructed for the expected frequency of hedonistic and normative choices, RTs, and average neural activity, mean(neural), for each type of choice.\n\nWhat role does the dlPFC play in the process of choice? The observation of increased posterior dlPFC response when people choose consistently with normatively favored goals (e.g., healthy over unhealthy choices) has been taken to suggest that this region acts either to modulate the processing of attribute values or their weights in favor of normatively favored goals (Hare et al., 2009; Hare et al., 2011a), or to inhibit hedonistic reward-related responding (Lopez et al., 2014; Heatherton and Wagner, 2011). In contrast, we propose that activity in this region reflects processes related to the evidence accumulation stage of decisions. This suggests that dlPFC response during normative choice represents a downstream consequence of valuation processes, rather than a direct causal influence upon them. To support this argument, we use a value-based drift diffusion model (DDM, Figure 1) to simulate when and why we might observe greater activity in the dlPFC (and regions with similar response profiles) when resolving a choice. As we describe below, these simulations suggest that normative choices should be associated with greater neural activation in the dlPFC only when two things are true: hedonic attribute values directly oppose normative attribute values, and hedonic attributes receive more weight as inputs to the evidence accumulation process. In contrast, when normative attributes receive more weight, hedonistic choices should produce greater activity in the dlPFC and other areas associated with response selection.\n\nWe then used these observations to make two predictions. First, if people by default favor hedonic over normative attributes, then most studies will observe greater dlPFC response when people choose the normatively favored option. This prediction does not strongly distinguish our account from alternatives. However, our model makes a second, more novel prediction: if a normally hedonistic decision maker focuses on normative goals, this should reduce activation in the dlPFC when choosing the normatively favored option. A straightforward reading of an attribute-weighting account predicts the opposite: a normally hedonistic individual who deliberately attempts to focus on normative responding should show increased activation in the dlPFC in order to alter attribute weighting in favor of normative goals (Lopez et al., 2014; Kelley et al., 2015). We test these two alternative predictions across three datasets and two canonical self-control contexts in which people frequently struggle to align their actual behaviors with normative goals: altruistic and dietary choices. In all cases, results supported the predictions of an evidence accumulation account. These findings raise new and important questions regarding the role of the dlPFC \u2013 and effortful self-control more generally \u2013 in promoting normative choice.\n\n## Results\n\n### Simulating the dilemma of self-control\n\nAlthough self-control dilemmas can take a variety of forms, for expository purposes, we here take a single, typical self-control dilemma: a decision maker deciding whether to indulge in a decadent snack (e.g., an ice cream sundae) or opt for something healthier (e.g., an apple). This example allows us to capture two critical features: first, self-control dilemmas typically involve making decisions about options that vary in the magnitude or value of hedonic and normative attributes (e.g., tastiness and healthiness). Second, the decision maker must weigh these attributes based on goals that can vary in their relative strength at different times and in different contexts. At a nice restaurant, tastiness may be prioritized. When trying to lose weight, healthiness is prioritized. We used simulations to explicitly capture these two features.\n\nSimulations were realized using a value-based DDM (Hare et al., 2011b) in which an evidence signal capturing hedonic and normative attributes, weighted by their current subjective importance, accumulates toward a choice-determining threshold (see Methods for details). This model generated predictions for how magnitudes and weights for hedonic and normative attributes influence the likelihood of a virtuous (i.e., healthy) choice, response time (RT), and neural response. These simulations yielded three key observations about behavior and neural response, which we describe in the context of food choice but apply in theory across any self-control dilemma that requires weighing hedonic rewards against normative values and goals.\n\n#### Observation 1: The likelihood of a normative choice depends on the value of hedonic and normative attributes\n\nTo capture the idea that some choices (e.g., ice cream vs. Brussels sprouts) represent more of a self-control conflict than others (e.g., strawberries vs. lard), we simulated a single decision maker facing choices between hypothetical options that independently varied the relative value of normative and hedonic attributes (e.g., the foods\u2019 relative healthiness and tastiness). In the context of food choice, we classified a simulated choice as normative (healthy) when the simulation selected the option with higher normative attribute values (higher healthiness). Choices were classified as hedonistic (unhealthy) otherwise. To determine the effect of current behavioral goals, we simulated the decision maker\u2019s choices for a variety of different weights on healthiness (wHealth) and tastiness (wTaste).\n\nFigure 2a illustrates how variation in tastiness and healthiness of an option relative to the alternative affects a decision maker\u2019s general propensity to make a healthy choice (i.e., averaging over different instances of wTaste and wHealth). As can be seen, the magnitude and sign of the two attributes matter: she tends to choose more healthily when one option dominates on both healthiness and tastiness (no-conflict trials). She chooses less healthily when one option is tastier while the other is healthier (conflict trials). She is least likely to choose normatively when the difference in tastiness is large, and the difference in healthiness is small. Thus, our simulations make the commonsense prediction that attribute values matter in determining the overall likelihood that an individual makes a healthy/normative choice.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65661/elife-65661-fig2-v1.jpg)\n\n**Figure 2.:** An evidence accumulation model (drift diffusion model [DDM]) can be used to simulate decision making for any self-control context requiring an integration of normative and hedonistic considerations (dietary choices displayed, integrating relative tastiness and healthiness). Heat maps display simulated healthy/unhealthy choices for binary choices consisting of a proposed option vs. a default option. Both options are characterized by attribute values such as the perceived tastiness and healthiness of the two food options, with plot axes capturing the relative value difference in tastiness (x-axis) and healthiness (y-axis) of the proposal vs. the default. For example, for each heat map, the upper right-hand quadrant shows likelihood of a healthy choice when the proposed option was both tastier and healthier than the default. The upper left-hand quadrant illustrates the likelihood of a healthy choice when proposed foods were healthier but less tasty than the default and so forth. Warmer colors indicate a higher likelihood of choosing the healthier option. (a) On average across multiple different goals (i.e., different weights on different attributes), the likelihood of a healthy choice depends on the relative attribute values of one option vs. another. Healthy choices are less likely when tastiness and healthiness conflict (conflict trials: one option is clearly better on one attribute, but worse on the other). (b) Specific goals prioritizing tastiness or prioritizing healthiness alter the frequency of healthy choice, although it still depends on the relative values of both tastiness and healthiness. Four example decision makers with different weights on healthiness and tastiness (wTaste, wHealth) are displayed for comparison. (c) The overall likelihood of a healthy choice (averaged separately for all combinations of conflict or no-conflict choices) depends on attribute weights. Goals prioritizing tastiness (darker bars) produce fewer healthy choices than goals prioritizing healthiness (lighter bars), but only when tastiness and healthiness conflict. (d) The drift diffusion model can also simulate expected neural activity (i.e., aggregate activity summed over decision time: $\\sumTime|Evidence|$) when choosing healthy [H] or unhealthy [UH] options, as a function of relative attribute values of available options and different goals. Bars display the overall difference in neural activity for H compared to UH choices for goals prioritizing tastiness (darker bars) and healthiness (lighter bars), divided as a function of attribute conflict. In no-conflict trials, healthy choices elicit less activity regardless of goal (i.e., Activity H < Activity UH). In conflict trials, however, healthy choices elicit more activity (i.e., Activity H > Activity UH), but only when goals prioritize tastiness (dark gray bars). Identical results are obtained when substituting response time (RT) for neural response (see Figure 2\u2014figure supplement 1). Similar results are also obtained when using a different formulation of the evidence accumulation process (see Appendix 2 and Appendix 1\u2014figure 1).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65661/elife-65661-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Similar to neural response, model simulations suggest that RTs when making normative (e.g., healthy, H) choices instead of hedonistic (e.g., unhealthy, UH) ones (i.e., RTH \u2013 RTUH) depends on the relative weighting of normative (healthiness) and hedonic (tastiness) choice attributes. Bars display the overall difference in RT for H compared to UH choices for goals prioritizing tastiness (darker bars) and healthiness (lighter bars), divided as a function of attribute conflict. In no-conflict trials, healthy choices elicit faster RTs regardless of goal (i.e., RTH < RTUH). In conflict trials, however, healthy choices take longer (i.e., RTH > RTUH), but only when goals prioritize tastiness.\n\n#### Observation 2: The likelihood of a normative choice depends on weights given to normative and hedonic attributes\n\nWe next attempted to capture the idea that individuals might vary in the goals that they prioritize, and also that the same individual might vary from context to context in those goals. In this case, the essence of self-control is to prioritize (i.e., assign a higher weight to) normative attributes like healthiness, or to deprioritize (i.e., assign a lower weight to) hedonic attributes like tastiness. We thus simulated the effects of different goal states by assuming different weights on hedonic and normative attributes (i.e., tastiness and healthiness). We show four example simulations in Figure 2b. Unsurprisingly, the decision maker chooses healthily less frequently when the weight on tastiness is higher than weight on healthiness. However, these differences are starkest in conflict trials, and essentially vanish for no-conflict trials (Figure 2c).\n\n#### Observation 3: Normative choices result in higher neural response only if attributes conflict and the decision maker weighs hedonic attributes more\n\nThe last and most important goal of our computational model simulations was to examine how neural response in a control region like the dlPFC (assuming its activity correlates with evidence accumulation) might depend on weights given to hedonic and normative attributes (Figure 2d). We characterized this simulated response as the absolute value of the accumulated evidence at each time point, summed over the duration of the choice, as this is what should contribute to observable BOLD responses.\n\nComparing differences in simulated neural response for healthy and unhealthy choices yields two important conclusions. First, when options do not conflict on healthiness or tastiness (i.e., one option is better on both), healthy choices generally elicit less activity than unhealthy ones (Figure 2d). Notably, for no-conflict trials, this holds true irrespective of whether a decision maker is currently prioritizing tastiness or healthiness. Second, and more importantly, when attributes conflict, neural activity during healthy vs. unhealthy choices shows a striking dependence on an individual\u2019s goals (i.e., the relative balance of wHealth and wTaste). In conflict trials, hedonism-favoring goals (i.e., wTaste > wHealth) result in higher activity on average when choosing healthily. In contrast, when goals prioritize normative attributes like healthiness (i.e., wHealth > wTaste), simulated neural responses are lower on average for healthy compared to unhealthy choices (Figure 2d). Thus, the neural response is positively associated with normative choice (i.e., greater neural activity to choose normatively instead of hedonistically) only when the decision maker places a higher weight on hedonistic than normative attributes. The same is true of simulated RTs, which are often used as a proxy for both choice difficulty and the presence of control (Figure 2\u2014figure supplement 1). Thus, the logic of evidence accumulation models suggests that the observation that normative choices activate brain areas associated with cognitive control might simply indicate that hedonic attributes are currently weighed more highly.\n\n### Testing computational predictions using fMRI data\n\n#### The DDM accurately predicts dlPFC activity across a variety of contexts\n\nIt is currently unknown whether activity in the dlPFC region frequently associated with inhibition and self-control might reflect activation patterns in the DDM during self-control. Preliminary evidence suggests that at least one region of the dlPFC correlates with evidence accumulation signals in simple choice (Hare et al., 2011b). We thus began by verifying that trial-by-trial simulated neural activity in the DDM correlated with activity in this region for complex, multi-attribute choices typical of different real-world self-control dilemmas. To assess the generalizability of this finding, we examined this across different choice contexts. We also show in supplementary analyses that this result does not depend on the particular form of the computational model but applies using an alternate formulations of a basic process of evidence accumulation to a threshold (see Appendix 2 for the example of an attribute-based neural DDM (anDDM) and Appendix 1\u2014figure 1). Note, however, that finding a correlation within this region could occur because the dlPFC performs the precise computations carried out by the DDM, or could occur if the dlPFC performs separate computational functions that activate proportionally to evidence accumulation activity (e.g., RT). In either case, we would expect the trial-by-trial activity of the dlPFC to correlate with predictions of the DDM.\n\nOur analysis focused on three previously collected fMRI datasets. Dataset 130 (N=51) and Dataset 222 (N=49) utilized an Altruistic Choice Task trading off different monetary outcomes for self and an anonymous partner in a modified version of a Dictator game (Figure 3a and b, see Methods for details). Dataset 3 utilized a Food Choice Task (Figure 3c), collected on three separate samples of participants (Sample 3a22 N=36; Sample 3b N=336; Sample 3c31 N=45, respectively), with different foods varying in tastiness and healthiness (see Methods for details). In Dataset 1 (altruistic choice), choices were made with the instruction to simply choose the most-preferred option (simulating natural choice contexts without experimentally manipulating goals/attribute weights). In Datasets 2 and 3, participants made choices in three separate conditions that manipulated goals/attribute weights by instructing participants to focus on different normative or hedonistic attributes (a point we return to below). All three datasets involved trials involving conflict between hedonic and normative attributes (conflict trials). Studies in Dataset 3 also included trials without such conflict, allowing us to test differential predictions of the computational model for conflict and no-conflict contexts (Figure 2). Because the three samples comprising Dataset 3 had an identical design, and neural results indicated no significant differences across the studies in regions of interest for the key analysis of normative vs. hedonistic choice, we report the results below collapsed across the samples (but see Figure 4\u2014figure supplement 2 for a comparison of results across samples).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65661/elife-65661-fig3-v1.jpg)\n\n**Figure 3.:** (a) In Dataset 1, participants made choices involving tradeoffs between monetary payoff for another person ($Other; normative attribute) and for themselves ($Self; hedonic attribute) in an Altruistic Choice Task. (b) In Dataset 2, participants made choices similar to the Altruistic Choice Task in Study 1, while we manipulated the weights on normative and hedonic attributes using instructions presented at the beginning of each task block. These instructions asked participants to focus on different pro-social motivations (ethical considerations, partner\u2019s feelings) as they made their choice. (c) In Dataset 3, we examined the generalizability of the model-based predictions in another choice domain. Here, participants performed a Food Choice Task in which the weights on food\u2019s healthiness (normative attribute) and tastiness (hedonic attribute) were manipulated. In all studies, participants had 4 s to decide, and gave their response on a 4-point scale from \u2018Strong No\u2019 to \u2018Strong Yes\u2019.\n\nWe predicted that dlPFC activity should mirror the simulated activity of the DDM during self-control dilemmas. To avoid concerns about circular analysis and double dipping (Kriegeskorte et al., 2009), we tested the core predictions of the computational model using an independent dlPFC cluster as our primary region of interest (ROI). The selected dlPFC ROI was predictively associated with the term \u2018inhibitory control\u2019 in a text-based meta-analysis of functional neuroimaging studies (Dock\u00e8s et al., 2020) (see Methods). However, to provide further evidence that neural activity in this dlPFC region is associated with predictions of the DDM, we also implemented supplementary analyses on the whole-brain level examining neural correlates of the DDM, both within and beyond the dlPFC. This analysis confirmed that activity in an area of dlPFC nearly identical to the area associated with inhibitory control consistently varies in the manner predicted by the DDM across several different choice contexts (see Figure 4a\u2013c for visualization of dlPFC regions correlated with DDM predictions, as well as Appendix 4 for further details of whole-brain results).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65661/elife-65661-fig4-v1.jpg)\n\n**Figure 4.:** Top (dlPFC): Trial-by-trial BOLD response in the dlPFC correlates significantly with predicted activity of the drift diffusion model (DDM) across three separate datasets. This includes responses during altruistic choice (a, b) and dietary choice (c). Hot colors display DDM-related responses thresholded for display purposes at p<0.001 (a and c) and p<0.005 (b), uncorrected. The location of this activity was anatomically similar to an area of the dlPFC associated with inhibitory control in a meta-analysis (Dock\u00e8s et al., 2020) (blue region of interest [ROI] displayed in each panel), which served as our primary, independently selected ROI to test predictions of the computational model (d-f). Middle (Model Simulations): Given participants\u2019 observed attribute weights, we simulated expected neural response during normative vs. hedonistic choice, using the DDM, for all trials in Dataset 1 (d), as well as separately for each condition in Dataset 2 (e) and Dataset 3 (f). Bottom (dlPFC Results): Within the independently defined dlPFC ROI associated with inhibitory control (blue voxels in a\u2013c), BOLD response during normative choice vs. hedonistic choice when attributes conflict, in (g) Dataset 1 (N=50) for all trials, as well as in (h) Dataset 2 (N=49), and (i) Dataset 3 (N=113) as a function of regulatory goals. Regulatory goals were designed to decrease hedonic weights and increase normative weights on choice (Dataset 2: Ethics, Partner; Dataset 3: Health) or to emphasize weights on hedonic attributes (Dataset 3: Taste). Only conflict trials are considered across datasets. As predicted, normative choices activate the dlPFC, but only when goals result in a greater weight on hedonistic than normative attributes. Contexts that increase normative attribute weights yield less dlPFC activity during normative choices (Dataset 2: Ethics, Partner; Dataset 3: Health). *p<0.05 based on one-sample t-tests against 0, or paired-tests between conditions; **p<0.01. Error bars show standard error of the mean. Similar results were obtained from a left dlPFC region associated with dietary self-control in dieters (Hare et al., 2009), as well as a right-hemisphere version of the inhibitory control ROI (see Appendices 2-3 and Appendix 2\u2014figure 1 and Appendix 3\u2014figure 1 for details).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65661/elife-65661-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Choices and response times (RTs) for observed behavior (colored bars) and model simulations (blue dots) for different choice types in Dataset 1 (N = 50). (b) Observed and model-simulated choices and RTs in Dataset 2 (N = 49), separately by regulatory condition. (c) Observed and model-simulated choices and RTs in Dataset 3 (N = 113), separately by regulatory condition. Error bars show standard error of the mean.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65661/elife-65661-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Q-P plots of predicted and observed response proportions and response times (RTs) for (a) Study 1, (b) Study 2, and (c) Study 3. Black dots represent model predicted choice proportions (x-axis) for low-, medium-, and high-difficulty trials, separated into five response time quantiles (y-axis), separately for the 10%, 30%, 50%, 70%, and 90% quantiles. Error responses correspond to response proportions below 50%. Red dots represent the observed choice proportions and RTs for these same trials.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65661/elife-65661-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** BOLD responses in the left dorsolateral prefrontal cortex (dlPFC) during healthy vs. unhealthy choices in Dataset 3, separately by (a) Sample 3a, N=3622; (b) Sample 3b, N=336; and (c) Sample 3c, N=4431. Error bars show standard error of the mean.\n\n#### Recruitment of the dlPFC when choosing normatively only occurs when goals are hedonistic and attributes conflict (Observation 3)\n\nWe first set out to confirm the central prediction of our simulations concerning the relationship between normative choices and activity in the dlPFC. In particular, models suggesting that the dlPFC promotes normative choices or inhibits prepotent responses (Hare et al., 2009; Hare et al., 2011a; Heatherton and Wagner, 2011) imply that norm-consistent choices should be accompanied by greater activation in the dlPFC (as has been observed previously). Moreover, this should be especially true when people focus on normative goals (Hare et al., 2011a; Kober et al., 2010), since those goals support norm-sensitive behavior and might require the override of default hedonistic preferences (Lopez et al., 2014; Wagner et al., 2013). The DDM makes the opposite prediction. While neural activity in the model (and by extension the dlPFC) can be higher for normative compared to hedonistic choices, this should be true only when goals lead to a stronger weighting of hedonic attributes and attribute values conflict (Figure 2d). Thus, if a regulatory focus on normative attributes increases their weight in the evidence accumulation process, this should increase normative choices, but result in lower, not higher, neural activity for those choices. We tested these predictions by performing an ROI analysis in the dlPFC, examining the contrast of activity for normative compared to hedonistic choices in different contexts. In Dataset 1 (altruistic choice), this involved choices made only during natural, unregulated decision making. In Dataset 2 (altruistic choice) and Dataset 3 (food choice), we examined choices made under different regulatory goals that were designed to increase or decrease weights on hedonic and normative attributes (i.e., payoffs for self and other in altruistic choice, tastiness and healthiness in food choice). As described above, we focused on an area predictively associated with the term \u2018inhibitory control\u2019 using the meta-analytic tool NeuroQuery (Dock\u00e8s et al., 2020) (see Figure 4a\u2013c [blue] for an illustration of the ROI). Results were similar when using other definitions of this ROI (see Appendix 3, \u2018Alternative ROI specifications\u2019 and Appendix 2\u2014figure 1, Appendix 3\u2014figure 1), as well as when focusing on other regions associated with the DDM at a whole-brain level (see Appendix 4 and Appendix 4\u2014figures 1 and 2).\n\nGenerous vs. selfish choices (Dataset 1). In Dataset 1, choices were defined as normative (i.e., generous) if the participant selected the option with less money for themselves and more money for their partner. Choices were defined as hedonistic (i.e., selfish) otherwise. Weights from the best-fitting model parameters indicated that subjects naturally placed more weight on their own outcomes (mean wSelf=0.0043 \u00b1 0.0011 s.d.) than the other person\u2019s outcomes (mean wOther = 0.0018 \u00b1 0.0018, paired-t50=14.465, p<2.2 \u00d7 10\u201316) or on fairness (i.e., |Self \u2013 Other|, mean wFairness = 0.0011 \u00b1 0.0032, paired-t50=7.33, p=1.829 \u00d7 10\u20139) (see Supplementary file 1). Given the higher weight on self-interest, a hedonic attribute, and the fact that all trials in this study involved conflict between normative and hedonic attributes, we predicted that we should observe greater neural response on average when people chose generously. We further predicted that individual differences in activation between generous and selfish choices should correlate negatively with individual differences in the relative weight on payoffs to other, a normative attribute, compared to payoffs for the self, a hedonic attribute. In other words, subjects who place more relative weight on the normative attribute should actually show less activation in the dlPFC during normative choice (see Figure 4d for both average simulated predictions and individual difference predictions based on the weights fitted to participants in Dataset 1). An ROI analysis of BOLD response for generous vs. selfish choices in the inhibitory control dlPFC ROI supported both predictions (Figure 4g). We observed a significant increase in average response during generous compared to selfish choices (paired-t43=2.13, p=0.04, Cohen\u2019s d=0.32), confirming our prediction of higher dlPFC activity for normative choices. Moreover, for our primary dlPFC ROI, when correlating individual differences in weights on other vs. self (i.e., wOther \u2013 wSelf) with differences in dlPFC BOLD response for generous vs. selfish choices, we observed a significant negative relationship of roughly the same magnitude as predicted by simulations (r=\u20130.31, p=0.04). A supplemental whole-brain analysis confirmed that this pattern was specific to the dlPFC, as well as regions of dACC and IFG/aIns that were also associated with the DDM, rather than a general property of neural activity (see Appendix 4\u2014figures 1 and 2, and Supplementary file 4 for details).\n\nRegulatory effects on generous vs. selfish responding (Dataset 2). In Dataset 2 (also anonymous altruistic decision making and conflict trials only), we sought to replicate and extend these results. More specifically, we sought to test the DDM prediction that if regulatory goals increase the weight on normative attributes, this should result in decreased activation in the dlPFC when choosing normatively. Note that this prediction complements the negative correlation between dlPFC response and the balance of normative vs. hedonistic weights across subjects, but extends it to a within-subject prediction: even in participants who under normal circumstances might show greater activation in the dlPFC during generosity, interventions that shift weights in favor of normative attributes should reduce, rather than enhance, such differences. To manipulate weights on hedonic and normative attributes, we used an instructed cognitive regulation manipulation in which we asked participants on different trials either to \u2018Respond Naturally\u2019 (mirroring the natural preferences expressed by participants in Study 1) or to focus on one of two different goals (\u2018Focus on Ethics\u2019 [Ethics], \u2018Focus on your Partner\u2019s Feelings\u2019 [Partner]) that both emphasize normative attributes, but in different ways (see Methods for details). To confirm that the manipulation influenced attribute weights, we performed one-way repeated-measures ANOVAs with condition (Natural, Ethics, Partner) as a fixed effect and best-fitting attribute weight parameters wSelf, wOther, and wFairness as dependent variables. This analysis confirmed that our manipulation yielded significantly different weights on the attributes across the conditions (all F2,96 > 13.54, all p<6.59 \u00d7 10\u20136, see Methods for details of model fitting). As expected, weights for self-interest (a hedonic attribute, wSelf) were highest in the Natural condition (MNatural = 0.0073 \u00b1 0.0035 s.d.), lower in the Ethics condition (MEthics = 0.0061 \u00b1 0.0047), and lowest in the Partner condition (MPartner = 0.0037 \u00b1 0.0065). By contrast, weights on the partner\u2019s outcomes and fairness (attributes related more strongly to social norms) increased with regulation (wOther: MNatural = 0.0010 \u00b1 0.0038, MEthics = 0.0041 \u00b1 0.0045, MPartner = 0.0051 \u00b1 0.0038; wFairness: MNatural = 0.0017 \u00b1 0.0033, MEthics = 0.0053 \u00b1 0.0046, MPartner = 0.0024 \u00b1 0.0035) (see Supplementary file 1for more details on parameters).\n\nHaving confirmed that the regulatory focus manipulation altered weights on hedonic and normative attributes, we next asked if this manipulation affected BOLD response during generous vs. selfish choice in the dlPFC, consistent with predictions of the DDM. In particular, given that all trials involved conflict between normative and hedonic attributes, we predicted that in the Natural condition, where participants generally placed higher weight on self-interest (a hedonic attribute), generous choices should elicit higher activation. In contrast, in the Ethics and Partner conditions, which elicited more equal or even higher weight on normative attributes (i.e., other\u2019s outcomes and fairness), this difference should disappear or even reverse. In other words, the model predicts that in some cases, selfish choices should elicit the greatest activity in the dlPFC. Predictions of the DDM given the specific attribute weights observed in this study are illustrated in Figure 4e.\n\nTo test these predictions in the neural data, we performed one-way repeated-measures ANOVAs with condition (Natural, Ethics, Partner) as a fixed effect and average BOLD response in the dlPFC ROI for the contrast of generous vs. selfish choice as the dependent variable. This analysis revealed a significant effect of condition on dlPFC response (F2,96 = 5.91, p=0.004). Post hoc planned comparisons confirmed that in the Natural condition, generous choices elicited significantly greater activity in the dlPFC than hedonic choices (t48=2.16, p=0.04, Cohen\u2019s d=0.31, Figure 4h), replicating the observed difference during Natural choices of Study 1. By contrast, in the Ethics and Partner focus conditions, generous choices no longer elicited significantly greater activation. Instead, selfish choices elicited greater activation, although the effect did not reach statistical significance. However, the key test of our predictions was confirmed: the difference in activation between generous vs. selfish choice in both the Partner and Ethics conditions differed significantly from the difference in the Natural condition (G vs. S, Partner vs. Natural: t48=2.57, p=0.01, Cohen\u2019s d=0.36; G vs. S, Ethics vs. Natural: t48=3.13, p=0.003, Cohen\u2019s d=0.45). Thus, in the same individuals, the association between generous choices and higher activation in the dlPFC depended on whether goals emphasized selfishness rather than social norms (Figure 4h). Supplemental whole-brain analyses and examination of individual differences confirmed these findings (see Supplementary file 4 and Appendix 5 for details).\n\nRegulatory effects on healthy vs. unhealthy choice (Dataset 3). In Dataset 3, we sought to replicate the finding that a regulatory focus on normative attributes reduces activation in the dlPFC in a different, non-social domain: healthy eating. During the Food Choice Task in Dataset 3, attribute weights were manipulated by instructing participants either to \u2018Respond Naturally\u2019, \u2018Focus on Health\u2019, or \u2018Focus on Taste\u2019 while making their choice. Normative (i.e., healthy) choices were defined as selecting the food with higher subjectively perceived healthiness (see Methods for details). Note that the \u2018Focus on Health\u2019 instruction aimed to increase the weight on healthiness (wHealth), a normative attribute. Extending results in Dataset 2, the \u2018Focus on Taste\u2019 condition was designed to enhance the weight on tastiness (wTaste), the hedonic attribute, which should preserve or even enhance the difficulty of normative choices that we observed in natural choice settings in Datasets 1 and 2. This allowed us to verify that our findings are specifically driven by changes in weights, not simply because we asked participants to perform a cognitive task.\n\nTo confirm that the regulatory manipulation influenced attribute weights, we performed one-way repeated-measures ANOVAs, similar to Dataset 2, with condition (Natural, Taste, Health) as a fixed effect and estimated attribute weight parameters wTaste and wHealth as dependent variables. Because Dataset 2 combined data from three individual participant samples (see Methods for details), we also included Study as an additional factor in the analysis. Here, we report the effect of the manipulation on attribute weights across all studies (Supplementary file 1, but see Supplementary file 2 for results in each sample separately). This analysis confirmed that our manipulation yielded significantly different weights on the different attributes across the conditions (all F2,220 > 44.43, all p<2.2 \u00d7 10\u201316). As expected, weights on tastiness (a hedonic attribute) were highest in the Taste and Natural conditions (MTaste = 0.0056 \u00b1 0.0043, MNatural = 0.0058 \u00b1 0.0036), and lowest in the Health condition (MHealth = 0.0027 \u00b1 0.0033). Weights on healthiness (a normative attribute) showed the opposite pattern, being lowest in the Taste condition (MTaste = 0.0002 \u00b1 0.0022), similar though slightly higher in the Natural condition (MNatural = 0.0005 \u00b1 0.0021), and highest in the Health condition (MHealth = 0.0042 \u00b1 0.0035).\n\nNext, we generated predictions for the pattern of dlPFC response on the subset of trials involving conflict. For each condition, we used each individual\u2019s best-fitting weights to simulate neural responses using the DDM (Figure 4f). These simulations predicted that healthy compared to unhealthy choices should on average elicit the greatest activation in the dlPFC in the Taste and Natural conditions (though unexpectedly, the model predicted a non-significantly smaller difference in Taste trials). More importantly, the model predicted that this difference should be significantly smaller in the Health condition. Because observed weights on tastiness and healthiness in the Health condition were similar in strength, the within-condition comparison between healthy and unhealthy choices was not predicted to be significant. To test these predictions, we performed a one-way repeated-measures ANOVA, similar to Dataset 2, with condition (Natural, Taste, Health) as a fixed effect and the average dlPFC BOLD response in the contrast of healthy vs. unhealthy choice (limited to trials with attribute conflict) as the dependent variable. We also included sample (i.e., Sample 3a, 3b, 3c) as a factor interacting with condition, but observed no differences in dlPFC activity as either a main effect of sample (F2,101 = 2.15, p=0.12) or as a modifier of condition effects (F4,177 = 1.52, p=0.19). We thus report results collapsed across studies (but see Figure 4\u2014figure supplement 2 for visualizations of results separated by study). As predicted by the simulations (Figure 4f), this analysis revealed a significant effect of condition on dlPFC response (F2,177 = 4.11, p=0.02). Follow-up t-tests confirmed the predicted direction of dlPFC activation (Figure 4i). BOLD response during healthy compared to unhealthy choices was significantly greater in the Natural condition for the dlPFC (paired-t100=2.35, p=0.02, Cohen\u2019s d=0.24, within-condition comparison). As predicted, in the Health condition, healthy vs. unhealthy choices elicited comparable dlPFC responses (paired-t97=0.86, p=0.39, Cohen\u2019s d=0.09, within-condition comparison) and even showed a trend toward greater activity for unhealthy choices. Importantly, the reduction of the difference in activity during healthy vs. unhealthy choices between Natural and Health conditions was significant (paired-t93=2.58, p=0.01, Cohen\u2019s d=0.27). Response for healthy vs. unhealthy choice in the Taste condition lay in between these two extremes, as predicted by the model. While the comparison of healthy vs. unhealthy choices in the Health vs. Taste condition was not significant (paired-t97=1.35, p=0.18, Cohen\u2019s d=0.15), we attribute this discrepancy to the fact that the Taste condition had very few healthy choices per individual. Thus, the comparison of healthy vs. unhealthy choices was significantly noisier to estimate, and based on a smaller number of subjects (N=84). Nevertheless, our primary hypothesis was confirmed: in the same individuals, healthy choices could be accompanied by higher activation in brain regions typically associated with cognitive control (when goals naturally emphasized hedonism), or matched or even lower activation (when goals emphasized health norms). Supplemental whole-brain analyses confirmed that this pattern of results was specific to the dlPFC and other regions associated with the DDM (see Appendix 4\u2014figures 1 and 2, and Supplementary file 4 for details).\n\n### Absence of regulatory effects in the absence of conflict (Dataset 3)\n\nOur analyses so far focused on conflict trials, since simulations suggest that these trials show the biggest differences as a function of attribute weights (Figure 2). The design of Dataset 3, which included a subset of trials with no attribute conflict, also allowed us to test one further prediction of the DDM. In Observation 3, we found that normative choices should be associated with increased neural activity when hedonic and normative attributes conflict but the reverse when they do not (Figure 2d). Moreover, the DDM suggests little to no differences in response across goal contexts favoring hedonism or health norms. This suggests that, in contrast to conflicted choices, there should be less effect of regulatory focus on dlPFC response during no-conflict choices.\n\nTo test this prediction, we first performed a one-way repeated-measures ANOVA with condition (Natural, Taste, Health) as a fixed effect and the average BOLD in the dlPFC for the contrast of healthy vs. unhealthy choice as the dependent variable, focusing only on the subset of trials with no-conflict between tastiness and healthiness of a food (i.e., when the value of the option was positive or negative for both). As before, we also included sample (3a, 3b, 3c) as a factor in this analysis. Because we found a non-significant difference across studies in dlPFC response during unconflicted trials (F4,209 = 2.26, p=0.06), we report the results for Dataset 3 below collapsed across samples. As predicted, when examining only non-conflict trials, there was no significant influence of regulatory condition on the difference in neural activity between healthy and unhealthy choice (F2,213 = 0.357, p=0.7). Given this lack of effect across conditions, we averaged the three conditions together to analyze the main effect of healthy vs. unhealthy choice. This analysis indicated that healthy choices were accompanied by a non-significantly lower response in this region (paired-t104=0.21, p=0.84, Cohen\u2019s d=0.02). In other words, as expected from model simulations (Figure 2d), activation in the dlPFC for normative choices when normative and hedonic attributes did not conflict is generally low, and shows no significant effect of regulatory focus.\n\n## Discussion\n\nWhen and why do normative choices \u2013 which conform to abstract standards and social rules \u2013 recruit regions associated with cognitive control like the dlPFC? Simulated activity from an attribute-based DDM suggests a straightforward answer: normative behavior may only trigger the dlPFC when normative attributes conflict with hedonic ones, and the decision maker values hedonic attributes more. Across three separate fMRI datasets and two different choice domains (generosity and healthy eating), we show several results that confirm predictions of the DDM. First, we show that activation in the dlPFC correlates consistently with predicted neural responses of the DDM across all contexts examined. Second, we show that even in individuals who show a natural bias toward selfishness, regulatory instructions to focus on socially normative attributes increase generosity, but reduce dlPFC response when choosing generously. Third, this pattern replicated in the domain of healthy eating, suggesting a general principle that may apply across a variety of self-control dilemmas. Our results provide empirical support for recent theories positing that successful self-control \u2013 defined as choosing long-term or abstract benefits over hedonic, immediate gratification (Duckworth, 2011) \u2013 depends importantly on value computations. They stand in contrast to the predictions of models of posterior dlPFC function suggesting that the strength with which the dlPFC activates during choice determines whether prepotent hedonistic responses are resisted (Lopez et al., 2014; Kelley et al., 2015; Wagner et al., 2013; Hofmann et al., 2009). Our results point to a modified conceptualization of the role played by the dlPFC in promoting normative choice.\n\nA large literature, generally consistent with models that assume normative behavior requires controlled processing, suggests that the dlPFC activates when prepotent responses conflict with desired normative outcomes (Aron et al., 2004; Garavan et al., 1999). The neural activity in the DDM, which arises from evidence accumulation signals, is in some ways consistent with such an interpretation. However, it calls into question assumptions that prepotency equates to hedonism, or even to automaticity (Bargh, 1994) more generally. Instead, our model suggests that the \u2018prepotent response\u2019 may correspond, at least in the realm of value-based decision making, to choices consistent with the choice attribute that is currently receiving higher weight, regardless of the source of that weight. In other words, even when higher weights on normative attributes derive primarily from a deliberative, regulatory focus, as in our final two datasets (Hare et al., 2011a; Tusche and Hutcherson, 2018; Schmidt et al., 2018), this yields reduced activity in the dlPFC when making normative choices. Mechanistically, these patterns result from the fact that higher weights on normative attributes reduce the computation required for neural accumulation signals to trigger a normative response. Thus, while virtuous choices associated with successful self-control may sometimes recruit the posterior dlPFC, manipulations that increase the weight on normative attributes, either by making it more salient in the exogenous environment or focusing endogenous attention toward it, should both promote normative behavior and make it easier to accomplish.\n\nThis observation may help to explain why some researchers have found evidence consistent with greater response in the dlPFC promoting normative choice (Hare et al., 2009; Cutler and Campbell-Meiklejohn, 2019; Hare et al., 2011a; Ruff et al., 2013; Hakimi and Hare, 2015; Baumgartner et al., 2011), while others have not (Zaki and Mitchell, 2011; Tusche et al., 2016; Magen et al., 2014). Variations that influence the weight on normative attributes \u2013 whether across individuals, goal contexts, or paradigms \u2013 will tend to reduce statistical significance and increase heterogeneity in the link between neural activation in the dlPFC and normative choice. Fortunately, our model provides a way to predict both when and why dlPFC activity will be observed. For example, in the domain of intertemporal choice, our model predicts that making future outcomes more salient should amplify their weight in the choice process, promoting patience while decreasing dlPFC activation. This is exactly what is observed empirically (Magen et al., 2014). Thus, researchers would do well to interpret activation of the dlPFC for a particular kind of choice (be it generous or selfish, healthy or unhealthy, patient or impatient) with caution. Such a pattern may say less about whether the dlPFC (and by extension, cognitive control more generally) is required to inhibit instinctual responses and preferences, and more about what kinds of attributes are most salient or valuable at the moment.\n\nOur results have important implications for theories of self-control suggesting that the dlPFC promotes self-control by modulating attribute weights in the choice process (Hare et al., 2009; Baumgartner et al., 2011; Rudorf and Hare, 2014). The region of dlPFC that correlated with the DDM in our datasets is nearly identical to areas previously found when dieters made healthy compared to unhealthy choices (Hare et al., 2009), and when participants were required to recompute values based on contextual information (Rudorf and Hare, 2014). Yet, we find that the relationship between self-control \u2018success\u2019 and \u2018failure\u2019 in this region attenuates when participants actively focus on health: dlPFC now responds non-significantly more strongly to unhealthy choices. These results thus seem incongruent with the notion that this area down-regulates weight on norm-inconsistent considerations and up-regulates norm-consistent ones, since we observed decreased responses in this area in the context of increased normative choice and increased weight on normative attributes (Figure 4, c.f. Tusche and Hutcherson, 2018). Instead, this region appeared to correlate with the evidence accumulation stage of decisions, rather than with the evidence construction stage, responding during decision conflict generally, regardless of whether that conflict derived from greater weighting of hedonic or normative attributes.\n\nWe emphasize, however, that our results and conclusions apply narrowly to the area of dlPFC examined here. The evidence accumulation-related dlPFC region in this study, which also corresponds to the area identified by the meta-analytic \u2018inhibitory control\u2019, lies posterior and dorsal to another dlPFC area that we have observed, in these same datasets, to track hedonistic and normative attributes in a goal-consistent manner and to serve as a candidate for mediating regulation-induced changes (Tusche and Hutcherson, 2018). Furthermore, gray matter volume in this more anterior dlPFC area, but not in the posterior dlPFC region identified here, correlates with regulatory success (Schmidt et al., 2018). Thus, while some areas of the dlPFC may indeed play an important role in promoting self-regulation and normative behavior by altering attribute weights in decision value, we suspect that they are anatomically and computationally distinct from the region of the posterior dlPFC sometimes assumed to serve this role. Future work will be needed to better delineate subregions of the dlPFC, and to determine the unique role each one plays in promoting normative choices.\n\nThe correspondence between predictions of the DDM and activation patterns in the dlPFC makes it tempting to conclude that this region performs this computational function. While this hypothesis is consistent with results from single-cell recordings (Hanks et al., 2015; Hunt et al., 2018), we also acknowledge that the dlPFC has been associated with many computational functions and roles, not all of which are mutually incompatible. Thus, it is possible that the dlPFC region observed here performs some sort of process that is correlated with, but not identical to, the neuronal computations of the DDM. Indeed, although we found that dlPFC responses mostly conformed to predictions of the DDM, we also found a few notable divergences. For example, during unconflicted trials, the DDM predicts that hedonistic choices should be strongly associated with greater activity than normative choices. While we observed a weak effect in this direction in Dataset 3 (the only dataset in which this prediction could be tested), it was not significant. Similarly, in Dataset 2, the DDM predicted that the comparison of generous vs. selfish choices should be lower when focused on one\u2019s partner compared to when focusing on ethics, while the empirical data showed no difference. While some of these discrepancies could be due simply to the noisiness inherent to fMRI (especially in studies that were originally designed to address other questions), it is also possible that they serve as clues that the computational function of the dlPFC may be strongly correlated with, but importantly distinct from, the evidence accumulation process itself. Future work, including computational modifications or additions to the DDM, and recordings from other modalities like EEG or intracranial recordings (Hunt et al., 2018), may help to elucidate the precise computational functions served by this area and the ways in which it promotes adaptive choice and normative behavior. Our work serves to highlight the value of computational models for understanding the neural and psychological computations involved in self-control (Tusche and Bas, 2021). Work extending these findings to other domains of normative choice, such as moral decision making or intertemporal choice, may also help to identify the commonalities and differences across different self-control dilemmas.\n\n## Methods\n\n### Computational model simulations\n\nOur attribute value-based DDM (Figure 1) assumes that brain areas involved in decision making (particularly those that convert preferences into action) demonstrate activity that correlates with an evidence accumulation process shaped by the weighted value of attributes on each trial. A choice results at time t\u2019, the first moment at which the accumulated evidence signal EA exceeds one of two predetermined thresholds or barriers \u00b1B. The total RT is t\u2019 plus a constant non-decision time (ndt) that accounts for perceptual and motor delays. The instantaneous evidence accumulation signal EAt represents the amount of information favoring choice of one option over another at time t and is captured by the equation\n\n$$\nEA_{t}=EA_{t\u22121}+\\sumi(w_{i}Attrib_{i}^{1}\u2212w_{i}Attrib_{i}^{2})+C+\\epsilon_{t}\n$$\n\nwhere $Attrib_{i}^{1}$ represents the value of option 1 for attribute i, C represents a constant bias in the drift which is positive (negative) for consistent biases toward option 1 (option 2), and $\\epsilon_{t}$ represents instantaneous Gaussian noise distributed as ~N(0, 0.1) in simulations. In our simulations, we assumed two independent attributes: one related to hedonism (e.g., tastiness of a food) and one related to norms and standards (e.g., healthiness), although in principle any number and type of attribute could occur. Using these equations allowed us to simulate the dynamically evolving evidence accumulation signal, and to derive distributions of both RTs and neural response, which we assumed was proportional to the total accumulated evidence summed over the time of the decision (i.e., $\\sumt|EA_{t}|$). We label the final output (i.e., choice) of the system as \u2018normative\u2019 if it results in selecting the option with the higher unweighted value for the normative attribute (e.g., the option with higher healthiness).\n\nTo simulate everyday self-control dilemmas using this framework, we simulated choices between two options representing different combinations of hedonistic and normative attributes, allowing the relative value difference between an option and its alternative on a given attribute to vary independently in the arbitrarily chosen range [-3,\u20132, \u2026+2,+3]. This permitted us to explore how the likelihood of a normative choice changes depending on how much better or worse one of the two options is along hedonic and normative attribute dimensions, as well as what happens when the relative values of the two attributes conflict (i.e., take opposite signs) or do not.\n\nOur simulations also sought to capture the notion that a decision maker can vary from moment to moment in their commitment to and desire for hedonistic vs. normative goals. For example, a dieter may begin to relax the importance they place on norm-consistent attributes like healthiness once they reach their target weight, resulting in more unhealthy choices. In the main text (and Figure 2), we describe simulations for four different goal contexts with different asymmetric combinations of weights: two had higher weights on tastiness, a hedonic attribute (i.e., wT = 0.05, wH = 0.02, and wT = 0.04, wH = 0.03) and two with higher weights on healthiness, a normative attribute (wT = 0.03, wH = 0.04, and wT = 0.02, wH = 0.05). For simplicity, we assumed that all choices used a choice-determining threshold \u00b1B = 0.15, selected to produce RTs in the range typically observed in human subjects. Thus, for illustration purposes, we simulated a decision maker in four different contexts with different weights on the two attributes, facing 49 distinct choices representing different combinations of attribute values. To ensure that our conclusions held across a variety of weights, we also simulated an additional 32 different goal contexts, fully covering the factorial combination of weights on wT and wH in the range of 0\u20130.05 (0.01 increments). Using these values and weights, we simulated hedonistic and normative choice frequencies, total neural activation, and RTs for each of the different hypothetical option pairs/attribute combinations, probing the effects of attribute weights, attribute magnitudes, and attribute conflict (i.e., match or mismatch between the signs of normative and hedonic attribute). The results of these simulations are displayed in Figure 2. Code is available at https://osf.io/eqvwd/.\n\n### Experimental datasets\n\nTo test predictions of the DDM, we re-analyzed existing choice task data. Details about portions of Datasets 1, 2, and 3, as well as neuroimaging parameters, have been reported previously (Hare et al., 2011a; Tusche and Hutcherson, 2018; Hutcherson et al., 2015; Schmidt et al., 2018). Here, we highlight in brief the most important details for the current work.\n\n#### Participants\n\nFor Dataset 130, we analyzed data from a study with 51 male volunteers (mean age 22). For Dataset 222, we analyzed data from a study with 49 volunteers (26 male, mean age 28, range 19\u201340). For Dataset 3, we combined data from three studies using a dietary choice task (Study 3a22 N=36 individuals, mean age 29 from Dataset 2 returning to the lab for a separate session on a separate day; Study 3b6 N=33 individuals, mean age 24.8; Study 3c31 N=44 individuals, mean age 24.8). Caltech\u2019s Internal Review Board approved all procedures for Dataset 1, Dataset 2, and Studies 3a and 3b of Datasets 3. The Internal Review Board at INSEAD approved all procedures for Study 3c. Participants in all studies provided informed consent prior to participation.\n\n### Tasks and stimuli\n\nAltruistic Choice Task (Datasets 1 and 2). We examined self-control dilemmas pitting self-interest against generosity using an Altruistic Choice Task for Datasets 1 and 2. On every trial in the fMRI scanner, the participant chose between a proposed pair of monetary prizes for herself and a real but anonymous partner, or a constant default prize-pair for both ($50 in Dataset 1, $20 in Dataset 2) (Figure 3a\u2013b). Proposed prizes in the prize-pair varied from $0 to $100 in Dataset 1 and $0 to $40 in Dataset 2, and always involved one individual receiving an amount less than or equal to the default, while the other individual received more. Thus, on every trial, the participant had to choose between generous behavior (benefitting the other at a cost to oneself) and selfish behavior (benefitting oneself at a cost to the other).\n\nUpon presentation of the proposal, participants had up to four seconds to indicate their choice using a 4-point scale (Strong No, No, Yes, Strong Yes), allowing us to simultaneously measure both their decision and strength of preference at the time of choice. The direction of increasing preference (right-to-left or left-to-right) varied for each round of the task in Dataset 1, and across participants in Dataset 2. If the subject did not respond within 4 s, both individuals received $0 for that trial.\n\nTo increase the anonymity of choices, the participant\u2019s choice was implemented probabilistically: in 60% of trials, she received his chosen option, while in 40% of trials, her choice was reversed and she received the alternative, non-chosen option. This reversal meant that while it was always in the participant\u2019s best interest to choose according to her true preferences, her partner could never be sure about the actual choice made. Probabilistic implementation does not strongly influence the choices participants make (Tusche and Hutcherson, 2018; Hutcherson et al., 2015), but permits more plausible anonymity, increasing the self-control challenge involved in choosing generously. The participants were informed that the passive partners were aware of the probabilistic implementation, and the outcome was revealed on every trial 2\u20134 s following the response. At the end of the task, one trial was randomly selected and implemented according to the participant\u2019s choice in the selected trial.\n\nDataset 1 included 180 trials total, with no specific instructions for how to respond. Dataset 2 included 270 trials, 90 each in three instructed focus conditions (Figure 3b). See the Manipulating normative goals (Datasets 2 and 3) section below for details on these instructions.\n\nDietary Choice Task (Dataset 3): We examined self-control dilemmas in a second context pitting hedonism against healthy eating using a Dietary Choice Task for Dataset 3. Sample 3a was collected in our laboratory and completed on a subset of participants from Dataset 2. Samples 3b and 3c were collected in other research labs, but had nearly identical structure. We thus describe common elements among all tasks, highlighting minor differences where relevant.\n\nPrior to the main choice task, participants rated a set of different foods for their healthiness and tastiness (200 foods in Study 3a, 180 in Studies 3b and 3c). For Study 3a, these ratings were used to select a pool of 90 foods that covered a range of health and taste ratings. For all three studies, they were used to select a neutral reference food rated as neutral on both health and taste. This neutral food served as individuals\u2019 default option for each choice (similar to the monetary default option in the Altruistic Choice Task).\n\nOn each trial in the fMRI scanner (270 trials in Study 3a, 180 in Studies 3b\u2013c), participants saw one selected food (Figure 3c) and had to decide whether they would prefer to eat the displayed food or the reference food. As in the Altruistic Choice Task, participants had up to 4 s in Study 3a and 3 s in Studies 3b\u2013c to indicate their choice using a 4-point scale (Strong No, No, Yes, Strong Yes). If the subject did not respond within the time limit, one of the foods was selected randomly. To match the instructed goal manipulation used in the Altruistic Choice Task, participants completed trials each in one of three instructed focus conditions (90 trials per condition in Study 3a, 60 trials per condition in Studies 3b\u2013c). See the Manipulating normative goals (Datasets 2 and 3) section below for details. In all three studies, one trial was randomly selected at the end and implemented.\n\nIn Study 3a, to match the probabilistic outcome used in the Altruistic Choice Task, the participant\u2019s choice was also implemented probabilistically in the Food Choice Task. In 60% of trials, participants received the chosen option, while in 40% of trials the choice was reversed and she received the alternative, non-chosen option. To reduce the length of the task, participants did not see this outcome on every trial. Instead, three trials were selected randomly at the end of each scan, and participants viewed their choice as well as the probabilistic outcome on that trial. In Studies 3b\u2013c participants simply received their choice on a randomly chosen trial at the end of the experiment.\n\n### Manipulating normative goals (Datasets 2 and 3)\n\nOur computational model simulations suggested that the extent to which normative choices are associated with greater neural response depends to a large extent on the priority or weight given to normative vs. hedonic attributes. We thus capitalized on the design of Datasets 2 and 3, which manipulated attention to different attributes (and corresponding weights), allowing us to test specific predictions of the DDM.\n\n#### Manipulation of altruistic goals (Dataset 2)\n\nTo manipulate attention to different attributes, during the Altruistic Choice Task in Dataset 2, participants completed trials in three instructed focus conditions: Respond Naturally, Focus on Ethics, and Focus on Partner. During Natural trials, participants were told to allow whatever feelings and thoughts came most naturally to mind, and to just choose according to their preferences on that trial. During Ethics trials, participants were asked to focus on doing the right thing during their choices. They were encouraged to think about the justice of their choice, as well as its ethical or moral implications, and to try to bring their actions in line with these considerations. During Partner trials, participants were asked to focus on their partner\u2019s feelings during their choices. They were encouraged to think about how the other person would be affected, as well as whether they would be happy with the choice, and to bring their actions in line with these considerations.\n\nEach participant completed 90 trials per condition, presented in randomly interleaved blocks of 10 trials. A detailed set of instructions informing participants of their task for the upcoming block of trials was presented for 4 s prior to the block, and participants were asked to focus on the specific instruction for all trials within that block.\n\n#### Manipulation of health goals (Dataset 3)\n\nAnalogous to the Altruistic Choice Task in Dataset 2, healthy eating was manipulated in three experiments (Studies 3a\u2013c) using an instructed focus manipulation. Each participant completed all three attentional conditions (90 trials per condition in Study 3a, 60 trials per condition in Studies 3b\u2013c, randomly interleaved blocks): Natural Focus, Taste Focus, or Health Focus. During Natural trials, participants were told to allow whatever feelings and thoughts came most naturally to mind and to choose according to their preferences on that trial. During Taste trials, participants were asked to focus on how tasty each food was and try to bring their actions in line with this consideration. During Health trials, participants were asked to focus on the health implications of their choice. As in the Altruistic Choice Task, attentional instructions were given prior to each block of 10 trials, and participants were asked to focus on the specific instruction given for all trials within a block. However, participants knew that they would receive the outcome of one of their choices and were told that they should choose according to their preferences regardless of the instruction, thus encouraging participants to choose in a way that reflected their current decision value for the item.\n\n### Defining normative choice\n\n#### Behavioral definition of generosity\n\nAll choices involved a tradeoff between maximizing outcomes for the self or the other. We therefore label specific decisions as normative (i.e., generous) if the participant accepted a proposal when $Self < $Other or rejected one when $Self > $Other. Choices were labeled as hedonistic (i.e., selfish) otherwise.\n\n#### Behavioral definition of healthy choice\n\nIn the Dietary Choice Task, we separately examined trials requiring a tradeoff between taste and health (i.e., conflict trials where a food was rated either as healthy but not tasty, or as unhealthy but tasty) as well as trials with no tradeoff (i.e., no-conflict trials where a food was both tasty and healthy, or both unhealthy and not tasty). In both cases, we label specific decisions as normative (i.e., healthy) if the participant either accepted a healthy food or rejected an unhealthy food. All other choices were labeled as hedonistic (i.e., unhealthy).\n\n### Computational model fitting\n\nWe used a Bayesian model-fitting approach to identify the best-fitting model parameters of the DDM (i.e., attribute-specific weight parameters W, a drift constant C, threshold B, and non-decision time ndt) to account for choices and RTs, separately for each participant in each study and each condition in Datasets 2 and 3. More specifically, we obtained estimates of the posterior distribution of each parameter using the differentially evolving Monte-Carlo Markov chain sampling method and MATLAB (MATLAB, 2016) code developed by Holmes and Trueblood, 2018. This method uses the DDM described above (computational model simulations) to simulate the likelihood of the observed data (i.e., choices and RTs) given a specific combination of parameters. We then used this likelihood to construct a Bayesian estimate of the posterior distribution of the likelihood of the parameters given the data.\n\nFor each individual fit, we used 3 \u00d7 N chains, where N is the number of free parameters (6 in Datasets 1 and 2, 5 in Dataset 3), using uninformative, uniformly distributed priors and constraining parameter values as shown in Supplementary file 1 based on previous work (Tusche and Hutcherson, 2018; Hutcherson et al., 2015) and theoretical bounds. To construct the estimated posterior distributions of each parameter, we sampled 1500 iterations per chain after an initial burn-in period of 500 samples. Best-fitting values of each parameter were computed as the mean over the posterior distribution for that parameter. These parameter values (see Supplementary file 1) were used to simulate trial-by-trial neural activation for use in the GLMs described below. Importantly, parameter values identified by this fitting procedure suggested that the model provided a good fit to behavior across all three datasets (Figure 4\u2014figure supplement 1). The analysis of the values of individual chains using the Gelman-Rubin statistic (Gelman and Rubin, 1992) indicated good convergence to the posterior distribution for each parameter (all $R<1.05$).\n\n### Neuroimaging analyses\n\nGLM 1a: Neural Correlates of the DDM (Dataset 1). We used GLM 1a to identify brain regions where activation varied parametrically according to the predictions of the DDM in Dataset 1 (Altruistic Choice Task). We hypothesized that this analysis would identify brain areas such as the dlPFC commonly associated with cognitive control and provide further data-driven support for the independent dlPFC-ROI. For each trial, we determined the BOLD approximation of the DDM as the value consisting of the sum total of the simulated neural response, averaged over all simulations terminating in the observed choice on that trial within \u00b1250 ms of the observed RT. This estimate was then used as a parametric regressor, modulating a boxcar function with onset at the beginning of the choice period and having a duration of the RT on that trial (see Appendix 1 for further detail on selecting the best regressor). To simulate expected DDM activation on each trial, we generated 10,000 simulations using the best-fitting parameters for each participant and the estimated value of the proposal and default on each trial (i.e., wSelf*$Self + wOther*$Other + wFairness*|$Self \u2212 $Other|+C).\n\nThen, for each subject, we estimated a GLM with AR(1) and the following regressors of interest: (R1) A boxcar function for the choice period on all trials (duration = RT on that trial). (R2) R1 modulated by the subject\u2019s stated preference on that trial (1=Strong No, 4=Strong Yes). (R3) R1 modulated by the estimated activation of the DDM on that trial. (R4) A boxcar function of 3 s specifying the outcome period on each trial. (R5) R4 modulated by the outcome for the self on each trial. (R6) R4 modulated by the outcome for the partner on each trial. (R7) A boxcar function (duration = 4 s) specifying missed trials. Parametric modulators were orthogonalized to each other in SPM (https://www.fil.ion.ucl.ac.uk/spm/). Regressors of non-interest included six motion regressors as well as session constants.\n\nWe then computed subject-level contrasts of the DDM parametric modulator (R3) against an implicit baseline. Finally, to test the hypothesis that DDM responses might correlate with activation in the dlPFC at the group level, we subjected this contrast to a one-sample t-test against zero (as implemented in SPM), thresholded at a whole-brain cluster-corrected value of p<0.05, using a cluster-defining threshold of p<0.001.\n\n#### GLM 1b: Neural correlates of the DDM (Dataset 2)\n\nGLM1b was similar to GLM1a, except that we estimated regressors for each goal condition separately. R1, R4, and R7 were boxcar functions representing the choice period for the Natural, Ethics, and Partner conditions, respectively. R2, R5, and R8 modulated R1, R4, and R7 with the decision value on that trial. R3, R6, and R9 modulated R1, R4, and R7 using the estimated activation of the DDM on that trial. A single contrast representing neural correlates of the DDM was constructed by combining R3, R6, and R9 at the subject-level and performing a one-sample t-test against zero. We report results, thresholded at a voxel-wise p<0.001 and a whole-brain cluster-corrected level of p<0.05.\n\n#### GLM1c: Neural correlates of the DDM (Dataset 3)\n\nGLM1c was similar to GLM1b but applied to the Food Choice Task in Studies 3a\u2013c. R1, R4, and R7 were boxcar functions representing Natural, Taste, and Health focus conditions. R2, R5, and R8 were parametric modulators representing the decision value on that trial, and R3, R6, and R9 were modulators consisting of the estimated DDM activity on that trial. Correlates of the DDM were identified in this study thresholded at a voxel-wise p<0.001 and a whole-brain cluster-corrected level of p<0.05.\n\nGLM 2a: Generous vs. Selfish decisions in Altruistic Choice (Dataset 1). We used GLM 2a to test predictions about neural activation on trials in which subjects chose generously or selfishly. The analysis was carried out in two steps.\n\nFirst, for each subject, we estimated a GLM with AR(1) and the following regressors of interest: (R1) A boxcar function for the choice period on trials when the subject chose selfishly. (R2) R1 modulated by the decision value of their 4-point preference response (i.e., Strong No to Strong Yes) at the time of choice. (R3) A boxcar function for the choice period on trials when the subject chose generously. (R4) R3 modulated by the decision value on that trial. Regressors of non-interest included six motion regressors as well as session constants.\n\nSecond, we computed the subject-level contrast image [R3 \u2013 R1], which identified brain regions with differential responses for generous compared to selfish choices. Seven subjects were excluded from this analysis for having fewer than 4 generous choices over the 180 trials. To test predictions of the DDM in regions previously associated with self-control, we conducted analyses of this contrast [Generous \u2013 Selfish] in several independently selected ROIs (see Independently defined ROIs section below). Independent ROIs helped avoid circular analysis and \u2018double-dipping\u2019 (Kriegeskorte et al., 2009). We also report the results of these contrasts for two other brain areas (dACC, IFG/anIns) identified as correlating with predictions of the DDM at the whole-brain level across all three datasets (see Appendix 4 and Figure 4\u2014figure supplements 5\u20136).\n\nFinally, as a supplementary analysis, we examined if any voxels beyond the ROI regions demonstrated a significant effect in any condition, using a whole-brain analysis thresholded at p<0.001, uncorrected (see Supplementary file 4).\n\nGLM 2b: Generous vs. Selfish decisions in Altruistic Choice (Dataset 2). We used GLM 2b to test predictions about activation on trials in which the subject chose generously or selfishly in Dataset 2, and to compare how instructed attention altered these responses. GLM2b was similar to GLM2a, except that we estimated regressors for each goal condition separately. All unreported details match GLM2a. Regressors of interest consisted of the following: (R1) A boxcar function for the choice period on trials when the subject chose selfishly in Natural Focus trials. (R2) R1 modulated by the decision value of 4-point preference response (i.e., Strong No to Strong Yes) expressed at the time of choice. (R3) A boxcar function for the choice period on trials when the subject chose generously in Natural Focus trials. (R4) R3 modulated by the decision value. (R5\u20138) Analogous regressors for generous and selfish choices during Ethics Focus trials. (R9\u201312) Analogous regressors for generous and selfish choices during Partner Focus trials. (R13\u201315) A boxcar function of 3 s duration signaling the outcome period for Natural, Ethics, or Partner Focus trials. (R16\u201318) R13\u201315 modulated by the amount received by the subject at the outcome phase for Natural, Ethics, or Partner Focus trials. (R19\u201321) R13\u201315 modulated by the amount received by the partner at the outcome phase for Natural, Ethics, or Partner Focus trials.\n\nWe then computed the subject-level contrast images [R3 \u2013 R1], [R7 \u2013 R5], and [R11 \u2013 R9], which identified regions with differential responses for generous compared to selfish choices in each goal condition. We computed the average value of each of these contrasts within the same ROIs specified above for GLM2a. As a supplementary analysis, we also asked whether any voxels beyond these regions demonstrated a significant effect in any condition, using a whole-brain analysis thresholded at p<0.001, uncorrected (see Supplementary file 4).\n\nGLM 2c: Healthy vs. Unhealthy decisions in the Food Choice Task (Dataset 3). GLM 2c was analogous to GLM 2b but examined healthy vs. unhealthy choices in the Dietary Choice Task, separately for conflicted trials (i.e., healthy but not tasty foods, or tasty but unhealthy foods) and for unconflicted trials (i.e., healthy and tasty foods, or unhealthy and not tasty foods). It included the following regressors of interest: (R1) A boxcar function for the choice period when the subject made a healthy choice in Natural Focus trials with conflict. (R2) R1 modulated by the decision value of behaviorally expressed preference at the time of choice. (R3) A boxcar function for the choice period when the subject made an unhealthy choice in Natural trials with conflict. (R4) R3 modulated by the decision value on that trial. (R5\u20138) Analogous regressors for healthy and unhealthy choices during conflicted Taste Focus trials. (R9\u201312) Analogous regressors for healthy and unhealthy choices during conflicted Health Focus trials. (R13) Healthy choices on unconflicted Natural Focus trials. (R14) Unhealthy choices on unconflicted Natural Focus trials. (R15\u201316) R13 and R14 modulated by preference. (R17\u201320) Analogous regressors for healthy and unhealthy choice on unconflicted Health Focus trials. (R21\u201324) Analogous regressors for healthy and unhealthy choice on unconflicted Taste Focus trials. Subject-level contrast images of healthy vs. unhealthy choices, in each condition separately and separately for conflicted vs. unconflicted trials, were computed in a manner identical to GLM2b. We analyzed activation for these contrasts specifically within the independently defined ROIs described below. As a supplementary analysis, we also report results at the whole-brain level at p<0.001, uncorrected, in Supplementary file 4. Unreported details are as in GLM 2a.\n\n#### Independently defined ROIs\n\nOur primary hypothesis is that regions previously associated with self-control might actually be performing computations related to post-valuation evidence accumulation, rather than pre-valuation modulation of attribute weights. Although our DDM neural results at the whole-brain level confirmed that activation in the dlPFC correlated with the DDM, we sought to avoid circularity by testing our primary predictions about dlPFC activation in ROIs defined independently of the main contrast. Toward this end, we tested activation in three ROIs. As our primary ROI, we created a left dlPFC ROI by defining a region associated with the term \u2018inhibitory control\u2019 in the meta-analytic database NeuroQuery, thresholded at Z=5 (see Figure 4, top panel, blue region). To examine the specificity of our dlPFC results for the right vs. left hemisphere, in a supplemental analysis (see Appendix 3), we flipped our dlPFC-ROI over the left-right axis (creating a second, bilaterally matched ROI). Finally, to provide further evidence for the robustness of our main results, we used a third independent-identified left dlPFC-ROI functionally defined by the contrast of healthy vs. unhealthy choice in a seminal fMRI study of dieters (Hare et al., 2009).\n",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "62be1b0f-1642-41f9-a0a0-e0c5ca901f81",
+      "submission_id": "4bc5e34e-a4eb-41a9-966a-39471ceeb3f0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joseph W Kable, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65661.sa0](https://doi.org/10.7554/eLife.65661.sa0)\n\nThis paper will be of interest to neuroscientists studying decision-making and the frontal lobe. On balance, the data provide more support for the view that the dorsolateral prefrontal cortex is involved in reading out the evidence in favor of different choice alternatives than the view that this region implements control processes that bias choices towards normative goals.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Joseph W Kable, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65661.sa1](https://doi.org/10.7554/eLife.65661.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Evidence accumulation, not \"self-control,\" explains dorsolateral prefrontal activation during normative choice\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Frank as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) One concern is about potential circularity in the analyses of the dlPFC activity. Given that the ROI is identified via a model-based fMRI analysis with the anDDM predicted activity, isn't the current strategy of testing choice-related activity in this region (GLM2 analyses like Figure 4 d-f) a case of circular-analysis /double dipping (Kriegeskorte et al., 2009)? Wouldn't this bias the subsequent tests in this region of whether activity is higher for normative (generous, healthy) versus non-normative (selfish, tasty) choices towards the predictions of the anDDM? In this case, a stronger and more convincing test might be to show that these results hold in a region defined a priori based on previous studies arguing that dlPFC modulates attribute weights (e.g., Hare's work).\n\n2) A second concern is how well the model is recoverable. It would be helpful for the authors to demonstrate parameter recovery, or point the reader to where those results can be found, if they were shown in prior work. (Regarding modeling quality control, the authors may want to consult the guidelines of Wilson and Collins, 2019).\n\n(a) On a specific note, there is skepticism about the need for both input inhibition (v1-v2) as well as inhibition between the accumulators (zeta). How well is this zeta parameter recovered, particularly under minor to major misspecification of the drift rate function v? For instance, if v is in reality non-linear, or has an intercept (see above), might the currently mis-specified drift rate function result in what looks like a non-zero zeta?\n\n(b) There is also a specific question of why the authors constrain zeta and \u03b3 in the model fits. By doing so they essentially guarantee concluding that there is self-excitation and mutual inhibition. Constraining parameter values shouldn't be necessary (though constraining the starting values of the search makes sense). All it does, potentially, is to turn a zero mean, high variance distribution into one with less variance but a biased mean.\n\n3) A third question concerns the uniqueness of the neural predictions of the anDDM model. This should be clarified in the revision, specifically with regard to:\n\n(a) Do the predictions of the anDDM differ from those based on a simpler notion of preference strength (e.g. Utility chosen option \u2013 utility unchosen option)? What about a conceptualization based in terms of default option/framing (Lopez-Persem et al., 2016)? Or would a model that focuses on conflict/choice difficulty/inverse confidence (Shenhav et al., 2014) make similar predictions? The authors may want to consider a more comprehensive model-comparison/model falsification approach (Palminteri et al., 2017) to validate their computational proposition at both the behavioral and neural activity levels.\n\n(b) Do the predictions depend on specific modeling choices in the anDDM? For example, does a simpler attribute-weighted drift diffusion model (without the self-excitation and mutual inhibition components of the neural model) make similar predictions or not? Do the predictions depend on the specific linking function between model output and neural activity, since alternative formulations could be envisioned here (e.g. sum of the difference -rather than sum- of activity between the 2 neuron pools over time)?\n\n(c) What about a simple account based on reaction time? What would happen, e.g. if RT is added as a parametric regressor (to the boxcar) and competed with the anDDM predictions?\n\n(4) A fourth concern is about the strength of the neural evidence. The evidence on balance favors evidence accumulation, but perhaps not as strongly as one might hope. Where the evidence accumulation and attribute weighting/inhibition hypotheses make different predictions are in the conditions where regulatory focus is on normative goals \u2013 attribute weighting would predict greater activity for normative choices while evidence accumulation would predict greater activity for non-normative choices. Only one of the three tests here (health focus in food choice) provides straightforward support in one direction (favoring the evidence accumulation account). The other two tests (ethics and partner focus in altruistic choice) show no difference in activity, which isn't supportive of the attribute weighting account, but seems only weak evidence in favor of the evidence accumulation account. The test of whether regulatory instructions increase or decrease activity in dlPFC is similarly ambiguous, hardly supportive of the attribute weighting account, but only weakly supportive of the predictions of the evidence accumulation account. Furthermore, about half of the ROI critical tests (in Figure 4 e-f) are quite borderline (non-)significant (between P = 0.02 and 0.07). Overall, the strength of the neuroimaging evidence in favor of the proposed theory seems moderate at best.\n\n(a) One response would be the authors to simply acknowledge these issues and temper their claims accordingly.\n\n(b) Alternatively, multiple reviewers wondered if the authors could exploit individual differences to gather further support for their claims. For instance, for Study 3, in the Natural condition, could the authors only analyze subjects who overwhelmingly preferred tasty foods? Or, if the sample is large enough, the authors could look for brain-behavior correlations? Do subjects who show a larger behavioral weight asymmetry also show a larger DLPFC asymmetry?\n\n5) Finally, the authors should address two specific critiques that might be raised regarding their manipulations in Studies 2 and 3. Several possibilities for how to address these were suggested, but beyond these specific suggestions, the essential thing is that authors somehow consider these critiques in the manuscript and rebut them.\n\n(a) One potential critique of Study 2 is that subjects in the instructed conditions (focus on ethics, focus on partner) might take the instructions too literally and essentially be solving math problems rather than truly valuing the outcomes. This would make it less of a value-based decision-making task and more of a perceptual one. Presumably this would disengage the DLPFC, and the other regions. Could the authors comment on whether the standard \"reward\" regions, e.g. VMPFC, striatum, were active during these conditions? Is there similar evidence that the DLPFC, dorsal ACC, and insula reflect accumulated evidence in perceptual decisions? Are the absolute levels of activity (shown in Figure 4e) meaningful, in terms of saying whether the DLPFC was still engaged in these conditions? Another thing that would make the results from this study more compelling would be if the authors found a significant difference-in-differences between \"Natural\" and \"Partner\" conditions in DLPFC or other areas. This would help to alleviate concerns that brain activity is just noisier in the \"Ethics\" and \"Partner\" conditions.\n\n(b) A potential critique of Study 3 is that the DLPFC is simply responding to disobeying the experimenters' instructions. Is there any way that the authors can rule this out? Could the authors use a more continuous analysis to show that decisions with a subjective value difference of zero show the most activity in DLPFC, while those with large subjective value differences, in either direction, show less activity? One particular reason for this concern is the lack of correspondence between the behavioral and fMRI data. The naDDM reveals nearly identical behavioral weights in the Natural and Taste conditions, and yet the DLPFC are very different. How can we make sense of this?\n\nFriston, K.J., Penny, W.D., and Glaser, D.E. (2005). Conjunction revisited. NeuroImage 25, 661-667.\n\nKriegeskorte, N., Simmons, W.K., Bellgowan, P.S.F., and Baker, C.I. (2009). Circular analysis in systems neuroscience: the dangers of double dipping. Nat. Neurosci. 12, 535-540.\n\nLopez-Persem, A., Domenech, P., and Pessiglione, M. (2016). How prior preferences determine decision-making frames and biases in the human brain (eLife Sciences Publications Limited).\n\nPalminteri, S., Wyart, V., and Koechlin, E. (2017). The Importance of Falsification in Computational Cognitive Modeling. Trends Cogn. Sci. 21, 425-433.\n\nShenhav, A., Straccia, M.A., Cohen, J.D., and Botvinick, M.M. (2014). Anterior cingulate engagement in a foraging context reflects choice difficulty, not foraging value. Nat. Neurosci. 17, 1249-1254.\n\nWilson, R.C., and Collins, A.G. (2019). Ten simple rules for the computational modeling of behavioral data. ELife 8, e49547.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Evidence accumulation, not \"self-control,\" explains dorsolateral prefrontal activation during normative choice\" for further consideration by eLife. Your revised article has been evaluated by Michael Frank (Senior Editor) and a Reviewing Editor.\n\nThe reviewers appreciated your substantial and responsive revisions, but also identified some remaining issues that should be addressed, as outlined below:\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have comprehensively addressed the previous round of concerns and the revised manuscript is stronger and more compelling as a result.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have done an admirable job addressing the review team's comments. They looked into parameter recovery and ultimately decided to go with a simpler model that yields similar conclusions. They also added a couple of datasets to Study 3 to help bolster those results.\n\nMy overall impression of the paper is fairly positive, though some of my previous reservations remain. To really convincingly make their point, the authors would have ideally shown a dataset where DLPFC activity is significantly higher for the hedonistic choice \u2013 an actual reversal of the phenomenon, rather than just elimination of it. This weakness is somewhat mitigated by the individual difference results, though I think that should be expanded on in the paper, since right now they only report it for Dataset 1, and they don't fully report the statistics for Datasets 2 & 3 in their replies.\n\nI also thought that the very last section of the Results section was weak and could, maybe should, be removed. I think the authors have already demonstrated by this point in the paper that the activity in DLPFC is not simply responding to the condition. It's strange to report these main effects but then immediately dismiss them as likely being due to evidence accumulation. For that matter, the lack of effect in Dataset 2 could also be spuriously due to evidence accumulation canceling out an actual main effect. This last section is just messy and I don't see why it's helpful.\n\nI thought that the reference list could be improved, given the focus of the paper. There are multiple mentions of value DDM and fMRI investigations of this, and yet there were no references to the value DDM work by Milosavljevic and Krajbich (2010) or the older work by Busemeyer and colleagues. There were also no references to the fMRI studies on value DDM by Gluth et al. (2012), Rodriguez et al. (2015), Pisauro et al. (2017), etc.\n\nI also had some issues with a couple of the figures.\n\nFigure 2 \u2013 I do not understand how the axes are coded. The dependent variable is %healthy choice, so you would think the axes would be the difference in tastiness and healthiness between the healthy and unhealthy options. However, both of those differences go from -3 to +3, indicating that that's not the case \u2013 the healthy option can't be less healthy than the unhealthy option. It seems to me that there should only be the top half of each of these figures. It's also unclear why these figures are mostly red, indicating a preference for healthy options, even when the weight on taste is higher. Is this due to the intercept in the model? If so, that would be useful to clarify. Finally, is panel d upside down? The y-axis says H-UH choice, and that should be most positive for the highest percentage of healthy choices, which should be for the light gray bar, not the black one, right?\n\nFigure 4 \u2013 panels d and g need labels on the x-axis.\n\nAppendix Figure 5 \u2013 to my eye this looks more like insula than IFG, but perhaps I'm mistaken.\n\nFinally, I think it is important to include the Q-P plots in the supplements at least, just to make it clear that the model fits could be improved. I don't think this is critical to the paper, which doesn't really rely on the specific model, but the misfits are noticeable.\n",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2bcf7f68-9bfe-4e16-b04f-f7683d5b0834",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C1",
+      "claim": "Some models suggest that dlPFC activation during normative choice reflects controlled inhibition or modulation of default hedonistic preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Some models suggest that dlPFC activation during normative choice reflects controlled inhibition or modulation of default hedonistic preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents an established theoretical perspective in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "208c942c-d490-4a91-9acb-9f5eb8c4dec6",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C2",
+      "claim": "Evidence accumulation models predict trial-by-trial variation in dlPFC response across three fMRI paradigms and two self-control contexts (altruistic sacrifice and healthy eating).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop an alternative account, showing that evidence accumulation models predict trial-by-trial variation in dlPFC response across three fMRI paradigms and two self-control contexts (altruistic sacrifice and healthy eating).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational modeling and empirical fMRI data presented in the manuscript across multiple datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "b775c5d7-3b5b-44b2-8054-37f8aa6b8055",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C3",
+      "claim": "Although dlPFC activity might typically increase for norm-consistent choices, deliberate self-regulation focused on normative goals should decrease or even reverse this pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "although dlPFC activity might typically increase for norm-consistent choices, deliberate self-regulation focused on normative goals should decrease or even reverse this pattern (i.e., greater dlPFC response for hedonistic, self-interested choices).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel prediction derived from the computational model simulations presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "d613f7d1-3401-4e32-9474-bf7a09108d65",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C4",
+      "claim": "The predictions about dlPFC activity patterns were confirmed in both altruistic and dietary choice contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed these predictions in both altruistic and dietary choice contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the empirical fMRI results from Datasets 1, 2, and 3 presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "f56c19e0-4dac-4df5-9f1e-c3cf15bb29bd",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C5",
+      "claim": "dlPFC response during normative choice may depend more on value-based evidence accumulation than inhibition of baser instincts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that dlPFC response during normative choice may depend more on value-based evidence accumulation than inhibition of our baser instincts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the computational modeling and empirical results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "325da231-b7e1-4495-a5b9-bf615be0e1e9",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C6",
+      "claim": "Compared to unhealthy food choices, healthier choices in successful dieters were accompanied by greater activation in a posterior region of the dlPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, compared to unhealthy food choices, healthier choices in successful dieters were accompanied by greater activation in a posterior region of the dlPFC (Hare et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "7c66a99c-9ff2-4972-b065-8bb9069f7403",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C7",
+      "claim": "Greater dlPFC response has been observed when individuals make normatively favored choices in social decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater dlPFC response in a similar region has also been observed when individuals make normatively favored choices in both social decision making (Strombach et al., 2015; Cutler and Campbell-Meiklejohn, 2019) and intertemporal choice (Luo et al., 2012; McClure et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "d9f61e11-7d95-4b5d-9ebf-2517cfa1c81e",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C8",
+      "claim": "Activation in the dlPFC increases when individuals explicitly focus on eating healthy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, activation in the dlPFC increases when individuals explicitly focus on eating healthy (Hare et al., 2011a) or on decreasing craving for food (Kober et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "658026e3-d61f-4747-ad52-44ae6d4a67d3",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C9",
+      "claim": "Electrical disruption of the dlPFC decreases patience.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical disruption of this area also decreases patience (Figner et al., 2010) and reduces normative behavior in cooperative contexts like the Ultimatum game (Ruff et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "79d0f4d3-4040-48a6-8d3b-c3f51b57f70e",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C10",
+      "claim": "Researchers often fail to observe increased dlPFC recruitment when individuals make pro-social or intertemporally normative choices.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, researchers often fail to observe increased dlPFC recruitment when individuals make pro-social or intertemporally normative choices (Zaki and Mitchell, 2011; Tusche et al., 2016; Magen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research showing inconsistent findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "74869c2d-8794-436a-b0ce-742dce04e4df",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C11",
+      "claim": "Electrical disruption of the dlPFC has been observed to decrease appetitive valuation of foods.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, electrical disruption of the dlPFC has been observed both to decrease appetitive valuation of foods (Camus et al., 2009) and to increase generous behavior in altruistic choice tasks like the Dictator game (Ruff et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "33f626ad-672c-48c7-a44d-f26260530596",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C12",
+      "claim": "The posterior dlPFC region associated with normative self-control success and inhibitory control tasks also activates during choices that are more difficult to discriminate in simple perceptual and value-based choices lacking a self-control conflict.",
+      "claim_type": "EXPLICIT",
+      "source": "This account draws on prior research in both perceptual and value-based decision making, which consistently finds that the posterior dlPFC region associated with both normative 'self-control success' and inhibitory control tasks also activates during choices that are more difficult to discriminate in simple perceptual and value-based choices lacking a self-control conflict (e.g., Heekeren et al., 2004; Noppeney et al., 2010; Pedersen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "bf3cf579-4801-4204-b379-937488a94bdb",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C13",
+      "claim": "The dlPFC may be one hub in a larger neural circuit that selects actions for execution using a process of evidence accumulation toward a threshold for response.",
+      "claim_type": "EXPLICIT",
+      "source": "Our account is also inspired by findings that the dlPFC may be one hub in a larger neural circuit \u2013 encompassing additional regions like the dorsal anterior cingulate cortex [dACC], supplementary motor area, and inferior frontal gyrus/anterior insula [IFG/aIns] \u2013 that selects actions for execution using a process of evidence accumulation toward a threshold for response (Hanks et al., 2015; Hare et al., 2011b; Pisauro et al., 2017; Gluth et al., 2012; Rodriguez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "5b5ab870-33dc-415c-9b03-82ce6a8ab1aa",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C14",
+      "claim": "The brain makes decisions through a process of value-based attribute integration and evidence accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on work examining simple perceptual and value-based choices (Milosavljevic et al., 2010; Krajbich et al., 2010; Busemeyer et al., 2019), we assume that the brain makes decisions through a process of value-based attribute integration and evidence accumulation (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to prior research and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "6d5b22b4-cc7c-4dd9-8046-9e4eb4ea3836",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C15",
+      "claim": "Choices are resolved by accumulating information about the value of choice-relevant information (attributes), weighted by their momentary goal relevance, until a critical threshold for choice is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, choices are resolved by accumulating information about the value of choice-relevant information (attributes), weighted by their momentary goal relevance, until a critical threshold for choice is reached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical assumption of the computational model presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "20ec91c7-e297-4db0-8a14-1ee31e42ce7b",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C16",
+      "claim": "Whether a process of value-based evidence accumulation results in a hedonistic or normative choice depends not only on the magnitude of hedonic and normative attributes, but also on their weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, whether a process of value-based evidence accumulation results in a hedonistic or normative choice depends not only on the magnitude of hedonic and normative attributes, but also on their weight: higher weights on normative attributes lead to more norm-consistent responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the computational model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "5973bc2d-f0db-4033-99c0-7be8c97ce5f6",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C17",
+      "claim": "Activity in the dlPFC reflects processes related to the evidence accumulation stage of decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we propose that activity in this region reflects processes related to the evidence accumulation stage of decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central theoretical proposal of the manuscript, tested through computational modeling and empirical data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "6a2a8877-143e-488e-ac4d-1c9ef583654f",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C18",
+      "claim": "dlPFC response during normative choice represents a downstream consequence of valuation processes, rather than a direct causal influence upon them.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that dlPFC response during normative choice represents a downstream consequence of valuation processes, rather than a direct causal influence upon them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the computational model and its predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "15a55790-7f55-4b3f-945d-cf49e724642b",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C19",
+      "claim": "Normative choices should be associated with greater neural activation in the dlPFC only when hedonic attribute values directly oppose normative attribute values, and hedonic attributes receive more weight as inputs to the evidence accumulation process.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations suggest that normative choices should be associated with greater neural activation in the dlPFC only when two things are true: hedonic attribute values directly oppose normative attribute values, and hedonic attributes receive more weight as inputs to the evidence accumulation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from computational model simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "d88c8cb5-ff40-45a5-b074-788c06f61098",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C20",
+      "claim": "When normative attributes receive more weight, hedonistic choices should produce greater activity in the dlPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when normative attributes receive more weight, hedonistic choices should produce greater activity in the dlPFC and other areas associated with response selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from computational model simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "8e05d043-8b6d-4ff6-ae94-6db11220bf13",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C21",
+      "claim": "If people by default favor hedonic over normative attributes, then most studies will observe greater dlPFC response when people choose the normatively favored option.",
+      "claim_type": "EXPLICIT",
+      "source": "First, if people by default favor hedonic over normative attributes, then most studies will observe greater dlPFC response when people choose the normatively favored option.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conditional prediction derived from the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "a14fad24-bf87-4445-89b7-711a6cc0cbb9",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C22",
+      "claim": "If a normally hedonistic decision maker focuses on normative goals, this should reduce activation in the dlPFC when choosing the normatively favored option.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our model makes a second, more novel prediction: if a normally hedonistic decision maker focuses on normative goals, this should reduce activation in the dlPFC when choosing the normatively favored option.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel prediction derived from the computational model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "29ca456f-97b1-45c1-a9cd-fbc1749794eb",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C23",
+      "claim": "The likelihood of a normative choice depends on the value of hedonic and normative attributes.",
+      "claim_type": "EXPLICIT",
+      "source": "Observation 1: The likelihood of a normative choice depends on the value of hedonic and normative attributes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is derived from computational model simulations shown in Figure 2a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "a4a93859-62ad-48e0-817d-af861277fe79",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C24",
+      "claim": "A decision maker tends to choose more healthily when one option dominates on both healthiness and tastiness (no-conflict trials).",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, the magnitude and sign of the two attributes matter: she tends to choose more healthily when one option dominates on both healthiness and tastiness (no-conflict trials).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "044ee882-dcad-46d9-83f3-aed89bfacd64",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C25",
+      "claim": "A decision maker chooses less healthily when one option is tastier while the other is healthier (conflict trials).",
+      "claim_type": "EXPLICIT",
+      "source": "She chooses less healthily when one option is tastier while the other is healthier (conflict trials).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "80cc9406-df57-47a9-b79e-5f2f472e9005",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C26",
+      "claim": "A decision maker is least likely to choose normatively when the difference in tastiness is large, and the difference in healthiness is small.",
+      "claim_type": "EXPLICIT",
+      "source": "She is least likely to choose normatively when the difference in tastiness is large, and the difference in healthiness is small.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "a3893ea9-d5f8-4acb-aa56-5d075dc758ec",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C27",
+      "claim": "The likelihood of a normative choice depends on weights given to normative and hedonic attributes.",
+      "claim_type": "EXPLICIT",
+      "source": "Observation 2: The likelihood of a normative choice depends on weights given to normative and hedonic attributes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is derived from computational model simulations shown in Figure 2b-c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "353d64a3-e18a-44da-94e1-cd0848462f0d",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C28",
+      "claim": "The decision maker chooses healthily less frequently when the weight on tastiness is higher than weight on healthiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the decision maker chooses healthily less frequently when the weight on tastiness is higher than weight on healthiness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "228c85aa-20ea-4a29-bd82-b8eb6f26a8b5",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C29",
+      "claim": "Differences in healthy choice frequency based on attribute weights are starkest in conflict trials, and essentially vanish for no-conflict trials.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these differences are starkest in conflict trials, and essentially vanish for no-conflict trials (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "63e50cd5-9fd6-4c02-8621-57c6b052834a",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C30",
+      "claim": "When options do not conflict on healthiness or tastiness, healthy choices generally elicit less activity than unhealthy ones.",
+      "claim_type": "EXPLICIT",
+      "source": "First, when options do not conflict on healthiness or tastiness (i.e., one option is better on both), healthy choices generally elicit less activity than unhealthy ones (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "385bb589-cba3-4756-abc0-7368c4ae8718",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C31",
+      "claim": "For no-conflict trials, healthy choices elicit less neural activity than unhealthy ones irrespective of whether a decision maker is currently prioritizing tastiness or healthiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, for no-conflict trials, this holds true irrespective of whether a decision maker is currently prioritizing tastiness or healthiness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "adebf81c-62df-4c58-a721-dbb05f512e9a",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C32",
+      "claim": "When attributes conflict, neural activity during healthy vs. unhealthy choices shows a striking dependence on an individual's goals.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, and more importantly, when attributes conflict, neural activity during healthy vs. unhealthy choices shows a striking dependence on an individual's goals (i.e., the relative balance of wHealth and wTaste).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "543ac5d8-39a5-4c11-8d26-9c6cb5845fbf",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C33",
+      "claim": "In conflict trials, hedonism-favoring goals result in higher activity on average when choosing healthily.",
+      "claim_type": "EXPLICIT",
+      "source": "In conflict trials, hedonism-favoring goals (i.e., wTaste > wHealth) result in higher activity on average when choosing healthily.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "71c970ec-1d17-459c-bd26-013ceb15fb93",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C34",
+      "claim": "When goals prioritize normative attributes like healthiness, simulated neural responses are lower on average for healthy compared to unhealthy choices.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when goals prioritize normative attributes like healthiness (i.e., wHealth > wTaste), simulated neural responses are lower on average for healthy compared to unhealthy choices (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "9c697dbc-d6ed-4b84-b445-cb2ae4d4f277",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C35",
+      "claim": "The neural response is positively associated with normative choice only when the decision maker places a higher weight on hedonistic than normative attributes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the neural response is positively associated with normative choice (i.e., greater neural activity to choose normatively instead of hedonistically) only when the decision maker places a higher weight on hedonistic than normative attributes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results shown in Figure 2d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "37735a01-05fe-4686-877b-67b06741290b",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C36",
+      "claim": "At least one region of the dlPFC correlates with evidence accumulation signals in simple choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary evidence suggests that at least one region of the dlPFC correlates with evidence accumulation signals in simple choice (Hare et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "729ac591-937c-4cfd-a5ad-56b38873c6f4",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C37",
+      "claim": "Trial-by-trial simulated neural activity in the DDM correlated with activity in the dlPFC region associated with inhibition and self-control across different choice contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus began by verifying that trial-by-trial simulated neural activity in the DDM correlated with activity in this region for complex, multi-attribute choices typical of different real-world self-control dilemmas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the empirical fMRI results from GLM 1a-c presented in the manuscript and shown in Figure 4a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "80cb76a2-5b79-4bcb-a820-ad76f44f7bee",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C41",
+      "claim": "In Dataset 1, subjects naturally placed more weight on their own outcomes than the other person's outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Weights from the best-fitting model parameters indicated that subjects naturally placed more weight on their own outcomes (mean wSelf=0.0043 \u00b1 0.0011 s.d.) than the other person's outcomes (mean wOther = 0.0018 \u00b1 0.0018, paired-t50=14.465, p<2.2 \u00d7 10\u201316) or on fairness (i.e., |Self \u2013 Other|, mean wFairness = 0.0011 \u00b1 0.0032, paired-t50=7.33, p=1.829 \u00d7 10\u20139)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of model parameters fitted to behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "2d6e7ecb-abff-460f-ac8f-5d7901f5c94b",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C42",
+      "claim": "In Dataset 1, a significant increase in average response in the dlPFC was observed during generous compared to selfish choices.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant increase in average response during generous compared to selfish choices (paired-t43=2.13, p=0.04, Cohen's d=0.32), confirming our prediction of higher dlPFC activity for normative choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "c4ec8d9f-6da2-4f7c-bbc6-c78c1e3c547a",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C43",
+      "claim": "In Dataset 1, individual differences in weights on other vs. self correlated negatively with differences in dlPFC BOLD response for generous vs. selfish choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, for our primary dlPFC ROI, when correlating individual differences in weights on other vs. self (i.e., wOther \u2013 wSelf) with differences in dlPFC BOLD response for generous vs. selfish choices, we observed a significant negative relationship of roughly the same magnitude as predicted by simulations (r=\u20130.31, p=0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data and model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "5c9087f2-23d9-4b07-b7e1-d7e42b727ec6",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C44",
+      "claim": "In Dataset 2, the regulatory focus manipulation yielded significantly different weights on the attributes across the conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis confirmed that our manipulation yielded significantly different weights on the attributes across the conditions (all F2,96 > 13.54, all p<6.59 \u00d7 10\u20136, see Methods for details of model fitting).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of model parameters fitted to behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "78496055-1571-4536-959c-7c370ff173e2",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C45",
+      "claim": "In Dataset 2, weights for self-interest were highest in the Natural condition, lower in the Ethics condition, and lowest in the Partner condition.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, weights for self-interest (a hedonic attribute, wSelf) were highest in the Natural condition (MNatural = 0.0073 \u00b1 0.0035 s.d.), lower in the Ethics condition (MEthics = 0.0061 \u00b1 0.0047), and lowest in the Partner condition (MPartner = 0.0037 \u00b1 0.0065).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of model parameters fitted to behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "7e9d75d7-1230-4a73-a1fc-ea1f3a400a07",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C46",
+      "claim": "In Dataset 2, weights on the partner's outcomes and fairness increased with regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, weights on the partner's outcomes and fairness (attributes related more strongly to social norms) increased with regulation (wOther: MNatural = 0.0010 \u00b1 0.0038, MEthics = 0.0041 \u00b1 0.0045, MPartner = 0.0051 \u00b1 0.0038; wFairness: MNatural = 0.0017 \u00b1 0.0033, MEthics = 0.0053 \u00b1 0.0046, MPartner = 0.0024 \u00b1 0.0035)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of model parameters fitted to behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "399f35fa-4bd3-481f-bd40-d1f0cdf6a3e1",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C47",
+      "claim": "In Dataset 2, there was a significant effect of condition on dlPFC response for generous vs. selfish choice.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a significant effect of condition on dlPFC response (F2,96 = 5.91, p=0.004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "26983fd8-825d-44e9-97d1-dc57cc4ec53d",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C48",
+      "claim": "In Dataset 2, in the Natural condition, generous choices elicited significantly greater activity in the dlPFC than hedonic choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Post hoc planned comparisons confirmed that in the Natural condition, generous choices elicited significantly greater activity in the dlPFC than hedonic choices (t48=2.16, p=0.04, Cohen's d=0.31, Figure 4h), replicating the observed difference during Natural choices of Study 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "7c2108c4-d6eb-4f61-9ec4-5493c44cf620",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C49",
+      "claim": "In Dataset 2, in the Ethics and Partner focus conditions, generous choices no longer elicited significantly greater activation in the dlPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the Ethics and Partner focus conditions, generous choices no longer elicited significantly greater activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "5f21148d-27ac-4089-ad42-3e3e9945d3b1",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C50",
+      "claim": "In Dataset 2, the difference in activation between generous vs. selfish choice in both the Partner and Ethics conditions differed significantly from the difference in the Natural condition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the key test of our predictions was confirmed: the difference in activation between generous vs. selfish choice in both the Partner and Ethics conditions differed significantly from the difference in the Natural condition (G vs. S, Partner vs. Natural: t48=2.57, p=0.01, Cohen's d=0.36; G vs. S, Ethics vs. Natural: t48=3.13, p=0.003, Cohen's d=0.45).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "f6acbfd1-28cb-4e47-977d-62e257b129d5",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C51",
+      "claim": "In Dataset 3, the regulatory manipulation yielded significantly different weights on the different attributes across the conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis confirmed that our manipulation yielded significantly different weights on the different attributes across the conditions (all F2,220 > 44.43, all p<2.2 \u00d7 10\u201316).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of model parameters fitted to behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "57918ee3-787a-4dc6-815b-05a69d57d4a4",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C52",
+      "claim": "In Dataset 3, weights on tastiness were highest in the Taste and Natural conditions, and lowest in the Health condition.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, weights on tastiness (a hedonic attribute) were highest in the Taste and Natural conditions (MTaste = 0.0056 \u00b1 0.0043, MNatural = 0.0058 \u00b1 0.0036), and lowest in the Health condition (MHealth = 0.0027 \u00b1 0.0033).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of model parameters fitted to behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "b209a985-0e37-4871-8ff7-5c7512df6822",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C53",
+      "claim": "In Dataset 3, weights on healthiness were lowest in the Taste condition, similar though slightly higher in the Natural condition, and highest in the Health condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Weights on healthiness (a normative attribute) showed the opposite pattern, being lowest in the Taste condition (MTaste = 0.0002 \u00b1 0.0022), similar though slightly higher in the Natural condition (MNatural = 0.0005 \u00b1 0.0021), and highest in the Health condition (MHealth = 0.0042 \u00b1 0.0035).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of model parameters fitted to behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "7e965093-ed7b-4745-a8b1-d3f452fcb4e6",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C54",
+      "claim": "In Dataset 3, there was a significant effect of condition on dlPFC response for healthy vs. unhealthy choice in conflict trials.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the simulations (Figure 4f), this analysis revealed a significant effect of condition on dlPFC response (F2,177 = 4.11, p=0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "b2cb4c2d-0aa2-444f-81b6-d2f47d405b8f",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C55",
+      "claim": "In Dataset 3, BOLD response during healthy compared to unhealthy choices was significantly greater in the Natural condition for the dlPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "BOLD response during healthy compared to unhealthy choices was significantly greater in the Natural condition for the dlPFC (paired-t100=2.35, p=0.02, Cohen's d=0.24, within-condition comparison).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "1c98b902-b9b6-46d5-8f54-cd308b02f3d6",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C56",
+      "claim": "In Dataset 3, in the Health condition, healthy vs. unhealthy choices elicited comparable dlPFC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, in the Health condition, healthy vs. unhealthy choices elicited comparable dlPFC responses (paired-t97=0.86, p=0.39, Cohen's d=0.09, within-condition comparison) and even showed a trend toward greater activity for unhealthy choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "5a6cb0f7-7dbf-45aa-b5de-564ed5f000f3",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C57",
+      "claim": "In Dataset 3, the reduction of the difference in activity during healthy vs. unhealthy choices between Natural and Health conditions was significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the reduction of the difference in activity during healthy vs. unhealthy choices between Natural and Health conditions was significant (paired-t93=2.58, p=0.01, Cohen's d=0.27).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "35136992-8f65-4841-90ae-e8f8c33a52c8",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C58",
+      "claim": "In Dataset 3, when examining only non-conflict trials, there was no significant influence of regulatory condition on the difference in neural activity between healthy and unhealthy choice.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, when examining only non-conflict trials, there was no significant influence of regulatory condition on the difference in neural activity between healthy and unhealthy choice (F2,213 = 0.357, p=0.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "3943c773-b5b6-4b2d-8d47-268ff8dc1df8",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C59",
+      "claim": "Activation in the dlPFC for normative choices when normative and hedonic attributes did not conflict is generally low, and shows no significant effect of regulatory focus.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, as expected from model simulations (Figure 2d), activation in the dlPFC for normative choices when normative and hedonic attributes did not conflict is generally low, and shows no significant effect of regulatory focus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of fMRI data and comparison to model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "0ffbfa8b-af51-4787-9cd2-61ae0a416172",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C60",
+      "claim": "The 'prepotent response' may correspond to choices consistent with the choice attribute that is currently receiving higher weight, regardless of the source of that weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our model suggests that the 'prepotent response' may correspond, at least in the realm of value-based decision making, to choices consistent with the choice attribute that is currently receiving higher weight, regardless of the source of that weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of existing theories.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "7815f891-f668-4322-aba6-93aaff13d6d2",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C61",
+      "claim": "Even when higher weights on normative attributes derive primarily from a deliberative, regulatory focus, this yields reduced activity in the dlPFC when making normative choices.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, even when higher weights on normative attributes derive primarily from a deliberative, regulatory focus, as in our final two datasets (Hare et al., 2011a; Tusche and Hutcherson, 2018; Schmidt et al., 2018), this yields reduced activity in the dlPFC when making normative choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the empirical results from Datasets 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "487125c1-d3dc-4821-99dc-c16f98df7dc9",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C62",
+      "claim": "Higher weights on normative attributes reduce the computation required for neural accumulation signals to trigger a normative response.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, these patterns result from the fact that higher weights on normative attributes reduce the computation required for neural accumulation signals to trigger a normative response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation derived from the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "6b8f1415-2f36-4362-8333-7f2294863576",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C63",
+      "claim": "Manipulations that increase the weight on normative attributes should both promote normative behavior and make it easier to accomplish.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while virtuous choices associated with successful self-control may sometimes recruit the posterior dlPFC, manipulations that increase the weight on normative attributes, either by making it more salient in the exogenous environment or focusing endogenous attention toward it, should both promote normative behavior and make it easier to accomplish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from the computational model and empirical results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "48a22df0-9e01-4a78-9f15-c22b5f42b331",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C64",
+      "claim": "In the domain of intertemporal choice, the model predicts that making future outcomes more salient should amplify their weight in the choice process, promoting patience while decreasing dlPFC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the domain of intertemporal choice, our model predicts that making future outcomes more salient should amplify their weight in the choice process, promoting patience while decreasing dlPFC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from the computational model applied to a different domain.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "344da803-58af-445e-a7dd-115ab451a29d",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C65",
+      "claim": "Making future outcomes more salient promotes patience while decreasing dlPFC activation, which is exactly what is observed empirically.",
+      "claim_type": "EXPLICIT",
+      "source": "This is exactly what is observed empirically (Magen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "1e456cd9-e846-4f48-8483-53886e616699",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C66",
+      "claim": "The region of dlPFC that correlated with the DDM is nearly identical to areas previously found when dieters made healthy compared to unhealthy choices.",
+      "claim_type": "EXPLICIT",
+      "source": "The region of dlPFC that correlated with the DDM in our datasets is nearly identical to areas previously found when dieters made healthy compared to unhealthy choices (Hare et al., 2009), and when participants were required to recompute values based on contextual information (Rudorf and Hare, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of the current results to prior published research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "8a1955aa-b171-4e93-8978-36693822b938",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C67",
+      "claim": "The dlPFC region examined in this study appeared to correlate with the evidence accumulation stage of decisions, rather than with the evidence construction stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, this region appeared to correlate with the evidence accumulation stage of decisions, rather than with the evidence construction stage, responding during decision conflict generally, regardless of whether that conflict derived from greater weighting of hedonic or normative attributes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results based on the computational model and empirical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "ad4e3f76-2b49-4ba3-98a4-05c8f6bf3284",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C68",
+      "claim": "The evidence accumulation-related dlPFC region lies posterior and dorsal to another dlPFC area that tracks hedonistic and normative attributes in a goal-consistent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence accumulation-related dlPFC region in this study, which also corresponds to the area identified by the meta-analytic 'inhibitory control', lies posterior and dorsal to another dlPFC area that we have observed, in these same datasets, to track hedonistic and normative attributes in a goal-consistent manner and to serve as a candidate for mediating regulation-induced changes (Tusche and Hutcherson, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison to results from prior analysis of the same datasets.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "a7ff67f2-5d73-4f1c-815b-09ba0690b6ff",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C69",
+      "claim": "Gray matter volume in a more anterior dlPFC area, but not in the posterior dlPFC region identified here, correlates with regulatory success.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, gray matter volume in this more anterior dlPFC area, but not in the posterior dlPFC region identified here, correlates with regulatory success (Schmidt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "806f6d56-8e94-4d12-a63e-f39bd69b7c22",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C70",
+      "claim": "Some areas of the dlPFC may play an important role in promoting self-regulation and normative behavior by altering attribute weights in decision value, but they are anatomically and computationally distinct from the region of the posterior dlPFC sometimes assumed to serve this role.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while some areas of the dlPFC may indeed play an important role in promoting self-regulation and normative behavior by altering attribute weights in decision value, we suspect that they are anatomically and computationally distinct from the region of the posterior dlPFC sometimes assumed to serve this role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and synthesis of the current results with prior research.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "50f0298f-9693-4b79-aae4-6e208be4d85a",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C71",
+      "claim": "The dlPFC has been associated with many computational functions and roles, not all of which are mutually incompatible.",
+      "claim_type": "EXPLICIT",
+      "source": "While this hypothesis is consistent with results from single-cell recordings (Hanks et al., 2015; Hunt et al., 2018), we also acknowledge that the dlPFC has been associated with many computational functions and roles, not all of which are mutually incompatible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the complexity of dlPFC function based on prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "fd71a44c-bb1a-402b-abfd-fff60feef4d6",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "claim_id": "C72",
+      "claim": "It is possible that the dlPFC region observed here performs some sort of process that is correlated with, but not identical to, the neuronal computations of the DDM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that the dlPFC region observed here performs some sort of process that is correlated with, but not identical to, the neuronal computations of the DDM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautious interpretation acknowledging alternative explanations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4e0d4625-8891-49e1-afb4-b1f31a611b87",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors propose a computational model based on evidence accumulation (drift diffusion model, DDM) where choices are resolved by accumulating weighted attribute values until a threshold is reached. They propose that dlPFC activity reflects the evidence accumulation stage rather than direct modulation of attribute weights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 establish the theoretical foundation of the evidence accumulation model. The model is grounded in prior literature (C14), clearly defines the accumulation process (C15-C16), and proposes a specific computational role for dlPFC (C17-C18). The theoretical framework is internally consistent and builds logically on established decision-making models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational simulations predict that normative choices produce greater dlPFC activity only when hedonic attributes are weighted more heavily than normative attributes and attributes conflict. When normative attributes receive higher weight, hedonistic choices should produce greater dlPFC activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C35 describe simulation results shown in Figure 2 that generate specific, testable predictions. The simulations systematically vary attribute values and weights to demonstrate how neural activity patterns depend on both conflict and goal prioritization. The predictions are clearly derived from the computational model and are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "0d0fe788-487b-41cd-bd11-630af0510985",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Trial-by-trial simulated neural activity from the DDM correlates with activity in the dlPFC region associated with inhibition and self-control across different choice contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by empirical fMRI data from GLM 1a-c across three datasets (Figure 4a-c). The correlation between DDM predictions and dlPFC activity is demonstrated across both altruistic and dietary choice contexts, providing convergent evidence. The use of an independently-defined ROI (from meta-analysis) strengthens the claim by avoiding circularity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "c9611c53-5111-4703-9fbb-d58a00501964",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In Dataset 1 (natural altruistic choice), subjects weighted self-interest more than other-regarding attributes, generous choices elicited greater dlPFC activity than selfish choices, and individual differences in attribute weights negatively correlated with dlPFC response differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by statistical analyses of behavioral model fits and fMRI data. The fitted weights show significant prioritization of self-interest (C41, p<2.2\u00d710\u207b\u00b9\u2076), dlPFC shows greater response for generous choices (C42, p=0.04, d=0.32), and the predicted negative correlation with individual differences is confirmed (C43, r=-0.31, p=0.04). All results align with model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "f886a948-ab5d-4d18-87aa-7cd60597018c",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In Dataset 2 (altruistic choice with regulatory manipulation), instructing participants to focus on normative attributes (Ethics, Partner) shifted attribute weights away from self-interest and eliminated or reversed the pattern of greater dlPFC activity for generous choices observed in the Natural condition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 are supported by statistical analyses showing the manipulation successfully altered attribute weights (C44-C46, all F>13.54, p<6.59\u00d710\u207b\u2076), produced a significant effect on dlPFC response (C47, F=5.91, p=0.004), replicated the Natural condition pattern (C48, p=0.04), and confirmed the key prediction that regulatory focus significantly reduced the generous>selfish dlPFC difference (C50, both p\u22640.01, d=0.36-0.45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "cdb96c0e-d506-4bb6-bcdf-1a01daa46b3e",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In Dataset 3 (dietary choice with regulatory manipulation), instructing participants to focus on health shifted attribute weights toward healthiness and reduced dlPFC activity for healthy vs. unhealthy choices in conflict trials, while the Natural condition showed greater dlPFC activity for healthy choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 are supported by statistical analyses across three samples showing successful weight manipulation (C51-C53, all F>44.43, p<2.2\u00d710\u207b\u00b9\u2076), significant condition effects on dlPFC (C54, F=4.11, p=0.02), greater activity for healthy choices in Natural condition (C55, p=0.02, d=0.24), comparable responses in Health condition (C56, p=0.39), and significant reduction between conditions (C57, p=0.01, d=0.27). Results replicate the pattern from Dataset 2 in a different domain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "6cd8085c-fc8b-43d5-940f-24df3f6b6296",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In Dataset 3, when examining non-conflict trials (where healthiness and tastiness do not oppose), there was no significant effect of regulatory condition on dlPFC activity for healthy vs. unhealthy choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by statistical analysis showing no effect of condition in non-conflict trials (F=0.357, p=0.7). This result aligns with model predictions (Figure 2d) that regulatory effects should be specific to conflict trials, providing additional specificity to the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "ae0cff7c-818c-4130-ac3d-008abeed0960",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The evidence accumulation model successfully predicts trial-by-trial dlPFC response across three fMRI paradigms and two self-control contexts, and these results suggest dlPFC response depends more on evidence accumulation than inhibition of hedonistic impulses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C4, and C5 represent the main conclusions of the manuscript. They are well-supported by the convergent evidence from computational modeling (C19-C35), empirical validation across datasets (C37, C41-C59), and the systematic pattern of results showing dlPFC activity depends on the relative weighting of attributes rather than simply tracking normative choice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "07fda18e-098c-41bb-a17c-9b0966c0f77f",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The prepotent response corresponds to choices consistent with the currently higher-weighted attribute regardless of source, and higher weights on normative attributes reduce dlPFC activity during normative choices by reducing computational demands for evidence accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 provide mechanistic interpretation of the empirical results. The interpretation is well-supported by the pattern of results across datasets showing that regulatory focus on normative attributes both increases normative behavior and reduces dlPFC activity (C61, supported by Datasets 2-3). The mechanistic explanation (C62) follows logically from the computational model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "1e7160ce-3109-488b-a774-9726311c3324",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model predicts that in intertemporal choice, making future outcomes more salient should promote patience while decreasing dlPFC activation, which matches empirical observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 extend the model to a different domain. The prediction (C64) follows logically from the model framework, and C65 cites empirical support from prior work (Magen et al., 2014). This demonstrates the model's generalizability beyond the tested domains, though it relies on external validation rather than data presented in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "e6182e54-cee2-4728-89a4-46c52929f0ac",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The dlPFC region correlated with the DDM is anatomically similar to areas associated with self-control in prior studies, but appears to reflect evidence accumulation rather than attribute weight modulation. This region is distinct from more anterior dlPFC areas that may modulate attribute weights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 integrate current findings with prior literature. The anatomical correspondence is supported by comparison to prior studies (C66, C68-C69 with citations), and the functional interpretation (C67) is supported by the pattern of results showing dlPFC responds to conflict generally rather than specifically to normative choices. The distinction between dlPFC subregions (C68-C70) is supported by prior work from the same group.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "34a1840e-23cc-4d93-94dc-92d4932223ac",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The dlPFC has been associated with many computational functions, and it is possible the region performs processes correlated with, but not identical to, the DDM computations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 appropriately acknowledge limitations and alternative interpretations. The authors recognize that correlation does not prove the dlPFC performs DDM computations per se, and note some discrepancies between predictions and data (mentioned in Discussion). This represents appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior literature shows mixed evidence regarding dlPFC involvement in normative choice, with some studies showing increased activation during norm-consistent choices and others failing to observe this pattern or showing opposite effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C13 summarize prior literature to establish the motivation for the current study. All claims are supported by appropriate citations to published work. The summary accurately characterizes the inconsistencies in the literature that the current study aims to resolve.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    },
+    {
+      "id": "884da40a-f091-4c71-a5d0-57da794584e0",
+      "content_id": "939ab4e5-1081-4df7-8bd8-d8218d7af0e2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model predicts that deliberate self-regulation focused on normative goals should decrease or reverse the typical pattern of greater dlPFC response for norm-consistent choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 states a key novel prediction that distinguishes this model from alternatives. This prediction is derived from the computational model simulations (C19-C35) and is subsequently tested and confirmed in Datasets 2 and 3 (C44-C57). The prediction is counterintuitive and represents a major contribution of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:38.773144Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5b5ab870-33dc-415c-9b03-82ce6a8ab1aa",
+      "result_id": "4e0d4625-8891-49e1-afb4-b1f31a611b87"
+    },
+    {
+      "claim_id": "6d5b22b4-cc7c-4dd9-8046-9e4eb4ea3836",
+      "result_id": "4e0d4625-8891-49e1-afb4-b1f31a611b87"
+    },
+    {
+      "claim_id": "20ec91c7-e297-4db0-8a14-1ee31e42ce7b",
+      "result_id": "4e0d4625-8891-49e1-afb4-b1f31a611b87"
+    },
+    {
+      "claim_id": "5973bc2d-f0db-4033-99c0-7be8c97ce5f6",
+      "result_id": "4e0d4625-8891-49e1-afb4-b1f31a611b87"
+    },
+    {
+      "claim_id": "6a2a8877-143e-488e-ac4d-1c9ef583654f",
+      "result_id": "4e0d4625-8891-49e1-afb4-b1f31a611b87"
+    },
+    {
+      "claim_id": "15a55790-7f55-4b3f-945d-cf49e724642b",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "d88c8cb5-ff40-45a5-b074-788c06f61098",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "8e05d043-8b6d-4ff6-ae94-6db11220bf13",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "a14fad24-bf87-4445-89b7-711a6cc0cbb9",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "29ca456f-97b1-45c1-a9cd-fbc1749794eb",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "a4a93859-62ad-48e0-817d-af861277fe79",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "044ee882-dcad-46d9-83f3-aed89bfacd64",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "80cc9406-df57-47a9-b79e-5f2f472e9005",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "a3893ea9-d5f8-4acb-aa56-5d075dc758ec",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "353d64a3-e18a-44da-94e1-cd0848462f0d",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "228c85aa-20ea-4a29-bd82-b8eb6f26a8b5",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "63e50cd5-9fd6-4c02-8621-57c6b052834a",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "385bb589-cba3-4756-abc0-7368c4ae8718",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "adebf81c-62df-4c58-a721-dbb05f512e9a",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "543ac5d8-39a5-4c11-8d26-9c6cb5845fbf",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "71c970ec-1d17-459c-bd26-013ceb15fb93",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "9c697dbc-d6ed-4b84-b445-cb2ae4d4f277",
+      "result_id": "67a9d3dc-7b42-45dc-9ba7-310fe9e48c35"
+    },
+    {
+      "claim_id": "37735a01-05fe-4686-877b-67b06741290b",
+      "result_id": "0d0fe788-487b-41cd-bd11-630af0510985"
+    },
+    {
+      "claim_id": "729ac591-937c-4cfd-a5ad-56b38873c6f4",
+      "result_id": "0d0fe788-487b-41cd-bd11-630af0510985"
+    },
+    {
+      "claim_id": "80cb76a2-5b79-4bcb-a820-ad76f44f7bee",
+      "result_id": "c9611c53-5111-4703-9fbb-d58a00501964"
+    },
+    {
+      "claim_id": "2d6e7ecb-abff-460f-ac8f-5d7901f5c94b",
+      "result_id": "c9611c53-5111-4703-9fbb-d58a00501964"
+    },
+    {
+      "claim_id": "c4ec8d9f-6da2-4f7c-bbc6-c78c1e3c547a",
+      "result_id": "c9611c53-5111-4703-9fbb-d58a00501964"
+    },
+    {
+      "claim_id": "5c9087f2-23d9-4b07-b7e1-d7e42b727ec6",
+      "result_id": "f886a948-ab5d-4d18-87aa-7cd60597018c"
+    },
+    {
+      "claim_id": "78496055-1571-4536-959c-7c370ff173e2",
+      "result_id": "f886a948-ab5d-4d18-87aa-7cd60597018c"
+    },
+    {
+      "claim_id": "7e9d75d7-1230-4a73-a1fc-ea1f3a400a07",
+      "result_id": "f886a948-ab5d-4d18-87aa-7cd60597018c"
+    },
+    {
+      "claim_id": "399f35fa-4bd3-481f-bd40-d1f0cdf6a3e1",
+      "result_id": "f886a948-ab5d-4d18-87aa-7cd60597018c"
+    },
+    {
+      "claim_id": "26983fd8-825d-44e9-97d1-dc57cc4ec53d",
+      "result_id": "f886a948-ab5d-4d18-87aa-7cd60597018c"
+    },
+    {
+      "claim_id": "7c2108c4-d6eb-4f61-9ec4-5493c44cf620",
+      "result_id": "f886a948-ab5d-4d18-87aa-7cd60597018c"
+    },
+    {
+      "claim_id": "5f21148d-27ac-4089-ad42-3e3e9945d3b1",
+      "result_id": "f886a948-ab5d-4d18-87aa-7cd60597018c"
+    },
+    {
+      "claim_id": "f6acbfd1-28cb-4e47-977d-62e257b129d5",
+      "result_id": "cdb96c0e-d506-4bb6-bcdf-1a01daa46b3e"
+    },
+    {
+      "claim_id": "57918ee3-787a-4dc6-815b-05a69d57d4a4",
+      "result_id": "cdb96c0e-d506-4bb6-bcdf-1a01daa46b3e"
+    },
+    {
+      "claim_id": "b209a985-0e37-4871-8ff7-5c7512df6822",
+      "result_id": "cdb96c0e-d506-4bb6-bcdf-1a01daa46b3e"
+    },
+    {
+      "claim_id": "7e965093-ed7b-4745-a8b1-d3f452fcb4e6",
+      "result_id": "cdb96c0e-d506-4bb6-bcdf-1a01daa46b3e"
+    },
+    {
+      "claim_id": "b2cb4c2d-0aa2-444f-81b6-d2f47d405b8f",
+      "result_id": "cdb96c0e-d506-4bb6-bcdf-1a01daa46b3e"
+    },
+    {
+      "claim_id": "1c98b902-b9b6-46d5-8f54-cd308b02f3d6",
+      "result_id": "cdb96c0e-d506-4bb6-bcdf-1a01daa46b3e"
+    },
+    {
+      "claim_id": "5a6cb0f7-7dbf-45aa-b5de-564ed5f000f3",
+      "result_id": "cdb96c0e-d506-4bb6-bcdf-1a01daa46b3e"
+    },
+    {
+      "claim_id": "35136992-8f65-4841-90ae-e8f8c33a52c8",
+      "result_id": "6cd8085c-fc8b-43d5-940f-24df3f6b6296"
+    },
+    {
+      "claim_id": "3943c773-b5b6-4b2d-8d47-268ff8dc1df8",
+      "result_id": "6cd8085c-fc8b-43d5-940f-24df3f6b6296"
+    },
+    {
+      "claim_id": "208c942c-d490-4a91-9acb-9f5eb8c4dec6",
+      "result_id": "ae0cff7c-818c-4130-ac3d-008abeed0960"
+    },
+    {
+      "claim_id": "d613f7d1-3401-4e32-9474-bf7a09108d65",
+      "result_id": "ae0cff7c-818c-4130-ac3d-008abeed0960"
+    },
+    {
+      "claim_id": "f56c19e0-4dac-4df5-9f1e-c3cf15bb29bd",
+      "result_id": "ae0cff7c-818c-4130-ac3d-008abeed0960"
+    },
+    {
+      "claim_id": "0ffbfa8b-af51-4787-9cd2-61ae0a416172",
+      "result_id": "07fda18e-098c-41bb-a17c-9b0966c0f77f"
+    },
+    {
+      "claim_id": "7815f891-f668-4322-aba6-93aaff13d6d2",
+      "result_id": "07fda18e-098c-41bb-a17c-9b0966c0f77f"
+    },
+    {
+      "claim_id": "487125c1-d3dc-4821-99dc-c16f98df7dc9",
+      "result_id": "07fda18e-098c-41bb-a17c-9b0966c0f77f"
+    },
+    {
+      "claim_id": "6b8f1415-2f36-4362-8333-7f2294863576",
+      "result_id": "07fda18e-098c-41bb-a17c-9b0966c0f77f"
+    },
+    {
+      "claim_id": "48a22df0-9e01-4a78-9f15-c22b5f42b331",
+      "result_id": "1e7160ce-3109-488b-a774-9726311c3324"
+    },
+    {
+      "claim_id": "344da803-58af-445e-a7dd-115ab451a29d",
+      "result_id": "1e7160ce-3109-488b-a774-9726311c3324"
+    },
+    {
+      "claim_id": "1e456cd9-e846-4f48-8483-53886e616699",
+      "result_id": "e6182e54-cee2-4728-89a4-46c52929f0ac"
+    },
+    {
+      "claim_id": "8a1955aa-b171-4e93-8978-36693822b938",
+      "result_id": "e6182e54-cee2-4728-89a4-46c52929f0ac"
+    },
+    {
+      "claim_id": "ad4e3f76-2b49-4ba3-98a4-05c8f6bf3284",
+      "result_id": "e6182e54-cee2-4728-89a4-46c52929f0ac"
+    },
+    {
+      "claim_id": "a7ff67f2-5d73-4f1c-815b-09ba0690b6ff",
+      "result_id": "e6182e54-cee2-4728-89a4-46c52929f0ac"
+    },
+    {
+      "claim_id": "806f6d56-8e94-4d12-a63e-f39bd69b7c22",
+      "result_id": "e6182e54-cee2-4728-89a4-46c52929f0ac"
+    },
+    {
+      "claim_id": "50f0298f-9693-4b79-aae4-6e208be4d85a",
+      "result_id": "34a1840e-23cc-4d93-94dc-92d4932223ac"
+    },
+    {
+      "claim_id": "fd71a44c-bb1a-402b-abfd-fff60feef4d6",
+      "result_id": "34a1840e-23cc-4d93-94dc-92d4932223ac"
+    },
+    {
+      "claim_id": "2bcf7f68-9bfe-4e16-b04f-f7683d5b0834",
+      "result_id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b"
+    },
+    {
+      "claim_id": "325da231-b7e1-4495-a5b9-bf615be0e1e9",
+      "result_id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b"
+    },
+    {
+      "claim_id": "7c66a99c-9ff2-4972-b065-8bb9069f7403",
+      "result_id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b"
+    },
+    {
+      "claim_id": "d9f61e11-7d95-4b5d-9ebf-2517cfa1c81e",
+      "result_id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b"
+    },
+    {
+      "claim_id": "658026e3-d61f-4747-ad52-44ae6d4a67d3",
+      "result_id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b"
+    },
+    {
+      "claim_id": "79d0f4d3-4040-48a6-8d3b-c3f51b57f70e",
+      "result_id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b"
+    },
+    {
+      "claim_id": "74869c2d-8794-436a-b0ce-742dce04e4df",
+      "result_id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b"
+    },
+    {
+      "claim_id": "33f626ad-672c-48c7-a44d-f26260530596",
+      "result_id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b"
+    },
+    {
+      "claim_id": "bf3cf579-4801-4204-b379-937488a94bdb",
+      "result_id": "7ae6a0d8-023a-4836-a569-4b14b4fc208b"
+    },
+    {
+      "claim_id": "b775c5d7-3b5b-44b2-8054-37f8aa6b8055",
+      "result_id": "884da40a-f091-4c71-a5d0-57da794584e0"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,456 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C63"
+    ],
+    "result": "A combinatorially complete antibody library containing all 2^16 = 65,536 possible evolutionary intermediates between the UCA and CH65 was generated, excluding two mutations (Q1E and S75A) that do not significantly impact binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C57, and C63 describe the generation of the combinatorial library. The library design is well-documented, with validation that excluded mutations do not affect affinity (C62). The experimental approach is clearly described and the library size is appropriate for the throughput methods used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C86",
+      "C87",
+      "C90"
+    ],
+    "result": "Affinity to each antigen requires specific sets of mutations distributed across VL and VH that interact non-additively (epistatically), with widespread epistasis observed both within and between chains, including many long-range interactions between distant residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58, C86, C87, and C90 are supported by the epistasis analysis using cross-validated linear models (C85). The finding of widespread epistasis, including long-range interactions, is demonstrated through comprehensive data analysis. The magnitude of epistasis varies by antigen (explaining 24-34% of variance in KD), providing quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C72",
+      "C73",
+      "C74",
+      "C80",
+      "C140",
+      "C143"
+    ],
+    "result": "Mutations form a hierarchical pattern across antigens, where increasingly divergent antigens require additional epistatic mutations beyond those needed for less divergent antigens. All variants binding SI06 also bind MA90-G189E, and fewer mutations are needed to bind MA90-G189E than SI06.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59, C72, C73, C74, C80, C140, and C143 describe the hierarchical pattern observed in the data. This is well-supported by multiple lines of evidence including binding data (Figure 1B-C), mutation frequency analysis (Figure 2C-D), and comparison to prior work on CR9114. The nested pattern is clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Epistasis between heavy chain mutations (G31D, M34I, N52H in I-2) is essential for binding MA90-G189E. N52H may increase occupancy of the binding-compatible HCDR3 conformation and forms a network of interactions with G31D between HCDR1, HCDR2, and the HA 150-loop, stabilizing binding at a distance (~15-20 \u00c5) from the viral escape residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C91-C98 are supported by structural analysis (Figure 4A-C, Figure 4\u2014figure supplement 1) and kinetics data showing G31D and M34I reduce dissociation rate by 3.5-5-fold. The structural mechanism is well-characterized, though C94 is speculative about HCDR3 conformation occupancy. The distance measurements and interaction network are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Y35N (VL) and H35N (VH) interact synergistically with I-2 mutations to confer affinity to SI06. These mutations remove interactions at the VH-VL interface with HCDR3, with Y35N removing hydrogen bonding and H35N removing methionine-aromatic interactions. The I-2 background is required for these mutations to confer SI06 affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 are supported by combinatorial binding data (Figure 4D), structural analysis (Figure 4E), and kinetics measurements (Figure 4\u2014figure supplement 6). The epistatic interactions are clearly demonstrated, and the structural basis for the mechanism is well-characterized. The requirement for the I-2 background is experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Y35N confers affinity to SI06 for variants with few somatic mutations but is depleted among highest affinity variants and decreases affinity in highly mutated backgrounds, suggesting it is only beneficial during early rounds of affinity maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by data showing Y35N frequency decreases with mutation number (Figure 2C, Figure 2\u2014figure supplement 1) and kinetics data showing decreased association rate in mutated backgrounds (Figure 4E). The inference about early benefit (C110) is reasonable given the data, though it remains somewhat speculative about the temporal dynamics in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The I-2 mutations stabilize HCDR1 and HCDR2 with HA and are required for Y35N and H35N to confer affinity to SI06 without complete HCDR3 rigidification. Crystal structures show Y35N and H35N are insufficient to rigidify HCDR3 as observed by high B factors or lack of density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by crystal structures (Figure 4\u2014figure supplement 1C) and comparison to prior structural work. The structural data clearly show that Y35N and H35N do not rigidify HCDR3, and the conclusion about the hierarchical mechanism (C113) is well-supported by the combined structural and kinetics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Mutational trajectories to CH65 are most favorable in sequential selection scenarios beginning with MA90 and ending with SI06, consistent with the donor's likely exposure history. MA90-SI06 sequential scenarios are considerably more likely than single antigen, mixed antigen, or SI06-MA90 scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by pathway likelihood analysis (Figure 5A-B) using a moderate selection model. The analysis is mathematically sound and the results are consistent with the hierarchical landscape structure. The inference about donor exposure history is supported by citations to prior work (C114). However, the model makes assumptions about selection strength and population size that could affect conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Two I-2 mutations (G31D, N52H) and epistatic mutations interacting with HCDR3 (Y33H, H35N, Y35N) are most likely to occur early in mutational trajectories under MA90 selection. Synergistic HCDR3-stabilizing mutations Y48C and D49Y occur late and consecutively. Y35N is most probable after I-2 but likelihood decreases with additional mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 are supported by pathway analysis (Figure 5C) showing mutation order probabilities. The analysis is consistent with the structural and kinetics data. The finding about Y35N (C122) is consistent with its context-dependent effects shown in other results. The pathway analysis methodology is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "I-2 is not the most likely 3-mutation intermediate when considering all possible pathways, suggesting CH65 evolution was not contingent on passing through I-2. However, I-2 likelihood is ~55% higher than expected by chance, and the three I-2 mutations result in rapid improvements in affinity and breadth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 are supported by pathway analysis (Figure 5\u2014figure supplement 2). The finding that I-2 is not the most likely intermediate but is still favored over random expectation is clearly demonstrated. The conclusion (C125) appropriately balances the multiple accessible paths with the advantages of the I-2 route.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "This is the first comprehensive study of inter-chain epistasis in antibodies, showing that epistasis in CH65 is widespread within and between heavy and light chains, with mutations differentially impacting affinity depending on other mutations even when too distant to physically interact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C126-C128 are supported by the comprehensive combinatorial library data showing widespread inter-chain epistasis. The novelty claim (C8, C128) is reasonable given the scope of the study compared to prior work cited (C31, C56). The finding of long-range epistasis (C87) distinguishes this from prior heavy-chain-only studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C61",
+      "C145",
+      "C159",
+      "C160"
+    ],
+    "result": "Together with previous work on anti-stem bnAbs, epistasis is implicated as a general feature of antibody sequence-affinity landscapes that can potentiate and constrain the evolution of breadth. Hierarchical sequence-affinity landscapes may be common and are not unique to CR9114, anti-stem bnAbs, or bnAbs engaging distinct HA subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C61, C145, C159, C160 draw general conclusions by integrating current results with prior work (C33-C37). The conclusion about epistasis as a general feature is supported by observing similar patterns in different antibody classes (RBS vs stem-targeting). However, the generality claim (C145) is somewhat speculative as it is based on only two antibody systems. Additional examples would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The UCA has weak affinity for MA90 but does not bind MA90-G189E or SI06. I-2 has improved affinity to MA90, weak affinity to MA90-G189E, and does not bind SI06. CH65 has near maximal affinity for all three antigens. The entire library binds MA90, ~83% bind MA90-G189E, and ~51% bind SI06.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 describe the binding characteristics of key variants and the library as a whole. These are well-supported by Tite-Seq data (Figure 1B-C) and are consistent with prior work (citations in C64-C65). The measurements are validated by isogenic controls and BLI measurements (Figure 1\u2014figure supplement 3).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Several mutations improve affinity to MA90 and MA90-G189E (Y35N, Y48C, D49Y (VL) and G31D, Y33H, H35N, N52H (VH)), with some improving affinity on UCA/I-2 backgrounds and others on CH65 background. N52H dramatically improves affinity to SI06. Mutational effects correlate between antigens but are more substantial for MA90-G189E and SI06 than MA90.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 describe mutational effects on affinity. These are supported by comprehensive data analysis (Figure 2A-B) showing effects on all genetic backgrounds. The multimodal distributions (C75) indicate epistasis. The correlation analysis (C79) is quantitative and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Specific mutations are enriched among binders for each antigen in a hierarchical pattern: Y35N, D49Y (VL) and Y33H, N52H (VH) for MA90; additional S29R (VL) and G31D, H35N, R87K (VH) for MA90-G189E; and additional N26D, Y48C, V98I (VL) and M34I, R85G (VH) for SI06. Y35N is depleted among SI06 binders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 describe mutation enrichment patterns. These are supported by frequency analysis (Figure 2C-D) with appropriate statistical thresholds (\u226555% frequency, p<0.05). The hierarchical pattern is clearly demonstrated. The depletion of Y35N among SI06 binders (C84) is consistent with its context-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The optimal order epistasis model is fourth-order for MA90 and fifth-order for MA90-G189E and SI06, determined by cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 describes the model selection approach. This is supported by appropriate cross-validation methodology. The choice of model order balances complexity and predictive power. The approach is statistically sound and prevents overfitting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Mutations with strong first-order and epistatic effects often make contact with HA or HCDR3 that engages the RBS, suggesting effects are mediated through HA contacts or affecting HCDR3 loop conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by structural analysis (Figure 3B, Figure 3\u2014figure supplement 5) showing contact surface areas. The inference about mechanism (C89) is reasonable given the structural data, though it remains somewhat speculative about the precise mechanisms for all mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Q1E and S75A mutations in VH do not significantly impact binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by isogenic measurements (Figure 1\u2014figure supplement 1) showing no significant difference in affinity with or without these mutations. This validates the library design decision to exclude these mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The maturation of antibodies engaging antigen with both chains may be distinct from those that do not, as there are more opportunities for epistatic interactions across two chains. Understanding inter-chain epistasis may be useful for designing therapeutic antibodies and eliciting broadly protective immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C131 are inferences about the implications of the findings. While the observation of widespread inter-chain epistasis is well-supported, the claims about distinctness (C129) and utility (C131) are speculative. More comparative data from antibodies with different chain engagement patterns would be needed to support these broader claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Epistasis conferring broad reactivity in CH65 is mediated through mutations that both interact and do not interact with HA. Epistatic mutations add or remove interactions between CDRs, FWRs, and chains through different mechanisms. Y35N removes LFWR2-HCDR3 interactions at the VH-VL interface and mediates affinity improvement by increasing association rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 summarize structural and mechanistic findings. These are supported by structural analysis (Figure 4E) and kinetics data. The mechanisms are well-characterized for the specific mutations studied. The summary appropriately captures the diversity of epistatic mechanisms observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "An analogous observation of VH-VL interface mutations associated with HCDR3 reconfiguration was noted for anti-HIV bnAb CH103. Antibodies can evolve to bind viral escape variants by modulating the VH-VL interface and HCDR3 configuration in response to both chronic (HIV) and punctuated (influenza) exposures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 cite prior work on CH103. Claim C137 draws a general conclusion about antibody evolution based on two examples (CH65 and CH103). While the parallel is interesting, the generality claim requires more examples across different antibody-virus systems. The authors appropriately note that additional work is needed (C137).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "Y35N may function to initially increase flexibility, enabling acquisition of affinity to SI06 after acquiring heavy chain mutations, with subsequent maturation rigidifying HCDR3. This is reminiscent of molecular dynamics studies of anti-HIV bnAbs suggesting initial flexibility increases may enable sampling additional conformational space prior to rigidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C139 are speculative hypotheses about the temporal dynamics of HCDR3 flexibility during affinity maturation. While consistent with the data showing Y35N is beneficial early but detrimental later, direct evidence for the flexibility mechanism is limited. The comparison to HIV bnAbs (C139) is suggestive but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "I-2 mutations may compensate for the G189E mutation by stabilizing interactions with HA opposite this site, potentially allowing the antibody to shift to relieve the clash. These mutations help stabilize binding to SI06 but do not sufficiently compensate for loss of HCDR3-RBS contacts; further mutations Y35N and H35N influencing HCDR3 conformations are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 propose mechanisms for how mutations compensate for antigenic changes. C141 is somewhat speculative about the compensation mechanism but is supported by structural analysis and comparison to prior work. C142 is better supported by the data showing I-2 alone is insufficient for SI06 binding and additional mutations are required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "The hierarchical landscape of CH65 is not as striking as CR9114, where larger sets of mutations are required for more divergent antigens. However, hierarchical sequence-affinity landscapes may be common as they are not unique to CR9114, anti-stem bnAbs, or bnAbs engaging distinct HA subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C144 appropriately compares CH65 to CR9114. Claim C145 extrapolates to suggest hierarchical landscapes may be common, but this is based on only two examples. While the observation is important, claiming this is a common feature requires more examples across different antibody classes and viral targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "If hierarchical sequence-affinity landscapes are common among bnAbs, they may contribute to low frequencies of bnAbs in human repertoires. For bnAbs with hierarchical landscapes, epistatically interacting mutations are required to bind a given antigen, with additional epistatic mutations required for distinct antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C147 are speculative about the implications of hierarchical landscapes for bnAb frequencies. While the logic is sound, the hypothesis (C146) requires additional evidence about the rarity of the required epistatic mutation combinations and how this relates to observed bnAb frequencies in human repertoires.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C148",
+      "C149"
+    ],
+    "result": "The landscapes measured focus exclusively on mutations present in affinity-matured antibodies, which are biased by selection pressures. While these landscapes show diverse bnAbs can mature by acquiring hierarchical epistatic mutations favored in sequential exposure regimens, alternative non-hierarchical pathways to breadth may exist and be favored in other exposure regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 appropriately acknowledge limitations of the study. The recognition that the library is biased toward observed mutations (C148) is important. The speculation about alternative pathways (C149) is reasonable and appropriately cautious. This demonstrates good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The observation that antibodies can evolve breadth through hierarchical mutational landscapes supports vaccination with sequential doses of distinct antigens. This is consistent with recent work showing memory B cell recruitment to secondary germinal centers upon vaccination. Sequential exposures with antigenically drifted strains may help elicit within-subtype potent bnAbs like CH65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 draw implications for vaccination strategies. The inference (C150) is reasonable given the pathway analysis results. The consistency with prior work (C151) strengthens the conclusion. The suggestion about sequential exposures (C152) is appropriately framed as a possibility rather than a certainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "Theoretical and computational models of bnAb affinity maturation favor sequential immunization strategies allowing antibodies to acquire mutations for one antigen before experiencing selection for another, producing bnAbs focused on conserved epitopes. This focusing process may occur by favoring selection on hierarchical sets of epistatically interacting mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 connect the findings to prior theoretical work. The citation to multiple models (C153) supports the consistency with theoretical predictions. The inference about the mechanism of focusing (C154) is reasonable given the data, though it remains somewhat speculative about the precise in vivo dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C155"
+    ],
+    "result": "While hierarchical epistasis favors acquisition of breadth to specific antigens, antagonistic epistasis between these mutations and new mutations could prevent acquisition of breadth to other antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C155 is a speculation about potential constraints from antagonistic epistasis. While this is a reasonable hypothesis given the observed epistasis, there is no direct evidence in the current study for antagonistic epistasis preventing breadth to other antigens. This would require testing additional antigens not included in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Both CH65 and CR9114 have higher affinity to strains most like the inferred original immunogenic stimulus and weaker affinity to more divergent strains, consistent with immunological imprinting. The CH65 lineage can evolve breadth compensating for viral escape mutations, but affinities are lower for more antigenically distant strains, suggesting a trade-off between breadth and affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 are supported by the affinity data and citations to prior work. The observation about affinity gradients (C156) is consistent with the data. The connection to immunological imprinting (C157) is supported by citation. The inference about breadth-affinity trade-offs (C158) is reasonable given the observed affinity patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Additional combinatorial antibody libraries will advance understanding of how pervasive these features are. To understand why particular bnAbs are observed, we need to explore unobserved sequence space and assess other properties impacting antibody selection (stability, folding, polyreactivity). Integrating combinatorial approaches with deep mutational scanning and high-throughput methods for other properties will provide a comprehensive view of factors constraining and potentiating antibody evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C164 outline future research directions. These are reasonable suggestions for extending the work. The recognition of limitations (need to explore unobserved sequence space, assess other properties) demonstrates appropriate scientific caution. The proposed integration of methods (C164) is a logical next step.",
+    "result_type": "MINOR"
+  }
+]

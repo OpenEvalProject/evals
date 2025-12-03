@@ -1,0 +1,1847 @@
+{
+  "submission": {
+    "id": "d570dc52-c2d3-4802-bfa8-7efa73445b4e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:59:35.325956Z",
+    "updated_at": "2025-12-03T07:59:35.325956Z"
+  },
+  "content": [
+    {
+      "id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "submission_id": "d570dc52-c2d3-4802-bfa8-7efa73445b4e",
+      "content_type": "manuscript",
+      "content_text": "# 3D cell neighbour dynamics in growing pseudostratified epithelia\n\n## Authors\n\n- Harold Fernando G\u00f3mez<sup>1</sup> ([ORCID: 0000-0001-5200-4933](https://orcid.org/0000-0001-5200-4933))\n- Mathilde Sabine Dumond<sup>1</sup>\n- Leonie Hodel<sup>1</sup> ([ORCID: 0000-0002-2541-4133](https://orcid.org/0000-0002-2541-4133))\n- Roman Vetter<sup>1</sup> ([ORCID: 0000-0003-2901-7036](https://orcid.org/0000-0003-2901-7036))\n- Dagmar Iber<sup>1</sup> ([ORCID: 0000-0001-8051-1035](https://orcid.org/0000-0001-8051-1035)) \u2020\n\n### Affiliations\n\n1. Department of Biosystems Science and Engineering (D-BSSE), ETH Z\u00fcrich Basel Switzerland\n2. Swiss Institute of Bioinformatics (SIB) Basel Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring morphogenesis, epithelial sheets remodel into complex geometries. How cells dynamically organise their contact with neighbouring cells in these tightly packed tissues is poorly understood. We have used light-sheet microscopy of growing mouse embryonic lung explants, three-dimensional cell segmentation, and physical theory to unravel the principles behind 3D cell organisation in growing pseudostratified epithelia. We find that cells have highly irregular 3D shapes and exhibit numerous neighbour intercalations along the apical-basal axis as well as over time. Despite the fluidic nature, the cell packing configurations follow fundamental relationships previously described for apical epithelial layers, that is, Euler's polyhedron formula, Lewis\u2019 law, and Aboav-Weaire's law, at all times and across the entire tissue thickness. This arrangement minimises the lateral cell-cell surface energy for a given cross-sectional area variability, generated primarily by the distribution and movement of nuclei. We conclude that the complex 3D cell organisation in growing epithelia emerges from simple physical principles.\n\n## Introduction\n\nCommon to all animals and plants, epithelia are a fundamental tissue type whose expansion, budding, branching, and folding is key to the morphogenesis of organs and body cavities. Characterised by apical-basal polarity (Figure 1a), epithelial cells adhere tightly to their apical neighbours in a virtually impermeable adhesion belt, form lateral cell-cell junction complexes along the apico-basal axis to provide mechanical stabilisation, and bind tightly to the basal lamina and extracellular matrix (ECM) on the basal side (Drubin and Nelson, 1996; Rodriguez-Boulan and Macara, 2014; Shin and Margolis, 2006). How cell neighbour relationships are organised in these tightly adherent layers, and how these change during tissue and concomitant cell shape changes is poorly understood, despite their importance for cell-cell signalling and the fluidity of the tissue.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic representation of an epithelial tissue layer. The cells are polarised between an apical and a basal side. Near the apical side, cells adhere tightly via adhesion junctions (green). Nuclei are depicted in blue. (b) Apical surface projection of an embryonic lung bud at E12.5 imaged using light-sheet microscopy. Cell contour segmentations (left) coloured according to neighbour relationships (middle) and area quantifications (right). (c) Current shape representations of 3D epithelial cells: prism, frustum, prismatoid, and scutoid. (d) Planar cell neighbour exchange (T1 transition). (e) Tissues differ widely in the frequency of neighbour numbers. The legend provides the measured average number of cell neighbours for each tissue and the references to the primary data (Classen et al., 2005; Escudero et al., 2011; Etournay et al., 2015; Farhadifar et al., 2007; Gibson et al., 2006; Heller et al., 2016; S\u00e1nchez-Guti\u00e9rrez et al., 2016). Data points for n < 3 were removed as they must present segmentation artefacts. (f) The measured average number of cell neighbours is close to the topological requirement ($n\u00af=6$) in all tissues; see panel e for the colour code. (g) Epithelial tissues follow the AW law (black line). The AW law formulates a relationship between the average number of neighbours, n, that a cell has and that its direct neighbours have, $m_{n}$. The product $m_{n}\u2219n$ can be determined by summing over all ni. (h) The relative average apical cell area, $A_{n}\u00af/A\u00af$, increases with the number of neighbours, n, and mostly follows the linear Lewis\u2019 law (Equation 2, black line), or the quadratic relationship (Equation 3, yellow line) in case of higher apical area variability. (i) The average internal angle by polygon type is close to that of a regular polygon, $\\theta_{n}=(n-2)/n\u2219180\u00b0$ (yellow lines). To form a contiguous lattice, the angles at each tricellular junction must add to 360\u00b0, and the resulting observed deviation in the angles follows the prediction (red line). (j) The average normalised side length by polygon type. (k) Observed fraction of hexagons versus area coefficient of variation (CV). The curves mark theoretical predictions when polygonal cell layers follow either the linear Lewis\u2019 law (Equation 2, black line) or the quadratic law (Equation 3, yellow line). The colour code in panels g-k is as in panel e, but data is available only for a subset of tissues. The abbreviations in panel (e) are as follows: cNT refers to the Chick neural tube epithelium, EYE to the Drosophila eye disc, dPE to the Drosophila peripodal membrane from the larval eye disc, dWL to the Drosophila larval wing disc, dWP to the Drosophila pre-pupal wing disc, dMWP to the Drosophila mutant wing pre-pupa with reduced expression of myosin II, dPW to the Drosophila pupal wing disc, and dMWL to the wing disc with gigas RNAi clones. TPx indicates subsequent but not further specified pupal time points.\n\nCell neighbour relationships can be most easily studied on epithelial surfaces, and the polygonal arrangements of apical surfaces (Figure 1b) have been meticulously analysed (Classen et al., 2005; Escudero et al., 2011; Etournay et al., 2015; Farhadifar et al., 2007; Gibson et al., 2006; G\u00f3mez-G\u00e1lvez et al., 2018; Heller et al., 2016; Kokic et al., 2019; Ramanathan et al., 2019; S\u00e1nchez-Guti\u00e9rrez et al., 2016). Widely considered to be a reliable proxy for three-dimensional (3D) cell shape, 3D epithelial cell shapes are often depicted as prisms with polygonal faces that retain the same neighbour relationships along the entire apico-basal axis (Figure 1c). Cells in curved epithelia are pictured as frustra, which have the same number of sides, but different apical and basal areas. If the curvature differs substantially along the principal axes, as is the case in epithelial tubes, neighbour relationships must change along the apical-basal axis. Prismatoids accommodate the neighbour change at the surface, while scutoids undergo the neighbour change somewhere along the apical-basal axis (Figure 1c,d; G\u00f3mez-G\u00e1lvez et al., 2018). However, even though the curvature is the same in both principal directions of spherically shaped epithelia, the neighbour relationships still differ between the apical and basal sides (G\u00f3mez-G\u00e1lvez et al., 2018), suggesting that effects other than curvature must determine the 3D neighbour arrangements of cells in epithelia.\n\nGiven the challenges in visualising 3D neighbour arrangements, most studies to date have focused on apical cell arrangements, and have revealed striking regularities. First, even though the frequencies of neighbour numbers differ widely between epithelial tissues (Figure 1e), cells have on average (close to) six neighbours (Classen et al., 2005; Escudero et al., 2011; Etournay et al., 2015; Farhadifar et al., 2007; Gibson et al., 2006; Heller et al., 2016; Kokic et al., 2019; Ramanathan et al., 2019; S\u00e1nchez-Guti\u00e9rrez et al., 2016; Figure 1f). This can be explained with topological constraints in contiguous polygonal lattices, as expressed by Euler's polyhedron\u00a0formula (Gibson et al., 2006; Rivier and Lissowski, 1982). Thus, if three cells meet at each vertex, the average number of neighbours in infinitely large contiguous polygonal lattices is exactly\n\n$$\nn\u00af=6.\n$$\n\nWhile the average number of neighbours in the entire lattice is (close to) six, the local averages deviate from six, and instead rather closely follow a phenomenological relationship, termed Aboav-Weaire's law (Aboav, 1970). According to Aboav-Weaire's law (Figure 1g), the average number of neighbours of all n cells that border a cell with n neighbours follows as\n\n$$\nm(n)=5+\\frac{8}{n}.\n$$\n\nFinally, the average apical area, $A_{n}\u00af$, of cells with n neighbours is linearly related to the number of cell neighbours, n (Figure 1h, black line), a relation termed Lewis\u2019 law (Lewis, 1928),\n\n$$\n\\frac{A_{n}\u00af}{A\u00af}=\\frac{(n\u22122)}{4}.\n$$\n\nHere, $A\u00af$ refers to the average apical cell area in the tissue.\n\nWe have recently shown that Aboav-Weaire's law and Lewis\u2019 law are a direct consequence of a minimisation of the lateral cell-cell contact surface energy (Kokic et al., 2019; Vetter et al., 2019). The lowest lateral cell-cell contact surface energy is obtained in a regular polygonal lattice because regular polygons have the smallest perimeter per polygonal area. The distribution of apical cell sizes that emerges from cell growth and division is, however, such that epithelial tissues cannot organise into perfectly regular polygonal lattices. By adhering to Aboav-Weaire's law and Lewis\u2019 law, cells assume the most regular lattice. In particular, by following Aboav-Weaire's law, the internal angles are closest to that of a regular polygon, while adding up to 360\u00b0 at each tricellular junction (Figure 1i; Vetter et al., 2019). And by following the relationship between polygon area and polygon type as stipulated by Lewis' law (Equation 2), the difference in side lengths, $S\u00af_{n}/S\u00af$, is minimised between cells (Figure 1j; Kokic et al., 2019). The side lengths would be equal (Figure 1j, yellow line), if cells followed a quadratic relation of the form\n\n$$\n\\frac{A_{n}}{A\u00af}=\\frac{n}{6}\u22c5\\frac{tan\u2061(\\frac{\\pi}{6})}{tan\u2061(\\frac{\\pi}{n})}\u223c(\\frac{n}{6})^{2}.\n$$\n\nThis quadratic relation (Figure 1h, yellow line), however, requires a larger area variability than is observed in most epithelia imaged to date. Accordingly, the predicted quadratic relation had not been previously reported, but could be confirmed experimentally by us by increasing the apical area variability (Kokic et al., 2019).\n\nGiven the relationship between apical area and neighbour numbers as stipulated by Equations 1,3,4, the apical area variability emerges as the key determinant of apical epithelial organisation, and the theory correctly predicts how the fraction of hexagons in the tissue depends on the apical area variability, as can be quantified by the coefficient of variation (CV = std/mean) (Figure 1k; Kokic et al., 2019). As such, active processes such as growth, cell division, cell death and extrusion, cell intercalation and apical constriction determine the variability of the apical areas and thus determine apical organisation indirectly. Taken together, the apical organisation of epithelia can be understood based on the principles of lateral cell-cell contact surface energy minimisation.\n\nIn this work, we leverage these theoretical insights along with light-sheet fluorescence microscopy to study 3D epithelial organisation, both in cleared and growing pseudostratified epithelia. We find that cells have complex 3D shapes with numerous neighbour transitions along their apical-basal axis as well as over time. We show that much as on the apical side, the variation of the cross-sectional areas along the apical-basal axis defines the epithelial organisation at all times and across the entire tissue thickness. The observed neighbour arrangement minimises the lateral cell-cell surface energy for a given cross-sectional area variability. The cross-sectional areas vary as a result of active cell processes, most prominently including interkinetic nuclear migration (IKNM). We conclude that the complex 3D cell organisation in growing epithelia emerges from simple physical principles.\n\n## Results\n\n### Apical and basal epithelial organisation\n\nWe started by exploring the apical and basal cellular organisation in epithelial tubes and buds (Figure 2a). To this end, we imaged CUBIC-cleared mouse embryonic (E12.5) lung rudiments from a ShhGC/+; ROSAmT/mG background using light-sheet microscopy, and segmented the fluorescent membrane boundaries of over 400 cells per dataset in 2.5D (Figure 2b, Figure 2\u2014figure supplement 2). The apical and basal surfaces are both curved and thus differ in their total areas, that\u00a0is, the total segmented apical area is about 5-fold smaller than the basal area (Figure 2b). We detected less than half as many cells on the apical side, and the mean cross-sectional cell area of apical cells is therefore on average only twofold smaller than that of basal cells, while the area variability, measured as area CV, is higher (Figure 2c). Notably, the frequencies of the different neighbour numbers are not identical on the apical and basal side (Figure 2d), suggesting that the neighbour relationships change along the apical-basal axis, both in the tube and tip datasets. This observation is consistent with previous reports (G\u00f3mez-G\u00e1lvez et al., 2018; Ramanathan et al., 2019; Rupprecht et al., 2017). The change in neighbour relationships has previously been attributed to a curvature effect in tubes, but the neighbour changes in spherical geometries cannot be explained with curvature alone, since prismatic cells fully accommodate the cell dilation from equal curvature changes in both directions (G\u00f3mez-G\u00e1lvez et al., 2018; Rupprecht et al., 2017), suggesting that mainly other effects determine epithelial organisation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig2-v2.jpg)\n\n**Figure 2.:** (a) Epithelium of E12.5 ShhGC/+; ROSAmT/mG mouse embryonic lung imaged using light-sheet microscopy. Scale bar 200 \u00b5m. Corresponding 2D sections are shown in Figure 2\u2014figure supplement 1, and Figure 2\u2014video 1. (b) Apical and basal 2.5D cell segmentation overlays on imaged tip and tube sections (dotted boxes in panel a). An illustration of the 2.5D segmentation workflow is presented in Figure 2\u2014figure supplement 2. Number of cells (N) and segmented surface areas (SA) are given. Cells are coloured using random labels. Scale bars 20 \u00b5m. (c) Normalised apical and basal cell area distributions in the tip (broken lines) and tube (solid lines) datasets. The colour code in panel c is reused in panels d-f. (d) Frequencies of neighbour numbers on the apical and basal sides in the tip and tube datasets. (e) The apical and basal layers follow the AW law (black line). SEM is smaller than symbols. (f) The normalised average cell area, $\\frac{A_{n}\u00af}{A\u00af}$, increases with the number of neighbours, n. The basal cells (green) follow Lewis\u2019 law (Equation 2, black line), while the apical cells (purple) follow the quadratic relationship (Equation 3, yellow line). SEM as error bars.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Dorsal and ventral cross-sections of an E12.5 lung tip and tube carrying the ShhGC/+; ROSAmT/mG reporter allele, marking the epithelial lineage. Tissue explants were optically cleared using CUBIC and imaged using light-sheet microscopy to achieve cellular resolution at all depths. Scale bars 20 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** MorphoGraphX segmentation workflow to extract cell segmentations along curved surface boundaries (2.5D) for a CUBIC-cleared murine E12.5 distal lung tip. The illustrated sample expressed the ShhGC/+; ROSAmT/mG reporter and was imaged using light-sheet microscopy. (a\u2013c) Correspond to the basal layer while (a\u2019\u2013c') correspond to the apical domain. (a, a\u2019) Deconvolved light-sheet microscopy 3D renderings showing the basal and apical surfaces. (b, b') Curved surfaces are isolated, meshed, and the adjacent fluorescent signal is projected. (c, c') Apical and basal domains are segmented (2.5D segmentations) and coloured by random label numbers. Scale bar 20 \u00b5m.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Protocol for advanced CUBIC (Clear, Unobstructed Brain/Body Imaging Cocktails and Computational analysis) of a murine lung rudiment (Susaki et al., 2015). Serial dilutions in reagent-1 and reagent-2 guarantee that morphology is not distorted and that optical transparency is achieved within 1 week with high reproducibility.\n\nSo how can we explain the difference in apical and basal epithelial organisation in both datasets? We have previously shown that the apical organisation emerges from the minimisation of the overall lateral cell-cell contact surface energy (Kokic et al., 2019; Vetter et al., 2019). Aboav-Weaire's law (Equation 2, Figure 1g) and the linear Lewis\u2019 law or the quadratic relationship (Equations 3,4, Figure 1h) emerge as global organisation laws from this physical constraint, and ensure that the angles are closest to that of a regular polygon (Figure 1i, yellow lines), and that the side lengths are the most equal (Figure 1j, yellow line). We now find that these hold not only for the apical, but also for the basal datasets (Figure 2e,f). Consistent with our theory, the apical layers, which have a larger area variability than the basal layers (Figure 2c), follow the quadratic law (yellow line) rather than the linear Lewis\u2019 law (black line).\n\nWe conclude that basal layers follow the same organisational principles as apical layers, such that their organisation can also be explained with a minimisation of the lateral cell-cell contact surface energy. Accordingly, the observed difference in overall neighbour relationships (Figure 2e,f) is a consequence of the difference in the cross-sectional area distributions (Figure 2c). So, why do the normalised area distributions differ between the apical and basal sides in both the tube segment and the bud, and how do they change along the apical-basal axis?\n\n### 3D organisation of epithelia\n\nTo explore the physical principles behind 3D epithelial cell organisation, we 3D segmented 140 cells from a tube segment and 59 cells from a bud segment in CUBIC-cleared, light-sheet imaged embryonic lung explants (Figure 3a, Figure 2\u2014figure supplement 1, Figure 2\u2014video 1, Figure 3\u2014videos 1\u20133). By interpolating between equally spaced sequential contour surfaces (every 1.66 \u00b5m in the tube and every 1.72 \u00b5m in the bud dataset) along the apical-basal axis, accurate volumetric reconstructions of cell morphology were obtained that allowed for the extraction of morphometric quantifications along the apical-basal axis. In both datasets, the 3D organisation of epithelial cells is highly complex, and cell neighbour relationships change continuously along the apical-basal axis (Figure 3b). As a result, cells are in direct physical contact not only with the cells that are neighbours on the apical side, but also with cells that appear two or even three cell diameters apart (Figure 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig3-v2.jpg)\n\n**Figure 3.:** (a) 3D iso-surfaces of segmented epithelial tip (N=59) and tube (N=140) cells from a ShhGC/+; ROSAmT/mG E12.5 mouse lung rudiment imaged using light-sheet microscopy. Morphometric quantifications of cell boundary segmentations along the apical-basal axis were used to study spatial T1 transitions. The 3D segmentation workflow is introduced in Figure 3\u2014figure supplement 1 and Figure 3\u2014videos 1\u20133 illustrate the rendered epithelial tip, tube and all segmented volumes. Scale bars 10 \u00b5m. (b) Frequency of neighbour numbers as quantified along the apical basal axis in the tip (solid lines) and tube (broken lines) datasets. (c) Extent of neighbour contacts (center cell in yellow and neighbours in blue) in 3D as viewed from the apical side. Scale bars 5 \u00b5m. (d) Probability distributions of the lateral T1 transitions for tip (total=169, mean=2.86, N=59) and trunk (total=746, mean=5.41, N=140) datasets are consistent with Poisson distributions. (e) Normalised apical-basal distribution of T1 transitions for all cells shows no apical-basal bias, except for fewer transitions close to the basal surface. (f). Schematic of a tubular epithelium with elliptic cross section. The analysed cells are located in the cusp (brown) of the tube, where the local tissue curvature is close to that of the minor ellipse vertex. Subpanel illustrates ellipse fitting to apical (purple) and basal (green) domain boundaries. Lighter outlines correspond to the most proximal segment of the tube in Figure 2b, while darker ones to the most distal section. (g) The predicted impact of a curvature effect on T1 transitions decreases with increasing cell neighbour numbers (blue line). The measured T1 transitions for different neighbour numbers do not support a curvature effect (dots, boxplots, and red line). Boxplots indicate the median, 25% and 75% percentiles of the data.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Segmentation workflow to extract cellular and nuclear 3D shapes from a CUBIC-cleared murine E12.5 lung tube. The specimen used expressed the ShhGC/+; ROSAmT/mG reporter and was immunostained for lamin B1 to both selectively label cell membranes and mark nuclear envelopes. Light-sheet microscopy was used. (a) Sequential contour surfaces are drawn to follow cell membrane and nuclear outlines on a number of planes along the apical-basal axis. By interpolating between contours, iso-surfaces accurately representing 3D shapes can be extracted. (b) Membrane and nuclear contour surface overlays at different tissue depths. (c) Extracted 3D cell, and (d) nuclear iso-surfaces (N=140) for developing mouse lung. Co-planar contours were used for morphometric quantifications. All scale bars 5 \u00b5m.\n\nRemarkably, we record up to 14 cell neighbour changes per cell in the tube and up to eight in the tip, between adjacent cross-sections along the apical-basal cell axis (Figure 3d). We will refer to these neighbour changes as lateral T1 transitions, or T1L. The mean relative apical-basal position for the lateral T1 transitions is 0.489\u00b10.020 (95% CI), and there is no clear apical or basal tendency, though fewer transitions are observed close to the basal surface (Figure 3e). The dispersion index, that\u00a0is, the ratio of the variance \u03c32 and the mean number \u00b5 of transitions per cell, which equals unity for a Poisson distribution, is close to unity for both samples (Figure 3d). The chi-squared test also confirms that the number of apical-basal T1 transitions per cell is Poisson-distributed (Figure 3d). A Poisson distribution models the probability of a number of independent random events occurring in a given interval at a constant average rate. The consistency with a Poisson distribution, therefore, suggests a stochastic basis to the 3D organisation of epithelial cells.\n\nThe large number of observed T1L transitions and their distribution along the apical-basal axis challenges the recently popularised notion of curvature-driven scutoids as cell building blocks for epithelia (G\u00f3mez-G\u00e1lvez et al., 2018). To further examine the potential influence of tissue curvature on T1L transitions, we measured the apical-basal distance between two consecutive neighbour number changes for each cell in the tube dataset and recorded at which local tissue curvature they occur. For this analysis, we excluded ce ll portions from the apical end to the first transition and from the last transition to the basal end to reduce boundary effects, that\u00a0is, only interior segments between transitions were considered. The mean apical-basal distance between two transitions is 17.89 \u00b1 0.66 \u00b5m (95% CI). Local tissue curvature was approximated by fitting ellipses to the apical and basal surface boundaries of the tubular epithelium in 624 equidistant sections perpendicular to the main tube axis. (Figure 3f). Epithelial tubes in the developing lung are often collapsed (Conrad et al., 2021), making their apical and basal surfaces nearly elliptic in shape. The semi-axes of the fitted ellipses were then averaged over all sections to obtain the semi-axes aapical, abasal, bapical, bbasal. Since our sample of 140 cells was segmented from a region close to the cusp of the nearly elliptical tube, a reasonably close estimate of the local tissue curvature where a T1L transition occurs is given by a linear interpolation between the curvature at the minor vertices of the apical and basal ellipses, according to the relative apical-basal position of the transition. The minor curvature of an ellipse with major and minor semi-axes a and b is given by b/a2. Therefore, we estimate the local radius of curvature R by\n\n$$\nRx=\\frac{(a_{apical}+x(a_{basal}-a_{apical}))^{2}}{b_{apical}+x(b_{basal}-b_{apical})}\n$$\n\nwhere x\u2208[0,1] is the relative apical-basal location of the T1L transition. The examined tissue exhibits an average curvature fold change of R(1)/R(0)=2.21 from the basal to the apical side. Denoting by R1 and R2 the radii of curvature between two adjacent T1 transitions along the apical-basal axis of a cell, we find that the distribution of curvature fold change R2/R1 shows no significant dependency on the number of neighbours n the cell has along that portion of the cell (Figure 3g). The mean curvature fold change per apical-basal T1L transition per cell is <R2/R1> = 1.142 \u00b1 0.010 (95% CI). By extending the theory of scutoids (G\u00f3mez-G\u00e1lvez et al., 2018) to multiple T1L transitions per cell, we have derived a quantitative estimate of how tissue curvature would translate into the number of neighbour exchanges within that framework (Supplementary Material). If curvature changes were a main driver of T1L transitions, cells with smaller neighbour numbers n would be expected to change n over a much larger curvature fold change than cells with many neighbours (Figure 3g, blue line). However, we observe no systematic dependency of the curvature fold change on the number of neighbours the cell has along that portion of the cell in the developing mouse lung epithelium (Figure 3g). From this, we conclude that tissue curvature affects cell neighbourhood rearrangements through the tissue thickness at most mildly.\n\n### Neighbour changes along the apical-basal axis are driven by changes in cross-sectional area variation\n\nOther than curvature effects, what else could drive the observed changes in neighbour relationships along the apical-basal axis? We notice that much as the apical and basal layers, each layer along the apical-basal axis behaves according to the three relationships previously described for the apical side, that\u00a0is, Euler's polyhedron\u00a0formula (Equation 1, Figure 4a), Aboav-Weaire's law (Equation 2, Figure 4b), and Lewis\u2019 law (Equations 3, 4, Figure 4c). As predicted by the theory based on the minimisation of the lateral cell-cell energy (Kokic et al., 2019), the layers with a large area variability (Figure 4a) follow the quadratic law (yellow line) and those with a lower area variability the linear Lewis\u2019 law (black line). The fraction of hexagons also follows the predicted relationship with the cross-sectional area variability (Figure 4d). We conclude that the neighbour relationships of epithelial cells along the entire apical-basal axis can be explained with a minimisation of the lateral cell-cell contact surface energy, as previously revealed for the apical layer.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig4-v2.jpg)\n\n**Figure 4.:** (a) Average number of neighbours (black) and area CV (blue) along the apical basal axis in the tip and tube datasets. (b) All epithelial layers follow the AW law (black line). The colour code in panels c, d follow that in panel b. (c) All epithelial layers follow Lewis\u2019 law (Equation 2, black line) in case of low, and the quadratic relationship (Equation 3, yellow line) in case of high cell area variability. (d) Observed fraction of hexagons versus area CV for segmented cell layers along the apical-basal axis. The lines mark the theoretical prediction if polygonal cell layers follow either the linear Lewis\u2019 law (black line) or the quadratic law (yellow line). (e) 3D iso-surfaces of four segmented epithelial cells in a CUBIC-cleared ShhGC/+; ROSAmT/mG E12.5 distal lung tube, with 140 3D segmented epithelial cells (Figure 3\u2014figure supplement 1c). (f) Cross-sectional area and cell neighbour number along the apical-basal axis for marked cells in panel e. Dotted lines indicate contact with one another. (g) Lateral cross-sections illustrating a T1 transition along the apical-basal axis (0.664 \u00b5m in-between frames). Scale bar 6 \u00b5m. (h) An increase in the cell cross-sectional area increases the frequency of a neighbour number increasing spatial T1 transitions, and vice versa. (i) Apical-basal distribution of spatial T1 transitions according to neighbour increase or decrease and cross-sectional area variation.\n\nIf epithelial cell neighbour relationships are indeed driven by a minimisation of the total lateral cell-cell contact surface energy then the T1L transitions along the apical-basal axes should be driven by changes in the cross-sectional area along the apical-basal axis. If we analyse four 3D segmented cells (Figure 4e) in detail, we indeed see how an increase in the cross-sectional area results in an increase in the neighbour number, and vice\u00a0versa (Figure 4f) via lateral T1 transitions (Figure 4g). As the cell neighbour arrangements represent global minima, the local analysis does, of course, not provide a perfect correlation. When we consider all 140 segmented cells in the tube segment with their 746 cell neighbour exchanges between adjacent cross-sections (Figure 3e), then we find that the frequency of T1L transitions along the apical-basal axis is indeed higher, the larger the increase in cross-sectional area, and vice versa (Figure 4h,i).\n\n### Changes in cross-sectional area as a result of interkinetic nuclear migration (IKNM)\n\nSo, what determines the cross-sectional cell areas in each layer? In pseudostratified epithelia, mitosis is restricted to the apical surface (Gundersen and Worman, 2013). Depending on the average diameter of nuclei and the average apical cross-sectional area, there is insufficient space for all nuclei to be accommodated apically. Therefore, as a cell exits mitosis, the nucleus moves from the apical towards the basal side (G1 and S phase) and then back to the apical side (G2 phase) to undergo another round of mitosis, a process referred to as interkinetic nuclear migration (IKNM) (Meyer et al., 2011). Consequently, nuclei are distributed along the entire apical-basal axis, giving the tissue a pseudostratified configuration (Norden, 2017). We wondered to what extent the nuclear distribution, and its effect on the 3D cell shape, explains the observed area distributions and lateral T1 transitions.\n\nTo this end, we stained the nuclear envelope with fluorescently tagged antibodies against lamin B1 (Figure 5a, Figure 5\u2014figure supplement 1), and 3D segmented all nuclei within epithelial cells in a tube segment (Figure 5b, Figure 3\u2014figure supplement 1, Figure 3\u2014video 2). The nuclei were distributed along the entire apical-basal axis (Figure 5c), and consistent with the pseudostratified appearance of the epithelium, nuclei in neighbouring cells had different positions along the apical-basal axis (Figure 5b). The nuclear shapes, volumes, and cross-sectional areas (Figure 5d\u2013f) all varied along the apical-basal axis. As expected, nuclei are largest and most spherical at the apical side, where they undergo mitosis (Figure 5d). Thus, a one-sided, two-sample Welch t-test revealed a significantly reduced ellipticity of nuclei located in the first 25% of the apical-basal axis compared to those in the middle 50% (p=0.0002). The nuclear volumes are on average about 50% smaller than the cell volumes and largely correlate (r = 0.79, Figure 5f), likely reflecting parallel expansion during the cell cycle. Where present, the nuclear cross-sectional areas are only slightly smaller than those of the entire cell, and the cross-sectional areas of the cell and the nucleus are strongly correlated (r = 0.94, Figure 5g). The strong correlation can be accounted for by the opposing actions of cells and nuclei in the columnar epithelium. The nuclear volumes are too large to allow for a spherical nucleus to fit into a cylindrical cell of the measured height (Figure 5h). Accordingly, to fit into the cell, the nucleus necessarily has to deform. Nuclei respond to external forces with anisotropic shape changes (Haase et al., 2016; Neelam et al., 2016), which is consistent with the elliptical nuclear shapes that we observe (Figure 5d). However, there is a limit to how much the stiff nucleus can deform (Lammerding, 2011; Shah et al., 2021), resulting in a local widening of the cell where the nucleus is present. Cell sections without nucleus typically have smaller cross-sectional areas, thereby leading to a higher frequency of small cross-sections in cells compared to nuclei. Accordingly, as previously seen for the cell cross-sectional areas, the observed changes in cell neighbour numbers correlates with the observed changes in nuclear cross-sectional areas (Figure 5i) such that most T1L transitions occur where the nucleus starts and ends (Figure 5j).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig5-v2.jpg)\n\n**Figure 5.:** (a) Light-sheet microscopy longitudinal sections of an E12.5 CUBIC-cleared lung tube carrying the ShhGC/+; ROSAmT/mG reporter allele (green epithelium) and immunostained for lamin B1 (blue nuclear envelopes). Morphometric quantifications of 3D iso-surfaces (N=140) and cell segmentations along the apical-basal axis were used to study the nature of cross-sectional area variation and the effect of IKNM (Figure 3\u2014figure supplement 1). Scale bar 20 \u00b5m. (b) Sequential cell membrane contour surfaces and nuclear iso-surfaces for six epithelial cells. By interpolating between contours and creating iso-surfaces, 3D shapes can be accurately extracted (Figure 3\u2014video 2 and Figure 5\u2014video 1). Scale bar 7 \u00b5m. (c) Distribution of nuclei center of mass along the apical-basal axis. (d) Nuclear ellipticity and volume distributions along the apical-basal axis. (e) Average cross-sectional area distribution along the apical-basal axis for all cells (black) and nuclei (blue). (f). Nuclear and cellular volumes of 140 segmented cells are correlated (r=0.79). Line of best fit in red. (g). The cell and corresponding nuclear cross-sectional areas along the apical-basal axis are highly correlated (r=0.94). (h). Diameters of nuclei and cells based on the measured nuclear and cell volumes if nuclei were perfect spheres, and cells were perfect cylinders of the measured height. Given the larger nuclear diameter, nuclei must deform in order to fit within cells. (i) An increase in the nuclear cross-sectional area increases the frequency of a neighbour-number-increasing spatial T1 transitions, and vice versa. (j) The largest number of changes in neighbour relationships occur at the apical and basal limits of the nucleus for all cells, where cross-sectional areas change sharply.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Volumetric renderings and orthogonal projections obtained from light-sheet microscopy for an E12.5 embryonic lung. The above specimen carried the ShhGC/+;ROSAmT/mG to mark (a) epithelial cell membranes and was (b) immunostained for lamin B1 to mark nuclear envelopes. (c) Merged fluorescent signal. Scale bar 20 \u00b5m.\n\nWe conclude that the positions of nuclei can explain much of the observed variability in the cross-sectional cell areas. During the cell cycle, nuclei migrate, and the cell volumes first increase, and subsequently halve due to cell division. As all these processes affect the cross-sectional areas of the cells along the apical-basal axis, one would expect continuous spatial-temporal T1L transitions in growing pseudostratified epithelia.\n\n### 3D cell organisation in growing epithelia\n\nTo follow 3D cellular dynamics during epithelial growth and deformation, we cultured embryonic lungs from a ShhGC/+; ROSAmT/mG background and imaged every 20 min for a total of 10 hr using light-sheet microscopy (Figure 6\u2014video 1). We used a subset of this dataset (11 time points, >3 hr) (Figure 6\u2014video 2) to 2.5D segment the apical and basal surfaces, and to explore 3D cell shape dynamics and neighbour relationships in a growing lung bud (Figure 6a, Figure 6\u2014video 3).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig6-v2.jpg)\n\n**Figure 6.:** (a) Timelapse light-sheet microscopy series of a cultured mouse E12.5 distal lung bud expressing the ShhGC/+; ROSAmT/mG reporter (green epithelium, and red mesenchyme), imaged every 20 min (11 time steps). The white inset denotes the morphology of the lung bud, while the dotted area denotes the segmented cell patch. Corresponding visual provided in Figure 6\u2014video 1. Cells on both the apical and basal domains were 2.5D segmented, and their morphology quantified. Corresponding visual provided in Figure 6\u2014video 3. Scale bars 20 \u00b5m. (b) Cell neighbour frequencies for the apical and basal layers over time. (c) Observed average neighbour number and area coefficient of variation (CV) for the apical and basal layers over time. (d) Growing apical and basal layers follow the AW law (black line). Colour code applies to e-f. (e) The relative average apical and basal cell areas are linearly related to the number of neighbours (in all time points) and follow Lewis\u2019 law (black line), or the quadratic relationship in the case of higher area variability (yellow line). (f) Observed fraction of hexagons versus area coefficient of variation (CV) on the apical and basal layers. The lines mark the theoretical prediction if polygonal cell layers follow either the linear Lewis\u2019 law (black line) or the quadratic law (yellow line).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Number of segmented cells and surface area for the apical and basal layers over time. (b) Average apical-basal length and epithelial volume over time. Tissue thickness was measured at five landmark regions along the growing bud.\n\nAs the explant was growing, we readjusted the 2.5D segmented region such that the segmented surface area and cell numbers remained roughly constant over time (Figure 6\u2014figure supplement 1a). Nonetheless, the segmented bud increased in volume as the thickness of the layer increased with time (Figure 6\u2014figure supplement 1b). Much as in the static dataset, the neighbour number distributions (Figure 6b), and variability of cross-sectional areas (Figure 6c) differ between the apical and basal cell layers in all time points. However, for all time points, both the apical and basal layers conformed to Euler's polyhedron\u00a0formula (Figure 6c), Aboav-Weaire's law (Figure 6d), and Lewis\u2019 law (Figure 6e). Furthermore, the fraction of hexagons also followed from the variability of the cross-sectional areas, as predicted by the theory (Figure 6f).\n\nWe next sought to analyse the 3D dynamics of segmented epithelial cells. As the tracking of packed cells in growing pseudostratified epithelia is challenging, we focused on a small patch with 15 cells in total (Figure 7a). Sequential contour surfaces were drawn to follow cell membrane outlines on several planes along the apical-basal axis and interpolated to reconstruct 3D morphology for each time point (Figure 7\u2014figure supplement 1, Figure 7\u2014video 1). All planar segmentations were then pooled into five groups along the apical-basal axis to enable morphometric analysis in different tissue regions. Over the time course, the volume of individual cells varied between roughly 400 and 800 \u00b5m3 (Figure 7b), and the apical-basal length varied between roughly 20 and 30 \u00b5m (Figure 7c). We note that all layers conform to Aboav-Weaire's law (Figure 7d) and Lewis\u2019 law (Figure 7e) in all time points. Moreover, consistent with our theory, the fraction of hexagons follows from the variability of the cross-sectional area, though more deviations are observed, given the small number of cells analysed (Figure 7f).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig7-v2.jpg)\n\n**Figure 7.:** (a) 3D segmentation of 15 epithelial cells from timelapse light-sheet microscopy imaging of a mouse E12.5 distal lung bud expressing the ShhGC/+; ROSAmT/mG reporter. The specimen was imaged every 20 min over 3 hr. Planar segmentations along the apical-basal axis were pooled into five groups to enable morphometric analysis in different tissue regions. A full timelapse panel is provided in Figure 7\u2014figure supplement 1 and Figure 7\u2014video 1. Scale bar 30 \u00b5m. (b) Epithelial cell volume, and (c) height over time (N=15). (d) Segmented cells in pooled layers along the apical-basal axis follow the AW law (black line) over time (left to right); see panel f for colour code. (e) The relative average cell area in each layer is linearly related to the number of neighbours for all time points (left to right) and follows Lewis\u2019 law (black line), or the quadratic relationship in the case of higher area variability (yellow line); see panel f for colour code. (f) Temporal dynamics of observed fraction of hexagons versus area coefficient of variation (CV) along the apical-basal axis. Dotted lines denote variation per time point. Solid lines mark the theoretical prediction if polygonal cell layers follow either the linear Lewis\u2019 law (black line) or the quadratic law (yellow line).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Timelapse segmentation of growing epithelial cells from a CUBIC-cleared mouse E12.5 lung tip over 180 min; iso-surfaces coloured by cell identifier. The specimen used expressed the ShhGC/+; ROSAmT/mG reporter and was imaged using light-sheet microscopy. Scale bar 30 \u00b5m.\n\nMuch as in the static dataset (Figures 3 and 4), we observe up to 14 neighbour number changes (T1L transitions) along the apical-basal axis (Figure 8a,b). The average number of T1L transitions is relatively constant over time (Figure 8b). The mean relative apical-basal position for T1L transitions is again roughly in the middle, but in this small dataset, we now observe more T1L transitions in the center of the cell than at the apical or basal boundaries (Figure 8c). By following a single cell over time, we can appreciate the dynamic cell shape changes, and how a change in the cross-sectional area correlates with a change in neighbour number (Figure 8d). The neighbour relationships are, of course, not determined by the local cell cross-section, but by the overall cross-sectional area distribution in that layer. Accordingly, the correlation between the cross-sectional area and the neighbour number is not perfect for a single cell. By considering a patch of cells, we can, however, see how those T1L transitions occur dynamically in developing tissues (Figure 8e).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/68135/elife-68135-fig8-v2.jpg)\n\n**Figure 8.:** (a) Apical, basal and lateral cross-sections from a light-sheet microscopy timelapse of a murine E12.5 distal lung bud expressing the ShhGC/+; ROSAmT/mG reporter. The specimen was imaged every 20 min over 3 hr. Cell membrane outlines illustrate fluid cell neighbour relationships along the apical-basal axis and over time. T1 transitions are marked with white stars; see panel e for cell colour code. Scale bar 14 \u00b5m. (b) Number of T1L transitions for all cells (N=15) over time. Diamonds represent the mean. Morphometric quantifications of planar segmentations along the apical-basal axis were used to examine T1L transition dynamics. (c) Spatial distribution along the apical-basal axis of T1L transitions for all cells and time points. (d) Temporal evolution of neighbour relationships along the apical-basal axis for a single cell. Schematic cell width corresponds to cross-sectional area. (e) (top row) 3D iso-surface segmentations of 15 epithelial cells. Scale bar 10 \u00b5m. (bottom row) Cross-sectional area and cell neighbour number along the apical-basal axis for a given cell (marked with a white star). Dotted lines indicate contact with a cell that was not segmented.\n\n## Discussion\n\nEpithelial tissues remodel into complex geometries during morphogenesis. We used light-sheet microscopy and 3D cell segmentation to unravel the physical principles that define the 3D cell neighbour relationships in pseudostratified epithelial tissues. Our analysis reveals that pseudostratified epithelial layers adopt a far more complex packing solution than previously anticipated: the 3D epithelial cell shapes are highly irregular, and cell neighbour relationships change multiple times along the apical-basal axis, with some cells having up to 14 changes in their neighbour contacts along their apical-basal axis (Figure 3a). Curvature effects can result in neighbour changes, but the data does not show the dependency on cell neighbour numbers that would be expected if curvature effects played a dominating role (Figure 3g). There is also no apical-basal bias (Figure 3e), and the prevalence of contact remodelling is randomly distributed (Figure 4i).\n\nEven though the neighbour relationships are uncorrelated between the apical and basal sides and appear random at first sight, they follow the same fundamental relationships that have previously been described for apical epithelial layers, that\u00a0is, Euler's polyhedron\u00a0formula, Lewis' law, and Aboav-Weaire's law across the entire tissue and at all times (Figures 2, 4, 6 and 7). This arrangement minimises the lateral cell-cell surface energy in each plane along the apical-basal axis, given the variability in the cell cross-sectional areas (Figure 1; Kokic et al., 2019; Vetter et al., 2019). Where present, the stiff nucleus determines the cell cross-sectional area, as is apparent from the strong correlation between the cell cross-sectional and the nuclear cross-sectional areas (Figure 5g). Accordingly, most changes in neighbour relationships occur at the apical and basal limits of the nucleus where cross-sectional areas change sharply (Figure 5i). As the nucleus moves along the apical-basal axis during the cell cycle, a process referred to as interkinetic nuclear migration (IKNM) (Meyer et al., 2011), cell neighbour relationships change continuously (Figure 8). We conclude that neighbour relationships in epithelia are fluidic, and the complex, dynamic 3D organisation of cells in growing epithelia follows simple physical principles.\n\nDefining the physical principles behind cell neighbour relationships is only the first step in unravelling the determinants of epithelial 3D cell shapes. The second key aspect is the cell volume distribution along the apical-basal axis, which gives rise to the cell cross-sectional area distribution, which then determines the cell neighbour relationships (Figure 5e). The overall cell volume is determined by cell growth and division, but its distribution along the apical-basal axis depends on the nuclear dynamics (Figure 5g), and the epithelial cell heights. We find that the nucleus occupies, on average, 55% of the cell volume in the embryonic lung epithelia. As the cell nuclei move along the apical-basal axis during the cell cycle (Meyer et al., 2011), the cytoplasm fills the remaining space between the apical and basal surfaces, likely in a way that minimises the total surface area of all cells. The determinants of the epithelial thickness, that\u00a0is, the distance between the apical and basal surfaces are still unknown, but signalling downstream of Fibroblastic Growth Factor (FGF), Sonic Hedgehog (SHH), Bone Morphogenetic Protein (BMP)/ transforming growth factor-beta (TGF-\u03b2), and WNT has been observed to affect cell height, presumably via an effect on cell tension and/or cell-cell adhesion (Gritli-Linde et al., 2002; Hirashima and Matsuda, 2021; Kadzik et al., 2014; Kondo and Hayashi, 2015; Widmann and Dahmann, 2009).\n\nCell-based modelling frameworks are heavily used to investigate epithelial processes and how they result in morphological changes such as tissue bending, folding, fusion, and anisotropic growth during morphogenesis (Fletcher et al., 2014; Tanaka, 2015). Our data confirms many underlying assumptions of cell-based modelling frameworks and provides quantitative data to calibrate parameters. Once calibrated to reproduce the here identified 3D cell shape distributions, such simulation frameworks will help to reveal the determinants of 3D cell shapes, and will be invaluable in providing insight into how local changes in cell growth, adhesion, tension, or in the basal lamina affect cell shapes locally and within the remaining epithelial layer.\n\nIn summary, this study offers a detailed view of 3D cell neighbour relationship dynamics and packing in growing epithelial tissues, and demonstrates that the 3D cell shapes are much more complex than previously anticipated, and that cell neighbour relationships are dynamic and change as result of cell growth and cell cycle-linked IKNM. The complex 3D cell neighbour relationships can nonetheless be understood based on simple physical principles. Although we recognize that tissue architecture is a multifactorial process, our work carries vast implications for the study of cell-cell signalling, epithelial cohesion, and energetic modelling of developing epithelial layers in both healthy and disease contexts.\n\n## Materials and methods\n\n### Ethical statement\n\nPermission to use animals was obtained from the veterinary office of the Canton Basel-Stadt (license number 2777/26711). Experimental procedures were performed in accordance with the Guide for the Care and Use of Laboratory Animals and approved by the Ethics Committee for Animal Care of ETH Zurich. All animals were housed at the D-BSSE/UniBasel facility under standard water, chow, enrichment, and 12 hr light/dark cycles.\n\n### Animals\n\nTo investigate 3D cellular dynamics during mouse embryonic lung development, we used mouse lung rudiments from animals homozygous for the Rosa26mTmG and heterozygous for the ShhGFP-Cre allele (ShhGFP-Cre/+; Rosa26mTmG). The double-fluorescent Shh-controlled Cre reporter mouse expresses membrane-targeted tandem dimer Tomato (mT) before CRE-mediated excision and membrane-targeted green fluorescent protein (mG) after excision (Muzumdar et al., 2007). As a result, only epithelial cell membranes are labelled by GFP, while all adjacent mesenchymal tissue is labelled by tdTomato.\n\n### Immunofluorescence\n\nE12.5 mouse lungs were fixated for 1 hr in 4% paraformaldehyde in PBS, and subsequently incubated with Lamin B1 (Thermo; Material No. 702972; 1:200) at 4\u00b0C for 3 days. As a structural component of the nuclear lamina, LaminB1 immunostaining makes crowded nuclei clearly distinguishable and easily segmentable. After washing in D-PBS, lungs were incubated with conjugated fluorescent secondary Alexa Fluor 555 donkey anti-mouse IgG (H+L) (Abcam; Material No. ab150106; 1:250) for 2 days at 4\u00b0C.\n\n### Optical clearing and lightsheet imaging\n\nOptical clearing of embryonic lung rudiments enabled the 3D segmentation of numerous epithelial cells from single image stacks. To this extent, the whole-mount clearing of dissected E12.5 lung explants was performed with the Clear Unobstructed Brain/Body Imaging Cocktails and Computational Analysis (CUBIC) protocol (Susaki et al., 2015; Figure 2\u2014figure supplement 3). Reagents for delipidation and refractive index (RI) matching were made as follows: CUBIC-1 [25% (w/w) urea, 25% ethylenediamine, 15% (w/w) Triton X-100 in distilled water], and CUBIC-2 [25% (w/w) urea, 50% (w/w) sucrose, 10% (w/w) nitrilotriethanol in distilled water], respectively. Following fixation and immunostaining, samples were incubated in 1/2 CUBIC-1 (CUBIC-1:H2O=1:1) for four days, and in 1X CUBIC-1 until they became transparent. All explants were subsequently washed several times in PBS and treated with 1/2 CUBIC-2 (CUBIC-2:PBS=1:1) for around four days. Lastly, incubation in 1X CUBIC-2 was done until the desired transparency was achieved. All solutions were changed daily, and CUBIC-1 steps were performed on a shaker at 37\u00b0C while CUBIC-2 steps at room temperature. Cleared samples were then embedded in 2% low melting point solid agarose cylinders and immersed in CUBIC-2 for two more days to increase the agarose refractive index. 3D image stacks were acquired on a Zeiss Lightsheet Z.1 microscope using a Zeiss 20x/1.0 clearing objective .\n\n### Timelapse light-sheet acquisitions\n\nLight-sheet acquisitions of live epithelial cell morphology enabled the study of 3D organisation dynamics. Following dissection in DPBS at room temperature, E12.5 lung explants were cultured in sterile Dulbecco's modified Eagle's medium w/o phenol red (DMEM) (Life Technologies Europe BV; 11039021) containing 10% Fetal Bovine Serum (FBS) (Sigma-Aldrich Chemie GmbH; F9665-500ML), 1% Glutamax (Life Technologies Europe BV; A1286001), and 1% penicillin/streptomycin (Life Technologies Europe BV; 10378\u2013016). All specimens were equilibrated at 37\u00b0C with 5% CO2 in a humidified incubator for 1 hr.\n\nFollowing a 1 hr equilibration period, 1.5% LMP hollow agarose cylinders were prepared (Udan et al., 2014). Hollow cylinders, in contrast to solid ones, accommodate unencumbered 3D embryonic growth, provide boundaries to minimise tissue drift, enable imaging from multiple orientations, and allow for better perfusion of gasses and nutrients. All specimens were suspended within each hollow cylinder in undiluted Matrigel (VWR International GmbH; 734\u20131101), an ECM\u2010based optically clear hydrogel that provided a near-native 3D environment and supported cell growth and survival. All cylinders were kept at 37\u00b0C with 5% CO2 in culture media for 1 hr before mounting.\n\nFor each overnight culture, the imaging chamber was prepared by sonication at 80\u00b0C, followed by ethanol and sterile PBS washes. After assembly, the chamber was filled with culture medium and allowed to equilibrate at 37\u00b0C with 5% CO2 for at least 2 hr before a cylinder containing an explant was mounted for imaging. Furthermore, to compensate for evaporation and to maintain a fresh culture media environment, two peristaltic pumps were installed to supply 0.4 mL and extract 0.2 mL of culture medium per hour. Each lung explant was then aligned with the focal plane within the center of a thin light-sheet to enable fine optical sectioning with optimal lateral resolution. For this study, all live imaging was done with a 20x/1.0 Plan-APO water immersion objective.\n\n### Image processing\n\nTo efficiently process the resulting volumetric CZI datasets (10s-100s of GBs), all image stacks were transferred to a storage server and subsequently processed in remote workstations (Intel Xeon CPU E5-2650 with 512 GB memory). Deconvolution via Huygens Professional v19.04 (Scientific Volume Imaging, The Netherlands, http://svi.nl) improved overall contrast and resolution while Fiji (ImageJ v1.52t) (Schindelin et al., 2012) aided in accentuating cell membranes, enhancing local contrast, removing background fluorescence, and TIFF conversion.\n\n### Cell morphometric quantifications\n\nCell morphology on the apical and basal membranes of embryonic lung epithelia was investigated using the open-source software platform MorphoGraphX (MGX) (Barbier de Reuille et al., 2015). By meshing the curved boundaries of input 3D image stacks and projecting nearby signal onto it, MGX builds a curved 2.5D image projection that is distortion-free, unlike planar 2D projections that ignore curvature. We then proceeded to use a suitable implementation of the Watershed transform to extract individual cell geometries, with minimal manual curation, and quantify properties such as surface area and the number of cell neighbours. All border cells were excluded. Apical and basal cell meshes were exported as text files and traversed using the R Programming Environment to extract the neighbour relationships between cells as needed to generate Aboav-Weaire plots (G\u00f3mez et al., 2021).\n\nTo render time-lapse datasets and extract 3D volumetric surface reconstructions of entire epithelial cells, we employed Imaris v9.1.2 (Bitplane, South Windsor, CT, USA). By computationally interpolating between cell membrane contour surfaces from successive transverse frames into iso-surfaces, faithful cell and nuclear 3D volumes were obtained. Quantified volumetric features included cell and nuclear volume, total surface area, sphericity, and nuclear position along the apical-basal axis. Imaris was also used to generate high-resolution videos, which, despite being strongly downsampled to accommodate vast time-lapse datasets, presented little noticeable loss in image quality. Furthermore, to extract cell areas and the number of neighbours along the apical-basal axis, transverse image frames were imported into ImageJ and processed using the interactive plugin TissueAnalyzer (Aigouy et al., 2016). Like this, cell segmentation masks across layers could be generated, and cell geometry and neighbour topology quantified (G\u00f3mez et al., 2021).\n",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "7f469854-76a8-4070-af78-7b2992f2b072",
+      "submission_id": "d570dc52-c2d3-4802-bfa8-7efa73445b4e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, Utrecht University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68135.sa1](https://doi.org/10.7554/eLife.68135.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nIn this study, the authors measured the three-dimensional organization within an epithelial cell monolayer and found that cell neighbors change frequently along the apicobasal axis. This work constitutes a significant investigation into the drivers of complex three-dimensional cell shapes and tissue structures and will be of interest to scientists studying tissue mechanics.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"3D Cell Neighbour Dynamics in Growing Pseudostratified Epithelia\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Matthias Merkel (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Claims that imply causation but are based on correlations need to be either substantiated further to justify causation or toned down. Reporting only correlations might not suffice for publication in eLife.\n\n2) Solve the issues spotted by Reviewer #3 in the theory presented in the SM (reviewer's point 4).\n\n3) Estimate uncertainties as requested by Reviewer #3, point 3.\n\n4) Respond to the recommendations for the authors.\n\nReviewer #1 (Recommendations for the authors):\n\nL 60: Eq. (2) is wrong and should read instead 5+8/n.\n\nFigure 1: I did not understand, why the authors reproduce the previously published data in Figure 1e-k. Figure 1d does not seem to be referred to in the text.\n\nFigure 2f: It is hard to distinguish between linear and quadratic dependences.\n\nFigure 3e: For tips there seems a clear bias for apical transitions. Could you comment on this?\n\nLl 165: I did not understand this part. Why do you fit ellipses and not circles? Why do you consider two subsequent T1L transitions/consecutive neighbor number changes and not one?\n\nL 211: This statement contradicts later statements that involve the nucleus. Also, here you really write about minimizing a line energy, whereas it should be a surface energy; the lateral and the apico-basal directions are not independent.\n\nL 233: What do you mean by \"pseudo-stratification\"? Where is it shown?\n\nLl 241+ Figure 5d: There seems to be only a very weak correlation between nuclear volume and ellipticity or position along the apico-basal axis.\n\nLl 244 + Figure 5f,g: Since the nuclei are inside the cell, could it be otherwise? Also, the correlation between cell and nuclear volume seems to be rather elevated. Is this correct?\n\nLl 246: But it could also be the other way around or some independent factor could determine both. I do not think that the consistency you notice has any explanatory power.\n\nFigure 6: Are the results based on one explant?\n\nL 317: \"Where present, the stiff nucleus determines the cell cross-sectional area, as is apparent from the strong correlation between the cell cross-sectional and the nuclear cross-sectional areas\" Correlations do not imply causation. I do not think that you have data to support the causal relationship.\n\nL 320: Again, this seems to be speculation. Figure 8 does not show the nucleus \u2013 and even if: from your the data it is not clear that the motion of the nucleus causes changes in the neighbor relationships.\n\nReviewer #2 (Recommendations for the authors):\n\nPage 4, line 73, \"following, Aboav-Weaire's law\": I suggest replacing this with \"following Aboav-Weaire's law\" (i.e. remove the comma).\n\nPage 4, lines 89-90, \"As such, growth and cell division determine the variability of the apical areas\" and lines 100-101, \"The cross-sectional areas vary as a result of cell growth, division and interkinetic nuclear migration (IKNM)\": Maybe I missed it, but can the authors discount any role(s) for 'active' cell intercalations and/or cell death here?\n\nPage 4, lines 97-98, \"the variation of [\u2026] define the\": I suggest replacing this with \"the variation of [\u2026] axis defines the\" (i.e. add an 's').\n\nPage 5, lines 112-113, \"We detected less than half as many cells on the apical side\": Just to be clear here, do the authors mean that they could only detect half as many cells on the apical side due to their small size and/or lower resolution, or that there are really half as many cells on the apical side and hence over half the cells don't extend fully from the basal side to the apical side?\n\nPage 5, lines 118-119, \"the neighbour changes in spherical geometries cannot be explained with such an effect (G\u00f3mez-G\u00e1lvez et al., 2018)\": For clarity, I suggest briefly emphasizing why not (I guess the point is that as one looks along the apical-basal axis in this case, one is just seeing a dilation, so prismatic cells do the job fine).\n\nPage 5, lines 127-130, \"Aboav-Weaire's law (Figure 2e) and Lewis' law (Figure 2f) hold not only for the apical, but also for the basal datasets [\u2026] the apical layers, which have a larger area variability than the basal layers (Figure 2c), follow the quadratic law (yellow line) rather than the linear Lewis' law (black line)\": I may simply have misunderstood things here, but the first sentence seems to indicate that Lewis' law holds for the apical dataset, while the second sentence seems to indicate that the apical layers follow the quadratic law rather than Lewis' law, which seems a contradiction. If I have indeed just misunderstood things here, then perhaps the authors could slightly rephrase these sentences for clarity.\n\nPage 7, lines 232-233, \"giving the tissue a pseudostratified configuration\": I suppose strictly speaking this is true of pseudostratified epithelia but not ALL epithelia, so it might be worth changing \"In epithelia\" to \"In many epithelia\" on line 227, or similar.\n\nPage 9 lines 335-336, \"signalling factors that control cellular tension are known to affect cell height (Widmann and Dahmann, 2009)\": For clarity, perhaps the authors could name these signalling factor(s) explicitly here?\n\nPage 16, Figure 1, panel (b): The chosen colour scheme makes it very difficult for me to tell the difference between 5, 6, 7 and 8 sided cells, since they're all shades of green. If possible, it would be great if the authors could use more contrasting colours.\n\nPage 16, Figure 1, panel (e): Can the authors briefly explain in the legend what the various abbreviations mean (cNT, EYE, dPE, dWL, dWP, dMWP, dPW, TP, dMWL), or at least broadly which different tissues/species are considered?\n\nPage 19, Figure 3, panel (b): I found this figure difficult to understand partly due to the colour scheme but also because the authors are plotting two datasets on the same image. If there is a way of simplifying this figure at all, that would be great.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 Citation of Rupprecht et al., MBoC, 2017 appears justified, as it is the first / one of the first papers to discuss apico-basal T1 transitions in epithelia based on experimental data.\n\n\u2013 Recommendations regarding point 3. in the public review:\n\na) Estimations of uncertainties (e.g. standard error of the mean) would be useful, e.g. in Figure 2 e,f. For instance, in Figure 2f, an indication for the stochastic uncertainty due to the finite sample size would be useful.\n\nb) Aboav-Weaire law: For instance in Figure 2e, everything is close to a diagonal line. However, that there is a line with slope of approximately 6 in the plots of m_n*n over n is already a consequence of the Euler characteristic. To better display the correlation that is the core of the Aboav-Weaire law, I would suggest to directly plot m_n over n (as also one e.g. in Aboav, 1970). Together with error bars indicating uncertainty, this would allow to better scrutinize whether the different data sets fulfill the prediction.\n\nc) Some plots have very similar colors and are therefore hard to distinguish, e.g. the quadratic theory curve vs the basal data in Figure 2f. Also, in Figures 4f and 8e, the polygon type (number of neighbors n) is essential, but the colors in particular for n>5 are very hard to distinguish.\n\n\u2013 Suggestions regarding point 4 of the public review (merely ideas):\n\na) As pointed out by G\u00f3mez-G\u00e1lvez et al., the curvature-based mechanism to create T1L transitions is due to a change in the aspect ratio of the 2D tissue cross section as one goes from apical to basal in an e.g. cylindrical tissue. One way to estimate the T1L rate that results from this might also be to use existing formalisms to understand how many T1 transitions are needed to create a certain change in 2D tissue aspect ratio (e.g. the texture tensor formalism, Graner et al., EPJE, 2008 and Guirao et al., eLife, 2015, or a triangle formalism, Merkel et al., PRE, 2017).\n\nb) An interesting question could be how oriented the T1L transitions are (\"How many of them do (net) contribute to the apico-basal change in 2D tissue aspect ratio?\"), which one could address using orientational statistics of the T1 transitions (i.e. how uniform is the T1L orientation angle in the unfolded cylinder mantle).\n\nc) Just a remark: I am happy to be convinced otherwise, but I would be surprised if one could indeed derive a dependence of the T1L transition number on cell neighbor number solely on geometric grounds (i.e. disregarding mechanics etc). This is because the curvature-based mechanism is about T1L transitions creating anisotropic deformation in the 2D cross section, while the cell neighbor number is a scalar (i.e. an \"isotropic\" quantity). I could be wrong here, but I would presume that any correlation between the two will depend on model details.\n",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a61b9cdb-dad2-4cb4-9a36-dfe4e788f4ec",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C1",
+      "claim": "Epithelial cells adhere tightly to their apical neighbours in a virtually impermeable adhesion belt.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterised by apical-basal polarity (Figure 1a), epithelial cells adhere tightly to their apical neighbours in a virtually impermeable adhesion belt, form lateral cell-cell junction complexes along the apico-basal axis to provide mechanical stabilisation, and bind tightly to the basal lamina and extracellular matrix (ECM) on the basal side (Drubin and Nelson, 1996; Rodriguez-Boulan and Macara, 2014; Shin and Margolis, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature (Drubin and Nelson, 1996; Rodriguez-Boulan and Macara, 2014; Shin and Margolis, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "b66e5706-045e-482a-8877-6849ce39ac0b",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C2",
+      "claim": "Epithelial cells form lateral cell-cell junction complexes along the apico-basal axis to provide mechanical stabilisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterised by apical-basal polarity (Figure 1a), epithelial cells adhere tightly to their apical neighbours in a virtually impermeable adhesion belt, form lateral cell-cell junction complexes along the apico-basal axis to provide mechanical stabilisation, and bind tightly to the basal lamina and extracellular matrix (ECM) on the basal side (Drubin and Nelson, 1996; Rodriguez-Boulan and Macara, 2014; Shin and Margolis, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature (Drubin and Nelson, 1996; Rodriguez-Boulan and Macara, 2014; Shin and Margolis, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "e8f419ec-9398-46eb-aa8d-69b0740212cb",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C3",
+      "claim": "Epithelial cells bind tightly to the basal lamina and extracellular matrix (ECM) on the basal side.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterised by apical-basal polarity (Figure 1a), epithelial cells adhere tightly to their apical neighbours in a virtually impermeable adhesion belt, form lateral cell-cell junction complexes along the apico-basal axis to provide mechanical stabilisation, and bind tightly to the basal lamina and extracellular matrix (ECM) on the basal side (Drubin and Nelson, 1996; Rodriguez-Boulan and Macara, 2014; Shin and Margolis, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature (Drubin and Nelson, 1996; Rodriguez-Boulan and Macara, 2014; Shin and Margolis, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "6d0fa638-b1c7-499e-9bf2-b93156a5d3f8",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C4",
+      "claim": "Cells have on average (close to) six neighbours in epithelial tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "First, even though the frequencies of neighbour numbers differ widely between epithelial tissues (Figure 1e), cells have on average (close to) six neighbours (Classen et al., 2005; Escudero et al., 2011; Etournay et al., 2015; Farhadifar et al., 2007; Gibson et al., 2006; Heller et al., 2016; Kokic et al., 2019; Ramanathan et al., 2019; S\u00e1nchez-Guti\u00e9rrez et al., 2016; Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple citations to prior literature and reference to Figure 1f showing data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "115269a8-edf7-4a67-85c9-aa37a7409969",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C8",
+      "claim": "Aboav-Weaire's law and Lewis' law are a direct consequence of a minimisation of the lateral cell-cell contact surface energy.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently shown that Aboav-Weaire's law and Lewis' law are a direct consequence of a minimisation of the lateral cell-cell contact surface energy (Kokic et al., 2019; Vetter et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to authors' prior work (Kokic et al., 2019; Vetter et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "733a50ce-b97b-4e2b-9dde-eea37983aafd",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C9",
+      "claim": "The lowest lateral cell-cell contact surface energy is obtained in a regular polygonal lattice because regular polygons have the smallest perimeter per polygonal area.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest lateral cell-cell contact surface energy is obtained in a regular polygonal lattice because regular polygons have the smallest perimeter per polygonal area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on geometric principles and physical reasoning.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "257addf7-451e-4fab-aa7e-9a2b465f7a1e",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C10",
+      "claim": "Cells in embryonic lung epithelia have highly irregular 3D shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cells have highly irregular 3D shapes and exhibit numerous neighbour intercalations along the apical-basal axis as well as over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study's observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "4214b243-54ff-4f51-a0f1-9af5e9a57262",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C11",
+      "claim": "Cells exhibit numerous neighbour intercalations along the apical-basal axis as well as over time.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cells have highly irregular 3D shapes and exhibit numerous neighbour intercalations along the apical-basal axis as well as over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study's observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "395e151c-f1d1-45d8-8063-a07626e9aea2",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C12",
+      "claim": "Cell packing configurations follow Euler's polyhedron formula at all times and across the entire tissue thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fluidic nature, the cell packing configurations follow fundamental relationships previously described for apical epithelial layers, that is, Euler's polyhedron formula, Lewis' law, and Aboav-Weaire's law, at all times and across the entire tissue thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study's observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "aaa5af70-0fa9-4700-9902-84904b33ab10",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C13",
+      "claim": "Cell packing configurations follow Lewis' law at all times and across the entire tissue thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fluidic nature, the cell packing configurations follow fundamental relationships previously described for apical epithelial layers, that is, Euler's polyhedron formula, Lewis' law, and Aboav-Weaire's law, at all times and across the entire tissue thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study's observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "3872655b-905f-474a-af98-e11cf0908149",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C14",
+      "claim": "Cell packing configurations follow Aboav-Weaire's law at all times and across the entire tissue thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fluidic nature, the cell packing configurations follow fundamental relationships previously described for apical epithelial layers, that is, Euler's polyhedron formula, Lewis' law, and Aboav-Weaire's law, at all times and across the entire tissue thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study's observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "f39d0c25-3c52-42bf-95be-b89abe9eda81",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C15",
+      "claim": "The cell arrangement minimises the lateral cell-cell surface energy for a given cross-sectional area variability.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement minimises the lateral cell-cell surface energy for a given cross-sectional area variability, generated primarily by the distribution and movement of nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's observations and theoretical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "ed02ae79-dcc3-4600-93b2-cff278dea76d",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C16",
+      "claim": "Cross-sectional area variability is generated primarily by the distribution and movement of nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement minimises the lateral cell-cell surface energy for a given cross-sectional area variability, generated primarily by the distribution and movement of nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "3f17c7f8-105d-4227-8b10-48fa9f86c82f",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C17",
+      "claim": "The complex 3D cell organisation in growing epithelia emerges from simple physical principles.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the complex 3D cell organisation in growing epithelia emerges from simple physical principles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the main conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "e20d2994-2c70-4259-a089-76d364ec8bf0",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C18",
+      "claim": "The total segmented apical area is about 5-fold smaller than the basal area in embryonic lung epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "The apical and basal surfaces are both curved and thus differ in their total areas, that is, the total segmented apical area is about 5-fold smaller than the basal area (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "c96c2a5d-9ef3-44bb-874a-c8dc461f3c02",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C19",
+      "claim": "Less than half as many cells are detected on the apical side compared to the basal side in embryonic lung epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected less than half as many cells on the apical side, and the mean cross-sectional cell area of apical cells is therefore on average only twofold smaller than that of basal cells, while the area variability, measured as area CV, is higher (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "cbca0ec4-674c-4743-8541-28305f884df0",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C20",
+      "claim": "The mean cross-sectional cell area of apical cells is on average only twofold smaller than that of basal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected less than half as many cells on the apical side, and the mean cross-sectional cell area of apical cells is therefore on average only twofold smaller than that of basal cells, while the area variability, measured as area CV, is higher (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "9dacd44e-9235-4683-92d4-88b5fddb1cb0",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C21",
+      "claim": "The area variability is higher on the apical side than the basal side.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected less than half as many cells on the apical side, and the mean cross-sectional cell area of apical cells is therefore on average only twofold smaller than that of basal cells, while the area variability, measured as area CV, is higher (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "5857ae15-1d08-449e-892d-6d60aa1f20d8",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C22",
+      "claim": "The frequencies of the different neighbour numbers are not identical on the apical and basal side.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the frequencies of the different neighbour numbers are not identical on the apical and basal side (Figure 2d), suggesting that the neighbour relationships change along the apical-basal axis, both in the tube and tip datasets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "a9a63de8-de3b-4851-9e81-adbc87dd2162",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C23",
+      "claim": "Neighbour relationships change along the apical-basal axis in both tube and tip datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the frequencies of the different neighbour numbers are not identical on the apical and basal side (Figure 2d), suggesting that the neighbour relationships change along the apical-basal axis, both in the tube and tip datasets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that neighbour number frequencies differ between apical and basal sides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "5ed838c6-6d38-4d0b-b1a3-79bce898c7b2",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C24",
+      "claim": "The apical and basal layers follow Aboav-Weaire's law.",
+      "claim_type": "EXPLICIT",
+      "source": "We now find that these hold not only for the apical, but also for the basal datasets (Figure 2e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the study's observations shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "4b290ab2-8a43-452e-b9d1-30e0acaf4de5",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C25",
+      "claim": "Apical layers with larger area variability follow the quadratic law rather than the linear Lewis' law.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our theory, the apical layers, which have a larger area variability than the basal layers (Figure 2c), follow the quadratic law (yellow line) rather than the linear Lewis' law (black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the study's observations shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "32f30af2-771a-43dc-8706-80b364934cef",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C26",
+      "claim": "Basal layers follow the same organisational principles as apical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that basal layers follow the same organisational principles as apical layers, such that their organisation can also be explained with a minimisation of the lateral cell-cell contact surface energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "ab31e946-e6b3-4451-8a2e-a6d319f4737e",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C27",
+      "claim": "The 3D organisation of epithelial cells is highly complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In both datasets, the 3D organisation of epithelial cells is highly complex, and cell neighbour relationships change continuously along the apical-basal axis (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "e28eeae9-2719-4994-a219-ecfac434aa3f",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C28",
+      "claim": "Cell neighbour relationships change continuously along the apical-basal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In both datasets, the 3D organisation of epithelial cells is highly complex, and cell neighbour relationships change continuously along the apical-basal axis (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "dae84d43-a63b-455f-afd3-f90f33c843de",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C29",
+      "claim": "Cells are in direct physical contact with cells that appear two or even three cell diameters apart on the apical side.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, cells are in direct physical contact not only with the cells that are neighbours on the apical side, but also with cells that appear two or even three cell diameters apart (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "5161c1bf-98be-4815-9643-2ab6383726ab",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C30",
+      "claim": "Cells record up to 14 cell neighbour changes per cell in the tube between adjacent cross-sections along the apical-basal cell axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we record up to 14 cell neighbour changes per cell in the tube and up to eight in the tip, between adjacent cross-sections along the apical-basal cell axis (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "9636db49-6988-456c-89d6-fc5da92fe9c6",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C31",
+      "claim": "Cells record up to eight cell neighbour changes per cell in the tip between adjacent cross-sections along the apical-basal cell axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we record up to 14 cell neighbour changes per cell in the tube and up to eight in the tip, between adjacent cross-sections along the apical-basal cell axis (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "f7083ec8-47d9-4c41-ab01-59f097b6c375",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C32",
+      "claim": "The mean relative apical-basal position for lateral T1 transitions is 0.489\u00b10.020 (95% CI).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean relative apical-basal position for the lateral T1 transitions is 0.489\u00b10.020 (95% CI), and there is no clear apical or basal tendency, though fewer transitions are observed close to the basal surface (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a quantitative observation from the data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "c6809e4e-d094-4731-8892-e2a749a559f4",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C33",
+      "claim": "There is no clear apical or basal tendency for lateral T1 transitions, though fewer transitions are observed close to the basal surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean relative apical-basal position for the lateral T1 transitions is 0.489\u00b10.020 (95% CI), and there is no clear apical or basal tendency, though fewer transitions are observed close to the basal surface (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "3a2420a2-d47e-44ef-a244-13bef8cc9143",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C34",
+      "claim": "The number of apical-basal T1 transitions per cell is Poisson-distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "The chi-squared test also confirms that the number of apical-basal T1 transitions per cell is Poisson-distributed (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from statistical analysis of the data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "3cb542ec-d723-421f-a827-2c9505d2e937",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C35",
+      "claim": "The consistency with a Poisson distribution suggests a stochastic basis to the 3D organisation of epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A Poisson distribution models the probability of a number of independent random events occurring in a given interval at a constant average rate. The consistency with a Poisson distribution, therefore, suggests a stochastic basis to the 3D organisation of epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the statistical properties of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "390cdb15-1d90-48ed-b22c-aa901fbbc60e",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C36",
+      "claim": "The mean apical-basal distance between two consecutive neighbour number changes is 17.89 \u00b1 0.66 \u00b5m (95% CI).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean apical-basal distance between two transitions is 17.89 \u00b1 0.66 \u00b5m (95% CI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a quantitative observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "961c7a72-6ba0-428d-a21a-fa46caa970b2",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C37",
+      "claim": "The examined tissue exhibits an average curvature fold change of R(1)/R(0)=2.21 from the basal to the apical side.",
+      "claim_type": "EXPLICIT",
+      "source": "The examined tissue exhibits an average curvature fold change of R(1)/R(0)=2.21 from the basal to the apical side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a quantitative observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "05d042e9-4696-44f0-84f2-e94820236c1e",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C38",
+      "claim": "The mean curvature fold change per apical-basal T1L transition per cell is <R2/R1> = 1.142 \u00b1 0.010 (95% CI).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean curvature fold change per apical-basal T1L transition per cell is <R2/R1> = 1.142 \u00b1 0.010 (95% CI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a quantitative observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "b3c19b6d-5e4a-4e7f-8807-a87fd1917a1a",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C39",
+      "claim": "There is no systematic dependency of the curvature fold change on the number of neighbours the cell has along that portion of the cell in the developing mouse lung epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observe no systematic dependency of the curvature fold change on the number of neighbours the cell has along that portion of the cell in the developing mouse lung epithelium (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "25031e52-6a15-4d04-93a3-3005d576e6b3",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C40",
+      "claim": "Tissue curvature affects cell neighbourhood rearrangements through the tissue thickness at most mildly.",
+      "claim_type": "EXPLICIT",
+      "source": "From this, we conclude that tissue curvature affects cell neighbourhood rearrangements through the tissue thickness at most mildly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "607fa10e-ec8b-4944-be12-c7ca45a7aedb",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C41",
+      "claim": "Each layer along the apical-basal axis behaves according to Euler's polyhedron formula.",
+      "claim_type": "EXPLICIT",
+      "source": "We notice that much as the apical and basal layers, each layer along the apical-basal axis behaves according to the three relationships previously described for the apical side, that is, Euler's polyhedron formula (Equation 1, Figure 4a), Aboav-Weaire's law (Equation 2, Figure 4b), and Lewis' law (Equations 3, 4, Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "704cb9d3-9a5b-4e9d-afc7-7338afbd0c88",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C42",
+      "claim": "Each layer along the apical-basal axis behaves according to Aboav-Weaire's law.",
+      "claim_type": "EXPLICIT",
+      "source": "We notice that much as the apical and basal layers, each layer along the apical-basal axis behaves according to the three relationships previously described for the apical side, that is, Euler's polyhedron formula (Equation 1, Figure 4a), Aboav-Weaire's law (Equation 2, Figure 4b), and Lewis' law (Equations 3, 4, Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "2f6fd91d-ca18-4b8d-b856-b517c5a4fd71",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C43",
+      "claim": "Each layer along the apical-basal axis behaves according to Lewis' law.",
+      "claim_type": "EXPLICIT",
+      "source": "We notice that much as the apical and basal layers, each layer along the apical-basal axis behaves according to the three relationships previously described for the apical side, that is, Euler's polyhedron formula (Equation 1, Figure 4a), Aboav-Weaire's law (Equation 2, Figure 4b), and Lewis' law (Equations 3, 4, Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "5dc3991c-fdd8-4c17-97b5-e02032059c33",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C44",
+      "claim": "Layers with large area variability follow the quadratic law.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the theory based on the minimisation of the lateral cell-cell energy (Kokic et al., 2019), the layers with a large area variability (Figure 4a) follow the quadratic law (yellow line) and those with a lower area variability the linear Lewis' law (black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "de297958-9f9a-46cf-a9d6-bea10d7e67bb",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C45",
+      "claim": "Layers with lower area variability follow the linear Lewis' law.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the theory based on the minimisation of the lateral cell-cell energy (Kokic et al., 2019), the layers with a large area variability (Figure 4a) follow the quadratic law (yellow line) and those with a lower area variability the linear Lewis' law (black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "1decd623-6201-4a36-a650-bdb9a0f2b230",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C46",
+      "claim": "The fraction of hexagons follows the predicted relationship with the cross-sectional area variability.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of hexagons also follows the predicted relationship with the cross-sectional area variability (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "01fd3bb5-46f5-43fe-9d17-6dced8b049c9",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C47",
+      "claim": "The neighbour relationships of epithelial cells along the entire apical-basal axis can be explained with a minimisation of the lateral cell-cell contact surface energy.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the neighbour relationships of epithelial cells along the entire apical-basal axis can be explained with a minimisation of the lateral cell-cell contact surface energy, as previously revealed for the apical layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "58acc7d0-dc55-4a3b-b866-240e0fe3f21c",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C48",
+      "claim": "An increase in the cross-sectional area results in an increase in the neighbour number.",
+      "claim_type": "EXPLICIT",
+      "source": "If we analyse four 3D segmented cells (Figure 4e) in detail, we indeed see how an increase in the cross-sectional area results in an increase in the neighbour number, and vice versa (Figure 4f) via lateral T1 transitions (Figure 4g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figures 4e-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "85879b39-8926-47c3-b7db-4ae44ecfd1a4",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C49",
+      "claim": "The frequency of T1L transitions along the apical-basal axis is higher, the larger the increase in cross-sectional area.",
+      "claim_type": "EXPLICIT",
+      "source": "When we consider all 140 segmented cells in the tube segment with their 746 cell neighbour exchanges between adjacent cross-sections (Figure 3e), then we find that the frequency of T1L transitions along the apical-basal axis is indeed higher, the larger the increase in cross-sectional area, and vice versa (Figure 4h,i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figures 4h,i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "35eb3e40-b3b0-4397-959b-740981446e63",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C50",
+      "claim": "In pseudostratified epithelia, mitosis is restricted to the apical surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In pseudostratified epithelia, mitosis is restricted to the apical surface (Gundersen and Worman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature (Gundersen and Worman, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "a9c83b43-ec60-4e29-95af-d08a5b5ad93c",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C51",
+      "claim": "As a cell exits mitosis, the nucleus moves from the apical towards the basal side (G1 and S phase) and then back to the apical side (G2 phase) to undergo another round of mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, as a cell exits mitosis, the nucleus moves from the apical towards the basal side (G1 and S phase) and then back to the apical side (G2 phase) to undergo another round of mitosis, a process referred to as interkinetic nuclear migration (IKNM) (Meyer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature (Meyer et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "847b2735-d952-4933-b12f-20edc6a7e106",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C52",
+      "claim": "Nuclei are distributed along the entire apical-basal axis in pseudostratified epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclei were distributed along the entire apical-basal axis (Figure 5c), and consistent with the pseudostratified appearance of the epithelium, nuclei in neighbouring cells had different positions along the apical-basal axis (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figures 5b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "2756e04b-60b9-45fb-a837-6fc1b4026b09",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C53",
+      "claim": "Nuclei in neighbouring cells have different positions along the apical-basal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclei were distributed along the entire apical-basal axis (Figure 5c), and consistent with the pseudostratified appearance of the epithelium, nuclei in neighbouring cells had different positions along the apical-basal axis (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "e9d52dff-4bfa-477c-a085-4b37cd572d93",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C54",
+      "claim": "Nuclei are largest and most spherical at the apical side, where they undergo mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, nuclei are largest and most spherical at the apical side, where they undergo mitosis (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "8fe7ee7b-7717-4bad-8245-591327d5854f",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C55",
+      "claim": "Nuclei located in the first 25% of the apical-basal axis have significantly reduced ellipticity compared to those in the middle 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a one-sided, two-sample Welch t-test revealed a significantly reduced ellipticity of nuclei located in the first 25% of the apical-basal axis compared to those in the middle 50% (p=0.0002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "7b9d2ec1-9b66-431e-92bb-80cbe5b865cc",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C56",
+      "claim": "Nuclear volumes are on average about 50% smaller than the cell volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear volumes are on average about 50% smaller than the cell volumes and largely correlate (r = 0.79, Figure 5f), likely reflecting parallel expansion during the cell cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "35a37604-5145-44db-b3fe-a25889b318f7",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C57",
+      "claim": "Nuclear volumes and cell volumes largely correlate (r = 0.79).",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear volumes are on average about 50% smaller than the cell volumes and largely correlate (r = 0.79, Figure 5f), likely reflecting parallel expansion during the cell cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "fb5d98fe-db85-4aa3-a6fb-de97d3192468",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C58",
+      "claim": "The cross-sectional areas of the cell and the nucleus are strongly correlated (r = 0.94).",
+      "claim_type": "EXPLICIT",
+      "source": "Where present, the nuclear cross-sectional areas are only slightly smaller than those of the entire cell, and the cross-sectional areas of the cell and the nucleus are strongly correlated (r = 0.94, Figure 5g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 5g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "510e2ee7-0061-4d7c-91c9-0fe705a5a68c",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C59",
+      "claim": "The nuclear volumes are too large to allow for a spherical nucleus to fit into a cylindrical cell of the measured height.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear volumes are too large to allow for a spherical nucleus to fit into a cylindrical cell of the measured height (Figure 5h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 5h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "0c6d878d-f656-4026-b680-e5857b61c6d4",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C60",
+      "claim": "To fit into the cell, the nucleus necessarily has to deform.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, to fit into the cell, the nucleus necessarily has to deform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that nuclear volumes are too large to fit as spheres.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "9211d91d-d1c5-4ce5-b85f-21a6b21321a1",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C61",
+      "claim": "Nuclei respond to external forces with anisotropic shape changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclei respond to external forces with anisotropic shape changes (Haase et al., 2016; Neelam et al., 2016), which is consistent with the elliptical nuclear shapes that we observe (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to prior literature (Haase et al., 2016; Neelam et al., 2016) and observation in Figure 5d.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "6831554b-66f0-4066-94fb-b1451ab54427",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C62",
+      "claim": "There is a limit to how much the stiff nucleus can deform.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is a limit to how much the stiff nucleus can deform (Lammerding, 2011; Shah et al., 2021), resulting in a local widening of the cell where the nucleus is present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature (Lammerding, 2011; Shah et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "26394082-513d-4e91-8ff8-4cfa27bdc50c",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C63",
+      "claim": "The stiff nucleus results in a local widening of the cell where the nucleus is present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is a limit to how much the stiff nucleus can deform (Lammerding, 2011; Shah et al., 2021), resulting in a local widening of the cell where the nucleus is present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the physical properties of the nucleus and observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "5046ec5f-d4ff-4e82-b930-5e885ae02a18",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C64",
+      "claim": "Most T1L transitions occur where the nucleus starts and ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, as previously seen for the cell cross-sectional areas, the observed changes in cell neighbour numbers correlates with the observed changes in nuclear cross-sectional areas (Figure 5i) such that most T1L transitions occur where the nucleus starts and ends (Figure 5j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figures 5i,j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "4055a3f7-efef-4379-bf65-4d70e9a7a4fe",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C65",
+      "claim": "The positions of nuclei can explain much of the observed variability in the cross-sectional cell areas.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the positions of nuclei can explain much of the observed variability in the cross-sectional cell areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "c7999d1c-4530-4f2f-a234-ebdc4d6aff05",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C66",
+      "claim": "During the cell cycle, nuclei migrate, and the cell volumes first increase, and subsequently halve due to cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "During the cell cycle, nuclei migrate, and the cell volumes first increase, and subsequently halve due to cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of cell cycle processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "24bb092f-c5b7-4366-867e-2badab862dbd",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C67",
+      "claim": "All processes that affect the cross-sectional areas of the cells along the apical-basal axis would be expected to result in continuous spatial-temporal T1L transitions in growing pseudostratified epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "As all these processes affect the cross-sectional areas of the cells along the apical-basal axis, one would expect continuous spatial-temporal T1L transitions in growing pseudostratified epithelia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the relationship between cross-sectional area changes and T1L transitions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "daaac1bd-21c2-4a32-92cb-302d9e330ced",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C70",
+      "claim": "For all time points, both the apical and basal layers conformed to Euler's polyhedron formula.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for all time points, both the apical and basal layers conformed to Euler's polyhedron formula (Figure 6c), Aboav-Weaire's law (Figure 6d), and Lewis' law (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "c4cd641f-3310-4720-9c0d-ba8731a70399",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C71",
+      "claim": "For all time points, both the apical and basal layers conformed to Aboav-Weaire's law.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for all time points, both the apical and basal layers conformed to Euler's polyhedron formula (Figure 6c), Aboav-Weaire's law (Figure 6d), and Lewis' law (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "e3a702a1-ea36-4e2f-b16b-7170f1512df3",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C72",
+      "claim": "For all time points, both the apical and basal layers conformed to Lewis' law.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for all time points, both the apical and basal layers conformed to Euler's polyhedron formula (Figure 6c), Aboav-Weaire's law (Figure 6d), and Lewis' law (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "4425af25-9297-4e77-bda2-f3be7c2cc523",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C73",
+      "claim": "The fraction of hexagons follows from the variability of the cross-sectional areas, as predicted by the theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the fraction of hexagons also followed from the variability of the cross-sectional areas, as predicted by the theory (Figure 6f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 6f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "f6074b30-d81c-4e53-b3a4-f2a8d3f5fe8a",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C74",
+      "claim": "The volume of individual cells varied between roughly 400 and 800 \u00b5m3 over the time course.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the time course, the volume of individual cells varied between roughly 400 and 800 \u00b5m3 (Figure 7b), and the apical-basal length varied between roughly 20 and 30 \u00b5m (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "235f4244-8e01-4dba-b711-5fa385b1cc97",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C75",
+      "claim": "The apical-basal length of cells varied between roughly 20 and 30 \u00b5m over the time course.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the time course, the volume of individual cells varied between roughly 400 and 800 \u00b5m3 (Figure 7b), and the apical-basal length varied between roughly 20 and 30 \u00b5m (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "4a1ba9d5-bf17-40fb-9c15-58714ec24d6d",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C76",
+      "claim": "All layers conform to Aboav-Weaire's law in all time points.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that all layers conform to Aboav-Weaire's law (Figure 7d) and Lewis' law (Figure 7e) in all time points.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "eeadf034-d05a-4aad-ba22-3f8ba8beba00",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C77",
+      "claim": "All layers conform to Lewis' law in all time points.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that all layers conform to Aboav-Weaire's law (Figure 7d) and Lewis' law (Figure 7e) in all time points.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 7e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "b4ac97b6-3184-49f6-92a2-14d95338ccdd",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C78",
+      "claim": "The fraction of hexagons follows from the variability of the cross-sectional area in the time-lapse dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, consistent with our theory, the fraction of hexagons follows from the variability of the cross-sectional area, though more deviations are observed, given the small number of cells analysed (Figure 7f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 7f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "f3deaebc-ea20-4bf7-b34d-17ad925109b7",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C79",
+      "claim": "Up to 14 neighbour number changes (T1L transitions) are observed along the apical-basal axis in the time-lapse dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Much as in the static dataset (Figures 3 and 4), we observe up to 14 neighbour number changes (T1L transitions) along the apical-basal axis (Figure 8a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figures 8a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "a38d07fb-79a5-4468-a3ef-23e72722c2c1",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C80",
+      "claim": "The average number of T1L transitions is relatively constant over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of T1L transitions is relatively constant over time (Figure 8b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "bae0c2ee-1c4d-4a01-8d52-9c493620699f",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C81",
+      "claim": "A change in the cross-sectional area correlates with a change in neighbour number in single cells over time.",
+      "claim_type": "EXPLICIT",
+      "source": "By following a single cell over time, we can appreciate the dynamic cell shape changes, and how a change in the cross-sectional area correlates with a change in neighbour number (Figure 8d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 8d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "70957436-03a8-4719-a64a-13dfaf4da27e",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C82",
+      "claim": "Pseudostratified epithelial layers adopt a far more complex packing solution than previously anticipated.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis reveals that pseudostratified epithelial layers adopt a far more complex packing solution than previously anticipated: the 3D epithelial cell shapes are highly irregular, and cell neighbour relationships change multiple times along the apical-basal axis, with some cells having up to 14 changes in their neighbour contacts along their apical-basal axis (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a conclusion from the study's observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "d9acd85e-6cbb-42f2-898b-a728db834794",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C83",
+      "claim": "Some cells have up to 14 changes in their neighbour contacts along their apical-basal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis reveals that pseudostratified epithelial layers adopt a far more complex packing solution than previously anticipated: the 3D epithelial cell shapes are highly irregular, and cell neighbour relationships change multiple times along the apical-basal axis, with some cells having up to 14 changes in their neighbour contacts along their apical-basal axis (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "8ade0426-3de5-4831-88d9-2e1ccea3b5c9",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C84",
+      "claim": "The data does not show the dependency on cell neighbour numbers that would be expected if curvature effects played a dominating role.",
+      "claim_type": "EXPLICIT",
+      "source": "Curvature effects can result in neighbour changes, but the data does not show the dependency on cell neighbour numbers that would be expected if curvature effects played a dominating role (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "b6e48954-9b6d-4bdb-99a0-0f413765c16f",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C85",
+      "claim": "The prevalence of contact remodelling is randomly distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also no apical-basal bias (Figure 3e), and the prevalence of contact remodelling is randomly distributed (Figure 4i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the data shown in Figure 4i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "681b8a4c-356b-4f93-97b6-82e90a58f3a8",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C86",
+      "claim": "Neighbour relationships in epithelia are fluidic.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that neighbour relationships in epithelia are fluidic, and the complex, dynamic 3D organisation of cells in growing epithelia follows simple physical principles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "35411b83-38c9-459f-92b3-28d4e1533383",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C87",
+      "claim": "The complex, dynamic 3D organisation of cells in growing epithelia follows simple physical principles.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that neighbour relationships in epithelia are fluidic, and the complex, dynamic 3D organisation of cells in growing epithelia follows simple physical principles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the main conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "86444e44-4844-4c7c-a1f9-8f74bf7411a3",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C88",
+      "claim": "The nucleus occupies, on average, 55% of the cell volume in the embryonic lung epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the nucleus occupies, on average, 55% of the cell volume in the embryonic lung epithelia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a quantitative observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "f8892968-e4f9-461c-a793-2f9c1589e3bb",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C89",
+      "claim": "As the cell nuclei move along the apical-basal axis during the cell cycle, the cytoplasm fills the remaining space between the apical and basal surfaces, likely in a way that minimises the total surface area of all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As the cell nuclei move along the apical-basal axis during the cell cycle (Meyer et al., 2011), the cytoplasm fills the remaining space between the apical and basal surfaces, likely in a way that minimises the total surface area of all cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations and physical principles, with citation to prior literature (Meyer et al., 2011).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "cac27172-435a-40a3-a89e-6b78668e223e",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C90",
+      "claim": "Signalling downstream of FGF, SHH, BMP/TGF-\u03b2, and WNT has been observed to affect cell height.",
+      "claim_type": "EXPLICIT",
+      "source": "The determinants of the epithelial thickness, that is, the distance between the apical and basal surfaces are still unknown, but signalling downstream of Fibroblastic Growth Factor (FGF), Sonic Hedgehog (SHH), Bone Morphogenetic Protein (BMP)/ transforming growth factor-beta (TGF-\u03b2), and WNT has been observed to affect cell height, presumably via an effect on cell tension and/or cell-cell adhesion (Gritli-Linde et al., 2002; Hirashima and Matsuda, 2021; Kadzik et al., 2014; Kondo and Hayashi, 2015; Widmann and Dahmann, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature (Gritli-Linde et al., 2002; Hirashima and Matsuda, 2021; Kadzik et al., 2014; Kondo and Hayashi, 2015; Widmann and Dahmann, 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "491d9cb0-755a-432f-b92f-e1af164597d7",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C91",
+      "claim": "Signalling downstream of FGF, SHH, BMP/TGF-\u03b2, and WNT presumably affects cell height via an effect on cell tension and/or cell-cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "The determinants of the epithelial thickness, that is, the distance between the apical and basal surfaces are still unknown, but signalling downstream of Fibroblastic Growth Factor (FGF), Sonic Hedgehog (SHH), Bone Morphogenetic Protein (BMP)/ transforming growth factor-beta (TGF-\u03b2), and WNT has been observed to affect cell height, presumably via an effect on cell tension and/or cell-cell adhesion (Gritli-Linde et al., 2002; Hirashima and Matsuda, 2021; Kadzik et al., 2014; Kondo and Hayashi, 2015; Widmann and Dahmann, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on prior literature (Gritli-Linde et al., 2002; Hirashima and Matsuda, 2021; Kadzik et al., 2014; Kondo and Hayashi, 2015; Widmann and Dahmann, 2009).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "9ddfc4d0-cab1-4dd7-985a-33ba00d904b8",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C92",
+      "claim": "The study offers a detailed view of 3D cell neighbour relationship dynamics and packing in growing epithelial tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, this study offers a detailed view of 3D cell neighbour relationship dynamics and packing in growing epithelial tissues, and demonstrates that the 3D cell shapes are much more complex than previously anticipated, and that cell neighbour relationships are dynamic and change as result of cell growth and cell cycle-linked IKNM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a summary of the study's contributions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "c5b01e34-8889-4a90-9c5a-9cc08019451c",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C93",
+      "claim": "Cell neighbour relationships are dynamic and change as result of cell growth and cell cycle-linked IKNM.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, this study offers a detailed view of 3D cell neighbour relationship dynamics and packing in growing epithelial tissues, and demonstrates that the 3D cell shapes are much more complex than previously anticipated, and that cell neighbour relationships are dynamic and change as result of cell growth and cell cycle-linked IKNM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "7c10aead-577f-4623-8d1d-360677e771f3",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "claim_id": "C94",
+      "claim": "The work carries vast implications for the study of cell-cell signalling, epithelial cohesion, and energetic modelling of developing epithelial layers in both healthy and disease contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we recognize that tissue architecture is a multifactorial process, our work carries vast implications for the study of cell-cell signalling, epithelial cohesion, and energetic modelling of developing epithelial layers in both healthy and disease contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion about the broader implications of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c8c66a2-b2d5-464a-819b-6dd03e3928f4",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Epithelial cells exhibit apical-basal polarity with tight apical adhesion, lateral junction complexes, and basal ECM binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 describe established features of epithelial cell organization supported by multiple citations to prior literature. These are well-established background facts rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "cc1dbe1e-954d-4beb-899f-d683c1d8ff45",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Epithelial cells have on average six neighbors, and this organization along with Aboav-Weaire's and Lewis' laws emerges from minimization of lateral cell-cell contact surface energy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C8, and C9 are supported by extensive prior literature citations and established geometric/physical principles. These represent prior work and theoretical background rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cells in embryonic lung epithelia have highly irregular 3D shapes with numerous neighbor intercalations along the apical-basal axis, with up to 14 neighbor changes per cell in tubes and 8 in tips.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C27-C31, C82-C83 are consistently supported by 3D segmentation data shown in Figures 3 and related figures. The quantitative measurements of neighbor changes are clearly documented with appropriate imaging and analysis methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "a712a775-da46-4ef1-9934-ca351ba7b7df",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cell packing configurations follow Euler's polyhedron formula, Lewis' law, and Aboav-Weaire's law at all times and across the entire tissue thickness in both static and dynamic datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14, C24, C41-C43, C70-C72, C76-C77 are supported by extensive quantitative analysis shown in Figures 2, 4, 6, and 7. The data consistently demonstrate adherence to these mathematical relationships across multiple layers and time points.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "e929d14d-7d1e-42a7-b870-d09becba1f3e",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The apical surface area is ~5-fold smaller than basal, with less than half as many cells detected apically, resulting in only 2-fold smaller mean apical cell areas but higher area variability, and different neighbor number frequencies between apical and basal sides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 are supported by quantitative measurements shown in Figure 2b-d. The measurements are clearly stated and consistent with the curved epithelial geometry being analyzed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "98767e6c-c46d-4c2b-9e44-d7134751c7ef",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Layers with larger area variability follow the quadratic law rather than linear Lewis' law, and the fraction of hexagons follows the predicted relationship with cross-sectional area variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C44-C46, C73, C78 are supported by data in Figures 2f, 4c-d, 6f, and 7f showing agreement between theoretical predictions and observations. The relationship between area variability and adherence to quadratic vs. linear laws is consistently demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "43763b79-9aa4-407d-9a4d-54bd99fe1d41",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lateral T1 transitions occur at a mean relative position of 0.489\u00b10.020 along the apical-basal axis with no clear apical/basal bias, are Poisson-distributed, and occur at mean intervals of 17.89\u00b10.66 \u00b5m, suggesting stochastic organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by statistical analysis shown in Figures 3d-e. The chi-squared test confirms Poisson distribution, and the quantitative measurements are clearly stated with confidence intervals. The inference of stochastic basis is reasonable given the Poisson distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "53762154-40c2-4dd9-9562-b58840549311",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Tissue curvature exhibits a 2.21-fold change from basal to apical with mean curvature fold change of 1.142\u00b10.010 per T1L transition, but shows no systematic dependency on neighbor numbers, indicating curvature affects neighbor rearrangements only mildly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40, C84 are supported by curvature analysis in Figure 3f-g and accompanying text. The quantitative measurements are provided with confidence intervals, and the lack of dependency on neighbor numbers contradicts curvature-driven models, supporting the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "0482aa85-b8e6-47c4-a144-1933ec83a7c5",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The cell arrangement minimizes lateral cell-cell surface energy for a given cross-sectional area variability, and this principle explains neighbor relationships along the entire apical-basal axis, indicating that complex 3D organization follows simple physical principles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C26, C47, C87 represent the main theoretical conclusion supported by the comprehensive adherence to Euler's formula, Aboav-Weaire's law, and Lewis' law across all layers and time points. The consistency of the data with energy minimization principles provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "aab8eda4-c09d-4ccd-8995-e38a3ca486e7",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Increases in cross-sectional area result in increases in neighbor number via lateral T1 transitions, with higher T1L transition frequency correlating with larger cross-sectional area increases, and most transitions occurring where nuclei start and end.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49, C64, C81 are supported by detailed analysis in Figures 4e-i, 5i-j, and 8d showing correlations between area changes and neighbor number changes. The data from both individual cells and population-level analysis are consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "45fc667c-ce56-4b5b-aba2-e6f4bb81cccf",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In pseudostratified epithelia, mitosis is restricted apically, nuclei undergo interkinetic nuclear migration (IKNM) moving basally in G1/S and apically in G2, are distributed along the apical-basal axis with different positions in neighboring cells, and are largest/most spherical apically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51, C66 are supported by citations to established literature. Claims C52-C55 are supported by observations in Figure 5b-d with statistical testing (p=0.0002 for ellipticity differences). These combine established knowledge with new observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "a6896ae5-c957-4bfd-ae11-2bb3e15d7e6e",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Nuclear volumes are ~50% of cell volumes and correlate with cell volumes (r=0.79), nuclear and cell cross-sectional areas are strongly correlated (r=0.94), and nuclei occupy on average 55% of cell volume.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58, C88 are supported by quantitative measurements shown in Figures 5f-g. The correlation coefficients are clearly stated and the measurements are based on 3D segmentation of 140 cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "f633bbbb-3d03-406f-a21e-845ae7363283",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Nuclear volumes are too large to fit spherically into cylindrical cells of measured height, necessitating nuclear deformation; nuclei respond to forces with anisotropic shape changes but have deformation limits, resulting in local cell widening where nuclei are present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by geometric analysis in Figure 5h. Claims C61-C62 are supported by citations to prior literature on nuclear mechanics. Claim C63 is a reasonable inference from the physical constraints. The logic chain is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "2cb8c868-ac54-4f7e-844a-a3fc8ee00df8",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cross-sectional area variability is generated primarily by nuclear distribution and movement, which explains much of the observed variability, and processes affecting cross-sectional areas result in continuous spatial-temporal T1L transitions; neighbor relationships are dynamic and change due to cell growth and IKNM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C65, C67, C93 are supported by the strong correlation between nuclear and cell cross-sectional areas (r=0.94) and the observation that T1L transitions occur where nuclei start/end (Figures 5g, 5i-j). The causal inference is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "b05e002e-ca09-43e0-9b21-3d1db574ff5c",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In time-lapse analysis, individual cell volumes varied between 400-800 \u00b5m\u00b3, apical-basal length varied between 20-30 \u00b5m, up to 14 T1L transitions were observed along the apical-basal axis, and the average number of T1L transitions remained relatively constant over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75, C79-C80 are supported by time-lapse data shown in Figures 7b-c and 8a-b. The measurements are consistent with the static dataset and demonstrate temporal stability of the organizational principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "9cf4f1e6-fdda-4d94-9b2a-ed0207b3d5a6",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The prevalence of contact remodeling is randomly distributed with no apical-basal bias, and neighbor relationships in epithelia are fluidic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 are supported by the Poisson distribution of T1L transitions (Figure 3d), the lack of apical-basal bias (Figure 3e), and the random distribution (Figure 4i). The conclusion of fluidic neighbor relationships is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "edc8bb32-fd77-4773-8e4e-fd0bf222c6d6",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The complex 3D cell organization in growing epithelia emerges from simple physical principles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C87 represent the overarching conclusion of the study, supported by the comprehensive demonstration that cells follow energy minimization principles (Euler's formula, Aboav-Weaire's law, Lewis' law) across all layers and time points despite complex 3D shapes and dynamic neighbor relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "ccbe14be-1019-47c6-b006-6fa1a39efbc6",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "As nuclei move along the apical-basal axis during the cell cycle, cytoplasm fills remaining space between apical and basal surfaces, likely minimizing total surface area of all cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is stated as likely but lacks direct experimental validation. While consistent with physical principles and supported by citation to IKNM literature, the specific claim about cytoplasm minimizing total surface area is not directly tested or demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "31225365-14ce-4e9f-9e21-9b2920daa034",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Signaling downstream of FGF, SHH, BMP/TGF-\u03b2, and WNT affects cell height, presumably via effects on cell tension and/or cell-cell adhesion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 are supported by citations to prior literature. However, C91 is explicitly stated as presumptive. These represent background knowledge about potential regulators of epithelial thickness rather than findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    },
+    {
+      "id": "2b67c5fc-b915-4f93-8e73-95c3a7587b5a",
+      "content_id": "cc6cb58a-e310-4eb9-ad4f-03f7c6286a08",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study offers a detailed view of 3D cell neighbor relationship dynamics and packing in growing epithelial tissues with vast implications for cell-cell signaling, epithelial cohesion, and energetic modeling in health and disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is supported as an accurate summary of the study's contributions. Claim C94 represents speculative implications that, while reasonable, are not directly tested. The study does provide foundational data for future work in these areas.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:35.325956Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a61b9cdb-dad2-4cb4-9a36-dfe4e788f4ec",
+      "result_id": "0c8c66a2-b2d5-464a-819b-6dd03e3928f4"
+    },
+    {
+      "claim_id": "b66e5706-045e-482a-8877-6849ce39ac0b",
+      "result_id": "0c8c66a2-b2d5-464a-819b-6dd03e3928f4"
+    },
+    {
+      "claim_id": "e8f419ec-9398-46eb-aa8d-69b0740212cb",
+      "result_id": "0c8c66a2-b2d5-464a-819b-6dd03e3928f4"
+    },
+    {
+      "claim_id": "6d0fa638-b1c7-499e-9bf2-b93156a5d3f8",
+      "result_id": "cc1dbe1e-954d-4beb-899f-d683c1d8ff45"
+    },
+    {
+      "claim_id": "115269a8-edf7-4a67-85c9-aa37a7409969",
+      "result_id": "cc1dbe1e-954d-4beb-899f-d683c1d8ff45"
+    },
+    {
+      "claim_id": "733a50ce-b97b-4e2b-9dde-eea37983aafd",
+      "result_id": "cc1dbe1e-954d-4beb-899f-d683c1d8ff45"
+    },
+    {
+      "claim_id": "257addf7-451e-4fab-aa7e-9a2b465f7a1e",
+      "result_id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc"
+    },
+    {
+      "claim_id": "4214b243-54ff-4f51-a0f1-9af5e9a57262",
+      "result_id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc"
+    },
+    {
+      "claim_id": "ab31e946-e6b3-4451-8a2e-a6d319f4737e",
+      "result_id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc"
+    },
+    {
+      "claim_id": "e28eeae9-2719-4994-a219-ecfac434aa3f",
+      "result_id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc"
+    },
+    {
+      "claim_id": "dae84d43-a63b-455f-afd3-f90f33c843de",
+      "result_id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc"
+    },
+    {
+      "claim_id": "5161c1bf-98be-4815-9643-2ab6383726ab",
+      "result_id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc"
+    },
+    {
+      "claim_id": "9636db49-6988-456c-89d6-fc5da92fe9c6",
+      "result_id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc"
+    },
+    {
+      "claim_id": "70957436-03a8-4719-a64a-13dfaf4da27e",
+      "result_id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc"
+    },
+    {
+      "claim_id": "d9acd85e-6cbb-42f2-898b-a728db834794",
+      "result_id": "4f021269-9713-4fea-a2d4-8acf0dfab5cc"
+    },
+    {
+      "claim_id": "395e151c-f1d1-45d8-8063-a07626e9aea2",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "aaa5af70-0fa9-4700-9902-84904b33ab10",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "3872655b-905f-474a-af98-e11cf0908149",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "5ed838c6-6d38-4d0b-b1a3-79bce898c7b2",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "607fa10e-ec8b-4944-be12-c7ca45a7aedb",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "704cb9d3-9a5b-4e9d-afc7-7338afbd0c88",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "2f6fd91d-ca18-4b8d-b856-b517c5a4fd71",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "daaac1bd-21c2-4a32-92cb-302d9e330ced",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "c4cd641f-3310-4720-9c0d-ba8731a70399",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "e3a702a1-ea36-4e2f-b16b-7170f1512df3",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "4a1ba9d5-bf17-40fb-9c15-58714ec24d6d",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "eeadf034-d05a-4aad-ba22-3f8ba8beba00",
+      "result_id": "a712a775-da46-4ef1-9934-ca351ba7b7df"
+    },
+    {
+      "claim_id": "e20d2994-2c70-4259-a089-76d364ec8bf0",
+      "result_id": "e929d14d-7d1e-42a7-b870-d09becba1f3e"
+    },
+    {
+      "claim_id": "c96c2a5d-9ef3-44bb-874a-c8dc461f3c02",
+      "result_id": "e929d14d-7d1e-42a7-b870-d09becba1f3e"
+    },
+    {
+      "claim_id": "cbca0ec4-674c-4743-8541-28305f884df0",
+      "result_id": "e929d14d-7d1e-42a7-b870-d09becba1f3e"
+    },
+    {
+      "claim_id": "9dacd44e-9235-4683-92d4-88b5fddb1cb0",
+      "result_id": "e929d14d-7d1e-42a7-b870-d09becba1f3e"
+    },
+    {
+      "claim_id": "5857ae15-1d08-449e-892d-6d60aa1f20d8",
+      "result_id": "e929d14d-7d1e-42a7-b870-d09becba1f3e"
+    },
+    {
+      "claim_id": "a9a63de8-de3b-4851-9e81-adbc87dd2162",
+      "result_id": "e929d14d-7d1e-42a7-b870-d09becba1f3e"
+    },
+    {
+      "claim_id": "4b290ab2-8a43-452e-b9d1-30e0acaf4de5",
+      "result_id": "98767e6c-c46d-4c2b-9e44-d7134751c7ef"
+    },
+    {
+      "claim_id": "5dc3991c-fdd8-4c17-97b5-e02032059c33",
+      "result_id": "98767e6c-c46d-4c2b-9e44-d7134751c7ef"
+    },
+    {
+      "claim_id": "de297958-9f9a-46cf-a9d6-bea10d7e67bb",
+      "result_id": "98767e6c-c46d-4c2b-9e44-d7134751c7ef"
+    },
+    {
+      "claim_id": "1decd623-6201-4a36-a650-bdb9a0f2b230",
+      "result_id": "98767e6c-c46d-4c2b-9e44-d7134751c7ef"
+    },
+    {
+      "claim_id": "4425af25-9297-4e77-bda2-f3be7c2cc523",
+      "result_id": "98767e6c-c46d-4c2b-9e44-d7134751c7ef"
+    },
+    {
+      "claim_id": "b4ac97b6-3184-49f6-92a2-14d95338ccdd",
+      "result_id": "98767e6c-c46d-4c2b-9e44-d7134751c7ef"
+    },
+    {
+      "claim_id": "f7083ec8-47d9-4c41-ab01-59f097b6c375",
+      "result_id": "43763b79-9aa4-407d-9a4d-54bd99fe1d41"
+    },
+    {
+      "claim_id": "c6809e4e-d094-4731-8892-e2a749a559f4",
+      "result_id": "43763b79-9aa4-407d-9a4d-54bd99fe1d41"
+    },
+    {
+      "claim_id": "3a2420a2-d47e-44ef-a244-13bef8cc9143",
+      "result_id": "43763b79-9aa4-407d-9a4d-54bd99fe1d41"
+    },
+    {
+      "claim_id": "3cb542ec-d723-421f-a827-2c9505d2e937",
+      "result_id": "43763b79-9aa4-407d-9a4d-54bd99fe1d41"
+    },
+    {
+      "claim_id": "390cdb15-1d90-48ed-b22c-aa901fbbc60e",
+      "result_id": "43763b79-9aa4-407d-9a4d-54bd99fe1d41"
+    },
+    {
+      "claim_id": "961c7a72-6ba0-428d-a21a-fa46caa970b2",
+      "result_id": "53762154-40c2-4dd9-9562-b58840549311"
+    },
+    {
+      "claim_id": "05d042e9-4696-44f0-84f2-e94820236c1e",
+      "result_id": "53762154-40c2-4dd9-9562-b58840549311"
+    },
+    {
+      "claim_id": "b3c19b6d-5e4a-4e7f-8807-a87fd1917a1a",
+      "result_id": "53762154-40c2-4dd9-9562-b58840549311"
+    },
+    {
+      "claim_id": "25031e52-6a15-4d04-93a3-3005d576e6b3",
+      "result_id": "53762154-40c2-4dd9-9562-b58840549311"
+    },
+    {
+      "claim_id": "8ade0426-3de5-4831-88d9-2e1ccea3b5c9",
+      "result_id": "53762154-40c2-4dd9-9562-b58840549311"
+    },
+    {
+      "claim_id": "f39d0c25-3c52-42bf-95be-b89abe9eda81",
+      "result_id": "0482aa85-b8e6-47c4-a144-1933ec83a7c5"
+    },
+    {
+      "claim_id": "32f30af2-771a-43dc-8706-80b364934cef",
+      "result_id": "0482aa85-b8e6-47c4-a144-1933ec83a7c5"
+    },
+    {
+      "claim_id": "01fd3bb5-46f5-43fe-9d17-6dced8b049c9",
+      "result_id": "0482aa85-b8e6-47c4-a144-1933ec83a7c5"
+    },
+    {
+      "claim_id": "35411b83-38c9-459f-92b3-28d4e1533383",
+      "result_id": "0482aa85-b8e6-47c4-a144-1933ec83a7c5"
+    },
+    {
+      "claim_id": "58acc7d0-dc55-4a3b-b866-240e0fe3f21c",
+      "result_id": "aab8eda4-c09d-4ccd-8995-e38a3ca486e7"
+    },
+    {
+      "claim_id": "85879b39-8926-47c3-b7db-4ae44ecfd1a4",
+      "result_id": "aab8eda4-c09d-4ccd-8995-e38a3ca486e7"
+    },
+    {
+      "claim_id": "5046ec5f-d4ff-4e82-b930-5e885ae02a18",
+      "result_id": "aab8eda4-c09d-4ccd-8995-e38a3ca486e7"
+    },
+    {
+      "claim_id": "bae0c2ee-1c4d-4a01-8d52-9c493620699f",
+      "result_id": "aab8eda4-c09d-4ccd-8995-e38a3ca486e7"
+    },
+    {
+      "claim_id": "35eb3e40-b3b0-4397-959b-740981446e63",
+      "result_id": "45fc667c-ce56-4b5b-aba2-e6f4bb81cccf"
+    },
+    {
+      "claim_id": "a9c83b43-ec60-4e29-95af-d08a5b5ad93c",
+      "result_id": "45fc667c-ce56-4b5b-aba2-e6f4bb81cccf"
+    },
+    {
+      "claim_id": "847b2735-d952-4933-b12f-20edc6a7e106",
+      "result_id": "45fc667c-ce56-4b5b-aba2-e6f4bb81cccf"
+    },
+    {
+      "claim_id": "2756e04b-60b9-45fb-a837-6fc1b4026b09",
+      "result_id": "45fc667c-ce56-4b5b-aba2-e6f4bb81cccf"
+    },
+    {
+      "claim_id": "e9d52dff-4bfa-477c-a085-4b37cd572d93",
+      "result_id": "45fc667c-ce56-4b5b-aba2-e6f4bb81cccf"
+    },
+    {
+      "claim_id": "8fe7ee7b-7717-4bad-8245-591327d5854f",
+      "result_id": "45fc667c-ce56-4b5b-aba2-e6f4bb81cccf"
+    },
+    {
+      "claim_id": "c7999d1c-4530-4f2f-a234-ebdc4d6aff05",
+      "result_id": "45fc667c-ce56-4b5b-aba2-e6f4bb81cccf"
+    },
+    {
+      "claim_id": "7b9d2ec1-9b66-431e-92bb-80cbe5b865cc",
+      "result_id": "a6896ae5-c957-4bfd-ae11-2bb3e15d7e6e"
+    },
+    {
+      "claim_id": "35a37604-5145-44db-b3fe-a25889b318f7",
+      "result_id": "a6896ae5-c957-4bfd-ae11-2bb3e15d7e6e"
+    },
+    {
+      "claim_id": "fb5d98fe-db85-4aa3-a6fb-de97d3192468",
+      "result_id": "a6896ae5-c957-4bfd-ae11-2bb3e15d7e6e"
+    },
+    {
+      "claim_id": "86444e44-4844-4c7c-a1f9-8f74bf7411a3",
+      "result_id": "a6896ae5-c957-4bfd-ae11-2bb3e15d7e6e"
+    },
+    {
+      "claim_id": "510e2ee7-0061-4d7c-91c9-0fe705a5a68c",
+      "result_id": "f633bbbb-3d03-406f-a21e-845ae7363283"
+    },
+    {
+      "claim_id": "0c6d878d-f656-4026-b680-e5857b61c6d4",
+      "result_id": "f633bbbb-3d03-406f-a21e-845ae7363283"
+    },
+    {
+      "claim_id": "9211d91d-d1c5-4ce5-b85f-21a6b21321a1",
+      "result_id": "f633bbbb-3d03-406f-a21e-845ae7363283"
+    },
+    {
+      "claim_id": "6831554b-66f0-4066-94fb-b1451ab54427",
+      "result_id": "f633bbbb-3d03-406f-a21e-845ae7363283"
+    },
+    {
+      "claim_id": "26394082-513d-4e91-8ff8-4cfa27bdc50c",
+      "result_id": "f633bbbb-3d03-406f-a21e-845ae7363283"
+    },
+    {
+      "claim_id": "ed02ae79-dcc3-4600-93b2-cff278dea76d",
+      "result_id": "2cb8c868-ac54-4f7e-844a-a3fc8ee00df8"
+    },
+    {
+      "claim_id": "4055a3f7-efef-4379-bf65-4d70e9a7a4fe",
+      "result_id": "2cb8c868-ac54-4f7e-844a-a3fc8ee00df8"
+    },
+    {
+      "claim_id": "24bb092f-c5b7-4366-867e-2badab862dbd",
+      "result_id": "2cb8c868-ac54-4f7e-844a-a3fc8ee00df8"
+    },
+    {
+      "claim_id": "c5b01e34-8889-4a90-9c5a-9cc08019451c",
+      "result_id": "2cb8c868-ac54-4f7e-844a-a3fc8ee00df8"
+    },
+    {
+      "claim_id": "f6074b30-d81c-4e53-b3a4-f2a8d3f5fe8a",
+      "result_id": "b05e002e-ca09-43e0-9b21-3d1db574ff5c"
+    },
+    {
+      "claim_id": "235f4244-8e01-4dba-b711-5fa385b1cc97",
+      "result_id": "b05e002e-ca09-43e0-9b21-3d1db574ff5c"
+    },
+    {
+      "claim_id": "f3deaebc-ea20-4bf7-b34d-17ad925109b7",
+      "result_id": "b05e002e-ca09-43e0-9b21-3d1db574ff5c"
+    },
+    {
+      "claim_id": "a38d07fb-79a5-4468-a3ef-23e72722c2c1",
+      "result_id": "b05e002e-ca09-43e0-9b21-3d1db574ff5c"
+    },
+    {
+      "claim_id": "b6e48954-9b6d-4bdb-99a0-0f413765c16f",
+      "result_id": "9cf4f1e6-fdda-4d94-9b2a-ed0207b3d5a6"
+    },
+    {
+      "claim_id": "681b8a4c-356b-4f93-97b6-82e90a58f3a8",
+      "result_id": "9cf4f1e6-fdda-4d94-9b2a-ed0207b3d5a6"
+    },
+    {
+      "claim_id": "3f17c7f8-105d-4227-8b10-48fa9f86c82f",
+      "result_id": "edc8bb32-fd77-4773-8e4e-fd0bf222c6d6"
+    },
+    {
+      "claim_id": "35411b83-38c9-459f-92b3-28d4e1533383",
+      "result_id": "edc8bb32-fd77-4773-8e4e-fd0bf222c6d6"
+    },
+    {
+      "claim_id": "f8892968-e4f9-461c-a793-2f9c1589e3bb",
+      "result_id": "ccbe14be-1019-47c6-b006-6fa1a39efbc6"
+    },
+    {
+      "claim_id": "cac27172-435a-40a3-a89e-6b78668e223e",
+      "result_id": "31225365-14ce-4e9f-9e21-9b2920daa034"
+    },
+    {
+      "claim_id": "491d9cb0-755a-432f-b92f-e1af164597d7",
+      "result_id": "31225365-14ce-4e9f-9e21-9b2920daa034"
+    },
+    {
+      "claim_id": "9ddfc4d0-cab1-4dd7-985a-33ba00d904b8",
+      "result_id": "2b67c5fc-b915-4f93-8e73-95c3a7587b5a"
+    },
+    {
+      "claim_id": "7c10aead-577f-4623-8d1d-360677e771f3",
+      "result_id": "2b67c5fc-b915-4f93-8e73-95c3a7587b5a"
+    }
+  ],
+  "comparisons": []
+}

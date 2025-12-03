@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "pyControl is an open-source system comprising three main components: a Python-based framework for defining tasks as extended state machines that run on microcontrollers, hardware modules for building behavioral setups, and a GUI for running high-throughput experiments, all with extensive documentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C22-C28 collectively describe the system architecture and are consistently supported throughout the manuscript with detailed technical descriptions, figures (Figure 1, 2), and implementation details. The claims are descriptive of what was developed and are directly demonstrated by the provided code examples and system diagrams.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C108",
+      "C109",
+      "C133"
+    ],
+    "result": "pyControl makes behavioral experiments quicker, easier, and cheaper to implement at scale while facilitating communication and reproducibility through readable syntax and self-documenting features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C108-C109, and C133 represent the main value propositions of the system. These are supported by the design features described (C28, C37-C38, C74-C77), the cost comparison with commercial systems (C120), and demonstration of successful implementation across three diverse behavioral paradigms (C89-C107). The readability claim is illustrated in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "pyControl hardware consists of a breakout board interfacing a pyboard microcontroller (Arm Cortex M4, 168 MHz, 192 KB RAM) with behavior ports and various devices, connecting to computers via USB, with multiple setups controllable from one computer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C33-C34, and C53-C61 describe the hardware architecture with specific technical specifications. These are supported by detailed descriptions, Figure 3, Table 1, and supplementary figures showing actual hardware configurations. The claim about running 24 setups in parallel (C56) is explicitly stated as tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "pyControl tasks are implemented as extended state machines where the current state determines responses to events, with state behavior functions containing arbitrary MicroPython code and special entry/exit events for state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe the task definition formalism. These are well-supported by the detailed explanation in the Task definition syntax section, the complete example in Figure 1 showing both code and state diagram, and the distinction between finite and extended state machines is explicitly made (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The pyControl framework (~1000 lines of Python) implements an event queue system with prioritized processing: hardware interrupts have top priority, event processing secondary, and computer communication lowest priority, ensuring low-latency responses under load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe the framework implementation and are supported by the Framework implementation section and Figure 2 which clearly illustrates the information flow and priority system. The design rationale and its consequences for performance are explicitly stated (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Framework performance validation shows response latency of 556\u00b117 \u03bcs (low load) and 859\u00b1241 \u03bcs (high load, 99.6% <2ms), with timing accuracy of -220\u00b1282 \u03bcs (low load) and -10\u00b1353 \u03bcs (high load, 99.5% errors <1ms), sufficient for most neuroscience applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 present quantitative performance data supported by detailed methods (C134-C135), Figure 5A-D showing distributions, and explicit statistical reporting. The conclusion (C84) is appropriately qualified as applying to \"the great majority of neuroscience applications\" and is supported by the empirical measurements under realistic and extreme load conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "MicroPython's garbage collection takes a couple milliseconds and pauses code execution but not interrupts; timers elapsing during garbage collection are processed afterward, and digital inputs are registered with correct timestamps but processed after completion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe garbage collection effects and are supported by explicit experimental characterization shown in Figure 5E-F with detailed methods. The behavior is clearly demonstrated with timing diagrams showing the specific effects on timers and inputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "In the 5-CSRTT validation with 8 C57BL/6 mice, attention challenges decreased accuracy (p<0.05) and increased omissions (p<0.05), impulsivity challenges increased premature responses (p<0.05), and atomoxetine (2 mg/kg) reduced premature responding and increased accuracy (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 present behavioral results with statistical support. The experimental design is detailed in Materials and methods (C136-C139), results are shown in Figure 6C-E with error bars, statistical tests are specified (paired t-tests, repeated measures ANOVA), and the atomoxetine effect is consistent with cited prior work. Sample sizes are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In the vibrissae-based object localization task, three head-fixed mice on a treadmill learned to discriminate pole positions, reaching 75% correct within 5-9 days, with learning characterized by reduced anticipatory licking and increased stimulus-locked responding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 describe the head-fixed task and learning progression. These are supported by detailed methods (C140-C141), Figure 7 showing the setup, learning curves, and behavioral changes, and the running behavior observation (C98) is consistent with cited literature. The behavioral changes from early to late training are clearly illustrated in Figure 7E-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "In the social decision-making task, focal animals increased trial completion over 7 days (F(6,42)=12.566, p=0.000004) without side bias (p>0.27), while recipient animals developed strong preference for the active poke (F(12,24)=3.908, p=0.002) with ~95% of pokes to the active side by training end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 present training results with appropriate statistical tests (repeated measures ANOVA, t-tests) and specific F-statistics and p-values. Results are shown in Figure 8C-D with error bars. Methods are detailed (C142-C144) including sample sizes (12 mice). The proof-of-concept social session data (Figure 8F) demonstrates system functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The GUI provides Run task and Experiments tabs for single and multi-setup operation, implements self-documenting features storing task files and parameter changes with data, is implemented in Python using PyQt/PyQtGraph, and is cross-platform (Windows/Mac/Linux).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C66-C71 describe GUI functionality and implementation. These are supported by the Graphical user interface section, Figure 4 showing the interface in use, and explicit statements about implementation (C70) and cross-platform compatibility (C71). The self-documenting features are described in detail and their purpose for reproducibility is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "pyControl data are saved as text files with automatic millisecond-timestamped events/states, task files are copied with file hashes to data folders, and parameter changes from defaults are recorded, promoting replicability through self-documentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe data management features and are supported by the pyControl data section, Figure 1\u2014figure supplement 1 showing an example data file, and explicit descriptions of the self-documenting mechanisms. The design rationale for reproducibility (C77) is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "pyControl implements synchronization with external systems using sync pulses with random inter-pulse intervals sent to other systems, ensuring unique matching of pulse sequences even with missing pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C63-C65 describe the synchronization method. The approach is clearly explained with its rationale (random intervals for unique matching), and the robustness to missing pulses is explicitly stated. A Python module for time conversion is mentioned, indicating practical implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "pyControl's design runs user Python code directly on the microcontroller (unlike Bpod which translates to C++ firmware), avoiding separation of task logic but limiting computational resources and computer access; an API is being developed to address these limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 present design comparisons and tradeoffs. The comparison with Bpod (C111) is factual and the advantages (C112) and disadvantages (C113-C114) are clearly stated. The future development (C115) acknowledges current limitations. This represents honest assessment of design choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "pyControl hardware design prioritizes connector flexibility over specialization (unlike Bpod's function-specific connectors) and implements functions on the main microcontroller rather than external modules, making hardware simpler and cheaper (\u20ac250 vs $765 for Bpod).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 compare hardware design philosophies with Bpod. The design differences are clearly explained (C116-C118), the cost comparison (C120) provides specific prices, and the consequence (C119) logically follows. The comparison is fair and acknowledges that different approaches have different merits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Bonsai uses a different dataflow-based formalism (not state machines) and can handle diverse data types including video; while more powerful for complex processing, pyControl may be more intuitive for state machine tasks, is designed for high-throughput parallel experiments, and the systems are often complementary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C129 compare pyControl with Bonsai fairly. The fundamental difference in formalism (C121-C122) is clearly stated with citation, capabilities are accurately described (C123-C125), and reasons to choose each system (C126-C128) are balanced. The complementary nature (C129) is supported by a cited example of combined use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Limited microcontroller computational resources preclude generating complex visual stimuli, making pyControl unsuitable for most visual physiology in its current form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 honestly acknowledges a limitation of the system. This is a logical consequence of the design choice to run tasks on microcontrollers (C24, C110) and is appropriately qualified as applying to \"most visual physiology in its current form.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "pyControl is under active development with ongoing work on a home cage training system for socially housed animals and hardware for larger-scale setups with up to 68 behavior ports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 describe ongoing development. These are straightforward statements about future work that are appropriate for a Discussion section. The specific details (home cage system, 68 ports) indicate concrete development plans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The introduction establishes that laboratory behavioral tasks are essential tools, commercial systems have limitations (inflexibility, poor usability, high cost), custom systems result in duplication of effort and poor documentation, and reproducibility requires readable, documented task code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 provide background and motivation. These are appropriately supported by citations (C8, C10, C13, C14, C16) and represent reasonable characterizations of the field's challenges. The arguments build logically to justify the need for pyControl.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The 5-CSRT is a long-standing and widely used assay for measuring sustained visual attention and motor impulsivity in rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is a factual statement about an established behavioral task, supported by appropriate citations (Carli et al., 1983; Bari et al., 2008). This provides necessary context for the application example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The social decision-making task is adapted from that developed for rats by M\u00e1rquez et al., 2015.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 appropriately cites the source of the task design. This is a straightforward attribution that provides context for the application example.",
+    "result_type": "MINOR"
+  }
+]

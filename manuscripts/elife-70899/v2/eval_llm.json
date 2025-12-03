@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study quantified mitochondrial features (CS activity, mtDNAcn, and RC enzyme activities) across purified immune cell subtypes from 21 participants. B cells had the highest mtDNAcn (451 copies/cell), neutrophils the lowest (128 copies/cell), and monocytes showed the highest RC complex activities. Cell types differed by up to 3.52-fold in mitochondrial content and activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-17, C38-45, and C75-78 collectively establish the cohort design (21 participants, 100ml blood), methodological approach (FACS sorting, mitochondrial phenotyping), and quantitative differences in mitochondrial features across cell types. The data are internally consistent, with specific numerical values provided for mtDNAcn and enzymatic activities, and supported by referenced figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C46",
+      "C98",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "PBMC mitochondrial measurements are confounded by cell type composition and platelet contamination. B cell abundance explained 61% of variance in PBMC CS activity (r=0.78, p<0.0001). PBMCs had up to 2.9-fold higher CS, CI, and CII activities than individual cell subtypes, and exhibited mitotypes similar to innate immune cells rather than representing a mixture of constituent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-30, C46, C98, C100, C102-103 demonstrate that PBMC measurements are confounded by both cell composition and platelet contamination. The strong correlation between B cell abundance and PBMC CS activity (r=0.78) with 61% shared variance provides quantitative evidence. The observation that PBMCs have higher activities than any constituent cell type directly supports platelet contamination. The mitotype analysis showing PBMCs cluster with innate cells rather than representing a mixture further validates the confounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Platelet contamination inflates PBMC mitochondrial measurements. Active platelet depletion decreased mtDNAcn, CS, and RC activities by 9-22% (except CIV), while platelet-enriched fractions showed 23-100% higher activities. Platelet count decreased ~6% per decade (24% decline from age 20-60), consistent with large epidemiological studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C31-37 provide direct experimental evidence for platelet contamination effects. The platelet depletion experiment (C35-36) quantifies the magnitude of inflation (9-22% for most features, 23-100% in enriched fractions). The age-related decline in platelet count (C32-33) is validated by citations to large epidemiological studies (>40,000 individuals). The composite MHI being minimally affected (C37) suggests this metric may be more robust, though this requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C101"
+    ],
+    "result": "Cell subtype-specific analyses revealed sex and age differences in mitochondrial features that were masked in PBMCs. Women showed 26-29% higher CS and CI activities in specific cell types (p<0.05), while men showed higher mtDNAcn in monocytes/neutrophils. Age was positively correlated with mtDNAcn in 7/8 cell subtypes (10% increase per decade in CD4+ na\u00efve T cells and monocytes, r=0.54, p<0.05), but PBMCs showed no age correlation (r=0.008-0.15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3-4, C53-67, C86-89, C101 describe sex and age associations with mitochondrial features. While specific statistically significant findings are reported (e.g., C53-54, C64-66), the authors explicitly acknowledge the exploratory nature of these analyses due to small sample size (n=21, C114) and lack of adjustment for multiple testing (stated in text). The contrast between cell-specific findings and null results in PBMCs (C67, C101) is compelling, but the authors themselves state these findings \"require validation in larger cohorts.\" The positive correlation with age contradicts prior literature on age-related mtDNAcn decline, which the authors acknowledge and speculate about (C112-113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C99",
+      "C104",
+      "C115"
+    ],
+    "result": "A proof-of-concept repeated-measures study in one individual over 9 weeks validated cell type differences and revealed substantial week-to-week variation in mitochondrial features (4.1-64.4% CV). The within-person variation was similar in magnitude to between-person differences in the cohort, and exceeded technical variation of the assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C68-74, C99, C104, C115 describe the repeated-measures design and findings. While the data demonstrate substantial temporal variation (C71-72) that exceeds technical variation, this is explicitly described as \"proof-of-concept\" in a single individual (C5, C115). The generalizability of these findings is unknown. The observation that within-person variation matches between-person variation (C73) is striking but requires replication. The authors appropriately acknowledge this limitation (C115) and call for adequately powered studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Different mitochondrial features showed varying degrees of co-regulation across cell subtypes. CS activity and mtDNAcn were moderately co-regulated (average r=0.63 and 0.53), while RC enzymes showed markedly lower correlations between cell types. MHI showed moderate positive co-regulation (average r=0.37). PBMCs exhibited moderate to no correlation with purified cell subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-52 describe patterns of co-regulation across cell types. The data show differential co-regulation: mitochondrial content features (CS, mtDNAcn) are moderately correlated across cell types, while RC enzymes show lower correlations. This is biologically plausible given that RC complexes are regulated independently. The finding that PBMCs correlate poorly with purified subtypes (C52) reinforces the confounding issues. The correlation values are explicitly stated and referenced to figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C79"
+    ],
+    "result": "Mitotype analysis revealed qualitative differences between innate and adaptive immune cells. Innate cells (neutrophils, monocytes, NK cells) clustered together with lower mtDNAcn and higher RC activity, while lymphocytes showed higher mtDNAcn and lower RC activity. Memory T cells showed 26-29% lower mtDNA density but 8-23% higher RC activity per mitochondrion compared to na\u00efve cells (CD4+ only). Mitotypes were conserved across individuals (12.5-fold larger variation between cell types than between individuals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-85, C79 describe the mitotype analysis, which integrates multiple mitochondrial features into multivariate phenotypes. The clustering of innate vs. adaptive cells (C80-81) and the na\u00efve-to-memory transition (C82-84) are supported by the data and consistent with known immunometabolic differences. The conservation of mitotypes across individuals (C85) provides evidence for stable, cell-type-specific phenotypes. The mitotype approach is conceptually sound and adds interpretive value beyond individual metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mitotypes showed systematic associations with age. RC activity per CS activity was predominantly positively correlated with age (p<0.05), while RC activity per genome relative to mtDNA density was negatively correlated with age (p<0.05), with correlations ranging from r=-0.67 to 0.75.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-92 describe age associations with mitotypes. While the systematic patterns are reported with p-values, these are exploratory analyses in a small cohort (n=21) without adjustment for multiple testing. The interpretation that this reflects decreased RC output per genome with aging is speculative. These findings require validation in larger, adequately powered studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Blood biomarker associations with mitochondrial features were weak at the cohort level (average r=0.23) but 70% stronger in the repeat participant (average r=0.39, p<0.0001). Lipid levels (triglycerides, cholesterol, LDL, HDL) were positively correlated with CS activity and mtDNAcn in innate immune cells, accounting for 53% and 47% of variance, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-96 describe biomarker associations. The contrast between weak cohort-level and stronger within-person associations (C93-94) is interesting and consistent with the authors' discussion of between-person vs. within-person variation. However, the within-person data come from a single individual (n=1\u00d79 timepoints), limiting generalizability. The lipid-mitochondria associations (C95-96) are strong but require replication. The authors appropriately note limitations and cite supporting literature for lipid signaling effects on mitochondrial biogenesis (C96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Cell subtype distributions varied by sex and age. Men had 66% fewer CD4+ na\u00efve T cells than women (p<0.05, g=0.71-0.93) and 28% more monocytes. CD8+ na\u00efve T cell abundance decreased with age (63% fewer in 50s vs. 20s, p<0.01), while effector memory CD4+ and central memory CD8+ cells increased (r=0.31). Between-person variation in cell subtype proportions ranged up to 10-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-26 describe cell subtype distributions and their variation by sex, age, and between individuals. The sex differences (C18-19, C24-25) are supported by effect sizes and p-values, and consistent with cited literature (M\u00e1rquez et al., 2020). The age-related changes (C21-23) align with known immunological aging patterns and are supported by citations. The large between-person variation (C20) is documented with specific ranges. These findings establish the rationale for cell-type-specific analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study confirmed and extended prior knowledge of bioenergetic differences across immune cell types, but had several limitations: small cohort size (n=21) limiting statistical power, single-participant repeated-measures design, requirement for 5\u00d710^6 cells limiting analysis to six most abundant subtypes, pooling of CM and EM subtypes, and lack of cytomegalovirus testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C114-118 acknowledge the study's contributions and limitations. The authors appropriately contextualize their work relative to prior studies (C97) and transparently describe limitations (C114-118). These limitations are significant and affect interpretation of the results, particularly for the exploratory sex/age analyses and the single-participant repeated-measures study. The authors' acknowledgment of these limitations is appropriate and necessary for proper interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The introduction and discussion cite extensive prior literature on mitochondrial biology, immunometabolism, cell type differences, age-related changes in mtDNAcn, and sex differences. The authors speculate that the observed positive correlation between age and mtDNAcn could reflect compensatory upregulation due to mtDNA mutations or impaired mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-15, C106-113 represent background knowledge and speculation based on cited literature. The citations appear appropriate and support the study's rationale. The speculation about age-related mtDNAcn increases (C112-113) is reasonable given the unexpected finding contradicting prior whole blood studies, but remains speculative and requires validation. These claims provide context but are not primary findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C99",
+      "C100"
+    ],
+    "result": "The study enrolled 288 ALS patients from a population-based registry in Stockholm, Sweden (2015-2020), with up to 5-year follow-up. A subset of 92 patients underwent detailed flow cytometry analysis. The cohort was representative of the source population and included comprehensive clinical and genetic characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C77-C94, C99-C100 collectively describe a well-characterized cohort with clear inclusion/exclusion criteria, standardized diagnostic procedures, and validated laboratory methods. The representativeness is supported by comparison with the source population (C86), and the methodology is appropriately detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Leukocytes, neutrophils, and monocytes increased progressively over time since ALS diagnosis, with statistically significant trends (p<0.05) that remained significant after multiple testing correction. Lymphocytes showed no clear temporal trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C24 are supported by longitudinal data presented in Figure 1 and Table 1, with appropriate statistical analysis (linear mixed models) and correction for multiple testing. The temporal patterns are clearly visualized and quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Higher levels of leukocytes, neutrophils, and monocytes were negatively correlated with ALSFRS-R scores (functional status) but not with disease progression rate. Lymphocytes showed no correlation with either outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C43 are supported by GEE model analysis presented in Table 2. The distinction between cross-sectional functional status and longitudinal progression rate is appropriately made, with statistical significance clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C37"
+    ],
+    "result": "Leukocytes, neutrophils, and monocytes were not associated with risk of death or disease progression rate in ALS patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C37 are supported by Cox model analysis (Supplementary file 4) showing no significant associations. This negative finding is important and appropriately reported with adequate statistical power given the sample size (N=288, 163 events).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C44",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Higher neutrophil-to-lymphocyte ratio (NLR) was associated with increased risk of death (HR=1.31, 95% CI: 1.13-1.52) and differed across disease progression rate groups, consistent with prior literature showing NLR as a prognostic marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C44, C54-C56 are supported by Cox model analysis and are consistent with prior ALS studies. The effect size is modest but statistically significant, and the finding is biologically plausible given NLR's role in other diseases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Higher NK cell counts were associated with lower risk of death (HR=0.61, 95% CI: 0.42-0.88). This finding is supported by prior literature showing NK cells can have both cytotoxic and neuroprotective roles depending on context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by Cox model analysis in the FlowC cohort (N=92) with adequate statistical significance. Claims C57-C63 provide appropriate biological context from prior literature, though the mechanism in human ALS remains unclear. The protective association is novel and warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65"
+    ],
+    "result": "Higher proportions of Th2-differentiated CD4+ central memory T cells were associated with lower risk of death (HR=0.64, 95% CI: 0.48-0.85), consistent with animal studies showing Th2 cells suppress neuroinflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by Cox model analysis with clear statistical significance. Claims C64-C65 provide appropriate biological context from animal studies. The finding aligns with the expected neuroprotective role of Th2 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C69",
+      "C70"
+    ],
+    "result": "Higher proportions of CD4+ EMRA T cells were associated with increased risk of death (HR=1.39, 95% CI: 1.01-1.92). Prior studies suggest these cells can exhibit cytotoxic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is supported by Cox model analysis, though the confidence interval is wide and barely excludes 1.0, suggesting borderline significance. Claims C69-C70 provide biological context, though from a different disease context (Dengue). The finding is novel but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Higher proportions of CD8+ T cells were associated with increased risk of death (HR=1.38, 95% CI: 1.03-1.86). Animal studies show CD8+ T cells can selectively kill motoneurons via Fas and granzyme pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by Cox model analysis with borderline statistical significance (CI barely excludes 1.0). Claims C66-C68 provide strong biological plausibility from animal models. The finding is novel and mechanistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C48",
+      "C49"
+    ],
+    "result": "None of the lymphocyte subpopulations were correlated with functional status (ALSFRS-R) or disease progression rate in the FlowC cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C48-C49 are supported by GEE model analysis (Supplementary file 6). This negative finding contrasts with the survival associations and suggests lymphocyte subpopulations may be prognostic markers for mortality but not functional decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Greater longitudinal increases in leukocytes, neutrophils, and monocytes were associated with greater longitudinal declines in ALSFRS-R scores, as shown by GEE analysis in Table 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by appropriate longitudinal analysis using GEE models (Table 3). This finding strengthens the cross-sectional associations (C39-C41) by demonstrating that within-individual changes in immune cells track with functional decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The study suggests a dual role of immune cells in ALS prognosis: neutrophils and monocytes primarily reflect functional status, while NK cells and T lymphocyte populations act as prognostic markers for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 represent appropriate synthesis of the findings (C2-C10, C37-C49). The interpretation is supported by the differential associations observed: myeloid cells correlate with function but not survival, while lymphocyte subsets predict survival but not function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C28"
+    ],
+    "result": "Most cell populations in ALS patients were within normal ranges, except CD8+ CM cells, CD4+HLA-DR+CD38+ cells, and CD8+HLA-DR+CD38+ cells, which were persistently elevated above reference ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C28 are supported by comparison with established reference ranges (Supplementary file 2, Figure 1-supplement 3). The elevated activated T cell populations suggest ongoing immune activation in ALS patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Riluzole treatment was associated with increased leukocytes, neutrophils, and monocytes, but decreased lymphocytes, compared to pre-treatment levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C26 are based on observational comparison (Figure 1-supplement 2) without formal statistical testing or adjustment for disease progression. The timing of treatment initiation relative to disease stage is unclear, making it difficult to separate treatment effects from disease progression. This requires controlled analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C29",
+      "C30"
+    ],
+    "result": "No clear temporal trend was observed for lymphocyte subpopulations overall, though age/sex-adjusted analysis showed decreasing naive CD4+ T cells and increasing CD4+ EMRA, CD4+HLA-DR+CD38\u2212, and CD8+HLA-DR+CD38\u2212 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C29-C30 are supported by longitudinal analysis (Supplementary file 3). The lack of overall trend (C27) but presence of adjusted trends (C29-C30) suggests age/sex confounding and highlights the importance of adjusted analysis in this context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C76"
+    ],
+    "result": "Male and female ALS patients showed different lymphocyte subpopulation profiles, with males showing lower CD4+, naive CD4+, and Th2 CM cells but higher CD4+ EM, CD4+ EMRA, CD8+, and activated T cells, especially early after diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C76 are supported by sex-stratified analysis (Figure 1-supplement 4). The sex differences are consistent with known immunological differences between males and females (C74) and may contribute to sex differences in ALS incidence and progression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Patients with limb onset had lower levels of CD8+ CM and CD4+HLA-DR+CD38+ cells compared to patients with other sites of onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by stratified analysis, though the biological significance is unclear. This may reflect different disease mechanisms or immune responses based on site of onset, but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "C9orf72 expansion carriers showed higher NK cells and T cells but lower naive CD4+ T cells and CD8+ EM cells compared to non-carriers, consistent with prior literature showing C9orf72 is associated with immune features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C71-C73 are supported by stratified analysis (Figure 1-supplement 5) and prior literature. However, the small number of C9orf72 carriers limits statistical power, and the authors appropriately note this limitation. The findings require validation in larger cohorts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "During median follow-up of 1.1 years, 163 deaths or use of invasive ventilation occurred among 288 patients in the main cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides clear outcome data with adequate event rate (56.6%) for survival analysis. The composite outcome (death or invasive ventilation) is appropriate for ALS studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study used appropriate statistical methods including linear mixed models for temporal trends, Cox models for survival, and GEE models for functional outcomes, with correction for multiple testing using Benjamini-Hochberg FDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 describe appropriate statistical methodology for longitudinal cohort data with repeated measures. The use of multiple testing correction (C105) is appropriate given the number of cell types examined. The methods are clearly described and appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors speculate that increased neutrophils/monocytes might indicate muscle damage, and that higher peripheral NK cells might reflect lower CNS infiltration, but acknowledge these mechanisms are uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C109-C110 are explicitly speculative (marked as SPECULATION in evidence_type). While biologically plausible, these mechanistic interpretations are not directly tested in the study and require experimental validation. The authors appropriately present these as hypotheses rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study represents the first comprehensive examination of immune cell dynamics in ALS prognosis, with strengths including large representative sample, rich clinical data, long follow-up, and repeated measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 appropriately characterize the study's novelty and strengths. The claim of being 'first' (C111) is qualified with 'to our knowledge' and is supported by the comprehensive nature of the immune profiling. The stated strengths (C112-C116) are verifiable from the methods and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Study limitations include heterogeneous sampling intervals (not predefined), lack of B-cell and Treg analysis in the FITMaN panel, and inability to make causal inferences due to observational design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 appropriately acknowledge important limitations. The heterogeneous sampling (C117-C118) is a significant limitation for longitudinal analysis, though sensitivity analyses partially address this. The lack of certain cell types (C119) and causal inference limitations (C120) are appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction appropriately contextualizes ALS as a devastating disease with unknown etiology, established neuroinflammatory features, and gaps in prior immune cell studies (limited sample sizes, lack of longitudinal data).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 provide appropriate background and rationale. The characterization of ALS (C13-C15) is accurate, the summary of prior work (C16-C18) is supported by citations, and the critique of prior studies (C19-C20) appropriately motivates the current study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C107",
+      "C108"
+    ],
+    "result": "Prior studies have shown increasing leukocytes/neutrophils in ALS, accumulating monocytes in ALS models, and correlations with disease severity, though the functional relevance in human ALS remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53, C107-C108 appropriately summarize prior literature with citations. The acknowledgment that functional relevance in humans is unclear (C108) is important and honest, highlighting the gap this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Sex-based immunological differences exist and may contribute to disease variations, with prior studies showing sex-specific effects of NK cells and neutrophils in ALS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 provide appropriate context for the sex-stratified analyses with supporting citations. This justifies the sex-stratified analyses performed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ALSFRS-R is the gold standard measure of disability progression in ALS, with higher scores indicating better function. Progression rate is an independent prognostic predictor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 accurately describe established ALS outcome measures with appropriate citations. These are standard measures in ALS research and are appropriately used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The findings may provide insights for cell-based therapy in prolonging survival in ALS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 is speculative about therapeutic implications. While the prognostic associations identified could inform therapeutic targets, the observational design and lack of mechanistic studies limit the ability to make therapeutic recommendations. This requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

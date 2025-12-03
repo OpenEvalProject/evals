@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "A quantitative, high-throughput screen of 7460 protein fragments tiling all 164 yeast transcription factors identified 150 activation domains (ADs) in 96 TFs, with 112 being previously unknown. The screen showed high signal-to-noise ratio with 88% of fragments activating less than twofold, while 451 tiles showed significant activation (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C23 collectively describe a comprehensive experimental screen with appropriate controls, statistical thresholds, and validation against previously known ADs (75% overlap). The methodology includes proper quantitation, reproducibility checks, and functional validation showing TFs with ADs upregulate more genes than those without ADs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Activation domains are enriched in negative charge and hydrophobic content, with activation strongest for fragments high in both. Acidic residues are necessary for activation (except for one Gln3 AD), with Asp promoting activation more strongly than Glu. ADs share no common sequence motifs, and activation strength is determined by acidic and hydrophobic content rather than specific residue positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C36 are supported by systematic mutagenesis experiments showing gradual loss of activation with removal of acidic or hydrophobic residues, with effects related to number rather than position of mutations. The 9aaTAD motif showed poor predictive power (only 10% activation), and de novo motif searches found no shared motifs. Single amino acid mutations had minimal effects (94% <2-fold change).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A deep learning model (PADDLE) was developed that explained 81% of observed variation in TF tiles withheld from training (R\u00b2=0.81), markedly outperforming an amino acid composition-based predictor (66% variation explained). PADDLE accurately predicted activation of scrambled sequences (R\u00b2=0.61), mutants and orthologs (R\u00b2=0.90), and identified core ADs within 20 amino acids in 85% of ADs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C49 describe PADDLE's development and validation across multiple independent test sets including withheld TFs, scrambled sequences, and mutants. The model's performance is quantified with appropriate metrics (R\u00b2 scores, AUPRC=0.805). Experimental validation of 13-aa fragments showed high accuracy (R\u00b2=0.84), and predictions identified key residues (Trp, Phe, Leu) as most important for activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44",
+      "C100"
+    ],
+    "result": "PADDLE predicted 236 high-strength and 366 moderate-strength ADs in human TFs, with experimental validation showing 92% (23/25) of randomly selected predicted ADs activated luciferase expression in HEK293T cells, demonstrating conservation of the acidic activation mechanism across eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C43, C44, C100 demonstrate successful cross-species prediction with rigorous experimental validation. The 92% validation rate (23/25) with random selection provides strong evidence for PADDLE's accuracy on human sequences. However, the sample size is relatively small (n=25), and the validation is limited to a single cell type and reporter system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Core ADs exhibit two distinct activation mechanisms: composition-driven (64% of cADs) where scrambling has minimal effect, and structure-driven (32% of cADs) requiring specific residue positioning and helical structure. Composition-driven activation correlates with high hydrophobic content (r=-0.51, p=0.006), while structure-driven activation requires the LxxLL motif for Leu-rich sequences and N-terminal positioning of acidic residues for Phe/Trp-rich sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C61 are supported by systematic experiments on 28 core ADs with scrambling, proline insertion, and designed 9mer sequences. The correlation between proline sensitivity and wild-type-to-scramble ratio (r=0.842) strongly supports the link between structural and sequence constraints. The LxxLL motif analysis in Leu 9mers is statistically significant (p<10\u207b\u2078) and functionally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Nearby clusters of hydrophobic residues inhibit activation, as demonstrated by the Rds1 AD where extending the sequence by 8 amino acids (5 hydrophobic) abolished activation, and systematic testing showing high-density hydrophobic residues completely inhibit activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by experimental data on Rds1 and a library of 2177 random 20-aa sequences flanking the Pdr1 cAD. The systematic variation of charge and hydrophobic content in flanking regions demonstrates that hydrophobic clusters at high density completely inhibit activation, while positive charge has additive inhibitory effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C113"
+    ],
+    "result": "73% of ADs bound the Med15 subunit of Mediator in mRNA display pull-down experiments, with binding strength directly proportional to activation strength. Med15 binding and activation were strongly correlated for mutants with systematically removed aromatic residues, suggesting Mediator recruitment is a key driver for gene activation determined largely by AD binding to Med15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C64-C70, C113 are supported by high-throughput mRNA display experiments with appropriate controls and reproducibility (r>0.90 between replicates). The quantitative correlation between Med15 binding and activation across thousands of wild-type and mutant sequences provides strong evidence for the mechanistic link. However, the inference that Mediator recruitment is the 'key driver' (C70) is somewhat overstated as other factors may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C114"
+    ],
+    "result": "27 ADs (18%) bound a five-protein TFIID subcomplex, but all TFIID-binding ADs also bound Med15, and ADs bound more weakly to TFIID than to Med15 under identical conditions, suggesting TFIID plays a secondary role to Mediator in most TF-directed activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C114 are supported by parallel pull-down experiments with TFIID and Med15 under identical conditions. The complete overlap of TFIID-binding ADs with Med15-binding ADs and the weaker binding to TFIID provide evidence for a secondary role. However, the conclusion about TFIID's role is somewhat speculative as the experiments only measure binding, not functional contribution to activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C92",
+      "C93",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Structural modeling using FlexPepDock showed that ADs interact with Med15 ABDs without shape complementarity ('fuzzy' binding), with hydrophobic residues of most cADs incompletely buried (>20% solvent-exposed in over half of structures). The 10 best-scoring models of nearly every cAD adopted six or more distinct binding poses, and Leu and Phe residues showed similar binding position distributions despite large differences in size and shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C74-C78, C92-C93, C117-C120 are supported by computational peptide docking of 28 core ADs to two Med15 ABDs (50,000 models per interaction). The structural models are validated by comparison to NMR data for the Pdr1 AD and consistency with proline insertion experiments. However, computational models have inherent limitations and the 'fuzzy binding' interpretation, while consistent with the data, represents one possible explanation for the observed structural diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C135"
+    ],
+    "result": "Multiple core ADs or DNA-bound TF dimers show synergistic activation: 40 of 47 pairs of tandem cADs activated more strongly than expected from individual cADs (4.0-fold median increase). Surface plasmon resonance experiments showed Mediator bound Gcn4-DNA complexes with KD=14\u00b12 nM and half-life of 2.7\u00b10.2 min, with half-life increasing to 16 min with six Gcn4 motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C135 are supported by systematic measurements of 47 cAD pairs and SPR experiments with DNA templates containing 1-6 Gcn4 motifs. The synergistic effects are quantified and statistically significant. The SPR experiments provide kinetic parameters with error estimates. The interpretation that increased half-life results from recapture by neighboring ADs is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C82",
+      "C83",
+      "C84",
+      "C126",
+      "C128"
+    ],
+    "result": "Mediator binding to Gcn4-DNA complexes was unaffected by large excess of free Gcn4 (up to 250-fold), showing that interacting Mediator and Gcn4 molecules can exchange rapidly. This facilitated exchange arises from multiple binding sites and fuzzy nature of the Gcn4-Mediator interaction, allowing a second Gcn4 molecule to interact with Gcn4-bound Mediator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C82-C84, C126, C128 are supported by SPR experiments showing minimal effect of up to 160-250-fold excess Gcn4 on Mediator binding kinetics. The experiments were performed with two different systems (free Gcn4 and EcoRI-Gcn4 fusion) to control for different potential artifacts. The facilitated exchange mechanism is a reasonable interpretation of the data, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C95"
+    ],
+    "result": "PADDLE predictions identified 290 activating fragments across 229 nuclear-localized non-TF proteins in yeast, including ADs in all major coactivator and chromatin modifying complexes (Mediator, TFIID, cohesin, condensin, SAGA, RSC, SWI/SNF, ISWI, NuA4, FACT). These complexes contained 2.9-fold more activating fragments than expected by chance (p<10\u207b\u00b9\u00b2), with 23 ADs predicted to be highly disordered or unresolved in structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C85-C90, C95 are supported by PADDLE predictions validated experimentally, with zero false positives among 291 control fragments with high acidic/hydrophobic content but predicted not to activate. The enrichment in coactivator complexes is statistically significant (p<10\u207b\u00b9\u00b2). However, the functional significance of these ADs in their native context remains uncertain, as many may be buried or inactive in vivo despite activating when tested in isolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C116",
+      "C122",
+      "C123"
+    ],
+    "result": "Prior work has established that acidic ADs retain activity across species, Mediator is necessary for TF-dependent activation, and transcriptional initiation involves a cycle where Mediator is recruited, orchestrates pre-initiation complex formation, and then dissociates after polymerase release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C116, C122-C123 accurately cite and summarize prior work from the literature. The citations are appropriate and the claims are consistent with established knowledge in the field. These claims provide important context for interpreting the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The activation assay achieved quantitative measurements by inducing aTF binding for a brief, defined period and achieved high precision by restricting measurements to cells with a defined level of aTF expression. Controlling for aTF expression was critical because activation was strongly dependent on aTF abundance, especially at low levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe key methodological features that enabled quantitative, precise measurements. The importance of controlling for aTF expression is demonstrated by data showing strong dependence of activation on aTF abundance. This represents an important technical advance over previous methods that did not control for this confounding variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C91"
+    ],
+    "result": "All ADs in S. cerevisiae employ a shared acidic and hydrophobic basis, with activation arising from an abundance of acidic and bulky hydrophobic residues (especially Asp, Trp, Phe, Leu). Most ADs activate in a composition-driven manner with high hydrophobic content, while ADs with lower hydrophobic content require positioning of hydrophobic residues along one face of an alpha helix. The loose constraints on sequence explain the remarkable diversity and lack of evolutionary conservation of ADs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C103-C107, C91 synthesize findings from multiple experiments (mutagenesis, scrambling, 9mers, structural modeling) into a coherent model. The conclusions are well-supported by the data, though the statement that 'all' ADs employ this basis may be overstated given the Gln3 exception and potential for other mechanisms not detected by the screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "ADpred, a previously published predictor, achieved 93% accuracy on random sequences but only 33% precision and 71% recall on wild-type sequences (AUPRC=0.294), performing only 3.1-fold and 2.3-fold better than random predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 provide a fair comparison to a published method (ADpred) using the authors' experimental data as ground truth. The comparison highlights the importance of training on wild-type sequences rather than random sequences. However, the comparison may not be entirely fair as ADpred was trained on different data and for a different purpose.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The unusual plasticity in AD sequence facilitates spontaneous evolution of new ADs and allows organisms to develop new transcriptional circuits. Activation strength can be adjusted gradually by mutation, and nearly all core ADs could increase their strength with simple mutations, demonstrating that proper regulation requires precisely adjusted rather than maximized activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C112 present evolutionary and functional interpretations of the findings. While the observations (sequence plasticity, gradual tuning, sub-maximal activation) are well-supported, the evolutionary and functional implications are speculative. The claim that 'nearly all core ADs could increase their strength' (C111) is supported by data, but the inference about regulatory requirements is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C124",
+      "C125"
+    ],
+    "result": "Mediator recruitment by TFs is a key driver for gene activation, determined largely by affinity of ADs for Med15. The cycling of Mediator complexes increases responsiveness by requiring repeated steps and freeing Mediator to participate in regulation of other genes. TFs must recruit Mediator in a manner that is specific and high-affinity but still dynamic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C124-C125 synthesize the findings on Med15 binding with prior knowledge about Mediator cycling. The conclusion that Mediator recruitment is a 'key driver' is supported by the strong correlation between Med15 binding and activation. The inferences about the advantages of Mediator cycling are reasonable but somewhat speculative, as they are not directly tested in this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C129",
+      "C130",
+      "C132",
+      "C146"
+    ],
+    "result": "The dynamic nature of transcriptional signaling arises from the fuzzy and multivalent nature of TF-Mediator interactions. Fuzzy interactions allow rapid association and dissociation, and multiple binding sites enable facilitated exchange where a second molecule can invade and facilitate release of the first. These advantageous kinetics provide a rationale for the prevalence of multivalent fuzzy interactions among transcription proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C129-C130, C132, C146 integrate structural, kinetic, and functional data into a mechanistic model. The model is well-supported by the combination of fuzzy binding (structural modeling), facilitated exchange (SPR experiments), and multivalency (synergy experiments). However, the claim that this provides a 'rationale for the prevalence' is somewhat speculative as it assumes evolutionary optimization for these kinetic properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Coactivator ADs may serve multiple roles including auto-inhibition, mediating interactions between coactivators, and enabling phase separation. These interactions could explain why recruitment of the Med2/Med3/Med15 subcomplex suffices to recruit other coactivators. Phase separation may be a macroscopic consequence of high valence and dynamism of coactivator-TF interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C134, C136-C143, C147-C149 present speculative models for the function of coactivator ADs. While the discovery of ADs in coactivators is well-supported (C87-C90), the proposed functional roles are largely speculative and not directly tested. The discussion appropriately cites relevant literature (C139-C141) but the mechanistic proposals remain hypothetical and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127",
+      "C131",
+      "C144",
+      "C145"
+    ],
+    "result": "The apparent paradox of AD structure and function\u2014that AD sequences are abundant among random polypeptides yet bind targets with high specificity, and that AD peptides are disordered yet bind with high affinity\u2014is resolved by understanding that these structural features enable dynamic interactions through rapid yet weak binding to single sites and strong binding yet rapid displacement from multiple sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C131, C144-C145 synthesize the findings into a resolution of a longstanding puzzle in the field. The resolution is well-supported by the combination of structural (fuzzy binding), kinetic (facilitated exchange), and functional (multivalency) data. The comparison to the Fis system (C131) provides additional support from an analogous system.",
+    "result_type": "MAJOR"
+  }
+]

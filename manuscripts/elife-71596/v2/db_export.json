@@ -1,0 +1,2067 @@
+{
+  "submission": {
+    "id": "1acc9cfa-8093-41e6-a3f3-ca7ff2c4f72c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:10:50.718919Z",
+    "updated_at": "2025-12-03T08:10:50.718919Z"
+  },
+  "content": [
+    {
+      "id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "submission_id": "1acc9cfa-8093-41e6-a3f3-ca7ff2c4f72c",
+      "content_type": "manuscript",
+      "content_text": "# USP28 deletion and small-molecule inhibition destabilizes c-MYC and elicits regression of squamous cell lung carcinoma\n\n## Authors\n\n- E Josue Ruiz<sup>1</sup>\n- Adan Pinto-Fernandez<sup>2</sup> ([ORCID: 0000-0003-1693-9664](https://orcid.org/0000-0003-1693-9664))\n- Andrew P Turnbull<sup>3</sup>\n- Linxiang Lan<sup>1</sup>\n- Thomas M Charlton<sup>2</sup>\n- Hannah C Scott<sup>2</sup>\n- Andreas Damianou<sup>2</sup>\n- George Vere<sup>2</sup> ([ORCID: 0000-0002-1154-5212](https://orcid.org/0000-0002-1154-5212))\n- Eva M Riising<sup>1</sup>\n- Clive Da Costa<sup>1</sup>\n- Wojciech W Krajewski<sup>3</sup>\n- David Guerin<sup>4</sup>\n- Jeffrey D Kearns<sup>4</sup> ([ORCID: 0000-0001-7261-5096](https://orcid.org/0000-0001-7261-5096))\n- Stephanos Ioannidis<sup>4</sup>\n- Marie Katz<sup>4</sup>\n- Crystal McKinnon<sup>4</sup>\n- Jonathan O'Connell<sup>4</sup>\n- Natalia Moncaut<sup>5</sup>\n- Ian Rosewell<sup>5</sup>\n- Emma Nye<sup>1</sup>\n- Neil Jones<sup>3</sup>\n- Claire Heride<sup>3</sup> ([ORCID: 0000-0003-1927-9577](https://orcid.org/0000-0003-1927-9577))\n- Malte Gersch<sup>6</sup>\n- Min Wu<sup>4</sup>\n- Christopher J Dinsmore<sup>4</sup>\n- Tim R Hammonds<sup>3</sup>\n- Sunkyu Kim<sup>7</sup>\n- David Komander<sup>8</sup>\n- Sylvie Urbe<sup>9</sup>\n- Michael J Clague<sup>9</sup> ([ORCID: 0000-0003-3355-9479](https://orcid.org/0000-0003-3355-9479))\n- Benedikt M Kessler<sup>2</sup> ([ORCID: 0000-0002-8160-2446](https://orcid.org/0000-0002-8160-2446)) \u2020\n- Axel Behrens<sup>1</sup> ([ORCID: 0000-0002-1557-1143](https://orcid.org/0000-0002-1557-1143)) \u2020\n\n### Affiliations\n\n1. Adult stem cell laboratory, The Francis Crick Institute London United Kingdom\n2. Target Discovery Institute, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom\n3. London Bioscience Innovation Centre, CRUK Therapeutic Discovery Laboratories London United Kingdom\n4. FORMA Therapeutics Watertown United Kingdom\n5. Genetic Manipulation Service, The Francis Crick Institute London United States\n6. Max Planck Institute of Molecular Physiology Dortmund Germany\n7. Incyte Wilmington United States\n8. Ubiquitin Signalling Division, Walter and Eliza Hall Institute of Medical Research, Royal Parade, and Department of Medical Biology, University of Melbourne Melbourne Australia\n9. Cellular and Molecular Physiology, Institute of Translational Medicine, University of Liverpool Liverpool United Kingdom\n10. Cancer Stem Cell Laboratory, Institute of Cancer Research London United Kingdom\n11. Imperial College, Division of Cancer, Department of Surgery and Cancer London United Kingdom\n12. Convergence Science Centre, Imperial College London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nLung squamous cell carcinoma (LSCC) is a considerable global health burden, with an incidence of over 600,000 cases per year. Treatment options are limited, and patient\u2019s 5-year survival rate is less than 5%. The ubiquitin-specific protease 28 (USP28) has been implicated in tumourigenesis through its stabilization of the oncoproteins c-MYC, c-JUN, and \u0394p63. Here, we show that genetic inactivation of Usp28-induced regression of established murine LSCC lung tumours. We developed a small molecule that inhibits USP28 activity in the low nanomole range. While displaying cross-reactivity against the closest homologue USP25, this inhibitor showed a high degree of selectivity over other deubiquitinases. USP28 inhibitor treatment resulted in a dramatic decrease in c-MYC, c-JUN, and \u0394p63 proteins levels and consequently induced substantial regression of autochthonous murine LSCC tumours and human LSCC xenografts, thereby phenocopying the effect observed by genetic deletion. Thus, USP28 may represent a promising therapeutic target for the treatment of squamous cell lung carcinoma.\n\n## Introduction\n\nLung cancer is the leading cause of cancer death worldwide. Based on histological criteria, lung cancer can be subdivided into non-small cell lung cancer (NSCLC) and the rarer small cell lung cancer. The most common NSCLCs are lung adenocarcinoma (LADC) and lung squamous cell carcinoma (LSCC), with large cell carcinoma being less commonly observed. Progress has been made in the targeted treatment of LADC, largely due to the development of small-molecule inhibitors against EGFR, ALK, and ROS1 (Cardarella and Johnson, 2013). However, no targeted treatment options exist for LSCC patients (Hirsch et al., 2017; Novello et al., 2014). Consequently, despite having limited efficacy on LSCC patient survival, platinum-based chemotherapy remains the cornerstone of current LSCC treatment (Fennell et al., 2016; Isaka et al., 2017; Scagliotti et al., 2008). Therefore, there is an urgent need to identify novel druggable targets for LSCC treatment and to develop novel therapeutics.\n\nThe Fbxw7 protein product F-box/WD repeat-containing protein 7 (FBW7) is the substrate recognition component of an SCF-type ubiquitin ligase, which targets several well-known oncoproteins, including c-MYC, NOTCH, and c-JUN, for degradation (Davis et al., 2014). These oncoproteins accumulate in the absence of FBW7 function, and genetic analyses of human LSCC samples revealed common genomic alterations in Fbxw7 (Cancer Genome Atlas Research Network, 2012; Kan et al., 2010). In addition, FBW7 protein is undetectable by immunohistochemistry (IHC) in 69% of LSCC patient tumour samples (Ruiz et al., 2019). Genetically engineered mice (GEM) harbouring loss of Fbxw7 concomitant with KrasG12D activation (KF mice) develop LSCC with 100% penetrance and short latency, as well as LADC (Ruiz et al., 2019). Thus, FBW7 is an important tumour suppressor in both human and murine lung cancer.\n\nThe deubiquitinase USP28 opposes FBW7-mediated ubiquitination of the oncoproteins c-MYC and c-JUN, thereby stabilizing these proteins (Popov et al., 2007). In a murine model of colorectal cancer, deleting Usp28 reduced size of established tumours and increased lifespan (Diefenbacher et al., 2014). Therefore, targeting USP28 in order to destabilize its substrates represents an attractive strategy to inhibit the function of c-MYC and other oncogenic transcription factors that are not amenable to conventional inhibition by small molecules.\n\nHere, we describe the characterization of a novel USP28 inhibitory compound (USP28i) and the genetic as well as chemical validation of USP28 as a promising therapeutic target for LSCC tumours. Using an Frt-Flp and Cre-LoxP dual recombinase system (Sch\u00f6nhuber et al., 2014), we show that Usp28 inactivation in established LSCC results in dramatic tumour regression. Importantly, USP28i treatment recapitulates LSCC regression in both mouse models and human LSCC xenografts. Absence or inhibition of USP28 resulted in a dramatic decrease in the protein levels of c-MYC, c-JUN, and \u0394p63, providing a potential mechanism of action for USP28i. Therefore, USP28 inhibition should be a strong candidate for clinical evaluation, particularly given the paucity of currently available therapy options for LSCC patients.\n\n## Results\n\n### USP28 is required to maintain protein levels of c-MYC, c-JUN, and \u0394p63 in LSCC\n\nTo gain insights into the molecular differences between LADC and LSCC, we investigated the expression of MYC in these common NSCLCs subtypes. MYC was transcriptionally upregulated in human LSCC compared to healthy lung tissue or LADC tumours (Figure 1A). Quantitative polymerase chain reaction (qPCR) analysis on an independent set of primary human lung biopsy samples confirmed that MYC is highly expressed in LSCC tumours compared with normal lung tissue (Figure 1B). Moreover, IHC staining on primary lung tumours confirmed a significant abundance of c-MYC protein in LSCC samples (Figure 1C and D). Also, \u0394p63 and c-JUN, critical factors in squamous cell identity and tumour maintenance, respectively, showed higher protein levels in LSCC compared to LADC tumours (Figure 1C and D). Individual downregulation of c-MYC, c-JUN, and \u0394p63 by small interfering RNA (siRNA) resulted in a significant reduction of cell growth in four independent human LSCC cell lines (Figure 1E, Figure 1\u2014figure supplement 1A-C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig1-v2.jpg)\n\n**Figure 1.:** (A) Expression of MYC in human lung adenocarcinoma (LADC, n = 483), lung squamous cell carcinoma (LSCC, n = 486), and normal non\u2010transformed tissue (normal LSCC = 338, normal LADC = 347). In box plots, the centre line reflects the median. Data from TCGA and GTEx were analysed using GEPIA software. (B) Relative mRNA expression of MYC in normal lung tissue (n = 5) and LSCC (n = 17) patient samples from the Cordoba Biobank measured by RT-PCR. The p value was calculated using the Student\u2019s two-tailed t test. Plots indicate mean. (C) Representative LADC and LSCC tumours stained with c-MYC, c-JUN, and \u0394p63 antibodies. Scale bars, 30 \u03bcm. (D) Quantification of c-MYC+ (LADC n = 33, LSCC n = 34), c-JUN+ (LADC n = 33, LSCC n = 33), and \u0394p63+ cells (LADC n = 41, LSCC n = 41) in LADC and LSCC tumours. Plots indicate mean. Student\u2019s two-tailed t test was used to calculate p values. (E) Graph showing the difference in cell proliferation between control and MYC-depleted KF LSCC cells (n = 3). Graph indicates mean \u00b1 SEM. Student\u2019s two-tailed t test was used to calculate p values. (F) Genetic alterations in ubiquitin-specific protease 28 (USP28) and FBXW7 genes in human LSCC. Each column represents a tumour sample (n = 178). Data from TCGA were analysed using cBioportal software. (G) Relative mRNA expression of USP28 in normal lung tissue (n = 5) and LSCC (n = 17) patient samples from the Cordoba Biobank measured by RT-PCR. The p value was calculated using the Student\u2019s two-tailed t test. Plots indicate mean. See also Figure 1\u2014figure supplement 1B. (H) shRNA-mediated knockdown of Usp28 decreases c-MYC, c-JUN, and \u0394p63 protein levels in primary KF LSCC cells. (I) Graph showing the difference in cell proliferation between control and Usp28-depleted KF LSCC cells (n = 3). Graph indicates mean \u00b1 SEM. One-way analysis of variance (ANOVA) with Dunnett\u2019s multiple comparisons test was used to calculate p values. Source data for B, D, E, G, and I.\n\n![Figure 1\u2014figure supplement 1](https://cdn.elifesciences.org/articles/71596/elife-71596-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1:** (A) Graphs showing the difference in cell proliferation between control and siMYC-transfected human lung squamous cell carcinoma (LSCC) cell lines (NCI-H226, NCI-H520, CALU-1, and LUDLU-1). Graphs indicate mean \u00b1 SEM. p Values calculated using one-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparisons test. (B) Graphs showing the difference in cell proliferation between control and siJUN-transfected human LSCC cell lines (NCI-H226, NCI-H520, CALU-1, and LUDLU-1). Graphs indicate mean \u00b1 SEM. p Values calculated using one-way ANOVA with Tukey\u2019s multiple comparisons test. (C) Graphs showing the difference in cell proliferation between control and si\u0394p63-transfected human LSCC cell lines (NCI-H226, NCI-H520, CALU-1, and LUDLU-1). Graphs indicate mean \u00b1 SEM. p Values calculated using one-way ANOVA with Tukey\u2019s multiple comparisons test. Source data for A, B, and C.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Dot plot showing association between the log2 mRNA expression (Y-axis) and copy-number alterations (X-axis) for ubiquitin-specific protease 28 (USP28) gene. Data from TCGA were analysed using cBioportal software. One-way analysis of variance (ANOVA) with Bonferroni\u2019s multiple comparisons test was used to calculate p values (n = 2 deep deletion, n = 57 shallow deletion, n = 81 diploid, n = 38 gain). (B) Representative human lung squamous cell carcinoma (LSCC) tumours stained with USP28 and FBW7 antibodies. Scale bars, 100 \u00b5m (left panel). Quantification of USP28 and FBW7 protein staining in LSCC tumours (n = 17) (right panel). Source data for A.\n\nAs c-MYC, c-JUN, and \u0394p63 protein levels are controlled by the deubiquitinase USP28 (Popov et al., 2007; Prieto-Garcia et al., 2020), we analysed its expression in publicly available datasets (The Cancer Genome Atlas). We observed that 25% of human LSCC cases show gain-of-function alterations in USP28 (Figure 1F). In addition, a positive correlation between USP28 copy-number and mRNA expression was found in the same datasets (Figure 1\u2014figure supplement 2A). Interestingly, qPCR and IHC analysis on human LSCC samples revealed that low USP28 mRNA levels correlated with low USP28 protein levels and likewise, high/moderate mRNA levels also correlated with high USP28 protein levels (Figure 1G, Figure 1\u2014figure supplement 2B). Since USP28 is involved in \u0394p63, c-JUN, and c-MYC stabilization and higher expression of USP28 is associated with a significantly shorter survival time (Prieto-Garcia et al., 2020), we targeted its expression. Usp28 downregulation by shRNA resulted in a significant reduction in c-MYC, c-JUN, and \u0394p63 protein levels in LSCC primary tumour cells and reduced LSCC cell growth (Figure 1H and I). Thus, targeting USP28 in order to destabilize its substrates represents a rational strategy to target tumour cells that rely on oncogenic transcription factors that are currently not druggable by small molecules.\n\n### Generation of a pre-clinical dual recombinase lung cancer mouse model\n\nRecently, Usp28 was shown to be required for the initiation of lung tumours in the Rosa26-Cas9 sgRNA KrasG12D; Trp53; Lkb1 model (Prieto-Garcia et al., 2020). However, a meaningful pre-clinical model requires targeting the therapeutic candidate gene in existing growing lung tumours. Thus, to assess the function of Usp28 in established tumours, we developed a new GEM model to temporally and spatially separate tumour development from target deletion by using two independent recombinases: FLP and CreERT. In this model, LSCC and LADC formation is initiated by KrasG12D activation and Fbxw7 deletion using FLP recombinase, and the Cre-loxP system can then be used for inactivation of Usp28flox/flox in established tumours. To allow conditional FRT/FLP-mediated inactivation of Fbxw7 function, we inserted two FRT sites flanking exon 5 of the endogenous Fbxw7 gene in mice to generate a Fbxw7FRT/FRT allele that can be deleted by FLP recombinase (Figure 2\u2014figure supplement 1A and B). Expression of FLP recombinase resulted in the deletion of Fbxw7 exon 5, which could be detected by PCR (Figure 2\u2014figure supplement 1B). The resulting strain, Fbxw7FRT/FRT, was crossed to FRT-STOP-FRT (FSF)-KrasG12D mice to generate KrasFSF-G12D; Fbxw7FRT/FRT (KF-Flp model).\n\n### USP28 is an effective therapeutic target for LSCC, but not KRasG12D; Trp53 mutant LADC tumours\n\nThe KF-Flp strain described above was crossed with Rosa26FSF-CreERT; Usp28flox/flox mice to generate the KFCU model (Figure 2A). KFCU tumour development was monitored by computed tomography (CT) scans. At 10\u201311 weeks post-infection with FLP recombinase-expressing recombinant adenoviruses, animals displayed lesions in their lungs. At this time point, we confirmed by histology that KFCU mice develop both LADC and LSCC tumours (Figure 2\u2014figure supplement 1C). As expected (Ruiz et al., 2019), KFCU LADC lesions occurred in alveolar tissue and were positive for SFTPC and TTF1. KFCU LSCC tumours occurred mainly in bronchi (rarely manifesting in the alveolar compartment) and expressed CK5 and \u0394p63. Next, animals displaying lung tumours were exposed to tamoxifen to activate the CreERT protein and delete the conditional Usp28 floxed alleles (Figure 2A, Figure 2\u2014figure supplement 1D). Mice transiently lost body weight during the initial tamoxifen treatment but recovered a few days later (Figure 2\u2014figure supplement 1E). Although the loss of USP28 expression decreased LADC tumour size, it did not reduce the number of LADC tumours (Figure 2B\u2013D). In contrast, histological examination of KFCU mice revealed a clear reduction in the numbers of LSCC lesions in Usp28-deleted lungs (Figure 2F, Figure 2\u2014figure supplement 1D). As well as a significant reduction in tumour number, the few CK5-positive LSCC lesions that remained were substantially smaller than control tumours (Figure 2G). Measurement of the size of 429 individual KFCU LSCC tumours (326 vehicle-treated and 103 tamoxifen-treated) showed an average size of 11.4 \u00d7 104 \u03bcm2 in the vehicle arm versus 4.6 \u00d7 104 \u03bcm2 in the tamoxifen arm (Figure 2G). Thus, Usp28 inactivation significantly reduces both the number and the size of LSCC tumours.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of the KFCU (KrasFSF-G12D; Fbxw7FRT/FRT; Rosa26FSF-CreERT; Usp28flox/flox) model and experimental approach used to deplete conditional Usp28 alleles in established lung tumours. (B) Lung histology of animals treated as in A, showing both LSCC (CK5+) and lung adenocarcinoma (LADC) (SFTPC+) tumours in mice receiving vehicle but few LSCC lesions in mice receiving tamoxifen. Scale bars, 1000 \u03bcm. (C) Quantification of LADC tumours in vehicle-, tamoxifen-, and tamoxifen+ FT206-treated KFCU mice. Plots indicate mean. One-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparisons test was used to calculate p values (n = 8 vehicle, n = 7 tamoxifen, n = 7 tamoxifen+ FT206). (D) Quantification of LADC tumour size in vehicle-, tamoxifen-, and tamoxifen+ FT206-treated KFCU mice. Plots indicate mean. One-way ANOVA with Tukey\u2019s multiple comparisons test was used to calculate p values (n = 466 vehicle, n = 434 tamoxifen, n = 503 tamoxifen+ FT206). (E) Immunoblot analysis of LADC tumours probed for USP28, c-MYC, c-JUN, SFTPC, cleaved caspase-3 (CC3). VINCULIN is shown as loading control. (F) Quantification of LSCC tumours in vehicle-, tamoxifen-, and tamoxifen+ FT206-treated KFCU mice. Plots indicate mean. One-way ANOVA with Tukey\u2019s multiple comparisons test was used to calculate p values (n = 8 vehicle, n = 7 tamoxifen, n = 7 tamoxifen+ FT206). (G) Quantification of LSCC tumour size in vehicle-, tamoxifen-, and tamoxifen+ FT206-treated KFCU mice. Plots indicate mean. One-way ANOVA with Tukey\u2019s multiple comparisons test was used to calculate p values (n = 326 vehicle, n = 103 tamoxifen, n = 79 tamoxifen+ FT206). (H) Usp28 deletion induces apoptotic cell death (CC3) and decreases c-MYC, c-JUN, and \u0394p63 protein levels in LSCC lesions. Source data for C, D, F, and G.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Gene targeting strategy to generate conditional Fbxw7FRT/FRT animals. Two FRT sites were inserted into the intron 4 and 5 of Fbxw7 through the CRISPR-Cas9 technology. (B) Schematic representation of the conditional allele (left panel). In vitro recombination assay demonstrated efficient ablation of the exon 5 upon Flp recombinase adenovirus infection (right panel). (C) KFCU (KrasFSF-G12D; Fbxw7FRT/FRT; Rosa26FSF-CreERT; Usp28flox/flox) mice infected with adeno-CMV-Flp virus develop lung adenocarcinoma (LADC) (SFTPC+ and TTF1+) and lung squamous cell carcinoma (LSCC) (CK5+ and \u0394p63+) tumours. (D) In situ hybridization of ubiquitin-specific protease 28 (Usp28) and Pppib mRNA expression in vehicle- and tamoxifen-treated KFCU mice. Scale bars, 50 \u00b5m. (E) Monitoring tolerability in mice treated with vehicle, tamoxifen (Tam), or tamoxifen+ FT206. Body weights of animals during the course of treatment. Two-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparisons test was used to calculate p values (n = 8 vehicle, n = 7 tamoxifen, n = 7 tamoxifen+ FT206). (F) KFCU tumours stained with c-MYC, c-JUN, and \u0394p63 antibodies. KFCU mice treated with vehicle (left panel) or tamoxifen (right panel). Inserts showing c-MYC+, c-JUN+, and \u0394p63+ LSCC tumours in mice receiving vehicle but partial positive or negative LSCC lesions in mice receiving tamoxifen. Scale bars, 50 \u03bcm. Source data for E.\n\nTo get insights into LSCC tumour regression, we focused on USP28 substrates. Immunoblotting analysis revealed that Usp28 deletion resulted in apoptotic cell death (cleaved caspase-3; CC3). \u0394p63 protein levels were reduced, but c-JUN and c-MYC protein became undetectable (Figure 2H, Figure 2\u2014figure supplement 1F). Usp28 deletion also decreased c-JUN and c-MYC levels in KFCU LADC lesions, although the reduction in c-MYC protein levels was significantly less pronounced than observed in LSCC (Figure 2E). Strikingly, elimination of Usp28 has little effect, if any, on apoptotic cell death, as determined by its inability to induce CC3 in LADC lesions. Thus, these data suggest that USP28 and its substrates are required for the maintenance of LSCC tumours.\n\nTo further investigate the role of USP28 in LADC, we studied the consequences of Usp28 deletion in a second LADC genetic model. We used Flp-inducible oncogenic Kras activation combined with Trp53 deletion (KrasFSF-G12D and Trp53FRT/FRT or KP-Flp model) (Sch\u00f6nhuber et al., 2014). The KP-Flp mice were crossed to a conditional Usp28flox/flox strain together with an inducible CreERT recombinase knocked in at the Rosa26 locus and an mT/mG reporter allele (KPCU mice; Figure 3A). After intratracheal adeno-CMV-Flp virus instillation, Usp28 was deleted in KPCU animals displaying lung tumours by CT (Figure 3A). Loss of USP28 expression in this second LADC model also did not result in a reduction of LADC tumour number and size (Figure 3C and D). Successful CreERT recombination was verified using lineage tracing (GFP staining) and deletion of Usp28flox/flox alleles was further confirmed by BaseScope assays (Figure 3B and E). Therefore, also these data argue against an important role for USP28 in LADC tumours.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of the KPCU (KRasFSF-G12D; Trp53FRT/FRT; Rosa26FSF-CreERT; Usp28flox/flox; Rosa26LSL-mTmG) model and experimental approach used. At 10 weeks post-infection, KPCU mice were treated with vehicle or tamoxifen. (B) Representative images of H&E (left) and GFP (right) stains from mice of the indicated treatments. Scale bar, 1000 \u00b5m. (C) Quantification of mouse lung adenocarcinoma (LADC) tumours in the KPCU model. Plots indicate mean. Student\u2019s two-tailed t test was used to calculate p values (n = 10 vehicle, n = 10 tamoxifen). (D) Quantification of LADC tumour size in vehicle- and tamoxifen-treated KPCU mice. Plots indicate mean. Student\u2019s two-tailed t test was used to calculate p values (n = 110 vehicle, n = 130 tamoxifen). (E) Representative images illustrating histological analysis of lung lesions in KPCU mice, treated with vehicle or tamoxifen. H&E, SFTPC, TTF1, GFP immunohistochemistry staining and in situ hybridization of USP28 and PPIB mRNA expression. Scale bars, 50 \u00b5m. Source data for C and D.\n\n### Generation of a new USP28 inhibitor: selectivity and cellular target engagement\n\nThe finding that USP28 plays a key role in LSCC tumour maintenance prompted us to identify small-molecule inhibitors against this deubiquitinase. A small-molecule discovery campaign based on the ubiquitin-rhodamine cleavable assay (Turnbull et al., 2017) yielded a panel of compounds sharing a thienopyridine carboxamide chemical scaffold with inhibitory selectivity for USP28 and USP25 (Guerin et al., 2017; Guerin et al., 2020; Zablocki et al., 2019). The compound FT206 (Figure 4A) represents a different chemical class from the benzylic amino ethanol-based inhibitors described previously (Wrigley et al., 2017). Quantitative structure-activity relationship was used to develop compound derivative FT206 that was most optimal in terms of drug metabolism and pharmacokinetic properties while preserving potency and selectivity towards USP28/25 (Zablocki et al., 2019). To confirm FT206 cellular target engagement, we used a Ub activity-based probe (ABP) assay (Altun et al., 2011; Clancy et al., 2021; Panyain et al., 2020; Turnbull et al., 2017). ABPs can assess DUB enzyme activity in a cellular context. DUB inhibition leads to displacement of the ABP, resulting in a molecular weight shift measurable by SDS-PAGE and immunoblotting against USP28/25. Using this approach, we found that the compound FT206 interferes with USP28/25 probe labelling (USP-ABP versus USP) in LSCC H520 cell extracts (EC50 ~300\u20131000 nM, Figure 4B) and intact cells (EC50 ~1\u20133 \u03bcM, Figure 4C). In contrast to FT206, AZ1, a different USP28 inhibitor (Wrigley et al., 2017), based on a benzylic amino ethanol scaffold, appeared to exert lower potency towards USP28 (EC50 >30 \u03bcM) and selectivity for USP25 (EC50 ~10\u201330 \u03bcM) (Figure 4\u2014figure supplement 1A). To address compound selectivity more widely, we combined the ABP assay with quantitative mass spectrometry (activity-based probe profiling [ABPP]) to allow the analysis of the cellular active DUBome (Benns et al., 2021; Jones et al., 2021; Pinto-Fern\u00e1ndez et al., 2019). When performing such assay in human LSCC cells, we were able to profile 28 endogenous DUBs, revealing a remarkable USP28/25 selectivity for FT206 in a dose-dependent manner (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig4-v2.jpg)\n\n**Figure 4.:** (A) Structure of small-molecular inhibitor FT3951206/CRT0511973 (FT206). (B) Cellular DUB profiling in NCI-H520 lung squamous cell carcinoma (LSCC) cell extracts incubated with the indicated concentrations of FT206 prior to labelling with HA-UbPA, SDS-PAGE, and analysis by Western blotting. Inhibitor potency was reflected by competition with USP28/25-ABP (activity-based probe) adduct formation. (C) Cellular DUB profiling in NCI-H520 LSCC cells incubated with the indicated concentrations of FT206, lysed extracts labelled with HA-UbPA, and analysed as in B. (D) Activity-based probe profiling (ABPP) demonstrating the cellular DUB selectivity profile of cpd FT206 by quantitative mass spectrometry analysis at different inhibitor concentrations. Graph indicates mean \u00b1 SEM. (E) USP28 inhibition using FT206 (50 and 100 nM) reduces c-MYC, c-JUN, and \u0394p63 protein levels in primary KF LSCC cells. (F) USP28 inhibition using FT206 decreases cell proliferation in KF LSCC cells (n = 4). Graph indicates mean \u00b1 SEM. Source data for F.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Comparison of ubiquitin-specific protease 28/25 (USP28/25) inhibitor potency by activity-based profiling. Human lung squamous cell carcinoma (LSCC) H520 crude cell extracts were incubated either with AZ1 or FT206 inhibitors at indicated concentrations, followed by HA-UbPA activity-based probe (ABP) labelling. Samples were analysed by SDS-PAGE and immunoblotted using USP28, USP25, HA, and GAPDH antibodies. Inhibitor potency was reflected by competition with USP28/25-ABP adduct formation. (B) TUBE pulldown of endogenous ubiquitylated c-MYC, c-JUN, and USP28 in LSCC cells upon co-treatment with MG132 and FT206. (C) Immunoblot of endogenous USP28, c-JUN, c-MYC, and \u0394p63 in LSCC cells upon co-treatment with MG132 and FT206. VINCULIN served as loading control. (D) Graphs showing the difference in cell proliferation between control, FT206-treated, and USP28-depleted LSCC cells. Graph indicates mean \u00b1 SEM. One-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparisons test was used to calculate p values. VINCULIN is shown as loading control. Source data for D.\n\nTo further evaluate the efficacy of FT206 in targeting USP28, we tested its ability to modulate the ubiquitination status of endogenous USP28 substrates. The ubiquitination levels of c-MYC and c-JUN increased upon FT206 and MG132 co-treatment (Figure 4\u2014figure supplement 1B), confirming that FT206 blocks USP28-mediated deubiquitination of its substrates. The ubiquitination level of USP28 also increased upon FT206 treatment (Figure 4\u2014figure supplement 1B), which is consistent with previous observations where the enzymatic activity of DUBs can function to enhance their own stability (de Bie and Ciechanover, 2011). Consequently, treatment of LSCC tumour cells with FT206 resulted in reduced c-MYC, c-JUN, \u0394p63, and USP28 protein levels, which were restored upon addition of MG132 (Figure 4E, Figure 4\u2014figure supplement 1C).\n\nFinally, FT206 treatment impaired LSCC cell growth (Figure 4F). However, in a USP28-depleted background, FT206 neither affected cell growth nor reduced c-MYC protein levels (Figure 4\u2014figure supplement 1D). Thus, this data suggests that the effects of FT206 are mediated by USP28.\n\n### Pharmacological inhibition of USP28 is well tolerated in mice and induced LSCC tumour regression\n\nWe next evaluated the therapeutic potential of the USP28 inhibitor FT206 using the KrasLSL-G12D; Fbxw7flox/flox model (KF mice), which develop both LADC and LSCC tumour types (Ruiz et al., 2019). Nine weeks after adeno-CMV-Cre virus infection, when mice had developed lung tumours, we started treatment with USP28 inhibitor at 75 mg/kg, three times a week for 5 weeks (Figure 5A). FT206 administration had no noticeable adverse effects and treated mice maintained normal body weight (Figure 5\u2014figure supplement 1A and B). Consistent with the effects observed by genetic Usp28 inactivation (Figure 2C), the number of KF LADC lesions was not affected by USP28 inhibition via FT206 treatment (Figure 5B\u2013D). By contrast, we found that FT206 effectively reduced LSCC tumour number by 68% (31\u201310 LSCC tumours, Figure 5B and E). Moreover, measurement of 252 individual KF LSCC mutant tumours (156 vehicle-treated and 96 FT206-treated lesions) showed a significant reduction of over 45% in tumour size upon FT206 treatment: an average of 8.5 \u00d7 104 \u03bcm2 in the vehicle arm versus 4.5 \u00d7 104 \u03bcm2 in the FT206 cohort (Figure 5F). Thus, USP28 inhibition by FT206 leads to a dramatic reduction in the numbers of advanced LSCC tumours, and the small number of remaining LSCC lesions is significantly reduced in size, resulting in a reduction of total LSCC burden of over 85% by single agent treatment.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig5-v2.jpg)\n\n**Figure 5.:** (A) Scheme depicting experimental design for in vivo test of FT206 (75 mg/kg), three times a week for 5 weeks. (B) Lung histology of animals treated as in A, showing both LSCC (CK5+) and lung adenocarcinoma (LADC) (SFTPC+) tumours in KRasLSL-G12D; Fbxw7f/f (KF) mice receiving vehicle but few LSCC lesions in mice receiving FT206. Scale bars, 1000 \u03bcm. (C) Quantification of LADC tumours per animal in vehicle- and FT206-treated KF mice. Plots indicate mean. p Values calculated using Student\u2019s two-tailed t test (n = 7 vehicle, n = 10 FT206). (D) Quantification of LADC tumour size in vehicle- and FT206-treated KF mice. Plots indicate mean. Student\u2019s two-tailed t test was used to calculate p values (n = 304 vehicle, n = 481 FT206). (E) Quantification of LSCC tumours per animal in vehicle- and FT206-treated KF mice. Plots indicate mean. p Values calculated using Student\u2019s two-tailed t test (n = 7 vehicle, n = 10 FT206). (F) Quantification of LSCC tumour size in vehicle- and FT206-treated KF mice. Plots indicate mean. Student\u2019s two-tailed t test was used to calculate p values (n = 156 vehicle, n = 96 FT206). (G) LSCC tumours stained with c-MYC, c-JUN, and \u0394p63 antibodies. KF animals treated with vehicle (left panel) or FT206 (right panel). Inserts showing c-MYC+, c-JUN+, \u0394p63+ LSCC tumours in mice receiving vehicle (left panel) but partial positive or negative LSCC lesions in mice receiving FT206 (right panel). Scale bars, 50 \u03bcm. (H) Scheme depicting experimental design for in vivo test of FT206 (75 mg/kg) for 4 days consecutively (upper panel). Cleaved caspase-3 (CC3) stain shows apoptotic cells (bottom panel). Scale bars, 50 \u03bcm. (I) Quantification of CC3-positive cells per field (20\u00d7) in LADC (n = 114 vehicle, 203 FT206) and LSCC (n = 94 vehicle, 167 FT206) tumours from KF mice treated as in H. Plots indicate mean. Student\u2019s two-tailed t test was used to calculate p values. Source data for C, D, E, F, and I.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Monitoring tolerability in mice treated with FT206 (75 mg/kg), three times a week for 5 weeks. Body weights of animals during the course of treatment (n = 3 vehicle, n = 3 FT206). (B) Kidney, liver, and spleen sections stained with H&E. Mice treated as in A. Bars, 100 \u03bcm. Source data for A.\n\nIn line with the effects found by genetic Usp28 deletion, treatment of KF mice with FT206 also resulted in reduced \u0394p63, c-JUN, and c-MYC protein levels (Figure 5G). Consequently, FT206 treatment led to a substantial increase in the number of CC3-positive cells in LSCC while LADC cells were not significantly affected, indicating that USP28 inhibition causes apoptotic cell death of LSCC tumour cells (Figure 5H and I).\n\nFinally, to further confirm the specificity of FT206, KFCU mice pre-exposed to tamoxifen to delete the conditional Usp28 floxed alleles were further treated with the USP28 inhibitor FT206. In this setting, USP28 inhibition did not result in either a further reduction of LADC and LSCC lesions or body weight loss (Figure 2C and F, Figure 2\u2014figure supplement 1E), suggesting that FT206 targets specifically USP28.\n\n### USP28 inhibition causes dramatic regression of human LSCC xenograft tumours\n\nTo determine whether the promise of USP28 as a target in mouse lung cancer models can be translated to a human scenario, we established human xenograft tumour models. siRNA-mediated USP28 but not USP25 depletion, and USP28 inhibitor treatment, considerably reduced protein levels of \u0394p63, c-JUN, and c-MYC and impaired growth in human LSCC tumour cells (Figure 6A\u2013C, Figure 6\u2014figure supplement 1A and B). In contrast, FT206 treatment had marginal effects on c-MYC and c-JUN protein levels in human LADC cells and in USP28 mutant LSCC cells (Figure 6\u2014figure supplement 1C\u20131E). Crucially, FT206 led to a remarkable growth impairment of xenografts derived from three independent human LSCC cell lines (Figure 6D\u2013I), which was accompanied with a strong reduction of c-MYC protein levels (Figure 6J\u2013L). In summary, these data suggest that USP28 pharmacological intervention is a promising therapeutic option for human LSCC patients.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig6-v2.jpg)\n\n**Figure 6.:** (A) Small interfering RNA (siRNA)-mediated knockdown of USP28 decreases c-MYC, c-JUN, and \u0394p63 protein levels in human LUDLU-1 LSCC cells. (B) USP28 inhibition using FT206 (0.2 and 0.4 \u03bcM) reduces c-MYC, c-JUN, and \u0394p63 protein levels in human LUDLU-1 LSCC cells. (C) USP28 inhibition using FT206 decreases cell proliferation in human LSCC (NCI-H520, CALU-1, and LUDLU-1) cell lines (n = 8). Graphs indicate mean \u00b1 SEM. (D, E, F) In vivo tumour graft growth curves of human LSCC (NCI-H520, CALU-1, and LUDLU-1) cell lines subcutaneously injected in flanks of immunocompromised mice. Animals with palpable tumours were treated with vehicle or FT206 (75 mg/kg) via oral gavage. Plots indicate mean \u00b1 SD of the tumour volumes. p Values calculated from two-way analysis of variance (ANOVA) with Bonferroni\u2019s multiple comparisons test (NCI-H520 n = 4 vehicle and 4 FT206; CALU-1 n = 3 vehicle and 3 FT206; LUDLU-1 n = 3 vehicle and 3 FT206). (G, H, I) Mice treated as in D, E, and F, respectively. Plots showing the weight of xenograft tumours at the end point. Student\u2019s two-tailed t test was used to calculate p values (NCI-H520 n = 4 vehicle and 4 FT206; CALU-1 n = 3 vehicle and 3 FT206; LUDLU-1 n = 3 vehicle and 3 FT206). (J, K, L) c-MYC immunohistochemistry stainings of NCI-H520, CALU-1, and LUDLU-1 xenografts in mice treated as in D, E, and F, respectively. Scale bars, 50 \u03bcm. Source data for C, D, E, F, G, H, and I.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Immunoblot of endogenous ubiquitin-specific protease 25 (USP25), c-JUN, c-MYC, and \u0394p63 in USP25-depleted lung squamous cell carcinoma (LSCC) cells. VINCULIN served as loading control. (B) Immunoblot of endogenous c-MYC and c-JUN in LSCC cells upon FT206 treatment (IC50 doses display in panel D). VINCULIN served as loading control. (C) Immunoblot of endogenous c-MYC and c-JUN in lung adenocarcinoma (LADC) cells upon FT206 treatment (IC50 doses display in panel D). VINCULIN served as loading control. (D) IC50 values (doses that inhibits 50% of the cell viability) were calculated after exposure of human LADC and LSCC cells to different concentrations of FT206 compound. (E) Immunoblot of endogenous c-MYC and c-JUN in USP28 mutant LSCC cells upon FT206 treatment. The LSCC cell line SKMES contains a nonsense mutation in Usp28 (c.193G > T). VINCULIN served as loading control.\n\n## Discussion\n\nUnlike for LADC, there are few approved targeted therapies against LSCC. Consequently, despite its limited effectiveness on disease progression and prognosis, patients with LSCC receive the same conventional platinum-based chemotherapy today as they would have received two decades ago (Fennell et al., 2016; Gandara et al., 2015; Isaka et al., 2017; Liao et al., 2012; Scagliotti et al., 2008). c-MYC is a transcription factor that orchestrates a potent pro-cancer programme across multiple cellular pathways. As c-MYC is often overexpressed in late-stage cancer, targeting it for degradation is an attractive strategy in many settings. The term \u2018undruggable\u2019 was coined to describe proteins that could not be targeted pharmacologically. Many desirable targets in cancer fall into this category, including the c-MYC oncoprotein, and pharmacologically targeting these intractable proteins is a key challenge in cancer research.\n\nThe deubiquitylase family of enzymes have emerged as attractive drug targets, which can offer a means to destabilize client proteins that might otherwise be undruggable (Schauer et al., 2020). The deubiquitinase USP28 was known to remove FBW7-mediated ubiquitination of, and thereby stabilize, the oncoprotein c-MYC (Popov et al., 2007). Importantly, mice lacking Usp28 are healthy (Knobel et al., 2014), suggesting that USP28 is dispensable for normal physiology and homeostasis.\n\nIn the current study, we identified a requirement for USP28 for the maintenance of murine and human LSCC tumours. In agreement with the absence of major phenotypes in the Usp28 knockout mice, USP28 inhibitor treatment was well tolerated by the experimental animals, while having a dramatic effect on LSCC regression. USP28 small-molecule inhibition phenocopies the effects of Usp28 deletion in LSCC regression, consistent with on-target activity. However, we cannot exclude that the inhibition of USP25 and possibly additional off-targets effects may contribute to the observed phenotype. Inhibitor-treated mice kept a normal body weight, indicating no global adverse effects.\n\nWhile USP28 inhibition resulted in profoundly reduced LSCC growth, the effect on LADC was modest. TP63, c-JUN, and c-MYC protein levels are increased in LSCC compared to LADC (Figure 1C and D). This could indicate a greater dependence of LSCC on these oncoproteins, which consequently may result in increased sensitivity to USP28 inhibition. We previously found that Usp28 deficiency corrected the accumulation of SCF (Fbw7) substrate proteins, including c-JUN and c-MYC, in Fbw7 mutant cells (Diefenbacher et al., 2015). The frequent downregulation of FBXW7 in human LSCC (Ruiz et al., 2019; Figure 1\u2014figure supplement 2B) may underlie the increased accumulation of SCF(Fbw7) substrate proteins like c-MYC, c-JUN, and \u0394P63 in LSCC, and thereby cause LSCC tumours to be increasingly dependent on USP28 function. Indeed, our study suggests that those three oncoproteins are all relevant targets of USP28 in LSCC (Figure 2H). In contrast, Prieto-Garcia et al. saw no difference in c-JUN and c-MYC protein levels and suggested a different mechanism of action. Of note, our and the Prieto-Garcia et al. studies used different dual specificity inhibitors of USP28/25 that have distinct properties. FT206, the compound used in this study, preferentially inhibits USP28 compared to USP25, whereas AZ1, the compound used by Prieto-Garcia et al., showed a pronounced activity towards USP25. In addition, FT206 inhibits USP28 in the nano-molar range, while Prieto-Garcia et al. typically used AZ1 at 10\u201330 \u03bcM, possibly because higher compound concentrations are required for therapeutic inhibition of USP28. Therefore, differences in the selectivity and potency of the compounds used may explain some of the differences observed.\n\nInterestingly, all human LSCC cell lines used in the xenograft experiment (Figure 6), each of which responded well to USP28 inhibition, do not show neither gain- or loss-of-function mutations in USP28 nor FBXW7, respectively. Thus, these data support the notion that LSCC tumour cells respond to USP28 inhibition, regardless of USP28/FBXW7 mutation status, which suggest that USP28 inhibition might be a therapeutic option for many LSCC patients.\n\nIn summary, our studies demonstrate that USP28 is a key mediator of LSCC maintenance and progression and hence USP28 represents an exciting therapeutic target. Therefore, USP28 inhibition should be considered as a potential therapy for human LSCC.\n\n## Materials and methods\n\n### Mice\n\nThe KrasLSL-G12D (Jackson et al., 2001), Fbxw7flox/flox (Jandke et al., 2011), Usp28flox/flox (Diefenbacher et al., 2014), KrasFSF-G12D (Sch\u00f6nhuber et al., 2014), Trp53FRT/FRT (Sch\u00f6nhuber et al., 2014), Rosa26FSF-CreERT (Sch\u00f6nhuber et al., 2014), Rosa26LSL-mTmG (Muzumdar et al., 2007) strains have been previously described. Immunocompromised NSG mice were maintained in-house. All animal experiments were approved by the Francis Crick Institute Animal Ethics Committee and conformed to UK Home Office regulations under the Animals (Scientific Procedures) Act 1986 including Amendment Regulations 2012. All strains were genotyped by Transnetyx. Each group contained at least three mice, which generates enough power to pick up statistically significant differences between treatments, as determined from previous experience (Ruiz et al., 2019). Mice were assigned to random groups before treatment.\n\n### Generation of Fbxw7FRT/FRT mice\n\nTo generate a conditional allele of Fbxw7, we employed the CRISPR-Cas9 approach to insert two FRT sites into the intron 4 and 5 of Fbxw7, respectively. Two guide RNAs targeting the integration sites (gRNA-Int5A: accgtcggcacactggtcca; gRNA-Int4A: cactcgtcactgacatcgat), two homology templates containing the FRT sequences (gRNA-Int5B: agcactgacgagtgaggcgg; gRNA-Int4B: tgcctagccttttacaagat) and the Cas9 mRNA were micro-injected into the fertilized mouse eggs. The offspring were screened by PCR and one line with proper integration of two FRT sites was identified.\n\n### Analysis of public data from cancer genomics studies\n\nData from TCGA Research Network (Lung Squamous Cell Carcinoma [TCGA, Firehose Legacy]), including mutations, putative copy-number alterations, and mRNA expression (mRNA expression z-scores relative to diploid samples [RNA Seq V2 RSEM; threshold 2.0]), were analysed using cBioportal software and visualized using the standard Oncoprint output (Cerami et al., 2012). The Onco Query Language (OQL) used was \u2018USP28: MUT AMP GAIN EXP \u2265 2\u2019 \u2018FBXW7: MUT HOMDEL HETLOSS EXP \u2264 \u20132\u2019. Source data was from GDAC Firehose, previously known as TCGA Provisional. The complete sample set used was (n = 178). Expression analysis was performed using GEPIA (Gene Expression Profiling Interactive Analysis) software (2017).\n\n### Human lung tumour analysis\n\nHuman biological samples were collected, stored, and managed by the Cordoba node belonging to the Biobank of the Andalusian Health Service (Servicio Andaluz de Salud [SAS]) and approved by the Ethics and Clinical Research Committee of the University Hospital Reina Sofia. All subjects gave informed consent. Pathologists assessed all samples before use. mRNA extracted from the samples was analysed by qPCR. Primers are listed in Table 1.\n\n**Table 1.**\n Primers for quantitative polymerase chain reaction (qPCR).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th colspan=\"2\">Primer (5\u2032\u20133\u2032)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Forward</td>\n      <td>Reverse</td>\n    </tr>\n    <tr>\n      <td>ACTIN</td>\n      <td>GAAAATCTGGCACCACACCT</td>\n      <td>TAGCACAGCCTGGATAGCAA</td>\n    </tr>\n    <tr>\n      <td>USP28</td>\n      <td>ACTCAGACTATTGAACAGATGTACTGC</td>\n      <td>CTGCATGCAAGCGATAAGG</td>\n    </tr>\n    <tr>\n      <td>MYC</td>\n      <td>TCTCCTTGCAGCTGCTTAG</td>\n      <td>GTCGTAGTCGAGGTCATAG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Tumour induction and tamoxifen treatment\n\nInduction of NSCLC tumours was carried out in anaesthetized (2\u20132.5% isoflurane) mice by intratracheal instillation of a single dose of 2.5 \u00d7 107 pfu of adenoviruses encoding either the Cre recombinase (adeno-CMV-Cre) or Flp recombinase (adeno-CMV-Flp) (Ruiz et al., 2021). Activation of the inducible CreERT2 recombinase was carried out by intraperitoneal injection of tamoxifen (100 \u03bcg/kg body weight) dissolved in peanut oil for 10 days.\n\n### CT image acquisition and processing\n\nThe SkyScan-1176, a high-resolution low-dose X-ray scanner, was used for 3D CT. Mice were anaesthetized with 2\u20132.5% isoflurane and CT images were acquired at a standard resolution (35 \u03bcm pixel size). The raw scan data was sorted using RespGate software, based on the position of the diaphragm, into end expiration bins. 3D reconstruction was performed using NRecon software. 3D data sets were examined using Data Viewer software.\n\n### Mouse treatments with FT206\n\nNine weeks upon Ad5-CMV-Cre infection, KRasLSL-G12D; Fbxw7flox/flox mice were treated with FT206 (75 mg/kg) via oral gavage on days 1, 3, and 5 per week during 5 weeks. Body weights were register every week.\n\n### In vivo pharmacology with subcutaneous graft tumours\n\nHuman LSCC tumour cell lines (NCI-H520, CALU-1, and LUDLU-1) were resuspended as single-cell suspensions at 107 cells/ml in PBS:Matrigel; 100 \u03bcl (106 cells total) of this suspension was injected into the flanks of immunodeficient NSG mice. When tumours were palpable, treatment with FT206 (75 mg/kg) was initiated with the same schedule on days 1, 3, and 5 per week. Tumour grafts were measured with digital callipers, and tumour volumes were determined with the following formula: (length \u00d7 width2) \u00d7 (\u03c0/6). Tumour volumes are plotted as means \u00b1 SD.\n\n### Histopathology, IHC, and BaseScope analysis\n\nFor histological analysis, lungs were fixed overnight in 10% neutral buffered formalin. Fixed tissues were subsequently dehydrated and embedded in paraffin, and sections (4 \u03bcm) were prepared for H&E staining or IHC. Antibodies are given in Table 2. BaseScope was performed following the manufacturer\u2019s protocol. The Usp28-specific probe was custom-designed to target 436\u2013482 of NM_175482.3; Ppib probe was used as a positive control (Bio-Techne Ltd).\n\n**Table 2.**\n List of reagents.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Source</th>\n      <th>Identifier</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Antibodies</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-CK5</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab52635, RRID:AB_869890</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-c-MYC</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab32072, RRID:AB_731658</td>\n    </tr>\n    <tr>\n      <td>Goat anti-GFP</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab6673, RRID: AB_305643</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-Ki67</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab16667, RRID: AB_302459</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-TTF1</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab76013, RRID:AB_1310784</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-USP28</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab126604, RRID:AB_11127442</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-USP25</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab187156</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-ACTIN</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab8227, RRID:AB_2305186</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-USP28</td>\n      <td>Atlas</td>\n      <td>Atlas Antibodies Cat# HPA006779, RRID:AB_1080517</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-\u0394p63</td>\n      <td>BioLegend</td>\n      <td>BioLegend Cat# 619001, RRID:AB_2256361</td>\n    </tr>\n    <tr>\n      <td>Mouse anti-c-JUN</td>\n      <td>BD Biosciences</td>\n      <td>BD Biosciences Cat# 610326, RRID:AB_397716</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-FBW7</td>\n      <td>Bethyl</td>\n      <td>Bethyl Cat# A301-721A, RRID:AB_1210898</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-USP7</td>\n      <td>Enzo</td>\n      <td>Enzo Life Sciences Cat# BML-PW0540, RRID:AB_224147</td>\n    </tr>\n    <tr>\n      <td>Mouse anti-GAPDH</td>\n      <td>Invitrogen</td>\n      <td>Thermo Fisher Scientific Cat# MA5-15738, RRID:AB_10977387</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-SFTPC</td>\n      <td>Millipore</td>\n      <td>Millipore Cat# AB3786, RRID:AB_91588</td>\n    </tr>\n    <tr>\n      <td>Rabbit anti-caspase-3 active</td>\n      <td>R&amp;D Systems</td>\n      <td>R&amp;D Systems Cat# AF835, RRID:AB_2243952</td>\n    </tr>\n    <tr>\n      <td>Rat anti-HA</td>\n      <td>Roche</td>\n      <td>Roche Cat# 11666606001, RRID:AB_514506</td>\n    </tr>\n    <tr>\n      <td>Mouse anti-TUBULIN</td>\n      <td>Sigma</td>\n      <td>Sigma-Aldrich Cat# T5168, RRID:AB_477579</td>\n    </tr>\n    <tr>\n      <td>Mouse anti-VINCULIN</td>\n      <td>Sigma</td>\n      <td>Sigma-Aldrich Cat# V9131, RRID:AB_477629</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Virus strains</td>\n    </tr>\n    <tr>\n      <td>Adeno-CMV-Cre</td>\n      <td>UI viral vector core</td>\n      <td>VVC-U of Iowa-5-HT</td>\n    </tr>\n    <tr>\n      <td>Adeno-CMV-Flp</td>\n      <td>UI viral vector core</td>\n      <td>VVC-U of Iowa-530HT</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Chemicals, peptides, and recombinant proteins</td>\n    </tr>\n    <tr>\n      <td>Doxycycline hyclate</td>\n      <td>Sigma</td>\n      <td>D9891</td>\n    </tr>\n    <tr>\n      <td>Tamoxifen</td>\n      <td>Sigma</td>\n      <td>T5648</td>\n    </tr>\n  </tbody>\n</table>\n\nTumour numbers were counted from whole lung sections: LADC and LSCC tumours were identified by SFTPC and CK5 stains, respectively. Tumour areas (\u03bcm2) were measured from lung sections using Zen3.0 (blue edition) software. For quantification of tumour cell death, the number of CC3-positive cells was counted in individual tumours per field (20\u00d7). The number of \u0394P63+, c-MYC+, and c-JUN+ cells was counted in individual tumours/10,000 \u03bcm2. All analyses were performed uniformity across all lung sections and the whole lungs were used to derive data.\n\n### Cell culture\n\nPrimary KF LSCC cells were cultured in N2B27 medium containing EGF (10 ng/ml; Pepro Tech) and FGF2 (20 ng/ml; Pepro Tech) (Ruiz et al., 2019). Human LSCC (NCI-H226, NCI-H520, CALU-1, LUDLU-1, and SKMES) and LADC (NCI-H23, NCI-H441, and NCI-H1650) lines were provided by the Francis Crick Institute Cell Services and cultured in RPMI-1640 medium supplemented with 10% FBS, 1% penicillin/streptomycin, 2 mM glutamine, 1% NEEA, and 1 mM Na pyruvate. All cells were tested Mycoplasma-negative and maintained at 37\u00b0C with 5% CO2.\n\n### Cell treatments\n\nMouse KF LSCC and human LUDLU-1 cells were treated with vehicle or FT206 at different concentrations for 48 hr to analyse c-MYC, c-JUN, and \u0394p63 protein levels by Western blotting.\n\nPrimary mouse KF LSCC cells were infected with inducible shRNAs against the Usp28 gene and then expose to doxycycline hyclate (1 \u00b5g/ml) for 48 hr. Cell number was counted using an automated cell counter (Thermo Fisher Scientific, Countess Automated Cell Counter).\n\nMouse KF LSCC and human cell lines were transfected with specific siRNAs against the Myc, Jun, Tp63, Usp25, or Usp28 genes, using Lipofectamine RNAiMAX and 25 nM of each siRNA according to the manufacturer\u2019s instructions (Dharmacon); 48\u201396 hr later, cell number was counted using an automated cell counter.\n\nFor IC50, mouse KF LSCC and human cells were treated with vehicle or FT206 at different concentrations for 72 hr. Cell viability was measured as the intracellular ATP content using the CellTiter-Glo Luminescent Cell Viability Assay (Promega), following the manufacturer\u2019s instructions. IC50 was calculated using GraphPad Prism software.\n\n### Western blot analysis\n\nCells were lysed in ice-cold lysis buffer (20 mM Tris HCl, pH 7.5, 5 mM MgCl2, 50 mM NaF, 10 mM EDTA, 0.5 M NaCl, and 1% Triton X-100) that was completed with protease, phosphatase, and kinase inhibitors. Protein extracts were separated on SDS-PAGE, transferred to a nitrocellulose membrane, and blotted with antibodies, which are given in Table 2. Primary antibodies were detected against mouse or rabbit IgGs and visualized with ECL Western blot detection solution (GE Healthcare) or Odyssey infrared imaging system (LI-COR, Biosciences).\n\n### USP28 inhibitor synthesis\n\nSynthesis and characterization of the USP28/25 small-molecule inhibitor FT206, a thienopyridine carboxamide derivative, has been described previously in the patent application WO 2017/139778 Al (Guerin et al., 2017) and more recent updates WO 2019/032863 (Zablocki et al., 2019) and WO 2020/033707, where FT206 is explicitly disclosed as in Guerin et al., 2020.\n\n### Cellular DUB profiling using Ub-based active site directed probes\n\nMolecular probes based on the ubiquitin scaffold were generated and used essentially as described (Pinto-Fern\u00e1ndez et al., 2019; Turnbull et al., 2017). In brief, HA-tagged Ub propargyl probes were synthesized by expressing the fusion protein HA-Ub75-intein-chitin binding domain in Escherichia coli BL21 strains. Bacterial lysates were prepared, and the fusion protein was purified over a chitin binding column (NEB labs, UK). HA-Ub75-thioester was obtained by incubating the column material with mercaptosulfonate sodium salt (MESNa) overnight at 37\u00b0C. HA-Ub75-thioester was concentrated to a concentration of ~1 mg/ml using 3000 MW filters (Sartorius) and then desalted against PBS using a PD10 column (GE Healthcare); 500 \u03bcl of 1\u20132 mg/ml of HA-Ub75- thioester was incubated with 0.2 mmol of bromo-ethylamine at pH 8\u20139 for 20 min at ambient temperature, followed by a desalting step against phosphate buffer pH 8 as described above. Ub probe material was concentrated to ~1 mg/ml, using 3000 MW filters (Sartorius), and kept as aliquots at \u201380\u00b0C until use.\n\n### DUB profiling competition assays with cell extracts and with cells\n\nCrude NCI-H520 cell extracts were prepared as described previously using glass-bead lysis in 50 mM Tris pH 7.4, 5 mM MgCl2, 0.5 mM EDTA, 250 mM sucrose, 1 mM DTT. For experiments with crude cell extracts, 50 \u03bcg of NCI-H520 cell lysate was incubated with different concentrations of USP28 inhibitor compounds (FT206 and AZ1) for 1 hr at 37\u00b0C, followed by addition of 1 \u03bcg HA-UbPA and incubation for 10 min (Figure 4B and C) or 30 min (Figure 4\u2014figure supplement 1A comparing FT206 and AZ1) at 37\u00b0C. Incubation with Ub probe was optimized to minimize replacement of non-covalent inhibitor FT206 by the covalent probe. Samples were then subsequently boiled in reducing SDS-sample buffer, separated by SDS-PAGE and analysed by Western blotting using anti-HA (Roche, 1:2000), anti-USP28 (Abcam, 1:1000), anti-USP25 (Abcam, 1:1000), anti-GAPDH (Invitrogen, 1:1000), or beta Actin (Abcam, 1:2000) antibodies. For cell-based DUB profiling, 5 \u00d7 106 intact cells were incubated with different concentrations of inhibitors in cultured medium for 4 hr at 37\u00b0C, followed by glass-bead lysis, labelling with HA-UbPA probe, separation by SDS-PAGE and Western blotting as described above.\n\n### DUB inhibitor profiling by quantitative mass spectrometry\n\nUb probe pulldown experiments in presence of different concentrations of the inhibitor FT206 were performed essentially as described (Pinto-Fern\u00e1ndez et al., 2019; Turnbull et al., 2017) with some modifications. In brief, immune precipitated material from 500 \u03bcg to 1 mg of NCI-H520 cell crude extract was subjected to in-solution trypsin digestion and desalted using C18 SepPak cartridges (Waters) based on the manufacturer\u2019s instructions. Digested samples were analysed by nano-UPLC-MS/MS using a Dionex Ultimate 3000 nano UPLC with EASY spray column (75 \u03bcm \u00d7 500 mm, 2 \u03bcm particle size, Thermo Scientific) with a 60 min gradient of 0.1% formic acid in 5% DMSO to 0.1% formic acid to 35% acetonitrile in 5% DMSO at a flow rate of ~250 nl/min (~600 bar/40\u00b0C column temperature). MS data was acquired with an Orbitrap Q Exactive High Field (HF) instrument in which survey scans were acquired at a resolution of 60,000 @ 400 m/z and the 20 most abundant precursors were selected for CID fragmentation. From raw MS files, peak list files were generated with MSConvert (Proteowizard V3.0.5211) using the 200 most abundant peaks/spectrum. The Mascot (V2.3, Matrix Science) search engine was used for protein identification at a false discovery rate of 1%, mass deviation of 10 ppm for MS1, and 0.06 Da (Q Exactive HF) for MS2 spectra, cys carbamidomethylation as fixed modification, met oxidation, and Gln deamidation as variable modification. Searches were performed against the UniProtKB human sequence database (retrieved 15.10.2014). Label-free quantitation was performed using MaxQuant Software (V1.5.3.8), and data further analysed using GraphPad Prism software (V7) and Microsoft Excel. Statistical test analysis of variance (ANOVA) (multiple comparison; original FRD method of Benjamini and Hochberg) was performed using GraphPad Prism software. The MS data was submitted to PRIDE for public repository with an internal ID of px-submission #469830.\n\n### TUBE pulldown\n\nEndogenous poly-Ub conjugates were purified from cells using TUBE affinity reagents (LifeSensors, UM401). Cells were lysed in buffer containing 50 mM Tris-HCl pH 7.5, 0.15 M NaCl, 1 mM EDTA, 1% NP-40, 10% glycerol supplemented with complete protease inhibitor cocktail, PR-619, and 1,10-phenanthroline. Lysate was cleared by centrifugation, Agarose-TUBEs were added, and pulldown was performed for 16 hr at 4\u00b0C on rotation. The beads were then washed three times with 1 ml of ice-cold TBS-T, and bound material was eluted by mixing the beads with sample buffer and heating to 95\u00b0C for 5 min.\n\n### Statistical analysis\n\nData are represented as mean \u00b1 SEM. Statistical significance was calculated with the unpaired two-tailed Student\u2019s t test, one-way or two-way ANOVA followed by multiple comparison test using GraphPad Prism software. A p value that was less than 0.05 was considered to be statistically significant for all data sets. Significant differences between experimental groups were: *p < 0.05, **p < 0.01, or ***p < 0.001. Biological replicates represent experiments performed on samples from separate biological preparations; technical replicates represent samples from the same biological preparation run in parallel.\n",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "badad3a5-75e8-4801-aee8-03728039febd",
+      "submission_id": "1acc9cfa-8093-41e6-a3f3-ca7ff2c4f72c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Erica A Golemis, Fox Chase Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71596.sa1](https://doi.org/10.7554/eLife.71596.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study identifies a specific requirement for ubiquitin-specific protease 28 (USP28) in the survival of lung squamous cell carcinomas (LSCCs). Using genetic knockout models and a novel small molecule inhibitor of USP28, they demonstrate loss or inhibition of USP28 impairs the growth of LSCCs to a much greater degree than lung adenocarcinomas, associated with a greater degree of loss of c-MYC, c-JUN, and \u0394p63. This work will be of interest to researchers seeking to better understand and treat LSCCs.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"USP28 deletion and small molecule inhibition destabilises c-Myc and elicits regression of squamous cell lung carcinoma\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Wee-Wei Tee (Reviewer #3).\n\nReviewer #1:\n\nThe authors investigate a role for a candidate new inhibitor of USP28 in destabilizing c-MYC to reduce the growth of lung squamous carcinomas. They demonstrate that c-MYC levels are higher in lung squamous cell carcinomas (LSCC) versus lung adenocarcinomas (LADC), and depletion of c-MYC reduces LSCC cell growth. The deubiquitinase USP28 is known to stabilize c-MYC; the authors show that depletion of USP28 also decreases c-MYC protein levels. USP28 action opposes that of a ubiquitin complex targeted by the FBXW7 tumor suppressor; the authors create a new mouse model in which FLP recombinase initially causes deletion of FBXW7 and activation of KRAS to cause tumorigenesis with LSCC and LADC, followed by tamoxifen-dependent CRE recombinase deletion of USP28. Loss of USP28 in this model reduced numbers of LSCC but not LADC, and led to decreased expression of c-MYC and other short-lived proteins such as c-JUN and deltap63. A limitation of the data shown is that tumor number calculations are shown for a relatively small number of mice. Deletion of USP28 also did not restrict LADC growth in a second mouse model, with tumors forming based on activation of KRAS and loss of TP53. The authors then describe a compound, FT206, which they show is a specific inhibitor of USP28 among other ubiquitinases. They demonstrate that this compound reduces expression of c-MYC, c-JUN, and deltap63. They also show FT206 reduces growth of LSCC but not LADC in the KRAS/FBXW7 tumor model, and in human LSCC xenografts. These latter data suggest the compound FT206 may be useful as a lead compound. However, the current data are not sufficient to demonstrate FT206 binding and biological effect is specific for USP28, as the compound may also bind and regulate other non-deubiquitinase proteins.\n\n1. Given the article focuses on c-MYC, abruptly introducing c-Jun and deltap63 as also elevated in LSCC is abrupt and seems off topic except as a way of bridging to USP28. This connects directly to a cited recent paper by Prieto-Garcia that implicates deltap63 as the critical target of a USP28 inhibitor. This makes the focus on c-MYC difficult to follow.\n\n2. The data showing specificity for LSCC in Figure 2 appear to be based on a total of 4-5 mice/genotype for the +/- tamoxifen groups, and the number of tumors for LADC is extremely heterogeneous between animals. If you look at main figure 2C-F, and Supp Figure S3, you can see the vehicle and Tam mice are the same samples. Oddly, the statistical significance differs between the two figures. There are only 3 LSCC mice treated with Tam+FT in Supp Figure S3 \u2013 the very small number of mice could itself be a reason there isn't a significant difference with TAM, as the numbers of tumors seem to actually be trending lower. It is necessary to add additional mice to the study.\n\n3. FT206 is a critical reagent for the study. While data shown indicates it is specific for USP28 among USPs (although with partial activity for USP25), it provides no evidence to show that it does not bind non-USP targets. Many compounds bind strongly to multiple targets. MYC expression is highly sensitive to transcriptional inhibitors; BET inhibitors, for example, also result in a rapid loss of MYC expression. It is essential to show data to establish whether this compound inhibits cell or tumor growth, and reduces MYC levels, in a USP28-/- null or USP28 depleted background, to determine whether the biological effect is related to USP28 or another potential target. It would also be important to do parallel IC50 curve determination and measurement of MYC expression in human LSCC and LADC cell lines, to supplement Figure 6 and provide support for the idea the compound acts differently in these cell models.\n\n4. The design and findings of the study are very similar to that described by Prieto-Garcia; in that case, deltaNp63 was identified as the primary target of USP28. The discussion should explicitly discuss the relation of the present study to that published work, to emphasize points of similarity and difference.\n\nReviewer #2:\n\nIn this work Ruiz et al., use a couple of elegant mouse genetic models \u2013 KFCU (Fbxw7 deletion and mutant Ras over-expression) and KPCU (p53 deletion and mutant Ras over-expression) \u2013 to generate both LADC and LSCC tumors. Using this system, the authors show that deletion of USP28 resulted in less LSCC but not LADC tumor formation. However, both tumor types showed overall decrease in tumor size (in KFCU not shown in KPCU). These results are the genetic proof of concept that USP28 inhibition will be particularly detrimental in the context of LSCC tumors. They further test a compound (FT206) that was previously found to target USP28 and show that indeed this compound is specific for USP28 binding among USPs and can reduce the tumor numbers and size only in LSCC tumors and not LADC in the KF model and in three separate LSCC cell line xenograft models. Altogether making the argument that targeting LSCC tumors with chemical inhibitors of USP28 is a promising clinical strategy for LSCC cancers. Overall this paper is interesting and the results provided in vivo are very strong and nicely demonstrate an on-target effect of FT206 and its specificity in LSCC tumors. The work is very similar to a recent publication of (Prieto-Garcia EMBO Mol Med 2020) describing very similar results for USP28 dependency in LSCC tumors and previous findings regarding the chemical matter used in this paper (FT206).\n\nThe major strengths of this paper is that the authors use several very elegant mouse models to establish that Usp28 is a good candidate target for potential therapeutic development designated for LSCC patients. They also show the proof of concept using a compound that is described as a Usp28 inhibitor (FT206). It should be noted that much of the genetic data, showing the importance of Usp28 in LSCC was previously described (Prieto-Garcia EMBO Mol Med 2020) including the potential benefit of chemical inhibition of USP28. A potential weakness is that there is no rigorous characterizing of Usp28 substrate ubiquitination and degradation following FT206 treatment. This work will likely motivate the development of the USP28 inhibitor(s) for further preclinical assessment in Usp28 dependent tumors such as LSCC.\n\n1. It is not clear in the paper as it is written now how the authors selected FT206. Is this a novel compound? Or was its function as a USP28 inhibitor already described before? There is a couple of publication cited and additional patents but even going through them it does not clarify this point. As this is a central novelty of this paper It would be informative to give a proper background on this compound, why was it selected? Was there a previous screen conducted ? is it a modification of a previously described scaffold ? etc., It makes no sense to dig through the patents to try and figure this out.\n\n2. Despite the nice results in vivo and competition assays using ABPP there is no evidence provided to show that there is actually increased ubiquitination and degradation of the substrate proteins following FT206 treatment in cells. If this is the first demonstration of this USP28 inhibitor one would want to show at least in cell culture substrate ubiquitination and degradation. Also, there seems to be consistent decrease in Usp28 levels following FT206, this needs to be addressed in the text.\n\nReviewer #3:\n\nThe prevalent treatment options for LSCC are limited in efficacy. Through genetic inactivation of Usp28 in a novel lung cancer mouse model, and chemical inhibition of Usp28 in induced LSCC in mice and human LSCC xenograft tumors, the authors demonstrated the specific dependency of LSCC (but not LADC) on the protein deubiquitinase Usp28. The authors also showed that loss of Usp28 by either means leads to depletion of the oncoproteins c-Myc, p63 and c-Jun in LSCC. Finally, the authors described a novel small molecule that is specific for Usp25/28. Based on these results, the authors suggested chemically targeting USP28 as a potential therapeutic option for human LSCC patients.\n\nStrengths: The presentation of the work is clear, concise and easily readable. The data presented largely supports the authors' conclusions on the role of USP28 in LSCC tumorigenesis and that inhibition of USP28 is a viable therapeutic option for LSCC treatment. The generation of the KFCU mice model that can give rise to both LADC and LSCC concurrently is interesting and presents a valuable tool for the wider cancer community.\n\nWeakness: The manuscript can benefit from a deeper analysis of the relationship between FBW7 and USP28 in patient cohorts. A comparison of the activity/efficacy of FT206 to existing USP28 inhibitors will also be helpful.\n\n1. The authors mentioned that 25% of human lung squamous cell carcinoma cases show gain of function alterations in USP28, based on TCGA data.\n\n\u2013 What is the proportion of cases in the current study cohort (n=17) which show similar gain of function alterations at the DNA level, as well as overexpression of USP28 at the protein level (by immunohistochemistry or immunoblotting)?\n\n\u2013 What is the correlation between DNA alterations and mRNA/protein expression? This would be clinically relevant if USP28 inhibitors are to be used in clinic, since we need a robust predictive test to select for patients who are most likely to respond to this therapy.\n\n2. A previous study by the same first author mentioned that 69% of patients with LSCC show loss of FBW7 expression by immunohistochemistry.\n\n\u2013 What is the FBW7 status of the cohort in the current study?\n\n\u2013 Can USP28 overexpression/gain of function co-exists with FBW7 loss, or are they mutually exclusive?\n\n\u2013 Apart from USP28 gain of function, FBW7 loss of function may also predict sensitivity to USP28 inhibition. Related to this, what is the status of FBW7 and USP28 in the three human LSCC cell lines used in the xenograft studies? This would clarify if the observed effect for USP28 inhibition is specific to LSCC cell lines with USP28 overexpression/FBW7 loss or to LSCC cell lines in general, regardless of USP28/FBW7 status.\n\n3. It is interesting that LADC is not affected by the loss of Usp28. What is c-MYC and c-Jun protein expression in the LADC lesions in the KFCU mice? Are they upregulated upon KrasG12D activation and Fbw7 deletion? Although the authors showed in Figure 1 that the expression of c-MYC is lower in LADC compared to LSCC, it will be important to directly assess whether loss of USP28 (either by siRNA knockdown or FT206 treatment) in LADC cell lines can affect c-MYC protein expression.\n\n4. As an important part of the paper is about application of the new Usp28 inhibitor FT206, the authors should have compared the efficacy with previously described Usp25/28 inhibitor (Wrigley et al; 2017, ACS Chem Biol 12,3113-3125) or at the very least, comment on potential similarities/differences/improvements etc.\n\n5. As the authors advocate targeting USP28 in LSCC treatment, have they tested, or can they comment on, whether USP28 inhibition would be beneficial for LSCC that do not have gain-of-function alterations in USP28 (which represent 75% of LSCC)?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"USP28 deletion and small molecule inhibition destabilises c-Myc and elicits regression of squamous cell lung carcinoma\" for further consideration by eLife. Your revised article has been evaluated by Erica Golemis (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some minor remaining issues that need to be addressed, as outlined below. Please address these points.\n\nReviewer #1:\n\nThis is a revised submission of a manuscript initially deemed as of interest, but rejected due to the need for a large number of experiments to validate the author's model. In this revised submission, the authors have substantially addressed essentially every point made by the referees, providing new in vitro and in vivo data. The work now convincingly makes the point that the ubiquitin protease USP28 is specifically required to support the growth of lung squamous cell carcinomas (LSCCs), more than lung adenocarcinomas (LADCs). The work defines critical USP28 targets as c-Myc, c-Jun, and \u2206p63, and shows differential USP28-dependent stability of these proteins in LSCCs and LADCs. The authors also show that the FT206 compound inhibits USP28, and is selectively effective in reducing the growth of LSCCs versus LADCs. Overall, the data provided are much improved, as is the discussion of the context of the work; and the finding is potentially clinically important.\n\nReviewer #2:\n\nOverall the authors have addressed most of my concerns in the previous submission. I find the revised manuscript much clearer and significantly improved. I only have 4 additional points for the authors' clarification:\n\n1) In light of the new data showing that FT206 can also inhibit USP25, albeit to a lesser extent than USP28, I think it is important to address if depletion of USP25 also results in loss of c-Myc, c-Jun and \u2206p63 expressions compared to USP28 knockdown, at least in cell lines. Related to this, what is the phenotype of USP25 KO mice (if known)?\n\n2) The authors mentioned that inhibitor treated mice kept a normal body weight, indicating no global adverse effects (Figure S5A). The numbers of mice used (n = 3) are on the low side. Do the authors have body weight and survival information for the other FT206 treated genetic mouse models (e.g Figure 2)?\n\n3) The authors showed in Figure S2A that there is a positive correlation between USP28 copy number gain and higher mRNA expression in human LSCC patients, which may be useful for patient selection. However, they also mentioned that the 3 LSCC cell lines used for the xenograft studies do not show gain-of-function mutations in USP28 but responded well to USP28 inhibition. Do the authors have any data comparing the effects of USP28 deletion and/or inhibition in LSCC cell lines with or without USP28 alterations?\n\n4) Related to point 3, can the authors speculate or discuss why USP28 deletion/inactivation has a less pronounced effect in LADC despite the latter also having high expression of USP28 and c-MYC ?\n",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0ddf9775-231a-46e7-81a4-5590ea79eee1",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C1",
+      "claim": "Lung squamous cell carcinoma (LSCC) has an incidence of over 600,000 cases per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Lung squamous cell carcinoma (LSCC) is a considerable global health burden, with an incidence of over 600,000 cases per year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract providing epidemiological data about LSCC incidence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "f1676a4d-1790-4f61-9129-a1c56fe647cc",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C2",
+      "claim": "LSCC patients have a 5-year survival rate of less than 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment options are limited, and patient's 5-year survival rate is less than 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract about patient survival rates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "457e4828-59f7-453d-b365-47942ed19e2b",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C3",
+      "claim": "USP28 stabilizes the oncoproteins c-MYC, c-JUN, and \u0394p63.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin-specific protease 28 (USP28) has been implicated in tumourigenesis through its stabilization of the oncoproteins c-MYC, c-JUN, and \u0394p63.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background information about USP28 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "d76ba8cc-fcce-4094-873b-24e8775de705",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C4",
+      "claim": "Genetic inactivation of Usp28 induced regression of established murine LSCC lung tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that genetic inactivation of Usp28-induced regression of established murine LSCC lung tumours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "ae85fc80-40ee-4f6a-ab50-8a975095acf2",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C5",
+      "claim": "A small molecule inhibitor of USP28 was developed that inhibits USP28 activity in the low nanomole range.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a small molecule that inhibits USP28 activity in the low nanomole range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by biochemical assay data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "4bbf26ed-843c-493a-9126-edd73a843bef",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C6",
+      "claim": "The USP28 inhibitor displays cross-reactivity against USP25.",
+      "claim_type": "EXPLICIT",
+      "source": "While displaying cross-reactivity against the closest homologue USP25, this inhibitor showed a high degree of selectivity over other deubiquitinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by activity-based probe profiling data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "aa6cba7e-57aa-433f-acb2-88264b56f97c",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C7",
+      "claim": "USP28 inhibitor treatment resulted in a dramatic decrease in c-MYC, c-JUN, and \u0394p63 protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "USP28 inhibitor treatment resulted in a dramatic decrease in c-MYC, c-JUN, and \u0394p63 proteins levels and consequently induced substantial regression of autochthonous murine LSCC tumours and human LSCC xenografts, thereby phenocopying the effect observed by genetic deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by Western blot and immunohistochemistry data in Figures 4, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "d9b4f975-5495-4def-afd3-665bb74d9fb7",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C8",
+      "claim": "USP28 inhibitor treatment induced substantial regression of autochthonous murine LSCC tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "USP28 inhibitor treatment resulted in a dramatic decrease in c-MYC, c-JUN, and \u0394p63 proteins levels and consequently induced substantial regression of autochthonous murine LSCC tumours and human LSCC xenografts, thereby phenocopying the effect observed by genetic deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by histological data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "d182826d-9a5c-46e1-a641-c740b99ee339",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C9",
+      "claim": "USP28 inhibitor treatment induced substantial regression of human LSCC xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "USP28 inhibitor treatment resulted in a dramatic decrease in c-MYC, c-JUN, and \u0394p63 proteins levels and consequently induced substantial regression of autochthonous murine LSCC tumours and human LSCC xenografts, thereby phenocopying the effect observed by genetic deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by xenograft tumor growth data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "1a81681e-5d90-46f5-a57b-45344570088e",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C10",
+      "claim": "Lung cancer is the leading cause of cancer death worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Lung cancer is the leading cause of cancer death worldwide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "253ebd91-e18e-4b90-9548-47dabb8f015a",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C11",
+      "claim": "No targeted treatment options exist for LSCC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no targeted treatment options exist for LSCC patients (Hirsch et al., 2017; Novello et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "190560c6-1fe6-4812-a6d3-2a06ce71fcaa",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C12",
+      "claim": "Platinum-based chemotherapy remains the cornerstone of current LSCC treatment despite having limited efficacy on LSCC patient survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, despite having limited efficacy on LSCC patient survival, platinum-based chemotherapy remains the cornerstone of current LSCC treatment (Fennell et al., 2016; Isaka et al., 2017; Scagliotti et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "bb777911-6c9d-488e-b252-5025f02b4177",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C13",
+      "claim": "FBW7 is the substrate recognition component of an SCF-type ubiquitin ligase.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fbxw7 protein product F-box/WD repeat-containing protein 7 (FBW7) is the substrate recognition component of an SCF-type ubiquitin ligase, which targets several well-known oncoproteins, including c-MYC, NOTCH, and c-JUN, for degradation (Davis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "c1847987-12bd-4093-be23-20fa7c410a7f",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C14",
+      "claim": "FBW7 targets c-MYC, NOTCH, and c-JUN for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fbxw7 protein product F-box/WD repeat-containing protein 7 (FBW7) is the substrate recognition component of an SCF-type ubiquitin ligase, which targets several well-known oncoproteins, including c-MYC, NOTCH, and c-JUN, for degradation (Davis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "d9b0c2d4-1575-4bcf-a521-0fb01cedf596",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C15",
+      "claim": "Genetic analyses of human LSCC samples revealed common genomic alterations in Fbxw7.",
+      "claim_type": "EXPLICIT",
+      "source": "These oncoproteins accumulate in the absence of FBW7 function, and genetic analyses of human LSCC samples revealed common genomic alterations in Fbxw7 (Cancer Genome Atlas Research Network, 2012; Kan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "b9162095-eb82-4d02-9992-bd1e971ca683",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C16",
+      "claim": "FBW7 protein is undetectable by immunohistochemistry in 69% of LSCC patient tumour samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, FBW7 protein is undetectable by immunohistochemistry (IHC) in 69% of LSCC patient tumour samples (Ruiz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "bdfab27c-5415-429e-b098-e31594f614ee",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C17",
+      "claim": "Genetically engineered mice harbouring loss of Fbxw7 concomitant with KrasG12D activation develop LSCC with 100% penetrance and short latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically engineered mice (GEM) harbouring loss of Fbxw7 concomitant with KrasG12D activation (KF mice) develop LSCC with 100% penetrance and short latency, as well as LADC (Ruiz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "5474b47e-673c-41e6-9b38-3d1094327f6a",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C18",
+      "claim": "FBW7 is an important tumour suppressor in both human and murine lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, FBW7 is an important tumour suppressor in both human and murine lung cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the introduction based on cited evidence.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "a52cf215-b403-42fb-b75d-9018e5821023",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C19",
+      "claim": "USP28 opposes FBW7-mediated ubiquitination of c-MYC and c-JUN.",
+      "claim_type": "EXPLICIT",
+      "source": "The deubiquitinase USP28 opposes FBW7-mediated ubiquitination of the oncoproteins c-MYC and c-JUN, thereby stabilizing these proteins (Popov et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "ea8dabad-142a-40ca-9890-5f6a922b4ccb",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C20",
+      "claim": "Deleting Usp28 in a murine model of colorectal cancer reduced size of established tumours and increased lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "In a murine model of colorectal cancer, deleting Usp28 reduced size of established tumours and increased lifespan (Diefenbacher et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "5c65f98b-5420-4920-9a10-53789a54618f",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C21",
+      "claim": "MYC was transcriptionally upregulated in human LSCC compared to healthy lung tissue or LADC tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "MYC was transcriptionally upregulated in human LSCC compared to healthy lung tissue or LADC tumours (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "b4c1861c-5baf-47f7-9cd5-f8d922ed0247",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C22",
+      "claim": "qPCR analysis on primary human lung biopsy samples confirmed that MYC is highly expressed in LSCC tumours compared with normal lung tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative polymerase chain reaction (qPCR) analysis on an independent set of primary human lung biopsy samples confirmed that MYC is highly expressed in LSCC tumours compared with normal lung tissue (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "5860611e-21a9-47de-a42c-14da4e449da0",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C23",
+      "claim": "IHC staining on primary lung tumours confirmed a significant abundance of c-MYC protein in LSCC samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, IHC staining on primary lung tumours confirmed a significant abundance of c-MYC protein in LSCC samples (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by IHC data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "538210f5-61a1-4cf1-9dab-22135048a753",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C24",
+      "claim": "\u0394p63 and c-JUN showed higher protein levels in LSCC compared to LADC tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, \u0394p63 and c-JUN, critical factors in squamous cell identity and tumour maintenance, respectively, showed higher protein levels in LSCC compared to LADC tumours (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by IHC data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "2eaf53f4-e190-437d-9619-8a420178d983",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C25",
+      "claim": "Individual downregulation of c-MYC, c-JUN, and \u0394p63 by siRNA resulted in a significant reduction of cell growth in four independent human LSCC cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual downregulation of c-MYC, c-JUN, and \u0394p63 by small interfering RNA (siRNA) resulted in a significant reduction of cell growth in four independent human LSCC cell lines (Figure 1E, Figure 1\u2014figure supplement 1A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by cell proliferation data shown in Figure 1E and Figure 1\u2014figure supplement 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "34f3e1e9-1ec9-4310-bafa-f01e816f369e",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C26",
+      "claim": "25% of human LSCC cases show gain-of-function alterations in USP28.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 25% of human LSCC cases show gain-of-function alterations in USP28 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by TCGA data analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "c00d2e2a-0caf-40da-9b95-1fef9abaacc3",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C27",
+      "claim": "A positive correlation between USP28 copy-number and mRNA expression was found in TCGA datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a positive correlation between USP28 copy-number and mRNA expression was found in the same datasets (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "392ebcdf-e14d-4c86-a851-9129b946b476",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C28",
+      "claim": "Low USP28 mRNA levels correlated with low USP28 protein levels in human LSCC samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, qPCR and IHC analysis on human LSCC samples revealed that low USP28 mRNA levels correlated with low USP28 protein levels and likewise, high/moderate mRNA levels also correlated with high USP28 protein levels (Figure 1G, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by qPCR and IHC data shown in Figure 1G and Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "a44a2489-c0c5-47a5-81e6-614dc5196ed7",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C29",
+      "claim": "Usp28 downregulation by shRNA resulted in a significant reduction in c-MYC, c-JUN, and \u0394p63 protein levels in LSCC primary tumour cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Usp28 downregulation by shRNA resulted in a significant reduction in c-MYC, c-JUN, and \u0394p63 protein levels in LSCC primary tumour cells and reduced LSCC cell growth (Figure 1H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "bdcc3544-e6bc-4aa3-bad0-282f007fa154",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C30",
+      "claim": "Usp28 downregulation by shRNA reduced LSCC cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Usp28 downregulation by shRNA resulted in a significant reduction in c-MYC, c-JUN, and \u0394p63 protein levels in LSCC primary tumour cells and reduced LSCC cell growth (Figure 1H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by cell proliferation data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "68935ec6-56db-4106-a914-d94964fdf140",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C31",
+      "claim": "Usp28 was shown to be required for the initiation of lung tumours in the Rosa26-Cas9 sgRNA KrasG12D; Trp53; Lkb1 model.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Usp28 was shown to be required for the initiation of lung tumours in the Rosa26-Cas9 sgRNA KrasG12D; Trp53; Lkb1 model (Prieto-Garcia et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "d54a8174-1f54-4450-9b57-81294c2405fe",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C32",
+      "claim": "Loss of USP28 expression decreased LADC tumour size but did not reduce the number of LADC tumours in KFCU mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the loss of USP28 expression decreased LADC tumour size, it did not reduce the number of LADC tumours (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by histological data shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "38448af1-9966-41bb-a7ae-bb3eb9e831cb",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C33",
+      "claim": "Histological examination of KFCU mice revealed a clear reduction in the numbers of LSCC lesions in Usp28-deleted lungs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, histological examination of KFCU mice revealed a clear reduction in the numbers of LSCC lesions in Usp28-deleted lungs (Figure 2F, Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by histological data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "936e559f-301c-43c6-806a-03312f136a09",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C34",
+      "claim": "The few CK5-positive LSCC lesions that remained after Usp28 deletion were substantially smaller than control tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "As well as a significant reduction in tumour number, the few CK5-positive LSCC lesions that remained were substantially smaller than control tumours (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by tumor size measurements shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "51b82bc3-ef18-4e35-aa06-bf03fe79f42e",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C35",
+      "claim": "Measurement of 429 individual KFCU LSCC tumours showed an average size of 11.4 \u00d7 10^4 \u03bcm^2 in the vehicle arm versus 4.6 \u00d7 10^4 \u03bcm^2 in the tamoxifen arm.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of the size of 429 individual KFCU LSCC tumours (326 vehicle-treated and 103 tamoxifen-treated) showed an average size of 11.4 \u00d7 104 \u03bcm2 in the vehicle arm versus 4.6 \u00d7 104 \u03bcm2 in the tamoxifen arm (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by tumor size measurements shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "2a64779a-5c70-4cd4-840d-86048dbc1508",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C36",
+      "claim": "Usp28 deletion resulted in apoptotic cell death in LSCC tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting analysis revealed that Usp28 deletion resulted in apoptotic cell death (cleaved caspase-3; CC3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by Western blot data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "cf2cfb56-f5bd-4026-93b3-ce066c5a85f2",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C37",
+      "claim": "Usp28 deletion decreased c-JUN and c-MYC protein levels in KFCU LADC lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Usp28 deletion also decreased c-JUN and c-MYC levels in KFCU LADC lesions, although the reduction in c-MYC protein levels was significantly less pronounced than observed in LSCC (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "d6258368-92c3-4522-b517-1cfa366a5af5",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C38",
+      "claim": "Elimination of Usp28 has little effect on apoptotic cell death in LADC lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, elimination of Usp28 has little effect, if any, on apoptotic cell death, as determined by its inability to induce CC3 in LADC lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by Western blot data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "75699683-3345-4f9e-9567-2baaa019000f",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C39",
+      "claim": "Loss of USP28 expression in the KPCU LADC model did not result in a reduction of LADC tumour number and size.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of USP28 expression in this second LADC model also did not result in a reduction of LADC tumour number and size (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by histological data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "a92891fb-94f6-4078-91e5-4b83061c668a",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C40",
+      "claim": "FT206 interferes with USP28/25 probe labelling in LSCC H520 cell extracts with EC50 ~300\u20131000 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we found that the compound FT206 interferes with USP28/25 probe labelling (USP-ABP versus USP) in LSCC H520 cell extracts (EC50 ~300\u20131000 nM, Figure 4B) and intact cells (EC50 ~1\u20133 \u03bcM, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by activity-based probe assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "fa781272-14ae-4fdb-a34e-350cf90d4315",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C41",
+      "claim": "FT206 interferes with USP28/25 probe labelling in intact LSCC H520 cells with EC50 ~1\u20133 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we found that the compound FT206 interferes with USP28/25 probe labelling (USP-ABP versus USP) in LSCC H520 cell extracts (EC50 ~300\u20131000 nM, Figure 4B) and intact cells (EC50 ~1\u20133 \u03bcM, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by activity-based probe assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "9e6ddcc8-1e0f-4e51-872b-62656d96968a",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C42",
+      "claim": "AZ1 appeared to exert lower potency towards USP28 (EC50 >30 \u03bcM) and selectivity for USP25 (EC50 ~10\u201330 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to FT206, AZ1, a different USP28 inhibitor (Wrigley et al., 2017), based on a benzylic amino ethanol scaffold, appeared to exert lower potency towards USP28 (EC50 >30 \u03bcM) and selectivity for USP25 (EC50 ~10\u201330 \u03bcM) (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by activity-based probe assay data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "629eb213-d6d2-4ae7-8f3f-4cf745b60f95",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C43",
+      "claim": "Activity-based probe profiling in human LSCC cells revealed a remarkable USP28/25 selectivity for FT206 in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "When performing such assay in human LSCC cells, we were able to profile 28 endogenous DUBs, revealing a remarkable USP28/25 selectivity for FT206 in a dose-dependent manner (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by mass spectrometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "c0efd524-6f92-4e4a-ae6b-1f9ff880256f",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C44",
+      "claim": "The ubiquitination levels of c-MYC and c-JUN increased upon FT206 and MG132 co-treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitination levels of c-MYC and c-JUN increased upon FT206 and MG132 co-treatment (Figure 4\u2014figure supplement 1B), confirming that FT206 blocks USP28-mediated deubiquitination of its substrates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by TUBE pulldown data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "90caabdf-ab33-42c6-add0-103c5f7162df",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C45",
+      "claim": "The ubiquitination level of USP28 increased upon FT206 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitination level of USP28 also increased upon FT206 treatment (Figure 4\u2014figure supplement 1B), which is consistent with previous observations where the enzymatic activity of DUBs can function to enhance their own stability (de Bie and Ciechanover, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by TUBE pulldown data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "2ab8a4cd-ec5f-452b-901a-8fbd348bafbf",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C46",
+      "claim": "Treatment of LSCC tumour cells with FT206 resulted in reduced c-MYC, c-JUN, \u0394p63, and USP28 protein levels, which were restored upon addition of MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, treatment of LSCC tumour cells with FT206 resulted in reduced c-MYC, c-JUN, \u0394p63, and USP28 protein levels, which were restored upon addition of MG132 (Figure 4E, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot data shown in Figure 4E and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "31ce6367-e608-44d5-945c-5c58d5c50e50",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C47",
+      "claim": "FT206 treatment impaired LSCC cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, FT206 treatment impaired LSCC cell growth (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by cell proliferation data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "01c868a1-986f-4845-a0b4-52a12c3fd305",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C48",
+      "claim": "In a USP28-depleted background, FT206 neither affected cell growth nor reduced c-MYC protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a USP28-depleted background, FT206 neither affected cell growth nor reduced c-MYC protein levels (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by cell proliferation and Western blot data shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "f4a04cf9-16ff-4448-8032-a61746a50d15",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C49",
+      "claim": "FT206 administration at 75 mg/kg three times a week for 5 weeks had no noticeable adverse effects and treated mice maintained normal body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "FT206 administration had no noticeable adverse effects and treated mice maintained normal body weight (Figure 5\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by body weight monitoring data shown in Figure 5\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "87af0c19-4ecb-48a6-967b-14043ad3538a",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C50",
+      "claim": "The number of KF LADC lesions was not affected by USP28 inhibition via FT206 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the effects observed by genetic Usp28 inactivation (Figure 2C), the number of KF LADC lesions was not affected by USP28 inhibition via FT206 treatment (Figure 5B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by histological data shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "4d18d42d-e18d-4493-8c11-f44562c55c07",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C51",
+      "claim": "FT206 effectively reduced LSCC tumour number by 68% (31\u201310 LSCC tumours).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we found that FT206 effectively reduced LSCC tumour number by 68% (31\u201310 LSCC tumours, Figure 5B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by histological data shown in Figure 5B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "8da1b5ee-e96c-445e-928e-19770e705b0e",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C52",
+      "claim": "Measurement of 252 individual KF LSCC mutant tumours showed a significant reduction of over 45% in tumour size upon FT206 treatment: an average of 8.5 \u00d7 10^4 \u03bcm^2 in the vehicle arm versus 4.5 \u00d7 10^4 \u03bcm^2 in the FT206 cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, measurement of 252 individual KF LSCC mutant tumours (156 vehicle-treated and 96 FT206-treated lesions) showed a significant reduction of over 45% in tumour size upon FT206 treatment: an average of 8.5 \u00d7 104 \u03bcm2 in the vehicle arm versus 4.5 \u00d7 104 \u03bcm2 in the FT206 cohort (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by tumor size measurements shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "f4ca924a-6a60-41e9-8a05-539fb9f83640",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C53",
+      "claim": "USP28 inhibition by FT206 leads to a reduction of total LSCC burden of over 85% by single agent treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, USP28 inhibition by FT206 leads to a dramatic reduction in the numbers of advanced LSCC tumours, and the small number of remaining LSCC lesions is significantly reduced in size, resulting in a reduction of total LSCC burden of over 85% by single agent treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and is calculated from the tumor number and size data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "8ff1ecbb-7644-4769-9aac-58226cb6e1f4",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C54",
+      "claim": "Treatment of KF mice with FT206 resulted in reduced \u0394p63, c-JUN, and c-MYC protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the effects found by genetic Usp28 deletion, treatment of KF mice with FT206 also resulted in reduced \u0394p63, c-JUN, and c-MYC protein levels (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by IHC data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "435e34a6-413c-4495-b2d1-cd410802970d",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C55",
+      "claim": "FT206 treatment led to a substantial increase in the number of CC3-positive cells in LSCC while LADC cells were not significantly affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, FT206 treatment led to a substantial increase in the number of CC3-positive cells in LSCC while LADC cells were not significantly affected, indicating that USP28 inhibition causes apoptotic cell death of LSCC tumour cells (Figure 5H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by IHC data shown in Figure 5H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "a1e79689-dada-47af-b6cb-0d63029b1e45",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C56",
+      "claim": "In KFCU mice pre-exposed to tamoxifen to delete Usp28, USP28 inhibition by FT206 did not result in either a further reduction of LADC and LSCC lesions or body weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to further confirm the specificity of FT206, KFCU mice pre-exposed to tamoxifen to delete the conditional Usp28 floxed alleles were further treated with the USP28 inhibitor FT206. In this setting, USP28 inhibition did not result in either a further reduction of LADC and LSCC lesions or body weight loss (Figure 2C and F, Figure 2\u2014figure supplement 1E), suggesting that FT206 targets specifically USP28.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by histological and body weight data shown in Figure 2C, F, and Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "b937ffa6-e971-47fb-83d4-adda6289ac73",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C57",
+      "claim": "siRNA-mediated USP28 depletion considerably reduced protein levels of \u0394p63, c-JUN, and c-MYC and impaired growth in human LSCC tumour cells.",
+      "claim_type": "EXPLICIT",
+      "source": "siRNA-mediated USP28 but not USP25 depletion, and USP28 inhibitor treatment, considerably reduced protein levels of \u0394p63, c-JUN, and c-MYC and impaired growth in human LSCC tumour cells (Figure 6A\u2013C, Figure 6\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot and cell proliferation data shown in Figure 6A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "428d12ce-e248-4b6b-8983-724ced7b83df",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C58",
+      "claim": "USP28 inhibitor treatment considerably reduced protein levels of \u0394p63, c-JUN, and c-MYC and impaired growth in human LSCC tumour cells.",
+      "claim_type": "EXPLICIT",
+      "source": "siRNA-mediated USP28 but not USP25 depletion, and USP28 inhibitor treatment, considerably reduced protein levels of \u0394p63, c-JUN, and c-MYC and impaired growth in human LSCC tumour cells (Figure 6A\u2013C, Figure 6\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot and cell proliferation data shown in Figure 6A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "9810c41e-ce80-4af0-bc83-e07faf9dd998",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C59",
+      "claim": "FT206 treatment had marginal effects on c-MYC and c-JUN protein levels in human LADC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, FT206 treatment had marginal effects on c-MYC and c-JUN protein levels in human LADC cells and in USP28 mutant LSCC cells (Figure 6\u2014figure supplement 1C\u20131E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot data shown in Figure 6\u2014figure supplement 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "b3ee0fc0-da37-4479-9b2e-ef7661a02ab4",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C60",
+      "claim": "FT206 treatment had marginal effects on c-MYC and c-JUN protein levels in USP28 mutant LSCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, FT206 treatment had marginal effects on c-MYC and c-JUN protein levels in human LADC cells and in USP28 mutant LSCC cells (Figure 6\u2014figure supplement 1C\u20131E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot data shown in Figure 6\u2014figure supplement 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "fbe4d7d2-be17-4bc6-a85b-d9f4d38876e9",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C61",
+      "claim": "FT206 led to a remarkable growth impairment of xenografts derived from three independent human LSCC cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, FT206 led to a remarkable growth impairment of xenografts derived from three independent human LSCC cell lines (Figure 6D\u2013I), which was accompanied with a strong reduction of c-MYC protein levels (Figure 6J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by xenograft tumor growth data shown in Figure 6D-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "c28a16d7-1123-4b62-aacf-a7186d76d767",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C62",
+      "claim": "FT206 treatment of human LSCC xenografts was accompanied with a strong reduction of c-MYC protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, FT206 led to a remarkable growth impairment of xenografts derived from three independent human LSCC cell lines (Figure 6D\u2013I), which was accompanied with a strong reduction of c-MYC protein levels (Figure 6J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by IHC data shown in Figure 6J-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "92addd2f-c6fe-43ff-ac8c-c33f2dd3f8ff",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C63",
+      "claim": "Mice lacking Usp28 are healthy.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, mice lacking Usp28 are healthy (Knobel et al., 2014), suggesting that USP28 is dispensable for normal physiology and homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "7e5df7ab-5ef2-48eb-ab7a-a26d56a8d7c9",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C64",
+      "claim": "USP28 is dispensable for normal physiology and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, mice lacking Usp28 are healthy (Knobel et al., 2014), suggesting that USP28 is dispensable for normal physiology and homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from cited evidence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "084590f9-8ec2-41bc-8fa3-75bb1340dd9b",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C65",
+      "claim": "USP28 small-molecule inhibition phenocopies the effects of Usp28 deletion in LSCC regression.",
+      "claim_type": "EXPLICIT",
+      "source": "USP28 small-molecule inhibition phenocopies the effects of Usp28 deletion in LSCC regression, consistent with on-target activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "eaa2bb51-c0b2-490e-8a8d-fc0ae73fe483",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C66",
+      "claim": "TP63, c-JUN, and c-MYC protein levels are increased in LSCC compared to LADC.",
+      "claim_type": "EXPLICIT",
+      "source": "TP63, c-JUN, and c-MYC protein levels are increased in LSCC compared to LADC (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by IHC data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "08059433-a987-405e-85dd-8162ff489d92",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C67",
+      "claim": "The frequent downregulation of FBXW7 in human LSCC may underlie the increased accumulation of SCF(Fbw7) substrate proteins like c-MYC, c-JUN, and \u0394P63 in LSCC.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequent downregulation of FBXW7 in human LSCC (Ruiz et al., 2019; Figure 1\u2014figure supplement 2B) may underlie the increased accumulation of SCF(Fbw7) substrate proteins like c-MYC, c-JUN, and \u0394P63 in LSCC, and thereby cause LSCC tumours to be increasingly dependent on USP28 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as a hypothesis based on cited evidence and data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "da58e28f-c849-4989-a561-672d487fd757",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C68",
+      "claim": "All human LSCC cell lines used in the xenograft experiment do not show gain- or loss-of-function mutations in USP28 nor FBXW7.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all human LSCC cell lines used in the xenograft experiment (Figure 6), each of which responded well to USP28 inhibition, do not show neither gain- or loss-of-function mutations in USP28 nor FBXW7, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as an observation about the cell lines used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "bb97a027-7905-4693-b682-571d581d7a9b",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C69",
+      "claim": "USP28 inhibition might be a therapeutic option for many LSCC patients regardless of USP28/FBXW7 mutation status.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data support the notion that LSCC tumour cells respond to USP28 inhibition, regardless of USP28/FBXW7 mutation status, which suggest that USP28 inhibition might be a therapeutic option for many LSCC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion based on the xenograft data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "27b26e62-9775-4b64-8d08-4d4d3da584f3",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C70",
+      "claim": "USP28 is a key mediator of LSCC maintenance and progression.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our studies demonstrate that USP28 is a key mediator of LSCC maintenance and progression and hence USP28 represents an exciting therapeutic target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "c22e8bcb-89d2-4df3-b659-2e0d4dbf2f39",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C71",
+      "claim": "USP28 represents an exciting therapeutic target for LSCC.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our studies demonstrate that USP28 is a key mediator of LSCC maintenance and progression and hence USP28 represents an exciting therapeutic target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "79ee61f7-a017-4a83-8dbb-c58c8acfda37",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C72",
+      "claim": "USP28 inhibition should be considered as a potential therapy for human LSCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, USP28 inhibition should be considered as a potential therapy for human LSCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a recommendation based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "b01a34f3-0ad7-4cb0-9320-f1a1b0dcefab",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C73",
+      "claim": "FT206 preferentially inhibits USP28 compared to USP25.",
+      "claim_type": "EXPLICIT",
+      "source": "FT206, the compound used in this study, preferentially inhibits USP28 compared to USP25, whereas AZ1, the compound used by Prieto-Garcia et al., showed a pronounced activity towards USP25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a comparison between different inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "fbdd6dc4-2a5e-4a7c-a6d1-109ef185f3d7",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C74",
+      "claim": "FT206 inhibits USP28 in the nano-molar range.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, FT206 inhibits USP28 in the nano-molar range, while Prieto-Garcia et al. typically used AZ1 at 10\u201330 \u03bcM, possibly because higher compound concentrations are required for therapeutic inhibition of USP28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the EC50 data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "82eedaf5-656e-4adf-bf58-eee34f0eab05",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C75",
+      "claim": "\u0394p63 and c-JUN are critical factors in squamous cell identity and tumour maintenance, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, \u0394p63 and c-JUN, critical factors in squamous cell identity and tumour maintenance, respectively, showed higher protein levels in LSCC compared to LADC tumours (Figure 1C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as background knowledge about these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "b2f8a79f-533c-4c7b-aba3-7cd96d12d071",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C76",
+      "claim": "Higher expression of USP28 is associated with a significantly shorter survival time.",
+      "claim_type": "EXPLICIT",
+      "source": "Since USP28 is involved in \u0394p63, c-JUN, and c-MYC stabilization and higher expression of USP28 is associated with a significantly shorter survival time (Prieto-Garcia et al., 2020), we targeted its expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "413521b1-f569-46f0-9f71-b3a1a1d03bc2",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C77",
+      "claim": "c-MYC is a transcription factor that orchestrates a potent pro-cancer programme across multiple cellular pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "c-MYC is a transcription factor that orchestrates a potent pro-cancer programme across multiple cellular pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as established knowledge about c-MYC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "8c0778d9-cec7-4124-b8ac-c205ddb1a731",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C78",
+      "claim": "c-MYC is often overexpressed in late-stage cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "As c-MYC is often overexpressed in late-stage cancer, targeting it for degradation is an attractive strategy in many settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "fd21a09f-2c78-4057-b450-9f0a644ac6aa",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C79",
+      "claim": "The deubiquitylase family of enzymes have emerged as attractive drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "The deubiquitylase family of enzymes have emerged as attractive drug targets, which can offer a means to destabilize client proteins that might otherwise be undruggable (Schauer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "22960cd8-210f-479e-97d2-4f83d8ab4289",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C80",
+      "claim": "Usp28 inactivation significantly reduces both the number and the size of LSCC tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Usp28 inactivation significantly reduces both the number and the size of LSCC tumours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the tumor measurement data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "9fcf1fac-dbd4-4e5b-9e1e-b82bffd2159d",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C81",
+      "claim": "USP28 and its substrates are required for the maintenance of LSCC tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data suggest that USP28 and its substrates are required for the maintenance of LSCC tumours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "915520fb-e3a7-4314-af0b-46fd859a012c",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C82",
+      "claim": "The effects of FT206 are mediated by USP28.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this data suggests that the effects of FT206 are mediated by USP28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the USP28 depletion experiment with FT206 treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "ce2128ac-9de2-4817-aae2-cd8f3613e6c9",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C83",
+      "claim": "FT206 blocks USP28-mediated deubiquitination of its substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitination levels of c-MYC and c-JUN increased upon FT206 and MG132 co-treatment (Figure 4\u2014figure supplement 1B), confirming that FT206 blocks USP28-mediated deubiquitination of its substrates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results as a conclusion from the TUBE pulldown data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "2344d8c4-ea80-484f-9c69-623e9587ce17",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C84",
+      "claim": "USP28 inhibition causes apoptotic cell death of LSCC tumour cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, FT206 treatment led to a substantial increase in the number of CC3-positive cells in LSCC while LADC cells were not significantly affected, indicating that USP28 inhibition causes apoptotic cell death of LSCC tumour cells (Figure 5H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results as a conclusion from the cleaved caspase-3 staining data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "1e9b22c3-9f4f-468b-9a15-7b3cc078d6a3",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C85",
+      "claim": "FT206 targets specifically USP28.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to further confirm the specificity of FT206, KFCU mice pre-exposed to tamoxifen to delete the conditional Usp28 floxed alleles were further treated with the USP28 inhibitor FT206. In this setting, USP28 inhibition did not result in either a further reduction of LADC and LSCC lesions or body weight loss (Figure 2C and F, Figure 2\u2014figure supplement 1E), suggesting that FT206 targets specifically USP28.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results as a conclusion from the genetic deletion plus inhibitor treatment experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "091dd4cc-e94e-4646-a9c5-87e43e62b86f",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C86",
+      "claim": "LSCC tumour cells respond to USP28 inhibition, regardless of USP28/FBXW7 mutation status.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data support the notion that LSCC tumour cells respond to USP28 inhibition, regardless of USP28/FBXW7 mutation status, which suggest that USP28 inhibition might be a therapeutic option for many LSCC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the xenograft data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "fed8545c-5212-4bb5-b5b5-de3d32cf70df",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C87",
+      "claim": "Differences in the selectivity and potency of USP28 inhibitor compounds may explain some of the differences observed between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, differences in the selectivity and potency of the compounds used may explain some of the differences observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a hypothesis to explain differences with another study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "71e79801-71a4-4f30-8c13-09948a295042",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C88",
+      "claim": "LSCC tumours to be increasingly dependent on USP28 function due to increased accumulation of SCF(Fbw7) substrate proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequent downregulation of FBXW7 in human LSCC (Ruiz et al., 2019; Figure 1\u2014figure supplement 2B) may underlie the increased accumulation of SCF(Fbw7) substrate proteins like c-MYC, c-JUN, and \u0394P63 in LSCC, and thereby cause LSCC tumours to be increasingly dependent on USP28 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as a hypothesis based on the data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "86d80399-9d2e-423a-bf5f-60aa9bee015b",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C89",
+      "claim": "The enzymatic activity of DUBs can function to enhance their own stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitination level of USP28 also increased upon FT206 treatment (Figure 4\u2014figure supplement 1B), which is consistent with previous observations where the enzymatic activity of DUBs can function to enhance their own stability (de Bie and Ciechanover, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "b1ab3195-d8c6-4ed9-9701-6fc79eb66702",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C90",
+      "claim": "Usp28 deficiency corrected the accumulation of SCF (Fbw7) substrate proteins, including c-JUN and c-MYC, in Fbw7 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that Usp28 deficiency corrected the accumulation of SCF (Fbw7) substrate proteins, including c-JUN and c-MYC, in Fbw7 mutant cells (Diefenbacher et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "a71d910d-f197-49cb-b79a-e233fb59b136",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "claim_id": "C91",
+      "claim": "\u0394p63, c-JUN, and c-MYC are all relevant targets of USP28 in LSCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our study suggests that those three oncoproteins are all relevant targets of USP28 in LSCC (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the Western blot data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "94326010-4eb8-469e-bb55-686c0da44a8d",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LSCC represents a significant clinical challenge with high incidence (>600,000 cases/year), poor survival (<5% 5-year survival), and limited treatment options beyond platinum-based chemotherapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C10-C12 establish the clinical context for LSCC through cited epidemiological data and treatment landscape. These background claims are well-supported by citations and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "1759c3ab-8432-4ac7-bd05-9e533ddbb023",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FBW7 is a tumor suppressor frequently inactivated in LSCC that targets oncoproteins including c-MYC, NOTCH, and c-JUN for degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 describe FBW7 function and its role in lung cancer based on cited literature and prior work. The data on FBW7 alterations in human LSCC (69% undetectable by IHC, C16) and mouse model penetrance (C17) are well-documented with appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "2348e0cc-a507-425d-992a-9463cf7dea2c",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "USP28 stabilizes oncoproteins c-MYC, c-JUN, and \u0394p63 by opposing FBW7-mediated ubiquitination, and USP28 deletion reduces tumor burden in colorectal cancer models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19-C20 establish the biological rationale for targeting USP28 based on cited prior work. These claims provide appropriate background from published literature demonstrating USP28's role in stabilizing oncoproteins and its therapeutic potential in other cancer types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "afc97f4e-0116-4405-a338-7ed6235815fe",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "c-MYC, c-JUN, and \u0394p63 are elevated in human LSCC compared to normal lung tissue and LADC tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24, C66 demonstrate elevated expression of USP28 substrates in LSCC using multiple orthogonal approaches (TCGA analysis, qPCR, IHC) across independent sample sets. The data consistently show higher levels in LSCC versus LADC and normal tissue, supporting the biological rationale for targeting USP28 in LSCC.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "d30441aa-b2bb-42eb-94e1-d0cd42c5fc87",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Individual knockdown of c-MYC, c-JUN, or \u0394p63 reduces LSCC cell growth in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 demonstrates functional dependence of LSCC cells on these oncoproteins through siRNA experiments in four independent cell lines (Figure 1E, Figure 1\u2014figure supplement 1A-C). This establishes that these proteins are functionally important for LSCC cell proliferation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "5659fe2d-bd93-4acd-9f7e-6fe127b9509c",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "USP28 shows gain-of-function alterations in 25% of human LSCC cases, with copy number correlating with mRNA and protein expression, and higher USP28 expression associates with shorter survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C76 characterize USP28 alterations in human LSCC using TCGA data and patient samples. The correlation between copy number, mRNA, and protein levels (C27-C28) is demonstrated with appropriate data (Figure 1F-G, Figure 1\u2014figure supplement 2A-B). The survival association (C76) is cited from prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "4396f01c-879e-4053-9501-5e6805a3487d",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "USP28 knockdown reduces c-MYC, c-JUN, and \u0394p63 protein levels and impairs LSCC cell growth in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 demonstrate that USP28 depletion by shRNA reduces substrate protein levels (Figure 1H) and cell proliferation (Figure 1I) in primary LSCC cells. This establishes a functional link between USP28 and its substrates in LSCC cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "15eb8085-d585-4524-a8d6-d9d29d711816",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genetic deletion of Usp28 in established murine LSCC tumors causes dramatic tumor regression, reducing both tumor number and size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C33-C35, C80 demonstrate that tamoxifen-induced Usp28 deletion in the KFCU model significantly reduces LSCC tumor number (Figure 2F) and size (Figure 2G, average 11.4\u00d710\u2074 to 4.6\u00d710\u2074 \u03bcm\u00b2). The dual recombinase system allows temporal separation of tumor initiation from target deletion, providing strong evidence for USP28's role in tumor maintenance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "3ca29500-9e45-4b58-9c0a-890f3bc8a5c4",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Usp28 deletion induces apoptosis and reduces c-MYC, c-JUN, and \u0394p63 protein levels in LSCC tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C29, C91 show that Usp28 deletion causes cleaved caspase-3 induction and dramatic reduction of substrate proteins in LSCC lesions (Figure 2H). The Western blot data clearly demonstrate loss of c-MYC and c-JUN (undetectable) and reduction of \u0394p63, providing a mechanistic explanation for tumor regression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "28d6d8f5-ddda-4c47-88a5-ffcb8b86184d",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "USP28 deletion has minimal effects on LADC tumor burden and does not induce significant apoptosis in LADC lesions despite reducing substrate protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C37-C39 demonstrate differential effects of Usp28 deletion in LADC versus LSCC. While LADC tumor size decreased modestly, tumor number was unchanged (Figure 2B-D, Figure 3C-D), and cleaved caspase-3 was not induced (Figure 2E). This tumor type-specific effect is well-documented across two independent LADC models (KFCU and KPCU).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "6085bf3d-f50a-460f-adba-bff2da37443f",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The small molecule FT206 inhibits USP28 activity in the low nanomolar range (EC50 ~300-1000 nM in cell extracts, ~1-3 \u03bcM in intact cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C40-C41, C74 characterize FT206 potency using activity-based probe assays. The EC50 values are clearly demonstrated in Figure 4B-C with appropriate dose-response data. The nanomolar potency in cell extracts and low micromolar potency in cells is consistent with expected cell permeability effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "404f4462-77f4-4cb0-b9b1-1ecd53dc787a",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "FT206 shows high selectivity for USP28/25 over other deubiquitinases, with preferential inhibition of USP28 compared to USP25.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C43, C73 demonstrate FT206 selectivity through activity-based probe profiling of 28 endogenous DUBs (Figure 4D). The mass spectrometry data clearly shows dose-dependent inhibition of USP28/25 with minimal off-target effects. Comparison with AZ1 (C42) further validates the improved USP28 selectivity of FT206.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "b9ec263e-ac82-403f-a435-f9f476bdce47",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FT206 blocks USP28-mediated deubiquitination, leading to increased ubiquitination of c-MYC, c-JUN, and USP28 itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45, C83 demonstrate mechanism of action through TUBE pulldown assays (Figure 4\u2014figure supplement 1B). The increased ubiquitination of substrates upon FT206+MG132 treatment confirms on-target inhibition of USP28 deubiquitinase activity. The auto-ubiquitination of USP28 is consistent with cited literature on DUB self-regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "ac5b1373-9b5b-4f96-a7ce-321cc9497630",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "FT206 treatment reduces c-MYC, c-JUN, \u0394p63, and USP28 protein levels in LSCC cells, which can be rescued by proteasome inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C7 show that FT206 reduces substrate protein levels in a proteasome-dependent manner (Figure 4E, Figure 4\u2014figure supplement 1C). The rescue by MG132 confirms that protein reduction occurs through enhanced proteasomal degradation rather than transcriptional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "f33f302d-6409-4098-b75b-c4bca1e6b67e",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FT206 impairs LSCC cell growth in a USP28-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48, C82 demonstrate that FT206 reduces LSCC cell proliferation (Figure 4F), and this effect is lost in USP28-depleted cells (Figure 4\u2014figure supplement 1D). This genetic rescue experiment provides strong evidence for on-target activity of FT206.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "cb9eb205-c5bd-4e3f-b635-41240b382f62",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "FT206 treatment induces substantial regression of autochthonous murine LSCC tumors, reducing tumor number by 68% and size by 45%, resulting in >85% reduction in total tumor burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C51-C53 demonstrate dramatic therapeutic efficacy of FT206 in the KF mouse model. The quantification of 252 individual tumors (Figure 5B, E-F) provides robust statistical evidence for both tumor number and size reduction. The calculated 85% total burden reduction represents a major therapeutic effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "83e4a02c-ab59-446e-803c-3cad4e21eee9",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "FT206 treatment does not significantly affect LADC tumor number in the KF mouse model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 shows that FT206 treatment phenocopies the genetic deletion results in LADC, with no significant effect on tumor number (Figure 5B-D). This tumor type-specific effect is consistent with the genetic data and strengthens the conclusion that LSCC is uniquely dependent on USP28.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "feab1b59-4997-4723-a024-bb10fc96094b",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "FT206 treatment reduces \u0394p63, c-JUN, and c-MYC protein levels and induces apoptosis specifically in LSCC tumors but not LADC tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55, C84 demonstrate that FT206 reduces substrate proteins (Figure 5G) and induces cleaved caspase-3 specifically in LSCC lesions (Figure 5H-I). The tumor type-specific apoptosis induction provides mechanistic insight into the differential therapeutic response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "a23aca56-ce3b-460b-abfe-a2c581c58d12",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "FT206 treatment at 75 mg/kg three times weekly for 5 weeks is well-tolerated in mice with no adverse effects on body weight or organ histology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 demonstrates tolerability through body weight monitoring (Figure 5\u2014figure supplement 1A-B) and histological examination of organs. This is important for establishing therapeutic window and is consistent with the expectation that USP28 is dispensable for normal physiology (C63-C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "91f5d1f2-2b66-4057-a5e7-5caba061ce89",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "FT206 shows on-target specificity for USP28, as it has no additional effect in Usp28-deleted mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C85 provide genetic validation of FT206 specificity through the elegant experiment of treating Usp28-deleted KFCU mice with FT206 (Figure 2C, F, Figure 2\u2014figure supplement 1E). The lack of additional effect strongly supports that FT206's therapeutic activity is mediated through USP28 inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "3abfad0e-545d-4749-83f3-2f8b7a6da5e1",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "USP28 depletion or inhibition reduces \u0394p63, c-JUN, and c-MYC protein levels and impairs growth in human LSCC cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 demonstrate that both genetic (siRNA) and pharmacological (FT206) USP28 inhibition reduce substrate proteins and cell proliferation in human LSCC cells (Figure 6A-C). The consistency between genetic and pharmacological approaches strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "b3c18cf3-a5fd-4882-ae02-bd19214e4dc8",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "FT206 has minimal effects on c-MYC and c-JUN protein levels in human LADC cells and USP28-mutant LSCC cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 show tumor type-specific and mutation-specific effects of FT206 (Figure 6\u2014figure supplement 1C-E). The lack of effect in LADC cells and USP28-mutant LSCC cells (SKMES) provides additional evidence for on-target activity and helps define the patient population likely to benefit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "22fdf955-b2a0-450b-b8dc-1900a98426c9",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "FT206 causes dramatic growth inhibition of human LSCC xenografts from three independent cell lines, accompanied by strong reduction in c-MYC protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C61-C62 demonstrate therapeutic efficacy in human LSCC xenografts (Figure 6D-L). The consistent response across three independent cell lines (NCI-H520, CALU-1, LUDLU-1) and correlation with c-MYC reduction provides strong translational evidence for USP28 inhibition in human LSCC.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "32ca09f1-8e66-444d-9b44-f7d06ea23f7e",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "LSCC cell lines without USP28 or FBXW7 mutations respond to USP28 inhibition, suggesting broad therapeutic applicability regardless of mutation status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C86 make the important observation that xenograft-responsive cell lines lack USP28/FBXW7 mutations. This suggests USP28 inhibition may benefit a broad LSCC patient population beyond those with specific genetic alterations, though this requires clinical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "09054430-f275-4dc8-bfd1-d1e345c9693d",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Frequent FBXW7 downregulation in LSCC may cause increased accumulation of substrate proteins and increased dependence on USP28 function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67, C88 propose a mechanistic hypothesis linking FBXW7 loss to USP28 dependence. While the correlation between FBXW7 downregulation and substrate accumulation is shown (C16, C66), the causal relationship and whether this drives USP28 dependence is speculative. The observation that USP28 inhibition works in cells without FBXW7 mutations (C68) somewhat contradicts this model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "78955a96-448f-4400-9be6-39becf2de5f4",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "FT206 shows superior potency and USP28 selectivity compared to the alternative inhibitor AZ1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C73, C87 compare FT206 with AZ1 using activity-based probe assays (Figure 4\u2014figure supplement 1A). The data clearly show FT206 has better USP28 potency (nanomolar vs >30 \u03bcM) and selectivity (preferential USP28 vs USP25-selective for AZ1). This comparison helps explain differences with prior studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "68a0da01-eefc-4917-9588-720c71bf036d",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "USP28 is dispensable for normal physiology and homeostasis in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 cite published work showing Usp28 knockout mice are healthy. This is important background supporting the therapeutic window for USP28 inhibition and is consistent with the tolerability data in this study (C49).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "4ae29a20-ebd5-42e7-82f2-1be9ffc2572b",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Pharmacological USP28 inhibition phenocopies genetic Usp28 deletion in LSCC regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 summarizes the key finding that FT206 treatment produces similar effects to genetic deletion in terms of tumor regression, substrate reduction, and apoptosis induction. This is well-supported by the parallel experiments in Figures 2 and 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "3e2a4197-75c9-4a16-9151-71994ce7e014",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "USP28 is a key mediator of LSCC maintenance and represents a promising therapeutic target for human LSCC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 represent the main conclusions of the study. These are well-supported by the comprehensive genetic and pharmacological evidence demonstrating: (1) USP28 is required for LSCC maintenance, (2) USP28 inhibition causes tumor regression in mouse models, (3) human LSCC xenografts respond to USP28 inhibition, and (4) the treatment is well-tolerated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "5a89ad21-4038-4de3-b7b7-9fd9c85d3018",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R30",
+      "result_category": "llm",
+      "result": "Prior work showed USP28 is required for lung tumor initiation in a different genetic model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 cites published work (Prieto-Garcia et al., 2020) showing USP28's role in tumor initiation. This provides important context distinguishing tumor initiation (prior work) from tumor maintenance (current study), though the current study focuses on the more clinically relevant maintenance question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "3e8a2910-d5b5-4bac-a87f-ff1a48e3abec",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R31",
+      "result_category": "llm",
+      "result": "Background on the biological roles of USP28 substrates and the rationale for targeting deubiquitinases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C77-C79 provide background knowledge about \u0394p63, c-JUN, c-MYC function and the general strategy of targeting deubiquitinases to destabilize oncoproteins. These are well-established concepts supported by citations and provide important context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "63622bc1-9b09-4a6e-a903-dbf612a26369",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R32",
+      "result_category": "llm",
+      "result": "USP28 and its substrates are required for LSCC tumor maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 synthesizes the genetic deletion data showing that loss of USP28 causes substrate reduction and tumor regression. This conclusion is well-supported by the KFCU model data (C33-C36) demonstrating both tumor number and size reduction upon Usp28 deletion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    },
+    {
+      "id": "e80e6099-08fc-461e-b872-a4d3de3205a9",
+      "content_id": "afdc133a-355f-49aa-8425-f5b17438b535",
+      "result_id": "R33",
+      "result_category": "llm",
+      "result": "Background on DUB auto-regulation and prior work on USP28 in FBXW7-mutant cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 cite prior work relevant to interpreting the current findings. C89 explains USP28 auto-ubiquitination (relevant to C45), and C90 cites prior work showing USP28 deficiency corrects substrate accumulation in FBXW7-mutant cells. Both are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:50.718919Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0ddf9775-231a-46e7-81a4-5590ea79eee1",
+      "result_id": "94326010-4eb8-469e-bb55-686c0da44a8d"
+    },
+    {
+      "claim_id": "f1676a4d-1790-4f61-9129-a1c56fe647cc",
+      "result_id": "94326010-4eb8-469e-bb55-686c0da44a8d"
+    },
+    {
+      "claim_id": "1a81681e-5d90-46f5-a57b-45344570088e",
+      "result_id": "94326010-4eb8-469e-bb55-686c0da44a8d"
+    },
+    {
+      "claim_id": "253ebd91-e18e-4b90-9548-47dabb8f015a",
+      "result_id": "94326010-4eb8-469e-bb55-686c0da44a8d"
+    },
+    {
+      "claim_id": "190560c6-1fe6-4812-a6d3-2a06ce71fcaa",
+      "result_id": "94326010-4eb8-469e-bb55-686c0da44a8d"
+    },
+    {
+      "claim_id": "bb777911-6c9d-488e-b252-5025f02b4177",
+      "result_id": "1759c3ab-8432-4ac7-bd05-9e533ddbb023"
+    },
+    {
+      "claim_id": "c1847987-12bd-4093-be23-20fa7c410a7f",
+      "result_id": "1759c3ab-8432-4ac7-bd05-9e533ddbb023"
+    },
+    {
+      "claim_id": "d9b0c2d4-1575-4bcf-a521-0fb01cedf596",
+      "result_id": "1759c3ab-8432-4ac7-bd05-9e533ddbb023"
+    },
+    {
+      "claim_id": "b9162095-eb82-4d02-9992-bd1e971ca683",
+      "result_id": "1759c3ab-8432-4ac7-bd05-9e533ddbb023"
+    },
+    {
+      "claim_id": "bdfab27c-5415-429e-b098-e31594f614ee",
+      "result_id": "1759c3ab-8432-4ac7-bd05-9e533ddbb023"
+    },
+    {
+      "claim_id": "5474b47e-673c-41e6-9b38-3d1094327f6a",
+      "result_id": "1759c3ab-8432-4ac7-bd05-9e533ddbb023"
+    },
+    {
+      "claim_id": "457e4828-59f7-453d-b365-47942ed19e2b",
+      "result_id": "2348e0cc-a507-425d-992a-9463cf7dea2c"
+    },
+    {
+      "claim_id": "a52cf215-b403-42fb-b75d-9018e5821023",
+      "result_id": "2348e0cc-a507-425d-992a-9463cf7dea2c"
+    },
+    {
+      "claim_id": "ea8dabad-142a-40ca-9890-5f6a922b4ccb",
+      "result_id": "2348e0cc-a507-425d-992a-9463cf7dea2c"
+    },
+    {
+      "claim_id": "5c65f98b-5420-4920-9a10-53789a54618f",
+      "result_id": "afc97f4e-0116-4405-a338-7ed6235815fe"
+    },
+    {
+      "claim_id": "b4c1861c-5baf-47f7-9cd5-f8d922ed0247",
+      "result_id": "afc97f4e-0116-4405-a338-7ed6235815fe"
+    },
+    {
+      "claim_id": "5860611e-21a9-47de-a42c-14da4e449da0",
+      "result_id": "afc97f4e-0116-4405-a338-7ed6235815fe"
+    },
+    {
+      "claim_id": "538210f5-61a1-4cf1-9dab-22135048a753",
+      "result_id": "afc97f4e-0116-4405-a338-7ed6235815fe"
+    },
+    {
+      "claim_id": "eaa2bb51-c0b2-490e-8a8d-fc0ae73fe483",
+      "result_id": "afc97f4e-0116-4405-a338-7ed6235815fe"
+    },
+    {
+      "claim_id": "2eaf53f4-e190-437d-9619-8a420178d983",
+      "result_id": "d30441aa-b2bb-42eb-94e1-d0cd42c5fc87"
+    },
+    {
+      "claim_id": "34f3e1e9-1ec9-4310-bafa-f01e816f369e",
+      "result_id": "5659fe2d-bd93-4acd-9f7e-6fe127b9509c"
+    },
+    {
+      "claim_id": "c00d2e2a-0caf-40da-9b95-1fef9abaacc3",
+      "result_id": "5659fe2d-bd93-4acd-9f7e-6fe127b9509c"
+    },
+    {
+      "claim_id": "392ebcdf-e14d-4c86-a851-9129b946b476",
+      "result_id": "5659fe2d-bd93-4acd-9f7e-6fe127b9509c"
+    },
+    {
+      "claim_id": "b2f8a79f-533c-4c7b-aba3-7cd96d12d071",
+      "result_id": "5659fe2d-bd93-4acd-9f7e-6fe127b9509c"
+    },
+    {
+      "claim_id": "a44a2489-c0c5-47a5-81e6-614dc5196ed7",
+      "result_id": "4396f01c-879e-4053-9501-5e6805a3487d"
+    },
+    {
+      "claim_id": "bdcc3544-e6bc-4aa3-bad0-282f007fa154",
+      "result_id": "4396f01c-879e-4053-9501-5e6805a3487d"
+    },
+    {
+      "claim_id": "d76ba8cc-fcce-4094-873b-24e8775de705",
+      "result_id": "15eb8085-d585-4524-a8d6-d9d29d711816"
+    },
+    {
+      "claim_id": "38448af1-9966-41bb-a7ae-bb3eb9e831cb",
+      "result_id": "15eb8085-d585-4524-a8d6-d9d29d711816"
+    },
+    {
+      "claim_id": "936e559f-301c-43c6-806a-03312f136a09",
+      "result_id": "15eb8085-d585-4524-a8d6-d9d29d711816"
+    },
+    {
+      "claim_id": "51b82bc3-ef18-4e35-aa06-bf03fe79f42e",
+      "result_id": "15eb8085-d585-4524-a8d6-d9d29d711816"
+    },
+    {
+      "claim_id": "22960cd8-210f-479e-97d2-4f83d8ab4289",
+      "result_id": "15eb8085-d585-4524-a8d6-d9d29d711816"
+    },
+    {
+      "claim_id": "2a64779a-5c70-4cd4-840d-86048dbc1508",
+      "result_id": "3ca29500-9e45-4b58-9c0a-890f3bc8a5c4"
+    },
+    {
+      "claim_id": "a44a2489-c0c5-47a5-81e6-614dc5196ed7",
+      "result_id": "3ca29500-9e45-4b58-9c0a-890f3bc8a5c4"
+    },
+    {
+      "claim_id": "a71d910d-f197-49cb-b79a-e233fb59b136",
+      "result_id": "3ca29500-9e45-4b58-9c0a-890f3bc8a5c4"
+    },
+    {
+      "claim_id": "d54a8174-1f54-4450-9b57-81294c2405fe",
+      "result_id": "28d6d8f5-ddda-4c47-88a5-ffcb8b86184d"
+    },
+    {
+      "claim_id": "cf2cfb56-f5bd-4026-93b3-ce066c5a85f2",
+      "result_id": "28d6d8f5-ddda-4c47-88a5-ffcb8b86184d"
+    },
+    {
+      "claim_id": "d6258368-92c3-4522-b517-1cfa366a5af5",
+      "result_id": "28d6d8f5-ddda-4c47-88a5-ffcb8b86184d"
+    },
+    {
+      "claim_id": "75699683-3345-4f9e-9567-2baaa019000f",
+      "result_id": "28d6d8f5-ddda-4c47-88a5-ffcb8b86184d"
+    },
+    {
+      "claim_id": "ae85fc80-40ee-4f6a-ab50-8a975095acf2",
+      "result_id": "6085bf3d-f50a-460f-adba-bff2da37443f"
+    },
+    {
+      "claim_id": "a92891fb-94f6-4078-91e5-4b83061c668a",
+      "result_id": "6085bf3d-f50a-460f-adba-bff2da37443f"
+    },
+    {
+      "claim_id": "fa781272-14ae-4fdb-a34e-350cf90d4315",
+      "result_id": "6085bf3d-f50a-460f-adba-bff2da37443f"
+    },
+    {
+      "claim_id": "fbdd6dc4-2a5e-4a7c-a6d1-109ef185f3d7",
+      "result_id": "6085bf3d-f50a-460f-adba-bff2da37443f"
+    },
+    {
+      "claim_id": "4bbf26ed-843c-493a-9126-edd73a843bef",
+      "result_id": "404f4462-77f4-4cb0-b9b1-1ecd53dc787a"
+    },
+    {
+      "claim_id": "629eb213-d6d2-4ae7-8f3f-4cf745b60f95",
+      "result_id": "404f4462-77f4-4cb0-b9b1-1ecd53dc787a"
+    },
+    {
+      "claim_id": "b01a34f3-0ad7-4cb0-9320-f1a1b0dcefab",
+      "result_id": "404f4462-77f4-4cb0-b9b1-1ecd53dc787a"
+    },
+    {
+      "claim_id": "c0efd524-6f92-4e4a-ae6b-1f9ff880256f",
+      "result_id": "b9ec263e-ac82-403f-a435-f9f476bdce47"
+    },
+    {
+      "claim_id": "90caabdf-ab33-42c6-add0-103c5f7162df",
+      "result_id": "b9ec263e-ac82-403f-a435-f9f476bdce47"
+    },
+    {
+      "claim_id": "ce2128ac-9de2-4817-aae2-cd8f3613e6c9",
+      "result_id": "b9ec263e-ac82-403f-a435-f9f476bdce47"
+    },
+    {
+      "claim_id": "2ab8a4cd-ec5f-452b-901a-8fbd348bafbf",
+      "result_id": "ac5b1373-9b5b-4f96-a7ce-321cc9497630"
+    },
+    {
+      "claim_id": "aa6cba7e-57aa-433f-acb2-88264b56f97c",
+      "result_id": "ac5b1373-9b5b-4f96-a7ce-321cc9497630"
+    },
+    {
+      "claim_id": "31ce6367-e608-44d5-945c-5c58d5c50e50",
+      "result_id": "f33f302d-6409-4098-b75b-c4bca1e6b67e"
+    },
+    {
+      "claim_id": "01c868a1-986f-4845-a0b4-52a12c3fd305",
+      "result_id": "f33f302d-6409-4098-b75b-c4bca1e6b67e"
+    },
+    {
+      "claim_id": "915520fb-e3a7-4314-af0b-46fd859a012c",
+      "result_id": "f33f302d-6409-4098-b75b-c4bca1e6b67e"
+    },
+    {
+      "claim_id": "d9b4f975-5495-4def-afd3-665bb74d9fb7",
+      "result_id": "cb9eb205-c5bd-4e3f-b635-41240b382f62"
+    },
+    {
+      "claim_id": "4d18d42d-e18d-4493-8c11-f44562c55c07",
+      "result_id": "cb9eb205-c5bd-4e3f-b635-41240b382f62"
+    },
+    {
+      "claim_id": "8da1b5ee-e96c-445e-928e-19770e705b0e",
+      "result_id": "cb9eb205-c5bd-4e3f-b635-41240b382f62"
+    },
+    {
+      "claim_id": "f4ca924a-6a60-41e9-8a05-539fb9f83640",
+      "result_id": "cb9eb205-c5bd-4e3f-b635-41240b382f62"
+    },
+    {
+      "claim_id": "87af0c19-4ecb-48a6-967b-14043ad3538a",
+      "result_id": "83e4a02c-ab59-446e-803c-3cad4e21eee9"
+    },
+    {
+      "claim_id": "8ff1ecbb-7644-4769-9aac-58226cb6e1f4",
+      "result_id": "feab1b59-4997-4723-a024-bb10fc96094b"
+    },
+    {
+      "claim_id": "435e34a6-413c-4495-b2d1-cd410802970d",
+      "result_id": "feab1b59-4997-4723-a024-bb10fc96094b"
+    },
+    {
+      "claim_id": "2344d8c4-ea80-484f-9c69-623e9587ce17",
+      "result_id": "feab1b59-4997-4723-a024-bb10fc96094b"
+    },
+    {
+      "claim_id": "f4a04cf9-16ff-4448-8032-a61746a50d15",
+      "result_id": "a23aca56-ce3b-460b-abfe-a2c581c58d12"
+    },
+    {
+      "claim_id": "a1e79689-dada-47af-b6cb-0d63029b1e45",
+      "result_id": "91f5d1f2-2b66-4057-a5e7-5caba061ce89"
+    },
+    {
+      "claim_id": "1e9b22c3-9f4f-468b-9a15-7b3cc078d6a3",
+      "result_id": "91f5d1f2-2b66-4057-a5e7-5caba061ce89"
+    },
+    {
+      "claim_id": "b937ffa6-e971-47fb-83d4-adda6289ac73",
+      "result_id": "3abfad0e-545d-4749-83f3-2f8b7a6da5e1"
+    },
+    {
+      "claim_id": "428d12ce-e248-4b6b-8983-724ced7b83df",
+      "result_id": "3abfad0e-545d-4749-83f3-2f8b7a6da5e1"
+    },
+    {
+      "claim_id": "9810c41e-ce80-4af0-bc83-e07faf9dd998",
+      "result_id": "b3c18cf3-a5fd-4882-ae02-bd19214e4dc8"
+    },
+    {
+      "claim_id": "b3ee0fc0-da37-4479-9b2e-ef7661a02ab4",
+      "result_id": "b3c18cf3-a5fd-4882-ae02-bd19214e4dc8"
+    },
+    {
+      "claim_id": "d182826d-9a5c-46e1-a641-c740b99ee339",
+      "result_id": "22fdf955-b2a0-450b-b8dc-1900a98426c9"
+    },
+    {
+      "claim_id": "fbe4d7d2-be17-4bc6-a85b-d9f4d38876e9",
+      "result_id": "22fdf955-b2a0-450b-b8dc-1900a98426c9"
+    },
+    {
+      "claim_id": "c28a16d7-1123-4b62-aacf-a7186d76d767",
+      "result_id": "22fdf955-b2a0-450b-b8dc-1900a98426c9"
+    },
+    {
+      "claim_id": "da58e28f-c849-4989-a561-672d487fd757",
+      "result_id": "32ca09f1-8e66-444d-9b44-f7d06ea23f7e"
+    },
+    {
+      "claim_id": "bb97a027-7905-4693-b682-571d581d7a9b",
+      "result_id": "32ca09f1-8e66-444d-9b44-f7d06ea23f7e"
+    },
+    {
+      "claim_id": "091dd4cc-e94e-4646-a9c5-87e43e62b86f",
+      "result_id": "32ca09f1-8e66-444d-9b44-f7d06ea23f7e"
+    },
+    {
+      "claim_id": "08059433-a987-405e-85dd-8162ff489d92",
+      "result_id": "09054430-f275-4dc8-bfd1-d1e345c9693d"
+    },
+    {
+      "claim_id": "71e79801-71a4-4f30-8c13-09948a295042",
+      "result_id": "09054430-f275-4dc8-bfd1-d1e345c9693d"
+    },
+    {
+      "claim_id": "9e6ddcc8-1e0f-4e51-872b-62656d96968a",
+      "result_id": "78955a96-448f-4400-9be6-39becf2de5f4"
+    },
+    {
+      "claim_id": "b01a34f3-0ad7-4cb0-9320-f1a1b0dcefab",
+      "result_id": "78955a96-448f-4400-9be6-39becf2de5f4"
+    },
+    {
+      "claim_id": "fed8545c-5212-4bb5-b5b5-de3d32cf70df",
+      "result_id": "78955a96-448f-4400-9be6-39becf2de5f4"
+    },
+    {
+      "claim_id": "92addd2f-c6fe-43ff-ac8c-c33f2dd3f8ff",
+      "result_id": "68a0da01-eefc-4917-9588-720c71bf036d"
+    },
+    {
+      "claim_id": "7e5df7ab-5ef2-48eb-ab7a-a26d56a8d7c9",
+      "result_id": "68a0da01-eefc-4917-9588-720c71bf036d"
+    },
+    {
+      "claim_id": "084590f9-8ec2-41bc-8fa3-75bb1340dd9b",
+      "result_id": "4ae29a20-ebd5-42e7-82f2-1be9ffc2572b"
+    },
+    {
+      "claim_id": "27b26e62-9775-4b64-8d08-4d4d3da584f3",
+      "result_id": "3e2a4197-75c9-4a16-9151-71994ce7e014"
+    },
+    {
+      "claim_id": "c22e8bcb-89d2-4df3-b659-2e0d4dbf2f39",
+      "result_id": "3e2a4197-75c9-4a16-9151-71994ce7e014"
+    },
+    {
+      "claim_id": "79ee61f7-a017-4a83-8dbb-c58c8acfda37",
+      "result_id": "3e2a4197-75c9-4a16-9151-71994ce7e014"
+    },
+    {
+      "claim_id": "68935ec6-56db-4106-a914-d94964fdf140",
+      "result_id": "5a89ad21-4038-4de3-b7b7-9fd9c85d3018"
+    },
+    {
+      "claim_id": "82eedaf5-656e-4adf-bf58-eee34f0eab05",
+      "result_id": "3e8a2910-d5b5-4bac-a87f-ff1a48e3abec"
+    },
+    {
+      "claim_id": "413521b1-f569-46f0-9f71-b3a1a1d03bc2",
+      "result_id": "3e8a2910-d5b5-4bac-a87f-ff1a48e3abec"
+    },
+    {
+      "claim_id": "8c0778d9-cec7-4124-b8ac-c205ddb1a731",
+      "result_id": "3e8a2910-d5b5-4bac-a87f-ff1a48e3abec"
+    },
+    {
+      "claim_id": "fd21a09f-2c78-4057-b450-9f0a644ac6aa",
+      "result_id": "3e8a2910-d5b5-4bac-a87f-ff1a48e3abec"
+    },
+    {
+      "claim_id": "9fcf1fac-dbd4-4e5b-9e1e-b82bffd2159d",
+      "result_id": "63622bc1-9b09-4a6e-a903-dbf612a26369"
+    },
+    {
+      "claim_id": "86d80399-9d2e-423a-bf5f-60aa9bee015b",
+      "result_id": "e80e6099-08fc-461e-b872-a4d3de3205a9"
+    },
+    {
+      "claim_id": "b1ab3195-d8c6-4ed9-9701-6fc79eb66702",
+      "result_id": "e80e6099-08fc-461e-b872-a4d3de3205a9"
+    }
+  ],
+  "comparisons": []
+}

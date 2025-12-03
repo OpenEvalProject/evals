@@ -1,0 +1,462 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "An RNAi screen identified NuRD complex components (mep-1, let-418, hda-1, lin-40, lin-53, dcp-66), SIN3-HDAC complex components (sin-3, mrg-1), and SUMO pathway genes (smo-1, ubc-9) as required for piRNA-mediated silencing. Notably, the E3 SUMO ligase gei-17 did not show a desilencing phenotype in the screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 are well-supported by the RNAi screen data shown in Figure 1C and Supplementary file 1, combined with validation using auxin-inducible degron alleles, tagged alleles, and temperature-sensitive mutants. The negative result for gei-17 (C30, C35) is consistently observed across multiple approaches, strengthening the overall findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "HDA-1 is SUMOylated at C-terminal lysines K444 and K459 in the adult germline. GPS-SUMO software predicted these non-consensus sites, and Ni-NTA affinity chromatography under denaturing conditions confirmed that mutation of both lysines (KKRR) abolishes SUMOylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are supported by computational prediction (C41), biochemical evidence from Ni-NTA pull-downs (C42-C43), and data from a parallel study (C37-C38). The use of MRG-1 as a positive control (C44) strengthens the biochemical findings. The identification of non-consensus sites is well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Mutation of HDA-1 SUMOylation sites (KKRR) causes complete desilencing of the piRNA sensor, while appending SUMO via translational fusion (HDA-1::SMO-1) completely rescues silencing in both KKRR mutants and upstream SUMO pathway mutants (smo-1, ubc-9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are strongly supported by the piRNA sensor assays shown in Figure 2C. The rescue experiments with the HDA-1::SMO-1 fusion provide compelling genetic evidence that SUMOylation of HDA-1 is both necessary and sufficient for piRNA-mediated silencing. The ability to bypass upstream SUMO machinery is particularly convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "HDA-1 SUMOylation is required for initiation but not maintenance of piRNA-mediated silencing. An already-silenced gfp::cdk-1 transgene remained silent for five generations in HDA-1(KKRR) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by the maintenance assay data and citations to prior work (Shirayama et al., 2012). The experimental design appropriately tests maintenance by introducing an already-silenced transgene into the mutant background. However, the sample size (n=26) is modest and only one transgene was tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "HDA-1(KKRR) mutants exhibit reduced fertility at both 20\u00b0C and 25\u00b0C, with progressive decline over generations at 25\u00b0C (mortal germline phenotype). The HDA-1::SMO-1 fusion rescues fertility at 20\u00b0C but shows progressive sterility at 25\u00b0C, indicating that properly regulated SUMOylation is essential for germline immortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C65 are supported by brood size analysis (Figure 2E) and mortal germline assays (Figure 2F). The temperature-dependent phenotypes and progressive decline over generations are well-documented. However, the observation that even wild-type HDA-1::SMO-1 (with intact SUMO sites) shows fertility defects (C64) suggests the fusion itself may be problematic, complicating interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "IP-MS analysis identified core HDA-1 interactors (LIN-40, LIN-53, DCP-66, SPR-5) and revealed that 63 proteins show SUMO-dependent interactions with HDA-1, including MEP-1, AMA-1, and MET-2. Core NuRD components were reduced 12-37% in SUMO-depleted conditions, while SIN-3 interactions were SUMO-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by IP-MS data (Figure 3A-C, Supplementary file 2). The use of both smo-1(RNAi) and hda-1[KKRR] provides orthogonal validation. However, the 40% depletion cutoff is arbitrary (C68), and the modest reductions in core interactors (12-37%, C70) raise questions about biological significance. The normalization using HDA-1 spectral counts is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MEP-1 interactions with LET-418 are SUMO-independent, but MEP-1 interactions with HDA-1, LIN-53, MRG-1, HPL-1, and HPL-2 require HDA-1 SUMOylation. The HDA-1::SMO-1 fusion dramatically enhances these interactions above wild-type levels. The fusion protein undergoes cleavage and mono-ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are supported by IP-western blot data (Figure 3D-E). The differential effects on MEP-1 interactions are clear and reproducible. The observation that HDA-1::SMO-1 enhances interactions above wild-type (C75) is striking. The identification of cleavage and ubiquitination products (C78-C79) is based on size and antibody reactivity, which is reasonable but could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SUMOylation promotes HDA-1 complex assembly and function. HDA-1(KKRR) mutants show reduced H3K9me2, increased H3K4me3, and increased H3K9Ac throughout the germline. ChIP-seq reveals that HDA-1, LET-418, and MEP-1 bind heterochromatic regions enriched for H3K9me2/3 and depleted of H3K9Ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by immunofluorescence data (Figure 4A-C) and ChIP-seq data (Figure 4D). The histone modification changes are consistent with loss of HDAC and associated chromatin-modifying activities. The ChIP-seq data showing co-localization of NuRD components with heterochromatic marks provides strong support for the model. However, quantification of immunofluorescence intensity would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Loss of HDA-1 SUMOylation causes widespread misregulation of germline gene expression. HDA-1(KKRR) shows upregulation of 430 genes, while complete HDA-1 depletion upregulates ~10-fold more genes. The HDA-1::SMO-1 fusion restores gene expression to near wild-type levels. Upregulated genes show loss of H3K9me2 enrichment at promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by mRNA-seq data (Figure 5B-D) and ChIP-seq data (Figure 5\u2014figure supplement 3). The comparison between hda-1[KKRR] and degron::hda-1 (C89-C90) appropriately distinguishes SUMOylation-dependent from SUMOylation-independent functions. The rescue by HDA-1::SMO-1 (C92) provides strong validation. Replicate libraries show high reproducibility (Figure 5\u2014figure supplement 1A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Genes upregulated in hda-1[KKRR] show extensive overlap with piRNA pathway mutants: 84% overlap with prg-1 and rde-3, and 77% overlap with all three mutants. Transposon upregulation is more limited in hda-1[KKRR] (6 families) compared to rde-3 (30 families), suggesting HDA-1 also functions in SUMO-independent maintenance of silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C103 are supported by comparative mRNA-seq analysis (Figure 5E, Figure 5\u2014figure supplement 2). The high degree of overlap between hda-1[KKRR] and piRNA pathway mutants strongly supports a role for HDA-1 SUMOylation in piRNA silencing. The differential effects on transposons (C99-C102) appropriately distinguish initiation from maintenance functions. The inference about SUMO-independent functions (C103) is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Most genes upregulated in prg-1, rde-3, and hda-1[KKRR] mutants are normally expressed during spermatogenesis. The upregulation does not correlate with reduced WAGO 22G-RNAs, suggesting indirect regulation by small RNA pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by mRNA-seq data (Figure 5F-I) and small RNA-seq data (Figure 5\u2014figure supplement 5). The classification of genes by developmental expression pattern is appropriate. The lack of correlation with small RNA levels (C105) is an important observation that suggests indirect regulation, though alternative explanations (e.g., post-transcriptional effects) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114"
+    ],
+    "result": "HDA-1 physically interacts with the nuclear Argonaute WAGO-9/HRDE-1 and the HP1-like protein HPL-2. These interactions are reduced in hda-1[KKRR] mutants or by smo-1(RNAi), indicating SUMO-dependent assembly of an Argonaute-guided nucleosome-remodeling complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C114 are supported by reciprocal IP experiments (Figure 6A-B) and citations to prior work establishing WAGO-9 function. The SUMO-dependence of interactions is clearly demonstrated. The observation about differential GFP cleavage in KKRR mutants (C112) is interesting but not fully explained. The conclusion about Argonaute-guided complex assembly (C114) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "HDA-1 SUMOylation is required for heritable RNAi. The hda-1[KKRR] mutant shows efficient silencing in the P0 generation but complete loss of silencing in F1 and F2 generations, similar to wago-9/hrde-1 mutants. The HDA-1::SMO-1 fusion fully rescues the heritable RNAi defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 are supported by RNAi inheritance assays (Figure 6C) and citations to prior work. The experimental design appropriately tests transgenerational inheritance by removing dsRNA after P0. The parallel defects in hda-1[KKRR] and wago-9/hrde-1 mutants, combined with rescue by HDA-1::SMO-1, provide strong evidence for a role in heritable silencing. Sample sizes are adequate (n\u226522).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Summary of key findings: C-terminal lysines K444 and K459 are required for HDA-1 SUMOylation. Mutation to KKRR abolishes initiation but not maintenance of piRNA silencing and abolishes transgenerational RNAi. Appending SUMO by translational fusion rescues all defects, even in SUMO pathway mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 accurately summarize the major experimental findings presented throughout the manuscript. These summary claims are well-supported by the collective evidence from mutagenesis, biochemical, genetic, and functional assays described in the preceding results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The SUMOylated form of HDA-1 is undetectable in standard IP assays but can be recovered under denaturing conditions. This is explained by rapid deconjugation of SUMO in lysates, a phenomenon known from other organisms and regulated by SUMO proteases like SENP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 are supported by the biochemical data (Figure 2B) and citations to prior work on SUMO dynamics. The explanation for the discordance between genetic and biochemical evidence is reasonable and well-supported by literature. However, direct demonstration of SUMO protease activity in C. elegans lysates would strengthen this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The HDA-1::SMO-1 translational fusion is stable in lysates, rescues silencing defects, and enhances protein-protein interactions. The fusion is well-tolerated in vivo despite being at an essential locus. The fusion undergoes cleavage and ubiquitination, which may provide regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C138 are supported by western blot data (Figures 2D, 3D-E) and functional assays. The stability and functionality of the fusion protein are well-documented. The speculation about regulatory mechanisms (C135, C137) is reasonable but remains to be tested. The observation that the fusion is well-tolerated (C134) is somewhat surprising given the essential nature of hda-1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Prior studies in mammals have investigated HDAC1 SUMOylation, showing that mutation of C-terminal lysines increases histone acetylation and transcriptional activation. SENP1 regulates HDAC1 SUMOylation and is upregulated in prostate cancer. HDAC1::SUMO fusion rescues Alzheimer's disease phenotypes in mice, suggesting neuroprotective roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C147 accurately summarize prior work on mammalian HDAC1 SUMOylation, supported by appropriate citations. These claims provide important context for the C. elegans findings and suggest evolutionary conservation of this regulatory mechanism. The claims are appropriately presented as prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Model and mechanistic speculation: SUMO may bridge HDA-1 and WAGO-9 while promoting NuRD assembly. The mechanism may involve SUMO-SIM interactions, though preliminary studies of MEP-1 SIM mutants were confounded by severe phenotypes. The differential requirement for SUMOylation in embryo vs. adult germline remains unexplained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C158 present a mechanistic model and speculation about SUMO-mediated interactions. While the model is supported by the enhanced interactions with HDA-1::SMO-1 (C149-C150), direct evidence for SUMO-SIM interactions is lacking. The preliminary SIM mutant data (C157) is inconclusive. The paradox about embryo vs. adult (C151-C154) is acknowledged but unresolved. These remain important questions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C165"
+    ],
+    "result": "Comparison with other organisms: Nuclear Argonautes in worms, flies, and mice recruit chromatin-modifying complexes including HDACs and histone methyltransferases. In Drosophila, Piwi interacts with SUMO E3 Su(var)2-10 and recruits SetDB1. The worm MET-2 (SetDB1 homolog) is found in SUMO-dependent HDA-1 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C165 appropriately contextualize the findings within the broader literature on Argonaute-chromatin interactions across species. The citations are appropriate and the comparisons are well-reasoned. The identification of MET-2 in SUMO-dependent HDA-1 complexes (C163) provides a direct parallel to the Drosophila findings. The proposed model (C165) is speculative but well-grounded in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Additional cross-species comparisons: In Drosophila Kc167 cells, MEP-1:Mi-2 complex forms without HDAC1, but these cells express Piwi components. In fly ovarian somatic cells, MEP-1 and RPD3 interact with PIWI and Su(var)2-10 for transposon silencing. In mouse testes, MIWI engages NuRD components for transposon silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C170 provide additional comparative context supported by appropriate citations. These observations suggest evolutionary conservation of Argonaute-NuRD interactions across diverse species. The speculation about HDAC1 SUMOylation in Kc167 cells (C168) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Role in spermatogenesis regulation: mep-1 was previously implicated in the spermatogenesis-to-oogenesis transition. The current findings suggest HDA-1 SUMOylation also promotes this function. Spermatogenesis genes are regulated by RDE-3 and PRG-1, raising the possibility that Argonaute systems function with SUMO and HDAC1 in this developmental transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C175 connect the findings to developmental regulation of germline sex determination. The upregulation of spermatogenesis genes in multiple mutants (C173) is well-documented by mRNA-seq. The citation to Reed et al., 2020 (C174) provides independent validation. However, the proposed role in the developmental switch (C175) remains speculative and would benefit from direct functional tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background and context: Argonaute proteins engage nascent RNAs and chromatin proteins for transcriptional silencing. SUMO promotes heterochromatin formation across species. In yeast, SHREC complex (similar to NuRD) maintains heterochromatin. In mammals, SUMOylation of KAP1 recruits NuRD and SETDB for KRAB target silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 provide essential background context supported by appropriate citations to established literature. These claims accurately represent prior knowledge in the field and set up the rationale for the current study. They are appropriately presented as background rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C21",
+      "C22"
+    ],
+    "result": "Main conclusions: Argonaute-directed transcriptional silencing in C. elegans requires SUMOylation of HDA-1. SUMOylation promotes HDA-1 association with NuRD complex components, HRDE-1/WAGO-9, SPR-5, and MET-2 to initiate de novo heterochromatin silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C21-C22 state the main conclusions of the study. These are well-supported by the collective evidence from genetic, biochemical, and functional assays presented throughout the manuscript. The conclusions appropriately integrate multiple lines of evidence and are stated with appropriate confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Experimental system: The piRNA sensor transgene is silenced in wild-type but desilenced in prg-1, rde-3, and hrde-1/wago-9 mutants. WAGOs engage antisense guides from RdRPs. This system enables screening for factors required for piRNA silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 describe the experimental system used for the screen. The piRNA sensor is well-characterized (cited from Seth et al., 2018) and provides a robust readout. The description of WAGO function is supported by appropriate citations. This establishes the foundation for the screening approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Observation of differential protein stability: A truncated form of HDA-1(KKRR)::GFP appears to result from proteolytic removal of C-terminal GFP, while wild-type HDA-1::GFP is not cleaved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 describes an interesting observation about differential protein stability between wild-type and KKRR mutant fusion proteins. While the western blot data (Figure 6B) supports the observation, the mechanism and functional significance remain unclear. This could reflect altered protein folding, stability, or localization in the absence of SUMOylation, but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "Paradoxical observation: HDA-1 is not SUMOylated in the embryo yet interacts robustly with MEP-1, contrasting with the adult germline where SUMOylation is required for this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 describe a paradoxical observation supported by data from Kim et al., 2021. This developmental difference in SUMOylation requirement is well-documented but mechanistically unexplained. The observation is important for understanding context-dependent regulation but requires further investigation to resolve.",
+    "result_type": "MINOR"
+  }
+]

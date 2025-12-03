@@ -1,0 +1,2005 @@
+{
+  "submission": {
+    "id": "bd93457f-ab33-42ee-9fd1-59a42d7246cc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:33:59.159616Z",
+    "updated_at": "2025-12-03T04:33:59.159616Z"
+  },
+  "content": [
+    {
+      "id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "submission_id": "bd93457f-ab33-42ee-9fd1-59a42d7246cc",
+      "content_type": "manuscript",
+      "content_text": "# HSPCs display within-family homogeneity in differentiation and proliferation despite population heterogeneity\n\n## Authors\n\n- Tamar Tak<sup>1</sup> ([ORCID: 0000-0002-5959-7927](https://orcid.org/0000-0002-5959-7927))\n- Giulio Prevedello<sup>2</sup> ([ORCID: 0000-0002-9857-2351](https://orcid.org/0000-0002-9857-2351))\n- Ga\u00ebl Simon<sup>1</sup>\n- No\u00e9mie Paillon<sup>1</sup> ([ORCID: 0000-0002-6848-3016](https://orcid.org/0000-0002-6848-3016))\n- Cam\u00e9lia Benlabiod<sup>4</sup>\n- Caroline Marty<sup>3</sup>\n- Isabelle Plo<sup>3</sup>\n- Ken R Duffy<sup>7</sup> ([ORCID: 0000-0001-5587-9356](https://orcid.org/0000-0001-5587-9356))\n- Le\u00efla Peri\u00e9<sup>1</sup> ([ORCID: 0000-0003-0798-4498](https://orcid.org/0000-0003-0798-4498)) \u2020\n\n### Affiliations\n\n1. Institut Curie, Universit\u00e9 PSL, Sorbonne Universit\u00e9, CNRS UMR168, Laboratoire Physico Chimie Curie Paris France\n2. Institut Curie, PSL Research University, CNRS Orsay France\n3. Universit\u00e9 Paris-Saclay Saclay France\n4. INSERM, UMR1287, Gustave Roussy Villejuif France\n5. Gustave Roussy Villejuif France\n6. Universit\u00e9 de Paris Paris France\n7. Hamilton Institute, Maynooth University Co Kildare Ireland\n\n\u2020 Corresponding author\n\n## Abstract\n\nHigh-throughput single-cell methods have uncovered substantial heterogeneity in the pool of hematopoietic stem and progenitor cells (HSPCs), but how much instruction is inherited by offspring from their heterogeneous ancestors remains unanswered. Using a method that enables simultaneous determination of common ancestor, division number, and differentiation status of a large collection of single cells, our data revealed that murine cells that derived from a common ancestor had significant similarities in their division progression and differentiation outcomes. Although each family diversifies, the overall collection of cell types observed is composed of homogeneous families. Heterogeneity between families could be explained, in part, by differences in ancestral expression of cell surface markers. Our analyses demonstrate that fate decisions of cells are largely inherited from ancestor cells, indicating the importance of common ancestor effects. These results may have ramifications for bone marrow transplantation and leukemia, where substantial heterogeneity in HSPC behavior is observed.\n\n## Introduction\n\nThe hematopoietic system has long since served as a reference model for stem cell biology, with understanding garnered from the study of hematopoietic stem cells (HSCs) successfully transferred to the clinic. In order to maintain blood cell production, rare self-renewing HSCs produce differentiated cells called multi-potent progenitors (MPPs), which proliferate and differentiate through an amplifying cascade of increasingly committed progenitors, ultimately resulting in all mature blood cell types. Underpinning this traditional model is the assumption that the HSC pool is maintained through a process of asymmetric division that results in one HSC and one MPP, while MPPs form a transient cell type that cannot persist indefinitely and must ultimately differentiate.\n\nRecent studies have challenged this theory in multiple distinct directions. It is well-established that HSCs can sequentially reconstitute the blood system of several hosts (Ross et al., 1982), leading to the inference that HSCs must be able to maintain themselves (Morrison and Kimble, 2006). When observed with time-lapse imaging, self-renewal has been seen to occur through both symmetric and asymmetric cell division (Wu et al., 2007; Brummendorf et al., 1998; Ema et al., 2000; Punzel et al., 2003), which can be influenced by extrinsic signals (Ema et al., 2000; Punzel et al., 2003). Steady-state in situ lineage-tracing studies have also suggested that MPPs are capable of self-renewal (Sun et al., 2014; Busch et al., 2015). In addition, HSCs have been shown to differentiate without division into megakaryocytes in vitro (Roch et al., 2015), and common myeloid, megakaryocyte, and erythroid progenitors in vivo (Grinenko et al., 2018). Together, these findings not only questioned the necessity for HSCs to undergo asymmetric division, but they also queried the explicit link between division and differentiation. Evidence for the multi-potency of HSCs and MPPs has historically derived from in vitro colonies assays and transplantation experiments (Morrison and Weissman, 1994; Osawa et al., 1996; Nakahata and Ogawa, 1982; Christensen and Weissman, 2001). Recent single-cell transplantation and cellular barcoding experiments have revealed that only a few HSCs reconstitute all of the blood lineages, with the rest being either restricted in the number of lineages they produce (Yamamoto et al., 2013; Sanjuan-Pla et al., 2013; Rodriguez-Fraticelli et al., 2018; Carrelha et al., 2018) or having a bias or imbalance in the proportion of cell types they create (Dykstra et al., 2007; Mu\u0308ller-Sieburg et al., 2004). As examples of lineage restriction, it has been reported that some HSCs produce only megakaryocytes (Rodriguez-Fraticelli et al., 2018; Carrelha et al., 2018), while others produce only myeloid cells, megakaryocytes, and erythrocytes (Yamamoto et al., 2013). Furthermore, single-cell transplantations have revealed that HSCs are heterogeneous in differentiation and proliferative output (Benz et al., 2012; Mu\u0308ller-Sieburg et al., 2002; Sieburg et al., 2011), and transplantation experiments using populations of HSCs labeled with different fluorescent proteins have suggested that this heterogeneity might be epigenetically determined (Vwc et al., 2017). Taken together, HSCs have been shown to be a heterogeneous population, where each one of them may be committed to the production of only a few lineages, possibly through lineage priming or externally through instruction from a niche. Similarly, transplanted barcoded MPPs have been reported to produce heterogeneous patterns of restricted cell types (Naik et al., 2013), suggesting that lineage restriction may occur early in the hematopoietic tree, in the pool of HSCs and MPPs (Peri\u00e9 and Duffy, 2016).\n\nAltogether, it is presently unclear how symmetric and asymmetric division combines with early lineage commitment to generate downstream diversity, and a fundamental question is how much instruction is inherited by offspring from an ancestral HSC or MPP. That matter has not been addressed previously due to technical limitations. Tackling it requires an experimental system that enables the simultaneous identification of cells that are descendent from a common ancestor, the number of divisions that has led to each of them, and their differentiation status. Towards that end, we developed a division-dye multiplex system (Horton et al., 2018) for the study of hematopoietic system.\n\nThe data from our study revealed that cells that derived from a common ancestor were highly concordant in their division progression and similar in their differentiation pattern. This similarity is primarily propagated through divisions resulting in siblings of the same cell type. These data establish that early lineage commitment can be inherited from individual HSCs and MPPs, and that the resulting diversity of lineages is produced by a heterogeneous collection of cell families that are individually homogeneous. Our data suggests that common ancestor effects are significant and call for a revision of the assumption of independent fate decisions by cells along the hematopoietic tree.\n\n## Results\n\n### High-throughput simultaneous tracking of the common ancestor, number of divisions, and differentiation status of HSPCs\n\nDefining a family as all descendants from an individual marked ancestor cell, we developed a new high-throughput method that simultaneously determines for each cell\u2019s family membership, generation (i.e., number of cell divisions), and phenotype (Horton et al., 2018Figure 1) in hematopoietic stem cells and progenitors (HSPCs). We focused our investigation on familial division and differentiation in early hematopoietic differentiation to elucidate how symmetric and asymmetric fates combine with early lineage commitment to generate downstream diversity and how much instruction is inherited by offspring from single ancestral HSPC.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig1-v2.jpg)\n\n**Figure 1.:** A single-cell\u00a0suspension was obtained by flushing femurs, tibia, and iliac crests. Cells were stained with fluorescently labeled antibodies for phenotypic identification. After this first antibody staining, the cell suspension was then split into four equal parts, each of which was stained with a distinct 5-(and 6)-carboxyfluorescein diacetate succinimidyl ester\u00a0(CFSE) and CellTrace Violet\u00a0(CTV) combination. From each of these CTV/CFSE preparations, a single cell was index sorted into 90 wells of a 96-well plate, resulting in four distinctly CTV/CFSE-colored cells per well. In addition, for each ancestor type, a small bulk of 100 cells of each color combination were sorted into a single well as a control. After 24 or 48 hr of culture, cells were stained with fluorescently labeled antibodies for phenotypic identification and analyzed on a flow cytometer. The data from all wells and the small 100 cell bulks were combined and used to set gates for determination of generation number and phenotypic cell type. Those gates were then applied to the data from each well to obtain lineage, division, and differentiation information for each cell.\n\nTo this end, we isolated bone marrow (BM)\u00a0cells, labeled them with four distinguishable combinations of 5-(and 6)-carboxyfluorescein diacetate succinimidyl ester\u00a0(CFSE) and CellTrace Violet\u00a0(CTV), and used fluorescent antibody staining of cell surface markers to determine three HSPC populations, c-Kit+Sca-1+CD150+Flt3- (SLAM-HSC), c-Kit+Sca-1+CD150-Flt3- (ST-HSC), and c-Kit+Sca-1+CD150-Flt3+ (MPP) (Figure 1). Wells in a 96-well plate were then seeded with four cells of a single ancestral type (SLAM-HSC, ST-HSC, or MPP), one from each of the four CFSE/CTV combinations to increase the throughput of the assay, and incubated in one of two classic cytokine cocktails (SCF and TPO,\u00a0\u00b1IL-3 and IL-6). At 24 or 48 hr, cells were harvested from each well and stained with fluorescent antibodies to determine their phenotypic cell type based on the expression of CD150, Flt3, Sca-1, c-Kit, and CD16/32 (Figure 1). By examining each cell\u2019s CFSE and CTV profile, its ancestral cell and generation number was determined (Figure 1 and Materials\u00a0and\u00a0methods). By index sorting labeled cells, we could relate downstream familial fate and division to ancestral cell surface expression.\n\nThe method allows easily to assess a large collection of single ancestor cells. For each ancestor type, 360 initial cells were sorted for analysis at 24 hr and 240 initial cells for analysis at 48 hr (Figure 2A). From the 600 seeded SLAM-HSCs, we recovered 358 families (71%) constituting 648 cells, while 343 ST-HSC families (69%) were recovered with 592 cells, and 246 MPP families (49%) with 362 cells (Figure 2A). Over all conditions, 27 families (2.8% of recovered families) had cell numbers that could not have originated from a single ancestor, and so were excluded from analysis, illustrating the fidelity of the single-cell sorting.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig2-v2.jpg)\n\n**Figure 2.:** Plots are fractionated by each ancestor type (SLAM-HSCs, ST-HSCs, and multi-potent progenitors\u00a0[MPPs]) and cocktail (with and without IL-3\u00a0+\u00a0IL-6, indicated by\u00a0+\u00a0and\u00a0-, respectively). (A) Simultaneous visualization of family membership, generation number, and cell type of offspring from initially seeded ancestors harvested at two time points (24 and 48 hr). Each row presents the offspring from a single ancestor. Columns identify the generation number of each recovered cell, with their phenotypic cell type indicated by color\u00a0coding. Rows are sorted in increasing order of the difference between maximum and minimum generations in each ancestor\u2019s family (generational range). (B) To test the differentiation pattern of our cell phenotypes after culture, sorted cell types as shown in Figure 1 were cultured in methylcellulose cultures and evaluated for colony forming units (CFUs) formation for megakaryocytic (MK), granulocytic/monocytic (GM), erythroid burst-forming (BFU-E), or mixed colony formation of all types (CFU-MK, CFU-GM, and BFU-E) with or without MK. Late MP did not produce any colonies in methylcellulose culture (C) The percentages of MK, CFU-MK, and mixed colony formation are indicated from the culture in serum-free fibrin clot. GMP did not produce any colonies as expected. (D) Percentage of each recovered cell type. (E) Distribution of the maximum generation per family, as indicated by color\u00a0coding. (F) Proportions of recovered cell types for ancestors that have not yet divided. (G) For ancestors that have divided only once and for whom two offspring are recovered, percentage having symmetric and asymmetric fates with and without differentiation. (H) Percentage of families with each generational range. The 48 hr data (red bars) is compared to a mathematical model parameterized by a single coefficient, \u03c1, which encodes the correlation in whether cells in the same generation within a family divide or cease to divide (Materials\u00a0and\u00a0methods). Shown is prediction for both the maximum likelihood best-fit value of \u03c1 (value and blue/white bars) and, as a reference, a range of other values of \u03c1 (solid blue bars). For (D\u2013H), error bars indicate 95% confidence intervals calculated via basic bootstrap (Materials\u00a0and\u00a0methods). Sample sizes and p-values (from permutation tests, see Materials\u00a0and\u00a0methods) from the panels can be found in Figure 2\u2014source data 1\u00a0and\u00a02.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The cloning efficiency of cell types cultured in methylcellulose semi-solid culture medium shown in Figure 2B (A) and serum-free fibrin clot culture medium shown in Figure 2C (B).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** To assess whether fluorescence from antibodies used during cell isolation could be retained during culture and affect the subsequent analysis of cell differentiation status, we analyzed sorted cells after 24 hr of culture. For none of the antibodies used during sort, any fluorescence was detected.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Error bars indicate 95% confidence intervals calculated via basic bootstrap (Materials\u00a0and\u00a0methods). Sample sizes for this panel can be found in Figure 2\u2014source data 1.\n\n### Characterization of differentiation outcomes at the population\u00a0level\n\nAt the population level, some offspring underwent no differentiation from their ancestor type while others differentiated. In both culture conditions and for each ancestor type, we obtained a diversity of myeloid cell types ranging from the initial ancestor to c-Kit- differentiated cells, including c-Kit+Sca-1-CD16/32+ (GMP),\u00a0c-Kit+Sca-1-CD150-CD16/32- (CMP/MEP), c-Kit-CD16/32+ (late myeloid progenitor, late MP), and c-Kit-CD16/32\u00a0cell types (Figure 2A). We also detected c-Kit+Sca-1-CD16/32CD150+ (PreMegE) cells, previously described as megakaryocyte and erythroid progenitors (Pronk et al., 2007). As the phenotypic definitions we used after culture were originally defined on freshly isolated progenitors, we functionally tested the differentiation of the progenitors as defined phenotypically after 48 hr of culture with SCF, TPO, IL-3, and IL-6 using semi-solid cultures (Figure 2B,\u00a0C and Figure 2\u2014figure supplement 1) and observed a similar differentiation outcome as previously published (Pronk et al., 2007).\n\nAlthough all hematopoietic cells have been reported to go through a Flt3 expressing stage (Boyer et al., 2011), we found that no offspring of SLAM-HSCs, and those of very few ST-HSCs, differentiated into Flt3 expressing MPPs in our culture conditions (Figure 2D). Some ST-HSC and MPP acquired CD150 expression after culture, making them resemble SLAM-HSCs, but this was not further investigated. This CD150 expression cannot be due to residual fluorescence from antibodies used for cell sorting as no fluorescence was measured for any of the markers in cells kept for 24 hr in culture after sorting without further antibodies staining (Figure 2\u2014figure supplement 2). The addition of IL-3 and IL-6 had no impact on the pattern of cell types produced by SLAM-HSCs (Figure 2D). It did, however, change the pattern of cell types produced by ST-HSCs and MPPs in a statistically significant way as determined by a permutation test (Materials\u00a0and\u00a0methods), with an increased number of early progenitors as opposed to more differentiated progenitors as previously shown (Lui et al., 2014).\n\n### Heterogeneity between HSPC families in division and differentiation\n\nAt the level of individual families, we observed substantial heterogeneity in division history (Figure 2E) from families that did not proliferate to those with cells that had undergone six divisions. Consistent with earlier observations (Roch et al., 2017), after 24 hr most cells either remained undivided or had divided once, with a few cells having undergone two or more divisions (Figure 2A). At 48 hr, over 90% of the cells had undergone at least one division. For all three sorted ancestor cell types, we found that addition of IL-3 and IL-6 led to a statistically significant increase in proliferation (Figure 2E), as previously described (Domen and Weissman, 2000; Bordeaux-Rego et al., 2010). Exploring the relationship between division and differentiation, in the culture without IL-3 and IL-6, the proportion of undivided ancestors that differentiated were 36.5% from SLAM-HSCs, 61.1% from ST-HSCs, and 35.6% from MPPs (Figure 2F), which was in agreement with previous reports (Roch et al., 2015; Grinenko et al., 2018). The addition of IL-3 and IL-6 did\u00a0not drastically change those values. SLAM-HSCs preferentially differentiated without dividing into PreMegEs, as reported previously (Grinenko et al., 2018). On comparing the surface marker expression of differentiated and not-differentiated non-divided cells (Figure 2\u2014figure supplement 3), Sca-1high SLAM-HSCs were more likely not to differentiate, in agreement with a previous report (Schulte et al., 2015). The addition of IL-3 and IL-6 only significantly impacted the differentiation pattern of the progeny of MPPs. These results show that families are heterogeneous in their division pattern, and that a non-negligible fraction of ancestors differentiates without dividing.\n\n### Both symmetric and asymmetric fate occurred within families after the first division\n\nOur experimental system can capture a large number of siblings after a single division, enabling the quantification of symmetric versus asymmetric fates. We defined four distinct types of symmetric or asymmetric fates depending on whether the offspring included a differentiated cell (Figure 2G). A symmetric undifferentiated fate produces two cells of the ancestor type. An asymmetric undifferentiated fate, which would be the classically defined asymmetric fate in the stem cell community, produces one cell of the ancestor type and one differentiated cell. Similarly, a symmetric differentiated fate produces two cells of the same differentiated type, and an asymmetric differentiated fate produces two cells of the distinct differentiated type. Note that an asymmetric fate cannot be distinguished from a symmetric fate followed by differentiation without division of one of the daughter cells. Pooling data over ancestor types, 70.7% of the cells had a symmetric fate after their first division, with the fate of MPPs being mostly symmetric undifferentiated (51.4%), and of ST-HSC being mostly symmetric differentiated (59.5%). SLAM-HSCs self-renewed with symmetric undifferentiated fates (32.1%), but also with asymmetric undifferentiated fates (10.7%). Asymmetric fates occurred for 28.6% of SLAM-HSCs, 28.6% of ST-HSCs, and 31.4% of MPPs, consistent with previous reports\u00a0(Suda et al., 1984). No statistical difference was found between ancestors cultured with or without IL-3 and IL-6. The pattern of cell types produced after one division (Figure 2\u00a0and Figure 2\u2014figure supplement 3B) was similar to the pattern including all divisions (Figure 2D), suggesting that the diversity of cell types can be produced by a heterogeneous collection of cell families through symmetric fates.\n\n### HSPC family members were concordant in division\n\nTo investigate familial effects on division progression, we examined the generation numbers of cells derived from single ancestors. We found that families are highly concordant, with 81% of the 223 families that divided more than once having all of their cells in the same generation (range\u00a0=\u00a00, Figure 2H), and only four of those families (1.8%) containing cells that were more than one generation apart (range\u00a0>1, Figure 2H). As not all cells are necessarily recovered from wells and sampling effects could potentially make families look more concordant, a mathematical model that accounts for that sampling was fitted to the 48 hr data to estimate the correlation in division progression decisions among cells within a family (Materials\u00a0and\u00a0methods). High correlation coefficients (70\u201390%) (Figure 2H) resulted in the best fit to the measured familial ranges, with the exception of MPPs cultured in medium without IL-3 and IL-6 for which no reliable estimate could be made. For guidance, the pattern of range values from the model for different correlation coefficients is also illustrated in Figure 2H. Thus, this analysis establishes that division progression is highly concordant within SLAM-HSC, ST-HSC, and MPP families, while being heterogeneous between them.\n\n### Differentiation occurred though a diversity of paths and progressed with division\n\nAlthough differentiation without division was observed, in general differentiation progressed in tandem with division (Figure 3A), as published previously (Upadhaya et al., 2018). To visualize changes in cell surface marker expression, we used the Uniform Manifold Approximation and Projection (UMAP) algorithm\u00a0(McInnes and Healy, 2018) on the combined surface marker expressions of all cells obtained at both 24 and 48 hr (Figure 3B\u00a0and Figure 3\u2014figure supplement 1). When we mapped cell\u00a0types determined by traditional gating onto the UMAP (Figure 3C), a smooth transition was observed from SLAM-HSCs at the bottom, with further differentiated cells towards the top, indicating a gradual transition from one cell type to another. GMPs and c-Kit-Sca-1-CD16/32+ (myeloid progenitors [MPs]) appear on the top left, and CMP/MEP and PreMegE on the top right. More numerous GMPs, MPs, and CMP/MEPs were seen at the top of the UMAP at 48 hr than 24 hr, suggesting that it takes between 24\u00a0and 48 hr to fully differentiate into Sca1- progenitors. In addition, all three ancestral cell types remain present at 48 hr, demonstrating, in particular, that HSCs can remain in an undifferentiated state for the duration of the experiment, even if their offspring experience three rounds of division. On plotting the generation numbers of offspring from each ancestor cell type on the UMAP (Figure 3D and Figure 3\u2014figure supplement 2), SLAM-HSCs appeared to be primed towards the production of CMP/MEPs and PreMegEs while still generating some ST-HSCs, whereas MPPs were more primed towards GMPs, and ST-HSCs showed a more even distribution between the two lineages. Differentiation without proliferation appeared as dark red dots outside of the regions of the sorted ancestor cells, and self-renewal divisions as red, orange, and blue dots in the region of ancestor cells. PreMegEs were observed to be generated without division, as well as in 1\u20133 divisions from SLAM-HSCs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig3-v2.jpg)\n\n**Figure 3.:** (A) Percentage of cells at each differentiation stage for each generation for each ancestor type. Error bars indicate basic bootstrap 95% confidence intervals (Materials\u00a0and\u00a0methods). Sample sizes for this panel can be found in source data. (B) The Uniform Manifold Approximation and Projection (UMAP) algorithm was applied to the phenotypic data pooled from all time\u00a0points, conditions, and ancestor cell types. Each cell is projected into the UMAP coordinates and color-coded according to the log of their fluorescence intensity for c-Kit, Sca-1, CD150, Flt3, CD48, and CD16/32 at the time of analysis (see also Figure 3\u2014figure supplement 2; and for each ancestor cell type plotted separately on the UMAP, see Figure 4\u2014figure supplement 1). (C) Projection of traditionally gated data onto the UMAP, pooled data (left), 24 hr (middle), and 48 hr (right). (D) Projection of cell generation number data onto the UMAP for each ancestor type (see also Figure 3\u2014figure supplement 3). Sample sizes for panel (A) can be found in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cells are color-coded by time\u00a0point (top left), experiment (top right), CellTrace stain (bottom left), and culture condition (bottom right) and plotted on the UMAP from Figure 3. The experiments and CellTrace combinations were evenly distributed on the UMAP. Differences based on both the time\u00a0point and culture condition recapitulate what is described in Figures 2B and 3B. C indicates cells originating from ancestors stained with 5-(and 6)-carboxyfluorescein diacetate succinimidyl ester\u00a0(CFSE), V with CellTrace Violet\u00a0(CTV), C\u00a0>\u00a0V indicates staining with both 2.5 \u00b5M CFSE and 1.25 \u00b5M CTV, and V\u00a0>\u00a0C indicates staining with both 1.25 \u00b5M CFSE and 2.5 \u00b5M CTV.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** As in Figure 3D, but fractionated by ancestor type.\n\n### HSPC family members displayed similar differentiation outcome\n\nDescendants from a common ancestor were not only highly concordant in their generation numbers, but they also exhibited significant similarity in differentiation outcome. At 24 hr, most families were composed of only one cell type (Figure 4A), but at 48 hr more families produced several cell types (Figure 4B), indicating that downstream asymmetries in the fate occur after a largely symmetric first division (Figure 2G). Permutation tests on phenotypically defined cell types revealed that families exhibited significantly more similarity than would be expected if there was no family component, both at 24 hr (Figure 4A) and at 48 hr (Figure 4B). This within-family similarity in fate is visible by the co-localization of cells from the same family on the UMAP (Figure 4C). Thus, SLAM-HSC, ST-HSC, and MPP families are highly concordant in division and share similar differentiation outcomes in vitro, while population-level diversity in proliferation and cell types arises from heterogeneity across families.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig4-v2.jpg)\n\n**Figure 4.:** (A,\u00a0B) Number of cell types per family in the observed data compared with the average of 250,000 permutations of the data at 24 hr (A) and 48 hr (B). Error bars indicate 95% confidence intervals based on permutations (see Materials\u00a0and\u00a0methods). (C) Cells from the 15 families with the largest number of cells are color-coded by family and projected onto the Uniform Manifold Approximation and Projection in Figure 3. (D) The cumulative percentage of the maximum division of offspring from ancestor SLAM-HSCs rank-ordered by their expression level (fluorescence intensity) of CD48 (blue) or Sca-1 (red) during sort. (E) The cumulative percentage of offspring, presenting a given cell type, from ancestor cells rank-ordered by increasing cell surface marker expression. * indicates a significant deviation from the diagonal (black) as determined by Jonckheere's trend test (p-values in Figure 4\u2014source data 1). Sample sizes for all panels can be found in Figure 4\u2014source data 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Correlation between fluorescence intensities of the given marker on each analyzed cell and the fluorescence intensity of the same marker on its ancestor index sort.\u00a0Spearman\u2019s r is reported for index sort expression levels of each ancestor type. (B) The cumulative percentage of the maximum division of offspring from ancestor cells rank-ordered by their expression as in Figure 4D, but for each ancestor cell type and marker. Sample sizes for all panels can be found in Figure 2\u2014source data 1, and 95% confidence intervals for the correlation r can be found in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60624/elife-60624-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Solid lines indicate observed sums,\u00a0and dashed lines indicate the diagonal for the corresponding observation.\n\nThe within-family homogeneity in division and differentiation could be intrinsically present in ancestor cells or extrinsically instructed by cytokines in the cocktail. Comparison of the median fluorescent intensities of markers from ancestors during sort with those obtained from daughters at each of the two time points (Figure 4\u2014figure supplement 1A) revealed clear correlation between the two, supporting the hypothesis that ancestor surface expression markers were instructive in the within-family homogeneity in division progression and differentiation. To further investigate that hypothesis, we first explored the relationship between cell surface expression on the ancestor and division progression. Rank ordering ancestors from the least to greatest expression level for a given marker (Figure 4D, Figure 4\u2014figure supplement 1B), the cumulative sum of the maximum division of their offspring would be expected to fall near the diagonal if there were no relationships between an ancestral expression level and division progression. If there was a negative relationship, where low expression of a given marker on the ancestor corresponded to more division progression, the cumulative sum of the maximum division would be expected to initially overshoot above the diagonal. The contrary would happen if there was a positive relationship. The statistical significance of divergence from the diagonal was tested using Jonckheere's trend test (Figure 4\u2014source data 1).\u00a0Across both cocktails and time\u00a0points, only cell surface markers on ancestral SLAM-HSCs were consistently instructive for division progression. CD48 correlated positively, with its strongest effect at 24 hr, and Sca-1 correlated negatively, while at 48 hr c-Kit correlated positively (Figure 4D, Figure 4\u2014figure supplement 1B, and Figure 4\u2014source data 1). Notably, for both ST-HSCs and MPPs, even though the family data clearly indicate that there is a familial component to division progression (Figure 2H), none of the phenotypic markers exhibited strong correlation (Figure 4\u2014figure supplement 1B), indicating the need to identify other markers.\n\n### Ancestral phenotype correlated with familial differentiation outcome\n\nWe then explored the relationship between fluorescence intensity of ancestral marker expression and familial differentiation (Figure 4E,\u00a0Figure 4\u2014figure supplement 2, and Figure 4\u2014source data 2\u00a0and\u00a03; for a summary of findings in table format, see Figure 4\u2014source data 4). For SLAM-HSCs, at 24 and 48 hr in both cocktails, Sca-1 expression provided a strong positive correlation to self-renewal and a negative one to production of PreMegE. At 48 hr, c-Kit presented the inverse dependency to Sca-1. At 24 and 48 hr, CD48 correlated negatively to self-renewal and positively to production of PreMegE when IL-3 and IL-6 are\u00a0added. As cocktail composition did not have a major impact on the relationship between familial fate and ancestral expression, these results were suggestive that c-Kit and Sca-1 expression levels of SLAM-HSCs act as intrinsic markers for both familial progression and differentiation with high Sca-1 expression and low c-Kit expression leading to less division (Wilson et al., 2015; Grinenko et al., 2014; Morcos et al., 2017) and less differentiation (Shin et al., 2014), and potentially resulting in better engraftment (Wilson et al., 2015; Grinenko et al., 2014; Shin et al., 2014). While low ancestral CD48 expression level has been reported to result in less division (Pietras et al., 2015; Akinduro et al., 2018), our data indicates its relationship to differentiation is dependent on extrinsic signals.\n\nFor ST-HSCs and MPPs, we found little evidence of correlation of ancestral expression to division progression or self-renewal, but the same was not true of differentiation. For ST-HSCs, the ancestral level of CD48 and Sca-1 consistently correlated negatively and positively, respectively, with de-differentiation to SLAM-HSC in the cocktail with IL-3 and IL-6 at both time points (Figures 4E and Figure 4\u2014figure supplement 2). Differentiation to GMP, which occurred only in 48 hr data, correlated positively and negatively with the ancestral level of CD48 and Sca-1, respectively (Figure 4E; Morcos et al., 2017). Therefore, differentiation to GMP from ST-HSC was dependent on the parental level of CD48 and Sca-1, whereas the de-differentiation to SLAM-HSC is dependent on both extrinsic factors (IL-3 and IL-6) and the intrinsic ancestral level of CD48 and Sca-1. The differentiation from MPPs to GMPs that was observed to occur by 48 hr correlated negatively with Sca-1 ancestral expression (Morcos et al., 2017) in both cocktails. It also negatively correlated with Flt3 ancestral expression, but only in the cocktail without IL-3 and IL-6 (Figure 4E). In the presence of IL-3 and IL-6, instead, differentiation from MPP to GMP positively correlated with c-Kit ancestral expression. Differentiation from MPP to CMP/MEP occurred only at 48 hr in the cocktail without IL-3 and IL-6, and then correlated positively with c-Kit (Figure 4E). Thus, differentiation to GMP from MPP is dependent on the intrinsic ancestral level of Sca-1, whereas the differentiation to CMP/MEP is dependent on both extrinsic factors (IL-3 and IL-6) and the intrinsic ancestral level of c-Kit. Overall, the concordance in division and similarity in fate within families is partially explained by the surface expression marker used to phenotype ancestors, but both intrinsic and extrinsic factors act to direct familial fate.\n\n## Discussion\n\nWe developed a high-throughput method that enables simultaneously determination of common ancestor, generation, and differentiation status of a large collection of single cells. Its use with HSPCs revealed that despite substantial population-level heterogeneity amongst offspring cells derived from a single ancestor are highly concordant in their division progression and exhibit familial effects on differentiation. The restriction in differentiated cell types within each family is propagated primarily through symmetric first divisions. Although each family is composed of several cell types, the overall collection of cell types observed in a population is composed of homogeneous families from heterogeneous ancestors. This finding opens new avenues and challenges for the hematopoietic field. The generation of a diversity of cell types is presently assumed to result from a diversification within every family, and methods for inferring differentiation trajectories using single-cell RNA sequencing data from snapshot data assume that cells all behave independently (Trapnell et al., 2014; Bendall et al., 2014). Consistent with previous observations of early lineage priming (Mu\u0308ller-Sieburg et al., 2002; Peri\u00e9 and Duffy, 2016; Paul et al., 2016; Hoppe et al., 2016), our findings establish that familial dependencies that are currently unmeasured exist within the population and call for a revision of the assumption of independent fate decision by cells along the hematopoietic tree. Ancestral cell surface expression of markers used for phenotyping serves as correlates that partially predict some of these familial properties, but, in particular, a correlate that explains the highly heritable division progression of ST-HSC and MPP families is not contained within them. It is also the case that extrinsic properties such as cytokine signaling can play an instructive role, altering and reshaping the observed familial effects.\n\nAs HSPCs are cultured before BM transplantation in gene therapy, our results indicate that the broad range of engraftment and proliferation capacities of HSPCs could be consequences of the heterogeneity in their engrafted families. That suggests that altered culture conditions might reduce or enhance heterogeneity between families and possibly improve transplantation outcomes if this leads to more self-renewal divisions. Indeed, changing the composition of the population of committed HSPC might be a mechanism to directly alter the balance of lineage production, with therapeutic applications that could benefit the treatment of leukemia and genetic immune disorders.\n\n## Materials and methods\n\n### Mice and cell isolation\n\nAll the experimental procedures were approved by the local ethics committee (Comit\u00e9 d\u2019Ethique en exp\u00e9rimentation animale de l\u2019Institut Curie) under approval number DAP 2016 006. BM cells were obtained from wild-type C57BL/6 of 8\u201316 weeks of age by bone flushing of femur tibia and iliac crest. BM cells were MACS enriched for c-Kit+ cells using CD117 MicroBeads Ultrapure (Miltenyi Biotec cat #130-091-224) according to the\u00a0manufacturer\u2019s protocol.\n\nDivision tracking and surface marker labeling of HSPC c-Kit-enriched BM cells were stained with CD135 (Flt3) PE (eBiosciences 12-1351-82), Sca-1 PE-CF594 (BD Biosciences, 562730), CD117 (c-Kit) APC (Biolegend 105812), CD150 (SLAM) PC7 (Biolegend 115914), and CD48 APC-Cy7 (Biolegend 103432) in RPMI1640 supplemented with 10% FCS. Subsequently, cells were stained in PBS with either 2.5 \u00b5M CellTrace CFSE (ThermoFisher Scientific C34554), 2.5 \u00b5M CTV (ThermoFisher Scientific C34557), and\u00a02.5 \u00b5M CFSE together with 1.25 \u00b5M CTV or 2.5 \u00b5M CTV together with 1.25 \u00b5M CFSE (see Figure 1A) as adapted from.\n\nSingle c-Kit+Sca-1+CD150+Flt3- (SLAM-HSC), c-Kit+Sca-1+CD150-Flt3- (ST-HSC), and c-Kit+Sca-1+CD150-/Flt3+ (MPP) were sorted directly into U-bottom 96-well plates containing cell culture media using an Aria III cell sorter (BD Biosciences). For each cell type, we sorted four single cells, one for each of the CellTrace stain combinations, into each well. Sorting four ancestor cells per well is a critical step in the method to ensure that at time of analysis there are enough cells in the well, which could not be obtained when sorting one ancestor cell per well. In total, 30 wells (120 single cells) were sorted per cell type per plate, with three replicates for analysis at 24 hr and two replicates for analysis at 48 hr. In addition, we sorted 100 cells of each cell type into one well for both culture conditions in order to collect enough events for reliable gate definition for cell type and generation assignment. During the sort of single cells, fluorescence intensities of each surface marker were recorded using the index sorting function.\n\n### In vitro cell culture\n\nCells were cultured at 37\u00b0C under 5% CO2 in 100 \u00b5l of StemSpan serum-free expansion medium (Stemcell Technologies 9650) supplemented with 50 ng/ml murine recombinant thrombopoietin (TPO, Sigma-Aldrich SRP3236-10UG) and 100 ng/ml stem cell factor (SCF) or 50 ng/ml TPO, 100 ng/ml SCF, 20 ng/ml IL-3, and 100 ng/ml IL-6 (Ema et al., 2000; Roch et al., 2017).\n\n### Division and expression marker analysis of cell progeny\n\nAfter 24 or 48 hr of incubation, cells in each well were stained as for sorting except for the use of CD48 BUV395 (BD Biosciences 740236), Sca-1 APC-Cy7 (Biolegend 108125), and CD16/32 BV711 (BD Biosciences 101337). Cells from each well were analyzed at 4\u00b0C using a ZE5 Flow cytometer (BioRad) with a recovery estimate of circa 70% per well (beads-based estimate, data not shown).\n\n### Cell type and generation assignment\n\nFor data analysis of FACS data, we pooled all the data from a single experiment using the concatenate function in FlowJo (FlowJo, LLC version 10.4.2). For cell type assignment, gates were set on concatenated data of both single-cell and bulk sorted samples and then applied to the single-cell data (Figure 1). Cells were separated from debris by their forward and size scatter (FSC/SSC) profile and assigned to a cell type (see Figure 1\u2014source data 1). The generation (i.e., the number of divisions since labeling) of cells was determined on histograms of CellTrace dye fluorescence in FlowJo. For cells stained with both CFSE and CTV, we rotated the CTV/CFSE coordinates, on a logarithmic scale, by 45\u00b0 degrees anticlockwise so that division dilution proceeded in parallel to the horizontal. That is, with $x$\u00a0and $y$\u00a0denoting the coordinates of CTV and CFSE levels, the histogram was calculated over a new x-axis coordinate\n\n$$\nx^{\u2032}=\\frac{\\sqrt{2}(Inx+Iny)}{2}.\n$$\n\nGeneration gating was then determined based on the florescence histogram on the new x\u2032-axis on the merged data of wells from the same experiment.\n\n### Data visualization by UMAP\n\nUMAP\u00a0(McInnes and Healy, 2018) was performed on arcsinh(x/100) transformed fluorescence intensity values of surface expression markers from all experiments using the R implementation in the UMAP package (version 0.2.0.0) with default parameters. The UMAP output was visualized using the ggplot two package (version 3.0.0) in R (version 3.4.3).\n\n### Progenitor assays in semi-solid cultures\n\nSLAM-HSC (150\u2013200 cells), MPP (700\u20131500 cells), CMP/MEP (1000 cells), GMP (300\u20131000), PreMegE (1000 cells), and late MP (5000 cells) were plated in duplicate or triplicate in methylcellulose MethoCult 32/34 (Stemcell Technologies) with 10 ng/ml TPO (a generous gift from Kirin, Tokyo, Japan), 1 U/ml EPO (PreproTech), 10 ng/ml IL-3 (Miltenyi Biotec), 10 ng/ml IL-6 (Miltenyi Biotec), 100 ng/ml SCF (PreproTech), and 20 ng/ml G-CSF (Miltenyi Biotec). Colonies derived from erythroid progenitors (colony forming unit-erythroid\u00a0[CFU-E]) were counted after 2 days, but\u00a0no CFU-E was detected in any of the cell populations tested. Colonies derived from erythroid progenitors (burst forming unit-erythroid\u00a0[BFU-E]), granulo-monocytic (colony forming unit-granulocyte macrophage\u00a0[CFU-GM]), and\u00a0multilineage colonies (mixed) progenitors were counted after 9 days. For megakaryocytic progenitor (CFU-MK) assay, SLAM-HSC (150\u2013200 cells), MPP (2000 cells), CMP/MEP (2000 cells), GMP (2000), PreMegE (2000 cells), and\u00a0late MP (5000 cells) were plated in triplicate in serum-free fibrin clot assays with SCF, IL-6, and TPO. MKs and CFU-MKs were evaluated at day 7 by acetylcholinesterase staining.\n\n### Confidence intervals\n\nThe confidence intervals at 95% level shown in Figures 2B\u2013F and 3D were calculated via basic bootstrap (Davison and Hinkley, 1997) with 250,000 bootstrap datasets. Following this procedure, each bootstrap dataset is constructed by sampling with replacement as many cellular families (Figures 2B\u2013H and 3D) as were in the original data. The distribution of the statistics, each calculated from one bootstrap dataset, then provided a reference from which the confidence interval was derived. Formally, given the statistic $\\theta^$ calculated from the original data, and $\\theta_{(0.025)}^{*}$ and $\\theta_{(0.975)}^{*}$ the 0.025 and 0.975 percentiles, respectively, derived from the bootstrapped distribution, the confidence interval of $\\theta^$ at 95% level was calculated as follows:\n\n$$\nCI95%=(2\\theta^-\\theta_{0.975}^{*},2\\theta^-\\theta_{0.025}^{*})\n$$\n\n### Statistical testing framework\n\nTo perform the statistical analysis, we adapted the permutation test (Lehmann and Romano, 2006) framework proposed in Horton et al., 2018. This framework was preferred over classical statistical tests as their assumptions were violated by the presence of familial dependencies in the data.\n\nThe objective of this framework was to challenge the hypothesis of independence between one or more variables in the data. For example, to test if the differentiation pattern was changed by culture conditions in Figure 2D, we challenged the null hypothesis that differentiation pattern per ancestor type (e.g., SLAM-HSC) was independent of culture conditions. If that null hypothesis held true, then the pattern of differentiation would not statistically change on swapping families between the culture conditions. Thus, the first step in the procedure consists in computing a statistic for the measured data that captures a key characteristic related to the variables to be tested. In this example, we chose the statistic to be the G-test statistic (or G-value) for contingency tables (Lehmann and Romano, 2006); therefore, the differentiation pattern data was transformed into the cellular frequencies from each cell\u00a0type (columns) for each culture condition (rows). The second step is to perform randomization of the data, the permutation, that will be compared to the measured data. Each randomly selected permutation captures how the data would look if the differentiation pattern and the culture condition were independently assigned. Indeed, if these two variables were independent, we could shuffle cellular families between culture conditions and the composition of the resulting permuted dataset would be statistically similar to the original measured data. If one shuffled cells instead of families, then any familial dependence of cells would break down and so interfere with the testing of the independency between the differentiation pattern and the culture condition. The ability to manage familial dependencies is the reason why this statistical framework is well suited to these data. In Figure 2D, cellular families derived from the same ancestor type were permuted between the two culture conditions 250,000 times, and the G-value was then computed for each permuted dataset. Finally, the proportion of the G-values of the permuted datasets that were as, or more, extreme than the G-value from the original dataset determined the p-value of the hypothesis test. This in turn indicated whether the differentiation pattern significantly varied with the culture condition. In general, for each test performed in this paper, a test\u00a0statistic and data permutation class must be defined to characterize the hypothesis to be challenged and to compute the p-value. Below, a more formal explanation is provided, followed by a paragraph with a description of the statistics and the permutation strategies specifically used throughout this work.\n\nIn more mathematical terms, a typical example of permutation testing proceeds in the following manner. A null hypothesis concerning the independence of the data, $D$, on one or more variables is first determined. Then, a collection, $Q$, of permutations of the data is identified such that, under the null hypothesis, the permuted data\u00a0$D^{\\pi}$, for any\u00a0$\\pi\\inQ$, is equal in distribution to $D.$\u00a0In this way, for any a real-valued statistic $T$\u00a0of the data, $T(D)$\u00a0and $T(D^{\\pi})$ are equal in distribution given the data\u00a0$D$. Therefore, the distribution of\u00a0$T(D)$, and its associated p-values, can be approximated by the distribution of\u00a0${T(D^{\\pi_{1}}),\u2026,T(D^{\\pi_{B}})}$, which is obtained by sampling a large number $B$\u00a0of permutations $\\pi_{i}$ from\u00a0$Q$, for\u00a0$i=1,\u2026,B$. Of note, the statistic $T$\u00a0should be chosen to present good sensitivity with respect to the departure of the data from the null hypothesis, a property often exhibited by classical statistics.\n\nTo further clarify the framework described above, we make explicit how the null hypothesis of independence between culture condition and differentiation pattern was challenged in Figure 2D. Under this hypothesis, the frequencies of cell types from the two culture conditions each from a different cell culture were equal in distribution. In particular, under the null hypothesis the distribution of the data in each culture condition would not change upon the shuffling of cellular families between culture conditions, which identifies a suitable set of permutations\u00a0$Q$. As the variables to be tested were either discrete or categorical, the independence of cell-type frequency from the culture condition was tested selecting $T$\u00a0to be the G-test statistic for contingency tables (Lehmann and Romano, 2006). Following this rationale, the same choice for the set of permutations, $Q$, and the test statistics, $T$, was made to challenge the hypotheses of independence between culture condition and the other discrete variables: maximum division number per family (Figure 2E), differentiation pattern without division (Figure 2F), and\u00a0pattern of first division (Figure 2G).\n\nIn Figure 4B, we sought to challenge the null hypothesis that differentiation diversity among cells from the same ancestor type was independent of familial membership, effectively testing whether a cell\u2019s familial membership was independent of its type. Under this null hypothesis, the na\u00efve assumption would be to define $Q$\u00a0as the set of permutations that swap cells between or within families, but, as cell type appeared to correlate with cell generation (Figure 3D), permuting cells with different division number would return a dataset $D^{\\pi}$ that is not equal in distribution to\u00a0$D$, the original. Leveraging the flexibility of the testing framework, it sufficed to instead restrict the set $Q$\u00a0to be permutations that leave the generations of cells unaltered, effectively solely swapping cells (between or within families) having the same division number. For this test, $T$\u00a0was set as the average number of cell types per family since this statistic is expected to decrease under the alternative hypothesis that cells with a common ancestor diversify into a smaller collection of cell types.\n\nFinally, we tested whether the ancestor\u2019s expression levels were independent of an ordinal variable of its offspring: division (Figure 4D) and differentiation pattern (Figure 4E). Under each null hypothesis, $Q$\u00a0was defined as the set of permutations of families amongst ancestors, which embodies the assumption that a family is assigned independently at random to an ancestor. To assess such null hypothesis when compared against the alternative that the families ranked by their ancestors\u2019 expression levels established a trend (either increasing or decreasing) in the other familial variable,\u00a0Jonckheere's trend test\u00a0was chosen as the test statistic\u00a0$T$.\n\n### Statistical testing formulae\n\nTo challenge the null hypotheses that differentiation was independent of the culture condition, using the data underlying Figure 2D we compared the population proportion per cell type. For notational purposes, the data were represented as a sequence $D=\\tau_{i},c_{i},s(c_{i})_{i=1}^{N}$\u00a0of $N$\u00a0cells, where the $i$th cell was identified by cell type\u00a0$\\tau_{i}$, family\u00a0$c_{i}$, and culture condition of the family\u00a0$s(c_{i})$. To assess the independence of cell types $J={\\tau_{i},i=1,\u2026,N}$\u00a0from partition labels $l\\in{1,\u2026,L}$\u00a0(relative to culture condition), the statistic $T$\u00a0of the data $D$\u00a0was defined as the log-likelihood statistic of the G-test for the contingency table\u00a0$O$, such that $O_{jl}=\\sum_{i=1}^{N}\u03c7\\tau_{i}=j,sc_{i}=l$ with $\u03c7A=1$\u00a0if the event $A$\u00a0holds true and 0 otherwise. The G-test statistic is classically used for the testing of independence between two sets of categories ($J$\u00a0and\u00a0${1,\u2026,L}$) partitioning the data counts. Therefore,\n\n$$\nT(D)=2\\suml=1L\\sumjO_{jl}In(\\frac{O_{jl}N}{E_{jl}})\n$$\n\nwhere\u00a0$E_{jl}=(\\sum_{i\\inJ}O_{il})(\\sum_{i=1}^{L}O_{ji})$.\n\nUnder the null hypothesis that differentiation was not impacted by culture condition, $D$\u00a0is equally likely as a dataset $D^{\\pi}=\\tau_{i},\\pi(c_{i}),s(\\pi(c_{i}))_{i=1}^{N}$ transformed by the action of any permutation $\\pi\\inQ$\u00a0of the set of family labels\u00a0${c_{i},i=1,\u2026,N}$. As a consequence, using Monte Carlo approximation we estimated the p-value for the right-tailed test as\n\n$$\np^_{B}^{r}=\\frac{1+\\sumi=1B\u03c7(T(D)\\leqT(D^{\\pi_{i}}))}{1+B},\n$$\n\nwhere $B=250,000$\u00a0and $\\pi_{1},\u2026,\\pi_{B}$ were uniformly and independently sampled from\u00a0$Q$.\n\nTo challenge the null hypotheses that familial division was independent of the culture condition, for the data underlying Figure 2E we compared the distribution of the maximum generation reached by each family. For these procedures, it sufficed to follow the same rationale as for the tests related to Figure 2D, but for the dataset $D=\\tau_{i},c_{i},sc_{i}_{i=1}^{N}$\u00a0of $N$\u00a0families, where $\\tau_{i}$ is the maximum generation of the $i$\u00a0th family. In particular, the testing statistic $T$\u00a0was defined as in\u00a0Equation 2, and the subsequent p-value was estimated as in\u00a0Equation 3.\n\nTo challenge the null hypotheses that differentiation without division was independent of the culture condition for the data underlying Figure 2F, we compared the proportions of cell types of undivided cells (i.e., those in generation 0). For these procedures, it sufficed to follow the same rationale as for the tests related to Figure 2D, E, with $D=\\tau_{i},c_{i},sc_{i}_{i=1}^{N}$\u00a0the sequence of $N$\u00a0families in generation 0, where $\\tau_{i}$ identifies the type of the unique cell in family\u00a0$c_{i}$. In particular, the testing statistic $T$\u00a0was defined as in\u00a0Equation 2, and the subsequent p-value was estimated as in\u00a0Equation 3.\n\nTo challenge the null hypotheses that the pattern of first division was independent of the culture condition, for the data underlying Figure 2G we compared the proportion of division types among families recovered with two cells in generation 1. For these procedures, it sufficed to follow the same rationale as for the tests in Figure 2D\u2013F, with $D=\\tau_{i},c_{i},sc_{i}_{i=1}^{N}$\u00a0as the dataset of $N$\u00a0families with two cells generation 1, where $\\tau_{i}$ records the pattern of division of the family $c_{i}$ as one out of four possibilities (outlined in Figure 2G). The test statistic $T$\u00a0was defined as in\u00a0Equation 2, and the subsequent p-value was estimated as in\u00a0Equation 3.\n\nFor the data in a given time point (24 or 48\u00a0hr) underlying Figure 4B, we investigated the family effect on differentiation by challenging the null hypotheses that differentiation diversity among cells from the same ancestor type was independent of familial membership. In particular, as the cells from the data were found in different generations, we sought to take into account that division may have had an impact on differentiation (Figure 3D). These data were identified by the sequence $D=\\tau_{i},g_{i},c_{i}_{i=1}^{N}$\u00a0of the $N$\u00a0cells from the same progenitor, with $\\tau_{i},g_{i},c_{i}$ recording the type, the generation, and the family label, respectively, of the $i$\u00a0th cell. To test the null hypothesis by permutation, the set of invariant transformations $Q$\u00a0for $D$\u00a0should permute, across families, only cells that were found in the same generation. To this end, $Q$\u00a0was generated by the functions $\\pi_{g}$ for\u00a0$g\\inG={g_{i},i=1,\u2026,N}$, such that\n\n$$\n\\pi_{g}(i)={\\pi\u223c_{g}(i)\u00a0if\u00a0g_{i}=giotherwise,\n$$\n\nwhere $\\pi~_{g}$ is any permutation of the set\u00a0${i=1,\u2026,N:g_{i}=g}$. Then\u00a0$D^{\\pi}=\\tau_{i},g_{i},c_{\\pi(i)}_{i=1}^{N}$. To measure family differentiation diversity, we defined the statistic $T$\u00a0for the average number of cell types per family, that is,\n\n$$\nT(D)=\\frac{\\sumc=1M\\sumj\\inJ\u03c7(j\\inT_{c})}{M},\n$$\n\nwhere ${1,\u2026,M}$ is the set of all family labels, $J={\\tau_{i}:i=1,\u2026,N}$\u00a0is the set of all cell types observed, and\u00a0$T_{c}={\\tau_{i},i=1,\u2026,N:c_{i}=c}$. In this case, the alternative hypothesis posited that familial relationship induced a more homogeneous differentiation in terms of cell types, leading to a decreased number of cell types expected per families\u00a0$TD$. For this reason, by Monte Carlo approximation, we estimated the p-value for the left-tailed test as\n\n$$\np^_{B}^{l}=\\frac{1+\\sumi=1B\u03c7(T(D)\\geqT(D^{\\pi_{i}}))}{1+B},\n$$\n\nwhere $\\pi_{1},\u2026,\\pi_{B}$ are sampled uniform and independent sampled elements from\u00a0$Q$.\n\nUsing the data underlying Figure 4D, we wished to challenge the null hypotheses that family progression is independent of ancestral expression levels (CD48, c-Kit, Sca-1). For notational purposes, the data were represented as a sequence $D=\\tau_{i},g_{i}_{i=1}^{N}$\u00a0of $N$\u00a0families where the $i$\u00a0th family was identified by expression level\u00a0$\\tau_{i}$, relative to one marker; maximum generation of its offspring\u00a0$g_{i}$. Given the set of maximum generations attained, $J=g_{i},i=1,\u2026,N$, we partitioned the data into $D_{j}=\\tau_{i},i=1\u2026,N:g_{i}=j=\\tau_{ji}_{i=1}^{n_{j}}$ collections of size\u00a0$n_{j}$, for\u00a0$j\\inJ$. Thus, we sought to test the null hypothesis that the variables $\\tau_{ji}$ are identically distributed, against the alternative hypothesis that, given $m_{j}$ the median of the distribution from which the elements of $D_{j}$ are drawn, for every $k,h\\inJ$\u00a0such that\u00a0$k\\leqh$, are either increasing\n\n$$\nm_{k}\\leqm_{h}\n$$\n\nor decreasing\n\n$$\nm_{k}\\geqm_{h},\n$$\n\nwhere at least one inequality must be strict. To this end, the statistic $T$\u00a0of the data $D$\u00a0was defined from the\u00a0Jonckheere's trend test, that is,\n\n$$\nT(D)=\\sumj<lj,l\\inJL\\suma=1n_{j}\\sumb=1n_{l}\u03c7(\\tau_{lb}>\\tau_{ja}).\n$$\n\nUnder the null hypothesis that the variables $\\tau_{ji}$ are identically distributed, $D$\u00a0is equally likely as a dataset $D^{\\pi}=\\tau_{i},g_{\\pi(i)}_{i=1}^{N}$ transformed by the action of any permutation $\\pi\\inQ$\u00a0of the set of family labels\u00a0${1,\u2026,N}$. As a consequence, using Monte Carlo approximation we estimated the p-value for the two-tailed test as\n\n$$\np^_{B}^{t}=2min(0.5,\\frac{1+min(\\sumi=1B\u03c7(T(D)\\leqT(D^{\\pii})),\\sumi=1B\u03c7(T(D)\\geqT(D^{\\pii})))}{1+B})\n$$\n\nwhere $B=250,000$\u00a0and $\\pi_{1},\u2026,\\pi_{B}$ were uniformly and independently sampled from\u00a0$Q$.\n\nFor the data underlying Figure 4E, we sought to challenge the null hypotheses that family differentiation to a certain cell type (SLAM-HSC, PreMegE, GMP, CMP/MEP, MPP) is independent of ancestral expression levels (CD48, c-Kit, Flt3, Sca-1). For these procedures, it sufficed to follow the same rationale as for the tests used for the data in Figure 4D, but for the dataset $D=\\tau_{i},g_{i}_{i=1}^{N}$\u00a0of $N$\u00a0families, where, for the $i$\u00a0th family, $\\tau_{i}$\u00a0is the expression level from one marker of its ancestor cell, while $g_{i}=1$ if its offspring was detected having at least one cell of the cell\u00a0type under consideration, $g_{i}=0$\u00a0otherwise. In particular, the testing statistic $T$\u00a0was defined as in\u00a0Equation 7, and the subsequent p-value was estimated as in\u00a0Equation 8.\n\nWhen multiple hypotheses were tested from the same data, the family-wise error rate was controlled using Holm\u2013Bonferroni method (Lehmann and Romano, 2006). As such, given the ordered p-values from $k$\u00a0simultaneous tests\u00a0$p^_{B1}^{t}\\leq\u2026\\leqp^_{Bk}^{t}$, the $i$\u00a0th p-value was adjusted and recalculated as\n\n$$\nmin((k+1\u2212i)p^_{Bi}^{t},1).\n$$\n\n### Beta-binomial model for family concordance\n\nTo quantify the correlation in decisions of cells to continue to divide or cease dividing, for cells from the same generation and descending from the same ancestor, we employed a stochastic mathematical model that was first described in.\n\nIn biological terms, in this mathematical model, cells divide or stop dividing with a certain probability that is correlated between cells from the same family and generation. When sampling, cells that divide less tend to be detected less, simply because cells that divide more are more abundant. Thus, it is important to take sampling into account when measuring the range of division within a family. In this model, cells have a certain probability to be measured defined by the recovery rate. The correlation coefficient that links the division of cells within the same family is fitted to the data and is used to evaluate the degree of correlation in division within families, the so-called concordance in division.\n\nIn more detail, the model is directly parameterized by the data, apart from one variable that encapsulates the correlation in decision-making that is fit to the data. In particular, with $n$\u00a0being the maximum generation recorded, let $p_{i}\\in[0,1]$ for $i=0,\u2026,n$\u00a0denote the proportion of cells that divide from generation $i$\u00a0to the next, which is determined from the data as follows. Set $z_{i}$ the total number of cells recovered in generation\u00a0$i$, the $p_{i}$ were estimated by\n\n$$\np^_{i}=\\frac{\\sumj=i+1nz_{j}2^{\u2212j}}{\\sumj=inz_{j}2^{\u2212j}}\n$$\n\nfor $i=0,\u2026,n-1$\u00a0and by\u00a0$p^_{n}=0$.\n\nIn this model, given $k_{i}$ the number of cells from a particular family that reach generation\u00a0$i$, the number of cells that continue on to divide to $i+1$\u00a0follow a beta-binomial distribution with parameters\u00a0$k_{i}$, $a_{i}=p_{i}1-\u03c1/\u03c1$, and\u00a0$b_{i}=(1-p_{i})1-\u03c1/\u03c1$, namely\u00a0$\\betak_{i},a_{i},b_{i}$, where $\u03c1\\in[0,1]$\u00a0is a free parameter. In particular, each family is generated recursively by setting $k_{0}=1$ and defining\u00a0$k_{i+1}=2\\betak_{i},a_{i},b_{i}$. As in the experimental system, not all cells are recovered, but the proportion that can be determined either by beads or well-volume recovered, on generating a family with the model, we accounted for sampling effect by sub-sampling each cell from a family with probability $r=0.71$\u00a0independently of all other cells. The beta-binomial model interpolates between cells deciding to divide again independently of one another if\u00a0$\u03c1=0$, and when they are perfectly aligned, all making the same division decision, which occurs when\u00a0$\u03c1=1$. A value between 0 and 1 reflects the level of concordance within each family in division-progression decision-making, but, by construction, irrespective of the values of\u00a0$p_{i}$, that determines the population distribution among the generations. Defining the family range as the difference between maximum and minimum generations in which the cells from a family are recovered, the best-fit $\u03c1$\u00a0was determined to be the value that maximized the likelihood of recapitulating the family range distribution in the data.\n",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "1db815c5-f7ce-4c3c-8a57-d7d5f61c5a19",
+      "submission_id": "bd93457f-ab33-42ee-9fd1-59a42d7246cc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Utpal Banerjee, University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60624.sa1](https://doi.org/10.7554/eLife.60624.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nTak et al. address an important problem in stem cell biology, which is how stem cells (in this case, hematopoietic stem cells, or HSCs), most of which are known to be biased or restricted in their lineage output, acquire their lineage bias. Specifically, the authors sought to uncouple the process of division and differentiation from divergent instructive signals from a niche by culturing single cells (or actually groups of 4 cells) ex vivo under defined conditions (i.e. the same extrinsic instructive signals) and examining cell division and associated lineage decisions. The authors make several conclusions from their studies. One important conclusion is that daughters of a single ancestor HSC or progenitor and their progeny divided at very similar rates, which differed between ancestral cell families, suggesting that the division rate is an intrinsic property of the ancestor cell that was passed along to its daughters. The authors also tried to link the properties of daughter cells to the levels of cell surface markers on the ancestral clone using the original index sorting information, but found that cell surface marker levels only partially correlated with the division and differentiation properties.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"HSPCs display within-family homogeneity in differentiation and proliferation despite population heterogeneity\" for peer review at eLife. Your article is being evaluated by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Utpal Banerjee as the Senior Editor.\n\nReviewer #1:\n\nThis study reports an in vitro cell labeling method combined with mathematical modeling to simultaneously track the number of cell divisions and the differentiation progress of single murine hematopoietic stem cells and progenitors. The authors conclude that cells derived from a common ancestor have statistically significant concordant proliferation and differentiation.\n\nI found the paper was difficult to understand in parts, not just because the mathematical modeling is outside my expertise.\n\n1. Although the immunophenotypes used to isolate the populations from fresh bone marrow are well established, reliance on immunophenotype in cultured cells to define functional status is problematic.\n\n2. The biology of HSC and progenitor cells is dealt with superficially-an example in point is the casual statement that the immunophenotypic data show \"dedifferentiation\" of progenitors to HSC, a phenomenon that is not accepted by the field; proof of this heresy would require use of more rigorous assays than those used here.\n\n3. The assignment of immunophenotype based on re-staining cells 24-48 hours after original staining requires careful controls to ensure antibody associated fluorescence is not a carryover from prior antibody staining.\n\n4. As the culture conditions (supraphysiologic concentrations of cytokines in cell suspension without ECM or stroma) do not reflect the complexity of the normal microenvironment the relevance of the findings to normal HSPC biology is limited.\n\nReviewer #2:\n\nTak et al. address an important problem in stem cell biology, which is how stem cells (in this case hematopoietic stem cells, or HSCs), most of which are known to be biased or restricted in their lineage output, acquire their lineage bias. Specifically, the authors sought to uncouple the process of division and differentiation from divergent instructive signals from a niche by culturing single cells (or actually groups of 4 cells) ex vivo under defined conditions (i.e. the same extrinsic instructive signals) and examining cell division and associated lineage decisions. The authors make several conclusions from their studies. One important conclusion is that daughters of a single ancestor HSC or progenitor and their progeny divided at very similar rates, which differed between ancestral cell families, suggesting that the division rate was an intrinsic property of the ancestor cell that was passed along to its daughters. The authors also tried to link the properties of daughter cells to the levels of cell surface markers on the ancestral clone using the original index sorting information, but found that cell surface marker levels only partially correlated with the division and differentiation properties.\n\nThe study required sophisticated statistical analyses. An issue is that the authors defined progenitors that differentiated from the original ancestral cell using cell surface markers that were originally defined using freshly isolated cells coupled with functional assays. The authors use these markers to define progenitor types following one or two days of ex vivo culture. Markers can change in culture, and the authors did not demonstrate with functional assays that the markers reliably identified progenitors that have been in culture for 1-2 days. This does not impact their conclusions about the division history, but it may impact the proper identification of the more differentiated progeny of the ancestral cell.\n\nHas the faithfulness of the marker expression in cultured cells been verified by other laboratories? If so, please provide a reference. If not, the authors should explain how they determined that marker expression correctly identified different progenitor types in culture.\n",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c861a395-bddc-4e27-92ef-a4f54b1b1614",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C1",
+      "claim": "HSPCs were isolated from bone marrow by flushing femurs, tibia, and iliac crests.",
+      "claim_type": "EXPLICIT",
+      "source": "A single-cell suspension was obtained by flushing femurs, tibia, and iliac crests.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the experimental procedure for obtaining cells, and Figure 1 illustrates this process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "75632a9a-d02a-482a-84b8-4d2c6fa58180",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C2",
+      "claim": "Cells were stained with fluorescently labeled antibodies for phenotypic identification before CellTrace staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were stained with fluorescently labeled antibodies for phenotypic identification. After this first antibody staining, the cell suspension was then split into four equal parts, each of which was stained with a distinct 5-(and 6)-carboxyfluorescein diacetate succinimidyl ester (CFSE) and CellTrace Violet (CTV) combination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The experimental procedure is described in the text and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "f26189e6-1a35-40f9-a01a-21048a3e9711",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C3",
+      "claim": "Four distinctly CTV/CFSE-colored cells were sorted per well.",
+      "claim_type": "EXPLICIT",
+      "source": "From each of these CTV/CFSE preparations, a single cell was index sorted into 90 wells of a 96-well plate, resulting in four distinctly CTV/CFSE-colored cells per well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The sorting strategy is described in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "f62f7e21-75d8-4249-b982-b27271bf4d11",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C4",
+      "claim": "Cells were cultured for 24 or 48 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "After 24 or 48 hr of culture, cells were stained with fluorescently labeled antibodies for phenotypic identification and analyzed on a flow cytometer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The culture duration is stated in the methods description and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "0fd05ff4-d44f-4887-acd5-a86139509f6d",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C5",
+      "claim": "Three HSPC populations were defined: c-Kit+Sca-1+CD150+Flt3- (SLAM-HSC), c-Kit+Sca-1+CD150-Flt3- (ST-HSC), and c-Kit+Sca-1+CD150-Flt3+ (MPP).",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we isolated bone marrow (BM) cells, labeled them with four distinguishable combinations of 5-(and 6)-carboxyfluorescein diacetate succinimidyl ester (CFSE) and CellTrace Violet (CTV), and used fluorescent antibody staining of cell surface markers to determine three HSPC populations, c-Kit+Sca-1+CD150+Flt3- (SLAM-HSC), c-Kit+Sca-1+CD150-Flt3- (ST-HSC), and c-Kit+Sca-1+CD150-Flt3+ (MPP) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The cell populations are explicitly defined based on surface marker expression.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "e06b8bc6-06fb-43c0-bfb8-5a450934fb8b",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C6",
+      "claim": "From 600 seeded SLAM-HSCs, 358 families (71%) were recovered constituting 648 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 600 seeded SLAM-HSCs, we recovered 358 families (71%) constituting 648 cells, while 343 ST-HSC families (69%) were recovered with 592 cells, and 246 MPP families (49%) with 362 cells (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The recovery rates are quantified from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "59b638f6-f58e-46c6-8ae8-ad93aadc6f7e",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C7",
+      "claim": "343 ST-HSC families (69%) were recovered with 592 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 600 seeded SLAM-HSCs, we recovered 358 families (71%) constituting 648 cells, while 343 ST-HSC families (69%) were recovered with 592 cells, and 246 MPP families (49%) with 362 cells (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The recovery rates are quantified from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "11a922d4-0b9d-4d92-91d1-a19d7f7a981f",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C8",
+      "claim": "246 MPP families (49%) were recovered with 362 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 600 seeded SLAM-HSCs, we recovered 358 families (71%) constituting 648 cells, while 343 ST-HSC families (69%) were recovered with 592 cells, and 246 MPP families (49%) with 362 cells (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The recovery rates are quantified from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "c8057a18-155e-4198-8e36-7b8952882cce",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C9",
+      "claim": "27 families (2.8% of recovered families) had cell numbers that could not have originated from a single ancestor and were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Over all conditions, 27 families (2.8% of recovered families) had cell numbers that could not have originated from a single ancestor, and so were excluded from analysis, illustrating the fidelity of the single-cell sorting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The exclusion criteria and number of excluded families are stated based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "d87a7eef-21d4-426a-ad88-9bec8bc6d1d6",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C10",
+      "claim": "A diversity of myeloid cell types ranging from the initial ancestor to c-Kit- differentiated cells was obtained in both culture conditions and for each ancestor type.",
+      "claim_type": "EXPLICIT",
+      "source": "In both culture conditions and for each ancestor type, we obtained a diversity of myeloid cell types ranging from the initial ancestor to c-Kit- differentiated cells, including c-Kit+Sca-1-CD16/32+ (GMP), c-Kit+Sca-1-CD150-CD16/32- (CMP/MEP), c-Kit-CD16/32+ (late myeloid progenitor, late MP), and c-Kit-CD16/32 cell types (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The cell types observed are described based on experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "3a6bbcc0-57a5-410b-8cec-234a9c941c4f",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C11",
+      "claim": "c-Kit+Sca-1-CD150+CD16/32- (PreMegE) cells were detected, previously described as megakaryocyte and erythroid progenitors (Pronk et al., 2007).",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected c-Kit+Sca-1-CD16/32CD150+ (PreMegE) cells, previously described as megakaryocyte and erythroid progenitors (Pronk et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The cell type is identified in the data and its identity is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "0fbcbcff-3644-43ec-88d6-b8f84c0e5dee",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C12",
+      "claim": "No offspring of SLAM-HSCs, and those of very few ST-HSCs, differentiated into Flt3 expressing MPPs in the culture conditions used.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all hematopoietic cells have been reported to go through a Flt3 expressing stage (Boyer et al., 2011), we found that no offspring of SLAM-HSCs, and those of very few ST-HSCs, differentiated into Flt3 expressing MPPs in our culture conditions (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "cda1d646-d5db-45fc-8599-73e877e6dd8e",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C13",
+      "claim": "Some ST-HSC and MPP acquired CD150 expression after culture, making them resemble SLAM-HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Some ST-HSC and MPP acquired CD150 expression after culture, making them resemble SLAM-HSCs, but this was not further investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is stated based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "7ef56b7a-1909-40c6-8eec-9deaad80dcd2",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C14",
+      "claim": "CD150 expression cannot be due to residual fluorescence from antibodies used for cell sorting as no fluorescence was measured for any of the markers in cells kept for 24 hr in culture after sorting without further antibodies staining.",
+      "claim_type": "EXPLICIT",
+      "source": "This CD150 expression cannot be due to residual fluorescence from antibodies used for cell sorting as no fluorescence was measured for any of the markers in cells kept for 24 hr in culture after sorting without further antibodies staining (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by control experiments shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "33eabd94-814d-47d2-99a9-d98863cb06ef",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C15",
+      "claim": "The addition of IL-3 and IL-6 had no impact on the pattern of cell types produced by SLAM-HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of IL-3 and IL-6 had no impact on the pattern of cell types produced by SLAM-HSCs (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "43f2a9fd-3555-4771-9e8a-e64df579fb54",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C16",
+      "claim": "The addition of IL-3 and IL-6 changed the pattern of cell types produced by ST-HSCs and MPPs in a statistically significant way.",
+      "claim_type": "EXPLICIT",
+      "source": "It did, however, change the pattern of cell types produced by ST-HSCs and MPPs in a statistically significant way as determined by a permutation test (Materials and methods), with an increased number of early progenitors as opposed to more differentiated progenitors as previously shown (Lui et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "fe3e21f1-6162-4288-959f-1f8c1ef346a5",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C17",
+      "claim": "Substantial heterogeneity in division history was observed from families that did not proliferate to those with cells that had undergone six divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of individual families, we observed substantial heterogeneity in division history (Figure 2E) from families that did not proliferate to those with cells that had undergone six divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "1301d843-2b8b-4add-8f1b-1d06f8ec8ee2",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C18",
+      "claim": "After 24 hr most cells either remained undivided or had divided once, with a few cells having undergone two or more divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with earlier observations (Roch et al., 2017), after 24 hr most cells either remained undivided or had divided once, with a few cells having undergone two or more divisions (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 2A and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "32995b39-f58d-4eb6-9cce-e5294ca02114",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C19",
+      "claim": "At 48 hr, over 90% of the cells had undergone at least one division.",
+      "claim_type": "EXPLICIT",
+      "source": "At 48 hr, over 90% of the cells had undergone at least one division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "84083369-c550-4fb1-aced-2153dccf3c4e",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C20",
+      "claim": "For all three sorted ancestor cell types, addition of IL-3 and IL-6 led to a statistically significant increase in proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three sorted ancestor cell types, we found that addition of IL-3 and IL-6 led to a statistically significant increase in proliferation (Figure 2E), as previously described (Domen and Weissman, 2000; Bordeaux-Rego et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 2E and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "9e5317b0-5c3c-4e68-89c4-37b5af4c9e68",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C21",
+      "claim": "In the culture without IL-3 and IL-6, the proportion of undivided ancestors that differentiated were 36.5% from SLAM-HSCs, 61.1% from ST-HSCs, and 35.6% from MPPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploring the relationship between division and differentiation, in the culture without IL-3 and IL-6, the proportion of undivided ancestors that differentiated were 36.5% from SLAM-HSCs, 61.1% from ST-HSCs, and 35.6% from MPPs (Figure 2F), which was in agreement with previous reports (Roch et al., 2015; Grinenko et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The proportions are calculated from experimental data shown in Figure 2F and are consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "0ef0f1f3-14bb-42f7-b0b5-ea7f83bfe4d1",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C22",
+      "claim": "SLAM-HSCs preferentially differentiated without dividing into PreMegEs.",
+      "claim_type": "EXPLICIT",
+      "source": "SLAM-HSCs preferentially differentiated without dividing into PreMegEs, as reported previously (Grinenko et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "d2a00325-d443-4234-b889-bde126fa9421",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C23",
+      "claim": "Sca-1high SLAM-HSCs were more likely not to differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "On comparing the surface marker expression of differentiated and not-differentiated non-divided cells (Figure 2\u2014figure supplement 3), Sca-1high SLAM-HSCs were more likely not to differentiate, in agreement with a previous report (Schulte et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 2\u2014figure supplement 3 and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "323b2120-2850-4dec-b1ed-462d4c87da29",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C24",
+      "claim": "The addition of IL-3 and IL-6 only significantly impacted the differentiation pattern of the progeny of MPPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of IL-3 and IL-6 only significantly impacted the differentiation pattern of the progeny of MPPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "5c812705-005c-4314-9938-203480904b9f",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C25",
+      "claim": "70.7% of the cells had a symmetric fate after their first division.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling data over ancestor types, 70.7% of the cells had a symmetric fate after their first division, with the fate of MPPs being mostly symmetric undifferentiated (51.4%), and of ST-HSC being mostly symmetric differentiated (59.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The proportions are calculated from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "60165c27-e0c0-4e2f-9257-b32a8b75ebab",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C26",
+      "claim": "The fate of MPPs after first division was mostly symmetric undifferentiated (51.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling data over ancestor types, 70.7% of the cells had a symmetric fate after their first division, with the fate of MPPs being mostly symmetric undifferentiated (51.4%), and of ST-HSC being mostly symmetric differentiated (59.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The proportion is calculated from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "2c54faca-e3bb-477f-b859-c4284a87bd08",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C27",
+      "claim": "The fate of ST-HSC after first division was mostly symmetric differentiated (59.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling data over ancestor types, 70.7% of the cells had a symmetric fate after their first division, with the fate of MPPs being mostly symmetric undifferentiated (51.4%), and of ST-HSC being mostly symmetric differentiated (59.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The proportion is calculated from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "9d97a58e-1bab-46c6-8026-6e7ff66773c5",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C28",
+      "claim": "SLAM-HSCs self-renewed with symmetric undifferentiated fates (32.1%) and with asymmetric undifferentiated fates (10.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "SLAM-HSCs self-renewed with symmetric undifferentiated fates (32.1%), but also with asymmetric undifferentiated fates (10.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The proportions are calculated from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "d26da7e9-63f2-42ef-8e99-6a23e64f43c5",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C29",
+      "claim": "Asymmetric fates occurred for 28.6% of SLAM-HSCs, 28.6% of ST-HSCs, and 31.4% of MPPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric fates occurred for 28.6% of SLAM-HSCs, 28.6% of ST-HSCs, and 31.4% of MPPs, consistent with previous reports (Suda et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The proportions are calculated from experimental data and are consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "37b9574c-027e-49c8-8767-59f056962801",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C30",
+      "claim": "No statistical difference was found between ancestors cultured with or without IL-3 and IL-6 in terms of symmetric versus asymmetric fates after first division.",
+      "claim_type": "EXPLICIT",
+      "source": "No statistical difference was found between ancestors cultured with or without IL-3 and IL-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "0fde17b3-31fe-4e44-b813-f9e0ccae0fbd",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C31",
+      "claim": "81% of the 223 families that divided more than once had all of their cells in the same generation (range = 0).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that families are highly concordant, with 81% of the 223 families that divided more than once having all of their cells in the same generation (range = 0, Figure 2H), and only four of those families (1.8%) containing cells that were more than one generation apart (range >1, Figure 2H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The proportion is calculated from experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "19007800-47d8-4bb1-b643-18f6e215fb57",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C32",
+      "claim": "Only four families (1.8%) contained cells that were more than one generation apart (range >1).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that families are highly concordant, with 81% of the 223 families that divided more than once having all of their cells in the same generation (range = 0, Figure 2H), and only four of those families (1.8%) containing cells that were more than one generation apart (range >1, Figure 2H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The proportion is calculated from experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "a4a54ef3-4978-452e-b16f-b7fa275ab9ba",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C33",
+      "claim": "High correlation coefficients (70\u201390%) resulted in the best fit to the measured familial ranges for SLAM-HSC, ST-HSC, and MPP families cultured with IL-3 and IL-6.",
+      "claim_type": "EXPLICIT",
+      "source": "High correlation coefficients (70\u201390%) (Figure 2H) resulted in the best fit to the measured familial ranges, with the exception of MPPs cultured in medium without IL-3 and IL-6 for which no reliable estimate could be made.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The correlation coefficients are derived from mathematical modeling of experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "2f5d202b-7a08-431b-b36d-0b99c283ba0f",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C34",
+      "claim": "Division progression is highly concordant within SLAM-HSC, ST-HSC, and MPP families, while being heterogeneous between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this analysis establishes that division progression is highly concordant within SLAM-HSC, ST-HSC, and MPP families, while being heterogeneous between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data and mathematical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "afde476f-27db-46c3-a5a4-04b7e4b30e83",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C35",
+      "claim": "Differentiation progressed in tandem with division.",
+      "claim_type": "EXPLICIT",
+      "source": "Although differentiation without division was observed, in general differentiation progressed in tandem with division (Figure 3A), as published previously (Upadhaya et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 3A and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "5b5ced3e-e5ae-491d-8d16-832b4d2e4fb8",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C36",
+      "claim": "A smooth transition was observed from SLAM-HSCs at the bottom of the UMAP, with further differentiated cells towards the top, indicating a gradual transition from one cell type to another.",
+      "claim_type": "EXPLICIT",
+      "source": "When we mapped cell types determined by traditional gating onto the UMAP (Figure 3C), a smooth transition was observed from SLAM-HSCs at the bottom, with further differentiated cells towards the top, indicating a gradual transition from one cell type to another.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on UMAP visualization of experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "af8572e9-c257-46cb-831a-2b648e928006",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C37",
+      "claim": "GMPs and MPs appear on the top left of the UMAP, and CMP/MEP and PreMegE on the top right.",
+      "claim_type": "EXPLICIT",
+      "source": "GMPs and c-Kit-Sca-1-CD16/32+ (myeloid progenitors [MPs]) appear on the top left, and CMP/MEP and PreMegE on the top right.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on UMAP visualization of experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "2bd06a83-ff6d-433c-b525-0f9891c0d089",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C38",
+      "claim": "More numerous GMPs, MPs, and CMP/MEPs were seen at the top of the UMAP at 48 hr than 24 hr, suggesting that it takes between 24 and 48 hr to fully differentiate into Sca1- progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "More numerous GMPs, MPs, and CMP/MEPs were seen at the top of the UMAP at 48 hr than 24 hr, suggesting that it takes between 24 and 48 hr to fully differentiate into Sca1- progenitors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on UMAP visualization of experimental data shown in Figure 3C, and the suggestion is an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "1efcefa9-cff8-4023-a03a-8358630e349a",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C39",
+      "claim": "All three ancestral cell types remain present at 48 hr, demonstrating that HSCs can remain in an undifferentiated state for the duration of the experiment, even if their offspring experience three rounds of division.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all three ancestral cell types remain present at 48 hr, demonstrating, in particular, that HSCs can remain in an undifferentiated state for the duration of the experiment, even if their offspring experience three rounds of division.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on UMAP visualization of experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "1fbe5c17-84f4-4c32-be52-e682a1c353a9",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C40",
+      "claim": "SLAM-HSCs appeared to be primed towards the production of CMP/MEPs and PreMegEs while still generating some ST-HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "On plotting the generation numbers of offspring from each ancestor cell type on the UMAP (Figure 3D and Figure 3\u2014figure supplement 2), SLAM-HSCs appeared to be primed towards the production of CMP/MEPs and PreMegEs while still generating some ST-HSCs, whereas MPPs were more primed towards GMPs, and ST-HSCs showed a more even distribution between the two lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on UMAP visualization of experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "018d92ea-6ed3-4dbb-b62e-478c5542c8b3",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C41",
+      "claim": "MPPs were more primed towards GMPs.",
+      "claim_type": "EXPLICIT",
+      "source": "On plotting the generation numbers of offspring from each ancestor cell type on the UMAP (Figure 3D and Figure 3\u2014figure supplement 2), SLAM-HSCs appeared to be primed towards the production of CMP/MEPs and PreMegEs while still generating some ST-HSCs, whereas MPPs were more primed towards GMPs, and ST-HSCs showed a more even distribution between the two lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on UMAP visualization of experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "10cd4580-53f9-45ce-867c-f68b3c71fad4",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C42",
+      "claim": "ST-HSCs showed a more even distribution between the two lineages (CMP/MEP/PreMegE and GMP).",
+      "claim_type": "EXPLICIT",
+      "source": "On plotting the generation numbers of offspring from each ancestor cell type on the UMAP (Figure 3D and Figure 3\u2014figure supplement 2), SLAM-HSCs appeared to be primed towards the production of CMP/MEPs and PreMegEs while still generating some ST-HSCs, whereas MPPs were more primed towards GMPs, and ST-HSCs showed a more even distribution between the two lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on UMAP visualization of experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "16ee1bfe-c1c5-4d31-913b-0c6587f198c0",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C43",
+      "claim": "PreMegEs were observed to be generated without division, as well as in 1\u20133 divisions from SLAM-HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "PreMegEs were observed to be generated without division, as well as in 1\u20133 divisions from SLAM-HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "ebffa4ba-f81a-4790-9863-809cf42b61b9",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C44",
+      "claim": "At 24 hr, most families were composed of only one cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 hr, most families were composed of only one cell type (Figure 4A), but at 48 hr more families produced several cell types (Figure 4B), indicating that downstream asymmetries in the fate occur after a largely symmetric first division (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "2d56fa49-865c-45f5-ab4c-39c777f1ea01",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C45",
+      "claim": "At 48 hr more families produced several cell types, indicating that downstream asymmetries in the fate occur after a largely symmetric first division.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 hr, most families were composed of only one cell type (Figure 4A), but at 48 hr more families produced several cell types (Figure 4B), indicating that downstream asymmetries in the fate occur after a largely symmetric first division (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 4B, and the indication is an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "08fddb65-dddb-4e9e-af0c-afae1898e607",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C46",
+      "claim": "Permutation tests on phenotypically defined cell types revealed that families exhibited significantly more similarity than would be expected if there was no family component, both at 24 hr and at 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Permutation tests on phenotypically defined cell types revealed that families exhibited significantly more similarity than would be expected if there was no family component, both at 24 hr (Figure 4A) and at 48 hr (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of experimental data shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "1fe7201f-2727-480b-9d8f-4dfc99ee9ebd",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C47",
+      "claim": "Within-family similarity in fate is visible by the co-localization of cells from the same family on the UMAP.",
+      "claim_type": "EXPLICIT",
+      "source": "This within-family similarity in fate is visible by the co-localization of cells from the same family on the UMAP (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on UMAP visualization of experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "fe0d8f07-0be7-433c-ae53-cb2f1ef5543b",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C48",
+      "claim": "SLAM-HSC, ST-HSC, and MPP families are highly concordant in division and share similar differentiation outcomes in vitro, while population-level diversity in proliferation and cell types arises from heterogeneity across families.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SLAM-HSC, ST-HSC, and MPP families are highly concordant in division and share similar differentiation outcomes in vitro, while population-level diversity in proliferation and cell types arises from heterogeneity across families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "474210e4-2337-4e98-b66d-6e25d8a1cd02",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C49",
+      "claim": "Comparison of the median fluorescent intensities of markers from ancestors during sort with those obtained from daughters at each of the two time points revealed clear correlation between the two.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the median fluorescent intensities of markers from ancestors during sort with those obtained from daughters at each of the two time points (Figure 4\u2014figure supplement 1A) revealed clear correlation between the two, supporting the hypothesis that ancestor surface expression markers were instructive in the within-family homogeneity in division progression and differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is based on experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "de9717ad-a83d-4566-8a13-364594af0cce",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C50",
+      "claim": "Ancestor surface expression markers were instructive in the within-family homogeneity in division progression and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the median fluorescent intensities of markers from ancestors during sort with those obtained from daughters at each of the two time points (Figure 4\u2014figure supplement 1A) revealed clear correlation between the two, supporting the hypothesis that ancestor surface expression markers were instructive in the within-family homogeneity in division progression and differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The hypothesis is supported by the correlation observed in experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "1c0a8167-dcbc-4e5f-af65-8b81481cd985",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C51",
+      "claim": "Across both cocktails and time points, only cell surface markers on ancestral SLAM-HSCs were consistently instructive for division progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Across both cocktails and time points, only cell surface markers on ancestral SLAM-HSCs were consistently instructive for division progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "84c70ed7-7490-4db8-aedb-6798c12f5c5a",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C52",
+      "claim": "CD48 correlated positively with division progression in SLAM-HSCs, with its strongest effect at 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "CD48 correlated positively, with its strongest effect at 24 hr, and Sca-1 correlated negatively, while at 48 hr c-Kit correlated positively (Figure 4D, Figure 4\u2014figure supplement 1B, and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data shown in Figure 4D and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "4f671489-4e94-4063-8034-e17702cea402",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C53",
+      "claim": "Sca-1 correlated negatively with division progression in SLAM-HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "CD48 correlated positively, with its strongest effect at 24 hr, and Sca-1 correlated negatively, while at 48 hr c-Kit correlated positively (Figure 4D, Figure 4\u2014figure supplement 1B, and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data shown in Figure 4D and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "bc1be137-21c9-4514-ba5f-0f63d8e83d0d",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C54",
+      "claim": "At 48 hr c-Kit correlated positively with division progression in SLAM-HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "CD48 correlated positively, with its strongest effect at 24 hr, and Sca-1 correlated negatively, while at 48 hr c-Kit correlated positively (Figure 4D, Figure 4\u2014figure supplement 1B, and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data shown in Figure 4D and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "33cd7796-a28e-4a9e-9ef8-01cbd09fd1b1",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C55",
+      "claim": "For both ST-HSCs and MPPs, none of the phenotypic markers exhibited strong correlation with division progression, indicating the need to identify other markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, for both ST-HSCs and MPPs, even though the family data clearly indicate that there is a familial component to division progression (Figure 2H), none of the phenotypic markers exhibited strong correlation (Figure 4\u2014figure supplement 1B), indicating the need to identify other markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on statistical analysis of experimental data shown in Figure 4\u2014figure supplement 1B, and the indication is an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "9823f4fc-27b5-4363-8320-5eebdcef526d",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C56",
+      "claim": "For SLAM-HSCs, at 24 and 48 hr in both cocktails, Sca-1 expression provided a strong positive correlation to self-renewal and a negative one to production of PreMegE.",
+      "claim_type": "EXPLICIT",
+      "source": "For SLAM-HSCs, at 24 and 48 hr in both cocktails, Sca-1 expression provided a strong positive correlation to self-renewal and a negative one to production of PreMegE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "0af62a39-2a52-49bc-bce4-fa3fcf0590e0",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C57",
+      "claim": "At 48 hr, c-Kit presented the inverse dependency to Sca-1 in SLAM-HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "At 48 hr, c-Kit presented the inverse dependency to Sca-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "bfe7d0af-d637-4aa3-85ab-748f4b827dc2",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C58",
+      "claim": "At 24 and 48 hr, CD48 correlated negatively to self-renewal and positively to production of PreMegE when IL-3 and IL-6 are added in SLAM-HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 and 48 hr, CD48 correlated negatively to self-renewal and positively to production of PreMegE when IL-3 and IL-6 are added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "1d14325d-24a6-459b-84a6-2129225ee976",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C59",
+      "claim": "c-Kit and Sca-1 expression levels of SLAM-HSCs act as intrinsic markers for both familial progression and differentiation with high Sca-1 expression and low c-Kit expression leading to less division (Wilson et al., 2015; Grinenko et al., 2014; Morcos et al., 2017) and less differentiation (Shin et al., 2014), and potentially resulting in better engraftment (Wilson et al., 2015; Grinenko et al., 2014; Shin et al., 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "As cocktail composition did not have a major impact on the relationship between familial fate and ancestral expression, these results were suggestive that c-Kit and Sca-1 expression levels of SLAM-HSCs act as intrinsic markers for both familial progression and differentiation with high Sca-1 expression and low c-Kit expression leading to less division (Wilson et al., 2015; Grinenko et al., 2014; Morcos et al., 2017) and less differentiation (Shin et al., 2014), and potentially resulting in better engraftment (Wilson et al., 2015; Grinenko et al., 2014; Shin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The suggestion is based on experimental data and is consistent with multiple previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "cf503202-ffa9-4fe8-8f26-040651199038",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C60",
+      "claim": "Low ancestral CD48 expression level has been reported to result in less division (Pietras et al., 2015; Akinduro et al., 2018), but the data indicates its relationship to differentiation is dependent on extrinsic signals.",
+      "claim_type": "EXPLICIT",
+      "source": "While low ancestral CD48 expression level has been reported to result in less division (Pietras et al., 2015; Akinduro et al., 2018), our data indicates its relationship to differentiation is dependent on extrinsic signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data and contrasts with previous literature regarding the relationship to differentiation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "82db155b-4330-48b3-baa4-d403988277fd",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C61",
+      "claim": "For ST-HSCs, the ancestral level of CD48 and Sca-1 consistently correlated negatively and positively, respectively, with de-differentiation to SLAM-HSC in the cocktail with IL-3 and IL-6 at both time points.",
+      "claim_type": "EXPLICIT",
+      "source": "For ST-HSCs, the ancestral level of CD48 and Sca-1 consistently correlated negatively and positively, respectively, with de-differentiation to SLAM-HSC in the cocktail with IL-3 and IL-6 at both time points (Figures 4E and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data shown in Figures 4E and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "92c3fced-e056-42f1-9990-368549a930cc",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C62",
+      "claim": "Differentiation to GMP from ST-HSC, which occurred only in 48 hr data, correlated positively and negatively with the ancestral level of CD48 and Sca-1, respectively (Morcos et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiation to GMP, which occurred only in 48 hr data, correlated positively and negatively with the ancestral level of CD48 and Sca-1, respectively (Figure 4E; Morcos et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data shown in Figure 4E and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "96471f30-60ca-4861-8060-bb511261350d",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C63",
+      "claim": "Differentiation to GMP from ST-HSC was dependent on the parental level of CD48 and Sca-1, whereas the de-differentiation to SLAM-HSC is dependent on both extrinsic factors (IL-3 and IL-6) and the intrinsic ancestral level of CD48 and Sca-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, differentiation to GMP from ST-HSC was dependent on the parental level of CD48 and Sca-1, whereas the de-differentiation to SLAM-HSC is dependent on both extrinsic factors (IL-3 and IL-6) and the intrinsic ancestral level of CD48 and Sca-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "88ad7d42-f048-42bf-921e-1b3a82548071",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C64",
+      "claim": "The differentiation from MPPs to GMPs that was observed to occur by 48 hr correlated negatively with Sca-1 ancestral expression (Morcos et al., 2017) in both cocktails.",
+      "claim_type": "EXPLICIT",
+      "source": "The differentiation from MPPs to GMPs that was observed to occur by 48 hr correlated negatively with Sca-1 ancestral expression (Morcos et al., 2017) in both cocktails.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "97be2e25-1e6f-4fe6-bf70-7fd226badcd5",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C65",
+      "claim": "Differentiation from MPPs to GMPs also negatively correlated with Flt3 ancestral expression, but only in the cocktail without IL-3 and IL-6.",
+      "claim_type": "EXPLICIT",
+      "source": "It also negatively correlated with Flt3 ancestral expression, but only in the cocktail without IL-3 and IL-6 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "aefdb623-5c46-41b3-8176-7287d9760cb1",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C66",
+      "claim": "In the presence of IL-3 and IL-6, differentiation from MPP to GMP positively correlated with c-Kit ancestral expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of IL-3 and IL-6, instead, differentiation from MPP to GMP positively correlated with c-Kit ancestral expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "a81638cf-d878-4923-9d85-40a9a6adc009",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C67",
+      "claim": "Differentiation from MPP to CMP/MEP occurred only at 48 hr in the cocktail without IL-3 and IL-6, and then correlated positively with c-Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiation from MPP to CMP/MEP occurred only at 48 hr in the cocktail without IL-3 and IL-6, and then correlated positively with c-Kit (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation is based on statistical analysis of experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "326cc7c9-3751-48c9-82e6-31f3f265a013",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C68",
+      "claim": "Differentiation to GMP from MPP is dependent on the intrinsic ancestral level of Sca-1, whereas the differentiation to CMP/MEP is dependent on both extrinsic factors (IL-3 and IL-6) and the intrinsic ancestral level of c-Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, differentiation to GMP from MPP is dependent on the intrinsic ancestral level of Sca-1, whereas the differentiation to CMP/MEP is dependent on both extrinsic factors (IL-3 and IL-6) and the intrinsic ancestral level of c-Kit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "6d9c5014-3ad2-4275-94c3-4c7a7e1781f7",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C69",
+      "claim": "The concordance in division and similarity in fate within families is partially explained by the surface expression marker used to phenotype ancestors, but both intrinsic and extrinsic factors act to direct familial fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the concordance in division and similarity in fate within families is partially explained by the surface expression marker used to phenotype ancestors, but both intrinsic and extrinsic factors act to direct familial fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "55c9373d-e3f8-4f4c-bff4-68fe7f191e1e",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C70",
+      "claim": "Despite substantial population-level heterogeneity, offspring cells derived from a single ancestor are highly concordant in their division progression and exhibit familial effects on differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Its use with HSPCs revealed that despite substantial population-level heterogeneity amongst offspring cells derived from a single ancestor are highly concordant in their division progression and exhibit familial effects on differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "8f6bac9d-d158-422b-b630-57eb2b9b061f",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C71",
+      "claim": "The restriction in differentiated cell types within each family is propagated primarily through symmetric first divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "The restriction in differentiated cell types within each family is propagated primarily through symmetric first divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "26099276-3443-4620-b9af-33512743f77d",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C72",
+      "claim": "Although each family is composed of several cell types, the overall collection of cell types observed in a population is composed of homogeneous families from heterogeneous ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although each family is composed of several cell types, the overall collection of cell types observed in a population is composed of homogeneous families from heterogeneous ancestors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "a2e78abb-8e3e-4729-82c2-c68aab55695b",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C73",
+      "claim": "The generation of a diversity of cell types is presently assumed to result from a diversification within every family.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of a diversity of cell types is presently assumed to result from a diversification within every family, and methods for inferring differentiation trajectories using single-cell RNA sequencing data from snapshot data assume that cells all behave independently (Trapnell et al., 2014; Bendall et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a current assumption in the field and cites relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "f9292ab0-fc9b-42f3-a46e-f2e829f0408e",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C74",
+      "claim": "Methods for inferring differentiation trajectories using single-cell RNA sequencing data from snapshot data assume that cells all behave independently (Trapnell et al., 2014; Bendall et al., 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of a diversity of cell types is presently assumed to result from a diversification within every family, and methods for inferring differentiation trajectories using single-cell RNA sequencing data from snapshot data assume that cells all behave independently (Trapnell et al., 2014; Bendall et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a current assumption in computational methods and cites relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "f34bc77b-08b4-4ea5-bacf-3f426d66f902",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C75",
+      "claim": "The findings establish that familial dependencies that are currently unmeasured exist within the population and call for a revision of the assumption of independent fate decision by cells along the hematopoietic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations of early lineage priming (M\u00fcller-Sieburg et al., 2002; Peri\u00e9 and Duffy, 2016; Paul et al., 2016; Hoppe et al., 2016), our findings establish that familial dependencies that are currently unmeasured exist within the population and call for a revision of the assumption of independent fate decision by cells along the hematopoietic tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "32314a21-f309-416f-bda2-c60fc78ec556",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C76",
+      "claim": "Ancestral cell surface expression of markers used for phenotyping serves as correlates that partially predict some of these familial properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Ancestral cell surface expression of markers used for phenotyping serves as correlates that partially predict some of these familial properties, but, in particular, a correlate that explains the highly heritable division progression of ST-HSC and MPP families is not contained within them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "7851aead-d6db-406e-b1d1-07c35e216e00",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C77",
+      "claim": "A correlate that explains the highly heritable division progression of ST-HSC and MPP families is not contained within the phenotyping markers used.",
+      "claim_type": "EXPLICIT",
+      "source": "Ancestral cell surface expression of markers used for phenotyping serves as correlates that partially predict some of these familial properties, but, in particular, a correlate that explains the highly heritable division progression of ST-HSC and MPP families is not contained within them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "fce15d2c-98e6-409a-bfa0-3c6595eef618",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C78",
+      "claim": "Extrinsic properties such as cytokine signaling can play an instructive role, altering and reshaping the observed familial effects.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also the case that extrinsic properties such as cytokine signaling can play an instructive role, altering and reshaping the observed familial effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "08ea5888-7fd0-4603-9129-c96461abf218",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C79",
+      "claim": "The broad range of engraftment and proliferation capacities of HSPCs could be consequences of the heterogeneity in their engrafted families.",
+      "claim_type": "EXPLICIT",
+      "source": "As HSPCs are cultured before BM transplantation in gene therapy, our results indicate that the broad range of engraftment and proliferation capacities of HSPCs could be consequences of the heterogeneity in their engrafted families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The suggestion is an inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "6c29a349-8403-48b6-923d-a4c4184c7935",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C80",
+      "claim": "Altered culture conditions might reduce or enhance heterogeneity between families and possibly improve transplantation outcomes if this leads to more self-renewal divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "That suggests that altered culture conditions might reduce or enhance heterogeneity between families and possibly improve transplantation outcomes if this leads to more self-renewal divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The suggestion is speculative based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "f918f507-9d0b-4f01-a4b6-874f684f0130",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C81",
+      "claim": "Changing the composition of the population of committed HSPC might be a mechanism to directly alter the balance of lineage production, with therapeutic applications that could benefit the treatment of leukemia and genetic immune disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, changing the composition of the population of committed HSPC might be a mechanism to directly alter the balance of lineage production, with therapeutic applications that could benefit the treatment of leukemia and genetic immune disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The suggestion is speculative based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "2351a61b-117f-4ef7-8c9f-4018a703b0b6",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C82",
+      "claim": "HSCs can sequentially reconstitute the blood system of several hosts (Ross et al., 1982).",
+      "claim_type": "EXPLICIT",
+      "source": "It is well-established that HSCs can sequentially reconstitute the blood system of several hosts (Ross et al., 1982), leading to the inference that HSCs must be able to maintain themselves (Morrison and Kimble, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "7caff0d2-3c48-48f7-b43e-da6a4765f360",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C83",
+      "claim": "HSCs must be able to maintain themselves (Morrison and Kimble, 2006).",
+      "claim_type": "EXPLICIT",
+      "source": "It is well-established that HSCs can sequentially reconstitute the blood system of several hosts (Ross et al., 1982), leading to the inference that HSCs must be able to maintain themselves (Morrison and Kimble, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous literature and is an inference from the ability to sequentially reconstitute.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "1cc53d89-d677-427d-8338-82db86cc6c0b",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C84",
+      "claim": "Self-renewal has been seen to occur through both symmetric and asymmetric cell division (Wu et al., 2007; Brummendorf et al., 1998; Ema et al., 2000; Punzel et al., 2003).",
+      "claim_type": "EXPLICIT",
+      "source": "When observed with time-lapse imaging, self-renewal has been seen to occur through both symmetric and asymmetric cell division (Wu et al., 2007; Brummendorf et al., 1998; Ema et al., 2000; Punzel et al., 2003), which can be influenced by extrinsic signals (Ema et al., 2000; Punzel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "e2454326-ed4f-49b0-9346-135394c034aa",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C85",
+      "claim": "Self-renewal can be influenced by extrinsic signals (Ema et al., 2000; Punzel et al., 2003).",
+      "claim_type": "EXPLICIT",
+      "source": "When observed with time-lapse imaging, self-renewal has been seen to occur through both symmetric and asymmetric cell division (Wu et al., 2007; Brummendorf et al., 1998; Ema et al., 2000; Punzel et al., 2003), which can be influenced by extrinsic signals (Ema et al., 2000; Punzel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "f3493542-1e74-4f58-b69a-89b6bc2ef060",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C86",
+      "claim": "Steady-state in situ lineage-tracing studies have suggested that MPPs are capable of self-renewal (Sun et al., 2014; Busch et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "Steady-state in situ lineage-tracing studies have also suggested that MPPs are capable of self-renewal (Sun et al., 2014; Busch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "05018d51-01d9-4aaf-83e2-5ec35df3d0c5",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C87",
+      "claim": "HSCs have been shown to differentiate without division into megakaryocytes in vitro (Roch et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HSCs have been shown to differentiate without division into megakaryocytes in vitro (Roch et al., 2015), and common myeloid, megakaryocyte, and erythroid progenitors in vivo (Grinenko et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "4ad549e9-5fe0-4bab-b78d-898d722adb92",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C88",
+      "claim": "HSCs have been shown to differentiate without division into common myeloid, megakaryocyte, and erythroid progenitors in vivo (Grinenko et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HSCs have been shown to differentiate without division into megakaryocytes in vitro (Roch et al., 2015), and common myeloid, megakaryocyte, and erythroid progenitors in vivo (Grinenko et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "a47c65be-6572-4a7a-896b-972bcc225fa9",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C89",
+      "claim": "Only a few HSCs reconstitute all of the blood lineages, with the rest being either restricted in the number of lineages they produce (Yamamoto et al., 2013; Sanjuan-Pla et al., 2013; Rodriguez-Fraticelli et al., 2018; Carrelha et al., 2018) or having a bias or imbalance in the proportion of cell types they create (Dykstra et al., 2007; M\u00fcller-Sieburg et al., 2004).",
+      "claim_type": "EXPLICIT",
+      "source": "Recent single-cell transplantation and cellular barcoding experiments have revealed that only a few HSCs reconstitute all of the blood lineages, with the rest being either restricted in the number of lineages they produce (Yamamoto et al., 2013; Sanjuan-Pla et al., 2013; Rodriguez-Fraticelli et al., 2018; Carrelha et al., 2018) or having a bias or imbalance in the proportion of cell types they create (Dykstra et al., 2007; M\u00fcller-Sieburg et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "3c7e45ff-b165-4123-825a-8be6e931397c",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C90",
+      "claim": "Some HSCs produce only megakaryocytes (Rodriguez-Fraticelli et al., 2018; Carrelha et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "As examples of lineage restriction, it has been reported that some HSCs produce only megakaryocytes (Rodriguez-Fraticelli et al., 2018; Carrelha et al., 2018), while others produce only myeloid cells, megakaryocytes, and erythrocytes (Yamamoto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "44dcbcce-756a-4ba7-9b0f-4763d0409ec4",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C91",
+      "claim": "Some HSCs produce only myeloid cells, megakaryocytes, and erythrocytes (Yamamoto et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "As examples of lineage restriction, it has been reported that some HSCs produce only megakaryocytes (Rodriguez-Fraticelli et al., 2018; Carrelha et al., 2018), while others produce only myeloid cells, megakaryocytes, and erythrocytes (Yamamoto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "df7d10fb-98d7-4532-86f2-48d0c85c5dd8",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C92",
+      "claim": "Single-cell transplantations have revealed that HSCs are heterogeneous in differentiation and proliferative output (Benz et al., 2012; M\u00fcller-Sieburg et al., 2002; Sieburg et al., 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, single-cell transplantations have revealed that HSCs are heterogeneous in differentiation and proliferative output (Benz et al., 2012; M\u00fcller-Sieburg et al., 2002; Sieburg et al., 2011), and transplantation experiments using populations of HSCs labeled with different fluorescent proteins have suggested that this heterogeneity might be epigenetically determined (Vwc et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "f25d23cb-8bee-495f-b659-40c3383fec79",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C93",
+      "claim": "Transplantation experiments using populations of HSCs labeled with different fluorescent proteins have suggested that heterogeneity in HSCs might be epigenetically determined (Vwc et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, single-cell transplantations have revealed that HSCs are heterogeneous in differentiation and proliferative output (Benz et al., 2012; M\u00fcller-Sieburg et al., 2002; Sieburg et al., 2011), and transplantation experiments using populations of HSCs labeled with different fluorescent proteins have suggested that this heterogeneity might be epigenetically determined (Vwc et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "c72e1fe2-80d0-419a-88a0-e5a02799cf98",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C94",
+      "claim": "Transplanted barcoded MPPs have been reported to produce heterogeneous patterns of restricted cell types (Naik et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, transplanted barcoded MPPs have been reported to produce heterogeneous patterns of restricted cell types (Naik et al., 2013), suggesting that lineage restriction may occur early in the hematopoietic tree, in the pool of HSCs and MPPs (Peri\u00e9 and Duffy, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "968073ee-a17a-48b8-b4b4-ca77de0b359a",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C95",
+      "claim": "Lineage restriction may occur early in the hematopoietic tree, in the pool of HSCs and MPPs (Peri\u00e9 and Duffy, 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, transplanted barcoded MPPs have been reported to produce heterogeneous patterns of restricted cell types (Naik et al., 2013), suggesting that lineage restriction may occur early in the hematopoietic tree, in the pool of HSCs and MPPs (Peri\u00e9 and Duffy, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The suggestion is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "3a0b2705-fbd8-4fb6-87f1-4b0bfd0773b9",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C96",
+      "claim": "BM cells were obtained from wild-type C57BL/6 mice of 8\u201316 weeks of age.",
+      "claim_type": "EXPLICIT",
+      "source": "BM cells were obtained from wild-type C57BL/6 of 8\u201316 weeks of age by bone flushing of femur tibia and iliac crest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The experimental procedure is described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "5f87c622-06b2-4577-9ac6-43735cba889f",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C97",
+      "claim": "BM cells were MACS enriched for c-Kit+ cells using CD117 MicroBeads Ultrapure.",
+      "claim_type": "EXPLICIT",
+      "source": "BM cells were MACS enriched for c-Kit+ cells using CD117 MicroBeads Ultrapure (Miltenyi Biotec cat #130-091-224) according to the manufacturer's protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The experimental procedure is described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "66a87073-2f7c-4b07-9f1b-e5e9c0736921",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C98",
+      "claim": "Cells were cultured at 37\u00b0C under 5% CO2 in 100 \u00b5l of StemSpan serum-free expansion medium supplemented with cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were cultured at 37\u00b0C under 5% CO2 in 100 \u00b5l of StemSpan serum-free expansion medium (Stemcell Technologies 9650) supplemented with 50 ng/ml murine recombinant thrombopoietin (TPO, Sigma-Aldrich SRP3236-10UG) and 100 ng/ml stem cell factor (SCF) or 50 ng/ml TPO, 100 ng/ml SCF, 20 ng/ml IL-3, and 100 ng/ml IL-6 (Ema et al., 2000; Roch et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The experimental procedure is described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "a1fe6e15-ec70-4ce1-9d81-40b4ac190181",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C99",
+      "claim": "The recovery estimate per well was circa 70% based on beads-based estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells from each well were analyzed at 4\u00b0C using a ZE5 Flow cytometer (BioRad) with a recovery estimate of circa 70% per well (beads-based estimate, data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The recovery rate is stated based on experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "6ebcdbad-1cf6-4a59-9fa5-25383bb405cd",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C100",
+      "claim": "UMAP was performed on arcsinh(x/100) transformed fluorescence intensity values of surface expression markers from all experiments using the R implementation in the UMAP package (version 0.2.0.0) with default parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "UMAP (McInnes and Healy, 2018) was performed on arcsinh(x/100) transformed fluorescence intensity values of surface expression markers from all experiments using the R implementation in the UMAP package (version 0.2.0.0) with default parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The computational method is described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "551a6d69-eb10-4fee-afd7-b50489e77b81",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "claim_id": "C101",
+      "claim": "All experimental procedures were approved by the local ethics committee (Comit\u00e9 d'Ethique en exp\u00e9rimentation animale de l'Institut Curie) under approval number DAP 2016 006.",
+      "claim_type": "EXPLICIT",
+      "source": "All the experimental procedures were approved by the local ethics committee (Comit\u00e9 d'Ethique en exp\u00e9rimentation animale de l'Institut Curie) under approval number DAP 2016 006.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The ethical approval is stated in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a high-throughput method to simultaneously track family membership, division number, and cell phenotype in HSPCs. Bone marrow cells were isolated, enriched for c-Kit+ cells, stained with antibodies and CellTrace dyes in four distinct combinations, then single cells from three HSPC populations (SLAM-HSC, ST-HSC, MPP) were sorted into wells and cultured for 24 or 48 hours before analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 and C96-C98, C101 describe a well-documented experimental workflow with appropriate controls and ethical approval. The method is illustrated in Figure 1 and described in detail in the Materials and Methods. The approach is technically sound and builds on established techniques (CellTrace dyes, flow cytometry, index sorting).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "dfc8e572-67cb-4771-98ef-bdb2457cf404",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "From 600 seeded cells of each ancestor type, recovery rates were 71% for SLAM-HSCs (358 families, 648 cells), 69% for ST-HSCs (343 families, 592 cells), and 49% for MPPs (246 families, 362 cells). Only 2.8% of recovered families (27 families) were excluded due to cell numbers inconsistent with single-cell origin. Recovery per well was estimated at ~70%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9, C99 provide quantitative recovery data that demonstrates the technical success of the method. The low exclusion rate (2.8%) validates the single-cell sorting fidelity. The recovery estimates are clearly stated and the data shown in Figure 2A supports these numbers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "399a117b-0f73-4da1-aa36-600aa6fbfd00",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A diversity of myeloid cell types was observed from all three ancestor types, including GMP, CMP/MEP, PreMegE, and late MPs. SLAM-HSCs and ST-HSCs rarely differentiated into Flt3+ MPPs. Some ST-HSCs and MPPs acquired CD150 expression (not due to antibody carryover). IL-3/IL-6 addition did not affect SLAM-HSC differentiation patterns but significantly altered ST-HSC and MPP differentiation, particularly affecting MPP progeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16, C24 describe differentiation outcomes supported by data in Figures 2A, 2D and appropriate controls (Figure 2\u2014figure supplement 2). Statistical testing via permutation tests is appropriate. The functional validation of cell types in methylcellulose culture (Figure 2B,C) strengthens phenotypic assignments. The observation that IL-3/IL-6 differentially affects cell types is consistent with prior literature (C16 cites Lui et al., 2014).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "dbc998fb-74e0-4aaf-a032-2638bc21a769",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Substantial heterogeneity in division was observed between families (0-6 divisions). At 24h most cells were undivided or had divided once; by 48h over 90% had divided at least once. IL-3/IL-6 significantly increased proliferation for all three ancestor types. A substantial fraction of undivided ancestors differentiated (36.5% SLAM-HSCs, 61.1% ST-HSCs, 35.6% MPPs without IL-3/IL-6), with SLAM-HSCs preferentially differentiating to PreMegE. High Sca-1 expression correlated with reduced differentiation in undivided SLAM-HSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 are supported by data in Figures 2A, 2E, 2F and Figure 2\u2014figure supplement 3. The observations are consistent with previous reports (C18 cites Roch et al., 2017; C21 cites Roch et al., 2015 and Grinenko et al., 2018; C22 cites Grinenko et al., 2018; C23 cites Schulte et al., 2015). Statistical analyses using permutation tests are appropriate for the data structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "08ad18b4-8362-4ba8-b997-85efc8fa4e7c",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "After first division, 70.7% of cells had symmetric fates. MPPs showed mostly symmetric undifferentiated fates (51.4%), ST-HSCs mostly symmetric differentiated fates (59.5%), and SLAM-HSCs showed both symmetric (32.1%) and asymmetric (10.7%) undifferentiated fates. Asymmetric fates occurred in 28.6% of SLAM-HSCs, 28.6% of ST-HSCs, and 31.4% of MPPs. No statistical difference was found between culture conditions (\u00b1IL-3/IL-6) for symmetric vs asymmetric fate patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 quantify first division outcomes from experimental data shown in Figure 2G. The proportions are clearly calculated and the observation of ~30% asymmetric division is consistent with previous reports (C29 cites Suda et al., 1984). The statistical analysis (C30) is appropriate. However, the authors acknowledge that asymmetric fate cannot be distinguished from symmetric fate followed by differentiation without division of one daughter cell, which is an important caveat.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "5c5c16bb-5026-4c84-bce7-e00b36e3dadd",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Families showed high concordance in division progression: 81% of families that divided more than once had all cells in the same generation (range=0), and only 1.8% had cells more than one generation apart. Mathematical modeling accounting for sampling effects estimated correlation coefficients of 70-90% for division decisions within families (except MPPs without IL-3/IL-6). Division progression is highly concordant within families but heterogeneous between families.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by data in Figure 2H and mathematical modeling described in Materials and Methods. The beta-binomial model appropriately accounts for sampling effects (recovery rate ~70%). The high correlation coefficients (70-90%) quantitatively demonstrate within-family concordance. The modeling approach is mathematically sound and the best-fit parameters are shown to recapitulate the observed range distributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "4df1978e-9605-49e3-90f9-ec3ab970e44b",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Differentiation generally progressed with division. UMAP visualization revealed smooth transitions from SLAM-HSCs to differentiated cells, with GMPs/MPs on the top left and CMP/MEP/PreMegE on the top right. More differentiated cells appeared at 48h than 24h, suggesting 24-48h is required for full differentiation to Sca1- progenitors. All three ancestor types remained present at 48h. SLAM-HSCs were primed toward CMP/MEP/PreMegE production, MPPs toward GMPs, and ST-HSCs showed even distribution. PreMegEs were generated from SLAM-HSCs without division or in 1-3 divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C43 describe UMAP analysis of differentiation trajectories shown in Figures 3A-D. The UMAP method is appropriate for visualizing high-dimensional flow cytometry data. The observation that differentiation progresses with division is consistent with prior work (C35 cites Upadhaya et al., 2018). The smooth transitions and lineage priming patterns are clearly visible in the figures. The computational methods are adequately described (C100).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "a38c0539-c4ed-4eec-ae8e-88589218d786",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At 24h most families contained only one cell type, but at 48h more families produced multiple cell types, indicating downstream asymmetries occur after largely symmetric first divisions. Permutation tests showed families exhibited significantly more similarity in cell types than expected by chance at both timepoints. Within-family similarity is visible as co-localization on UMAP. HSPC families are highly concordant in division and share similar differentiation outcomes, while population-level diversity arises from heterogeneity across families.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 are supported by data in Figures 4A-C. The permutation test framework is appropriate for testing family effects while accounting for familial dependencies. The statistical significance is clearly demonstrated. The UMAP visualization (Figure 4C) provides visual confirmation of within-family similarity. The conclusion (C48) appropriately synthesizes the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "7e2f22b8-437b-492a-826b-fcc094fdffb0",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ancestral surface marker expression correlated with offspring marker expression, supporting that ancestral markers are instructive for within-family homogeneity. For SLAM-HSCs, CD48 correlated positively with division (strongest at 24h), Sca-1 negatively, and c-Kit positively at 48h. For ST-HSCs and MPPs, phenotypic markers showed no strong correlation with division progression, indicating need for other markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 are supported by correlation analysis shown in Figure 4\u2014figure supplement 1A-B and statistical testing in Figure 4D. The Jonckheere trend test is appropriate for testing ordered relationships. The finding that ancestral expression predicts offspring behavior is important, but the authors appropriately note limitations (C55, C77) - markers don't fully explain ST-HSC/MPP division concordance. Spearman correlations are reported with confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "5d97282e-1284-4987-a708-d02f632f4b05",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For SLAM-HSCs, Sca-1 expression positively correlated with self-renewal and negatively with PreMegE production at both timepoints and conditions. c-Kit showed inverse dependency to Sca-1 at 48h. CD48 correlated negatively with self-renewal and positively with PreMegE production when IL-3/IL-6 were added. High Sca-1 and low c-Kit expression lead to less division and differentiation, potentially resulting in better engraftment. CD48's relationship to differentiation is dependent on extrinsic signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 describe correlations between ancestral marker expression and differentiation outcomes for SLAM-HSCs, supported by data in Figure 4E and Figure 4\u2014figure supplement 2. The conclusions are consistent with multiple prior studies (C59 cites Wilson et al., 2015; Grinenko et al., 2014; Morcos et al., 2017; Shin et al., 2014). The observation that CD48's effect depends on cytokines (C60) is novel and appropriately contrasts with prior literature (cites Pietras et al., 2015; Akinduro et al., 2018).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "32b4f019-277a-4abc-8ced-3ade12197692",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "For ST-HSCs, ancestral CD48 and Sca-1 levels correlated negatively and positively, respectively, with de-differentiation to SLAM-HSC in IL-3/IL-6 conditions at both timepoints. Differentiation to GMP (occurring only at 48h) correlated positively with CD48 and negatively with Sca-1. GMP differentiation depends on parental CD48/Sca-1 levels, while de-differentiation to SLAM-HSC depends on both extrinsic factors (IL-3/IL-6) and intrinsic ancestral CD48/Sca-1 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by statistical analysis shown in Figures 4E and Figure 4\u2014figure supplement 2. The observation that GMP differentiation correlates with CD48/Sca-1 is consistent with prior work (C62 cites Morcos et al., 2017). The distinction between intrinsic and extrinsic dependencies (C63) is an important inference appropriately drawn from the differential effects of IL-3/IL-6 on different differentiation outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "e035c19c-3cfe-49b2-ac1a-09937d2b3c44",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MPP to GMP differentiation (observed by 48h) correlated negatively with ancestral Sca-1 in both cocktails and with Flt3 only without IL-3/IL-6. With IL-3/IL-6, MPP to GMP differentiation positively correlated with c-Kit. MPP to CMP/MEP differentiation occurred only at 48h without IL-3/IL-6 and correlated positively with c-Kit. GMP differentiation from MPP depends on intrinsic Sca-1 levels, while CMP/MEP differentiation depends on both extrinsic factors (IL-3/IL-6) and intrinsic c-Kit levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by statistical analysis in Figure 4E. The negative correlation with Sca-1 is consistent with prior work (C64 cites Morcos et al., 2017). The differential dependencies on intrinsic vs extrinsic factors (C68) represent an important mechanistic insight appropriately inferred from the condition-specific correlations observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "a4241bfa-0bc0-4a0e-b730-91c8f69a95ec",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Concordance in division and similarity in fate within families is partially explained by ancestral surface marker expression, but both intrinsic and extrinsic factors direct familial fate. Despite population-level heterogeneity, offspring from single ancestors are highly concordant in division and exhibit familial effects on differentiation. Restriction in cell types within families is propagated primarily through symmetric first divisions. The overall collection of cell types is composed of homogeneous families from heterogeneous ancestors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 synthesize the major findings of the study. These conclusions are well-supported by the collective evidence from division concordance (C31-C34), differentiation similarity (C44-C48), and marker correlations (C49-C68). The conclusion that diversity arises from heterogeneous families rather than within-family diversification (C72) is a key conceptual advance supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "31edd357-2e91-4734-bcf0-18f7d6eea55c",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Current assumptions in the field are that cell type diversity results from diversification within every family and that cells behave independently (as assumed by trajectory inference methods). The findings establish that unmeasured familial dependencies exist and call for revision of the independence assumption. Ancestral surface markers partially predict familial properties, but markers explaining ST-HSC/MPP division progression are not contained within the phenotyping panel. Extrinsic factors like cytokines can alter familial effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 place the findings in context of current field assumptions and identify limitations. The characterization of current assumptions (C73-C74) is accurate and appropriately cited (Trapnell et al., 2014; Bendall et al., 2014). The call for revision (C75) is justified by the strong evidence for familial dependencies and is consistent with prior lineage priming observations (cites M\u00fcller-Sieburg et al., 2002; Peri\u00e9 and Duffy, 2016; Paul et al., 2016; Hoppe et al., 2016). The acknowledgment of limitations (C77) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "667be30c-4255-4779-aa82-1d4fcd0be9f9",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The broad range of HSPC engraftment and proliferation capacities in transplantation could be consequences of heterogeneity in engrafted families. Altered culture conditions might reduce or enhance between-family heterogeneity and possibly improve transplantation outcomes if leading to more self-renewal divisions. Changing the composition of committed HSPC populations might alter lineage production balance with therapeutic applications for leukemia and genetic immune disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C81 are speculative suggestions for future applications. While these are reasonable hypotheses based on the findings, they are explicitly speculative (evidence_type: SPECULATION) and have not been tested. The suggestions are plausible but would require substantial additional experimental validation including in vivo transplantation studies to be considered supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work has established that HSCs can sequentially reconstitute blood in multiple hosts, must self-renew through symmetric and asymmetric division influenced by extrinsic signals, and that MPPs can self-renew. HSCs can differentiate without division. Recent studies show HSCs are heterogeneous in lineage output, with most being lineage-restricted or biased. Some HSCs produce only megakaryocytes or only myeloid/megakaryocyte/erythroid cells. MPPs also show heterogeneous restricted lineage patterns, suggesting early lineage restriction in the HSC/MPP pool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C95 summarize prior literature to provide context for the current study. All claims are appropriately cited with specific references. This represents accurate characterization of the field's current understanding based on published work. These are background claims rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    },
+    {
+      "id": "cf874804-ab9c-4d3a-b64c-06f4fff82414",
+      "content_id": "add843e1-c21d-4a0f-8b6b-b19811639a67",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "UMAP was performed on arcsinh(x/100) transformed fluorescence intensity values using the R UMAP package (version 0.2.0.0) with default parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C100 describes the computational method for UMAP analysis. The transformation and parameters are clearly specified, allowing reproducibility. The arcsinh transformation is appropriate for flow cytometry data. However, the use of default parameters without justification or exploration of parameter sensitivity is a minor limitation. The version number is specified which aids reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:33:59.159616Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c861a395-bddc-4e27-92ef-a4f54b1b1614",
+      "result_id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f"
+    },
+    {
+      "claim_id": "75632a9a-d02a-482a-84b8-4d2c6fa58180",
+      "result_id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f"
+    },
+    {
+      "claim_id": "f26189e6-1a35-40f9-a01a-21048a3e9711",
+      "result_id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f"
+    },
+    {
+      "claim_id": "f62f7e21-75d8-4249-b982-b27271bf4d11",
+      "result_id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f"
+    },
+    {
+      "claim_id": "0fd05ff4-d44f-4887-acd5-a86139509f6d",
+      "result_id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f"
+    },
+    {
+      "claim_id": "3a0b2705-fbd8-4fb6-87f1-4b0bfd0773b9",
+      "result_id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f"
+    },
+    {
+      "claim_id": "5f87c622-06b2-4577-9ac6-43735cba889f",
+      "result_id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f"
+    },
+    {
+      "claim_id": "66a87073-2f7c-4b07-9f1b-e5e9c0736921",
+      "result_id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f"
+    },
+    {
+      "claim_id": "551a6d69-eb10-4fee-afd7-b50489e77b81",
+      "result_id": "dc9fef38-f6ef-47cf-86bd-742c1dff2f2f"
+    },
+    {
+      "claim_id": "e06b8bc6-06fb-43c0-bfb8-5a450934fb8b",
+      "result_id": "dfc8e572-67cb-4771-98ef-bdb2457cf404"
+    },
+    {
+      "claim_id": "59b638f6-f58e-46c6-8ae8-ad93aadc6f7e",
+      "result_id": "dfc8e572-67cb-4771-98ef-bdb2457cf404"
+    },
+    {
+      "claim_id": "11a922d4-0b9d-4d92-91d1-a19d7f7a981f",
+      "result_id": "dfc8e572-67cb-4771-98ef-bdb2457cf404"
+    },
+    {
+      "claim_id": "c8057a18-155e-4198-8e36-7b8952882cce",
+      "result_id": "dfc8e572-67cb-4771-98ef-bdb2457cf404"
+    },
+    {
+      "claim_id": "a1fe6e15-ec70-4ce1-9d81-40b4ac190181",
+      "result_id": "dfc8e572-67cb-4771-98ef-bdb2457cf404"
+    },
+    {
+      "claim_id": "d87a7eef-21d4-426a-ad88-9bec8bc6d1d6",
+      "result_id": "399a117b-0f73-4da1-aa36-600aa6fbfd00"
+    },
+    {
+      "claim_id": "3a6bbcc0-57a5-410b-8cec-234a9c941c4f",
+      "result_id": "399a117b-0f73-4da1-aa36-600aa6fbfd00"
+    },
+    {
+      "claim_id": "0fbcbcff-3644-43ec-88d6-b8f84c0e5dee",
+      "result_id": "399a117b-0f73-4da1-aa36-600aa6fbfd00"
+    },
+    {
+      "claim_id": "cda1d646-d5db-45fc-8599-73e877e6dd8e",
+      "result_id": "399a117b-0f73-4da1-aa36-600aa6fbfd00"
+    },
+    {
+      "claim_id": "7ef56b7a-1909-40c6-8eec-9deaad80dcd2",
+      "result_id": "399a117b-0f73-4da1-aa36-600aa6fbfd00"
+    },
+    {
+      "claim_id": "33eabd94-814d-47d2-99a9-d98863cb06ef",
+      "result_id": "399a117b-0f73-4da1-aa36-600aa6fbfd00"
+    },
+    {
+      "claim_id": "43f2a9fd-3555-4771-9e8a-e64df579fb54",
+      "result_id": "399a117b-0f73-4da1-aa36-600aa6fbfd00"
+    },
+    {
+      "claim_id": "323b2120-2850-4dec-b1ed-462d4c87da29",
+      "result_id": "399a117b-0f73-4da1-aa36-600aa6fbfd00"
+    },
+    {
+      "claim_id": "fe3e21f1-6162-4288-959f-1f8c1ef346a5",
+      "result_id": "dbc998fb-74e0-4aaf-a032-2638bc21a769"
+    },
+    {
+      "claim_id": "1301d843-2b8b-4add-8f1b-1d06f8ec8ee2",
+      "result_id": "dbc998fb-74e0-4aaf-a032-2638bc21a769"
+    },
+    {
+      "claim_id": "32995b39-f58d-4eb6-9cce-e5294ca02114",
+      "result_id": "dbc998fb-74e0-4aaf-a032-2638bc21a769"
+    },
+    {
+      "claim_id": "84083369-c550-4fb1-aced-2153dccf3c4e",
+      "result_id": "dbc998fb-74e0-4aaf-a032-2638bc21a769"
+    },
+    {
+      "claim_id": "9e5317b0-5c3c-4e68-89c4-37b5af4c9e68",
+      "result_id": "dbc998fb-74e0-4aaf-a032-2638bc21a769"
+    },
+    {
+      "claim_id": "0ef0f1f3-14bb-42f7-b0b5-ea7f83bfe4d1",
+      "result_id": "dbc998fb-74e0-4aaf-a032-2638bc21a769"
+    },
+    {
+      "claim_id": "d2a00325-d443-4234-b889-bde126fa9421",
+      "result_id": "dbc998fb-74e0-4aaf-a032-2638bc21a769"
+    },
+    {
+      "claim_id": "5c812705-005c-4314-9938-203480904b9f",
+      "result_id": "08ad18b4-8362-4ba8-b997-85efc8fa4e7c"
+    },
+    {
+      "claim_id": "60165c27-e0c0-4e2f-9257-b32a8b75ebab",
+      "result_id": "08ad18b4-8362-4ba8-b997-85efc8fa4e7c"
+    },
+    {
+      "claim_id": "2c54faca-e3bb-477f-b859-c4284a87bd08",
+      "result_id": "08ad18b4-8362-4ba8-b997-85efc8fa4e7c"
+    },
+    {
+      "claim_id": "9d97a58e-1bab-46c6-8026-6e7ff66773c5",
+      "result_id": "08ad18b4-8362-4ba8-b997-85efc8fa4e7c"
+    },
+    {
+      "claim_id": "d26da7e9-63f2-42ef-8e99-6a23e64f43c5",
+      "result_id": "08ad18b4-8362-4ba8-b997-85efc8fa4e7c"
+    },
+    {
+      "claim_id": "37b9574c-027e-49c8-8767-59f056962801",
+      "result_id": "08ad18b4-8362-4ba8-b997-85efc8fa4e7c"
+    },
+    {
+      "claim_id": "0fde17b3-31fe-4e44-b813-f9e0ccae0fbd",
+      "result_id": "5c5c16bb-5026-4c84-bce7-e00b36e3dadd"
+    },
+    {
+      "claim_id": "19007800-47d8-4bb1-b643-18f6e215fb57",
+      "result_id": "5c5c16bb-5026-4c84-bce7-e00b36e3dadd"
+    },
+    {
+      "claim_id": "a4a54ef3-4978-452e-b16f-b7fa275ab9ba",
+      "result_id": "5c5c16bb-5026-4c84-bce7-e00b36e3dadd"
+    },
+    {
+      "claim_id": "2f5d202b-7a08-431b-b36d-0b99c283ba0f",
+      "result_id": "5c5c16bb-5026-4c84-bce7-e00b36e3dadd"
+    },
+    {
+      "claim_id": "afde476f-27db-46c3-a5a4-04b7e4b30e83",
+      "result_id": "4df1978e-9605-49e3-90f9-ec3ab970e44b"
+    },
+    {
+      "claim_id": "5b5ced3e-e5ae-491d-8d16-832b4d2e4fb8",
+      "result_id": "4df1978e-9605-49e3-90f9-ec3ab970e44b"
+    },
+    {
+      "claim_id": "af8572e9-c257-46cb-831a-2b648e928006",
+      "result_id": "4df1978e-9605-49e3-90f9-ec3ab970e44b"
+    },
+    {
+      "claim_id": "2bd06a83-ff6d-433c-b525-0f9891c0d089",
+      "result_id": "4df1978e-9605-49e3-90f9-ec3ab970e44b"
+    },
+    {
+      "claim_id": "1efcefa9-cff8-4023-a03a-8358630e349a",
+      "result_id": "4df1978e-9605-49e3-90f9-ec3ab970e44b"
+    },
+    {
+      "claim_id": "1fbe5c17-84f4-4c32-be52-e682a1c353a9",
+      "result_id": "4df1978e-9605-49e3-90f9-ec3ab970e44b"
+    },
+    {
+      "claim_id": "018d92ea-6ed3-4dbb-b62e-478c5542c8b3",
+      "result_id": "4df1978e-9605-49e3-90f9-ec3ab970e44b"
+    },
+    {
+      "claim_id": "10cd4580-53f9-45ce-867c-f68b3c71fad4",
+      "result_id": "4df1978e-9605-49e3-90f9-ec3ab970e44b"
+    },
+    {
+      "claim_id": "16ee1bfe-c1c5-4d31-913b-0c6587f198c0",
+      "result_id": "4df1978e-9605-49e3-90f9-ec3ab970e44b"
+    },
+    {
+      "claim_id": "ebffa4ba-f81a-4790-9863-809cf42b61b9",
+      "result_id": "a38c0539-c4ed-4eec-ae8e-88589218d786"
+    },
+    {
+      "claim_id": "2d56fa49-865c-45f5-ab4c-39c777f1ea01",
+      "result_id": "a38c0539-c4ed-4eec-ae8e-88589218d786"
+    },
+    {
+      "claim_id": "08fddb65-dddb-4e9e-af0c-afae1898e607",
+      "result_id": "a38c0539-c4ed-4eec-ae8e-88589218d786"
+    },
+    {
+      "claim_id": "1fe7201f-2727-480b-9d8f-4dfc99ee9ebd",
+      "result_id": "a38c0539-c4ed-4eec-ae8e-88589218d786"
+    },
+    {
+      "claim_id": "fe0d8f07-0be7-433c-ae53-cb2f1ef5543b",
+      "result_id": "a38c0539-c4ed-4eec-ae8e-88589218d786"
+    },
+    {
+      "claim_id": "474210e4-2337-4e98-b66d-6e25d8a1cd02",
+      "result_id": "7e2f22b8-437b-492a-826b-fcc094fdffb0"
+    },
+    {
+      "claim_id": "de9717ad-a83d-4566-8a13-364594af0cce",
+      "result_id": "7e2f22b8-437b-492a-826b-fcc094fdffb0"
+    },
+    {
+      "claim_id": "1c0a8167-dcbc-4e5f-af65-8b81481cd985",
+      "result_id": "7e2f22b8-437b-492a-826b-fcc094fdffb0"
+    },
+    {
+      "claim_id": "84c70ed7-7490-4db8-aedb-6798c12f5c5a",
+      "result_id": "7e2f22b8-437b-492a-826b-fcc094fdffb0"
+    },
+    {
+      "claim_id": "4f671489-4e94-4063-8034-e17702cea402",
+      "result_id": "7e2f22b8-437b-492a-826b-fcc094fdffb0"
+    },
+    {
+      "claim_id": "bc1be137-21c9-4514-ba5f-0f63d8e83d0d",
+      "result_id": "7e2f22b8-437b-492a-826b-fcc094fdffb0"
+    },
+    {
+      "claim_id": "33cd7796-a28e-4a9e-9ef8-01cbd09fd1b1",
+      "result_id": "7e2f22b8-437b-492a-826b-fcc094fdffb0"
+    },
+    {
+      "claim_id": "9823f4fc-27b5-4363-8320-5eebdcef526d",
+      "result_id": "5d97282e-1284-4987-a708-d02f632f4b05"
+    },
+    {
+      "claim_id": "0af62a39-2a52-49bc-bce4-fa3fcf0590e0",
+      "result_id": "5d97282e-1284-4987-a708-d02f632f4b05"
+    },
+    {
+      "claim_id": "bfe7d0af-d637-4aa3-85ab-748f4b827dc2",
+      "result_id": "5d97282e-1284-4987-a708-d02f632f4b05"
+    },
+    {
+      "claim_id": "1d14325d-24a6-459b-84a6-2129225ee976",
+      "result_id": "5d97282e-1284-4987-a708-d02f632f4b05"
+    },
+    {
+      "claim_id": "cf503202-ffa9-4fe8-8f26-040651199038",
+      "result_id": "5d97282e-1284-4987-a708-d02f632f4b05"
+    },
+    {
+      "claim_id": "82db155b-4330-48b3-baa4-d403988277fd",
+      "result_id": "32b4f019-277a-4abc-8ced-3ade12197692"
+    },
+    {
+      "claim_id": "92c3fced-e056-42f1-9990-368549a930cc",
+      "result_id": "32b4f019-277a-4abc-8ced-3ade12197692"
+    },
+    {
+      "claim_id": "96471f30-60ca-4861-8060-bb511261350d",
+      "result_id": "32b4f019-277a-4abc-8ced-3ade12197692"
+    },
+    {
+      "claim_id": "88ad7d42-f048-42bf-921e-1b3a82548071",
+      "result_id": "e035c19c-3cfe-49b2-ac1a-09937d2b3c44"
+    },
+    {
+      "claim_id": "97be2e25-1e6f-4fe6-bf70-7fd226badcd5",
+      "result_id": "e035c19c-3cfe-49b2-ac1a-09937d2b3c44"
+    },
+    {
+      "claim_id": "aefdb623-5c46-41b3-8176-7287d9760cb1",
+      "result_id": "e035c19c-3cfe-49b2-ac1a-09937d2b3c44"
+    },
+    {
+      "claim_id": "a81638cf-d878-4923-9d85-40a9a6adc009",
+      "result_id": "e035c19c-3cfe-49b2-ac1a-09937d2b3c44"
+    },
+    {
+      "claim_id": "326cc7c9-3751-48c9-82e6-31f3f265a013",
+      "result_id": "e035c19c-3cfe-49b2-ac1a-09937d2b3c44"
+    },
+    {
+      "claim_id": "6d9c5014-3ad2-4275-94c3-4c7a7e1781f7",
+      "result_id": "a4241bfa-0bc0-4a0e-b730-91c8f69a95ec"
+    },
+    {
+      "claim_id": "55c9373d-e3f8-4f4c-bff4-68fe7f191e1e",
+      "result_id": "a4241bfa-0bc0-4a0e-b730-91c8f69a95ec"
+    },
+    {
+      "claim_id": "8f6bac9d-d158-422b-b630-57eb2b9b061f",
+      "result_id": "a4241bfa-0bc0-4a0e-b730-91c8f69a95ec"
+    },
+    {
+      "claim_id": "26099276-3443-4620-b9af-33512743f77d",
+      "result_id": "a4241bfa-0bc0-4a0e-b730-91c8f69a95ec"
+    },
+    {
+      "claim_id": "a2e78abb-8e3e-4729-82c2-c68aab55695b",
+      "result_id": "31edd357-2e91-4734-bcf0-18f7d6eea55c"
+    },
+    {
+      "claim_id": "f9292ab0-fc9b-42f3-a46e-f2e829f0408e",
+      "result_id": "31edd357-2e91-4734-bcf0-18f7d6eea55c"
+    },
+    {
+      "claim_id": "f34bc77b-08b4-4ea5-bacf-3f426d66f902",
+      "result_id": "31edd357-2e91-4734-bcf0-18f7d6eea55c"
+    },
+    {
+      "claim_id": "32314a21-f309-416f-bda2-c60fc78ec556",
+      "result_id": "31edd357-2e91-4734-bcf0-18f7d6eea55c"
+    },
+    {
+      "claim_id": "7851aead-d6db-406e-b1d1-07c35e216e00",
+      "result_id": "31edd357-2e91-4734-bcf0-18f7d6eea55c"
+    },
+    {
+      "claim_id": "fce15d2c-98e6-409a-bfa0-3c6595eef618",
+      "result_id": "31edd357-2e91-4734-bcf0-18f7d6eea55c"
+    },
+    {
+      "claim_id": "08ea5888-7fd0-4603-9129-c96461abf218",
+      "result_id": "667be30c-4255-4779-aa82-1d4fcd0be9f9"
+    },
+    {
+      "claim_id": "6c29a349-8403-48b6-923d-a4c4184c7935",
+      "result_id": "667be30c-4255-4779-aa82-1d4fcd0be9f9"
+    },
+    {
+      "claim_id": "f918f507-9d0b-4f01-a4b6-874f684f0130",
+      "result_id": "667be30c-4255-4779-aa82-1d4fcd0be9f9"
+    },
+    {
+      "claim_id": "2351a61b-117f-4ef7-8c9f-4018a703b0b6",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "7caff0d2-3c48-48f7-b43e-da6a4765f360",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "1cc53d89-d677-427d-8338-82db86cc6c0b",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "e2454326-ed4f-49b0-9346-135394c034aa",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "f3493542-1e74-4f58-b69a-89b6bc2ef060",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "05018d51-01d9-4aaf-83e2-5ec35df3d0c5",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "4ad549e9-5fe0-4bab-b78d-898d722adb92",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "a47c65be-6572-4a7a-896b-972bcc225fa9",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "3c7e45ff-b165-4123-825a-8be6e931397c",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "44dcbcce-756a-4ba7-9b0f-4763d0409ec4",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "df7d10fb-98d7-4532-86f2-48d0c85c5dd8",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "f25d23cb-8bee-495f-b659-40c3383fec79",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "c72e1fe2-80d0-419a-88a0-e5a02799cf98",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "968073ee-a17a-48b8-b4b4-ca77de0b359a",
+      "result_id": "f7ee9aa9-4409-4eec-a4b4-6840d9702d17"
+    },
+    {
+      "claim_id": "6ebcdbad-1cf6-4a59-9fa5-25383bb405cd",
+      "result_id": "cf874804-ab9c-4d3a-b64c-06f4fff82414"
+    }
+  ],
+  "comparisons": []
+}

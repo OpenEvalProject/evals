@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors constructed a library of 24 yeast strains with engineered capabilities for sending, receiving, and responding to three molecular signals (\u03b1-factor, auxin, and \u03b2-estradiol). This involved multiple genetic modifications including BAR1 and FAR1 knockouts, POG1 overexpression, STE2 overexpression, integration of auxin efflux pump PGP1, and implementation of GH3.3 for auxin inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C12-C19 collectively describe the construction and optimization of the strain library with detailed experimental validation. The genetic modifications are well-documented with appropriate citations and experimental data (mass spectrometry, fluorescence measurements) supporting the functional improvements achieved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The sensor strains achieve ON/OFF fold-changes ranging from 3-fold to 42-fold, with signal orthogonality demonstrated by variations within 11% when testing pairwise combinations of inducers at concentrations used in circuit experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C30 report quantitative characterization of sensor performance. The fold-change values are explicitly stated with specific examples, and orthogonality testing provides evidence that the three signaling pathways do not significantly interfere with each other within the operational range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors demonstrate that multicellular consortia dynamics can be predicted from mathematical models of constituent parts, showing modularity achieved through cell-cell communication that avoids crosstalk. Experimental measurements closely track computational predictions across multiple circuit designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, C39, and C40 are supported by extensive experimental validation across two-strain, three-strain, and four-strain circuits shown in Figures 2-5. The models successfully predict behavior when strains are combined, and the agreement between predictions and experiments is demonstrated quantitatively throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36"
+    ],
+    "result": "Computational search over all two-, three-, and four-strain consortia identified strain combinations that realize target behaviors including logic gates, band-pass filters, and time pulses. Only 0.52% of topologies generated non-monotonic behaviors in time and 0.32% at steady state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35, and C36 describe the computational screening approach with specific quantitative results. The rarity of non-monotonic behaviors (0.52% and 0.32%) emphasizes the value of computational screening. Experimental validation of selected circuits (Figures 4-5) confirms the predictive power of this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Positive feedback circuits increased the nonlinearity (Hill coefficient) of responses: from 0.8\u00b10.0 to 1.5\u00b10.1 for \u03b1-factor and from 1.0\u00b10.4 to 1.2\u00b10.3 for auxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C32 report specific quantitative measurements with error estimates from experimental replicates. The increases in Hill coefficients are consistent with expected behavior of positive feedback circuits and are supported by dose-response data shown in Figure 3A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "A mutual-repression topology was initially attempted for bistability, but both modeling and experiments showed it generated only a single equilibrium regardless of strain stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 describe a negative result that motivated the four-strain bistable switch design. Both computational predictions and experimental data (Figure 3\u2014figure supplement 3) confirm the absence of bistability in the two-strain mutual repression circuit, demonstrating appropriate use of models to guide design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The highest performing time pulse topology is an incoherent feed-forward loop type 1, where \u03b1-factor activates both fluorescence and auxin synthesis, and auxin induces BAR1 production to degrade \u03b1-factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 correctly identifies the circuit topology with appropriate citation to Mangan and Alon, 2003. The experimental data in Figure 5C validates the time pulse behavior, though there is some time delay between model and experiment that the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Yeast natively synthesizes auxin at saturation, which explains baseline shifts observed in band-pass filter experiments that ran longer than usual (12-14 hours).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by citation to Rao et al., 2010 and provides a reasonable explanation for the observed baseline shift in experiments shown in Figure 5E-F. This demonstrates appropriate interpretation of experimental artifacts using literature knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The current major limitation of the system is the number of available signaling molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 represents a reasonable assessment of system limitations. With only three signaling molecules (\u03b1-factor, auxin, \u03b2-estradiol), the complexity of achievable circuits is inherently constrained. This is a valid limitation acknowledged by the authors in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors used standard experimental methods including lithium acetate transformation into S. cerevisiae MATa W303-1A, flow cytometry with BD Accuri C6, synthetic complete medium with 300 \u00b5M IAM, and Matlab-based parameter fitting and simulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 describe standard, well-established methods with appropriate citations and sufficient detail for reproducibility. The methods are appropriate for the experimental goals and consistent with practices in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Single-cell circuit engineering has limitations including inability to reuse parts, genetic burden that grows with circuit size, retroactivity, component crosstalk, and unintentional coupling through competition for shared gene expression resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 summarize established knowledge about limitations of single-cell synthetic biology, supported by appropriate citations to peer-reviewed literature (Nikolados et al., 2019; Del Vecchio et al., 2008; Del Vecchio, 2015; Zhang et al., 2021). These claims provide context for the multicellular approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Division of labor is common in nature, and mathematical modeling has shown that three cell populations can theoretically generate up to 100 different logic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 cite established knowledge (C10) and prior modeling work by Regot et al., 2011 (C11) to motivate the multicellular approach. These are appropriately cited background claims that establish the theoretical potential of multicellular systems.",
+    "result_type": "MINOR"
+  }
+]

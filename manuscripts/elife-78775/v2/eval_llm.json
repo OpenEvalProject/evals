@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The ANOSPP amplicon panel is a genus-wide targeted sequencing panel containing 62 nuclear loci and 2 Plasmodium mitochondrial loci, designed for large-scale monitoring of Anopheles species diversity. The panel uses a non-destructive, high-throughput workflow requiring <1% of whole mosquito DNA extraction, with 768 samples sequenced per Illumina MiSeq lane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C25-C29 describe the ANOSPP panel design and workflow, which are well-documented technical specifications. The panel composition (62 nuclear + 2 Plasmodium loci), non-destructive extraction, and sequencing throughput are clearly stated and represent established methodological details from prior work (Makunin et al., 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Combining information from 62 nuclear amplicons provides more sensitive and specific species assignment than single gene barcoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by the demonstrated performance of NNoVAE compared to single-locus methods. The multi-locus approach enables resolution of closely related species within complexes (C32, C42-C48) and provides hierarchical assignment with quantified confidence (C37-C41), which single-gene barcoding cannot achieve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C78",
+      "C79"
+    ],
+    "result": "NNoVAE is a k-mer-based hierarchical species assignment method consisting of a Nearest Neighbours (NN) step for genus-wide assignment and a Variational Autoencoder (VAE) step for resolving species complexes. The method uses 8-mers to avoid alignment issues with divergent sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C78-C79 describe the NNoVAE methodology. The two-step hierarchical approach is well-justified: NN for broad classification and VAE for fine-scale resolution within complexes. The choice of 8-mers is rationalized based on trade-offs between error tolerance and uniqueness (C82-C83). The k-mer approach naturally handles indels and structural variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The reference database NNv1 contains 186 samples representing 62 species across 4 subgenera, with samples requiring \u226510 amplified targets for inclusion. Six An. gambiae complex species were added from whole genome data to increase resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 describe the reference database composition. The database construction is clearly documented with specific sample counts and inclusion criteria. The integration of whole genome data for the An. gambiae complex is appropriately cited and justified for improving resolution in a medically important species group.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C94",
+      "C95"
+    ],
+    "result": "Three hierarchical levels of species-groups were defined using k-mer distance thresholds: fine (0.1), intermediate (0.3), and coarse (0.51). Samples are classified to a species-group if assignment proportion \u22650.8. The coarse level imperfectly corresponds to taxonomic series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C94-C95 describe the hierarchical classification scheme. The threshold selection is empirically justified based on correspondence to known taxonomic entities. The authors acknowledge limitations (C94-C95) where the coarse level groups Myzomyia/Neocellia series and splits Neomyzomyia, demonstrating appropriate critical assessment. The 0.8 classification threshold provides a reasonable confidence cutoff.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In leave-one-out testing on the reference database (excluding singleton species-groups), the NN method achieved 61.8% correct assignment at fine level, 98.8% at intermediate level, and 100% at coarse level. Average correct assignment proportions were 81.3%, 95.8%, and 99.4% respectively for well-represented species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C110-C112 report leave-one-out validation results. The hierarchical performance pattern (lower accuracy at fine level, higher at coarse) is expected and appropriate. The authors correctly exclude singleton species-groups from percentage calculations and separately report average assignment proportions. The lower fine-level accuracy is explained by the An. gambiae complex requiring VAE resolution (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "NNoVAE correctly classifies 98% of samples within the An. gambiae complex and 89% of samples outside the complex when samples have >80% amplicon coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C5 state classification accuracy on independent samples with >80% coverage, but the manuscript does not clearly present a dedicated independent test set with these specific coverage criteria and accuracy metrics. The validation set GCval v1 (C47-C48) shows 98.5% accuracy for An. gambiae complex samples assigned to single species, but this is for samples with \u226550 targets (not >80% coverage) and uses different denominators. The 89% figure for samples outside the complex is not explicitly documented in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The An. gambiae complex VAE classifier was trained on GCref v1 (787 samples from 9 species, 97% with \u226555 targets) and validated on GCval v1 (143 samples from 6 species). The VAE uses a 3-dimensional latent space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe the VAE training and validation datasets. Sample counts and species composition are clearly documented. The high coverage (97% with \u226555/62 targets) indicates good data quality. The 3D latent space choice is stated but detailed justification is deferred to Appendix 4. The dataset composition is appropriate for training a species classifier.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "On the validation set GCval v1, 94.4% (134/142) of samples were assigned to a single species, and 98.5% (132/134) of those were assigned concordantly with their species label.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 report VAE validation accuracy. The two-step reporting (proportion assigned to single species, then proportion correct among those) is appropriate and transparent. The 98.5% accuracy among assigned samples demonstrates strong performance. The authors note that 7/8 uncertain samples had <45 targets, appropriately linking uncertainty to data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C99",
+      "C100"
+    ],
+    "result": "The VAE projection reveals geographic population structure within species: Madagascar samples form distinct subclusters in An. gambiae and An. arabiensis; samples from The Gambia and Guinea-Bissau form the boundary between An. gambiae and An. coluzzii clusters and cannot be confidently assigned to either species using AIMs or whole genome PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75, C99-C100 describe geographic structure in the VAE projection. The Madagascar subclusters and West African boundary samples are visible in Figure 4. The difficulty assigning Gambia/Guinea-Bissau samples is corroborated by published whole genome studies (C75, C99), providing independent validation. This demonstrates the VAE captures biologically meaningful population structure beyond species-level classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "An. bwambae and An. fontenillei clusters are placed very close together in the VAE projection and cannot be reliably distinguished, but can be resolved by geographic origin as they have non-overlapping ranges (Uganda vs. Gabon).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 describe the close relationship between An. bwambae and An. fontenillei. The inability to distinguish them genetically is acknowledged, but the non-overlapping geographic ranges (cited to Barr\u00f3n et al., 2019) provide a practical resolution. This is a reasonable approach for closely related species with allopatric distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Samples from The Gambia and Guinea-Bissau are crucial for VAE classification accuracy between An. gambiae and An. coluzzii; removing these countries from training considerably reduces classification accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 report sensitivity analysis on training data composition. The finding that Gambia/Guinea-Bissau samples are critical for An. gambiae/An. coluzzii discrimination is consistent with these samples forming the boundary between clusters (C74-C75). This demonstrates appropriate validation of the method's dependence on training data composition and highlights the importance of sampling admixed populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "NNoVAE was applied to 212 Ag1000G samples filtered for high divergence from the PEST reference genome. 166 were assigned to An. funestus, 17 to An. gambiae complex (5 An. merus, 11 An. melas, 1 uncertain), and others to various species or remained unassigned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 describe application to Ag1000G diverged samples. The assignments are quantitatively reported and the geographic origins of assigned An. merus/An. melas are noted as compatible with known ranges. This demonstrates the method can identify mislabeled or contaminated samples in existing datasets and correctly assign them to appropriate species, providing practical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In Burkina Faso, 950 mosquitoes morphologically assigned to An. gambiae complex were analyzed. 95.3% (905) had \u226510 targets; 901 were assigned to An. gambiae complex by NN. VAE analysis of 770 samples with \u226550 targets identified three species: An. gambiae, An. coluzzii, and An. arabiensis, with 91.6% assigned to single species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 report the Burkina Faso case study results. Sample counts and assignment proportions are clearly documented. The finding of three species in samples morphologically assigned to the complex demonstrates the method's ability to resolve species that are morphologically indistinguishable. The 91.6% single-species assignment rate is reasonable given the known hybridization in this complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In Gabon, 1,056 mosquitoes morphologically assigned to An. gambiae complex were analyzed. 99.1% (993/1002 with \u226510 targets) were assigned to An. gambiae complex. VAE analysis identified predominantly An. coluzzii (632) and An. gambiae (130), plus 4 An. arabiensis confirmed by PCR\u2014the first observation of An. arabiensis in Gabon despite extensive prior sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 report the Gabon case study. The unexpected finding of An. arabiensis is validated by independent PCR (C68), providing strong confirmation. The authors appropriately note this species has not been observed in Gabon before (C69), highlighting the discovery's significance. The predominance of An. coluzzii and presence of An. fontenillei are consistent with known distributions. This demonstrates the method's ability to detect rare or unexpected species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "NNoVAE identified unexpected species in Gabon when applied to over two thousand new samples from Burkina Faso and Gabon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by the Gabon case study (C60-C69), which identified An. arabiensis for the first time in Gabon. The total sample count (950 Burkina Faso + 1,056 Gabon = 2,006) exceeds two thousand. The unexpected species finding is substantiated by PCR confirmation and the absence of prior reports despite extensive sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The amplicon panel can be useful to explore population structure within species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by the observed geographic structure within species in the VAE projection (C71-C74, C100). The Madagascar subclusters in An. gambiae and An. arabiensis, and the distinct West African samples demonstrate that the 62-locus panel captures sufficient variation to reveal population structure. This suggests utility beyond species identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Background claims about Anopheles diversity, vectorial capacity, species identification challenges, and malaria control context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C24, C87-C89 provide background context about Anopheles biology, taxonomy, identification methods, and malaria control. These are appropriately cited to published literature and represent established knowledge in the field. They provide necessary justification for developing improved species identification methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The amplicon panel targets total 9,928 bp with mean target length 160 bp. The probability that all 8-mers within a target are unique is 84% on average. Across the full panel, the expected number of unique 8-mers is ~8,533 (sd 46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide statistical properties of the k-mer approach. The calculations are straightforward probability theory given the sequence lengths and k-mer size. These support the choice of 8-mers as providing sufficient information content while maintaining reasonable uniqueness within targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Data processing uses cutadapt v2.5 to split reads by target, DADA2 v1.10 to reconstruct haplotypes, filtering for \u226510 read pairs and \u22650.1 frequency. In silico extraction uses SeekDeep v2.6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe the bioinformatics pipeline. Software versions are specified, and filtering criteria are clearly stated. The pipeline is standard for amplicon sequencing data and appropriately cited. The filtering thresholds (\u226510 reads, \u22650.1 frequency) are reasonable for removing low-quality haplotypes while retaining true variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "On average 1.2% of targets per sample in NNv1 have >2 sequences; in query datasets this ranged from 0.3-2.3%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 report the frequency of multi-allelic targets. The low percentages (1-2%) indicate that most targets behave as expected for diploid loci. The authors appropriately note this is low enough that their simplified handling of >2 alleles (random selection of 2) should not significantly impact results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Figure 1 shows pairwise k-mer distances reveal phylogenetic structure with dark triangles indicating closely related species. Figure 2 illustrates NN assignment for An. moucheti (clear assignment) and An. gambiae (ambiguous at fine level, requiring VAE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 describe figures illustrating the method. The distance matrix structure (C104-C105) demonstrates that k-mer distances capture phylogenetic relationships. The example assignments (C106-C109) effectively illustrate when NN alone is sufficient (An. moucheti) versus when VAE is needed (An. gambiae complex), supporting the hierarchical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "21 species-groups at fine level in NNv1 consist of single samples. Four samples (An. christyi, An. atroparvus, An. oryzalimnetes, An. cruzii) could not be classified in leave-one-out testing. Kerteszia and Nyssorhynchus subgenera are underrepresented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 acknowledge limitations of the current reference database. The authors appropriately identify underrepresented groups and explain why singleton species-groups cannot be validated by leave-one-out testing. This transparent reporting of limitations is important for users to understand the method's current scope and areas needing improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Future plans include analyzing half a million mosquitoes in the next five years, expanding the reference database by ~50 species, adapting the protocol for basic laboratories, and building an interactive website for data access and analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C84-C86 describe future plans and goals. These are speculative statements about intended work rather than completed results. While the plans are reasonable given the demonstrated method performance, they represent aspirations rather than validated outcomes. The feasibility of analyzing 500,000 mosquitoes depends on funding, logistics, and sustained effort.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The Neomyzomyia series not forming a monophyletic clade was also observed in Makunin et al., 2022.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 cites prior work showing similar phylogenetic patterns. This provides independent support for the observation that the coarse-level classification splits Neomyzomyia (C95), suggesting this may reflect true phylogenetic relationships rather than methodological artifact.",
+    "result_type": "MINOR"
+  }
+]

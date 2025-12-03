@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study identified 95 human-infective RNA virus species in the United States, 80 in China, and 107 in Africa up to October 2019. Virus discoveries were geographically clustered in specific hotspots: eastern United States (Maryland, Washington D.C., New York), eastern China (Beijing, Hong Kong, Shanghai, Guangzhou), and southern/central Africa (South Africa and Nigeria). Of the total, 60 virus species were found in all three regions, while 27, 12, and 37 species were unique to the United States, China, and Africa respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 are well-supported by data presented in Appendix 1\u2014table 1 and Figures 1-2. The geographic distribution patterns and species counts are clearly documented with specific locations and numerical data. The Venn diagram (Figure 2) provides clear visual evidence for the overlap and unique species in each region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The proportion of vector-borne and strictly zoonotic viruses differed between regional and global scales. In all three regions, smaller proportions were vector-borne (US: 23.2%, China: 21.3%, Africa: 27.1%) and strictly zoonotic (US: 30.5%, China: 16.3%, Africa: 33.6%) compared to global proportions (vector-borne: 41.7%, strictly zoonotic: 58.7%). The 60 shared species were disproportionally vector-borne (11.7%) and strictly zoonotic (7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 are supported by data shown in Figure 2. The percentages and counts are clearly stated and the comparison between regional and global proportions is well-documented. This finding is important for understanding why climate and biodiversity variables had less predictive power at regional scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Discovery curves showed the United States and Africa had similar patterns, with China lagging behind. The median time lag between global discovery and regional discovery was 0 years (IQR: 2.5) for the US, 12 years (IQR: 29.5) for China, and 2 years (IQR: 10.5) for Africa. In China, the time lag was significantly shorter after 1975 (median 2.5 years) compared to before 1975 (median 30.5 years, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by Figure 3 and Appendix 3\u2014figure 2, with statistical significance demonstrated for the China temporal change (p<0.001 from Wilcoxon rank sum test). The temporal patterns align with known historical changes in research capacity and economic development in these regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In the United States, BRT modeling identified six important predictors for virus discovery: three land use variables (urbanized land: 35.8%, urbanization of cropland: 8.0%, growth of urbanized land: 4.1%), two socio-economic variables (GDP growth: 10.0%, GDP: 5.7%), and one climatic variable (diurnal temperature change: 4.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by BRT modeling results shown in Figure 4A. The relative contributions are clearly quantified and the methodology is described. The dominance of land use variables (47.9% combined) is a key finding for the US region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In China, BRT modeling identified twelve important predictors: four socio-economic variables (GDP: 12.7%, university count: 7.5%, GDP growth: 4.6%, population growth: 4.4%), five land use variables (pasture: 8.3%, urbanized land: 8.1%, vegetation: 5.8%, cropland: 5.3%, urbanization of secondary land: 3.3%), and three climatic variables (maximum precipitation: 4.5%, precipitation change: 3.8%, diurnal temperature range: 3.3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 are supported by BRT modeling results shown in Figure 4B. The relative contributions are clearly quantified. The inclusion of university count as a predictor unique to China is notable and suggests research capacity plays a role in virus discovery in this region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "In Africa, BRT modeling identified ten important predictors: two socio-economic variables (GDP growth: 21.2%, GDP: 13.0%), seven land use variables (urbanized land: 9.4%, growth of cropland area: 5.6%, urbanization of cropland: 5.5%, growth of urbanized land: 5.1%, urbanization of pasture: 3.8%, vegetation: 3.7%, cropland: 3.2%), and one biodiversity variable (mammal species richness: 3.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 are supported by BRT modeling results shown in Figure 4C. The relative contributions are clearly quantified. The high contribution of socio-economic variables (34.2% combined) in Africa is a key finding, potentially reflecting the role of external research funding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "BRT models reduced Moran's I values below 0.15 in all three regions, indicating that the models with 33 predictors adequately accounted for spatial autocorrelations in the raw virus data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by data in Appendix 3\u2014figure 6. The threshold of 0.15 for Moran's I is appropriate for assessing spatial autocorrelation, and achieving values below this threshold across all regions demonstrates model adequacy in handling spatial structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "BRT model predictions ranged from fair to good based on validation statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by validation statistics in Appendix 1\u2014table 4 and the citation to Cicchetti (1994) for ICC interpretation. However, the manuscript does not provide the specific ICC values in the main text, requiring reference to appendix materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Comparison across regions showed that virus discovery was more associated with land use and socio-economic variables than climatic variables and biodiversity in all three regions compared to global patterns. The greatest contribution of climatic variables was in China, land use in the United States, and socio-economic variables and biodiversity in Africa (with the least socio-economic contribution in the United States).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by Figure 5, which shows the cumulative relative contributions of predictor groups. The regional differences in predictor importance are clearly visualized and represent a major finding of the study regarding heterogeneity in virus discovery drivers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study predicted high-risk areas for virus discovery in 2010-2019 and identified potential new hotspots outside historical discovery areas in all three regions. Model validation showed that most new virus species discovered since 2010 (6/6 in US, 19/19 in China, 12/19 in Africa) were found in predicted high-risk areas (85th percentile). Of the 37 viruses discovered in high-risk areas, 13 (US: 2, China: 7, Africa: 4) were found at new hotspots without prior discoveries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by Figure 6 and model predictions. The validation using actual 2010-2019 discoveries demonstrates good predictive performance (84% accuracy). The identification of new hotspots represents a practical application of the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "GDP and/or GDP growth were important predictors in all three regions, suggesting that virus discoveries were largely passive\u2014viruses were detected when they reached locations with resources to detect them. This pattern is consistent with the predominance of human-transmissible viruses in all regions, as wealthier areas are more likely to first capture transmissible viruses capable of spreading to multiple areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by BRT modeling results and logical inference. The interpretation that discoveries are passive is reasonable given the GDP patterns, though it remains an inference rather than direct evidence. The link to human-transmissible viruses (C90) is inferred from Figure 2 data showing lower proportions of strictly zoonotic viruses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Temporal patterns showed China's discovery rate increased after economic growth accelerated in the 1980s. Africa saw increased discoveries after 1950 (30 years earlier than China), likely due to support from the United States and Europe. University count was associated with virus discovery in China, suggesting virus discovery is a significant research area in Chinese universities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by Figure 3 and BRT modeling results. The temporal patterns align with known historical economic and research capacity changes. The inference about Chinese universities (C96) is reasonable based on the university count predictor, though it remains interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Socio-economic factors contributed less to virus discovery in the United States than in the other two regions, possibly because the socio-economic level across the United States is relatively high and homogenous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by BRT modeling results (Figure 4, Figure 5). The explanation (C98) is plausible and based on general knowledge about US economic development, though it remains an interpretation rather than directly tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Urban land area and urbanization contributed greatly to virus discovery in all three regions, with the United States showing the highest land use contribution (47.9% for three urbanization variables combined). This reinforces previous findings linking urbanization to pathogen detection through increased human-wildlife contact, spillover events, and environmental contamination. Land use change in the US may be driving both virus emergence and discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are well-supported by BRT modeling results. C100 is supported by citations to previous studies. C102 is more speculative (marked as such in the original claim) but is supported by citations to specific virus examples (Heartland virus, hantaviruses).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Climate had less influence on virus discovery in all three regions compared to global scale, likely because the proportion of vector-borne viruses (whose distribution is climate-dependent) was lower in the three regions than globally. Similarly, the smaller proportion of strictly zoonotic viruses in the three regions resulted in biodiversity contributing less than at the global scale. Mammal species richness played a slightly larger role in Africa than in China and the United States.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are supported by comparison with global analysis (Zhang et al., 2020) and data in Figures 2-5. The mechanistic explanations linking vector-borne virus proportions to climate importance (C104-C105) and zoonotic virus proportions to biodiversity importance (C106) are logical and supported by citations. C107 is supported by Appendix 3 figures 9-11.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The BRT model demonstrated good predictive ability, with 84% (37/44) of new virus species discovered in 2010-2019 found in defined high-risk areas (85th percentile of discovery probability). Additionally, 35% (13/37) of viruses discovered in high-risk areas were found at new hotspots without previous discoveries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by comparison of model predictions with actual 2010-2019 discoveries. The 84% accuracy rate demonstrates good model performance, and the identification of new hotspots (35%) shows the model's utility beyond simply predicting historical patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Subgroup analyses showed that in the United States and Africa, viruses first discovered in those regions were more associated with climatic and biodiversity variables, while viruses previously discovered elsewhere were more associated with socio-economic variables. This suggests that areas with higher socio-economic levels are more likely to first detect viruses after they have been discovered elsewhere in the world.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by subgroup analysis results (Appendix 3\u2014figure 12). C112 is an inference based on these results and is plausible, though it represents interpretation rather than direct evidence. The subgroup analysis could not be performed for China due to small sample size (only 9 first discoveries).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study acknowledges several data limitations: time lag between virus discovery and publication may cause temporal mismatches with covariates; the earliest reports for some well-known viruses (e.g., yellow fever, measles) may not have been identified; and the frequency of publications from virus-related journals has only weak links to novel virus publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 represent acknowledged study limitations. C113 is based on general knowledge about publication processes. C114 is an acknowledgment of potential data incompleteness. C115 is supported by Appendix 3\u2014figure 1. These are appropriately identified as limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The regional focus of this study reduced predictor heterogeneity and research effort variability compared to global analyses, resulting in predicted hotspots with higher precision than global-scale analyses. Regional analysis identified specific areas rather than broad regions as hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 describe methodological advantages of the regional approach. C116 is a description of study design. C117 is a logical inference about the effect of regional focus. C118 is supported by comparison of regional predictions with previous global analysis, showing more specific geographic targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The study identified heterogeneous patterns of virus discovery drivers across three regions and globally. Within regions, discovery is driven more by land use and socio-economic variables than climate and biodiversity (which are less important than at global scale). The study mapped that historical hotspots would continue to be important in 2010-2019, but several new areas in each region would also contribute to virus discovery. Results could guide active surveillance in high-risk areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 represent the main conclusions of the study. C119-C120 summarize the key findings about predictor heterogeneity, supported by all modeling results. C121-C122 summarize the predictive mapping results, supported by Figure 6 and validation data. C123 is a forward-looking implication that is reasonable given the demonstrated predictive performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes background context: RNA viruses are the primary cause of emerging infectious diseases due to high evolution rates and host adaptation capacity; recent outbreaks (SARS-CoV, MERS-CoV, Ebola, SARS-CoV-2) pose major threats; early detection is essential for control; socio-economic, environmental, and ecological factors affect virus discovery; the United States, China, and Africa have experienced different rates of change; no previous regional comparisons of discovery predictors exist; global patterns may be driven by research effort rather than biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide background context supported by multiple citations to established literature. These claims set up the rationale for the study. C14 (no previous regional comparisons) is a knowledge claim about the literature that appears accurate. C16 (patterns driven by research effort) is an inference from previous work that motivates the current regional analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The study used an updated virus list as of December 31, 2019, containing 223 species, with Human torovirus abolished and Heartland banyangvirus added by ICTV in 2018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe the data source and are supported by citation to ICTV 2018 and reference to Appendix 1\u2014table 1. These are straightforward factual claims about the taxonomic database used.",
+    "result_type": "MINOR"
+  }
+]

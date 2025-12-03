@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors developed an epigenetic clock for wild Amboseli baboons using RRBS data from 277 blood samples (245 individuals). The clock uses 573 CpG sites selected from 458,504 genome-wide sites via elastic net regression, achieving a median absolute difference of 1.1 years \u00b1 1.9 s.d. and Pearson's r = 0.762 (p=9.70\u00d710\u207b\u2075\u2074) between predicted and chronological age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C26, C107-C115 provide comprehensive methodological details and performance metrics for the epigenetic clock. The sample size (N=277 from 245 individuals), technical specifications (sequencing depth, bisulfite conversion efficiency >99.8%), filtering criteria, and statistical performance are well-documented. The correlation coefficient and MAD values demonstrate good predictive accuracy relative to the population's median adult life expectancy (10.3 years for females, 7.9 years for males).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Clock CpG sites are significantly enriched in functionally important genomic regions. Relative to the 458,504 background sites, clock sites show enrichment in genes, CpG islands, promoters, and enhancers (all p<0.05). Clock sites also overlap significantly with age-associated differentially methylated regions (increasing sites: log2(OR)=4.189, p=3.64\u00d710\u207b\u2079; decreasing sites: log2(OR)=5.344, p=1.54\u00d710\u207b\u2078), enhancer-active regions, and LPS-responsive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C45 demonstrate that clock sites are not randomly distributed but concentrated in regulatory regions. Multiple Fisher's exact tests with significant p-values support enrichment across diverse functional categories. The overlap with age-DMRs and immune-responsive genes (C42-C44) is particularly well-supported with specific odds ratios and p-values. This functional enrichment pattern is consistent with human epigenetic clocks (C32 cites Horvath 2013), strengthening the biological validity of the clock.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The epigenetic clock shows sex-specific performance differences. Males show higher accuracy (MAD=0.85 years, r=0.86, p=5.49\u00d710\u207b\u2074\u00b9) than females (MAD=1.6 years, r=0.78, p=6.78\u00d710\u207b\u00b3\u2070; Wilcoxon test p=4.37\u00d710\u207b\u2079). Males exhibit a 2.2-fold higher rate of epigenetic aging (\u03b2=0.448, p=9.66\u00d710\u207b\u00b9\u2079), with sex differences emerging only after age 8 years (age\u00d7sex interaction \u03b2=0.459, p=9.74\u00d710\u207b\u2077 for \u22658 years; \u03b2=-0.038, p=0.808 for <8 years). Despite these differences, age effects at individual CpG sites are highly correlated between sexes (r=0.91, p=3.35\u00d710\u207b\u00b2\u2070\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C56 provide robust statistical evidence for sex differences in clock performance. The Wilcoxon test (C50) appropriately compares accuracy between sexes, while the age\u00d7sex interaction terms (C51-C53) demonstrate that differences emerge at social maturity (~8 years). The high correlation of site-specific age effects between sexes (C54) with more precise estimates in males (C55) suggests the sex difference reflects variance rather than fundamentally different aging processes. The interpretation that higher variance in older females drives lower accuracy (C56) is reasonable given the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The epigenetic clock outperforms other age predictors in this population. It explains more variance in chronological age and shows lower median error and bias compared to BMI or blood cell composition data. Performance is comparable to molar dentine exposure, a classical age marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by Figure 1\u2014figure supplement 5, which shows comparative performance metrics (R\u00b2, MAD, bias) across multiple age predictors. The comparison to dentine exposure (C47, citing Galbany et al. 2011) provides important context, as this is an established aging marker in primates. However, the manuscript could benefit from more detailed statistical comparisons (e.g., confidence intervals, formal tests) rather than visual inspection of Figure 1\u2014figure supplement 5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C62",
+      "C63",
+      "C3",
+      "C4"
+    ],
+    "result": "Early adversity and social bond strength do not predict deviations in epigenetic age (\u0394age). Despite being strong predictors of lifespan in this population, neither cumulative early adversity (p=0.807 for females, p=0.973 for males) nor social bond strength (p=0.164 for females) significantly explain variation in \u0394age (Table 1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C62-C63 report null findings that are well-supported by Table 1. The p-values are non-significant and effect sizes are small. This is a surprising and important negative result, as both factors are established predictors of lifespan (C57-C58 cite supporting literature). The authors appropriately discuss this finding in the context of human literature (C81-C82), noting similar patterns where early adversity effects on epigenetic age are stronger in youth than adulthood. The statistical power appears adequate given the sample sizes (N=66 females, N=93 males with complete data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "High male dominance rank strongly predicts accelerated epigenetic aging. High-ranking males show significantly larger \u0394age values (\u03b2=-0.078, p=7.39\u00d710\u207b\u2074), with alpha males predicted to be 10.95 months older than their chronological age\u2014equivalent to 11.5% of male life expectancy. This effect is male-specific; dominance rank does not predict \u0394age in females (p=0.228).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C64-C67 present the study's central finding with strong statistical support. The effect size for males is substantial and highly significant (p=7.39\u00d710\u207b\u2074), while the female null result (p=0.228) demonstrates sex-specificity. The biological interpretation (10.95 months = 11.5% of life expectancy) provides meaningful context. Figure 2 visually supports the rank-\u0394age relationship. The sex difference aligns with biological expectations given that male rank is achieved through physical competition while female rank is inherited (C96-C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Age-adjusted BMI predicts \u0394age in males (p=6.33\u00d710\u207b\u00b3) but not females (p=0.682). The effects of rank and age-adjusted BMI are distinct in males, as rank remains significant after adjusting for raw BMI (p=9.93\u00d710\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 demonstrate that BMI effects are independent of rank effects in males. The statistical approach is sound: modeling rank after adjusting for BMI (C71) and vice versa shows both factors contribute independently. The sex-specific effect (C68-C69) is consistent with the biological context that BMI in these lean baboons reflects muscle mass (C60-C61, C86-C87), which is more relevant to male competitive ability. Supplementary file 5 provides additional sensitivity analyses supporting the robustness of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The rank effect reflects absolute rank achievement rather than rank-for-age. Males attain highest rank between 7-12 years, and nearly all top-four ranked males in the dataset were in this age range. Including rank-for-age as a covariate maintains the significant effect of ordinal rank (p=0.045) but shows no effect of rank-for-age (p=0.819), indicating males incur costs of high rank primarily in early-to-mid adulthood and only if they succeed in attaining high rank.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 address an important alternative hypothesis: whether rank effects reflect age-specific expectations. The rank-for-age analysis (C76) appropriately tests this by modeling residuals from the age-rank relationship (Figure 2\u2014figure supplement 4). The finding that ordinal rank, not rank-for-age, predicts \u0394age supports the interpretation that achieving high rank (regardless of age) imposes costs. This is biologically sensible given that rank depends on physical condition and fighting ability (C72, citing Alberts et al. 2003). The interpretation in C77 is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C78",
+      "C79"
+    ],
+    "result": "Epigenetic age tracks changes in male dominance rank over time. In longitudinal samples (N=14 males), samples collected when males were higher status showed higher relative epigenetic age compared to when they were lower status (paired t-test, t=-2.99, p=0.011). Change in rank between samples predicts change in \u0394age, controlling for chronological age (R\u00b2=0.37, p=0.021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C78-C79 provide within-individual evidence that strengthens the causal interpretation of the rank-\u0394age relationship. The paired t-test (C78) appropriately analyzes repeated measures, and the significant result (p=0.011) with 14 males demonstrates that rank changes predict epigenetic age changes within individuals. The R\u00b2=0.37 (C79) indicates rank changes explain substantial variance in \u0394age changes. Figure 3 visually supports this pattern. This longitudinal analysis is a major strength, as it controls for individual-level confounders that could bias cross-sectional analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C80",
+      "C83",
+      "C84",
+      "C89",
+      "C90",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors interpret their findings as evidence that achieving high rank in male baboons imposes physiological costs consistent with a 'live fast, die young' life-history strategy. They argue that major environmental predictors of lifespan do not necessarily predict epigenetic aging, that concurrent conditions (not early life factors) most influence the clock, and that the manner of achieving social status is key to understanding its physiological consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C80, C83-C84, C89-C90, C104-C105 present interpretations that extend beyond the direct evidence. While the data clearly show rank predicts accelerated epigenetic aging (supported), the 'live fast, die young' interpretation (C8) requires demonstrating that accelerated epigenetic aging actually predicts mortality in this population\u2014which is not tested here. The interpretation that rank reflects 'competitiveness' rather than 'high rank environment' (C90) is speculative, though supported by cited gene expression work (C91). The 'recency model' interpretation (C83) is reasonable but not definitively proven without longitudinal data spanning early life to adulthood. These are plausible interpretations but require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors contextualize their findings within prior work showing that alpha males in Amboseli exhibit elevated glucocorticoids, increased inflammatory gene expression, and trends toward elevated mortality risk, while high rank predicts mating success. They argue that dominance rank effects on physiology and demography are asymmetrical across sexes and larger in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95, C99-C103 appropriately cite prior work from the same population to contextualize the current findings. The citations to Gesquiere et al. 2011 (C92), Lea et al. 2018b (C93), Campos et al. 2020 (C94), and Alberts et al. 2003 (C95) are relevant and accurately represented. The synthesis that rank effects are sex-asymmetric (C99) is supported by comparing male and female results in this study and prior literature. This contextual framing strengthens the biological interpretation of the epigenetic aging results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "The authors predict that high status will most likely accelerate epigenetic aging in species-sex combinations where high status increases reproductive success and achieving status is energetically costly, citing examples like male red deer, mandrills, geladas, and female meerkats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is a speculative prediction for future work, not a result from this study. While the prediction is biologically reasonable and grounded in life-history theory, it cannot be evaluated as supported or unsupported based on the current data. The cited examples (Clutton-Brock et al. 2006, Clutton-Brock and Huchard 2013, Emery Thompson and Georgiev 2014) provide comparative context but do not test the prediction. This represents a hypothesis for future research rather than a finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C91",
+      "C96",
+      "C97",
+      "C98",
+      "C113"
+    ],
+    "result": "The authors accurately cite prior literature on epigenetic clocks in humans and other species, including their ability to predict chronological age, associations with disease risk and mortality, environmental predictors of accelerated aging, and applications in wild populations. They also accurately cite prior work on baboon biology, including social structure, rank determination, and species differences in DNA methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22, C81-C82, C85-C86, C91, C96-C98, C113 cite prior literature to establish context and justify the study. Spot-checking key citations (e.g., Horvath 2013 for epigenetic clock methodology, Levine et al. 2015 for disease associations, Hausfater et al. 1982 for female rank inheritance) confirms they are accurately represented. The claim that DNA methylation has not been applied to investigating variance in biological aging in the wild (C22) is appropriately qualified and establishes the novelty of this work. The citation to Vilgalys et al. 2019 (C113) appropriately addresses potential concerns about hybrid ancestry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The authors claim this is the first study to establish a link between social factors and epigenetic aging in any natural animal population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 asserts novelty. Based on the literature review in the introduction (C21-C22), which notes that DNA methylation has been used to estimate age structure in wild populations but not to investigate sources of variance in biological aging, this claim appears justified. The authors demonstrate associations between dominance rank (a social factor) and epigenetic age acceleration in a wild population with known life histories. However, the claim's validity depends on the accuracy of the literature review, which cannot be fully verified without exhaustive literature search.",
+    "result_type": "MAJOR"
+  }
+]

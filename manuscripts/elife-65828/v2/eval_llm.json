@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C113",
+      "C114",
+      "C129",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors developed a novel Sequence Reporting Tool (SRT) that integrates epidemiological and genomic data to estimate the probability of healthcare-associated infection (HCAI) for hospital onset COVID-19 infections (HOCIs), defined as first positive test >48 hours after admission. The tool uses Bayesian methods with heuristic approximations, comparing viral sequences with a 2-SNP threshold, and incorporates time-based priors derived from incubation period distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C26-C31, C113-C139 collectively describe the development and methodological basis of the SRT. The tool's design is clearly articulated with specific definitions (C6, C30), statistical foundations (C134-C137), and sequence matching criteria (C132-C133). The authors acknowledge limitations including the use of heuristic approximations (C113-C114), which demonstrates appropriate scientific transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The SRT was validated retrospectively using datasets from Glasgow (125 HOCIs from 1199 sequences, 34-39% sequencing coverage) and Sheffield (201 HOCIs from 1630 sequences, 73-83% sequencing coverage) collected February-May 2020. The tool is designed for prospective use but was tested on historical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C28-C51 provide detailed descriptions of the validation datasets with specific sample sizes, sequencing coverage rates, and temporal ranges. The retrospective validation is appropriate for initial tool development, though the authors correctly note (C7, C14, C130) that prospective evaluation is needed before clinical implementation. The difference in sequencing coverage between sites is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Among 326 HOCIs analyzed, the SRT identified close sequence matches from the same ward in 65.6% (160/244) of cases with \u22658 days from admission, with 81.0% (68/84) of the remainder having matches elsewhere in the hospital. For definite and probable HCAIs, 66.4% and 64.2% respectively had ward-level sequence matches, and when ward matches were present, 97.9% (185/189) had SRT probability >0.5 for ward acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C52-C58 present quantitative results with specific proportions and denominators. The high concordance between sequence matches and probability estimates (C58) provides internal validation. The results are stratified by PHE classification categories, allowing assessment across different certainty levels. Figure 1 and Table 1 provide supporting visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C59",
+      "C60",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "For indeterminate HCAIs (3-7 days post-admission), the SRT assigned probability >0.5 for healthcare acquisition in 40.2% (33/82) of cases, with 81.8% (27/33) of these having ward-level sequence matches. Approximately 60% of indeterminate cases were classified as community-acquired in both datasets, despite Sheffield lacking direct community sampling data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C59-C60, C85-C88 demonstrate the SRT's utility for the most challenging classification category. The consistency between Glasgow and Sheffield (C88) despite different data sources (C87) suggests robustness. However, the reliance on admission samples as community proxies in Sheffield (C47, C87) introduces potential bias that could affect these estimates, though this is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Healthcare worker (HCW) sequences showed close matches to 11.2% (14/125) of Glasgow HOCIs versus 87.1% (175/201) of Sheffield HOCIs, reflecting much greater HCW sequencing coverage in Sheffield (>80% vs. very limited). HCWs were clearly linked into hospital transmission networks, though the SRT lacks detailed work location data for HCWs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 and C97-C100 present a clear comparison with appropriate interpretation of the disparity (C63). The inference about HCW involvement in transmission networks (C99) is reasonable given the high match rates in Sheffield, though the acknowledged limitation regarding work locations (C100) prevents more definitive conclusions about transmission directionality. The dramatic difference between sites highlights the importance of comprehensive sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "In 6.6% (16/244) of probable or definite HCAIs, no sequence match was found within the hospital, likely due to incomplete sequencing coverage (<40% in Glasgow, ~75% in Sheffield) and presence of asymptomatic/undiagnosed carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 identify an important limitation and provide a reasonable explanation. The inference (C65) is logical given the documented sequencing coverage gaps. This finding highlights that even definite HCAIs (>14 days post-admission) can lack genetic evidence when sampling is incomplete, which is an important consideration for interpreting negative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C91",
+      "C92"
+    ],
+    "result": "Genetic analysis revealed multiple distinct outbreak clusters on single wards that standard IPC assessment had classified as single outbreaks: 6 Sheffield wards had 2 distinct clusters and 3 had 3 distinct clusters. Additionally, 54/279 (19.4%) HOCIs assumed to be part of ward outbreaks were genetically isolated cases with no linkage to other ward sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 and C91-C92 demonstrate added value of genomic data beyond epidemiological assessment. The identification of multiple distinct lineages on single wards (C66-C68) and isolated cases within epidemiologically-defined outbreaks (C91) represents concrete examples where the SRT provides information not available from temporal/spatial data alone. Case study 2 (Figure 4) provides visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C89",
+      "C90"
+    ],
+    "result": "Comparison with contemporaneous IPC classifications in Sheffield showed that among 18 IPC-designated index cases, 11 had subsequent ward sequence matches and median SRT probability was 0.70 (IQR 0.22-1.00). For 144 HOCIs classified as outbreak-associated, median SRT probability was 0.98 (IQR 0.89-1.00) with 72.2% (104/144) having ward matches. SRT results were in line with IPC classifications in the majority of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C81 and C89-C90 provide detailed validation against independent IPC assessments. The high concordance for outbreak-associated cases (C76-C78) and reasonable agreement for index cases (C74-C75) support the tool's validity. The quantitative comparison with specific proportions and probability distributions strengthens the evaluation. However, the retrospective nature means IPC teams were not blinded to all available information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The SRT is unlikely to change IPC conclusions for definite or probable HCAIs based on time from admission, but identified plausibly linked patients in 91% of such cases. Cases without sequence matches likely reflect transmission from undiagnosed or unsequenced sources within the hospital.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 appropriately characterize the SRT's utility for different HCAI categories. The acknowledgment that the tool adds limited value for definite/probable cases (C82) is honest, while the 91% figure (C83) demonstrates value in outbreak investigation. The inference about missing sources (C84) is reasonable given incomplete sampling, though it remains speculative without direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C128",
+      "C130"
+    ],
+    "result": "The authors conclude that the methodology can provide rapid feedback useful for IPC teams and warrants further prospective evaluation. Integration of epidemiological and sequence data is important given SARS-CoV-2's low mutation rate and variable incubation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13-C15, C128, C130 represent conclusions about potential utility and need for further validation. While the retrospective results are promising (C128), the authors appropriately state that prospective evaluation is required before recommending clinical use (C14, C130). The claim of potential usefulness (C13) is reasonable but remains to be demonstrated in real-time application. The ongoing prospective study (C126-C127) will be critical for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The manuscript establishes background knowledge that rapid HCAI identification is important for SARS-CoV-2 suppression, but epidemiological data alone cannot always identify infection sources. Viral sequencing provides additional information about transmission clusters, though SARS-CoV-2's low mutation rate makes standard phylogenetic interpretation difficult. The virus has a variable incubation period up to 14 days and can transmit from asymptomatic/presymptomatic carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C17-C25 establish the scientific rationale for the study. These are well-supported by citations to prior literature (C17-C23) or represent established knowledge in the field (C1-C4, C24-C25). The characterization of challenges with phylogenetic methods (C4, C24) and epidemiological approaches (C2, C19, C25) appropriately motivates the need for an integrated approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study used Public Health England's IPC classification system (3-7 days = indeterminate HCAI; 8-14 days = probable HCAI; >14 days = definite HCAI) and PHE's outbreak definition (\u22652 cases on a ward with \u22651 probable/definite HCAI). Genetic clusters were defined using 2-SNP threshold with consecutive linkage, excluding sequences with <90% coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 describe standard methodological definitions and quality control criteria. The use of established PHE classifications (C32-C33) provides a recognized reference standard. The 2-SNP threshold (C34) is justified by citations (C133), and the 90% coverage threshold (C35) is a reasonable quality control measure for consensus sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors discuss phylogenetic approaches as useful for excluding transmission but problematic for confirming sources. While phylogenetic methods can evaluate full genetic information, they face challenges in timely metadata incorporation. The SRT and phylogenetic approaches may be complementary, though some SRT-identified clusters likely represent multiple introduction events of similar lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C112 provide appropriate context about alternative approaches. The characterization of phylogenetic methods' strengths and limitations (C102-C104, C107) is supported by citations. The acknowledgment of potential complementarity (C109-C110) and recognition that genetic similarity doesn't always indicate direct transmission (C111-C112) demonstrates nuanced understanding. The statement about lack of IPC-focused phylogenetic software (C108) may be overstated but reflects the authors' assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C140",
+      "C141"
+    ],
+    "result": "The authors describe future development plans, implementation details, and the collaborative nature of the SRT development. The tool has been implemented in COV-GLUE with available R code, designed for automation of data linkage and feedback to IPC staff, though effectiveness depends on high sequencing coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 and C140-C141 describe implementation and future directions. Code availability (C140-C141) supports reproducibility. The emphasis on interdisciplinary collaboration (C116-C117) and automation (C118) reflects good practice. The acknowledgment that effectiveness depends on sequencing coverage (C119) is an important practical consideration. Future development plans (C115) are reasonable extensions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C131"
+    ],
+    "result": "The study context includes the first wave of UK COVID-19 epidemic with documented nosocomial transmission and HCW risk. High-coverage sequencing has been implemented in UK (COG-UK) and Denmark but not most countries. The B.1.1.7 emergence provided a case study for genomic surveillance value, though further evidence is needed to determine if rapid sequencing justifies investment for routine IPC use. Prospective evaluation is underway, and the methodology may be applicable beyond hospital inpatients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 and C120-C127, C131 provide study context and discuss broader implications. The temporal context (C93-C94) and HCW risk (C95-C96) are supported by citations. The comparison of sequencing implementation across countries (C120-C122) is accurate. The acknowledgment that cost-effectiveness remains uncertain (C124-C125) is appropriately cautious. The ongoing prospective study (C126-C127) addresses the validation gap. Speculation about broader applicability (C131) is reasonable but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "In the Sheffield dataset, 26 HOCIs had visitors allowed on the ward at sampling, with 3 cases showing estimated visitor-acquisition probability of 0.4-0.5 (all \u226518 days post-admission with no ward matches).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 present a small subset of results regarding visitor-associated infections. The numbers are specific and the context (long admission times, no ward matches) makes visitor acquisition plausible. However, this represents a very small sample (3/26) and the probabilities are moderate (0.4-0.5), limiting the strength of conclusions about visitor transmission.",
+    "result_type": "MINOR"
+  }
+]

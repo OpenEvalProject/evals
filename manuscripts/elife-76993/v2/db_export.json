@@ -1,0 +1,1114 @@
+{
+  "submission": {
+    "id": "c32f445b-3612-497c-befb-f766ee6e3eeb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:58:46.391876Z",
+    "updated_at": "2025-12-03T11:58:46.391876Z"
+  },
+  "content": [
+    {
+      "id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "submission_id": "c32f445b-3612-497c-befb-f766ee6e3eeb",
+      "content_type": "manuscript",
+      "content_text": "# Dendritic branch structure compartmentalizes voltage-dependent calcium influx in cortical layer 2/3 pyramidal cells\n\n## Authors\n\n- Andrew T Landau<sup>1</sup> ([ORCID: 0000-0001-9105-1636](https://orcid.org/0000-0001-9105-1636))\n- Pojeong Park<sup>2</sup>\n- J David Wong-Campos<sup>2</sup>\n- He Tian<sup>2</sup> ([ORCID: 0000-0003-3282-7275](https://orcid.org/0000-0003-3282-7275))\n- Adam E Cohen<sup>2</sup> ([ORCID: 0000-0002-8699-2404](https://orcid.org/0000-0002-8699-2404))\n- Bernardo L Sabatini<sup>1</sup> ([ORCID: 0000-0003-0095-9177](https://orcid.org/0000-0003-0095-9177)) \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, Department of Neurobiology, Harvard Medical School Boston United States\n2. Department of Chemistry and Chemical Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n3. Department of Physics, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBack-propagating action potentials (bAPs) regulate synaptic plasticity by evoking voltage-dependent calcium influx throughout dendrites. Attenuation of bAP amplitude in distal dendritic compartments alters plasticity in a location-specific manner by reducing bAP-dependent calcium influx. However, it is not known if neurons exhibit branch-specific variability in bAP-dependent calcium signals, independent of distance-dependent attenuation. Here, we reveal that bAPs fail to evoke calcium influx through voltage-gated calcium channels (VGCCs) in a specific population of dendritic branches in mouse cortical layer 2/3 pyramidal cells, despite evoking substantial VGCC-mediated calcium influx in sister branches. These branches contain VGCCs and successfully propagate bAPs in the absence of synaptic input; nevertheless, they fail to exhibit bAP-evoked calcium influx due to a branch-specific reduction in bAP amplitude. We demonstrate that these branches have more elaborate branch structure compared to sister branches, which causes a local reduction in electrotonic impedance and bAP amplitude. Finally, we show that bAPs still amplify synaptically-mediated calcium influx in these branches because of differences in the voltage-dependence and kinetics of VGCCs and NMDA-type glutamate receptors. Branch-specific compartmentalization of bAP-dependent calcium signals may provide a mechanism for neurons to diversify synaptic tuning across the dendritic tree.\n\n## Introduction\n\nThe synaptic tuning properties of neurons are regulated by calcium-dependent plasticity signals, including voltage-dependent calcium influx evoked by back-propagating action potentials (bAPs) (Magee and Johnston, 1997; Sj\u00f6str\u00f6m and Nelson, 2002; H\u00e4usser and Mel, 2003). Many investigations have focused on timing-dependent plasticity rules, such as spike-timing dependent plasticity (STDP), in which the delay between synaptic input and the bAP determines if an induction protocol results in long-term potentiation (LTP), depression (LTD), or maintenance of synapse strength (Feldman, 2012). However, other studies have shown that the outcome of plasticity induction protocols also depends on the synaptic location within the dendritic tree (Golding et al., 2002; Froemke et al., 2005; Sj\u00f6str\u00f6m and H\u00e4usser, 2006; Gordon et al., 2006). The same protocol can evoke a different sign, magnitude, or temporal profile of synaptic plasticity if applied to synapses in proximal or distal dendritic compartments. Such location-dependent plasticity rules may bolster the integrative capacity of individual neurons by supporting divergent tuning properties in basal and apical dendritic arbors (Larkum et al., 1999; Xu et al., 2012; Iacaruso et al., 2017).\n\nLocation-dependent plasticity rules vary along the proximodistal axis of dendrites because bAPs are attenuated as they propagate away from the soma (Regehr et al., 1989; Spruston et al., 1995; Golding et al., 2002; Waters et al., 2003; Froemke et al., 2005; Sj\u00f6str\u00f6m and H\u00e4usser, 2006). In distal dendritic compartments, smaller amplitude bAPs evoke less voltage-dependent calcium-influx, such that induction protocols that usually evoke LTP result in LTD (Nevian and Sakmann, 2006; Sj\u00f6str\u00f6m and H\u00e4usser, 2006). Experimentally boosting distal bAP amplitude can restore LTP by amplifying bAP-dependent calcium influx (Sj\u00f6str\u00f6m and H\u00e4usser, 2006), suggesting that location-dependent variation in synaptic plasticity rules is primarily determined by the local amplitude and timing of bAP-dependent calcium influx.\n\nIn principle, bAP-dependent calcium influx can also vary in a branch-specific manner, independent of distance from the soma. Dendritic bAP-dependent calcium influx could be shaped by local variability in ion channel expression, synaptic inputs, or electrotonic impedance due to dendritic branch structure (Rall and Rinzel, 1973; Vetter et al., 2001; Frick et al., 2004; Losonczy et al., 2008; Yaeger et al., 2019). Branch-specific variation in bAP-dependent calcium influx provides a potential mechanism for diversifying synaptic tuning across the dendritic tree, which is a core feature of computational models of neurons as hierarchical nonlinear integrators (Poirazi et al., 2003; H\u00e4usser and Mel, 2003; Francioni and Harnett, 2021; Bicknell and H\u00e4usser, 2021). The existence of branch-specific variation in bAP-dependent calcium influx would also affect the interpretation of dendritic calcium transients imaged in vivo, which can be evoked by local synaptic integration or global bAP-dependent influx (Wilson et al., 2016; Iacaruso et al., 2017; Yaeger et al., 2019; Beaulieu-Laroche et al., 2019; Kerlin et al., 2019; Francioni et al., 2019).\n\nTo discover potential dendrite branch-specific and distance-independent variation in bAP amplitude and bAP-dependent calcium influx, we measured bAP-dependent calcium influx in multiple dendrites of individual cortical L2/3 pyramidal cells in mice. We used somatic and dendritic electrical recordings, two-photon calcium imaging and glutamate uncaging, and dendritic voltage-imaging to experimentally identify dendrite branch-specific changes in bAP amplitude and its consequences for bAP-dependent calcium influx. In some branches, bAPs fail to evoke calcium influx through voltage-gated calcium channels (VGCCs), but still amplify synaptically-mediated calcium influx through NMDA receptors (NMDARs). We demonstrated that these branches successfully propagate bAPs in the absence of synaptic input and contain VGCCs, but exhibit more elaborate dendritic branching, which decreases their electrotonic impedance and reduces the amplitude of the bAP. Our results reveal branch-specific variation in bAP-dependent calcium signals, providing an additional mechanism by which calcium-dependent plasticity induction may vary throughout individual neurons.\n\n## Results\n\nWe measured calcium influx in the apical dendrites of cortical L2/3 pyramidal cells to investigate whether voltage-dependent calcium signals are regulated in a branch-specific manner. We acquired whole-cell current-clamp recordings from individual cells filled through the recording pipette with 10 \u00b5M Alexa Fluor 594 and 300 \u00b5M Fluo-5F to visualize neuronal morphology and monitor changes in intracellular calcium concentration using red and green fluorescence, respectively (Carter and Sabatini, 2004). Calcium-dependent fluorescence transients were measured as the change in green relative to red fluorescence ($\\DeltaG/R$), which is linearly proportional to $\\DeltaCa$ and comparable across recordings (Carter and Sabatini, 2004). We found that bAP-evoked calcium influx ($\\DeltaCa_{AP}$) varies across dendritic spines from within the same cells, even when matched for distance from the soma (Figure 1). Across many neurons and recording sites, we observed that $\\DeltaCa_{AP}$ was highly correlated in nearby spines ( < 6 \u00b5m) and between spines and their parent dendritic shafts (Figure 1\u2014figure supplement 1), indicating that variations in $\\DeltaCa_{AP}$ are regulated across dendritic branches, rather than across individual dendritic spines. These data suggest that voltage-gated calcium channels (VGCCs), which mediate bAP-evoked calcium influx and are responsible for various forms of plasticity (Kapur et al., 1998; Dolmetsch et al., 2001; Yasuda et al., 2003; Nevian and Sakmann, 2006; Scheuss et al., 2006, Bloodgood and Sabatini, 2007; Brigidi et al., 2019), can be differentially activated by bAPs in a branch-specific manner within individual L2/3 pyramidal cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig1-v2.jpg)\n\n**Figure 1.:** (A) Maximum z-projection of Alexa 594 fluorescence showing the full apical dendritic morphology of a cortical L2/3 pyramidal cell. Two sites corresponding to the dendritic regions with low (blue) and high (black) \u0394CaAP are indicated. (B) Frame scan (left) showing high \u0394CaAP branch. Dotted yellow line indicates the orientation of the line scan used to acquire the data in the kymograph (right) of Fluo-5F fluorescence in the spine and neighboring dendrite evoked by a bAP. Star indicates glutamate uncaging location. White vertical lines indicate ROIs for spine and dendrite. Inset: bAP waveform recorded at the soma. (C) Average calcium-dependent fluorescence transients in a high \u0394CaAP dendritic spine (left) and parent dendrite (right) evoked by 1 bAP, an uEPSP, and pairing of an uEPSP with 1 bAP (bAP evoked 5ms after the uEPSP). Inset: average somatic whole-cell recording of the uEPSPs. In this and all presentations of imaging data, the red shaded area of the spine and dendritic schematic indicates the region from which fluorescence was measured. (D) As in B for the low \u0394CaAP branch. (E) As in C for the low \u0394CaAP branch. Note the difference in \u0394CaAP (black) between the spines in B-C and D-E. bAP-evoked calcium influx and bAP-dependent amplification are decoupled in L2/3 pyramidal cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Comparison of \u0394CaAP in neighboring dendritic spines measured simultaneously. The strong correlation indicates that nearby spines have similar calcium signals throughout the dendritic tree and intracellular differences in \u0394CaAP are only observed across branches (N = 94, R2 = 0.79). (B) Comparison of \u0394CaAP between dendritic spines and their parent dendritic shafts. The strong correlation indicates that \u0394CaAP is regulated at the level of dendritic branches and motivates our use of dendritic calcium influx as a proxy for nearby dendritic spines (N = 526, R2 = 0.85).\n\nTo investigate the mechanisms of branch-specific variation in voltage-dependent calcium signals, we measured calcium influx in response to glutamate uncaging-evoked excitatory postsynaptic potentials (uEPSPs) as a proxy for synaptically evoked calcium influx ($\\DeltaCa_{uEPSP}$). In addition, we measured bAP-dependent amplification of synaptically-evoked calcium influx due to transient relief of the Mg2+ block of NMDARs using uEPSP-bAP pairings ($\\DeltaCa_{pairing}$). In all uEPSP-bAP pairings, we delayed the bAP by 5ms relative to the glutamate uncaging laser pulse to maximize bAP-dependent amplification of postsynaptic calcium influx and mimic protocols that robustly induce NMDAR-dependent LTP (Froemke et al., 2005; Nevian and Sakmann, 2006; Holbro et al., 2010). Spines on branches with and without bAP-evoked calcium influx showed $\\DeltaCa_{uEPSP}$ and supralinear bAP-dependent amplification in $\\DeltaCa_{pairing}$ (Figure 1B\u2013E; Holbro et al., 2010), even though one of the spines exhibited almost no bAP-evoked calcium influx when the bAP was evoked by itself (Figure 1D\u2013E). These data suggest that bAP-evoked calcium influx through VGCCs and bAP-dependent amplification of synaptically evoked calcium influx through NMDARs can be regulated independently in a branch-specific manner (Bloodgood and Sabatini, 2007; Holbro et al., 2010).\n\n### bAP-evoked calcium influx and bAP-dependent amplification are decoupled in L2/3 pyramidal cells\n\nTo systematically investigate the regulation of bAP-evoked calcium influx and bAP-dependent amplification of synaptically evoked calcium influx, we recorded $\\DeltaCa_{AP}$ , $\\DeltaCa_{uEPSP}$ , and $\\DeltaCa_{pairing}$ in 97 dendritic spines from 33 cells and 15 mice (N = 97/33/15) spanning the full proximodistal extent of the dendrites. To focus our analysis on the supralinear component of $\\DeltaCa_{pairing}$ , which is primarily carried by NMDARs (Holbro et al., 2010), we measured amplification as $\\DeltaCa_{amp}=\\DeltaCa_{pairing}-(\\DeltaCa_{AP}+\\DeltaCa_{uEPSP})$ (Figure 2A). We found that $\\DeltaCa_{AP}$ and $\\DeltaCa_{amp}$ were uncorrelated across dendritic spines in L2/3 pyramidal cells (Figure 2B). To visualize the divergence between $\\DeltaCa_{AP}$ and $\\DeltaCa_{amp}$ , we grouped the data into high $\\DeltaCa_{AP}$ (0.1 < $\\DeltaCa_{AP}$ < 0.3, selected to avoid outliers), and low $\\DeltaCa_{AP}$ ($\\DeltaCa_{AP}$ < 0.04) populations (Figure 2B) based on the amplitude of bAP-evoked calcium influx (Figure 2C\u2013D). We plot data with this selection criterion throughout the figures to highlight differences across branches but focus our statistical analyses on the full distribution of data which is presented as scatter plots in each figure. The same criterion is used throughout all figures except in Figures 5B\u2013D. Low $\\DeltaCa_{AP}$ branches exhibited almost no calcium influx evoked by bAPs but still exhibited large bAP-dependent amplification (Figure 2C\u2013D). $\\DeltaCa_{AP}$ and $\\DeltaCa_{amp}$ showed similar patterns in dendritic spines and parent dendritic shafts (Figure 2C\u2013D). We found that although $\\DeltaCa_{AP}$ attenuates with distance from the soma (Figure 2E and Figure 2\u2014figure supplement 1B), it exhibits significant variability in distal branches, such that pairs of dendritic spines that are on different branches within the same neuron but at a similar distance from the soma sometimes had large differences in calcium influx (Figure 2E\u2013F). $\\DeltaCa_{amp}$ varied over a similar range at all distances from the soma (Figure 2\u2014figure supplement 1A). The divergence between $\\DeltaCa_{AP}$ and $\\DeltaCa_{amp}$ was not related to the degree of NMDAR activation (Figure 2\u2014figure supplement 1C) nor the uEPSP amplitude or time-course (Figure 2\u2014figure supplement 1D-H). Furthermore, we observed low $\\DeltaCa_{AP}$ branches in the presence of MNI-Glutamate, which is an antagonist of ionotropic GABA receptors, indicating that low $\\DeltaCa_{AP}$ branches are not caused by inhibition (Figure 2B). We confirmed this with the selective GABA-A receptor antagonist 10 \u00b5M SR 95531 (data not shown). Together, these data indicate that $\\DeltaCa_{AP}$ and $\\DeltaCa_{amp}$ are regulated independently in the dendrites of L2/3 pyramidal cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig2-v2.jpg)\n\n**Figure 2.:** (A) Average calcium-dependent fluorescence transients recorded from a dendritic spine and a schematic of the method for computing the amplification of calcium influx caused by interaction of the bAP and uEPSP, which results in additional influx (blue) relative to the sum of the bAP and uEPSP components measured independently (black/red). (B) bAP-dependent amplification vs. bAP-evoked calcium influx. Shaded areas indicate selection of high \u0394CaAP (gray) and low \u0394CaAP (blue) spines used in panels C and D. (C) \u0394CaAP in high (black) and low (blue) \u0394CaAP dendritic spines (left) and parent dendritic shafts (right). In this and all presentations of average fluorescence transients, the line and shaded areas show the mean and standard error around the mean. (D) \u0394 Caamp in high (black) and low (blue) \u0394CaAP dendritic spines (left) and parent dendritic shafts (right). (E) \u0394CaAP across distance from soma in all dendritic spines (N = 526/95/29). (F) Comparison of \u0394CaAP between pairs of dendritic spines (i.e. S1 & S2) that were recorded from the same cell, on different dendritic branches, and at a similar distance from the soma ( < 20 \u00b5m relative distance from soma). Each pair was sorted so the abscissa indicates the \u0394CaAP of the spine with higher calcium influx (N = 94/22/6).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) bAP-dependent amplification of uEPSP-evoked calcium influx across distance from soma in all dendritic spines. (B) \u0394CaAP across distance from soma in all dendritic shafts (N = 412). (C) Comparison of bAP-dependent amplification divided by calcium evoked by the uEPSP (to normalize for the level of NMDAR activation) with bAP-evoked calcium influx. The plot is qualitatively similar to the plot in Figure 2B, suggesting that differences in NMDAR activation do not explain the results. (D) Average uEPSP recorded from the soma for high (black) and low (blue) \u0394CaAP dendritic spines. Selection criterion indicated by black and blue patches in panels E and F. (E) Comparison of uEPSP amplitude with bAP-evoked calcium influx. (F) Comparison of uEPSP peak time with bAP-evoked calcium influx. The small negative correlation is primarily because low \u0394CaAP dendritic spines tend to be further from the soma, so the slower uEPSPs are primarily due to cable filtering rather than synaptic properties. (G) Comparison of uEPSP amplitude with distance from soma. (H) Comparison of uEPSP peak time with distance from soma.\n\nWe considered three distinct mechanistic explanations for why low $\\DeltaCa_{AP}$ branches exhibit bAP-dependent amplification ($\u0394Ca_{amp}$) but fail to exhibit bAP-evoked calcium influx ($\\DeltaCa_{AP})$):\n\nAlthough each of these mechanisms could be realized in several ways, they represent general explanations that we tested directly.\n\n### Low \u0394CaAP branches contain voltage-gated calcium channels\n\nLow $\\DeltaCa_{AP}$ branches may contain functional VGCCs that are not opened by a single bAP but do open in response to stronger depolarizations. To examine this possibility, we imaged calcium influx evoked by a burst of 5 bAPs at 150 Hz in dendritic shafts located >75 \u00b5m from the soma in L2/3 pyramidal cells (Figure 3A; Larkum et al., 2007). In most low $\\DeltaCa_{AP}$ branches, calcium influx could be evoked by a burst of 5 bAPs (Figure 3A\u2013B). However, the calcium influx evoked by a burst of 5 bAPs in high $\\DeltaCa_{AP}$ branches was higher than in low $\\DeltaCa_{AP}$ branches (Figure 3A\u2013B). These data are consistent with the presence of VGCCs in low $\\DeltaCa_{AP}$ branches, although they do not distinguish whether there is a lower density of VGCCs (or a higher voltage threshold), or if bursts of bAPs are less effective at depolarizing low $\\DeltaCa_{AP}$ branches.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig3-v2.jpg)\n\n**Figure 3.:** (A) Calcium-dependent fluorescence transients evoked by 1 bAP or 5 bAPs at 150 Hz in high (black) and low (blue) \u0394CaAP dendrites. (B) Comparison of peak calcium influx evoked by 1 bAP or 5 bAPs in each dendrite. Gray and blue patches indicate selection of high (gray) and low (blue) \u0394CaAP spines used in panel A. The line y = 6 x is plotted for reference. N = 109/33/9, R2 = 0.609, F = 166, p = 1.5 \u00d7 10\u201323.(C) Calcium-dependent fluorescence transients evoked by 1 bAP before and after application of 2 mM 4-AP in high (black) and low (blue) \u0394CaAP branches. Inset: average AP waveform before and after application of 4-AP. (D) Comparison of peak calcium influx evoked by 1 bAP before and after application of 2 mM 4-AP. Gray and blue patches indicate selection of high (gray) and low (blue) \u0394CaAP spines used in panel C. There was no significant correlation: N = 22/7/3, R2 = 0.135, F = 3.11, p = 0.093. (E) Maximum z-projection of Alexa 594 fluorescence from a L2/3 pyramidal cell with differential-interference contrast image overlaid showing glutamate puffing pipette. The full apical dendritic morphology was not imaged. (F) Calcium-dependent fluorescence transients evoked by 1 bAP, 5 bAPs at 150 Hz, and a 1 mM glutamate puff in the example branch from panel E. (G) Average calcium-dependent fluorescence transients evoked by 1 bAP, 5 bAPs at 150 Hz, and a 1 mM glutamate puff across all branches recorded. (H) Comparison of peak calcium influx evoked by bAP, 5 bAPs at 150 Hz, and a 1 mM glutamate puff in all branches. The response to 5 bAPs was not recorded in all dendrites (N = 20/6/3).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Dendritic calcium influx evoked by picospritzer puff of either 1 mM glutamate (N = 22) or ACSF (N = 4). (B) Comparison of peak calcium influx evoked by 1 mM glutamate and ACSF. No calcium influx was observed in response to ACSF, indicating that the calcium signal was not due to mechanical displacement evoked by the picospritzer. (C) Example traces of calcium influx evoked by 1 mM glutamate puff for one dendrite across all trials, shifted along the x-axis to visualize each trial clearly. (D) Dendritic calcium influx evoked by 1 mM glutamate for each trial, normalized to first trial amplitude. If glutamate was out-competing CPP (a competitive antagonist) at NMDAR\u2019s binding sites, then the presence of MK-801, a use-dependent blocker, should reduce NMDAR conductance in each trial. No systematic reduction in the calcium signal was observed, indicating that NMDARs were fully blocked. Colored points indicate example used in panel C.\n\nWe attempted to make the depolarization evoked across the dendritic tree more uniform by triggering bAPs in the presence of the potassium channel antagonist 4-AP (Figure 3C\u2013D; Hoffman et al., 1997). In all somatic recordings, application of 2 mM 4-AP increased the after-depolarization of the bAP (Figure 3C, inset), confirming the efficacy of the drug. Applying 4-AP significantly increased $\\DeltaCa_{AP}$ in every branch, regardless of how much calcium influx was evoked in control conditions (Figure 3C\u2013D). Because $\\DeltaCa_{AP}$ evoked in the presence of 4-AP is similar in high and low $\\DeltaCa_{AP}$ branches (Figure 3C), we conclude that VGCCs are present in all dendritic compartments and mediate substantial calcium influx in response to sufficiently large depolarizations.\n\nTo determine if VGCCs can be effectively opened by local depolarization in low $\\DeltaCa_{AP}$ branches, we measured calcium influx evoked by direct application of 1 mM glutamate delivered via a patch pipette using a picospritzer (Figure 3E\u2013H). We added 20 \u00b5M CPP and 50 \u00b5M MK-801 to the puff and bath solutions to block NMDARs and limit our measurements to calcium influx mediated by VGCCs. In every dendrite examined, direct application of glutamate led to significant calcium influx, regardless of $\\DeltaCa_{AP}$ (Figure 3F\u2013H). The calcium signal was not an artifact of mechanical displacement due to the picospritzer (Figure 3\u2014figure supplement 1A-B) and did not include an NMDAR component (Figure 3\u2014figure supplement 1C-D), consistent with calcium influx mediated by VGCCs. We note that the large calcium signals evoked by glutamate demonstrate that the similarity in bAP-evoked calcium influx between high and low $\\DeltaCa_{AP}$ measured in 4-AP was not due to saturation of the calcium indicator. Collectively, our data indicate that all dendritic branches contain VGCCs, which can be opened by local depolarization. However, a specific population of low $\\DeltaCa_{AP}$ branches exhibit little to no calcium influx in response to back-propagating bAPs.\n\n### bAPs propagate to low \u0394CaAP branches in the absence of EPSPs\n\nWe only observe significant bAP-dependent calcium influx in low $\\DeltaCa_{AP}$ branches if the bAP is paired with synaptic input evoked by glutamate uncaging. Despite the small size of the uEPSP, it is possible that bAPs only back-propagate to low $\\DeltaCa_{AP}$ branches when assisted by local depolarization (Magee and Johnston, 1997; Gasparini et al., 2007). Since most of the depolarization evoked by EPSPs is carried by AMPARs, we measured $\\DeltaCa_{AP}$ , $\\DeltaCa_{uEPSP}$ , and $\\DeltaCa_{pairing}$ after applying the selective AMPAR antagonist, NBQX (Figure 4A\u2013B). We observed bAP-dependent amplification of the remaining NMDAR-mediated calcium influx in all dendritic spines examined, despite fully blocking the depolarization evoked by glutamate uncaging (Figure 4A\u2013B). As expected, glutamate uncaging evokes some calcium influx via NMDARs in the presence of NBQX, since NMDARs are only partially blocked by Mg2+ at resting potentials (Jahr and Stevens, 1990) and the driving force on calcium is extremely high. These data suggest that bAPs propagate to low $\\DeltaCa_{AP}$ branches without an uEPSP-mediated local depolarization.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig4-v2.jpg)\n\n**Figure 4.:** (A) Calcium-dependent fluorescence transients evoked by bAPs, uEPSPs, and bAP/uEPSP pairings in the presence of 10 \u00b5M NBQX. (B) Comparison of peak calcium influx in spines evoked by bAP, uEPSP, and bAP/uEPSP pairing, in the presence of 10 \u00b5M NBQX. Inset: whole-cell recordings from glutamate uncaging in the presence of NBQX. Calcium influx evoked by pairing was significantly higher than by the uEPSP alone, t-test: N = 12/8/2, t = 4.01, p = 5.8 \u00d7 10\u20134. (C) Maximum z-projection of Alexa 594 fluorescence from a L2/3 pyramidal cell with a whole-cell recording in the soma and consecutive loose-patch recordings in two branches. Insets: red fluorescence overlaid on differential interference contrast image of loose-patch configuration for each dendrite. The full apical dendritic morphology was not imaged. (D) Calcium-dependent fluorescence transients evoked by bAPs in each dendrite from panel C, recorded during loose-patch recordings. (E) Electrical signals evoked by bAPs measured with dendritic loose-patch recordings in each dendrite from panel C. Inset: expanded trace from gray shaded region. (F) Somatic whole-cell recording of bAPs during each loose-patch recording from panel C. Inset: expanded trace from gray shaded region. (G) Average calcium-dependent fluorescence transients evoked by bAPs in high (black) and low (blue) \u0394CaAP branches during loose-patch recordings. (H) Average electrical signal evoked by bAPs in high (black) and low (blue) \u0394CaAP branches measured with loose-patch recordings. (I) Comparison of peak calcium influx and peak electrical signal evoked in each dendrite by bAPs. Patches indicate selection of high (gray) and low (blue) \u0394CaAP branches used in panels G and H (N = 19/15/9).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Comparison of total resistance of loose-patch recordings and amplitude of the dendritic electrical signals. The total resistance includes the pipette resistance and the seal resistance, which was measured after acquiring a loose-patch seal on a target dendrite using a small current step. (B) Comparison of the seal resistance and the amplitude of the dendritic electrical signals. Seal resistance was computed by subtracting the loose-patch resistance (measured after acquiring a loose-patch seal) from the pipette resistance (measured with the pipette in the bath solution). Note: several unmeasured noise sources prohibit inference of intracellular bAP amplitude based on loose-patch recordings. We are primarily measuring capacitive currents, $I_{cap}=C\\frac{dV}{dt}$ , but we cannot directly measure dendritic capacitance, which may differ across dendritic branches. Also, the amplitude of the recording is also proportional to the true seal resistance (Figure 4D); however, our loose-patch recordings used large pipettes (pipette resistance \u22488 M\u03a9) and the total patch resistance only increased by \u223c10 M\u03a9 (Figure 4C), so estimates of the seal resistance are likely to be contaminated by the neuropil.\n\nTo test whether bAPs propagate to low $\\DeltaCa_{AP}$ branches in the absence of glutamate receptor activation, we acquired loose-patch recordings in current-clamp from 19 dendrites in 15 neurons while simultaneously recording from the soma to measure the dendritic electrical signal evoked by a bAP (Figure 4C\u2013I). Simultaneous two-photon imaging was used to monitor dendritic calcium influx. All recording sites were \u226575 \u00b5m from the soma. In the neuron shown in Figure 4C, we acquired consecutive loose-patch recordings from one high $\\DeltaCa_{AP}$ branch and one low $\\DeltaCa_{AP}$ branch. Only the high $\\DeltaCa_{AP}$ branch had detectable $\\DeltaCa_{AP}$ , but both dendritic recordings exhibited clear electrical signals evoked by the bAP (Figure 4D\u2013F). We observed bAP-evoked electrical signals in all dendrites, even though only some exhibited $\\DeltaCa_{AP}$ (Figure 4G\u2013I). These loose-patch recordings do not permit direct measurement of intracellular bAP amplitude (Figure 4\u2014figure supplement 1); however, they demonstrate that bAPs propagate to low $\\DeltaCa_{AP}$ branches without the support of EPSPs.\n\n### bAP amplitude is attenuated in low \u0394CaAP branches\n\nTo measure the intracellular dendritic voltage evoked by bAPs, we performed interleaved dendritic voltage and calcium imaging while performing somatic whole-cell current-clamp recordings (Figure 5). Voltage imaging was achieved by expressing a highly-sensitive near-infrared genetically-encoded voltage indicator, QuasAr6a (Wang et al., 2021). Both voltage and calcium signals were recorded via structured illumination one-photon microscopy. All recording sites were \u226575 \u00b5m from the soma (except for the closest site in panel A). Consistent with our results from Figure 4, we observed bAP-dependent voltage signals in all branches, including those that did not exhibit bAP-evoked calcium influx (Figure 5). To visualize differences in high and low $\\DeltaCa_{AP}$ branches, we adjusted our selection criterion to account for differences in the range of $\\DeltaCa_{AP}$ measured with two-photon and one-photon calcium imaging (the selection range described above was scaled by 1.75, Figure 5B\u2013D). Although low $\\DeltaCa_{AP}$ branches exhibited clear bAP-evoked voltage waveforms (Figure 5C), the amplitudes of the dendritic bAP-evoked voltage waveforms were attenuated in low $\\DeltaCa_{AP}$ branches (Figure 5C\u2013D). The full-width half-max of the voltage waveforms was 6.2 \u00b10.9ms for high $\\DeltaCa_{AP}$ branches and 8.0 \u00b14.1ms for low $\\DeltaCa_{AP}$ branches. These data demonstrate that bAP amplitude is reduced in low $\\DeltaCa_{AP}$ branches.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig5-v2.jpg)\n\n**Figure 5.:** bAP amplitude is attenuated in low $\\DeltaCa_{AP}$ branches.(A) Mean calcium-dependent (blue) and voltage-dependent (red) fluorescence transients evoked by 1 bAP (left) measured in the 5 branches indicated in the maximum z-projection of Alexa 594 fluorescence from a L2/3 pyramidal cell (right).The black trace shows the bAP waveform recorded from the soma during calcium and voltage imaging. Note that calcium- and voltage-dependent transients are shown on ~10 fold different time scales. The full apical dendritic morphology was not imaged. (B) Average calcium-dependent fluorescence transient in high (black) and low (blue) \u0394 CaAP branches evoked by 1 bAP. (C) Average voltage-dependent fluorescence transient in high (black) and low (red) \u0394 CaAP branches evoked by 1 bAP. (D) Comparison of the peak voltage- and calcium-dependent fluorescence transient evoked by 1 bAP. Shaded regions indicate selection criterion for high (gray) and low (blue/red) \u0394CaAP branches. Calcium-dependent fluorescence predicted voltage-dependent fluorescence, N = 37, R2 = 0.243, F = 11.2, p = 1.9 \u00d7 10\u20133 and the y-intercept was significantly above 0, y-int = 0.235, t(35)=5.34, p = 5.6 \u00d7 10\u20133.\n\nCollectively, our data support the conclusion that low $\\DeltaCa_{AP}$ branches exhibit less bAP-evoked calcium influx because of branch-specific reductions in local bAP amplitude. First, our experiments with bursts of 5 bAPs, application of 4-AP, and glutamate application show that low $\\DeltaCa_{AP}$ branches contain VGCCs that open in response to large depolarizations (Figure 3). Second, our experiments with NBQX and dendritic loose-patch recordings show that bAPs successfully propagate to low $\\DeltaCa_{AP}$ branches in the absence of synaptic input (Figure 4). Third, our voltage imaging experiments show that the amplitude of bAPs is attenuated in low $\\DeltaCa_{AP}$ branches (Figure 5). These data are consistent with the mechanistic explanation that bAPs fail to evoke calcium influx in low $\\DeltaCa_{AP}$ branches because the local bAP amplitude does not exceed the threshold for VGCC opening. Therefore, we investigated why bAPs are selectively attenuated in low $\\DeltaCa_{AP}$ branches.\n\n### bAP-evoked calcium influx attenuates at branch points\n\nbAP amplitude and bAP-evoked calcium influx can attenuate at branch points due to dendritic impedance mismatch and localized expression of potassium channels (Spruston et al., 1995; Williams and Stuart, 2000; Vetter et al., 2001; Frick et al., 2003; Cai et al., 2004; Gasparini et al., 2007; Harnett et al., 2013). Consistent with these observations, we found that $\\DeltaCa_{AP}$ often attenuates across branch points, as revealed by comparing differences in $\\DeltaCa_{AP}$ at pairs of sites within the same dendritic segment or across one dendritic branch point (Figure 6\u2014figure supplement 1A-C). The ratio of $\\DeltaCa_{AP}$ (influx at distal site divided by proximal site) tends to be smaller for pairs of sites spanning a branch point than for those within the same segment (rank-sum: p = 0.0145, Figure 6\u2014figure supplement 1C). This result was corroborated by the observation that low $\\DeltaCa_{AP}$ branches typically had higher dendritic branch order (defined as the number of on-path branch points between the soma and the recording site) than high $\\DeltaCa_{AP}$ branches (Figure 6\u2014figure supplement 1D). While these data suggest a relationship between $\\DeltaCa_{AP}$ and the pattern of dendritic branching, they do not fully account for the variance in $\\DeltaCa_{AP}$ observed across branches in L2/3 pyramidal cells (Figure 6\u2014figure supplement 1D, R2 = 0.178).\n\n### Low \u0394CaAP branches have a more elaborate branch structure than high \u0394CaAP branches\n\nThe electrotonic impedance (i.e., passive input resistance) of a dendrite scales inversely with the surface area of membrane. Therefore, if low $\\DeltaCa_{AP}$ branches are within sections of the dendritic tree that contain more extensive branching, then they have a smaller impedance, which might reduce bAP amplitude and $\\DeltaCa_{AP}$ . To examine this possibility, we developed a metric based on the dendritic morphology called \u2018branch complexity\u2019 that accounts for all nearby dendritic branches and is independent of branch order. This approach measures the total length of dendrite near a recording site with an exponential filter to discount branches that are further from the site (so ithas units of millimeters). We measured branch complexity over a length constant of \u03bb = 145 \u00b5m because propagating bAPs simultaneously depolarize ~145 \u00b5m of dendrite in L2/3 pyramidal cells (conduction velocity is 154.9 \u00b5m/ms and AP duration is 0.94ms, Figure 6\u2014figure supplement 2).\n\nWe compared the branch complexity of pairs of dendritic recording sites within the same cell that were located approximately the same distance from the soma but for which there was a large difference in $\\DeltaCa_{AP}$ (Figure 6A\u2013E). The low $\\DeltaCa_{AP}$ site had a higher branch complexity than the high $\\DeltaCa_{AP}$ site in all pairs (Figure 6E), indicating that low $\\DeltaCa_{AP}$ sites are surrounded by more extensive branching than high $\\DeltaCa_{AP}$ sites. To confirm that branch complexity is inversely proportional to input resistance, we reconstructed all cells used in this analysis as biophysical compartment models in the NEURON simulation environment and directly measured the input resistance by injecting small hyperpolarizing currents into each recording site (Carnevale and Hines, 2006). In every pair, the low $\\DeltaCa_{AP}$ site had a smaller input resistance than the high $\\DeltaCa_{AP}$ site (Figure 6F). Additionally, branch complexity was inversely correlated with input resistance (R2 = 0.93 for \u03bb = 145 \u00b5m), confirming its validity as a measure of electrotonic properties (Figure 6\u2014figure supplement 3A-B). These results and conclusions hold for measurements of branch complexity over length constants ranging from 5 to 400 \u00b5m (Figure 6\u2014figure supplement 3C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig6-v2.jpg)\n\n**Figure 6.:** (A) Maximum z-projection of Alexa 594 fluorescence from a L2/3 pyramidal cell. Dots indicate location of calcium imaging sites for a high (black) and low (blue) \u0394CaAP branch. The two sites are approximately the same distance from the soma (high \u0394CaAP: 145 \u00b5m, low \u0394CaAP: 131 \u00b5m). (B) Calcium-dependent fluorescence transient evoked by bAP in high (black) and low (blue) \u0394CaAP sites from panel A. (C) Comparison of \u0394CaAP in distance-matched, within-cell pairs. N = 20/8/8, N = 12 pairs, Ratio: 0.17, (range: 0.06\u20130.29). (D) Comparison of the distances from the soma for each pair of recording sites. (E) Comparison of branch complexity in high (black) and low (blue) \u0394CaAP sites, using a distance-discounted measurement of nearby dendritic branches. Branch complexity was significantly higher in low \u0394CaAP sites, U-Test, U = 215, z = 3.73, p = 1.9 \u00d7 10\u20134. (F) Comparison of input resistance for high (black) and low (blue) \u0394CaAP sites shown in panels C and D, measured in computational simulations of compartment models of each cell in NEURON. Input resistance was significantly lower in low \u0394CaAP sites, U-Test, U = 213, z = 3.61, p = 3.1 \u00d7 10\u20134. (G) Average number of branches at a given distance from a recording site for high (black) and low (blue) \u0394CaAP dendrites. This curve was multiplied by a symmetric exponential filter with a length constant of 145 \u00b5m and then integrated to compute the branch complexity in panel E. Mean \u00b1 SEM. (H) Schematic of morphologies with same branch order but different branch complexity. The blue and black site in each neuron have the same branch order, but the branch complexity of the blue site is higher due to the number of branches distal to the site (left), the number of branches on a sister dendrite (middle), and the distance from a previous branch (right).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Alexa 594 MZP showing two ROIs within a segment of dendrite or across a branch point. Blue ROI is more distal than black ROI. (B) Calcium influx evoked by bAP in ROIs from panel A. (C) Distribution of the ratio of peak calcium influx (distal/proximal) for within-segment pairs (N = 22, median = 0.798) and across branchpoint pairs (N = 41, median = 0.361). U-test: U = 874, z = p = 0.015. Width of bar indicates number of observations. (D) Comparison of dendritic bAP-evoked calcium influx and branch order (N = 202, R2 = 0.178, F = 43.3, p = 4 \u00d7 10\u201310).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Alexa 594 MZP showing location of point ROI. The scan mirrors were parked at angle such that excitation light impinged directly on an ROI of interest (in this case a dendritic shaft), and fluorescence was collected at the maximal sample rate of the DAQ board. (B) Calcium-dependent fluorescence transients evoked by a bAP for 10 trials collected at the ROI indicated in panel A. (C) Average \u0394F/F for the 10 trials in panel B. (D) Alexa 594 MZP showing locations of two point ROIs that were 73 \u00b5m and 111 \u00b5m from the soma. (E) Normalized and smoothed $\\DeltaF/F$ for the two ROIs indicated in panel D. Note the small delay for the further ROI. (F) Somatic action-potential waveform recording from the cell in panel D. (G) Smoothed derivative of \u0394CaAP in dendritic spines, color-coded by their distance from the soma (color scale in panel H). We used the derivative to accurately measure the time-course of calcium influx in each spine. (H) Conduction delay of \u0394CaAP (measured at peak of derivative) as a function of distance. The inverse of the slope gives the conduction velocity of APs as they back-propagate through L2/3 cell dendrites. (I) Waveforms of APs recorded from L2/3 cells aligned to peak of second derivative (kink of AP waveform). (J) Histogram of FWHM of AP waveform for each cell. To compute the spatial spread of APs in L2/3 cell dendrites, we multiplied the average AP width by the conduction velocity $(154.9 \\frac{\u00b5m}{ms}*0.94 ms=146 \u00b5m)$.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Input resistance of each site, measured in NEURON, compared to the inverse of branch complexity of each site, measured based on the cell\u2019s dendritic morphology using a length constant of 145 \u00b5m. R2 = 0.93 at \u03bb = 145. We took the inverse because branch complexity should scale linearly with input conductance, which is the inverse of input resistance. (B) Correlation (R2) between branch complexity and input resistance for each length constant used to compute branch complexity. The arrow indicates the length constant used in panel A and Figure 6, computed based on the spatial waveform of the AP in L2/3 cell dendrites. (C) Comparison of branch complexity between high and low \u0394CaAP dendrites for each length constant of branch complexity. Red dotted line indicates length constant used in panel A and Figure 6. Y-axis is on a log scale.\n\nTo inspect why low $\\DeltaCa_{AP}$ branches had a higher branch complexity, we plotted the average number of dendritic branches distal and proximal to the target site (Figure 6G). Low $\\DeltaCa_{AP}$ branches are immediately proximal to dendritic branch elaboration (e.g. Figure 6A c.f. with Figure 6H, left), and closer to sister dendrites emerging proximal to the measurement site (c.f. with Figure 6H, middle and right). These results demonstrate that low $\\DeltaCa_{AP}$ branches are surrounded by more elaborate branching patterns than high $\\DeltaCa_{AP}$ branches, suggesting that dendritic branch structure may be sufficient to selectively reduce the amplitude of bAPs.\n\n### Dendritic branch structure is sufficient to explain reductions in bAP-evoked calcium influx\n\nTo determine if dendritic branch structure is sufficient for reducing $\\DeltaCa_{AP}$ , we reproduced our experimental results using a biophysical compartment model. We held all physiological parameters constant throughout each model except for the dendritic branch structure, allowing us to specifically measure the effects of dendritic morphology between high and low $\\DeltaCa_{AP}$ branches (Vetter et al., 2001). Using NEURON compartmental models of 8 reconstructed L2/3 pyramidal cells (all from the pairwise analysis described in Figure 6), we evoked a bAP with somatic current injection and measured the intracellular voltage waveform and the resulting calcium conductance at the same sites in which we had imaged calcium influx in acute brain slices (Figure 7A\u2013E). For each cell, we fit the density of dendritic A-Type potassium channels such that the bAP peaked at \u201310 mV in the high $\\DeltaCa_{AP}$ site (Figure 7D), which is consistent with the amplitude of bAPs measured \u223c100 \u00b5m from the soma in layer 2\u20133 pyramidal cells with dendritic whole-cell recordings (Larkum et al., 2007; Smith et al., 2013). We used this density of A-Type potassium channels throughout the entire dendritic tree of each cell. Under these conditions, for every within-cell pair, the low $\\DeltaCa_{AP}$ site had smaller bAP amplitude and peak calcium conductance, despite having the same channel densities as the high $\\DeltaCa_{AP}$ site (Figure 7B\u2013E). As an additional measure of dendritic excitability, we plotted the A-Type potassium channel density required for bAPs to peak at \u201310 mV in each dendritic site (Figure 7F). Low $\\DeltaCa_{AP}$ sites required lower potassium channel densities for their bAPs to peak at \u201310 mV, indicating that the branch structure surrounding low $\\DeltaCa_{AP}$ sites is less excitable than for high $\\DeltaCa_{AP}$ sites (Figure 7F). To visualize the spread of bAP-evoked voltage and calcium signals throughout the dendritic tree, we plotted two example cells with the color of each segment indicating the peak voltage and calcium conductance (Figure 7\u2014figure supplement 1). These data demonstrate that dendritic branch structure is sufficient to impact $\\DeltaCa_{AP}$ by altering the dendritic bAP amplitude in a branch-specific manner.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic of a neuron morphology used for NEURON simulations derived from the neuron shown in Figure 6A. Blue and black dots indicate high (black) and low (blue) \u0394CaAP recording sites. Red dendrites indicate section of dendrite that was computationally \u2018cut\u2019 in a subset of experiments. Recordings and injections were performed at the sites indicated with the gray triangles. (B) Dendritic voltage recordings of bAPs from high (black) and low (blue/red) \u0394CaAP sites in panel A in NEURON for an intact cell (left) or with cut dendrites (right). (C) Calcium conductances recorded from high (black) and low (blue/red) \u0394CaAP sites in panel A evoked by a back-propagating bAP in NEURON for an intact cell (left) or with cut dendrites (right). (D) Comparison of peak bAP voltage for each high/low \u0394CaAP pair recorded in NEURON from same sites as experimental recordings, for intact and cut cells (N = 12). Dendritic potassium channel density was fit so the high \u0394CaAP site would have a peak of \u201310 mV in intact cells. AP Peak was significantly reduced in low \u0394CaAP sites in the intact cells (U-Test, U = 78, z = 4.13, p = 3.7 \u00d7 10\u20135) but not different in cut cells (U-Test, U = 168, z = 1.01, p = 0.31). (E) Comparison of peak calcium conductance during bAP for each high/low \u0394CaAP site pair, as in panel D. Peak calcium conductance was significantly reduced in low \u0394CaAP sites in the intact cells (U-Test, U = 78, z = 4.13, p = 3.7 \u00d7 10\u20135) but not different in cut cells (U-Test, U = 155, z = 0.26, p = 0.79). (F) A-Type potassium channel density required for the bAP to peak at \u201310 mV for each site in intact or cut cells. A-Type potassium channel density was significantly reduced in low \u0394CaAP sites in the intact cells (U-Test, U = 160, z = 2.58, p = 9.7 \u00d7 10\u20133) but not different in cut cells (U-Test, U = 120, z = 0.42, p = 0.67). (G) Left: a synaptic conductance was injected into each site and the local EPSP was recorded in NEURON. Middle: dendritic EPSPs recorded in high and low \u0394CaAP dendritic sites. Right: comparison of dendritic EPSP amplitudes recorded in each high/low \u0394CaAP pair. Mean \u00b1 SEM. Dendritic EPSP amplitude was significantly reduced in low \u0394CaAP sites (U-Test, U = 79, z = 4.07, p = 4.7 \u00d7 10\u20135). (H) Same as in G, but with synaptic conductance injected into dendrite and recorded in the soma. Somatic EPSP amplitude was significantly reduced in low \u0394CaAP sites (U-Test, U = 101, z = 2.8, p = 5.1 \u00d7 10\u20133), but had a smaller effect size than difference in dendritic EPSP amplitude (see text).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Schematic of two neurons modeled in NEURON. The color of each segment indicates the peak voltage reached during a back-propagating AP. (B) Same as above but with color indicating peak calcium conductance during a back-propagating AP.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Dendritic voltage recordings of bAPs from high (black) and low (blue/green) \u0394CaAP sites in panel A in NEURON in a control cell (left) or with A-Type potassium channels removed (right). We removed A-Type potassium channels to simulate the application of 4-AP. (B) Calcium conductances recorded from high (black) and low (blue/green) \u0394CaAP sites in panel A evoked by a back-propagating bAP in NEURON in a control cell (left) or with A-Type potassium channels removed (right). (C) Comparison of peak bAP voltage for each high/low \u0394CaAP pair recorded in NEURON from same sites as experimental recordings, for control cells and with simulated 4-AP application (N = 12). (D) Comparison of peak calcium conductance during bAP for each high/low \u0394CaAP site pair, as in panel C. (E) Same as in Figure 7G, but with cut dendrites. Left: a synaptic conductance was injected into each site and the local EPSP was recorded in NEURON compartment models with cut dendrites. Middle: dendritic EPSPs recorded in high (black) and low (maroon) \u0394CaAP dendritic sites. Right: comparison of dendritic EPSP amplitudes recorded in each high/low \u0394CaAP pair. Dendritic EPSP amplitude was not different between high and low \u0394CaAP sites after simulated cutting (U-Test, U = 161, z = 0.61, p = 0.54). (F) Same as in Figure 7H, but with cut dendrites. Synaptic conductance injected into dendrite and recorded in the soma. Somatic EPSP amplitude was not different between high and low \u0394CaAP sites after simulated cutting (U-Test, U = 157, z = 0.38, p = 71).\n\nWe performed a simulated \u2018cutting\u2019 experiment in which we removed dendritic branches from the reconstruction that were closer to the low $\\DeltaCa_{AP}$ site than the high $\\DeltaCa_{AP}$ site (Figure 7A), to determine if simplifying the dendritic branch structure can recover $\\DeltaCa_{AP}$ . After cutting dendritic branches near the low $\\DeltaCa_{AP}$ site, differences in the bAP amplitude, calcium channel conductance, and the A-Type potassium channel density required to generate bAPs that peak at \u201310 mV were all nullified (Figure 7B\u2013F). We also computationally recapitulated our results with 4-AP (Figure 3C\u2013D) by artificially removing A-Type potassium channels (Figure 7\u2014figure supplement 2A-D). These data confirm that dendritic branch structure directly affects local dendritic excitability. Furthermore, these results support the model that increased dendritic branching around low $\\DeltaCa_{AP}$ recording sites is sufficient to reduce bAP amplitude and $\\DeltaCa_{AP}$ .\n\nBranch structure-dependent changes in dendritic excitability may also affect the amplitude, kinetics, and efficacy of synaptic input arriving at each branch. Using our compartment models, we simulated synaptic input by injecting a conductance into each dendritic site (Figure 7G\u2013H). As expected, the local EPSP amplitude was smaller in low $\\DeltaCa_{AP}$ branches because of their reduced input resistance (Figures 7G and 6F). Although EPSP size measured at the soma (but evoked in the dendrites) was lower for synapses on low $\\DeltaCa_{AP}$ branches, the difference was minimized due to frequency-dependent cable attenuation (Figure 7H, effect size dendritic EPSPs: \u20133.23, effect size somatic EPSPs: \u20131.4). The differences in local EPSP amplitude were abolished after cutting dendritic branches near the low $\\DeltaCa_{AP}$ site (Figure 7\u2014figure supplement 2E-F). Therefore, although dendritic branch structure affects the local amplitude of synaptic potentials, it has a minimal impact on the efficacy of synaptic input at depolarizing the soma.\n\n### Reductions in bAP amplitude have a selective effect on VGCC-mediated calcium influx\n\nOur data support a model in which elaborated dendritic branching reduces dendritic excitability, which lowers bAP amplitude and bAP-evoked calcium influx. However, it remains to be determined why bAP-dependent amplification of synaptic NMDAR-mediated calcium influx is spared by reductions in bAP amplitude that impact bAP-evoked calcium influx through VGCCs. Using published data (Jahr and Stevens, 1990; Reuveni et al., 1993), we plotted the voltage-dependent open-probabilities and time constants for VGCCs and NMDARs (Figure 8A\u2013B). Using these parameters, we simulated VGCC and NMDAR conductances and the resulting voltage-dependent calcium influx in response to quadratic depolarizing voltage stimuli designed to resemble bAPs (Figure 8C). Due to the steep voltage-sensitivity and long time constant of VGCCs (Figure 8A\u2013B), they exhibit a dramatic drop-off of calcium influx for voltage steps peaking below \u201310 mV (Figure 8C\u2013E). Although the open-probability of NMDARs is highly sensitive to peak voltage (Figure 8C\u2013D), the interaction between open-probability and driving force minimizes differences in calcium influx evoked across a wide range of voltages (Figure 8E). These data demonstrate how small reductions in bAP amplitude can eliminate $\\DeltaCa_{AP}$ mediated by VGCCs, while largely sparing bAP-dependent amplification of synaptically evoked, NMDAR-mediated calcium influx.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/76993/elife-76993-fig8-v2.jpg)\n\n**Figure 8.:** (A) Steady-state open probability of VGCCs and NMDARs as a function of voltage due to voltage-dependent activation of VGCCs and Mg2+-block of NMDARs. (B) Voltage-dependent time constant of the activation gate for VGCCs and Mg2+ block for NMDARs. (C) We simulated the response of VGCCs and NMDARs to a 1ms (left) or 0.5ms (right) quadratic depolarizing voltage with varying amplitude (1st row) designed to resemble bAPs. Voltage-dependent open-probability (2nd and 3rd rows) and voltage-dependent calcium current (4th and 5th rows) for VGCCs (teal) and NMDARs (black). Purple and red traces correspond to summary data in panels D and E. (D) Peak open probability of VGCCs and NMDARs during quadratic voltage protocols in panel C. (E) Integral of calcium influx through VGCCs and NMDARs during quadratic voltage protocols in panel C.\n\n## Discussion\n\nBack-propagating APs regulate synaptic plasticity by evoking voltage-dependent calcium influx throughout dendrites. Here, we show that bAP-dependent calcium influx varies in a dendrite branch-specific manner in cortical L2/3 pyramidal cells due to branch-specific reductions in input resistance inherited from the local morphology of the dendritic tree. Sections of the dendritic tree with more elaborate branch patterns have lower input resistance, leading to a branch-specific reduction in bAP amplitude. These branches have a selective reduction in bAP-evoked calcium influx through VGCCs despite containing VGCCs and successfully propagating bAPs in the absence of synaptic input. However, these branches maintain bAP-dependent amplification of synaptically-evoked calcium influx through NMDARs due to the shallower voltage-dependence and faster kinetics of the Mg2+-block of NMDARs. Our results demonstrate that dendritic excitability, bAPs, and bAP-dependent calcium signals vary between branches, which may provide a mechanism for synaptic plasticity rules and the computational properties of dendrites to vary across subcompartments of individual neurons.\n\n### Branch-specific variation in dendritic morphology shapes voltage-dependent calcium signals\n\nMany studies have demonstrated that bAP amplitude and bAP-evoked calcium influx are attenuated in the distal compartments of pyramidal cells (Regehr et al., 1989; Spruston et al., 1995; Magee and Johnston, 1997; Waters et al., 2003; Froemke et al., 2005; Sj\u00f6str\u00f6m and H\u00e4usser, 2006; Larkum et al., 2007). Our work additionally demonstrates that bAP amplitude and $\\DeltaCa_{AP}$ can vary across branches, independent of distance from the soma. This variance can be explained by the branch structure of the dendritic tree. Previous studies have focused on attenuation of $\\DeltaCa_{AP}$ as a function of dendritic branch order (Spruston et al., 1995; Williams and Stuart, 2000); however, we find that explaining the observed variance in $\\DeltaCa_{AP}$ requires consideration of the full dendritic morphology, including the number of branches distal to the recording site and on sister dendrites. Elaborate branching patterns reduce input resistance, local bAP amplitude, and bAP-evoked calcium influx because dendritic input resistance is proportional to the surface area of membrane. Although our experiments show that the effect of branch structure on impedance is sufficient to cause the branch-specific differences we observed, additional mechanisms, such as variation in potassium channel density, may also contribute. We note that because bAPs are time varying signals, it is necessary to consider the complex impedance of each dendrite to fully explain bAP attenuation. As an alternative, we use computational models that account for complex impedance to demonstrate that bAP attenuation is predicted by the dendritic branching structure.\n\nOur data cannot precisely resolve how much bAPs are attenuated in low $\\DeltaCa_{AP}$ branches because loose-patch recordings do not directly measure intracellular voltage (Figure 4) and voltage imaging signals are not precisely calibrated to absolute voltage (Figure 5). However, due to the differential impact on VGCC- and NMDAR-mediated calcium influx, we hypothesize that bAPs peak between \u201340 mV and \u201315 mV in low $\\DeltaCa_{AP}$ branches, based on our analysis in Figure 8. Testing this prediction with voltage indicators would require precise calibration of dendritic voltage-dependent fluorescence, which requires knowledge of the dendritic resting potential and a perturbation to a known voltage (such as 0 mV). These results provide a key insight into the mechanisms underlying the intracellular heterogeneity of dendritic biophysical properties and bolster our understanding of dendritic physiology.\n\n### Activation of VGCCs in low \u0394CaAP branches\n\nOur data indicate that bAP-dependent activation of VGCCs is branch-specific in cortical L2/3 pyramidal cells. Low $\\DeltaCa_{AP}$ branches exhibit little to no calcium influx evoked by single bAPs or even bursts of 5 bAPs at 150 Hz. In vivo measurements of L2/3 pyramidal cells have not reported high frequency bursts of bAPs (Smith et al., 2013; Wei et al., 2020), suggesting that in general, somatic depolarization does not lead to activation of VGCCs in low $\\DeltaCa_{AP}$ branches without additional depolarization from local synaptic input. We demonstrated that dendritic glutamate application can evoke VGCC-mediated calcium influx in low $\\DeltaCa_{AP}$ dendrites; however, this approach was designed to maximize local depolarization, rather than to resemble a physiological stimulus.\n\nThe lack of bAP-dependent activation of VGCCs in low $\\DeltaCa_{AP}$ branches may have important implications for neuronal function. First, because VGCC-mediated influx is responsible for multiple forms of synaptic and cellular plasticity (Kapur et al., 1998; Dolmetsch et al., 2001; Yasuda et al., 2003; Nevian and Sakmann, 2006; Scheuss et al., 2006, Brigidi et al., 2019), these data suggest that each of these forms of plasticity may be branch-specific in L2/3 pyramidal cells, at least with respect to their activation by bAPs. Second, these results have clear significance for the interpretation of dendritic calcium signals in vivo. A fundamental challenge in measuring dendritic activity with calcium imaging in vivo is distinguishing between calcium influx evoked by local synaptic input and global calcium signals, such as those evoked by bAPs (Xu et al., 2012; Beaulieu-Laroche et al., 2019; Francioni et al., 2019; Kerlin et al., 2019). Our results indicate that in low $\\DeltaCa_{AP}$ branches, bAPs do not evoke calcium signals without the addition of local synaptic input, which could make them a useful site for measuring local dendritic processing.\n\n### Implications for synaptic plasticity\n\nPrevious work has demonstrated that bAP-evoked calcium influx selectively drives LTD while bAP-dependent amplification of synaptic calcium influx selectively drives LTP (Feldman, 2000; Matsuzaki et al., 2004; Nevian and Sakmann, 2006; Lee et al., 2009). Therefore, identifying branches with a selective reduction in bAP-evoked calcium influx while maintaining bAP-dependent amplification of synaptically mediated calcium influx suggests that the ratio of LTD to LTP varies across branches in L2/3 pyramidal cells. Since the ratio of STDP-dependent depression to potentiation determines the cooperativity, strength, and sparsity of synaptic inputs (Song et al., 2000; Froemke et al., 2005; Sj\u00f6str\u00f6m and H\u00e4usser, 2006), our work suggests that synaptic tuning properties may vary in a branch-specific manner based on the local dendritic branch structure. These findings complement a series of papers showing that calcium-dependent plasticity rules vary as a function of distance from the soma (Golding et al., 2002; Froemke et al., 2005; Sj\u00f6str\u00f6m and H\u00e4usser, 2006; Gordon et al., 2006).\n\nOur experiments were conducted in juvenile mice (between P21 and P28). Although the dendritic branch structure is static after this age (Koleske, 2013; Richards et al., 2020), it is possible that changes in channel composition dampen the effects of dendritic branch structure on excitability. We show that such effects are possible with compartment models (Figure 7F), and it is known that changes in dendritic excitability can occur as a result of synaptic plasticity induction (Frick et al., 2003; Frick et al., 2004; Losonczy et al., 2008). Therefore, our findings may suggest a developmental function of low $\\DeltaCa_{AP}$ branches in shaping synaptic connectivity, consistent with the lower incidence of calcium influx in specific branches of L2/3 pyramidal cells during development in visual cortex (Yaeger et al., 2019).\n\n### Implications for dendritic computation\n\nOur work suggests that the dendritic branch structure of low $\\DeltaCa_{AP}$ branches can expand the representational capacity of neurons (H\u00e4usser and Mel, 2003). First, the lower input resistance of low $\\DeltaCa_{AP}$ branches makes them more compartmentalized from the rest of the cell, such that they may be more biased toward performing local computations (Polsky et al., 2004). Interestingly, our compartment models indicate that compartmentalization is asymmetric (Williams, 2004), such that forward propagation of synaptic input from low $\\DeltaCa_{AP}$ branches to the soma may be equivalent to high $\\DeltaCa_{AP}$ branches, despite their different biophysical properties. Second, branch-specific variation in calcium-dependent plasticity signals may diversify synaptic tuning, which would increase dendritic computational capacity (Poirazi et al., 2003; H\u00e4usser and Mel, 2003; Francioni and Harnett, 2021; Bicknell and H\u00e4usser, 2021). Together, these considerations indicate that low $\\DeltaCa_{AP}$ branches may be hotspots for dendritic computation due to their enhanced dependence on cooperative synaptic processing and higher likelihood of containing heterogeneous synaptic tuning.\n\n## Materials and methods\n\n### Genetic constructs\n\nFor voltage imaging, we used QuasAr6a, an improved Archaerhodopsin-derived near-infrared genetically encoded voltage indicator (GEVI) (Wang et al., 2021). To improve expression and membrane trafficking we created the construct CAG::QuasAr6a-TS-dmCitrine-TSx3-ER2-p2a-jRGECO1a-CAAX, following the design in Adam et al., 2019, where TS is the trafficking sequence from Kir2.1 (Gradinaru et al., 2010), dmCitrine is the non-fluorescent Y66G mutant of mCitrine (Adam et al., 2019), and ER2 is the endoplasmic reticulum export signal FCYENEV (Gradinaru et al., 2010). The self-cleaving p2a linker enabled bicistronic co-expression of a membrane-targeted Ca2+ indicator, jRGECO1a-CAAX. In the present studies, this indicator was only used for locating expressing neurons; for consistency with other experiments in this manuscript, we used the blue-shifted dye, Fluo-5F for Ca2+ imaging.\n\nThe genes were cloned into a second-generation lentiviral backbone with a CAG promoter (Addgene: #124775) using standard Gibson Assembly. Briefly, the vector was linearized by double digestion using BamHl and EcoRl (New England Biolabs, Ipswich, MA) and purified by the GeneJET gel extraction kit (ThermoFisher, Waltham, MA). DNA fragments were generated by PCR amplification and then fused with the backbones using NEBuilder HiFi DNA assembly kit (New England Biolabs). All plasmids were verified by sequencing (GeneWiz, Cambridge, MA).\n\n### In utero electroporation (IUE)\n\nAll procedures involving animals were in accordance with the National Institutes of Health Guide for the care and use of laboratory animals and were approved by the Harvard University Institutional Animal Care and Use Committee (IACUC, Protocol #: IS00000571-3). The IUE surgery was made as described previously (Kwon and Sabatini, 2011). Embryonic day 15.5 (E15.5) timed-pregnant female CD1 mice (Charles River, Wilmington, MA) were deeply anesthetized and maintained with 2% isoflurane. The animal body temperature was maintained at 37 \u00b0C. Uterine horns were carefully exposed, and periodically rinsed with warm PBS. The plasmid DNA was diluted with PBS (2 \u03bcg/\u03bcL; 0.005% fast green), and 1 \u00b5L of the mixture was injected into the left lateral ventricle of pups. Electrical pulses (40 V, 50ms duration) were delivered five times at 1 Hz using a tweezers electroporation electrode (CUY650P5; Nepa Gene, Ichikawa, Japan). Injected embryos were placed back into the abdominal cavity, and the surgical wound was sutured with PGCL25 absorbable sutures (Patterson, Saint Paul, MN).\n\n### Slice preparation\n\nAcute coronal slices were prepared from the somatosensory cortex of young adult, C57Bl/6 j wild-type mice (Jackson Labs, Bar Harbor, ME) between postnatal days P21-P28. Animals were anesthetized via inhalation of isoflurane then immediately decapitated. The brain was rapidly removed and placed in ice-cold cutting artificial cerebrospinal fluid (ACSF) containing (in mM): 125 NaCl, 2.5 KCl, 25 NaHCO3, 1.25 NaH2PO4, 1 CaCl2, 10 MgCl2, and 25 glucose, saturated with 95% O2 and 5% CO2. We cut coronal slices with a VT1200S Vibratome (Leica, Buffalo Grove, IL) while maintained in the cutting solution. Slices were then incubated at 34 \u00b0C for 30 min in a recovery ACSF containing (in mM): 92 NaCl, 28.5 NaHCO3, 2.5 KCl, 1.25 HaH2PO4, 2 CaCl2, 4 MgCl2, 25 glucose, 20 HEPES, 3 Sodium Pyruvate, and 5 Sodium Ascorbate, saturated with 95% O2 and 5% CO2. Slices were next transferred to a 20 \u00b0C room in recovery ACSF until use ( > 30 min after slicing) and not held for longer than 8 hr. Experiments were conducted at 34 \u00b0C in recording ACSF containing (in mM): 125 NaCl, 2.5 KCl, 25 NaHCO3, 1.25 NaH2PO4, 1.5 CaCl2, 1 MgCl2, and 25 glucose, saturated with 95% O2 and 5% CO2. All solutions were prepared with osmolality between 300\u2013310 mOsm/kg, adjusted with either water or glucose. For voltage imaging experiments in Figure 5, coronal slices were prepared from CD1 mice between P21-P28. The slicing solution contained (in mM): 210 sucrose, 3 KCl, 26 NaHCO3, 1.25 NaH2PO4, 5 MgCl2, 10 D-glucose, 3 sodium ascorbate and 0.5 CaCl2, and was saturated with 95% O2 and 5% CO2. The slices were transferred to an incubation chamber containing the recording solution (in mM): 124 NaCl, 3 KCl, 26 NaHCO3, 1.25 NaH2PO4, 2 MgCl2, 15 D-glucose and 2 CaCl2, and was saturated with 95% O2 and 5% CO2.\n\n### Electrophysiology\n\nSomatic whole-cell recordings were acquired from cortical excitatory L2/3 pyramidal cells using IR-DIC. Patch pipettes (2\u20134.5 M\u03a9) were filled with an internal solution containing (in mM): 130 K-Gluconate, 10 KCl, 10 HEPES, 4 MgATP, 0.5 Na2GTP, 10 Phosphocreatine-disodium salt, 0.3 Fluo-5F and 0.01 Alexa 594. For voltage-imaging experiments in Figure 5, the internal solution contained (in mM): 8 NaCl, 130 KMeSO3, 10 HEPES, 5 KCl, 0.5 EGTA, 4 Mg-ATP, 0.3 Na3-GTP, 0.3 Fluo-5F, and 0.01 JF549i. The pH was adjusted to 7.3 using KOH and osmolality was adjusted to 285\u2013295 mOsm/kg with water. In a subset of experiments shown in Figure 2E, 300 \u00b5M Fluo-4 was used instead of Fluo-5F, but amplitudes of calcium signals were comparable, so we merged the data. All recordings were performed with a Multiclamp 700B amplifier (Molecular Devices, San Jose, CA). Pipette capacitance was neutralized prior to break-in and the series resistance was fully balanced for all recordings. Series resistance ranged from 7 to 25 M\u03a9. We elicited APs by injecting a 1\u20132ms current of 0.5\u20133.5 nA. The average resting membrane potential was \u201379.5 mV with a standard deviation of 6.13 mV (N = 420). Recordings were aborted if the cell\u2019s membrane potential exceeded \u201360 mV, if the dendrites begun filling with calcium (as indicated by the baseline Fluo-5F signal), or if the series resistance became too high for us to reliably evoke action potentials. For experiments in which we performed glutamate uncaging, we also aborted recordings if the input resistance of the cell exceeded 200 M\u03a9. When we performed glutamate uncaging, we added the following drugs via bath application: 3.75 mM MNI-Glutamate (for uncaging), 10 \u00b5M 2-CA (to reduce presynaptic release probability and maintain quiescent recording conditions), 1 unit/mL glutamate pyruvate transaminase (which catalyzes free glutamate into $\\alpha$-ketoglutarate), and 3 mM Sodium Pyruvate (a necessary cofactor for GPT), to the recording ACSF. In experiments where we blocked uncaging-evoked depolarization in Figure 4, we added 10 \u00b5M NBQX to the recording ACSF.\n\nDendritic loose-patch recordings were acquired from cortical excitatory L2/3 pyramidal cell dendrites after acquiring somatic whole-cell recordings and filling the cells with 10 \u00b5M Alexa 594. The open-tip resistance of dendritic pipettes was 8\u201312 M\u03a9, and the pipettes were filled with recording ACSF. Dendritic recordings were made with a Multiclamp 700B amplifier (Molecular Devices) in current-clamp mode. We used scanning DIC and two-photon imaging to target pipettes to dendritic branches. Before acquiring a loose-patch seal, we pushed the dendritic pipette into the dendrite until we observed a visible kink in the dendrite. For each dendritic recording, we recorded the electrical signal evoked by an AP before and after applying a brief pulse of negative pressure to achieve a loose-patch seal (Figure 4\u2014figure supplement 1). All dendritic analyses in Figure 4 are derived from the difference between these two signals, which removes small electrical artifacts of somatic current injection and focuses our analysis on the signal arriving directly from the dendritic membrane.\n\nThe glutamate puff solution used in Figure 3 was applied with a large patch-pipette ( < 1 M\u03a9) connected to a picospritzer. The puff solution was composed of recording ACSF in addition to 1 mM glutamate, 20 \u00b5M CPP and 50 \u00b5M MK-801. For glutamate puff experiments, we also added 20 \u00b5M CPP and 50 \u00b5M MK-801 to the recording ACSF to block NMDARs. In some experiments, we puffed recording ACSF onto the dendrite without glutamate or NMDAR blockers to control for displacement artifacts evoked by the positive pressure (Figure 3\u2014figure supplement 1). We used scanning DIC and two-photon imaging to bring puff pipettes near dendrites and used a short 5\u201315ms puff to apply glutamate to dendritic branches. The pressure of the puff was increased gradually from 5 to 20 PSI until a clear somatic depolarization and dendritic calcium signal were observed.\n\n### Two-photon imaging and glutamate uncaging\n\nTwo-photon imaging was performed with a custom-built microscope described previously (Carter and Sabatini, 2004). We tuned a mode-locked femtosecond laser to 840 nm to excite both Fluo-5F and Alexa 594. All calcium imaging was performed >10 min after break-in to allow fluorophores to passively diffuse into the dendritic tree. Stimulus-evoked changes in fluorescence were quantified as the change in green (Fluo-5F) fluorescence relative to a baseline period, divided by the baseline red (Alexa 594) fluorescence (\u0394G/R) (Bloodgood and Sabatini, 2007). We used a custom algorithm to center the field of view on each trial (Carter and Sabatini, 2004). We measured fluorescence with a 2ms line-scan through the recording sites (at least 1 dendritic shaft and 0\u20133 dendritic spines depending on the experiment) and averaged over the spatial coordinates of each compartment to extract a time-varying trace (Figure 1). We waited at least 10 s in between trials to minimize photodamage and allow the calcium signal to fully return to baseline. In the experiments in Figure 6\u2014figure supplement 2, we performed point-scans on dendritic spines to maximize the sampling rate (recorded at 125 kHz and downsampled to 8 kHz to minimize shot noise).\n\nTo perform laser photolysis of MNI-glutamate, we used a short, 500 \u00b5s femtosecond laser pulse tuned to 725 nm. For each experiment, we gradually increased laser intensity until either a 0.5 mV EPSP was generated or a clear calcium signal in the dendritic spine was evoked. We moved the uncaging spot around the dendritic spine to maximize the EPSP size as an attempt to uncage glutamate directly apposed to the postsynaptic density (Figure 1B and D).\n\n### Simultaneous voltage and calcium imaging\n\nInterleaved voltage- and calcium-imaging experiments in Figure 5 were conducted on modified home-built structured illumination epifluorescence microscope previously reported (Adam et al., 2019). Briefly, blue illumination was patterned by a digital micromirror device (DMD) and used for structured illumination calcium imaging via the calcium-sensitive dye Fluo-5F. Yellow illumination was also patterned by a DMD and used for structured illumination mapping of dendritic morphology via a dye JF549i. Red illumination was patterned by a holographic spatial light modulator (SLM) and used for structured illumination voltage imaging.\n\nLaser lines from a blue laser (488 nm, 150 mW, Obis LS) and green laser (561 nm, 150 mW, Obis LS) were combined, sent through an acousto-optic modulator for amplitude control, and expanded onto a DMD (V-7000 VIS, ViALUX) for spatial modulation. The DMD was then re-imaged onto the sample via a 25 x water-immersion objective, NA 1.05, Olympus XLPLN-MP. A red laser (MLL-FN-639, 1 W, CNI lasers) was expanded onto an SLM (P1920-0635-HSP8, Meadowlark, Frederick, CO), combined with the blue and yellow lasers via a polarizing beamsplitter, and re-imaged onto the back aperture of the objective. Fluorescence was collected by the objective and imaged onto a sCMOS camera (Hamamatsu Orca Flash 4.0) with the appropriate emission filter for each indicator. Voltage-imaging recordings were acquired at a 1 kHz frame rate. Calcium imaging was recorded at 20 Hz.Two-photon imaging and reconstruction was performed with a custom-built microscope adapted to be combined with the 1 P illumination. Maximum intensity projections of z-stacks were used to form images of the dendritic arbor.\n\n### Physiology and imaging analysis\n\nAll analysis was performed using custom software written in MATLAB and Python. All plots with error bars show mean +/- standard error. To compute the amplitude and peak time of uEPSPs, we first averaged across trials, subtracted the baseline voltage, and applied a median filter with a 1ms window. Then, we found the maximum voltage between 0 and 25ms after uncaging and defined this as the amplitude and peak time. The amplitude of stimulus-evoked calcium signals (\u0394G/R) was computed using a 10ms average of the fluorescence signal centered around the average peak time for each recording site. To compute the amplitude of dendritic electrical signals in Figure 4, we first computed the average electrical signal in a 0.2ms window surrounding the peak voltage for each trial. The amplitude of each recording was defined as the average peak voltage from the trials in the top 50th percentile signal-to-noise ratio (peak divided by baseline standard deviation). While this method is unsatisfactory for proper comparisons of amplitude across recordings, we only use these data to determine if somatic APs evoke a measurable electrical signal in the dendrites. For measurements of the ratio of $\\DeltaCa_{AP}$ from within segment or across branch point pairs (Figure 6\u2014figure supplement 1A-C), we only considered pairs if the proximal site had a $\u0394Ca_{AP}>0.1$ because the ratio of $\u0394Ca_{AP\u2212dist}/\u0394Ca_{AP\u2212prox}$ is not well-defined if the proximal site failed to exhibit AP-evoked calcium influx. $\\DeltaCa_{AP}$ never dropped to \u223c0 and then recovered in more distal sites along the same branch. Effect sizes in Figure 7G\u2013H were computed using Cohen\u2019s d.\n\nFor analysis of epifluorescence voltage- and calcium-imaging data in Figure 5, we created a spike-triggered average (STA) movie comprising the average bAP-evoked signal. An initial estimate of the STA waveform for each dendritic branch was calculated by averaging the pixel values in a region of interest comprising the 5% of pixels with greatest mean brightness. Maps of the baseline (F) and spike-dependent ($\\DeltaF$) signals were then calculated pixel-by-pixel by linear regression of the STA movie against a normalized copy of the initial STA waveform estimate, after accounting for a pixel-dependent offset. To account for spatially variable background, watershed segmentation was applied to the $\\DeltaF$ map to identify regions with high spike-dependent signal. For the region surrounding pixels with the highest $\\DeltaF$, a pixel-by-pixel plot of $F$ vs. $\\DeltaF$ was fit to a line via linear regression. The inverse of the slope was the calculated $\\DeltaF/F_{0}$.\n\n### Morphological analysis\n\nAfter all experiments, we collected two-photon z-stacks of each cell to map the dendritic morphology between the soma and the recording sites. In the neurons used in Figure 6, we imaged the entire apical dendritic tree after finishing experiments to reconstruct the cells for morphological analyses and compartmental modeling in NEURON. For every recording site, we measured the on-path distance from the soma using maximum z-stack projections of each cell. The distance for each recording site is a slight underestimate of the true on-path distance from the soma because we ignored changes along the z-axis. All imaging was conducted close to the surface of the slice and the maximal angle between the soma and any recording site was 25\u00b0, so errors in measured distance were <10%.\n\nWe developed a metric for branch complexity that fully accounts for the extent of nearby dendritic branching, independent of the structure of the dendritic tree. First, we defined the term $\\beta$ as the number of dendritic branches at a given on-path distance from a recording site (Figure 6G). $\\beta$ always starts as 2 (one on each side of the recording site) and increases by 1 after every branch point. This is distinct from Scholl analysis as it measures distance based on the on-path distance rather than absolute distance. Next, we performed point-wise multiplication between $\\beta$ and an exponential filter to discount for dendritic branches that are further away from the recording site. Finally, we computed branch complexity as $\u03a9=\\int_{0}^{\u221e}\\betax*exp\u2061\\frac{-x}{\\lambda}dx$ , which is largest at sites that are closest to large numbers of dendritic branches and is inversely proportional to electrotonic input resistance.\n\nThe true electrotonic input resistance is analytically determined by the cable length constant, which is not feasible to measure in thin caliber L2/3 pyramidal cell dendrites. As an alternative, we estimated how much membrane is simultaneously depolarized by a bAP as an estimate of how much of the dendritic tree can affect the depolarization at a particular site. We used a rapid point-scan imaging approach that allowed us to measure $\\DeltaCa_{AP}$ in dendritic spines at >8 kHz (Figure 6\u2014figure supplement 2A). We plotted the latency to peak influx (measured from the derivative of fluorescence) as a function of the distance from the soma and used linear regression to estimate the conduction velocity (Figure 6\u2014figure supplement 2A-B). We found that the conduction velocity of bAPs in L2/3 dendrites is 154.9 \u00b5m/ms. In the same cells used to measure conduction velocity, we plotted the somatic AP waveforms and measured their full-width half-max (Figure 6\u2014figure supplement 2C-D). The somatic AP has a duration of about 0.94ms (Figure 6\u2014figure supplement 2C-D). To compute the spatial width of a propagating bAP, we multiplied the conduction velocity by the duration (154.9 \u00b5m/ms * 0.94ms = 145.6 \u00b5m). This estimate of bAP width led to a choice of length constant that maximized the correlation between branch complexity and input resistance (Figure 6, Figure 6\u2014figure supplement 3).\n\n### Biophysical compartmental modeling\n\nSimulations used in Figures 6F and 7, and Figure 7\u2014figure supplement 1 were performed in the NEURON simulation environment (Carnevale and Hines, 2006) using Python (Version 3.7). We reconstructed all 8 neurons used in Figure 6 with maximum z-projections of the Alexa 594 fluorescence signal. Each compartmental model was composed of a cylindrical soma with length and diameter equal to 12 \u00b5m, a 30 \u00b5m axon initial segment (AIS) with a 2 \u00b5m diameter connected to the soma, a 300 \u00b5m axon with a 1 \u00b5m diameter connected to the AIS, and a dendritic tree connected to the soma that with identical branch structure to the 8 neurons used in Figure 6 and a uniform diameter of 1 \u00b5m. Our two-photon imaging data did not permit precise estimation of dendritic diameter but from inspection all dendrites had similar diameters. In some experiments, we performed simulated cuts of the dendritic tree in NEURON. For each cell, we removed branches close to the low $\\DeltaCa_{AP}$ recording site until the input resistance of the high and low $\\DeltaCa_{AP}$ sites were comparable.\n\nWe used standard passive parameters: Cm = 1 \u00b5F/cm2, Rm = 7000 \u03a9-cm2, Ri = 100 \u03a9-cm. Active conductances were based on a previous model of L2/3 pyramidal cells that was fit to in vivo somatic and dendritic recordings (Smith et al., 2013). Dendritic active conductances were completely uniform, such that all differences across dendrites were determined by the distance from the soma and the dendritic branch structure. Each model contained the following channels with given conductance density in pS/\u00b5m2: voltage-gated sodium channels (axon: 170, AIS: 2,550 soma: 85, dendrites: 85), voltage-gated potassium channels (axon: 33, AIS: 100, soma: 100, dendrites: 3), M-Type potassium channels (soma: 2.2, dendrites: 1), calcium-dependent potassium channels (soma: 3, dendrites: 3), high voltage-activated calcium channels (soma: 0.5, dendrites: 0.5), and low voltage-activated calcium channels (soma: 3, dendrites: 1.5). Additionally, we added an A-Type potassium channel (Migliore et al., 1999) to the soma and dendrites with a variable conductance density that was set for each cell independently. For experiments in Figures 6F, 7A\u2013E and G\u2013H, and Figure 7\u2014figure supplement 1, we used a Nelder-Mead simplex algorithm (from the SciPy toolbox in Python) to set the A-Type potassium channel conductance density such that backpropagating APs peaked at \u201310 mV in the high $\\DeltaCa_{AP}$ recording site within each pair (values for each site plotted in left-most column of points in Figure 7F). The computed density was used for the soma and entire dendritic tree. We chose to set the AP peak at \u201310 mV because it is consistent with the AP amplitude measured with whole-cell recordings from L2/3 pyramidal cell dendrites > 100 \u00b5m from the soma (Waters et al., 2003; Larkum et al., 2007; Smith et al., 2013). The same values for A-Type potassium channel density were used in experiments with simulated cut dendrites. The values shown in Figure 7F use the same algorithm to select A-Type potassium channel density for high and low $\\DeltaCa_{AP}$ recording sites independently, for both the intact and cut dendritic branch structure.\n\n### Conductance simulations\n\nWe computed the voltage-dependent open probability and time constant of VGCCs and NMDARs using published data (Jahr and Stevens, 1990; Reuveni et al., 1993). For VGCCs, we used the following voltage-dependent forward and backward rate constants ($\\alpha_{V}$ and $\\beta_{V}$ , respectively) of the activation and inactivation gates (in mV):\n\n$$\n\\alpha_{V-activation}=\\frac{0.055(-27-V)}{e^{(-27-V)/3.8}-1} ms^{-1}mV^{-1}\n$$\n\n\n\n$$\n\\beta_{V-activation}=0.94e^{(-75-V)/17} ms^{-1}\n$$\n\n\n\n$$\n\\alpha_{V-inactivation}=0.000457e^{(-13-V)/50} ms^{-1}\n$$\n\n\n\n$$\n\\beta_{V-inactivation}=\\frac{0.0065}{e^{(-V-15)/28}+1} ms^{-1}\n$$\n\nTo compute open probability and time constant for the activation (denoted \u2018$m$\u2019) and inactivation (denoted \u2018$h$\u2019) gates of VGCCs, we used the following equations: $P_{open}V=\\alpha_{V}/(\\alpha_{V}+\\beta_{V})$ , $\\tauV=1/(\\alpha_{V}+\\beta_{V})$ . Because the time constant of the inactivation gate is so slow (the minimum time constant is 170ms between \u201380 and +40 mV), it acts as a constant, so we did not plot it in Figure 8B, although it was accounted for in the simulations in Figure 8C\u2013E.\n\nFor NMDARs (denoted \u2018$n$\u2019), we calculated the voltage-dependent open-probability and time constant as $P_{open}V=k_{off}/(k_{on}+k_{off})$ and $\\tauV=1/(k_{on}+k_{off})$ based on the measured on and off rates of the Mg2+ block (Jahr and Stevens, 1990), with [Mg2+] = 1 \u00b5M:\n\n$$\nk_{off}=e^{0.017V+0.96} ms^{-1}\n$$\n\n\n\n$$\nk_{on}=Mg^{2+}e^{-0.045V-6.97} ms^{-1}\u00b5M^{-1}\n$$\n\nFor numerical integration in Figure 8C, we used Euler\u2019s method to compute changes in the state of each gate with $\\Deltat=0.01 ms$. We used the following differential equations:\n\n$$\nm\u02d9=\\alpha_{V-activation}-m\\alpha_{V-activation}+\\beta_{V-activation}\n$$\n\n\n\n$$\nh\u02d9=\\alpha_{V-inactivation}-h\\alpha_{V-inactivation}+\\beta_{V-inactivation}\n$$\n\n\n\n$$\nn\u02d9=k_{off}-nk_{off}+k_{on}\n$$\n\nThe open probability of NMDARs is equal to $n$, and the open probability of VGCCs is equal to $m^{2}h$. To convert the open probability into a voltage-dependent calcium current, we used a modified version of the Goldman-Hodgkin-Katz current equation with $[Ca]_{in}=75 nM$ and $[Ca]_{out}=1.5 mM$:\n\n$$\nI_{Ca}=P_{open}(V)*V\\frac{[Ca]_{in}-[Ca]_{out}e^{\\frac{-2VF}{RT}}}{1-e^{\\frac{-2VF}{RT}}}\n$$\n\nWe used quadratic voltage depolarizations to mimic the shape of APs. For each stimulus, we used a preset amplitude ($V_{amp}$) and duration $(V_{dur}$). Then, we solved the following equation for $a$: $V_{amp}=(a\\frac{V_{dur}}{2})^{2}$ , such that the stimulus would have a maximum height of $V_{amp}$ along the domain $\u2212\\frac{V_{dur}}{2}<t<\\frac{V_{dur}}{2}$ . Then, we added the equation: $step(t)=V_{amp}-(at)^{2}$ to the baseline voltage of \u201370 mV.\n\nTo determine the integrated calcium influx in Figure 8E, we integrated the calcium current evoked by the voltage step after subtracting the baseline current (NMDARs are partially open at rest).\n",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "7076f280-c25f-4a85-a3be-cfa3a8869ba1",
+      "submission_id": "c32f445b-3612-497c-befb-f766ee6e3eeb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, https://ror.org/05abbep66 Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76993.sa0](https://doi.org/10.7554/eLife.76993.sa0)\n\nSynaptic changes in forebrain neurons typically require the conjunction of dendritic action potentials and synaptic activation. Together these signals cause nonlinear changes in calcium influx that then drive plasticity. The strength of these interactions can vary in complex ways. This study uses state of the art methods to convincingly show how some of these complexities arise from known properties of neuronal dendrites and synaptic NMDA receptors.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, https://ror.org/05abbep66 Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76993.sa1](https://doi.org/10.7554/eLife.76993.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dendritic branch structure compartmentalizes voltage-dependent calcium influx in cortical layer 2/3 pyramidal cells\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Sacha B Nelson as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gary Westbrook as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe points raised in the reviews below should be easily addressed with textual changes to the paper. The clarifications and answers to questions posed by the reviewers should be addressed. The additional analyses requested by reviewer 2 should either be added to the paper, if feasible, or the reason such callibration is not feasible should be mentioned in the paper. Additional suggested experiments (Rev 3 point 3) may improve the paper, but are not required. The query about the 4-AP results (Rev 2 point 6) could perhaps be addressed with some explanation and a reference or two rather than with additional simulations. The point that there is a fourth potential explanation for the low \u2206CaAP dendrites (Rev 3) should be acknowledged and discussed.Reviewer #1 (Recommendations for the authors):\n\nAlthough it would increase the impact to more directly link the differences to differences in plasticity at the same dendrites, this is a difficult experiment and may quite reasonably be left to another study. As pointed out by the other reviewers, important details of the number of observations should be better documented.\n\nReviewer #2 (Recommendations for the authors):\n\n1. According to the authors, this study aims to provide \"mechanisms by which ca2+ dependent plasticity induction may vary throughout individual neurons\" (line 75). In addition, there are repeated references to plasticity throughout the manuscript. However, the uEPSP-bAP pairing experiments (which are closest to actual STDP experiments) reveal comparable amplification levels (Figure 2D). Moreover, this study does not include any direct plasticity experiment nor demonstrates any effect of the difference in bAP-associated ca2+ signals on plasticity induction. In my opinion, it is not necessary to connect the findings presented here to plasticity. However, if done, experimental evidence that there is a difference in synaptic plasticity between low and high \u03b4 ca2+ synapses should be provided.\n\n2. Along the same lines, the uEPSP-bAP pairing experiment seems to be the one closest to an STDP experiment. I could not find any data showing a clear difference during uEPSP-bAP pairings between high and low \u03b4 ca2+ spines. For example, Figure 2D shows a similar level of amplification. Also, is this difference significant?\n\n3. I understand that low and high \u03b4 ca2+ spines were defined based on the ca2+ transient amplitude. Are the observed amplitudes of bAP-associated spine ca2+ signals distributed bimodally? Or how was this amplitude criterium determined? When I look at Figure 2B, the distribution looks more like a continuum.\n\n4. Do all spines connected to the same parent branch exhibit high or low \u03b4 ca2+? Figure 1\u2014figure supplement 1 shows that spine ca2+ signals within 6 micrometers are correlated in this respect. Why 6 micrometers? Dendritic segments between branch points can be longer.\n\n5. The statement \"97 spines from 33 cells\" (line 128) is the only mention of the number of experimental observations. Please add at least to all the figures containing experimental data the number of included observations.\n\n6. One of the interesting results is the finding that 4-AP nullifies the difference between high and low \u03b4 ca2+ branches (Figure 3C-D). Does the model, as it is currently, recapitulate this result? Can you please clarify how the K+ channel distribution in \u03b4 ca2+ branches was determined in the model?\n\n7. The NEURON simulation should be able to produce a heat-map showing the amplitude of the bAP-associated ca2+ signals overlaid on the morphology of a given neuron. Is my assumption correct that such a graph will mostly show a gradual decrease in ca2+ signal amplitude as a function of distance to the soma?\n\n8. line 9: \"The synaptic tuning properties of neurons are regulated by voltage-dependent calcium influx, which is typically evoked by back-propagating action potentials (bAPs).\" I don't understand this sentence. Doesn't synaptic input primarily determine synaptic tuning?\n\n9. line 68: \"We discovered branch-specific reductions in bAP amplitude that are independent of distance from the soma.\" I don't think it is fair to state that these differences are independent of the distance to the soma (see Figure 2E). Distance to the soma is still an important factor, while branch patterning is another one.\n\nReviewer #3 (Recommendations for the authors):\n\nI have a few specific points that I think could further improve the paper.\n\n1. Throughout the paper, the authors should explicitly state their N (cells / animals) and statistics. They should designate significant effects in their summary graphs. It was sometimes difficult to assess the robustness of the data without knowing these details.\n\n2. The experiments in Figure 5 were the most exciting to me, using a combination of voltage and ca2+ imaging. These experiments were done using 1-photon microscopy, so they cannot compare dendrites and spines. Nevertheless, there are still interesting differences in low and high \u2206CaAP dendrites, with less propagation in the former. But can the authors calibrate their voltage signals? And can they further quantify their time course? In both cases, I think the paper would be stronger with more rigorous analysis.\n\n3. My only disappointment was that the authors did not further extend these experiments. For example, it would have been very interesting to explicitly look at voltage signals around branch points. It also would be intriguing to see how these signals also depend on dendritic complexity. Lastly, it would be great to compare these signals at different types of dendrites (basal, main apical, apical oblique, apical tuft) within or across cells. While these experiments are not strictly necessary, they would make the paper better.\n\n4. The authors devise the metric of \"branch impedance\", but its derivation and units are not entirely clear. Instead, it seems more like a measure of dendritic complexity, and I wonder if the authors should simply refer to it as such? Of course, if they were able to really measure impedance, that would be very interesting\u2026 but also very difficult.\n\n5. The authors test 3 mechanisms for the low \u2206CaAP dendrites (1 = no ca2+ channels; 2 = no backpropagating APs; 3 = not reaching threshold to activate ca2+ channels). While they ultimately focus on dendritic geometry and impedance, it seems like a fourth mechanism is heightened density K+ channels in the low \u2206CaAP branches (e.g., Gasaparini, Losonczy, Magee). This should be thoroughly addressed in the Discussion.\n",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "50f65132-f5f4-4e59-b185-67e37a347e7a",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C1",
+      "claim": "Back-propagating action potentials (bAPs) regulate synaptic plasticity by evoking voltage-dependent calcium influx throughout dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Back-propagating action potentials (bAPs) regulate synaptic plasticity by evoking voltage-dependent calcium influx throughout dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "5b9dd6d9-7ba9-40c6-a481-6d3b2e4d4add",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C2",
+      "claim": "Attenuation of bAP amplitude in distal dendritic compartments alters plasticity in a location-specific manner by reducing bAP-dependent calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Attenuation of bAP amplitude in distal dendritic compartments alters plasticity in a location-specific manner by reducing bAP-dependent calcium influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "cd360eef-c822-4e9c-9989-b3ed2de72400",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C3",
+      "claim": "bAPs fail to evoke calcium influx through voltage-gated calcium channels (VGCCs) in a specific population of dendritic branches in mouse cortical layer 2/3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we reveal that bAPs fail to evoke calcium influx through voltage-gated calcium channels (VGCCs) in a specific population of dendritic branches in mouse cortical layer 2/3 pyramidal cells, despite evoking substantial VGCC-mediated calcium influx in sister branches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript, including calcium imaging experiments shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "8ff9aa7d-2e99-48fb-abef-c36637a5621c",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C4",
+      "claim": "Low \u0394CaAP branches contain VGCCs and successfully propagate bAPs in the absence of synaptic input.",
+      "claim_type": "EXPLICIT",
+      "source": "These branches contain VGCCs and successfully propagate bAPs in the absence of synaptic input; nevertheless, they fail to exhibit bAP-evoked calcium influx due to a branch-specific reduction in bAP amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from glutamate puff experiments (Figure 3), loose-patch recordings (Figure 4), and voltage imaging (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "be40e501-03d9-4da8-a1eb-5e6d3adaf795",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C5",
+      "claim": "Low \u0394CaAP branches fail to exhibit bAP-evoked calcium influx due to a branch-specific reduction in bAP amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "These branches contain VGCCs and successfully propagate bAPs in the absence of synaptic input; nevertheless, they fail to exhibit bAP-evoked calcium influx due to a branch-specific reduction in bAP amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by voltage imaging data showing reduced bAP amplitude in low \u0394CaAP branches (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "8f231e32-2b12-4069-8afe-eafb6e515408",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C6",
+      "claim": "Low \u0394CaAP branches have more elaborate branch structure compared to sister branches, which causes a local reduction in electrotonic impedance and bAP amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that these branches have more elaborate branch structure compared to sister branches, which causes a local reduction in electrotonic impedance and bAP amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by morphological analysis (Figure 6) and computational modeling (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "16295f87-fb76-4e38-b2e9-5f189cdec983",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C7",
+      "claim": "bAPs still amplify synaptically-mediated calcium influx in low \u0394CaAP branches because of differences in the voltage-dependence and kinetics of VGCCs and NMDA-type glutamate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that bAPs still amplify synaptically-mediated calcium influx in these branches because of differences in the voltage-dependence and kinetics of VGCCs and NMDA-type glutamate receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data (Figures 1-2) and computational modeling of VGCC and NMDAR properties (Figure 8).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "3946cda5-711e-4982-be85-45cebe9435cb",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C8",
+      "claim": "Branch-specific compartmentalization of bAP-dependent calcium signals may provide a mechanism for neurons to diversify synaptic tuning across the dendritic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Branch-specific compartmentalization of bAP-dependent calcium signals may provide a mechanism for neurons to diversify synaptic tuning across the dendritic tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the functional implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "b7ad7085-6a83-4f6c-8e38-8ca4c47e3fed",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C9",
+      "claim": "The outcome of plasticity induction protocols depends on the synaptic location within the dendritic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other studies have shown that the outcome of plasticity induction protocols also depends on the synaptic location within the dendritic tree (Golding et al., 2002; Froemke et al., 2005; Sj\u00f6str\u00f6m and H\u00e4usser, 2006; Gordon et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "da2496d9-cce1-4602-a5cd-85ce597a528a",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C10",
+      "claim": "The same protocol can evoke a different sign, magnitude, or temporal profile of synaptic plasticity if applied to synapses in proximal or distal dendritic compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The same protocol can evoke a different sign, magnitude, or temporal profile of synaptic plasticity if applied to synapses in proximal or distal dendritic compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "d69ee973-4ce8-4ca5-8e96-f900dbdd0a5d",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C11",
+      "claim": "bAPs are attenuated as they propagate away from the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Location-dependent plasticity rules vary along the proximodistal axis of dendrites because bAPs are attenuated as they propagate away from the soma (Regehr et al., 1989; Spruston et al., 1995; Golding et al., 2002; Waters et al., 2003; Froemke et al., 2005; Sj\u00f6str\u00f6m and H\u00e4usser, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "ea79ff39-3fdb-460f-9db5-c435f0ead481",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C12",
+      "claim": "In distal dendritic compartments, smaller amplitude bAPs evoke less voltage-dependent calcium-influx, such that induction protocols that usually evoke LTP result in LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In distal dendritic compartments, smaller amplitude bAPs evoke less voltage-dependent calcium-influx, such that induction protocols that usually evoke LTP result in LTD (Nevian and Sakmann, 2006; Sj\u00f6str\u00f6m and H\u00e4usser, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "e8b1748b-b6a7-4b1e-a469-029d35840ada",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C13",
+      "claim": "Experimentally boosting distal bAP amplitude can restore LTP by amplifying bAP-dependent calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally boosting distal bAP amplitude can restore LTP by amplifying bAP-dependent calcium influx (Sj\u00f6str\u00f6m and H\u00e4usser, 2006), suggesting that location-dependent variation in synaptic plasticity rules is primarily determined by the local amplitude and timing of bAP-dependent calcium influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "1f0ed6d3-3d98-47a3-b161-65d0906c4573",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C14",
+      "claim": "Location-dependent variation in synaptic plasticity rules is primarily determined by the local amplitude and timing of bAP-dependent calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally boosting distal bAP amplitude can restore LTP by amplifying bAP-dependent calcium influx (Sj\u00f6str\u00f6m and H\u00e4usser, 2006), suggesting that location-dependent variation in synaptic plasticity rules is primarily determined by the local amplitude and timing of bAP-dependent calcium influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from cited prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "6b0de178-706e-4263-9602-edbdb13ea028",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C15",
+      "claim": "Dendritic bAP-dependent calcium influx could be shaped by local variability in ion channel expression, synaptic inputs, or electrotonic impedance due to dendritic branch structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic bAP-dependent calcium influx could be shaped by local variability in ion channel expression, synaptic inputs, or electrotonic impedance due to dendritic branch structure (Rall and Rinzel, 1973; Vetter et al., 2001; Frick et al., 2004; Losonczy et al., 2008; Yaeger et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "cc2280d5-ea49-4a5a-abea-4387dbea0153",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C16",
+      "claim": "Branch-specific variation in bAP-dependent calcium influx provides a potential mechanism for diversifying synaptic tuning across the dendritic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Branch-specific variation in bAP-dependent calcium influx provides a potential mechanism for diversifying synaptic tuning across the dendritic tree, which is a core feature of computational models of neurons as hierarchical nonlinear integrators (Poirazi et al., 2003; H\u00e4usser and Mel, 2003; Francioni and Harnett, 2021; Bicknell and H\u00e4usser, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about functional implications, supported by citations to computational models.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "90133b85-b0ae-4ec9-b74e-30a9e338b221",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C21",
+      "claim": "Voltage-gated calcium channels (VGCCs) mediate bAP-evoked calcium influx and are responsible for various forms of plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that voltage-gated calcium channels (VGCCs), which mediate bAP-evoked calcium influx and are responsible for various forms of plasticity (Kapur et al., 1998; Dolmetsch et al., 2001; Yasuda et al., 2003; Nevian and Sakmann, 2006; Scheuss et al., 2006, Bloodgood and Sabatini, 2007; Brigidi et al., 2019), can be differentially activated by bAPs in a branch-specific manner within individual L2/3 pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "e530fb5c-374d-4f23-b9fe-b90e7b6e10ac",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C22",
+      "claim": "VGCCs can be differentially activated by bAPs in a branch-specific manner within individual L2/3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that voltage-gated calcium channels (VGCCs), which mediate bAP-evoked calcium influx and are responsible for various forms of plasticity (Kapur et al., 1998; Dolmetsch et al., 2001; Yasuda et al., 2003; Nevian and Sakmann, 2006; Scheuss et al., 2006, Bloodgood and Sabatini, 2007; Brigidi et al., 2019), can be differentially activated by bAPs in a branch-specific manner within individual L2/3 pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "0fdb75c3-14ba-482f-9fce-0ecfb7f547a1",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C24",
+      "claim": "bAP-evoked calcium influx through VGCCs and bAP-dependent amplification of synaptically evoked calcium influx through NMDARs can be regulated independently in a branch-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that bAP-evoked calcium influx through VGCCs and bAP-dependent amplification of synaptically evoked calcium influx through NMDARs can be regulated independently in a branch-specific manner (Bloodgood and Sabatini, 2007; Holbro et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "7286cc0e-e96b-4f31-8801-ceb72ed3fbe9",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C41",
+      "claim": "The calcium signal evoked by glutamate puff was not an artifact of mechanical displacement due to the picospritzer.",
+      "claim_type": "EXPLICIT",
+      "source": "The calcium signal was not an artifact of mechanical displacement due to the picospritzer (Figure 3\u2014figure supplement 1A-B) and did not include an NMDAR component (Figure 3\u2014figure supplement 1C-D), consistent with calcium influx mediated by VGCCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiments shown in Figure 3\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "c2894078-d30b-42a0-a958-8e2e206aa7c0",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C42",
+      "claim": "The calcium signal evoked by glutamate puff did not include an NMDAR component.",
+      "claim_type": "EXPLICIT",
+      "source": "The calcium signal was not an artifact of mechanical displacement due to the picospritzer (Figure 3\u2014figure supplement 1A-B) and did not include an NMDAR component (Figure 3\u2014figure supplement 1C-D), consistent with calcium influx mediated by VGCCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiments shown in Figure 3\u2014figure supplement 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "9364269f-e466-49e7-8074-69567ed75a31",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C43",
+      "claim": "All dendritic branches contain VGCCs, which can be opened by local depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data indicate that all dendritic branches contain VGCCs, which can be opened by local depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the glutamate puff and 4-AP experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "10593d67-8147-4b56-be0a-101b3d736a17",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C45",
+      "claim": "bAP-dependent amplification of the remaining NMDAR-mediated calcium influx was observed in all dendritic spines examined in the presence of NBQX.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed bAP-dependent amplification of the remaining NMDAR-mediated calcium influx in all dendritic spines examined, despite fully blocking the depolarization evoked by glutamate uncaging (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "6b247997-45aa-43d3-9d60-60074eb5ac3b",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C49",
+      "claim": "bAP-dependent voltage signals were observed in all branches, including those that did not exhibit bAP-evoked calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our results from Figure 4, we observed bAP-dependent voltage signals in all branches, including those that did not exhibit bAP-evoked calcium influx (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by voltage imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "16c90346-9847-416f-b356-09ce4ab69117",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C60",
+      "claim": "Branch complexity was inversely correlated with input resistance (R2 = 0.93 for \u03bb = 145 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, branch complexity was inversely correlated with input resistance (R2 = 0.93 for \u03bb = 145 \u00b5m), confirming its validity as a measure of electrotonic properties (Figure 6\u2014figure supplement 3A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 6\u2014figure supplement 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "7db3ba0d-7dc2-4262-9004-3311be010667",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C68",
+      "claim": "Dendritic branch structure directly affects local dendritic excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm that dendritic branch structure directly affects local dendritic excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulated cutting experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "499d671b-3571-482f-a402-b4a62375ab64",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C72",
+      "claim": "Dendritic branch structure affects the local amplitude of synaptic potentials, but has a minimal impact on the efficacy of synaptic input at depolarizing the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, although dendritic branch structure affects the local amplitude of synaptic potentials, it has a minimal impact on the efficacy of synaptic input at depolarizing the soma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the computational modeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "a214680c-0079-4a24-95fb-231173746ab4",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C73",
+      "claim": "VGCCs exhibit a dramatic drop-off of calcium influx for voltage steps peaking below \u201310 mV due to their steep voltage-sensitivity and long time constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the steep voltage-sensitivity and long time constant of VGCCs (Figure 8A\u2013B), they exhibit a dramatic drop-off of calcium influx for voltage steps peaking below \u201310 mV (Figure 8C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "f4e0ebf2-e1e1-4e03-9766-1a8e92eb0a10",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C74",
+      "claim": "The interaction between open-probability and driving force minimizes differences in NMDAR-mediated calcium influx evoked across a wide range of voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the open-probability of NMDARs is highly sensitive to peak voltage (Figure 8C\u2013D), the interaction between open-probability and driving force minimizes differences in calcium influx evoked across a wide range of voltages (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "5698cdd4-5428-4613-9bea-593398ee774e",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C76",
+      "claim": "bAP-dependent calcium influx varies in a dendrite branch-specific manner in cortical L2/3 pyramidal cells due to branch-specific reductions in input resistance inherited from the local morphology of the dendritic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that bAP-dependent calcium influx varies in a dendrite branch-specific manner in cortical L2/3 pyramidal cells due to branch-specific reductions in input resistance inherited from the local morphology of the dendritic tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "3fdcc881-dcf2-4a4e-a87c-b2f0b6134754",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C77",
+      "claim": "Sections of the dendritic tree with more elaborate branch patterns have lower input resistance, leading to a branch-specific reduction in bAP amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Sections of the dendritic tree with more elaborate branch patterns have lower input resistance, leading to a branch-specific reduction in bAP amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings supported by morphological analysis and computational modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "5d80c495-22d8-40fd-bf40-cca96913145b",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C78",
+      "claim": "Low \u0394CaAP branches have a selective reduction in bAP-evoked calcium influx through VGCCs despite containing VGCCs and successfully propagating bAPs in the absence of synaptic input.",
+      "claim_type": "EXPLICIT",
+      "source": "These branches have a selective reduction in bAP-evoked calcium influx through VGCCs despite containing VGCCs and successfully propagating bAPs in the absence of synaptic input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings supported by data in Figures 3-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "2edb693f-adfa-470a-98eb-2c53fac58045",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C79",
+      "claim": "Low \u0394CaAP branches maintain bAP-dependent amplification of synaptically-evoked calcium influx through NMDARs due to the shallower voltage-dependence and faster kinetics of the Mg2+-block of NMDARs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these branches maintain bAP-dependent amplification of synaptically-evoked calcium influx through NMDARs due to the shallower voltage-dependence and faster kinetics of the Mg2+-block of NMDARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings supported by data in Figures 1-2 and modeling in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "f708065f-a1d8-44fb-86f2-12010bdf7a70",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C80",
+      "claim": "Branch-specific variation in dendritic morphology shapes voltage-dependent calcium signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Branch-specific variation in dendritic morphology shapes voltage-dependent calcium signals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "11e34be1-0960-47d7-9fa3-0c8e2d37265b",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C83",
+      "claim": "Elaborate branching patterns reduce input resistance, local bAP amplitude, and bAP-evoked calcium influx because dendritic input resistance is proportional to the surface area of membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Elaborate branching patterns reduce input resistance, local bAP amplitude, and bAP-evoked calcium influx because dendritic input resistance is proportional to the surface area of membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established biophysical principles and the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "3ef3aedd-bc3d-4692-915e-dcf4f3d9986a",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C84",
+      "claim": "The effect of branch structure on impedance is sufficient to cause the branch-specific differences observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our experiments show that the effect of branch structure on impedance is sufficient to cause the branch-specific differences we observed, additional mechanisms, such as variation in potassium channel density, may also contribute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the computational modeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "6aee4081-db24-4883-8c57-f92fd763b9bd",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C85",
+      "claim": "Additional mechanisms, such as variation in potassium channel density, may also contribute to branch-specific differences in bAP amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our experiments show that the effect of branch structure on impedance is sufficient to cause the branch-specific differences we observed, additional mechanisms, such as variation in potassium channel density, may also contribute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement acknowledging alternative mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "9a9683c5-7d67-4472-ad45-731023ae0862",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C87",
+      "claim": "bAP-dependent activation of VGCCs is branch-specific in cortical L2/3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that bAP-dependent activation of VGCCs is branch-specific in cortical L2/3 pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "18ab7741-66ff-4252-b5c6-d023a93614d6",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C92",
+      "claim": "Each form of VGCC-mediated plasticity may be branch-specific in L2/3 pyramidal cells, at least with respect to their activation by bAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, because VGCC-mediated influx is responsible for multiple forms of synaptic and cellular plasticity (Kapur et al., 1998; Dolmetsch et al., 2001; Yasuda et al., 2003; Nevian and Sakmann, 2006; Scheuss et al., 2006, Brigidi et al., 2019), these data suggest that each of these forms of plasticity may be branch-specific in L2/3 pyramidal cells, at least with respect to their activation by bAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about plasticity implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "11df4c95-fa79-484c-ad2c-9b600749d97f",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C94",
+      "claim": "bAP-evoked calcium influx selectively drives LTD while bAP-dependent amplification of synaptic calcium influx selectively drives LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has demonstrated that bAP-evoked calcium influx selectively drives LTD while bAP-dependent amplification of synaptic calcium influx selectively drives LTP (Feldman, 2000; Matsuzaki et al., 2004; Nevian and Sakmann, 2006; Lee et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "2fe196ad-05ca-4975-a4c6-b30effb318ee",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C95",
+      "claim": "The ratio of LTD to LTP varies across branches in L2/3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, identifying branches with a selective reduction in bAP-evoked calcium influx while maintaining bAP-dependent amplification of synaptically mediated calcium influx suggests that the ratio of LTD to LTP varies across branches in L2/3 pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data and cited prior work on plasticity.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "a7d13b25-2beb-4ef9-830e-e6960d23daf8",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C96",
+      "claim": "The ratio of STDP-dependent depression to potentiation determines the cooperativity, strength, and sparsity of synaptic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ratio of STDP-dependent depression to potentiation determines the cooperativity, strength, and sparsity of synaptic inputs (Song et al., 2000; Froemke et al., 2005; Sj\u00f6str\u00f6m and H\u00e4usser, 2006), our work suggests that synaptic tuning properties may vary in a branch-specific manner based on the local dendritic branch structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "2d159573-fe7b-4539-ba2f-c473501c6611",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C97",
+      "claim": "Synaptic tuning properties may vary in a branch-specific manner based on the local dendritic branch structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ratio of STDP-dependent depression to potentiation determines the cooperativity, strength, and sparsity of synaptic inputs (Song et al., 2000; Froemke et al., 2005; Sj\u00f6str\u00f6m and H\u00e4usser, 2006), our work suggests that synaptic tuning properties may vary in a branch-specific manner based on the local dendritic branch structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about functional implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "3b566689-afdc-4479-9320-e01c7b673c57",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C98",
+      "claim": "The experiments were conducted in juvenile mice (between P21 and P28).",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments were conducted in juvenile mice (between P21 and P28).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "6ac77e17-e4b8-40b8-a940-4675b8369574",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C99",
+      "claim": "The dendritic branch structure is static after P21-P28 age.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the dendritic branch structure is static after this age (Koleske, 2013; Richards et al., 2020), it is possible that changes in channel composition dampen the effects of dendritic branch structure on excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "b32dbb6c-662e-47b4-875f-39fef4d625ba",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C100",
+      "claim": "Changes in channel composition may dampen the effects of dendritic branch structure on excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the dendritic branch structure is static after this age (Koleske, 2013; Richards et al., 2020), it is possible that changes in channel composition dampen the effects of dendritic branch structure on excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential developmental changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "8495c807-6418-4547-8ed4-3e16af815b00",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C101",
+      "claim": "Changes in dendritic excitability can occur as a result of synaptic plasticity induction.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that such effects are possible with compartment models (Figure 7F), and it is known that changes in dendritic excitability can occur as a result of synaptic plasticity induction (Frick et al., 2003; Frick et al., 2004; Losonczy et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "e97abd11-fb64-4bc3-8d09-a42e10749f5f",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C106",
+      "claim": "Branch-specific variation in calcium-dependent plasticity signals may diversify synaptic tuning, which would increase dendritic computational capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, branch-specific variation in calcium-dependent plasticity signals may diversify synaptic tuning, which would increase dendritic computational capacity (Poirazi et al., 2003; H\u00e4usser and Mel, 2003; Francioni and Harnett, 2021; Bicknell and H\u00e4usser, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about computational implications.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "9019a979-9584-4fd3-97e6-4b5bc1622384",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C108",
+      "claim": "Acute coronal slices were prepared from the somatosensory cortex of young adult, C57Bl/6 j wild-type mice between postnatal days P21-P28.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute coronal slices were prepared from the somatosensory cortex of young adult, C57Bl/6 j wild-type mice (Jackson Labs, Bar Harbor, ME) between postnatal days P21-P28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "55c794d9-4866-4d04-b85a-bb3ac815cb9e",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C110",
+      "claim": "The conduction velocity of bAPs in L2/3 dendrites is 154.9 \u00b5m/ms.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the conduction velocity of bAPs in L2/3 dendrites is 154.9 \u00b5m/ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "5b671764-81d5-4ef0-9db5-7521d4127ad0",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C111",
+      "claim": "The somatic AP has a duration of about 0.94ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The somatic AP has a duration of about 0.94ms (Figure 6\u2014figure supplement 2C-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "01f43fb8-dcd6-4b66-b712-4f1f93d64a34",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "claim_id": "C112",
+      "claim": "The spatial width of a propagating bAP is 145.6 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "To compute the spatial width of a propagating bAP, we multiplied the conduction velocity by the duration (154.9 \u00b5m/ms * 0.94ms = 145.6 \u00b5m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on experimental measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "335e197e-ba36-4d5d-81e5-a3a0b65e9fef",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "bAPs fail to evoke calcium influx through VGCCs in a specific population of dendritic branches in L2/3 pyramidal cells, despite evoking substantial VGCC-mediated calcium influx in sister branches. VGCCs can be differentially activated by bAPs in a branch-specific manner, and bAP-evoked calcium influx through VGCCs and bAP-dependent amplification through NMDARs can be regulated independently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22, and C24 are well-supported by experimental calcium imaging data in Figures 1 and 2, showing branch-specific differences in bAP-evoked calcium influx while maintaining bAP-dependent amplification of synaptic calcium signals. The data demonstrate clear divergence between VGCC and NMDAR activation patterns across dendritic branches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "020c7f0e-ed93-4a37-8314-0a2d773db175",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Low \u0394CaAP branches contain functional VGCCs that can be opened by local depolarization. The calcium signals evoked by glutamate puff were not artifacts and did not include NMDAR components, confirming VGCC-mediated influx in all dendritic branches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C41, C42, and C43 are supported by glutamate puff experiments (Figure 3) and 4-AP application showing that VGCCs are present and functional in low \u0394CaAP branches. Control experiments rule out mechanical artifacts and NMDAR contributions. The experiments demonstrate that VGCCs can be activated by sufficient depolarization even in branches with low bAP-evoked calcium influx.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "9f8219a1-d1fd-4020-9a06-99b16cf35897",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "bAPs propagate to low \u0394CaAP branches in the absence of synaptic input, as demonstrated by bAP-dependent amplification of NMDAR-mediated calcium influx in NBQX and voltage imaging showing bAP-dependent voltage signals in all branches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C49 are supported by experiments with NBQX blocking AMPAR-mediated depolarization (Figure 4A-B) and voltage imaging (Figure 5) showing bAP propagation to all branches. Loose-patch recordings (Figure 4C-I) provide additional evidence that bAPs reach low \u0394CaAP branches without synaptic assistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "5b7d5b40-0ab1-4eed-a063-d3ab47ee5647",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Low \u0394CaAP branches fail to exhibit bAP-evoked calcium influx due to branch-specific reduction in bAP amplitude, as shown by voltage imaging revealing attenuated bAP amplitude in these branches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C49 are supported by voltage imaging data (Figure 5) showing reduced bAP amplitude in low \u0394CaAP branches. The voltage imaging provides direct evidence that bAP attenuation is the mechanism underlying reduced calcium influx, though the absolute voltage measurements are not precisely calibrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "131a0dfc-efad-4843-822a-740def2efc5b",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Low \u0394CaAP branches have more elaborate branch structure compared to sister branches, which causes local reduction in electrotonic impedance and bAP amplitude. Branch complexity was inversely correlated with input resistance (R\u00b2 = 0.93), and elaborate branching patterns reduce input resistance because dendritic input resistance is proportional to membrane surface area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C60, C76, C77, and C83 are well-supported by morphological analysis (Figure 6) showing higher branch complexity in low \u0394CaAP sites and computational modeling (Figure 7) demonstrating that branch structure is sufficient to explain the observed differences. The strong correlation between branch complexity and input resistance validates the metric and mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "44bcfbc4-0f3f-472e-a988-a67b888c14f4",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dendritic branch structure directly affects local dendritic excitability, and the effect of branch structure on impedance is sufficient to cause the observed branch-specific differences, as demonstrated by simulated cutting experiments in computational models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C84 are supported by computational modeling (Figure 7) showing that simulated removal of dendritic branches near low \u0394CaAP sites nullifies differences in bAP amplitude and calcium conductance. The modeling demonstrates sufficiency of the morphological mechanism, though the authors appropriately acknowledge that additional mechanisms may contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "669a6ba6-d2c9-4d1f-a7f7-b29913b7dc3e",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "bAPs still amplify synaptically-mediated calcium influx in low \u0394CaAP branches due to differences in voltage-dependence and kinetics of VGCCs and NMDARs. VGCCs exhibit dramatic drop-off of calcium influx for voltages below -10 mV, while the interaction between NMDAR open-probability and driving force minimizes differences across a wide voltage range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C73, C74, and C79 are supported by experimental data (Figures 1-2) and computational modeling of VGCC and NMDAR properties (Figure 8). The modeling explains the selective effect on VGCC-mediated calcium influx while sparing NMDAR-dependent amplification based on biophysical differences between the channels. The mechanism is consistent with published channel properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "aec8cf9d-0206-4f04-9481-72ae90a81c3f",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dendritic branch structure affects local amplitude of synaptic potentials but has minimal impact on efficacy of synaptic input at depolarizing the soma, as shown by computational modeling of synaptic conductances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is supported by computational modeling (Figure 7G-H) showing that while local EPSP amplitude is reduced in low \u0394CaAP branches, the difference in somatic EPSP amplitude is minimized due to frequency-dependent cable attenuation. The effect sizes quantitatively support this asymmetric compartmentalization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "d382cf39-4e1e-44b1-90f5-07bca7f9b3cb",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The ratio of LTD to LTP varies across branches in L2/3 pyramidal cells, and synaptic tuning properties may vary in a branch-specific manner based on local dendritic branch structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95 and C97 are inferences about plasticity implications based on the calcium imaging data and cited prior work linking calcium signals to LTD/LTP. While the calcium data support differential calcium signals, direct plasticity experiments were not performed. The claims are reasonable inferences but remain speculative without direct validation of plasticity outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "e8ad2a01-ede7-4906-945a-37a3fd6c06a4",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The conduction velocity of bAPs in L2/3 dendrites is 154.9 \u03bcm/ms, the somatic AP duration is 0.94 ms, and the spatial width of a propagating bAP is 145.6 \u03bcm, calculated from high-speed calcium imaging measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110, C111, and C112 are supported by experimental measurements using point-scan calcium imaging at >8 kHz (Figure 6\u2014figure supplement 2). The conduction velocity is measured from latency-distance relationships, AP duration from somatic recordings, and spatial width calculated from these measurements. The methodology is appropriate and the calculation is correct.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "74ab6687-24d7-4960-af9f-df6c1b87da8e",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing that bAPs regulate synaptic plasticity through voltage-dependent calcium influx, that bAP amplitude attenuates with distance affecting plasticity in a location-specific manner, and that VGCCs mediate bAP-evoked calcium influx and various forms of plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9-C15, and C21 are background knowledge claims supported by appropriate citations to prior work. These establish the scientific context for the current study and are well-established in the field. The citations are appropriate and the claims accurately represent prior findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "d213252b-14bd-41ed-9f9d-c59e97b3452f",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Branch-specific compartmentalization of bAP-dependent calcium signals may provide a mechanism for neurons to diversify synaptic tuning across the dendritic tree, and each form of VGCC-mediated plasticity may be branch-specific in L2/3 pyramidal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C16, C92, and C106 are speculative statements about functional implications of the findings. While the calcium imaging data support branch-specific differences in calcium signals, the claims about diversified synaptic tuning and computational capacity are inferences not directly tested. These represent reasonable hypotheses for future work but lack direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "cb92e592-bec3-412c-88d8-a5f4e211540e",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Additional mechanisms such as variation in potassium channel density may contribute to branch-specific differences, and changes in channel composition may dampen effects of dendritic branch structure on excitability during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85 and C100 are speculative acknowledgments of alternative mechanisms and developmental considerations. The authors appropriately note that while branch structure is sufficient to explain their observations, other mechanisms may also contribute. These are reasonable caveats but represent untested possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    },
+    {
+      "id": "1fb6c626-d3fc-4eef-9646-c29b28cac8cf",
+      "content_id": "168ce160-f709-416f-b4ac-e7fc8f1e4b5a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Experiments were conducted in juvenile mice (P21-P28), dendritic branch structure is static after this age, and changes in dendritic excitability can occur as a result of synaptic plasticity induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98, C99, C101, and C108 describe experimental conditions and cite established knowledge about dendritic development and plasticity. The age range is clearly stated in methods, and the claims about static branch structure and activity-dependent excitability changes are supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:58:46.391876Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cd360eef-c822-4e9c-9989-b3ed2de72400",
+      "result_id": "335e197e-ba36-4d5d-81e5-a3a0b65e9fef"
+    },
+    {
+      "claim_id": "e530fb5c-374d-4f23-b9fe-b90e7b6e10ac",
+      "result_id": "335e197e-ba36-4d5d-81e5-a3a0b65e9fef"
+    },
+    {
+      "claim_id": "0fdb75c3-14ba-482f-9fce-0ecfb7f547a1",
+      "result_id": "335e197e-ba36-4d5d-81e5-a3a0b65e9fef"
+    },
+    {
+      "claim_id": "8ff9aa7d-2e99-48fb-abef-c36637a5621c",
+      "result_id": "020c7f0e-ed93-4a37-8314-0a2d773db175"
+    },
+    {
+      "claim_id": "7286cc0e-e96b-4f31-8801-ceb72ed3fbe9",
+      "result_id": "020c7f0e-ed93-4a37-8314-0a2d773db175"
+    },
+    {
+      "claim_id": "c2894078-d30b-42a0-a958-8e2e206aa7c0",
+      "result_id": "020c7f0e-ed93-4a37-8314-0a2d773db175"
+    },
+    {
+      "claim_id": "9364269f-e466-49e7-8074-69567ed75a31",
+      "result_id": "020c7f0e-ed93-4a37-8314-0a2d773db175"
+    },
+    {
+      "claim_id": "10593d67-8147-4b56-be0a-101b3d736a17",
+      "result_id": "9f8219a1-d1fd-4020-9a06-99b16cf35897"
+    },
+    {
+      "claim_id": "6b247997-45aa-43d3-9d60-60074eb5ac3b",
+      "result_id": "9f8219a1-d1fd-4020-9a06-99b16cf35897"
+    },
+    {
+      "claim_id": "be40e501-03d9-4da8-a1eb-5e6d3adaf795",
+      "result_id": "5b7d5b40-0ab1-4eed-a063-d3ab47ee5647"
+    },
+    {
+      "claim_id": "6b247997-45aa-43d3-9d60-60074eb5ac3b",
+      "result_id": "5b7d5b40-0ab1-4eed-a063-d3ab47ee5647"
+    },
+    {
+      "claim_id": "8f231e32-2b12-4069-8afe-eafb6e515408",
+      "result_id": "131a0dfc-efad-4843-822a-740def2efc5b"
+    },
+    {
+      "claim_id": "16c90346-9847-416f-b356-09ce4ab69117",
+      "result_id": "131a0dfc-efad-4843-822a-740def2efc5b"
+    },
+    {
+      "claim_id": "5698cdd4-5428-4613-9bea-593398ee774e",
+      "result_id": "131a0dfc-efad-4843-822a-740def2efc5b"
+    },
+    {
+      "claim_id": "3fdcc881-dcf2-4a4e-a87c-b2f0b6134754",
+      "result_id": "131a0dfc-efad-4843-822a-740def2efc5b"
+    },
+    {
+      "claim_id": "11e34be1-0960-47d7-9fa3-0c8e2d37265b",
+      "result_id": "131a0dfc-efad-4843-822a-740def2efc5b"
+    },
+    {
+      "claim_id": "7db3ba0d-7dc2-4262-9004-3311be010667",
+      "result_id": "44bcfbc4-0f3f-472e-a988-a67b888c14f4"
+    },
+    {
+      "claim_id": "3ef3aedd-bc3d-4692-915e-dcf4f3d9986a",
+      "result_id": "44bcfbc4-0f3f-472e-a988-a67b888c14f4"
+    },
+    {
+      "claim_id": "16295f87-fb76-4e38-b2e9-5f189cdec983",
+      "result_id": "669a6ba6-d2c9-4d1f-a7f7-b29913b7dc3e"
+    },
+    {
+      "claim_id": "a214680c-0079-4a24-95fb-231173746ab4",
+      "result_id": "669a6ba6-d2c9-4d1f-a7f7-b29913b7dc3e"
+    },
+    {
+      "claim_id": "f4e0ebf2-e1e1-4e03-9766-1a8e92eb0a10",
+      "result_id": "669a6ba6-d2c9-4d1f-a7f7-b29913b7dc3e"
+    },
+    {
+      "claim_id": "2edb693f-adfa-470a-98eb-2c53fac58045",
+      "result_id": "669a6ba6-d2c9-4d1f-a7f7-b29913b7dc3e"
+    },
+    {
+      "claim_id": "499d671b-3571-482f-a402-b4a62375ab64",
+      "result_id": "aec8cf9d-0206-4f04-9481-72ae90a81c3f"
+    },
+    {
+      "claim_id": "2fe196ad-05ca-4975-a4c6-b30effb318ee",
+      "result_id": "d382cf39-4e1e-44b1-90f5-07bca7f9b3cb"
+    },
+    {
+      "claim_id": "2d159573-fe7b-4539-ba2f-c473501c6611",
+      "result_id": "d382cf39-4e1e-44b1-90f5-07bca7f9b3cb"
+    },
+    {
+      "claim_id": "55c794d9-4866-4d04-b85a-bb3ac815cb9e",
+      "result_id": "e8ad2a01-ede7-4906-945a-37a3fd6c06a4"
+    },
+    {
+      "claim_id": "5b671764-81d5-4ef0-9db5-7521d4127ad0",
+      "result_id": "e8ad2a01-ede7-4906-945a-37a3fd6c06a4"
+    },
+    {
+      "claim_id": "01f43fb8-dcd6-4b66-b712-4f1f93d64a34",
+      "result_id": "e8ad2a01-ede7-4906-945a-37a3fd6c06a4"
+    },
+    {
+      "claim_id": "50f65132-f5f4-4e59-b185-67e37a347e7a",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "5b9dd6d9-7ba9-40c6-a481-6d3b2e4d4add",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "b7ad7085-6a83-4f6c-8e38-8ca4c47e3fed",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "da2496d9-cce1-4602-a5cd-85ce597a528a",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "d69ee973-4ce8-4ca5-8e96-f900dbdd0a5d",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "ea79ff39-3fdb-460f-9db5-c435f0ead481",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "e8b1748b-b6a7-4b1e-a469-029d35840ada",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "1f0ed6d3-3d98-47a3-b161-65d0906c4573",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "6b0de178-706e-4263-9602-edbdb13ea028",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "90133b85-b0ae-4ec9-b74e-30a9e338b221",
+      "result_id": "74ab6687-24d7-4960-af9f-df6c1b87da8e"
+    },
+    {
+      "claim_id": "3946cda5-711e-4982-be85-45cebe9435cb",
+      "result_id": "d213252b-14bd-41ed-9f9d-c59e97b3452f"
+    },
+    {
+      "claim_id": "cc2280d5-ea49-4a5a-abea-4387dbea0153",
+      "result_id": "d213252b-14bd-41ed-9f9d-c59e97b3452f"
+    },
+    {
+      "claim_id": "18ab7741-66ff-4252-b5c6-d023a93614d6",
+      "result_id": "d213252b-14bd-41ed-9f9d-c59e97b3452f"
+    },
+    {
+      "claim_id": "e97abd11-fb64-4bc3-8d09-a42e10749f5f",
+      "result_id": "d213252b-14bd-41ed-9f9d-c59e97b3452f"
+    },
+    {
+      "claim_id": "6aee4081-db24-4883-8c57-f92fd763b9bd",
+      "result_id": "cb92e592-bec3-412c-88d8-a5f4e211540e"
+    },
+    {
+      "claim_id": "b32dbb6c-662e-47b4-875f-39fef4d625ba",
+      "result_id": "cb92e592-bec3-412c-88d8-a5f4e211540e"
+    },
+    {
+      "claim_id": "3b566689-afdc-4479-9320-e01c7b673c57",
+      "result_id": "1fb6c626-d3fc-4eef-9646-c29b28cac8cf"
+    },
+    {
+      "claim_id": "6ac77e17-e4b8-40b8-a940-4675b8369574",
+      "result_id": "1fb6c626-d3fc-4eef-9646-c29b28cac8cf"
+    },
+    {
+      "claim_id": "8495c807-6418-4547-8ed4-3e16af815b00",
+      "result_id": "1fb6c626-d3fc-4eef-9646-c29b28cac8cf"
+    },
+    {
+      "claim_id": "9019a979-9584-4fd3-97e6-4b5bc1622384",
+      "result_id": "1fb6c626-d3fc-4eef-9646-c29b28cac8cf"
+    }
+  ],
+  "comparisons": []
+}

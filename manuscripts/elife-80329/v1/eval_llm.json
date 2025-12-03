@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors compiled a dataset of 96 mammalian and avian species with records of sarbecovirus interactions, including 25 species with natural infections, 28 with experimental inoculations, and limited data on virus shedding (23 species, 17 shedding). Most susceptible species (88%) were linked to ACE2-utilizing sarbecoviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe the dataset composition and are directly supported by the data collection methodology and Figure 1. The hierarchical treatment of evidence types and the overlap between SARS-CoV-2 and other sarbecovirus susceptibility provide adequate justification for pooling data across viruses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C52",
+      "C53"
+    ],
+    "result": "Sarbecovirus susceptibility is highly phylogenetically conserved (Pagel's \u03bb>0.686, p\u22640.003), with non-susceptible species clustering closer to each other than to susceptible species. ACE2 phylogeny closely matches host phylogeny (Baker's \u03b3=0.934, Spearman's \u03c1=0.870).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C52-C53 are well-supported by statistical analyses shown in Figure 1 and Figure 1\u2014figure supplement 1. The phylogenetic signal tests and correlation analyses provide strong quantitative evidence for phylogenetic conservation of both susceptibility and ACE2 sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "ACE2-based machine learning models predict sarbecovirus susceptibility with 80.2% accuracy (CI: 70.8-87.6%), but perform poorly on sensitivity compared to null models while showing better specificity. Only two ACE2 representations (AA consensus distance and AA properties) clearly outperformed null models in overall accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C31 are supported by rigorous leave-one-out cross-validation results shown in Figure 2. The nested tuning procedure and appropriate statistical testing provide confidence in the reported performance metrics, though the limited number of non-susceptible species (N=21) constrains specificity estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C55"
+    ],
+    "result": "Phylogeny-only models performed equivalently to or better than ACE2-based models (84.4% accuracy, CI: 75.5-91.0%), and combining phylogeny with ACE2 provided no improvement, suggesting ACE2 information is redundant with host phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35-C36, C55 are strongly supported by model comparison data in Figure 2. The overlapping confidence intervals and lack of improvement when combining features provide compelling evidence that phylogeny captures the same information as ACE2 sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C56"
+    ],
+    "result": "ACE2-based models derive predictive power from phylogenetically informative sites rather than virus-binding sites. Only 1 of 18 ACE2 positions used by models is known to interact with spike protein (position 82), and these positions contain significantly more phylogenetic information than average (p<0.001). Models using only spike-binding sites performed considerably worse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C41, C56 are well-supported by feature importance analyses in Figure 3 and supplements. The Shannon entropy analysis and poor performance of spike-binding-only models provide strong evidence that predictive power derives from phylogenetic rather than mechanistic information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C34",
+      "C76"
+    ],
+    "result": "The predictive power of ACE2-based models derives from correlations with host phylogeny rather than mechanistic links to infection biology. Different ACE2 representations carry equivalent information, and models perform similarly for viruses using different receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34, C54, C76 represent the central conclusion and are supported by multiple converging lines of evidence: equivalent performance across ACE2 representations (C54), phylogeny-only models matching ACE2 models (C4, C35), feature importance showing phylogenetic sites (C3, C56), and similar performance for non-ACE2 viruses (C74-C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C63"
+    ],
+    "result": "Previously published ACE2-based heuristics showed broadly similar performance to the authors' models, with binding affinity-based predictions performing best, followed by distance-based approaches. Most distance-based approaches achieved high accuracy through high sensitivity but very low specificity. Host trait-based approaches showed reduced performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C63 are supported by retrospective analysis in Figure 4 and supplements. However, the authors appropriately note that wide confidence intervals and limited species overlap make quantitative comparisons uncertain (C70). The comparison is fair but should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C61",
+      "C62"
+    ],
+    "result": "Biased availability of ACE2 sequences misleads geographic projections of at-risk species. The apparent hotspot in South-East Asia reflects ACE2 sequence availability rather than true elevated susceptibility, as species in this region were not more likely to be susceptible than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C48, C61-C62 are supported by spatial analyses in Figure 5. The comparison between ACE2 sequence availability (Figure 5A) and predicted susceptibility patterns (Figure 5C, E) clearly demonstrates geographic bias. However, the inference about causation (C62) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Phylogeny-based models reduce geographic bias but predict 42.7% of mammals as susceptible (1785 species), compared to 87.6% for ACE2-based models. Most taxonomic orders show uniform susceptibility, though primates, rodents, and bats contain families predicted as non-susceptible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C45-C46, C49-C51 are supported by predictions shown in Figure 5 and supplements. The large number of predicted susceptible species is consistent across observed data (82.2%), ACE2 models (87.6%), and phylogeny models (42.7%), though the phylogeny model's lower estimate may reflect broader taxonomic coverage rather than improved accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The phylogeny-based model accurately predicted 11 of 12 species reported as naturally infected after data collection ended, providing post-hoc validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by citations to recent reports and comparison to model predictions (Supplementary file 2). This provides valuable external validation, though the small sample size and potential for publication bias (newly infected species more likely to be reported) should be noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C82"
+    ],
+    "result": "Conditioning predictions on the top 30% of species captures 73% of known susceptibles but still requires surveillance of 1255 mammals. Both data and models suggest significant ongoing risk of reverse zoonosis to a wide range of species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C82 are supported by threshold analysis in Figure 5\u2014figure supplement 1 and the overall pattern of widespread susceptibility. The practical implications are appropriately cautious, acknowledging that even aggressive filtering leaves an impractically large number of species requiring surveillance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The majority of susceptible hosts are unlikely to transmit virus effectively (Figure 1A), but current data cannot produce models capable of accurately predicting virus shedding, indicating need for more transmission data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by virus shedding data in Figure 1A and poor model performance in Figure 2\u2014figure supplement 1. However, the limited data (N=23 species, only 17 shedding) means this conclusion should be considered preliminary and requires substantial additional data for confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study has limitations including small sample size (96 species), limited non-susceptible species (N=21), and potential biases. However, including cell culture data did not skew results, and including non-SARS-CoV-2 sarbecoviruses did not adversely impact performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 appropriately acknowledge limitations while providing evidence that methodological choices (including cell culture data, pooling sarbecoviruses) were justified. The analyses in Figure 2\u2014figure supplements 2-4 support these claims, though the fundamental limitation of small sample size remains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Distance to closest susceptible species outperformed distance to human ACE2 in specificity while maintaining sensitivity. The AA categorical model performed considerably worse than null across all metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by model comparisons in Figure 2. These findings provide useful methodological insights about ACE2 representation, though they are secondary to the main conclusions about phylogenetic signal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The same ACE2 features and sites were used for both rhinolophid bats and other species without affecting predictive accuracy, suggesting no special evolutionary dynamics in putative reservoir hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by feature importance analysis in Figure 3\u2014figure supplement 1 and performance analysis in Figure 3\u2014figure supplement 3. This addresses a potential confounding factor (different evolutionary pressures in reservoir hosts) and strengthens the main conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "While experimental evidence shows ACE2 variation can block infection in some cases, a broad diversity of ACE2 variation is permissive for infection. Sarbecovirus host range is likely shaped by multiple phylogenetically conserved factors beyond ACE2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by the high proportion of susceptible species across diverse ACE2 sequences and the equivalent performance of phylogeny-only models. However, C60 is largely inferential\u2014the specific factors remain unidentified, and this represents a hypothesis rather than a demonstrated mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Available susceptibility data may be affected by taxonomic and geographic biases, but current biases could not produce false equivalence between ACE2 and phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 appropriately acknowledge potential biases (C77-C80 are speculative but reasonable) while arguing that the core finding is robust (C81). The reasoning in C81 is sound\u2014systematic biases in data collection would not be expected to create the specific pattern of phylogenetic signal observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background context on SARS-CoV-2 reverse zoonosis, experimental susceptibility studies, and existing computational approaches for predicting host range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C18 provide background context supported by appropriate citations. These are literature review claims that establish motivation and context for the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Widespread susceptibility is observed across experimental infections (65.2% of mammals, CI: 42.7-83.6%), training data (82.2%, CI: 72.7-89.5%), and model predictions (87.6% and 42.6% for ACE2 and phylogeny models respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by consistent patterns across multiple data sources. However, the wide confidence interval for experimental infections (42.7-83.6%) reflects substantial uncertainty, and the different estimates from ACE2 vs phylogeny models suggest some methodological dependence.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes background knowledge about lipid droplets (LDs) as ER-derived organelles that store triacylglycerol (TG) and sterol esters, with seipin being a key protein for LD biogenesis. Seipin forms a cage-like structure with conserved hydrophobic helices and transmembrane segments. Failure of LD biogenesis leads to metabolic diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C9-C12 represent well-established background knowledge supported by citations to prior work and general scientific consensus. These claims provide appropriate context for the study and are not contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript reviews prior work on lipid droplet assembly complexes (LDACs), seipin structure, and functional differences between human and yeast seipin. Human seipin is an undecamer with a conserved hydrophobic helix (HH) that serves as a TG tethering site, while yeast seipin lacks the HH and requires binding partners like Ldb16 for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C26 accurately summarize prior work with appropriate citations. The claims about seipin structure, LDAC composition, and species differences are well-documented in the cited literature. These provide essential background for understanding the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors modeled human seipin structure (Arg23-Arg265) including TM segments based on yeast seipin structural models and their own cryo-EM data. The model shows aromatic hydrophobic residues facing outward in human seipin versus nonaromatic residues in yeast. The authors acknowledge that the TM segments require further validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C31 describe the structural modeling approach. While the methodology is described and the authors appropriately acknowledge limitations (C29), the low resolution of cryo-EM data for TM segments and reliance on yeast models introduces uncertainty. The model is a hybrid construct requiring experimental validation, which limits confidence in TM segment positioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "All-atom simulations (3 \u03bcs) of human seipin in POPC bilayers with 6% triolein reveal that the hydrophobic helix (HH) preferentially aggregates with TG, with S166 showing the strongest interaction. TM segments show weaker but broader TG interactions. Lipid diffusion is reduced near protein, with lumenal PLs showing lowest diffusion due to HH and switch region interactions. Confined PLs inside the seipin ring may increase bending modulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C42 are supported by AA simulation data presented in Figure 2 and supplements. The coordination number analysis is methodologically sound, and results are consistent with prior computational studies using different force fields (C34). The diffusion analysis appropriately distinguishes protein-free and protein-proximal regions. The inference about bending modulus (C42) is supported by citation to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors developed coarse-grained (CG) models of lipids and seipin to access longer time and length scales beyond AA simulations. The CG model uses four-site lipid representations and maps four protein residues to one CG atom. An elastic network model (ENM) with spring constants of 0.2 or 2 kcal/mol/\u00c5\u00b2 was constructed, with 24 trapped PLs inside the HH ring included as part of the protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 describe the CG modeling methodology with appropriate citations to prior work. The rationale for CG modeling (accessing relevant time/length scales) is sound given the 3 \u03bcs AA simulation did not observe TG nucleation (C43). The modeling choices (resolution matching, ENM construction, trapped PLs) are justified by AA simulation observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "CG simulations demonstrate that seipin catalyzes TG nucleation below the critical concentration (2 mol% TG). Without seipin or with a single subunit, TG nucleation does not occur. The full seipin oligomer enables TG nucleation through collective protein-TG interactions. MARTINI CG simulations confirm these findings. The lumenal domain (especially HH) is critical for TG nucleation, while TM segment positioning contributes less.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 are supported by CG simulation data in Figure 3d-e and consistent with prior computational studies using different force fields (C58). The control simulation with a single subunit (C54) appropriately demonstrates the requirement for oligomeric assembly. The conclusion about HH criticality (C59-C60) is a reasonable inference from comparing studies with different TM modeling approaches that reach the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CG simulations of LD maturation (6% TG) show that seipin TM segments constrain the XY area of TG in the bilayer, converting flat, high-anisotropy oil lenses into budding LDs with low anisotropy and ER-LD neck structures. The neck diameter (13-17 nm) agrees with experimental measurements. Systems without seipin or without TM segments produce flat oil lenses. The 5-subunit model shows intermediate morphology. Analysis of nucleation percentage and anisotropy reveals different oil growth mechanisms (coalescence vs. Ostwald ripening).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C79 are supported by CG simulation data in Figure 4 and supplements. The systematic comparison of different seipin geometries (no seipin, no TM, 5 subunits, 11 subunits) provides strong evidence for TM segment function. The neck diameter measurement (C67) validates the model against experimental data. The mechanistic inferences about coalescence and Ostwald ripening (C77-C79) are reasonable interpretations of the anisotropy and nucleation percentage data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A heterogeneous ENM (hENM) model constructed from AA simulation fluctuations reproduces AA RMSF in CG simulations. In larger bilayers (60 nm diameter, 6% TG), seipin TM segments define the oil boundary and facilitate TG transport into LDs, producing spherical oil lenses (anisotropy near zero). The ring geometry of seipin TM segments is key to defining the oil lens boundary and creating the ER-LD structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by data in Figure 5. The hENM validation against AA RMSF (C81) demonstrates appropriate model parameterization. The larger-scale simulations confirm findings from smaller systems and extend them to more physiologically relevant scales. The conclusion about TM segment ring geometry (C84) is well-supported by the systematic comparisons across different model systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Coevolutionary sequence analysis shows that seipin's lumenal domain and TM segments are conserved, while N- and C-terminal cytosolic tails are not. Experimental validation shows that seipin-\u0394TERM (lacking terminal regions) has the same membrane topology as wildtype, assembles ER foci, and rescues the defective LD phenotype in seipin KO cells. This indicates that cytosolic terminal regions are dispensable for seipin function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 combine computational sequence analysis with experimental validation. The sequence conservation analysis (C85-C86) is supported by Figure 6\u2014supplement 1. The experimental rescue data (C87-C91) in Figure 6a-c demonstrate that terminal truncation does not impair function. The conclusion (C91) is well-supported by the data and consistent with prior work in Drosophila (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Mutating conserved positively charged residues at TM segment borders to alanine (tipA mutants) produces an intermediate LD phenotype with more irregular LDs, despite correct membrane insertion and foci formation. CG simulations with reduced attraction scaling factors show that TM segments become immersed in oil lenses during coalescence when these interactions are weakened, disrupting the ER-LD neck structure. Strong interactions maintain the neck structure and enable controlled TG transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 integrate experimental and computational evidence. The experimental data (C93-C94) in Figure 6a-c show that tipA mutants are partially functional. The CG simulations (C96-C101) in Figure 6d provide a mechanistic explanation by varying attraction parameters. The combined evidence supports the conclusion (C102) that charged residues at TM borders are critical for maintaining neck structure during LD growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose a model where seipin TM segments form a cage-like structure that converts planar oil lenses into budding LDs with ER-LD neck structures. Positively charged residues at TM borders anchor the segments at the cytosolic membrane interface, maintaining the neck structure during oil coalescence through strong electrostatic interactions. This enables controlled TG transfer and prevents rapid coalescence that would disrupt LD maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C116 synthesize the study's findings into a mechanistic model. The model is well-supported by the combined AA simulations, CG simulations with systematic variations, and experimental validation. The proposed anchoring mechanism (C112-C114) explains both the simulation observations and the experimental phenotypes of tipA mutants. The model is illustrated in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Hydrophobic interactions between seipin TM segments/HH and TG are the main driving force for TG nucleation, with contributions from hydrophilic interactions between TG glycerol and protein residues (particularly S166). During LD growth, the ER-LD neck diameter increases, and the spread TM segments promote lipid and protein influx to LDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 summarize mechanistic insights from the simulations. The conclusion about hydrophobic interactions (C117) is supported by the AA simulation analysis. The consistency of S166 interactions across force fields (C118) strengthens confidence. The inferences about LD growth (C119-C121) are supported by simulation data and citations to prior experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors acknowledge study limitations: LDAF1 is not included due to unknown structure, the CG model lacks sequence-specific features, and as a phenomenological model, calculated quantities are not directly related to underlying AA systems. Including LDAF1 would likely change protein-lipid interactions and lipid diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 appropriately acknowledge limitations. The absence of LDAF1 (C122) is a significant limitation given its known importance in LD biogenesis, though the authors reasonably explain this is due to lack of structural information. The acknowledgment of CG model limitations (C125-C126) is appropriate for phenomenological models. These limitations do not invalidate the findings but appropriately qualify their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C127"
+    ],
+    "result": "The authors propose that seipin TM segments critically function in LD biogenesis by assisting TG nucleation, controlling lipid diffusion, defining the boundary of the forming oil lens, maintaining the ER-LD neck structure, and controlling oil coalescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C127 represent the main conclusion of the study. This conclusion is well-supported by the convergent evidence from AA simulations (protein-lipid interactions, lipid diffusion), CG simulations (TG nucleation, LD morphology, neck structure formation), and experimental validation (terminal truncations, tipA mutants). The multiple lines of evidence across different scales and approaches provide strong support for this integrative model.",
+    "result_type": "MAJOR"
+  }
+]

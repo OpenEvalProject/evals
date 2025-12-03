@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The optogenetic system successfully replaces endogenous PRC1 with opto-PRC1 without affecting metaphase duration. Endogenous PRC1 was depleted by 90\u00b12% via siRNA, and opto-PRC1 localized normally with streak lengths of 3.77\u00b10.08 \u00b5m, consistent with endogenous PRC1. Anaphase entry rates were similar between cells with endogenous PRC1 and those with opto-PRC1 (79\u00b16% vs 71\u00b15%, p=0.4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence that opto-PRC1 functionally replaces endogenous PRC1. The quantitative depletion data (C1), morphological measurements matching published values (C2), and functional validation via anaphase entry rates with statistical testing (C3) collectively support that the optogenetic system does not perturb normal metaphase function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C74"
+    ],
+    "result": "The optogenetic system enables reversible PRC1 removal with defined kinetics. Upon blue light exposure, 88\u00b13% of opto-PRC1 was removed with a half-time of 4.2\u00b10.1 min. After light cessation, PRC1 returned to 65\u00b11% of initial intensity within 10 min with a half-time of 0.71\u00b10.04 min. The faster return compared to removal may reflect higher affinity differences in the dark, consistent with PRC1's known binding properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C74 provide quantitative kinetic measurements with appropriate replication and reference to figures. The asymmetric kinetics are explained by a plausible mechanistic hypothesis (C6) supported by published in vitro data (C7). The measurements are internally consistent and demonstrate the system's reversibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14"
+    ],
+    "result": "Acute PRC1 removal causes kinetochore misalignment away from the metaphase plate. Sister kinetochore pairs moved away from the equatorial plane (increased dEQ), with 9.3\u00b12.7% making excursions >2 \u00b5m from the equatorial plane. Displaced kinetochores were more frequent in the inner spindle region and remained displaced even after PRC1 return, indicating PRC1's role in maintaining tight kinetochore alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C13-C14 provide quantitative spatial measurements with appropriate sample sizes and statistical comparisons. The spatial pattern (inner vs outer spindle) and persistence after PRC1 return strengthen the conclusion. The inference about PRC1's role (C14) is well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Acute PRC1 removal reduces inter-kinetochore distance without complete loss of tension or checkpoint activation. The distance decreased from 0.87\u00b10.01 \u00b5m to 0.79\u00b10.01 \u00b5m, remaining closer to metaphase than prometaphase values (0.66\u00b10.01 \u00b5m). Anaphase entry rates were similar between control and opto cells (71\u00b15% vs 60\u00b15%, p=0.1), and tension partially restored after PRC1 return.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 provide quantitative measurements with appropriate statistical testing and comparison to reference values from different cell cycle stages. The interpretation that tension is reduced but not lost is supported by the intermediate inter-kinetochore distance values and maintained checkpoint satisfaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Acute PRC1 removal causes persistent kinetochore misorientation. Sister kinetochore orientation angle (\u03b1KC) increased upon PRC1 removal, with misoriented kinetochores found farther from the equatorial plane and closer to the spindle axis. Both kinetochores and PRC1 bundles remained misoriented after PRC1 return, suggesting PRC1 confines chromosomes in new positions when returning to perturbed overlaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 provide quantitative angular measurements with spatial correlations. The persistence of misorientation after PRC1 return (C21-C22) supports the mechanistic interpretation (C23) that PRC1 locks in the perturbed geometry. The spatial patterns strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The observed effects are specific to PRC1 removal and not artifacts of imaging conditions. Effects on inter-kinetochore distance, alignment, and orientation were unchanged by SiR-tubulin addition (p>0.27 for all parameters). Control experiments without iLID or with only CENP-A-GFP showed no effects, ruling out SiR-tubulin or laser photodamage as causes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide appropriate negative controls with statistical comparisons. Multiple control conditions (no iLID, no SiR-tubulin, same illumination) all show no effects, strongly supporting specificity. The citation of photodamage literature (C26) appropriately contextualizes the controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Acute and long-term PRC1 removal produce different phenotypes despite similar PRC1 depletion levels. Long-term siRNA depletion did not cause kinetochore misalignment or misorientation, unlike acute removal. Both methods decreased inter-kinetochore distance similarly, but long-term depletion reduced anaphase entry (35\u00b18% vs 79\u00b16%, p=0.046) while acute removal did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide direct quantitative comparisons between acute and long-term depletion with statistical testing. The differential phenotypes despite similar depletion levels (~90% in both) support the conclusion of compensatory mechanisms during long-term depletion. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Both acute and long-term PRC1 removal increase lagging kinetochore frequency. Opto cells showed more lagging kinetochores than controls, as did siRNA-treated cells. Cells with lagging kinetochores had smaller inter-kinetochore distances before anaphase, suggesting tension reduction contributes to segregation errors. However, misalignment and lagging are not linked at the cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide quantitative frequency measurements and correlations with inter-kinetochore distance. The distinction between cell-level and local kinetochore-level relationships (C34) is appropriately nuanced. The data support the inference about tension involvement (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "CLASP1 fails to accumulate at the spindle midzone after PRC1 removal, potentially contributing to lagging kinetochores. The absence of CLASP1 between segregating chromosomes in opto cells could result from perturbed PRC1-CLASP1 interaction, consistent with published work showing this interaction is required to prevent lagging chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 provide observational data on CLASP1 localization with appropriate citation of published work linking PRC1-CLASP1 interaction to chromosome segregation. The mechanistic speculation (C36) is appropriately qualified and supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Acute PRC1 removal causes overlap elongation that correlates spatially with chromosome misalignment, supporting an overlap length-dependent force model. Elongated overlaps and misaligned chromosomes are both found centrally rather than peripherally. Long-term depletion causes neither phenotype, indicating compensatory mechanisms regulate overlap length during chronic PRC1 absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 integrate multiple observations (overlap elongation, spatial correlation, differential effects of acute vs chronic depletion) to support a mechanistic model. The spatial correlation (C38) and differential phenotypes (C39) provide strong support for the model and the inference of compensatory mechanisms (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The number of dynamic microtubules in bridging fibers is largely unaffected by acute PRC1 removal but slightly decreased by long-term depletion. Control cells showed 1.8\u00b10.2 EB3 spots/min, similar to 2.0\u00b10.3 spots/min after acute removal (p=0.59). However, siRNA-treated cells showed 1.5\u00b10.1 spots/min compared to 1.91\u00b10.09 in untreated cells (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide quantitative measurements with appropriate statistical testing and sample sizes. The differential effects between acute and chronic depletion are statistically supported and consistent with the compensatory mechanism hypothesis. The measurements are technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Acute PRC1 removal increases antiparallel overlap length by ~40%, while long-term depletion does not. Control overlap half-length was 1.8\u00b10.2 \u00b5m, matching PRC1 streak measurements (validating the method). After acute removal, overlap half-length increased to 2.6\u00b10.2 \u00b5m, but siRNA treatment caused no change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 provide quantitative measurements with method validation (C78) and clear differential effects between acute and chronic depletion. The 40% increase is substantial and statistically meaningful. The validation against PRC1 streak length strengthens confidence in the EB3-based measurement method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "PRC1 removal reduces microtubule number in bridging fibers by ~2.5-fold (to 5.6\u00b10.9 microtubules), primarily affecting non-dynamic microtubules. Since dynamic microtubule numbers are unchanged, PRC1 presence increases total microtubules while decreasing the dynamic fraction. Long-term depletion produces similar microtubule reduction (7.5\u00b11.1, p=0.21 vs acute).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 integrate microtubule counting with dynamic microtubule measurements to infer the composition of bridging fibers. The logic connecting unchanged dynamic microtubules (C76) with reduced total microtubules (C82) to infer selective loss of non-dynamic microtubules (C83) is sound. The quantitative data are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "PRC1 removal straightens k-fibers and creates a diamond-shaped spindle, with acute removal having a stronger effect than long-term depletion. Spindle length and width remained unchanged after both treatments, but k-fiber curvature decreased more after acute removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 provide quantitative shape measurements with appropriate comparisons between acute and chronic depletion. The unchanged spindle dimensions with altered k-fiber curvature support the interpretation that PRC1 removal specifically affects k-fiber geometry. The differential magnitude between treatments is consistent with other findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Eg5/kinesin-5 remains detectable in bridging fibers after PRC1 siRNA treatment, suggesting it may crosslink residual microtubules in the absence of PRC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 provides observational data on Eg5 localization with appropriate citation of published work showing Eg5 localizes to bridging fibers. The inference about Eg5 crosslinking residual microtubules is reasonable given its known function, though direct functional evidence is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C88"
+    ],
+    "result": "Kif4A and Kif18A localize to bridging fibers in metaphase and are largely lost upon PRC1 removal, suggesting they regulate overlap length. Both proteins were detected in bridging fibers and their intensities decreased following PRC1 removal by optogenetics or siRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C88 provide observational data on protein localization with quantitative intensity measurements. The localization is demonstrated by multiple methods (immunofluorescence, live imaging) and the loss upon PRC1 removal is quantified. The inference about overlap length regulation is supported by subsequent functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Kif4A and Kif18A suppress microtubule dynamics and their depletion leads to longer PRC1-labeled overlaps and chromosome misalignment. Both proteins are known to suppress microtubule dynamics, and siRNA depletion of either resulted in elongated overlaps, consistent with published reports of chromosome misalignment in depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 integrate published functional data (C42, C44) with new experimental observations (C43). The elongated overlaps after depletion provide direct support for the model that these kinesins regulate overlap length. The consistency with published misalignment phenotypes strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A small pool of Kif4A binds PRC1-dependent antiparallel overlaps in metaphase and its removal leads to overlap elongation. Despite reports that Kif4A doesn't interact with PRC1 before late mitosis, Kif4A was reduced by ~76% (similar to PRC1's ~85% reduction) within 12 min of acute removal. This reduction may cause excessive microtubule polymerization and longer overlaps, with specificity to bridging microtubules indicated by unchanged spindle length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 propose a novel finding that contradicts published work but is supported by quantitative kinetic data showing similar reduction rates for Kif4A and PRC1 (C47). The mechanistic explanation (C48) is supported by published work on Kif4A function in anaphase. The specificity argument based on unchanged spindle length (C49) is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Kif18A reduction in bridging fibers (~43%) is less than PRC1 reduction (~85%) and likely reflects decreased microtubule numbers rather than direct PRC1 dependence. The differential reduction is consistent with Kif18A not being a known PRC1 binding partner, suggesting Kif18A amount per microtubule remains unaffected by PRC1 removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide quantitative comparison of reduction kinetics with logical inference based on known protein interactions. The interpretation that Kif18A reduction reflects microtubule loss rather than direct PRC1 dependence is consistent with the lack of known interaction and the magnitude of reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "MKLP1 and a small pool of Kif4A localize to bridging fibers in a PRC1-dependent manner, while Kif18A does not. MKLP1 was reduced similarly to PRC1 (~87% vs ~88% within 20 min), consistent with it being a PRC1 binding partner. The differential reduction patterns support direct PRC1 dependence for MKLP1 and Kif4A but not Kif18A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 integrate quantitative kinetic data with known protein interactions to draw conclusions about localization dependencies. The similar reduction kinetics for MKLP1 and PRC1 support direct dependence, while the differential behavior of Kif18A supports indirect effects. The logic is sound and supported by published interaction data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Kif4A and Kif18A regulate overlap length under normal conditions, with Kif4A showing differential effects between acute and chronic PRC1 depletion. Kif4A signal decreased more after acute (76%) than long-term (52%) depletion, while Kif18A decreased similarly (~43% vs 38%). Kif4A siRNA increased overlap length by ~1 \u00b5m (similar to acute PRC1 removal), while Kif18A siRNA caused larger increases. The differential Kif4A effects suggest compensatory mechanisms during long-term depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 integrate multiple quantitative comparisons to support a model of overlap length regulation. The differential effects of Kif4A between acute and chronic depletion (C55) combined with the similar overlap increases from Kif4A siRNA and acute PRC1 removal (C56) support the mechanistic interpretation (C57). The speculation about compensatory mechanisms (C58) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Kif4A, Eg5, and possibly other kinesins may slide bridging microtubules apart, while MKLP1 and PRC1 stabilize overlaps. Kif4A and Eg5 drive antiparallel microtubule sliding in anaphase, suggesting similar roles in metaphase. This is consistent with Kif4A depletion reducing poleward flux. Kif18A may have sliding and crosslinking activities like yeast kinesin-8, and MKLP1 likely stabilizes bridging microtubules as it does in anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C62 propose mechanistic models based primarily on analogy to published work in anaphase or other systems. While the analogies are reasonable and supported by one piece of direct evidence (C60), the claims are largely speculative about metaphase function. Direct functional evidence for sliding or stabilization activities in metaphase is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C89"
+    ],
+    "result": "PRC1 removal does not affect localization of Kif4A on chromosome arms or Kif18A, CLASP1, and CENP-E on k-fiber plus-ends, arguing against perturbed polar ejection forces or k-fiber plus-end dynamics as causes of misalignment. These proteins remained at their normal locations after both acute and long-term PRC1 removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C89 provide observational data on protein localization after PRC1 removal. The preserved localization of multiple proteins involved in different force-generating mechanisms supports the conclusion that kinetochore misalignment is not due to these alternative mechanisms. This strengthens the bridging fiber-specific model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Alternative mechanisms involving changes in other spindle microtubule dynamics cannot be completely excluded as contributors to chromosome misalignment and overlap elongation after acute PRC1 removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 appropriately acknowledges limitations in ruling out all alternative mechanisms. This is a scientifically appropriate caveat given that subtle changes in protein localization or effects on other proteins cannot be completely excluded. The acknowledgment strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "PRC1 removal effects are spatially non-uniform, with the inner spindle more severely affected. PRC1 signal disappeared faster and bridging microtubules became longer in the inner spindle. Severely misaligned and lagging kinetochores also occurred more frequently in the inner region. This spatial pattern is consistent with weak coupling between neighboring k-fibers but strong coupling between sister k-fibers, indicating a mechanistic link between bridging fiber geometry and kinetochore alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide spatial analysis of multiple phenotypes showing consistent inner-spindle localization. The proposed explanation based on microtubule numbers (C67) is reasonable. The interpretation in the context of published work on k-fiber coupling (C69) appropriately integrates the findings into existing models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose a model where overlap length-dependent forces position chromosomes at the spindle equator, with overlap length regulated by PRC1-dependent Kif4A and Kif18A. Kif4A, Eg5, and other kinesins may slide bridging microtubules apart while PRC1 and kinesins stabilize overlaps. Proper chromosome alignment requires forces generated within the bridging fiber that are transferred to k-fibers and depend on precise overlap regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 and C90-C91 present the central mechanistic model supported by the collective experimental findings. The model integrates multiple lines of evidence: overlap elongation correlates with misalignment, Kif4A/Kif18A regulate overlap length, spatial patterns support local force generation, and differential effects of acute vs chronic depletion indicate active regulation. While some mechanistic details remain speculative (C72), the overall model is well-supported.",
+    "result_type": "MAJOR"
+  }
+]

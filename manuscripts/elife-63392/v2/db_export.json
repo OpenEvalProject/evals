@@ -1,0 +1,1485 @@
+{
+  "submission": {
+    "id": "ee7dab1c-2016-4489-bd48-f4266abb78af",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:29:03.407344Z",
+    "updated_at": "2025-12-03T04:29:03.407344Z"
+  },
+  "content": [
+    {
+      "id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "submission_id": "ee7dab1c-2016-4489-bd48-f4266abb78af",
+      "content_type": "manuscript",
+      "content_text": "# Permeabilization-free en bloc immunohistochemistry for correlative microscopy\n\n## Authors\n\n- Kara A Fulton<sup>1</sup> ([ORCID: 0000-0002-9987-2815](https://orcid.org/0000-0002-9987-2815))\n- Kevin L Briggman<sup>2</sup> ([ORCID: 0000-0003-2946-4661](https://orcid.org/0000-0003-2946-4661)) \u2020\n\n### Affiliations\n\n1. Brown University Providence United States\n2. National Institute of Neurological Disorders and Stroke (NINDS) Bethesda United States\n3. Center of Advanced European Studies and Research (caesar) Bonn Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nA dense reconstruction of neuronal synaptic connectivity typically requires high-resolution 3D electron microscopy (EM) data, but EM data alone lacks functional information about neurons and synapses. One approach to augment structural EM datasets is with the fluorescent immunohistochemical (IHC) localization of functionally relevant proteins. We describe a protocol that obviates the requirement of tissue permeabilization in thick tissue sections, a major impediment for correlative pre-embedding IHC and EM. We demonstrate the permeabilization-free labeling of neuronal cell types, intracellular enzymes, and synaptic proteins in tissue sections hundreds of microns thick in multiple brain regions from mice while simultaneously retaining the ultrastructural integrity of the tissue. Finally, we explore the utility of this protocol by performing proof-of-principle correlative experiments combining two-photon imaging of protein distributions and 3D EM.\n\n## Introduction\n\nAnatomical reconstructions of synaptic connectivity are one essential component of understanding neuronal circuits in the nervous system. Recent improvements in automating the collection of 3D electron microscopy (EM) data have dramatically increased the tissue volumes that can be acquired (Briggman and Bock, 2012; Eberle et al., 2015). Connectivity data derived from EM, however, does not alone contain sufficient information about the functional properties of neurons to fully constrain biologically plausible computational models. One approach to augment EM datasets with functional information is to physiologically record from neurons in a tissue sample prior to fixation (Bock et al., 2011; Briggman et al., 2011; Lee et al., 2016; Wanner and Friedrich, 2020). As a complementary approach, fluorescence immunohistochemistry (IHC) can be used to identify the constituent proteins of neuronal cell types and synapses that are key determinants of the functional properties of neurons (Coons et al., 1942; Cuello et al., 1983).\n\nPost-sectioning IHC is typically employed for correlative EM because the sectioning process provides access to intracellular epitopes. For example, array tomography was developed to multiplex the labeling of numerous targets in ultrathin tissue sections (Collman et al., 2015; Micheva and Smith, 2007). However, this approach is incompatible with en bloc-based methods for collecting 3D EM data that require pre-embedding IHC, as in the case of focused ion beam scanning electron microscopy (FIB-SEM, Hayworth et al., 2015; Knott et al., 2008), gas cluster ion beam SEM (Hayworth et al., 2020), and serial block-face scanning electron microscopy (SBEM, Denk and Horstmann, 2004). For pre-embedding IHC, a membrane permeabilization step with nonionic surfactants such as Triton X-100 or polysorbate 20 (Tween 20) is typically performed to enable antibody penetration into thick tissue blocks, but at the cost of degraded tissue ultrastructure (Helenius and Simons, 1975; Humbel et al., 1998).\n\nTo address this limitation, we began with the observation that the preservation of extracellular space (ECS) during chemical tissue fixation improves the penetration of antibodies into the mammalian retina using minimal permeabilization (Pallotto et al., 2015). Building on this finding, we developed a protocol that is capable of immunohistochemically labeling proteins throughout acutely\u00a0fixed\u00a0brain tissue sections up to 1 mm thick without permeabilization. Here, we describe the key changes that were made in comparison to conventional IHC protocols, leading to improved ultrastructural preservation. In addition, we demonstrate several applications of the protocol including the labeling of cell-type-specific proteins in various brain regions and proof-of-principle correlative light microscopy (LM)/EM experiments.\n\n## Results\n\n### Optimization of a permeabilization-free protocol to label ECS-preserved tissue sections\n\nAldehyde-based fixation of the brain has been previously demonstrated to result in the loss of the 15\u201320% ECS volume fraction normally found in vivo (Van Harreveld and Malhotra, 1967). The observation that detergent permeabilization is required for antibodies to penetrate into thick brain tissue sections has largely been based on such, usually perfusion-fixed, tissue in which ECS is not preserved. We began by demonstrating this requirement using a fluorophore-conjugated primary antibody for the neuronal soma marker, NeuN, as a representative antibody (Mullen et al., 1992) and prepared 300-\u03bcm-thick perfusion-fixed sections of mouse cerebral cortex. When detergent was omitted from the labeling protocol, we observed a gradient of fluorescently labeled somata that decreased in the center of sections, as expected, and the ultrastructural membrane integrity of the tissue remained intact (Figure 1b). With the inclusion of a commonly used detergent, Triton X-100, neuronal somata were uniformly labeled throughout the depth of the sections but at the cost of severely degraded membrane integrity due to lipid solubilization (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig1-v2.jpg)\n\n**Figure 1.:** (a,\u00a0b) 300-\u00b5m-thick sections from the cerebral cortex of a transcardially perfused mouse. Incubation with Alexa Fluor-488 conjugated anti-NeuN was performed with (a) or without (b) 0.3% Triton to label neuronal somata. X\u2013Z reslices of two-photon image volumes (left panels) are 10-\u00b5m-average intensity projections from the center of the sections. Sections were then stained for electron microscopy, and a region from the center of the section was examined for ultrastructural integrity (right panels). (c,\u00a0d) Same procedure as in (a,\u00a0b) but for 300-\u00b5m-thick acute ECS-preserved sections from the cerebral cortex of a mouse. (e,\u00a0f) 10\u00a0\u00b5m\u00a0average intensity projections of X\u2013Y slices from center of the image volumes highlighting nuclear exclusion of anti-NeuN labeling when Triton is omitted (f). Scale bars: (a\u2013d), left panels: 100 \u00b5m; (a\u2013d), right panels: 1 \u00b5m; (e,\u00a0f): 50 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a,\u00a0b) 300-\u03bcm-thick sections from a transcardially perfused mouse (a, n\u00a0=\u00a04 sections) and a mouse from which acute extracellular space\u00a0(ECS)-preserved sections were collected (b, n\u00a0=\u00a04 sections). Sections were labeled with Alexa Fluor-488 conjugated anti-NeuN with 0.3% Triton. Two-photon\u00a0(2P) image volumes were acquired. X\u2013Z reslices are 10\u00a0\u00b5m average intensity projections from the center of the sections. (c,\u00a0d) 300-\u03bcm-thick sections from a transcardially perfused mouse (c, n\u00a0=\u00a04 sections) and a mouse from which acute ECS-preserved sections were collected (d, n\u00a0=\u00a04 sections). Sections were labeled with Alexa Fluor-488 conjugated anti-NeuN without permeabilization. 2P images as in panels (a,\u00a0b). Scale bars: 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a\u2013f) 300-\u03bcm-thick acute extracellular space\u00a0(ECS)-preserved sections from mouse cerebral cortex. Slices were fixed with different concentrations of glutaraldehyde (GA) and paraformaldehyde (PFA) and then incubated with Alexa Fluor-488 conjugated anti-NeuN. Two-photon image volumes were acquired. X\u2013Z reslices (left panels) are 10 \u00b5m average intensity projections from the center of the sections. Sections were then fixed with 2% GA, stained for electron microscopy, and a region from the center of the section was examined for ultrastructural integrity (right panels). (g) The points in parameter space that were tested are color-coded to match the panels in (a\u2013f). A combination of 0.005% GA\u00a0+\u00a04% PFA (d) was selected as an optimal tradeoff between ultrastructural quality and antibody penetration. Scale bars: (a) 100 \u00b5m; (b\u2013d) 100 \u00b5m (upper panels), 0.5 \u00b5m (lower panels).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) 300-\u03bcm-thick acute extracellular space\u00a0(ECS)-preserved sections from mouse cerebral cortex. Sections were incubated in different concentrations of Alexa Fluor-488 conjugated anti-NeuN as indicated for 72 hr.\u00a0Two-photon (2P) image volumes were acquired. X\u2013Z reslices are 10 \u00b5m average intensity projections from the center of the sections. (b\u2013d) 300-\u03bcm-thick acute ECS-preserved sections from mouse cerebral cortex. Sections were fixed for varying durations (1, 4, or 18 hr) with 0.005% glutaraldehyde\u00a0+\u00a04% paraformaldehyde prior to incubation with Alexa Fluor-488 conjugated anti-NeuN. 2P image volumes were acquired. X\u2013Z reslices (upper panels) are 10 \u00b5m average intensity projections from the center of the sections. Sections were then stained for electron microscopy, and a region from the center of the section was examined for ultrastructural integrity (lower panels). Scale bars, upper panels: 100 \u03bcm; lower panels: 0.5 \u03bcm.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** 300-\u03bcm-thick acute extracellular space-preserved sections from mouse cerebral cortex. Sections were incubated with Alexa Fluor-488 conjugated anti-NeuN and anti-calretinin (CR)\u00a0either with (a,\u00a0b) or without (c,\u00a0d) 3% donkey serum and with (a,\u00a0c) or without (b,\u00a0d) permeabilization with 0.3% Triton. Two-photon image volumes were acquired. X\u2013Y (left panels) and X\u2013Z reslices (right panels) are 10 \u00b5m average intensity projections from the center of the sections. Scale bars: 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** 300-\u03bcm-thick acute extracellular space-preserved sections from mouse olfactory bulb. Sections were incubated with Alexa Fluor-488 conjugated anti-NeuN for varying durations (4.5 hr to 9 days). Sections were then stained for electron microscopy, and a region from the center of the section was examined for ultrastructural integrity in the glomerular layer (left panels) and external plexiform layer (right panels). Scale bars: 1 \u03bcm.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** 300-\u03bcm-thick acute extracellular space-preserved slices from mouse cerebral cortex. Slices were fixed with different concentrations of glutaraldehyde (GA)\u00a0and paraformaldehyde\u00a0(PFA) as indicated and were then incubated with Alexa Fluor-488 conjugated anti-NeuN. Half of the slices then underwent the SeeDB procedure (see Materials\u00a0and\u00a0methods), and the others remained in buffer. The SeeDB slices were then rehydrated to buffer, and then all sections were refixed in 2% GA and stained for electron microscopy. Scale bars: 0.5 \u03bcm.\n\nWe then replicated this experiment in 300-\u03bcm-thick acute immersion-fixed mouse cortical sections in which ECS was preserved as recently described (Pallotto et al., 2015). As with perfusion-fixed sections, the inclusion of a detergent in the protocol yielded uniform penetration of anti-NeuN at the expense of degraded membrane integrity (Figure 1c). However, when detergent was omitted from the protocol, the labeling of neuronal somata in ECS-preserved sections remained uniform throughout the tissue (Figure 1d).\n\nImportantly, the exclusion of a permeabilization step yielded intact lipid membranes based on electron micrographs from the same tissue (Figure 1d). This result was repeatable in multiple cortical sections from two mice (Figure 1\u2014figure supplement 1, see section \u2018Replicates\u2019). We noted a nuclear exclusion of the NeuN labeling in the non-permeabilized sections (Figure 1f) compared to permeabilized sections (Figure 1e), indicating nuclear membranes remained impermeant to the antibody.\n\nBased on the observation that anti-NeuN can penetrate thick ECS-preserved tissue sections without permeabilization, we proceeded to optimize the parameters of the protocol and explore the boundary conditions of the labeling uniformity. The parameters we titrated included fixative composition and duration, antibody concentration and duration of incubation, IHC buffer composition and osmolarity, incubation temperature, and the use of a tissue-clearing protocol. The resulting optimized IHC protocol (Supplementary file 1) incorporates these systematic optimization steps. A balance between ultrastructural integrity and penetration depth was dependent on the concentrations of paraformaldehyde (PFA) and glutaraldehyde (GA) in the primary fixative solution as expected based on the different cross-linking properties of the two aldehydes (Hopwood, 1985). A mixture of 4% PFA and 0.005% GA yielded a good compromise between penetration depth and EM quality, although small variations in the GA concentration led to similar results (Figure 1\u2014figure supplement 2). A second key parameter was the concentration of the primary antibody. Uniform labeling was achieved when using IgG primary antibody concentrations in the range of 33\u201366 nM (Figure 1\u2014figure supplement 3a). Of the parameters we varied, the labeling uniformity was less sensitive to the duration of the initial fixation (Figure 1\u2014figure supplement 3b) and the omission of blocking serums (Figure 1\u2014figure supplement 4), the utility of which has been questioned (Buchwalow et al., 2011). The ultrastructural quality was less sensitive to the duration of the initial fixation (Figure 1\u2014figure supplement 3b) and the duration of the antibody incubations (Figure 1\u2014figure supplement 5). Additional parameters were qualitatively determined: (1) the use of an antibody incubation buffer that was isotonic with the fixation buffer, (2) the ratio of NaCl to PB in the antibody incubation buffer, and (3) room temperature processing.\u00a0For these three parameters, we observed adequate penetration and preservation of ultrastructure with the protocol described (Supplementary file 1), but we did not extensively explore these parameter spaces. It is possible that a titration of these three parameters may be more optimal for different antibodies or tissues.\n\nBecause we prepared relatively thick fixed tissue sections, we were unable to image fluorescence throughout the depth of the sections and therefore employed a tissue-clearing method. Many of the tissue-clearing protocols recently described are not compatible with correlative LM/EM due to a degradation of tissue ultrastructure (Richardson and Lichtman, 2015). We therefore chose to use a refractive index-matching approach utilizing high-concentration fructose solutions, SeeDB, that does not involve the dissolution of membrane lipids (Ke et al., 2013). We confirmed that refixing the tissue with 2% PFA before serially incubating in fructose solutions retains ultrastructural quality (Figure 1\u2014figure supplement 6). The use of SeeDB clearing allowed us to obtain two-photon (2P) excited fluorescence signals throughout the depth of 300 \u03bcm fixed tissue sections (Denk et al., 1990).\n\nTo explore the upper bound of the depth penetration achievable with the permeabilization-free protocol, we prepared\u00a0~1-mm-thick mouse cortical coronal sections and varied the fixative buffer concentration to yield different ECS volume fractions as previously described (Pallotto et al., 2015;\u00a0Figure 2). The duration of the anti-NeuN incubation was increased from 72 hr (for 300 \u03bcm sections) to 120 hr to allow sufficient time for penetration. We observed that the depth of penetration increased as the fixative buffer concentration increased and that the highest concentration we used yielded complete penetration through 1-mm-thick sections (Figure 2c). As a result of the prolonged incubation duration, somatic nuclei near the edge of the section were occasionally labeled, whereas those nuclei in the center exhibited exclusion of the antibody, indicating a time dependence of the nuclear exclusion.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig2-v2.jpg)\n\n**Figure 2.:** Approximately 2 \u00d7 1\u00a0\u00d7\u00a01-mm-thick acute extracellular space\u00a0(ECS)-preserved sections from the mouse cerebral cortex, fixed with increasing buffer concentrations to yield (a) low (215 mOsm), (b) medium (360 mOsm), or (c) high (480 mOsm) osmolarities corresponding to increasing ECS volume fractions. Incubation with Alexa Fluor-488 conjugated anti-NeuN was performed without Triton to label neuronal somata. Tissue sections were hemisected and the cut surface was two-photon imaged to investigate the penetration depth. Images are 10 \u00b5m maximum intensity projections from the cut surface. Scale bars: 100 \u03bcm.\n\n### Distinguishing neuronal cell types and synaptic proteins with permeabilization-free IHC\n\nDuring our optimization of the protocol parameters, we used anti-NeuN as a general label of neuronal somata. We next explored whether the protocol is compatible with additional antibodies and whether we could multiplex the immunofluorescent labeling of multiple protein targets. We first compared the labeling of neurons expressing the calcium-binding proteins calretinin (CR) and calbindin (CB) in the mouse cerebral cortex (Figure 3a,\u00a0b). The CR+\u00a0and CB+\u00a0cell densities labeled with the permeabilization-free protocol (Figure 3b) were similar to those labeled when a permeabilization step was included (Figure 3a). Similar to the results with anti-NeuN, the permeabilization-free protocol generally yielded nuclear exclusion of the CR and CB labeling (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig3-v2.jpg)\n\n**Figure 3.:** (a,\u00a0b) 300-\u00b5m-thick acute extracellular space\u00a0(ECS)-preserved sections from the mouse cerebral cortex. Simultaneous incubation with anti-calbindin (CB) and anti-calretinin (CR) was performed with (a) and without (b) 0.3% Triton to label interneuron somata. X\u2013Y slices (left panels) and X\u2013Z reslices (right panels) of two-photon image volumes are 10 \u00b5m average intensity projections from the center of the sections. (c,\u00a0d) Same as in (a,\u00a0b) but 300-\u00b5m-thick acute ECS-preserved sections from the mouse medial prefrontal cortex were labeled with anti-choline acetyltransferase (ChAT) with (c) and without (d) 0.3% Triton to label cholinergic axons. Scale bars: 50 \u00b5m.\n\nWe next examined the IHC labeling of the cytosolic enzyme choline acetyltransferase (ChAT) expressed in cholinergic neurons. We were motivated to explore whether cholinergic axons could be labeled in brain regions distant from their respective somata. Using tissue sections from the medial prefrontal cortex (mPFC), we achieved labeling of ChAT+\u00a0axons both with and without permeabilization (Figure 3c,\u00a0d) consistent with previous reports of the innervation patterns in the mPFC (Zhang et al., 2010). However, we noted a discontinuity of the axonal labeling in the permeabilization-free sections (Figure 3d) compared to the permeabilized sections (Figure 3c). We hypothesize that the incomplete axonal labeling may be due to a narrowing of the diameter of portions of the axons and therefore present a hindrance to the diffusion of the antibodies or, potentially, that myelination may limit penetration into axons. Both of these possibilities are consistent with the lipid-solubilizing effect of permeabilization that would improve penetration into axons, but at the cost of membrane integrity.\n\nWe then explored whether synaptic proteins in the mouse cortex could be labeled without permeabilization. We first attempted to label the postsynaptic density protein 95 (PSD-95), but found poor labeling without permeabilization (data not shown). Among postsynaptic proteins, super-resolution microscopy has demonstrated that PSD-95 is within approximately 30 nm of the postsynaptic membrane (Dani et al., 2010). We hypothesized that, in the absence of solubilizing lipids with Triton, there may be a steric hindrance for antibodies to label proteins that are in such close proximity to the plasma membrane. We therefore attempted to label Homer, a protein found more distant, greater than 50 nm, from the postsynaptic membrane of excitatory synapses (Dani et al., 2010). The labeling pattern of Homer (Figure 4b) was similar to permeabilized sections (Figure 4a) throughout the depth of 300-\u03bcm-thick sections. We noted a larger variability in the fluorescence intensity of labeled puncta in the non-permeabilized tissue compared to permeabilized tissue.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig4-v2.jpg)\n\n**Figure 4.:** (a,\u00a0b) 300-\u00b5m-thick acute extracellular space\u00a0(ECS)-preserved sections from the mouse cerebral cortex. Incubation with anti-Homer was performed with (a) and without (b) 0.3% Triton. X\u2013Y slices (upper-left panels) and X\u2013Z reslices (right panels) of two-photon\u00a0image volumes are taken from the center of the sections. Sections were then stained for electron microscopy, and a region from the center of the section was examined for ultrastructural integrity (lower-left panels). (c) 300-\u00b5m-thick acute ECS-preserved slices from the mouse cerebral cortex. Sequential incubation with Alexa Fluor-488 (AF488) conjugated anti-synaptophysin (anti-Syn) without Triton (left, green) followed by Alexa Fluor-594 (AF594) conjugated anti-Syn with 0.3% Triton (left, magenta) shown as X\u2013Z reslices. Puncta were outlined in X\u2013Y images at the depth indicated (left, white dashed line) in the AF594 channel (lower-right panel, representative white circles) for co-localization analysis with the AF488 channel (upper-right panel). (d) Co-localization analysis of 150 puncta from image stacks in (c) comparing co-localized puncta (black) to a 90\u00b0 rotation of the AF488 channel (orange). Scale bars: (a,\u00a0b) (upper-left panels: 10 \u00b5m; right panels: 50 \u00b5m; lower-left panels: 0.5 \u00b5m), (c) (left panels: 50 \u00b5m; right panels: 10 \u00b5m).\n\nFinally, we explicitly compared the labeling efficiency of a presynaptic protein, synaptophysin, in the same tissue section before and after permeabilization. We took advantage of the availability of synaptophysin antibodies directly conjugated to Alexa Fluor (AF) molecules of different excitation wavelengths (AF488 and AF594). We first labeled mouse cortical sections with AF488 anti-synaptophysin without permeabilization and then labeled the same sections with AF594 anti-synaptophysin including Triton permeabilization. Prior to permeabilization, we observed a labeling density consistent with published labeling patterns (Figure 4c, green) (Grant et al., 2016). Following permeabilization, the labeling pattern was similar at the edges of the tissue but the antibody labeling was notably absent in the center of the section (Figure 4c, magenta). This result is consistent with the observation that treatment with Triton X-100 can lead to the extraction of synaptophysin from fixed tissue (Hannah et al., 1998). To distinguish whether any presynaptic puncta were labeled following permeabilization that were not labeled prior to permeabilization, we quantified the co-localization of puncta in the two fluorescence channels (Figure 4d). Puncta intensities (n\u00a0=\u00a0150 puncta) were significantly correlated (linear regression t-test, p=1.5\u00d710\u22128) compared to a 90\u00b0 rotation of the images (p=0.86), which indicated the co-localized labeling of synaptophysin pre- and post-permeabilization.\n\n### Applicability of permeabilization-free labeling across different brain regions\n\nIn addition to the mouse cerebral cortex, we assessed antibody penetration in brain regions with different cytoarchitectures including the mouse hippocampus and olfactory bulb. Labeling 300-\u03bcm-thick tissue sections from these brain regions with antibodies targeting NeuN, CR, and CB resulted in patterns similar to permeabilized sections (Figure 5). In the hippocampus, we observed the CR+\u00a0subgranular band and granular cell layer positioning of CB+\u00a0neurons as previously reported (Ohira et al., 2010;\u00a0Figure 5a\u2013d). In the olfactory bulb, non-overlapping populations of CB+\u00a0and CR+\u00a0periglomerular cells (Panzanelli et al., 2007) were positively identified (Figure 5e\u2013h).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig5-v2.jpg)\n\n**Figure 5.:** (a\u2013d) 300-\u00b5m-thick acute extracellular space\u00a0(ECS)-preserved sections from the mouse hippocampus. Incubation with Alexa Fluor-488 conjugated anti-NeuN (a,\u00a0b) or simultaneous incubation with anti-calbindin (CB) and anti-calretinin (CR) (c,\u00a0d) was performed with (a,\u00a0c) and without (b,\u00a0d) 0.3% Triton to label interneuron somata. X\u2013Y slices (left panels) and X\u2013Z reslices (right panels) of two-photon\u00a0(2P) image volumes are 10 \u00b5m average intensity projections from the center of the sections. (e\u2013h) 300-\u00b5m-thick acute ECS-preserved sections from the mouse olfactory bulb. Incubation with Alexa Fluor-488 conjugated anti-NeuN (e,\u00a0f) or simultaneous incubation with anti-CB and anti-CR (g,\u00a0h) was performed with (e,\u00a0g) and without (f,\u00a0h) 0.3% Triton to label neuronal somata. 2P image slices as in (a\u2013d). (i) Horseradish peroxidase\u00a0(HRP) labeling of eGFP expressing mitral cells (MCs) in the mouse olfactory bulb. 300-\u00b5m-thick acute ECS-preserved sections containing MCs expressing eGFP following adeno-associated virus transfection (left panel). Incubation with anti-GFP and HRP-conjugated secondary antibody was performed without Triton, followed by polymerization of diaminobenzidine\u00a0(DAB) and electron microscopy staining (middle panel). Enlarged regions (red rectangles) demonstrate confinement of the DAB product to MC dendrites (right, upper panel) and a presynaptic terminal formed on a labeled dendrite (right, lower panel). Scale bars: (a\u2013h) 100 \u00b5m; (i) 200 \u00b5m (left), 50 \u00b5m (middle), 1 \u00b5m (right).\n\n### Permeabilization-free labeling for correlative LM/EM\n\nDuring the optimization of the protocol, we utilized small organic dyes conjugated to primary or secondary antibodies as reporters of positive labeling. We also tested whether a larger enzyme, such as horseradish peroxidase (HRP), would be compatible with permeabilization-free IHC to enable the direct correlation between fluorescence and an electron dense product. We therefore investigated the conversion of eGFP expressed in neurons into an electron dense signal using HRP conjugated to a secondary antibody. We retrogradely labeled mitral and tufted cells in the mouse olfactory bulb by injecting an adeno-associated virus (AAV) encoding Flex-eGFP in the mouse piriform cortex of a Cdhr1-Cre mouse (Wachowiak et al., 2013). Following 2P imaging of 300-\u03bcm-thick acute sections (Figure 5i), the eGFP was labeled with a primary anti-GFP antibody and a secondary antibody conjugated to HRP. The HRP-assisted polymerization of diaminobenzidine (DAB) was then carried out in the presence of hydrogen peroxide, yielding a DAB polymer that was strongly osmiophilic in EM images. Individual mitral and tufted cell neurites were readily distinguished from unlabeled neurites in the surrounding neuropil of the external plexiform layer of the olfactory bulb (Figure 5i).\n\nOur primary motivation for developing a permeabilization-free IHC protocol was to enable the correlation of fluorescently labeled endogenous proteins with their location in large-volume EM data. As a first proof\u00a0of\u00a0principle, we investigated the application of identifying fluorescently labeled somata deep within a tissue section in a corresponding EM ultrathin section. We performed triple immunolabeling of CR+, CB+,\u00a0and tyrosine hydroxylase (TH+) interneurons in a 300\u00a0\u03bcm section from the mouse olfactory bulb (Figure 6a, left panel). We then processed the same section for EM and cut ultrathin slices until reaching a depth of approximately 150 \u03bcm in the section (Figure 6b, left panel). We collected an ultrathin section at this depth and, using the fluorescently labeled somas as landmarks, matched soma locations between the 2P image stack and the EM slice. An affine transform was applied to the 2P image stack to register it to the EM slice, and we were then able to identify somas in the EM slice that corresponded to the immunolabeled somata in a slice from the transformed 2P stack (Figure 6a,\u00a0b, right panels).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63392/elife-63392-fig6-v2.jpg)\n\n**Figure 6.:** (a,\u00a0b) Correlative microscopy of calbindin-positive\u00a0(CB+), calretinin-positive\u00a0(CR+), and tyrosine\u00a0hydroxylase-positive\u00a0(TH+)\u00a0interneurons in the mouse olfactory bulb. (a) 300-\u00b5m-thick acute extracellular space\u00a0(ECS)-preserved section (left panel) incubated with anti-CB (blue), anti-CR (magenta), and anti-TH (green) without Triton. An X\u2013Y slice (middle panel) from the two-photon\u00a0(2P) image volume located\u00a0~150 \u00b5m deep in the section. Colored dots indicate the positive labeling by the respective antibodies. Enlarged region illustrates three somata (right panel). (b) 35 nm electron microscopy\u00a0(EM) slice cut from\u00a0~150 \u00b5m deep in the section from panel (a) (left panel). Colored dots indicate correspondence between soma locations in the EM section and the 2P section (middle panel). Enlarged region illustrates three somata (right panel). (c\u2013g) Correlative microscopy of TH+\u00a0axons in the mouse medial prefrontal cortex. (c) 2P image stack from a 300-\u00b5m-thick ECS-preserved acute section that was incubated with anti-TH without Triton to label dopaminergic axons (left panel). A serial block-face scanning\u00a0electron microscopy\u00a0(SBEM) volume centered on branded fiducial marks spans a depth of 50\u2013125 \u00b5m in the 2P image stack (right panel). (d) A 10-\u00b5m-thick X\u2013Y maximum intensity projection from panel (c) with TH+\u00a0axons indicated (white arrowheads). (e) Anatomical reconstructions of corresponding TH+\u00a0axons from the SBEM volume with matching axons indicated (black arrowheads). (f,\u00a0g) Example EM images of the reconstructed axons from the regions indicated in panel (e). Axons are false-colored (green). Scale bars: (a,\u00a0b) 100 \u00b5m (left), 50 \u00b5m (middle), 10 \u00b5m (right); (c\u2013e) 20 \u00b5m; (f,\u00a0g) 1 \u00b5m.\n\nUltimately, the correlation of LM and EM is most informative when performed in 3D volumes. We therefore combined the permeabilization-free IHC protocol with a block-face EM technique as a correlative pipeline consisting of five steps (Supplementary file 1): (1) permeabilization-free en bloc IHC, (2) tissue clearing by refractive index matching (Ke et al., 2013), (3) 2P imaging of the tissue volume and near-infrared branding (Bishop et al., 2011) of a region of interest, (4) reversal of the tissue-clearing protocol back to buffer, and (5) EM staining and acquisition of a SBEM volume.\n\nUsing this pipeline, as a second proof\u00a0of\u00a0principle, we labeled axons endogenously expressing TH in a 300 \u03bcm section from the mouse mPFC (Zhang et al., 2010;\u00a0Figure 6c). Following SeeDB clearing, 2P imaging and branding of the section, we stained the tissue for EM and collected an 89 \u00d7 83\u00a0\u00d7\u00a075 \u03bcm3 SBEM volume centered on the branded region that began approximately 50 \u03bcm deep into the section (Figure 6c). The 2P and EM datasets were aligned by fitting an affine transform using landmarks in the two datasets including somata and blood vessels, similar to an approach recently developed to match axons expressing fluorescent proteins (Drawitsch et al., 2018). We then locally searched regions of the EM dataset to identify the matching trajectories of fluorescent axons to those in the EM volume (Figure 6d,\u00a0e) and identified TH+\u00a0axons within the EM volume (Figure 6f,\u00a0g). The traced axons spanned a depth of 57\u201370 \u03bcm deep within the tissue section.\n\n## Discussion\n\nWe have developed a protocol to immunohistochemically label thick tissue sections that omits the commonly used permeabilization step and is therefore compatible with correlative en bloc volume EM techniques. The method depends on the preservation of ECS during tissue fixation (Figures 1 and\u00a02), and we suggest that the simplest explanation for the improved labeling is that the diffusion spaces that are preserved allow antibodies to diffuse deep into tissue and travel to close proximity of their antigens. That is, rather than translocating across multiple plasma membranes in densely packed neuropil, an antibody in ECS-preserved tissue could, in principle, only need to cross one membrane to reach an epitope. The mechanism by which an antibody crosses a membrane that has not been permeabilized by a detergent is not clear to us, but we note a few observations. First, aldehyde fixation alone has been described to semi-permeabilize membranes due to their denaturizing effects on proteins (Hopwood, 1985). Second, the hydrodynamic radius of an IgG antibody is approximately 5 nm (Armstrong et al., 2004; J\u00f8ssang et al., 1988), meaning a small pore in a membrane of similar size is required to provide access to intracellular epitopes. We cannot rule out that the ECS preservation process itself leads to damage of some membranes allowing an antibody to enter through a damaged region and then diffuse along the intracellular cytosol of neurons. However, if such damage occurs, it has not prevented us from reconstructing neuronal morphologies and identifying synapses in ECS-preserved tissue (Pallotto et al., 2015; Figures 4 and 6). Applying the method to high-pressure frozen tissue in which ultrastructure and ECS is preserved in a more native state may yield additional insights into the mechanism (Korogod et al., 2015). Freeze-thaw cycles (cryo-permeabilization) have been used to permeabilize single cells for IHC, but we are not aware of such a protocol being used to permeabilize thick tissue sections while still maintaining acceptable ultrastructural preservation.\n\nA current limitation of the protocol is our inability to label antigens that are closely associated with lipid membranes such as the postsynaptic protein PSD-95. The postsynaptic terminal is densely packed with protein, and our ability to label the Homer protein, which is more distant from the postsynaptic membrane than PSD-95 (Dani et al., 2010), suggests a steric hindrance for antibody binding when a protein is in close proximity to the plasma membrane. In contrast, we were able to label the presynaptic protein synaptophysin located on the surfaces of vesicles that are relatively accessible within presynaptic terminals. Therefore, some degree of permeabilization may be a requirement for proteins that are located in close spatial proximity to the plasma membrane. One alternative would be to explore weaker detergents than Triton, such as low concentrations of Tween, which was previously used to label ECS-preserved retinal tissue with satisfactory ultrastructure (Pallotto et al., 2015). Alternatively, if the size of IgG antibodies is limiting the binding to postsynaptic targets, the use of physically smaller antibodies, such as nanobodies (Hamers-Casterman et al., 1993), may improve labeling in combination with our protocol. Nanobodies have recently been shown to label targets up to 100 \u03bcm, but not deeper, from one surface of a tissue section (Fang et al., 2018). The use of nanobodies in the future may also further improve the labeling of axonal proteins (Figure 3) and perhaps transcription factors. Alternatively, organic dyes that bind to fusion proteins have been shown to facilitate the super-resolution localization of proteins combined with FIB-SEM (Hoffman et al., 2020). The diffusion of such small molecules would likely allow penetration into thick tissue sections as well, but, because such an approach requires the expression of a fusion protein, it is not compatible with the labeling of endogenous proteins that we have focused on here. A further limitation of our protocol is the reliance on immersion fixed tissue sections for ECS preservation. While we focused on section thicknesses up to 1 mm, an important future goal is to achieve ECS preservation by perfusion of a whole brain (Cragg, 1980) and uniform permeabilization-free antibody labeling throughout large tissue volumes.\n\nTo replicate the protocol, we emphasize that it is important to first confirm that ECS preservation during acute section immersion fixation was successful, ideally by inspection of EM images. The degree of ECS preservation varies by brain region as previously reported (Pallotto et al., 2015) and needs to be calibrated for specific brain regions. The protocol also requires the typical optimization of IHC conditions for a given antibody such as concentration, buffer composition, and duration (Supplementary file 1). We have focused on proteins with known expression patterns for the optimization of the protocol. Our strategy was to compare the labeling pattern in permeabilized tissue to that of ECS preserved non-permeabilized tissue. For novel proteins, labeling specificity should be assayed as previously described (Lorincz and Nusser, 2008). We have not yet assessed whether antigen retrieval steps with proteases such as pepsin would further improve labeling while still maintaining ultrastructure (Watanabe et al., 1998) or whether multiplexing by repeated elution and relabeling, such as in array tomography (Micheva and Smith, 2007), is compatible with the protocol.\n\nThe ultimate test of the utility of this protocol is in 3D correlative LM/EM reconstructions, for which we demonstrated two proof-of-principle applications (Figure 6). We anticipate that permeabilization-free pre-embedding IHC could play an important role in adding functional information to anatomical datasets. The combination of cellular-resolution functional imaging, permeabilization-free IHC, and en bloc-based EM all within the same tissue would enable the correlation of function, cell-type identity, neuronal morphology, and synaptic connectivity within local circuits. Our protocol could also be further optimized for tissue from species in which fluorescent genetic tagging of proteins is not possible, including human tissue obtained from immersion fixed biopsies.\n\n## Materials and methods\n\n### Tissue fixation\n\nC57BL/6J male mice (age p30\u2013p45) were used for all experiments except for the use of Cdhr1-cre mice (Gensat stock # 030952-UCD; Nagai et al., 2005), age p50, to label mitral and tufted cells (Figure 5) and Olfr160-IRES-ChR2-YFP mice (JAX stock # 021206;\u00a0Smear et al., 2013), age p42, to label interneurons in the mouse olfactory bulb (Figure 6). All animal procedures were conducted in accordance with US National Institutes of Health guidelines, as approved by the National Institute of Neurological Disorders and Stroke Animal Care and Use Committee (ASP 1340).\n\nFor transcardially perfused tissue fixation, we followed a rapid perfusion approach (Tao-Cheng et al., 2007). Briefly, mice were anesthetized with isofluorane (Forane) and then perfused with 4% PFA (Electron Microscopy Services) and 0.005% GA (Electron Microscopy Sciences) in 175 mM sodium phosphate buffer (PB, pH 7.4). The brain was extracted and post-fixed for 4 hr in the same fixative solution. The perfused brain was subsequently rinsed in 175 mM PB for 4 hr and 300 \u00b5m coronal sections were cut on a Leica Vibratome.\n\nFor acute ECS-preserved sections, mice were first anesthetized with isofluorane before swift decapitation. The brain was carefully removed from the skull, and 300 \u00b5m (up to 1 mm) coronal sections from the olfactory bulb, cerebral cortex, and/or hippocampus were cut on a vibratome (Leica) according to the procedure of Bischofberger et al., 2006 and briefly stored in a cold carboxygenated (95% O2/5% CO2) ACSF solution (300\u2013320 mOsm) containing (in mM): 124 NaCl, 3 KCl, 1.3 MgSO4.7H2O, 26 NaHCO3, 1.25 NaH2PO4.H2O, 20 glucose, 2 CaCl2.2H2O. Sections were then immersion-fixed using a protocol to preserve the ECS (Pallotto et al., 2015). The fixative concentrations were varied (see Figure 1\u2014figure supplement 2), and an optimal primary fixative of 4% PFA\u00a0+\u00a00.005% GA in 175 mM PB (pH 7.4, 4\u00b0C, 360 mOsm) for 4 hr was chosen. The total duration between decapitation and fixation was less than 10 min.\n\n### Immunohistochemistry\n\nPrimary and secondary antibody catalog numbers and incubation concentrations are listed in Figure 1\u2014source data 1. Optimal antibody concentrations were titrated for each antibody tested. For antibodies with stock concentrations of 0.5 mg/mL, antibody dilutions were typically 1:100 or 1:50. Antibody concentrations in nM were calculated using an IgG molecular weight of 150 kg/mol, the stock concentration and the dilution factor. All antibodies were diluted in an antibody buffer solution (ABS) of 170 mM NaCl\u00a0+\u00a010 mM PB (360 mOsm). 0.3% Triton X-100 (Electron Microscopy Sciences) was added to both the primary and secondary antibody solution for sections that were permeabilized. Sections were added to individual wells of a 96-well plate, each containing 50\u201375 \u03bcL ABS. Care was taken to ensure that the sections were fully immersed in the ABS and not adhered to the walls prior to wrapping the plate in Parafilm. All IHC steps were carried out in the dark at room temperature on an orbital shaker at medium-high speed. The duration of primary and secondary antibody incubation was dependent on section thickness. Typically 300 \u03bcm sections were incubated in primary antibody for 72 hr and in secondary antibody for 48 hr.\n\n### Somatic labeling (300-\u03bcm-thick sections)\n\nFollowing fixation, sections were rinsed in 175 mM PB for 4 hr, then a buffered glycine solution (50 mM glycine in 175 mM PB) for 16 hr, and then rinsed for 6 hr in 175 mM PB. Regions of 300-\u03bcm-thick coronal sections were then trimmed down to volumes of approximately 2 \u00d7 2\u00a0\u00d7\u00a00.3 mm3 with a scalpel for cortical and hippocampal regions; olfactory bulb sections were left intact. For labeling of NeuN-positive somata (Figures 1 and 5a, b, e, f), sections were incubated in the ABS with Alexa Fluor-488 conjugated anti-NeuN (Abcam) for 72 hr. For labeling of CB+ and CR+ somata (Figures 3a\u2013b and 5c, d, g, h), sections were simultaneously incubated in guinea pig anti-CB (Synaptic Systems) and rabbit anti-CR (Sigma) for 72 hr, rinsed in 175 mM PB for 12 hr, and then incubated in the secondary antibodies, DyLight-405 goat anti-guinea pig IgG F(ab\u2019)2 fragment (Jackson ImmunoResearch) for CB and Alexa Fluor-594 donkey anti-rabbit IgG F(ab\u2019)2 fragment (Jackson ImmunoResearch) for CR, for 48 hr.\n\n### Somatic labeling (1-mm-thick sections)\n\nCoronal sections were fixed in 4% PFA\u00a0+\u00a00.005% GA in either 100 mM, 175 mM, or 225 mM PB (pH 7.4, 4\u00b0C) for 4 hr. Following fixation, sections were rinsed for 4 hr in PB of the respective concentration used for fixation, then a buffered glycine solution (50 mM glycine also in the respective PB concentration) for 16 hr, and then rinsed for 6 hr in PB of the respective concentration. 1-mm-thick coronal sections were trimmed down to volumes of approximately 4 \u00d7 1\u00a0\u00d7\u00a01 mm3 with a scalpel and incubated in Alexa Fluor-488 conjugated anti-NeuN (Abcam) for 120 hr (Figure 2). Sections were then embedded in 10% quick dissolve agarose (GeneMate) and hemisected to a volume of approximately 2 \u00d7 1\u00a0\u00d7\u00a01 mm3 to observe anti-NeuN penetration through the 1 mm depth with 2P microscopy on the hemisected surface.\n\n### Axon labeling\n\nFollowing fixation, sections were rinsed in 175 mM PB for 4 hr, then a buffered glycine solution (50 mM glycine in 175 mM PB) for 16 hr, and then rinsed for 6 hr in 175 mM PB. Regions of 300-\u03bcm-thick coronal sections were then trimmed down to volumes of approximately 2 \u00d7 2\u00a0\u00d7\u00a00.3 mm3 with a scalpel. For labeling of ChAT-positive axons (Figure 3c\u2013d), sections were incubated in goat anti-ChAT (EMD Millipore) for 72 hr, rinsed in 175 mM PB for 8 hr, and then incubated in DyLight-594 donkey anti-goat (Abcam) for 48 hr. For labeling of TH+ axons (Figure 6c), sections were incubated in Alexa Fluor-488 conjugated anti-TH, clone LNC1 (EMD Millipore) for 72 hr, and then rinsed in 175 mM PB for 8 hr.\n\n### Synaptic protein labeling\n\nFollowing fixation, sections were rinsed in 175 mM PB for 4 hr, then a buffered glycine solution (50 mM glycine in 175 mM PB) for 16 hr, and then rinsed for 6 hr in 175 mM PB. Regions of 300-\u03bcm-thick coronal sections were then trimmed down to volumes of approximately 2 \u00d7 2\u00a0\u00d7\u00a00.3 mm3 with a scalpel. For labeling of Homer in postsynaptic terminals (Figure 4a,\u00a0b), sections were incubated in rabbit anti-Homer 1 (Synaptic Systems) for 72 hr, rinsed in 175 mM PB for 8 hr, and then incubated in Alexa Fluor-594 donkey anti-rabbit IgG F(ab\u2019)2 fragment (Jackson ImmunoResearch) for 48 hr. For labeling of synaptophysin in presynaptic terminals (Figure 4c), sections were first incubated in Alexa Fluor-488 conjugated rabbit anti-synaptophysin (Abcam) for 72 hr, rinsed in 175 mM PB for 24 hr, and then incubated in Alexa Fluor-594 conjugated rabbit anti-synaptophysin (Abcam) plus 0.3% Triton for 48 hr.\n\n### Serum blocking\n\nFor sections in which serum blocking was employed (Figure 1\u2014figure supplement 4), tissue was first incubated in a blocking buffer of 10% normal donkey serum, 1% bovine serum albumin, and 0.05% sodium azide in 175 mM PB for 4 hr. Following the serum blocking step, sections were incubated with antibodies as described above with 3% normal donkey serum.\n\n### HRP labeling of eGFP\n\nCre-dependent expression of eGFP in axons and dendrites of mitral cells was achieved by injection of AAV\u00a0encoding eGFP into the anterior piriform cortex. AAV pCAG-FLEX-EGFP-WPRE was a gift from Hongkui Zeng (Addgene plasmid # 51502-AAV1; http://n2t.net/addgene:51502; RRID:Addgene_51502) (Oh et al., 2014). Under isofluorane anesthesia, age p30 Cdhr1-Cre mice were positioned into a stereotaxic head holder, and a small craniotomy was made on the dorsal surface above the injection site. A glass pipette was used to inject the virus, targeting axon terminals of mitral cells bilaterally in the anterior piriform cortex (350 nL per side). After 3 weeks, animals were sacrificed and 300-\u03bcm-thick acute ECS-preserved coronal sections of the olfactory bulb were prepared as above. Following fixation, sections were rinsed in 175 mM PB for 4 hr, then a buffered glycine solution (50 mM glycine in 175 mM PB) for 16 hr, and finally rinsed for 6 hr in 175 mM PB. eGFP fluorescence in the coronal sections was first imaged with a 2P microscope without SeeDB clearing (see below). Subsequently, cytosolic eGFP in mitral and tufted cells was labeled for EM (Figure 5i) by incubating sections in rabbit anti-GFP (ThermoFisher) for 72 hr, rinsing in 175 mM PB for 8 hr, and then incubating in HRP-conjugated donkey anti-rabbit (Abcam) for 48 hr. Sections were refixed with 2% GA in 150 mM PB for 2 hr at room temperature, rinsed in 150 mM PB for 2 hr, rinsed in glycine (50 mM glycine in 175 mM PB) for 16 hr, rinsed again in 150 mM PB for 2 hr, and then incubated at room temperature in the dark on a rotator in 1.4 mM diaminobenzidine hydrotetrachloride (DAB, Serva) and 0.56 mM hydrogen peroxide (Sigma) in 175 mM PB for 10 hr to polymerize DAB in the presence of HRP.\n\n### Triple labeling of olfactory bulb\n\nFollowing fixation, sections were rinsed in 175 mM PB for 4 hr, then a buffered glycine solution (50 mM glycine in 175 mM PB) for 16 hr, and then rinsed for 6 hr in 175 mM PB. For labeling of CB+, CR+, and TH+ somata (Figure 6a), sections were first simultaneously incubated with guinea pig anti-CB (Synaptic Systems) and rabbit anti-CR (Sigma) for 72 hr, then rinsed in 175 mM PB for 72 hr. Sections were then simultaneously incubated with DyLight-405 goat anti-guinea pig IgG F(ab\u2019)2 fragment (Jackson ImmunoResearch) for CB, Alexa Fluor-594 donkey anti-rabbit IgG F(ab\u2019)2 fragment (Jackson ImmunoResearch) for CR, and the primary antibody Alexa Fluor-488 conjugated anti-TH, clone LNC1 (EMD Millipore) for 72 hr.\n\n### Tissue clearing\n\nFollowing antibody labeling, sections were rinsed in 175 mM PB for 16 hr, refixed in buffered PFA (2% PFA in 175 mM PB) for 2 hr, and\u00a0rinsed in 175 mM PB for 4 hr. Sections were subsequently incubated in a modified SeeDBp protocol (Ke et al., 2013): 20% w/v fructose in 175 mM PB for 2 hr, 40% w/v fructose in 175 mM PB for 3 hr, 60% w/v fructose in 175 mM PB for 4 hr, 80% w/v fructose in 175 mM PB for 4\u20136 hr, 100% w/v fructose in water for a minimum of 10 hr, and finally in SeeDB solution (80.2% w/w fructose in water and 0.5% 1-thioglycerol) for a minimum of 10 hr. Fructose incubation was omitted for 1-mm-thick sections because the hemisected surface was imaged directly to assess antibody penetration. This was done to rule out that a potential labeling gradient would be due to light scattering rather than limited antibody penetration. With custom objectives matched to the refractive index of the clearing solution, SeeDB has been successfully utilized for 2\u20136-mm-thick sections (Ke et al., 2013).\n\n### Two-photon imaging\n\nImmunolabeled sections were mounted in SeeDB solution between two #1 cover slips in a custom imaging chamber and imaged with a \u00d720, 1.0 NA water immersion objective (Olympus) on a 2P laser scanning microscope (Sutter) using ScanImage (Pologruto et al., 2003). An excitation wavelength of 770\u2013800 nm was used to image sections incubated with Alexa Fluor-488 and Alexa Fluor-594/DyLight-594. An excitation wavelength of 770 nm was used to image the DyLight-405 fluorophore. 2P image stacks were collected with 0.5\u20131 \u03bcm z-step sizes throughout the depth of 300-\u03bcm-thick sections at various x\u2013y pixel sizes.\n\n### Near-infrared branding\n\nA near-infrared branding technique (Bishop et al., 2011) was used to burn fiducial marks 20\u201330 \u00b5m below the top surface of sections around a region of interest (Figure 6c) after 2P image stack acquisition, typically a 150 \u00d7 150 \u00b5m2 region. Following branding, sections were gradually returned to 175 mM PB in decreasing fructose concentrations over 16 hr and then post-fixed in 2% GA in 150 mM sodium cacodylate buffer (CB, Electron Microscopy Sciences) for 2 hr.\n\n### Tissue processing for EM\n\nFor sections prepared for correlative EM, sections were thoroughly rinsed in 175 mM CB prior to EM staining. Sections were stained using a modification of previously described protocols (Briggman et al., 2011; Karnovsky, 1971). Briefly, tissue was stained in a solution containing 2% osmium tetroxide, 3% potassium ferrocyanide, and 2 mM CaCl2 in 150 mM CB for 2 hr at 4\u00b0C. The osmium stain was amplified with 1% thiocarbohydrazide (1 hr at 50\u00b0C) and 2% osmium tetroxide (1 hr at room temperature). The tissue was then stained with 1% aqueous uranyl acetate for 6 hr at 45\u00b0C and lead aspartate for 6 hr at 45\u00b0C. The tissue was dehydrated at 4\u00b0C through an ethanol series (70%, 90%, 100%), transferred to propylene oxide, infiltrated at room temperature with 50%/50% propylene oxide/Epon Hard, and then 100% Epon Hard\u00a0(Glauert and Lewis, 1998). The blocks were cured at 60\u00b0C for 24 hr. Ultrathin sections (35\u201370 nm) were cut from block faces and imaged on a NanoSEM 450 (FEI) or multibeam SEM (Zeiss).\n\n### Serial block-face electron microscopy\n\nFor SBEM acquisition (Figure 6c), data were collected using a custom serial block-face micro-tome designed by K.L. Briggman. The specimens were cut out of the flat-embedding blocks and re-embedded in Epon Hard on aluminum stubs. The samples were then trimmed to a block face of\u00a0~200 \u03bcm wide and\u00a0~200 \u03bcm long. The samples were imaged in a scanning electron microscope with a field-emission cathode (NanoSEM 450, FEI). Back-scattered electrons were detected using a concentric segmented back-scatter detector. The incident electron beam had an energy of 2.4 keV and a current of\u00a0~200 pA. Images were acquired with a pixel dwell time of 2 \u00b5s and size of 10.25 nm\u00a0\u00d7 10.25 nm. Imaging was performed at high vacuum, with the sides of the block sputter coated with a 100-nm-thick layer of gold. The section thickness was set to 32 nm. 2354 consecutive block faces were imaged from the sample, resulting in aligned data volume of 8704 \u00d7 8064\u00a0\u00d7\u00a02354 voxels (corresponding to an approximate spatial volume of 89 \u00d7 83\u00a0\u00d7\u00a075 \u00b5m3). Axons in the SBEM volume corresponding to TH+\u00a0axons in the 2P stack were annotated using Knossos (https://knossos.app/) (Helmstaedter et al., 2011).\n\n### Replicates\n\nBiological replicates for Figure 1 are shown in Figure 1\u2014figure supplement 1. 10\u00a0cortical sections from one mouse were perfusion-fixed and 10\u00a0sections from a second mouse were acutely fixed with ECS preservation. Of the 10\u00a0sections from each mouse, 5\u00a0were treated with Triton and 5\u00a0were not permeabilized during IHC incubation. For Figures 2, 3, and 5, a minimum of three mice, each with a minimum of three sections for each condition, were performed. Synaptic labeling (Figure 4a,\u00a0b) was performed in six cortical sections from one mouse. Synaptic labeling (Figure 4c,\u00a0d) was performed in eight cortical sections from one mouse. Representative examples were selected from the sets of biological replicates.\n\nAll Triton control sections, used for comparison with the permeabilization-free condition (Figures 1 and 3\u20135), were acquired from either adjacent sections or the opposite hemisphere of the same animal. The HRP experiment illustrated in Figure 5i was performed with two mice, each with four sections. The proof-of-principle correlative IHC and EM experiments in Figure 6 were each performed once. The data presented in Supplemental Figures were collected with the following number of mice (N) and number of sections (n): Figure 1\u2014figure supplement 2 (N\u00a0=\u00a02, n\u00a0=\u00a020), Figure 1\u2014figure supplement 3a (N\u00a0=\u00a01, n\u00a0=\u00a09), Figure 1\u2014figure supplement 3b (N\u00a0=\u00a01, n\u00a0=\u00a06), Figure 1\u2014figure supplement 4 (N\u00a0=\u00a02, n\u00a0=\u00a08), Figure 1\u2014figure supplement 5 (N\u00a0=\u00a01, n\u00a0=\u00a06),\u00a0and Figure 1\u2014figure supplement 6 (N\u00a0=\u00a01, n\u00a0=\u00a020). Micrographs from sections treated with SeeDB in Figure 1\u2014figure supplement 2 are shown again in Figure 1\u2014figure supplement 6 to facilitate a comparison of ultrastructural quality with and without SeeDB.\n\n### Co-localization analysis\n\nFor the co-localization analysis of synaptophysin (Figure 4d), we used a method similar to a previously described rotation-based strategy (Soto et al., 2011). Two simultaneously acquired fluorescent 2P stacks represented the labeling of synaptophysin without Triton (AF488, green channel) and subsequently with Triton (AF594, red channel). We analyzed whether presynaptic puncta were labeled with Triton permeabilization (AF594, red channel) that had not been previously labeled without Triton permeabilization (AF488, green channel). Presynaptic puncta were manually outlined with 0.4-\u03bcm-diameter ROIs\u00a0(regions of interest), and the voxel intensities were averaged within each ROI in the (AF594) red channel. These ROI intensities were plotted against the same ROI intensities in the (AF488) green channel to assess the co-localization of the synaptophysin labeling before and after Triton permeabilization. We then compared this correlation to a 90\u00b0 rotation of the (AF488) green channel. A linear regression t-test was used to test the statistical significance of the co-localized correlation compared to the rotated correlation.\n\n### Alignment of 2P data to EM data\n\nFor the alignment of 2P stacks to EM data (Figure 6), we first manually identified 10\u201320 control points based on matching features such as blood vessels or somata centers. An affine transformation between the control points was fit using Matlab. This transform was then applied to the 2P stacks to register them to the EM data.\n",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "dbd161bc-9dcf-43c0-8f03-553af75fcfaf",
+      "submission_id": "ee7dab1c-2016-4489-bd48-f4266abb78af",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Albert Cardona, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63392.sa1](https://doi.org/10.7554/eLife.63392.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Permeabilization-free en bloc immunohistochemistry for correlative microscopy\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Albert Cardona as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by John Huguenard as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Christel Genoud (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe paper by Fulton and Briggman shows how subtle alterations in the way that brain tissue is chemically fixed, altering the amount of space between cells and their processes, increases the penetration depth of antibodies. This allows different epitopes to be revealed hundreds of microns into the tissue, but without the use of detergents, or chemicals that would disrupt the ultrastructure for analysis with electron microscopy. The work is thorough and complete, and boasts a refreshingly honest and straightforward discussion on the strengths and limitations of the method, and its potential for future application.\n\nThis manuscript describes exhaustively and with all appropriate controls a new method to perform immunohistochemistry for fluorescence microscopy in thick tissue (up to 1 mm) by keeping extracellular space, without permeabilization and by preserving the ultrastructure of the mouse brain tissue. The authors show how the fluorescent label can be seen through the entire thickness of fixed sections of, as tested, up to 1 millimeter in thickness, and correlating these images with those from the same volume taken with block face scanning electron microscopy allows the observer to study the same structures with the two imaging modalities.\n\nThe issue of compromising the quality of tissue preservation so that antibodies can pick out molecules in the ultrastructure has dogged neuroscience researchers for a very long time. The method described could be a game changer to solve many scientific questions that could not be addressed so far due to the impossibility to keep ultrastructure good enough to reconstruct all neurons while at the same time having en-bloc immunostaining to localize key molecular components through the same volume.\n\nIn order to image the fluorescence signal through all the thickness of the tissue, a step of clearing has been added, which as demonstrated, does not compromise the ultrastructure of the tissue. Such a tissue preservation allows to perform serial-block-face SEM on the same piece of tissue and reconstruct neuronal arbors. By merging the images of the 2 modalities, authors are offering the potential to add molecular characterization to the ultrastructural information of a neuronal connectome.\n\nThe quality of the data is outstanding and allows reader to judge the impact of all the documented steps. Furthermore, the care to experiment and document many parameters makes it a reference article for future researchers optimizing immunohistochemistry on thick samples and clearing techniques. Text is focused, clear and perfectly organised.\n\nHowever, the paper is less impressive as a method for large volume analysis. The figures 1 to 5 clearly describe the ECS method and provide an excellent description of how this is carried out. Multiple examples of staining through 300 \u00b5m of tissue are possible using a range of labels.\n\nThe examples used to illustrate the strengths of the method in Figure 6 fall short of being the most convincingly possible to demonstrate the power and novelty of the technique. The first example relies on GFP, a genetically encoded protein, while one strength of the method is that you can label molecules that are not/cannot be genetically labelled.\n\nStudies have been published that do not need to preserve fluorescence (registration by blood vessel and cell bodies [Maclachlan et al. 2018 Front Neuroanat; https://doi.org/10.3389/fnana.2018.00088 ]), where there's no need to perform DAB due to near-infrared branding fiducials. But admittedly these aren't in thick tissue sections.\n\nIn addition, in Figure 6 where the correlative light-EM (CLEM) is demonstrated, examples are shown where it could be argued that the ECS method is unnecessary. In the first demonstration the authors reveal eGFP with immunocytochemistry inside a section from the olfactory bulb. It's not clear if this neurite was first selected in the slice from the light microscopy images, and then localized in the stack of EM images, or simply selected post hoc, once the tissue was embedded and cut. Therefore, its not clear what this adds to this paper describing a correlative method.\n\nThe second example in Figure 6 with anti-TH is more relevant but still consists in the labeling of entire axons rather than for example a synaptic marker, which would demonstrate the enriching of EM-connectome information with molecular detail. Furthermore, here it's not shown how deep this labelled axon is in the slice, and although its described as being 300 \u00b5m thick the volume imaged appears to be only 100 \u00b5m. What is more, the authors are targeting a large axon with clear morphology. This raises the question as to whether or not it would even be possible to find some of the smaller fluorescent labeling shown in the previous figures, and at a significant depth. For example, could the Homer labeling be correlated with features in serial EM images deep inside a tissue section?\n\nWhile the reviewers agree that further experiments are most likely not necessary, we ask for a significant revision of figure 6, perhaps with additional data that the authors already have, including details on how were the samples selected and matched across imaging modalities, as well as including CLEM demonstrations on the thicker, up-to-1 mm samples, particularly for non-genetically encoded markers.\n\nEssential revisions:\n\nPlease revise Figure 6 and associated text as suggested.\n",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ec5683c7-1277-4def-a7be-f50072b64851",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C1",
+      "claim": "Dense reconstruction of neuronal synaptic connectivity typically requires high-resolution 3D electron microscopy (EM) data.",
+      "claim_type": "EXPLICIT",
+      "source": "A dense reconstruction of neuronal synaptic connectivity typically requires high-resolution 3D electron microscopy (EM) data, but EM data alone lacks functional information about neurons and synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract about requirements for synaptic connectivity reconstruction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "6d48b26f-ebad-48c8-9421-d0a510d4e0b6",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C2",
+      "claim": "EM data alone lacks functional information about neurons and synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "A dense reconstruction of neuronal synaptic connectivity typically requires high-resolution 3D electron microscopy (EM) data, but EM data alone lacks functional information about neurons and synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of EM data in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "872b6eb5-4182-4d42-80bc-1a10107ec242",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C3",
+      "claim": "The protocol obviates the requirement of tissue permeabilization in thick tissue sections for correlative pre-embedding IHC and EM.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe a protocol that obviates the requirement of tissue permeabilization in thick tissue sections, a major impediment for correlative pre-embedding IHC and EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the manuscript, supported by experimental data throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "8318a2e8-b413-4aae-b966-c24573ed945a",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C4",
+      "claim": "The protocol demonstrates permeabilization-free labeling of neuronal cell types in tissue sections hundreds of microns thick.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the permeabilization-free labeling of neuronal cell types, intracellular enzymes, and synaptic proteins in tissue sections hundreds of microns thick in multiple brain regions from mice while simultaneously retaining the ultrastructural integrity of the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "e840f051-903f-4860-848b-88d3f9829c38",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C5",
+      "claim": "The protocol demonstrates permeabilization-free labeling of intracellular enzymes in tissue sections hundreds of microns thick.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the permeabilization-free labeling of neuronal cell types, intracellular enzymes, and synaptic proteins in tissue sections hundreds of microns thick in multiple brain regions from mice while simultaneously retaining the ultrastructural integrity of the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3 for ChAT labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "476fb4a8-174b-4b8b-ba82-d8ded1acb63f",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C6",
+      "claim": "The protocol demonstrates permeabilization-free labeling of synaptic proteins in tissue sections hundreds of microns thick.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the permeabilization-free labeling of neuronal cell types, intracellular enzymes, and synaptic proteins in tissue sections hundreds of microns thick in multiple brain regions from mice while simultaneously retaining the ultrastructural integrity of the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4 for Homer and synaptophysin labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "e84f3fbb-fbed-453c-a6db-31785ca4429b",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C7",
+      "claim": "The protocol retains ultrastructural integrity of the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the permeabilization-free labeling of neuronal cell types, intracellular enzymes, and synaptic proteins in tissue sections hundreds of microns thick in multiple brain regions from mice while simultaneously retaining the ultrastructural integrity of the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by EM images throughout the manuscript showing intact membrane structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "e1fe3b00-2570-4de6-b25b-38a9effac716",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C8",
+      "claim": "Recent improvements in automating the collection of 3D electron microscopy (EM) data have dramatically increased the tissue volumes that can be acquired.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent improvements in automating the collection of 3D electron microscopy (EM) data have dramatically increased the tissue volumes that can be acquired (Briggman and Bock, 2012; Eberle et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "76ae5d01-7ec2-42be-9bc3-08a0085a30ad",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C9",
+      "claim": "Connectivity data derived from EM does not alone contain sufficient information about the functional properties of neurons to fully constrain biologically plausible computational models.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity data derived from EM, however, does not alone contain sufficient information about the functional properties of neurons to fully constrain biologically plausible computational models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "73346210-b8d7-43f0-b19e-fc87160612dc",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C10",
+      "claim": "Physiological recording from neurons in a tissue sample prior to fixation is one approach to augment EM datasets with functional information.",
+      "claim_type": "EXPLICIT",
+      "source": "One approach to augment EM datasets with functional information is to physiologically record from neurons in a tissue sample prior to fixation (Bock et al., 2011; Briggman et al., 2011; Lee et al., 2016; Wanner and Friedrich, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work demonstrating this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "294f5e7e-c054-41e8-8b92-70351afbbc99",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C11",
+      "claim": "Fluorescence immunohistochemistry (IHC) can be used to identify the constituent proteins of neuronal cell types and synapses that are key determinants of the functional properties of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As a complementary approach, fluorescence immunohistochemistry (IHC) can be used to identify the constituent proteins of neuronal cell types and synapses that are key determinants of the functional properties of neurons (Coons et al., 1942; Cuello et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational IHC work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "d189191e-3551-4ec4-a262-a745b6398b28",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C12",
+      "claim": "Post-sectioning IHC is typically employed for correlative EM because the sectioning process provides access to intracellular epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-sectioning IHC is typically employed for correlative EM because the sectioning process provides access to intracellular epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as common practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "898c7715-c279-4422-a7a7-870ab55a3b2a",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C13",
+      "claim": "Array tomography was developed to multiplex the labeling of numerous targets in ultrathin tissue sections.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, array tomography was developed to multiplex the labeling of numerous targets in ultrathin tissue sections (Collman et al., 2015; Micheva and Smith, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to array tomography publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "77405da1-7c59-46d4-a2ee-4ff4cd896b73",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C14",
+      "claim": "Array tomography is incompatible with en bloc-based methods for collecting 3D EM data that require pre-embedding IHC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach is incompatible with en bloc-based methods for collecting 3D EM data that require pre-embedding IHC, as in the case of focused ion beam scanning electron microscopy (FIB-SEM, Hayworth et al., 2015; Knott et al., 2008), gas cluster ion beam SEM (Hayworth et al., 2020), and serial block-face scanning electron microscopy (SBEM, Denk and Horstmann, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation with citations to relevant EM techniques.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "f9185223-deed-415d-9afa-793e207b9b90",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C15",
+      "claim": "A membrane permeabilization step with nonionic surfactants such as Triton X-100 or polysorbate 20 (Tween 20) is typically performed to enable antibody penetration into thick tissue blocks for pre-embedding IHC.",
+      "claim_type": "EXPLICIT",
+      "source": "For pre-embedding IHC, a membrane permeabilization step with nonionic surfactants such as Triton X-100 or polysorbate 20 (Tween 20) is typically performed to enable antibody penetration into thick tissue blocks, but at the cost of degraded tissue ultrastructure (Helenius and Simons, 1975; Humbel et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as common practice with citations supporting the degradation of ultrastructure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "afb5489d-c05c-471f-83a8-f3800ee0977b",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C16",
+      "claim": "Permeabilization with nonionic surfactants degrades tissue ultrastructure.",
+      "claim_type": "EXPLICIT",
+      "source": "For pre-embedding IHC, a membrane permeabilization step with nonionic surfactants such as Triton X-100 or polysorbate 20 (Tween 20) is typically performed to enable antibody penetration into thick tissue blocks, but at the cost of degraded tissue ultrastructure (Helenius and Simons, 1975; Humbel et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and demonstrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "877454c3-fb58-44a1-ab0b-03150ad5e229",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C17",
+      "claim": "The preservation of extracellular space (ECS) during chemical tissue fixation improves the penetration of antibodies into the mammalian retina using minimal permeabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this limitation, we began with the observation that the preservation of extracellular space (ECS) during chemical tissue fixation improves the penetration of antibodies into the mammalian retina using minimal permeabilization (Pallotto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "e1545bda-fe88-4ee0-8625-2785535eb8b5",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C18",
+      "claim": "Aldehyde-based fixation of the brain results in the loss of the 15\u201320% ECS volume fraction normally found in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Aldehyde-based fixation of the brain has been previously demonstrated to result in the loss of the 15\u201320% ECS volume fraction normally found in vivo (Van Harreveld and Malhotra, 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "3e4d2808-2b5e-4ae3-a4ee-6c7978bcc84f",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C19",
+      "claim": "When detergent was omitted from the labeling protocol in perfusion-fixed sections, a gradient of fluorescently labeled somata was observed that decreased in the center of sections.",
+      "claim_type": "EXPLICIT",
+      "source": "When detergent was omitted from the labeling protocol, we observed a gradient of fluorescently labeled somata that decreased in the center of sections, as expected, and the ultrastructural membrane integrity of the tissue remained intact (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "62800257-7b45-4100-8cf8-1d9ba3d4481a",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C20",
+      "claim": "When detergent was omitted from the labeling protocol in perfusion-fixed sections, the ultrastructural membrane integrity of the tissue remained intact.",
+      "claim_type": "EXPLICIT",
+      "source": "When detergent was omitted from the labeling protocol, we observed a gradient of fluorescently labeled somata that decreased in the center of sections, as expected, and the ultrastructural membrane integrity of the tissue remained intact (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "d8ed6fc8-5b26-46b0-8e74-4bef4f510038",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C21",
+      "claim": "With the inclusion of Triton X-100, neuronal somata were uniformly labeled throughout the depth of perfusion-fixed sections.",
+      "claim_type": "EXPLICIT",
+      "source": "With the inclusion of a commonly used detergent, Triton X-100, neuronal somata were uniformly labeled throughout the depth of the sections but at the cost of severely degraded membrane integrity due to lipid solubilization (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "b7fe99c5-85f2-43cc-b66d-5aa56498b018",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C22",
+      "claim": "With the inclusion of Triton X-100, membrane integrity was severely degraded due to lipid solubilization in perfusion-fixed sections.",
+      "claim_type": "EXPLICIT",
+      "source": "With the inclusion of a commonly used detergent, Triton X-100, neuronal somata were uniformly labeled throughout the depth of the sections but at the cost of severely degraded membrane integrity due to lipid solubilization (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 1a and is consistent with known effects of Triton X-100.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "ae12a1fb-8719-4d50-ba2d-9f9994bd7972",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C23",
+      "claim": "When detergent was omitted from the protocol in ECS-preserved sections, the labeling of neuronal somata remained uniform throughout the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when detergent was omitted from the protocol, the labeling of neuronal somata in ECS-preserved sections remained uniform throughout the tissue (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "16b522b0-54d5-4eb5-96e2-0c184940b9ee",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C24",
+      "claim": "The exclusion of a permeabilization step yielded intact lipid membranes in ECS-preserved sections.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the exclusion of a permeabilization step yielded intact lipid membranes based on electron micrographs from the same tissue (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "8ef20a1e-0684-4349-a4e0-50b2b652b47a",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C25",
+      "claim": "Nuclear exclusion of NeuN labeling was observed in non-permeabilized sections compared to permeabilized sections.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted a nuclear exclusion of the NeuN labeling in the non-permeabilized sections (Figure 1f) compared to permeabilized sections (Figure 1e), indicating nuclear membranes remained impermeant to the antibody.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 1e and 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "3c44018c-3d0e-4b08-90bd-5842a2cc8145",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C26",
+      "claim": "Nuclear membranes remained impermeant to the antibody in non-permeabilized sections.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted a nuclear exclusion of the NeuN labeling in the non-permeabilized sections (Figure 1f) compared to permeabilized sections (Figure 1e), indicating nuclear membranes remained impermeant to the antibody.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the nuclear exclusion pattern observed in Figure 1f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "b9096a7a-62e9-4346-ae3f-0bc58adf0019",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C27",
+      "claim": "A balance between ultrastructural integrity and penetration depth was dependent on the concentrations of paraformaldehyde (PFA) and glutaraldehyde (GA) in the primary fixative solution.",
+      "claim_type": "EXPLICIT",
+      "source": "A balance between ultrastructural integrity and penetration depth was dependent on the concentrations of paraformaldehyde (PFA) and glutaraldehyde (GA) in the primary fixative solution as expected based on the different cross-linking properties of the two aldehydes (Hopwood, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Figure 1\u2014figure supplement 2 and citation to aldehyde cross-linking properties.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "d892bd05-038f-4e04-947c-caf4f33b4c04",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C28",
+      "claim": "A mixture of 4% PFA and 0.005% GA yielded a good compromise between penetration depth and EM quality.",
+      "claim_type": "EXPLICIT",
+      "source": "A mixture of 4% PFA and 0.005% GA yielded a good compromise between penetration depth and EM quality, although small variations in the GA concentration led to similar results (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "55b7d37e-20d0-4abe-82eb-ba8bc3c082c9",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C29",
+      "claim": "Uniform labeling was achieved when using IgG primary antibody concentrations in the range of 33\u201366 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Uniform labeling was achieved when using IgG primary antibody concentrations in the range of 33\u201366 nM (Figure 1\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "6a20b529-7050-4e7d-acbe-703ebe36e712",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C30",
+      "claim": "The depth of penetration increased as the fixative buffer concentration increased in ~1-mm-thick sections.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the depth of penetration increased as the fixative buffer concentration increased and that the highest concentration we used yielded complete penetration through 1-mm-thick sections (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "a7d4bcce-44ed-42b7-98d0-479d2eb72860",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C31",
+      "claim": "The highest fixative buffer concentration used yielded complete penetration through 1-mm-thick sections.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the depth of penetration increased as the fixative buffer concentration increased and that the highest concentration we used yielded complete penetration through 1-mm-thick sections (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "61c941e4-718a-4124-afc5-0e420a0bbb95",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C32",
+      "claim": "The CR+ and CB+ cell densities labeled with the permeabilization-free protocol were similar to those labeled when a permeabilization step was included.",
+      "claim_type": "EXPLICIT",
+      "source": "The CR+ and CB+ cell densities labeled with the permeabilization-free protocol (Figure 3b) were similar to those labeled when a permeabilization step was included (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of data shown in Figures 3a and 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "a81186ab-6a93-4bbd-8e2f-0eac558e3a7c",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C33",
+      "claim": "The permeabilization-free protocol generally yielded nuclear exclusion of the CR and CB labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the results with anti-NeuN, the permeabilization-free protocol generally yielded nuclear exclusion of the CR and CB labeling (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "c2e42302-4eb0-482a-bdf6-ae28d0ae7f7a",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C34",
+      "claim": "ChAT+ axons were labeled both with and without permeabilization in tissue sections from the medial prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Using tissue sections from the medial prefrontal cortex (mPFC), we achieved labeling of ChAT+ axons both with and without permeabilization (Figure 3c, d) consistent with previous reports of the innervation patterns in the mPFC (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 3c and 3d and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "eb5d2206-35a4-438e-8a93-3dbab04e75bc",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C35",
+      "claim": "A discontinuity of the axonal labeling was noted in the permeabilization-free sections compared to the permeabilized sections for ChAT+ axons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noted a discontinuity of the axonal labeling in the permeabilization-free sections (Figure 3d) compared to the permeabilized sections (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of data shown in Figures 3c and 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "5fab6427-3045-4215-85c7-125360513a74",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C36",
+      "claim": "The incomplete axonal labeling may be due to a narrowing of the diameter of portions of the axons presenting a hindrance to the diffusion of the antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the incomplete axonal labeling may be due to a narrowing of the diameter of portions of the axons and therefore present a hindrance to the diffusion of the antibodies or, potentially, that myelination may limit penetration into axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis to explain the observed discontinuity in axonal labeling.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "92f1f199-13b5-4324-b0ec-08f39ae2ef57",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C37",
+      "claim": "Myelination may limit penetration into axons.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the incomplete axonal labeling may be due to a narrowing of the diameter of portions of the axons and therefore present a hindrance to the diffusion of the antibodies or, potentially, that myelination may limit penetration into axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis to explain the observed discontinuity in axonal labeling.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "aad68e55-f899-4521-b798-6e6a204941e2",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C38",
+      "claim": "Poor labeling of PSD-95 was found without permeabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "We first attempted to label the postsynaptic density protein 95 (PSD-95), but found poor labeling without permeabilization (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments, though data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "9dea9a1c-6606-4251-bb8e-13689e57fa86",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C39",
+      "claim": "PSD-95 is within approximately 30 nm of the postsynaptic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Among postsynaptic proteins, super-resolution microscopy has demonstrated that PSD-95 is within approximately 30 nm of the postsynaptic membrane (Dani et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to super-resolution microscopy work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "219ad112-7343-4292-bfe7-2a0590b9f1df",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C41",
+      "claim": "Homer is a protein found more distant, greater than 50 nm, from the postsynaptic membrane of excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore attempted to label Homer, a protein found more distant, greater than 50 nm, from the postsynaptic membrane of excitatory synapses (Dani et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to super-resolution microscopy work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "afe6ae04-5e04-412f-b298-80bff0e239cf",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C42",
+      "claim": "The labeling pattern of Homer was similar to permeabilized sections throughout the depth of 300-\u03bcm-thick sections.",
+      "claim_type": "EXPLICIT",
+      "source": "The labeling pattern of Homer (Figure 4b) was similar to permeabilized sections (Figure 4a) throughout the depth of 300-\u03bcm-thick sections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of data shown in Figures 4a and 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "0967c58a-e934-4097-96dc-9dada6cb2468",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C43",
+      "claim": "A larger variability in the fluorescence intensity of labeled puncta was noted in the non-permeabilized tissue compared to permeabilized tissue for Homer labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted a larger variability in the fluorescence intensity of labeled puncta in the non-permeabilized tissue compared to permeabilized tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the Homer labeling experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "df8961c0-2b22-4b68-bcad-dd7bdcfd691e",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C44",
+      "claim": "Prior to permeabilization, synaptophysin labeling density was consistent with published labeling patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to permeabilization, we observed a labeling density consistent with published labeling patterns (Figure 4c, green) (Grant et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4c and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "c26cbc39-9626-42a8-856a-c8db19393276",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C45",
+      "claim": "Following permeabilization, synaptophysin labeling was similar at the edges of the tissue but the antibody labeling was notably absent in the center of the section.",
+      "claim_type": "EXPLICIT",
+      "source": "Following permeabilization, the labeling pattern was similar at the edges of the tissue but the antibody labeling was notably absent in the center of the section (Figure 4c, magenta).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "f76e6133-09e8-4e0d-a858-65ca00ed66a6",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C46",
+      "claim": "Treatment with Triton X-100 can lead to the extraction of synaptophysin from fixed tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the observation that treatment with Triton X-100 can lead to the extraction of synaptophysin from fixed tissue (Hannah et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "3f3f8ed6-dd54-4062-8400-be8c1e9aedd6",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C47",
+      "claim": "Synaptophysin puncta intensities were significantly correlated between pre- and post-permeabilization labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Puncta intensities (n = 150 puncta) were significantly correlated (linear regression t-test, p=1.5\u00d710\u22128) compared to a 90\u00b0 rotation of the images (p=0.86), which indicated the co-localized labeling of synaptophysin pre- and post-permeabilization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "b65812a9-d333-4f0a-921f-f24da0d5d97a",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C48",
+      "claim": "In the hippocampus, the CR+ subgranular band and granular cell layer positioning of CB+ neurons was observed as previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hippocampus, we observed the CR+ subgranular band and granular cell layer positioning of CB+ neurons as previously reported (Ohira et al., 2010; Figure 5a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5a-d and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "9dc99c9d-5920-454e-aec6-539330311b9e",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C49",
+      "claim": "In the olfactory bulb, non-overlapping populations of CB+ and CR+ periglomerular cells were positively identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In the olfactory bulb, non-overlapping populations of CB+ and CR+ periglomerular cells (Panzanelli et al., 2007) were positively identified (Figure 5e\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5e-h and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "64828647-b6da-47e2-97a1-8811ff1a6a0b",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C50",
+      "claim": "Individual mitral and tufted cell neurites were readily distinguished from unlabeled neurites in the surrounding neuropil of the external plexiform layer of the olfactory bulb using HRP-DAB labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual mitral and tufted cell neurites were readily distinguished from unlabeled neurites in the surrounding neuropil of the external plexiform layer of the olfactory bulb (Figure 5i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "e9a1d279-91b8-4b60-b37a-18484bd7ce00",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C51",
+      "claim": "An affine transform was applied to the 2P image stack to register it to the EM slice for correlative microscopy of CB+, CR+, and TH+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "An affine transform was applied to the 2P image stack to register it to the EM slice, and we were then able to identify somas in the EM slice that corresponded to the immunolabeled somata in a slice from the transformed 2P stack (Figure 6a, b, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the methods described and data shown in Figure 6a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "16423b1c-b4db-419a-8111-fd7bb0f4b68b",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C52",
+      "claim": "Somas in the EM slice corresponded to the immunolabeled somata in a slice from the transformed 2P stack.",
+      "claim_type": "EXPLICIT",
+      "source": "An affine transform was applied to the 2P image stack to register it to the EM slice, and we were then able to identify somas in the EM slice that corresponded to the immunolabeled somata in a slice from the transformed 2P stack (Figure 6a, b, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "4d64982f-c711-464e-9cfe-5d5b3e059d3d",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C53",
+      "claim": "TH+ axons were identified within the EM volume that matched trajectories of fluorescent axons.",
+      "claim_type": "EXPLICIT",
+      "source": "We then locally searched regions of the EM dataset to identify the matching trajectories of fluorescent axons to those in the EM volume (Figure 6d, e) and identified TH+ axons within the EM volume (Figure 6f, g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6d-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "7175a631-8ed0-4151-9e5e-1acc4f1749cb",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C54",
+      "claim": "The traced axons spanned a depth of 57\u201370 \u03bcm deep within the tissue section.",
+      "claim_type": "EXPLICIT",
+      "source": "The traced axons spanned a depth of 57\u201370 \u03bcm deep within the tissue section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measurement from the correlative EM experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "b42a0ed7-5993-46b6-87c0-d143a8c02c50",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C55",
+      "claim": "The method depends on the preservation of ECS during tissue fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "The method depends on the preservation of ECS during tissue fixation (Figures 1 and 2), and we suggest that the simplest explanation for the improved labeling is that the diffusion spaces that are preserved allow antibodies to diffuse deep into tissue and travel to close proximity of their antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "6683d1a4-7fc3-4a74-b4d0-6947a8e833b5",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C56",
+      "claim": "The diffusion spaces that are preserved allow antibodies to diffuse deep into tissue and travel to close proximity of their antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "The method depends on the preservation of ECS during tissue fixation (Figures 1 and 2), and we suggest that the simplest explanation for the improved labeling is that the diffusion spaces that are preserved allow antibodies to diffuse deep into tissue and travel to close proximity of their antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the authors' interpretation of the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "45ff26f7-f73c-4957-9242-231d66fe2cf2",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C57",
+      "claim": "Rather than translocating across multiple plasma membranes in densely packed neuropil, an antibody in ECS-preserved tissue could, in principle, only need to cross one membrane to reach an epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, rather than translocating across multiple plasma membranes in densely packed neuropil, an antibody in ECS-preserved tissue could, in principle, only need to cross one membrane to reach an epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical explanation for the improved antibody penetration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "ec497986-34e2-49d6-94fb-776e2988ca64",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C58",
+      "claim": "Aldehyde fixation alone has been described to semi-permeabilize membranes due to their denaturizing effects on proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "First, aldehyde fixation alone has been described to semi-permeabilize membranes due to their denaturizing effects on proteins (Hopwood, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "ff483502-f2f2-481b-ac5e-b99bfec01da0",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C59",
+      "claim": "The hydrodynamic radius of an IgG antibody is approximately 5 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the hydrodynamic radius of an IgG antibody is approximately 5 nm (Armstrong et al., 2004; J\u00f8ssang et al., 1988), meaning a small pore in a membrane of similar size is required to provide access to intracellular epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "7737e93a-2a0b-43cf-88ce-416561533cee",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C60",
+      "claim": "A small pore in a membrane of similar size to the hydrodynamic radius of an IgG antibody is required to provide access to intracellular epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the hydrodynamic radius of an IgG antibody is approximately 5 nm (Armstrong et al., 2004; J\u00f8ssang et al., 1988), meaning a small pore in a membrane of similar size is required to provide access to intracellular epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the size of IgG antibodies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "ece7596c-eff1-4ba5-8f2d-4f2eb78fd0c4",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C61",
+      "claim": "A current limitation of the protocol is the inability to label antigens that are closely associated with lipid membranes such as the postsynaptic protein PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "A current limitation of the protocol is our inability to label antigens that are closely associated with lipid membranes such as the postsynaptic protein PSD-95.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "21a237dd-a5c6-4304-99b1-e16eb328f361",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C62",
+      "claim": "The ability to label the Homer protein, which is more distant from the postsynaptic membrane than PSD-95, suggests a steric hindrance for antibody binding when a protein is in close proximity to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The postsynaptic terminal is densely packed with protein, and our ability to label the Homer protein, which is more distant from the postsynaptic membrane than PSD-95 (Dani et al., 2010), suggests a steric hindrance for antibody binding when a protein is in close proximity to the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential labeling success of Homer vs PSD-95.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "8e2e9e09-5a01-4345-bb47-e34ebf0b0e22",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C63",
+      "claim": "Some degree of permeabilization may be a requirement for proteins that are located in close spatial proximity to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, some degree of permeabilization may be a requirement for proteins that are located in close spatial proximity to the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the PSD-95 labeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "8a0ecb5f-dacb-4bec-b71d-83e98cc65deb",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C64",
+      "claim": "The use of nanobodies may improve labeling in combination with the protocol if the size of IgG antibodies is limiting the binding to postsynaptic targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, if the size of IgG antibodies is limiting the binding to postsynaptic targets, the use of physically smaller antibodies, such as nanobodies (Hamers-Casterman et al., 1993), may improve labeling in combination with our protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential future direction with citation to nanobody work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "c66d2af5-eef6-4cee-885b-f19b07ebc3e7",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C65",
+      "claim": "Nanobodies have been shown to label targets up to 100 \u03bcm, but not deeper, from one surface of a tissue section.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies have recently been shown to label targets up to 100 \u03bcm, but not deeper, from one surface of a tissue section (Fang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "08a0cf82-833d-48c5-91f2-7fc0ec51ce66",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C66",
+      "claim": "An important future goal is to achieve ECS preservation by perfusion of a whole brain and uniform permeabilization-free antibody labeling throughout large tissue volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "While we focused on section thicknesses up to 1 mm, an important future goal is to achieve ECS preservation by perfusion of a whole brain (Cragg, 1980) and uniform permeabilization-free antibody labeling throughout large tissue volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future goal with citation to previous work on ECS preservation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "c972dbcc-0461-4e74-a0d6-3f0b7f264ebb",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C67",
+      "claim": "It is important to first confirm that ECS preservation during acute section immersion fixation was successful, ideally by inspection of EM images.",
+      "claim_type": "EXPLICIT",
+      "source": "To replicate the protocol, we emphasize that it is important to first confirm that ECS preservation during acute section immersion fixation was successful, ideally by inspection of EM images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation for protocol replication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "e31fefc8-b865-4eb9-80c8-3e83072f57c4",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C68",
+      "claim": "The degree of ECS preservation varies by brain region.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of ECS preservation varies by brain region as previously reported (Pallotto et al., 2015) and needs to be calibrated for specific brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "b5b73152-ea3f-4666-8fac-45873926afdf",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C69",
+      "claim": "Refixing the tissue with 2% PFA before serially incubating in fructose solutions retains ultrastructural quality.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that refixing the tissue with 2% PFA before serially incubating in fructose solutions retains ultrastructural quality (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "127b9cb6-457f-4c16-9701-ca82a3ab20d5",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C70",
+      "claim": "The use of SeeDB clearing allowed obtaining two-photon (2P) excited fluorescence signals throughout the depth of 300 \u03bcm fixed tissue sections.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of SeeDB clearing allowed us to obtain two-photon (2P) excited fluorescence signals throughout the depth of 300 \u03bcm fixed tissue sections (Denk et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of using the SeeDB clearing method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "1bb14a14-43dd-4981-9d82-2c367eddfc29",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C71",
+      "claim": "C57BL/6J male mice (age p30\u2013p45) were used for all experiments except for specific transgenic lines.",
+      "claim_type": "EXPLICIT",
+      "source": "C57BL/6J male mice (age p30\u2013p45) were used for all experiments except for the use of Cdhr1-cre mice (Gensat stock # 030952-UCD; Nagai et al., 2005), age p50, to label mitral and tufted cells (Figure 5) and Olfr160-IRES-ChR2-YFP mice (JAX stock # 021206; Smear et al., 2013), age p42, to label interneurons in the mouse olfactory bulb (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "a7399dae-53d5-482c-a0ef-7395a5e181a7",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "claim_id": "C72",
+      "claim": "All animal procedures were conducted in accordance with US National Institutes of Health guidelines, as approved by the National Institute of Neurological Disorders and Stroke Animal Care and Use Committee (ASP 1340).",
+      "claim_type": "EXPLICIT",
+      "source": "All animal procedures were conducted in accordance with US National Institutes of Health guidelines, as approved by the National Institute of Neurological Disorders and Stroke Animal Care and Use Committee (ASP 1340).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3f508004-200a-49ef-9672-8d8494abe1f8",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a permeabilization-free immunohistochemistry protocol that enables uniform antibody labeling of neuronal cell types, intracellular enzymes, and synaptic proteins throughout thick (300 \u03bcm) ECS-preserved tissue sections while maintaining ultrastructural integrity. The method depends on preservation of extracellular space (ECS) during fixation, which allows antibodies to diffuse through the tissue without requiring detergent permeabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7, C23-C26, and C55 collectively demonstrate the core finding with strong experimental evidence. Figure 1 shows uniform NeuN labeling throughout 300 \u03bcm sections without permeabilization in ECS-preserved tissue (C23, C24) with intact membrane ultrastructure (C24, C26), contrasting with perfusion-fixed tissue that showed labeling gradients (C19). Nuclear exclusion of antibodies (C25, C26) provides additional evidence that membranes remain intact. The protocol was successfully applied to multiple protein targets (Figures 3-4) across different brain regions (Figure 5), supporting claims C4-C6. Multiple biological replicates are documented in the methods section.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "9b2a679e-8dc1-4ff7-9b71-144ff227e209",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors systematically optimized protocol parameters including fixative composition (4% PFA + 0.005% GA), antibody concentration (33-66 nM), and buffer osmolarity, achieving complete antibody penetration through tissue sections up to 1 mm thick.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by systematic parameter optimization shown in supplementary figures. Figure 1\u2014figure supplement 2 demonstrates the balance between ultrastructural integrity and penetration depth across different PFA/GA concentrations (C27, C28). Figure 1\u2014figure supplement 3a shows optimal antibody concentration range (C29). Figure 2 demonstrates that increasing buffer osmolarity increases ECS preservation and antibody penetration, with complete penetration achieved in 1 mm sections at highest concentration (C30, C31). The optimization is methodical and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "7ea4085a-e067-4571-bb5b-11cecfc66d21",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The permeabilization-free protocol successfully labeled multiple neuronal cell type markers (calretinin, calbindin, ChAT) with similar densities to permeabilized controls, though ChAT+ axons showed discontinuous labeling without permeabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by data in Figure 3. CR+ and CB+ cell densities were similar between permeabilized and non-permeabilized conditions (C32), with nuclear exclusion observed (C33). ChAT+ axons were labeled in both conditions (C34), but showed discontinuity without permeabilization (C35). The discontinuous axonal labeling represents a limitation but is honestly reported. Multiple biological replicates (minimum 3 mice, 3 sections each) strengthen the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "32484f2d-6d60-43cf-ae3a-8dfd62928601",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The protocol has limitations for labeling proteins in close proximity to membranes: PSD-95 (~30 nm from membrane) showed poor labeling, while Homer (>50 nm from membrane) was successfully labeled, suggesting steric hindrance limits antibody access to membrane-proximal epitopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C61-C63 identify a clear limitation, while C39, C41-C43 provide mechanistic context. The failure to label PSD-95 (C38, C61) contrasted with successful Homer labeling (C42) is consistent with their different distances from the postsynaptic membrane (C39, C41, cited from Dani et al. 2010). The interpretation of steric hindrance (C62, C63) is reasonable given the differential labeling success. However, C38 notes data is not shown, which weakens direct evidence. The larger variability in Homer puncta intensity (C43) is noted but not quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "d306e7f7-c9da-4de6-9186-02ba530da8d7",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sequential labeling of synaptophysin before and after permeabilization revealed that permeabilization with Triton X-100 led to extraction of synaptophysin from the center of sections, while pre-permeabilization labeling was uniform and co-localized with remaining post-permeabilization signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by the elegant sequential labeling experiment in Figure 4c-d. Pre-permeabilization synaptophysin labeling was consistent with published patterns (C44), while post-permeabilization showed central depletion (C45), consistent with known Triton extraction effects (C46). The co-localization analysis (C47) with significant correlation (p=1.5\u00d710\u207b\u2078, n=150 puncta) compared to rotated control (p=0.86) provides strong statistical evidence. This experiment demonstrates both the advantage of the permeabilization-free approach and validates the labeling specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "8fc06a83-8d7e-484b-b803-846d5d25959d",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The permeabilization-free protocol was successfully applied across multiple brain regions (hippocampus, olfactory bulb) to label region-specific cell populations and enabled HRP-DAB labeling for correlative EM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by data in Figure 5. The protocol successfully labeled known cell populations in hippocampus (C48) and olfactory bulb (C49) with patterns matching previous reports (cited: Ohira et al. 2010, Panzanelli et al. 2007). HRP-DAB labeling of eGFP-expressing mitral/tufted cells (C50) demonstrates compatibility with electron-dense reporters for direct EM correlation. The consistency with published patterns provides validation, though quantitative comparisons are not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "ca6dd9af-0e3e-423b-b743-2814172ea0de",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors demonstrated proof-of-principle correlative light and electron microscopy by registering 2P fluorescence images to EM data, successfully identifying immunolabeled cell bodies and TH+ axons 57-70 \u03bcm deep within tissue sections in corresponding EM volumes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by correlative microscopy data in Figure 6. Affine transformation successfully registered 2P and EM datasets (C51), enabling identification of corresponding somata (C52) and TH+ axons (C53) at depths of 57-70 \u03bcm (C54). However, these are single proof-of-principle experiments (stated in methods: 'performed once'), limiting assessment of reproducibility. The registration approach using anatomical landmarks is reasonable but manual, potentially introducing bias. The depth achieved (57-70 \u03bcm) is substantial but represents only ~20% of the 300 \u03bcm section thickness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "d1e991ae-ba40-46f1-a0d3-4f922b1e4bec",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The SeeDB tissue clearing protocol is compatible with the permeabilization-free IHC approach, enabling two-photon imaging throughout 300 \u03bcm sections while maintaining ultrastructural quality after refixation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 are supported by data in Figure 1\u2014figure supplement 6 and throughout the manuscript. Refixation with 2% PFA before SeeDB clearing retained ultrastructural quality (C69), and SeeDB enabled 2P imaging through 300 \u03bcm sections (C70). The compatibility of tissue clearing with EM is critical for the correlative pipeline. However, the comparison in Figure 1\u2014figure supplement 6 is qualitative rather than quantitative, and some EM images show the same samples as Figure 1\u2014figure supplement 2, limiting independent assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "fab68710-133f-4176-9565-5f9d941b0a81",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In perfusion-fixed tissue without ECS preservation, omitting detergent resulted in incomplete antibody penetration but intact ultrastructure, while including Triton X-100 achieved uniform labeling but severely degraded membrane integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C19-C22 establish the baseline problem that motivates the study. Figure 1a-b clearly demonstrates the tradeoff in perfusion-fixed tissue: Triton enables uniform labeling (C21) but destroys membranes (C22), while omitting detergent preserves ultrastructure (C20) but creates labeling gradients (C19). This is consistent with known effects of Triton (C16, cited). The comparison is well-controlled with biological replicates (Figure 1\u2014figure supplement 1). This establishes the need for the ECS-preservation approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "1ff79667-c4ba-417a-bd55-0c8f69a92c57",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mechanism underlying permeabilization-free labeling is attributed to preservation of extracellular space (ECS) during fixation, which provides diffusion pathways for antibodies to reach epitopes without crossing multiple membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C17-C18 cite prior work on ECS preservation, while C55-C57 present the authors' mechanistic interpretation. While the dependence on ECS preservation is well-demonstrated experimentally (Figures 1-2), the proposed mechanism (C56-C57) remains speculative. The authors acknowledge uncertainty about how antibodies cross intact membranes, noting aldehyde-induced semi-permeabilization (C58) and the size of IgG relative to potential pores (C59-C60). Direct evidence for the proposed mechanism (antibodies diffusing through ECS and crossing single membranes) is lacking. Alternative explanations (e.g., membrane damage during ECS preservation) are mentioned but not ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "9ed0491e-e743-4bb7-b7aa-ad31cfa704f0",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors hypothesize that incomplete ChAT+ axonal labeling without permeabilization may result from axon diameter narrowing or myelination limiting antibody diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C37 are explicitly stated as hypotheses to explain the observed discontinuous axonal labeling (C35). No experimental evidence is provided to test these hypotheses. The speculation is reasonable given that permeabilization improved axonal labeling (consistent with lipid solubilization removing barriers), but alternative explanations are not explored. This represents an honest acknowledgment of a limitation rather than a supported finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "f5d491ce-8cfd-4330-993c-79437c1556ad",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose future directions including use of nanobodies to improve labeling of membrane-proximal proteins and achieving ECS preservation in whole-brain perfusion for larger volume labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C66 describe potential future work rather than current results. C64 speculates that nanobodies might improve labeling if IgG size is limiting, citing their smaller size. C65 cites prior work showing nanobody penetration up to 100 \u03bcm. C66 proposes whole-brain ECS preservation as a future goal. These are reasonable suggestions but represent speculation about future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors establish the scientific context: EM provides structural connectivity data but lacks functional information, which can be added through physiological recording or IHC, but conventional pre-embedding IHC requires permeabilization that degrades ultrastructure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C15 establish background knowledge supported by appropriate citations. These claims accurately represent the state of the field and the motivation for the study. C1-C2 describe EM capabilities and limitations. C8-C11 describe approaches to add functional information. C12-C15 describe current IHC approaches and their limitations. All claims are supported by relevant citations and represent accurate characterizations of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "a994ade6-6338-49a8-a271-6e88dd3d00e1",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors note that aldehyde fixation semi-permeabilizes membranes and that IgG antibodies (~5 nm hydrodynamic radius) require similarly-sized pores to access intracellular epitopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 cite prior work to provide context for the mechanism discussion. C58 cites Hopwood 1985 on aldehyde-induced semi-permeabilization. C59 cites two papers on IgG hydrodynamic radius. C60 is a logical inference from C59. These claims accurately represent cited work and provide relevant mechanistic context, though they don't directly test the mechanism in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "45aebc1d-1dc6-451f-9e03-84cdefe51f2b",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors emphasize that successful protocol replication requires confirming ECS preservation by EM inspection, and note that ECS preservation varies by brain region requiring region-specific calibration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 provide important practical guidance for protocol implementation. C67 emphasizes the need to verify ECS preservation by EM, which is reasonable given the method's dependence on this parameter. C68 cites prior work (Pallotto et al. 2015) showing regional variation in ECS preservation. These are appropriate caveats and recommendations for users of the protocol.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    },
+    {
+      "id": "491b3626-12b4-4695-a78b-7fc48ce6b564",
+      "content_id": "5ad90242-bd08-4e64-b8a9-5bc9e9662b55",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors used C57BL/6J male mice (p30-p45) for most experiments, with specific transgenic lines for targeted experiments, following NIH guidelines under approved protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 describe the experimental animals and ethical compliance. These are straightforward methodological details stated in the Materials and methods section. The information is clearly documented and appropriate for the experiments performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:29:03.407344Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "872b6eb5-4182-4d42-80bc-1a10107ec242",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "8318a2e8-b413-4aae-b966-c24573ed945a",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "e840f051-903f-4860-848b-88d3f9829c38",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "476fb4a8-174b-4b8b-ba82-d8ded1acb63f",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "e84f3fbb-fbed-453c-a6db-31785ca4429b",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "ae12a1fb-8719-4d50-ba2d-9f9994bd7972",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "16b522b0-54d5-4eb5-96e2-0c184940b9ee",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "8ef20a1e-0684-4349-a4e0-50b2b652b47a",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "3c44018c-3d0e-4b08-90bd-5842a2cc8145",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "b42a0ed7-5993-46b6-87c0-d143a8c02c50",
+      "result_id": "3f508004-200a-49ef-9672-8d8494abe1f8"
+    },
+    {
+      "claim_id": "b9096a7a-62e9-4346-ae3f-0bc58adf0019",
+      "result_id": "9b2a679e-8dc1-4ff7-9b71-144ff227e209"
+    },
+    {
+      "claim_id": "d892bd05-038f-4e04-947c-caf4f33b4c04",
+      "result_id": "9b2a679e-8dc1-4ff7-9b71-144ff227e209"
+    },
+    {
+      "claim_id": "55b7d37e-20d0-4abe-82eb-ba8bc3c082c9",
+      "result_id": "9b2a679e-8dc1-4ff7-9b71-144ff227e209"
+    },
+    {
+      "claim_id": "6a20b529-7050-4e7d-acbe-703ebe36e712",
+      "result_id": "9b2a679e-8dc1-4ff7-9b71-144ff227e209"
+    },
+    {
+      "claim_id": "a7d4bcce-44ed-42b7-98d0-479d2eb72860",
+      "result_id": "9b2a679e-8dc1-4ff7-9b71-144ff227e209"
+    },
+    {
+      "claim_id": "61c941e4-718a-4124-afc5-0e420a0bbb95",
+      "result_id": "7ea4085a-e067-4571-bb5b-11cecfc66d21"
+    },
+    {
+      "claim_id": "a81186ab-6a93-4bbd-8e2f-0eac558e3a7c",
+      "result_id": "7ea4085a-e067-4571-bb5b-11cecfc66d21"
+    },
+    {
+      "claim_id": "c2e42302-4eb0-482a-bdf6-ae28d0ae7f7a",
+      "result_id": "7ea4085a-e067-4571-bb5b-11cecfc66d21"
+    },
+    {
+      "claim_id": "eb5d2206-35a4-438e-8a93-3dbab04e75bc",
+      "result_id": "7ea4085a-e067-4571-bb5b-11cecfc66d21"
+    },
+    {
+      "claim_id": "aad68e55-f899-4521-b798-6e6a204941e2",
+      "result_id": "32484f2d-6d60-43cf-ae3a-8dfd62928601"
+    },
+    {
+      "claim_id": "9dea9a1c-6606-4251-bb8e-13689e57fa86",
+      "result_id": "32484f2d-6d60-43cf-ae3a-8dfd62928601"
+    },
+    {
+      "claim_id": "219ad112-7343-4292-bfe7-2a0590b9f1df",
+      "result_id": "32484f2d-6d60-43cf-ae3a-8dfd62928601"
+    },
+    {
+      "claim_id": "afe6ae04-5e04-412f-b298-80bff0e239cf",
+      "result_id": "32484f2d-6d60-43cf-ae3a-8dfd62928601"
+    },
+    {
+      "claim_id": "0967c58a-e934-4097-96dc-9dada6cb2468",
+      "result_id": "32484f2d-6d60-43cf-ae3a-8dfd62928601"
+    },
+    {
+      "claim_id": "ece7596c-eff1-4ba5-8f2d-4f2eb78fd0c4",
+      "result_id": "32484f2d-6d60-43cf-ae3a-8dfd62928601"
+    },
+    {
+      "claim_id": "21a237dd-a5c6-4304-99b1-e16eb328f361",
+      "result_id": "32484f2d-6d60-43cf-ae3a-8dfd62928601"
+    },
+    {
+      "claim_id": "8e2e9e09-5a01-4345-bb47-e34ebf0b0e22",
+      "result_id": "32484f2d-6d60-43cf-ae3a-8dfd62928601"
+    },
+    {
+      "claim_id": "df8961c0-2b22-4b68-bcad-dd7bdcfd691e",
+      "result_id": "d306e7f7-c9da-4de6-9186-02ba530da8d7"
+    },
+    {
+      "claim_id": "c26cbc39-9626-42a8-856a-c8db19393276",
+      "result_id": "d306e7f7-c9da-4de6-9186-02ba530da8d7"
+    },
+    {
+      "claim_id": "f76e6133-09e8-4e0d-a858-65ca00ed66a6",
+      "result_id": "d306e7f7-c9da-4de6-9186-02ba530da8d7"
+    },
+    {
+      "claim_id": "3f3f8ed6-dd54-4062-8400-be8c1e9aedd6",
+      "result_id": "d306e7f7-c9da-4de6-9186-02ba530da8d7"
+    },
+    {
+      "claim_id": "b65812a9-d333-4f0a-921f-f24da0d5d97a",
+      "result_id": "8fc06a83-8d7e-484b-b803-846d5d25959d"
+    },
+    {
+      "claim_id": "9dc99c9d-5920-454e-aec6-539330311b9e",
+      "result_id": "8fc06a83-8d7e-484b-b803-846d5d25959d"
+    },
+    {
+      "claim_id": "64828647-b6da-47e2-97a1-8811ff1a6a0b",
+      "result_id": "8fc06a83-8d7e-484b-b803-846d5d25959d"
+    },
+    {
+      "claim_id": "e9a1d279-91b8-4b60-b37a-18484bd7ce00",
+      "result_id": "ca6dd9af-0e3e-423b-b743-2814172ea0de"
+    },
+    {
+      "claim_id": "16423b1c-b4db-419a-8111-fd7bb0f4b68b",
+      "result_id": "ca6dd9af-0e3e-423b-b743-2814172ea0de"
+    },
+    {
+      "claim_id": "4d64982f-c711-464e-9cfe-5d5b3e059d3d",
+      "result_id": "ca6dd9af-0e3e-423b-b743-2814172ea0de"
+    },
+    {
+      "claim_id": "7175a631-8ed0-4151-9e5e-1acc4f1749cb",
+      "result_id": "ca6dd9af-0e3e-423b-b743-2814172ea0de"
+    },
+    {
+      "claim_id": "b5b73152-ea3f-4666-8fac-45873926afdf",
+      "result_id": "d1e991ae-ba40-46f1-a0d3-4f922b1e4bec"
+    },
+    {
+      "claim_id": "127b9cb6-457f-4c16-9701-ca82a3ab20d5",
+      "result_id": "d1e991ae-ba40-46f1-a0d3-4f922b1e4bec"
+    },
+    {
+      "claim_id": "afb5489d-c05c-471f-83a8-f3800ee0977b",
+      "result_id": "fab68710-133f-4176-9565-5f9d941b0a81"
+    },
+    {
+      "claim_id": "3e4d2808-2b5e-4ae3-a4ee-6c7978bcc84f",
+      "result_id": "fab68710-133f-4176-9565-5f9d941b0a81"
+    },
+    {
+      "claim_id": "62800257-7b45-4100-8cf8-1d9ba3d4481a",
+      "result_id": "fab68710-133f-4176-9565-5f9d941b0a81"
+    },
+    {
+      "claim_id": "d8ed6fc8-5b26-46b0-8e74-4bef4f510038",
+      "result_id": "fab68710-133f-4176-9565-5f9d941b0a81"
+    },
+    {
+      "claim_id": "b7fe99c5-85f2-43cc-b66d-5aa56498b018",
+      "result_id": "fab68710-133f-4176-9565-5f9d941b0a81"
+    },
+    {
+      "claim_id": "877454c3-fb58-44a1-ab0b-03150ad5e229",
+      "result_id": "1ff79667-c4ba-417a-bd55-0c8f69a92c57"
+    },
+    {
+      "claim_id": "e1545bda-fe88-4ee0-8625-2785535eb8b5",
+      "result_id": "1ff79667-c4ba-417a-bd55-0c8f69a92c57"
+    },
+    {
+      "claim_id": "b42a0ed7-5993-46b6-87c0-d143a8c02c50",
+      "result_id": "1ff79667-c4ba-417a-bd55-0c8f69a92c57"
+    },
+    {
+      "claim_id": "6683d1a4-7fc3-4a74-b4d0-6947a8e833b5",
+      "result_id": "1ff79667-c4ba-417a-bd55-0c8f69a92c57"
+    },
+    {
+      "claim_id": "45ff26f7-f73c-4957-9242-231d66fe2cf2",
+      "result_id": "1ff79667-c4ba-417a-bd55-0c8f69a92c57"
+    },
+    {
+      "claim_id": "5fab6427-3045-4215-85c7-125360513a74",
+      "result_id": "9ed0491e-e743-4bb7-b7aa-ad31cfa704f0"
+    },
+    {
+      "claim_id": "92f1f199-13b5-4324-b0ec-08f39ae2ef57",
+      "result_id": "9ed0491e-e743-4bb7-b7aa-ad31cfa704f0"
+    },
+    {
+      "claim_id": "8a0ecb5f-dacb-4bec-b71d-83e98cc65deb",
+      "result_id": "f5d491ce-8cfd-4330-993c-79437c1556ad"
+    },
+    {
+      "claim_id": "c66d2af5-eef6-4cee-885b-f19b07ebc3e7",
+      "result_id": "f5d491ce-8cfd-4330-993c-79437c1556ad"
+    },
+    {
+      "claim_id": "08a0cf82-833d-48c5-91f2-7fc0ec51ce66",
+      "result_id": "f5d491ce-8cfd-4330-993c-79437c1556ad"
+    },
+    {
+      "claim_id": "ec5683c7-1277-4def-a7be-f50072b64851",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "6d48b26f-ebad-48c8-9421-d0a510d4e0b6",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "e1fe3b00-2570-4de6-b25b-38a9effac716",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "76ae5d01-7ec2-42be-9bc3-08a0085a30ad",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "73346210-b8d7-43f0-b19e-fc87160612dc",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "294f5e7e-c054-41e8-8b92-70351afbbc99",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "d189191e-3551-4ec4-a262-a745b6398b28",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "898c7715-c279-4422-a7a7-870ab55a3b2a",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "77405da1-7c59-46d4-a2ee-4ff4cd896b73",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "f9185223-deed-415d-9afa-793e207b9b90",
+      "result_id": "2d593f3a-1d17-4650-ba98-7c80ccbfd6a7"
+    },
+    {
+      "claim_id": "ec497986-34e2-49d6-94fb-776e2988ca64",
+      "result_id": "a994ade6-6338-49a8-a271-6e88dd3d00e1"
+    },
+    {
+      "claim_id": "ff483502-f2f2-481b-ac5e-b99bfec01da0",
+      "result_id": "a994ade6-6338-49a8-a271-6e88dd3d00e1"
+    },
+    {
+      "claim_id": "7737e93a-2a0b-43cf-88ce-416561533cee",
+      "result_id": "a994ade6-6338-49a8-a271-6e88dd3d00e1"
+    },
+    {
+      "claim_id": "c972dbcc-0461-4e74-a0d6-3f0b7f264ebb",
+      "result_id": "45aebc1d-1dc6-451f-9e03-84cdefe51f2b"
+    },
+    {
+      "claim_id": "e31fefc8-b865-4eb9-80c8-3e83072f57c4",
+      "result_id": "45aebc1d-1dc6-451f-9e03-84cdefe51f2b"
+    },
+    {
+      "claim_id": "1bb14a14-43dd-4981-9d82-2c367eddfc29",
+      "result_id": "491b3626-12b4-4695-a78b-7fc48ce6b564"
+    },
+    {
+      "claim_id": "a7399dae-53d5-482c-a0ef-7395a5e181a7",
+      "result_id": "491b3626-12b4-4695-a78b-7fc48ce6b564"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1700 @@
+{
+  "submission": {
+    "id": "81e63f1e-8362-4a13-8f44-d22eebf16f6d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:05:23.750995Z",
+    "updated_at": "2025-12-03T20:05:23.750995Z"
+  },
+  "content": [
+    {
+      "id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "submission_id": "81e63f1e-8362-4a13-8f44-d22eebf16f6d",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM reveals an unprecedented binding site for NaV1.7 inhibitors enabling rational design of potent hybrid inhibitors\n\n## Authors\n\n- Marc Kschonsak<sup>1</sup> ([ORCID: 0000-0002-4392-1614](https://orcid.org/0000-0002-4392-1614))\n- Christine C Jao<sup>1</sup>\n- Christopher P Arthur<sup>1</sup>\n- Alexis L Rohou<sup>1</sup>\n- Philippe Bergeron<sup>2</sup>\n- Daniel F Ortwine<sup>2</sup>\n- Steven J McKerrall<sup>2</sup>\n- David H Hackos<sup>3</sup>\n- Lunbin Deng<sup>3</sup>\n- Jun Chen<sup>4</sup>\n- Tianbo Li<sup>4</sup>\n- Peter S Dragovich<sup>2</sup>\n- Matthew Volgraf<sup>2</sup>\n- Matthew R Wright<sup>5</sup>\n- Jian Payandeh<sup>1</sup> \u2020\n- Claudio Ciferri<sup>1</sup> ([ORCID: 0000-0002-0804-2411](https://orcid.org/0000-0002-0804-2411)) \u2020\n- John C Tellis<sup>2</sup> ([ORCID: 0000-0003-1675-9639](https://orcid.org/0000-0003-1675-9639)) \u2020\n\n### Affiliations\n\n1. Genentech Inc, Structural Biology South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))\n2. Genentech Inc, Discovery Chemistry South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))\n3. Genentech Inc, Neuroscience South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))\n4. Genentech Inc, Biochemical and Cellular Pharmacology South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))\n5. Genentech Inc, Drug Metabolism and Pharmacokinetics South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe voltage-gated sodium (NaV) channel NaV1.7 has been identified as a potential novel analgesic target due to its involvement in human pain syndromes. However, clinically available NaV channel-blocking drugs are not selective among the nine NaV channel subtypes, NaV1.1\u2013NaV1.9. Moreover, the two currently known classes of NaV1.7 subtype-selective inhibitors (aryl- and acylsulfonamides) have undesirable characteristics that may limit their development. To this point understanding of the structure\u2013activity relationships of the acylsulfonamide class of NaV1.7 inhibitors, exemplified by the clinical development candidate GDC-0310, has been based solely on a single co-crystal structure of an arylsulfonamide inhibitor bound to voltage-sensing domain 4 (VSD4). To advance inhibitor design targeting the NaV1.7 channel, we pursued high-resolution ligand-bound NaV1.7-VSD4 structures using cryogenic electron microscopy (cryo-EM). Here, we report that GDC-0310 engages the NaV1.7-VSD4 through an unexpected binding mode orthogonal to the arylsulfonamide inhibitor class binding pose, which identifies a previously unknown ligand binding site in NaV channels. This finding enabled the design of a novel hybrid inhibitor series that bridges the aryl- and acylsulfonamide binding pockets and allows for the generation of molecules with substantially differentiated structures and properties. Overall, our study highlights the power of cryo-EM methods to pursue challenging drug targets using iterative and high-resolution structure-guided inhibitor design. This work also underscores an important role of the membrane bilayer in the optimization of selective NaV channel modulators targeting VSD4.\n\n## Introduction\n\nVoltage-gated sodium (NaV) channels initiate and propagate action potentials in excitable cells and play important roles in health and disease (Catterall et al., 2005; Ahern et al., 2016). The NaV1.7 channel is expressed predominantly in the peripheral nervous system, and genetic studies have identified compelling loss-of-function and gain-of-function phenotypes in human pain syndromes, prompting significant efforts to develop NaV1.7-selective inhibitors as potential novel analgesic drugs (Dib-Hajj et al., 2013; Payandeh and Hackos, 2018; McKerrall and Sutherlin, 2018). NaV channels contain 24-transmembrane segments linked in four homologous domains (DI-DIV), where four peripheral voltage-sensor domains (VSD1-4) surround a central ion-conducting pore module that houses the ion selectivity filter and key ligand and toxin binding sites. Traditionally, all clinically available NaV channel inhibitors lack significant molecular selectivity among the NaV1.1\u20131.9 subtypes owing to the high sequence conservation found at the ligand binding site within the central cavity of the ion-conducting pore module (McKerrall and Sutherlin, 2018; de Lera Ruiz and Kraus, 2015).\n\nA breakthrough study in 2013 by McCormack and colleagues reported the discovery of an arylsulfonamide antagonist, PF-04856264, that bound to an unprecedented receptor site in VSD4 with demonstrated molecular selectivity for human NaV1.7 over other subtypes (McCormack et al., 2013). However, the related development candidate PF-05089771 did not meet clinical endpoints in human subjects with painful diabetic peripheral neuropathy, possibly due to poor target coverage and the intolerable doses required to achieve efficacy (Swain et al., 2017; McDonnell et al., 2018; Siebenga et al., 2020). Additionally, an alternate acylsulfonamide inhibitor that also targeted the VSD4 receptor site in NaV1.7, GDC-0276, was halted in phase I clinical trials due to safety concerns and potential off-target effects likely attributed to the high lipophilicity of the compound (Rothenberg et al., 2019; Safina et al., 2021). To date, selective NaV1.7 inhibitors with an improved therapeutic index relative to these clinical-stage compounds have not yet been identified, and this absence underscores the need to optimize such molecules using modern, structure-guided design approaches.\n\nThe inherent complexity and dynamic nature of human NaV channels have historically presented significant barriers to obtaining high-resolution experimental structural information, especially of inhibitor-bound complexes (Noreng et al., 2021). Using an engineered human VSD4 NaV1.7-NaVAb bacterial channel chimera and X-ray crystallography, the binding mode of the GX-936 arylsulfonamide inhibitor revealed that the anionic sulfonamide group engages the fourth arginine gating charge (R4) to trap VSD4 in an activated conformation, which in turn stabilizes a non-conductive, inactivated state of the channel (Ahuja et al., 2015). While determinants of subtype selectivity and structure\u2013activity relationships (SAR) of the arylsulfonamide inhibitor class could be rationalized by the GX-936 co-crystal structure, additional ligand-bound structures of suitable resolution were not returned by the NaV1.7-NaVAb chimeric channel crystallography system. This shortcoming led molecular docking studies to presume that the acylsulfonamide inhibitors also bound VSD4 in an analogous manner, despite points of inexplicable SAR (Sun et al., 2019). The overall paucity of direct structural information has made the optimization of NaV1.7 inhibitors challenging, with many questions about the determinants of potency, selectivity, and the relationship between the acylsulfonamide and arylsulfonamide inhibitor classes remaining unanswered.\n\nOver the last three decades, protein crystallography and structure-based drug design (SBDD) have become gold standards across the pharmaceutical industry for the identification of ligand binding pockets and the optimization of drug candidates for clinical development. While SBDD has proven successful for many important targets, including G protein-coupled receptors (GPCRs) (Congreve et al., 2014), its applicability to several membrane protein targets, such as NaV channels, has been limited due to the extreme difficulties with their iterative crystallization and structure determination (Noreng et al., 2021). Cryogenic electron microscopy (cryo-EM) has recently emerged as a transformative technique to determine the high-resolution structures of diverse protein targets and has proven particularly effective for membrane proteins that are recalcitrant to crystallization (Cheng, 2018). Despite this breakthrough, cryo-EM structure determination of membrane targets in complex with small or large molecule therapeutics frequently remains retrospective and is often enabled after the advancement of key molecules into the clinic (Balestrini et al., 2021; Roug\u00e9 et al., 2020). Slow turnaround times and modest resolutions typically offered by cryo-EM have limited its application for real-time SBDD efforts. Here, we describe a system for the iterative determination of high-resolution NaV1.7-VSD4 small molecule co-structures via cryo-EM that has led to the development of a novel class of inhibitors. Critical to this advancement has been the establishment of a robust protocol for sample preparation and structure determination and the first structure of an acylsulfonamide bound to NaV1.7-VSD4, revealing a previously unknown inhibitor binding pocket between the S3 and S4 helices. Consequently, a novel hybrid inhibitor series bridging the aryl and acylsulfonamide pockets was designed and validated. Our work exemplifies the deployment of cryo-EM as a workhorse structural biology tool in an active medicinal chemistry campaign and thus represents an important milestone toward NaV channel drug discovery.\n\n## Results\n\n### Structure of the GNE-3565-VSD4 NaV1.7-NaVPas channel complex in lipid nanodiscs\n\nOur approach to establish an iterative, high-resolution system to enable NaV1.7 SBDD was ultimately guided by three observations: our repeated failure to generate well-diffracting crystals of the NaV1.7-NaVAb bacterial channel chimera system (Ahuja et al., 2015), our difficulty of reproducibly expressing a suitable amount of full-length human NaV1.7 channel (Xu et al., 2019; Clairfeuille, 2019), and the very limited local resolution observed at VSD4 in all available human Nav1.7 cryo-EM structures (Shen et al., 2019; Huang et al., 2022). Thus, we sought to exploit an engineered human VSD4-NaV1.7-NaVPas cockroach channel chimeric construct that had been previously shown to complex with small molecule inhibitors and peptide toxins known to target VSD4 (Clairfeuille, 2019). The recovered protein yields following expression and purification (50 \u00b5g/L) allowed us to readily pursue reconstitution of the VSD4-NaV1.7-NaVPas channel into lipid nanodiscs (Figure 1, Figure 1\u2014figure supplement 1). Small molecule inhibitors were added prior to sample vitrification, followed by cryo-EM data collection and processing procedures, which allowed us to routinely obtain 3D-reconstructions in the 2.2\u20133.0\u00c5 resolution range around the VSD4 inhibitor binding site (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the VSD4-NaV1.7-NaVPas channel. The portions humanized to the NaV1.7 sequence are shown in green. N-terminal domain (NTD) and CTD are indicated. (B) Side view of the single-particle cryogenic electron microscopy (cryo-EM) reconstruction of VSD4-NaV1.7-NaVPas channel. (C, D) Cartoon representations of the top and side views of VSD4-NaV1.7-NaVPas channel. Individual VSD domains are indicated. VSD4 is highlighted in green. (E) Localization of water molecules (in red) in the VSD4-NaV1.7-NaVPas channel structure. VSD4 is highlighted in green.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) VSD4-NaV1.7-NaVPas channel protein expression and purification scheme. (B) Example size-exclusion chromatogram and SDS-PAGE of nanodisc-reconstituted VSD4-NaV1.7-NaVPas channel sample.\n\nThe VSD4-NaV1.7-NaVPas chimera displays the expected domain-swapped arrangement with numerous densities assigned as phospholipids bound to the channel, confirming the maintenance of a native membrane-like environment (Figure 1). As seen in previous NaVPas structures (Clairfeuille, 2019; Shen et al., 2017; Shen et al., 2018), the ion-conducting pore module of the VSD4-NaV1.7-NaVPas chimeric channel is closed, consistent with a nonconductive or inactivated state. The quality and resolution of our structure allowed us to assign 111 water molecules for the highest resolution structure (Figure 1E, Video 1). The visualization of many well-resolved water molecules bound within the VSDs and coordinated within the ion selectivity filter provides new insights into the interactions that might occur during gating charge transfer and ion conduction, respectively.\n\n![Video 1.](https://cdn.elifesciences.org/articles/84151/elife-84151-video1.mp4.jpg)\n\n**Video 1.:** Several water molecules can be observed.\n\nAlthough we were able to determine the crystal structure of VSD4-NaVAb bound to the arylsulfonamide inhibitor GX-936 (Ahuja et al., 2015), no well-diffracting crystals were obtained for any other arylsulfonamide compounds despite years of continued effort. Arylsulfonamide GNE-3565 is representative of an advanced series of arylsulfonamide class NaV1.7 inhibitors that demonstrates channel blockage at subnanomolar concentrations with mixed subtype selectivity (Figure 2A). We complexed GNE-3565 with the VSD4 NaV1.7-NaVPas channel-nanodisc system and employed cryo-EM to assess its overall binding pose (Figure 2B and C). The 2.9 \u00c5 resolution cryo-EM map revealed that the S1-S2 and S3-S4 helices from VSD4 form a clamshell-like structure that closes over GNE-3565 (Figure 2D and E, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Supplementary file 1A), similar to the binding pose reported for GX-936 (Ahuja et al., 2015). Specifically, the ionized arylsulfonamide group of GNE-3565 (measured pKa = 5.8) bisects VSD4 to salt-bridge directly to R4 on the S4 helix, while the central phenyl ring extends perpendicular between the S2 and S3 helices to directly contact established subtype-selectivity determinants Tyr1537 and Trp1538 on the S2 helix (Figure 2A\u2013D). As for GX-936, the GNE-3565, arylsulfonamide VSD4 receptor binding site can be divided into three regions: an anion-binding pocket, a selectivity pocket, and a lipid-exposed pocket (Figure 2D). The root-mean-square deviation (RMSD) between the GNE-3565-VSD4 and the GX-936-VSD4 structures (Ahuja et al., 2015) is 0.667 (714\u2013714 atoms) (Figure 2\u2014figure supplement 2), supporting long-held assumptions by medicinal chemistry teams that all structurally related arylsulfonamides should be expected to complex to VSD4 through similar determinants (Swain et al., 2017; Weiss et al., 2017; Graceffa et al., 2017; McKerrall et al., 2019; Roecker et al., 2021; Focken et al., 2016; Wu et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig2-v2.jpg)\n\n**Figure 2.:** (A) Chemical structure of arylsulfonamide GNE-3565. (B, C) Top and side views of VSD4-NaV1.7-NaVPas channel bound to GNE-3565. VSD4 is highlighted in green, GNE-3565 in magenta. (D) Extracellular view of VSD4-NaV1.7-NaVPas arylsulfonamide receptor site is shown with select side chains rendered as sticks. (E) The cryogenic electron microscopy (cryo-EM) map surrounding the ligand GNE-3565 is shown in mesh representation. (F) View toward the membrane highlighting key interactions with the GNE-3565 anionic group. (G) View from the membrane highlighting key interactions with the GNE-3565 central phenyl ring.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Data collection and processing workflow for VSD4-NaV1.7-NaVPas channel bound to GNE-3565. (B) Heat map representation of the distribution of assigned particle orientations. (C) Fourier shell corellation (FSC) between two half datasets yields a global resolution estimate of approximately 2.9 \u00c5 resolution from the refinement using an overall mask of the VSD4-NaV1.7-NaVPas channel bound to GNE-3565. (D) Local resolution of maps. (E) Data collection and processing workflow for VSD4-NaV1.7-NaVPas channel bound to GNE-9296 (compound 2). (F) Heat map representation of the distribution of assigned particle orientations. (G) FSC between two half datasets yields a global resolution estimate of approximately 3.1 \u00c5 resolution from the refinement using an overall mask of the VSD4-NaV1.7-NaVPas channel bound to GNE-9296 (compound 2). (H) Local resolution of maps.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig2-figsupp2-v2.jpg)\n\n### Structure of the acylsulfonamide GDC-0310 in complex with the VSD4 NaV1.7-NaVPas channel\n\nTo investigate the binding pose of a representative NaV1.7-selective acylsulfonamide, GDC-0310 (Figure 3A) was complexed with the VSD4 NaV1.7-NaVPas channel in nanodiscs and a cryo-EM structure was determined to 2.5 \u00c5 resolution (Figure 3B\u2013D, Figure 3\u2014figure supplement 1, Supplementary file 1A). Remarkably, the binding mode of GDC-0310 revealed an unexpected and previously unknown pocket that formed between the S3 and S4 helices (Figure 3B\u2013E). While the aryl and acyl moieties of GDC-0310 and GNE-3565 bind in the same region, the remainder of the acyl receptor site is orthogonal to the corresponding binding domain reported for the aryl class (Figure 3B\u2013D). In detail, the anionic acylsulfonamide of GDC-0310 participates in salt-bridge bonding interactions with R4 and R3 through the carbonyl and sulfonamide oxygen atoms, respectively (Figure 3F). Moreover, the aryl ring of the GDC-0310 splits the S3 and S4 helices to occupy a lipophilic pocket, displacing the S3 helix laterally by ~3 \u00c5 relative to the GNE-3565-VSD4 structure (Figure 3G). Our cryo-EM structures serve to highlight a dynamic environment in VSD4 where the S1-S4 helixes can be differentially separated by the binding of distinct small molecule inhibitors (Figure 2D and Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig3-v2.jpg)\n\n**Figure 3.:** (A) Chemical structure of acylsulfonamide GDC-0310. (B) Top and side views of VSD4-NaV1.7-NaVPas channel bound to GDC-0310. VSD4 is highlighted in green, GDC-0310 in magenta. (D) Extracellular view of VSD4-NaV1.7-NaVPas acylsulfonamide receptor site is shown with select side chains rendered as sticks. (E) The cryogenic electron microscopy (cryo-EM) map surrounding the ligand GDC-0310 is shown in mesh representation. (F) View toward the membrane highlighting key interactions with the GDC-0310 warhead. (G) View from the membrane highlighting van der Waals interactions with the GDC-0310 cyclopropyl substituent. The alpha-methylbenzylamine tail region sits almost entirely within the lipid bilayer.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Example cryogenic electron microscopy (cryo-EM) micrograph image of the VSD4-NaV1.7-NaVPas channel. (B) Representative 2D-class averages of selected particles. (C) Data collection and processing workflow for VSD4-NaV1.7-NaVPas channel bound to compound 4. (D) Heat map representation of the distribution of assigned particle orientations. (E) FSC between two half datasets yields a global resolution estimate of approximately 2.2 \u00c5 resolution from the refinement using an overall mask of the VSD4-NaV1.7-NaVPas channel bound to GNE-1305 (compound 4) (F) Local resolution of maps. (G) Data collection and processing workflow for VSD4-NaV1.7-NaVPas channel bound to GDC-0310. (H) Heat map representation of the distribution of assigned particle orientations. (I) FSC between two half datasets yields a global resolution estimate of approximately 2.5 \u00c5 resolution from the refinement using an overall mask of the VSD4-NaV1.7-NaVPas channel bound to GDC-0310. (J) Local resolution of maps.\n\nIt is notable that the cyclopropyl substituent of GDC-0310 makes effective van der Waals interactions with I1574 and I1588 from S3 and I1601 and I1604 on S4 (Figure 3G), while the alpha-methylbenzylamine \u2018tail\u2019 region sits almost entirely within the lipid bilayer (Figure 3A and C), where density for this portion of the inhibitor is only poorly resolved (Figure 3E). Considering the relative depth of the\u00ad GDC-0310 binding site in relation to the membrane-water interface (~8 \u00c5), our structure suggests a membrane access pathway for acylsulfonamides to the VSD4 receptor site, which has important implications for understanding the pharmacology, SAR, and potential development liabilities of the inhibitor series (Payandeh and Volgraf, 2021). Notably, this structure also reveals that the Tyr1537 side chain on S2 exists in a down rotamer conformation and does not contact GDC-0310 directly, which provides the first direct structural rationale for why the selectivity profiles between the acyl and arylsulfonamide classes differ substantially (Figure 3D, vide infra; Bankar et al., 2018).\n\n### Structure-based rational design of hybrid NaV1.7 inhibitors\n\nUpon inspection of the superimposed GNE-3565-aryl and GDC-0310-acyl structures, we could immediately envision a novel class of hybrid inhibitors that would simultaneously occupy both the aryl- and acylsulfonamide binding pockets (Figure 4A and B). Such an enlarged hybrid binding pocket would offer unique opportunities to gain potency directly from ligand\u2013protein interactions, which might enable removal of the hydrophobic lipid-facing tail groups seen in all previous generations of VSD4-targeting NaV channel inhibitors. These groups have typically been critical for maintaining potency, but use of the plasma membrane to drive membrane-bound target occupancy is largely nonspecific, and potentially introduces off-target liabilities that can contribute to toxicity. However, it was unclear whether this hybrid conformation of the VSD4 domain could accommodate the described inhibitors and/or whether it was accessible during any stage of NaV1.7 channel gating. We therefore set out to demonstrate a proof of concept that appropriately designed small molecules could induce this hypothesized binding site while inhibiting channel function with meaningful potency.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig4-v2.jpg)\n\n**Figure 4.:** (A) Illustration of hybrid molecule design approach. (B) Arylsulfonamide, acylsulfonamide, and hybrid molecule poses. (C) Hybridization strategy and molecule optimization. Highlighted are molecule 2 (GNE-9296) and molecule 4 (GNE-1305). (D) Extracellular view of VSD4-NaV1.7-NaVPas bound to the hybrid molecule 2 (GNE-9296). (E) View toward the membrane highlighting key interactions with the anionic group. (F) View from the membrane highlighting the lack of a stacking interaction between Y1537 and the phenyl ring. (G) Extracellular view of VSD4-NaV1.7-NaVPas bound to the hybrid molecule 4 (GNE-1305). (H) View toward the membrane highlighting key interactions with the anionic group. (I) View from the membrane highlighting the p-stacking interaction between Y1537 and the phenyl ring.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Activation and inactivation curves of Nav1.7. Activation V1/2 = \u201325.2 mV (95% CI: \u201325.8 to \u201324.6 mV, n = 36). Inactivation V1/2 = \u201366.2 mV (95% CI: \u201366.6 to \u201365.7 mV, n = 153). (B). Pharmacology protocol and representative current traces for tetracaine block. Cells were held at \u201350 mV, pulsed to \u201310 mV for 10 ms, followed by a 20 ms pulse at \u2013150 mV and 10 ms pulse to \u201310 mV. Currents elicited at the second \u201310 mV pulse were used to derive inhibition at inactivated states. Current traces showed 100 nM tetracaine block of Nav1.7 during a 7.5 min time period (from black to gray trace). (C) Representative dose responses of key compounds on human Nav1.7 channel. For each compound, 2\u20133 repeats were run, along with tetracaine control. (D) Summary of inhibition potency on Nav1.7, Nav1.5, and Nav1.6. Please note tetracaine was included as control for all experiments.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The cryogenic electron microscopy (cryo-EM) map surrounding the ligand GNE-9296 (compound 2) is shown in mesh representation. (B) The cryo-EM map surrounding the ligand GNE-1305 (compound 4) is shown in mesh representation.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84151/elife-84151-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** 1\u20131.9 sequences.\n\nGDC-0310 was a relatively unattractive starting point for hybridization because of its high molecular weight (543 g/mol) and lipophilicity (cLogP = 5.2). Accordingly, re-evaluation of potency and physicochemical property data available for previously synthesized NaV1.7 inhibitors identified progenitor compound 1, which offers reasonable potency against NaV1.7 (IC50 = 25 nM, n = 8; Figure 4C, Figure 4\u2014figure supplement 1) and reduced molecular weight (350 g/mol) and lipophilicity (cLogP = 2.7). Seeking to leverage existing knowledge of the arylsulfonamide binding pocket, GNE-9296 (compound 2) was synthesized in an attempt to directly graft on a significant portion of the GNE-3565 scaffold. Gratifyingly, this molecule retained substantial potency, affording channel blockade at an IC50 of 47 nM (n = 8).\n\nA cryo-EM structure of GNE-9296 bound to the VSD4 NaV1.7-NaVPas channel confirmed that the molecule adopts the desired hybrid binding mode (Figure 4D, Figure 4\u2014figure supplement 2A). Here, the anionic group of the novel hybrid compound binds in the same position as in the aryl and acyl poses, interacting closely with R4, as seen for the aryl-like binding (Figure 4E). The aryl- and acylsulfonamide-derived structural motifs of GNE-9296 occupy their expected positions in the pockets formed between S2/S3 and S3/S4, respectively. Notably, in this hybrid configuration, Y1537 adopts a similar arrangement as observed for the arylsulfonamides (Figure 4F).\n\nEncouraged by this result, we hoped to draw on previously established knowledge of acylsulfonamide SAR to improve the potency of this compound. Established SAR within the acylsulfonamide series suggested that replacement of the chloro substituent on the benzamide fragment of the molecule with a cyclopropane would typically improve potency. This SAR proved translatable to the hybrid class molecules, resulting in inhibitor 3 (IC50 = 16nM, n = 12; Figure 4C, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2A).\n\nFurther analysis of the cryo-EM structure of GNE-9296 revealed that the aryl ring in the S2/S3 binding pocket was shifted ~1 \u00c5 away from the VSD4 core compared to arylsulfonamides such as GNE-3565 (data not shown). The aryl ring in the S3/S4 pocket exhibited better overlap with the analogous substituents in the GDC-0310 structure. We hypothesized that the acylsulfonamide moiety of GNE-9296, which places the two aryl substituents 4.7 \u00c5 apart, might not be fully optimized for use in hybrid inhibitors. In comparison, an arylsulfonamide moiety would position these two groups at a distance of ~3.3 \u00c5. On this basis, we designed N-benzothiazolyl sulfonamide GNE-1305 (compound 4), which demonstrated potent NaV1.7 inhibition (IC50 = 9nM, n = 8, Figure 4C, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2B).\n\nOur last hypothesis was again validated with a cryo-EM co-structure of GNE-1305 bound to the VSD4 NaV1.7-NaVPas channel (Figure 4G, Figure 4\u2014figure supplement 2B). Here, we observed the typical face-on pi-stacking orientation of the S2/S3 substituent with Y1537 while maintaining efficient space filling in the S3/S4 pocket. Moreover, the efficient occupation of the non-membrane exposed regions of the binding pocket permitted the removal of the lipophilic tail of the molecule in 5, where a CF3 group replaces the cyclopentylmethyl substituent. Although this molecule shows reduced potency (IC50 = 74 nM, n = 8), lack of substantial small molecule contact with the lipid bilayer is an uncommon feature in all other known NaV1.7 VSD4 domain inhibitors. These molecules serve as a key proof of concept, highlighting the power of cryo-EM to yield new structural insights that can inspire the design of novel, structurally differentiated small molecule NaV channel inhibitors.\n\n## Discussion\n\nIterative structure-based design is among the most powerful techniques to facilitate the development of small molecule drug candidates. Although a variety of technologies are capable of providing information about small molecule ligand\u2013protein interactions, SBDD has traditionally been synonymous with the use of X-ray crystallography, with other techniques failing to rival its high resolution and fast cycle times. Here, we have demonstrated that a robust cryo-EM structure pipeline is capable of quickly providing co-structures at resolutions suitable for use in an active medicinal chemistry optimization campaign. Moreover, we have highlighted the power of structural methods, and cryo-EM in particular, to provide new and important insights into inhibitor design through the discovery of a previously unknown binding mode for acylsulfonamide NaV1.7 inhibitors. We further note that our use of an engineered VSD4-NaV1.7-NaVPas chimeric channel construct was essential to produce sufficient yields of recombinant protein capable of routinely returning multiple cryo-EM samples per preparation. This system repeatedly delivered high-resolution depictions of the VSD4 inhibitor binding site and thus contrasts with prior accounts of VSD4 in cryo-EM structures of full-length human NaV1.7 channels (Shen et al., 2019; Huang et al., 2022) Importantly, high-quality cryo-EM maps of VSD4 in complex with ICA121431 have recently been reported from full-length human NaV1.3 channel protein (Li et al., 2022), indicating that SBDD efforts targeting a particular NaV channel subtype would likely benefit from exploring both engineered and native channel sample options at early project stages.\n\nThe co-structure of GDC-0310 was critical to contextualize historical differences between aryl- and acylsulfonamide NaV1.7 inhibitors, which include divergent SAR in the linker phenyl ring and tail regions, disparate NaV family selectivity patterns, and differences in on-rates and off-rates (Safina et al., 2021; Sun et al., 2019; Bankar et al., 2018; Luo et al., 2019; DiMauro et al., 2016; Focken et al., 2018). Previous efforts to model acylsulfonamide binding have attempted to dock molecules into the GX-936 co-structure and have proposed subtle changes in molecular register and/or pose to explain the non-translatable SAR (Sun et al., 2019; Kotla et al., 2019). Here, we demonstrate that the molecular features of aryl- and acylsulfonamide inhibitors diverge because they occupy distinct, but overlapping, pockets within the VSD4 domain.\n\nThe selectivity determinants of arylsulfonamide NaV1.7 inhibitors have been well studied. Mutation of key non-conserved residues proximal to the binding pocket observed in the GX-936 co-structure has been shown to alter NaV1.7 potency consistent with selectivity patterns observed for other NaV family members (Ahuja et al., 2015; Figure 4\u2014figure supplement 3). Typically, arylsulfonamides have shown high levels of selectivity against NaV1.5, NaV1.1, and NaV1.4, but lower selectivity against NaV1.2 and NaV1.6. In comparison, several acylsulfonamides have been characterized with very high selectivity over NaV1.2 and NaV1.6 (Bankar et al., 2018). Interestingly, residues forming the contours of the acylsulfonamide binding pocket show high sequence homology across NaV isoforms, suggesting that selectivity for this class is likely an allosteric phenomenon. Nonetheless, the disparate binding pockets for these two inhibitor classes provide a clear rationale for their historically divergent patterns of selectivity.\n\nOur structure of GDC-0310 provides a structural rationale for the relative slow dissociation kinetics of acylsulfonamide inhibitors compared to arylsulfonamides (Bankar et al., 2018). Specifically, the acylsulfonamide pocket is buried more deeply into the plasma membrane than the arylsulfonamide pocket, and may only be available through a membrane-access pathway that first involves partitioning of the molecule into the hydrophobic core of the membrane. In comparison, the arylsulfonamide pocket is more open to the outer membrane leaflet\u2013aqueous interface, potentially offering access or egress directly from (or to) the solvent compartment. It is increasingly recognized that slow dissociation kinetics may be associated with membrane-access pathways for small molecules binding to transmembrane proteins (Payandeh and Volgraf, 2021; Mason et al., 1991; Coleman et al., 1996; Anderson et al., 1994; Masureel et al., 2018; Austin et al., 2003; Rhodes et al., 1992; Sykes et al., 2014; Dickson et al., 2016).\n\nIn addition to offering valuable information for retrospective analysis of historical NaV1.7 VSD4 domain inhibitors, the structure of GDC-0310 inspired the development of a class of structurally differentiated inhibitors that trap a novel conformation of VSD4. These hybrid molecules bridge both the S2/S3 and S3/S4 helical gaps, with the anionic moiety situated centrally, interacting with the arginine gating charge network within the core of the domain. We have demonstrated that potent hybrid inhibitors can be designed with fewer membrane-associated elements than prior generation NaV1.7 inhibitors, and anticipate that this will offer opportunities to develop molecules with improved lipophilic ligand efficiency and/or differentiated pharmacokinetic profiles. Hybrid inhibitors can also access selectivity determinants from both the S2/S3 and S3/S4 pockets simultaneously, offering a tantalizing opportunity to develop exquisite selectivity over other NaV isoforms. Although selectivity was not a key endpoint of our proof-of-concept studies described here, hybrid molecules 2\u20135 are selective for NaV1.7 over the cardiac channel NaV1.5. Further discussion of selectivity patterns in the hybrid series is included in Supplementary file 1B.\n\nBeyond the scope of NaV channel inhibitors, our experiences may also offer lessons translatable to small molecule modulators of other transmembrane proteins. Specifically, it is noteworthy to observe that both aryl- and acylsulfonamide inhibitors have access to inducible pockets that are not observable in the parent small molecule co-structures. Designing small molecules to \u2018push\u2019 on a structural protein element is a common strategy in medicinal chemistry, but it is often challenging to predict when such efforts will afford new, well-defined binding pockets. As such, these designs are often met with failure and quickly abandoned. However, some scenarios exist in which an inducible pocket is more likely to be found. In these cases, medicinal chemists are more often emboldened to continue experimenting with designs that push into new areas of a protein binding pocket, even when met with initial failure. For example, type II kinase inhibitors can be rationally designed starting from a type I inhibitor structure by appending groups that push into the hydrophobic back pocket (Zhao et al., 2014). This pocket is not visible from the type I inhibitor structure, but knowledge of the protein dynamics associated with the DFG-in/DFG-out transition provides a rationale for exploring these designs. We speculate that transmembrane proteins, particularly intrinsically dynamic ones including ion channels, transporters, and GPCRs, may commonly present privileged structural motifs that are rich with opportunities for the discovery of novel druggable pockets.\n\nIn summary, we have developed a robust pipeline for high-resolution structural determination of small-molecules bound to NaV1.7-VSD4 suitable for use in iterative structure-based drug design campaigns. We also report the first co-structure of an acylsulfonamide inhibitor bound to the VSD4 domain of NaV1.7, revealing an unexpected and unique binding mode. This finding provides clear rationale for previously unexplainable divergence in the in vitro pharmacological behavior between inhibitor classes, and inspired the development of hybrid inhibitors that engages VSD4 in a novel conformation. Our findings highlight the power of cryo-EM as an enabling drug discovery technology and offer insights into ion channel structural dynamics that are potentially applicable to related targets and other target classes.\n\n## Materials and methods\n\n### Generation of VSD4-NaV1.7-NaVPas channel constructs\n\nVSD4-NaV1.7-NaVPas chimeric constructs were used as described previously (Clairfeuille, 2019). In brief, optimized coding DNA for NaV1.7 VSD4-NaVPaS chimeras with N-terminal tandem StrepII and FLAG tag was cloned into a pRK vector with CMV promoter. HEK293 cells in suspension were cultured in SMM 293T-I medium under 5% CO2 at 37\u00b0C and transfected using PEI when the cell density reached 4 \u00d7 106 cells per mL. Transfected cells were harvested 48 hr after transfection. The Dc1a toxin coding DNA from Diguetia canities was cloned into a modified pAcGP67A vector downstream of the polyhedron promoter and an N-terminal 6x HIS tag. Recombinant baculovirus was generated using the Baculogold system (BD Biosciences) and Trichoplusia ni cells were infected for protein production. The supernatant was harvested 48 hr post-infection.\n\n### Protein expression and purification\n\nIn total, 150 g of cell pellet was resuspended in 500 mL of 25 mM HEPES pH 7.5, 200 mM NaCl, 1 ug/mL benzonase, 1 mM PMSF, and Roche protease inhibitor tablets. Cells were lysed by dounce homogenization. Proteins were solubilized by addition of 2% GDN (Avanti) with 0.3% cholesteryl hemisuccinate (Avanti) for 2 hr at 4\u00b0C. Cell debris was separated by ultracentrifugation at 40,000 rpm at 4\u00b0C. Affinity purification using anti-Flag resin was performed by batch binding for 1 hr at 4\u00b0C. The resin was washed with 5CV Purification Buffer (25 mM HEPES pH 7.5, 200 mM NaCl, 0.01% GDN). Another 5CV wash was performed using Purification Buffer supplemented with 5 mM ATP and 10 mM MgCl2. Proteins were eluted in 6CV Purification Buffer with 300 ug/mL Flag peptide. Proteins were subjected to another round of affinity purification using StrepTactin resin (IBA). Proteins were eluted and concentrated to ~5 mg/mL. For the compound 2 containing sample, instead of nanodisc reconstitution VSD4-NaV1.7-NaVPas was incubated overnight with Dc1a toxin at a 2:1 molar ration of toxin:VSD4-NaV1.7-NaVPas. The eluted sample was concentrated to 100 uL and separated on Superose 6 3.2/300.\n\nFor nanodisc reconstitution used for the samples containing GNE-3565, GDC-0310, and compound 4, a 200-molar excess of lipid mix (3POPC:1POPE:1POPG resuspended in 50 mM HEPES pH7.5, 100 mM NaCl, 5 mM MgCl2, 1% CHAPS) was added to detergent-solubilized protein and incubated on ice for 30 min. A four-molar excess of scaffold protein (MSP1E3D1, Sigma) was added to the protein-lipid mix and incubated on ice for another 30 min. To remove detergent, BioBeads (Bio-Rad) were added to 0.25 mg/mL and incubated overnight at 4\u00b0C. To remove the empty nanodiscs, the sample was subjected to a round of affinity purification using Strep-Tactin (IBA). The eluted sample was concentrated to 100 uL and separated on Superose 6 3.2/300. Peak fractions were combined and split into four samples. Then, 50 uM of the small molecule of interest was added to each sample and incubated at 22\u00b0C for 10 min. Samples were crosslinked with 0.05% glutaraldehyde (Electron Microscopy Sciences) then quenched with 1 M Tris pH 7.0. Samples at 2 mg/mL were used for grid freezing.\n\n### Cryo-EM sample preparation and data acquisition\n\nCryo-EM grids for the small molecule VSD4-NaV1.7-NaVPas chimeric complexes shown in this study were prepared as follows: for the GDC-0310 and compound 4 VSD4-NaV1.7-NaVPas complexes, holey carbon grids (Ultrafoil 25 nM Au R 0.6/1 300 mesh; Quantifoil) were incubated with a thiol reactive, self-assembling reaction mixture of 4 mM monothiolalkane(C11)PEG6-OH (11-mercaptoundecyl) hexaethyleneglycol (SPT-0011P6, SensoPath Technologies, Inc, Bozeman, MT). Grids were incubated with this self-assembled monolayer (SAM) solution for 24 hr and afterward rinsed with EtOH. 3 \u03bcL of the sample was applied to the grid and blotted with Vitrobot Mark IV (Thermo Fisher) using 3.5 s blotting time with 100% humidity and plunge-frozen in liquid ethane cooled by liquid nitrogen. The GNE-3565 VSD4-NaV1.7-NaVPas complex was, similarly as described above, applied to a holey carbon grid (Ultrafoil 25 nM Au R 1.2/1,3 300 mesh; Quantifoil) pretreated with SAM solution. The grid was blotted single-sided with a Leica EM GP (Leica) using 3 s blotting time with 100% humidity and plunge-frozen in liquid ethane cooled by liquid nitrogen. For compound 2 VSD4-NaV1.7-NaVPas-DC1a complex, holey carbon grids (Ultrafoil 25 nM Au R 2/2 200 mesh; Quantifoil) were glow-discharged for 10 s using the Solarus plasma cleaner (Gatan). 3 \u03bcL of the sample was applied to the grid and blotted with Vitrobot Mark IV (Thermo Fisher) using 2.5 s blotting time with 100% humidity and plunge-frozen in liquid ethane cooled by liquid nitrogen.\n\nMovie stacks for compound 2 VSD4-NaV1.7-NaVPas-DC1a complex were collected using SerialEM (Mastronarde, 2005) on a Titan Krios operated at 300 keV with bioquantum energy filter equipped with a K2 Summit direct electron detector camera (Gatan). Images were recorded at \u00d7165,000 magnification corresponding to 0.824 \u00c5 per pixel using a 20 eV energy slit. Each image stack contains 50 frames recorded every 0.2 s for an accumulated dose of ~50 e \u00c5\u22122 and a total exposure time of 10 s. Images were recorded with a set defocus range of 0.5\u20131.5 \u03bcm.\n\nMovie stacks for GNE-3565, GDC-0310, and compound 4 VSD4-NaV1.7-NaVPas complexes were collected using SerialEM on a Titan Krios G3i (Thermo Fisher Scientific, Waltham, MA) operated at 300 keV with bioquantum energy filter equipped with a K3 Summit direct electron detector camera (Gatan Inc, Pleasanton, CA). Images were recorded in EFTEM mode at \u00d7105,000 magnification corresponding to 0.838 \u00c5 per pixel, using a 20 eV energy slit. Each image stack contains 60 frames recorded every 0.05 s for an accumulated dose of ~60 e \u00c5\u22122 and a total exposure time of 3 s. Images were recorded with a set defocus range of 0.5\u20131.5 \u03bcm.\n\n### Cryo-EM data processing\n\nCryo-EM data were processed using a combination of the RELION (Scheres, 2012) and cisTEM (Grant et al., 2018) software packages, similarly as described previously (Kschonsak et al., 2022) and as illustrated in Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1.\n\nMovies were corrected for frame motion using the MotionCor2 (Zheng et al., 2017) implementation in RELION, and contrast-transfer function parameters were fit using the 30\u20134.5 \u00c5 band of the spectrum with CTFFIND-4 (Rohou and Grigorieff, 2015). CTF-fitted images were filtered on the basis of the detected fit resolution better than 6\u201310 \u00c5. Particles were picked by template-matching with Gautomatch using a 30 \u00c5 low-pass filtered apo VSD4-NaV1.7-NaVPas reference structure. Particles were sorted during RELION 2D classification, and selected particles were imported into cisTEM for 3D refinements. 3D reconstructions were obtained after auto-refine and manual refinements with a mask around the channel (excluding the detergent micelle) and by applying low-pass filter outside the mask (filter resolution 20 \u00c5) and a score threshold of 0.10\u20130.30, so that only the best-scoring 10\u201330% of particle images would be included in the 3D reconstruction at each cycle. The weight outside of the mask was set to 0.8. No data beyond 3.0 \u00c5 for compound 4, 3.4 \u00c5 for GDC-0310, 3.7 \u00c5 GNE-3565, and 4.0 \u00c5 for compound 2 were used in the refinements. Phenix ResolveCryoEM (Terwilliger et al., 2020) density modification was applied to each of the reconstructions to obtained the final map used for model building. Local resolution was determined in cisTEM using a reimplementation of the blocres algorithm.\n\n### Model building and structure analysis\n\nThe previously determined VSD4-NaV1.7-NaVPas model (PDB: 6NT3; Clairfeuille, 2019) was fit as a rigid body into the cryo-EM map. After manual adjustments, multiple rounds of real space refinement using the phenix.real_space_refinement tool (Afonine et al., 2018b) were used to correct structural differences between the initial model and the map. The small molecule coordinates were generated with eLBOW (Moriarty et al., 2009), placed and manually adjusted in Coot (Emsley et al., 2010), energy minimized with MOE (Chemical Computing Group ULC), and refined with real space refinements in Phenix (Afonine et al., 2018b). The model was validated using phenix.validation_cryoem (Afonine et al., 2018a) with built-in MolProbity scoring (Williams et al., 2018). Figures were made using PyMOL (The PyMOL Molecular Graphics System, v.2.07 Schr\u00f6dinger, LLC), UCSF Chimera (Pettersen et al., 2004), and UCSF ChimeraX (Goddard et al., 2018).\n\n### Chemical synthesis\n\nThe synthesis of GNE-3565, GDC-0310, and compound 1 has been previously reported (Safina et al., 2021; Sun et al., 2019; Sutherlin, 2021). The synthesis and characterization of compounds 2\u20135 are described in the supporting information.\n\n### NaV1.7 biophysical and pharmacological characterization of Nav1.7 channel using Syncropatch electrophysiology\n\ncDNA for NaV1.7 (NM_002977) were stably expressed in Chinese Hamster Ovary (CHO) cells. Sodium currents were measured in the whole-cell configuration using Syncropatch 384PE (NanIon Technologies, Germany). 1NPC\u2013384 chips with custom medium resistance and single hole mode were used. Internal solution consisted of (in mM) 110 CsCl, 10 CsCl, 20 EGTA, and 10 HEPES (pH adjusted to 7.2); and external solution contains (in mM) 60 NMDG, 80 NaCl, 4 KCl, 1 MgCl2, 2 CaCl2, 2 D-glucose monohydrate, and 10 HEPES (pH adjusted to 7.4 with NaOH). To assess voltage-dependent activation of Nav1.7, currents were elicited by 20 ms test pulses (\u221280 to 20 mV in 5 mV increments) from a holding potential at \u2013120 mV. To determine voltage-dependent inactivation, peak currents at 0 mV were obtained after 500 ms conditioning pre-pulses varying from \u2013120\u201315 mV.\n\nAfter system flushing, testing compounds were dissolved in external solution containing 0.1% Pluronic F-127. 10 \u00b5L cells were added to the chip from a cell hotel, and a negative pressure of \u221250 mBar was applied to form a seal. Following treatment with seal enhancer solution and wash-off with external solution, negative pressure of \u2212250 mbar was applied for 1 s to achieve the whole-cell configuration, followed by three washing steps in external solution. 20 \u00b5L of compounds were added to 40 \u00b5L in each well (1:3 dilution of compounds), and after mixing, 20 \u00b5L was removed so the volume was retained at 40 uL. After approximately 13 min recording, 20 \u00b5L/well of 2 uM TTX was added to achieve full block.\n\nFor pharmacological characterization, a holding potential of \u201350 mV was applied during the whole experiment. A depolarizing step was applied to \u201310 mV for 10 ms, followed by a hyperpolarization step to \u2013150 mV for 20 ms to allow channel recovery from inactivation. A second depolarizing step was applied from \u2013150 mV to \u201310 mV for 10 ms, where currents were measured to derive blocking effects of compounds. Inhibition was determined based on 7.5 min of compound incubation.\n\nFor all recordings, currents were sampled at 10 kHz and filtered with Bessel filter. Seal resistance (Rseal) was calculated using built-in protocols; and series resistance was compensated at 80%. Several parameters were applied for quality control, including: cell catching (>10 MU), seal resistance (>500 M\u03a9), series resistances (<10 M\u03a9), and baseline current amplitude (>500 pA and <5 nA). Data were further examined by manual inspection.\n\nBiophysical and pharmacological characterizations, including voltage-dependent activation, voltage-dependent inactivation, pharmacological protocol, a sample trace, IC50 values, and individual dose responses are shown in Figure 4\u2014figure supplement 1.\n",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "d9cae829-3171-488c-a514-b352d2c1ff76",
+      "submission_id": "81e63f1e-8362-4a13-8f44-d22eebf16f6d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon T Sack, https://ror.org/05rrcem69 University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84151.sa0](https://doi.org/10.7554/eLife.84151.sa0)\n\nThis fundamental study describes the structure-based design of novel hybrid inhibitors targeting a human sodium channel which is a pain target. Exceptionally strong evidence for key claims was produced with a structural biological pipeline for iterative structural determination of drugs complexed with an engineered sodium channel. This work is expected to be of interest to biophysicists, drug developers, neurobiologists and pain researchers.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jon T Sack, https://ror.org/05rrcem69 University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84151.sa1](https://doi.org/10.7554/eLife.84151.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"CryoEM reveals unprecedented binding site for NaV1.7 inhibitors enabling rational design of potent hybrid inhibitors\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Vladimir Yarov-Yarovoy (Reviewer #1); Michael A Cianfrocco (Reviewer #2); Hiro Furukawa (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please show electrophysiological data along with statistical analyses.\n\n2) Clarify what the advances of the structural biological pipeline are. Based on the description of the pipeline given, reviewers felt the advance was in protein engineering, rather than the implementation of cryo-EM.\n\n3) Address each reviewer's suggestions with changes to the manuscript or explain why manuscript changes are not warranted in rebuttal.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Add main text and Supplementary figures showing Syncropatch electrophysiology potency data for all compounds presented in the manuscript.\n\n2. Include electrophysiology selectivity data for human Nav1.7 versus other human Nav channels for at least one of the novel hybrid inhibitors. These data will be useful to compare the selectivity profiles of the novel hybrid inhibitors to the selectivity profiles of arylsulfonamides and acylsulfonamides.\n\n3. Discussion of Nav channel subtype selectivity determinants highlighting residues Y1537 and W1538 would benefit from corresponding multiple sequence alignment of Nav channels in a Supplementary Figure.\n\n4. Add supplementary figures showing hybrid compounds 4 and 5 in complex with VSD4 NaV1.7-NaVPas channel using a layout similar to main text Figures 2 and 3.\n\n5. Clarify in the main text and figure legends that compound 2 is GNE-9296.\n\n6. Clarify in the main text and figure legends that compound 4 is GNE-1305.\n\n7. Explain why DC1a peptide toxin was specifically used to obtain the cryoEM structure of compound 2 in complex with VSD4 NaV1.7-NaVPas channel.\n\n8. Update Supplementary Figure 4 to reflect the Supplementary Figure 4 legend.\n\n9. Add Supplementary Figure 5 to reflect the Supplementary Figure 5 legend.\n\n10. Main text line 205 \u2013 add \"s\" to \"suggest\" to read \"our structure suggests\".\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 One source of weakness can be identified in lines 43-45, where the authors emphasize an established iterative system of structure determination, which has been instrumental to their success in drug development. As such, if the authors want to play up their pipeline, they should elaborate on details of the pipeline: how long did it take for each step, how are class averages selected, how long does it take to go from cryo-EM data collection to final reconstruction and atomic model? At the moment, it is difficult to tell how innovative the pipeline is compared to conventional cryo-EM structure determination. Otherwise, if the authors do not want to expound on this, they can omit their comments on a pipeline.\n\n\u2013 The density-modified reconstructions show sharp edges that are non-physiological. The authors need to remedy this to show density that reflects protein structure (i.e., smooth). One approach would include creating composite maps with appropriate local resolutions and B-factors to prevent over-sharpening artifacts.\n\n\u2013 Missing legend for Figure 1F-G.\n\n\u2013 There are two Supplementary Figure 1 figures. This makes the supplementary figure legend numbering incorrect.\n",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7da1895d-a73a-475b-8af5-1aabb262fb82",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C1",
+      "claim": "NaV1.7 has been identified as a potential novel analgesic target due to its involvement in human pain syndromes.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage-gated sodium (NaV) channel NaV1.7 has been identified as a potential novel analgesic target due to its involvement in human pain syndromes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "9aa1aa7f-84a0-41e4-a71c-156637d46cf4",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C2",
+      "claim": "Clinically available NaV channel-blocking drugs are not selective among the nine NaV channel subtypes, NaV1.1\u2013NaV1.9.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clinically available NaV channel-blocking drugs are not selective among the nine NaV channel subtypes, NaV1.1\u2013NaV1.9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of current drugs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "ac71c605-8a21-45ae-b88f-4349d653555d",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C3",
+      "claim": "GDC-0310 engages the NaV1.7-VSD4 through an unexpected binding mode orthogonal to the arylsulfonamide inhibitor class binding pose.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that GDC-0310 engages the NaV1.7-VSD4 through an unexpected binding mode orthogonal to the arylsulfonamide inhibitor class binding pose, which identifies a previously unknown ligand binding site in NaV channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by cryo-EM structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "e94f929b-e97b-448a-b7c1-7ed3fea44944",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C4",
+      "claim": "GDC-0310 binding identifies a previously unknown ligand binding site in NaV channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that GDC-0310 engages the NaV1.7-VSD4 through an unexpected binding mode orthogonal to the arylsulfonamide inhibitor class binding pose, which identifies a previously unknown ligand binding site in NaV channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the cryo-EM structure of GDC-0310 bound to VSD4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "6a1ad7f8-b4da-43f6-aa2e-8a59f3d546f2",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C5",
+      "claim": "The GDC-0310 binding mode enabled the design of a novel hybrid inhibitor series that bridges the aryl- and acylsulfonamide binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding enabled the design of a novel hybrid inhibitor series that bridges the aryl- and acylsulfonamide binding pockets and allows for the generation of molecules with substantially differentiated structures and properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the design, synthesis, and structural characterization of hybrid compounds presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "792eadd4-0be8-4d51-a18d-801f87d188a4",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C6",
+      "claim": "NaV channels contain 24-transmembrane segments linked in four homologous domains (DI-DIV).",
+      "claim_type": "EXPLICIT",
+      "source": "NaV channels contain 24-transmembrane segments linked in four homologous domains (DI-DIV), where four peripheral voltage-sensor domains (VSD1-4) surround a central ion-conducting pore module that houses the ion selectivity filter and key ligand and toxin binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about NaV channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "5edbed4d-82e7-448b-ab93-5d0304312685",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C7",
+      "claim": "Four peripheral voltage-sensor domains (VSD1-4) surround a central ion-conducting pore module in NaV channels.",
+      "claim_type": "EXPLICIT",
+      "source": "NaV channels contain 24-transmembrane segments linked in four homologous domains (DI-DIV), where four peripheral voltage-sensor domains (VSD1-4) surround a central ion-conducting pore module that houses the ion selectivity filter and key ligand and toxin binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about NaV channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "aa41d5ca-0aa9-44f1-89f5-4d019aafa2bc",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C8",
+      "claim": "All clinically available NaV channel inhibitors lack significant molecular selectivity among the NaV1.1\u20131.9 subtypes owing to the high sequence conservation found at the ligand binding site within the central cavity of the ion-conducting pore module.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, all clinically available NaV channel inhibitors lack significant molecular selectivity among the NaV1.1\u20131.9 subtypes owing to the high sequence conservation found at the ligand binding site within the central cavity of the ion-conducting pore module (McKerrall and Sutherlin, 2018; de Lera Ruiz and Kraus, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "d4f1eda3-5ffc-4952-a5cf-e19b3730ff52",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C9",
+      "claim": "PF-04856264 bound to an unprecedented receptor site in VSD4 with demonstrated molecular selectivity for human NaV1.7 over other subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "A breakthrough study in 2013 by McCormack and colleagues reported the discovery of an arylsulfonamide antagonist, PF-04856264, that bound to an unprecedented receptor site in VSD4 with demonstrated molecular selectivity for human NaV1.7 over other subtypes (McCormack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McCormack et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "2134668a-e949-415e-ae1f-dbe74cacdae2",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C10",
+      "claim": "PF-05089771 did not meet clinical endpoints in human subjects with painful diabetic peripheral neuropathy, possibly due to poor target coverage and the intolerable doses required to achieve efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the related development candidate PF-05089771 did not meet clinical endpoints in human subjects with painful diabetic peripheral neuropathy, possibly due to poor target coverage and the intolerable doses required to achieve efficacy (Swain et al., 2017; McDonnell et al., 2018; Siebenga et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical trial reports.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "9d543c3e-d76b-4c52-814b-8619d8cf0d2b",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C11",
+      "claim": "GDC-0276 was halted in phase I clinical trials due to safety concerns and potential off-target effects likely attributed to the high lipophilicity of the compound.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, an alternate acylsulfonamide inhibitor that also targeted the VSD4 receptor site in NaV1.7, GDC-0276, was halted in phase I clinical trials due to safety concerns and potential off-target effects likely attributed to the high lipophilicity of the compound (Rothenberg et al., 2019; Safina et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical trial reports and includes speculative reasoning about the cause.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8d1e4c79-306c-41ba-bd3f-fcd51d6612a5",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C12",
+      "claim": "The GX-936 arylsulfonamide inhibitor binding mode revealed that the anionic sulfonamide group engages the fourth arginine gating charge (R4) to trap VSD4 in an activated conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an engineered human VSD4 NaV1.7-NaVAb bacterial channel chimera and X-ray crystallography, the binding mode of the GX-936 arylsulfonamide inhibitor revealed that the anionic sulfonamide group engages the fourth arginine gating charge (R4) to trap VSD4 in an activated conformation, which in turn stabilizes a non-conductive, inactivated state of the channel (Ahuja et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ahuja et al., 2015 crystal structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "ed921713-6bed-48aa-ae24-ed5035c7f982",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C13",
+      "claim": "The GX-936 binding mode stabilizes a non-conductive, inactivated state of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an engineered human VSD4 NaV1.7-NaVAb bacterial channel chimera and X-ray crystallography, the binding mode of the GX-936 arylsulfonamide inhibitor revealed that the anionic sulfonamide group engages the fourth arginine gating charge (R4) to trap VSD4 in an activated conformation, which in turn stabilizes a non-conductive, inactivated state of the channel (Ahuja et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ahuja et al., 2015 crystal structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "bc0aa2e2-03ad-442e-92ac-19ee7bfc8725",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C14",
+      "claim": "Molecular docking studies presumed that the acylsulfonamide inhibitors also bound VSD4 in an analogous manner to arylsulfonamides, despite points of inexplicable SAR.",
+      "claim_type": "EXPLICIT",
+      "source": "This shortcoming led molecular docking studies to presume that the acylsulfonamide inhibitors also bound VSD4 in an analogous manner, despite points of inexplicable SAR (Sun et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sun et al., 2019 and describes prior assumptions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "9c3632ec-5194-41d7-bcfb-a081aeb46f1c",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C15",
+      "claim": "The VSD4-NaV1.7-NaVPas chimera displays the expected domain-swapped arrangement with numerous densities assigned as phospholipids bound to the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The VSD4-NaV1.7-NaVPas chimera displays the expected domain-swapped arrangement with numerous densities assigned as phospholipids bound to the channel, confirming the maintenance of a native membrane-like environment (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "14552525-1c2e-43e3-a49c-44f82d25e032",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C16",
+      "claim": "The ion-conducting pore module of the VSD4-NaV1.7-NaVPas chimeric channel is closed, consistent with a nonconductive or inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in previous NaVPas structures (Clairfeuille, 2019; Shen et al., 2017; Shen et al., 2018), the ion-conducting pore module of the VSD4-NaV1.7-NaVPas chimeric channel is closed, consistent with a nonconductive or inactivated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison to previous structures cited and the current structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "f43a6d71-f913-4563-8bce-f2b629b8d5db",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C17",
+      "claim": "111 water molecules were assigned for the highest resolution structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality and resolution of our structure allowed us to assign 111 water molecules for the highest resolution structure (Figure 1E, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1E and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "2a67b322-e235-4b97-899f-b82725504d2b",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C18",
+      "claim": "The 2.9 \u00c5 resolution cryo-EM map revealed that the S1-S2 and S3-S4 helices from VSD4 form a clamshell-like structure that closes over GNE-3565.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2.9 \u00c5 resolution cryo-EM map revealed that the S1-S2 and S3-S4 helices from VSD4 form a clamshell-like structure that closes over GNE-3565 (Figure 2D and E, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Supplementary file 1A), similar to the binding pose reported for GX-936 (Ahuja et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "d2c68f2a-9b92-4bb1-bef3-2cf4a320fd72",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C19",
+      "claim": "The ionized arylsulfonamide group of GNE-3565 (measured pKa = 5.8) bisects VSD4 to salt-bridge directly to R4 on the S4 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the ionized arylsulfonamide group of GNE-3565 (measured pKa = 5.8) bisects VSD4 to salt-bridge directly to R4 on the S4 helix, while the central phenyl ring extends perpendicular between the S2 and S3 helices to directly contact established subtype-selectivity determinants Tyr1537 and Trp1538 on the S2 helix (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure and measured pKa value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "1224cd63-36c1-4cb6-a343-edeec80809dc",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C20",
+      "claim": "The central phenyl ring of GNE-3565 extends perpendicular between the S2 and S3 helices to directly contact established subtype-selectivity determinants Tyr1537 and Trp1538 on the S2 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the ionized arylsulfonamide group of GNE-3565 (measured pKa = 5.8) bisects VSD4 to salt-bridge directly to R4 on the S4 helix, while the central phenyl ring extends perpendicular between the S2 and S3 helices to directly contact established subtype-selectivity determinants Tyr1537 and Trp1538 on the S2 helix (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "6f70a9ad-5ce7-4bf0-b235-d9dc03d11e6f",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C21",
+      "claim": "The root-mean-square deviation (RMSD) between the GNE-3565-VSD4 and the GX-936-VSD4 structures is 0.667 (714\u2013714 atoms).",
+      "claim_type": "EXPLICIT",
+      "source": "The root-mean-square deviation (RMSD) between the GNE-3565-VSD4 and the GX-936-VSD4 structures (Ahuja et al., 2015) is 0.667 (714\u2013714 atoms) (Figure 2\u2014figure supplement 2), supporting long-held assumptions by medicinal chemistry teams that all structurally related arylsulfonamides should be expected to complex to VSD4 through similar determinants (Swain et al., 2017; Weiss et al., 2017; Graceffa et al., 2017; McKerrall et al., 2019; Roecker et al., 2021; Focken et al., 2016; Wu et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of the two structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "fa7e28dd-5d4d-4314-ab69-50b61057c748",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C22",
+      "claim": "A cryo-EM structure of GDC-0310 complexed with VSD4 NaV1.7-NaVPas channel was determined to 2.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the binding pose of a representative NaV1.7-selective acylsulfonamide, GDC-0310 (Figure 3A) was complexed with the VSD4 NaV1.7-NaVPas channel in nanodiscs and a cryo-EM structure was determined to 2.5 \u00c5 resolution (Figure 3B\u2013D, Figure 3\u2014figure supplement 1, Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary structural result reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "53504fde-b0f9-469c-a833-03320032df3c",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C23",
+      "claim": "The binding mode of GDC-0310 revealed an unexpected and previously unknown pocket that formed between the S3 and S4 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the binding mode of GDC-0310 revealed an unexpected and previously unknown pocket that formed between the S3 and S4 helices (Figure 3B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by the cryo-EM structure shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "d602b833-c1d5-42a8-93c4-50e75102dc73",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C24",
+      "claim": "The aryl and acyl moieties of GDC-0310 and GNE-3565 bind in the same region, but the remainder of the acyl receptor site is orthogonal to the corresponding binding domain reported for the aryl class.",
+      "claim_type": "EXPLICIT",
+      "source": "While the aryl and acyl moieties of GDC-0310 and GNE-3565 bind in the same region, the remainder of the acyl receptor site is orthogonal to the corresponding binding domain reported for the aryl class (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of the two cryo-EM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "eb1420be-de11-4837-ab14-dfdf6d2b6aad",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C25",
+      "claim": "The anionic acylsulfonamide of GDC-0310 participates in salt-bridge bonding interactions with R4 and R3 through the carbonyl and sulfonamide oxygen atoms, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In detail, the anionic acylsulfonamide of GDC-0310 participates in salt-bridge bonding interactions with R4 and R3 through the carbonyl and sulfonamide oxygen atoms, respectively (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "fdcbae95-d4c8-4f00-8af7-50126ed7939f",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C26",
+      "claim": "The aryl ring of GDC-0310 splits the S3 and S4 helices to occupy a lipophilic pocket, displacing the S3 helix laterally by ~3 \u00c5 relative to the GNE-3565-VSD4 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the aryl ring of the GDC-0310 splits the S3 and S4 helices to occupy a lipophilic pocket, displacing the S3 helix laterally by ~3 \u00c5 relative to the GNE-3565-VSD4 structure (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of the two cryo-EM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "5a4fb015-4a44-4806-8a85-1d4fb245d69a",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C27",
+      "claim": "The cyclopropyl substituent of GDC-0310 makes effective van der Waals interactions with I1574 and I1588 from S3 and I1601 and I1604 on S4.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that the cyclopropyl substituent of GDC-0310 makes effective van der Waals interactions with I1574 and I1588 from S3 and I1601 and I1604 on S4 (Figure 3G), while the alpha-methylbenzylamine 'tail' region sits almost entirely within the lipid bilayer (Figure 3A and C), where density for this portion of the inhibitor is only poorly resolved (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "a39c3b8f-133e-45cc-bf8e-8eb123eb2850",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C28",
+      "claim": "The alpha-methylbenzylamine 'tail' region of GDC-0310 sits almost entirely within the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that the cyclopropyl substituent of GDC-0310 makes effective van der Waals interactions with I1574 and I1588 from S3 and I1601 and I1604 on S4 (Figure 3G), while the alpha-methylbenzylamine 'tail' region sits almost entirely within the lipid bilayer (Figure 3A and C), where density for this portion of the inhibitor is only poorly resolved (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure and poor density for this region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "640e026d-7ca4-4c53-8a94-db355f50de00",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C29",
+      "claim": "The relative depth of the GDC-0310 binding site in relation to the membrane-water interface is approximately 8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the relative depth of the\u00ad GDC-0310 binding site in relation to the membrane-water interface (~8 \u00c5), our structure suggests a membrane access pathway for acylsulfonamides to the VSD4 receptor site, which has important implications for understanding the pharmacology, SAR, and potential development liabilities of the inhibitor series (Payandeh and Volgraf, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "7ef9e522-0d80-4e0a-b089-48ec9cf4f976",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C30",
+      "claim": "The structure suggests a membrane access pathway for acylsulfonamides to the VSD4 receptor site.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the relative depth of the\u00ad GDC-0310 binding site in relation to the membrane-water interface (~8 \u00c5), our structure suggests a membrane access pathway for acylsulfonamides to the VSD4 receptor site, which has important implications for understanding the pharmacology, SAR, and potential development liabilities of the inhibitor series (Payandeh and Volgraf, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8930e57b-172a-4304-ad8e-65ab29619946",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C31",
+      "claim": "The Tyr1537 side chain on S2 exists in a down rotamer conformation and does not contact GDC-0310 directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this structure also reveals that the Tyr1537 side chain on S2 exists in a down rotamer conformation and does not contact GDC-0310 directly, which provides the first direct structural rationale for why the selectivity profiles between the acyl and arylsulfonamide classes differ substantially (Figure 3D, vide infra; Bankar et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "917a3d5e-c59d-4c2c-bb0e-64b939c26f91",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C32",
+      "claim": "The Tyr1537 conformation provides the first direct structural rationale for why the selectivity profiles between the acyl and arylsulfonamide classes differ substantially.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this structure also reveals that the Tyr1537 side chain on S2 exists in a down rotamer conformation and does not contact GDC-0310 directly, which provides the first direct structural rationale for why the selectivity profiles between the acyl and arylsulfonamide classes differ substantially (Figure 3D, vide infra; Bankar et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structural data and cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "924726b8-216a-443a-b72b-00fb425ab0ec",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C33",
+      "claim": "GNE-9296 (compound 2) retained substantial potency, affording channel blockade at an IC50 of 47 nM (n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "Seeking to leverage existing knowledge of the arylsulfonamide binding pocket, GNE-9296 (compound 2) was synthesized in an attempt to directly graft on a significant portion of the GNE-3565 scaffold. Gratifyingly, this molecule retained substantial potency, affording channel blockade at an IC50 of 47 nM (n = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "daa2a26b-5da5-4140-a8d6-8eed963b0a35",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C34",
+      "claim": "A cryo-EM structure of GNE-9296 bound to the VSD4 NaV1.7-NaVPas channel confirmed that the molecule adopts the desired hybrid binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "A cryo-EM structure of GNE-9296 bound to the VSD4 NaV1.7-NaVPas channel confirmed that the molecule adopts the desired hybrid binding mode (Figure 4D, Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "686d64a9-4f7f-4d69-9119-a27c86a1823e",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C35",
+      "claim": "The anionic group of GNE-9296 binds in the same position as in the aryl and acyl poses, interacting closely with R4.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the anionic group of the novel hybrid compound binds in the same position as in the aryl and acyl poses, interacting closely with R4, as seen for the aryl-like binding (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "dea73f99-3285-4936-9def-39560daf15cc",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C36",
+      "claim": "Inhibitor 3 demonstrated an IC50 of 16 nM (n = 12).",
+      "claim_type": "EXPLICIT",
+      "source": "This SAR proved translatable to the hybrid class molecules, resulting in inhibitor 3 (IC50 = 16nM, n = 12; Figure 4C, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "711ab960-9e51-4793-a28b-ac3bb3db56b4",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C37",
+      "claim": "GNE-1305 (compound 4) demonstrated potent NaV1.7 inhibition (IC50 = 9 nM, n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "On this basis, we designed N-benzothiazolyl sulfonamide GNE-1305 (compound 4), which demonstrated potent NaV1.7 inhibition (IC50 = 9nM, n = 8, Figure 4C, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8bf0e3dd-fcfb-4ffe-abb7-1be800da66f8",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C38",
+      "claim": "Molecule 5 shows reduced potency (IC50 = 74 nM, n = 8) compared to GNE-1305.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this molecule shows reduced potency (IC50 = 74 nM, n = 8), lack of substantial small molecule contact with the lipid bilayer is an uncommon feature in all other known NaV1.7 VSD4 domain inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "dd629541-43a4-4634-a06f-e61092e0a092",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C39",
+      "claim": "Molecule 5 lacks substantial small molecule contact with the lipid bilayer, which is an uncommon feature in all other known NaV1.7 VSD4 domain inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this molecule shows reduced potency (IC50 = 74 nM, n = 8), lack of substantial small molecule contact with the lipid bilayer is an uncommon feature in all other known NaV1.7 VSD4 domain inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structure and comparison to other inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "22690b90-0b2a-4368-bf97-0164beba0959",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C40",
+      "claim": "High-quality cryo-EM maps of VSD4 in complex with ICA121431 have recently been reported from full-length human NaV1.3 channel protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, high-quality cryo-EM maps of VSD4 in complex with ICA121431 have recently been reported from full-length human NaV1.3 channel protein (Li et al., 2022), indicating that SBDD efforts targeting a particular NaV channel subtype would likely benefit from exploring both engineered and native channel sample options at early project stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Li et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "26703eaa-bdd9-4a84-aacd-6629eaabe6e0",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C41",
+      "claim": "Arylsulfonamides have shown high levels of selectivity against NaV1.5, NaV1.1, and NaV1.4, but lower selectivity against NaV1.2 and NaV1.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, arylsulfonamides have shown high levels of selectivity against NaV1.5, NaV1.1, and NaV1.4, but lower selectivity against NaV1.2 and NaV1.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about arylsulfonamide selectivity patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "9118c38b-91d7-4d8d-9386-b30e52497496",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C42",
+      "claim": "Several acylsulfonamides have been characterized with very high selectivity over NaV1.2 and NaV1.6.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, several acylsulfonamides have been characterized with very high selectivity over NaV1.2 and NaV1.6 (Bankar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bankar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "c077b0f7-095d-44f5-b06f-4b93f2108a1a",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C43",
+      "claim": "Residues forming the contours of the acylsulfonamide binding pocket show high sequence homology across NaV isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, residues forming the contours of the acylsulfonamide binding pocket show high sequence homology across NaV isoforms, suggesting that selectivity for this class is likely an allosteric phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from sequence analysis that leads to a speculative conclusion.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "d25600c4-9df6-4fc2-875b-fe2003a30c91",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C44",
+      "claim": "Selectivity for the acylsulfonamide class is likely an allosteric phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, residues forming the contours of the acylsulfonamide binding pocket show high sequence homology across NaV isoforms, suggesting that selectivity for this class is likely an allosteric phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on sequence homology data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8a5ebe36-7e1c-490f-99fc-ce123f7f10cd",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C45",
+      "claim": "The structure of GDC-0310 provides a structural rationale for the relative slow dissociation kinetics of acylsulfonamide inhibitors compared to arylsulfonamides.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure of GDC-0310 provides a structural rationale for the relative slow dissociation kinetics of acylsulfonamide inhibitors compared to arylsulfonamides (Bankar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and cited kinetics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "bfa4ec35-748a-4da9-a297-b7a98de70d44",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C46",
+      "claim": "The acylsulfonamide pocket is buried more deeply into the plasma membrane than the arylsulfonamide pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the acylsulfonamide pocket is buried more deeply into the plasma membrane than the arylsulfonamide pocket, and may only be available through a membrane-access pathway that first involves partitioning of the molecule into the hydrophobic core of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the cryo-EM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8c0b8132-8a68-4506-b1e0-977b1ca6ed17",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C47",
+      "claim": "The acylsulfonamide pocket may only be available through a membrane-access pathway that first involves partitioning of the molecule into the hydrophobic core of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the acylsulfonamide pocket is buried more deeply into the plasma membrane than the arylsulfonamide pocket, and may only be available through a membrane-access pathway that first involves partitioning of the molecule into the hydrophobic core of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the structural data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "15f01765-ed51-45fb-a982-2d9234ad1995",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C48",
+      "claim": "The arylsulfonamide pocket is more open to the outer membrane leaflet\u2013aqueous interface, potentially offering access or egress directly from (or to) the solvent compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the arylsulfonamide pocket is more open to the outer membrane leaflet\u2013aqueous interface, potentially offering access or egress directly from (or to) the solvent compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the cryo-EM structures with speculative implications.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "84cd065f-1a0c-42c5-9df5-a26bbacaa816",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C49",
+      "claim": "Slow dissociation kinetics may be associated with membrane-access pathways for small molecules binding to transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is increasingly recognized that slow dissociation kinetics may be associated with membrane-access pathways for small molecules binding to transmembrane proteins (Payandeh and Volgraf, 2021; Mason et al., 1991; Coleman et al., 1996; Anderson et al., 1994; Masureel et al., 2018; Austin et al., 2003; Rhodes et al., 1992; Sykes et al., 2014; Dickson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "99eebe4b-043d-4f65-8fef-557dfe88386a",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C50",
+      "claim": "Hybrid molecules 2\u20135 are selective for NaV1.7 over the cardiac channel NaV1.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Although selectivity was not a key endpoint of our proof-of-concept studies described here, hybrid molecules 2\u20135 are selective for NaV1.7 over the cardiac channel NaV1.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "df030329-3883-4029-826d-3ad28a6ecb8b",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C51",
+      "claim": "The VSD4-NaV1.7-NaVPas chimeric construct had been previously shown to complex with small molecule inhibitors and peptide toxins known to target VSD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we sought to exploit an engineered human VSD4-NaV1.7-NaVPas cockroach channel chimeric construct that had been previously shown to complex with small molecule inhibitors and peptide toxins known to target VSD4 (Clairfeuille, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Clairfeuille, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "69b07dbf-112f-422d-9785-69021f3f3d51",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C52",
+      "claim": "The recovered protein yields following expression and purification were 50 \u00b5g/L.",
+      "claim_type": "EXPLICIT",
+      "source": "The recovered protein yields following expression and purification (50 \u00b5g/L) allowed us to readily pursue reconstitution of the VSD4-NaV1.7-NaVPas channel into lipid nanodiscs (Figure 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured protein yield from the expression and purification protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "d95234c4-0ac1-465c-9be8-5296ebf24b88",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C53",
+      "claim": "The cryo-EM data collection and processing procedures allowed routine obtainment of 3D-reconstructions in the 2.2\u20133.0\u00c5 resolution range around the VSD4 inhibitor binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Small molecule inhibitors were added prior to sample vitrification, followed by cryo-EM data collection and processing procedures, which allowed us to routinely obtain 3D-reconstructions in the 2.2\u20133.0\u00c5 resolution range around the VSD4 inhibitor binding site (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the resolution achieved across multiple structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "4ea76a45-5620-4f40-9e3e-e0898313a5d1",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C54",
+      "claim": "The visualization of many well-resolved water molecules bound within the VSDs and coordinated within the ion selectivity filter provides new insights into the interactions that might occur during gating charge transfer and ion conduction, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The visualization of many well-resolved water molecules bound within the VSDs and coordinated within the ion selectivity filter provides new insights into the interactions that might occur during gating charge transfer and ion conduction, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observation of water molecules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "9acf8e8f-a8e3-4a0a-b347-c5c4d3d04bc6",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C55",
+      "claim": "GNE-3565 is representative of an advanced series of arylsulfonamide class NaV1.7 inhibitors that demonstrates channel blockage at subnanomolar concentrations with mixed subtype selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Arylsulfonamide GNE-3565 is representative of an advanced series of arylsulfonamide class NaV1.7 inhibitors that demonstrates channel blockage at subnanomolar concentrations with mixed subtype selectivity (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a characterization of GNE-3565 based on prior data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "b5ef7ffb-f4f8-4be4-9447-d59ddcf29dd3",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C56",
+      "claim": "The GNE-3565, arylsulfonamide VSD4 receptor binding site can be divided into three regions: an anion-binding pocket, a selectivity pocket, and a lipid-exposed pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "As for GX-936, the GNE-3565, arylsulfonamide VSD4 receptor binding site can be divided into three regions: an anion-binding pocket, a selectivity pocket, and a lipid-exposed pocket (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a classification based on the cryo-EM structure shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "e66de930-62e9-4949-96ed-a8c162bdab4d",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C57",
+      "claim": "The cryo-EM structures serve to highlight a dynamic environment in VSD4 where the S1-S4 helixes can be differentially separated by the binding of distinct small molecule inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryo-EM structures serve to highlight a dynamic environment in VSD4 where the S1-S4 helixes can be differentially separated by the binding of distinct small molecule inhibitors (Figure 2D and Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on comparison of multiple cryo-EM structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "6874d805-f18a-460a-99eb-dfe98c38aad4",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C58",
+      "claim": "Progenitor compound 1 offers reasonable potency against NaV1.7 (IC50 = 25 nM, n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, re-evaluation of potency and physicochemical property data available for previously synthesized NaV1.7 inhibitors identified progenitor compound 1, which offers reasonable potency against NaV1.7 (IC50 = 25 nM, n = 8; Figure 4C, Figure 4\u2014figure supplement 1) and reduced molecular weight (350 g/mol) and lipophilicity (cLogP = 2.7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "ce35ee0c-354a-4965-91fa-140daaaa4f34",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C59",
+      "claim": "Compound 1 has reduced molecular weight (350 g/mol) and lipophilicity (cLogP = 2.7) compared to GDC-0310.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, re-evaluation of potency and physicochemical property data available for previously synthesized NaV1.7 inhibitors identified progenitor compound 1, which offers reasonable potency against NaV1.7 (IC50 = 25 nM, n = 8; Figure 4C, Figure 4\u2014figure supplement 1) and reduced molecular weight (350 g/mol) and lipophilicity (cLogP = 2.7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These are calculated or measured physicochemical properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "bec6c944-8c6a-41b6-ae5d-4e79785ddfaf",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C60",
+      "claim": "GDC-0310 has a molecular weight of 543 g/mol and lipophilicity (cLogP = 5.2).",
+      "claim_type": "EXPLICIT",
+      "source": "GDC-0310 was a relatively unattractive starting point for hybridization because of its high molecular weight (543 g/mol) and lipophilicity (cLogP = 5.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are calculated or measured physicochemical properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "e327d541-5c3e-4cb2-8ea8-6732a96aeff0",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C61",
+      "claim": "In the hybrid configuration of GNE-9296, Y1537 adopts a similar arrangement as observed for the arylsulfonamides.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in this hybrid configuration, Y1537 adopts a similar arrangement as observed for the arylsulfonamides (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "bc568dc9-5a83-4204-968f-c4455b96e067",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C62",
+      "claim": "The aryl ring in the S2/S3 binding pocket of GNE-9296 was shifted ~1 \u00c5 away from the VSD4 core compared to arylsulfonamides such as GNE-3565.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of the cryo-EM structure of GNE-9296 revealed that the aryl ring in the S2/S3 binding pocket was shifted ~1 \u00c5 away from the VSD4 core compared to arylsulfonamides such as GNE-3565 (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from comparison of cryo-EM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "408f3741-4fad-456d-a534-30c99952210f",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C63",
+      "claim": "The acylsulfonamide moiety of GNE-9296 places the two aryl substituents 4.7 \u00c5 apart.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the acylsulfonamide moiety of GNE-9296, which places the two aryl substituents 4.7 \u00c5 apart, might not be fully optimized for use in hybrid inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "c353acba-d8b8-4622-a50f-1c9efd742ccf",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C64",
+      "claim": "An arylsulfonamide moiety would position the two aryl substituents at a distance of ~3.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, an arylsulfonamide moiety would position these two groups at a distance of ~3.3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement or calculation based on molecular geometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "c681f5b5-0b6f-477b-8526-126316fea4f7",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C65",
+      "claim": "In the GNE-1305 structure, the typical face-on pi-stacking orientation of the S2/S3 substituent with Y1537 is observed while maintaining efficient space filling in the S3/S4 pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed the typical face-on pi-stacking orientation of the S2/S3 substituent with Y1537 while maintaining efficient space filling in the S3/S4 pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryo-EM structure of GNE-1305.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "0b7c6cff-24a8-482e-b2eb-c42e031df5d4",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C66",
+      "claim": "The use of an engineered VSD4-NaV1.7-NaVPas chimeric channel construct was essential to produce sufficient yields of recombinant protein capable of routinely returning multiple cryo-EM samples per preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "We further note that our use of an engineered VSD4-NaV1.7-NaVPas chimeric channel construct was essential to produce sufficient yields of recombinant protein capable of routinely returning multiple cryo-EM samples per preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the authors' experience with the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "ac92558b-ea56-4088-b88e-f85942b757f6",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C67",
+      "claim": "The VSD4-NaV1.7-NaVPas system repeatedly delivered high-resolution depictions of the VSD4 inhibitor binding site and thus contrasts with prior accounts of VSD4 in cryo-EM structures of full-length human NaV1.7 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This system repeatedly delivered high-resolution depictions of the VSD4 inhibitor binding site and thus contrasts with prior accounts of VSD4 in cryo-EM structures of full-length human NaV1.7 channels (Shen et al., 2019; Huang et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "fa1ae62f-3a55-44dc-b229-00df16fbdda8",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C68",
+      "claim": "The co-structure of GDC-0310 was critical to contextualize historical differences between aryl- and acylsulfonamide NaV1.7 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-structure of GDC-0310 was critical to contextualize historical differences between aryl- and acylsulfonamide NaV1.7 inhibitors, which include divergent SAR in the linker phenyl ring and tail regions, disparate NaV family selectivity patterns, and differences in on-rates and off-rates (Safina et al., 2021; Sun et al., 2019; Bankar et al., 2018; Luo et al., 2019; DiMauro et al., 2016; Focken et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural data and cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "2612c9e2-d22f-4991-9df1-c900b928fa83",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C69",
+      "claim": "Previous efforts to model acylsulfonamide binding have attempted to dock molecules into the GX-936 co-structure and have proposed subtle changes in molecular register and/or pose to explain the non-translatable SAR.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous efforts to model acylsulfonamide binding have attempted to dock molecules into the GX-936 co-structure and have proposed subtle changes in molecular register and/or pose to explain the non-translatable SAR (Sun et al., 2019; Kotla et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8eddf42a-e093-4d9b-b143-4db6ebdeba35",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C70",
+      "claim": "The molecular features of aryl- and acylsulfonamide inhibitors diverge because they occupy distinct, but overlapping, pockets within the VSD4 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that the molecular features of aryl- and acylsulfonamide inhibitors diverge because they occupy distinct, but overlapping, pockets within the VSD4 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparison of the cryo-EM structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8c39cecb-fa6c-4314-8cc8-f7686a2e36ca",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C71",
+      "claim": "Mutation of key non-conserved residues proximal to the binding pocket observed in the GX-936 co-structure has been shown to alter NaV1.7 potency consistent with selectivity patterns observed for other NaV family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of key non-conserved residues proximal to the binding pocket observed in the GX-936 co-structure has been shown to alter NaV1.7 potency consistent with selectivity patterns observed for other NaV family members (Ahuja et al., 2015; Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Ahuja et al., 2015 and sequence alignment data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "0d8659f3-034e-4ed7-bd79-96b7d23d5556",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C72",
+      "claim": "The disparate binding pockets for aryl and acyl inhibitor classes provide a clear rationale for their historically divergent patterns of selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the disparate binding pockets for these two inhibitor classes provide a clear rationale for their historically divergent patterns of selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "9d3df50e-92e2-4773-8deb-f94aba3938f5",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C73",
+      "claim": "Potent hybrid inhibitors can be designed with fewer membrane-associated elements than prior generation NaV1.7 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated that potent hybrid inhibitors can be designed with fewer membrane-associated elements than prior generation NaV1.7 inhibitors, and anticipate that this will offer opportunities to develop molecules with improved lipophilic ligand efficiency and/or differentiated pharmacokinetic profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the design and characterization of hybrid molecules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "142217ff-03c7-42e2-8ea2-721ef42e3ee9",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C74",
+      "claim": "Hybrid inhibitors can access selectivity determinants from both the S2/S3 and S3/S4 pockets simultaneously, offering a tantalizing opportunity to develop exquisite selectivity over other NaV isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Hybrid inhibitors can also access selectivity determinants from both the S2/S3 and S3/S4 pockets simultaneously, offering a tantalizing opportunity to develop exquisite selectivity over other NaV isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "e98d5689-0dcf-4322-a9c9-60ad167fef16",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C75",
+      "claim": "Transmembrane proteins, particularly intrinsically dynamic ones including ion channels, transporters, and GPCRs, may commonly present privileged structural motifs that are rich with opportunities for the discovery of novel druggable pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that transmembrane proteins, particularly intrinsically dynamic ones including ion channels, transporters, and GPCRs, may commonly present privileged structural motifs that are rich with opportunities for the discovery of novel druggable pockets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "90497677-0dc7-426b-8b6d-aa5893c4ddb4",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C76",
+      "claim": "A robust pipeline for high-resolution structural determination of small-molecules bound to NaV1.7-VSD4 suitable for use in iterative structure-based drug design campaigns has been developed.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have developed a robust pipeline for high-resolution structural determination of small-molecules bound to NaV1.7-VSD4 suitable for use in iterative structure-based drug design campaigns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the methodological achievement described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "38c85d64-79c2-4cc6-8044-141caaba0dc5",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C77",
+      "claim": "The first co-structure of an acylsulfonamide inhibitor bound to the VSD4 domain of NaV1.7 reveals an unexpected and unique binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "We also report the first co-structure of an acylsulfonamide inhibitor bound to the VSD4 domain of NaV1.7, revealing an unexpected and unique binding mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the cryo-EM structure of GDC-0310.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "c05b7549-04cb-4b6e-b486-352205866db6",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C78",
+      "claim": "The GDC-0310 structure provides clear rationale for previously unexplainable divergence in the in vitro pharmacological behavior between inhibitor classes.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding provides clear rationale for previously unexplainable divergence in the in vitro pharmacological behavior between inhibitor classes, and inspired the development of hybrid inhibitors that engages VSD4 in a novel conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and comparison to prior pharmacological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "84fea2b1-424c-4171-812f-42b77f9bda88",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C79",
+      "claim": "The findings highlight the power of cryo-EM as an enabling drug discovery technology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings highlight the power of cryo-EM as an enabling drug discovery technology and offer insights into ion channel structural dynamics that are potentially applicable to related targets and other target classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion based on the work presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8ad99084-8c2c-4ac8-9d13-d462352a2e59",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C80",
+      "claim": "NaV1.7 is expressed predominantly in the peripheral nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "The NaV1.7 channel is expressed predominantly in the peripheral nervous system, and genetic studies have identified compelling loss-of-function and gain-of-function phenotypes in human pain syndromes, prompting significant efforts to develop NaV1.7-selective inhibitors as potential novel analgesic drugs (Dib-Hajj et al., 2013; Payandeh and Hackos, 2018; McKerrall and Sutherlin, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "93894c75-c9ee-47f9-ad99-a1536726cd95",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C81",
+      "claim": "Genetic studies have identified compelling loss-of-function and gain-of-function phenotypes in human pain syndromes related to NaV1.7.",
+      "claim_type": "EXPLICIT",
+      "source": "The NaV1.7 channel is expressed predominantly in the peripheral nervous system, and genetic studies have identified compelling loss-of-function and gain-of-function phenotypes in human pain syndromes, prompting significant efforts to develop NaV1.7-selective inhibitors as potential novel analgesic drugs (Dib-Hajj et al., 2013; Payandeh and Hackos, 2018; McKerrall and Sutherlin, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "090c2cc1-dcfc-45e2-99a9-9f8fc6fa713c",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "claim_id": "C82",
+      "claim": "NaV channels initiate and propagate action potentials in excitable cells and play important roles in health and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-gated sodium (NaV) channels initiate and propagate action potentials in excitable cells and play important roles in health and disease (Catterall et al., 2005; Ahern et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8668a737-83ff-42a3-8aee-fc51215febe5",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a robust cryo-EM pipeline using an engineered VSD4-NaV1.7-NaVPas chimeric channel construct that routinely achieves 2.2-3.0 \u00c5 resolution structures of small molecule inhibitor complexes, enabling iterative structure-based drug design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53, C66-C67, and C76 collectively demonstrate successful development of a high-resolution structural pipeline. The chimeric construct yields sufficient protein (50 \u00b5g/L, C52), routinely achieves high resolution (2.2-3.0 \u00c5, C53), and outperforms full-length NaV1.7 approaches (C67). The methodology is well-documented with appropriate controls and multiple successful structure determinations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "2e6de17d-3e98-4f91-a69f-c5c577885df4",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The VSD4-NaV1.7-NaVPas chimera structure shows expected domain-swapped arrangement with phospholipids, a closed pore consistent with inactivated state, and 111 resolved water molecules providing insights into gating and ion conduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 and C54 are supported by high-resolution cryo-EM data (Figures 1, 1E, Video 1). The structural features are consistent with prior NaVPas structures (C16 cites appropriate comparisons). The water molecule visualization is a direct observation, though the mechanistic insights (C54) are inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "c1b505ce-3611-4bde-aa5f-5553299cc773",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The arylsulfonamide GNE-3565 binds VSD4 in a clamshell-like structure at 2.9 \u00c5 resolution, with the sulfonamide salt-bridging R4 and the phenyl ring contacting selectivity determinants Y1537 and W1538, closely matching the GX-936 binding mode (RMSD 0.667 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 and C55-C56 are well-supported by cryo-EM structural data (Figure 2) at 2.9 \u00c5 resolution. The RMSD calculation (C21) provides quantitative validation of similarity to prior crystal structure. The measured pKa (5.8, C19) supports ionization state assignment. Structural details are clearly resolved in the density maps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The acylsulfonamide GDC-0310 reveals an unexpected binding mode orthogonal to arylsulfonamides, occupying a previously unknown pocket between S3 and S4 helices at 2.5 \u00c5 resolution, with the acylsulfonamide engaging both R4 and R3 and displacing S3 by ~3 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C22-C29, and C77 represent a major discovery supported by high-resolution cryo-EM structure (2.5 \u00c5, Figure 3). The orthogonal binding mode is clearly demonstrated through structural comparison with GNE-3565. Quantitative measurements (3 \u00c5 displacement, ~8 \u00c5 depth) are directly observable. The tail region's poor density (C28) is appropriately noted as a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "23ad59e1-1c10-44cf-beff-eceab4a2555d",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The GDC-0310 structure suggests a membrane access pathway for acylsulfonamides, with the binding pocket buried ~8 \u00c5 into the membrane, and Y1537 in a down conformation not contacting the inhibitor, providing structural rationale for differential selectivity between inhibitor classes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C46-C48 combine structural observations (Y1537 conformation, binding depth) with mechanistic inferences about access pathways and selectivity. The structural data (C31, C46) are well-supported, while the membrane access pathway (C30, C47) and selectivity rationale (C32) are reasonable inferences supported by cited literature, though not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "c0220c08-6cb7-4475-9b21-0d819b7ce636",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The structure provides rationale for slow dissociation kinetics of acylsulfonamides compared to arylsulfonamides, consistent with membrane-access pathways for transmembrane protein ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C49 connect structural observations to kinetic data from cited literature (Bankar et al., 2018). The inference is reasonable given the deeper membrane burial of the acylsulfonamide pocket, though the kinetic mechanism is not directly tested here. The generalization (C49) is well-supported by multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "bbbc7a59-5599-4f32-9323-d3fcde717edf",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The cryo-EM structures demonstrate that aryl- and acylsulfonamide inhibitors occupy distinct but overlapping pockets within VSD4, with the S1-S4 helices differentially separated by distinct inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C70 are supported by direct comparison of multiple high-resolution structures (Figures 2D, 3D). The structural dynamics of VSD4 are clearly demonstrated through quantitative measurements of helix displacement. This represents a key mechanistic insight into inhibitor binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "d03591a9-c09e-4391-acce-324ab44d89f8",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Structure-guided design enabled development of hybrid inhibitor GNE-9296 (compound 2) bridging aryl- and acylsulfonamide pockets, with IC50 = 47 nM and improved physicochemical properties compared to GDC-0310.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C33-C35, and C58-C60 demonstrate successful proof-of-concept for hybrid design. The cryo-EM structure (C34, Figure 4D) confirms the intended binding mode. Potency data (IC50 = 47 nM, n=8, C33) and physicochemical properties (C59-C60) are appropriately measured. The design rationale is clearly articulated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "e33d2915-8b98-4927-8222-4c4f3cf34281",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optimization of the hybrid series yielded compound 3 (IC50 = 16 nM) by applying acylsulfonamide SAR, with structural analysis revealing suboptimal spacing (4.7 \u00c5 vs. 3.3 \u00c5) in the acylsulfonamide linker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36 and C61-C64 show iterative optimization with structural validation. The potency improvement (C36, n=12) is well-documented. Structural measurements (C62-C64) provide quantitative rationale for further optimization. The Y1537 conformation observation (C61) is supported by cryo-EM data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "92e8e3bb-f679-467a-ac55-328d24996551",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Design of N-benzothiazolyl sulfonamide GNE-1305 (compound 4) achieved potent inhibition (IC50 = 9 nM) with optimal pi-stacking with Y1537 and efficient S3/S4 pocket filling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C65 demonstrate successful structure-guided optimization. The potency (IC50 = 9 nM, n=8) is well-measured. The cryo-EM structure (Figure 4G, Figure 4\u2014figure supplement 2B) clearly shows the intended binding interactions. This represents the most potent hybrid inhibitor in the series.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "8be97f2b-d809-43ba-81a1-78aeb83eb495",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Molecule 5 demonstrates that potent hybrid inhibitors (IC50 = 74 nM) can be designed with minimal lipid bilayer contact, an uncommon feature offering opportunities for improved properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C73 show proof-of-concept for reducing membrane-associated elements. While potency is reduced compared to compound 4 (C38), the demonstration that nanomolar potency is achievable without substantial lipid contact (C39) is significant. The inference about improved properties (C73) is reasonable but not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "31e2dfbc-3e9a-43d3-a1e1-ddae3efbce4b",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Hybrid molecules 2-5 demonstrate selectivity for NaV1.7 over cardiac channel NaV1.5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by electrophysiology data presented in Figure 4\u2014figure supplement 1D. While selectivity was not a primary endpoint, the data demonstrate cardiac safety margin. Sample sizes and statistical rigor are appropriate for this proof-of-concept study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "65b610a3-cb39-4036-a233-0ea3ad1affc3",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The GDC-0310 structure contextualizes historical differences between aryl- and acylsulfonamide inhibitors (divergent SAR, selectivity patterns, kinetics) that previous docking studies could not explain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C72, and C78 synthesize structural findings with extensive cited literature. The structural basis for divergent pharmacology is clearly demonstrated. Prior modeling attempts (C69) are appropriately cited. The inference that disparate pockets explain selectivity differences (C72) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "13c8ae71-88e6-4387-a59c-002b7825b5a4",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Arylsulfonamides show high selectivity against NaV1.5/1.1/1.4 but lower against NaV1.2/1.6, while acylsulfonamides show very high selectivity over NaV1.2/1.6; sequence homology in the acylsulfonamide pocket suggests allosteric selectivity mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 and C71 integrate literature data with structural observations. The selectivity patterns (C41-C42) are well-established in cited literature. The sequence homology observation (C43) is supported by alignment data (Figure 4\u2014figure supplement 3). The allosteric mechanism inference (C44) is speculative but reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "c27eb1ea-eab6-48ef-8000-09b6b5fe14fd",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The VSD4-NaV1.7-NaVPas chimeric system delivers superior resolution compared to full-length human NaV1.7 structures, though recent NaV1.3 structures suggest both approaches have merit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C67 appropriately contextualize the methodological choice. The comparison to prior NaV1.7 structures (C67) is supported by citations. The acknowledgment of recent NaV1.3 success (C40) demonstrates balanced assessment. The recommendation to explore both approaches is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "67e3f2be-fcec-4ff2-8983-68705407884f",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Hybrid inhibitors offer opportunities for exquisite selectivity by accessing both S2/S3 and S3/S4 pockets; transmembrane proteins may commonly present privileged structural motifs rich with druggable pockets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C75 are highly speculative. While the structural basis for dual pocket engagement is demonstrated, the claim of 'exquisite selectivity' (C74) is not tested. The generalization to other transmembrane proteins (C75) is explicitly speculative and lacks supporting data. These represent future directions rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "866f4f2d-a866-4169-a364-9b47ed78d008",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background context establishes NaV1.7 as a pain target, describes NaV channel structure, reviews prior selective inhibitor development including clinical failures, and summarizes the GX-936 crystal structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C14, and C80-C82 provide established background knowledge appropriately supported by citations. These claims contextualize the current work but do not represent new findings. The citations to clinical trial data (C10-C11) and prior structural work (C12-C14) are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    },
+    {
+      "id": "3ec1e93e-60b0-42ad-856b-daf50d435ca9",
+      "content_id": "f0ad39ee-1c2c-41f3-9b24-125184265c38",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The findings highlight the power of cryo-EM as an enabling drug discovery technology with insights applicable to related targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is a general conclusion supported by the totality of the work. The demonstration of iterative, high-resolution structure determination enabling rational drug design represents a significant methodological advance. The generalization to other targets is reasonable given the proof-of-concept demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:23.750995Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "df030329-3883-4029-826d-3ad28a6ecb8b",
+      "result_id": "8668a737-83ff-42a3-8aee-fc51215febe5"
+    },
+    {
+      "claim_id": "69b07dbf-112f-422d-9785-69021f3f3d51",
+      "result_id": "8668a737-83ff-42a3-8aee-fc51215febe5"
+    },
+    {
+      "claim_id": "d95234c4-0ac1-465c-9be8-5296ebf24b88",
+      "result_id": "8668a737-83ff-42a3-8aee-fc51215febe5"
+    },
+    {
+      "claim_id": "0b7c6cff-24a8-482e-b2eb-c42e031df5d4",
+      "result_id": "8668a737-83ff-42a3-8aee-fc51215febe5"
+    },
+    {
+      "claim_id": "ac92558b-ea56-4088-b88e-f85942b757f6",
+      "result_id": "8668a737-83ff-42a3-8aee-fc51215febe5"
+    },
+    {
+      "claim_id": "90497677-0dc7-426b-8b6d-aa5893c4ddb4",
+      "result_id": "8668a737-83ff-42a3-8aee-fc51215febe5"
+    },
+    {
+      "claim_id": "9c3632ec-5194-41d7-bcfb-a081aeb46f1c",
+      "result_id": "2e6de17d-3e98-4f91-a69f-c5c577885df4"
+    },
+    {
+      "claim_id": "14552525-1c2e-43e3-a49c-44f82d25e032",
+      "result_id": "2e6de17d-3e98-4f91-a69f-c5c577885df4"
+    },
+    {
+      "claim_id": "f43a6d71-f913-4563-8bce-f2b629b8d5db",
+      "result_id": "2e6de17d-3e98-4f91-a69f-c5c577885df4"
+    },
+    {
+      "claim_id": "4ea76a45-5620-4f40-9e3e-e0898313a5d1",
+      "result_id": "2e6de17d-3e98-4f91-a69f-c5c577885df4"
+    },
+    {
+      "claim_id": "2a67b322-e235-4b97-899f-b82725504d2b",
+      "result_id": "c1b505ce-3611-4bde-aa5f-5553299cc773"
+    },
+    {
+      "claim_id": "d2c68f2a-9b92-4bb1-bef3-2cf4a320fd72",
+      "result_id": "c1b505ce-3611-4bde-aa5f-5553299cc773"
+    },
+    {
+      "claim_id": "1224cd63-36c1-4cb6-a343-edeec80809dc",
+      "result_id": "c1b505ce-3611-4bde-aa5f-5553299cc773"
+    },
+    {
+      "claim_id": "6f70a9ad-5ce7-4bf0-b235-d9dc03d11e6f",
+      "result_id": "c1b505ce-3611-4bde-aa5f-5553299cc773"
+    },
+    {
+      "claim_id": "9acf8e8f-a8e3-4a0a-b347-c5c4d3d04bc6",
+      "result_id": "c1b505ce-3611-4bde-aa5f-5553299cc773"
+    },
+    {
+      "claim_id": "b5ef7ffb-f4f8-4be4-9447-d59ddcf29dd3",
+      "result_id": "c1b505ce-3611-4bde-aa5f-5553299cc773"
+    },
+    {
+      "claim_id": "ac71c605-8a21-45ae-b88f-4349d653555d",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "e94f929b-e97b-448a-b7c1-7ed3fea44944",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "fa7e28dd-5d4d-4314-ab69-50b61057c748",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "53504fde-b0f9-469c-a833-03320032df3c",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "d602b833-c1d5-42a8-93c4-50e75102dc73",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "eb1420be-de11-4837-ab14-dfdf6d2b6aad",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "fdcbae95-d4c8-4f00-8af7-50126ed7939f",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "5a4fb015-4a44-4806-8a85-1d4fb245d69a",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "a39c3b8f-133e-45cc-bf8e-8eb123eb2850",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "640e026d-7ca4-4c53-8a94-db355f50de00",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "38c85d64-79c2-4cc6-8044-141caaba0dc5",
+      "result_id": "b8a0aa99-1ef9-4f2f-a583-e278adc49f6d"
+    },
+    {
+      "claim_id": "7ef9e522-0d80-4e0a-b089-48ec9cf4f976",
+      "result_id": "23ad59e1-1c10-44cf-beff-eceab4a2555d"
+    },
+    {
+      "claim_id": "8930e57b-172a-4304-ad8e-65ab29619946",
+      "result_id": "23ad59e1-1c10-44cf-beff-eceab4a2555d"
+    },
+    {
+      "claim_id": "917a3d5e-c59d-4c2c-bb0e-64b939c26f91",
+      "result_id": "23ad59e1-1c10-44cf-beff-eceab4a2555d"
+    },
+    {
+      "claim_id": "bfa4ec35-748a-4da9-a297-b7a98de70d44",
+      "result_id": "23ad59e1-1c10-44cf-beff-eceab4a2555d"
+    },
+    {
+      "claim_id": "8c0b8132-8a68-4506-b1e0-977b1ca6ed17",
+      "result_id": "23ad59e1-1c10-44cf-beff-eceab4a2555d"
+    },
+    {
+      "claim_id": "15f01765-ed51-45fb-a982-2d9234ad1995",
+      "result_id": "23ad59e1-1c10-44cf-beff-eceab4a2555d"
+    },
+    {
+      "claim_id": "8a5ebe36-7e1c-490f-99fc-ce123f7f10cd",
+      "result_id": "c0220c08-6cb7-4475-9b21-0d819b7ce636"
+    },
+    {
+      "claim_id": "84cd065f-1a0c-42c5-9df5-a26bbacaa816",
+      "result_id": "c0220c08-6cb7-4475-9b21-0d819b7ce636"
+    },
+    {
+      "claim_id": "e66de930-62e9-4949-96ed-a8c162bdab4d",
+      "result_id": "bbbc7a59-5599-4f32-9323-d3fcde717edf"
+    },
+    {
+      "claim_id": "8eddf42a-e093-4d9b-b143-4db6ebdeba35",
+      "result_id": "bbbc7a59-5599-4f32-9323-d3fcde717edf"
+    },
+    {
+      "claim_id": "6a1ad7f8-b4da-43f6-aa2e-8a59f3d546f2",
+      "result_id": "d03591a9-c09e-4391-acce-324ab44d89f8"
+    },
+    {
+      "claim_id": "924726b8-216a-443a-b72b-00fb425ab0ec",
+      "result_id": "d03591a9-c09e-4391-acce-324ab44d89f8"
+    },
+    {
+      "claim_id": "daa2a26b-5da5-4140-a8d6-8eed963b0a35",
+      "result_id": "d03591a9-c09e-4391-acce-324ab44d89f8"
+    },
+    {
+      "claim_id": "686d64a9-4f7f-4d69-9119-a27c86a1823e",
+      "result_id": "d03591a9-c09e-4391-acce-324ab44d89f8"
+    },
+    {
+      "claim_id": "6874d805-f18a-460a-99eb-dfe98c38aad4",
+      "result_id": "d03591a9-c09e-4391-acce-324ab44d89f8"
+    },
+    {
+      "claim_id": "ce35ee0c-354a-4965-91fa-140daaaa4f34",
+      "result_id": "d03591a9-c09e-4391-acce-324ab44d89f8"
+    },
+    {
+      "claim_id": "bec6c944-8c6a-41b6-ae5d-4e79785ddfaf",
+      "result_id": "d03591a9-c09e-4391-acce-324ab44d89f8"
+    },
+    {
+      "claim_id": "dea73f99-3285-4936-9def-39560daf15cc",
+      "result_id": "e33d2915-8b98-4927-8222-4c4f3cf34281"
+    },
+    {
+      "claim_id": "e327d541-5c3e-4cb2-8ea8-6732a96aeff0",
+      "result_id": "e33d2915-8b98-4927-8222-4c4f3cf34281"
+    },
+    {
+      "claim_id": "bc568dc9-5a83-4204-968f-c4455b96e067",
+      "result_id": "e33d2915-8b98-4927-8222-4c4f3cf34281"
+    },
+    {
+      "claim_id": "408f3741-4fad-456d-a534-30c99952210f",
+      "result_id": "e33d2915-8b98-4927-8222-4c4f3cf34281"
+    },
+    {
+      "claim_id": "c353acba-d8b8-4622-a50f-1c9efd742ccf",
+      "result_id": "e33d2915-8b98-4927-8222-4c4f3cf34281"
+    },
+    {
+      "claim_id": "711ab960-9e51-4793-a28b-ac3bb3db56b4",
+      "result_id": "92e8e3bb-f679-467a-ac55-328d24996551"
+    },
+    {
+      "claim_id": "c681f5b5-0b6f-477b-8526-126316fea4f7",
+      "result_id": "92e8e3bb-f679-467a-ac55-328d24996551"
+    },
+    {
+      "claim_id": "8bf0e3dd-fcfb-4ffe-abb7-1be800da66f8",
+      "result_id": "8be97f2b-d809-43ba-81a1-78aeb83eb495"
+    },
+    {
+      "claim_id": "dd629541-43a4-4634-a06f-e61092e0a092",
+      "result_id": "8be97f2b-d809-43ba-81a1-78aeb83eb495"
+    },
+    {
+      "claim_id": "9d3df50e-92e2-4773-8deb-f94aba3938f5",
+      "result_id": "8be97f2b-d809-43ba-81a1-78aeb83eb495"
+    },
+    {
+      "claim_id": "99eebe4b-043d-4f65-8fef-557dfe88386a",
+      "result_id": "31e2dfbc-3e9a-43d3-a1e1-ddae3efbce4b"
+    },
+    {
+      "claim_id": "fa1ae62f-3a55-44dc-b229-00df16fbdda8",
+      "result_id": "65b610a3-cb39-4036-a233-0ea3ad1affc3"
+    },
+    {
+      "claim_id": "2612c9e2-d22f-4991-9df1-c900b928fa83",
+      "result_id": "65b610a3-cb39-4036-a233-0ea3ad1affc3"
+    },
+    {
+      "claim_id": "0d8659f3-034e-4ed7-bd79-96b7d23d5556",
+      "result_id": "65b610a3-cb39-4036-a233-0ea3ad1affc3"
+    },
+    {
+      "claim_id": "c05b7549-04cb-4b6e-b486-352205866db6",
+      "result_id": "65b610a3-cb39-4036-a233-0ea3ad1affc3"
+    },
+    {
+      "claim_id": "26703eaa-bdd9-4a84-aacd-6629eaabe6e0",
+      "result_id": "13c8ae71-88e6-4387-a59c-002b7825b5a4"
+    },
+    {
+      "claim_id": "9118c38b-91d7-4d8d-9386-b30e52497496",
+      "result_id": "13c8ae71-88e6-4387-a59c-002b7825b5a4"
+    },
+    {
+      "claim_id": "c077b0f7-095d-44f5-b06f-4b93f2108a1a",
+      "result_id": "13c8ae71-88e6-4387-a59c-002b7825b5a4"
+    },
+    {
+      "claim_id": "d25600c4-9df6-4fc2-875b-fe2003a30c91",
+      "result_id": "13c8ae71-88e6-4387-a59c-002b7825b5a4"
+    },
+    {
+      "claim_id": "8c39cecb-fa6c-4314-8cc8-f7686a2e36ca",
+      "result_id": "13c8ae71-88e6-4387-a59c-002b7825b5a4"
+    },
+    {
+      "claim_id": "22690b90-0b2a-4368-bf97-0164beba0959",
+      "result_id": "c27eb1ea-eab6-48ef-8000-09b6b5fe14fd"
+    },
+    {
+      "claim_id": "ac92558b-ea56-4088-b88e-f85942b757f6",
+      "result_id": "c27eb1ea-eab6-48ef-8000-09b6b5fe14fd"
+    },
+    {
+      "claim_id": "142217ff-03c7-42e2-8ea2-721ef42e3ee9",
+      "result_id": "67e3f2be-fcec-4ff2-8983-68705407884f"
+    },
+    {
+      "claim_id": "e98d5689-0dcf-4322-a9c9-60ad167fef16",
+      "result_id": "67e3f2be-fcec-4ff2-8983-68705407884f"
+    },
+    {
+      "claim_id": "7da1895d-a73a-475b-8af5-1aabb262fb82",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "9aa1aa7f-84a0-41e4-a71c-156637d46cf4",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "792eadd4-0be8-4d51-a18d-801f87d188a4",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "5edbed4d-82e7-448b-ab93-5d0304312685",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "aa41d5ca-0aa9-44f1-89f5-4d019aafa2bc",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "d4f1eda3-5ffc-4952-a5cf-e19b3730ff52",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "2134668a-e949-415e-ae1f-dbe74cacdae2",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "9d543c3e-d76b-4c52-814b-8619d8cf0d2b",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "8d1e4c79-306c-41ba-bd3f-fcd51d6612a5",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "ed921713-6bed-48aa-ae24-ed5035c7f982",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "bc0aa2e2-03ad-442e-92ac-19ee7bfc8725",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "8ad99084-8c2c-4ac8-9d13-d462352a2e59",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "93894c75-c9ee-47f9-ad99-a1536726cd95",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "090c2cc1-dcfc-45e2-99a9-9f8fc6fa713c",
+      "result_id": "866f4f2d-a866-4169-a364-9b47ed78d008"
+    },
+    {
+      "claim_id": "84fea2b1-424c-4171-812f-42b77f9bda88",
+      "result_id": "3ec1e93e-60b0-42ad-856b-daf50d435ca9"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C42",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Keratinocytes exhibit optimal collective migration at 50 nm integrin \u03b15\u03b21 inter-ligand spacing, with highest migration speed (~20 \u00b5m/hr vs ~10 \u00b5m/hr at 35 and 70 nm) and greatest coordination (velocity correlation length ~400 \u00b5m vs ~200 \u00b5m). This optimal spacing is consistent across multiple keratinocyte types (HaCaT, hKC, nHEK) and represents a universal characteristic of keratinocyte collective migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17, C25-29, C42, C67, C70-73 collectively demonstrate the optimal 50 nm spacing effect through multiple independent measurements (migration speed, velocity correlation length) across different cell types. The data in Figures 1C-G consistently show the biphasic relationship with peak performance at 50 nm. Statistical significance is reported (p<0.05-0.001) and the effect is reproducible across cell lines, providing strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C74"
+    ],
+    "result": "Focal adhesion dynamics are optimized at 50 nm inter-ligand spacing, with the shortest lifetime (~14 min vs ~16 min at 35/70 nm), smallest average area, and fastest turnover. Conversely, 35 nm spacing shows largest cell contact area and focal adhesion density, while 70 nm shows longest focal adhesion length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-35, C74 are supported by quantitative focal adhesion tracking data in Figure 2 using mCherry-\u03b1-paxillin. The measurements show statistically significant differences (p<0.01-0.0001) in lifetime, area, and length across spacings. The inverse relationship between focal adhesion dynamics and migration efficiency at 50 nm is well-documented and mechanistically consistent with enhanced migration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C75"
+    ],
+    "result": "The optimal 50 nm spacing is determined by stress correlation length (~200 \u00b5m) rather than absolute traction force magnitude. Traction forces paradoxically increase with decreasing ligand density, but stress correlation length is maximal at 50 nm. This relationship is specific to \u03b15\u03b21 integrin, as c(RGDfK) substrates show no spacing-dependent stress correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C47-50, C75 are supported by traction force microscopy (TFM) and monolayer stress microscopy (MSM) data in Figure 3. The dissociation between traction force magnitude and migration efficiency is clearly demonstrated, with stress correlation length matching velocity correlation length. The \u03b15\u03b21 specificity is confirmed by control experiments with c(RGDfK) (Figure 1\u2014supplement 4), providing mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C68",
+      "C76",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "The optimal 50 nm \u03b15\u03b21 spacing effect overrides substrate stiffness across physiologically relevant rigidities (11-90 kPa). While higher stiffness increases migration speed overall, 50 nm spacing consistently produces fastest migration and longest velocity/stress correlation lengths at each stiffness level tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-58, C68, C76, C84-85, C87 are supported by systematic experiments across four stiffness conditions (Figure 4). At each stiffness, 50 nm spacing shows superior performance with statistical significance (p<0.05-0.0001). The consistency across stiffness conditions demonstrates that nanospacing is a dominant parameter, though the inability to perform MSM at 90 kPa (C59) represents a minor limitation that doesn't undermine the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "E-cadherin-mediated cell-cell adhesion is required for optimal migration at 50 nm spacing but inhibits migration at non-optimal spacings (35 and 70 nm). E-cadherin blocking with DECMA-1 antibody reduces migration speed at 50 nm but enhances it at 35 and 70 nm, indicating that optimal spacing requires coordinated cell-cell and cell-ECM interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-66, C69, C80-82 are supported by E-cadherin inhibition experiments in Figure 5. The differential effects of DECMA-1 treatment across spacings (reduced speed at 50 nm, enhanced at 35/70 nm) provide strong evidence for the mechanistic model. Statistical significance is shown (p<0.01-0.0001), and the results are consistent with the hypothesis that uncorrelated intercellular stresses at non-optimal spacings impede collective migration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C48"
+    ],
+    "result": "Migration behavior on c(RGDfK) peptide differs from \u03b15\u03b21-specific peptide: optimal migration occurs at 35 nm (not 50 nm), and velocity/stress correlation lengths do not vary with receptor density. This demonstrates integrin subtype-specific effects on collective migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-41, C48 are supported by control experiments using c(RGDfK) peptide (Figure 1\u2014supplement 4). The shift in optimal spacing from 50 nm to 35 nm and loss of biphasic correlation length response provide clear evidence for \u03b15\u03b21-specific regulation. However, the mechanistic basis for this difference is not explored, and the lower affinity of c(RGDfK) for \u03b15\u03b21 (IC50=200 nM vs 1.5 nM) complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Block-copolymer micelle nanolithography (BCMN) enables precise fabrication of gold nanopatterns at 35, 50, and 70 nm inter-ligand spacing on protein-repellent PAA hydrogels (~23 kPa), allowing controlled presentation of integrin \u03b15\u03b21-specific peptidomimetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-20, C22-24 describe the experimental platform. The BCMN technique is well-established (cited references), and SEM characterization is mentioned in methods. The protein-repellent nature of PAA ensures cells only interact at functionalized nanoparticle sites. This methodological foundation is critical for interpreting all subsequent results, though detailed characterization data (SEM images, spacing distributions) are not shown in main figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C39"
+    ],
+    "result": "The \u03b15\u03b21-specific peptidomimetic has high affinity for \u03b15\u03b21 (IC50=1.5 nM) and orders of magnitude lower affinity for other RGD-recognizing integrins including \u03b1v-containing isoforms. The c(RGDfK) peptide has lower \u03b15\u03b21 affinity (IC50=200 nM) and binds multiple integrins including \u03b1v\u03b21 and \u03b1v\u03b26.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-16, C39 are supported by cited literature (Kapp et al., 2017) and shown in Figure 1\u2014supplement 1. The specificity data are critical for interpreting the differential effects of the two peptides. However, the affinity values are from prior publications rather than measured in this study, and actual integrin expression levels on the keratinocytes used are not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Cell monolayer density and proliferation rate are comparable across all three inter-ligand spacings (35, 50, 70 nm), ruling out these factors as confounders in migration differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by DAPI and EdU incorporation data in Figure 1\u2014supplement 2, showing no significant differences in cell density or proliferation ratio. This control is essential for establishing that migration differences are due to spacing effects rather than differential cell growth. The statistical analysis (unpaired t-test, n.s.) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "23 kPa is approximately the stiffness of freshly wounded skin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by citations (Arnold et al., 2004; Goffin et al., 2006). This establishes physiological relevance for the initial experiments, though the cited papers should be verified for the specific context of wounded skin vs other tissue states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "MSM could not be reliably performed on 90 kPa hydrogels due to limited bead movement and high signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 acknowledges a technical limitation. This is an honest reporting of experimental constraints. While it prevents complete stress analysis at the highest stiffness, velocity measurements were still obtained, and the pattern at lower stiffnesses is consistent enough to support the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C43",
+      "C44",
+      "C46",
+      "C51",
+      "C52",
+      "C60",
+      "C61",
+      "C62",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C86",
+      "C88"
+    ],
+    "result": "Background claims establishing prior knowledge about keratinocyte wound healing, integrin function, ECM nanoscale properties, collective cell migration mechanics, and limitations of genetic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-3, C6-14, C30, C36-38, C43-44, C46, C51-52, C60-62, C77-79, C83, C86, C88 are literature-based background statements supported by appropriate citations. These establish the scientific context and rationale for the study. The citations appear appropriate, though individual papers were not verified. These claims provide essential background but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The authors hypothesized that outside optimal 50 nm spacing, single keratinocytes would move counterproductively, inhibiting monolayer motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is explicitly stated as a hypothesis that motivated the E-cadherin inhibition experiments. The subsequent experimental results (C64-65) support this hypothesis. This represents sound scientific reasoning where a mechanistic hypothesis is tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The bottom-up approach identified the importance of \u03b15\u03b21 density in force propagation, and findings suggest integrin subtype-specific arrangements may exist in vivo in mechanosensitive contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is a reasonable summary of the study's contribution. However, C90 is speculative about in vivo relevance, explicitly noting that \"further exploration\" is required. The in vitro findings are strong, but extrapolation to in vivo contexts with complex ECM organization, multiple integrin types, and dynamic remodeling is uncertain. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  }
+]

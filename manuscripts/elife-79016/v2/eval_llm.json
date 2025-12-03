@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "CyTOF analysis identified 22 immune cell populations in peripheral blood (PB) and synovial fluid (SF) compartments of JIA patients. The immune cell architecture of distinct inflamed sites (left and right knees) within individual patients was remarkably similar, with strong positive correlation between paired knee SFMCs and strong negative correlation with PBMCs, indicating commonality in underlying disease etiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 collectively demonstrate spatial similarity in immune cell composition between affected joints. The CyTOF data (C1-C10) with statistical significance (p<1e\u221221) and correlation analysis (C9-C10) provide strong quantitative support. The inference about disease etiology (C12) is reasonable given the observed patterns, though it remains an interpretation rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "SFMC-specific T cells displayed increased expression of pro-inflammatory cytokines, chronic TCR activation markers, and memory phenotype compared to PBMCs. Tregs were significantly enriched in SFMC with enhanced activation markers and higher proliferation than effector memory T cells. The T cell phenotypic and functional profiles were nearly identical between left and right knee joints within individual patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C25 are well-supported by CyTOF and flow cytometry data with statistical significance (p<0.05). The functional characterization (C13-C15, C19-C21) is backed by quantitative measurements. The inference that Tregs are the most proliferative subset (C22) is reasonable based on Ki67 data, though the claim about 'most proliferative' could benefit from more comprehensive comparison across all T cell subsets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Analysis of publicly available single-cell transcriptomics data from RA and OA patients showed that CD4+FOXP3+ Tregs were increased in RA compared to OA, with significantly elevated expression of chronic TCR activation markers and cytokines, consistent with observations in JIA SFMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by single-cell RNA-seq data analysis (Figure 2\u2014figure supplement 2). The comparison between RA and OA provides validation for JIA findings. However, the analysis relies on publicly available data (Zhang et al., 2019) and the direct comparison between different diseases (RA vs JIA) should be interpreted cautiously given potential differences in disease mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TCR sequencing revealed clonally expanded T cells in inflamed joints, with higher expansion in Tregs than non-Tregs. Hyper-expanded T cell clones showed high degree of sharing between left and right joints, with frequencies highly conserved between anatomical sites. Shared clones were not correlated with generation probability, suggesting antigen-driven expansion rather than recombination bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C45 are strongly supported by TCR sequencing data with appropriate statistical analyses. The correlation analysis between clone frequency and generation probability (C38-C40) provides mechanistic insight. The inference about antigen-driven expansion (C45) is well-justified by the lack of correlation with pgen. However, sample sizes are limited (n=2-3 patients for spatial analysis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The JIA Treg TCR repertoire showed significantly lower species richness and Shannon diversity compared to healthy donors, demonstrating reduced diversity in JIA patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by rarefaction analysis comparing JIA to healthy controls (Figure 3\u2014figure supplement 1). The statistical comparison is appropriate. However, the healthy control data comes from a different study (Kasatskaya et al., 2020), which may introduce batch effects or technical differences that could affect the comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Longitudinal TCR sequencing showed that TCR\u03b2 sequences of SF Tregs were highly shared within patients over time and across different joints, with consistent frequencies of shared clones. PB TCR\u03b2s showed much less temporal clustering and overlap with synovial counterparts. Persistent dominant T cell clones participate in local immune response during relapsing-remitting disease, more pronounced for Tregs than non-Tregs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C58 are well-supported by longitudinal TCR sequencing data from 5 JIA patients (Figure 4). The repertoire overlap analysis (C48-C51) and frequency analysis (C52-C55) provide strong evidence for temporal persistence. The lack of correlation with recombination bias (C56) strengthens the antigen-driven hypothesis. However, the number of patients is limited (n=5) and time points vary between patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Non-Tregs also displayed sharing of TCR\u03b2 sequences over time, though less pronounced than Tregs. Frequencies of highly shared non-Treg TCR\u03b2s were consistent over time and not driven by recombination bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by TCR sequencing data for non-Tregs (Figure 5). The comparison to Tregs (C60) is appropriate and shows quantitative differences. The correlation analysis with generation probability (C62) is consistent with the Treg findings. The data support the conclusion but the non-Treg analysis appears less comprehensive than the Treg analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "TCR similarity network analysis showed that TCR networks from JIA patients were highly connected compared to random repertoires, with lower cluster purity than random controls, indicating that the SF Treg repertoire is highly skewed by antigenic selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by TCR similarity network analysis (Figure 6) comparing JIA patients to random repertoires. The use of random controls is appropriate for establishing statistical significance. The inference about antigenic selection (C67) is reasonable based on the network properties. However, the analysis is limited to SF samples from patients with two affected knees (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background context establishing that autoimmune diseases are associated with specific HLA alleles, accumulation of activated CD4+ T cells and Tregs in affected tissue, and presence of clonally expanded T cells in autoimmune diseases. In JIA specifically, hyper-expanded Treg TCR\u03b2 clones are found at inflammation sites and in circulation of refractory patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C82 are primarily citations to prior work and established knowledge, appropriately referenced. These provide necessary context for interpreting the current study's findings. The inference about antigen-driven expansion (C82) is reasonable but speculative. These are background claims rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SF Tregs showed high Ki67 expression indicating recent antigen encounter and active response to synovial antigens. The expansion of dominant TCR clones was not dependent on generation probabilities, indicating antigen-driven T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by Ki67 expression data (C83) and correlation analysis with generation probability (C85). The inference about antigen response (C84, C86) is reasonable based on Ki67 as a proliferation marker and the pgen analysis. However, Ki67 marks proliferation but does not directly prove antigen specificity, and alternative explanations for proliferation are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Comparison to mouse type 1 diabetes model and RA patients showed similar Treg profiles with elevated activation markers, supporting the hypothesis that hyper-expanded Tregs in JIA SF are auto-reactive and characterized by inflammation-related molecular signatures relevant across rheumatic autoimmune diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91 rely on comparisons to other disease models and prior work. While the citations are appropriate (C87-C88, C90), the cross-species (mouse to human) and cross-disease (RA to JIA) comparisons (C89, C91) are inferential. The similarity in profiles is suggestive but does not constitute direct evidence for auto-reactivity in JIA. The claims are reasonable interpretations but require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Dominant T cell clones in SF can be traced back to circulation, and similar clones are detected in multiple affected joints, suggesting T cell migration between joints and peripheral blood. Tregs may be recirculating or actively replenished from circulating precursor T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by TCR sequencing data showing clone sharing between SF and PB. The inference about T cell migration (C94) is reasonable based on the observed sharing patterns. However, C95 is speculative about the mechanism (recirculation vs. replenishment) without direct evidence to distinguish between these possibilities. The migration inference is well-supported but the mechanism remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Prior studies showed that synovial T cell clones can be detected in PB and correlate with disease activity and therapy response. In systemic JIA patients undergoing aHSCT, transplant outcome depends on circulating Treg diversity, which is reduced in treatment-refractory patients and increases after aHSCT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are citations to prior work (Rossetti et al., 2017; Spreafico et al., 2016; Delemarre et al., 2016; Lutter et al., 2018) that provide context for the current findings. The citations are appropriate and relevant. These are not novel findings from this study but establish the clinical relevance of the observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Prior studies showed that Tregs in JIA maintain suppressive capacity but local effector T cells are resistant to suppression. The clonotypic expansion in SF Treg cells might reflect an insufficient attempt to control expanding effector T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are appropriately cited to prior work (Wehrens et al., 2011; Haufe et al., 2011). Claim C103 is speculation based on these prior findings and the current observations. The speculation is reasonable but lacks direct experimental evidence from this study. This represents an interpretation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Prior mouse studies showed that TCR-diverse Tregs expand more efficiently and can out-compete TCR-restricted Tregs, and that diverse Treg repertoires are especially needed to control Th1 responses. This may explain why the Th1-rich SF environment is poorly controlled by clonally expanded Tregs, suggesting hyper-expanded Tregs alone may not be sufficient to prevent autoimmune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C108 are appropriately cited to prior work. However, C109 and C110 are speculative extrapolations from mouse studies to human JIA without direct experimental validation. The reasoning is logical but the cross-species application and the specific claim about Th1 control in JIA SF are not directly tested. The speculation is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study demonstrates that SF immune cell architecture is marked by inflammatory responses of activated effector T cells and highly expanding Tregs. The remarkable overlap in immune cell composition and dominant clones over time and space indicates a powerful driving force shaping local T cell response, with high TCR sequence similarity indicating antigen selection reshaping the local Treg repertoire. These inflammation-associated clones in circulation provide promising perspectives for disease monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 represent the study's main conclusions. C111 is cited prior work, C112 summarizes the data findings, C113 and C115 are reasonable inferences from the spatial/temporal overlap and TCR similarity data. C114 is speculation about clinical applications without validation. The core findings (C112-C113, C115) are well-supported by the data, though the clinical application (C114) remains to be demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

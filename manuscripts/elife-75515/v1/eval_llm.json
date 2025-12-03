@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C31",
+      "C91",
+      "C92"
+    ],
+    "result": "Spectral flux of music evoked the strongest neural synchronization compared to amplitude envelope, first derivative, and beat onsets, across both TRF and RCA analysis methods. This superiority held even when compared to a multivariate model combining all other features, suggesting spectral flux captures more complete rhythmic information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C45 demonstrate consistent findings across multiple analysis approaches (TRF and RCA) with statistical support (C42: p<1e-12 to 1e-16). The mutual information analysis (C31) and multivariate TRF results (C43, C91-C92) provide converging evidence. However, the control for autocorrelation differences between methods and potential confounds from stimulus feature correlations could be more thoroughly addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C59",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Neural synchronization was strongest for music with slower beat rates (1-2 Hz), demonstrated through tempo-dependent effects in SRCorr, SRCoh, TRF correlations, and TRF weights. This tempo preference was most pronounced for spectral flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging measures (C34-C35, C38-C39, C59) show consistent tempo effects with statistical support. The control analysis (C40, C71) addresses potential confounds from tempo manipulation magnitude. The findings align with behavioral tapping preferences (C60: 1.55 Hz) and prior literature (C61-C64), strengthening the interpretation. Effect sizes are modest (\u03b7\u00b2=0.07-0.29) but consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C99",
+      "C100"
+    ],
+    "result": "Music with high familiarity elicited stronger neural synchronization as measured by TRF correlations, consistent with prior research showing enhanced neural responses to familiar music.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding is supported by statistical tests (C55: t(33)=-2.57, pFDR=0.03, re=0.46) and aligns with cited prior work (C100). However, the analysis is based on only 15 highest vs. 15 lowest rated trials per participant, which is a relatively small subset. The stimulus FFT analysis (C57) reveals a confound: less familiar music had higher spectral content, suggesting the neural effect may partially reflect stimulus differences rather than purely familiarity-driven top-down modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C99"
+    ],
+    "result": "Music with easy-to-perceive beats elicited stronger neural synchronization as measured by TRF correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Statistical support is provided (C56: t(33)=-2.43, pFDR=0.03, re=0.44) based on subjective ratings. However, similar to familiarity, the stimulus FFT analysis (C57) shows that easier-to-perceive beats had higher spectral content, creating a confound between perceptual ease and acoustic properties. The causal direction (does beat salience enhance synchronization, or do stronger acoustic features drive both?) remains ambiguous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C119",
+      "C120",
+      "C121",
+      "C124"
+    ],
+    "result": "TRF and RCA analysis approaches produced convergent results, with SRCorr significantly predicting TRF correlations across all musical features (R\u00b2=0.28-0.76), suggesting both methods capture similar aspects of neural synchronization despite methodological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Strong statistical support across all features (C49: p<1e-14 to <1e-15) with substantial effect sizes. The finding that first harmonic SRCoh better predicts TRF correlations than stimulation tempo (C51, C120) is informative about the frequency content captured by broadband TRF analysis. However, the interpretation that both methods access the same neural mechanisms (C124-C125) is speculative\u2014correlation between measures doesn't establish they reflect identical physiological processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C105"
+    ],
+    "result": "Musical enjoyment did not significantly affect neural synchronization strength (TRF correlations), though the effect approached significance (p=0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The null finding is appropriately reported with exact p-value (C54: t(33)=1.91, pFDR=0.06, re=0.36). However, the study may be underpowered to detect smaller effects of enjoyment, and the stimulus FFT analysis (C57) shows more enjoyed music had higher spectral content, suggesting a potential confound that could mask or complicate the relationship. The interpretation (C105) appropriately focuses on predictability rather than enjoyment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Musical training (Gold-MSI scores) did not correlate with neural synchronization strength, contrasting with prior studies that found musician advantages, possibly due to genre diversity in stimuli and potential confounding of training with familiarity in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The null finding is clearly reported (C58: all p>0.2) with adequate sample size (n=34). The authors provide plausible explanations for the discrepancy with prior work (C108-C110), noting their use of diverse genres vs. classical music in prior studies. However, the speculation about confounding in prior studies (C110) is not directly tested. The Gold-MSI may also not capture all relevant aspects of musical expertise for this task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Neural synchronization (SRCoh) was stronger at the first harmonic of the stimulation tempo than at the fundamental frequency, likely reflecting synchronization to faster musical elements (notes) in addition to beat rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Strong statistical support across all features (C36: p<0.001-0.01, re=0.56-0.73). The stimulus analysis (C37) shows this pattern is also present in the music itself. The interpretation invoking note-level synchronization (C75-C77) is plausible and supported by prior work (C76), though alternative explanations (1/f slope effects, C78) are also acknowledged. The finding has important implications for interpreting frequency-domain analyses of neural synchronization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Spectral flux shared significant mutual information with all other musical features (amplitude envelope, derivative, beat times), with strongest overlap with the derivative (\u03b7\u00b2=0.45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Statistical support is provided for all comparisons (C31: p<1.3e-5 to 1.92e-13). This analysis is critical for interpreting the spectral flux results, as it demonstrates both overlap and unique information. However, mutual information quantifies statistical dependence but doesn't fully characterize the nature of the relationship. The finding that spectral flux shares information with all features supports the interpretation that it's a more comprehensive measure (C44-C45).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C71",
+      "C72"
+    ],
+    "result": "The amount of tempo manipulation applied to music stimuli did not significantly affect neural synchronization (TRF correlations), suggesting the tempo effects reflect genuine neural preferences rather than artifacts of stimulus naturalness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The control analysis addresses an important confound (C40: F<0.5, p>0.4), but was only conducted for two tempo conditions (2.25 Hz and 1.5 Hz) due to stimulus constraints. The authors acknowledge this limitation, noting the experiment wasn't designed to fully address this question. While the available data support the interpretation (C72), the limited scope of the control analysis prevents definitive conclusions about all tempo conditions. Additional experiments with balanced tempo manipulation would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Behavioral ratings (enjoyment, familiarity, ease of beat tapping) were not significantly affected by tempo manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Statistical support is provided (C53: all p>0.08, \u03b7\u00b2=0.02-0.05). This finding is important for interpreting the neural tempo effects, as it suggests the neural preference for slower tempi is not simply driven by subjective preference differences. However, the lack of tempo effects on ratings could also reflect insensitivity of the rating scales or that the tempo range tested didn't span participants' preference boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The first reliable component from RCA exhibited an auditory topography, validating its use for analyzing auditory neural responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by visual inspection of the topography (Figure 2A). This is a standard validation step for RCA analysis. However, no quantitative metrics of topography are provided, and the determination appears to be based on qualitative assessment. The topography is consistent with auditory sources, supporting the validity of subsequent analyses using RC1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study included 34 participants (from 37 recruited) after exclusions, all German speakers with mostly normal hearing, providing adequate power for within-subject comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Sample characteristics are clearly documented (C126-C131). The exclusion criteria are appropriate (C127). Power analysis indicated n=24 was sufficient for within-subject comparisons, and the final n=34 exceeds this. However, for correlation analyses, the target was n=32, so the study is at the lower bound of adequate power for those analyses. Ethical approval is documented (C132).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The stimulus set comprised 703 tempo-manipulated segments from 72 original musical pieces across diverse genres, with 4-4.6 minutes of music per tempo condition per participant, presented at individually calibrated loudness levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Stimulus preparation is thoroughly documented (C133-C137). The use of diverse genres and instrumental versions is appropriate for generalizability. The tempo manipulation procedure (C136) and quality control (C137) are described. The experimental design with four stimulus lists (C138-C139) helps distribute stimuli across tempi while maintaining adequate duration per condition. Individual loudness calibration (C140) controls for hearing sensitivity differences. This is a well-designed stimulus set.",
+    "result_type": "MINOR"
+  }
+]

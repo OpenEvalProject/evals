@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "AMPAR-mediated mEPSCs in adult stellate cells (P35-57) are significantly smaller (24 \u00b1 2 pA vs. 48 \u00b1 7 pA) and slower (rise time: 0.24 \u00b1 0.02 ms vs. 0.16 \u00b1 0.01 ms; decay: 1.31 \u00b1 0.14 ms vs. 0.68 \u00b1 0.06 ms) compared to immature stellate cells (P13-19), while mEPSC frequency remains similar between ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging experimental evidence from voltage-clamp recordings showing developmental changes in mEPSC properties. Statistical significance is reported (p < 0.05) for amplitude and kinetic differences, while frequency shows no significant difference (p > 0.05). The measurements appear technically sound with appropriate sample sizes (n=13-14 cells per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Application of the competitive AMPAR antagonist \u03b3DGG (1 mM) reduced mEPSC peak amplitude similarly in immature (44.42% \u00b1 4.36%) and adult (42.38% \u00b1 3.69%) stellate cells without affecting kinetics, suggesting that developmental changes in mEPSC amplitude and kinetics are unlikely due to changes in synaptic glutamate concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 present a pharmacological control experiment with appropriate statistical analysis showing similar \u03b3DGG effects at both ages (p > 0.05 for comparison, p < 0.05 for paired effects). The inference in C7 is reasonable given that \u03b3DGG sensitivity reflects glutamate transient properties. However, the conclusion is stated as 'unlikely' rather than definitive, which is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Immature stellate cell dendrites have similar diameters to adult cells (0.47 \u00b1 0.01 \u03bcm vs. 0.41 \u00b1 0.02 \u03bcm) and similar membrane time constants (19 \u00b1 2.2 ms vs. 17 \u00b1 2.7 ms). Calculated frequency-dependent space constants (46-60 \u03bcm) are similar to dendritic lengths, suggesting that electrotonic cable filtering is present in immature stellate cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 combine morphological measurements (confocal imaging, n=93 segments from 18 neurons) with electrophysiological measurements (n=16 cells) and cable theory calculations. The measurements are technically appropriate, though C9 relies on citation rather than new data. The calculations in C12-C14 appropriately use measured parameters with a range of internal resistivity values (100-200 \u03a9\u00b7cm) to account for uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Numerical simulations using an idealized stellate cell model predict that synapses located 45 \u03bcm from the soma on dendrites produce qEPSCs that are 48% smaller with 195% slower rise time and 180% slower half-width compared to somatic synapses, with little additional filtering beyond ~40 \u03bcm. Dendritic filtering is associated with increased local depolarization that would reduce driving force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 present simulation results using biophysically realistic parameters derived from experimental measurements. The model uses appropriate passive cable properties (Rm=20,000 \u03a9\u00b7cm\u00b2, Ri=100-200 \u03a9\u00b7cm, diameter=0.47 \u03bcm). However, the simulations assume passive properties only and do not account for potential active conductances. The inference about driving force reduction (C18) is mechanistically sound but not directly validated experimentally in this result group.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Experimental stimulation of somatic synapses in immature stellate cells produced qEPSCs with mean amplitude of 62 \u00b1 3 pA, rise time of 0.14 \u00b1 0.004 ms, and half-width of 0.60 \u00b1 0.02 ms (n=25), while distal dendritic synapses produced significantly smaller (46 \u00b1 3 pA) and slower (rise time: 0.24 \u00b1 0.012 ms, half-width: 0.88 \u00b1 0.04 ms, n=18) qEPSCs, consistent with cable filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 provide direct experimental evidence for cable filtering using location-specific stimulation in low release probability conditions. The approach is technically sound with appropriate sample sizes and statistical significance (p < 0.05). The experimental values match simulation predictions reasonably well, supporting the cable filtering interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "PSD area measured by electron microscopy is constant along the somatodendritic axis of immature stellate cells (n=392 synapses from 2 cells), ruling out synaptic scaling as a mechanism for the observed distance-dependent reduction in qEPSC amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 use electron microscopy to directly measure PSD area at different dendritic locations. The sample size is adequate (392 synapses) though from only 2 cells, which limits generalizability. The linear regression shows no distance dependence (R\u00b2=0.001, p=0.85), supporting the conclusion. This is an important control ruling out an alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Somatic qEPSCs in immature stellate cells are 41% larger than in adult cells (62.3 \u00b1 3.3 pA vs. 44 \u00b1 2.4 pA, p < 0.05, n=25 vs. 12), with no difference in half-width (0.60 \u00b1 0.02 ms vs. 0.59 \u00b1 0.06 ms, p > 0.05), suggesting a developmental reduction in postsynaptic strength without kinetic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 compare somatic qEPSCs between ages using appropriate location-matched stimulation. Statistical significance is properly reported. However, C25 compares new data (n=25) with cited data from a previous study (n=12), which could introduce methodological differences. The inference in C27 is reasonable given the amplitude change without kinetic change.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mean somatic PSD size in immature stellate cells (0.039 \u00b1 0.002 \u03bcm\u00b2, n=83) is 39% larger than in adult cells (0.028 \u00b1 0.0015 \u03bcm\u00b2, n=97, p < 0.05), matching the 41% reduction in qEPSC amplitude. The slower rise time in immature cells (0.14 \u00b1 0.02 ms vs. 0.12 \u00b1 0.004 ms, p < 0.05) is consistent with larger synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 use electron microscopy to measure PSD area with adequate sample sizes. The correlation between PSD size reduction (39%) and qEPSC amplitude reduction (41%) is compelling. However, C28 compares new data with cited data from a previous study using the same method, which is appropriate but should be noted. The inference about rise time and synapse size (C30) is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In immature stellate cells, mean mEPSC decay kinetics (\u03c4_decay = 0.68 \u00b1 0.06 ms) match somatic qEPSC kinetics (half-width = 0.60 \u00b1 0.02 ms, p > 0.05) but differ from dendritic qEPSC kinetics (half-width = 0.88 \u00b1 0.04 ms, p < 0.05), suggesting that distal synapses do not contribute significantly to mean mEPSCs at this developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 use kinetic comparisons to infer synapse contribution patterns. The statistical comparisons are appropriate, though comparing \u03c4_decay with half-width is not ideal as these are different kinetic measures. The inference in C34 is logical but indirect - it would be strengthened by direct measurement of synapse distribution (which is provided later in the manuscript).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In adult stellate cells, mEPSC decay kinetics (\u03c4_decay = 1.31 \u00b1 0.14 ms) match dendritic qEPSC kinetics (half-width = 1.14 \u00b1 1.92 ms, p > 0.05) but differ from somatic qEPSC kinetics (half-width = 0.59 \u00b1 0.06 ms, p < 0.05), consistent with mEPSCs arising more often from distal synapses in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C37 use the same kinetic comparison approach as C32-C34. However, there is a concerning issue with the reported dendritic qEPSC half-width in C35 (1.14 \u00b1 1.92 ms) - the standard deviation (1.92 ms) is larger than the mean (1.14 ms), which is unusual and suggests either a data entry error or highly variable measurements. This undermines confidence in the statistical comparison. The inference in C37 is logical but depends on the questionable measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "Adult stellate cells have ~80% more Venus-tagged PSD95 puncta than immature cells (582 \u00b1 48 vs. 324 \u00b1 21, p < 0.05, n=8-9 cells). In immature cells, ~80% of synapses are within 35 \u03bcm of the soma compared to only ~40% in adults. Puncta density remains constant across the dendritic tree at both ages, indicating that increased dendritic complexity during maturation is responsible for the shift toward distal synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 use a novel fluorescence tagging approach with 2-photon imaging to map synapse distribution. The sample sizes are adequate (8-9 reconstructed cells per group). The finding that puncta density is constant (C40) while distribution shifts distally (C39) supports the inference that dendritic branching drives the distributional change (C42). However, the resolution limits of 2P imaging (~300-400 nm) may underestimate absolute synapse numbers, though this should affect both ages similarly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Numerical simulations incorporating experimentally determined synapse distributions predict that mean mEPSCs in adult stellate cells are smaller (26.0 \u00b1 0.6 pA vs. 52.2 \u00b1 0.4 pA) and slower (rise time: 0.24 \u00b1 0.05 ms vs. 0.17 \u00b1 0.01 ms; half-width: 1.11 \u00b1 0.04 ms vs. 0.77 \u00b1 0.01 ms) than in immature cells. Simulated values match experimental measurements within one standard deviation, demonstrating that developmental increases in dendritic branching complexity can account for changes in mEPSC kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 present a comprehensive simulation study using reconstructed morphologies (n=7-9 dendrites per age) and experimentally determined synapse distributions. The simulations successfully reproduce experimental mEPSC properties, providing strong support for the dendritic distribution hypothesis. The agreement between simulation and experiment (C48) is quantitatively assessed. However, the simulations assume uniform release probability across all synapses (C43), which may not be accurate but is a reasonable simplifying assumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Paired-pulse ratio (PPR) in immature stellate cells decreases from soma (2.1 \u00b1 0.1, n=10) to distal dendrites (1.8 \u00b1 0.1, n=15, p < 0.05), consistent with sublinear integration. This STP gradient suggests that immature stellate cell dendrites are capable of sublinear integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 use paired-pulse facilitation as an indirect measure of dendritic integration. The experimental measurements are statistically significant with adequate sample sizes. The inference that PPR gradient indicates sublinear integration (C53-C54) is supported by previous work (cited) and by simulations shown in C55-C58. However, PPR changes could also reflect presynaptic differences between somatic and dendritic inputs, which is not fully ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Simulated subthreshold input-output relationships show that evoked EPSPs in soma and dendrites are less than the linear sum, with sublinearity becoming more pronounced for distal synapses and increasing with the number of simultaneously activated quanta. These simulations support the experimental observation of different STP between somatic and dendritic inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 use biophysical simulations to demonstrate sublinear integration in immature stellate cells. The simulations use appropriate parameters and show distance-dependent and input-dependent sublinearity. The results are consistent with experimental PPR measurements (C51-C54). However, the simulations assume passive properties only, which may underestimate the degree of nonlinearity if active conductances are present.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Dendritic sublinearity is larger in adult stellate cells than in immature cells for all postsynaptic strengths, with the smaller difference in immature cells resulting from both fewer distal synapses and larger synaptic conductance. The developmental increase in dendritic field complexity and decreased postsynaptic strength together contribute to establishing a two-stage integration model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 compare simulated sublinearity between ages and identify the contributing factors. The simulations appropriately account for both morphological (synapse distribution) and functional (conductance) differences. The inference about two-stage integration (C61) is supported by the quantitative differences in sublinearity. However, the biological significance of the quantitative differences in sublinearity could be better contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Cerebellar stellate cells are parvalbumin-positive GABAergic interneurons that share features with cortical and hippocampal PV+ interneurons, including high-fidelity transmission, Ca\u00b2\u207a-permeable AMPARs, low synaptic NMDARs, and weakly excitable dendrites. They receive excitatory inputs from granule cells and modulate Purkinje cell excitability and firing precision. Their thin dendrites (~0.4 \u03bcm) filter synaptic potentials and confer sublinear summation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 provide background information about stellate cells, all supported by appropriate citations. These are established facts from the literature rather than new findings. The claims accurately represent the cited work and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Adult stellate cells have smaller and slower mEPSCs than immature cells, contrary to the expectation that immature cells are electrotonically compact. The study found that immature dendrites are as thin as adult dendrites and capable of robust filtering and sublinear summation. A larger contribution of distal synapses in adults (due to increased dendritic branching with constant synapse density) accounts for developmental changes in mEPSC properties and increased sublinear integration, favoring emergence of a two-layer integration model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 summarize the main findings of the study. These claims integrate results from multiple experimental approaches (electrophysiology, imaging, EM, simulations) to support a coherent mechanistic explanation. The claims accurately represent the data presented in the manuscript. C75 cites previous work suggesting immature cells are compact, which the current study challenges with new evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Parallel fiber synapses release on average one vesicle per contact despite multiple release sites. NMDA receptors are extrasynaptic and don't contribute under low-intensity stimulation. AMPAR-mediated mEPSCs provide an unbiased assessment of postsynaptic strength distribution. The observed mEPSC amplitudes are consistent with previous studies and capable of influencing immature stellate cell firing, though mEPSCs mature past the third postnatal week.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 provide methodological justification and context. C81-C82 cite established properties of the system. C83 is a reasonable inference about the utility of mEPSC measurements. C84-C85 appropriately contextualize the findings with previous literature. These claims support the experimental approach but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Stellate cell synaptic AMPARs are composed of GluA2 and GluA3 subunits with TARP \u03b32 and \u03b37. During development, GluA2 insertion occurs in an activity-dependent manner, affecting calcium permeability but having little impact on AMPAR conductance or EPSC kinetics. Since AMPAR density is constant in stellate cell synapses, the developmental reduction in postsynaptic strength likely results from fewer AMPARs activated per vesicle release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 synthesize information from cited literature (C86-C88, C90) with inference (C89). The cited claims accurately represent the literature. The inference in C89 is logical given that subunit changes don't affect conductance (C88) and density is constant (C90), leaving AMPAR number as the likely variable. However, this inference could be strengthened with direct measurements of AMPAR number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Stellate cells display little developmental change in voltage-gated channel expression and have low densities of sodium and calcium channels. The basic electrotonic machinery to filter synaptic responses is present as soon as stellate cell precursors reach their final location in the outer molecular layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 cite previous work on channel expression. C94 is an inference from the finding that dendritic diameters and membrane properties are similar at both ages. The inference is reasonable and supported by the data, though it's stated somewhat broadly - 'basic electrotonic machinery' could be more precisely defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Unlike pyramidal neurons where synapse strength and density are scaled to normalize input contributions, stellate cells show spatially uniform synapse strength and density that don't compensate for electrotonic filtering or increased distal synapses. This favors emergence of a two-stage integration model in adult stellate cells promoting location-dependent integration, while immature cells show a simpler single-stage model with reliable EPSP-spike coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 compare stellate cells with other neuron types and interpret the functional implications. C95-C96 accurately cite previous work. C97 appropriately contrasts stellate cells with pyramidal neurons based on the data. C98-C100 are inferences about computational implications, supported by the data and appropriately cited. However, these functional interpretations go beyond what is directly demonstrated and represent hypotheses about circuit function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Sublinear integration is a property of hippocampal fast-spiking interneurons. Developmental changes in dendritic arbors and synaptic connectivity occur broadly across brain regions and are altered in neurodevelopmental disorders (mental retardation, autism, Rett syndrome). Inhibitory interneurons are essential for critical periods and direction selectivity, and their dysfunction is associated with neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 provide broader context by citing relevant literature on other brain regions and clinical relevance. All claims are appropriately supported by citations. These claims help situate the findings within a broader neuroscience context but are not primary findings of the study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C35"
+    ],
+    "result": "The study profiled 164 loss-of-function mutants (85 TOR-related and 85 receptor-related) using flow-injection time-of-flight mass spectrometry under rapamycin treatment at multiple time points (5, 30, 60, 90 min), generating over 7000 metabolomics measurements. Only nonessential mutants were included, and cultures were grown to OD600 of 0.7 before treatment with 400 ng/mL rapamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C16-C20, C22, and C35 collectively describe the experimental design and dataset generation. The methodology is clearly described with specific parameters (mutant numbers, time points, rapamycin concentration, OD600), and the dataset size is quantified. The approach is validated by LC-MS (C23), providing orthogonal support for the FIA-MS measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The FIA-MS measurements of rapamycin effects on wild-type yeast were validated using LC-MS, demonstrating concordance between the high-throughput and traditional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 describes orthogonal validation of the FIA-MS approach using LC-MS. Figure 1\u2014figure supplement 1 shows correlation between the two methods, supporting the reliability of the high-throughput FIA-MS approach used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Rapamycin treatment induced metabolic changes in wild-type yeast consistent with TORC1 inhibition, including nucleoside accumulation. The gtr1 mutant showed elevated glutamine levels before treatment and enhanced phenylalanine accumulation after rapamycin treatment. The highest number of metabolite changes across mutants occurred at 90 minutes post-treatment, demonstrating that rapamycin reveals metabolic responses not measurable at steady state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C32-C34 describe metabolic responses to rapamycin treatment with specific examples (gtr1 mutant) and temporal dynamics. The observations are supported by data in Figures 1B, 1E, 1F, and 1D, showing expected TORC1 inhibition responses and demonstrating the value of dynamic perturbation over steady-state measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C6"
+    ],
+    "result": "Dynamic metabolome profiling after rapamycin treatment improved recovery of known positive TORC1 regulators compared to steady-state measurements. The empirical p-value for clustering of positive regulators was <5% at all time points, and AUC values were >0.5 for all time points, with the untreated condition showing the smallest AUC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C6 describe statistical validation of the guilt-by-association approach. The empirical p-values (<5%), AUC values (>0.5), and comparison showing untreated cells had the smallest AUC (C38) provide quantitative support that dynamic perturbation improves functional gene recovery. Figure 2B provides visual support for these statistical claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Small but significant correlations were observed between metabolome-based distances and genetic interaction scores, suggesting metabolome distances capture additional functional information beyond genetic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 describes correlation analysis between metabolome distances and genetic interaction scores from Costanzo et al. 2016. Figure 2\u2014figure supplement 1 shows the correlation, and the text notes these correlations were largely driven by strong negative genetic interactions, supporting that metabolome-based approaches provide complementary information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Six receptor-related mutants (RGT2, HXK2, URE2, BCK1, CLA4, CFF1) were identified as potential positive TORC1 regulators using a 0.2 FDR threshold. Three genes (RGT2, HXK2, URE2) have known connections to TOR signaling through PKA signaling or nitrogen catabolite repression, while BCK1, CLA4, and CFF1 represent novel candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe the identification of candidate genes through metabolome-based guilt-by-association. The selection criteria (0.2 FDR threshold) is specified, and the genes are categorized by prior knowledge. Figure 2D-E supports the identification, and citations validate the known connections for RGT2, HXK2, and URE2, making the novel candidates (BCK1, CLA4, CFF1) credible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The atg13 mutant, which is incapable of autophagy, showed a strong reduction in inosine accumulation under rapamycin treatment, demonstrating the connection between autophagy and nucleoside metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 describe a specific example of metabolome profiling revealing gene function. The atg13 phenotype is well-established (C45, supported by citation), and the inosine accumulation defect (C46) is shown in Figure 1\u2014figure supplement 3A, providing a clear mechanistic link between autophagy and nucleoside metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Proteomic analysis of 12 mutants (6 known positive TORC1 regulators and 6 candidate genes) after rapamycin treatment showed that BCK1, CLA4, and CFF1 had similar proteomic profiles to known positive regulators. All mutants except HXK2 and RGT2 showed altered GO enrichment patterns, with cff1 and bck1 showing the strongest correlations with rapamycin-treated wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 describe proteomic validation of candidate genes. Figure 3A shows GO enrichment patterns, and Figure 3B shows correlation analysis. The observation that BCK1, CLA4, and CFF1 cluster with known positive regulators and show altered proteome responses provides independent validation of the metabolomics-based predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "During nitrogen upshift experiments, cff1 and bck1 showed significantly reduced growth rates, and hxk2 showed a longer lag time. These phenotypes are consistent with impaired TORC1 signaling, as known positive regulators show similar growth defects in minimal media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe phenotypic validation through growth assays. Figure 3C-D shows the growth rate and lag time data with statistical significance indicated. The comparison to published data on known positive regulators (C56, Breslow et al. 2008) provides context showing the observed phenotypes are within the expected range for TORC1 signaling genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Western blot analysis showed similar SCH9 phosphorylation levels in wild-type and cff1 strains under rich conditions, suggesting CFF1 acts downstream of TORC1. CFF1 protein abundance decreased upon rapamycin treatment, consistent with TORC1 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 describe mechanistic positioning of CFF1 in the TORC1 pathway. Figure 4A shows SCH9 phosphorylation data, and Figure 4B shows CFF1 abundance changes. The similar SCH9 phosphorylation in cff1 and wild-type indicates CFF1 doesn't affect TORC1 activity directly, while the rapamycin-induced reduction in CFF1 levels suggests it's a TORC1 target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C8"
+    ],
+    "result": "During nitrogen downshift, cff1 mutants showed increased pyrimidine biosynthetic precursors (carbamoyl aspartate and dihydroorotate) and decreased URA10 enzyme abundance. This connects CFF1 to pyrimidine biosynthesis regulation through URA10, consistent with TOR's known role in stimulating pyrimidine biosynthesis in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C8 describe CFF1's specific metabolic function. Figure 4C shows metabolite changes, Figure 4E shows URA10 protein decrease, and Figure 4D diagrams the pathway. The connection between CFF1 deletion, URA10 reduction, and pyrimidine precursor accumulation is mechanistically coherent. Citation support (C61) for TOR's role in pyrimidine biosynthesis in other systems strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "This study represents the first demonstration that dynamic perturbation improves recovery of eukaryotic gene function using metabolomics-based guilt-by-association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 asserts novelty based on the authors' knowledge. While the study does demonstrate improved recovery with dynamic perturbation (supported by C36-C39), the claim of being 'first' cannot be fully verified without comprehensive literature review. The statement 'to our knowledge' acknowledges this limitation, but the novelty claim remains uncertain without exhaustive prior art search.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study created an interactive data visualization app (https://rapamycin-yeast.ethz.ch) and made raw data available. The dataset was acquired in untargeted mode, allowing future reanalysis as metabolite libraries expand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71-C73 describe data availability and resource creation. These are straightforward statements about data sharing practices that can be verified by accessing the provided URL and data repositories. The untargeted acquisition mode (C73) is a methodological choice that enhances future utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10"
+    ],
+    "result": "The S. cerevisiae genome was sequenced 25 years ago (Goffeau et al. 1996), but gene function characterization remains incomplete and ongoing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C10 provide background context. The genome sequencing date is verifiable through the Goffeau et al. 1996 citation (C9), and the statement about incomplete characterization (C2, C10) is supported by the Wood et al. 2019 citation. These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CFF1 has structural similarity to plant auxin-binding proteins, plays a role in 4-hydroxymethylfuranone production, and is phosphorylated at multiple positions including serine 68 under glucose limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe prior knowledge about CFF1 from literature. Each claim is supported by specific citations (Zhou et al. 2005, Valastyan et al. 2021, Lanz et al. 2021), providing context for CFF1's potential functions and regulation. These are literature-based statements that contextualize the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "BCK1 and CLA4 have mammalian homologs implicated in human cancers: BCK1 is homologous to Map3K1 (breast cancer), and CLA4 is homologous to PAK4/5/6, with PAK6 implicated in clear cell renal cell carcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe evolutionary conservation and disease relevance. The homology relationships and cancer associations are supported by citations (Easton et al. 2007, Liu et al. 2014). These claims provide translational context for the yeast findings but don't constitute primary results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C30",
+      "C31",
+      "C42",
+      "C43",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C61",
+      "C74"
+    ],
+    "result": "Background knowledge about metabolomics methods, TOR signaling biology, and prior applications of metabolomics to gene function studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C11-C15, C21, C24-C26, C30-C31, C42-C43, C52-C53, C56-C57, C61, C74) provide established background knowledge supported by appropriate citations. They contextualize the study but are not primary findings. Each statement is verifiable through the cited literature and represents accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Deletion of novel candidate genes causes phenotypes and proteome responses implicating them in TOR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is a summary statement supported by the detailed results in C48-C51 (proteomics) and C54-C55 (growth phenotypes). This claim integrates multiple lines of evidence showing that the candidate genes identified through metabolomics have TOR-related phenotypes at multiple levels.",
+    "result_type": "MAJOR"
+  }
+]

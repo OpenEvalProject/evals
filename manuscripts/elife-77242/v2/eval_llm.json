@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors established a comprehensive experimental framework using 12 cysteine-labeled PSD-95 variants forming a FRET network, measured with two independent single-molecule approaches (confocal MFD and smTIRF) using different fluorophore pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 describe a well-designed experimental system with appropriate quality controls (C18), validated labeling sites from prior work (C17), and orthogonal measurement approaches (C20-C21). The use of two independent techniques with different dyes provides strong validation, though the assumption that dyes don't perturb structure (C22) could benefit from additional controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Global analysis of fluorescence lifetime data from all 12 FRET variants reveals that PDZ3 samples two limiting conformational states (A and B) with populations of 46.1% and 53.9% respectively, as evidenced by improved fit statistics when using a two-state versus one-state model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-state model is well-supported by systematic comparison of fit statistics across increasing model complexity (Table 1, C23), with clear improvement from one to two states but not from two to three states. The global fitting approach (C22) appropriately leverages information across all variants. The observation of conformational dynamics is independently confirmed by deviation from static FRET lines (C25). However, the assumption of a single conformational landscape for all variants (C22) is critical and could be affected by dye perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Truncation of PSD-95 to the PSG fragment alters the conformational landscape, resulting in broader FRET distributions, increased anticorrelated transitions, shifted limiting state distances for state A, and slightly reduced state B occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The truncation effects are consistently observed across multiple variants using both smTIRF (C28-C29) and confocal measurements (C30), with quantitative changes reported in Appendix tables. The use of identical labeling sites in both constructs provides appropriate controls. The convergence of observations from independent techniques strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C83",
+      "C84"
+    ],
+    "result": "Filtered fluorescence correlation spectroscopy reveals hierarchical dynamics spanning three timescales: local motions within domains (tR1 ~0.01 ms), domain reorientations (tR2 ~0.1 ms), and basin exchange (tR3 ~1.0 ms), with basin exchange approaching seconds as captured by smTIRF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assignment of three distinct relaxation timescales (C31) is supported by global fitting of fFCS data across variants. The interpretation linking timescales to specific molecular motions (C83-C84) is reasonable given the magnitude differences and is consistent with smTIRF observations. However, the physical interpretation of each timescale component involves some inference and could benefit from additional validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Replica exchange DMD simulations (11.9 \u03bcs total) starting from an unbiased extended conformation identify two major conformational basins: a fuzzy \u03b1-basin (mean Rg 27.6 \u00c5) where PDZ3 dynamically interacts with the SH3 HOOK via electrostatic interactions, and a more compact \u03b2-basin (mean Rg 23.4 \u00c5) separated by ~2.0 kcal/mol energy barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DMD simulations use appropriate methodology (C32) with unbiased starting conditions (C33) and sufficient sampling time. The identification of two basins with quantitative characterization (C34, C36) is well-documented. The characterization of \u03b1-basin as fuzzy (C37) is supported by structural analysis (C38). The PDZ3-SH3 linker interactions (C40) provide mechanistic insight. However, the static GuK backbone constraint (C104) may limit sampling of some conformational space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The \u03b2-basin represents a well-defined interaction with PDZ3 binding near the interface of GuK's NMP binding and CORE subdomains, stabilized by hydrophobic and hydrogen bonding interactions, without occluding canonical peptide binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The \u03b2-basin characterization is supported by DMD structural analysis (C41) with detailed contact analysis (C43). The observation that canonical binding sites remain accessible (C42) is important for functional interpretation. The contrast with the charged \u03b1-basin interface provides mechanistic distinction between the two states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Disulfide mapping experiments confirm both computational basins, with engineered cysteine pairs N326C-A504C (\u03b1-basin, 5.6 \u00c5 apart) and G344C-N633C (\u03b2-basin, 5.7 \u00c5 apart) showing differential formation kinetics that are oppositely affected by truncation: \u03b1-basin rate increases ~30% while \u03b2-basin rate decreases sixfold in PSG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The disulfide mapping provides strong experimental validation of DMD predictions (C44-C46). The observation of disulfide formation for designed variants (C47-C48) but not for control variants (C52) demonstrates specificity. The opposite effects of truncation on the two basins (C49-C50) provide compelling evidence for distinct conformational states. The validation of DMD predictions with variant P3-S2 (C51) further strengthens confidence in the computational models. Experiments were performed in triplicate with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C81",
+      "C82"
+    ],
+    "result": "Integration of FRET distances with rigid body docking and DMD simulations reveals that state A corresponds to the fuzzy \u03b1-basin with PDZ3 near the HOOK insertion, while state B corresponds to the well-defined \u03b2-basin with PDZ3 near GuK's NMP subdomain, with excellent agreement between experimental and computational approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural modeling integrates multiple lines of evidence: FRET-restrained docking (C54-C56), FRET network robustness analysis showing <10% deviation with >7 variants (C57), and characterization of basin fuzziness (C58-C59). The explicit statement of excellent agreement between DMD and FRET (C81-C82) is supported by the convergence of independent methods. The robustness analysis addresses uncertainty in FRET-derived distances. However, the rigid body docking assumes fixed domain structures which may not capture all conformational flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Principal component analysis of interdomain distances reveals that PC1 (65% variance) separates \u03b1- and \u03b2-basins by interdomain displacement, while PC2 (16% variance) describes \u03b1-basin heterogeneity due to domain reorientations within a single basin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PCA analysis (C60) provides a quantitative framework for understanding the conformational landscape. The interpretation of PC1 and PC2 (C61) is reasonable given the variance explained and is consistent with the fuzzy nature of the \u03b1-basin. The rescaling to match experimental population fractions appropriately integrates simulation and experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Full-length PSD-95 binds neuroligin peptide (NL10) with KD ~15 \u03bcM at both pH 6.0 and 7.4, while truncated PDZ3 shows strong pH dependence (KD 25 \u03bcM at pH 6.0, >200 \u03bcM at pH 7.4), demonstrating that the supertertiary context enhances ligand binding at physiological pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding experiments show clear quantitative differences between constructs (C64-C65, C68, C70-C71) with appropriate controls at different pH values. The comparison with literature values (C63-C64) validates the assay. The conclusion that supertertiary context enhances binding (C69, C72) is well-supported by the dramatic difference in pH sensitivity between full-length and truncated constructs. Experiments were performed in triplicate. However, the use of a peptide rather than full-length neuroligin may not fully recapitulate physiological binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Computational docking reveals that the supertertiary context enables neuroligin recognition through salt-bridge formation between basic HOOK residues and acidic PDZ3 residues, which reduces the desolvation penalty of negatively charged residues in PDZ3 that otherwise repel uncharged histidines in neuroligin at physiological pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic explanation is supported by docking analysis identifying key electrostatic interactions (C73, C76) and provides a reasonable chemical explanation for pH sensitivity (C74, C77). The observation that some \u03b1-basin conformations block binding (C75) while others permit it (C76) is consistent with the fuzzy nature of this basin. However, the docking studies are computational and would benefit from mutagenesis validation of predicted salt bridges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The structural models show excellent agreement with previous SAXS and NMR experiments identifying PDZ3 near the HOOK insertion, though the current DMD simulations suggest direct PDZ3-SH3 interactions rather than linker-mediated bridging as proposed by previous Rosetta modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior work (C85) validates the current models against independent experimental data. The difference with previous Rosetta modeling (C86) is acknowledged and represents refinement rather than contradiction. The observation about linker conservation (C87) provides evolutionary support for functional importance, though the authors appropriately note that neither study used experimental data for linker refinement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Neither conformational basin relies on canonical ligand binding modes, and the supertertiary landscape differs from ZO-1 (which lacks interdomain interactions) but is conserved among synaptic MAGuK homologs (PSD-93, SAP97, SAP102) based on sequence conservation of key residues and previous smTIRF measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with ZO-1 (C90-C91) provides insight into MAGuK family diversity, with a reasonable structural explanation for differences. The sequence conservation analysis (C92) and reference to prior measurements (C93) support conservation among synaptic MAGuKs. The observation that neither basin uses canonical binding modes (C88) is consistent with the novel supertertiary interactions described. However, the comparison relies partly on inference from sequence conservation rather than direct structural data for all homologs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "PSD-95 is a multidomain scaffold protein containing an N-terminal extension, two tandem PDZ domains, and a conserved PSG supramodule (PDZ3-SH3-GuK) with flexible interdomain linkers that enable dynamic supertertiary structure and regulate protein activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge about PSD-95 and MAGuK family proteins, supported by appropriate citations (C11-C14). The domain organization (C15) is well-documented. These foundational claims are not novel findings but provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C94"
+    ],
+    "result": "PSD-95 forms large multi-protein complexes (301 proteins identified from mouse brain) with higher-order interactions playing a role in scaffolding activity, and supertertiary interactions affect binding of multiple ligands including CRIPT, which adopts two interconverting states with different kinetics but same equilibrium affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims cite prior work (C79-C80, C94) to establish the biological importance of PSD-95's scaffolding function and provide context for why supertertiary structure matters. The CRIPT example (C94) provides precedent for the neuroligin findings. These are literature-based contextual claims rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

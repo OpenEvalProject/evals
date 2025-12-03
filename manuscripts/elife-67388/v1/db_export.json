@@ -1,0 +1,2368 @@
+{
+  "submission": {
+    "id": "5ec7affd-ee1a-4416-92d7-1fdcd1210ffa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:55:47.540150Z",
+    "updated_at": "2025-12-03T04:55:47.540150Z"
+  },
+  "content": [
+    {
+      "id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "submission_id": "5ec7affd-ee1a-4416-92d7-1fdcd1210ffa",
+      "content_type": "manuscript",
+      "content_text": "# Systematic screening of viral and human genetic variation identifies antiretroviral resistance and immune escape link\n\n## Authors\n\n- Huyen Nguyen<sup>1</sup> ([ORCID: 0000-0003-1486-8970](https://orcid.org/0000-0003-1486-8970)) \u2020\n- Christian Wandell Thorball<sup>3</sup>\n- Jacques Fellay<sup>3</sup> ([ORCID: 0000-0002-8240-939X](https://orcid.org/0000-0002-8240-939X))\n- J\u00fcrg B\u00f6ni<sup>2</sup>\n- Sabine Yerly<sup>5</sup>\n- Matthieu Perreau<sup>6</sup>\n- Hans H Hirsch<sup>7</sup>\n- Katharina Kusejko<sup>1</sup> ([ORCID: 0000-0002-4638-1940](https://orcid.org/0000-0002-4638-1940))\n- Maria Christine Thurnheer<sup>10</sup>\n- Manuel Battegay<sup>8</sup>\n- Matthias Cavassini<sup>11</sup>\n- Christian R Kahlert<sup>12</sup> ([ORCID: 0000-0002-0784-3276](https://orcid.org/0000-0002-0784-3276))\n- Enos Bernasconi<sup>13</sup>\n- Huldrych F G\u00fcnthard<sup>1</sup>\n- Roger D Kouyos<sup>1</sup> ([ORCID: 0000-0002-9220-8348](https://orcid.org/0000-0002-9220-8348)) \u2020\n\n### Affiliations\n\n1. Division of Infectious Diseases and Hospital Epidemiology, University Hospital Zurich, University of Zurich Zurich Switzerland\n2. Institute of Medical Virology, Swiss National Center for Retroviruses, University of Zurich Zurich Switzerland\n3. School of Life Sciences, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n4. Precision Medicine Unit, Lausanne University Hospital and University of Lausanne Lausanne Switzerland\n5. Laboratory of Virology, Geneva University Hospital, University of Geneva Geneva Switzerland\n6. Division of Immunology and Allergy, University Hospital Lausanne, University of Lausanne Lausanne Switzerland\n7. Transplantation & Clinical Virology, Department of Biomedicine, University of Basel Basel Switzerland\n8. Infectious Diseases and Hospital Epidemiology, Department of Medicine, University Hospital Basel Basel Switzerland\n9. Clinical Virology, Laboratory Medicine, University Hospital Basel Basel Switzerland\n10. University Clinic of Infectious Diseases, University Hospital of Bern, University of Bern Bern Switzerland\n11. Department of Infectious Diseases, Centre Hospitalier Universitaire Vaudois, University of Lausanne Lausanne Switzerland\n12. Division of Infectious Diseases and Hospital Epidemiology, Kantonsspital St. Gallen St. Gallen Switzerland\n13. Division of Infectious Diseases, Regional Hospital Lugano Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Considering the remaining threat of drug-resistantmutations (DRMs) to antiretroviral treatment (ART) efficacy, we investigated how the selective pressure of human leukocyte antigen (HLA)-restricted cytotoxic T lymphocytes drives certain DRMs\u2019 emergence and retention.Methods:We systematically screened DRM:HLA class I allele combinations in 3997 ART-na\u00efve Swiss HIV Cohort Study (SHCS) patients. For each pair, a logistic regression model preliminarily tested for an association with the DRM as the outcome. The three HLA:DRM pairs remaining after multiple testing adjustment were analyzed in three ways: cross-sectional logistic regression models to determine any HLA/infection time interaction, survival analyses to examine if HLA type correlated with developing specific DRMs, and via NetMHCpan to find epitope binding evidence of immune escape.Results:Only one pair, RT-E138:HLA-B18, exhibited a significant interaction between infection duration and HLA. The survival analyses predicted two pairs with an increased hazard of developing DRMs: RT-E138:HLA-B18 and RT-V179:HLA-B35. RT-E138:HLA-B18 exhibited the greatest significance in both analyses (interaction term odds ratio [OR] 1.169 [95% confidence interval (CI) 1.075\u20131.273]; p-value<0.001; survival hazard ratio 12.211 [95% CI 3.523\u201342.318]; p-value<0.001). The same two pairs were also predicted by netMHCpan to have epitopic binding.Conclusions:We identified DRM:HLA pairs where HLA presence is associated with the presence or emergence of the DRM, indicating that the selective pressure for these mutations alternates direction depending on the presence of these HLA alleles.Funding:Funded by the Swiss National Science Foundation within the framework of the SHCS, and the University of Zurich, University Research Priority Program: Evolution in Action: From Genomes Ecosystems, in Switzerland.\n\n## Introduction\n\nAntiretroviral resistance remains a major obstacle to the successful and lasting suppression of HIV (Gupta et al., 2012; G\u00fcnthard et al., 2019). While in resource-rich settings the availability of novel drug classes and personalized HIV treatment have diminished the challenges associated with antiretroviral resistance, resource-limited settings have experienced a continuous increase in antiretroviral resistance, which is now threatening the unprecedented success of the global rollout of antiretroviral treatment (ART) (Fund, 2019; Hauser et al., 2019). In the context of this globalization of antiretroviral resistance, it is becoming increasingly important to understand how human and viral genetic variation are affecting the processes generating or limiting antiretroviral resistance (Aghokeng et al., 2011; Lataillade et al., 2010).\n\nHIV drug-resistant mutations (DRMs) can either be selected in patients on ART experiencing treatment failure (acquired drug resistance, or aDRM) or be transmitted from a patient carrying the resistance mutation to an uninfected individual (transmitted\u00a0drug\u00a0resistance, tDRM). As some DRMs have been shown to carry a cost, feeding on the virus fitness and replication capacity, they can revert in the absence of ART. Once the selective pressure favoring those mutations is removed, their frequency within a host continuously decreases at the expense of the wild-type variant, and eventually they become undetectable by standard resistance tests. It has been shown that the time scales on which reversion occurs exhibit a large variation ranging from several months to over 10\u00a0years, depending on the fitness cost that\u00a0in turn is governed by both the type of mutation and the genetic background in which it occurs (K\u00fchnert et al., 2018; Yang et al., 2015). This canonical perspective based on the evolutionary forces of aDRM and tDRM, and their disappearance from the replicating quasi-species, generally disregards the possibility that antiretroviral- resistant mutations are selected in untreated individuals.\n\nOne process that\u00a0may act against the paradigm of DRM emerging only in treated individuals and reverting in untreated individuals is accidental resistance evolution occurring as a collateral effect of viral immune escape. A well-understood instance of this process is evolutionary escape from binding to human leukocyte antigen (HLA), an extremely diverse gene complex encoding for major histocompatibility complex (MHC) proteins. MHC class I proteins (corresponding to HLA class I) are found on the surface of all nucleated cells, and by presenting antigens from the cell interior to the surface, they\u00a0allow for binding to cytotoxic CD8 T\u00a0cells (CTL); thus, MHC class I proteins tag the virally infected cell and can subsequently be eliminated by CTL (Markov and Pybus, 2015; Zinkernagel and Doherty, 1979). The high mutation rate associated with replicating HIV predisposes to cellular and humoral immune escape, where the viral epitopes are no longer recognized by the mounted immune effectors. For CTL-mediated immune responses, this process of developing escape mutations remains a critical part of HIV pathogenesis (Leslie et al., 2004). Conversely, the high variability of encoded MHC alleles and their combinations come into play, as the host HLA\u00a0alleles change as a consequence of transmission (Markov and Pybus, 2015; Zinkernagel and Doherty, 1979; Borghans et al., 2004). If the viral epitope recognized by MHC-I maps to the viral genome at the same region, this could confer an increased viral fitness leading to mutation persistence or even the emergence of a new DRM in an ART-na\u00efve host (Gatanaga et al., 2013). While this phenomenon has been reported for individual HIV mutation:HLA pairs, a systematic assessment of the impact of epitope escape across HIV DRM:HLA pairs in a representative population has not yet been reported.\n\nIn this study, we investigated and analyzed the viral and genetic data from ART-na\u00efve patients in the Swiss HIV Cohort Study (SHCS). This is leveraging the unique combination of viral and human genetic data in the SHCS, with over 20,000 genotypic resistance tests and over 5000 patients with information on HLA-I alleles. This allowed us to systematically screen the cohort for associations between DRM:HLA-I pairs and hence for pairs where escape from HLA-I binding might confer the DRM an evolutionary advantage even in the absence of ART.\n\n## Materials and methods\n\n### Swiss HIV Cohort Study\n\nThe SHCS is a prospective multicenter study with continuing enrollment, aiming to include all people living with HIV in Switzerland since 1988. About half of all people living with HIV (PLWH) as notified to the Swiss health authorities are voluntarily participating in the SHCS, and include three-quarters of all PLWH receiving ART\u00a0in the country (Schoeni-Affolter et al., 2010). As of August 2019, the SHCS has a cumulative total of 20,741 patients. Demographic information, mode of HIV transmission, treatment, clinical, and other data are updated every 6\u00a0months per standard protocol.\n\n### Drug resistance mutation data\n\nThe SHCS Drug Resistance Database contains the HIV sequence data, primarily partial pol gene sequences, used to determine the presence of DRMs in the viral genome (von Wyl et al., 2007). This data, currently covering 13,798 patients, was obtained from both routine clinical testing and systematic retroactive sequencing of stored plasma samples (Kletenkov et al., 2017; von Wyl et al., 2016). To reduce the scope of our systematic screening to only HIV mutations relevant to drug resistance (thus reducing the risk of overtesting), we only considered the presence of DRMs as defined by the Stanford Drug Resistance Database (Rhee et al., 2003). To avoid confounding by the effect of ART, we only considered sequences in ART-na\u00efve individuals (before ART treatment).\n\n### HLA data\n\nData on the HLA class I type was available for 6453 SHCS patients. This information was obtained from SNP genotype data, using SNP2HLA with the type 1 Diabetes Genetics Consortium reference panel for HLA imputation techniques on the exome/SNP data (Jia et al., 2013; Szolek et al., 2014; Dilthey et al., 2016). We limited our analyses to that of the HLA class I (HLA-A, -B, and -C) considering the existing literature supporting the role of HLA class I peptides in HIV control (Leslie et al., 2010; Pereyra et al., 2010). Of these patients with HLA data, 3997 additionally had drug resistance testing data.\n\n### Screening candidate pairs of\u00a0DRM:HLA-type\n\nOur study aimed to retrieve all DRMs identified in the SHCS as well as the HLA-I types found, to analyze whether or not a specific HLA-I type significantly alters the probability of finding a DRM. As there were a possible 5561 combinations represented in our dataset, it was necessary to reduce these candidate pairs to only those for which our data provided sufficient statistical power to detect an association (Figure 1). To do this, we filtered out only the combinations where the number of SHCS patients with the given mutation or HLA\u00a0type were sufficient to provide a statistical power of 0.8, assuming an odds ratio\u00a0(OR) of 3. This resulted in 225 pairs, from which 225 logistic regression models were made. For each model, the duration of HIV infection time and the\u00a0presence/absence of the queried HLA-I type were used as predictors of the outcome \u2013\u00a0the\u00a0presence of the resistance mutation in the last available resistance test from a given patient when they were ART-na\u00efve. We then used a Benjamini\u2013Hochberg adjustment to account for multiple testing, considering a false discovery rate of 0.2. We purposefully used a more liberal false discovery rate and OR\u00a0in the prior steps to avoid erroneously discarding any mutation:HLA pair with a potentially valid association, with the intent of compensating for this with the following three analyses assessing the plausibility of the identified pairs:\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67388/elife-67388-fig1-v1.jpg)\n\n**Figure 1.:** From the 3997 SHCS patients with both HLA-I data and drug resistance testing data, 5561 potential combinations of HLA-I type and DRMs were examinable, from which only 225 had sufficient power for testing. From these 225, three candidate pairs were found to have a significant HLA term in a logistic regression model predicting the resistance mutation in question.\u00a0DRM, drug-resistant mutation; HLA, human leukocyte antigen.\n\n### Software\n\nAll analyses (besides the epitope binding predictions performed with netMHCpan) were done in R (version 3.6.1). The code can be found in Github (Nguyen, 2021).\n\n## Results\n\n### Obtaining candidate\u00a0HLA\u2013mutation pairs\n\nFrom the 20,741 patients in the SHCS, 3997 had both HLA-I alleles data\u00a0and resistance testing data (Figure 1). Characteristics of these patients are shown in Table 1. Patients with HLA data were more likely to be Caucasian compared to the general SHCS population, as the HLA SNP imputation methods were validated on a Caucasian population. In the data set, there were 5561 different combinations of HLA-I types represented and DRMs. Only 225 of these pairs had sufficient diversity at the HLA and DRM positions to convey a power greater than 0.8 to detect a strong effect defined as OR\u00a0=\u00a03 (see 'Materials and methods'). Using logistic regression models, we found three DRM:HLA pairs after multiple testing adjustment (described in Supplementary file 1), with a significant impact of the queried HLA\u00a0type on the odds of observing the DRM: RT-E138:HLA-B18 (OR 6.999, 95% CI 4.662\u201310.413), RT-E138:HLA-A24 (OR 2.444, 95% CI 1.602\u20133.658), and RT-V179:HLA-B35 (OR 2.431, 95% CI 1.398\u20134.108). All three combinations involved a DRM in the reverse transcriptase (RT) gene. Of the three combinations, two were with HLA-B, while one was with HLA-A. These three candidate pairs were further evaluated with three complementary methods: (1) a further cross-sectional analysis examining the presence of an interaction term between infection time and HLA\u00a0type, (2) a longitudinal survival analysis examining time to the DRM detection among treatment-na\u00efve patients initially without the queried DRM detectable, and (3) NetMHCPan MHC binding prediction analysis to examine mechanistic plausibility.\n\n**Table 1.**\n General characteristics of SHCS patients and those with resistance mutation and human leukocyte antigen\u00a0(HLA) data.Overview of general characteristics of SHCS patients and the subsets with sequencing resistance testing data, HLA-I data, and both. IQR: interquartile range; MSM: men who have sex with men; HET: heterosexual; IDU: intravenous drug use.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>All SHCS participants</th>\n      <th>SHCS patients with resistance testing data</th>\n      <th>SHCS patients with HLA-I data</th>\n      <th>SHCS patients with HLA-I and resistance testing data</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number</td>\n      <td>20,741</td>\n      <td>13,116</td>\n      <td>6450</td>\n      <td>3997</td>\n    </tr>\n    <tr>\n      <td>Median age (IQR)</td>\n      <td>56 (48\u201362)</td>\n      <td>54 (47\u201360)</td>\n      <td>55 (49\u201362)</td>\n      <td>54 (47\u201360)</td>\n    </tr>\n    <tr>\n      <td>Male (%)</td>\n      <td>15,064 (72.6%)</td>\n      <td>9402 (71.2%)</td>\n      <td>4836 (75.0%)</td>\n      <td>3027 (75.7%)</td>\n    </tr>\n    <tr>\n      <td>Risk group: MSM</td>\n      <td>8100 (39.1%)</td>\n      <td>5226 (39.8%)</td>\n      <td>2777 (43.1%)</td>\n      <td>1784 (44.6%)</td>\n    </tr>\n    <tr>\n      <td>HET</td>\n      <td>6841 (33.0%)</td>\n      <td>4731 (36.1%)</td>\n      <td>2173 (33.7%)</td>\n      <td>1439 (36.0%)</td>\n    </tr>\n    <tr>\n      <td>IDU</td>\n      <td>4840 (23.3%)</td>\n      <td>2568 (19.6%)</td>\n      <td>1255 (19.5%)</td>\n      <td>620 (15.5%)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>960 (4.6%)</td>\n      <td>591 (4.5%)</td>\n      <td>245 (3.8%)</td>\n      <td>154 (3.9%)</td>\n    </tr>\n    <tr>\n      <td>White (%)</td>\n      <td>14044 (67.7%)</td>\n      <td>9993 (76.2%)</td>\n      <td>5661 (87.8%)</td>\n      <td>3487 (87.2%)</td>\n    </tr>\n  </tbody>\n</table>\n\n### HLA-I types and DRMs in study population\n\nThe most commonly found HLA-I types are summarized in Table 2. Of note, 668 (16.7%) have an HLA-A24 allele, 376 (9.4%) with an HLA-B18 allele, and 728 (18.2%) with HLA-B35. Of the 3997 patients with both DRM and HLA-I data available, 719 (18.0%) had at least 1\u00a0DRM, of which 209 (5.2%) had multiple DRMs. Overall, 2267 of all 5155 DRMs in the study population are found among treatment-na\u00efve individuals, and\u00a0the most frequent of the 1072 DRMs found in the first resistance test in treatment-na\u00efve individuals are summarized in Table 3. As for the two DRMs of interest, 145 had a DRM at RT-E138: 124 RT-E138A, 14 RT-E138G, 6 RT-E138K, and\u00a01 RT-E138Q. Eighty-two were found at RT-V179: 68 RT-V179D, 13 RT-V179E, and\u00a01 RT-V179F.\n\n**Table 2.**\n Distribution of most common HLA-I A, B, and C alleles in study population.Ten most common HLA-A, -B, and -C types in study population individuals with both HLA-I and DRM information. Frequency and percentage of individuals with each allele are indicated.\u00a0DRM, drug-resistant mutation; HLA, human leukocyte antigen.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>HLA-A type</td>\n      <td>Frequency</td>\n      <td>Percentage</td>\n    </tr>\n    <tr>\n      <td>02</td>\n      <td>1838</td>\n      <td>46.0</td>\n    </tr>\n    <tr>\n      <td>03</td>\n      <td>964</td>\n      <td>24.1</td>\n    </tr>\n    <tr>\n      <td>01</td>\n      <td>857</td>\n      <td>21.4</td>\n    </tr>\n    <tr>\n      <td>24</td>\n      <td>668</td>\n      <td>16.7</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>493</td>\n      <td>12.3</td>\n    </tr>\n    <tr>\n      <td>68</td>\n      <td>340</td>\n      <td>8.5</td>\n    </tr>\n    <tr>\n      <td>32</td>\n      <td>302</td>\n      <td>7.6</td>\n    </tr>\n    <tr>\n      <td>30</td>\n      <td>300</td>\n      <td>7.5</td>\n    </tr>\n    <tr>\n      <td>26</td>\n      <td>272</td>\n      <td>6.8</td>\n    </tr>\n    <tr>\n      <td>29</td>\n      <td>261</td>\n      <td>6.5</td>\n    </tr>\n    <tr>\n      <td>HLA-B type</td>\n      <td>Frequency</td>\n      <td>Percentage</td>\n    </tr>\n    <tr>\n      <td>44</td>\n      <td>905</td>\n      <td>22.6</td>\n    </tr>\n    <tr>\n      <td>07</td>\n      <td>814</td>\n      <td>20.4</td>\n    </tr>\n    <tr>\n      <td>35</td>\n      <td>729</td>\n      <td>18.2</td>\n    </tr>\n    <tr>\n      <td>51</td>\n      <td>639</td>\n      <td>16.0</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>582</td>\n      <td>14.6</td>\n    </tr>\n    <tr>\n      <td>08</td>\n      <td>500</td>\n      <td>12.5</td>\n    </tr>\n    <tr>\n      <td>40</td>\n      <td>410</td>\n      <td>10.3</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>376</td>\n      <td>9.4</td>\n    </tr>\n    <tr>\n      <td>57</td>\n      <td>328</td>\n      <td>8.2</td>\n    </tr>\n    <tr>\n      <td>27</td>\n      <td>294</td>\n      <td>7.4</td>\n    </tr>\n    <tr>\n      <td>HLA-C type</td>\n      <td>Frequency</td>\n      <td>Percentage</td>\n    </tr>\n    <tr>\n      <td>07</td>\n      <td>1794</td>\n      <td>44.9</td>\n    </tr>\n    <tr>\n      <td>04</td>\n      <td>941</td>\n      <td>23.5</td>\n    </tr>\n    <tr>\n      <td>03</td>\n      <td>812</td>\n      <td>20.3</td>\n    </tr>\n    <tr>\n      <td>06</td>\n      <td>772</td>\n      <td>19.3</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>510</td>\n      <td>12.8</td>\n    </tr>\n    <tr>\n      <td>05</td>\n      <td>485</td>\n      <td>12.1</td>\n    </tr>\n    <tr>\n      <td>02</td>\n      <td>401</td>\n      <td>10.0</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>341</td>\n      <td>8.5</td>\n    </tr>\n    <tr>\n      <td>01</td>\n      <td>328</td>\n      <td>8.2</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>320</td>\n      <td>8.0</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Distribution of most common drug-resistant\u00a0mutations\u00a0(DRMs) in study population.Ten most common DRMs from the earliest available resistance testing of the study population, with the frequency and percentage of each among the study population indicated. Specific amino acid mutations represented in the population are shown.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Specific DRM</th>\n      <th>Frequency</th>\n      <th>Percentage</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RT-E138</td>\n      <td>AGKQ</td>\n      <td>145</td>\n      <td>3.63</td>\n    </tr>\n    <tr>\n      <td>RT-T215</td>\n      <td>ACDEFILNSVY</td>\n      <td>132</td>\n      <td>3.30</td>\n    </tr>\n    <tr>\n      <td>RT-V106</td>\n      <td>AIM</td>\n      <td>95</td>\n      <td>2.38</td>\n    </tr>\n    <tr>\n      <td>RT-V179</td>\n      <td>DEF</td>\n      <td>82</td>\n      <td>2.05</td>\n    </tr>\n    <tr>\n      <td>RT-M41</td>\n      <td>L</td>\n      <td>72</td>\n      <td>1.80</td>\n    </tr>\n    <tr>\n      <td>PR-M46</td>\n      <td>ILV</td>\n      <td>47</td>\n      <td>1.18</td>\n    </tr>\n    <tr>\n      <td>RT-K103</td>\n      <td>NS</td>\n      <td>46</td>\n      <td>1.15</td>\n    </tr>\n    <tr>\n      <td>RT-K219</td>\n      <td>ENQR</td>\n      <td>34</td>\n      <td>0.85</td>\n    </tr>\n    <tr>\n      <td>RT-D67</td>\n      <td>EGN</td>\n      <td>34</td>\n      <td>0.85</td>\n    </tr>\n    <tr>\n      <td>RT-M184</td>\n      <td>IV</td>\n      <td>30</td>\n      <td>0.75</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cross-sectional analyses/logistic regression models\n\nTo examine the effect of having a given HLA-I allele on the presence of the DRM in question, we created for each candidate pair a logistic regression model predicting the presence of that specific DRM (at the earliest resistance testing), given the\u00a0presence/absence of the queried HLA-I type. From the three candidate pairs, one resultant logistic regression model had a significant interaction term between presence of the queried HLA\u00a0type and duration of HIV infection (Figure 2). For RT-E138:HLA-B18, duration of HIV infection (OR 0.918, 95% CI 0.862\u20130.971 [p-value=0.004]) and the HLA:time-to-DRM interaction term (OR 1.169, 95% CI 1.075\u20131.273 [p-value<0.001]) were both significant predictors of an RT-E138 mutation. Greater infection time was thus correlated with a smaller chance of having/detecting the RT-E138 mutation (due to the fitness cost of the mutation). However, in individuals with HLA-B18, the HLA:time-to-DRM interaction terms cause the selection pressure to reverse direction, hence greater infection time is instead correlated with a greater probability of an RT-E138 mutation for HLA-B18 individuals.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67388/elife-67388-fig2-v1.jpg)\n\n**Figure 2.:** Of the three candidate DRM:HLA\u00a0type pairs, one pair, RT-E138:HLA-B18, indicates a significant interaction term between the\u00a0presence of the queried HLA\u00a0type and the duration of HIV infection in a logistic regression model predicting the presence of a mutation at RT-E138 (A). (B)\u00a0Details of\u00a0all three candidates\u2019 logistic regression models.\n\n### Longitudinal/survival analyses\n\nTo examine the effect of having a given HLA-I allele on the development of the DRM in question, we performed for each pair a survival analysis to observe how many individuals initially without the DRM eventually develop it prior to initiation of ART. Two of the three candidate DRM:HLA pairs were shown to have a significant difference in the probability of the queried mutation arising in initially wild-type individuals. For RT-E138:HLA-B18, 63 (7.7%) of the 813 patients without an RT-E138 mutation were HLA-B18, among which 5 (7.9%) developed it before ART initiation, compared to the 5 (0.7%) of the 750 with another HLA-B18 type (hazard\u00a0ratio\u00a0[HR] 12.211, 95% CI 3.523\u201342.318 [p-value<0.001]) (Figure 3). RT-V179:HLA-B35 showed a similarly sharpened increased hazard of developing the mutation. Of the 150 (18.3%) of the 821 patients with HLA-B35 (initially without an HLA-B35 mutation), 3 (2.0%) developed a mutation at RT-V179, compared to only 1 (0.1%) of the 671 with another HLA-B type (HR 16.116, 95% CI 1.673\u2013155.216 [p-value=0.016]).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67388/elife-67388-fig3-v1.jpg)\n\n**Figure 3.:** (A) Cox proportional hazard ratios for developing the queried drug-resistant mutation with the queried HLA-I type. (B, C)\u00a0Cumulative hazard plots of the two pairs from (A) where the hazard ratios were significant, indicating cumulative hazards of developing the mutation among those initially wild\u00a0type, with red lines indicating individuals with the queried HLA\u00a0type and blue lines for those with another HLA\u00a0type.\n\n### Mechanistic plausibility/epitope\u00a0binding\n\nNetMHCpan predictions of HLA binding were performed to gauge the mechanistic plausibility of the effects observed in the first two analyses. These also indicated weakened HLA binding to the DRM-peptide (i.e. supporting the putative association) for two of the three candidate pairs: RT-E138:HLA-B18 and RT-V179:HLA-B35 (Supplementary file 2). Thus, in these two DRM:HLA pairs, the HLA-I allele is driving viral immune escape by reducing avidity to MHC. The two pairs supported by mechanistic plausibility are the same two pairs having a significant relationship between HLA\u00a0type presence and survival in the longitudinal analyses (Table 4). Prior literature indicating experimentally verified epitope binding of the HIV proteome to HLA also exists for these two pairs (Gatanaga et al., 2013; Kopycinski et al., 2014; Liu et al., 2006; Li et al., 2011; Llano et al., 2019; Pereyra et al., 2014; Kiepiela et al., 2007; Peretz et al., 2011; Rowland-Jones et al., 1995; Tebit et al., 2009; Bond et al., 2001).\n\n**Table 4.**\n DRM:HLA pairs corroborated by each analytical approach.Summary of HLA\u2013drug-resistant mutation pairs in all three approaches. Methods that corroborate the HLA\u2013mutation relationship are indicated by \u2018yes.\u2019 DRM, drug-resistant mutation; HLA, human leukocyte antigen.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>DRM:HLA pair</th>\n      <th>Interaction term in cross-sectional logistic regression</th>\n      <th>Longitudinal/ survival analysis</th>\n      <th>Mechanistic plausibility</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RT-E138:HLA-B18</td>\n      <td>Yes</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>RT-E138:HLA-A24</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>RT-V179:HLA-B35</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nOur analyses indicate strong evidence for the presence of an evolutionary intrapatient interaction between HIV DRMs and certain HLA-I alleles. Of the three candidate DRM:HLA pairs analyzed by three methods, two were supported by two of the analyses to show this relationship, of which one, RT-E138:HLA-B18, was supported by all three (Table 4). This is notable as this pair has been specifically investigated by Gatanaga et al., 2013, who showed both experimentally and through structural modeling that HLA B18-restricted CTLs select for a mutation in RT138. Our study independently demonstrates that this interaction is relevant at the population level, both in cross-sectional and in longitudinal cohort data. Of note, both DRMs are associated with the nonnucleoside analogue reverse transcriptase inhibitor class of ART drugs, with RT-V179D/F/T being associated with resistance to Etravirine and RT-V179L being associated with\u00a0Rilpivirine. RT-E138A/G/K/Q is associated with resistance to Etravirine and Rilpivirine (International Antiviral Society, 2019). Estimates of virological failure for these two drugs are upwards of 5% and 11%, for Efavirenz and Rilpivirine, respectively (Sanford, 2012).\n\nThese results have major implications for our understanding of the evolutionary epidemiology in viral infections as they demonstrate a considerable interaction between the processes of drug resistance evolution and immune escape observed for several drug classes and HLA alleles in a representative patient population. This extends the standard paradigm that resistance mutations are acquired in treated individuals, may become transmitted, but eventually disappear in treated individuals with the possibility that resistance mutations newly emerge in untreated individuals due to immune escape. While this mechanism does obviously not account for the majority of DRMs in patients with untreated HIV, it may not be a negligible phenomenon.\n\nIn fact, HLA\u00a0type-driven viral evolution in DRM-relevant CTL\u00a0epitopes may be particularly relevant in light of the estimated 10% with a DRM in ART-na\u00efve European HIV-positive patients, and even higher figures in low-resource settings, where continuing issues with access to treatment and adherence exacerbate the risk of treatment failure (G\u00fcnthard et al., 2019; Hofstra et al., 2016; Wittkop et al., 2011; Chimukangara et al., 2019; Pess\u00f4a and Sanabani, 2017). As HLA is extremely diverse in the human population, and exhibits high variation in allelic frequency in different geographic regions (Piazza et al., 1980), this DRM:HLA link may partially explain regional variations in pre-treatment drug resistance. Accordingly, we would expect the emergence of certain DRMs in the population that\u00a0is ART-na\u00efve, or specifically, na\u00efve to Etravirine and Rilpivirine, if the local population has a higher prevalence of the HLA types indicated in our analyses.\n\nAs the SHCS primarily consists of individuals of white ethnicity from Switzerland and surrounding countries, our study is statistically best powered to detect DRM:HLA pairs amongst white patients, and may be too underpowered to detect DRM:HLA pairs involving HLA-I alleles more prevalent in non-white, low-resource settings \u2013\u00a0precisely where DRMs are a more urgent issue. This is even concerning considering the high number of pairs eliminated after filtering out those with insufficient numbers to power an analysis (Figure 1). This lack of power may explain, for example, RT-V179:HLA-B35 indicates a DRM:HLA association in the longitudinal analysis, but not in the cross-sectional analysis with the interaction term (Table 4). It is conceivable that with greater numbers of patients and more years of follow-up that more DRM:HLA pairs would be detected and that these inter-analyses inconsistencies would be resolved, though we should not exclude the possibility of other sources for such discrepancies, for example, imprecise estimates of HIV infection time. The limitation of most sequences to the pol gene also made the analyses underpowered to find DRM:HLA relationships in other genes.\n\nDespite these limitations, our study is strengthened by its methodological breadth and thoroughness. While other studies have examined the link between HLA-I and DRMs (Ahlenstiel et al., 2007; Bailey et al., 2007), this study is on a numerically larger scale, and is unique to systematically examine an entire HIV cohort population\u2019s DRM profiles and HLA-I types to screen for potential DRM:HLA pairs. As the cross-sectional analysis took into account duration of infection, it thus effectively excluded from consideration tDRMs that were disadvantageous to viral fitness in ART-na\u00efve patients, identifying any DRMs that remained over time despite the lack of selection pressure from ART, thus mitigating the possibility that these DRMs are merely tDRMs with no relevance to viral pathogenesis in the patient. Additionally, as it is now clinical practice to immediately initiate ART in newly diagnosed patients since several years, there is now hardly ever more than one ART-na\u00efve sequence per patient, thus making our longitudinal analysis very unique and difficult to replicate in the future (World Health Organization, 2016; Ryom et al., 2016).\n\nBy utilizing three different analytical approaches, especially by combining the longitudinal and cross-sectional approaches, we are able to identity and validate DRM:HLA pairs where there is this epitope\u2013mutation interaction. The NetMHCPan analyses allowed us to connect the associations we statistically detected at a population level with predicted MHC binding, which was additionally supported by prior experimental findings. This screening process\u00a0is also strengthened by the restriction to pairs where the HLA-I and DRM frequencies have sufficient power, thus reducing the number of performed tests and the magnitude of the Benjamini\u2013Hochberg multiple testing adjustment.\n\nOur findings not only have an impact on our understanding of why DRMs tend to be transmitted and maintained in certain individuals, but may also help inform ART in the future. While it would not be feasible to tailor ART treatment based on personal HLA genotyping in resource-limited settings, this information could be used to help anticipate a higher frequency of certain DRMs where a corresponding HLA-I type is more prevalent. As HIV sequencing progresses, more complete DRM:HLA data on other genes, particularly integrase, will become available at sufficiently powered frequencies, enabling us to detect potential DRM:HLA pairs that may affect the efficacy of integrase inhibitors, a newer and increasingly used ART drug class.\n",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "97ed0adc-4b28-42d3-b723-eccae202f960",
+      "submission_id": "5ec7affd-ee1a-4416-92d7-1fdcd1210ffa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joshua T Schiffer, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67388.sa1](https://doi.org/10.7554/eLife.67388.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper uses a rigorous methodological approach to identify an interesting and novel mechanism of HIV drug resistance in addition to acquired and transmitted drug resistance: accidental resistance arising coincidentally due to immune escape. This finding is of potential clinical importance as such mutations can arise spontaneously during untreated HIV infection in the context of a specific HLA-type.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Systematic screening of viral and human genetic variation identifies antiretroviral resistance and immune escape link\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Joshua T Schiffer as the Reviewing Editor and Reviewr #1, and the evaluation has been overseen by Jos van der Meer as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Please expand and clarify the description of the DRM and genotyping data. Please specify the number of different HLA-types, the relative frequencies of the predominant HLA-types, the number of different drug resistance variants found in ART-na\u00efve patients and their relative frequency in the population as well as frequencies of multiple DRMs.\n\n2. In the results, please include a first paragraph that puts the subsequent analysis into context and describe the purpose of the cross-sectional and survival analyses before presenting the results.\n\n3. Either eliminate the term \"literature search\" or specifically describe the search methodology that was used to perform this search.\n\n4. Include viral load data if available as described by Reviewer 1.\n\nReviewer #1:\n\nThis paper by Nguyen and colleagues identifies 3 possible HIV mutations which are linked by HLA-association and drug resistance. The conclusions are justified based on the analysis. The results are unlikely to influence clinical practice as the identified mutations are of only occasional importance in the clinic. However, the general concept is of great relevance to HIV and other viral infections.\n\nStrengths of the study are:\n\n1. Novel conclusions: the paper is important because it identifies a new source of possible drug resistance in addition to selective pressure during failed therapy and transmitted drug resistance.\n\n2. Methodology strength: the authors do a nice job of attempting to move towards causality rather than correlation. Specifically, they establish strength of correlation, temporality (the survival analysis showing accrual of the new mutation over time), assessment of possible confounding variables such as ruling out transmitted mutations with the survival analysis and looking at an interaction term with infection time, assessing mechanistic plausibility with literature review and utilizing a very large cohort.\n\n3. Thoughtful and clearly written intro and discussion.\n\nThere were no major weaknesses with the study from my perspective.\n\nThis study was extremely clearly written and I believe the scientific conclusions are justified by the analysis. One area of interest would be viral loads among study participants with specific HLA/drug resistance pairs. If possible and if data is available, then it would be interesting to see whether onset of a new mutation as seen in the survival analysis is associated with a decrease in viral load due to a fitness cost. There would be a natural comparison to make versus viral load changes in all other participants, as well as those with relevant HLA types who do not develop new drug resistance mutations. A similar approach with CD4 T cell count trajectories would also be interesting and in theory easy to perform.\n\nReviewer #2:\n\nDrug resistance mutations (DRMs) are known to emerge and be selected for in patients on ART experiencing treatment failure. Transmission of DRMs can lead to high levels of drug resistance in treatment-na\u00efve individuals in resource-limited settings, which may compromise first-line treatment regimens. Here the authors investigated whether the emergence and persistence of DRMs in untreated individuals could also occur as a side effect of immune selection. To this end, they screened for associations between drug resistance mutations and different HLA-1 alleles in a large cohort of nearly 4,000 treatment-na\u00efve patients.\n\nThe authors identified three DRM-HLA-1 pairs where the presence of the HLA-1 allele was predictive of the patient having acquired the DRM prior to starting ART. Similar analyses of other patients cohorts have also identified potential associations between DRMs and specific HLA-1 alleles, so in that sense, the novelty of these findings is limited. However, this study substantially extends previous work by incorporating additional analyses that account for the duration of infection before treatment and the time to emergence of drug resistance, leveraging their exceptionally detailed dataset. These analyses revealed that patients without the HLA-B18 allele who had acquired the DRM at transmission were likely to revert to wildtype over time due to the fitness cost associated with the mutation, whereas patients with the HLA-B18 allele either retained the transmitted DRM or generated it de novo to escape immune pressure. Longitudinal survival analysis further indicated that patients with the HLA-B18 and HLA-B35 alleles who did not initially have the associated DRMs were significantly more likely to acquire them than patients without the alleles.\n\nOverall, the conclusions of this paper are well supported by data. The statistical methods used are rigorous and straightforward to apply to cohort data for other populations. However, the description of the DRM and genotyping data is minimal, and its presentation is somewhat confusing. While the three identified HLA-DRM pairs were analyzed extensively, it is not clear how frequent these genotypes and DRMs (independently of each other) are in the patient cohort. As currently written, the manuscript lacks context for assessing the contribution of immune-driven DRMs relative to transmission-acquired DRMs in the treatment-na\u00efve HIV+ population. Overall, however, this paper provides a valuable contribution to the field as a proof-of-concept demonstration of the emergence of immune-derived DRMs.\n\nThe Results section would greatly benefit from a first paragraph that puts the subsequent analysis into context. Currently it is challenging to get any sense for the distribution of DMRs and HLA-types in the population. It would help to specify the number of different HLA-types, the relative frequencies of the predominant HLA-types, the number of different drug resistance variants found in ART-na\u00efve patients and their relative frequency in the population. What proportion of the patients that were included in the study had any drug resistance mutations at all? Did any patients have multiple DRMs?\n\nIn my opinion, the Results section would flow more logically if the purpose of the cross-sectional and survival analyses were discussed before presenting the results. E.g. A cross-sectional analysis was performed to assess \"\u2026\" and a survival analysis to assess \"\u2026\".\n\nSpecifying \"literature search\" as an analysis methodology seems a little clunky. Why not simply state that the B18 HLA type has been shown to bind to the epitope containing the E138 DR mutation in several previous studies [listing citations]?\n\nWould the cross-section analysis have more power if the two potential HLA alleles associated with the PR-E138 DRM were compared simultaneously against a reference group containing all other alleles? In the current analysis, the two potentially important alleles are essentially compared against each other (as part of the \"other\" category).\n\nIt would be helpful if the frequencies in Figure 3A would be spelled out in text rather than just shown in the table. E.g. what proportion of patients had the DRM-associated HLA alleles, and what fraction of these patients subsequently acquired the DRMs?\n",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d256248c-03fe-4d04-8bb1-584bb7f8c126",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C1",
+      "claim": "The Swiss HIV Cohort Study (SHCS) is a prospective multicenter study with continuing enrollment, aiming to include all people living with HIV in Switzerland since 1988.",
+      "claim_type": "EXPLICIT",
+      "source": "The SHCS is a prospective multicenter study with continuing enrollment, aiming to include all people living with HIV in Switzerland since 1988.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the SHCS study design and objectives, representing established knowledge about this cohort.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "85f1b00d-fc40-4bbb-84fb-24d7b0649f74",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C2",
+      "claim": "About half of all people living with HIV as notified to the Swiss health authorities are voluntarily participating in the SHCS.",
+      "claim_type": "EXPLICIT",
+      "source": "About half of all people living with HIV (PLWH) as notified to the Swiss health authorities are voluntarily participating in the SHCS, and include three-quarters of all PLWH receiving ART in the country (Schoeni-Affolter et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schoeni-Affolter et al., 2010, describing the representativeness of the SHCS cohort.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "2e914f3a-bdc3-4a6e-97d9-1507fc5df2eb",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C3",
+      "claim": "Three-quarters of all people living with HIV receiving ART in Switzerland are participating in the SHCS.",
+      "claim_type": "EXPLICIT",
+      "source": "About half of all people living with HIV (PLWH) as notified to the Swiss health authorities are voluntarily participating in the SHCS, and include three-quarters of all PLWH receiving ART in the country (Schoeni-Affolter et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schoeni-Affolter et al., 2010, describing the representativeness of the SHCS cohort.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "6607064c-e756-49b5-a3f0-fe83f81931b2",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C4",
+      "claim": "As of August 2019, the SHCS has a cumulative total of 20,741 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "As of August 2019, the SHCS has a cumulative total of 20,741 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the cohort size at a specific time point, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "8d49e0b7-2c47-4636-b03f-fa94e1a7e2da",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C5",
+      "claim": "The SHCS Drug Resistance Database contains HIV sequence data, primarily partial pol gene sequences, used to determine the presence of DRMs in the viral genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The SHCS Drug Resistance Database contains the HIV sequence data, primarily partial pol gene sequences, used to determine the presence of DRMs in the viral genome (von Wyl et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to von Wyl et al., 2007, describing the database content and purpose.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "c71035b0-d5ac-45cf-b1d4-d5dbb5b722d4",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C6",
+      "claim": "The SHCS Drug Resistance Database currently covers 13,798 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "This data, currently covering 13,798 patients, was obtained from both routine clinical testing and systematic retroactive sequencing of stored plasma samples (Kletenkov et al., 2017; von Wyl et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of patients with resistance data, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "25d57489-c2c9-4ba0-b8ec-a6c9f9e20be3",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C7",
+      "claim": "Drug resistance data was obtained from both routine clinical testing and systematic retroactive sequencing of stored plasma samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This data, currently covering 13,798 patients, was obtained from both routine clinical testing and systematic retroactive sequencing of stored plasma samples (Kletenkov et al., 2017; von Wyl et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kletenkov et al., 2017 and von Wyl et al., 2016, describing the data collection methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "6b7c14e2-18e2-4f6b-90e3-baa5a04a5ff9",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C8",
+      "claim": "Only DRMs as defined by the Stanford Drug Resistance Database were considered in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce the scope of our systematic screening to only HIV mutations relevant to drug resistance (thus reducing the risk of overtesting), we only considered the presence of DRMs as defined by the Stanford Drug Resistance Database (Rhee et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rhee et al., 2003, describing the use of a standardized definition of DRMs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "dbc1cef6-92e0-49e5-a5bf-8625650b722f",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C9",
+      "claim": "Only sequences in ART-na\u00efve individuals (before ART treatment) were considered to avoid confounding by the effect of ART.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid confounding by the effect of ART, we only considered sequences in ART-na\u00efve individuals (before ART treatment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study design decision to exclude treated individuals, representing a methodological choice based on inference about confounding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "7ee4115e-093b-4053-b0be-bdff77c79230",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C10",
+      "claim": "Data on the HLA class I type was available for 6453 SHCS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Data on the HLA class I type was available for 6453 SHCS patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of patients with HLA data, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "344e5648-a967-45b5-8e66-d02be3eeec61",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C11",
+      "claim": "HLA information was obtained from SNP genotype data, using SNP2HLA with the type 1 Diabetes Genetics Consortium reference panel for HLA imputation techniques on the exome/SNP data.",
+      "claim_type": "EXPLICIT",
+      "source": "This information was obtained from SNP genotype data, using SNP2HLA with the type 1 Diabetes Genetics Consortium reference panel for HLA imputation techniques on the exome/SNP data (Jia et al., 2013; Szolek et al., 2014; Dilthey et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jia et al., 2013; Szolek et al., 2014; Dilthey et al., 2016, describing the HLA imputation methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "c6d0fd7f-19e1-473f-8982-3ff3cb3f0deb",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C12",
+      "claim": "The analyses were limited to HLA class I (HLA-A, -B, and -C) considering the existing literature supporting the role of HLA class I peptides in HIV control.",
+      "claim_type": "EXPLICIT",
+      "source": "We limited our analyses to that of the HLA class I (HLA-A, -B, and -C) considering the existing literature supporting the role of HLA class I peptides in HIV control (Leslie et al., 2010; Pereyra et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Leslie et al., 2010 and Pereyra et al., 2010, describing the rationale for focusing on HLA class I.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "35321789-11b0-406a-a1ae-f4a59fa052c1",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C13",
+      "claim": "Of the 6453 patients with HLA data, 3997 additionally had drug resistance testing data.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these patients with HLA data, 3997 additionally had drug resistance testing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of patients with both HLA and resistance data, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "65a3eed5-90dd-43bb-b4df-55038d8e2217",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C14",
+      "claim": "There were 5561 possible combinations of DRMs and HLA-I types represented in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "As there were a possible 5561 combinations represented in our dataset, it was necessary to reduce these candidate pairs to only those for which our data provided sufficient statistical power to detect an association (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of the number of possible combinations, representing data from the study and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "7d09f26c-ca43-4962-9af7-57870b63b602",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C15",
+      "claim": "Combinations were filtered to only those where the number of SHCS patients with the given mutation or HLA type were sufficient to provide a statistical power of 0.8, assuming an odds ratio of 3.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we filtered out only the combinations where the number of SHCS patients with the given mutation or HLA type were sufficient to provide a statistical power of 0.8, assuming an odds ratio (OR) of 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the filtering criteria based on statistical power calculations, representing a methodological decision.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "8bd1f11a-c482-48a9-b7df-0e0d75e35e09",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C16",
+      "claim": "After filtering for statistical power, 225 DRM:HLA pairs remained for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 225 pairs, from which 225 logistic regression models were made.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of pairs analyzed, representing data from the study and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "9768d1a7-c2c6-4695-bcdc-594128541e00",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C17",
+      "claim": "A Benjamini-Hochberg adjustment was used to account for multiple testing, considering a false discovery rate of 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used a Benjamini\u2013Hochberg adjustment to account for multiple testing, considering a false discovery rate of 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the multiple testing correction method and threshold, representing a methodological decision.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "bc012d0b-5f63-4f80-84a8-fdaea6be15e4",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C18",
+      "claim": "Three DRM:HLA pairs were found to have a significant impact of the queried HLA type on the odds of observing the DRM after multiple testing adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "Using logistic regression models, we found three DRM:HLA pairs after multiple testing adjustment (described in Supplementary file 1), with a significant impact of the queried HLA type on the odds of observing the DRM: RT-E138:HLA-B18 (OR 6.999, 95% CI 4.662\u201310.413), RT-E138:HLA-A24 (OR 2.444, 95% CI 1.602\u20133.658), and RT-V179:HLA-B35 (OR 2.431, 95% CI 1.398\u20134.108).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the results from logistic regression models with specific odds ratios and confidence intervals, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "e19adf9d-b380-466c-a4bb-bb67d59913c8",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C19",
+      "claim": "RT-E138:HLA-B18 has an odds ratio of 6.999 (95% CI 4.662\u201310.413) for the association between HLA-B18 and RT-E138 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-E138:HLA-B18 (OR 6.999, 95% CI 4.662\u201310.413)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the odds ratio from logistic regression analysis, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "9b8db1e7-900f-4bed-9791-442a7d6361d0",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C20",
+      "claim": "RT-E138:HLA-A24 has an odds ratio of 2.444 (95% CI 1.602\u20133.658) for the association between HLA-A24 and RT-E138 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-E138:HLA-A24 (OR 2.444, 95% CI 1.602\u20133.658)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the odds ratio from logistic regression analysis, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "c9b023d4-c691-4b1b-8fa5-85f87cf11f7d",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C21",
+      "claim": "RT-V179:HLA-B35 has an odds ratio of 2.431 (95% CI 1.398\u20134.108) for the association between HLA-B35 and RT-V179 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-V179:HLA-B35 (OR 2.431, 95% CI 1.398\u20134.108)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the odds ratio from logistic regression analysis, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "53acfdc2-8908-49bd-b43e-c2083eb3c31b",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C22",
+      "claim": "All three significant DRM:HLA combinations involved a DRM in the reverse transcriptase (RT) gene.",
+      "claim_type": "EXPLICIT",
+      "source": "All three combinations involved a DRM in the reverse transcriptase (RT) gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement summarizing the location of the identified DRMs, representing an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "425e5ee1-a1ac-45ff-bfd4-ef9a88c21a04",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C23",
+      "claim": "Of the three significant combinations, two were with HLA-B, while one was with HLA-A.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the three combinations, two were with HLA-B, while one was with HLA-A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement summarizing the HLA types in the identified pairs, representing an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "6e010ffd-3e97-4537-8612-dba07b227579",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C24",
+      "claim": "All analyses (besides the epitope binding predictions performed with netMHCpan) were done in R (version 3.6.1).",
+      "claim_type": "EXPLICIT",
+      "source": "All analyses (besides the epitope binding predictions performed with netMHCpan) were done in R (version 3.6.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the software used for analyses, representing a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "f4b17f15-1c4c-494c-a37a-4054eefa84a5",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C25",
+      "claim": "From the 20,741 patients in the SHCS, 3997 had both HLA-I alleles data and resistance testing data.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 20,741 patients in the SHCS, 3997 had both HLA-I alleles data and resistance testing data (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of the number of patients with both data types, representing data from the study and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "24d6ba86-2998-4c56-917b-fef9d32c7300",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C26",
+      "claim": "Patients with HLA data were more likely to be Caucasian compared to the general SHCS population.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with HLA data were more likely to be Caucasian compared to the general SHCS population, as the HLA SNP imputation methods were validated on a Caucasian population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement comparing the ethnic composition of the HLA subset to the general population, with an explanation based on the imputation methodology, representing an observation from the data and inference about the cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "531eaa59-b1a8-4b1e-9a9b-5f4d62e3f313",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C27",
+      "claim": "The HLA SNP imputation methods were validated on a Caucasian population.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with HLA data were more likely to be Caucasian compared to the general SHCS population, as the HLA SNP imputation methods were validated on a Caucasian population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the validation population for the imputation methods, representing established knowledge about the methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "cc71769b-72d1-44bd-9dcb-0b7edc507f33",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C28",
+      "claim": "Only 225 of the 5561 DRM:HLA pairs had sufficient diversity at the HLA and DRM positions to convey a power greater than 0.8 to detect a strong effect defined as OR = 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 225 of these pairs had sufficient diversity at the HLA and DRM positions to convey a power greater than 0.8 to detect a strong effect defined as OR = 3 (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the filtering results based on statistical power, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "ff691e97-1707-4072-ac2f-68ac01032ba5",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C29",
+      "claim": "668 patients (16.7%) have an HLA-A24 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, 668 (16.7%) have an HLA-A24 allele",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the frequency of HLA-A24 in the study population, representing data from the study and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "8d81e782-7fb6-4d64-9625-98f1f65e2355",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C30",
+      "claim": "376 patients (9.4%) have an HLA-B18 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "376 (9.4%) with an HLA-B18 allele",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the frequency of HLA-B18 in the study population, representing data from the study and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "4e6e2213-7718-4f4f-abcf-57c384f61a3a",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C31",
+      "claim": "728 patients (18.2%) have an HLA-B35 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "728 (18.2%) with HLA-B35",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the frequency of HLA-B35 in the study population, representing data from the study and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "795c789f-a594-49fc-81c3-acb326230e77",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C32",
+      "claim": "Of the 3997 patients with both DRM and HLA-I data available, 719 (18.0%) had at least 1 DRM.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 3997 patients with both DRM and HLA-I data available, 719 (18.0%) had at least 1 DRM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the frequency of DRMs in the study population, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "7419ce6f-db30-4437-a943-4f1f571dd0ab",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C33",
+      "claim": "209 patients (5.2%) had multiple DRMs.",
+      "claim_type": "EXPLICIT",
+      "source": "of which 209 (5.2%) had multiple DRMs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the frequency of multiple DRMs in the study population, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "0b3bcdb6-d42e-4288-b446-3233bf851014",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C34",
+      "claim": "2267 of all 5155 DRMs in the study population are found among treatment-na\u00efve individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 2267 of all 5155 DRMs in the study population are found among treatment-na\u00efve individuals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the distribution of DRMs by treatment status, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "b5083507-33c7-42b3-ae51-00387c23fac9",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C35",
+      "claim": "145 patients had a DRM at RT-E138: 124 RT-E138A, 14 RT-E138G, 6 RT-E138K, and 1 RT-E138Q.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the two DRMs of interest, 145 had a DRM at RT-E138: 124 RT-E138A, 14 RT-E138G, 6 RT-E138K, and 1 RT-E138Q.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the frequency and specific variants of RT-E138 mutations, representing data from the study and shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "0fc449d0-d751-48ba-98d3-5b1a70ccb3b9",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C36",
+      "claim": "82 patients had a DRM at RT-V179: 68 RT-V179D, 13 RT-V179E, and 1 RT-V179F.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty-two were found at RT-V179: 68 RT-V179D, 13 RT-V179E, and 1 RT-V179F.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the frequency and specific variants of RT-V179 mutations, representing data from the study and shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "9c4056fd-66c2-4152-802f-8b5589b5ecbb",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C37",
+      "claim": "Only one pair, RT-E138:HLA-B18, exhibited a significant interaction between infection duration and HLA in the logistic regression model.",
+      "claim_type": "EXPLICIT",
+      "source": "From the three candidate pairs, one resultant logistic regression model had a significant interaction term between presence of the queried HLA type and duration of HIV infection (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of the results from the interaction analysis, representing data from the study and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "967c05a6-58f2-4c95-9061-9487aeea32ae",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C38",
+      "claim": "For RT-E138:HLA-B18, duration of HIV infection has an odds ratio of 0.918 (95% CI 0.862\u20130.971, p-value=0.004) as a predictor of RT-E138 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "For RT-E138:HLA-B18, duration of HIV infection (OR 0.918, 95% CI 0.862\u20130.971 [p-value=0.004])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the odds ratio for infection duration from logistic regression analysis, representing data from the study and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "e6e775d5-eb4c-48f7-91ed-cbbe5f166f26",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C39",
+      "claim": "For RT-E138:HLA-B18, the HLA:time-to-DRM interaction term has an odds ratio of 1.169 (95% CI 1.075\u20131.273, p-value<0.001) as a predictor of RT-E138 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "the HLA:time-to-DRM interaction term (OR 1.169, 95% CI 1.075\u20131.273 [p-value<0.001]) were both significant predictors of an RT-E138 mutation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the odds ratio for the interaction term from logistic regression analysis, representing data from the study and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "9cd8841e-f03e-4e2f-9587-fdbaff9b3fb6",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C40",
+      "claim": "Greater infection time is correlated with a smaller chance of having/detecting the RT-E138 mutation due to the fitness cost of the mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater infection time was thus correlated with a smaller chance of having/detecting the RT-E138 mutation (due to the fitness cost of the mutation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement interpreting the negative association between infection time and mutation presence, with an explanation based on fitness cost, representing inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "015c61e7-cc27-420b-ac91-eaf6b5eccd2f",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C41",
+      "claim": "In individuals with HLA-B18, greater infection time is correlated with a greater probability of an RT-E138 mutation due to the HLA:time-to-DRM interaction term reversing the selection pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in individuals with HLA-B18, the HLA:time-to-DRM interaction terms cause the selection pressure to reverse direction, hence greater infection time is instead correlated with a greater probability of an RT-E138 mutation for HLA-B18 individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement interpreting the interaction effect, representing inference from the data about the reversal of selection pressure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "9230a9b8-ef4d-487f-971c-ac0baec604c7",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C42",
+      "claim": "Two of the three candidate DRM:HLA pairs showed a significant difference in the probability of the queried mutation arising in initially wild-type individuals in survival analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the three candidate DRM:HLA pairs were shown to have a significant difference in the probability of the queried mutation arising in initially wild-type individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the results from survival analyses, representing data from the study and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "4ae1be6c-6705-4ff5-a9f6-61f9b041f979",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C43",
+      "claim": "For RT-E138:HLA-B18, 63 (7.7%) of the 813 patients without an RT-E138 mutation were HLA-B18.",
+      "claim_type": "EXPLICIT",
+      "source": "For RT-E138:HLA-B18, 63 (7.7%) of the 813 patients without an RT-E138 mutation were HLA-B18",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number and proportion of HLA-B18 patients in the survival analysis, representing data from the study and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "86a29ed5-e2be-4d92-8205-214399df12cf",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C44",
+      "claim": "Among HLA-B18 patients initially without RT-E138 mutation, 5 (7.9%) developed it before ART initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "among which 5 (7.9%) developed it before ART initiation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number and proportion of HLA-B18 patients who developed the mutation, representing data from the study and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "f2cacb5b-767b-487e-96f8-0288d83495bb",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C45",
+      "claim": "Among non-HLA-B18 patients initially without RT-E138 mutation, 5 (0.7%) of the 750 developed it before ART initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to the 5 (0.7%) of the 750 with another HLA-B18 type",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number and proportion of non-HLA-B18 patients who developed the mutation, representing data from the study and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "dac37f9e-8b83-43d8-9740-a24aeb4d2476",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C46",
+      "claim": "RT-E138:HLA-B18 has a hazard ratio of 12.211 (95% CI 3.523\u201342.318, p-value<0.001) for developing the RT-E138 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "(hazard ratio [HR] 12.211, 95% CI 3.523\u201342.318 [p-value<0.001]) (Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of the hazard ratio from survival analysis, representing data from the study and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "515c3eb2-036b-4a2c-b20e-4a626a308104",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C47",
+      "claim": "Of the 150 (18.3%) of the 821 patients with HLA-B35 initially without an RT-V179 mutation, 3 (2.0%) developed a mutation at RT-V179.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 150 (18.3%) of the 821 patients with HLA-B35 (initially without an HLA-B35 mutation), 3 (2.0%) developed a mutation at RT-V179",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number and proportion of HLA-B35 patients who developed the mutation, representing data from the study and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "7b15f8d3-38ee-428c-9926-baa4adc7298e",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C48",
+      "claim": "Among non-HLA-B35 patients initially without RT-V179 mutation, only 1 (0.1%) of the 671 developed the mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to only 1 (0.1%) of the 671 with another HLA-B type",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number and proportion of non-HLA-B35 patients who developed the mutation, representing data from the study and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "803e9356-454a-45ac-8709-bcd9a753966a",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C49",
+      "claim": "RT-V179:HLA-B35 has a hazard ratio of 16.116 (95% CI 1.673\u2013155.216, p-value=0.016) for developing the RT-V179 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "(HR 16.116, 95% CI 1.673\u2013155.216 [p-value=0.016])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the hazard ratio from survival analysis, representing data from the study and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "cb47842b-dc9f-4b59-a0d9-0cc85e5f199c",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C50",
+      "claim": "NetMHCpan predictions indicated weakened HLA binding to the DRM-peptide for RT-E138:HLA-B18 and RT-V179:HLA-B35.",
+      "claim_type": "EXPLICIT",
+      "source": "NetMHCpan predictions of HLA binding were performed to gauge the mechanistic plausibility of the effects observed in the first two analyses. These also indicated weakened HLA binding to the DRM-peptide (i.e. supporting the putative association) for two of the three candidate pairs: RT-E138:HLA-B18 and RT-V179:HLA-B35 (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the NetMHCpan prediction results, representing data from computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "ebe7c136-42ae-4386-bebe-a462431e6ba8",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C51",
+      "claim": "In the two DRM:HLA pairs RT-E138:HLA-B18 and RT-V179:HLA-B35, the HLA-I allele is driving viral immune escape by reducing avidity to MHC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in these two DRM:HLA pairs, the HLA-I allele is driving viral immune escape by reducing avidity to MHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement interpreting the NetMHCpan results as evidence of immune escape mechanism, representing inference from the computational predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "f5fae686-9f3a-4e8e-91d5-dc5d11cc33fb",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C52",
+      "claim": "The two pairs supported by mechanistic plausibility are the same two pairs having a significant relationship between HLA type presence and survival in the longitudinal analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The two pairs supported by mechanistic plausibility are the same two pairs having a significant relationship between HLA type presence and survival in the longitudinal analyses (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement comparing the results across different analytical approaches, representing an observation from the data shown in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "ebf5bd60-a33c-4011-8d8e-8e00ce08b3c0",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C53",
+      "claim": "Prior literature indicates experimentally verified epitope binding of the HIV proteome to HLA for RT-E138:HLA-B18 and RT-V179:HLA-B35.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior literature indicating experimentally verified epitope binding of the HIV proteome to HLA also exists for these two pairs (Gatanaga et al., 2013; Kopycinski et al., 2014; Liu et al., 2006; Li et al., 2011; Llano et al., 2019; Pereyra et al., 2014; Kiepiela et al., 2007; Peretz et al., 2011; Rowland-Jones et al., 1995; Tebit et al., 2009; Bond et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations describing experimental evidence of epitope binding for these pairs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "2b1287c6-4582-4425-997f-ebccf0b375ed",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C54",
+      "claim": "RT-E138:HLA-B18 was supported by all three analytical approaches (interaction term in cross-sectional logistic regression, longitudinal/survival analysis, and mechanistic plausibility).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the three candidate DRM:HLA pairs analyzed by three methods, two were supported by two of the analyses to show this relationship, of which one, RT-E138:HLA-B18, was supported by all three (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement summarizing the results across all three analytical approaches, representing data from the study shown in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "2a6c4406-8b59-4a37-b061-101921d4de42",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C55",
+      "claim": "The RT-E138:HLA-B18 pair has been specifically investigated by Gatanaga et al., 2013, who showed both experimentally and through structural modeling that HLA B18-restricted CTLs select for a mutation in RT138.",
+      "claim_type": "EXPLICIT",
+      "source": "This is notable as this pair has been specifically investigated by Gatanaga et al., 2013, who showed both experimentally and through structural modeling that HLA B18-restricted CTLs select for a mutation in RT138.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gatanaga et al., 2013, describing prior experimental evidence for this specific DRM:HLA pair.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "b7480aa1-bc8d-490a-812f-207b606f8277",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C56",
+      "claim": "The current study independently demonstrates that the RT-E138:HLA-B18 interaction is relevant at the population level, both in cross-sectional and in longitudinal cohort data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study independently demonstrates that this interaction is relevant at the population level, both in cross-sectional and in longitudinal cohort data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's contribution, representing an interpretation of the data in the context of prior literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "b3cf1462-cdd2-447d-8969-92d4f2c77684",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C57",
+      "claim": "Both DRMs (RT-E138 and RT-V179) are associated with the nonnucleoside analogue reverse transcriptase inhibitor class of ART drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, both DRMs are associated with the nonnucleoside analogue reverse transcriptase inhibitor class of ART drugs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the drug class associated with the identified DRMs, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "f4ab0cc9-98c2-412c-ad0d-d3c65512378f",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C58",
+      "claim": "RT-V179D/F/T is associated with resistance to Etravirine.",
+      "claim_type": "EXPLICIT",
+      "source": "with RT-V179D/F/T being associated with resistance to Etravirine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about drug resistance associations, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "1e7206b3-7dfc-4eef-a19e-c28e0df56fce",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C59",
+      "claim": "RT-V179L is associated with Rilpivirine resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-V179L being associated with Rilpivirine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about drug resistance associations, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "3e12e032-e1b0-47fc-b488-49bf08f740f2",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C60",
+      "claim": "RT-E138A/G/K/Q is associated with resistance to Etravirine and Rilpivirine.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-E138A/G/K/Q is associated with resistance to Etravirine and Rilpivirine (International Antiviral Society, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to International Antiviral Society, 2019, describing drug resistance associations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "ae60a04f-836e-4347-a7d8-961537b18238",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C61",
+      "claim": "Estimates of virological failure are upwards of 5% for Efavirenz.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates of virological failure for these two drugs are upwards of 5% and 11%, for Efavirenz and Rilpivirine, respectively (Sanford, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sanford, 2012, describing virological failure rates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "8106af58-e0e7-43e7-9ca6-dfc77594eef2",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C62",
+      "claim": "Estimates of virological failure are upwards of 11% for Rilpivirine.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates of virological failure for these two drugs are upwards of 5% and 11%, for Efavirenz and Rilpivirine, respectively (Sanford, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sanford, 2012, describing virological failure rates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "88f3fb3f-b5ff-4286-ab25-67ad7b53379f",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C63",
+      "claim": "The results demonstrate a considerable interaction between the processes of drug resistance evolution and immune escape observed for several drug classes and HLA alleles in a representative patient population.",
+      "claim_type": "EXPLICIT",
+      "source": "These results have major implications for our understanding of the evolutionary epidemiology in viral infections as they demonstrate a considerable interaction between the processes of drug resistance evolution and immune escape observed for several drug classes and HLA alleles in a representative patient population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement interpreting the implications of the study results, representing inference from the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "c08afc32-36fc-4631-897e-2017b51e8628",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C64",
+      "claim": "The findings extend the standard paradigm that resistance mutations are acquired in treated individuals, may become transmitted, but eventually disappear in treated individuals with the possibility that resistance mutations newly emerge in untreated individuals due to immune escape.",
+      "claim_type": "EXPLICIT",
+      "source": "This extends the standard paradigm that resistance mutations are acquired in treated individuals, may become transmitted, but eventually disappear in treated individuals with the possibility that resistance mutations newly emerge in untreated individuals due to immune escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement interpreting the implications of the study results for understanding HIV evolution, representing inference from the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "193e249d-46e3-4305-b770-44d9bd1957b4",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C65",
+      "claim": "HLA type-driven viral evolution in DRM-relevant CTL epitopes may not account for the majority of DRMs in patients with untreated HIV, but may not be a negligible phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "While this mechanism does obviously not account for the majority of DRMs in patients with untreated HIV, it may not be a negligible phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement interpreting the relative importance of the identified mechanism, representing speculation about its contribution to overall DRM prevalence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "b1a8a95f-85d8-4320-868a-2c89bf88d73b",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C66",
+      "claim": "An estimated 10% of ART-na\u00efve European HIV-positive patients have a DRM.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, HLA type-driven viral evolution in DRM-relevant CTL epitopes may be particularly relevant in light of the estimated 10% with a DRM in ART-na\u00efve European HIV-positive patients, and even higher figures in low-resource settings, where continuing issues with access to treatment and adherence exacerbate the risk of treatment failure (G\u00fcnthard et al., 2019; Hofstra et al., 2016; Wittkop et al., 2011; Chimukangara et al., 2019; Pess\u00f4a and Sanabani, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to G\u00fcnthard et al., 2019; Hofstra et al., 2016; Wittkop et al., 2011, describing DRM prevalence in Europe.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "28c986ed-f073-461a-b131-49a3b85dd758",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C67",
+      "claim": "DRM prevalence is even higher in low-resource settings compared to Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, HLA type-driven viral evolution in DRM-relevant CTL epitopes may be particularly relevant in light of the estimated 10% with a DRM in ART-na\u00efve European HIV-positive patients, and even higher figures in low-resource settings, where continuing issues with access to treatment and adherence exacerbate the risk of treatment failure (G\u00fcnthard et al., 2019; Hofstra et al., 2016; Wittkop et al., 2011; Chimukangara et al., 2019; Pess\u00f4a and Sanabani, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chimukangara et al., 2019 and Pess\u00f4a and Sanabani, 2017, describing DRM prevalence in low-resource settings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "cd5e88b5-fb18-4755-8f95-838e5b1d18cc",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C68",
+      "claim": "Continuing issues with access to treatment and adherence in low-resource settings exacerbate the risk of treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "and even higher figures in low-resource settings, where continuing issues with access to treatment and adherence exacerbate the risk of treatment failure (G\u00fcnthard et al., 2019; Hofstra et al., 2016; Wittkop et al., 2011; Chimukangara et al., 2019; Pess\u00f4a and Sanabani, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations describing factors contributing to treatment failure in low-resource settings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "901c15dc-6e0b-41ca-a49a-9171ecb79d31",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C69",
+      "claim": "HLA is extremely diverse in the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "As HLA is extremely diverse in the human population, and exhibits high variation in allelic frequency in different geographic regions (Piazza et al., 1980)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Piazza et al., 1980, describing HLA diversity as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "2654a192-e3a9-42d2-a0fa-99e0cd10deab",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C70",
+      "claim": "HLA exhibits high variation in allelic frequency in different geographic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "As HLA is extremely diverse in the human population, and exhibits high variation in allelic frequency in different geographic regions (Piazza et al., 1980)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Piazza et al., 1980, describing geographic variation in HLA allele frequencies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "b0ca8747-7795-4ce5-a828-a3bf65642657",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C71",
+      "claim": "The DRM:HLA link may partially explain regional variations in pre-treatment drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "this DRM:HLA link may partially explain regional variations in pre-treatment drug resistance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement speculating about the implications of the findings for understanding geographic variation in DRM prevalence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "0e243057-eba7-48b9-929a-8a0028adce8a",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C72",
+      "claim": "The emergence of certain DRMs in ART-na\u00efve populations would be expected if the local population has a higher prevalence of the corresponding HLA types.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we would expect the emergence of certain DRMs in the population that is ART-na\u00efve, or specifically, na\u00efve to Etravirine and Rilpivirine, if the local population has a higher prevalence of the HLA types indicated in our analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement speculating about the expected consequences of the identified DRM:HLA associations in different populations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "732fdf76-de5f-4ca3-8003-4c448fa5d595",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C73",
+      "claim": "The SHCS primarily consists of individuals of white ethnicity from Switzerland and surrounding countries.",
+      "claim_type": "EXPLICIT",
+      "source": "As the SHCS primarily consists of individuals of white ethnicity from Switzerland and surrounding countries, our study is statistically best powered to detect DRM:HLA pairs amongst white patients",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the ethnic composition of the study population, representing data from the study shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "bd98da42-6b35-4e2c-98ea-3e8479606907",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C74",
+      "claim": "The study is statistically best powered to detect DRM:HLA pairs amongst white patients.",
+      "claim_type": "EXPLICIT",
+      "source": "As the SHCS primarily consists of individuals of white ethnicity from Switzerland and surrounding countries, our study is statistically best powered to detect DRM:HLA pairs amongst white patients",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the statistical power of the study in different ethnic groups, representing inference from the study design and population composition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "d33a7479-aad8-4f57-ad6e-d0ef56009ddb",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C75",
+      "claim": "The study may be too underpowered to detect DRM:HLA pairs involving HLA-I alleles more prevalent in non-white, low-resource settings.",
+      "claim_type": "EXPLICIT",
+      "source": "and may be too underpowered to detect DRM:HLA pairs involving HLA-I alleles more prevalent in non-white, low-resource settings \u2013 precisely where DRMs are a more urgent issue",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the limitations of the study's statistical power in non-white populations, representing inference from the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "4ff0f3dc-ce9b-43d9-b1c6-4a1289b6ada3",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C76",
+      "claim": "DRMs are a more urgent issue in non-white, low-resource settings.",
+      "claim_type": "EXPLICIT",
+      "source": "and may be too underpowered to detect DRM:HLA pairs involving HLA-I alleles more prevalent in non-white, low-resource settings \u2013 precisely where DRMs are a more urgent issue",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the relative importance of DRMs in different settings, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "8eb7362c-1ffc-43a2-a427-ab1eed4cbb61",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C77",
+      "claim": "The lack of power may explain why RT-V179:HLA-B35 indicates a DRM:HLA association in the longitudinal analysis, but not in the cross-sectional analysis with the interaction term.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of power may explain, for example, RT-V179:HLA-B35 indicates a DRM:HLA association in the longitudinal analysis, but not in the cross-sectional analysis with the interaction term (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement speculating about the reason for inconsistent results across analyses, representing speculation about the cause of the discrepancy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "01e450cb-1084-4c07-ad50-e5b8deb14be6",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C78",
+      "claim": "With greater numbers of patients and more years of follow-up, more DRM:HLA pairs would likely be detected and inter-analyses inconsistencies would be resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that with greater numbers of patients and more years of follow-up that more DRM:HLA pairs would be detected and that these inter-analyses inconsistencies would be resolved",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement speculating about the potential outcomes of a larger study, representing speculation about future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "2a0f129f-1946-4281-92ce-8f06daa5c5f0",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C79",
+      "claim": "Other sources for discrepancies between analyses, such as imprecise estimates of HIV infection time, should not be excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "though we should not exclude the possibility of other sources for such discrepancies, for example, imprecise estimates of HIV infection time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement acknowledging alternative explanations for inconsistent results, representing speculation about potential confounders.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "5ec59fd8-5f4a-46f5-95e8-e666c5e98663",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C80",
+      "claim": "The limitation of most sequences to the pol gene made the analyses underpowered to find DRM:HLA relationships in other genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The limitation of most sequences to the pol gene also made the analyses underpowered to find DRM:HLA relationships in other genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about a limitation of the study, representing inference about the impact of data availability on statistical power.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "f1249cf9-8b39-4f19-910b-dae19ad84cf9",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C81",
+      "claim": "Other studies have examined the link between HLA-I and DRMs.",
+      "claim_type": "EXPLICIT",
+      "source": "While other studies have examined the link between HLA-I and DRMs (Ahlenstiel et al., 2007; Bailey et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ahlenstiel et al., 2007 and Bailey et al., 2007, describing prior research on HLA-DRM associations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "0c3aa860-a98c-46dd-96aa-535121ba0914",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C82",
+      "claim": "This study is on a numerically larger scale than other studies examining the link between HLA-I and DRMs.",
+      "claim_type": "EXPLICIT",
+      "source": "this study is on a numerically larger scale",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement comparing the current study to prior research, representing an observation about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "26c6c1fb-2b43-48b1-b18d-e38129c2a6fb",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C83",
+      "claim": "This study is unique in systematically examining an entire HIV cohort population's DRM profiles and HLA-I types to screen for potential DRM:HLA pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "and is unique to systematically examine an entire HIV cohort population's DRM profiles and HLA-I types to screen for potential DRM:HLA pairs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the novelty of the study approach, representing an observation about the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "589f2826-41d2-482e-b275-1a8e30c38e4c",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C84",
+      "claim": "The cross-sectional analysis took into account duration of infection, effectively excluding from consideration tDRMs that were disadvantageous to viral fitness in ART-na\u00efve patients.",
+      "claim_type": "EXPLICIT",
+      "source": "As the cross-sectional analysis took into account duration of infection, it thus effectively excluded from consideration tDRMs that were disadvantageous to viral fitness in ART-na\u00efve patients",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the methodological strength of the cross-sectional analysis, representing inference about the impact of the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "0c43bc38-b845-4a0e-807c-bb2bdd79d600",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C85",
+      "claim": "The cross-sectional analysis identified DRMs that remained over time despite the lack of selection pressure from ART, mitigating the possibility that these DRMs are merely tDRMs with no relevance to viral pathogenesis in the patient.",
+      "claim_type": "EXPLICIT",
+      "source": "identifying any DRMs that remained over time despite the lack of selection pressure from ART, thus mitigating the possibility that these DRMs are merely tDRMs with no relevance to viral pathogenesis in the patient",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the methodological strength of the cross-sectional analysis, representing inference about the interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "29a42c7c-9b82-4743-83fb-5a935e0c4248",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C86",
+      "claim": "It is now clinical practice to immediately initiate ART in newly diagnosed patients since several years.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as it is now clinical practice to immediately initiate ART in newly diagnosed patients since several years, there is now hardly ever more than one ART-na\u00efve sequence per patient, thus making our longitudinal analysis very unique and difficult to replicate in the future (World Health Organization, 2016; Ryom et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to World Health Organization, 2016 and Ryom et al., 2016, describing current clinical practice.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "0c2efda1-edc4-4c97-8ac1-6fa6b2ec4fcd",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C87",
+      "claim": "There is now hardly ever more than one ART-na\u00efve sequence per patient, making the longitudinal analysis very unique and difficult to replicate in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "there is now hardly ever more than one ART-na\u00efve sequence per patient, thus making our longitudinal analysis very unique and difficult to replicate in the future (World Health Organization, 2016; Ryom et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the uniqueness of the longitudinal data, representing inference about the impact of current clinical practice on future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "abdfbda7-be59-473b-9d7c-64e66caceace",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C88",
+      "claim": "By utilizing three different analytical approaches, especially by combining the longitudinal and cross-sectional approaches, the study is able to identify and validate DRM:HLA pairs where there is epitope-mutation interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "By utilizing three different analytical approaches, especially by combining the longitudinal and cross-sectional approaches, we are able to identity and validate DRM:HLA pairs where there is this epitope\u2013mutation interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the methodological strength of using multiple analytical approaches, representing inference about the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "bfa08d87-fe91-4206-866c-aec23fed4c8e",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C89",
+      "claim": "The NetMHCPan analyses allowed connecting the associations statistically detected at a population level with predicted MHC binding, which was additionally supported by prior experimental findings.",
+      "claim_type": "EXPLICIT",
+      "source": "The NetMHCPan analyses allowed us to connect the associations we statistically detected at a population level with predicted MHC binding, which was additionally supported by prior experimental findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the methodological strength of the NetMHCpan analysis, representing inference about the integration of different types of evidence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "d5f5c5cd-e303-478a-aff8-20713c80feca",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C90",
+      "claim": "The screening process is strengthened by the restriction to pairs where the HLA-I and DRM frequencies have sufficient power, thus reducing the number of performed tests and the magnitude of the Benjamini-Hochberg multiple testing adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "This screening process is also strengthened by the restriction to pairs where the HLA-I and DRM frequencies have sufficient power, thus reducing the number of performed tests and the magnitude of the Benjamini\u2013Hochberg multiple testing adjustment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the methodological strength of the power-based filtering, representing inference about the impact of the study design on statistical testing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "bb55b4da-7cfa-41e4-a633-cd04c1d9147a",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C91",
+      "claim": "The findings may help inform ART in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings not only have an impact on our understanding of why DRMs tend to be transmitted and maintained in certain individuals, but may also help inform ART in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement speculating about the potential clinical implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "bff7b764-d6c1-4a8a-95bd-47167ed6d659",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C92",
+      "claim": "It would not be feasible to tailor ART treatment based on personal HLA genotyping in resource-limited settings.",
+      "claim_type": "EXPLICIT",
+      "source": "While it would not be feasible to tailor ART treatment based on personal HLA genotyping in resource-limited settings",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the practical limitations of applying the findings in resource-limited settings, representing inference about feasibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "d0fbd91b-e812-433b-8c12-f9ac2765798d",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C93",
+      "claim": "Information about DRM:HLA associations could be used to help anticipate a higher frequency of certain DRMs where a corresponding HLA-I type is more prevalent.",
+      "claim_type": "EXPLICIT",
+      "source": "this information could be used to help anticipate a higher frequency of certain DRMs where a corresponding HLA-I type is more prevalent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement speculating about the potential public health applications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "dc8af034-fdd7-4ca5-9991-0f48df052913",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C94",
+      "claim": "As HIV sequencing progresses, more complete DRM:HLA data on other genes, particularly integrase, will become available at sufficiently powered frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "As HIV sequencing progresses, more complete DRM:HLA data on other genes, particularly integrase, will become available at sufficiently powered frequencies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement speculating about future data availability, representing speculation about future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "d7faa259-f656-427a-8332-65b2ca1ee7ea",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C95",
+      "claim": "Future data availability will enable detection of potential DRM:HLA pairs that may affect the efficacy of integrase inhibitors, a newer and increasingly used ART drug class.",
+      "claim_type": "EXPLICIT",
+      "source": "enabling us to detect potential DRM:HLA pairs that may affect the efficacy of integrase inhibitors, a newer and increasingly used ART drug class",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement speculating about future research directions and their potential clinical relevance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "c352c234-94fc-4651-9c8b-7343244eea7d",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C96",
+      "claim": "Antiretroviral resistance remains a major obstacle to the successful and lasting suppression of HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "Antiretroviral resistance remains a major obstacle to the successful and lasting suppression of HIV (Gupta et al., 2012; G\u00fcnthard et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gupta et al., 2012 and G\u00fcnthard et al., 2019, describing the ongoing challenge of antiretroviral resistance.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "d5c009d5-cd46-4088-a06b-a3e75cb9491f",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C97",
+      "claim": "In resource-rich settings, the availability of novel drug classes and personalized HIV treatment have diminished the challenges associated with antiretroviral resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "While in resource-rich settings the availability of novel drug classes and personalized HIV treatment have diminished the challenges associated with antiretroviral resistance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the impact of treatment advances in resource-rich settings, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "277fd611-2c22-446f-a865-c3a77d09f2b7",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C98",
+      "claim": "Resource-limited settings have experienced a continuous increase in antiretroviral resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "resource-limited settings have experienced a continuous increase in antiretroviral resistance, which is now threatening the unprecedented success of the global rollout of antiretroviral treatment (ART) (Fund, 2019; Hauser et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fund, 2019 and Hauser et al., 2019, describing the trend of increasing resistance in resource-limited settings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "1fa65b51-4ee8-4cfa-9013-b9aa82921027",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C99",
+      "claim": "Increasing antiretroviral resistance is threatening the unprecedented success of the global rollout of antiretroviral treatment (ART).",
+      "claim_type": "EXPLICIT",
+      "source": "resource-limited settings have experienced a continuous increase in antiretroviral resistance, which is now threatening the unprecedented success of the global rollout of antiretroviral treatment (ART) (Fund, 2019; Hauser et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fund, 2019 and Hauser et al., 2019, describing the threat posed by increasing resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "dfda0beb-0bd8-469e-9c73-7f32cad0272b",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C100",
+      "claim": "It is becoming increasingly important to understand how human and viral genetic variation are affecting the processes generating or limiting antiretroviral resistance in the context of globalization of antiretroviral resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of this globalization of antiretroviral resistance, it is becoming increasingly important to understand how human and viral genetic variation are affecting the processes generating or limiting antiretroviral resistance (Aghokeng et al., 2011; Lataillade et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aghokeng et al., 2011 and Lataillade et al., 2010, describing the importance of understanding genetic factors in resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "980a5a12-e23a-46c3-9f38-744efdc0284c",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C101",
+      "claim": "HIV drug-resistant mutations (DRMs) can either be selected in patients on ART experiencing treatment failure (acquired drug resistance, or aDRM) or be transmitted from a patient carrying the resistance mutation to an uninfected individual (transmitted drug resistance, tDRM).",
+      "claim_type": "EXPLICIT",
+      "source": "HIV drug-resistant mutations (DRMs) can either be selected in patients on ART experiencing treatment failure (acquired drug resistance, or aDRM) or be transmitted from a patient carrying the resistance mutation to an uninfected individual (transmitted drug resistance, tDRM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement defining the two main types of drug resistance, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "46a5316a-c761-44e9-9dcf-17121fe2f978",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C102",
+      "claim": "Some DRMs have been shown to carry a fitness cost, affecting virus fitness and replication capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "As some DRMs have been shown to carry a cost, feeding on the virus fitness and replication capacity, they can revert in the absence of ART.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the fitness cost of DRMs, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "5bc5a0c6-ced7-4ac8-920e-9f7d98ccdab2",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C103",
+      "claim": "DRMs can revert in the absence of ART once the selective pressure favoring those mutations is removed.",
+      "claim_type": "EXPLICIT",
+      "source": "As some DRMs have been shown to carry a cost, feeding on the virus fitness and replication capacity, they can revert in the absence of ART. Once the selective pressure favoring those mutations is removed, their frequency within a host continuously decreases at the expense of the wild-type variant, and eventually they become undetectable by standard resistance tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about DRM reversion, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "b38a76f6-b8af-481c-b272-faf4f0dd1f0f",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C104",
+      "claim": "The time scales on which DRM reversion occurs exhibit a large variation ranging from several months to over 10 years, depending on the fitness cost that in turn is governed by both the type of mutation and the genetic background in which it occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the time scales on which reversion occurs exhibit a large variation ranging from several months to over 10 years, depending on the fitness cost that in turn is governed by both the type of mutation and the genetic background in which it occurs (K\u00fchnert et al., 2018; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to K\u00fchnert et al., 2018 and Yang et al., 2015, describing the variability in reversion time scales.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "ca863e17-4e59-4428-a5a7-7c10081e023a",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C105",
+      "claim": "The canonical perspective based on the evolutionary forces of aDRM and tDRM, and their disappearance from the replicating quasi-species, generally disregards the possibility that antiretroviral-resistant mutations are selected in untreated individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This canonical perspective based on the evolutionary forces of aDRM and tDRM, and their disappearance from the replicating quasi-species, generally disregards the possibility that antiretroviral- resistant mutations are selected in untreated individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the limitations of the standard paradigm, representing an observation about the field's understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "88b7f9c5-2e62-4098-aaa8-5e8755243d15",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C106",
+      "claim": "One process that may act against the paradigm of DRM emerging only in treated individuals and reverting in untreated individuals is accidental resistance evolution occurring as a collateral effect of viral immune escape.",
+      "claim_type": "EXPLICIT",
+      "source": "One process that may act against the paradigm of DRM emerging only in treated individuals and reverting in untreated individuals is accidental resistance evolution occurring as a collateral effect of viral immune escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement proposing an alternative mechanism for DRM emergence, representing speculation about evolutionary processes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "1a86f6ce-45f0-49ea-b83a-e528969d08e1",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C107",
+      "claim": "A well-understood instance of immune escape is evolutionary escape from binding to human leukocyte antigen (HLA), an extremely diverse gene complex encoding for major histocompatibility complex (MHC) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "A well-understood instance of this process is evolutionary escape from binding to human leukocyte antigen (HLA), an extremely diverse gene complex encoding for major histocompatibility complex (MHC) proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about HLA-mediated immune escape, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "096a556e-3f9e-4a09-b7e4-01b6f2893c2b",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C108",
+      "claim": "MHC class I proteins (corresponding to HLA class I) are found on the surface of all nucleated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MHC class I proteins (corresponding to HLA class I) are found on the surface of all nucleated cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the cellular distribution of MHC class I proteins, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "57dc301b-465b-442e-8ee3-7a22b712f941",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C109",
+      "claim": "By presenting antigens from the cell interior to the surface, MHC class I proteins allow for binding to cytotoxic CD8 T cells (CTL), thus tagging the virally infected cell for elimination by CTL.",
+      "claim_type": "EXPLICIT",
+      "source": "and by presenting antigens from the cell interior to the surface, they allow for binding to cytotoxic CD8 T cells (CTL); thus, MHC class I proteins tag the virally infected cell and can subsequently be eliminated by CTL (Markov and Pybus, 2015; Zinkernagel and Doherty, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Markov and Pybus, 2015 and Zinkernagel and Doherty, 1979, describing the function of MHC class I proteins in immune recognition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "52181ef5-b4b6-403d-a977-92f8db209bdf",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C110",
+      "claim": "The high mutation rate associated with replicating HIV predisposes to cellular and humoral immune escape, where the viral epitopes are no longer recognized by the mounted immune effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The high mutation rate associated with replicating HIV predisposes to cellular and humoral immune escape, where the viral epitopes are no longer recognized by the mounted immune effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about HIV immune escape, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "7fce2141-3a17-400a-80e6-4f9308724a0e",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C111",
+      "claim": "For CTL-mediated immune responses, the process of developing escape mutations remains a critical part of HIV pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For CTL-mediated immune responses, this process of developing escape mutations remains a critical part of HIV pathogenesis (Leslie et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leslie et al., 2004, describing the importance of CTL escape in HIV pathogenesis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "4411b150-95ec-4c7c-8519-cd9cc066456c",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C112",
+      "claim": "The high variability of encoded MHC alleles and their combinations come into play as the host HLA alleles change as a consequence of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the high variability of encoded MHC alleles and their combinations come into play, as the host HLA alleles change as a consequence of transmission (Markov and Pybus, 2015; Zinkernagel and Doherty, 1979; Borghans et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Markov and Pybus, 2015; Zinkernagel and Doherty, 1979; Borghans et al., 2004, describing the role of HLA variability in viral evolution.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "4f838d2b-13aa-48c1-8d9f-bf186a7be44d",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C113",
+      "claim": "If the viral epitope recognized by MHC-I maps to the viral genome at the same region as a DRM, this could confer an increased viral fitness leading to mutation persistence or even the emergence of a new DRM in an ART-na\u00efve host.",
+      "claim_type": "EXPLICIT",
+      "source": "If the viral epitope recognized by MHC-I maps to the viral genome at the same region, this could confer an increased viral fitness leading to mutation persistence or even the emergence of a new DRM in an ART-na\u00efve host (Gatanaga et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gatanaga et al., 2013, describing the potential for immune escape to drive DRM emergence.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "98f0cedc-efdf-444b-80b2-0fe98e5aaee4",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C114",
+      "claim": "This phenomenon of immune escape driving DRM emergence has been reported for individual HIV mutation:HLA pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "While this phenomenon has been reported for individual HIV mutation:HLA pairs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about prior reports of this phenomenon, representing established knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "c2380605-1b08-48f0-9841-b14087e7c0c3",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C115",
+      "claim": "A systematic assessment of the impact of epitope escape across HIV DRM:HLA pairs in a representative population has not yet been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "a systematic assessment of the impact of epitope escape across HIV DRM:HLA pairs in a representative population has not yet been reported",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the gap in the literature that this study addresses, representing an observation about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "3e7db6f2-f1b2-44dd-ab01-8526b336edbd",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C116",
+      "claim": "The study investigated and analyzed the viral and genetic data from ART-na\u00efve patients in the Swiss HIV Cohort Study (SHCS).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we investigated and analyzed the viral and genetic data from ART-na\u00efve patients in the Swiss HIV Cohort Study (SHCS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study design and data source, representing a methodological description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "de3c03d6-4dee-4b0f-aa5b-01e698600db5",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C117",
+      "claim": "The study leverages the unique combination of viral and human genetic data in the SHCS, with over 20,000 genotypic resistance tests and over 5000 patients with information on HLA-I alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "This is leveraging the unique combination of viral and human genetic data in the SHCS, with over 20,000 genotypic resistance tests and over 5000 patients with information on HLA-I alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the data resources available in the SHCS, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "31684bc2-186f-4047-ab84-8fbef893f7bc",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C118",
+      "claim": "The study systematically screened the cohort for associations between DRM:HLA-I pairs to identify pairs where escape from HLA-I binding might confer the DRM an evolutionary advantage even in the absence of ART.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed us to systematically screen the cohort for associations between DRM:HLA-I pairs and hence for pairs where escape from HLA-I binding might confer the DRM an evolutionary advantage even in the absence of ART.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study objective, representing the research question.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "261a1c79-3190-473d-9354-36ce02491b4d",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C119",
+      "claim": "Only one pair, RT-E138:HLA-B18, exhibited a significant interaction between infection duration and HLA.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one pair, RT-E138:HLA-B18, exhibited a significant interaction between infection duration and HLA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of a key result from the abstract, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "718a6bba-fda4-42cb-a5f8-adbba869846a",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C120",
+      "claim": "The survival analyses predicted two pairs with an increased hazard of developing DRMs: RT-E138:HLA-B18 and RT-V179:HLA-B35.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival analyses predicted two pairs with an increased hazard of developing DRMs: RT-E138:HLA-B18 and RT-V179:HLA-B35.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of a key result from the abstract, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "4535ba1b-15c8-4b58-afd9-498a3561026b",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C121",
+      "claim": "RT-E138:HLA-B18 exhibited the greatest significance in both cross-sectional and survival analyses (interaction term odds ratio 1.169 [95% CI 1.075\u20131.273]; p-value<0.001; survival hazard ratio 12.211 [95% CI 3.523\u201342.318]; p-value<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "RT-E138:HLA-B18 exhibited the greatest significance in both analyses (interaction term odds ratio [OR] 1.169 [95% confidence interval (CI) 1.075\u20131.273]; p-value<0.001; survival hazard ratio 12.211 [95% CI 3.523\u201342.318]; p-value<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of a key result from the abstract with specific statistical values, representing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "1eefb52a-ea08-4ee6-a700-2e5c2d8cd29c",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C122",
+      "claim": "The same two pairs (RT-E138:HLA-B18 and RT-V179:HLA-B35) were predicted by netMHCpan to have epitopic binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The same two pairs were also predicted by netMHCpan to have epitopic binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of a key result from the abstract, representing data from computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "74b65d2b-44f0-4e64-9417-289fec9de0e0",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C123",
+      "claim": "The study identified DRM:HLA pairs where HLA presence is associated with the presence or emergence of the DRM, indicating that the selective pressure for these mutations alternates direction depending on the presence of these HLA alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified DRM:HLA pairs where HLA presence is associated with the presence or emergence of the DRM, indicating that the selective pressure for these mutations alternates direction depending on the presence of these HLA alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the main conclusion from the abstract, representing inference from the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "b7ba57f5-5c2b-405d-a393-592851d73c7d",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "claim_id": "C124",
+      "claim": "The study was funded by the Swiss National Science Foundation within the framework of the SHCS, and the University of Zurich, University Research Priority Program: Evolution in Action: From Genomes Ecosystems, in Switzerland.",
+      "claim_type": "EXPLICIT",
+      "source": "Funded by the Swiss National Science Foundation within the framework of the SHCS, and the University of Zurich, University Research Priority Program: Evolution in Action: From Genomes Ecosystems, in Switzerland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the funding sources, representing factual information about the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study utilized data from the Swiss HIV Cohort Study (SHCS), a large prospective cohort with 20,741 patients, of which 3,997 had both HLA-I and drug resistance testing data. The SHCS is representative, including about half of all HIV patients in Switzerland and three-quarters of those on ART. HLA data was obtained through SNP imputation methods validated on Caucasian populations, resulting in a study population enriched for white ethnicity (87.2%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13, C25-C27, C73, C116-C117 provide comprehensive documentation of the study cohort characteristics and data sources. The cohort size, representativeness, and data collection methods are well-documented with appropriate citations. The acknowledgment that the HLA imputation was validated on Caucasian populations and the resulting ethnic composition is transparent about potential limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "032ce132-884b-4e60-8ae0-3904d6f8b783",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study employed a systematic screening approach, filtering 5,561 possible DRM:HLA combinations to 225 pairs with sufficient statistical power (0.8, assuming OR=3). Analysis was restricted to ART-na\u00efve individuals and DRMs defined by the Stanford Database. Multiple testing correction was applied using Benjamini-Hochberg adjustment with FDR=0.2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C14-C17, C24, C28 describe a methodologically sound screening approach. The power-based filtering is appropriate to reduce multiple testing burden, though the liberal FDR of 0.2 and assumed OR of 3 are acknowledged by the authors as intentionally permissive, with validation through subsequent analyses. The restriction to ART-na\u00efve individuals appropriately addresses confounding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "e48e49d5-f6f0-408c-bf76-31620ff4797a",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Initial logistic regression screening identified three significant DRM:HLA pairs after multiple testing adjustment: RT-E138:HLA-B18 (OR 6.999, 95% CI 4.662-10.413), RT-E138:HLA-A24 (OR 2.444, 95% CI 1.602-3.658), and RT-V179:HLA-B35 (OR 2.431, 95% CI 1.398-4.108). All three involved reverse transcriptase mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 report the primary screening results with specific statistical values and confidence intervals. The results are clearly presented and internally consistent. However, these are preliminary findings requiring validation through subsequent analyses, which the authors appropriately conduct.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "c21ef469-36f7-4704-b6eb-69d787a91151",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study population characteristics showed 16.7% with HLA-A24, 9.4% with HLA-B18, and 18.2% with HLA-B35. Among 3,997 patients, 18.0% had at least one DRM, with 145 patients having RT-E138 mutations and 82 having RT-V179 mutations. The specific amino acid variants at these positions were documented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 provide descriptive statistics of the study population that are internally consistent and appropriately documented. The frequencies are reasonable for a European cohort and provide context for the statistical power of subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "0de689cb-1c4d-4d60-bd20-41272da2b484",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cross-sectional analysis with interaction terms revealed that only RT-E138:HLA-B18 showed a significant interaction between infection duration and HLA presence (interaction OR 1.169, 95% CI 1.075-1.273, p<0.001). Infection duration alone was negatively associated with RT-E138 (OR 0.918, p=0.004), but this reversed in HLA-B18 carriers, suggesting immune escape counteracts fitness costs over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41, C119 describe a sophisticated analysis revealing time-dependent effects. The interaction term is statistically significant and biologically plausible: the fitness cost of RT-E138 leads to reversion over time, but HLA-B18-mediated immune pressure reverses this selection. The interpretation is well-supported by the data, though the mechanistic explanation (C40-C41) involves inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Survival analysis of initially wild-type patients showed two pairs with significantly increased hazard of developing DRMs: RT-E138:HLA-B18 (HR 12.211, 95% CI 3.523-42.318, p<0.001) with 7.9% of HLA-B18 carriers developing the mutation versus 0.7% of non-carriers, and RT-V179:HLA-B35 (HR 16.116, 95% CI 1.673-155.216, p=0.016) with 2.0% versus 0.1% developing mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49, C120 present longitudinal evidence supporting the DRM:HLA associations. The hazard ratios are large and statistically significant, though confidence intervals are wide (especially for RT-V179:HLA-B35) due to small event numbers. The survival analysis provides stronger causal evidence than cross-sectional associations, as it examines mutation emergence over time.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "693134b9-147e-4eb7-8673-ec9d6bcc66e8",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NetMHCpan predictions indicated weakened HLA binding to DRM-containing peptides for RT-E138:HLA-B18 and RT-V179:HLA-B35, supporting an immune escape mechanism. These two pairs showing mechanistic plausibility were the same pairs with significant survival analysis results. Prior experimental literature supports epitope binding for these pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53, C122 provide mechanistic validation through computational predictions and literature support. The convergence of NetMHCpan predictions, survival analysis results, and prior experimental evidence strengthens confidence in these two pairs. However, NetMHCpan predictions are computational and the cited experimental evidence (C53) is from other studies, not direct validation in this cohort.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "e244dc1b-7b98-40a4-aaf3-877b61f9bd41",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RT-E138:HLA-B18 was the most robustly supported pair, validated by all three analytical approaches (cross-sectional interaction analysis, survival analysis, and mechanistic plausibility). This pair had been previously investigated by Gatanaga et al. 2013, and the current study independently demonstrates its relevance at the population level in both cross-sectional and longitudinal data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56, C121 synthesize the multi-method validation of RT-E138:HLA-B18. The convergence of evidence across three independent analytical approaches, combined with prior experimental validation, provides strong support for this association. The study's contribution is demonstrating population-level relevance of a previously characterized molecular interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "65737ea4-9802-4b4e-b584-7c581f527e5e",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both identified DRMs (RT-E138 and RT-V179) are associated with nonnucleoside reverse transcriptase inhibitors (NNRTIs). RT-E138A/G/K/Q confers resistance to Etravirine and Rilpivirine, while RT-V179D/F/T affects Etravirine and RT-V179L affects Rilpivirine. Virological failure rates for these drugs are estimated at 5% for Efavirenz and 11% for Rilpivirine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 provide clinical context for the identified mutations, citing established drug resistance associations and failure rates. These are well-established facts from the field, appropriately cited, that contextualize the clinical relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "3d755c01-3f2f-4da4-a849-809aa20b223b",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates a considerable interaction between drug resistance evolution and immune escape in a representative patient population, extending the standard paradigm by showing that resistance mutations can newly emerge in untreated individuals due to immune escape. While this mechanism may not account for the majority of DRMs in untreated patients, it may not be negligible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65, C123 present the main conceptual contribution of the study. The evidence from multiple analytical approaches supports that HLA-mediated immune pressure can drive DRM emergence in ART-na\u00efve individuals. The authors appropriately temper their conclusions by noting this is not the dominant mechanism but may be non-negligible, which is a reasonable interpretation given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "ab1d93fd-5450-433e-b007-3921ee893a6b",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings have implications for understanding geographic variation in pre-treatment drug resistance. Given that ~10% of ART-na\u00efve European patients have DRMs (higher in low-resource settings), and HLA allele frequencies vary geographically, the DRM:HLA link may partially explain regional variations. Emergence of certain DRMs would be expected in populations with higher prevalence of the corresponding HLA types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C72 extrapolate the findings to explain geographic variation in DRM prevalence. While the logic is sound and HLA geographic variation is well-established (C69-C70), the actual contribution of HLA-driven immune escape to geographic DRM patterns is speculative (C71-C72). The cited DRM prevalence figures (C66-C67) provide context but don't directly test the geographic hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "b172738a-7495-44cd-965f-9500d98db48d",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study has important limitations: it is best powered to detect DRM:HLA pairs in white patients and may be underpowered for HLA alleles prevalent in non-white populations where DRMs are more urgent. Limited statistical power may explain inconsistencies between analyses (e.g., RT-V179:HLA-B35 significant in survival but not cross-sectional analysis). Restriction to pol gene sequences limited detection of DRM:HLA relationships in other genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C80 provide transparent discussion of study limitations. The ethnic composition bias is acknowledged and explained by the imputation methodology. The speculation about power limitations (C77-C79) is reasonable given the wide confidence intervals observed. These are appropriate caveats that contextualize the generalizability of findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "a1d620fb-faca-4007-9e70-157ef85f7305",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study's methodological strengths include: larger scale than prior HLA-DRM studies, systematic screening of an entire cohort, accounting for infection duration to exclude fitness-disadvantaged tDRMs, use of three complementary analytical approaches, integration of statistical and mechanistic evidence, and power-based filtering to reduce multiple testing burden. The longitudinal analysis is unique and difficult to replicate given current clinical practice of immediate ART initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C90 describe legitimate methodological strengths. The multi-method approach (cross-sectional, longitudinal, mechanistic) provides triangulation of evidence. The point about uniqueness of longitudinal data (C86-C87) is valid given current treatment guidelines. The integration of population-level statistics with mechanistic predictions (C89) is a strength, though NetMHCpan predictions are computational, not experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "5be832e4-f09d-40d7-92e4-470c79e5fb26",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings may inform future ART strategies. While personalized HLA-based treatment selection is not feasible in resource-limited settings, the information could help anticipate higher frequencies of certain DRMs in populations with prevalent corresponding HLA types. Future availability of integrase sequencing data may enable detection of DRM:HLA pairs affecting integrase inhibitor efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C95 discuss potential applications and future directions. The practical limitations of HLA-based treatment personalization (C92) are realistic. The suggestion to use HLA prevalence data for population-level DRM prediction (C93) is reasonable but untested. The speculation about future integrase data (C94-C95) is appropriate forward-looking discussion but not a current result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    },
+    {
+      "id": "9b7a9cdc-fe50-4fb2-8521-b65334447827",
+      "content_id": "40370e1e-cb7c-450b-a5ae-67e641ec32a2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction establishes the context: antiretroviral resistance remains a major obstacle to HIV suppression, particularly in resource-limited settings. The standard paradigm holds that DRMs are acquired during treatment failure or transmitted, then revert in untreated individuals due to fitness costs. However, this paradigm generally disregards the possibility that DRMs could be selected in untreated individuals through immune escape mechanisms, particularly HLA-mediated CTL escape. While this phenomenon has been reported for individual mutation:HLA pairs, systematic population-level assessment was lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C115, C118 provide appropriate background and rationale. The description of the standard DRM paradigm and its limitations is accurate and well-cited. The identification of a gap in systematic population-level assessment (C115) appropriately motivates the study. The biological mechanisms of HLA-mediated immune escape are established knowledge, properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:55:47.540150Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d256248c-03fe-4d04-8bb1-584bb7f8c126",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "85f1b00d-fc40-4bbb-84fb-24d7b0649f74",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "2e914f3a-bdc3-4a6e-97d9-1507fc5df2eb",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "6607064c-e756-49b5-a3f0-fe83f81931b2",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "8d49e0b7-2c47-4636-b03f-fa94e1a7e2da",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "c71035b0-d5ac-45cf-b1d4-d5dbb5b722d4",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "25d57489-c2c9-4ba0-b8ec-a6c9f9e20be3",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "7ee4115e-093b-4053-b0be-bdff77c79230",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "344e5648-a967-45b5-8e66-d02be3eeec61",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "c6d0fd7f-19e1-473f-8982-3ff3cb3f0deb",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "35321789-11b0-406a-a1ae-f4a59fa052c1",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "f4b17f15-1c4c-494c-a37a-4054eefa84a5",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "24d6ba86-2998-4c56-917b-fef9d32c7300",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "531eaa59-b1a8-4b1e-9a9b-5f4d62e3f313",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "732fdf76-de5f-4ca3-8003-4c448fa5d595",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "3e7db6f2-f1b2-44dd-ab01-8526b336edbd",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "de3c03d6-4dee-4b0f-aa5b-01e698600db5",
+      "result_id": "85dd8f7d-e48c-427e-80a8-35dd4876e88c"
+    },
+    {
+      "claim_id": "6b7c14e2-18e2-4f6b-90e3-baa5a04a5ff9",
+      "result_id": "032ce132-884b-4e60-8ae0-3904d6f8b783"
+    },
+    {
+      "claim_id": "dbc1cef6-92e0-49e5-a5bf-8625650b722f",
+      "result_id": "032ce132-884b-4e60-8ae0-3904d6f8b783"
+    },
+    {
+      "claim_id": "65a3eed5-90dd-43bb-b4df-55038d8e2217",
+      "result_id": "032ce132-884b-4e60-8ae0-3904d6f8b783"
+    },
+    {
+      "claim_id": "7d09f26c-ca43-4962-9af7-57870b63b602",
+      "result_id": "032ce132-884b-4e60-8ae0-3904d6f8b783"
+    },
+    {
+      "claim_id": "8bd1f11a-c482-48a9-b7df-0e0d75e35e09",
+      "result_id": "032ce132-884b-4e60-8ae0-3904d6f8b783"
+    },
+    {
+      "claim_id": "9768d1a7-c2c6-4695-bcdc-594128541e00",
+      "result_id": "032ce132-884b-4e60-8ae0-3904d6f8b783"
+    },
+    {
+      "claim_id": "6e010ffd-3e97-4537-8612-dba07b227579",
+      "result_id": "032ce132-884b-4e60-8ae0-3904d6f8b783"
+    },
+    {
+      "claim_id": "cc71769b-72d1-44bd-9dcb-0b7edc507f33",
+      "result_id": "032ce132-884b-4e60-8ae0-3904d6f8b783"
+    },
+    {
+      "claim_id": "bc012d0b-5f63-4f80-84a8-fdaea6be15e4",
+      "result_id": "e48e49d5-f6f0-408c-bf76-31620ff4797a"
+    },
+    {
+      "claim_id": "e19adf9d-b380-466c-a4bb-bb67d59913c8",
+      "result_id": "e48e49d5-f6f0-408c-bf76-31620ff4797a"
+    },
+    {
+      "claim_id": "9b8db1e7-900f-4bed-9791-442a7d6361d0",
+      "result_id": "e48e49d5-f6f0-408c-bf76-31620ff4797a"
+    },
+    {
+      "claim_id": "c9b023d4-c691-4b1b-8fa5-85f87cf11f7d",
+      "result_id": "e48e49d5-f6f0-408c-bf76-31620ff4797a"
+    },
+    {
+      "claim_id": "53acfdc2-8908-49bd-b43e-c2083eb3c31b",
+      "result_id": "e48e49d5-f6f0-408c-bf76-31620ff4797a"
+    },
+    {
+      "claim_id": "425e5ee1-a1ac-45ff-bfd4-ef9a88c21a04",
+      "result_id": "e48e49d5-f6f0-408c-bf76-31620ff4797a"
+    },
+    {
+      "claim_id": "ff691e97-1707-4072-ac2f-68ac01032ba5",
+      "result_id": "c21ef469-36f7-4704-b6eb-69d787a91151"
+    },
+    {
+      "claim_id": "8d81e782-7fb6-4d64-9625-98f1f65e2355",
+      "result_id": "c21ef469-36f7-4704-b6eb-69d787a91151"
+    },
+    {
+      "claim_id": "4e6e2213-7718-4f4f-abcf-57c384f61a3a",
+      "result_id": "c21ef469-36f7-4704-b6eb-69d787a91151"
+    },
+    {
+      "claim_id": "795c789f-a594-49fc-81c3-acb326230e77",
+      "result_id": "c21ef469-36f7-4704-b6eb-69d787a91151"
+    },
+    {
+      "claim_id": "7419ce6f-db30-4437-a943-4f1f571dd0ab",
+      "result_id": "c21ef469-36f7-4704-b6eb-69d787a91151"
+    },
+    {
+      "claim_id": "0b3bcdb6-d42e-4288-b446-3233bf851014",
+      "result_id": "c21ef469-36f7-4704-b6eb-69d787a91151"
+    },
+    {
+      "claim_id": "b5083507-33c7-42b3-ae51-00387c23fac9",
+      "result_id": "c21ef469-36f7-4704-b6eb-69d787a91151"
+    },
+    {
+      "claim_id": "0fc449d0-d751-48ba-98d3-5b1a70ccb3b9",
+      "result_id": "c21ef469-36f7-4704-b6eb-69d787a91151"
+    },
+    {
+      "claim_id": "9c4056fd-66c2-4152-802f-8b5589b5ecbb",
+      "result_id": "0de689cb-1c4d-4d60-bd20-41272da2b484"
+    },
+    {
+      "claim_id": "967c05a6-58f2-4c95-9061-9487aeea32ae",
+      "result_id": "0de689cb-1c4d-4d60-bd20-41272da2b484"
+    },
+    {
+      "claim_id": "e6e775d5-eb4c-48f7-91ed-cbbe5f166f26",
+      "result_id": "0de689cb-1c4d-4d60-bd20-41272da2b484"
+    },
+    {
+      "claim_id": "9cd8841e-f03e-4e2f-9587-fdbaff9b3fb6",
+      "result_id": "0de689cb-1c4d-4d60-bd20-41272da2b484"
+    },
+    {
+      "claim_id": "015c61e7-cc27-420b-ac91-eaf6b5eccd2f",
+      "result_id": "0de689cb-1c4d-4d60-bd20-41272da2b484"
+    },
+    {
+      "claim_id": "261a1c79-3190-473d-9354-36ce02491b4d",
+      "result_id": "0de689cb-1c4d-4d60-bd20-41272da2b484"
+    },
+    {
+      "claim_id": "9230a9b8-ef4d-487f-971c-ac0baec604c7",
+      "result_id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9"
+    },
+    {
+      "claim_id": "4ae1be6c-6705-4ff5-a9f6-61f9b041f979",
+      "result_id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9"
+    },
+    {
+      "claim_id": "86a29ed5-e2be-4d92-8205-214399df12cf",
+      "result_id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9"
+    },
+    {
+      "claim_id": "f2cacb5b-767b-487e-96f8-0288d83495bb",
+      "result_id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9"
+    },
+    {
+      "claim_id": "dac37f9e-8b83-43d8-9740-a24aeb4d2476",
+      "result_id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9"
+    },
+    {
+      "claim_id": "515c3eb2-036b-4a2c-b20e-4a626a308104",
+      "result_id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9"
+    },
+    {
+      "claim_id": "7b15f8d3-38ee-428c-9926-baa4adc7298e",
+      "result_id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9"
+    },
+    {
+      "claim_id": "803e9356-454a-45ac-8709-bcd9a753966a",
+      "result_id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9"
+    },
+    {
+      "claim_id": "718a6bba-fda4-42cb-a5f8-adbba869846a",
+      "result_id": "dfcfb0ad-2396-43e8-9e37-48422ec492e9"
+    },
+    {
+      "claim_id": "cb47842b-dc9f-4b59-a0d9-0cc85e5f199c",
+      "result_id": "693134b9-147e-4eb7-8673-ec9d6bcc66e8"
+    },
+    {
+      "claim_id": "ebe7c136-42ae-4386-bebe-a462431e6ba8",
+      "result_id": "693134b9-147e-4eb7-8673-ec9d6bcc66e8"
+    },
+    {
+      "claim_id": "f5fae686-9f3a-4e8e-91d5-dc5d11cc33fb",
+      "result_id": "693134b9-147e-4eb7-8673-ec9d6bcc66e8"
+    },
+    {
+      "claim_id": "ebf5bd60-a33c-4011-8d8e-8e00ce08b3c0",
+      "result_id": "693134b9-147e-4eb7-8673-ec9d6bcc66e8"
+    },
+    {
+      "claim_id": "1eefb52a-ea08-4ee6-a700-2e5c2d8cd29c",
+      "result_id": "693134b9-147e-4eb7-8673-ec9d6bcc66e8"
+    },
+    {
+      "claim_id": "2b1287c6-4582-4425-997f-ebccf0b375ed",
+      "result_id": "e244dc1b-7b98-40a4-aaf3-877b61f9bd41"
+    },
+    {
+      "claim_id": "2a6c4406-8b59-4a37-b061-101921d4de42",
+      "result_id": "e244dc1b-7b98-40a4-aaf3-877b61f9bd41"
+    },
+    {
+      "claim_id": "b7480aa1-bc8d-490a-812f-207b606f8277",
+      "result_id": "e244dc1b-7b98-40a4-aaf3-877b61f9bd41"
+    },
+    {
+      "claim_id": "4535ba1b-15c8-4b58-afd9-498a3561026b",
+      "result_id": "e244dc1b-7b98-40a4-aaf3-877b61f9bd41"
+    },
+    {
+      "claim_id": "b3cf1462-cdd2-447d-8969-92d4f2c77684",
+      "result_id": "65737ea4-9802-4b4e-b584-7c581f527e5e"
+    },
+    {
+      "claim_id": "f4ab0cc9-98c2-412c-ad0d-d3c65512378f",
+      "result_id": "65737ea4-9802-4b4e-b584-7c581f527e5e"
+    },
+    {
+      "claim_id": "1e7206b3-7dfc-4eef-a19e-c28e0df56fce",
+      "result_id": "65737ea4-9802-4b4e-b584-7c581f527e5e"
+    },
+    {
+      "claim_id": "3e12e032-e1b0-47fc-b488-49bf08f740f2",
+      "result_id": "65737ea4-9802-4b4e-b584-7c581f527e5e"
+    },
+    {
+      "claim_id": "ae60a04f-836e-4347-a7d8-961537b18238",
+      "result_id": "65737ea4-9802-4b4e-b584-7c581f527e5e"
+    },
+    {
+      "claim_id": "8106af58-e0e7-43e7-9ca6-dfc77594eef2",
+      "result_id": "65737ea4-9802-4b4e-b584-7c581f527e5e"
+    },
+    {
+      "claim_id": "88f3fb3f-b5ff-4286-ab25-67ad7b53379f",
+      "result_id": "3d755c01-3f2f-4da4-a849-809aa20b223b"
+    },
+    {
+      "claim_id": "c08afc32-36fc-4631-897e-2017b51e8628",
+      "result_id": "3d755c01-3f2f-4da4-a849-809aa20b223b"
+    },
+    {
+      "claim_id": "193e249d-46e3-4305-b770-44d9bd1957b4",
+      "result_id": "3d755c01-3f2f-4da4-a849-809aa20b223b"
+    },
+    {
+      "claim_id": "74b65d2b-44f0-4e64-9417-289fec9de0e0",
+      "result_id": "3d755c01-3f2f-4da4-a849-809aa20b223b"
+    },
+    {
+      "claim_id": "b1a8a95f-85d8-4320-868a-2c89bf88d73b",
+      "result_id": "ab1d93fd-5450-433e-b007-3921ee893a6b"
+    },
+    {
+      "claim_id": "28c986ed-f073-461a-b131-49a3b85dd758",
+      "result_id": "ab1d93fd-5450-433e-b007-3921ee893a6b"
+    },
+    {
+      "claim_id": "cd5e88b5-fb18-4755-8f95-838e5b1d18cc",
+      "result_id": "ab1d93fd-5450-433e-b007-3921ee893a6b"
+    },
+    {
+      "claim_id": "901c15dc-6e0b-41ca-a49a-9171ecb79d31",
+      "result_id": "ab1d93fd-5450-433e-b007-3921ee893a6b"
+    },
+    {
+      "claim_id": "2654a192-e3a9-42d2-a0fa-99e0cd10deab",
+      "result_id": "ab1d93fd-5450-433e-b007-3921ee893a6b"
+    },
+    {
+      "claim_id": "b0ca8747-7795-4ce5-a828-a3bf65642657",
+      "result_id": "ab1d93fd-5450-433e-b007-3921ee893a6b"
+    },
+    {
+      "claim_id": "0e243057-eba7-48b9-929a-8a0028adce8a",
+      "result_id": "ab1d93fd-5450-433e-b007-3921ee893a6b"
+    },
+    {
+      "claim_id": "732fdf76-de5f-4ca3-8003-4c448fa5d595",
+      "result_id": "b172738a-7495-44cd-965f-9500d98db48d"
+    },
+    {
+      "claim_id": "bd98da42-6b35-4e2c-98ea-3e8479606907",
+      "result_id": "b172738a-7495-44cd-965f-9500d98db48d"
+    },
+    {
+      "claim_id": "d33a7479-aad8-4f57-ad6e-d0ef56009ddb",
+      "result_id": "b172738a-7495-44cd-965f-9500d98db48d"
+    },
+    {
+      "claim_id": "4ff0f3dc-ce9b-43d9-b1c6-4a1289b6ada3",
+      "result_id": "b172738a-7495-44cd-965f-9500d98db48d"
+    },
+    {
+      "claim_id": "8eb7362c-1ffc-43a2-a427-ab1eed4cbb61",
+      "result_id": "b172738a-7495-44cd-965f-9500d98db48d"
+    },
+    {
+      "claim_id": "01e450cb-1084-4c07-ad50-e5b8deb14be6",
+      "result_id": "b172738a-7495-44cd-965f-9500d98db48d"
+    },
+    {
+      "claim_id": "2a0f129f-1946-4281-92ce-8f06daa5c5f0",
+      "result_id": "b172738a-7495-44cd-965f-9500d98db48d"
+    },
+    {
+      "claim_id": "5ec59fd8-5f4a-46f5-95e8-e666c5e98663",
+      "result_id": "b172738a-7495-44cd-965f-9500d98db48d"
+    },
+    {
+      "claim_id": "f1249cf9-8b39-4f19-910b-dae19ad84cf9",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "0c3aa860-a98c-46dd-96aa-535121ba0914",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "26c6c1fb-2b43-48b1-b18d-e38129c2a6fb",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "589f2826-41d2-482e-b275-1a8e30c38e4c",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "0c43bc38-b845-4a0e-807c-bb2bdd79d600",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "29a42c7c-9b82-4743-83fb-5a935e0c4248",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "0c2efda1-edc4-4c97-8ac1-6fa6b2ec4fcd",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "abdfbda7-be59-473b-9d7c-64e66caceace",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "bfa08d87-fe91-4206-866c-aec23fed4c8e",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "d5f5c5cd-e303-478a-aff8-20713c80feca",
+      "result_id": "a1d620fb-faca-4007-9e70-157ef85f7305"
+    },
+    {
+      "claim_id": "bb55b4da-7cfa-41e4-a633-cd04c1d9147a",
+      "result_id": "5be832e4-f09d-40d7-92e4-470c79e5fb26"
+    },
+    {
+      "claim_id": "bff7b764-d6c1-4a8a-95bd-47167ed6d659",
+      "result_id": "5be832e4-f09d-40d7-92e4-470c79e5fb26"
+    },
+    {
+      "claim_id": "d0fbd91b-e812-433b-8c12-f9ac2765798d",
+      "result_id": "5be832e4-f09d-40d7-92e4-470c79e5fb26"
+    },
+    {
+      "claim_id": "dc8af034-fdd7-4ca5-9991-0f48df052913",
+      "result_id": "5be832e4-f09d-40d7-92e4-470c79e5fb26"
+    },
+    {
+      "claim_id": "d7faa259-f656-427a-8332-65b2ca1ee7ea",
+      "result_id": "5be832e4-f09d-40d7-92e4-470c79e5fb26"
+    },
+    {
+      "claim_id": "c352c234-94fc-4651-9c8b-7343244eea7d",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "d5c009d5-cd46-4088-a06b-a3e75cb9491f",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "277fd611-2c22-446f-a865-c3a77d09f2b7",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "1fa65b51-4ee8-4cfa-9013-b9aa82921027",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "dfda0beb-0bd8-469e-9c73-7f32cad0272b",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "980a5a12-e23a-46c3-9f38-744efdc0284c",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "46a5316a-c761-44e9-9dcf-17121fe2f978",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "5bc5a0c6-ced7-4ac8-920e-9f7d98ccdab2",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "b38a76f6-b8af-481c-b272-faf4f0dd1f0f",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "ca863e17-4e59-4428-a5a7-7c10081e023a",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "88b7f9c5-2e62-4098-aaa8-5e8755243d15",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "1a86f6ce-45f0-49ea-b83a-e528969d08e1",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "096a556e-3f9e-4a09-b7e4-01b6f2893c2b",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "57dc301b-465b-442e-8ee3-7a22b712f941",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "52181ef5-b4b6-403d-a977-92f8db209bdf",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "7fce2141-3a17-400a-80e6-4f9308724a0e",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "4411b150-95ec-4c7c-8519-cd9cc066456c",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "4f838d2b-13aa-48c1-8d9f-bf186a7be44d",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "98f0cedc-efdf-444b-80b2-0fe98e5aaee4",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "c2380605-1b08-48f0-9841-b14087e7c0c3",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    },
+    {
+      "claim_id": "31684bc2-186f-4047-ab84-8fbef893f7bc",
+      "result_id": "9b7a9cdc-fe50-4fb2-8521-b65334447827"
+    }
+  ],
+  "comparisons": []
+}

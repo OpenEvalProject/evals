@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study developed a comprehensive pipeline to identify and quantify polyadenylation sites (PAS) in humans and chimpanzees using 3' Seq from nuclear and whole-cell fractions of LCLs. After quality control and filtering, 44,432 PAS in 9518 genes were identified for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological pipeline is well-described with appropriate quality controls (C36, C37), filtering criteria (C27, C28, C35), and orthology mapping procedures (C31, C32). The final dataset (C39) is clearly defined and the approach addresses technical challenges like mispriming (C26, C27) and genome quality differences (C28). The use of nuclear and whole-cell fractions as biological replicates (C21) is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C68",
+      "C127",
+      "C137"
+    ],
+    "result": "PAS usage is largely conserved between humans and chimpanzees, with high genome-wide correlation (r=0.9), though 41.8% of variation correlates with species. PAS are more conserved than surrounding regions and show similar genomic distributions across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support conservation: high correlation in mean PAS usage (C40), similar genomic distributions (C45, C46), and higher PhyloP scores at PAS versus flanking regions (C47, C48, C49). The finding that 98.5% of PAS are identified in both species (C68) and the negative correlation between PAS number and expression (C42) provide additional support. Statistical tests are appropriate with significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Species-specific PAS (302 human, 357 chimpanzee) are enriched for species-specific signal site motifs and are associated with general cellular processes. Signal site changes explain a subset of PAS usage differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment of species-specific signal sites among species-specific PAS is statistically significant in both species (C60, C61), with appropriate hypergeometric tests. The MAN2B2 example (C63, C64, C65) provides a concrete case study. However, the authors appropriately note these numbers are small and explain only a subset of differences (C62), showing appropriate caution in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "At 5% FDR with 20% effect size cutoff, 2342 PAS in 1705 genes show differential usage between species. Differentially used PAS are enriched in 3' UTRs and more frequently represent the first PAS in the 3' UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential usage analysis uses appropriate statistical methods (leafcutter tool, C69) with clearly defined thresholds (C70, C71). The enrichment of first PAS in 3' UTRs is statistically significant (C73, p=0.0015). The authors appropriately acknowledge alternative explanations for this pattern (C75), demonstrating balanced interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Genes with inter-species differences in PAS usage are enriched for apaQTLs (3\u00d7, p=0.0009) and regions with negative PhyloP scores, suggesting that sequence divergence drives PAS usage differences while most PAS are conserved due to evolutionary constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment for apaQTLs is statistically significant with both empirical permutation (C77) and hypergeometric tests. The enrichment for negative PhyloP scores (C79) provides independent support for the role of sequence divergence. The interpretation regarding evolutionary constraint (C80, C81) is reasonable given the data, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Species-specific signal sites and increased uracil density are associated with increased PAS usage in the corresponding species, demonstrating a link between sequence evolution and PAS usage conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both signal site presence (C82) and uracil density (C83) show statistically significant associations with PAS usage, with appropriate statistical tests. The effect sizes are modest but significant. The conclusion about the link between sequence evolution and PAS usage (C85) is appropriately cautious given that these factors explain only a modest proportion of differences (C84).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Genes with differential PAS usage are enriched for differential expression (1.12\u00d7, p=3.18\u00d710\u207b\u2075). Among these genes, intronic PAS usage correlates positively with expression while 3' UTR PAS usage correlates negatively with expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment is statistically significant (C90) and the opposite directional correlations for intronic versus 3' UTR PAS (C87, C88, C89, C94) are consistent across analyses. The modest correlation values (C93, r=-0.15) are appropriately reported. The consistency across nuclear and whole-cell fractions (C95) strengthens the finding. Statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C96",
+      "C97"
+    ],
+    "result": "Genes with differential PAS usage are enriched for RNA-processing pathways and have higher numbers and density of AU-rich elements (AREs) in their 3' UTRs compared to genes with conserved PAS usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GO enrichment for RNA-processing pathways (C91, C92) and the increased ARE content (C96, C97) are both statistically significant (p<10\u207b\u00b9\u2076 and p=5.2\u00d710\u207b\u2076 respectively). These findings provide mechanistic insight into how PAS usage differences may affect gene expression through mRNA stability pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Using Simpson's D to measure isoform diversity, 881 genes show significant differences between species at 5% FDR. Of these, 426 genes were not detected as having differential PAS usage at the individual site level, indicating Simpson's D captures additional dimensions of APA variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of Simpson's D is well-justified (C98, C99) and shows expected correlation with PAS number (C100). The identification of 426 additional genes (C102) demonstrates that this metric provides complementary information to site-level analysis. The interpretation that Simpson's D captures additional dimensions (C103) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Dominant PAS classification is highly consistent across species. Genes with different dominant PAS between species are more likely to be differentially expressed (p<0.005 for cutoffs 0.2-0.7) compared to genes with the same dominant PAS or only non-dominant PAS differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consistency of dominant PAS across species (C104) is demonstrated to be robust across multiple cutoff values. The enrichment for differential expression when dominant PAS differ (C105, C106) is statistically significant across a range of cutoffs. The speculative interpretations about selection and fitness (C141, C142, C144) are appropriately presented as hypotheses rather than conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Among genes with differential APA at both site and isoform diversity levels, 22 genes show evidence of directional selection in the chimpanzee lineage (1.6\u00d7 enrichment, p=0.015), including 5 genes associated with protein transport and 2 ribosomal subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment is statistically significant (C108) and the integration with previous selection data (C107) is appropriate. The identification of specific functional categories (C109, C110) provides biological context. The lack of similar enrichment in humans (C111) is appropriately noted, though the authors acknowledge small sample size limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Genes with differential isoform diversity (but not individual PAS differences) are enriched among differentially translated genes (1.21\u00d7, p=0.011). Genes with differential PAS usage show 32\u00d7 enrichment for translation initiation genes and significant correlation between 3' UTR \u0394PAU and translation differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichments are statistically significant (C113, C114) and the correlation between 3' UTR PAS usage and translation (C115) is mechanistically plausible. The lack of correlation for intronic PAS (C116) serves as an appropriate control. The integration with ribosome profiling data from Wang et al. is well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The absolute value of 3' UTR \u0394PAU correlates positively with the number of ubiquitination sites (r=0.15, p=5.0\u00d710\u207b\u2077), consistent with 3' UTR PAS being targets for protein decay regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation is statistically significant (C117) and the interpretation is supported by citations to relevant literature (C118). The correlation is modest but the mechanistic link to protein decay pathways is biologically plausible and consistent with known regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C167",
+      "C168"
+    ],
+    "result": "76 genes with differential APA are differentially expressed at the protein but not RNA level. These genes show enrichment for 3' UTR PAS differences and are enriched for protease/endopeptidase complexes. Only 34 of 142 tested genes show differential translation, suggesting post-translational mechanisms are responsible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of 76 genes (C120) with protein-specific differences is well-supported by integration of multiple datasets. The enrichment for 3' UTR PAS (C121) and specific GO categories (C122, C123) provides mechanistic insight. The finding that most genes lack differential translation (C125) appropriately supports the conclusion about post-translational mechanisms (C126, C168), though the exact mechanisms remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The opposite directional correlations between intronic/3' UTR PAS usage and expression observed between species differ from within-species patterns, potentially due to nonstop decay effects being overshadowed by larger inter-species effect sizes or mathematical consequences of ratio-based measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This result is primarily speculative (C151-C158) and attempts to reconcile contradictory findings between the current study and previous within-species work (C148). While the hypotheses are plausible and appropriately cited (C156), they lack direct experimental validation. The authors appropriately present these as hypotheses requiring further investigation rather than established conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Understanding APA may help explain the decoupling of mRNA and protein expression levels. While mRNA-protein correlation is high across genes, it is lower within genes across individuals, suggesting post-transcriptional mechanisms including APA contribute to this decoupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The general observations about mRNA-protein correlation (C159, C160) are well-supported by citations. The integration with previous work on protein-specific QTLs (C166) and the demonstration that genes with differential APA show protein-specific expression differences (C167) support the overall conclusion. However, the specific mechanisms (C169, C170) remain speculative and appropriately presented as hypotheses.",
+    "result_type": "MAJOR"
+  }
+]

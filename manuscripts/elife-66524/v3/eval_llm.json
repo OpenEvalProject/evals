@@ -1,0 +1,519 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "SCLC is characterized by neuroendocrine differentiation, frequent TP53/RB1 inactivation, absence of EGFR expression, low MAPK activity, and rare EGFR/KRAS mutations, contrasting with LUAD where EGFR/KRAS mutations are highly prevalent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 establish the baseline molecular characteristics of SCLC versus LUAD through citations to established literature (Gazdar et al., 2017; Travis et al., 2015; Peifer et al., 2012; George et al., 2015; Cancer Genome Atlas Research Network, 2014) and data presented in Figure 1\u2014figure supplement 1b. These are well-established facts in the field supported by multiple independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Western blot analysis of lung cancer cell lines demonstrates an inverse association between EGFR expression and neuroendocrine differentiation, with SCLC cell lines completely lacking EGFR while expressing NE markers, and KRAS mutations never identified in SCLC genomic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are directly supported by experimental data shown in Figure 1\u2014figure supplement 1a (western blots) and Figure 1\u2014figure supplement 1b (genomic analysis). The western blot clearly shows absence of EGFR in SCLC lines and presence of NE markers, while genomic data from cBioPortal confirms absence of KRAS mutations in SCLC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Conditional expression of KRASG12V or EGFRL858R in SCLC cell lines induces phenotypic transition from suspended to adherent growth and suppresses neuroendocrine transcription factors, with KRASG12V showing more potent effects than EGFRL858R, correlating with stronger ERK1/2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are well-supported by multiple experimental approaches shown in Figure 1c-h: microscopy images demonstrate morphological changes, crystal violet assays quantify adherent cells, western blots show NE marker suppression and differential ERK phosphorylation, and GSEA demonstrates shift from high to low NE differentiation. The data consistently show KRASG12V has stronger effects than EGFRL858R across all assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "MYC protein and MYC target genes are downregulated after KRASG12V induction, and YAP1 upregulation is only observed in H82 cells, suggesting the NE suppression is not driven by a MYC-YAP1 axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by western blot data (Figure 1f), GSEA analysis (Figure 1\u2014figure supplement 2f), and microarray data showing YAP1 upregulation only in H82 cells. The conclusion that MYC-YAP1 axis is not responsible is logically inferred from the observation that YAP1 is only upregulated in one of three cell lines despite all showing NE suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Single-cell-derived clones show heterogeneous response to KRASG12V induction with mixed adherent and suspended populations, where adherent cells lose NE factors more than suspended cells, and isolated suspended cells do not give rise to adherent cells with attenuated KRASG12V expression over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by experimental data in Figure 1\u2014figure supplement 3a-b showing clonal analysis and western blots of separated cell populations. The data demonstrate heterogeneity in response and differential NE factor loss between adherent and suspended populations, supporting the conclusion of heterogeneous effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ERK inhibitor SCH772984 rescues suppression of neuroendocrine transcription factors after KRASG12V induction, and siRNA knockdown experiments demonstrate ERK2, but not ERK1, is the dominant mediator of NE factor suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are directly supported by western blot data in Figure 2a (ERK inhibitor rescue) and Figure 2b (siRNA knockdown). The data clearly show restoration of NE factors with ERK inhibition and ERK2 knockdown but not ERK1 knockdown, providing strong evidence for ERK2 as the dominant node.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "AKT inhibition with MK-2206 does not prevent suppression of neuroendocrine transcription factors after KRASG12V induction, indicating the PI3K/AKT pathway is not responsible for NE dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by western blot data in Figure 2c showing that despite complete suppression of phospho-AKT, NE factors remain suppressed upon doxycycline treatment. This provides clear evidence that AKT is not required for NE suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Combined inhibition of ERK and AKT reverses the suspended-to-adherent phenotypic transition in H82 and H524 cells, while ERK2 is the central hub for suppression of neuroendocrine regulators, indicating both pathways are required for growth phenotype changes but only ERK2 for NE suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by crystal violet staining and viability assays in Figure 2\u2014figure supplement 1a-b showing that combined ERK/AKT inhibition reverses phenotypic changes. The conclusion that both are required for phenotype but ERK2 is central for NE suppression is logically inferred from comparing the differential effects of single versus combined inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "HES1 is strongly induced by mutant EGFR/KRAS in an ERK-dependent but NOTCH-independent manner in SCLC cells, but HES1 knockout does not restore NE factors, indicating HES1 is not responsible for ERK-mediated NE suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by microarray data, western blots (Figure 2\u2014figure supplement 4c-d), NOTCH inhibitor experiments (Figure 2\u2014figure supplement 4e), and HES1 knockout experiments (Figure 2\u2014figure supplement 4f). The data consistently show HES1 induction is ERK-dependent but NOTCH-independent, and that HES1 elimination does not rescue NE factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "REST and SOX9 are upregulated by KRASG12V in an ERK-dependent manner, but siRNA knockdown of REST and CRISPR knockout of SOX9 do not restore ERK-mediated suppression of neuroendocrine factors, indicating these transcription factors are not responsible for lineage transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by microarray data, RT-qPCR (Figure 2\u2014figure supplement 5b-c), western blots (Figure 2\u2014figure supplement 5d-e), and knockout experiments (Figure 2\u2014figure supplement 5c,f). The data show upregulation of REST and SOX9 but lack of rescue upon their elimination, supporting the conclusion they are not responsible for NE suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mutant EGFR and KRAS alter global histone marks in SCLC cells, dramatically increasing H3K9ac, H3K14ac, and H3K27ac in H82 and H524 cells while decreasing H3K4me3 in H2107 cells, suggesting ERK-mediated NE suppression depends on altered chromatin structures that vary by SCLC subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are directly supported by western blot data in Figure 3 showing differential changes in histone marks across cell lines. The inference that chromatin structure changes vary by subtype is reasonable given the differential patterns observed between ASCL1-high (H2107) and NEUROD1-high (H82, H524) cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Over 90% of H3K27ac depends on CBP/p300 histone acetyltransferases, which are recurrently inactivated in SCLC and enriched in EGFR-mutant LUAD undergoing SCLC transformation, while ERK directly and indirectly activates CBP/p300, suggesting SCLC evolves to maintain low H3K27ac and that ERK-mediated CBP/p300 activation may drive lineage transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by multiple citations (Jin et al., 2011; Peifer et al., 2012; George et al., 2015; Rudin et al., 2012; Offin et al., 2019; Ait-Si-Ali et al., 1999; Liu et al., 2016; Soloaga et al., 2003; Josefowicz et al., 2016) and illustrated in Figure 4a. The inference about SCLC evolution and lineage transformation is reasonable based on the convergent evidence from mutations and pathway activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "MSK inhibition modestly prevents suppression of BRN2 and NEUROD1 but not INSM1, while CBP/p300 inhibitor A-485 at 400 nM restores INSM1, BRN2, and NEUROD1 expression and reduces H3K27ac in H82 cells without affecting H3K9ac and H3K14ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are directly supported by western blot data in Figure 4b-c and Figure 4\u2014figure supplement 1a. The data clearly show differential rescue effects of MSK versus CBP/p300 inhibition and specificity of A-485 for H3K27ac.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "HDAC inhibitor trichostatin A eliminates neuroendocrine factor expression even without KRASG12V induction, suggesting H3K27ac levels must be restricted to maintain SCLC lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by western blot data in Figure 4d showing elimination of NE factors with HDAC inhibition. The inference that H3K27ac must be restricted is logical given that increasing acetylation (via HDAC inhibition) eliminates NE factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Constitutively activated ERK suppresses neuroendocrine transcription factors partly through MSK but mostly via chromatin reconfiguration by CBP/p300 in H82 cells, though this mechanism does not apply to H2107 and H524 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by the combined data from Figure 4\u2014figure supplement 1a showing that A-485 treatment rescues NE factors only in H82 cells but not in H2107 and H524 cells. The cell line-specific response is clearly demonstrated, supporting the conclusion of context-dependent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ATAC-seq analysis shows KRASG12V induction causes overall increase in chromatin accessibility while ERK inhibitor SCH772984 reduces accessible chromatin, with altered accessibility primarily in intergenic and intronic regions consistent with regulatory region changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are directly supported by ATAC-seq data presented in the text and Figure 5a-b and Figure 5\u2014figure supplement 1c-d. The quantification of peaks gained/lost and genomic distribution analysis provide clear evidence for the stated conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Motif analysis of ATAC-seq data reveals doxycycline treatment increases accessibility at ETV1, ETV4, and AP-1 motifs while reducing accessibility at NEUROD1 and ASCL1 motifs, with ERK inhibitor SCH772984 reversing this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are directly supported by motif analysis data shown in Figure 5c-d. The data clearly demonstrate the stated changes in motif accessibility and reversal with ERK inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Peaks gained upon doxycycline induction are significantly associated with H3K27ac-decorated chromatin regions in normal human lung (p=0.002), with markedly increased accessibility at ETV1/ETV4 motifs in H524 and H82 cells and reduced accessibility at ASCL1/NEUROD1 motifs in H524 and H2107 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by permutation testing (Figure 5e-f, p=0.002) and motif occupancy profiles (Figure 5g-h). The statistical significance and clear visualization of differential accessibility provide strong support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "ATAC-seq demonstrates global chromatin rewiring at ETS transcriptional targets upon KRASG12V induction, and ETS transcription factors (ETV1, ETV4, ETV5) are upregulated at mRNA level by MAPK activation, suggesting an ETS-mediated program may suppress neuroendocrine differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by ATAC-seq data showing changes at ETS motifs and microarray data (Supplementary file 1 and Figure 6a) showing ETS TF upregulation. The inference about ETS-mediated NE suppression is reasonable given the convergent chromatin accessibility and expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Microarray data shows inverse relationship between PEA3 family ETS transcription factors and neuroendocrine transcription factors across SCLC and LUAD cell lines, and mutant KRAS upregulates ETV4 in H82/H524 and ETV5 in all three SCLC lines, which is completely reversed by ERK inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by microarray data (Figure 6b) and western blot data (Figure 6c). The heat map clearly shows inverse expression patterns, and western blots demonstrate ERK-dependent upregulation of ETV4 and ETV5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Conditional expression of ETV1 or ETV5 in SCLC cells suppresses specific neuroendocrine transcription factors in a cell line-dependent manner and unexpectedly transforms cells to an adherent phenotype, most strongly in H82 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by western blot data (Figure 6d-e) showing NE factor suppression and microscopy images (Figure 6\u2014figure supplement 1) showing morphological changes. The data demonstrate both molecular and phenotypic effects of ETS overexpression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "siRNA knockdown of ETV4 modestly restores INSM1 while ETV5 knockdown restores NEUROD1, and dual knockdown jointly increases INSM1 and CD56, suggesting functional redundancy among ETS factors in suppressing neuroendocrine differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by western blot data in Figure 6f showing differential and additive effects of single and dual knockdowns. The inference of functional redundancy is reasonable given the additive effects observed with dual knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Nuclear CIC is expressed in SCLC cells and downregulated after KRASG12V induction in an ERK-dependent manner, and CIC knockdown suppresses neuroendocrine factors but does not induce ETS factors, while CIC overexpression does not prevent NE suppression, suggesting ERK-mediated ETS upregulation does not occur via CIC inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by western blot data from fractionated lysates (Figure 6\u2014figure supplement 2a), siRNA knockdown (Figure 6\u2014figure supplement 2b), and overexpression experiments (Figure 6\u2014figure supplement 2c). The data consistently show CIC is not the mediator of ETS upregulation despite being regulated by ERK.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C110",
+      "C111"
+    ],
+    "result": "CBP/p300 inhibitor A-485 downregulates ERK-induced ETV4 and ETV5 in H82 cells but not in H2107 and H524 cells, indicating induction of PEA3 family ETS transcription factors is mediated by CBP/p300 HAT activity in H82 cells but not in H2107 and H524 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C110, C111 are supported by western blot data in Figure 6g and Figure 4\u2014figure supplement 1a showing cell line-specific effects of A-485 on ETS factors. The differential response provides clear evidence for distinct mechanisms across cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "ERG is induced by KRASG12V in H82 and H524 cells, and ERG inhibition provides modest restoration of neuroendocrine factors synergizing with MSK/RSK inhibition, while combined MSK/RSK and ERG inhibition rescues MYC but not key neuroendocrine transcription factors, suggesting ERK modulates transcription factors through multiple regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by western blot data in Figure 6\u2014figure supplement 3a-b showing ERG induction, effects of ERG inhibition, and differential rescue of MYC versus NE factors. The inference of multiple regulatory mechanisms is reasonable given the differential rescue patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Dual p53/RB inactivation is ubiquitous in SCLC, and EGFR-mutant lung adenocarcinomas with p53/RB loss are more likely to undergo SCLC transformation after tyrosine kinase inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by multiple citations (Peifer et al., 2012; George et al., 2015; Offin et al., 2019; Niederst et al., 2015; Lee et al., 2017). These are well-established observations in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "In RB1-knockout PC9 and H1975 cells, SOX2 deregulation and neuroendocrine factor induction were not observed following osimertinib treatment, suggesting the lung adenocarcinoma lineage is more strictly maintained than AR-dependent prostate cancer in the context of dual p53/RB inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are supported by western blot data in Figure 6\u2014figure supplement 4b showing lack of SOX2 deregulation and NE factor induction. The comparison to prostate cancer is supported by citation to Niederst et al., 2015, and the inference about lineage maintenance is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "In osimertinib-resistant clones, phospho-ERK remains detectable and neuroendocrine factors are not induced, with recurrent CIC mutations identified in H1975 resistant clones and prominent ETV5 upregulation in clones with CIC alterations, suggesting resistance mechanisms reactivating the ERK/CIC/ETS axis suppress neuroendocrine differentiation even with p53/RB loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 are supported by western blot data (Figure 6\u2014figure supplement 4f-g) and MSK-IMPACT sequencing (Figure 6\u2014figure supplement 4e) showing persistent pERK, lack of NE factors, CIC mutations, and ETV5 upregulation. The inference about ERK/CIC/ETS axis suppressing NE differentiation is reasonable given the convergent molecular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Combined ERK and MSK/RSK inhibition in stem cell culture media induces neuronal-like morphology with axonal processes and suppresses EGFR in H1975 cells, but triple-mutant cells show no induction of neuroendocrine transcription factors over 3 or 7 days with various inhibitor combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 are supported by microscopy images (Figure 6\u2014figure supplement 5a) and western blot data (Figure 6\u2014figure supplement 5b-c). The data clearly show morphological changes and EGFR suppression but lack of NE factor induction despite neuronal-like appearance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The ERK-CBP/p300 mechanism is not applicable across all SCLC cell lines assessed, with H2107 and H524 harboring EP300 mutations while H82 is wild-type, and differential MYC family expression (MYCL in H2107 vs MYC-high in H82/H524), suggesting these factors contribute to differential responses to ERK induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are supported by the differential responses observed across experiments and mutation/expression data shown in Figure 7b. The inference that EP300 status and MYC family expression contribute to differential responses is reasonable given the cell line-specific patterns, though causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "ERK2 kinase activity plays a central role in inhibition of neuroendocrine differentiation in all SCLC cell lines assessed, and ERK2 is known to directly shift transcriptional machinery in a kinase-dependent manner, suggesting direct enhancer regulation by ERK2 and ERK-mediated chromatin remodeling independent of CBP/p300 may be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 are supported by ERK2 knockdown and inhibitor experiments across all cell lines (Figure 2b) and citations to Hamilton et al., 2019 and G\u00f6ke et al., 2013. The inference about direct enhancer regulation is reasonable given the known functions of ERK2 and cell line-specific responses, though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Mutant KRAS induction more robustly suppresses neuroendocrine differentiation and affects growth morphology than mutant EGFR, explained by differential ERK activation potency, consistent with the absence of KRAS mutations in SCLC specimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by comparing effects of KRASG12V versus EGFRL858R across multiple assays (Figures 1c-h) showing differential ERK phosphorylation and effects. The consistency with genomic data (Peifer et al., 2012; George et al., 2015) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Loss of ERK2 and negative ERK2 expression are specific features of neuroendocrine carcinoma in gastric mixed adenoneuroendocrine carcinoma, and while FGFR amplification occurs in 6% of SCLC cases, FGFR1 is disadvantageous for typical central SCLC with neuroendocrine differentiation in mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by citations to Sun et al., 2020; Peifer et al., 2012; George et al., 2015; and Ferone et al., 2020. These provide independent validation of the inverse relationship between MAPK/ERK activity and NE differentiation in other tumor types and model systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Recurrent inactivating mutations in CREBBP/EP300 in SCLC and transforming LUAD suggest increased H3K27ac is incompatible with SCLC, and HDAC inhibitor treatment strongly suppresses neuroendocrine transcription factors, implying HDAC inhibitors during EGFR-TKI treatment might prevent SCLC transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C139 are supported by citations and western blot data (Figure 4d). However, claim C140 is speculative inference without direct experimental validation. The authors acknowledge they could not demonstrate CBP/p300 inhibition promotes SCLC transformation, and the HDAC inhibitor suggestion is based on inverse reasoning that may not hold clinically. Additional validation would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C141"
+    ],
+    "result": "SCLC transformation from lung adenocarcinoma requires specific conditions including p53/RB loss, lack of EGFR mutations and bypass pathway mutations reactivating MAPK/ETS, and alterations in epigenetic modifiers like CBP/p300 to reduce H3K27ac and alter chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C141 is a proposed model based on the study's findings but is explicitly speculative (\"We propose\"). While supported by observations from resistant cells showing MAPK reactivation prevents NE transformation, the authors acknowledge they could not force SCLC transformation experimentally. The model is reasonable but requires validation in appropriate model systems.",
+    "result_type": "MAJOR"
+  }
+]

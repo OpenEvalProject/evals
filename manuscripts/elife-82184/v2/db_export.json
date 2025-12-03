@@ -1,0 +1,1344 @@
+{
+  "submission": {
+    "id": "04c3968a-57a8-4954-90a7-a8a28c4fbf55",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:02:00.034050Z",
+    "updated_at": "2025-12-03T20:02:00.034050Z"
+  },
+  "content": [
+    {
+      "id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "submission_id": "04c3968a-57a8-4954-90a7-a8a28c4fbf55",
+      "content_type": "manuscript",
+      "content_text": "# Targeting oncogenic KRasG13C with nucleotide-based covalent inhibitors\n\n## Authors\n\n- Lisa Goebel<sup>1</sup> ([ORCID: 0000-0003-3477-1228](https://orcid.org/0000-0003-3477-1228))\n- Tonia Kirschner<sup>1</sup>\n- Sandra Koska<sup>1</sup>\n- Amrita Rai<sup>2</sup> ([ORCID: 0000-0002-5471-5250](https://orcid.org/0000-0002-5471-5250))\n- Petra Janning<sup>3</sup>\n- Stefano Maffini<sup>4</sup> ([ORCID: 0000-0001-6380-6560](https://orcid.org/0000-0001-6380-6560))\n- Helge Vatheuer<sup>1</sup>\n- Paul Czodrowski<sup>1</sup>\n- Roger S Goody<sup>2</sup> ([ORCID: 0000-0002-0772-0444](https://orcid.org/0000-0002-0772-0444)) \u2020\n- Matthias P M\u00fcller<sup>1</sup> ([ORCID: 0000-0002-1529-8933](https://orcid.org/0000-0002-1529-8933)) \u2020\n- Daniel Rauh<sup>1</sup> ([ORCID: 0000-0002-1970-7642](https://orcid.org/0000-0002-1970-7642)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Chemical Biology, TU Dortmund University Dortmund Germany ([ROR:01k97gp34](https://ror.org/01k97gp34))\n2. Department of Structural Biochemistry, Max Planck Institute of Molecular Physiology Dortmund Germany ([ROR:03vpj4s62](https://ror.org/03vpj4s62))\n3. Department of Chemical Biology, Max Planck Institute of Molecular Physiology Dortmund Germany ([ROR:03vpj4s62](https://ror.org/03vpj4s62))\n4. Department of Mechanistic Cell Biology, Max Planck Institute of Molecular Physiology Dortmund Germany ([ROR:03vpj4s62](https://ror.org/03vpj4s62))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMutations within Ras proteins represent major drivers in human cancer. In this study, we report the structure-based design, synthesis, as well as biochemical and cellular evaluation of nucleotide-based covalent inhibitors for KRasG13C, an important oncogenic mutant of Ras that has not been successfully addressed in the past. Mass spectrometry experiments and kinetic studies reveal promising molecular properties of these covalent inhibitors, and X-ray crystallographic analysis has yielded the first reported crystal structures of KRasG13C covalently locked with these GDP analogues. Importantly, KRasG13C covalently modified with these inhibitors can no longer undergo SOS-catalysed nucleotide exchange. As a final proof-of-concept, we show that in contrast to KRasG13C, the covalently locked protein is unable to induce oncogenic signalling in cells, further highlighting the possibility of using nucleotide-based inhibitors with covalent warheads in KRasG13C-driven cancer.\n\n## Introduction\n\nRas proteins act as key regulators of many cellular processes by switching between inactive GDP-bound and active GTP-bound states, the latter specifically activating several downstream signalling pathways (Cox et al., 2014). Oncogenic Ras mutations that lead to dysregulation of the switch mechanism are found in about 25% of all human cancers, including three of the most lethal forms (lung, colon, and pancreatic cancer). Among the Ras proteins, KRas is the predominantly mutated isoform (85%), followed by NRas (11%) and HRas (4%), with mutational hotspots at amino acid positions G12, G13, and Q61 (Cox et al., 2014; Hobbs et al., 2016). Although the glycine at position 12 is the most commonly mutated residue, G13 is the second most common mutation (14% of tumors harbor a mutation at this position) and in 6% of these cases, an acquired cysteine is found (Forbes et al., 2015; Visscher et al., 2016). In lung cancer, the prevalence of the G13C mutation is 3%, which is equivalent to approximately 7000 individuals in the US per year (Forbes et al., 2015; Burge and Hobbs, 2022). Because of their prominent role in cancer, Ras oncogenes were identified as attractive targets for cancer therapy since their initial discovery in 1981, but attempts to target Ras have been largely unsuccessful and Ras proteins were long considered undruggable. After decades of failure, new interest has recently arisen from selective targeting of the G12C oncogenic mutant of KRas (Ostrem et al., 2013; Patricelli et al., 2016; Janes et al., 2018; Shin, 2019; Canon et al., 2019; Hong, 2020; Fell et al., 2018; Hallin et al., 2020; Fell, 2020). Inhibitors that bind irreversibly to the G12C mutated cysteine residue within a previously unknown switch-II pocket were originally identified and designed in the Shokat laboratory, and have been further developed within the academic and industrial world to advance candidates into the clinic (clinicaltrials.gov, 2018a; clinicaltrials.gov, 2019a; clinicaltrials.gov, 2018b; clinicaltrials.gov, 2019b; Goebel et al., 2020). In May 2021, the first-in-class KRasG12C inhibitor Sotorasib (Amgen) was approved by the FDA for the treatment of non-small-cell lung cancer (NSCLC), confirming the therapeutic susceptibility of mutant KRas in cancer (Mullard, 2021). A second approach for targeting mutant KRas has been described using nucleotide competitive inhibitors that can covalently bind to KRasG12C (Lim et al., 2014; Xiong et al., 2017). Strategies involving direct competition with nucleotide binding were originally set aside because of the high affinity of GDP/GTP for Ras and high cellular GDP/GTP concentrations. However, the combination of nucleotide competition with covalent binding of the inhibitors to the Ras protein has fuelled new hope. Gray and colleagues developed SML-8-73-1, a GDP derivative harbouring an electrophilic group on the \u03b2-phosphate to irreversibly bind to the mutant cysteine at position 12 within the P-loop of Ras (Lim et al., 2014). Unfortunately, the modification of the \u03b2-phosphate leads to a dramatic loss of affinity because of the loss of important interactions with the protein and the Mg2+ ion (M\u00fcller et al., 2017). In this publication, we demonstrate that GDP/GTP/GppCp analogues with an electrophilic group attached to the ribose interact with the necessary high reversible affinity to KRas and are able to react covalently with KRasG13C.\n\n## Results and discussion\n\n### Selective covalent modification of KRasG13C by 2\u2019,3\u2019-modified nucleotide analogues\n\nAvailable structural information about the binding of GDP and GTP toward Ras provides a detailed understanding of the underlying high affinity of nucleotides through multiple reversible interactions. Based on published crystal structures of Ras proteins (Figure 1) and a multiple sequence alignment of the Ras small GTPase superfamily (Figure 1\u2014figure supplement 1, Supplementary file 1), we designed and synthesized guanine nucleotide-based inhibitors with an additional Michael acceptor as a covalent warhead for targeting oncogenic KRas variants harboring cysteines in the P-loop (KRasG12C and KRasG13C). Whereas the G12C mutation has been successfully addressed in the past, KRasG13C is a largely unexplored target in cancer therapy. However, based on pKa calculations, we were able to show that the G13C mutation should also be generally addressable by appropriately positioned Michael acceptors (Supplementary file 2). In contrast to Gray and colleagues, we chose the 2\u2019,3\u2019-OH groups of the ribose for attachment of the warhead since modifications at this position do not significantly alter nucleotide affinity (Figure 1A, B; Eberth et al., 2005). Nucleotide derivatives with different linkers (eda: ethylenediamine, pda: propylenediamine, bda: butylenediamine) were synthesised based on published procedures (Method section), including GDP/GTP/GppCp analogues (R=OH), resulting in the formation of mixed 2\u2019 and 3\u2019-isomers, as well as dGTP analogues (R=H) (Eberth et al., 2005; Cremo et al., 1990). In addition to acrylamide-bearing nucleotides that could potentially bind irreversibly to cysteine containing P-loop mutants via Michael addition, we prepared acetamide derivatives as non-reactive control analogues (Figure 1B). The cysteine light-version of KRas constructs lacking other cysteines (C51S, C80L, C118S) were used for initial MS experiments, which indicated that the acrylamide nucleotide derivatives can selectively react with KRasG13C1-169 (Cys-light), but not with KRasG12C1-169 (Cys-light) (Figure 1C, D, E). The eda linker led to the most efficient covalent protein modification (Figure 1C). This tendency is presumably because of a favourable orientation of the reactive warhead and/or a reduced flexibility. Using dGTP analogues, the rate of covalent protein modification was further increased in the case of the eda derivative, indicating that the linker in the 3\u2019-position of the ribose is superior to the 2\u2019-position with respect to targeting KRasG13C. Although, complete modification of KRasG13C was only observed at elevated pH, significant modification of the protein also occurred at a physiological pH within 24 hr. On incubating KRasG13C1-169 (Cys-light) with the GTP analogues, we observed at intermediate stages a mixture of covalently bound GDP and GTP forms of KRasG13C1-169 (Cys-light), but ultimately the reaction yielded only the diphosphate form, indicating that the nucleotides were still hydrolysed after the covalent reaction and were properly positioned in the active site of KRas (Figure 1\u2014figure supplement 2). The time-resolved labelling of KRasG13C1-169 (Cys-light) with either GDP or GTP derivatives led to comparable covalent protein modification rates (Figure 1\u2014figure supplement 3). Additionally, we tested whether the nucleotides were generally able to compete with their natural counterparts and monitored the reaction also in the presence of equimolar concentrations as well as 10 x and 100 x excess of GDP/GTP (Figure 1\u2014figure supplement 4). This shows that although the reaction is slowed down due to the competing nature of GDP and GTP, the modified nucleotides are able to compete. Upon incubating KRasG13C1-169 (Cys-light) with a non-cleavable GppCp derivative, we also observed covalent modification, but without subsequent hydrolysis of the nucleotide (Figure 1\u2014figure supplement 5). To further investigate the specificity of the reaction towards KRasG13C1-169 (Cys-light), we also tested the wild type protein. For KRasWT1-169, very little unspecific labelling was observed at pH 9.5 compared to the G13C mutant (approximately 3% at pH 9, 8% at pH 9.5, whereas under equivalent conditions, KRasG13C modification was \u226590%; Figure 1E, Figure 1\u2014figure supplement 6), thus showing that the warhead reacts preferentially with the cysteine at position 13, but not other cysteines in KRas nor the additional neighboring cysteine in KRasG12C. In addition, the multiple sequence alignment of the Ras small GTPase superfamily revealed that only about 7% of the GTPase members contain cysteines within the P-loop that might potentially be accessible by our linker design and only 3 contain Cys at the position equivalent to residue 13 in Ras (Arl4a, RheBL1, Rab21). Upon incubating Rab21 with edaGDP, we indeed observed similar modification compared to KRasG13C (Figure 1\u2014figure supplement 7). However, since cross-reactivities of covalently binding molecules is well-known and documented also for example in kinase inhibitors such as osimertinib, which modifies a number of off-target kinases (Finlay et al., 2014), we are confident that this will not generally preclude the usage of the nucleotides described. In fact, Rab21 might be an interesting target itself since knock-down of Rab21 has been reported to have beneficial effects in human glioma cells (Ge et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig1-v2.jpg)\n\n**Figure 1.:** (A) Structure of KRasWT in the GDP-bound state (grey, P-loop: violet, switch I: red, switch II: blue, NKxD: green, SAK: yellow; PDB 4obe). (B) Model of KRasG13C (model is based on PDB 4obe) showing the distances between the cysteine residue and the OH-groups of the ribose and the general structure of nucleotide derivatives bearing an electrophilic group at the 2\u2019,3\u2019-position of the ribose moiety, showing that position 12 is further remote compared to position 13 and thus explaining the observed specificity of covalent bond formation. (C) Time-dependent analysis of the covalent modification of KRasG13C1-169 (Cys-light) at pH 9.5 using different linker lengths (eda: ethylenediamine, pda: propylenediamine and bda: butylenediamine). (D) Covalent modification of KRasG13C1-169 (Cys-light) proteins at pH 9.5 after 24 hr at room temperature. (E) In contrast, KRasG12C1-169 (Cys-light) mutant was not modified by nucleotide derivatives and for KRasWT1-169 very little unspecific labelling at pH 9.5 was observed compared to the G13C mutant.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Based on the crystal structure of KRasWT (PDB 4obe), aa residues that are potentially accessible via the linker design (eda:~10 \u00c5, bda:~12 \u00c5) are marked (grey, P-loop: violet, switch I: red, NKxD: green, SAK: yellow) and used for multiple sequence alignment of the Ras small GTPase superfamily (Figure 1\u2014figure supplement 1, Supplementary file 1).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Time-resolved labelling of Ras proteins with acryl-edaGTP showing that the GTP derivative binds in the active site of Ras where it is subsequently hydrolysed. (B) Schematic representation of the GDP/GTP hydrolysis. (C) Time-dependent analysis of the covalent modification of KRasG13C proteins with edaGTP at pH 9.5 at room temperature.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Time-resolved labelling of Ras proteins with acryl-edaGDP (black) or acryl-edaGTP (grey).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Labelling of KRasG13C1-169 (Cys-light) with acryl-edaGDP at pH 9.5 and room temperature was monitored after different time points by ESI-MS in the presence of equimolar concentrations and 10 x and 100 x excess of GDP/GTP.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Labelling of KRasG13C1-169 (Cys-light) with acryl-edaGppCp at pH 9.5 and room temperature was controlled after 24 hr by ESI-MS.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A, B, C) pH-dependent labelling of Ras proteins with acryl-edaGDP (black), acryl-pdaGDP (red) and acryl-bdaGDP (blue) after 24 hr. To increase the amount of covalently modified protein, the pH value was gradually increased. For KRasG13C1-169 (Cys-light), a slight labelling could already be observed at pH 7.5, which, however, could be increased to almost 100% by increasing the pH to 9.5. For KRasWT1-169 very little unspecific labelling was observed compared to the G13C mutant.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig1-figsupp7-v2.jpg)\n\nIn summary, since other cysteines that are located within the P-loop or other regions close to the nucleotide are mostly further remote compared to Cys13 and even the directly neighboring residue at position 12 does not become modified as shown above, suitable design and optimization of the linker will likely allow sufficient specificity towards KRasG13C also in vivo (Figure 1\u2014figure supplement 1, Supplementary file 1).\n\n### Reversible affinities of the nucleotide analogues are comparable to those of the unmodified nucleotides\n\nTo evaluate the impact of the attached linker on nucleotide binding, we first determined the affinity and kinetics of the interaction of the nucleotide derivatives with Ras compared to unmodified GDP/GTP that have dissociation constants (KD) in the picomolar range (Table 1). For this purpose, we measured the kinetics of the nucleotide association (kon) in a stopped-flow instrument using competition experiments between mantdGDP (2 \u03bcM) and increasing amounts of competing nucleotides (1, 2, and 6 \u03bcM; M\u00fcller et al., 2017). As shown in Table 1\u2014source data 1, the competitive binding of the competing nucleotide and mantdGDP led to a significant decrease in the fluorescence signal because of smaller amounts of mantdGDP binding to KRas. By fitting the data to a previously described model (M\u00fcller et al., 2017), we obtained the corresponding kon values, and those for the nucleotide analogues were comparable to those of the unmodified nucleotide (Table 1\u2014source data 2). To further analyse the ability of the modified nucleotides to compete with GDP/GTP, KRasWT:GDP was mixed with equal amounts of the acetamide derivatives and incubated either for 7 days at room temperature in the absence of EDTA, for 24 hr at 4 \u00b0C in the presence of EDTA, or for 1 hr at room temperature in the presence of SOS (guanine nucleotide exchange factor) to increase the rate of nucleotide exchange and to allow the reaction to equilibrate. After this equilibration time and buffer exchange, the Ras proteins were concentrated and the nucleotide state was analysed by isocratic HPLC runs. By integrating the corresponding peaks for GDP and the guanosine nucleotide analogues after distinct time points, we observed that the modified nucleotides can indeed compete with GDP (Table 1\u2014source data 3, Table 1\u2014source data 4). Based on the relative abundance of bound nucleotides determined by the HPLC assay, the dissociation constants for the pda and bda derivatives were calculated to be 8.6\u00b11.3 pM and 9.6\u00b10.5 pM, respectively (overlap with the GDP elution peak prevented accurate determination in the case of the eda-derivative; Method section, Table 1). Thus, the attached linker has very little impact on the reversible interaction and the affinity, an important fact that must be considered for the approach of using nucleotide-competitive inhibitors (M\u00fcller et al., 2017). In contrast, SML-8-73-1, a GDP derivative harbouring an electrophilic group on the \u03b2-phosphate showed a dramatic loss of reversible affinity (KD = ~140 nM) (Jeganathan et al., 2018).\n\n**Table 1.**\n Overview of the calculated kinetic parameters (KD, kon and koff).Table 1\u2014source data 1.Kinetics of the nucleotide association (kon).(A) Competitive binding experiments of GDP and mantdGDP; 1 \u03bcM KRas and 2 \u03bcM mantdGDP was used in the absence (black curve) or in the presence of 1 \u00b5M (red), 2 \u00b5M (blue) or 6 \u00b5M (green) competing nucleotides in a stopped-flow instrument. (B) The binding curves were globally fit to the indicated model using KinTek Explorer to obtain the corresponding association rates (kon). (C, D, E) Competitive binding experiments between mantdGDP and GDP, GTP, or dGTP analogues. Calculated kon values are shown in Table 1\u2014source data 2.Table 1\u2014source data 2.kon calculation.Overview of kon rate constants obtained from competitive binding experiments with mantdGDP (Table 1\u2014source data 1).Table 1\u2014source data 3.HPLC-based approach for determination of affinities relative to GDP.(A, B, C) Competitive binding experiments of GDP and the acetyl-derivatives of GDP; 50 \u03bcM KRasWT:GDP was mixed with 50 \u00b5M of edaGDP, pdaGDP or bdaGDP and incubated for 7 days at room temperature in the absence of EDTA, for 24 hr at 4 \u00b0C in the presence of 10 mM EDTA or for 1 hr in the presence of SOS (0.5 \u00b5M). After buffer exchange for removal of any unbound nucleotides, the resulting mixtures were analyzed by isocratic HPLC runs. (D) Relative amounts of the nucleotides and GDP bound to KRas were compared. It should be noted that the relative affinities mentioned in the method section and shown in Table 1\u2014source data 4 are calculated from these experiments and represent an average affinity of the 2\u2019 isomers, and that of the 3\u2019-isomer seen to be bound in the X-ray structure is presumably actually higher than this, since it can be seen from Figure 2\u2014figure supplement 1 that there is a preference for one of the isomers, presumably the 3\u2019-isomer, so that this species and the derivatives of dGDP/dGTP must have a very similar affinity to that of GDP/GTP.Table 1\u2014source data 4.KD calculations.Overview of the calculated KD values of pdaGDP and edaGDP obtained from an HPLC-based approach (Table 1\u2014source data 3); For reference, the KD values of GDP and the nucleotide analogue SML-8-73-1 are also listed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>KD[pM]</th>\n      <th>kon[\u00b5M\u20131s\u20131]</th>\n      <th>koff[s\u20131]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GDP</td>\n      <td>2.5</td>\n      <td>4.22</td>\n      <td>1.1x10\u20135</td>\n    </tr>\n    <tr>\n      <td>pdaGDP</td>\n      <td>8.6\u00b11.3</td>\n      <td>3.34</td>\n      <td>2.9x10\u20135</td>\n    </tr>\n    <tr>\n      <td>bdaGDP</td>\n      <td>9.6\u00b10.5</td>\n      <td>3.12</td>\n      <td>3.0x10\u20135</td>\n    </tr>\n    <tr>\n      <td>SML-8-73-1</td>\n      <td>~140 nM</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\n### First crystal structures of the KRasG13C mutant\n\nTo gain further insight into the binding mode of the covalently bound nucleotides, we solved the first X-ray crystal structure of the oncogenic KRasG13C mutant, in this case with covalently bound edaGDP (PDB 7ok3) and bdaGDP (PDB 7ok4) (Figure 2, Figure 2\u2014figure supplement 1). The overall structures are very similar to the known structure of KRas:GDP (PDB 4obe), and the nucleotide scaffold, as well as the covalent linkage for both nucleotide analogues with cysteine at position 13 are well resolved in the electron density (Figure 2C, E, Figure 2\u2014figure supplement 1). Interestingly, only the 3\u2019-isomer of the nucleotide analogues was observed in the structures, consistent with results of the MS experiments comparing the efficiency of labelling of the dGTP derivative and the mixed isomers of the GTP derivative and showing a faster reaction for dGTP (Figure 1C). Both structures showed that the nucleotides are bound within the active site in a manner that is comparable to non-covalently bound GDP in other structures of Ras, with similar reversible interactions between the protein and the nucleotide and the additional well-resolved covalent link to Cys13. However, both structures lacked the Mg2+ ions in the active site despite a Mg2+ concentration of 2 mM in the Ras solution. The missing Mg2+-ions are probably a result of the crystallization buffer containing NH4F or NaF, leading to precipitation of poorly soluble MgF2, and this has also been observed in other PDB-deposited structures presumably because of similar effects of the reservoir solutions used in the crystallization process (e.g. PDB 4m1o, 4lyf, 4lyh, 4m21, 4m1s, 4m1t, 4m1t, 4m1y) (Ostrem et al., 2013). In both crystal structures, the eda and bda linker are remote from the Mg2+ binding site and do not directly interfere with Mg2+ binding, suggesting that Mg2+ can generally bind. Thus, the structural analysis verified the nucleotide binding pose and the high reversible affinity comparable to the natural nucleotides and will guide design and optimisation of the linker and the warhead in further studies.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig2-v2.jpg)\n\n**Figure 2.:** (A) Comparison of KRasG13C covalently locked with edaGDP (grey, P-loop: violet, switch I: red, switch II: blue, NKxD: green, SAK: yellow, PDB 7ok3) and KRas:GDP (white, PDB 4obe). (B) Comparison of KRasG13C covalently locked with bdaGDP (grey, P-loop: violet, switch I: red, switch II: blue, NKxD: green, SAK: yellow, PDB 7ok4) and KRas:GDP (white, PDB 4obe). (C) Enlarged view of the nucleotide binding pocket in KRasG13C-edaGDP showing the 2Fo-Fc electron density map (countered at 1.0 \u03c3). (D) Structural superposition of KRas:GDP and the covalently locked G13C mutants. (E) Enlarged view of the nucleotide binding pocket in KRasG13C-bdaGDP showing the 2Fo-Fc electron density map (countered at 1.0 \u03c3).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) edaGDP and bdaGDP, respectively, covalently bound to KRasG13C including the FO-FC simulated annealing omit map (green, r.m.s.d.=2.5) and the 2FO-FC map (grey, r.m.s.d.=1.0).\n\n### Inhibition of oncogenic KRasG13C signalling by covalent nucleotide analogues\n\nFinally, we set out to test whether the GDP nucleotide derivatives we are focusing on for cancer therapy were indeed able to inhibit oncogenic signalling by KRasG13C. In a first experiment, we tested and compared the SOS-catalysed nucleotide exchange on Ras. Whereas SOS efficiently catalysed nucleotide exchange on KRasWT, KRasG13C and as a control on KRasG13C:acetyledaGDP, it was unable to do so with the covalently locked G13C-edaGDP mutant, showing that the protein is indeed locked in the inactive state (Figure 3A, Figure 3\u2014figure supplement 1). Interestingly, in these experiments we also observed a drastically increased intrinsic nucleotide exchange rate for KRasG13C compared to KRasWT in the absence of SOS (Figure 3A, blue area), an effect that probably contributes to the increased signalling and oncogenic effect of this mutant, and also this effect is abrogated in the case of covalently locked KRasG13C-edaGDP (Hunter et al., 2015). Similarly, no SOS-catalysed nucleotide exchange was observed in case of covalently modified KRasG13C-edaGppCp, indicating that the protein can also be trapped in the active conformation with the corresponding nucleoside-triphosphates (Figure 3\u2014figure supplement 1B). Thus, the modified GppCp derivatives could also be used as artificial and irreversible activators and generally as tool compounds to further investigate the biological role of KRasG13C in cells. In addition to SOS-catalysed nucleotide exchange, GAP-stimulated GTP hydrolysis was also analysed. While the intrinsic GTP hydrolysis of KRasG13C-edaGTP (t1/2 = 187 min) is comparable to that of KRasWT:GTP (t1/2 = 126 min) and even faster than for the KRasG12C mutant (t1/2 = 300 min) (Li et al., 2021; Figure 3\u2014figure supplement 2), a drastically decreased GAP-stimulated GTP hydrolysis was observed for the G13C mutant as expected (Scheffzek et al., 1997).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-v2.jpg)\n\n**Figure 3.:** (A) GEF-catalysed nucleotide exchange of KRasWT:GDP, KRasG13C:GDP and KRasG13C-edaGDP (step 1) which were mixed with an excess of mantdGDP (step 2) and subsequently with 0.25 \u00b5M (red curve) or 0.5 \u00b5M (black curve) of SOS (step 3). The intrinsic nucleotide exchange is depicted in the blue box whereas the SOS-catalysed nucleotide exchange is shown in the grey box. (B) Western blot analysis after electroporation of indicated amounts of full-length KRasWT, KRasG13C, and KRasG13C-edaGDP into HeLa cells. (C) Quantification of protein levels from western blots was performed using Empiria Studio (Li-Cor). The mean fold change was plotted against increasing amounts of protein. Error bars indicate the standard deviation for each measurement (n=3). One-way ANOVA was performed using GraphPad Prism. The uncropped western blots are available as source data (Goebel et al_Source_data_file_WB.xlsx).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** SOS-catalysed nucleotide exchange of (A) KRasG13C:acetyledaGDP and (B) KRasG13C-edaGppCp which were mixed with an excess of mantdGDP and subsequently with 0.25 \u00b5M (red curve) or 0.5 \u00b5M (black curve) of SOS. The intrinsic nucleotide exchange is depicted in the blue box whereas the SOS-catalysed nucleotide exchange is shown in the grey box.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The intrinsic (black) and the GAP-stimulated (red) GTP hydrolysis of KRasWT:GTP was measured via HPLC. (B) The intrinsic (black) and the GAP-stimulated (red) GTP hydrolysis of KRasG13C-edaGTP was obtained via ESI-MS. While GAP-stimulated GTP hydrolysis can be observed for KRasWT:GTP already at catalytic amounts of GAP (GAP 1:1000, t1/2 = 16 min), KRasG13C-edaGTP requires equivalent amounts of GAP (GAP 1:1, t1/2 = 35 min). However, the intrinsic GTP hydrolysis of KRasG13C-edaGTP (t1/2 = 187 min) is comparable to that of KRasWT:GTP (t1/2 = 126 min).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Whereas RasG13C:GDP can be pulled down by GST-tagged RafRBD in the presence of GppNHp and GppNHp/SOS, RasG13C-edaGDP cannot become activated and consequently cannot bind to RafRBD, neither in the presence of GppNHp nor GppNHp and SOS.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Schematic representation of covalent modification of full-length KRasG13C followed by in vitro farnesylation. Nucleotide exchange was performed in the presence of EDTA at pH 7.5 followed by covalent modification of full-length KRasG13C at pH 9.5 to prevent undesired interaction with the cysteine of the CAAX box. To verify the position of the covalent modification, an in vitro farnesylation was afterwards performed, showing complete farnesylation and thus showing that the cysteine of the important CAAX box at the C-terminus of Ras is available for farnesylation and did not react unspecifically with the nucleotide. (B) Schematic representation of in vitro farnesylation of full-length KRasWT as a control experiment.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Overview of the sequence coverage. The identified regions of the protein are marked in green, and only the C-terminus of the protein cannot be identified due to the multiple lysine side chains present in this region. (B) Comparison of the intensities of all peptides of KRas after tryptic digestion, which were detected in all four replicates of the unmodified protein with an intensity of at least 1E8. Peptide intensities of the unmodified protein and the modified one are comparable from position 16 on, whereas the intensities of the peptides containing the targeted cysteine residue were significantly lower. By calculating the mean values of the intensities for the replicates of the unmodified (s1) and modified proteins (s2) followed by calculating the ratio of the mean values (MW s1/MW s2), we observed that the N terminus up to position 16 in the samples s2 could not be identified or was detected with much lower intensity than the other detectable regions of KRas. Thus, MS/MS analysis suggests that the targeted cysteine residue at position 13 is labelled by the nucleotide-based inhibitor edaGDP. (C, D) Comparison of the intensities of peptide LVVVGAGCVGK (m/z: 529.805+\u20135 ppm, twofold charged) for KRasG13C and KRasG13C-edaGDP. (D) Ion chromatogram of the peptide for KRasG13C. (D) Ion chromatogram of the peptide for KRasG13C-edaGDP.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Western blot analysis after electroporation of indicated amounts of full-length (A) KRasWT, (B) KRasG13C and (C) KRasG13C-edaGDP into HeLa cells (n=3 biological replicates). The uncropped western blots are available as source data (Goebel et al_Source_data_file_WB.xlsx).\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Quantification of (A) KRas and (B) downstream protein levels from western blots after electroporation of indicated amounts of full-length KRasWT, KRasG13C and KRasG13C-edaGDP into HeLa cells using Empiria Studio (Li-Cor). The mean fold change was plotted against increasing amounts of protein. Error bars indicate the standard deviation for each measurement (n=3). Because of the relatively low expression levels of Ras, the contrast needed to be appropriately increased to enable visualisation of the intrinsically expressed KRas protein. The uncropped western blots are available as source data (Goebel et al_Source_data_file_WB.xlsx).\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-figsupp8-v2.jpg)\n\n**Figure 3\u2014figure supplement 8.:** (A) Western blot analysis after electroporation of indicated amounts of full-length KRasG13C:acetyledaGDP into HeLa cells (n=3 biological replicates). (B) Quantification of KRas and (C) downstream protein levels from western blots after electroporation of indicated amounts of full-length KRasG13C:acetyledaGDP (blue) into HeLa cells using Empiria Studio (Li-Cor). The mean fold change was plotted against increasing amounts of protein. Error bars indicate the standard deviation for each measurement (n=3). The uncropped western blots are available as source data (Goebel et al_Source_data_file_WB.xlsx).\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/82184/elife-82184-fig3-figsupp9-v2.jpg)\n\n**Figure 3\u2014figure supplement 9.:** (A) Western blot analysis after electroporation of indicated amounts of full-length KRasG13C-edaGppCp into HeLa cells (n=2 biological replicates). (B) Quantification of KRas and (C) downstream protein levels from western blots after electroporation of indicated amounts of full-length KRasG13C-edaGppCp (green) into HeLa cells using Empiria Studio (Li-Cor). The mean fold change was plotted against increasing amounts of protein. Error bars indicate the standard deviation for each measurement (n=2). The uncropped western blots are available as source data (Goebel et al_Source_data_file_WB.xlsx).\n\nIn addition to the effects of GEFs and GAPs, we also investigated whether the covalent modification with edaGDP was sufficient to preclude effector binding. For this, we performed pull-down experiments with GST-tagged RafRBD: Whereas KRasG13C:GDP did not bind to the RafRBD, it was activated in the presence of GppNHp alone or in combination with SOS and was pulled down by RafRBD. This finding again highlights the self-activating nature of this Ras mutant, even in the absence of a stimulus (SOS). In contrast, covalently locked KRasG13C-edaGDP was neither in the presence of GppNHp nor of additional SOS able to bind to the RafRBD (Figure 3\u2014figure supplement 3).\n\nFinally, after the detailed in vitro characterization of the nucleotide analogues, the next experiment was to investigate whether oncogenic signalling could also be inhibited in vivo. Since the nucleotides are unable to cross the cell membrane without loss of the phosphate groups and full labelling of the G13C mutant was only achieved at relatively high pH values within 24 hr, we used electroporation to deliver recombinant full-length KRasWT, KRasG13C and KRasG13C-edaGDP into human cells. Importantly, we confirmed that the covalently locked protein can still be fully farnesylated in vitro (Figure 3\u2014figure supplement 4) and the covalent modification of full-length KRasG13C was further validated through MS/MS\u2010analysis, which revealed selective labelling of the targeted cysteine residue at position 13 (Figure 3\u2014figure supplement 5). Upon electroporation into HeLa cells, a concentration-dependent increase in abundance of KRas was observed for all variants, indicating successful delivery into cells (Figure 3B, C, Figure 3\u2014figure supplements 6 and 7). However, whereas we observed a concentration-dependent activation of the downstream signalling and upregulation of pcRaf, pAkt, pErk, and pS6 upon delivery of KRasG13C, the covalently locked variant was unable to induce these effects and, similarly to KRasWT, no increase in downstream signalling was observed (Figure 3B, C, Figure 3\u2014figure supplements 6 and 7). In addition, upon electroporation of non-covalently modified KRasG13C:acetyledaGDP or covalently modified KRasG13C-edaGppCP, activation of the Ras pathway comparable to KRasG13C was observed, showing that covalent modification is essential for inhibition of oncogenic signalling and that artificial activation can be induced using non-hydrolysable GTP derivatives, which potentially adds further possibilities of using these nucleotide analogues to study Ras biology (Figure 3\u2014figure supplements 8 and 9). Thus, our cellular data provide an additional proof-of-concept for the use of nucleotide-based covalent inhibitors and activators in KRasG13C-driven cancer.\n\n### Conclusion\n\nIn summary, we have successfully developed nucleotide-based covalent inhibitors of oncogenic KRasG13C, a variant of KRas that is largely unexplored as a target even though it is a frequently observed mutation in cancer (Visscher et al., 2016). Thorough biochemical and structural characterization revealed that the nucleotide analogues designed and synthesized in this publication have similar affinities towards Ras compared to their natural counterparts. Since we are currently unable to directly test the nucleotides in cells, we instead extensively tested them in vitro regarding their ability to covalently lock KRasG13C in the inactive state and to effectively inhibit oncogenic signaling. We could show that the nucleotides prohibit (SOS-mediated) nucleotide exchange and lead to an effective interference in the induction of oncogenic effects by KRasG13C in living cells. Thus, after the first successful examples of inhibition of KRasG12C by Shokat and colleagues, our study breaks ground to effectively inhibit another important oncogenic variant of Ras by using small molecules.\n\nFurther optimization of the nucleotides to overcome the limitations regarding reactivity at physiological pH, as well as cell-permeability, are necessary and currently ongoing. In this respect, we are focusing on various linker designs based on the determined structure of the adduct, including cyclic linkers, to fine-tune the warhead\u2019s orientation and reactivity towards the cysteine at position 13. Additionally, protective esterification of the diphosphate moiety is currently being investigated to deliver prodrugs of the nucleotides into cells, which subsequently become activated by unspecific esterases (Meier, 2017; Mehellou et al., 2018). We are also investigating whether appropriate modification of the linker length and the electrophilic warhead would also make KRasG12C or other relevant mutants (e.g. HRasG12S in Costello syndrome) (Gripp and Lin, 2012) a possible target in a similar approach.\n\n## Methods\n\n### Sequence alignment\n\nA multiple sequence alignment of the G domain Ras superfamily members was performed using (UniProt Consortium, 2021). The uniport accession codes that were used for the sequence alignment of the GTPases can be taken from Supplementary file 1.\n\n### pKa calculations\n\nFor the protein pKa prediction, a program from OpenEye based on the Zap finite difference Poisson\u2013Boltzmann solver was used. Regarding partial charges of the protein, Delphi radii and CHARMM36 All-Hydrogen partial charges were utilized. The linker was removed in the bda/edaGDP structures. The am1bccsym method was used to assign appropriate partial charges to the ligands. An inner dielectric of 10, an ionic strength of 0.05 M and ionization (i.e. pH) of 7.5 was applied. For cysteine, a reference pKa of 8.6 was used. All hydrogen atoms were modeled explicitly, and except for the orientations of the OH and SH protons, which were sampled in 10\u00b0 steps, the rest of the structure was static. Optimizing ionization state and SH orientation was achieved by applying ten million Monte Carlo steps (Supplementary file 2; Word and Nicholls, 2011).\n\n### Synthesis of nucleotide-based covalent inhibitors\n\nSynthesis of the nucleotide analogues was carried out according to the protocol established by Cremo et al. and described by Eberth et al., 2005; Cremo et al., 1990. A strong cation exchanger (Ion exchanger I, Merck, Darmstadt, Germany) was used to prepare the tributylammonium salts of the nucleotides. The commercially available sodium salt of the nucleotide (0.5 mmol) was dissolved in 3 mL ddH2O and was applied on the column pre-equilibrated with pyridine/H2O (1:1). Nucleotide elution was achieved using methanol/H2O (1:1) and the eluate was dripped into 1 mL TBA. After monitoring the nucleotide elution by spotting samples onto a TLC plate with fluorescent indicator and removing of the methanol/H2O solution the mixture was dried by repeated rotary evaporation from dry DMF (3x20 mL).\n\n### Preparation of 5\u00b4-phosphorylimidazolidate 2\u2019,3\u2019-O-carbonate of nucleotides\n\nThe remaining solid was dissolved in 20 mL dry DMF and CDI (2.5 mmol) was added under argon atmosphere. After stirring overnight at 4 \u00b0C to form the carbonate the reaction was quenched by the addition of absolute methanol (150 \u00b5L; Scheme 1).\n\n![Scheme 1.](https://cdn.elifesciences.org/articles/82184/elife-82184-scheme1-v2.jpg)\n\n#### HRMS (ESI-MS)\n\n<table>\n  <thead>\n    <tr>\n      <th>nucleotide</th>\n      <th>calculated</th>\n      <th>[M-H]-</th>\n      <th>found</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GDP</td>\n      <td>518.0232</td>\n      <td>C14H14O11N7P2</td>\n      <td>518.0220</td>\n    </tr>\n    <tr>\n      <td>GTP</td>\n      <td>597.9895</td>\n      <td>C14H15O14N7P3</td>\n      <td>597.9869</td>\n    </tr>\n    <tr>\n      <td>dGTP</td>\n      <td>650.0315</td>\n      <td>C17H19O13N9P3</td>\n      <td>650.0304</td>\n    </tr>\n    <tr>\n      <td>GppCp*</td>\n      <td>545.9828</td>\n      <td>C12H15O14N5P3</td>\n      <td>545.9829</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">\u200d*in case of GppCp, the cyclic carbonate was observed with a free terminal phosphate group.</td>\n    </tr>\n  </tbody>\n</table>\n\n### Preparation of the respective 2\u2019,3\u2019-O-carbamates of nucleotides\n\nThe primary amine (eda, pda or bda; 2.5 mmol) dissolved in 5 mL dry DMF was slowly added to the carbonate mixture to prepare the phosphoramidate derivative. The resulting precipitate was recovered by centrifugation (10,000 rpm, 10 min) and washed three times with DMF (Scheme 2).\n\n![Scheme 2.](https://cdn.elifesciences.org/articles/82184/elife-82184-scheme2-v2.jpg)\n\n#### LCMS (ESI-MS)\n\n<table>\n  <thead>\n    <tr>\n      <th>nucleotide</th>\n      <th>linker</th>\n      <th>calculated</th>\n      <th>[M-H]-</th>\n      <th>found</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">GDP</td>\n      <td>eda</td>\n      <td>578.1</td>\n      <td>C16H22N9O11P2</td>\n      <td>578.1</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>592.1</td>\n      <td>C17H24N9O11P2</td>\n      <td>592.1</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>606.1</td>\n      <td>C18H26N9O11P2</td>\n      <td>606.1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">GTP</td>\n      <td>eda</td>\n      <td>658.1</td>\n      <td>C16H23N9O14P3</td>\n      <td>658.0</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>672.1</td>\n      <td>C17H25N9O14P3</td>\n      <td>672.1</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>686.1</td>\n      <td>C18H27N9O14P3</td>\n      <td>686.1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">dGTP</td>\n      <td>eda</td>\n      <td>634.1</td>\n      <td>C15H27N9O13P3</td>\n      <td>634.1</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>662.1</td>\n      <td>C17H31N9O13P3</td>\n      <td>662.1</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>690.2</td>\n      <td>C19H35N9O13P3</td>\n      <td>690.2</td>\n    </tr>\n    <tr>\n      <td>GppCp</td>\n      <td>eda</td>\n      <td>648.1</td>\n      <td>C16H29N9O13P3</td>\n      <td>648.1</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cleavage of the phosphoramidate\n\nThe solid was dissolved in 20 mL ddH2O and the pH was adjusted to 1.5 with 0.25 M hydrochloric acid to hydrolyse the phosphoramidate. After stirring at 4 \u00b0C for 1\u20133 d the mixture was then raised to pH 7.5 using 0.25 M NaOH. The nucleotides were purified at 4 \u00b0C on a Q-Sepharose column (column volume: 130 mL) preequilibrated with 50 mM triethylammonium bicarbonate buffer (pH 7.6) and eluted by a linear gradient of 50 mM \u2013 1 M TEAB over 600 min with a flow rate of 1 mL/min. The nucleotide containing fractions were analysed by HPLC 50 mM KPi pH 6.6, 10 mM TBAB, 16% ACN; column: ProntoSIL 120\u20135 C18-AQ, Bischoff, Germany and were lyophilized several times from ddH2O to remove the buffer (Scheme 3).\n\n![Scheme 3.](https://cdn.elifesciences.org/articles/82184/elife-82184-scheme3-v2.jpg)\n\n#### HRMS (ESI-MS)\n\n<table>\n  <thead>\n    <tr>\n      <th>nucleotide</th>\n      <th>linker</th>\n      <th>calculated</th>\n      <th>[M-H]-</th>\n      <th>found</th>\n      <th>purity (%)</th>\n      <th>yield (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">GDP</td>\n      <td>eda</td>\n      <td>528.0651</td>\n      <td>C13H20O12N7P2</td>\n      <td>528.0654</td>\n      <td>90</td>\n      <td>38</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>542.0802</td>\n      <td>C14H22O12N7P2</td>\n      <td>542.0809</td>\n      <td>&gt;95</td>\n      <td>65</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>556.0964</td>\n      <td>C15H24O12N7P2</td>\n      <td>556.0960</td>\n      <td>&gt;95</td>\n      <td>29</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">GTP</td>\n      <td>eda</td>\n      <td>608.0314</td>\n      <td>C13H21O15N7P3</td>\n      <td>608.0289</td>\n      <td>89</td>\n      <td>56</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>662.0471</td>\n      <td>C14H23O15N7P3</td>\n      <td>662.0471</td>\n      <td>87</td>\n      <td>83</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>636.0621</td>\n      <td>C15H25N7O15P3</td>\n      <td>636.0603</td>\n      <td>94</td>\n      <td>67</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">dGTP</td>\n      <td>eda</td>\n      <td>592.0359</td>\n      <td>C13H21O14N7P3</td>\n      <td>592.0349</td>\n      <td>84</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>606.0516</td>\n      <td>C14H23O14N7P3</td>\n      <td>606.0521</td>\n      <td>93</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>620.0672</td>\n      <td>C15H25N7O14P3</td>\n      <td>620.0663</td>\n      <td>90</td>\n      <td>34</td>\n    </tr>\n    <tr>\n      <td>GppCp</td>\n      <td>eda</td>\n      <td>606.0516</td>\n      <td>C14H23N7O14P3</td>\n      <td>606.0513</td>\n      <td>89</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\n### Insertion of the Michael acceptor or non-reactive acetamido derivative\n\nThe nucleotide based covalent inhibitors were prepared by dissolving eda, pda or bda nucleotides in a small amount of tetraborate buffer (100 mM, pH 8.5) and adding N-acryloxysuccinimide (1 eq.) dissolved in 25 \u00b5L DMSO. The reaction mixture was stirred for 24 h at room temperature and the reaction progress was monitored using HPLC. The covalent nucleotide analogues were purified using Q-Sepharose as described above and were stored at \u201320 \u00b0C as concentrated solutions (~100 mM) in 200 mM HEPES (pH 7.5; Scheme 4).\n\n![Scheme 4.](https://cdn.elifesciences.org/articles/82184/elife-82184-scheme4-v2.jpg)\n\n#### HRMS (ESI-MS)\n\n<table>\n  <thead>\n    <tr>\n      <th>Acrylamides</th>\n      <th>linker</th>\n      <th>calculated</th>\n      <th>[M-H]-</th>\n      <th>found</th>\n      <th>purity (%)</th>\n      <th>yield (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">GDP</td>\n      <td>eda</td>\n      <td>582.0751</td>\n      <td>C16H22N7O13P2</td>\n      <td>582.0741</td>\n      <td>&gt;95</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>596.0907</td>\n      <td>C17H24N7O13P2</td>\n      <td>596.0907</td>\n      <td>87</td>\n      <td>65</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>610.1064</td>\n      <td>C18H26N7O13P2</td>\n      <td>610.1062</td>\n      <td>&gt;95</td>\n      <td>78</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">GTP</td>\n      <td>eda</td>\n      <td>662.0414</td>\n      <td>C16H23N7O16P3</td>\n      <td>662.0394</td>\n      <td>93</td>\n      <td>54</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>676.0571</td>\n      <td>C17H25N7O16P3</td>\n      <td>676.0551</td>\n      <td>&gt;95</td>\n      <td>63</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>690.0727</td>\n      <td>C18H27N7O16P3</td>\n      <td>690.0705</td>\n      <td>86</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">dGTP</td>\n      <td>eda</td>\n      <td>646.0465</td>\n      <td>C16H23N7O15P3</td>\n      <td>646.0452</td>\n      <td>93</td>\n      <td>63</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>660.0621</td>\n      <td>C17H25N7O15P3</td>\n      <td>660.0611</td>\n      <td>90</td>\n      <td>81</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>674.0778</td>\n      <td>C18H27N7O15P3</td>\n      <td>674.0771</td>\n      <td>93</td>\n      <td>74</td>\n    </tr>\n    <tr>\n      <td>GppCp</td>\n      <td>eda</td>\n      <td>660.0621</td>\n      <td>C17H27N7O16P3</td>\n      <td>660.0619</td>\n      <td>79</td>\n      <td>15*</td>\n    </tr>\n    <tr>\n      <td>Acetylamides</td>\n      <td>linker</td>\n      <td>calculated</td>\n      <td>[M-H]-</td>\n      <td>found</td>\n      <td>purity (%)</td>\n      <td>yield (%)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">GDP</td>\n      <td>eda</td>\n      <td>570.0751</td>\n      <td>C15H22N7O13P2</td>\n      <td>570.0734</td>\n      <td>&gt;95</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>584.0907</td>\n      <td>C16H24N7O13P2</td>\n      <td>584.0889</td>\n      <td>90</td>\n      <td>51</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>598.1064</td>\n      <td>C17H26N7O13P2</td>\n      <td>598.1042</td>\n      <td>79</td>\n      <td>73</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">GTP</td>\n      <td>eda</td>\n      <td>650.0414</td>\n      <td>C15H23N7O16P3</td>\n      <td>650.0392</td>\n      <td>&gt;95</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>pda</td>\n      <td>664.0571</td>\n      <td>C16H25N7O16P3</td>\n      <td>664.0553</td>\n      <td>94</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>bda</td>\n      <td>678.0727</td>\n      <td>C17H27N7O16P3</td>\n      <td>678.0700</td>\n      <td>93</td>\n      <td>31</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">*in case of GppCp, the total yield was calculated over 4 steps.\u200d</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nKRasWT1-169 and KRasG13C1-169 Cys-light (C51S C80L C118S) were expressed in BL21 (DE3) E. coli whereas the full-length KRasWT and KRasG13C were expressed in BL21 (DE3) RIL E. coli at 37 \u00b0C. Protein expression was induced at A600 nm of 0.5 by addition of 0.2\u20130.3 mM isopropyl-b-D-thiogalactoside (IPTG), and growth was continued at 19 \u00b0C overnight. The bacteria were collected by centrifugation and the obtained pellet resuspended in Ni-NTA buffer (KRas1-169: 50 mM Tris pH 8.0, 250 mM NaCl, 40 mM imidazole, 4 mM MgCl2, 10 \u00b5M GDP, 1 mM dithiothreitol (DTT), and 5% glycerol; full-length KRas: 50 mM HEPES pH 7.2, 500 mM LiCl, 2 mM MgCl2, 10 \u00b5M GDP, 2 mM \u03b2-mercaptoethanol (\u03b2ME)). The cells were lysed with a microfluidizer, and after addition of protease inhibitor cocktail (Roche complete EDTA free) and 1% CHAPS (w/v) stirring was continued for 1 hr at 4 \u00b0C. The lysate was cleared by centrifugation (35,000 x g, 1 h) and the supernatant was loaded onto a Ni-affinity chromatography column (Qiagen Ni-NTA Superflow, 20 mL) pre-equilibrated with Ni-NTA buffer. KRas1-169 proteins were eluted with a linear gradient of imidazole buffer (40 mM \u2013 500 mM), whereas the full-length KRas proteins were collected with a stepwise elution (2, 5, 10, 20, 30, 50, and 100% of Ni-NTA-buffer containing 500 mM imidazole). For cleavage of the N-terminal hexahistidine-tag, TEV protease was added to the pooled elution fractions and dialyzed overnight into dialysis buffer at 4 \u00b0C (KRas1-169: 25 mM Tris pH 8.0, 100 mM NaCl, 4 mM MgCl2, 10 \u00b5M GDP, 1 mM DTT, and 5% glycerol; full-length KRas: 20 mM HEPES pH 7.2, 200 mM NaCl, 2 mM MgCl2, 10 \u00b5M GDP, 2 mM \u03b2ME and 5% glycerol). The cleaved protein was then applied to a reverse Ni-affinity chromatography column and finally purified by size-exclusion chromatography (GE HiLoad 16/60 Superdex 75 pg) in a final buffer containing 20 mM HEPES pH 7.5, 100 mM NaCl, 2 mM MgCl2, 10 \u00b5M GDP, 1 mM TCEP, and 5% glycerol. GST-tagged RafRBD was purified as described previously by affinity chromatography and subsequent size exclusion chromatography in a final buffer containing 20 mM HEPES pH 7.5, 100 mM NaCl, 2 mM MgCl2, 1 mM TCEP, and 5% glycerol (Herrmann et al., 1995).\n\n### Nucleotide exchange\n\nA total of 50 \u00b5M Ras protein was incubated with a 10-fold excess of nucleotides in 20 mM HEPES (pH 7.5), 100 mM NaCl, 2 mM MgCl2, 1 mM TCEP, 5% glycerol, and 10 mM EDTA for 3 hr at 4 \u00b0C. Nucleotide exchange was terminated by the addition of 20 mM MgCl2 and Ras proteins were washed using centrifugal filter devices to remove any unbound nucleotide. Nucleotide exchange was controlled by isocratic HPLC runs.\n\n### Covalent modification of proteins\n\nTo analyse the amount of covalent modification of KRasG13C1-169, 50 \u00b5M Ras protein was incubated with a 10-fold excess of the acryl-bearing nucleotides in 100 mM CHES (pH 9.5), 50 mM NaCl, 1 mM TCEP, and 1 mM EDTA. After incubation at room temperature for the appropriate time, the modification of the protein was controlled by ESI-MS. For covalent modification of full-length KRasG13C, a nucleotide exchange with a 10-fold excess of the acryl-bearing nucleotides at pH 7.5 was first performed following incubation at room temperature for 24 h at pH 9.5 for covalent protein modification. Covalent protein modification was controlled by ESI-MS. The MS spectra were recorded on a VelosPro IonTrap (Thermo Scientific) with an EC 50/3 Nucleodur C18 1.8 \u03bcm column (Macherey and Nagel) and a gradient of the mobile phase A (0.1% formic acid in water) to B (0.1% formic acid in acetonitrile).\n\n### Stopped-flow experiments\n\nThe association kinetics of the nucleotide analogues were analyzed with a SX-20 stopped-flow instrument (Applied Photophysics) at 25 \u00b0C in a buffer consisting of 25 mM HEPES (pH 7.5), 100 mM NaCl, 1 mM MgCl2, and 0.5 mM TCEP. 1 \u00b5M of nucleotide-free KRas (M\u00fcller et al., 2017) in one syringe was mixed rapidly with 2 \u00b5M mantdGDP in the other. In subsequent experiments, the second syringe contained competing nucleotides (1, 2, and 6 \u00b5M) in addition to 2 \u00b5M mantdGDP. The resulting progress curves were globally fit using KinTek Explorer to obtain the corresponding association rate constants as previously described (Table 1\u2014source data 1, Table 1\u2014source data 2 Johnson et al., 2009).\n\n### HPLC-based approach for determination of affinities relative to GDP\n\nThe relative affinities of the nucleotide analogues were measured using an HPLC-based approach. 50 \u00b5M of KRasWT1-169:GDP was mixed with 50 \u00b5M of the acetamide derivatives and incubated either for 7 days at room temperature in the absence of EDTA, for 24 hr at 4 \u00b0C in the presence of 10 mM EDTA, or for 1 hr at room temperature in the presence of SOS in a buffer consisting of 20 mM HEPES (pH 7.5), 100 mM NaCl, 2 mM MgCl2, 1 mM TCEP and 5% glycerol. After incubation, the Ras proteins were washed five times with buffer (15 mL) using centrifugal filter devices to remove any unbound nucleotide, concentrated and analysed by isocratic HPLC runs. The resulting curves were analysed by integrating the corresponding peaks for GDP and the guanosine nucleotide analogues after distinct time points using the Agilent ChemStation Software (Table 1\u2014source data 3, Table 1\u2014source data 4).\n\n### Calculation of the KD values of the nucleotide analogues\n\nBased on the percentage distribution determined by the HPLC assay, the relative association constants (KrelA) for pdaGDP and bdaGDP could subsequently be calculated. In contrast, the superposition of the GDP signal prevented an exact determination of the relative association constant for edaGDP. KrelA values of 0.34 and 0.28 relative to GDP were determined for pdaGDP and bdaGDP, respectively. Finally, considering the KD value of 2.5 pM for GDP described by Jeganathan et al. the corresponding dissociation constant KD values could be determined, which are shown in Table 1\u2014source data 4; Jeganathan et al., 2018.\n\n$$\nRas+GDP^{k_{GDP}\u2192}Ras:GDP\n$$\n\n\n\n$$\nRas+aGDP^{k_{aGDP}\u2192}Ras:aGDP\n$$\n\nBy rearranging the equilibrium reactions listed in (Equation 1a) and (Equation 1b), the following relationships are obtained for KGDP (Equation 2a) and KaGDP (Equation 2b):\n\n$$\nK_{GDP}=\\frac{Ras:GDP}{RasGDP}\n$$\n\n\n\n$$\nK_{aGDP}=\\frac{Ras:aGDP}{RasaGDP}\n$$\n\nAssuming that the concentration for aGDP used in the HPLC assay is 50 \u00b5M, the following GDP concentrations for pdaGDP (Equation 3a) and bdaGDP (Equation 3b) can be determined at time t=0 hr using the percentages determined in Table 1\u2014source data 3:\n\n$$\nGDP_{total}=\\frac{%_{GDP}}{%_{pdaGDP}}=\\frac{37%}{63%}\\times50\\muM=29.4\\muM\n$$\n\n\n\n$$\nGDP_{total}=\\frac{%_{GDP}}{%_{bdaGDP}}=\\frac{43%}{57%}\\times50\\muM=37.7\\muM\n$$\n\nThe concentrations of the components listed in equation (Equation 2b) can be calculated as follows for pdaGDP (Equation 4a, Equation 4b, Equation 4c, Equation 4d) and bdaGDP (Equation 5a, Equation 5b, Equation 5c, Equation 5d) by considering the total GDP concentrations calculated previously:\n\n$$\n[Ras:pdaGDP]=\\frac{47}{100}\\times29.4\\muM=13.8\\muM\n$$\n\n\n\n$$\n[Ras:GDP]=\\frac{53}{100}\\times29.4\\muM=15.6\\muM\n$$\n\n\n\n$$\n[pdaGDP]=50\\muM\u221213.8\\muM=36.2\\muM\n$$\n\n\n\n$$\n[GDP]=29.4\\muM\u221215.6\\muM=13.8\\muM\n$$\n\n\n\n$$\n[Ras:bdaGDP]=\\frac{39.5}{100}\\times37.7\\muM=14.9\\muM\n$$\n\n\n\n$$\n[Ras:GDP]=\\frac{60.5}{100}\\times37.7\\muM=22.8\\muM\n$$\n\n\n\n$$\n[bdaGDP]=50\\muM\u221214.9\\muM=35.1\\muM\n$$\n\n\n\n$$\n[GDP]=37.7\\muM\u221222.8\\muM=14.9\\muM\n$$\n\nThe relative association constant KrelA can be calculated by the following formula (Equation 6):\n\n$$\nK_{relA}=\\frac{K_{aGDP}}{K_{GDP}}=\\frac{Ras:aGDP\\timesGDP}{aGDP\\timesRas:GDP}\n$$\n\nBy inserting the concentrations of each component determined from (Equation 4a, Equation 4b, Equation 4c, Equation 4d) and (Equation 5a, Equation 5b, Equation 5c, Equation 5d) into (Equation 6), the relative association constants KrelA for pdaGDP (Equation 7a) and bdaGDP (Equation 7b) can be calculated:\n\n$$\nK_{relA}=\\frac{K_{pdaGDP}}{K_{GDP}}=\\frac{13.8\\muM\\times13.8\\muM}{36.2\\muM\\times15.6\\muM}=0.34\n$$\n\n\n\n$$\nK_{relA}=\\frac{K_{bdaGDP}}{K_{GDP}}=\\frac{14.9\\muM\\times14.9\\muM}{35.1\\muM\\times22.8\\muM}=0.28\n$$\n\nBased on the relative association constants KrelA, the KA values of the nucleotide analogues can be calculated by multiplication with the association constant of GDP:\n\n$$\nK_{A}=K_{A}GDP\\timesK_{relA}\n$$\n\nThe KD value of 2.5 pM described by Jeganathan et al., 2018 was used as the reference value for GDP. By substituting the reference value into KA = 1/KD, a KA value for GDP of 0.4 pM\u20131 was determined. Accordingly, the KA values for pdaGDP (Equation 9a) and bdaGDP (Equation 9b) are as follows:\n\n$$\nK_{A}pdaGDP=0.4pM^{-1}\\times0.34=0.136pM^{-1}\n$$\n\n\n\n$$\nK_{A}bdaGDP=0.4pM^{-1}\\times0.28=0.112pM^{-1}\n$$\n\nBy converting the determined KA values into the corresponding KD values using KD = 1/KA, the following dissociation constants could be determined for pdaGDP (Equation 10a) and bdaGDP (Equation 10b):\n\n$$\nK_{D}pdaGDP=\\frac{1}{0.136pM^{-1}}=7.4pM\n$$\n\n\n\n$$\nK_{D}bdaGDP=\\frac{1}{0.112pM^{-1}}=8.9pM\n$$\n\n### Crystallization and structure determination\n\nKRasG13C1-169 Cys-light (C51S C80L C118S) was covalently modified by incubating 100 \u00b5M KRas with a 10-fold excess of the acryl-bearing nucleotide in 100 mM CHES (pH 9.5), 50 mM NaCl, 1 mM TCEP, and 1 mM EDTA at room temperature for 24 hr. Modification of the protein was monitored by ESI-MS and terminated by the addition of 20 mM MgCl2. The protein was purified by size-exclusion chromatography (GE HiLoad 16/60 Superdex 75 pg) in a final buffer containing 20 mM HEPES pH 7.5, 100 mM NaCl, 2 mM MgCl2, 1 mM TCEP, and 5% glycerol, and subsequently concentrated to 67 mg/mL. To identify the initial crystallization conditions, commercially available protein crystallization screens (JCSG Core I \u2013IV Suites, PEGs and PACT) were used. Using a TTP labtech Mosquito LCP crystal liquid-handling robot, 100 nL of protein solution was mixed with 100 nL reservoir solution in 96-well plates, and crystals were grown using the hanging-drop method at 20 \u00b0C. After 1 day of incubation, one successful crystallization condition was obtained for KRasG13C-edaGDP (0.2 M (NH4)F, 20% PEG3350) and KRasG13C-bdaGDP (0.2 M NaF, 20% PEG3350), and the crystals were cryoprotected in mother liquor and flash cooled in liquid nitrogen. The data sets were collected at the PXII X10SA beamline of the Swiss Light Source (Paul Scherrer Institute, Villigen, Switzerland) and indexed and scaled using XDS (Kabsch, 2010). The crystal structures were solved by molecular replacement with PHASER using PDB 4obe as a template (Read, 2001). The manual modification of the molecule of the asymmetric unit was performed using the program COOT (Emsley and Cowtan, 2004), and with the help of the Dundee PRODRG server (Sch\u00fcttelkopf and van Aalten, 2004), the inhibitor topology file was generated. For multiple cycles of refinement, PHENIX.refine (Adams et al., 2010) was employed, the final structure was evaluated by the PDB_REDOserver (Joosten et al., 2014) and crystal structures were visualized using PyMOL. Data collection, structure refinement statistics, and further details for data collection are provided in Figure 2\u2014figure supplement 1.\n\n### Guanine nucleotide-exchange factor assay\n\nSOS-catalysed nucleotide exchange was monitored at 25 \u00b0C in a FluoroMax-3 spectrofluorometer (excitation at 360 nm, emission at 440 nm) in 20 mM HEPES (pH 7.5), 100 mM NaCl, 2 mM MgCl2, and 1 mM TCEP. 5 \u00b5M KRas1-169 was mixed with 10 \u00b5M mantdGDP and subsequently with different concentrations of SOS (0.25 \u00b5M and 0.5 \u00b5M) (Figure 3A; Figure 3\u2014figure supplement 1).\n\n### GAP-stimulated GTP hydrolysis\n\nFirst, for KRasWT1-169, nucleotide exchange with GTP was performed at pH 7.5, and for KRasG13C1-169, covalent modification with a 10-fold excess of acryl-edaGTP at pH 9.5 was done, both in the presence of 50 mM EDTA to block intrinsic GTP hydrolysis. After incubation, the Ras proteins were washed five times with buffer (20 mM HEPES (pH 7.5), 100 mM NaCl, and 1 mM TCEP) using centrifugal filter devices to remove any unbound nucleotide. Nucleotide exchange of KRasWT1-169 was controlled by isocratic HPLC runs, and covalent modification of KRasG13C1-169 was verified by ESI-MS. GTP hydrolysis of Ras proteins was initiated by addition of 2 mM MgCl2 in the absence or presence of Ras-GAP (1:1000 for KRasWT1-169:GTP and 1:1 for KRasG13C1-169-edaGTP). At defined time points (0, 5, 10, 15, 20, 30, 45, 60, 90 and 120 min), samples were taken and immediately snap-frozen in liquid nitrogen. For KRasWT1-169:GTP, samples were thawed and denatured for 5 min at 95 \u00b0C. Samples were centrifuged at 14,000 rpm for 10 min at 4 \u00b0C and subsequently analysed by isocratic HPLC runs. For KRasG13C1-169-edaGTP, samples were centrifuged and analysed by ESI-MS. The relative amount of each nucleotide was determined by integrating the area of the GTP and GDP peaks using Origin (Figure 3\u2014figure supplement 2; Eberth and Ahmadian, 2009).\n\n### Effector binding (pull-down experiments)\n\nPull-down experiments were performed in 20 mM HEPES pH 7.5, 50 mM NaCl and 2 mM MgCl2. 10 \u00b5g KRasG13C:GDP or the covalently modified KRasG13C-edaGDP and 20 \u00b5g GST-tagged cRafRBD (amino acids 51\u2013131) were incubated with/ without 100 \u00b5M GppNHp and with/ without 1 \u00b5g SOS over night at room temperature. Afterwards, 50 \u00b5L glutathione magnetic beads were added to each sample for 30 min. After washing the beads with 500 \u00b5L buffer, the beads were settled with a magnet and the supernatant was carefully removed. The beads were resuspended in 50 \u00b5L of 4xSDS-loading buffer and visualized via SDS-PAGE (Figure 3\u2014figure supplement 3).\n\n### In vitro farnesylation\n\n50 \u00b5M of full-length KRas protein was mixed with 250 \u00b5M farnesyl pyrophosphate (FPP) and 10 \u00b5M farnesyltransferase (FTase). After incubation at room temperature for 1 hr the mixture was centrifugated at 14,000 rpm for 10 min at 4 \u00b0C and analyzed via ESI-MS (Figure 3\u2014figure supplement 4).\n\n### Competition assay\n\nTo analyze the amount of covalent modification of KRasG13C1-169 (Cys-light) with the acryl-bearing nucleotide analogue (edaGDP) under competitive conditions with GDP and GTP, four different conditions were tested (buffer: 100 mM CHES pH 9.5., 50 mM NaCl, 1 mM TCEP, 2 mM MgCl2, 5% glycerol). 5 \u00b5M KRasG13C (Cys-light) was incubated (1) in the presence of 36 \u00b5M edaGDP with and without SOS, (2) in the presence of 305 \u00b5M edaGDP, 36 \u00b5M GDP and 305 \u00b5M GTP with and without SOS, (3) in the presence of 36 \u00b5M edaGDP, 36 \u00b5M GDP and 305 \u00b5M GTP with and without SOS and (4) 36 \u00b5M edaGDP, 360 \u00b5M GDP, and 3050 \u00b5M GTP with and without SOS. After incubation for 1, 2, 3, 4, 5, 22, and 24 hr at room temperature, the covalent protein modification was controlled by ESI-MS.\n\n### MS/MS analysis\n\nFor MS/MS analysis, the samples were dissolved in 100 mM TEAB and incubated for 1 hr at 55 \u00b0C in the presence of 10 mM TCEP. 17 mM iodoacetamide was added and the samples were incubated in the dark at room temperature for 30 min. Samples were precipitated by adding pre-chilled acetone and stored overnight at \u201320 \u00b0C. After drying the pellets, Trypsin (Roche) was added and the samples were digested at 37 \u00b0C with 300 rpm shaking overnight. The digestion was quenched by the addition of 2% TFA and a stage tip purification (Rappsilber et al., 2007) was performed, samples were evaporated to dryness and stored at \u201320 \u00b0C until MS/MS analysis. For nanoHPLC-MS/MS analysis samples were dissolved in 20 \u03bcL of 0.1% TFA in water and 3 \u03bcL were injected onto an UltiMateTM 3000 RSLCnano system (ThermoFisher Scientific, Germany) online coupled to a Q Exactive Plus Hybrid Quadrupole-Orbitrap Mass Spectrometer equipped with a nanospray source (Nanospray Flex Ion Source, Thermo Scientific). All solvents were LC-MS grade. Samples were injected onto a pre-column cartridge (5 \u03bcm, 100 \u00c5, 300 \u03bcm ID * 5 mm, Dionex, Germany) using 0.1% TFA in water as eluent with a flow rate of 30 \u03bcL/min. Desalting was performed for 5 min with eluent flow to waste followed by back-flushing of the sample during the whole analysis from the pre-column to the PepMap100 RSLC C18 nano-HPLC column (2 \u03bcm, 100 \u00c5, 75 \u03bcm ID \u00d750 cm, nanoViper, Dionex, Germany) using a linear gradient starting with 95% solvent A (water containing 0.1% formic acid) / 5% solvent B (acetonitrile containing 0.1% formic acid) and increasing to 30% solvent B in 90 min using a flow rate of 300 nL/min. Afterwards, the column was washed (two steps 60 and 95% solvent B) and re-equilibrated to starting conditions. The nanoHPLC was online coupled to the Quadrupole-Orbitrap Mass Spectrometer using a standard coated SilicaTip (ID 20 \u03bcm, Tip-ID 10 \u03bcM, New Objective, Woburn, MA, USA). Mass range of m/z 300\u20131,650 was acquired with a resolution of 70000 for a full scan, followed by up to 10 high energy collision dissociation (HCD) MS / MS scans of the most intense at least doubly charged ions using a resolution of 17500 and a NCE energy of 25%. Data evaluation was performed using MaxQuant software (Cox and Mann, 2008) (v.1.6.3.4) including the Andromeda search algorithm (Cox et al., 2011) and searching the KRas sequence together with a database containing typical contaminants like keratins, trypsin etc., which is included in the MaxQuant software. The search was performed for full enzymatic trypsin cleavages allowing two miscleavages. For database search oxidation of methionine and N-terminal acetylation of proteins, carbamidomethylation of cysteines, and artificial modification of cysteines were defined as variable modifications. The mass accuracy for full mass spectra was set to 20 ppm (first search) and 4.5 ppm (second search), respectively and for MS/MS spectra to 20 ppm. The false discovery rates for peptide and protein identification were set to 1%. For further analysis, the peptide intensities of KRas were compared for modified and unmodified KRas. (Figure 3\u2014figure supplement 5).\n\n### Cell culture\n\nHeLa cells were obtained from the American Type Culture Collection (ATCC) and were cultured in DMEM medium (Gibco) supplemented with 10% fetal bovine serum (FBS) (PAN-Biotech) and 1% penicillin/streptomycin (Gibco). Cells were cultured in a humidified incubator at 37 \u00b0C in the presence of 5% CO2. The identity of the cells was validated by STR profiling and the cells were tested negative for mycoplasma contamination.\n\n### Electroporation\n\nElectroporation of full-length KRas constructs (KRasWT, KRasG13C, KRasG13C-edaGDP, KRasG13C:acetyledaGDP and KRasG13C-edaGppCp) was performed based on the protocol described by Alex et al., 2019 using the Neon Transfection System Kit (Thermo Fisher). For electroporation, 3 million cells per experiment were harvested by trypsinization, washed with PBS, and resuspended in 85 \u00b5L of the electroporation buffer R (Thermo Fisher). Increasing amounts of recombinant protein samples for each construct (0, 50, 100, 200 and 300 \u00b5g) were diluted 1:1 in buffer R followed by the addition of 30 \u00b5L of this protein master mix to the cell suspension. This cellular slurry was loaded into a 100 mL Neon Pipette Tip (Thermo Fisher) and electroporated with 2x35 ms pulses at 1000 V. After electroporation, the cells were washed twice with PBS (15 mL) to remove non-internalized extracellular protein and the cell pellet was resuspended in 2 mL complete growth media. Cells were transferred into six-well tissue culture plates (Sarstedt) and incubated for 24 hr at 37 \u00b0C and 5% CO2 in a humidified incubator for recovery before being processed for western blotting analysis.\n\n### Western blot analysis\n\nAfter recovery of the electroporation, cells were washed twice with ice-cold PBS and lysed in 100 \u00b5L of phosphatase and protease inhibitor containing RIPA buffer (Cell Signaling Technology). Cells were incubated on ice for 30 min and then harvested by scraping followed by centrifugation at 14,000 rpm for 10 min at 4 \u00b0C. Protein concentrations were determined using the Pierce BCA protein assay (Thermo) following the manufacturer\u2019s recommended procedure. Equal amounts of protein (10 \u00b5g) were analyzed by SDS-PAGE and transferred to Immobilon-FL PVDF membranes (Merck Millipore) using Pierce 1-step transfer buffer (Thermo) and the Pierce Power Blotter (Thermo). Membranes were washed with ddH2O for 5 min, blocked with OdysseyBlocking Buffer TBS (Li-Cor) for 1 hr at room temperature and then incubated with primary antibodies diluted in OdysseyBlocking Buffer TBS overnight at 4 \u00b0C with gentle agitation. KRas (Sigma Aldrich, SAB1404011-100UG), pcRafS338 (CST, 9427), tAkt1 (CST, 2938), pAktS473 (CST, 4060), tErk (CST, 4696), pErkT202/Y204 (CST, 4370), pS6S235/236 (CST, 4858), and \u03b2-actin (CST, 4970/Sigma-Aldrich, A5441) antibodies were used to detect the individual proteins. After primary antibody incubation, membranes were washed three times with TBS-T (50 mM Tris, 150 mM NaCl, 0.05% Tween 20, pH 7.4) for 5 min before being incubated with secondary antibodies (anti-mouse IgG (H+L) (DyLight 680 Conjugate) (CST, 5470) / anti-rabbit IgG (H+L) (DyLight 800 4 X PEG Conjugate) (CST, 5151)) diluted in OdysseyBlocking Buffer TBS for 1 hr at room temperature with gentle agitation. After secondary antibody incubation, the membranes were washed three times for 5 min with TBS-T and then scanned using an OdysseyCLx imaging system (Li-Cor). Quantification of protein levels from western blots was performed using Empiria Studio (Li-Cor) (Figure 3B, C, Figure 3\u2014figure supplements 6\u20139).\n",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "5f0078c7-ef9a-4421-9df5-8d0dcbae0efd",
+      "submission_id": "04c3968a-57a8-4954-90a7-a8a28c4fbf55",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82184.sa0](https://doi.org/10.7554/eLife.82184.sa0)\n\nThe authors present important information regarding the possibility of targeting the oncogenic K-Ras(G13C) mutant with nucleotide competitors. The experiments represent a solid support of the claims and show that this approach can work despite concerns about the high affinity of GTP and its high cellular concentration. These results will be of high interest for all working in the Ras field and in targeting oncogenes with small molecules. A weakness of the manuscript is the lack of direct physiological insights.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82184.sa1](https://doi.org/10.7554/eLife.82184.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Targeting oncogenic KRasG13C with nucleotide-based covalent inhibitors\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Volker D\u00f6tsch as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Can the edaGDP derivative competes with 1 mM of GDP and GTP in covalently modifying KRAS G13C and the wild type KRAS (well to a lesser extent)?I see the authors also employed Cys light version of RAS like the Shokat group in some of their assays and perhaps wild type protein is probably better here as well as anyway they are performing MS analysis.\n\n2) Related: K-Ras wildtype was labeled by eda/pda/bdaGDP to a much lower extent (Figure 1D, E). however, K-Ras(G12C) Cyslight was not labeled by these GDP analogs at all. Do the authors have any MS2 data to identify the site of modification in the case of K-Ras WT? There is growing interest in covalent adducts to RAS, so identifying the nearest residues which can be targeted (especially non-Cys residues) maybe of assistance to others.\n\n3) The paper will immensely benefit from discussing weaknesses. a): The complete modification of KRASG13C happens in high pH (9.5!!) which is of a significant concern. Do the authors envision a solution to the pH that is required for the covalent modification to take place. b): Do the authors see hope of designing something that can cross the membranes. c): These nucleotides will have the possibility to bind to other small GTPases or enzymes how is that going to affect this strategy. In particular: Other Ras superfamily member GTPases naturally have residue C13 equivalent 13 in Ras, such as Arl4a, RheBL1, Rab21 mentioned here. Have the authors tested the reactivity of edaGDP or analogs in these recombinant proteins? Is it possible that these compounds can be converted by NKDs to the GTP form?\n\n4) There is no data to demonstrate that KRASG13C-effector binding is directly disrupted by eda GDP or others in vitro or in cells. Can addition of edGDP disrupt KRASG13C-effector interaction esp at lower pH?\n\n5) Both structures lacked Mg2+ and is this the reason for the downstream effects?\n\n6) It is important for the authors to convincingly demonstrate that their approach is better than the current state of the art esp. when there are options like SOS inhibitors and pan RAS inhibitors with good oral bioavailability which didn't exhibit overt toxicity and present a exploitable therapeutic window.\n\n7) Related: I don't see an SOS mediated exchange using those compounds. The authors only show that SOS does not work on modified KRas. I find it difficult to deduce the time and the efficiency of covalently binding to KRasg13C in the presence of other nucleotides and in the presence of SOS. What kind of concentrations and how long will it take if you have in one cuvette physiological amounts of GTP/GDP and your compounds and Ras and SOS. This experiment would improve the manuscript significantly.\n\n8) Perhaps the authors can already test if their derivatives would still work on patients who has gained resistance mutations like Y96C, H95Dor R68S with KRASG13C.\n\n9) Please include the total protein blots for all the phospho-proteins tested in all the westerns. pS338 is not a reliable marker for checking the activation of CRAF. There are instances where CRAF is 338 phosphorylated but not activated. Ideally the authors should look at MEK phosphorylation. I appreciate the effects at pERK1/2.\n\n10) One should also be careful with the general cytotoxicity independent of KRASG13C as shown with SML-8-3-1 especially when they have to be employed at higher concentrations for reasonable modification of KRASG13C. Please note that this allele can be amplified in patients.\n\n11) The authors need to show target engagement in cellular systems directly. As of now, at least one could try to do electroporation into KRASG13C expressing cells and check if the modified protein is dimerizing with the endogenous version and has implications in the downstream signaling.\n\nReviewer #1 (Recommendations for the authors):\n\nRas is the first discovered oncogene and KRAS is most frequently mutated isoform. Recent studies led to the development of mutation specific inhibitors, especially against the KRASG12C mutant. However, unfortunately the patients treated with Adagrasib or similar ones develop resistance due to further gain of function mutations and amplification of KRASG12C allele apart from mutations in the downstream signaling components. One of the oldest approaches is to compete with the nucleotide binding of RAS and it has for a long time remained difficult owing to the picomolar affinity of RAS for GTD/GDP. Gray and colleagues tried to overcome these issues by employing GDP derivatives that can undergo covalent reaction with disease specific mutations but the authors reported in their previous work that the issue with these derivatives was with the loss of reversible affinities for \u03b2 modified derivatives for RAS of at least by 10000 fold compared GDP and GTP. Here the authors present novel GDP derivatives different from Gray and colleagues and demonstrate that they could lock KRASG13C, another important mutant of KRAS in GDP bound form with a multiple set of biochemical, structural and cellular assays. While I find the study scientifically interesting I have several concerns that diminish my enthusiasm for publication in eLife. As such the manuscript is more appropriate for a journal with focus on structural /Chemical biology.\n\n1) Can the edaGDP derivative competes with 1 mM of GDP and GTP in covalently modifying KRAS G13C and the wild type KRAS (well to a lesser extent)? I see the authors also employed Cys light version of RAS like the Shokat group in some of their assays and perhaps wild type protein is probably better here as well as anyway they are performing MS analysis.\n\n2) The complete modification of KRASG13C happens in high pH (9.5!!) which is of significant concern.\n\n3) Gray and colleagues performed the \"caging \" approach to allow their derivatives for passive cellular uptake. They did show that these modified GDP derivatives inhibit atleast signalling and binding to RAS effectors in cells. As of now the authors electroporate KRAS protein into HeLa cells to evaluate their effects. They claim to be working on ways to protect esterification for cellular entry. We need such development and proof of principle experiments that this can at least be a \"prodrug\" that can be further developed. I would like to see assays performed in KRASG13C allele addicted cell lines. First, I'm also surprised that the WT-KRAS didn't activate MAPK signaling as WT protein should be GTP bound and thus have basal activity while purified or when introduced to cells, especially in excess.\n\n4) There is no data to demonstrate that KRASG13C-effector binding is directly disrupted by eda GDP or others in vitro or in cells. Can addition of edGDP disrupt KRASG13C-effector interaction esp at lower pH?\n\n5) Both structures lacked Mg2+ and is this the reason for the downstream effects?\n\n6) It is important for the authors to convincingly demonstrate that their approach is better than the current state of the art esp. when there are options like SOS inhibitors and pan RAS inhibitors with good oral bioavailability which didn't exhibit overt toxicity and present a exploitable therapeutic window.\n\n7) Perhaps the authors can already test if their derivatives would still work on patients who has gained resistance mutations like Y96C, H95Dor R68S with KRASG13C.\n\n8) Please include the total protein blots for all the phospho-proteins tested in all the westerns. pS338 is not a reliable marker for checking the activation of CRAF. There are instances where CRAF is 338 phosphorylated but not activated. Ideally the authors should look at MEK phosphorylation. I appreciate the effects at pERK1/2.\n\n9) One should also be careful with the general cytotoxicity independent of KRASG13C as shown with SML-8-3-1 especially when they have to be employed at higher concentrations for reasonable modification of KRASG13C. Please note that this allele can be amplified in patients.\n\n10) The authors need to show target engagement in cellular systems directly. As of now, at least one could try to do electroporation into KRASG13C expressing cells and check if the modified protein is dimerizing with the endogenous version and has implications in the downstream signaling.\n\nReviewer #2 (Recommendations for the authors):\n\nSuggestions and questions for the authors:\n\n1. K-Ras wildtype was labeled by eda/pda/bdaGDP to a much lower extent (Figure 1D, E). however, K-Ras(G12C) Cyslight was not labeled by these GDP analogs at all. Do the authors have any MS2 data to identify the site of modification in the case of K-Ras WT? There is growing interest in covalent adducts to RAS, so identifying the nearest residues which can be targeted (especially non-Cys residues) maybe of assistance to others.\n\n2. Other Ras superfamily member GTPases naturally have residue C13 equivalent 13 in Ras, such as Arl4a, RheBL1, Rab21 mentioned here. Have the authors tested the reactivity of edaGDP or analogs in these recombinant proteins?\n\nReviewer #3 (Recommendations for the authors):\n\n1 \u2013 The introduction would be improved if the authors mention the prevalence of G13C mutations. How much does it represent of all mutant Ras and if it is found in a specific cancer.\n\n2 \u2013 The paper will immensely benefit from discussing the weakness \u2026do the authors envision a solution to the pH that is required for the covalent modification to take place. Do the authors see hope of designing something that can cross the membranes. These nucleotides will have the possibility to bind to other small GTPases or enzymes how is that going to affect this strategy. is it possible that these compounds can be converted by NKDs to the GTP form?\n\n3 \u2013 Experimentally: I don't see an SOS mediated exchange using those compounds. The authors only show that SOS does not work on modified KRas. I find it difficult to deduce the time and the efficiency of covalently binding to KRasg13C in the presence of other nucleotides and in the presence of SOS. What kind of concentrations and how long will it take if you have in one cuvette physiological amounts of GTP/GDP and your compounds and Ras and SOS. This experiment would improve the manuscript significantly.\n",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4d2dd0f3-3160-44ee-9efb-e0797ec6c933",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C1",
+      "claim": "Mutations within Ras proteins represent major drivers in human cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations within Ras proteins represent major drivers in human cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in cancer biology, supported by extensive research cited throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "0c00d703-e271-4ef5-b43a-775235880ee6",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C2",
+      "claim": "Ras proteins act as key regulators of many cellular processes by switching between inactive GDP-bound and active GTP-bound states.",
+      "claim_type": "EXPLICIT",
+      "source": "Ras proteins act as key regulators of many cellular processes by switching between inactive GDP-bound and active GTP-bound states, the latter specifically activating several downstream signalling pathways (Cox et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cox et al., 2014, indicating established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "1b82c7ba-4dc9-498a-b429-286301bafc59",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C3",
+      "claim": "Oncogenic Ras mutations are found in about 25% of all human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Oncogenic Ras mutations that lead to dysregulation of the switch mechanism are found in about 25% of all human cancers, including three of the most lethal forms (lung, colon, and pancreatic cancer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited statistic representing established knowledge in cancer research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "bbfad280-b34b-4daf-bc71-1e4f1ded1ac1",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C4",
+      "claim": "KRas is the predominantly mutated Ras isoform at 85%.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the Ras proteins, KRas is the predominantly mutated isoform (85%), followed by NRas (11%) and HRas (4%), with mutational hotspots at amino acid positions G12, G13, and Q61 (Cox et al., 2014; Hobbs et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cox et al., 2014 and Hobbs et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "793fca9d-b6ec-4157-b8c9-2b05aaa2f4fe",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C5",
+      "claim": "G13 is the second most common mutation site in Ras proteins, found in 14% of tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the glycine at position 12 is the most commonly mutated residue, G13 is the second most common mutation (14% of tumors harbor a mutation at this position) and in 6% of these cases, an acquired cysteine is found (Forbes et al., 2015; Visscher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Forbes et al., 2015 and Visscher et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "e945257b-89e9-48d3-bb61-b6b21094e6f9",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C6",
+      "claim": "The prevalence of the G13C mutation in lung cancer is 3%, equivalent to approximately 7000 individuals in the US per year.",
+      "claim_type": "EXPLICIT",
+      "source": "In lung cancer, the prevalence of the G13C mutation is 3%, which is equivalent to approximately 7000 individuals in the US per year (Forbes et al., 2015; Burge and Hobbs, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Forbes et al., 2015 and Burge and Hobbs, 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "a85b295c-8b78-4be6-aeff-02d175901273",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C7",
+      "claim": "Ras proteins were long considered undruggable.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of their prominent role in cancer, Ras oncogenes were identified as attractive targets for cancer therapy since their initial discovery in 1981, but attempts to target Ras have been largely unsuccessful and Ras proteins were long considered undruggable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents historical knowledge about Ras drug development efforts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "bc313539-c088-4749-8c97-5581e362c624",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C8",
+      "claim": "Sotorasib was approved by the FDA in May 2021 as the first-in-class KRasG12C inhibitor for treatment of non-small-cell lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In May 2021, the first-in-class KRasG12C inhibitor Sotorasib (Amgen) was approved by the FDA for the treatment of non-small-cell lung cancer (NSCLC), confirming the therapeutic susceptibility of mutant KRas in cancer (Mullard, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mullard, 2021, documenting a specific FDA approval event.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "612e5af4-8fc4-4b1e-841d-56a501157538",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C9",
+      "claim": "Nucleotide-based covalent inhibitors with electrophilic groups attached to the 2',3'-position of the ribose can selectively react with KRasG13C.",
+      "claim_type": "EXPLICIT",
+      "source": "In this publication, we demonstrate that GDP/GTP/GppCp analogues with an electrophilic group attached to the ribose interact with the necessary high reversible affinity to KRas and are able to react covalently with KRasG13C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "8f7e481b-0c84-4bbb-931c-baa806ec1094",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C10",
+      "claim": "The acrylamide nucleotide derivatives can selectively react with KRasG13C but not with KRasG12C.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry experiments and kinetic studies reveal promising molecular properties of these covalent inhibitors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MS experiments shown in Figure 1C, D, E demonstrating selective modification of KRasG13C over KRasG12C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "a5dca155-96b1-4d84-b10f-e04271bbdc65",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C11",
+      "claim": "The eda linker led to the most efficient covalent protein modification of KRasG13C.",
+      "claim_type": "EXPLICIT",
+      "source": "The eda linker led to the most efficient covalent protein modification (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C comparing different linker lengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "aba67bc9-709d-46d0-a63d-ac01b16e759e",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C12",
+      "claim": "Using dGTP analogues, the rate of covalent protein modification was further increased in the case of the eda derivative.",
+      "claim_type": "EXPLICIT",
+      "source": "Using dGTP analogues, the rate of covalent protein modification was further increased in the case of the eda derivative, indicating that the linker in the 3'-position of the ribose is superior to the 2'-position with respect to targeting KRasG13C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing modification rates of different nucleotide derivatives.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "69e8c511-7d86-485b-988d-28592bbe5454",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C13",
+      "claim": "Complete modification of KRasG13C was only observed at elevated pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, complete modification of KRasG13C was only observed at elevated pH, significant modification of the protein also occurred at a physiological pH within 24 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pH-dependent labeling experiments shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "b318de89-7ba1-4232-8c05-bbf5a1a6ba28",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C14",
+      "claim": "GTP analogues are hydrolyzed to GDP after covalent reaction with KRasG13C.",
+      "claim_type": "EXPLICIT",
+      "source": "On incubating KRasG13C1-169 (Cys-light) with the GTP analogues, we observed at intermediate stages a mixture of covalently bound GDP and GTP forms of KRasG13C1-169 (Cys-light), but ultimately the reaction yielded only the diphosphate form, indicating that the nucleotides were still hydrolysed after the covalent reaction and were properly positioned in the active site of KRas (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-resolved MS data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "bb4aab3b-2117-4af8-b709-b910c7e5a40a",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C15",
+      "claim": "The modified nucleotides are able to compete with natural GDP/GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we tested whether the nucleotides were generally able to compete with their natural counterparts and monitored the reaction also in the presence of equimolar concentrations as well as 10 x and 100 x excess of GDP/GTP (Figure 1\u2014figure supplement 4). This shows that although the reaction is slowed down due to the competing nature of GDP and GTP, the modified nucleotides are able to compete.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition experiments shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "a07af827-35fa-425a-9bd4-35e98202adcd",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C16",
+      "claim": "For KRasWT, very little unspecific labelling was observed at pH 9.5 compared to the G13C mutant (approximately 3% at pH 9, 8% at pH 9.5).",
+      "claim_type": "EXPLICIT",
+      "source": "For KRasWT1-169, very little unspecific labelling was observed at pH 9.5 compared to the G13C mutant (approximately 3% at pH 9, 8% at pH 9.5, whereas under equivalent conditions, KRasG13C modification was \u226590%; Figure 1E, Figure 1\u2014figure supplement 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MS data comparing labeling of KRasWT vs KRasG13C shown in Figure 1E and Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "ce0bf808-2264-4ee9-b1a8-c2c9fe28ed4a",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C17",
+      "claim": "Only about 7% of Ras small GTPase superfamily members contain cysteines within the P-loop that might potentially be accessible by the linker design.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the multiple sequence alignment of the Ras small GTPase superfamily revealed that only about 7% of the GTPase members contain cysteines within the P-loop that might potentially be accessible by our linker design and only 3 contain Cys at the position equivalent to residue 13 in Ras (Arl4a, RheBL1, Rab21).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple sequence alignment analysis shown in Figure 1\u2014figure supplement 1 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "d2054c1f-3e80-42a1-aaee-e55218df33fe",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C18",
+      "claim": "Rab21 can be modified by edaGDP similarly to KRasG13C.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon incubating Rab21 with edaGDP, we indeed observed similar modification compared to KRasG13C (Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "5e065a21-f759-4cd2-9815-f4063b2011d3",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C19",
+      "claim": "The association rate constants (kon) of the nucleotide analogues are comparable to those of unmodified nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "By fitting the data to a previously described model (M\u00fcller et al., 2017), we obtained the corresponding kon values, and those for the nucleotide analogues were comparable to those of the unmodified nucleotide (Table 1\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by stopped-flow experiments and kinetic analysis shown in Table 1\u2014source data 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "a751f207-b3f0-4448-b4d0-fa8f96535136",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C20",
+      "claim": "The dissociation constants for pdaGDP and bdaGDP were calculated to be 8.6\u00b11.3 pM and 9.6\u00b10.5 pM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the relative abundance of bound nucleotides determined by the HPLC assay, the dissociation constants for the pda and bda derivatives were calculated to be 8.6\u00b11.3 pM and 9.6\u00b10.5 pM, respectively (overlap with the GDP elution peak prevented accurate determination in the case of the eda-derivative; Method section, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HPLC-based competition experiments and calculations shown in Table 1\u2014source data 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "8634a79f-969f-4aa5-993e-65e77825579a",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C21",
+      "claim": "The attached linker has very little impact on the reversible interaction and affinity of nucleotides to KRas.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the attached linker has very little impact on the reversible interaction and the affinity, an important fact that must be considered for the approach of using nucleotide-competitive inhibitors (M\u00fcller et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by affinity measurements showing KD values in the picomolar range similar to natural nucleotides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "3798703d-94fb-4ad7-ac70-df6c3afce8de",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C22",
+      "claim": "SML-8-73-1 showed a dramatic loss of reversible affinity (KD = ~140 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SML-8-73-1, a GDP derivative harbouring an electrophilic group on the \u03b2-phosphate showed a dramatic loss of reversible affinity (KD = ~140 nM) (Jeganathan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jeganathan et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "eb9c9d9b-1595-4522-9616-a9579c33b92b",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C23",
+      "claim": "The first X-ray crystal structures of the oncogenic KRasG13C mutant were solved with covalently bound edaGDP (PDB 7ok3) and bdaGDP (PDB 7ok4).",
+      "claim_type": "EXPLICIT",
+      "source": "To gain further insight into the binding mode of the covalently bound nucleotides, we solved the first X-ray crystal structure of the oncogenic KRasG13C mutant, in this case with covalently bound edaGDP (PDB 7ok3) and bdaGDP (PDB 7ok4) (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by X-ray crystallography data and structures deposited in PDB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "257c75fa-4031-40ce-a68a-b2f1dab9f123",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C24",
+      "claim": "Only the 3'-isomer of the nucleotide analogues was observed in the crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only the 3'-isomer of the nucleotide analogues was observed in the structures, consistent with results of the MS experiments comparing the efficiency of labelling of the dGTP derivative and the mixed isomers of the GTP derivative and showing a faster reaction for dGTP (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by X-ray crystallography data shown in Figure 2 and MS experiments in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "1f4ef921-88e3-41cb-a978-dc67c61e214c",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C25",
+      "claim": "Both crystal structures lacked Mg2+ ions in the active site despite a Mg2+ concentration of 2 mM in the Ras solution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both structures lacked the Mg2+ ions in the active site despite a Mg2+ concentration of 2 mM in the Ras solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the crystal structures (PDB 7ok3 and 7ok4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "a4fa2318-3693-405a-8e2f-422860f63354",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C26",
+      "claim": "The missing Mg2+-ions are probably a result of the crystallization buffer containing NH4F or NaF, leading to precipitation of poorly soluble MgF2.",
+      "claim_type": "EXPLICIT",
+      "source": "The missing Mg2+-ions are probably a result of the crystallization buffer containing NH4F or NaF, leading to precipitation of poorly soluble MgF2, and this has also been observed in other PDB-deposited structures presumably because of similar effects of the reservoir solutions used in the crystallization process (e.g. PDB 4m1o, 4lyf, 4lyh, 4m21, 4m1s, 4m1t, 4m1t, 4m1y) (Ostrem et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on crystallization conditions and comparison with other structures, supported by citation to Ostrem et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "f7227e7f-eb47-4af0-8dd9-80c4ab625e27",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C27",
+      "claim": "SOS was unable to catalyze nucleotide exchange on covalently locked KRasG13C-edaGDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas SOS efficiently catalysed nucleotide exchange on KRasWT, KRasG13C and as a control on KRasG13C:acetyledaGDP, it was unable to do so with the covalently locked G13C-edaGDP mutant, showing that the protein is indeed locked in the inactive state (Figure 3A, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GEF-catalyzed nucleotide exchange experiments shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "38ab185c-0292-4df9-90e4-fc6ae6a9ec4a",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C28",
+      "claim": "KRasG13C shows a drastically increased intrinsic nucleotide exchange rate compared to KRasWT in the absence of SOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in these experiments we also observed a drastically increased intrinsic nucleotide exchange rate for KRasG13C compared to KRasWT in the absence of SOS (Figure 3A, blue area), an effect that probably contributes to the increased signalling and oncogenic effect of this mutant, and also this effect is abrogated in the case of covalently locked KRasG13C-edaGDP (Hunter et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by nucleotide exchange experiments shown in Figure 3A and citation to Hunter et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "824244c7-5c85-400e-9e7a-388a4e27cd38",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C29",
+      "claim": "No SOS-catalysed nucleotide exchange was observed for covalently modified KRasG13C-edaGppCp.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, no SOS-catalysed nucleotide exchange was observed in case of covalently modified KRasG13C-edaGppCp, indicating that the protein can also be trapped in the active conformation with the corresponding nucleoside-triphosphates (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "b9a3656b-38ba-4709-b72c-45e0753a9202",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C30",
+      "claim": "The intrinsic GTP hydrolysis of KRasG13C-edaGTP (t1/2 = 187 min) is comparable to that of KRasWT:GTP (t1/2 = 126 min).",
+      "claim_type": "EXPLICIT",
+      "source": "While the intrinsic GTP hydrolysis of KRasG13C-edaGTP (t1/2 = 187 min) is comparable to that of KRasWT:GTP (t1/2 = 126 min) and even faster than for the KRasG12C mutant (t1/2 = 300 min) (Li et al., 2021; Figure 3\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GTP hydrolysis experiments shown in Figure 3\u2014figure supplement 2 and citation to Li et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "df148f1f-7488-4e9b-9a5b-370246c5a6c9",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C31",
+      "claim": "A drastically decreased GAP-stimulated GTP hydrolysis was observed for the KRasG13C mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "a drastically decreased GAP-stimulated GTP hydrolysis was observed for the G13C mutant as expected (Scheffzek et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GAP-stimulated hydrolysis experiments shown in Figure 3\u2014figure supplement 2 and citation to Scheffzek et al., 1997.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "2bae66d2-fc9b-48f2-99a8-fd3f11ac81ea",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C33",
+      "claim": "Covalently locked KRasG13C can still be fully farnesylated in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we confirmed that the covalently locked protein can still be fully farnesylated in vitro (Figure 3\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro farnesylation experiments shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "d3ca0289-5499-4023-bf51-af63eca33a72",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C34",
+      "claim": "MS/MS analysis revealed selective labelling of the targeted cysteine residue at position 13 in full-length KRasG13C.",
+      "claim_type": "EXPLICIT",
+      "source": "and the covalent modification of full-length KRasG13C was further validated through MS/MS\u2010analysis, which revealed selective labelling of the targeted cysteine residue at position 13 (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MS/MS analysis shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "c7e4659b-3459-4969-8d00-0f1bb88535fe",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C35",
+      "claim": "Electroporation of KRasG13C into HeLa cells resulted in concentration-dependent activation of downstream signaling (pcRaf, pAkt, pErk, and pS6).",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas we observed a concentration-dependent activation of the downstream signalling and upregulation of pcRaf, pAkt, pErk, and pS6 upon delivery of KRasG13C, the covalently locked variant was unable to induce these effects and, similarly to KRasWT, no increase in downstream signalling was observed (Figure 3B, C, Figure 3\u2014figure supplements 6 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot analysis shown in Figure 3B, C and Figure 3\u2014figure supplements 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "a9c0be17-eba6-45b1-9b71-9312817daefd",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C36",
+      "claim": "Covalently locked KRasG13C-edaGDP was unable to induce oncogenic signaling in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas we observed a concentration-dependent activation of the downstream signalling and upregulation of pcRaf, pAkt, pErk, and pS6 upon delivery of KRasG13C, the covalently locked variant was unable to induce these effects and, similarly to KRasWT, no increase in downstream signalling was observed (Figure 3B, C, Figure 3\u2014figure supplements 6 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot analysis shown in Figure 3B, C and Figure 3\u2014figure supplements 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "3572134c-c2fa-4fa9-b304-24fdd2db0425",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C37",
+      "claim": "Electroporation of non-covalently modified KRasG13C:acetyledaGDP resulted in activation of the Ras pathway comparable to KRasG13C.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, upon electroporation of non-covalently modified KRasG13C:acetyledaGDP or covalently modified KRasG13C-edaGppCP, activation of the Ras pathway comparable to KRasG13C was observed, showing that covalent modification is essential for inhibition of oncogenic signalling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot analysis shown in Figure 3\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "81a6c846-a451-495c-9409-e0e5f179d5ba",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C38",
+      "claim": "Covalent modification is essential for inhibition of oncogenic signaling by nucleotide analogues.",
+      "claim_type": "EXPLICIT",
+      "source": "showing that covalent modification is essential for inhibition of oncogenic signalling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of covalently modified vs non-covalently modified nucleotide analogues in cellular experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "46154394-9d68-4475-b2a6-f3b8459eeee3",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C39",
+      "claim": "Covalently modified KRasG13C-edaGppCp can artificially activate the Ras pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "and that artificial activation can be induced using non-hydrolysable GTP derivatives, which potentially adds further possibilities of using these nucleotide analogues to study Ras biology (Figure 3\u2014figure supplements 8 and 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot analysis shown in Figure 3\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "ba9c5447-734a-496a-9c6d-1147ccae9915",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C40",
+      "claim": "KRasG13C is a frequently observed mutation in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have successfully developed nucleotide-based covalent inhibitors of oncogenic KRasG13C, a variant of KRas that is largely unexplored as a target even though it is a frequently observed mutation in cancer (Visscher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Visscher et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "0caa7a44-4928-4026-83c2-ef07cf5094a5",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C41",
+      "claim": "The nucleotide analogues have similar affinities towards Ras compared to their natural counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thorough biochemical and structural characterization revealed that the nucleotide analogues designed and synthesized in this publication have similar affinities towards Ras compared to their natural counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by affinity measurements showing KD values in the picomolar range (Table 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "560efa7f-8290-41af-a170-9df880463a0e",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C42",
+      "claim": "The nucleotides prohibit SOS-mediated nucleotide exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "We could show that the nucleotides prohibit (SOS-mediated) nucleotide exchange and lead to an effective interference in the induction of oncogenic effects by KRasG13C in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GEF assay data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "3b1ea16f-757b-4175-bf33-301bcc3bee39",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C43",
+      "claim": "The nucleotides lead to effective interference in the induction of oncogenic effects by KRasG13C in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We could show that the nucleotides prohibit (SOS-mediated) nucleotide exchange and lead to an effective interference in the induction of oncogenic effects by KRasG13C in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cellular experiments shown in Figure 3B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "0040418e-f7bf-47f3-9604-f57174cf27bf",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C44",
+      "claim": "Further optimization of the nucleotides to overcome limitations regarding reactivity at physiological pH and cell-permeability are necessary and currently ongoing.",
+      "claim_type": "EXPLICIT",
+      "source": "Further optimization of the nucleotides to overcome the limitations regarding reactivity at physiological pH, as well as cell-permeability, are necessary and currently ongoing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future work and current limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "a55047a6-a6ad-486f-a01f-e678a8ed68e8",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C45",
+      "claim": "Protective esterification of the diphosphate moiety is being investigated to deliver prodrugs of the nucleotides into cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, protective esterification of the diphosphate moiety is currently being investigated to deliver prodrugs of the nucleotides into cells, which subsequently become activated by unspecific esterases (Meier, 2017; Mehellou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes ongoing research efforts, supported by citations to Meier, 2017 and Mehellou et al., 2018.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "99c20588-c4d0-433a-a136-3ddfd63060f2",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C46",
+      "claim": "Appropriate modification of the linker length and electrophilic warhead could make KRasG12C or other relevant mutants possible targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We are also investigating whether appropriate modification of the linker length and the electrophilic warhead would also make KRasG12C or other relevant mutants (e.g. HRasG12S in Costello syndrome) (Gripp and Lin, 2012) a possible target in a similar approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes future research directions, supported by citation to Gripp and Lin, 2012.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "083aef4e-01b3-4e96-8e91-4024807bef60",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C47",
+      "claim": "The G13C mutation should be generally addressable by appropriately positioned Michael acceptors based on pKa calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, based on pKa calculations, we were able to show that the G13C mutation should also be generally addressable by appropriately positioned Michael acceptors (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pKa calculations shown in Supplementary file 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "0dfb8507-5e90-443e-9154-a04d344f9b02",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C48",
+      "claim": "Modifications at the 2',3'-OH groups of the ribose do not significantly alter nucleotide affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Gray and colleagues, we chose the 2',3'-OH groups of the ribose for attachment of the warhead since modifications at this position do not significantly alter nucleotide affinity (Figure 1A, B; Eberth et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Eberth et al., 2005 and experimental data in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "25085733-2746-4336-9be6-5d720ed53c75",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C49",
+      "claim": "The warhead reacts preferentially with the cysteine at position 13, but not other cysteines in KRas nor the additional neighboring cysteine in KRasG12C.",
+      "claim_type": "EXPLICIT",
+      "source": "thus showing that the warhead reacts preferentially with the cysteine at position 13, but not other cysteines in KRas nor the additional neighboring cysteine in KRasG12C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MS experiments comparing labeling of KRasG13C, KRasG12C, and KRasWT shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "a9b23b25-0239-41e2-aa20-c3858ed5f494",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C50",
+      "claim": "Knock-down of Rab21 has been reported to have beneficial effects in human glioma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, Rab21 might be an interesting target itself since knock-down of Rab21 has been reported to have beneficial effects in human glioma cells (Ge et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ge et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "23a871a7-90f9-4a97-a8bb-9a1dea10a680",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C51",
+      "claim": "Position 12 is further remote compared to position 13 from the ribose OH-groups, explaining the observed specificity of covalent bond formation.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Model of KRasG13C (model is based on PDB 4obe) showing the distances between the cysteine residue and the OH-groups of the ribose and the general structure of nucleotide derivatives bearing an electrophilic group at the 2',3'-position of the ribose moiety, showing that position 12 is further remote compared to position 13 and thus explaining the observed specificity of covalent bond formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural modeling shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "a955b691-de1f-472b-a769-d7012acf9b8b",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C52",
+      "claim": "The overall structures of KRasG13C-edaGDP and KRasG13C-bdaGDP are very similar to the known structure of KRas:GDP (PDB 4obe).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structures are very similar to the known structure of KRas:GDP (PDB 4obe), and the nucleotide scaffold, as well as the covalent linkage for both nucleotide analogues with cysteine at position 13 are well resolved in the electron density (Figure 2C, E, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by X-ray crystallography data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "6a28e27f-e847-4b97-940c-1376b7201d0a",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C53",
+      "claim": "The nucleotides are bound within the active site in a manner comparable to non-covalently bound GDP in other structures of Ras.",
+      "claim_type": "EXPLICIT",
+      "source": "Both structures showed that the nucleotides are bound within the active site in a manner that is comparable to non-covalently bound GDP in other structures of Ras, with similar reversible interactions between the protein and the nucleotide and the additional well-resolved covalent link to Cys13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural comparison shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "29aec0ee-d3cc-48cb-909d-70e8b3a4bc57",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C54",
+      "claim": "The eda and bda linkers are remote from the Mg2+ binding site and do not directly interfere with Mg2+ binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In both crystal structures, the eda and bda linker are remote from the Mg2+ binding site and do not directly interfere with Mg2+ binding, suggesting that Mg2+ can generally bind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural analysis of crystal structures (PDB 7ok3 and 7ok4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "71a143aa-f748-4363-b983-8dc6a0b7c565",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C55",
+      "claim": "The structural analysis verified the nucleotide binding pose and the high reversible affinity comparable to the natural nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the structural analysis verified the nucleotide binding pose and the high reversible affinity comparable to the natural nucleotides and will guide design and optimisation of the linker and the warhead in further studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the crystallographic and biochemical data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "e596a5fa-3c3c-4e96-b526-c0ed825edd76",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C56",
+      "claim": "KRasG13C shows drastically increased intrinsic nucleotide exchange rate compared to KRasWT, which probably contributes to the increased signalling and oncogenic effect of this mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in these experiments we also observed a drastically increased intrinsic nucleotide exchange rate for KRasG13C compared to KRasWT in the absence of SOS (Figure 3A, blue area), an effect that probably contributes to the increased signalling and oncogenic effect of this mutant",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 3A and inference about biological significance, with citation to Hunter et al., 2015.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "6a7684a1-820d-4d00-a043-a063f4bf6b59",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C57",
+      "claim": "GAP-stimulated GTP hydrolysis requires equivalent amounts of GAP (GAP 1:1) for KRasG13C-edaGTP (t1/2 = 35 min), while KRasWT:GTP requires only catalytic amounts (GAP 1:1000, t1/2 = 16 min).",
+      "claim_type": "EXPLICIT",
+      "source": "While GAP-stimulated GTP hydrolysis can be observed for KRasWT:GTP already at catalytic amounts of GAP (GAP 1:1000, t1/2 = 16 min), KRasG13C-edaGTP requires equivalent amounts of GAP (GAP 1:1, t1/2 = 35 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GAP-stimulated GTP hydrolysis experiments shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "39ac0e15-8cb2-4538-af8c-edb9c8a1186e",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C58",
+      "claim": "HeLa cells were obtained from the American Type Culture Collection (ATCC).",
+      "claim_type": "EXPLICIT",
+      "source": "HeLa cells were obtained from the American Type Culture Collection (ATCC) and were cultured in DMEM medium (Gibco) supplemented with 10% fetal bovine serum (FBS) (PAN-Biotech) and 1% penicillin/streptomycin (Gibco).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about cell line source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "3e945223-f83b-4490-aa89-f820d42f31e8",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "claim_id": "C59",
+      "claim": "The identity of the cells was validated by STR profiling and the cells were tested negative for mycoplasma contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of the cells was validated by STR profiling and the cells were tested negative for mycoplasma contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about cell line authentication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological and clinical context for targeting KRasG13C. Ras proteins are key regulators of cellular processes, with oncogenic mutations found in ~25% of human cancers. KRas is the predominantly mutated isoform (85%), with G13 being the second most common mutation site (14% of tumors). The G13C mutation specifically occurs in 3% of lung cancers (~7000 US patients/year). Despite Ras proteins being historically considered undruggable, the 2021 FDA approval of Sotorasib for KRasG12C demonstrated therapeutic feasibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 and C40 are well-supported by established literature citations (Cox et al., Forbes et al., Visscher et al., Mullard, etc.) and represent accepted knowledge in the field. These background claims provide appropriate context for the study's focus on KRasG13C as a therapeutic target.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "ac06a102-95ba-4442-b040-fad02d9a5f1b",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nucleotide-based inhibitors with electrophilic groups attached to the 2',3'-position of the ribose selectively and covalently modify KRasG13C but not KRasG12C or KRasWT. The eda linker provided the most efficient modification, with dGTP analogues (3'-position) showing faster reaction rates than mixed 2'/3' isomers. Structural modeling indicates position 12 is more remote from the ribose OH-groups than position 13, explaining the observed selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12, C48-C49, and C51 are strongly supported by MS data (Figure 1C-E), structural modeling (Figure 1B), and comparison experiments. The selectivity for G13C over G12C and WT is demonstrated quantitatively, with minimal off-target labeling (<8% for WT at pH 9.5 vs \u226590% for G13C). The design rationale based on ribose modification is supported by citation to Eberth et al., 2005.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "4e3b7a57-8f6e-48ef-a5e2-28544d9e3b22",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Complete covalent modification of KRasG13C was only observed at elevated pH (pH 9.5), though significant modification occurred at physiological pH within 24 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 is supported by pH-dependent labeling experiments (Figure 1\u2014figure supplement 6). However, this represents a significant limitation for therapeutic application, as the authors acknowledge. The requirement for elevated pH for complete modification raises concerns about in vivo efficacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "67e86d21-d6d4-465a-afe7-8f86a1b1e2ae",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GTP analogues are hydrolyzed to GDP after covalent reaction with KRasG13C, indicating proper positioning in the active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by time-resolved MS data (Figure 1\u2014figure supplement 2) showing intermediate mixtures of GDP and GTP forms that ultimately yield only the diphosphate form. This demonstrates that the covalently bound nucleotides retain catalytic competence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "505df250-dada-4e58-996e-a3f1e1aeb664",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The modified nucleotides can compete with natural GDP/GTP, though the reaction is slowed at higher concentrations of natural nucleotides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is supported by competition experiments (Figure 1\u2014figure supplement 4) showing modification occurs even with 10x and 100x excess GDP/GTP, though at reduced rates. This is important for demonstrating potential in vivo applicability despite high cellular nucleotide concentrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "6c54f6cd-ea0c-4af3-a4a0-fc261f04432a",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "KRasWT shows minimal unspecific labeling (3% at pH 9, 8% at pH 9.5) compared to KRasG13C (\u226590% under equivalent conditions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 is supported by MS data (Figure 1E, Figure 1\u2014figure supplement 6) demonstrating selectivity. The quantitative comparison provides strong evidence for target specificity, though some off-target reactivity exists at elevated pH.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "e96323a0-8219-4173-be43-bb2b82578701",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multiple sequence alignment reveals only ~7% of Ras small GTPase superfamily members contain cysteines within the P-loop accessible by the linker design. Only three proteins (Arl4a, RheBL1, Rab21) have cysteine at the position equivalent to residue 13. Rab21 can be modified by edaGDP similarly to KRasG13C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 and C50 are supported by sequence alignment data (Figure 1\u2014figure supplement 1, Supplementary file 1) and experimental validation with Rab21 (Figure 1\u2014figure supplement 7). The authors appropriately acknowledge potential cross-reactivity but argue this may not preclude therapeutic use, citing precedent with kinase inhibitors. The identification of Rab21 as a potential off-target is valuable for future development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "260ab92d-1c42-49a4-9f0e-a7cc5119a06f",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The nucleotide analogues maintain high reversible affinity comparable to natural nucleotides. Association rate constants (kon) are similar to unmodified nucleotides, and dissociation constants for pdaGDP and bdaGDP are 8.6\u00b11.3 pM and 9.6\u00b10.5 pM respectively (compared to 2.5 pM for GDP). The attached linker has minimal impact on reversible interaction and affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 and C41 are supported by stopped-flow experiments (Table 1\u2014source data 1-2) and HPLC-based competition assays (Table 1\u2014source data 3-4). The picomolar KD values are comparable to natural GDP (2.5 pM), representing a major advantage over previous approaches like SML-8-73-1 (KD ~140 nM, C22). The methodology for KD determination is clearly described with appropriate calculations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "11e5aafc-a616-43dd-b3c2-172ee951e03c",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The previous GDP derivative SML-8-73-1 (with electrophilic group on \u03b2-phosphate) showed dramatic loss of reversible affinity (KD ~140 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by citation to Jeganathan et al., 2018. This comparison highlights the advantage of the current ribose-modification approach over previous \u03b2-phosphate modification strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "5110b782-72cd-40c6-9282-cc09af38c09b",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The first X-ray crystal structures of KRasG13C were solved with covalently bound edaGDP (PDB 7ok3) and bdaGDP (PDB 7ok4). Only the 3'-isomer was observed, consistent with MS experiments. The overall structures are very similar to KRas:GDP (PDB 4obe), with nucleotides bound in a manner comparable to non-covalently bound GDP, plus a well-resolved covalent link to Cys13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24, C52-C53, and C55 are supported by X-ray crystallography data (Figure 2, Figure 2\u2014figure supplement 1) with structures deposited in PDB. The observation of only the 3'-isomer is consistent with MS data showing faster reaction for dGTP (C12). The structural analysis validates the binding mode and high affinity, providing important guidance for future optimization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "f52efcfc-3835-4043-81ff-4b5d1d0ee793",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both crystal structures lacked Mg2+ ions in the active site despite 2 mM Mg2+ in solution. This is likely due to crystallization buffer containing NH4F or NaF, causing MgF2 precipitation. The eda and bda linkers are remote from the Mg2+ binding site and do not directly interfere with Mg2+ binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 and C54 are supported by structural observations and comparison with other PDB structures (Ostrem et al., 2013). The explanation for missing Mg2+ is reasonable and supported by precedent. The structural analysis suggests Mg2+ can bind under physiological conditions, though this inference would benefit from direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "f37cca6d-ca19-47f8-8e28-27a6cb3fdc13",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Covalently locked KRasG13C-edaGDP cannot undergo SOS-catalyzed nucleotide exchange, demonstrating the protein is locked in the inactive state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C42 are strongly supported by GEF assay data (Figure 3A, Figure 3\u2014figure supplement 1) showing SOS efficiently catalyzes exchange on KRasWT, KRasG13C, and control KRasG13C:acetyledaGDP, but not on covalently locked KRasG13C-edaGDP. This is a key proof-of-concept for the inhibitory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "cef69246-4927-40d7-88b1-ffa7ea7f4da5",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "KRasG13C shows drastically increased intrinsic nucleotide exchange rate compared to KRasWT in the absence of SOS, an effect that likely contributes to increased signaling and oncogenic effects. This effect is abrogated in covalently locked KRasG13C-edaGDP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C56 are supported by nucleotide exchange experiments (Figure 3A) and citation to Hunter et al., 2015. This represents an important mechanistic insight into G13C oncogenicity and demonstrates an additional benefit of the covalent inhibitor beyond blocking GEF activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "4bc2b356-b3d4-42ac-895a-181762e05e1c",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Covalently modified KRasG13C-edaGppCp shows no SOS-catalyzed nucleotide exchange, indicating the protein can be trapped in the active conformation with non-hydrolyzable GTP derivatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by experimental data (Figure 3\u2014figure supplement 1B). This demonstrates the approach can be used to create constitutively active forms, providing a valuable tool for studying Ras biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "dc376162-7f0b-40da-83e6-7c75132b6c9c",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The intrinsic GTP hydrolysis of KRasG13C-edaGTP (t1/2 = 187 min) is comparable to KRasWT:GTP (t1/2 = 126 min). However, GAP-stimulated hydrolysis is drastically decreased for G13C, requiring equivalent amounts of GAP (1:1, t1/2 = 35 min) versus catalytic amounts for WT (1:1000, t1/2 = 16 min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 and C57 are supported by GTP hydrolysis experiments (Figure 3\u2014figure supplement 2) and citations to Li et al., 2021 and Scheffzek et al., 1997. These data confirm expected biochemical properties of the G13C mutant and demonstrate the covalently modified protein retains intrinsic hydrolysis activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "7089ab5c-c492-4803-aaf4-fc60d9a3b6b7",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Covalently locked full-length KRasG13C can still be fully farnesylated in vitro, and MS/MS analysis confirmed selective labeling of the targeted cysteine at position 13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by in vitro farnesylation experiments (Figure 3\u2014figure supplement 4) and MS/MS analysis (Figure 3\u2014figure supplement 5). These controls are important for demonstrating that covalent modification occurs at the intended site and does not interfere with essential post-translational modifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "d3b3150f-1701-43e9-a33c-1710a9447c65",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Electroporation of KRasG13C into HeLa cells resulted in concentration-dependent activation of downstream signaling (pcRaf, pAkt, pErk, pS6), while covalently locked KRasG13C-edaGDP was unable to induce these effects, similar to KRasWT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 and C43 are supported by Western blot analysis (Figure 3B-C, Figure 3\u2014figure supplements 6-7) showing clear differences in downstream signaling. The use of electroporation to deliver pre-modified protein is appropriate given cell permeability limitations. Quantification shows statistically significant differences (n=3, one-way ANOVA). This provides proof-of-concept for inhibition of oncogenic signaling in cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "cbb72c1e-9304-4878-8a1d-4afc25808849",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Non-covalently modified KRasG13C:acetyledaGDP activates the Ras pathway comparable to KRasG13C, demonstrating that covalent modification is essential for inhibition of oncogenic signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by Western blot analysis (Figure 3\u2014figure supplement 8). This control experiment is critical for demonstrating that the inhibitory effect requires covalent bond formation, not just nucleotide binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "d4d96362-3a10-4b3d-8bb5-9550cdd82691",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Covalently modified KRasG13C-edaGppCp can artificially activate the Ras pathway, providing a tool for studying Ras biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by Western blot analysis (Figure 3\u2014figure supplement 9) showing activation of downstream signaling comparable to KRasG13C. This demonstrates the versatility of the approach for creating both inhibitors and activators.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "d5f5a142-d7af-4c91-8e84-e42184ef96a7",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Based on pKa calculations, the G13C mutation should be generally addressable by appropriately positioned Michael acceptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by pKa calculations (Supplementary file 2) using OpenEye software with appropriate parameters. The computational prediction provides theoretical support for the experimental observations, though the calculations themselves are not critically evaluated in detail.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "e1d90b31-d297-47a3-a01a-c2804bf0be26",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The authors acknowledge that further optimization is necessary to overcome limitations regarding reactivity at physiological pH and cell permeability. Ongoing work includes protective esterification of the diphosphate moiety for prodrug delivery and modification of linker length/warhead to target other mutants like KRasG12C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C46 describe future work and current limitations. While these are honest assessments of the work's limitations, they indicate the compounds are not yet suitable for therapeutic application. The requirement for elevated pH for efficient modification (C13) and inability to cross cell membranes are significant barriers that must be addressed before clinical translation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    },
+    {
+      "id": "e077ae49-ec46-404d-8367-a7313fd79c7b",
+      "content_id": "9b0ab521-43b5-4835-b3db-49031571e4d8",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "HeLa cells were obtained from ATCC, validated by STR profiling, and tested negative for mycoplasma contamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 represent appropriate methodological controls for cell line authentication and quality control. These are standard practices that support the validity of cellular experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:00.034050Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4d2dd0f3-3160-44ee-9efb-e0797ec6c933",
+      "result_id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24"
+    },
+    {
+      "claim_id": "0c00d703-e271-4ef5-b43a-775235880ee6",
+      "result_id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24"
+    },
+    {
+      "claim_id": "1b82c7ba-4dc9-498a-b429-286301bafc59",
+      "result_id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24"
+    },
+    {
+      "claim_id": "bbfad280-b34b-4daf-bc71-1e4f1ded1ac1",
+      "result_id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24"
+    },
+    {
+      "claim_id": "793fca9d-b6ec-4157-b8c9-2b05aaa2f4fe",
+      "result_id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24"
+    },
+    {
+      "claim_id": "e945257b-89e9-48d3-bb61-b6b21094e6f9",
+      "result_id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24"
+    },
+    {
+      "claim_id": "a85b295c-8b78-4be6-aeff-02d175901273",
+      "result_id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24"
+    },
+    {
+      "claim_id": "bc313539-c088-4749-8c97-5581e362c624",
+      "result_id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24"
+    },
+    {
+      "claim_id": "ba9c5447-734a-496a-9c6d-1147ccae9915",
+      "result_id": "25ec82a2-e045-4a52-b4a9-00a4e10d9c24"
+    },
+    {
+      "claim_id": "612e5af4-8fc4-4b1e-841d-56a501157538",
+      "result_id": "ac06a102-95ba-4442-b040-fad02d9a5f1b"
+    },
+    {
+      "claim_id": "8f7e481b-0c84-4bbb-931c-baa806ec1094",
+      "result_id": "ac06a102-95ba-4442-b040-fad02d9a5f1b"
+    },
+    {
+      "claim_id": "a5dca155-96b1-4d84-b10f-e04271bbdc65",
+      "result_id": "ac06a102-95ba-4442-b040-fad02d9a5f1b"
+    },
+    {
+      "claim_id": "aba67bc9-709d-46d0-a63d-ac01b16e759e",
+      "result_id": "ac06a102-95ba-4442-b040-fad02d9a5f1b"
+    },
+    {
+      "claim_id": "0dfb8507-5e90-443e-9154-a04d344f9b02",
+      "result_id": "ac06a102-95ba-4442-b040-fad02d9a5f1b"
+    },
+    {
+      "claim_id": "25085733-2746-4336-9be6-5d720ed53c75",
+      "result_id": "ac06a102-95ba-4442-b040-fad02d9a5f1b"
+    },
+    {
+      "claim_id": "23a871a7-90f9-4a97-a8bb-9a1dea10a680",
+      "result_id": "ac06a102-95ba-4442-b040-fad02d9a5f1b"
+    },
+    {
+      "claim_id": "69e8c511-7d86-485b-988d-28592bbe5454",
+      "result_id": "4e3b7a57-8f6e-48ef-a5e2-28544d9e3b22"
+    },
+    {
+      "claim_id": "b318de89-7ba1-4232-8c05-bbf5a1a6ba28",
+      "result_id": "67e86d21-d6d4-465a-afe7-8f86a1b1e2ae"
+    },
+    {
+      "claim_id": "bb4aab3b-2117-4af8-b709-b910c7e5a40a",
+      "result_id": "505df250-dada-4e58-996e-a3f1e1aeb664"
+    },
+    {
+      "claim_id": "a07af827-35fa-425a-9bd4-35e98202adcd",
+      "result_id": "6c54f6cd-ea0c-4af3-a4a0-fc261f04432a"
+    },
+    {
+      "claim_id": "ce0bf808-2264-4ee9-b1a8-c2c9fe28ed4a",
+      "result_id": "e96323a0-8219-4173-be43-bb2b82578701"
+    },
+    {
+      "claim_id": "d2054c1f-3e80-42a1-aaee-e55218df33fe",
+      "result_id": "e96323a0-8219-4173-be43-bb2b82578701"
+    },
+    {
+      "claim_id": "a9b23b25-0239-41e2-aa20-c3858ed5f494",
+      "result_id": "e96323a0-8219-4173-be43-bb2b82578701"
+    },
+    {
+      "claim_id": "5e065a21-f759-4cd2-9815-f4063b2011d3",
+      "result_id": "260ab92d-1c42-49a4-9f0e-a7cc5119a06f"
+    },
+    {
+      "claim_id": "a751f207-b3f0-4448-b4d0-fa8f96535136",
+      "result_id": "260ab92d-1c42-49a4-9f0e-a7cc5119a06f"
+    },
+    {
+      "claim_id": "8634a79f-969f-4aa5-993e-65e77825579a",
+      "result_id": "260ab92d-1c42-49a4-9f0e-a7cc5119a06f"
+    },
+    {
+      "claim_id": "0caa7a44-4928-4026-83c2-ef07cf5094a5",
+      "result_id": "260ab92d-1c42-49a4-9f0e-a7cc5119a06f"
+    },
+    {
+      "claim_id": "3798703d-94fb-4ad7-ac70-df6c3afce8de",
+      "result_id": "11e5aafc-a616-43dd-b3c2-172ee951e03c"
+    },
+    {
+      "claim_id": "eb9c9d9b-1595-4522-9616-a9579c33b92b",
+      "result_id": "5110b782-72cd-40c6-9282-cc09af38c09b"
+    },
+    {
+      "claim_id": "257c75fa-4031-40ce-a68a-b2f1dab9f123",
+      "result_id": "5110b782-72cd-40c6-9282-cc09af38c09b"
+    },
+    {
+      "claim_id": "a955b691-de1f-472b-a769-d7012acf9b8b",
+      "result_id": "5110b782-72cd-40c6-9282-cc09af38c09b"
+    },
+    {
+      "claim_id": "6a28e27f-e847-4b97-940c-1376b7201d0a",
+      "result_id": "5110b782-72cd-40c6-9282-cc09af38c09b"
+    },
+    {
+      "claim_id": "71a143aa-f748-4363-b983-8dc6a0b7c565",
+      "result_id": "5110b782-72cd-40c6-9282-cc09af38c09b"
+    },
+    {
+      "claim_id": "1f4ef921-88e3-41cb-a978-dc67c61e214c",
+      "result_id": "f52efcfc-3835-4043-81ff-4b5d1d0ee793"
+    },
+    {
+      "claim_id": "a4fa2318-3693-405a-8e2f-422860f63354",
+      "result_id": "f52efcfc-3835-4043-81ff-4b5d1d0ee793"
+    },
+    {
+      "claim_id": "29aec0ee-d3cc-48cb-909d-70e8b3a4bc57",
+      "result_id": "f52efcfc-3835-4043-81ff-4b5d1d0ee793"
+    },
+    {
+      "claim_id": "f7227e7f-eb47-4af0-8dd9-80c4ab625e27",
+      "result_id": "f37cca6d-ca19-47f8-8e28-27a6cb3fdc13"
+    },
+    {
+      "claim_id": "560efa7f-8290-41af-a170-9df880463a0e",
+      "result_id": "f37cca6d-ca19-47f8-8e28-27a6cb3fdc13"
+    },
+    {
+      "claim_id": "38ab185c-0292-4df9-90e4-fc6ae6a9ec4a",
+      "result_id": "cef69246-4927-40d7-88b1-ffa7ea7f4da5"
+    },
+    {
+      "claim_id": "e596a5fa-3c3c-4e96-b526-c0ed825edd76",
+      "result_id": "cef69246-4927-40d7-88b1-ffa7ea7f4da5"
+    },
+    {
+      "claim_id": "824244c7-5c85-400e-9e7a-388a4e27cd38",
+      "result_id": "4bc2b356-b3d4-42ac-895a-181762e05e1c"
+    },
+    {
+      "claim_id": "b9a3656b-38ba-4709-b72c-45e0753a9202",
+      "result_id": "dc376162-7f0b-40da-83e6-7c75132b6c9c"
+    },
+    {
+      "claim_id": "df148f1f-7488-4e9b-9a5b-370246c5a6c9",
+      "result_id": "dc376162-7f0b-40da-83e6-7c75132b6c9c"
+    },
+    {
+      "claim_id": "6a7684a1-820d-4d00-a043-a063f4bf6b59",
+      "result_id": "dc376162-7f0b-40da-83e6-7c75132b6c9c"
+    },
+    {
+      "claim_id": "2bae66d2-fc9b-48f2-99a8-fd3f11ac81ea",
+      "result_id": "7089ab5c-c492-4803-aaf4-fc60d9a3b6b7"
+    },
+    {
+      "claim_id": "d3ca0289-5499-4023-bf51-af63eca33a72",
+      "result_id": "7089ab5c-c492-4803-aaf4-fc60d9a3b6b7"
+    },
+    {
+      "claim_id": "c7e4659b-3459-4969-8d00-0f1bb88535fe",
+      "result_id": "d3b3150f-1701-43e9-a33c-1710a9447c65"
+    },
+    {
+      "claim_id": "a9c0be17-eba6-45b1-9b71-9312817daefd",
+      "result_id": "d3b3150f-1701-43e9-a33c-1710a9447c65"
+    },
+    {
+      "claim_id": "3b1ea16f-757b-4175-bf33-301bcc3bee39",
+      "result_id": "d3b3150f-1701-43e9-a33c-1710a9447c65"
+    },
+    {
+      "claim_id": "3572134c-c2fa-4fa9-b304-24fdd2db0425",
+      "result_id": "cbb72c1e-9304-4878-8a1d-4afc25808849"
+    },
+    {
+      "claim_id": "81a6c846-a451-495c-9409-e0e5f179d5ba",
+      "result_id": "cbb72c1e-9304-4878-8a1d-4afc25808849"
+    },
+    {
+      "claim_id": "46154394-9d68-4475-b2a6-f3b8459eeee3",
+      "result_id": "d4d96362-3a10-4b3d-8bb5-9550cdd82691"
+    },
+    {
+      "claim_id": "083aef4e-01b3-4e96-8e91-4024807bef60",
+      "result_id": "d5f5a142-d7af-4c91-8e84-e42184ef96a7"
+    },
+    {
+      "claim_id": "0040418e-f7bf-47f3-9604-f57174cf27bf",
+      "result_id": "e1d90b31-d297-47a3-a01a-c2804bf0be26"
+    },
+    {
+      "claim_id": "a55047a6-a6ad-486f-a01f-e678a8ed68e8",
+      "result_id": "e1d90b31-d297-47a3-a01a-c2804bf0be26"
+    },
+    {
+      "claim_id": "99c20588-c4d0-433a-a136-3ddfd63060f2",
+      "result_id": "e1d90b31-d297-47a3-a01a-c2804bf0be26"
+    },
+    {
+      "claim_id": "39ac0e15-8cb2-4538-af8c-edb9c8a1186e",
+      "result_id": "e077ae49-ec46-404d-8367-a7313fd79c7b"
+    },
+    {
+      "claim_id": "3e945223-f83b-4490-aa89-f820d42f31e8",
+      "result_id": "e077ae49-ec46-404d-8367-a7313fd79c7b"
+    }
+  ],
+  "comparisons": []
+}

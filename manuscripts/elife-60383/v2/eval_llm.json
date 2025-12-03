@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C23",
+      "C24"
+    ],
+    "result": "LHCSR3 is the key protein responsible for NPQ in C. reinhardtii. The npq4 lhcsr1 mutant lacking LHCSR subunits shows null NPQ phenotype, confirming LHCSR's essential role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 provide direct experimental evidence showing null NPQ in the npq4 lhcsr1 mutant (Figure 1A), strongly supporting the essential role of LHCSR. This is consistent with established knowledge (C1, C7, C8) and prior citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C47",
+      "C70"
+    ],
+    "result": "Two distinct quenching processes were identified in LHCSR3 in vitro: one controlled by pH and one controlled by zeaxanthin, operating simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 2D-FLC analysis (C47, C70) quantified two parallel dynamic components with distinct pH and zeaxanthin dependencies, directly supporting the claim of two separate quenching processes (C2). The single-molecule data provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C33",
+      "C52",
+      "C56"
+    ],
+    "result": "pH-dependent quenching in LHCSR3 requires the C-terminal residues. The stop-LHCSR3 mutant lacking these residues loses pH-dependent quenching while maintaining zeaxanthin-dependent quenching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Single-molecule data (C25-C27, C33) and 2D-FLC analysis (C52, C56) consistently show that stop-LHCSR3 lacks pH-dependent quenching response. The negligible free-energy change (<30 cm\u207b\u00b9) upon pH drop in the mutant provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C34",
+      "C35",
+      "C53",
+      "C61"
+    ],
+    "result": "Zeaxanthin-dependent quenching occurs in LHCSR3 even at neutral pH, independent of pH changes. This is observed both in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Single-molecule fluorescence data (C28) shows decreased intensity with zeaxanthin at both pH 7.5 and 5.0. The 2D-FLC analysis (C34, C53) quantifies the zeaxanthin-dependent stabilization of the quenched state (>550 cm\u207b\u00b9 at pH 7.5), and this behavior is maintained in stop-LHCSR3 (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C22",
+      "C36",
+      "C38",
+      "C54",
+      "C71"
+    ],
+    "result": "In vivo experiments show that pH-dependent quenching can occur without zeaxanthin. The npq1 mutant lacking zeaxanthin shows full NPQ induction and quenching upon high light exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "NPQ measurements (C20) and 77K fluorescence lifetime data (C36, C38) demonstrate that the npq1 strain achieves full quenching after HL exposure despite lacking zeaxanthin. This provides strong in vivo evidence for pH-dependent quenching independent of zeaxanthin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C55",
+      "C62",
+      "C65"
+    ],
+    "result": "The zep mutant constitutively accumulating zeaxanthin shows strong quenching even at neutral pH and in dark-adapted conditions, independent of light treatment or LHCSR3 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "77K fluorescence lifetime measurements (C39, C62) show consistently faster decay in zep mutant regardless of light conditions. The high Zea/Chl ratio (~10-fold higher, C65) and quenching even in LL-acclimated cells with minimal LHCSR3 support zeaxanthin-dependent quenching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C57"
+    ],
+    "result": "Either pH- or zeaxanthin-dependent quenching prevents reactive oxygen species formation and provides efficient photoprotection. Singlet oxygen production inversely correlates with quenching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SOSG measurements (C44, C46) show that npq4 lhcsr1 lacking LHCSR has highest ROS production, while both npq1 (pH-dependent only) and zep (zeaxanthin-dependent) show reduced ROS. The inverse correlation between lifetime and ROS production (C46) supports the photoprotective role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C48"
+    ],
+    "result": "2D-FLC analysis identified two lifetime states (unquenched ~2.5 ns, quenched ~0.5 ns) and three dynamic components within single LHCSR3, indicating multiple Chl a emissive sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 2D-FLC analysis provides quantitative identification of lifetime states (C30) and dynamic components (C31). The presence of three components is supported by cross-correlation analysis beginning above zero, consistent with multiple emissive sites and previous LHC models (C31).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C60"
+    ],
+    "result": "Structural assignments identify the pH-dependent component as involving lutein and Chl a 613, while the zeaxanthin-dependent component involves Vio/Zea and Chl a 602-603.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the assignments (C49, C50) are based on 2D-FLC data, structural modeling, and previous spectroscopic work, they remain speculative. The authors acknowledge these are 'likely' sites based on indirect evidence. Direct structural confirmation is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C51"
+    ],
+    "result": "pH decrease from 7.5 to 5.0 stabilizes the quenched state in the pH-dependent component by decreasing the transition rate from quenched to unquenched state, with free-energy shifts of >200 cm\u207b\u00b9 in LHCSR3-Vio and >500 cm\u207b\u00b9 in LHCSR3-Zea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 2D-FLC analysis provides quantitative rate constants and free-energy calculations (C32, C51) showing pH-dependent stabilization of the quenched state. The larger effect in LHCSR3-Zea suggests synergistic effects between pH and zeaxanthin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C63",
+      "C64"
+    ],
+    "result": "Zeaxanthin-dependent quenching occurs in other light-harvesting complexes beyond LHCSR3, though LHCSR3 is not the sole quenching site. Isolated LHC complexes from zep mutant show increased zeaxanthin content and reduced fluorescence lifetime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Pigment analysis (C41) and fluorescence lifetime measurements (C42) on isolated complexes provide direct evidence. However, the 10% lifetime decrease in isolated complexes doesn't fully explain the strong whole-cell quenching (C64), suggesting additional mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The strong quenching in zep mutant may result from zeaxanthin accumulation in thylakoid membranes altering the environment and organization of light-harvesting complexes, potentially explaining conflicting literature on zeaxanthin's role in NPQ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative interpretation (C66) based on the high Zea/Chl ratio and supported by citations to previous work in higher plants (C67). However, direct evidence for membrane-level effects in C. reinhardtii is lacking. The hypothesis is plausible but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "pH- and zeaxanthin-dependent quenching processes work together with distinct timescales to provide photoprotection under variable light conditions, with potential compensatory effects in mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the existence of two distinct processes is well-supported, the claims about their combined function (C59, C76) and compensatory effects (C58, C74, C75) are largely speculative interpretations. The manuscript acknowledges uncertainty about whether both processes contribute in WT or are alternatively triggered in mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Limited photodamage occurred during 60 min illumination in HL-acclimated cells, as evidenced by NPQ recovery to similar levels across mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The recovery of NPQ traces (C21, Figure 1A) provides evidence for limited photoinhibition in HL-acclimated samples. However, LL-acclimated samples showed incomplete recovery (Figure 1\u2014figure supplement 4), suggesting photoinhibition under those conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "WT strains grown in low light with reduced LHCSR accumulation show significantly lower NPQ induction, supporting the critical role of C-terminus protonation in activating quenching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between LHCSR accumulation (Figure 1\u2014figure supplements 1-2) and NPQ levels (Figure 1\u2014figure supplement 4) in LL vs HL conditions supports this claim. Combined with stop-LHCSR3 data, this provides converging evidence for the C-terminus role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Optimizing NPQ for biomass could improve yields by up to 30%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by citations to previous modeling studies (Kromdijk et al., 2016; Zhu et al., 2010). However, it represents prior work rather than findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on NPQ mechanisms: established knowledge about Chl-Car interactions, pH sensing, zeaxanthin conversion, and conflicting reports on zeaxanthin's role in green algae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize established knowledge and prior literature, supported by appropriate citations. They provide context but are not novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

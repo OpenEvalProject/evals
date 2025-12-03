@@ -1,0 +1,1275 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "A graph neural network (GNN) trained on human olfactory perception data produces a 256-dimensional embedding called the principal odor map (POM).",
+    "claim_type": "EXPLICIT",
+    "source": "GNNs show state-of-the-art ability to accurately predict human olfactory perceptual labels in both retrospective (Sanchez-Lengeling et al., 2019) and prospective settings (Lee et al., 2022). Here, we use a GNN embedding \u2013 the neural network layer immediately preceding the task-specific architecture \u2013 as a representation of odor",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text describes the GNN architecture and its training on human perceptual data, and the Methods section specifies the 256-dimensional embedding.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The POM predicts receptor, neural, and behavioral olfaction data better than generic chemical representations across species separated by up to 500 million years of evolution.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 1b, the embedding predicts receptor, neural, and behavioral olfaction data better than generic chemical representations across species separated by up to 500 M years of evolution and possessing independently evolved olfactory systems.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Figure 1b shows performance comparisons across multiple datasets and species, demonstrating superior predictive performance of POM.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The POM shows no significant advantage over generic chemical representations for predicting molecular properties not exploited by olfaction.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 1b, POM does not show a significant or consistent advantage over generic chemical representations for predicting molecular properties that are not likely exploited by olfaction, such as electronic properties (e.g. QM7 Rupp et al., 2012) and adverse drug reactions (e.g. SIDER Kuhn et al., 2016) compiled by MoleculeNet (Wu et al., 2018).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Figure 1b shows that POM performs worse than alternatives on non-olfactory tasks, demonstrating task specificity.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "POM demonstrates superior performance for GPCRs involved in human olfaction but significantly worse performance for GPCRs related to enteric chemical sensation compared to generic chemical representations.",
+    "claim_type": "EXPLICIT",
+    "source": "While POM demonstrates superior performance for GPCRs involved in human olfaction, their performance is significantly worse for GPCRs related to enteric chemical sensation compared to generic chemical representations, showing specificity for olfaction (Figure 1b, Figure 1\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The comparison between olfactory and enteric GPCRs demonstrates task-specific performance of POM.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "There is a strong correlation (r=0.93) between metabolic distance and POM distance.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that there is a strong correlation between the metabolic distance and POM distance (r=0.93) and that common measures of structural similarity between these metabolites can only account for part of the relationship (r<0.8).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The correlation coefficient is calculated from the analysis of metabolic networks and POM distances.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Metabolic reaction sequences follow smooth paths in POM despite large jumps in molecular structure.",
+    "claim_type": "EXPLICIT",
+    "source": "metabolic reaction sequences (Caspi et al., 2014) also follow smooth paths in POM despite large jumps in molecular structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through analysis of metabolic pathways and their representation in POM space.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Reactant and product spanning structural cliffs in metabolic reactions frequently share a common odor profile.",
+    "claim_type": "EXPLICIT",
+    "source": "This is especially true for neighbor metabolites in metabolic networks where a biological reaction changes the molecular structure drastically; while such drastic changes produce large structural distances, only smaller changes in POM are observed \u2013 the reactant and product spanning this structural cliff frequently share a common odor profile (Figure 2d; Figure 2\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Figure 2d provides examples of metabolite pairs with large structural differences but small POM distances and similar odor profiles.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "POM outperforms structural metrics with a >2\u00d7 reduction in unexplained variance when predicting metabolic distance.",
+    "claim_type": "EXPLICIT",
+    "source": "But POM (derived only from human perceptual data) outperforms all such metrics significantly, with a >2\u00d7 reduction in unexplained variance and a lower dispersion at any given metabolic distance (Figure 2c; Figure 2\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The comparison of explained variance across different distance metrics demonstrates POM's superior performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Metabolic pathways show smooth progressions in POM even though the same pathways show irregular progressions when organized by molecular structure.",
+    "claim_type": "EXPLICIT",
+    "source": "We find the organizations of POM show a smooth progression from starting metabolites to final product metabolites, even though the same pathways show irregular progressions when organized simply by molecular structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through visualization of metabolic pathways in both structure space and POM space.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Metabolic trajectories are significantly smoother in POM than when using alternative structural distance metrics (paired t-test, p<0.0001).",
+    "claim_type": "EXPLICIT",
+    "source": "(d) Metabolic trajectories are smoother after metabolite structures are projected to POM than when using alternative structural distance metrics (paired t-test, p<0.0001 for both structure distance metrics).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Statistical testing demonstrates significant differences in smoothness between POM and alternative representations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The distance distribution for co-occurring molecule pairs is shifted toward 'nearness' in POM, and this shift is larger than expected when only considering structure similarity.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the distance distribution for co-occurring molecule pairs is shifted toward 'nearness' in POM; this shift is larger than one would expect when only considering their structure similarity (Figure 4b and c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Analysis of 214 molecules in 303 essential oils shows co-occurring pairs are closer in POM than in structure space.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The rank shift for co-occurring molecules is approximately 2\u00d7 larger in POM than for structure distance (paired t-test, p<0.0001).",
+    "claim_type": "EXPLICIT",
+    "source": "More importantly, this rank shift for co-occurring molecules is ~2\u00d7 larger in POM than for structures distance (paired t-test, p<0.0001) and reversed for non-co-occurring pairs (paired t-test, p<0.001).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Statistical comparison of rank shifts between POM and structure-based distances for co-occurring vs non-co-occurring pairs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "17 species with sufficient metabolic data spanning four kingdoms of life were identified from MetaCyc.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 17 species with sufficient metabolic data, spanning four kingdoms of life (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The Methods section describes the selection criteria and Figure 2\u2014figure supplement 1 shows the distribution.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The GNN was pre-trained on human olfactory perceptual data with 138 odor labels for approximately 5000 molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "We pre-trained the GNN on the same human olfactory perceptual data as described in Sanchez-Lengeling et al., 2019 and Lee et al., 2022 with 138 odor labels for ~5000 molecules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Methods section specifies the training dataset size and composition.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The meta-analysis included 16 olfactory neuroscience datasets spanning 9 common model species.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we use a GNN embedding \u2013 the neural network layer immediately preceding the task-specific architecture \u2013 as a representation of odor and evaluate its predictive power in a meta analysis across 16 datasets (Methods) in olfactory neuroscience spanning 9 common model species, including mosquito, fruit fly, and mouse, as well as different scales of biology, including olfactory receptor, glomerular response, cortical neuron response, and whole-animal behavior (Figure 1a; Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text explicitly states the number of datasets and species analyzed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Color mixing principles and corresponding biological mechanisms help explain the organization of color perception in the early visual system.",
+    "claim_type": "EXPLICIT",
+    "source": "Color mixing principles (Young, 1802; Smith and Guild, 1932; Hering, 1892) and corresponding biological mechanisms (Wiesel and Hubel, 1966; De Valois et al., 1958; Svaetichin, 1956) help explain the organization of color perception in the early visual system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple historical citations establishing the relationship between color theory and visual neuroscience.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Gabor filters describe the receptive fields of visual cortex (V1) simple cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Gabor filters describe the receptive fields of visual cortex (V1) simple cells in later stages of visual processing (Jones and Palmer, 1987).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to established neuroscience literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Activity cliffs (small changes in molecular structure producing profound changes in activity) have limited the generalizability of representations developed from structural motifs.",
+    "claim_type": "EXPLICIT",
+    "source": "'activity cliffs' \u2013 seemingly small changes in molecular structure that produce profound changes in activity (Maggiora, 2006; such as odor) \u2013 have limited the generalizability of representations developed from structural motifs (Gerkin, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to literature on structure-activity relationships.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The first few layers of convolutional neural networks trained on visual scenes drawn from natural statistics learn to implement Gabor filters.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, the first few layers of convolutional neural networks \u2013 trained on visual scenes drawn from natural statistics \u2013 learn to implement Gabor filters (Krizhevsky et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to seminal work in deep learning for computer vision.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Learned representations at progressively deeper layers of neural networks predict the responses of neurons in progressively deeper structures in the ventral visual stream.",
+    "claim_type": "EXPLICIT",
+    "source": "More strikingly, learned representations at progressively deeper layers of neural networks predict the responses of neurons in progressively deeper structures in the ventral visual stream (Zhuang et al., 2021; Yamins et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to neuroscience research on neural network representations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Neural networks trained to classify odors can match olfactory system connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, neural networks trained to classify odors can also match olfactory system connectivity (Wang et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to recent work on neural networks for olfaction.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The advantage in predictive performance for POM vs. Mordred decreases as the dataset becomes less relevant to olfaction (r=0.49, p<0.03).",
+    "claim_type": "EXPLICIT",
+    "source": "The advantage in predictive performance for POM vs. Mordred (i.e. see vertical axis in Figure 1b) decreases as the dataset becomes less relevant to olfaction (r=0.49, p<0.03).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Figure 1\u2014figure supplement 2 shows the correlation between dataset distance and performance advantage.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Hearing and vision sensory systems are tuned to the natural statistics of acoustic and electromagnetic energy on earth.",
+    "claim_type": "EXPLICIT",
+    "source": "Hearing and vision sensory systems are tuned to the natural statistics of acoustic and electromagnetic energy on earth and are evolved to be sensitive in ethologically relevant ranges.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract as established knowledge about sensory systems.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Odorous compounds with similar POM representations are more likely to co-occur within a substance.",
+    "claim_type": "EXPLICIT",
+    "source": "Using this olfactory representation (principal odor map [POM]), we find that odorous compounds with similar POM representations are more likely to co-occur within a substance and be metabolically closely related",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and demonstrated through analysis of essential oils.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The natural statistics of metabolism appear to shape the brain's representation of the olfactory world.",
+    "claim_type": "EXPLICIT",
+    "source": "Just as the brain's visual representations have evolved around the natural statistics of light and shapes, the natural statistics of metabolism appear to shape the brain's representation of the olfactory world.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main conclusion stated in the abstract, supported by the metabolic distance and co-occurrence analyses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Evolution of numerous terrestrial species' olfactory systems has converged to decode a shared and principal set of ethological signals organized by the metabolic processes of nature.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest that evolution of numerous terrestrial species' olfactory systems has converged to decode a shared and principal set of ethological signals organized by the metabolic processes of nature and the natural statistics that emerge from it.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a synthesis of the findings presented throughout the paper.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The olfactory umwelt may be more similar across species than previously appreciated.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we hypothesize that the olfactory umwelt may be more similar across species than previously appreciated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This hypothesis is based on the cross-species predictive power of POM.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Animals that are uniquely able to exploit particular food energy sources might be uniquely adapted to smell metabolic signatures of such sources.",
+    "claim_type": "EXPLICIT",
+    "source": "for example, animals that are uniquely able to exploit particular food energy sources might also be uniquely adapted to smell metabolic signatures of such sources.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is presented as a speculative future direction for research.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Olfaction mediated by trace amine-associated receptors (TAARs) shows the signature of a 'metabolism detector'.",
+    "claim_type": "EXPLICIT",
+    "source": "Mechanistically, olfaction mediated by the trace amine-associated receptors (TAARs; Borowsky et al., 2001; Liberles and Buck, 2006), which detect metabolically downstream products of essential nutrient amino acids, already shows the signature of a 'metabolism detector.'",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to literature on TAARs and their function.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The structure of metabolomes could provide a substrate enabling smooth, separable manifolds to develop in neural activity space.",
+    "claim_type": "EXPLICIT",
+    "source": "Over both evolutionary time and individual learning and development, the structure of metabolomes could also provide a substrate enabling smooth, separable manifolds to develop in neural activity space, a likely requirement for invariant object recognition (DiCarlo et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical inference supported by citation to work on object recognition.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Chee-Ruiter's work hypothesized a link between metabolic organization and odor qualities over 20 years ago.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, Chee-Ruiter's work in the Bower lab hypothesized this link over 20 years ago (Chee-Ruiter, 2000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical citation acknowledging prior work on the metabolism-odor relationship.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Humans exhibit perceptual cross-adaptation to compounds metabolically similar but not structurally similar to cis-jasmone.",
+    "claim_type": "EXPLICIT",
+    "source": "They also showed that humans exhibit perceptual cross-adaptation to compounds metabolically similar (but not otherwise structurally similar) to cis-jasmone, suggesting that the brain's representation of odor similarity is rooted in metabolic similarity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This refers to findings from Chee-Ruiter's prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Individual experiences can modify odor perception and act as an additional organizing force on any olfactory map.",
+    "claim_type": "EXPLICIT",
+    "source": "Certainly, individual experiences can modify odor perception and act as an additional organizing force on any olfactory map.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as established knowledge about olfactory plasticity.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Environmental correlations are learned through experience and many are broadly shared across both individuals and species.",
+    "claim_type": "EXPLICIT",
+    "source": "But environmental correlations are also learned through experience, and many of these are broadly shared across both individuals and species.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about learning and environmental statistics.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "No clear pattern was found in relative predictive performance of the POM as a function of processing stage (from periphery to behavior).",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, we found no clear pattern in relative predictive performance of the POM as a function of processing stage (from periphery to behavior).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the analysis of datasets at different levels of neural processing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The performance of POM improves non-asymptotically as a function of training data size and quality.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we do observe that the performance of POM improves non-asymptotically as a function of training data size and quality (Sanchez-Lengeling et al., 2019); it is thus unclear where the ceiling lies for this approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to prior work on the GNN model.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The GNN model architecture uses two layers of edge-conditioned matrix multiplication with 63 hidden units and GRU updates.",
+    "claim_type": "EXPLICIT",
+    "source": "For the message passing layer, we used two layers of edge-conditioned matrix multiplication with 63 hidden units and GRU (Gated Recurrent Units) updates, on top of a 45-dimensional atom feature initialization.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification from the Methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The GNN model was trained for 150 epochs using Adam optimizer with a decaying learning rate starting from 5e-4.",
+    "claim_type": "EXPLICIT",
+    "source": "To train the model, we optimized the model parameters against a weighted-cross entropy loss in 150 epochs using Adam with a decaying learning rate starting from 5e-4, with a batch size of 128.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification from the Methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "For datasets of size N\u2264200, leave-one-out cross-validation was used for evaluation.",
+    "claim_type": "EXPLICIT",
+    "source": "For datasets of size N\u2264200, we split the data in a leave-one-out fashion where we hold out one molecule at a time for evaluation and train with N\u22121 data points until all molecules have been held out once.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail from the Methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "For larger datasets of size N>200, fivefold cross-validation was performed.",
+    "claim_type": "EXPLICIT",
+    "source": "For larger datasets of size N>200, we perform a fivefold cross validation split of the data instead, and for each split, 100 seeds are used to initiate the model and the training data is resampled with replacement.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail from the Methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The POM distance between molecules is defined as the correlation distance between their embeddings, centered across the population of molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "The POM distance between molecules is defined as the correlation distance between their embeddings, which are centered across the population of molecules (e.g. all sampled odorous metabolite pairs or all compounds in essential oil).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological definition from the Methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Both cFP and POM were projected to a compressed 64 dimensional space via principal components analysis for visualization.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to visualize the metabolic pathways (Figure 3a and b), both the cFP and POM are projected to a compressed 64 dimensional space via principal components analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail explaining the visualization approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "34 unique metabolic pathways with distance ranging from 3 to 13 were extracted from 15 metabolic networks for smoothness analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "To quantify the 'smoothness' of these metabolic pathways (Figure 3d), 34 unique metabolic pathways with distance ranging from 3 to 13 are extracted from the 15 metabolic networks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail from the Methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "63 valid odorous metabolite triplets were found and evaluated for smoothness.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, 63 such valid odorous metabolite triplets are found and evaluated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a data point from the smoothness analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "An odor label is assigned to a molecule if the model predicts a label probability >0.5 for that label.",
+    "claim_type": "EXPLICIT",
+    "source": "An odor label is assigned to the molecule if the model predicts a label probability >0.5 for that label.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail for odor label assignment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "214 molecules co-occur in 303 essential oils according to data from the Pyrfume repository.",
+    "claim_type": "EXPLICIT",
+    "source": "To further validate our hypothesis, we investigated 214 molecules that co-occur in 303 essential oils aggregated in the Pyrfume data repository (Castro et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a data point describing the essential oils dataset.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Co-occurring pairs of molecules in essential oils show a smaller distance in POM compared to non-co-occurring pairs.",
+    "claim_type": "EXPLICIT",
+    "source": "In Figure 4c, we show that co-occurring pairs of molecules in essential oils show a smaller distance in principal odor map (POM) compared to non-co-occurring pairs.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 4\u2014figure supplement 1 using experimental neural response data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Co-occurring pairs of molecules activate animal olfactory systems in a more similar way than non-co-occurring pairs (Student's t-test; p<0.0005 for Carey et al.; p<0.0005 for Hallem and Carlson).",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we plot a similar figure using experimental data for mice and insect neural responses and observe a similar trend: co-occurring pairs of molecules activate animal olfactory systems in a more similar way than do non-co-occurring pairs (Student's t-test; p<0.0005 for Carey et al.; p<0.0005 for Hallem and Carlson; n.s. for Chae et al. for which only 15 pairs of molecules overlapped with the essential oils dataset).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through analysis of neural response data from multiple studies.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The training dataset contains approximately 5000 molecules with 138 odor labels.",
+    "claim_type": "EXPLICIT",
+    "source": "We pre-trained the GNN on the same human olfactory perceptual data as described in Sanchez-Lengeling et al., 2019 and Lee et al., 2022 with 138 odor labels for ~5000 molecules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Methods section describing the training data.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The Dravnieks dataset contains 128 unique molecules with 146 odor descriptor targets.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset (Dravnieks, 1982) contains 128 unique molecules with 146 odor descriptor targets, where each molecule has a perceptual rating for each odor descriptor, which we can use for regression labels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The Keller et al. dataset contains 369 molecules with 21 odor descriptor targets.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset is generated from the data published with the crowd-sourced DREAM Olfaction Prediction Challenge (Keller et al., 2017) where we used the 'gold' dilution (i.e. the one used to score the challenge) to generate the average perceptual rating for 369 molecules over 21 odor descriptor targets such as pleasantness, grass, garlic, sweaty, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The human olfactory receptors dataset includes binary response labels for eight different receptor targets.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset is compiled from the literature and from databases as part of the OdoriFy effort (Gupta et al., 2021), and we use the binary response label for all eight different receptor targets including OR1A1, OR1A2, OR1G1, OR2J2, OR2W1, OR51E1, OR51E2, and OR52D1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "All olfactory datasets were standardized by removing molecules with only a single atom, molecules with atoms other than H, C, N, O, and S, or molecules with molecular weight >500 daltons.",
+    "claim_type": "EXPLICIT",
+    "source": "All olfactory datasets are standardized by removing the following molecules: (1) data points with multiple molecules (i.e. mixtures), (2) molecules with only a single atom, (3) molecules with atoms that are not hydrogen, carbon, nitrogen, oxygen, and sulfur, or (4) molecules with a molecular weight of more than 500 daltons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail describing data preprocessing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Nearly all odorant molecules in the raw datasets passed the standardization filter.",
+    "claim_type": "EXPLICIT",
+    "source": "Nearly all odorant molecules in the raw datasets passed this empirically motivated standardization filter (Mayhew et al., 2022) and are kept in the standardized dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the data preprocessing results.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The model architecture closely follows the implementation of Message Passing Neural Networks.",
+    "claim_type": "EXPLICIT",
+    "source": "The model architecture closely follows the implementation of Message Passing Neural Networks (Gilmer et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification citing the neural network architecture used.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Hyper parameters were selected using a Bayesian optimization algorithm within 100 trials under fivefold cross validation.",
+    "claim_type": "EXPLICIT",
+    "source": "These hyper parameters are selected using a bayesian optimization algorithm within 100 trials under fivefold cross validation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about model training.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The readout layer embeds each atom by collapsing atom features alongside connected bond features into a 152-dimensional embedding.",
+    "claim_type": "EXPLICIT",
+    "source": "For the readout layer, we embedded each atom by collapsing the atom features alongside its connected bond features into a 152-dimensional embedding and generate a graph embedding by summing all of the atom embeddings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification of the model architecture.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The final prediction uses four fully connected layers with decreasing layer size from 1045 to 256.",
+    "claim_type": "EXPLICIT",
+    "source": "For the final prediction, we used four fully connected layers with decreasing layer size from 1045 to 256 before making predictions for each of the 138 odor labels from the activations of the last of those layers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification of the model architecture.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The model was trained with a batch size of 128.",
+    "claim_type": "EXPLICIT",
+    "source": "To train the model, we optimized the model parameters against a weighted-cross entropy loss in 150 epochs using Adam with a decaying learning rate starting from 5e-4, with a batch size of 128.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification of the training procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "AUROC is converted to performance index with (AUROC \u2212 0.5) * 100.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, AUROC can be converted to the performance index with (AUROC \u2212 0.5) * 100, and R2 score can be converted to the performance index by multiplying by 100.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about metric conversion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "R2 score is converted to performance index by multiplying by 100.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, AUROC can be converted to the performance index with (AUROC \u2212 0.5) * 100, and R2 score can be converted to the performance index by multiplying by 100.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about metric conversion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Performance indices are averaged across all seeds and targets.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, performance indices are averaged across all the seeds and targets (in those cases where the dataset contains multiple targets).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about performance calculation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "A hyper parameter scan was performed for random forest models including number of trees, class weight assignment, number of features for splits, and minimum samples for splits/leaves.",
+    "claim_type": "EXPLICIT",
+    "source": "Since the optimal hyper parameters for the model can be different for different representations and datasets, we perform a scan for important hyper parameters for random forest models including number of trees in the forest, different ways to assign weight for each class label, number of features to consider during a split, as well as the minimum number of samples required to split and internal node or construct a leaf node.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about model optimization.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "For Morgan fingerprints, an additional hyper parameter was included to select the optimal dimension of the fingerprints.",
+    "claim_type": "EXPLICIT",
+    "source": "For Morgan fingerprints (cFP and bFP; Morgan, 1965), we include an additional hyper parameter to select for the optimal dimension of the fingerprints.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about fingerprint optimization.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Correlation distance was used as the basis for measuring both neural activity distances and molecular representation distances for the mouse piriform cortical activity dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Following the original analysis for the dataset in Pashkovski et al., 2020, we used correlation distance as the basis for measuring both neural activity distances and molecular representation (e.g. POM or Dragon; Mauri et al., 2006) distances for each molecule pair, after centering the values per-neuron or per-feature dimension.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about distance calculation for a specific dataset.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Pearson correlations were used to measure how well each representation captured neural activity distances in different experimental conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Pearson correlations were then used to measure how well each representation captured the neural activity distances observed in different experimental conditions (representing various parts of the brain and different sets of probes).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about performance evaluation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The performance index for the mouse piriform cortical activity dataset was calculated by averaging and rescaling correlations across each experimental condition.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance index is then calculated by averaging and rescaling these latter correlations across each experimental condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about metric calculation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The activity for each odorant and neuron pair in the Pashkovski et al. dataset was computed from raw time-series response curves.",
+    "claim_type": "EXPLICIT",
+    "source": "The activity for each odorant and neuron pair is computed from the original raw time-series response curve kindly provided by the authors of a mouse piriform cortical activity dataset (Pashkovski et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about data processing.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "A response was considered elicited if the max response value within 30 frames after odor onset was larger than \u03bc+3*\u03c3.",
+    "claim_type": "EXPLICIT",
+    "source": "A response is elicited for the trial if the max response value within 30 frames after the onset is larger than \u03bc+3 * \u03c3.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about response detection criteria.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The activity for each odorant and neuron pair was represented as the average elicitation rate across multiple trials.",
+    "claim_type": "EXPLICIT",
+    "source": "The activity for each odorant and neuron pair is represented as the average elicitation rate across multiple trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about activity calculation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "For the Chae et al. dataset, dF/F values were median-subtracted such that zero represented a typical baseline response.",
+    "claim_type": "EXPLICIT",
+    "source": "The activity for each odorant and neuron pair for this dataset (Chae et al., 2019) is computed from the dF/F values provided in the curated Pyrfume entry (Castro et al., 2022). Each was median-subtracted, such that zero represented a typical baseline response (signal is sparse), and odor-evoked signals were identified with negative dF/F and odor-evoked signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about data normalization.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The normalized score for the Chae et al. dataset was computed from odor-evoked signals divided by their mean-squared-deviation from zero signal.",
+    "claim_type": "EXPLICIT",
+    "source": "The normalized score was computed from these odor-evoked signals divided by their mean-squared-deviation from zero signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about score calculation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The MacWilliam et al. dataset measures attraction and aversion with a preference index between -1 and 1 for around 60 compounds.",
+    "claim_type": "EXPLICIT",
+    "source": "MacWilliam et al., 2018 The authors perform a behavioral experiment with Drosophila using the T-maze assay. They measure the attraction and aversion with a preference index between \u20131 and 1 for around 60 compounds, as shown in Figure 5 of their paper.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "In the MacWilliam et al. dataset, a compound is considered positive if it can elicit strong attraction (>0.25) or strong aversion (<-0.5).",
+    "claim_type": "EXPLICIT",
+    "source": "The wild-type preference index for each compound is extracted, and the dataset is represented as a binary classification task, where a compound is considered positive if it can elicit a strong attraction (>0.25) or a strong aversion (<\u22120.5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about data labeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The Xu et al. dataset measures odorant-elicited in vitro electrophysiological current response for CquiOR136 in Culex quinquefasciatus for around 200 compounds.",
+    "claim_type": "EXPLICIT",
+    "source": "Xu et al., 2014 The authors measure the odorant-elicited in vitro electrophysiological current response for CquiOR136 in the southern house mosquito, Culex quinquefasciatus. The authors measured this response for around 200 compounds as listed in experimental procedures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "In the Wei et al. mosquito repellency dataset, 38 molecules were selected from a fragrance catalog and tested with a mosquito feeder assay.",
+    "claim_type": "EXPLICIT",
+    "source": "Wei et al., 2022 As part of a mosquito repellency dataset (Wei et al., 2022), 38 molecules were selected from a fragrance catalog, and their repellency was tested with a mosquito feeder assay: the fragrance molecules are coated on the membrane of a nano feeder containing 100 \u00b5l of blood meal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "In the Wei et al. dataset, a compound is assigned a positive label if more than 90% repellency is observed.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset is formulated as a binary classification task, where a compound is assigned a positive label if more than 90% repellency is observed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about data labeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The Missbach et al. dataset includes single sensillum recordings for various types of OSNs in four different species.",
+    "claim_type": "EXPLICIT",
+    "source": "Missbach et al., 2014 The authors perform single sensillum recordings for various types of olfactory sensory neurons (OSNs) in four different species including wingless bristletail, Lepismachilis y-signata, firebrat, Thermobia domestica, neopteran leaf insect, Phyllium siccifolium, and fruit fly, Drosophila melanogaster.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "In the Missbach et al. dataset, a compound is labeled as positive for a specific OSN target if the average elicited firing rate is 50% higher than baseline.",
+    "claim_type": "EXPLICIT",
+    "source": "The spike count data is compiled for each species from Figure 3 of the paper and formulated as a classification task where a compound is labeled as positive for a specific OSN target if the average elicited firing rate is 50% higher than the baseline firing rate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about data labeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The del M\u00e1rmol et al. dataset measures odorant-elicited response for olfactory receptors MhOR1 and MhOR5 from the jumping bristletail Machilis hrabei.",
+    "claim_type": "EXPLICIT",
+    "source": "Del M\u00e1rmol et al., 2021 The authors measure the odorant-elicited response for olfactory receptors MhOR1 and MhOR5 from the jumping bristletail, Machilis hrabei.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "In the del M\u00e1rmol et al. dataset, an activity index was computed based on log(EC50) and maximal response.",
+    "claim_type": "EXPLICIT",
+    "source": "An activity index is then computed for a panel of odorants based on the log(EC50) and the maximal response.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about activity calculation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The Carey et al. dataset expresses various olfactory receptors for Anopheles gambiae in 'empty neurons' and measures ORN responses.",
+    "claim_type": "EXPLICIT",
+    "source": "Carey et al., 2010 The authors express various olfactory receptors for malaria mosquito Anopheles gambiae in 'empty neurons' and measure the olfactory receptor neurons (ORNs) responses as a consequence of odorant stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The Hallem and Carlson dataset performs a similar assay to Carey et al. but with olfactory receptors in Drosophila.",
+    "claim_type": "EXPLICIT",
+    "source": "Hallem and Carlson, 2006 The authors perform a similar assay as Carey et al., 2010 but with olfactory receptors in Drosophila.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The Oliferenko et al. dataset measures Aedes aegypti repellency for about 90 molecules as minimum effective dosage (MED).",
+    "claim_type": "EXPLICIT",
+    "source": "Oliferenko et al., 2013 The authors measure the Aedes aegypti repellency for about 90 molecules as the minimum effective dosage (MED).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of one of the datasets used in the meta-analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "In the Oliferenko et al. dataset, compounds with an observed MED of less than 0.15 \u00b5mol/cm2 are considered active.",
+    "claim_type": "EXPLICIT",
+    "source": "Following the same threshold as the original paper, this dataset is casted as a binary classification task where compounds with an observed MED of less than 0.15 \u00b5mol/cm2 are considered active.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about data labeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Five diverse non-olfaction related tasks were selected from MoleculeNet including electronic properties, binding affinity, water solubility, hydration free energy, and adverse drug reactions.",
+    "claim_type": "EXPLICIT",
+    "source": "From MoleculeNet (Wu et al., 2018), five diverse tasks are selected as non-olfaction related molecular properties, including electronic properties (QM7 Rupp et al., 2012; Blum and Reymond, 2009), binding affinity with BACE-1 protein (BACE Subramanian et al., 2016), water solubility (ESOL Delaney, 2004), hydration free energy (FreeSolv Mobley and Guthrie, 2014), and adverse drug reaction (SIDER Kuhn et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the non-olfaction datasets used for comparison.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Five large human GPCR targets were pulled from GPCRdb including 5GT1A, CNR2, DRD2, GHSR, and OPRK.",
+    "claim_type": "EXPLICIT",
+    "source": "Five large human GPCR targets are pulled from GPCRdb (Kooistra et al., 2021) including 5GT1A (serotonin receptor 1a), CNR2 (cannabinoid receptor 2), DRD2 (dopamine receptor 2), GHSR (ghrelin receptor), and OPRK (opioid receptor kappa).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the enteric GPCR datasets used for comparison.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "For the GPCR binding dataset, the average binding score from multiple sources was used as the regression label for each target.",
+    "claim_type": "EXPLICIT",
+    "source": "Since GPCRdb contains the binding affinities collated from multiple sources, we use the average binding score as our regression label for each target.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about data processing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Tanimoto distance is computed using RDKit based on bit-based fingerprints.",
+    "claim_type": "EXPLICIT",
+    "source": "Tanimoto distance (Bajusz et al., 2015) is computed using RDKit (The RDKit Documentation, 2019) based on bit-based fingerprints.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about distance calculation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "cFP edit distance is defined as the L1 distance between count-based fingerprints.",
+    "claim_type": "EXPLICIT",
+    "source": "cFP edit distance between two molecules approximates the absolute difference between their structures and is defined as the L1 distance between their cFPs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about distance calculation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The first two dimensions of PCA projections explain more than 80% of the variance in both cFP and POM representations.",
+    "claim_type": "EXPLICIT",
+    "source": "Explaining more than 80% of the variance in both representations, the first two dimensions of the PCA (principal components analysis) projections are then used to visualize the trajectory of these pathways in cFP vs. POM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about dimensionality reduction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Smoothness for interpolating a metabolite B in pathway A->B->D is defined as d(A,D)/(d[A,B]+d[B,D]).",
+    "claim_type": "EXPLICIT",
+    "source": "The smoothness for interpolating B can be defined as d(A, D)/(d[A, B]+d[B, D]), where d is the euclidean distance between the 64 dimensional PCA projection of cFP or POM (Figure 3c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a methodological definition of the smoothness metric.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Common odor labels for molecule pairs are predicted by a state-of-the-art model with label probability >0.5.",
+    "claim_type": "EXPLICIT",
+    "source": "The common scents for molecule pairs listed in Figure 2d and Figure 4d are predicted by a state of the art model (Sanchez-Lengeling et al., 2019). An odor label is assigned to the molecule if the model predicts a label probability >0.5 for that label.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about odor label prediction.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Multiple odor labels are possible for each molecule.",
+    "claim_type": "EXPLICIT",
+    "source": "Multiple labels are possible for each molecule.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about odor label assignment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

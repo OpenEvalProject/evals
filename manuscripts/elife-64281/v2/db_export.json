@@ -1,0 +1,2332 @@
+{
+  "submission": {
+    "id": "7548b681-f6f0-46ea-a180-8e7366735523",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:42:04.837071Z",
+    "updated_at": "2025-12-03T01:42:04.837071Z"
+  },
+  "content": [
+    {
+      "id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "submission_id": "7548b681-f6f0-46ea-a180-8e7366735523",
+      "content_type": "manuscript",
+      "content_text": "# High-resolution mapping of the neutralizing and binding specificities of polyclonal sera post-HIV Env trimer vaccination\n\n## Authors\n\n- Adam S Dingens<sup>1</sup> ([ORCID: 0000-0001-9603-9409](https://orcid.org/0000-0001-9603-9409)) \u2020\n- Payal Pratap<sup>2</sup> ([ORCID: 0000-0002-7170-6866](https://orcid.org/0000-0002-7170-6866))\n- Keara Malone<sup>1</sup>\n- Sarah K Hilton<sup>1</sup>\n- Thomas Ketas<sup>3</sup>\n- Christopher A Cottrell<sup>2</sup>\n- Julie Overbaugh<sup>4</sup> ([ORCID: 0000-0002-0239-9444](https://orcid.org/0000-0002-0239-9444))\n- John P Moore<sup>3</sup>\n- PJ Klasse<sup>3</sup> ([ORCID: 0000-0001-8222-278X](https://orcid.org/0000-0001-8222-278X))\n- Andrew B Ward<sup>2</sup> ([ORCID: 0000-0001-7153-3769](https://orcid.org/0000-0001-7153-3769))\n- Jesse D Bloom<sup>1</sup> ([ORCID: 0000-0003-1267-3408](https://orcid.org/0000-0003-1267-3408)) \u2020\n\n### Affiliations\n\n1. Basic Sciences Division and Computational Biology Program, Fred Hutchinson Cancer Research Center Seattle United States\n2. Department of Integrative Structural and Computational Biology, The Scripps Research Institute La Jolla United States\n3. Department of Microbiology and Immunology, Weill Cornell Medical College New York United States\n4. Human Biology Division, Fred Hutchinson Cancer Research Center Seattle United States\n5. Howard Hughes Medical Institute Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMapping polyclonal serum responses is critical to rational vaccine design. However, most high-resolution mapping approaches involve isolating and characterizing individual antibodies, which incompletely defines the polyclonal response. Here we use two complementary approaches to directly map the specificities of the neutralizing and binding antibodies of polyclonal anti-HIV-1 sera from rabbits immunized with BG505 Env SOSIP trimers. We used mutational antigenic profiling to determine how all mutations in Env affected viral neutralization and electron microscopy polyclonal epitope mapping (EMPEM) to directly visualize serum Fabs bound to Env trimers. The dominant neutralizing specificities were generally only a subset of the more diverse binding specificities. Additional differences between binding and neutralization reflected antigenicity differences between virus and soluble Env trimer. Furthermore, we refined residue-level epitope specificity directly from sera, revealing subtle differences across sera. Together, mutational antigenic profiling and EMPEM yield a holistic view of the binding and neutralizing specificity of polyclonal sera.\n\n## Introduction\n\nMapping polyclonal antibody responses is central to understanding antigen-specific humoral immunity. However, it is difficult to disentangle the multiple epitope specificities within polyclonal responses. Often, serum neutralization assays or ELISAs with variant antigens are used to crudely map epitope specificities. But these and other traditional serological mapping approaches do not provide high-resolution, residue-level information for the multiple components of polyclonal serum responses. Cloning and characterizing many individual monoclonal antibodies (Scheid et al., 2009) have revolutionized our understanding of serum responses, but antibody cloning can be biased by the isolation strategy, is not proportional to antibody serum abundance or potency, and fails to characterize the entirety of the serum neutralization response. Further advances in understanding polyclonal sera have been made through techniques that rely on high-throughput B-cell receptor sequencing (Kreer et al., 2020), mass spectrometry-based approaches to directly sequence antibody proteins (Lavinder et al., 2014; Wine et al., 2013), or decomposing bulk serum-level measurements (Ackerman et al., 2017; Chung et al., 2015; Georgiev et al., 2013).\n\nOnly recently have techniques been developed that directly measure the antibody specificity in polyclonal sera. The first of these techniques, electron microscopy polyclonal epitope mapping\u00a0(EMPEM), directly images serum Fabs bound to an antigen of interest (Barnes et al., 2020; Bianchi et al., 2018; Boyoglu-Barnum et al., 2020). However, this approach characterizes the binding response, whereas it is the neutralizing antibody response that is most directly correlated with vaccine protection. Here we combine EMPEM with a second complementary technique, mutational antigenic profiling (Dingens et al., 2017), that quantifies the effect of all single amino-acid mutations to a viral entry protein on escape from serum neutralization.\n\nFor the purpose of this study, we mapped polyclonal anti-HIV antibody responses elicited with stabilized recombinant SOSIP Env trimers. These trimers have been used extensively as immunogens because they recapitulate the native or near-native structure of Env on the virus surface (Julien et al., 2013; Lyumkis et al., 2013; Pancera et al., 2014; Sanders et al., 2013; Sanders and Moore, 2017). In general, immunizing animals with prototypical SOSIP trimer variants based on the BG505 strain (Wu et al., 2006) induces autologous, tier-2 neutralizing antibody responses (de Taeye et al., 2015; Klasse et al., 2016; Sanders et al., 2015; Torrents de la Pe\u00f1a et al., 2018, Torrents de la Pe\u00f1a et al., 2017). While such immunizations can protect against infection of simian\u2013human immunodeficiency virus, bearing the matched BG505 Env in macaques (Pauthner et al., 2017; Pauthner et al., 2019), heterologous breadth has not been consistently achieved. This lack of breadth highlights the need to understand the targets of vaccine-elicited neutralizing antibodies and re-focus responses to more broadly conserved epitopes.\n\nPrior mapping of SOSIP trimer-induced antibody responses in animal models has revealed viral strain- and species-specific hierarchical responses, with BG505 trimer immunogenicity in rabbits serving as a well-characterized model system. BG505-induced rabbit neutralizing antibodies predominantly target a BG505-specific glycan hole (GH) in Env\u2019s glycan shield, centered on the broadly conserved glycosylation sites at residues 241 and 289 that are missing in BG505. Reintroducing glycans back in at these sites eliminates much of the neutralizing activity in many rabbit serum responses (Klasse et al., 2018; Klasse et al., 2016) and mAbs isolated from immunized rabbits target this immunodominant GH (McCoy et al., 2016). Serum neutralization assays with large panels of pseudovirus point mutants identified a second frequently immunogenic site in rabbits as the C3/V5 epitope (previously termed C3/465), as well as a less immunodominant and less commonly targeted epitope in V1 (Klasse et al., 2018). These rabbit immunogenicity data were largely corroborated using EMPEM to directly visualize serum Fabs bound to BG505 trimer bait (Bianchi et al., 2018). In SOSIP trimer-vaccinated guinea pigs and non-human primates, antibody cloning or EMPEM has identified additional strain-specific responses to the C3/V4, C3/V5, V1, and gp120/gp41 interface regions (Cottrell et al., 2020; Lei et al., 2019; Nogal et al., 2020; Nogal et al., 2019). Additionally, trimer immunization often elicits non-neutralizing responses to the base of the trimer, a neo-epitope exposed on soluble trimers but inaccessible on viral membrane-bound Env (Bianchi et al., 2018; Cottrell et al., 2020; Hu et al., 2015; Kulp et al., 2017). Ongoing clinical trials will evaluate the immunogenicity of BG505 SOSIP trimer variants in humans (ClinicalTrials.gov Identifiers: NCT03699241, NCT04177355, and NCT03783130).\n\nBelow, we use mutational antigenic profiling to directly map the dominant neutralizing antibody specificities present within a panel of polyclonal sera from rabbits immunized the BG505 SOSIP trimer variants. In parallel, we map the binding specificities of these sera using EMPEM, providing a holistic view of both serum binding and neutralization.\n\n## Results\n\n### Rabbit sera panel\n\nWe chose a small panel of rabbit sera to optimize mutational antigenic profiling of polyclonal sera. We used sera from rabbits sequentially vaccinated with BG505 SOSIP trimer variants: either BG505 SOSIP.664, which contains the T332N mutation (Sanders et al., 2013), or the further stabilized BG505 SOSIP.V4.1 (de Taeye et al., 2015), each administered either three or four times. Details of the immunization schemes and characterization of some of these rabbits\u2019 sera responses at earlier time\u00a0points have been reported previously (Klasse et al., 2018; Klasse et al., 2016; Ringe et al., 2019; Ringe et al., 2017). We chose serum samples with various specificities, including sera that predominantly target the 241/289 GH or C3/V5 epitopes alone, both of these epitopes, or neither of these epitopes. To identify such sera, we performed preliminary TZM-bl neutralization assay mapping using pseudoviruses bearing mutations that affect each of these epitopes, as well as the V1 epitope rarely targeted in rabbits. The resulting sera panel and associated preliminary mapping data are shown in Figure 1A. These sera do not represent an unbiased collection of rabbit immune responses, but rather a curated selection of potent responses with different specificities.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig1-v2.jpg)\n\n**Figure 1.:** (A) Preliminary point-mutant mapping of the BG505-trimer-vaccinated sera panel. The sera dilution that inhibits 50% of virus entry (ID50), maximum neutralization percentage plateau (MNP), and fold change in ID50 values of wild\u00a0type relative to mutant pseudoviruses (WT/Mut ID50) are shown for the parental BG505.T332N and pseudoviruses bearing insertion (V1 epitope) and glycan knock in mutation(s) (GH and C3/V5 epitopes). The weeks (Wk) post-initial vaccination of the serum sample is specified in each sera\u2019s name; sera are subsequently referred to by only their four-digit ID number. (B) Experimental schematic of mutational antigenic profiling. (C) Experimental schematic of EMPEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The Library is the stock of independently passaged mutant virus library used in each experiment. The percentage of the mutant virus library that successfully entered cells after serum selection (% Infectivity) was measured using qPCR standard curves. The correlation matrix shows the Pearson\u2019s r correlation coefficient of the positive site differential selection values between replicates.\n\n### Mutational antigenic profiling of rabbit sera\n\nWe performed mutational antigenic profiling (Dingens et al., 2017) of each serum using libraries of replication-competent HIV virions expressing all mutants of the BG505.T332N Env (Haddox et al., 2018), allowing us to map autologous responses to the strain-matched BG505 trimer immunogen. Briefly, this approach (Figure 1B) first involves generating libraries of mutant viruses containing all single amino-acid mutations to Env compatible with viral replication. Each mutant virus library is then incubated with a highly selective concentration of sera before infecting a T-cell line such that only viruses that escape neutralization can enter cells. In our experiments, we chose serum concentrations to keep the average level of selection exerted by each serum relatively constant; across all replicates, between 0.02% and 9.27% of the library escaped neutralization, with the across-replicate averages for each serum ranging from 0.3% and 2.7% (Figure 1\u2014figure supplement 1). The frequency of each mutation among viruses that are able to escape neutralization is quantified by Illumina sequencing of the viral cDNA produced in infected cells. Comparing the relative frequency of each mutation in the sera-selected condition to a non-selected control condition quantifies the effect of each mutation on resistance to sera neutralization (Figure 1B). As an additional control, we also incubated viral libraries with pre-vaccine sera for each rabbit. Figure 1\u2014figure supplement 1 details the serum dilutions, the number of replicates (three to six per post-immunization sera; median values are reported throughout), and the level of neutralization achieved by each serum in each experiment. Median mutation differential selection values across all experimental replicates for a given serum are presented throughout (see Figure 1\u2014figure supplement 1 for replicate-to-replicate correlations).\n\nThe Env mutations that affect neutralization by each serum are plotted in Figure 2. The results are largely concordant with prior knowledge on BG505 trimer immunogenicity in rabbits, with each serum targeting one or both of the C3/V5 or GH epitopes, which are indicated by blue and green, respectively, in Figure 2. Additionally, the antigenic profiling largely agrees with the crude epitope specificities mapped using a small panel of pseudovirus point mutants (Figure 1A, with mutations tested in preliminary TZM-bl assays plotted in black in Figure 2B). Notably, most sera select neutralization-escape mutations in the C3/V5 epitope to some extent, including sera from rabbit 2124, which appeared to predominantly target the GH based on the preliminary point-mutant mapping (Figure 1A). Figure 2 is just one approach to visualizing these complex datasets; to facilitate more flexible data exploration, antigenic profiling data for each sera can be interactively explored in dms-view (Hilton et al., 2020) by visiting https://jbloomlab.github.io/Vacc_Rabbit_Sera_MAP/. This interactive visualization reduces potential interpretation and presentation biases by allowing users to examine the extent of neutralization-escape by mutations at any site and projecting the mutations onto interactive structures of the Env trimer or monomer.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig2-v2.jpg)\n\n**Figure 2.:** (A) Line plots showing the positive site differential selection for each serum across the Env ectodomain. Differential selection is a measure of the enrichment of mutations in the sera-selected conditions relative to a no-sera control (see Materials\u00a0and\u00a0methods for details). (B) Differential selection for each mutation at key sites (indicated with orange underlines in (A)). The height of each letter is proportional to the differential selection for that amino-acid mutation. The GH epitope is colored green, and the C3/V5 epitope is colored blue. Mutations tested during preliminary point-mutant mapping are colored black (Figure 1A; all mutations that add a tested glycan are indicated). For both (A) and (B), the y-axis is scaled to the maximal effect size site for each sera; sera without a single dominant region of escape (2243 and 2214) are plotted such that 90% of the site-level signal is at\u00a0<20% of\u00a0the y-axis maximum. (C) The positive site differential selection is mapped onto the BG505 trimer (PDB: 5FYL). The color scheme is right censored at 15 to visualize subdominant responses; for samples with a maximum selection less than 15, the maximum value is mapped to most red color. An interactive version of these visualizations is at https://jbloomlab.github.io/Vacc_Rabbit_Sera_MAP/. Raw numerical values and logo\u00a0plots for the entire Env ectodomain are in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data are plotted as in Figure 2A,B for each, but with mutations colored according to their biochemical property rather than epitope.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Data are plotted as in Figure 2A,B for each, but with mutations colored according to their biochemical property rather than epitope.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Data are plotted as in Figure 2A,B for each, but with mutations colored according to their biochemical property rather than epitope.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Data are plotted as in Figure 2A,B for each, but with mutations colored according to their biochemical property rather than epitope.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Data are plotted as in Figure 2A,B for each, but with mutations colored according to their biochemical property rather than epitope.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Data are plotted as in Figure 2A,B for each, but with mutations colored according to their biochemical property rather than epitope.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** (A) The fold enrichment in mutational antigenic profiling and the fold change in ID50 relative to wild\u00a0type and maximum neutralization plateau (MNP) from TZM-bl neutralization assays for the maximal effect mutant at the maximal effect site. The color scheme is as in Figure 1A.\u00a0(B) Correlation between fold change ID50 relative to wild\u00a0type in TZM-bl neutralization assays and the fold enrichment in mutational antigenic profiling. The Pearson\u2019s correlation coefficient is shown.\n\nWe hypothesized that sera with a few dominant sites of escape (e.g., serum 5724 in Figure 2) had neutralizing activity that was strongly focused on one epitope of Env, whereas sera with smaller-effect escape mutations to multiple regions (e.g., serum 2214 in Figure 2) had neutralizing responses that targeted multiple distinct epitopes. To explore this hypothesis, we tested if the small effect sizes observed in mutational antigenic profiling for some sera accurately reflect the effect of mutations in TZM-bl neutralization assays. We identified the most selected mutation at the most selected site for each serum, generated pseudoviruses bearing these mutations, and tested them in serum neutralization assays. The fold enrichment in mutational antigenic profiling was well correlated with the fold change in ID50 in the neutralization assays (Figure 2\u2014figure supplement 7, Pearson\u2019s r = 0.97, p value = 0.0011 from a two-tailed Pearson correlation test). For example, the 5724 escape profile is focused entirely on the C3/V5 epitope: T464H is enriched ~190-fold in this serum\u2019s mutational antigenic profiling and shifts the ID50 64-fold in a TZM-bl neutralization assay (Figure 2\u2014figure supplement 7). In contrast, 2423 targets both the C3/V5 and GH epitopes (Figure 2), and the maximal effect mutant N356K has just a \u22482-fold effect in both mutational antigenic profiling and neutralization assays (Figure 2\u2014figure supplement 7). A caveat is that the extent of mutant enrichment upon serum selection is also influenced by the serum dilution used in experiments, as shown in Figure 2\u2014figure supplement 1\u20136. However, the good correlation of the extent of focusing in the escape-mutation mapping and the TZM-bl neutralization assays suggests the mutational antigenic profiling data captures the amount of focusing in the neutralization response reasonably well.\n\n### Contrasting the neutralizing and binding specificities of the polyclonal sera\n\nTo contrast the serum neutralization specificities described above with the serum binding specificities, we performed EMPEM on the same set of sera to directly visualize antibody binding to Env (Figure 1C). We reasoned that collecting both types of data would enable us to compare and contrast the sites where antibodies bind to the sites where mutations mediate escape from neutralization. Figure 3 presents the \ufeffrefined 3D reconstructions from negative stain electron microscopy of serum Fabs bound to immunogen-matched BG505 SOSIP trimer alongside mutational antigenic profiling data. Across all sera, it is immediately clear that the binding responses identified by EMPEM include many epitopes where mutations do not affect viral neutralization. For five of six sera, binding responses to both the GH and C3/V5 epitopes are observed. All sera contain additional binding responses to other epitopes. For example, even 5724, where we observe narrow, strongly focused viral escape in just the C3/V5 epitope, contains numerous additional binding responses, including the GH, N611 glycan, base-of-trimer, and V1/V3 epitopes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig3-v2.jpg)\n\n**Figure 3.:** (A) \ufeffRefined 3D reconstructions from negative stain EMPEM. Specificities are mapped onto the Env trimer structure, with epitopes colored as in (C). (B) Mutational antigenic profiling data mapped onto the BG505 SOSIP Env structure, as in Figure 2C, represented here to contrast with EMPEM. (C) Summary data from (A) and (B), as well as validation TZM-bl neutralization assay point-mutant mapping of single and double epitope knock out mutations (see Figure 3\u2014figure supplement 1 for details). A checkmark (EMPEM and MAP) indicates a response was detected to that epitope, and TZM-bl responses were summarized as \u2018Dominant\u2019, \u2018Subdominant\u2019, or undetected (left blank) based on data in Figure 3\u2014figure supplement 1. We did not perform neutralization assay validation at epitopes where the discrepancies between the EMPEM and mutational antigenic profiling are easily explained by antigenicity differences between soluble trimer and virus (N611, base, and gp120 interface; labeled as \u2018Not tested\u2019).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Mutations are colored according to epitope, as in Figure 3. The standard deviation of replicate measures is shown in parentheses. Mutants labeled with an (*) are from the preliminary point-mutant mapping in Figure 1A; these experiments were performed in a different lab than the remainder of TZM-bl point-mutant mapping. While fold change in ID50 was always compared to a wild-type virus ran in parallel in independent labs, results across labs should only be interpreted generally (as presented in Figure 3C).\n\nSome of the differences in binding vs neutralization-escape are easily explained by antigenicity differences between stabilized Env trimers and replication-competent virus. First, while the base-of-trimer epitope is presented on recombinant trimers and commonly elicited by trimer immunization (Bianchi et al., 2018; Cottrell et al., 2020; Hu et al., 2015), it is inaccessible in the replication-competent virus and hence does not elicit neutralizing antibodies. Therefore, base-binding responses are observed in all sera, but of course are not mapped as neutralizing epitopes. Second, binding responses to the N611 glycan region are also observed in all sera (Figure 3), but we do not observe viral escape by disrupting this glycosylation motif (Figure 2). It has been previously shown that site N611 is less glycosylated in BG505 SOSIP trimers than in virus, which enhances the immunogenicity of the exposed region when this glycan is missing (Derking et al., 2020). Accordingly, EMPEM identified binding responses to this region using the immunogen-matched trimer bait, while neutralizing responses are not apparent in mutational antigenic profiling because the virus libraries are likely to have higher glycan occupancy at N611. Third, gp120 interface responses are observed in two sera; both of these rabbits were immunized with BG505 SOSIP.v4 trimers. This gp120 interface epitope includes the A316W stabilizing mutation added to the SOSIP.v4 to reduce the exposure of the V3 loop (de Taeye et al., 2015). We have recently found that the A316W mutation alters immunogenicity to this region, eliciting mutation-specific responses to this region that would not cross-react with the A316-bearing viral libraries (manuscript in preparation). Together, these trimer-binding but non-neutralizing responses to the base, N611 glycan, and gp120 interface reflect and expand on previously characterized antigenic differences between Env trimers to Env on the surface of virus (Bianchi et al., 2018; Cottrell et al., 2020; Derking et al., 2020; Hu et al., 2015).\n\nThe few remaining differences in binding and neutralization could reflect a number of factors. Some binding responses may be non-neutralizing, although it is often assumed that antibodies that bind native Env present on the virus \u2013 mimicked by stabilized Env trimers \u2013 are neutralizing (Burton et al., 2000; Yang et al., 2006). Alternatively, at the serum concentrations we tested, the antibody occupancy on the virions or the binding kinetics may disfavor neutralization. Furthermore, some observed binding responses may be neutralizing but at such subdominant levels that they do not exert selective pressure in the mutational antigenic profiling at the serum concentrations tested. Alternatively, some epitopes may require saturation in order to be neutralizing and did not reach these saturating levels at the serum concentrations tested in mutational antigenic profiling.\n\nTo investigate these hypotheses, we tested each sera\u2019s ability to neutralize pseudovirus point mutants bearing mutations to one or both of the C3/V5 and GH epitopes (Figure 3\u2014figure supplement 1 and summarized in Figure 3C). Comparing the effect of single epitope mutations to multiple epitope mutations can help define the relative dominance of different neutralizing specificities (Klasse et al., 2018). A caveat is that neutralization assays for different sets of mutants were performed in two different laboratories; we therefore only present general interpretations in Figure 3C. For both 5724 and 2425, single or multiple glycan knock in mutations to the GH epitope had negligible effects, while single or multiple glycan knock in mutations to the C3/V5 epitope had large effects (Figure 3\u2014figure supplement 1). For these two sera, knocking in a glycan to each epitope (S241N + I358T) did not have much larger effects than the single C3 glycan knock in (I358T), suggesting these sera have limited GH neutralizing responses even after eliminating some of the C3/V5 directed neutralizing response. While this matches the mutational antigenic profiling, binding GH responses are observed in these sera (Figure 3A). This suggests that these GH responses are either non-neutralizing or much less dominant than the C3/V5 neutralizing antibody responses. Of note, while the resolution of the negative stain EMPEM in this present study limits fine epitope interpretations, GH binding responses (specifically \u2018GH2\u2019-like responses) have previously been identified in non-neutralizing sera using cryo-EMPEM (Bianchi et al., 2018).\n\nWhen the effect of a mutation to one (e.g., epitope A) is apparent when another epitope (e.g., epitope B) is knocked out, but not when testing the epitope A mutation alone, we can interpret the neutralizing antibody response to epitope A as being \u2018subdominant\u2019 relative to the epitope B response. Here, 5727, 2124, 2214, and 2423 all displayed a greater effect for the double epitope glycan knock in mutations (S241N + I358T) than either of the single epitope knock in mutations. Comparing the effects of the single and double epitope mutations suggests sera 2423 had relatively equivalent neutralizing responses to both the GH and C3/V5 epitopes, sera 2124 and 2214 had a dominant response to GH and a subdominant response to C3/V5, and sera 5727 had a dominant response to C3/V5 and a subdominant response to GH (Figure 3, Figure 3\u2014figure supplement 1). EMPEM identified binding responses to both epitopes in three of four of these sera, while mutational antigenic profiling identified neutralizing responses to both epitopes in only two of four sera\u00a0(Figure 3).\n\nSince there were a number of instances in which subdominant neutralizing responses to the GH or C3/V5 epitope identified with TZM-bl point-mutant mapping did not appear in either EMPEM or mutational antigenic profiling (e.g., GH response for 5727 is absent in mutational antigenic profiling, and a C3/V5 response for 2214 is absent in EMPEM), we examined if there were additional unobserved subdominant responses. We focused on the effect of insertion mutations to V1, an epitope occasionally targeted in rabbits (Klasse et al., 2018). We tested sera for neutralization of V1 and V1 + GH epitope mutants and compared effects to GH mutations alone. While V1 insertions alone did not affect neutralization of any sera, they had an additional effect when tested with GH mutations relative to GH mutations alone (Figure 3\u2014figure supplement 1). This suggests that there are subdominant neutralizing antibody responses to V1 in all sera \u2013 though we cannot rule out that the V1 + GH double mutants broadly affect antigenicity. Mutational antigenic profiling did not clearly identify any V1 responses, while EMPEM identified a V1/V3 binding response \u2013 which overlaps the V1 insertion mutations \u2013 in one serum (5724, Figure 3).\n\n### Residue-level refinement of sera epitopes\n\nThe mutational antigenic profiling data also allows for residue-level refinement of the dominant targets of the neutralizing antibody response. For example, it is immediately apparent that the clustered, surface-exposed sites 464 and 356 and/or 358 \u2018anchor\u2019 the C3/V5 epitope, with many mutations at these sites having large effects for nearly all sera that strongly target this epitope (Figure 4). However, detailed epitope specificity at other C3/V5 sites varies across rabbits: some sera are more focused on various regions of C3, including sites 350 and 351 (e.g., sera 5727, 2423, 2124) or 354\u2013357 (e.g., sera 5727, 2423, 2124, 2425), whereas serum 5724 is more narrowly focused on the V5 region previously identified by knocking in a glycan at site 465. Notably, site 396 bridges these two epitope regions in both linear sequence and structural space and is a site of escape for most sera.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig4-v2.jpg)\n\n**Figure 4.:** (A) Differential selection is plotted in logo plots for the C3/V5 epitope, as in Figure 1B. Mutations validated in TZM-bl neutralization assays (C) are colored black. The y-axis is scaled to the largest effect size site. (B) The positive site differential selection is mapped onto the BG505 trimer (PDB: 5FYL), colored as in Figure 1C. Sites shown in (A) are shown with spheres in (B). These data can be explored interactively using dms-view at https://jbloomlab.github.io/Vacc_Rabbit_Sera_MAP/. (C) The fold change in ID50 relative to wild\u00a0type and the maximum neutralization plateau (MNP) for each mutant validated in a pseudovirus TZM-bl neutralization assay. The table color scheme is as in Figure 1A, and the standard deviation of replicate measures are shown in parentheses. See Figure 4\u2014figure supplement 1 for the single sera with relatively less targeting of this epitope.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig4-figsupp1-v2.jpg)\n\nWe validated this residue-level specificity using TZM-bl neutralization assays (Figure 4). For example, mutations to sites 350, 351, 355, and 356 have very little effect on 5724, while mutations to 358 and 464 have large effects. Similarly, 2425 is most focused on residues 354\u2013358 in the C3 region, mutations to these sites gave larger effects, while those to 350 and 251 did not. While the magnitude of effect size varied across sera (note the differing y-axis in Figure 4), the TZM-bl mapping generally reflected these effect sizes.\n\nIt is also clear that the mutational antigenic profiling better explores the effects of different possible escape mutations than testing smaller panels of pseudovirus mutants. For example, while knocking in a glycosylation site at site 465 (T465N) escapes many of the sera as previously shown (Klasse et al., 2018), other mutants at this site have similar or even larger effects (Figures 2 and 3). This suggests that the immune response is directed at site 465 and neighboring V5 residues, as opposed to targeting this general epitope region that is obstructed by adding a bulky glycan to site 465.\n\nThere is greater variation in both the residue-level specificity and magnitude of neutralizing antibody responses to the GH epitope. However, overlaying data onto the trimer structures make it clear that a subset of the sera target the 241/289 GH. Examining data for three sera with clear enrichment in this region reveal selective pressure in a large epitope region, spanning from site 85 near the fusion peptide, through the 241/289 GH region, and extending to site 347 in/near the C3/V5 epitope. While we arbitrarily classify site 347 as part of the GH epitope because enrichment at this site more closely tracks with sera that target the GH epitope (Figure 2), the blending of these epitopes supports the notion that the C3/V5 and GH epitopes together constitute a BG505-specific immunodominant \u2018super-epitope\u2019 in rabbits (Nogal et al., 2020). Mutations at site 629, particularly L629P, are also enriched strongly in two sera that target the GH epitope (Figure 5). Site 629 is near the N-terminus of the HR-2, located below and buried beneath the GH epitope in the pre-fusion structure; the proline mutation may disrupt the HR-2 alpha helix, altering its antigenicity or accessibility of the GH epitope.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig5-v2.jpg)\n\n**Figure 5.:** (A) Differential selection is plotted in logo plots for the glycan hole epitope, as in Figure 1B. Mutations validated in TZM-bl neutralization assays (C) are colored black. The y-axis is scaled to the largest effect size site, which is oftentimes not in this GH view. (B) The positive site differential selection is mapped onto the BG505 trimer (PDB: 5FYL), with a single monomer shown and colored as in Figure 1C. Sites shown in (A) are shown with spheres in (B). These data can be explored interactively using dms-view at https://jbloomlab.github.io/Vacc_Rabbit_Sera_MAP/. (C) The fold change in ID50 relative to wild\u00a0type and the maximum neutralization plateau (MNP) for each mutant validated in a pseudovirus TZM-bl neutralization assay. The table color scheme is as in Figure 1A, and the standard deviation of replicate measures are shown in parentheses. The table color scheme is as in Figure 1A. See Figure 5\u2014figure supplement 1 for the three sera with limited targeting of this epitope.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64281/elife-64281-fig5-figsupp1-v2.jpg)\n\nMutations in the GH epitope were oftentimes only moderately enriched compared to the C3/V5 epitope, and TZM-bl assays also showed only small shifts in the neutralization curve for these mutants. Sera without clear enrichment of escape mutations in this epitope also were not affected by epitope mutations in TZM-bl neutralization assays (Figure 5\u2014figure supplement 1).\n\n## Discussion\n\nWe have used mutational antigenic profiling to map the dominant neutralizing antibody specificities in polyclonal rabbit sera elicited with Env trimer immunization. In parallel, we used EMPEM to map the total serum binding specificities. Contrasting the serum binding and neutralizing specificities suggests that the dominant neutralizing antibody responses are only a subset of binding responses \u2013 even when just examining bona fide neutralizing antibody epitopes. Additional differences in binding and neutralization highlight antigenicity differences between soluble SOSIP Env trimers and Env on the surface of viruses, which is relevant to the use of trimers as immunogens.\n\nThis work also shows the utility of mutational antigenic profiling in mapping polyclonal serum responses to HIV Env. We recapitulate and extend prior knowledge on rabbit antibody responses to BG505 trimer immunization (Bianchi et al., 2018; Klasse et al., 2018; McCoy et al., 2016), with the C3/V5 and GH\u00a0regions being the dominant immunogenic epitopes. We map responses to multiple epitopes of polyclonal serum responses at once, a significant advance over more traditional mapping approaches. Furthermore, we refine the residue-level specificity of these epitopes directly from sera, revealing fine-grain epitope differences. For example, some C3/V5 responses were more focused on the C3 region than others. But there were sites that appeared to \u2018anchor\u2019 this epitope \u2013 all sera targeting this epitope were strongly affected by mutations to sites 358 and 454. It remains to be determined if these different epitope specificities are the result of monoclonal responses with varying binding footprints or if they vary due to differing sets of multiple overlapping antibodies targeting the same epitope region. Lastly, while rabbit antibody responses to BG505 SOSIP trimer immunization have been well-characterized, these unbiased sera mapping approaches have the potential to identify novel specificities. Indeed, some sera do display minor enrichment of possible escape mutations outside of known epitopes (e.g., sites 507 and 509 for sera 5727).\n\nThe GH\u00a0epitope is not a desirable broadly neutralizing epitope that can be exploited for vaccine design (Yang et al., 2020), and the C3/V5 epitope is similarly problematic due to its relatively low sequence conservation. While the autologous neutralizing responses we mapped here are encouraging, we hypothesize it will be important to silence these immunodominant and autologous neutralizing responses to aid in redirecting response to more broadly conserved epitopes. This is particularly important given that similar specificities have also been observed in non-human primates after BG505 SOSIP trimer immunization (Cottrell et al., 2020; Nogal et al., 2020). Our mutational antigenic profiling provides a rich map of potential alterations that disrupt these epitopes, which could be of use in resurfacing trimer immunogens.\n\nWhile this work has allowed us to compare total polyclonal serum neutralization and binding, there are important limitations to keep in mind. One key point is that these methods have different sensitivities for dominant versus subdominant responses, making it impossible to directly quantify serum neutralization and binding on the same scale. Indeed, TZM-bl neutralization assays using single and double epitope mutant pseudoviruses suggest that both approaches may have \u2018missed\u2019 subdominant neutralizing antibody responses to the V1 epitopes (Figure 3, Figure 3\u2014figure supplement 1). The mutant libraries used to map neutralization have on average only\u00a0~1 Env mutation per virus; a given virion can therefore likely only escape one component of polyclonal responses, limiting the ability to detect subdominant responses. Furthermore, rigorous quantification of both binding and neutralizing responses \u2013 and comparisons of responses across sera \u2013 are not yet possible with existing technology and analytical approaches. Furthermore, while mutational antigenic profiling examines the entire serum neutralizing antibody response, EMPEM maps the binding of IgG Fabs after purification. Lastly, easily visualizing and interpreting these complex datasets remains difficult, a challenge we have attempted to overcome here with the interactive visualizations available at https://jbloomlab.github.io/Vacc_Rabbit_Sera_MAP/. Nonetheless, this work describes the most detailed mapping yet of the specificities of polyclonal sera at both the binding and neutralizing level.\n\nWhile both rational, structure-based vaccine design (Alam et al., 2017; Correia et al., 2014; Dubrovskaya et al., 2019; Haynes et al., 2012; Kong et al., 2019; Kwong and Mascola, 2018; Saunders et al., 2017; Xu et al., 2018) and broadly neutralizing antibody germline-targeting (Briney et al., 2016; Dosenovic et al., 2015; Escolano et al., 2019; Escolano et al., 2016; Jardine et al., 2013; Jardine et al., 2016; Medina-Ram\u00edrez et al., 2017; Steichen et al., 2019; Steichen et al., 2016; Tian et al., 2016) approaches have begun to show exciting promise for HIV, continued progress will require iterative rounds of evaluating vaccine responses and redesigning immunogens and vaccine regimens (Ward and Wilson, 2020). Determining the extent of immunofocusing to targeted epitopes, while also tracking \u2013 and subsequently eliminating \u2013 off-target responses to less conserved regions will be critical to these efforts. Together, EMPEM and mutational antigenic profiling can aid in rational vaccine design by directly mapping polyclonal serum specificities for both binding and neutralization.\n\n## Materials and methods\n\n### Mutational antigenic profiling\n\nMutational antigenic profiling was performed as previously described (Dingens et al., 2017). Briefly, 5\u00a0\u00d7\u00a0105 infectious units of BG505.T332N mutant virus libraries (Haddox et al., 2018) were neutralized with serum dilutions for 1 hr at 37\u00b0C as specified in Figure 1\u2014figure supplement 1. We performed additional experimental replicates for sera with smaller effect sizes in order to increase our signal relative to noise (Figure 1\u2014figure supplement 1). All replicates (Figure 1\u2014figure supplement 1) were included in the analysis, without any removal or quality filtering of whole replicates or individual mutation counts. Different library numbers (e.g., 1, 2, 3) are viral libraries generated from independently generated DNA libraries (Haddox et al., 2018), and letter labels (e.g., a, b, c) correspond to experiments done on different days with matched non-selected control library selections. After neutralization, viral libraries were then infected into 1\u00a0\u00d7\u00a0106 SupT1.CCR5 cells in R10 containing 100 \u03bcg/mL DEAE-dextran. Three hours post-infection, the cells were resuspended in 1 mL R10 (RPMI [GE Healthcare Life Sciences; SH30255.01], supplemented with 10% fetal bovine serum, 1% 200 mM l-glutamine containing a 1% of a solution of 10,000 units/mL penicillin and 10,000 mg/mL streptomycin). At 12 hr post-infection, cells were washed once with phosphate-buffered saline, and non-integrated viral cDNA was isolated from cells using a miniprep. Each mutant virus library was also subjected to a mock selection (no serum), and duplicate four 10-fold serial dilutions of each mutant virus library were also infected into 1\u00a0\u00d7\u00a0106 cells to serve as an infectivity standard curve (Figure 1\u2014figure supplement 1). The proportion of the library that survived neutralization and entered cells was quantified using a qPCR and interpolation of the infectivity standard curve (Dingens et al., 2019). Sequencing libraries were generated using a barcoded subamplicon sequencing approach as previously described (Haddox et al., 2018; Haddox et al., 2016) and detailed at https://jbloomlab.github.io/dms_tools2/bcsubamp.html. Libraries were sequenced using 2 \u00d7 250 bp paired-end Illumina HiSeq runs.\n\nData was analyzed with dms_tools2 version 2.2.6 (https://jbloomlab.github.io/dms_tools2/) (Bloom, 2015). Differential selection is the log2-transformed enrichment of a given mutation relative to wild\u00a0type in the sera-selected condition relative to the non-selected control condition. This statistic is corrected for sequencing error, determined by sequencing wild-type plasmid, in a site- and mutation-specific manner. To reduce noise associated with low sequencing counts for a given mutations, a pseudocount of 5 (scaled up for the deeper-sequenced sample by the relative sequencing depth of the selected and non-selected libraries, to avoid biases introduced by differing sequencing depths across samples) is added to sequencing counts. See prior work (Dingens et al., 2017; Doud et al., 2017) or https://jbloomlab.github.io/dms_tools2/diffsel.html for additional details.\n\n\ufeffShort\u00a0tandem\u00a0repeat profiling on our stock of SupT1.CCR5 cells found that 11 of 14 alleles plus both amelogenin alleles matched the reference of the parental SupT1 cells (ATCC #CRL-1942) reference profile. These cells also tested negative for mycoplasma.\n\n### Electron microscopy polyclonal epitope mapping\n\nIgG from rabbit sera was affinity-purified with equal parts of Protein G Sepharose (Sigma\u2013Aldrich, P3296) and 150 ml Protein A Sepharose (GE\u00a0Healthcare, 17-5138-01) in a Poly-Prep Chromatography Column (Bio-Rad, 731\u20131550). Fabs were generated by Papain cleavage and purified by the use of the Pierce Fab Preparation Kit according to the manufacturers\u2019 instructions (Thermo Scientific - #44985). The purity of the Fabs was confirmed by SDS\u2013PAGE.\n\nBG505 SOSIP.664 or BG505 SOSIP v4.1/Fab complexes were made by mixing 15 \u03bcg SOSIP with 1 mg of polyclonal Fabs and allowed to incubate for 18\u201324 hr at room temperature. Complex samples were SEC purified using a Superose 6 Increase 10/300 GL (GE Healthcare) column to remove excess Fab prior to electron\u00a0microscopy grid preparation. Fractions containing the SOSIP/Fab complexes were pooled and concentrated using 10 kDa Amicon spin concentrators (Millipore). Samples were diluted to 0.02 mg/mL in TBS (0.05 M Tris pH 7.4, 0.15 M NaCl) and adsorbed onto glow discharged carbon-coated Cu400 EM grids (Electron Microscopy Sciences) and blotted after 10 s. The grids were then stained with 3 \u03bcL of 2% (wt/vol) uranyl formate, immediately blotted, waiting for 10 s before being stained again for 35 s followed by a final blot. Image collection and data processing were performed on TFS Talos F200C microscope (1.98 \u00c5/pixel; 73,000\u00d7 magnification) with an electron dose of \u223c25 electrons/\u00c52 using Leginon (Pugach et al., 2015; Suloway et al., 2005). 2D classification, 3D sorting, and 3D refinement were conducted using Relion v3.0 (Zivanov et al., 2018). EM density maps were visualized using UCSF Chimera (Pettersen et al., 2004) and segmented using Segger (Pintilie et al., 2010). Figures were generated using UCSF Chimera (Pettersen et al., 2004).\n\n### TZM-bl neutralization assay\n\nTZM-bl neutralization assays used to preliminarily map the specificity of our sera panel (Figure 1A) were performed in laboratories at Weill Cornell as previously described (Klasse et al., 2018). The remainder of the TZM-bl neutralization assays were performed in laboratories at the Fred Hutch as previously described (Dingens et al., 2017). These protocols are very similar and based on widely\u00a0used protocols such\u00a0as\u00a0TZM-bl neutralization assay protocols (Sarzotti-Kelsoe et al., 2014). Validation assays were completed in technical duplicate two to four times. In a small number of instances, the top of the neutralization plateau did not fit for single replicates; while fold change in ID50 values were always calculated using at minimum two replicates (with standard deviations\u00a0[SD] between biological replicates reported), the maximum neutralization plateau\u00a0with SD reported as \u2018(*)\u2019 were from single replicates in which the naturalization plateau fits accurately.\n\n### Data availability\n\nThe entire mutational antigenic profiling analysis pipeline, as well as processed data are available as https://github.com/jbloomlab/Vacc_Rabbit_Sera_MAP;\u00a0Dingens, 2021; copy archived at swh:1:rev:b8d312d2bf5c2c117ce1d1601ea3738b58e62c20. Illumina sequencing reads were uploaded to the NCBI SRA as BioProject PRJNA656582 with sample identifiers SRR12431153-SRR12431189. EMPEM 3D maps are deposited into the\u00a0EMDB with codes EMD-23366 to EMD-23371.\n",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "99f03564-9e66-4a04-b129-3876417950a5",
+      "submission_id": "7548b681-f6f0-46ea-a180-8e7366735523",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pamela J Bjorkman, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64281.sa1](https://doi.org/10.7554/eLife.64281.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper represents a timely complementary study to map neutralizing and\n\nbinding responses in polyclonal rabbit sera induced by immunization with a native-like HIV-1 envelope trimer. These results will be instructive to researchers analyzing antibody responses to many different pathogens.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"High-resolution mapping of the neutralizing and binding specificities of polyclonal sera post HIV Env trimer vaccination\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Miles Davenport as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Brandon Dekosky (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nDingens et al. report a timely complementary study to map neutralizing and binding responses in polyclonal rabbit sera induced by immunization with the BG505 SOSIP Env trimer. Neutralizing responses are mapped using libraries of replication-competent HIV expressing all mutants of the BG505 Env, an approach developed in the Bloom laboratory. Binding responses were mapped using an EM-based method, EMPEM, developed in the Ward laboratory. The Env mutations that affect neutralization of the autologous BG505 strain in the BG505-SOSIP-immunized animals were largely known from other studies, as were the binding (not necessarily neutralizing) responses \u2013 the strength of this study is the combination of the two approaches. It is especially useful that the complex datasets have been deposited on-line where they can be interactively explored, including mapping onto Env trimer and monomer structures, and we commend the authors for the development of a facile and easy-to-use interactive viewer for exploring the mutational scanning data. Although the results were anticipated, it is very nice to directly compare the neutralization epitopes to the binding epitopes determined by EMPEM. This is a well-written and beautifully illustrated paper that we are happy to recommend publication after addressing the following concerns.\n\nEssential revisions:\n\n1) One of the main advantages of the mutational scanning approach is that it can identify novel epitopes targeted by antibody responses in a high-throughput manner. It is a little disappointing that this advantage was not leveraged in the current manuscript, perhaps due to the choice of the vaccine (BG505 SOSIP trimers where the epitopes have been thoroughly mapped in the literature) and the selection of vaccinated animals. Looking at Figure 2, animal 5727 was the only animal whose serum showed some selection signatures outside of the regions considered in depth (at sites 507 and 509) \u2013 have the authors analyzed these escape mutations? If not, and only if possible within reasonable workload, we urge the authors to pursue this example or any other example where a potential novel epitope discovery could be possible.\n\n2) Additional information on the bioinformatic methods for data analysis is needed. How did the authors handle discrepancies in data across replicates or libraries, for example if a mutation that was enriched in one library or replicate, but deleted in another? Were there any quality filters or metrics used to estimate true signal vs. noise?\n\n3) Differential selection statistics are mentioned briefly, along with citations to prior publications. Prior citations are definitely helpful. I think it is still important to state the key steps used in processing NGS data and the statistical techniques and quality metrics that were used. The authors should also state any criteria for acceptance or rejection or binning of individual data points, or acceptance/rejection of datasets or replicates, if quantitative criteria or metrics were used.\n\n4) Several replicates showed a low percentage infectivity (Figure 1\u2014figure supplement 1, e.g. animals 5724 and 2124), but the text indicates averages between 0.3% and 2.7% infectivity. Were some groups omitted from analysis, or were all groups included?\n\n5) How well did the mutational profiles correlate between different libraries or replicates of the same samples?\n",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "321ce89d-cab8-4193-bbfa-b3daf9495cbe",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C1",
+      "claim": "Mutational antigenic profiling determines how all mutations in Env affect viral neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "We used mutational antigenic profiling to determine how all mutations in Env affected viral neutralization and electron microscopy polyclonal epitope mapping (EMPEM) to directly visualize serum Fabs bound to Env trimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "dd7c9abc-1ef2-47e0-86a7-91fa1efaca2d",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C2",
+      "claim": "EMPEM directly visualizes serum Fabs bound to Env trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We used mutational antigenic profiling to determine how all mutations in Env affected viral neutralization and electron microscopy polyclonal epitope mapping (EMPEM) to directly visualize serum Fabs bound to Env trimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes EMPEM as a method for visualizing serum Fabs bound to Env trimers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "a1300b67-9cc9-4f59-b6f4-fb8f58d82656",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C3",
+      "claim": "The dominant neutralizing specificities were generally only a subset of the more diverse binding specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "The dominant neutralizing specificities were generally only a subset of the more diverse binding specificities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "e3ea895f-a517-411f-9e72-b7af83e8e87b",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C4",
+      "claim": "Additional differences between binding and neutralization reflected antigenicity differences between virus and soluble Env trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional differences between binding and neutralization reflected antigenicity differences between virus and soluble Env trimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and discussed in detail in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "cf01357a-6f29-4f68-a2a8-1fd4b794999a",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C5",
+      "claim": "Mutational antigenic profiling and EMPEM can refine residue-level epitope specificity directly from sera.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we refined residue-level epitope specificity directly from sera, revealing subtle differences across sera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated with data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "2e5eb21b-8467-4adf-98e8-98d494196b24",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C6",
+      "claim": "SOSIP trimers recapitulate the native or near-native structure of Env on the virus surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These trimers have been used extensively as immunogens because they recapitulate the native or near-native structure of Env on the virus surface (Julien et al., 2013; Lyumkis et al., 2013; Pancera et al., 2014; Sanders et al., 2013; Sanders and Moore, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "8db756ab-6816-42d5-b2b3-f7df059c9634",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C7",
+      "claim": "Immunizing animals with BG505 SOSIP trimer variants induces autologous, tier-2 neutralizing antibody responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, immunizing animals with prototypical SOSIP trimer variants based on the BG505 strain (Wu et al., 2006) induces autologous, tier-2 neutralizing antibody responses (de Taeye et al., 2015; Klasse et al., 2016; Sanders et al., 2015; Torrents de la Pe\u00f1a et al., 2018, Torrents de la Pe\u00f1a et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "e341998d-889c-4644-8820-a26022ac2d0c",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C8",
+      "claim": "BG505 trimer immunization can protect against infection of simian\u2013human immunodeficiency virus bearing the matched BG505 Env in macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "While such immunizations can protect against infection of simian\u2013human immunodeficiency virus, bearing the matched BG505 Env in macaques (Pauthner et al., 2017; Pauthner et al., 2019), heterologous breadth has not been consistently achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "c62b1e53-da53-4ed6-a5ee-184e9c148bfc",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C9",
+      "claim": "Heterologous breadth has not been consistently achieved with BG505 SOSIP trimer immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "While such immunizations can protect against infection of simian\u2013human immunodeficiency virus, bearing the matched BG505 Env in macaques (Pauthner et al., 2017; Pauthner et al., 2019), heterologous breadth has not been consistently achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current BG505 SOSIP trimer immunization approaches.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "50214939-9d14-4861-afc9-bf66997b8a84",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C10",
+      "claim": "BG505-induced rabbit neutralizing antibodies predominantly target a BG505-specific glycan hole centered on residues 241 and 289.",
+      "claim_type": "EXPLICIT",
+      "source": "BG505-induced rabbit neutralizing antibodies predominantly target a BG505-specific glycan hole (GH) in Env's glycan shield, centered on the broadly conserved glycosylation sites at residues 241 and 289 that are missing in BG505.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge about rabbit responses to BG505 trimer immunization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "686f8c35-9743-4e64-8189-ec67a97dfa3f",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C11",
+      "claim": "Reintroducing glycans at sites 241 and 289 eliminates much of the neutralizing activity in many rabbit serum responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Reintroducing glycans back in at these sites eliminates much of the neutralizing activity in many rabbit serum responses (Klasse et al., 2018; Klasse et al., 2016) and mAbs isolated from immunized rabbits target this immunodominant GH (McCoy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "387823a1-22ff-4dd2-a949-9f830c6e35fb",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C12",
+      "claim": "mAbs isolated from immunized rabbits target the immunodominant glycan hole.",
+      "claim_type": "EXPLICIT",
+      "source": "Reintroducing glycans back in at these sites eliminates much of the neutralizing activity in many rabbit serum responses (Klasse et al., 2018; Klasse et al., 2016) and mAbs isolated from immunized rabbits target this immunodominant GH (McCoy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "879edbd5-99f6-4626-b4fb-4e2d36eff3b4",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C13",
+      "claim": "The C3/V5 epitope is a frequently immunogenic site in rabbits immunized with BG505 SOSIP trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum neutralization assays with large panels of pseudovirus point mutants identified a second frequently immunogenic site in rabbits as the C3/V5 epitope (previously termed C3/465), as well as a less immunodominant and less commonly targeted epitope in V1 (Klasse et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "3292920d-2418-47af-a938-a1fa664512fb",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C14",
+      "claim": "V1 is a less immunodominant and less commonly targeted epitope in rabbits immunized with BG505 SOSIP trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum neutralization assays with large panels of pseudovirus point mutants identified a second frequently immunogenic site in rabbits as the C3/V5 epitope (previously termed C3/465), as well as a less immunodominant and less commonly targeted epitope in V1 (Klasse et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "f7516085-e413-484d-a0e3-734c9ab06161",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C15",
+      "claim": "EMPEM has corroborated rabbit immunogenicity data by directly visualizing serum Fabs bound to BG505 trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "These rabbit immunogenicity data were largely corroborated using EMPEM to directly visualize serum Fabs bound to BG505 trimer bait (Bianchi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "05b42b3e-9043-4ca2-9aaf-294df1d175ec",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C16",
+      "claim": "In SOSIP trimer-vaccinated guinea pigs and non-human primates, antibody cloning or EMPEM has identified strain-specific responses to the C3/V4, C3/V5, V1, and gp120/gp41 interface regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In SOSIP trimer-vaccinated guinea pigs and non-human primates, antibody cloning or EMPEM has identified additional strain-specific responses to the C3/V4, C3/V5, V1, and gp120/gp41 interface regions (Cottrell et al., 2020; Lei et al., 2019; Nogal et al., 2020; Nogal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "d0ba9c5f-aaba-4db8-ac28-16b397be2cd5",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C17",
+      "claim": "Trimer immunization often elicits non-neutralizing responses to the base of the trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, trimer immunization often elicits non-neutralizing responses to the base of the trimer, a neo-epitope exposed on soluble trimers but inaccessible on viral membrane-bound Env (Bianchi et al., 2018; Cottrell et al., 2020; Hu et al., 2015; Kulp et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "e790734d-dc98-4db1-8884-baef8095b31c",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C18",
+      "claim": "The base of the trimer is a neo-epitope exposed on soluble trimers but inaccessible on viral membrane-bound Env.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, trimer immunization often elicits non-neutralizing responses to the base of the trimer, a neo-epitope exposed on soluble trimers but inaccessible on viral membrane-bound Env (Bianchi et al., 2018; Cottrell et al., 2020; Hu et al., 2015; Kulp et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "925b972b-490c-450e-84fa-a445c620e8e6",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C19",
+      "claim": "Ongoing clinical trials are evaluating the immunogenicity of BG505 SOSIP trimer variants in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Ongoing clinical trials will evaluate the immunogenicity of BG505 SOSIP trimer variants in humans (ClinicalTrials.gov Identifiers: NCT03699241, NCT04177355, and NCT03783130).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to clinical trial identifiers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "3d0474f0-a4e3-4a85-bb95-d51dffe03755",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C20",
+      "claim": "Rabbits were sequentially vaccinated with BG505 SOSIP trimer variants: either BG505 SOSIP.664 or BG505 SOSIP.V4.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We used sera from rabbits sequentially vaccinated with BG505 SOSIP trimer variants: either BG505 SOSIP.664, which contains the T332N mutation (Sanders et al., 2013), or the further stabilized BG505 SOSIP.V4.1 (de Taeye et al., 2015), each administered either three or four times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "b39cec3a-0626-4127-b2a9-514a50410ecf",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C21",
+      "claim": "BG505 SOSIP.664 contains the T332N mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "We used sera from rabbits sequentially vaccinated with BG505 SOSIP trimer variants: either BG505 SOSIP.664, which contains the T332N mutation (Sanders et al., 2013), or the further stabilized BG505 SOSIP.V4.1 (de Taeye et al., 2015), each administered either three or four times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the BG505 SOSIP.664 construct, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "68dcbc54-3a43-4b8e-a327-3606c5bc9ab8",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C22",
+      "claim": "BG505 SOSIP.V4.1 is a further stabilized version of BG505 SOSIP trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We used sera from rabbits sequentially vaccinated with BG505 SOSIP trimer variants: either BG505 SOSIP.664, which contains the T332N mutation (Sanders et al., 2013), or the further stabilized BG505 SOSIP.V4.1 (de Taeye et al., 2015), each administered either three or four times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the BG505 SOSIP.V4.1 construct, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "b3c29a7d-3b33-4c3a-95f5-17b5bf4aabb4",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C23",
+      "claim": "Across all replicates, between 0.02% and 9.27% of the library escaped neutralization in mutational antigenic profiling experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, we chose serum concentrations to keep the average level of selection exerted by each serum relatively constant; across all replicates, between 0.02% and 9.27% of the library escaped neutralization, with the across-replicate averages for each serum ranging from 0.3% and 2.7% (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the mutational antigenic profiling experiments, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "0ffef28e-6e6e-486c-a256-ded1fb0a8dea",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C24",
+      "claim": "The across-replicate averages for each serum ranged from 0.3% and 2.7% of the library escaping neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, we chose serum concentrations to keep the average level of selection exerted by each serum relatively constant; across all replicates, between 0.02% and 9.27% of the library escaped neutralization, with the across-replicate averages for each serum ranging from 0.3% and 2.7% (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the mutational antigenic profiling experiments, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "902f6cad-0a99-4c41-98fa-59d3f542a883",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C25",
+      "claim": "The antigenic profiling results are largely concordant with prior knowledge on BG505 trimer immunogenicity in rabbits.",
+      "claim_type": "EXPLICIT",
+      "source": "The results are largely concordant with prior knowledge on BG505 trimer immunogenicity in rabbits, with each serum targeting one or both of the C3/V5 or GH epitopes, which are indicated by blue and green, respectively, in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of the current results to prior knowledge, supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "ffe098ef-e81a-475d-a76d-4669d69c324d",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C26",
+      "claim": "Each serum targets one or both of the C3/V5 or GH epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "The results are largely concordant with prior knowledge on BG505 trimer immunogenicity in rabbits, with each serum targeting one or both of the C3/V5 or GH epitopes, which are indicated by blue and green, respectively, in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the mutational antigenic profiling, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "7cf9a4af-ed1f-4cf7-844e-1bc8d58bb37f",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C27",
+      "claim": "The antigenic profiling largely agrees with the crude epitope specificities mapped using a small panel of pseudovirus point mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the antigenic profiling largely agrees with the crude epitope specificities mapped using a small panel of pseudovirus point mutants (Figure 1A, with mutations tested in preliminary TZM-bl assays plotted in black in Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of mutational antigenic profiling results to preliminary TZM-bl assay results, shown in Figures 1A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "a121e987-112f-4e39-8fa9-5959a3f82344",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C28",
+      "claim": "Most sera select neutralization-escape mutations in the C3/V5 epitope to some extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, most sera select neutralization-escape mutations in the C3/V5 epitope to some extent, including sera from rabbit 2124, which appeared to predominantly target the GH based on the preliminary point-mutant mapping (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mutational antigenic profiling data, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "9cd6ac9f-d8df-46a0-a184-39169ea0b363",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C29",
+      "claim": "Sera from rabbit 2124 appeared to predominantly target the GH based on preliminary point-mutant mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, most sera select neutralization-escape mutations in the C3/V5 epitope to some extent, including sera from rabbit 2124, which appeared to predominantly target the GH based on the preliminary point-mutant mapping (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from preliminary TZM-bl assays, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "46b5a5d4-c4c9-4538-be51-9eb3ba6a1977",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C30",
+      "claim": "The fold enrichment in mutational antigenic profiling was well correlated with the fold change in ID50 in the neutralization assays (Pearson's r = 0.97, p value = 0.0011).",
+      "claim_type": "EXPLICIT",
+      "source": "The fold enrichment in mutational antigenic profiling was well correlated with the fold change in ID50 in the neutralization assays (Figure 2\u2014figure supplement 7, Pearson's r = 0.97, p value = 0.0011 from a two-tailed Pearson correlation test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result comparing mutational antigenic profiling to TZM-bl neutralization assays, shown in Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "5981a42c-5dfc-4916-9496-943af9e46405",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C31",
+      "claim": "The 5724 escape profile is focused entirely on the C3/V5 epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 5724 escape profile is focused entirely on the C3/V5 epitope: T464H is enriched ~190-fold in this serum's mutational antigenic profiling and shifts the ID50 64-fold in a TZM-bl neutralization assay (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding about serum 5724, supported by data in Figure 2 and Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "1756e99d-392c-4738-b6a6-6018f4f1dc39",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C32",
+      "claim": "T464H is enriched ~190-fold in serum 5724's mutational antigenic profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 5724 escape profile is focused entirely on the C3/V5 epitope: T464H is enriched ~190-fold in this serum's mutational antigenic profiling and shifts the ID50 64-fold in a TZM-bl neutralization assay (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from mutational antigenic profiling for serum 5724, shown in Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "0be534a5-e29b-4d53-ba35-59097a296fc2",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C33",
+      "claim": "T464H shifts the ID50 64-fold in a TZM-bl neutralization assay for serum 5724.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 5724 escape profile is focused entirely on the C3/V5 epitope: T464H is enriched ~190-fold in this serum's mutational antigenic profiling and shifts the ID50 64-fold in a TZM-bl neutralization assay (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from TZM-bl neutralization assays for serum 5724, shown in Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "03da773d-4a0f-422a-a487-b4fdf8b468ac",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C34",
+      "claim": "Serum 2423 targets both the C3/V5 and GH epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 2423 targets both the C3/V5 and GH epitopes (Figure 2), and the maximal effect mutant N356K has just a \u22482-fold effect in both mutational antigenic profiling and neutralization assays (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding about serum 2423, supported by data in Figure 2 and Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "c90a9786-7a77-4771-88cf-281638216998",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C35",
+      "claim": "The maximal effect mutant N356K has just a \u22482-fold effect in both mutational antigenic profiling and neutralization assays for serum 2423.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 2423 targets both the C3/V5 and GH epitopes (Figure 2), and the maximal effect mutant N356K has just a \u22482-fold effect in both mutational antigenic profiling and neutralization assays (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result for serum 2423, shown in Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "643949c0-d94c-4e9e-8e1f-111fd1852f74",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C36",
+      "claim": "Across all sera, the binding responses identified by EMPEM include many epitopes where mutations do not affect viral neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all sera, it is immediately clear that the binding responses identified by EMPEM include many epitopes where mutations do not affect viral neutralization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding comparing EMPEM and mutational antigenic profiling data, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "090db997-ad57-4cb3-a4b8-64b7aeba0657",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C37",
+      "claim": "For five of six sera, binding responses to both the GH and C3/V5 epitopes are observed by EMPEM.",
+      "claim_type": "EXPLICIT",
+      "source": "For five of six sera, binding responses to both the GH and C3/V5 epitopes are observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from EMPEM data, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "7d11f3d1-6f5e-408b-af88-c8728ad88e17",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C38",
+      "claim": "All sera contain additional binding responses to other epitopes beyond GH and C3/V5.",
+      "claim_type": "EXPLICIT",
+      "source": "All sera contain additional binding responses to other epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from EMPEM data, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "178d10ff-0adc-439f-9389-1ccb304975c7",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C39",
+      "claim": "Serum 5724 contains binding responses to the GH, N611 glycan, base-of-trimer, and V1/V3 epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, even 5724, where we observe narrow, strongly focused viral escape in just the C3/V5 epitope, contains numerous additional binding responses, including the GH, N611 glycan, base-of-trimer, and V1/V3 epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding about serum 5724 from EMPEM data, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "e35b9f35-6199-4d3e-91bd-fb6d4407ce4b",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C40",
+      "claim": "The base-of-trimer epitope is presented on recombinant trimers and commonly elicited by trimer immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "First, while the base-of-trimer epitope is presented on recombinant trimers and commonly elicited by trimer immunization (Bianchi et al., 2018; Cottrell et al., 2020; Hu et al., 2015), it is inaccessible in the replication-competent virus and hence does not elicit neutralizing antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "20fedda4-436e-426f-85d4-1fb4a5d9f671",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C41",
+      "claim": "The base-of-trimer epitope is inaccessible in replication-competent virus and hence does not elicit neutralizing antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "First, while the base-of-trimer epitope is presented on recombinant trimers and commonly elicited by trimer immunization (Bianchi et al., 2018; Cottrell et al., 2020; Hu et al., 2015), it is inaccessible in the replication-competent virus and hence does not elicit neutralizing antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural accessibility of the base epitope on virus versus soluble trimers, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "60afa549-d7ee-4b1b-8da0-6178e0e701d4",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C42",
+      "claim": "Base-binding responses are observed in all sera by EMPEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, base-binding responses are observed in all sera, but of course are not mapped as neutralizing epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from EMPEM data, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "6a200ab8-6671-4772-87d3-c854e65d6534",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C43",
+      "claim": "Binding responses to the N611 glycan region are observed in all sera by EMPEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, binding responses to the N611 glycan region are also observed in all sera (Figure 3), but we do not observe viral escape by disrupting this glycosylation motif (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from EMPEM data, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "f9ed38bb-3f66-48c8-b962-67a18a802d7b",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C44",
+      "claim": "Viral escape by disrupting the N611 glycosylation motif is not observed in mutational antigenic profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, binding responses to the N611 glycan region are also observed in all sera (Figure 3), but we do not observe viral escape by disrupting this glycosylation motif (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "0b3e087d-51da-4f3d-890a-38e8a19091c4",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C45",
+      "claim": "Site N611 is less glycosylated in BG505 SOSIP trimers than in virus.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that site N611 is less glycosylated in BG505 SOSIP trimers than in virus, which enhances the immunogenicity of the exposed region when this glycan is missing (Derking et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "0cf6afc9-319b-4334-bf89-2a70622ef18c",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C46",
+      "claim": "Lower glycan occupancy at N611 in BG505 SOSIP trimers enhances the immunogenicity of the exposed region.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that site N611 is less glycosylated in BG505 SOSIP trimers than in virus, which enhances the immunogenicity of the exposed region when this glycan is missing (Derking et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "1cf7191a-63fa-493e-871f-abf70b33dccb",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C47",
+      "claim": "gp120 interface responses are observed in two sera by EMPEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, gp120 interface responses are observed in two sera; both of these rabbits were immunized with BG505 SOSIP.v4 trimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from EMPEM data, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "a98376b5-463c-4222-9e7e-aa9435bc820d",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C48",
+      "claim": "Both rabbits with gp120 interface responses were immunized with BG505 SOSIP.v4 trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, gp120 interface responses are observed in two sera; both of these rabbits were immunized with BG505 SOSIP.v4 trimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the immunization history of specific rabbits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "812c04bb-262b-4352-86fe-aa6b276c623e",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C49",
+      "claim": "The gp120 interface epitope includes the A316W stabilizing mutation added to SOSIP.v4.",
+      "claim_type": "EXPLICIT",
+      "source": "This gp120 interface epitope includes the A316W stabilizing mutation added to the SOSIP.v4 to reduce the exposure of the V3 loop (de Taeye et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the SOSIP.v4 construct, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "3aff757f-21e6-47c6-a5de-425da9c4b0cb",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C50",
+      "claim": "The A316W mutation was added to SOSIP.v4 to reduce the exposure of the V3 loop.",
+      "claim_type": "EXPLICIT",
+      "source": "This gp120 interface epitope includes the A316W stabilizing mutation added to the SOSIP.v4 to reduce the exposure of the V3 loop (de Taeye et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the purpose of the A316W mutation, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "3ac27589-8511-443b-b9d7-5d69f21f2e99",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C51",
+      "claim": "The A316W mutation alters immunogenicity to the gp120 interface region, eliciting mutation-specific responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently found that the A316W mutation alters immunogenicity to this region, eliciting mutation-specific responses to this region that would not cross-react with the A316-bearing viral libraries (manuscript in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from unpublished work by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "5f07185c-5f57-4e3b-98d9-349d55b644fd",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C52",
+      "claim": "Trimer-binding but non-neutralizing responses to the base, N611 glycan, and gp120 interface reflect antigenic differences between Env trimers and Env on the surface of virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these trimer-binding but non-neutralizing responses to the base, N611 glycan, and gp120 interface reflect and expand on previously characterized antigenic differences between Env trimers to Env on the surface of virus (Bianchi et al., 2018; Cottrell et al., 2020; Derking et al., 2020; Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data, supported by citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "712e2f94-a931-4e35-b57f-b632e84313b1",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C53",
+      "claim": "For both sera 5724 and 2425, single or multiple glycan knock in mutations to the GH epitope had negligible effects in TZM-bl neutralization assays.",
+      "claim_type": "EXPLICIT",
+      "source": "For both 5724 and 2425, single or multiple glycan knock in mutations to the GH epitope had negligible effects, while single or multiple glycan knock in mutations to the C3/V5 epitope had large effects (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "4ee7e91e-30ca-4d96-934d-9a74073d4007",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C54",
+      "claim": "For both sera 5724 and 2425, single or multiple glycan knock in mutations to the C3/V5 epitope had large effects in TZM-bl neutralization assays.",
+      "claim_type": "EXPLICIT",
+      "source": "For both 5724 and 2425, single or multiple glycan knock in mutations to the GH epitope had negligible effects, while single or multiple glycan knock in mutations to the C3/V5 epitope had large effects (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "5345f48e-b56f-4b7f-989e-2bc3e20f0021",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C55",
+      "claim": "For sera 5724 and 2425, knocking in a glycan to each epitope (S241N + I358T) did not have much larger effects than the single C3 glycan knock in (I358T).",
+      "claim_type": "EXPLICIT",
+      "source": "For these two sera, knocking in a glycan to each epitope (S241N + I358T) did not have much larger effects than the single C3 glycan knock in (I358T), suggesting these sera have limited GH neutralizing responses even after eliminating some of the C3/V5 directed neutralizing response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "55da9970-53a2-42ad-9188-e10bfcab3e94",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C56",
+      "claim": "Sera 5724 and 2425 have limited GH neutralizing responses even after eliminating some of the C3/V5 directed neutralizing response.",
+      "claim_type": "EXPLICIT",
+      "source": "For these two sera, knocking in a glycan to each epitope (S241N + I358T) did not have much larger effects than the single C3 glycan knock in (I358T), suggesting these sera have limited GH neutralizing responses even after eliminating some of the C3/V5 directed neutralizing response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on TZM-bl neutralization assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "97cd107d-8289-4291-aea6-7683320b06e1",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C57",
+      "claim": "GH binding responses observed in sera 5724 and 2425 are either non-neutralizing or much less dominant than the C3/V5 neutralizing antibody responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that these GH responses are either non-neutralizing or much less dominant than the C3/V5 neutralizing antibody responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of EMPEM and TZM-bl neutralization assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "508197e0-7e1c-4f82-a322-adae048fca42",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C58",
+      "claim": "GH2-like binding responses have previously been identified in non-neutralizing sera using cryo-EMPEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, while the resolution of the negative stain EMPEM in this present study limits fine epitope interpretations, GH binding responses (specifically 'GH2'-like responses) have previously been identified in non-neutralizing sera using cryo-EMPEM (Bianchi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "c2c6006d-42d3-4d4d-8150-ae5b37d9d701",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C59",
+      "claim": "Sera 5727, 2124, 2214, and 2423 all displayed a greater effect for the double epitope glycan knock in mutations (S241N + I358T) than either of the single epitope knock in mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, 5727, 2124, 2214, and 2423 all displayed a greater effect for the double epitope glycan knock in mutations (S241N + I358T) than either of the single epitope knock in mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "40754add-dbd2-47c3-8474-0195dd5a4bb3",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C60",
+      "claim": "Sera 2423 had relatively equivalent neutralizing responses to both the GH and C3/V5 epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the effects of the single and double epitope mutations suggests sera 2423 had relatively equivalent neutralizing responses to both the GH and C3/V5 epitopes, sera 2124 and 2214 had a dominant response to GH and a subdominant response to C3/V5, and sera 5727 had a dominant response to C3/V5 and a subdominant response to GH (Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on TZM-bl neutralization assay data, shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "d818fbe9-ef80-420d-80bb-fbf52a3f2d77",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C61",
+      "claim": "Sera 2124 and 2214 had a dominant response to GH and a subdominant response to C3/V5.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the effects of the single and double epitope mutations suggests sera 2423 had relatively equivalent neutralizing responses to both the GH and C3/V5 epitopes, sera 2124 and 2214 had a dominant response to GH and a subdominant response to C3/V5, and sera 5727 had a dominant response to C3/V5 and a subdominant response to GH (Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on TZM-bl neutralization assay data, shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "a67974d2-aab6-4f88-a522-74fdf634fc74",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C62",
+      "claim": "Sera 5727 had a dominant response to C3/V5 and a subdominant response to GH.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the effects of the single and double epitope mutations suggests sera 2423 had relatively equivalent neutralizing responses to both the GH and C3/V5 epitopes, sera 2124 and 2214 had a dominant response to GH and a subdominant response to C3/V5, and sera 5727 had a dominant response to C3/V5 and a subdominant response to GH (Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on TZM-bl neutralization assay data, shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "58de6b48-bd81-4b41-a329-5a5aafac5183",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C63",
+      "claim": "V1 insertions alone did not affect neutralization of any sera.",
+      "claim_type": "EXPLICIT",
+      "source": "While V1 insertions alone did not affect neutralization of any sera, they had an additional effect when tested with GH mutations relative to GH mutations alone (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "460076c6-4a68-4cf5-817a-3e7c27839390",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C64",
+      "claim": "V1 insertions had an additional effect when tested with GH mutations relative to GH mutations alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While V1 insertions alone did not affect neutralization of any sera, they had an additional effect when tested with GH mutations relative to GH mutations alone (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "dbc96fb2-0f2e-43af-affb-fe6e9fad05b2",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C65",
+      "claim": "There are subdominant neutralizing antibody responses to V1 in all sera.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that there are subdominant neutralizing antibody responses to V1 in all sera \u2013 though we cannot rule out that the V1 + GH double mutants broadly affect antigenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on TZM-bl neutralization assay data, with a caveat noted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "f9065065-7289-4580-9e08-1e54349c2b63",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C66",
+      "claim": "Sites 464 and 356 and/or 358 anchor the C3/V5 epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is immediately apparent that the clustered, surface-exposed sites 464 and 356 and/or 358 'anchor' the C3/V5 epitope, with many mutations at these sites having large effects for nearly all sera that strongly target this epitope (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "9d23a0f3-477d-43c0-860a-b0a27f9bdac9",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C67",
+      "claim": "Many mutations at sites 464 and 356 and/or 358 have large effects for nearly all sera that strongly target the C3/V5 epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is immediately apparent that the clustered, surface-exposed sites 464 and 356 and/or 358 'anchor' the C3/V5 epitope, with many mutations at these sites having large effects for nearly all sera that strongly target this epitope (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "3234bbed-dc53-45d5-bcb0-3996e355cadd",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C68",
+      "claim": "Detailed epitope specificity at other C3/V5 sites varies across rabbits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, detailed epitope specificity at other C3/V5 sites varies across rabbits: some sera are more focused on various regions of C3, including sites 350 and 351 (e.g., sera 5727, 2423, 2124) or 354\u2013357 (e.g., sera 5727, 2423, 2124, 2425), whereas serum 5724 is more narrowly focused on the V5 region previously identified by knocking in a glycan at site 465.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "22f40695-8cb4-40ef-b118-cc4ec20bd0c0",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C69",
+      "claim": "Some sera are more focused on C3 sites 350 and 351.",
+      "claim_type": "EXPLICIT",
+      "source": "However, detailed epitope specificity at other C3/V5 sites varies across rabbits: some sera are more focused on various regions of C3, including sites 350 and 351 (e.g., sera 5727, 2423, 2124) or 354\u2013357 (e.g., sera 5727, 2423, 2124, 2425), whereas serum 5724 is more narrowly focused on the V5 region previously identified by knocking in a glycan at site 465.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "2e5a1aca-3566-4faa-847c-da89992c2f21",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C70",
+      "claim": "Some sera are more focused on C3 sites 354\u2013357.",
+      "claim_type": "EXPLICIT",
+      "source": "However, detailed epitope specificity at other C3/V5 sites varies across rabbits: some sera are more focused on various regions of C3, including sites 350 and 351 (e.g., sera 5727, 2423, 2124) or 354\u2013357 (e.g., sera 5727, 2423, 2124, 2425), whereas serum 5724 is more narrowly focused on the V5 region previously identified by knocking in a glycan at site 465.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "12ec36cb-c3c7-4453-80c3-aaa9d317bf95",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C71",
+      "claim": "Serum 5724 is more narrowly focused on the V5 region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, detailed epitope specificity at other C3/V5 sites varies across rabbits: some sera are more focused on various regions of C3, including sites 350 and 351 (e.g., sera 5727, 2423, 2124) or 354\u2013357 (e.g., sera 5727, 2423, 2124, 2425), whereas serum 5724 is more narrowly focused on the V5 region previously identified by knocking in a glycan at site 465.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "b921c5c5-7343-4dba-a0fc-72a5bf0eaee5",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C72",
+      "claim": "Site 396 bridges the C3 and V5 epitope regions in both linear sequence and structural space.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, site 396 bridges these two epitope regions in both linear sequence and structural space and is a site of escape for most sera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "2f32ad49-4477-4696-9118-62bf380e4929",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C73",
+      "claim": "Site 396 is a site of escape for most sera.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, site 396 bridges these two epitope regions in both linear sequence and structural space and is a site of escape for most sera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "fdea1f27-7a44-47af-b2d0-7a7a2c424f91",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C74",
+      "claim": "Mutations to sites 350, 351, 355, and 356 have very little effect on serum 5724.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations to sites 350, 351, 355, and 356 have very little effect on 5724, while mutations to 358 and 464 have large effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "38e005c3-c618-4e2c-bdcd-18c7b6bbaa82",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C75",
+      "claim": "Mutations to sites 358 and 464 have large effects on serum 5724.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations to sites 350, 351, 355, and 356 have very little effect on 5724, while mutations to 358 and 464 have large effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "e164c18a-ef5c-4673-a161-737df223c5ce",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C76",
+      "claim": "Serum 2425 is most focused on residues 354\u2013358 in the C3 region.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 2425 is most focused on residues 354\u2013358 in the C3 region, mutations to these sites gave larger effects, while those to 350 and 251 did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "1bf763b2-9634-4e42-9f12-7cb2fd7b269b",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C77",
+      "claim": "Mutations to sites 350 and 251 did not have large effects on serum 2425.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 2425 is most focused on residues 354\u2013358 in the C3 region, mutations to these sites gave larger effects, while those to 350 and 251 did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from TZM-bl neutralization assays, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "6946ddc8-2906-464e-b857-8467652b9bc5",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C78",
+      "claim": "Mutational antigenic profiling better explores the effects of different possible escape mutations than testing smaller panels of pseudovirus mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also clear that the mutational antigenic profiling better explores the effects of different possible escape mutations than testing smaller panels of pseudovirus mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion about the advantages of mutational antigenic profiling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "4b6e9d88-137e-45dc-ae26-db3a281d53e1",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C79",
+      "claim": "While knocking in a glycosylation site at site 465 (T465N) escapes many of the sera, other mutants at this site have similar or even larger effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while knocking in a glycosylation site at site 465 (T465N) escapes many of the sera as previously shown (Klasse et al., 2018), other mutants at this site have similar or even larger effects (Figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "ac30fb24-cdd2-442a-b4f2-b33f336e3987",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C80",
+      "claim": "The immune response is directed at site 465 and neighboring V5 residues, as opposed to targeting this general epitope region that is obstructed by adding a bulky glycan to site 465.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the immune response is directed at site 465 and neighboring V5 residues, as opposed to targeting this general epitope region that is obstructed by adding a bulky glycan to site 465.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on mutational antigenic profiling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "cbb22cde-057e-458c-8a55-2f7149a3f3f8",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C81",
+      "claim": "A subset of the sera target the 241/289 GH.",
+      "claim_type": "EXPLICIT",
+      "source": "However, overlaying data onto the trimer structures make it clear that a subset of the sera target the 241/289 GH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "280426ec-6e83-4662-84dd-838cd78803ac",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C82",
+      "claim": "Sera with clear enrichment in the GH region show selective pressure spanning from site 85 near the fusion peptide, through the 241/289 GH region, and extending to site 347 in/near the C3/V5 epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining data for three sera with clear enrichment in this region reveal selective pressure in a large epitope region, spanning from site 85 near the fusion peptide, through the 241/289 GH region, and extending to site 347 in/near the C3/V5 epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "574dffb5-97a7-490c-a5bd-7342adce8322",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C83",
+      "claim": "The blending of the C3/V5 and GH epitopes supports the notion that they together constitute a BG505-specific immunodominant 'super-epitope' in rabbits.",
+      "claim_type": "EXPLICIT",
+      "source": "While we arbitrarily classify site 347 as part of the GH epitope because enrichment at this site more closely tracks with sera that target the GH epitope (Figure 2), the blending of these epitopes supports the notion that the C3/V5 and GH epitopes together constitute a BG505-specific immunodominant 'super-epitope' in rabbits (Nogal et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on mutational antigenic profiling data, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "253e3867-b193-402a-b80b-db94f69440b6",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C84",
+      "claim": "Mutations at site 629, particularly L629P, are strongly enriched in two sera that target the GH epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations at site 629, particularly L629P, are also enriched strongly in two sera that target the GH epitope (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mutational antigenic profiling data, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "1d24588c-f151-437d-a968-30193be6cb98",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C85",
+      "claim": "Site 629 is near the N-terminus of the HR-2, located below and buried beneath the GH epitope in the pre-fusion structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Site 629 is near the N-terminus of the HR-2, located below and buried beneath the GH epitope in the pre-fusion structure; the proline mutation may disrupt the HR-2 alpha helix, altering its antigenicity or accessibility of the GH epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation about site 629.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "70f84294-054e-48a4-b199-58c1d1a58c8d",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C86",
+      "claim": "The proline mutation at site 629 may disrupt the HR-2 alpha helix, altering its antigenicity or accessibility of the GH epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "Site 629 is near the N-terminus of the HR-2, located below and buried beneath the GH epitope in the pre-fusion structure; the proline mutation may disrupt the HR-2 alpha helix, altering its antigenicity or accessibility of the GH epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism by which the L629P mutation affects neutralization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "08a870a7-eab5-4b5e-8d5e-11bc76140fb8",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C87",
+      "claim": "The GH epitope is not a desirable broadly neutralizing epitope that can be exploited for vaccine design.",
+      "claim_type": "EXPLICIT",
+      "source": "The GH epitope is not a desirable broadly neutralizing epitope that can be exploited for vaccine design (Yang et al., 2020), and the C3/V5 epitope is similarly problematic due to its relatively low sequence conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "b12ee313-e8cf-4e79-8ac6-c106e3e7251d",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C88",
+      "claim": "The C3/V5 epitope is problematic for vaccine design due to its relatively low sequence conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "The GH epitope is not a desirable broadly neutralizing epitope that can be exploited for vaccine design (Yang et al., 2020), and the C3/V5 epitope is similarly problematic due to its relatively low sequence conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the C3/V5 epitope based on its sequence conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "43a907ad-0460-492e-9177-0dbfa99f7e6a",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C89",
+      "claim": "It will be important to silence the immunodominant GH and C3/V5 autologous neutralizing responses to aid in redirecting response to more broadly conserved epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the autologous neutralizing responses we mapped here are encouraging, we hypothesize it will be important to silence these immunodominant and autologous neutralizing responses to aid in redirecting response to more broadly conserved epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about vaccine design strategy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "c2d3a5d2-412a-4efa-960e-20a9c708d87b",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C90",
+      "claim": "Similar GH and C3/V5 specificities have been observed in non-human primates after BG505 SOSIP trimer immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly important given that similar specificities have also been observed in non-human primates after BG505 SOSIP trimer immunization (Cottrell et al., 2020; Nogal et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "54c40e9b-23e5-43c2-a16f-88ac5e9dd6f1",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C91",
+      "claim": "Mutational antigenic profiling provides a rich map of potential alterations that disrupt the GH and C3/V5 epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mutational antigenic profiling provides a rich map of potential alterations that disrupt these epitopes, which could be of use in resurfacing trimer immunogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the mutational antigenic profiling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "7d7f0ac2-2deb-4bb7-a620-7a4881991ad6",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C92",
+      "claim": "TZM-bl neutralization assays using single and double epitope mutant pseudoviruses suggest that both EMPEM and mutational antigenic profiling may have missed subdominant neutralizing antibody responses to the V1 epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, TZM-bl neutralization assays using single and double epitope mutant pseudoviruses suggest that both approaches may have 'missed' subdominant neutralizing antibody responses to the V1 epitopes (Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on TZM-bl neutralization assay data, shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "d0e472d9-5e8e-4307-b0f8-6e5eb6a357e6",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C93",
+      "claim": "The mutant libraries used to map neutralization have on average only ~1 Env mutation per virus.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant libraries used to map neutralization have on average only ~1 Env mutation per virus; a given virion can therefore likely only escape one component of polyclonal responses, limiting the ability to detect subdominant responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the design of the mutant virus libraries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "6b1f43fc-c040-4534-b37d-0ba1b26ebd14",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C94",
+      "claim": "A given virion in the mutant libraries can likely only escape one component of polyclonal responses, limiting the ability to detect subdominant responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant libraries used to map neutralization have on average only ~1 Env mutation per virus; a given virion can therefore likely only escape one component of polyclonal responses, limiting the ability to detect subdominant responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of mutational antigenic profiling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "aa15d9e8-fa34-48a7-8c22-b71c981ed4a3",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C95",
+      "claim": "Rigorous quantification of both binding and neutralizing responses \u2013 and comparisons of responses across sera \u2013 are not yet possible with existing technology and analytical approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rigorous quantification of both binding and neutralizing responses \u2013 and comparisons of responses across sera \u2013 are not yet possible with existing technology and analytical approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of current methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "5d2f67ef-28c4-427f-84c4-371a381b6268",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C96",
+      "claim": "Mutational antigenic profiling examines the entire serum neutralizing antibody response.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while mutational antigenic profiling examines the entire serum neutralizing antibody response, EMPEM maps the binding of IgG Fabs after purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what mutational antigenic profiling measures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "c4955e4e-aa85-4010-ab68-65a0c7c648b8",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C97",
+      "claim": "EMPEM maps the binding of IgG Fabs after purification.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while mutational antigenic profiling examines the entire serum neutralizing antibody response, EMPEM maps the binding of IgG Fabs after purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what EMPEM measures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "40ccc6a9-de85-4596-872f-1dff7decdfc1",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C98",
+      "claim": "This work describes the most detailed mapping yet of the specificities of polyclonal sera at both the binding and neutralizing level.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, this work describes the most detailed mapping yet of the specificities of polyclonal sera at both the binding and neutralizing level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the significance of the work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "e48627ae-6fb7-448d-9aff-68194edd4f7e",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C99",
+      "claim": "Determining the extent of immunofocusing to targeted epitopes, while also tracking and subsequently eliminating off-target responses to less conserved regions will be critical to HIV vaccine design efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Determining the extent of immunofocusing to targeted epitopes, while also tracking \u2013 and subsequently eliminating \u2013 off-target responses to less conserved regions will be critical to these efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of mapping polyclonal responses for vaccine design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "88c24f75-547d-41bd-8251-2c2d491154a9",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C100",
+      "claim": "EMPEM and mutational antigenic profiling can aid in rational vaccine design by directly mapping polyclonal serum specificities for both binding and neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, EMPEM and mutational antigenic profiling can aid in rational vaccine design by directly mapping polyclonal serum specificities for both binding and neutralization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the methods for vaccine design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "7695e7c7-7204-40d5-a5d3-c03e74ad98ea",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C101",
+      "claim": "Mutational antigenic profiling was performed using libraries of replication-competent HIV virions expressing all mutants of the BG505.T332N Env.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed mutational antigenic profiling (Dingens et al., 2017) of each serum using libraries of replication-competent HIV virions expressing all mutants of the BG505.T332N Env (Haddox et al., 2018), allowing us to map autologous responses to the strain-matched BG505 trimer immunogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "bae63e89-f3cf-4084-82ed-0e324fe6682d",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C102",
+      "claim": "5 \u00d7 10^5 infectious units of BG505.T332N mutant virus libraries were neutralized with serum dilutions for 1 hr at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, 5 \u00d7 105 infectious units of BG505.T332N mutant virus libraries (Haddox et al., 2018) were neutralized with serum dilutions for 1 hr at 37\u00b0C as specified in Figure 1\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a specific experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "21f42e26-06f7-4aab-9c63-52075485ef26",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C103",
+      "claim": "After neutralization, viral libraries were infected into 1 \u00d7 10^6 SupT1.CCR5 cells in R10 containing 100 \u03bcg/mL DEAE-dextran.",
+      "claim_type": "EXPLICIT",
+      "source": "After neutralization, viral libraries were then infected into 1 \u00d7 106 SupT1.CCR5 cells in R10 containing 100 \u03bcg/mL DEAE-dextran.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "e8b0edb1-a111-47f8-a28d-546076c4d26a",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C104",
+      "claim": "At 12 hr post-infection, cells were washed once with phosphate-buffered saline, and non-integrated viral cDNA was isolated from cells using a miniprep.",
+      "claim_type": "EXPLICIT",
+      "source": "At 12 hr post-infection, cells were washed once with phosphate-buffered saline, and non-integrated viral cDNA was isolated from cells using a miniprep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "686e35f2-ac7a-4be2-bae3-a807ffc957d6",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C105",
+      "claim": "The proportion of the library that survived neutralization and entered cells was quantified using qPCR and interpolation of the infectivity standard curve.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of the library that survived neutralization and entered cells was quantified using a qPCR and interpolation of the infectivity standard curve (Dingens et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "e20d81e1-f3b6-42f4-a59f-7f68734d638e",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C106",
+      "claim": "Sequencing libraries were generated using a barcoded subamplicon sequencing approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing libraries were generated using a barcoded subamplicon sequencing approach as previously described (Haddox et al., 2018; Haddox et al., 2016) and detailed at https://jbloomlab.github.io/dms_tools2/bcsubamp.html.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "f2e428c8-6762-41f9-9a11-ac7dccd20d6f",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C107",
+      "claim": "Libraries were sequenced using 2 \u00d7 250 bp paired-end Illumina HiSeq runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Libraries were sequenced using 2 \u00d7 250 bp paired-end Illumina HiSeq runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "5046eed2-e941-4f4d-aeb9-292255edac8f",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C108",
+      "claim": "Data was analyzed with dms_tools2 version 2.2.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Data was analyzed with dms_tools2 version 2.2.6 (https://jbloomlab.github.io/dms_tools2/) (Bloom, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis approach, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "fe7729ba-ab86-4fc2-9b06-e0cbd2d1ce8f",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C109",
+      "claim": "Differential selection is the log2-transformed enrichment of a given mutation relative to wild type in the sera-selected condition relative to the non-selected control condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential selection is the log2-transformed enrichment of a given mutation relative to wild type in the sera-selected condition relative to the non-selected control condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the differential selection metric used in the analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "8de73141-b8cc-4bcc-8fd4-c13a1552f90c",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C110",
+      "claim": "Differential selection is corrected for sequencing error in a site- and mutation-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This statistic is corrected for sequencing error, determined by sequencing wild-type plasmid, in a site- and mutation-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the differential selection metric is calculated.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "b532f9e0-e402-4b4a-bbed-98c88f73c792",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C111",
+      "claim": "A pseudocount of 5 is added to sequencing counts to reduce noise associated with low sequencing counts.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce noise associated with low sequencing counts for a given mutations, a pseudocount of 5 (scaled up for the deeper-sequenced sample by the relative sequencing depth of the selected and non-selected libraries, to avoid biases introduced by differing sequencing depths across samples) is added to sequencing counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data processing step.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "99827f5c-e509-4e97-98b2-a1425c94b207",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C112",
+      "claim": "IgG from rabbit sera was affinity-purified with equal parts of Protein G Sepharose and Protein A Sepharose.",
+      "claim_type": "EXPLICIT",
+      "source": "IgG from rabbit sera was affinity-purified with equal parts of Protein G Sepharose (Sigma\u2013Aldrich, P3296) and 150 ml Protein A Sepharose (GE Healthcare, 17-5138-01) in a Poly-Prep Chromatography Column (Bio-Rad, 731\u20131550).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol for EMPEM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "a1e9d6d4-a519-4a72-8486-5a960b3dd508",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C113",
+      "claim": "Fabs were generated by Papain cleavage and purified using the Pierce Fab Preparation Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Fabs were generated by Papain cleavage and purified by the use of the Pierce Fab Preparation Kit according to the manufacturers' instructions (Thermo Scientific - #44985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol for EMPEM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "084882d8-ae71-4c64-93bd-ad7cc4699a5f",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C114",
+      "claim": "BG505 SOSIP.664 or BG505 SOSIP v4.1/Fab complexes were made by mixing 15 \u03bcg SOSIP with 1 mg of polyclonal Fabs and allowed to incubate for 18\u201324 hr at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "BG505 SOSIP.664 or BG505 SOSIP v4.1/Fab complexes were made by mixing 15 \u03bcg SOSIP with 1 mg of polyclonal Fabs and allowed to incubate for 18\u201324 hr at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol for EMPEM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "7e2d1a8e-6987-4d01-bc47-f2df8d4831b9",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C115",
+      "claim": "Complex samples were SEC purified using a Superose 6 Increase 10/300 GL column to remove excess Fab prior to electron microscopy grid preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex samples were SEC purified using a Superose 6 Increase 10/300 GL (GE Healthcare) column to remove excess Fab prior to electron microscopy grid preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol for EMPEM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "831e9292-50d1-4376-9a29-02b406fa00a1",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C116",
+      "claim": "Image collection and data processing were performed on TFS Talos F200C microscope with an electron dose of \u223c25 electrons/\u00c52 using Leginon.",
+      "claim_type": "EXPLICIT",
+      "source": "Image collection and data processing were performed on TFS Talos F200C microscope (1.98 \u00c5/pixel; 73,000\u00d7 magnification) with an electron dose of \u223c25 electrons/\u00c52 using Leginon (Pugach et al., 2015; Suloway et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental protocol for EMPEM, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "7865f3df-b710-4e7e-b0a8-260c3bb72846",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C117",
+      "claim": "2D classification, 3D sorting, and 3D refinement were conducted using Relion v3.0.",
+      "claim_type": "EXPLICIT",
+      "source": "2D classification, 3D sorting, and 3D refinement were conducted using Relion v3.0 (Zivanov et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific data analysis approach for EMPEM, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "aae998fb-90a8-4f54-a34d-4c793d6caa1d",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C118",
+      "claim": "EM density maps were visualized using UCSF Chimera and segmented using Segger.",
+      "claim_type": "EXPLICIT",
+      "source": "EM density maps were visualized using UCSF Chimera (Pettersen et al., 2004) and segmented using Segger (Pintilie et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific data analysis approach for EMPEM, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "61409ce5-cb40-456b-8be3-6f6ba7f1d5c6",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C119",
+      "claim": "Illumina sequencing reads were uploaded to the NCBI SRA as BioProject PRJNA656582 with sample identifiers SRR12431153-SRR12431189.",
+      "claim_type": "EXPLICIT",
+      "source": "Illumina sequencing reads were uploaded to the NCBI SRA as BioProject PRJNA656582 with sample identifiers SRR12431153-SRR12431189.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the data is deposited.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "87300488-5d12-415d-bf98-cf2965b217ac",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "claim_id": "C120",
+      "claim": "EMPEM 3D maps are deposited into the EMDB with codes EMD-23366 to EMD-23371.",
+      "claim_type": "EXPLICIT",
+      "source": "EMPEM 3D maps are deposited into the EMDB with codes EMD-23366 to EMD-23371.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the data is deposited.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mutational antigenic profiling was successfully performed on rabbit sera using libraries of replication-competent HIV virions expressing all mutants of BG505.T332N Env. The method quantifies how all single amino-acid mutations affect viral neutralization by measuring enrichment of escape mutations after serum selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C101-C111 describe the mutational antigenic profiling methodology in detail, including experimental protocols, data analysis approaches, and the differential selection metric. The method is well-documented with appropriate controls, replicate experiments (C23-C24), and statistical analysis (C30). The approach is validated by correlation with TZM-bl neutralization assays (C30, r=0.97, p=0.0011).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "d2cc0be8-046b-4563-9062-6700c3f9d7c6",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EMPEM was successfully performed to directly visualize serum Fabs bound to BG505 SOSIP trimers. The method involves IgG purification, Fab generation, complex formation with SOSIP trimers, and negative stain electron microscopy with 3D reconstruction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C112-C118 provide detailed experimental protocols for EMPEM, including sample preparation, imaging parameters, and data processing approaches. The methodology is well-established and appropriately cited (C116-C118), with clear documentation of all steps from Fab preparation through 3D reconstruction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "b27db845-6040-4973-ab1e-35da1db7e5ec",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The dominant neutralizing specificities identified by mutational antigenic profiling were generally only a subset of the more diverse binding specificities identified by EMPEM. All sera showed binding responses to multiple epitopes including GH, C3/V5, base-of-trimer, N611 glycan, and V1/V3 regions, while neutralization escape was more focused.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C36-C39, C42-C43 are directly supported by comparative data in Figure 3, which shows EMPEM identifying binding to many epitopes where mutations do not affect viral neutralization. For example, serum 5724 shows focused neutralization escape only in C3/V5 (C31) but binding responses to GH, N611 glycan, base-of-trimer, and V1/V3 epitopes (C39). This is a primary finding of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Differences between binding and neutralization responses reflect antigenic differences between soluble SOSIP trimers and Env on viral surfaces. Specifically, the base-of-trimer epitope is accessible on soluble trimers but not on virus, N611 has lower glycan occupancy on trimers than virus, and the gp120 interface epitope includes the A316W mutation specific to SOSIP.v4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C52 explain discrepancies between EMPEM binding and mutational antigenic profiling neutralization data through well-documented structural and biochemical differences. The base epitope inaccessibility on virus (C40-C41) and differential N611 glycosylation (C45-C46) are supported by prior work. The A316W mutation effect (C51) is from unpublished work but provides a mechanistic explanation for observed gp120 interface responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "425423a5-6c66-4505-ae07-6874cafcc818",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutational antigenic profiling results are largely concordant with prior knowledge on BG505 trimer immunogenicity in rabbits, with each serum targeting one or both of the C3/V5 or GH epitopes. The results also agree with preliminary point-mutant mapping using TZM-bl assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 are supported by data in Figure 2 showing that all sera target C3/V5 and/or GH epitopes, consistent with prior studies (C10-C14). The concordance with preliminary TZM-bl mapping (C27) validates the mutational antigenic profiling approach. Notably, the method revealed C3/V5 targeting in serum 2124 that was not apparent from preliminary mapping (C28-C29).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "cb65458f-4c2b-416e-8269-c61b84924f6e",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The fold enrichment in mutational antigenic profiling correlates well with fold change in ID50 in TZM-bl neutralization assays (Pearson's r=0.97, p=0.0011). Sera with focused responses show large effect sizes for specific mutations, while sera with broader responses show smaller effect sizes across multiple epitopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 provides strong statistical validation (r=0.97, p=0.0011) of the mutational antigenic profiling approach through correlation with independent TZM-bl assays. Claims C31-C35 provide specific examples: serum 5724 shows ~190-fold enrichment and 64-fold ID50 shift for T464H, while serum 2423 shows only ~2-fold effects for N356K, consistent with focused vs. broad responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TZM-bl neutralization assays with single and double epitope glycan knock-in mutations reveal the relative dominance of GH and C3/V5 neutralizing responses. Sera 5724 and 2425 have dominant C3/V5 responses with limited GH neutralizing activity, while sera 2423, 2124, 2214, and 5727 show varying combinations of dominant and subdominant responses to both epitopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C62 are supported by systematic TZM-bl data in Figure 3\u2014figure supplement 1. The double mutant approach (S241N + I358T) effectively distinguishes dominant from subdominant responses. For sera 5724 and 2425, the double mutant has similar effects to the C3/V5 single mutant (C55), indicating limited GH neutralization despite GH binding observed by EMPEM (C57). The interpretation of relative dominance for other sera (C60-C62) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "3e469e97-2505-4243-9e14-b603a31965b5",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "V1 insertions alone did not affect neutralization of any sera, but had additional effects when combined with GH mutations, suggesting subdominant neutralizing responses to V1 that were missed by both EMPEM and mutational antigenic profiling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 and C92 are supported by TZM-bl data in Figure 3\u2014figure supplement 1 showing that V1 insertions have no effect alone but enhance the effect of GH mutations. This suggests subdominant V1 responses that require elimination of dominant responses to be detected. The authors appropriately note the caveat that V1+GH double mutants might broadly affect antigenicity (C65).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "7e619af0-11bd-4c7a-b106-94b48f46cec4",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mutational antigenic profiling reveals residue-level epitope specificity within the C3/V5 region. Sites 464 and 356/358 anchor the epitope across most sera, but detailed specificity varies: some sera focus on C3 sites 350-351 or 354-357, while serum 5724 focuses narrowly on the V5 region. Site 396 bridges C3 and V5 regions and is an escape site for most sera.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C77 are supported by detailed mutational antigenic profiling data in Figure 4 and validated by TZM-bl assays. The identification of anchor residues 464 and 356/358 (C66-C67) is consistent across sera. The variation in fine specificity (C68-C71) is demonstrated by differential effects of mutations at sites 350, 351, 354-357 across sera. TZM-bl validation (C74-C77) confirms these differences, with serum 5724 unaffected by mutations at 350, 351, 355, 356 but strongly affected by 358 and 464.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "7955f801-83c0-4a22-9dc9-2a899663c4ac",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mutational antigenic profiling better explores escape mutations than testing smaller panels of pseudovirus mutants. For example, while T465N glycan knock-in escapes many sera, other mutations at site 465 have similar or larger effects, suggesting the immune response targets site 465 and neighboring V5 residues rather than a region obstructed by the glycan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 are supported by data in Figures 2 and 3 showing that multiple mutations at site 465 have effects comparable to or exceeding the T465N glycan knock-in. This demonstrates the advantage of comprehensive mutational scanning over targeted point mutants. The inference that responses target site 465 directly rather than a glycan-obstructed region (C80) is reasonable based on the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "519c6195-da89-4c4b-8390-ca036caf11be",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A subset of sera target the 241/289 glycan hole epitope, with selective pressure spanning from site 85 near the fusion peptide through the GH region to site 347 near C3/V5. The blending of C3/V5 and GH epitopes supports the notion of a BG505-specific immunodominant 'super-epitope'. Mutations at site 629, particularly L629P, are enriched in GH-targeting sera and may disrupt the HR-2 alpha helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 are supported by mutational antigenic profiling data in Figure 5 showing a large epitope region spanning sites 85-347. The 'super-epitope' concept (C83) is supported by the data and prior work (Nogal et al., 2020). The L629P enrichment (C84) is clearly shown in Figure 5. However, the mechanistic explanation for L629P (C86) is speculative, as appropriately indicated by the authors' use of 'may'.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "ceb7a57b-c70e-42d7-a74f-d3f56d737988",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The GH and C3/V5 epitopes are not desirable targets for broadly neutralizing vaccine design due to strain-specificity and low sequence conservation. It will be important to silence these immunodominant responses to redirect responses to more conserved epitopes. Similar specificities have been observed in non-human primates, and mutational antigenic profiling provides a map of alterations that could be used for immunogen resurfacing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C88 about the undesirability of GH and C3/V5 for vaccine design are supported by citations and sequence conservation arguments. However, the hypothesis that silencing these responses will aid in redirecting to conserved epitopes (C89) is speculative and not directly tested in this study. The observation of similar specificities in non-human primates (C90) is citation-supported. The utility of the data for immunogen design (C91) is a reasonable inference but represents future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "8847bbaa-a80e-44e4-9e61-fcdfae8ee895",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The mutant virus libraries have on average ~1 Env mutation per virus, limiting detection of subdominant responses since each virion can only escape one component of polyclonal responses. Rigorous quantification and comparison of binding and neutralizing responses across sera is not yet possible. Nonetheless, this work describes the most detailed mapping yet of polyclonal sera specificities at both binding and neutralizing levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 accurately describe a fundamental limitation of the mutational antigenic profiling approach - the inability to detect subdominant responses when virions carry single mutations. Claim C95 appropriately acknowledges current technical limitations in quantification. Claims C96-C97 correctly distinguish what each method measures. Claim C98 is a reasonable assessment of the work's significance given the comprehensive dual approach of EMPEM and mutational antigenic profiling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "e1033071-f620-4c3d-8bf4-5e394814b967",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has established that SOSIP trimers recapitulate native Env structure and induce autologous tier-2 neutralizing responses in animals. BG505 trimer immunization can protect macaques against matched SHIV but has not consistently achieved heterologous breadth. In rabbits, responses predominantly target the BG505-specific glycan hole and C3/V5 epitope, with less frequent targeting of V1. Similar strain-specific responses have been observed in other species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C19 summarize prior work on SOSIP trimer immunogenicity, all supported by appropriate citations. These claims establish the context and rationale for the current study. The citations appear accurate and relevant to the claims made. This represents well-documented background knowledge rather than new findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "87bdd155-c7e9-4451-9b6e-c971a31ef526",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used sera from rabbits sequentially vaccinated with BG505 SOSIP.664 (containing T332N mutation) or BG505 SOSIP.V4.1 (further stabilized), administered 3-4 times. Mutational antigenic profiling experiments achieved 0.02-9.27% library escape across replicates, with per-serum averages of 0.3-2.7%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 describe the experimental design and are factual statements about the immunogens used, supported by appropriate citations. Claims C23-C24 report quantitative results from the mutational antigenic profiling experiments shown in Figure 1\u2014figure supplement 1. The relatively constant level of selection across sera (0.3-2.7% average) indicates appropriate experimental design for comparative analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "83a660d3-eeb0-4a21-b165-ce458fe02e2a",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Determining the extent of immunofocusing to targeted epitopes while tracking and eliminating off-target responses will be critical to HIV vaccine design. EMPEM and mutational antigenic profiling can aid rational vaccine design by directly mapping polyclonal serum specificities for both binding and neutralization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 represent reasonable conclusions about the utility of these methods for vaccine design. The work demonstrates that the methods can identify both on-target and off-target responses (as shown throughout the manuscript), which is indeed valuable for iterative vaccine design. However, these are forward-looking statements about potential applications rather than demonstrated vaccine design outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    },
+    {
+      "id": "38352a8d-c008-473e-96bc-aaa6ac1d5231",
+      "content_id": "08f85a01-ce9a-443d-8e34-1b2bb7d02d4b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "All data from the study have been deposited in public repositories: Illumina sequencing reads in NCBI SRA (BioProject PRJNA656582) and EMPEM 3D maps in EMDB (codes EMD-23366 to EMD-23371).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119-C120 are factual statements about data deposition that can be verified through the provided accession numbers. This represents appropriate data sharing practices for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:42:04.837071Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "321ce89d-cab8-4193-bbfa-b3daf9495cbe",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "dd7c9abc-1ef2-47e0-86a7-91fa1efaca2d",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "7695e7c7-7204-40d5-a5d3-c03e74ad98ea",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "bae63e89-f3cf-4084-82ed-0e324fe6682d",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "21f42e26-06f7-4aab-9c63-52075485ef26",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "e8b0edb1-a111-47f8-a28d-546076c4d26a",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "686e35f2-ac7a-4be2-bae3-a807ffc957d6",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "e20d81e1-f3b6-42f4-a59f-7f68734d638e",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "f2e428c8-6762-41f9-9a11-ac7dccd20d6f",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "5046eed2-e941-4f4d-aeb9-292255edac8f",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "fe7729ba-ab86-4fc2-9b06-e0cbd2d1ce8f",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "8de73141-b8cc-4bcc-8fd4-c13a1552f90c",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "b532f9e0-e402-4b4a-bbed-98c88f73c792",
+      "result_id": "031b6baa-1053-49b5-bda6-2b0aac5c49f0"
+    },
+    {
+      "claim_id": "dd7c9abc-1ef2-47e0-86a7-91fa1efaca2d",
+      "result_id": "d2cc0be8-046b-4563-9062-6700c3f9d7c6"
+    },
+    {
+      "claim_id": "99827f5c-e509-4e97-98b2-a1425c94b207",
+      "result_id": "d2cc0be8-046b-4563-9062-6700c3f9d7c6"
+    },
+    {
+      "claim_id": "a1e9d6d4-a519-4a72-8486-5a960b3dd508",
+      "result_id": "d2cc0be8-046b-4563-9062-6700c3f9d7c6"
+    },
+    {
+      "claim_id": "084882d8-ae71-4c64-93bd-ad7cc4699a5f",
+      "result_id": "d2cc0be8-046b-4563-9062-6700c3f9d7c6"
+    },
+    {
+      "claim_id": "7e2d1a8e-6987-4d01-bc47-f2df8d4831b9",
+      "result_id": "d2cc0be8-046b-4563-9062-6700c3f9d7c6"
+    },
+    {
+      "claim_id": "831e9292-50d1-4376-9a29-02b406fa00a1",
+      "result_id": "d2cc0be8-046b-4563-9062-6700c3f9d7c6"
+    },
+    {
+      "claim_id": "7865f3df-b710-4e7e-b0a8-260c3bb72846",
+      "result_id": "d2cc0be8-046b-4563-9062-6700c3f9d7c6"
+    },
+    {
+      "claim_id": "aae998fb-90a8-4f54-a34d-4c793d6caa1d",
+      "result_id": "d2cc0be8-046b-4563-9062-6700c3f9d7c6"
+    },
+    {
+      "claim_id": "a1300b67-9cc9-4f59-b6f4-fb8f58d82656",
+      "result_id": "b27db845-6040-4973-ab1e-35da1db7e5ec"
+    },
+    {
+      "claim_id": "643949c0-d94c-4e9e-8e1f-111fd1852f74",
+      "result_id": "b27db845-6040-4973-ab1e-35da1db7e5ec"
+    },
+    {
+      "claim_id": "090db997-ad57-4cb3-a4b8-64b7aeba0657",
+      "result_id": "b27db845-6040-4973-ab1e-35da1db7e5ec"
+    },
+    {
+      "claim_id": "7d11f3d1-6f5e-408b-af88-c8728ad88e17",
+      "result_id": "b27db845-6040-4973-ab1e-35da1db7e5ec"
+    },
+    {
+      "claim_id": "178d10ff-0adc-439f-9389-1ccb304975c7",
+      "result_id": "b27db845-6040-4973-ab1e-35da1db7e5ec"
+    },
+    {
+      "claim_id": "60afa549-d7ee-4b1b-8da0-6178e0e701d4",
+      "result_id": "b27db845-6040-4973-ab1e-35da1db7e5ec"
+    },
+    {
+      "claim_id": "6a200ab8-6671-4772-87d3-c854e65d6534",
+      "result_id": "b27db845-6040-4973-ab1e-35da1db7e5ec"
+    },
+    {
+      "claim_id": "e3ea895f-a517-411f-9e72-b7af83e8e87b",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "e35b9f35-6199-4d3e-91bd-fb6d4407ce4b",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "20fedda4-436e-426f-85d4-1fb4a5d9f671",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "60afa549-d7ee-4b1b-8da0-6178e0e701d4",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "6a200ab8-6671-4772-87d3-c854e65d6534",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "f9ed38bb-3f66-48c8-b962-67a18a802d7b",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "0b3e087d-51da-4f3d-890a-38e8a19091c4",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "0cf6afc9-319b-4334-bf89-2a70622ef18c",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "1cf7191a-63fa-493e-871f-abf70b33dccb",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "a98376b5-463c-4222-9e7e-aa9435bc820d",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "812c04bb-262b-4352-86fe-aa6b276c623e",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "3aff757f-21e6-47c6-a5de-425da9c4b0cb",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "3ac27589-8511-443b-b9d7-5d69f21f2e99",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "5f07185c-5f57-4e3b-98d9-349d55b644fd",
+      "result_id": "a455c9d2-c5c9-4cc4-8a1d-1a9622c253e4"
+    },
+    {
+      "claim_id": "902f6cad-0a99-4c41-98fa-59d3f542a883",
+      "result_id": "425423a5-6c66-4505-ae07-6874cafcc818"
+    },
+    {
+      "claim_id": "ffe098ef-e81a-475d-a76d-4669d69c324d",
+      "result_id": "425423a5-6c66-4505-ae07-6874cafcc818"
+    },
+    {
+      "claim_id": "7cf9a4af-ed1f-4cf7-844e-1bc8d58bb37f",
+      "result_id": "425423a5-6c66-4505-ae07-6874cafcc818"
+    },
+    {
+      "claim_id": "a121e987-112f-4e39-8fa9-5959a3f82344",
+      "result_id": "425423a5-6c66-4505-ae07-6874cafcc818"
+    },
+    {
+      "claim_id": "9cd6ac9f-d8df-46a0-a184-39169ea0b363",
+      "result_id": "425423a5-6c66-4505-ae07-6874cafcc818"
+    },
+    {
+      "claim_id": "46b5a5d4-c4c9-4538-be51-9eb3ba6a1977",
+      "result_id": "cb65458f-4c2b-416e-8269-c61b84924f6e"
+    },
+    {
+      "claim_id": "5981a42c-5dfc-4916-9496-943af9e46405",
+      "result_id": "cb65458f-4c2b-416e-8269-c61b84924f6e"
+    },
+    {
+      "claim_id": "1756e99d-392c-4738-b6a6-6018f4f1dc39",
+      "result_id": "cb65458f-4c2b-416e-8269-c61b84924f6e"
+    },
+    {
+      "claim_id": "0be534a5-e29b-4d53-ba35-59097a296fc2",
+      "result_id": "cb65458f-4c2b-416e-8269-c61b84924f6e"
+    },
+    {
+      "claim_id": "03da773d-4a0f-422a-a487-b4fdf8b468ac",
+      "result_id": "cb65458f-4c2b-416e-8269-c61b84924f6e"
+    },
+    {
+      "claim_id": "c90a9786-7a77-4771-88cf-281638216998",
+      "result_id": "cb65458f-4c2b-416e-8269-c61b84924f6e"
+    },
+    {
+      "claim_id": "712e2f94-a931-4e35-b57f-b632e84313b1",
+      "result_id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d"
+    },
+    {
+      "claim_id": "4ee7e91e-30ca-4d96-934d-9a74073d4007",
+      "result_id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d"
+    },
+    {
+      "claim_id": "5345f48e-b56f-4b7f-989e-2bc3e20f0021",
+      "result_id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d"
+    },
+    {
+      "claim_id": "55da9970-53a2-42ad-9188-e10bfcab3e94",
+      "result_id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d"
+    },
+    {
+      "claim_id": "97cd107d-8289-4291-aea6-7683320b06e1",
+      "result_id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d"
+    },
+    {
+      "claim_id": "c2c6006d-42d3-4d4d-8150-ae5b37d9d701",
+      "result_id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d"
+    },
+    {
+      "claim_id": "40754add-dbd2-47c3-8474-0195dd5a4bb3",
+      "result_id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d"
+    },
+    {
+      "claim_id": "d818fbe9-ef80-420d-80bb-fbf52a3f2d77",
+      "result_id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d"
+    },
+    {
+      "claim_id": "a67974d2-aab6-4f88-a522-74fdf634fc74",
+      "result_id": "a0fd6ef4-c42c-4c04-ac7c-6e633cf65d4d"
+    },
+    {
+      "claim_id": "58de6b48-bd81-4b41-a329-5a5aafac5183",
+      "result_id": "3e469e97-2505-4243-9e14-b603a31965b5"
+    },
+    {
+      "claim_id": "460076c6-4a68-4cf5-817a-3e7c27839390",
+      "result_id": "3e469e97-2505-4243-9e14-b603a31965b5"
+    },
+    {
+      "claim_id": "dbc96fb2-0f2e-43af-affb-fe6e9fad05b2",
+      "result_id": "3e469e97-2505-4243-9e14-b603a31965b5"
+    },
+    {
+      "claim_id": "7d7f0ac2-2deb-4bb7-a620-7a4881991ad6",
+      "result_id": "3e469e97-2505-4243-9e14-b603a31965b5"
+    },
+    {
+      "claim_id": "f9065065-7289-4580-9e08-1e54349c2b63",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "9d23a0f3-477d-43c0-860a-b0a27f9bdac9",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "3234bbed-dc53-45d5-bcb0-3996e355cadd",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "22f40695-8cb4-40ef-b118-cc4ec20bd0c0",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "2e5a1aca-3566-4faa-847c-da89992c2f21",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "12ec36cb-c3c7-4453-80c3-aaa9d317bf95",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "b921c5c5-7343-4dba-a0fc-72a5bf0eaee5",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "2f32ad49-4477-4696-9118-62bf380e4929",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "fdea1f27-7a44-47af-b2d0-7a7a2c424f91",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "38e005c3-c618-4e2c-bdcd-18c7b6bbaa82",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "e164c18a-ef5c-4673-a161-737df223c5ce",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "1bf763b2-9634-4e42-9f12-7cb2fd7b269b",
+      "result_id": "7e619af0-11bd-4c7a-b106-94b48f46cec4"
+    },
+    {
+      "claim_id": "6946ddc8-2906-464e-b857-8467652b9bc5",
+      "result_id": "7955f801-83c0-4a22-9dc9-2a899663c4ac"
+    },
+    {
+      "claim_id": "4b6e9d88-137e-45dc-ae26-db3a281d53e1",
+      "result_id": "7955f801-83c0-4a22-9dc9-2a899663c4ac"
+    },
+    {
+      "claim_id": "ac30fb24-cdd2-442a-b4f2-b33f336e3987",
+      "result_id": "7955f801-83c0-4a22-9dc9-2a899663c4ac"
+    },
+    {
+      "claim_id": "cbb22cde-057e-458c-8a55-2f7149a3f3f8",
+      "result_id": "519c6195-da89-4c4b-8390-ca036caf11be"
+    },
+    {
+      "claim_id": "280426ec-6e83-4662-84dd-838cd78803ac",
+      "result_id": "519c6195-da89-4c4b-8390-ca036caf11be"
+    },
+    {
+      "claim_id": "574dffb5-97a7-490c-a5bd-7342adce8322",
+      "result_id": "519c6195-da89-4c4b-8390-ca036caf11be"
+    },
+    {
+      "claim_id": "253e3867-b193-402a-b80b-db94f69440b6",
+      "result_id": "519c6195-da89-4c4b-8390-ca036caf11be"
+    },
+    {
+      "claim_id": "1d24588c-f151-437d-a968-30193be6cb98",
+      "result_id": "519c6195-da89-4c4b-8390-ca036caf11be"
+    },
+    {
+      "claim_id": "70f84294-054e-48a4-b199-58c1d1a58c8d",
+      "result_id": "519c6195-da89-4c4b-8390-ca036caf11be"
+    },
+    {
+      "claim_id": "08a870a7-eab5-4b5e-8d5e-11bc76140fb8",
+      "result_id": "ceb7a57b-c70e-42d7-a74f-d3f56d737988"
+    },
+    {
+      "claim_id": "b12ee313-e8cf-4e79-8ac6-c106e3e7251d",
+      "result_id": "ceb7a57b-c70e-42d7-a74f-d3f56d737988"
+    },
+    {
+      "claim_id": "43a907ad-0460-492e-9177-0dbfa99f7e6a",
+      "result_id": "ceb7a57b-c70e-42d7-a74f-d3f56d737988"
+    },
+    {
+      "claim_id": "c2d3a5d2-412a-4efa-960e-20a9c708d87b",
+      "result_id": "ceb7a57b-c70e-42d7-a74f-d3f56d737988"
+    },
+    {
+      "claim_id": "54c40e9b-23e5-43c2-a16f-88ac5e9dd6f1",
+      "result_id": "ceb7a57b-c70e-42d7-a74f-d3f56d737988"
+    },
+    {
+      "claim_id": "d0e472d9-5e8e-4307-b0f8-6e5eb6a357e6",
+      "result_id": "8847bbaa-a80e-44e4-9e61-fcdfae8ee895"
+    },
+    {
+      "claim_id": "6b1f43fc-c040-4534-b37d-0ba1b26ebd14",
+      "result_id": "8847bbaa-a80e-44e4-9e61-fcdfae8ee895"
+    },
+    {
+      "claim_id": "aa15d9e8-fa34-48a7-8c22-b71c981ed4a3",
+      "result_id": "8847bbaa-a80e-44e4-9e61-fcdfae8ee895"
+    },
+    {
+      "claim_id": "5d2f67ef-28c4-427f-84c4-371a381b6268",
+      "result_id": "8847bbaa-a80e-44e4-9e61-fcdfae8ee895"
+    },
+    {
+      "claim_id": "c4955e4e-aa85-4010-ab68-65a0c7c648b8",
+      "result_id": "8847bbaa-a80e-44e4-9e61-fcdfae8ee895"
+    },
+    {
+      "claim_id": "40ccc6a9-de85-4596-872f-1dff7decdfc1",
+      "result_id": "8847bbaa-a80e-44e4-9e61-fcdfae8ee895"
+    },
+    {
+      "claim_id": "2e5eb21b-8467-4adf-98e8-98d494196b24",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "8db756ab-6816-42d5-b2b3-f7df059c9634",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "e341998d-889c-4644-8820-a26022ac2d0c",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "c62b1e53-da53-4ed6-a5ee-184e9c148bfc",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "50214939-9d14-4861-afc9-bf66997b8a84",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "686f8c35-9743-4e64-8189-ec67a97dfa3f",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "387823a1-22ff-4dd2-a949-9f830c6e35fb",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "879edbd5-99f6-4626-b4fb-4e2d36eff3b4",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "3292920d-2418-47af-a938-a1fa664512fb",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "f7516085-e413-484d-a0e3-734c9ab06161",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "05b42b3e-9043-4ca2-9aaf-294df1d175ec",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "d0ba9c5f-aaba-4db8-ac28-16b397be2cd5",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "e790734d-dc98-4db1-8884-baef8095b31c",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "925b972b-490c-450e-84fa-a445c620e8e6",
+      "result_id": "e1033071-f620-4c3d-8bf4-5e394814b967"
+    },
+    {
+      "claim_id": "3d0474f0-a4e3-4a85-bb95-d51dffe03755",
+      "result_id": "87bdd155-c7e9-4451-9b6e-c971a31ef526"
+    },
+    {
+      "claim_id": "b39cec3a-0626-4127-b2a9-514a50410ecf",
+      "result_id": "87bdd155-c7e9-4451-9b6e-c971a31ef526"
+    },
+    {
+      "claim_id": "68dcbc54-3a43-4b8e-a327-3606c5bc9ab8",
+      "result_id": "87bdd155-c7e9-4451-9b6e-c971a31ef526"
+    },
+    {
+      "claim_id": "b3c29a7d-3b33-4c3a-95f5-17b5bf4aabb4",
+      "result_id": "87bdd155-c7e9-4451-9b6e-c971a31ef526"
+    },
+    {
+      "claim_id": "0ffef28e-6e6e-486c-a256-ded1fb0a8dea",
+      "result_id": "87bdd155-c7e9-4451-9b6e-c971a31ef526"
+    },
+    {
+      "claim_id": "e48627ae-6fb7-448d-9aff-68194edd4f7e",
+      "result_id": "83a660d3-eeb0-4a21-b165-ce458fe02e2a"
+    },
+    {
+      "claim_id": "88c24f75-547d-41bd-8251-2c2d491154a9",
+      "result_id": "83a660d3-eeb0-4a21-b165-ce458fe02e2a"
+    },
+    {
+      "claim_id": "61409ce5-cb40-456b-8be3-6f6ba7f1d5c6",
+      "result_id": "38352a8d-c008-473e-96bc-aaa6ac1d5231"
+    },
+    {
+      "claim_id": "87300488-5d12-415d-bf98-cf2965b217ac",
+      "result_id": "38352a8d-c008-473e-96bc-aaa6ac1d5231"
+    }
+  ],
+  "comparisons": []
+}

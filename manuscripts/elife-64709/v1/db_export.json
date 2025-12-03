@@ -1,0 +1,1711 @@
+{
+  "submission": {
+    "id": "f9d9def8-0fdf-442c-95a0-db894c5858f4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:17:43.812881Z",
+    "updated_at": "2025-12-03T11:17:43.812881Z"
+  },
+  "content": [
+    {
+      "id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "submission_id": "f9d9def8-0fdf-442c-95a0-db894c5858f4",
+      "content_type": "manuscript",
+      "content_text": "# Nanoscale binding site localization by molecular distance estimation on native cell surfaces using topological image averaging\n\n## Authors\n\n- Vibha Kumra Ahnlide<sup>1</sup>\n- Johannes Kumra Ahnlide<sup>1</sup>\n- Sebastian Wrighton<sup>1</sup> ([ORCID: 0000-0002-3378-7925](https://orcid.org/0000-0002-3378-7925))\n- Jason P Beech<sup>2</sup>\n- Pontus Nordenfelt<sup>1</sup> ([ORCID: 0000-0002-9481-9951](https://orcid.org/0000-0002-9481-9951)) \u2020\n\n### Affiliations\n\n1. Division of Infection Medicine, Department of Clinical Sciences, Faculty of Medicine, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))\n2. Division of Solid State Physics, Department of Physics, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntibody binding to cell surface proteins plays a crucial role in immunity, and the location of an epitope can altogether determine the immunological outcome of a host-target interaction. Techniques available today for epitope identification are costly, time-consuming, and unsuited for high-throughput analysis. Fast and efficient screening of epitope location can be useful for the development of therapeutic monoclonal antibodies and vaccines. Cellular morphology typically varies, and antibodies often bind heterogeneously across a cell surface, making traditional particle-averaging strategies challenging for accurate native antibody localization. In the present work, we have developed a method, SiteLoc, for imaging-based molecular localization on cellular surface proteins. Nanometer-scale resolution is achieved through localization in one dimension, namely, the distance from a bound ligand to a reference surface. This is done by using topological image averaging. Our results show that this method is well suited for antibody binding site measurements on native cell surface morphology and that it can be applied to other molecular distance estimations as well.\n\n## Introduction\n\nThe location of protein binding sites on cellular surfaces can have wide-ranging implications for various cellular processes, such as immune signalling, cell adhesion, cell migration, and phagocytosis. Antibody binding to pathogen surface proteins plays a crucial role in immunity (Lu et al., 2018), and epitope localization affects diverse immunological outcomes, such as antibody neutralizing ability (Law et al., 2008; Kwong et al., 2013; Salinas et al., 2019; Caoili, 2014; Ivanyi, 2014) or autoreactivity (Caoili, 2014; Cunningham, 2014). Even though monoclonal antibody (mAb) treatments have proven to be successful for a wide spectrum of diseases, there are very few monoclonal antibodies clinically available for the treatment of bacterial infections (Motley et al., 2019). Developing therapeutic mAbs against infections may require large-scale screening of highly conserved and functional epitopes (Mart\u00edn-Galiano and McConnell, 2019). Antibody epitopes are typically identified using crystallography, mutagenesis, or crosslinking coupled mass spectrometry (Abbott et al., 2014). As of today, these methods are costly, time-consuming, and unsuitable for high-throughput analysis. Fast and efficient screening of epitope locations can be useful for the development of therapeutic mAbs and vaccines.\n\nWhile averaging methods for nanometer-scale localization on microscopy data exist, these do not work for binding sites on proteins with heterogeneous expression on the cellular surface. Moreover, they are designed for identical (Szymborska et al., 2013; Laine et al., 2015) or spherical (Son et al., 2020) particles and are thereby not fitted for unaltered cells due to the existing biological variation of surface morphology.\n\nIn the present work, we have developed an imaging-based method for localization of binding sites with nanometer-scale precision. The location of a binding site is determined by calculating the average distance between the ligand channel and a reference signal channel using the averaged fluorescent signal along a cell contour. To assess the performance of this method, we analyse simulated images, demonstrating high accuracy for varying surface expression and morphology. By measuring the height of DNA probes on erythrocyte surfaces, we show that our method can accurately estimate molecular heights on spherical and non-spherical cells. Our presented results with structured illumination microscopy (SIM) data achieve an ~10 nm precision certainty. We apply the site localization method to determine known binding site locales on M protein that is unevenly expressed on the bacterial surface of Streptococcus pyogenes. Additionally, our method yields viable results when we perform site localization on widefield images with and without deconvolution. To sum up, our site localization method enables rapid determination of binding sites without the need for synthetic modification of cell surface morphology.\n\n## Results\n\n### Principles of site localization method\n\nBinding site localization is based on resolving the axial distance between bound ligands and a reference surface. This is done by implementing an averaging method on high-resolution images. With this method, nanometer-scale precision is achieved by dimension reduction of surface data within an image plane.\n\nA site localization measurement on antibody-coated bacteria is exemplified in Figure 1. Fluorescently conjugated wheat germ agglutinin (WGA) that binds bacterial peptidoglycan is used here for the reference region, and antibodies that bind to bacterial M protein are labelled with another fluorescent dye for imaging in a separate channel (Figure 1a). The example shows how our method handles the uneven distribution of M protein on bacterial surfaces (Figure 1b). The pipeline for the site localization method is shown in Figure 1b. For each image, bacteria are identified in the reference channel by fitting circles to an edge-detection-processed image. Each circle is isolated as a slightly larger mask and the data in the circle is polar transformed. An alignment of the reference position is performed by identifying peaks to each intensity profile. This way, the axial positions are normalized to the actual surface signal. The spatially corresponding data in the antibody channel is processed in the same manner, and the distance between the antibody and WGA signal is resolved through the averaging of multiple acquisitions of the same field of view. Altogether, a relative binding site is determined by resolving the distance between the reference and antibody channel using the cumulative measurement from multiple repeated images.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig1-v1.jpg)\n\n**Figure 1.:** (a) Site localization on bacterial surfaces. The illustration exemplifies a measurement with antibody-coated bacteria. Antibodies with red fluorescent dyes are bound to bacterial surface proteins. A bacterial cell wall is labelled with a green fluorescent dye. High-resolution images of single bacteria are acquired in the focal plane, and the fluorescent peak signal is averaged along the bacterial contour. The distance d is determined by resolving the difference between the fluorescent signal peaks. (b) Analysis pipeline for the site localization method. Structured illumination microscopy (SIM) images are shown at the top. S. pyogenes strain SF370 has been fixed, stained with Alexa Fluor 488-conjugated wheat germ agglutinin (WGA), and coated with antibody Fc fragments. The antibody fragments were stained with Fc-specific Alexa Fluor 647-conjugated F(ab\u2019)2 fragments. The scale bar is 500 nm. The aim is to locate the antibody binding site by calculating the average distance between the antibody channel and a reference signal channel. (1) A raw image in the reference channel is shown. (2) Bacteria are identified by fitting circles to an edge-detection-processed image. (3) The data in each circle mask is isolated and transformed to polar coordinates. (4) An alignment of the reference position is performed by identifying peaks at each radial position. (5) The spatially corresponding data in the antibody channel is extracted. (6) The radially aligned peaks are then averaged. The peak distance between these intensity profiles should then correspond to the distance between the binding site and the bacterial peptidoglycan layer. (c) Representation of improved SNR by peak alignment for non-spherical particles Intensity profiles (right) for the reference channel is shown together with their respective image data (left). The signal along a single line for an oval-shaped bacterium is shown at the top. The intensity profile of a radial average is shown in the middle. An improved SNR is seen as a peak alignment is performed (bottom).\n\nA strength of the method is that it can be used for particles with a non-spherical topology and uneven staining. It is evident that the signal precision is improved as the distortion of an ovoid bacterium is accounted for through axial normalization in polar coordinates (Figure 1c).\n\n### Site localization measurements on simulated images with various cell morphologies\n\nTo assess the performance of the site localization method, we generated simulated fluorescence images with variable surface staining and morphology. The images consisted of two channels created by sampling a fixed number of \u2018photons\u2019 from a spatial distribution. In the reference channel, the distribution was designed to emulate the spatial distribution of photons in a microscope for a cellular surface. In the target channel, a distribution based on the set of points in the reference channel at a chosen perpendicular distance was used. The perpendicular distance between the reference channel distribution and the target channel distribution was chosen to be 2 px corresponding to 41 nm using the pixel length of our N-SIM microscopy setup. In order to mimic the experimental process of acquiring repeated frames of each data point in a time series, for each chosen shape 100 time series were created with 10 frames each. The results, shown in Figure 2, indicate that a high accuracy can be achieved for various cell surface patterns. However, for certain shapes, the method yields a slightly larger distance than the true value (Figure 2b). The reported accuracy for site localization measurements on the simulations in relation to number of cells is assessed and presented in Figure 2c. To explore sources of uncertainty in site localization measurements, additional images were simulated to represent different types of labelling (Figure 2\u2014figure supplement 1). As expected, the uncertainty is larger with secondary antibody labelling than with direct labelling. The site localization uncertainty also increases when the SNR is decreased. These results demonstrate the robustness of the site localization method for varying surface expression and morphology.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig2-v1.jpg)\n\n**Figure 2.:** (a) Examples of simulated images. The different shapes that the method was tested on are shown. From each of the 12 morphologies, 100 time series with 10 frames each were generated. Each frame consists of a set number of photons sampled from the shape\u2019s spatial distribution. Before creating a time series, a random translation and rotation were applied to the distribution. The chosen shapes emulate various eccentricities and degrees of surface protein patchiness found, for example, in bacteria as well as the surface irregularity of larger cells. The 1 \u00b5m scale bar assumes a pixel length of 20.5 nm corresponding to that of the structured illumination microscopy (SIM) images, with this pixel length the simulated distance between the reference channel and the target channel is 41 nm. (b) Site localization results expressed as deviation from simulated distances. The deviations of the measured values from the simulated distances are shown in a violin plot grouped by shape. The mean distance deviations are in order from left to right [mean \u00b1 SD, median (IQR)]: 0.2 \u00b1 0.5 nm, 0.1 (0.7) nm; 0.2 (1.0) nm; 0.3 \u00b1 0.6 nm, 0.3 (0.8) nm; 1.1 \u00b1 0.5 nm, 1.0 (0.7) nm; 1.0 \u00b1 0.8 nm, 1.0 (1.1) nm; 1.2 \u00b1 0.8 nm, 1.3 (1.1) nm; 3.0 \u00b1 0.7 nm, 3.1 (0.9) nm; 5.1 \u00b1 1.1 nm, 5.2 (1.3) nm; 2.9 \u00b1 1.0 nm, 2.8 (1.2) nm; 1.0 \u00b1 0.6 nm, 1.0 (0.7) nm; 1.2 \u00b1 0.6 nm, 1.2 (0.8) nm; 1.5 \u00b1 0.8 nm, 1.6 (1.1) nm. (c) Bootstrap of measured mean distances as a function of the number of time series used. The plots show an estimate of the 95% confidence interval of the mean of a number of measurements computed by percentile bootstrap with 50,000 resamples. As the number of measurements used in the calculation of the mean increases, the confidence interval narrows.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The deviations of the measured values from the simulated distance are shown in violin plots grouped by shape. For each shape, the result is shown for parameters corresponding to direct labelling of the binding site, parameters corresponding to labelling with a secondary antibody, and parameters corresponding to labelling with a secondary antibody and low exposure. The median distance deviations are in order from left to right in each subplot [median (IQR)]: 1: 0.1 (0.7) nm, \u20130.8 (1.3) nm, 0.4 (1.8) nm. 2: 1.0 (0.7) nm, 0.5 (1.3) nm, 0.1 (2.0) nm. 3: 0.3 (0.8) nm, \u20130.9 (1.1) nm, \u20130.2 (1.7) nm. 4: 1.3 (1.1) nm, 1.1 (1.2) nm, 0.2 (1.9) nm.\n\n### Validation of site localization method by measurement of DNA probes on cellular surfaces\n\nIn order to test the method in vitro, we performed site localization measurements on surface-tethered dsDNA probes of known lengths. Human erythrocytes were stained with membrane dye CellBrite Fix 488 and Alexa Fluor 647-conjugated dsDNA of varying length (Figure 3b). Images were acquired using an N-SIM microscope. To begin with, swelled spherical erythrocytes were analysed with the site localization method as well as with an existing method for determining molecular heights on spherical particles (Figure 3\u2014figure supplement 1). The results show good agreement. Site localization was thereafter performed on non-spherical erythrocytes and show results equivalent to that of spherical cells (Figure 3c). We further tested the method\u2019s capabilities by measuring the height of dsDNA with varying lengths on the surface of non-spherical red blood cells (Figure 3e). The measured heights are approximately half of the full length of the DNA strands. The measurements agree well with the predicted worm-like chain (WLC) model height for DNA strands, with a persistence length of 50 nm (Baumann et al., 1997), tethered to a surface and able to freely rotate. Altogether, we show that our method can accurately estimate molecular heights on spherical and non-spherical cellular surfaces.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig3-v1.jpg)\n\n**Figure 3.:** (a) A schematic illustrating the binding of DNA probe to red blood cells. Human red blood cells were coated with Alexa Fluor 647-conjugated dsDNA of varying lengths and a cholesterol anchor. (b) Representative structured illumination microscopy (SIM) images of spherical and non-spherical erythrocytes. Human erythrocytes were stained with membrane dye CellBrite Fix 488 and Alexa Fluor 647-conjugated dsDNA of length 48 bp. Scale bar is 2 \u00b5m. (c) Site localization method performs well for both spherical and non-spherical particles. The measured distances for 48 bp dsDNA probes on erythrocytes are shown in a violin plot. The resolved distance is [median (IQR), mean \u00b1 SD] 11.5 (11.6) nm, 11.4 \u00b1 9.3 nm (n = 31) for DNA on the spherical cells and 9.2 (10.7) nm, 9.8 \u00b1 8.1 nm (n = 33) for the non-spherical erythrocytes. Error bars indicate interquartile range. Additionally, the result for spherical cells was confirmed using an existing method for site localization on spherical objects (Figure 3\u2014figure supplement 1). (d) Representative SIM images of DNA-coated erythrocytes. Human erythrocytes were stained with membrane dye CellBrite Fix 488 and Alexa Fluor 647-conjugated dsDNA of length 18 bp, 48 bp, and 63 bp. Scale bar is 2 \u00b5m. (e) Site localization measurements of DNA probes show good agreement with predicted worm-like chain (WLC) heights The measured heights of the DNA probes are plotted as a function of the fully extended length of the DNA strands. The measured height is [median (IQR), mean \u00b1 SD] 3.7 (8.8) nm, 5.1 \u00b1 8.3 nm (n = 25) for 18 bp DNA, 9.2 (10.7) nm, 9.8 \u00b1 8.1 nm (n = 33) for 48 bp DNA, and 12.5 (8.2)nm, 10.3 \u00b1 10.5 nm (n = 30) for 63 bp DNA. Error bars indicate interquartile range. The dashed line represents predicted height based on modelling the DNA strand as a WLC with a persistence length of 50 nm free to move in a hemisphere above the surface.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The resolved distance between the two channels is [median (IQR), mean \u00b1 SD] 11.5 (11.6) nm, 11.4 \u00b1 9.3 nm (n = 31) with the site localization method and 14.8 (13.5) nm, 14.6 \u00b1 13.6 nm (n = 10) with CSOP. Error bars indicate interquartile range.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Representative images are shown at the top. S. pyogenes strain SF370 has been fixed and stained with Alexa Fluor 488- and Alexa Fluor 647-conjugated wheat germ agglutinin (WGA). Scale bar is 500 nm. The violin plots show the resolved distance between the two cell wall signals. The median resolved distance between the two channels is [median (IQR)] \u201324.8 (19.0) nm with Alexa Fluor 488 as reference and 22.8 (22.8) nm with Alexa Fluor 647 as reference. A mirroring of the results is expected as the reference and target channels are flipped, and this is evident from the shape of the violin plots. The measured offset is mainly due to chromatic aberration at the imaging plane and provides a correction constant for subsequent site localization measurements on structured illumination microscopy (SIM images).\n\n### Site localization measurement of binding sites on bacterial surface protein\n\nSite localization measurements that were performed for ligands on bacterial M protein agree well with previously reported data. The antibody Fc binding site on M protein is located at the S region (Akesson et al., 1994), and a non-specific monoclonal IgG antibody (Xolair) is used for site localization of this binding. Additionally, a measurement is carried out for an M protein-specific mAb, Ab49 (Bahnan et al., 2021), with an epitope located in the B3-S region, that is, slightly further along the IgGFc binding region. For determining binding to the far end of M protein, we used fibrinogen that has two binding sites at the B1 and B2 region (Hauri et al., 2019). We thus expect the binding sites to be arranged in accordance with the schematic shown in Figure 4\u2014figure supplement 1c. S. pyogenes strain SF370 was stained with Alexa Fluor 488-conjugated WGA and coated with Alexa Fluor 647-conjugated Xolair, Ab49, or fibrinogen (Figure 4a). Images of single bacteria were acquired using an N-SIM microscope. The median resolved distance is [median (IQR)] 5.6 (29.7) nm for the Xolair Fc binding site, 6.2 (29.8) nm for Ab49 Fab binding site, and 18.0 (49.3) nm for the two fibrinogen binding sites. The reported accuracy for site localization measurements on S. pyogenes in relation to number of biological replicates is assessed and presented in Figure 4\u2014figure supplement 1. To further explore sources of uncertainty in site localization measurements, the antibody binding sites were measured with secondary antibody labelling and compared to direct labelling (Figure 4\u2014figure supplement 2). The presented results are consistent with the arrangement of the binding sites as reported in the literature (Akesson et al., 1994; Bahnan et al., 2021; Hauri et al., 2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig4-v1.jpg)\n\n**Figure 4.:** (a) Representative structured illumination microscopy (SIM) images of ligand coated bacteria. S. pyogenes strain SF370 has been fixed, stained with Alexa Fluor 488-conjugated wheat germ agglutinin (WGA), and coated with Alexa Fluor 647-conjugated Xolair (top), Ab49 (middle), or fibrinogen. Scale bar is 500 nm. (b) Binding site measurements of antibodies and fibrinogen on bacterial M protein The measured distances are shown in a violin plot. The resolved distance between the two channels is [median (IQR), mean \u00b1 SD] 5.6 (29.7) nm, 2.5 \u00b1 26.7 nm (n = 41) for the Xolair Fc binding site, 6.2 (29.8) nm, 6.5 \u00b1 16.8 nm (n = 28) for Ab49 Fab binding site, and 18.0 (49.3) nm, 26.2 \u00b1 41.6 nm (n = 33) for the two fibrinogen binding sites. Error bars indicate the interquartile range. An intensity profile from a single bacterium is shown for each of the ligands below the violin plot. (c) A schematic illustrating the determined binding sites on M protein.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The left part of the plot shows the data points for the distance from the Alexa Fluor 488-conjugated wheat germ agglutinin (WGA) (reference) channel to the Alexa Fluor 647-conjugated WGA channel as resolved by the site localization method. The ribbon plot to the right shows an estimate of the 95% confidence interval of the mean of a number of measurements computed by percentile bootstrap with 50,000 resamples for each chosen number of replicates.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** SF370 wild type was stained with Alexa Fluor 488-conjugated wheat germ agglutinin (WGA). For secondary antibody labelling, bacteria were incubated with IdeS-cleaved Xolair or Ab49. The antibody samples were stained with fluorescently labelled IgGFab (Ab49) or IgGFc (Xolair)-specific F(ab\u2019)2 fragments (Alexa Fluor 647-conjugated anti-human IgGFc or IgGFab). For direct labelling, Alexa Fluor 647-conjugated Xolair or Ab49 was used. The median measurements are in order from left to right: [median (IQR), mean \u00b1 SD] 9.5 (55.5) nm, \u20130.1 \u00b1 63.8 nm (n = 48), 5.6 (29.7) nm, 2.5 \u00b1 26.7 nm (n = 41), 27.4 (113.7) nm, 6.1 \u00b1 88.6 nm (n = 33), 6.2 (29.8) nm, 6.5 \u00b1 16.8 nm (n = 28). It is evident from these results that site localization precision is increased when using directly conjugated antibodies.\n\n### Site localization measurements using widefield and deconvolved images\n\nBy performing site localization measurements on widefield images, we show that our method can yield viable results even with conventional microscopy data. Moreover, deconvolution of the widefield images may yield an increase in precision. Widefield images were acquired with the same optical system (see SIM in previous section), with the exception of the light source used being LED-based instead of laser-based. Comparison of site localization measurements using SIM and widefield was performed on two sets of samples; fibrinogen- and Xolair-coated S. pyogenes. Widefield and SIM images were acquired on separate datasets. For the fibrinogen samples (Figure 5b), the median resolved distance between the two channels is [median (IQR)] 18.0 (49.3) nm with SIM data, 38.5 (71.0) nm with widefield data, and 40.1 (42.0) nm with deconvolved widefield data. For the Xolair samples (Figure 5d), the median resolved distance for the Xolair Fc binding site is 5.6 (29.7) nm with SIM data, 12.3 (76.5) nm with widefield data, and 14.2 (34.5) nm with deconvolved widefield data. This indicates that the site localization method performs well with widefield images and that the precision can be increased through deconvolution.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig5-v1.jpg)\n\n**Figure 5.:** (a) Representative images of Xolair-coated bacteriaare shown at the top. Scale bar is 500 nm. S. pyogenes strain SF370 has been fixed, stained with Alexa Fluor 488-conjugated wheat germ agglutinin (WGA), and coated with Alexa Fluor 647-conjugated Xolair antibodies. (b) Site localization measurement of Fc binding site yields similar results with the widefield dataset. The resolved distance between the two channels is [median (IQR), mean \u00b1 SD] 5.6 (29.7) nm, 2.5 \u00b1 26.7 nm (n = 41) with SIM data, 12.3 (76.5) nm, 8.7 \u00b1 36.6 nm (n = 32) with widefield data, and 14.2 (34.5) nm, 17.0 \u00b1 25.4 nm (n = 31) with deconvolved widefield data. Error bars indicate the interquartile range. (c) Representative images of fibrinogen-coated bacteria are shown at the top. S. pyogenes strain SF370 has been fixed, stained with Alexa Fluor 488-conjugated WGA, and coated with antibody Alexa Fluor 647-conjugated fibrinogen. Scale bar is 500 nm. (d) Site localization measurement of fibrinogen binding sites yields similar results with the widefield dataset. The resolved distance between the two channels is [median (IQR), mean \u00b1 SD] 18.0 (49.3) nm, 26.2 \u00b1 41.6 nm (n = 33) with SIM data, 38.5 (71.0) nm, 35.9 \u00b1 53.3 nm (n = 37) with widefield data, and 40.1 (42.0) nm, 41.1 \u00b1 40.1 nm (n = 29) with deconvolved widefield data. Error bars indicate the interquartile range.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative images are shown at the top. S. pyogenes strain SF370 has been fixed and stained with Alexa Fluor 488- and Alexa Fluor 647-conjugated wheat germ agglutinin (WGA). Scale bar is 500 nm. The violin plots show the resolved distance between the two cell wall signals. The median resolved distance between the two channels is [median (IQR)] 0.6 (27.4) nm with Alexa Fluor 488 as reference and \u20130.4 (12.6) nm with Alexa Fluor 647 as reference. A mirroring of the results is expected as the reference and target channels are flipped, and this is evident from the shape of the violin plots. The measured offset is mainly due to chromatic aberration at the imaging plane and provides a correction constant for subsequent site localization measurements for widefield images.\n\n## Discussion\n\nThe locations of protein binding sites on cellular surfaces are important for a wide range of cellular processes. In particular, how and where an antibody binds to pathogen surface structures is critical for the outcome of host-pathogen interactions. This is especially relevant for bacteria as they are known to target antibodies in many different ways (Nordenfelt et al., 2012; Nordenfelt and Bj\u00f6rck, 2013). Knowing the location of the epitope greatly aids both mechanistic understanding and facilitates potential therapeutic development.\n\nWe have developed a method for imaging-based localization of binding sites on cellular surface proteins with nanometer-scale precision. Super-resolution techniques such as iPALM, STORM, and STED can in practice achieve an ~10 nm resolution but are costly imaging systems that typically require complex sample preparation. Here, an ~10 nm (~12 nm IQR, ~9 nm SD) precision is achieved with diffraction-limited microscopy images by dimension reduction of surface data within an image plane. Existing imaging-based averaging methods are designed for identical or spherical particles and therefore not suited for site localization on native cell surface morphology. This is made possible with our method through normalization of the axial positions of a reference surface.\n\nTo assess the performance of the site localization method, we analysed simulated images with variable staining and morphology. These results indicate that a 1 nm precision could be achievable under ideal conditions and show that the site localization method is highly accurate for varying topologies and inhomogeneous surface expression. To test our method in vitro, we measured the height of DNA probes on erythrocyte surfaces. These results validate that our method can accurately estimate molecular heights on spherical and non-spherical cells. Additionally, the results for spherical cells were confirmed using an existing method for site localization on spherical objects, showing good agreement. We have applied our site localization method to determine known binding site locales on M protein that is unevenly expressed on the bacterial surface of S. pyogenes. Our presented results show that this method is suited even for cells with non-spherical topology. However, it has proven difficult to perform site localization measurements on bacteria. This may be due to the small size of bacteria. We show that our method yields viable results with conventional microscopy and demonstrate that the precision may be increased by deconvolution of widefield images. Furthermore, our in silico experiments, as well as our in vitro experiments, indicate that the variation in the measurements can be minimized by increasing SNR and minimizing the biological variability, for example, by using directly conjugated antibodies instead of secondary labelling. We believe this method may be useful for rapid screening of epitope locales, and the implementation, written in the open-source language Julia, is provided on GitHub.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Streptococcus pyogenes)</td>\n      <td>SF370</td>\n      <td>ATCC</td>\n      <td>Cat# 700294</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>Venous blood (normal, adult)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Freshly taken from Homo sapiens</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Xolair (humanized from mouse monoclonal)</td>\n      <td>Novartis</td>\n      <td>Cat# 028268; RRID#:AB_2459636</td>\n      <td>(500 \u03bcg/ml)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-streptococcal M protein; Ab49 (human monoclonal)</td>\n      <td>Bahnan et al., 2021</td>\n      <td></td>\n      <td>(10\u2013\u03bcg/ml)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 647 AffiniPure F(ab\u2019)2 fragment goat anti-human IgG (Fab specific) (goat polyclonal)</td>\n      <td>Jackson ImmunoResearch Laboratories</td>\n      <td>Cat# 109-606-097; RRID:AB_2337898</td>\n      <td>(3 \u03bcg/ml)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 647 AffiniPure F(ab\u2019)2 fragment goat anti-human IgG (Fc specific) (goat polyclonal)</td>\n      <td>Jackson ImmunoResearch Laboratories</td>\n      <td>Cat# 109-606-170; RRID:AB_2337902</td>\n      <td>(3 \u03bcg/ml)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Alexa Fluor 647 (Invitrogen)</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# 820006</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>CellBrite Fix Membrane stain 488</td>\n      <td></td>\n      <td>Cat# 30090</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Conjugated DNA_F 18 base pair</td>\n      <td>This paper, Son et al., 2020</td>\n      <td>Oligonucleotide</td>\n      <td>5\u2032-Alexa647-N-AGCTGCGGTCAGATC-3\u2032</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Conjugated DNA_R 18 base pair</td>\n      <td>This paper, Son et al., 2020</td>\n      <td>Oligonucleotide</td>\n      <td>5\u2032-Cholesterol-TEG-TCGACGCCAGTCTAG-3\u2032</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Conjugated DNA_F 48 base pair</td>\n      <td>This paper, Son et al., 2020</td>\n      <td>Oligonucleotide</td>\n      <td>5\u2032-Alexa647-N-GATCTGACCGCAGCTATCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Conjugated DNA_R 48 base pair</td>\n      <td>This paper, Son et al., 2020</td>\n      <td>Oligonucleotide</td>\n      <td>5\u2032-Cholesterol-TEG-CTAGACTGGCGTCGATA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Conjugated DNA_F 63 base pair</td>\n      <td>This paper, Son et al., 2020</td>\n      <td>Oligonucleotide</td>\n      <td>GACGTACTGCTATTGCTA GCGATTCCAT-</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Conjugated DNA_R 63 base pair</td>\n      <td>This paper, Son et al., 2020</td>\n      <td>Oligonucleotide</td>\n      <td>5\u2032-Cholesterol-TEG-ATGGAATCGCTAGC AATAGCAGTACGTCTACA TGAAGTCGTTGATTCGAC GCCAGTCTAGTAG-3\u2032</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Fibrinogen from human plasma, Alexa Fluor 647</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# F35200</td>\n      <td>(20 \u03bcg/ml)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Wheat germ agglutinin, Alexa Fluor 488</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# W11261</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Wheat germ agglutinin, Alexa Fluor 647</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# W32466</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>IdeS</td>\n      <td>Hansa Biopharma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FluoroDist</td>\n      <td>This paper, GitHub</td>\n      <td>https://github.com/nordenfeltLab/FluoroDist.jl (Kumra Ahnlide, 2022; copy archived at swh:1:rev:053e516413277cf488ef9db1a24ce576e24d18f9)</td>\n      <td>Simulated fluorescence images with accurate surface distances</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RegisterQD</td>\n      <td>GitHub, Greer, 2019</td>\n      <td>https://github.com/Holylab/RegisterQD.jl</td>\n      <td>Image registration with the QuadDIRECT optimization algorithm</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Site Localization</td>\n      <td>This paper, GitHub</td>\n      <td>https://github.com/nordenfeltLab/SiteLocalization</td>\n      <td>Binding site localization on non-homogeneous cell surfaces using topological image averaging</td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial culturing conditions\n\nS. pyogenes strain SF370 wildtype was cultured overnight in THY medium (Todd Hewitt Broth; Bacto; BD, complemented with 0.2% [w/v] yeast) at 37\u00b0C in an atmosphere supplemented with 5% CO2. Strain SF370 expresses M1 protein on its surface and is available through the American Type Culture Collection (ATCC 700294) (Ferretti et al., 2001). The bacteria were harvested at early log phase and washed twice with PBS.\n\n### Opsonization of bacteria\n\nXolair (omalizumab, Novartis) is a humanized monoclonal IgG that is IgE-specific, and thus only binds to M protein via Fc. Ab49 is an M protein-specific antibody (Bahnan et al., 2021). For secondary antibody labelling, both antibodies were treated with IdeS (Hansa Biopharma) (von Pawel-Rammingen et al., 2002), an enzyme that cleaves IgG at the hinge region, separating the F(ab\u2019)2 from the Fc. The fibrinogen used here was isolated from human plasma and conjugated with Alexa Fluor 647 (Invitrogen).\n\n### Antibody conjugation\n\nDirect conjugation of antibodies was done using the fluorescent dye Alexa Fluor 647 (Invitrogen). The desiccated dye was dissolved in DMSO at a concentration of 10 mg/ml. The antibodies were concentrated to a concentration of 2 mg/ml, and 1/10th of the final volume of sodium bicarbonate (1 M, pH 8.3) was added. The dye was added at a final concentration of 75 \u00b5g/mg of antibody. The antibodies were then incubated with the dye at room temperature (RT) for an hour. To remove any unbound dye, the antibodies were transferred to 50 kDa Amicon ultra filter columns (Merck Millipore). The antibodies were washed by adding PBS and centrifuging (12,000 \u00d7 g). This was done three times to ensure all unbound dye had been removed. Conjugated antibody concentration and degree of labelling were assessed by using a DeNovix DS-11 FX spectrometer.\n\n### Fixation and staining of bacteria\n\nBacteria were sonicated (VialTweeter; Hielscher) for 0.5 min to separate any aggregates and incubated fixed in 4% paraformaldehyde for 5 min on ice. The bacteria were thereafter washed with PBS twice (10,000 \u00d7 g, 2 min). SF370 wildtype was stained with Alexa Fluor 488-conjugated WGA. Bacteria were incubated with IdeS-cleaved Xolair, Ab49, or Alexa Fluor 647-conjugated Fibrinogen (Invitrogen). The antibody samples were stained with fluorescently labelled IgGFab- or IgGFc-specific F(ab\u2019)2 fragments (Alexa Fluor 647-conjugated anti-human IgGFc or IgGFab; Jackson ImmunoResearch Laboratories). Samples were set on glass slides using ProLong Gold Antifade Mountant with No. 1.5 coverslips.\n\n### Red blood cell measurements\n\nDNA height probes were synthesized by Integrated DNA Technologies and purified with HPLC and resuspended in Tris buffer with 1 mM EDTA. The two strands are composed of a forward oligonucleotide and a reverse oligonucleotide. The sequences can be found in Key resources table. Venous blood was taken from a human donor and washed with PBS three times (750 \u00d7 g, 5 min). The red blood cell pellet was treated with TrypLE at 37\u00b0C for 15 min and thereafter washed once (750 \u00d7 g, 5 min). The red blood cells were then resuspended in CellBrite Fix 488 membrane staining solution (1:200 of stock solution 1000X) and incubated for 15 min at RT. For swelling of cells, the staining was in a 70% isotonic solution. The cells were fixed in a solution of 4% paraformaldehyde and 0.2% glutaraldehyde at RT for 20 min. The cells were then washed twice (500 \u00d7 g, 5 min) and resuspended in 500 \u00b5l PBS. 1 \u00b5l of DNA height probe was added to 3 \u00b5l of fixed red blood cells in 50 \u00b5l PBS. Samples were set on glass slides using ProLong Gold Antifade Mountant with No. 1.5 coverslips.\n\n### DNA height prediction\n\nThe DNA height prediction was performed by using a previously derived analytical expression for the probability distribution ($p\u2062(r,t)$) of the end-to-end distance in the WLC model (Murphy et al., 2004):\n\n$$\np(r,t)=\\frac{4\\piA(t)r^{2}}{(1\u2212r^{2})^{9/2}}exp\u2061(\\frac{\u22123t}{4(1\u2212r^{2})})\n$$\n\nwhere A is a normalization constant defined as\n\n$$\nA(t)=\\frac{4(\\frac{3t}{4})^{3/2}exp\u2061(\\frac{3t}{4})}{\\pi^{3/2}(4+\\frac{12}{3t/4}+\\frac{15}{(3t/4)^{2}})}\n$$\n\nand $r$ and $t$ are defined as\n\n$$\nr=\\frac{L}{L_{p}},t=\\frac{R}{L}\n$$\n\nwhere $L$ is the contour length, $L_{p}$ is the persistence length, and $R$ is the end-to-end distance. The expected end-to-end length given a persistence length of 50 nm was calculated for each DNA strand length. The height was then obtained by finding the centre of mass of a rod with the calculated length tethered to a surface with one end allowed to rotate freely in a hemisphere (Son et al., 2020).\n\n### Simulation of fluorescence images\n\nTo generate the fluorescence images, plane curves with a parameterization were chosen. The curves that were not ellipses were chosen to be quadratic B-splines since this yields a continuous derivative and makes the necessary computations simple. To get closer to an arc-length parameterization, the curve was discretized by walking around the curve and at each point taking steps inversely proportional to the analytically determined magnitude of the gradient at that point. The photons for the reference channel were generated by sampling values from this discrete parameterization. To simulate the membrane width, an offset perpendicular to the gradient was sampled from a uniform distribution of the desired width. Another random offset was sampled from a two-dimensional normal distribution to simulate the effect of the point spread function. The target channel was simulated in the same way but with an additional offset in the direction normal to the gradient at the sampled point of the curve. When antibody labelling was simulated, a 15 nm offset was added in a random three-dimensional direction for each antibody. For all included simulations, an offset of 2 px was chosen, corresponding to a distance of 41 nm for a pixel length of 20.5 nm. The code was implemented in Julia and is available on GitHub (nordenfeltLab/FluoroDist.jl).\n\n### SIM image acquisition\n\nImages of single bacteria were acquired using a Nikon N-SIM microscope with LU-NV laser unit, CFI SR HP Apochromat TIRF \u00d7100 Oil objective (N.A. 1.49) and an additional \u00d71.5 magnification. The camera used was ORCA-Flash 4.0 sCMOS camera (Hamamatsu Photonics K.K.), and the images were reconstructed with Nikon\u2019s SIM software on NIS-Elements Ar (NIS-A 6D and N-SIM Analysis). Fluorescent beads (100 nm) were imaged to measure and correct for chromatic aberration, as well as for the N-SIM grating alignment. Single cells were manually identified and imaged with 488 and 640 nm lasers in time series with 15\u201320 frames, depending on initial sample signal. For CSOP (Son et al., 2020) analysis, images of singles cells were acquired in 15 slices with step sizes of 50 nm.\n\n### Microscope calibrations\n\nTetraSpeck 0.1 \u00b5m fluorescent microspheres are mounted on No. 1.5 coverslips using ProLong Gold Antifade Mountant in the same manner as the bacterial samples. These beads are used for the objective collar correction, SIM grating alignment, and measurement of SIM and widefield PSF. Images of the beads were acquired and chromatic aberration was corrected for by performing image registration (Holylab/RegisterQD.jl) and applying the found transform to all images.\n\n### Site localization analysis\n\nA Circle Hough Transform (Illingworth and Kittler, 1987) and Canny Edge Detection (Canny, 1986) were used for circle fitting and edge detection, respectively. Images were filtered by SNR (approximately > 3) as calculated using\n\n$$\n10log_{10}\u2061(\\frac{maximage}{median_{image}})\n$$\n\nas an SNR estimate. The time series were cut as the SNR relative to the first time frame fell below a given percentage (typically 30%), which is set as an input to the code. A polar transformation of the found circle was performed on a bicubic interpolation of the image. The alignment of the peak intensity was performed by identifying a peak maximum using a sliding average. Labelling of the cell wall with two different fluorescent dyes should give a distance estimation of zero. The measured offset, shown in Figure 3\u2014figure supplement 2 and Figure 5\u2014figure supplement 1, is likely due to chromatic aberration at the imaging plane. This offset is used to correct for chromatic aberration in subsequent site localization measurements by correcting the position of the reference region prior to calculating distance to the ligand signal. To avoid attaining out-of-focus peaks in the ligand channel, peak identification was performed beyond the reference region. The number of bacteria, together with median (IQR) and mean \u00b1 SD, is given in the figure captions. The widefield images were deconvolved using the Richardson\u2013Lucy algorithm (Richardson, 1972; Lucy, 1974) in 10 iterations. The analysis pipeline, written in Julia, is provided on GitHub (nordenfeltLab/SiteLocalization).\n",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "44a303d7-bc7b-4173-9b8e-f0d94b90cd55",
+      "submission_id": "f9d9def8-0fdf-442c-95a0-db894c5858f4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64709.sa0](https://doi.org/10.7554/eLife.64709.sa0)\n\nYou have developed and validated a new method for measurement of nanoscale height of macromolecules that can be non-uniformly distributed on irregular surfaces. Such samples are common in biology, which will make this a valuable approach to achieve super-resolution results for samples where this would have not been possible previously.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64709.sa1](https://doi.org/10.7554/eLife.64709.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Binding site localization on non-homogeneous cell surfaces using topological image averaging\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Michael L Dustin as the Reviewing Editor and Reviewer #1 and Erdinc Sezgin as Reviewer #2, and the evaluation has been overseen by Olga Boudker as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nYou describe a method to measure nanoscale height of fluorophors above a surface that can be rendered with a distinct fluorophore, but doesn't need to be radially symmetric, as for recently published CSOP method. This was applied to measurement of S. pyogenes M protein.\n\nThere were a number of technical concerns about the calibration and validation of the method and the comparison to CSOP.\n\nEssential revisions:\n\n1. Since the major focus of this work is applying the method of spatially averaging of two fluorescent signals to non-spherical surfaces, it is critical that the image analysis method (using Hough transforms, edge detection, filtering, etc) be validated with known non-spherical objects to confirm that it is working as expected. Currently, it is unclear for what range of sizes and shapes the approach is accurate and what potential sources of error might be. Both experiments and simulated data could be used to evaluate performance of the analysis algorithm.\n\n2. The authors indicate they use 100nm beads to correct for chromatic aberration, but chromatic aberrations can increase as the imaging plane moves away from the glass surface. Do the dual-labeling experiments shown in Figure 3 \u2013 Supplementary Figure 1 include correction of chromatic aberration based on the 100nm beads? Is so, then it appears that chromatic aberration needs to be corrected at the image plane rather than the glass surface. How is this difference observed in the dual labeling experiment accounted for in the image analysis procedure?\n\n3. How does the reported accuracy depend on the number of cells averaged and the amount of fluorescent antibody on each cell? It would be interesting to see a plot of the height uncertainty per cell as a function of the antibody fluorescence intensity (as a proxy for amount of antibody). Since the reported ~5nm resolution is for averages across 37-55 independent cells, would averaging more cells give higher precision (and does averaging fewer cells give lower precision)?\n\n4. How does fixation affect the measurements? Can the method be used on unfixed cells, and what is the localization uncertainty for unfixed samples? Also, is the uncertainty in localization of the ligand signal due to antibody fluctuations and labeling location included in the analysis?\n\n5. In the comparison with CSOP (Son, PNAS, 2020), it would be helpful to first demonstrate both techniques on spherical objects, in order to confirm that the use of CSOP is consistent with published results and to evaluate how the new method compares for spherical objects (presumably it should be equivalent). There is also not a calibration test in the study. There should be a very well controlled calibration samples to evaluate the accuracy as well as dynamics range. The authors could use swelled spherical RBC with the same DNA based height standards examined in Son et al. in GUV. CSOP and the new method could then be fairly compared, calibrated and then applied to the same height standards on a biconcave RBC, which would test the new method on a non-spherical object.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your revised article \"Nanoscale binding site localization by molecular distance estimation on native cell surfaces using topological image averaging\" for consideration by eLife. Your article has been re-reviewed by the same 3 peer reviewers as in the initial review, including Michael L Dustin as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Erdinc Sezgin (Reviewer #2).\n\nThe reviewers all felt that the efforts you have made are helpful, but still were not clear on the height accuracy of the experimental data needed to be useful for relevant measurements on biological molecules at surfaces,. These revisions may not require new experiments, but will require clarification of the data sets, some revisions to the simulated data shown, and additional analysis of the signal requirements and sources of error. The Reviewing Editor has drafted this to help you prepare a second revised submission.\n\nEssential revisions:\n\nYou have provided additional simulations and experimental data in the revised manuscript, but you have not fully addressed the essential revisions as the most significant issue for any new method, the experimental validation, is not complete. Showing that an algorithm can obtain height measurements on simulated data demonstrates the performance of the algorithm but is not true experimental validation of the technique. Specifically, the authors need to confirm that molecules of known heights can be correctly measured with the claimed precision. Furthermore, the reported experimental height uncertainties are significantly different from the simulated uncertainties for variable shapes, which raises fundamental questions about other sources of error.\n\n1. You have not shown that experimental measurements and the analysis algorithm can correctly capture the height of a known molecule (e.g. DNA) on a known surface (e.g. a sphere). The measurement of DNA height on the non-spherical surface of an RBC is not meaningful until you can show that you can accurately measure the height of that DNA on a known surface geometry. It is the equivalence of those two height measurements \u2013 one on a known surface and one on a variable surface \u2013 that would give confidence that you have a new methodology for obtaining accurate height measurements on non-spherical and non-uniform surfaces. One suggestion was to use a swelled erythrocyte in a 50% isotonic solution as a spherical object, but a more standard spherical object would be a GUV or uniform glass bead. But you need experimental data on spherical object comparing CSOP and Site Localization.\n\n2. The simulations in Figure 2 are a useful addition to the manuscript and provide a quantitative characterization of the algorithm for idealized images, but the results in Figure 2 show uncertainties much less than that of most experimental measurements in the manuscript. For example, when you say the largest deviation from true distance was 10%, its not obvious what data this claim is based on. The worst case seems to be a 5 nm deviation from true distance, does this mean that the simulated structure was 50 nm in height? Percentage of deviations should be clearly shown and explained. Furthermore, what are the dominant sources of localization uncertainty if the contribution from patchy and non-spherical surfaces is normally much smaller than 5nm? The precision of fluorescence localization methods typically depends on the number of photons collected. Is that true for this method?\n\n3. To report uncertainty in your height measurements, you use standard error of the mean rather than standard deviation, which is the more appropriate measure in our collective view. Since uncertainty in height measurement is based on molecular averages on an individual particle basis (affected by, e.g., number of photons collected for molecules on that particle, how thoroughly chromatic aberration is corrected, etc), measuring more particles does not correct those issues for non-random sources of error (e.g. chromatic aberration). It is also unclear to us how removing negative height values from the population of measurements is justified when calculating means if there is no independent reason to reject those measurements as invalid, wouldn't removing only the negative outliers skew the result and to larger errors in the absolute height? Regardless, were you to use standard deviation, rather than standard error of the mean, the reported uncertainty would be significantly larger, which would necessitate a effort to find sources of error and to reduce these as much as possible to make the method useable.\n\n4. While the motivation to measure heights of molecules on patchy, non-spherical surfaces is a good one it should be made clear that CSOP is only valid for spherical objects and it should not be applied to non-spherical objects. There is no reason to show simulated data that CSOP fails on non-spherical objects as applying CSOP to a non-spherical object, even in a simulation, is not appropriate. The important comparison between CSOP and Site Location is that they should both achieve 1 nm measurement accuracy for height measurements on a spherical object, with Site Localization striving to preserve this accuracy on on non-spherical surfaces.\n",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bcbd978e-a79a-4188-8b31-e4d71d1f6319",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C1",
+      "claim": "Antibody binding to cell surface proteins plays a crucial role in immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody binding to cell surface proteins plays a crucial role in immunity, and the location of an epitope can altogether determine the immunological outcome of a host-target interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about antibody-cell surface protein interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "f5dd7521-dd1c-484a-9549-dea703261be2",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C2",
+      "claim": "The location of an epitope can determine the immunological outcome of a host-target interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody binding to cell surface proteins plays a crucial role in immunity, and the location of an epitope can altogether determine the immunological outcome of a host-target interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "9af33aea-e1b7-42f6-9886-54e60063cd07",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C3",
+      "claim": "Techniques available today for epitope identification are costly, time-consuming, and unsuited for high-throughput analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Techniques available today for epitope identification are costly, time-consuming, and unsuited for high-throughput analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a characterization of current methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "e1b742bd-52db-4d0e-b0ac-994001cc0216",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C4",
+      "claim": "Cellular morphology typically varies.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular morphology typically varies, and antibodies often bind heterogeneously across a cell surface, making traditional particle-averaging strategies challenging for accurate native antibody localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of cellular systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "9e5c8851-a801-4b69-9ddc-f786edd88963",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C5",
+      "claim": "Antibodies often bind heterogeneously across a cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular morphology typically varies, and antibodies often bind heterogeneously across a cell surface, making traditional particle-averaging strategies challenging for accurate native antibody localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of antibody binding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "4d294a1a-7bca-4950-be08-c196789da77a",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C6",
+      "claim": "Traditional particle-averaging strategies are challenging for accurate native antibody localization due to variable cellular morphology and heterogeneous antibody binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular morphology typically varies, and antibodies often bind heterogeneously across a cell surface, making traditional particle-averaging strategies challenging for accurate native antibody localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods based on known characteristics of cells and antibody binding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "9bb62115-4182-4ffb-ab5a-8520e4bc9cab",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C7",
+      "claim": "The authors have developed a method called SiteLoc for imaging-based molecular localization on cellular surface proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present work, we have developed a method, SiteLoc, for imaging-based molecular localization on cellular surface proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary contribution of the work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "7873574b-4fd6-4985-a1b5-a2ceb77ceff6",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C8",
+      "claim": "Nanometer-scale resolution is achieved through localization in one dimension, namely, the distance from a bound ligand to a reference surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanometer-scale resolution is achieved through localization in one dimension, namely, the distance from a bound ligand to a reference surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a description of the method's approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "122ace44-3bec-4922-a231-25a1910248df",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C9",
+      "claim": "The SiteLoc method uses topological image averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "This is done by using topological image averaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as part of the method description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "e66814f5-d4e1-44eb-9b2f-9e962f8f8f58",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C10",
+      "claim": "The SiteLoc method is well suited for antibody binding site measurements on native cell surface morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that this method is well suited for antibody binding site measurements on native cell surface morphology and that it can be applied to other molecular distance estimations as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a conclusion from the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "72cbd074-3530-437d-b307-a94b79134d78",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C11",
+      "claim": "The SiteLoc method can be applied to other molecular distance estimations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that this method is well suited for antibody binding site measurements on native cell surface morphology and that it can be applied to other molecular distance estimations as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a conclusion from the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "c985d67c-ecf2-4895-a903-34f5b638c06b",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C12",
+      "claim": "Antibody binding to pathogen surface proteins plays a crucial role in immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody binding to pathogen surface proteins plays a crucial role in immunity (Lu et al., 2018), and epitope localization affects diverse immunological outcomes, such as antibody neutralizing ability (Law et al., 2008; Kwong et al., 2013; Salinas et al., 2019; Caoili, 2014; Ivanyi, 2014) or autoreactivity (Caoili, 2014; Cunningham, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "73f502a8-c56f-4697-8b32-a56400968320",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C13",
+      "claim": "Epitope localization affects antibody neutralizing ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody binding to pathogen surface proteins plays a crucial role in immunity (Lu et al., 2018), and epitope localization affects diverse immunological outcomes, such as antibody neutralizing ability (Law et al., 2008; Kwong et al., 2013; Salinas et al., 2019; Caoili, 2014; Ivanyi, 2014) or autoreactivity (Caoili, 2014; Cunningham, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Law et al., 2008; Kwong et al., 2013; Salinas et al., 2019; Caoili, 2014; Ivanyi, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "d6b64222-7f38-4ba0-8d19-eee07708f95c",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C14",
+      "claim": "Epitope localization affects autoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody binding to pathogen surface proteins plays a crucial role in immunity (Lu et al., 2018), and epitope localization affects diverse immunological outcomes, such as antibody neutralizing ability (Law et al., 2008; Kwong et al., 2013; Salinas et al., 2019; Caoili, 2014; Ivanyi, 2014) or autoreactivity (Caoili, 2014; Cunningham, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Caoili, 2014; Cunningham, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "19ec1d05-feaa-47f0-8641-317a3dd862e8",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C15",
+      "claim": "There are very few monoclonal antibodies clinically available for the treatment of bacterial infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though monoclonal antibody (mAb) treatments have proven to be successful for a wide spectrum of diseases, there are very few monoclonal antibodies clinically available for the treatment of bacterial infections (Motley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Motley et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "53486ffa-7fb6-40dc-a003-7d1d4eabed1f",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C16",
+      "claim": "Developing therapeutic mAbs against infections may require large-scale screening of highly conserved and functional epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing therapeutic mAbs against infections may require large-scale screening of highly conserved and functional epitopes (Mart\u00edn-Galiano and McConnell, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mart\u00edn-Galiano and McConnell, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "ed4b7864-74cd-4a2e-8a63-d2614331c6d2",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C17",
+      "claim": "Antibody epitopes are typically identified using crystallography, mutagenesis, or crosslinking coupled mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody epitopes are typically identified using crystallography, mutagenesis, or crosslinking coupled mass spectrometry (Abbott et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Abbott et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "d7491c1d-a8ad-4eff-aa2b-ba0a9ef51ad5",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C18",
+      "claim": "Current epitope identification methods are costly, time-consuming, and unsuitable for high-throughput analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As of today, these methods are costly, time-consuming, and unsuitable for high-throughput analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of current methods mentioned in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "e4357896-daa2-41ba-b521-62c2afa17a3d",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C19",
+      "claim": "Averaging methods for nanometer-scale localization on microscopy data exist but do not work for binding sites on proteins with heterogeneous expression on the cellular surface.",
+      "claim_type": "EXPLICIT",
+      "source": "While averaging methods for nanometer-scale localization on microscopy data exist, these do not work for binding sites on proteins with heterogeneous expression on the cellular surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "a0987363-e63e-4348-bd6e-705a023ce7e9",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C20",
+      "claim": "Existing averaging methods are designed for identical or spherical particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, they are designed for identical (Szymborska et al., 2013; Laine et al., 2015) or spherical (Son et al., 2020) particles and are thereby not fitted for unaltered cells due to the existing biological variation of surface morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Szymborska et al., 2013; Laine et al., 2015; Son et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "618f4851-2dd3-42cf-99b9-488aa8c2538f",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C21",
+      "claim": "Existing averaging methods are not fitted for unaltered cells due to biological variation of surface morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, they are designed for identical (Szymborska et al., 2013; Laine et al., 2015) or spherical (Son et al., 2020) particles and are thereby not fitted for unaltered cells due to the existing biological variation of surface morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods based on the nature of biological cells.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "8ee30533-bd65-4741-89c4-913295702a87",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C22",
+      "claim": "The authors analyzed simulated images to assess the performance of the SiteLoc method.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the performance of this method, we analyse simulated images, demonstrating high accuracy for varying surface expression and morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as part of the validation approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "84fb8a9b-d854-40dd-a384-d39e1a680843",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C23",
+      "claim": "The SiteLoc method demonstrates high accuracy for varying surface expression and morphology in simulated images.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the performance of this method, we analyse simulated images, demonstrating high accuracy for varying surface expression and morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the simulated image analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "c4705335-9157-4eec-8bed-d74c29c6edce",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C24",
+      "claim": "The authors measured the height of DNA probes on erythrocyte surfaces to validate the method.",
+      "claim_type": "EXPLICIT",
+      "source": "By measuring the height of DNA probes on erythrocyte surfaces, we show that our method can accurately estimate molecular heights on spherical and non-spherical cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as part of the validation approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "9306272a-2765-4712-bcb1-228091aa255d",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C25",
+      "claim": "The SiteLoc method can accurately estimate molecular heights on spherical and non-spherical cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By measuring the height of DNA probes on erythrocyte surfaces, we show that our method can accurately estimate molecular heights on spherical and non-spherical cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the DNA probe measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "db5f8766-310c-48b8-976b-48ae9c591db1",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C26",
+      "claim": "The presented results with structured illumination microscopy (SIM) data achieve an ~10 nm precision certainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Our presented results with structured illumination microscopy (SIM) data achieve an ~10 nm precision certainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the SIM data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "3edf8540-9ba3-46f8-b427-2ce3d868f1e0",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C27",
+      "claim": "The authors applied the site localization method to determine known binding site locales on M protein that is unevenly expressed on the bacterial surface of Streptococcus pyogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply the site localization method to determine known binding site locales on M protein that is unevenly expressed on the bacterial surface of Streptococcus pyogenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an application of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "51509e57-1af4-49ef-a827-93c8b894d35a",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C28",
+      "claim": "The SiteLoc method yields viable results when performed on widefield images with and without deconvolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our method yields viable results when we perform site localization on widefield images with and without deconvolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the widefield image analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "0846c639-315a-4058-8308-696a8a3fc51b",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C29",
+      "claim": "The site localization method enables rapid determination of binding sites without the need for synthetic modification of cell surface morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "To sum up, our site localization method enables rapid determination of binding sites without the need for synthetic modification of cell surface morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a summary of the method's advantages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "e966366a-cc11-4c1f-b180-33cdf2d0d6e9",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C30",
+      "claim": "Binding site localization is based on resolving the axial distance between bound ligands and a reference surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding site localization is based on resolving the axial distance between bound ligands and a reference surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a description of the method's principle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "23ee5732-2200-44be-8dc3-6f14c799d834",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C31",
+      "claim": "Nanometer-scale precision is achieved by dimension reduction of surface data within an image plane.",
+      "claim_type": "EXPLICIT",
+      "source": "With this method, nanometer-scale precision is achieved by dimension reduction of surface data within an image plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a description of how the method achieves high precision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "ab6514c0-45a5-42df-b4a7-583fb11efc12",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C32",
+      "claim": "Fluorescently conjugated wheat germ agglutinin (WGA) binds bacterial peptidoglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescently conjugated wheat germ agglutinin (WGA) that binds bacterial peptidoglycan is used here for the reference region, and antibodies that bind to bacterial M protein are labelled with another fluorescent dye for imaging in a separate channel (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of WGA used in the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "13637fce-98ec-4154-b8fe-89be1c6fcbcb",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C33",
+      "claim": "M protein is unevenly distributed on bacterial surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The example shows how our method handles the uneven distribution of M protein on bacterial surfaces (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the example shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "33177f88-3710-4190-8231-9227493c9fe0",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C34",
+      "claim": "The SiteLoc method handles uneven distribution of M protein on bacterial surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The example shows how our method handles the uneven distribution of M protein on bacterial surfaces (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the method demonstrated in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "7f8741fc-9aae-4151-93d7-51e9a83faa60",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C35",
+      "claim": "Signal precision is improved as the distortion of an ovoid bacterium is accounted for through axial normalization in polar coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that the signal precision is improved as the distortion of an ovoid bacterium is accounted for through axial normalization in polar coordinates (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from Figure 1c showing improved signal-to-noise ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "959059fa-e8cc-48b7-971d-cc8bf4ab2397",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C36",
+      "claim": "The perpendicular distance between the reference channel distribution and the target channel distribution in simulated images was chosen to be 2 px corresponding to 41 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The perpendicular distance between the reference channel distribution and the target channel distribution was chosen to be 2 px corresponding to 41 nm using the pixel length of our N-SIM microscopy setup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a parameter of the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "f0e964b6-04b7-4592-b08d-14e05975180f",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C37",
+      "claim": "For each chosen shape in the simulations, 100 time series were created with 10 frames each.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to mimic the experimental process of acquiring repeated frames of each data point in a time series, for each chosen shape 100 time series were created with 10 frames each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a parameter of the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "016a0975-c26f-45d0-93a3-c59e05fa961c",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C38",
+      "claim": "The SiteLoc method achieves high accuracy for various cell surface patterns in simulated images.",
+      "claim_type": "EXPLICIT",
+      "source": "The results, shown in Figure 2, indicate that a high accuracy can be achieved for various cell surface patterns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from the simulated image analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "98adba77-01c4-4f61-bd3f-b015f76d6921",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C39",
+      "claim": "For certain shapes, the SiteLoc method yields a slightly larger distance than the true value.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for certain shapes, the method yields a slightly larger distance than the true value (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "fd1c1db4-15e6-46d3-993d-7ad51e85e489",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C40",
+      "claim": "The uncertainty in site localization measurements is larger with secondary antibody labelling than with direct labelling.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the uncertainty is larger with secondary antibody labelling than with direct labelling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from additional simulations shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "7da74786-1151-48c8-bf54-42fa67d33960",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C41",
+      "claim": "The site localization uncertainty increases when the SNR is decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "The site localization uncertainty also increases when the SNR is decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from additional simulations shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "ff3b40e5-5103-486b-b570-f73e76f88c4f",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C42",
+      "claim": "The results from simulated images demonstrate the robustness of the site localization method for varying surface expression and morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate the robustness of the site localization method for varying surface expression and morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "d0194f38-2e27-4345-9067-31b6d0fe2257",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C43",
+      "claim": "Human erythrocytes were stained with membrane dye CellBrite Fix 488 and Alexa Fluor 647-conjugated dsDNA of varying length.",
+      "claim_type": "EXPLICIT",
+      "source": "Human erythrocytes were stained with membrane dye CellBrite Fix 488 and Alexa Fluor 647-conjugated dsDNA of varying length (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "6df568b7-091e-4e15-ae51-cd9850dc6e5d",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C44",
+      "claim": "Site localization measurements on swelled spherical erythrocytes show good agreement with an existing method for determining molecular heights on spherical particles.",
+      "claim_type": "EXPLICIT",
+      "source": "To begin with, swelled spherical erythrocytes were analysed with the site localization method as well as with an existing method for determining molecular heights on spherical particles (Figure 3\u2014figure supplement 1). The results show good agreement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from the comparison shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "c744e7b3-3ae5-4bd5-875f-b737f25c5a77",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C45",
+      "claim": "Site localization performed on non-spherical erythrocytes shows results equivalent to that of spherical cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Site localization was thereafter performed on non-spherical erythrocytes and show results equivalent to that of spherical cells (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from the comparison shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "9d003a2b-4e8a-4b8a-b0a2-e3e1629296cc",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C46",
+      "claim": "The measured heights of DNA probes are approximately half of the full length of the DNA strands.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured heights are approximately half of the full length of the DNA strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the DNA probe measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "44ec7a25-4cd3-4603-8d66-5beaf5fe9eca",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C47",
+      "claim": "The measurements of DNA probe heights agree well with the predicted worm-like chain (WLC) model height for DNA strands with a persistence length of 50 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The measurements agree well with the predicted worm-like chain (WLC) model height for DNA strands, with a persistence length of 50 nm (Baumann et al., 1997), tethered to a surface and able to freely rotate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the DNA probe measurements, with citation to Baumann et al., 1997 for the persistence length.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "364df37b-ef63-4f5a-8a44-8b821cf882d3",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C48",
+      "claim": "The SiteLoc method can accurately estimate molecular heights on spherical and non-spherical cellular surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we show that our method can accurately estimate molecular heights on spherical and non-spherical cellular surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the DNA probe measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "62548929-ea16-4236-bda4-0e4366ee0e3a",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C49",
+      "claim": "The antibody Fc binding site on M protein is located at the S region.",
+      "claim_type": "EXPLICIT",
+      "source": "The antibody Fc binding site on M protein is located at the S region (Akesson et al., 1994), and a non-specific monoclonal IgG antibody (Xolair) is used for site localization of this binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Akesson et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "b03039c0-e917-4e55-a2db-042264b483d8",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C50",
+      "claim": "Ab49 is an M protein-specific mAb with an epitope located in the B3-S region.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a measurement is carried out for an M protein-specific mAb, Ab49 (Bahnan et al., 2021), with an epitope located in the B3-S region, that is, slightly further along the IgGFc binding region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bahnan et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "5bec9665-f555-4344-8882-cf2730eee846",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C51",
+      "claim": "Fibrinogen has two binding sites on M protein at the B1 and B2 region.",
+      "claim_type": "EXPLICIT",
+      "source": "For determining binding to the far end of M protein, we used fibrinogen that has two binding sites at the B1 and B2 region (Hauri et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hauri et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "172913dc-13e5-430b-8ef9-d19bb140dca5",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C52",
+      "claim": "The median resolved distance for the Xolair Fc binding site is 5.6 (29.7) nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The median resolved distance is [median (IQR)] 5.6 (29.7) nm for the Xolair Fc binding site, 6.2 (29.8) nm for Ab49 Fab binding site, and 18.0 (49.3) nm for the two fibrinogen binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the site localization measurements on S. pyogenes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "2ff4ec56-4b99-486b-aca7-f265536bbc29",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C53",
+      "claim": "The median resolved distance for the Ab49 Fab binding site is 6.2 (29.8) nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The median resolved distance is [median (IQR)] 5.6 (29.7) nm for the Xolair Fc binding site, 6.2 (29.8) nm for Ab49 Fab binding site, and 18.0 (49.3) nm for the two fibrinogen binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the site localization measurements on S. pyogenes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "49754d2a-8a78-4711-81b9-1a53338af51b",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C54",
+      "claim": "The median resolved distance for the two fibrinogen binding sites is 18.0 (49.3) nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The median resolved distance is [median (IQR)] 5.6 (29.7) nm for the Xolair Fc binding site, 6.2 (29.8) nm for Ab49 Fab binding site, and 18.0 (49.3) nm for the two fibrinogen binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the site localization measurements on S. pyogenes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "66c802f9-2c66-4810-a672-8ed8b3b3018e",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C55",
+      "claim": "The presented results for antibody and fibrinogen binding sites on M protein are consistent with the arrangement of the binding sites as reported in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented results are consistent with the arrangement of the binding sites as reported in the literature (Akesson et al., 1994; Bahnan et al., 2021; Hauri et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the binding site measurements, with citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "3f9825db-5512-4ee5-8737-d042bb1a12ef",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C56",
+      "claim": "Site localization precision is increased when using directly conjugated antibodies compared to secondary antibody labelling.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident from these results that site localization precision is increased when using directly conjugated antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the comparison shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "5a91d561-7045-4f7f-82cd-e4599a455288",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C57",
+      "claim": "The SiteLoc method can yield viable results with widefield images.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing site localization measurements on widefield images, we show that our method can yield viable results even with conventional microscopy data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the widefield image analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "ec9c5998-1b2a-4acf-8c0c-2bd62a2b8ff9",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C58",
+      "claim": "Deconvolution of widefield images may yield an increase in precision for site localization measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, deconvolution of the widefield images may yield an increase in precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the comparison of widefield and deconvolved widefield images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "727a342e-de6b-48ee-86a5-cd7f69ac3a81",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C59",
+      "claim": "For fibrinogen samples, the median resolved distance is 18.0 (49.3) nm with SIM data, 38.5 (71.0) nm with widefield data, and 40.1 (42.0) nm with deconvolved widefield data.",
+      "claim_type": "EXPLICIT",
+      "source": "For the fibrinogen samples (Figure 5b), the median resolved distance between the two channels is [median (IQR)] 18.0 (49.3) nm with SIM data, 38.5 (71.0) nm with widefield data, and 40.1 (42.0) nm with deconvolved widefield data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from the comparison of different imaging modalities shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "00adca92-bf2a-47dd-8511-6e8720e835e4",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C60",
+      "claim": "For Xolair samples, the median resolved distance is 5.6 (29.7) nm with SIM data, 12.3 (76.5) nm with widefield data, and 14.2 (34.5) nm with deconvolved widefield data.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Xolair samples (Figure 5d), the median resolved distance for the Xolair Fc binding site is 5.6 (29.7) nm with SIM data, 12.3 (76.5) nm with widefield data, and 14.2 (34.5) nm with deconvolved widefield data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from the comparison of different imaging modalities shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "19227efc-27cf-4005-b84d-4dc6970d6e02",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C61",
+      "claim": "The site localization method performs well with widefield images.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the site localization method performs well with widefield images and that the precision can be increased through deconvolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the widefield image analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "983f794b-f4a7-4d80-ae18-5d8f4478ea2f",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C62",
+      "claim": "The precision of site localization can be increased through deconvolution of widefield images.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the site localization method performs well with widefield images and that the precision can be increased through deconvolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the comparison of widefield and deconvolved widefield images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "ec9d124e-014c-4e0f-bd5f-f4d3df3a449b",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C63",
+      "claim": "The locations of protein binding sites on cellular surfaces are important for a wide range of cellular processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The locations of protein binding sites on cellular surfaces are important for a wide range of cellular processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "301559d6-e51e-48de-8db0-3121d2c5a226",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C64",
+      "claim": "How and where an antibody binds to pathogen surface structures is critical for the outcome of host-pathogen interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, how and where an antibody binds to pathogen surface structures is critical for the outcome of host-pathogen interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "8dfac2af-4dfa-4660-8ea2-24361b9416ff",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C65",
+      "claim": "Bacteria are known to target antibodies in many different ways.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially relevant for bacteria as they are known to target antibodies in many different ways (Nordenfelt et al., 2012; Nordenfelt and Bj\u00f6rck, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nordenfelt et al., 2012; Nordenfelt and Bj\u00f6rck, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "1bd16e41-d396-48df-b19b-ad892ddeedb1",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C66",
+      "claim": "Knowing the location of the epitope greatly aids both mechanistic understanding and facilitates potential therapeutic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Knowing the location of the epitope greatly aids both mechanistic understanding and facilitates potential therapeutic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion about the importance of epitope localization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "de6fe4bf-13a3-4147-aefa-b26f1c95b30d",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C67",
+      "claim": "Super-resolution techniques such as iPALM, STORM, and STED can in practice achieve an ~10 nm resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Super-resolution techniques such as iPALM, STORM, and STED can in practice achieve an ~10 nm resolution but are costly imaging systems that typically require complex sample preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of existing super-resolution techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "8b63b16a-55a7-4c6c-950a-244f527c3330",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C68",
+      "claim": "Super-resolution techniques such as iPALM, STORM, and STED are costly imaging systems that typically require complex sample preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Super-resolution techniques such as iPALM, STORM, and STED can in practice achieve an ~10 nm resolution but are costly imaging systems that typically require complex sample preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of existing super-resolution techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "c6b1d7a5-c000-4479-af2e-74e21d05e921",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C69",
+      "claim": "An ~10 nm (~12 nm IQR, ~9 nm SD) precision is achieved with diffraction-limited microscopy images by dimension reduction of surface data within an image plane.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, an ~10 nm (~12 nm IQR, ~9 nm SD) precision is achieved with diffraction-limited microscopy images by dimension reduction of surface data within an image plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the method's performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "bc3621b3-7d0f-41ad-ba53-8a8ecfdae61d",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C70",
+      "claim": "Existing imaging-based averaging methods are designed for identical or spherical particles and therefore not suited for site localization on native cell surface morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing imaging-based averaging methods are designed for identical or spherical particles and therefore not suited for site localization on native cell surface morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "436ccfa6-4e31-49e0-a98d-8d8e9889b855",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C71",
+      "claim": "The SiteLoc method enables site localization on native cell surface morphology through normalization of the axial positions of a reference surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This is made possible with our method through normalization of the axial positions of a reference surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key feature of the method that distinguishes it from existing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "084e7591-45d0-49d5-b841-13b7f7ec6597",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C72",
+      "claim": "A 1 nm precision could be achievable under ideal conditions with the SiteLoc method.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that a 1 nm precision could be achievable under ideal conditions and show that the site localization method is highly accurate for varying topologies and inhomogeneous surface expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "00295b18-ac88-4735-b943-e38918ed8ab6",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C73",
+      "claim": "The site localization method is highly accurate for varying topologies and inhomogeneous surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that a 1 nm precision could be achievable under ideal conditions and show that the site localization method is highly accurate for varying topologies and inhomogeneous surface expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "ac84b20e-cf0d-4d50-b2b4-f39ee1e6fedf",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C74",
+      "claim": "The SiteLoc method is suited for cells with non-spherical topology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our presented results show that this method is suited even for cells with non-spherical topology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the results on bacterial M protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "86851d63-a8ae-4e76-85db-606398ff6839",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C75",
+      "claim": "It has proven difficult to perform site localization measurements on bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has proven difficult to perform site localization measurements on bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "ea79987d-ad5d-4597-b47c-7c154f9b06dc",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C76",
+      "claim": "The difficulty in performing site localization measurements on bacteria may be due to the small size of bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to the small size of bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about the source of difficulty.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "b93026dd-9801-4cf1-8467-512bbda9ed94",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C77",
+      "claim": "The variation in site localization measurements can be minimized by increasing SNR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our in silico experiments, as well as our in vitro experiments, indicate that the variation in the measurements can be minimized by increasing SNR and minimizing the biological variability, for example, by using directly conjugated antibodies instead of secondary labelling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the in silico and in vitro experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "2f0824f1-8abd-4ea6-b646-77c7aa04387e",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C78",
+      "claim": "The variation in site localization measurements can be minimized by using directly conjugated antibodies instead of secondary labelling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our in silico experiments, as well as our in vitro experiments, indicate that the variation in the measurements can be minimized by increasing SNR and minimizing the biological variability, for example, by using directly conjugated antibodies instead of secondary labelling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the in silico and in vitro experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "ac789221-e483-4f1d-a4b1-8cd292f3aa9a",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C79",
+      "claim": "The SiteLoc method may be useful for rapid screening of epitope locales.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe this method may be useful for rapid screening of epitope locales, and the implementation, written in the open-source language Julia, is provided on GitHub.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "4401ebdf-f2c8-423a-8008-e38659972d49",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C80",
+      "claim": "The implementation of the SiteLoc method is written in the open-source language Julia and is provided on GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe this method may be useful for rapid screening of epitope locales, and the implementation, written in the open-source language Julia, is provided on GitHub.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as information about the availability of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "a5c1e5bf-20be-4d51-8160-6fcf1edb4ff3",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C81",
+      "claim": "S. pyogenes strain SF370 expresses M1 protein on its surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain SF370 expresses M1 protein on its surface and is available through the American Type Culture Collection (ATCC 700294) (Ferretti et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ferretti et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "e144dded-6919-4d03-b9b3-541afd496a3c",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C82",
+      "claim": "Xolair (omalizumab) is a humanized monoclonal IgG that is IgE-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Xolair (omalizumab, Novartis) is a humanized monoclonal IgG that is IgE-specific, and thus only binds to M protein via Fc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of the antibody used in the experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "e9834f07-13e7-4248-9aab-29f7802bcb34",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C83",
+      "claim": "Xolair only binds to M protein via Fc.",
+      "claim_type": "EXPLICIT",
+      "source": "Xolair (omalizumab, Novartis) is a humanized monoclonal IgG that is IgE-specific, and thus only binds to M protein via Fc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of Xolair relevant to the experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "6f72a1b8-c941-4fb4-9901-b7764bcbaa26",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C84",
+      "claim": "IdeS is an enzyme that cleaves IgG at the hinge region, separating the F(ab')2 from the Fc.",
+      "claim_type": "EXPLICIT",
+      "source": "For secondary antibody labelling, both antibodies were treated with IdeS (Hansa Biopharma) (von Pawel-Rammingen et al., 2002), an enzyme that cleaves IgG at the hinge region, separating the F(ab')2 from the Fc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to von Pawel-Rammingen et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "7049ffa2-11a4-4cb8-8fb1-5cf684a305fd",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C85",
+      "claim": "The widefield images were deconvolved using the Richardson\u2013Lucy algorithm in 10 iterations.",
+      "claim_type": "EXPLICIT",
+      "source": "The widefield images were deconvolved using the Richardson\u2013Lucy algorithm (Richardson, 1972; Lucy, 1974) in 10 iterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the image processing method, with citations to Richardson, 1972; Lucy, 1974.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "065edcae-fbee-4af3-abbc-51b3676bf408",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C87",
+      "claim": "The measured offset in dual-labeled cell wall experiments is likely due to chromatic aberration at the imaging plane.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured offset, shown in Figure 3\u2014figure supplement 2 and Figure 5\u2014figure supplement 1, is likely due to chromatic aberration at the imaging plane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the offset measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "2e7713a2-12f3-4b75-aa9d-a46bf3c8ab36",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "claim_id": "C88",
+      "claim": "The offset from dual-labeled cell wall experiments is used to correct for chromatic aberration in subsequent site localization measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "This offset is used to correct for chromatic aberration in subsequent site localization measurements by correcting the position of the reference region prior to calculating distance to the ligand signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of how the offset is used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f0d34535-10b0-46ad-8f42-9a1439954d05",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed SiteLoc, a novel imaging-based method for molecular localization on cellular surface proteins that achieves nanometer-scale resolution through one-dimensional distance measurement from bound ligands to a reference surface using topological image averaging and normalization of axial positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 and C30-C31 describe the core methodological innovation, while C71 explains the key distinguishing feature (axial normalization) that enables application to native cell surfaces. The method description is internally consistent and supported by the presented data throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Simulated fluorescence images with varying morphologies and surface expression patterns demonstrate that SiteLoc achieves high accuracy across diverse cell surface patterns, with potential for 1 nm precision under ideal conditions, though accuracy varies with shape complexity, labeling strategy, and signal-to-noise ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C42 and C72-C73 collectively present comprehensive simulation results with well-defined parameters (C36-C37). The simulations systematically test various conditions and identify sources of uncertainty (C40-C41), providing strong validation of the method's robustness. Figure 2 supports these findings with quantitative measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "99857c2a-55ad-4cf2-910e-f9f116551750",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DNA height probe measurements on erythrocyte surfaces validate that SiteLoc accurately estimates molecular heights on both spherical and non-spherical cells, with measured heights approximately half the DNA strand length and in good agreement with worm-like chain model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C48 describe a well-designed validation experiment using DNA probes of known lengths. The agreement with both an existing method (C44) and theoretical WLC predictions (C47) provides strong orthogonal validation. Figure 3 shows consistent results across different DNA lengths and cell morphologies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "0a490d89-5707-45b8-b563-780928a20e27",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SiteLoc successfully localizes known binding sites on M protein of S. pyogenes, measuring distances of 5.6 nm for Xolair Fc binding, 6.2 nm for Ab49 Fab binding, and 18.0 nm for fibrinogen binding sites, consistent with literature-reported arrangements and demonstrating applicability to non-spherical cells with heterogeneous protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C49-C55 present measurements on a biologically relevant system with known binding site locations from prior literature. The measured distances follow the expected spatial arrangement (C55), and C74 confirms applicability to non-spherical topology. However, the large IQR values (29.7-49.3 nm) relative to median distances suggest substantial measurement variability that warrants caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "06a6cb76-3191-42fc-a388-752c7a438db3",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SiteLoc achieves approximately 10 nm precision with structured illumination microscopy data through dimension reduction of surface data within an image plane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C69 state the achieved precision with specific quantitative metrics (~10 nm, ~12 nm IQR, ~9 nm SD). This is supported by the DNA probe validation experiments and bacterial measurements, though the precision varies considerably depending on experimental conditions as shown in other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "9e136d16-2088-4ca1-8f59-0b1e0223ed94",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Site localization precision is increased when using directly conjugated antibodies compared to secondary antibody labeling, and measurement variation can be minimized by increasing signal-to-noise ratio and reducing biological variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C78 are supported by both in silico (Figure 2\u2014figure supplement 1) and in vitro experiments (Figure 4\u2014figure supplement 2). The comparison between direct and secondary labeling shows consistent trends across different experimental systems, providing strong evidence for these optimization strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "e98e2d85-d28c-484f-a915-d13dc8a7bce6",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SiteLoc yields viable results with conventional widefield microscopy images, and deconvolution using the Richardson-Lucy algorithm may increase precision, though measured distances are generally larger than with SIM data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C57-C62 demonstrate applicability to widefield microscopy with quantitative comparisons (C59-C60). The results show consistent trends across two different samples (Xolair and fibrinogen), though the increased distances and larger IQR values with widefield data suggest reduced precision. The deconvolution approach (C85) is well-established and appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "6e2db7e5-3786-4698-8bdc-50b3469cdec9",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Signal precision is improved by accounting for the distortion of ovoid bacteria through axial normalization in polar coordinates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is directly supported by Figure 1c, which visually demonstrates improved signal-to-noise ratio after radial alignment. This is a key technical feature that enables the method to work on non-spherical cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "8a4364b0-546a-4ea3-b756-738c2bb6aacd",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Site localization measurements on bacteria have proven difficult, possibly due to the small size of bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 acknowledges experimental difficulty, but C76 is speculative without supporting evidence. The large IQR values in bacterial measurements (C52-C54) support that measurements are challenging, but the specific cause remains unvalidated. Additional experiments would be needed to confirm whether bacterial size is the limiting factor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "d1a7af0b-e17d-414d-b334-3e8f3950be2d",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The measured offset in dual-labeled cell wall experiments is likely due to chromatic aberration at the imaging plane and is used to correct subsequent site localization measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 describe a standard chromatic aberration correction procedure. The dual-labeling control experiment (Figures 3\u2014figure supplement 2 and 5\u2014figure supplement 1) provides appropriate calibration data, and the correction approach is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "57fcfbcd-4e33-4e03-87e3-439e10243bad",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SiteLoc is well suited for antibody binding site measurements on native cell surface morphology, can be applied to other molecular distance estimations, enables rapid determination of binding sites without synthetic modification, and may be useful for rapid screening of epitope locales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C29 are supported by the diverse applications demonstrated (DNA probes, antibody binding sites, different cell types). However, C79 is speculative about future applications. The evidence supports the method's versatility, but high-throughput screening capability and broader applicability require further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background and motivation: Epitope localization is critical for immunological outcomes, but current methods are costly and time-consuming, and existing imaging-based averaging methods are unsuitable for native cell surfaces with variable morphology and heterogeneous protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 and C63-C70 establish the scientific context and motivation through citations to prior literature. These claims accurately represent established knowledge about antibody-epitope interactions, limitations of current methods, and the need for improved approaches. The characterization of existing methods' limitations (C19-C21, C70) appropriately justifies the development of SiteLoc.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    },
+    {
+      "id": "cf508b39-76fb-4c71-b589-ceba013771b2",
+      "content_id": "d48c072a-80dc-4524-9253-0d5a4a23cf6b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details: The experiments used appropriate reagents and biological materials including WGA for bacterial peptidoglycan labeling, S. pyogenes strain SF370 expressing M1 protein, Xolair antibody that binds M protein via Fc, and IdeS enzyme for antibody cleavage, with the implementation provided as open-source Julia code on GitHub.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C80-C84 describe standard experimental materials and procedures with appropriate citations. The open-source code availability (C80) enhances reproducibility. These are well-established reagents and methods appropriately applied to the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:17:43.812881Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9bb62115-4182-4ffb-ab5a-8520e4bc9cab",
+      "result_id": "f0d34535-10b0-46ad-8f42-9a1439954d05"
+    },
+    {
+      "claim_id": "7873574b-4fd6-4985-a1b5-a2ceb77ceff6",
+      "result_id": "f0d34535-10b0-46ad-8f42-9a1439954d05"
+    },
+    {
+      "claim_id": "122ace44-3bec-4922-a231-25a1910248df",
+      "result_id": "f0d34535-10b0-46ad-8f42-9a1439954d05"
+    },
+    {
+      "claim_id": "e966366a-cc11-4c1f-b180-33cdf2d0d6e9",
+      "result_id": "f0d34535-10b0-46ad-8f42-9a1439954d05"
+    },
+    {
+      "claim_id": "23ee5732-2200-44be-8dc3-6f14c799d834",
+      "result_id": "f0d34535-10b0-46ad-8f42-9a1439954d05"
+    },
+    {
+      "claim_id": "436ccfa6-4e31-49e0-a98d-8d8e9889b855",
+      "result_id": "f0d34535-10b0-46ad-8f42-9a1439954d05"
+    },
+    {
+      "claim_id": "8ee30533-bd65-4741-89c4-913295702a87",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "84fb8a9b-d854-40dd-a384-d39e1a680843",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "959059fa-e8cc-48b7-971d-cc8bf4ab2397",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "f0e964b6-04b7-4592-b08d-14e05975180f",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "016a0975-c26f-45d0-93a3-c59e05fa961c",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "98adba77-01c4-4f61-bd3f-b015f76d6921",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "fd1c1db4-15e6-46d3-993d-7ad51e85e489",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "7da74786-1151-48c8-bf54-42fa67d33960",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "ff3b40e5-5103-486b-b570-f73e76f88c4f",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "084e7591-45d0-49d5-b841-13b7f7ec6597",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "00295b18-ac88-4735-b943-e38918ed8ab6",
+      "result_id": "ec21f0ae-e91c-42a6-9813-29cc70bde4c2"
+    },
+    {
+      "claim_id": "c4705335-9157-4eec-8bed-d74c29c6edce",
+      "result_id": "99857c2a-55ad-4cf2-910e-f9f116551750"
+    },
+    {
+      "claim_id": "9306272a-2765-4712-bcb1-228091aa255d",
+      "result_id": "99857c2a-55ad-4cf2-910e-f9f116551750"
+    },
+    {
+      "claim_id": "d0194f38-2e27-4345-9067-31b6d0fe2257",
+      "result_id": "99857c2a-55ad-4cf2-910e-f9f116551750"
+    },
+    {
+      "claim_id": "6df568b7-091e-4e15-ae51-cd9850dc6e5d",
+      "result_id": "99857c2a-55ad-4cf2-910e-f9f116551750"
+    },
+    {
+      "claim_id": "c744e7b3-3ae5-4bd5-875f-b737f25c5a77",
+      "result_id": "99857c2a-55ad-4cf2-910e-f9f116551750"
+    },
+    {
+      "claim_id": "9d003a2b-4e8a-4b8a-b0a2-e3e1629296cc",
+      "result_id": "99857c2a-55ad-4cf2-910e-f9f116551750"
+    },
+    {
+      "claim_id": "44ec7a25-4cd3-4603-8d66-5beaf5fe9eca",
+      "result_id": "99857c2a-55ad-4cf2-910e-f9f116551750"
+    },
+    {
+      "claim_id": "364df37b-ef63-4f5a-8a44-8b821cf882d3",
+      "result_id": "99857c2a-55ad-4cf2-910e-f9f116551750"
+    },
+    {
+      "claim_id": "3edf8540-9ba3-46f8-b427-2ce3d868f1e0",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "13637fce-98ec-4154-b8fe-89be1c6fcbcb",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "33177f88-3710-4190-8231-9227493c9fe0",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "62548929-ea16-4236-bda4-0e4366ee0e3a",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "b03039c0-e917-4e55-a2db-042264b483d8",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "5bec9665-f555-4344-8882-cf2730eee846",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "172913dc-13e5-430b-8ef9-d19bb140dca5",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "2ff4ec56-4b99-486b-aca7-f265536bbc29",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "49754d2a-8a78-4711-81b9-1a53338af51b",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "66c802f9-2c66-4810-a672-8ed8b3b3018e",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "ac84b20e-cf0d-4d50-b2b4-f39ee1e6fedf",
+      "result_id": "0a490d89-5707-45b8-b563-780928a20e27"
+    },
+    {
+      "claim_id": "db5f8766-310c-48b8-976b-48ae9c591db1",
+      "result_id": "06a6cb76-3191-42fc-a388-752c7a438db3"
+    },
+    {
+      "claim_id": "c6b1d7a5-c000-4479-af2e-74e21d05e921",
+      "result_id": "06a6cb76-3191-42fc-a388-752c7a438db3"
+    },
+    {
+      "claim_id": "3f9825db-5512-4ee5-8737-d042bb1a12ef",
+      "result_id": "9e136d16-2088-4ca1-8f59-0b1e0223ed94"
+    },
+    {
+      "claim_id": "b93026dd-9801-4cf1-8467-512bbda9ed94",
+      "result_id": "9e136d16-2088-4ca1-8f59-0b1e0223ed94"
+    },
+    {
+      "claim_id": "2f0824f1-8abd-4ea6-b646-77c7aa04387e",
+      "result_id": "9e136d16-2088-4ca1-8f59-0b1e0223ed94"
+    },
+    {
+      "claim_id": "51509e57-1af4-49ef-a827-93c8b894d35a",
+      "result_id": "e98e2d85-d28c-484f-a915-d13dc8a7bce6"
+    },
+    {
+      "claim_id": "5a91d561-7045-4f7f-82cd-e4599a455288",
+      "result_id": "e98e2d85-d28c-484f-a915-d13dc8a7bce6"
+    },
+    {
+      "claim_id": "ec9c5998-1b2a-4acf-8c0c-2bd62a2b8ff9",
+      "result_id": "e98e2d85-d28c-484f-a915-d13dc8a7bce6"
+    },
+    {
+      "claim_id": "727a342e-de6b-48ee-86a5-cd7f69ac3a81",
+      "result_id": "e98e2d85-d28c-484f-a915-d13dc8a7bce6"
+    },
+    {
+      "claim_id": "00adca92-bf2a-47dd-8511-6e8720e835e4",
+      "result_id": "e98e2d85-d28c-484f-a915-d13dc8a7bce6"
+    },
+    {
+      "claim_id": "19227efc-27cf-4005-b84d-4dc6970d6e02",
+      "result_id": "e98e2d85-d28c-484f-a915-d13dc8a7bce6"
+    },
+    {
+      "claim_id": "983f794b-f4a7-4d80-ae18-5d8f4478ea2f",
+      "result_id": "e98e2d85-d28c-484f-a915-d13dc8a7bce6"
+    },
+    {
+      "claim_id": "7049ffa2-11a4-4cb8-8fb1-5cf684a305fd",
+      "result_id": "e98e2d85-d28c-484f-a915-d13dc8a7bce6"
+    },
+    {
+      "claim_id": "7f8741fc-9aae-4151-93d7-51e9a83faa60",
+      "result_id": "6e2db7e5-3786-4698-8bdc-50b3469cdec9"
+    },
+    {
+      "claim_id": "86851d63-a8ae-4e76-85db-606398ff6839",
+      "result_id": "8a4364b0-546a-4ea3-b756-738c2bb6aacd"
+    },
+    {
+      "claim_id": "ea79987d-ad5d-4597-b47c-7c154f9b06dc",
+      "result_id": "8a4364b0-546a-4ea3-b756-738c2bb6aacd"
+    },
+    {
+      "claim_id": "065edcae-fbee-4af3-abbc-51b3676bf408",
+      "result_id": "d1a7af0b-e17d-414d-b334-3e8f3950be2d"
+    },
+    {
+      "claim_id": "2e7713a2-12f3-4b75-aa9d-a46bf3c8ab36",
+      "result_id": "d1a7af0b-e17d-414d-b334-3e8f3950be2d"
+    },
+    {
+      "claim_id": "e66814f5-d4e1-44eb-9b2f-9e962f8f8f58",
+      "result_id": "57fcfbcd-4e33-4e03-87e3-439e10243bad"
+    },
+    {
+      "claim_id": "72cbd074-3530-437d-b307-a94b79134d78",
+      "result_id": "57fcfbcd-4e33-4e03-87e3-439e10243bad"
+    },
+    {
+      "claim_id": "0846c639-315a-4058-8308-696a8a3fc51b",
+      "result_id": "57fcfbcd-4e33-4e03-87e3-439e10243bad"
+    },
+    {
+      "claim_id": "ac789221-e483-4f1d-a4b1-8cd292f3aa9a",
+      "result_id": "57fcfbcd-4e33-4e03-87e3-439e10243bad"
+    },
+    {
+      "claim_id": "bcbd978e-a79a-4188-8b31-e4d71d1f6319",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "f5dd7521-dd1c-484a-9549-dea703261be2",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "9af33aea-e1b7-42f6-9886-54e60063cd07",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "e1b742bd-52db-4d0e-b0ac-994001cc0216",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "9e5c8851-a801-4b69-9ddc-f786edd88963",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "4d294a1a-7bca-4950-be08-c196789da77a",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "c985d67c-ecf2-4895-a903-34f5b638c06b",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "73f502a8-c56f-4697-8b32-a56400968320",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "d6b64222-7f38-4ba0-8d19-eee07708f95c",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "19ec1d05-feaa-47f0-8641-317a3dd862e8",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "53486ffa-7fb6-40dc-a003-7d1d4eabed1f",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "ed4b7864-74cd-4a2e-8a63-d2614331c6d2",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "d7491c1d-a8ad-4eff-aa2b-ba0a9ef51ad5",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "e4357896-daa2-41ba-b521-62c2afa17a3d",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "a0987363-e63e-4348-bd6e-705a023ce7e9",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "618f4851-2dd3-42cf-99b9-488aa8c2538f",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "ec9d124e-014c-4e0f-bd5f-f4d3df3a449b",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "301559d6-e51e-48de-8db0-3121d2c5a226",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "8dfac2af-4dfa-4660-8ea2-24361b9416ff",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "1bd16e41-d396-48df-b19b-ad892ddeedb1",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "de6fe4bf-13a3-4147-aefa-b26f1c95b30d",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "8b63b16a-55a7-4c6c-950a-244f527c3330",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "bc3621b3-7d0f-41ad-ba53-8a8ecfdae61d",
+      "result_id": "d39eba38-ac4f-45b0-a580-4eb4f7e8e788"
+    },
+    {
+      "claim_id": "ab6514c0-45a5-42df-b4a7-583fb11efc12",
+      "result_id": "cf508b39-76fb-4c71-b589-ceba013771b2"
+    },
+    {
+      "claim_id": "4401ebdf-f2c8-423a-8008-e38659972d49",
+      "result_id": "cf508b39-76fb-4c71-b589-ceba013771b2"
+    },
+    {
+      "claim_id": "a5c1e5bf-20be-4d51-8160-6fcf1edb4ff3",
+      "result_id": "cf508b39-76fb-4c71-b589-ceba013771b2"
+    },
+    {
+      "claim_id": "e144dded-6919-4d03-b9b3-541afd496a3c",
+      "result_id": "cf508b39-76fb-4c71-b589-ceba013771b2"
+    },
+    {
+      "claim_id": "e9834f07-13e7-4248-9aab-29f7802bcb34",
+      "result_id": "cf508b39-76fb-4c71-b589-ceba013771b2"
+    },
+    {
+      "claim_id": "6f72a1b8-c941-4fb4-9901-b7764bcbaa26",
+      "result_id": "cf508b39-76fb-4c71-b589-ceba013771b2"
+    }
+  ],
+  "comparisons": []
+}

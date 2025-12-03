@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study developed a process MGP approach using 1145 Diversity Outbred mice to map chondrocyte differentiation genes to craniofacial shape variation. The chondrocyte differentiation pathway (38 genes) explained 2.15% of total craniofacial shape variance, with Nov/Ccn3, Bmpr1b, and Nfib showing the strongest associations. This variance was significantly greater than random permutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 and C62-C64 collectively establish the methodology, sample size, gene set composition, statistical significance via permutation testing, and phenotypic effects. The permutation testing (C14) provides appropriate statistical validation, and the variance explained is modest but significant. The approach is methodologically sound with adequate sample size for the multivariate analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Bmpr1b mutants show novel phenotypic features predicted by the chondrocyte differentiation MGP analysis, including larger chondrocyte cell sizes with altered distribution in the intersphenoid synchondroses (\u03c7\u00b2=21.23, p<0.0001) and premature coronal suture fusion. The MGP effect moderately correlated with the Bmpr1b mutant phenotype (r=0.371, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 provide convergent evidence from literature (C15-C17), computational prediction (C18), and experimental validation (C19-C22). The statistical testing of cell size distribution is appropriate (chi-square test), and the discovery of unreported phenotypes (C23) validates the predictive power of the MGP approach. The moderate correlation suggests biological relevance despite not being a perfect match.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Left/right symmetry genes (81 genes) explained 3.4% of craniofacial shape variance, with Fgf10 showing high loading. The MGP effect strongly correlated with Fgf10 mutant phenotype (r=0.672, p<0.0001), and experimental testing confirmed significant directional asymmetry in Fgf10 mutants (F=4.91, p<0.0001), a previously unreported phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 demonstrate a complete cycle of prediction and validation. The L/R symmetry MGP analysis identified Fgf10 as important (C25), showed strong correlation with mutant phenotype (C31), and the hypothesis was experimentally validated (C32). However, the sample size for Fgf10 mutants (n=8) is small, which could affect the robustness of the asymmetry finding, though the p-value is highly significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Palate development genes (73 genes) explained 2.4% of cranial shape variance, with Ephb2, Gli3, and Lrp6 contributing strongly. The MGP effect showed moderate overall correlation with Ankrd11 mutant phenotype (r=0.339, p=0.0001), but substantially higher correlation for palate-specific landmarks (r=0.536).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 establish the palate development analysis with appropriate statistical validation via permutation testing (C36). The differential correlation between full landmark set (C39) and palate-specific landmarks (C40) is biologically meaningful and demonstrates anatomical specificity. The connection to KBG syndrome (C37-C38) provides clinical relevance, though the mutant used is heterozygous which may reduce effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Analysis of marker importance revealed heterogeneity across processes: chondrocyte differentiation showed high sensitivity to single marker removal (r=0.346 after removing Ccn3/Nov), while L/R symmetry was robust (r=0.95 after removing top 10 markers). Across 500 processes, 51.6% showed a marker with 0.5\u00d7 larger effect than others, 36.6% showed 2\u00d7 larger effects, and 20% showed 3\u00d7 larger effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 provide systematic evaluation of single versus joint marker effects through sensitivity analysis. The contrasting examples (chondrocyte vs L/R symmetry) effectively demonstrate the range of genetic architectures. The analysis of 500 processes (C67-C69) provides appropriate context, though the specific threshold choices (0.5\u00d7, 2\u00d7, 3\u00d7) appear somewhat arbitrary and lack justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Pairwise comparison of 15 craniofacial development processes revealed moderate clustering structure (cophenetic correlation=0.648, p=7.6\u00d710\u207b\u00b9\u2074), suggesting that developmentally similar perturbations tend to produce phenotypic effects in similar directions. This convergence indicates that multiple pathways lead to common developmental outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 establish the clustering analysis with appropriate statistical validation (C50-C51). The supporting literature (C52-C55) provides biological context for pleiotropy and developmental integration. However, the interpretation of \"moderate\" correlation (0.648) as indicating \"significant structure\" (C51) could be debated. The claims about convergence (C56-C58) are supported by the data but represent interpretations that extend beyond the direct statistical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C71"
+    ],
+    "result": "The study used 1145 Diversity Outbred mice from three laboratories across seven generations, genotyped with MegaMUGA (77,808 markers) or GigaMUGA (143,259 markers) arrays, yielding 123,309 SNPs after imputation. Craniofacial shape was quantified using 54 3D landmarks from micro-CT scans at 0.035mm resolution. Kinship analysis showed mean=0, SD=0.047.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 and C71 comprehensively describe the study design, sample composition, genotyping, phenotyping, and quality control. The methods are standard for DO studies and appropriately documented. The low kinship values (C49) justify not adjusting for relatedness. However, the multi-laboratory and multi-generation design introduces potential batch effects that are addressed by regression (mentioned in methods) but could still be a source of variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The process MGP approach is generally applicable to any continuously varying phenotype. The authors developed an online application (https://genopheno.ucalgary.ca/MGP/) allowing users to perform custom process-centered craniofacial shape analyses in the DO population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 makes a broad generalization about applicability to \"any continuously varying phenotype\" that is not directly tested in this manuscript, which focuses exclusively on craniofacial shape. While the statistical framework (PLS) is indeed general, the claim requires validation in other phenotypic domains. Claims C60-C61 about the web application are factual statements about a resource, which is valuable but represents a tool rather than a scientific finding requiring evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The introduction establishes that craniofacial shape is moderately to highly heritable (30-70%) but remains poorly understood genetically despite many studies. The trait is extraordinarily polygenic, with genes having major developmental roles often contributing little to variation, while unexpected genes emerge as significant contributors. Genetic effects depend on background and show variable penetrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 synthesize prior literature to establish the scientific context and motivation for the study. All claims are supported by appropriate citations to published research. These represent accurate characterizations of the field based on the cited literature, though they are background claims rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Ift88 is a core component of primary cilia responsible for promoting developmental signals involved in many facets of facial development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is a factual statement about Ift88 function supported by citation (Tian et al., 2017). This is background information used to contextualize the web application example rather than a novel finding.",
+    "result_type": "MINOR"
+  }
+]

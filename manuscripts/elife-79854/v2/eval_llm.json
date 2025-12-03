@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C51"
+    ],
+    "result": "MSA Transformer is a protein language model trained on 26 million MSAs using the masked language modeling (MLM) objective. The authors developed an iterative masking procedure that directly employs the MLM objective to generate novel protein sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C51 establish the methodological foundation of the work. The training details are properly cited (C1, C2), and the iterative masking procedure is the core methodological contribution described throughout the manuscript with supporting data (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21"
+    ],
+    "result": "For 14 large protein families, MSA-Transformer-generated sequences score at least as well as natural sequences across homology (HMMER), coevolution (statistical energy), and structural measures (pLDDT, RMSD). MSA Transformer outperforms bmDCA with default parameters and achieves similar or better structural scores than bmDCA with optimized parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, and C21 are supported by comprehensive data in Figure 1, statistical tests in Appendix 1\u2014tables 1-2, and consistent observations across all 14 families. The Kolmogorov-Smirnov tests provide statistical validation of the comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "For small protein families (7 families with 9 to hundreds of sequences), MSA Transformer outperforms Potts models by generating sequences with good scores that are substantially different from natural sequences, while low-temperature bmDCA generates near-copies of natural sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30-C33 are supported by Figure 3 showing that MSA Transformer generates diverse, high-scoring sequences for small families, while bmDCA either produces poor scores (default parameters) or near-duplicates (low temperature). This addresses a key limitation of Potts models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C34",
+      "C35"
+    ],
+    "result": "MSA Transformer better reproduces higher-order statistics (3+ body correlations) of natural MSAs than bmDCA, while bmDCA with default parameters better reproduces one- and two-body statistics, consistent with its training objective as a pairwise maximum entropy model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C34, and C35 are supported by r20 score analysis (Figure 4) and detailed statistical comparisons (Figure 4\u2014figure supplements 1-3). The complementary strengths align with the different training objectives of the two methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C25",
+      "C26"
+    ],
+    "result": "MSA-Transformer-generated sequences are novel (larger Hamming distances to natural sequences than between natural sequences), with the highest-scoring sequences being truly novel rather than near-copies. The diversity of generated MSAs is only slightly lower than natural MSAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C25, and C26 are supported by Hamming distance analysis (Figure 2) and effective depth measurements (Figure 1\u2014figure supplement 1). This demonstrates that good scores are not achieved by reproducing natural sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C41"
+    ],
+    "result": "MSA Transformer generates sequences with a distribution in sequence space very similar to natural MSAs, sampling from denser regions. bmDCA captures the overall shape but smooths the distribution with default parameters and restricts to sparse regions at low temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C40, and C41 are supported by principal component analysis (Figure 5) and neighbor analysis (Figure 5\u2014figure supplement 3). However, the limitation that top 2 PCs explain <4% of variance (C54) should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "MSA-Transformer-generated sequences score comparably to experimentally validated bmDCA-generated sequences for chorismate mutase, with similar fractions having high estimated relative enrichment. For two other families with DMS data, MSA Transformer better reproduces natural DMS score distributions than bmDCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by comparison with experimental data from Russ et al. 2020 (Figure 6, Figure 6\u2014figure supplement 1) and DMS analysis (Figure 6\u2014figure supplement 2). The 71% validation rate (C45) provides quantitative support, though the estimation method relies on nearest-neighbor approximation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C64",
+      "C66",
+      "C69"
+    ],
+    "result": "The iterative masking procedure uses masking probability p=0.1, 200 iterations, greedy sampling (highest probability token), and random subsampling of natural MSAs. These parameters were chosen based on convergence analysis and contact map preservation, and behaviors are generic across protein families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C64, C66, and C69 describe methodological choices supported by systematic parameter exploration (Figure 7\u2014figure supplements 1-3). The justification for p=0.1 (close to training value, preserves contact maps) is reasonable, though some parameter dependence is evident.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C27",
+      "C53"
+    ],
+    "result": "bmDCA with default parameters generates sequences very different from natural ones. Decreasing sampling temperature improves statistical energy scores and makes sequences more similar to natural ones and to each other, but produces highly redundant sequences at low temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C27, and C53 characterize bmDCA behavior supported by diversity analysis (Figure 1\u2014figure supplement 1, Figure 2) and score comparisons (Figure 1, Appendix 1\u2014table 4). This establishes the baseline for comparison with MSA Transformer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C42"
+    ],
+    "result": "bmDCA generates sequences similar to natural sequences with fewer neighbors than typical in natural data. Both MSA Transformer and low-temperature bmDCA generate sequences with apparent phylogenies that are more stemmy than natural phylogenies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C42 are supported by neighbor distribution analysis (Figure 5\u2014figure supplement 3) and phylogenetic tree analysis (Figure 5\u2014figure supplement 4). These provide additional characterization of sequence space sampling properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C28",
+      "C63"
+    ],
+    "result": "Potts models are pairwise maximum entropy models trained to reproduce one- and two-body statistics of protein families. They have been experimentally validated for protein design and successfully used for contact prediction, but require deep and diverse MSAs for accurate fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C12, C28, and C63 provide background on Potts models with appropriate citations. These establish the context and baseline for the comparative evaluation with MSA Transformer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C29",
+      "C49",
+      "C50"
+    ],
+    "result": "MSA Transformer was trained on many MSAs and transfers knowledge across protein families. It outperforms Potts models at unsupervised contact prediction most strongly for shallow MSAs, captures coevolutionary patterns in tied row attentions, and captures phylogenetic relationships in column attentions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C29, C49, and C50 describe MSA Transformer capabilities with appropriate citations to Rao et al. 2021a and Lupo et al. 2022. These establish the rationale for why MSA Transformer should perform well for sequence generation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C18",
+      "C19"
+    ],
+    "result": "Four scores are used to evaluate generated sequences: HMMER scores for homology, DCA statistical energy for coevolution, AlphaFold pLDDT for structural prediction confidence, and RMSD between predicted and experimental structures for structural similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C18, and C19 describe the evaluation metrics used throughout the study. These are standard, well-established measures appropriate for assessing protein sequence quality across different aspects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "The study analyzed 7 small protein families with MSAs comprising from nine to a few hundreds of sequences, in addition to 14 large protein families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 describes the dataset for small families, explicitly stated in the manuscript and listed in Appendix 1\u2014table 6. This establishes the scope of the small family analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The top two principal components explain less than 4% of the total variance for all families and all generation methods in the PCA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 identifies a limitation of the PCA analysis (Figure 5). This is an important caveat that the authors appropriately acknowledge, though the analysis still provides useful qualitative insights into sequence space distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Protein language models based on the MLM objective have great generative potential despite not being obvious generative models. The results reinforce the coevolution-driven protein design approach of learning constraints from evolutionarily related sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 are high-level conclusions supported by the cumulative evidence from all major results. These represent the authors' interpretation of the broader significance of their findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "De novo protein design is generally restricted to small proteins, directed evolution remains limited to the vicinity of natural sequences, only a small fraction of protein sequence space comprises sequences that fold, and there are 20^100 possible sequences for a 100 amino acid protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide background context with appropriate citations. These establish the motivation for developing new protein design methods that can explore sequence space more broadly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Variational autoencoders have been shown to successfully produce functional proteins but their statistical properties appear to have lower quality than Potts models. AlphaFold's success is partly based on the use of transformers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, and C62 provide background on alternative methods with appropriate citations. These establish the broader context of deep learning approaches for protein design and structure prediction.",
+    "result_type": "MINOR"
+  }
+]

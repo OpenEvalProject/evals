@@ -1,0 +1,1249 @@
+{
+  "submission": {
+    "id": "18e3bd75-e56e-4b17-8558-2794167ef1b1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:05:04.653895Z",
+    "updated_at": "2025-12-03T14:05:04.653895Z"
+  },
+  "content": [
+    {
+      "id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "submission_id": "18e3bd75-e56e-4b17-8558-2794167ef1b1",
+      "content_type": "manuscript",
+      "content_text": "# Controlling SARS-CoV-2 in schools using repetitive testing strategies\n\n## Authors\n\n- Andrea Torneri<sup>1</sup> ([ORCID: 0000-0002-4322-0770](https://orcid.org/0000-0002-4322-0770)) \u2020\n- Lander Willem<sup>1</sup>\n- Vittoria Colizza<sup>3</sup> ([ORCID: 0000-0002-2113-2374](https://orcid.org/0000-0002-2113-2374))\n- C\u00e9cile Kremer<sup>2</sup>\n- Christelle Meuris<sup>5</sup>\n- Gilles Darcis<sup>5</sup>\n- Niel Hens<sup>1</sup> ([ORCID: 0000-0003-1881-0637](https://orcid.org/0000-0003-1881-0637)) \u2020\n- Pieter JK Libin<sup>2</sup> ([ORCID: 0000-0003-3906-758X](https://orcid.org/0000-0003-3906-758X)) \u2020\n\n### Affiliations\n\n1. Centre for Health Economic Research and Modelling Infectious Diseases, University of Antwerp Antwerp Belgium ([ROR:008x57b05](https://ror.org/008x57b05))\n2. Interuniversity Institute of Biostatistics and statistical Bioinformatics, Data Science Institute, Hasselt University Hasselt Belgium ([ROR:04nbhqj75](https://ror.org/04nbhqj75))\n3. INSERM, Sorbonne Universit\u00e9, Pierre Louis Institute of Epidemiology and Public Health Paris France ([ROR:02qqh1125](https://ror.org/02qqh1125))\n4. Tokyo Tech World Research Hub Initiative (WRHI), Tokyo Institute of Technology Tokyo Japan ([ROR:0112mx960](https://ror.org/0112mx960))\n5. Department of Infectious Diseases, Li\u00e8ge University Hospital Li\u00e8ge Belgium\n6. Artificial Intelligence Lab, Department of Computer Science, Vrije Universiteit Brussel Brussels Belgium ([ROR:006e5kg04](https://ror.org/006e5kg04))\n7. KU Leuven, Department of Microbiology and Immunology, Rega Institute for Medical Research, University of Leuven Leuven Belgium ([ROR:03w5j8p12](https://ror.org/03w5j8p12))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSARS-CoV-2 remains a worldwide emergency. While vaccines have been approved and are widely administered, there is an ongoing debate whether children should be vaccinated or prioritized for vaccination. Therefore, in order to mitigate the spread of more transmissible SARS-CoV-2 variants among children, the use of non-pharmaceutical interventions is still warranted. We investigate the impact of different testing strategies on the SARS-CoV-2 infection dynamics in a primary school environment, using an individual-based modelling approach. Specifically, we consider three testing strategies: (1) symptomatic isolation, where we test symptomatic individuals and isolate them when they test positive, (2) reactive screening, where a class is screened once one symptomatic individual was identified, and (3) repetitive screening, where the school in its entirety is screened on regular time intervals. Through this analysis, we demonstrate that repetitive testing strategies can significantly reduce the attack rate in schools, contrary to a reactive screening or a symptomatic isolation approach. However, when a repetitive testing strategy is in place, more cases will be detected and class and school closures are more easily triggered, leading to a higher number of school days lost per child. While maintaining the epidemic under control with a repetitive testing strategy, we show that absenteeism can be reduced by relaxing class and school closure thresholds.\n\n## Introduction\n\nThe SARS-CoV-2 pandemic has caused over 200 million COVID-19 cases and over 4 million deaths around the world up to September 2021 (World Health Organization, 2022). Although vaccines have been approved, even for young children, there is an ongoing debate whether such age classes should be vaccinated or prioritized for vaccination (Wong et al., 2021). While the contribution of children in the COVID-19 epidemic is still subject to discussion (Gaythorpe et al., 2021), there is a consensus that more infectious variants can cause significant outbreaks among children (Milne et al., 2022). Furthermore, recent work indicates that children, who typically undergo an infection with little or no symptoms, might still be highly contagious and as such generate new infections in the community (Meuris et al., 2021). As alternative to a vaccination-based strategy, the only means to mitigate outbreaks of SARS-CoV-2 in primary schools, is through non-pharmaceutical interventions, including the use of masks, social distancing, hygienic precautions, and diagnostic testing. Here, the aim of diagnostic testing is to detect and subsequently isolate infected individuals. Therefore, it is important to advance our understanding on how different testing strategies impact primary schools, considering the evolution of SARS-CoV-2 contagiousness through different variants of concerns (VOCs). When defining intervention policies in a school setting, attention needs to be devoted to limiting the number of school days lost. In fact, Engzell et al. evaluated the impact of school closures on students\u2019 learning performance, finding that students of age 8\u201311 years made less progress while learning from home (Engzell et al., 2021). Several scientific investigation discussed the use of testing strategies in school settings, for example (Colosi et al., 2022; Leng et al., 2022; GOV UK, 2021a; GOV UK, 2021b; Paltiel and Schwartz, 2021; Chang et al., 2020a; Hamer et al., 2021), suggesting that a repetitive testing strategy reduces transmissions in a school context but increases absenteeism. In this work, we explore the effectiveness of testing strategies in a primary school setting by varying factors related to the considerate strategies and school environment, and by testing viral and immunological characteristics representing different SARS-CoV-2 VOCs. To do so, we construct an individual-based model that explicitly represents a set of primary school pupils. These pupils are allocated to a fixed set of classes and are taught by a fixed set of teachers. Through this micro-model, we perform a fine-grained evaluation of testing strategies, keeping track of both the attack rate and the number of school days lost. We conduct experiments considering different R0 values to reflect the increase in infectiousness exhibited by the Delta VoC and we vary the incubation period and the proportion of immune individuals to represent the surge of the Omicron VoC. In addition, we investigate the impact of class and school closure thresholds, incubation period, proportion of symptomatic infections, school size and seeding frequency.\n\n## Results\n\nTo investigate the efficacy of the testing strategies, we consider both the attack rate (i.e., proportion of the infections generated in the school population, excluding seeded cases) and the average number of school days lost per child (NSDL). In order to differentiate between different phases of the epidemic, we first compare two scenarios that represent the Wuhan strain and the Delta VoC, characterized by a different transmission potential given a contact. Further, we present the case of the Omicron VoC, where we reduce the proportion of immune individuals and we consider a shorter incubation period.\n\nOn the one hand, our modelling experiments (details on the simulation model in the Methods section) show (Figure 1) that symptomatic isolation results in the infection of a significant proportion of the school population (Wuhan strain, median: 0.03, 95% quantile interval [0.01,0.04]; Delta VoC, median: 0.14, 95% quantile interval [0.10,0.18]). This comes as no surprise, as in our model we assume that 80% of the pupils will go through the infection asymptomatically, and by following this testing policy, we are only able to pick up infections that make up the tip of the iceberg. On the other hand, the attack rate consistently decreases when a testing policy is used that performs a wider screening of the school population, such as reactive testing and repetitive testing. Such policies enable the detection of both symptomatic and asymptomatic cases, that can be subsequently isolated, thereby limiting further transmissions. Among the two screening options, we observe that repetitive approach is the strategy that most reduce the attack rate (Wuhan strain, median: 0.02, 95% quantile interval [0.01,0.03]; Delta VoC, median: 0.05, 95% quantile interval [0.04,0.07]). However, contrary to intuition, our experiments indicate that the reactive screening strategy performs only slightly better than symptomatic isolation (Wuhan strain, median: 0.03, 95% quantile interval [0.01,0.04]; Delta VoC, median: 0.12, 95% quantile interval [0.10,0.17]). This can be explained by the low probability that pupils will be symptomatic when infected, hence a low probability to trigger the reactive screening. When we assume that 80% of infections in children progress asymptomatically, we can expect (by assuming a geometric distribution) that four asymptomatic generations take place, on average, before a symptomatic infection is observed. Therefore, when a reactive screening procedure is triggered by a symptomatic individual, the infected individuals that share a class with this individual might already be recovered or in the end phase of their infectious period. To confirm this reasoning, we simulated a multiple class screening strategy that is triggered when a pupil tests positive. We notice similar attack rates when the screening procedure is repeated (Appendix 1\u2014figure 4). Hence, on average, only a limited number of generations can be avoided by employing a reactive screening strategy, when the infection is predominantly driven by asymptomatic carriers. Note that we also assume that only a limited percentage of symptomatic children is detected (30%), due to the fact that many children exhibit only minor symptoms.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75593/elife-75593-fig1-v1.jpg)\n\n**Figure 1.:** In each panel, we consider three testing strategies: symptomatic testing (SI), symptomatic testing in combination with reactive screening (ReaS) and repetitive screening (RepS). For each of the testing strategies we show a boxplot of the attack rate (green boxplot) and NSDL (orange boxplot) together with their mean values (respectively, yellow and blue dots). The epidemic is simulated for 100 days.\n\nTo interpret the experimental results with respect to the average number of school days lost per child (NSDL), we need to recognize that children can miss school due to isolation when infected or due to quarantine due to a high risk contact. For the symptomatic isolation strategy, only children with symptoms are isolated, resulting in an average NSDL per child that is directly proportional to the fraction symptomatic cases (Wuhan strain, median: 0.08, 95% quantile interval [0.03,0.3]; Delta VoC, median: 0.3, 95% quantile interval [0.07,0.63]). For reactive screening, additional asymptomatic pupils might be identified, thereby quickly reaching the class or school closure thresholds, with a higher NSDL as a result (Wuhan strain, median: 0.59, 95% quantile interval [0.11,1.34]; Delta VoC, median: 1.99, 95% quantile interval [0.68,11.58]). This effect is most pronounced when we apply repetitive testing, where we effectively detect a high proportion of the infections, thereby rapidly meeting the class and/or school closure thresholds, with a very high NSDL as a consequence (Wuhan strain, median: 13.85, 95% quantile interval [3.50,31.93]; Delta VoC, median: 42.18, 95% quantile interval [32.97,51.64]).\n\nWe note that the high NSDL associated with repetitive testing, renders this testing policy impractical. We argue that, by using repetitive testing, more lenient thresholds could be applied, as we are able to detect a larger proportion of cases. We investigate this in Figure 2 where we remove the school closure threshold, and investigate a set of class closure thresholds while considering a repetitive testing strategy. This experiment confirms that a larger class threshold can be used, with only a limited impact on the attack rate, and that such thresholds result in a more acceptable NSDL. A more stringent school threshold shows a positive effect on controlling the attack rate, but drastically increases the NSDL (Appendix 1\u2014figure 9). While the overall trends of the reported measures are similar for the Wuhan and Delta scenarios, the difference between the testing strategies is most pronounced in case of the more infectious virus strain (i.e., the Delta VoC). In our Omicron scenario with low immunity levels and a shorter incubation period, we observed high attack rates that are more difficult to control (Appendix 1\u2014figure 20). To further reduce the number of infections, a twice weekly testing could be considered (Appendix 1\u2014figure 21).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75593/elife-75593-fig2-v1.jpg)\n\n**Figure 2.:** The epidemic is simulated for 100 days. This experiment shows that when repetitive testing is in place, a higher class closure threshold has little effect on the attack rate, yet it significantly reduces the NSDL (Table 1).\n\n**Table 1.**\n Median and 95% Quantile Interval - Class closure threshold scenario.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Class Closure Threshold</th>\n      <th>Summary Measure</th>\n      <th>Median</th>\n      <th>95% Quantile Interval</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2</td>\n      <td>Attack Rate</td>\n      <td>0.08</td>\n      <td>[0.07,0.11]</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>Attack Rate</td>\n      <td>0.09</td>\n      <td>[0.07,0.12]</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>Attack Rate</td>\n      <td>0.09</td>\n      <td>[0.07,0.12]</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>Attack Rate</td>\n      <td>0.09</td>\n      <td>[0.07,0.12]</td>\n    </tr>\n    <tr>\n      <td>No Threshold</td>\n      <td>Attack Rate</td>\n      <td>0.09</td>\n      <td>[0.07,0.11]</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>NSDL</td>\n      <td>9.5</td>\n      <td>[7.86, 11.16]</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>NSDL</td>\n      <td>3.6</td>\n      <td>[2.50, 4.81]</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>NSDL</td>\n      <td>2.01</td>\n      <td>[1.46, 2.83]</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>NSDL</td>\n      <td>1.71</td>\n      <td>[1.36, 2.17]</td>\n    </tr>\n    <tr>\n      <td>No Threshold</td>\n      <td>NSDL</td>\n      <td>1.61</td>\n      <td>[1.39, 1.91]</td>\n    </tr>\n  </tbody>\n</table>\n\nIn order to challenge some of the assumptions of this study, we conduct a series of sensitivity analyses. We show these results in the Supplementary Information and briefly report the main findings here. We investigate the impact of the amount of weekly introductions, by seeding 1 and 10 cases on a weekly basis, next to the baseline scenario of 5 cases. We note that the impact of additional seeding cases amplifies the attack rate, but overall repetitive testing proved to be robust in regard of this parameter (Appendix 1\u2014figure 1). Futher, we notice that a higher attack rate is detected in school with smaller sizes when the seeding number is kept the same (Appendix 1\u2014figure 17). When introducing a number of seeds proportional to the school size, the attack rate and NSDL are similar, but a higher stochasticity is observed for the smaller school size (Appendix 1\u2014figure 18). Furthermore, the high efficacy of repetitive testing is also observed when varying the level of contact reduction between classes, when considering different levels of immunity in children and adults, in a low prevalence setting and when a high probability of symptomatic infections is considered (Appendix 1\u2014figures 5\u20137, 12 and 13). Next, we assume that asymptomatic individuals are as infectious as symptomatic individuals, as recently observed by Meuris et al., 2021. Also in this case, the trends of attack rate and number of school days lost among the different testing strategies are consistent with the baseline scenarios reported above (Appendix 1\u2014figure 8). Repetitive testing and reactive screening are less effective when the turnaround time is increased (Appendix 1\u2014figure 15). While reactive screening performs similar to symptomatic isolation for a turnaround time of 3 days, repetitive screening is still the strategy that is most successful to reduce the number of infections. In addition, testing strategies show a lower performance when a shorter incubation period is considered (Appendix 1\u2014figure 14). We also consider a repetitive testing scenario where we test the entire school population twice per week, which shows that such a strategy squashes a highly contagious epidemic such as driven by the Delta VoC (Appendix 1\u2014figures 2 and 3) and reduces the attack rate of an immune-evasive VoC with shorter incubation period, as the Omicron VoC (Appendix 1\u2014figure 21). In addition, we noticed a decrease in the NSDL when assumptions on school and class closure are relaxed for the Delta VoC (Appendix 1\u2014figure 3) compared to a single repetitive testing strategy. However, when school and class thresholds are present and the Delta Voc considered (Appendix 1\u2014figure 2), or when the thresholds are relaxed and the Omicron VoC assumed (Appendix 1\u2014figure 21), the NSDL increases if testing twice per week. Considering a repetitive testing strategy, we also tested the compliance to testing, showing that attack rate decreases and NSDL increases when compliance is increased (Appendix 1\u2014figure 16). Interestingly, in our experimental setting, a compliance of 60% leads to a similar attack rate than a compliance of 100%.\n\n## Discussion\n\nThis simulation study compares the efficacy of testing strategies for mitigating COVID-19 outbreaks in a school setting. We evaluated such strategies computing both the attack rate and the number of school days lost. The former quantity is related to the risks of importations into households and communities, and of complications from infection, e.g. long COVID and Multysystem Inflammatory Syndrome, while the latter to educational disruption.\n\nThroughout all simulated scenarios, a repetitive testing procedure is shown to be most efficient to reduce the attack rate. Simulations indicate that such a testing strategy limits the number of transmission events even when no class and school closures are in place. The low efficacy of the symptomatic testing and reactive screening procedures is explained by the asymptomatic nature of SARS-CoV-2 infections, especially for children. In fact, when surveillance is based just on the onset of symptoms, asymptomatic carriers avoid detection and intervention, sustaining the spread of the virus.\n\nClass and school closures affect the number of school days lost of healthy children. To limit the learning loss caused by such closures, a control strategy in which only infected cases are isolated would be optimal. This is the aim of the a repetitive testing strategy for which no school or class thresholds are considered. Within our experimental settings, we observe that repetitive testing can keep transmission under control and limit the number of school days lost.\n\nIn our experiments, we consider PCR tests as gold standard, as we argue that the available testing infrastructure is most appropriate for performing reactive and repetitive screening procedures. To make this procedure more efficient, a class pooling approach could be used to reduce the number of samples to be analyzed (Libin et al., 2021). To further reduce the number of required PCR tests, the use of a repetitive testing strategy can be targeted to areas where prevalence is particularly high.\n\nThe viral input parameters chosen in the simulation study were set to describe the spreading of COVID-19. However, other infectious diseases can easily be represented by incorporating the specific transmission characteristics of the respective pathogens in the simulator. Especially in the case of emerging epidemics or pandemics with higher contagiousness in child-to-child interactions and/or a higher severity for children, an appropriate testing strategy in a school setting is pivotal to dampen epidemic spread. By using the simulation model presented in this paper, ad-hoc testing strategies can be easily simulated offering valuable insights in controlling epidemics.\n\nWe assume that teachers are allocated to specific classes and are assumed to interact only with individuals with whom they share the same class. This means that the interaction between teachers in the school environment is limited. We argue that this is a reasonable assumption at this stage of the epidemic, where a large proportion of teachers is either immune or vaccinated. In order to add such functionality to the model, an additional contact structure could be added to the model in which teachers meet, that is, a teacher room, to be informed by the contact frequencies between adults in a school environment (Verelst et al., 2021).\n\nIn the baseline scenario, we assume perfect compliance by school individuals for both the reactive and repetitive screening. We argue that this is a reasonable assumption, as the threshold for participating in saliva sampling is low, and societal awareness and support for this policies can be achieved, via prompt governmental communication. Nonetheless, we investigate the effect of compliance to testing for the repetitive testing strategy. Interestingly, in our experimental setting a similar attack rate is observed for a compliance level of 60% and 100%.\n\n## Methods\n\n### Individual-based primary school model\n\nWe construct an individual-based model to describe COVID-19 outbreaks in a primary school setting, which we briefly introduce in this section We refer to the Supplementary Information for a full description of the model. Children are assigned to classes and we simulate interactions among children both within and between classes. Teachers are allocated to specific classes and are assumed to interact only with individuals with whom they share the same class. We assume that symptomatic individuals develop symptoms at the peak of their infectiousness, at which they can be detected and placed in isolation for 10 days. We implement three testing policies aimed at mitigating school outbreaks:\n\nAll testing policies will close a class when the number of infections in this class exceeds two cases. Analogously, all testing policies will close the school when the number of infections over all classes exceeds 20 cases. When the class, or school, threshold is triggered, the respective class, or the entire school, is closed for 10 days. The length of isolation and of class/school closure is set according to viral clearance observations (Chang et al., 2020b), and in line with isolation policies in place in European countries in the first half of 2021. Infection counts are recorded in a 14-day time window to determine class and school closures. We assumed a weekly screening as the baseline scenario because a strategy based on a single test can be more easily applied at a national level when a high amount of tests need to be quickly analyzed. However, we also consider a repetitive screening strategy based on twice weekly testing. The assumptions on class and school thresholds, and on the frequency of weekly testing are challenged in a sensitivity analysis, which we discuss in the Results section.\n\n### Experimental framework\n\nModel parameters are set to describe COVID-19 spreading. We represent both the Wuhan strain of SARS-CoV-2 and the Delta variant by setting different transmission potentials given a contact, informing such values from the literature (Li et al., 2020; Burki, 2021). We consider a distinct detection probability of symptoms $p_{D}$ for children ($p_{D}=0.3$) and adults ($p_{D}=0.5$), as children typically exhibit mild symptoms that are easily overlooked (Sinha et al., 2020). Children are set to be halve as susceptible as adults (Davies et al., 2020). We assume that 30% of school children are immune due to prior infection, and that 90% of the teachers are immune, due to their vaccination status or due to prior infection (Sciensano, 2022).\n\nThe simulated testing procedure accounts for the use of PCR tests on saliva or throat washing samples. The sensitivity of such tests is set to 86%, and there is a one day delay in reporting the result (Butler-Laporte et al., 2021). Recent reports show that the performance of saliva sampling in combination with PCR testing is on par with nasopharyngeal swab sampling in combination with PCR testing (Wyllie et al., 2020). We assume full compliance to testing, that could potentially be reached since saliva sampling is less invasive compared to other specimen collection procedures. Infectious individuals become PCR detectable 2 days after infection, as previously assumed (Torneri et al., 2020; Torneri et al., 2021). For the reactive screening testing policy, we assume that there is a one day screening delay.\n\nEvery simulated week, five susceptible children are assumed to acquire infection outside the school environment, accounting for disease importation or seeding. The epidemic is simulated for 100 days and we consider an ensemble of 100 simulation runs to present our final results. The number of simulations was selected allowing for producing clear and stable results, and we show the full distribution of the different statistics, such that the reader can directly interpret the full scope of the simulation results. For each simulated outbreak, we compute two summary measures that account, for the number of transmissions at school and absenteeism, respectively. The former is defined as the total number of cases (minus the index cases) divided by the the number of pupils in the school, and we refer to this quantity as the attack rate. The latter is defined as the sum of the school day lost divided by the school size, and we refer to this quantity as number of school days lost (NSDL).\n",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "ca29829e-f7b9-4a17-9cf8-7e85ce964fbb",
+      "submission_id": "18e3bd75-e56e-4b17-8558-2794167ef1b1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kathy Leung, https://ror.org/02zhqgq86 The University of Hong Kong Hong Kong\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75593.sa0](https://doi.org/10.7554/eLife.75593.sa0)\n\nThis paper evaluates different testing strategies on the SARS-CoV-2 transmission dynamics in a primary school environment and shows that repetitive testing significantly reduces the infection attack rates in the schools. It provides insights into policy design to keep schools open as much as possible in the era of transition from COVID pandemic to endemic.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kathy Leung, https://ror.org/02zhqgq86 The University of Hong Kong Hong Kong\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75593.sa1](https://doi.org/10.7554/eLife.75593.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Controlling SARS-CoV-2 in schools using repetitive testing strategies\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by David Serwadda as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Bernadette C Young (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nReviewer #1's points in brief:\n\n1. Frequency of tests in the strategies.\n\n2. Thresholds of class and school closure, and comparison across strategies.\n\n3. Comparison of low, medium, and high prevalence and infection attack rates.\n\n4. Proportion of symptomatic infections among children.\n\n5. Parameters about the virus such as: (a) \u0394 vs. Omicron and (b) shorter incubation or latent period.\n\nReviewer #2's major points in brief:\n\n1. Thresholds of class and school closure, and comparison across strategies.\n\n2. Parameters about the virus such as: (a) \u0394 vs. Omicron and (b) reinfection.\n\n3. Test sensitivity and turnaround time.\n\n4. Compliance of taking tests.\n\n5. Infection attack rates and Number of School Days Lost.\n\n6. Frequency of tests in the Repetitive Screening strategy.\n\nReviewer #3's major points in brief:\n\n1. Control baseline and infection attack rates.\n\n2. Parameters about the virus such as: (a) \u0394 vs. Omicron.\n\n3. Class or school size.\n\n4. Consideration of severe diseases and long COVID.\n\n5. Duration of class/school closure.\n\nReviewer #1 (Recommendations for the authors):\n\n1. For the reactive screening strategy, it is not clear why it was assumed that the whole class would be screened only once, if one symptomatic individual was identified. It is not surprising that the reactive screening strategy was only slightly better than symptomatic isolation because every child was only screened once. Could you please explain in more detail why repeat testing was not considered when the reactive screening strategy was triggered? This strategy is still different from repetitive screening.\n\n2. It is not clear how the thresholds of class or school closure were selected (i.e., 2 for class closure and 20 for school closure). While I understand that a higher threshold (to trigger class or school closure) would have little effect on the attack rate (Figure 2), a lower threshold should also be assessed in the sensitivity analysis, such as 2 for school closure. Lowering the closure threshold would have more substantial effects on attack rates and NSDL, and thus an \"optimal\" threshold could be potentially identified to minimize the attack rates or NSDL.\n\n3. It is not clear why \"continuous\" weekly introduction events to the school was assumed, by seeding 1, 5, or 10 cases weekly. Since continuous introduction was assumed, it is quite intuitive that the repetitive screening strategy is the most effective, because none of the three strategies would be able to \"eliminate\" infections for more than a week. In a low prevalence setting such as seeding 1 case every month, is repetitive screening still more effective than reactive screening or symptomatic screening?\n\n4. How sensitive are the results to the assumption about the proportion of symptomatic infections among children? This also matters more in a low prevalence school setting.\n\n5. How sensitive are the results to a shorter incubation period and/or a shorter latent period? Incorporating this assumption in the sensitivity analysis would be potentially useful to guide public health practice.\n\nExamples of a few similar studies to be included in the literature review in the introduction:\n\na) Chang JT, Crawford FW, Kaplan EH. Repeat SARS-CoV-2 testing models for residential college populations. Health care management science. 2021 Jun;24(2):305-18.\n\nb) Hamer DH, White LF, Jenkins HE, Gill CJ, Landsberg HE, Klapperich C, Bulekova K, Platt J, Decarie L, Gilmore W, Pilkington M. Assessment of a covid-19 control plan on an urban university campus during a second wave of the pandemic. JAMA Network Open. 2021 Jun 1;4(6):e2116425-.\n\nc) Paltiel AD, Schwartz JL. Assessing COVID-19 prevention strategies to permit the safe opening of residential colleges in Fall 2021. Annals of internal medicine. 2021 Nov;174(11):1563-71.\n\nReviewer #2 (Recommendations for the authors):\n\nThis study uses mathematical models to assess the likely outcome of 3 models of testing on two outcomes in a primary school like setting (where students are in a single class and teachers teach a single class).\n\n\u2013 Number people infected by a case in school (attack rate).\n\n\u2013 Number of school days missed.\n\nThree strategies are compared\n\n\u2013 Testing individuals who develop symptoms.\n\n\u2013 Testing individuals who develop symptoms, and if positive, their class.\n\n\u2013 Testing all individuals repetitively. The paper does not specify what this interval is, but later results suggest the starting assumption is weekly.\n\nA strength of this approach is the ability to predict how strategies might work based on what we know about viral transmission. The models are clearly defined, and allows others to repeat the work. However as with all modelling, the study is based on a number of assumptions, some of which are widely accepted based on available evidence.\n\n\u2013 Not all cases are detected, and children less likely to be detected than adults.\n\n\u2013 That individuals are most infectious when they develop symptoms.\n\nSome of these assumptions are specific to public health measures that do not necessarily apply across other settings.\n\n\u2013 That 2 cases in a class within 14 days would lead to closing the class, and 20 cases in a rolling 14 day window would close the school.\n\n\u2013 10 days isolation of cases (now lower in many parts of the world).\n\nOne of the primary outcomes (days of school missed) would be very sensitive to these policies, especially class closure. This policy is an important part of the intervention, and should be highlighted in abstract and title to aid with interpreting the results. Sensitivity analysis has been performed around these assumptions, however I have concerns with the clarity and accuracy of the presentation of the results of this analysis, which I will discuss in the findings.\n\nAdditional assumptions, which have not been tested by sensitivity analysis in this paper, do give me some concern about the applicability of the model.\n\nThe viral parameters are modelled for original pandemic and \u0394 strains, and the model makes assumptions about high immune rates in adults, lower in children, reasonable in settings of high vaccination rates. However it also assumes reinfection does not occur, which is reasonable over the 100 days of the model but not with a newly introduced VOC or over longer time periods.\n\nThe model further assumes that testing in clinical practice has imperfect sensitivity (83%) and turn- around time of 1 day. This latter is plausible at some times but not in all settings, and often not at times of high case rates. The sensitivity analysis should include delays to turn around times.\n\nFinally, the model assumes all invited to testing take part, which is unlikely to reflect clinical reality, particularly for asymptomatic testing in the repetitive testing strategy, and evidence is needed to support this assumption.\n\nIn the model 5 cases in a school acquired infection outside school are imported, and cases and absence over the next 100 days are computed. The model runs 100 times to determine cases and absences.\n\nThe authors show a large reduction in the attack rate is lower if screening is pursued, and greater impact with reactive screening. Reactive (ReaS) screening has a limited effect, likely due to incomplete case ascertainment (high number cases not being detected due to high number asymptomatic). Repetitive screening (RepS) leads to average 4 as the Number of School Days Lost (NSDL) in 100 days for Wuhan and over 40 /100 in \u0394. This means students would miss almost half days in education.\n\nThe effect of changing these thresholds is reviewed, and notably removing school closure threshold and reducing class thresholds does reduce NSDL. However Figure 2 shows results only for RepS, with \u0394, and does not show a direct comparison with other testing strategies. However for all the results presented, the upper bound of the estimated attack rate are now within the confidence interval for the AR in ReaS. The paper does not present numbers for the results, but from graphical representation the \u0394 AR in ReaS has a median around 13% with an observed range of around 8-17%. The \u0394 AR for RepS has an average 5% with the original closure rules, but median increases to around 7.5 -8-5 with the changes in closure rules and upper bound extends to about 12%, so well within the interquartile range of the RepS strategy. I therefore disagree that author's statement at line 198 that \"a higher class closure threshold has little effect on the attack rate, yet it significantly reduces the NSDL \" is supported by the presented data.\n\nTwice weekly screening was more effective than weekly in the model and with permissive rules on class closure did not increase school days missed, which is an important result. Given that other published modelling has assumed twice weekly screening (eg https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1013533/S1355_SPI-M-O_Consensus_Statement.pdf), it is unclear why weekly screening would be the assumed parameter.\n\nThe authors report that RepS is 'the most efficient to reduce attack rate' \u2013 and while it has the greatest impact on attack rate, the high cost of school days missed in the core model leads me to question the 'efficiency' of the strategy. Further the qualifying statement \"Simulations indicate that such a testing strategy limits the number of transmission events even when no class and school closures are in place.\" Is not supported by the results presented, as discussed above. Likewise, I do not think their statement \"keeping transmissions under control, a limited number of school days lost is computed when no thresholds are in place\" is currently supported. However if the model were investigated with twice weekly testing, this may be the case.\n\nThe authors highlight that this paper demonstrates the limitation of symptomatic based testing and isolation strategies in a population likely to have low rates of symptoms and immunity (as is currently the case in many current primary school settings).\n\nI think this is an important piece of work and will help guide public health decision making, but some further analysis is needed to see if the findings support the authors' claims, or if the impact of repetitive screening in primary school could only be achieved with very stringent school closure rules, which would be unacceptable to many.\n\nAbstract\n\n\u2013 Suggest editing abstract to allow reader to determine the findings (and effect size) in abstract.\n\n\u2013 Since isolation and closure policies are important in the model and for the primary outcome, these should be included or indicated in the abstract.\n\nIntroduction\n\n\u2013 The piece should be placed in context of other published work modelling impact of testing strategies on school attack rate and absence, for eg (not exhaustive).\n\n\u2013 UK SPI-MO reports around mass testing, and secondary school based testing (both mass screening) and reactive\n\n\u2013 https://www.gov.uk/government/publications/spi-m-mass-testing-of-the-whole-population-25-november-2020\n\nhttps://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1013533/S1355_SPI-M-O_Consensus_Statement.pdf\n\nhttps://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/976324/S1146_SPI-M-O_Daily_contact_testing.pdf\n\nLeng et al., have presented extensive modelling evidence in secondary schools\n\nhttps://www.medrxiv.org/content/10.1101/2021.07.09.21260271v1.full\n\nhttps://www.epicx-lab.com/uploads/9/6/9/4/9694133/ms-testing_school-rev.pdf\n\n\u2013 Suggest remove results from introduction section Lines 52-64, introduction should not contain results.\n\nMethods\n\n\u2013 Number days of school lost is not defined, nor the method for calculating defined.\n\n\u2013 Attack rate should be defined in the methods. From results I infer it is number of cases in the school?\n\n\u2013 Testing frequency in RepS should be made clear.\n\nResults\n\n\u2013 Results section should outline results prior to drawing conclusions about them (eg line 131-134) makes a comparative statement about results not yet presented.\n\n\u2013 Results should be presented quantitatively as well as graphically, so that the reader is not left trying to deduce them.\n\n\u2013 Figure 2 should allow comparison to other models performance, as I believe that with relaxed school/class closure rules ReaS and RepS will not be strongly different.\n\nDiscussion\n\n\u2013 Line 219 \"keeping transmissions under control, a limited number of school days lost is computed when no thresholds are in place\" is currently supported, because the median attack rate was close to 10% in these simulations. However if the model were investigated with twice weekly testing, this may be the case. I encourage the authors to apply twice weekly testing to the base model of RepS and see if RepS provides a clearer benefit.\n\n\u2013 Paragraph at line 221 is unclear. Appears the authors recounting recommendations from another paper, but this may be a matter of linguistic confusion.\n\n\u2013 Paragraph at line 242 is unclear, I do not know which part of the paper this refers to.\n\nSupplement\n\n\u2013 Suggest insertion of a qualifying comment on reinfection given observation of high rate of reinfection with Omicron variant.\n\nReviewer #3 (Recommendations for the authors):\n\nIn this manuscript the authors set out to investigate the effectiveness of different COVID-19 testing strategies within school settings to reduce infections, while also reducing the loss of in-person teaching time. The authors show that (reactive) testing based on symptoms is generally ineffective (due to large proportion of asymptomatic infections) compared to a repetitive testing strategy \u2013 but also that such a strategy should be utilised with appropriate thresholds for closing in-person education given the greater number of tests. Overall, the article is well written and the authors offer several sensitivity analyses showing the robustness of their core and timely result \u2013 that frequent testing can be used to reduce infections while keeping schools open. There are four main areas I think warrant consideration in the text: (a) a control baseline \u2013 do symptomatic isolation and reactive testing strategies exhibit lower attack rates than in scenarios with no testing \u2013 it is currently unclear how (in)effective these strategies are? (b) how well do the results hold up in the context of new variants e.g. Omicron? (c) how does school size impact findings? (d) while infection may be mild for most children, neither non-mild infection and/or persistent symptoms (long COVID) are built into the modeling framework \u2013 both are additional reasons for wanting to minimize the attack rate (as is reducing community transmission), while additionally minimizing disruption to education and should be discussed.\n\nOne key detail I was unable to find in the text, how long are school/class closures implemented for when triggered?\n\nI would suggest that the authors include the length of epidemic simulations (100 days) for figures where NSDL is reported \u2013 or maybe consider reporting this result as a proportion of school days? Also, knowing that 5 infections are seeded per a week into a population of 1000 is useful for interpretation.\n\nThe authors note that the attack rate does not include seeded infections; could the authors clarify how they calculate this?\n\nI found it unclear in the Supplemental description what the operational differences are between pupils and teachers in the model, could the authors clarify?\n\nI thank the authors for making their simulation code available online. I would encourage the authors to also archive their code (e.g. via Zenodo/Figshare) to create a version of record with a persistent identifier (https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content). This would create a resource that is accessible even if GitHub goes away, changes its domain name etc. For the purposes of replication I would also encourage the authors to list which version of R and its packages were used in the code.\n\nI would suggest the authors change \"his or her\" to \"their\" in the Supplement (line: 318)\n\nWith respect to school size \u2013 I wonder if 1000 pupils is a typical size for a primary school? In my experience many primary schools are much smaller than this, is there a particular reason this number was chosen? I think school size influences the manuscript in two ways: (a) school closure threshold (just Figure 1?) (b) appropriate importation rate of infections. So I do expect the key finding of the value of repetitive testing to remain. Are other results affected? If so, I think it would be useful to communicate some of these nuances, especially with respect to those who wish to translate these research results into actionable policy.\n",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "183e4367-911f-4bbc-87b5-201825ccd7ef",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C1",
+      "claim": "SARS-CoV-2 has caused over 200 million COVID-19 cases and over 4 million deaths around the world up to September 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "The SARS-CoV-2 pandemic has caused over 200 million COVID-19 cases and over 4 million deaths around the world up to September 2021 (World Health Organization, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to World Health Organization, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "54f11825-6ca9-4adc-b9e0-1690ded06d30",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C2",
+      "claim": "There is an ongoing debate whether children should be vaccinated or prioritized for vaccination against SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although vaccines have been approved, even for young children, there is an ongoing debate whether such age classes should be vaccinated or prioritized for vaccination (Wong et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wong et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "a9be7ad0-68e3-499f-a911-02442a6047dd",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C3",
+      "claim": "More infectious SARS-CoV-2 variants can cause significant outbreaks among children.",
+      "claim_type": "EXPLICIT",
+      "source": "While the contribution of children in the COVID-19 epidemic is still subject to discussion (Gaythorpe et al., 2021), there is a consensus that more infectious variants can cause significant outbreaks among children (Milne et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Milne et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "37fed814-67c1-4c33-88fc-ec169cca992f",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C4",
+      "claim": "Children who typically undergo SARS-CoV-2 infection with little or no symptoms might still be highly contagious and generate new infections in the community.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent work indicates that children, who typically undergo an infection with little or no symptoms, might still be highly contagious and as such generate new infections in the community (Meuris et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Meuris et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "f87044bf-e889-47db-b735-f6cb8999aed6",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C5",
+      "claim": "Students of age 8\u201311 years made less progress while learning from home during school closures.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, Engzell et al. evaluated the impact of school closures on students' learning performance, finding that students of age 8\u201311 years made less progress while learning from home (Engzell et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Engzell et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "a4b56b77-9ce3-417a-a756-6400b8b79b83",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C6",
+      "claim": "A repetitive testing strategy reduces transmissions in a school context but increases absenteeism.",
+      "claim_type": "EXPLICIT",
+      "source": "Several scientific investigation discussed the use of testing strategies in school settings, for example (Colosi et al., 2022; Leng et al., 2022; GOV UK, 2021a; GOV UK, 2021b; Paltiel and Schwartz, 2021; Chang et al., 2020a; Hamer et al., 2021), suggesting that a repetitive testing strategy reduces transmissions in a school context but increases absenteeism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "c04ab855-aae7-4c02-88f6-b69b48f84c47",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C7",
+      "claim": "Symptomatic isolation results in infection of a significant proportion of the school population for both Wuhan strain (median: 0.03, 95% quantile interval [0.01,0.04]) and Delta VoC (median: 0.14, 95% quantile interval [0.10,0.18]).",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, our modelling experiments (details on the simulation model in the Methods section) show (Figure 1) that symptomatic isolation results in the infection of a significant proportion of the school population (Wuhan strain, median: 0.03, 95% quantile interval [0.01,0.04]; Delta VoC, median: 0.14, 95% quantile interval [0.10,0.18]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data presented in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "059b5478-b72e-4c42-a5c7-9101be50ce36",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C8",
+      "claim": "80% of pupils will go through SARS-CoV-2 infection asymptomatically in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This comes as no surprise, as in our model we assume that 80% of the pupils will go through the infection asymptomatically, and by following this testing policy, we are only able to pick up infections that make up the tip of the iceberg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption stated explicitly",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "e6850d7f-8eee-4b37-a4f6-8b99d32adff2",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C9",
+      "claim": "Repetitive testing is the strategy that most reduces the attack rate (Wuhan strain, median: 0.02, 95% quantile interval [0.01,0.03]; Delta VoC, median: 0.05, 95% quantile interval [0.04,0.07]).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the two screening options, we observe that repetitive approach is the strategy that most reduce the attack rate (Wuhan strain, median: 0.02, 95% quantile interval [0.01,0.03]; Delta VoC, median: 0.05, 95% quantile interval [0.04,0.07]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "dc357513-4c83-47e1-823a-0a3dd77a7cdb",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C10",
+      "claim": "Reactive screening strategy performs only slightly better than symptomatic isolation (Wuhan strain, median: 0.03, 95% quantile interval [0.01,0.04]; Delta VoC, median: 0.12, 95% quantile interval [0.10,0.17]).",
+      "claim_type": "EXPLICIT",
+      "source": "However, contrary to intuition, our experiments indicate that the reactive screening strategy performs only slightly better than symptomatic isolation (Wuhan strain, median: 0.03, 95% quantile interval [0.01,0.04]; Delta VoC, median: 0.12, 95% quantile interval [0.10,0.17]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "a9b27cc4-550f-40c2-bb2a-985b98fccbe9",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C11",
+      "claim": "Four asymptomatic generations take place, on average, before a symptomatic infection is observed when 80% of infections in children progress asymptomatically.",
+      "claim_type": "EXPLICIT",
+      "source": "When we assume that 80% of infections in children progress asymptomatically, we can expect (by assuming a geometric distribution) that four asymptomatic generations take place, on average, before a symptomatic infection is observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mathematical inference from geometric distribution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "be1a5ed2-f5a1-4e0d-aa39-bc5b05b8497c",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C12",
+      "claim": "Only 30% of symptomatic children are detected due to the fact that many children exhibit only minor symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that we also assume that only a limited percentage of symptomatic children is detected (30%), due to the fact that many children exhibit only minor symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption based on reasoning about symptom presentation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "a8cf27b8-c3b0-42ac-bbd9-ce56d96e6d60",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C13",
+      "claim": "For symptomatic isolation strategy, the average NSDL per child is directly proportional to the fraction of symptomatic cases (Wuhan strain, median: 0.08, 95% quantile interval [0.03,0.3]; Delta VoC, median: 0.3, 95% quantile interval [0.07,0.63]).",
+      "claim_type": "EXPLICIT",
+      "source": "For the symptomatic isolation strategy, only children with symptoms are isolated, resulting in an average NSDL per child that is directly proportional to the fraction symptomatic cases (Wuhan strain, median: 0.08, 95% quantile interval [0.03,0.3]; Delta VoC, median: 0.3, 95% quantile interval [0.07,0.63]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "d8750d65-e7dd-49b9-841f-0516e5103f1e",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C14",
+      "claim": "Reactive screening results in higher NSDL (Wuhan strain, median: 0.59, 95% quantile interval [0.11,1.34]; Delta VoC, median: 1.99, 95% quantile interval [0.68,11.58]) due to quickly reaching class or school closure thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "For reactive screening, additional asymptomatic pupils might be identified, thereby quickly reaching the class or school closure thresholds, with a higher NSDL as a result (Wuhan strain, median: 0.59, 95% quantile interval [0.11,1.34]; Delta VoC, median: 1.99, 95% quantile interval [0.68,11.58]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "27a98075-fc12-41df-8803-b60aca8b0074",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C15",
+      "claim": "Repetitive testing results in very high NSDL (Wuhan strain, median: 13.85, 95% quantile interval [3.50,31.93]; Delta VoC, median: 42.18, 95% quantile interval [32.97,51.64]) due to rapidly meeting class and/or school closure thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is most pronounced when we apply repetitive testing, where we effectively detect a high proportion of the infections, thereby rapidly meeting the class and/or school closure thresholds, with a very high NSDL as a consequence (Wuhan strain, median: 13.85, 95% quantile interval [3.50,31.93]; Delta VoC, median: 42.18, 95% quantile interval [32.97,51.64]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "4f60c279-45f1-4d5b-a532-edc250f4891c",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C16",
+      "claim": "By using repetitive testing, more lenient class closure thresholds could be applied with only a limited impact on the attack rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that, by using repetitive testing, more lenient thresholds could be applied, as we are able to detect a larger proportion of cases. We investigate this in Figure 2 where we remove the school closure threshold, and investigate a set of class closure thresholds while considering a repetitive testing strategy. This experiment confirms that a larger class threshold can be used, with only a limited impact on the attack rate, and that such thresholds result in a more acceptable NSDL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data presented in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "a8d0e436-82c7-489a-b931-0efbebbfb5ba",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C17",
+      "claim": "A more stringent school threshold shows a positive effect on controlling the attack rate but drastically increases the NSDL.",
+      "claim_type": "EXPLICIT",
+      "source": "A more stringent school threshold shows a positive effect on controlling the attack rate, but drastically increases the NSDL (Appendix 1\u2014figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data in Appendix 1\u2014figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "e5db49c3-2a31-4228-b83a-1ef787664587",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C18",
+      "claim": "The difference between testing strategies is most pronounced in case of the more infectious virus strain (Delta VoC).",
+      "claim_type": "EXPLICIT",
+      "source": "While the overall trends of the reported measures are similar for the Wuhan and Delta scenarios, the difference between the testing strategies is most pronounced in case of the more infectious virus strain (i.e., the Delta VoC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of simulation results across scenarios",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "d0fbbeda-8a8a-4a2f-9b6a-5a5ff140615f",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C19",
+      "claim": "In the Omicron scenario with low immunity levels and a shorter incubation period, high attack rates were observed that are more difficult to control.",
+      "claim_type": "EXPLICIT",
+      "source": "In our Omicron scenario with low immunity levels and a shorter incubation period, we observed high attack rates that are more difficult to control (Appendix 1\u2014figure 20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data in Appendix 1\u2014figure 20",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "09e874a4-65d2-4d73-b497-a711f680f982",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C20",
+      "claim": "The impact of additional seeding cases amplifies the attack rate, but repetitive testing proved to be robust in regard of this parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the impact of additional seeding cases amplifies the attack rate, but overall repetitive testing proved to be robust in regard of this parameter (Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sensitivity analysis data in Appendix 1\u2014figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "02a28ebd-601d-4c47-a146-f526c44fb1ba",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C21",
+      "claim": "A higher attack rate is detected in schools with smaller sizes when the seeding number is kept the same.",
+      "claim_type": "EXPLICIT",
+      "source": "Futher, we notice that a higher attack rate is detected in school with smaller sizes when the seeding number is kept the same (Appendix 1\u2014figure 17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data in Appendix 1\u2014figure 17",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "34e1ea04-33a8-4d06-9abd-66f5ed25a762",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C22",
+      "claim": "When introducing a number of seeds proportional to the school size, the attack rate and NSDL are similar, but a higher stochasticity is observed for the smaller school size.",
+      "claim_type": "EXPLICIT",
+      "source": "When introducing a number of seeds proportional to the school size, the attack rate and NSDL are similar, but a higher stochasticity is observed for the smaller school size (Appendix 1\u2014figure 18).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data in Appendix 1\u2014figure 18",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "46c8376a-a5ca-4b44-902d-2d3e8acfdbca",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C23",
+      "claim": "Asymptomatic individuals are as infectious as symptomatic individuals, as recently observed by Meuris et al., 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we assume that asymptomatic individuals are as infectious as symptomatic individuals, as recently observed by Meuris et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Meuris et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "70c5ddfc-1e44-434e-885c-11cfaf4d6ed7",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C24",
+      "claim": "Repetitive testing and reactive screening are less effective when the turnaround time is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Repetitive testing and reactive screening are less effective when the turnaround time is increased (Appendix 1\u2014figure 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data in Appendix 1\u2014figure 15",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "6d8465be-dd8f-438d-93ad-5e568da0dd02",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C25",
+      "claim": "Reactive screening performs similar to symptomatic isolation for a turnaround time of 3 days, but repetitive screening is still the most successful strategy to reduce the number of infections.",
+      "claim_type": "EXPLICIT",
+      "source": "While reactive screening performs similar to symptomatic isolation for a turnaround time of 3 days, repetitive screening is still the strategy that is most successful to reduce the number of infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from simulation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "d0407f3a-2a8c-4f76-aba3-7aad698b805a",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C26",
+      "claim": "Testing strategies show a lower performance when a shorter incubation period is considered.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, testing strategies show a lower performance when a shorter incubation period is considered (Appendix 1\u2014figure 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data in Appendix 1\u2014figure 14",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "e637a266-4693-43d6-b547-90de7da3681c",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C27",
+      "claim": "Testing the entire school population twice per week squashes a highly contagious epidemic such as driven by the Delta VoC.",
+      "claim_type": "EXPLICIT",
+      "source": "We also consider a repetitive testing scenario where we test the entire school population twice per week, which shows that such a strategy squashes a highly contagious epidemic such as driven by the Delta VoC (Appendix 1\u2014figures 2 and 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data in Appendix 1\u2014figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "8c04555c-7e73-4026-ae22-13df2a98fe28",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C28",
+      "claim": "Testing twice per week reduces the attack rate of an immune-evasive VoC with shorter incubation period, as the Omicron VoC.",
+      "claim_type": "EXPLICIT",
+      "source": "We also consider a repetitive testing scenario where we test the entire school population twice per week, which shows that such a strategy squashes a highly contagious epidemic such as driven by the Delta VoC (Appendix 1\u2014figures 2 and 3) and reduces the attack rate of an immune-evasive VoC with shorter incubation period, as the Omicron VoC (Appendix 1\u2014figure 21).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data in Appendix 1\u2014figure 21",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "bff49b0a-361b-4de0-a956-b9939728046d",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C29",
+      "claim": "Attack rate decreases and NSDL increases when compliance to repetitive testing is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering a repetitive testing strategy, we also tested the compliance to testing, showing that attack rate decreases and NSDL increases when compliance is increased (Appendix 1\u2014figure 16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data in Appendix 1\u2014figure 16",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "70f80ff1-2668-4d29-927f-fca2bef680c0",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C30",
+      "claim": "In the experimental setting, a compliance of 60% leads to a similar attack rate as a compliance of 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in our experimental setting, a compliance of 60% leads to a similar attack rate than a compliance of 100%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "9dc0f064-5290-43fc-a4b5-709951303563",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C31",
+      "claim": "The low efficacy of symptomatic testing and reactive screening procedures is explained by the asymptomatic nature of SARS-CoV-2 infections, especially for children.",
+      "claim_type": "EXPLICIT",
+      "source": "The low efficacy of the symptomatic testing and reactive screening procedures is explained by the asymptomatic nature of SARS-CoV-2 infections, especially for children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from simulation results and known characteristics of infection",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "be0156d7-64b9-44ce-869d-d1f87b669488",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C32",
+      "claim": "When surveillance is based just on the onset of symptoms, asymptomatic carriers avoid detection and intervention, sustaining the spread of the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when surveillance is based just on the onset of symptoms, asymptomatic carriers avoid detection and intervention, sustaining the spread of the virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from model structure and results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "1db2f448-c92b-48b5-8652-8b00272d287b",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C33",
+      "claim": "Repetitive testing can keep transmission under control and limit the number of school days lost when no school or class thresholds are considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Within our experimental settings, we observe that repetitive testing can keep transmission under control and limit the number of school days lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "cafe3378-3b3c-459e-a19a-e816d5a20997",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C34",
+      "claim": "A class pooling approach could be used to reduce the number of PCR samples to be analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "To make this procedure more efficient, a class pooling approach could be used to reduce the number of samples to be analyzed (Libin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Libin et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "426ecb49-d27c-4235-8bff-79bc28a52272",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C35",
+      "claim": "Teachers are allocated to specific classes and are assumed to interact only with individuals with whom they share the same class.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that teachers are allocated to specific classes and are assumed to interact only with individuals with whom they share the same class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption stated explicitly",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "046c754d-d1e4-4f3e-bd9d-4a45cd8de2dc",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C36",
+      "claim": "The assumption that teachers interact only within their classes is reasonable at this stage of the epidemic, where a large proportion of teachers is either immune or vaccinated.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that this is a reasonable assumption at this stage of the epidemic, where a large proportion of teachers is either immune or vaccinated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on reasoning about epidemic context",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "11498722-8972-4267-8ceb-16bb44b8667b",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C37",
+      "claim": "The threshold for participating in saliva sampling is low.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that this is a reasonable assumption, as the threshold for participating in saliva sampling is low, and societal awareness and support for this policies can be achieved, via prompt governmental communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on reasoning about practical aspects of saliva sampling",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "0e927c29-b389-4c52-be57-2ca4e30c25dd",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C38",
+      "claim": "Symptomatic individuals develop symptoms at the peak of their infectiousness.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that symptomatic individuals develop symptoms at the peak of their infectiousness, at which they can be detected and placed in isolation for 10 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "2a572911-a6ff-4f21-80bc-aaff5b8bca9b",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C39",
+      "claim": "All testing policies will close a class when the number of infections in this class exceeds two cases.",
+      "claim_type": "EXPLICIT",
+      "source": "All testing policies will close a class when the number of infections in this class exceeds two cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "78a96db0-5cef-4a60-8f6d-0a3ae04657a2",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C40",
+      "claim": "All testing policies will close the school when the number of infections over all classes exceeds 20 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, all testing policies will close the school when the number of infections over all classes exceeds 20 cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "f514303a-9077-4751-9cff-f294cab22434",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C41",
+      "claim": "When the class or school threshold is triggered, the respective class or the entire school is closed for 10 days.",
+      "claim_type": "EXPLICIT",
+      "source": "When the class, or school, threshold is triggered, the respective class, or the entire school, is closed for 10 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "40a73795-7634-4410-9dfe-3873f7814895",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C42",
+      "claim": "The length of isolation and of class/school closure is set according to viral clearance observations and in line with isolation policies in place in European countries in the first half of 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of isolation and of class/school closure is set according to viral clearance observations (Chang et al., 2020b), and in line with isolation policies in place in European countries in the first half of 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2020b and reference to European policies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "fcff7844-1d3e-4ccd-9abb-27e4bcb2abf7",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C43",
+      "claim": "Infection counts are recorded in a 14-day time window to determine class and school closures.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection counts are recorded in a 14-day time window to determine class and school closures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "351c4e07-3777-46ca-be50-b18e3b1ff142",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C45",
+      "claim": "Children are set to be half as susceptible as adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Children are set to be halve as susceptible as adults (Davies et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model parameter informed by citation to Davies et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "1ad3d50c-1875-4c93-b6ed-78e97b718ea6",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C46",
+      "claim": "30% of school children are immune due to prior infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that 30% of school children are immune due to prior infection, and that 90% of the teachers are immune, due to their vaccination status or due to prior infection (Sciensano, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model assumption informed by citation to Sciensano, 2022",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "0a339c08-edf6-45c3-a4cc-9470d395a940",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C47",
+      "claim": "90% of the teachers are immune, due to their vaccination status or due to prior infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that 30% of school children are immune due to prior infection, and that 90% of the teachers are immune, due to their vaccination status or due to prior infection (Sciensano, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model assumption informed by citation to Sciensano, 2022",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "f8a8c14a-a4f3-4f4c-807e-198c98aad126",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C48",
+      "claim": "The sensitivity of PCR tests on saliva or throat washing samples is set to 86%.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity of such tests is set to 86%, and there is a one day delay in reporting the result (Butler-Laporte et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model parameter informed by citation to Butler-Laporte et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "942e93d4-59b9-43b9-9e08-3cfec039ea6a",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C49",
+      "claim": "There is a one day delay in reporting PCR test results.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity of such tests is set to 86%, and there is a one day delay in reporting the result (Butler-Laporte et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model parameter informed by citation to Butler-Laporte et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "e281c011-6b7c-433c-9807-3c94e0405649",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C50",
+      "claim": "The performance of saliva sampling in combination with PCR testing is on par with nasopharyngeal swab sampling in combination with PCR testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports show that the performance of saliva sampling in combination with PCR testing is on par with nasopharyngeal swab sampling in combination with PCR testing (Wyllie et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wyllie et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "57b5df0f-67bb-4675-9a50-1abe65c7ce17",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C51",
+      "claim": "Infectious individuals become PCR detectable 2 days after infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Infectious individuals become PCR detectable 2 days after infection, as previously assumed (Torneri et al., 2020; Torneri et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model assumption supported by citations to Torneri et al., 2020 and Torneri et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "29ee0ae2-be7c-4322-89cd-46014d62f7e7",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C52",
+      "claim": "For the reactive screening testing policy, there is a one day screening delay.",
+      "claim_type": "EXPLICIT",
+      "source": "For the reactive screening testing policy, we assume that there is a one day screening delay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "247e8514-cf5b-4255-a89f-91f932d5708a",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C53",
+      "claim": "Every simulated week, five susceptible children are assumed to acquire infection outside the school environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Every simulated week, five susceptible children are assumed to acquire infection outside the school environment, accounting for disease importation or seeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "41c66a60-cbd5-4378-949f-83ccb6551dd4",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C54",
+      "claim": "The epidemic is simulated for 100 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The epidemic is simulated for 100 days and we consider an ensemble of 100 simulation runs to present our final results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "bbc4e8af-0f9a-4067-af0f-3852b0e62210",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C55",
+      "claim": "An ensemble of 100 simulation runs is used to present the final results.",
+      "claim_type": "EXPLICIT",
+      "source": "The epidemic is simulated for 100 days and we consider an ensemble of 100 simulation runs to present our final results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "2308962b-b23e-4b4a-af9d-5e72e38a4b16",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C56",
+      "claim": "The attack rate is defined as the total number of cases (minus the index cases) divided by the number of pupils in the school.",
+      "claim_type": "EXPLICIT",
+      "source": "The former is defined as the total number of cases (minus the index cases) divided by the the number of pupils in the school, and we refer to this quantity as the attack rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a model output measure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "440c533f-f8d6-4fbb-9a9d-7dc54d822545",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C57",
+      "claim": "The number of school days lost (NSDL) is defined as the sum of the school day lost divided by the school size.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is defined as the sum of the school day lost divided by the school size, and we refer to this quantity as number of school days lost (NSDL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a model output measure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "52be4cc4-5b90-4fb4-a33f-b6e0f4123159",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C58",
+      "claim": "Repetitive testing strategies can significantly reduce the attack rate in schools, contrary to a reactive screening or a symptomatic isolation approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this analysis, we demonstrate that repetitive testing strategies can significantly reduce the attack rate in schools, contrary to a reactive screening or a symptomatic isolation approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "c5908846-a0cc-4897-b23f-91cdc454fbd1",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C59",
+      "claim": "When a repetitive testing strategy is in place, more cases will be detected and class and school closures are more easily triggered, leading to a higher number of school days lost per child.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when a repetitive testing strategy is in place, more cases will be detected and class and school closures are more easily triggered, leading to a higher number of school days lost per child.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "e2ebb757-daa4-4ce2-8924-900ea4ad3ed9",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "claim_id": "C60",
+      "claim": "While maintaining the epidemic under control with a repetitive testing strategy, absenteeism can be reduced by relaxing class and school closure thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "While maintaining the epidemic under control with a repetitive testing strategy, we show that absenteeism can be reduced by relaxing class and school closure thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Repetitive testing significantly reduces attack rates compared to symptomatic isolation and reactive screening. Symptomatic isolation results in high attack rates (Wuhan: 0.03, Delta: 0.14) because 80% of infections are asymptomatic, while repetitive testing achieves the lowest attack rates (Wuhan: 0.02, Delta: 0.05). Reactive screening performs only slightly better than symptomatic isolation due to delayed detection after multiple asymptomatic transmission generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12, C31-C32, and C58 provide converging evidence from simulation data showing repetitive testing's superiority. The mathematical reasoning (C11) about asymptomatic generations explains why reactive screening fails, and the model assumption (C8) is clearly stated. The quantitative results with confidence intervals support the conclusions, though model validation against real-world data would strengthen confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "6f282944-60dd-4513-87de-62775e21653a",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Repetitive testing leads to substantially higher numbers of school days lost (NSDL) compared to other strategies. While symptomatic isolation results in low NSDL (Wuhan: 0.08, Delta: 0.3), repetitive testing produces very high NSDL (Wuhan: 13.85, Delta: 42.18) because more cases are detected, triggering class and school closure thresholds more frequently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 and C59 present consistent simulation data showing the trade-off between infection control and absenteeism. The mechanistic explanation (more detection \u2192 more closures \u2192 higher NSDL) is logical and supported by the model structure. The quantitative results with confidence intervals are clearly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "ec9859a4-d7da-4d22-8e38-ccc7f57c6ae8",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "When repetitive testing is implemented, more lenient class closure thresholds can be applied with minimal impact on attack rates while substantially reducing absenteeism. Relaxing class closure thresholds from 2 to higher values or removing them entirely maintains epidemic control while reducing NSDL to acceptable levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C33, and C60 are supported by simulation data in Figure 2 and Table 1, showing that attack rates remain stable (0.08-0.09) across different class closure thresholds while NSDL decreases substantially (from 9.5 to 1.61). This represents a practical solution to the trade-off identified in the previous result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "3239c8c0-0e64-407c-b800-9049c279205a",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The effectiveness differences between testing strategies are most pronounced for more infectious variants. The Delta variant shows larger differences between strategies than the Wuhan strain, and the Omicron scenario with low immunity and shorter incubation period produces high attack rates that are difficult to control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by comparative simulation data across variants. The observation that more infectious variants amplify strategy differences is logical and consistent with epidemiological principles. However, the Omicron scenario involves multiple parameter changes simultaneously (immunity, incubation period), making it difficult to isolate individual effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "faad38c2-b8ac-4bf1-b358-d7c23520c904",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sensitivity analyses show that repetitive testing remains robust to variations in seeding frequency and school size. While additional seeding amplifies attack rates and smaller schools show higher attack rates with fixed seeding, repetitive testing maintains its relative effectiveness across these parameter variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 are supported by sensitivity analysis data in appendix figures. The finding that proportional seeding eliminates school size effects (C22) demonstrates appropriate model behavior. These sensitivity analyses strengthen confidence in the main results' robustness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "1cef58e3-20d7-4a33-9492-1ab49ccf3556",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Testing strategy effectiveness is sensitive to operational parameters including turnaround time and incubation period. Increased turnaround time (3 days) reduces reactive screening effectiveness to symptomatic isolation levels, while shorter incubation periods reduce all testing strategy performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 present sensitivity analyses showing how operational constraints affect strategy performance. The findings are logical and supported by appendix data. However, C23's assumption that asymptomatic and symptomatic individuals are equally infectious is stated as fact based on one citation, which may oversimplify a complex issue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "18e9e8d5-db2e-45b8-a51b-6d2317aec60b",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Testing the entire school population twice per week can control highly contagious epidemics driven by Delta and reduce attack rates for immune-evasive variants like Omicron with shorter incubation periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by simulation data in appendix figures. The increased testing frequency logically addresses the challenges posed by more transmissible variants. However, the practical feasibility and cost-effectiveness of twice-weekly whole-school testing are not addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "3afae982-1694-44f6-880a-ff43f62aa3b7",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Compliance to repetitive testing affects outcomes, with attack rates decreasing and NSDL increasing as compliance increases. Notably, 60% compliance achieves similar attack rates to 100% compliance in the experimental setting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by simulation data. The finding that 60% compliance is nearly as effective as 100% is interesting and practically relevant. However, this result is specific to the model's experimental setting and may not generalize to all scenarios or real-world conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "995f719e-a254-40fb-b338-8635fe533a10",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model assumes teachers interact only within their assigned classes, which is justified by high teacher immunity/vaccination rates. Perfect compliance to saliva sampling is assumed based on its low invasiveness and potential for societal support.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35-C37 describe model assumptions with justifications. While the reasoning is provided (C36, C37), these are assumptions rather than empirically validated facts. The assumption of limited teacher interaction (C35) may not reflect reality in all schools, and perfect compliance (C37) is optimistic. These assumptions could significantly impact results but are not validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "234f4352-70fd-4ff1-9c57-70aa47d44a05",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model implements specific closure policies: classes close when infections exceed 2 cases, schools close when infections exceed 20 cases, and closures last 10 days. Symptomatic individuals develop symptoms at peak infectiousness and are isolated for 10 days. Infection counts are tracked over 14-day windows.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 describe model structure and parameters. These are clearly stated assumptions informed by literature (C42) and policy context. While these are design choices rather than findings, they are transparently reported and reasonably justified. The appropriateness of specific threshold values (2 and 20 cases) is not empirically validated but represents policy-relevant scenarios.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "5bd6de73-aac0-43e6-af44-c19391f3d87a",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model incorporates epidemiological and operational parameters from literature: children are half as susceptible as adults, 30% of children and 90% of teachers are immune, PCR test sensitivity is 86% with 1-day turnaround, individuals become detectable 2 days post-infection, and 5 weekly seeding cases occur. Simulations run for 100 days with 100 replicates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C55 describe model parameterization with literature support. Parameters are transparently reported with citations. The choice of 100 simulations (C55) appears adequate for stable results based on the figures. However, uncertainty in parameter estimates is not propagated through the model, and some parameters (e.g., 30% child immunity) may vary substantially by location and time.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "d9d11588-1688-47d8-a9ac-b13236e05f29",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Two outcome measures are defined: attack rate (total cases minus index cases divided by number of pupils) and NSDL (sum of school days lost divided by school size).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 provide clear definitions of outcome measures. These are appropriate metrics for evaluating both epidemiological impact and educational disruption. The definitions are unambiguous and consistently applied throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "7b7337a5-0300-4eb2-aadf-54d7c9e1210e",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Class pooling approaches could be used to reduce the number of PCR samples requiring analysis, making repetitive testing more efficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by citation to prior work (Libin et al., 2021). This represents a practical implementation consideration rather than a finding of the current study. The suggestion is reasonable but not evaluated in the present work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    },
+    {
+      "id": "4945bf7b-af99-4420-8e48-cf32aa665a86",
+      "content_id": "494bf548-c75d-43dc-a644-e3395069da22",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishes that SARS-CoV-2 has caused over 200 million cases and 4 million deaths by September 2021, debate exists about child vaccination, more infectious variants cause significant outbreaks in children, asymptomatic children may be highly contagious, school closures impair learning, and prior studies suggest repetitive testing reduces transmission but increases absenteeism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide background context supported by citations to authoritative sources and prior literature. These establish the motivation and context for the study but are not novel findings. The claims accurately represent the cited sources based on the information provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:05:04.653895Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c04ab855-aae7-4c02-88f6-b69b48f84c47",
+      "result_id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4"
+    },
+    {
+      "claim_id": "059b5478-b72e-4c42-a5c7-9101be50ce36",
+      "result_id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4"
+    },
+    {
+      "claim_id": "e6850d7f-8eee-4b37-a4f6-8b99d32adff2",
+      "result_id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4"
+    },
+    {
+      "claim_id": "dc357513-4c83-47e1-823a-0a3dd77a7cdb",
+      "result_id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4"
+    },
+    {
+      "claim_id": "a9b27cc4-550f-40c2-bb2a-985b98fccbe9",
+      "result_id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4"
+    },
+    {
+      "claim_id": "be1a5ed2-f5a1-4e0d-aa39-bc5b05b8497c",
+      "result_id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4"
+    },
+    {
+      "claim_id": "9dc0f064-5290-43fc-a4b5-709951303563",
+      "result_id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4"
+    },
+    {
+      "claim_id": "be0156d7-64b9-44ce-869d-d1f87b669488",
+      "result_id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4"
+    },
+    {
+      "claim_id": "52be4cc4-5b90-4fb4-a33f-b6e0f4123159",
+      "result_id": "4c0bf531-bc5f-414d-8ed8-c23ae0585ad4"
+    },
+    {
+      "claim_id": "a8cf27b8-c3b0-42ac-bbd9-ce56d96e6d60",
+      "result_id": "6f282944-60dd-4513-87de-62775e21653a"
+    },
+    {
+      "claim_id": "d8750d65-e7dd-49b9-841f-0516e5103f1e",
+      "result_id": "6f282944-60dd-4513-87de-62775e21653a"
+    },
+    {
+      "claim_id": "27a98075-fc12-41df-8803-b60aca8b0074",
+      "result_id": "6f282944-60dd-4513-87de-62775e21653a"
+    },
+    {
+      "claim_id": "c5908846-a0cc-4897-b23f-91cdc454fbd1",
+      "result_id": "6f282944-60dd-4513-87de-62775e21653a"
+    },
+    {
+      "claim_id": "4f60c279-45f1-4d5b-a532-edc250f4891c",
+      "result_id": "ec9859a4-d7da-4d22-8e38-ccc7f57c6ae8"
+    },
+    {
+      "claim_id": "a8d0e436-82c7-489a-b931-0efbebbfb5ba",
+      "result_id": "ec9859a4-d7da-4d22-8e38-ccc7f57c6ae8"
+    },
+    {
+      "claim_id": "1db2f448-c92b-48b5-8652-8b00272d287b",
+      "result_id": "ec9859a4-d7da-4d22-8e38-ccc7f57c6ae8"
+    },
+    {
+      "claim_id": "e2ebb757-daa4-4ce2-8924-900ea4ad3ed9",
+      "result_id": "ec9859a4-d7da-4d22-8e38-ccc7f57c6ae8"
+    },
+    {
+      "claim_id": "e5db49c3-2a31-4228-b83a-1ef787664587",
+      "result_id": "3239c8c0-0e64-407c-b800-9049c279205a"
+    },
+    {
+      "claim_id": "d0fbbeda-8a8a-4a2f-9b6a-5a5ff140615f",
+      "result_id": "3239c8c0-0e64-407c-b800-9049c279205a"
+    },
+    {
+      "claim_id": "09e874a4-65d2-4d73-b497-a711f680f982",
+      "result_id": "faad38c2-b8ac-4bf1-b358-d7c23520c904"
+    },
+    {
+      "claim_id": "02a28ebd-601d-4c47-a146-f526c44fb1ba",
+      "result_id": "faad38c2-b8ac-4bf1-b358-d7c23520c904"
+    },
+    {
+      "claim_id": "34e1ea04-33a8-4d06-9abd-66f5ed25a762",
+      "result_id": "faad38c2-b8ac-4bf1-b358-d7c23520c904"
+    },
+    {
+      "claim_id": "46c8376a-a5ca-4b44-902d-2d3e8acfdbca",
+      "result_id": "1cef58e3-20d7-4a33-9492-1ab49ccf3556"
+    },
+    {
+      "claim_id": "70c5ddfc-1e44-434e-885c-11cfaf4d6ed7",
+      "result_id": "1cef58e3-20d7-4a33-9492-1ab49ccf3556"
+    },
+    {
+      "claim_id": "6d8465be-dd8f-438d-93ad-5e568da0dd02",
+      "result_id": "1cef58e3-20d7-4a33-9492-1ab49ccf3556"
+    },
+    {
+      "claim_id": "d0407f3a-2a8c-4f76-aba3-7aad698b805a",
+      "result_id": "1cef58e3-20d7-4a33-9492-1ab49ccf3556"
+    },
+    {
+      "claim_id": "e637a266-4693-43d6-b547-90de7da3681c",
+      "result_id": "18e9e8d5-db2e-45b8-a51b-6d2317aec60b"
+    },
+    {
+      "claim_id": "8c04555c-7e73-4026-ae22-13df2a98fe28",
+      "result_id": "18e9e8d5-db2e-45b8-a51b-6d2317aec60b"
+    },
+    {
+      "claim_id": "bff49b0a-361b-4de0-a956-b9939728046d",
+      "result_id": "3afae982-1694-44f6-880a-ff43f62aa3b7"
+    },
+    {
+      "claim_id": "70f80ff1-2668-4d29-927f-fca2bef680c0",
+      "result_id": "3afae982-1694-44f6-880a-ff43f62aa3b7"
+    },
+    {
+      "claim_id": "426ecb49-d27c-4235-8bff-79bc28a52272",
+      "result_id": "995f719e-a254-40fb-b338-8635fe533a10"
+    },
+    {
+      "claim_id": "046c754d-d1e4-4f3e-bd9d-4a45cd8de2dc",
+      "result_id": "995f719e-a254-40fb-b338-8635fe533a10"
+    },
+    {
+      "claim_id": "11498722-8972-4267-8ceb-16bb44b8667b",
+      "result_id": "995f719e-a254-40fb-b338-8635fe533a10"
+    },
+    {
+      "claim_id": "0e927c29-b389-4c52-be57-2ca4e30c25dd",
+      "result_id": "234f4352-70fd-4ff1-9c57-70aa47d44a05"
+    },
+    {
+      "claim_id": "2a572911-a6ff-4f21-80bc-aaff5b8bca9b",
+      "result_id": "234f4352-70fd-4ff1-9c57-70aa47d44a05"
+    },
+    {
+      "claim_id": "78a96db0-5cef-4a60-8f6d-0a3ae04657a2",
+      "result_id": "234f4352-70fd-4ff1-9c57-70aa47d44a05"
+    },
+    {
+      "claim_id": "f514303a-9077-4751-9cff-f294cab22434",
+      "result_id": "234f4352-70fd-4ff1-9c57-70aa47d44a05"
+    },
+    {
+      "claim_id": "40a73795-7634-4410-9dfe-3873f7814895",
+      "result_id": "234f4352-70fd-4ff1-9c57-70aa47d44a05"
+    },
+    {
+      "claim_id": "fcff7844-1d3e-4ccd-9abb-27e4bcb2abf7",
+      "result_id": "234f4352-70fd-4ff1-9c57-70aa47d44a05"
+    },
+    {
+      "claim_id": "351c4e07-3777-46ca-be50-b18e3b1ff142",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "1ad3d50c-1875-4c93-b6ed-78e97b718ea6",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "0a339c08-edf6-45c3-a4cc-9470d395a940",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "f8a8c14a-a4f3-4f4c-807e-198c98aad126",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "942e93d4-59b9-43b9-9e08-3cfec039ea6a",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "e281c011-6b7c-433c-9807-3c94e0405649",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "57b5df0f-67bb-4675-9a50-1abe65c7ce17",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "29ee0ae2-be7c-4322-89cd-46014d62f7e7",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "247e8514-cf5b-4255-a89f-91f932d5708a",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "41c66a60-cbd5-4378-949f-83ccb6551dd4",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "bbc4e8af-0f9a-4067-af0f-3852b0e62210",
+      "result_id": "5bd6de73-aac0-43e6-af44-c19391f3d87a"
+    },
+    {
+      "claim_id": "2308962b-b23e-4b4a-af9d-5e72e38a4b16",
+      "result_id": "d9d11588-1688-47d8-a9ac-b13236e05f29"
+    },
+    {
+      "claim_id": "440c533f-f8d6-4fbb-9a9d-7dc54d822545",
+      "result_id": "d9d11588-1688-47d8-a9ac-b13236e05f29"
+    },
+    {
+      "claim_id": "cafe3378-3b3c-459e-a19a-e816d5a20997",
+      "result_id": "7b7337a5-0300-4eb2-aadf-54d7c9e1210e"
+    },
+    {
+      "claim_id": "183e4367-911f-4bbc-87b5-201825ccd7ef",
+      "result_id": "4945bf7b-af99-4420-8e48-cf32aa665a86"
+    },
+    {
+      "claim_id": "54f11825-6ca9-4adc-b9e0-1690ded06d30",
+      "result_id": "4945bf7b-af99-4420-8e48-cf32aa665a86"
+    },
+    {
+      "claim_id": "a9be7ad0-68e3-499f-a911-02442a6047dd",
+      "result_id": "4945bf7b-af99-4420-8e48-cf32aa665a86"
+    },
+    {
+      "claim_id": "37fed814-67c1-4c33-88fc-ec169cca992f",
+      "result_id": "4945bf7b-af99-4420-8e48-cf32aa665a86"
+    },
+    {
+      "claim_id": "f87044bf-e889-47db-b735-f6cb8999aed6",
+      "result_id": "4945bf7b-af99-4420-8e48-cf32aa665a86"
+    },
+    {
+      "claim_id": "a4b56b77-9ce3-417a-a756-6400b8b79b83",
+      "result_id": "4945bf7b-af99-4420-8e48-cf32aa665a86"
+    }
+  ],
+  "comparisons": []
+}

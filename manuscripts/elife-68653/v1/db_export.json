@@ -1,0 +1,2394 @@
+{
+  "submission": {
+    "id": "320b7dc8-651d-42d2-ae00-e89fed3da128",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:42:15.705196Z",
+    "updated_at": "2025-12-03T09:42:15.705196Z"
+  },
+  "content": [
+    {
+      "id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "submission_id": "320b7dc8-651d-42d2-ae00-e89fed3da128",
+      "content_type": "manuscript",
+      "content_text": "# Na\u00efve individuals promote collective exploration in homing pigeons\n\n## Authors\n\n- Gabriele Valentini<sup>1</sup> ([ORCID: 0000-0002-8961-3211](https://orcid.org/0000-0002-8961-3211)) \u2020\n- Theodore P Pavlic<sup>2</sup> ([ORCID: 0000-0002-7073-6932](https://orcid.org/0000-0002-7073-6932))\n- Sara Imari Walker<sup>1</sup> ([ORCID: 0000-0001-5779-2772](https://orcid.org/0000-0001-5779-2772))\n- Stephen C Pratt<sup>3</sup> ([ORCID: 0000-0002-1086-4019](https://orcid.org/0000-0002-1086-4019))\n- Dora Biro<sup>9</sup>\n- Takao Sasaki<sup>11</sup>\n\n### Affiliations\n\n1. Arizona State University, School of Earth and Space Exploration Tempe United States\n2. Arizona State University, School of Life Sciences Tempe United States\n3. Arizona State University, Beyond Center for Fundamental Concepts in Science Tempe United States\n4. Arizona State University, School of Computing and Augmented Intelligence Tempe United States\n5. Arizona State University, School of Sustainability Athens United States\n6. Arizona State University, School of Complex Adaptive Systems Tempe United States\n7. Arizona State University, ASU\u2013SFI Center for Biosocial Complex Systems Tempe United States\n8. Santa Fe Institute Santa Fe United States\n9. University of Oxford, Department of Zoology Oxford United States\n10. University of Rochester, Department of Brain and Cognitive Sciences Rochester United States\n11. University of Georgia, Odum School of Ecology Athens United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGroup-living animals that rely on stable foraging or migratory routes can develop behavioural traditions to pass route information down to inexperienced individuals. Striking a balance between exploitation of social information and exploration for better alternatives is essential to prevent the spread of maladaptive traditions. We investigated this balance during cumulative route development in the homing pigeon Columba livia. We quantified information transfer within pairs of birds in a transmission-chain experiment and determined how birds with different levels of experience contributed to the exploration\u2013exploitation trade-off. Newly introduced na\u00efve individuals were initially more likely to initiate exploration than experienced birds, but the pair soon settled into a pattern of alternating leadership with both birds contributing equally. Experimental pairs showed an oscillating pattern of exploration over generations that might facilitate the discovery of more efficient routes. Our results introduce a new perspective on the roles of leadership and information pooling in the context of collective learning.\n\n## Introduction\n\nThe coordinated motion of groups is a widespread phenomenon observed in multiple taxa (Vicsek and Zafeiris, 2012). Among other adaptive advantages, such as increased energetic efficiency and decreased odds of predation (Krause and Ruxton, 2002), collective motion also allows group members to increase their sensory and cognitive capacity (Berdahl et al., 2013; Gelblum et al., 2020) and to acquire valuable social information for navigation (Couzin, 2009; Couzin et al., 2011). In many animals, this social information concerns well-established foraging or migratory routes that can, in some species, persist over successive generations (Helfman and Schultz, 1984; Sasaki and Biro, 2017; Jesmer et al., 2018). Knowledge and skills that accumulate over generations can provide groups with an enhanced ability to solve difficult problems (Biro et al., 2016). Not only can later generations build on the success of earlier ones, but the introduction of new members, even those with no prior knowledge, adds diversity that can enhance the group\u2019s behavioural solutions (Mehlhorn et al., 2015). As is often the case (Hills et al., 2015), behavioural patterns that lead to a search for improvement, whether individually, socially, or over multiple generations, involve an exploration\u2013exploitation trade-off. In navigation problems, both solitary individuals and groups have to balance between exploiting previously acquired information necessary to navigate a known route and exploring for additional information that might allow them to approach the optimal route (Fu and Gray, 2006). However, how moving collectives compromise between these tasks has received limited attention.\n\nUnderstanding the exploration\u2013exploitation trade-off is complicated by ambiguity about group leadership (Couzin et al., 2005; Garland et al., 2018). Although some collectives (e.g., ants, honeybees) can allocate certain individuals to spatial exploration while others continue to exploit accumulated information (Hills et al., 2015), individuals in cohesively moving groups are highly coupled and can only benefit from compromising between exploring and exploiting if they do so in unison. For example, dominant guineafowls displace subordinates to monopolize a foraging patch (i.e., exploitation) but, to benefit from the safety of group cohesion, are then forced to follow subordinates in their exploration for alternative patches (Papageorgiou and Farine, 2020). Baboons can also compromise between movement decisions. When they travel together, they follow one member\u2019s directional preference over another if the angle of disagreement between conflicting preffered directions is large but compromise by averaging alternative proposed directions when this angle is small (Strandburg-Peshkin et al., 2015). If individuals are to stay together, the group must reach consensus between following a known route or departing from it to find better routes, foraging patches, or temporary resting locations. Elucidating whether different group members contribute differently to this process is crucial to understanding how groups compromise between exploration and exploitation.\n\nWe investigate this question in the context of navigation through natural landscapes using the homing pigeon Columba livia as our model system. After successive homing journeys from a given release site, pigeons develop stable idiosyncratic routes that are followed with high fidelity (Meade et al., 2005; Guilford and Biro, 2014). These birds rely on sequences of localized visual landmarks to recapitulate familiar yet individually distinct routes (Biro et al., 2004; Meade et al., 2005). Each route is learned in a gradual process starting with an exploration phase that samples new landmarks, from which the bird eventually converges upon a stable sequence of landmarks (Biro et al., 2004). Experiments with paired birds show that route information can be passed from experienced birds to na\u00efve individuals through social learning (Pettit et al., 2013a) and can be modified through information pooling when individuals with different idiosyncratic routes share information to reach a compromise between their routes (Biro et al., 2006). Although learning generally improves route efficiency, both social learning and information pooling tend to reach a plateau beyond which further improvement in efficiency is not seen. However, for birds flying together, the introduction of a na\u00efve individual in place of an experienced one effectively leads to the resumption of exploratory behaviour and further route improvement (Sasaki and Biro, 2017). Yet, it remains unclear to what extent a bird\u2019s prior experience influences the balance between exploration and exploitation and how birds with potentially different route preferences jointly shape a route.\n\nIndeed, the mechanisms underlying how different individual preferences are combined into a collective outcome is one of the key foci in studies of collective animal behaviour. Broadly, group decisions can range from despotic with a single leader to democratic in which input from different individuals is aggregated to reach consensus (Conradt and Roper, 2003). Some animal groups make both despotic and democratic decisions, and researchers have been investigating what determines reliance on one collective decision-making strategy over the other (King and Cowlishaw, 2014). For example, baboons live in despotic societies where the alpha male is most often responsible for group decisions between alternative foraging destinations (King et al., 2008), but they can also decide democratically in certain situations, such as during daily ranging activities (Strandburg-Peshkin et al., 2015). Evidence of both despotic and democratic decisions also exists in homing pigeons (Biro et al., 2006; Nagy et al., 2010; Jorge and Marques, 2012). When leadership is defined as disproportionate input into collective navigational decisions, either through spatial position (Pettit et al., 2013b), route similarity (Flack et al., 2012), or directional correlation delay (Nagy et al., 2010), a number of different factors have been shown to play a role in it. Leadership dynamics are influenced by individual differences among birds in fidelity to their own routes (Freeman et al., 2011), their typical flight speed (Pettit et al., 2015), their personality (Sasaki et al., 2018), as well as their level of experience (Flack et al., 2012). Moreover, equally experienced birds are known to come to a compromise by averaging their idiosyncratic routes so long as the pair\u2019s route remains within a threshold distance from each bird\u2019s favoured one \u2013 a low level of conflict. Higher levels of conflict lead instead to a splitting of the pair or to the emergence of a single leader (Biro et al., 2006). Nonetheless, experience alone is unable to fully recover the leadership structure characteristic of larger flocks (Watts et al., 2016). Spatial position offers some insight into leadership; on average, birds flying closer to the front of the flock have a stronger influence on the flock\u2019s directional choices than birds flying at the back (Nagy et al., 2010; Pettit et al., 2013b). Even so, the moment-to-moment relationship between leadership and level of experience remains unclear.\n\nLeader\u2013follower interactions of this sort can be accurately captured using information-theoretic measures that quantify causal relations in terms of predictive information (Butail et al., 2016; Kim et al., 2018; Crosato et al., 2018; Ray et al., 2019; Valentini et al., 2020). This methodological approach, which generally requires large amounts of data (but see Porfiri and Ruiz Mar\u00edn, 2020), is gaining popularity among behavioural ecologists (Strandburg-Peshkin et al., 2018; Pilkiewicz et al., 2020) as tools for automatic monitoring and extraction of the necessary volumes of behavioural data become increasingly available (Egnor and Branson, 2016). One of these measures, transfer entropy, quantifies information about the future behaviour of a focal individual that can be obtained exclusively from knowledge of the present behaviour of another subject (Schreiber, 2000). Transfer entropy measures information transferred from the present of the sender to the future of the receiver (Lizier and Prokopenko, 2010). It explicitly accounts for autocorrelations characteristic of individual birds\u2019 trajectories (Mitchell et al., 2019) by discounting predictive information available from the sender\u2019s present that is already included in the receiver\u2019s past (see Figure 1). Furthermore, it does not require a model of how sender and receiver interact, and it is well suited to study social interactions both over space and time (Lizier et al., 2008; Strandburg-Peshkin et al., 2018). This aspect of transfer entropy encompasses traditional methods to quantify collective movement that are based on modelling an individual\u2019s behaviour as a combination of three motional tendencies (Couzin et al., 2002) \u2013 alignment of direction to nearby group members, attraction towards sufficiently distant members, and repulsion from sufficiently close members \u2013 that allow an individual to maintain proximity to the group. In this context, transfer entropy is advantageous as it can capture causal interactions due not only to alignment forces (Nagy et al., 2010) but also to attraction and repulsion forces that result in temporarily unaligned states (Pettit et al., 2013b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68653/elife-68653-fig1-v1.jpg)\n\n**Figure 1.:** The spatial trajectories of an experienced (E) and a na\u00efve (N) bird (point 1) are encoded as clockwise and counterclockwise rotations (point 2) which we represent as discrete time series (point 3). The combination of rotations encoded in both series (point 4) is used to estimate the probabilities required to compute transfer entropy (point 5) and to determine the influence of one individual over the future behaviour of the other (point 6). This example illustrates transfer entropy from experienced to na\u00efve, but we also computed it for the opposite direction.\n\nWe study collective decision-making and the exploration\u2013exploitation trade-off using an experimental analysis of cumulative route development in homing pigeons conducted by Sasaki and Biro, 2017. In their experiments, pairs consisting of a na\u00efve and an experienced bird were required to successively solve the same homing task a total of 12 times. This set of paired flights, which represents a single generation of cumulative route development, allowed the na\u00efve bird to acquire knowledge of localized visual landmarks necessary for homing. At the end of each generation, the more experienced bird was then replaced with a new na\u00efve individual and the learning process was repeated with the newly formed pair. This transmission-chain design, where experienced individuals were repeatedly replaced with na\u00efve ones, lasted five generations and was replicated in 10 independent transmission chains. Route efficiency was measured as the ratio of the beeline distance between the release site and the home loft (i.e., the ideal optimum) and the actual distance travelled by birds. Sasaki and Biro\u2019s (2017) s results showed that, although homing efficiency dropped considerably every time a new na\u00efve bird was introduced, transmission-chain pairs continued to improve within and over generations, eventually outperforming both solo and fixed-pair controls (respectively, 0.92 efficiency versus 0.83 and 0.85). In contrast, the efficiency of solo and fixed pairs plateaued after they had first established their idiosyncratic routes (around the 9th\u201310th release for the former and the 7th\u20138th release for the latter).\n\nThe continued improvement seen in transmission chains might result from a variety of decision-making mechanisms ranging from fully despotic to increasingly democratic. A simplified perspective of this continuum allows us to consider four alternative hypotheses. In two of these alternatives, H1 and H2, and, a single despotic leader, either the na\u00efve (H1) or the experienced (H2) bird, determines the entire homing route. Whereas evidence of social learning (Sasaki and Biro, 2017) suffices to dismiss the possibility of leadership by the na\u00efve individual (H1), leadership by the experienced individual (H2) could still be the only process in place if social learning is unidirectional and the na\u00efve individual merely triggers the experienced bird to resume and lead exploration. Under the other two hypotheses, H3 and H4, birds pool their personal information by means of democratic processes based on moment-by-moment integration of individual preferences or transient, alternating leadership (Conradt, 2012). The third hypothesis (H3) entails the experienced bird contributing only its past route information and relying instead on the na\u00efve individual for the discovery of route innovations. If this hypothesis holds, we expect the na\u00efve bird to disproportionally lead phases of exploration. Otherwise (fourth hypothesis, H4), both experienced and na\u00efve birds might contribute through exploration to the discovery of new information.\n\nWe discriminated between these alternative hypotheses by using transfer entropy to reveal the extent to which birds influence each other and to investigate if relative spatial position can accurately predict leader\u2013follower dynamics. On this basis, we studied the contribution of each bird to the exploration\u2013exploitation trade-off over different stages of route development. This exploration\u2013exploitation perspective of homing route development allowed us to characterize the efficiency of choices made by birds over the course of the experiment and to shed light on the superior performance of experimental pairs with respect to solo and fixed-pairs controls.\n\n## Results\n\n### Birds pool information\n\nWhereas previous evidence of social learning (Sasaki and Biro, 2017) suffices to dismiss the possibility of na\u00efve individuals behaving in a despotic manner (H1), the despotic approach remains a possible option for experienced birds (H2). Indeed, the social learning hypothesis under which the na\u00efve bird passively copies the idiosyncratic route of the experienced one (i.e., H2, the despotic leader) entails a transfer of information that is unidirectional \u2013 from the experienced to the na\u00efve bird. Instead, under the two alternative hypotheses based on democratic decision-making (H3 and H4), the two birds rely on bidirectional information transfer to pool information and increase the efficiency of their route (Pettit et al., 2013a; Sasaki and Biro, 2017). We rejected the unidirectional social learning hypothesis H2 by finding causal evidence of information pooling; the na\u00efve bird actively influenced the behaviour of the experienced one for a large portion of the parameter space (Appendix 1\u2014figure 1). As is common practice with these measures (Porfiri, 2018), we selected the parameter configuration that maximized the total transfer of information between the two birds (one sample every 0.2 s, history length of 10 samples). This was maximal for the shortest sampling period (i.e., prediction interval) of 0.2 s and progressively decreased towards 0 for larger periods up to 4 s, indicating that the effect of an interaction between birds was transitory and lasted for a limited period of time. Using this configuration, we compared measurements of information transfer against those of a surrogate dataset created by pairing trajectories of birds that were not flown together. We found that levels of mutual influence between birds that flew together were significantly higher than those observed in the surrogate dataset both overall and for each generation separately (Mann\u2013Whitney\u2013Wilcoxon, columns 2 and 3 of Appendix 1\u2014table 1).\n\nDuring the first two generations of paired flights (Figure 2a, paired analysis), when there was a large margin to improve the efficiency of the pair\u2019s trajectory, the na\u00efve bird was more informative than the experienced one, evidenced by a stronger influence of the former over the latter. At generation 4, there was a balance between the two birds, whereas the experienced bird eventually became the better source of predictive information in the last generation. A linear fit over generations of the paired comparison (Figure 2a, red line) showed an increasing influence of the experienced bird over the na\u00efve one (Theil\u2013Sen estimator, slope 0.534, p<0.001). Additionally, a non-paired comparison of the same results revealed that, although the behaviour of the na\u00efve bird resulted, on average, in a marginally higher predictive power than that of the experienced bird (18.7\u201321.4% versus 17.7\u201320.5%), variations in each bird\u2019s route explained a large portion of the other bird\u2019s behaviour (Figure 2b), suggesting non-trivial leadership dynamics. These results do not show whether different levels of experience within the pair led to asymmetric contributions of birds to route development, with the experienced bird providing only its past route information and the na\u00efve bird in charge of discovering route innovations, or if both birds contributed to the exploration for possible route alternatives. To discriminate between the remaining hypotheses H3 and H4, we first developed the means to evaluate leadership on a moment-to-moment basis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68653/elife-68653-fig2-v1.jpg)\n\n**Figure 2.:** Panel (a) shows the net predictive power of the two birds over generations; it measures the excess predictive information within the pair and highlights which of the two birds is more informative (purple for the experienced bird, green for the na\u00efve bird). The red line corresponds to a linear fit over generations using the Theil\u2013Sen estimator. Panel (b) shows the predictive power of na\u00efve and experienced birds separately from each other as a function of generations. The predictive power of a bird with respect to the other is measured in terms of the percentage reduction in uncertainty, and it has been computed on the basis of transfer entropy as detailed in Materials and methods.\n\n### Relative position determines temporary leadership\n\nConsistent with information sharing within each pair, we found that experienced and na\u00efve birds repeatedly switched their positions at the front and back of the pair (Figure 3a). Previous studies found evidence that birds that spent, on average, more time at the front of the flock had a tendency to assume leadership roles (Nagy et al., 2010; Pettit et al., 2013b). To see whether this average relationship between leadership and position holds at each point in time, we investigated the spatiotemporal dynamics of information transfer (Lizier et al., 2008). We did so by considering the amount of predictive information obtained by each bird as a function of the distance from the experienced to the na\u00efve bird projected over their mean direction of motion (Figure 3b). We found that within a distance of up to 30 m the bird flying ahead was consistently more informative than that flying in the back. This is not only further evidence that the bird flying ahead acts as the leader, influencing the path of the follower behind it, but, because of its finer grain, it also enables relative distance between birds to be used as a (more parsimonious) moment-to-moment measure of causal influence within the pair.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68653/elife-68653-fig3-v1.jpg)\n\n**Figure 3.:** Panel (a) shows sample flight trajectories for a number of different releases, r, of the same pair of birds. Colours highlight which bird is ahead of the other during different segments of the route. Panel (b) shows the local transfer of information (mean and 95% confidence interval) between the experienced bird and the na\u00efve one as a function of their relative distance (colours represent the direction of information transfer) estimated from generations 2\u20135 using smoothed conditional means.\n\nThe experienced and the na\u00efve birds alternated leading segments of the route, where leadership durations were consistent with a log-normal distribution (see Supplementary material). Although the na\u00efve bird flew at the front of the pair for longer segments (Whitney\u2013Mann\u2013Wilcoxon, p<0.047, W = 56865638), the difference was very small (0.3 s) and largely driven by the flights of one generation. Indeed, for all generations but the third (p<0.001, W = 6588674), the distribution of consecutive time spent at the front of the pair by the experienced bird cannot be distinguished from that of the na\u00efve individual (Appendix 1\u2014table 2). The tails of these distributions approach that of an exponential distribution and suggest that temporary leadership might be decided randomly (Biro et al., 2006) instead of using deterministic rules such as fixed periods of time. Moreover, with the exception of generation 3 where 54% of the route was led by the na\u00efve bird (Wilcoxon signed-rank test, p=0.03, V = 1851), there was no significant difference in the proportion of a flight spent by each bird at the front of the pair (Appendix 1\u2014table 3), suggesting a relatively egalitarian relation between birds despite differing levels of experience.\n\n### Exploration\u2013exploitation dynamics explain flight performance\n\nSasaki and Biro, 2017 previously showed that flight efficiency varies across treatments with experimental pairs eventually outperforming both fixed pairs of birds and solo individuals. The discovery of route innovations and, in particular, how birds with different levels of experience contribute to this task, is the key to the superior performance of experimental pairs. To understand this phenomenon and thus shed light on the pair\u2019s information-pooling mechanism, we investigated how pigeons balance between exploitation of known information \u2013 closely following (<300 m) their most recent route \u2013 and exploration for possible route improvements. To do so, we labelled segments of flight trajectories as a function of the point-to-point distance from each point of a focal trajectory to the closest point of the immediately preceding trajectory (i.e., baseline) and compared the exploration\u2013exploitation dynamics both across treatments and between experienced and na\u00efve birds.\n\nDuring the initial part of the experiment (Figure 4a, first 12 releases), exploration decreased steadily in all conditions with birds that flew individually in the experimental group (i.e., generation 1) performing similarly to those of the solo control (respectively, 36.7 and 34.2%), whereas fixed pairs of birds explored significantly more (51.7%, Whitney\u2013Mann\u2013Wilcoxon, p<0.001, Appendix 1\u2014table 4). However, while exploration steadily decreased for solo and fixed pairs of birds in the successive 48 releases, experimental pairs showed a markedly different pattern of exploration oscillating over generations (Figure 4a, releases 13\u201360). Each time a new na\u00efve individual was paired with an experienced one (dotted vertical lines), exploration increased for about 5\u20136 releases, reaching values well beyond those of both solo birds and fixed pairs; then exploration decreased within a few releases (2\u20134) to the same levels as those of fixed pairs. On average during generations 2\u20135, experimental pairs explored (32.9%) significantly more than both solo (15.7%, p<0.001) and fixed pairs of birds (29.3%, p=0.0456). These results also held when exploration and exploitation were defined with respect to the last release of the previous generation. Under this model, differences between experimental and fixed pairs were even more pronounced, with the former characterized by 46.6% exploration and the latter by only 32.4% (p<0.001, Appendix 1\u2014table 5 and Appendix 1\u2014figure 6). The inferior flight efficiency of solo and fixed pairs of birds might thus be explained, at least in some measure, by a lower likelihood to discover route improvements due to limited exploration.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68653/elife-68653-fig4-v1.jpg)\n\n**Figure 4.:** Panel (a) shows the proportion of exploration over releases for the experimental group (the red dotted vertical line separates solo flights at generation 1 from paired flights at generations 2\u20135), the solo control, and the fixed-pairs control. Smoothed lines are computed using generalized additive models using shrinkage cubic regression splines (mean and standard error); points represent averages for individual releases. Panel (b) shows the proportion of a flight led by each bird during phases of exploration and exploitation in the experimental treatment. Darker colours correspond to exploitation, lighter colours to exploration; purple represents the experienced bird, green the na\u00efve one; red lines represent linear fits to data pooled from both birds using the Theil\u2013Sen estimator (slopes and p-values: respectively, 0.0203, p<0.001 for exploitation and \u20130.0171, p=0 for exploration). Panel (c) shows the probability for the na\u00efve individual to initiate phases of exploration over releases (exact binomial test, p<0.01 for release 1). The dotted vertical line separates the first release, where the na\u00efve bird was significantly more likely to initiate, from the successive releases 2\u201312 showing no significant difference between the two birds; the red line provides a visual reference indicating an equal likelihood between the two birds to initiate exploration.\n\nThe superior homing performance of experimental pairs is suggested to be rooted in their ability to select novel portions of a route introduced by the na\u00efve individual that are more efficient while discarding inefficient ones (Sasaki and Biro, 2017). Under this hypothesis, which is an extension of H3, we expect to observe not only increasing homing efficiency over generations but also an asymmetric pattern of leadership in which the na\u00efve individual leads periods of exploration and the experienced one leads periods of exploitation. We found instead no significant difference between the contributions of the experienced bird and those of the na\u00efve one both overall and within generations (Figure 4b, Appendix 1\u2014table 1). The sole exception is represented by generation 3 during which the na\u00efve bird contributed more than the experienced one to exploitation (Wilcoxon signed-rank test, p=0.035, V = 1871). In agreement with our expectations for H4, experienced and na\u00efve birds led the pair with approximately the same frequency in both exploration and exploitation, suggesting that deviations from established routes were not caused only by the na\u00efve bird (see also Appendix 1\u2014figure 4, inset). We did find evidence of behavioural asymmetries, in that transitions from exploitation to exploration were marginally more likely to be initiated by na\u00efve birds (exact binomial test, p=0.042, n = 964, Appendix 1\u2014table 2); however, this result was driven by those of generation 3 (p=0.02, n = 301), whereas no difference was detected in other generations. Transitions from exploration to exploitation were equally likely to be initiated by the two birds both overall and within each generation. However, when transitions are considered over the 12 releases composing each generation (Figure 4c), the na\u00efve individual was more likely to initiate phases of exploration during the first release (p<0.01, n = 44, Appendix 1\u2014table 3) doing so 70.5% of the time compared to 29.5% for the experienced bird. After the first release, transitions that initiate phases of exploration were about as likely to be initiated by either of the two birds independently of their level of experience.\n\n## Discussion\n\nFor many group-living animals, searching for optimal travel routes can be a complex task as social information about routes can persist over generations regardless of its quality (Helfman and Schultz, 1984; Sasaki and Biro, 2017; Jesmer et al., 2018; Laland and Williams, 1998). This search is inherently subject to a trade-off between the exploitation of well-established route information accumulated over time and exploration for innovations that constitute potential improvements (Hills et al., 2015). Striking a balance is fundamental as a pronounced reliance on exploitation of learned information can hinder productive innovations (Davies et al., 2012) and thus promote the maintenance of potentially suboptimal behaviour and even of maladaptive behavioural traditions (Laland and Williams, 1998). Equally, an over-reliance on exploration without exploiting the rewards of beneficial innovations eventually impedes improvements in performance over time (Fu and Gray, 2006; Mehlhorn et al., 2015).\n\nWe studied the causal structure of this process in flights of the homing pigeon C. livia as this species is capable of both social learning and information pooling (Biro et al., 2006; Pettit et al., 2013a). Of particular interest for our study is the increase in route efficiency that results from the pairing of na\u00efve individuals with experienced ones (Pettit et al., 2013a), including when this happens iteratively over multiple generations (Sasaki and Biro, 2017). Previous work has proposed information pooling as the underlying mechanism driving this increase in flight performance (Sasaki and Biro, 2017). Using transfer entropy to measure predictive information (Schreiber, 2000; Pilkiewicz et al., 2020), we found quantitative evidence that supports the information-pooling hypotheses H3 and H4 and in the strength of causal interactions within pairs of birds. Experienced and na\u00efve birds influence each other\u2019s behaviour; about 20% of the future directional choices of any individual in a pair is explained by the behaviour of the other individual. These results contrast with our expectations for unidirectional social learning (H2) that entails an asymmetric pattern of leadership with a pronounced role for experienced individuals.\n\nOur analysis showed that, in a multi-generational transmission-chain design, the na\u00efve bird has a higher influence than the experienced one during the early generations. In later generations, however, the experienced bird becomes the better source of predictive information. We hypothesize that, over generations, as birds have explored more search space and thus exhausted many alternative routes, a newly introduced bird becomes less likely to contribute productive innovations. As a result, innovations can lead to errors instead of improvements in later generations. Rather than leading to additional exploration bouts, these erroneous innovations could be suppressed by the contributions of the experienced individual that, as generations progress, has access to increasingly better information. This theoretical reasoning is analogous to the diminishing marginal value of returning to a previous location (i.e., continuing to rely on the na\u00efve bird for innovations) when searching for an object in space (Stone, 1976). From an information-foraging perspective (Stephens and Krebs, 1986; Pirolli, 2007), the time invested in harvesting innovations on the introduction of a na\u00efve bird corresponds to the time invested in attending to a newly discovered patch; at some point, the opportunity cost of further harvesting becomes too high to justify remaining in the patch. Thus, after the introduction of a na\u00efve bird, the information-foraging pair shifts over successive releases from information-harvesting exploration back towards information-preserving exploitation, as would be expected in an optimal search problem (Stone, 1976). Over generations, as route information within the pair becomes better, the balance between exploration for route improvement and exploitation of the known route changes in favour of the latter.\n\nHow do experimental pairs improve their homing routes over generations? Previous studies where leadership was defined on the basis of route similarity showed that, in pairs with a large difference in experience between birds, experienced individuals were more likely to assume leadership (Flack et al., 2012). Still using route similarity, Sasaki and Biro, 2017 found evidence of social learning with na\u00efve individuals learning routes from their experienced partners. Moreover, because newly formed pairs in the transmission-chain design also improved performance generation after generation, they proposed that na\u00efve individuals could contribute innovations that pigeons evaluate in terms of route efficiency and prune away when inefficient (i.e., H3). However, defining leadership in terms of causal interactions instead of route similarity allowed us to show that there is an asymmetric relation between innovators and exploiters only during the initial flight of a newly formed pair. Although leadership is ephemeral and equally shared between birds during exploration and exploitation independently of their level of experience, over the course of this first flight, the na\u00efve individual disproportionally initiates phases of exploration, attracting the experienced bird to unfamiliar areas and triggering it to also resume the search. After that, both birds are equally likely to initiate transitions between exploration and exploitation as expected from our fourth hypothesis H4. Moreover, as it is unlikely that experimental pairs were merely better than control groups at evaluating efficiency, we believe that their superior performance is rooted instead in their complex exploration\u2013exploitation dynamics that allowed them to better cover the search space.\n\nPersonally acquired information allows solo individuals to improve flight performance (Meade et al., 2005) but only to discover routes moderately efficient (consistently within 0.8\u20130.85 efficiency across a large number of experiments, reviewed in Guilford and Biro, 2014) because solo individuals rapidly reduce their exploration efforts to seek out novel information. Experimental and fixed pairs of birds, on the other hand, explore more and thus outperform solo individuals. Together, two birds have superior sensory and cognitive capacities compared to single birds (Krause et al., 2010) which facilitates the discovery of better routes that are then learned collectively (Biro et al., 2016; Kao et al., 2014). The reasons why pairs explore more than solo individuals might lie partly with the conflicts characteristic of newly formed pairs (Biro et al., 2006) if the resolution of conflict, for example, through averaging individual inputs, indirectly prompts pairs to explore more and discover route innovations. This hypothesis could also explain why experimental pairs outperform fixed pairs. The introduction of a na\u00efve individual at the start of each generation repeatedly creates an experience imbalance in the newly formed pair, which differs from fixed pairs that undergo a process of mutual habituation as they develop a stable route that likely reduces conflicts. This experience imbalance could be the source of new conflicts, providing a possible explanation for why experimental pairs reach levels of exploration generally higher than those of fixed pairs. The process of gradually settling on a joint route over the course of a generation following this initial perturbation is also reminiscent of the transient effects observed when an ant with outside information joins a group of nestmates transporting an object; the new information temporarily steers the collective in the right direction, but its effects on collective motion vanish quickly (Gelblum et al., 2015; Gelblum et al., 2016; Gelblum et al., 2020).\n\nThe ability of groups to outperform single individuals by pooling information across their members is an aspect of collective intelligence that has long intrigued researchers. One potential mechanism underlying this phenomenon, popularly known as the wisdom of crowds (Surowiecki, 2005), is averaging many individuals\u2019 estimates independent from each other. Averaging individual decisions is expected to provide a more accurate group estimate than any individuals\u2019 guess. Previous studies have also shown that animals can average their movement decisions to reach a compromise (Biro et al., 2006; Strandburg-Peshkin et al., 2015). Although the mechanisms by which experienced and na\u00efve individuals pool information during route development remain unknown, our study points to the importance of na\u00efve group members within the information-pooling process. Moreover, the wisdom of crowds is known to require personal information to be independent among group members (Couzin, 2018) otherwise, group performance can degrade quickly for increasing group size (Kao and Couzin, 2014). Experimental pairs could thus benefit from pooling information with na\u00efve individuals that, at least at the beginning of each generation, likely provide a source of information independent from that of the experienced bird. The potentially deleterious effects of losing independence may provide another pressure to shift over time from innovative exploration to route-preserving exploitation. It remains to be explored how our results generalize to larger flock sizes. Previous experiments without generational replacement showed that, even in larger flocks, birds flying ahead of the flock had a tendency to assume leadership positions (Nagy et al., 2010). However, the repeated introduction of na\u00efve individuals into larger flocks might complicate the dichotomy between leaders and followers by inducing turnover dynamics between the front and the back of the flock.\n\nAdopting an explicit exploration\u2013exploitation perspective to study search strategies and doing so through the use of predictive information to quantify causal interactions has the potential to advance our understanding of collective navigation in larger flocks. The conceptual framework of exploration and exploitation as well as the methods we proposed can also benefit researchers studying other taxa that move in groups with the potential to learn from previous experiences, such as shoaling fish or certain primates. In principle, this information-theoretic approach could also be applied to the study of information transfer between the environment and the individuals within a group. The ability to quantify causal interactions of this sort could shed light on broader questions in ecology involving animals moving in a group and their environment such as the impact of visual landmarks on navigation or the effects of terrestrial migration on the environment (Bracis and Mueller, 2017; de Guinea et al., 2021).\n\n## Materials and methods\n\nData and source code are available in Valentini et al., 2021.\n\n### Experimental subjects and procedure\n\nData were taken from a previous study on cumulative route development in the homing pigeon C. livia (Sasaki and Biro, 2017). Pairs of birds composed of an experienced and a na\u00efve bird were released together from the same site and allowed to fly back to the home loft. Pairs were created and released over five successive generations of a transmission chain, each generation lasting 12 consecutive releases of the same pair, according to the following procedure: initially, at generation 1, a na\u00efve bird was released alone 12 times, allowing it to develop its own idiosyncratic route to the home loft. This bird, now experienced, was then paired with a new (na\u00efve) bird at generation 2, and together they performed another 12 flights. This process was then repeated in the next generation with a new pair of birds composed of the former na\u00efve bird and of a new na\u00efve one. Data were gathered for a total of 10 independent transmission chains, each lasting five generations (see Sasaki and Biro, 2017 for details). Birds flying at an average linear distance greater than 250 m from each other were not considered as pairs and were thus excluded from the analysis, leaving 343 flights with a mean \u00b1 SD flight duration of 8.65 \u00b1 1.33 min. Additionally, in two control conditions, nine solo birds and six pairs (all initially na\u00efve) were released from the same site for a total of 60 releases (the equivalent of 5 \u00d7 12 releases for the transmission chains).\n\n### Data collection and pre-processing\n\nFlight trajectories of birds were sampled at a frequency of 5 Hz using GPS loggers, converted from the geographic coordinate system to the metric system, and projected over the two-dimensional plane (see Sasaki and Biro, 2017). Each trajectory consisted of a time-ordered series of positions in space, (xi: (x1, x2)i, i \u2265 1), see Figure 1 (point 1). We encoded the pattern of rotations of each flight using a binary symbolic representation where symbols 0 and 1 represent, respectively, a clockwise and a counterclockwise rotation (point 2). The direction of rotation was computed as the cross-product $x_{1\u22121}x_{1}\u2192\\timesx_{1}x_{1+1}\u2192$ between the motion vector at time i and that at time i + 1. The rotation is clockwise when the product is negative and counterclockwise when it is positive. We also measured the distance dEN(i) of the experienced bird from the na\u00efve one projected over the current direction of motion of the pair (cf. Nagy et al., 2010 and Supplementary material). Using this distance, we then determined the relative position of birds over time: when dEN > 0, the experienced bird was flying ahead of the na\u00efve bird; when dEN < 0, it was flying behind. Previous tests using the same GPS loggers showed that these devices have a sufficient level of accuracy with a small normally distributed spatial error (SD of 0.05 m) affecting the tracking accuracy of the direction of motion and a relatively larger error (median of 1.69 m) affecting that of the relative position (Pettit et al., 2013b). In our experiments, experienced and na\u00efve birds flew at an average distance from each other of 8.74 m with a standard deviation of 38.54 m.\n\n### Measuring information transfer\n\nWe quantified the amount of information transferred between birds using information-theoretic measures (Cover and Thomas, 2005; Pilkiewicz et al., 2020) estimated from the series of rotations of the experienced, $E=(e_{i},i\\geq1)$, and of the na\u00efve, $N=(n_{i},i\\geq1)$, birds (Figure 1, point 3). We aimed to quantify causal interactions between birds in a Wiener\u2013Granger sense by measuring the extent to which the current behaviour of one bird allows us to predict the future behaviour of the other (Bossomaier et al., 2016). Here we describe the process for predicting the na\u00efve bird\u2019s behaviour from that of the experienced one, but we also used the same method for the opposite direction. The average amount of information necessary to fully predict the next rotation of the na\u00efve bird is quantified by the marginal entropy of its series of rotations $H(N^{i+1})=\u2212\\sumn_{i}\u00a0p(n_{i})\u00a0log_{2}\u00a0p(n_{i})$ (Figure 1, Venn diagram, lower-left set). This is equal to bit if the flight of the na\u00efve bird is maximally uncertain (i.e., clockwise and counterclockwise rotations are equally likely) and to bits if the flight is fully deterministic (i.e., rotations are either all clockwise or all counterclockwise). As a result of temporal autocorrelation (Mitchell et al., 2019), part of this information might be contained in the recent history of rotations of the na\u00efve bird, $n_{i}^{(k)}={n_{i\u2212k+1},...,n_{i\u22121},n_{i}}$ for history length k (Figure 1, point 4, dark green entries in the na\u00efve time series). The remaining predictive information, which is not explained by the past behaviour of the na\u00efve bird, is quantified by the marginal entropy,\n\n$$\nH(N^{i+1}|N^{(k)})=\u2212\\sumn_{i^{(k),n_{i+1}}}p(n_{i}^{(k)},n_{i+1})log_{2}\\frac{p(n_{i}^{(k)},n_{i+1})}{p(n_{i}^{(k)})},\n$$\n\nof its future rotations, $N^{i+1}$, conditioned on the outcome of the past rotations, (Figure 1, Venn diagram, overlap of the white and light purple areas).\n\nOf interest to us was how much of this remaining information (necessary to predict the future direction of rotation of the na\u00efve bird) can be obtained by the current behaviour of the experienced bird (Figure 1, points 4\u20136). This is given by the transfer entropy, which estimates the time-delayed effects on the na\u00efve bird of its interaction with the experienced one: $T_{E\u2192N}=H(N^{i+1}|N^{(k)})\u00a0\u2212\u00a0H(N^{i+1}|N^{(k)},E)$ (Schreiber, 2000). Transfer entropy is time directional, from the present of one bird to the future of the other, and considered for this reason a measure of information transfer (Lizier and Prokopenko, 2010). It is defined as\n\n$$\nT_{E\u2192N}=\\sumn_{i+1},n_{i}^{(k)},e_{i}p(n_{i+1},n_{i}^{(k)},e_{i})\u00a0log_{2}\\frac{p(n_{i+1}\u00a0|\u00a0n_{i}^{(k)},e_{i})}{p(n_{i+1}\u00a0|\u00a0n_{i}^{(k)})}\n$$\n\nand formally measures the reduction of uncertainty of the future rotation $N^{i+1}$ of the na\u00efve bird given by knowledge of the current rotation of the experienced bird at the net of possible autocorrelations in the na\u00efve bird\u2019s past N(k) (Figure 1, Venn diagram, area with red border). The logarithmic part of the above equation is known as local transfer entropy and measures over time whether the interaction at time (Figure 1, point 4, dark green and dark purple entries) was informative (positive) or misinformative (negative) (Lizier et al., 2008).\n\nThe above information-theoretic measures were computed in R 3.6.1 using the rinform-1.0.2 package (Moore et al., 2018) by estimating probabilities separately for each flight. To test whether causal interactions were significant, we also evaluated a surrogate dataset artificially created by pairing trajectories of birds that were not flown together: the trajectory of each experienced (or na\u00efve) bird was paired with that of the na\u00efve (or experienced) one from every other pair of birds not containing the same subjects.\n\n### Measuring exploration and exploitation\n\nFor each point in a focal trajectory, we determined the point-to-point distance to a baseline trajectory as the minimum distance from the focal point to its closest point in the baseline trajectory. Using this measure, pairwise analysis of successive routes from the last three flights of the experienced bird during training (generation 1) showed that, once established, the bird largely remained within a point-to-point distance of 300 m from its idiosyncratic route (Appendix 1\u2014figure 3a). Therefore, we used 300 m as a threshold to group points from a focal route into flight segments differentiated between those exploring new solutions and those exploiting known ones. We then compared the trajectories of consecutive flights for the same subjects to label each segment in the experimental and control datasets. For each focal trajectory that we aimed to label, we considered the trajectory of the previous release as a baseline trajectory for the comparison. In the case of paired birds (i.e., both experimental and fixed-pairs control), we considered the trajectory of the pair defined by the mean position of the two birds over time. For the first release of each generation in the experimental group, we used as baseline trajectory the last release of the previous generation because in this case there was no previous flight of the same pair to compare with. This approach to define exploration and exploitation led to a model of exploitation (i.e., the baseline trajectory) that varied over successive releases. Because the introduction of a na\u00efve bird at each generation was likely to affect the baseline model of exploitation in a more pronounced manner than that of solo and fixed pairs of birds, this model might have been susceptible to differences between the experimental design of transmission chain experiments with respect to those of the two controls. To control for this scenario, we also explored an alternative approach where exploitation was defined on the basis of only information available to the experienced bird at the beginning of a new generation. In this case, the last release of the previous generation was used as the baseline trajectory for all releases within a given generation (see Supplementary methods). In both cases, we also measured the distance dEN (i) between experienced and na\u00efve birds to determine which bird was flying at the front of the pair for a given route segment.\n",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "4585f76e-38e4-4b5e-bd20-e3ceab388cfd",
+      "submission_id": "320b7dc8-651d-42d2-ae00-e89fed3da128",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Irene Giardina, Universit\u00e0 Sapienza Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68653.sa0](https://doi.org/10.7554/eLife.68653.sa0)\n\nThis study in the field of collective behavior addresses how na\u00efve and experienced individuals (i.e., homing pigeons) pool information in order to navigate while flying back home. The authors show that the passage of information is largely democratic, meaning information passes both ways, and that, unexpectedly, exploration of the route is initiated both by na\u00efve and experienced birds. The work provides a new perspective on information sharing during collective learning.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Irene Giardina, Universit\u00e0 Sapienza Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68653.sa1](https://doi.org/10.7554/eLife.68653.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Na\u00efve individuals promote collective exploration in homing pigeons\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Better explain how the point-to-point distance for exploration/exploitation was computed (Referee 1).\n\n2) Discuss why the experienced birds explores more as they move further in generations (Referee 1).\n\n3) Extend the introductory paragraph on Transfer Entropy.\n\n4) Discuss connections with research on leadership and information pooling in other animal groups and add citations to the relevant bibliography.\n\nReviewer #1 (Recommendations for the authors):\n\nThe paper is fairly straightforward to read and beyond a few general comments and methodological questions I have no problem in this being accepted. The authors have done a great job in analyzing a rich dataset to address an important question in the field.\n\nMethodology:\n\nI did not quite understand how the point-to-point distance for exploration/exploitation was measured (lines 231-233, and lines 110-112 in Supplementary). Were these distances computed as maximum distance between two trajectories within a time window, were they max between trajectories at all time steps? if yes, what time steps. I think a figure in the Supplementary would help\n\nDiscussion:\n\n\u2013 Can the authors say something about what do these results imply for larger flocks? What would be the limitations of this approach (would the leader bird still be in front for example?)\n\n\u2013 What do the authors think is special about generation 3 that it does not follow the trend in several results?\n\n\u2013 Why do the authors think that the experienced bird starts exploring more as they move further in generations (Figure 4b). I know some of these points may be beyond the scope of the data to be explained so the authors can perhaps only expand on it in the response and decide if and how they want to add it to the discussion\n",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c126cfbf-579a-4cce-b2d3-f0c1757f51d8",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C1",
+      "claim": "Group-living animals that rely on stable foraging or migratory routes can develop behavioural traditions to pass route information down to inexperienced individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Group-living animals that rely on stable foraging or migratory routes can develop behavioural traditions to pass route information down to inexperienced individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about animal behavior supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "75280338-4ac2-4625-b18a-cd63db53c151",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C2",
+      "claim": "Newly introduced na\u00efve individuals were initially more likely to initiate exploration than experienced birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Newly introduced na\u00efve individuals were initially more likely to initiate exploration than experienced birds, but the pair soon settled into a pattern of alternating leadership with both birds contributing equally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the transmission-chain experiment described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "af238312-4214-4f2a-ab55-236903a9480d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C3",
+      "claim": "The pair soon settled into a pattern of alternating leadership with both birds contributing equally.",
+      "claim_type": "EXPLICIT",
+      "source": "Newly introduced na\u00efve individuals were initially more likely to initiate exploration than experienced birds, but the pair soon settled into a pattern of alternating leadership with both birds contributing equally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the transmission-chain experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "83e95040-3147-4520-b20e-1de514593f9b",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C4",
+      "claim": "Experimental pairs showed an oscillating pattern of exploration over generations that might facilitate the discovery of more efficient routes.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental pairs showed an oscillating pattern of exploration over generations that might facilitate the discovery of more efficient routes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and involves speculative reasoning about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "0d54221d-819b-4114-a21b-511a736c29e2",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C5",
+      "claim": "Coordinated motion of groups is a widespread phenomenon observed in multiple taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordinated motion of groups is a widespread phenomenon observed in multiple taxa (Vicsek and Zafeiris, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "dec620ae-8a49-4f7a-bae5-fa5bfda69cbb",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C6",
+      "claim": "Collective motion allows group members to increase their sensory and cognitive capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "collective motion also allows group members to increase their sensory and cognitive capacity (Berdahl et al., 2013; Gelblum et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "e1049ff4-72d7-4367-a4ef-862ef8f42eb9",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C7",
+      "claim": "Collective motion allows group members to acquire valuable social information for navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "collective motion also allows group members to increase their sensory and cognitive capacity (Berdahl et al., 2013; Gelblum et al., 2020) and to acquire valuable social information for navigation (Couzin, 2009; Couzin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "c8801047-ca72-4447-8267-1fdcdc4d2b61",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C8",
+      "claim": "Social information concerns well-established foraging or migratory routes that can persist over successive generations in some species.",
+      "claim_type": "EXPLICIT",
+      "source": "In many animals, this social information concerns well-established foraging or migratory routes that can, in some species, persist over successive generations (Helfman and Schultz, 1984; Sasaki and Biro, 2017; Jesmer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "eca0a198-c980-4627-afb8-1af9018505f9",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C9",
+      "claim": "Knowledge and skills that accumulate over generations can provide groups with an enhanced ability to solve difficult problems.",
+      "claim_type": "EXPLICIT",
+      "source": "Knowledge and skills that accumulate over generations can provide groups with an enhanced ability to solve difficult problems (Biro et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "d66f9b36-74d0-46f4-b858-3f4256659d48",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C10",
+      "claim": "The introduction of new members, even those with no prior knowledge, adds diversity that can enhance the group's behavioural solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only can later generations build on the success of earlier ones, but the introduction of new members, even those with no prior knowledge, adds diversity that can enhance the group's behavioural solutions (Mehlhorn et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "eab92cc2-7179-46a6-abc5-fa3c208c47e5",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C11",
+      "claim": "After successive homing journeys from a given release site, pigeons develop stable idiosyncratic routes that are followed with high fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "After successive homing journeys from a given release site, pigeons develop stable idiosyncratic routes that are followed with high fidelity (Meade et al., 2005; Guilford and Biro, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "80b3e3be-374d-449b-9920-4e985552af8c",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C12",
+      "claim": "Homing pigeons rely on sequences of localized visual landmarks to recapitulate familiar yet individually distinct routes.",
+      "claim_type": "EXPLICIT",
+      "source": "These birds rely on sequences of localized visual landmarks to recapitulate familiar yet individually distinct routes (Biro et al., 2004; Meade et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "1ee56328-cc40-4f33-9ae3-22cb034d2ad9",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C13",
+      "claim": "Each route is learned in a gradual process starting with an exploration phase that samples new landmarks, from which the bird eventually converges upon a stable sequence of landmarks.",
+      "claim_type": "EXPLICIT",
+      "source": "Each route is learned in a gradual process starting with an exploration phase that samples new landmarks, from which the bird eventually converges upon a stable sequence of landmarks (Biro et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "74a4680a-f783-4aca-abfd-f2d1815b5fd0",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C14",
+      "claim": "Route information can be passed from experienced birds to na\u00efve individuals through social learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments with paired birds show that route information can be passed from experienced birds to na\u00efve individuals through social learning (Pettit et al., 2013a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "4cc0e3b8-6a9b-4f0a-9ef1-01a44675a953",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C15",
+      "claim": "Route information can be modified through information pooling when individuals with different idiosyncratic routes share information to reach a compromise between their routes.",
+      "claim_type": "EXPLICIT",
+      "source": "route information can be passed from experienced birds to na\u00efve individuals through social learning (Pettit et al., 2013a) and can be modified through information pooling when individuals with different idiosyncratic routes share information to reach a compromise between their routes (Biro et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "fece9ed3-8736-457d-9648-7dd5dbf34e2a",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C16",
+      "claim": "Learning generally improves route efficiency, but both social learning and information pooling tend to reach a plateau beyond which further improvement in efficiency is not seen.",
+      "claim_type": "EXPLICIT",
+      "source": "Although learning generally improves route efficiency, both social learning and information pooling tend to reach a plateau beyond which further improvement in efficiency is not seen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge from previous research in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "bb9005fa-e824-4ff8-928d-7658b1539fe5",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C17",
+      "claim": "For birds flying together, the introduction of a na\u00efve individual in place of an experienced one effectively leads to the resumption of exploratory behaviour and further route improvement.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for birds flying together, the introduction of a na\u00efve individual in place of an experienced one effectively leads to the resumption of exploratory behaviour and further route improvement (Sasaki and Biro, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "6dcabf27-d01d-4d61-b16e-a1956a57138d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C18",
+      "claim": "Leadership dynamics are influenced by individual differences among birds in fidelity to their own routes.",
+      "claim_type": "EXPLICIT",
+      "source": "Leadership dynamics are influenced by individual differences among birds in fidelity to their own routes (Freeman et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "3b71b762-9891-469a-ab6f-8d19b627d313",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C19",
+      "claim": "Leadership dynamics are influenced by birds' typical flight speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Leadership dynamics are influenced by individual differences among birds in fidelity to their own routes (Freeman et al., 2011), their typical flight speed (Pettit et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "59de46cc-a668-4480-a996-bd47670642f8",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C20",
+      "claim": "Leadership dynamics are influenced by birds' personality.",
+      "claim_type": "EXPLICIT",
+      "source": "Leadership dynamics are influenced by individual differences among birds in fidelity to their own routes (Freeman et al., 2011), their typical flight speed (Pettit et al., 2015), their personality (Sasaki et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "8ad6c819-0cde-4ca3-8020-7fcfca1f5b34",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C21",
+      "claim": "Leadership dynamics are influenced by birds' level of experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Leadership dynamics are influenced by individual differences among birds in fidelity to their own routes (Freeman et al., 2011), their typical flight speed (Pettit et al., 2015), their personality (Sasaki et al., 2018), as well as their level of experience (Flack et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "ca95441d-c16c-469f-bac8-1044c46b55fc",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C22",
+      "claim": "Equally experienced birds are known to come to a compromise by averaging their idiosyncratic routes so long as the pair's route remains within a threshold distance from each bird's favoured one.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, equally experienced birds are known to come to a compromise by averaging their idiosyncratic routes so long as the pair's route remains within a threshold distance from each bird's favoured one \u2013 a low level of conflict.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge from previous research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "76dbde45-ce33-4187-9737-24094f4aab7d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C23",
+      "claim": "Higher levels of conflict lead to a splitting of the pair or to the emergence of a single leader.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher levels of conflict lead instead to a splitting of the pair or to the emergence of a single leader (Biro et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "5acb6f8a-7d34-4e9d-9844-e0f323d57b1e",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C24",
+      "claim": "Experience alone is unable to fully recover the leadership structure characteristic of larger flocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, experience alone is unable to fully recover the leadership structure characteristic of larger flocks (Watts et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "0b4120bf-36a3-48a9-a8ed-03ec544f13fd",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C25",
+      "claim": "Birds flying closer to the front of the flock have a stronger influence on the flock's directional choices than birds flying at the back.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial position offers some insight into leadership; on average, birds flying closer to the front of the flock have a stronger influence on the flock's directional choices than birds flying at the back (Nagy et al., 2010; Pettit et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "6e581a83-8558-42f4-b1d2-6a876bae8ad6",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C26",
+      "claim": "Transfer entropy quantifies information about the future behaviour of a focal individual that can be obtained exclusively from knowledge of the present behaviour of another subject.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these measures, transfer entropy, quantifies information about the future behaviour of a focal individual that can be obtained exclusively from knowledge of the present behaviour of another subject (Schreiber, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research defining the measure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "ef05363c-5c1e-4ee5-b6e0-bdd9020df473",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C27",
+      "claim": "Transfer entropy measures information transferred from the present of the sender to the future of the receiver.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfer entropy measures information transferred from the present of the sender to the future of the receiver (Lizier and Prokopenko, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "0f6fef02-22b6-4a82-8a60-930e67645fc1",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C28",
+      "claim": "Transfer entropy explicitly accounts for autocorrelations characteristic of individual birds' trajectories by discounting predictive information available from the sender's present that is already included in the receiver's past.",
+      "claim_type": "EXPLICIT",
+      "source": "It explicitly accounts for autocorrelations characteristic of individual birds' trajectories (Mitchell et al., 2019) by discounting predictive information available from the sender's present that is already included in the receiver's past (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "2c3b87d8-1156-4bd9-96de-5707f36297b5",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C29",
+      "claim": "Transfer entropy does not require a model of how sender and receiver interact.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it does not require a model of how sender and receiver interact, and it is well suited to study social interactions both over space and time (Lizier et al., 2008; Strandburg-Peshkin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "31eb768c-057a-45be-a7dc-55dbfa9d67b2",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C30",
+      "claim": "Pairs consisting of a na\u00efve and an experienced bird were required to successively solve the same homing task a total of 12 times in the Sasaki and Biro 2017 experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In their experiments, pairs consisting of a na\u00efve and an experienced bird were required to successively solve the same homing task a total of 12 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design from the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "51c75d08-71a5-4a87-a665-678acb67c8a8",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C31",
+      "claim": "At the end of each generation, the more experienced bird was replaced with a new na\u00efve individual and the learning process was repeated with the newly formed pair.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of each generation, the more experienced bird was then replaced with a new na\u00efve individual and the learning process was repeated with the newly formed pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design from the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "94f244dc-f884-4c4f-99d8-3f97720a354e",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C32",
+      "claim": "The transmission-chain design lasted five generations and was replicated in 10 independent transmission chains.",
+      "claim_type": "EXPLICIT",
+      "source": "This transmission-chain design, where experienced individuals were repeatedly replaced with na\u00efve ones, lasted five generations and was replicated in 10 independent transmission chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design from the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "9f1fb9f3-060d-4d49-ad87-ffdaea2bca43",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C33",
+      "claim": "Route efficiency was measured as the ratio of the beeline distance between the release site and the home loft and the actual distance travelled by birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Route efficiency was measured as the ratio of the beeline distance between the release site and the home loft (i.e., the ideal optimum) and the actual distance travelled by birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "0e4a4407-0ac0-403d-9f92-449267517a3d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C34",
+      "claim": "Homing efficiency dropped considerably every time a new na\u00efve bird was introduced in transmission-chain pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sasaki and Biro's (2017) s results showed that, although homing efficiency dropped considerably every time a new na\u00efve bird was introduced, transmission-chain pairs continued to improve within and over generations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "b7c29512-60a0-45ae-ab64-03b37adf5f3d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C35",
+      "claim": "Transmission-chain pairs continued to improve within and over generations, eventually outperforming both solo and fixed-pair controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Sasaki and Biro's (2017) s results showed that, although homing efficiency dropped considerably every time a new na\u00efve bird was introduced, transmission-chain pairs continued to improve within and over generations, eventually outperforming both solo and fixed-pair controls (respectively, 0.92 efficiency versus 0.83 and 0.85).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research with specific data values.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "d18008a0-d6ef-4a66-8c75-84e96ee5934b",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C36",
+      "claim": "The efficiency of solo and fixed pairs plateaued after they had first established their idiosyncratic routes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the efficiency of solo and fixed pairs plateaued after they had first established their idiosyncratic routes (around the 9th\u201310th release for the former and the 7th\u20138th release for the latter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research with specific data values.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "b69596f1-fedc-4581-8c1a-6a290ee5828c",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C37",
+      "claim": "Levels of mutual influence between birds that flew together were significantly higher than those observed in the surrogate dataset both overall and for each generation separately.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that levels of mutual influence between birds that flew together were significantly higher than those observed in the surrogate dataset both overall and for each generation separately (Mann\u2013Whitney\u2013Wilcoxon, columns 2 and 3 of Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "01c807e6-aeec-4f59-8086-a483fc40297a",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C38",
+      "claim": "During the first two generations of paired flights, the na\u00efve bird was more informative than the experienced one, evidenced by a stronger influence of the former over the latter.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first two generations of paired flights (Figure 2a, paired analysis), when there was a large margin to improve the efficiency of the pair's trajectory, the na\u00efve bird was more informative than the experienced one, evidenced by a stronger influence of the former over the latter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "df8d5701-8a37-45c8-bc2b-0dabab2d1474",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C39",
+      "claim": "At generation 4, there was a balance between the two birds in terms of information transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "At generation 4, there was a balance between the two birds, whereas the experienced bird eventually became the better source of predictive information in the last generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "f86c9982-84ad-49eb-af6e-dcf09ad6e7d9",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C40",
+      "claim": "The experienced bird eventually became the better source of predictive information in the last generation.",
+      "claim_type": "EXPLICIT",
+      "source": "At generation 4, there was a balance between the two birds, whereas the experienced bird eventually became the better source of predictive information in the last generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "64dc50d1-dd21-4038-b231-4edaf632e40e",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C41",
+      "claim": "A linear fit over generations of the paired comparison showed an increasing influence of the experienced bird over the na\u00efve one.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear fit over generations of the paired comparison (Figure 2a, red line) showed an increasing influence of the experienced bird over the na\u00efve one (Theil\u2013Sen estimator, slope 0.534, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "1f3df114-9aa0-4f6b-9a08-810cdef0f0c5",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C42",
+      "claim": "The behaviour of the na\u00efve bird resulted, on average, in a marginally higher predictive power than that of the experienced bird.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a non-paired comparison of the same results revealed that, although the behaviour of the na\u00efve bird resulted, on average, in a marginally higher predictive power than that of the experienced bird (18.7\u201321.4% versus 17.7\u201320.5%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis with specific values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "1d1490c1-ea7f-46b5-a7c3-3a90ab417aa1",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C43",
+      "claim": "Variations in each bird's route explained a large portion of the other bird's behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "variations in each bird's route explained a large portion of the other bird's behaviour (Figure 2b), suggesting non-trivial leadership dynamics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "c41796ed-74b2-47db-b7bc-a3e4f4ea367d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C44",
+      "claim": "Experienced and na\u00efve birds repeatedly switched their positions at the front and back of the pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with information sharing within each pair, we found that experienced and na\u00efve birds repeatedly switched their positions at the front and back of the pair (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "5d0b710c-6730-48a0-afc5-9ffed12818ce",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C45",
+      "claim": "Within a distance of up to 30 m the bird flying ahead was consistently more informative than that flying in the back.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that within a distance of up to 30 m the bird flying ahead was consistently more informative than that flying in the back.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "0b598b91-6b78-4e2d-bbf3-d01c77103a37",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C46",
+      "claim": "The bird flying ahead acts as the leader, influencing the path of the follower behind it.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not only further evidence that the bird flying ahead acts as the leader, influencing the path of the follower behind it",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data on information transfer and relative position.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "6074a15f-d13a-476f-99ab-feac30dce20e",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C47",
+      "claim": "Relative distance between birds can be used as a moment-to-moment measure of causal influence within the pair.",
+      "claim_type": "EXPLICIT",
+      "source": "but, because of its finer grain, it also enables relative distance between birds to be used as a (more parsimonious) moment-to-moment measure of causal influence within the pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the relationship between position and information transfer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "cf82e5bb-d471-48ae-9852-2c317d609df0",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C48",
+      "claim": "Leadership durations were consistent with a log-normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The experienced and the na\u00efve birds alternated leading segments of the route, where leadership durations were consistent with a log-normal distribution (see Supplementary material).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "bd8b2b12-839f-456f-ad48-25b016221de1",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C49",
+      "claim": "The na\u00efve bird flew at the front of the pair for longer segments than the experienced bird.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the na\u00efve bird flew at the front of the pair for longer segments (Whitney\u2013Mann\u2013Wilcoxon, p<0.047, W = 56865638), the difference was very small (0.3 s) and largely driven by the flights of one generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "a8017023-d4c7-40d3-8603-8dffe9d0ec43",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C50",
+      "claim": "For all generations but the third, the distribution of consecutive time spent at the front of the pair by the experienced bird cannot be distinguished from that of the na\u00efve individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for all generations but the third (p<0.001, W = 6588674), the distribution of consecutive time spent at the front of the pair by the experienced bird cannot be distinguished from that of the na\u00efve individual (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "40833f4b-616b-462c-8b99-e9bb3018c34b",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C51",
+      "claim": "With the exception of generation 3 where 54% of the route was led by the na\u00efve bird, there was no significant difference in the proportion of a flight spent by each bird at the front of the pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, with the exception of generation 3 where 54% of the route was led by the na\u00efve bird (Wilcoxon signed-rank test, p=0.03, V = 1851), there was no significant difference in the proportion of a flight spent by each bird at the front of the pair (Appendix 1\u2014table 3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "3bab1c05-903c-411c-bb98-fa332627570d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C52",
+      "claim": "There is a relatively egalitarian relation between birds despite differing levels of experience.",
+      "claim_type": "EXPLICIT",
+      "source": "there was no significant difference in the proportion of a flight spent by each bird at the front of the pair (Appendix 1\u2014table 3), suggesting a relatively egalitarian relation between birds despite differing levels of experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the statistical analysis of leadership data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "42fdde6a-026c-4de3-bda4-2a8a8e8a2d4f",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C53",
+      "claim": "Flight efficiency varies across treatments with experimental pairs eventually outperforming both fixed pairs of birds and solo individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Sasaki and Biro, 2017 previously showed that flight efficiency varies across treatments with experimental pairs eventually outperforming both fixed pairs of birds and solo individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "ec2d025d-094c-4981-8a58-21b77b74410a",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C54",
+      "claim": "During the initial part of the experiment (first 12 releases), exploration decreased steadily in all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "During the initial part of the experiment (Figure 4a, first 12 releases), exploration decreased steadily in all conditions",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "3adcf888-dca2-4a4f-8424-b49817a256be",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C55",
+      "claim": "Birds that flew individually in the experimental group performed similarly to those of the solo control in terms of exploration during the first 12 releases.",
+      "claim_type": "EXPLICIT",
+      "source": "with birds that flew individually in the experimental group (i.e., generation 1) performing similarly to those of the solo control (respectively, 36.7 and 34.2%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data with specific values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "26db42c4-928e-4223-8f34-ac07c7c7256e",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C56",
+      "claim": "Fixed pairs of birds explored significantly more than solo birds during the first 12 releases.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas fixed pairs of birds explored significantly more (51.7%, Whitney\u2013Mann\u2013Wilcoxon, p<0.001, Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "62eaeed5-a7fb-442c-9d2b-9d3d0a576d0f",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C57",
+      "claim": "Exploration steadily decreased for solo and fixed pairs of birds in the successive 48 releases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while exploration steadily decreased for solo and fixed pairs of birds in the successive 48 releases, experimental pairs showed a markedly different pattern of exploration oscillating over generations (Figure 4a, releases 13\u201360).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "c0b43832-ed36-4210-b09a-5facf8b4bc4b",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C58",
+      "claim": "Experimental pairs showed a markedly different pattern of exploration oscillating over generations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while exploration steadily decreased for solo and fixed pairs of birds in the successive 48 releases, experimental pairs showed a markedly different pattern of exploration oscillating over generations (Figure 4a, releases 13\u201360).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "a3e69b86-d181-4299-9a09-07eccb18052d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C59",
+      "claim": "Each time a new na\u00efve individual was paired with an experienced one, exploration increased for about 5\u20136 releases, reaching values well beyond those of both solo birds and fixed pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Each time a new na\u00efve individual was paired with an experienced one (dotted vertical lines), exploration increased for about 5\u20136 releases, reaching values well beyond those of both solo birds and fixed pairs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "858306aa-36a2-4ba5-8924-90fa7e472f89",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C60",
+      "claim": "Exploration decreased within a few releases (2\u20134) to the same levels as those of fixed pairs after the initial increase.",
+      "claim_type": "EXPLICIT",
+      "source": "then exploration decreased within a few releases (2\u20134) to the same levels as those of fixed pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "69e1ba32-cad7-4cc6-96dd-7cd5b34dc5a9",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C61",
+      "claim": "On average during generations 2\u20135, experimental pairs explored significantly more than both solo and fixed pairs of birds.",
+      "claim_type": "EXPLICIT",
+      "source": "On average during generations 2\u20135, experimental pairs explored (32.9%) significantly more than both solo (15.7%, p<0.001) and fixed pairs of birds (29.3%, p=0.0456).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data with specific values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "122d7378-4c11-4ba8-a955-35742fe4eb7f",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C62",
+      "claim": "The inferior flight efficiency of solo and fixed pairs of birds might be explained by a lower likelihood to discover route improvements due to limited exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferior flight efficiency of solo and fixed pairs of birds might thus be explained, at least in some measure, by a lower likelihood to discover route improvements due to limited exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim involves speculative reasoning based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "df19abb9-4457-4bd2-9fca-315ec9d86a45",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C63",
+      "claim": "There was no significant difference between the contributions of the experienced bird and those of the na\u00efve one to exploration and exploitation both overall and within generations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found instead no significant difference between the contributions of the experienced bird and those of the na\u00efve one both overall and within generations (Figure 4b, Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "c501990e-ffc8-4d2e-a67a-78ea8f2ddcb3",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C64",
+      "claim": "In generation 3, the na\u00efve bird contributed more than the experienced one to exploitation.",
+      "claim_type": "EXPLICIT",
+      "source": "The sole exception is represented by generation 3 during which the na\u00efve bird contributed more than the experienced one to exploitation (Wilcoxon signed-rank test, p=0.035, V = 1871).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "c9a47bbf-c303-4f6d-a83a-742f181137b7",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C65",
+      "claim": "Experienced and na\u00efve birds led the pair with approximately the same frequency in both exploration and exploitation.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our expectations for H4, experienced and na\u00efve birds led the pair with approximately the same frequency in both exploration and exploitation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "b8c37d40-9470-470a-aa7e-ad1c83af493a",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C66",
+      "claim": "Deviations from established routes were not caused only by the na\u00efve bird.",
+      "claim_type": "EXPLICIT",
+      "source": "experienced and na\u00efve birds led the pair with approximately the same frequency in both exploration and exploitation, suggesting that deviations from established routes were not caused only by the na\u00efve bird (see also Appendix 1\u2014figure 4, inset).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data on leadership during exploration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "8863a8fd-bae2-4621-9f92-7780f9afd3ec",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C67",
+      "claim": "Transitions from exploitation to exploration were marginally more likely to be initiated by na\u00efve birds.",
+      "claim_type": "EXPLICIT",
+      "source": "We did find evidence of behavioural asymmetries, in that transitions from exploitation to exploration were marginally more likely to be initiated by na\u00efve birds (exact binomial test, p=0.042, n = 964, Appendix 1\u2014table 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "f180478e-a1c5-4465-a000-a91e3fb1fb56",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C68",
+      "claim": "The result that transitions from exploitation to exploration were more likely to be initiated by na\u00efve birds was driven by those of generation 3.",
+      "claim_type": "EXPLICIT",
+      "source": "however, this result was driven by those of generation 3 (p=0.02, n = 301), whereas no difference was detected in other generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "bf25a728-3b90-45fe-91ed-15de6610f055",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C69",
+      "claim": "Transitions from exploration to exploitation were equally likely to be initiated by the two birds both overall and within each generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Transitions from exploration to exploitation were equally likely to be initiated by the two birds both overall and within each generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "14f42fbc-60be-4bed-8f1f-25c8a3dba4fc",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C70",
+      "claim": "The na\u00efve individual was more likely to initiate phases of exploration during the first release.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when transitions are considered over the 12 releases composing each generation (Figure 4c), the na\u00efve individual was more likely to initiate phases of exploration during the first release (p<0.01, n = 44, Appendix 1\u2014table 3) doing so 70.5% of the time compared to 29.5% for the experienced bird.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "f3068bd7-e68c-4b56-816c-90602806c1ac",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C71",
+      "claim": "After the first release, transitions that initiate phases of exploration were about as likely to be initiated by either of the two birds independently of their level of experience.",
+      "claim_type": "EXPLICIT",
+      "source": "After the first release, transitions that initiate phases of exploration were about as likely to be initiated by either of the two birds independently of their level of experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "7fbbe4fd-5fff-4bd5-be16-a0872d401212",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C72",
+      "claim": "A pronounced reliance on exploitation of learned information can hinder productive innovations.",
+      "claim_type": "EXPLICIT",
+      "source": "Striking a balance is fundamental as a pronounced reliance on exploitation of learned information can hinder productive innovations (Davies et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "f2847e23-13e7-46c3-acf6-7b298e452d0e",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C73",
+      "claim": "A pronounced reliance on exploitation can promote the maintenance of potentially suboptimal behaviour and even of maladaptive behavioural traditions.",
+      "claim_type": "EXPLICIT",
+      "source": "a pronounced reliance on exploitation of learned information can hinder productive innovations (Davies et al., 2012) and thus promote the maintenance of potentially suboptimal behaviour and even of maladaptive behavioural traditions (Laland and Williams, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "04359c90-e362-4189-b908-98d5e6411508",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C74",
+      "claim": "An over-reliance on exploration without exploiting the rewards of beneficial innovations eventually impedes improvements in performance over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Equally, an over-reliance on exploration without exploiting the rewards of beneficial innovations eventually impedes improvements in performance over time (Fu and Gray, 2006; Mehlhorn et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "023e8edc-e5d3-4e17-853d-7c3573690a52",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C75",
+      "claim": "Homing pigeons are capable of both social learning and information pooling.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied the causal structure of this process in flights of the homing pigeon C. livia as this species is capable of both social learning and information pooling (Biro et al., 2006; Pettit et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "50b5efe1-923b-42e9-8968-d67225ece4ae",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C76",
+      "claim": "An increase in route efficiency results from the pairing of na\u00efve individuals with experienced ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest for our study is the increase in route efficiency that results from the pairing of na\u00efve individuals with experienced ones (Pettit et al., 2013a), including when this happens iteratively over multiple generations (Sasaki and Biro, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "d6cff1a2-295a-4400-8455-990fda7ed14d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C77",
+      "claim": "Over generations, as birds have explored more search space and thus exhausted many alternative routes, a newly introduced bird becomes less likely to contribute productive innovations.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that, over generations, as birds have explored more search space and thus exhausted many alternative routes, a newly introduced bird becomes less likely to contribute productive innovations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "4096a935-7001-43bf-afa3-bc56f7d77628",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C78",
+      "claim": "Innovations can lead to errors instead of improvements in later generations.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, innovations can lead to errors instead of improvements in later generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "745c9462-fa79-48d1-978a-4dcebb1fdc5b",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C79",
+      "claim": "Erroneous innovations could be suppressed by the contributions of the experienced individual that has access to increasingly better information as generations progress.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than leading to additional exploration bouts, these erroneous innovations could be suppressed by the contributions of the experienced individual that, as generations progress, has access to increasingly better information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "4dc4b9a7-4eae-4693-a6ee-eadefcb852b8",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C80",
+      "claim": "After the introduction of a na\u00efve bird, the information-foraging pair shifts over successive releases from information-harvesting exploration back towards information-preserving exploitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, after the introduction of a na\u00efve bird, the information-foraging pair shifts over successive releases from information-harvesting exploration back towards information-preserving exploitation, as would be expected in an optimal search problem (Stone, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data and supported by citation to optimal search theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "309b900b-b770-412a-97ff-3d6441e383de",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C81",
+      "claim": "Over generations, as route information within the pair becomes better, the balance between exploration for route improvement and exploitation of the known route changes in favour of the latter.",
+      "claim_type": "EXPLICIT",
+      "source": "Over generations, as route information within the pair becomes better, the balance between exploration for route improvement and exploitation of the known route changes in favour of the latter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "d5e80f72-da4f-4739-994b-f698a226b668",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C82",
+      "claim": "In pairs with a large difference in experience between birds, experienced individuals were more likely to assume leadership based on route similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies where leadership was defined on the basis of route similarity showed that, in pairs with a large difference in experience between birds, experienced individuals were more likely to assume leadership (Flack et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "7f54a7b3-b44b-47cf-a92b-5b4cc81bf7e5",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C83",
+      "claim": "There is an asymmetric relation between innovators and exploiters only during the initial flight of a newly formed pair.",
+      "claim_type": "EXPLICIT",
+      "source": "However, defining leadership in terms of causal interactions instead of route similarity allowed us to show that there is an asymmetric relation between innovators and exploiters only during the initial flight of a newly formed pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data analysis in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "247c1f34-4b3e-4e31-a054-48b5762004ce",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C84",
+      "claim": "Leadership is ephemeral and equally shared between birds during exploration and exploitation independently of their level of experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Although leadership is ephemeral and equally shared between birds during exploration and exploitation independently of their level of experience",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data analysis in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "8f7b7355-ee27-4c65-bf25-1ad2c5a216bc",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C85",
+      "claim": "Over the course of the first flight, the na\u00efve individual disproportionally initiates phases of exploration, attracting the experienced bird to unfamiliar areas and triggering it to also resume the search.",
+      "claim_type": "EXPLICIT",
+      "source": "over the course of this first flight, the na\u00efve individual disproportionally initiates phases of exploration, attracting the experienced bird to unfamiliar areas and triggering it to also resume the search.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data analysis in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "b42c8ba6-bcb3-4ece-b435-1e6d225a103f",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C86",
+      "claim": "After the first flight, both birds are equally likely to initiate transitions between exploration and exploitation.",
+      "claim_type": "EXPLICIT",
+      "source": "After that, both birds are equally likely to initiate transitions between exploration and exploitation as expected from our fourth hypothesis H4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data analysis in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "0913bea4-5eaa-4f74-ab88-389ab3d1a3c1",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C87",
+      "claim": "The superior performance of experimental pairs is rooted in their complex exploration\u2013exploitation dynamics that allowed them to better cover the search space.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as it is unlikely that experimental pairs were merely better than control groups at evaluating efficiency, we believe that their superior performance is rooted instead in their complex exploration\u2013exploitation dynamics that allowed them to better cover the search space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data and involves some speculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "1bc7a39c-9bd4-4e01-9a0e-2c8a75792bc8",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C88",
+      "claim": "Personally acquired information allows solo individuals to improve flight performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Personally acquired information allows solo individuals to improve flight performance (Meade et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "f247021b-852b-4140-ba82-3ebb3dfc3dab",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C89",
+      "claim": "Solo individuals only discover routes moderately efficient (consistently within 0.8\u20130.85 efficiency across a large number of experiments).",
+      "claim_type": "EXPLICIT",
+      "source": "but only to discover routes moderately efficient (consistently within 0.8\u20130.85 efficiency across a large number of experiments, reviewed in Guilford and Biro, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review of previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "99417dad-a0d3-4dce-b2e0-51bbb344e5bf",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C90",
+      "claim": "Solo individuals rapidly reduce their exploration efforts to seek out novel information.",
+      "claim_type": "EXPLICIT",
+      "source": "but only to discover routes moderately efficient (consistently within 0.8\u20130.85 efficiency across a large number of experiments, reviewed in Guilford and Biro, 2014) because solo individuals rapidly reduce their exploration efforts to seek out novel information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "1539a936-73ea-4a1a-ad3f-6d6a9e208463",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C91",
+      "claim": "Experimental and fixed pairs of birds explore more and thus outperform solo individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental and fixed pairs of birds, on the other hand, explore more and thus outperform solo individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "a0ff732d-6f56-4c57-bcc8-6576543b588d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C92",
+      "claim": "Two birds together have superior sensory and cognitive capacities compared to single birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, two birds have superior sensory and cognitive capacities compared to single birds (Krause et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "6a721572-8426-419d-b31c-84872ed401ca",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C93",
+      "claim": "Superior sensory and cognitive capacities facilitate the discovery of better routes that are then learned collectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, two birds have superior sensory and cognitive capacities compared to single birds (Krause et al., 2010) which facilitates the discovery of better routes that are then learned collectively (Biro et al., 2016; Kao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "b7387bbb-ea94-474f-a674-11c658a83afa",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C94",
+      "claim": "The reasons why pairs explore more than solo individuals might lie partly with the conflicts characteristic of newly formed pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasons why pairs explore more than solo individuals might lie partly with the conflicts characteristic of newly formed pairs (Biro et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "13612bd7-d371-4fbd-b05a-24dd0d158c7f",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C95",
+      "claim": "The resolution of conflict through averaging individual inputs might indirectly prompt pairs to explore more and discover route innovations.",
+      "claim_type": "EXPLICIT",
+      "source": "if the resolution of conflict, for example, through averaging individual inputs, indirectly prompts pairs to explore more and discover route innovations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "bfa4475b-6e61-484a-a336-a88e7ebcac20",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C96",
+      "claim": "The introduction of a na\u00efve individual at the start of each generation repeatedly creates an experience imbalance in the newly formed pair.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of a na\u00efve individual at the start of each generation repeatedly creates an experience imbalance in the newly formed pair, which differs from fixed pairs that undergo a process of mutual habituation as they develop a stable route that likely reduces conflicts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "60376bb4-084f-4c35-8aca-5e118cc61c50",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C97",
+      "claim": "Fixed pairs undergo a process of mutual habituation as they develop a stable route that likely reduces conflicts.",
+      "claim_type": "EXPLICIT",
+      "source": "which differs from fixed pairs that undergo a process of mutual habituation as they develop a stable route that likely reduces conflicts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the behavior of fixed pairs.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "f6a37b8b-d8b5-404e-ae69-d94798872fd5",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C98",
+      "claim": "Experience imbalance could be the source of new conflicts, providing a possible explanation for why experimental pairs reach levels of exploration generally higher than those of fixed pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "This experience imbalance could be the source of new conflicts, providing a possible explanation for why experimental pairs reach levels of exploration generally higher than those of fixed pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the data patterns observed.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "aca64ee0-5920-4d2e-ab86-0868334452e1",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C99",
+      "claim": "The process of gradually settling on a joint route over the course of a generation following the initial perturbation is reminiscent of the transient effects observed when an ant with outside information joins a group of nestmates transporting an object.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of gradually settling on a joint route over the course of a generation following this initial perturbation is also reminiscent of the transient effects observed when an ant with outside information joins a group of nestmates transporting an object; the new information temporarily steers the collective in the right direction, but its effects on collective motion vanish quickly (Gelblum et al., 2015; Gelblum et al., 2016; Gelblum et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy drawn to previous research on ants, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "43dda080-be85-492b-80a8-bbbe1ccf51a2",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C100",
+      "claim": "Averaging individual decisions is expected to provide a more accurate group estimate than any individuals' guess.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging individual decisions is expected to provide a more accurate group estimate than any individuals' guess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the wisdom of crowds.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "b0bc6680-08de-417d-b920-b298a64dc3dd",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C101",
+      "claim": "Animals can average their movement decisions to reach a compromise.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have also shown that animals can average their movement decisions to reach a compromise (Biro et al., 2006; Strandburg-Peshkin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "9f218ca2-58b8-4198-832e-df2557e93768",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C102",
+      "claim": "The wisdom of crowds requires personal information to be independent among group members.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the wisdom of crowds is known to require personal information to be independent among group members (Couzin, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "5174b1cb-c043-4967-a221-ec5e3bdbd7b5",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C103",
+      "claim": "Group performance can degrade quickly for increasing group size when personal information is not independent.",
+      "claim_type": "EXPLICIT",
+      "source": "otherwise, group performance can degrade quickly for increasing group size (Kao and Couzin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "6728a0de-e5f8-419e-8616-669aac7ce985",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C104",
+      "claim": "Experimental pairs could benefit from pooling information with na\u00efve individuals that likely provide a source of information independent from that of the experienced bird at the beginning of each generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental pairs could thus benefit from pooling information with na\u00efve individuals that, at least at the beginning of each generation, likely provide a source of information independent from that of the experienced bird.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the wisdom of crowds principle and the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "1ebdd352-2c8a-4455-8bf2-125b66ae6bc7",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C105",
+      "claim": "The potentially deleterious effects of losing independence may provide another pressure to shift over time from innovative exploration to route-preserving exploitation.",
+      "claim_type": "EXPLICIT",
+      "source": "The potentially deleterious effects of losing independence may provide another pressure to shift over time from innovative exploration to route-preserving exploitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "7a8ac71a-e82c-459f-aefa-eb5730701d70",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C106",
+      "claim": "In larger flocks, birds flying ahead of the flock had a tendency to assume leadership positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experiments without generational replacement showed that, even in larger flocks, birds flying ahead of the flock had a tendency to assume leadership positions (Nagy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "3be356ee-1c79-4546-a0ef-dbc35c266e58",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C107",
+      "claim": "The repeated introduction of na\u00efve individuals into larger flocks might complicate the dichotomy between leaders and followers by inducing turnover dynamics between the front and the back of the flock.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the repeated introduction of na\u00efve individuals into larger flocks might complicate the dichotomy between leaders and followers by inducing turnover dynamics between the front and the back of the flock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about how results might generalize to larger groups.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "b9c7674e-6225-4ff4-a723-32f06f18225c",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C108",
+      "claim": "Data were taken from a previous study on cumulative route development in the homing pigeon C. livia.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were taken from a previous study on cumulative route development in the homing pigeon C. livia (Sasaki and Biro, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the data used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "45fb970d-eef4-4711-8bb4-95dc6b514b9f",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C109",
+      "claim": "Birds flying at an average linear distance greater than 250 m from each other were not considered as pairs and were excluded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Birds flying at an average linear distance greater than 250 m from each other were not considered as pairs and were thus excluded from the analysis, leaving 343 flights with a mean \u00b1 SD flight duration of 8.65 \u00b1 1.33 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering criteria used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "0b37aff2-3bef-4dec-9efb-ebcd220e25f6",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C110",
+      "claim": "343 flights were included in the analysis with a mean \u00b1 SD flight duration of 8.65 \u00b1 1.33 min.",
+      "claim_type": "EXPLICIT",
+      "source": "leaving 343 flights with a mean \u00b1 SD flight duration of 8.65 \u00b1 1.33 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific data about the sample size and flight durations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "45a7c7bf-2958-49fa-9d02-1b7a07932b6a",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C111",
+      "claim": "In two control conditions, nine solo birds and six pairs were released from the same site for a total of 60 releases.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in two control conditions, nine solo birds and six pairs (all initially na\u00efve) were released from the same site for a total of 60 releases (the equivalent of 5 \u00d7 12 releases for the transmission chains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control conditions in the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "ca5af418-da5f-480e-800a-d1504a1e39da",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C112",
+      "claim": "Flight trajectories of birds were sampled at a frequency of 5 Hz using GPS loggers.",
+      "claim_type": "EXPLICIT",
+      "source": "Flight trajectories of birds were sampled at a frequency of 5 Hz using GPS loggers, converted from the geographic coordinate system to the metric system, and projected over the two-dimensional plane (see Sasaki and Biro, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "f89a9119-d211-431f-aaf7-6be00f51d29d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C113",
+      "claim": "The GPS loggers have a sufficient level of accuracy with a small normally distributed spatial error (SD of 0.05 m) affecting the tracking accuracy of the direction of motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous tests using the same GPS loggers showed that these devices have a sufficient level of accuracy with a small normally distributed spatial error (SD of 0.05 m) affecting the tracking accuracy of the direction of motion and a relatively larger error (median of 1.69 m) affecting that of the relative position (Pettit et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous validation work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "7ccdfa00-32b4-41d2-915b-0c166216f5c9",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C114",
+      "claim": "The GPS loggers have a relatively larger error (median of 1.69 m) affecting the tracking accuracy of relative position.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous tests using the same GPS loggers showed that these devices have a sufficient level of accuracy with a small normally distributed spatial error (SD of 0.05 m) affecting the tracking accuracy of the direction of motion and a relatively larger error (median of 1.69 m) affecting that of the relative position (Pettit et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous validation work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "cb42eb5d-e50d-4402-b837-8743b8c4a99d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C115",
+      "claim": "Experienced and na\u00efve birds flew at an average distance from each other of 8.74 m with a standard deviation of 38.54 m.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, experienced and na\u00efve birds flew at an average distance from each other of 8.74 m with a standard deviation of 38.54 m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific data about the spatial separation between birds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "7003facb-c7ac-48ec-88c9-06089399b036",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C116",
+      "claim": "The parameter configuration that maximized the total transfer of information between the two birds was one sample every 0.2 s with a history length of 10 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As is common practice with these measures (Porfiri, 2018), we selected the parameter configuration that maximized the total transfer of information between the two birds (one sample every 0.2 s, history length of 10 samples).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological choice for parameter selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "90fc3ba5-9178-4843-bed0-d19933f2e513",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C117",
+      "claim": "The maximal transfer of information was observed for the shortest sampling period of 0.2 s and progressively decreased towards 0 for larger periods up to 4 s.",
+      "claim_type": "EXPLICIT",
+      "source": "This was maximal for the shortest sampling period (i.e., prediction interval) of 0.2 s and progressively decreased towards 0 for larger periods up to 4 s, indicating that the effect of an interaction between birds was transitory and lasted for a limited period of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of parameter exploration and provides data about the temporal dynamics of interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "a68a86b1-3f2e-43c4-85a5-9434bd169611",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C118",
+      "claim": "The effect of an interaction between birds was transitory and lasted for a limited period of time.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that the effect of an interaction between birds was transitory and lasted for a limited period of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data on how transfer entropy varies with sampling period.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "ff8d8d82-94d4-49a5-81bc-5d2e7a896fdd",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C119",
+      "claim": "Once established, the bird largely remained within a point-to-point distance of 300 m from its idiosyncratic route.",
+      "claim_type": "EXPLICIT",
+      "source": "For each point in a focal trajectory, we determined the point-to-point distance to a baseline trajectory as the minimum distance from the focal point to its closest point in the baseline trajectory. Using this measure, pairwise analysis of successive routes from the last three flights of the experienced bird during training (generation 1) showed that, once established, the bird largely remained within a point-to-point distance of 300 m from its idiosyncratic route (Appendix 1\u2014figure 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis shown in Appendix 1\u2014figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "7fbe1544-89b1-4e23-ac2a-7cbe54e4de07",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "claim_id": "C120",
+      "claim": "300 m was used as a threshold to group points from a focal route into flight segments differentiated between those exploring new solutions and those exploiting known ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we used 300 m as a threshold to group points from a focal route into flight segments differentiated between those exploring new solutions and those exploiting known ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological choice for defining exploration vs exploitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1c46bc0b-6fc1-4241-95d9-fc60a7e70728",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Birds in transmission-chain pairs exhibit bidirectional information transfer with changing dynamics across generations. In early generations (1-2), na\u00efve birds exert stronger influence over experienced birds, but this relationship shifts such that by generation 5, experienced birds become the better source of predictive information. Transfer entropy analysis shows both birds explain substantial portions (18-21%) of each other's behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 collectively demonstrate bidirectional information pooling using transfer entropy analysis with appropriate statistical controls (surrogate dataset comparison). The temporal progression of influence patterns across generations is well-documented with statistical support (Theil-Sen estimator, p<0.001 for C41), and the data are visualized in Figure 2. The methods for computing transfer entropy are described in detail with appropriate parameter selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "49a0cc84-f53a-4cb4-8e1f-633d70975401",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spatial position predicts moment-to-moment leadership, with the bird flying ahead (within 30m) being consistently more informative. Despite this, leadership is ephemeral and approximately equally shared between experienced and na\u00efve birds, with both spending similar proportions of time at the front (except generation 3 where na\u00efve birds led 54% of the time). Leadership durations follow a log-normal distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C52 establish the relationship between spatial position and information transfer using spatiotemporal transfer entropy analysis (C45, Figure 3b). Statistical tests support equal leadership distribution (C50-C51, Appendix tables 2-3) with appropriate corrections for the generation 3 exception. The log-normal distribution finding (C48) is supported by supplementary analysis, though the small effect size (0.3s difference, C49) appropriately qualifies the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "dc22e0e3-2547-4953-a529-b890abc2411d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Experimental transmission-chain pairs exhibit oscillating exploration patterns across generations, with exploration spiking (5-6 releases) when new na\u00efve birds are introduced, then declining to fixed-pair levels within 2-4 releases. During generations 2-5, experimental pairs explored significantly more (32.9%) than solo birds (15.7%, p<0.001) and fixed pairs (29.3%, p=0.0456).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61 describe exploration dynamics with strong statistical support and visualization in Figure 4a. The 300m threshold for defining exploration vs exploitation is empirically justified (C119-C120, Appendix figure 3a). Statistical comparisons across treatments use appropriate tests (Whitney-Mann-Wilcoxon) with reported p-values and sample sizes. The oscillating pattern is clearly distinct from the monotonic decline in controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "24783227-2ed8-47c3-9075-36a8ef69fde0",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both experienced and na\u00efve birds contribute approximately equally to exploration and exploitation throughout most of the experiment, with the exception that na\u00efve birds disproportionately initiate exploration during the first release of each generation (70.5% vs 29.5%, p<0.01). After the first release, both birds are equally likely to initiate transitions between exploration and exploitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C71 demonstrate equal contributions to exploration/exploitation with appropriate statistical testing (Figure 4b-c, Appendix table 1). The first-release asymmetry (C70) is well-supported statistically (p<0.01, n=44), and the analysis appropriately distinguishes this from subsequent releases (C71). The generation 3 exception (C64, C68) is noted with statistical support but correctly identified as not generalizing to other generations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "f67568f9-765e-4ca7-821b-c69c2de17f6d",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Newly introduced na\u00efve individuals are initially more likely to initiate exploration than experienced birds, but pairs soon settle into alternating leadership patterns with equal contributions. This oscillating exploration pattern over generations may facilitate discovery of more efficient routes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 summarize key findings supported by detailed analyses in C70-C71 (first release asymmetry) and C63-C69 (equal contributions thereafter). The oscillating pattern (C4) is documented in C54-C61 with statistical support. However, C4's mechanistic claim ('might facilitate') is appropriately qualified as speculative, though the correlation with superior performance is established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "5e83cce9-a3de-4894-a07b-0e192b8c1a45",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The superior flight efficiency of experimental pairs compared to solo and fixed-pair controls is attributed to their complex exploration-exploitation dynamics that allow better coverage of the search space, rather than merely better evaluation of route efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62, C87, and C91 propose a mechanistic explanation for performance differences, but this involves substantial inference and speculation (noted in evidence_type). While the correlation between increased exploration and better performance is established (C61, C91), the causal claim that exploration differences explain efficiency differences is not directly tested. Alternative explanations (e.g., information pooling quality, conflict resolution) are not ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "06b4f4a6-e6f6-48c3-862b-328cea2cb3aa",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors hypothesize that over generations, as more search space is explored, newly introduced na\u00efve birds become less likely to contribute productive innovations, with erroneous innovations suppressed by experienced birds' increasingly better information. This drives a shift from exploration to exploitation within each generation, analogous to optimal foraging theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C81 present a theoretical framework to explain the observed patterns, but these are explicitly speculative (C77-C79 marked as SPECULATION). While the shift from exploration to exploitation is empirically documented (C59-C60, C80-C81), the proposed mechanism about innovation quality declining over generations is not directly tested. The analogy to optimal search theory (C80) is conceptually reasonable but lacks empirical validation of the underlying assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "c91a15dd-e3b3-44b2-93fc-79a23fca9c61",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that experience imbalance created by introducing na\u00efve birds generates conflicts that prompt increased exploration in experimental pairs compared to fixed pairs, which undergo mutual habituation that reduces conflicts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C98 offer a conflict-based explanation for exploration differences, but this is largely speculative (C94-C95, C97-C98 marked as SPECULATION). While the experience imbalance is a logical consequence of the experimental design (C96), the proposed mechanisms involving conflict generation and resolution are not directly measured or tested. The hypothesis is plausible given prior work on pigeon conflict (C94 cites Biro et al. 2006), but requires empirical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "c9e1ea3a-8918-48d8-aac2-7bbf43767712",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Experimental pairs may benefit from wisdom-of-crowds effects by pooling independent information from na\u00efve individuals at the beginning of each generation, with loss of independence over time providing additional pressure to shift from exploration to exploitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C105 invoke wisdom-of-crowds principles supported by prior literature (C100-C103), but the application to this system is speculative (C104-C105 marked as SPECULATION). The independence of na\u00efve bird information is assumed but not empirically verified. The hypothesis is theoretically grounded but would require direct measurement of information independence and its effects on performance to be considered supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "c38f29af-0907-4378-8f7c-2c12cc0fd039",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Transfer entropy is used to quantify directional information transfer between birds, accounting for autocorrelations by discounting predictive information already in the receiver's past. Parameter optimization identified 0.2s sampling with 10-sample history as maximizing information transfer, with effects being transitory (declining to zero by 4s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 establish the theoretical basis for transfer entropy with appropriate citations (Schreiber 2000, Lizier & Prokopenko 2010). Claims C116-C118 describe the parameter selection methodology following standard practices (Porfiri 2018) and document the temporal dynamics of interactions. The approach is methodologically sound, though the choice to maximize total information transfer (C116) could potentially bias toward certain interaction patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "30e4c7b3-149d-44d2-8673-398de99e307f",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study reanalyzes data from Sasaki & Biro (2017) consisting of 343 paired flights (mean duration 8.65\u00b11.33 min) from 10 transmission chains over 5 generations, plus control conditions with 9 solo birds and 6 fixed pairs. GPS tracking at 5Hz had spatial errors of SD=0.05m for direction and median=1.69m for position, with birds flying at mean distance 8.74\u00b138.54m apart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C115 describe the data source and collection methods with appropriate detail. The exclusion criterion (>250m separation, C109) is clearly stated. GPS accuracy is documented from prior validation work (C113-C114, Pettit et al. 2013b). Sample sizes and descriptive statistics are provided (C110, C111, C115). The reanalysis approach is transparent and the data characteristics are adequately described for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "ac51e70a-3b1d-4b60-97f4-f8a7dad73deb",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A 300m threshold was established to distinguish exploration (>300m from previous route) from exploitation (<300m) based on analysis showing experienced birds largely remained within 300m of their established idiosyncratic routes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119-C120 describe the empirical justification for the exploration/exploitation threshold using data from the last three training flights (Appendix figure 3a). The threshold is data-driven rather than arbitrary. However, the choice to use the last three flights specifically is not justified, and sensitivity analysis to different threshold values is not reported, which would strengthen confidence in the robustness of findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "138a2ab3-02fd-44e1-b4ef-62bad97b5c77",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Sasaki & Biro (2017) transmission-chain experiment involved pairs of experienced and na\u00efve birds completing 12 releases per generation, with the experienced bird replaced by a new na\u00efve bird each generation for 5 generations across 10 independent chains. Transmission-chain pairs improved to 0.92 efficiency, outperforming solo (0.83) and fixed-pair (0.85) controls that plateaued after establishing routes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 accurately describe the prior experimental design and key findings from Sasaki & Biro (2017). The efficiency values are specific and the performance differences are clearly stated. These claims establish the empirical foundation for the current reanalysis. The description is consistent with standard transmission-chain methodology and the results are taken from the cited source.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "a6121841-795b-4573-8b83-3ab014b52072",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Using causal interaction analysis rather than route similarity reveals that asymmetric leadership between innovators and exploiters occurs only during the initial flight of newly formed pairs. Subsequently, leadership is ephemeral and equally shared during both exploration and exploitation, with na\u00efve birds disproportionately initiating exploration in the first flight but both birds equally likely to initiate transitions thereafter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 contrast findings from causal analysis (this study) with prior route-similarity approaches (C82), demonstrating methodological advancement. The claims are well-supported by the detailed analyses in C70-C71 (first flight asymmetry) and C63-C69 (subsequent equal contributions). This represents a key insight enabled by the information-theoretic approach and is appropriately distinguished from prior interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "a740c01a-5fe3-4b30-811c-00cd7de5909b",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Group-living animals can develop behavioral traditions for route information transmission across generations. Collective motion provides benefits including increased sensory/cognitive capacity and social information for navigation, with accumulated knowledge enhancing problem-solving ability and new member diversity improving behavioral solutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C10 establish the broader context for the study with appropriate citations to established literature. These are well-accepted principles in collective behavior and social learning research. The claims accurately represent prior knowledge and provide appropriate framing for the specific research questions addressed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "2d6498f0-61c5-4526-8683-7be1ee18a884",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Homing pigeons develop stable idiosyncratic routes using visual landmarks through gradual learning involving exploration then convergence. Route information can be transmitted via social learning and modified through information pooling, with learning improving efficiency but typically plateauing. However, introducing na\u00efve individuals to experienced birds resumes exploratory behavior and further improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17 accurately summarize established knowledge about pigeon navigation and social learning with appropriate citations (Meade et al. 2005, Biro et al. 2004, 2006, Pettit et al. 2013a, Sasaki & Biro 2017). These claims establish the specific biological system and prior findings that motivate the current analysis. The characterization of prior work is accurate and provides essential context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "16a733bc-c952-4c97-b20f-987f97e9d046",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Leadership dynamics in pigeon pairs are influenced by route fidelity, flight speed, personality, and experience level. Equally experienced birds compromise by averaging routes under low conflict, but high conflict leads to pair splitting or single-leader emergence. Spatial position correlates with influence, with front-flying birds having stronger directional influence, though experience alone cannot fully recover larger-flock leadership structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 accurately characterize prior research on pigeon leadership with appropriate citations (Freeman et al. 2011, Pettit et al. 2015, Sasaki et al. 2018, Flack et al. 2012, Biro et al. 2006, Watts et al. 2016, Nagy et al. 2010, Pettit et al. 2013b). These establish the state of knowledge about leadership mechanisms and set up the rationale for using information-theoretic approaches to gain finer-grained insights.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "cca58f4c-6d74-46b9-aa33-64eb1111da3f",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Balancing exploration and exploitation is fundamental because over-reliance on exploitation hinders innovation and can maintain suboptimal or maladaptive traditions, while over-reliance on exploration without exploiting beneficial innovations impedes performance improvement over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 establish the theoretical importance of the exploration-exploitation trade-off with appropriate citations (Davies et al. 2012, Laland & Williams 1998, Fu & Gray 2006, Mehlhorn et al. 2015). These are well-established principles in behavioral ecology and learning theory that provide the conceptual framework for interpreting the empirical findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "d99dea68-0c6f-4c9e-a4a0-56e1141c0d71",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Solo pigeons improve performance through personal information but plateau at moderate efficiency (0.8-0.85) due to rapidly reduced exploration. Pairs explore more and outperform solo birds because two birds have superior sensory/cognitive capacities that facilitate discovering and collectively learning better routes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C93 synthesize prior findings about solo vs. paired performance with appropriate citations (Meade et al. 2005, Guilford & Biro 2014 review, Krause et al. 2010, Biro et al. 2016, Kao et al. 2014). The efficiency values for solo birds (C89) are well-established across multiple studies. These claims provide important comparative context for understanding why experimental pairs outperform both solo and fixed pairs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "63bb0baf-b4a6-46d7-9d82-4beee4586ef8",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The process of gradually settling on a joint route following introduction of a na\u00efve bird is analogous to transient effects in ant collectives, where new information temporarily influences collective motion but effects vanish quickly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 draws an analogy to ant collective transport with appropriate citations (Gelblum et al. 2015, 2016, 2020). While this is a cross-species comparison and involves some inference, the analogy is reasonable given the documented transient nature of na\u00efve bird influence (C59-C60, C117-C118) and the cited ant studies. The comparison provides useful theoretical context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "3c18f549-7971-4ccf-9ab3-2befac7adbb9",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Homing pigeons are capable of both social learning and information pooling, with route efficiency increasing when na\u00efve individuals are paired with experienced ones, including iteratively over multiple generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 establish the rationale for studying pigeons with appropriate citations (Biro et al. 2006, Pettit et al. 2013a, Sasaki & Biro 2017). These accurately characterize the species' capabilities and the specific phenomenon of interest. The claims provide direct justification for the model system choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    },
+    {
+      "id": "a696504b-df2c-4967-af16-90686430694c",
+      "content_id": "143f190b-f8bc-437e-b46e-ecb546f1016d",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "In larger flocks, birds flying ahead tend to assume leadership positions, but repeated introduction of na\u00efve individuals might complicate the leader-follower dichotomy by inducing turnover dynamics between front and back positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C106 accurately cites prior work on larger flocks (Nagy et al. 2010), but C107 is speculative about how findings might generalize to larger groups. The speculation is reasonable given the pair-level findings, but the study only examined pairs, so extrapolation to larger flocks is uncertain. This appropriately identifies an important direction for future research but cannot be considered supported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:42:15.705196Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b69596f1-fedc-4581-8c1a-6a290ee5828c",
+      "result_id": "1c46bc0b-6fc1-4241-95d9-fc60a7e70728"
+    },
+    {
+      "claim_id": "01c807e6-aeec-4f59-8086-a483fc40297a",
+      "result_id": "1c46bc0b-6fc1-4241-95d9-fc60a7e70728"
+    },
+    {
+      "claim_id": "df8d5701-8a37-45c8-bc2b-0dabab2d1474",
+      "result_id": "1c46bc0b-6fc1-4241-95d9-fc60a7e70728"
+    },
+    {
+      "claim_id": "f86c9982-84ad-49eb-af6e-dcf09ad6e7d9",
+      "result_id": "1c46bc0b-6fc1-4241-95d9-fc60a7e70728"
+    },
+    {
+      "claim_id": "64dc50d1-dd21-4038-b231-4edaf632e40e",
+      "result_id": "1c46bc0b-6fc1-4241-95d9-fc60a7e70728"
+    },
+    {
+      "claim_id": "1f3df114-9aa0-4f6b-9a08-810cdef0f0c5",
+      "result_id": "1c46bc0b-6fc1-4241-95d9-fc60a7e70728"
+    },
+    {
+      "claim_id": "1d1490c1-ea7f-46b5-a7c3-3a90ab417aa1",
+      "result_id": "1c46bc0b-6fc1-4241-95d9-fc60a7e70728"
+    },
+    {
+      "claim_id": "c41796ed-74b2-47db-b7bc-a3e4f4ea367d",
+      "result_id": "49a0cc84-f53a-4cb4-8e1f-633d70975401"
+    },
+    {
+      "claim_id": "5d0b710c-6730-48a0-afc5-9ffed12818ce",
+      "result_id": "49a0cc84-f53a-4cb4-8e1f-633d70975401"
+    },
+    {
+      "claim_id": "0b598b91-6b78-4e2d-bbf3-d01c77103a37",
+      "result_id": "49a0cc84-f53a-4cb4-8e1f-633d70975401"
+    },
+    {
+      "claim_id": "6074a15f-d13a-476f-99ab-feac30dce20e",
+      "result_id": "49a0cc84-f53a-4cb4-8e1f-633d70975401"
+    },
+    {
+      "claim_id": "cf82e5bb-d471-48ae-9852-2c317d609df0",
+      "result_id": "49a0cc84-f53a-4cb4-8e1f-633d70975401"
+    },
+    {
+      "claim_id": "bd8b2b12-839f-456f-ad48-25b016221de1",
+      "result_id": "49a0cc84-f53a-4cb4-8e1f-633d70975401"
+    },
+    {
+      "claim_id": "a8017023-d4c7-40d3-8603-8dffe9d0ec43",
+      "result_id": "49a0cc84-f53a-4cb4-8e1f-633d70975401"
+    },
+    {
+      "claim_id": "40833f4b-616b-462c-8b99-e9bb3018c34b",
+      "result_id": "49a0cc84-f53a-4cb4-8e1f-633d70975401"
+    },
+    {
+      "claim_id": "3bab1c05-903c-411c-bb98-fa332627570d",
+      "result_id": "49a0cc84-f53a-4cb4-8e1f-633d70975401"
+    },
+    {
+      "claim_id": "ec2d025d-094c-4981-8a58-21b77b74410a",
+      "result_id": "dc22e0e3-2547-4953-a529-b890abc2411d"
+    },
+    {
+      "claim_id": "3adcf888-dca2-4a4f-8424-b49817a256be",
+      "result_id": "dc22e0e3-2547-4953-a529-b890abc2411d"
+    },
+    {
+      "claim_id": "26db42c4-928e-4223-8f34-ac07c7c7256e",
+      "result_id": "dc22e0e3-2547-4953-a529-b890abc2411d"
+    },
+    {
+      "claim_id": "62eaeed5-a7fb-442c-9d2b-9d3d0a576d0f",
+      "result_id": "dc22e0e3-2547-4953-a529-b890abc2411d"
+    },
+    {
+      "claim_id": "c0b43832-ed36-4210-b09a-5facf8b4bc4b",
+      "result_id": "dc22e0e3-2547-4953-a529-b890abc2411d"
+    },
+    {
+      "claim_id": "a3e69b86-d181-4299-9a09-07eccb18052d",
+      "result_id": "dc22e0e3-2547-4953-a529-b890abc2411d"
+    },
+    {
+      "claim_id": "858306aa-36a2-4ba5-8924-90fa7e472f89",
+      "result_id": "dc22e0e3-2547-4953-a529-b890abc2411d"
+    },
+    {
+      "claim_id": "69e1ba32-cad7-4cc6-96dd-7cd5b34dc5a9",
+      "result_id": "dc22e0e3-2547-4953-a529-b890abc2411d"
+    },
+    {
+      "claim_id": "df19abb9-4457-4bd2-9fca-315ec9d86a45",
+      "result_id": "24783227-2ed8-47c3-9075-36a8ef69fde0"
+    },
+    {
+      "claim_id": "c501990e-ffc8-4d2e-a67a-78ea8f2ddcb3",
+      "result_id": "24783227-2ed8-47c3-9075-36a8ef69fde0"
+    },
+    {
+      "claim_id": "c9a47bbf-c303-4f6d-a83a-742f181137b7",
+      "result_id": "24783227-2ed8-47c3-9075-36a8ef69fde0"
+    },
+    {
+      "claim_id": "b8c37d40-9470-470a-aa7e-ad1c83af493a",
+      "result_id": "24783227-2ed8-47c3-9075-36a8ef69fde0"
+    },
+    {
+      "claim_id": "8863a8fd-bae2-4621-9f92-7780f9afd3ec",
+      "result_id": "24783227-2ed8-47c3-9075-36a8ef69fde0"
+    },
+    {
+      "claim_id": "f180478e-a1c5-4465-a000-a91e3fb1fb56",
+      "result_id": "24783227-2ed8-47c3-9075-36a8ef69fde0"
+    },
+    {
+      "claim_id": "bf25a728-3b90-45fe-91ed-15de6610f055",
+      "result_id": "24783227-2ed8-47c3-9075-36a8ef69fde0"
+    },
+    {
+      "claim_id": "14f42fbc-60be-4bed-8f1f-25c8a3dba4fc",
+      "result_id": "24783227-2ed8-47c3-9075-36a8ef69fde0"
+    },
+    {
+      "claim_id": "f3068bd7-e68c-4b56-816c-90602806c1ac",
+      "result_id": "24783227-2ed8-47c3-9075-36a8ef69fde0"
+    },
+    {
+      "claim_id": "75280338-4ac2-4625-b18a-cd63db53c151",
+      "result_id": "f67568f9-765e-4ca7-821b-c69c2de17f6d"
+    },
+    {
+      "claim_id": "af238312-4214-4f2a-ab55-236903a9480d",
+      "result_id": "f67568f9-765e-4ca7-821b-c69c2de17f6d"
+    },
+    {
+      "claim_id": "83e95040-3147-4520-b20e-1de514593f9b",
+      "result_id": "f67568f9-765e-4ca7-821b-c69c2de17f6d"
+    },
+    {
+      "claim_id": "122d7378-4c11-4ba8-a955-35742fe4eb7f",
+      "result_id": "5e83cce9-a3de-4894-a07b-0e192b8c1a45"
+    },
+    {
+      "claim_id": "0913bea4-5eaa-4f74-ab88-389ab3d1a3c1",
+      "result_id": "5e83cce9-a3de-4894-a07b-0e192b8c1a45"
+    },
+    {
+      "claim_id": "1539a936-73ea-4a1a-ad3f-6d6a9e208463",
+      "result_id": "5e83cce9-a3de-4894-a07b-0e192b8c1a45"
+    },
+    {
+      "claim_id": "d6cff1a2-295a-4400-8455-990fda7ed14d",
+      "result_id": "06b4f4a6-e6f6-48c3-862b-328cea2cb3aa"
+    },
+    {
+      "claim_id": "4096a935-7001-43bf-afa3-bc56f7d77628",
+      "result_id": "06b4f4a6-e6f6-48c3-862b-328cea2cb3aa"
+    },
+    {
+      "claim_id": "745c9462-fa79-48d1-978a-4dcebb1fdc5b",
+      "result_id": "06b4f4a6-e6f6-48c3-862b-328cea2cb3aa"
+    },
+    {
+      "claim_id": "4dc4b9a7-4eae-4693-a6ee-eadefcb852b8",
+      "result_id": "06b4f4a6-e6f6-48c3-862b-328cea2cb3aa"
+    },
+    {
+      "claim_id": "309b900b-b770-412a-97ff-3d6441e383de",
+      "result_id": "06b4f4a6-e6f6-48c3-862b-328cea2cb3aa"
+    },
+    {
+      "claim_id": "b7387bbb-ea94-474f-a674-11c658a83afa",
+      "result_id": "c91a15dd-e3b3-44b2-93fc-79a23fca9c61"
+    },
+    {
+      "claim_id": "13612bd7-d371-4fbd-b05a-24dd0d158c7f",
+      "result_id": "c91a15dd-e3b3-44b2-93fc-79a23fca9c61"
+    },
+    {
+      "claim_id": "bfa4475b-6e61-484a-a336-a88e7ebcac20",
+      "result_id": "c91a15dd-e3b3-44b2-93fc-79a23fca9c61"
+    },
+    {
+      "claim_id": "60376bb4-084f-4c35-8aca-5e118cc61c50",
+      "result_id": "c91a15dd-e3b3-44b2-93fc-79a23fca9c61"
+    },
+    {
+      "claim_id": "f6a37b8b-d8b5-404e-ae69-d94798872fd5",
+      "result_id": "c91a15dd-e3b3-44b2-93fc-79a23fca9c61"
+    },
+    {
+      "claim_id": "43dda080-be85-492b-80a8-bbbe1ccf51a2",
+      "result_id": "c9e1ea3a-8918-48d8-aac2-7bbf43767712"
+    },
+    {
+      "claim_id": "b0bc6680-08de-417d-b920-b298a64dc3dd",
+      "result_id": "c9e1ea3a-8918-48d8-aac2-7bbf43767712"
+    },
+    {
+      "claim_id": "9f218ca2-58b8-4198-832e-df2557e93768",
+      "result_id": "c9e1ea3a-8918-48d8-aac2-7bbf43767712"
+    },
+    {
+      "claim_id": "5174b1cb-c043-4967-a221-ec5e3bdbd7b5",
+      "result_id": "c9e1ea3a-8918-48d8-aac2-7bbf43767712"
+    },
+    {
+      "claim_id": "6728a0de-e5f8-419e-8616-669aac7ce985",
+      "result_id": "c9e1ea3a-8918-48d8-aac2-7bbf43767712"
+    },
+    {
+      "claim_id": "1ebdd352-2c8a-4455-8bf2-125b66ae6bc7",
+      "result_id": "c9e1ea3a-8918-48d8-aac2-7bbf43767712"
+    },
+    {
+      "claim_id": "6e581a83-8558-42f4-b1d2-6a876bae8ad6",
+      "result_id": "c38f29af-0907-4378-8f7c-2c12cc0fd039"
+    },
+    {
+      "claim_id": "ef05363c-5c1e-4ee5-b6e0-bdd9020df473",
+      "result_id": "c38f29af-0907-4378-8f7c-2c12cc0fd039"
+    },
+    {
+      "claim_id": "0f6fef02-22b6-4a82-8a60-930e67645fc1",
+      "result_id": "c38f29af-0907-4378-8f7c-2c12cc0fd039"
+    },
+    {
+      "claim_id": "2c3b87d8-1156-4bd9-96de-5707f36297b5",
+      "result_id": "c38f29af-0907-4378-8f7c-2c12cc0fd039"
+    },
+    {
+      "claim_id": "7003facb-c7ac-48ec-88c9-06089399b036",
+      "result_id": "c38f29af-0907-4378-8f7c-2c12cc0fd039"
+    },
+    {
+      "claim_id": "90fc3ba5-9178-4843-bed0-d19933f2e513",
+      "result_id": "c38f29af-0907-4378-8f7c-2c12cc0fd039"
+    },
+    {
+      "claim_id": "a68a86b1-3f2e-43c4-85a5-9434bd169611",
+      "result_id": "c38f29af-0907-4378-8f7c-2c12cc0fd039"
+    },
+    {
+      "claim_id": "b9c7674e-6225-4ff4-a723-32f06f18225c",
+      "result_id": "30e4c7b3-149d-44d2-8673-398de99e307f"
+    },
+    {
+      "claim_id": "45fb970d-eef4-4711-8bb4-95dc6b514b9f",
+      "result_id": "30e4c7b3-149d-44d2-8673-398de99e307f"
+    },
+    {
+      "claim_id": "0b37aff2-3bef-4dec-9efb-ebcd220e25f6",
+      "result_id": "30e4c7b3-149d-44d2-8673-398de99e307f"
+    },
+    {
+      "claim_id": "45a7c7bf-2958-49fa-9d02-1b7a07932b6a",
+      "result_id": "30e4c7b3-149d-44d2-8673-398de99e307f"
+    },
+    {
+      "claim_id": "ca5af418-da5f-480e-800a-d1504a1e39da",
+      "result_id": "30e4c7b3-149d-44d2-8673-398de99e307f"
+    },
+    {
+      "claim_id": "f89a9119-d211-431f-aaf7-6be00f51d29d",
+      "result_id": "30e4c7b3-149d-44d2-8673-398de99e307f"
+    },
+    {
+      "claim_id": "7ccdfa00-32b4-41d2-915b-0c166216f5c9",
+      "result_id": "30e4c7b3-149d-44d2-8673-398de99e307f"
+    },
+    {
+      "claim_id": "cb42eb5d-e50d-4402-b837-8743b8c4a99d",
+      "result_id": "30e4c7b3-149d-44d2-8673-398de99e307f"
+    },
+    {
+      "claim_id": "ff8d8d82-94d4-49a5-81bc-5d2e7a896fdd",
+      "result_id": "ac51e70a-3b1d-4b60-97f4-f8a7dad73deb"
+    },
+    {
+      "claim_id": "7fbe1544-89b1-4e23-ac2a-7cbe54e4de07",
+      "result_id": "ac51e70a-3b1d-4b60-97f4-f8a7dad73deb"
+    },
+    {
+      "claim_id": "31eb768c-057a-45be-a7dc-55dbfa9d67b2",
+      "result_id": "138a2ab3-02fd-44e1-b4ef-62bad97b5c77"
+    },
+    {
+      "claim_id": "51c75d08-71a5-4a87-a665-678acb67c8a8",
+      "result_id": "138a2ab3-02fd-44e1-b4ef-62bad97b5c77"
+    },
+    {
+      "claim_id": "94f244dc-f884-4c4f-99d8-3f97720a354e",
+      "result_id": "138a2ab3-02fd-44e1-b4ef-62bad97b5c77"
+    },
+    {
+      "claim_id": "9f1fb9f3-060d-4d49-ad87-ffdaea2bca43",
+      "result_id": "138a2ab3-02fd-44e1-b4ef-62bad97b5c77"
+    },
+    {
+      "claim_id": "0e4a4407-0ac0-403d-9f92-449267517a3d",
+      "result_id": "138a2ab3-02fd-44e1-b4ef-62bad97b5c77"
+    },
+    {
+      "claim_id": "b7c29512-60a0-45ae-ab64-03b37adf5f3d",
+      "result_id": "138a2ab3-02fd-44e1-b4ef-62bad97b5c77"
+    },
+    {
+      "claim_id": "d18008a0-d6ef-4a66-8c75-84e96ee5934b",
+      "result_id": "138a2ab3-02fd-44e1-b4ef-62bad97b5c77"
+    },
+    {
+      "claim_id": "7f54a7b3-b44b-47cf-a92b-5b4cc81bf7e5",
+      "result_id": "a6121841-795b-4573-8b83-3ab014b52072"
+    },
+    {
+      "claim_id": "247c1f34-4b3e-4e31-a054-48b5762004ce",
+      "result_id": "a6121841-795b-4573-8b83-3ab014b52072"
+    },
+    {
+      "claim_id": "8f7b7355-ee27-4c65-bf25-1ad2c5a216bc",
+      "result_id": "a6121841-795b-4573-8b83-3ab014b52072"
+    },
+    {
+      "claim_id": "b42c8ba6-bcb3-4ece-b435-1e6d225a103f",
+      "result_id": "a6121841-795b-4573-8b83-3ab014b52072"
+    },
+    {
+      "claim_id": "c126cfbf-579a-4cce-b2d3-f0c1757f51d8",
+      "result_id": "a740c01a-5fe3-4b30-811c-00cd7de5909b"
+    },
+    {
+      "claim_id": "0d54221d-819b-4114-a21b-511a736c29e2",
+      "result_id": "a740c01a-5fe3-4b30-811c-00cd7de5909b"
+    },
+    {
+      "claim_id": "dec620ae-8a49-4f7a-bae5-fa5bfda69cbb",
+      "result_id": "a740c01a-5fe3-4b30-811c-00cd7de5909b"
+    },
+    {
+      "claim_id": "e1049ff4-72d7-4367-a4ef-862ef8f42eb9",
+      "result_id": "a740c01a-5fe3-4b30-811c-00cd7de5909b"
+    },
+    {
+      "claim_id": "c8801047-ca72-4447-8267-1fdcdc4d2b61",
+      "result_id": "a740c01a-5fe3-4b30-811c-00cd7de5909b"
+    },
+    {
+      "claim_id": "eca0a198-c980-4627-afb8-1af9018505f9",
+      "result_id": "a740c01a-5fe3-4b30-811c-00cd7de5909b"
+    },
+    {
+      "claim_id": "d66f9b36-74d0-46f4-b858-3f4256659d48",
+      "result_id": "a740c01a-5fe3-4b30-811c-00cd7de5909b"
+    },
+    {
+      "claim_id": "eab92cc2-7179-46a6-abc5-fa3c208c47e5",
+      "result_id": "2d6498f0-61c5-4526-8683-7be1ee18a884"
+    },
+    {
+      "claim_id": "80b3e3be-374d-449b-9920-4e985552af8c",
+      "result_id": "2d6498f0-61c5-4526-8683-7be1ee18a884"
+    },
+    {
+      "claim_id": "1ee56328-cc40-4f33-9ae3-22cb034d2ad9",
+      "result_id": "2d6498f0-61c5-4526-8683-7be1ee18a884"
+    },
+    {
+      "claim_id": "74a4680a-f783-4aca-abfd-f2d1815b5fd0",
+      "result_id": "2d6498f0-61c5-4526-8683-7be1ee18a884"
+    },
+    {
+      "claim_id": "4cc0e3b8-6a9b-4f0a-9ef1-01a44675a953",
+      "result_id": "2d6498f0-61c5-4526-8683-7be1ee18a884"
+    },
+    {
+      "claim_id": "fece9ed3-8736-457d-9648-7dd5dbf34e2a",
+      "result_id": "2d6498f0-61c5-4526-8683-7be1ee18a884"
+    },
+    {
+      "claim_id": "bb9005fa-e824-4ff8-928d-7658b1539fe5",
+      "result_id": "2d6498f0-61c5-4526-8683-7be1ee18a884"
+    },
+    {
+      "claim_id": "6dcabf27-d01d-4d61-b16e-a1956a57138d",
+      "result_id": "16a733bc-c952-4c97-b20f-987f97e9d046"
+    },
+    {
+      "claim_id": "3b71b762-9891-469a-ab6f-8d19b627d313",
+      "result_id": "16a733bc-c952-4c97-b20f-987f97e9d046"
+    },
+    {
+      "claim_id": "59de46cc-a668-4480-a996-bd47670642f8",
+      "result_id": "16a733bc-c952-4c97-b20f-987f97e9d046"
+    },
+    {
+      "claim_id": "8ad6c819-0cde-4ca3-8020-7fcfca1f5b34",
+      "result_id": "16a733bc-c952-4c97-b20f-987f97e9d046"
+    },
+    {
+      "claim_id": "ca95441d-c16c-469f-bac8-1044c46b55fc",
+      "result_id": "16a733bc-c952-4c97-b20f-987f97e9d046"
+    },
+    {
+      "claim_id": "76dbde45-ce33-4187-9737-24094f4aab7d",
+      "result_id": "16a733bc-c952-4c97-b20f-987f97e9d046"
+    },
+    {
+      "claim_id": "5acb6f8a-7d34-4e9d-9844-e0f323d57b1e",
+      "result_id": "16a733bc-c952-4c97-b20f-987f97e9d046"
+    },
+    {
+      "claim_id": "0b4120bf-36a3-48a9-a8ed-03ec544f13fd",
+      "result_id": "16a733bc-c952-4c97-b20f-987f97e9d046"
+    },
+    {
+      "claim_id": "7fbbe4fd-5fff-4bd5-be16-a0872d401212",
+      "result_id": "cca58f4c-6d74-46b9-aa33-64eb1111da3f"
+    },
+    {
+      "claim_id": "f2847e23-13e7-46c3-acf6-7b298e452d0e",
+      "result_id": "cca58f4c-6d74-46b9-aa33-64eb1111da3f"
+    },
+    {
+      "claim_id": "04359c90-e362-4189-b908-98d5e6411508",
+      "result_id": "cca58f4c-6d74-46b9-aa33-64eb1111da3f"
+    },
+    {
+      "claim_id": "1bc7a39c-9bd4-4e01-9a0e-2c8a75792bc8",
+      "result_id": "d99dea68-0c6f-4c9e-a4a0-56e1141c0d71"
+    },
+    {
+      "claim_id": "f247021b-852b-4140-ba82-3ebb3dfc3dab",
+      "result_id": "d99dea68-0c6f-4c9e-a4a0-56e1141c0d71"
+    },
+    {
+      "claim_id": "99417dad-a0d3-4dce-b2e0-51bbb344e5bf",
+      "result_id": "d99dea68-0c6f-4c9e-a4a0-56e1141c0d71"
+    },
+    {
+      "claim_id": "1539a936-73ea-4a1a-ad3f-6d6a9e208463",
+      "result_id": "d99dea68-0c6f-4c9e-a4a0-56e1141c0d71"
+    },
+    {
+      "claim_id": "a0ff732d-6f56-4c57-bcc8-6576543b588d",
+      "result_id": "d99dea68-0c6f-4c9e-a4a0-56e1141c0d71"
+    },
+    {
+      "claim_id": "6a721572-8426-419d-b31c-84872ed401ca",
+      "result_id": "d99dea68-0c6f-4c9e-a4a0-56e1141c0d71"
+    },
+    {
+      "claim_id": "aca64ee0-5920-4d2e-ab86-0868334452e1",
+      "result_id": "63bb0baf-b4a6-46d7-9d82-4beee4586ef8"
+    },
+    {
+      "claim_id": "023e8edc-e5d3-4e17-853d-7c3573690a52",
+      "result_id": "3c18f549-7971-4ccf-9ab3-2befac7adbb9"
+    },
+    {
+      "claim_id": "50b5efe1-923b-42e9-8968-d67225ece4ae",
+      "result_id": "3c18f549-7971-4ccf-9ab3-2befac7adbb9"
+    },
+    {
+      "claim_id": "7a8ac71a-e82c-459f-aefa-eb5730701d70",
+      "result_id": "a696504b-df2c-4967-af16-90686430694c"
+    },
+    {
+      "claim_id": "3be356ee-1c79-4546-a0ef-dbc35c266e58",
+      "result_id": "a696504b-df2c-4967-af16-90686430694c"
+    }
+  ],
+  "comparisons": []
+}

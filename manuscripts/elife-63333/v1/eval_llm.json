@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Tamoxifen treatment in mice alters thermoregulation by decreasing core body temperature, increasing heat dissipation (higher heat loss index and tail skin temperature), and reducing heat production (lower BAT temperature and thermogenic gene expression). These changes mimic hot flash-like symptoms observed in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 provide converging evidence from multiple independent measurements (core temperature, heat loss index, tail temperature, BAT temperature, and gene expression) with appropriate statistical analyses. The physiological measurements are internally consistent and supported by molecular data (Ucp1 and Adrb3 expression). Sample sizes appear adequate (n=7-8 for most measurements) and statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Chronic tamoxifen treatment increases bone mass in mice, with significant increases in trabecular bone volume, number, and thickness in the metaphysis, and increased cortical thickness in the diaphysis, while bone mineral density and cortical bone area remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by microCT data with appropriate statistical analyses and adequate sample size (n=6). The findings are internally consistent and align with prior literature (Perry et al., 2005; Starnes et al., 2007). However, the study did not directly measure bone formation vs. resorption rates, which limits mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Tamoxifen treatment moderately decreases physical activity in mice without significantly affecting body weight over 28 days of treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by telemetry data with appropriate statistical analyses (n=7-8). The movement decrease is statistically significant (p=0.006) while body weight shows no significant change (p=0.5468), indicating selective effects on activity rather than general metabolic disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C70",
+      "C71"
+    ],
+    "result": "Single-cell RNA sequencing of hypothalamus-POA reveals that tamoxifen treatment affects gene expression across multiple cell types, most strongly in neurons and ependymal cells, with downregulation of estrogen-responsive genes and Myc targets, while not altering cell type proportions at clinically relevant doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37, C70-C71 are supported by comprehensive scRNA-seq analysis with adequate sample sizes (n=3 vehicle, n=5 tamoxifen) and appropriate bioinformatic methods (Seurat, GSEA). The identification of cell types is validated by established markers, and differential expression analyses use appropriate statistical corrections. The finding that cell proportions are unchanged addresses potential confounds from cell death or proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C75"
+    ],
+    "result": "Neuronal sub-clustering identifies 25 neuronal subtypes, with Esr1 expression enriched in Tac2+ and Gal+ neurons. Tamoxifen treatment downregulates genes involved in neuropeptide signaling, oxidative phosphorylation, and glycolysis in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44, C75 are supported by scRNA-seq sub-clustering analysis with appropriate statistical testing. The enrichment of Esr1 in Tac2+ neurons (log2FC=1.52, adj. p=7.1e-36) is highly significant. GSEA analyses appropriately identify functional pathway changes. However, the authors acknowledge that statistical power is limited for individual neuronal subtypes due to small cell numbers per cluster.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C72",
+      "C74"
+    ],
+    "result": "Conditional knockout of ER\u03b1 in the Nkx2-1 lineage ablates ER\u03b1 immunoreactivity in key hypothalamic regions and reverses or ablates the majority of tamoxifen-induced gene expression changes observed in wild-type mice, demonstrating that most transcriptional effects of tamoxifen in the hypothalamus-POA are ER\u03b1-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C56, C72, C74 are supported by immunohistochemistry confirming ER\u03b1 ablation and comprehensive scRNA-seq comparison between wild-type and Esr1 cKO mice (n=4 per group). The strong negative Spearman correlations across cell types and reversal of metabolic gene expression patterns provide compelling evidence for ER\u03b1-dependence. However, the persistence of some transcriptional changes in Esr1 cKO mice suggests additional ER\u03b1-independent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C73",
+      "C84",
+      "C87"
+    ],
+    "result": "ER\u03b1 knockout in the hypothalamus-POA blocks tamoxifen-induced changes in core body temperature, heat dissipation, BAT temperature, and movement, and largely blocks effects on bone physiology, demonstrating that these physiological effects are ER\u03b1-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C68, C73, C84, C87 are supported by parallel physiological measurements in Esr1 cKO mice with adequate sample sizes and appropriate statistical analyses. The absence of tamoxifen effects in Esr1 cKO mice across multiple independent physiological parameters provides strong evidence for ER\u03b1-dependence. The one exception (trabecular number, C65) shows an opposite effect, further supporting the specificity of ER\u03b1-mediated effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors hypothesize that tamoxifen may induce hot flashes through ER\u03b1 in Tac2+ neurons (KNDy neurons) in the ARC or POA, based on high Esr1 expression in these neurons and the known role of these circuits in thermoregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80 represent speculative hypotheses rather than demonstrated results. While the enrichment of Esr1 in Tac2+ neurons is well-supported (C39), and the loss of temperature effects in Esr1 cKO mice is demonstrated (C57, C79), the specific involvement of Tac2+ neurons in mediating tamoxifen's effects was not directly tested. Cell-type-specific manipulations would be needed to confirm this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The sustained increase in tail skin temperature in the mouse model does not fully reflect the episodic nature of hot flashes in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 appropriately acknowledges a limitation of the animal model. This is supported by comparison to other studies and knowledge of human hot flash characteristics. This represents an important caveat for translating findings to human physiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C103"
+    ],
+    "result": "Tamoxifen has complex, context-dependent effects on bone: protective in postmenopausal humans but detrimental premenopausally, while generally protective in rodents. The current study shows that some tamoxifen effects on bone are mediated by ER\u03b1 in the Nkx2-1 lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98, C103 synthesize prior literature with current findings. The literature citations appropriately document the complex, context-dependent effects of tamoxifen on bone. The current data (C24-C28, C61-C67) demonstrate ER\u03b1-dependence for some but not all bone effects, which is appropriately qualified. However, the mechanisms underlying the discrepancy between human and rodent responses remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The hypothalamus-POA is the most likely mediator of ER\u03b1-dependent physiological effects of tamoxifen, as Esr1 expression is not altered in other Nkx2-1 lineage tissues (thyroid, pituitary, lung) in Esr1 cKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by citation to prior characterization of the Esr1 cKO model (Herber et al., 2019). This provides important context for interpreting the physiological effects, though it relies on prior work rather than direct demonstration in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C109"
+    ],
+    "result": "The authors speculate that peripheral tissues may also be affected by systemic tamoxifen administration and that findings may translate to humans, though these remain hypotheses requiring further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106 and C109 represent appropriate speculation about broader implications and limitations. These are clearly framed as hypotheses rather than demonstrated findings. The translational relevance to humans (C109) is particularly uncertain given known species differences in tamoxifen effects (e.g., bone responses).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Tamoxifen therapy reduces breast cancer recurrence by up to 40% with benefits persisting for at least 10 years, but is associated with side effects including hot flashes, endometrial cancer risk, venous thromboembolism, bone loss, and fatigue, leading approximately 25% of patients to discontinue therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 summarize established clinical knowledge supported by appropriate citations. These provide essential context for the study but represent prior work rather than new findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "ER\u03b1 signaling in the hypothalamus-POA regulates body temperature, physical activity, and bone density through distinct neuronal populations, and tamoxifen administration affects hypothalamic gene expression and neuroendocrine axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 summarize prior literature establishing the rationale for the current study. The citations appear appropriate and comprehensive. These represent established knowledge rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C76",
+      "C77",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C107",
+      "C110",
+      "C111"
+    ],
+    "result": "Prior literature establishes that tamoxifen accumulates in the brain, that KNDy neurons and neurokinin B signaling mediate hot flashes, that estrogen signaling regulates movement and bone through multiple receptors and pathways, and that patients experience significant side effects that are often not taken seriously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C76-C77, C82-C83, C85-C86, C88-C92, C99-C102, C107, C110-C111 appropriately cite prior literature to provide context for interpreting the current findings. The citations appear appropriate for the claims made. These represent background knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The rodent model of tamoxifen treatment mimics several key side effects of endocrine therapy observed in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is a summary conclusion supported by the convergence of multiple physiological measurements (C16-C30) showing effects analogous to human side effects. However, important limitations exist (e.g., C81 regarding episodic vs. sustained temperature changes, and opposite bone effects in pre- vs. postmenopausal humans).",
+    "result_type": "MAJOR"
+  }
+]

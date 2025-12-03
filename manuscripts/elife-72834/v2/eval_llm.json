@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors identified nine putative cis-regulatory elements (CREs) flanking Sp-kirrelL by integrating multiple genomic datasets including ATAC-seq, DNase-seq, ChIP-seq for Alx1 binding, CAGE-seq for eRNA expression, and phylogenetic footprinting. These elements ranged from 1.0 to 2.4 kb in size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 describe a systematic, multi-criteria approach to identifying CREs using established genomic methods. The integration of chromatin accessibility, transcription factor binding, eRNA expression, and sequence conservation provides strong convergent evidence for the identification of these regulatory elements. The approach is methodologically sound and well-documented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Plasmid-based transgenic reporter assays demonstrated that elements A-G together recapitulate endogenous Sp-kirrelL expression, with elements D-G driving strong PMC-specific expression. When tested individually, only elements C and G drove GFP expression in PMCs, with element G (containing the promoter region) showing the strongest activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are supported by systematic transgenic reporter assays shown in Figure 2. The hierarchical dissection approach (testing combinations and individual elements) provides clear evidence for the functional activity of specific CREs. The data demonstrate both sufficiency (elements A-G) and individual contributions (elements C and G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Element C contains essential Alx1 and Ets1 binding sites that are required for its activity. The minimal active region (C.ChIP) requires close proximity to the promoter for maximal activity. Mutational analysis demonstrated that Alx1 half site 2 and Ets1 site 1 provide key regulatory inputs, while mutations in Fox or MEIS sites had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C91 are supported by multiple lines of evidence: genomic signatures (ATAC-seq, DNase-seq, ChIP-seq, eRNA), systematic truncation analysis, computational prediction of binding sites, and targeted mutagenesis. The WMISH data (C88) confirms the requirement for Alx1 and Ets1. The mutational analysis provides direct evidence for specific transcription factor inputs, establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Element G (containing the Sp-kirrelL promoter) receives direct positive inputs from Alx1 and Ets1. The minimal active fragment G.ATAC showed PMC-specific expression that was abolished when all Alx1 or Ets1 sites were mutated (p < 0.001). These regulatory inputs are conserved between S. purpuratus and L. variegatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by truncation analysis, site-directed mutagenesis, and statistical analysis of reporter expression patterns. The chi-square test (C96) provides statistical rigor. Cross-species validation in L. variegatus (C98) strengthens the conclusion. The convergence of multiple experimental approaches provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Multiple CREs (elements B, C, E, F, H, I) that showed minimal activity with the Sp-endo16 promoter alone drove strong PMC-specific expression when combined with the native Sp-kirrelL promoter. This synergy was sequence-dependent and could bypass spacing constraints, suggesting the Sp-kirrelL promoter contains tethering activity that facilitates CRE-promoter interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C110 demonstrate promoter-specific enhancer activity through systematic comparison of constructs with different promoters. The quantitative data (C101-C103) show synergistic rather than additive effects. The shuffled promoter control (C107) and spacer experiments (C108-C109) provide mechanistic insight. The inference about tethering activity (C110) is reasonable but would benefit from additional biochemical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "BAC-based reporter assays demonstrated that elements A-G are necessary for Sp-kirrelL expression, with the promoter region being essential even when all distal CREs are present. Individual deletions of elements other than G showed continued activity, indicating functional redundancy among the CREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C121 are supported by systematic BAC deletion analysis shown in Figure 5. The use of BAC constructs provides a more native genomic context than plasmids. The qualitative observations (C114-C120) are clear, though quantitative analysis would strengthen conclusions about redundancy. The finding that the promoter is essential (C119) is well-supported by multiple deletion constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Quantitative NanoString analysis of BAC reporters revealed that elements C, G, and H make major contributions to Sp-kirrelL expression during early embryogenesis. Deletion of element C reduced expression by ~50%, deletion of element G abolished expression (partially rescued by retaining the promoter), and deletion of element H decreased expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 are supported by quantitative NanoString measurements across multiple developmental time points (Figure 5C). The normalization approach (accounting for DNA incorporation) is appropriate. The use of co-injection with a parental BAC provides an internal control. The quantitative data complement the qualitative observations and provide a more nuanced understanding of individual CRE contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Heterologous kirrelL regulatory regions from six echinoderm species (representing all major classes) drove PMC-specific GFP expression in S. purpuratus embryos, with five of six showing strong PMC-specific expression. This includes species that lack larval skeletons (sea stars and feather stars), demonstrating remarkable functional conservation across ~500 million years of evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 are supported by cross-species transgenic reporter assays shown in Figure 6. The phylogenetic breadth of species tested is impressive and appropriate for testing deep evolutionary conservation. The functional conservation despite limited sequence conservation is striking. However, the interpretation that this reflects conservation of the ancestral adult program (rather than vestiges of a lost larval program) is inferential and would benefit from additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Expression analysis revealed that kirrelL is expressed in adult skeletogenic centers in both sea urchins (Lv-kirrelL) and sea stars (Pm-kirrelL). In sea stars, Pm-kirrelL expression was not detected during early embryonic development but was present in the adult rudiment and juvenile skeletogenic centers, similar to the expression pattern of Pm-ets1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 are supported by WMISH data shown in Figure 6C-D and supplementary figures. The expression patterns are clearly documented across multiple developmental stages. The comparison with msp130r2 (C132) and ets1 (C135) provides appropriate positive controls. The absence of early embryonic expression in sea stars (C133) is important for interpreting the evolutionary significance of the regulatory conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Dissection of the Pm-kirrelL regulatory region identified a 614-bp element (PmG) sufficient to drive strong PMC-specific expression in S. purpuratus embryos. Mutational analysis demonstrated that PmG receives positive inputs from both Alx1 and Ets1, with mutations in all Alx1 or Ets1 sites significantly altering expression patterns (p < 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 are supported by systematic truncation analysis, phylogenetic footprinting, and site-directed mutagenesis shown in Figure 7. The identification of conserved Alx1 and Ets1 inputs in the sea star regulatory region parallels findings in sea urchin, supporting deep conservation of regulatory logic. The statistical analysis (C140) provides rigor. The cross-species functionality is remarkable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The sea star PmG1 and PmG2 elements were functionally interchangeable with the Sp-kirrelL promoter, supporting strong PMC-specific expression when combined with the sea urchin element C. This activity was sequence-dependent (abolished by shuffling) and required Alx1 and Ets1, demonstrating striking conservation of promoter function across deeply divergent echinoderm species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 are supported by chimeric reporter construct analysis and morpholino knockdown experiments shown in Figure 7 and supplementary figures. The functional interchangeability of sea star and sea urchin promoter elements is remarkable and provides strong evidence for deep conservation. The shuffled sequence control (C144) and morpholino experiments (C145) provide appropriate negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C152",
+      "C153"
+    ],
+    "result": "The findings identify kirrelL as a component of the ancestral echinoderm skeletogenic GRN and support the view that GRN subcircuits, including specific transcription factor-CRE interactions, can remain stable over vast evolutionary timescales. The conservation of Alx1 and Ets1 inputs into kirrelL across echinoderms suggests that a heterochronic shift in Alx1 expression was a major event in co-opting the adult skeletogenic GRN into embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12-C13 and C147-C153 represent broad evolutionary interpretations based on the regulatory conservation data. While the functional conservation of kirrelL CREs is well-documented, the inference that this reflects the ancestral adult program (rather than a lost larval program) is speculative. The heterochronic shift hypothesis (C152) is plausible given that Ets1 is expressed in sea star embryonic mesenchyme (C151), but direct evidence for this evolutionary scenario is lacking. These conclusions would be strengthened by functional analysis in adult skeletogenic tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The analysis of kirrelL establishes direct linkages between a developmental GRN and an effector gene that controls cell-cell fusion, providing a paradigm for extending the explanatory power of GRNs to morphogenetic cell behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by the identification of direct Alx1 and Ets1 inputs into kirrelL (C6, C89, C95, C139), combined with prior knowledge that kirrelL is required for PMC fusion (C46, C48-C49). This work successfully links GRN components to a specific morphogenetic behavior, addressing a conceptual gap in GRN biology as articulated in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The manuscript provides extensive background on echinoderm skeletogenesis, the PMC GRN, and the kirrelL gene, establishing the biological context for the study. This includes information about echinoderm diversity, larval skeleton evolution, PMC specification and behavior, and prior characterization of kirrelL function and expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C59 represent background information drawn from established knowledge and prior literature. These claims are appropriately cited and provide necessary context for interpreting the experimental results. While some claims involve inference (e.g., C21, C25, C51), they represent widely accepted views in the field and are appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

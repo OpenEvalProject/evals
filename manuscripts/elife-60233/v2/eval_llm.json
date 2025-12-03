@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Increasing leg flailing kinetic energy (by adding mass to animal legs or increasing robot leg oscillation amplitude) significantly increased self-righting probability and decreased the number of attempts required. At maximal leg oscillation (45\u00b0), the robot always self-righted in the first attempt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C41-C45 provide converging evidence from both animal manipulation (C13) and systematic robot experiments (C41-C45) with appropriate statistical tests (p < 0.0001 for C41-C42, p < 0.05 for C43). The dose-response relationship and complete success at maximum amplitude strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "Wing opening does not generate sufficient kinetic energy to overcome the pitch barrier for somersaulting, but it reduces the roll barrier to a level where small kinetic energy from leg flailing can probabilistically overcome it. The roll barrier is always lower than the pitch barrier at all wing opening angles tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C73-C76, and C78 form a coherent mechanistic explanation supported by potential energy landscape modeling (C53-C54) and kinetic energy measurements (C75-C76). The comparison of barriers to kinetic energies (Figure 7C) provides quantitative support for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C82"
+    ],
+    "result": "Self-righting transitions are probabilistic barrier-crossing transitions on a potential energy landscape. The system state is attracted to local minima (upside-down, metastable, or upright basins), and successful self-righting requires crossing a potential energy barrier from the metastable basin to reach an upright basin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 and C82 describe the barrier-crossing dynamics supported by 3D motion reconstruction on the landscape (Figure 6). The distinction between failed attempts (trapped in metastable basin, C70) and successful attempts (crossing barrier, C71) is clearly demonstrated with trajectory data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C23",
+      "C52",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The stereotyped body motion during self-righting (repeated pitching in failed attempts, rolling in successful attempts) emerges from physical interaction constraints, specifically the strong attraction of the system state to landscape basins that arise from body/appendage-ground contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C23, C52, and C92-C94 provide a mechanistic explanation for stereotyped motion patterns observed in both animals and robots. The landscape modeling (C92-C94) explains why motion is stereotyped despite stochastic variations, supported by trajectory data (Figure 6, C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C150",
+      "C151",
+      "C152",
+      "C154",
+      "C155"
+    ],
+    "result": "The robot and animal are dynamically and geometrically similar, with Froude numbers within a factor of 2 and potential energy barriers scaling as expected (m^4/3/\u03c1^1/3). This validates the robot as a physical model for studying animal self-righting principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C150-C155 establish similarity through quantitative comparisons (Table 2). The scaling analysis (C150-C151) provides theoretical justification, and empirical measurements (C152, C154) confirm expected relationships, supporting the conclusion that physical principles transfer between systems (C40, C155).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The robot's self-righting behavior closely resembles the animal's in multiple aspects: requiring multiple probabilistic attempts, forming a metastable triangular base of support with pitched body, failing to escape by pitching in unsuccessful attempts, and always self-righting by rolling sideways in successful attempts without lifting off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 document behavioral similarities between robot and animal, supported by visual evidence (Figures 1, 5A) and trajectory data (Figure 6). The multiple points of correspondence strengthen the validity of the robotic model for studying self-righting mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "The potential energy landscapes for animal and robot are similar in shape and evolve similarly as wings open. The landscape has local minima at upside-down, metastable (with positive pitch), and three upright configurations (pitch and two roll modes), with barriers separating basins that change as wings open.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62, C64 describe the landscape structure supported by modeling (Figure 5) and geometric similarity (C55). The identification of basins and barriers is based on gravitational potential energy calculations (C56-C57) and provides the foundation for understanding self-righting dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The robot's pitch kinetic energy was insufficient to overcome the pitch barrier in both failed and successful attempts, while roll kinetic energy increasingly exceeded the roll barrier as wing opening and leg flailing amplitudes increased, enabling self-righting via rolling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide direct comparison of kinetic energies to barriers throughout attempts (Figure 7\u2014supplements 2-3), with statistical significance (p < 0.001, C80). This confirms the mechanism by which wing opening and leg flailing together enable self-righting specifically via the roll mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The discoid cockroach's winged self-righting strategy involves pushing wings against the ground to pitch forward into a metastable state (triangular base of support), rarely succeeding by pitching over the head, but eventually rolling sideways to self-right while vigorously flailing legs mediolaterally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C18-C22 describe the animal's self-righting behavior supported by direct observations (Figure 1) and video documentation. The description of the metastable state (C19) and predominance of roll mode (C21) over pitch mode (C20) is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C89"
+    ],
+    "result": "Using propelling appendages (wings) and perturbing appendages (legs) together makes self-righting more probable and reduces attempts required compared to using either alone, demonstrating the usefulness of co-opting multiple appendages for strenuous self-righting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C89 synthesize the main findings into a general principle. The conclusion is supported by the demonstrated mechanism (C15-C16, C78) and experimental results (C13-C14, C41-C45) showing synergistic effects of wings and legs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The intact animal self-righted at finite probability despite insufficient average kinetic energy from hind leg flailing alone, likely due to additional contributions from fore/mid leg flailing, leg scraping, and abdominal flexion/wing deformation that induce lateral asymmetry and lower the roll barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C88 acknowledge a discrepancy between model predictions and observations (C85-C86) and propose explanations (C87-C88). However, these additional factors were not systematically measured or tested, making this speculative. The explanation is plausible but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C30"
+    ],
+    "result": "Leg flailing during self-righting is feedforward-driven rather than feedback-controlled, based on lack of temporal correlation with wing opening, comparable time period to sensory/neuromuscular delays, and minimal proprioceptive input during flailing reported in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 provide multiple lines of evidence for feedforward control: lack of correlation (C126, Figure 3\u2014supplement 3), timing analysis (C127), and literature support (C128). This justifies the robot's feedforward leg control (C30) and explains the stochastic nature of self-righting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Potential energy landscape modeling can be applied to understand stereotyped self-righting strategies in other species and extinct species, inform robot design, and extend to more complex behaviors and different terrain properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 propose future applications of the landscape approach. While the current study demonstrates its utility for the cockroach-robot system, these broader applications remain speculative (marked as SPECULATION in evidence_type). The suggestions are reasonable but require validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Exaptation of multiple appendage types evolved for other functions for self-righting is likely a general behavioral adaptation and should be adopted by terrestrial robots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 make evolutionary and engineering recommendations based on the study findings. While the principle is supported by the current work, the generality claim (C90) and robot design recommendation (C91) extend beyond the data. The evolutionary interpretation is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The potential energy landscape approach shows that more rugged terrain creates more rugged landscapes with additional attractive basins, but does not apply to highly dynamic strategies like jumping where kinetic energy far exceeds barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 define the scope and limitations of the landscape approach. C99 is supported by modeling (Figure 8), while C100 appropriately identifies when the quasi-static assumption breaks down. These boundary conditions are important for interpreting the method's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The potential energy landscape model does not describe dynamics, but complementary approaches (multi-body simulations, dynamical templates) have limitations. A landscape theory incorporating stochastic forces may provide a simpler way to model probabilistic barrier-crossing dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 acknowledge limitations of the current approach (C101) and cite complementary work (C102-C103). The characterization of other methods' limitations (C104-C105) is accurate, and the suggestion for future theory development (C106) is reasonable though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Ground self-righting is critical for animal survival and robot operation, is strenuous (requiring 7-8\u00d7 more energy/force than running), often requires multiple attempts due to morphological and environmental constraints, and commonly involves vigorous appendage flailing across diverse species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 establish the biological and engineering importance of self-righting through extensive literature citations. These background claims are well-supported by prior work and provide motivation for the current study. The diversity of species studied (C7) and ubiquity of flailing (C9) justify the focus on this behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Previous potential energy landscape modeling of turtle self-righting in 2D suggested kinetic energy from appendages helps overcome barriers. A recent 3D cockroach study had limitations (rigid body approximation, camera occlusions), which is inadequate for winged self-righting where wing opening changes the landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 accurately characterize prior work and identify gaps. The citations (Domokos & V\u00e1rkonyi 2008, Li et al. 2019) support the claims about previous approaches. The identification of limitations (C26, C28) and when rigid body approximation is appropriate (C27) justifies the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The robot offers advantages over the animal for landscape modeling: the animal's complex 3D motion is difficult to quantify (requiring ~540 hours of tracking with frequent occlusions), while the robot's simpler design, controlled actuation, and IMU enable easier motion reconstruction and controlled parameter variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 justify the use of a robotic physical model with practical considerations. The time estimate (C33) is based on reasonable calculations, and the advantages of the robot (C35-C36) are clearly articulated. This explains the methodological choice to focus landscape modeling on the robot.",
+    "result_type": "MINOR"
+  }
+]

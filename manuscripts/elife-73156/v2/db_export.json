@@ -1,0 +1,1735 @@
+{
+  "submission": {
+    "id": "f6ad7109-3959-444a-bc19-00e65d2783de",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:16:41.284946Z",
+    "updated_at": "2025-12-03T10:16:41.284946Z"
+  },
+  "content": [
+    {
+      "id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "submission_id": "f6ad7109-3959-444a-bc19-00e65d2783de",
+      "content_type": "manuscript",
+      "content_text": "# Structural organization and dynamics of FCHo2 docking on membranes\n\n## Authors\n\n- Fatima El Alaoui<sup>1</sup> ([ORCID: 0000-0003-3298-4078](https://orcid.org/0000-0003-3298-4078))\n- Ignacio Casuso<sup>2</sup>\n- David Sanchez-Fuentes<sup>3</sup>\n- Charlotte Arpin-Andre<sup>1</sup>\n- Raissa Rathar<sup>3</sup> ([ORCID: 0000-0001-8766-2186](https://orcid.org/0000-0001-8766-2186))\n- Volker Baecker<sup>4</sup> ([ORCID: 0000-0002-9129-6403](https://orcid.org/0000-0002-9129-6403))\n- Anna Castro<sup>5</sup> ([ORCID: 0000-0002-3655-1352](https://orcid.org/0000-0002-3655-1352))\n- Thierry Lorca<sup>5</sup>\n- Julien Viaud<sup>6</sup> ([ORCID: 0000-0003-4406-5642](https://orcid.org/0000-0003-4406-5642))\n- St\u00e9phane Vassilopoulos<sup>7</sup> ([ORCID: 0000-0003-0172-330X](https://orcid.org/0000-0003-0172-330X))\n- Adrian Carretero-Genevrier<sup>3</sup> ([ORCID: 0000-0003-0488-9452](https://orcid.org/0000-0003-0488-9452))\n- Laura Picas<sup>1</sup> ([ORCID: 0000-0002-5619-5228](https://orcid.org/0000-0002-5619-5228)) \u2020\n\n### Affiliations\n\n1. Institut de Recherche en Infectiologie de Montpellier (IRIM), CNRS UMR 9004, Universit\u00e9 de Montpellier Montpellier France\n2. U1067 INSERM, Aix-Marseille Universit\u00e9 Marseille France\n3. Institut d'\u00c9lectronique et des Syst\u00e8mes (IES), CNRS UMR 5214, Universit\u00e9 de Montpellier Montpellier France\n4. Montpellier Ressources Imagerie, BioCampus Montpellier, CNRS, INSERM, Universit\u00e9 de Montpellier Montpellier France\n5. Centre de Biologie Cellulaire de Montpellier (CRBM), CNRS UMR UMR 5237, Universit\u00e9 de Montpellier Montpellier France\n6. INSERM UMR1297, Institute of Metabolic and Cardiovascular Diseases (I2MC), University of Toulouse, Paul Sabatier University Toulouse France\n7. Sorbonne Universit\u00e9, INSERM, Institute of Myology, Centre of Research in Myology, UMRS 974 Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nClathrin-mediated endocytosis (CME) is a central trafficking pathway in eukaryotic cells regulated by phosphoinositides. The plasma membrane phosphatidylinositol-4,5-bisphosphate (PI(4,5)P2) plays an instrumental role in driving CME initiation. The F-BAR domain-only protein 1 and 2 complex (FCHo1/2) is among the early proteins that reach the plasma membrane, but the exact mechanisms triggering its recruitment remain elusive. Here, we show the molecular dynamics of FCHo2 self-assembly on membranes by combining minimal reconstituted in vitro and cellular systems. Our results indicate that PI(4,5)P2 domains assist FCHo2 docking at specific membrane regions, where it self-assembles into ring-like-shaped protein patches. We show that the binding of FCHo2 on cellular membranes promotes PI(4,5)P2 clustering at the boundary of cargo receptors and that this accumulation enhances clathrin assembly. Thus, our results provide a mechanistic framework that could explain the recruitment of early PI(4,5)P2-interacting proteins at endocytic sites.\n\n## Introduction\n\nThe biogenesis of clathrin-coated vesicles requires precise and coordinated recruitment of more than ~50 different proteins to undergo the bending, elongation, and fission of the plasma membrane (Taylor et al., 2011; Haucke and Kozlov, 2018). Different factors assist in recruiting endocytic proteins, such as the interaction with phosphoinositides (Posor et al., 2015), curvature sensing, and protein-protein interactions (Doherty and McMahon, 2009). Also, the resistance of the plasma membrane that results from the membrane-cytoskeleton adhesion sets the rate of forming transport vesicles (Sheetz, 2001). Although the initiation of endocytosis is a critical step, the exact mechanism triggering the nucleation of endocytic proteins at the plasma membrane is not well understood. The early stages of clathrin-mediated endocytosis (CME) entail the nucleation of adaptor and accessory proteins, cargo, and lipids to undergo the bending of the plasma membrane (Godlee and Kaksonen, 2013). Several studies have shown that the Fer/CIP4 homology domain-only protein 1 or 2 (FCHo1/2) is among the early proteins recruited at endocytic sites (Taylor et al., 2011; Henne et al., 2010), where it establishes a network of interactions with pioneer proteins, such as Eps15, adaptor protein 2 (AP2), and transmembrane cargo (Taylor et al., 2011; Ma et al., 2016; Hollopeter et al., 2014). FCHo paralogs associate with membranes through the dimerization of F-BAR domains displaying a shallow concave surface that interacts with acidic phospholipids (Henne et al., 2010; Frost et al., 2008; Henne et al., 2007). A polybasic motif follows the F-BAR scaffold and provides a selective recognition for PI(4,5)P2 (Ma et al., 2016). Finally, FCHo1/2 is flanked at the C-terminal by a \u03bc-homology domain (\u03bc-HD) that directly binds with multiple early endocytic proteins such as Eps15, intersectin 1, or CALM (Henne et al., 2010; Ma et al., 2016; Umasankar et al., 2012). Indeed, FCHo1/2 is required to recruit Eps15 on membranes (Day et al., 2021), and the assembly of a FCHo1/2-Eps15-AP2 complex is essential to drive efficient cargo loading (Ma et al., 2016). The recruitment of FCHo1/2 on membranes is central to initiate the endocytic activity, but the underlying molecular mechanism remains unclear.\n\nHere, we combined sub-diffraction microscopy and high-speed atomic force microscopy (HS-AFM) with in vitro and in cellulo reconstituted systems to show that PI(4,5)P2 domains regulate FCHo2 docking on flat membranes, where it self-assembles into ring-like-shaped protein structures that are compatible with the size and temporal scale of CME. Our results indicate that, in the absence of metabolizing enzymes, FCHo2 can engage a local PI(4,5)P2 enrichment at the boundaries of clathrin-regulated cargo receptors and enhance the formation of clathrin-positive assemblies. Finally, manipulation of membrane curvature through lithographic approaches showed that PI(4,5)P2 promotes the partition of FCHo2 at the edges of dome-like structures. Collectively, our work points out PI(4,5)P2 lateral lipid heterogeneities as an organizing mechanism supporting the docking and self-organization of PI(4,5)P2-interacting proteins that, like FCHo2, participate in the initial stages of CME.\n\n## Results\n\n### FCHo1/2 drives PI(4,5)P2 clustering formation on cellular membranes\n\nTo study FCHo1/2 recruitment on cellular membranes, we monitored by airyscan microscopy the binding of recombinant full-length FCHo2-Alexa647 on plasma membrane sheets. We generated plasma membrane sheets by ultrasound-mediated unroofing of cells stably expressing the transferrin receptor (TfR-GFP) as a model of cargo receptor regulated by FCHo1/2 (Henne et al., 2010). We monitored the subcellular dynamics of lipids using TopFluor fatty acid conjugates, as previously reported (Zewe et al., 2020). Thus, we loaded HT1080 unroofed cells with fluorescent PI(4,5)P2 (TF-TMR-PI(4,5)P2) or phosphatidylserine as a control (PS, TF-TMR-PS) (Figure 1A and B). We characterized the steady-state organization of fluorescent PI(4,5)P2 and its ability to form domains as compared to other anionic lipids (Figure 1\u2014figure supplement 1), in agreement with previous numerical simulations (Kolds\u00f8 et al., 2014). The functionality of recombinant FCHo2 was determined by performing a tubulation assay using membrane sheets made of brain polar lipids, as previously reported (Itoh et al., 2005; Figure 1\u2014figure supplement 2). Kymograph analysis on plasma membrane sheets showed that FCHo2 is preferentially recruited to PI(4,5)P2-enriched domains often co-localized with the TfR (Figure 1\u2014figure supplement 3). We found that the kinetics of FCHo2 recruitment on these regions was faster than in the absence of PI(4,5)P2 enrichment. To determine if the spatial recruitment of FCHo2 is promoted by PI(4,5)P2, we monitored the protein binding on supported lipid bilayers made of 20% of total negatively charged lipids and different % mol of PI(4,5)P2. As expected, increasing amounts of PI(4,5)P2 favored FCHo2 binding on flat membranes (Figure 1\u2014figure supplement 4). The temporal analysis of FCHo2 recruitment also showed that binding to PI(4,5)P2 domains resulted in the formation of long-lived FCHo2 puncta (Figure 1\u2014figure supplement 5), whereas its association with a homogenous distribution of PI(4,5)P2 was more likely to lead to FCHo2 disassembly. We observed that the F-BAR domain alone (i.e., without the region rich in positively charged amino acids of the extended F-BAR construct, F-BAR-x, described in Henne et al., 2007) also displayed preferential recruitment to PI(4,5)P2-enriched regions, in agreement with the enhanced binding of the domain at 5% mol of PI(4,5)P2 (Figure 1\u2014figure supplement 4). Collectively, these results confirm the functionality of full-length FCHo2-Alexa647 and indicate that PI(4,5)P2-enriched regions facilitate FCHo2 docking on membranes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left: cartoon of the experimental setup to monitor the recruitment of FCHo2-Alexa647 on cellular membranes loaded with fluorescent PI(4,5)P2. Right: representative still airyscan images showing the co-localization of TfR-GFP (cyan), PI(4,5)P2 (yellow), and FCHo2 (magenta) on plasma membrane sheets and cross-sectional analysis of FCHo2-positive puncta highlighted by the orange dashed box. Scale bar, 2 \u00b5m. (B, C) Representative z-projected time-lapse confocal images of plasma membrane sheets showing the co-localization of PI(4,5)P2 or PS (yellow) and clathrin-regulated cargoes TfR or EGFR (cyan) before (-FCHo2) and after the addition of FCHo2 (+FCHo2, magenta). The projected time interval (\u0394t) is specified below each image. Scale bar, 2 \u00b5m. (D) Distribution of the intensity of PI(4,5)P2 domains before (-FCHo2) and after addition of FCHo2 (+FCHo2) on plasma membrane sheets. Mean \u00b1 SD, in red. Welch\u2019s t-test (****p<0.0001). The number of PI(4,5)P2 domains analyzed from three replicates was n = 4397 and n = 33815, respectively, from at least three replicates. (E) Representative airyscan images showing a maximum intensity projection of one stack of the basal plasma membrane of HT1080 cells transiently transfected with either mCherry (empty vector), mCherry-FCHo1, or mCherry-FCHo2 (magenta) and stained for endogenous PI(4,5)P2 (yellow). Cross-sectional analysis of plasma membrane regions highlighted by the white dashed box in the corresponding image. Scale bar, 4 \u00b5m. (F) Distribution of the intensity of PI(4,5)P2 domains at the plasma membrane of cells transfected with either mCherry (empty), mCherry-FCHo1 (FCHo1), or mCherry-FCHo2 (FCHo2). Mean \u00b1 SD, in red. One-way ANOVA (****p<0.0001). The number of PI(4,5)P2 domains analyzed was n = 1647, n = 2,164, and n = 2608, respectively, from three independent experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Lipid dyes were added to a final 0.2% mol at the expenses of the nonlabeled counterpart. Addition of 10 mM of Ca2+ on lipid bilayers made of 5% PI(4,5)P2 and doped with OG-DHPE and TF-TMR-PI(4,5)P2 shows the detection of PI(4,5)P2-enriched domains on this supported lipid bilayers. Scale bar, 2 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Left: Schematic representation of the membrane sheets in vitro assay, as detailed by Itoh et al., 2005, to test the functionality of recombinant full-length FCHo2-Alexa647. Membrane sheets were made using brain polar lipid extracts (Avanti). Right: representative still confocal images showing the formation of membrane tubes after addition of 2 \u03bcM of FCHo2, as indicated by yellow arrows.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Representative airyscan time lapse showing the dynamics of PI(4,5)P2 (gray), FCHo2 (magenta), and TfR-GFP (cyan) on plasma membrane sheets. Scale bar, 5 \u00b5m. (B) Top: kymograph analysis along the dashed line in (A) on plasma membrane sheets loaded with TF-TMR-PI(4,5)P2 and intensity profile of the TfR (cyan), PI(4,5)P2 (gray), and FCHo2 (magenta) along the dashed line in the kymograph. Time scale is 9 min. Bottom: representative kymograph analysis on plasma membrane sheets loaded with TF-TMR-PS and intensity profile of the TfR (cyan), PS (gray), and FCHo2 (magenta) along the dashed line in the kymograph. Time scale is 9 min. Scale bar, 2 \u00b5m. (C) Fluorescence quantification over time of the FCHo2 recruitment (magenta) on PI(4,5)P2-enriched regions (top) and not on PI(4,5)P2 (bottom) on plasma membrane sheets. Each curve represents the mean \u00b1 SD of n = 7 recruitment kinetics from experimental replicates.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Left: binding of FCHo2 on lipid membranes containing different % mol of PI(4,5)P2 (20% of total negative charge). Mean \u00b1 SD in red. One-way ANOVA (****p<0.0001). The number of regions of interest analyzed from experimental replicates was n = 31, n = 39, and n = 54 for 1%, 2%, and 5% mol of PI(4,5)P2, respectively. Binding of F-BAR on membranes containing different % mol of PI(4,5)P2. Mean \u00b1 SD is displayed in red and one-way ANOVA (***p=0.0001). The number of regions of interest analyzed from experimental replicates was n = 27, n = 29, and n = 20 for 1%, 2%, and 5% mol of PI(4,5)P2 respectively. Right: relative frequency distribution of the intensity of FCHo2 and F-BAR puncta relative to the intensity of different PI(4,5)P2 domains populations on 5% mol PI(4,5)P2 membranes. The number of puncta analyzed from experimental replicates was n = 11,448 for FCHo2 and n = 12,828 for F-BAR. a.u., arbitrary units.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Left: cartoon of the experimental setup to detect the interaction of FCHo2-A647 with PI(4,5)P2-enriched domains. Right: representative airyscan images showing the lipid organizations that were detected under the experimental conditions: (i) a homogenous PI(4,5)P2 organization, (ii) the formation of lipid domains, and (iii) the presence of adsorbed lipid vesicles. Scale bar, 1 \u00b5m. (B) Airyscan time lapse showing the dynamics of FCHo2 (magenta) on 5% of PI(4,5)P2 membranes doped with fluorescent PI(4,5)P2 (gray) and DHPE (yellow). Scale bar, 2 \u00b5m. (C) Top: kymograph analysis along the white dashed line in (F). Time scale, 5 min. Scale, 2 \u00b5m. Bottom: lifetime of FCHo2 (in min) relative to the PI(4,5)P2 organization: homogeneous (gray) and on domains (red), as highlighted by the arrows in the corresponding kymograph image. Mean \u00b1 SD in black. Welch\u2019s t-test (**p=0.0098). The number of FCHo2 puncta analyzed from experimental replicates was n = 50 and n = 43 for a homogeneous and on domains, respectively.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Each curve represents the mean \u00b1 SD of n = 9 recruitment kinetics from experimental replicates.\n\nThe formation of PI(4,5)P2 clusters at the plasma membrane orchestrates the recruitment of PI(4,5)P2-binding proteins via ionic-lipid protein interactions (Honigmann et al., 2013; van den Bogaart et al., 2011). Several structural domains of endocytic proteins, including the F-BAR domain of Syp1, locally accumulate PI(4,5)P2 on in vitro membranes (Zhao et al., 2013; Picas et al., 2014), and we showed that BIN1 recruits its downstream partner dynamin through this mechanism. We thus investigated the impact of FCHo2 on PI(4,5)P2 clustering formation. Injection of FCHo2-Alexa647 on TfR-GFP plasma membrane sheets led to the binding of FCHo2 and the formation of sub-micrometric puncta that co-localized with PI(4,5)P2 and the TfR (Figure 1A). Analysis of the protein dynamics showed that FCHo2 binding convoyed a redistribution of the PI(4,5)P2 signal on TfR-GFP-positive puncta but not on PS-labeled plasma membrane sheets (Figure 1B). To determine if FCHo2-mediated PI(4,5)P2 enrichment was a general feature of FCHo2, we monitored its binding relative to another clathrin-regulated cargo, the EGF receptor (EGFR) (Figure 1C). In this case, we observed a concomitant increase of both the PI(4,5)P2 and EGFR signal at FCHo2-positive puncta (Figure 1C, Figure 1\u2014figure supplement 6), possibly as a result of the interaction of the EGFR juxtamembrane domain with PI(4,5)P2 (Wang et al., 2014). Quantification of the intensity of PI(4,5)P2 domains in the absence of other endocytic proteins and ATP to prevent the activation of type I phosphatidylinositol 4-phosphate 5-kinase (Krauss et al., 2006) confirmed a local increase in the PI(4,5)P2 signal after the addition of FCHo2 on cellular membranes (Figure 1D). Therefore, pointing out that PI(4,5)P2 clustering at the boundary of clathrin-regulated receptors is a direct effect of FCHo2 binding and not due to de novo production of PI(4,5)P2.\n\nTo confirm that FCHo1/2 proteins induce PI(4,5)P2 clustering formation in cellulo, we overexpressed FCHo1 and 2 in HT1080 cells. As previously reported, we confirmed that FCHo1/2 localized preferentially at the plasma membrane (Henne et al., 2010), organized into protein assemblies of different dimensions (Figure 1E). In agreement to what we observed on plasma membrane sheets, our in cellulo data showed a co-localization between FCHo1/2 and endogenous plasma membrane PI(4,5)P2 (see Materials and methods; Figure 1E). Furthermore, we detected a significant increase in the average intensity of PI(4,5)P2 domains in the presence of FCHo proteins (Figure 1F). Altogether, these results suggest that FCHo1/2 has the capability to accumulate PI(4,5)P2 locally.\n\n### FCHo2-mediated PI(4,5)P2 clustering primes pre-endocytic events\n\nWe next analyzed if FCHo2-mediated PI(4,5)P2 clustering participates in the formation of clathrin-coated structures. Both membrane activity and FCHo2 interaction with binding partners are required to direct clathrin-coated structures' growth and stability (Lehmann et al., 2019). Whereas the membrane-bending activity and interaction with negatively charged lipids is primarily encoded within the F-BAR domain (Henne et al., 2010), the interaction with AP2 and Eps15 is mediated by a downstream AP2-activating (APA) domain and C-terminal \u03bc-HD (Ma et al., 2016; Hollopeter et al., 2014). We determined by immunofluorescence the formation of clathrin-positive puncta on supported lipid bilayers made of 20% of negatively charged lipids incubated with nonlabeled F-BAR domain (residues 1\u2013262), extended F-BAR domain (F-BAR-x, residues 1\u2013430) (Henne et al., 2010), or full-length FCHo2 (Figure 2A and B). We reconstituted clathrin-coat assembly in vitro by using active cytosolic components from Xenopus egg extracts supplemented with ATP and GTP\u03b3S, as previously reported (Walrant et al., 2015; Daste et al., 2017). As expected, in the absence of FCHo2, the addition of cytosolic extracts leads to the appearance of clathrin-positive puncta as compared to the ATP and GTP\u03b3S alone (Figure 2C, Figure 2\u2014figure supplement 1). Under these conditions, we could also detect a residual signal of the FCHo2 antibody, corresponding to the endogenous protein present in the cytosolic extracts. Incubation of 1 \u00b5M of FCHo2 with cytosolic extracts on 5% PI(4,5)P2-containing lipid bilayers resulted in a twofold increase in the normalized intensity of the PI(4,5)P2 signal on clathrin-positive puncta (Figure 2C and D), which is convoyed by a sevenfold increase in the normalized intensity of clathrin-positive spots (Figure 2C and E). We observed a moderate increase in the local intensity of both PI(4,5)P2 and clathrin structures in the presence of the F-BAR domain alone, in agreement with its reported ability to assist PI(4,5)P2 microdomain formation (Zhao et al., 2013). Furthermore, this effect was intensified by the F-BAR-x, supporting the combined contribution of the APA domain (Ma et al., 2016; Lehmann et al., 2019) and the enhanced tubulation effect of this construct (Henne et al., 2010) in promoting a local PI(4,5)P2 enrichment and the formation of clathrin-positive structures (Figure 2C\u2013E). Replacement of PI(4,5)P2 by PS preserved FCHo2 association with membranes but prevented the detection of clathrin in our in vitro assay, supporting the functional role of PI(4,5)P2 in clathrin-coat formation. Thus, these results indicate that, in addition to its membrane-remodeling activity, FCHo2 might promote clathrin assembly by clustering PI(4,5)P2 and that the association with interacting partners in cytosolic extracts enhances this effect, possibly via the APA domain.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig2-v2.jpg)\n\n**Figure 2.:** (A) Left: cartoon of the in vitro clathrin-coat assembly with cytosolic extracts and immunofluorescence assay to detect FCHo2 and clathrin-positive structures on 5% mol PI(4,5)P2-containing supported lipid bilayers. Left: representative still airyscan images on lipid bilayers doped with fluorescent PI(4,5)P2 (yellow) showing the co-localization with FCHo2 (magenta) and clathrin (cyan). Intensity profile along the orange dotted line in the corresponding image. Scale bar, 2 \u00b5m. (B) Protein domain mapping of F-BAR domain (residues 1\u2013262), F-BAR-x (residues 1\u2013430), or full-length FCHo2 showing the F-BAR, APA, and C-terminal \u00b5-HD domains. (C) Representative airyscan images of lipid bilayers containing either 5% mol PI(4,5)P2 or 20% PS (yellow) (total negative charge is 20%) that were incubated with recombinant FCHo2 (+FCHo2), F-BAR domain (+F-BAR), or F-BAR-x domain (+F-BAR-x) and 4 mg/ml of cytosolic extracts (+Cyto) or only with the cytosolic extract (only Cyto). Clathrin (blue) and FCHo2 (magenta) were detected by immunofluorescence (antibody, Ab). Scale bar, 2 \u00b5m. (D, E) Log10 scale distribution of the normalized intensity of fluorescent PI(4,5)P2 on clathrin-positive structures and normalized intensity of clathrin structures, respectively, in the absence (only Cyto) or presence of either FCHo2, F-BAR, or F-BAR-x combined to cytosolic extracts on PI(4,5)P2 or PS-containing bilayers. Mean, in red. One-way ANOVA (****p<0.0001). The number of clathrin-positive spots analyzed was n = 11,564, n = 9292, n = 4719, n = 2205, and n = 1635, as set in the graph from at least three independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Scale bar, 5 \u00b5m.\n\n### Assembly of FCHo2 into molecular clusters prompts membrane bending\n\nA characteristic hallmark of endocytic proteins on cellular membranes is their spatial organization into punctate structures (Henne et al., 2010; Ma et al., 2016), and we systematically observed this feature on plasma membrane sheets and in vitro membranes (Figure 1, Figure 1\u2014figure supplement 5). Co-segregation of early endocytic proteins into sub-micrometer scale clusters relies on multivalent interactions (Day et al., 2021). Therefore, we asked what might be the role of PI(4,5)P2 in the spatial organization of FCHo2. We estimated by airyscan microscopy the average size of FCHo2 puncta on cellular membranes (i.e., plasma membrane sheets) and on 5% PI(4,5)P2-containing bilayers after the addition of 1 \u00b5M of FCHo2-Alexa647 (Figure 3A and B), which was on both cases ~0.067 \u03bcm2. On lipid bilayers doped with 5% PI(4,5)P2, we could also detect that the F-BAR domain alone can assemble into punctate structures, although the average size was ~0.094 \u03bcm2. Interestingly, replacing 5% PI(4,5)P2 by PS led to a homogeneous surface distribution of FCHo2 and prevented the detection of sub-micrometric puncta. Therefore, suggesting that PI(4,5)P2 multivalent interactions through the F-BAR promote FCHo2 segregation into molecular clusters.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative airyscan images of plasma membrane sheets or lipid bilayers doped with either 5% mol PI(4,5)P2 or 20% PS (total negative charge is 20%) and incubated with FCHo2-Alexa647 (magenta) or F-BAR-Alexa647 (green). Scale bar, 2 \u00b5m. (B) Size distribution of FCHo2 (magenta) and F-BAR (green) molecular clusters (in \u00b5m2) on plasma membrane sheets (cell) or lipid bilayers (SLB) containing 5% mol of PI(4,5)P2. Median value is displayed in red. The number of molecular clusters analyzed was n = 10,793, n = 19,287, and n = 7028, as set in the graph from at least three independent experiments. (C) Representative atomic force microscopy (AFM) image of FCHo2 molecular clusters (white dashed region) on supported lipid bilayers containing 5% mol PI(4,5)P2. (D) Size distribution of FCHo2 molecular clusters (in \u00b5m2) obtained from AFM images. (E) Height distribution of FCHo2 molecular clusters (in nm) at low (gray) and high (red) setpoint forces from at least three replicates.\n\nNext, we used atomic force microscopy (AFM) to investigate FCHo2 molecular clusters at nanometer-scale resolution. Supported lipid bilayers doped with 5% PI(4,5)P2 were formed on freshly cleaved mica disks (see Materials and methods). Before adding proteins, we confirmed the homogeneity and absence of defects of supported bilayers under the imaging buffer. Injection of full-length FCHo2 at 1 \u00b5M in the imaging chamber resulted in sub-micrometric protein patches with a median dimension of ~0.005 \u00b5m2 that protruded out of the flat membrane surface with an average height of ~47 \u00b1 3 nm (Figure 3C\u2013E). An increase in the setpoint force from minimal values (a few tens of pN) to intense forces (around 100 pN) resulted in the reduction of the height of FCHo2 clusters down to ~15 \u00b1 2 nm, thus suggesting that FCHo2 can moderately bend supported lipid membranes at minimal AFM imaging forces.\n\n### FCHo2 forms ring-like-shaped assemblies on flat membranes\n\nTo establish the biogenesis of FCHo2 clusters at the molecular level, we used HS-AFM. Real-time imaging of the initial stages revealed the entire molecular process of FCHo2 cluster formation, from the binding of single FCHo2 homodimers to the growth of molecular clusters (Figure 4A). Representative time-lapse images and kymograph analysis along the dashed region at t = 0 s showed that the binding of individual FCHo2 proteins engages an indentation of few nanometers in the lipid membrane adjacent to the protein surface (Figure 4B, green arrowheads), as delineated from the cross-sectional profile along the red dashed box in the corresponding kymograph (Figure 4A). The binding of FCHo2 was rapidly prompted by the arrival of additional FCHo2 homodimers (as highlighted by white arrowheads in the kymograph). This stage of the process was characterized by minimal lateral interactions and the existence of contacts between adjacent FCHo2 homodimers, ultimately leading to a ring-like organization (Figure 4C, Figure 4\u2014figure supplement 1). This dynamic reorganization, which we named as the \u2018ring formation\u2019 step, spanned over ~80\u2013100 s.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig4-v2.jpg)\n\n**Figure 4.:** (A) High-speed atomic force microscopy (HS-AFM) movie frames of the binding of FCHo2 on 5% mol PI(4,5)P2-containing membranes. Kymograph analysis performed on the white outline to display the representative stages of FCHo2 binding and self-assembly on flat membranes. White arrowheads highlight the docking of new FCHo2 homodimers to the growing molecular cluster. (B) Profile analysis along the red outline in (A). Green arrowheads highlight the membrane invagination upon binding of FCHo2 on lipid membranes. (C) HS-AFM movie snapshot of the FCHo2 ring formation along with a representative tracking of individual homodimers (n = 3) and the heat map projection within a time interval, \u0394t, of ~80 s. (D) Size distribution (in nm) estimated from individual FCHo2 proteins before the cluster growth (t \u2264 200 s). (E) HS-AFM snapshots (t = 0 min and t = 19 min) illustrating the growth of FCHo2 molecular clusters into ring-like-shaped protein patches. Magnified image corresponds to the dashed outline. (F) Distribution of the docking time (in s) of individual and ring-like FCHo2 assemblies during the cluster growth from at least three replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Different regions of interest (ROIs) show the FCHo2 ring formation stage, which took place within a time interval, \u0394t, of ~80 s.\n\nThe identification of individual proteins at the initial stages allowed us to extract the average dimension of the full-length protein interacting with the flat membrane, which was ~32 \u00b1 8 nm (Figure 4D) and in good agreement with the size of the F-BAR domain reported from electron microscopy micrographs (Frost et al., 2008). After the ring formation, we observed the growth of FCHo2 clusters through docking events that involved individual FCHo2 homodimers and the coalescence of adjacent FCHo2 rings (Figure 4A, white arrowheads). FCHo2 self-organization into hollow ring-like assemblies was particularly discernible at the growth front of FCHo2 molecular clusters (Figure 4E and magnified image). Although the entire formation of FCHo2 molecular clusters expanded over few tens of minutes, we found that the docking of individual proteins and rings to support the expansion of the cluster took place every ~115 \u00b1 94 s (Figure 4F). Collectively, our results suggest that on flat membranes FCHo2 exhibits an intrinsic ability to self-assemble into a ring-like-shaped molecular complex independently of the local protein density.\n\n### PI(4,5)P2 assists FCHo2 partitioning on curved membranes\n\nBecause the transition from a flat surface to a dome-like invagination is a major step in the formation of clathrin-coated structures (Haucke and Kozlov, 2018), we set out to monitor the organization of FCHo2 on curved membranes. To this end, we engineered arrays of SiO2 vertical nano-domes of radii R ~ 150 nm using soft nano-imprint lithography (soft-NIL) (Figure 5A), as previously reported (Sansen et al., 2020). We functionalized SiO2 nano-patterned substrates with supported lipid bilayers containing 20% of negatively charged lipids. Curvature sensing abilities of F-BAR proteins rely on hydrophobic insertion motifs, as in the case of syndapin 1 (Ramesh et al., 2013), or intrinsically disordered regions (IDRs) as reported for FBP17 (Su et al., 2020). Indeed, the F-BAR domain of FBP17 displays minimal curvature sensing properties in vitro as compared to its IDR. Thus, we determined by airyscan microscopy the surface organization of the F-BAR domain and full-length FCHo2 labeled with Alexa647 on nano-domes in the presence of lipid bilayers containing 5% mol of PI(4,5)P2 (Figure 5B). The three-dimensional (3D) rendering of the protein signal relative to a reference marker to depict the nano-dome topography (DHPE lipid, in gray) showed that while the F-BAR domain is excluded from the nanostructure, the FCHo2 staining is well present at the base of the nano-dome (Figure 5B). We hypothesized that if the association of FCHo2 with PI(4,5)P2 is essential for its localization on curved membranes, disrupting this interaction would change its spatial organization. Indeed, this was the case, and replacing PI(4,5)P2 by PS (20% mol PS) led to the complete distribution of FCHo2 all over the nano-dome surface (Figure 5B, yellow).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig5-v2.jpg)\n\n**Figure 5.:** (A) SEM images of SiO2 substrates displaying an array of nano-domes with a radius, R ~ 150 nm generated by soft-NIL. Scale bar, 2 \u00b5m. Inset, scale bar is 500 nm. (B) Representative 3D renders of the surface organization of the F-BAR domain (green) and FCHo2 (magenta) on nano-domes functionalized with either 5% mol PI(4,5)P2 or 20% PS-containing membranes (yellow) relative to the DHPE lipid dye signal (gray). Scale bar, 400 nm. (C) Left: schematic representation of the acquisition of a single plane (Z = 1) at the top and bottom of nano-domes to visualize the preferential distribution of proteins. Right: representative airyscan images showing the surface distribution of fluorescent DHPE (gray) and PI(4,5)P2 (cyan) on nano-domes along with a cross section (orange dashed line) of the normalized fluorescence intensity of DHPE (gray) and PI(4,5)P2 (cyan) at the top and bottom of the nano-dome. (D) Representative airyscan images showing the surface distribution of the PH (PLC\u03b41) domain (green) on nano-domes functionalized with 5% mol of PI(4,5)P2. (E, F) Representative airyscan images (E) and average profile analysis of the normalized fluorescence intensity (F) showing the surface distribution of fluorescent DHPE (gray) and F-BAR (green), F-BAR-x (orange), and FCHo2 (magenta) on PI(4,5)P2-containing membranes and FCHo2 (yellow) on PS-containing membranes at the bottom of nano-domes. Each curve represents the mean \u00b1 SD of n = 20 nano-domes from at least three replicates.\n\nTo determine the precise localization of FCHo2 on nano-domes, we performed airyscan acquisitions at two z planes, at the top of the nano-dome and the bottom, according to the z-axis resolution of the setup (~0.35 \u00b5m) (Huff et al., 2017; Figure 5C). First, we determined whether the distribution of PI(4,5)P2 on the nano-domes was homogeneous. To this end, we monitored the axial localization of the PI(4,5)P2 signal relative to the DHPE lipid dye on nano-domes coated with 5% PI(4,5)P2-containing lipid bilayer (Figure 5C). The cross-sectional analysis showed an equivalent surface distribution of the PI(4,5)P2 and DHPE lipid dye under our experimental conditions. Second, to confirm that TF-TMR-PI(4,5)P2 signal was replicating the actual organization of the total pool of PI(4,5)P2 on nano-domes, we analyzed the distribution of the PH domain of PLC\u03b41 PH(PLC\u03b41), which is a well-established reporter of PI(4,5)P2 (Lemmon et al., 1995). As expected, we obtained a homogenous organization of the PH(PLC\u03b41), as indicated by the detection of the domain signal both on the flat surface (bottom plane) and all over the nano-dome structure (top plane) (Figure 5D). Following the same rationale, we monitored the surface localization of the F-BAR and extended F-BAR-x domains, and FCHo2 relative to DHPE, as a reference of the nano-dome height. On nano-domes functionalized with PI(4,5)P2-containing membranes, the F-BAR and F-BAR-x preferentially bind to the flat surface and appear absent from the nano-dome structure (Figure 5E and F, green and orange). Whereas FCHo2 revealed a preferential accumulation at the base of the nano-dome (Figure 5E and F, magenta). Finally, in the presence of PS membranes, FCHo2 was no longer accumulated at the edges of nano-domes and displayed a homogenous distribution (Figure 5E and F, yellow). Collectively, these data suggest that the F-BAR domain of FCHo2 displays minimal sensing of curvatures of radii ~150 nm in vitro and that PI(4,5)P2-mediated accumulation of FCHo2 at the rims of nano-domes is likely to originate via its downstream protein regions (i.e., the disordered central region [Day et al., 2021] and C-terminal \u03bc-HD [Ma et al., 2016; Hollopeter et al., 2014]), in agreement with the curvature-sensing profile reported for the F-BAR domain protein FBP17 (Su et al., 2020).\n\n## Discussion\n\nThis study reports a molecular visualization of the docking and self-assembly of the endocytic protein FCHo2 on in vitro and cellular membranes (Figure 6). Our results show that PI(4,5)P2 is a primary spatial regulator of the recruitment of FCHo2 by promoting its accumulation and sorting on flat and curved membranes (Figures 1 and 6). These observations support the model that, in addition to protein-protein interactions (Day et al., 2021), multivalent lipid-protein interactions play an instrumental role in upholding the early stages of endocytosis. Furthermore, we show that, in the absence of ATP, FCHo2 oligomerization induces PI(4,5)P2 clustering formation on cellular membranes that are often co-localized with TfR and EGFR-positive puncta (Figure 1). This association was particularly remarkable in the case of the EGFR and agreed with the observation that electrostatic interaction of the polybasic motifs at the cytoplasmic tail of the EGFR mediates its clustering on PI(4,5)P2-enriched domains (Kolds\u00f8 et al., 2014; Wang et al., 2014; Abd Halim et al., 2015). As previously reported, FCHo1/2 is needed to recruit Eps15 (Henne et al., 2010) and form FCHo1/2-Eps15 micrometer-scale domains on membranes (Day et al., 2021). By driving PI(4,5)P2 clustering formation at the boundary of cargo receptors, FCHo2 is likely to improve the stability of a network of PI(4,5)P2-interacting proteins through avidity (Chen et al., 2019). Indeed, the F-BAR domain alone was reported to facilitate local PI(4,5)P2 accumulation and our observations confirm a 1.4-fold increase in the formation of clathrin-positive assemblies on in vitro membranes (Figure 2). This effect is intensified by the coupled action of membrane tubulation and the APA domain, possibly via AP2 activation, in agreement with previous studies pointing that clustering of Fcho1/2Eps15/AP2 primes endocytosis (Ma et al., 2016; Lehmann et al., 2019). Furthermore, we discerned clathrin-positive puncta in lower FCHo2 concentrations but not in PI(4,5)P2-depleted membranes, which agrees with the observation that AP2 can create its local pool of PI(4,5)P2 (Krauss et al., 2006), although it requires PI(4,5)P2 for its localization and activation at the plasma membrane (Kadlecova et al., 2017; H\u00f6ning et al., 2005). Thus, our measurements point out that local PI(4,5)P2 enrichment induced by FCHo2 might operate as a complementary and/or synergistic mechanism to PI(4,5)P2 synthesis on promoting pre-endocytic events (Figures 1 and 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73156/elife-73156-fig6-v2.jpg)\n\n**Figure 6.:** FCHo2 recruitment of membranes is mediated by PI(4,5)P2. Increase in the local PI(4,5)P2 concentration enhances the spatial accumulation of FCHo2 through multivalent interactions between the positively charged surface of the F-BAR domain and polybasic region with PI(4,5)P2 molecules. Binding of FCHo2 on cellular membranes is convoyed by PI(4,5)P2 clustering formation at the boundary of clathrin-regulated cargo receptors and the self-assembly of FCHo2 into a ring-like-shaped protein complex. As a result of this singular organization, the local accumulation of PI(4,5)P2 and APA/\u03bcHD of FCHo2 is likely to facilitate the formation of an interacting network with downstream partners, such as Eps15 and AP2 (Ma et al., 2016; Henne et al., 2007), ultimately leading to the assembly of clathrin structures on a PI(4,5)P2-rich interface that could be amplified by phosphoinositides metabolizing enzymes (Posor et al., 2015). In the absence of endocytic partners, FCHo2 rings grow into sub-micrometric molecular clusters, leading to membrane bending and the partitioning on curved membranes.\n\nThis work provides the first evidence that FCHo2 self-assembles into ring-like molecular complexes on flat lipid bilayers (Figures 3 and 4) and supports the observation of FCHo2 rings at the edges of nascent clathrin-coated structures in living cells (Lehmann et al., 2019). This singular organization agrees with a side-lying conformation proposed for F-BAR scaffolds at low protein densities on flat surfaces (Frost et al., 2008) and the partitioning of FCHo1/2 at the rims of flat clathrin lattices (Sochacki et al., 2017). HS-AFM movies show that the ring formation process is relatively fast and takes place within less than 100 s (Figure 4), which is compatible with the temporal scales reported during clathrin-coat assembly (Taylor et al., 2011). Previous works reported that lateral contacts stabilize the self-assembly of F-BAR domains on membrane tubules (Frost et al., 2008; Mim et al., 2012), and our investigations point out that this type of interaction might also occur on flat surfaces. We observed the anisotropic growth and formation of FCHo2 molecular clusters in the absence of other endocytic proteins and, importantly, show that F-BAR proteins can moderately bend flat membranes at high protein densities.\n\n### Conclusions\n\nIn conclusion, our study provides a molecular picture of the recruitment and self-assembly of the early endocytic protein FCHo1/2 on membranes. We found that the binding of FCHo2 on cellular membranes promotes the local accumulation of PI(4,5)P2 at the vicinity of clathrin-regulated cargo receptors. As a result, in the absence of phosphoinositides-metabolizing enzymes, FCHo2 can enhance the formation of clathrin structures through PI(4,5)P2-rich interfaces, which could explain previous studies showing that FCHo1/2 depletion slows down the progression of cargo-loaded clathrin structures (Ma et al., 2016; Hollopeter et al., 2014; Umasankar et al., 2012; Mulkearns and Cooper, 2012). Because FCHo1/2 is among the first proteins recruited at endocytic sites, the discovery that FCHo2 self-assembles into rings convoyed by local PI(4,5)P2 accumulation and membrane bending provides a fundamental understanding of the initiating mechanism of CME (Haucke and Kozlov, 2018; Lehmann et al., 2019).\n\n## Materials and methods\n\n### Lipids and reagents\n\nNatural and synthetic phospholipids, including POPC, POPS, Egg-PC, Brain-PS, Brain-PI(4,5)P2, and fluorescent TopFluor-TMR-PI(4,5)P2 and TopFluor-TMR-PS, are from Avanti Polar Lipids, Inc Oregon green 488-DHPE and Alexa Fluor 647 Maleimide labeling kit are from Invitrogen. Atto647N-DOPE was from Sigma. Monoclonal mouse anti-clathrin heavy chain (dilution 1:1000; Cat# 610499) was from BD Biosciences, and polyclonal rabbit anti-FCHo2 (dilution 1:1000; Cat# NBP2-32694) was from Novusbio.\n\n### Mammalian cell line\n\nHT1080 cells were kindly provided by Dr. N. Arhel, IRIM, CNRS UMR9004, Montpellier, France. Cell lines were verified to be free of mycoplasma contamination, and the identities were authenticated by short tandem repeat (STR) profiling (Eurofins Genomics).\n\n### EGFR-GFP and TfR-GFP stable cell lines\n\npRRL.sin.cPPT.SFFV-EGFP/IRES-puro was kindly provided by C. Goujon (IRIM, CNRS UMR9004, Montpellier, France), the EGFR-GFP vector was a gift from Alexander Sorkin (Addgene plasmid #32751), and the pBa.TfR.GFP vector was a gift from Gary Banker and Marvin Bentley (Addgene plasmid # 4506). The GFP was replaced by a GFP-delta-ATG using these primers: 5\u2032-gtatatatatGGATCCGTGAGCAAGGGCGAGGAG-3\u2032 and 5\u2032-CTCACATTGCCAAAAGACG-3\u2032. GFP-delta-ATG fragment replaced the GFP- fragment in pRRL.sin.cPPT.SFFV-EGFP/IRES-puro using a BamHI-XhoI digestion. EGFR was amplified with these primers: 5\u2032-caaatatttgcggccgcATGCGACCCTCCGGGACG-3\u2032 and 5\u2032-gtataccggttgaacctccgccTGCTCCAATAAATTCACTGCTTTGTGG-3\u2032 and cloned into pRRL.sin.cPPT.SFFV-EGFP-delta-ATG/IRES-puro using NotI-AgeI to generate a fused EGFR-GFP protein.\n\nLentiviral vector stocks were obtained by polyethylenimine (PEI)-mediated multiple transfection of 293T cells in six-well plates with vectors expressing Gag-Pol (8.91), the mini-viral genome (pRRL.sin.cPPT.SFFV-EGFR-GFP/IRES-puro), and the Env glycoprotein of VSV (pMD.G) at a ratio of 1:1:0.5. The culture medium was changed 6 hr post transfection and lentivectors containing supernatants harvested 48 hr later, filtered, and stored at \u201380\u00b0C.\n\nThe mini-viral genome (pRRL.sin.cPPT.SFFV-TFR-GFP/IRES-puro) and the corresponding lentivectors were generated as detailed in the case of the EGFR-GFP.\n\nTo generate a stable cell line HT1080 expressing EGFR-GFP or TfR-GFP, HT1080 cells were transduced in six-well plates using the supernatant of one six-well plates of the lentiviral stock production detailed above. The culture medium was changed 6 hr post transduction. Puromycin (1 \u00b5g/ml) was added 48 hr after transduction. The percentage of GFP-expressing cells was enumerated by flow cytometry 72 hr after selection under puromycin.\n\nHT1080 cells constitutively expressing the EGFR-GFP or TfR-GFP were cultured in DMEM GlutaMAX supplemented with 10% fetal calf serum, 100 U/ml of penicillin and streptomycin and 1 \u00b5g/ml of puromycin at 37\u00b0C in 5% CO2. Cell lines were tested negative for mycoplasma.\n\n### Protein purification and protein labeling\n\npGEX-6P-1 vectors coding for the mouse full-length FCHo2 (aa 1\u2013809), F-BAR domain (aa 1\u2013262), and F-BAR-x (aa 1\u2013430) were obtained from HT McMahon (MRC Laboratory of Molecular Biology, Cambridge, UK). Proteins were subcloned into a pET28a vector with a PreScission protease cleaving site. Proteins were expressed in BL21(DE3) bacteria and purified by affinity chromatography using a HiTrap chelating column (GE Healthcare) according to the manufacturer\u2019s instructions in 50 mM Tris at pH 8.0, 100 mM NaCl. Proteins were expressed overnight at 18\u00b0C using 1 mM IPTG. Proteins were then dialyzed overnight in a Slide-A-Lyzer dialysis cassette (MWCO 10000) before Alexa Fluor 647 maleimide labeling following the protocol described by the manufacturer (Invitrogen). Protein concentrations were measured using a Bradford assay (Bio-Rad).\n\nRecombinant GST-eGFP-PH-domain (PLC\u03b41) detecting PI(4,5)P2 was purified as described in Sansen et al., 2020.\n\n### Xenopus laevis egg extracts\n\nLaid eggs were rinsed twice in XB Buffer (100 mM KCl, 1 mM MgCl2, 0.1 mM CaCl2, 50 mM sucrose, and 10 mM HEPES at pH 7.7) and subsequently dejellied with 2% cysteine solution pH 7.8. Once dejellied, they were extensively rinsed with XB buffer to completely eliminate cysteine solution.\n\nEggs were then recovered from a Petri dish and treated with Ca2+ ionophore (final concentration 2 \u03bcg/ml), and 35 min later, they were crushed by centrifugation for 20 min at 10,000 \u00d7 g at 4\u00b0C. The cytoplasmic layer was collected and supplemented with cytochalasin B (50 \u03bcg/ml), aprotinin (5 \u03bcg/ml), leupeptin (5 \u03bcg/ml), and 10 mM creatine phosphate. Cytoplasmic extract was centrifuged again for 20 min at 10,000 \u00d7 g. Extracts were frozen and then used as described in Figure 2.\n\nThe energy mix consisted of 1.5 mM ATP, 0.15 mM GTP\u03b3S, 16.7 mM creatine phosphate, and creatine phosphokinase 16.7 U/ml, as previously reported (Wu et al., 2010).\n\n### Supported lipid bilayers\n\nLipid mixtures consisted of 80\u201385% Egg-PC, 10\u201315% Brain-PS, and 5\u201310% of Brain-PI(4,5)P2. The amount of total negatively charged lipids was kept to 20% for any of the mixtures containing phosphoinositides at the expenses of Brain-PS. If needed, fluorescent lipids were added to 0.2%.\n\nFor fluorescence microscopy experiments, supported lipid bilayers were prepared as described in Braunger et al., 2013. Experiments were performed by injecting 20 \u00b5l of buffer (20 mM Tris, pH 7.4, 150 mM NaCl, and 0.5 mg/ml of casein). Supported lipid bilayers were imaged on a Zeiss LSM880 confocal microscope.\n\nFor HS-AFM experiments, supported lipid bilayers were prepared following the method described in Picas et al., 2010. Briefly, large unilamellar vesicles (LUVs, diameter ~100 nm) were obtained by extrusion of multilamellar vesicles of 85% POPC, 10% POPS, and 5% Brain-PI(4,5)P2 in 20 mM HEPES, pH 7.4, 150 mM NaCl. LUVs were supplemented with 20 mM of CaCl2 and deposited onto freshly cleaved mica disks. Samples were incubated for 20 min at 60\u00b0C and extensively rinsed with 20 mM HEPES, pH 7.4, 150 mM NaCl, 20 mM EDTA. Finally, bilayers were rinsed and keep under the imaging buffer, 20 mM HEPES, pH 7.4, 150 mM NaCl.\n\n### Plasma membrane sheets\n\nUnroofing of HT1080 cells stably expressing TfR-GFP or EGFR-GFP was performed by tip sonication as reported in Heuser, 2000. Cells were rinsed three times in cold Ringer buffer supplemented with Ca2+ (155 mM NaCl, 3 mM KCl, 3 mM NaH2PO4, 5 mM HEPES, 10 mM glucose, 2 mM CaCl2, 1 mM MgCl2, pH 7.2), then immersed 10 s in Ca2+-free Ringer buffer containing 0.5 mg/ml poly-L-lysine. Cells were unroofed by scanning the coverslip with the tip sonicator at 10% of power under HKMgE buffer consisting of 70 mM KCl, 30 mM HEPES, 5 mM MgCl2, 3 mM EGTA, pH 7.2. Unroofed cells were kept in HKMgE buffer. Fluorescent labeling of plasma membrane sheets was performed immediately after unroofing by incubating the sample with 100 nmol of TopFluor-TMR-PtdIns(4,5)P2 suspended in 0.2% of absolute ethanol during 5 min, as reported in Mueller et al., 2011. Then, samples were extensively rinsed with HKMgE buffer and immediately imaged under the Zeiss LSM880 confocal microscope. Before addition of 1 \u00b5M of FCHo2-Alexa647, unroofed cells were rinsed with HKMgE buffer supplemented with 0.5 mg/ml of casein.\n\n### Immunofluorescence\n\nSupported lipid bilayers were fixed in 3.2% PFA in PBS for 2 min at room temperature, then rinsed in PBS twice. Samples were stained for the primary antibody for 45 min at room temperature in 1% BSA. Then, the secondary antibody was incubated for 45 min.\n\nHT1080 cells were transfected with either pmCherry-C1 (empty vector), FCHo1-pmCherryC1, or FCHo2-pmCherryC1 using Lipofectamine 2000 (Thermo Fisher) according to the manufacturer\u2019s instructions. Then, plasma membrane staining of endogenous PI(4,5)P2 was performed as described in Elong Edimo et al., 2016. Briefly, cells were fixed on ice with 3.7% formaldehyde and 0.2% glutaraldehyde for 15 min. After three washes with NH4Cl, cells were incubated for 1 hr in blocking buffer (PIPES-BS, NH4Cl 50 mM, 1% lipid-free BSA, Saponin 0.05%), then incubated for 2 hr with recombinant GST-eGFP-PH-domain (PLC\u03b41) probe against PI(4,5)P2 in PIPES-BS, 1% lipid-free BSA, Saponin 0.1% on ice. After three washes with PIPES-BS for 5 min, cells were incubated with 3.7% formaldehyde for 10 min, then 5 min at room temperature.\n\nFinally, all samples were extensively rinsed in PBS, then in sterile water, and mounted with a Mowiol 4-88 mounting medium (Polysciences, Inc). Montage was allowed to solidify in the dark for 48 hr before microscope acquisitions.\n\nThe FCHo1-pmCherryC1 and FCHo2-pmCherryC1 vectors were a gift from Christien Merrifield (Addgene plasmid #27690 and #27686, respectively).\n\n### Silica thin-film nanostructuration\n\nSiO2 vertical nanostructures were prepared on conventional borosilicate coverslips with precision thickness no. 1.5 (0.170 \u00b1 0.005 mm), as previously reported (Sansen et al., 2020; Zhang et al., 2020). Briefly, Si masters were elaborated using LIL lithography as detailed in Zhang et al., 2020 and Zhang et al., 2019. Polydimethylsiloxane (PDMS) reactants (90 w% RTV141A; 10 w% RTV141B from Bluesil) were transferred onto the master and dried at 70\u00b0C for 1 hr before unmolding.\n\nSilica precursor solution was prepared by adding 4.22 g tetraethyl orthosilicate (TEOS) into 23.26 g absolute ethanol, then 1.5 g HCl (37%), and stirring the solution for 18 hr. The final molar composition was TEOS:HCl:EtOH = 1:0.7:25. All the chemicals were from Sigma. Gel films were obtained by dip-coating the coverslips with a ND-DC300 dip-coater (Nadetech Innovations) equipped with an EBC10 Miniclima device to control the surrounding temperature and relative humidity to 20\u00b0C and 45\u201350%, respectively. The thickness of the film was controlled by the withdrawal rate at 300 mm/min. After dip-coating, gel films were consolidated at 430\u00b0C for 5 min. Then, a new layer of the same solution was deposited under the same conditions for printing with the PDMS mold. After imprinting, the samples were transferred to a 70\u00b0C oven for 1 min and then to a 140\u00b0C oven for 2 min to consolidate the xerogel films before peeling off the PDMS mold. Finally, the sol\u2013gel replicas were annealed at 430\u00b0C for 10 min for consolidation.\n\n### Fluorescence microscopy\n\nImages were acquired on a Zeiss LSM880 Airyscan confocal microscope (MRI facility, Montpellier). Excitation sources used were an argon laser for 488 nm and 514 nm, and a helium/neon laser for 633 nm. Acquisitions were performed on a \u00d763/1.4 objective. Multidimensional acquisitions were acquired via an Airyscan detector (32-channel GaAsP photomultiplier tube array detector).\n\n### HS-AFM imaging\n\nHS-AFM movies were acquired with an HS-AFM (SS-NEX, Research Institute of Biomolecule Metrology, Tsukuba, Japan) equipped with a superluminescent diode (wavelength, 750 nm; EXS 7505-B001, Exalos, Schlieren, Switzerland) and a digital high-speed lock-in Amplifier (Hinstra, Transcommers, Budapest, Hungary) detailed in Colom et al., 2013 following the protocol detailed in Zuttion et al., 2018. Scanning was performed using USC-1.2 cantilevers featuring an electron beam deposition tip (NanoWorld, Neuch\u00e2tel, Switzerland) with a nominal spring constant k = 0.15 N/m, resonance frequency f(r) = 600 kHz, and quality factor Qc \u2248 2 under liquid conditions. For high-resolution imaging, the electron beam deposition tip was sharpened by helium plasma etching using a plasma cleaner (Diener Electronic, Ebhausen, Germany). Images were acquired in amplitude modulation mode at the minimal possible applied force that enables good quality of imaging under optical feedback parameters.\n\n### Image processing and quantification\n\nLine profiles of the fluorescence intensities were done using ImageJ (Schneider et al., 2012), and the kymographs were made using the Kymograph plugin (http://www.embl.de/eamnet/html/body_kymograph.html).\n\nProtein binding was quantified by measuring the mean gray value of the protein channel that was then normalized by the mean gray value of the membrane intensity (as indicated by the TF-TMR-PI(4,5)P2 fluorescence) in the same image. Mean gray values were measured once protein binding reached the steady state, which was estimated from the binding kinetics to be <4 min. Protein binding was averaged from three experimental replicates. Mean gray values were measured using ImageJ. Concentrations and confocal parameters were kept constant between experiments and samples.\n\nThe automatic analysis of images to determine molecular clusters was performed with ImageJ (Schneider et al., 2012). Spots of different sizes were detected using a scale space spot detection (Lindeberg, 1994) and overlapping spots were merged. The LoG filter of the FeatureJ plugin (Erik, 2020) was used to create the scale space. Starting points were detected as local minima of the minimum projection and as minima on the smallest scale. A simplified linking scheme was applied that looks for minima along the scales for each starting point within the radius of the spot on the given scale. Two spots were merged if at least 20% of the surface of one spot is covered by the other. The noise tolerance for the spot detection was determined manually for each series of input images.\n\nHS-AFM images were processed using Gwyddion, an open-source software for SPM data analysis, and WSxM (Horcas et al., 2007).\n\n### Data representation and statistical analysis\n\nRepresentation of cross-sectional analysis and recruitment curves was performed using Origin software. 3D rendering of Airyscan images was generated with the 3/4D visualization and analysis software Imaris (Oxford Instruments).\n\nStatistical analysis was performed using the two-tailed, unpaired Welch\u2019s t-test, or ordinary one-way ANOVA and Dunnett\u2019s multiple comparisons test, with single pooled variance using GraphPad Prism software. In all statistics, the levels of significance were defined as *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.\n",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "3ebf0a61-3876-49c6-a8e1-78d63fd6c95e",
+      "submission_id": "f6ad7109-3959-444a-bc19-00e65d2783de",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jos\u00e9 D Faraldo-G\u00f3mez, National Heart, Lung and Blood Institute, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73156.sa1](https://doi.org/10.7554/eLife.73156.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0891ee93-1b74-4aa1-ad18-e8ee05d7aa74",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C1",
+      "claim": "Clathrin-mediated endocytosis (CME) is a central trafficking pathway in eukaryotic cells regulated by phosphoinositides.",
+      "claim_type": "EXPLICIT",
+      "source": "Clathrin-mediated endocytosis (CME) is a central trafficking pathway in eukaryotic cells regulated by phosphoinositides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that references established scientific knowledge about CME.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "6c4e57df-81bc-455a-a51f-33dedbe11682",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C2",
+      "claim": "The plasma membrane phosphatidylinositol-4,5-bisphosphate (PI(4,5)P2) plays an instrumental role in driving CME initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The plasma membrane phosphatidylinositol-4,5-bisphosphate (PI(4,5)P2) plays an instrumental role in driving CME initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the experimental results presented in the manuscript showing PI(4,5)P2's role in FCHo2 recruitment.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "998eba15-9bf3-473f-9db4-8cf46281615c",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C3",
+      "claim": "FCHo1/2 is among the early proteins that reach the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The F-BAR domain-only protein 1 and 2 complex (FCHo1/2) is among the early proteins that reach the plasma membrane, but the exact mechanisms triggering its recruitment remain elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "54a8e812-8419-4dda-9b78-df3091a0ee29",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C4",
+      "claim": "PI(4,5)P2 domains assist FCHo2 docking at specific membrane regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that PI(4,5)P2 domains assist FCHo2 docking at specific membrane regions, where it self-assembles into ring-like-shaped protein patches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from fluorescence microscopy and AFM experiments shown in Figures 1, 3, and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "81288e55-6988-4a51-9c04-51388f5a3dab",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C5",
+      "claim": "FCHo2 self-assembles into ring-like-shaped protein patches on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that PI(4,5)P2 domains assist FCHo2 docking at specific membrane regions, where it self-assembles into ring-like-shaped protein patches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in HS-AFM experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "a8851596-1ff5-4f25-8102-255230ceeb16",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C6",
+      "claim": "The binding of FCHo2 on cellular membranes promotes PI(4,5)P2 clustering at the boundary of cargo receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the binding of FCHo2 on cellular membranes promotes PI(4,5)P2 clustering at the boundary of cargo receptors and that this accumulation enhances clathrin assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by fluorescence microscopy data in Figure 1 showing increased PI(4,5)P2 intensity after FCHo2 addition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "cebc7c54-037e-4f91-b6f7-50169a2b4acd",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C7",
+      "claim": "FCHo2-mediated PI(4,5)P2 clustering enhances clathrin assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the binding of FCHo2 on cellular membranes promotes PI(4,5)P2 clustering at the boundary of cargo receptors and that this accumulation enhances clathrin assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro clathrin assembly assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "29bbdec6-30d4-4dfc-b7e2-a30e6dd34437",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C8",
+      "claim": "The biogenesis of clathrin-coated vesicles requires precise and coordinated recruitment of more than ~50 different proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The biogenesis of clathrin-coated vesicles requires precise and coordinated recruitment of more than ~50 different proteins to undergo the bending, elongation, and fission of the plasma membrane (Taylor et al., 2011; Haucke and Kozlov, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "91f14c70-c739-4b95-b278-3e960be457fd",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C9",
+      "claim": "Different factors assist in recruiting endocytic proteins, such as the interaction with phosphoinositides.",
+      "claim_type": "EXPLICIT",
+      "source": "Different factors assist in recruiting endocytic proteins, such as the interaction with phosphoinositides (Posor et al., 2015), curvature sensing, and protein-protein interactions (Doherty and McMahon, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "fdfc7e92-6dd9-48f4-b43b-c99507be95fa",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C10",
+      "claim": "FCHo1/2 is among the early proteins recruited at endocytic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have shown that the Fer/CIP4 homology domain-only protein 1 or 2 (FCHo1/2) is among the early proteins recruited at endocytic sites (Taylor et al., 2011; Henne et al., 2010), where it establishes a network of interactions with pioneer proteins, such as Eps15, adaptor protein 2 (AP2), and transmembrane cargo (Taylor et al., 2011; Ma et al., 2016; Hollopeter et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "ac9ad399-97ce-4305-b7b0-302101a86530",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C11",
+      "claim": "FCHo1/2 establishes a network of interactions with pioneer proteins, such as Eps15, adaptor protein 2 (AP2), and transmembrane cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have shown that the Fer/CIP4 homology domain-only protein 1 or 2 (FCHo1/2) is among the early proteins recruited at endocytic sites (Taylor et al., 2011; Henne et al., 2010), where it establishes a network of interactions with pioneer proteins, such as Eps15, adaptor protein 2 (AP2), and transmembrane cargo (Taylor et al., 2011; Ma et al., 2016; Hollopeter et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "3ee1acb9-270b-4603-9864-5311cb917c10",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C12",
+      "claim": "FCHo paralogs associate with membranes through the dimerization of F-BAR domains displaying a shallow concave surface that interacts with acidic phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "FCHo paralogs associate with membranes through the dimerization of F-BAR domains displaying a shallow concave surface that interacts with acidic phospholipids (Henne et al., 2010; Frost et al., 2008; Henne et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "146facf7-58db-4042-afc3-5881d0bab411",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C13",
+      "claim": "A polybasic motif follows the F-BAR scaffold and provides a selective recognition for PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "A polybasic motif follows the F-BAR scaffold and provides a selective recognition for PI(4,5)P2 (Ma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "096b40cb-2015-4bc8-8d89-7f3d454b3c47",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C14",
+      "claim": "FCHo1/2 is flanked at the C-terminal by a \u03bc-homology domain (\u03bc-HD) that directly binds with multiple early endocytic proteins such as Eps15, intersectin 1, or CALM.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, FCHo1/2 is flanked at the C-terminal by a \u03bc-homology domain (\u03bc-HD) that directly binds with multiple early endocytic proteins such as Eps15, intersectin 1, or CALM (Henne et al., 2010; Ma et al., 2016; Umasankar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "b78f2e37-2c18-4379-bbb5-f64b1af1576b",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C15",
+      "claim": "FCHo1/2 is required to recruit Eps15 on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, FCHo1/2 is required to recruit Eps15 on membranes (Day et al., 2021), and the assembly of a FCHo1/2-Eps15-AP2 complex is essential to drive efficient cargo loading (Ma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "b05d4233-56c6-483c-b96e-f08afa0671db",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C16",
+      "claim": "The assembly of a FCHo1/2-Eps15-AP2 complex is essential to drive efficient cargo loading.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, FCHo1/2 is required to recruit Eps15 on membranes (Day et al., 2021), and the assembly of a FCHo1/2-Eps15-AP2 complex is essential to drive efficient cargo loading (Ma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "f6fe5059-5b51-4064-93e2-2f2be6d2f263",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C17",
+      "claim": "FCHo2 is preferentially recruited to PI(4,5)P2-enriched domains often co-localized with the TfR.",
+      "claim_type": "EXPLICIT",
+      "source": "Kymograph analysis on plasma membrane sheets showed that FCHo2 is preferentially recruited to PI(4,5)P2-enriched domains often co-localized with the TfR (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by kymograph analysis shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "37b0db03-53de-47d6-81da-33b0c5054ab3",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C18",
+      "claim": "The kinetics of FCHo2 recruitment on PI(4,5)P2-enriched regions was faster than in the absence of PI(4,5)P2 enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the kinetics of FCHo2 recruitment on these regions was faster than in the absence of PI(4,5)P2 enrichment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by kinetic analysis data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "96333321-4b42-4a69-baa6-a0886d2cfd0a",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C19",
+      "claim": "Increasing amounts of PI(4,5)P2 favored FCHo2 binding on flat membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, increasing amounts of PI(4,5)P2 favored FCHo2 binding on flat membranes (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by binding assays on supported lipid bilayers shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "7b010518-47c3-40f3-9b8e-af8f70a20e7f",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C20",
+      "claim": "Binding to PI(4,5)P2 domains resulted in the formation of long-lived FCHo2 puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal analysis of FCHo2 recruitment also showed that binding to PI(4,5)P2 domains resulted in the formation of long-lived FCHo2 puncta (Figure 1\u2014figure supplement 5), whereas its association with a homogenous distribution of PI(4,5)P2 was more likely to lead to FCHo2 disassembly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by temporal analysis shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "48ca3536-fc45-4e2f-b520-d2013874fdbe",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C21",
+      "claim": "The F-BAR domain alone displayed preferential recruitment to PI(4,5)P2-enriched regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the F-BAR domain alone (i.e., without the region rich in positively charged amino acids of the extended F-BAR construct, F-BAR-x, described in Henne et al., 2007) also displayed preferential recruitment to PI(4,5)P2-enriched regions, in agreement with the enhanced binding of the domain at 5% mol of PI(4,5)P2 (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by binding assays shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "69318552-ec14-44db-b123-c644420dc1d7",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C22",
+      "claim": "The formation of PI(4,5)P2 clusters at the plasma membrane orchestrates the recruitment of PI(4,5)P2-binding proteins via ionic-lipid protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of PI(4,5)P2 clusters at the plasma membrane orchestrates the recruitment of PI(4,5)P2-binding proteins via ionic-lipid protein interactions (Honigmann et al., 2013; van den Bogaart et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "9acbaf59-88a4-4d4c-affe-643602bda4ad",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C23",
+      "claim": "Several structural domains of endocytic proteins, including the F-BAR domain of Syp1, locally accumulate PI(4,5)P2 on in vitro membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Several structural domains of endocytic proteins, including the F-BAR domain of Syp1, locally accumulate PI(4,5)P2 on in vitro membranes (Zhao et al., 2013; Picas et al., 2014), and we showed that BIN1 recruits its downstream partner dynamin through this mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "5cbca387-764d-4da9-ba12-efd96ea41260",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C24",
+      "claim": "Injection of FCHo2-Alexa647 on TfR-GFP plasma membrane sheets led to the binding of FCHo2 and the formation of sub-micrometric puncta that co-localized with PI(4,5)P2 and the TfR.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of FCHo2-Alexa647 on TfR-GFP plasma membrane sheets led to the binding of FCHo2 and the formation of sub-micrometric puncta that co-localized with PI(4,5)P2 and the TfR (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by airyscan microscopy images shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "36cbb60d-fd4c-47c5-a194-0d1f7ea2fef8",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C25",
+      "claim": "FCHo2 binding convoyed a redistribution of the PI(4,5)P2 signal on TfR-GFP-positive puncta but not on PS-labeled plasma membrane sheets.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the protein dynamics showed that FCHo2 binding convoyed a redistribution of the PI(4,5)P2 signal on TfR-GFP-positive puncta but not on PS-labeled plasma membrane sheets (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by time-lapse confocal imaging shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "9cba31e9-2c95-439b-9eb0-68e9de17a9c6",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C26",
+      "claim": "A concomitant increase of both the PI(4,5)P2 and EGFR signal at FCHo2-positive puncta was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, we observed a concomitant increase of both the PI(4,5)P2 and EGFR signal at FCHo2-positive puncta (Figure 1C, Figure 1\u2014figure supplement 6), possibly as a result of the interaction of the EGFR juxtamembrane domain with PI(4,5)P2 (Wang et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by time-lapse confocal imaging shown in Figure 1C and Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "9661cfd0-57db-46f4-9dff-b1427bc28254",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C27",
+      "claim": "Quantification of the intensity of PI(4,5)P2 domains in the absence of other endocytic proteins and ATP confirmed a local increase in the PI(4,5)P2 signal after the addition of FCHo2 on cellular membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the intensity of PI(4,5)P2 domains in the absence of other endocytic proteins and ATP to prevent the activation of type I phosphatidylinositol 4-phosphate 5-kinase (Krauss et al., 2006) confirmed a local increase in the PI(4,5)P2 signal after the addition of FCHo2 on cellular membranes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "a9e5cab3-e02d-4d8a-9321-9c2dfb1a00e6",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C28",
+      "claim": "FCHo1/2 localized preferentially at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, we confirmed that FCHo1/2 localized preferentially at the plasma membrane (Henne et al., 2010), organized into protein assemblies of different dimensions (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by airyscan microscopy images shown in Figure 1E and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "6c583e46-b3b7-491d-a428-1320df32488a",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C29",
+      "claim": "A co-localization between FCHo1/2 and endogenous plasma membrane PI(4,5)P2 was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement to what we observed on plasma membrane sheets, our in cellulo data showed a co-localization between FCHo1/2 and endogenous plasma membrane PI(4,5)P2 (see Materials and methods; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by airyscan microscopy images shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "a7caa5aa-9808-44db-86e7-976438ac4d71",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C30",
+      "claim": "A significant increase in the average intensity of PI(4,5)P2 domains in the presence of FCHo proteins was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we detected a significant increase in the average intensity of PI(4,5)P2 domains in the presence of FCHo proteins (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "7d049f33-368f-43d2-8ddc-320b7862fa6c",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C31",
+      "claim": "Both membrane activity and FCHo2 interaction with binding partners are required to direct clathrin-coated structures' growth and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Both membrane activity and FCHo2 interaction with binding partners are required to direct clathrin-coated structures' growth and stability (Lehmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "10678271-bdcb-4299-8d53-d98848581ba1",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C32",
+      "claim": "The membrane-bending activity and interaction with negatively charged lipids is primarily encoded within the F-BAR domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the membrane-bending activity and interaction with negatively charged lipids is primarily encoded within the F-BAR domain (Henne et al., 2010), the interaction with AP2 and Eps15 is mediated by a downstream AP2-activating (APA) domain and C-terminal \u03bc-HD (Ma et al., 2016; Hollopeter et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "eeb04334-eb9e-4f7e-8046-52c2e070838c",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C33",
+      "claim": "The interaction with AP2 and Eps15 is mediated by a downstream AP2-activating (APA) domain and C-terminal \u03bc-HD.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the membrane-bending activity and interaction with negatively charged lipids is primarily encoded within the F-BAR domain (Henne et al., 2010), the interaction with AP2 and Eps15 is mediated by a downstream AP2-activating (APA) domain and C-terminal \u03bc-HD (Ma et al., 2016; Hollopeter et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "42543bb9-8d4f-4d35-80ab-a6cb726f9bbf",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C34",
+      "claim": "In the absence of FCHo2, the addition of cytosolic extracts leads to the appearance of clathrin-positive puncta as compared to the ATP and GTP\u03b3S alone.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, in the absence of FCHo2, the addition of cytosolic extracts leads to the appearance of clathrin-positive puncta as compared to the ATP and GTP\u03b3S alone (Figure 2C, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence assays shown in Figure 2C and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "f94ec953-a4e8-4e70-b31d-320cd2327e34",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C35",
+      "claim": "Incubation of 1 \u00b5M of FCHo2 with cytosolic extracts on 5% PI(4,5)P2-containing lipid bilayers resulted in a twofold increase in the normalized intensity of the PI(4,5)P2 signal on clathrin-positive puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of 1 \u00b5M of FCHo2 with cytosolic extracts on 5% PI(4,5)P2-containing lipid bilayers resulted in a twofold increase in the normalized intensity of the PI(4,5)P2 signal on clathrin-positive puncta (Figure 2C and D), which is convoyed by a sevenfold increase in the normalized intensity of clathrin-positive spots (Figure 2C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figure 2C, D, and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "02acf9b8-501e-4a63-9158-70e00ff49729",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C36",
+      "claim": "Incubation of 1 \u00b5M of FCHo2 with cytosolic extracts on 5% PI(4,5)P2-containing lipid bilayers resulted in a sevenfold increase in the normalized intensity of clathrin-positive spots.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of 1 \u00b5M of FCHo2 with cytosolic extracts on 5% PI(4,5)P2-containing lipid bilayers resulted in a twofold increase in the normalized intensity of the PI(4,5)P2 signal on clathrin-positive puncta (Figure 2C and D), which is convoyed by a sevenfold increase in the normalized intensity of clathrin-positive spots (Figure 2C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figure 2C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "52eb57a1-0855-44c2-99d2-d15fb02bd398",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C37",
+      "claim": "A moderate increase in the local intensity of both PI(4,5)P2 and clathrin structures was observed in the presence of the F-BAR domain alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a moderate increase in the local intensity of both PI(4,5)P2 and clathrin structures in the presence of the F-BAR domain alone, in agreement with its reported ability to assist PI(4,5)P2 microdomain formation (Zhao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figure 2D and E and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "1a14d5ba-b70c-4351-a9b6-7339a477f05d",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C38",
+      "claim": "The effect of F-BAR on PI(4,5)P2 and clathrin structures was intensified by the F-BAR-x.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this effect was intensified by the F-BAR-x, supporting the combined contribution of the APA domain (Ma et al., 2016; Lehmann et al., 2019) and the enhanced tubulation effect of this construct (Henne et al., 2010) in promoting a local PI(4,5)P2 enrichment and the formation of clathrin-positive structures (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figure 2C, D, and E and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "94d3bdc6-e469-44d3-ac76-8aa1af7d4060",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C39",
+      "claim": "Replacement of PI(4,5)P2 by PS preserved FCHo2 association with membranes but prevented the detection of clathrin in the in vitro assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacement of PI(4,5)P2 by PS preserved FCHo2 association with membranes but prevented the detection of clathrin in our in vitro assay, supporting the functional role of PI(4,5)P2 in clathrin-coat formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by immunofluorescence assays shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "de67b2a6-6974-465f-aa0a-d75f9df6d5c8",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C40",
+      "claim": "The average size of FCHo2 puncta on cellular membranes was ~0.067 \u03bcm2.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated by airyscan microscopy the average size of FCHo2 puncta on cellular membranes (i.e., plasma membrane sheets) and on 5% PI(4,5)P2-containing bilayers after the addition of 1 \u00b5M of FCHo2-Alexa647 (Figure 3A and B), which was on both cases ~0.067 \u03bcm2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by airyscan microscopy analysis shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "23ddf4d3-f79f-4a36-8acc-32c49d378c64",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C41",
+      "claim": "The average size of FCHo2 puncta on 5% PI(4,5)P2-containing bilayers was ~0.067 \u03bcm2.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated by airyscan microscopy the average size of FCHo2 puncta on cellular membranes (i.e., plasma membrane sheets) and on 5% PI(4,5)P2-containing bilayers after the addition of 1 \u00b5M of FCHo2-Alexa647 (Figure 3A and B), which was on both cases ~0.067 \u03bcm2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by airyscan microscopy analysis shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "42e4eba1-4a78-4081-bd61-f12cc75906c8",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C42",
+      "claim": "The F-BAR domain alone can assemble into punctate structures with an average size of ~0.094 \u03bcm2 on lipid bilayers doped with 5% PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "On lipid bilayers doped with 5% PI(4,5)P2, we could also detect that the F-BAR domain alone can assemble into punctate structures, although the average size was ~0.094 \u03bcm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by airyscan microscopy analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "dd3d97fb-4236-40e6-b1f2-a8d471c96a3e",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C43",
+      "claim": "Replacing 5% PI(4,5)P2 by PS led to a homogeneous surface distribution of FCHo2 and prevented the detection of sub-micrometric puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, replacing 5% PI(4,5)P2 by PS led to a homogeneous surface distribution of FCHo2 and prevented the detection of sub-micrometric puncta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by airyscan microscopy images shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "93fe1b6c-6f0c-418b-85a0-f0469945c0db",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C44",
+      "claim": "PI(4,5)P2 multivalent interactions through the F-BAR promote FCHo2 segregation into molecular clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, suggesting that PI(4,5)P2 multivalent interactions through the F-BAR promote FCHo2 segregation into molecular clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that FCHo2 forms puncta on PI(4,5)P2-containing membranes but not on PS-containing membranes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "91845b58-272d-46d3-bd49-a3682d0283f5",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C45",
+      "claim": "FCHo2 molecular clusters have a median dimension of ~0.005 \u00b5m2 on supported lipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of full-length FCHo2 at 1 \u00b5M in the imaging chamber resulted in sub-micrometric protein patches with a median dimension of ~0.005 \u00b5m2 that protruded out of the flat membrane surface with an average height of ~47 \u00b1 3 nm (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by AFM imaging shown in Figure 3C, D, and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "a924f833-bb4f-49a0-b6c7-cfa4c9b48cb7",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C46",
+      "claim": "FCHo2 molecular clusters protruded out of the flat membrane surface with an average height of ~47 \u00b1 3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of full-length FCHo2 at 1 \u00b5M in the imaging chamber resulted in sub-micrometric protein patches with a median dimension of ~0.005 \u00b5m2 that protruded out of the flat membrane surface with an average height of ~47 \u00b1 3 nm (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by AFM imaging shown in Figure 3C, D, and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "f9d22a7b-b984-4104-a5e3-0c865f0c6589",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C47",
+      "claim": "An increase in the setpoint force from minimal values to intense forces resulted in the reduction of the height of FCHo2 clusters down to ~15 \u00b1 2 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in the setpoint force from minimal values (a few tens of pN) to intense forces (around 100 pN) resulted in the reduction of the height of FCHo2 clusters down to ~15 \u00b1 2 nm, thus suggesting that FCHo2 can moderately bend supported lipid membranes at minimal AFM imaging forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by AFM imaging at different forces shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "a99b257d-98c3-4401-b3fa-d9d356e939a8",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C48",
+      "claim": "FCHo2 can moderately bend supported lipid membranes at minimal AFM imaging forces.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in the setpoint force from minimal values (a few tens of pN) to intense forces (around 100 pN) resulted in the reduction of the height of FCHo2 clusters down to ~15 \u00b1 2 nm, thus suggesting that FCHo2 can moderately bend supported lipid membranes at minimal AFM imaging forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that FCHo2 cluster height decreases with increased AFM force.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "5c361c92-daa5-4983-965b-ab36ceb42699",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C49",
+      "claim": "The binding of individual FCHo2 proteins engages an indentation of few nanometers in the lipid membrane adjacent to the protein surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative time-lapse images and kymograph analysis along the dashed region at t = 0 s showed that the binding of individual FCHo2 proteins engages an indentation of few nanometers in the lipid membrane adjacent to the protein surface (Figure 4B, green arrowheads), as delineated from the cross-sectional profile along the red dashed box in the corresponding kymograph (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by HS-AFM imaging shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "e2420c4c-8103-4557-bf5e-3b3ceb1b9baa",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C50",
+      "claim": "The binding of FCHo2 was rapidly prompted by the arrival of additional FCHo2 homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of FCHo2 was rapidly prompted by the arrival of additional FCHo2 homodimers (as highlighted by white arrowheads in the kymograph).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by HS-AFM imaging shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "b2b4b9e5-6035-4b6e-a718-1afa2502e580",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C51",
+      "claim": "The ring formation step spanned over ~80\u2013100 s.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynamic reorganization, which we named as the 'ring formation' step, spanned over ~80\u2013100 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by HS-AFM imaging shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "2b208eff-1e6f-421c-8433-2011b43616b3",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C52",
+      "claim": "The average dimension of the full-length protein interacting with the flat membrane was ~32 \u00b1 8 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of individual proteins at the initial stages allowed us to extract the average dimension of the full-length protein interacting with the flat membrane, which was ~32 \u00b1 8 nm (Figure 4D) and in good agreement with the size of the F-BAR domain reported from electron microscopy micrographs (Frost et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by HS-AFM imaging shown in Figure 4D and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "e26a054f-0153-4909-8053-e9af896fa955",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C53",
+      "claim": "The growth of FCHo2 clusters occurred through docking events that involved individual FCHo2 homodimers and the coalescence of adjacent FCHo2 rings.",
+      "claim_type": "EXPLICIT",
+      "source": "After the ring formation, we observed the growth of FCHo2 clusters through docking events that involved individual FCHo2 homodimers and the coalescence of adjacent FCHo2 rings (Figure 4A, white arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by HS-AFM imaging shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "1accb728-8413-4cdd-b5b1-44b25c620c7a",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C54",
+      "claim": "FCHo2 self-organization into hollow ring-like assemblies was particularly discernible at the growth front of FCHo2 molecular clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "FCHo2 self-organization into hollow ring-like assemblies was particularly discernible at the growth front of FCHo2 molecular clusters (Figure 4E and magnified image).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by HS-AFM imaging shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "87b9c0b2-9f5d-40e2-8751-ce43524ac246",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C55",
+      "claim": "The entire formation of FCHo2 molecular clusters expanded over few tens of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the entire formation of FCHo2 molecular clusters expanded over few tens of minutes, we found that the docking of individual proteins and rings to support the expansion of the cluster took place every ~115 \u00b1 94 s (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by HS-AFM imaging shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "35d66ac7-f343-4f53-a921-4a21929c72de",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C56",
+      "claim": "The docking of individual proteins and rings to support the expansion of the cluster took place every ~115 \u00b1 94 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the entire formation of FCHo2 molecular clusters expanded over few tens of minutes, we found that the docking of individual proteins and rings to support the expansion of the cluster took place every ~115 \u00b1 94 s (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by HS-AFM imaging shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "4421a270-5feb-44cb-a7d5-648625532ee5",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C57",
+      "claim": "On flat membranes FCHo2 exhibits an intrinsic ability to self-assemble into a ring-like-shaped molecular complex independently of the local protein density.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results suggest that on flat membranes FCHo2 exhibits an intrinsic ability to self-assemble into a ring-like-shaped molecular complex independently of the local protein density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from HS-AFM observations showing ring formation at various protein densities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "4b042e31-cfd6-4827-9106-5bf6ff86126f",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C58",
+      "claim": "The F-BAR domain is excluded from the nano-dome nanostructure.",
+      "claim_type": "EXPLICIT",
+      "source": "The three-dimensional (3D) rendering of the protein signal relative to a reference marker to depict the nano-dome topography (DHPE lipid, in gray) showed that while the F-BAR domain is excluded from the nanostructure, the FCHo2 staining is well present at the base of the nano-dome (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by 3D rendering of airyscan microscopy images shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "14923573-f4a6-4eb7-8c08-48a738e37f24",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C59",
+      "claim": "FCHo2 staining is well present at the base of the nano-dome.",
+      "claim_type": "EXPLICIT",
+      "source": "The three-dimensional (3D) rendering of the protein signal relative to a reference marker to depict the nano-dome topography (DHPE lipid, in gray) showed that while the F-BAR domain is excluded from the nanostructure, the FCHo2 staining is well present at the base of the nano-dome (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by 3D rendering of airyscan microscopy images shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "565ee977-72f9-44ec-bb50-762ceb1d09e0",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C60",
+      "claim": "Replacing PI(4,5)P2 by PS led to the complete distribution of FCHo2 all over the nano-dome surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this was the case, and replacing PI(4,5)P2 by PS (20% mol PS) led to the complete distribution of FCHo2 all over the nano-dome surface (Figure 5B, yellow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by 3D rendering of airyscan microscopy images shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "2184f129-a91f-4257-a60e-c5b4f70f1d81",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C61",
+      "claim": "The distribution of PI(4,5)P2 on the nano-domes was homogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-sectional analysis showed an equivalent surface distribution of the PI(4,5)P2 and DHPE lipid dye under our experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by cross-sectional analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "632f3d0d-4edb-46fd-abf3-87a070c29d6a",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C62",
+      "claim": "The PH domain of PLC\u03b41 displayed a homogenous organization on nano-domes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we obtained a homogenous organization of the PH(PLC\u03b41), as indicated by the detection of the domain signal both on the flat surface (bottom plane) and all over the nano-dome structure (top plane) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by airyscan microscopy images shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "4e9729b9-1bcf-4493-aa16-9dfba5affd18",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C63",
+      "claim": "The F-BAR and F-BAR-x preferentially bind to the flat surface and appear absent from the nano-dome structure on nano-domes functionalized with PI(4,5)P2-containing membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "On nano-domes functionalized with PI(4,5)P2-containing membranes, the F-BAR and F-BAR-x preferentially bind to the flat surface and appear absent from the nano-dome structure (Figure 5E and F, green and orange).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by airyscan microscopy images shown in Figure 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "7bbf7630-bf89-4d76-a995-bb6165a9130d",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C64",
+      "claim": "FCHo2 revealed a preferential accumulation at the base of the nano-dome.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas FCHo2 revealed a preferential accumulation at the base of the nano-dome (Figure 5E and F, magenta).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by airyscan microscopy images shown in Figure 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "f5152551-b089-47be-a119-6e7d43f76ed3",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C65",
+      "claim": "In the presence of PS membranes, FCHo2 was no longer accumulated at the edges of nano-domes and displayed a homogenous distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in the presence of PS membranes, FCHo2 was no longer accumulated at the edges of nano-domes and displayed a homogenous distribution (Figure 5E and F, yellow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by airyscan microscopy images shown in Figure 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "06228f7a-a9c6-4d95-ad51-ab5bb8e60912",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C66",
+      "claim": "The F-BAR domain of FCHo2 displays minimal sensing of curvatures of radii ~150 nm in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that the F-BAR domain of FCHo2 displays minimal sensing of curvatures of radii ~150 nm in vitro and that PI(4,5)P2-mediated accumulation of FCHo2 at the rims of nano-domes is likely to originate via its downstream protein regions (i.e., the disordered central region [Day et al., 2021] and C-terminal \u03bc-HD [Ma et al., 2016; Hollopeter et al., 2014]), in agreement with the curvature-sensing profile reported for the F-BAR domain protein FBP17 (Su et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that F-BAR does not localize to curved nano-domes and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "c6a6aad4-3fc6-4f02-b643-734cad9de769",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C67",
+      "claim": "PI(4,5)P2-mediated accumulation of FCHo2 at the rims of nano-domes is likely to originate via its downstream protein regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that the F-BAR domain of FCHo2 displays minimal sensing of curvatures of radii ~150 nm in vitro and that PI(4,5)P2-mediated accumulation of FCHo2 at the rims of nano-domes is likely to originate via its downstream protein regions (i.e., the disordered central region [Day et al., 2021] and C-terminal \u03bc-HD [Ma et al., 2016; Hollopeter et al., 2014]), in agreement with the curvature-sensing profile reported for the F-BAR domain protein FBP17 (Su et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that full-length FCHo2 localizes to nano-dome edges while F-BAR alone does not, and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "497b26d3-3a6c-482a-8271-f9937c12e13f",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C68",
+      "claim": "PI(4,5)P2 is a primary spatial regulator of the recruitment of FCHo2 by promoting its accumulation and sorting on flat and curved membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that PI(4,5)P2 is a primary spatial regulator of the recruitment of FCHo2 by promoting its accumulation and sorting on flat and curved membranes (Figures 1 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by multiple experiments shown in Figures 1 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "e5d832dc-2bb6-42c7-90c3-3ccc6b395dcb",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C69",
+      "claim": "Multivalent lipid-protein interactions play an instrumental role in upholding the early stages of endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations support the model that, in addition to protein-protein interactions (Day et al., 2021), multivalent lipid-protein interactions play an instrumental role in upholding the early stages of endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "dd732fad-3a90-47d4-817c-c3b41efca723",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C70",
+      "claim": "In the absence of ATP, FCHo2 oligomerization induces PI(4,5)P2 clustering formation on cellular membranes that are often co-localized with TfR and EGFR-positive puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that, in the absence of ATP, FCHo2 oligomerization induces PI(4,5)P2 clustering formation on cellular membranes that are often co-localized with TfR and EGFR-positive puncta (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "9db9ff2c-577c-416c-9720-645049b83294",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C71",
+      "claim": "Electrostatic interaction of the polybasic motifs at the cytoplasmic tail of the EGFR mediates its clustering on PI(4,5)P2-enriched domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This association was particularly remarkable in the case of the EGFR and agreed with the observation that electrostatic interaction of the polybasic motifs at the cytoplasmic tail of the EGFR mediates its clustering on PI(4,5)P2-enriched domains (Kolds\u00f8 et al., 2014; Wang et al., 2014; Abd Halim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "65149930-99ea-4089-9ea1-1d49493e1ea8",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C72",
+      "claim": "FCHo1/2 is needed to recruit Eps15.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, FCHo1/2 is needed to recruit Eps15 (Henne et al., 2010) and form FCHo1/2-Eps15 micrometer-scale domains on membranes (Day et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "76200e57-2910-465e-ae7a-ff89a96d791f",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C73",
+      "claim": "FCHo1/2 forms FCHo1/2-Eps15 micrometer-scale domains on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, FCHo1/2 is needed to recruit Eps15 (Henne et al., 2010) and form FCHo1/2-Eps15 micrometer-scale domains on membranes (Day et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "64fa6b3e-ec5a-4ec5-a516-1e073dc5ec8e",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C74",
+      "claim": "By driving PI(4,5)P2 clustering formation at the boundary of cargo receptors, FCHo2 is likely to improve the stability of a network of PI(4,5)P2-interacting proteins through avidity.",
+      "claim_type": "EXPLICIT",
+      "source": "By driving PI(4,5)P2 clustering formation at the boundary of cargo receptors, FCHo2 is likely to improve the stability of a network of PI(4,5)P2-interacting proteins through avidity (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "03af60d4-8c20-4aa5-8184-d6ef32033ea7",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C75",
+      "claim": "The F-BAR domain alone was reported to facilitate local PI(4,5)P2 accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the F-BAR domain alone was reported to facilitate local PI(4,5)P2 accumulation and our observations confirm a 1.4-fold increase in the formation of clathrin-positive assemblies on in vitro membranes (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "a4182761-4cf7-4aea-bed4-231f0f3a2d64",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C76",
+      "claim": "A 1.4-fold increase in the formation of clathrin-positive assemblies on in vitro membranes was observed with F-BAR domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the F-BAR domain alone was reported to facilitate local PI(4,5)P2 accumulation and our observations confirm a 1.4-fold increase in the formation of clathrin-positive assemblies on in vitro membranes (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "68f596d5-6835-45e5-8529-94a14603b884",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C77",
+      "claim": "The effect of F-BAR on clathrin assembly is intensified by the coupled action of membrane tubulation and the APA domain, possibly via AP2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is intensified by the coupled action of membrane tubulation and the APA domain, possibly via AP2 activation, in agreement with previous studies pointing that clustering of Fcho1/2Eps15/AP2 primes endocytosis (Ma et al., 2016; Lehmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experimental observations and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "1c56d802-f848-4b21-9762-47dd7b93285d",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C78",
+      "claim": "AP2 can create its local pool of PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we discerned clathrin-positive puncta in lower FCHo2 concentrations but not in PI(4,5)P2-depleted membranes, which agrees with the observation that AP2 can create its local pool of PI(4,5)P2 (Krauss et al., 2006), although it requires PI(4,5)P2 for its localization and activation at the plasma membrane (Kadlecova et al., 2017; H\u00f6ning et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "ffe21678-023b-4da2-a071-8905c6cba680",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C79",
+      "claim": "AP2 requires PI(4,5)P2 for its localization and activation at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we discerned clathrin-positive puncta in lower FCHo2 concentrations but not in PI(4,5)P2-depleted membranes, which agrees with the observation that AP2 can create its local pool of PI(4,5)P2 (Krauss et al., 2006), although it requires PI(4,5)P2 for its localization and activation at the plasma membrane (Kadlecova et al., 2017; H\u00f6ning et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "d7592c69-dcd3-44d4-baca-ee4c8aec6eda",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C80",
+      "claim": "Local PI(4,5)P2 enrichment induced by FCHo2 might operate as a complementary and/or synergistic mechanism to PI(4,5)P2 synthesis on promoting pre-endocytic events.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our measurements point out that local PI(4,5)P2 enrichment induced by FCHo2 might operate as a complementary and/or synergistic mechanism to PI(4,5)P2 synthesis on promoting pre-endocytic events (Figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from experimental observations shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "254db292-e9ad-4a64-8cd1-22079bfe5a77",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C81",
+      "claim": "This work provides the first evidence that FCHo2 self-assembles into ring-like molecular complexes on flat lipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "This work provides the first evidence that FCHo2 self-assembles into ring-like molecular complexes on flat lipid bilayers (Figures 3 and 4) and supports the observation of FCHo2 rings at the edges of nascent clathrin-coated structures in living cells (Lehmann et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by HS-AFM experiments shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "7a60f576-0898-435d-b1ab-70bd8a56c869",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C82",
+      "claim": "FCHo2 rings are observed at the edges of nascent clathrin-coated structures in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This work provides the first evidence that FCHo2 self-assembles into ring-like molecular complexes on flat lipid bilayers (Figures 3 and 4) and supports the observation of FCHo2 rings at the edges of nascent clathrin-coated structures in living cells (Lehmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "b4c233c7-455d-4237-bd87-d6d9c1e0db40",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C83",
+      "claim": "The ring-like organization of FCHo2 agrees with a side-lying conformation proposed for F-BAR scaffolds at low protein densities on flat surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "This singular organization agrees with a side-lying conformation proposed for F-BAR scaffolds at low protein densities on flat surfaces (Frost et al., 2008) and the partitioning of FCHo1/2 at the rims of flat clathrin lattices (Sochacki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "cde1bc59-d450-4075-ab40-ca4dab99e565",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C84",
+      "claim": "FCHo1/2 partitions at the rims of flat clathrin lattices.",
+      "claim_type": "EXPLICIT",
+      "source": "This singular organization agrees with a side-lying conformation proposed for F-BAR scaffolds at low protein densities on flat surfaces (Frost et al., 2008) and the partitioning of FCHo1/2 at the rims of flat clathrin lattices (Sochacki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "9a6493de-3cfd-4183-9a61-792c45428bcc",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C85",
+      "claim": "The ring formation process is relatively fast and takes place within less than 100 s.",
+      "claim_type": "EXPLICIT",
+      "source": "HS-AFM movies show that the ring formation process is relatively fast and takes place within less than 100 s (Figure 4), which is compatible with the temporal scales reported during clathrin-coat assembly (Taylor et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by HS-AFM imaging shown in Figure 4 and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "97f4a895-b59d-455e-bea0-a0d9a22621cc",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C86",
+      "claim": "Lateral contacts stabilize the self-assembly of F-BAR domains on membrane tubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works reported that lateral contacts stabilize the self-assembly of F-BAR domains on membrane tubules (Frost et al., 2008; Mim et al., 2012), and our investigations point out that this type of interaction might also occur on flat surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "d07996b4-ea3b-44ef-bc75-d9427c95e16f",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C87",
+      "claim": "Lateral contacts might also occur on flat surfaces for F-BAR domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works reported that lateral contacts stabilize the self-assembly of F-BAR domains on membrane tubules (Frost et al., 2008; Mim et al., 2012), and our investigations point out that this type of interaction might also occur on flat surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from HS-AFM observations of FCHo2 assembly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "4bd9857e-b9af-4182-8c55-1caf4a218a51",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C88",
+      "claim": "F-BAR proteins can moderately bend flat membranes at high protein densities.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed the anisotropic growth and formation of FCHo2 molecular clusters in the absence of other endocytic proteins and, importantly, show that F-BAR proteins can moderately bend flat membranes at high protein densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by AFM experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "20739ed1-3fba-472d-9913-5ccb7b319244",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C89",
+      "claim": "The binding of FCHo2 on cellular membranes promotes the local accumulation of PI(4,5)P2 at the vicinity of clathrin-regulated cargo receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the binding of FCHo2 on cellular membranes promotes the local accumulation of PI(4,5)P2 at the vicinity of clathrin-regulated cargo receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "42e241d2-ea4e-43c6-a1a7-232695ec6676",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C90",
+      "claim": "In the absence of phosphoinositides-metabolizing enzymes, FCHo2 can enhance the formation of clathrin structures through PI(4,5)P2-rich interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, in the absence of phosphoinositides-metabolizing enzymes, FCHo2 can enhance the formation of clathrin structures through PI(4,5)P2-rich interfaces, which could explain previous studies showing that FCHo1/2 depletion slows down the progression of cargo-loaded clathrin structures (Ma et al., 2016; Hollopeter et al., 2014; Umasankar et al., 2012; Mulkearns and Cooper, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in vitro experiments shown in Figure 2 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "01663f03-1adb-4868-a33b-2afc8e1d6fdc",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C91",
+      "claim": "FCHo1/2 depletion slows down the progression of cargo-loaded clathrin structures.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, in the absence of phosphoinositides-metabolizing enzymes, FCHo2 can enhance the formation of clathrin structures through PI(4,5)P2-rich interfaces, which could explain previous studies showing that FCHo1/2 depletion slows down the progression of cargo-loaded clathrin structures (Ma et al., 2016; Hollopeter et al., 2014; Umasankar et al., 2012; Mulkearns and Cooper, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "2be2051a-4785-4406-b99f-f1115a449501",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C92",
+      "claim": "FCHo1/2 is among the first proteins recruited at endocytic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Because FCHo1/2 is among the first proteins recruited at endocytic sites, the discovery that FCHo2 self-assembles into rings convoyed by local PI(4,5)P2 accumulation and membrane bending provides a fundamental understanding of the initiating mechanism of CME (Haucke and Kozlov, 2018; Lehmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "a9143022-05a4-454a-a695-2105ffceaa9c",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "claim_id": "C93",
+      "claim": "The discovery that FCHo2 self-assembles into rings convoyed by local PI(4,5)P2 accumulation and membrane bending provides a fundamental understanding of the initiating mechanism of CME.",
+      "claim_type": "EXPLICIT",
+      "source": "Because FCHo1/2 is among the first proteins recruited at endocytic sites, the discovery that FCHo2 self-assembles into rings convoyed by local PI(4,5)P2 accumulation and membrane bending provides a fundamental understanding of the initiating mechanism of CME (Haucke and Kozlov, 2018; Lehmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2cdb0c9b-43b0-4bab-bb98-37229304702a",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PI(4,5)P2 domains regulate FCHo2 recruitment to membranes. FCHo2 is preferentially recruited to PI(4,5)P2-enriched domains with faster kinetics than to regions without PI(4,5)P2 enrichment. Increasing PI(4,5)P2 concentration enhances FCHo2 binding, and binding to PI(4,5)P2 domains results in long-lived FCHo2 puncta. Both the F-BAR domain alone and full-length FCHo2 show preferential recruitment to PI(4,5)P2-enriched regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17-C21, and C68 are supported by multiple experimental approaches including kymograph analysis (Figure 1\u2014figure supplement 3), binding assays on supported lipid bilayers with varying PI(4,5)P2 concentrations (Figure 1\u2014figure supplement 4), and temporal analysis (Figure 1\u2014figure supplement 5). The data consistently demonstrate PI(4,5)P2-dependent recruitment across different experimental systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FCHo2 binding to cellular membranes promotes PI(4,5)P2 clustering at cargo receptor boundaries. On plasma membrane sheets, FCHo2 binding leads to redistribution and local increase of PI(4,5)P2 signal at TfR and EGFR-positive puncta. This effect is observed in the absence of ATP and other endocytic proteins, indicating it is a direct consequence of FCHo2 binding rather than enzymatic PI(4,5)P2 synthesis. In cellulo experiments confirm co-localization and increased PI(4,5)P2 domain intensity in the presence of FCHo1/2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C24-C30, C70, and C89 are well-supported by airyscan microscopy data (Figure 1A-F) showing FCHo2-mediated PI(4,5)P2 redistribution on both plasma membrane sheets and in intact cells. The use of ATP-depleted conditions (C27) strengthens the conclusion that this is due to lipid clustering rather than synthesis. Quantitative analysis (Figure 1D, F) provides statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "dfc5b62d-75c7-409b-bc8e-6ec76e270aa1",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FCHo2-mediated PI(4,5)P2 clustering enhances clathrin assembly in vitro. In reconstituted systems with cytosolic extracts, FCHo2 increases both PI(4,5)P2 signal intensity (twofold) and clathrin-positive spot intensity (sevenfold) on PI(4,5)P2-containing membranes. The F-BAR domain alone shows moderate enhancement, which is intensified by the F-BAR-x construct. Replacement of PI(4,5)P2 with PS abolishes clathrin detection despite preserving FCHo2 membrane association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C35-C39, and C90 are supported by in vitro clathrin assembly assays using Xenopus egg extracts (Figure 2). The quantitative data (Figure 2D-E) show statistically significant increases in both PI(4,5)P2 and clathrin signals. The PS control (C39) demonstrates specificity for PI(4,5)P2. The domain mapping experiments (C37-C38) provide mechanistic insight into the contributions of different FCHo2 regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "22d5d079-0903-4670-9a92-55be40fe6781",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FCHo2 self-assembles into sub-micrometric molecular clusters on membranes in a PI(4,5)P2-dependent manner. On both cellular membranes and supported lipid bilayers containing 5% PI(4,5)P2, FCHo2 forms puncta with average size ~0.067 \u03bcm\u00b2. AFM reveals these clusters have median dimension ~0.005 \u03bcm\u00b2 and protrude ~47 nm from the membrane surface. Replacing PI(4,5)P2 with PS prevents puncta formation, leading to homogeneous FCHo2 distribution. Force-dependent AFM measurements suggest FCHo2 can moderately bend membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C40-C48, C88 are supported by complementary airyscan microscopy (Figure 3A-B) and AFM imaging (Figure 3C-E). The consistent size measurements across different membrane systems strengthen the findings. The PS control (C43) demonstrates PI(4,5)P2 specificity. The force-dependent height measurements (C47-C48) provide evidence for membrane bending, though the inference about bending capability could benefit from additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FCHo2 self-assembles into ring-like molecular complexes on flat membranes through a dynamic process. HS-AFM reveals that individual FCHo2 homodimers (~32 nm) bind to membranes causing local indentation, then rapidly recruit additional homodimers to form ring structures within ~80-100 seconds. Cluster growth occurs through docking of individual homodimers and coalescence of adjacent rings, with docking events occurring every ~115 seconds. This represents the first direct visualization of FCHo2 ring formation on flat bilayers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C57, C81, C85 are strongly supported by high-resolution HS-AFM imaging (Figure 4) that captures the entire assembly process in real-time. The temporal resolution allows quantification of assembly kinetics, and the spatial resolution permits measurement of individual protein dimensions. The timescales are compatible with CME (C85). This is a novel finding (C81) with direct visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PI(4,5)P2 mediates FCHo2 accumulation at curved membrane edges through downstream protein regions rather than the F-BAR domain. On nano-domes (R~150 nm), the F-BAR domain is excluded from curved surfaces while full-length FCHo2 accumulates at the base. Replacing PI(4,5)P2 with PS causes FCHo2 to distribute homogeneously over nano-domes. The F-BAR domain shows minimal curvature sensing at this radius, suggesting the disordered central region and \u03bc-HD mediate curvature-dependent localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C67 are supported by nano-dome experiments using soft-NIL fabrication and airyscan microscopy (Figure 5). The differential localization of F-BAR versus full-length FCHo2 (C58-C59, C63-C64) is clearly demonstrated. The PS control (C60, C65) confirms PI(4,5)P2 dependence. The inference about minimal F-BAR curvature sensing (C66) and the role of downstream regions (C67) is reasonable given the data and supported by citations to similar findings with FBP17.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "5444c4ec-4421-47cd-94c5-7acba2ae4488",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Background and context claims about CME, FCHo1/2 structure and function, and related proteins. These claims establish the scientific context by citing previous literature on CME mechanisms, FCHo1/2 domain structure, protein-protein interactions, PI(4,5)P2 clustering, and related endocytic proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8-C16, C22-C23, C31-C33, C71-C73, C78-C79, C82-C84, C86, C91-C92 are background claims supported by appropriate citations to established literature. These provide necessary context but do not represent novel findings from this study. The citations appear appropriate and the claims accurately represent prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    },
+    {
+      "id": "26566196-dd8c-4670-9413-f44805850942",
+      "content_id": "becadc3b-fbe8-49ea-a670-73d000e3f563",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mechanistic interpretation and broader implications. FCHo2-mediated PI(4,5)P2 clustering may improve stability of PI(4,5)P2-interacting protein networks through avidity and operate as a complementary mechanism to PI(4,5)P2 synthesis. The discovery of FCHo2 ring assembly with PI(4,5)P2 accumulation and membrane bending provides fundamental understanding of CME initiation. Multivalent lipid-protein interactions play an instrumental role in early endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C74-C77, C80, C93 represent interpretations and broader implications of the experimental findings. These are reasonable inferences supported by the data presented (particularly Figures 1-4) and consistent with cited literature. However, these are mechanistic proposals rather than directly demonstrated facts. The language appropriately uses terms like 'likely' and 'might' to indicate these are interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:16:41.284946Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "54a8e812-8419-4dda-9b78-df3091a0ee29",
+      "result_id": "2cdb0c9b-43b0-4bab-bb98-37229304702a"
+    },
+    {
+      "claim_id": "f6fe5059-5b51-4064-93e2-2f2be6d2f263",
+      "result_id": "2cdb0c9b-43b0-4bab-bb98-37229304702a"
+    },
+    {
+      "claim_id": "37b0db03-53de-47d6-81da-33b0c5054ab3",
+      "result_id": "2cdb0c9b-43b0-4bab-bb98-37229304702a"
+    },
+    {
+      "claim_id": "96333321-4b42-4a69-baa6-a0886d2cfd0a",
+      "result_id": "2cdb0c9b-43b0-4bab-bb98-37229304702a"
+    },
+    {
+      "claim_id": "7b010518-47c3-40f3-9b8e-af8f70a20e7f",
+      "result_id": "2cdb0c9b-43b0-4bab-bb98-37229304702a"
+    },
+    {
+      "claim_id": "48ca3536-fc45-4e2f-b520-d2013874fdbe",
+      "result_id": "2cdb0c9b-43b0-4bab-bb98-37229304702a"
+    },
+    {
+      "claim_id": "497b26d3-3a6c-482a-8271-f9937c12e13f",
+      "result_id": "2cdb0c9b-43b0-4bab-bb98-37229304702a"
+    },
+    {
+      "claim_id": "a8851596-1ff5-4f25-8102-255230ceeb16",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "5cbca387-764d-4da9-ba12-efd96ea41260",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "36cbb60d-fd4c-47c5-a194-0d1f7ea2fef8",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "9cba31e9-2c95-439b-9eb0-68e9de17a9c6",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "9661cfd0-57db-46f4-9dff-b1427bc28254",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "a9e5cab3-e02d-4d8a-9321-9c2dfb1a00e6",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "6c583e46-b3b7-491d-a428-1320df32488a",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "a7caa5aa-9808-44db-86e7-976438ac4d71",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "dd732fad-3a90-47d4-817c-c3b41efca723",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "20739ed1-3fba-472d-9913-5ccb7b319244",
+      "result_id": "2cc45a3f-fdb0-461b-8569-6e8ba75f674f"
+    },
+    {
+      "claim_id": "cebc7c54-037e-4f91-b6f7-50169a2b4acd",
+      "result_id": "dfc5b62d-75c7-409b-bc8e-6ec76e270aa1"
+    },
+    {
+      "claim_id": "f94ec953-a4e8-4e70-b31d-320cd2327e34",
+      "result_id": "dfc5b62d-75c7-409b-bc8e-6ec76e270aa1"
+    },
+    {
+      "claim_id": "02acf9b8-501e-4a63-9158-70e00ff49729",
+      "result_id": "dfc5b62d-75c7-409b-bc8e-6ec76e270aa1"
+    },
+    {
+      "claim_id": "52eb57a1-0855-44c2-99d2-d15fb02bd398",
+      "result_id": "dfc5b62d-75c7-409b-bc8e-6ec76e270aa1"
+    },
+    {
+      "claim_id": "1a14d5ba-b70c-4351-a9b6-7339a477f05d",
+      "result_id": "dfc5b62d-75c7-409b-bc8e-6ec76e270aa1"
+    },
+    {
+      "claim_id": "94d3bdc6-e469-44d3-ac76-8aa1af7d4060",
+      "result_id": "dfc5b62d-75c7-409b-bc8e-6ec76e270aa1"
+    },
+    {
+      "claim_id": "42e241d2-ea4e-43c6-a1a7-232695ec6676",
+      "result_id": "dfc5b62d-75c7-409b-bc8e-6ec76e270aa1"
+    },
+    {
+      "claim_id": "81288e55-6988-4a51-9c04-51388f5a3dab",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "de67b2a6-6974-465f-aa0a-d75f9df6d5c8",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "23ddf4d3-f79f-4a36-8acc-32c49d378c64",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "42e4eba1-4a78-4081-bd61-f12cc75906c8",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "dd3d97fb-4236-40e6-b1f2-a8d471c96a3e",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "93fe1b6c-6f0c-418b-85a0-f0469945c0db",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "91845b58-272d-46d3-bd49-a3682d0283f5",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "a924f833-bb4f-49a0-b6c7-cfa4c9b48cb7",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "f9d22a7b-b984-4104-a5e3-0c865f0c6589",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "a99b257d-98c3-4401-b3fa-d9d356e939a8",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "4bd9857e-b9af-4182-8c55-1caf4a218a51",
+      "result_id": "22d5d079-0903-4670-9a92-55be40fe6781"
+    },
+    {
+      "claim_id": "5c361c92-daa5-4983-965b-ab36ceb42699",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "e2420c4c-8103-4557-bf5e-3b3ceb1b9baa",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "b2b4b9e5-6035-4b6e-a718-1afa2502e580",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "2b208eff-1e6f-421c-8433-2011b43616b3",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "e26a054f-0153-4909-8053-e9af896fa955",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "1accb728-8413-4cdd-b5b1-44b25c620c7a",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "87b9c0b2-9f5d-40e2-8751-ce43524ac246",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "35d66ac7-f343-4f53-a921-4a21929c72de",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "4421a270-5feb-44cb-a7d5-648625532ee5",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "254db292-e9ad-4a64-8cd1-22079bfe5a77",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "9a6493de-3cfd-4183-9a61-792c45428bcc",
+      "result_id": "eb2e2a82-8507-4b7a-ba79-9711218ab1fa"
+    },
+    {
+      "claim_id": "4b042e31-cfd6-4827-9106-5bf6ff86126f",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "14923573-f4a6-4eb7-8c08-48a738e37f24",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "565ee977-72f9-44ec-bb50-762ceb1d09e0",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "2184f129-a91f-4257-a60e-c5b4f70f1d81",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "632f3d0d-4edb-46fd-abf3-87a070c29d6a",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "4e9729b9-1bcf-4493-aa16-9dfba5affd18",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "7bbf7630-bf89-4d76-a995-bb6165a9130d",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "f5152551-b089-47be-a119-6e7d43f76ed3",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "06228f7a-a9c6-4d95-ad51-ab5bb8e60912",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "c6a6aad4-3fc6-4f02-b643-734cad9de769",
+      "result_id": "7420df79-5e8a-4c66-ba1f-3504bf728aa0"
+    },
+    {
+      "claim_id": "0891ee93-1b74-4aa1-ad18-e8ee05d7aa74",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "6c4e57df-81bc-455a-a51f-33dedbe11682",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "998eba15-9bf3-473f-9db4-8cf46281615c",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "29bbdec6-30d4-4dfc-b7e2-a30e6dd34437",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "91f14c70-c739-4b95-b278-3e960be457fd",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "fdfc7e92-6dd9-48f4-b43b-c99507be95fa",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "ac9ad399-97ce-4305-b7b0-302101a86530",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "3ee1acb9-270b-4603-9864-5311cb917c10",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "146facf7-58db-4042-afc3-5881d0bab411",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "096b40cb-2015-4bc8-8d89-7f3d454b3c47",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "b78f2e37-2c18-4379-bbb5-f64b1af1576b",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "b05d4233-56c6-483c-b96e-f08afa0671db",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "69318552-ec14-44db-b123-c644420dc1d7",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "9acbaf59-88a4-4d4c-affe-643602bda4ad",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "7d049f33-368f-43d2-8ddc-320b7862fa6c",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "10678271-bdcb-4299-8d53-d98848581ba1",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "eeb04334-eb9e-4f7e-8046-52c2e070838c",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "9db9ff2c-577c-416c-9720-645049b83294",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "65149930-99ea-4089-9ea1-1d49493e1ea8",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "76200e57-2910-465e-ae7a-ff89a96d791f",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "1c56d802-f848-4b21-9762-47dd7b93285d",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "ffe21678-023b-4da2-a071-8905c6cba680",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "7a60f576-0898-435d-b1ab-70bd8a56c869",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "b4c233c7-455d-4237-bd87-d6d9c1e0db40",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "cde1bc59-d450-4075-ab40-ca4dab99e565",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "97f4a895-b59d-455e-bea0-a0d9a22621cc",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "01663f03-1adb-4868-a33b-2afc8e1d6fdc",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "2be2051a-4785-4406-b99f-f1115a449501",
+      "result_id": "5444c4ec-4421-47cd-94c5-7acba2ae4488"
+    },
+    {
+      "claim_id": "e5d832dc-2bb6-42c7-90c3-3ccc6b395dcb",
+      "result_id": "26566196-dd8c-4670-9413-f44805850942"
+    },
+    {
+      "claim_id": "64fa6b3e-ec5a-4ec5-a516-1e073dc5ec8e",
+      "result_id": "26566196-dd8c-4670-9413-f44805850942"
+    },
+    {
+      "claim_id": "03af60d4-8c20-4aa5-8184-d6ef32033ea7",
+      "result_id": "26566196-dd8c-4670-9413-f44805850942"
+    },
+    {
+      "claim_id": "a4182761-4cf7-4aea-bed4-231f0f3a2d64",
+      "result_id": "26566196-dd8c-4670-9413-f44805850942"
+    },
+    {
+      "claim_id": "68f596d5-6835-45e5-8529-94a14603b884",
+      "result_id": "26566196-dd8c-4670-9413-f44805850942"
+    },
+    {
+      "claim_id": "d7592c69-dcd3-44d4-baca-ee4c8aec6eda",
+      "result_id": "26566196-dd8c-4670-9413-f44805850942"
+    },
+    {
+      "claim_id": "a9143022-05a4-454a-a695-2105ffceaa9c",
+      "result_id": "26566196-dd8c-4670-9413-f44805850942"
+    }
+  ],
+  "comparisons": []
+}

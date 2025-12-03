@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C34",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors successfully created an E. coli strain (\u0394RNR) lacking all three ribonucleotide reductase operons (nrdAB, nrdHIEF, nrdDG) by introducing a broad-spectrum deoxyribonucleoside kinase from Mycoplasma mycoides. Deletion was confirmed by PCR, RT-PCR, and whole genome sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, C34, C38, C40, C41 are supported by multiple lines of experimental evidence including PCR (Figure 1B), RT-PCR (Figure 1\u2014figure supplement 1), and whole genome sequencing. The requirement for the M. mycoides kinase (C20, C41, C126) is demonstrated by unsuccessful deletion attempts without it. The 23 SNPs identified (C42) provide additional genomic characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C92",
+      "C93"
+    ],
+    "result": "The \u0394RNR strain is dependent on exogenous deoxyribonucleosides for growth, showing concentration-dependent growth from 1 mg/mL (favorable growth with lag) to 0.01 mg/mL (marginal growth), with no growth in the absence of dNs or when provided with deoxyribose plus bases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C43-C48, C92-C93 are well-supported by growth curve data in Figure 2. The concentration-dependent growth pattern demonstrates complete dependence on exogenous deoxyribonucleosides. The inability to grow on dR + bases (C22, C47, C93) confirms that no alternative pathway can compensate for RNR loss, supporting the inference in C48.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C94"
+    ],
+    "result": "Of the four deoxyribonucleosides, only deoxycytidine (dC) is essential for \u0394RNR growth in minimal media. The strain cannot grow on dA, dG, or dT alone or in combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C94 are supported by growth assay data in Figure 3 showing no growth with dA, dG, or dT (alone or combined) but growth with dC alone. This is a surprising and well-documented finding, though the mechanism explaining why dC alone is sufficient is not fully elucidated in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C95"
+    ],
+    "result": "Under limiting deoxyribonucleoside concentrations, \u0394RNR cells exhibit a filamentous morphology with cells reaching lengths several times that of wild-type and containing multiple DNA nucleoids. This phenotype is environmental and reversible upon transfer to high dN concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C52-C55, C95 are supported by microscopy data in Figure 4. Brightfield microscopy (Figure 4A) shows elongated cells at low dN, DAPI staining (Figure 4B) reveals multiple nucleoids, and transfer experiments (Figure 4C) demonstrate reversibility. The phenotype is consistent with stress-induced filamentation documented in the literature (C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C97"
+    ],
+    "result": "During the evolution experiment, the filamentous phenotype of \u0394RNR cells diminished over 30 transfers. Initial cell lengths reached 20 \u03bcM (average 6 \u03bcM) at 0.25 mg/mL dNs, 10-20 times wild-type length, but by transfer 30 average cell length was comparable to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C97 are supported by cell length measurements shown in Figure 6. The progressive reduction in cell length over transfers suggests adaptation to dN scarcity, though the specific genetic changes responsible are inferred rather than directly demonstrated at this stage of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "Over 30 transfers, evolved \u0394RNR lines showed improved growth at limiting dN concentrations, with a 25-fold reduction in minimum dN concentration necessary for growth. However, all evolved lines remained dependent on dN supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C59-C60, C62 are supported by growth curve data in Figure 7 and Figure 7\u2014figure supplement 1. The improved growth at low dN concentrations demonstrates adaptation, while the continued inability to grow without dN supplementation (Figure 7E) confirms that no alternative dNTP synthesis pathway evolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Evolved \u0394RNR lines accumulated substantially more mutations than wild-type controls, with \u0394RNR250_T30 lines showing the greatest accumulation (39-118 SNPs). Notably, 88% of SNPs in \u0394RNR250_T30 lines were A:T\u2192G:C substitutions, representing a marked mutational skew.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by whole genome sequencing data presented in Figure 8 and Supplementary file 1E. The statistical significance of increased mutations in \u0394RNR1000_T30 (p=0.01, C65) and lack of difference between wild-type conditions (p=0.10, C66) are appropriately tested. The A:T\u2192G:C skew is striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The cdd gene (encoding cytidine deaminase) was mutated in 8 of 10 evolved lines at transfer 30, with seven lines carrying an identical deletion and one carrying a truncating SNP. The deletion was present as a mixed population in the ancestral glycerol stock and rapidly emerged in independent evolution experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by genome sequencing data and PCR screening (Figure 8\u2014figure supplement 3). The presence of the deletion in the ancestral population (C71) is a confounding factor that complicates interpretation of selection, but the independent emergence in \u0394RNR34 lines (C73) and the independent truncating mutation (C70) support that cdd loss is selected under these conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C102"
+    ],
+    "result": "Under severe dN restriction (0.01 mg/mL), the deoB gene (encoding phosphopentomutase, responsible for the committed step in deoxyribonucleotide salvage) was mutated in eight lines at transfer 40, with five or six independent mutation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77, C102 are supported by whole genome sequencing data in Table 1. The inference of 5-6 independent mutations (C77) is based on analysis of shared mutations between lines and is conservatively estimated. The functional role of phosphopentomutase (C75-C76) is established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Three of five unique deoB mutations directly impact conserved active site residues through truncation or mutation. All observed mutations are predicted to impact phosphopentomutase function, with some expected to completely inactivate the enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by structural analysis mapping mutations onto the B. cereus phosphopentomutase structure (Table 2) and sequence alignment (Supplementary file 3). The predictions are based on established structural biology principles and conservation analysis, making them well-founded inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C31",
+      "C99",
+      "C100",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The DERA pathway is not coopted for deoxyribonucleotide synthesis following RNR loss. Instead, loss-of-function mutations in deoB prevent catabolism of deoxyribonucleotides via the DERA pathway, ensuring dNTPs are not lost to glycolysis when in short supply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C27, C31, C99-C100, C103-C105 represent the key mechanistic interpretation of the deoB mutations. This is well-supported by the experimental evolution data showing parallel loss-of-function mutations in deoB under dN limitation, the biochemical understanding of the DERA pathway (Figure 9), and consistency with prior work (C106). The interpretation that deoB loss prevents dN catabolism rather than enabling synthesis is logical and well-argued.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Genome database searches reveal that loss of ribonucleotide reduction in natural obligate intracellular bacteria is frequently associated with loss of deoB and cdd. All Ureaplasma species lack RNR, deoB, and cdd. In Borrelia/Borreliella, all lack deoB, with only Borreliella lacking RNR. In B. aphidicola, 30% (22/74 strains) lack both RNR and deoB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C91, C108-C110 are supported by systematic BLAST searches against genome databases (Supplementary files 1K-1N). The searches are appropriately conducted and the patterns are clearly documented. The co-occurrence of RNR loss with deoB/cdd loss in natural bacteria supports the experimental findings and suggests these are general evolutionary adaptations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C107",
+      "C120",
+      "C121"
+    ],
+    "result": "The experiments recapitulate key evolutionary steps in adaptation to life without ribonucleotide reduction. Analysis of natural bacteria that lack RNR reveals frequent loss of deoB, suggesting that loss of ribonucleotide reduction drives loss of deoB to minimize loss of building blocks when dNTP availability is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C107, C120-C121 represent the synthesis of experimental and comparative genomic findings. The parallel between experimental evolution results and patterns in natural bacteria (C32, C107) strongly supports the interpretation that the experiments recapitulate natural evolutionary processes. This is a well-supported major conclusion of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "In Borrelia/Borreliella, the evolutionary pattern is complex. Class Ib RNR in Borrelia was acquired via horizontal gene transfer. The authors speculate that initial RNR loss may have been driven by selection for iron independence, with subsequent reacquisition favoring the manganese-dependent class Ib enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C117 involve complex evolutionary inferences about Borrelia/Borreliella. While the horizontal gene transfer of class Ib RNR (C113) is supported by citations, and the metal dependencies (C114-C115) and iron independence of B. burgdorferi (C116) are documented, the speculation about evolutionary drivers (C117) is explicitly acknowledged as speculative. The pattern that loss of one function may not always result in loss of the other (C111) requires confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Loss of ribonucleotide reduction is extremely rare in evolution of endosymbiosis and parasitism despite host-derived deoxyribonucleotides being available. This rarity may be explained by a trade-off: while bacteria possess dN uptake mechanisms, imported dNs may not be readily utilized for DNA synthesis and can serve as nitrogen/phosphorus sources via catabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C131 present a coherent explanation for the rarity of RNR loss. The rarity is an inference from comparative genomics (C119, C122). The existence of uptake mechanisms (C123-C124) is documented, the requirement for heterologous kinase (C126) is experimentally demonstrated, and the use of DNA/dNs as nitrogen source (C128) is cited. The trade-off hypothesis (C129-C130) is a reasonable inference, though the speculation about conditions favoring reverse DERA (C131) is acknowledged as uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on ribonucleotide reduction: All life requires ribonucleotide reduction for deoxyribonucleotide synthesis. RNRs have homologous catalytic cores but limited sequence similarity and diverse radical generation mechanisms. Three evolutionarily distinct RNR families exist, adapted to different oxygen environments. Very few species have lost RNR genes, relying instead on their hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide established background knowledge supported by appropriate citations to the literature. These claims set the context for the experimental work and are well-documented in the field. They represent prior work rather than novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C98"
+    ],
+    "result": "The DERA pathway is reversible in vitro and has been considered a plausible alternative to ribonucleotide reduction for dNTP synthesis, with some considering it a plausible ancestral route for the origin of DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C98 are supported by citations to published literature. This background information motivates the investigation of whether the DERA pathway could be coopted for synthesis in the absence of RNR. The in vitro reversibility (C23) is documented, though the manuscript shows this does not translate to in vivo synthesis under the experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "E. coli carries three RNR operons with different properties: class Ia (nrdAB, iron-dependent, primary under aerobic growth), class Ib (nrdHIEF, manganese-dependent, functions when iron is scarce), and class III (nrdDG, anaerobic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 describe established knowledge about E. coli RNRs, supported by citations and illustrated in Figure 1. This provides essential context for understanding which operons were deleted and their normal functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C96"
+    ],
+    "result": "Elongate cell morphology and clumping preclude accurate OD-based estimation of doubling time or cell counts. Filamentous phenotypes have been documented under various stress conditions including \u03b2-lactam antibiotic exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C96 are supported by citations to published literature. These are important methodological considerations that acknowledge limitations in quantifying growth for filamentous cells and provide context for the observed phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C106"
+    ],
+    "result": "Acetaldehyde toxicity and low intracellular availability may preclude simple switching to the DERA pathway for dNTP production. This interpretation is consistent with a recent experiment where dihydrofolate reductase mutation led to deoB loss of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C106 provide additional mechanistic context for why the DERA pathway is not coopted for synthesis. C101 is supported by citations discussing pathway constraints, and C106 provides independent experimental support for the interpretation from another system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "E. coli B strain REL606 was used as the wild-type strain. This strain is well-suited for experimental evolution, having been used in long-running evolution experiments, and possesses streptomycin resistance and a selectively neutral araA mutation for easy detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 describe the experimental strain choice and its properties. These are methodological details supported by citation (C133) and established knowledge about REL606 (C134-C135). The choice is well-justified for experimental evolution work.",
+    "result_type": "MINOR"
+  }
+]

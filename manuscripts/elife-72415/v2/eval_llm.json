@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C30",
+      "C32"
+    ],
+    "result": "Prior experimental work has shown that walking Drosophila melanogaster bias their motion upwind in response to both odor encounter frequency and odor signal intermittency, with distinct models extracted from different experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C30, and C32 are all supported by citations to prior experimental work (Demir et al., 2020; \u00c1lvarez-Salvado et al., 2018). These establish the empirical foundation for the current modeling study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The authors analytically demonstrate that the \u00c1lvarez-Salvado et al. model responds to odor signal intermittency while the Demir et al. model responds to odor encounter frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 are supported by analytical derivations presented in the Materials and methods section. The mathematical analysis clearly distinguishes the two temporal features extracted by each model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "A combined navigation model using both intermittency and frequency sensors successfully navigates both high-intermittency and high-frequency plumes, with each sensor dominating in its respective environment but both contributing across plume regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C64, C65, C67, C68, C69, and C70 are supported by simulation results shown in Figure 3. The data demonstrate successful navigation in both plumes and spatial analysis of sensor contributions (Figure 3E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C36"
+    ],
+    "result": "Navigators using only frequency or intermittency perform well in some environments but fail in others, while robust performance across diverse environments requires both temporal modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C36 are supported by agent-based simulations shown in Figures 3-5. The results demonstrate clear performance degradation when either sensor is removed and improved robustness with dual sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C86",
+      "C87"
+    ],
+    "result": "There is a steep trade-off when using both sensors simultaneously, with optimal performance in either plume requiring silencing the non-relevant sensor, and no fixed set of gains performs optimally in both plumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C78, C79, C81, C82, C86, and C87 are supported by simulation results, particularly the Pareto front analysis in Figure 4I and the environmental sweep in Figure 5. The concavity of the Pareto front demonstrates the trade-off quantitatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C75",
+      "C76",
+      "C96"
+    ],
+    "result": "Adding noise to the filters revealed unique performance maxima near experimentally-derived base gain values, suggesting the biological fly olfactory circuit may be tuned to natural plume environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C75, C76, and C96 are supported by simulation results in Figures 4G and 4H. The noise addition is justified and the proximity of optimal gains to experimental values is clearly shown, though the inference about biological tuning (C76, C96) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C102",
+      "C103"
+    ],
+    "result": "The known circuitry of the Drosophila olfactory periphery (ORNs and PNs) naturally enables simultaneous intermittency and frequency sensing, with PN membrane potential responding independently to both features and enabling effective navigation across diverse plumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38, C91, C92, C93, C94, C102, and C103 are supported by modeling results in Figure 6. The circuit model is based on prior validated work (Gorur-Shandilya et al., 2017; Nagel et al., 2015) and demonstrates independent responses to both temporal features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C97"
+    ],
+    "result": "The first stage of olfactory processing selects and encodes temporal features of odor signals critical to real-world navigation tasks, and may already be adapted to natural plume environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C97 are conclusions drawn from the modeling and simulation results throughout the manuscript. While speculative, they are appropriately qualified and supported by the convergence of evidence from multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Turbulent odor plumes exhibit complex spatiotemporal statistics with rapid concentration changes, intermittent encounters spanning orders of magnitude in duration and frequency, and distinct characteristics depending on flow conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 are all supported by citations to prior work on turbulent plume physics and odor dispersion. These establish the environmental context for the navigation problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Olfactory receptor neurons across multiple species respond to chemical signals with high temporal precision on both short and long timescales, with adaptation mechanisms that maintain encoding accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C24 are all supported by citations to prior experimental work across multiple species. These establish the biological capacity for temporal feature extraction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Temporal odor information shapes navigational decisions across multiple insect and crustacean species, with behavioral responses varying based on odor encounter frequency and duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are all supported by citations to prior behavioral studies. These establish that temporal features influence navigation across taxa.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C53",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The two experimental plumes used in prior studies (high-intermittency and high-frequency) have distinct temporal statistics, with the high-intermittency plume having long-timescale variations and high intermittency, while the high-frequency plume has short, frequent whiffs with low intermittency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C53, C55, C56, and C57 are supported by data shown in Figure 2 and descriptions of the experimental plumes. The characterization is clear and quantitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "The intermittency model was extracted from flies navigating uniform odor pulses and qualitatively recapitulates behavior in turbulent plumes, while the frequency model was fit to flies navigating spatially complex plumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, and C54 are supported by citations to prior experimental work (\u00c1lvarez-Salvado et al., 2018; Demir et al., 2020; Connor et al., 2018). These describe the origins of the two models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Prior work has shown that synaptic and circuit mechanisms in the olfactory periphery allow accurate signal transmission across frequencies and fast ORN adaptation prevents saturation, suggesting the circuit may be well-primed for encoding multiple temporal features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, and C90 are supported by citations to prior work. The inference in C90 is appropriately qualified as a suggestion rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Odor signals influence multiple behavioral actions in insects, with a near-universal response to turn or bias turns upwind in the presence of odor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 are supported by multiple citations to prior behavioral work. These justify the focus on upwind orientation in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Drosophila melanogaster ORN responses are invariant to air speed, justifying the focus on temporal changes in odor concentration rather than odor flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by a citation to prior work (Zhou and Wilson, 2012). This justifies a key modeling assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Evidence from moth ORNs and walking Drosophila suggests that adaptation of sensor weight may occur, and flying flies might naturally assign more weight to frequency sensing due to experiencing more complex environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98 and C99 are supported by citations, but C100 and C101 are speculative predictions. While the speculation is reasonable and testable, there is no direct experimental evidence for the proposed adaptation mechanism in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Several circuit mechanisms not included in the model (lateral inhibition, slow synaptic depression, unc13A) have been shown to modulate olfactory processing and could potentially improve navigation performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are all supported by citations to prior work. These appropriately acknowledge limitations of the current model and suggest future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Odor statistics change significantly with distance from the source within a single plume, consistent with the finding that different sensors contribute more in different plume regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is supported by citation to prior work (Rigolli et al., 2021) and C109 is supported by analysis in Figure 3E. The consistency between the two findings is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Bilateral sensing has been demonstrated across multiple species and shown to aid navigation, though concentration gradients are difficult to resolve for closely-spaced antennae like those in flies, while bilateral comparisons of temporal features may be more useful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C120 are all supported by citations to prior work. C121 is a reasonable inference about diffuse plumes. These appropriately discuss limitations and extensions of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "More diverse navigational behaviors and history-dependent decision-making have been observed across multiple species, including insects and mammals, with some support for theoretical strategies like infotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 are all supported by citations to prior work. These appropriately acknowledge behavioral complexity not captured in the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The adaptive Hill function in the model mimics the gain adaptation of ORNs to the mean signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by citations to prior work on ORN adaptation (Cao et al., 2016; Gorur-Shandilya et al., 2017). This justifies a key model component.",
+    "result_type": "MINOR"
+  }
+]

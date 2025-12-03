@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C51",
+      "C52"
+    ],
+    "result": "DddA causes nucleoid disintegration and DNA fragmentation in E. coli through a mechanism involving cytosine deamination and base excision repair. Ung inactivation leads to uracil accumulation and alleviates nucleoid disruption, but deletions of downstream BER endonucleases (Xth, Nfo) have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 provide converging evidence from microscopy (C5), gel electrophoresis (C6), and fluorescent uracil labeling (C8) that DddA causes nucleoid damage through a Ung-dependent pathway. The mechanistic link to BER is established through established knowledge (C7, C51, C52) and genetic experiments showing Ung-specific effects (C9, C10). The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "DddA causes replication fork collapse and introduces C\u2022G-to-T\u2022A mutations in E. coli, but Ung inactivation does not rescue cells from killing despite preventing nucleoid degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 demonstrate that DddA kills cells through replication fork collapse (C12) independent of Ung-mediated DNA damage (C11), while simultaneously introducing mutations (C13). The use of established replication markers (DnaN-YPet) and whole genome sequencing provides strong evidence. The paradox that Ung deletion prevents nucleoid damage but not killing is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "DddA delivered via T6SS has variable effects across bacterial species: enteric bacteria and A. baumannii resist killing, while Pseudomonas and Burkholderia species are highly susceptible. DddA accounts for all T6SS inhibitory activity in sensitive species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C61-C63 provide systematic competition assay data across multiple species showing species-specific responses to DddA. The use of catalytically inactive DddA (dddAE1347A) and T6SS-deficient strains (\u0394icmF) as controls strengthens the conclusions. The observation that Ung deletion does not affect P. aeruginosa susceptibility (C63) is consistent with the proposed killing mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "DddA-resistant bacteria (E. coli, K. pneumoniae, EHEC) accumulate mutations during intoxication, with a 10-fold increase in rifampicin resistance frequency. Mutations are predominantly C\u2022G-to-T\u2022A transitions in the 5'-TC-3' context preferred by DddA, distributed randomly across the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 provide comprehensive evidence for DddA-mediated mutagenesis through mutation frequency assays (C18, C22), rpoB sequencing (C19), whole genome sequencing (C21, C23, C24), and statistical analysis (C20, C23). The mutation signature is highly specific and significantly enriched compared to spontaneous mutations. The random distribution of mutations (C25) is well-documented. This represents a novel finding with strong supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Bacteria susceptible to DddA killing (P. aeruginosa, B. cenocepacia K56-2, B. ambifaria) do not accumulate mutations, except when Ung is inactivated. This suggests mutagenesis is rare in sensitive species but may increase when DNA repair is compromised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C64-C66 demonstrate species-specific differences in mutagenesis outcomes. The observation that P. aeruginosa \u0394ung shows elevated mutation frequency (C27) while wild-type does not (C26) provides strong evidence for the role of DNA repair in determining cell fate. The low frequency of DddA-signature mutations in wild-type P. aeruginosa (C65) supports the interpretation that mutagenesis is rare in sensitive species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Mutagenic activity is a common feature of deaminase superfamily toxins. Representatives from BaDTF2 and BaDTF3 subfamilies exhibit toxicity and introduce high levels of C\u2022G-to-T\u2022A transitions in E. coli, each with distinct sequence context preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 demonstrate that mutagenic activity extends beyond DddA to other deaminase toxin families. The use of bioinformatic analysis (C28), toxicity assays (C29), SNV analysis (C30), and sequence logo analysis (C31, C32) provides strong evidence. The distinct sequence preferences of each toxin family strengthen the conclusion that this is a general property of deaminase toxins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The BaDTF2 representative SsdA preferentially targets single-stranded DNA with potent cytosine deaminating activity, can target double-stranded DNA with lower efficiency, and shows minimal activity toward RNA targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide comprehensive biochemical characterization of SsdA substrate specificity through in vitro deamination assays (C33-C35), poisoned primer extension assays (C36), and RNA-seq analysis (C37). The convergence of in vitro and in vivo data strengthens the conclusion that DNA is the physiologically relevant substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The crystal structure of SsdA-SsdAI complex reveals that SsdA contains the core deaminase fold but bears little structural homology to characterized deaminases including DddA. BaDTF2 proteins lack conserved DYW motifs and instead contain a unique SGW motif near the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 provide detailed structural analysis of SsdA at 3.0 \u00c5 resolution. The structure reveals both conserved deaminase features (C39) and unique characteristics (C41, C45-C47). The comparison with DYW proteins (C46-C47) and structural analysis of the immunity complex (C43-C44) are well-documented. The deposition of coordinates (C92) enables independent verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Despite predicted shared ancestry, DddA shows greater structural similarity to eukaryotic ssDNA-targeting deaminases (AID/APOBEC) than to SsdA, suggesting cytosine deaminases targeting ssDNA evolved at least twice from the ancestral deaminase fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 provide evolutionary insights based on structural comparisons. The inference is supported by structural data from both DddA and SsdA structures, though the conclusion is somewhat speculative. The claim is consistent with established understanding of deaminase evolution (Iyer et al., 2011) and represents a reasonable interpretation of the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "DddA intoxication shares mechanistic parallels with thymineless death (TLD), including uracil incorporation into DNA, replication arrest, and chromosome degradation. In both processes, removal of uracil does not rescue cells from death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 draw parallels between DddA intoxication and the established phenomenon of TLD. The comparison is supported by experimental data (C76 references Figure 2A) and established knowledge about TLD (C74-C75). However, the authors appropriately note that the precise mechanism of TLD remains unclear, limiting the mechanistic insights that can be drawn from this comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "DddA can install multiple mutations on a single genome during one intoxication event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is directly supported by whole genome sequencing data showing multiple mutations per clone (Figure 4). This observation has important implications for the evolutionary impact of deaminase toxins, as noted in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "The authors propose several speculative mechanisms for the variable effects of DddA across species, including targeting of highly transcribed regions, stochastic proteolytic degradation, and differences in DNA repair pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73, C81-C82, C83, and C85 are explicitly speculative and not directly tested in the manuscript. While these hypotheses are reasonable and grounded in the observed data, they require additional experimental validation. The authors appropriately present these as potential explanations rather than established conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "DddA is a double-stranded DNA-targeting cytosine deaminase delivered via the T6SS of B. cenocepacia, which is highly toxic when expressed in E. coli and represents an unusual activity compared to other DNA-targeting deaminases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C48-C50 establish the basic properties of DddA based on prior work (Mok et al., 2020). These claims provide essential context for the current study and are well-supported by the cited literature. The current manuscript builds on this foundation to explore the mutagenic consequences of DddA activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The manuscript establishes the broader context of interbacterial toxin delivery systems and deaminase enzymes, noting that while short-term effects of toxin delivery have been studied, the long-term evolutionary impact on target populations has not been explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 provide background knowledge from the literature that establishes the context and novelty of the current study. These claims are well-supported by appropriate citations and accurately represent the state of the field. Claim C57 identifies the knowledge gap that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C91"
+    ],
+    "result": "Previously characterized DYW deaminase family proteins are found in plants and protists, participate in organellar mRNA editing, and contain PPR repeats that recruit the catalytic domain to target mRNAs. Only one DYW protein has been biochemically characterized in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C91 provide established knowledge about DYW proteins from the literature. These claims are well-supported by appropriate citations and provide important context for understanding how bacterial BaDTF2 proteins differ from eukaryotic DYW proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C84",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "The manuscript provides various contextual observations about bacterial genetics and mutation patterns, including the distribution of dddA in B. cenocepacia strains, the distribution of mug orthologs, and the prevalence of C\u2022G-to-T\u2022A transitions in evolving bacterial populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C84, C87-C88, and C90 provide factual context from bioinformatic analysis and literature. These claims are well-supported but represent background information rather than primary findings of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C86"
+    ],
+    "result": "The manuscript discusses the potential ecological and evolutionary implications of mutagenic toxins, including their potential to study bacterial interactions in nature and their relationship to hypermutator phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80 and C86 discuss potential implications and future directions. While C79-C80 and C86 are supported by literature, C78 is speculative about future research directions. These claims represent important discussion points but are not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Structural and sequencing data from this study have been deposited in public databases (PDB: 7JTU; SRA: PRJNA659516).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 document data availability. These are factual statements about data deposition that can be independently verified.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C27"
+    ],
+    "result": "Mice in both air-puff and no-air-puff groups successfully learned the go/no-go discrimination task, showing increased anticipatory licking to sucrose-predicting cues and withholding licking to denatonium-predicting cues. Both groups also successfully adapted to reversed contingencies during reversal learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C27 are supported by behavioral data in Figure 1B and statistical analyses (three-factor ANOVA showing significant main effects of session and cue). The data demonstrate that both groups learned the task and adapted to reversals, establishing the baseline behavioral competence necessary for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Mice exposed to aversive air puffs showed a negative bias in responding to ambiguous odor mixtures, exhibiting fewer anticipatory licks compared to control mice. This bias was evident from the first trial and persisted throughout testing, indicating it was not due to extinction but rather a genuine shift in decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 are well-supported by behavioral data in Figures 1C-E and statistical analyses (two-factor ANOVA showing significant cue \u00d7 group interaction, p<0.01). The trial-by-trial analysis (C35) and lack of three-way interaction (C37) provide strong evidence that the effect represents a genuine negative bias rather than extinction or learning artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C44"
+    ],
+    "result": "Electrophysiological recordings from 2208 mPFC neurons revealed that most neurons showed firing rate changes following odor cues with persistent activity beyond cue offset. A substantial fraction (270/929 in air-puff exposed mice, 325/1279 in unexposed mice) showed strong discriminability between sucrose and denatonium trials (auROC >0.7 or <0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by neural recording data in Figure 2. The large sample size (2208 neurons from 12 mice) and clear discrimination metrics provide robust evidence. However, the manuscript does not fully address potential issues with unit isolation quality across all recordings or whether neurons were recorded multiple times from the same animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C80",
+      "C81"
+    ],
+    "result": "During probe sessions, mPFC neurons from air-puff exposed mice showed significantly higher cue-evoked firing rates compared to unexposed mice across all odor mixtures. This enhanced neural activity in air-puff exposed mice correlated with reduced anticipatory licking behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C80-C81 are supported by neural data in Figure 3 and Poisson regression analysis showing significant effects of air-puff exposure (z=0.043\u00b10.014, p<0.001). The correlation between enhanced firing and reduced licking (C81) is appropriately described as correlational rather than causal. The use of Poisson regression is appropriate for spike count data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C90"
+    ],
+    "result": "Using antidromic identification, 39 and 45 mPFC\u2192PVT projection neurons were identified in unexposed and air-puff exposed mice, respectively. In air-puff exposed mice, 43% of these corticothalamic neurons showed firing rate changes to air-puff-predicting stimuli, and their activity to reward-predictive and ambiguous cues was enhanced compared to unexposed mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C57 and C90 describe projection-specific recordings, but several methodological concerns limit confidence. The manuscript acknowledges that not all neurons underwent collision tests, raising the possibility of orthodromic activation via local synapses. The relatively small sample sizes (39 and 45 neurons) and unequal distribution across conditioning/probe sessions make statistical comparisons challenging. The criteria for antidromic identification (<15 ms latency, >70% response reliability) are reasonable but may include some false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C93",
+      "C107"
+    ],
+    "result": "Optogenetic excitation of mPFC\u2192PVT neurons during cue presentation recapitulated the negative behavioral bias induced by air puffs, reducing licking to sucrose-predictive, denatonium-predictive, and ambiguous cues in a frequency-dependent manner (10 Hz and 20 Hz). This effect was specific to cued trials, as stimulation did not affect licking for unpredictable rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C68-C72 are supported by optogenetic data in Figure 6 with appropriate controls (eYFP mice showed no effect). The three-factor ANOVA shows significant main effects and interactions. The control experiment with unpredictable rewards (C68-C72) strengthens the interpretation that effects are specific to cue-driven predictions rather than motor impairment. However, the manuscript does not report whether light delivery itself might serve as a cue or whether heating artifacts were controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C94",
+      "C108"
+    ],
+    "result": "Optogenetic inhibition of mPFC\u2192PVT neurons during air-puff trials throughout conditioning prevented the development of negative bias. During subsequent probe tests, eNpHR3.0-expressing mice showed less reduction in responding to ambiguous cues compared to eYFP control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C94, and C108 are supported by optogenetic inhibition data in Figure 7D with appropriate statistical analysis (two-factor ANOVA showing significant main effects of cue and group). This causal manipulation complements the excitation experiments. However, the sample sizes are small (n=3 eYFP, n=5 eNpHR3.0), and the manuscript does not report whether inhibition affected learning of the basic discrimination task itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C82",
+      "C95",
+      "C106",
+      "C109"
+    ],
+    "result": "The mPFC\u2192PVT circuit plays a critical role in how prior aversive experience biases behavioral responses to motivationally relevant cues. Aversive stimuli induce hyperactivity in this pathway, which is both necessary (inhibition prevents bias formation) and sufficient (excitation recapitulates bias) for generating negative biases in decision-making about ambiguous outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 and C82, C95, C106, C109 represent the main conclusions integrating behavioral, electrophysiological, and optogenetic findings. The convergent evidence from correlational (neural recordings) and causal (optogenetic) approaches provides strong support. However, the experimental design confounds context and aversive experience (C91), and the mechanism by which enhanced mPFC\u2192PVT activity reduces approach behavior remains unclear. The pathway could be modulating valuation, uncertainty, or other processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The experimental design cannot rule out the influence of context-derived motivational conflict on the observed behavioral outcomes, as mice were exposed to aversive stimuli in the same context where they received motivationally-relevant cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is an explicit acknowledgment by the authors of a limitation in their experimental design. This is appropriately identified as a confound that prevents definitive conclusions about whether the effects are due to aversive experience per se or context-dependent conflict. Future experiments with separate contexts would be needed to resolve this.",
+    "result_type": "MINOR"
+  }
+]

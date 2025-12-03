@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Monkeys exhibited nonlinear proprioceptive drift as a function of visual-proprioceptive disparity, with drift increasing for small disparities and plateauing/decreasing for large disparities. This behavioral pattern is qualitatively explained by the Bayesian Causal Inference (BCI) model, which predicts integration at small disparities (high probability of common source) and segregation at large disparities (low probability of common source).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 establish the behavioral paradigm and demonstrate that monkey behavior follows predictions of the BCI model. The nonlinear relationship between disparity and drift (C3) is well-documented across three monkeys with consistent patterns. The BCI model explanation (C4-C6) provides a coherent theoretical framework supported by the data, though the model fit quality and statistical comparisons to alternative models would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The posterior probability of a common source (Pcom) decreases with increasing disparity and within each disparity level as drift decreases. Pcom in the current trial is significantly influenced by Pcom from the previous trial (p<0.001), with high transition probabilities (>0.8) maintained across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 demonstrate trial-by-trial dynamics of Pcom with appropriate statistical testing (C9). The Markov model analysis provides evidence for experience-dependent updating of prior beliefs. However, the high transition probabilities (C10) and their interpretation require careful consideration of potential confounds from the experimental design (block structure, reward contingencies).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Sensory uncertainty (variance of proprioceptive drift) is dynamically updated based on causal structure: uncertainty increases after VPC task compared to VP task in early trials (p=0.012) and recovers in late trials (p=0.035). Within-trial, VPC task shows higher variance than VP task (p<0.001), while mean drift remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 provide converging evidence for sensory uncertainty updating while preserving accuracy (mean). The statistical tests are appropriate with FDR correction. The temporal dynamics (early vs. late trials) support the updating hypothesis. However, alternative explanations such as task difficulty or attention should be more thoroughly addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Both premotor and parietal cortices encode task components (condition, arm location, disparity) with 35-40% of neurons selective to condition. During VPC task, premotor cortex shows stronger visual arm signals while parietal cortex shows stronger proprioceptive arm signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 establish basic neural selectivity using ANOVA (p<0.05) and demonstrate differential encoding between regions. The proportions of selective neurons are clearly reported. However, the analysis would benefit from correction for multiple comparisons across neurons and more detailed characterization of selectivity strength beyond binary classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Both premotor and parietal cortices encode Pcom at single-neuron and population levels during target-holding. VP weight (integration probability) decreases with disparity and correlates with behavioral Pcom. Premotor cortex has slightly higher proportion of causal inference neurons (11.7%) than parietal cortex (7.6%, p=0.063).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 demonstrate neural correlates of causal inference using a novel VP weight metric. The correlation between neural VP weight and behavioral Pcom (C23) is key evidence. However, the VP weight calculation method relies on assumptions about integration/segregation templates that should be validated. The marginal significance (p=0.063) for regional differences (C24) suggests caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Population-level dPCA reveals Pcom components explain 29.9% and 20.5% of variance in premotor and parietal cortices respectively. Premotor cortex shows earlier Pcom representation than parietal cortex, confirmed by decoding analysis (p<0.05) and randomization test (p<0.01). jPECC analysis reveals significant time lag suggesting feedback from premotor to parietal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 provide strong evidence for temporal dynamics and directional information flow using multiple complementary analyses (dPCA, decoding, jPECC). The statistical tests are appropriate with permutation-based corrections. However, the causal interpretation of 'feedback' from correlation-based jPECC analysis should be stated more cautiously, especially given asynchronous recordings across animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior information (Pprior from previous trial) is represented in premotor cortex baseline activity: 7.0% of neurons show selectivity, and prior Pcom is decodable only from premotor cortex (p<0.05). Only the most recent trial (n-1) significantly impacts current trial (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 demonstrate neural representation of prior information with appropriate decoding and statistical tests. The temporal specificity (only n-1 trial matters) is well-established. However, the relatively small proportion of prior-selective neurons (7%) and the potential confound of motor preparation signals during baseline period warrant consideration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Pprior and Pcom are represented in orthogonal neural subspaces in premotor cortex: top 10 PCs of each capture minimal variance of the other. Pprior quickly decreases after disparity onset while Pcom increases and is maintained throughout the trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 demonstrate independent neural representations using subspace analysis and temporal dynamics. The orthogonality analysis is appropriate for testing independence. However, the choice of 10 PCs and the interpretation of temporal dynamics should consider that different trial epochs naturally have different information content.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Parietal cortex, but not premotor cortex, shows reduced neural tuning for arm location in VPC(0\u00b0) compared to VP task: lower firing rates (p=0.017), lower gain index (p=0.0016), decreased spatial selectivity (p<0.05), and reduced decoding accuracy (p<0.05). The change in decoding accuracy is significantly larger in parietal than premotor cortex (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide converging evidence for region-specific sensory updating using multiple metrics (firing rate, gain, selectivity, decoding). The statistical tests include appropriate corrections and interaction analysis (C39). This demonstrates that parietal cortex updates sensory representations to match causal structure. The consistency across metrics strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Monkeys combine previous experience and current multisensory signals to estimate hidden common source and update both causal structure and sensory representation. Premotor cortex represents core causal inference computation (estimation and update of integration likelihood), while parietal cortex represents causal structure and dynamically updates sensory representation to maintain consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 synthesize the main findings into a coherent model of frontoparietal circuit function in causal inference. The claims are well-supported by the collective evidence from behavioral and neural data. However, the directional/causal claims about information flow (C50) rely on correlational analyses from asynchronous recordings, which limits strong causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C100",
+      "C101"
+    ],
+    "result": "Neural recordings were obtained from 412 premotor neurons (2 monkeys) and 238 parietal neurons (2 monkeys). Three male rhesus monkeys participated with appropriate ethical approval (CEBSIT-2020034).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C100-C101 provide basic methodological information about subjects and sample sizes. The ethical approval is documented. However, the distribution of neurons across monkeys and the rationale for different monkeys contributing to different brain regions should be clarified for transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Prior work established that the brain combines multisensory information in near-optimal manner and that neurons implement reliability-weighted integration. Recent human neuroimaging revealed sequential causal inference processes, but single-neuron mechanisms in animals and updating of prior/sensory information during causal inference remained unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 accurately summarize prior literature and identify knowledge gaps. The citations are appropriate and the characterization of what was known versus unknown is fair. This establishes proper context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Previous studies identified bimodal neurons with visual and somatosensory receptive fields in premotor and parietal cortices of monkeys. Human fMRI and MEG studies showed these regions respond to multisensory stimuli and are involved in causal inference computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 accurately cite relevant prior work establishing the role of frontoparietal circuits in multisensory processing. The citations support the rationale for recording from these specific brain regions. The summary is accurate and appropriately scoped.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The BCI model has been extensively validated for perceptual and sensorimotor phenomena. Human neuroimaging revealed neural correlates in parietal and frontal cortices, but single-neuron studies in animals were lacking, particularly for the hidden variable Pcom. The current study directly examined Pcom representation and dynamics at single-neuron level, showing it is successively represented in premotor and parietal cortices with dynamic within-trial inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 appropriately contextualize the current work relative to prior BCI model studies and human neuroimaging. The distinction between prior approaches (using behavioral estimates) and the current approach (examining hidden variable Pcom) is clearly articulated. The summary of findings (C63, C65) is supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The study proposes a dynamic information flow model where Pcom is estimated from sensory uncertainties and disparity in premotor cortex, then used for sensory integration/segregation, with signals maintained in frontoparietal circuit to guide reaching behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 propose a mechanistic model of information flow. While the model is consistent with the data, the evidence is primarily correlational from asynchronous recordings. The proposed directionality and causal relationships require validation through perturbation experiments or simultaneous recordings. The model is plausible but not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Experience modulates cognitive functions within a Bayesian framework. The current study shows prior knowledge of common source is updated by previous trial's Pcom and integrated with sensory inputs. This mechanism may explain multisensory recalibration in sensorimotor behaviors, consistent with prior work showing posterior-to-prior feedback in frontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 appropriately connect the findings to broader theoretical frameworks and prior work on Bayesian updating. The proposed link to multisensory recalibration (C73) is reasonable but speculative, as the current study did not directly test recalibration. The citations to supporting literature are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The frontoparietal circuit is central to sensorimotor representations. The causal inference findings are unlikely explained by kinematic components because: (1) Pcom is abstract information uncorrelated with kinematics, (2) Pcom varies independently of hand position, and (3) Pcom signals appear before target onset when motor planning is impossible. High-level information (abstract structures, motor options, VP integration) is encoded in frontoparietal circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 address an important alternative explanation (motor kinematics) with multiple lines of reasoning. The arguments are logical and supported by the data, particularly the pre-target Pcom signals (C80). However, more direct controls (e.g., matching kinematics across conditions) would strengthen the argument. The conclusion about high-level encoding (C81) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Dynamic updating of prior and sensory representation provides a putative mechanism for multisensory recalibration. Sensory perception is modulated by multisensory context with conflicts. BCI theory explains how multisensory context modulates sensory representations (uncertainty and estimation). Top-down signals from premotor cortex modulate parietal spatial tuning to guide hand estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C85 propose broader implications for multisensory recalibration and sensory modulation. While the proposed mechanisms are consistent with the data and prior literature, the current study did not directly test recalibration or measure adaptation over longer timescales. The top-down modulation claim (C85) is supported by the data but the causal directionality requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Body ownership and agency involve continuous multisensory processing and causal inference. The study provides unique data for understanding self-relative awareness in macaque monkeys at the neural circuit level. Using BCI model and multi-area recordings enables qualitative exploration of body ownership and agency through hidden variables in behavior and neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C89 propose implications for body awareness and agency. While the connection to these phenomena is conceptually reasonable, the current study did not directly measure or manipulate body ownership/agency. The claim that this approach 'enables' exploration (C89) is speculative. These are interesting future directions but not directly established by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The representation and computation of hidden common source likely occurs in premotor cortex, consistent with body awareness findings. Results align with prior findings of higher-order body representations in premotor and parietal cortices. Causal inference neurons may complement mirror neuron systems by participating in self-identification and self-other discrimination rather than understanding others' behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 appropriately contextualize findings within prior literature on body representations and mirror neurons. The proposed complementary relationship to mirror neurons (C92, C95) is speculative but reasonable. The localization of computation to premotor cortex (C90) is supported by the temporal precedence data, though causal evidence would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Body schema is dynamically updated to maintain consistency with sensory inputs. Pathological impairments in causal inference can result in somatoparaphrenia and delusions of agency in schizophrenia. The computational mechanisms and neural circuits identified may contribute to learning and inference in any task relying on causal inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C99 propose broad implications for clinical conditions and general learning. While the cited literature on clinical conditions is appropriate (C97-C98), the current study did not examine pathological states or test generalization to other tasks. The proposed generality (C99) is speculative and requires empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The dynamic loop of frontal-parietal interactions in the causal inference framework may provide the neural mechanism for how neural circuits represent hidden structures for body awareness and agency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 proposes a broad mechanistic framework for body awareness and agency. While the frontoparietal dynamics are well-documented in the study, the connection to body awareness and agency is speculative. The study did not directly measure these subjective phenomena or test whether disrupting the identified circuits affects them. This is an interesting hypothesis for future work but not established by current data.",
+    "result_type": "MAJOR"
+  }
+]

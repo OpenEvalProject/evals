@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript provides background on Arl3 function in ciliated cells, describing its role as a small GTPase regulating ciliary enrichment of lipidated proteins through interactions with chaperones PDE\u03b4 and UNC119A/B, activation by GEF Arl13B in the cilium, and inactivation by GAP RP2 outside the cilium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are all supported by appropriate citations to prior work and represent established knowledge in the field. These background claims provide necessary context for the study but do not constitute novel findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Multiple human Arl3 mutations cause various forms of retinal degeneration with different inheritance patterns, and prior work has characterized some biochemical consequences of these mutations including effects on Arl13B binding and protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 summarize prior literature on human Arl3 mutations and their predicted effects, all supported by appropriate citations. These establish the clinical relevance and prior hypotheses about mutation mechanisms that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior mouse studies showed that both Arl3 knockout and overexpression of constitutively active Arl3-Q71L cause retinal degeneration, with only the Q71L model showing rod nuclear displacement into the INL, a phenotype also observed in RP2 knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 accurately summarize prior mouse model findings with appropriate citations. The inference in C22 that disrupting Arl3 activity could lead to nuclear migration is reasonable based on the RP2 knockout data, providing rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript provides background on retinal nuclear layer organization and factors known to influence photoreceptor nuclear positioning during development, including microtubule coupling, small GTPases, dopamine signaling, and dynein-dependent translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 summarize established knowledge about retinal development and nuclear migration with appropriate citations. These provide necessary context for interpreting the nuclear migration phenotypes observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Expression of dominant Arl3 mutants D67V and Y90C in mouse rods causes nuclear mislocalization to the INL (7.4% and 2.9% respectively) and basal displacement within the ONL, similar to constitutively active Q71L (5.4% in INL), while inactive T31N does not cause this phenotype, suggesting increased Arl3 activity causes the migration defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 present the primary in vivo phenotype with quantitative data from Figure 1 and statistical analysis in Table 1. The comparison across mutants with different activities provides strong evidence that increased Arl3 activity drives the migration defect. Sample sizes appear adequate (minimum 3 eyes per condition) and statistical methods are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Biochemical characterization reveals that Arl3-D67V is constitutively active (binds PDE\u03b4), while Arl3-Y90C exhibits fast cycling behavior (GEF-independent nucleotide exchange in presence of Mg2+ and excess GTP), similar to the known fast cycling mutant D129N, and both Y90C and D129N cause similar nuclear migration defects in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51 present novel biochemical characterization of the disease mutants using GST-PDE\u03b4 pulldowns and nucleotide loading experiments (Figures 2A-B). The identification of Y90C as fast cycling rather than constitutively active is a key finding, validated by comparison to D129N and correlation with in vivo phenotypes. The experimental logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Arl3-Y90C binds tightly to Arl13B at the same interface as wild-type, likely due to increased nucleotide-free state rather than altered binding site, and acts as a dominant negative by sequestering Arl13B, as evidenced by rescue of the migration defect when Arl13B is co-overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 demonstrate the dominant negative mechanism through co-immunoprecipitation experiments (Figure 3A) and in vivo rescue experiments (Figure 3B). The data showing that Arl13B overexpression rescues the Y90C phenotype provides strong functional evidence for the dominant negative model. Controls with R149H and T31N/Y90C double mutants appropriately test the binding interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C92",
+      "C93"
+    ],
+    "result": "Development of an in vivo crosslinking assay identifies three major Arl3-effector complexes (with RP2, UNC119, and BART) in cells expressing active Arl3, with mass spectrometry and western blot validation confirming complex identities and revealing that D67V forms stable RP2 complexes but has disrupted UNC119 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C92-C93 describe a novel methodological approach using DSS crosslinking to capture Arl3-effector complexes in cells (Figure 4A-C). The validation using mutants with known binding defects (Q71L/E164A/D168A for RP2, D67V for UNC119) and mass spectrometry provides strong evidence for complex identities. This is a useful technical advance for studying small GTPase activity states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In vivo crosslinking reveals that Arl3-Y90C is active in cells and binds effectors but is inactivated by RP2 (unlike Q71L), with activity levels intermediate between wild-type and Q71L that correlate with migration phenotype severity, and the Y90C/R149H double mutant maintains aberrant activity independent of GEF binding, confirming GEF-independent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 use the crosslinking assay to quantify relative Arl3 activity levels in cells (Figure 4D-F). The quantification in Figure 4E with statistical analysis provides strong evidence for the correlation between activity level and phenotype. The Y90C/R149H double mutant experiment is a critical control demonstrating GEF-independent activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Wild-type Arl3 is unable to be activated by Arl13B in the presence of Arl3-Y90C or T31N/Y90C, as shown by loss of effector complex formation in crosslinking experiments, confirming the dominant negative mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 provide direct evidence for the dominant negative effect using co-expression experiments with wild-type and mutant Arl3 (Figure 5A). The experimental design appropriately tests whether Y90C sequesters Arl13B and prevents endogenous Arl3 activation. The T31N control confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Expression of the inactive double mutant Arl3-T31N/Y90C does not cause a nuclear migration defect, suggesting that Arl3 activity (rather than loss of function) drives the migration phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 present a key genetic experiment showing that eliminating both aberrant Y90C activity and endogenous Arl3 activation rescues the phenotype (Figure 5B). This strongly supports the model that disrupted Arl3 activity gradient, not simply loss of function, causes the defect. The logic is sound and the result is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Overexpression of Arl3 chaperones (UNC119 or PDE\u03b4) rescues the Arl3-Y90C migration defect but not the high-expressing Arl3-Q71L defect, though lower Q71L expression can be rescued by PDE\u03b4, indicating that excess activation beyond a threshold impairs rod nuclear migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 demonstrate dose-dependent rescue by chaperone overexpression (Figure 6). The differential rescue of Y90C versus high-expression Q71L, and successful rescue of lower-expression Q71L, provides strong evidence for a threshold model. The experiments are well-controlled and the interpretation is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Overexpression of ciliary lipidated cargos (INPP5E, NPHP3) but not non-lipidated cargo (INPP5E-C644A) or non-ciliary cargo (Rnd1) rescues the Arl3-Y90C migration defect, suggesting that local chaperone enrichment at the cilium restores the Arl3 gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 present elegant cargo rescue experiments (Figure 7) that test the spatial specificity of the rescue mechanism. The requirement for both lipidation (for chaperone binding) and ciliary localization provides strong evidence that restoring the ciliary Arl3 gradient is critical. The controls are appropriate and the logic is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The Arl3-Y90C/R149H double mutant maintains aberrant activity but cannot bind Arl13B, and does not cause a migration defect in vivo, demonstrating that the ciliary gradient of active Arl3 is important for normal neuronal migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 present a critical experiment (Figure 8B) showing that preventing Y90C from binding Arl13B (via R149H mutation) rescues the phenotype despite maintaining aberrant activity. This strongly supports the model that the ciliary Arl3-GTP gradient, not just overall activity levels, is critical for proper migration. The experiment is well-designed and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study demonstrates that dominant Arl3 mutations cause increased active G-protein (D67V constitutively active, Y90C fast cycling), resulting in displaced rod nuclei due to an aberrant Arl3-GTP gradient, and that removing or restoring the ciliary Arl3-GTP gradient rescues the defect, revealing a role for the Arl3 ciliary gradient in photoreceptor nuclear positioning during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 summarize the main conclusions of the study, which are well-supported by the comprehensive set of biochemical, cell biological, and in vivo experiments. The multiple rescue strategies (chaperones, cargo, double mutants) all converge on the importance of the ciliary Arl3 gradient, providing strong support for the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Fast cycling mutations are dominant negative, and while this feature is necessary for the migration defect, it is not sufficient, as aberrant activity outside the cilia also plays a role; the defect results from disruption of proper Arl3-GTP localization rather than increased overall activity, with more active Arl3 required in the cilium than cell body for proper migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 present mechanistic interpretations well-supported by the rescue experiments. The distinction between dominant negative effects and spatial mislocalization is important and supported by the Y90C/R149H and Arl13B overexpression experiments. The model of a required Arl3 gradient is logical given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors speculate that reversing the Arl3 activity gradient disrupts cargo delivery, potentially causing cargo downregulation, and that absence of Arl3 activity may not cause defects because widespread cargo delivery could allow sufficient ciliary accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C100 are explicitly speculative (\"It is possible,\" \"This might explain\") and not directly tested in the study. While these are reasonable hypotheses based on the gradient model, they lack experimental support and represent future directions rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Prior work suggests that rod nuclear mislocalization may not be directly pathogenic (based on RP2 gene therapy studies), though basal nuclear displacement has been associated with retinal dysfunction including synaptic defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 accurately summarize prior literature with appropriate citations. These provide important context for interpreting the pathological significance of the migration phenotype, though they represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Mutations in Arl13B (Arl3 GEF) cause syndromic Joubert syndrome while RP2 (Arl3 GAP) mutations cause non-syndromic retinal degeneration, suggesting excess active Arl3 is more detrimental to photoreceptors than other ciliated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 summarize prior clinical observations with appropriate citations and make a reasonable inference about tissue-specific sensitivity to Arl3 dysregulation. This provides important context for understanding why dominant Arl3 mutations cause retinal-specific disease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Primary cilia have been shown to play a role in neuronal nuclear migration in the brain, with studies implicating Arl13B and cAMP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 accurately cites prior work on ciliary roles in brain neuronal migration, providing broader context for the photoreceptor findings. This is appropriate background but not a novel finding of the current study.",
+    "result_type": "MINOR"
+  }
+]

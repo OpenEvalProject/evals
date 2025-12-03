@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27"
+    ],
+    "result": "The computational model accurately captures the spatial topography of LSD-induced changes in cortical global brain connectivity (GBC). The model demonstrates that gain modulation-induced changes in excitatory-to-inhibitory (E/I) balance are the primary mechanism through which GBC topography is altered under LSD, with optimal model fits occurring at positive shifts in E/I ratio, suggesting a net-excitatory effect. The model outperforms the HTR2A gene expression map alone in explaining empirical \u0394GBC topography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17, C21-C25, and C27 collectively demonstrate strong model-empirical correspondence. The parameter sweep (C21), one-dimensional collapse analysis (C22-C23), network-level validation (C25), and statistical superiority over HTR2A map alone (C27) provide converging evidence. The model achieves rs=0.73 correlation with empirical data and captures both global patterns and fine-grained network-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C51",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The model identifies serotonin-2A-mediated modulation of pyramidal-neuronal gain as the circuit mechanism underlying LSD's effects on cortical functional topography. The best model fits are associated with gain modulation biased toward excitatory populations, suggesting LSD preferentially targets pyramidal neurons, consistent with the spatial distribution of 5-HT2A receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C19, C51, C56-C58 are supported by the modeling results showing that gain modulation biased toward excitatory populations best captures empirical data (C57), the necessity of HTR2A topography (C18), and convergence with anatomical evidence (C59-C61). The inference that this represents the circuit mechanism is well-justified by the model's performance and biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C52"
+    ],
+    "result": "The spatial topography of the HTR2A gene expression map is specifically and significantly responsible for the model's ability to capture LSD-induced functional changes. Using HTR2A yields maximal model-empirical correspondence compared to other receptor-encoding genes (HTR1A, HTR2C, HTR7, DRD1, DRD2), and this effect survives spatial autocorrelation-preserving surrogate map testing (p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C52 are strongly supported by the comparative analysis across multiple receptor maps (Figure 3A-B) and rigorous statistical testing using spatial autocorrelation-preserving surrogate maps (Figure 3C-D). The use of appropriate null models that control for spatial autocorrelation strengthens the conclusion that HTR2A topography is specifically important, not just any spatially autocorrelated map.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C36",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C50",
+      "C53",
+      "C63",
+      "C64"
+    ],
+    "result": "Individual-subject model fitting captures patterns of individual neural differences in pharmacological response that are linked to altered states of consciousness. The model's leading principal component (PC1) correlates with experiential regression maps, particularly for disembodiment and the dominant experiential pattern. However, the model captures only two significant modes of variation compared to five in the empirical data, with 67% of model variance falling within the empirical subspace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20, C36, C50, C53, C63-C64 demonstrate that the model captures experientially relevant individual variation, supported by correlations between model PC1 and experiential regression maps (Figure 4H). However, claims C39, C41-C43 reveal limitations: the model has lower dimensionality than the data. Despite this, the majority of model variance (67%) lies within the empirical subspace, and the model fits most subjects well (C64), supporting the overall conclusion with acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C76",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Global signal regression (GSR) significantly improves model-empirical correspondence and is necessary for revealing the relationship between neural and experiential effects of LSD. Multiple measures of model-empirical similarity (loading, Spearman correlation with HTR2A map, and model-empirical correlation) are significantly improved when GSR is performed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C76, C96-C98 are supported by statistical comparisons showing significant improvements with GSR (Figure 2\u2014figure supplement 1). The p-values are highly significant (p<10\u207b\u2075 for correlations, p=0.03 for loading). This addresses an important methodological consideration in pharmacological fMRI and is supported by citations to prior work (C28-C29) and current analyses (C30, C76, C96-C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C91",
+      "C93"
+    ],
+    "result": "Multiple lines of evidence from anatomical studies, electrophysiology, and single-cell transcriptomics converge to show that 5-HT2A receptors are preferentially expressed on cortical pyramidal neurons. HTR2A expression is significantly elevated in excitatory versus inhibitory cell types in human cortex (W=141,943; p<machine precision).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C91, C93 are well-supported by converging evidence from multiple species (humans, monkeys, rats) and methodologies (immunohistochemistry, electrophysiology, single-cell RNA-seq). The single-cell transcriptomic data (C61, C91, C93) provides direct quantitative support with highly significant statistics. This biological validation strengthens the modeling assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C66"
+    ],
+    "result": "Prior work has established that LSD's neural and experiential effects are attributable to 5-HT2A receptor agonism, as demonstrated by ketanserin blockade experiments. The regional topography of LSD-induced GBC changes aligns with HTR2A expression, and LSD primarily mediates its effects through 5-HT2A receptors despite also acting at other receptor sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C9, C66 accurately summarize prior work (Preller et al., 2018) that forms the foundation for the current study. These are well-established findings supported by pharmacological antagonist studies and are appropriately cited. The claims correctly represent the state of knowledge from prior research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The model architecture consists of 180 left-hemispheric cortical parcels from the HCP Multi-Modal Parcellation, with structural connectivity derived from 339 HCP subjects. The pharmacological fMRI data come from 24 subjects (25 enrolled, 1 excluded) in a within-subject, placebo-controlled design with LSD (100 \u00b5g) and resting-state scans collected 75 minutes post-administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C87-C90 accurately describe the model architecture and experimental design. The justification for modeling only one hemisphere (bilateral symmetry in data and gene expression) is appropriately cited (C11). The methodological details are clearly stated and consistent with standard practices in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C31",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "5-HT receptor stimulation enhances neural gain through 5-HT2A receptors, which are present on both glutamatergic projection neurons and GABAergic interneurons in cortex. LSD also acts as an agonist at other serotonergic (5-HT-2C, -1A/B, -6, -7) and dopaminergic (D1, D2) receptors. 5-HT2A and 5-HT1A receptors mediate opposing influences on membrane excitability, with 5-HT1A agonists showing anti-psychedelic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C31, C67-C72 accurately represent established neuropharmacological knowledge supported by appropriate citations to prior electrophysiological and anatomical studies. The claims about receptor distribution, functional effects, and LSD's polypharmacology are well-documented in the literature. The speculation about mechanisms (C13) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Changes in conscious experience were assessed using the 5D-ASC questionnaire administered 180 minutes post-drug, which quantifies five experiential dimensions (disembodiment, elemental imagery, changed meaning of percepts, blissful state, spiritual experience). Principal component analysis reveals a single dominant experiential regression map pattern across these dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe the psychometric assessment methodology and analysis. The use of the 5D-ASC questionnaire is standard and appropriately cited (C44). The finding of a dominant experiential pattern (C46) is supported by PCA results shown in Figure 4G. The methodology is clearly described and the analysis is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C62"
+    ],
+    "result": "Prior modeling work by Deco et al. (2018) showed that gain modulation captures global spatiotemporal properties of neural dynamics under LSD but did not examine cortical topographic effects. Most prior models of psychedelics have been fitted to group-level measures. Changes in global metrics may be driven by spatially non-specific effects and artifacts in psychedelic imaging studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C62 accurately characterize prior modeling work and its limitations, appropriately citing Deco et al. (2018) and other studies. The distinction between global metrics and spatial topography is important for contextualizing the current work's contribution. The concerns about artifacts in global metrics are supported by citations to methodological studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Global signal artifacts exhibit dramatic differences in clinical populations and following pharmacological manipulations. In psychedelic research, results frequently do not replicate across samples when GSR is not performed, while studies using GSR report replicable findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by citations to multiple prior neuroimaging studies examining GSR effects in various contexts, including psychedelic research. The claims accurately represent a body of literature on the importance of GSR for replicability in pharmacological fMRI studies, particularly with psychedelics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Spatial autocorrelation occurs ubiquitously in brain maps and can dramatically inflate p-values. Gene expression profiles exhibit hierarchical patterns of intra-cortical variation, but cortico-cortical variance is small relative to cortico-subcortical variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 accurately describe important statistical and biological properties of brain maps, appropriately citing methodological work (Burt et al., 2020) and transcriptomic studies (Hawrylycz et al., 2015; Burt et al., 2018). These claims provide important context for the statistical methods used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Gene expression levels across brain regions generally capture regional protein expression variation. PET maps for serotonin receptors show good alignment with AHBA gene expression. However, PET mapping is not possible for many receptors due to lack of radioligands. This study demonstrates that transcriptomic mapping can inform large-scale pharmacological neuroimaging models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by appropriate citations validating the use of transcriptomic data as proxies for receptor density (Carlyle et al., 2017; Beliveau et al., 2017). The limitation regarding PET radioligands (C82) is accurately stated. The proof-of-concept claim (C83) is justified by the successful application demonstrated in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C15",
+      "C16"
+    ],
+    "result": "Areal differences in gene transcription, cellular architecture, and connectivity are linked to functional specialization. Serotonergic hallucinogens produce alterations of consciousness linked to functional network disruption. Under LSD, GBC is elevated in sensory cortex (especially visual) and reduced in association cortex, and these changes correlate with changes in consciousness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C15-C16 accurately summarize established findings from prior literature, appropriately citing multiple studies. These claims provide important background context for the study. The characterization of LSD's effects on GBC (C15-C16) is based on prior work (Preller et al., 2018) that forms the empirical foundation for the current modeling study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The study was not statistically well-powered for individual differences analyses, and several subjects showed idiosyncratic neural responses that the model could not accurately capture for predicting experiential responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is an honest acknowledgment of study limitations. With only 24 subjects, the sample size is indeed modest for individual differences analyses. The claim is supported by visual inspection of individual fits (Figure 4\u2014figure supplement 1) showing variable model performance across subjects. This limitation is appropriately disclosed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The 5-HT2A receptor-rich claustrum may play a role in mediating psychedelic drug effects. There has been a resurgence of clinical interest in psychedelics for treating mood disorders, substance abuse, and end-of-life distress. Multiple lines of evidence point to 5-HT2A receptor-mediated glutamate release as a common therapeutic mechanism, though this remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 involve speculation about future directions (C84) and characterization of the clinical context (C85-C86). While appropriately cited, C84 is explicitly speculative about the claustrum's role. C86 acknowledges uncertainty about therapeutic mechanisms while citing supporting evidence. These claims provide context but do not constitute findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

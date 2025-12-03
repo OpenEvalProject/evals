@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C146"
+    ],
+    "result": "Under normal rearing conditions, the model autonomously learns accurate vergence control, achieving a corrected vergence accuracy of 15.9 \u00b1 21.44 arc sec, which falls within the range of human performance (typically better than 60 arc sec for stimuli not closer than 0.5 m).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33, C34, C36, and C37 provide converging quantitative evidence that the model achieves human-like vergence performance under normal rearing. The correction for visual resolution (C35, C36) is methodologically sound and allows meaningful comparison to human data (C37). The result is well-documented with specific performance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C147"
+    ],
+    "result": "The model successfully generalizes to random dot stereograms (RDS) despite never being trained on them, achieving a corrected vergence accuracy of 26.8 \u00b1 28.8 arc sec, only slightly worse than its performance on natural images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 demonstrate that the model handles RDS with performance comparable to natural images (C45), providing strong evidence for generalization. This is a critical test for stereoscopic vision models, as RDS contain no monocular depth cues (C38-C41). The quantitative performance metrics support the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Under altered rearing conditions (vertical, horizontal, orthogonal, monocular, strabismic), the model's learned receptive fields reflect the input statistics: orientation-deprived inputs lead to loss of corresponding orientation tuning, monocular deprivation leads to monocular RFs, and strabismus leads to monocular RFs without eye preference. These results are consistent with animal studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C62 provide comprehensive evidence that the model qualitatively reproduces experimental findings on RF development under altered rearing. The model shows appropriate adaptation to input statistics (C47-C50) and matches biological data from multiple cited studies (C60, C62). The results are well-illustrated in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The model reproduces binocularity patterns observed in neurophysiological experiments: normal rearing produces predominantly binocular neurons (binocularity index near 0), while incongruent binocular input (orthogonal, monocular, strabismic) produces monocular neurons. These patterns match experimental findings from Hubel and Wiesel and others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C77 demonstrate that the model's binocularity distributions match experimental data across multiple rearing conditions. The mechanistic explanation (C65-C66) linking vergence performance to binocularity is logical. Comparisons to specific experimental results (C70-C77) are well-supported by citations, though the model shows narrower distributions than biological data (acknowledged in C156).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model shows that altered rearing conditions reduce the number of disparity-tuned neurons, with distributions peaked at zero disparity. Normal rearing produces the most disparity-tuned cells, while uncorrelated input (strabismus) produces the fewest. The model reproduces the finding that constant exposure to a fixed disparity leads to preference for that disparity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 provide systematic evidence for how rearing conditions affect disparity tuning. The results are quantified in Figure 5 and show appropriate trends. The comparison to Shlaer (1971) for fixed strabismus (C84-C85) provides validation. The mechanistic explanation linking disparity exposure to tuning (C82) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C4",
+      "C99",
+      "C149"
+    ],
+    "result": "The model predicts that altered rearing conditions systematically impair vergence learning: normal and vertical rearing achieve accurate vergence (~0.3\u00b0 error), horizontal rearing shows reduced accuracy, while orthogonal, monocular, and strabismic rearing show no improvement (random movements). This is attributed to lack of disparity-tuned neurons under incongruent binocular input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 provide clear evidence for differential vergence learning across conditions, with appropriate mechanistic explanation (C91-C92). The experimental design is rigorous (same random seeds, C90). However, C99 acknowledges this is the first such study, making it a genuine prediction rather than reproduction of existing data. The prediction is testable and well-grounded in the model's behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "When tested after training with frozen weights (simulating post-critical period), models trained under altered rearing show persistent vergence deficits even when visual input is corrected. This finding aligns with clinical evidence that optical aberrations should be corrected early.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 and C152-C154 demonstrate lasting effects of altered rearing, consistent with biological critical periods. The experimental design (freezing weights, C152) appropriately simulates post-critical period testing. The comparison to clinical evidence (C154) is well-supported by citations. The mechanistic explanation (C98) is consistent with earlier results on binocular neuron development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Analysis of the reward landscape reveals that normal, vertical, and horizontal rearing produce a pronounced minimum at zero disparity, driving vergence learning, while orthogonal, monocular, and strabismic conditions show flat reward landscapes with no incentive to align the eyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 provide mechanistic insight into why vergence learning succeeds or fails under different conditions. The reward landscape analysis (Figure 7) directly demonstrates the link between coding efficiency and vergence behavior, supporting the Active Efficient Coding framework. This explains the differential learning outcomes observed in C87-C89.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The model captures the effects of aniseikonia on stereo vision: 10% aniseikonia causes slower learning and slightly reduced performance, 15% shows further impairment, and 25% causes complete failure. Stereo acuity declines approximately quadratically with aniseikonia level, matching human data, though the model appears somewhat more robust than humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 and C123-C125 demonstrate systematic effects of aniseikonia with appropriate quantitative comparison to human data (Lovasik and Szymkiw, 1985). The quadratic decline (C123) matches experimental observations. The mechanistic explanation via incongruent input and monocular RFs (C112-C113) is consistent with earlier results. The speculation about greater model robustness (C126) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The model predicts an inverted U-shaped relationship between aniseikonia level and the number of neurons tuned to vertical disparities: the number initially increases with aniseikonia but then decreases at 25% when vergence fails and neurons become monocular.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 describe a novel, testable prediction with clear mechanistic explanation (C116). The inverted U-shape is well-documented in Figure 8B. The explanation linking the decline to vergence failure and loss of binocular neurons is consistent with other results. This is explicitly identified as a testable prediction (C117).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C5",
+      "C150"
+    ],
+    "result": "The model predicts that vergence control systematically influences orientation tuning: removing vergence learning (random or zero disparity conditions) significantly reduces the number of vertically tuned neurons. This effect is explained by the need for multiple RFs to encode vertical edges at different disparities, while horizontal edges can be encoded by the same RF across disparities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 provide experimental evidence for the effect, with statistical significance (Figure 9A). The mechanistic explanation (C133-C136) is clearly illustrated in Figure 10 and follows logically from efficient coding principles. This is a novel prediction (C5, C150) linking motor behavior to sensory representation. The systematic variation with disparity distribution (Figure 9B) strengthens the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The model uses a two-scale architecture (coarse: 26.6\u00b0 field, fine: 8.3\u00b0 field) to simulate the increasing receptive field size from fovea to periphery in human retina. The coarse scale detects large disparities (up to 8.8\u00b0) while the fine scale detects small disparities (1.6\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 describe the model architecture with clear biological motivation (C21, C24). The two-scale design is well-justified for both biological plausibility and performance (C24). The specifications are precise and consistent. This is a methodological choice that enables the model's performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Altered rearing conditions are simulated by convolving input images with Gaussian kernels to blur specific orientations or simulate monocular deprivation, and by rotating one eye inward to simulate strabismus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe the methods for simulating altered rearing conditions. The approach is straightforward and appropriate for modeling the experimental manipulations. Details are provided in Materials and Methods and illustrated in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The model implements simultaneous learning of neural representation (sparse coding) and motor behavior (reinforcement learning), both optimizing coding efficiency. The learning occurs at roughly the same timescale and is robust to parameter variations as long as the critic converges faster than the actor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 describe the core learning mechanism of the Active Efficient Coding framework. The simultaneous learning (C29, C31) and shared objective (C30) are clearly explained. The robustness constraint (C32) is appropriately cited. This is fundamental to the model's operation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model shows over-representation of vertical and horizontal orientations (oblique effect), which has been observed in animals and humans and may reflect natural image statistics, imaging geometry, or the rectangular pixel grid used in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 document the oblique effect in the model and compare to biological data. However, C56 appropriately acknowledges that the rectangular pixel grid may be a confound. The additional experiment with different image database (C166) partially addresses this concern by showing reduced over-representation, suggesting the effect is partly due to image statistics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The model shows narrower distributions of binocularity indices and preferred disparities compared to biological data, likely due to simplifications: all neurons receive similar input from both eyes (unlike ocular dominance columns in biology) and the impoverished visual input (single frontoparallel plane).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C165 provide honest assessment of quantitative limitations. The proposed explanations (C158-C163) are reasonable and well-supported by citations. The acknowledgment of these limitations (C155, C157) is appropriate. The additional experiment with different images (C166) shows the model is sensitive to input statistics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The development of binocular vision involves learning both disparity-tuned neurons and vergence control. Previous models have limitations in ignoring the role of behavior in shaping sensory statistics. The Active Efficient Coding framework addresses this by coupling sensory and motor learning through efficient coding principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide background and motivation for the study. The critique of prior work (C10) and the description of the AEC framework (C13-C17) are well-supported by citations. This establishes the theoretical foundation and novelty of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C170"
+    ],
+    "result": "The Active Efficient Coding framework emphasizes the feedback cycle between sensory statistics, neural tuning, and behavior. The model demonstrates that efference copy is not required for learning accurate stereoscopic vision, though it may be useful for other functions like pursuit eye movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C144 and C170 discuss the theoretical framework and its relationship to Active Inference. The observation that efference copy is not required (C141-C142) is an interesting finding, though the speculation about future extensions (C143) is appropriately cautious. The summary (C170) accurately captures the model's insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The model passes three critical tests for stereoscopic vision development: autonomous self-calibration with human-like performance, handling random dot stereograms, and reproducing findings from altered rearing experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148 summarize the main achievements. These are well-supported by the detailed results in other claim groups. This is an appropriate high-level summary of the model's validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C171"
+    ],
+    "result": "Future work could extend the model to study amblyopia (with recently incorporated interocular suppression), predict treatment effectiveness, and apply the Active Efficient Coding approach to other sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C169 and C171 describe potential future work. While the suggestions are reasonable and C168 mentions recent model extensions, these are speculative statements about future research rather than current results. The potential applications (C169) are appropriately cited but remain to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

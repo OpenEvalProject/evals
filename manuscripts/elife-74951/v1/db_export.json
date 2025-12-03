@@ -1,0 +1,705 @@
+{
+  "submission": {
+    "id": "06d973e5-e8d6-4524-83d0-0b26f2fcb7ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:02:57.785461Z",
+    "updated_at": "2025-12-03T10:02:57.785461Z"
+  },
+  "content": [
+    {
+      "id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "submission_id": "06d973e5-e8d6-4524-83d0-0b26f2fcb7ca",
+      "content_type": "manuscript",
+      "content_text": "# Response to comment on \u2018SARS-CoV-2 suppresses anticoagulant and fibrinolytic gene expression in the lung\u2019\n\n## Authors\n\n- Alan E Mast<sup>1</sup> ([ORCID: 0000-0003-3740-0318](https://orcid.org/0000-0003-3740-0318))\n- Alisa S Wolberg<sup>2</sup> ([ORCID: 0000-0002-2845-2303](https://orcid.org/0000-0002-2845-2303))\n- David Gailani<sup>3</sup>\n- Michael R Garvin<sup>4</sup> ([ORCID: 0000-0002-2204-7569](https://orcid.org/0000-0002-2204-7569))\n- Christiane Alvarez<sup>4</sup>\n- J Izaak Miller<sup>4</sup>\n- Piet Jones<sup>5</sup>\n- Bruce Aronow<sup>6</sup>\n- Daniel Jacobson<sup>4</sup> ([ORCID: 0000-0002-9822-8251](https://orcid.org/0000-0002-9822-8251)) \u2020\n\n### Affiliations\n\n1. Versiti Blood Research Institute, Department of Cell Biology Neurobiology and Anatomy Medical College of Wisconsin Milwaukee United States\n2. Department of Pathology and Laboratory Medicine and UNC Blood Research Center Chapel Hill United States\n3. Department of Pathology, Microbiology and Immunology, Vanderbilt University Medical Center Nashville United States\n4. Oak Ridge National Laboratory, Biosciences Division Oak Ridge United States\n5. University of Tennessee Knoxville, The Bredesen Center for Interdisciplinary Research and Graduate Education Knoxville United States\n6. Biomedical Informatics, Cincinnati Children\u2019s Hospital Research Foundation, University of Cincinnati Cincinnati United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEarly in the SARS-CoV-2 pandemic, we compared transcriptome data from hospitalized COVID-19 patients and control patients without COVID-19. We found changes in procoagulant and fibrinolytic gene expression in the lungs of COVID-19 patients (Mast et al., 2021). These findings have been challenged based on issues with the samples (Fitzgerald and Jamieson, 2022). We have revisited our previous analyses in the light of this challenge and find that these new analyses support our original conclusions.\n\n## Introduction\n\nAs part of the global effort to address the pandemic caused by the SARS-CoV-2 virus, we support a robust discussion on COVID-19 to provide insight into the biological effect of the virus on humans. Previously, we compared transcriptome data from hospitalized COVID-19 patients to control patients without COVID-19 and found changes in procoagulant and fibrinolytic gene expression in the lungs of COVID-19 patients (Mast et al., 2021). These findings were subsequently challenged based on issues with the samples, including library depth, library preparation, and control group meta-data (FitzGerald and Jamieson, 2022). We have revisited our previous analyses of these two data sets, and we find that they are comparable to one another and support our conclusions. We address each of the criticisms of FitzGerald and Jamieson, 2022 below.\n\n## Results\n\n### The designation of Michalovich et al. as a \u201cHealthy Control\u201d for differential expression analysis\n\nFitzgerald and Jamieson have criticized our results based on the fact that the control group is (1) not free of comorbidities, and (2) \"not representative of the American population\". In accordance with eLife\u2019s transparent reporting procedures, we list group allocation as \u201cCases were those individuals diagnosed with COVID-19, controls were from a separate study in which participants were not diagnosed with any viral infection\u201d. Our goal of the analysis was to test for differences in the expression of genes in the coagulation pathway in response to infection from the SARS-CoV-2 virus. Most of the BALF samples in Michalovich et al. harbored comorbidities such as asthma, nicotine dependence, and obesity. Of the 40 control samples, three were reported to be free of these comorbidities (putatively 'healthy'). We find the criticisms raised are not warranted for the following reasons:\n\n### Dissimilar library preparation methods of Michalovich et al. (transcriptomic) and Zhou et al. (total RNA) are not comparable\n\nFitzgerald and Jamieson state that dissimilar library preparation methods of Michalovich et al. (Transcriptomic) and Zhou et al. (Total RNA) are not comparable. Library preparation for the case and control samples was different for the two studies. Michalovich et al. used a polyA enrichment method, which removes most ribosomal RNA (rRNA), and for the 9 cases, total RNA that includes rRNA was prepared. However, the assumption that this makes the samples non-comparable is flawed. Previous work in the field of RNA-Seq analysis has developed tools and techniques to mitigate sources of technical variation, such as library preparation (Risso et al., 2014). Our analysis leveraged TMM normalized counts for the differential analysis, implemented in edgeR. Fitzgerald and Jamieson raise concerns about our differential analysis based on the findings of Zhao et al., 2020. However, Zhao et al. focused on TPM and did not discuss more robust normalization protocols such as TMM or RLE, and thus may not be applicable in this case. To address the concerns of Fitzgerald and Jamieson, we re-calculated log-fold change of the differentially expressed genes from our analysis after removing rRNA counts from the CLC Genomics output. Furthermore, we accounted for factors (k = 1) of putative technical variation using the RUVSeq R package thereby producing an adjusted log-fold change (Risso et al., 2014). As one can see in Figure 1, the log-fold change with rRNA and the adjusted log-fold change without rRNA are highly correlated (R2 ~0.99954).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74951/elife-74951-fig1-v1.jpg)\n\nIn addition, keeping all non-COVID-19 controls helps to resolve the issue where a gene is observed in COVID-19 samples but has few reads in the controls.\n\n### Insufficient read depth of samples from Zhou et al.\n\nFitzgerald and Jamieson state that COVID-19 BALF samples contain insufficient read depth. We acknowledge that there exist \u201cgenerally accepted rules\u201d for read depth, etc. in the field of transcriptome analysis, and these guidelines are important to adhere to wherever possible. The nine BALF samples used in our analysis were taken from severely ill patients in Wuhan China in an attempt to identify the as-yet-unidentified pathogen causing their symptoms and were not prepared in conjunction with control samples. The low read-depth of the nine BALF samples resulted in high false-positive (off-target) counts due to the presence of Alu elements in some of the transcripts, which can be seen in the read mapping files (Figure 2). To account for this, and to reduce inflation or deflation of expression levels, we used highly stringent mapping parameters in CLC Genomics Workbench. The default parameters for this algorithm are to score a \u201cmatch\u201d for a read if at least 0.80 of the fragment matches the gene and if the similarity is 0.8 or greater. Instead, to reduce off-target mapping, we used the much more conservative approach of 0.95 length and 0.95 similarity match.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74951/elife-74951-fig2-v1.jpg)\n\n**Figure 2.:** Mapping settings were set to mismatch cost = 2, insertion cost = 3, deletion cost = 3, length fraction = 0.95, similarity fraction = 0.95. The Alu element in the 3\u2019UTR (brick), promoter (green), and coding sequence (dark yellow) of the transcript are annotated. Blue read mappings are paired reads that mapped a single time and light yellow are read mappings that aligned to multiple places in the transcriptome (i.e. other genes besides F3).\n\nGiven these highly stringent parameters, and the much larger read depth of the control samples, any genes that are expressed in COVID-19 BALF samples, but are not present in controls, have a high probability of being true positives and the fold-increase is likely an underestimate. We report large increases in many cases because the denominator of the controls was zero and therefore fold-change would be infinite. To account for this, we used the lowest number in the matrix of gene counts as the denominator.\n\n## Discussion\n\nFitzgerald and Jamieson state \u201cBy far the most notable result reported in Mast et al. is the reported observation that tissue factor, the key initiator of the extrinsic coagulation cascade, is not significantly impacted by SARS-CoV-2 infection\u201d. As noted previously, the presence of Alu elements can provide spurious read mappings in the situation where there are low read counts, as is the case here. Indeed, not only does tissue factor (F3) contain an Alu element in the 3\u2019UTR of the gene, the read mapping file in CLC Genomics Workbench clearly shows for both cases and controls, that the majority of the fragments map to multiple places in the transcriptome (yellow in Figure 2), and cannot be assigned to F3 with confidence. Regardless, in these BALF samples, F3 does not appear to be expressed at the mRNA level in cases or controls to any appreciable level. F3 may be upregulated in other tissues or cell types, or it may also be regulated at the protein and/or activity level, i.e., our analysis does not preclude a role of F3 in the complex pathology of COVID-19. For example, increased tissue factor has been detected by flow cytometry in monocytes and platelet-monocyte aggregates (Hottz et al., 2020) and by confocal microscopy and RT-qPCR in neutrophils (Skendros et al., 2020) from critically ill COVID-19 patients. Interestingly, it has been reported that a SARS-CoV-2 spike protein pseudovirus increases tissue factor activity in cells by converting it from an inactive to active form without altering protein expression (\u201cdecryption\u201d) (Wang et al., 2021), which is consistent with our results.\n\nIn their Discussion the authors state that \u201cthe field has begun converging on tissue factor as a key player in the pathogenesis and coagulopathy complications of SARS-CoV-2 infection\u201d. As stated above, we applaud the scientific community for their continued focus on this pathway and we are proud to have contributed to it early in the pandemic. We trust that the community does not think that we claim to have provided a complete and final understanding of COVID-19\u2019s effects in the lungs. Solutions to complex problems are achieved from a consensus of researchers addressing them with multiple approaches, one of which is our study.\n",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b71bd15a-5cdb-45a0-a4ac-22aed46dfa92",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C1",
+      "claim": "The authors previously compared transcriptome data from hospitalized COVID-19 patients to control patients without COVID-19 and found changes in procoagulant and fibrinolytic gene expression in the lungs of COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we compared transcriptome data from hospitalized COVID-19 patients to control patients without COVID-19 and found changes in procoagulant and fibrinolytic gene expression in the lungs of COVID-19 patients (Mast et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the authors' previous work (Mast et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "3703b100-6686-450c-a8c7-7c9aea8d1618",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C2",
+      "claim": "The findings about changes in procoagulant and fibrinolytic gene expression were challenged based on issues with the samples, including library depth, library preparation, and control group meta-data.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings were subsequently challenged based on issues with the samples, including library depth, library preparation, and control group meta-data (FitzGerald and Jamieson, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the critical commentary (FitzGerald and Jamieson, 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "d42abda7-1f3f-4071-bd31-7cdab0eef06f",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C3",
+      "claim": "The authors' revisited analyses of the two data sets are comparable to one another and support their original conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "We have revisited our previous analyses of these two data sets, and we find that they are comparable to one another and support our conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' reanalysis of their data, which is described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "5b681d55-8056-45d1-9a2a-27652398a14e",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C4",
+      "claim": "Most of the BALF samples in Michalovich et al. harbored comorbidities such as asthma, nicotine dependence, and obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the BALF samples in Michalovich et al. harbored comorbidities such as asthma, nicotine dependence, and obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references characteristics of samples from the Michalovich et al. study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "90291bce-d9c9-4440-b939-729effa53fe6",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C5",
+      "claim": "Of the 40 control samples, three were reported to be free of comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 40 control samples, three were reported to be free of these comorbidities (putatively 'healthy').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the composition of the control sample set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "9bf58cd5-7a2d-48dc-a8d0-f47d05b827e8",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C6",
+      "claim": "Michalovich et al. used a polyA enrichment method, which removes most ribosomal RNA (rRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "Michalovich et al. used a polyA enrichment method, which removes most ribosomal RNA (rRNA), and for the 9 cases, total RNA that includes rRNA was prepared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the library preparation method used in the Michalovich et al. study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "f63d31fb-866e-41b0-b2f2-47cd08a48171",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C7",
+      "claim": "For the 9 cases, total RNA that includes rRNA was prepared.",
+      "claim_type": "EXPLICIT",
+      "source": "Michalovich et al. used a polyA enrichment method, which removes most ribosomal RNA (rRNA), and for the 9 cases, total RNA that includes rRNA was prepared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the library preparation method used for the COVID-19 case samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "6821669c-4d37-405e-b7d7-4a4ff70d7436",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C8",
+      "claim": "Previous work in the field of RNA-Seq analysis has developed tools and techniques to mitigate sources of technical variation, such as library preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work in the field of RNA-Seq analysis has developed tools and techniques to mitigate sources of technical variation, such as library preparation (Risso et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Risso et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "baa27e84-ba09-476f-a40d-a0224d120afe",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C9",
+      "claim": "The authors' analysis leveraged TMM normalized counts for the differential analysis, implemented in edgeR.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis leveraged TMM normalized counts for the differential analysis, implemented in edgeR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the normalization method used in the authors' analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "54098b77-b1ae-4e3f-966f-e4a0000eda06",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C10",
+      "claim": "Zhao et al. focused on TPM and did not discuss more robust normalization protocols such as TMM or RLE.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Zhao et al. focused on TPM and did not discuss more robust normalization protocols such as TMM or RLE, and thus may not be applicable in this case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the content of the Zhao et al., 2020 paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "d79fab10-ad87-4109-8f68-238e46f8fe8b",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C11",
+      "claim": "The log-fold change with rRNA and the adjusted log-fold change without rRNA are highly correlated (R2 ~0.99954).",
+      "claim_type": "EXPLICIT",
+      "source": "As one can see in Figure 1, the log-fold change with rRNA and the adjusted log-fold change without rRNA are highly correlated (R2 ~0.99954).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1, which displays the correlation between the two measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "70b94e04-95a6-45cc-910a-7a11383e85bb",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C12",
+      "claim": "The nine BALF samples used in the analysis were taken from severely ill patients in Wuhan China in an attempt to identify the as-yet-unidentified pathogen causing their symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The nine BALF samples used in our analysis were taken from severely ill patients in Wuhan China in an attempt to identify the as-yet-unidentified pathogen causing their symptoms and were not prepared in conjunction with control samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the origin and context of the COVID-19 case samples.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "4774b5c6-470d-4f06-9b2a-3931c96ec1bd",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C13",
+      "claim": "The nine BALF samples were not prepared in conjunction with control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The nine BALF samples used in our analysis were taken from severely ill patients in Wuhan China in an attempt to identify the as-yet-unidentified pathogen causing their symptoms and were not prepared in conjunction with control samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design of the original sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "0986c76c-9e1f-4249-8250-7161ce4f1f0d",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C14",
+      "claim": "The low read-depth of the nine BALF samples resulted in high false-positive (off-target) counts due to the presence of Alu elements in some of the transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "The low read-depth of the nine BALF samples resulted in high false-positive (off-target) counts due to the presence of Alu elements in some of the transcripts, which can be seen in the read mapping files (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' analysis of read mapping files shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "19aed973-eaea-40a4-9bc7-5fa6240a238e",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C15",
+      "claim": "The authors used highly stringent mapping parameters in CLC Genomics Workbench with 0.95 length and 0.95 similarity match to reduce off-target mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, to reduce off-target mapping, we used the much more conservative approach of 0.95 length and 0.95 similarity match.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the specific parameters used in the authors' analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "b57676b9-4654-400d-934d-cceb9354b5dc",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C16",
+      "claim": "The default parameters for the CLC Genomics Workbench algorithm are to score a 'match' for a read if at least 0.80 of the fragment matches the gene and if the similarity is 0.8 or greater.",
+      "claim_type": "EXPLICIT",
+      "source": "The default parameters for this algorithm are to score a \"match\" for a read if at least 0.80 of the fragment matches the gene and if the similarity is 0.8 or greater.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the default settings of the software used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "b8a45e81-ae1d-41ae-806c-80656ab4f926",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C17",
+      "claim": "Given the highly stringent parameters and the much larger read depth of the control samples, any genes that are expressed in COVID-19 BALF samples but are not present in controls have a high probability of being true positives.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these highly stringent parameters, and the much larger read depth of the control samples, any genes that are expressed in COVID-19 BALF samples, but are not present in controls, have a high probability of being true positives and the fold-increase is likely an underestimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference from the analysis parameters and sample characteristics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "5d15a60a-9e83-437b-867a-699a12fb56ec",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C18",
+      "claim": "The fold-increase for genes expressed in COVID-19 BALF samples but not in controls is likely an underestimate.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these highly stringent parameters, and the much larger read depth of the control samples, any genes that are expressed in COVID-19 BALF samples, but are not present in controls, have a high probability of being true positives and the fold-increase is likely an underestimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference from the analysis parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "753d3eb1-4ab8-4e01-841f-b429ebfcf1ef",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C19",
+      "claim": "Tissue factor (F3) contains an Alu element in the 3'UTR of the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, not only does tissue factor (F3) contain an Alu element in the 3'UTR of the gene, the read mapping file in CLC Genomics Workbench clearly shows for both cases and controls, that the majority of the fragments map to multiple places in the transcriptome (yellow in Figure 2), and cannot be assigned to F3 with confidence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the genomic structure of F3 and visualization in Figure 2.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "d5866453-e84f-42f0-bf6f-170d02e275c6",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C20",
+      "claim": "The read mapping file in CLC Genomics Workbench shows for both cases and controls that the majority of the fragments map to multiple places in the transcriptome and cannot be assigned to F3 with confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, not only does tissue factor (F3) contain an Alu element in the 3'UTR of the gene, the read mapping file in CLC Genomics Workbench clearly shows for both cases and controls, that the majority of the fragments map to multiple places in the transcriptome (yellow in Figure 2), and cannot be assigned to F3 with confidence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data visualization in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "02ede769-2104-499a-bed8-6048416eb8c2",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C21",
+      "claim": "In the BALF samples, F3 does not appear to be expressed at the mRNA level in cases or controls to any appreciable level.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, in these BALF samples, F3 does not appear to be expressed at the mRNA level in cases or controls to any appreciable level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "80257985-d215-4632-8f1b-cc10a7baeb28",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C22",
+      "claim": "F3 may be upregulated in other tissues or cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "F3 may be upregulated in other tissues or cell types, or it may also be regulated at the protein and/or activity level, i.e., our analysis does not preclude a role of F3 in the complex pathology of COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, acknowledging limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "3a77c8af-4be7-494f-a9a7-7e42d5d6f84b",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C23",
+      "claim": "F3 may be regulated at the protein and/or activity level.",
+      "claim_type": "EXPLICIT",
+      "source": "F3 may be upregulated in other tissues or cell types, or it may also be regulated at the protein and/or activity level, i.e., our analysis does not preclude a role of F3 in the complex pathology of COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, acknowledging limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "0d4a0b98-10d5-4509-b723-01c064d0768b",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C24",
+      "claim": "The authors' analysis does not preclude a role of F3 in the complex pathology of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "F3 may be upregulated in other tissues or cell types, or it may also be regulated at the protein and/or activity level, i.e., our analysis does not preclude a role of F3 in the complex pathology of COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference about the limitations of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "89b430e3-5888-4b6d-be71-e6c1e6120769",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C25",
+      "claim": "Increased tissue factor has been detected by flow cytometry in monocytes and platelet-monocyte aggregates from critically ill COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, increased tissue factor has been detected by flow cytometry in monocytes and platelet-monocyte aggregates (Hottz et al., 2020) and by confocal microscopy and RT-qPCR in neutrophils (Skendros et al., 2020) from critically ill COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hottz et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "a77dc4fb-0a7b-4898-8b8d-2e1276de3070",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C26",
+      "claim": "Increased tissue factor has been detected by confocal microscopy and RT-qPCR in neutrophils from critically ill COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, increased tissue factor has been detected by flow cytometry in monocytes and platelet-monocyte aggregates (Hottz et al., 2020) and by confocal microscopy and RT-qPCR in neutrophils (Skendros et al., 2020) from critically ill COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Skendros et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "f10907c4-59c1-48f7-b103-2f64bdc1fe16",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C27",
+      "claim": "A SARS-CoV-2 spike protein pseudovirus increases tissue factor activity in cells by converting it from an inactive to active form without altering protein expression ('decryption').",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it has been reported that a SARS-CoV-2 spike protein pseudovirus increases tissue factor activity in cells by converting it from an inactive to active form without altering protein expression (\"decryption\") (Wang et al., 2021), which is consistent with our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "8ff73424-d97f-4c9e-b634-815c692c2b07",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C28",
+      "claim": "The finding that SARS-CoV-2 spike protein pseudovirus increases tissue factor activity by decryption is consistent with the authors' results.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it has been reported that a SARS-CoV-2 spike protein pseudovirus increases tissue factor activity in cells by converting it from an inactive to active form without altering protein expression (\"decryption\") (Wang et al., 2021), which is consistent with our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference connecting the cited work to the authors' findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "0ef80a36-9686-488b-b59e-e2a64a2a4992",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C29",
+      "claim": "The authors used the lowest number in the matrix of gene counts as the denominator to account for situations where the denominator of the controls was zero.",
+      "claim_type": "EXPLICIT",
+      "source": "We report large increases in many cases because the denominator of the controls was zero and therefore fold-change would be infinite. To account for this, we used the lowest number in the matrix of gene counts as the denominator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological approach used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "5c7d4eeb-8660-4f53-9d3c-be1034af73b1",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C30",
+      "claim": "The authors report large increases in many cases because the denominator of the controls was zero and therefore fold-change would be infinite.",
+      "claim_type": "EXPLICIT",
+      "source": "We report large increases in many cases because the denominator of the controls was zero and therefore fold-change would be infinite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim explains the rationale for the reported results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "bdba3813-87a1-46f1-bc08-6a868da9f131",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C31",
+      "claim": "The authors accounted for factors (k = 1) of putative technical variation using the RUVSeq R package thereby producing an adjusted log-fold change.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we accounted for factors (k = 1) of putative technical variation using the RUVSeq R package thereby producing an adjusted log-fold change (Risso et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological approach with citation to the RUVSeq package.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "ac5ad1a1-30ed-49e9-892e-661d7912e7a3",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C32",
+      "claim": "Keeping all non-COVID-19 controls helps to resolve the issue where a gene is observed in COVID-19 samples but has few reads in the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, keeping all non-COVID-19 controls helps to resolve the issue where a gene is observed in COVID-19 samples but has few reads in the controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference about the benefits of the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "190ef59e-3606-46fc-abb1-d33f9411fd2a",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C33",
+      "claim": "The goal of the analysis was to test for differences in the expression of genes in the coagulation pathway in response to infection from the SARS-CoV-2 virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our goal of the analysis was to test for differences in the expression of genes in the coagulation pathway in response to infection from the SARS-CoV-2 virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the objective of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "0a3782c1-a870-4e54-8dcf-234f9ef79e08",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "claim_id": "C34",
+      "claim": "Cases were those individuals diagnosed with COVID-19, controls were from a separate study in which participants were not diagnosed with any viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with eLife's transparent reporting procedures, we list group allocation as \"Cases were those individuals diagnosed with COVID-19, controls were from a separate study in which participants were not diagnosed with any viral infection\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study design and sample allocation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ce07104c-8c99-4756-a297-6579bb0cea39",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors defend their original findings of changes in procoagulant and fibrinolytic gene expression in COVID-19 patients' lungs against methodological criticisms. After reanalysis addressing concerns about library depth, preparation methods, and control group metadata, they conclude their datasets are comparable and support their original conclusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the authors present reanalysis (C3) in response to specific criticisms (C2), the manuscript is a response/rebuttal rather than presenting independent validation. The core claim relies on the adequacy of their methodological corrections, which are addressed in subsequent results. Without independent experimental validation or additional datasets, the overall conclusion remains dependent on the validity of their analytical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "db6371b0-216f-4890-a377-dc7c4caad13e",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The control samples from Michalovich et al. consisted of 40 BALF samples, most with comorbidities (asthma, nicotine dependence, obesity), with only three reportedly free of comorbidities. The authors justify using these as controls because their goal was to test for gene expression differences in response to SARS-CoV-2 infection, not to compare against perfectly healthy individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 accurately describe the control sample composition, and C33-C34 clearly state the study design rationale. The authors transparently acknowledge the control group characteristics and provide a reasonable scientific justification for their use in testing viral infection effects rather than requiring disease-free controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "5b859752-7430-4b2c-a0fd-168f59935e9c",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors address concerns about dissimilar library preparation methods (polyA enrichment for controls vs. total RNA for cases) by applying TMM normalization via edgeR and RUVSeq correction for technical variation. They demonstrate that log-fold changes with and without rRNA are highly correlated (R\u00b2 ~0.99954), supporting the comparability of the datasets despite different preparation methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the high correlation (C11) suggests consistency between approaches, and normalization methods (C9, C31) are appropriate tools for addressing technical variation (C8), the fundamental issue of comparing polyA-enriched to total RNA libraries remains problematic. The choice of k=1 for RUVSeq is not justified, and no validation is provided showing that these corrections adequately remove batch effects. The dismissal of Zhao et al.'s concerns (C10) based on their focus on TPM rather than TMM/RLE is insufficient without demonstrating that TMM actually resolves the specific issues raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "e222e5af-3d5e-43af-affb-6cb1112482d9",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors acknowledge low read depth in the nine COVID-19 BALF samples and resulting false-positive counts from Alu elements. They address this by using stringent mapping parameters (0.95 length and similarity vs. 0.80 default) and argue that genes expressed in cases but absent in controls are likely true positives with underestimated fold-changes. For genes with zero counts in controls, they used the lowest matrix value as denominator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "The methodological approach contains critical flaws. Using the 'lowest number in the matrix' as denominator (C29) is statistically inappropriate and arbitrary\u2014this is not a standard method for handling zero counts in differential expression analysis. The claim that stringent mapping reduces false positives (C15-C17) does not address the fundamental problem of insufficient statistical power from low read depth. The inference that fold-changes are 'likely underestimates' (C18) is not supported by statistical analysis. Standard RNA-seq tools (like edgeR mentioned in C9) have established methods for handling low counts that were apparently not properly applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "36cccf0d-5fc4-4753-85f7-badf3b9453e2",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors find that tissue factor (F3) is not appreciably expressed at the mRNA level in BALF samples from either COVID-19 cases or controls, attributing this to Alu elements causing ambiguous read mapping. They acknowledge that F3 may be regulated at the protein/activity level or in other tissues, and their analysis does not preclude a role for F3 in COVID-19 pathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 provide clear evidence from Figure 2 showing multi-mapping reads that cannot be confidently assigned to F3. The conclusion of minimal F3 mRNA expression (C21) is appropriately cautious, and the authors properly acknowledge limitations (C22-C24) regarding other regulatory mechanisms and tissue types. This represents a measured interpretation of negative/ambiguous data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    },
+    {
+      "id": "0e1270c5-c594-42b8-8fc3-bf9f3dd0278b",
+      "content_id": "0b82eb4b-1589-4561-8e6e-1d64fbb28347",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors cite literature showing increased tissue factor detected by other methods (flow cytometry, confocal microscopy, RT-qPCR) in immune cells from COVID-19 patients, and note that SARS-CoV-2 spike protein can activate tissue factor through 'decryption' without changing expression levels, which they claim is consistent with their findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 appropriately cite relevant literature with specific methodologies. The inference (C28) that post-translational activation is consistent with their lack of mRNA changes is logically sound and helps contextualize their negative F3 expression results within the broader COVID-19 coagulation literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:57.785461Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b71bd15a-5cdb-45a0-a4ac-22aed46dfa92",
+      "result_id": "ce07104c-8c99-4756-a297-6579bb0cea39"
+    },
+    {
+      "claim_id": "3703b100-6686-450c-a8c7-7c9aea8d1618",
+      "result_id": "ce07104c-8c99-4756-a297-6579bb0cea39"
+    },
+    {
+      "claim_id": "d42abda7-1f3f-4071-bd31-7cdab0eef06f",
+      "result_id": "ce07104c-8c99-4756-a297-6579bb0cea39"
+    },
+    {
+      "claim_id": "5b681d55-8056-45d1-9a2a-27652398a14e",
+      "result_id": "db6371b0-216f-4890-a377-dc7c4caad13e"
+    },
+    {
+      "claim_id": "90291bce-d9c9-4440-b939-729effa53fe6",
+      "result_id": "db6371b0-216f-4890-a377-dc7c4caad13e"
+    },
+    {
+      "claim_id": "190ef59e-3606-46fc-abb1-d33f9411fd2a",
+      "result_id": "db6371b0-216f-4890-a377-dc7c4caad13e"
+    },
+    {
+      "claim_id": "0a3782c1-a870-4e54-8dcf-234f9ef79e08",
+      "result_id": "db6371b0-216f-4890-a377-dc7c4caad13e"
+    },
+    {
+      "claim_id": "9bf58cd5-7a2d-48dc-a8d0-f47d05b827e8",
+      "result_id": "5b859752-7430-4b2c-a0fd-168f59935e9c"
+    },
+    {
+      "claim_id": "f63d31fb-866e-41b0-b2f2-47cd08a48171",
+      "result_id": "5b859752-7430-4b2c-a0fd-168f59935e9c"
+    },
+    {
+      "claim_id": "6821669c-4d37-405e-b7d7-4a4ff70d7436",
+      "result_id": "5b859752-7430-4b2c-a0fd-168f59935e9c"
+    },
+    {
+      "claim_id": "baa27e84-ba09-476f-a40d-a0224d120afe",
+      "result_id": "5b859752-7430-4b2c-a0fd-168f59935e9c"
+    },
+    {
+      "claim_id": "54098b77-b1ae-4e3f-966f-e4a0000eda06",
+      "result_id": "5b859752-7430-4b2c-a0fd-168f59935e9c"
+    },
+    {
+      "claim_id": "d79fab10-ad87-4109-8f68-238e46f8fe8b",
+      "result_id": "5b859752-7430-4b2c-a0fd-168f59935e9c"
+    },
+    {
+      "claim_id": "bdba3813-87a1-46f1-bc08-6a868da9f131",
+      "result_id": "5b859752-7430-4b2c-a0fd-168f59935e9c"
+    },
+    {
+      "claim_id": "ac5ad1a1-30ed-49e9-892e-661d7912e7a3",
+      "result_id": "5b859752-7430-4b2c-a0fd-168f59935e9c"
+    },
+    {
+      "claim_id": "70b94e04-95a6-45cc-910a-7a11383e85bb",
+      "result_id": "e222e5af-3d5e-43af-affb-6cb1112482d9"
+    },
+    {
+      "claim_id": "4774b5c6-470d-4f06-9b2a-3931c96ec1bd",
+      "result_id": "e222e5af-3d5e-43af-affb-6cb1112482d9"
+    },
+    {
+      "claim_id": "0986c76c-9e1f-4249-8250-7161ce4f1f0d",
+      "result_id": "e222e5af-3d5e-43af-affb-6cb1112482d9"
+    },
+    {
+      "claim_id": "19aed973-eaea-40a4-9bc7-5fa6240a238e",
+      "result_id": "e222e5af-3d5e-43af-affb-6cb1112482d9"
+    },
+    {
+      "claim_id": "b57676b9-4654-400d-934d-cceb9354b5dc",
+      "result_id": "e222e5af-3d5e-43af-affb-6cb1112482d9"
+    },
+    {
+      "claim_id": "b8a45e81-ae1d-41ae-806c-80656ab4f926",
+      "result_id": "e222e5af-3d5e-43af-affb-6cb1112482d9"
+    },
+    {
+      "claim_id": "5d15a60a-9e83-437b-867a-699a12fb56ec",
+      "result_id": "e222e5af-3d5e-43af-affb-6cb1112482d9"
+    },
+    {
+      "claim_id": "0ef80a36-9686-488b-b59e-e2a64a2a4992",
+      "result_id": "e222e5af-3d5e-43af-affb-6cb1112482d9"
+    },
+    {
+      "claim_id": "5c7d4eeb-8660-4f53-9d3c-be1034af73b1",
+      "result_id": "e222e5af-3d5e-43af-affb-6cb1112482d9"
+    },
+    {
+      "claim_id": "753d3eb1-4ab8-4e01-841f-b429ebfcf1ef",
+      "result_id": "36cccf0d-5fc4-4753-85f7-badf3b9453e2"
+    },
+    {
+      "claim_id": "d5866453-e84f-42f0-bf6f-170d02e275c6",
+      "result_id": "36cccf0d-5fc4-4753-85f7-badf3b9453e2"
+    },
+    {
+      "claim_id": "02ede769-2104-499a-bed8-6048416eb8c2",
+      "result_id": "36cccf0d-5fc4-4753-85f7-badf3b9453e2"
+    },
+    {
+      "claim_id": "80257985-d215-4632-8f1b-cc10a7baeb28",
+      "result_id": "36cccf0d-5fc4-4753-85f7-badf3b9453e2"
+    },
+    {
+      "claim_id": "3a77c8af-4be7-494f-a9a7-7e42d5d6f84b",
+      "result_id": "36cccf0d-5fc4-4753-85f7-badf3b9453e2"
+    },
+    {
+      "claim_id": "0d4a0b98-10d5-4509-b723-01c064d0768b",
+      "result_id": "36cccf0d-5fc4-4753-85f7-badf3b9453e2"
+    },
+    {
+      "claim_id": "89b430e3-5888-4b6d-be71-e6c1e6120769",
+      "result_id": "0e1270c5-c594-42b8-8fc3-bf9f3dd0278b"
+    },
+    {
+      "claim_id": "a77dc4fb-0a7b-4898-8b8d-2e1276de3070",
+      "result_id": "0e1270c5-c594-42b8-8fc3-bf9f3dd0278b"
+    },
+    {
+      "claim_id": "f10907c4-59c1-48f7-b103-2f64bdc1fe16",
+      "result_id": "0e1270c5-c594-42b8-8fc3-bf9f3dd0278b"
+    },
+    {
+      "claim_id": "8ff73424-d97f-4c9e-b634-815c692c2b07",
+      "result_id": "0e1270c5-c594-42b8-8fc3-bf9f3dd0278b"
+    }
+  ],
+  "comparisons": []
+}

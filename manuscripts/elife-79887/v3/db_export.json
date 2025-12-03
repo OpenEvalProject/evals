@@ -1,0 +1,1993 @@
+{
+  "submission": {
+    "id": "480a8ce9-8602-4a0a-a009-6d4a11b0aa3b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:08:21.875600Z",
+    "updated_at": "2025-12-03T14:08:21.875600Z"
+  },
+  "content": [
+    {
+      "id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "submission_id": "480a8ce9-8602-4a0a-a009-6d4a11b0aa3b",
+      "content_type": "manuscript",
+      "content_text": "# Taste quality and hunger interactions in a feeding sensorimotor circuit\n\n## Authors\n\n- Philip K Shiu<sup>1</sup> ([ORCID: 0000-0002-8794-5474](https://orcid.org/0000-0002-8794-5474))\n- Gabriella R Sterne<sup>1</sup> ([ORCID: 0000-0002-7221-648X](https://orcid.org/0000-0002-7221-648X)) \u2020\n- Stefanie Engert<sup>1</sup> ([ORCID: 0000-0003-0644-8116](https://orcid.org/0000-0003-0644-8116))\n- Barry J Dickson<sup>2</sup>\n- Kristin Scott<sup>1</sup> ([ORCID: 0000-0003-3150-7210](https://orcid.org/0000-0003-3150-7210)) \u2020\n\n### Affiliations\n\n1. University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. Janelia Research Campus, Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))\n3. Queensland Brain Institute, University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTaste detection and hunger state dynamically regulate the decision to initiate feeding. To study how context-appropriate feeding decisions are generated, we combined synaptic resolution circuit reconstruction with targeted genetic access to specific neurons to elucidate a gustatory sensorimotor circuit for feeding initiation in adult Drosophila melanogaster. This circuit connects gustatory sensory neurons to proboscis motor neurons through three intermediate layers. Most neurons in this pathway are necessary and sufficient for proboscis extension, a feeding initiation behavior, and respond selectively to sugar taste detection. Pathway activity is amplified by hunger signals that act at select second-order neurons to promote feeding initiation in food-deprived animals. In contrast, the feeding initiation circuit is inhibited by a bitter taste pathway that impinges on premotor neurons, illuminating a local motif that weighs sugar and bitter taste detection to adjust the behavioral outcomes. Together, these studies reveal central mechanisms for the integration of external taste detection and internal nutritive state to flexibly execute a critical feeding decision.\n\n## Introduction\n\nThe decision to initiate feeding depends both on the quality of available food and current nutrient needs. The gustatory system detects nutritious and noxious compounds in the environment and evaluates food quality. Food quality information is integrated with internal nutritive state to ensure that food intake matches energy demands. How do central neural circuits evaluate taste information in the context of internal nutritive state to make feeding decisions?\n\nAs feeding decisions are universal and essential for survival, animals as diverse as humans and Drosophila share similar strategies to detect taste compounds and assess nutrient needs. Peripheral taste detection in mammals and insects is mediated by sensory cells that detect specific taste modalities and elicit innate feeding behaviors. Both mammals and flies have sugar-, bitter-, water-, and salt-sensing gustatory cells (Liman et al., 2014; Yarmolinsky et al., 2009). Activation of sugar-sensing gustatory cells triggers feeding initiation, whereas activation of bitter-sensing cells inhibits feeding. Mammals and insects also evaluate internal nutrient needs with similar strategies (Augustine et al., 2018; Leopold and Perrimon, 2007; N\u00e4ssel and Zandawala, 2019; Pool and Scott, 2014; Sareen et al., 2021). Neuromodulators released from neurosecretory centers and the gut signal hunger or satiety to oppositely regulate feeding. Disruption of these hunger and satiety signals results in obesity and anorexia in mammals and insects.\n\nAlthough gustatory sensory neurons have been shown to be modulated by hunger signals and conflicting taste information (Chu et al., 2014; French et al., 2015; Inagaki et al., 2012; Inagaki et al., 2014; Jeong et al., 2013; Meunier et al., 2003), central mechanisms that modulate feeding decisions are unclear because the identity, structure, and function of central feeding initiation circuits are unknown. Recent advances in brain-wide synaptic connectivity mapping (Dorkenwald et al., 2022; Eckstein et al., 2020; Zheng et al., 2018) and precise genetic access to single neurons (Dionne et al., 2018; Luan et al., 2006) make Drosophila melanogaster an ideal system to interrogate how central neural circuits compute feeding decisions. Taste detection in adult Drosophila begins with activation of gustatory receptor neurons (GRNs) found in sensory structures located on the body surface, including the external mouthparts, or proboscis labellum (Dethier, 1976; Montell, 2021; Scott, 2018; Stocker, 1994). The axons of proboscis GRNs project to the primary taste and premotor center of the insect brain, the subesophageal zone (SEZ) (Kendroud et al., 2018; Miyazaki and Ito, 2010; Stocker and Schorderet, 1981). The motor neurons that execute feeding have cell bodies and dendrites in the SEZ near GRN axons, suggesting a local feeding circuit (Gordon and Scott, 2009; McKellar et al., 2020; Schwarz et al., 2017). However, only a few isolated interneurons have been implicated in feeding initiation (Flood et al., 2013; Kain and Dahanukar, 2015).\n\nTo investigate how neural circuits transform taste detection into context-appropriate feeding decisions, we combined electron microscopy-based circuit reconstruction, genetic tools that provide access to single cell types, optogenetics, and imaging of taste responses in awake, behaving animals to uncover a circuit-level view of feeding initiation in Drosophila melanogaster. This work delineates the neural circuit that transforms taste detection into the motor actions of feeding initiation from sensory inputs to motor outputs, and reveals central mechanisms that integrate taste detection with internal physiological state to shape behavior.\n\n## Results\n\n### GRNs synapse onto multiple second-order neurons\n\nTo examine neural circuits for feeding initiation, we identified neurons directly postsynaptic to gustatory sensory axons in the central brain. We utilized the full adult fly brain (FAFB) electron microscopy (EM) volume (Zheng et al., 2018) to manually reconstruct neurons postsynaptic to 17 labellar GRN axons in the right hemisphere that likely correspond to sugar-sensing GRNs (Engert et al., 2021). Fifteen second-order taste neurons and their synapses were fully reconstructed (Figure 1A\u2013B and Figure 1\u2014figure supplement 1) in the CATMAID platform (Saalfeld et al., 2009). The second-order neurons do not receive inputs from all candidate sugar GRNs (Figure 1\u2014figure supplement 1B); however, as sugar GRNs make extensive axonal-axonal connections (Engert et al., 2021), the impact of these differences is unclear.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig1-v3.jpg)\n\n**Figure 1.:** (A) Aggregate synaptic connectivity from sugar GRNs onto second-order sugar neurons. Numbers indicate the total number of synapses that the 17 candidate sugar GRNs make onto each second-order neuron. (B\u2013C) Manually reconstructed electron microscopy (EM) skeletons (B) and registered neural images in split-Gal4 lines (C) for each second-order neuron in the subesophageal zone (SEZ) of the Drosophila brain. Sugar GRNs are depicted in white, JRC 2018 unisex coordinate space is shown in gray (C). Scale bar is 50 \u03bcm. (D) CsChrimson-mediated activation of seven second-order neurons elicits proboscis extension, n=30 flies per genotype. (E) GtACR1-mediated inhibition of second-order neurons reduces proboscis extension to 50 mM sucrose, n=46\u201383 flies per genotype. (D\u2013E) The fraction of flies exhibiting proboscis extension response (PER) upon optogenetic or 50 mM sucrose stimulation. Mean \u00b1 95% confidence interval (CI), Fisher\u2019s Exact Tests, *p<0.05, ***p<0.001. See Figure 1\u2014figure supplement 1 for EM reconstructions of additional second-order neurons and synaptic connectivity counts. See Figure 1\u2014figure supplement 2 for additional PER phenotypes of second-order sugar neurons.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of the entire fly brain, showing electron microscopy (EM) reconstructed sugar-sensing gustatory receptor neurons (GRNs) in gray. Full adult fly brain (FAFB) neuropil space is shown in darker gray. Area outlined in red is enlarged in the first panel of C. (B) Synaptic connectivity of 17 previously identified candidate sugar GRNs onto second-order neurons that elicit proboscis extension response (PER). Line thickness represents the number of synapses, with a minimum of six synapses to a maximum of 46 synapses. (C) Anatomy of second-order candidate sugar EM reconstructed neurons. Scale bar is 50 \u03bcm. (D) Synaptic connectivity from sugar GRNs onto and from second-order neurons. Second-order neurons identified by EM and present in a split-Gal4 line (black circles); second-order neurons identified by EM only (gray circles). (E) Synaptic connectivity between second-order neurons. (F) Neurons with the most synapses from 17 candidate sugar GRNs based on Flywire predicted synapses (n\u226540), with x-axis labeling neurons identified in this study.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Light microscopy images of Cleaver, Usnea, and Fudog. Specific lines for Cleaver and Usnea were generated using a triple-intersection approach (see Methods). In the Fudog image, sugar GRNs are depicted in white. Scale bar is 50 \u03bcm. JRC 2018 unisex coordinate space is shown in blue (Cleaver and Usnea) or dark gray (Fudog). (B) Activation of Usnea, but not Cleaver or Fudog, elicits proboscis extension. n=30 flies per genotype. (C) Hyperpolarization of Rattle and Usnea inhibited proboscis extension to 100 mM sucrose, but hyperpolarization of other second-order neurons did not. n=30-144 flies per genotype. (B-C) Mean \u00b1 95% confidence interval (CI), Fisher\u2019s Exact Tests, ***p<0.001.\n\nTo assess the completeness of our second-order collection, we compared these 15 second-order neurons with the recently released Flywire dataset, a dense, machine learning based reconstruction of FAFB neurons (Dorkenwald et al., 2022; Eckstein et al., 2020). This comparison revealed that we identified 14 of the 15 neurons with the most synapses from sugar GRNs. These second-order neurons represent 12 unique cell types (Figure 1\u2014figure supplement 1F). The 15 second-order neurons we manually reconstructed receive 21% of sugar GRN synaptic outputs. We note that the distribution of second-order neurons has a very long tail, likely due in part to small neural fragments that are challenging to reconstruct. These second-order neurons have not previously been characterized, except for G2N-1, which was identified as a candidate second-order gustatory neuron based on anatomical proximity to sugar-sensing GRNs (Miyazaki et al., 2015). Each of the second-order neurons is a local SEZ interneuron with arbors that overlap extensively with sugar GRN termini.\n\n### Multiple second-order taste neurons influence proboscis extension\n\nTo test whether second-order gustatory neurons participate in feeding behaviors, we identified split-Gal4 lines that provide specific genetic access to individual second-order cell types, using NBLAST comparisons (Costa et al., 2016) to a library of SEZ split-Gal4 lines (Sterne et al., 2021). This provided split-Gal4 matches for seven second-order neurons (Figure 1C and Figure 1\u2014figure supplement 2A). Additionally, we used intersectional approaches to gain genetic access to two additional second-order neurons, Cleaver (Figure 1\u2014figure supplement 2A) and Zorro (Figure 1C). These genetic reagents are exquisitely specific for each of the nine second-order gustatory neurons, providing the opportunity to evaluate their function.\n\nAs activation of sugar-sensing GRNs on the proboscis labellum causes the fly to extend its proboscis to initiate feeding (Dethier, 1976), we tested whether activation or inhibition of second-order taste neurons influences this behavior. We expressed the red-shifted channelrhodopsin CsChrimson (Klapoetke et al., 2014) selectively in each second-order taste neuron, activated each with 635 nm light, and examined the proboscis extension response (PER). Remarkably, optogenetic activation of seven of the nine second-order taste neurons elicited proboscis extension (Figure 1D and Figure 1\u2014figure supplement 2B). Moreover, inhibiting the activity of each second-order neuron individually, by optogenetic activation of the anion channelrhodopsin GtACR1 (Mohammad et al., 2017), reduced proboscis extension to 50 mM sucrose in food-deprived flies, for six of the seven second-order neurons that elicited PER upon activation (Figure 1E). At a higher sucrose concentration (100 mM), neural inhibition of only two of the second-order neuron classes decreased proboscis extension (Figure 1\u2014figure supplement 2C). These studies argue that multiple second-order neurons contribute to normal feeding initiation behavior and suggest that the partial redundancy of these second-order neurons ensures robust feeding.\n\n### Second-order taste neurons activate a local SEZ circuit for feeding initiation\n\nHow does activation of a diverse set of second-order neurons drive proboscis extension? Proboscis motor neurons 4, 6, 7, and 9 are involved in extending different segments of the proboscis for feeding initiation (McKellar et al., 2020). We focused on the well-studied motor neuron 9 (MN9), which is necessary and sufficient for extension of the rostrum, the largest portion of the proboscis (Gordon and Scott, 2009; McKellar et al., 2020). We located MN9 in the FAFB EM volume by examining large SEZ neurons that lack synaptic output. To identify a pathway from taste detection to proboscis extension, we reconstructed presynaptic partners of MN9 and postsynaptic partners of second-order taste neurons.\n\nThis strategy identified a minimal pathway from taste detection to proboscis extension, composed of interconnected second-order neurons and third-order neurons each receiving inputs from a subset of second-order neurons, and feedforward premotor neurons (Figure 2A and Figure 2\u2014figure supplement 1A). The third-order neurons represent a small subset based on comparisons to Flywire automated reconstructions (Figure 2\u2014figure supplement 1B). They include one previously characterized neuron, the putative feeding command neuron, Fdg (Flood et al., 2013; Figure 3B), and a set of descending neurons, Bract, that project to the ventral nerve cord (Sterne et al., 2021). The premotor neurons are strongly connected to MN9, representing approximately 13% of the synaptic input onto MN9 (Figure 2\u2014figure supplement 1C). There are direct connections between three second-order neurons (G2N-1, Zorro, and FMIn) and premotor neurons, and additional paths via third-order neurons to premotor neurons. The neurons in the feeding initiation circuit are predicted to be cholinergic, except for Usnea and Phantom which are predicted to be GABAergic (Figure 2\u2014figure supplement 1D), based on machine learning classifications (Eckstein et al., 2020).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic of the feeding initiation circuit. Circles outlined in black denote neurons with split-Gal4 genetic access, circles with gray outlines denote neurons without split-Gal4 genetic access. Line thickness represents synaptic connectivity of more than five synapses. (B\u2013C) Electron microscopy (EM) neural reconstructions (B) and registered neural images in split-Gal4 lines (C) of third-order or premotor neurons in the subesophageal zone (SEZ). Scale bar is 50 \u03bcm. JRC 2018 unisex coordinate space is shown in gray, MN9 morphology is shown in orange. (D) CsChrimson-mediated activation of third-order or premotor neurons elicits proboscis extension response (PER), n=30 flies per genotype. (E) GtACR1-mediated inhibition of third-order or premotor neurons does not influence PER to 50 mM sucrose, n=40\u201370 flies per genotype. (D\u2013E) Mean \u00b1 95% CI, Fisher\u2019s Exact Tests, ***p<0.001. See Figure 2\u2014figure supplement 1 for synaptic counts.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic of the feeding initiation circuit, with circles outlined in black for neurons with split-Gal4 lines, circles outlined in gray for neurons without split-Gal4 lines. Line thickness represents connectivity of more than five synapses, with synapse numbers labeled. (B) Neurons with the most synapses from second-order neurons that elicit proboscis extension response (PER), based on Flywire predicted synapses (n\u226530), x-axis labels neurons identified in this study. (C) Neurons with the most synapses onto MN9, based on Flywire predicted synapses (n\u226530), x-axis labels neurons identified in this study. (D) Neurotransmitter predictions (Eckstein et al., 2020) for individual synapses for each neuron in the feeding initiation circuit generated by a machine learning classifier. The fraction of synapses predicted to contain each neurotransmitter is indicated by color.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig3-v3.jpg)\n\n**Figure 3.:** (A) Connectivity schematic of the feeding initiation circuit, where filled green circles represent cell types that respond to sugar detection, while filled blue circles represent cell types that respond to water detection. One cell type, Phantom, responds to both sugar and water (split blue and green circle). Fdg did not respond to proboscis taste detection (white circle), but see Figure S4A for responses to optogenetic activation of sugar gustatory receptor neurons (GRNs). (B) Calcium responses of feeding initiation neurons to stimulation of the proboscis in food-deprived flies. For each cell type, GCaMP6s fluorescence traces are shown on the left of the panel (\u0394F/F), while \u0394F/F area for each trace is shown on the right, with thin black lines indicating sample pairing. The proboscis of each tested individual was stimulated with water (green), sugar (blue), and bitter (red) tastants in sequential trials during the indicated period (thick black line). The following split-GAL4 lines were imaged for each cell type: Clavicle; SS48947, FMIn; SS48944, Zorro; SS67405, G2N-1; SS47082, Usnea; SS37122, Phantom; SS68204, Rattle; SS50091, Fdg; SS31345, Bract; SS31386, Roundup; SS47744. n=5-8 flies per genotype. Quade\u2019s test with Quade\u2019s All Pairs test, using Holm\u2019s correction to adjust for multiple comparisons, ns p>0.05, *p\u22640.05, **p\u22640.01. See also Figure 3\u2014figure supplement 1 for additional calcium imaging studies of feeding initiation neurons.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Calcium responses of Fdg to optogenetic activation of water (blue, ppk28-LexA), sugar (green, Gr5a-LexA), or bitter (red, Gr66a-LexA) GRNs in food-deprived flies. To examine Fdg responses, GCaMP7b was expressed using SS46913. Fluorescence traces are shown on the left of the panel (\u0394F/F), while \u0394F/F area for each trace is shown on the right. Stimulation with 660 nm light is indicated with vertical gray bars. Kruskal Wallace test with Dunn\u2019s test using Holm\u2019s correction to adjust for multiple comparisons, n=5-7 flies per genotype, ns p>0.05, *p\u22640.05, **p\u22640.01. (B\u2013C) Calcium responses of water gustatory sensory neurons and feeding initiation neurons to taste stimulation of the proboscis. GCaMP6s fluorescence traces are shown on the left of each panel (\u0394F/F), while \u0394F/F area for each trace is shown on the right. n=5-10 flies per genotype, ns p>0.05, *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p\u22640.0001. (B) Taste responses to water in fed (purple) versus 2 hr desiccated (2 hr dess, teal) flies (left). Taste responses to water in fed flies allowed to rest for 1 hr in low osmolality artificial hemolymph after dissection before imaging (1 hr fed, purple) versus pseudodessicated, thirsty-like flies (p-dess, blue) (right). (C) Taste responses in pseudodessicated, thirsty-like flies. The proboscis of each tested individual was stimulated with water (green), sugar (blue), and bitter (red) tastants in sequential trials during the indicated period (thick black line). Thin black lines indicate sample pairing. The following split-GAL4 lines were imaged for each cell type: Clavicle; SS48947, G2N-1; SS47082, Usnea; SS37122, Rattle; SS50091, Roundup; SS47744. Quade\u2019s test with Quade\u2019s All Pairs test, using Holm\u2019s correction to adjust for multiple comparisons. (D) GRN synapes onto second-order neurons, with GRN categories based on Engert et al., 2021.\n\nTo investigate the function of deeper layers of this circuit, we identified split-Gal4 lines that selectively label two third-order neurons and one premotor neuron (Figure 2C) using NBLAST comparisons with SEZ split-Gal4 lines (Sterne et al., 2021). Optogenetic activation of third-order or premotor neurons with CsChrimson revealed that each cell type elicits robust proboscis extension (Figure 2D). However, acute inhibition of the third-order or premotor neurons with GtACR1 did not influence PER to 50 mM sucrose (Figure 2E), consistent with multiple pathways to proboscis motor neurons. Thus, by combining EM tracing studies with precise neural manipulations afforded by split-Gal4 lines, we have elucidated a neural circuit that promotes feeding initiation upon sweet taste detection.\n\n### Feeding initiation neurons respond to sugar taste detection\n\nTo examine how taste information is processed by the feeding initiation circuit to guide feeding decisions, we monitored taste-induced activity of each neuron in the circuit. The proboscis was stimulated with water, sugar, or bitter taste solutions, while monitoring GCaMP6s calcium activity (Chen et al., 2013) in live flies (Harris et al., 2015). Eight of the ten neural classes responded to sugar taste presentation in food-deprived animals, and not to water or bitter solutions (Figure 3). Two second-order cell types responded to water taste detection: Usnea responded specifically to water and Phantom responded equally to water and sugar detection. Usnea and Phantom are reciprocally connected with GRNs (Figure 1\u2014figure supplement 1D), suggesting that these second-order cell types may tune GRN responses in the presence of water. One third-order neuron, Fdg, did not respond to proboscis taste stimulation, but did respond to optogenetic activation of sugar-sensing GRNs (Figure 3\u2014figure supplement 1A), suggesting that Fdg may respond to pharyngeal or leg taste detection. Together, these studies reveal that sugar taste is processed by a multilayered neural circuit to initiate feeding in food-deprived flies.\n\nTo test whether responses in the proboscis extension circuit are altered based on specific nutrient needs, we examined taste responses in flies that were thirsty rather than hungry. High hemolymph osmolality is a key signal of thirst that acts on central neurons to promote water consumption (Jourjine et al., 2016). We mimicked a thirsty-like state by increasing hemolymph osmolality, which enhanced water responses in water-sensing GRNs (Figure 3\u2014figure supplement 1B). In four of the five central neurons tested, response profiles were similar in food-deprived and thirsty-like flies (Figure 3 and Figure 3\u2014figure supplement 1C). However, one second-order neuron, Clavicle, responded to water and to sugar taste detection in a thirsty-like state but only to sugar in a hungry state (Figure 3 and Figure 3\u2014figure supplement 1C). These results suggest that state-dependent responses to water at a single node (Clavicle) may tune the responsiveness of the pathway to bias acceptance of more dilute sugar solutions. However, the majority of neurons uncovered here responded selectively to sugar taste detection regardless of whether the animal was hungry or thirsty.\n\nGiven that two second-order neurons, Usnea and Phantom, responded to water taste stimulation despite synaptic connectivity to candidate sugar GRNs, we examined the connections of the second-order feeding initiation neurons from all GRNs of the right hemisphere (Engert et al., 2021). These GRNs have previously been clustered into candidate taste categories (sugar, water, bitter, high salt, and low salt) based on their morphology and GRN-GRN connectivity. Remarkably, we found that the second-order neurons that receive sugar GRN inputs also receive inputs from candidate water and high-salt (ppk23-positive, Glut-positive) GRNs but do not receive inputs from candidate bitter or low salt (Ir94e) GRNs (Figure 3\u2014figure supplement 1D). The connectivity is consistent with our calcium imaging studies showing responses to sugar taste detection but not bitter taste. However, responses to sugar and water were not consistent with the predicted connectivity for each neuron, suggesting the possibilities of state-dependence, network interactions, and/or errors in GRN modality categorization. As GRN category assignments in the EM dataset were based on anatomy and connectivity alone, some GRNs may be misclassified, leading to errors in assessing sensory inputs (Engert et al., 2021). While the connectivity suggests the exciting possibility that taste integration may occur at second-order neurons, further functional studies will be necessary to illuminate the taste categories that activate or inhibit individual second-order neurons under different nutritive states. Nevertheless, our studies demonstrate that most second-order neurons respond to sugar taste stimulation but not to water or bitter tastes.\n\n### Feeding initiation is modulated by hunger at specific nodes\n\nHow is sugar taste information integrated with hunger state to promote feeding initiation in food-deprived flies? Hunger modulates sugar GRN activity (Inagaki et al., 2012); however, whether sensory gating is the only mechanism for hunger regulation or whether modulation of central neurons contributes to an altered network state in hungry animals has not been examined. To comprehensively investigate how taste detection is integrated with hunger state to initiate feeding, we optogenetically activated each neuron in the PER circuit in either fed or food-deprived flies and examined behavior. Optogenetic activation has the advantage of bypassing changes in sugar sensory detection that propagate through the circuit, enabling the evaluation of central circuit changes.\n\nWe reasoned that activating neurons upstream of or at the node(s) where hunger modulation occurs would cause differences in proboscis extension rates between hungry and fed flies, whereas activating neurons beyond the site where hunger impinges would not. Indeed, CsChrimson-mediated activation of sugar GRNs caused higher proboscis extension rates in food-deprived flies than in fed flies, whereas activation of MN9 elicited the same proboscis extension rate in food-deprived and fed flies (Figure 4A\u2013C). Moreover, activation of two second-order neurons, G2N-1, and Clavicle, increased proboscis extension in food-deprived flies, whereas activation of all other neural classes did not (Figure 4A and D). Thus, hunger signals act on sensory neurons to increase detection sensitivity and on a specific set of second-order interneurons to amplify sugar pathway activation and promote feeding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig4-v3.jpg)\n\n**Figure 4.:** (A) Schematic of the feeding initiation circuit, with filled green circles representing nodes that are hunger-modulated. (B) Optogenetic activation at four different light intensities. (C) Activation of sugar-sensing neurons results in different feeding initiation rates between fed and food-deprived flies (left) whereas activation of MN9 does not (right), at four different light intensities. n=50. (D) Optogenetic activation of second-order, third-order, and premotor neurons in either fed or food-deprived flies. n=39\u2013103. Mean \u00b1 95% CI, Fisher\u2019s Exact Tests, ***p<0.001.\n\n### Premotor neurons integrate sweet and bitter taste information\n\nAnimals evaluate both internal nutritive state and food quality to decide whether to initiate feeding. To investigate how food quality alters feeding initiation, we examined how the detection of bitter compounds is integrated with sugar taste information in the feeding initiation circuit. Previous studies have demonstrated that bitter compounds inhibit sugar-sensing gustatory neurons to prevent feeding (Chu et al., 2014; French et al., 2015; Jeong et al., 2013; Meunier et al., 2003), but have not addressed how downstream neural circuitry modulates appetitive feeding behaviors in response to bitter taste detection. To investigate central mechanisms of bitter modulation, we examined whether pathways from bitter GRNs intersect with the feeding initiation pathway.\n\nAs bitter GRNs do not directly synapse with neurons in the feeding initiation circuit, we asked whether second-order bitter neurons synapse onto the feeding initiation pathway. We reconstructed neurons downstream of bitter GRNs (Engert et al., 2021) in the EM volume and identified a second-order bitter neuron, Scapula, which receives over 150 synapses from bitter GRNs and is the second-most strongly connected cell type with bitter GRNs (Figure 5A and Figure 5\u2014figure supplement 1). Scapula synapses directly onto two feeding initiation premotor neurons, Roundup and Rounddown, but not onto second- or third-order appetitive taste neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig5-v3.jpg)\n\n**Figure 5.:** (A) Schematic of the feeding initiation circuit, showing a pathway from bitter GRNs to premotor neurons. Filled maize circle labels a premotor neuron inhibited by bitter tastants, filled gray circle labels an upstream second-order neuron that is not inhibited by bitter tastants. (B and C) Calcium responses of feeding circuit neurons to optogenetic activation of sugar (green, Gr5a-LexA), sugar plus bitter (maize, Gr5a-LexA plus Gr66a-LexA), or bitter (red, Gr66a-LexA) GRNs in food-deprived flies. For each cell type, Syt::GCaMP7b fluorescence traces are shown on the left of the panel (\u0394F/F), while \u0394F/F area for each trace is shown on the right. Periods of stimulation with 660 nm light are indicated with vertical gray bars. (B) SS47744 was imaged to examine Roundup responses. (C) SS47082 was imaged to examine G2N-1 responses. (B-C) Kruskal Wallace test with Dunn\u2019s test using Holm\u2019s correction to adjust for multiple comparisons, n=6-8 flies per genotype, ns p>0.05, *p\u22640.05, **p\u22640.01, ***p\u22640.001. See Figure 5\u2014figure supplement 1 for synaptic counts of second-order bitter neurons.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79887/elife-79887-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Neurons with the most synapses from candidate bitter gustatory receptor neurons (GRNs) based on Flywire predicted synapses (n\u226530), with x-axis labeling neurons identified in this study.\n\nBecause bitter taste detection inhibits proboscis extension, we hypothesized that Roundup and Rounddown would be inhibited by Scapula to prevent proboscis extension to sugar in the presence of bitter compounds. Consistent with this hypothesis, Scapula is predicted to release glutamate (Figure 2\u2014figure supplement 1D), which is often an inhibitory neurotransmitter in Drosophila (Liu and Wilson, 2013). To test this, we monitored activity in Roundup by in vivo calcium imaging while activating sugar GRNs, bitter GRNs, or both, using optogenetics to bypass sensory modulation. Roundup responded to optogenetic activation of sugar GRNs but not bitter GRNs (Figure 5B), as expected based on its response to taste compounds (Figure 3B). Upon co-activation of sugar and bitter GRNs, the Roundup response was dramatically decreased compared to the response to sugar GRN activation alone, arguing that bitter signals suppress the feeding initiation pathway. To test whether this bitter suppression reflects a central mechanism acting at Roundup, we monitored activity in a second-order neuron, G2N-1, directly upstream of Roundup, and found that its response upon co-activation of sugar and bitter GRNs was indistinguishable from its response to sugar GRN activation alone (Figure 5C). Together, the EM and imaging studies demonstrate that sugar and bitter tastes are integrated at feeding initiation premotor neurons, providing a central mechanism to reject sweet foods laced with bitter compounds.\n\n## Discussion\n\nIn this study, we couple EM circuit reconstruction with the ability to precisely monitor and manipulate single neurons to elucidate how a complex nervous system orchestrates the decision to initiate feeding. First, we delineate the sensorimotor circuit for feeding initiation from sensory inputs to motor outputs with cellular and synaptic resolution. Then, we demonstrate how this central circuit integrates taste detection with internal state, providing mechanistic insight into how taste modalities and feeding decisions are encoded in the brain.\n\n### A local, interconnected network transforms sweet taste detection into behavior\n\nPrevious studies in Drosophila have identified gustatory neurons, motor neurons, and three candidate interneurons that influence feeding initiation (Flood et al., 2013; Gordon and Scott, 2009; Kain and Dahanukar, 2015; McKellar et al., 2020; Miyazaki et al., 2015; Talay et al., 2017). Here, by elucidating a complete sensorimotor circuit with synaptic resolution, we provide a comprehensive view of the neural pathway that elicits proboscis extension, the first step in feeding. The feeding initiation pathway is a local circuit, with three- and four-synaptic relays to motor output. Each neuron elicits proboscis extension upon optogenetic activation, demonstrating that each neuron participates in a pathway for the behavior. Inhibiting activity of single second-order neurons reduced the behavioral response, whereas inhibiting activity of third-order or premotor neurons did not. As inhibiting activity of single neurons did not abolish proboscis extension, this demonstrates that additional paths not requiring the individual neural cell type contribute to this innate behavior. These results are consistent with the circuit connectivity, which reveals that there are multiple routes between sugar GRNs and MN9 for proboscis extension. The multiple paths from second-order neurons to premotor neurons may enable proboscis extension to be recruited in different contexts to ensure robust feeding. More generally, multiple circuit paths may enhance behavioral flexibility by facilitating sensory tuning and multisensory integration (Miroschnikow et al., 2018; Ohyama et al., 2015).\n\nConsistent with our finding that there are multiple pathways for proboscis extension, EM circuit tracing of sensorimotor paths for feeding in Drosophila larvae revealed both direct GRN-motor neuron synapses as well as indirect pathways (Miroschnikow et al., 2018). The functional significance of this circuit organization has not been explored. Although we did not identify direct GRN-motor neuron synaptic connections for proboscis extension in adult Drosophila, other feeding subprograms such as pharyngeal pumping may utilize direct sensory to motor connections and remain to be discovered.\n\nMost neurons in the proboscis extension pathway respond to sugar taste detection, but not to water or bitter tastes, in food-deprived flies, demonstrating a direct line from sweet taste detection to the motor output for feeding. How water taste modulates proboscis extension in thirsty flies will require further study. Importantly, we identified and characterized three second-order neurons that respond to water taste detection: one is selective for water taste, another responds to both water and sugar tastes, and the third shows state-dependent sugar and water taste responses. Further study of these second-order neurons and their connectivity will be critical to evaluate the degree of separation or convergence of water and sugar pathways for feeding initiation. Moreover, we find that second-order neurons that respond to sugar receive inputs from sugar GRNs as well as candidate water and high-salt GRNs. This hints at the exciting possibility that second-order neurons integrate multiple taste modalities and may show responses that vary based on nutritive state. Furthermore, functional studies will be essential to assess taste integration by second-order neurons.\n\nOf the interneurons identified here, only G2N-1 and Fdg have previously been implicated in feeding. G2N-1 was identified as a candidate sugar-sensing second-order neuron based on its anatomical proximity to gustatory axons alone (Miyazaki et al., 2015); here, we elucidated its functional role in taste detection and feeding initiation. Fdg was isolated as a \u2018feeding command neuron,\u2019 able to elicit multiple steps in feeding, including proboscis extension (Flood et al., 2013). In our calcium imaging studies, Fdg did not respond to proboscis taste stimulation but did respond to optogenetic activation of sugar GRNs. This suggests that Fdg may receive gustatory signals from GRNs on the pharynx or legs. Our studies demonstrate that Fdg is a third-order neuron in the feeding initiation pathway, with synaptic connections to Bract descending neurons. A description of the reconstruction of all FlyWire DNs is in preparation (K. Eichler, M. Costa, G. Card, G. Jefferis, personal communication). As Bract synapses with proboscis premotor neurons and ventral cord circuits, Fdg and Bract are well-poised to coordinate proboscis extension with other steps in feeding.\n\nThe architecture of the circuit provides a platform to investigate how taste signals are transformed in the brain to drive behavior. In this study, we focused on MN9, the rostrum protractor motor neuron that elicits proboscis extension, as a key readout of proboscis extension behavior. However, proboscis extension involves not only rostrum protraction but also extension of the haustellum and opening of the labellum, controlled by additional motor neurons (McKellar et al., 2020). We hypothesize that the connectivity among second- and third-order neurons may coordinate the precise temporal activation of different muscle groups for coordinated extension. Moreover, proboscis extension is followed by ingestion and then meal termination (Dethier, 1976; Pool and Scott, 2014). Continued expansion and exploration of this pathway will provide the opportunity to examine how different feeding subprograms are timed and coordinated to elicit feeding in natural environments.\n\n### Hunger tunes second-order neurons to promote sugar responses\n\nStudies in C. elegans, Drosophila, and mammals have demonstrated that a key site of hunger regulation is at the peripheral chemosensory neurons, altering sensitivity of detection (Chalasani et al., 2010; Kawai et al., 2000; Root et al., 2011; Savigner et al., 2009; Sengupta, 2013). For example, dopamine enhances the sensitivity of Drosophila sugar-sensing gustatory neurons to promote proboscis extension at lower sucrose concentrations in hungry animals (Inagaki et al., 2012; Marella et al., 2012). Hunger modulation of taste processing beyond sensory neurons has been more challenging to evaluate, both because of lack of knowledge of central networks and because changes at the sensory level propagate through the network.\n\nTo isolate the role of central brain neurons in hunger modulation, we used the precise genetic access available in Drosophila to activate each node of the feeding initiation pathway and examined the behavioral response elicited in fed and food-deprived flies. These studies pinpoint the site of hunger modulation to sensory neurons and two second-order neurons. Although caveats of artificial stimulation exist, the consistent changes seen across different light intensities for neural manipulation early in the pathway, but not downstream, argue that these results are robust. These studies demonstrate that hunger acts at a few critical nodes to modulate feeding initiation: sensory neurons increase detection sensitivity and second-order neurons amplify pathway activation. It will be interesting to examine whether hunger modulation of sensory and second-order neurons occurs independently or over different time scales to adjust behavioral responses as starvation increases. In addition, the specific hunger signals that act on central neurons and their mechanism of modulation may now be explored.\n\n### Bitter compounds inhibit premotor neurons to prevent feeding initiation\n\nWhile previous studies have demonstrated interactions between sweet and bitter taste modalities at the level of sensory neurons (Chu et al., 2014; French et al., 2015; Jeong et al., 2013; Meunier et al., 2003 LeDue et al., 2016) and through feedback from the mammalian gustatory cortex (Jin et al., 2021), this study reveals a third circuit strategy for weighing sweet and bitter tastes: a local inhibitory network. Inhibitory interactions between bitter and sugar pathways at the level of premotor neurons provide an elegant strategy to weigh incoming sugar and bitter taste information and adjust behavioral probability. In addition, by blocking activity at specific muscles, bitter detection may specifically change behavior to direct the proboscis away from a hazardous food source. The existence of a local inhibitory circuit for bitter-sweet integration has been recently postulated based on studies of mammalian taste circuitry (Jin et al., 2021) and may be a shared strategy across species. These multiple circuit mechanisms for suppression of sweet attraction by bitter signals may reflect the evolutionary importance of robust bitter taste avoidance.\n\nBy examining a complete sensorimotor pathway, we elucidate how a complex nervous system orchestrates the decision to initiate feeding and illuminate central modules that integrate taste detection with internal state. These central controls afford independent amplification and suppression of feeding and stand apart from sensory modulation as mechanisms that dynamically tune behavior. As sensory modulation may suffer from finite amplification and incomplete suppression, central modulation provides a strategy to bypass those limits, allowing a broader range and different temporal dynamics of modulation.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Brp (mouse monoclonal)</td>\n      <td>DSHB, University of Iowa, USA</td>\n      <td>DSHB Cat# nc82, RRID:AB_2314866</td>\n      <td>1/500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (chicken polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific Cat# A10262, RRID:AB_2534023</td>\n      <td>1/1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-dsRed (rabbit polyclonal)</td>\n      <td>Takara</td>\n      <td>Takara Bio Cat# 632496, RRID:AB_10013483</td>\n      <td>1/1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-chicken Alexa Fluor 488 (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific Cat# A-11039, RRID:AB_2534096</td>\n      <td>1/100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit Alexa Fluor 568 (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific Cat# A-11036, RRID:AB_10563566</td>\n      <td>1/100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse Alexa Fluor 647 (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific Cat# A-21236, RRID:AB_2535805</td>\n      <td>1/100</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, drug</td>\n      <td>All trans-Retinal</td>\n      <td>MilliporeSigma</td>\n      <td>Cat # R2500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>20XUAS-IVS-CsChrimson.mVenus attP18</td>\n      <td>Bloomington Stock Center; Klapoetke et al., 2014</td>\n      <td>RRID:BDSC_55134</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-GtACR1.d.EYFP}attP2</td>\n      <td>Bloomington Stock Center</td>\n      <td>RRID:BDSC_92983</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Zorro split-GAL4, SS67405</td>\n      <td>Janelia Research Campus</td>\n      <td></td>\n      <td>Full genotype: w; R12C04-p65ADZp in attP40; VT043788-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Zorro split-GAL4, SS67406</td>\n      <td>Janelia Research Campus</td>\n      <td></td>\n      <td>Full genotype: w; R12C04-p65ADZp in attP40; VT020600-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Clavicle split-GAL4, SS48947</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; VT020732-p65ADZp in attP40; R17G10-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>G2N-1 split-GAL4, SS47082</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R12C04-p65ADZp in attP40; VT043658-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>G2N-1 split-GAL4, SS56399</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R12C04-p65ADZp in attP40; VT020839-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Rattle split-GAL4, SS50091</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; VT006545-p65ADZp in attP40; VT023745-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Usnea split-Gal4, SS37122</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; VT037525-p65ADZp in attP40; VT033627-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Usnea and Cleaver split-Gal4, SS31022</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; VT038544-p65ADZp in attP40; VT019345-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>FMIn split-GAL4, SS48944</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R81E10-p65ADZp in attP40; R17G10-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>FMIn split-GAL4, SS48949</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R81E10-p65ADZp in attP40; R21H11-ZpGdbd in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Phantom split-GAL4, SS43877</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R82F02-p65ADZp in attP40; R20G06-ZpGdbd in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Phantom split-GAL4, SS43879</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R20G06-p65ADZp in attP40; R82F02-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Phantom split-GAL4, SS68204</td>\n      <td>Janelia Research Campus</td>\n      <td></td>\n      <td>Full genotype: w; R20G06-p65ADZp in attP40; R81A07-ZpGdbd in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Fudog split-GAL4, SS35290</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R59F08-p65ADZp in attP40; R69E06-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Fudog split-GAL4, SS35291</td>\n      <td>Janelia Research Campus; Sterne et al., 2021); available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; VT038225-p65ADZp in attP40; R69E06-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Bract split-GAL4, SS31320</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R25A01-p65ADZp in attP40; VT058723-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Bract split-GAL4, SS31386</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R25A01-p65ADZp in attP40; R37D11-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Fdg split-GAL4, SS31333</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R81E10-p65ADZp in attP40; VT037804-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Fdg split-GAL4, SS46913</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R81E10-p65ADZp in attP40; R88C07-ZpGdbd in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Roundup split-GAL4, SS47744</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R23G11-p65ADZp in attP40; VT003236-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Roundup split-GAL4, SS47745</td>\n      <td>Janelia Research Campus; Sterne et al., 2021; available at http://splitgal4.janelia.org</td>\n      <td></td>\n      <td>Full genotype: w; R11B11-p65ADZp in attP40; VT003236-ZpGDBD in attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>20xUAS &gt;dsFRT &gt; csChrimson-mVenus</td>\n      <td>Wu et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>8XLexAop2-FLPL(attP40)</td>\n      <td>Bloomington Stock Center</td>\n      <td>RRID:BDSC_55820</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>;;Dfd-LexA</td>\n      <td>Simpson, 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>;;Scr-LexA</td>\n      <td>Simpson, 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w[1118]; 20XUAS-IVS-GCaMP6s(attP40);</td>\n      <td>Bloomington Stock Center</td>\n      <td>RRID: BDSC_42746</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Gr64f-Gal4 (II)</td>\n      <td>Kwon et al., 2011</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Ppk28-Gal4</td>\n      <td>Bloomington Stock Center; Cameron et al., 2010</td>\n      <td>RRID:BDSC_93020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Gr64f-LexA</td>\n      <td>Miyamoto et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Gr66a-LexA(II)</td>\n      <td>Thistle et al., 2012; Bloomington Stock Center;</td>\n      <td>RRID:BDSC_93023</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Gr66a-LexA5(III)</td>\n      <td>Thistle et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-CD8-tdTomato;;</td>\n      <td>Thistle et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w[1118]; 20XUAS-IVS-GCaMP6s(attP40);</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_42746</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w[1118];; 20XUAS-IVSGCaMP6s(VK00005)</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_42749</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Gr5a-LexA-VP16(II)</td>\n      <td>Gordon and Scott, 2009</td>\n      <td>RRID:BDSC_93014</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>ppk28-LexA(III)</td>\n      <td>Thistle et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>13XLexAop2-IVS-p10-ChrimsonR-mCherry(attP18)</td>\n      <td>Vivek Jarayaman</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>20XUAS-IVS-jGCaMP7b(attP5)</td>\n      <td>Bloomington Stock Center</td>\n      <td>RRID:BDSC_80907</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>20XUAS-IVS-jGCaMP7b(VK00005)</td>\n      <td>Bloomington Stock Center</td>\n      <td>RRID:BDSC_79029</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>20xUAS-IVS-Syn21-Syt::Op-jGCaMP7b(attP18)</td>\n      <td>Vivek Jarayaman, Chuntao Dan</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Fiji</td>\n      <td>https://fiji.sc/</td>\n      <td>RRID: SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Computational Morphometry Toolkit (CMTK)</td>\n      <td>Masse et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>NBLAST</td>\n      <td>Costa et al., 2016; http://nblast.virtualflybrain.org:8080/NBLAST_on-the-fly/; http://flybrain.mrc-lmb.cam.ac.uk/si/nblast/www/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>VVDviewer</td>\n      <td>Otsuna et al., 2018; https://github.com/takashi310/VVD_Viewr</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>Graphpad Software; https://www.graphpad.com/scientific-software/prism/</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Python</td>\n      <td>Python Software Foundation; https://www.python.org/downloads/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Flywire</td>\n      <td>Flywire; https://flywire.ai/</td>\n      <td>RRID:SCR_019205</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Adobe Illustrator</td>\n      <td>Adobe Software; https://www.adobe.com/products/illustrator.html</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>CATMAID</td>\n      <td>Saalfeld et al., 2009; https://catmaid.org</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>CAVE (connectome annotation versioning engine)</td>\n      <td>https://github.com/seung-lab/CAVEclient/blob/master/FlyWireSynapseTutorial.ipynb</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>R Project for Statistical Computing</td>\n      <td>R Development Core Team, 2018</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>CircuitCatcher</td>\n      <td>Bushey, 2019; https://github.com/DanBushey/CircuitCatcher</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>PMCMRplus package</td>\n      <td>Pohlert, 2021; https://CRAN.R-project.org/package=PMCMRplus</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>SciPy package</td>\n      <td>Virtanen et al., 2020; https://scipy.org/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>scikit-posthocs package</td>\n      <td>Terpilowski, 2018; https://scikit-posthocs.readthedocs.io/en/latest/</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental model and subject details\n\n#### Rearing conditions and strains\n\nAll experiments were performed in the fruit fly Drosophila melanogaster. The key resources table lists the transgenic lines used in this study. Flies were reared on standard cornmeal-yeast-molasses media at 25\u00b0C with 65% humidity and a 12 hr: 12 hr light: dark cycle unless stated otherwise. Flies for optogenetic experiments were raised on standard food in darkness. Upon eclosion, adult flies were collected and maintained on standard food supplemented with 0.4 mM all-trans-retinal in darkness prior to experiments. Adult mated female flies were used for all experiments.\n\n### Method details\n\n#### EM neural reconstructions\n\nNeurons were reconstructed in a serial section transmission electron volume (Full Adult Female Brain, Zheng et al., 2018) using the CATMAID software (Saalfeld et al., 2009). Fully manual reconstructions were generated by following the branches of the neuron and marking the center of each branch, thereby creating a \u2018skeleton\u2019 of each neuron. In addition to fully manual reconstructions, segments of an automated segmentation (Li et al., 2019) were proofread and expanded to generate complete reconstructions.\n\nSeventeen candidate sugar GRNs in the right hemisphere were previously identified in the EM connectome by clustering GRNs using morphology and connectivity data and comparing the resulting clusters with immunostained GRNs responding to different taste categories (Engert et al., 2021). We specifically reconstructed second-order sugar neurons downstream of the candidate sugar GRNs in the right hemisphere using two different methods. First, random presynapses of skeleton 7349219 (Engert et al., 2021) were chosen using the reconstruction sampler function of CATMAID and downstream partners were reconstructed. Second, large automatically generated fragments downstream of sugar GRN axons were found and expanded. Chemical synapses were annotated as previously described (Zheng et al., 2018); specifically, at least three of four elements of a synapse were needed to call a synapse: a T-bar, postsynaptic density, synaptic vesicles, and a synaptic cleft. All reconstructions for which there is a corresponding split-Gal4 were assembled and proofread to near completion.\n\n#### Neuron nomenclature\n\nThe vast majority of the neurons referred to here were named in Sterne et al., 2021. Zorro was named because the proximal neurite forms a \u2018Z.\u2019 Scapula was named due to its resemblance to an inverted scapula bone, and Sternum was named due to its appearance, connectivity, and proximity to Clavicle. Roundtree and Rounddown were named because they, like Roundup (named in Sterne et al., 2021), are premotor neurons.\n\n#### Flywire connectivity analysis\n\nNeurons corresponding to those traced in CATMAID were located in Flywire (Flywire.ai); both reconstructions use the same underlying EM data (Zheng et al., 2018). To identify neurons upstream or downstream of a set of Flywire neurons, we used CAVE (connectome annotation versioning engine; Buhmann et al., 2021; Heinrich et al., 2018). To identify synapses of fairly high confidence, we chose a \u2018cleft_score\u2019 cutoff of 100 (Heinrich et al., 2018).\n\nThe CATMAID skeleton IDs and Flywire IDs for each reconstructed neurons are listed here: Billiards (CATMAID: 8606542, Flywire: 720575940634231886), Bract1 (17024882, 720575940625204508), Bract2 (17542353, 720575940637873717), Clavicle (10150139, 720575940620111024), Dandelion (17249809, 720575940628601052), Fdg (16783943, 720575940632291554), FMIn (8952676, 720575940645551748), Fuchs (7929209, 720575940623691196), Fudog (7983275, 720575940630459463), G2N-1 (15079937, 720575940606258268), MN9 (16866694, 720575940616055252), Phantom (16762541, 720575940618879604), Quasimodo (8275570, 720575940619419814), Rattle (16238926, 720575940608777796), Rounddown (16886973, 720575940609112018), Roundup (16002203, 720575940620364549), Scapula (16887116, 720575940624539966), Specter (17579359, 720575940616547141), Sternum (17533840, 720575940643288356), Usnea (14890522, 720575940615947993), Zorro L (7574284, 720575940643219566), and Zorro R (7899212, 720575940629888530). FAFB neuronal reconstructions will be available from Virtual Fly Brain (https://fafb.catmaid.virtualflybrain.org/).\n\n#### Genetic access to Cleaver\n\nTo gain specific genetic access to Cleaver, we used a triple intersection approach. In this approach, CsChrimson-mVenus will only be expressed where the expression patterns of the AD, DBD, and LexA overlap. SS31022 (Sterne et al., 2021) labels both Cleaver and Usnea. To specifically access Cleaver, virgins of 20xUAS >dsFRT > csChrimson-mVenus;8XLexAop2-FLPL(attP40);Dfd-LexA were crossed to males of SS31022. To specifically access Usnea in SS31022, virgins of 20xUAS >dsFRT > csChrimson-mVenus;8XLexAop2-FLPL(attP40);Scr-LexA were crossed to males of SS31022. For each intersection, female progeny without balancers were selected for behavioral analysis.\n\nTo visualize triple intersection expression patterns, brains were dissected as described (https://www.janelia.org/project-team/flylight/protocols, \u2018Dissection and Fixation 1.2% PFA\u2019).\n\nThe following primary antibodies were used:\n\nThe following secondary antibodies were used:\n\nImmunohistochemistry was carried out as described (https://www.janelia.org/project-team/flylight/protocols, \u2018IHC-Anti-GFP\u2019) substituting the above antibodies and eschewing the pre-embedding fixation steps. Ethanol dehydration and DPX mounting was carried out as described (https://www.janelia.org/project-team/flylight/protocols, \u2018DPX Mounting\u2019). Images were acquired with a Zeiss LSM 880 NLO AxioExaminer at the Berkeley Molecular Imaging Center. A Plan-Apochromat 25\u00d7/0.8 objective was used at zoom 0.7. Acquired images had a voxel size of 0.59 \u03bcm \u00d7 0.59 \u03bcm \u00d7 1.50 \u03bcm.\n\n#### Identification of split-GAL4 lines from EM reconstructions\n\nNBLAST analysis was used to match neurons reconstructed in EM to neurons labeled by split-GAL4 lines (Costa et al., 2016). Reconstructed neurons from CATMAID were transformed into the JRC2018U template space using NAVIS (Bates et al., 2020a; Schlegel et al., 2021) and compared to a light-level library of 122 SEZ cell types in the SEZ split-GAL4 collection (Sterne et al., 2021). In addition, we added a representative image from a split-GAL4 we designed to cover a cell type reported here, Zorro, using previously described methods (Sterne et al., 2021). Each reconstructed neuron on the right of the brain was compared to every SEZ cell type in the library using the natverse toolkit in R (Bates et al., 2020b). Normalized, mean scores were calculated to control for neuron size and segment number. The highest scoring light-level cell type for each reconstructed neuron was considered a match if the normalized, mean NBLAST score was greater than 0.4.\n\nReconstructed cell types with matches include the following FAFB IDs (Top match cell type, NBLAST score): Bract1 (Bract, 0.58), Bract2 (Bract, 0.57), Clavicle (Clavicle, 0.54), Cleaver (Cleaver, 0.57), Fdg (Fdg, 0.64), FMIn (FMIn, 0.61), Fudog R (Fudog, 0.43), G2N-1 (G2N-1, 0.49), Phantom (Phantom, 0.67), Rattle (Rattle, 0.60), Roundup (0.63), Usnea (Usnea, 0.50), Zorro R (Zorro, 0.54).\n\nReconstructed cell types which did not return matches include the following FAFB IDs (Top match cell type, NBLAST score): Billiards (Phantom, 0.17), Buster (Marge, 0.30), Dandelion (Clavicle, \u20130.16), Fuchs (Phantom, 0.37), Quasimodo (Puddle, 0.32), Rounddown (Roundup, 0.28), Roundtree (Puddle, 0.27), Specter (Usnea, 0.16), Sternum (Rattle, 0.10).\n\nFlywire dense reconstructions of second- and third-order neurons (Figure 1\u2014figure supplement 1F; Figure 2\u2014figure supplement 1B) identified no anatomically indistinguishable neurons, except for Bract 1 and Bract 2. Therefore, the high similarity in projection patterns between the split-GAL4 lines and the EM neurons, as well as the functional and behavioral responses of the split-GAL4 lines, provide confidence that the neurons labeled by the split-Gal4 lines match the EM neurons.\n\n#### Optogenetic activation\n\nPER was scored as previously described (Mann et al., 2013). Female flies were raised on standard cornmeal-yeast-molasses medium, until 48 hr before experiments, when flies were placed on molasses food with 0.4 mM retinal. Three- to five-day-old flies were anesthetized with carbon dioxide, mounted onto a glass slide with nail polish, and allowed to recover for 2 hr in a humidified chamber at 22\u00b0C. For optogenetic activation experiments, 153 uW/mm2 635 nm laser light was used (Laserglow). Flies were scored for whether they extended their proboscis within a 5 s period in response to light. Experiments were performed blind to genotype.\n\nFor food-deprivation experiments, flies were raised as above, except 48 hr before experiments, flies were wet-starved by placing them in a vial with a water saturated kimwipe supplemented with 0.4 mM retinal. Flies were activated with a 635 nm laser at four different light intensities: 1.8, 8.9, 17.8, and 153 uW/mm2.\n\n#### GtACR1 silencing\n\nThree-day-old female flies were raised on standard food, and transferred to standard food with 0.4 mM all-trans retinal for 2 days. Next, flies were wet-starved with 0.4 mM retinal in water for 24 hr in order to identify decreases in proboscis extension. Flies were anesthetized with carbon dioxide, mounted onto a glass slide with nail polish, and allowed to recover for 2 hr in a humidified chamber at 22\u00b0C. A green laser (532 nm, LaserGlow LBS-532) was used to acutely silence neurons using GtACR1 (Mohammad et al., 2017). Flies were water satiated, then presented with either 50 mM sucrose or 100 mM sucrose three times to the proboscis, and the number of flies that extended at least once was recorded.\n\n#### In vivo sample preparation for calcium imaging\n\nMated female flies were dissected for calcium imaging studies 14\u201321 days post-eclosion as previously described (Harris et al., 2015) with the following modifications. Flies were briefly anesthetized with ice as they were placed in a custom plastic holder at the cervix to isolate the head from the rest of the body. The head was then immobilized using UV glue, and the esophagus was cut to provide unobstructed imaging access to the SEZ. Flies in fed, food-deprived, desiccated, and thirsty-like (pseudodessicated) conditions were generated as follows:\n\nFed: Flies were placed in a fresh vial containing standard cornmeal-yeast-molasses media 18\u201324 hr prior to imaging. Following dissection, samples were bathed in ~250 mOsmo Artificial Hemolymph-Like solution (AHL) (\u2018artificial hemolymph\u2019) and imaged immediately.\n\nFood-deprived: Flies were food-deprived in a vial containing a wet kimwipe for 18\u201324 hr prior to imaging. Following dissection, samples were bathed in ~250 mOsmo AHL and imaged immediately.\n\nDesiccated: Flies were placed in a vial containing 5 grams of Drierite for 2 hr. A cotton ball was used to isolate flies from the desiccant inside the vial, and the vial was closed with parafilm to create a dry chamber. Following dissection, samples were bathed in ~250 mOsmo AHL and imaged immediately. Hemolymph signals of thirst, such as osmolality, may be perturbed in our calcium imaging studies, limiting our ability to accurately assess a thirsty state (Jourjine et al., 2016).\n\nThirsty-like (Pseudodessicated): Flies were placed in a fresh vial containing standard cornmeal-yeast-molasses media 18\u201324 hr prior to imaging. Following dissection, samples were bathed in ~350 mOsmo AHL (\u2018high osmolality artificial hemolymph\u2019) and allowed to rest for 1 hr prior to imaging.\n\n#### Calcium imaging with taste stimulation\n\nFor imaging responses to taste solutions, females of UAS-CD8-tdTomato;20XUAS-IVS-GCaMP6s(attP5);20XUAS-IVS-GCaMP6s(VK00005) were crossed to males for each split-GAL4 line, and female progeny without balancers were selected for imaging. We found that the arborizations of single neurons were easier to locate in vivo when two copies of GCaMP6s were used, likely due to weaker GAL4 expression in the split-GAL4 lines. The following tastants were used: double-distilled water (\u2018water\u2019), 1 M sucrose (\u2018sugar\u2019), or 10 mM denatonium plus 100 mM caffeine in 20% polyethylene glycol (PEG) (\u2018bitter\u2019). Taste solutions were delivered to the proboscis using a glass capillary (1.0 mm OD/ 0.78 mm ID) filled with ~4 \u00b5L of taste solution and positioned at the tip of the proboscis using a micromanipulator. Taste solutions were drawn away from the tip of the capillary at the beginning of each imaging trial using slight suction generated by an attached 1 mL syringe, and delivered to the proboscis at the relevant time during imaging with light pressure applied to the syringe.\n\nCalcium imaging was performed using either a 1- or 2-photon microscope. For cell types in close proximity to the surface of the SEZ, 1-photon imaging was performed using a 3i spinning disc confocal microscope with a piezo drive and a 20 \u00d7 water immersion objective (NA = 1.0) with a 2.5 \u00d7 magnification changer. 55 frames of 8 z sections spaced at 1 \u00b5M intervals were binned 4 \u00d7 4 and acquired at 0.8 Hz using a 488 nm laser. Taste solutions were in contact with the proboscis labellum from frame 20 to frame 25. Cell types imaged using a 1-photon microscope are Clavicle, Fdg, FMIn, G2N-1, Phantom, Usnea, and Zorro. For cell types that arborize deeper in the SEZ, 2-photon imaging was performed using a Scientifica Hyperscope with resonant scanning, a piezo drive, and a 20\u00d7 water immersion objective (NA = 1.0) with 4\u00d7 digital zoom. 80 stacks of 20 z sections spaced at 2 \u00b5M intervals were acquired at 0.667 Hz using a 920 nm laser. Taste solutions were in contact with the proboscis labellum from frame 30 to frame 40. Cell types imaged using a 2-photon microscope are Bract, Rattle, and Roundup.\n\n#### Calcium imaging with optogenetic activation of GRNs\n\nFor imaging responses in the Fdg cell type to optogenetic activation of GRNs, females of 13XLexAop2-IVS-p10-ChrimsonR-mCherry(attP18); Gr5a-LexA; 20XUAS-IVS-jGCaMP7b(VK00005), 13XLexAop2-IVS-p10-ChrimsonR-mCherry(attP18); 20XUAS-IVS-jGCaMP7b(attP5); ppk28-LexA, or 13XLexAop2-IVS-p10-ChrimsonR-mCherry(attP18); 20XUAS-IVS-jGCaMP7b(attP5); Gr66a-LexA were crossed to males of SS46913 (Sterne et al., 2021). For sugar and bitter integration experiments, virgins of a stock composed of either SS47082 (G2N-1) or SS47744 (Roundup) and 20xUAS-IVS-Syn21-Syt::Op-jGCaMP7b(attP18) were crossed to males of 13XLexAop2-IVS-p10-ChrimsonR-mCherry(attP18); Gr5a-LexA::VP16(12-1);, 13XLexAop2-IVS-p10-ChrimsonR-mCherry(attP18);Gr5a-LexA::VP16(12-1); Gr66a-LexA, or 13XLexAop2-IVS-p10-ChrimsonR-mCherry(attP18);;Gr66a-LexA; and female progeny without balancers were selected for imaging. 2-photon imaging was performed as described above for imaging with taste stimulation, but 660 nm light was used to activate GRNs in place of direct stimulation of the proboscis with taste solutions. Two-second light pulses were delivered three times at 10 s intervals during imaging, and light was delivered through the objective in a widefield fashion under the control of a custom ScanImage plugin.\n\n#### Calcium imaging analysis\n\nImage analysis was carried out in Fiji (Schindelin et al., 2012), CircuitCatcher (a customized Python program by Daniel Bushey Dag et al., 2019), Python, and R. First, in Fiji, Z stacks for each time point were maximum intensity projected and then movement corrected using the StackReg plugin with \u2018Rigid Body\u2019 or \u2018Translation\u2019 transformation (Th\u00e9venaz et al., 1998). Next, using CircuitCatcher, an ROI containing the neurites of the cell type of interest was selected along with a background ROI, and average fluorescence intensity for each ROI at each timepoint was retrieved. Then, in Python, background subtraction was carried out for each timepoint (Ft). To calculate Finitial, initial fluorescence intensity was calculated as the mean corrected average fluorescence intensity from frame 9\u201318 (for 1-photon imaging) or frame 0\u201319 (for 2-photon imaging and optogenetic imaging). Finally, the following formula was used to calculate \u0394F/F: Ft-Finitial/Finitial. Area under the curve was approximated with the trapezoidal rule in Python using the NumPy.trapz function. Area under the curve was assessed from frames 20\u201325 (for 1-photon imaging), from frames 30\u201340 (for 2-photon imaging with taste stimulation), and from frames 15\u201318 (for 2-photon imaging with optogenetic activation).\n\n### Quantification and statistical analysis\n\nStatistical tests for behavioral assays were performed in Prism. For analysis of Proboscis Extension Response assays, Fisher\u2019s Exact Test was used in comparing the fraction of PER responses in experimental versus control flies. Statistical analysis of calcium imaging was carried out in R and Python. For imaging experiments carried out in a block design with three treatments, Quade tests were carried out in R using the PMCMRplus package (Pohlert, 2021). Quade test was chosen because it is more powerful than Friedman for a block-design experiment with three treatments (Conover, 1999). Other statistical analyses of calcium imaging were carried out in Python using the SciPy (Virtanen et al., 2020) and scikit-posthocs packages (Terpilowski, 2018).\n",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "271ed4a3-cd2e-4155-ad4f-bccd68a0bd9a",
+      "submission_id": "480a8ce9-8602-4a0a-a009-6d4a11b0aa3b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ilona C Grunwald Kadow, https://ror.org/041nas322 University of Bonn Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79887.sa0](https://doi.org/10.7554/eLife.79887.sa0)\n\nThe findings presented in this article contribute to a circuit-based understanding of how sweet and bitter tastes are integrated with the hunger state to drive feeding initiation in Drosophila. Anatomical, behavioral, and neuronal activity data support a multi-step pathway from sensory input to motor output. This manuscript, thus, advances our understanding of how multiple sensory cues are integrated with an internal state to reach a behavioral decision.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ilona C Grunwald Kadow, https://ror.org/041nas322 University of Bonn Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79887.sa1](https://doi.org/10.7554/eLife.79887.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Taste quality and hunger interactions in a feeding sensorimotor circuit\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Simon G Sprecher (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll three reviewers were impressed by the large amount of high-quality data. All three support publication of this manuscript. Before a final decision can be made, a few points need to be addressed by editing the manuscript or improving presentation. No additional data are needed.\n\nPlease address all reviewer points in a point-by-point response and pay particular attention to improving clarity, background presentation, and result interpretation with the goal of clarifying the take-home messages for the readers.\n\nReviewer #1 (Recommendations for the authors):\n\nThe study is elegant and by themselves the two distinct parts \u2013 connectome and genetic neuron assessment- provide insight into the taste circuit organization. I do not have any major comments \u2013 or concerns- on the overall logic of reasoning or layout of the data. However, I do have a few points that I feel would be important to address.\n\nWhile each of the two sections (connectome and neurogenetics) by itself is logical and experimentally quite well developed the link between the two sections is less clear. Much of the reasoning that underlies this connection is simply skipped or omitted. This should not be seen as a criticism of the data itself, but rather provide an option to be transparent with certainties and uncertainties. Along these lines I felt it would be important to know:\n\n\u2013 How were \"likely\" sugar-sensing GRNs in the connectome identified? (line 77), can the authors explain the rationale behind this assumption?\n\n\u2013 How certain is the identity linked between split-Gal4 lines and connectome lines? Are there putative other cells that could be mistaken for some of the GRN targets?\n\n\u2013 Are the 15 second-order neurons all targets of the GRNs or which portion do they make up? What do the authors mean by \"revealing that they represent 12 of the 13 cell types with the most synapses from candidate sugar GRNs\" line 82/83.\n\n\u2013 Less impacting, but still probably relevant: while the nomenclature of the neurons may be funny the rationale behind it is not explained (or not referred to). It may be worth to depict this in the method section.\n\nAs result of the quite extensive data presented, the core messages appear almost a bit forgotten. For instance, early redundancy in \"necessity and sufficiency\" for PER is to some degree discussed, but not further explored. What do the authors think is the relevance of this finding? How does it compare of what we know from direct EM connectomic analysis in other modalities adult fly or larva?\n\nIt is of course tempting to ask an array of questions concerning the functionality of the circuit beyond the current analysis. I am sure that the authors have considered this, and I do not feel any further experimental investigation is necessary.\n\nHowever, there are a couple points that maybe worth discussing (again no data required):\n\n\u2013 Do the authors have any idea or hypothesis of how the use of excitatory or inhibitory neurotransmitter may affect the proposed \"circuit\" function? How does this relate to satiation state?\n\n\u2013 Do the authors have any idea about how isolated or connected the current circuit with other taste modalities is (it may be sufficient to discuss ideas on this)?\n\nReviewer #3 (Recommendations for the authors):\n\nA couple of the experimental results seem counterintuitive and would benefit from further discussion:\n\n(1) Optogenetic activation of a large subset of the individual neurons in the circuit (2nd order through pre-motor) is sufficient to drive PER, suggesting potential functional redundancy. But only a subset of 2nd order neurons (and none of the 3rd order or premotor neurons) appear required for PER in response to sugar. One might anticipate that inactivating neurons closer to the motor output might have a stronger impact on PER than inactivating upstream neurons. Does the presence of multiple motor outputs that contribute to PER downstream of the 2nd order neurons explain why inhibition of some of these upstream neurons have a more dramatic impact on the behavior? It would be useful to clarify the extent to which the analysis (and connectome) focuses on just one of the many motor neurons involved in stimulating PER in response to sugar.\n\n(2) Another potentially confusing result is the response of the Usnea 2nd order neuron to water rather than sugar, despite its apparent connections to sugar-responsive gustatory neurons and its requirement for PER in response to sugar. What is the likely explanation for this result?\n\nIn terms of further speculation that would be of interest to readers:\n\n(3) Do the authors have any speculative ideas about how/why the responses to G2N-1 and Clavicle activation are hunger-regulated?\n\n(4) Do the authors have any thoughts about how Phantom is contributing to the response?\n\n(5) The authors speculate the Fdg is responsive to GRNs from non-labellar tissue. Have they tested whether contact of the leg with sugar is sufficient to activate the Fdgs?\n",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4533637-d35c-4ab0-86eb-cfd7582fa8bf",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C1",
+      "claim": "The feeding initiation circuit connects gustatory sensory neurons to proboscis motor neurons through three intermediate layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This circuit connects gustatory sensory neurons to proboscis motor neurons through three intermediate layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this structural organization of the circuit based on the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "7407a05c-7f04-4297-bedf-06798bee9fe2",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C2",
+      "claim": "Most neurons in the feeding initiation pathway are necessary and sufficient for proboscis extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Most neurons in this pathway are necessary and sufficient for proboscis extension, a feeding initiation behavior, and respond selectively to sugar taste detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract summarizes experimental findings from optogenetic activation and inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "2e152905-c8e1-45bd-b73e-04d9704079ce",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C3",
+      "claim": "Most neurons in the feeding initiation pathway respond selectively to sugar taste detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Most neurons in this pathway are necessary and sufficient for proboscis extension, a feeding initiation behavior, and respond selectively to sugar taste detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract summarizes calcium imaging data showing selective responses to sugar.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "265a35a0-1304-4f8f-935c-db4133f7f8a3",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C4",
+      "claim": "Hunger signals act at select second-order neurons to promote feeding initiation in food-deprived animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway activity is amplified by hunger signals that act at select second-order neurons to promote feeding initiation in food-deprived animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes experimental findings from optogenetic activation in fed versus food-deprived flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "d25ac1c9-9ddd-4b0a-ae3c-2d0927bbfb48",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C5",
+      "claim": "The feeding initiation circuit is inhibited by a bitter taste pathway that impinges on premotor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the feeding initiation circuit is inhibited by a bitter taste pathway that impinges on premotor neurons, illuminating a local motif that weighs sugar and bitter taste detection to adjust the behavioral outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract summarizes findings from EM reconstruction and calcium imaging showing bitter pathway connectivity and function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "7822961d-79c7-49f1-8954-1dda74e1a3e3",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C6",
+      "claim": "Peripheral taste detection in mammals and insects is mediated by sensory cells that detect specific taste modalities and elicit innate feeding behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Peripheral taste detection in mammals and insects is mediated by sensory cells that detect specific taste modalities and elicit innate feeding behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "7d68feda-6fc4-4bd1-bd6d-398b30847c28",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C7",
+      "claim": "Both mammals and flies have sugar-, bitter-, water-, and salt-sensing gustatory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mammals and flies have sugar-, bitter-, water-, and salt-sensing gustatory cells (Liman et al., 2014; Yarmolinsky et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "117049db-e8fe-4523-b856-1a855b2ebefd",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C8",
+      "claim": "Activation of sugar-sensing gustatory cells triggers feeding initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of sugar-sensing gustatory cells triggers feeding initiation, whereas activation of bitter-sensing cells inhibits feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge with implicit reference to prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "e752f354-ee51-48b5-b73b-0e733162031b",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C9",
+      "claim": "Activation of bitter-sensing cells inhibits feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of sugar-sensing gustatory cells triggers feeding initiation, whereas activation of bitter-sensing cells inhibits feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge with implicit reference to prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "6bc87251-6fcc-4bd1-880f-a0e3b985ac3c",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C10",
+      "claim": "Mammals and insects evaluate internal nutrient needs with similar strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammals and insects also evaluate internal nutrient needs with similar strategies (Augustine et al., 2018; Leopold and Perrimon, 2007; N\u00e4ssel and Zandawala, 2019; Pool and Scott, 2014; Sareen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "244cea98-c738-4626-a9f4-9b0bc7906fcd",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C11",
+      "claim": "Neuromodulators released from neurosecretory centers and the gut signal hunger or satiety to oppositely regulate feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuromodulators released from neurosecretory centers and the gut signal hunger or satiety to oppositely regulate feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "6f571c90-a41c-494f-aaa1-705187779365",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C12",
+      "claim": "Disruption of hunger and satiety signals results in obesity and anorexia in mammals and insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of these hunger and satiety signals results in obesity and anorexia in mammals and insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "754a34a1-f237-496c-8605-7dd93a338df2",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C13",
+      "claim": "Gustatory sensory neurons have been shown to be modulated by hunger signals and conflicting taste information.",
+      "claim_type": "EXPLICIT",
+      "source": "Although gustatory sensory neurons have been shown to be modulated by hunger signals and conflicting taste information (Chu et al., 2014; French et al., 2015; Inagaki et al., 2012; Inagaki et al., 2014; Jeong et al., 2013; Meunier et al., 2003), central mechanisms that modulate feeding decisions are unclear because the identity, structure, and function of central feeding initiation circuits are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "0ae73877-008e-4634-a902-871dc929b608",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C14",
+      "claim": "Central mechanisms that modulate feeding decisions are unclear because the identity, structure, and function of central feeding initiation circuits are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Although gustatory sensory neurons have been shown to be modulated by hunger signals and conflicting taste information (Chu et al., 2014; French et al., 2015; Inagaki et al., 2012; Inagaki et al., 2014; Jeong et al., 2013; Meunier et al., 2003), central mechanisms that modulate feeding decisions are unclear because the identity, structure, and function of central feeding initiation circuits are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap that motivates the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "97c79ac6-c74f-43da-832a-9aa59c16cab1",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C15",
+      "claim": "Taste detection in adult Drosophila begins with activation of gustatory receptor neurons (GRNs) found in sensory structures located on the body surface, including the external mouthparts, or proboscis labellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Taste detection in adult Drosophila begins with activation of gustatory receptor neurons (GRNs) found in sensory structures located on the body surface, including the external mouthparts, or proboscis labellum (Dethier, 1976; Montell, 2021; Scott, 2018; Stocker, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "366c9a52-19af-4694-b053-a525c025ee2e",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C16",
+      "claim": "The axons of proboscis GRNs project to the primary taste and premotor center of the insect brain, the subesophageal zone (SEZ).",
+      "claim_type": "EXPLICIT",
+      "source": "The axons of proboscis GRNs project to the primary taste and premotor center of the insect brain, the subesophageal zone (SEZ) (Kendroud et al., 2018; Miyazaki and Ito, 2010; Stocker and Schorderet, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "4b25e668-9ac4-4930-9a9c-a6553808a0d5",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C17",
+      "claim": "The motor neurons that execute feeding have cell bodies and dendrites in the SEZ near GRN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor neurons that execute feeding have cell bodies and dendrites in the SEZ near GRN axons, suggesting a local feeding circuit (Gordon and Scott, 2009; McKellar et al., 2020; Schwarz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "46bf793b-5726-4fbc-892e-6cd0af558e5b",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C18",
+      "claim": "Only a few isolated interneurons have been implicated in feeding initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only a few isolated interneurons have been implicated in feeding initiation (Flood et al., 2013; Kain and Dahanukar, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature and identifies a knowledge gap.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "255b4c41-6130-4429-bf2f-d45879f44f42",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C19",
+      "claim": "Fifteen second-order taste neurons and their synapses were fully reconstructed in the CATMAID platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifteen second-order taste neurons and their synapses were fully reconstructed (Figure 1A\u2013B and Figure 1\u2014figure supplement 1) in the CATMAID platform (Saalfeld et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology and results of EM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "c95e1d5d-e57f-4669-8ea5-330c94d41f8b",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C20",
+      "claim": "The second-order neurons do not receive inputs from all candidate sugar GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The second-order neurons do not receive inputs from all candidate sugar GRNs (Figure 1\u2014figure supplement 1B); however, as sugar GRNs make extensive axonal-axonal connections (Engert et al., 2021), the impact of these differences is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on EM reconstruction data and cites previous work on GRN connectivity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "d28494b8-8877-4caa-a690-8964799b3de0",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C21",
+      "claim": "Sugar GRNs make extensive axonal-axonal connections.",
+      "claim_type": "EXPLICIT",
+      "source": "The second-order neurons do not receive inputs from all candidate sugar GRNs (Figure 1\u2014figure supplement 1B); however, as sugar GRNs make extensive axonal-axonal connections (Engert et al., 2021), the impact of these differences is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "e2cedf32-f77b-424a-9a73-3b3353b1b80a",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C22",
+      "claim": "Optogenetic activation of seven of the nine second-order taste neurons elicited proboscis extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, optogenetic activation of seven of the nine second-order taste neurons elicited proboscis extension (Figure 1D and Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from optogenetic activation experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "83cfb1e4-946c-4087-8b45-ac0fea93de51",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C23",
+      "claim": "Inhibiting the activity of each second-order neuron individually reduced proboscis extension to 50 mM sucrose in food-deprived flies, for six of the seven second-order neurons that elicited PER upon activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inhibiting the activity of each second-order neuron individually, by optogenetic activation of the anion channelrhodopsin GtACR1 (Mohammad et al., 2017), reduced proboscis extension to 50 mM sucrose in food-deprived flies, for six of the seven second-order neurons that elicited PER upon activation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from optogenetic inhibition experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "17b94159-3c90-42cb-a0fd-4216aeed76a1",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C24",
+      "claim": "At a higher sucrose concentration (100 mM), neural inhibition of only two of the second-order neuron classes decreased proboscis extension.",
+      "claim_type": "EXPLICIT",
+      "source": "At a higher sucrose concentration (100 mM), neural inhibition of only two of the second-order neuron classes decreased proboscis extension (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from optogenetic inhibition experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "e83479b9-b59d-48c8-a1a2-1960c3dc3bca",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C25",
+      "claim": "Multiple second-order neurons contribute to normal feeding initiation behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies argue that multiple second-order neurons contribute to normal feeding initiation behavior and suggest that the partial redundancy of these second-order neurons ensures robust feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data on activation and inhibition of second-order neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "6629a88c-271a-4b7f-8774-d74fa3bfce46",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C26",
+      "claim": "The partial redundancy of second-order neurons ensures robust feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies argue that multiple second-order neurons contribute to normal feeding initiation behavior and suggest that the partial redundancy of these second-order neurons ensures robust feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of the circuit architecture.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "45302236-ef71-4c19-a6d3-04c02656ea49",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C27",
+      "claim": "Proboscis motor neurons 4, 6, 7, and 9 are involved in extending different segments of the proboscis for feeding initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Proboscis motor neurons 4, 6, 7, and 9 are involved in extending different segments of the proboscis for feeding initiation (McKellar et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "9d3c71d6-3752-40f9-b045-bbe0ba99aebb",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C28",
+      "claim": "Motor neuron 9 (MN9) is necessary and sufficient for extension of the rostrum, the largest portion of the proboscis.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the well-studied motor neuron 9 (MN9), which is necessary and sufficient for extension of the rostrum, the largest portion of the proboscis (Gordon and Scott, 2009; McKellar et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "c7d447dc-ac5f-4665-a357-51e68d52965a",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C29",
+      "claim": "The feeding initiation pathway is composed of interconnected second-order neurons and third-order neurons each receiving inputs from a subset of second-order neurons, and feedforward premotor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy identified a minimal pathway from taste detection to proboscis extension, composed of interconnected second-order neurons and third-order neurons each receiving inputs from a subset of second-order neurons, and feedforward premotor neurons (Figure 2A and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the circuit architecture identified through EM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "efc1bf99-5541-4be9-8ae4-1c3e23944298",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C30",
+      "claim": "The third-order neurons include one previously characterized neuron, the putative feeding command neuron, Fdg.",
+      "claim_type": "EXPLICIT",
+      "source": "They include one previously characterized neuron, the putative feeding command neuron, Fdg (Flood et al., 2013; Figure 3B), and a set of descending neurons, Bract, that project to the ventral nerve cord (Sterne et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "e1f5788a-fd19-4f54-ab65-f89867976a86",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C31",
+      "claim": "Bract descending neurons project to the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "They include one previously characterized neuron, the putative feeding command neuron, Fdg (Flood et al., 2013; Figure 3B), and a set of descending neurons, Bract, that project to the ventral nerve cord (Sterne et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "443929e4-626a-4911-a520-2c08bfccf756",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C32",
+      "claim": "The premotor neurons are strongly connected to MN9, representing approximately 13% of the synaptic input onto MN9.",
+      "claim_type": "EXPLICIT",
+      "source": "The premotor neurons are strongly connected to MN9, representing approximately 13% of the synaptic input onto MN9 (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis of EM reconstruction data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "10f4c9d8-dda2-4e25-b810-edd2f59ae0b9",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C33",
+      "claim": "There are direct connections between three second-order neurons (G2N-1, Zorro, and FMIn) and premotor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "There are direct connections between three second-order neurons (G2N-1, Zorro, and FMIn) and premotor neurons, and additional paths via third-order neurons to premotor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the circuit connectivity identified through EM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "2271f6a5-f1c8-497d-a818-bdc9c219ac53",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C34",
+      "claim": "The neurons in the feeding initiation circuit are predicted to be cholinergic, except for Usnea and Phantom which are predicted to be GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "The neurons in the feeding initiation circuit are predicted to be cholinergic, except for Usnea and Phantom which are predicted to be GABAergic (Figure 2\u2014figure supplement 1D), based on machine learning classifications (Eckstein et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational predictions from machine learning analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "866c5192-d5d5-4a30-a21e-7ed52c0afb7b",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C35",
+      "claim": "Optogenetic activation of third-order or premotor neurons elicits robust proboscis extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of third-order or premotor neurons with CsChrimson revealed that each cell type elicits robust proboscis extension (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from optogenetic activation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "ba0c3e20-dd52-4066-8111-da9c12ba509b",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C36",
+      "claim": "Acute inhibition of the third-order or premotor neurons with GtACR1 did not influence PER to 50 mM sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "However, acute inhibition of the third-order or premotor neurons with GtACR1 did not influence PER to 50 mM sucrose (Figure 2E), consistent with multiple pathways to proboscis motor neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from optogenetic inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "2447711a-01a5-447f-b5a6-a132c2b343e8",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C37",
+      "claim": "Eight of the ten neural classes responded to sugar taste presentation in food-deprived animals, and not to water or bitter solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight of the ten neural classes responded to sugar taste presentation in food-deprived animals, and not to water or bitter solutions (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calcium imaging data showing taste responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "b5e1b0cc-48ec-47a7-a33c-da3812b37ab2",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C38",
+      "claim": "Two second-order cell types responded to water taste detection: Usnea responded specifically to water and Phantom responded equally to water and sugar detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Two second-order cell types responded to water taste detection: Usnea responded specifically to water and Phantom responded equally to water and sugar detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calcium imaging data showing taste responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "7dc7266f-743e-415c-a989-5d47d7a7c0e1",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C39",
+      "claim": "Usnea and Phantom are reciprocally connected with GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Usnea and Phantom are reciprocally connected with GRNs (Figure 1\u2014figure supplement 1D), suggesting that these second-order cell types may tune GRN responses in the presence of water.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EM reconstruction data showing connectivity patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "74ae2fcf-74ac-4edd-a412-dfa178ad0b9d",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C40",
+      "claim": "Usnea and Phantom may tune GRN responses in the presence of water.",
+      "claim_type": "EXPLICIT",
+      "source": "Usnea and Phantom are reciprocally connected with GRNs (Figure 1\u2014figure supplement 1D), suggesting that these second-order cell types may tune GRN responses in the presence of water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the connectivity and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "ff46f4bc-bd62-40ce-beda-aeae475c47d6",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C41",
+      "claim": "Fdg did not respond to proboscis taste stimulation, but did respond to optogenetic activation of sugar-sensing GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "One third-order neuron, Fdg, did not respond to proboscis taste stimulation, but did respond to optogenetic activation of sugar-sensing GRNs (Figure 3\u2014figure supplement 1A), suggesting that Fdg may respond to pharyngeal or leg taste detection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calcium imaging data with taste stimulation and optogenetic activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "cf95bbd3-e62c-4af8-aaa5-5d0f23937d37",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C42",
+      "claim": "Fdg may respond to pharyngeal or leg taste detection.",
+      "claim_type": "EXPLICIT",
+      "source": "One third-order neuron, Fdg, did not respond to proboscis taste stimulation, but did respond to optogenetic activation of sugar-sensing GRNs (Figure 3\u2014figure supplement 1A), suggesting that Fdg may respond to pharyngeal or leg taste detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the calcium imaging data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "c95d0d1e-5db7-4cd7-aa21-9ab9f9dbe751",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C43",
+      "claim": "High hemolymph osmolality is a key signal of thirst that acts on central neurons to promote water consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "High hemolymph osmolality is a key signal of thirst that acts on central neurons to promote water consumption (Jourjine et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "3e1964b0-3a7b-4557-8a92-88328e28e821",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C44",
+      "claim": "Increasing hemolymph osmolality enhanced water responses in water-sensing GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We mimicked a thirsty-like state by increasing hemolymph osmolality, which enhanced water responses in water-sensing GRNs (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calcium imaging data in manipulated flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "0d0106be-fe54-49b2-8cbb-7aae070734dc",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C45",
+      "claim": "In four of the five central neurons tested, response profiles were similar in food-deprived and thirsty-like flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In four of the five central neurons tested, response profiles were similar in food-deprived and thirsty-like flies (Figure 3 and Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calcium imaging data comparing different physiological states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "53ef2446-8bb5-4768-ad8f-b5e19b268cda",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C46",
+      "claim": "Clavicle responded to water and to sugar taste detection in a thirsty-like state but only to sugar in a hungry state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one second-order neuron, Clavicle, responded to water and to sugar taste detection in a thirsty-like state but only to sugar in a hungry state (Figure 3 and Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calcium imaging data comparing different physiological states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "aa8242cd-d74d-4476-a932-09b394452411",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C47",
+      "claim": "State-dependent responses to water at Clavicle may tune the responsiveness of the pathway to bias acceptance of more dilute sugar solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that state-dependent responses to water at a single node (Clavicle) may tune the responsiveness of the pathway to bias acceptance of more dilute sugar solutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the calcium imaging data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "b7761aaa-f6f1-42d3-a3e7-37d0bca99469",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C48",
+      "claim": "The second-order neurons that receive sugar GRN inputs also receive inputs from candidate water and high-salt (ppk23-positive, Glut-positive) GRNs but do not receive inputs from candidate bitter or low salt (Ir94e) GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that the second-order neurons that receive sugar GRN inputs also receive inputs from candidate water and high-salt (ppk23-positive, Glut-positive) GRNs but do not receive inputs from candidate bitter or low salt (Ir94e) GRNs (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EM reconstruction data showing connectivity patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "8e5d310b-1347-4554-be64-74cb692e6f61",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C49",
+      "claim": "The connectivity is consistent with calcium imaging studies showing responses to sugar taste detection but not bitter taste.",
+      "claim_type": "EXPLICIT",
+      "source": "The connectivity is consistent with our calcium imaging studies showing responses to sugar taste detection but not bitter taste.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting EM connectivity data with functional imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "f47579d4-2d7e-4205-a42a-ee883fdd9e39",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C50",
+      "claim": "Responses to sugar and water were not consistent with the predicted connectivity for each neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "However, responses to sugar and water were not consistent with the predicted connectivity for each neuron, suggesting the possibilities of state-dependence, network interactions, and/or errors in GRN modality categorization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation comparing functional responses with anatomical connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "fbcf8675-1183-4033-a20d-605a5de07f86",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C51",
+      "claim": "Some GRNs may be misclassified, leading to errors in assessing sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "As GRN category assignments in the EM dataset were based on anatomy and connectivity alone, some GRNs may be misclassified, leading to errors in assessing sensory inputs (Engert et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about the EM data interpretation, citing previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "4b900c59-751d-42a2-9fa9-8966dedfed9a",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C52",
+      "claim": "Hunger modulates sugar GRN activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hunger modulates sugar GRN activity (Inagaki et al., 2012); however, whether sensory gating is the only mechanism for hunger regulation or whether modulation of central neurons contributes to an altered network state in hungry animals has not been examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "f131bfbb-9c84-4a26-846a-2c7258143321",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C53",
+      "claim": "Dopamine enhances the sensitivity of Drosophila sugar-sensing gustatory neurons to promote proboscis extension at lower sucrose concentrations in hungry animals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, dopamine enhances the sensitivity of Drosophila sugar-sensing gustatory neurons to promote proboscis extension at lower sucrose concentrations in hungry animals (Inagaki et al., 2012; Marella et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "5b8a2a9e-4a1e-4079-84d5-51da39e8d661",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C54",
+      "claim": "CsChrimson-mediated activation of sugar GRNs caused higher proboscis extension rates in food-deprived flies than in fed flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, CsChrimson-mediated activation of sugar GRNs caused higher proboscis extension rates in food-deprived flies than in fed flies, whereas activation of MN9 elicited the same proboscis extension rate in food-deprived and fed flies (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from optogenetic activation in different feeding states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "f90f3973-0be6-4db4-84ad-10d04aa21821",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C55",
+      "claim": "Activation of MN9 elicited the same proboscis extension rate in food-deprived and fed flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, CsChrimson-mediated activation of sugar GRNs caused higher proboscis extension rates in food-deprived flies than in fed flies, whereas activation of MN9 elicited the same proboscis extension rate in food-deprived and fed flies (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from optogenetic activation in different feeding states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "9ffff7b3-b178-47fb-ae20-ee5758df5f5c",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C56",
+      "claim": "Activation of two second-order neurons, G2N-1, and Clavicle, increased proboscis extension in food-deprived flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, activation of two second-order neurons, G2N-1, and Clavicle, increased proboscis extension in food-deprived flies, whereas activation of all other neural classes did not (Figure 4A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from optogenetic activation in different feeding states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "078c8db8-3a29-4287-9e85-852310557d3e",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C57",
+      "claim": "Hunger signals act on sensory neurons to increase detection sensitivity and on a specific set of second-order interneurons to amplify sugar pathway activation and promote feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, hunger signals act on sensory neurons to increase detection sensitivity and on a specific set of second-order interneurons to amplify sugar pathway activation and promote feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic activation experiments in different feeding states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "f9af9fea-8729-477d-a662-faf04ca02697",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C58",
+      "claim": "Previous studies have demonstrated that bitter compounds inhibit sugar-sensing gustatory neurons to prevent feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that bitter compounds inhibit sugar-sensing gustatory neurons to prevent feeding (Chu et al., 2014; French et al., 2015; Jeong et al., 2013; Meunier et al., 2003), but have not addressed how downstream neural circuitry modulates appetitive feeding behaviors in response to bitter taste detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "0107338f-7046-4919-9942-1a2bd11d82db",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C59",
+      "claim": "Scapula is a second-order bitter neuron which receives over 150 synapses from bitter GRNs and is the second-most strongly connected cell type with bitter GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We reconstructed neurons downstream of bitter GRNs (Engert et al., 2021) in the EM volume and identified a second-order bitter neuron, Scapula, which receives over 150 synapses from bitter GRNs and is the second-most strongly connected cell type with bitter GRNs (Figure 5A and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EM reconstruction data showing connectivity patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "6f9f2789-01e8-4dea-ad1f-3e8aeab41759",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C60",
+      "claim": "Scapula synapses directly onto two feeding initiation premotor neurons, Roundup and Rounddown, but not onto second- or third-order appetitive taste neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Scapula synapses directly onto two feeding initiation premotor neurons, Roundup and Rounddown, but not onto second- or third-order appetitive taste neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on EM reconstruction data showing connectivity patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "c308111c-82ab-412b-824c-ee2f1b39a5a4",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C61",
+      "claim": "Scapula is predicted to release glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, Scapula is predicted to release glutamate (Figure 2\u2014figure supplement 1D), which is often an inhibitory neurotransmitter in Drosophila (Liu and Wilson, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational predictions and citation to previous literature on neurotransmitter function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "0a59e76d-919d-48d0-a885-d42bfc7ce392",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C62",
+      "claim": "Glutamate is often an inhibitory neurotransmitter in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, Scapula is predicted to release glutamate (Figure 2\u2014figure supplement 1D), which is often an inhibitory neurotransmitter in Drosophila (Liu and Wilson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "c0b2e112-768f-4b9c-88f6-c66d04cec583",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C63",
+      "claim": "Roundup responded to optogenetic activation of sugar GRNs but not bitter GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Roundup responded to optogenetic activation of sugar GRNs but not bitter GRNs (Figure 5B), as expected based on its response to taste compounds (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calcium imaging data with optogenetic activation of different GRN types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "dfc733ad-568a-4d32-9298-264535ae7b66",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C64",
+      "claim": "Upon co-activation of sugar and bitter GRNs, the Roundup response was dramatically decreased compared to the response to sugar GRN activation alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon co-activation of sugar and bitter GRNs, the Roundup response was dramatically decreased compared to the response to sugar GRN activation alone, arguing that bitter signals suppress the feeding initiation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calcium imaging data with co-activation of different GRN types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "8da795b4-5c69-4eb2-a339-efd7ccae2f88",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C65",
+      "claim": "G2N-1's response upon co-activation of sugar and bitter GRNs was indistinguishable from its response to sugar GRN activation alone.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this bitter suppression reflects a central mechanism acting at Roundup, we monitored activity in a second-order neuron, G2N-1, directly upstream of Roundup, and found that its response upon co-activation of sugar and bitter GRNs was indistinguishable from its response to sugar GRN activation alone (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calcium imaging data with co-activation of different GRN types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "81726ed6-4f49-4107-8eb1-1357727db5ba",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C66",
+      "claim": "Sugar and bitter tastes are integrated at feeding initiation premotor neurons, providing a central mechanism to reject sweet foods laced with bitter compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the EM and imaging studies demonstrate that sugar and bitter tastes are integrated at feeding initiation premotor neurons, providing a central mechanism to reject sweet foods laced with bitter compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EM connectivity and calcium imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "c669f5e9-7c98-4698-9555-8ed09a89e572",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C67",
+      "claim": "The feeding initiation pathway is a local circuit, with three- and four-synaptic relays to motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "The feeding initiation pathway is a local circuit, with three- and four-synaptic relays to motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the circuit architecture identified through EM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "e44808ea-fd16-4759-9620-a3f411b22d80",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C68",
+      "claim": "Each neuron in the feeding initiation pathway elicits proboscis extension upon optogenetic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Each neuron elicits proboscis extension upon optogenetic activation, demonstrating that each neuron participates in a pathway for the behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from optogenetic activation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "fdcf590d-1d59-4375-b1b6-f6253fa0a8a5",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C69",
+      "claim": "Inhibiting activity of single second-order neurons reduced the behavioral response.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting activity of single second-order neurons reduced the behavioral response, whereas inhibiting activity of third-order or premotor neurons did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from optogenetic inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "56213b99-81ae-4c05-84b8-9c8472d146fa",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C70",
+      "claim": "Inhibiting activity of third-order or premotor neurons did not reduce the behavioral response.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting activity of single second-order neurons reduced the behavioral response, whereas inhibiting activity of third-order or premotor neurons did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from optogenetic inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "1abc7aed-c323-4609-89ea-05e9c88ab3d5",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C71",
+      "claim": "There are multiple routes between sugar GRNs and MN9 for proboscis extension.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the circuit connectivity, which reveals that there are multiple routes between sugar GRNs and MN9 for proboscis extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the EM connectivity data and behavioral results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "a0c838a5-ef16-4f58-ae3f-e03954cc774d",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C72",
+      "claim": "The multiple paths from second-order neurons to premotor neurons may enable proboscis extension to be recruited in different contexts to ensure robust feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "The multiple paths from second-order neurons to premotor neurons may enable proboscis extension to be recruited in different contexts to ensure robust feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of the circuit architecture.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "f3486f5c-369f-4940-a478-577781c9d451",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C73",
+      "claim": "Multiple circuit paths may enhance behavioral flexibility by facilitating sensory tuning and multisensory integration.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, multiple circuit paths may enhance behavioral flexibility by facilitating sensory tuning and multisensory integration (Miroschnikow et al., 2018; Ohyama et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "1efb3d51-645e-4902-b192-77afa3c5f4d8",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C74",
+      "claim": "EM circuit tracing of sensorimotor paths for feeding in Drosophila larvae revealed both direct GRN-motor neuron synapses as well as indirect pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our finding that there are multiple pathways for proboscis extension, EM circuit tracing of sensorimotor paths for feeding in Drosophila larvae revealed both direct GRN-motor neuron synapses as well as indirect pathways (Miroschnikow et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "50883ed9-1c8c-4a0b-b8ff-5b377e40ef9a",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C75",
+      "claim": "G2N-1 was identified as a candidate sugar-sensing second-order neuron based on its anatomical proximity to gustatory axons alone.",
+      "claim_type": "EXPLICIT",
+      "source": "G2N-1 was identified as a candidate sugar-sensing second-order neuron based on its anatomical proximity to gustatory axons alone (Miyazaki et al., 2015); here, we elucidated its functional role in taste detection and feeding initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature and contrasts with the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "51d48403-6f78-48f1-a4b8-65e5ce2b63e8",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C76",
+      "claim": "Fdg was isolated as a 'feeding command neuron,' able to elicit multiple steps in feeding, including proboscis extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdg was isolated as a 'feeding command neuron,' able to elicit multiple steps in feeding, including proboscis extension (Flood et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "47d575dd-4a8a-419b-9a8a-2e2825aa7e86",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C77",
+      "claim": "Fdg is a third-order neuron in the feeding initiation pathway, with synaptic connections to Bract descending neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies demonstrate that Fdg is a third-order neuron in the feeding initiation pathway, with synaptic connections to Bract descending neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on EM reconstruction data showing connectivity patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "71ac1b6d-7904-4347-a471-d57737e544c0",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C78",
+      "claim": "Bract synapses with proboscis premotor neurons and ventral cord circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "As Bract synapses with proboscis premotor neurons and ventral cord circuits, Fdg and Bract are well-poised to coordinate proboscis extension with other steps in feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on EM reconstruction data and inference about functional significance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "84b69c51-5e46-49d6-a645-6ca9ed985522",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C79",
+      "claim": "Fdg and Bract are well-poised to coordinate proboscis extension with other steps in feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "As Bract synapses with proboscis premotor neurons and ventral cord circuits, Fdg and Bract are well-poised to coordinate proboscis extension with other steps in feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the circuit connectivity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "06586a73-9103-488f-a28a-2cef009c9434",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C80",
+      "claim": "Studies in C. elegans, Drosophila, and mammals have demonstrated that a key site of hunger regulation is at the peripheral chemosensory neurons, altering sensitivity of detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in C. elegans, Drosophila, and mammals have demonstrated that a key site of hunger regulation is at the peripheral chemosensory neurons, altering sensitivity of detection (Chalasani et al., 2010; Kawai et al., 2000; Root et al., 2011; Savigner et al., 2009; Sengupta, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "a9e8c5cd-d53e-4af5-a28a-758a1ac16ba1",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C81",
+      "claim": "Hunger acts at a few critical nodes to modulate feeding initiation: sensory neurons increase detection sensitivity and second-order neurons amplify pathway activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies demonstrate that hunger acts at a few critical nodes to modulate feeding initiation: sensory neurons increase detection sensitivity and second-order neurons amplify pathway activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic activation experiments in different feeding states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "6f9d9fa7-a3f9-416c-944e-64338747de10",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C82",
+      "claim": "Previous studies have demonstrated interactions between sweet and bitter taste modalities at the level of sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous studies have demonstrated interactions between sweet and bitter taste modalities at the level of sensory neurons (Chu et al., 2014; French et al., 2015; Jeong et al., 2013; Meunier et al., 2003 LeDue et al., 2016) and through feedback from the mammalian gustatory cortex (Jin et al., 2021), this study reveals a third circuit strategy for weighing sweet and bitter tastes: a local inhibitory network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "6f64a3fa-1e16-47ba-b0bd-78603c478d0b",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C83",
+      "claim": "Inhibitory interactions between bitter and sugar pathways at the level of premotor neurons provide an elegant strategy to weigh incoming sugar and bitter taste information and adjust behavioral probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory interactions between bitter and sugar pathways at the level of premotor neurons provide an elegant strategy to weigh incoming sugar and bitter taste information and adjust behavioral probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional significance of the circuit connectivity and imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "406c4691-be91-4e04-98eb-302fed8059c1",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C84",
+      "claim": "By blocking activity at specific muscles, bitter detection may specifically change behavior to direct the proboscis away from a hazardous food source.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, by blocking activity at specific muscles, bitter detection may specifically change behavior to direct the proboscis away from a hazardous food source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of the circuit mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "64ff28ac-6b62-4a31-b0e8-34766de670eb",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C85",
+      "claim": "The existence of a local inhibitory circuit for bitter-sweet integration has been recently postulated based on studies of mammalian taste circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of a local inhibitory circuit for bitter-sweet integration has been recently postulated based on studies of mammalian taste circuitry (Jin et al., 2021) and may be a shared strategy across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature and suggests evolutionary conservation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "52c2d9a1-0a5a-4b52-ba4c-d1f18ba97ad4",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C86",
+      "claim": "Multiple circuit mechanisms for suppression of sweet attraction by bitter signals may reflect the evolutionary importance of robust bitter taste avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "These multiple circuit mechanisms for suppression of sweet attraction by bitter signals may reflect the evolutionary importance of robust bitter taste avoidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the evolutionary significance of the circuit mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "feabd2e5-86bc-419e-8028-bc968c920ddc",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C87",
+      "claim": "Central modulation provides a strategy to bypass the limits of sensory modulation, allowing a broader range and different temporal dynamics of modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As sensory modulation may suffer from finite amplification and incomplete suppression, central modulation provides a strategy to bypass those limits, allowing a broader range and different temporal dynamics of modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of central versus sensory modulation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "8e0038bd-df93-426b-9fb3-835cc81e2e1a",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C88",
+      "claim": "Seventeen candidate sugar GRNs in the right hemisphere were previously identified in the EM connectome by clustering GRNs using morphology and connectivity data and comparing the resulting clusters with immunostained GRNs responding to different taste categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventeen candidate sugar GRNs in the right hemisphere were previously identified in the EM connectome by clustering GRNs using morphology and connectivity data and comparing the resulting clusters with immunostained GRNs responding to different taste categories (Engert et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature describing the methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "8ef2ab28-bf3c-4d5b-bf98-278f21eda31c",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C89",
+      "claim": "The 15 second-order neurons manually reconstructed receive 21% of sugar GRN synaptic outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The 15 second-order neurons we manually reconstructed receive 21% of sugar GRN synaptic outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of EM reconstruction data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "eb3a401c-c828-4eb0-a23d-8e99ea3521a7",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C90",
+      "claim": "The distribution of second-order neurons has a very long tail, likely due in part to small neural fragments that are challenging to reconstruct.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the distribution of second-order neurons has a very long tail, likely due in part to small neural fragments that are challenging to reconstruct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the EM reconstruction data and its limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "6be36617-b7e9-424c-bff9-dfe79613e0d0",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C91",
+      "claim": "Each of the second-order neurons is a local SEZ interneuron with arbors that overlap extensively with sugar GRN termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the second-order neurons is a local SEZ interneuron with arbors that overlap extensively with sugar GRN termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on anatomical analysis of EM reconstruction data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "d8731f68-f476-4c8f-8592-ec60d1a7e611",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C92",
+      "claim": "The third-order neurons represent a small subset based on comparisons to Flywire automated reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "The third-order neurons represent a small subset based on comparisons to Flywire automated reconstructions (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of manual reconstructions with automated EM reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "0176e13c-a943-4e75-8bfa-23e5a15975bd",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C93",
+      "claim": "We identified 14 of the 15 neurons with the most synapses from sugar GRNs based on comparison with the Flywire dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "This comparison revealed that we identified 14 of the 15 neurons with the most synapses from sugar GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of manual reconstructions with automated EM reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "0dd6a3ee-72b5-43fc-b5e1-d8886ab20080",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C94",
+      "claim": "These second-order neurons represent 12 unique cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "These second-order neurons represent 12 unique cell types (Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of EM reconstruction data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "412117c5-424a-4551-9b20-1fee3aaa4d25",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "claim_id": "C95",
+      "claim": "G2N-1 was identified as a candidate second-order gustatory neuron based on anatomical proximity to sugar-sensing GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "These second-order neurons have not previously been characterized, except for G2N-1, which was identified as a candidate second-order gustatory neuron based on anatomical proximity to sugar-sensing GRNs (Miyazaki et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors reconstructed a feeding initiation circuit from gustatory sensory neurons to motor neurons using electron microscopy, identifying 15 second-order neurons that receive 21% of sugar GRN outputs, third-order neurons, and premotor neurons that connect to MN9 through three to four synaptic relays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19, C29, C32, C33, C67, C89, C91, C93, and C94 collectively describe the EM reconstruction methodology and resulting circuit architecture. The quantitative synaptic connectivity data (C32, C89), validation against automated reconstructions (C93), and anatomical descriptions (C91) provide strong converging evidence for the circuit structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "f6bc317f-4585-4885-81a8-b647c815ca82",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic activation of seven of nine second-order neurons, all third-order neurons, and premotor neurons elicits proboscis extension. Inhibition of individual second-order neurons reduces proboscis extension to 50 mM sucrose, but inhibition of third-order or premotor neurons does not, demonstrating multiple parallel pathways and partial redundancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C23, C35, C36, C68, C69, and C70 present consistent optogenetic activation and inhibition data across multiple neuron types. The differential effects of inhibition at different circuit layers (C69, C70) support the interpretation of multiple parallel pathways (C71, C25). The experimental design with appropriate controls and statistical analysis supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "40e71e43-df98-488a-9c26-0d49a6b3535c",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Eight of ten neural classes in the feeding initiation pathway respond selectively to sugar taste in food-deprived animals, while two second-order neurons (Usnea and Phantom) respond to water. The connectivity pattern shows second-order neurons receive inputs from sugar, water, and high-salt GRNs but not bitter or low-salt GRNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C38, C48, and C49 describe calcium imaging responses and EM connectivity data that are mutually consistent. The selective sugar responses in most neurons (C37) and the anatomical connectivity excluding bitter GRN inputs (C48) provide converging evidence. However, C50 notes some inconsistencies between predicted connectivity and functional responses, suggesting complexity that requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "da1fc4f8-d33a-4e87-805d-1b3f4d830e5d",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hunger modulation acts at two specific sites in the feeding initiation circuit: sugar-sensing GRNs show increased sensitivity in food-deprived flies, and two second-order neurons (G2N-1 and Clavicle) show amplified responses in food-deprived versus fed flies, while downstream neurons (MN9 and others) show no hunger-dependent differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C54, C55, C56, C57, and C81 present a systematic optogenetic dissection of hunger modulation across circuit layers. The differential responses at sensory and second-order levels (C54, C56) versus motor neuron level (C55) provide strong evidence for specific sites of hunger action. The use of multiple light intensities (C54) strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A bitter taste pathway inhibits feeding initiation through a second-order bitter neuron (Scapula) that synapses directly onto premotor neurons (Roundup and Rounddown). Co-activation of sugar and bitter GRNs suppresses Roundup responses while leaving upstream G2N-1 responses unchanged, demonstrating central integration of taste modalities at the premotor level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C60, C63, C64, C65, and C66 provide converging anatomical (EM connectivity) and functional (calcium imaging with optogenetic co-activation) evidence for bitter-sweet integration at premotor neurons. The differential responses of Roundup versus G2N-1 to co-activation (C64, C65) specifically demonstrate central rather than peripheral integration. The predicted glutamatergic identity of Scapula (C61) is consistent with inhibitory function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "ddbc976d-7c6d-46e9-a395-4126c0b7961a",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The second-order neuron Clavicle shows state-dependent taste responses, responding to both water and sugar in thirsty-like flies but only to sugar in hungry flies, potentially tuning pathway responsiveness to nutritive state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C47 describe calcium imaging data showing differential responses in different physiological states. While C47 is speculative about functional significance, the experimental observation in C46 is well-supported by the imaging data. However, the authors note caveats about the thirsty-like state manipulation that may affect interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "5045b53b-9e3a-43a3-b75b-a11f0cef4ee9",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The multiple parallel pathways from second-order neurons to premotor neurons may ensure robust feeding and enhance behavioral flexibility through sensory tuning and multisensory integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C26, C72, and C73 are speculative interpretations of the circuit architecture. While the existence of multiple pathways is well-supported by the data, the functional significance regarding robustness and flexibility is inferred rather than directly tested. These hypotheses would require additional experiments manipulating multiple pathways simultaneously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "09b08dcb-60aa-4048-835b-5c637afcbcd5",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Fdg, previously identified as a feeding command neuron, is a third-order neuron in the feeding initiation pathway that connects to Bract descending neurons, which synapse with proboscis premotor neurons and ventral cord circuits, potentially coordinating multiple feeding subprograms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C76, C77, and C78 integrate prior literature (C30, C76) with new EM connectivity data (C77, C78). The anatomical placement of Fdg as a third-order neuron is well-supported. However, C79 is speculative about functional coordination. The observation that Fdg did not respond to proboscis taste stimulation (C41) adds complexity to its role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "6e69dd86-af37-4c85-8345-9aecce207826",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neurons in the feeding initiation circuit are predicted to be cholinergic except for Usnea and Phantom which are predicted to be GABAergic, based on machine learning classifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C34 relies on computational predictions from machine learning rather than experimental validation. While the predictions are based on established methods (Eckstein et al., 2020), the lack of functional validation of neurotransmitter identity limits confidence. This would require experimental confirmation through immunohistochemistry or functional assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "92fa30ba-af7a-4d7c-92a8-1039d47a502c",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Functional responses to sugar and water were not fully consistent with predicted connectivity for each neuron, potentially due to state-dependence, network interactions, or errors in GRN modality categorization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C51 acknowledge limitations and inconsistencies in the data. The observation of mismatches between anatomical connectivity and functional responses (C50) is honest reporting. The proposed explanations (C51) are reasonable given that GRN classifications were based on anatomy and connectivity alone. This highlights areas requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "1bf04e49-e1fc-41cc-90ff-2df119c6162b",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Usnea and Phantom are reciprocally connected with GRNs and may tune GRN responses in the presence of water.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C39 presents anatomical connectivity data that is well-supported. However, C40 is speculative about the functional role of this reciprocal connectivity. The hypothesis about tuning GRN responses would require additional experiments such as manipulating these neurons while recording from GRNs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "9fa7ab59-d303-46b5-a3b7-096521c78aaa",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Fdg did not respond to proboscis taste stimulation but responded to optogenetic activation of sugar GRNs, suggesting it may respond to pharyngeal or leg taste detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 presents clear calcium imaging data showing differential responses to proboscis stimulation versus optogenetic GRN activation. The interpretation in C42 about pharyngeal or leg taste is speculative but reasonable given the connectivity and response patterns. This would require testing with stimulation of other body regions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "5ea98e4c-b856-4e6b-8bf2-ea2a01c4d295",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Increasing hemolymph osmolality to mimic a thirsty state enhanced water responses in water-sensing GRNs, but most central neurons showed similar response profiles in food-deprived and thirsty-like flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C45 present calcium imaging data comparing different physiological states. The experimental manipulation is well-described and the results are clear. However, the authors note in the methods that hemolymph signals may be perturbed in the imaging preparation, which is an important caveat for interpreting the thirsty-like state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes prior knowledge about taste detection, feeding regulation, and the anatomical organization of the Drosophila gustatory system, identifying a knowledge gap regarding central feeding initiation circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C18 summarize established knowledge from prior literature with appropriate citations. These claims provide context and motivation for the study. C14 specifically identifies the knowledge gap that the current work addresses. The citations appear appropriate and the summary of prior work is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "646ba131-7d37-4c52-bbbb-88406f9e5128",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior studies have shown that hunger modulates sensory neuron activity, with dopamine enhancing sugar GRN sensitivity in hungry animals, and that peripheral chemosensory modulation is a conserved strategy across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C53, and C80 summarize prior literature with appropriate citations. These claims provide important context for the current study's investigation of central hunger modulation. The citations to work in C. elegans, Drosophila, and mammals support the claim of evolutionary conservation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "bd62bf4f-4b92-4eec-8332-297a0a6fe0c6",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Previous studies demonstrated that bitter compounds inhibit sugar-sensing GRNs and that sweet-bitter interactions occur at sensory neurons and through cortical feedback in mammals, but central mechanisms in Drosophila were unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58 and C82 accurately summarize prior literature with appropriate citations. These claims establish the context for the current study's discovery of central bitter-sweet integration. The identification of the knowledge gap motivates the investigation of central mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "2de8eb7b-f4fa-4dc2-9fab-994ac1c33b5d",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work identified G2N-1 as a candidate second-order neuron based on anatomy alone, and EM circuit tracing in larvae revealed both direct and indirect sensorimotor pathways for feeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C75, and C95 accurately cite and describe prior work. These claims provide context for how the current study builds on and extends previous findings. The citations are appropriate and the descriptions are accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "3150c29a-430b-445b-8946-4a083a113f7e",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The existence of multiple circuit mechanisms for bitter-sweet integration may reflect evolutionary importance of bitter avoidance, and central modulation may provide advantages over sensory modulation in terms of dynamic range and temporal dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85, C86, and C87 are speculative interpretations about evolutionary significance and functional advantages. While C85 cites recent mammalian work suggesting conservation, the evolutionary and functional interpretations are not directly tested. These hypotheses would require comparative studies and additional functional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "7d794043-71af-43ea-b32a-d60651b33337",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The EM reconstruction methodology involved identifying candidate sugar GRNs through clustering and comparison with immunostained GRNs, with acknowledgment of limitations including challenging reconstruction of small neural fragments and incomplete coverage of third-order neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88, C90, and C92 describe the methodology and acknowledge limitations. The reliance on prior GRN categorization (C88) is appropriately cited. The acknowledgment of reconstruction challenges (C90) and incomplete third-order neuron coverage (C92) demonstrates appropriate scientific caution about the completeness of the circuit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "c626f77a-cb50-4e57-b936-ebff910959fe",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Second-order neurons do not receive inputs from all candidate sugar GRNs, but the functional impact is unclear because sugar GRNs make extensive axonal-axonal connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C21 present EM connectivity data and cite prior work on GRN-GRN connectivity. The observation is clear but the functional interpretation appropriately acknowledges uncertainty. This highlights the complexity of the circuit and the need for functional studies to understand the impact of connectivity patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "47baac43-177e-47a1-8689-5e99260147d3",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Multiple proboscis motor neurons control different segments of proboscis extension, with MN9 being necessary and sufficient for rostrum extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C28 accurately cite prior literature characterizing proboscis motor neurons. These claims provide important context for focusing on MN9 as a readout of feeding initiation behavior. The citations are appropriate and the descriptions are accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "00ba806c-8d40-4622-b0a2-f73f942b8d41",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Glutamate is often an inhibitory neurotransmitter in Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 cites prior literature (Liu and Wilson, 2013) to support the interpretation that Scapula's predicted glutamatergic identity is consistent with inhibitory function. This is appropriate use of prior knowledge to interpret the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "eef85717-b621-4387-8060-1c8f12e83650",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "High hemolymph osmolality is a key signal of thirst that acts on central neurons to promote water consumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 accurately cites prior literature (Jourjine et al., 2016) to provide context for the experimental manipulation of osmolality to create a thirsty-like state. This is appropriate use of prior knowledge to design experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    },
+    {
+      "id": "6b763b4c-4c6a-4039-b02e-3b05fc53684d",
+      "content_id": "7f8aa813-a0fa-4fb8-922d-76668aff3425",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "By blocking activity at specific muscles, bitter detection may specifically change behavior to direct the proboscis away from hazardous food sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is a speculative interpretation about the behavioral consequences of muscle-specific inhibition. While the anatomical specificity of the circuit is well-established, the specific behavioral outcomes would require detailed behavioral analysis with high-speed imaging to test this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:08:21.875600Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a4533637-d35c-4ab0-86eb-cfd7582fa8bf",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "255b4c41-6130-4429-bf2f-d45879f44f42",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "c7d447dc-ac5f-4665-a357-51e68d52965a",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "443929e4-626a-4911-a520-2c08bfccf756",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "10f4c9d8-dda2-4e25-b810-edd2f59ae0b9",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "c669f5e9-7c98-4698-9555-8ed09a89e572",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "8ef2ab28-bf3c-4d5b-bf98-278f21eda31c",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "6be36617-b7e9-424c-bff9-dfe79613e0d0",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "0176e13c-a943-4e75-8bfa-23e5a15975bd",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "0dd6a3ee-72b5-43fc-b5e1-d8886ab20080",
+      "result_id": "caa4cdd0-6195-41ac-bfd5-a4a5ab3e38e5"
+    },
+    {
+      "claim_id": "e2cedf32-f77b-424a-9a73-3b3353b1b80a",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "83cfb1e4-946c-4087-8b45-ac0fea93de51",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "17b94159-3c90-42cb-a0fd-4216aeed76a1",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "e83479b9-b59d-48c8-a1a2-1960c3dc3bca",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "866c5192-d5d5-4a30-a21e-7ed52c0afb7b",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "ba0c3e20-dd52-4066-8111-da9c12ba509b",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "e44808ea-fd16-4759-9620-a3f411b22d80",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "fdcf590d-1d59-4375-b1b6-f6253fa0a8a5",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "56213b99-81ae-4c05-84b8-9c8472d146fa",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "1abc7aed-c323-4609-89ea-05e9c88ab3d5",
+      "result_id": "f6bc317f-4585-4885-81a8-b647c815ca82"
+    },
+    {
+      "claim_id": "2447711a-01a5-447f-b5a6-a132c2b343e8",
+      "result_id": "40e71e43-df98-488a-9c26-0d49a6b3535c"
+    },
+    {
+      "claim_id": "b5e1b0cc-48ec-47a7-a33c-da3812b37ab2",
+      "result_id": "40e71e43-df98-488a-9c26-0d49a6b3535c"
+    },
+    {
+      "claim_id": "b7761aaa-f6f1-42d3-a3e7-37d0bca99469",
+      "result_id": "40e71e43-df98-488a-9c26-0d49a6b3535c"
+    },
+    {
+      "claim_id": "8e5d310b-1347-4554-be64-74cb692e6f61",
+      "result_id": "40e71e43-df98-488a-9c26-0d49a6b3535c"
+    },
+    {
+      "claim_id": "265a35a0-1304-4f8f-935c-db4133f7f8a3",
+      "result_id": "da1fc4f8-d33a-4e87-805d-1b3f4d830e5d"
+    },
+    {
+      "claim_id": "5b8a2a9e-4a1e-4079-84d5-51da39e8d661",
+      "result_id": "da1fc4f8-d33a-4e87-805d-1b3f4d830e5d"
+    },
+    {
+      "claim_id": "f90f3973-0be6-4db4-84ad-10d04aa21821",
+      "result_id": "da1fc4f8-d33a-4e87-805d-1b3f4d830e5d"
+    },
+    {
+      "claim_id": "9ffff7b3-b178-47fb-ae20-ee5758df5f5c",
+      "result_id": "da1fc4f8-d33a-4e87-805d-1b3f4d830e5d"
+    },
+    {
+      "claim_id": "078c8db8-3a29-4287-9e85-852310557d3e",
+      "result_id": "da1fc4f8-d33a-4e87-805d-1b3f4d830e5d"
+    },
+    {
+      "claim_id": "a9e8c5cd-d53e-4af5-a28a-758a1ac16ba1",
+      "result_id": "da1fc4f8-d33a-4e87-805d-1b3f4d830e5d"
+    },
+    {
+      "claim_id": "d25ac1c9-9ddd-4b0a-ae3c-2d0927bbfb48",
+      "result_id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e"
+    },
+    {
+      "claim_id": "0107338f-7046-4919-9942-1a2bd11d82db",
+      "result_id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e"
+    },
+    {
+      "claim_id": "6f9f2789-01e8-4dea-ad1f-3e8aeab41759",
+      "result_id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e"
+    },
+    {
+      "claim_id": "c308111c-82ab-412b-824c-ee2f1b39a5a4",
+      "result_id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e"
+    },
+    {
+      "claim_id": "c0b2e112-768f-4b9c-88f6-c66d04cec583",
+      "result_id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e"
+    },
+    {
+      "claim_id": "dfc733ad-568a-4d32-9298-264535ae7b66",
+      "result_id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e"
+    },
+    {
+      "claim_id": "8da795b4-5c69-4eb2-a339-efd7ccae2f88",
+      "result_id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e"
+    },
+    {
+      "claim_id": "81726ed6-4f49-4107-8eb1-1357727db5ba",
+      "result_id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e"
+    },
+    {
+      "claim_id": "6f64a3fa-1e16-47ba-b0bd-78603c478d0b",
+      "result_id": "efe6d1c5-4fce-4821-a2a9-b93c9d242a7e"
+    },
+    {
+      "claim_id": "53ef2446-8bb5-4768-ad8f-b5e19b268cda",
+      "result_id": "ddbc976d-7c6d-46e9-a395-4126c0b7961a"
+    },
+    {
+      "claim_id": "aa8242cd-d74d-4476-a932-09b394452411",
+      "result_id": "ddbc976d-7c6d-46e9-a395-4126c0b7961a"
+    },
+    {
+      "claim_id": "6629a88c-271a-4b7f-8774-d74fa3bfce46",
+      "result_id": "5045b53b-9e3a-43a3-b75b-a11f0cef4ee9"
+    },
+    {
+      "claim_id": "a0c838a5-ef16-4f58-ae3f-e03954cc774d",
+      "result_id": "5045b53b-9e3a-43a3-b75b-a11f0cef4ee9"
+    },
+    {
+      "claim_id": "f3486f5c-369f-4940-a478-577781c9d451",
+      "result_id": "5045b53b-9e3a-43a3-b75b-a11f0cef4ee9"
+    },
+    {
+      "claim_id": "efc1bf99-5541-4be9-8ae4-1c3e23944298",
+      "result_id": "09b08dcb-60aa-4048-835b-5c637afcbcd5"
+    },
+    {
+      "claim_id": "e1f5788a-fd19-4f54-ab65-f89867976a86",
+      "result_id": "09b08dcb-60aa-4048-835b-5c637afcbcd5"
+    },
+    {
+      "claim_id": "51d48403-6f78-48f1-a4b8-65e5ce2b63e8",
+      "result_id": "09b08dcb-60aa-4048-835b-5c637afcbcd5"
+    },
+    {
+      "claim_id": "47d575dd-4a8a-419b-9a8a-2e2825aa7e86",
+      "result_id": "09b08dcb-60aa-4048-835b-5c637afcbcd5"
+    },
+    {
+      "claim_id": "71ac1b6d-7904-4347-a471-d57737e544c0",
+      "result_id": "09b08dcb-60aa-4048-835b-5c637afcbcd5"
+    },
+    {
+      "claim_id": "84b69c51-5e46-49d6-a645-6ca9ed985522",
+      "result_id": "09b08dcb-60aa-4048-835b-5c637afcbcd5"
+    },
+    {
+      "claim_id": "2271f6a5-f1c8-497d-a818-bdc9c219ac53",
+      "result_id": "6e69dd86-af37-4c85-8345-9aecce207826"
+    },
+    {
+      "claim_id": "f47579d4-2d7e-4205-a42a-ee883fdd9e39",
+      "result_id": "92fa30ba-af7a-4d7c-92a8-1039d47a502c"
+    },
+    {
+      "claim_id": "fbcf8675-1183-4033-a20d-605a5de07f86",
+      "result_id": "92fa30ba-af7a-4d7c-92a8-1039d47a502c"
+    },
+    {
+      "claim_id": "7dc7266f-743e-415c-a989-5d47d7a7c0e1",
+      "result_id": "1bf04e49-e1fc-41cc-90ff-2df119c6162b"
+    },
+    {
+      "claim_id": "74ae2fcf-74ac-4edd-a412-dfa178ad0b9d",
+      "result_id": "1bf04e49-e1fc-41cc-90ff-2df119c6162b"
+    },
+    {
+      "claim_id": "ff46f4bc-bd62-40ce-beda-aeae475c47d6",
+      "result_id": "9fa7ab59-d303-46b5-a3b7-096521c78aaa"
+    },
+    {
+      "claim_id": "cf95bbd3-e62c-4af8-aaa5-5d0f23937d37",
+      "result_id": "9fa7ab59-d303-46b5-a3b7-096521c78aaa"
+    },
+    {
+      "claim_id": "3e1964b0-3a7b-4557-8a92-88328e28e821",
+      "result_id": "5ea98e4c-b856-4e6b-8bf2-ea2a01c4d295"
+    },
+    {
+      "claim_id": "0d0106be-fe54-49b2-8cbb-7aae070734dc",
+      "result_id": "5ea98e4c-b856-4e6b-8bf2-ea2a01c4d295"
+    },
+    {
+      "claim_id": "7822961d-79c7-49f1-8954-1dda74e1a3e3",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "7d68feda-6fc4-4bd1-bd6d-398b30847c28",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "117049db-e8fe-4523-b856-1a855b2ebefd",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "e752f354-ee51-48b5-b73b-0e733162031b",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "6bc87251-6fcc-4bd1-880f-a0e3b985ac3c",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "244cea98-c738-4626-a9f4-9b0bc7906fcd",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "6f571c90-a41c-494f-aaa1-705187779365",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "754a34a1-f237-496c-8605-7dd93a338df2",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "0ae73877-008e-4634-a902-871dc929b608",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "97c79ac6-c74f-43da-832a-9aa59c16cab1",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "366c9a52-19af-4694-b053-a525c025ee2e",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "4b25e668-9ac4-4930-9a9c-a6553808a0d5",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "46bf793b-5726-4fbc-892e-6cd0af558e5b",
+      "result_id": "395b928a-a0c6-46fe-b6a9-c1c984c7810b"
+    },
+    {
+      "claim_id": "4b900c59-751d-42a2-9fa9-8966dedfed9a",
+      "result_id": "646ba131-7d37-4c52-bbbb-88406f9e5128"
+    },
+    {
+      "claim_id": "f131bfbb-9c84-4a26-846a-2c7258143321",
+      "result_id": "646ba131-7d37-4c52-bbbb-88406f9e5128"
+    },
+    {
+      "claim_id": "06586a73-9103-488f-a28a-2cef009c9434",
+      "result_id": "646ba131-7d37-4c52-bbbb-88406f9e5128"
+    },
+    {
+      "claim_id": "f9af9fea-8729-477d-a662-faf04ca02697",
+      "result_id": "bd62bf4f-4b92-4eec-8332-297a0a6fe0c6"
+    },
+    {
+      "claim_id": "6f9d9fa7-a3f9-416c-944e-64338747de10",
+      "result_id": "bd62bf4f-4b92-4eec-8332-297a0a6fe0c6"
+    },
+    {
+      "claim_id": "1efb3d51-645e-4902-b192-77afa3c5f4d8",
+      "result_id": "2de8eb7b-f4fa-4dc2-9fab-994ac1c33b5d"
+    },
+    {
+      "claim_id": "50883ed9-1c8c-4a0b-b8ff-5b377e40ef9a",
+      "result_id": "2de8eb7b-f4fa-4dc2-9fab-994ac1c33b5d"
+    },
+    {
+      "claim_id": "412117c5-424a-4551-9b20-1fee3aaa4d25",
+      "result_id": "2de8eb7b-f4fa-4dc2-9fab-994ac1c33b5d"
+    },
+    {
+      "claim_id": "64ff28ac-6b62-4a31-b0e8-34766de670eb",
+      "result_id": "3150c29a-430b-445b-8946-4a083a113f7e"
+    },
+    {
+      "claim_id": "52c2d9a1-0a5a-4b52-ba4c-d1f18ba97ad4",
+      "result_id": "3150c29a-430b-445b-8946-4a083a113f7e"
+    },
+    {
+      "claim_id": "feabd2e5-86bc-419e-8028-bc968c920ddc",
+      "result_id": "3150c29a-430b-445b-8946-4a083a113f7e"
+    },
+    {
+      "claim_id": "8e0038bd-df93-426b-9fb3-835cc81e2e1a",
+      "result_id": "7d794043-71af-43ea-b32a-d60651b33337"
+    },
+    {
+      "claim_id": "eb3a401c-c828-4eb0-a23d-8e99ea3521a7",
+      "result_id": "7d794043-71af-43ea-b32a-d60651b33337"
+    },
+    {
+      "claim_id": "d8731f68-f476-4c8f-8592-ec60d1a7e611",
+      "result_id": "7d794043-71af-43ea-b32a-d60651b33337"
+    },
+    {
+      "claim_id": "c95e1d5d-e57f-4669-8ea5-330c94d41f8b",
+      "result_id": "c626f77a-cb50-4e57-b936-ebff910959fe"
+    },
+    {
+      "claim_id": "d28494b8-8877-4caa-a690-8964799b3de0",
+      "result_id": "c626f77a-cb50-4e57-b936-ebff910959fe"
+    },
+    {
+      "claim_id": "45302236-ef71-4c19-a6d3-04c02656ea49",
+      "result_id": "47baac43-177e-47a1-8689-5e99260147d3"
+    },
+    {
+      "claim_id": "9d3c71d6-3752-40f9-b045-bbe0ba99aebb",
+      "result_id": "47baac43-177e-47a1-8689-5e99260147d3"
+    },
+    {
+      "claim_id": "0a59e76d-919d-48d0-a885-d42bfc7ce392",
+      "result_id": "00ba806c-8d40-4622-b0a2-f73f942b8d41"
+    },
+    {
+      "claim_id": "c95d0d1e-5db7-4cd7-aa21-9ab9f9dbe751",
+      "result_id": "eef85717-b621-4387-8060-1c8f12e83650"
+    },
+    {
+      "claim_id": "406c4691-be91-4e04-98eb-302fed8059c1",
+      "result_id": "6b763b4c-4c6a-4039-b02e-3b05fc53684d"
+    }
+  ],
+  "comparisons": []
+}

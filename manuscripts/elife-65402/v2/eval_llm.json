@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83"
+    ],
+    "result": "An optimal control model of bipedal walking predicts a triphasic speed adjustment pattern for negotiating step height changes. The model uses inverted pendulum dynamics with push-off work as the sole energy cost and predicts anticipatory speed adjustments that minimize mechanical work while conserving overall walking time. The model predicts scalable responses with amplitude proportional to step height and opposite patterns for Up- vs Down-steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C20-C23, and C77-C83 collectively describe a mechanistically grounded model with clear assumptions (inverted pendulum dynamics, push-off work as cost) that generates testable predictions. The model is based on established principles (C79-C80 cite prior work) and produces specific, falsifiable predictions about triphasic patterns, anticipation, and scaling relationships that can be compared to experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C46",
+      "C48",
+      "C71",
+      "C73"
+    ],
+    "result": "Human subjects exhibit a triphasic speed adjustment pattern when walking over a 7.5 cm step, characterized by anticipatory speed-up before the step, momentum loss during the step, and speed recovery afterward. This pattern approximately conserves overall walking speed and time relative to level ground walking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C5-C7, C46, C48, C71, and C73 describe consistent experimental observations of triphasic speed patterns with anticipatory components. The claims are supported by direct measurements from IMU data (C92-C94) showing systematic speed fluctuations across multiple subjects and trials. The anticipatory nature is evidenced by speed changes occurring before physical encounter with the step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C47",
+      "C50"
+    ],
+    "result": "Human speed adjustment patterns show high inter-subject consistency and self-similarity. Up-step responses correlate strongly across subjects (\u03c1=0.82, p=1.26e-10), as do Down-step responses (\u03c1=0.68, p=3.0e-06). Up- and Down-step patterns are negatively correlated with each other, and neither correlates well with Control walking, indicating systematic, condition-specific responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C47, and C50 present statistical evidence for consistency and self-similarity with appropriate correlation analyses and significant p-values. The high positive correlations for within-condition comparisons and negative correlations between Up- and Down-steps support the claim of systematic, scalable patterns. Sample size (n=12) and statistical tests (paired t-tests) are appropriate for the analyses performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C49",
+      "C69",
+      "C72"
+    ],
+    "result": "Human compensation strategies agree moderately well with optimal control model predictions. Human-model correlations are positive and significant for both Up-steps (\u03c1=0.50\u00b10.21, p=4.4e-6) and Down-steps (\u03c1=0.59\u00b10.17, p=1.08e-7), with negative correlations between human Up-steps and model Down-steps as predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C49, C69, and C72 demonstrate statistically significant agreement between model predictions and human behavior with appropriate correlation analyses. While the correlations are moderate (\u03c1\u22480.5-0.6), they are highly significant and show the predicted pattern of positive within-condition and negative cross-condition correlations. The authors acknowledge model limitations (C69) and qualitative differences, providing balanced interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C38"
+    ],
+    "result": "Speed fluctuation amplitudes scale linearly with step height. The linear coefficient between step height and fluctuation amplitude is 0.849\u00b10.047 (p=9.7e-175), indicating that Down-step responses are approximately opposite to Up-step responses in amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C38 present strong statistical evidence for linear scaling with step height. The extremely small p-value (9.7e-175) and coefficient near unity (0.849) with tight confidence intervals support the linear relationship. This validates the model's prediction of scalable, opposite responses for Up- vs Down-steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C39",
+      "C40"
+    ],
+    "result": "Speed fluctuation amplitudes decrease slightly with faster average walking speeds. The relationship shows a weak but significant negative linear coefficient (-0.785\u00b10.618, p=0.013), equivalent to an 11.1% reduction in fluctuation amplitude for a 10% increase in walking speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C40 report a statistically significant relationship (p=0.013), but the effect is weak and the confidence interval is large relative to the coefficient (-0.785\u00b10.618). The authors acknowledge not explicitly controlling for walking speed, resulting in limited range of speed variations. While the direction matches model predictions, the weak effect and large uncertainty limit confidence in this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C45",
+      "C53",
+      "C55"
+    ],
+    "result": "Subjects maintained consistent overall walking duration across conditions despite step perturbations. No significant differences in overall speed, step length, or duration were found across experimental conditions (p=0.65, 0.78, 0.96), and subjects did not lose or gain significant time from Up- or Down-steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C45 present appropriate statistical tests (repeated measures ANOVA) showing no significant differences in overall walking parameters across conditions. This supports the interpretation that the triphasic pattern effectively conserves walking time as instructed. The consistency (2-3% c.v.) indicates subjects complied with instructions despite receiving no feedback.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Baseline walking characteristics show that subjects walked at self-selected speeds averaging 1.38\u00b10.10 m/s with low variability (5% c.v. across trials). Control walking exhibited small, largely noise-like speed fluctuations (0.031\u00b10.007 m/s, 2.2% c.v.) with weak inter-subject correlation (\u03c1=0.47\u00b10.31, p=2.5e-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 provide baseline characterization with appropriate descriptive statistics. The measurements establish that control walking has much smaller fluctuations than perturbed conditions, and the weak but significant correlation in control suggests some shared structure even in unperturbed walking. These baseline measures are essential for interpreting the experimental perturbation responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Human control responses (level walking) were not correlated with model predictions for either Up- or Down-step conditions (p=0.32, p=0.31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 appropriately tests that control walking does not spuriously correlate with perturbation predictions, serving as a negative control. The non-significant correlations support the specificity of the model-human agreement for perturbation conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C56",
+      "C59"
+    ],
+    "result": "Model simulations predict that without compensation, substantial speed and time would be lost to step perturbations. The model would lose ~0.7s for an Up-step with constant push-offs, and purely reactive or entirely anticipatory strategies would require more mechanical work than the triphasic pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C56, and C59 describe model predictions for alternative strategies, supported by citations to prior modeling work (Darici et al., 2020). These predictions establish the functional significance of the observed triphasic pattern by quantifying costs of alternative strategies. The comparisons are based on the same model framework used for the main predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C63",
+      "C74",
+      "C75"
+    ],
+    "result": "The study concludes that humans can reason about walking dynamics to plan anticipatory and economical control, planning not just positions but also dynamical trajectories such as forward momentum. The CNS appears to anticipate disturbance effects and exploit body dynamics for active and economical control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C63, C74-C75 represent high-level interpretations supported by the convergence of multiple findings: anticipatory speed adjustments (C48), agreement with energy-minimizing model (C34-C36), time conservation (C41), and systematic scalability (C47). While these are interpretive claims about neural control mechanisms, they are reasonable inferences from the experimental evidence demonstrating anticipatory, economical compensation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C57",
+      "C58"
+    ],
+    "result": "Energy economy is an established determinant of steady-state locomotion, with greater energetic costs on uneven terrain. Push-off work accounts for a majority of the energetic cost of steady walking and explains much of the cost of transient accelerations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C19, C57-C58 summarize established prior knowledge supported by multiple citations to peer-reviewed research. These claims provide the scientific foundation for using energy minimization as an optimization criterion and push-off work as a cost proxy in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C62"
+    ],
+    "result": "Prior research establishes that both feedback and anticipatory control contribute to locomotion. Feedback is important for balance and foot placement during walking, while anticipatory control is used to plan body location, foot placement, and motion to negotiate obstacles, with vision playing a key role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 and C62 accurately summarize prior research with appropriate citations. These claims establish the context for distinguishing anticipatory from reactive control and for interpreting the observed anticipatory speed adjustments as part of broader locomotor planning capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The authors claim this is the first study to use a mechanistic model to predict behavioral, multistep trajectories performed by humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 asserts novelty but provides no systematic review or comparison with prior work to support this claim. While the approach may be novel, the qualification 'to our knowledge' indicates uncertainty, and without comprehensive literature review, this claim cannot be definitively evaluated. The claim is not central to the scientific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors acknowledge model limitations, including drastic simplification of locomotion costs, focus on small perturbations, and qualitative differences between model and human patterns. However, they argue the model has advantages including negligible parametric sensitivity and prediction of fundamental dynamics from first principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 provide balanced discussion of model limitations and strengths. The acknowledgment of simplifications (C66-C68) is appropriate and honest. The claim of negligible parametric sensitivity (C70) is supported by Figure 3d showing similar patterns across parameter variations. The moderate model-human correlation (\u03c1=0.50, C69) is acknowledged with discussion of qualitative differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C60"
+    ],
+    "result": "The authors speculate that the scalability of compensation patterns could make it unnecessary for the CNS to synthesize new compensations for each perturbation, and that the ability to reason about perturbations could be regarded as an inverse internal model of dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52 and C60 are explicitly speculative interpretations about neural mechanisms. While consistent with the observed scalability and the internal model framework (C60 cites Kawato 1999), these claims go beyond what the data directly demonstrate. The speculation is reasonable but would require additional neurophysiological or computational neuroscience evidence to support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "The experimental methods involved 12 subjects walking over a 7.5 cm step in three conditions (Up-step, Down-step, Control) with 4-10 trials each. Walking speed was measured using IMUs on both feet, with speed trajectories analyzed for an 8.5 m central segment. Subjects were instructed to walk 'in about the same time' but received no feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C97 describe the experimental design and methods with appropriate detail. The sample size (n=12) is justified by power analysis, the measurement approach using IMUs is validated by citation (Rebula et al., 2013), and the instructions balance ecological validity with experimental control. The methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Without compensation, an upward perturbation would cause sudden speed reduction and overall time loss compared to steady gait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is a straightforward prediction from physics and pendulum dynamics (conservation of energy during inverted pendulum motion). This is supported by both theoretical understanding (C77) and model simulations (C43-C44) showing quantitative predictions of speed and time loss.",
+    "result_type": "MINOR"
+  }
+]

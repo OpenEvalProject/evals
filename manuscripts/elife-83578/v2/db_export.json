@@ -1,0 +1,2097 @@
+{
+  "submission": {
+    "id": "7e4876a8-08a4-49ca-a5a9-224288247020",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:30:02.862390Z",
+    "updated_at": "2025-12-03T19:30:02.862390Z"
+  },
+  "content": [
+    {
+      "id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "submission_id": "7e4876a8-08a4-49ca-a5a9-224288247020",
+      "content_type": "manuscript",
+      "content_text": "# Single-cell analysis reveals dynamics of human B cell differentiation and identifies novel B and antibody-secreting cell intermediates\n\n## Authors\n\n- Niels JM Verstegen<sup>1</sup> ([ORCID: 0000-0001-5732-4979](https://orcid.org/0000-0001-5732-4979))\n- Sabrina Pollastro<sup>1</sup> ([ORCID: 0000-0002-0950-7583](https://orcid.org/0000-0002-0950-7583))\n- Peter-Paul A Unger<sup>1</sup>\n- Casper Marsman<sup>1</sup>\n- George Elias<sup>1</sup> ([ORCID: 0000-0001-8419-9544](https://orcid.org/0000-0001-8419-9544))\n- Tineke Jorritsma<sup>1</sup>\n- Marij Streutker<sup>1</sup>\n- Kevin Bassler<sup>3</sup> ([ORCID: 0000-0002-4780-372X](https://orcid.org/0000-0002-4780-372X))\n- Kristian Haendler<sup>3</sup>\n- Theo Rispens<sup>1</sup>\n- Joachim L Schultze<sup>3</sup>\n- Anja ten Brinke<sup>1</sup>\n- Marc Beyer<sup>3</sup>\n- S Marieke van Ham<sup>1</sup> ([ORCID: 0000-0003-1999-9494](https://orcid.org/0000-0003-1999-9494)) \u2020\n\n### Affiliations\n\n1. Department of Immunopathology, Sanquin Research and Landsteiner Laboratory, Amsterdam UMC, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))\n2. Synthetic Systems Biology and Nuclear Organization, Swammerdam Institute for Life Sciences, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))\n3. Genomics and Immunoregulation, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))\n4. Platform for Single Cell Genomics and Epigenomics, German Center for Neurodegenerative Diseases (DZNE), University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))\n5. Immunogenomics & Neurodegeneration, German Center for Neurodegenerative Diseases Bonn Germany ([ROR:043j0f473](https://ror.org/043j0f473))\n6. Swammerdam Institute for Life Sciences, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDifferentiation of B cells into antibody-secreting cells (ASCs) is a key process to generate protective humoral immunity. A detailed understanding of the cues controlling ASC differentiation is important to devise strategies to modulate antibody formation. Here, we dissected differentiation trajectories of human naive B cells into ASCs using single-cell RNA sequencing. By comparing transcriptomes of B cells at different stages of differentiation from an in vitro model with ex vivo B cells and ASCs, we uncovered a novel pre-ASC population present ex vivo in lymphoid tissues. For the first time, a germinal-center-like population is identified in vitro from human naive B cells and possibly progresses into a memory B cell population through an alternative route of differentiation, thus recapitulating in vivo human GC reactions. Our work allows further detailed characterization of human B cell differentiation into ASCs or memory B cells in both healthy and diseased conditions.\n\n## Introduction\n\nProtection from invading pathogens is, in part, provided by antibody-secreting cells (ASCs) that secrete high-affinity class-switched antibodies. Antibody formation, however, can also be highly undesired. This is the case for detrimental autoantibodies in autoimmune disorders, for alloantibodies that react with donor blood cells after a blood transfusion, or for antibodies that are formed against therapeutic biologics and that interfere with their therapeutic efficacy. Plasma cells secreting high-affinity antibodies are generated from naive B cells that, upon foreign antigen recognition by the antigen-specific B cell receptor (BCR), get activated and after CD4 T cell help can start a germinal center (GC) reaction. Here, B cells differentiate into GC B cells and begin to cycle between the GC dark zone (DZ) and the GC light zone (LZ). In the former, GC B cells undergo several rounds of cell cycle and receptor editing processes, such as somatic hypermutation and class-switching. In the latter, B cells need to reacquire antigen and present antigenic peptides to cognate antigen-specific CD4 T follicular helper (Tfh) cells to receive the required co-stimulatory, survival, and differentiation signals (Bryant et al., 2007; King and Mohrs, 2009; King et al., 2008; Reinhardt et al., 2009; Yusuf et al., 2010; Glatman Zaretsky et al., 2009). After several rounds of DZ to LZ cycling, this process results in the selection of high-affinity, class-switched B cells (reviewed in Victora and Nussenzweig, 2022). While early memory B cell and early plasmablast formation occur before GC establishment (Glaros et al., 2021), the GC reactions give rise to a later stage, higher affinity memory B cell formation followed by the eventual formation of high-affinity, ASCs (plasmablasts and plasma cells) (Weisel et al., 2016). Migration of plasma cells to the bone marrow and incorporation into bone marrow survival niches establishes long-lived plasma cells that may secrete antibodies for decades (Belnoue et al., 2008; Cassese et al., 2003; Radbruch et al., 2006).\n\nThe transition of B cell into ASC is tightly regulated on the molecular level by a complex network of transcription factors that control the switch from the B cell stage to the ASC stage (reviewed in Verstegen et al., 2021). The ASC-specific transcription factors IRF4, XBP1, and BLIMP1 are upregulated only once the B cell-specific transcription factors PAX5, IRF8, and BACH2 are downregulated. These transcriptional changes are then followed by surface expression of stage-specific cellular markers, such as CD27, CD38, and CD138 on ASCs, with simultaneous downregulation of the B cell markers CD19 and CD20 (Loken et al., 1987; Sanderson et al., 1989; Tangye et al., 1998; Terstappen et al., 1990; Victora et al., 2012).\n\nAlthough these transcription factors associated with plasma cell differentiation and plasma cell markers have been well-studied, the differentiation trajectories of naive B cells into short-lived and long-lived ASCs and the regulators that control transition at the different stages of human B cell differentiation remain largely unknown. Bulk RNA sequencing on sorted B cells ex vivo has identified differences between naive B cells, GC B cells, memory B cells, plasmablasts, and plasma cells (Halliley et al., 2015; Minnich et al., 2016; Tarte et al., 2003), but does not allow delineation of the actual differentiation process and the various stages through which B cells transition to becoming ASCs. The development of single-cell sequencing techniques circumvents this problem and allows for the discovery of new cellular subsets and cells that are transitioning from one cellular differentiation state to another. To date, single-cell sequencing has been used, among others, to identify B cell subsets in the immune landscape of tumor-infiltrating lymphocytes (Chung et al., 2017), delineate malignant B cells in follicular lymphomas (Andor et al., 2019), and identify transiting bone marrow progenitor cell populations that commit to the B cell lineage (Alberti-Servera et al., 2017; Miyai et al., 2018). In addition, software to reconstruct B cell receptor sequences from single-cell RNA sequencing data has been developed in recent years (Canzar et al., 2016; Lindeman et al., 2018; Rizzetto et al., 2018; Upadhyay et al., 2018). In-depth characterization of the differentiation process of mature naive B cells into ASCs has been investigated by focusing on parts of this differentiation process, for example, GC LZ to DZ migration (Dominguez-Sola et al., 2015; Milpied et al., 2018; Sander et al., 2015). Although this contributed to new insights into GC reactions, it remains unclear how differentiation into plasma cells occurs and is regulated. More insight into this differentiation process might uncover targets to regulate B cell differentiation into ASC at an early stage and to intervene in the generation of undesired antibodies in disease.\n\nWe previously established a minimalistic in vitro culture system that uniquely supports efficient in vitro differentiation of human naive B cells into CD27++CD38++ ASCs while also maintaining high cell numbers along the differentiation stages (Unger et al., 2021). Here, we applied in-depth single-cell transcriptomics, B cell receptor reconstruction and trajectory inference on the in vitro-generated ASCs and combined analyses with data from publicly available single-cell datasets of ex vivo obtained B cells and ASCs from different human tissues. Our data demonstrate that in vitro-generated ASCs are highly comparable to their ex vivo counterparts. The differentiation trajectories uncover a hitherto unknown pre-ASC cellular stage that is detected also ex vivo in lymphoid tissue with active ASC differentiation processes. For the first time, GC-like B cells are identified in vitro from human naive B cells and possibly progress through an alternative route of differentiation into memory B cells. In addition to known regulatory transcription factors and cell surface markers, potential novel transcriptional regulators and plasma membrane markers are identified that may control or, respectively, mark the process of human plasma cell differentiation.\n\n## Results\n\n### Single-cell transcriptomic analysis of in vitro differentiated antibody-secreting cells\n\nWe previously described a minimalistic in vitro system that effectively differentiates human naive B cells into ASCs while also maintaining high cell numbers at the various stages of B cell differentiation (Unger et al., 2021). Briefly, human naive B cells (CD19+CD27-IgG-IgD+) are sorted from healthy donor peripheral blood mononucleated cells (PBMCs) and cultured on a feeder layer of human CD40L-expressing mouse fibroblasts and restimulated after 6 days. Cytokines typically expressed by follicular T cells (Tfh) (IL-21, IL-4) are added to mimic Tfh help for B cell differentiation. Restimulation with CD40 costimulation and Tfh cytokines in vitro was demonstrated to be needed to drive efficient ASC differentiation, in line with in vivo GC reactions (Figure 1a). Triggering of the IgM BCR with soluble anti-IgM antibodies or IgM-coated beads did not contribute to enhanced ASC differentiation in the minimalistic cultures (Unger et al., 2021). To assess the transition of naive B cells (CD27-CD38-) into ASCs (CD27++CD38++), cells from the four CD27/CD38 quadrants were sorted on day 11 and the expression of master regulators of B cells to ASC differentiation was analyzed (Figure 1b; Verstegen et al., 2021). CD27-CD38- cells gradually lose expression of B cell signature genes PAX5 and BACH2 upon acquisition of CD27 and/or CD38 expression with CD27++CD38++ cells showing the most downregulated expression of PAX5 and BACH2 and upregulation of ASC signature genes IRF4, XBP1, and PRDM1 (Figure 1c\u2013g). In line with this, CRISPR-Cas9-mediated knockout of PRDM1 on day 3 strongly suppressed the formation of CD27+CD38+ cells on day 11 compared to control and CD19 knockout (Figure 1h).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig1-v2.jpg)\n\n**Figure 1.:** (a) Overview of the scRNA-seq experiment in short human naive B cells was isolated and cultured with a human CD40L-expressing mouse fibroblast (3T3) cell line and recombinant IL-4. Secondary cultures were initiated on day 6 using 9:1 wild type (WT) 3T3 to CD40L-expressing 3T3 cells and IL-4/IL-21 as this was necessary to induce substantial differentiation into the CD27++CD38++ ASC subset. On day 11, 384 cells were single-cell sorted based on the expression of CD27 and CD38 and sequenced using the Smart-seq2 method. (b) Overview of the cellular stages and important transcription factors involved in B cells differentiation from naive to antibody-secreting cell (GC, germinal center; ASC, antibody-secreting cell). (c\u2013g) Expression of PAX5 (c), BACH2 (d), IRF4 (e), XBP1 (f), and PRMD1 (g) mRNA in sorted populations was analyzed by qPCR and related to levels present in CD27-CD38- cells. Each data point represents the mean of an individual experiment (n = 3) with triplicate measurements. Mean values are represented as bars. (h) FACS analysis of surface CD19 levels (top left) and ASC differentiation (top right) in cultured primary human B cells expressing the indicated control or CD19-targeting RNP. FACS analysis of ASC differentiation (bottom left) and quantification (bottom right) in cultured primary human B cells expressing the indicated control or three different PRDM1-targeting RNPs. Representative of three independent experiments with triplicate measurements. (i) Uniform Manifold Approximation and Projection (UMAP) projection of single-cell transcriptomes of in vitro differentiated human naive B cells (276 high-quality cells). Each point represents one cell, and colors indicate graph-based cluster assignments. (j\u2013o) UMAP projection as in (i) colored by the transcriptional regulators IRF4 (j), XBP1 (k) and PRMD1 (l), PAX5 (m), BACH2 (n), SPIB (o), which are important in B cell differentiation (left graph of each panel), along with corresponding distribution of average expression levels (ln(TPM+1)) across the B cell clusters (1, 2, and 3) and the ASC clusters (4 and 5) (right graph of each panel).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Schematic overview of the analysis pipeline. (b) Violin plot depicting the number of genes in each of the four sorted populations based on CD27 and CD38 expression. (c) Scatter plot showing the percentage alignment and the proportion of mitochondrial genes per single cell. (d) Stacked bars denote the frequency of the four sorted populations based on CD27 and CD38 expression before and after quality control. (e) The number of principal components (PC; x-axis) with the variance in gene expression explained by each component. The top 10 PCs were selected for further analysis. (f) Distribution of the different cell-cycle phases (Gap 1(G1), Gap 2/mitosis (G2/M), and synthesis (S)) among the 276 high-quality single cells. (g\u2013h) Uniform Manifold Approximation and Projection (UMAP) projection of single-cell transcriptomes of in vitro differentiated human naive B cells without (g) and with (h) cell-cycle regression. Each point represents one cell, and colors indicate the cell-cycle phase. (i) Mean cell-cycle phase frequencies within each of the B cell subsets that were identified after cell-cycle regression. (j) UMAP projection of single-cell transcriptomes of in vitro differentiated human naive B cells without cell-cycle regression. Each point represents one cell, and colors indicate graph-based cluster assignments identified with cell-cycle regression.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Uniform Manifold Approximation and Projection (UMAP) projection (left) as in Figure 1i colored by the four sorted populations based on CD27 and CD38 expression. Barplot show the relative abundance of CD27-CD38- CD27+CD38-/+, CD27++CD38++, CD27-CD38+ cells among the five transcriptionally distinct clusters (right). (b) Dot plot showing combined CD27 and CD38 protein expression values of cells from each cluster (left). Barplot show the relative abundance of the five transcriptionally distinct clusters within the CD27-CD38- CD27+CD38-/+, CD27++CD38++, and CD27-CD38+ populations (right).\n\nSince the minimalistic in vitro system efficiently drives differentiation of primary human naive B cells into ASCs and follows the in vivo observed transitions of the master regulators of transcription, the dynamics of human naive B cell differentiation were investigated in detail by single-cell RNA sequencing. Cultured cells were single-cell sorted on day 11 based on the expression of CD27 and CD38 to obtain a faithful representation of cells at varying stages of B cell to ASC differentiation. Next, cells were processed for single-cell RNA sequencing using the SMARTseq2 method. After raw data processing and quality control, a total of 275 (out of 382 sorted cells) high-quality cells that together express 17,716 genes were included in the final dataset (Figure 1\u2014figure supplement 1a\u2013e). Cells were assigned to one of three phases of the cell cycle (G1, G2/M, S) as determined by scores calculated based on the expression of G2/M and S phase genes (Figure 1\u2014figure supplement 1f). As the cell cycle is an essential component of GC reactions, data were analyzed with and without regressing cell-cycle heterogeneity. When the cell cycle was not regressed out, cells were clustered based on cell-cycle scores, and most differentially expressed genes were related to the cell cycle (Figure 1\u2014figure supplement 1g). Cell-cycle heterogeneity was regressed out in the final dataset to primarily focus our analysis on factors influencing B cells differentiation apart from the cell cycle (Figure 1\u2014figure supplement 1h and i).\n\nUnsupervised hierarchical clustering and visualization with Uniform Manifold Approximation and Projection (UMAP) identified five clusters of differentiating cells (Figure 1i, Figure 1\u2014figure supplement 1j). Clusters 4 and 5 showed a clear ASC gene signature with a prominent expression of known ASC-specific genes IRF4, XBP1, and PRDM1 (Figure 1j\u2013l). Of note, 99% of CD27+CD38+ double-positive sorted cells were represented in clusters 4 and 5 (Figure 1\u2014figure supplement 2a and b). The other three clusters (clusters 1\u20133) still showed a pronounced B cell signature with higher expression of genes known to repress the ASCs state such as PAX5, BACH2, and SPIB (Figure 1m\u2013o). Thus, upon 11 days of culture with CD40 costimulation and IL-21/IL-4, human naive B cells differentiate into distinct B cells and ASC clusters based on overall gene signatures.\n\n### In vitro-generated ASCs are highly comparable with ex vivo obtained ASCs from different human tissues\n\nTo further characterize in vitro-generated ASCs, transcribed immunoglobulin genes were reconstructed from the single-cell transcriptomic data using BraCeR, and transcription levels and properties of immunoglobulins genes were compared between B cell and ASC clusters. A functional B cell receptor heavy chain rearrangement was successfully reconstructed for 255 out of 276 cells analyzed. Expression of the reconstructed B cell receptor (BCR) genes in clusters 4 and 5 was up to 10 times higher compared to clusters 1\u20133, demonstrating a very high transcriptional activity of immunoglobulin genes in the ASC clusters (Figure 2a). Isotype analysis of the reconstructed BCR heavy chains revealed a homogeneous distribution of isotypes in the different clusters (Figure 2b, Figure 2\u2014figure supplement 1a and b). When combining data for B cell and ASC clusters, the percentage of cells expressing immunoglobulin of the IgM isotype was lower in clusters 4 and 5 compared to clusters 1\u20133 (clusters 4 and 5: 36.6% vs. clusters 1\u20133: 50.3%; p-value<0.01), while the opposite was true for expression of immunoglobulins of the IgG1 isotype (cluster 4 and 5: 43.7% vs. cluster 1\u20133: 24.6%; p-value <0.001). In addition, 87% (226/255) of all the reconstructed BCR heavy genes were identical to the germline sequence, that is, not somatically hypermutated, independently of their cluster origin (Figure 2c). Thus, in vitro-generated ASCs express a high load of, mostly, IgG1 class-switched but no significant mutated immunoglobulin genes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig2-v2.jpg)\n\n**Figure 2.:** (a) Violin plot of the reconstructed B cell receptor immunoglobulins gene expression as determined by BraCeR within each B cell cluster. (b) Stacked bars denotes the frequency of isotype analysis of the reconstructed immunoglobulin heavy chain within each cluster. (c) Stacked bars showing the percentage of cells with a given B cell receptor mutation count within each B cell cluster. (d\u2013g) Volcano plot depicting significantly (adjusted p-value <0.05) down- and upregulated genes. (d) In vitro-generated antibody-secreting cells (clusters 4 and 5), ex vivo bone marrow-derived plasma cells (e), ex vivo peripheral blood-derived plasmablast (f), and ex vivo tonsil-derived plasmablast/plasma cells (g) were compared to each specific B cell counterparts. (h, i) UpSetR plot (h) and Venn diagram (i) depict the intersection among all upregulated genes identified in in vitro and ex vivo antibody-secreting cells.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Mean antibody subclass frequencies within each B cell subset. (b) Uniform Manifold Approximation and Projection (UMAP) projection as in Figure 1i colored by the reconstructed immunoglobulin heavy chain isotype.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Schematics of scRNA-seq on bone marrow-derived immunocytes derived from eight human donors. (b) Uniform Manifold Approximation and Projection (UMAP) plot of single-cell transcriptomes of bone marrow-derived B cells and antibody-secreting plasma cells. Each point is one cell, and colors indicate graph-based cluster assignments. (c, d) UMAP plot of single-cell transcriptomes of bone marrow-derived B cells and antibody-secreting plasma cells, colored by expression of indicated B cell (c) and plasma cell (d) marker genes.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Schematics of scRNA-seq on sort purified naive B cells, memory b cells, and plasmablast derived from healthy human peripheral blood. (b) Uniform Manifold Approximation and Projection (UMAP) plot of single-cell transcriptomes of peripheral human naive B cells and plasmablast. Each point is one cell, and colors indicate graph-based cluster assignments. (c) Heatmap of the 15 most differentially expressed genes significantly enriched in each cell cluster. (d-f) Violin plots of previously characterized naive B cell (d), memory b cell (e), and plasmablast (f) specific marker genes.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Schematics of scRNA-seq on sort purified memory b cells, GC B cells, and plasmablast/plasma cells derived from human tonsils. (b) Uniform Manifold Approximation and Projection (UMAP) plot of single-cell transcriptomes of tonsillar memory b cells, GC B cells, and plasmablast/plasma cells. Each point is one cell, and colors indicate graph-based cluster assignments. (c) UMAP plot as in b annotated by the cell-cycle phase. (d) Heatmap of the 20 most differentially expressed genes significantly enriched in each cell cluster. (e\u2013g) Violin plots of previously characterized memory B cell (e), GC b cell (f), and plasmablast/plasma cell (g) specific marker genes. UMAP projection (left), along with corresponding distribution of average expression levels (ln(TP10k+1)), across the different B cell subsets (right).\n\nTo assess how the transcriptional profile of the in vitro-generated ASCs was representative of the in vivo situation, the specific gene signature of the in vitro-generated ASCs was first identified by performing differential expression analysis in the ASC clusters 4 and 5 compared to the B cell clusters 1\u20133 (Figure 2d). A total of 3858 genes were differentially expressed in the ASC clusters, with 1406 overexpressed among which PRDM1 and XBP1 were top hits. Next, publicly available scRNA-seq datasets from bone marrow from the Human Cell Atlas Data Coordination Portal \u2018Census of Immune Cells\u2019 project (https://data.humancellatlas.org/explore/projects/cc95ff89-2e68-4a08-a234-480eca21ce79; Figure 2\u2014figure supplement 2), human peripheral blood (Rizzetto et al., 2018; Figure 2\u2014figure supplement 3), and tonsils (Attaf et al., 2020; Figure 2\u2014figure supplement 4) were used to perform differential expression analysis in which each tissue-specific ASC cluster was compared to its tissue-specific B cell counterpart. A total of 7653, 1079, and 1860 genes were upregulated in ex vivo obtained ASCs from bone marrow, peripheral blood, and tonsils, respectively (Figure 2e\u2013g). Analysis of the overlap between the identified upregulated genes selected in in vitro and ex vivo data revealed that out of the 1406 upregulated genes found in in vitro-generated ASCs, 1113 (79%) were shared with at least one ex vivo ASC population, of which 349 (25%) were shared with all populations (Figure 2h and i). The remaining 293 (21%) genes were uniquely upregulated in in vitro-generated ASCs, indicating that these genes might be linked to in vitro culture rather than be general for ASCs. Additionally, ex vivo ASC populations also possess unique differentially expressed genes that are not shared with other ex vivo or in vitro-generated ASC populations (Figure 2i). These findings indicate that in vivo ASCs carry specific, possibly tissue-related, gene signatures in addition to the \u2018core ASC signature\u2019 shared among ASCs. Taken together these data show that the in vitro-generated ASCs have highly similar transcriptional profiles compared to ex vivo-obtained ASCs.\n\n### A novel B cell to ASC intermediate cellular stage is identified as a precursor of terminally differentiated ASCs\n\nIn our dataset, cells with a prominent ASC gene signature were separated into two distinct transcriptional clusters. The cells in these clusters also show a slightly different expression of the ASCs phenotypic markers CD27 and CD38, with cells in cluster 5 being predominantly CD27++CD38++, while cluster 4 also includes CD27-CD38+ cells (Figure 1\u2014figure supplement 2a). When performing clustering analysis on the dataset without cell-cycle regression, again cells from clusters 4 and 5 separated from the B cells clusters. Interestingly, the two former ASC clusters now separated into two new clusters, whereby the cell cycle stage became the major common denominator between the two clusters (Figure 1\u2014figure supplement 1j). This shows that original clusters 4 and 5 contain both cells in the cell cycle and cells that are out of the cell cycle. To further investigate the differences between cells in clusters 4 and 5, the similarity and the enrichment score for ASC gene signature were analyzed for both clusters (Figure 3a and b). Cells in cluster 4 scored lower than cells in cluster 5 for both ASC similarity and enrichment, indicating a less dominant ASC gene signature in this cluster. Differential expression analysis between clusters 4 and 5 identified a total of 1076 differentially expressed genes, with 114 and 962 genes up- and downregulated in cluster 5, respectively (Figure 3c). Network analysis of Gene Set Enrichment Analysis (GSEA) results for the differentially expressed genes revealed a predominant enrichment for terms concerning cytoskeleton organization, including supramolecular fiber organization, immune cell receptor signaling, and metabolism of steroids (Figure 3d, Figure 3\u2014figure supplement 1). Of note, among the enriched terms concerning cytoskeleton organization, we found \u2018Arp2/3 complex-mediated actin nucleation,\u2019 recently shown to be important in immune synapses formation (Bolger-Munro et al., 2019; Roper et al., 2019), BCR signaling and B cell activation, together with other terms involved in antigen uptake and processing (Figure 3\u2014figure supplement 1). The majority of the processes indicated by the predominantly enriched terms were suppressed in cluster 5 compared to cluster 4, while specifically activated processes in cluster 5 were \u2018protein N-linked glycosylation\u2019 and \u2018retrograde protein transport\u2019 (Figure 3e). Thus, cells in cluster 4 are still active in antigen presentation and processing, BCR signaling, and fatty acid metabolism, while such processes are being shut down in cells from cluster 5 that conversely upregulate genes involved in protein glycosylation and protein transport.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig3-v2.jpg)\n\n**Figure 3.:** (a) Uniform Manifold Approximation and Projection (UMAP) projection colored by ASC similarity score (left), along with corresponding distribution of the similar score within each cluster (right). (b) Gene Set Enrichment Analysis (GSEA) enrichment plots for ASC gene signature in cells from clusters 4 (left) and 5 (right) compared to the other clusters (NES, normalized enrichment score; FDR, false discovery rate). (c) UMAP projection as in Figure 1i colored by clusters 4 and 5 membership (left) and volcano plot depicting significantly (adjusted p-value<0.05) down- and upregulated genes in cluster 5 compared to cluster 4. (d) Functional grouping network diagram of GSEA comparing clusters 4 and 5. The dot size and the dot color represent the number of genes in the pathway and the NES, respectively. (e) The top 3 most significantly differentially activated pathways as determined by GO enrichment analysis comparing clusters 4 and 5. The dot size and the dot color represent the number of genes in the pathway and the adjusted p-value, respectively. (f) Velocyto force field showing the average differentiation trajectories (velocity) for cells located in different parts of the UMAP plot. Arrow size conveys the strength of predicted directionality. (g) PAGA graph showing the connectivity between the clusters. Each node corresponds to each of the clusters identified using Seurat. The most probable path connecting the clusters is plotted with thicker edges. (h) UMAP projection of ex vivo B cells and ASC derived from bone marrow, peripheral blood, and tonsil colored by cluster 4 and 5 similarity score.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The dot size and the dot color represent the number of genes in the pathway and the normalized enrichment score (NES), respectively.\n\nTo assess whether cluster 4 is a precursor population of cluster 5, we applied two algorithms for analyzing respectively the connectivity and the dynamics between clusters in scRNA-seq datasets, namely, partition-based graph abstraction (PAGA) (Wolf et al., 2019) and RNA velocity (Bergen et al., 2020). Projection of the RNA velocity vectors on the UMAP representation revealed an area of increased velocity in cluster 4 in the direction of cluster 5, indicating that cells in cluster 4 are rapidly transitioning toward the transcriptomic signature of cells in cluster 5 (Figure 3f). At the top-right extremity of cluster 5, where most of the non-cycling cells are located, no velocity vectors are projected. This implies that no subsequent cellular stage could be appointed, suggesting an endpoint of differentiation here. In line with this, results of PAGA showed increased connectivity among clusters 4 and 5 (Figure 3g). Interestingly, only cluster 4 and not cluster 5 was shown to be connected with all three B cell clusters, with cluster 3 being the most pronounced connection followed by cluster 1. This indicates that cluster 4 is more similar to the B cell clusters than cluster 5.\n\nTo confirm that cluster 4 represents a previously overseen intermediate B cell to ASCs population, we obtain a set of hallmark genes for cluster 4 and tested them on the publicly available scRNA-seq dataset from bone marrow, tonsil, and peripheral blood (Figure 3h). In the bone marrow dataset, the highest similarity score with the cluster 4 hallmark genes was observed in the cells connecting naive B cells to plasma cells. Interestingly, the GC B cells in the tonsil dataset, both non-cycling LZ and cycling DZ GC B cells, showed the highest similarity score with cluster 4 cells, while in the peripheral blood dataset, few cells in the naive/memory cluster showed increased similarity. Of note, when performing the same analysis with the hallmark genes from cluster 5, the highest similarity was observed in each tissue-specific ASC population, as expected.\n\nThus, taken together these results show that cluster 5 represents a terminally differentiated ASC population and that cluster 4 represents a novel B cell to ASC intermediate cellular stage, a precursor of terminally differentiated ASCs. This population can also be found ex vivo, mainly in lymphoid tissues with active ASC differentiation.\n\n### Differentiating B cells transit through a GC-like and early memory phenotype\n\nTo analyze the earlier stage of naive B cell to ASC differentiation, differential expression analysis among the three B cell clusters was performed to identify cluster-specific gene signatures (Figure 4a). Interestingly, genes that mark a GC B cell phenotype, such as IRF8, BCL6, CD22, and CD83, were among the top 30 differentially expressed genes in cluster 2 (Basso and Dalla-Favera, 2010; Meyer et al., 2021; Victora et al., 2012; Wang et al., 2019). When performing GSEA using hallmark gene sets on the differentially expressed genes in cluster 2, MYC (Calado et al., 2012; Dominguez-Sola et al., 2012) and E2F (B\u00e9guelin et al., 2017) targets, known to promote GC B cell differentiation, were the top 3 significantly enriched gene sets and, in fact, MYC was expressed at its highest in cluster 2 compared to the other clusters (Figure 4b and c). Finally, the similarity score with ex vivo-sorted human GC B cells was the highest in cluster 2, followed by cluster 3 (Figure 4d). Thus, we concluded that cells in cluster 2 represent GC-like B cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83578/elife-83578-fig4-v2.jpg)\n\n**Figure 4.:** (a) Top 30 differentially expressed genes identified in clusters 1\u20133. The size of the dot encodes the percentage of cells within a cluster, while the color encodes the average gene expression across all cells within a cluster. (b) Significantly enriched hallmark gene sets overlapping with the differentially expressed genes identified in cluster 2. (c) Uniform Manifold Approximation and Projection (UMAP) projection colored by expression of the transcription factors MYC (left), along with corresponding distribution of expression levels (ln(TPM+1)) within each cluster (right). (d) Corresponding distribution of the GC similarly score within each cluster (left) and Gene Set Enrichment Analysis (GSEA) enrichment plot (right) for GC B cell gene signature in cells from cluster 2 (NES, normalized enrichment score; FDR, false discovery rate). (e\u2013k) UMAP projection colored by expression of the BANK1 (e), CCR6 (f), MZB1 (g), ITGAX (h), SIGLEC6 (i), FCRL5 (j), HHEX (k; left), along with corresponding distribution of expression levels (ln(TPM+1)) within each cluster (right). (l) The similarity score of ex vivo germinal center B cell (GC), memory B cell (MBC), and ASC gene sets ordered by UMAP1.\n\nFor cells in cluster 3, no definite phenotypic signature could be appointed based on the cluster-specific gene signature. However, given the intermediate similarity with both GC B cells and ASC gene signatures (Figures 3a and 4b) and the higher connectivity indicated by PAGA with the pre-ASCs cluster 4 compared to the other B cell cluster, we hypothesize that cluster 3 might represent a post-GC population primed to become ASCs.\n\nAmong the top differentially expressed genes of cluster 1, we found BANK1, recently identified as a marker of a pre-memory B cell stage (Holmes et al., 2020) together with CCR6, which was also expressed at the highest in cluster 1 (Figure 4e and f). Of note, MZB1, identified in the same study as a marker of pre-ASCs, is expressed at its lowest in cluster 1 (Figure 4g). Interestingly, ITGAX (CD11c) was indicated as differentially expressed in cluster 1 (Figure 4h). This gene defines a heterogeneous population of, mostly, memory B cells initially discovered in the context of aging and autoimmune disease, called atypical memory B cells or age-associated B cells (ABCs) that are thought to be generated through an alternative extra-follicular pathway (Sutton et al., 2021; Wang et al., 2018). Likewise, the expression of other genes associated with the CD11c+ phenotype, such as SIGLEC6 and FCRL5, was increased in cluster 1 (Figure 4i and j) while CR2 (CD21), TBX21 (T-bet), FCRL4, and CXCR3 were not expressed in our dataset (data not shown). Finally, HHEX, recently shown to direct B cells away from the GC reaction into memory differentiation (Laidlaw et al., 2020), was also increased in cluster 1 (Figure 4k). Together, these data suggest that cells in cluster 1 are committed to becoming memory B cells.\n\nTo confirm the above findings of an in vitro B differentiation system in which GC-like B cells are directed toward both a memory and an ASCs cell phenotype, we analyzed the similarity score of all cells in our dataset ordered based on UMAP1 with gene signatures obtained from ex vivo-sorted B cell at different differentiation stages, namely, GC B cell, memory B cells ,and ASCs (Figure 4l). As expected, the ASCs similarity score increases following UMAP1-based differentiation, starting at the lowest in cluster 2 and gradually increasing going through clusters 3\u20135. Conversely, the similarity with GC B cell starts at the highest in cluster 2 and rapidly decreases going toward cluster 1; a slight stagnation is then observed in correspondence to cluster 3, followed by an additional decrease going through clusters 4 and 5. Finally, the similarity with memory B cells starts low with cluster 2, picks up in cluster 1, and decreases again through clusters 3\u20135. Thus, the differentiation dynamics observed in our in vitro system recapitulate ex vivo naive B cell differentiation processes, including both a memory and an ASC differentiation route.\n\nTo conclude, these results indicate that B cells with a GC-like phenotype are identified in vitro from human naive B cells after culture in the presence of IL-4 and IL-21, and CD40L costimulation. Additionally, we find a post-GC B cell population with increased connectivity to the novel B cell to ASCs intermediate and a B cell population with a memory-like phenotype.\n\n## Discussion\n\nIn this study, we set out to elucidate different stages of naive human B cell differentiation into ASCs by performing single-cell transcriptomics, B cell receptor reconstruction, and trajectory inference analysis on in vitro-differentiated human naive B cells and integrating these data with ex vivo transcriptomes of isolated B cells and ASC subsets derived from different human tissues. We demonstrated that the in vitro-generated ASC are highly comparable to ex vivo ASCs. This led to the identification of a B cell to ASCs intermediate population still active in antigen presentation and processing that shows transcriptional similarity to B cell populations found ex vivo in lymphoid tissue with active ASCs differentiation processes (like tonsils) and phenotypic resemblance (i.e., intermediate CD27 and CD38 expression, lower expression of PRDM1, and higher expression of PAX5 compared to CD138 plasma blasts) to a pre-ASC population recently identified in the peripheral blood of healthy individuals 6 days post-vaccination (Sanz et al., 2019). This population might therefore represent a previously overseen B cell to ASCs intermediate that is challenging to identify in normal steady-state conditions as it only appears transiently during ASC formation. Finally, B cells with a GC-like and a pre-memory phenotype were identified in our in vitro system, thus recapitulating the different naive B differentiation processes observed in vivo.\n\nTo the best of our knowledge, this is the first study in which GC-like B cells are identified in vitro from human naive B cells. While a similar culture system is well-established and commonly used in mouse B cell biology (Gonzalez et al., 2018; Nojima et al., 2011), studies utilizing human B cells are limited in comparison. This finding could help us to decode one important and still unanswered question in B cell biology, that is, which factors control the decisions for a GC-B cell to differentiate into a memory B cell or a plasma cell (Akkaya et al., 2020). In our system, we were able to clearly define cells with an ASCs phenotype (clusters 4 and 5) and cells with a gene signature that pointed toward a memory-like B cell phenotype (cluster 1). Surprisingly, the fact that both analyses focused on connection and dynamics between clusters, that is, PAGA and RNA velocity, did not indicate a direct strong connection between the B cells clusters and the ASCs clusters raises the question of whether these two populations are related. In this respect, the in vitro-generated ASCs could be differentiating from a cell population that is lost at the time of our analysis or independently of a GC reaction. Additional research including time-course experiments is needed to further explore this possibility.\n\nIn line with this, the higher connectivity observed among the three B cell clusters rather than with the ASCs cluster could indicate the presence of an alternative differentiation wave in time. In fact, the GC B cells of cluster 2 might represent the next GC reaction after the one that gave rise to the ASCs of clusters 4 and 5, and that would have generated new ASCs, possibly from cluster 3 if the culture would not be interrupted for analysis. This hypothesis raises the intriguing question of whether the memory cells of cluster 1 are again an alternative end point or the starting point of this second GC reaction. Unfortunately, this is bioinformatically difficult to rule out as currents methods to infer cellular trajectory do require a priori knowledge of the start point of differentiation (Saelens et al., 2019), while unbiased analysis of cellular stage transition, such as RNA velocity, can still not be corrected for possible other drivers of cellular stage transition such as cell cycle (Bergen et al., 2021).\n\nA concept that is now supported by several studies is that different levels of antigen-affinity and different timing of generation during the GC reaction dictate the fate of a GC B cell to become either a memory B cell or a long-lived plasma cell (Smith et al., 1997; Weisel et al., 2016). Memory B cells that arise from GC reactions are an earlier output in the GC reaction than plasma cells and therefore accumulate somewhat less (albeit is mostly still considerable) affinity-increasing SHM (Weisel et al., 2016). Conversely, long-lived plasma cells are generated at a later stage of the GC reaction and are equipped with highly affine and highly mutated BCRs. Additionally, mouse studies have highlighted the role of Tfh-produced cytokines such as IL-21 and IL-4 in respectively inducing long-lived plasma cells or memory B cells upon in vivo transfer of in vitro-induced GC-like B cells (Nojima et al., 2011). In our in vitro system, IL-21 and IL-4 are provided together, explaining the possibility of having both plasma cell and memory populations at the end of the culture. It would be interesting to further analyze the output of a culture in which only one of the cytokines is provided, and in particular, if the presence of IL-4 only could boost the memory population as already demonstrated in vivo in mice (Duan et al., 2021). Furthermore, in vitro mouse studies demonstrated that naive B cells need to be primed in culture with IL-4 to obtain the GC-like phenotype and that naive B cells cultured directly in presence of IL-21 proliferate less and directly differentiate into ASCs. Whether the directly generated ASCs are identical to the ASCs generated via the GC-like intermediate stage still needs to be further investigated.\n\nInterestingly, the metabolism of steroids and cholesterol were among the most enriched terms for the differentially expressed genes between the pre- and terminally differentiated ASCs. This is in line with the concept that the full commitment to antibody production and secretion of terminally differentiated ASCs requires a massive reprogramming of the metabolism not only to provide the molecular \u2018bricks\u2019 for antibody production, that is, amino acids and sugars, but also the cellular machinery to sustain such massive production,that is, ER and Golgi expansion. In this respect, several studies demonstrated that the de novo synthesis of fatty acid is a crucial step in plasma cell formation (Dufort et al., 2014; Fagone et al., 2007). Additionally, some new pieces of evidence support the hypothesis that antibody secretion and ER stress might be linked to the longevity of plasma cells (Goldfinger et al., 2011; Pengo et al., 2013). In future studies, we shall focus on the analysis of the changes in metabolic pathways that occur in our in vitro systems. A deeper analysis of the metabolic reprogramming happening at the interchange between the different cellular stages observed in our in vitro system might reveal that metabolism plays an additional layer of control on top of the known transcriptional ones for B cell differentiation.\n\nTo conclude, using an in vitro system that accurately recapitulates the in vivo human GC reaction we uncovered a novel intermediate population in the ASC differentiation process and possibly an alternative route of differentiation into memory B cells. Further research is needed to further dissect the regulation of human B cell differentiation processes and in particular the choice between the two differentiation routes in both healthy and diseased conditions.\n\n## Materials and methods\n\n### Cell culture\n\nNIH3T3 WT fibroblast cells (3T3) and human CD40L-expressing 3T3 (Urashima et al., 1996) were cultured in IMDM (Lonza) containing 10% FCS (Bodinco), 100 U/ml penicillin (Invitrogen), 100 \u03bcg/ml streptomycin (Invitrogen), 2 mM L-glutamine (Invitrogen), 50 \u03bcM \u03b2-mercaptoethanol (Sigma-Aldrich), and 500 \u03bcg/ml G418 (Life Technologies).\n\n### Isolation of peripheral blood B cells from human healthy donors\n\nBuffy coats of healthy human donors were obtained from Sanquin Blood Supply. All healthy donors provided written informed consent following the protocol of the local institutional review board, the Medical Ethics Committee of Sanquin Blood Supply, and conforms to the principles of the Declaration of Helsinki. PBMCs were isolated from buffy coats using a Lymphoprep (Axis-Shield PoC AS) density gradient. Afterward, CD19+ B cells were separated using magnetic Dynabeads (Invitrogen) according to the manufacturer\u2019s instructions.\n\n### In vitro naive B cell differentiation cultures\n\nCD40L-expressing 3T3 cells were harvested, irradiated with 30 Gy, and 1 \u00d7 104 CD40L-expressing 3T3 cells were seeded in B cell medium (RPMI 1640 [Gibco] without phenol red containing 5% FCS, 100 U/ml penicillin, 100 \u03bcg/ml streptomycin, 2 mM L-glutamine, 50 \u03bcM \u03b2-mercaptoethanol, and 20 \u03bcg/ml human apotransferrin [Sigma-Aldrich; depleted for human IgG with protein G sepharose]) in 96-well flat-bottom plates (NUNC) to allow adherence overnight. The next day, 2.5 \u00d7 104 human naive (CD19+CD27-IgG-IgD+) B cells were sorted on a FACS Aria and activated using the irradiated CD40L-expressing 3T3 cells in the presence of IL-4 (100 ng/ml; CellGenix) for 6 days.\n\nAfter 6 days, activated B cells were collected and co-cultured with 1 \u00d7 104 9:1 WT 3T3 to CD40L-expressing 3T3 cells that were irradiated and seeded 1 day in advance (as described above), together with IL-4 (100 ng/ml) and IL-21 (50 ng/ml; Invitrogen) for 5 days.\n\n### Flow cytometry and sorting\n\nCells were first washed with PBS and stained with LIVE/DEAD Fixable Near-IR (Dead cell stain kit, Invitrogen) for 30 min at room temperature in the dark. Then, cells were washed with PBS supplemented with 1% bovine serum albumin. Extracellular staining was performed by incubating the cells for 30 min on ice in the dark with the following antibodies: anti-CD19 (clone SJ25-C1, BD Biosciences), anti-CD27 (clone L128, BD Biosciences; clone O323, eBioscience), anti-CD38 (clone HB7, BD Biosciences), anti-CD138 (clone MI15; BD Biosciences), and anti-IgG (clone G18-145, BD Biosciences; clone MH16-1, Sanquin Reagents). Samples were measured on LSRII and analyzed using FlowJo software (Treestar).\n\nFor FACS sorting for single-cell RNA sequencing, samples were stained as described previously with LIVE/DEAD Fixable Near-IR (Invitrogen) and the following antibodies: anti-CD19 (clone SJ25-C1, BD Biosciences), anti-CD27 (clone O323, eBioscience), anti-CD38 (clone HB7, BD Biosciences), and anti-CD138 (clone MI15; BD Biosciences). Sorting was performed on Aria IIIu with FACSDiva software v7 optimized for indexed cell sorting. Single cells were sorted by gating CD27/CD38 subpopulations of the living cell compartment. Cells were sorted in 384-well twin.tec plates (Eppendorf) containing 2.3 \u03bcl of lysis buffer per well. Lysis buffer consisted of 2.5 \u03bcM oligo-dT30 VN primers, 2.5 \u03bcM dNTP mix, 0.2% Triton X-100, and 1 U RNase inhibitor. After sorting, plates were centrifuged, snap-frozen on dry ice, and stored at \u201380\u00b0C until further processing.\n\n### Real-time semi-quantitative RT-PCR\n\nDifferent B-cell subsets (as indicated) were sorted. After sorting, RT\u2013PCR was performed as described before (Souwer et al., 2009). Primers were developed to span exon-intron junctions and then validated (Supplementary file 1). Gene expression levels were measured in duplicate reactions for each sample in StepOnePlus (Applied Biosystems, Foster City, CA) using the SYBR green method (Applied Biosystems).\n\n### CRISPR\u2013Cas9-mediated gene deletion of primary B cells\n\nCRISPR-targeting RNA (crRNAs) were designed with the InDelphi (https://indelphi.giffordlab.mit.edu), benchling (https://www.benchling.com), and Integrated DNA Technologies design tools (http://www.idtdna.com). Designed crRNAs were synthesized by Integrated DNA Technologies as Alt-R CRISPR/Cas9 crRNAs. crRNA sequences used in the study were as follows: crCD19, 5\u2032-TCCCTCGGTGGGAGACACGG-3\u2032; crPRDM1#1, 5\u2032-CATTAAAGCCGTCAATGAAG-3\u2032; crPRDM1#2, 5\u2032-TGCTCCCGGGGAGAGTGTGC-3\u2032; crPRDM1#3, 5\u2032- GAAGTGGTGAAGCTCCCCTC-3\u2032.\n\ncrRNA and trans-activating CRISPR RNA (tracrRNA; Integrated DNA Technologies) were duplexed by heating at 95\u00b0C for 5 min. crRNA\u2013tracrRNA duplexes were mixed with Cas9 protein (TrueCut v2; Thermo Fisher) for 10 min at room temperature to form stable ribonucleoprotein (RNP) complexes. 2.5 \u00d7 104 primary human naive (CD19+CD27-IgG-IgD+) B cells were activated for 3 days with 1 \u00d7 104 irradiated CD40L-expressing 3T3 cells in the presence of IL-21 (50 ng/ml). After 3 days, cells were harvested and resuspended in P3 buffer (Lonza), mixed with RNP complexes, added to nucleofector cuvettes (Lonza), and electroporated with Amaxa 4D Nucleofector (Lonza) using program EH-115. Activated and electroporated B cells were then resuspended in a pre-warmed B cell medium and 2.5 \u00d7 104 cells were plated in wells pre-seeded with 1 \u00d7 104 irradiated CD40L-expressing 3T3 cells in the presence of IL-21 (50 ng/ml). After 3 days, B cells were harvested and put on freshly irradiated CD40L-expressing 3T3 cells in the presence of IL-21 (50 ng/ml) for 5 days.\n\n### Preparation of cDNA libraries and sequencing\n\nSorted cells were processed using the Smart-seq2 protocol (Picelli et al., 2014) adjusted for 384-well plates. In short, 384-well plates containing single cells were thawed and cells were lysed and mRNA denatured by incubating the plates at 95\u00b0C for 3 min and put back on ice. Subsequently, 2.7 \u03bcl of first-strand cDNA reagent mix, containing 1x first-strand buffer, 5 mM DTT, 1 M betaine, 14 mM MgCl2, 5U RNase inhibitor, 25U Superscript II Reverse Transcriptase, and 1 \u03bcM Template-Switching oligonucleotides in nuclease-free water, was added to each well. Plates were incubated at 42\u00b0C for 90 min, 70\u00b0C for 15 min, and kept on hold at 4\u00b0C. Afterward, 7.5 \u03bcl of the pre-amplification mix, consisting of 1x KAPA HiFi HotStart Readymix and 0.12 \u03bcM ISPCR primers in nuclease-free water, was added to each well. Plates were then incubated as followed: 98\u00b0C for 3 min, 23 cycles of 98\u00b0C for 20 s; 67\u00b0C for 15 s; and 72\u00b0C for 6 min, then at 72\u00b0C for 5 min and kept on hold at 4\u00b0C. Purification of the resulting cDNA was performed using SeraMag SpeedBeads containing 19% w/v PEG 8,000 and a 1:0.8 ratio of cDNA/beads was used for cDNA precipitation. Purified cDNA was eluted in 14 \u03bcl of nuclease-free water. The quality of cDNA was randomly checked in 5% of the wells using the Tapestation High-Sensitivity D5000 assay. For the tagmentation reaction, 0.5 \u03bcl of 50\u2013150 pg cDNA was mixed with a 1.5 \u03bcl Tagmentation mix containing 1x Tagment DNA buffer and Amplicon Tagment mix (Nextera XT DNA sample preparation kit). Plates were incubated at 55\u00b0C for 8 min and kept on hold at 4\u00b0C. 0.5 \u03bcl Neutralize Tagment buffer was added and incubated at room temperature for 5 min to inactivate Tn5. PCR amplification of adapter-ligated cDNA fragments was performed in a final volume of 5 \u03bcl containing the two index primers (Nextera XT Index kit) in a 1:5 dilution and Nextera PCR master mix. Plates were then incubated as follows: 72\u00b0C for 3 min, 95\u00b0C for 30 s, then 14\u201315 cycles of 95\u00b0C for 10 s; 55\u00b0C for 30 s; and 72\u00b0C for 30 s, then 72\u00b0C for 5 min and kept on hold at 4\u00b0C. 384 wells (the entire plate, including negative controls) were pooled in a single 2 ml tube (Eppendorf). Purification of cDNA was performed by adding 400 \u03bcl of cDNA in a 1:1 ratio with SeraMag SpeedBeads in 19% w/v PEG 8000 in a 1.5 ml LoBind tube. Beads were washed with 1 ml of 80% ethanol. Purified cDNA was eluted in 200 \u03bcl of nuclease-free water. The concentration of the library was measured by Qubit according to the manufacturer\u2019s instructions. The size distribution of the library was measured using the Tapestation High-Sensitivity D1000 or D5000 assay. The cDNA library pool was stored at \u201320\u00b0C until ready for sequencing.\n\ncDNA library pool was diluted to 2 nM and prepared for sequencing using the NextSeq 500 High Output Kit v2 (75 cycles) according to the manufacturer\u2019s instructions. Sequencing was performed on an Illumina NextSeq 500 instrument.\n\n### Preprocessing of single-cell RNA sequencing data\n\nThe quality of the retrieved sequencing data was assessed using FastQC (Andrews, 2010). Reads were pseudo-aligned to the human transcriptome (gencode version v27) using kallisto (Bray et al., 2016). Quantification of gene expression was obtained by gene-level summarization of transcripts abundance using the R package tximport (Soneson et al., 2015), without any scaling (countsFromAbundance option set to \u2018no\u2019). Counts were then normalized using the transcript per million (TPM) method (Li et al., 2010) with the following approach: (a) gene length scaling, (b) removal of all immunoglobulins genes and pseudogenes, and (c) sequencing depth scaling (Figure 1\u2014figure supplement 1a). Removal of immunoglobulin genes at this stage prevented the artificial skewing of other genes expressed in the ASC clusters due to the high content of immunoglobulins RNA present in this cell type. The scaled TPM matrix was used for downstream analysis.\n\n### Single-cell RNA sequencing data analysis\n\nGene expression was analyzed using the Seurat package in R (Hao et al., 2021). The scaled TPM matrix and metadata information were used to create a Seurat object with the following specifications: min.cell=3, min.feature=200. Putative low-quality cells and doublets were removed based on the distribution of genes per cell (Butler et al., 2018). Cells were then checked for alignment to the human genome (GRCh38) and the fraction of mitochondrial genes as a measure of cell stress. Quality control criteria for cell exclusion were set as follows: percentage of mitochondrial genes >20%, percentage of aligned reads <60%, and the number of total genes expressed within 5000 and 10,000 (Figure 1\u2014figure supplement 1b and c). A total of 276 cells passed quality control and did not affect the distribution of the four CD27/38 populations, indicating that all populations were of equal quality, and could be used for further analysis (Figure 1\u2014figure supplement 1d). Gene expression values were then transformed to log2 TPM+1 and these values were used for all downstream analyses. Before performing dimensional reduction, the FindVariableFeatures function was applied to retrieve the top 2000 high variable genes followed by a global data scaling using the ScaleData function. Principal component analysis (PCA) was chosen as a linear dimensionality reduction technique using the previously selected 2000 high variable genes as input and allowing 50 components. PCA-based cell clustering was performed by applying the FindNeighbors function on the first 10 PCAs followed by the FindClusters function with 0.5 resolution and the Leiden algorithm. For visualization purposes, a second nonlinear dimensionality reduction was performed using the RunUMAP function on the first 10 PCAs (Figure 1\u2014figure supplement 1e).\n\n### Differential expression analysis\n\nDifferential expression analysis was performed on all genes using the wilcoxauc method from presto (Korsunsky et al., 2019). GSEA was performed using the clusterProfiler package in R on 17,716 genes ranked based on logFC * adjusted p-value using the Gene Ontology (GO) and the hallmark human gene sets obtained from MsigDB4 (Liberzon et al., 2015). For visualization, hierarchical clustering of GSEA results was performed using the pairwise_termsim function from enrichplot with an adjusted p-value<0.05 and then plotted using the emapplot function.\n\n### Publicly available (sc)RNAseq datasets\n\nFor the analysis of the publicly available scRNA-seq dataset of B cells from different human tissues (Attaf et al., 2020; Jardine et al., 2021; Rizzetto et al., 2018), processed gene expression matrixes were downloaded and cells were annotated as provided by the authors. For similarity and enrichment score analyses, the publicly available genes set GSE12366 that includes gene sets from up- and downregulated genes found in sorted naive B cells, memory B cells, GC B cells, and plasma cells were used (Longo et al., 2009). The similarity score was then calculated using AddModuleScore from Seurat. For the analysis of similarity score over differentiation as reported in Figure 4l, the upregulated gene sets were compared and genes that were uniquely expressed by one population were used to calculate the similarity score to that population.\n\n### Trajectory inference\n\nPseudotemporal ordering of the differentiating B cells trajectory, a PAGA (Wolf et al., 2019) was performed for the transcriptionally distinct cell clusters using the tl.paga function in scanpy. Velocity-based pseudotime reconstruction was performed using RNA velocity. To obtain the spliced and unspliced matrix for RNA velocity analysis, original fastq files were re-aligned using STAR (v2.7.7). Obtained.sam files were converted to sorted.bam files using samtools (v1.11). Sorted.bam files were fed into velocyto (v0.17.17) using the run-smartseq2 option. The obtained loom file containing the spliced and unspliced count matrix was imported into python and then merged with the Seurat object after conversion to annData format (convertFormat function from the sceasy R package). RNA velocity analysis was then performed using the scVelo (v0.2.2) package in python.\n\n### B cell receptor analysis\n\nReconstruction of the rearranged B cell receptor sequences was performed using BraCeR (Lindeman et al., 2018) on the cells that passed quality control. The functions assemble and summarise were run to obtain respectively all possible BCR rearrangements and only the functional BCR rearrangements per cell. For every cell, one functional heavy chain and one functional light-chain BCR rearrangements were selected based on the highest expression. These sequences were then submitted to the HighV-quest portal of the International ImMunoGeneTics information system website (http://www.imgt.org) for further BCR characterization. Further analysis of the BCR rearrangements was performed using the tools from the Immcantation portal (https://immcantation.readthedocs.io/en/stable/). In particular, Change-O was used to perform clonal clustering and Alakazam was used for the analysis of somatic hypermutation.\n",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "4372ee32-6c60-4fcf-b594-65eeceaec887",
+      "submission_id": "7e4876a8-08a4-49ca-a5a9-224288247020",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Murim Choi, https://ror.org/04h9pn542 Seoul National University Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83578.sa0](https://doi.org/10.7554/eLife.83578.sa0)\n\nTo recapitulate B cell differentiation process in vitro, the authors established an in vitro system to identify a cluster and performed extensive analyses to demonstrate that the cluster mimics human germinal center antibody-secreting cells (ASCs). They provide stepwise trajectories of plasma cell differentiation from human naive B cells upon stimulation with CD40 ligands, IL-4, and IL-21. Since intermediate clusters of cells show features of germinal center B cells, the authors propose novel intermediate stages of B cells before a complete differentiation into plasma cells. This study is valuable in the differentiation of primary naive B cells into ASC ex vivo and may interest immunologists with an emphasis in B cell biology as it provides an in-depth description of the B cell differentiation pathways.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Murim Choi, https://ror.org/04h9pn542 Seoul National University Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83578.sa1](https://doi.org/10.7554/eLife.83578.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single-cell analysis reveals dynamics of human B cell differentiation and identifies novel B and antibody-secreting cell intermediates\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Murim Choi as the Senior Editor, Reviewing Editor and Reviewer #1.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers agreed with the value and novelty of the study, especially on not much studied B cell differentiation. But they also thought that substantial revisions are needed to guarantee publication in eLife. For example, the major concerns were\n\n(1) Both reviewers showed concern on normalizing cell cycle effect would overfit the data.\n\n(2) The degree their in vitro model to recapitulate in vivo situation.\n\n(3) Description on methods for replication in other groups, and difference from the previous paper (Unger 2021).\n\nReviewer #2 (Recommendations for the authors):\n\nThis work is interesting and provides an in-depth description of the B cell differentiation pathways. However, this work has several pitfalls, which may decrease the value of this manuscript.\n\n1. This study uses in vitro system of germinal center B or plasma cell differentiation from human naive B cells. Even though cells of clusters 4 and 5 express the ASC genes also found in vivo, these in vitro generated cells may still be different from in vivo plasma cells in other gene expression profiles determined by in vivo conditions. Therefore, a novel pre-ASC population could be found only in vitro. The in vitro B cell culture system is suitable for the investigation of molecular differentiation mechanism but may be not ideal for the description of differentiation trajectory or pathway.\n\n2. The authors removed the influence of the cell cycle by performing cell cycle regression, which is good for removing the effects of the genes oscillating with the cell cycle. But, the cell division numbers may affect the choice between memory B cell and plasma cell differentiation [Zhou, Front Immunol, 9:2053; Duffy, Science, 335:338]. More ASCs may appear after multiple rounds of cell division stochastically. Therefore, it would be nice to follow gene expression profiles with cell division numbers or different time points of culture.\n\n3. IL-21 and IL-4 are principal cytokines for germinal center reaction and CD40/CD40L interaction is essential for GC formation. So the culture condition appears to favor the GC-like cells initially, and ASCs may appear late after multiple rounds of cell division. Therefore, the author's argument of the first identification of GC-like B cells may be regarded as a case of the human counterpart of GC B cell culture of mice [Gonzalez, J Immunol, 201:3569].\n",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5e29b3be-bdcf-4584-b882-411a6ce671ff",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C1",
+      "claim": "Human naive B cells (CD19+CD27-IgG-IgD+) are sorted from healthy donor peripheral blood mononucleated cells (PBMCs) and cultured on a feeder layer of human CD40L-expressing mouse fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, human naive B cells (CD19+CD27-IgG-IgD+) are sorted from healthy donor peripheral blood mononucleated cells (PBMCs) and cultured on a feeder layer of human CD40L-expressing mouse fibroblasts and restimulated after 6 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "2a425895-5165-455e-bf11-9d0c432a1964",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C2",
+      "claim": "Cytokines typically expressed by follicular T cells (Tfh) (IL-21, IL-4) are added to mimic Tfh help for B cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytokines typically expressed by follicular T cells (Tfh) (IL-21, IL-4) are added to mimic Tfh help for B cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the rationale for adding specific cytokines to the culture system.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f7089860-0f3a-42c1-ad32-067b1973a4de",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C3",
+      "claim": "Restimulation with CD40 costimulation and Tfh cytokines in vitro was demonstrated to be needed to drive efficient ASC differentiation, in line with in vivo GC reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Restimulation with CD40 costimulation and Tfh cytokines in vitro was demonstrated to be needed to drive efficient ASC differentiation, in line with in vivo GC reactions (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data showing the requirement for restimulation and references Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "1f88f12b-b668-4366-90d0-de4bccf4f3f0",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C4",
+      "claim": "CD27-CD38- cells gradually lose expression of B cell signature genes PAX5 and BACH2 upon acquisition of CD27 and/or CD38 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "CD27-CD38- cells gradually lose expression of B cell signature genes PAX5 and BACH2 upon acquisition of CD27 and/or CD38 expression with CD27++CD38++ cells showing the most downregulated expression of PAX5 and BACH2 and upregulation of ASC signature genes IRF4, XBP1, and PRDM1 (Figure 1c\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes gene expression changes observed in the data and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "bc6cd395-ce2d-4f96-9cb3-373f1a52a939",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C5",
+      "claim": "CD27++CD38++ cells show the most downregulated expression of PAX5 and BACH2 and upregulation of ASC signature genes IRF4, XBP1, and PRDM1.",
+      "claim_type": "EXPLICIT",
+      "source": "CD27-CD38- cells gradually lose expression of B cell signature genes PAX5 and BACH2 upon acquisition of CD27 and/or CD38 expression with CD27++CD38++ cells showing the most downregulated expression of PAX5 and BACH2 and upregulation of ASC signature genes IRF4, XBP1, and PRDM1 (Figure 1c\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents gene expression data for different cell populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "d2461bbd-f92c-4c13-9dbe-b2b119de3161",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C6",
+      "claim": "CRISPR-Cas9-mediated knockout of PRDM1 on day 3 strongly suppressed the formation of CD27+CD38+ cells on day 11 compared to control and CD19 knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, CRISPR-Cas9-mediated knockout of PRDM1 on day 3 strongly suppressed the formation of CD27+CD38+ cells on day 11 compared to control and CD19 knockout (Figure 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results from CRISPR-Cas9 knockout experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "e85628e7-5697-458f-af9e-92e8ffaeef50",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C7",
+      "claim": "Unsupervised hierarchical clustering and visualization with Uniform Manifold Approximation and Projection (UMAP) identified five clusters of differentiating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised hierarchical clustering and visualization with Uniform Manifold Approximation and Projection (UMAP) identified five clusters of differentiating cells (Figure 1i, Figure 1\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the computational analysis performed on the single-cell RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "877e7cc8-5435-4e2b-b482-ac3e7028e9d6",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C8",
+      "claim": "Clusters 4 and 5 showed a clear ASC gene signature with a prominent expression of known ASC-specific genes IRF4, XBP1, and PRDM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters 4 and 5 showed a clear ASC gene signature with a prominent expression of known ASC-specific genes IRF4, XBP1, and PRDM1 (Figure 1j\u2013l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the gene expression characteristics of specific clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "18ed545f-a7a9-453b-86ec-becf63db62e6",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C9",
+      "claim": "99% of CD27+CD38+ double-positive sorted cells were represented in clusters 4 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, 99% of CD27+CD38+ double-positive sorted cells were represented in clusters 4 and 5 (Figure 1\u2014figure supplement 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides quantitative data on the distribution of sorted cell populations across clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "fd635a67-a317-496c-936b-47e8f7c73376",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C10",
+      "claim": "Clusters 1\u20133 showed a pronounced B cell signature with higher expression of genes known to repress the ASCs state such as PAX5, BACH2, and SPIB.",
+      "claim_type": "EXPLICIT",
+      "source": "The other three clusters (clusters 1\u20133) still showed a pronounced B cell signature with higher expression of genes known to repress the ASCs state such as PAX5, BACH2, and SPIB (Figure 1m\u2013o).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the gene expression characteristics of clusters 1-3.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "873637a8-accc-4d95-a894-78d342457309",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C11",
+      "claim": "Expression of the reconstructed B cell receptor (BCR) genes in clusters 4 and 5 was up to 10 times higher compared to clusters 1\u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the reconstructed B cell receptor (BCR) genes in clusters 4 and 5 was up to 10 times higher compared to clusters 1\u20133, demonstrating a very high transcriptional activity of immunoglobulin genes in the ASC clusters (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents quantitative data on BCR gene expression levels across clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "0d523c4f-72c7-40c0-9ddf-57b39a74a394",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C12",
+      "claim": "The percentage of cells expressing immunoglobulin of the IgM isotype was lower in clusters 4 and 5 compared to clusters 1\u20133 (clusters 4 and 5: 36.6% vs. clusters 1\u20133: 50.3%; p-value<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "When combining data for B cell and ASC clusters, the percentage of cells expressing immunoglobulin of the IgM isotype was lower in clusters 4 and 5 compared to clusters 1\u20133 (clusters 4 and 5: 36.6% vs. clusters 1\u20133: 50.3%; p-value<0.01), while the opposite was true for expression of immunoglobulins of the IgG1 isotype (cluster 4 and 5: 43.7% vs. cluster 1\u20133: 24.6%; p-value <0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical analysis of isotype distribution across clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "b183aaf8-d826-4707-b964-a6f2b4abe587",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C13",
+      "claim": "The percentage of cells expressing immunoglobulins of the IgG1 isotype was higher in clusters 4 and 5 compared to clusters 1\u20133 (cluster 4 and 5: 43.7% vs. cluster 1\u20133: 24.6%; p-value <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "When combining data for B cell and ASC clusters, the percentage of cells expressing immunoglobulin of the IgM isotype was lower in clusters 4 and 5 compared to clusters 1\u20133 (clusters 4 and 5: 36.6% vs. clusters 1\u20133: 50.3%; p-value<0.01), while the opposite was true for expression of immunoglobulins of the IgG1 isotype (cluster 4 and 5: 43.7% vs. cluster 1\u20133: 24.6%; p-value <0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical analysis of isotype distribution across clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "a9ff3683-b9de-455a-9de7-f57aa0c9d010",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C14",
+      "claim": "87% (226/255) of all the reconstructed BCR heavy genes were identical to the germline sequence, that is, not somatically hypermutated, independently of their cluster origin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 87% (226/255) of all the reconstructed BCR heavy genes were identical to the germline sequence, that is, not somatically hypermutated, independently of their cluster origin (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides quantitative data on somatic hypermutation rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "0285f59f-0db0-4fad-a990-089b25feba15",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C15",
+      "claim": "A total of 3858 genes were differentially expressed in the ASC clusters, with 1406 overexpressed among which PRDM1 and XBP1 were top hits.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3858 genes were differentially expressed in the ASC clusters, with 1406 overexpressed among which PRDM1 and XBP1 were top hits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents results from differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "2db21e8d-be9d-415f-bb63-53293ceaed3b",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C16",
+      "claim": "Out of the 1406 upregulated genes found in in vitro-generated ASCs, 1113 (79%) were shared with at least one ex vivo ASC population, of which 349 (25%) were shared with all populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the overlap between the identified upregulated genes selected in in vitro and ex vivo data revealed that out of the 1406 upregulated genes found in in vitro-generated ASCs, 1113 (79%) were shared with at least one ex vivo ASC population, of which 349 (25%) were shared with all populations (Figure 2h and i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides quantitative analysis of gene overlap between in vitro and ex vivo ASCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f9b2c2a8-0fb2-483c-b11d-d82e172a07d5",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C17",
+      "claim": "293 (21%) genes were uniquely upregulated in in vitro-generated ASCs, indicating that these genes might be linked to in vitro culture rather than be general for ASCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 293 (21%) genes were uniquely upregulated in in vitro-generated ASCs, indicating that these genes might be linked to in vitro culture rather than be general for ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the data on unique gene expression in in vitro ASCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "2065b8ab-6d9e-481f-8e60-594faa61e242",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C18",
+      "claim": "In vitro-generated ASCs have highly similar transcriptional profiles compared to ex vivo-obtained ASCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these data show that the in vitro-generated ASCs have highly similar transcriptional profiles compared to ex vivo-obtained ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the comparison between in vitro and ex vivo ASCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "6ea5ee14-b582-4328-b38b-a916c39435c4",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C19",
+      "claim": "Cells in cluster 4 scored lower than cells in cluster 5 for both ASC similarity and enrichment, indicating a less dominant ASC gene signature in this cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells in cluster 4 scored lower than cells in cluster 5 for both ASC similarity and enrichment, indicating a less dominant ASC gene signature in this cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the results of similarity and enrichment score analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "aab44390-adbe-405b-b5d7-632d302edb77",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C20",
+      "claim": "Differential expression analysis between clusters 4 and 5 identified a total of 1076 differentially expressed genes, with 114 and 962 genes up- and downregulated in cluster 5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis between clusters 4 and 5 identified a total of 1076 differentially expressed genes, with 114 and 962 genes up- and downregulated in cluster 5, respectively (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents results from differential gene expression analysis between clusters 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "92ca2b04-f7bc-48e0-9ad0-06a254ace438",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C21",
+      "claim": "Network analysis of Gene Set Enrichment Analysis (GSEA) results for the differentially expressed genes revealed a predominant enrichment for terms concerning cytoskeleton organization, including supramolecular fiber organization, immune cell receptor signaling, and metabolism of steroids.",
+      "claim_type": "EXPLICIT",
+      "source": "Network analysis of Gene Set Enrichment Analysis (GSEA) results for the differentially expressed genes revealed a predominant enrichment for terms concerning cytoskeleton organization, including supramolecular fiber organization, immune cell receptor signaling, and metabolism of steroids (Figure 3d, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the results of GSEA network analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "0100e711-3438-4274-b16e-fb5d215c5c45",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C22",
+      "claim": "Among the enriched terms concerning cytoskeleton organization, 'Arp2/3 complex-mediated actin nucleation' was found, recently shown to be important in immune synapses formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, among the enriched terms concerning cytoskeleton organization, we found 'Arp2/3 complex-mediated actin nucleation,' recently shown to be important in immune synapses formation (Bolger-Munro et al., 2019; Roper et al., 2019), BCR signaling and B cell activation, together with other terms involved in antigen uptake and processing (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript identifies specific enriched terms and cites literature supporting their functional relevance.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "41877db3-a283-4014-b433-d3b7a7d57e98",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C23",
+      "claim": "The majority of the processes indicated by the predominantly enriched terms were suppressed in cluster 5 compared to cluster 4, while specifically activated processes in cluster 5 were 'protein N-linked glycosylation' and 'retrograde protein transport'.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the processes indicated by the predominantly enriched terms were suppressed in cluster 5 compared to cluster 4, while specifically activated processes in cluster 5 were 'protein N-linked glycosylation' and 'retrograde protein transport' (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the directional changes in pathway activity between clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "2b4a170b-4f9b-4b3d-b5a3-869981eb2316",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C24",
+      "claim": "Cells in cluster 4 are still active in antigen presentation and processing, BCR signaling, and fatty acid metabolism, while such processes are being shut down in cells from cluster 5 that conversely upregulate genes involved in protein glycosylation and protein transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells in cluster 4 are still active in antigen presentation and processing, BCR signaling, and fatty acid metabolism, while such processes are being shut down in cells from cluster 5 that conversely upregulate genes involved in protein glycosylation and protein transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the functional differences between clusters 4 and 5 based on gene expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "433e221a-3c34-4cc5-9f72-5cafe4c34b3c",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C25",
+      "claim": "Projection of the RNA velocity vectors on the UMAP representation revealed an area of increased velocity in cluster 4 in the direction of cluster 5, indicating that cells in cluster 4 are rapidly transitioning toward the transcriptomic signature of cells in cluster 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Projection of the RNA velocity vectors on the UMAP representation revealed an area of increased velocity in cluster 4 in the direction of cluster 5, indicating that cells in cluster 4 are rapidly transitioning toward the transcriptomic signature of cells in cluster 5 (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the results of RNA velocity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "dd15a909-c802-43c2-b69c-c7603c3e56c4",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C26",
+      "claim": "At the top-right extremity of cluster 5, where most of the non-cycling cells are located, no velocity vectors are projected, implying that no subsequent cellular stage could be appointed, suggesting an endpoint of differentiation here.",
+      "claim_type": "EXPLICIT",
+      "source": "At the top-right extremity of cluster 5, where most of the non-cycling cells are located, no velocity vectors are projected. This implies that no subsequent cellular stage could be appointed, suggesting an endpoint of differentiation here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the absence of velocity vectors as indicating a terminal differentiation state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "7636a743-47f0-43d7-9801-43b477db6a89",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C27",
+      "claim": "Results of PAGA showed increased connectivity among clusters 4 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, results of PAGA showed increased connectivity among clusters 4 and 5 (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the results of PAGA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "60d17040-65fd-4fdc-b089-35f781b10987",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C28",
+      "claim": "Only cluster 4 and not cluster 5 was shown to be connected with all three B cell clusters, with cluster 3 being the most pronounced connection followed by cluster 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only cluster 4 and not cluster 5 was shown to be connected with all three B cell clusters, with cluster 3 being the most pronounced connection followed by cluster 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the connectivity patterns revealed by PAGA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "47a00407-be00-4aec-af57-53666ba166de",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C29",
+      "claim": "Cluster 4 is more similar to the B cell clusters than cluster 5.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that cluster 4 is more similar to the B cell clusters than cluster 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the connectivity data to infer similarity relationships.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "153de6d8-96f0-488f-9712-a90e0694d683",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C30",
+      "claim": "In the bone marrow dataset, the highest similarity score with the cluster 4 hallmark genes was observed in the cells connecting naive B cells to plasma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bone marrow dataset, the highest similarity score with the cluster 4 hallmark genes was observed in the cells connecting naive B cells to plasma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the results of applying cluster 4 hallmark genes to ex vivo datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "6b824b28-7543-486c-a176-f2a2979964c8",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C31",
+      "claim": "The GC B cells in the tonsil dataset, both non-cycling LZ and cycling DZ GC B cells, showed the highest similarity score with cluster 4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the GC B cells in the tonsil dataset, both non-cycling LZ and cycling DZ GC B cells, showed the highest similarity score with cluster 4 cells, while in the peripheral blood dataset, few cells in the naive/memory cluster showed increased similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the results of applying cluster 4 hallmark genes to ex vivo tonsil data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "a61d45cb-9dd4-4a3d-9ac9-86a37aeb71d8",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C32",
+      "claim": "When performing the same analysis with the hallmark genes from cluster 5, the highest similarity was observed in each tissue-specific ASC population.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, when performing the same analysis with the hallmark genes from cluster 5, the highest similarity was observed in each tissue-specific ASC population, as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the results of applying cluster 5 hallmark genes to ex vivo datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "b5c5ee90-1348-4d62-828b-d54d480bd9e9",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C33",
+      "claim": "Cluster 5 represents a terminally differentiated ASC population.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, taken together these results show that cluster 5 represents a terminally differentiated ASC population and that cluster 4 represents a novel B cell to ASC intermediate cellular stage, a precursor of terminally differentiated ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes based on multiple lines of evidence that cluster 5 is terminally differentiated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "4bb06aef-367d-4e52-b015-461979d1c034",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C34",
+      "claim": "Cluster 4 represents a novel B cell to ASC intermediate cellular stage, a precursor of terminally differentiated ASCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, taken together these results show that cluster 5 represents a terminally differentiated ASC population and that cluster 4 represents a novel B cell to ASC intermediate cellular stage, a precursor of terminally differentiated ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes based on multiple lines of evidence that cluster 4 is a novel intermediate stage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f1e1e2bb-a544-48f1-b7b2-723f5ed3a267",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C35",
+      "claim": "The novel B cell to ASC intermediate cellular stage can be found ex vivo, mainly in lymphoid tissues with active ASC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This population can also be found ex vivo, mainly in lymphoid tissues with active ASC differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that the cluster 4 population is found in ex vivo tissues based on similarity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "d5fa21be-80e3-4ebb-8083-604de37ba90a",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C36",
+      "claim": "Genes that mark a GC B cell phenotype, such as IRF8, BCL6, CD22, and CD83, were among the top 30 differentially expressed genes in cluster 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, genes that mark a GC B cell phenotype, such as IRF8, BCL6, CD22, and CD83, were among the top 30 differentially expressed genes in cluster 2 (Basso and Dalla-Favera, 2010; Meyer et al., 2021; Victora et al., 2012; Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies specific genes in cluster 2 and cites literature supporting their association with GC B cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "6fa7e42c-d485-49cd-ac25-dc52460452cc",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C37",
+      "claim": "When performing GSEA using hallmark gene sets on the differentially expressed genes in cluster 2, MYC and E2F targets, known to promote GC B cell differentiation, were the top 3 significantly enriched gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "When performing GSEA using hallmark gene sets on the differentially expressed genes in cluster 2, MYC (Calado et al., 2012; Dominguez-Sola et al., 2012) and E2F (B\u00e9guelin et al., 2017) targets, known to promote GC B cell differentiation, were the top 3 significantly enriched gene sets and, in fact, MYC was expressed at its highest in cluster 2 compared to the other clusters (Figure 4b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes GSEA results and cites literature supporting the role of MYC and E2F in GC B cell differentiation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "7c8d6e1a-3108-4dfc-b890-af1174cd5df9",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C38",
+      "claim": "MYC was expressed at its highest in cluster 2 compared to the other clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "When performing GSEA using hallmark gene sets on the differentially expressed genes in cluster 2, MYC (Calado et al., 2012; Dominguez-Sola et al., 2012) and E2F (B\u00e9guelin et al., 2017) targets, known to promote GC B cell differentiation, were the top 3 significantly enriched gene sets and, in fact, MYC was expressed at its highest in cluster 2 compared to the other clusters (Figure 4b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents gene expression data for MYC across clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "d99891bc-c95f-4615-9e24-6c6bb3b78c73",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C39",
+      "claim": "The similarity score with ex vivo-sorted human GC B cells was the highest in cluster 2, followed by cluster 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the similarity score with ex vivo-sorted human GC B cells was the highest in cluster 2, followed by cluster 3 (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents similarity score analysis comparing in vitro clusters to ex vivo GC B cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "2f45df35-6eea-4e12-841b-41ab68462849",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C40",
+      "claim": "Cells in cluster 2 represent GC-like B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that cells in cluster 2 represent GC-like B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes based on multiple lines of evidence that cluster 2 has a GC-like phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "afd70bfd-cf8c-4556-a874-0a236d1e852a",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C41",
+      "claim": "Cluster 3 might represent a post-GC population primed to become ASCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the intermediate similarity with both GC B cells and ASC gene signatures (Figures 3a and 4b) and the higher connectivity indicated by PAGA with the pre-ASCs cluster 4 compared to the other B cell cluster, we hypothesize that cluster 3 might represent a post-GC population primed to become ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript hypothesizes about the identity of cluster 3 based on similarity scores and connectivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "61baf08e-245a-4c1c-90cf-d0f9da635b8b",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C42",
+      "claim": "Among the top differentially expressed genes of cluster 1, BANK1 was found, recently identified as a marker of a pre-memory B cell stage together with CCR6.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the top differentially expressed genes of cluster 1, we found BANK1, recently identified as a marker of a pre-memory B cell stage (Holmes et al., 2020) together with CCR6, which was also expressed at the highest in cluster 1 (Figure 4e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript identifies specific genes in cluster 1 and cites literature supporting their association with pre-memory B cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "029a6648-c8ca-47c2-bdc7-8d4ef100067a",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C43",
+      "claim": "MZB1, identified as a marker of pre-ASCs, is expressed at its lowest in cluster 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, MZB1, identified in the same study as a marker of pre-ASCs, is expressed at its lowest in cluster 1 (Figure 4g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents gene expression data for MZB1 and cites literature on its role as a pre-ASC marker.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "72c714ea-dfc6-4110-8b8d-ffdf0ff35bbf",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C44",
+      "claim": "ITGAX (CD11c) was indicated as differentially expressed in cluster 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ITGAX (CD11c) was indicated as differentially expressed in cluster 1 (Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents differential gene expression data for cluster 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "a2a85b70-65f2-467a-b46c-ee7eb6055bb8",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C45",
+      "claim": "ITGAX (CD11c) defines a heterogeneous population of, mostly, memory B cells initially discovered in the context of aging and autoimmune disease, called atypical memory B cells or age-associated B cells (ABCs) that are thought to be generated through an alternative extra-follicular pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This gene defines a heterogeneous population of, mostly, memory B cells initially discovered in the context of aging and autoimmune disease, called atypical memory B cells or age-associated B cells (ABCs) that are thought to be generated through an alternative extra-follicular pathway (Sutton et al., 2021; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature describing the biological significance of ITGAX expression.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "72c4b91f-0846-4b55-9ad0-edcc0c61ebf1",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C46",
+      "claim": "The expression of other genes associated with the CD11c+ phenotype, such as SIGLEC6 and FCRL5, was increased in cluster 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the expression of other genes associated with the CD11c+ phenotype, such as SIGLEC6 and FCRL5, was increased in cluster 1 (Figure 4i and j) while CR2 (CD21), TBX21 (T-bet), FCRL4, and CXCR3 were not expressed in our dataset (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents gene expression data for genes associated with the CD11c+ phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "5e7bb618-5bbf-4fb4-bfab-b283d673d61e",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C47",
+      "claim": "CR2 (CD21), TBX21 (T-bet), FCRL4, and CXCR3 were not expressed in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the expression of other genes associated with the CD11c+ phenotype, such as SIGLEC6 and FCRL5, was increased in cluster 1 (Figure 4i and j) while CR2 (CD21), TBX21 (T-bet), FCRL4, and CXCR3 were not expressed in our dataset (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that certain genes were not detected in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "abe3db16-5964-4f8c-8af5-df6ad67c0da6",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C48",
+      "claim": "HHEX, recently shown to direct B cells away from the GC reaction into memory differentiation, was increased in cluster 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, HHEX, recently shown to direct B cells away from the GC reaction into memory differentiation (Laidlaw et al., 2020), was also increased in cluster 1 (Figure 4k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents gene expression data for HHEX and cites literature on its functional role.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "372790ec-0a06-469f-baef-d52311c7f1b8",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C49",
+      "claim": "Cells in cluster 1 are committed to becoming memory B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that cells in cluster 1 are committed to becoming memory B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the gene expression data to suggest a memory B cell fate for cluster 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "30262e49-0404-4490-9f07-ef42d5d8b384",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C50",
+      "claim": "The ASCs similarity score increases following UMAP1-based differentiation, starting at the lowest in cluster 2 and gradually increasing going through clusters 3\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the ASCs similarity score increases following UMAP1-based differentiation, starting at the lowest in cluster 2 and gradually increasing going through clusters 3\u20135.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the pattern of ASC similarity scores across the differentiation trajectory.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "8145a4a2-b2a4-4675-81d7-82feaed4a876",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C51",
+      "claim": "The similarity with GC B cell starts at the highest in cluster 2 and rapidly decreases going toward cluster 1; a slight stagnation is then observed in correspondence to cluster 3, followed by an additional decrease going through clusters 4 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the similarity with GC B cell starts at the highest in cluster 2 and rapidly decreases going toward cluster 1; a slight stagnation is then observed in correspondence to cluster 3, followed by an additional decrease going through clusters 4 and 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the pattern of GC B cell similarity scores across the differentiation trajectory.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "d35c8922-9f71-445d-8c41-6e3a7fe29b96",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C52",
+      "claim": "The similarity with memory B cells starts low with cluster 2, picks up in cluster 1, and decreases again through clusters 3\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the similarity with memory B cells starts low with cluster 2, picks up in cluster 1, and decreases again through clusters 3\u20135.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the pattern of memory B cell similarity scores across the differentiation trajectory.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "306763f9-dc2d-4c99-a0a2-ce4e9db02f9f",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C53",
+      "claim": "The differentiation dynamics observed in the in vitro system recapitulate ex vivo naive B cell differentiation processes, including both a memory and an ASC differentiation route.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the differentiation dynamics observed in our in vitro system recapitulate ex vivo naive B cell differentiation processes, including both a memory and an ASC differentiation route.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes that the in vitro system recapitulates in vivo differentiation based on similarity score analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "e62dee51-a1c6-4d48-9ed2-9982247d9f6a",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C54",
+      "claim": "B cells with a GC-like phenotype are identified in vitro from human naive B cells after culture in the presence of IL-4 and IL-21, and CD40L costimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, these results indicate that B cells with a GC-like phenotype are identified in vitro from human naive B cells after culture in the presence of IL-4 and IL-21, and CD40L costimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes that GC-like B cells are generated in the in vitro system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f5ad8988-d555-4505-b35f-2216b75f43b3",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C55",
+      "claim": "A post-GC B cell population with increased connectivity to the novel B cell to ASCs intermediate and a B cell population with a memory-like phenotype were found.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we find a post-GC B cell population with increased connectivity to the novel B cell to ASCs intermediate and a B cell population with a memory-like phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the identification of different B cell populations in the in vitro system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "62bd15f8-67b6-44ef-bb2c-beee417a933e",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C56",
+      "claim": "The in vitro-generated ASC are highly comparable to ex vivo ASCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that the in vitro-generated ASC are highly comparable to ex vivo ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the comparison between in vitro and ex vivo ASCs in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "cc19ea1e-037b-4b23-9ef3-8aec13d36e38",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C57",
+      "claim": "A B cell to ASCs intermediate population still active in antigen presentation and processing was identified that shows transcriptional similarity to B cell populations found ex vivo in lymphoid tissue with active ASCs differentiation processes (like tonsils).",
+      "claim_type": "EXPLICIT",
+      "source": "This led to the identification of a B cell to ASCs intermediate population still active in antigen presentation and processing that shows transcriptional similarity to B cell populations found ex vivo in lymphoid tissue with active ASCs differentiation processes (like tonsils) and phenotypic resemblance (i.e., intermediate CD27 and CD38 expression, lower expression of PRDM1, and higher expression of PAX5 compared to CD138 plasma blasts) to a pre-ASC population recently identified in the peripheral blood of healthy individuals 6 days post-vaccination (Sanz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the characteristics of the identified intermediate population and cites literature on a similar population.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "32f08ef1-77ee-43c2-9834-a60cb597e883",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C58",
+      "claim": "The B cell to ASCs intermediate population shows phenotypic resemblance (i.e., intermediate CD27 and CD38 expression, lower expression of PRDM1, and higher expression of PAX5 compared to CD138 plasma blasts) to a pre-ASC population recently identified in the peripheral blood of healthy individuals 6 days post-vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to the identification of a B cell to ASCs intermediate population still active in antigen presentation and processing that shows transcriptional similarity to B cell populations found ex vivo in lymphoid tissue with active ASCs differentiation processes (like tonsils) and phenotypic resemblance (i.e., intermediate CD27 and CD38 expression, lower expression of PRDM1, and higher expression of PAX5 compared to CD138 plasma blasts) to a pre-ASC population recently identified in the peripheral blood of healthy individuals 6 days post-vaccination (Sanz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the phenotypic characteristics of the intermediate population and cites literature on a similar population.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "943042ed-b8cc-4d76-aca4-fb8c21810df7",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C59",
+      "claim": "The B cell to ASCs intermediate population might represent a previously overseen B cell to ASCs intermediate that is challenging to identify in normal steady-state conditions as it only appears transiently during ASC formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This population might therefore represent a previously overseen B cell to ASCs intermediate that is challenging to identify in normal steady-state conditions as it only appears transiently during ASC formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on why this population has not been previously identified.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "ddc79842-4d90-4ed5-b05f-6392bce4cb7a",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C60",
+      "claim": "B cells with a GC-like and a pre-memory phenotype were identified in the in vitro system, thus recapitulating the different naive B differentiation processes observed in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, B cells with a GC-like and a pre-memory phenotype were identified in our in vitro system, thus recapitulating the different naive B differentiation processes observed in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the identification of different B cell populations in the in vitro system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "296cef85-1e69-4867-a9c0-90cce8c47abd",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C61",
+      "claim": "This is the first study in which GC-like B cells are identified in vitro from human naive B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, this is the first study in which GC-like B cells are identified in vitro from human naive B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript claims novelty for the identification of GC-like B cells in vitro from human naive B cells.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "85b4230b-d029-402a-8455-2b25b0929c34",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C62",
+      "claim": "A similar culture system is well-established and commonly used in mouse B cell biology.",
+      "claim_type": "EXPLICIT",
+      "source": "While a similar culture system is well-established and commonly used in mouse B cell biology (Gonzalez et al., 2018; Nojima et al., 2011), studies utilizing human B cells are limited in comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on similar culture systems in mouse studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "188f135b-f2c5-4a19-b5c8-ad13ae209d44",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C63",
+      "claim": "Studies utilizing human B cells are limited in comparison to mouse studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While a similar culture system is well-established and commonly used in mouse B cell biology (Gonzalez et al., 2018; Nojima et al., 2011), studies utilizing human B cells are limited in comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that human B cell studies are less common than mouse studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "2a903099-8857-4626-824e-98ec388e0f86",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C64",
+      "claim": "The higher connectivity observed among the three B cell clusters rather than with the ASCs cluster could indicate the presence of an alternative differentiation wave in time.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, the higher connectivity observed among the three B cell clusters rather than with the ASCs cluster could indicate the presence of an alternative differentiation wave in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the meaning of the connectivity patterns observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "40bc1cba-2e5b-4de9-8cb6-f543442e868b",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C65",
+      "claim": "The GC B cells of cluster 2 might represent the next GC reaction after the one that gave rise to the ASCs of clusters 4 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the GC B cells of cluster 2 might represent the next GC reaction after the one that gave rise to the ASCs of clusters 4 and 5, and that would have generated new ASCs, possibly from cluster 3 if the culture would not be interrupted for analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the temporal relationship between different cell populations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "c418574d-91b5-42cd-af8d-b075c83df195",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C66",
+      "claim": "Different levels of antigen-affinity and different timing of generation during the GC reaction dictate the fate of a GC B cell to become either a memory B cell or a long-lived plasma cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A concept that is now supported by several studies is that different levels of antigen-affinity and different timing of generation during the GC reaction dictate the fate of a GC B cell to become either a memory B cell or a long-lived plasma cell (Smith et al., 1997; Weisel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature supporting the concept that affinity and timing influence B cell fate.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "a24e99f7-98e5-4a34-9471-dabb044eefd6",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C67",
+      "claim": "Memory B cells that arise from GC reactions are an earlier output in the GC reaction than plasma cells and therefore accumulate somewhat less (albeit is mostly still considerable) affinity-increasing SHM.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory B cells that arise from GC reactions are an earlier output in the GC reaction than plasma cells and therefore accumulate somewhat less (albeit is mostly still considerable) affinity-increasing SHM (Weisel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on the timing and characteristics of memory B cell generation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "0afb2fb5-938a-459d-b6e3-d0c1d7366d3c",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C68",
+      "claim": "Long-lived plasma cells are generated at a later stage of the GC reaction and are equipped with highly affine and highly mutated BCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, long-lived plasma cells are generated at a later stage of the GC reaction and are equipped with highly affine and highly mutated BCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states characteristics of long-lived plasma cells based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "d98099ab-c940-4eb8-9efe-8079ef6d278c",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C69",
+      "claim": "Mouse studies have highlighted the role of Tfh-produced cytokines such as IL-21 and IL-4 in respectively inducing long-lived plasma cells or memory B cells upon in vivo transfer of in vitro-induced GC-like B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, mouse studies have highlighted the role of Tfh-produced cytokines such as IL-21 and IL-4 in respectively inducing long-lived plasma cells or memory B cells upon in vivo transfer of in vitro-induced GC-like B cells (Nojima et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on the role of cytokines in B cell fate determination in mice.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "14a6e810-4df1-402e-a1fa-5814b3a5a436",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C70",
+      "claim": "In the in vitro system, IL-21 and IL-4 are provided together, explaining the possibility of having both plasma cell and memory populations at the end of the culture.",
+      "claim_type": "EXPLICIT",
+      "source": "In our in vitro system, IL-21 and IL-4 are provided together, explaining the possibility of having both plasma cell and memory populations at the end of the culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the presence of both cell types based on the culture conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "2b5da119-1ee2-4a68-8b2e-985c588f9476",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C71",
+      "claim": "In vitro mouse studies demonstrated that naive B cells need to be primed in culture with IL-4 to obtain the GC-like phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in vitro mouse studies demonstrated that naive B cells need to be primed in culture with IL-4 to obtain the GC-like phenotype and that naive B cells cultured directly in presence of IL-21 proliferate less and directly differentiate into ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites knowledge from mouse studies on the role of IL-4 in GC-like phenotype induction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "ac6a3d8e-995e-415d-9e8f-0cca73164028",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C72",
+      "claim": "Naive B cells cultured directly in presence of IL-21 proliferate less and directly differentiate into ASCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in vitro mouse studies demonstrated that naive B cells need to be primed in culture with IL-4 to obtain the GC-like phenotype and that naive B cells cultured directly in presence of IL-21 proliferate less and directly differentiate into ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites knowledge from mouse studies on the effect of IL-21 on B cell differentiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "2836b181-78e8-47c2-9aa5-563c54d43034",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C73",
+      "claim": "The metabolism of steroids and cholesterol were among the most enriched terms for the differentially expressed genes between the pre- and terminally differentiated ASCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the metabolism of steroids and cholesterol were among the most enriched terms for the differentially expressed genes between the pre- and terminally differentiated ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes enriched terms from the differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "6763a484-7f6f-4eb5-8a86-ec823291b4e8",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C74",
+      "claim": "The full commitment to antibody production and secretion of terminally differentiated ASCs requires a massive reprogramming of the metabolism not only to provide the molecular 'bricks' for antibody production, that is, amino acids and sugars, but also the cellular machinery to sustain such massive production, that is, ER and Golgi expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with the concept that the full commitment to antibody production and secretion of terminally differentiated ASCs requires a massive reprogramming of the metabolism not only to provide the molecular 'bricks' for antibody production, that is, amino acids and sugars, but also the cellular machinery to sustain such massive production,that is, ER and Golgi expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses the metabolic requirements for ASC function based on established concepts.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "dde19fc0-9d6e-41c7-b087-2a92cf379e14",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C75",
+      "claim": "Several studies demonstrated that the de novo synthesis of fatty acid is a crucial step in plasma cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, several studies demonstrated that the de novo synthesis of fatty acid is a crucial step in plasma cell formation (Dufort et al., 2014; Fagone et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on the role of fatty acid synthesis in plasma cell formation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "db809161-eaaf-4bf3-a0b7-ecb9f4baced3",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C76",
+      "claim": "Some new pieces of evidence support the hypothesis that antibody secretion and ER stress might be linked to the longevity of plasma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, some new pieces of evidence support the hypothesis that antibody secretion and ER stress might be linked to the longevity of plasma cells (Goldfinger et al., 2011; Pengo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature suggesting a link between ER stress and plasma cell longevity.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "e499b805-452c-43ea-8df8-c7c1cf27ddc8",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C77",
+      "claim": "A total of 276 (out of 382 sorted cells) high-quality cells that together express 17,716 genes were included in the final dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "After raw data processing and quality control, a total of 275 (out of 382 sorted cells) high-quality cells that together express 17,716 genes were included in the final dataset (Figure 1\u2014figure supplement 1a\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides details on the number of cells and genes in the final dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "edb280c4-cece-4642-8db0-8efe614fe335",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C78",
+      "claim": "A functional B cell receptor heavy chain rearrangement was successfully reconstructed for 255 out of 276 cells analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "A functional B cell receptor heavy chain rearrangement was successfully reconstructed for 255 out of 276 cells analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative data on BCR reconstruction success rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f2dcea32-aa6f-43f5-8e59-c484ea234132",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C79",
+      "claim": "Triggering of the IgM BCR with soluble anti-IgM antibodies or IgM-coated beads did not contribute to enhanced ASC differentiation in the minimalistic cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Triggering of the IgM BCR with soluble anti-IgM antibodies or IgM-coated beads did not contribute to enhanced ASC differentiation in the minimalistic cultures (Unger et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study showing that BCR triggering was not necessary for ASC differentiation in this system.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "e801967a-9278-41cd-ac4b-cf66f65c44e3",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C80",
+      "claim": "Protection from invading pathogens is, in part, provided by antibody-secreting cells (ASCs) that secrete high-affinity class-switched antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Protection from invading pathogens is, in part, provided by antibody-secreting cells (ASCs) that secrete high-affinity class-switched antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about the role of ASCs in immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "6ce06a6d-9671-4613-8cfb-3cab1648ea2a",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C81",
+      "claim": "Antibody formation can be highly undesired in the case of detrimental autoantibodies in autoimmune disorders, alloantibodies that react with donor blood cells after a blood transfusion, or antibodies formed against therapeutic biologics that interfere with their therapeutic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody formation, however, can also be highly undesired. This is the case for detrimental autoantibodies in autoimmune disorders, for alloantibodies that react with donor blood cells after a blood transfusion, or for antibodies that are formed against therapeutic biologics and that interfere with their therapeutic efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about undesired antibody formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "710d76b6-d6d9-4d5b-97b5-7eeb8ee0a583",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C82",
+      "claim": "Plasma cells secreting high-affinity antibodies are generated from naive B cells that, upon foreign antigen recognition by the antigen-specific B cell receptor (BCR), get activated and after CD4 T cell help can start a germinal center (GC) reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma cells secreting high-affinity antibodies are generated from naive B cells that, upon foreign antigen recognition by the antigen-specific B cell receptor (BCR), get activated and after CD4 T cell help can start a germinal center (GC) reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about the process of plasma cell generation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "0e4673b8-35b2-4d2a-9d7d-09b20919f2f2",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C83",
+      "claim": "In the GC, B cells differentiate into GC B cells and begin to cycle between the GC dark zone (DZ) and the GC light zone (LZ).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, B cells differentiate into GC B cells and begin to cycle between the GC dark zone (DZ) and the GC light zone (LZ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about GC B cell dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "6ab416f2-6532-4335-8398-0975107fd77e",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C84",
+      "claim": "In the GC dark zone, GC B cells undergo several rounds of cell cycle and receptor editing processes, such as somatic hypermutation and class-switching.",
+      "claim_type": "EXPLICIT",
+      "source": "In the former, GC B cells undergo several rounds of cell cycle and receptor editing processes, such as somatic hypermutation and class-switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about processes occurring in the GC dark zone.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f5af562c-bbde-484c-a7ef-32f6abd72f14",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C85",
+      "claim": "In the GC light zone, B cells need to reacquire antigen and present antigenic peptides to cognate antigen-specific CD4 T follicular helper (Tfh) cells to receive the required co-stimulatory, survival, and differentiation signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter, B cells need to reacquire antigen and present antigenic peptides to cognate antigen-specific CD4 T follicular helper (Tfh) cells to receive the required co-stimulatory, survival, and differentiation signals (Bryant et al., 2007; King and Mohrs, 2009; King et al., 2008; Reinhardt et al., 2009; Yusuf et al., 2010; Glatman Zaretsky et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature describing processes in the GC light zone.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "e8737329-2f46-4618-9d2a-4be1671a92b8",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C86",
+      "claim": "After several rounds of DZ to LZ cycling, the GC process results in the selection of high-affinity, class-switched B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After several rounds of DZ to LZ cycling, this process results in the selection of high-affinity, class-switched B cells (reviewed in Victora and Nussenzweig, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a review describing the outcome of GC reactions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "3a1c70c4-365f-4a95-927b-f7bb8fd39a55",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C87",
+      "claim": "Early memory B cell and early plasmablast formation occur before GC establishment.",
+      "claim_type": "EXPLICIT",
+      "source": "While early memory B cell and early plasmablast formation occur before GC establishment (Glaros et al., 2021), the GC reactions give rise to a later stage, higher affinity memory B cell formation followed by the eventual formation of high-affinity, ASCs (plasmablasts and plasma cells) (Weisel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on the timing of memory B cell and plasmablast formation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "8b94a041-9b7d-4c11-8c8d-ce2924733c2c",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C88",
+      "claim": "The GC reactions give rise to a later stage, higher affinity memory B cell formation followed by the eventual formation of high-affinity, ASCs (plasmablasts and plasma cells).",
+      "claim_type": "EXPLICIT",
+      "source": "While early memory B cell and early plasmablast formation occur before GC establishment (Glaros et al., 2021), the GC reactions give rise to a later stage, higher affinity memory B cell formation followed by the eventual formation of high-affinity, ASCs (plasmablasts and plasma cells) (Weisel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on the outcomes of GC reactions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "004c2151-32a5-48df-a54f-484251fbd3a7",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C89",
+      "claim": "Migration of plasma cells to the bone marrow and incorporation into bone marrow survival niches establishes long-lived plasma cells that may secrete antibodies for decades.",
+      "claim_type": "EXPLICIT",
+      "source": "Migration of plasma cells to the bone marrow and incorporation into bone marrow survival niches establishes long-lived plasma cells that may secrete antibodies for decades (Belnoue et al., 2008; Cassese et al., 2003; Radbruch et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on long-lived plasma cell establishment and function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f01a089e-face-4d66-bd4d-bfcf5b88cf75",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C90",
+      "claim": "The transition of B cell into ASC is tightly regulated on the molecular level by a complex network of transcription factors that control the switch from the B cell stage to the ASC stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition of B cell into ASC is tightly regulated on the molecular level by a complex network of transcription factors that control the switch from the B cell stage to the ASC stage (reviewed in Verstegen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a review on transcriptional regulation of B cell to ASC transition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "fb24e12b-51be-476c-83bc-2b57196c7f87",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C91",
+      "claim": "The ASC-specific transcription factors IRF4, XBP1, and BLIMP1 are upregulated only once the B cell-specific transcription factors PAX5, IRF8, and BACH2 are downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "The ASC-specific transcription factors IRF4, XBP1, and BLIMP1 are upregulated only once the B cell-specific transcription factors PAX5, IRF8, and BACH2 are downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about transcription factor regulation during B cell to ASC transition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "75e3a202-e19c-463e-8995-6334f531cdfb",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C92",
+      "claim": "Transcriptional changes during B cell to ASC transition are followed by surface expression of stage-specific cellular markers, such as CD27, CD38, and CD138 on ASCs, with simultaneous downregulation of the B cell markers CD19 and CD20.",
+      "claim_type": "EXPLICIT",
+      "source": "These transcriptional changes are then followed by surface expression of stage-specific cellular markers, such as CD27, CD38, and CD138 on ASCs, with simultaneous downregulation of the B cell markers CD19 and CD20 (Loken et al., 1987; Sanderson et al., 1989; Tangye et al., 1998; Terstappen et al., 1990; Victora et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on cell surface marker changes during B cell to ASC transition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "eae96eb7-a3be-488f-9688-08302acd10c5",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C93",
+      "claim": "Bulk RNA sequencing on sorted B cells ex vivo has identified differences between naive B cells, GC B cells, memory B cells, plasmablasts, and plasma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk RNA sequencing on sorted B cells ex vivo has identified differences between naive B cells, GC B cells, memory B cells, plasmablasts, and plasma cells (Halliley et al., 2015; Minnich et al., 2016; Tarte et al., 2003), but does not allow delineation of the actual differentiation process and the various stages through which B cells transition to becoming ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on bulk RNA sequencing studies of B cells.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "1830af2c-d437-49f6-a6da-d0ff7b586d51",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C94",
+      "claim": "Bulk RNA sequencing does not allow delineation of the actual differentiation process and the various stages through which B cells transition to becoming ASCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk RNA sequencing on sorted B cells ex vivo has identified differences between naive B cells, GC B cells, memory B cells, plasmablasts, and plasma cells (Halliley et al., 2015; Minnich et al., 2016; Tarte et al., 2003), but does not allow delineation of the actual differentiation process and the various stages through which B cells transition to becoming ASCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a limitation of bulk RNA sequencing approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "1186fa04-2161-4d14-a102-0e98eb85e20b",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C95",
+      "claim": "The development of single-cell sequencing techniques circumvents the problem of bulk RNA sequencing and allows for the discovery of new cellular subsets and cells that are transitioning from one cellular differentiation state to another.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of single-cell sequencing techniques circumvents this problem and allows for the discovery of new cellular subsets and cells that are transitioning from one cellular differentiation state to another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the advantages of single-cell sequencing over bulk sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "d65d60f3-2b55-4719-9083-107fe478b02b",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C96",
+      "claim": "Single-cell sequencing has been used to identify B cell subsets in the immune landscape of tumor-infiltrating lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, single-cell sequencing has been used, among others, to identify B cell subsets in the immune landscape of tumor-infiltrating lymphocytes (Chung et al., 2017), delineate malignant B cells in follicular lymphomas (Andor et al., 2019), and identify transiting bone marrow progenitor cell populations that commit to the B cell lineage (Alberti-Servera et al., 2017; Miyai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on applications of single-cell sequencing to B cell biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "17cd920c-c08b-4062-aa77-8e491937e6e7",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C97",
+      "claim": "Software to reconstruct B cell receptor sequences from single-cell RNA sequencing data has been developed in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, software to reconstruct B cell receptor sequences from single-cell RNA sequencing data has been developed in recent years (Canzar et al., 2016; Lindeman et al., 2018; Rizzetto et al., 2018; Upadhyay et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on BCR reconstruction software.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "4f9ead26-c25b-4b14-a769-206883f630be",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C98",
+      "claim": "In-depth characterization of the differentiation process of mature naive B cells into ASCs has been investigated by focusing on parts of this differentiation process, for example, GC LZ to DZ migration.",
+      "claim_type": "EXPLICIT",
+      "source": "In-depth characterization of the differentiation process of mature naive B cells into ASCs has been investigated by focusing on parts of this differentiation process, for example, GC LZ to DZ migration (Dominguez-Sola et al., 2015; Milpied et al., 2018; Sander et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on previous studies of B cell differentiation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "c7d01a87-6ba1-415b-8850-3bfe00529658",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C99",
+      "claim": "It remains unclear how differentiation into plasma cells occurs and is regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this contributed to new insights into GC reactions, it remains unclear how differentiation into plasma cells occurs and is regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a gap in current knowledge about plasma cell differentiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "8bf0b0aa-bca2-42b2-b20e-0cb80139a875",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C100",
+      "claim": "More insight into the B cell differentiation process might uncover targets to regulate B cell differentiation into ASC at an early stage and to intervene in the generation of undesired antibodies in disease.",
+      "claim_type": "EXPLICIT",
+      "source": "More insight into this differentiation process might uncover targets to regulate B cell differentiation into ASC at an early stage and to intervene in the generation of undesired antibodies in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the potential translational implications of understanding B cell differentiation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "fefa804d-6d11-40e3-88ba-426f4200b47f",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C101",
+      "claim": "A minimalistic in vitro culture system was previously established that uniquely supports efficient in vitro differentiation of human naive B cells into CD27++CD38++ ASCs while also maintaining high cell numbers along the differentiation stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously established a minimalistic in vitro culture system that uniquely supports efficient in vitro differentiation of human naive B cells into CD27++CD38++ ASCs while also maintaining high cell numbers along the differentiation stages (Unger et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study describing the in vitro culture system.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "455a6cc8-d8e8-4a3f-8aa4-5ce7fc1ec883",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C102",
+      "claim": "In-depth single-cell transcriptomics, B cell receptor reconstruction and trajectory inference were applied on the in vitro-generated ASCs and combined with data from publicly available single-cell datasets of ex vivo obtained B cells and ASCs from different human tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we applied in-depth single-cell transcriptomics, B cell receptor reconstruction and trajectory inference on the in vitro-generated ASCs and combined analyses with data from publicly available single-cell datasets of ex vivo obtained B cells and ASCs from different human tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the analytical approaches used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "8c3c85a2-4b34-44a5-9629-4f0534448007",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C103",
+      "claim": "A novel pre-ASC population present ex vivo in lymphoid tissues was uncovered.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing transcriptomes of B cells at different stages of differentiation from an in vitro model with ex vivo B cells and ASCs, we uncovered a novel pre-ASC population present ex vivo in lymphoid tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a key finding of the study in the Abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f679e525-cc1b-4254-872c-40c86fa1ee5a",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C104",
+      "claim": "For the first time, a germinal-center-like population is identified in vitro from human naive B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first time, a germinal-center-like population is identified in vitro from human naive B cells and possibly progresses into a memory B cell population through an alternative route of differentiation, thus recapitulating in vivo human GC reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a key finding of the study in the Abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "638c813a-3f80-4ebf-bc9e-96c3d9f6b0a5",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "claim_id": "C105",
+      "claim": "The germinal-center-like population possibly progresses into a memory B cell population through an alternative route of differentiation, thus recapitulating in vivo human GC reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first time, a germinal-center-like population is identified in vitro from human naive B cells and possibly progresses into a memory B cell population through an alternative route of differentiation, thus recapitulating in vivo human GC reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a key finding and interpretation in the Abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "104afa30-be8e-4e52-9a00-7b557f3b42cd",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript describes an in vitro culture system for differentiating human naive B cells into antibody-secreting cells (ASCs). Naive B cells are cultured on CD40L-expressing fibroblasts with IL-4 and IL-21, requiring restimulation for efficient ASC differentiation. CRISPR-Cas9 knockout of PRDM1 suppresses ASC formation, confirming its functional importance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C6, C79, and C101 collectively describe the in vitro culture system and provide experimental validation. The CRISPR knockout experiment (C6) provides functional evidence for PRDM1's role, and the system is based on a previously published method (C101). The requirement for restimulation (C3) is supported by referenced data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "7310d025-3d60-4e21-b25b-247da165c5bd",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of in vitro differentiated B cells identified five distinct clusters. Clusters 4 and 5 show ASC gene signatures (IRF4, XBP1, PRDM1), containing 99% of CD27+CD38+ cells. Clusters 1-3 retain B cell signatures (PAX5, BACH2, SPIB).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 and C77 describe the scRNA-seq analysis and cluster identification with supporting figures. The quantitative data on cell distribution (C9) and gene expression patterns (C8, C10) are clearly presented. Quality control metrics (C77) support data reliability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "1eba638e-5815-4219-8c58-52ca0a2672d1",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "During B cell to ASC differentiation, cells progressively lose expression of B cell transcription factors (PAX5, BACH2) and upregulate ASC transcription factors (IRF4, XBP1, PRDM1), accompanied by surface marker changes (CD27, CD38 upregulation; CD19, CD20 downregulation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 present experimental qPCR data showing gradual transcription factor changes, while C91-C92 provide established knowledge context. The progressive nature of differentiation is supported by both the current data and cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "8c54fec4-11fb-4910-9eed-6c48ac2360c6",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BCR reconstruction analysis reveals that ASC clusters (4 and 5) express BCR genes 10-fold higher than B cell clusters, with increased IgG1 (43.7% vs 24.6%, p<0.001) and decreased IgM (36.6% vs 50.3%, p<0.01) compared to B cell clusters. 87% of reconstructed BCRs lack somatic hypermutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 and C78 present quantitative BCR analysis with statistical significance. The high success rate of BCR reconstruction (255/276 cells, C78) supports data quality. The lack of somatic hypermutation (C14) is consistent with the in vitro culture system starting from naive B cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "41071092-23b7-405f-b794-ad38889a23f7",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In vitro-generated ASCs show highly similar transcriptional profiles to ex vivo ASCs. Of 1406 upregulated genes in in vitro ASCs, 79% are shared with at least one ex vivo ASC population, with 25% shared across all populations. The remaining 21% may be culture-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 and C56 present comprehensive comparative analysis with quantitative overlap data. The high degree of overlap (79%) supports the validity of the in vitro system, while acknowledging culture-specific genes (21%) demonstrates appropriate interpretation of limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "821f9cba-664e-4d2a-8553-1883a68b360a",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cluster 4 represents a pre-ASC intermediate stage distinct from terminally differentiated cluster 5. Cluster 4 shows lower ASC similarity scores and remains active in antigen presentation, BCR signaling, and fatty acid metabolism. Cluster 5 suppresses these processes while upregulating protein glycosylation and transport. Steroid and cholesterol metabolism are enriched between the two clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 and C73 present differential expression analysis with GSEA pathway enrichment. The functional differences are well-characterized with specific enriched terms (C21-C23) and biological interpretation (C24). The metabolic findings (C73) align with known ASC biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "dc0e8ac1-6093-4628-914f-c1ed3b406143",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA velocity and PAGA analyses demonstrate that cluster 4 is a precursor to cluster 5. RNA velocity shows directional transition from cluster 4 to cluster 5, with no velocity vectors in non-cycling cluster 5 cells, suggesting terminal differentiation. PAGA shows cluster 4 connects to all B cell clusters while cluster 5 does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 present trajectory inference analyses using established computational methods (RNA velocity, PAGA). The convergent evidence from multiple analytical approaches strengthens the conclusion that cluster 4 is an intermediate stage. The absence of velocity vectors in cluster 5 (C26) appropriately suggests terminal differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "947312e9-2280-417b-9481-8bbda02d37a0",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cluster 4 represents a novel pre-ASC intermediate population found ex vivo in lymphoid tissues. Cluster 4 hallmark genes show highest similarity to cells connecting naive B cells to plasma cells in bone marrow and to GC B cells in tonsils. Cluster 5 represents terminally differentiated ASCs, with hallmark genes matching tissue-specific ASC populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 and C103 present validation of in vitro findings using ex vivo datasets. The similarity score analysis across multiple tissues (bone marrow, tonsil, peripheral blood) provides strong evidence for the existence of this intermediate population in vivo. The differential mapping of clusters 4 and 5 to distinct ex vivo populations supports their distinct identities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "2fc8a49b-0bb2-403d-a0ad-f72fdd8573ca",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cluster 2 represents GC-like B cells generated in vitro from human naive B cells. This cluster expresses GC markers (IRF8, BCL6, CD22, CD83), shows enrichment for MYC and E2F targets, has highest MYC expression, and shows highest similarity to ex vivo GC B cells. This is claimed to be the first identification of GC-like B cells from human naive B cells in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40, C54, C61, and C104 present multiple lines of evidence for GC-like phenotype: marker gene expression (C36), pathway enrichment (C37), MYC expression (C38), and similarity to ex vivo GC B cells (C39). The novelty claim (C61) is appropriately qualified ('to the best of our knowledge'). However, the lack of somatic hypermutation (C14) is somewhat inconsistent with typical GC B cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "a8cfc0ce-c1bd-4af1-9f39-8f78b76db4c9",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cluster 3 might represent a post-GC population primed to become ASCs, based on intermediate similarity with both GC B cells and ASC gene signatures and higher connectivity to cluster 4 compared to other B cell clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C41 is explicitly presented as a hypothesis by the authors ('we hypothesize'). While the similarity scores and connectivity data provide some support, no definitive phenotypic signature is identified for cluster 3. This remains speculative and requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f1eab64d-f7d0-4ee7-87c3-a5f0904b49e2",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cluster 1 represents cells committed to becoming memory B cells. This cluster expresses pre-memory markers (BANK1, CCR6), has lowest MZB1 expression, and shows increased expression of CD11c+ phenotype markers (ITGAX, SIGLEC6, FCRL5) and HHEX, which directs B cells away from GC reactions into memory differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 present gene expression data with appropriate literature citations supporting the functional roles of identified markers. The expression of BANK1/CCR6 (C42) and low MZB1 (C43) align with pre-memory phenotype. The CD11c+ signature (C44-C46) is interesting but somewhat complicates the interpretation, as these markers are associated with atypical memory B cells. The absence of some CD11c+ markers (C47) is noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "b2f2900b-6f3a-4a93-91c0-240f52934b15",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The in vitro system recapitulates ex vivo naive B cell differentiation processes, including both memory and ASC differentiation routes. Similarity score analysis along UMAP1 shows ASC similarity increasing through clusters 2\u21923\u21924\u21925, GC similarity highest in cluster 2 then decreasing, and memory similarity peaking in cluster 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 and C60 present similarity score analysis across the differentiation trajectory. The patterns are consistent with the proposed model of bifurcating differentiation pathways. However, the temporal relationship between clusters remains somewhat unclear, as noted in the Discussion (C64-C65).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "9a9c8bcd-a541-4272-89da-9b0f22f84e18",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The identified B cell to ASC intermediate population (cluster 4) shows transcriptional similarity to B cell populations in lymphoid tissues with active ASC differentiation and phenotypic resemblance to a pre-ASC population identified post-vaccination. This population may have been previously overlooked due to its transient appearance during ASC formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 synthesize findings and compare to published literature (Sanz et al., 2019). The phenotypic characteristics (intermediate CD27/CD38, lower PRDM1, higher PAX5) align with an intermediate differentiation state. The speculation about why this population was previously overlooked (C59) is reasonable but remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "20ddfbab-059b-4895-976e-4f27d4438d96",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The higher connectivity among B cell clusters (1-3) compared to ASC clusters could indicate an alternative differentiation wave in time, with cluster 2 GC B cells potentially representing a subsequent GC reaction after the one that generated clusters 4 and 5 ASCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C65 present speculative interpretations of the connectivity patterns. The authors acknowledge this is difficult to resolve bioinformatically and that temporal dynamics cannot be definitively determined from the single time point analysis. This remains an interesting hypothesis requiring time-course experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "7de1d295-14bb-4d55-af70-178dd4760744",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The presence of both memory and plasma cell populations in the culture is explained by providing both IL-21 and IL-4 together. Literature supports that antigen affinity and timing dictate GC B cell fate, with memory B cells arising earlier with less somatic hypermutation, while long-lived plasma cells arise later with highly mutated BCRs. Mouse studies show IL-21 induces plasma cells while IL-4 induces memory B cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72 provide literature context (with appropriate citations) to interpret the experimental findings. The explanation for observing both cell types (C70) is logical given the culture conditions. However, this is primarily discussion/interpretation rather than new experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "29e2db2c-da86-47e0-82d9-f508611cd752",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Terminal ASC differentiation requires massive metabolic reprogramming to support antibody production, including ER/Golgi expansion. De novo fatty acid synthesis is crucial for plasma cell formation, and antibody secretion/ER stress may be linked to plasma cell longevity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 present established concepts from literature (with appropriate citations) to contextualize the metabolic findings. These are primarily discussion points synthesizing prior knowledge rather than new experimental results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "1599e225-b7fd-4dea-96f5-9034c4e08f91",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The Introduction provides comprehensive background on ASC biology, GC reactions, transcriptional regulation, previous sequencing approaches, and the rationale for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C100 present established knowledge from literature with appropriate citations. These provide necessary context but are not novel findings from this study. The identification of knowledge gaps (C99) appropriately motivates the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "1192a087-6d97-4a7d-b78d-ee8cf065d944",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study applied single-cell transcriptomics, BCR reconstruction, and trajectory inference to in vitro-generated ASCs, integrating these data with publicly available ex vivo datasets from different human tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C102 accurately describes the analytical approach used in the study. The integration of in vitro and ex vivo data is a strength of the work. Methods are described in detail in the Materials and Methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    },
+    {
+      "id": "f26c5f79-6260-467e-9797-08757558dd7a",
+      "content_id": "5ad461ad-ac25-49c0-8466-10bb0ffdef8c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The GC-like population possibly progresses into a memory B cell population through an alternative route of differentiation, recapitulating in vivo human GC reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C105 presents a speculative interpretation ('possibly progresses') about the relationship between GC-like cells and memory B cells. While similarity score data (C50-C52) provide some support, the temporal relationship and direct lineage connection are not definitively established. The lack of somatic hypermutation (C14) also raises questions about how well this recapitulates in vivo GC reactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:30:02.862390Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5e29b3be-bdcf-4584-b882-411a6ce671ff",
+      "result_id": "104afa30-be8e-4e52-9a00-7b557f3b42cd"
+    },
+    {
+      "claim_id": "2a425895-5165-455e-bf11-9d0c432a1964",
+      "result_id": "104afa30-be8e-4e52-9a00-7b557f3b42cd"
+    },
+    {
+      "claim_id": "f7089860-0f3a-42c1-ad32-067b1973a4de",
+      "result_id": "104afa30-be8e-4e52-9a00-7b557f3b42cd"
+    },
+    {
+      "claim_id": "d2461bbd-f92c-4c13-9dbe-b2b119de3161",
+      "result_id": "104afa30-be8e-4e52-9a00-7b557f3b42cd"
+    },
+    {
+      "claim_id": "f2dcea32-aa6f-43f5-8e59-c484ea234132",
+      "result_id": "104afa30-be8e-4e52-9a00-7b557f3b42cd"
+    },
+    {
+      "claim_id": "fefa804d-6d11-40e3-88ba-426f4200b47f",
+      "result_id": "104afa30-be8e-4e52-9a00-7b557f3b42cd"
+    },
+    {
+      "claim_id": "e85628e7-5697-458f-af9e-92e8ffaeef50",
+      "result_id": "7310d025-3d60-4e21-b25b-247da165c5bd"
+    },
+    {
+      "claim_id": "877e7cc8-5435-4e2b-b482-ac3e7028e9d6",
+      "result_id": "7310d025-3d60-4e21-b25b-247da165c5bd"
+    },
+    {
+      "claim_id": "18ed545f-a7a9-453b-86ec-becf63db62e6",
+      "result_id": "7310d025-3d60-4e21-b25b-247da165c5bd"
+    },
+    {
+      "claim_id": "fd635a67-a317-496c-936b-47e8f7c73376",
+      "result_id": "7310d025-3d60-4e21-b25b-247da165c5bd"
+    },
+    {
+      "claim_id": "e499b805-452c-43ea-8df8-c7c1cf27ddc8",
+      "result_id": "7310d025-3d60-4e21-b25b-247da165c5bd"
+    },
+    {
+      "claim_id": "1f88f12b-b668-4366-90d0-de4bccf4f3f0",
+      "result_id": "1eba638e-5815-4219-8c58-52ca0a2672d1"
+    },
+    {
+      "claim_id": "bc6cd395-ce2d-4f96-9cb3-373f1a52a939",
+      "result_id": "1eba638e-5815-4219-8c58-52ca0a2672d1"
+    },
+    {
+      "claim_id": "fb24e12b-51be-476c-83bc-2b57196c7f87",
+      "result_id": "1eba638e-5815-4219-8c58-52ca0a2672d1"
+    },
+    {
+      "claim_id": "75e3a202-e19c-463e-8995-6334f531cdfb",
+      "result_id": "1eba638e-5815-4219-8c58-52ca0a2672d1"
+    },
+    {
+      "claim_id": "873637a8-accc-4d95-a894-78d342457309",
+      "result_id": "8c54fec4-11fb-4910-9eed-6c48ac2360c6"
+    },
+    {
+      "claim_id": "0d523c4f-72c7-40c0-9ddf-57b39a74a394",
+      "result_id": "8c54fec4-11fb-4910-9eed-6c48ac2360c6"
+    },
+    {
+      "claim_id": "b183aaf8-d826-4707-b964-a6f2b4abe587",
+      "result_id": "8c54fec4-11fb-4910-9eed-6c48ac2360c6"
+    },
+    {
+      "claim_id": "a9ff3683-b9de-455a-9de7-f57aa0c9d010",
+      "result_id": "8c54fec4-11fb-4910-9eed-6c48ac2360c6"
+    },
+    {
+      "claim_id": "edb280c4-cece-4642-8db0-8efe614fe335",
+      "result_id": "8c54fec4-11fb-4910-9eed-6c48ac2360c6"
+    },
+    {
+      "claim_id": "0285f59f-0db0-4fad-a990-089b25feba15",
+      "result_id": "41071092-23b7-405f-b794-ad38889a23f7"
+    },
+    {
+      "claim_id": "2db21e8d-be9d-415f-bb63-53293ceaed3b",
+      "result_id": "41071092-23b7-405f-b794-ad38889a23f7"
+    },
+    {
+      "claim_id": "f9b2c2a8-0fb2-483c-b11d-d82e172a07d5",
+      "result_id": "41071092-23b7-405f-b794-ad38889a23f7"
+    },
+    {
+      "claim_id": "2065b8ab-6d9e-481f-8e60-594faa61e242",
+      "result_id": "41071092-23b7-405f-b794-ad38889a23f7"
+    },
+    {
+      "claim_id": "62bd15f8-67b6-44ef-bb2c-beee417a933e",
+      "result_id": "41071092-23b7-405f-b794-ad38889a23f7"
+    },
+    {
+      "claim_id": "6ea5ee14-b582-4328-b38b-a916c39435c4",
+      "result_id": "821f9cba-664e-4d2a-8553-1883a68b360a"
+    },
+    {
+      "claim_id": "aab44390-adbe-405b-b5d7-632d302edb77",
+      "result_id": "821f9cba-664e-4d2a-8553-1883a68b360a"
+    },
+    {
+      "claim_id": "92ca2b04-f7bc-48e0-9ad0-06a254ace438",
+      "result_id": "821f9cba-664e-4d2a-8553-1883a68b360a"
+    },
+    {
+      "claim_id": "0100e711-3438-4274-b16e-fb5d215c5c45",
+      "result_id": "821f9cba-664e-4d2a-8553-1883a68b360a"
+    },
+    {
+      "claim_id": "41877db3-a283-4014-b433-d3b7a7d57e98",
+      "result_id": "821f9cba-664e-4d2a-8553-1883a68b360a"
+    },
+    {
+      "claim_id": "2b4a170b-4f9b-4b3d-b5a3-869981eb2316",
+      "result_id": "821f9cba-664e-4d2a-8553-1883a68b360a"
+    },
+    {
+      "claim_id": "2836b181-78e8-47c2-9aa5-563c54d43034",
+      "result_id": "821f9cba-664e-4d2a-8553-1883a68b360a"
+    },
+    {
+      "claim_id": "433e221a-3c34-4cc5-9f72-5cafe4c34b3c",
+      "result_id": "dc0e8ac1-6093-4628-914f-c1ed3b406143"
+    },
+    {
+      "claim_id": "dd15a909-c802-43c2-b69c-c7603c3e56c4",
+      "result_id": "dc0e8ac1-6093-4628-914f-c1ed3b406143"
+    },
+    {
+      "claim_id": "7636a743-47f0-43d7-9801-43b477db6a89",
+      "result_id": "dc0e8ac1-6093-4628-914f-c1ed3b406143"
+    },
+    {
+      "claim_id": "60d17040-65fd-4fdc-b089-35f781b10987",
+      "result_id": "dc0e8ac1-6093-4628-914f-c1ed3b406143"
+    },
+    {
+      "claim_id": "47a00407-be00-4aec-af57-53666ba166de",
+      "result_id": "dc0e8ac1-6093-4628-914f-c1ed3b406143"
+    },
+    {
+      "claim_id": "153de6d8-96f0-488f-9712-a90e0694d683",
+      "result_id": "947312e9-2280-417b-9481-8bbda02d37a0"
+    },
+    {
+      "claim_id": "6b824b28-7543-486c-a176-f2a2979964c8",
+      "result_id": "947312e9-2280-417b-9481-8bbda02d37a0"
+    },
+    {
+      "claim_id": "a61d45cb-9dd4-4a3d-9ac9-86a37aeb71d8",
+      "result_id": "947312e9-2280-417b-9481-8bbda02d37a0"
+    },
+    {
+      "claim_id": "b5c5ee90-1348-4d62-828b-d54d480bd9e9",
+      "result_id": "947312e9-2280-417b-9481-8bbda02d37a0"
+    },
+    {
+      "claim_id": "4bb06aef-367d-4e52-b015-461979d1c034",
+      "result_id": "947312e9-2280-417b-9481-8bbda02d37a0"
+    },
+    {
+      "claim_id": "f1e1e2bb-a544-48f1-b7b2-723f5ed3a267",
+      "result_id": "947312e9-2280-417b-9481-8bbda02d37a0"
+    },
+    {
+      "claim_id": "8c3c85a2-4b34-44a5-9629-4f0534448007",
+      "result_id": "947312e9-2280-417b-9481-8bbda02d37a0"
+    },
+    {
+      "claim_id": "d5fa21be-80e3-4ebb-8083-604de37ba90a",
+      "result_id": "2fc8a49b-0bb2-403d-a0ad-f72fdd8573ca"
+    },
+    {
+      "claim_id": "6fa7e42c-d485-49cd-ac25-dc52460452cc",
+      "result_id": "2fc8a49b-0bb2-403d-a0ad-f72fdd8573ca"
+    },
+    {
+      "claim_id": "7c8d6e1a-3108-4dfc-b890-af1174cd5df9",
+      "result_id": "2fc8a49b-0bb2-403d-a0ad-f72fdd8573ca"
+    },
+    {
+      "claim_id": "d99891bc-c95f-4615-9e24-6c6bb3b78c73",
+      "result_id": "2fc8a49b-0bb2-403d-a0ad-f72fdd8573ca"
+    },
+    {
+      "claim_id": "2f45df35-6eea-4e12-841b-41ab68462849",
+      "result_id": "2fc8a49b-0bb2-403d-a0ad-f72fdd8573ca"
+    },
+    {
+      "claim_id": "e62dee51-a1c6-4d48-9ed2-9982247d9f6a",
+      "result_id": "2fc8a49b-0bb2-403d-a0ad-f72fdd8573ca"
+    },
+    {
+      "claim_id": "296cef85-1e69-4867-a9c0-90cce8c47abd",
+      "result_id": "2fc8a49b-0bb2-403d-a0ad-f72fdd8573ca"
+    },
+    {
+      "claim_id": "f679e525-cc1b-4254-872c-40c86fa1ee5a",
+      "result_id": "2fc8a49b-0bb2-403d-a0ad-f72fdd8573ca"
+    },
+    {
+      "claim_id": "afd70bfd-cf8c-4556-a874-0a236d1e852a",
+      "result_id": "a8cfc0ce-c1bd-4af1-9f39-8f78b76db4c9"
+    },
+    {
+      "claim_id": "61baf08e-245a-4c1c-90cf-d0f9da635b8b",
+      "result_id": "f1eab64d-f7d0-4ee7-87c3-a5f0904b49e2"
+    },
+    {
+      "claim_id": "029a6648-c8ca-47c2-bdc7-8d4ef100067a",
+      "result_id": "f1eab64d-f7d0-4ee7-87c3-a5f0904b49e2"
+    },
+    {
+      "claim_id": "72c714ea-dfc6-4110-8b8d-ffdf0ff35bbf",
+      "result_id": "f1eab64d-f7d0-4ee7-87c3-a5f0904b49e2"
+    },
+    {
+      "claim_id": "a2a85b70-65f2-467a-b46c-ee7eb6055bb8",
+      "result_id": "f1eab64d-f7d0-4ee7-87c3-a5f0904b49e2"
+    },
+    {
+      "claim_id": "72c4b91f-0846-4b55-9ad0-edcc0c61ebf1",
+      "result_id": "f1eab64d-f7d0-4ee7-87c3-a5f0904b49e2"
+    },
+    {
+      "claim_id": "5e7bb618-5bbf-4fb4-bfab-b283d673d61e",
+      "result_id": "f1eab64d-f7d0-4ee7-87c3-a5f0904b49e2"
+    },
+    {
+      "claim_id": "abe3db16-5964-4f8c-8af5-df6ad67c0da6",
+      "result_id": "f1eab64d-f7d0-4ee7-87c3-a5f0904b49e2"
+    },
+    {
+      "claim_id": "372790ec-0a06-469f-baef-d52311c7f1b8",
+      "result_id": "f1eab64d-f7d0-4ee7-87c3-a5f0904b49e2"
+    },
+    {
+      "claim_id": "30262e49-0404-4490-9f07-ef42d5d8b384",
+      "result_id": "b2f2900b-6f3a-4a93-91c0-240f52934b15"
+    },
+    {
+      "claim_id": "8145a4a2-b2a4-4675-81d7-82feaed4a876",
+      "result_id": "b2f2900b-6f3a-4a93-91c0-240f52934b15"
+    },
+    {
+      "claim_id": "d35c8922-9f71-445d-8c41-6e3a7fe29b96",
+      "result_id": "b2f2900b-6f3a-4a93-91c0-240f52934b15"
+    },
+    {
+      "claim_id": "306763f9-dc2d-4c99-a0a2-ce4e9db02f9f",
+      "result_id": "b2f2900b-6f3a-4a93-91c0-240f52934b15"
+    },
+    {
+      "claim_id": "ddc79842-4d90-4ed5-b05f-6392bce4cb7a",
+      "result_id": "b2f2900b-6f3a-4a93-91c0-240f52934b15"
+    },
+    {
+      "claim_id": "cc19ea1e-037b-4b23-9ef3-8aec13d36e38",
+      "result_id": "9a9c8bcd-a541-4272-89da-9b0f22f84e18"
+    },
+    {
+      "claim_id": "32f08ef1-77ee-43c2-9834-a60cb597e883",
+      "result_id": "9a9c8bcd-a541-4272-89da-9b0f22f84e18"
+    },
+    {
+      "claim_id": "943042ed-b8cc-4d76-aca4-fb8c21810df7",
+      "result_id": "9a9c8bcd-a541-4272-89da-9b0f22f84e18"
+    },
+    {
+      "claim_id": "2a903099-8857-4626-824e-98ec388e0f86",
+      "result_id": "20ddfbab-059b-4895-976e-4f27d4438d96"
+    },
+    {
+      "claim_id": "40bc1cba-2e5b-4de9-8cb6-f543442e868b",
+      "result_id": "20ddfbab-059b-4895-976e-4f27d4438d96"
+    },
+    {
+      "claim_id": "c418574d-91b5-42cd-af8d-b075c83df195",
+      "result_id": "7de1d295-14bb-4d55-af70-178dd4760744"
+    },
+    {
+      "claim_id": "a24e99f7-98e5-4a34-9471-dabb044eefd6",
+      "result_id": "7de1d295-14bb-4d55-af70-178dd4760744"
+    },
+    {
+      "claim_id": "0afb2fb5-938a-459d-b6e3-d0c1d7366d3c",
+      "result_id": "7de1d295-14bb-4d55-af70-178dd4760744"
+    },
+    {
+      "claim_id": "d98099ab-c940-4eb8-9efe-8079ef6d278c",
+      "result_id": "7de1d295-14bb-4d55-af70-178dd4760744"
+    },
+    {
+      "claim_id": "14a6e810-4df1-402e-a1fa-5814b3a5a436",
+      "result_id": "7de1d295-14bb-4d55-af70-178dd4760744"
+    },
+    {
+      "claim_id": "2b5da119-1ee2-4a68-8b2e-985c588f9476",
+      "result_id": "7de1d295-14bb-4d55-af70-178dd4760744"
+    },
+    {
+      "claim_id": "ac6a3d8e-995e-415d-9e8f-0cca73164028",
+      "result_id": "7de1d295-14bb-4d55-af70-178dd4760744"
+    },
+    {
+      "claim_id": "6763a484-7f6f-4eb5-8a86-ec823291b4e8",
+      "result_id": "29e2db2c-da86-47e0-82d9-f508611cd752"
+    },
+    {
+      "claim_id": "dde19fc0-9d6e-41c7-b087-2a92cf379e14",
+      "result_id": "29e2db2c-da86-47e0-82d9-f508611cd752"
+    },
+    {
+      "claim_id": "db809161-eaaf-4bf3-a0b7-ecb9f4baced3",
+      "result_id": "29e2db2c-da86-47e0-82d9-f508611cd752"
+    },
+    {
+      "claim_id": "e801967a-9278-41cd-ac4b-cf66f65c44e3",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "6ce06a6d-9671-4613-8cfb-3cab1648ea2a",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "710d76b6-d6d9-4d5b-97b5-7eeb8ee0a583",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "0e4673b8-35b2-4d2a-9d7d-09b20919f2f2",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "6ab416f2-6532-4335-8398-0975107fd77e",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "f5af562c-bbde-484c-a7ef-32f6abd72f14",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "e8737329-2f46-4618-9d2a-4be1671a92b8",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "3a1c70c4-365f-4a95-927b-f7bb8fd39a55",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "8b94a041-9b7d-4c11-8c8d-ce2924733c2c",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "004c2151-32a5-48df-a54f-484251fbd3a7",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "f01a089e-face-4d66-bd4d-bfcf5b88cf75",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "fb24e12b-51be-476c-83bc-2b57196c7f87",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "75e3a202-e19c-463e-8995-6334f531cdfb",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "eae96eb7-a3be-488f-9688-08302acd10c5",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "1830af2c-d437-49f6-a6da-d0ff7b586d51",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "1186fa04-2161-4d14-a102-0e98eb85e20b",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "d65d60f3-2b55-4719-9083-107fe478b02b",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "17cd920c-c08b-4062-aa77-8e491937e6e7",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "4f9ead26-c25b-4b14-a769-206883f630be",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "c7d01a87-6ba1-415b-8850-3bfe00529658",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "8bf0b0aa-bca2-42b2-b20e-0cb80139a875",
+      "result_id": "1599e225-b7fd-4dea-96f5-9034c4e08f91"
+    },
+    {
+      "claim_id": "455a6cc8-d8e8-4a3f-8aa4-5ce7fc1ec883",
+      "result_id": "1192a087-6d97-4a7d-b78d-ee8cf065d944"
+    },
+    {
+      "claim_id": "638c813a-3f80-4ebf-bc9e-96c3d9f6b0a5",
+      "result_id": "f26c5f79-6260-467e-9797-08757558dd7a"
+    }
+  ],
+  "comparisons": []
+}

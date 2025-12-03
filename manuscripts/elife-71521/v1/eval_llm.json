@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C81",
+      "C82"
+    ],
+    "result": "Methylomic analysis of fetal membranes reveals that the ZAM has significantly more hypermethylated genes (9830) than the ZIM (1746), with ZAM-specific methylation changes (5750 genes) enriched in biological processes including G protein-coupled receptor signaling, defense response, detection of stimulus, and inflammatory response that could be linked to sterile inflammation and parturition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 and C81-C82 are well-supported by methylomic array data (Figure 1) showing differential methylation patterns between ZIM and ZAM, with appropriate statistical analysis (Bonferroni correction p<0.01) and GO term enrichment analysis. The data clearly demonstrate greater methylation changes in ZAM and identify biologically relevant pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C83"
+    ],
+    "result": "Transcriptomic analysis of the ZAM identified 501 downregulated and 145 upregulated genes in amnion versus choriodecidua (log2 FC cut-off \u00b12.8). Downregulated genes in amnion were enriched for 'response to external stimulus' and 'female pregnancy' GO terms, while upregulated genes showed no significant enrichment. Overexpressed choriodecidua genes were linked to biological adhesion, cell proliferation regulation, and extracellular matrix organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C83 are supported by transcriptomic array data (Figure 2) with appropriate statistical thresholds (log2 FC \u00b12.8, Benjamini-Hochberg correction). The GO term analysis appropriately distinguishes between significant (Bonferroni-corrected) and non-significant results, providing clear evidence for differential gene expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C84",
+      "C85"
+    ],
+    "result": "Cross-analysis of methylomic and transcriptomic data identified 105 genes that were hypermethylated in amnion and overexpressed in choriodecidua, which were associated with pregnancy pathologies (MeSH terms) and enriched in three complementary GO pathways: response to external stimulus, detection of LPS, and inflammatory response. TLR4 was the only gene present in all three pathways, suggesting a central role in term parturition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45, C84-C85 are well-supported by integrated analysis of both omics datasets (Figure 3A). The cross-analysis methodology is sound, identifying genes with concordant methylation and expression changes. GO term and MeSH disease term enrichment analyses appropriately identify TLR4 as a key candidate, though the inference of 'central role' (C45) is somewhat speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "TLR4 protein is present in both amnion and choriodecidua of the ZAM, with five cytosines in the TLR4 gene (promoter, body, UTR) showing hypermethylation in amnion versus choriodecidua. This differential methylation correlates with significantly higher TLR4 expression in choriodecidua (mRNA fold: 40.65; protein fold: 4.04), confirmed by qRT-PCR, Western blot, and bisulfite sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are strongly supported by multiple orthogonal validation methods (Figure 3B, Figure 4). Immunofluorescence confirms protein presence, methylomic array data show differential methylation, and independent validation by bisulfite sequencing, qRT-PCR (n=9), and Western blot (n=9) with appropriate statistical testing (Wilcoxon matched-pairs) provides robust evidence for the methylation-expression relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In silico analysis identified two miRNAs (let-7a-2 and miR-125b-1) that could target the 3'UTR of TLR4 mRNA. Methylomic analysis showed that cytosines in the 5' upstream sequences of these miRNAs were hypermethylated in choriodecidua versus amnion (5/6 cytosines for miR-125b-1, 1/1 for let-7a-2). Pri-miR-125b-1 was overexpressed in amnion (FC: 5.32), while pri-let-7a-2 expression was below qPCR detection limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are supported by in silico prediction (TargetScan), methylomic array data (Figure 5B), and qRT-PCR validation (Figure 5C). The inability to detect pri-let-7a-2 (C57) is appropriately acknowledged as a technical limitation. The inverse correlation between miRNA promoter methylation and expression is consistent with expected regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Both let-7a-2 and miR-125b-1 can target the 3'UTR of TLR4 mRNA, reducing luciferase activity by 40% in HEK293 cells. In AV3 amniocyte cells (selected as the most efficient model), transfection of these miRNAs significantly decreased TLR4 mRNA (at 12h: let-7a-2 by 3.75-fold, miR-125b-1 by 10.83-fold, combination by 9.5-fold) and protein levels (at 24-48h: let-7a-2 by 1.88-fold, miR-125b-1 by 2.54-fold, combination by 2.64-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 are well-supported by luciferase reporter assays (Figure 6A, n=5), cell line comparison (Figure 6B), and time-course transfection experiments in AV3 cells (Figure 6C, n=7-10) with appropriate statistical testing (Kruskal-Wallis with Dunn's test). The data demonstrate functional targeting of TLR4 by both miRNAs at both mRNA and protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In primary amniotic epithelial cells, transfection of miR-125b-1 and co-transfection of let-7a-2+miR-125b-1 decreased TLR4 mRNA at 48h (by 1.71-fold and 2.16-fold, respectively). At 72h, all three transfection conditions (let-7a-2, miR-125b-1, and combination) decreased TLR4 protein levels (by 1.43-fold, 1.71-fold, and 2.16-fold, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by transfection experiments in primary cells (Figure 6D, n\u22655) with appropriate statistical analysis. The use of primary cells validates findings from the AV3 cell line, strengthening the physiological relevance of the miRNA-TLR4 regulatory mechanism, though the effect sizes are somewhat smaller than in cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C104",
+      "C105"
+    ],
+    "result": "TLR4 is differentially regulated in the ZAM through a dual, layer-specific mechanism: (1) hypomethylation of the TLR4 gene body in choriodecidua leading to high expression, and (2) hypomethylation of miRNA promoters (let-7a-2 and miR-125b-1) in amnion leading to miRNA-mediated suppression of TLR4 via 3'-UTR targeting. This represents a complex molecular regulatory process operating at both DNA and mRNA levels within the same geographical zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C27-C29, C104-C105 synthesize the major findings and are well-supported by the integrated evidence from methylomic, transcriptomic, and functional validation experiments. The dual regulatory mechanism is demonstrated through multiple independent lines of evidence, though the relative contributions of each mechanism in vivo remain to be fully quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C30",
+      "C76",
+      "C90",
+      "C103",
+      "C106",
+      "C107"
+    ],
+    "result": "The study demonstrates that fine regulation of TLR4 is required for sterile inflammation establishment at term pregnancy, and proposes that this physiological choriodecidual TLR4 overexpression could be exacerbated in PPROM. The findings may be extrapolated to other genes and cell types, with future studies using technologies like organ-on-chip suggested to further investigate fetal-maternal communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C7, C30, C76, C90, C103, C106-C107 represent interpretations and speculations about pathological implications and future directions. While the physiological regulation of TLR4 is well-demonstrated, the connection to PPROM pathology (C7, C30) is speculative and not directly tested. No PPROM samples were analyzed, making these claims inferences rather than demonstrated results. Future work suggestions (C106-C107) are reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Background and context claims establish the importance of fetal membrane integrity, the role of sterile inflammation in term rupture, PPROM as a clinical problem, the existence of ZAM/ZIM zones with distinct characteristics, TLR4's known roles in inflammation and PPROM, and prior knowledge about miRNAs in pregnancy. These claims provide the scientific rationale and context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C23, C25-C26, C72-C75, C77-C78, C87-C89, C91-C92, C94-C96, C98-C102 are appropriately supported by citations to established literature. These background claims are well-documented in the field and provide appropriate context, though they should be considered as prior knowledge rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C79",
+      "C80",
+      "C97"
+    ],
+    "result": "The study demonstrates for the first time that TLR4 is overexpressed in ZAM choriodecidua compared to ZAM amnion using a novel complementary high-throughput approach combining transcriptomic and methylomic analyses of the same samples, highlighting both geographical (ZIM/ZAM) and tissue layer (amnion vs. choriodecidua) differences. The study also identifies let-7a-2 and miR-125b-1 as previously unknown specific targets of TLR4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C79-C80, C97 describe novel methodological and biological findings. The integrated omics approach on matched samples (C79-C80) is a strength, and the TLR4 differential expression in ZAM layers (C24) and identification of novel miRNA targets (C97) represent genuine advances, though the TLR4 expression difference was previously reported by Krol et al. 2010 (acknowledged in C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study collected nine fetal membranes at full term before labor by caesarean section from Caucasian patients with no pregnancy pathology (confirmed by histological examination excluding chorioamnionitis), with four samples collected from each patient (ZAM amnion, ZAM choriodecidua, ZIM amnion, ZIM choriodecidua).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 describe the sample collection methodology and are appropriately documented. The sample size (n=9) is adequate for the omics approaches used, and the exclusion of labor and pathology is appropriate for studying physiological term mechanisms. However, the limitation to Caucasian patients (C109) may affect generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C93"
+    ],
+    "result": "TLR4 is an important partner of many genes in the 105-gene set identified by cross-analysis, and its overexpression could be due to differential methylation, transcription factor binding, or post-transcriptional regulation by miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C93 are supported by network analysis (Figure 3B) and represent reasonable mechanistic hypotheses. C86 is directly supported by the data, while C93 appropriately acknowledges multiple potential regulatory mechanisms, which the study then investigates.",
+    "result_type": "MINOR"
+  }
+]

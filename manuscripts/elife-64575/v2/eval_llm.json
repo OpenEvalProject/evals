@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Rats adopt a model-based planning strategy in the two-step task, where they compute choice port values based on learned outcome port values and transition probabilities, rather than learning choice values directly. This strategy is well-described by a cognitive model combining planning with perseveration, novelty preference, and bias components, with model-free reinforcement learning not contributing meaningfully to behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C28 collectively demonstrate that rats use model-based planning through behavioral data (C20), model fitting (C21-C26), and regression analysis (C28). The model comparison results (C25-C26) and lack of model-free contribution (C27) provide strong converging evidence. The task structure (C19) and computational approach (C18) are clearly described and validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Neural activity in OFC strongly encodes outcome-value (expected value of visited outcome ports), with 36% of units showing significant modulation at outcome port entry. In contrast, OFC shows much weaker encoding of choice-related value signals (choice-value-difference: 7% of units; chosen-value: 13% of units), with outcome-value CPD being 3.5-3.7 times larger than choice-related values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 present a consistent pattern across individual units (C31-C35) and population-level analyses (C36-C38), with appropriate statistical tests (permutation tests, sign rank tests with highly significant p-values). The coefficient of partial determination analysis properly accounts for correlations between regressors. The conclusion (C39) is well-supported by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Optogenetic inactivation of OFC during the outcome period (when outcome-value coding peaks) significantly decreased the planning index on subsequent trials (p=0.0007), while inactivation during the choice period had no effect (p=0.64). Sham controls showed no effects, and experimental rats differed significantly from controls for outcome-period inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 present a clear temporal dissociation with appropriate statistical tests (t-tests, two-sample comparisons) and proper controls (C46-C47). The timing of the effect aligns with the peak of outcome-value coding from the electrophysiology experiments. Sample sizes (n=9 experimental, n=4 control) are consistent with prior optogenetics studies, though modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Trial-by-trial analysis of OFC inactivation effects revealed that silencing OFC did not affect the influence of the current trial's outcome on the next choice (p=0.2), but did affect the influence of the previous two trials' outcomes (p=0.004, p=0.02). This pattern matched synthetic datasets where outcome value representations were attenuated, but not datasets where choice values or reward processing were impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide fine-grained behavioral analysis that distinguishes between different computational mechanisms through comparison with synthetic datasets. The pattern is specific and matches predictions from the computational model where outcome values (which summarize past trials) are disrupted. However, the interpretation relies heavily on the accuracy of the computational model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "OFC value representations do not directly drive choice but instead signal expected reward information to a learning process elsewhere in the brain. The combined evidence from weak choice-value coding, strong outcome-value coding, timing-specific inactivation effects, and computational modeling indicates that OFC provides outcome value as an input to learning rather than implementing learning itself or driving choice directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C54-C62 synthesize the major findings from electrophysiology and optogenetics experiments. The conclusion is well-supported by converging evidence from multiple experimental approaches. However, the claim that learning occurs 'elsewhere in the brain' (C62) is necessarily inferential since the location of this learning process was not identified. The interpretation depends on the validity of the computational model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C65",
+      "C66"
+    ],
+    "result": "The data predominantly support the interpretation that 'chosen value' signals in OFC relate to learning processes rather than choice processes, as OFC represents the expected value of ports that were learned about (outcome ports) rather than ports that were chosen (choice ports).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 present a logical argument based on the task structure and the finding of strong outcome-value coding. The reasoning is sound given the task design where outcome ports are learned about but not chosen, while choice ports are chosen but not directly learned about. This provides a novel interpretation of the commonly observed 'chosen value' signal in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The results reveal that value-based cognition is modular, with value-based learning and value-based choosing depending on separate neural representations. This supports computational models that separate these functions and motivates searching for neural modules that directly drive choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 present the broader theoretical implications of the findings. The modularity conclusion is well-supported by the dissociation between outcome-value and choice-value representations, and the selective effects of inactivation. The claim about supporting computational models (C114) is reasonable, though the evidence is specific to one task and brain region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Prior primate studies using the three-armed bandit task found that excitotoxic lesions of OFC and vmPFC did not impair credit assignment or decision-making, while vlPFC lesions did impair credit assignment. The anatomical distinction between OFC and vlPFC is less clear in rodents than primates, raising the possibility that primate OFC and vlPFC are specialized for functions both performed by rodent OFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 accurately summarize prior literature with appropriate citations. The discussion of cross-species anatomical homologies (C72-C74) is supported by anatomical work. The speculation about functional specialization (C76) is clearly presented as a possibility rather than a conclusion. This provides important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The current inactivation results are consistent with prior studies suggesting a role for OFC in learning, but in apparent tension with studies finding that inactivation impairs post-learning assays. This could reflect different roles for OFC at different timescales or a common role in updating choice mechanisms that manifests differently across tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 appropriately acknowledge both consistencies and tensions with prior literature. The proposed reconciliations (C80-C81) are clearly presented as speculative possibilities. This demonstrates appropriate scientific caution in interpreting results in light of conflicting prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The results are consistent with the view that OFC carries expectancy signals indicating which outcomes are expected to follow from the current state. However, the experiment cannot distinguish whether outcome value correlates reflect expectations of particular rewards or abstract common currency value, as only one reward type (water droplets) was used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 appropriately interpret the findings in terms of expectancy signals while acknowledging a clear limitation of the task design. This is an important caveat that affects the interpretation of what 'outcome value' represents. The limitation is clearly stated and its implications are discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The current results are in tension with some economic choice studies showing that OFC disruption affects decisions on perturbed trials and that OFC encodes 'offer value' suitable for driving decisions. However, recent rat studies in both flavor-based and probability/magnitude-based tasks also found that OFC silencing does not affect choice, consistent with the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 provide a balanced discussion of conflicting findings in the literature with appropriate citations. The authors acknowledge tensions with some studies (C84-C85) while noting consistency with others (C90-C91). The discussion of potential task-dependent or species-dependent differences is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "OFC may contribute to a model-based 'policy update' process that combines known information about world structure with new information to modify behavioral strategy. This process could occur at different times in different tasks: between trials in the two-step task (interpreted as learning) or during option presentation in economic choice tasks (interpreted as deliberation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C96 present an interesting theoretical framework for reconciling different findings, with some support from prior theoretical work (C92) and response time studies (C96). However, this is primarily speculative (C93-C95) and was not directly tested in the current experiments. The framework is plausible but requires additional empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Prior studies show that OFC activity is crucial when behavioral strategies are being updated, such as after pre-feeding or when encountering novel flavor pairings. The detailed effects of inactivation are attributable to degradation of the outcome value signal rather than the reward signal, suggesting OFC provides outcome value estimates to a learning system elsewhere that updates behavioral policy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 integrate findings from prior studies (C97-C98) with the current results (C100-C101). The inference about the specific role of outcome value signals (C100) is supported by the computational modeling analysis comparing different types of synthetic inactivation. The conclusion about OFC's computational role (C101) follows logically from the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The data are broadly consistent with cognitive mapping accounts of OFC function, but in apparent tension with the narrower version proposing that OFC specifically represents beliefs about unobservable states. The weak and transient representation of choice-value-difference (which corresponds to beliefs about the unobservable reward contingency state) conflicts with predictions from the narrow account. This tension may reflect differences in brain regions, as human fMRI studies found strongest unobservable state representations in medial network regions rather than orbital network regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111 provide a nuanced discussion of how the findings relate to cognitive mapping theories. The logical prediction from the narrow account (C108) and the mismatch with data (C109) are clearly articulated. The proposed resolution based on anatomical differences (C110) is well-supported by citations. The suggestion for future work (C111) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C40",
+      "C41",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study used appropriate methods including microwire array recordings in 6 rats (477 units), optogenetic inactivation in 9 rats with 4 sham controls, adult male Long-Evans rats on restricted water schedule, and received proper ethical approval. Sample sizes were based on consistency with prior studies rather than explicit power analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C40-C41, and C116-C119 describe the experimental methods and subjects. The methods are standard for the field and appropriately described. The acknowledgment that sample size was not determined by power analysis (C119) is honest, though this represents a limitation. The sample sizes are consistent with similar studies in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes that value representations play dual roles in driving choice and supporting learning, that OFC is a key structure for value-based cognition, and that there is an unresolved debate about whether OFC plays roles in choosing, learning, or both. Prior studies attempting to separate these functions temporally have limitations because learning and choosing are cognitive events whose timing cannot be fully controlled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide appropriate background and motivation for the study. The foundational concepts (C1-C3) represent established knowledge. The characterization of the debate (C7-C13) is well-supported by citations. The critique of temporal separation approaches (C14-C16) is conceptually sound and motivates the current approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C77"
+    ],
+    "result": "The rat two-step task provides a methodological advance by separating learning from choosing based not only on timing but also on content (what information is operated over), investigating a trial-by-trial timescale where learning and choosing are interleaved rather than separated by long intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C77 describe the key methodological innovation of the study. The task design does provide a principled way to separate learning and choosing based on the computational structure of the task rather than relying solely on temporal separation. This represents a genuine advance over prior approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The most commonly observed value representation in decision tasks is 'chosen value', but its role is unclear and has been interpreted both as a post-decision signal for learning and as an internal component of the choice process itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 accurately characterize an important ambiguity in the literature regarding the interpretation of 'chosen value' signals. This is well-supported by citations to conflicting theoretical interpretations and provides important context for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  }
+]

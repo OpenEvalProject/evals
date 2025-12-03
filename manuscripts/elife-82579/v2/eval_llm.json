@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "BUB-1 can be recruited to kinetochores independently of BUB-3 in C. elegans oocytes, contrasting with findings in other organisms. In bub-3 deletion mutants, BUB-1 protein levels are reduced to below 25% overall, but BUB-1 at kinetochores is only reduced by 57%, with corresponding reductions in HCP-1 (36%) and CLS-2 (58%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from Western blot (C1), immunofluorescence quantification (C2, C4, C5), and comparative analysis with other organisms (C3) demonstrating BUB-3-independent BUB-1 kinetochore recruitment. The differential reduction between total protein and kinetochore-localized protein strongly supports the conclusion (C6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13"
+    ],
+    "result": "The BHC module (BUB-1, HCP-1, CLS-2) is recruited to kinetochores via the KNL-1 MELT repeats. In KNL-1\u039485-505 mutants lacking MELT repeats, all three BHC components fail to localize to kinetochores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 provide direct imaging evidence that BUB-1, HCP-1, and CLS-2 fail to localize to kinetochores in MELT-deleted KNL-1 mutants. Claims C10 and C13 appropriately conclude MELT-dependent kinetochore targeting based on this evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "BUB-1 ring domain localization requires the E3 SUMO-protein ligase GEI-17 and probably involves BUB-1 sumoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by imaging data (Figure 1H) and prior literature (Pelisch et al., 2017). Claim C12 is appropriately qualified as speculation ('probably') based on the requirement for a SUMO ligase, though direct evidence of BUB-1 sumoylation is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "BUB-1 recruits HCP-1 and CLS-2 to kinetochores and rings through its kinase domain, but independently of kinase activity, in C. elegans meiosis. This is demonstrated using kinase domain deletion (BUB-1\u0394KD) and kinase-dead (BUB-1D814N) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 provide clear imaging evidence that the kinase domain is required (BUB-1\u0394KD fails) but kinase activity is not (BUB-1D814N succeeds) for HCP-1/CLS-2 localization. Claim C14 establishes prior knowledge in mitosis. Claims C19-C20 appropriately conclude domain requirement without activity requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Two domains of HCP-1 are essential: the KTD (aa 1311-1386) is required for HCP-1 kinetochore targeting, while the CBD (aa 111-340) mediates CLS-2 kinetochore recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 provide embryonic viability and localization data for domain deletion mutants. Claims C24-C25 appropriately conclude the distinct functions of KTD (self-localization) and CBD (CLS-2 recruitment) based on the differential localization phenotypes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "CLS-2 kinetochore targeting requires its C-terminal domain (CTD) and involves direct interaction between the CLS-2 CTD and HCP-1 CBD through a conserved VRK motif, specifically the R970 residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 show that CTD deletion or R970A mutation prevents kinetochore localization. Claim C29 provides yeast two-hybrid evidence for direct interaction that is abolished by R970A mutation. Claim C26 establishes prior knowledge. Claim C31 appropriately concludes the interaction mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "BHC module assembly in meiosis and mitosis requires the BUB-1 kinase domain and the HCP-1 KTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim (C30) is well-supported by the preceding detailed claims about BUB-1 kinase domain requirement (C15-C20) and HCP-1 KTD requirement (C21-C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "BHC module kinetochore targeting is essential for normal spindle assembly but not for chromosome segregation. KNL-1\u039485-505 mutant oocytes form smaller spindles with reduced microtubule density but can still segregate chromosomes efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide live imaging and quantification showing reduced spindle size and microtubule density. Claim C35 demonstrates efficient chromosome segregation despite these defects. Claim C34 appropriately concludes that kinetochore targeting is essential for normal (but not minimal) spindle assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Kinetochore and ring domain pools of the BHC module act redundantly for spindle assembly and chromosome segregation. Depleting both pools simultaneously (KNL-1 + GEI-17 depletion in KNL-1\u039485-505) causes more severe phenotypes than depleting either pool alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 establish that depleting either pool alone has distinct phenotypes. Claim C39 provides evidence that simultaneous depletion strongly aggravates the phenotype. Claims C38, C40, and C41 appropriately conclude partial redundancy and chromosomal localization importance based on this genetic interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C53"
+    ],
+    "result": "BHC module integrity is essential for meiotic spindle assembly and chromosome segregation. Expression of BUB-1\u0394KD, HCP-1\u0394CBD, or HCP-1\u0394KTD mutants that disrupt module integrity recapitulates severe spindle and segregation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide detailed phenotypic analysis showing disorganized spindles and segregation defects in all three mutants. Claim C45 appropriately notes phenotype similarity to full depletions. Claims C46 and C53 conclude that BHC module integrity is essential, which is well-supported by the convergent phenotypes from different disruption strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Targeting CLS-2 to kinetochores independently of HCP-1/2 (using CLS-2::GFP::HCP-11154-1386 fusion) is not sufficient to rescue HCP-1/2 depletion phenotypes, suggesting HCP-1/2 have additional roles beyond CLS-2 targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 establish that the fusion protein localizes correctly and is functional when endogenous CLS-2 is depleted. Claim C50 demonstrates KTD sufficiency. However, claims C51-C52 show that this is insufficient to rescue HCP-1 depletion, appropriately concluding that HCP-1/2 have additional functions beyond CLS-2 targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In human CLASP2, TOGL2 suppresses catastrophe, TOGL3 enhances rescue, the CTD can inhibit TOGL functions, and TOGL1 releases this auto-inhibition. A conserved S/R-rich region between TOGL2 and TOGL3 mediates microtubule lattice binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims (C54-C57) are supported by appropriate citations to prior literature (Lawrence et al., 2018; Aher et al., 2018; Gir\u00e3o et al., 2020; Al-Bassam et al., 2010; Patel et al., 2012). These establish the relevant background knowledge for interpreting C. elegans CLS-2 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "C. elegans CLS-2 functions via a single TOGL domain (TOGL2), requires the CTD for HCP-1 binding, and requires the S/R-rich region for function. TOGL3 is dispensable, likely due to lacking conserved residues present in TOGL2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide sequence analysis and embryonic viability data showing TOGL2, S/R-rich, and CTD are essential while TOGL3 is not. Claim C62 provides phenotypic confirmation. Claims C63-C65 appropriately conclude the functional requirements, with C65 appropriately qualified as speculation regarding S/R-rich region function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "BUB-1 alone does not significantly affect microtubule dynamics, does not interact with microtubules in pelleting assays, and shows no microtubule-bundling activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by TIRF microscopy assays (Figure 6B-F), pelleting assays (Figure 6\u2014figure supplement 1B), and bundling assays (Figure 6G). The negative results are consistent with BUB-1 not being a microtubule-associated protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "HCP-1 and CLS-2 individually affect microtubule dynamics. HCP-1 promotes growth rate (1.4-fold) and shows bundling activity. CLS-2 inhibits growth rate (1.1-fold), suppresses catastrophe, and promotes rescue and pause. CLS-2 does not function as a microtubule polymerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 are supported by TIRF microscopy assays with appropriate quantification and statistical analysis. The effects are consistent with prior literature on CLASPs and CENP-F. Claim C74 is supported by gel filtration data showing no tubulin interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The full BHC module (BUB-1, HCP-1, CLS-2 together) synergistically promotes microtubule pause (21-fold increase) compared to individual components. This synergistic effect requires an intact BHC module, as demonstrated by the CLS-2R970A mutant that cannot bind HCP-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 provides the key quantitative finding of 21-fold pause increase. Claims C78-C79 appropriately distinguish additive from synergistic effects. Claims C80-C82 provide critical control showing CLS-2R970A is functional alone but loses synergistic pause promotion, demonstrating module integrity requirement. Claim C83 appropriately concludes the importance of the intact module.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "BUB-1 and HCP-1/2 actively participate in controlling kinetochore-microtubule dynamics in the context of an intact BHC module to promote spindle assembly and accurate chromosome segregation in meiosis, primarily through synergistic promotion of microtubule pause.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C84, C90-C92) appropriately integrate the in vivo findings (spindle assembly defects when module is disrupted) with in vitro findings (synergistic pause promotion by intact module). The conclusion that BUB-1 and HCP-1/2 are not merely targeting components is well-supported by the totality of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "BubR1 and Bub1 are paralogous proteins, and CENP-E and CENP-F have been proposed to be distantly related paralogs, suggesting potential conservation of BHC-like modules in vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is stated as established knowledge with citation support. Claim C86 is appropriately qualified as a proposal with citation. These claims provide context for potential evolutionary conservation but do not present new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Microtubule-kinetochore interactions are central to chromosome bi-orientation. Microtubules are initially dynamic for spindle assembly and kinetochore attachments, then stabilized for efficient chromosome segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 represent established background knowledge stated in the abstract. These are well-accepted principles in the field and provide context for the study but do not present new findings.",
+    "result_type": "MINOR"
+  }
+]

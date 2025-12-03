@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The \u03b2H160D mutation blocks ISRIB-driven assembly of eIF2B tetramers into octamers but does not prevent assembly into decamers when eIF2B\u03b12 is present. Analytical ultracentrifugation and FRET assays demonstrate that WT tetramers assemble into octamers with ISRIB (EC50 = 170 \u00b1 25 nM), while \u03b2H160D tetramers do not respond to ISRIB. However, both WT and \u03b2H160D tetramers assemble into decamers with comparable efficiency when eIF2B\u03b12 is added (EC50 = 29 \u00b1 3 nM for WT, 33 \u00b1 3 nM for \u03b2H160D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 are well-supported by multiple orthogonal techniques (analytical ultracentrifugation in Figure 1A-D and FRET assays in Figure 1E-F). The data consistently show that the mutation specifically impairs ISRIB-mediated octamer formation while preserving decamer assembly capacity. The quantitative measurements with error bars and biological replicates (n=3) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The \u03b2H160D mutation significantly reduces eIF2B's intrinsic GEF activity. \u03b2H160D decamers show ~3-fold reduced Vmax compared to WT (WT: 1.86 \u00b1 0.13 pmol min\u207b\u00b9; \u03b2H160D: 0.66 \u00b1 0.03 pmol min\u207b\u00b9, p=0.0045), with correspondingly slower nucleotide exchange kinetics (t1/2 = 23.6 \u00b1 0.8 min vs. 9.3 \u00b1 1.0 min for WT). No significant difference in KM was detected between WT and \u03b2H160D decamers (p=0.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by rigorous Michaelis-Menten kinetic analysis shown in Figure 2. The statistical analysis is appropriate (two-sided t-test), sample sizes are adequate (n=3 biological replicates), and the conclusion that the mutation limits intrinsic enzymatic activity is justified by the significant reduction in Vmax. The lack of significant KM difference is properly reported with the p-value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The \u03b2H160D mutation alters eIF2 dissociation kinetics from eIF2B decamers. SPR analysis reveals biphasic dissociation from both WT and \u03b2H160D decamers, but the percentage of fast phase dissociation differs substantially (WT: 29%; \u03b2H160D: 67%). This suggests that \u03b2H160D decamers favor a binding mode where eIF2 engages only three of four interfaces (IF1-3), with reduced engagement of the fourth interface (IF4) in eIF2B\u03b4'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 are supported by detailed SPR experiments (Figure 3A-C, G) with appropriate kinetic modeling. The biphasic dissociation analysis is technically sound, and the interpretation regarding interface engagement is reasonable given the structural context. The variable association time experiments (Figure 3G) provide additional support for the equilibrium behavior. However, the mechanistic interpretation about specific interface engagement (C48-C49) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The \u03b2H160D mutation does not significantly affect eIF2-P binding affinity to eIF2B decamers. SPR measurements show comparable KD values for eIF2-P binding to WT and \u03b2H160D decamers (WT: 14 nM; \u03b2H160D: 8.1 nM). As expected, no eIF2-P binding to WT tetramers was observed due to the absence of the eIF2B\u03b1 subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by SPR data in Figure 3D-F. The similar binding affinities are consistent with the structural observation that the eIF2-P binding site is not significantly altered in the \u03b2H160D mutant. The lack of tetramer binding is expected and serves as an appropriate control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The \u03b2H160D mutation induces a conformational change in the eIF2B decamer, shifting it toward an I-State-like conformation. Cryo-EM structural analysis reveals a ~3.5\u00b0 rocking motion between the two tetramer halves, repositioning them in an orientation intermediate between the A-State and I-State (which shows a 6\u00b0 angle). Additional analysis indicates that both WT and mutant can undergo rocking motions, but the \u03b2H160D mutation shifts the mean conformation toward the I-State and represents a continuous conformational distribution rather than discrete A/I-State populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by high-resolution cryo-EM data (2.8 \u00c5) and extensive 3D variability analysis (Figure 4 and supplements 3-5). The structural analysis is rigorous, including heterogeneous refinement and local resolution assessment. The conclusion that \u03b2H160D represents a continuous distribution rather than a mixture of discrete states is well-supported by the classification analysis showing that separating particles into multiple classes worsened map quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The \u03b2H160D mutation widens the ISRIB binding pocket by 3.3 \u00c5 compared to the A-State, explaining ISRIB insensitivity. Structurally, the mutation disrupts a \u03c0-\u03c0 stacking interaction between \u03b2H160 and \u03b4'F452 in the WT decamer, causing loop retraction and pocket widening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by detailed structural comparisons in Figure 5A-B and Figure 5\u2014figure supplement 1. The measurements are precise, and the mechanistic explanation for ISRIB insensitivity based on pocket widening is logical and consistent with the biochemical data showing no ISRIB response in \u03b2H160D mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The \u03b2H160D mutation widens the eIF2\u03b1 substrate binding pocket by 2.9 \u00c5, predicted to prevent proper engagement of the fourth binding interface (IF4) on eIF2B\u03b4'. This structural change is consistent with the observed altered dissociation kinetics and reduced enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by structural analysis in Figure 5F. The pocket widening measurement is precise, and the prediction about IF4 engagement is consistent with the SPR data showing increased fast phase dissociation. The inference is reasonable though not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The eIF2-P binding site remains unchanged in the \u03b2H160D decamer compared to the I-State structure, consistent with the similar binding affinities measured by SPR (WT: 14 nM; \u03b2H160D: 8.1 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by structural comparison (Figure 5G) and SPR data (Figure 3D-E). The consistency between structural and biochemical observations strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CRISPR-edited \u03b2H160D cell lines show constitutive ISR activation without changes in eIF2B protein levels. Both homozygous and heterozygous \u03b2H160D clones exhibit elevated ATF4 protein levels in the absence of stress, which cannot be alleviated by ISRIB treatment. ATF4 mRNA levels remain unchanged, but ATF4 transcriptional targets (DDIT3, ASNS, CARS) are significantly upregulated, confirming functional ISR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are well-supported by multiple cellular assays including western blots (Figure 6A), RT-qPCR (Figure 6B), and deep sequencing validation of the edited cell lines (Figure 6\u2014figure supplement 1). The data consistently demonstrate ISR activation at the translational and transcriptional levels. Statistical analysis is appropriate (one-way ANOVA with Dunnett post-hoc test), and biological replicates (n=3) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "\u03b2H160D cell lines show significantly reduced basal protein synthesis (\u03b2H160D #1: 47 \u00b1 9.0%; \u03b2H160D #2: 69 \u00b1 7.3% of WT) without changes in eIF2\u03b1 phosphorylation levels, demonstrating that impaired eIF2B GEF activity alone is sufficient to induce constitutive ISR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by puromycin incorporation assays (Figure 6C, Figure 6\u2014figure supplement 2) and phospho-eIF2\u03b1 measurements (Figure 6\u2014figure supplement 3A-B). The conclusion that reduced GEF activity is sufficient for ISR activation is well-supported, as the mutation causes ISR activation without increasing eIF2\u03b1 phosphorylation. Statistical analysis is appropriate with adequate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "\u03b2H160D cells exhibit slow growth (doubling time increased from 25.7 \u00b1 3.6 h to 38.4 \u00b1 3.5 h) that cannot be rescued by ISRIB treatment, consistent with the mutation's resistance to ISRIB at the biochemical level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by growth curve data (Figure 6D, Figure 6\u2014figure supplement 3C) with adequate biological replicates (n=3). The lack of ISRIB rescue is consistent with all other data showing ISRIB insensitivity of the \u03b2H160D mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The \u03b2H160D mutation mimics key properties of the eIF2-P-bound I-State: reduced intrinsic GEF activity (~3-fold), altered substrate dissociation kinetics, resistance to ISRIB, and constitutive low-level ISR activation in cells. This demonstrates that a conformational change in eIF2B is sufficient to activate the ISR independent of eIF2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C76-C80 represent the main conclusions of the manuscript, synthesizing results from biochemical, structural, and cellular experiments. The evidence is comprehensive and internally consistent across multiple experimental approaches. The conclusion that conformational change alone is sufficient for ISR activation is well-supported by the observation that \u03b2H160D cells show ISR activation without increased eIF2\u03b1 phosphorylation (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Despite causing only a ~2-fold reduction in specificity constant (compared to ~100-fold reduction by eIF2-P binding), the \u03b2H160D mutation induces constitutive ISR activation, suggesting cells are sensitive to small fluctuations in eIF2B GEF activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by comparing the current kinetic data with prior work (C81 cites Schoof et al., 2021a). The inference about cellular sensitivity (C84) is reasonable given that a modest enzymatic change produces clear ISR activation. However, the conclusion would be strengthened by dose-response studies or additional quantitative analysis of the relationship between GEF activity and ISR activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establishing the ISR mechanism, eIF2B structure and function, and prior knowledge about the A-State/I-State conformational switch model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 represent established knowledge and prior work, appropriately cited throughout. These provide necessary context for the current study and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "In the I-State induced by eIF2-P binding, ISRIB binding to eIF2B is impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by citations to recent work (Schoof et al., 2021a; Zyryanova et al., 2021) and provides important context for interpreting the \u03b2H160D phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The \u03b2H160 residue is highly conserved among eukaryotes with no reported variation in the human genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are statements about sequence conservation and database information that can be verified. While not directly demonstrated in the manuscript, these are straightforward knowledge claims that support the biological significance of the H160 position.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The mechanism by which \u03b2H160D impacts eIF2B activity raises the possibility that certain VWMD mutations may compromise eIF2B function through conformational state alteration. The disease-associated \u03b2E213G mutation, located near the ISRIB pocket, substantially reduces GEF activity without affecting complex association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is speculative but reasonable extrapolation from the current findings. Claim C88 is supported by citation to prior work (Li et al., 2004) and provides an example of a disease mutation that might act through a similar mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "ISRIB cannot rescue the \u03b2H160D defect, but other molecules with higher affinities might overcome the charge repulsion and restore A-State conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is well-supported by all the experimental data showing ISRIB insensitivity. Claim C90 is speculation about potential therapeutic strategies, clearly presented as such. This is appropriate discussion of future directions.",
+    "result_type": "MINOR"
+  }
+]

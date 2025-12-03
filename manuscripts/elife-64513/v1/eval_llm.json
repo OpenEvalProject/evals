@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors developed a chondrocyte-specific Tet-Off system (Col2a1-tTA; TRE-H2B-EGFP) to genetically label slow-cycling chondrocytes. After pulse-chase experiments, H2B-EGFP signal was retained in cells at the top of the growth plate (resting zone), with quantitative analysis showing that H2B-EGFP intensity decreases by approximately 2-fold per cell division. Cells with the top 10% brightness were designated as label-retaining chondrocytes (LRCs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C38 collectively demonstrate successful development and validation of the Tet-Off system. The quantitative CTCF analysis (C34-C36) provides rigorous evidence for the 2-fold dilution per division, consistent with histone segregation. The designation of top 10% brightness cells as LRCs (C38) is empirically justified by localization data (C37) and quantitative measurements. However, the system shows dosage-dependent efficiency issues (C26-C29) and leakiness in non-chondrocytes (C31-C32), which the authors acknowledge and address through subsequent refinements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The Col2-Q quadruple transgenic system (Col2a1-tTA; TRE-H2B-EGFP; Col2a1-creER; R26R-tdTomato) effectively marks LRCs in the resting zone of the postnatal growth plate. After 4 weeks of chase, LRCs were identified at the top of the growth plate retaining high H2B-EGFP signal and marked by Col2CE-tdT+, with descendants showing progressively diluted H2B-EGFP as they differentiate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 demonstrate that the Col2-Q system successfully addresses the limitations of the simpler Tet-Off system by adding cell-type specificity through the Col2a1-creER; R26R-tdTomato component. The dual-color strategy (C40, C42) provides clear discrimination of growth plate chondrocytes from articular cartilage and other cell types. The spatial localization data (C41, C43) and the gradient of H2B-EGFP dilution are consistent with the expected behavior of slow-cycling cells differentiating into proliferating progeny.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A microdissection and enzymatic dissociation protocol selectively harvests growth plate chondrocytes from postnatal epiphyses. Col2a1-creER preferentially marks growth plate chondrocytes (1,315\u00b1171 cells) over articular cartilage (79\u00b150 cells) at P49 (p<0.0001). After collagenase digestion, 99.1\u00b11.4% of Col2a1CE-tdT+ cells are growth plate chondrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 provide strong quantitative evidence (with appropriate statistical testing) that the isolation protocol is highly selective for growth plate chondrocytes. The significant reduction in growth plate tdT+ cells after digestion (C47) combined with no change in articular cartilage cells (C48) demonstrates selective liberation of growth plate cells. The 99.1% purity (C49) is compelling, though the sample size (n=4) is modest. The methodology is well-controlled and the conclusion (C50) is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Flow cytometry analysis of Col2-Q mice demonstrates that LRCs can be effectively identified and isolated. The fraction of GFPhigh cells (>10^4 units H2B-EGFP) within Col2CE-tdT+ population decreases following a non-linear decay curve (Y0: 86.5\u00b11.3%; Plateau: 2.6\u00b10.9%; T1/2=0.99-1.18 weeks) during chase periods up to 12 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 demonstrate successful flow cytometry-based identification of LRCs with appropriate controls (C55 shows no GFP+ cells without Col2a1-tTA). The decay kinetics (C54) are well-characterized with curve fitting, providing quantitative parameters. The plateau at ~2.6% suggests a stable slow-cycling population. The conclusion (C56) that LRCs can be effectively isolated is supported by the combined microdissection, enzymatic digestion, and flow cytometry data across multiple time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Non-LRCs are significantly enriched for EdU+ cells compared to LRCs at 1 week (7.04\u00b12.30% vs 2.04\u00b11.67%, p=0.002) and 2 weeks (2.80\u00b11.00% vs 1.13\u00b10.74%, p=0.047) of chase, indicating that LRCs are relatively quiescent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide direct functional validation that LRCs are indeed slow-cycling. The EdU incorporation assay with appropriate statistical testing demonstrates significantly lower proliferation in LRCs at two time points. The trend at 4 weeks (C58), while not statistically significant (p=0.200), is consistent. The conclusion (C59) that LRCs are relatively quiescent is well-supported by the data, though the effect sizes are modest (2-3 fold differences).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Comparative RNA-seq analysis of LRCs versus non-LRCs identified 799 differentially expressed genes (427 upregulated in LRCs, 372 in non-LRCs). LRCs are enriched for known resting zone markers (Pthlh, Sfrp5) and novel markers (Gas1, Spon1, Wif1), while non-LRCs are enriched for proliferating/pre-hypertrophic markers (Ihh, Col10a1, Mef2c) and cell cycle regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 demonstrate high-quality RNA-seq data (RIN>8.0) with appropriate biological replicates that cluster together (C61). The differential expression analysis identifies biologically meaningful markers consistent with known resting zone (C64) and proliferating zone (C65) characteristics. The enrichment of cell cycle regulators in non-LRCs (C66) provides additional validation. The fold-change threshold (\u2265\u00b12) is reasonable, though no adjusted p-value threshold is explicitly stated for the 799 DEGs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Validation of LRC markers confirms that Prg4 mRNA is expressed in the resting zone (though fainter than articular surface), Gas1+ cells are exclusively at the top of the growth plate, and PTHrP+ cells become increasingly enriched among EdU-retaining cells (from 17.9\u00b12.7% at P7 to 77.6\u00b19.6% at P28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 provide independent validation of RNA-seq findings using orthogonal methods (RNAscope in situ hybridization for Prg4, LacZ reporter mice for Gas1 and Pthlh). The EdU pulse-chase experiment in PthlhLacZ mice (C70-C71) demonstrates a significant enrichment of PTHrP+ cells among label-retaining cells over time, supporting the conclusion (C72). The validation strengthens confidence in the RNA-seq data, though the Prg4 expression in resting zone is notably weaker than in articular cartilage (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Pathway analysis revealed significant enrichment of Wnt signaling pathway genes among DEGs. LRCs are enriched for Wnt inhibitors (Sfrp1, Sfrp5, Dkk2, Wif1, Notum, Fzd6), while non-LRCs are enriched for Wnt activators (Rspo3, Rspo4, Wnt10b), indicating that LRCs reside in a Wnt-inhibitory microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 demonstrate significant enrichment of Wnt signaling pathway (p<0.05, FDR corrected) with clear differential expression patterns. The identification of 16/21 Wnt pathway DEGs as canonical Wnt/\u03b2-catenin related (C75) focuses the analysis appropriately. The specific genes identified (C76-C77) show a coherent pattern of inhibitors in LRCs and activators in non-LRCs. The conclusion (C78) is well-supported, though it's notable that LRCs also express the Wnt activator Wnt7b, suggesting a more nuanced regulatory environment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Activation of canonical Wnt signaling through Apc haploinsufficiency in PTHrP+ resting chondrocytes significantly increased \u03b2-catenin protein (283.9\u00b165.8 vs 62.1\u00b133.3, p=0.03) and impaired formation, expansion, and differentiation of these cells. PTHrPCEAPCHet resting chondrocytes were significantly reduced at P9, P12, and P21, formed fewer short columns at P21 (45.9\u00b17.7 vs 67.4\u00b110.1, p=0.03), and established fewer long columns at P96 (7.3\u00b12.5 vs 26.5\u00b112.4, p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 provide functional validation of the Wnt-inhibitory environment hypothesis through genetic manipulation. The \u03b2-catenin upregulation (C79) confirms Wnt pathway activation. The quantitative lineage tracing data show consistent impairments across multiple time points and phenotypes (resting zone formation C81, short column formation C83, long column formation C85) with appropriate statistical testing. The effects are modest but consistent, supporting the conclusion (C87-C88) that PTHrP+ cells require a Wnt-inhibitory environment. Sample sizes (n=4-5) are adequate for the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The authors note that the effect of \u03b2-catenin stabilization in PTHrP+ chondrocytes appears to be modest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is an appropriate interpretation of the experimental results. While statistically significant effects were observed in multiple phenotypes (C81, C83, C85), the magnitude of the effects is indeed modest (e.g., ~30% reduction in short columns, ~70% reduction in long columns at P96). This acknowledgment demonstrates appropriate scientific caution and suggests that other regulatory mechanisms may also be important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95"
+    ],
+    "result": "Background claims establish that the resting zone of the postnatal growth plate contains slow-cycling PTHrP+ skeletal stem cells, is regulated by PTHrP-Ihh feedback and PPR-mediated G protein signaling, and that both canonical and non-canonical Wnt signaling pathways are important for chondrocyte function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C23, C89-C92, C94-C95 are background knowledge claims supported by appropriate citations to prior literature. These establish the scientific context for the current study. The citations appear appropriate and the claims are consistent with established knowledge in the field. Claim C95 represents the authors' synthesis of their findings with existing knowledge about non-canonical Wnt/PCP signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The main findings of the study are that comparative RNA-seq identified enrichment of Wnt inhibitors in LRCs and activators in non-LRCs, activation of Wnt/\u03b2-catenin signaling impaired PTHrP+ cell function, and slow-cycling chondrocytes are maintained in a Wnt-inhibitory environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 represent the core conclusions of the manuscript, which are well-supported by the detailed experimental evidence in the grouped results above. The RNA-seq data (C4) is validated by multiple orthogonal approaches, the functional experiments (C5) demonstrate causality through genetic manipulation, and the overall conclusion (C6) integrates both lines of evidence. The study provides a novel mechanistic insight into resting zone chondrocyte regulation.",
+    "result_type": "MAJOR"
+  }
+]

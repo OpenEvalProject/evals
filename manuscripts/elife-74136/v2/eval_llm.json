@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C107",
+      "C110",
+      "C111"
+    ],
+    "result": "PIKfyve inhibition with apilimod causes lysosomal hyperacidification of 0.3-0.5 pH units across multiple cell types. In U2OS cells, lysosomal pH decreased from 4.32 \u00b1 0.04 to 4.02 \u00b1 0.05, corresponding to a doubling of free proton concentration. This hyperacidification was also observed in neonatal fibroblasts and SUDHL B-cell lymphoma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C38-C43, C107, C110-C111 collectively demonstrate robust lysosomal hyperacidification upon PIKfyve inhibition across multiple cell types with appropriate pH measurement methodology (Oregon Green 488-dextran ratiometric imaging), proper calibration curves, and statistical analysis (Figure 1). The homogeneous nature of the effect across lysosomal populations strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C64"
+    ],
+    "result": "Lysosomal hyperacidification is complete within the first hour of apilimod treatment (stabilizing at 0.27 \u00b1 0.05 pH below control), while lysosomes continue enlarging over 24 hours. Treatment with the alternative PIKfyve inhibitor WX8 recapitulates these effects, and there is no detectable correlation between pH and size of individual lysosomes during hyperacidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C64 are supported by time-course experiments (Figure 2) showing distinct kinetics for pH versus size changes. The use of a second PIKfyve inhibitor (WX8) rules out off-target effects. The lack of correlation between individual lysosome pH and size (Figure 2\u2014supplement 1) further supports the independence of these processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "After apilimod removal, lysosomes shrink rapidly via tubulation events, but pH recovery is delayed, starting only after 2 hours and fully recovering after more than 6 hours. The distinct kinetics and extent of changes in lysosomal size and pH suggest that the underlying processes are at least partially independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by washout experiments (Figure 2F-I) demonstrating temporal dissociation between size and pH recovery. The observation of tubulation events and the delayed pH recovery provide mechanistic insight. However, the interpretation of independence (C57) is inferential rather than directly demonstrated through mechanistic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Early lysosomal hyperacidification induced by PIKfyve inhibition is not required for vacuole formation, as alkalinization with chloroquine does not prevent vacuolization. However, V-ATPase activity is necessary for both hyperacidification and vacuole formation, as BafA1 treatment prevents both effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by experiments using chloroquine and BafA1 (Figure 3). The chloroquine pretreatment experiment is well-designed, addressing a timing issue in prior work. The statistical significance of pH changes even after chloroquine treatment (p=0.02) and the complete loss of both effects with BafA1 provide strong evidence for the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Overexpression of hyperactive PIKfyve (PIKfyveKYA), which raises PI(3,5)P2 levels several-fold, does not affect lysosomal pH or size in U2OS cells. While lowering PI(3,5)P2 results in pH changes, raising it does not, possibly because downstream effectors are already saturated with the lipid under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by transfection experiments (Figure 4) with appropriate controls (WT PIKfyve, mCherry alone). The Western blot confirms PIKfyve expression. However, C70 is speculative and represents one possible explanation. The lack of effect could also reflect cell-type differences, insufficient PI(3,5)P2 elevation, or other factors not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ClC-7 knockout in U2OS cells strongly diminishes apilimod-induced lysosomal hyperacidification (\u0394pH of 0.13 units in KO versus 0.31 units in WT, p=0.0119) and reduces lysosome swelling (4.11 \u03bcm\u00b2 in WT versus 2.04 \u03bcm\u00b2 in KO, p=0.0017). Baseline lysosomal pH and size are unchanged in untreated ClC-7 KO cells, indicating ClC-7 contributes to setting lysosomal pH under specific circumstances and participates in size regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by CRISPR/Cas9 knockout experiments with proper validation (genomic PCR, RT-qPCR, sequencing; Figure 5). The statistical analysis is appropriate with multiple independent experiments. The finding that baseline pH is normal in KO cells but hyperacidification is blunted is particularly important for understanding ClC-7's role. The conclusion about partial independence of pH and size mechanisms is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "PI(3,5)P2 directly and specifically inhibits ClC-7 transport currents in a dose-dependent manner (EC50 ~30 \u03bcM), reducing maximum voltage-activated currents by ~39% and tail currents by 66%, and accelerating deactivation. Neither PI3P nor PI(4,5)P2 inhibit ClC-7, and PI3P does not compete with PI(3,5)P2 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 are supported by patch-clamp electrophysiology experiments (Figure 6) using plasma membrane-targeted ClC-7. The specificity is demonstrated through testing multiple phosphoinositides and competition experiments. The dose-response relationship is established (Figure 6\u2014supplement 2E). However, the relatively high EC50 raises questions about physiological relevance, though calibration with TPC1 (C89-C91) suggests this may reflect experimental delivery efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Calibration experiments using TPC1 show that PI(3,5)P2 activates TPC1 with an EC50 of 7-10 \u03bcM in the authors' system, compared to ~145 nM in published work, suggesting less efficient delivery of lipid to the plasma membrane in their experimental setup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by control experiments (Figure 6\u2014supplement 3) that provide important context for interpreting the ClC-7 EC50 values. This calibration strengthens the interpretation that the actual membrane concentration of PI(3,5)P2 is substantially lower than the pipette concentration, making the ClC-7 affinity potentially physiologically relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The disease-causing Y715C mutation in ClC-7, which causes enlarged vacuoles and hyperacidified lysosomes in patients, abolishes PI(3,5)P2 inhibition of ClC-7 currents. Y715 is located within 10 \u00c5 of the bound phosphoinositide in the ClC-7 structure and participates in a hydrogen-bonding network, suggesting the mutation either weakens PI(3,5)P2 binding or disrupts coupling between lipid binding and gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 are supported by electrophysiology experiments on the Y715C mutant (Figure 6D, F) combined with structural analysis (Figure 6B). The mechanistic connection between PIKfyve inhibition effects and the patient mutation phenotype is compelling. However, C97 is inferential\u2014the experiments cannot distinguish between reduced binding affinity and disrupted coupling, though both are plausible mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Mutagenesis of Y715 to phenylalanine (removing hydroxyl) or serine (removing phenyl ring) both increase maximal current and speed activation, with characteristics nearly identical to Y715C. Multiple other mutations at position 715 produce similar gain-of-function phenotypes, demonstrating that the wild-type tyrosine is essential for proper transporter function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are supported by systematic mutagenesis experiments in Xenopus oocytes (Figure 7, Figure 7\u2014supplement 1). The finding that diverse mutations at Y715 all produce similar gain-of-function phenotypes strongly supports the importance of this specific residue. The structural context (hydrogen bonding network) provides a mechanistic framework for understanding these effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C108",
+      "C109",
+      "C123",
+      "C124"
+    ],
+    "result": "The hyperacidification caused by PIKfyve inhibition occurs primarily via ClC-7, and the authors propose that ClC-7 is largely inhibited by PI(3,5)P2 under normal conditions, preventing it from strongly influencing baseline lysosomal pH, but is activated when PI(3,5)P2 levels decrease, facilitating further acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C108-C109 are well-supported by the combination of ClC-7 KO experiments (Figure 5) and direct inhibition data (Figure 6). However, C123-C124 represent a mechanistic model/hypothesis rather than directly demonstrated facts. The model is consistent with the data (normal pH in ClC-7 KO, hyperacidification upon PIKfyve inhibition, direct PI(3,5)P2 inhibition of ClC-7) but alternative explanations (C127) are not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Based on kinetic changes in ClC-7 voltage-dependent activation and deactivation, the authors propose that PI(3,5)P2 tunes the slow gating process rather than affecting the transport cycle itself, potentially through conformational changes at the interface between transmembrane and cytoplasmic domains involving the 5-phosphate revising the hydrogen bond network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119 represent mechanistic interpretations and models based on the electrophysiology data (Figure 6, Figure 6\u2014supplement 2). While the kinetic effects on gating are demonstrated, the specific molecular mechanism (C119) is speculative. The model is consistent with structural data and prior literature on CLC gating, but direct evidence for the proposed conformational changes is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The hyperacidic luminal pH resulting from apilimod treatment is neither responsible for initiation of vacuole formation nor for vacuole size increase. Lysosomal size and pH are not completely decoupled, as ClC-7 knockout dampens both apilimod-induced size and pH changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is well-supported by the chloroquine experiments (Figure 3). C115 is supported by the washout time-course (Figure 2). C116 acknowledges the partial coupling observed in ClC-7 KO experiments (Figure 5), providing a nuanced view. The conclusions appropriately distinguish between the independence of pH from vacuole formation versus the partial coupling of the two processes through ClC-7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background knowledge claims about lysosomal biology, ClC-7 function, PIKfyve/PI(3,5)P2 roles, and prior literature findings establish the context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 represent established knowledge from prior literature, appropriately cited throughout. These provide necessary context but are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field's understanding. C33-C34 identify gaps in prior work that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C112",
+      "C113"
+    ],
+    "result": "Technical validation and literature context: OG-positive vesicles are confirmed as lysosome-related compartments through colocalization with cathepsin B and LysoTracker. Prior work established that PIKfyve inhibition depletes PI(3,5)P2 rapidly and causes lysosome enlargement that reverses after drug removal, and that V-ATPase activity is required for vacuole formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 and C112-C113 provide important technical validation (Figure 1\u2014supplement 1) and literature context. The colocalization data supports the interpretation that pH measurements reflect lysosomal compartments. The cited prior work is appropriately referenced and provides context for interpreting the time-course experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Discussion of prior work on ClC-7's role in lysosomal pH regulation, alternative hypotheses, and connections to other lysosomal ion channels and disease models (FIG4 knockout, microglia activation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C136 represent discussion points that appropriately contextualize the current findings within prior literature. The apparent contradiction between siRNA knockdown studies (C121) and ClC-7 KO mice (C122) is acknowledged, and the authors' model (C123-C124) provides a potential resolution. Alternative explanations (C127) are appropriately considered. The connections to FIG4 KO (C134-C136) and other ion channels (C132-C133) are speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C119",
+      "C127",
+      "C130",
+      "C136"
+    ],
+    "result": "Speculative mechanistic explanations and alternative hypotheses proposed by the authors to explain their observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C119, C127, C130, and C136 represent speculative interpretations and alternative hypotheses. While these are reasonable possibilities consistent with the data, they lack direct experimental support. These speculations are appropriately presented as possibilities rather than conclusions, but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,462 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C8",
+      "C46"
+    ],
+    "result": "Thymopoiesis selects for clustered \u03b2CDR3s with increased connectivity. The number and degree of clustered \u03b2CDR3s significantly increase from DPCD3\u2212 to CD8+ thymocytes (p<0.0001), consistently across all individuals regardless of age, sex, or HLA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C7, C8, and C46 collectively demonstrate positive selection of clustered TCRs during thymopoiesis. The statistical significance (p<0.0001) is robust, the effect is consistent across all 13 donors, and the data are supported by multiple figures (1A-D, Figure 1\u2014figure supplement 2). The methodology using Levenshtein distance \u22641 to define clustering is well-established (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C47",
+      "C48"
+    ],
+    "result": "Clustered TCRs have higher generation probabilities than dispersed TCRs, and Pgen increases during thymic selection. Clustered TCRs from both DPCD3+ and CD8+ thymocytes have significantly higher Pgen than dispersed ones (p<0.0001), and Pgen increases from DPCD3+ to CD8+ (p<0.0001), with robust correlation between Pgen and connectivity (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 provide strong statistical evidence for the relationship between Pgen and clustering/selection. However, C47-C48 appropriately note that the mean difference is only ~20-fold and many high-Pgen CDR3s don't cluster, indicating Pgen is not the sole driver. The result is well-supported but the authors correctly acknowledge its limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C49"
+    ],
+    "result": "Clustered \u03b2CDR3s show preferential usage of specific V and J genes. Significant overrepresentation (p<0.01) of V\u03b2 12-3, 27, 5-1, 7-9 and J\u03b2 1-1, 2-7 is observed, resulting in clear PCA separation of clustered versus dispersed TCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C12, and C49 are supported by statistical analysis (Figure 1\u2014figure supplement 3G-H) and PCA visualization (Figure 1G). The multiple testing correction is not explicitly mentioned for the V/J gene analysis, which is a minor concern, but the PCA provides independent validation of the VJ usage bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Clustered thymic CDR3s are enriched for public sequences shared between individuals independently of HLA. Up to 31.7% of clustered \u03b2CDR3s in CD8+ thymocytes are public versus ~1% of dispersed ones (p<0.0001), with public CDR3s having higher Pgen (p<0.0001) and sharing independent of HLA Class I alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 and C50-C51 provide strong convergent evidence for public repertoire formation. The independence from HLA sharing (C17) is particularly important and well-demonstrated in Figure 2C. The correlations between Pgen, connectivity, and sharing (C50) are robust. C52's conclusion about biased mechanisms is well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Clustered public thymic CDR3s are enriched for virus-specific sequences. Virus-specific \u03b2CDR3s (identified by tetramer binding) are significantly enriched in clustered versus dispersed CD8+ thymocytes (p<0.0001), have highest Pgen and connectivity, are highly shared between individuals, and represent up to 12.3% of CD8+ repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C53-C57 demonstrate strong enrichment of virus-specific sequences in the clustered, public repertoire. The use of curated tetramer-binding data (C127: 5437 unique \u03b2CDR3s) provides solid ground truth. The estimate of >10% repertoire specificity for only 30 peptides from 7 viruses (C57) is striking and well-supported by Figure 3F. C56's conclusion about a 'paratopic network' is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C58",
+      "C59"
+    ],
+    "result": "Single \u03b2CDR3 clusters contain sequences assigned to multiple viral specificities. Almost 7% (958/13,557) of virus-associated \u03b2CDR3s are assigned to at least two distinct viruses, and single clusters can comprise CDR3s specific for CMV, influenza, EBV, and YFV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C58, and C59 identify polyspecificity at the sequence level using public databases. The observation that LD\u22641 connected sequences have different viral specificities challenges the assumption in C45 that such sequences bind the same peptide. This is a key finding but relies on the accuracy of the public database annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C60"
+    ],
+    "result": "GLIPH2 analysis identifies polyspecific TCR clusters in CD8+ thymocytes. Among 93,182 specificity groups, 31.6% contained at least one CDR3 with known viral specificity, and 6.8% contained CDR3s with more than one specificity (up to nine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C60 use an independent clustering method (GLIPH2) to validate polyspecificity. The large dataset (216,000 CDR3\u03b2 + 32,496 tetramer-specific sequences) and established algorithm provide strong support. However, GLIPH2 groups by structural similarity, not direct binding evidence, so this is computational inference rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C61",
+      "C62",
+      "C63",
+      "C78"
+    ],
+    "result": "Single cells bind multiple dextramers presenting unrelated peptides. Analysis of 160,914 CD8+ T cells from four donors reveals numerous cells binding to dextramers with different viral peptides (CMV, EBV, HIV, Flu), with some cells binding up to a dozen dextramers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C61-C63, and C78 provide direct single-cell evidence for polyspecificity using paired \u03b1\u03b2 TCR sequencing. The large dataset (C128-C131) and visualization (Figures 4B-C) strongly support multiple binding. The authors acknowledge that previous researchers excluded these cells (C26), which is an important observation about potential bias in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Polyspecific TCRs show peptide- and HLA-dependent binding patterns with competition between strong and weak binders. Analysis of 2074 cells with CASSIRSSYEQYF \u03b2CDR3 shows strong binding to HLA-A*0201/influenza and weaker binding to HLA-A*0301 and A*1101 dextramers with CMV/EBV peptides, with binding intensity statistically lower when strong binders are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C64-C66 provide detailed characterization of polyspecific binding. The observation of competition (C65, Figure 4\u2014figure supplement 2A) is important evidence that weak binding is TCR-mediated rather than artifact. The peptide and HLA dependence (C66) further supports specificity rather than nonspecific binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Polyspecific binding is not explained by KIR expression or cell phenotype. KIR+ cells are much fewer than polyspecific cells with no association between KIR expression and polyspecificity, and binding patterns are independent of CD45RA/RO phenotype or other relevant genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 address important alternative explanations for the observed polyspecific binding. The transcriptomic analysis (Figure 4\u2014figure supplement 2B-E) provides strong evidence that polyspecificity is TCR-intrinsic rather than due to other surface receptors or cell state. C69's conclusion is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C70",
+      "C71"
+    ],
+    "result": "Dextramer-sorted T cells show functional polyreactivity. Cells sorted by CMV or EBV dextramer binding can be activated by both cognate and unrelated peptides, while control cells respond only to PMA/ionomycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C71 demonstrate that polyspecific binding translates to functional activation. The experimental design with appropriate positive (PMA/ionomycin) and negative (dextramer-negative cells) controls is sound. However, the sample size and number of replicates are not clearly stated, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CMV pp65-selected T cells respond to unrelated EBV peptides. Over 85% of cells selected by pp65 stimulation produce IFN\u03b3 to cognate peptides, with a large fraction also responding to EBV BZLF-1 (but not EBNA1) at 100-fold higher but physiological concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C72-C74 provide strong functional evidence for polyreactivity in a clinically relevant cell therapy product. The specificity (response to BZLF-1 but not EBNA1, C73) argues against nonspecific activation. The concentration dependence (C74, Figure 5\u2014figure supplement 2B) is well-documented. This is compelling evidence for physiologically relevant polyreactivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C75",
+      "C82"
+    ],
+    "result": "Cloned polyspecific TCRs activate reporter cells in response to multiple unrelated viral peptides. TCR#35-13 and TCR#36-150 respond to Flu, CMV, and EBV peptides with varying EC50 values (10^-11 to 10^-3 M), while control TCR D222D responds only to its cognate peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C75 provide definitive evidence for TCR-mediated polyreactivity through cloning and re-expression. The dose-response curves with EC50 values are rigorous. The control TCR (C34) and lack of response to HLA-A*03:01 (C75) demonstrate specificity. C82 notes remarkable similarity between two TCRs differing by 2AA, validating assay robustness and the LD\u22641 metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C76"
+    ],
+    "result": "TCRs specific for pancreatic self-peptides also show polyspecificity. A TCR responding to GAD65 VMNILLQYV peptide responds even better to the structurally unrelated SLYNPAIVYA peptide from a different self-protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C76 extend polyspecificity beyond viral antigens to self-antigens. The use of combinatorial peptide libraries (C76, citation to Mann et al., 2020) to identify structurally unrelated peptides is rigorous. This suggests polyspecificity is a general property of TCRs, not limited to antiviral responses. However, only one example is shown in detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C77"
+    ],
+    "result": "Curation of public databases reveals widespread polyspecificity. Among 40,939 curated \u03b2CDR3 from antiviral TCRs, 24% were from TCRs that could bind at least two totally unrelated viral peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C77 provide important context by analyzing existing public data. The 24% frequency is substantial and suggests polyspecificity has been overlooked. However, the curation methodology is not fully detailed, and the claim relies on the accuracy of the original database annotations. The authors acknowledge this is a 'simple curation' which may have limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C85"
+    ],
+    "result": "Multiple dextramer binding indicates multiple specificities, and polyspecificity translates to polyreactivity. The authors argue that binding of multimeric HLA/peptide complexes is paradigmatic for defining specificity, and functional activation assays are more relevant than dextramer binding for assessing reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 and C85 present important interpretive conclusions. C80 is a logical inference from the paradigmatic use of multimers to define specificity. C81 is supported by the functional data (C29-C35). C85 is justified by the observations about sensitivity differences (C83-C84) and the functional validation. These are well-reasoned interpretations of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The observed polyspecificity represents a previously unreported bias in TCR selection beyond random cross-reactivity. While each TCR may recognize >10^6 peptide/MHC combinations, the probability of finding multiple cross-reactive peptides among the few tested would be ~10^-3 to 10^-6, suggesting the polyreactivity observed is not random but reflects selection bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 provide important context distinguishing polyspecificity from general cross-reactivity. The probabilistic argument (C91-C92) is sound and highlights that the observed polyspecificity is statistically unlikely to be random. C93-C94's conclusion about selection bias is well-justified. This distinguishes the findings from known cross-reactivity and mimotopy (C88-C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The absence of somatic hypermutation in T cells suggests evolutionary selection for fuzzy rather than stringent recognition. Unlike B cells which use somatic mutation to increase antibody affinity, T cells did not evolve this mechanism, suggesting T-cell recognition may be selected to be more fuzzy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96 present an evolutionary speculation. While C95 correctly states that B cells use somatic hypermutation (established knowledge), C96's inference about evolutionary selection for fuzziness is speculative. The absence of a mechanism doesn't necessarily indicate selection for an alternative strategy\u2014it could reflect other evolutionary constraints. This is interesting speculation but not directly supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Polyspecific TCRs show specific binding patterns, not random nonspecific binding. Single cells do not bind randomly to any homologous-HLA/peptide complexes; each polyspecific TCR has its own binding pattern with most dextramers not binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 address a critical concern about whether polyspecific binding is truly specific or just nonspecific. The data in Figure 4\u2014figure supplement 1 showing distinct binding patterns for different TCRs strongly supports that binding follows structural rules. This is important for establishing that polyspecificity is a meaningful biological phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Polyspecific TCRs are distinct from innate-like MAIT and NKT cells and fetal/neonatal T cells. Unlike MAIT/NKT cells which have restricted diversity and invariant TCR\u03b1, polyspecific TCRs are highly diverse for both \u03b1 and \u03b2 chains. They also differ from fetal/neonatal T cells which are enriched in germline-encoded TCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 appropriately distinguish the observed polyspecific TCRs from other known populations with promiscuous recognition. The comparisons are well-supported by citations and the data showing high diversity (C101). This is important for establishing that polyspecific TCRs represent a distinct population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Independent studies support polyspecific T-cell responses. A multiple sclerosis study identified CD4+ T cells responding to self, EBV, and bacterial peptides. T-scan analysis of NLV-expanded cells showed 2% bind IE1 tetramers with similar enrichment (60 vs 80-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 cite independent published work supporting polyspecificity. The citations (Wang et al., 2020; Kula et al., 2019) provide external validation. C106's conclusion that single peptide activation expands polyspecific cells is well-supported by the T-scan data. This strengthens the overall argument by showing the phenomenon is not unique to this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The detection of polyspecific T-cell viral specificities is likely underestimated due to database bias. CMV, EBV, and influenza represent 15.9%, 16.2%, and 50.6% of database entries respectively, and polyspecific TCRs may represent at least 1/5 of the CD8 selected repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 acknowledge important limitations in the analysis. The database bias (C107) is a valid concern that likely leads to underestimation (C108). The estimate of \u22651/5 of repertoire (C109) is based on the data but should be considered a lower bound given the limitations. This is an honest assessment of the study's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Polyspecific T cells may provide rapid first-line defense against infections. The authors speculate that frequent polyspecific effectors might be more efficient than rare specific cells requiring expansion, potentially explaining protection with restricted repertoires and measles vaccination benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C113 present speculative functional interpretations. While the speculation is reasonable and consistent with the data, these are hypotheses rather than demonstrated results. C112 cites the Bousso et al. case study, and C113 cites vaccination studies, but these are correlative observations that could have alternative explanations. This is interesting speculation requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Polyspecific TCRs form an evolutionarily selected paratopic network that may explain heterologous immunity and contribute to immune disease. The properties (high Pgen, positive selection, public sharing) indicate evolutionary selection, and fuzzy recognition may explain heterologous immunity and create patient-specific 'antigenic sins' contributing to diverse immune responses and diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 summarize the main findings and make reasonable inferences about evolutionary selection based on the data. However, C116-C118 are speculative hypotheses about heterologous immunity and disease. While consistent with the data and supported by citations, these are proposed mechanisms requiring future validation. The speculation is well-reasoned but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background on TCR generation and selection. TCRs are formed by stochastic rearrangements generating >10^19 sequences, with generation probabilities varying by ~10 orders of magnitude. Thymic selection eliminates >80% of cells, releasing ~10^8 unique TCRs per individual.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C42-C44 present established background knowledge supported by appropriate citations. These are well-accepted facts in the field that provide necessary context for the study. The citations to Bradley and Thomas, 2019; Klein et al., 2014; Qi et al., 2014 are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Prior evidence challenges the paradigm of highly specific T-cell responses. Examples include: protection with only ~1000 TCRs in an immunodeficient child, memory T-cell activation by unrelated viruses, virus-specific memory cells in unexposed individuals, CMV enhancement of influenza responses, and HBV-specific responses correlating with cancer outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 cite published work that motivated the current study. The citations (Bousso et al., 2000; Verhoeven et al., 2008; Su et al., 2013; Furman et al., 2015; Cheng et al., 2021) are appropriate and the observations are accurately represented. These provide important context for why the paradigm of strict specificity should be questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "LD\u22641 connected CDR3s have been described to most often bind the same peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 cites multiple studies (Dash et al., 2017; Klinger et al., 2015; Madi et al., 2017; Chen et al., 2017; Glanville et al., 2017; Qi et al., 2016; Meysman et al., 2019) supporting the use of Levenshtein distance \u22641 as a metric for shared specificity. This is well-established in the field and provides justification for the network analysis approach. However, the current study's findings (C22, C58-C59) challenge this assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Competition between dextramers occurs during co-incubation due to limited HLA molecules per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 describes an important technical consideration for interpreting the dextramer binding data. The observation of competition (supported by Figure 4\u2014figure supplement 2A) is important for understanding why some weak bindings may be underestimated. This is a valid technical point that strengthens the interpretation of the polyspecificity data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "TCR functional responses can occur at lower avidity than required for dextramer binding, and polyspecificity translates to polyreactivity at physiological peptide concentrations spanning >6 log10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 cite published work (Ebrahimi-Nik et al., 2021; Rius et al., 2018) supporting that functional responses can occur with weak or no dextramer binding. C86 integrates this with the current findings. This is important for interpreting the relationship between binding and functional data and is well-supported by citations and the functional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Materials and methods for sample collection, TCR sequencing, and data analysis. Thirteen thymus samples from donors aged 19-65 (male:female ratio 2.6) were analyzed. TCR libraries were prepared from 100ng RNA and sequenced. Networks were constructed using Levenshtein distance \u22641. Pgen was calculated using Olga/IGoR. Virus-specific sequences (5437 unique \u03b2CDR3s) were curated from public databases. Single-cell data included 160,914 CD8+ T cells with 139,378 unambiguous TCRs and 15,195 virus-specific TCRs (UMI>10 threshold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C131 describe the methods in detail. The sample size (n=13 donors) is reasonable for this type of study. The RNA input (100ng), sequencing approach, and bioinformatic methods are standard and appropriate. The curation of public databases (C127) and single-cell data processing (C128-C131) are clearly described. The threshold for dextramer binding (UMI>10, C130) is reasonable though somewhat arbitrary.",
+    "result_type": "MINOR"
+  }
+]

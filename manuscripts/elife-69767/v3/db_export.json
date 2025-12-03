@@ -1,0 +1,2000 @@
+{
+  "submission": {
+    "id": "4b4f4cfc-43ae-4e92-97f0-2ab57ffaa03c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:57:48.756644Z",
+    "updated_at": "2025-12-03T05:57:48.756644Z"
+  },
+  "content": [
+    {
+      "id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "submission_id": "4b4f4cfc-43ae-4e92-97f0-2ab57ffaa03c",
+      "content_type": "manuscript",
+      "content_text": "# A locomotor neural circuit persists and functions similarly in larvae and adult Drosophila\n\n## Authors\n\n- Kristen Lee<sup>1</sup> ([ORCID: 0000-0003-4527-6468](https://orcid.org/0000-0003-4527-6468))\n- Chris Q Doe<sup>1</sup> ([ORCID: 0000-0001-5980-8029](https://orcid.org/0000-0001-5980-8029)) \u2020\n\n### Affiliations\n\n1. Institute of Neuroscience, Howard Hughes Medical Institute, University of Oregon Eugene United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIndividual neurons can undergo drastic structural changes, known as neuronal remodeling or structural plasticity. One example of this is in response to hormones, such as during puberty in mammals or metamorphosis in insects. However, in each of these examples, it remains unclear whether the remodeled neuron resumes prior patterns of connectivity, and if so, whether the persistent circuits drive similar behaviors. Here, we utilize a well-characterized neural circuit in the Drosophila larva: the moonwalker descending neuron (MDN) circuit. We previously showed that larval MDN induces backward crawling, and synapses onto the Pair1 interneuron to inhibit forward crawling (Carreira-Rosario et al., 2018). MDN is remodeled during metamorphosis and regulates backward walking in the adult fly. We investigated whether Pair1 is remodeled during metamorphosis and functions within the MDN circuit during adulthood. We assayed morphology and molecular markers to demonstrate that Pair1 is remodeled during metamorphosis and persists in the adult fly. MDN-Pair1 connectivity is lost during early pupal stages, when both neurons are severely pruned back, but connectivity is re-established at mid-pupal stages and persist into the adult. In the adult, optogenetic activation of Pair1 resulted in arrest of forward locomotion, similar to what is observed in larvae. Thus, the MDN-Pair1 neurons are an interneuronal circuit \u2013 a pair of synaptically connected interneurons \u2013 that is re-established during metamorphosis, yet generates similar locomotor behavior at both larval and adult stages.\n\n## Introduction\n\nLarge-scale changes in neuronal morphology and function occur during mammalian puberty (Barendse et al., 2018; Mills et al., 2016; Sisk and Zehr, 2005), as well as several neurobiological disorders including depression (Patel et al., 2019), or chronic pain (Kuner and Flor, 2017). Similarly, major changes in neuronal numbers and type occur as a result of insect metamorphosis (Kanamori et al., 2015; Truman and Reiss, 1976; Yaniv and Schuldiner, 2016). Despite these changes, there are documented cases of individual insect neurons persisting from larval to adult stages. In Drosophila, individual motor and sensory neurons have been shown to persist throughout metamorphosis and undergo dramatic remodeling (Consoulas et al., 2002; Consoulas et al., 2000; Yaniv and Schuldiner, 2016; Yu and Schuldiner, 2014). Similar findings have been reported for the insect mushroom body, where Kenyon cells partners (projection neurons, DANs) exist at both larval and adult stages (Li et al., 2020; Marin et al., 2005). Yet, it remains unclear whether the remodeled neurons re-establish connectivity with the identical neurons in the larva and adult.\n\nDuring Drosophila metamorphosis, the animal changes from a crawling limbless larva to a walking six-legged adult (Riddiford, 1980; Riddiford et al., 2003). Despite the obvious differences, some behaviors are similar: both larvae and adults undergo forward locomotion in search of food, backward locomotion in response to noxious stimuli, and pausing in between antagonistic behaviors (Carreira-Rosario et al., 2018). We and others identified a neuron that, when activated, can trigger backward locomotion in both larvae and adults (Bidaye et al., 2014; Carreira-Rosario et al., 2018; Sen et al., 2017), despite the obvious differences in limbless and six-legged locomotion. This neuron, named mooncrawler/moonwalker descending neuron (MDN), is present as a bilateral neuronal pair in each brain lobe, with all four MDNs having similar synaptic partners, and all four MDNs capable of eliciting backward larval locomotion in larvae (Carreira-Rosario et al., 2018). Larval MDNs function within a neural circuit that induces backward locomotion and coordinately arrests forward locomotion. Halting forward locomotion is achieved via activation of the Pair1 descending interneuron, which inhibits the A27h premotor neuron. Given that the A27h interneuron is required for forward locomotion, its inhibition via MDN-induced Pair1 activation prevents forward locomotion (Carreira-Rosario et al., 2018). Activating backward locomotion is likely to be due, in part, to MDN activation of the A18b premotor neuron, which is specifically active during backward locomotion (Carreira-Rosario et al., 2018). Thus, MDN-Pair1 are synaptically coupled members of a locomotor circuit in the Drosophila larva.\n\nHere, we follow our previous work showing that MDN is remodeled during metamorphosis and persists into the adult (Carreira-Rosario et al., 2018) by asking: Is the MDN partner neuron Pair1 also maintained in the adult? Does the adult Pair1 induce an inhibition in forward locomotion, similar to its role in larvae? And, are the adult Pair1 and MDN synaptically coupled? We find that all of these questions are answered in the affirmative, showing that the core MDN-Pair1 interneuron circuit (a pair of synaptically\u00a0connected interneurons) is re-established during metamorphosis despite profound neurite remodeling, and that this circuit coordinates forward/backward locomotion in both larvae and adults.\n\n## Results\n\n### The Pair1 neuron persists from larval to adult stages\n\nTo determine if Pair1 neurons were present in the adult, we mapped expression of a Pair1-Gal4 line (R75C02-Gal4) from early larval to adult stages. We identified the larval Pair1 neurons based on their characteristic cell body position in the medial subesophageal zone (SEZ), dense local ipsilateral dendritic arborizations (defined as dendritic based on enrichment for post-synapses in the TEM reconstruction of the larval Pair1 neuron; Figure 1\u2014figure supplement 1), and contralateral axons descending into the ventral nerve cord (VNC) in an extremely lateral axon tract (Carreira-Rosario et al., 2018). Using the Pair1-Gal4 line, we could identify Pair1 neurons with this morphology at 28 and 96 hr after larval hatching (ALH; Figure 1A,B). The Pair1 neuron cell bodies and proximal neurites could still be observed at 24 hr after pupal formation (APF), but virtually all of the dendridic processes and descending axonal process are pruned (Figure 1C, only one neuron labeled). This is expected, given that many or all neurons undergo axon/dendrite remodeling during metamorphosis (Kanamori et al., 2015; Truman and Reiss, 1976; Yaniv and Schuldiner, 2016). At 48 hr APF, Pair1 neurons exhibited dendritic branching in the SEZ and a descending axon into the VNC, regaining morphological features similar to that of larval Pair1 neurons (Figure 1D). The axon innervated the T1 (prothoracic) neuropil and descended further down the VNC. These morphological features were maintained into the adult fly, where we could trace the Pair1 axon to primarily innervate the T1 neuropil (Figure 1E), with less extensive innervation of the mesothoracic (T2) and metathoracic (T3) neuropils.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig1-v3.jpg)\n\n**Figure 1.:** (A\u2013B) Pair1 neurons (cell body: yellow asterisk; neurites: yellow arrowhead) in the larval CNS (gray outline) at 28 hr after larval hatching (ALH) (A) and 96 hr ALH (B). Here and in subsequent panels are maximum intensity projections of confocal sections containing the Pair1 neurons; anterior, up; dorsal view. Significant \u2018off-target\u2019 expression marked with white arrowheads. Scale bar, 50 \u03bcm. (A\u2019\u2013B\u2019) Enlargement of the brain regions boxed in A,B. Scale bar, 20 \u03bcm. (A\u201d\u2013B\u201d) Tracing to show Pair1 neuron morphology. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (C\u2013D) Pair1 neurons (cell body: yellow asterisk; neurites: yellow arrowhead) in the pupal CNS (gray outline) at 24 hr after pupal formation\u00a0(APF) (C) and 96 hr APF (D). Significant \u2018off-target\u2019 expression marked with white arrowheads. Scale bar, 50 \u03bcm. (C\u2019\u2013D\u2019) Enlargement of the brain regions boxed in C, D; cell body: yellow asterisk, neurites: yellow arrowhead. Scale bar, 10 \u03bcm. (C\u201d) Tracing to show Pair1 neuron morphology. (D\u201d) Focal plane showing Pair1 cell bodies (region boxed in D\u2019, cell body marked with yellow asterisks). Scale bar, 10 \u03bcm. (D\u201d\u2019) Tracing to show Pair1 neuron morphology. Note that Pair1 can be followed to T1 in the 3D confocal stack but is difficult to represent here due to fasciculation of Pair1 with off-target neurons. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (E) Pair1 neurons (cell body: yellow asterisk; neurites: yellow arrowhead) in the 4-day adult CNS (gray outline) Significant \u2018off-target\u2019 expression marked with white arrowheads. Scale bar, 50 \u03bcm. (E\u2019) Enlargement of the brain region boxed in E. Scale bar, 10 \u03bcm. (E\u201d) Focal plane showing Pair1 cell bodies (region boxed in E\u2019, cell body marked with yellow asterisks). Scale bar, 10 \u03bcm. (E\u201d\u2019) Tracing to show Pair1 neuron morphology. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (F) Pair1 neurons (cell body: yellow asterisk; neurites: yellow arrowhead) permanently labeled at 96 hr ALH and visualized in the 4-day old adult. See Materials\u00a0and\u00a0methods for details. Significant \u2018off-target\u2019 expression marked with white arrowheads. Scale bar, 50 \u03bcm. (F\u2019) Enlargement of the brain region boxed in F; Pair1 cell body: yellow asterisk; Pair1 neurites: yellow arrowhead. Scale bar, 10 \u03bcm. (F\u201d) Focal plane showing Pair1 cell bodies (region boxed in F\u2019, cell body marked with yellow asterisks). Scale bar, 10 \u03bcm. (F\u201d\u2019) Tracing to show Pair1 neuron morphology. Genotype: Hs-KD,3xUAS-FLP; 13xLexAop(KDRT.Stop)myr:smGdP-Flag/+; 13xLexAop(KDRT.Stop)myr:smGdP-V5, 13xLexAop(KDRT.Stop)myr:smGdP-HA, nSyb(FRT.Stop)LexA::p65.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The TEM volume of the newly hatched larva \u2018Seymore\u2019 showing the axon (green) and dendrite (blue) domains of a single MDN and Pair1 neuron defined by the location of pre- and post-synapses. Left: MDN axon and dendrite domains. Middle: Pair1 axon and dendrite domains. Right: MDN axon and Pair1 dendrite are closely entwined the same region of neuropil (white bracket).\n\nAlthough we can use the Pair1-Gal4 line to track neurons with Pair1 morphological features from larva to adult, it remains possible that the Gal4 line switches off in Pair1 and switches on in a similar descending neuron at a stage in between those we assayed. To conclusively demonstrate that the larval Pair1 neuron survives into adulthood, we used a genetic technique to permanently label or \u2018immortalize\u2019 the larval Pair1 neurons and assay for their presence in the adult brain. Briefly, the method achieves spatial specificity by using Pair1-Gal4 to drive UAS-FLP which removes a stop cassette from nSyb-FRT-stop-FRT-LexA resulting in permanent LexA expression in Pair1-Gal4 neurons; it achieves temporal specificity (e.g. labeling only larval Pair1-Gal4+ neurons) by using a heat inducible KD recombinase to \u2018open\u2019 the lexAop-KDRTstopKDRT-HA reporter (see Materials\u00a0and\u00a0methods for additional details). Thus, a heat shock will permanently label all Pair1-Gal4+ neurons at the time of heat shock. We immortalized Pair1 neurons in the larva, and assayed expression in the adult, and observed the two bilateral Pair1 neurons, based on characteristic medial SEZ cell body position, local ipsilateral arbors, and contralateral descending axons that preferentially innervate the prothoracic neuropil (Figure 1F). Pair1 innervation is clearer in neurons immortalized during larval stages, which reduces the off-target neuron expression in the adult VNC, and reveals an greatly enriched level of innervation in the T1 neuropil (Figure 1F).\n\nThe Pair1-Gal4 line is expressed in several off-target neurons in addition to Pair1. One of these, a sensory neuron from the proboscis can be removed from the adult Pair1 pattern by cutting off the proboscis a day prior to analysis (see Materials\u00a0and\u00a0methods) but is present at the 48 hr APF timepoint (Figure 1D,E). In addition, there are off-target neurons that innervate all three thoracic neuropils (T1-T3), obscuring Pair1 innervation (Figure 1E). We took advantage of the sparse labeling of the immortalization genetics and found brains that maintained preferential targeting of Pair1 to the prothoracic neuropil but lacked T1-T3 off-target innervation, confirming that they are indeed off-target neurons (Figure 1F\u2013F''').\n\n### Pair1 neurons maintain the same molecular profile from larval to adult stages\n\nIf Pair1 neurons persist from larva to adult, they may express the same transcription factor (TF) profile at both stages. We screened a small collection of TF markers for expression in the larval and adult Pair1 neurons, and in all cases we found identical expression (Figure 2A\u2013N). Larval and adult Pair1 neurons expressed Hunchback (Hb), Sex combs reduced (Scr), and Bicoid (Bcd); but did not express Visual system homeobox (Vsx1) or Nab (Figure 2A\u2013N). However, there were many other Scr/Bcd/Hb triple-positive neurons in the SEZ (Figure 2O,P), showing that additional factors would be necessary to uniquely specify Pair1 identity. These results support the conclusion that Pair1 persists from larva to adult, maintaining both molecular and morphological features, and raises the interesting possibility that the three TFs (Hb, Bcd, Scr) may be part of a molecular code that directs both larval and adult Pair1 morphology and/or connectivity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic of the larval brain showing region of Pair1 neurons (red box) enlarged in panels below. Anterior up, dorsal view. (B\u2013G) Larval Pair1 neurons (left column), indicated markers (middle column), and merge (right column) at 28 hr after larval hatching (ALH). In some cases the second Pair1 neuron is out of the focal plane, but both Pair1 neurons always have the same gene expression profile. Markers detect the following transcription factors: Hb, Hunchback; Scr, Sex combs reduced; Bcd, Bicoid; Vsx1, Visual system homeobox 1; and Nab. Scale bar, 5 \u03bcm. (G) Summary: marker expression matches that in adults. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (H) Schematic of the adult brain showing region of Pair1 neurons (red box) enlarged in panels below. Anterior up, dorsal view. (I\u2013N) Adult Pair1 neurons (left column), indicated markers (middle column), and merge (right column) in 4-day old adult. Scale bar, 5 \u03bcm. (N) Summary: marker expression matches that in larvae. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (O\u2013P) The number of cells expressing Scr (first column), Scr/Hb (second column), Scr/Bcd (third column), and Scr/Hb/Bcd (fourth column) in larvae (O) and adults (P). n = 5\u20136 whole brains.\n\n### Pair1 activation arrests forward locomotion in adults\n\nWe previously showed that larval MDN persists in adults and can induce backward locomotion at both stages despite the obvious difference in motor output \u2013 limbless crawling versus six-legged walking (Carreira-Rosario et al., 2018). This raised the question of whether the adult Pair1 neuron also maintains its larval function, that\u00a0is, to pause forward locomotion. To test this hypothesis, we used Pair1-Gal4 to express the red light-gated cation channel CsChrimson (Chrimson) to activate Pair1 neurons in the adult. Experimental flies were fed all-trans retinal (ATR; required for Chrimson function) whereas control flies were fed vehicle only.\n\nControl flies exposed to red light did not pause or arrest forward locomotion, did not show an increased probability of pausing, and did not have a decrease in distance traveled during the stimulus interval. In contrast, experimental flies expressing Chrimson in Pair1 neurons showed a near-complete arrest of forward locomotion, an increased probability of pausing, and a reduced distance traveled during the stimulus interval (Figure 3A\u2013C; Figure 3\u2014figure supplement 1). These effects were reversed after turning off the red light, with the exception of a slightly reduced distance traveled, likely due to a lingering physiological effect of the 30 s Pair1 activation (Figure 3A,C). Pair1 activation resulted in an increase in immobile flies (Figure 3E) and a corresponding decrease in whole body translocation (Figure 3F, defined as \u2018large movements\u2019). Importantly, Pair1 activation did not prevent small body part movements such as those involved in grooming (Figure 3G, defined as \u2018small movements\u2019). Note that Pair1-Gal4 off-target expression is common but variable from fly to fly, whereas its expression in Pair1 neurons is fully penetrant; because the Chrimson-induced behavior is also fully penetrant, we conclude that the arrest in forward locomotion is due to Chrimson activation of the Pair1 neurons. We conclude that Pair1 activation prevents a single behavior \u2013 forward locomotion \u2013 but does not produce general paralysis or interfere with non-translocating limb movements.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig3-v3.jpg)\n\n**Figure 3.:** (A) Speed (mm/s) of adult flies expressing Chrimson in Pair1 neurons following neuronal activation (+ATR\u00a0[all-trans\u00a0retinal] , blue) or no activation (vehicle control, black) in a closed loop arena.\u00a0Speed was recorded for the 30 s prior to activation, the 30 s light-induced activation (red stipple), and 30 s after activation. Mean \u00b1 SEM, n = 10. Genotype for this and all subsequent panels: UAS-CsChrimson::mVenus; +; R75C02-Gal4. (B) Probability of forward locomotion pausing upon light-induced Pair1 activation (ATR treatment, blue) compared to vehicle control (black). Statistics: t-test, p < 0.001; n = 10. (C) Total distance traveled pre-light stimulus (\u2018pre\u2019), during the light stimulus (\u2018light\u2019) and post-light stimulus (\u2018post\u2019) (terminology used here and in subsequent panels) of flies fed ATR (Pair1 activation, blue) compared to controls (fed vehicle, no Pair1 activation, black). Statistics: two-way ANOVA: drug treatment, F(1, 18) = 111.3, p < 0.0001; time, F(1.867, 33.61) = 47.03, p < 0.0001; interaction F(2, 26) = 38.24, p < 0.001; Bonferroni\u2019s multiple comparisons between drug treatments within each timepoint: pre, p > 0.9999; light, p < 0.0001; post, p = 0.0001; n = 10. (D) Percent time doing large movements (whole body translocation, light gray), small movements (body part movement but no translocation, dark gray) or no movements (immobile, black) of flies fed vehicle (left side) or ATR (right side) during each time phase (pre, light, post). (E) Normalized duration of time spent immobile during each timepoint (pre, light, post) for flies fed ATR (Pair1 activation, blue) compared to controls fed vehicle (black). Statistics: two-way ANOVA: drug treatment, F(1, 18) = 112.8, p < 0.0001; time, F(1.930, 34.74) = 25.55, p < 0.0001; interaction, F(2, 36) = 27.81, p < 0.0001; Bonferroni\u2019s multiple comparisons between drug treatments within each timepoint: pre, p > 0.9999; light, p < 0.0001; post, p = 0.0022; n = 10. (F) Normalized duration of time spent doing small movements during each timepoint (pre, light, post) for flies fed ATR (Pair1 activation, blue) compared to controls fed vehicle (black). Statistics: two-way ANOVA: drug treatment, F(1, 18) = 5.111, p = 0.036; time, F(1.923, 34.62) = 10.82, p = 0.0003; interaction, F(2, 36) = 4.225, p = 0.0225; Bonferroni\u2019s multiple comparisons between drug treatments within each timepoint: pre, p > 0.9999; light, p = 0.0022; post, p > 0.9999; n = 10. (G) Normalized duration of time spent doing large movements during each time phase (pre, light, post) for flies fed ATR (Pair1 activation, blue) compared to controls fed vehicle (black). Statistics: two-way ANOVA: drug treatment, F(1, 18) = 53.56, p < 0.0001; time, F(1.869, 33.64) = 53.44, p < 0.0001; interaction, F(2, 36) = 52.20, p < 0.0001; Bonferroni\u2019s multiple comparisons between drug treatments within each timepoint: pre, p > 0.9999; light, p < 0.0001; post, p = 0.0074; n = 10.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Speed (mm/s) of adult flies in an open field arena.\u00a0Flies were fed food supplemented with all-trans\u00a0retinal (ATR) (blue) or ethanol (vehicle, black). Red square represents the presentation of the light stimulus. (B) Probability of pausing upon light activation of Pair1 (ATR treatment, blue) compared to controls (vehicle treatment, black) (t-test, p < 0.001; n = 12).\n\n### MDN and Pair1 are synaptic partners during adulthood\n\nGiven that MDN and Pair1 are synaptic partners in the larvae (Figure 1\u2014figure supplement 1), MDN and Pair1 persist into adulthood (Figures 1 and 2), and MDN and Pair1 both regulate the same behavior in larvae and adults (Figure 3; Carreira-Rosario et al., 2018), we hypothesized that MDN and Pair1 may also be synaptic partners during adulthood. To test this hypothesis, we used the MDN-LexA and Pair1-Gal4 to label MDN and Pair1 neurons individually in the same animal (Figure 4A,B). We observed MDN and Pair1 neurites in close proximity to each other (Figure 4C\u2013E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig4-v3.jpg)\n\n**Figure 4.:** (A\u2013E) MDN and Pair1 show close membrane apposition.\u00a0(A, B) MDN neurons (A) and Pair1 neurons (B) in the adult central brain. Neurons are in white, nc82 counterstain in magenta for whole brain orientation; cell bodies marked by yellow arrowheads. Here and in subsequent panels shows maximum intensity projection of volume; anterior, up; dorsal view. Scale bar, 50 \u03bcm. Genotype: UAS-mCD8::RFP, LexAop-mCD8::GFP; VT044845-LexA; R75C02-Gal4. (C\u2013E) MDN neurites (C), Pair1 neurites (D), and merge (E) in the left subesophageal ganglion (red box in schematic). Scale bar, 10 \u03bcm. Genotype: UAS-mCD8::RFP, LexAop-mCD8::GFP; VT044845-LexA; R75C02-Gal4. (F\u2013K) t-GRASP\u00a0(targeted GFP reconstitution across synaptic partners) between MDN and Pair1. In all panels: Scale bar, 10 \u03bcm. Genotype:;; LexAop-pre-t-GRASP, UAS-post-t-GRASP/R75C02-Gal4. (F\u2013G) Pupal t-GRASP at 24 hr after pupal formation\u00a0(APF). (F) No detectable t-GRASP signal was observed in the subesophageal ganglion without expression of the pre-t-GRASP fragment in MDN. (G) t-GRASP signals between MDN and Pair1 were lacking in the subesophageal ganglion. (H\u2013I) Pupal t-GRASP at 48 hr APF. (H)\u00a0No detectable t-GRASP signal was observed in the subesophageal ganglion without expression of the pre-t-GRASP fragment in MDN. (I) t-GRASP signals between MDN and Pair1 were observed in the subesophageal ganglion. (J\u2013K) Adult t-GRASP. (J)\u00a0No detectable t-GRASP signal was observed in the subesophageal ganglion without expression of the pre-t-GRASP fragment in MDN. (K) t-GRASP signals between MDN and Pair1 were observed in the subesophageal ganglion.\n\nTo determine if MDN and Pair1 are synaptic partners in this region of neuropil, we utilized t-GRASP (targeted GFP reconstitution across synaptic partners), an activity-independent method to label synaptic contact sites (Shearin et al., 2018). MDN-Pair1 connectivity was absent at 24 hr APF (Figure 4F,G) when neurite pruning was maximal (Figure 1C), but was re-established at 48 hr APF (Figure 4H,I) when neurite regrowth was occurring (Figure 1D) and maintained into the adult (Figure 4J,K).\n\nAcross each timepoint, control flies only expressing pre-t-GRASP in MDN did not have detectable t-GRASP signal (Figure 4F,H and J). Thus, MDN-Pair1 larval connectivity is established twice during development: initially established in the late embryo, and then re-established in the pupae.\n\n## Discussion\n\nTogether with our earlier work (Carreira-Rosario et al., 2018), our results here show that a core interneuron circuit is preserved from larval stages into the adult. This neuronal circuit contains MDN and its monosynaptically\u00a0coupled Pair1 neuron, allowing the fly to switch between antagonistic behaviors: forward versus backward locomotion. Our work raises several interesting questions: Do many other larval neural circuits persist and have similar function in adults? Do these results represent a rare occurrence or a common one? Are the cues that establish MDN-Pair1 connectivity in the larvae also used to re-establish MDN-Pair1 connectivity in the adult?\n\nHow much of the larval MDN-Pair1 circuit is maintained into the adult? The larval circuit contains the MDN partners Pair1, ThDN, and A18b, and the Pair1 partner A27h (Figure 5; Carreira-Rosario et al., 2018). In addition to MDN, we show here that Pair1 is maintained. There are no Gal4 lines or markers for the ThDN neuron. Although two independent A18b Gal4 lines have extensive off-target expression, permanently labeling the Gal4 expression during larval stages consistently labels an adult neuron in the abdominal ganglion (data not shown); since MDN axons do not extend to the abdominal ganglion, it is unlikely that MDN and A18b are synaptic partners during adulthood. Additionally, the A27h interneuron, which regulates forward crawling in the larvae, undergoes apoptosis during pupal stages (data not shown) and thus cannot regulate forward walking in the adult. This is not surprising as the A27h neurons are located in the abdominal segments, which do not have a role in adult walking.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig5-v3.jpg)\n\n**Figure 5.:** In the larvae, MDN and Pair1 neurons are located in the central brain.\u00a0MDN and Pair1 neurons are synaptic partners. MDN neurons also extend axons into the abdominal region of the ventral nerve cord\u00a0(VNC) and synapse onto A18b. A18b subsequently regulates backward crawling by synapsing onto motor neurons. Pair1 synapses onto and inhibits the pre-motor neuron A27h, which generates forward locomotion when activated. During metamorphosis, MDN and Pair1 neurons remain in the central brain, drastically prune their neurites, and survive. The A18b neuron and processes remain in the abdomen of the VNC and survives in the adult. The A27h neuron undergoes apoptosis. In the adult, synapses between MDN and Pair1 are re-established. MDN neurons also extend axons into the thoracic region of the VNC and synapse onto LBL40 and LUL130. Activation of LBL40 and LUL130 generates backward walking. MDN does not extend axons into the abdominal region of the VNC and is no longer synaptic partners with A18b. Pair1 neurons extend axons into the thoracic region of the VNC and synapse onto unknown neurons. Activation of Pair1 generates a pausing behavior, likely through the inhibition of neurons generating forward locomotion. In both larvae and adult, MDN and Pair1 neurons (blue) persist and function as a core circuit to regulate locomotion.\n\nHow much of the adult MDN-Pair1 circuit is present in the larvae? Recent work mapping the adult MDN circuit has identified over 30 VNC neurons downstream of MDN, including the LBL40 and LUL130 neurons required for hindleg backward stepping (Figure 5; Feng et al., 2020). Recent work has also identified adult neurons important for forward walking (Bidaye et al., 2020), but their relationship to adult MDN is unknown. In the future, it will be interesting to see if any of these adult neurons are present in the larvae, particularly those regulating forward and backward walking, and determine if they are also MDN or Pair1 target neurons.\n\nElegant recent work has shown that initiation of forward walking requires the forelegs, innervated by motor neurons in the prothoracic segment, whereas initiation of backward walking requires the hindlegs, innervated by motor neuron in the metathoracic segment (Feng et al., 2020). Similarly, adult MDN synaptic partners primarily innervate the metathoracic (T3) neuromere (Feng et al., 2020), a good location for inducing hindleg stepping and initiation of backward walking. A similar spatial segregation is likely to occur in the larva, where forward crawling is induced by A27h in posterior segments, and backward crawling is induced in anterior segments (Fushiki et al., 2016; Tastekin et al., 2018).\n\nIs maintenance of neuronal circuits from larval to adult stages rare or common? Individual neurons that have similar functions in larva and adults have been identified, including select motor neurons, sensory neurons (Consoulas et al., 2002; Consoulas et al., 2000; Levine, 1984; Truman, 1992; Weeks, 2003), and Kenyon cells of the mushroom body (Eichler et al., 2017; Li et al., 2020). However, it remains unknown whether any of their individual synaptic partners also persist and retain the same pattern of connectivity. To date, the MDN-Pair1 circuit is the first pair of interneurons whose connectivity is established in the larva and then re-established after remodeling during metamorphosis, all while maintaining a similar function. It is currently unclear how common it is to maintain interneuron connectivity from larva to adult. If maintenance is rare, it raises the question of what is special about the MDN-Pair1 circuit? If a common occurrence, the MDN-Pair1 circuit provides an excellent model system to study a widely used mechanism.\n\nOur work is the first, to our knowledge, to show that a pair of synaptically connected interneurons can persist from larva to adult and perform similar functions at both stages. Remarkably, both MDN and Pair1 undergo dramatic pruning and regeneration events during metamorphosis, only to re-form synapses with each other following neuronal remodeling. This suggests that synapse specificity cues are maintained from the late embryo, where MDN-Pair1 connectivity is first established, into pupal stages, where MDN-Pair1 connectivity is re-established. The importance of the MDN-Pair1 interneuron circuit is highlighted by its persistence from embryo to adult, despite adapting to different sensory input and motor output at each stage. Perhaps other descending or ascending interneurons will also persist into adults, switching inputs and outputs as needed. Indeed, the idea that an interneuron circuit that is stable across developmental stages is supported by recent elegant TEM reconstruction of neural circuits at different stages of Caenorhabditis elegans development (Witvliet et al., 2020). Here, the authors conclude that \u2018Across maturation, the decision-making (interneuron) circuitry is maintained whereas sensory and motor pathways are substantially remodeled.\u2019 These results, together with ours, raise the possibility that preservation of interneuron circuit motifs may be functional modules that can be used adaptively with different sensorimotor inputs and outputs. The presence of this circuit motif in both flies and worms suggests that it may be an ancient evolutionary mechanism for assembling sensorimotor circuits.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>R75C02-Gal4</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_39886</td>\n      <td>Short genotype: Pair1-Gal4</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>VT044845-lexA</td>\n      <td>Gift from B Dickson, JRC</td>\n      <td></td>\n      <td>Short genotype: MDN-LexA</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-myr::GFP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_32198</td>\n      <td>Gal4 reporter</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-mChrimson::mVenus</td>\n      <td>Gift from Vivek Jayaraman, JRC</td>\n      <td></td>\n      <td>Was used to excite/depolarize neurons of interest</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-mCD8::RFP, LexAop-mCD8::GFP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_32229</td>\n      <td>Gal4 and LexA reporters</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>LexAop-pre-t-GRASP, UAS-post-t-GRASP</td>\n      <td>BDSC (Shearin et al., 2018)</td>\n      <td>RRID:BDSC_79039</td>\n      <td>t-GRASP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Hs-KD,3xUAS-FLP; 13xLexAop(KDRT.Stop)myr:smGdP-Flag/ CyO-YFP; 13xLexAop(KDRT.Stop)myr:smGdP-V5, 13xLexAop(KDRT.Stop)myr:smGdP-HA, nSyb-(FRT.Stop)-LexA::p65/R75C02-Gal4</td>\n      <td>This work</td>\n      <td></td>\n      <td>Used to permanently label Gal4 pattern</td>\n    </tr>\n    <tr>\n      <td>Antibody, polyclonal</td>\n      <td>Rabbit polyclonal anti-GFP A-11122</td>\n      <td>Thermo\u00a0Fisher\u00a0Scientific, Waltham, MA</td>\n      <td>RRID:AB_221569</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody, polyclonal</td>\n      <td>Chicken polyclonal anti-GFP</td>\n      <td>Abcam, Eugene, OR</td>\n      <td>RRID:BDSC_13970</td>\n      <td>(1:1500)</td>\n    </tr>\n    <tr>\n      <td>Antibody, monoclonal</td>\n      <td>Rabbit polyclonal anti-GFP (G10362)</td>\n      <td>Thermo\u00a0Fisher\u00a0Scientific, Waltham, MA</td>\n      <td>RRID:AB_2536526</td>\n      <td>(1:300); used for t-GRASP</td>\n    </tr>\n    <tr>\n      <td>Antibody, monoclonal</td>\n      <td>Rat monoclonal anti-HA (3F10)</td>\n      <td>Sigma, St. Louis, MO</td>\n      <td>SKU: 11867423001</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody, monoclonal</td>\n      <td>Mouse monoclonal anti-Scr</td>\n      <td>DSHB (Iowa City, IA)</td>\n      <td>RRID:AB_528462</td>\n      <td>(1:10)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat polyclonal anti-Bcd</td>\n      <td>Gift from John Reinitz, University of Chicago, IL</td>\n      <td></td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig polyclonal anti-Vsx1</td>\n      <td>Gift from Claude Desplan, NYU, New York,\u00a0NY</td>\n      <td></td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig polyclonal anti-Nab</td>\n      <td>Gift from Stefan Thor, University of Queensland, Brisbane, Australia</td>\n      <td></td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Secondary antibodies</td>\n      <td>Jackson ImmunoResearch, West Grove, PA</td>\n      <td></td>\n      <td>(1:400); all Donkey</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly husbandry\n\nAll flies were reared in a 25\u00b0C room at 50% relative humidity with a 12 hr light/dark cycle. All comparisons between groups were based on studies with flies grown, handled, and tested together.\n\n### Fly stocks\n\n### Gal4 driver \u2018immortalization\u2019\n\nImmortalization flies (see genotype #7, above) were allowed to lay eggs for 4 hr. Newly hatched larvae were placed in a food vial, and at 96 hr ALH the food vial was partially submerged in a 37\u00b0C water bath for 5 min, allowing the hs-KD to act as a recombinase to remove the KDRT Stop cassette, resulting in nSyb-LexA driving HA expression permanently in the neurons expressing Pair1-Gal4 at the time of heat shock (96 hr ALH). After the heat shock, larvae in the food vial recovered at 18\u00b0C for 5 min, and then grown to adulthood at 25\u00b0C.\n\n### Immunostaining and imaging\n\nStandard confocal microscopy and immunocytochemistry methods were performed as previously described (Carreira-Rosario et al., 2018). Primary antibodies used recognize: GFP (rabbit, 1:500, Thermo\u00a0Fisher\u00a0Scientific, Waltham, MA; chicken, 1:1500, Abcam12970, Eugene, OR), HA (rat, 1:100, Sigma, St. Louis, MO), Hb (mouse, 1:400, AbcamF18-1G10.2), Scr (mouse, 1:10, Developmental Studies Hybridoma Bank, Iowa City, IA), Bicoid (rat, 1:100, John Reinitz, University of Chicago, IL), Vsx1 (guinea pig, 1:500, Claude Desplan, NYU, New York,\u00a0NY), Nab (guinea pig, 1:500, Stefan Thor, University of Queensland, Brisbane, Australia), and t-GRASP signal (rabbit GFP G10362, 1:300, Invitrogen). Secondary antibodies were from Jackson ImmunoResearch (Donkey, 1:400, West Grove, PA). Confocal image stacks were acquired on a Zeiss 800 microscope. All images were processed in Fiji (https://imagej.new/Fiji) and Adobe Illustrator (Adobe, San Jose, CA). Images were processed as described previously (Carreira-Rosario et al., 2018). The primary neurites of Pair1 were traced using the Simple Neurite Tracer in Fiji.\n\n### Cell counts\n\nCell counting was done manually using the \u2018Cell Counter\u2019 plugin in Fiji (https://imagej.new/Fiji). Only cells expressing Scr were counted.\n\n### Adult behavioral experiment\n\nAdult behavior was assayed using two arenas, a closed loop arena (Figure 3) and an open field arena (Figure 3\u2014figure supplement 1). For the closed loop arena, adult female flies 1 day after eclosion were transferred to standard cornmeal fly food supplemented with 100 mL 0.5 mM ATR or 100% ethanol for 4 days (changed every 2 days). Animals, with intact wings, were starved for 4 hr and then placed in arenas and their behavior was recorded as described previously (Carreira-Rosario et al., 2018). Flies were exposed to low transmitted light, red light, and low transmitted light again for 30 s each. This was done three times for each animal. To calculate different parameters, the recorded videos were tracked and analyzed using the CalTech Fly Tracker (Fontaine et al., 2009) and JABA (Kabra et al., 2013). The speed, distance, and behavior reported were specific to the first trial. The reported speeds are the average speed of each second. The pausing probability was calculated as previously described (Carreira-Rosario et al., 2018). \u2018Pre\u2019 defines the 30 s prior to red light exposure, \u2018light\u2019 defines the 30 s of red light exposure, and \u2018post\u2019 defines the 30 s after red light exposure. Immobile movements were defined as the fly not translocating and not moving other body parts. Small movements were defined as the fly not translocating but moving body parts (i.e. grooming, moving wings). Large movements were defined as the fly translocating its body. All behavior measures were normalized by dividing them by the group average \u2018pre\u2019 values.\n\nFor the open field arena, adult flies were fed ATR and vehicle as described above. Three animals were placed in a circular arena with a diameter of 14.5 cm and height of 0.5 cm. After 5 min for environmental acclimation, animal behavior was recorded at 25 FPS using a Basler acA2040-25gm GigE camera under infrared light for 4 s followed by 4 s under red light and another 4 s under infrared light, as described previously (Risse et al., 2013). The was repeated three times, and tracked and analyzed as described above.\n\n### t-GRASP\n\nSynapse establishment was investigated via t-GRASP. Flies with MDN-LexA and Pair1-Gal4 driving expression of t-GRASP (see genotype #6 above) were reared at 25\u00b0C and dissected at 24 hr APF, 48 hr APF, and 4 days post-eclosion. Control flies lacked MDN-LexA.\n\n### Statistics\n\nAll statistical analysis (t-test, one-way and two-way ANOVA with Bonferroni\u2019s multiple comparison tests) were performed with Prism 9 (GraphPad Software, San Diego, CA). Numerical data in graphs show individual measurements (animals), means (represented by red bars) or means \u00b1 SEM (dashed lined), when appropriate. The number of replicates (n) is indicated for each data set in the corresponding legend.\n",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "54bef45b-3ffe-482b-b654-fbeb669a0317",
+      "submission_id": "4b4f4cfc-43ae-4e92-97f0-2ab57ffaa03c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69767.sa1](https://doi.org/10.7554/eLife.69767.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper will be of interest to scientists interested in comparative neural circuits and how elements of circuit control are conserved across changes in development (or presumably evolution). The authors use compelling genetic experiments to show that Pair1 neurons, a synaptic partner of moonwalker descending neurons (MDN), are conserved between larval and adult stages, retracting during pupation and re-forming connections and much of their behavioral function in adulthood. This adds to our growing understanding of circuit conservation across insect brains.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A locomotor neural circuit persists and functions similarly in larvae and adult Drosophila\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Ronald Calabrese as the Senior and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThis is a solid piece of work but the advance as presented is limited.\n\n1. A primary concern is that there is no broader consideration of other connections of MDN in the larval transformation to adult. The focus on one specific connection being preserved may not represent the overall scale of remodeling during metamorphosis. There are a variety of experiments proposed that could provide information on this issue and give stronger insight into what types of connections are preserved/reconnected. For example, the trans-tango experiments proposed, even if they don't allow the authors to identify every connected cell-type, could provide a sense of scale. Part of this could be fixed by text revisions if specific experiments are not feasible.\n\n2. A second concern is the breadth of TF staining suggesting that the specific TFs observed may not be controlling connectivity.\n\n3. A third concern is the framing of the MDN-Pair1 connection as a decision-making circuit. This concern is best addressed by text revision. The detailed comments of the reviewers will provide specific reasoning/recommendations to the authors.\n\nReviewer #1:\n\nThis study from Lee and Doe examines the conservation of morphology, function, and connectivity in a Drosophila neural circuit that promotes backward locomotion. The study builds on a previous eLife paper from this group, Carreira-Rosario et al. 2018, which showed that a set of descending neurons- the Moonwalker Descending Neurons (MDN)- were conserved between larval and adult stages and performed a similar function in initiating backward locomotion, despite the very different locomotor strategies of crawling larvae and walking adults. Here, the authors examine a second neuron type- Pair1- that is downstream of MDN and inhibits forward locomotion. They first use a genetic immortalization strategy to show that the morphology of this neuron is similar between larvae and adults, although many of its processes are pruned during pupation. They next show that a set of transcription factor markers in these neurons are conserved between larval and adult stages. Finally these show that optogenetic activation of Pair1 in adults generates a similar stopping phenotype as in larvae, and that MDN and Pair 1 and synaptically connected (via GRASP) in adults as well. The authors conclude that these neurons form a core \"decision-making\" circuit that is conserved between developmental stages, and speculate that the continued expression of the same transcription factors may allow these neurons to re-form synapses after pupation. Overall this is a clear study that provides new data on which parts of the fly locomotor circuit are maintained across developmental stages. Together with on-going work in other parts of the fly brain, and across insect species, I expect this work to contribute to our understanding of how neural circuits become adapted through genetic and developmental mechanisms to different organismal niches.\n\nThe data are generally strong and convincing. One concern I have is that the transcription factor stains in Figure 2 show that most of the surrounding cell bodies share the same pattern of expression for the 5 TFs examined, with Hb, Scr, and Bcd highly expressed and Vsx1 and Nab absent. This might impact the authors' model that TF expression patterns in Pair1 allow it to make correct synaptic connections with MDN. The authors should address whether they expect these surrounding neuron to make similar synaptic connections, or whether connectivity is determined by a larger group of TFs other than those shown here. Experiments manipulating TF expression and looking at effects on connectivity would strength this part of the authors' model.\n\nAn additional concern is that the MDN-Pair1 neurons are referred to multiple time in the Discussion as a \"decision-making circuit.\" However this term is poorly defined. The authors should specify what they mean by this term and how they would distinguish a \"decision-making circuit\" from other central circuits. More broadly, it would be helpful to be specific about what central circuit features they would expect to be conserved between larvae and adults or to state clearly if there too little data yet to make broad predictions of this type.\n\nReviewer #2:\n\nThis paper asks whether a neural connection that exists in the brain of the Drosophila larva also forms in the adult brain and serves a similar function. Past work (Carreira-Rosario et al., 2018) showed that in larvae, the mooncrawler descending neuron (MDN) drives the transition from forward to backward crawling in part through its connection onto the bilateral pair of Pair1 neurons. Here the authors find that Pair1 Gal4 lines label a pair of adult descending neurons with cell bodies in the gnathal ganglia which express the same developmental markers as the larval Pair1 neurons. Positive GRASP staining using MDN and Pair1 Gal4 lines suggests the adult neurons are synaptically connected. Furthermore, optogenetic activation of Pair1 neurons causes adult flies to stop walking or moving, similar to the effect found for Pair1 activation in larvae. They show that Pair1 neurons undergo dramatic remodeling of their axonal arbors in the ventral nerve cord (VNC).\n\nThis paper extends the work of Carreira-Rosario et al., (2018), by following the Pair1 neurons through development. As a conceptual advance, it is an interesting finding that Pair 1 neurons play similar functional roles in adults as in larvae, even though the downstream targets must be entirely different. Pair1 neurons were shown to form inhibitory synapses onto premotor neurons A27h in posterior abdominal segments, which themselves drive muscle contraction and initiate forward crawling. A27h undergo apoptosis during pupal development, abdominal segments lose their role in locomotion, and Pair1 develops extensive arbors in the adult T1 where locomotion is likely initiated.\n\nThe work addresses important and interesting questions, but its scope is limited. While the authors identify some similarities in connectivity and function of Pair1 neurons across metamorphosis, the characterization of the Pair1 neurons is far from complete.\n\nI feel that two major revisions would improve the paper. First, there are some simple experiments that would help broaden the scope and impact of the study. The authors could survey the downstream partners of Pair1 in the T1 thoracic neuromere using Trans-tango. They could also ask whether silencing Pair1 (e.g. driving Kir2.1 expression) causes behavioral deficits, to test whether pair 1 neurons are necessary for the switch between forward and backward walking.\n\nThe paper would also benefit from a deeper exploration of the degree to which the preservation of MDN to Pair1 connectivity is representative or extraordinary. For example, are there connectivity motifs from the larvae that the authors did not find in the adult? Including these negative results would help provide context. Many neurons (e.g. thoracic motor neurons) gain a role in adulthood, others lose a role (e.g. abdominal motor neurons no longer control \"locomotion\"). What would one expect if it were possible to compare all the inputs and outputs of Pair1, or other fly neurons?\n\nGiven that the paper builds on a previous study, it could also be improved by editing for concision. There are some sections that distract from the key take-home message. For example, the authors state that this circuit plays a role in making decisions. I understand the point, that switching from forward to backward locomotion indicates that a decision has been computed, but it begs questions that are not addressed, such as what exactly constitutes a decision? Where is the decision being made? What mechanism, like a threshold, or competition between neurons, underlie when a decision takes place? Can adult flies stop (Pair1 activation by MDN) without moving backwards (LBL40, LUL130)? If the paper focuses on the developmental questions, provides background on what other interesting motifs are seen as circuits remodel, and position the results within those broader themes, I feel I would have a clearer sense of the novelty of these findings.\n\nIssues:\n\nPair1 optogenetic activation causes larvae to pause briefly, whereas adults stop. The authors speculate it's due to circuitry. Could temporal differences in Channelrhodopsin kinetics and light protocols explain this?\n\nSome edits:\n\nThis neuron, named Moonwalker/Mooncrawler Descending Neuron\n\n(MDN) is present in two bilateral pairs per brain lobe, \u2013 Awkward phrasing.\n\n\"Halting forward locomotion is done via activation of the Pair1 descending\n\ninterneuron, which inhibits the A27h premotor neuron, to prevent it from inducing forward locomotion (Carreira-Rosario et al., 2018).\" \u2013 Unclear.\n\n\"We find that all of these questions are answered in the affirmative, showing that the core MDN-Pair1 decision-making circuit (a pair of synaptically-connected interneurons) persists from larva to adult, despite profound remodeling during metamorphosis, and that this circuit coordinates forward/backward locomotion in both larvae and adults.\" \u2013 see point above.\n\n\"induce backward locomotion via the coordinate arrest of forward locomotion\" \u2013 unclear.\n\n77 \u2013 \"but virtually all of the dendridic processes and descending axonal process had been pruned (Figure 1C, only one neuron labeled).\"\n\n107 \u2013 \"We conclude that the Pair1 neurons are present from larval to adult stages, and that the Pair1 neurons are enriched for postsynaptic partners in the T1\n\nneuromere.\" \u2013 \"enriched\" is a strange word in this context.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"A locomotor neural circuit persists and functions similarly in larvae and adult Drosophila\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nPlease shorten the Discussion and remove the Trans-Tango data as suggested by Reviewer #2.\n\nReviewer #1:\n\nThe authors have addressed my concerns.\n\nReviewer #2:\n\nThe authors have revised their manuscript, A locomotor neural circuit persists and functions similarly in larvae and adult Drosophila, which details the persistence of a circuit motif across metamorphosis, undergoing remodeling while maintaining a similar function. In my opinion, the writing has been significantly improved by raising and supporting the notion that remodeling on this scale has not been observed, both in the introduction and the discussion. The authors also found a positive, provocative way to suggest MDN-Pair1 participate in decision-making by citing recent results in C. elegans. The discussion is currently long and slightly repetitive with the intro and text; I would recommend another edit to shorten. For example, a paragraph dedicated to the identification of transcription factors in the discussion is unnecessary. Finally, the paper reads more clearly as an extension of Carreira-Rosario et al., 2018, which makes it more appropriate for an eLife Advance.\n\nI appreciate the addition of the Trans-Tango data, but they are of limited utility since downstream neurons are not clearly labelled or identifiable, and what labelling does exist could indicate downstream partners of the sensory neurons labeled by the Pair1 Gal4 line. I noticed in the results that the authors dissected the adult CNS 4 days post-eclosion. However, it generally takes much longer for the trans-tango signal to appear. The original paper (Talay et al., 2017) used 15-20 day old flies. I recommend that the authors' either repeat the experiments with a positive control to ensure that trans-tango is working, or remove them from the manuscript entirely.\n",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "47300cef-22b3-492c-8ca7-0ec1525f97ca",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C1",
+      "claim": "Individual neurons can undergo drastic structural changes, known as neuronal remodeling or structural plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual neurons can undergo drastic structural changes, known as neuronal remodeling or structural plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about neuronal biology presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "ab9528b3-ebc1-4a98-ae78-9dbeca6318fc",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C2",
+      "claim": "Neuronal remodeling occurs in response to hormones, such as during puberty in mammals or metamorphosis in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "One example of this is in response to hormones, such as during puberty in mammals or metamorphosis in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established scientific knowledge about hormone-induced neuronal changes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "1cd3c182-801f-4ea3-b344-4dc7a17a8b57",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C3",
+      "claim": "It remains unclear whether remodeled neurons resume prior patterns of connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in each of these examples, it remains unclear whether the remodeled neuron resumes prior patterns of connectivity, and if so, whether the persistent circuits drive similar behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field, identifying a gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "aab971c6-7af7-4705-8aa9-77394e40d55f",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C4",
+      "claim": "Larval MDN induces backward crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that larval MDN induces backward crawling, and synapses onto the Pair1 interneuron to inhibit forward crawling (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "c94d998f-11da-4391-abba-a3d3de605f81",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C5",
+      "claim": "Larval MDN synapses onto the Pair1 interneuron to inhibit forward crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that larval MDN induces backward crawling, and synapses onto the Pair1 interneuron to inhibit forward crawling (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "f7a70ed2-ddaa-4b03-9ea4-336689053d4e",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C6",
+      "claim": "MDN is remodeled during metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "MDN is remodeled during metamorphosis and regulates backward walking in the adult fly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "3c35bc1d-d664-48de-9d66-c3319be871a6",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C7",
+      "claim": "MDN regulates backward walking in the adult fly.",
+      "claim_type": "EXPLICIT",
+      "source": "MDN is remodeled during metamorphosis and regulates backward walking in the adult fly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "f3bb6d57-4356-41f8-a74d-3eb74f3401f6",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C8",
+      "claim": "Pair1 is remodeled during metamorphosis and persists in the adult fly.",
+      "claim_type": "EXPLICIT",
+      "source": "We assayed morphology and molecular markers to demonstrate that Pair1 is remodeled during metamorphosis and persists in the adult fly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by morphological and molecular marker data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "83d9a668-684d-4139-b33f-d15c4583ef9f",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C9",
+      "claim": "MDN-Pair1 connectivity is lost during early pupal stages when both neurons are severely pruned back.",
+      "claim_type": "EXPLICIT",
+      "source": "MDN-Pair1 connectivity is lost during early pupal stages, when both neurons are severely pruned back, but connectivity is re-established at mid-pupal stages and persist into the adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by t-GRASP data showing absence of connectivity at 24 hr APF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "670e0968-ff3f-495e-8776-da1787f3a3c0",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C10",
+      "claim": "MDN-Pair1 connectivity is re-established at mid-pupal stages and persists into the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "MDN-Pair1 connectivity is lost during early pupal stages, when both neurons are severely pruned back, but connectivity is re-established at mid-pupal stages and persist into the adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by t-GRASP data showing connectivity at 48 hr APF and in adults.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "26c96de3-e2fb-4012-bd54-88eb360029dc",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C11",
+      "claim": "Optogenetic activation of Pair1 in the adult results in arrest of forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the adult, optogenetic activation of Pair1 resulted in arrest of forward locomotion, similar to what is observed in larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data from optogenetic experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "9eb60bf3-4c84-4bb9-b66e-6f3da3a4efab",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C12",
+      "claim": "Adult Pair1 activation produces similar locomotor effects as larval Pair1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the adult, optogenetic activation of Pair1 resulted in arrest of forward locomotion, similar to what is observed in larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of adult behavioral data with previously published larval data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "39d2b99f-4217-41f2-a367-39640b80e814",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C13",
+      "claim": "The MDN-Pair1 neurons are an interneuronal circuit that is re-established during metamorphosis yet generates similar locomotor behavior at both larval and adult stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the MDN-Pair1 neurons are an interneuronal circuit \u2013 a pair of synaptically connected interneurons \u2013 that is re-established during metamorphosis, yet generates similar locomotor behavior at both larval and adult stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the combined morphological, connectivity, and behavioral data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "4c192aa7-9bb2-4944-9c01-3f59adfcbb09",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C14",
+      "claim": "Large-scale changes in neuronal morphology and function occur during mammalian puberty.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale changes in neuronal morphology and function occur during mammalian puberty (Barendse et al., 2018; Mills et al., 2016; Sisk and Zehr, 2005), as well as several neurobiological disorders including depression (Patel et al., 2019), or chronic pain (Kuner and Flor, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "ca7b57f0-65f4-446d-ae61-0a010bdd7f81",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C15",
+      "claim": "Large-scale changes in neuronal morphology and function occur in neurobiological disorders including depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale changes in neuronal morphology and function occur during mammalian puberty (Barendse et al., 2018; Mills et al., 2016; Sisk and Zehr, 2005), as well as several neurobiological disorders including depression (Patel et al., 2019), or chronic pain (Kuner and Flor, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "e3c79de5-7095-4743-bd59-8ff13e590194",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C16",
+      "claim": "Large-scale changes in neuronal morphology and function occur in chronic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale changes in neuronal morphology and function occur during mammalian puberty (Barendse et al., 2018; Mills et al., 2016; Sisk and Zehr, 2005), as well as several neurobiological disorders including depression (Patel et al., 2019), or chronic pain (Kuner and Flor, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "7da9db56-cf2e-4349-a0cd-c8569ba27acf",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C17",
+      "claim": "Major changes in neuronal numbers and type occur as a result of insect metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, major changes in neuronal numbers and type occur as a result of insect metamorphosis (Kanamori et al., 2015; Truman and Reiss, 1976; Yaniv and Schuldiner, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "16935cc6-cef8-4ff3-9893-5585b5119e7c",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C18",
+      "claim": "Individual insect neurons can persist from larval to adult stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these changes, there are documented cases of individual insect neurons persisting from larval to adult stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "2bc301f4-86d4-4dc0-a016-acc9a5ce37db",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C19",
+      "claim": "In Drosophila, individual motor and sensory neurons persist throughout metamorphosis and undergo dramatic remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, individual motor and sensory neurons have been shown to persist throughout metamorphosis and undergo dramatic remodeling (Consoulas et al., 2002; Consoulas et al., 2000; Yaniv and Schuldiner, 2016; Yu and Schuldiner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "fdf7d5ec-e106-469b-a7d4-78be56c56f4a",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C20",
+      "claim": "Kenyon cell partners (projection neurons, DANs) exist at both larval and adult stages in the insect mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar findings have been reported for the insect mushroom body, where Kenyon cells partners (projection neurons, DANs) exist at both larval and adult stages (Li et al., 2020; Marin et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "747f29d1-8ef6-4770-a2bf-1171a67ac4b2",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C21",
+      "claim": "It remains unclear whether remodeled neurons re-establish connectivity with the identical neurons in the larva and adult.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, it remains unclear whether the remodeled neurons re-establish connectivity with the identical neurons in the larva and adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field, identifying a gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "3a445fc3-9b0a-44f8-9d73-e193373faf52",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C22",
+      "claim": "During Drosophila metamorphosis, the animal changes from a crawling limbless larva to a walking six-legged adult.",
+      "claim_type": "EXPLICIT",
+      "source": "During Drosophila metamorphosis, the animal changes from a crawling limbless larva to a walking six-legged adult (Riddiford, 1980; Riddiford et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about Drosophila development, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "66d5b1e0-f031-400b-8441-b21199c47692",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C23",
+      "claim": "Both larvae and adults undergo forward locomotion in search of food.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the obvious differences, some behaviors are similar: both larvae and adults undergo forward locomotion in search of food, backward locomotion in response to noxious stimuli, and pausing in between antagonistic behaviors (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "bde45c52-02bc-4e2a-a847-f7c5d43f5f2e",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C24",
+      "claim": "Both larvae and adults undergo backward locomotion in response to noxious stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the obvious differences, some behaviors are similar: both larvae and adults undergo forward locomotion in search of food, backward locomotion in response to noxious stimuli, and pausing in between antagonistic behaviors (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "742ad6fd-03b9-44dd-b398-2f5635b185a0",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C25",
+      "claim": "Both larvae and adults pause in between antagonistic behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the obvious differences, some behaviors are similar: both larvae and adults undergo forward locomotion in search of food, backward locomotion in response to noxious stimuli, and pausing in between antagonistic behaviors (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "f66047d3-a907-4d34-8b00-f8079c5cae6e",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C26",
+      "claim": "A neuron named moonwalker descending neuron (MDN) can trigger backward locomotion in both larvae and adults when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others identified a neuron that, when activated, can trigger backward locomotion in both larvae and adults (Bidaye et al., 2014; Carreira-Rosario et al., 2018; Sen et al., 2017), despite the obvious differences in limbless and six-legged locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "f74f7399-efb8-4ffe-af06-bdc55d413121",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C27",
+      "claim": "MDN is present as a bilateral neuronal pair in each brain lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuron, named mooncrawler/moonwalker descending neuron (MDN), is present as a bilateral neuronal pair in each brain lobe, with all four MDNs having similar synaptic partners, and all four MDNs capable of eliciting backward larval locomotion in larvae (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "a2c5bdea-8364-42dd-bd67-0e934b3d9fd0",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C28",
+      "claim": "All four MDNs have similar synaptic partners.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuron, named mooncrawler/moonwalker descending neuron (MDN), is present as a bilateral neuronal pair in each brain lobe, with all four MDNs having similar synaptic partners, and all four MDNs capable of eliciting backward larval locomotion in larvae (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "81e7d938-d76e-469e-a842-37d08594e0f6",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C29",
+      "claim": "All four MDNs are capable of eliciting backward larval locomotion in larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuron, named mooncrawler/moonwalker descending neuron (MDN), is present as a bilateral neuronal pair in each brain lobe, with all four MDNs having similar synaptic partners, and all four MDNs capable of eliciting backward larval locomotion in larvae (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "899c99ae-414f-48cb-8fbf-fe02ca65852a",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C30",
+      "claim": "Larval MDNs function within a neural circuit that induces backward locomotion and coordinately arrests forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval MDNs function within a neural circuit that induces backward locomotion and coordinately arrests forward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "4e2e1886-8aab-49e0-be06-4d09d906047c",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C31",
+      "claim": "Halting forward locomotion is achieved via activation of the Pair1 descending interneuron, which inhibits the A27h premotor neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Halting forward locomotion is achieved via activation of the Pair1 descending interneuron, which inhibits the A27h premotor neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "198ca275-0105-4121-a362-c5d073e3ba0a",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C32",
+      "claim": "The A27h interneuron is required for forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the A27h interneuron is required for forward locomotion, its inhibition via MDN-induced Pair1 activation prevents forward locomotion (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "06fce030-deb9-4f1b-9619-be49596793f0",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C33",
+      "claim": "Inhibition of A27h via MDN-induced Pair1 activation prevents forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the A27h interneuron is required for forward locomotion, its inhibition via MDN-induced Pair1 activation prevents forward locomotion (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "9e960df1-0710-41e2-9d18-dc09b0152735",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C34",
+      "claim": "Activating backward locomotion is likely due, in part, to MDN activation of the A18b premotor neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating backward locomotion is likely to be due, in part, to MDN activation of the A18b premotor neuron, which is specifically active during backward locomotion (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim involves speculation ('likely') but is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "91c11fc2-0bad-4665-89fd-3676a9f91c01",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C35",
+      "claim": "A18b premotor neuron is specifically active during backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating backward locomotion is likely to be due, in part, to MDN activation of the A18b premotor neuron, which is specifically active during backward locomotion (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "d212efbe-600b-43e7-baf0-146d62334d3d",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C36",
+      "claim": "MDN-Pair1 are synaptically coupled members of a locomotor circuit in the Drosophila larva.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MDN-Pair1 are synaptically coupled members of a locomotor circuit in the Drosophila larva.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "ffcc5308-4742-4a6f-bb14-a612a862d871",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C37",
+      "claim": "Larval Pair1 neurons have characteristic cell body position in the medial subesophageal zone (SEZ).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the larval Pair1 neurons based on their characteristic cell body position in the medial subesophageal zone (SEZ), dense local ipsilateral dendritic arborizations (defined as dendritic based on enrichment for post-synapses in the TEM reconstruction of the larval Pair1 neuron; Figure 1\u2014figure supplement 1), and contralateral axons descending into the ventral nerve cord (VNC) in an extremely lateral axon tract (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by morphological observations and TEM data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "355b1764-035f-481d-8690-fefe020399a2",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C38",
+      "claim": "Larval Pair1 neurons have dense local ipsilateral dendritic arborizations.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the larval Pair1 neurons based on their characteristic cell body position in the medial subesophageal zone (SEZ), dense local ipsilateral dendritic arborizations (defined as dendritic based on enrichment for post-synapses in the TEM reconstruction of the larval Pair1 neuron; Figure 1\u2014figure supplement 1), and contralateral axons descending into the ventral nerve cord (VNC) in an extremely lateral axon tract (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by morphological observations and TEM data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "095df3e3-4963-4744-a123-8eff3803f085",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C39",
+      "claim": "Larval Pair1 dendritic domains are defined as dendritic based on enrichment for post-synapses in the TEM reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the larval Pair1 neurons based on their characteristic cell body position in the medial subesophageal zone (SEZ), dense local ipsilateral dendritic arborizations (defined as dendritic based on enrichment for post-synapses in the TEM reconstruction of the larval Pair1 neuron; Figure 1\u2014figure supplement 1), and contralateral axons descending into the ventral nerve cord (VNC) in an extremely lateral axon tract (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TEM data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "b21310ef-c7f9-4f49-8cfc-f4f1a0a65dd6",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C40",
+      "claim": "Larval Pair1 neurons have contralateral axons descending into the ventral nerve cord (VNC) in an extremely lateral axon tract.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the larval Pair1 neurons based on their characteristic cell body position in the medial subesophageal zone (SEZ), dense local ipsilateral dendritic arborizations (defined as dendritic based on enrichment for post-synapses in the TEM reconstruction of the larval Pair1 neuron; Figure 1\u2014figure supplement 1), and contralateral axons descending into the ventral nerve cord (VNC) in an extremely lateral axon tract (Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by morphological observations and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "2c1c73a7-b910-47da-be50-34f103d4e720",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C41",
+      "claim": "Pair1 neurons with characteristic morphology can be identified at 28 and 96 hr after larval hatching (ALH).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Pair1-Gal4 line, we could identify Pair1 neurons with this morphology at 28 and 96 hr after larval hatching (ALH; Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "5e8c1d22-91bf-4ba7-ad4d-88b53d71d7a6",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C42",
+      "claim": "At 24 hr after pupal formation (APF), Pair1 neuron cell bodies and proximal neurites can still be observed, but virtually all of the dendritic processes and descending axonal process are pruned.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pair1 neuron cell bodies and proximal neurites could still be observed at 24 hr after pupal formation (APF), but virtually all of the dendridic processes and descending axonal process are pruned (Figure 1C, only one neuron labeled).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "1344554d-4146-4705-a57f-9acfbf4102b5",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C43",
+      "claim": "Many or all neurons undergo axon/dendrite remodeling during metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected, given that many or all neurons undergo axon/dendrite remodeling during metamorphosis (Kanamori et al., 2015; Truman and Reiss, 1976; Yaniv and Schuldiner, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "2fd8b10e-4f2e-46dc-8fc8-afe9262f8b5b",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C44",
+      "claim": "At 48 hr APF, Pair1 neurons exhibit dendritic branching in the SEZ and a descending axon into the VNC, regaining morphological features similar to that of larval Pair1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "At 48 hr APF, Pair1 neurons exhibited dendritic branching in the SEZ and a descending axon into the VNC, regaining morphological features similar to that of larval Pair1 neurons (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "5a668c8b-978f-4613-b80e-eb8686ad6581",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C45",
+      "claim": "At 48 hr APF, the Pair1 axon innervates the T1 (prothoracic) neuropil and descends further down the VNC.",
+      "claim_type": "EXPLICIT",
+      "source": "The axon innervated the T1 (prothoracic) neuropil and descended further down the VNC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by morphological observations from confocal imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "55a3f48e-efa1-4cfd-bf2e-358aee0348cf",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C46",
+      "claim": "Pair1 morphological features are maintained into the adult fly.",
+      "claim_type": "EXPLICIT",
+      "source": "These morphological features were maintained into the adult fly, where we could trace the Pair1 axon to primarily innervate the T1 neuropil (Figure 1E), with less extensive innervation of the mesothoracic (T2) and metathoracic (T3) neuropils.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "d916c67c-626d-4335-99d9-52a3fa61e85f",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C47",
+      "claim": "In the adult, the Pair1 axon primarily innervates the T1 neuropil, with less extensive innervation of the T2 and T3 neuropils.",
+      "claim_type": "EXPLICIT",
+      "source": "These morphological features were maintained into the adult fly, where we could trace the Pair1 axon to primarily innervate the T1 neuropil (Figure 1E), with less extensive innervation of the mesothoracic (T2) and metathoracic (T3) neuropils.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "0f6faeb8-5d11-4277-bd71-38ec3be9f67b",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C48",
+      "claim": "Larval Pair1 neurons permanently labeled at 96 hr ALH are present in the 4-day old adult.",
+      "claim_type": "EXPLICIT",
+      "source": "We immortalized Pair1 neurons in the larva, and assayed expression in the adult, and observed the two bilateral Pair1 neurons, based on characteristic medial SEZ cell body position, local ipsilateral arbors, and contralateral descending axons that preferentially innervate the prothoracic neuropil (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immortalization experiments and confocal imaging shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "55a92584-2ffa-4997-bfde-c4962351061b",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C49",
+      "claim": "Immortalization of Pair1 during larval stages reduces off-target neuron expression in the adult VNC and reveals greatly enriched innervation in the T1 neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "Pair1 innervation is clearer in neurons immortalized during larval stages, which reduces the off-target neuron expression in the adult VNC, and reveals an greatly enriched level of innervation in the T1 neuropil (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of immortalization data with standard Gal4 expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "efbf42ab-3dba-4649-90ca-b0191eb033dd",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C50",
+      "claim": "Larval and adult Pair1 neurons express Hunchback (Hb).",
+      "claim_type": "EXPLICIT",
+      "source": "Larval and adult Pair1 neurons expressed Hunchback (Hb), Sex combs reduced (Scr), and Bicoid (Bcd); but did not express Visual system homeobox (Vsx1) or Nab (Figure 2A\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "cb1f5a5d-a9bf-41cc-a02a-5267057b9e45",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C51",
+      "claim": "Larval and adult Pair1 neurons express Sex combs reduced (Scr).",
+      "claim_type": "EXPLICIT",
+      "source": "Larval and adult Pair1 neurons expressed Hunchback (Hb), Sex combs reduced (Scr), and Bicoid (Bcd); but did not express Visual system homeobox (Vsx1) or Nab (Figure 2A\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "e040a22b-5b89-42b8-b892-b08f29b1ca5e",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C52",
+      "claim": "Larval and adult Pair1 neurons express Bicoid (Bcd).",
+      "claim_type": "EXPLICIT",
+      "source": "Larval and adult Pair1 neurons expressed Hunchback (Hb), Sex combs reduced (Scr), and Bicoid (Bcd); but did not express Visual system homeobox (Vsx1) or Nab (Figure 2A\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "bf26c681-f4a0-4657-8379-eb8f870ca1e5",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C53",
+      "claim": "Larval and adult Pair1 neurons do not express Visual system homeobox (Vsx1).",
+      "claim_type": "EXPLICIT",
+      "source": "Larval and adult Pair1 neurons expressed Hunchback (Hb), Sex combs reduced (Scr), and Bicoid (Bcd); but did not express Visual system homeobox (Vsx1) or Nab (Figure 2A\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "c242533a-00a4-4380-a93a-513b0b9d4d83",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C54",
+      "claim": "Larval and adult Pair1 neurons do not express Nab.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval and adult Pair1 neurons expressed Hunchback (Hb), Sex combs reduced (Scr), and Bicoid (Bcd); but did not express Visual system homeobox (Vsx1) or Nab (Figure 2A\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "1ee222fe-6412-4ae1-a28d-cb437f986657",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C55",
+      "claim": "There are many other Scr/Bcd/Hb triple-positive neurons in the SEZ.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were many other Scr/Bcd/Hb triple-positive neurons in the SEZ (Figure 2O,P), showing that additional factors would be necessary to uniquely specify Pair1 identity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell counting data shown in Figure 2O,P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "20704de2-8892-4813-a91e-d5316c21e8c3",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C56",
+      "claim": "Additional factors beyond Hb, Bcd, and Scr would be necessary to uniquely specify Pair1 identity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were many other Scr/Bcd/Hb triple-positive neurons in the SEZ (Figure 2O,P), showing that additional factors would be necessary to uniquely specify Pair1 identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that many neurons share the same three transcription factors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "3b3ed1d5-f9b7-463f-934a-d96ae8c97c25",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C57",
+      "claim": "The three transcription factors (Hb, Bcd, Scr) may be part of a molecular code that directs both larval and adult Pair1 morphology and/or connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the conclusion that Pair1 persists from larva to adult, maintaining both molecular and morphological features, and raises the interesting possibility that the three TFs (Hb, Bcd, Scr) may be part of a molecular code that directs both larval and adult Pair1 morphology and/or connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential function of the transcription factors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "83e57782-3448-402a-8dea-4455694c795d",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C58",
+      "claim": "Control flies exposed to red light did not pause or arrest forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Control flies exposed to red light did not pause or arrest forward locomotion, did not show an increased probability of pausing, and did not have a decrease in distance traveled during the stimulus interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data from control experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "3c6f30d6-65a5-4f1e-a509-89d505e33a07",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C59",
+      "claim": "Control flies exposed to red light did not show an increased probability of pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "Control flies exposed to red light did not pause or arrest forward locomotion, did not show an increased probability of pausing, and did not have a decrease in distance traveled during the stimulus interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data from control experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "f81cd58e-f3ea-4b71-882f-2c9e2fc6f4a7",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C60",
+      "claim": "Control flies exposed to red light did not have a decrease in distance traveled during the stimulus interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Control flies exposed to red light did not pause or arrest forward locomotion, did not show an increased probability of pausing, and did not have a decrease in distance traveled during the stimulus interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data from control experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "051d5262-92d9-40af-9ca1-bb5f59e5b4b7",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C61",
+      "claim": "Experimental flies expressing Chrimson in Pair1 neurons showed a near-complete arrest of forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, experimental flies expressing Chrimson in Pair1 neurons showed a near-complete arrest of forward locomotion, an increased probability of pausing, and a reduced distance traveled during the stimulus interval (Figure 3A\u2013C; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3A-C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "a7b5b4c9-d48f-459e-9569-adda7fec8973",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C62",
+      "claim": "Experimental flies expressing Chrimson in Pair1 neurons showed an increased probability of pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, experimental flies expressing Chrimson in Pair1 neurons showed a near-complete arrest of forward locomotion, an increased probability of pausing, and a reduced distance traveled during the stimulus interval (Figure 3A\u2013C; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3A-C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "da79acd8-0a6a-4fe8-9167-2b32757ee8ad",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C63",
+      "claim": "Experimental flies expressing Chrimson in Pair1 neurons showed a reduced distance traveled during the stimulus interval.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, experimental flies expressing Chrimson in Pair1 neurons showed a near-complete arrest of forward locomotion, an increased probability of pausing, and a reduced distance traveled during the stimulus interval (Figure 3A\u2013C; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3A-C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "bd036821-6d4d-4c20-b3ab-821f4f93031c",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C64",
+      "claim": "The effects of Pair1 activation were reversed after turning off the red light, with the exception of a slightly reduced distance traveled.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects were reversed after turning off the red light, with the exception of a slightly reduced distance traveled, likely due to a lingering physiological effect of the 30 s Pair1 activation (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "87b7eaef-a895-4d80-931e-a0dfac430a82",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C65",
+      "claim": "The slightly reduced distance traveled after light offset is likely due to a lingering physiological effect of the 30 s Pair1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects were reversed after turning off the red light, with the exception of a slightly reduced distance traveled, likely due to a lingering physiological effect of the 30 s Pair1 activation (Figure 3A,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "7885c40b-d60f-44da-9b52-5b416aaa5831",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C66",
+      "claim": "Pair1 activation resulted in an increase in immobile flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Pair1 activation resulted in an increase in immobile flies (Figure 3E) and a corresponding decrease in whole body translocation (Figure 3F, defined as 'large movements').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "b354537c-652b-4ac1-976b-5731a1453135",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C67",
+      "claim": "Pair1 activation resulted in a decrease in whole body translocation (defined as 'large movements').",
+      "claim_type": "EXPLICIT",
+      "source": "Pair1 activation resulted in an increase in immobile flies (Figure 3E) and a corresponding decrease in whole body translocation (Figure 3F, defined as 'large movements').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "c7b4ed60-b8c8-442e-8bad-01e506f61a7a",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C68",
+      "claim": "Pair1 activation did not prevent small body part movements such as those involved in grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Pair1 activation did not prevent small body part movements such as those involved in grooming (Figure 3G, defined as 'small movements').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "0489601e-fae2-4c70-807f-6c2e785b0522",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C69",
+      "claim": "The arrest in forward locomotion is due to Chrimson activation of the Pair1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that Pair1-Gal4 off-target expression is common but variable from fly to fly, whereas its expression in Pair1 neurons is fully penetrant; because the Chrimson-induced behavior is also fully penetrant, we conclude that the arrest in forward locomotion is due to Chrimson activation of the Pair1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the penetrance of Pair1 expression and the behavioral phenotype.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "797f4e5a-128a-4468-a15b-133f7ac7f933",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C70",
+      "claim": "Pair1 activation prevents a single behavior \u2013 forward locomotion \u2013 but does not produce general paralysis or interfere with non-translocating limb movements.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Pair1 activation prevents a single behavior \u2013 forward locomotion \u2013 but does not produce general paralysis or interfere with non-translocating limb movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the behavioral data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "463e1d79-ce09-4689-9d1c-2ea69a386615",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C71",
+      "claim": "MDN and Pair1 neurites are in close proximity to each other in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed MDN and Pair1 neurites in close proximity to each other (Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging data shown in Figure 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "b955d565-556e-418f-b1b8-af0f30dca692",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C72",
+      "claim": "MDN-Pair1 connectivity was absent at 24 hr APF when neurite pruning was maximal.",
+      "claim_type": "EXPLICIT",
+      "source": "MDN-Pair1 connectivity was absent at 24 hr APF (Figure 4F,G) when neurite pruning was maximal (Figure 1C), but was re-established at 48 hr APF (Figure 4H,I) when neurite regrowth was occurring (Figure 1D) and maintained into the adult (Figure 4J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by t-GRASP data shown in Figure 4F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "4a79aa6c-b3bb-47e2-9740-889e20fa0511",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C73",
+      "claim": "MDN-Pair1 connectivity was re-established at 48 hr APF when neurite regrowth was occurring.",
+      "claim_type": "EXPLICIT",
+      "source": "MDN-Pair1 connectivity was absent at 24 hr APF (Figure 4F,G) when neurite pruning was maximal (Figure 1C), but was re-established at 48 hr APF (Figure 4H,I) when neurite regrowth was occurring (Figure 1D) and maintained into the adult (Figure 4J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by t-GRASP data shown in Figure 4H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "222d7cdd-37bb-4431-92d2-ab2a69808468",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C74",
+      "claim": "MDN-Pair1 connectivity is maintained into the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "MDN-Pair1 connectivity was absent at 24 hr APF (Figure 4F,G) when neurite pruning was maximal (Figure 1C), but was re-established at 48 hr APF (Figure 4H,I) when neurite regrowth was occurring (Figure 1D) and maintained into the adult (Figure 4J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by t-GRASP data shown in Figure 4J,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "d476448c-77cc-4d73-bfd9-9cae619a497b",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C75",
+      "claim": "Control flies only expressing pre-t-GRASP in MDN did not have detectable t-GRASP signal at any timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Across each timepoint, control flies only expressing pre-t-GRASP in MDN did not have detectable t-GRASP signal (Figure 4F,H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control t-GRASP experiments shown in Figure 4F,H,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "40c458d5-2ae1-4795-828f-1b4c44ef49de",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C76",
+      "claim": "MDN-Pair1 larval connectivity is established twice during development: initially established in the late embryo, and then re-established in the pupae.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MDN-Pair1 larval connectivity is established twice during development: initially established in the late embryo, and then re-established in the pupae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the t-GRASP data and prior knowledge of embryonic development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "2df54325-e3a1-4333-9b77-e3a7439052d8",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C77",
+      "claim": "A core interneuron circuit is preserved from larval stages into the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our earlier work (Carreira-Rosario et al., 2018), our results here show that a core interneuron circuit is preserved from larval stages into the adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the data presented in this manuscript and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "0179a5f8-09bc-41a7-9e05-9d05ffcc8abe",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C78",
+      "claim": "The preserved neuronal circuit contains MDN and its monosynaptically coupled Pair1 neuron, allowing the fly to switch between antagonistic behaviors: forward versus backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuronal circuit contains MDN and its monosynaptically coupled Pair1 neuron, allowing the fly to switch between antagonistic behaviors: forward versus backward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the data presented in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "ad060e98-de75-4415-909a-392fe81861ae",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C79",
+      "claim": "The larval circuit contains the MDN partners Pair1, ThDN, and A18b, and the Pair1 partner A27h.",
+      "claim_type": "EXPLICIT",
+      "source": "The larval circuit contains the MDN partners Pair1, ThDN, and A18b, and the Pair1 partner A27h (Figure 5; Carreira-Rosario et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior work and illustrated in Figure 5.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "2e00d660-516b-47d5-b1c1-8b80e883378c",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C80",
+      "claim": "It is unlikely that MDN and A18b are synaptic partners during adulthood because MDN axons do not extend to the abdominal ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although two independent A18b Gal4 lines have extensive off-target expression, permanently labeling the Gal4 expression during larval stages consistently labels an adult neuron in the abdominal ganglion (data not shown); since MDN axons do not extend to the abdominal ganglion, it is unlikely that MDN and A18b are synaptic partners during adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the spatial separation of MDN axons and A18b location.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "3373145e-78dc-4b12-9cfe-3aeae5785d89",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C81",
+      "claim": "The A27h interneuron undergoes apoptosis during pupal stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the A27h interneuron, which regulates forward crawling in the larvae, undergoes apoptosis during pupal stages (data not shown) and thus cannot regulate forward walking in the adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on unpublished observations by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "9831d1e9-9d60-45be-9eb9-514bed96abf6",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C82",
+      "claim": "A27h cannot regulate forward walking in the adult because it undergoes apoptosis during pupal stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the A27h interneuron, which regulates forward crawling in the larvae, undergoes apoptosis during pupal stages (data not shown) and thus cannot regulate forward walking in the adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that A27h undergoes apoptosis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "e4802a91-95cd-4f62-9961-52ed5588ba15",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C83",
+      "claim": "The A27h neurons are located in the abdominal segments, which do not have a role in adult walking.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not surprising as the A27h neurons are located in the abdominal segments, which do not have a role in adult walking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on anatomical knowledge of Drosophila locomotion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "38b4868f-0363-4571-b091-318b9c9b33b8",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C84",
+      "claim": "Recent work mapping the adult MDN circuit has identified over 30 VNC neurons downstream of MDN, including the LBL40 and LUL130 neurons required for hindleg backward stepping.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work mapping the adult MDN circuit has identified over 30 VNC neurons downstream of MDN, including the LBL40 and LUL130 neurons required for hindleg backward stepping (Figure 5; Feng et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to recent published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "64487d7c-8b4e-4ade-ba6a-05830c66c52c",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C85",
+      "claim": "Recent work has identified adult neurons important for forward walking.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has also identified adult neurons important for forward walking (Bidaye et al., 2020), but their relationship to adult MDN is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "b9e8a94d-2ccc-48cf-9a9f-84cfccc83e04",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C86",
+      "claim": "The relationship of adult forward walking neurons to adult MDN is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has also identified adult neurons important for forward walking (Bidaye et al., 2020), but their relationship to adult MDN is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "09785a46-a75d-463f-a09b-7190095f18bd",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C87",
+      "claim": "Initiation of forward walking requires the forelegs, innervated by motor neurons in the prothoracic segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Elegant recent work has shown that initiation of forward walking requires the forelegs, innervated by motor neurons in the prothoracic segment, whereas initiation of backward walking requires the hindlegs, innervated by motor neuron in the metathoracic segment (Feng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "e7528670-8d05-41c8-bfe2-6679753c016e",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C88",
+      "claim": "Initiation of backward walking requires the hindlegs, innervated by motor neurons in the metathoracic segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Elegant recent work has shown that initiation of forward walking requires the forelegs, innervated by motor neurons in the prothoracic segment, whereas initiation of backward walking requires the hindlegs, innervated by motor neuron in the metathoracic segment (Feng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "672f5c09-f7ef-49fb-beb1-d36e9d835268",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C89",
+      "claim": "Adult MDN synaptic partners primarily innervate the metathoracic (T3) neuromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, adult MDN synaptic partners primarily innervate the metathoracic (T3) neuromere (Feng et al., 2020), a good location for inducing hindleg stepping and initiation of backward walking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "73766b31-54fa-4d71-98d5-cd74fa38691a",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C90",
+      "claim": "The metathoracic neuromere is a good location for inducing hindleg stepping and initiation of backward walking.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, adult MDN synaptic partners primarily innervate the metathoracic (T3) neuromere (Feng et al., 2020), a good location for inducing hindleg stepping and initiation of backward walking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the anatomical location and function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "00d227e3-32bc-45e5-977a-d8e2334036a1",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C91",
+      "claim": "A similar spatial segregation is likely to occur in the larva, where forward crawling is induced by A27h in posterior segments, and backward crawling is induced in anterior segments.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar spatial segregation is likely to occur in the larva, where forward crawling is induced by A27h in posterior segments, and backward crawling is induced in anterior segments (Fushiki et al., 2016; Tastekin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations to published work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "6cca19c7-1157-4392-899b-7077a997ab0e",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C92",
+      "claim": "Individual neurons that have similar functions in larva and adults have been identified, including select motor neurons, sensory neurons, and Kenyon cells of the mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual neurons that have similar functions in larva and adults have been identified, including select motor neurons, sensory neurons (Consoulas et al., 2002; Consoulas et al., 2000; Levine, 1984; Truman, 1992; Weeks, 2003), and Kenyon cells of the mushroom body (Eichler et al., 2017; Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "3889dd2f-5b10-4d33-aa40-3aff0daa5153",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C93",
+      "claim": "It remains unknown whether any individual synaptic partners of persistent neurons also persist and retain the same pattern of connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains unknown whether any of their individual synaptic partners also persist and retain the same pattern of connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "c439b0d4-e5c7-4ee5-8ba4-27eb7848f2e4",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C94",
+      "claim": "The MDN-Pair1 circuit is the first pair of interneurons whose connectivity is established in the larva and then re-established after remodeling during metamorphosis, all while maintaining a similar function.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, the MDN-Pair1 circuit is the first pair of interneurons whose connectivity is established in the larva and then re-established after remodeling during metamorphosis, all while maintaining a similar function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings in the context of existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "85ed86fc-6c39-49e9-b4ca-4b9a8e107a98",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C95",
+      "claim": "This work is the first to show that a pair of synaptically connected interneurons can persist from larva to adult and perform similar functions at both stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work is the first, to our knowledge, to show that a pair of synaptically connected interneurons can persist from larva to adult and perform similar functions at both stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "237ebba8-1997-478d-994b-cc6c7dfd0580",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C96",
+      "claim": "Both MDN and Pair1 undergo dramatic pruning and regeneration events during metamorphosis, only to re-form synapses with each other following neuronal remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, both MDN and Pair1 undergo dramatic pruning and regeneration events during metamorphosis, only to re-form synapses with each other following neuronal remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the morphological and connectivity data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "fa7f3366-3e0b-4e73-a00a-c199f58923d1",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C97",
+      "claim": "Synapse specificity cues are maintained from the late embryo, where MDN-Pair1 connectivity is first established, into pupal stages, where MDN-Pair1 connectivity is re-established.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that synapse specificity cues are maintained from the late embryo, where MDN-Pair1 connectivity is first established, into pupal stages, where MDN-Pair1 connectivity is re-established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observation that connectivity is re-established.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "b9950912-a222-469a-a475-8a2306020a37",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C98",
+      "claim": "The importance of the MDN-Pair1 interneuron circuit is highlighted by its persistence from embryo to adult, despite adapting to different sensory input and motor output at each stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the MDN-Pair1 interneuron circuit is highlighted by its persistence from embryo to adult, despite adapting to different sensory input and motor output at each stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive statement about the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "4546eaeb-df1e-4165-be48-de67777a429e",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C99",
+      "claim": "Other descending or ascending interneurons may also persist into adults, switching inputs and outputs as needed.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps other descending or ascending interneurons will also persist into adults, switching inputs and outputs as needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential broader implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "2503bb87-088c-4221-ac4f-469153106c15",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C100",
+      "claim": "The idea that an interneuron circuit that is stable across developmental stages is supported by recent TEM reconstruction of neural circuits at different stages of C. elegans development.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the idea that an interneuron circuit that is stable across developmental stages is supported by recent elegant TEM reconstruction of neural circuits at different stages of Caenorhabditis elegans development (Witvliet et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent published work in C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "a059688b-aa52-43fd-b495-34ce2ff36c89",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C101",
+      "claim": "In C. elegans, across maturation, the decision-making (interneuron) circuitry is maintained whereas sensory and motor pathways are substantially remodeled.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the authors conclude that 'Across maturation, the decision-making (interneuron) circuitry is maintained whereas sensory and motor pathways are substantially remodeled.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quote from a cited paper about C. elegans development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "80c1010f-a401-4eaa-a596-c1456dbab675",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C102",
+      "claim": "Preservation of interneuron circuit motifs may be functional modules that can be used adaptively with different sensorimotor inputs and outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, together with ours, raise the possibility that preservation of interneuron circuit motifs may be functional modules that can be used adaptively with different sensorimotor inputs and outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "4f0d903b-7b84-4316-a14f-c9682a5dd3eb",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C103",
+      "claim": "The presence of this circuit motif in both flies and worms suggests that it may be an ancient evolutionary mechanism for assembling sensorimotor circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of this circuit motif in both flies and worms suggests that it may be an ancient evolutionary mechanism for assembling sensorimotor circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about evolutionary implications based on comparative observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "c70d94cb-611d-4d74-8950-f2deb73c3ccc",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "claim_id": "C104",
+      "claim": "MDN axon and Pair1 dendrite are closely entwined in the same region of neuropil in the larva.",
+      "claim_type": "EXPLICIT",
+      "source": "Right: MDN axon and Pair1 dendrite are closely entwined the same region of neuropil (white bracket).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by TEM data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d577b7eb-6318-4796-b87a-8d37f851045d",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Pair1 neurons persist from larval to adult stages, undergoing dramatic remodeling during metamorphosis. Morphological analysis shows Pair1 neurons are present at 28 and 96 hr ALH with characteristic features (medial SEZ cell bodies, ipsilateral dendritic arborizations, contralateral descending axons), undergo severe pruning at 24 hr APF, regrow by 48 hr APF with similar morphology to larvae, and maintain these features into adulthood with primary innervation of the T1 neuropil. Immortalization experiments permanently labeling larval Pair1 neurons confirm their presence in adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C37-C49 provide converging morphological evidence from confocal imaging across developmental stages, TEM reconstruction defining dendritic domains (C39), and genetic immortalization experiments (C48-C49) that definitively demonstrate Pair1 persistence. The temporal resolution and multiple complementary approaches strongly support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "e6ce38ef-20c6-4741-b9c8-71bfbe4b187d",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Larval and adult Pair1 neurons express the same transcription factor profile (Hb+, Scr+, Bcd+, Vsx1-, Nab-), supporting their identity as the same neuron across developmental stages. However, many other SEZ neurons share this triple-positive profile (Scr/Bcd/Hb), indicating additional factors are needed to uniquely specify Pair1 identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by immunostaining data in Figure 2 showing consistent TF expression. C55 is supported by cell counting data showing ~300+ triple-positive neurons. C56 is a logical inference from C55. C57 is appropriately labeled as speculation about potential function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "180cd073-df8d-4e94-ab53-49ddf22698d9",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic activation of Pair1 in adult flies arrests forward locomotion without causing general paralysis. Experimental flies showed near-complete arrest, increased pausing probability, reduced distance traveled, increased immobility, and decreased whole body translocation during red light stimulation, while small movements (grooming) were preserved. Effects reversed after light offset except for slightly reduced distance traveled.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C58-C70 are supported by behavioral data in Figure 3 with appropriate statistical tests (two-way ANOVA with Bonferroni corrections, p<0.001). Controls showed no effect, and the specificity argument (C69) based on penetrance is reasonable. The behavioral phenotype is well-characterized across multiple parameters (n=10).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "6c048d16-b5a0-4f99-891f-6a6dd3852813",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MDN-Pair1 synaptic connectivity is lost during early pupal stages (24 hr APF) when neurons are maximally pruned, but is re-established by mid-pupal stages (48 hr APF) and maintained into adulthood. t-GRASP experiments show no connectivity at 24 hr APF, but clear connectivity at 48 hr APF and in adults, with appropriate controls lacking signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C71-C76 are supported by t-GRASP data in Figure 4 showing temporal dynamics of connectivity loss and re-establishment. Controls (C75) validate specificity. The conclusion that connectivity is established twice during development (C76) is a reasonable inference combining current data with prior knowledge of embryonic connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "6f2e331b-50f5-4b54-ad7b-478e81e9fbda",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The MDN-Pair1 circuit represents the first documented pair of synaptically connected interneurons that persist from larva to adult, undergo dramatic remodeling during metamorphosis, re-establish connectivity, and generate similar locomotor behaviors at both life stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C77-C78, C94-C96 synthesize the morphological, connectivity, and behavioral data presented. The novelty claims (C94-C95) are appropriately qualified ('to our knowledge', 'to date') and are supported by the comprehensive dataset. This represents a major integrative conclusion of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "14bcac6a-47bf-428d-bb83-9153713b98c0",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prior work established that larval MDN induces backward crawling and synapses onto Pair1 to inhibit forward crawling via A27h inhibition, and that MDN is remodeled during metamorphosis and regulates backward walking in adults. MDN exists as bilateral pairs with similar synaptic partners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7, C26-C36 are all supported by citations to prior work (primarily Carreira-Rosario et al., 2018). These establish the necessary background for the current study. C34 appropriately includes speculation ('likely') while still being citation-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "d19036cb-fdb0-4b89-8379-2cf1e8480725",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The larval MDN circuit includes partners Pair1, ThDN, A18b, and A27h, but not all persist into adulthood. A18b likely does not remain an MDN partner in adults due to spatial separation (abdominal vs. thoracic localization), and A27h undergoes apoptosis during pupal stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C79 is citation-supported. However, C80-C82 rely on unpublished data ('data not shown') which cannot be evaluated. The inference about A18b (C80) is reasonable based on anatomical constraints, but the apoptosis claim (C81) lacks presented evidence. C83 is knowledge-based and reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "91056e72-52bd-4b43-9d1b-d958099e8fbf",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Recent work has mapped adult MDN circuit partners including LBL40/LUL130 neurons for backward walking and identified forward walking neurons, though their relationship to MDN is unknown. Forward walking requires forelegs (prothoracic), backward walking requires hindlegs (metathoracic), with corresponding spatial segregation of circuit components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C91 are supported by citations to recent published work (Feng et al., 2020; Bidaye et al., 2020; Fushiki et al., 2016; Tastekin et al., 2018). C86 appropriately acknowledges knowledge gaps. C90-C91 include reasonable inferences labeled as such or qualified with 'likely'.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "c0819a69-6ce0-4e73-ae46-eb02afc099c7",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Individual neurons with similar functions across larval and adult stages have been identified in other systems (motor neurons, sensory neurons, Kenyon cells), but whether their synaptic partners also persist with maintained connectivity was unknown. Recent C. elegans work supports the concept that interneuron circuitry is maintained while sensory/motor pathways remodel, suggesting this may be an ancient evolutionary mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93, C100-C103 are supported by appropriate citations. C93 correctly identifies the knowledge gap this work addresses. C100-C101 accurately cite C. elegans work. C102-C103 are appropriately speculative about broader implications and evolutionary significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Neuronal remodeling occurs during development and in response to hormones across species (mammals, insects), but whether remodeled neurons resume prior connectivity patterns and drive similar behaviors remains unclear. In Drosophila, individual neurons persist through metamorphosis despite dramatic changes, and larvae and adults share similar locomotor behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C14-C25 establish background knowledge and identify the research gap. All are appropriately supported by citations or stated as established knowledge. C3 and C21 correctly identify the knowledge gap that motivates this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "2fab6c00-0159-499a-8400-e0e05dc30285",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The re-establishment of MDN-Pair1 connectivity suggests synapse specificity cues are maintained from embryo through pupal stages. The circuit's persistence despite changing sensory inputs and motor outputs highlights its importance, and other interneurons may similarly persist with adaptable inputs/outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-C99 are speculative interpretations (appropriately labeled as such with 'suggests', 'may', 'perhaps'). While C97 is a reasonable mechanistic inference from the data, it lacks direct experimental support for the proposed mechanism. C98-C99 are appropriate speculation about broader implications but remain untested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "2bcc7c94-99a9-47da-81a1-cd864de66bda",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Many or all neurons undergo axon/dendrite remodeling during metamorphosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by citations to published literature (Kanamori et al., 2015; Truman and Reiss, 1976; Yaniv and Schuldiner, 2016) and provides context for the observed Pair1 pruning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    },
+    {
+      "id": "7d47f29d-9134-4e78-ac86-d36d78691963",
+      "content_id": "345367ba-beb8-4068-a0d9-8f1044e2d8ee",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MDN axon and Pair1 dendrite are closely entwined in the same region of neuropil in the larva.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 is supported by TEM data shown in Figure 1\u2014figure supplement 1, providing structural evidence for potential synaptic connectivity in larvae.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:48.756644Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f3bb6d57-4356-41f8-a74d-3eb74f3401f6",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "ffcc5308-4742-4a6f-bb14-a612a862d871",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "355b1764-035f-481d-8690-fefe020399a2",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "095df3e3-4963-4744-a123-8eff3803f085",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "b21310ef-c7f9-4f49-8cfc-f4f1a0a65dd6",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "2c1c73a7-b910-47da-be50-34f103d4e720",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "5e8c1d22-91bf-4ba7-ad4d-88b53d71d7a6",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "2fd8b10e-4f2e-46dc-8fc8-afe9262f8b5b",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "5a668c8b-978f-4613-b80e-eb8686ad6581",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "55a3f48e-efa1-4cfd-bf2e-358aee0348cf",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "d916c67c-626d-4335-99d9-52a3fa61e85f",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "0f6faeb8-5d11-4277-bd71-38ec3be9f67b",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "55a92584-2ffa-4997-bfde-c4962351061b",
+      "result_id": "d577b7eb-6318-4796-b87a-8d37f851045d"
+    },
+    {
+      "claim_id": "efbf42ab-3dba-4649-90ca-b0191eb033dd",
+      "result_id": "e6ce38ef-20c6-4741-b9c8-71bfbe4b187d"
+    },
+    {
+      "claim_id": "cb1f5a5d-a9bf-41cc-a02a-5267057b9e45",
+      "result_id": "e6ce38ef-20c6-4741-b9c8-71bfbe4b187d"
+    },
+    {
+      "claim_id": "e040a22b-5b89-42b8-b892-b08f29b1ca5e",
+      "result_id": "e6ce38ef-20c6-4741-b9c8-71bfbe4b187d"
+    },
+    {
+      "claim_id": "bf26c681-f4a0-4657-8379-eb8f870ca1e5",
+      "result_id": "e6ce38ef-20c6-4741-b9c8-71bfbe4b187d"
+    },
+    {
+      "claim_id": "c242533a-00a4-4380-a93a-513b0b9d4d83",
+      "result_id": "e6ce38ef-20c6-4741-b9c8-71bfbe4b187d"
+    },
+    {
+      "claim_id": "1ee222fe-6412-4ae1-a28d-cb437f986657",
+      "result_id": "e6ce38ef-20c6-4741-b9c8-71bfbe4b187d"
+    },
+    {
+      "claim_id": "20704de2-8892-4813-a91e-d5316c21e8c3",
+      "result_id": "e6ce38ef-20c6-4741-b9c8-71bfbe4b187d"
+    },
+    {
+      "claim_id": "3b3ed1d5-f9b7-463f-934a-d96ae8c97c25",
+      "result_id": "e6ce38ef-20c6-4741-b9c8-71bfbe4b187d"
+    },
+    {
+      "claim_id": "26c96de3-e2fb-4012-bd54-88eb360029dc",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "9eb60bf3-4c84-4bb9-b66e-6f3da3a4efab",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "83e57782-3448-402a-8dea-4455694c795d",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "3c6f30d6-65a5-4f1e-a509-89d505e33a07",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "f81cd58e-f3ea-4b71-882f-2c9e2fc6f4a7",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "051d5262-92d9-40af-9ca1-bb5f59e5b4b7",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "a7b5b4c9-d48f-459e-9569-adda7fec8973",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "da79acd8-0a6a-4fe8-9167-2b32757ee8ad",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "bd036821-6d4d-4c20-b3ab-821f4f93031c",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "87b7eaef-a895-4d80-931e-a0dfac430a82",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "7885c40b-d60f-44da-9b52-5b416aaa5831",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "b354537c-652b-4ac1-976b-5731a1453135",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "c7b4ed60-b8c8-442e-8bad-01e506f61a7a",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "0489601e-fae2-4c70-807f-6c2e785b0522",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "797f4e5a-128a-4468-a15b-133f7ac7f933",
+      "result_id": "180cd073-df8d-4e94-ab53-49ddf22698d9"
+    },
+    {
+      "claim_id": "83d9a668-684d-4139-b33f-d15c4583ef9f",
+      "result_id": "6c048d16-b5a0-4f99-891f-6a6dd3852813"
+    },
+    {
+      "claim_id": "670e0968-ff3f-495e-8776-da1787f3a3c0",
+      "result_id": "6c048d16-b5a0-4f99-891f-6a6dd3852813"
+    },
+    {
+      "claim_id": "463e1d79-ce09-4689-9d1c-2ea69a386615",
+      "result_id": "6c048d16-b5a0-4f99-891f-6a6dd3852813"
+    },
+    {
+      "claim_id": "b955d565-556e-418f-b1b8-af0f30dca692",
+      "result_id": "6c048d16-b5a0-4f99-891f-6a6dd3852813"
+    },
+    {
+      "claim_id": "4a79aa6c-b3bb-47e2-9740-889e20fa0511",
+      "result_id": "6c048d16-b5a0-4f99-891f-6a6dd3852813"
+    },
+    {
+      "claim_id": "222d7cdd-37bb-4431-92d2-ab2a69808468",
+      "result_id": "6c048d16-b5a0-4f99-891f-6a6dd3852813"
+    },
+    {
+      "claim_id": "d476448c-77cc-4d73-bfd9-9cae619a497b",
+      "result_id": "6c048d16-b5a0-4f99-891f-6a6dd3852813"
+    },
+    {
+      "claim_id": "40c458d5-2ae1-4795-828f-1b4c44ef49de",
+      "result_id": "6c048d16-b5a0-4f99-891f-6a6dd3852813"
+    },
+    {
+      "claim_id": "39d2b99f-4217-41f2-a367-39640b80e814",
+      "result_id": "6f2e331b-50f5-4b54-ad7b-478e81e9fbda"
+    },
+    {
+      "claim_id": "2df54325-e3a1-4333-9b77-e3a7439052d8",
+      "result_id": "6f2e331b-50f5-4b54-ad7b-478e81e9fbda"
+    },
+    {
+      "claim_id": "0179a5f8-09bc-41a7-9e05-9d05ffcc8abe",
+      "result_id": "6f2e331b-50f5-4b54-ad7b-478e81e9fbda"
+    },
+    {
+      "claim_id": "c439b0d4-e5c7-4ee5-8ba4-27eb7848f2e4",
+      "result_id": "6f2e331b-50f5-4b54-ad7b-478e81e9fbda"
+    },
+    {
+      "claim_id": "85ed86fc-6c39-49e9-b4ca-4b9a8e107a98",
+      "result_id": "6f2e331b-50f5-4b54-ad7b-478e81e9fbda"
+    },
+    {
+      "claim_id": "237ebba8-1997-478d-994b-cc6c7dfd0580",
+      "result_id": "6f2e331b-50f5-4b54-ad7b-478e81e9fbda"
+    },
+    {
+      "claim_id": "aab971c6-7af7-4705-8aa9-77394e40d55f",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "c94d998f-11da-4391-abba-a3d3de605f81",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "f7a70ed2-ddaa-4b03-9ea4-336689053d4e",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "3c35bc1d-d664-48de-9d66-c3319be871a6",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "f66047d3-a907-4d34-8b00-f8079c5cae6e",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "f74f7399-efb8-4ffe-af06-bdc55d413121",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "a2c5bdea-8364-42dd-bd67-0e934b3d9fd0",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "81e7d938-d76e-469e-a842-37d08594e0f6",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "899c99ae-414f-48cb-8fbf-fe02ca65852a",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "4e2e1886-8aab-49e0-be06-4d09d906047c",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "198ca275-0105-4121-a362-c5d073e3ba0a",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "06fce030-deb9-4f1b-9619-be49596793f0",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "9e960df1-0710-41e2-9d18-dc09b0152735",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "91c11fc2-0bad-4665-89fd-3676a9f91c01",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "d212efbe-600b-43e7-baf0-146d62334d3d",
+      "result_id": "14bcac6a-47bf-428d-bb83-9153713b98c0"
+    },
+    {
+      "claim_id": "ad060e98-de75-4415-909a-392fe81861ae",
+      "result_id": "d19036cb-fdb0-4b89-8379-2cf1e8480725"
+    },
+    {
+      "claim_id": "2e00d660-516b-47d5-b1c1-8b80e883378c",
+      "result_id": "d19036cb-fdb0-4b89-8379-2cf1e8480725"
+    },
+    {
+      "claim_id": "3373145e-78dc-4b12-9cfe-3aeae5785d89",
+      "result_id": "d19036cb-fdb0-4b89-8379-2cf1e8480725"
+    },
+    {
+      "claim_id": "9831d1e9-9d60-45be-9eb9-514bed96abf6",
+      "result_id": "d19036cb-fdb0-4b89-8379-2cf1e8480725"
+    },
+    {
+      "claim_id": "e4802a91-95cd-4f62-9961-52ed5588ba15",
+      "result_id": "d19036cb-fdb0-4b89-8379-2cf1e8480725"
+    },
+    {
+      "claim_id": "38b4868f-0363-4571-b091-318b9c9b33b8",
+      "result_id": "91056e72-52bd-4b43-9d1b-d958099e8fbf"
+    },
+    {
+      "claim_id": "64487d7c-8b4e-4ade-ba6a-05830c66c52c",
+      "result_id": "91056e72-52bd-4b43-9d1b-d958099e8fbf"
+    },
+    {
+      "claim_id": "b9e8a94d-2ccc-48cf-9a9f-84cfccc83e04",
+      "result_id": "91056e72-52bd-4b43-9d1b-d958099e8fbf"
+    },
+    {
+      "claim_id": "09785a46-a75d-463f-a09b-7190095f18bd",
+      "result_id": "91056e72-52bd-4b43-9d1b-d958099e8fbf"
+    },
+    {
+      "claim_id": "e7528670-8d05-41c8-bfe2-6679753c016e",
+      "result_id": "91056e72-52bd-4b43-9d1b-d958099e8fbf"
+    },
+    {
+      "claim_id": "672f5c09-f7ef-49fb-beb1-d36e9d835268",
+      "result_id": "91056e72-52bd-4b43-9d1b-d958099e8fbf"
+    },
+    {
+      "claim_id": "73766b31-54fa-4d71-98d5-cd74fa38691a",
+      "result_id": "91056e72-52bd-4b43-9d1b-d958099e8fbf"
+    },
+    {
+      "claim_id": "00d227e3-32bc-45e5-977a-d8e2334036a1",
+      "result_id": "91056e72-52bd-4b43-9d1b-d958099e8fbf"
+    },
+    {
+      "claim_id": "6cca19c7-1157-4392-899b-7077a997ab0e",
+      "result_id": "c0819a69-6ce0-4e73-ae46-eb02afc099c7"
+    },
+    {
+      "claim_id": "3889dd2f-5b10-4d33-aa40-3aff0daa5153",
+      "result_id": "c0819a69-6ce0-4e73-ae46-eb02afc099c7"
+    },
+    {
+      "claim_id": "2503bb87-088c-4221-ac4f-469153106c15",
+      "result_id": "c0819a69-6ce0-4e73-ae46-eb02afc099c7"
+    },
+    {
+      "claim_id": "a059688b-aa52-43fd-b495-34ce2ff36c89",
+      "result_id": "c0819a69-6ce0-4e73-ae46-eb02afc099c7"
+    },
+    {
+      "claim_id": "80c1010f-a401-4eaa-a596-c1456dbab675",
+      "result_id": "c0819a69-6ce0-4e73-ae46-eb02afc099c7"
+    },
+    {
+      "claim_id": "4f0d903b-7b84-4316-a14f-c9682a5dd3eb",
+      "result_id": "c0819a69-6ce0-4e73-ae46-eb02afc099c7"
+    },
+    {
+      "claim_id": "47300cef-22b3-492c-8ca7-0ec1525f97ca",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "ab9528b3-ebc1-4a98-ae78-9dbeca6318fc",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "1cd3c182-801f-4ea3-b344-4dc7a17a8b57",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "4c192aa7-9bb2-4944-9c01-3f59adfcbb09",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "ca7b57f0-65f4-446d-ae61-0a010bdd7f81",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "e3c79de5-7095-4743-bd59-8ff13e590194",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "7da9db56-cf2e-4349-a0cd-c8569ba27acf",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "16935cc6-cef8-4ff3-9893-5585b5119e7c",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "2bc301f4-86d4-4dc0-a016-acc9a5ce37db",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "fdf7d5ec-e106-469b-a7d4-78be56c56f4a",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "747f29d1-8ef6-4770-a2bf-1171a67ac4b2",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "3a445fc3-9b0a-44f8-9d73-e193373faf52",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "66d5b1e0-f031-400b-8441-b21199c47692",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "bde45c52-02bc-4e2a-a847-f7c5d43f5f2e",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "742ad6fd-03b9-44dd-b398-2f5635b185a0",
+      "result_id": "0144c0ea-0a9d-4fbd-953a-12fb447eacb4"
+    },
+    {
+      "claim_id": "fa7f3366-3e0b-4e73-a00a-c199f58923d1",
+      "result_id": "2fab6c00-0159-499a-8400-e0e05dc30285"
+    },
+    {
+      "claim_id": "b9950912-a222-469a-a475-8a2306020a37",
+      "result_id": "2fab6c00-0159-499a-8400-e0e05dc30285"
+    },
+    {
+      "claim_id": "4546eaeb-df1e-4165-be48-de67777a429e",
+      "result_id": "2fab6c00-0159-499a-8400-e0e05dc30285"
+    },
+    {
+      "claim_id": "1344554d-4146-4705-a57f-9acfbf4102b5",
+      "result_id": "2bcc7c94-99a9-47da-81a1-cd864de66bda"
+    },
+    {
+      "claim_id": "c70d94cb-611d-4d74-8950-f2deb73c3ccc",
+      "result_id": "7d47f29d-9134-4e78-ac86-d36d78691963"
+    }
+  ],
+  "comparisons": []
+}

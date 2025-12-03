@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study analyzed longitudinal viral load data from 30 hospitalized COVID-19 patients (ages 28-78, even sex ratio) collected from four published studies (three from Asia, one from Europe) during the early pandemic phase (by February 2020). Detection limits ranged from 15.3 to 68 copies/mL, lower than commonly used thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 provide a clear description of the data collection and patient characteristics. The data sources, inclusion criteria, sample size, demographics, and detection limits are explicitly stated and supported by citations to the original studies and Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C100",
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Three mathematical models of SARS-CoV-2 viral dynamics were developed and fitted to the data: a baseline model, an 'eclipse phase' model, and an 'innate immune response' model. All three models produced similar results with comparable AIC and BIC values, though the baseline model showed a longer tail due to lower estimated death rate of infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C100-C109 describe the modeling approach and model comparison. The claims are supported by Figure 1, Supplementary files 1-2, and citations to prior modeling work. The model selection is justified given uncertainty about biological mechanisms, and the sensitivity analysis across models strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C55",
+      "C110",
+      "C112",
+      "C114",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "Under the one-size-fits-all approach with 10 days isolation since symptom onset, the risk of releasing infectious patients was 0.9% (95%CI: 0.6-1.2) with 6.8 days (95% CI: 1-8) of prolonged isolation at the 10^5 copies/mL threshold. The risk varied from 0-6.6% depending on the infectiousness threshold (10^4.5 to 10^5.5 copies/mL), with prolonged isolation ranging from 4.8-8.3 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C37-C40, C55 present the main findings for the one-size-fits-all approach and are supported by modeling results shown in Figure 2. The methodology (C110, C112, C114, C117-C120, C122) is clearly described. Confidence intervals are provided, though the small sample size (30 patients) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C56",
+      "C111",
+      "C113",
+      "C123"
+    ],
+    "result": "Under the personalized approach using PCR testing, two consecutive negative tests at 1-day intervals yielded 8.1% (95%CI: 7.2-9.0) risk of premature release with only 1.2 days (95% CI: -1 to 3) prolonged isolation at the 10^5 copies/mL threshold. Three consecutive daily negative tests minimized prolonged isolation (2.3 days, 95% CI: 0-5) while maintaining <5% risk. The personalized approach was robust to infectiousness threshold values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41-C45, C56 present the main findings for the personalized approach, supported by Figure 3. The methodology (C111, C113, C123) is clearly described. The finding that the personalized approach is less sensitive to threshold values (C45) is logical given direct viral load measurement, though this remains model-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Comparison across approaches and models showed that the personalized approach consistently yielded shorter prolonged isolation than the one-size-fits-all approach and was not influenced by infectiousness threshold values. The one-size-fits-all approach was sensitive to viral load variability, while the personalized approach was sensitive to viral load decay speed. Model choice affected prolonged isolation duration but not the relative advantage of the personalized approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 present the comparative analysis between approaches and across models, supported by Figures 4-5. The sensitivity analysis across three models (C49-C52) strengthens the conclusions. The mechanistic explanations for differential sensitivity (C53-C54) are logical inferences from the model structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study had several data limitations: small sample size (30 patients), lack of coverage across all age groups, inclusion of only symptomatic hospitalized patients, and data from early pandemic (likely historical SARS-CoV-2 lineages). These limitations prevented testing whether isolation duration is influenced by disease severity and may mean actual isolation durations could be shorter than predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 transparently acknowledge important study limitations. These are valid concerns that appropriately qualify the generalizability of the findings. The authors correctly note that hospitalized patients may have longer viral shedding than non-hospitalized patients (C77), and that results may not apply to newer variants (C78).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Additional methodological limitations include: lack of explicit modeling of symptom course, uncertainty in infectiousness threshold values (10^4.5-10^5.5 copies/mL based on epidemiological data vs. 10^6 copies/mL from culturability studies), arbitrary risk thresholds (1% or 5%), use of qualitative rather than quantitative PCR results, and assumptions about testing timing. The personalized approach's advantage depends on the acceptable risk level and practical constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C90 provide additional important limitations and caveats. The uncertainty in infectiousness thresholds (C80-C83) is a fundamental challenge acknowledged by the authors. The discussion of arbitrary risk thresholds (C84-C86) and potential improvements (C87-C90) appropriately contextualizes the findings and suggests future research directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Two mainstream isolation guidelines exist: the one-size-fits-all approach (fixed duration, e.g., CDC's 10 days since symptom onset) and the personalized approach (based on repeated PCR testing until viral load drops below threshold). The one-size-fits-all approach does not account for individual variability in viral load, which is associated with disease severity and symptom persistence. International guidelines vary (WHO: 10 days; ECDC: 10-20 days depending on severity; EU member states: 7-14 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C24, C69-C72 provide background on existing isolation guidelines and their limitations. These claims are well-supported by citations to official guidance documents (CDC, WHO, ECDC) and prior research on viral load variability. This contextualizes the study's motivation and relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C96"
+    ],
+    "result": "COVID-19 reached 80 million cases by end of 2020. NPIs including patient isolation were used extensively and will remain important until vaccination reaches sufficient coverage. Longer isolation decreases transmission risk but increases mental/physical health burden and economic costs. Isolation practices vary by country (home-based in Western countries vs. dedicated facilities in China).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 and C96 provide epidemiological and public health context supported by appropriate citations. These establish the importance of the research question and the trade-offs involved in isolation policies. The claims are factually accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The personalized approach directly measures viral load via PCR, while the one-size-fits-all approach relies only on time since symptom onset and ignores substantial interindividual viral load variation. The personalized approach can be optimized by adjusting testing schedules but is more costly and logistically challenging, especially in Western countries with home-based isolation. Alternative tests (RT-LAMP, rapid antigen) may help overcome logistic challenges, and saliva-based PCR testing shows promise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C68 discuss practical implementation considerations and are supported by appropriate citations. The discussion of logistic challenges (C61-C62) and potential solutions (C63-C68) is realistic and well-referenced. However, the speculation about future developments (C63) should be validated by future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Isolation guidelines require ongoing updates based on new epidemiological and clinical knowledge, patient characteristics, and health sector capabilities. Guidelines have been updated multiple times during the pandemic and may require further adjustments for new variants. The modeling framework is flexible and could be adapted for other applications including immune response simulation, antiviral therapy effects, and other infectious diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 discuss the need for ongoing guideline updates and potential future applications of the modeling framework. These are reasonable inferences supported by citations documenting guideline evolution (C92) and variant emergence (C93, C95). The claims about framework flexibility (C94-C95) are speculative but plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C115",
+      "C116"
+    ],
+    "result": "The study used de-identified secondary data requiring no ethics approval. The infectiousness threshold of 10^5.0 copies/mL was based on epidemiological studies showing infectiousness nearly disappears 8 days after symptom onset, when the 97.5 percentile of viral load is 10^5.0 copies/mL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C115-C116 describe ethical considerations and the rationale for the infectiousness threshold. The threshold choice is supported by citations to epidemiological contact tracing studies (C115) and viral load data (C116), though uncertainty remains as acknowledged elsewhere in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

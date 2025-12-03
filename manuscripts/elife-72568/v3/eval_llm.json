@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C68"
+    ],
+    "result": "I. scapularis possesses an adiponectin receptor-like protein (ISARL) with 71% similarity to mammalian adiponectin receptors and 87% similarity to insect homologs, containing seven conserved transmembrane domains, but lacks adiponectin itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C12, and C68 are well-supported by sequence analysis, database searches, and structural predictions (Figures 1-supplement 1 and 2). The absence of adiponectin in tick genomes is documented through negative BLAST results, and ISARL's structural features match known adiponectin receptors. The characterization is thorough with appropriate bioinformatic methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C73",
+      "C4",
+      "C15",
+      "C74",
+      "C101"
+    ],
+    "result": "ISARL expression is significantly upregulated (p<0.0001) in tick guts after B. burgdorferi infection, and RNAi silencing of ISARL significantly reduces B. burgdorferi burden (p<0.001) without affecting tick feeding behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C13, C15, C73-C74, and C101 are supported by qPCR data (Figure 1A, 1D) with appropriate statistical tests and controls. The RNAi knockdown efficiency is validated (Figure 1B), and engorgement weights confirm no feeding defects (Figure 1C). The correlation between ISARL expression and B. burgdorferi burden is convincingly demonstrated with adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Silencing ISARL does not affect B. burgdorferi transmission from infected ticks to mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by qPCR data (Figure 1E-F) showing comparable spirochete burdens in mouse tissues at multiple timepoints (7, 14, 21 days) after feeding by ISARL-silenced vs. control ticks. The experimental design appropriately tests transmission with adequate controls and temporal sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C114"
+    ],
+    "result": "RNA-seq analysis reveals that ISARL regulates multiple metabolic pathways in ticks, with 18 genes differentially expressed after feeding on uninfected mice and 35 genes after feeding on B. burgdorferi-infected mice, particularly affecting fatty acid, phospholipid, and purine metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 and C114 are supported by RNA-seq data (Figure 2A-E) with appropriate bioinformatic analyses (GO/KEGG). The finding that no genes overlap between uninfected and infected conditions (except ISARL) is interesting but the interpretation (C19) requires caution as it could reflect statistical power issues. qPCR validation of selected genes (Figure 2-supplement 1-2) strengthens confidence, though only 17/18 genes validated successfully.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C75",
+      "C77"
+    ],
+    "result": "ISARL positively regulates phosphatidylserine synthase I (PTDSS1), which is upregulated by B. burgdorferi infection (p<0.05), and silencing PTDSS1 significantly reduces B. burgdorferi burden (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C75, and C77 are well-supported by multiple lines of evidence: RNA-seq showing PTDSS1 downregulation when ISARL is silenced, qPCR validation (Figure 2F, 2I), western blot confirmation (Figure 2G), and functional RNAi studies (Figure 2H). The convergence of transcriptomic, protein-level, and functional data provides strong support for this regulatory relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C78",
+      "C115"
+    ],
+    "result": "ISARL-mediated phospholipid metabolism through PTDSS1 is critical for B. burgdorferi colonization, as evidenced by the phospholipid synthesis pathway (PS\u2192PE\u2192PC) and the fact that B. burgdorferi requires PC for its membrane but lacks phospholipid metabolic enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28-C34, C78, and C115 integrate experimental data with established knowledge about phospholipid metabolism and B. burgdorferi biology. The pathway diagram (Figure 2J) is supported by citations (C28-C29). The finding that silencing PSD also reduces B. burgdorferi burden (C32-C33) provides independent validation of the phospholipid pathway's importance. However, the mechanistic link between tick phospholipid production and spirochete survival could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Silencing 3-hydroxyacyl-CoA dehydrogenase (3HADH), involved in fatty acid metabolism, also decreases B. burgdorferi burden, suggesting the spirochete requires tick metabolic support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by RNAi data (Figure 2-supplement 3D) showing reduced B. burgdorferi burden when 3HADH is silenced. This extends the metabolic dependency beyond phospholipids to fatty acid metabolism, though the authors appropriately note this was not pursued further as 3HADH is not significantly regulated by ISARL.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C38",
+      "C39",
+      "C47"
+    ],
+    "result": "Mammalian adiponectin can activate ISARL signaling in ticks, as demonstrated by downregulation of glucose-6-phosphatase genes (G6pc1, G6pc2) in response to adiponectin injection and when ticks feed on wild-type vs. adiponectin-knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C38-C39, and C47 are supported by RNA-seq data from adiponectin-injected ticks (Figure 3A) and qPCR from ticks fed on WT vs. Adipoq-/- mice (Figure 3C, 3E). The consistency between injection and feeding experiments strengthens the conclusion. The pathway is biologically plausible given known adiponectin receptor signaling in mammals (C36-C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48"
+    ],
+    "result": "Despite mammalian adiponectin regulating tick glucose metabolism genes, it has no effect on B. burgdorferi colonization, as shown by comparable spirochete burdens in ticks feeding on WT vs. Adipoq-/- mice and no effect of silencing G6pc1 or G6pc2 on B. burgdorferi levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 and C48 are well-supported by multiple negative results that are internally consistent: no difference in B. burgdorferi burden between WT and Adipoq-/- mice (Figure 3G), no effect of G6pc1/G6pc2 silencing on B. burgdorferi (Figure 3-supplement 1), and no upregulation of these genes by B. burgdorferi infection. The convergence of these negative results appropriately supports the conclusion that glucose metabolism is not the pathway through which ISARL affects B. burgdorferi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "B. burgdorferi infection does not alter adiponectin concentration in mouse blood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by ELISA data (Figure 3H) showing no change in serum adiponectin levels after B. burgdorferi infection at two different doses and timepoints. This control experiment appropriately rules out infection-induced changes in host adiponectin as a confounding factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C55"
+    ],
+    "result": "Bioinformatic analysis identified two tick proteins with homology to the adiponectin C1Q domain: C1QL3 and a conserved hypothetical protein (which are identical except for a signal peptide), with C1QL3's C1Q domain showing 64% similarity to human adiponectin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C55 are supported by BLAST search results (Figure 4A) and sequence alignment (Figure 4-supplement 1). The identification methodology is appropriate and the sequence similarity is sufficient to warrant functional investigation. The focus on C1QL3 over the hypothetical protein is justified by the presence of a signal peptide.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C85"
+    ],
+    "result": "C1QL3 expression is significantly upregulated (p<0.01) in tick guts after B. burgdorferi infection, and silencing C1QL3 significantly reduces B. burgdorferi burden (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C85 are supported by qPCR data (Figure 4B-C) showing both upregulation by infection and functional importance via RNAi. The parallel between C1QL3 and ISARL phenotypes (both reduce B. burgdorferi when silenced) supports their functional relationship, though this alone doesn't prove direct interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "C1QL3 physically interacts with ISARL, as demonstrated by multiple binding assays including cell surface binding, pull-down assays, and co-immunolocalization in both heterologous (HEK293T) and homologous (tick ISE6) cell systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C57-C61 are strongly supported by convergent evidence from multiple experimental approaches (Figure 4D-J): immunofluorescence showing C1QL3 binding to ISARL-expressing cells, pull-down assays detecting C1QL3 only in ISARL-expressing cell pellets, co-immunolocalization, and validation in tick cells. The use of both heterologous and homologous systems strengthens confidence in the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C86",
+      "C103",
+      "C116"
+    ],
+    "result": "B. burgdorferi facilitates C1QL3-ISARL interaction, as evidenced by C1QL3 silencing preventing B. burgdorferi-induced upregulation of both ISARL and PTDSS1, positioning C1QL3 upstream of ISARL in the signaling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C54, C62-C65, C86, C103, and C116 are supported by epistasis experiments (Figure 4L-N) showing that C1QL3 silencing blocks B. burgdorferi-induced upregulation of ISARL and PTDSS1. This genetic evidence places C1QL3 upstream of ISARL. However, the claim that B. burgdorferi 'facilitates' the interaction is somewhat indirect\u2014the data show B. burgdorferi upregulates C1QL3, which then activates ISARL, but direct measurement of C1QL3-ISARL binding in the presence/absence of B. burgdorferi would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "C1QL3 in ticks is primarily involved in metabolism rather than complement activation, as inferred from its role in supporting B. burgdorferi colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is speculative. While the data show C1QL3 silencing reduces B. burgdorferi burden (suggesting it supports rather than defends against the pathogen), this doesn't definitively rule out complement-related functions. The authors acknowledge this is a proposal ('We propose that...'), but no direct experiments test complement activity. The inference is reasonable but requires additional functional characterization of C1QL3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C117"
+    ],
+    "result": "B. burgdorferi co-opts the ISARL-mediated metabolic pathway to facilitate tick colonization by upregulating C1QL3, which activates ISARL signaling and downstream phospholipid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C104, and C117 represent the manuscript's central conclusion, integrating multiple lines of evidence: B. burgdorferi upregulates both ISARL and C1QL3, these proteins interact, ISARL regulates PTDSS1-mediated phospholipid metabolism, and silencing any component reduces B. burgdorferi burden. The model is well-supported by the data, though the precise mechanism by which B. burgdorferi upregulates C1QL3 remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Background knowledge and literature context establishing adiponectin receptor biology across species, B. burgdorferi-tick interactions, and the public health significance of Lyme disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C69-C72, C79-C80, C83-C84, C88-C113 are appropriately cited background information from the literature. These claims provide necessary context but are not novel findings of this study. The citations appear accurate and relevant, though I cannot verify all cited work without accessing the original papers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C76"
+    ],
+    "result": "Adiponectin receptor signaling regulates metabolism across species, including suppression of gluconeogenesis genes in mammals and regulation of phospholipid metabolism genes in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C76 are cited from the literature (Kadowaki et al., 2006; Mattiazzi U\u0161aj et al., 2015) and provide important context for interpreting the tick findings. The parallel between yeast adiponectin receptor regulation of phospholipid metabolism and the tick ISARL-PTDSS1 relationship is particularly relevant and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "C1Q proteins can activate pathways through adiponectin receptors, as demonstrated in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is cited from Zheng et al., 2011 and provides important precedent for C1Q domain-containing proteins activating adiponectin receptors. This supports the biological plausibility of C1QL3 activating ISARL, though the specific citation should be verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "These findings are crucial for understanding B. burgdorferi's life cycle in ticks and may be applicable to other arthropod vectors and pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 are speculative regarding broader applicability. While the findings are indeed important for understanding B. burgdorferi-tick interactions (C118 is reasonable), the claim about applicability to other arthropods and pathogens (C119) is premature without comparative studies. This is appropriate as forward-looking discussion but not a supported result.",
+    "result_type": "MINOR"
+  }
+]

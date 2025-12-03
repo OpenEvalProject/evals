@@ -1,0 +1,1504 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The complete dataset includes expression information for 21,750 genes from 23 species.",
+    "claim_type": "EXPLICIT",
+    "source": "The complete dataset includes expression information for 21,750 genes from 23 species (Figure 2\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of genes and species in the dataset with reference to source data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Principal Component Analysis based on gene expression levels in transcripts per million (TPMs) generally grouped species randomly, consistent with noise in gene expression data overwhelming phylogenetic signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Principal Component Analysis (PCA) based on gene expression levels in transcripts per million (TPMs), using a variant of PCA that extends PCA to binary data, generally grouped species randomly (Figure 2A), consistent with noise in gene expression data overwhelming phylogenetic signal.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript presents PCA results showing random grouping and interprets this as noise overwhelming signal, with reference to Figure 2A.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Genes with TPM \u22652.0 were coded as expressed (state = 1), genes with TPM <2.0 were coded as not expressed (state = 0), and genes without data in specific species coded as missing (?).",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we transformed quantitative gene expression values in transcripts per million (TPM) into discrete character states \u2013 Genes with TPM \u22652.0 were coded as expressed (state = 1), genes with TPM <2.0 were coded as not expressed (state = 0), and genes without data in specific species coded as missing (?) (Marini\u0107 et al., 2021; Mika et al., 2021a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the binary encoding method with citation support.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "PCA of the binary encoded endometrial transcriptome dataset grouped species by phylogenetic relatedness, indicating significant noise reduction in the binary encoded dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to PCA based on TPM values, PCA of the binary encoded endometrial transcriptome dataset grouped species by phylogenetic relatedness (Figure 2B), indicating significant noise reduction in the binary encoded dataset.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript presents PCA results on binary encoded data showing phylogenetic grouping, with reference to Figure 2B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The best-fit model of character evolution was a general time reversible model for binary data (GTR2) with character state frequencies optimized by maximum-likelihood (FO) and rate heterogeneity across sites accommodated with the FreeRate model that had three rate categories (R3).",
+    "claim_type": "EXPLICIT",
+    "source": "The best-fit model of character evolution was a general time reversible model for binary data (GTR2) with character state frequencies optimized by maximum-likelihood (FO) and rate heterogeneity across sites accommodated with the FreeRate model that had three rate categories (R3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the best-fit model determined by IQ-TREE analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The ML phylogeny generally followed taxonomic relationships, but four particularly discordant relationships within therian mammals were inferred with high support.",
+    "claim_type": "EXPLICIT",
+    "source": "The ML phylogeny (Figure 3A and ) generally followed taxonomic relationships (Figure 3B); however, four particularly discordant relationships within therian mammals were inferred with high support",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the phylogeny results with reference to figures showing both concordance and discordance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Opossum and wallaby were placed as sister-species within the Boreoeutheria rather than grouping marsupials into a monophyletic sister-clade to the eutherians.",
+    "claim_type": "EXPLICIT",
+    "source": "(1) Rather than grouping marsupials into a monophyletic sister-clade to the eutherians, opossum and wallaby were placed as sister-species within the Boreoeutheria",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes this discordant phylogenetic relationship.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Armadillo groups within the Euarchontoglires rather than as sister to all other eutherians.",
+    "claim_type": "EXPLICIT",
+    "source": "(2) Armadillo groups within the Euarchontoglires rather than as sister to all other eutherians",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes this discordant phylogenetic relationship.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Bat groups within the Euarchontoglires rather than within Laurasiatheria.",
+    "claim_type": "EXPLICIT",
+    "source": "(3) Bat groups within the Euarchontoglires rather than within Laurasiatheria",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes this discordant phylogenetic relationship.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Dog groups within the Euarchontoglires rather than with Laurasiatheria.",
+    "claim_type": "EXPLICIT",
+    "source": "(4) Dog groups within the Euarchontoglires rather than with Laurasiatheria (Figure 3A/B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes this discordant phylogenetic relationship.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Multiple non-parametric topology tests rejected alternative 'corrected' trees in favor of the ML tree.",
+    "claim_type": "EXPLICIT",
+    "source": "We also used multiple non-parametric topology tests to directly compare the ML tree to alternative trees with the correct phylogenetic placement of these four discordant lineages, all of which rejected alternative 'corrected' trees in favor of the (Figure 3C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes topology test results with reference to Figure 3C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Species form well-supported clades based on their degree of placental invasiveness rather than phylogenetic relationships.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably while these discordant relationships are incorrect with respect to the species phylogeny, they are correct with respect to placenta-type, that is, species form well-supported clades based on their degree of placental invasiveness",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the phylogenetic discordance as reflecting placenta-type grouping.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Wallaby and opossum, which have epitheliochorial placentas similar to ungulates, form a clade with ungulates.",
+    "claim_type": "EXPLICIT",
+    "source": "Wallaby and opossum, which have epitheliochorial placentas similar to ungulates forms a clade with ungulates",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes this specific clade formation based on placenta type.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Armadillo, which has an invasive placenta, forms a clade with the other species with hemochorial placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "Armadillo, which has an invasive placenta (Carter and Enders, 2004; Chavan and Wagner, 2016), forms a clade with the other species with hemochorial placentas",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes this clade formation with citation support for armadillo placenta type.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Dog, which has an invasive endotheliochorial placenta, forms a clade with Euarchontoglires that have invasive hemochorial placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "dog, which has an invasive endotheliochorial placenta, forms a clade with Euarchontoglires that have invasive hemochorial placentas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes this clade formation based on placenta invasiveness.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "FCM with two to four clusters (K=2\u20134) had a clear biological interpretation.",
+    "claim_type": "EXPLICIT",
+    "source": "FCM with two to four clusters (K=2\u20134) had a clear biological interpretation (Figure 4)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript states that specific cluster numbers had biological interpretation with reference to Figure 4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "K=2 clustered eutherians and non-eutherians.",
+    "claim_type": "EXPLICIT",
+    "source": "(1) K=2 clustered eutherians and non-eutherians",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the clustering result for K=2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "K=3 clustered most therians with non-invasive (epitheliochorial) placentas, eutherians with invasive (endotheliochorial or hemochorial) placentas, platypus and sauropsids.",
+    "claim_type": "EXPLICIT",
+    "source": "(2) K=3 clustered most therians with non-invasive (epitheliochorial) placentas, eutherians with invasive (endotheliochorial or hemochorial) placentas, platypus and sauropsids (i.e. viviparous and oviparous lizards, and birds)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the clustering result for K=3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "K=4 clustered eutherians with invasive placentas, eutherians with epitheliochorial placentas, opossum/wallaby, and sauropsids.",
+    "claim_type": "EXPLICIT",
+    "source": "(3) K=4 clustered eutherians with invasive placentas, eutherians with epitheliochorial placentas, opossum/wallaby, and sauropsids.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the clustering result for K=4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "FCM clusters with K=5 and K=6 were similar to K=4, but divided Eutherians with hemochorial placentas into two clusters, and clustered dog, dunnart, and the viviparous skink Chalcides ocellatus.",
+    "claim_type": "EXPLICIT",
+    "source": "FCM clusters with K=5 and K=6 were similar to K=4, but divided Eutherians with hemochorial placentas into two clusters, and clustered dog, dunnart, and the viviparous skink Chalcides ocellatus (Figure 4)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes clustering results for K=5 and K=6 with reference to Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Beyond K=6 clusters had no clear biological interpretation.",
+    "claim_type": "EXPLICIT",
+    "source": "Beyond K=6 clusters had no clear biological interpretation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states that higher cluster numbers lacked biological interpretation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Ancestral transcriptome reconstructions generally clustered with extant species having similar parity modes and degrees of placenta invasiveness.",
+    "claim_type": "EXPLICIT",
+    "source": "Ancestral transcriptome reconstructions generally clustered with extant species having similar parity modes and degrees of placenta invasiveness (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the clustering pattern of ancestral reconstructions with reference to Figure 4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "FCM with K=2 grouped extant eutherians and their ancestral lineages as well as extant non-eutherians and their ancestral lineages.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, FCM with K=2 grouped extant eutherians and their ancestral lineages as well as extant non-eutherians and their ancestral lineages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes specific clustering results for ancestral lineages.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "FCM with K=4 grouped extant eutherians with invasive placentas and their ancestral lineages with extant therians with non-invasive placentas and their ancestral lineages.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, FCM with K=4 grouped extant eutherians with invasive placentas and their ancestral lineages with extant therians with non-invasive placentas and their ancestral lineages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes specific clustering results for ancestral lineages.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "FCM with K=3\u20135 clustered the ancestral eutherian (AncEutheria) transcriptome with extant species that have invasive hemochorial placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "FCM with K=3\u20135 clustered the ancestral eutherian (AncEutheria) transcriptome with extant species that have invasive hemochorial placentas",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes clustering of ancestral eutherian transcriptome.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "FCM with K=3\u20135 clustered the ancestral therian (AncTheria) and mammalian (AncMammalia) transcriptomes with extant mammals that have non-invasive epitheliochorial placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "FCM with K=3\u20135 clustered the ancestral eutherian (AncEutheria) transcriptome with extant species that have invasive hemochorial placentas and clustered the ancestral therian (AncTheria) and mammalian (AncMammalia) transcriptomes with extant mammals that have non-invasive epitheliochorial placentas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes clustering of ancestral therian and mammalian transcriptomes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "FCM clustering of extant and ancestral reconstructions of endometrial transcriptomes can predict ancestral placenta invasiveness.",
+    "claim_type": "EXPLICIT",
+    "source": "These data suggest that FCM clustering of extant and ancestral reconstructions of endometrial transcriptomes can predict ancestral placenta invasiveness",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the clustering results as predictive of ancestral placenta invasiveness.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "An epitheliochorial placenta evolved early in the development of mammalian pregnancy.",
+    "claim_type": "EXPLICIT",
+    "source": "implying that an epitheliochorial placenta evolved early in the development of mammalian pregnancy",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript infers this evolutionary transition from clustering results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "A hemochorial placenta is ancestral for eutherians.",
+    "claim_type": "EXPLICIT",
+    "source": "and that a hemochorial placenta is ancestral for eutherians.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript infers this ancestral state from clustering results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Both dog and dunnart have endotheliochorial placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, both dog and dunnart have endotheliochorial placentas",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states the placenta types of these species.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The Chalcides maternal-fetal interface has been described as either endotheliochorial or epitheliochorial with extensive vascularization and interdigitating folds of hypertrophied uterine and chorioallantoic tissue.",
+    "claim_type": "EXPLICIT",
+    "source": "whereas the Chalcides maternal-fetal interface has been described as either endotheliochorial or epitheliochorial with extensive vascularization and interdigitating folds of hypertrophied uterine and chorioallantoic tissue (Blackburn, 1993; Blackburn and Callard, 1997; Corso et al., 2000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the Chalcides maternal-fetal interface with citation support.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Species with endotheliochorial placentas have a gene expression profile that is intermediate between epitheliochorial or hemochorial placentas, yet is also distinct.",
+    "claim_type": "EXPLICIT",
+    "source": "These data suggest that species with endotheliochorial placentas have a gene expression profile that is intermediate between epitheliochorial or hemochorial placentas, yet is also distinct",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets clustering results to infer this gene expression pattern.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Gene expression at the Chalcides maternal-fetal interface are converging on a therian-like endotheliochorial pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "and that gene expression at the Chalcides maternal-fetal interface are converging on a therian-like endotheliochorial pattern.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript infers convergent evolution from clustering results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "RORA is an orphan nuclear hormone receptor that regulates the development and function of type 2 and type 3 innate lymphoid cells (ILC2 and ILC3).",
+    "claim_type": "EXPLICIT",
+    "source": "Among the genes with discordant species- and gene-expression phylogenies is RAR-related orphan receptor alpha (RORA), an orphan nuclear hormone receptor that regulates the development and function of type 2 and type 3 innate lymphoid cells (ILC2 and ILC3), which negatively regulates the immune system in local microenvironments especially during inflammation (Haim-Vilmovsky et al., 2019)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes RORA function with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "RORA regulates the establishment of tolerance to intestinal microbiota.",
+    "claim_type": "EXPLICIT",
+    "source": "the establishment of tolerance to intestinal microbiota (Lyu et al., 2022)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes RORA function with citation support.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "RORA regulates inflammatory responses and vascular remodeling during placentation and pregnancy.",
+    "claim_type": "EXPLICIT",
+    "source": "and the regulation of inflammatory responses and vascular remodeling during placentation and pregnancy (Balmas et al., 2018; Mendes et al., 2020; Miller et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes RORA function with citation support.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "RORA independently lost endometrial expression at least four times, each loss coincident with the independent evolution of non-invasive epitheliochorial placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, RORA independently lost endometrial expression at least four times, each loss coincident with the independent evolution of non-invasive epitheliochorial placentas (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes convergent loss of RORA expression with reference to Figure 5A.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "RORA is restricted to immune cells in the human first trimester decidua.",
+    "claim_type": "EXPLICIT",
+    "source": "The restricted expression of RORA to immune cells in the human first trimester decidua (Vento-Tormo et al., 2018; Figure 4B)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes RORA expression pattern with citation and figure reference.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The repeated loss of RORA expression reflects changes in the composition of immune cells at the maternal-fetal interface in species with epitheliochorial placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "suggests that the repeated loss of RORA expression reflects changes in the composition of immune cells at the maternal-fetal interface in species with epitheliochorial placentas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript infers this mechanism from RORA expression patterns.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Nearly all species that lacked RORA expression also lacked ILC2/3 cells at the maternal-fetal interface with the exception of armadillo and chicken which had RORA expression but were inferred to lack endometrial ILC2/3 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that CIBERSORT inferred that nearly all species that lacked RORA expression also lacked ILC2/3 cells at the maternal-fetal interface with the exception of armadillo and chicken which had RORA expression but were inferred to lack endometrial ILC2/3 cells",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes CIBERSORT inference results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The viviparous Saiphos population has an epitheliochorial placenta and RORA expression and was inferred to have a population of ILC2/3 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "and the viviparous Saiphos population which has an epitheliochorial placenta and RORA expression and was inferred to have a population of ILC2/3 cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes this exception to the general pattern.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "There is convergent loss of RORA in species with epitheliochorial placentas which in many species correlates with the convergent loss of ILC2/3 cells at the maternal-fetal interface.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we conclude that there is convergent loss of RORA in species with epitheliochorial placentas which in many species correlates with the convergent loss of ILC2/3 cells at the maternal-fetal interface.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript concludes convergent loss based on data analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Platypus and echidna (monotremes) are oviparous (egg-laying) but retain the egg in the glandular portion of uterus for about two weeks.",
+    "claim_type": "EXPLICIT",
+    "source": "The platypus and echidna (monotremes), for example, are oviparous (egg-laying) but retain the egg in the glandular portion of uterus for about two weeks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes monotreme reproductive biology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "During egg retention, the developing embryo is nourished by uterine secretions (matrotrophy) delivered through a simple yolk sac placenta.",
+    "claim_type": "EXPLICIT",
+    "source": "During this period, the developing embryo is nourished by uterine secretions (matrotrophy) delivered through a simple yolk sac placenta (Hughes and Hall, 1998; Renfree and Shaw, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes monotreme embryonic nutrition with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Viviparity (live-birth) evolved in the stem-lineage of therian mammals.",
+    "claim_type": "EXPLICIT",
+    "source": "Viviparity (live-birth) evolved in the stem-lineage of therian mammals",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states this evolutionary transition.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Marsupials and eutherians have very different reproductive strategies, particularly in the ontogenetic origins of the definitive placenta and the arrangement of the maternal-fetal interface.",
+    "claim_type": "EXPLICIT",
+    "source": "but marsupials and eutherians have very different reproductive strategies, particularly in the ontogenetic origins of the definitive placenta and the arrangement of the maternal-fetal interface (Freyer and Renfree, 2009; Renfree and Shaw, 2013; Renfree, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes differences in reproductive strategies with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "In most marsupials, the embryonic portion of the placenta is derived from the yolk sac, which may come into direct contact with but does not invade the maternal endometrium.",
+    "claim_type": "EXPLICIT",
+    "source": "In most marsupials, the embryonic portion of the placenta is derived from the yolk sac, which may come into direct contact with but does not invade the maternal endometrium.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes marsupial placenta characteristics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The yolk sac has essential functions during early pregnancy in eutherians.",
+    "claim_type": "EXPLICIT",
+    "source": "While the yolk sac has essential functions during early pregnancy in eutherians",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states the role of yolk sac in eutherians.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The definitive placenta in eutherians is derived from chorion and allantois (chorioallantois) and varies in its degree of endometrial invasion.",
+    "claim_type": "EXPLICIT",
+    "source": "the definitive placenta is derived from chorion and allantois (chorioallantois) and varies in its degree of endometrial invasion (Swanson and Skinner, 2018; Figure 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes eutherian placenta characteristics with citation and figure reference.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Matrotrophy and a yolk-sac derived placenta were present in the mammalian stem-lineage and transitioned to a chorioallantoic placenta in eutherians.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, matrotrophy and a yolk-sac derived placenta were present in the mammalian stem-lineage and transitioned to a chorioallantoic placenta in eutherians.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript infers this evolutionary transition.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Studies exploring the evolution of pregnancy have relied on comparing morphological differences between extant mammals to reconstruct the steps in the origins of pregnancy.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, studies exploring the evolution of pregnancy have relied on comparing morphological differences between extant mammals to reconstruct the steps in the origins of pregnancy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes previous approaches to studying pregnancy evolution.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Comparative analyses have used multiple methods to reconstruct the arrangement of the mammalian maternal-fetal interface and reached contradictory conclusions about the degree of placental invasiveness in the eutherian ancestor, a debate which has persisted since at least 1876.",
+    "claim_type": "EXPLICIT",
+    "source": "These comparative analyses have used multiple methods to reconstruct the arrangement of the mammalian maternal-fetal interface and reached contradictory conclusions about the degree of placental invasiveness in the eutherian ancestor, a debate which has persisted since at least 1876 (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the history of debate with reference to Table 1.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The last common ancestor of eutherian mammals had an invasive hemochorial placenta.",
+    "claim_type": "EXPLICIT",
+    "source": "We found strong evidence that the last common ancestor of eutherian mammals had an invasive hemochorial placenta",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states this as a major finding from ancestral transcriptome reconstruction.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "There is convergence in gene expression profiles during the independent evolution of non-invasive epitheliochorial placentas in marsupials and some eutherian lineages.",
+    "claim_type": "EXPLICIT",
+    "source": "as well as convergence in gene expression profiles during the independent evolution of non-invasive epitheliochorial placentas in marsupials and some eutherian lineages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states this as a major finding.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The degree of placental invasion can be inferred from endometrial gene expression profiles.",
+    "claim_type": "EXPLICIT",
+    "source": "These data indicate that the degree of placental invasion can be inferred from endometrial gene expression profiles",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript concludes this from the study results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Placental invasiveness is regulated by gene expression profiles in the maternal endometrium rather than the fetal portion of the placenta.",
+    "claim_type": "EXPLICIT",
+    "source": "and suggest that placental invasiveness is regulated by gene expression profiles in the maternal endometrium rather than the fetal portion of the placenta.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript suggests this mechanism based on study results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Transforming gene expression count data into binary categories likely loses information about evolutionarily relevant variation in expression levels.",
+    "claim_type": "EXPLICIT",
+    "source": "While transforming gene expression count data into binary categories likely loses information about evolutionarily relevant variation in expression levels",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges this limitation of the binary encoding approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "It may not be possible to infer meaningful gene expression levels from bulk RNA-Seq.",
+    "claim_type": "EXPLICIT",
+    "source": "it may not be possible to infer meaningful gene expression levels from bulk RNA-Seq.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript discusses limitations of bulk RNA-Seq.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Variation in transcript abundance between samples can result from various sources of experimental noise such as technical variation in library preparation, sequencing, or batch effects.",
+    "claim_type": "EXPLICIT",
+    "source": "For example rather than evolutionary differences between individuals or species, variation in transcript abundance between samples can result from various sources of experimental noise such as technical variation in library preparation, sequencing, or batch effects (Gilad and Mizrahi-Man, 2015; Tung et al., 2017)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes sources of noise in gene expression data with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Variation in transcript abundance can result from variation in cell-type composition of a tissue.",
+    "claim_type": "EXPLICIT",
+    "source": "variation in cell-type composition of a tissue (Price et al., 2022)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a source of variation with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Variation in transcript abundance can result from sampling different timepoints in development or only a few individuals that do not capture the variance properties of gene expression levels within a population or species.",
+    "claim_type": "EXPLICIT",
+    "source": "sampling different timepoints in development or only a few individuals that do not capture the variance properties of gene expression levels within a population or species (Pal et al., 2020; Thompson et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes sources of variation with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Binary encoding preserves functional signal in gene expression data that is otherwise masked by variation in gene expression levels.",
+    "claim_type": "EXPLICIT",
+    "source": "Our binary encoded endometrial gene expression dataset, for example, cluster species with similar placenta types and parity mode (Figure 2B) indicating binary encoding preserves functional signal in gene expression data that is otherwise masked by variation in gene expression levels (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript concludes this from comparing PCA results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Parallel amino acid changes in prestin (SLC26A5) have occurred in different lineages of echolocating mammals, including multiple lineages bats and whales, leading a strongly monophyletic clades in gene trees that do not reflect taxonomic relationships.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, parallel amino acid changes in prestin (SLC26A5), a motor protein expressed in outer hair cells in the cochlea that essential for hearing, have occurred in different lineages of echolocating mammals, including multiple lineages bats and whales, leading a strongly monophyletic clades in gene trees that do not reflect taxonomic relationships (Li et al., 2008; Li et al., 2010; Liu et al., 2010; Teeling, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes an example of convergent evolution with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Gene-species tree discordance is associated with coadaptation of amino acid substitutions in Na+K+\u2013ATPase of frogs that prey on toxic toads.",
+    "claim_type": "EXPLICIT",
+    "source": "Gene-species tree discordance is also associated coadaptation of amino acid substitutions in Na+K+\u2013ATPase of frogs that prey on toxic toads (Mohammadi et al., 2021)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes an example with citation support.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Gene-species tree discordance is associated with the evolution of C4 phosphoenolpyruvate carboxykinases (PCK) in grasses.",
+    "claim_type": "EXPLICIT",
+    "source": "the evolution of C4 phosphoenolpyruvate carboxykinases (PCK) in grasses (Christin et al., 2009)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes an example with citation support.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Gene-species tree discordance occurs between snake and agamid lizard mitochondrial genomes.",
+    "claim_type": "EXPLICIT",
+    "source": "and between snake and agamid lizard mitochondrial genomes (Castoe et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes an example with citation support.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Phylogenetic discordance can be a signal of convergent evolution, rather than just a sign of biased phylogenetic inference.",
+    "claim_type": "EXPLICIT",
+    "source": "These examples highlight how phylogenetic discordance can be a signal of convergent evolution, rather than just a sign of biased phylogenetic inference that can arise from processes like long branch attraction (Bergsten, 2005; Felsenstein, 1978)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets phylogenetic discordance with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The eutherian and marsupial placenta is derived from different extra-embryonic tissues \u2013 the chorion and allantois in eutherians and the yolk-sac in marsupials.",
+    "claim_type": "EXPLICIT",
+    "source": "This transcriptome-species tree discordance is particularly striking for opossum and wallaby, which are deeply nested within eutherians with epitheliochorial placentas based on uterine transcriptome data, because the eutherian and marsupial placenta is derived from different extra-embryonic tissues \u2013 the chorion and allantois in eutherians and the yolk-sac in marsupials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the ontogenetic origins of placentas.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "There is significant convergence in endometrial gene expression profiles between eutherians with chorioallantois-derived epitheliochorial placentas and marsupials with yolk-sac epitheliochorial placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, there must be significant convergence in endometrial gene expression profiles between eutherians with chorioallantois-derived epitheliochorial placentas and marsupials with yolk-sac epitheliochorial placentas because our transcriptome phylogeny is based on gene expression in the endometrium during pregnancy rather than gene expression in the placenta.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript infers convergence from phylogenetic results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Convergence in gene expression between species with non-invasive epitheliochorial placentas may be related to the expression of genes that limit the ability of the trophoblast to invade into maternal tissues.",
+    "claim_type": "EXPLICIT",
+    "source": "This convergence in gene expression between species with non-invasive epitheliochorial placentas may be related to the expression of genes that limit the ability of the trophoblast to invade into maternal tissues (see below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript speculates on the mechanism of convergence.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "An epitheliochorial-like placenta evolved early in the mammalian stem-lineage, before the loss of the egg-shell in Therians.",
+    "claim_type": "EXPLICIT",
+    "source": "Our ancestral transcriptome reconstructions of gene expression state indicate that an epitheliochorial-like placenta evolved early in the mammalian stem-lineage, before the loss of the egg-shell in Therians",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states this as a conclusion from ancestral transcriptome reconstruction.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The ancestor of Eutherians had a hemochorial placenta, which resolves a longstanding debate about the nature of ancestral mammalian placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "and that the ancestor of Eutherians had a hemochorial placenta, which resolves a longstanding debate about the nature of ancestral mammalian placentas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states this as a conclusion from ancestral transcriptome reconstruction.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Ancestral transcriptome reconstruction can be used to infer the function of ancestral cell, tissue, and organ systems which leave little to no trace in the fossil record.",
+    "claim_type": "EXPLICIT",
+    "source": "These data suggest that ancestral transcriptome reconstruction can be used to infer the function of ancestral cell, tissue, and organ systems which leave little to no trace in the fossil record even if soft tissues might by chance fossilize.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript concludes this from the study results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "RORA expression has been lost multiple times in species with non-invasive epitheliochorial placentas, which is coincident with the inferred absence of ILC2/ILC3 cells from the endometrium during at least one stage in pregnancy.",
+    "claim_type": "EXPLICIT",
+    "source": "Our observation that RORA expression has been lost multiple times in species with non-invasive epitheliochorial placentas, which is coincident with the inferred absence of ILC2/ILC3 cells from the endometrium during at least one stage in pregnancy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the convergent loss pattern.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "There is a mechanistic connection between absence of decidual RORA expression, the absence of decidual ILC2/ILC3 cells, and the loss of placental invasion.",
+    "claim_type": "EXPLICIT",
+    "source": "This result suggests a mechanistic connection between absence of decidual RORA expression, the absence of decidual ILC2/ILC3 cells, and the loss of placental invasion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript suggests this mechanism based on observed correlations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The major decidual ILC produce signaling factors such as GM-CSF, XCL1, MIP1\u03b1, and MIP1\u03b2, whose receptors are expressed by EVT likely regulate placental invasion.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the major decidual ILC produce signaling factors such as GM-CSF, XCL1, MIP1\u03b1, and MIP1\u03b2, whose receptors are expressed by EVT likely regulate placental invasion (Huhn et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes ILC function with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "ILC2 contributes to the maintenance of a type-2 anti-inflammatory immune environment in the uterus during pregnancy.",
+    "claim_type": "EXPLICIT",
+    "source": "ILC2 also contributes to the maintenance of a type-2 anti-inflammatory immune environment in the uterus during pregnancy (Balmas et al., 2018)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes ILC2 function with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "ILC2s are increased in the decidua basalis of women with spontaneous preterm labor compared to those who delivered preterm without labor.",
+    "claim_type": "EXPLICIT",
+    "source": "ILC2s, for example, are increased in the decidua basalis of women with spontaneous preterm labor compared to those who delivered preterm without labor (Mendes et al., 2021; Xu et al., 2018)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes ILC2 changes in preterm labor with citation support.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "ILCs may participate in the chronic inflammatory process that occurs during pregnancy.",
+    "claim_type": "EXPLICIT",
+    "source": "suggesting that ILCs may participate in the chronic inflammatory process that occurs during pregnancy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript suggests this role based on cited evidence.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Loss of placental invasion may be associated with a reduced need to limit local inflammation by ILCs, leading to an evolutionary loss of ILCs in the endometrium during pregnancy.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, loss of placental invasion may be associated with a reduced need to limit local inflammation by ILCs, leading to an evolutionary loss of ILCs in the endometrium during pregnancy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes this evolutionary mechanism.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Endometrial gene expression patterns are correlated with degree of placental invasiveness.",
+    "claim_type": "EXPLICIT",
+    "source": "Our observation that endometrial gene expression patterns are correlated with degree of placental invasiveness might seem surprising",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states this as an observation from the study.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The endometrium directly controls trophoblast invasion rather than acting as a passive substrate into which the trophoblast invades.",
+    "claim_type": "EXPLICIT",
+    "source": "however, rather than acting as a passive substrate into which the trophoblast invades, the endometrium directly controls trophoblast invasion (Cui et al., 2012; Graham and Lala, 1991).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes maternal control of invasion with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The trophoblast of mammals with hemochorial placentas, such as humans and rodents, is only permissive to invasion when the 'window of implantation' is opened by the endometrium.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the trophoblast of mammals with hemochorial placentas, such as humans and rodents, is only permissive to invasion when the 'window of implantation' is opened by the endometrium.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the window of implantation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The trophoblast of mammals with non-invasive endotheliochorial and epitheliochorial placentas, such as cats, dogs, horses, cows, pigs, and sheep cannot invade into the endometrium, but they can invade into ectopic sites.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, while the trophoblast of mammals with non-invasive endotheliochorial and epitheliochorial placentas, such as cats, dogs, horses, cows, pigs, and sheep cannot invade into the endometrium, they can invade into ectopic sites (reviewed in Corpa, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes trophoblast invasive capacity with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The trophoblasts of guinea pig, mouse, rat, and pig invade ectopic sites in experimentally induced ectopic pregnancy.",
+    "claim_type": "EXPLICIT",
+    "source": "The trophoblasts of guinea pig (Loeb, 1914), mouse (Billington, 1965), rat (Jollie, 1961), and pig (Samuel and Perry, 1972) also invade ectopic sites in experimentally induced ectopic pregnancy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes experimental evidence with citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Some marsupial lineages, including dunnart, have evolved invasive placentation.",
+    "claim_type": "EXPLICIT",
+    "source": "While there is no similar ectopic pregnancy data for marsupials, some marsupial lineages, including dunnart, have evolved invasive placentation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states this about marsupial placentation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "There is no invasion of maternal tissues during ectopic pregnancy in viviparous reptiles with epitheliochorial placentation such as Pseudemoia entrecasteauxii.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, there is no invasion of maternal tissues during ectopic pregnancy in viviparous reptiles with epitheliochorial placentation such as Pseudemoia entrecasteauxii (Griffith et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes reptile ectopic pregnancy with citation support.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The invasive ability of trophoblasts most likely either evolved in the stem-lineage of therian mammals or multiple times, including in the stem-lineage of eutherians and some lineages of marsupials.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the invasive ability of trophoblasts most likely either evolved in the stem-lineage of therian mammals or multiple times, including in the stem-lineage of eutherians and some lineages of marsupials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript infers evolutionary scenarios for trophoblast invasiveness.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Ancestral maternal control of placental invasion likely allowed inference of ancestral placental invasiveness from ancestral endometrial transcriptomes.",
+    "claim_type": "EXPLICIT",
+    "source": "Regardless, ancestral maternal control of placental invasion likely allowed us to infer ancestral placental invasiveness from ancestral endometrial transcripomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explains why their approach works based on maternal control.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "There are numerous mechanistic similarities between implantation, placental invasion, and tumor progression to malignancy.",
+    "claim_type": "EXPLICIT",
+    "source": "While Beard's hypothesis is incorrect, at least for cancers not derived from the placenta such as choriocarcinoma, there are numerous mechanistic similarities between implantation, placental invasion, and tumor progression to malignancy (Nordor et al., 2017; Wagner et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes similarities with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The evolution of maternal mechanisms that prevent endometrial invasion through expression gain and loss of genes that restrain and promote, respectively, trophoblast invasion, may be related to resistance to metastasis in eutherian lineages with non-invasive placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "These data suggest that the evolution of maternal mechanisms that prevent endometrial invasion through expression gain and loss of genes that restrain and promote, respectively, trophoblast invasion, may be related to resistance to metastasis in eutherian lineages with non-invasive placentas (Boddy et al., 2020; Afzal et al., 2019; Wagner et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript suggests this connection with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Pleiotropy can lead to correlated patterns of gene expression between the transcriptomes of different tissue and organ systems.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, pleiotropy can lead to correlated patterns of gene expression between the transcriptomes of different tissue and organ systems (Liang et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes pleiotropy with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The evolution of a gene regulatory module that restricts placental invasion into the endometrium can be coopted to restrict implantation and spread of cancer cells into metastatic locations.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the evolution of a gene regulatory module that restricts placental invasion into the endometrium can be coopted to restrict implantation and spread of cancer cells into metastatic locations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes this evolutionary mechanism.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The study lacks pregnant endometrial samples from most mammals, particularly those with endotheliochorial placentas, as well as a diversity of oviparous and viviparous squamates.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, we lack pregnant endometrial samples from most mammals, particularly those with endotheliochorial placentas, as well as a diversity of oviparous and viviparous squamates there are at least 115 origins of viviparity in squamates (Blackburn, 2015; Blackburn and Brandley, 2015; Blackburn and Starck, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges this limitation with citation support.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Inferences from phylogenetic, ancestral reconstruction, and clustering analyses may be biased by small sample sizes and non-random sampling.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, our inferences from phylogenetic, ancestral reconstruction, and clustering analyses may be biased by small sample sizes and non-random sampling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges this limitation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Models of evolution designed for phylogenetic inference and ancestral reconstruction of morphological and molecular data may not be appropriate for gene expression data or binary encoded gene expression data.",
+    "claim_type": "EXPLICIT",
+    "source": "We also assume that models of evolution designed for phylogenetic inference and ancestral reconstruction of morphological and molecular data are appropriate for gene expression data or binary encoded gene expression data, which may affect our results",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges this assumption and potential limitation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The study has not directly accommodated incomplete lineage sorting which can mislead phylogenetic inference.",
+    "claim_type": "EXPLICIT",
+    "source": "for example, we have not directly accommodated incomplete lineage sorting which can mislead phylogenetic inference (Guerrero and Hahn, 2018; Hibbins et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges this limitation with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The underlying assumptions of Fuzzy C-Means clustering may be violated for gene expression and binary encoded gene expression data.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, while Fuzzy C-Means clustering is conceptually similar to topic ('grade of membership') models used in population genetics, its underlying assumptions may be violated for gene expression and binary encoded gene expression data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges this potential limitation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Gene expression ultimately underlies the development, evolution, and function of anatomical systems.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, gene expression ultimately underlies the development, evolution, and function of anatomical systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states this as a general principle.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "By reconstructing the evolution of entire transcriptomes we may be able to infer function of ancestral cell, tissue, and organ systems.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, by reconstructing the evolution of entire transcriptomes we may be able to infer function of ancestral cell, tissue, and organ systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes this as a general approach.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The results resolve several evolutionary transformations during the origins of pregnancy, including the early evolution of an epitheliochorial-like placenta in the mammalian stem-lineage.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results resolve several evolutionary transformations during the origins of pregnancy, including the early evolution of an epitheliochorial-like placenta in the mammalian stem-lineage",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes this as a major conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The results resolve a hemochorial placenta in the ancestor of eutherians.",
+    "claim_type": "EXPLICIT",
+    "source": "a hemochorial placenta in the ancestor of eutherians",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes this as a major conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The results resolve multiple reversions to non-invasive epitheliochorial placentas within some eutherian lineages.",
+    "claim_type": "EXPLICIT",
+    "source": "multiple reversions to non-invasive epitheliochorial placentas within some eutherian lineages",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes this as a major conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The results resolve convergent evolution of gene expression profiles among species with different ontogenetic origins of epitheliochorial placentas.",
+    "claim_type": "EXPLICIT",
+    "source": "convergent evolution of gene expression profiles among species with different ontogenetic origins of epitheliochorial placentas",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes this as a major conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The results resolve maternal control of placental invasiveness.",
+    "claim_type": "EXPLICIT",
+    "source": "and maternal control of placental invasiveness.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes this as a major conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The best-fit GHOST model was GTR2 +FO*H4 (AICc = 215681.71), which accommodated rate heterotachy with 4 categories.",
+    "claim_type": "EXPLICIT",
+    "source": "We found the best-fit GHOST model was GTR2 +FO*H4 (AICc = 215681.71), which accommodated rate heterotachy with 4 categories",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports model comparison results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The GHOST model described the binary encoded gene expression dataset better than the standard GTR2 +FO + R3 model (AICc = 220930.65) indicating that there is extensive variation in the rate of character evolution over time.",
+    "claim_type": "EXPLICIT",
+    "source": "described the binary encoded gene expression dataset better than the standard GTR2 +FO + R3 model (AICc = 220930.65) indicating that there is extensive variation in the rate of character evolution over time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets model comparison results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "While there was a significant likelihood difference between GTR2 +FO + R3 and GTR2 +FO*H4 (AICc difference = 5248.94), the topology of the trees was the same.",
+    "claim_type": "EXPLICIT",
+    "source": "However, while there was a significant likelihood difference between GTR2 +FO + R3 and GTR2 +FO*H4 (AICc difference = 5248.94), as well as other heterotachy with models with less than or more than 4 categories, the topology of the trees was the same.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports model comparison results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Accommodating heterotachy improves estimation of parameters of the substitution model but had no affect on the tree topology.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, while accommodating heterotachy improves estimation of parameters of the substitution model it had no affect on the tree topology",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets model comparison results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  }
+]

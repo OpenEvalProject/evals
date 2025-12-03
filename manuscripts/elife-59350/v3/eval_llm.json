@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "MCMV infection causes rapid and pronounced downregulation of ICOSL on the surface of various antigen-presenting cells (APCs), including peritoneal macrophages, bone marrow-derived macrophages (BMMs), bone marrow-derived dendritic cells (BMDCs), and cell lines (IC-21, DC2.4, SVEC4-10). This downregulation requires de novo viral protein synthesis and occurs with different kinetics depending on cell type (4-6 hpi in peritoneal macrophages, 8 hpi in BMDCs, 16 hpi in IC-21 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 are well-supported by experimental data shown in Figure 1, including flow cytometry analyses demonstrating ICOSL downregulation in infected (GFP+) versus uninfected cells, UV-inactivation experiments showing requirement for viral protein synthesis, and time-course experiments documenting kinetics. The negative control (CD62L) remained unaffected, supporting specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The MCMV m138 gene product is necessary and sufficient for ICOSL downregulation. Screening of MCMV deletion mutants identified that only MCMV\u0394m128-138 failed to downregulate ICOSL. The m138 protein, previously described as an Fc receptor that also targets NKG2D ligands and CD80, is responsible for complete ICOSL downregulation during infection and can exert this effect when expressed in isolation without requiring the infection context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are supported by systematic screening data (Figure 2A), infection with MCMV\u0394m138 showing preserved ICOSL levels (Figure 2B), and transfection experiments demonstrating m138 sufficiency (Figure 2C). The logic connecting deletion mutant screening to identification of m138 as the responsible gene is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The m138 protein is primarily localized intracellularly in perinuclear compartments, cytoplasmic punctate vesicles, and lysosomes during MCMV infection. While predominantly intracellular, dim surface expression can be detected by flow cytometry. Colocalization analysis revealed high Manders coefficients (M1=0.76, M2=0.80) for m138 with lysosomal markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by immunofluorescence microscopy (Figure 3A, 3D) and flow cytometry data (Figure 3B). The use of permeabilizing versus non-permeabilizing conditions appropriately distinguishes intracellular from surface localization. Quantitative colocalization analysis using established methods (Coloc2 plugin) strengthens the lysosomal localization finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "m138 specifically targets the mature 70 kDa surface form of ICOSL for degradation while the 51 kDa intracellular form is preserved or even increased. The 70 kDa band is sensitive to trypsin treatment and corresponds to cell surface ICOSL. MCMV infection initially induces ICOSL expression (as shown by UV-inactivated virus), but m138 subsequently depletes surface ICOSL without affecting overall intracellular levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by Western blot analyses (Figure 4C, 4F) showing differential effects on the two ICOSL bands, trypsin sensitivity experiments confirming the 70 kDa band represents surface protein, and biotin labeling/immunoprecipitation (Figure 4E). The interpretation that m138 targets mature surface ICOSL is logically derived from these complementary experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "m138 prevents ICOSL maturation by targeting it to lysosomes for degradation. In transfection experiments, m138 expression prevents appearance of the 70 kDa mature ICOSL band even with lysosomal inhibition, while the 51 kDa intracellular form accumulates 1.5-fold with lysosomal inhibitors. Confocal microscopy shows marked colocalization of m138 and ICOSL in perinuclear and cytoplasmic compartments, enhanced by lysosomal inhibitor treatment. Both m138 and ICOSL levels increase with lysosomal inhibition, indicating co-degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are well-supported by Western blot data (Figure 5A) showing effects of lysosomal inhibitors, confocal microscopy (Figure 5B) demonstrating colocalization, and flow cytometry (Figure 5C) quantifying increased expression with inhibitor treatment. The mechanistic interpretation that m138 targets ICOSL before it reaches the cell surface is logically derived from the absence of the 70 kDa band even with lysosomal inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "m138 physically associates with ICOSL, either directly or indirectly. Co-immunoprecipitation experiments using anti-HA antibody to pull down HA-ICOSL successfully recovered m138-GFP, while a control antibody (anti-human Fc) did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by co-immunoprecipitation data (Figure 5D). The appropriate negative control (anti-human Fc) strengthens the finding. However, the authors appropriately note this could represent direct or indirect association, as co-IP does not definitively prove direct binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The three predicted Ig-like domains of m138 have distinct structural requirements for targeting ICOSL versus CD80. The N-terminal Ig1 domain is absolutely required for downregulation of both ICOSL and CD80. However, the Ig2 and Ig3 domains must be preserved for ICOSL downregulation but are dispensable for CD80 downregulation, as m138\u0394Ig2 and m138\u0394Ig2/3 mutants still reduce CD80 but not ICOSL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by transfection experiments with m138 domain deletion mutants (Figure 6B). The differential requirements for targeting the two B7 family members are clearly demonstrated and provide important mechanistic insight. This structure-function analysis is well-designed and appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "m138 substantially contributes to evasion of CD8+ T-cell responses via manipulation of the ICOSL:ICOS axis. BMDCs infected with MCMVm138\u0394Ig2 or MCMVm138\u0394Ig2/3 (which preserve ICOSL but downregulate CD80) stimulated significantly stronger IFN-\u03b3 responses by CD8+ T cells compared to MCMVwt-infected cells, with magnitudes approaching those of MCMV\u0394m138-infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by in vitro antigen presentation assays using TCR-transgenic CD8+ T cells (Figure 7B). The experimental design cleverly exploits the differential domain requirements to separate ICOSL from CD80 effects. The finding that preserving ICOSL (while still downregulating CD80) largely restores T cell responses strongly supports ICOSL as the major target for immune evasion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "m138-mediated ICOSL downregulation occurs in vivo during MCMV infection. In infected mice, ICOSL levels were significantly reduced on GFP+ infected peritoneal macrophages compared to uninfected cells. On peritoneal DCs, MCMVwt caused marked ICOSL downmodulation, while MCMV\u0394m138 infection resulted in significantly higher ICOSL levels. Similar patterns were observed for CD80, confirming m138's role in downmodulating both molecules on primary DCs in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by flow cytometry analysis of peritoneal cells from infected mice (Figure 8A, 8B). The in vivo confirmation is critical for establishing physiological relevance. The comparison of MCMVwt versus MCMV\u0394m138 provides strong evidence for m138's role in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "ICOSL targeting by m138 is important for viral replication in salivary glands and evasion of T-cell responses in vivo. MCMVm138\u0394Ig2 (unable to downregulate ICOSL but still targeting CD80) showed viral titers below detection limits in salivary glands, similar to MCMV\u0394m138. Even with NK cell depletion, MCMVm138\u0394Ig2 remained heavily attenuated compared to MCMVwt. However, depletion of NK cells plus CD4+ and CD8+ T cells completely restored MCMVm138\u0394Ig2 growth, indicating m138 evades T-cell responses via ICOSL interference. CD80 downregulation appeared to play a minor role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are supported by in vivo viral titer measurements with selective immune cell depletions (Figure 8D). The experimental design using MCMVm138\u0394Ig2 (which separates ICOSL from CD80 effects) combined with selective depletions provides strong evidence for ICOSL as the critical target. The complete restoration of viral growth upon T cell depletion directly demonstrates T cell-mediated control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "m138 participates in immune evasion of CD4+ T cells in spleen and lungs but not salivary glands. Adoptive transfer experiments with M25-specific transgenic CD4+ T cells showed increased CD4+ T cell frequencies in spleen and lungs of MCMV\u0394m138-infected versus MCMVwt-infected mice, but not in salivary glands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by adoptive transfer experiments (Figure 8\u2014figure supplement 1). However, the authors appropriately note this measures only M25-specific responses, and effects on other epitope-specific CD4+ T cells in salivary glands cannot be excluded. The organ-specific differences are interesting but require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "ICOSL:ICOS interactions are critical for T follicular helper (Tfh) cell and germinal center (GC) B cell development during MCMV infection. Blocking ICOSL with antibody during MCMV\u0394m138 infection caused marked decreases in Tfh cell percentages in spleen and lymph nodes, dramatic reduction of GC B cells in lymph nodes, and smaller GC sizes in spleen. ICOSL blockade also increased na\u00efve CD4+ T cells and decreased memory CD4+ T cells in spleen and lymph nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by flow cytometry analysis (Figure 9A) and immunofluorescence of splenic sections (Figure 9B). The experimental design using anti-ICOSL blocking antibody during infection is appropriate. The findings are consistent with known roles of ICOS in Tfh and GC formation. The effects on memory T cells suggest long-term immune consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "ICOSL:ICOS interactions play a prominent role in MCMV-specific antibody responses. Mice receiving anti-ICOSL antibody had significantly reduced total IgG, IgG1, and IgG2a/b specific for MCMV, while IgG3 and IgM were unaffected. Sera from ICOSL-blocked mice exhibited significantly lower capacity to neutralize MCMV. These findings indicate ICOSL-mediated co-stimulation is crucial for development of MCMV-specific IgG1 and IgG2 responses and effective T and B cell responses during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by ELISA measurements of antibody subclasses (Figure 10A) and viral neutralization assays (Figure 10B). The selective effects on certain IgG subclasses (IgG1, IgG2a/b but not IgG3 or IgM) are consistent with T-dependent versus T-independent antibody responses. The functional consequence (reduced neutralization) strengthens the biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "HCMV infection causes strong ICOSL downregulation on human APCs through a mechanism requiring viral gene expression but independent of lysosomal degradation. Productive HCMV infection of primary monocyte-derived macrophages and differentiated THP-1 cells resulted in marked ICOSL surface downregulation. UV-inactivated HCMV did not cause downregulation, indicating requirement for viral gene expression. Unlike MCMV, HCMV caused abrogation of ICOSL at whole cell levels via a lysosomal degradation-independent process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by flow cytometry (Figure 11A, 11C) and Western blot analyses (Figure 11D). The UV-inactivation control appropriately demonstrates requirement for viral gene expression. The finding that lysosomal inhibitors do not restore ICOSL (Figure 11D) indicates a different mechanism than MCMV m138, which is appropriately noted by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C86"
+    ],
+    "result": "ICOSL downregulation is a conserved strategy used by multiple herpesviruses. HSV-1 and HSV-2 infection of differentiated THP-1 cells caused complete loss of ICOSL, with partial downregulation by UV-inactivated virus. This demonstrates that ICOSL downregulation extends beyond cytomegaloviruses to \u03b1-herpesviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C86 are supported by flow cytometry and Western blot data for HSV-1 and HSV-2 (Figure 11E, 11F). The finding that UV-inactivated HSV causes only partial downregulation suggests these viruses also encode genes targeting ICOSL. This extends the biological significance beyond CMV and suggests ICOSL is a common target of herpesvirus immune evasion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims about ICOSL expression, ICOS:ICOSL pathway functions, and herpesvirus targeting of co-stimulatory molecules. ICOSL is constitutively expressed on APCs and upregulated by inflammatory stimuli, with expression also on non-lymphoid cells. The ICOS:ICOSL pathway enhances T-cell activation, proliferation, Th2 responses, and is essential for T-dependent antibody responses, GC formation, CD8+ T-cell recall responses, and NK cell activation. Herpesviruses, including HCMV and MCMV, downregulate CD80 and CD86.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are background information supported by appropriate citations to published literature. These establish the context and rationale for the study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C29",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Background claims about m138 and related viral immunomodulatory proteins. m138 is described as an Fc receptor that targets NKG2D ligands and CD80, is a type I transmembrane glycoprotein localized to ER and lysosomes, and uses different mechanisms for different targets. Other MCMV proteins (m152, m154) also have immunomodulatory functions. The CD80/CD86:CD28 pathway is involved in Tfh and antibody responses but cannot compensate for loss of ICOS signaling. ICOS/ICOSL-deficient patients show immunodeficiency and increased viral infections. Previous studies showed m138 deletion impacts viral load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C29, C90-C100 are background information supported by appropriate citations to published literature. These provide context for m138's known functions and the broader landscape of viral immune evasion. The claims about non-redundancy of ICOS and CD28 pathways (C97) are supported by the current study's findings as well as prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The ectodomain of m138 is predicted to contain three Ig-like domains based on prior structural predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by citations to published literature (Lenac et al., 2006; Corrales-Aguilar et al., 2014). This structural prediction forms the basis for the domain deletion experiments performed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C101"
+    ],
+    "result": "Summary conclusions about the study's major findings. ICOSL-mediated co-stimulation contributes to effective anti-MCMV immune responses. ICOSL is a major target of CMVs and other herpesviruses that potently downregulate its expression on APCs. MCMV uses m138 to manipulate ICOSL, impeding T-cell activation during acute infection. Downmodulation of ICOSL by m138 represents an effective immune evasion strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 and C101 are high-level summary conclusions well-supported by the collective experimental evidence presented in the manuscript. These integrate findings from multiple experimental approaches (in vitro infections, transfections, domain deletions, in vivo infections, antibody blockade, viral titer measurements) to support the overall conclusions.",
+    "result_type": "MAJOR"
+  }
+]

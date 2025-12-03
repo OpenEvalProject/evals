@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The authors generated a stable iNGN2-hPSC line by using TALENs to integrate a doxycycline-inducible NGN2 cassette into the AAVS1 safe harbor locus of the H1 hPSC line. The resulting cell line exhibited a normal karyotype (46,XY).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are supported by experimental data including PCR validation of transgene integration (Figure 1\u2014figure supplement 1) and G-band karyotyping demonstrating normal karyotype (Figure 1\u2014figure supplement 1). The methodology is well-established and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Human neurons (hNs) derived from the iNGN2-hPSC line begin to show electrophysiological activity around day 21 in vitro, displaying spontaneous excitatory post-synaptic currents (sEPSCs) and NMDAR-mediated currents, though synapses and synaptic networks are still maturing at this timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 are supported by citations to multiple previous studies from the authors' laboratory and others (Meijer et al., 2019; Nehme et al., 2018; Susco et al., 2020). The caveat about maturation (C4) is appropriately noted and consistent with the developmental stage of the neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The platform quantifies presynaptic puncta defined as SYNAPSIN1 puncta assembled on MAP2-expressing neuronal dendrites. SYNAPSIN1 showed discrete punctate staining on MAP2-positive neurites with partial colocalization with synaptophysin (~50%) and moderate colocalization with PSD-95 (43.1% of PSD-95 puncta colocalized with SYNAPSIN1; 28.8% of SYNAPSIN1 puncta colocalized with PSD-95). SYNAPSIN1 was determined to be a more robust marker than synaptophysin or PSD-95 for this assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 are supported by immunofluorescence data (Figure 1d, Figure 1\u2014figure supplement 1) and quantification of colocalization. The incomplete colocalization is appropriately interpreted in the context of developmental stage and prior literature (Pinto et al., 2013; Friedman et al., 2000). The authors acknowledge that synaptophysin and PSD-95 signals were weak and inconsistent for screening applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The platform established optimal cell density thresholds for hN + hpA co-cultures, determining that 4,000-12,000 surviving hNs per well was optimal for establishing a synaptic network while avoiding clumping and maintaining reliable puncta discrimination. Plating consistency was high within batches with an 8% covariance threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 are supported by experimental validation data shown in Figure 1e and 1f. The thresholds were empirically determined and are appropriate for the assay. The 8% covariance demonstrates good technical reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "The platform was validated using siRNA-mediated knockdown of SYNAPSIN1, which significantly reduced presynaptic density compared to controls without affecting MAP2 coverage or cell viability. SYNAPSIN1 puncta with diameters between 1 and 6 pixels were selected based on cumulative distribution analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 are supported by experimental data (Figure 1g, Figure 1\u2014figure supplement 4). The siRNA validation demonstrates specificity of the assay for detecting changes in presynaptic density. The puncta size selection is empirically justified by cumulative distribution analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In the primary screen of 376 small molecules, 92.94% of control and treated wells had Z-scores for synaptic density between -2 and +2, demonstrating platform reliability. Thirteen small molecules (3.46%) failed quality control, and seven (1.86%) reduced both synaptic density and MAP2 coverage, which were known apoptosis or autophagy inducers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by the primary screening data (Figure 2a, Figure 2\u2014figure supplement 1). The high percentage of wells within \u00b12 Z-scores demonstrates good assay robustness. The identification of known toxic compounds as hits that reduce both synaptic density and neurite coverage serves as a positive control for the assay's ability to detect cellular toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Secondary dose-response validation identified six small molecules that significantly increased presynaptic density in hN + hpA co-cultures: three BET inhibitors ((+)-JQ1, Birabresib, I-BET151), BI-D1870, GSK429286A, and VS-5584. All three BET inhibitors showed similar magnitudes of effect. These compounds showed minimal toxicity or effects on neurite outgrowth at lower doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by dose-response data (Figure 3, Figure 3\u2014figure supplements 1-4). The dose-response curves demonstrate concentration-dependent effects with appropriate statistical testing (one-way ANOVA with Dunnett's post hoc test). The consistency across three independent BET inhibitors strengthens the conclusion about this class of compounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Four out of six validated small molecules, including all three BET inhibitors, increased presynaptic density in hN + hpA co-cultures derived from an independent hPSC line (DS2U), demonstrating reproducibility across cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by validation data in an independent cell line (Figure 3\u2014figure supplement 5). This cross-validation strengthens the generalizability of the findings, though the authors appropriately note that not all compounds showed effects in the second line, consistent with known heterogeneity across hPSC lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "None of the six validated small molecules elicited a significant increase in presynaptic density in hN monocultures (without astrocytes), despite passing quality control criteria. Small molecule treatment did not significantly affect SYNAPSIN1 protein expression levels in either monoculture or co-culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by experimental data (Figure 4b, Figure 4e-f). The western blot analysis (Figure 4e-f) demonstrates that the lack of effect in monocultures is not due to changes in overall SYNAPSIN1 protein levels, suggesting the effects are on protein localization rather than abundance. The power calculations (Figure 5f-g) confirm adequate statistical power to detect effects in monocultures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The addition of human primary astrocytes (hpAs) significantly enhanced synapse development in the absence of small molecules, roughly doubling both the density and size of SYNAPSIN1 puncta on MAP2-positive neurites compared to hN monocultures. While hNs can form quantifiable presynaptic puncta in the absence of astrocytes, hpAs contribute to the assembly or localization of presynaptic machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by comparative data between hN monocultures and hN + hpA co-cultures (Figure 5a-e). The statistical analysis (Kolmogorov-Smirnov unpaired t-test, p<0.001) demonstrates significant differences. This result underscores the importance of including astrocytes in human synaptic screening applications and is consistent with known roles of astrocytes in synapse development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Power calculations revealed that (+)-JQ1 and I-BET151 had very large effect sizes in the primary screen (Cohen's d of 2.914 and 3.710, respectively). To achieve 95% power (one-sided) to detect effects, experiments would require approximately n=270 replicates for small effect sizes (Cohen's d=0.2), n=43 for medium effect sizes (Cohen's d=0.5), and n=17 for large effect sizes (Cohen's d=0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 are supported by power calculation data (Supplementary file 2, Figure 5f-g, Figure 5\u2014figure supplement 1). The power calculations are appropriately conducted and provide valuable guidance for future experimental design. The large effect sizes for BET inhibitors explain why they were readily detected in the screen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "RNA-seq analysis of hN + hpA co-cultures treated with (+)-JQ1 or Birabresib identified comparable numbers of differentially expressed genes (DEGs) compared to DMSO control (adjusted p<0.05, log2FC \u2265\u00b11). A majority of DEGs were downregulated, with 2,368 DEGs shared between the two BET inhibitor conditions. Strong positive correlation (Pearson's r=0.9404) was observed between the two treatments. Ingenuity pathway analysis confirmed BRD4, (+)-JQ1, and Birabresib as strongly predicted upstream regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by RNA-seq data (Figure 6b-e, Figure 6\u2014figure supplement 1, Supplementary files 3-4). The high concordance between two independent BET inhibitors (Pearson's r=0.9404) strengthens confidence in the findings. The statistical thresholds (adjusted p<0.05, log2FC \u2265\u00b11) are appropriate. The predominance of downregulated genes is consistent with known roles of BET proteins in transcriptional activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Pathway analysis of DEGs revealed enrichment of 'DNA methylation and transcriptional repression' and 'axonal guidance' pathways in upregulated genes, while 'wound healing' and 'neuroinflammation' pathways were enriched in downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C42 are supported by IPA pathway analysis (Figure 6f). The pathway enrichments are consistent with known functions of BET proteins and provide biological context for the observed transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "SynGO analysis revealed significant enrichment for 'integral component of postsynaptic membrane' and 'postsynaptic membrane' terms, with modest enrichment for presynaptic terms. Specific pre- and postsynaptic genes upregulated following BET inhibition included NRXN3, AMPH, EFNB2, BAIAP2, and HOMER1, with expression roughly doubled by (+)-JQ1 and Birabresib treatment. Western blot analysis confirmed increased protein expression of BAIAP2 and Homer1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by SynGO analysis (Figure 6g-h, Supplementary file 5), RNA-seq data (Figure 6i), and western blot validation (Figure 6j). The convergence of transcriptional and protein-level data strengthens the conclusion that BET inhibition upregulates synaptic gene expression. The validation at the protein level is particularly important for confirming functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "BET inhibition modulated expression of astrocyte-secreted and inflammatory factors, including upregulation of anti-inflammatory IL11 and downregulation of pro-inflammatory IL6, synapse disassembly factor SPARC, and inflammatory mediators CASP1 and GSDMD. These changes were highly concordant between (+)-JQ1 and Birabresib treatments and consistent with prior studies showing BET proteins promote inflammatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by RNA-seq data (Figure 6\u2014figure supplement 1) and citations to previous studies (Wang et al., 2021b; Zhou et al., 2019). The concordance between two independent BET inhibitors strengthens the findings. The consistency with prior literature on BET proteins and inflammation provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The authors conclude that BET inhibition can lead to upregulation of synaptic genes, consistent with screening results showing increased presynaptic density, supporting a role for BET proteins in synapse assembly. These results support the robustness of the platform for detecting human synaptic modulators in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 represent integrative conclusions supported by the convergence of multiple lines of evidence: (1) screening data showing BET inhibitors increase presynaptic density (C22-C23), (2) RNA-seq data showing upregulation of synaptic genes (C43-C46), and (3) protein-level validation (C46). The concordance between phenotypic and molecular data strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors note that BET protein expression is downregulated during neuronal differentiation, with knockdown sufficient to enhance differentiation, consistent with BET proteins negatively regulating neuronal development. The results from BET inhibition in human cellular models contrast with some data from adult mouse brain, likely reflecting differences in cell type, developmental stage, and timing of drug treatment. BET inhibitors are currently in clinical trials for cancer and proposed for developmental and degenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by citations to previous studies (Li et al., 2016; Korb et al., 2015; Wang et al., 2021a; Wang et al., 2021b; Kfoury et al., 2021). The authors appropriately contextualize their findings relative to prior work in rodent models and acknowledge the context-dependent nature of BET inhibitor effects. The clinical relevance is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors present six key advances of their platform: (1) first automated and quantitative high-content synaptic phenotyping platform for human neurons and astrocytes, (2) stable NGN2 integration strategy is well-suited for screening, (3) compatibility with small molecule and siRNA manipulations, (4) captures multiple parameters of synaptic connectivity, (5) demonstrates relevance of astrocytes for studying human synaptic mechanisms and drug response, and (6) compatibility with different human genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 represent summary statements of the study's advances, supported by the experimental data presented throughout the manuscript. Each advance is demonstrated by specific experiments: automated platform (C1-C17), stable NGN2 line (C1-C2), small molecule and siRNA compatibility (C16-C27), multiple parameters captured (C5-C17), astrocyte relevance (C28-C33), and multiple cell line compatibility (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors acknowledge five limitations of their platform: (1) designed specifically for human neurons and astrocytes, requiring customization for other paradigms, (2) based on high-content imaging, requiring separate methodology for neurophysiological function, (3) SYNAPSIN1 on MAP2 may capture sites that don't develop into fully functional synapses, (4) longitudinal studies in the same cells not possible without genetically encoded markers, and (5) designed for 2D culture, not reflecting 3D structural complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 represent appropriate acknowledgments of the platform's limitations. These are reasonable caveats based on the experimental design and methodology. The authors demonstrate appropriate scientific rigor by explicitly stating these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The abstract summarizes the study's motivation (species-divergent features of brain cell types), approach (screening 376 small molecules), and key findings (six validated small molecules, astrocyte requirement, BET inhibitors as prominent hit class with upregulation of synaptic gene expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 represent the abstract summary, which accurately reflects the experimental work and findings presented in the manuscript. Each claim in the abstract is supported by detailed experimental data in the results sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The introduction establishes the scientific context by citing prior work on synaptic alterations in brain disorders, species-divergent features of neurons and astrocytes, and differences between human and rodent brain cell types in terms of membrane properties, gene expression, morphology, synaptic plasticity, and functional properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C89 represent literature review and background information supported by appropriate citations to previous studies. These claims establish the scientific rationale for developing a human-specific synaptic screening platform. The citations appear appropriate and accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The introduction reviews prior work on hPSC-derived neurons, including their use in studying synaptic development and disease, drug screening applications, and notes the gap that scaled analyses of synaptic mechanisms using human cellular systems have not yet been achieved, with no automated systems for unbiased interrogation of synaptic density in human neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C98 represent literature review establishing the gap in the field that the current study addresses. The citations appear appropriate and the characterization of the gap (lack of automated systems for human synaptic screening) is reasonable based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The introduction establishes that the NGN2 differentiation protocol produces relatively homogeneous glutamatergic neurons at large scale, making it suited for screening. The authors note that while BET inhibitors have been associated with decreased synaptic gene expression in rodent models, they confirmed upregulation in human cellular models. Prior studies in rodents showed context-dependent and region-specific effects of BET inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 represent literature review and contextualization of the study's findings. The citations to prior work on NGN2 differentiation (Nehme et al., 2018; Tian et al., 2021; Tian et al., 2019) and BET inhibitors in rodents (Korb et al., 2015; Sullivan et al., 2015; Wang et al., 2021b; Kfoury et al., 2021) are appropriate and accurately represent the cited work.",
+    "result_type": "MINOR"
+  }
+]

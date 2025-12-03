@@ -1,0 +1,2040 @@
+{
+  "submission": {
+    "id": "29a5221c-3f77-42b3-a72d-95b76849a1d8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:10:14.883209Z",
+    "updated_at": "2025-12-03T04:10:14.883209Z"
+  },
+  "content": [
+    {
+      "id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "submission_id": "29a5221c-3f77-42b3-a72d-95b76849a1d8",
+      "content_type": "manuscript",
+      "content_text": "# ImmunoCluster provides a computational framework for the nonspecialist to profile high-dimensional cytometry data\n\n## Authors\n\n- James W Opzoomer<sup>1</sup> ([ORCID: 0000-0001-6842-756X](https://orcid.org/0000-0001-6842-756X))\n- Jessica A Timms<sup>1</sup> ([ORCID: 0000-0003-3687-9312](https://orcid.org/0000-0003-3687-9312))\n- Kevin Blighe<sup>1</sup>\n- Thanos P Mourikis<sup>1</sup>\n- Nicolas Chapuis<sup>2</sup>\n- Richard Bekoe<sup>3</sup>\n- Sedigeh Kareemaghay<sup>4</sup>\n- Paola Nocerino<sup>1</sup>\n- Benedetta Apollonio<sup>1</sup>\n- Alan G Ramsay<sup>1</sup> ([ORCID: 0000-0002-0452-0420](https://orcid.org/0000-0002-0452-0420))\n- Mahvash Tavassoli<sup>4</sup>\n- Claire Harrison<sup>1</sup>\n- Francesca Ciccarelli<sup>1</sup>\n- Peter Parker<sup>1</sup>\n- Michaela Fontenay<sup>2</sup> ([ORCID: 0000-0002-5492-6349](https://orcid.org/0000-0002-5492-6349))\n- Paul R Barber<sup>1</sup> ([ORCID: 0000-0002-8595-1141](https://orcid.org/0000-0002-8595-1141))\n- James N Arnold<sup>1</sup> \u2020\n- Shahram Kordasti<sup>1</sup> ([ORCID: 0000-0002-0347-4207](https://orcid.org/0000-0002-0347-4207)) \u2020\n\n### Affiliations\n\n1. School of Cancer and Pharmaceutical Sciences, King\u2019s College London, Faculty of Life Sciences and Medicine, Guy\u2019s Hospital London United Kingdom\n2. Institut Cochin, Institut National de la Sant\u00e9 et de la Recherche M\u00e9dicale U1016, Centre National de la Recherche Scientifique, Unit\u00e9 Mixte de Recherche 8104, Universit\u00e9 Paris Descartes Paris France\n3. UCL Cancer Institute, Paul O'Gorman Building, University College London London United Kingdom\n4. Centre for Host Microbiome Interaction, FoDOCS, King\u2019s College, Guy\u2019s Hospital London United Kingdom\n5. Haematology Department, Guy\u2019s Hospital London United Kingdom\n6. Cancer Systems Biology Laboratory, The Francis Crick Institute London United Kingdom\n7. Francis Crick Institute London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHigh-dimensional cytometry is an innovative tool for immune monitoring in health and disease, and it has provided novel insight into the underlying biology as well as biomarkers for a variety of diseases. However, the analysis of large multiparametric datasets usually requires specialist computational knowledge. Here, we describe ImmunoCluster (https://github.com/kordastilab/ImmunoCluster), an R package for immune profiling cellular heterogeneity in high-dimensional liquid and imaging mass cytometry, and flow cytometry data, designed to facilitate computational analysis by a nonspecialist. The analysis framework implemented within ImmunoCluster is readily scalable to millions of cells and provides a variety of visualization and analytical approaches, as well as a rich array of plotting tools that can be tailored to users\u2019 needs. The protocol consists of three core computational stages: (1) data import and quality control; (2) dimensionality reduction and unsupervised clustering; and (3) annotation and differential testing, all contained within an R-based open-source framework.\n\n## Introduction\n\nSystems immunology approaches aim to explore and understand the complexity of the immune system. However, with 350 cluster of differentiation\u00a0(CD) antigens, over 100 cytokines and chemokines, and many different cell subsets, this is a challenging task (Davis et al., 2017). Liquid mass cytometry (LMC), imaging mass cytometry (IMC), and flow cytometry (FC) are powerful techniques applied to exploratory immunophenotyping and biomarker discovery. With the ability to profile over 40 markers on an individual cell, these techniques have rapidly expanded our understanding of the immune system and its perturbations throughout disease pathogenesis (Bertolo et al., 2020; Wang et al., 2020). However, such comprehensive analyses produce large amounts of data and increased dimensionality, resulting in a demanding computational task to analyze (Newell and Cheng, 2016). Often, a limiting factor to these analyses is the requirement of an in-depth knowledge of computational biology. There is an unmet need for an easy-to-use flexible open-source computational framework to explore a variety of high-dimensional single-cell cytometry datasets such as LMC, IMC, and FC within a single framework for nonspecialists. A number of previous computational cytometry workflows have been proposed, including CyTOF workflow (Nowicka, 2019), (Diggins et al., 2015) and CapX (Ashhurst, 2019). Subsequently, some of these workflows have been incorporated into graphical user interfaces (GUI) or code-based workflow packages such as CATALYST (Crowell et al., 2020), Cytofkit (Chen et al., 2016), diffcyt (Weber et al., 2019), and Spectre (Ashhurst, 2020). However, these approaches can be challenging to implement without significant computational knowledge. We have therefore developed ImmunoCluster, building on and extending the framework proposed in the CyTOF workflow (Nowicka, 2019), to create modular, flexible, and easy-to-use implementations of cytometry analysis pipelines. The ImmunoCluster package is a framework that provides appropriate data structures and methods to increase the utility of these high-dimensional methods and make data analysis and interpretation accessible to all researchers to facilitate immune phenotyping projects, such as those associated with preclinical and clinical studies.\n\nHere, we present ImmunoCluster, an open-source computational framework for the analysis of high-dimensional LMC, IMC, and FC datasets. ImmunoCluster is an R package and framework that focuses on the organization and visualization of data to help define biological identity of cells, construct a hierarchy of biologically meaningful cell populations, and detect significant changes between conditions, timepoints, and groups, including serial samples from a clinical trial setting. The framework uses state-of-the-art computational techniques in an easily amendable and flexible format. Users can manipulate figures and outputs to suit their specific needs. The computational approaches used to analyze high-dimensional data are rapidly evolving, and ImmunoCluster has the flexibility to incorporate these novel computational methods in dimensionality reduction, clustering, and trajectory analysis within its framework. The computational framework is designed for ease\u00a0of\u00a0use and broad applicability so that it is simple enough to be implemented by users with only a basic knowledge of R, as well as possessing the flexibility for more advanced users to incorporate additional new methodology and build on the framework. The framework relies on the SingleCellExperiment class (Lun, 2017), which means that the flow cytometry standard (FCS) data is contained within a purpose-built object that stores all stages of analysis to permit multiple analysis paths to be performed in parallel. The framework incorporates methods for applying popular R packages (i.e., RPhenograph [Chen and Chen, 2015], Rtsne [Krijthe, 2018], and FlowSOM [Van Gassen, 2015a]) along with convenient \u2018wrapper functions\u2019 allowing for the use these popular dimensionality reduction and clustering algorithms in an easy format for nonspecialists to rapidly produce interpretable data that are extendable to advanced experimental designs. ImmunoCluster also contains functionality for adaptive downsampling at the import and dimensionality reduction stages of the pipeline to overcome significant increases in runtime associated with large datasets in dimensionality reduction algorithms like UMAP and tSNE. The outputs from ImmunoCluster are created using the ggplot package, which generates ggplot graphical objects that are flexible, can be further modified and utilized directly into figures for reports and publications. The core of the visualization tool was developed using scDataviz, a Bioconductor package (Blighe, 2020a) for visualizing single-cell data and influenced by the visual framework outlined in CyTOF workflow (Nowicka, 2019). ImmunoCluster offers an alternative to the currently used frameworks such as CATALYST (Crowell et al., 2020) and Cytofkit (Chen et al., 2016), with a focus on ease\u00a0of\u00a0use for biologists, as well as offering additional novel aspects for its users compared with other published frameworks. Importantly, and unique to ImmunoCluster, the scope of functionality in this package also enables the analysis of IMC data. Users are able to run IMC data in line with FC and LMC data analyses. Due to the lower resolution of IMC data (compared with FC and LMC), we specifically designed the \u2018ranked expression heatmap\u2019 function to work with IMC data, which allows users to rank markers measured to help identify cell populations. IMC provides a means to analyze the spatial dimension of the cells in situ within tissues, which can provide important insight when ascribing functionality to cell populations. Methods for analyzing large cytometry datasets, particularly IMC datasets, in an open-source computational environment are currently limited. ImmunoCluster has been designed for use by a nonspecialist; however, it\u00a0would be useful to a range of users from wet-lab nonspecialist experimentalists to experienced computational biologists with potential utility in day-to-day research through to large-scale studies involving multiple longitudinal serial biopsies where samples need to be analyzed and compared.\n\nClinical immune monitoring is an area of increasing utilization (Hernandez et al., 2020). In the current work, we will present examples of ImmunoCluster\u2019s ability to detect clinically relevant perturbations in immune cellular heterogeneity in LMC, IMC, and FC datasets in human patient and/or healthy samples. ImmunoCluster is easily extensible to several arbitrary experimental designs and can be utilized to aid both discovery of novel subpopulations of cells within heterogeneous samples or as a foundation for monitoring longitudinal changes or responses to treatment. As such, ImmunoCluster provides a resource that will permit unsupervised high-dimensional data analysis to be more widely adopted in immunobiology and many other disciplines.\n\n## Results\n\nThis section aims to convey the scope of ImmunoCluster, its versatility, and applicability to complex datasets across a range of high-dimensional approaches. We implemented the ImmunoCluster framework for three different types of high-dimensional single-cell data (LMC, IMC, and FC). ImmunoCluster also offers user-friendly flexibility throughout the framework, and\u00a0researchers can easily adapt all figures and outputs to suit their specific needs, resulting in an abundance of tailored outputs for the user to assess and use in publications, reports, and presentations. An example detailing a variety of tailor-made figures produced by ImmunoCluster can be found in Figure 1\u2014figure supplement 1.\n\nWe first used previously published and publicly available LMC data (Hartmann et al., 2019). This dataset was chosen as it is representative of an intricate immunophenotyping project and would test the ability of ImmunoCluster to reproduce published results. Secondly, we investigated two novel IMC datasets, from HNSCC and diffuse large B-cell lymphoma\u00a0(DLBCL) patients with the aim of demonstrating the applicability of the ImmunoCluster tool for IMC data analysis and cell cluster identification and visualization. Finally, FC data from the BM of seven healthy donors\u00a0(HDs) during hip surgery were used to show the ability of the framework to analyze conventional FC data and identify rare immune cell populations.\n\n### Liquid mass cytometry\n\nThe chosen dataset (Hartmann et al., 2019) includes mass cytometry data from 15 patients with leukemia who all received bone marrow transplant\u00a0(BMT), three of whom developed acute\u00a0graft versus host disease (GvHD). Samples were taken at 30 and 90 days post-BMT. Thirty-three cell markers, both lineage and functional, were analyzed using mass cytometry (Helios CyTOF system). Prior to uploading into the ImmunoCluster framework, the FCS files were normalized and gated as described in the Materials\u00a0and\u00a0methods section. We observed that a typical pipeline run on the full 2.3 million cell LMC GvHD dataset (with UMAP downsampling to 500k cells) would take ~110 min on a 2.9 GHz Intel Core i7 MacBook pro with 16 GB RAM (Figure 1\u2014figure supplement 2).\n\nAn initial visualization of the data was first carried out using\u00a0multidimensional scaling (MDS) plots, which were overlaid with metadata to identify the similarity of patients by condition and day of measurement (Figure 1A, B). A heatmap was also created to give an overview of marker expression for each patient and annotated with the metadata provided (Figure 1C). The UMAP algorithm was used for dimensionality reduction of data. There was a difference in the distribution of cells from GvHD and \u2018none\u2019 across the cell islands between both timepoints, 30 and 90 days after BMT (Figure 2A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig1-v2.jpg)\n\n**Figure 1.:** (A,\u00a0B) Multidimensional scaling of data; median marker expression data from each sample were used to create plots, annotated with condition (graft versus host disease or none) (A), and time after BMT treatment (B). (C) Heatmap showing the median marker expression for each patient.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Expression of four selected lineage markers projected onto UMAP plot. (B) UMAP annotated with FlowSOM clusters. (C) UMAP annotated with cell types. (D) UMAP plot colored by\u00a0graft versus host disease\u00a0(GvHD) and none. (E) UMAP plots colored by GvHD and none and split by timepoint (30 and 90 days after bone marrow transplant\u00a0treatment). (F) UMAP plots colored and split by GvHD and none. (G) Visualize the density of cells within cell islands of dimensionality reduced data.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** 2.3 M cell liquid mass cytometry\u00a0graft versus host disease dataset (with UMAP downsampling to 500k cells) on a 2.9 GHz Intel Core i7 MacBook pro with 16 GB RAM. QC: quality control.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig2-v2.jpg)\n\n**Figure 2.:** (A) UMAP plots colored by\u00a0graft versus host disease\u00a0and none and split by timepoint (30 and 90 days after bone marrow transplant treatment). (B) Expression of eight selected lineage markers projected onto UMAP plot. Identifying cell types and abundance of clusters. (C) Heatmap showing median marker expression across all identified cell types. (D) UMAP annotated with cell types. (E) Distribution of immune cell frequencies\u00a0and abundance (%) of each cell type across all samples measured.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** This heatmap was used to identify the cell type of each cluster.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig2-figsupp3-v2.jpg)\n\nThe mass cytometry panel used in this experiment was specifically designed to identify all major human immune cell lineages (Hartmann et al., 2019); the marker expression across cell islands was visualized and indicated cell types present within the cell islands (Figure 2B) (expression of all markers measured; Figure 2\u2014figure supplement 1). To further distinguish the cell types that were present in the cell islands and visible from the dimensionality reduced UMAP plots (Figure 2B), the FlowSOM clustering algorithm with consensus clustering metaclustering was applied, which has been demonstrated to scale well to large cytometry datasets (Weber and Robinson, 2016). The number of clusters input into the FlowSOM algorithm was slightly higher than the number of expected cell clusters (n\u00a0=\u00a056) (Figure 2\u2014figure supplement 2). The SingleCellExperiment object stored the data for each K meta-clustering (K1-K56); therefore, further downstream data exploration was carried out looking at different numbers of K clusters. A heatmap showing the expression of the 33 markers measured was used to identify cluster cell types (Figure 2\u2014figure supplement 2), and\u00a0ImmunoCluster was successfully able to replicate the findings from Hartmann et al., 2019, with 24 of the cell populations being identified (Figure 2C, D). Selecting the correct number of clusters to input into the clustering algorithm can be a challenging aspect of these analyses, but the framework provides the user with multiple parameters to aid this decision. We recommend that users should always overestimate the number of cell populations as data for each K number of clusters will be stored in the SingleCellExperiment object and can therefore be explored and refined later using the different visualization techniques available within the framework. Additionally, the elbow plot generated by the ConsensusClusterPlus package can be examined alongside the clustering algorithm output to guide the decision on the best number of clusters for downstream analysis (Figure 8\u2014figure supplement 6). Over-clustering can allow for the identification of rare cell types within a dataset at the expense of often generating several clusters of highly prevalent cell types that likely represent the same biological cell type. ImmunoCluster provides the tools to manually and reproducibly merge clusters of the same biological cell identity into one group after over-clustering. These clusters can additionally be merged into each other to use a less granular, higher-level population annotation (see Figure 2\u2014figure supplement 3 for an example of higher-level clustering).\n\nThe abundance of all cell types across all samples was measured, and CD14+CD16- monocytes were identified as the most abundant population, correlating with the Hartmann et al. data (Hartmann et al., 2019;\u00a0Figure 2E). Individually displaying patient\u2019s cell-type abundance means that we could identify variation within a group of interest; for example, we observed that although there is variation within the GvHD and none, overall, they appear to follow the same trends in cell-type abundance (Figure 3A). Additionally, significant differences between memory B-cells (false discovery rate [FDR] p=4.38\u00d710\u22123), na\u00efve B-cells (FDR p=1.35\u00d710\u22122), and na\u00efve CD4+ T-cells (FDR p=3.47\u00d710\u22122) were identified between the GvHD and none (Figure 3B, C) using a t-test. A difference in number of na\u00efve B-cells was previously reported by Hartmann et al., 2019\u00a0in this dataset and can be seen in Figure 2A (using Figure 2D for cell island identification), where there is a noticeable reduction of these cells in the GvHD patients. In addition, a reduction in na\u00efve CD4+ T-cells can also be seen, which was also previously reported, but to a lesser extent. A volcano plot can be used to highlight the differentially abundant cell clusters between GvHD and none (GvHD logFC+ve and none logFC-ve), where cell types with FDR p<0.05 are shown in red (Figure 3D), which is also in line with the previously published data (Hartmann et al., 2019). We compared ImmunoCluster\u2019s differential abundance testing output (stat_test_clust), run in the t-test mode, with the Hartmann et al. data (Hartmann et al., 2019) into the diffcyt computational framework (Weber et al., 2019), which is a state-of-the-art tool for differential discovery analyses. Diffcyt identified the same three cell clusters (memory B-cells, na\u00efve B-cells, and na\u00efve CD4+ T-cells) as differentially abundant (FDR p<0.05) between the GvHD and none conditions. This demonstrates concordance with ImmunoCluster\u2019s statistical output that identified na\u00efve B-cells and na\u00efve CD4+ T-cells as one of the principal differentially abundant populations, which was also identified in the original analysis of the data (Supplementary file 4). Additionally, we explored the expression of checkpoint-related molecules, and their receptors, markers of proliferation, and invariant natural killer T (iNK T) cells in CD8+ T-cells and compared the expression of these in the patients with GvHD and none (Figure 3E). These markers help assess the functional states of cells and the checkpoint-related molecules and proliferative activity markers such as PD-1, PD-L1, TIM3, Ki-67, and TCRVa24-Ja18; the expression of these antigens has been proposed previously as candidate biomarkers for immunotherapy (Hartmann et al., 2019). Visually, GvHD patients had a higher expression of PD-1 and a noticeable difference in the Ki-67 proliferation marker as expected for these patients (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig3-v2.jpg)\n\n**Figure 3.:** (A) Percentage of each cell type shown for each patient numbered across the bottom of the plot. (B, C) Box plots portray\u00a0interquartile range\u00a0(IQR) with the horizontal line representing the median percentage of cell types in both\u00a0graft versus host disease\u00a0(GvHD) and none patients for B-cell and CD4+ T-cell populations, respectively. (D) Differential abundance analysis; volcano plot showing the significantly differentially expressed cell abundances (false discovery rate p<0.05) between GvHD and none (GvHD logFC+ve and none logFC-ve). (E) Comparison of checkpoint-related molecules (PD-1 and TIM3), receptors (PD-L1), proliferative (Ki-67), and iNK T-cells (TCRVa24-Ja18) marker expression between GvHD and none patients in the CD8+ T-cell cluster.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A,\u00a0B) Biaxial contour plots showing distribution of CD3+ and CD19+ cells in\u00a0graft versus host disease (A) and none (B). (C) Biaxial dot plot showing distribution of CD4+ and CD8\u03b1+ cells in the identified CD8+ T cell and CD4+ T cell clusters.\n\n### Imaging mass cytometry\n\nWe utilized two different IMC datasets to demonstrate how ImmunoCluster would handle IMC data from two different tumor microenvironments that possess (1) a biological image with clear boundaries, such as\u00a0head and neck squamous cell carcinoma (HNSCC), where clear tumor and stroma regions were evident; (2) a biological image that was more heterogeneous and diffuse, such as the DLBCL lymph node section. ImmunoCluster\u2019s ability to explore IMC data adds an important element to the framework and demonstrates the flexibility and applicability of the tool. Researchers can explore IMC data easily, and in\u00a0line with LMC and FC data. After data preprocessing (see Materials\u00a0and\u00a0methods and Figure 8\u2014figure supplement 2), the transformed gated FCS files were uploaded into the ImmunoCluster framework. Generally, the same workflow that was applied to the LMC and FC data was applied to the IMC data from a section of tissue from patients with HNSCC and DLBCL (lymph node) as a proof-of-principle application of the ImmunoCluster tool for IMC data analysis (Figures 4\u00a0and\u00a05). The only difference with the IMC data was the use of a rank heatmap (Figure 4\u2014figure supplement 1); this ranks the order of each marker for each sample (1 \u2013\u00a0total number of samples). The reason for this was clarity and ease of cell identification across clusters as IMC produces lower resolution data compared to the data output of LMC or FC, which makes manual assignments of populations more difficult to interpret. Therefore, a rank of expression was used as an easy means to facilitate the assignment of cell identity through defining the highest and lowest expression of markers between clusters.\n\n### Head and neck squamous cell carcinoma tissue section\n\nCell segmented regions are annotated in Figure 4A, where\u00a0regions 1\u20133 were selected as tumor regions and 3\u20136 as stroma regions. The ImmunoCluster tool was able to distinguish between the stroma and tumor regions of the tissue section from the HNSCC tumor (Figure 4B), and with additional markers could provide a\u00a0more in-depth analysis of the cell phenotypes in each respective region of the tumor. Dimensionality reduction of the data clearly separated the cell islands belonging to the stroma and tumor regions of the tissue (Figure 4C), suggesting different cell phenotypes between the regions. The FlowSOM algorithm was applied to cluster the cells and identify cell populations. The rank heatmap was used to show the ranked expression of each marker (ranked 1\u201310, with 10 being high) for each cluster (1\u201310) (Figure 4\u2014figure supplement 1), and\u00a0the\u00a0identified cell types were then used to annotate the heatmap (Figure 4D). High expression of E-cadherin can be used as a marker of cancerous tissue in HNSCC, and its expression correlates with the cancer regions selected for analysis (Figure 4D). We focused on CD8+ T-cell, B-cell, and macrophage cell clusters (Hlad\u00edkov\u00e1 et al., 2019; Evrard et al., 2019). Regions 2 and 3 of the tumor mostly consist of proliferating (Ki-67+) tumor cells and macrophages (tumor-associated and PD-L1+). Region 1 was a mix of immune cells, B-cells, and PD-L1+ CD8+ T-cells (Figure 4E). Stromal regions 5 and 6 are mostly PD-L1+ macrophages and CD8+ T-cells. Region 4 has a cluster of mixed immune cells, and from the IMC image (Figure 4A) we can see that\u00a0this region looks like the tumor is encroaching into the stromal region. The stroma seems to be mostly nonproliferating cells (Ki-67-\u00a0compared to the tumor region) and CD8+ T-cells, including a CD20+ CD8+ cytotoxic subset (Gingele et al., 2020).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig4-v2.jpg)\n\n**Figure 4.:** Immunophenotyping the tumor microenvironment with IMC data using ImmunoCluster. (A) IMC image showing an example\u00a0of five channels: PD-L1 (green), CD4 (yellow), E-cadherin (red), CD20 (magenta), and CD8\u03b1 (blue). Images with the segmented cell borders are\u00a0highlighted. The tumor and stroma areas are clear to the eye, and three regions were selected from each as shown (regions 1\u20136). (B) Multidimensional scaling plot of stroma and tumor regions. (C) Dimensionality reduced data (UMAP algorithm applied) annotated with FlowSOM clusters and split by region type. (D) Rank heatmap: ranked expression (1\u20138, where 8 is high) of seven\u00a0markers (CD20, CD8\u03b1, E-cadherin, Ki-67, PD-L1, CD68, and PD-1) and identified cell type. (E) Proportion of cell types for each tissue region.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig4-figsupp1-v2.jpg)\n\n### Diffuse large B-cell lymphoma lymph node section\n\nThe IMC DLBCL lymph node section was split by high and low Ki-67 expression to identify the highly proliferative tumor cells (Figure 5A); Ki-67 is used as a prognostic marker in DLBCL (Tang et al., 2017). The FlowSOM algorithm was applied to the data to split the IMC data into clusters; these clusters were projected onto the UMAP plot to visualize how these clusters were split between the Ki-67 high and low (Figure 5B). The marker expression ranking tool was applied to the clustered data and used to identify cell types (Figure 5C, Figure 5\u2014figure supplement 1). The majority of Ki-67 high population were proliferating tumor cells (84%), and the Ki-67 low population consisted of a heterogeneous collection of immune cell populations, such as CD4+ T-cells, CD8+ T-cells, B-cells, macrophages, and dendritic cells (DCs) that were successfully identified using the ImmunoCluster tool (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig5-v2.jpg)\n\n**Figure 5.:** Immunophenotyping the lymph node microenvironment with IMC data using ImmunoCluster. (A) IMC image showing an example of\u00a0four channels: DNA (red), CD20 (green), CD8\u03b1 (dark blue), and CD45RA (light blue). The image was split by high and low Ki-67 expression to identify highly proliferative cells (tumor). (B) Dimensionality reduced data (UMAP algorithm applied) annotated with FlowSOM clusters and split by Ki-67 high or low. (C) Rank heatmap: ranked expression (1\u20138, where 8\u00a0is high) of 12 markers (CD8, CD68, CD4, CD3, CD45, CD20, CD45RA, Ki-67, CD74, CD16, PD-L1, and CD11c) and identified cell type. (D) Proportion of cell types for Ki-67 high and Ki-67 low cell populations.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Clusters 1 and 2 were not used for downstream analysis as they were deemed to represent minor populations of cells that were nonspecifically binding the antibodies as they ranked highly for all markers (including lineage markers) of interest.\n\n### Flow cytometry\n\nThe HD BM taken during hip surgery was gated for the CD3+CD4+ population before analysis within the ImmunoCluster framework, with the aim of testing ImmunoCluster\u2019s ability to identify minor populations such as Tregs and their subpopulations (Kordasti et al., 2016). The FlowSOM algorithm was applied to the data, resulting in 40 clusters (Figure 6\u2014figure supplement 1), and a heatmap was created with median expression of markers to identify cell types (Figure 6B). Due to the markers used and the low prevalence of Tregs, the majority of cells were identified as CD4+ T-cells. Additionally, three populations of Tregs were identified by the ImmunoCluster tool: Tregs (CD25+CD127low) (3.6%, 1.3\u20135.5), Treg A (CD25+CD127low CD45RA+) (0.7%, 0.1\u20132.0), and Treg B-cells (CD25+CD127lowCCR4+CD95high) (0.9%, 0.2\u20132.4) (Figure 6C). The abundance of Treg A and B for all HDs is shown in Figure 6D, and their distribution was as expected (Kordasti et al., 2016).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig6-v2.jpg)\n\n**Figure 6.:** (A) Multidimensional scaling plot of each healthy donor (1\u20137). (B) Heatmap showing marker expression across clusters of identified cell types. (C) Dimensionality reduced data (UMAP algorithm applied) annotated with cell type. (D) Proportion of Treg A and B from total cells from healthy donors.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** This heatmap was used to identify the cell type of each cluster.\n\n## Discussion\n\nHere, we provide an overview of the flexibility and scope for utilizing ImmunoCluster, an open-access easy-to-use framework for LMC, IMC, and FC dataset analyses. The ImmunoCluster package emphasizes ease\u00a0of\u00a0use in the generation of flexible and modular cytometry analysis pipelines for applications such as clinical immune monitoring studies. Explanations of the functions and workflow have been provided, and an in-depth step-by-step protocol and tutorial are available on the GitHub site (https://github.com/kordastilab/ImmunoCluster).\n\nThe purpose for creating the ImmunoCluster framework was to support nonspecialist researchers to carry out complex immunophenotyping experiments. The dawn of \u2018cytometry big data\u2019 and its ever-growing utilization has surpassed the number of experimental parameters that a researcher can feasibly analyze as a collective. The ImmunoCluster framework was designed in collaboration between wet lab and computational biologists, with the purpose of creating a tool that enables state-of-the-art analysis, yet easy to use in its application. We provide sufficient detail and explanation for the nonspecialist researcher to understand the need for each analysis step as well as how to confidently execute the process, with an aim of performing transparent and reproducible analyses.\n\nImmunoCluster has been built with an emphasis on generalizability and scalability to facilitate a broad use and is an advance over other open-source tools as it provides an integrated framework to uniquely perform a complete computational pipeline on high-dimensional LMC, IMC, and FC data. The inclusion of IMC data analysis brings a unique element to the ImmunoCluster framework and differentiates it from other published protocols. ImmunoCluster was built to easily leverage many popular R packages for cytometry data (i.e., RPhenograph [Levine et al., 2015], Rtsne [van der Maaten and Hinton, 2008; Laurens van der, 2014], and FlowSOM [Van Gassen, 2015b]), selected because they are open-source and regularly maintained with extensive documentation. All methods prioritize customizable and attractive visualizations designed to be used by both dry- and wet-lab researchers/clinicians. The inclusion of adaptive downsampling of cells for the running of computationally intensive dimensionality reduction steps, using tools such as UMAP and tSNE, allows ImmunoCluster to generate cytometry analysis pipelines that are\u00a0readily scalable to a dataset of millions of cells across several samples and a variety of experimental or phenotypic conditions. ImmunoCluster can also be run on a local desktop/laptop computer with standard configuration, depending on the number of cells, adaptive downsampling settings and selection of clustering algorithms can usually be run within a day end-to-end (Figure 1\u2014figure supplement 2). Whilst the PhenoGraph clustering method does not readily scale, the FlowSOM-based clustering method can be implemented on much larger datasets.\n\nThe limitations of this computational framework are important to take into consideration when designing an experiment. Unsupervised clustering (stage 2) of samples is the most important stage of the framework, and its ability to accurately define populations across all samples is critical to all later stages of investigation. The number of k clusters to generate (cluster resolution) can significantly affect the ability to identify or determine a change in a biologically relevant population. Merging two subpopulations due to low resolution of clustering may mask an important experimental observation. Determining the precise number of clusters that are relevant for a given dataset is an important step. In our step-by-step guide, we provide complete documentation and clear user-friendly approaches to optimally define this.\n\nTechnical inter-sample marker signal variability due to batch effects may impact the ability of unsupervised analysis to reliably detect certain populations if significant batch effects are present. MDS plots created in stage 1 of the framework can be used to detect batch effects as well as other technical artifacts such as antibody staining anomalies. An approach commonly employed in mass cytometry to overcome this is to use sample barcoding, reducing the variability between each sample, allowing all samples to be exposed to the same antibody mixture (Schulz and Mei, 2019). Another regularly employed approach is the inclusion of a shared control sample in each independent batch, for\u00a0example, the same cell type as the experimental samples but all from the same HD. Statistical methods for batch correction may also be applied; in recent years, a class of methods called remove unwanted variation (RUV) have been developed, and CytofRUV (Trussart et al., 2020) is a recently developed package specifically designed for CyTOF dataset batch correction. If there are significant differences in the total number of cells recovered between samples, samples with many more cells may bias the clustering. Samples with very few cells recovered may result in information loss and missing populations that are in fact present. The ImmunoCluster framework provides users with two opportunities (creating the SingeCellExperiment and running the dimensionality reduction) to downsample, which means the same number of samples will be used for each sample, rectifying the problem of varying cell numbers. If a particular sample has very few cells, they may need to be excluded from the analysis as they may not be a representative sample. Although channel spillover is diminished in mass cytometry, it still exists in fluorescence-based FC and should be considered when designing antibody panels to reduce the effects on introducing cell phenotype artifacts in downstream unsupervised analysis. As such, initial exploratory data analysis (e.g., MDS plots) is key to determining if any of these confounding factors might be present in the data. Additionally, users may want to introduce fluorescence\u2010minus\u2010one controls, where cells are stained with all fluorescently\u00a0tagged antibodies except for the one of interest (Roederer, 2001).\n\n### Summary\n\nThe ImmunoCluster package increases the accessibility of advanced computational methods for users tasked with generating high-quality analysis of high-dimensional LMC, IMC, and FC data. More advanced users can leverage ImmunoCluster\u2019s data structures, methods, and suitability for scripted analysis to integrate our work with other R analysis tools and build on the package\u2019s foundation. In our clinically relevant immune monitoring case study setting, the ImmunoCluster framework successfully identified 24 phenotypically distinct cell clusters, and their abundance across all samples, and highlighted differentially represented cells between GvHD and none patients, all of which were consistent with the Hartmann et al. data (Hartmann et al., 2019). We also applied the framework to two sets of IMC data, showing the broad applicability of ImmunoCluster as well as the ease of being able to analyze the IMC data in\u00a0line with LMC data, helping compare these types of data, which will be useful in future studies where multiple technologies are being applied within one study. Finally, we implemented FC data into ImmunoCluster, confirming that it was able to analyze conventional FC data and identify rare immune cell populations. Currently, the preprocessing of raw files is carried out prior to implementation into the ImmunoCluster framework, but due to the flexibility and design of the tool, future implementations may include IMC data preprocessing within the ImmunoCluster R package. This versatile framework provides an opportunity to include all researchers with varying knowledge and experience in computational biology to be involved in the experimental project from experimental design, wet lab/clinical trial, all the way through the data analysis process and visualization.\n\n## Materials and methods\n\n### Data file preprocessing and preparation for implementation into the ImmunoCluster framework\n\n#### LMC data\n\nHere, we describe an example of the ImmunoCluster package analyzing previously published LMC data (CyTOF) from 15 patients with leukemia 30 and 90 days after BMT, previously published by Hartmann et al., 2019. After BMT, three of these patients suffered acute GvHD and 12 had no evidence of GvHD (noted as \u2018none\u2019 herein). For systems-level biomarker discovery within this trial, a panel of 33 antibodies were incorporated into the immunophenotyping panel (Supplementary file 1). The panel was designed to cover all major immune cell lineages and several functional subsets including T-, B-, NK, and myeloid cells and granulocytes (detailed in Hartmann et al., 2019). The marker panel also included a variety of immune-regulatory proteins, such as PD-1, PD-L1, and TIM3. The publicly available dataset from the Hartmann et al. study was extracted for the current study from the FlowRepository (http://flowrepository.org/id/FR-FCM-Z244) (Spidlen et al., 2012). Raw FCS files for the LMC dataset that were collected on the Helios CyTOF system (Fluidigm, UK) machine were first normalized using the free CyTOF 6.7 system control software (files can also be concatenated using the same software if necessary). These files were gated using FlowJo (version 10.5.3) (Becton, Dickinson and Company, UK) to remove beads, doublets, dead cells, and non-CD45+ cells as well as erythrocytes (CD235\u03b1\u03b2/CD61+) and neutrophils (CD16+) (Figure 8\u2014figure supplement 1), as described by Hartmann et al., 2019, before implementation into the ImmunoCluster framework. There are various alternative open-access tools that can be used to gate these files, such as OpenCyto (Finak et al., 2014), CytoExploreR (Hammill, 2020), and Cytoverse (https://cytoverse.org/).\n\n#### IMC data\n\nTwo different examples of IMC datasets were implemented into the framework. One IMC dataset was from a human tissue section taken from a patient with HNSCC. Consent was attained by the Guy\u2019s and St Thomas\u2019 Research Biobank, within King\u2019s Health Partners Integrated Cancer Centre. The second IMC dataset was from a lymph node section from a patient with DLBCL. Formalin-fixed paraffin-embedded (FFPE) DLBCL tumor tissue was obtained from King\u2019s College Hospital, in accordance with the Declaration of Helsinki and approved by the UK National Research Ethics Committee (reference 13/NW/0040). A detailed protocol is available for both datasets as a Supplementary file (Appendix 1 and 2, respectively). The raw HNSCC IMC data from 12 channels (10 markers\u00a0+\u00a02 intercalator-Ir channels; Supplementary file 2) and the raw DLBCL IMC data from 20 channels (19 markers\u00a0+\u00a0nuclei channel; Supplementary file 3) were processed with Python scripts and CellProfiler pipelines according to Schulz et al., 2018 to segment the image data into individual cells (Figure 8\u2014figure supplement 2). The mean marker intensity for each segmented cell was exported (comma-separated values [CSV] file) and either divided into six regions of equal area (HNSCC, three tumor and three stroma regions) or divided by Ki-67 expression (DLBCL, Ki-67 high or low). The mean marker intensity for each segmented cell was multiplied by 65,535 to recover the image intensities (Fluidigm IMC machine\u00a0=\u00a016 bit, the dynamic range of the measurements is 0 to (216)\u22121) and asinh (co-factor 0.8) transformed in R Studio. These CSV files were converted into FCS files and gated in Cytobank (Chen and Kotecha, 2014); functions are also available within the ImmunoCluster package to convert SCE or CSV data files into FCS format.\n\n#### FC data\n\nFC data from the BM of seven HDs were used to demonstrate the ability of the framework to analyze conventional FC data and identify rare immune cell populations. BM samples from HDs were obtained by extraction of the bone marrow cells from the bone of the femoral head. This noninterventional study was approved by the ethical committee of Cochin-Port Royal Hospital (Paris, France) (CLEP Decision No.: AAA-2020-08039). Femoral heads were obtained after informed consent during hip replacement surgery. These were cut in half and collected in a conservation medium (Hanks balanced salt solution with NaHCO3, Eurobio), supplemented with heparin (7%) and then transported to the laboratory at room temperature (RT). These were scraped with a spatula, ground in a mortar, and washed with a PBS solution supplemented with 100 \u00b5g/ml DNAse (Sigma Aldrich). The FCS files were gated for singlets using a FSCint/FSCpeak dot plot, and dead cells were removed using a forward scatter (FSC) and side scatter (SSC) dot plot. Leukocytes were gated on a CD45/SSC dot plot. Finally, they were gated to identify the CD3+CD4+ population of cells for analysis in the ImmunoCluster framework (gated in Cytobank; Chen and Kotecha, 2014).\n\n### Workflow overview\n\nThe ImmunoCluster package is accessible via GitHub (https://github.com/kordastilab/ImmunoCluster), where a detailed step-by-step walkthrough of the tool and R Markdown files (RMD) for LMC/FC and IMC data analysis are available. The RMD files permit users to logically work through the framework in sections in a \u2018click and play\u2019 manner. Additionally, all scripts to replicate figures published here are available via GitHub. Users will need to have R downloaded to run the ImmunoCluster tool. The ImmunoCluster framework provides tools and support, allowing researchers to follow a workflow that guides them through experimental design, data analyses, interpretation, and statistical significance testing, to publishable graphics identifying differences in phenotype and abundance of cells between conditions analyzed (Figure 2\u00a0and\u00a0Figure 7 and Figure 8). The framework comprises three core computational stages that are conducted by the ImmunoCluster tool:\n\n![Figure 7.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic outlining the typical cytometry workflow and its interactions with the SingleCellExperiement ImmunoCluster object. (B) SingleCellExperiment structure in ImmunoCluster. The SingleCellExperiment class is a data container, storing multiple layers of data to create the SingleCellExperiment object, which holds all relevant data for an experiment. Feature metadata: imported by the user in the form of a panel_metadata file, which is a table containing all markers measured, each annotated with either lineage or functional information for downstream analysis. Primary and transformed data: the imported expression data is stored in an assay; additionally, the scaled data (arcsinh transformed) is also stored in an assay, meaning both can be easily accessed. Cell metadata: the first metadata added to this element of the structure will be a sample_metadata file imported by the user, containing any relevant metadata for the experiment, that\u00a0is, days after treatment and graft versus host disease or none. Throughout the ImmunoCluster tool, more layers of metadata are added to cell metadata, that\u00a0is, cell cluster identification (FlowSOM and Phenograph). Dimension reductions: dimensionality reduction coordinates, such as UMAP and tSNE, are stored and can be easily accessed throughout the ImmunoCluster tool for downstream analyses.\n\n### Stage 1: Data import and quality control\n\n### Stage 2: Dimensionality reduction and unsupervised clustering\n\n![Figure 8.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig8-v2.jpg)\n\n**Figure 8.:** (0) Samples are stained/treated and measured, for imaging mass cytometry the tissue is segmented, and regions selected for further downstream analysis. After measurement, the raw data is normalized, concatenated, (combining flow cytometry standard files from the same samples, which may have been split due to large sample volume or technical issues) and gated, before importing into ImmunoCluster. (1) Quality control of data is carried out before analysis. (2) Data is reduced to two dimensions using either UMAP or tSNE algorithm, and data are clustered using the FlowSOM or Phenograph algorithms (these algorithms were selected as they are both high-performing unsupervised clustering algorithms; an in-depth comparison has previously been described by Weber and Robinson, 2016). (3) Data is visualized, and metadata, clusters, and cell-type labels are used to explore differences between samples/conditions. *A detailed step-by-step guide for using the ImmunoCluster tool is available: https://github.com/kordastilab/ImmunoCluster.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Calibration beads, doublets, dead cells, non-CD45+ cells, erythrocytes (CD235\u03b1\u03b2/CD61+), and neutrophils (CD16+) were removed.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (1) The imctools Python package (Schulz et al., 2018) was used to convert raw IMC files (.mcd,\u00a0.txt) into intermediatory\u00a0.tiff files, which were used as input files for the following tools. (2)\u00a0.tiff files were imported into CellProfiler for regions of interest (ROI) selection for classifier training. (3) IIastik was used for pixel classification, pixels were identified as nuclear, cytoplasmic, or background, and these class probabilities were exported as RGB (red, green, blue)\u00a0.tiff images. (4) The iIastik RGB probabilities and the original images were imported into CellProfiler for single-cell segmentation, mask generation, and marker quantification.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig8-figsupp3-v2.jpg)\n\n**Figure 8\u2014figure supplement 3.:** (A) Sample metadata file containing all metadata the researcher would like to explore throughout the data analysis stage. (B) Panel metadata file allows the researcher to rename parameters and select the markers that will be used for the dimensionality reduction of the data.\n\n![Figure 8\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig8-figsupp4-v2.jpg)\n\n**Figure 8\u2014figure supplement 4.:** Examples taken from the GitHub page (https://github.com/kordastilab/ImmunoCluster) highlighting the three different types of dimensionality reduction algorithms available for the users. Multidimensional scaling is part of the initial data exploration step followed by UMAP and tSNE dimensionality reduction in stage 2 of the ImmunoCluster framework.\n\n![Figure 8\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig8-figsupp5-v2.jpg)\n\n**Figure 8\u2014figure supplement 5.:** The ImmunoCluster tool saves all K clusters selected for the FlowSOM algorithm (e.g., 1\u201360 K clusters); therefore, researchers can view different numbers of K clusters for downstream analysis by changing the Flowsom_cc_K number (highlighted above).\n\n![Figure 8\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/62915/elife-62915-fig8-figsupp6-v2.jpg)\n\n**Figure 8\u2014figure supplement 6.:** The figure shows K clusters 2\u201360, for each value of K the sum of squared errors were plotted, and\u00a0the aim was to detect the \u2018elbow\u2019, which is the point where the variance stops decreasing sharply and the line flattens on the plot, representing the optimal value of K.\n\n### Stage 3: Annotation and differential testing\n",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "ff94db60-c48b-46ba-b527-88b7b5a0c960",
+      "submission_id": "29a5221c-3f77-42b3-a72d-95b76849a1d8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Simon Yona, The Hebrew University of Jerusalem Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62915.sa1](https://doi.org/10.7554/eLife.62915.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe revised manuscript now has a clearer analysis workflow. ImmunoCluster is a user-friendly pipeline R package for the analysis of flow and mass cytometry experiments and for imaging mass cytometry. We hope this provides non-computational immunologists with an opportunity to use dimensionality reduction, unsupervised clustering and differential expression/abundance analyses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"ImmunoCluster: A computational framework for the non-specialist to profile cellular heterogeneity in cytometry datasets\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Evan W Newell (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nThe authors propose ImmunoCluster, a user-friendly pipeline R package for the analysis of flow and mass cytometry experiments and for imaging mass cytometry. The claim is that this approach and package is easy to use for non-computational immunologists and facilitates dimensionality reduction, unsupervised clustering, and differential expression/abundance analyses.\n\nWhile this software is useful, the examples provided are good, there is very little/no novelty in the approach provided. The reviewers main concern is that the paper in its current form does not propose any new methodology with regards to clustering, visualization, or differential analysis. It was felt that the paper in its current form combines existing methodology in a user-friendly way that could indeed be important for biologists. In addition, the paper should acknowledge similar packages that already exist (eg CytofKit https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005112).\n\nThe combined reviewers' comments can be found below. For this manuscript to merit further consideration at eLife, clearer descriptions of ease of use of Immunocluster compared to other methods and other distinguishing features should be better highlighted and additional benchmarking comparisons.\n\nSummary:\n\nThis tool enables advances but other tools already available that are sufficient and therefore the authors will need to convince a large portion of the researcher to use this tool, better comparisons should be provided to help in answering this question and then also better convince readers to use this software.\n\nEssential revisions:\n\nThe authors note that several other similar packages influenced the development of ImmunoCluster (Refs 13-16) but it is unclear what makes this package novel. For instance, how does this workflow compare to other packages such as CATALYST (referenced by the authors) for quantifying cell cluster abundances and assessment of differential composition, which has been used in various ways in several publications (Crowell et al. F1000Res. 2020 [this one is new so not yet possible to have referenced], Weber et al., Communications Biology 2019, Nowicka et al., F1000Res. 2017, and related Fonseka et al. Sci. Trans. Med. 2018)? With regards to the differential abundance testing, there has been some excellent work in recent years, including DiffCyt (https://www.nature.com/articles/s42003-019-0415-5) and Cydar (https://pubmed.ncbi.nlm.nih.gov/28504682/). These methods among others seem to be the state-of-the-art in differential abundance analysis. How do your differential analysis results compare to these others, for example? Can you implement these methods in your pipeline?\n\nThe authors mention that the pipeline can accommodate millions of cells. Is this the case for all the clustering and visualization steps, or do you require downsampling? It would be helpful to see an analysis of run-time/details of the computer used to analyse the data. It appears the clustering methods implemented here (phenograph for example) might not work well if there are millions of cells across multiple samples.\n\nIn the MDS plots of samples (see Figure 3A), it is unclear what features are used to project the samples. Could you please elaborate on this point?\n\nDoes this current approach have any means for assessing or correcting for batch effects within the datasets? The authors only mention sample barcoding as an experimental plan to reduce batch effects, but fail to mention of any strategy to assess or correct for batch effects, which is a very important consideration that should be addressed.\n\nSimilarly, although channel spillover and differences in cell numbers were mentioned, no means were provided to assess or rectify these effects using the approach described.\n",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e53c05fd-2c2f-4b00-bee5-57638659cb6f",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C1",
+      "claim": "High-dimensional cytometry is an innovative tool for immune monitoring in health and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "High-dimensional cytometry is an innovative tool for immune monitoring in health and disease, and it has provided novel insight into the underlying biology as well as biomarkers for a variety of diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that reflects established scientific consensus about the utility of high-dimensional cytometry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "4159dbef-a647-45f5-ad97-f4f3a663f0c9",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C2",
+      "claim": "High-dimensional cytometry has provided novel insight into the underlying biology as well as biomarkers for a variety of diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "High-dimensional cytometry is an innovative tool for immune monitoring in health and disease, and it has provided novel insight into the underlying biology as well as biomarkers for a variety of diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about the contributions of high-dimensional cytometry to biological research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "173275b8-b24b-4b50-9a21-54554f89f304",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C3",
+      "claim": "Analysis of large multiparametric cytometry datasets usually requires specialist computational knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the analysis of large multiparametric datasets usually requires specialist computational knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about the current state of the field, reflecting common knowledge about computational barriers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "42b975dd-65ca-4d47-b55f-96415421435f",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C4",
+      "claim": "ImmunoCluster is an R package for immune profiling cellular heterogeneity in high-dimensional liquid and imaging mass cytometry, and flow cytometry data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe ImmunoCluster (https://github.com/kordastilab/ImmunoCluster), an R package for immune profiling cellular heterogeneity in high-dimensional liquid and imaging mass cytometry, and flow cytometry data, designed to facilitate computational analysis by a nonspecialist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the tool presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "d3090be5-34ca-4d71-80d5-9a53b13967da",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C5",
+      "claim": "ImmunoCluster is designed to facilitate computational analysis by a nonspecialist.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe ImmunoCluster (https://github.com/kordastilab/ImmunoCluster), an R package for immune profiling cellular heterogeneity in high-dimensional liquid and imaging mass cytometry, and flow cytometry data, designed to facilitate computational analysis by a nonspecialist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated design goal of the ImmunoCluster package.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "bd87a2e6-09cf-455e-8ccc-0179e81d7f93",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C6",
+      "claim": "The analysis framework implemented within ImmunoCluster is readily scalable to millions of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis framework implemented within ImmunoCluster is readily scalable to millions of cells and provides a variety of visualization and analytical approaches, as well as a rich array of plotting tools that can be tailored to users' needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated capability of the ImmunoCluster framework.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "8314870e-10ac-4a9f-a319-7523a8c6285e",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C7",
+      "claim": "ImmunoCluster provides a variety of visualization and analytical approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis framework implemented within ImmunoCluster is readily scalable to millions of cells and provides a variety of visualization and analytical approaches, as well as a rich array of plotting tools that can be tailored to users' needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes features of the ImmunoCluster package.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "11ee1282-0223-4454-8c51-828fbb937132",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C8",
+      "claim": "ImmunoCluster provides a rich array of plotting tools that can be tailored to users' needs.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis framework implemented within ImmunoCluster is readily scalable to millions of cells and provides a variety of visualization and analytical approaches, as well as a rich array of plotting tools that can be tailored to users' needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes features of the ImmunoCluster package.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "40a37ed5-7697-4cba-9d5e-b62d818279a7",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C9",
+      "claim": "The ImmunoCluster protocol consists of three core computational stages: data import and quality control, dimensionality reduction and unsupervised clustering, and annotation and differential testing.",
+      "claim_type": "EXPLICIT",
+      "source": "The protocol consists of three core computational stages: (1) data import and quality control; (2) dimensionality reduction and unsupervised clustering; and (3) annotation and differential testing, all contained within an R-based open-source framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the ImmunoCluster workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "f1861c4a-8121-4d2f-9db1-21ec77216163",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C10",
+      "claim": "ImmunoCluster is contained within an R-based open-source framework.",
+      "claim_type": "EXPLICIT",
+      "source": "The protocol consists of three core computational stages: (1) data import and quality control; (2) dimensionality reduction and unsupervised clustering; and (3) annotation and differential testing, all contained within an R-based open-source framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "f8338048-83e2-4bb4-9d78-9e51a125c9c4",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C11",
+      "claim": "There are 350 cluster of differentiation (CD) antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with 350 cluster of differentiation (CD) antigens, over 100 cytokines and chemokines, and many different cell subsets, this is a challenging task (Davis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Davis et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "a5903682-c31e-42d2-823a-56da020c0901",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C12",
+      "claim": "There are over 100 cytokines and chemokines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with 350 cluster of differentiation (CD) antigens, over 100 cytokines and chemokines, and many different cell subsets, this is a challenging task (Davis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Davis et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "7f49c711-e86b-44f6-8320-6f77074a1f4f",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C13",
+      "claim": "The complexity of the immune system with many antigens, cytokines, and cell subsets makes systems immunology a challenging task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with 350 cluster of differentiation (CD) antigens, over 100 cytokines and chemokines, and many different cell subsets, this is a challenging task (Davis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Davis et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "4b23d242-b318-4c6e-8d6d-8b46cb08f929",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C14",
+      "claim": "Mass cytometry and flow cytometry can profile over 40 markers on an individual cell.",
+      "claim_type": "EXPLICIT",
+      "source": "With the ability to profile over 40 markers on an individual cell, these techniques have rapidly expanded our understanding of the immune system and its perturbations throughout disease pathogenesis (Bertolo et al., 2020; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bertolo et al., 2020 and Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "5dd7c826-93ff-40a7-beb8-5d77e8a600eb",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C15",
+      "claim": "Mass cytometry and flow cytometry have rapidly expanded our understanding of the immune system and its perturbations throughout disease pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "With the ability to profile over 40 markers on an individual cell, these techniques have rapidly expanded our understanding of the immune system and its perturbations throughout disease pathogenesis (Bertolo et al., 2020; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bertolo et al., 2020 and Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "7e0fd38e-189f-4317-9306-524c6017410d",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C16",
+      "claim": "Comprehensive cytometry analyses produce large amounts of data and increased dimensionality, resulting in a demanding computational task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such comprehensive analyses produce large amounts of data and increased dimensionality, resulting in a demanding computational task to analyze (Newell and Cheng, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Newell and Cheng, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "40672d1e-0d79-4b87-9227-ba04489a60bf",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C17",
+      "claim": "A limiting factor to cytometry analyses is the requirement of an in-depth knowledge of computational biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Often, a limiting factor to these analyses is the requirement of an in-depth knowledge of computational biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about barriers in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "1045cae1-01bf-4592-85f3-b65b6499fd24",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C18",
+      "claim": "There is an unmet need for an easy-to-use flexible open-source computational framework to explore high-dimensional single-cell cytometry datasets for nonspecialists.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an unmet need for an easy-to-use flexible open-source computational framework to explore a variety of high-dimensional single-cell cytometry datasets such as LMC, IMC, and FC within a single framework for nonspecialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about a gap in the field that motivates the development of ImmunoCluster.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "09392807-837f-4ce8-9cd7-8c4949cda538",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C19",
+      "claim": "Previous computational cytometry workflows include CyTOF workflow, CITRUS, and CapX.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of previous computational cytometry workflows have been proposed, including CyTOF workflow (Nowicka, 2019), (Diggins et al., 2015) and CapX (Ashhurst, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nowicka, 2019; Diggins et al., 2015; and Ashhurst, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "abc57ee7-38f5-4fcd-95ce-20c1d571c79f",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C20",
+      "claim": "Some cytometry workflows have been incorporated into graphical user interfaces or code-based workflow packages such as CATALYST, Cytofkit, diffcyt, and Spectre.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, some of these workflows have been incorporated into graphical user interfaces (GUI) or code-based workflow packages such as CATALYST (Crowell et al., 2020), Cytofkit (Chen et al., 2016), diffcyt (Weber et al., 2019), and Spectre (Ashhurst, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Crowell et al., 2020; Chen et al., 2016; Weber et al., 2019; and Ashhurst, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "30968a5b-c959-434e-9f04-11b4db6cb1d1",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C21",
+      "claim": "Existing cytometry workflow packages can be challenging to implement without significant computational knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these approaches can be challenging to implement without significant computational knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about limitations of existing tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "556887a7-4765-44d4-9214-e00283a2063a",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C22",
+      "claim": "ImmunoCluster builds on and extends the framework proposed in the CyTOF workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "We have therefore developed ImmunoCluster, building on and extending the framework proposed in the CyTOF workflow (Nowicka, 2019), to create modular, flexible, and easy-to-use implementations of cytometry analysis pipelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship between ImmunoCluster and prior work, supported by citation to Nowicka, 2019.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "554206cc-0b61-44d5-8294-1689f7470840",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C23",
+      "claim": "ImmunoCluster provides appropriate data structures and methods to increase the utility of high-dimensional cytometry methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The ImmunoCluster package is a framework that provides appropriate data structures and methods to increase the utility of these high-dimensional methods and make data analysis and interpretation accessible to all researchers to facilitate immune phenotyping projects, such as those associated with preclinical and clinical studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "13b93578-c1e4-46b2-8d81-12bcc71505a7",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C24",
+      "claim": "ImmunoCluster makes data analysis and interpretation accessible to all researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "The ImmunoCluster package is a framework that provides appropriate data structures and methods to increase the utility of these high-dimensional methods and make data analysis and interpretation accessible to all researchers to facilitate immune phenotyping projects, such as those associated with preclinical and clinical studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design goal of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "075c995e-6769-4d05-8d7f-f66f3dbd5d0b",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C25",
+      "claim": "ImmunoCluster focuses on the organization and visualization of data to help define biological identity of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster is an R package and framework that focuses on the organization and visualization of data to help define biological identity of cells, construct a hierarchy of biologically meaningful cell populations, and detect significant changes between conditions, timepoints, and groups, including serial samples from a clinical trial setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the focus and capabilities of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "8082aa3f-bdf5-4392-a881-3ff424847d99",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C26",
+      "claim": "ImmunoCluster can construct a hierarchy of biologically meaningful cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster is an R package and framework that focuses on the organization and visualization of data to help define biological identity of cells, construct a hierarchy of biologically meaningful cell populations, and detect significant changes between conditions, timepoints, and groups, including serial samples from a clinical trial setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "fd7f9546-597a-45b3-8be3-389bc14f0b18",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C27",
+      "claim": "ImmunoCluster can detect significant changes between conditions, timepoints, and groups, including serial samples from a clinical trial setting.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster is an R package and framework that focuses on the organization and visualization of data to help define biological identity of cells, construct a hierarchy of biologically meaningful cell populations, and detect significant changes between conditions, timepoints, and groups, including serial samples from a clinical trial setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "ef9b76f3-5bc0-4300-95a1-666369c75b8a",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C28",
+      "claim": "ImmunoCluster uses state-of-the-art computational techniques in an easily amendable and flexible format.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework uses state-of-the-art computational techniques in an easily amendable and flexible format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design philosophy of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "b3fbb45d-b324-450d-897f-d0d37b421be9",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C29",
+      "claim": "Users can manipulate ImmunoCluster figures and outputs to suit their specific needs.",
+      "claim_type": "EXPLICIT",
+      "source": "Users can manipulate figures and outputs to suit their specific needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "56247a45-5395-48b5-b607-85efedff6a8a",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C30",
+      "claim": "ImmunoCluster has the flexibility to incorporate novel computational methods in dimensionality reduction, clustering, and trajectory analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The computational approaches used to analyze high-dimensional data are rapidly evolving, and ImmunoCluster has the flexibility to incorporate these novel computational methods in dimensionality reduction, clustering, and trajectory analysis within its framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the extensibility of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "008b7a51-f0dc-46e8-8347-3a17c6219520",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C31",
+      "claim": "ImmunoCluster is designed to be simple enough to be implemented by users with only a basic knowledge of R.",
+      "claim_type": "EXPLICIT",
+      "source": "The computational framework is designed for ease of use and broad applicability so that it is simple enough to be implemented by users with only a basic knowledge of R, as well as possessing the flexibility for more advanced users to incorporate additional new methodology and build on the framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design goal of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "f18164d1-daf1-4cb2-ad5e-7da32a58dabb",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C32",
+      "claim": "ImmunoCluster possesses flexibility for more advanced users to incorporate additional new methodology and build on the framework.",
+      "claim_type": "EXPLICIT",
+      "source": "The computational framework is designed for ease of use and broad applicability so that it is simple enough to be implemented by users with only a basic knowledge of R, as well as possessing the flexibility for more advanced users to incorporate additional new methodology and build on the framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the extensibility of ImmunoCluster for advanced users.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "8b27df3d-e811-48d1-b946-31dce4defab8",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C33",
+      "claim": "ImmunoCluster relies on the SingleCellExperiment class.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework relies on the SingleCellExperiment class (Lun, 2017), which means that the flow cytometry standard (FCS) data is contained within a purpose-built object that stores all stages of analysis to permit multiple analysis paths to be performed in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of ImmunoCluster, supported by citation to Lun, 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "1c8932bf-61ec-4b13-97c7-f022473b99a7",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C34",
+      "claim": "The SingleCellExperiment class stores all stages of analysis to permit multiple analysis paths to be performed in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework relies on the SingleCellExperiment class (Lun, 2017), which means that the flow cytometry standard (FCS) data is contained within a purpose-built object that stores all stages of analysis to permit multiple analysis paths to be performed in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the SingleCellExperiment class used in ImmunoCluster, supported by citation to Lun, 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "1ed494a5-0a05-4ded-a043-7ab8abe08e40",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C35",
+      "claim": "ImmunoCluster incorporates methods for applying popular R packages including RPhenograph, Rtsne, and FlowSOM.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework incorporates methods for applying popular R packages (i.e., RPhenograph [Chen and Chen, 2015], Rtsne [Krijthe, 2018], and FlowSOM [Van Gassen, 2015a]) along with convenient 'wrapper functions' allowing for the use these popular dimensionality reduction and clustering algorithms in an easy format for nonspecialists to rapidly produce interpretable data that are extendable to advanced experimental designs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the integration of existing tools in ImmunoCluster, supported by citations to Chen and Chen, 2015; Krijthe, 2018; and Van Gassen, 2015a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "0feb6e90-b50d-492e-bc98-fe1aa0dea917",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C36",
+      "claim": "ImmunoCluster contains functionality for adaptive downsampling at the import and dimensionality reduction stages of the pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster also contains functionality for adaptive downsampling at the import and dimensionality reduction stages of the pipeline to overcome significant increases in runtime associated with large datasets in dimensionality reduction algorithms like UMAP and tSNE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "468d4c01-eda3-4e48-8af1-c63a446bc280",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C37",
+      "claim": "Adaptive downsampling in ImmunoCluster overcomes significant increases in runtime associated with large datasets in dimensionality reduction algorithms like UMAP and tSNE.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster also contains functionality for adaptive downsampling at the import and dimensionality reduction stages of the pipeline to overcome significant increases in runtime associated with large datasets in dimensionality reduction algorithms like UMAP and tSNE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose of the adaptive downsampling feature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "2aaeb798-6b9a-466d-b8d0-c3b18ffc5929",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C38",
+      "claim": "The outputs from ImmunoCluster are created using the ggplot package.",
+      "claim_type": "EXPLICIT",
+      "source": "The outputs from ImmunoCluster are created using the ggplot package, which generates ggplot graphical objects that are flexible, can be further modified and utilized directly into figures for reports and publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the visualization approach used in ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "ca7e070f-ab91-4cb5-8f26-189c60db0159",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C39",
+      "claim": "The core of the ImmunoCluster visualization tool was developed using scDataviz, a Bioconductor package.",
+      "claim_type": "EXPLICIT",
+      "source": "The core of the visualization tool was developed using scDataviz, a Bioconductor package (Blighe, 2020a) for visualizing single-cell data and influenced by the visual framework outlined in CyTOF workflow (Nowicka, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development of the visualization component, supported by citations to Blighe, 2020a and Nowicka, 2019.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "73d499fb-30b7-4f16-bca2-ad718d41a938",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C40",
+      "claim": "ImmunoCluster offers an alternative to currently used frameworks such as CATALYST and Cytofkit.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster offers an alternative to the currently used frameworks such as CATALYST (Crowell et al., 2020) and Cytofkit (Chen et al., 2016), with a focus on ease of use for biologists, as well as offering additional novel aspects for its users compared with other published frameworks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This positions ImmunoCluster relative to existing tools, supported by citations to Crowell et al., 2020 and Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "2b607a2e-5d41-4664-b17e-7820d22b416d",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C41",
+      "claim": "ImmunoCluster enables the analysis of IMC data, which is unique to ImmunoCluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, and unique to ImmunoCluster, the scope of functionality in this package also enables the analysis of IMC data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a unique feature of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "e1ecde8e-6eba-4681-b60e-1ba22be32665",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C42",
+      "claim": "Users are able to run IMC data in line with FC and LMC data analyses in ImmunoCluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Users are able to run IMC data in line with FC and LMC data analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "83537f08-c261-4ce7-a734-e72153e51e67",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C43",
+      "claim": "IMC data has lower resolution compared with FC and LMC data.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the lower resolution of IMC data (compared with FC and LMC), we specifically designed the 'ranked expression heatmap' function to work with IMC data, which allows users to rank markers measured to help identify cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about the characteristics of IMC data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "dc4da85e-3002-47cc-989e-692b8c4663aa",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C44",
+      "claim": "ImmunoCluster includes a 'ranked expression heatmap' function specifically designed to work with IMC data.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the lower resolution of IMC data (compared with FC and LMC), we specifically designed the 'ranked expression heatmap' function to work with IMC data, which allows users to rank markers measured to help identify cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific feature of ImmunoCluster designed for IMC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "ee555d2c-d921-4d72-a778-a8d1bc681027",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C45",
+      "claim": "IMC provides a means to analyze the spatial dimension of cells in situ within tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "IMC provides a means to analyze the spatial dimension of the cells in situ within tissues, which can provide important insight when ascribing functionality to cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of IMC technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "6cfd93b2-d14f-4035-bff4-da67ebcac9a9",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C46",
+      "claim": "Methods for analyzing large cytometry datasets, particularly IMC datasets, in an open-source computational environment are currently limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods for analyzing large cytometry datasets, particularly IMC datasets, in an open-source computational environment are currently limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about a gap in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "82807940-1213-4a22-9be6-7083294b266e",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C47",
+      "claim": "ImmunoCluster has been designed for use by a nonspecialist.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster has been designed for use by a nonspecialist; however, it would be useful to a range of users from wet-lab nonspecialist experimentalists to experienced computational biologists with potential utility in day-to-day research through to large-scale studies involving multiple longitudinal serial biopsies where samples need to be analyzed and compared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the target user base of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "3efca2a4-7ca3-43eb-890f-fbe0b2f26313",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C48",
+      "claim": "ImmunoCluster would be useful to a range of users from wet-lab nonspecialist experimentalists to experienced computational biologists.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster has been designed for use by a nonspecialist; however, it would be useful to a range of users from wet-lab nonspecialist experimentalists to experienced computational biologists with potential utility in day-to-day research through to large-scale studies involving multiple longitudinal serial biopsies where samples need to be analyzed and compared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the potential user base of ImmunoCluster.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "94942b29-38d8-4a75-a5bf-a9eb5d40d0ad",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C49",
+      "claim": "Clinical immune monitoring is an area of increasing utilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical immune monitoring is an area of increasing utilization (Hernandez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hernandez et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "8ff9d58c-1353-4a80-93f9-361088ce7d8f",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C50",
+      "claim": "ImmunoCluster can detect clinically relevant perturbations in immune cellular heterogeneity in LMC, IMC, and FC datasets in human patient and/or healthy samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current work, we will present examples of ImmunoCluster's ability to detect clinically relevant perturbations in immune cellular heterogeneity in LMC, IMC, and FC datasets in human patient and/or healthy samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "6d7c1d43-c660-4908-9718-e9be835d44b9",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C51",
+      "claim": "ImmunoCluster is easily extensible to several arbitrary experimental designs.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster is easily extensible to several arbitrary experimental designs and can be utilized to aid both discovery of novel subpopulations of cells within heterogeneous samples or as a foundation for monitoring longitudinal changes or responses to treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flexibility of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "0ad25ebb-ab29-4d71-9971-b2f3c6b9848e",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C52",
+      "claim": "ImmunoCluster can be utilized to aid discovery of novel subpopulations of cells within heterogeneous samples.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster is easily extensible to several arbitrary experimental designs and can be utilized to aid both discovery of novel subpopulations of cells within heterogeneous samples or as a foundation for monitoring longitudinal changes or responses to treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a use case for ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "5423d279-48f5-4d20-a7cc-cc8c01c0b296",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C53",
+      "claim": "ImmunoCluster can be used as a foundation for monitoring longitudinal changes or responses to treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster is easily extensible to several arbitrary experimental designs and can be utilized to aid both discovery of novel subpopulations of cells within heterogeneous samples or as a foundation for monitoring longitudinal changes or responses to treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a use case for ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "33f729ef-4eaf-415d-895f-684abd017b63",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C54",
+      "claim": "ImmunoCluster provides a resource that will permit unsupervised high-dimensional data analysis to be more widely adopted in immunobiology and many other disciplines.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, ImmunoCluster provides a resource that will permit unsupervised high-dimensional data analysis to be more widely adopted in immunobiology and many other disciplines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential impact of ImmunoCluster.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "058937e4-47df-4f85-a50d-5a4c1f006951",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C55",
+      "claim": "The chosen LMC dataset includes mass cytometry data from 15 patients with leukemia who all received bone marrow transplant.",
+      "claim_type": "EXPLICIT",
+      "source": "The chosen dataset (Hartmann et al., 2019) includes mass cytometry data from 15 patients with leukemia who all received bone marrow transplant (BMT), three of whom developed acute graft versus host disease (GvHD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used, supported by citation to Hartmann et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "d5f33224-5fad-4792-ae55-242bd30fbe23",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C56",
+      "claim": "Three of the 15 patients in the LMC dataset developed acute graft versus host disease (GvHD).",
+      "claim_type": "EXPLICIT",
+      "source": "The chosen dataset (Hartmann et al., 2019) includes mass cytometry data from 15 patients with leukemia who all received bone marrow transplant (BMT), three of whom developed acute graft versus host disease (GvHD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used, supported by citation to Hartmann et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "8b7ed5cb-138e-46c6-a377-3bf5e62b3876",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C57",
+      "claim": "Samples in the LMC dataset were taken at 30 and 90 days post-BMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were taken at 30 and 90 days post-BMT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "053e27fa-a925-4d60-839c-da14d0583848",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C58",
+      "claim": "Thirty-three cell markers, both lineage and functional, were analyzed using mass cytometry in the LMC dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-three cell markers, both lineage and functional, were analyzed using mass cytometry (Helios CyTOF system).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "eb3ea4ea-c0f4-40f8-a557-2e6b3a4095b8",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C59",
+      "claim": "A typical pipeline run on the full 2.3 million cell LMC GvHD dataset (with UMAP downsampling to 500k cells) takes approximately 110 minutes on a 2.9 GHz Intel Core i7 MacBook pro with 16 GB RAM.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that a typical pipeline run on the full 2.3 million cell LMC GvHD dataset (with UMAP downsampling to 500k cells) would take ~110 min on a 2.9 GHz Intel Core i7 MacBook pro with 16 GB RAM (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a performance measurement of ImmunoCluster, with supporting data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "c8b70f32-3ae6-4033-b9b7-19f0bf68dddb",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C60",
+      "claim": "There was a difference in the distribution of cells from GvHD and 'none' across the cell islands between both timepoints, 30 and 90 days after BMT.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a difference in the distribution of cells from GvHD and 'none' across the cell islands between both timepoints, 30 and 90 days after BMT (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the analysis, supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "07d1f57e-abb4-4656-bda1-beefb4133a83",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C61",
+      "claim": "The mass cytometry panel used in the Hartmann et al. experiment was specifically designed to identify all major human immune cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass cytometry panel used in this experiment was specifically designed to identify all major human immune cell lineages (Hartmann et al., 2019); the marker expression across cell islands was visualized and indicated cell types present within the cell islands (Figure 2B) (expression of all markers measured; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design from Hartmann et al., 2019, with supporting figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "30a44b39-f886-40f4-9f2a-814a3f09d6e8",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C62",
+      "claim": "The FlowSOM clustering algorithm with consensus clustering metaclustering has been demonstrated to scale well to large cytometry datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "To further distinguish the cell types that were present in the cell islands and visible from the dimensionality reduced UMAP plots (Figure 2B), the FlowSOM clustering algorithm with consensus clustering metaclustering was applied, which has been demonstrated to scale well to large cytometry datasets (Weber and Robinson, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Weber and Robinson, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "10217bee-b264-43b6-96a5-48eafb776fe4",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C63",
+      "claim": "ImmunoCluster successfully replicated the findings from Hartmann et al., 2019, with 24 of the cell populations being identified.",
+      "claim_type": "EXPLICIT",
+      "source": "A heatmap showing the expression of the 33 markers measured was used to identify cluster cell types (Figure 2\u2014figure supplement 2), and ImmunoCluster was successfully able to replicate the findings from Hartmann et al., 2019, with 24 of the cell populations being identified (Figure 2C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation of ImmunoCluster's performance against published results, supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "658c0cad-1a20-41d9-9726-f49bebfafcb3",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C64",
+      "claim": "CD14+CD16- monocytes were identified as the most abundant population in the LMC dataset, correlating with the Hartmann et al. data.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of all cell types across all samples was measured, and CD14+CD16- monocytes were identified as the most abundant population, correlating with the Hartmann et al. data (Hartmann et al., 2019; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis that matches published results, supported by citation and Figure 2E.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "f6b6bc0d-6b06-4321-b679-462dcefa929b",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C65",
+      "claim": "Significant differences between memory B-cells (FDR p=4.38\u00d710\u22123), na\u00efve B-cells (FDR p=1.35\u00d710\u22122), and na\u00efve CD4+ T-cells (FDR p=3.47\u00d710\u22122) were identified between the GvHD and none groups using a t-test.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, significant differences between memory B-cells (false discovery rate [FDR] p=4.38\u00d710\u22123), na\u00efve B-cells (FDR p=1.35\u00d710\u22122), and na\u00efve CD4+ T-cells (FDR p=3.47\u00d710\u22122) were identified between the GvHD and none (Figure 3B, C) using a t-test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the analysis, supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "eb8eb1fa-374e-4378-8282-8af9d27cf265",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C66",
+      "claim": "A difference in number of na\u00efve B-cells was previously reported by Hartmann et al., 2019 in this dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "A difference in number of na\u00efve B-cells was previously reported by Hartmann et al., 2019 in this dataset and can be seen in Figure 2A (using Figure 2D for cell island identification), where there is a noticeable reduction of these cells in the GvHD patients.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This references a finding from Hartmann et al., 2019 that is also visible in the current analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "d5e437b7-2423-4742-be50-e0148eebd47c",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C67",
+      "claim": "A reduction in na\u00efve CD4+ T-cells was previously reported by Hartmann et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a reduction in na\u00efve CD4+ T-cells can also be seen, which was also previously reported, but to a lesser extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a finding from Hartmann et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "8d3abc51-8d54-45a9-851f-b1e8c816b455",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C68",
+      "claim": "Diffcyt identified the same three cell clusters (memory B-cells, na\u00efve B-cells, and na\u00efve CD4+ T-cells) as differentially abundant (FDR p<0.05) between the GvHD and none conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared ImmunoCluster's differential abundance testing output (stat_test_clust), run in the t-test mode, with the Hartmann et al. data (Hartmann et al., 2019) into the diffcyt computational framework (Weber et al., 2019), which is a state-of-the-art tool for differential discovery analyses. Diffcyt identified the same three cell clusters (memory B-cells, na\u00efve B-cells, and na\u00efve CD4+ T-cells) as differentially abundant (FDR p<0.05) between the GvHD and none conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with another computational tool, supported by citations to Hartmann et al., 2019 and Weber et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "2fb91c99-714d-48e4-9e79-a8c93a1f36d2",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C69",
+      "claim": "ImmunoCluster's statistical output shows concordance with diffcyt in identifying na\u00efve B-cells and na\u00efve CD4+ T-cells as differentially abundant populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates concordance with ImmunoCluster's statistical output that identified na\u00efve B-cells and na\u00efve CD4+ T-cells as one of the principal differentially abundant populations, which was also identified in the original analysis of the data (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of ImmunoCluster's performance against another tool and the original analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "d261a9af-9e5e-46c7-9d25-cd990d7cb3a6",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C70",
+      "claim": "GvHD patients had a higher expression of PD-1 compared to none patients in CD8+ T-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Visually, GvHD patients had a higher expression of PD-1 and a noticeable difference in the Ki-67 proliferation marker as expected for these patients (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the analysis, supported by Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "17c880ee-23a2-475c-aba5-c45473de843b",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C71",
+      "claim": "GvHD patients had a noticeable difference in the Ki-67 proliferation marker compared to none patients in CD8+ T-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Visually, GvHD patients had a higher expression of PD-1 and a noticeable difference in the Ki-67 proliferation marker as expected for these patients (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the analysis, supported by Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "bef74329-8622-4825-9307-277d17ae040f",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C72",
+      "claim": "The expression of PD-1, PD-L1, TIM3, Ki-67, and TCRVa24-Ja18 has been proposed previously as candidate biomarkers for immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "These markers help assess the functional states of cells and the checkpoint-related molecules and proliferative activity markers such as PD-1, PD-L1, TIM3, Ki-67, and TCRVa24-Ja18; the expression of these antigens has been proposed previously as candidate biomarkers for immunotherapy (Hartmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hartmann et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "46eedb99-6165-484f-8029-903d9189bf5a",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C73",
+      "claim": "ImmunoCluster was able to distinguish between the stroma and tumor regions of the tissue section from the HNSCC tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "The ImmunoCluster tool was able to distinguish between the stroma and tumor regions of the tissue section from the HNSCC tumor (Figure 4B), and with additional markers could provide a more in-depth analysis of the cell phenotypes in each respective region of the tumor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the IMC analysis, supported by Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "0b8bbee6-69a3-4bc4-9842-8219f2e7a367",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C74",
+      "claim": "Dimensionality reduction of the HNSCC IMC data clearly separated the cell islands belonging to the stroma and tumor regions of the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimensionality reduction of the data clearly separated the cell islands belonging to the stroma and tumor regions of the tissue (Figure 4C), suggesting different cell phenotypes between the regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the IMC analysis, supported by Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "35055fa1-8492-4a1c-b131-9b1491492f11",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C75",
+      "claim": "High expression of E-cadherin can be used as a marker of cancerous tissue in HNSCC.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of E-cadherin can be used as a marker of cancerous tissue in HNSCC, and its expression correlates with the cancer regions selected for analysis (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about a known biomarker, with supporting data in Figure 4D.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "ca565a15-624e-4c51-ab93-6e8accb98f5c",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C76",
+      "claim": "E-cadherin expression correlates with the cancer regions selected for analysis in the HNSCC tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of E-cadherin can be used as a marker of cancerous tissue in HNSCC, and its expression correlates with the cancer regions selected for analysis (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the IMC analysis, supported by Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "0017d6ba-657d-4bd3-95da-6ea82ea2a1f6",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C77",
+      "claim": "Regions 2 and 3 of the HNSCC tumor mostly consist of proliferating (Ki-67+) tumor cells and macrophages (tumor-associated and PD-L1+).",
+      "claim_type": "EXPLICIT",
+      "source": "Regions 2 and 3 of the tumor mostly consist of proliferating (Ki-67+) tumor cells and macrophages (tumor-associated and PD-L1+).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the IMC analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "48a31aee-479a-42c8-8b7a-e46d8bec33af",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C78",
+      "claim": "Region 1 of the HNSCC tumor was a mix of immune cells, B-cells, and PD-L1+ CD8+ T-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Region 1 was a mix of immune cells, B-cells, and PD-L1+ CD8+ T-cells (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the IMC analysis, supported by Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "5587f427-70db-4b38-9e96-491d3f6fc678",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C79",
+      "claim": "Stromal regions 5 and 6 of the HNSCC tumor are mostly PD-L1+ macrophages and CD8+ T-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Stromal regions 5 and 6 are mostly PD-L1+ macrophages and CD8+ T-cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the IMC analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "381cc44f-d3f3-4792-9928-d6d9a8a9a740",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C80",
+      "claim": "Region 4 of the HNSCC tumor has a cluster of mixed immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Region 4 has a cluster of mixed immune cells, and from the IMC image (Figure 4A) we can see that this region looks like the tumor is encroaching into the stromal region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the IMC analysis, supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "b16e7856-2f74-457e-a7eb-36223801d602",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C81",
+      "claim": "The stroma of the HNSCC tumor seems to be mostly nonproliferating cells (Ki-67- compared to the tumor region) and CD8+ T-cells, including a CD20+ CD8+ cytotoxic subset.",
+      "claim_type": "EXPLICIT",
+      "source": "The stroma seems to be mostly nonproliferating cells (Ki-67- compared to the tumor region) and CD8+ T-cells, including a CD20+ CD8+ cytotoxic subset (Gingele et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the IMC analysis, with a citation to Gingele et al., 2020 for the CD20+ CD8+ cytotoxic subset.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "d4b4a740-ee7d-4ee4-b5cf-b8ddcbf164c8",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C82",
+      "claim": "Ki-67 is used as a prognostic marker in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "The IMC DLBCL lymph node section was split by high and low Ki-67 expression to identify the highly proliferative tumor cells (Figure 5A); Ki-67 is used as a prognostic marker in DLBCL (Tang et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Tang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "4148086d-b0c6-43a6-9112-21158b262957",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C83",
+      "claim": "The majority of Ki-67 high population in the DLBCL lymph node were proliferating tumor cells (84%).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of Ki-67 high population were proliferating tumor cells (84%), and the Ki-67 low population consisted of a heterogeneous collection of immune cell populations, such as CD4+ T-cells, CD8+ T-cells, B-cells, macrophages, and dendritic cells (DCs) that were successfully identified using the ImmunoCluster tool (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the IMC analysis, supported by Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "b31402a4-1621-44a3-ae62-52121b7d4ab6",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C84",
+      "claim": "The Ki-67 low population in the DLBCL lymph node consisted of a heterogeneous collection of immune cell populations, such as CD4+ T-cells, CD8+ T-cells, B-cells, macrophages, and dendritic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of Ki-67 high population were proliferating tumor cells (84%), and the Ki-67 low population consisted of a heterogeneous collection of immune cell populations, such as CD4+ T-cells, CD8+ T-cells, B-cells, macrophages, and dendritic cells (DCs) that were successfully identified using the ImmunoCluster tool (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the IMC analysis, supported by Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "fc032e28-0054-4621-83d6-3a338e8b66f9",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C85",
+      "claim": "ImmunoCluster successfully identified immune cell populations in the DLBCL lymph node section.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of Ki-67 high population were proliferating tumor cells (84%), and the Ki-67 low population consisted of a heterogeneous collection of immune cell populations, such as CD4+ T-cells, CD8+ T-cells, B-cells, macrophages, and dendritic cells (DCs) that were successfully identified using the ImmunoCluster tool (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the IMC analysis, supported by Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "8b606182-2792-4442-ab62-46dd696173d5",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C86",
+      "claim": "ImmunoCluster identified three populations of Tregs: Tregs (CD25+CD127low) (3.6%, 1.3\u20135.5), Treg A (CD25+CD127low CD45RA+) (0.7%, 0.1\u20132.0), and Treg B-cells (CD25+CD127lowCCR4+CD95high) (0.9%, 0.2\u20132.4).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, three populations of Tregs were identified by the ImmunoCluster tool: Tregs (CD25+CD127low) (3.6%, 1.3\u20135.5), Treg A (CD25+CD127low CD45RA+) (0.7%, 0.1\u20132.0), and Treg B-cells (CD25+CD127lowCCR4+CD95high) (0.9%, 0.2\u20132.4) (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the FC analysis, supported by Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "768c23d3-c6d3-4d25-acb0-f7321ba41455",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C87",
+      "claim": "The distribution of Treg A and B in healthy donors was as expected.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of Treg A and B for all HDs is shown in Figure 6D, and their distribution was as expected (Kordasti et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the FC analysis that matches expectations from Kordasti et al., 2016, supported by Figure 6D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "04fc53f3-d13e-4007-b65a-04cf04bba697",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C88",
+      "claim": "ImmunoCluster is an open-access easy-to-use framework for LMC, IMC, and FC dataset analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide an overview of the flexibility and scope for utilizing ImmunoCluster, an open-access easy-to-use framework for LMC, IMC, and FC dataset analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "fec0a094-c3ec-40dd-8576-6b7da09f3a66",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C89",
+      "claim": "The purpose for creating the ImmunoCluster framework was to support nonspecialist researchers to carry out complex immunophenotyping experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The purpose for creating the ImmunoCluster framework was to support nonspecialist researchers to carry out complex immunophenotyping experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the motivation for developing ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "34d1934d-a107-419c-8c4a-b799d8bf9045",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C90",
+      "claim": "The dawn of 'cytometry big data' and its ever-growing utilization has surpassed the number of experimental parameters that a researcher can feasibly analyze as a collective.",
+      "claim_type": "EXPLICIT",
+      "source": "The dawn of 'cytometry big data' and its ever-growing utilization has surpassed the number of experimental parameters that a researcher can feasibly analyze as a collective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "6904809d-762f-4041-ad4c-36409bca088d",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C91",
+      "claim": "ImmunoCluster was designed in collaboration between wet lab and computational biologists.",
+      "claim_type": "EXPLICIT",
+      "source": "The ImmunoCluster framework was designed in collaboration between wet lab and computational biologists, with the purpose of creating a tool that enables state-of-the-art analysis, yet easy to use in its application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development process of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "5eb17208-1662-4230-9d24-80d0203776bb",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C92",
+      "claim": "ImmunoCluster has been built with an emphasis on generalizability and scalability to facilitate a broad use.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster has been built with an emphasis on generalizability and scalability to facilitate a broad use and is an advance over other open-source tools as it provides an integrated framework to uniquely perform a complete computational pipeline on high-dimensional LMC, IMC, and FC data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design philosophy of ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "a3114c0b-0394-4e02-a64a-aabcd5b30cd3",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C93",
+      "claim": "ImmunoCluster is an advance over other open-source tools as it provides an integrated framework to uniquely perform a complete computational pipeline on high-dimensional LMC, IMC, and FC data.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster has been built with an emphasis on generalizability and scalability to facilitate a broad use and is an advance over other open-source tools as it provides an integrated framework to uniquely perform a complete computational pipeline on high-dimensional LMC, IMC, and FC data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the advantages of ImmunoCluster over existing tools.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "3e715156-ecae-4859-9fbc-9fb77eced8e5",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C94",
+      "claim": "The inclusion of IMC data analysis brings a unique element to the ImmunoCluster framework and differentiates it from other published protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The inclusion of IMC data analysis brings a unique element to the ImmunoCluster framework and differentiates it from other published protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about what makes ImmunoCluster unique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "ecf185aa-ec76-4817-b360-d2d6ec4a78cc",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C95",
+      "claim": "ImmunoCluster can be run on a local desktop/laptop computer with standard configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster can also be run on a local desktop/laptop computer with standard configuration, depending on the number of cells, adaptive downsampling settings and selection of clustering algorithms can usually be run within a day end-to-end (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational requirements of ImmunoCluster, supported by Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "e1d6b398-dd26-4d27-8f89-2ad6dd865c68",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C96",
+      "claim": "ImmunoCluster can usually be run within a day end-to-end, depending on the number of cells, adaptive downsampling settings and selection of clustering algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "ImmunoCluster can also be run on a local desktop/laptop computer with standard configuration, depending on the number of cells, adaptive downsampling settings and selection of clustering algorithms can usually be run within a day end-to-end (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the runtime of ImmunoCluster, supported by Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "0a3445c2-4e35-47c9-bb39-5f08ead5ae1d",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C97",
+      "claim": "The FlowSOM-based clustering method can be implemented on much larger datasets than PhenoGraph.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the PhenoGraph clustering method does not readily scale, the FlowSOM-based clustering method can be implemented on much larger datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of clustering methods available in ImmunoCluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "7c6c6ff1-9f4e-493b-93a2-7bb0ac28fa8a",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C98",
+      "claim": "Unsupervised clustering of samples is the most important stage of the ImmunoCluster framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised clustering (stage 2) of samples is the most important stage of the framework, and its ability to accurately define populations across all samples is critical to all later stages of investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of a particular stage in the workflow.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "882a12d9-ca61-4448-a140-3e355f4de5bc",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C99",
+      "claim": "The number of k clusters to generate (cluster resolution) can significantly affect the ability to identify or determine a change in a biologically relevant population.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of k clusters to generate (cluster resolution) can significantly affect the ability to identify or determine a change in a biologically relevant population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation and consideration in using the framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "3ab54ef0-4614-4261-babe-e9330ce1c21d",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C100",
+      "claim": "Technical inter-sample marker signal variability due to batch effects may impact the ability of unsupervised analysis to reliably detect certain populations if significant batch effects are present.",
+      "claim_type": "EXPLICIT",
+      "source": "Technical inter-sample marker signal variability due to batch effects may impact the ability of unsupervised analysis to reliably detect certain populations if significant batch effects are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "6949715b-07cb-4396-9f37-072a0697de25",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C101",
+      "claim": "Sample barcoding is commonly employed in mass cytometry to reduce variability between samples.",
+      "claim_type": "EXPLICIT",
+      "source": "An approach commonly employed in mass cytometry to overcome this is to use sample barcoding, reducing the variability between each sample, allowing all samples to be exposed to the same antibody mixture (Schulz and Mei, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Schulz and Mei, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "3f958a62-072e-4b69-8832-7c0c72db1be8",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C102",
+      "claim": "CytofRUV is a recently developed package specifically designed for CyTOF dataset batch correction.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical methods for batch correction may also be applied; in recent years, a class of methods called remove unwanted variation (RUV) have been developed, and CytofRUV (Trussart et al., 2020) is a recently developed package specifically designed for CyTOF dataset batch correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Trussart et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "dc7e7176-4f18-4269-94dc-36637cddb822",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C103",
+      "claim": "Channel spillover still exists in fluorescence-based FC and should be considered when designing antibody panels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although channel spillover is diminished in mass cytometry, it still exists in fluorescence-based FC and should be considered when designing antibody panels to reduce the effects on introducing cell phenotype artifacts in downstream unsupervised analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a technical consideration in FC experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "ff468e41-21f4-4711-84ab-fb877cbb1e2c",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C104",
+      "claim": "In the clinically relevant immune monitoring case study, the ImmunoCluster framework successfully identified 24 phenotypically distinct cell clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "In our clinically relevant immune monitoring case study setting, the ImmunoCluster framework successfully identified 24 phenotypically distinct cell clusters, and their abundance across all samples, and highlighted differentially represented cells between GvHD and none patients, all of which were consistent with the Hartmann et al. data (Hartmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the case study, supported by citation to Hartmann et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "4fa33428-f87e-4652-b4fb-dee59d6da239",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C105",
+      "claim": "ImmunoCluster highlighted differentially represented cells between GvHD and none patients, consistent with the Hartmann et al. data.",
+      "claim_type": "EXPLICIT",
+      "source": "In our clinically relevant immune monitoring case study setting, the ImmunoCluster framework successfully identified 24 phenotypically distinct cell clusters, and their abundance across all samples, and highlighted differentially represented cells between GvHD and none patients, all of which were consistent with the Hartmann et al. data (Hartmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the case study, supported by citation to Hartmann et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "85b5385b-0ba7-4e8e-94c8-09d07fce5f24",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C106",
+      "claim": "The publicly available dataset from the Hartmann et al. study was extracted from the FlowRepository.",
+      "claim_type": "EXPLICIT",
+      "source": "The publicly available dataset from the Hartmann et al. study was extracted for the current study from the FlowRepository (http://flowrepository.org/id/FR-FCM-Z244) (Spidlen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source, supported by citation to Spidlen et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "45b1d3e7-0920-4801-adca-c5eb43f01763",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C107",
+      "claim": "Raw FCS files for the LMC dataset were collected on the Helios CyTOF system.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw FCS files for the LMC dataset that were collected on the Helios CyTOF system (Fluidigm, UK) machine were first normalized using the free CyTOF 6.7 system control software (files can also be concatenated using the same software if necessary).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "2f0dfe49-9b0f-4f68-b838-f5c2f415e24a",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "claim_id": "C108",
+      "claim": "The LMC dataset files were gated to remove beads, doublets, dead cells, and non-CD45+ cells as well as erythrocytes (CD235\u03b1\u03b2/CD61+) and neutrophils (CD16+).",
+      "claim_type": "EXPLICIT",
+      "source": "These files were gated using FlowJo (version 10.5.3) (Becton, Dickinson and Company, UK) to remove beads, doublets, dead cells, and non-CD45+ cells as well as erythrocytes (CD235\u03b1\u03b2/CD61+) and neutrophils (CD16+) (Figure 8\u2014figure supplement 1), as described by Hartmann et al., 2019, before implementation into the ImmunoCluster framework.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data preprocessing, supported by Figure 8\u2014figure supplement 1 and citation to Hartmann et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b97d8213-f9b6-4a81-aa62-527f14d617e3",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ImmunoCluster is an R package designed to facilitate computational analysis of high-dimensional cytometry data (LMC, IMC, and FC) by nonspecialists. The framework provides data structures, visualization tools, dimensionality reduction, clustering methods, and adaptive downsampling capabilities, building on existing tools like CyTOF workflow while uniquely supporting IMC data analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C94 collectively describe the design, implementation, and capabilities of ImmunoCluster. The tool's features are documented through its technical implementation (SingleCellExperiment class, integration of existing R packages), design philosophy (ease of use for nonspecialists, flexibility for advanced users), and unique capabilities (IMC data analysis). These are descriptive claims about the software that are supported by the manuscript's detailed documentation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "88c3cb46-5fac-46c1-a685-d3923ad124b8",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ImmunoCluster successfully analyzed a published LMC dataset from 15 leukemia patients post-BMT, replicating the identification of 24 cell populations and key findings from Hartmann et al., 2019. The analysis runs in approximately 110 minutes on standard hardware for 2.3 million cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C108 describe the validation of ImmunoCluster using published data. The successful replication of 24 cell populations (C63, C104) and concordance with original findings (C64, C105) demonstrate that the tool performs as intended. Performance metrics (C59) and methodological details (C106-C108) provide transparency about the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "f51941fb-53c7-48ea-9e77-c311e4b5e942",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ImmunoCluster identified significant differences in memory B-cells, na\u00efve B-cells, and na\u00efve CD4+ T-cells between GvHD and control patients, with results concordant with both the original Hartmann et al. analysis and the diffcyt computational framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 present statistical findings with specific p-values (C65) that are validated against both the original publication (C66, C67) and an independent computational tool (C68, C69). The concordance across three independent analyses (ImmunoCluster, original analysis, and diffcyt) provides strong support for these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "a7cdb7e7-be76-4da1-83e0-9482e7aab4e4",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GvHD patients showed higher expression of PD-1 and differences in Ki-67 proliferation marker in CD8+ T-cells compared to control patients, consistent with these markers being candidate biomarkers for immunotherapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 describe visual observations from the analysis (C70, C71) supported by Figure 3E, with the biological interpretation supported by citation to Hartmann et al., 2019 (C72). The findings are presented as expected results consistent with the disease state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "b92ac185-31a9-4946-9120-78b0fb0a817e",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ImmunoCluster successfully analyzed HNSCC IMC data, distinguishing tumor and stromal regions and identifying distinct cell populations including proliferating tumor cells, macrophages, B-cells, and CD8+ T-cells with region-specific distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C81 describe the analysis of IMC data from HNSCC tissue. The tool successfully separated tumor from stroma (C73, C74), identified known biomarkers (C75, C76), and characterized cell populations in different regions (C77-C81). The findings are supported by multiple figures and are consistent with known biology (e.g., E-cadherin as a cancer marker).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "d15d51e3-793a-41a7-9a66-a87238cc9c92",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ImmunoCluster successfully analyzed DLBCL lymph node IMC data, identifying that 84% of Ki-67 high cells were proliferating tumor cells while Ki-67 low populations consisted of diverse immune cell types including CD4+ T-cells, CD8+ T-cells, B-cells, macrophages, and dendritic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 describe the analysis of DLBCL IMC data. The use of Ki-67 as a prognostic marker is supported by citation (C82), and the identification of cell populations (C83-C85) is supported by Figure 5D. The findings demonstrate ImmunoCluster's capability to analyze heterogeneous tissue samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "838956cc-679e-435f-92ad-b9de844cd723",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ImmunoCluster identified three Treg populations in healthy donor bone marrow FC data with distributions matching expected values from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 describe the identification of rare cell populations (Tregs) in FC data. The identification of three Treg subpopulations with specific marker profiles (C86) and concordance with expected distributions (C87) demonstrates the tool's ability to detect rare populations in conventional FC data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "2e964f49-3376-4640-adb7-bf5f2f2d7786",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ImmunoCluster can run on standard desktop/laptop computers within a day end-to-end, with FlowSOM clustering scaling better than PhenoGraph for large datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 describe the computational requirements and scalability of ImmunoCluster. The runtime estimates (C96) are supported by Figure 1\u2014figure supplement 2, and the comparison of clustering methods (C97) provides practical guidance for users.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "cc396153-cb2e-4b1d-a6e1-5367ebf1ff42",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript identifies key limitations of the ImmunoCluster framework including the critical importance of cluster resolution selection, potential impacts of batch effects, and technical considerations for different cytometry modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C103 describe limitations and considerations for using the framework. These are appropriately acknowledged limitations with citations to relevant methods for addressing them (C101, C102). The discussion of these limitations demonstrates scientific rigor and provides guidance for users.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript establishes the context and motivation for ImmunoCluster by describing the complexity of the immune system, capabilities and challenges of high-dimensional cytometry, and limitations of existing computational tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C90 provide background context supported by appropriate citations. These claims establish the scientific rationale for developing ImmunoCluster by documenting the capabilities of cytometry methods (C1, C2, C14, C15), the complexity of immune analysis (C11-C13), computational challenges (C3, C16, C17), and gaps in existing tools (C18, C21, C46).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    },
+    {
+      "id": "98d2a0b0-8419-4b33-9cac-261b69580e2e",
+      "content_id": "461ed085-9ffd-4bad-85f0-eb7768bfded7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript speculates about the potential utility and impact of ImmunoCluster for various user groups and applications including discovery of novel cell populations, longitudinal monitoring, and broader adoption of high-dimensional data analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C54 are primarily speculative statements about potential future applications and impact. While the demonstrated capabilities support these possibilities, the actual utility to diverse user groups (C48), extensibility to arbitrary designs (C51), and broader adoption (C54) remain to be validated through wider community use.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:10:14.883209Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "42b975dd-65ca-4d47-b55f-96415421435f",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "d3090be5-34ca-4d71-80d5-9a53b13967da",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "bd87a2e6-09cf-455e-8ccc-0179e81d7f93",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "8314870e-10ac-4a9f-a319-7523a8c6285e",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "11ee1282-0223-4454-8c51-828fbb937132",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "40a37ed5-7697-4cba-9d5e-b62d818279a7",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "f1861c4a-8121-4d2f-9db1-21ec77216163",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "556887a7-4765-44d4-9214-e00283a2063a",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "554206cc-0b61-44d5-8294-1689f7470840",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "13b93578-c1e4-46b2-8d81-12bcc71505a7",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "075c995e-6769-4d05-8d7f-f66f3dbd5d0b",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "8082aa3f-bdf5-4392-a881-3ff424847d99",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "fd7f9546-597a-45b3-8be3-389bc14f0b18",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "ef9b76f3-5bc0-4300-95a1-666369c75b8a",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "b3fbb45d-b324-450d-897f-d0d37b421be9",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "56247a45-5395-48b5-b607-85efedff6a8a",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "008b7a51-f0dc-46e8-8347-3a17c6219520",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "f18164d1-daf1-4cb2-ad5e-7da32a58dabb",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "8b27df3d-e811-48d1-b946-31dce4defab8",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "1c8932bf-61ec-4b13-97c7-f022473b99a7",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "1ed494a5-0a05-4ded-a043-7ab8abe08e40",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "0feb6e90-b50d-492e-bc98-fe1aa0dea917",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "468d4c01-eda3-4e48-8af1-c63a446bc280",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "2aaeb798-6b9a-466d-b8d0-c3b18ffc5929",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "ca7e070f-ab91-4cb5-8f26-189c60db0159",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "73d499fb-30b7-4f16-bca2-ad718d41a938",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "2b607a2e-5d41-4664-b17e-7820d22b416d",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "e1ecde8e-6eba-4681-b60e-1ba22be32665",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "dc4da85e-3002-47cc-989e-692b8c4663aa",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "82807940-1213-4a22-9be6-7083294b266e",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "04fc53f3-d13e-4007-b65a-04cf04bba697",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "fec0a094-c3ec-40dd-8576-6b7da09f3a66",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "6904809d-762f-4041-ad4c-36409bca088d",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "5eb17208-1662-4230-9d24-80d0203776bb",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "a3114c0b-0394-4e02-a64a-aabcd5b30cd3",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "3e715156-ecae-4859-9fbc-9fb77eced8e5",
+      "result_id": "b97d8213-f9b6-4a81-aa62-527f14d617e3"
+    },
+    {
+      "claim_id": "058937e4-47df-4f85-a50d-5a4c1f006951",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "d5f33224-5fad-4792-ae55-242bd30fbe23",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "8b7ed5cb-138e-46c6-a377-3bf5e62b3876",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "053e27fa-a925-4d60-839c-da14d0583848",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "eb3ea4ea-c0f4-40f8-a557-2e6b3a4095b8",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "c8b70f32-3ae6-4033-b9b7-19f0bf68dddb",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "07d1f57e-abb4-4656-bda1-beefb4133a83",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "10217bee-b264-43b6-96a5-48eafb776fe4",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "658c0cad-1a20-41d9-9726-f49bebfafcb3",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "ff468e41-21f4-4711-84ab-fb877cbb1e2c",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "4fa33428-f87e-4652-b4fb-dee59d6da239",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "85b5385b-0ba7-4e8e-94c8-09d07fce5f24",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "45b1d3e7-0920-4801-adca-c5eb43f01763",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "2f0dfe49-9b0f-4f68-b838-f5c2f415e24a",
+      "result_id": "88c3cb46-5fac-46c1-a685-d3923ad124b8"
+    },
+    {
+      "claim_id": "f6b6bc0d-6b06-4321-b679-462dcefa929b",
+      "result_id": "f51941fb-53c7-48ea-9e77-c311e4b5e942"
+    },
+    {
+      "claim_id": "eb8eb1fa-374e-4378-8282-8af9d27cf265",
+      "result_id": "f51941fb-53c7-48ea-9e77-c311e4b5e942"
+    },
+    {
+      "claim_id": "d5e437b7-2423-4742-be50-e0148eebd47c",
+      "result_id": "f51941fb-53c7-48ea-9e77-c311e4b5e942"
+    },
+    {
+      "claim_id": "8d3abc51-8d54-45a9-851f-b1e8c816b455",
+      "result_id": "f51941fb-53c7-48ea-9e77-c311e4b5e942"
+    },
+    {
+      "claim_id": "2fb91c99-714d-48e4-9e79-a8c93a1f36d2",
+      "result_id": "f51941fb-53c7-48ea-9e77-c311e4b5e942"
+    },
+    {
+      "claim_id": "d261a9af-9e5e-46c7-9d25-cd990d7cb3a6",
+      "result_id": "a7cdb7e7-be76-4da1-83e0-9482e7aab4e4"
+    },
+    {
+      "claim_id": "17c880ee-23a2-475c-aba5-c45473de843b",
+      "result_id": "a7cdb7e7-be76-4da1-83e0-9482e7aab4e4"
+    },
+    {
+      "claim_id": "bef74329-8622-4825-9307-277d17ae040f",
+      "result_id": "a7cdb7e7-be76-4da1-83e0-9482e7aab4e4"
+    },
+    {
+      "claim_id": "46eedb99-6165-484f-8029-903d9189bf5a",
+      "result_id": "b92ac185-31a9-4946-9120-78b0fb0a817e"
+    },
+    {
+      "claim_id": "0b8bbee6-69a3-4bc4-9842-8219f2e7a367",
+      "result_id": "b92ac185-31a9-4946-9120-78b0fb0a817e"
+    },
+    {
+      "claim_id": "35055fa1-8492-4a1c-b131-9b1491492f11",
+      "result_id": "b92ac185-31a9-4946-9120-78b0fb0a817e"
+    },
+    {
+      "claim_id": "ca565a15-624e-4c51-ab93-6e8accb98f5c",
+      "result_id": "b92ac185-31a9-4946-9120-78b0fb0a817e"
+    },
+    {
+      "claim_id": "0017d6ba-657d-4bd3-95da-6ea82ea2a1f6",
+      "result_id": "b92ac185-31a9-4946-9120-78b0fb0a817e"
+    },
+    {
+      "claim_id": "48a31aee-479a-42c8-8b7a-e46d8bec33af",
+      "result_id": "b92ac185-31a9-4946-9120-78b0fb0a817e"
+    },
+    {
+      "claim_id": "5587f427-70db-4b38-9e96-491d3f6fc678",
+      "result_id": "b92ac185-31a9-4946-9120-78b0fb0a817e"
+    },
+    {
+      "claim_id": "381cc44f-d3f3-4792-9928-d6d9a8a9a740",
+      "result_id": "b92ac185-31a9-4946-9120-78b0fb0a817e"
+    },
+    {
+      "claim_id": "b16e7856-2f74-457e-a7eb-36223801d602",
+      "result_id": "b92ac185-31a9-4946-9120-78b0fb0a817e"
+    },
+    {
+      "claim_id": "d4b4a740-ee7d-4ee4-b5cf-b8ddcbf164c8",
+      "result_id": "d15d51e3-793a-41a7-9a66-a87238cc9c92"
+    },
+    {
+      "claim_id": "4148086d-b0c6-43a6-9112-21158b262957",
+      "result_id": "d15d51e3-793a-41a7-9a66-a87238cc9c92"
+    },
+    {
+      "claim_id": "b31402a4-1621-44a3-ae62-52121b7d4ab6",
+      "result_id": "d15d51e3-793a-41a7-9a66-a87238cc9c92"
+    },
+    {
+      "claim_id": "fc032e28-0054-4621-83d6-3a338e8b66f9",
+      "result_id": "d15d51e3-793a-41a7-9a66-a87238cc9c92"
+    },
+    {
+      "claim_id": "8b606182-2792-4442-ab62-46dd696173d5",
+      "result_id": "838956cc-679e-435f-92ad-b9de844cd723"
+    },
+    {
+      "claim_id": "768c23d3-c6d3-4d25-acb0-f7321ba41455",
+      "result_id": "838956cc-679e-435f-92ad-b9de844cd723"
+    },
+    {
+      "claim_id": "ecf185aa-ec76-4817-b360-d2d6ec4a78cc",
+      "result_id": "2e964f49-3376-4640-adb7-bf5f2f2d7786"
+    },
+    {
+      "claim_id": "e1d6b398-dd26-4d27-8f89-2ad6dd865c68",
+      "result_id": "2e964f49-3376-4640-adb7-bf5f2f2d7786"
+    },
+    {
+      "claim_id": "0a3445c2-4e35-47c9-bb39-5f08ead5ae1d",
+      "result_id": "2e964f49-3376-4640-adb7-bf5f2f2d7786"
+    },
+    {
+      "claim_id": "7c6c6ff1-9f4e-493b-93a2-7bb0ac28fa8a",
+      "result_id": "cc396153-cb2e-4b1d-a6e1-5367ebf1ff42"
+    },
+    {
+      "claim_id": "882a12d9-ca61-4448-a140-3e355f4de5bc",
+      "result_id": "cc396153-cb2e-4b1d-a6e1-5367ebf1ff42"
+    },
+    {
+      "claim_id": "3ab54ef0-4614-4261-babe-e9330ce1c21d",
+      "result_id": "cc396153-cb2e-4b1d-a6e1-5367ebf1ff42"
+    },
+    {
+      "claim_id": "6949715b-07cb-4396-9f37-072a0697de25",
+      "result_id": "cc396153-cb2e-4b1d-a6e1-5367ebf1ff42"
+    },
+    {
+      "claim_id": "3f958a62-072e-4b69-8832-7c0c72db1be8",
+      "result_id": "cc396153-cb2e-4b1d-a6e1-5367ebf1ff42"
+    },
+    {
+      "claim_id": "dc7e7176-4f18-4269-94dc-36637cddb822",
+      "result_id": "cc396153-cb2e-4b1d-a6e1-5367ebf1ff42"
+    },
+    {
+      "claim_id": "e53c05fd-2c2f-4b00-bee5-57638659cb6f",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "4159dbef-a647-45f5-ad97-f4f3a663f0c9",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "173275b8-b24b-4b50-9a21-54554f89f304",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "f8338048-83e2-4bb4-9d78-9e51a125c9c4",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "a5903682-c31e-42d2-823a-56da020c0901",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "7f49c711-e86b-44f6-8320-6f77074a1f4f",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "4b23d242-b318-4c6e-8d6d-8b46cb08f929",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "5dd7c826-93ff-40a7-beb8-5d77e8a600eb",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "7e0fd38e-189f-4317-9306-524c6017410d",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "40672d1e-0d79-4b87-9227-ba04489a60bf",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "1045cae1-01bf-4592-85f3-b65b6499fd24",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "09392807-837f-4ce8-9cd7-8c4949cda538",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "abc57ee7-38f5-4fcd-95ce-20c1d571c79f",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "30968a5b-c959-434e-9f04-11b4db6cb1d1",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "83537f08-c261-4ce7-a734-e72153e51e67",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "ee555d2c-d921-4d72-a778-a8d1bc681027",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "6cfd93b2-d14f-4035-bff4-da67ebcac9a9",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "94942b29-38d8-4a75-a5bf-a9eb5d40d0ad",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "30a44b39-f886-40f4-9f2a-814a3f09d6e8",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "34d1934d-a107-419c-8c4a-b799d8bf9045",
+      "result_id": "b943b707-4bd4-4c92-a06b-2b495c00f6e8"
+    },
+    {
+      "claim_id": "3efca2a4-7ca3-43eb-890f-fbe0b2f26313",
+      "result_id": "98d2a0b0-8419-4b33-9cac-261b69580e2e"
+    },
+    {
+      "claim_id": "8ff9d58c-1353-4a80-93f9-361088ce7d8f",
+      "result_id": "98d2a0b0-8419-4b33-9cac-261b69580e2e"
+    },
+    {
+      "claim_id": "6d7c1d43-c660-4908-9718-e9be835d44b9",
+      "result_id": "98d2a0b0-8419-4b33-9cac-261b69580e2e"
+    },
+    {
+      "claim_id": "0ad25ebb-ab29-4d71-9971-b2f3c6b9848e",
+      "result_id": "98d2a0b0-8419-4b33-9cac-261b69580e2e"
+    },
+    {
+      "claim_id": "5423d279-48f5-4d20-a7cc-cc8c01c0b296",
+      "result_id": "98d2a0b0-8419-4b33-9cac-261b69580e2e"
+    },
+    {
+      "claim_id": "33f729ef-4eaf-415d-895f-684abd017b63",
+      "result_id": "98d2a0b0-8419-4b33-9cac-261b69580e2e"
+    }
+  ],
+  "comparisons": []
+}

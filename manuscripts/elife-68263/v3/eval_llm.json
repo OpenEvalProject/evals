@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors reanalyzed mouse ESC transcriptomes using GENCODE M20 annotation and identified 40 lncRNAs enriched in ESCs and dysregulated in cancer, including Gm19705 (renamed PHAROH). The filtering workflow prioritized transcripts with FPKM >1 and >2-fold upregulation in ESCs vs NPCs, yielding 147 ESC-specific transcripts, which were further filtered based on human homology and cancer dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C49 describe a systematic bioinformatic workflow with clear filtering criteria (C43-C45), validation through known cancer-associated lncRNAs (C47), and tissue-specific expression patterns (C48-C49). The PCA analysis (C43-C44) demonstrates proper clustering of biological replicates, and the identification of PHAROH/Gm19705 (C32-C33) is well-documented through multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "LINC00862 was identified as the human ortholog of PHAROH based on 51% sequence identity and syntenic conservation. LINC00862 is altered in 13% of HCC cases and shows elevated expression in human HCC tumor nodules, cirrhotic liver, and multiple HCC cell lines compared to normal liver tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by TCGA data analysis and qRT-PCR measurements in human samples (Figure 1D-E). The orthology relationship (C54-C55) is established through sequence and synteny analysis, though the 51% sequence identity is relatively modest for claiming orthology. The expression data in human samples provides functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "PHAROH is characterized as an intergenic lncRNA with two isoforms (~450 nt each) that are differentially expressed in ESCs vs HCC. PHAROH shows 7-9-fold enrichment in embryonic liver (E14/E18) compared to adult liver, is liver-specific (not expressed in hematopoietic cells), and is upregulated in DEN-induced HCC tumors and HCC cell lines (3-10-fold over normal hepatocytes). The lncRNA exhibits distinct subcellular localization patterns: entirely nuclear in ESCs (3-5 foci/cell) versus evenly distributed between nucleus and cytoplasm in HCC cells (25 foci/cell).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C74 are comprehensively supported by multiple experimental approaches including RACE (C61), coding potential analysis (C62), qRT-PCR in developmental and disease models (C63-C69), RNA-FISH (C70-C71), cellular fractionation (C73), and half-life measurements (C74). The characterization is thorough and internally consistent across different experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CRISPR/Cas9-mediated knockout of PHAROH in HCC cells resulted in 80-95% reduction in PHAROH levels, increased doubling time from 14.8 to 18.2 hours, decreased proliferation, and 50% reduction in migration distance. These phenotypes were rescued by ectopic PHAROH expression, demonstrating trans-acting function. Similar effects were observed with ASO-mediated knockdown, which also inhibited clonogenic growth in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 are well-supported by multiple complementary approaches (genetic knockout and ASO knockdown) with appropriate controls and rescue experiments (C78-C79). The rescue experiments (C78-C79) are particularly important for establishing specificity and demonstrating trans-acting function. Multiple functional assays (proliferation, migration, colony formation) show consistent phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "RNA-seq analysis of PHAROH knockout cells identified 810 differentially expressed genes enriched for cell proliferation, locomotion, and motility GO terms. Promoter motif analysis revealed enrichment of Myc binding motifs among downregulated genes. Strikingly, MYC protein levels were substantially decreased in knockout cells without changes in Myc mRNA levels, suggesting post-transcriptional regulation. Downstream Myc target genes were also significantly downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 are supported by RNA-seq data, motif analysis, western blots, qRT-PCR, and immunofluorescence (Figure 4). The key observation that MYC protein decreases without mRNA changes (C87-C88) is well-documented and leads to the inference of post-transcriptional regulation (C89). The consistency between decreased MYC protein and decreased Myc target genes (C90) strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "RNA antisense pulldown followed by iTRAQ mass spectrometry identified TIAR as the top PHAROH-interacting protein. Four out of five biotinylated oligos pulled down >80% of endogenous PHAROH with optimal elution at 40\u00b0C. TIAR binding was confirmed by western blot, shown to be RNA-mediated (abolished by RNase A treatment), and validated by reciprocal immunoprecipitation. TIAR is present in <10% of experiments in the Crapome database, suggesting it is not a common contaminant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 describe a rigorous RAP-MS approach with multiple validation steps including: (1) multiple independent oligos (C91), (2) temperature optimization (C92), (3) quantitative mass spectrometry with proper controls (C93), (4) western blot confirmation (C96), (5) RNase sensitivity demonstrating RNA-mediated interaction (C97), and (6) reciprocal IP (C98). The Crapome analysis (C95) addresses potential contamination concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "TIAR binding sites are enriched in the 5' end of PHAROH, with four out of seven sites mapping to a conserved 71-nt hairpin structure. RNA EMSA demonstrated that TIAR binds this hairpin with ~2 nM dissociation constant, preferentially forming complexes with 2 or 4 TIAR molecules. Sequential mutation of TIAR binding sites progressively reduced binding, with mutation of all four sites (m4) showing minimal binding. The interaction is specific (supershifted by anti-TIAR antibody) and competed by unlabeled probe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C110 are supported by sequence analysis, RNA structure prediction, and extensive RNA EMSA experiments with wildtype and mutant hairpins (Figure 6). The systematic mutagenesis approach (C107-C109) provides strong evidence for sequence-specific binding. The Kd measurement (C104) is consistent with literature values. The specificity controls (antibody supershift C105, competition C106) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors propose that PHAROH competitively sequesters TIAR from the Myc 3' UTR to increase MYC translation. TIAR binds to a 53-nt region in the Myc 3' UTR with preference for single binding events. In vitro competition assays showed wildtype PHAROH hairpin effectively competes with Myc 3' UTR for TIAR binding (near complete at 10:1 ratio), while mutant PHAROH (m4) was much less effective. ASO knockdown of PHAROH reduced MYC protein without affecting Myc mRNA or TIAR protein levels. Myc is only 3-fold more expressed than PHAROH in HCC cells, making competition feasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C122 present a competitive sequestration model supported by: (1) in vitro competition EMSA (C120-C121), (2) sequence-dependent competition (C122), (3) appropriate stoichiometry (C119), and (4) protein-level effects without mRNA changes (C118). The model is mechanistically coherent and supported by multiple lines of evidence. However, the competition model would benefit from additional cellular validation beyond the in vitro EMSA data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Functional validation in cells showed that addition of wildtype PHAROH increased luciferase activity by ~50% in a dose-dependent manner when the Myc 3' UTR was present in the reporter construct, while mutant PHAROH (m4) did not. Overexpression of wildtype PHAROH increased MYC protein levels compared to GFP control, but mutant PHAROH did not. Modulation of PHAROH or TIAR levels did not affect Myc mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 provide crucial cellular validation of the proposed mechanism through luciferase reporter assays (C123-C124) and overexpression experiments (C125-C126). The sequence-dependence (mutant vs wildtype) and lack of mRNA-level effects (C127) are consistent with the translational regulation model. These experiments bridge the in vitro binding data with cellular function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Weighted gene correlation network analysis showed GM19705 expression is highly correlated with cell cycle genes (BRCA1, BRCA2), and GO term analysis identified cell cycle processes as highly enriched. Single-cell analysis of adult mouse liver showed GM19705 is expressed exclusively in a subset of hepatocytes at low overall levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by WGCNA and GO term analysis (Figure 1\u2014supplement 1D-E) and single-cell data reanalysis (C59). However, the inference that GM19705 'may play a role in cell cycle regulation' (C58) is speculative based solely on correlation. The single-cell data (C59) provides important context about cell-type specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "MYC is amplified in nearly 50% of HCC tumors and is critical for liver regeneration. TIAR is known for its role in stress granules, but stress granule formation was not detected in the HCC cell lines used. TIAR overexpression is a negative prognostic marker for HCC survival, possibly representing an attempt to curb MYC expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 are supported by citations and immunofluorescence data (C131). The speculation about TIAR upregulation as a compensatory mechanism (C134) is reasonable but remains speculative. The observation that stress granules are not detected (C131-C132) is important for defining the context of PHAROH-TIAR interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The PHAROH-TIAR interaction occurs at a 71-nt hairpin common to both PHAROH isoforms. TIAR has different affinities for U-rich (~1 nM Kd) versus AU-rich (~14 \u03bcM Kd) sequences. The spacing between TIAR binding sites differs between PHAROH hairpin (10 nt average) and Myc 3' UTR (2 nt average), potentially allowing more flexibility in PHAROH. TIAR's RRM2 mediates ssRNA polyU-binding, but dsRNA binding capabilities are unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C141 synthesize structural and biochemical information from the current study and literature. The observations about binding site spacing (C139-C140) provide mechanistic insight into differential TIAR binding patterns. However, the functional significance of these spacing differences remains somewhat speculative (C140). The discussion of RRM2 specificity (C141) appropriately notes gaps in understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "TIAR function appears cell-type specific: it represses TNF-\u03b1 in immune cells, but TNF-\u03b1 is not expressed in the HCC cell lines studied. Another lncRNA (MT1JP) binds TIAR to regulate p53 translation, but MT1JP is cytoplasmic while TIAR is mainly nuclear in HCC cells. The authors conclude that Myc is one of the main TIAR targets in HCC cells based on promoter motif enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 appropriately contextualize the findings relative to other TIAR-interacting RNAs and cell-type-specific functions. The conclusion that Myc is a main TIAR target in HCC (C146) is supported by motif analysis and experimental data, though the claim is somewhat inferential. The comparison with MT1JP (C144-C145) highlights important differences in subcellular localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "LINC00862 is identified as the possible human ortholog of PHAROH based on synteny and upregulation in human HCC samples. Future studies are needed to reveal the therapeutic potential of targeting PHAROH in liver development, regeneration, and HCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C147 summarizes the orthology relationship established earlier (C54-C55, C51-C53). Claim C148 is a forward-looking statement about future research directions and is appropriately speculative. The therapeutic potential remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background information on HCC epidemiology, molecular landscape, and current treatments. HCC is the fifth most diagnosed cancer and third leading cause of cancer deaths. The molecular landscape includes multiple genetic/epigenetic modifications. HCC can be classified into S1, S2, and S3 subtypes with distinct molecular and clinical features. Current treatments (sorafenib, lenvatinib) extend median survival to 10.7-13.6 months, but mortality remains high (700,000 deaths/year, 18% 5-year survival).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C14 provide established background information supported by appropriate citations. These are literature-based claims that contextualize the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on lncRNAs: 80% of the human genome can be transcribed while only 2% encodes proteins. lncRNAs are 200 nt to >100 kb transcripts that are the largest class of non-coding RNAs. They originate from intergenic regions or introns, are produced by RNA Pol II, and can be capped, spliced, and polyadenylated. Many lncRNAs show tissue-specific expression and are dysregulated in cancers, including HCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 provide established background on lncRNA biology supported by appropriate citations. These are literature-based claims that provide context but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on specific lncRNAs in HCC: HOTAIR recruits chromatin-modifying complexes and promotes HCC cell migration/invasion by repressing RBM38. HULC sequesters miR-372 to affect PRKACB and CDKN2C. MALAT1 controls genes associated with proliferation/migration and is upregulated in solid carcinomas; its knockdown decreases HCC cell proliferation, migration, and invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 provide literature-based examples of lncRNA functions in HCC, supported by appropriate citations. These establish precedent for lncRNA involvement in HCC but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C41",
+      "C42"
+    ],
+    "result": "Summary claims from the abstract: Depletion of PHAROH impacts cell proliferation and migration, which can be rescued by ectopic expression. PHAROH regulates MYC translation by sequestering TIAR and represents a potentially exciting diagnostic or therapeutic target in HCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C41 summarize major findings that are supported by the detailed experimental evidence in other claim groups. Claim C42 about therapeutic potential is speculative but reasonable given the functional data. These are high-level summary statements of the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Summary claims from the abstract: RNA-seq of PHAROH knockouts revealed genes with Myc motifs in their promoters. MYC protein (but not mRNA) is decreased in knockout cells. RAP identified TIAR as a PHAROH-binding protein, and sequestration of TIAR by PHAROH increases MYC translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are high-level summaries of major findings that are supported by detailed experimental evidence in other claim groups. These abstract-level claims accurately represent the key discoveries.",
+    "result_type": "MAJOR"
+  }
+]

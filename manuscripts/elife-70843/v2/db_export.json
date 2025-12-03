@@ -1,0 +1,2164 @@
+{
+  "submission": {
+    "id": "21a9eb0f-ce92-42b8-93d9-58ee368f6774",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:46:25.323250Z",
+    "updated_at": "2025-12-03T08:46:25.323250Z"
+  },
+  "content": [
+    {
+      "id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "submission_id": "21a9eb0f-ce92-42b8-93d9-58ee368f6774",
+      "content_type": "manuscript",
+      "content_text": "# Rapid and sensitive detection of SARS-CoV-2 infection using quantitative peptide enrichment LC-MS analysis\n\n## Authors\n\n- Andreas Hober<sup>1</sup> ([ORCID: 0000-0001-8947-2562](https://orcid.org/0000-0001-8947-2562))\n- Khue Hua Tran-Minh<sup>1</sup>\n- Dominic Foley<sup>3</sup>\n- Thomas McDonald<sup>3</sup>\n- Johannes PC Vissers<sup>3</sup>\n- Rebecca Pattison<sup>3</sup>\n- Samantha Ferries<sup>3</sup>\n- Sigurd Hermansson<sup>3</sup>\n- Ingvar Betner<sup>3</sup>\n- Mathias Uhl\u00e9n<sup>1</sup>\n- Morteza Razavi<sup>4</sup>\n- Richard Yip<sup>4</sup>\n- Matthew E Pope<sup>4</sup>\n- Terry W Pearson<sup>4</sup>\n- Leigh N Andersson<sup>4</sup>\n- Amy Bartlett<sup>3</sup>\n- Lisa Calton<sup>3</sup>\n- Jessica J Alm<sup>5</sup>\n- Lars Engstrand<sup>6</sup>\n- Fredrik Edfors<sup>1</sup> ([ORCID: 0000-0002-0017-7987](https://orcid.org/0000-0002-0017-7987)) \u2020\n\n### Affiliations\n\n1. Science for Life Laboratory Solna Sweden\n2. The Royal Institute of Technology, Division of Systems Biology, Department of Protein Science, School of Chemistry, Biotechnology and Health Stockholm Sweden\n3. Waters Corporation Milford United Kingdom\n4. SISCAPA Assay Technologies, Inc Victoria Canada\n5. Karolinska Institutet, Department of Microbiology, Tumor and Cell Biology & National Pandemic Center, Karolinska Institutet Solna Sweden\n6. Microbiology, Tumour and Cell Biology, Karolinska Institutet Stockholm Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nReliable, robust, large-scale molecular testing for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is essential for monitoring the ongoing coronavirus disease 2019 (COVID-19) pandemic. We have developed a scalable analytical approach to detect viral proteins based on peptide immuno-affinity enrichment combined with liquid chromatography-mass spectrometry (LC-MS). This is a multiplexed strategy, based on targeted proteomics analysis and read-out by LC-MS, capable of precisely quantifying and confirming the presence of SARS-CoV-2 in phosphate-buffered saline (PBS) swab media from combined throat/nasopharynx/saliva samples. The results reveal that the levels of SARS-CoV-2 measured by LC-MS correlate well with their correspondingreal-time polymerase chain reaction (RT-PCR) read-out (r = 0.79). The analytical workflow shows similar turnaround times as regular RT-PCR instrumentation with a quantitative read-out of viral proteins corresponding to cycle thresholds (Ct) equivalents ranging from 21 to 34. Using RT-PCR as a reference, we demonstrate that the LC-MS-based method has 100% negative percent agreement (estimated specificity) and 95% positive percent agreement (estimated sensitivity) when analyzing clinical samples collected from asymptomatic individuals with a Ct within the limit of detection of the mass spectrometer (Ct \u2264 30). These results suggest that a scalable analytical method based on LC-MS has a place in future pandemic preparedness centers to complement current virus detection technologies.\n\n## Introduction\n\nThe severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Wu et al., 2020), leading to the coronavirus disease 2019 (COVID-19), has had a significant impact on human health globally, with more than 234 million confirmed cases (Dong et al., 2020), assessed October 4, 2021. The effects of the pandemic are devastating and have led to lockdowns of urban areas across the globe as a response to contain any potential outbreaks (Hale et al., 2021). To monitor the disease, huge investments have been directed toward infrastructure for large-scale testing for ongoing COVID-19 infection (Baker et al., 2020). Population-wide screening or cohort testing in the vicinity of an outbreak epicenter is an essential pillar in the global fight against COVID-19 and an indispensable contribution to currently ongoing vaccination programs that pave the way for re-opening societies when entering the endemic phase. Thus, specific molecular diagnostic tools suitable for efficient disease monitoring will play a key role when countries slowly lift their bans on public gatherings, events, and global travel.\n\nThe diagnostic method called real-time polymerase chain reaction (RT-PCR) (Freeman et al., 1999) is the most widely used technology for detecting SARS-CoV-2 and was established within days after the virus genome was released (Corman et al., 2020). The method is considered as the gold standard by WHO for diagnosing patients with COVID-19 in routine clinical practice. Large-scale laboratories dedicated to PCR-based diagnostics rapidly mobilized worldwide in the early phase of the pandemic, which led to a sudden global shortage of diagnostic reagents (Woolston, 2021). The PCR tests generally have high analytical sensitivity and specificity, even for self-collected samples, often in the range of 95\u2013100% (Altamirano et al., 2020) when evaluated in clinical settings. The observed variance between tests can be partly explained by the inherent sensitivity of the PCR reaction itself or by pre-analytical biases (Lippi et al., 2020), which could lead to either false-positive or false-negative results. For example, the viral genes can be amplified to detect the virus within days of infection, but the high sensitivity has also been subjected to criticism since it can detect genetic material in circulation not only days after but also multiple weeks after the first day of symptom onset (Lan et al., 2020). The current level of the clinical false-positive rate associated with PCR tests is unknown but is dependent on what type of PCR kit and criteria have been used. Some studies report that it can be as much as 4% at certain test facilities (Surkova et al., 2020). This type of error has the potential to cause the most harm in a scenario entering post COVID-19 when large-volume screening is performed in communities with low prevalence (Healy et al., 2021).\n\nAs a response to the global shortage, rapid antigen tests have been deployed that directly detect viral antigens. These rapid tests show similar specificity to PCR-based assays (Weissleder et al., 2020), but several studies have shown that they lack sufficient sensitivity when compared to RT-PCR (Fitzpatrick et al., 2021; Perchetti et al., 2021). Antigen tests also require affinity reagents, an initial bottleneck and a significant hurdle to overcome in the initial phase of a pandemic, but can scale massively once they have been generated. Additionally, rapid tests only provide a binary read-out (positive/negative), which can be difficult to interpret and the antigen is rarely specified (Sethuraman et al., 2020). Due to their rapid turnaround and affordability, these tests can thus be deployed in millions to aid in large-scale screening efforts and by repeated testing over time, accuracy can be greatly improved (Mina et al., 2020; Ramdas et al., 2020).\n\nIn contrast to traditional PCR tests or antigen rapid tests, LC coupled to multiple reaction monitoring (MRM) tandem MS detection offers a straightforward assay toward pre-defined targets. Turning to MS measurements to detect SARS-CoV-2 in samples directly addresses the issue of specificity and the risk of returning false-positive results as the measurement benefits from the fundamental properties of MS detection of peptides through multiple specific product ions (Gillette and Carr, 2013), which results in sequence-based specificity through direct physical detection of analyte molecules. The instrumentation provides reliable quantification for absolute protein concentration determination and modern MS instrumentation offers unsurpassed specificity, high precision, excellent quantitative performance, and high analytical sensitivity.\n\nWhen combining these features with affinity reagents, such as antibodies, assays can reach very high sensitivities and low levels of a protein can be detected even in complex matrices. The combination of immuno-based strategies with MS read-out can complement each other and provide target-specific protein quantification (Whiteaker and Paulovich, 2011). In fact, it is an ideal combination for rapid detection and reliable quantification of low abundance proteins. Stable isotope labeled (SIL) standards and capture by anti-peptide antibodies (SISCAPA) (Anderson et al., 2004) enables multiplexed analysis of pre-digested clinical samples using peptide-reactive antibodies, selective for SARS-CoV-2 peptides, immobilized onto magnetic beads. Additionally, spiked SIL peptide standards further improve precise protein measurements performed by MRM (Brun et al., 2009). The use of LC-MS for protein quantification of SARS-CoV-2 peptides eliminates the dependence on PCR reactions and any issues related to unspecific amplification, thanks to the selectivity achieved at three different levels: first by the antibody; second by the mass spectrometric read-out, and finally, the internal standard. As a proof of concept, we analyzed clinical samples collected from asymptomatic individuals screened for ongoing disease by RT-PCR. Samples were taken from the upper respiratory tract (combined triple-point collection strategy throat/nasopharynx/saliva) and a set of 48 PCR positive and 308 RT-PCR negative samples were selected for LC-MS analysis. All samples were analyzed using the SISCAPA immuno-affinity peptide enrichment protocol followed by LC-MS read-out outlined in Figure 1. The application of immuno-affinity peptide enrichment is typically associated with the detection of protein disease markers in body fluids, such as plasma or dried blood spot samples. Here, the novel application of the technology is demonstrated to detect and quantify infection by analyzing the protein complement of viruses at relevant levels, which are proven difficult to reach without enrichment (Van Puyvelde et al., 2021). This study thereby presents a precise and complementary approach to RT-PCR to reliably detect SARS-CoV-2 in a research or clinical setting and a possible route forward to support population-wide screening.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig1-v2.jpg)\n\n**Figure 1.:** Swab sample extracts were subjected to tryptic digestion, SIL standards added to the tryptic digest solution, and magnetic beads coupled with specific anti-peptide antibodies incubated to allow binding of the peptides. Unbound peptides are removed and the target peptides eluted and measured using multiple reaction monitoring (MRM) analysis with LC-MS.\n\n## Results\n\nThe application of LC-MS to detect tryptic digest peptides of SARS-CoV-2 proteins has been successfully demonstrated (Cardozo et al., 2020; Cazares et al., 2020; Freire-Paspuel and Garcia-Bereguiain, 2021; Gouveia et al., 2020a; Gouveia et al., 2020b; Ihling et al., 2020; Saadi et al., 2021; Van Puyvelde et al., 2021). However, these studies also highlight that the technique can be hampered by matrix effects, that is, analysis interferences arising from the constituent components of swab (preservation) media or other matrices, as well as base sensitivity, to be able to reach clinically relevant detection levels, suggesting the need for clean-up, for example, solid phase-based extraction and/or affinity enrichment (Renuse et al., 2020; Van Puyvelde et al., 2021). Moreover, commonality can be observed within the results of these studies in terms of which tryptic digest peptides are typically detected by means of LC-MS. Nucleocapsid protein (NCAP) is the most abundant viral SARS-CoV-2 protein with an estimated ~300\u20131000 copies per virion particle (Bezstarosti et al., 2020; Phimister et al., 2020), making it, because of the relatively high number of NCAP copies per virion, an attractive target for LC-MS-based detection compared to other viral proteins. A number of NCAP candidate peptides were therefore evaluated in terms of enrichment efficiency and LC-MS behavior, that is, sensitivity and linear dynamic range, and peptide immunoassay suitability (Whiteaker et al., 2011). The LC-MS MRM responses of a number of candidate NCAP SIL peptides are shown in Figure 2\u2014figure supplement 1, ranking the peptides in descending order of MRM sensitivity. From this set of peptides, primarily based on both MRM response and peptide immunoassay suitability, peptide AYNVTQAFGR was found to be one of the best surrogate peptide candidates, but, equally importantly, it is not significantly affected to date by known SARS-CoV-2 virus mutations (https://www.gisaid.org/). Other evaluated peptides, but not discussed in detail, included ADETQALPQR, DGIIWVATEGALNTPK, and NPANNAAIVLQLPQGTTLPK, of which the basic quantitative characterization results are summarized in Figure 2\u2014figure supplements 2\u20134, respectively.\n\n### Method characterization\n\nThe LC-MS MRM data were processed using TargetLynx XS and with a cut-off threshold algorithm based on peptide peak height and area thresholds, as well as quantifier to qualifier ion ratio threshold (30%). In other words, using two different consistently measured peptide fragment ions, that is, MRM transitions, to confirm the presence of SARS-CoV-2 proteins. Typical detection examples for the quantifier, qualifier, and SIL MRM transitions are shown in the (A) panel of Figure 2. An internal standard SIL corrected LC-MS calibration curve for antibody enriched NCAP peptide AYNVTQAFGR detected in a spiked nasopharyngeal swab matrix solution is shown in the (B) panel of Figure 2, covering a linear dynamic range from 3 to 50,000 amol/\u00b5l, providing >4 orders of linear dynamic range, meanwhile affording an LLOQ amount of 3 amol/\u00b5l of AYNVTQAFGR peptide (with precision \u226420%, bias \u00b120 % and S/N > 10:1 [peak-to-peak]). Shown as well are example quantifier and qualifier MRM chromatograms of positive (Figure 2C) and negative (Figure 2D) SARS-CoV-2 phosphate-buffered saline (PBS) swab samples. The selectivity of the method is highlighted by the complete absence of signal in the MRM chromatogram of the negative SARS-CoV-2 sample (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-v2.jpg)\n\n**Figure 2.:** Quantifier, qualifier, and stable isotope labeled (SIL) internal standard peptide chromatograms spiked at the lower limit of quantification (3 amol/\u00b5l) (A). Calibration curve of the AYNVTQAFGR peptide based on enriched recombinant NCAP digest, spiked with a constant amount of SIL peptide (B). Two representative intensity-scaled MRM chromatograms of positive (mean cycle threshold [Ct] 31) (C) and negative (blank) (D) severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) swab samples, respectively, normalized to the most abundant shared MRM transition. Intensity-scaled SIL internal standard peptide MRM chromatograms of positive (E) and negative (F) SARS-CoV-2 swab samples.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-figsupp3-v2.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-figsupp4-v2.jpg)\n\nThe precision of the method was evaluated at 3, 10, 400, and 25,000 amol/\u00b5l for NCAP AYNVTQAFGR peptide and NCAP spiked into PBS and viral transport medium (VTM, Liofilchem, Italy). Peptides were enriched by antibodies and samples were analyzed in replicates of 5-over-5 separate occasions. The inter- and intra-day precision values of the method, as summarized in Table 1, were shown to be \u226420 % CV.\n\n**Table 1.**\n Intra- and inter-day method precision (n = 5) when monitoring severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) nucleocapsid protein (NCAP) peptide AYNVTQAFGR using immuno-affinity peptide enrichment liquid chromatography-mass spectrometry (LC-MS) (multiple reaction monitoring [MRM]).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"8\">Precision (% CV)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th colspan=\"4\">Intra (concentration [amol/\u03bcl])</th>\n      <th colspan=\"4\">Inter (concentration [amol/l\u03bcl])</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>3</td>\n      <td>10</td>\n      <td>400</td>\n      <td>25,000</td>\n      <td>3</td>\n      <td>10</td>\n      <td>400</td>\n      <td>25,000</td>\n    </tr>\n    <tr>\n      <td>Peptide-spiked PBS</td>\n      <td>12.0</td>\n      <td>11.1</td>\n      <td>5.8</td>\n      <td>5.2</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>NCAP-spiked PBS</td>\n      <td>18.9</td>\n      <td>3.9</td>\n      <td>4.8</td>\n      <td>6.4</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Peptide-spiked VTM</td>\n      <td>12.5</td>\n      <td>6.8</td>\n      <td>2.4</td>\n      <td>3.0</td>\n      <td>15.5</td>\n      <td>10.2</td>\n      <td>6.8</td>\n      <td>4.7</td>\n    </tr>\n    <tr>\n      <td>NCAP-spiked VTM</td>\n      <td>13.2</td>\n      <td>10.2</td>\n      <td>2.4</td>\n      <td>2.9</td>\n      <td>11.6</td>\n      <td>17.6</td>\n      <td>18.5</td>\n      <td>11.1</td>\n    </tr>\n  </tbody>\n</table>\n\n_\u2013, not tested._\n\nAdditionally, the AYNVTQAFGR peptide was shown to be stable in the autosampler at 10\u00b0C for over 48 hr following re-analysis and comparison to a stored calibration curve.\n\n### Sample analysis\n\nThe samples analyzed by LC-MS and RT-PCR were compared. The high and low pools were analyzed in triplicate with a precision of 3.0% CV and 12.2% CV, respectively, for each pool. Example quantifier and qualifier LC-MS MRM chromatograms of peptide AYNVTQAFGR are shown in the two bottom panes of Figure 2, respectively. The results shown in Figure 3A suggests good (inverse) correlation between the LC-MS (log2 transformed quantifier response, i.e., SIL corrected quantifier peak area) and the RT-PCR (Ct) data, which has also been noted in other so-called \u2018non-enriched\u2019 studies (Van Puyvelde et al., 2021). The results shown in Figure 3B represent the LC-MS data in an alternative, quartile distribution-based format, suggesting that differentiation between sample types is feasible and that the detected abundances are significantly different (p = 0.00018; Mann-Whitney U test).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig3-v2.jpg)\n\n**Figure 3.:** Color labeling is based on RT-PCR diagnoses; blue = positive severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2); gray = not detected (no light signals) or inconclusively quantified (single transition) by LC-MS.\n\nFollowing CLSI EP 12-A2 User Protocol for Evaluation of Qualitative Test Performance guidance, a summary of the sample analysis results is shown in a 2 \u00d7 2 contingency table format in Figure 4, using the RT-PCR results as a reference, estimated sensitivity and specificity values for LC-MS are 83.3% and 100%, respectively. The 95% score confidence interval (CI) limits for sensitivity calculations were 70.4\u201391.3% and for specificity were 98.8\u2013100%. Accordingly, the agreement between RT-PCR and LC-MS was strong (kappa value of 0.9 [95% CI 0.83\u20130.97]). When analyzing samples above the estimated LLOQ (3 amol/\u03bcl, which approximates to Ct \u226430), the estimated sensitivity is improved to 94.7% with the corresponding 95% score CI limits for sensitivity 82.7\u201398.5%. Further work will look at adding a secondary confirmatory peptide to the cut-off algorithm. However, RT-PCR does not distinguish between infectious virus and non-infectious nucleic acids (Engelmann et al., 2021), whereas LC-MS will only detect one or multiple peptides from the protein complement of the virus. This has implications on the interpretation of RT-PCR Ct levels itself in terms of infectious vs. non-infectious classification of patient samples but also for determining the sensitivity and specificity of complementary and/or alternative methods. Peptide levels have not been evaluated in the context of infectiousness yet, but other conditions, such as sample storage before LC-MRM/MS, can also give rise to analytical variance due to the inherent difference in stability between RNA and proteins. Additionally, Ct values are not universally applicable as they differ between manufacturers and methods (Engelmann et al., 2021; van Kasteren et al., 2020), which enforces the need of methods that are capable of determining viral load more accurately.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig4-v2.jpg)\n\n**Figure 4.:** The LC-multiple reaction monitoring (MRM)/MS performance is based on RT-PCR results obtained from 48 positive and 308 negative samples. (B) The LC-MRM/MS performance based on all positive samples with an RT-PCR results below cycle threshold (Ct) 30 (limit of detection [LOD] for the LC-MRM/MS) and 308 negative samples.\n\n## Discussion\n\nAny diagnostic test result should be interpreted in the context of the probability of disease, but also include proper internal controls to ensure a high level of clinical specificity when used as a tool for large-scale screening. In this conceptual study, we have established an assay capable of detecting SARS-CoV-2 in self-collected samples. Multiple peptide assays were generated toward the NCAP and the assay that gave the best response was used to profile SARS-CoV-2 in clinical samples. The unsurpassed specificity of mass spectrometers combined with antibodies is an attractive route forward for a future molecular pandemic surveillance system. This specificity can help grow the assay repertoire, which can be expanded to cover multiple peptides or proteins by rather simple means, if anti-peptide antibodies are available. The SISCAPA peptide enrichment method ensures both high sensitivity and low risk of reporting false positives due to the combination of specific binding of the antibody (Hoofnagle and Wener, 2009) with LC-MRM/MS read-out. This is achieved by multiple factors that greatly outperform RT-PCR and rapid antigen test in theory. Firstly, antibodies are used to selectively enrich for the target peptide in a complex mixture. This helps increase the overall analytical sensitivity while LC-MS readily can distinguish between peptides in the separation and MRM steps. Secondly, internal standards added to the sample enable accurate and robust quantification. This provides an internal standard reference trace for every analyte and can help distinguish between false-positive chromatographic peaks based on retention time and ion ratios, that in RT-PCR experiment would be reported as a positive due to the absence of internal standards and since each gene is detected by a single reporter dye.\n\nThe sensitivity can be further improved by increasing the sample load if needed. Additionally, the number of viral protein targets can also be scaled by introducing additional anti-peptide antibodies into the sample mixture. This would allow for an LC-MS-based viral protein panel analysis method where relevant peptides, also including relevant spike peptides for mutation surveillance, are monitored in an endemic scenario, either covering new emerging SARS-CoV-2 strains or other viruses, such as influenza or respiratory syncytial viruses.\n\nWe show that the SISCAPA technology is an attractive route forward for future molecular pandemic surveillance systems. The accuracy of the LC-MS-based method would tolerate low levels of positive samples without compromising the positive predictive value of large-scale screening efforts, and thereby providing a next-generation platform for disease surveillance and an attractive alternative to today\u2019s RT-PCR-based technologies.\n\n## Materials and methods\n\n### Sample collection\n\nThe study was performed in accordance with the declaration of Helsinki and the study protocol (J\u00e4mf\u00f6rande studier av Covid-19 smitta och antikroppssvar i olika grupper i samh\u00e4llet) was approved by the Ethical Review Board of Link\u00f6ping, Sweden (Regionala etikpr\u00f6vningsn\u00e4mnden, Link\u00f6ping, DNR \u2013 2020\u201306395). Informed consent and consent to publish, including consent to publish anonymized data, was obtained from all subjects. Briefly, asymptomatic individuals working at an elderly caregiver in Sweden were screened on a regular basis at their workplace. A three-point collection (throat, nasal, saliva) was performed by participants using a self-sampling collection kit (Sansure Biotech, Changsha, China) containing PBS (1\u00d7 PBS, 137 mM NaCl; 2.7 mM KCl; 4.3 mM Na2HPO4; 1.47 mM KH2PO4). Clinical samples were collected by swabs dipped into the sample collection tube and transported to the laboratory within 8 hr. All samples were heat inactivated upon arrival to ensure that the core temperature of the vial reached at least 56\u00b0C for 30 min. The protocol used ensured that the core temperature did not reach above 60\u00b0C \u00b1 0.5\u00b0C (1 sd), which has been shown to have no effect on the RT-PCR sensitivity.\n\n### RT-PCR\n\nSamples were analyzed using an RT-PCR test from Sansure Biotech (Changsha, China) according to FDA-EUA guidelines. The Novel Coronavirus (2019-nCoV) Nucleic Acid Diagnostic Kit was used for quantitative detection of the ORF-1ab and the N gene of novel coronavirus (2019-nCoV). Briefly, samples were lysed at room temperature for at least 10 min to allow for RNA release by chemical lysis using Sample Release Reagent (Sansure Biotech). The presence or absence of SARS-CoV-2 RNA was determined by RT-PCR combined with multiplexed fluorescent probing, which targets a SARS-CoV-2-specific region of ORF-1ab (FAM) and N gene (ROX) together with the human Rnase P internal control (Cy5). The RT-PCR analysis was performed using a CFX96 Real\u2010Time PCR Detection System (Bio-Rad, Hercules, CA) programmed with the following RT-PCR protocol according to the manufacturer\u2019s instruction (50\u00b0C, 30 min; 95\u00b0C 1 min) followed by 45 cycles of (95\u00b0C 30 s, 60 \u00b0C 30 s). The RT-PCR results were interpreted according to instructions. Positive (FAM/ROX Amplification, Ct < 40). Negative (FAM/ROX No amplification; Cy5 Amplification, Ct < 40).\n\n### Immuno-affinity peptide enrichment LC-MS\n\n#### Materials\n\nRecombinant NCAP was from R&D Systems, Minneapolis, MN, trypsin from Worthington, Lakewood, NJ, and anti-peptide antibodies from SISCAPA Assay Technologies, Washington, DC. All other chemicals were from MilliporeSigma, St Louis, MI, unless stated otherwise.\n\n#### Calibrator preparation\n\nNCAP digest, protocol described below, was used for calibration and quantitation of viral proteins. A serial dilution from 2.2 pmol/\u00b5l NCAP to 10,000, 2000, 400, 80, 16, and 3 amol/\u00b5l was performed consecutively in pooled negative sample background.\n\n#### Samples\n\nClinical samples subjected to two freeze-thaw cycles prior were anonymized and two control pools were established by pooling randomly chosen samples based on their RT-PCR result (Ct < 30 [high pool], 30 \u2264 Ct < 33 [low pool]). A total of 180 \u00b5l from each sample was used per enrichment experiment. A set of 48 positive and 308 negative samples was subjected to the LC-MS analysis.\n\n### Protein extraction and digestion\n\nA total of 20 \u00b5l of denaturant mixture (1 % (w/v) RapiGest [Waters Corporation, Milford, MA]) in 1 M triethylammonium bicarbonate, 50 mM dithiothreitol (Waters Corporation) were aliquoted into the collection plate (Waters Corporation). Next, 180 \u00b5l of the diluted NCAP and patient samples were carefully transferred from the collection tubes into the same plate. The plate was incubated on a heater-shaker at 500 rpm at 56\u00b0C for 15 min followed by the addition of 50 \u00b5l trypsin solution (7.3 mg/ml trypsin in 10 mM HCl). After mixing at 500 rpm for 30 s, the samples were digested at 37\u00b0C for 30 min and thereafter quenched by addition of trypsin stopping agent (0.22 mg/ml of Tosyl-L-lysyl-chloromethane hydrochloride in 10 mM HCl) at a final concentration of 37 \u00b5g/ml. The sample plate was mixed at 500 rpm for 30 s and incubated at room temperature for 5 min. The samples were spiked with 20 \u00b5l of SIL peptide mixture solution and mixed thoroughly on a shaker at 500 rpm for 30 s.\n\n### Peptide enrichment\n\nAnti-peptide antibodies, raised toward proteotypic peptides from the NCAP, were screened and validated as previously described (Pope et al., 2009). The antibody-coupled magnetic bead immune adsorbents corresponding to four SIL peptides (ADETQALPQR-13C615N4, AYNVTQAFGR-13C615N4, DGIIWVATEGALNTPK-13C615N2, and NPANNAAIVLQLPQGTTLPK-13C615N2) were resuspended fully by vortex mixing. The suspension of each anti-peptide antibody tube was mixed together in 1:1 ratio and 40 \u00b5l of the mixture was added to each digest. The plate was mixed at 1400 rpm to ensure that beads were resuspended and thereafter incubated for 1 hr at 800 rpm at room temperature. After 1 hr incubation, the plate was placed on a magnet array (SISCAPA Assay Technologies). As soon as the beads had settled on the sides of each well (typically 1 min), the supernatant was removed; 150 \u00b5l of wash buffer (0.03% CHAPS, 1\u00d7 PBS) was added to each sample and the beads were fully resuspending at 1400 rpm for 30 s and 450 rpm for another 30 s. The plate was placed on the magnet array again and the supernatant was removed. This step was repeated three times. The beads were subsequently resuspended in 50 \u00b5l elution buffer (0.5% formic acid, 0.03% CHAPS) and incubated for 5 min at room temperature. The beads were discarded by transferring the eluent to a QuanRecovery plate (Waters Corporation) for LC-MS analysis.\n\n### LC-MS detection and quantification\n\nChromatography was performed on an ACQUITY UPLC I-Class FTN system, with Binary Solvent Manager and column heater (Waters Corporation); 20 \u00b5l of the enriched sample was injected onto a ACQUITY Premier Peptide BEH C18, 2.1 mm \u00d7 50 mm, 1.7 \u00b5m, 300 \u00c5 column (Waters Corporation) and separated using a gradient elution of mobile phase A containing laboratory LC-MS grade de-ionized water with 0.1% (v/v) formic acid, and mobile phase B containing LC-MS grade acetonitrile with 0.1% (v/v) formic acid. The gradient elution was performed at 0.6 ml/min with initial inlet conditions at 5% B, increasing to 28% B over 4.5 min, followed by a column wash at 90% B for 0.6 min and a return to initial conditions at 5% B. The total run time was 5.7 min, with a 6.5 min injection-to-injection cycle time.\n\nA Xevo TQ-XS tandem MS (Waters Corporation, Wilmslow, UK) operating in positive electrospray ionization (ESI+) was used for the detection and quantification of the peptides. The instrument conditions were as follows: capillary voltage 0.5 kV, source temperature 150\u00b0C, desolvation temperature 600\u00b0C, cone gas flow 150 l/h, and desolvation gas flow 1000 l/h. The MS was calibrated at unit mass resolution for MS1 and MS2. Light and heavy labeled peptides were detected using MRM mode of acquisition with experimental details overviewed in Table 2.\n\n**Table 2.**\n Multiple reaction monitoring (MRM) transitions and mass spectrometry (MS) method details target nucleocapsid protein (NCAP) severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) peptides.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Peptide</th>\n      <th>MRM</th>\n      <th>MRM transition type</th>\n      <th>Cone voltage (V)</th>\n      <th>Collision energy (V)</th>\n      <th>Retention time (min)</th>\n      <th>Scan window (min)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">ADETQALPQR</td>\n      <td>564.8 &gt; 400.2</td>\n      <td>Quantifier</td>\n      <td>35</td>\n      <td>19</td>\n      <td rowspan=\"4\">1.09</td>\n      <td rowspan=\"4\">0.6\u20131.4</td>\n    </tr>\n    <tr>\n      <td>564.8 &gt; 584.4</td>\n      <td>Qualifier</td>\n      <td>35</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>564.8 &gt; 712.4</td>\n      <td>Qualifier</td>\n      <td>35</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>569.8 &gt; 410.2</td>\n      <td>SIL</td>\n      <td>35</td>\n      <td>19</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">AYNVTQAFGR</td>\n      <td>563.8 &gt; 679.4</td>\n      <td>Quantifier</td>\n      <td>35</td>\n      <td>19</td>\n      <td rowspan=\"4\">2.49</td>\n      <td rowspan=\"4\">2.0\u20133.0</td>\n    </tr>\n    <tr>\n      <td>563.8 &gt; 578.3</td>\n      <td>Qualifier</td>\n      <td>35</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>563.8 &gt; 892.5</td>\n      <td>Qualifier</td>\n      <td>35</td>\n      <td>19</td>\n    </tr>\n    <tr>\n      <td>568.8 &gt; 689.4</td>\n      <td>SIL</td>\n      <td>35</td>\n      <td>19</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">DGIIWVATEGALNTPK</td>\n      <td>562.3 &gt; 643.4</td>\n      <td>Quantifier</td>\n      <td>35</td>\n      <td>14</td>\n      <td rowspan=\"4\">4.12</td>\n      <td rowspan=\"4\">3.6\u20134.8</td>\n    </tr>\n    <tr>\n      <td>562.3 &gt; 572.3</td>\n      <td>Qualifier</td>\n      <td>35</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>562.3 &gt; 700.4</td>\n      <td>Qualifier</td>\n      <td>35</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>565.2 &gt; 708.4</td>\n      <td>SIL</td>\n      <td>35</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">NPANNAAIVLQLPQGTTLPK</td>\n      <td>687.4 &gt; 841.5</td>\n      <td>Quantifier</td>\n      <td>35</td>\n      <td>18</td>\n      <td rowspan=\"4\">3.92</td>\n      <td rowspan=\"4\">3.6\u20134.2</td>\n    </tr>\n    <tr>\n      <td>687.4 &gt; 766.4</td>\n      <td>Qualifier</td>\n      <td>35</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>687.4 &gt; 865.5</td>\n      <td>Qualifier</td>\n      <td>35</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>690.4 &gt; 849.5</td>\n      <td>SIL</td>\n      <td>35</td>\n      <td>18</td>\n    </tr>\n  </tbody>\n</table>\n\nTargetLynx XS (Waters Corporation) was used to process the raw LC-MS data, that is, signal processing (mean smoothing and background subtraction), peak detection (area and height), and quantification of the MRM chromatograms, including the calculation of the quantifier ion to qualifier ion ratio. The quantified data were exported as tables (Supplementary file 1) and additional analysis and visualization carried out using Python 3.\n\n### Data and materials availability\n\nThe ProteomeXchange ID for this dataset is PXD026366. The proteomics data have been deposited to Panorama Public (Sharma et al., 2014) (https://panoramaweb.org/sars-cov-2_siscapa.url). This dataset includes raw files and integrated peak areas from TargetLynx XS, as well as visualization of all LC-MRM/MS chromatograms.\n",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "0d27253b-895e-44b3-8366-04533d1ca88e",
+      "submission_id": "21a9eb0f-ce92-42b8-93d9-58ee368f6774",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maarten Dhaenens, ProGenTomics, Laboratory of Pharmaceutical Biotechnology, Ghent University, Ghent, Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70843.sa0](https://doi.org/10.7554/eLife.70843.sa0)\n\nWith the prospect of pandemic readiness, the data presented here shows that MS can and most probably will start to become an essential analytical contribution.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Maarten Dhaenens, ProGenTomics, Laboratory of Pharmaceutical Biotechnology, Ghent University, Ghent, Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70843.sa1](https://doi.org/10.7554/eLife.70843.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Rapid and Sensitive Detection of SARS-CoV-2 Infection Using Quantitative Peptide Enrichment LC-MS/MS Analysis Running title: Quantitative Peptide Affinity LC-MS/MS Analysis of SARS-CoV-2\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Maarten Dhaenens as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Y M Dennis Lo as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jeroen Demmers (Reviewer #2); Marica Grossegesse (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAs a guest editor, I have tried to organize the main concerns as described in more detail below. Please make sure to address these where possible. The original revisions provide a broader context of the requested reviews.\n\n1. Sample preparation\n\na. How were the antibodies used in the present study made and characterized? Can you specify this in the material and methods section? (MG, JD) If proprietary and legal issues forbid the sharing of this data, we are willing to trust the overall performance.\n\nb. It would be reasonable show with own data or to cite a publication stating that heat inactivation does not compromise the real-time PCR readout. (MG)\n\nc. \"50 \u03bcL elution buffer (0.5 % 180 formic acid, 0.03% CHAPS, 1X PBS) and incubated for 5 min at room temperature.\" This minor sentence is placed under major remarks, because in our understanding the elution buffer needs to be acidic and adding PBS will reduce acidity. If this is a typo, please correct. If this is not, could the authors try and use H2O instead and see if their results improve? (MD)\n\n2. Figure 2: Peptide detection\n\na. What is represented in panels A and B. Is this the pure SIL peptide of the endogenous peptide in a complex matrix? What does '3 amol/ul' in the middle chromatogram exactly mean? (JD, MD)\n\nb. Calibration curves:\n\ni. I assume that the input is pure SIL peptide? (JD)\n\nii. Throughout the manuscript, could the calibration curves be displayed with a Log2-transformation in the X-axis to increase the resolution of the low abundant signal? Alternatively, or additionally provide a zoom inset to make it even more clear that 60 amol is still more signal than the negative sample. (MD)\n\nc. Figure 2B: Add description of y-axis and place the text outside the line, so that the reader can see if there are any data points hidden. (MG)\n\nd. \"on-column amount of 60 amol.\" Because of the enrichment procedure, could the authors specify what initial conditions they spiked into the dilution series prior to enrichment. This would allow recalculation and avoid confusion about the correctness of the 60 amol on column claim (which in our hands is still detectable). (MD)\n\n3. Patient population:\n\na. I oppose to the representation of the results and the claim of 86% sensitivity. (MD) Please see detailed revisions for an argumentation and for an alternative way of reproting your results. MG additionally pointed out during the Review evaluation session that true negatives can only be obtained from pre-Sars-Cov-2 era patients (prior sampling).\n\nb. \"asymptomatic individuals screened for ongoing disease\": How were these obtained? (MD)\n\nc. The majority was tested positive for SARS-CoV-2. This is very different from the percentages observed in regular testing facilities. How was the study group composed? Were these individuals who were already admitted to the hospital? (JD)\n\nd. Authors conclude at the end of the Results section that patient samples were collected at an infectious stage (MG). \"patient-collected samples\" is a little misleading. Do you mean self-collected samples? (MG)\n\ne. P5L98: why saliva samples? These actually are the hardest matrix for SISCAPA in our hands\u2026 If the triple sampling is what underlies the mentioning of saliva, I would prefer not to mention it separately, because its weight in the final assay cannot be assessed and several groups have already reported having difficulties with this matrix. (MD)\n\n4. Bubble plot:\n\na. What is the size of the bubbles? (JD, MD)\n\nb. Why was the highest signal reported in Figure 3 as a green dot at log2 MRM response of -6 was not called \"positive\" in the LCMS assay? (JD, MD) If manual peak inspection was used for diagnosis, please elaborate.\n\nc. When counting dots, this only adds up to 55 sample, not 86 as depicted in the confusion matrix. (MD) Specify the number of samples (MG)\n\nd. In Figure 3 the grey data points represent \"not detected\" or \"inconclusively identified\". What is meant by this? (MD, JD)\n\ne. Calculate the correlation of the MS response to the cT value and add to graphic. (MG)\n\n5. The access to the raw data was denied (MD, MG)\n\n6. \"For the LC-MS results, the lowest response divided by three was used\". What is meant here? (MD, JD)\n\n7. Please minimize downplaying qPCR in the text. (MG)\n\n8. All reviewers would really appreciate extending the data beyond only one peptide. If impossible, please elaborate very clearly on the dangers and emphasize that this is only a proof of principle.\n\nOverall, there was a general agreement amongst the reviewers that we are at a pivotal point in time for mass spectrometry in the clinic. Only with the highest standard data and the best possible representation of the results will we reach the common goal of showing the potential of MS.\n\nReviewer #3 (Recommendations for the authors):\n\nThe manuscript adds interesting and important knowledge to the field of virus-targeted proteomics. Still, in my opinion, some points need to be clarified or changed:\n\n1) Line 72: Could you specify what rapid test detect nucleic acids? Rapid tests for my understanding are antigen tests detecting mainly the NCAP protein of SARS-CoV-2.\n\n2) Line 72-78: The authors write about the sensitivity as a drawback of antigen tests. What about the specificity?\n\n3) Line 103: The selectivity of antibodies is still a widely discussed topic. If the antibody is well characterized it can definitely contribute to a high specificity what leads me to my question: How were the antibodies used in the present study made and characterized? Can you specify this in the material and methods section?\n\n4) Line 169/170: During sample preparation four different SARS-CoV-2 peptides were enriched. Were these also detected by MRM in the patient samples? Or to ask the other way around: why do you only show results for a single peptide?\n\n5) Line 263: What do you mean with QC samples? Are these the two pools?\n\n6) Line 279: Do you mean highest instead of lowest cT values here? Why do negatively diagnosed samples even a have a cT value (shouldn't they be negative)?\n\n7) Figure 3A: Calculate the correlation of the MS response to the cT value and add to graphic.\n\n8) Figure 3B: Specify the number of samples (N=?).\n\n9) Line 302: What do you mean with \"true sensitivity\"?\n\nFurther general remarks:\n\n10) The data has been uploaded to respective data repositories (ProteomeXchange and Panorama Public). I was able to access the Panorama Public data, but not the ProteomeXchange data. Could you please provide the login data?\n\n11) Page 3, line 57: The expression \"patient-collected samples\" is a little misleading. Do you mean self-collected samples?\n\n12) Line 77: Repetition that antigen tests are less sensitive (already stated in line 74).\n\n13) Line 87: Typo: remove \"=\"\n\n14) Line 125f: In the study heat-inactivated samples were used. Hence, it would be reasonable show with own data or to cite a publication that heat inactivation does not compromise the real-time PCR readout.\n\n15) Line 215: Do you mean \"Results and Discussion\" here? Otherwise I am missing the \"discussion\" section.\n\n16) Line 220-222: remove blank line.\n\n17) Figure 2B: Add description of y-axis and place the text outside the line, so that the reader can see if there are any data points hidden.\n\n18) Table 2: typo in caption, replace \"=\"by \"-\"\n\n19) Line 326: Typo: outperform.\n",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9debfe91-129c-4b9b-9ea3-ee9d7f445fe3",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C1",
+      "claim": "SARS-CoV-2 causes COVID-19",
+      "claim_type": "EXPLICIT",
+      "source": "The severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Wu et al., 2020), leading to the coronavirus disease 2019 (COVID-19), has had a significant impact on human health globally",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wu et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "54eb1e1b-9120-4f22-b3b3-7c7ba9091fc5",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C2",
+      "claim": "There have been more than 234 million confirmed COVID-19 cases as of October 4, 2021",
+      "claim_type": "EXPLICIT",
+      "source": "with more than 234 million confirmed cases (Dong et al., 2020), assessed October 4, 2021",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dong et al., 2020 and a specific date",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "6ae9d6fa-e005-4fe2-b841-f96ed470c659",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C3",
+      "claim": "The pandemic has led to lockdowns of urban areas across the globe",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of the pandemic are devastating and have led to lockdowns of urban areas across the globe as a response to contain any potential outbreaks (Hale et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hale et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "578dddc2-9914-48ce-8551-b7e8f2fc6a6c",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C4",
+      "claim": "Huge investments have been directed toward infrastructure for large-scale COVID-19 testing",
+      "claim_type": "EXPLICIT",
+      "source": "To monitor the disease, huge investments have been directed toward infrastructure for large-scale testing for ongoing COVID-19 infection (Baker et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Baker et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "8eb6c7bf-1cf1-4441-baf4-c6541c17a04c",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C5",
+      "claim": "RT-PCR is the most widely used technology for detecting SARS-CoV-2",
+      "claim_type": "EXPLICIT",
+      "source": "The diagnostic method called real-time polymerase chain reaction (RT-PCR) (Freeman et al., 1999) is the most widely used technology for detecting SARS-CoV-2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Freeman et al., 1999 and general knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "6dbe68f5-5422-46ff-97a3-03e7c326c3f8",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C6",
+      "claim": "RT-PCR for SARS-CoV-2 was established within days after the virus genome was released",
+      "claim_type": "EXPLICIT",
+      "source": "was established within days after the virus genome was released (Corman et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Corman et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "a84946e3-4200-4c5d-b7ff-a68d95ab9483",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C7",
+      "claim": "RT-PCR is considered the gold standard by WHO for diagnosing patients with COVID-19 in routine clinical practice",
+      "claim_type": "EXPLICIT",
+      "source": "The method is considered as the gold standard by WHO for diagnosing patients with COVID-19 in routine clinical practice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references WHO's position, which is established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "526ce60f-ddc5-4844-abb3-5eb185c5c1a3",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C8",
+      "claim": "Large-scale laboratories dedicated to PCR-based diagnostics rapidly mobilized worldwide in the early phase of the pandemic, leading to a global shortage of diagnostic reagents",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale laboratories dedicated to PCR-based diagnostics rapidly mobilized worldwide in the early phase of the pandemic, which led to a sudden global shortage of diagnostic reagents (Woolston, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Woolston, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "5a1b4b99-b396-49ef-9563-5dcfcac9345d",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C9",
+      "claim": "PCR tests generally have high analytical sensitivity and specificity, often in the range of 95\u2013100% when evaluated in clinical settings",
+      "claim_type": "EXPLICIT",
+      "source": "The PCR tests generally have high analytical sensitivity and specificity, even for self-collected samples, often in the range of 95\u2013100% (Altamirano et al., 2020) when evaluated in clinical settings",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Altamirano et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "4a223c2f-523a-411d-b2c5-0afdf36d6e90",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C10",
+      "claim": "The observed variance between PCR tests can be partly explained by the inherent sensitivity of the PCR reaction itself or by pre-analytical biases",
+      "claim_type": "EXPLICIT",
+      "source": "The observed variance between tests can be partly explained by the inherent sensitivity of the PCR reaction itself or by pre-analytical biases (Lippi et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lippi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "b55cb526-d014-4c28-8e80-9edc6597d9b5",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C11",
+      "claim": "PCR can detect genetic material in circulation not only days after but also multiple weeks after the first day of symptom onset",
+      "claim_type": "EXPLICIT",
+      "source": "the high sensitivity has also been subjected to criticism since it can detect genetic material in circulation not only days after but also multiple weeks after the first day of symptom onset (Lan et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lan et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "035283e1-992e-4ede-992f-2001eb0f9c59",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C12",
+      "claim": "Some studies report that the clinical false-positive rate associated with PCR tests can be as much as 4% at certain test facilities",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies report that it can be as much as 4% at certain test facilities (Surkova et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Surkova et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "52b13620-c424-4625-962b-37b966e01ff2",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C13",
+      "claim": "False-positive PCR results have the potential to cause the most harm in a scenario entering post COVID-19 when large-volume screening is performed in communities with low prevalence",
+      "claim_type": "EXPLICIT",
+      "source": "This type of error has the potential to cause the most harm in a scenario entering post COVID-19 when large-volume screening is performed in communities with low prevalence (Healy et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Healy et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "1351356b-6647-401c-a770-2f3ca82c9efd",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C14",
+      "claim": "Rapid antigen tests show similar specificity to PCR-based assays",
+      "claim_type": "EXPLICIT",
+      "source": "These rapid tests show similar specificity to PCR-based assays (Weissleder et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Weissleder et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "452e3ce0-3479-4618-8646-63771ec38af2",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C15",
+      "claim": "Several studies have shown that rapid antigen tests lack sufficient sensitivity when compared to RT-PCR",
+      "claim_type": "EXPLICIT",
+      "source": "but several studies have shown that they lack sufficient sensitivity when compared to RT-PCR (Fitzpatrick et al., 2021; Perchetti et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fitzpatrick et al., 2021 and Perchetti et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "1cbfc883-b3d0-43ca-9cd8-307dc52907f6",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C16",
+      "claim": "Antigen tests only provide a binary read-out (positive/negative)",
+      "claim_type": "EXPLICIT",
+      "source": "Antigen tests also require affinity reagents, an initial bottleneck and a significant hurdle to overcome in the initial phase of a pandemic, but can scale massively once they have been generated. Additionally, rapid tests only provide a binary read-out (positive/negative), which can be difficult to interpret and the antigen is rarely specified (Sethuraman et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sethuraman et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "069d03c3-d304-4d11-893f-4be9fdcf7ad6",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C17",
+      "claim": "Repeated testing with rapid antigen tests over time can greatly improve accuracy",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their rapid turnaround and affordability, these tests can thus be deployed in millions to aid in large-scale screening efforts and by repeated testing over time, accuracy can be greatly improved (Mina et al., 2020; Ramdas et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mina et al., 2020 and Ramdas et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "64082374-2bff-40a7-8da5-81fd7bcdf4be",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C18",
+      "claim": "LC coupled to MRM tandem MS detection offers a straightforward assay toward pre-defined targets",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to traditional PCR tests or antigen rapid tests, LC coupled to multiple reaction monitoring (MRM) tandem MS detection offers a straightforward assay toward pre-defined targets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about LC-MS technology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "3846b210-97b8-488f-83f0-967c9aee6973",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C19",
+      "claim": "MS measurements benefit from the fundamental properties of MS detection of peptides through multiple specific product ions, which results in sequence-based specificity",
+      "claim_type": "EXPLICIT",
+      "source": "Turning to MS measurements to detect SARS-CoV-2 in samples directly addresses the issue of specificity and the risk of returning false-positive results as the measurement benefits from the fundamental properties of MS detection of peptides through multiple specific product ions (Gillette and Carr, 2013), which results in sequence-based specificity through direct physical detection of analyte molecules",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gillette and Carr, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "ac2e61c1-033c-4c55-ab2f-ffc9c278c99d",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C20",
+      "claim": "Modern MS instrumentation offers unsurpassed specificity, high precision, excellent quantitative performance, and high analytical sensitivity",
+      "claim_type": "EXPLICIT",
+      "source": "The instrumentation provides reliable quantification for absolute protein concentration determination and modern MS instrumentation offers unsurpassed specificity, high precision, excellent quantitative performance, and high analytical sensitivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about MS instrumentation capabilities",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "62e7f153-5925-421e-aa40-4ef2bd5c19bf",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C21",
+      "claim": "The combination of immuno-based strategies with MS read-out can complement each other and provide target-specific protein quantification",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of immuno-based strategies with MS read-out can complement each other and provide target-specific protein quantification (Whiteaker and Paulovich, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Whiteaker and Paulovich, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "9a77c806-0b48-4635-b850-883c68184266",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C22",
+      "claim": "SISCAPA enables multiplexed analysis of pre-digested clinical samples using peptide-reactive antibodies selective for SARS-CoV-2 peptides",
+      "claim_type": "EXPLICIT",
+      "source": "Stable isotope labeled (SIL) standards and capture by anti-peptide antibodies (SISCAPA) (Anderson et al., 2004) enables multiplexed analysis of pre-digested clinical samples using peptide-reactive antibodies, selective for SARS-CoV-2 peptides, immobilized onto magnetic beads",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Anderson et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "b7d56c16-7857-4980-8b5a-79e1cf861ad4",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C23",
+      "claim": "Spiked SIL peptide standards improve precise protein measurements performed by MRM",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, spiked SIL peptide standards further improve precise protein measurements performed by MRM (Brun et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Brun et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "1e7f3d62-53c0-41cc-a7b5-b235445a15cf",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C24",
+      "claim": "The use of LC-MS for protein quantification of SARS-CoV-2 peptides eliminates the dependence on PCR reactions and any issues related to unspecific amplification",
+      "claim_type": "EXPLICIT",
+      "source": "The use of LC-MS for protein quantification of SARS-CoV-2 peptides eliminates the dependence on PCR reactions and any issues related to unspecific amplification, thanks to the selectivity achieved at three different levels: first by the antibody; second by the mass spectrometric read-out, and finally, the internal standard",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the described methodology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "1207d622-99e7-4326-84fc-532dc26c4122",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C25",
+      "claim": "A set of 48 PCR positive and 308 RT-PCR negative samples were selected for LC-MS analysis",
+      "claim_type": "EXPLICIT",
+      "source": "a set of 48 PCR positive and 308 RT-PCR negative samples were selected for LC-MS analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "b2a8561b-9a71-4bee-985f-627311e9c4a4",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C26",
+      "claim": "The levels of SARS-CoV-2 measured by LC-MS correlate well with their corresponding RT-PCR read-out (r = 0.79)",
+      "claim_type": "EXPLICIT",
+      "source": "The results reveal that the levels of SARS-CoV-2 measured by LC-MS correlate well with their correspondingreal-time polymerase chain reaction (RT-PCR) read-out (r = 0.79)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing correlation coefficient",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "c08f80e3-4ac2-4436-a90a-3a7f636edbe2",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C27",
+      "claim": "The analytical workflow shows similar turnaround times as regular RT-PCR instrumentation",
+      "claim_type": "EXPLICIT",
+      "source": "The analytical workflow shows similar turnaround times as regular RT-PCR instrumentation with a quantitative read-out of viral proteins corresponding to cycle thresholds (Ct) equivalents ranging from 21 to 34",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "3bc768a5-976a-4a81-a911-d90d6f872ce2",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C28",
+      "claim": "The LC-MS-based method has a quantitative read-out of viral proteins corresponding to Ct equivalents ranging from 21 to 34",
+      "claim_type": "EXPLICIT",
+      "source": "The analytical workflow shows similar turnaround times as regular RT-PCR instrumentation with a quantitative read-out of viral proteins corresponding to cycle thresholds (Ct) equivalents ranging from 21 to 34",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "631c397b-13fb-41ea-ade6-0fd4c7fbbeee",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C29",
+      "claim": "The LC-MS-based method has 100% negative percent agreement (estimated specificity) when analyzing clinical samples using RT-PCR as a reference",
+      "claim_type": "EXPLICIT",
+      "source": "Using RT-PCR as a reference, we demonstrate that the LC-MS-based method has 100% negative percent agreement (estimated specificity) and 95% positive percent agreement (estimated sensitivity) when analyzing clinical samples collected from asymptomatic individuals with a Ct within the limit of detection of the mass spectrometer (Ct \u2264 30)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing LC-MS to RT-PCR",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "495ff373-31bf-4bf9-bfd6-303853d9cdec",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C30",
+      "claim": "The LC-MS-based method has 95% positive percent agreement (estimated sensitivity) when analyzing clinical samples collected from asymptomatic individuals with a Ct within the limit of detection of the mass spectrometer (Ct \u2264 30)",
+      "claim_type": "EXPLICIT",
+      "source": "Using RT-PCR as a reference, we demonstrate that the LC-MS-based method has 100% negative percent agreement (estimated specificity) and 95% positive percent agreement (estimated sensitivity) when analyzing clinical samples collected from asymptomatic individuals with a Ct within the limit of detection of the mass spectrometer (Ct \u2264 30)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing LC-MS to RT-PCR",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "b751fa09-ebc2-480b-a4dc-3feb37da1fde",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C31",
+      "claim": "The application of LC-MS to detect tryptic digest peptides of SARS-CoV-2 proteins has been successfully demonstrated",
+      "claim_type": "EXPLICIT",
+      "source": "The application of LC-MS to detect tryptic digest peptides of SARS-CoV-2 proteins has been successfully demonstrated (Cardozo et al., 2020; Cazares et al., 2020; Freire-Paspuel and Garcia-Bereguiain, 2021; Gouveia et al., 2020a; Gouveia et al., 2020b; Ihling et al., 2020; Saadi et al., 2021; Van Puyvelde et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "414ac5fa-8e89-40aa-ae94-85eccbdbd4b5",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C32",
+      "claim": "LC-MS for SARS-CoV-2 detection can be hampered by matrix effects",
+      "claim_type": "EXPLICIT",
+      "source": "However, these studies also highlight that the technique can be hampered by matrix effects, that is, analysis interferences arising from the constituent components of swab (preservation) media or other matrices, as well as base sensitivity, to be able to reach clinically relevant detection levels, suggesting the need for clean-up, for example, solid phase-based extraction and/or affinity enrichment (Renuse et al., 2020; Van Puyvelde et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Renuse et al., 2020 and Van Puyvelde et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "bcccf192-eaa2-488e-84eb-55123ed35a59",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C33",
+      "claim": "Nucleocapsid protein (NCAP) is the most abundant viral SARS-CoV-2 protein with an estimated ~300\u20131000 copies per virion particle",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleocapsid protein (NCAP) is the most abundant viral SARS-CoV-2 protein with an estimated ~300\u20131000 copies per virion particle (Bezstarosti et al., 2020; Phimister et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bezstarosti et al., 2020 and Phimister et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "aa440105-c508-44a4-b030-f807021f6d60",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C34",
+      "claim": "NCAP is an attractive target for LC-MS-based detection compared to other viral proteins due to the relatively high number of NCAP copies per virion",
+      "claim_type": "EXPLICIT",
+      "source": "making it, because of the relatively high number of NCAP copies per virion, an attractive target for LC-MS-based detection compared to other viral proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the abundance data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "2aebf81c-7346-46b3-a37b-6e04642f3c2f",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C35",
+      "claim": "Peptide AYNVTQAFGR was found to be one of the best surrogate peptide candidates based on MRM response and peptide immunoassay suitability",
+      "claim_type": "EXPLICIT",
+      "source": "From this set of peptides, primarily based on both MRM response and peptide immunoassay suitability, peptide AYNVTQAFGR was found to be one of the best surrogate peptide candidates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "69a3dc4f-499d-4b0c-b739-f79b00de6952",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C36",
+      "claim": "Peptide AYNVTQAFGR is not significantly affected to date by known SARS-CoV-2 virus mutations",
+      "claim_type": "EXPLICIT",
+      "source": "but, equally importantly, it is not significantly affected to date by known SARS-CoV-2 virus mutations (https://www.gisaid.org/)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to GISAID database",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "0dfaa620-925e-4c98-99fa-f3b692ade1e2",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C37",
+      "claim": "The LC-MS MRM data were processed using TargetLynx XS with a cut-off threshold algorithm based on peptide peak height and area thresholds, as well as quantifier to qualifier ion ratio threshold (30%)",
+      "claim_type": "EXPLICIT",
+      "source": "The LC-MS MRM data were processed using TargetLynx XS and with a cut-off threshold algorithm based on peptide peak height and area thresholds, as well as quantifier to qualifier ion ratio threshold (30%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data processing methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "8d3e4725-999a-47c6-bec8-6382523fdf68",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C38",
+      "claim": "The method uses two different consistently measured peptide fragment ions (MRM transitions) to confirm the presence of SARS-CoV-2 proteins",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, using two different consistently measured peptide fragment ions, that is, MRM transitions, to confirm the presence of SARS-CoV-2 proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the analytical approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "936aaadf-26f7-4a2c-9ccd-78225a919d78",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C39",
+      "claim": "The antibody enriched NCAP peptide AYNVTQAFGR detected in a spiked nasopharyngeal swab matrix solution covers a linear dynamic range from 3 to 50,000 amol/\u00b5l",
+      "claim_type": "EXPLICIT",
+      "source": "An internal standard SIL corrected LC-MS calibration curve for antibody enriched NCAP peptide AYNVTQAFGR detected in a spiked nasopharyngeal swab matrix solution is shown in the (B) panel of Figure 2, covering a linear dynamic range from 3 to 50,000 amol/\u00b5l",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "8beea538-3aad-4020-9134-3a3143c8ee50",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C40",
+      "claim": "The method provides >4 orders of linear dynamic range",
+      "claim_type": "EXPLICIT",
+      "source": "providing >4 orders of linear dynamic range",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "c6cfc02d-bde3-48a5-9fb1-17e7efc213c6",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C41",
+      "claim": "The LLOQ amount is 3 amol/\u00b5l of AYNVTQAFGR peptide with precision \u226420%, bias \u00b120% and S/N > 10:1 (peak-to-peak)",
+      "claim_type": "EXPLICIT",
+      "source": "meanwhile affording an LLOQ amount of 3 amol/\u00b5l of AYNVTQAFGR peptide (with precision \u226420%, bias \u00b120 % and S/N > 10:1 [peak-to-peak])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "9c957d1a-ed5c-4f5c-9091-1fbd3c020949",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C42",
+      "claim": "The selectivity of the method is highlighted by the complete absence of signal in the MRM chromatogram of the negative SARS-CoV-2 sample",
+      "claim_type": "EXPLICIT",
+      "source": "The selectivity of the method is highlighted by the complete absence of signal in the MRM chromatogram of the negative SARS-CoV-2 sample (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "c71a0b48-099f-40f2-a038-5a731e4f88c4",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C43",
+      "claim": "The inter- and intra-day precision values of the method were shown to be \u226420% CV",
+      "claim_type": "EXPLICIT",
+      "source": "The inter- and intra-day precision values of the method, as summarized in Table 1, were shown to be \u226420 % CV",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "3ef7c922-e5c8-4c92-94f0-804cee3dabb0",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C44",
+      "claim": "The AYNVTQAFGR peptide was shown to be stable in the autosampler at 10\u00b0C for over 48 hr following re-analysis",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the AYNVTQAFGR peptide was shown to be stable in the autosampler at 10\u00b0C for over 48 hr following re-analysis and comparison to a stored calibration curve",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "ceb7da35-13ad-47b5-b66c-a561fddc1e17",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C45",
+      "claim": "The high pool was analyzed in triplicate with a precision of 3.0% CV",
+      "claim_type": "EXPLICIT",
+      "source": "The high and low pools were analyzed in triplicate with a precision of 3.0% CV and 12.2% CV, respectively, for each pool",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "73209f3b-44de-45d1-9df6-0dc8ad002476",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C46",
+      "claim": "The low pool was analyzed in triplicate with a precision of 12.2% CV",
+      "claim_type": "EXPLICIT",
+      "source": "The high and low pools were analyzed in triplicate with a precision of 3.0% CV and 12.2% CV, respectively, for each pool",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "e41da655-46ea-40a7-b879-93995da04b57",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C47",
+      "claim": "There is good (inverse) correlation between the LC-MS (log2 transformed quantifier response) and the RT-PCR (Ct) data",
+      "claim_type": "EXPLICIT",
+      "source": "The results shown in Figure 3A suggests good (inverse) correlation between the LC-MS (log2 transformed quantifier response, i.e., SIL corrected quantifier peak area) and the RT-PCR (Ct) data, which has also been noted in other so-called 'non-enriched' studies (Van Puyvelde et al., 2021)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A and citation to Van Puyvelde et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "498e99ee-4030-4176-aadd-02ad07eb7331",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C48",
+      "claim": "Differentiation between sample types is feasible and the detected abundances are significantly different (p = 0.00018; Mann-Whitney U test)",
+      "claim_type": "EXPLICIT",
+      "source": "The results shown in Figure 3B represent the LC-MS data in an alternative, quartile distribution-based format, suggesting that differentiation between sample types is feasible and that the detected abundances are significantly different (p = 0.00018; Mann-Whitney U test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "dbe18d7a-d3ba-4b53-b1c7-923f9768e080",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C49",
+      "claim": "Using RT-PCR results as a reference, estimated sensitivity and specificity values for LC-MS are 83.3% and 100%, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "Following CLSI EP 12-A2 User Protocol for Evaluation of Qualitative Test Performance guidance, a summary of the sample analysis results is shown in a 2 \u00d7 2 contingency table format in Figure 4, using the RT-PCR results as a reference, estimated sensitivity and specificity values for LC-MS are 83.3% and 100%, respectively",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "1db9799a-5a13-4bb2-83fd-c7025a3d3477",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C50",
+      "claim": "The 95% score confidence interval limits for sensitivity calculations were 70.4\u201391.3%",
+      "claim_type": "EXPLICIT",
+      "source": "The 95% score confidence interval (CI) limits for sensitivity calculations were 70.4\u201391.3% and for specificity were 98.8\u2013100%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "a3fa6067-548d-4331-9e5c-3bff8eee7259",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C51",
+      "claim": "The 95% score confidence interval limits for specificity were 98.8\u2013100%",
+      "claim_type": "EXPLICIT",
+      "source": "The 95% score confidence interval (CI) limits for sensitivity calculations were 70.4\u201391.3% and for specificity were 98.8\u2013100%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "ebf12a1a-7d38-4e02-ae67-15f320a04a7b",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C52",
+      "claim": "The agreement between RT-PCR and LC-MS was strong (kappa value of 0.9 [95% CI 0.83\u20130.97])",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the agreement between RT-PCR and LC-MS was strong (kappa value of 0.9 [95% CI 0.83\u20130.97])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "3a3da164-92e9-401b-9917-431c796aa3a2",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C53",
+      "claim": "When analyzing samples above the estimated LLOQ (3 amol/\u03bcl, which approximates to Ct \u226430), the estimated sensitivity is improved to 94.7% with the corresponding 95% score CI limits for sensitivity 82.7\u201398.5%",
+      "claim_type": "EXPLICIT",
+      "source": "When analyzing samples above the estimated LLOQ (3 amol/\u03bcl, which approximates to Ct \u226430), the estimated sensitivity is improved to 94.7% with the corresponding 95% score CI limits for sensitivity 82.7\u201398.5%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "ee7b3ec2-5433-4d40-aee0-20a8b9f4f319",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C54",
+      "claim": "RT-PCR does not distinguish between infectious virus and non-infectious nucleic acids",
+      "claim_type": "EXPLICIT",
+      "source": "However, RT-PCR does not distinguish between infectious virus and non-infectious nucleic acids (Engelmann et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Engelmann et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "f50ba184-1558-4aa3-8815-6603388afb1b",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C55",
+      "claim": "LC-MS will only detect one or multiple peptides from the protein complement of the virus",
+      "claim_type": "EXPLICIT",
+      "source": "whereas LC-MS will only detect one or multiple peptides from the protein complement of the virus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the fundamental principle of the LC-MS method",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "f7c4a34d-aad7-4814-a698-7cf8bdf81f29",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C56",
+      "claim": "Ct values are not universally applicable as they differ between manufacturers and methods",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Ct values are not universally applicable as they differ between manufacturers and methods (Engelmann et al., 2021; van Kasteren et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Engelmann et al., 2021 and van Kasteren et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "da28a406-601e-4ff4-ac24-9abd72ddd90f",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C57",
+      "claim": "The unsurpassed specificity of mass spectrometers combined with antibodies is an attractive route forward for a future molecular pandemic surveillance system",
+      "claim_type": "EXPLICIT",
+      "source": "The unsurpassed specificity of mass spectrometers combined with antibodies is an attractive route forward for a future molecular pandemic surveillance system",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "e7477977-5cad-441a-b98e-4871a1c64a15",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C58",
+      "claim": "The SISCAPA peptide enrichment method ensures both high sensitivity and low risk of reporting false positives due to the combination of specific binding of the antibody with LC-MRM/MS read-out",
+      "claim_type": "EXPLICIT",
+      "source": "The SISCAPA peptide enrichment method ensures both high sensitivity and low risk of reporting false positives due to the combination of specific binding of the antibody (Hoofnagle and Wener, 2009) with LC-MRM/MS read-out",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hoofnagle and Wener, 2009 and inference from the methodology",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "27b70e5e-269d-4162-83e0-ede88fb7f7e1",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C59",
+      "claim": "Antibodies are used to selectively enrich for the target peptide in a complex mixture, which helps increase the overall analytical sensitivity",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, antibodies are used to selectively enrich for the target peptide in a complex mixture. This helps increase the overall analytical sensitivity while LC-MS readily can distinguish between peptides in the separation and MRM steps",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the described methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "5841799c-cc5d-42ed-8d7d-2926fb953960",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C60",
+      "claim": "Internal standards added to the sample enable accurate and robust quantification",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, internal standards added to the sample enable accurate and robust quantification",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about internal standards in MS",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "086ca75f-c985-4d90-a3fd-4e56ed6f25f7",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C61",
+      "claim": "Internal standards provide an internal standard reference trace for every analyte and can help distinguish between false-positive chromatographic peaks based on retention time and ion ratios",
+      "claim_type": "EXPLICIT",
+      "source": "This provides an internal standard reference trace for every analyte and can help distinguish between false-positive chromatographic peaks based on retention time and ion ratios, that in RT-PCR experiment would be reported as a positive due to the absence of internal standards and since each gene is detected by a single reporter dye",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the methodology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "5b7a84ed-5d95-42a3-9bde-8b39f7e0c78e",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C62",
+      "claim": "The sensitivity of the LC-MS method can be further improved by increasing the sample load if needed",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity can be further improved by increasing the sample load if needed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about method optimization",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "2b34b4ab-f663-44cb-a591-15bb48893ce2",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C63",
+      "claim": "The number of viral protein targets can be scaled by introducing additional anti-peptide antibodies into the sample mixture",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the number of viral protein targets can also be scaled by introducing additional anti-peptide antibodies into the sample mixture",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about method expansion",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "1ef682be-49bf-4ac0-9289-17c01689ccfb",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C64",
+      "claim": "The SISCAPA technology is an attractive route forward for future molecular pandemic surveillance systems",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the SISCAPA technology is an attractive route forward for future molecular pandemic surveillance systems",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "17ccd604-81f4-4fae-9401-800137af852f",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C65",
+      "claim": "The accuracy of the LC-MS-based method would tolerate low levels of positive samples without compromising the positive predictive value of large-scale screening efforts",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of the LC-MS-based method would tolerate low levels of positive samples without compromising the positive predictive value of large-scale screening efforts, and thereby providing a next-generation platform for disease surveillance and an attractive alternative to today's RT-PCR-based technologies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "f6a5398f-a4ab-4af8-b535-56fba21d2e43",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C66",
+      "claim": "The study was performed in accordance with the declaration of Helsinki",
+      "claim_type": "EXPLICIT",
+      "source": "The study was performed in accordance with the declaration of Helsinki and the study protocol (J\u00e4mf\u00f6rande studier av Covid-19 smitta och antikroppssvar i olika grupper i samh\u00e4llet) was approved by the Ethical Review Board of Link\u00f6ping, Sweden (Regionala etikpr\u00f6vningsn\u00e4mnden, Link\u00f6ping, DNR \u2013 2020\u201306395)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the ethical approval of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "c47e5a43-07ff-4e92-9ae9-e29f6967026e",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C67",
+      "claim": "The study protocol was approved by the Ethical Review Board of Link\u00f6ping, Sweden (DNR \u2013 2020\u201306395)",
+      "claim_type": "EXPLICIT",
+      "source": "The study was performed in accordance with the declaration of Helsinki and the study protocol (J\u00e4mf\u00f6rande studier av Covid-19 smitta och antikroppssvar i olika grupper i samh\u00e4llet) was approved by the Ethical Review Board of Link\u00f6ping, Sweden (Regionala etikpr\u00f6vningsn\u00e4mnden, Link\u00f6ping, DNR \u2013 2020\u201306395)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the ethical approval of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "230036a1-ffc4-4ed7-8ec1-9e47792e3d0b",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C68",
+      "claim": "Informed consent and consent to publish, including consent to publish anonymized data, was obtained from all subjects",
+      "claim_type": "EXPLICIT",
+      "source": "Informed consent and consent to publish, including consent to publish anonymized data, was obtained from all subjects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the consent process",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "662f3505-d866-44bf-bb3e-7d994146d1c2",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C69",
+      "claim": "Asymptomatic individuals working at an elderly caregiver in Sweden were screened on a regular basis at their workplace",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, asymptomatic individuals working at an elderly caregiver in Sweden were screened on a regular basis at their workplace",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "ca1df470-37c9-4fd7-a25a-d605ec9c79e0",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C70",
+      "claim": "A three-point collection (throat, nasal, saliva) was performed by participants using a self-sampling collection kit containing PBS",
+      "claim_type": "EXPLICIT",
+      "source": "A three-point collection (throat, nasal, saliva) was performed by participants using a self-sampling collection kit (Sansure Biotech, Changsha, China) containing PBS (1\u00d7 PBS, 137 mM NaCl; 2.7 mM KCl; 4.3 mM Na2HPO4; 1.47 mM KH2PO4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample collection method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "26344345-d36f-4dc9-b333-de837a9f8dca",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C71",
+      "claim": "Clinical samples were collected by swabs dipped into the sample collection tube and transported to the laboratory within 8 hr",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical samples were collected by swabs dipped into the sample collection tube and transported to the laboratory within 8 hr",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample handling procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "52fc4938-c44a-4736-b150-e90241038605",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C72",
+      "claim": "All samples were heat inactivated upon arrival to ensure that the core temperature of the vial reached at least 56\u00b0C for 30 min",
+      "claim_type": "EXPLICIT",
+      "source": "All samples were heat inactivated upon arrival to ensure that the core temperature of the vial reached at least 56\u00b0C for 30 min",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample processing procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "1ffecd84-ec75-4e19-9165-b88c6557c420",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C73",
+      "claim": "The protocol used ensured that the core temperature did not reach above 60\u00b0C \u00b1 0.5\u00b0C (1 sd), which has been shown to have no effect on the RT-PCR sensitivity",
+      "claim_type": "EXPLICIT",
+      "source": "The protocol used ensured that the core temperature did not reach above 60\u00b0C \u00b1 0.5\u00b0C (1 sd), which has been shown to have no effect on the RT-PCR sensitivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample processing procedure and its validation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "cdb768c8-a827-4f7c-b56f-3134e1bae917",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C74",
+      "claim": "Samples were analyzed using an RT-PCR test from Sansure Biotech according to FDA-EUA guidelines",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were analyzed using an RT-PCR test from Sansure Biotech (Changsha, China) according to FDA-EUA guidelines",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the RT-PCR method used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "0e90de91-3131-4aea-ade6-846ffb6c82d8",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C75",
+      "claim": "The Novel Coronavirus (2019-nCoV) Nucleic Acid Diagnostic Kit was used for quantitative detection of the ORF-1ab and the N gene of novel coronavirus (2019-nCoV)",
+      "claim_type": "EXPLICIT",
+      "source": "The Novel Coronavirus (2019-nCoV) Nucleic Acid Diagnostic Kit was used for quantitative detection of the ORF-1ab and the N gene of novel coronavirus (2019-nCoV)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the RT-PCR kit used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "32647f38-7677-4b3d-b13f-16f71bde8545",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C76",
+      "claim": "Samples were lysed at room temperature for at least 10 min to allow for RNA release by chemical lysis using Sample Release Reagent",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, samples were lysed at room temperature for at least 10 min to allow for RNA release by chemical lysis using Sample Release Reagent (Sansure Biotech)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample preparation for RT-PCR",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "5f3a3cb6-777b-4692-9f32-a40587c97893",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C77",
+      "claim": "The presence or absence of SARS-CoV-2 RNA was determined by RT-PCR combined with multiplexed fluorescent probing, which targets a SARS-CoV-2-specific region of ORF-1ab (FAM) and N gene (ROX) together with the human Rnase P internal control (Cy5)",
+      "claim_type": "EXPLICIT",
+      "source": "The presence or absence of SARS-CoV-2 RNA was determined by RT-PCR combined with multiplexed fluorescent probing, which targets a SARS-CoV-2-specific region of ORF-1ab (FAM) and N gene (ROX) together with the human Rnase P internal control (Cy5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the RT-PCR detection method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "4aee58c2-293b-4838-a6d3-290df048200e",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C78",
+      "claim": "The RT-PCR analysis was performed using a CFX96 Real\u2010Time PCR Detection System programmed with the following RT-PCR protocol: 50\u00b0C, 30 min; 95\u00b0C 1 min followed by 45 cycles of 95\u00b0C 30 s, 60 \u00b0C 30 s",
+      "claim_type": "EXPLICIT",
+      "source": "The RT-PCR analysis was performed using a CFX96 Real\u2010Time PCR Detection System (Bio-Rad, Hercules, CA) programmed with the following RT-PCR protocol according to the manufacturer's instruction (50\u00b0C, 30 min; 95\u00b0C 1 min) followed by 45 cycles of (95\u00b0C 30 s, 60 \u00b0C 30 s)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the RT-PCR cycling conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "fe93a106-59a6-4a9c-9ce9-8010f1770af9",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C79",
+      "claim": "RT-PCR results were interpreted as positive if FAM/ROX Amplification with Ct < 40",
+      "claim_type": "EXPLICIT",
+      "source": "The RT-PCR results were interpreted according to instructions. Positive (FAM/ROX Amplification, Ct < 40). Negative (FAM/ROX No amplification; Cy5 Amplification, Ct < 40)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the RT-PCR result interpretation criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "0091d5fb-69b2-49a8-8967-da62ed2495e9",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C80",
+      "claim": "RT-PCR results were interpreted as negative if FAM/ROX No amplification and Cy5 Amplification with Ct < 40",
+      "claim_type": "EXPLICIT",
+      "source": "The RT-PCR results were interpreted according to instructions. Positive (FAM/ROX Amplification, Ct < 40). Negative (FAM/ROX No amplification; Cy5 Amplification, Ct < 40)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the RT-PCR result interpretation criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "b0665236-72a3-4d87-8a1e-ad1de8ad7174",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C81",
+      "claim": "NCAP digest was used for calibration and quantitation of viral proteins",
+      "claim_type": "EXPLICIT",
+      "source": "NCAP digest, protocol described below, was used for calibration and quantitation of viral proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the calibration approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "7920836e-b13d-460f-8405-e91691d3cdf8",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C82",
+      "claim": "A serial dilution from 2.2 pmol/\u00b5l NCAP to 10,000, 2000, 400, 80, 16, and 3 amol/\u00b5l was performed consecutively in pooled negative sample background",
+      "claim_type": "EXPLICIT",
+      "source": "A serial dilution from 2.2 pmol/\u00b5l NCAP to 10,000, 2000, 400, 80, 16, and 3 amol/\u00b5l was performed consecutively in pooled negative sample background",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the calibration curve preparation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "7e0528f2-b354-41c8-b32b-5643e7bb2101",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C83",
+      "claim": "Clinical samples subjected to two freeze-thaw cycles prior were anonymized",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical samples subjected to two freeze-thaw cycles prior were anonymized and two control pools were established by pooling randomly chosen samples based on their RT-PCR result (Ct < 30 [high pool], 30 \u2264 Ct < 33 [low pool])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample handling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "b44031a0-2417-4f48-aaaa-b9c044f1acc4",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C84",
+      "claim": "Two control pools were established by pooling randomly chosen samples based on their RT-PCR result (Ct < 30 [high pool], 30 \u2264 Ct < 33 [low pool])",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical samples subjected to two freeze-thaw cycles prior were anonymized and two control pools were established by pooling randomly chosen samples based on their RT-PCR result (Ct < 30 [high pool], 30 \u2264 Ct < 33 [low pool])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the control pool preparation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "28f8eb88-485c-4dee-b310-aa32400cdd12",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C85",
+      "claim": "A total of 180 \u00b5l from each sample was used per enrichment experiment",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 180 \u00b5l from each sample was used per enrichment experiment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample volume used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "e843cb30-f196-4aa9-9fbc-9179f961cccf",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C86",
+      "claim": "20 \u00b5l of denaturant mixture (1% (w/v) RapiGest in 1 M triethylammonium bicarbonate, 50 mM dithiothreitol) were aliquoted into the collection plate",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 20 \u00b5l of denaturant mixture (1 % (w/v) RapiGest [Waters Corporation, Milford, MA]) in 1 M triethylammonium bicarbonate, 50 mM dithiothreitol (Waters Corporation) were aliquoted into the collection plate (Waters Corporation)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the protein extraction protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "64dd0bf6-e7b7-4680-b3d5-6e345bc76e62",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C87",
+      "claim": "180 \u00b5l of the diluted NCAP and patient samples were transferred into the plate and incubated on a heater-shaker at 500 rpm at 56\u00b0C for 15 min",
+      "claim_type": "EXPLICIT",
+      "source": "Next, 180 \u00b5l of the diluted NCAP and patient samples were carefully transferred from the collection tubes into the same plate. The plate was incubated on a heater-shaker at 500 rpm at 56\u00b0C for 15 min",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the protein extraction protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "c3c678d0-513a-41da-8828-c478130148c7",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C88",
+      "claim": "50 \u00b5l trypsin solution (7.3 mg/ml trypsin in 10 mM HCl) was added and samples were digested at 37\u00b0C for 30 min",
+      "claim_type": "EXPLICIT",
+      "source": "followed by the addition of 50 \u00b5l trypsin solution (7.3 mg/ml trypsin in 10 mM HCl). After mixing at 500 rpm for 30 s, the samples were digested at 37\u00b0C for 30 min",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the protein digestion protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "537ecf5f-6b9b-468e-a149-4c3557d08269",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C89",
+      "claim": "Digestion was quenched by addition of trypsin stopping agent (0.22 mg/ml of Tosyl-L-lysyl-chloromethane hydrochloride in 10 mM HCl) at a final concentration of 37 \u00b5g/ml",
+      "claim_type": "EXPLICIT",
+      "source": "and thereafter quenched by addition of trypsin stopping agent (0.22 mg/ml of Tosyl-L-lysyl-chloromethane hydrochloride in 10 mM HCl) at a final concentration of 37 \u00b5g/ml",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the digestion quenching protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "f3854ab8-91d9-4d53-a308-5baf7a8376dc",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C90",
+      "claim": "The samples were spiked with 20 \u00b5l of SIL peptide mixture solution",
+      "claim_type": "EXPLICIT",
+      "source": "The samples were spiked with 20 \u00b5l of SIL peptide mixture solution and mixed thoroughly on a shaker at 500 rpm for 30 s",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the internal standard addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "33cb1b6e-f3a0-45a8-9e44-ff0639f97d8c",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C91",
+      "claim": "Anti-peptide antibodies were raised toward proteotypic peptides from the NCAP and screened and validated as previously described",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-peptide antibodies, raised toward proteotypic peptides from the NCAP, were screened and validated as previously described (Pope et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pope et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "90cfd7fb-9307-4333-84d3-f5c5064dd517",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C92",
+      "claim": "40 \u00b5l of the antibody-coupled magnetic bead mixture was added to each digest and incubated for 1 hr at 800 rpm at room temperature",
+      "claim_type": "EXPLICIT",
+      "source": "The suspension of each anti-peptide antibody tube was mixed together in 1:1 ratio and 40 \u00b5l of the mixture was added to each digest. The plate was mixed at 1400 rpm to ensure that beads were resuspended and thereafter incubated for 1 hr at 800 rpm at room temperature",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the peptide enrichment protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "7be689dc-2b9f-48a3-93d3-237b92500457",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C93",
+      "claim": "The beads were washed three times with 150 \u00b5l of wash buffer (0.03% CHAPS, 1\u00d7 PBS)",
+      "claim_type": "EXPLICIT",
+      "source": "As soon as the beads had settled on the sides of each well (typically 1 min), the supernatant was removed; 150 \u00b5l of wash buffer (0.03% CHAPS, 1\u00d7 PBS) was added to each sample and the beads were fully resuspending at 1400 rpm for 30 s and 450 rpm for another 30 s. The plate was placed on the magnet array again and the supernatant was removed. This step was repeated three times",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the washing protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "4bbf03e8-cd52-482f-911f-a3e5975abdf8",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C94",
+      "claim": "The beads were resuspended in 50 \u00b5l elution buffer (0.5% formic acid, 0.03% CHAPS) and incubated for 5 min at room temperature",
+      "claim_type": "EXPLICIT",
+      "source": "The beads were subsequently resuspended in 50 \u00b5l elution buffer (0.5% formic acid, 0.03% CHAPS) and incubated for 5 min at room temperature",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the elution protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "c18f6e2b-2544-4153-b8d1-788bc50bd82b",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C95",
+      "claim": "20 \u00b5l of the enriched sample was injected onto a ACQUITY Premier Peptide BEH C18, 2.1 mm \u00d7 50 mm, 1.7 \u00b5m, 300 \u00c5 column",
+      "claim_type": "EXPLICIT",
+      "source": "20 \u00b5l of the enriched sample was injected onto a ACQUITY Premier Peptide BEH C18, 2.1 mm \u00d7 50 mm, 1.7 \u00b5m, 300 \u00c5 column (Waters Corporation)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the LC-MS analysis conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "b27ad9c0-e8c8-4ad1-b815-b1589cfbc72e",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C96",
+      "claim": "The gradient elution was performed at 0.6 ml/min with initial inlet conditions at 5% B, increasing to 28% B over 4.5 min, followed by a column wash at 90% B for 0.6 min and a return to initial conditions at 5% B",
+      "claim_type": "EXPLICIT",
+      "source": "The gradient elution was performed at 0.6 ml/min with initial inlet conditions at 5% B, increasing to 28% B over 4.5 min, followed by a column wash at 90% B for 0.6 min and a return to initial conditions at 5% B",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the LC gradient conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "db887e6f-2b2d-4e63-9815-9c244a0b55e1",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C97",
+      "claim": "The total run time was 5.7 min, with a 6.5 min injection-to-injection cycle time",
+      "claim_type": "EXPLICIT",
+      "source": "The total run time was 5.7 min, with a 6.5 min injection-to-injection cycle time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the LC-MS analysis time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "9671319d-61da-456e-ad42-0d367e223727",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C98",
+      "claim": "A Xevo TQ-XS tandem MS operating in positive electrospray ionization (ESI+) was used for the detection and quantification of the peptides",
+      "claim_type": "EXPLICIT",
+      "source": "A Xevo TQ-XS tandem MS (Waters Corporation, Wilmslow, UK) operating in positive electrospray ionization (ESI+) was used for the detection and quantification of the peptides",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the MS instrument used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "84c1ed3f-72b9-47ce-a04e-c3316bb8fb1e",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C99",
+      "claim": "The MS instrument conditions were: capillary voltage 0.5 kV, source temperature 150\u00b0C, desolvation temperature 600\u00b0C, cone gas flow 150 l/h, and desolvation gas flow 1000 l/h",
+      "claim_type": "EXPLICIT",
+      "source": "The instrument conditions were as follows: capillary voltage 0.5 kV, source temperature 150\u00b0C, desolvation temperature 600\u00b0C, cone gas flow 150 l/h, and desolvation gas flow 1000 l/h",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the MS instrument settings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "02106f46-bcad-464f-92b0-008aa9df0d58",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C100",
+      "claim": "The MS was calibrated at unit mass resolution for MS1 and MS2",
+      "claim_type": "EXPLICIT",
+      "source": "The MS was calibrated at unit mass resolution for MS1 and MS2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the MS calibration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "4045f31f-2666-4e43-9e4f-2f392599821e",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C101",
+      "claim": "Light and heavy labeled peptides were detected using MRM mode of acquisition",
+      "claim_type": "EXPLICIT",
+      "source": "Light and heavy labeled peptides were detected using MRM mode of acquisition with experimental details overviewed in Table 2",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the MS detection mode with reference to Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "064c712b-31fe-48c0-9e64-fd1a01fd0b03",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C102",
+      "claim": "TargetLynx XS was used to process the raw LC-MS data, including signal processing, peak detection, and quantification of the MRM chromatograms",
+      "claim_type": "EXPLICIT",
+      "source": "TargetLynx XS (Waters Corporation) was used to process the raw LC-MS data, that is, signal processing (mean smoothing and background subtraction), peak detection (area and height), and quantification of the MRM chromatograms, including the calculation of the quantifier ion to qualifier ion ratio",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data processing software and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "3f2002de-4cd3-4711-a3ed-18e636066346",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C103",
+      "claim": "The quantified data were exported as tables and additional analysis and visualization carried out using Python 3",
+      "claim_type": "EXPLICIT",
+      "source": "The quantified data were exported as tables (Supplementary file 1) and additional analysis and visualization carried out using Python 3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data analysis workflow",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "b5513a84-f3cc-4926-bd28-55be0a7492e4",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C104",
+      "claim": "The ProteomeXchange ID for this dataset is PXD026366",
+      "claim_type": "EXPLICIT",
+      "source": "The ProteomeXchange ID for this dataset is PXD026366",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides the data repository accession number",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "00ef2123-b394-4e50-9a1a-e05de88750ec",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C105",
+      "claim": "The proteomics data have been deposited to Panorama Public",
+      "claim_type": "EXPLICIT",
+      "source": "The proteomics data have been deposited to Panorama Public (Sharma et al., 2014) (https://panoramaweb.org/sars-cov-2_siscapa.url)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides the data repository information with citation to Sharma et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "c3de4e98-9d1c-40e7-930a-5acd27c5e78f",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C106",
+      "claim": "The dataset includes raw files and integrated peak areas from TargetLynx XS, as well as visualization of all LC-MRM/MS chromatograms",
+      "claim_type": "EXPLICIT",
+      "source": "This dataset includes raw files and integrated peak areas from TargetLynx XS, as well as visualization of all LC-MRM/MS chromatograms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the contents of the deposited dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "cb0889f0-eff8-41a9-8961-e7ec92e00f15",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C107",
+      "claim": "The developed method is a scalable analytical approach to detect viral proteins based on peptide immuno-affinity enrichment combined with LC-MS",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed a scalable analytical approach to detect viral proteins based on peptide immuno-affinity enrichment combined with liquid chromatography-mass spectrometry (LC-MS)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the developed method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "f29bcb56-4d7c-462f-8b01-bb5c995d3e13",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C108",
+      "claim": "This is a multiplexed strategy based on targeted proteomics analysis and read-out by LC-MS",
+      "claim_type": "EXPLICIT",
+      "source": "This is a multiplexed strategy, based on targeted proteomics analysis and read-out by LC-MS, capable of precisely quantifying and confirming the presence of SARS-CoV-2 in phosphate-buffered saline (PBS) swab media from combined throat/nasopharynx/saliva samples",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the nature of the analytical strategy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "891d7dc9-f644-456b-80d7-b5b3aec72efd",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C109",
+      "claim": "The method is capable of precisely quantifying and confirming the presence of SARS-CoV-2 in PBS swab media from combined throat/nasopharynx/saliva samples",
+      "claim_type": "EXPLICIT",
+      "source": "This is a multiplexed strategy, based on targeted proteomics analysis and read-out by LC-MS, capable of precisely quantifying and confirming the presence of SARS-CoV-2 in phosphate-buffered saline (PBS) swab media from combined throat/nasopharynx/saliva samples",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the capability of the method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "f2ba7fe4-8a45-495b-869c-2456856d7aad",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "claim_id": "C110",
+      "claim": "A scalable analytical method based on LC-MS has a place in future pandemic preparedness centers to complement current virus detection technologies",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a scalable analytical method based on LC-MS has a place in future pandemic preparedness centers to complement current virus detection technologies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e44ac616-6fe3-4a1e-95a9-85c8375a5179",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background context on the COVID-19 pandemic and the role of RT-PCR testing. Claims establish that SARS-CoV-2 causes COVID-19, describe the pandemic's global impact with over 234 million cases by October 2021, note the resulting lockdowns and testing infrastructure investments, and characterize RT-PCR as the WHO gold standard that was rapidly deployed but led to reagent shortages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C8) are well-supported by appropriate citations to peer-reviewed literature and represent established knowledge about the pandemic context. They provide necessary background but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "58d82f8e-0079-437d-887a-237a73bba97b",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews limitations of RT-PCR testing, noting that while PCR tests generally show 95-100% sensitivity and specificity, they can be affected by pre-analytical biases, may detect viral RNA weeks after symptom onset, and can have false-positive rates up to 4% at certain facilities, with particular concern for low-prevalence screening scenarios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 are supported by appropriate citations to prior work and accurately characterize known limitations of RT-PCR testing. These provide important context for the study's rationale but represent review of existing literature rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "ed98f5b8-72da-4ca4-8ed6-db4f783228db",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript reviews rapid antigen tests as an alternative to RT-PCR, noting they show similar specificity but lack sufficient sensitivity compared to RT-PCR, provide only binary readouts, but can improve accuracy through repeated testing and are suitable for large-scale screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 are supported by appropriate citations and accurately summarize the characteristics of rapid antigen tests. This provides context for alternative testing approaches but represents literature review rather than original findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "087ce8df-e291-4234-a71b-0d4ed2d612ae",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript establishes the theoretical advantages of LC-MS for SARS-CoV-2 detection, including sequence-based specificity through multiple product ions, high precision and quantitative performance, and the SISCAPA approach combining antibody enrichment with MS readout and stable isotope labeled standards to eliminate dependence on PCR amplification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24 are supported by appropriate citations and established knowledge about LC-MS technology. These claims establish the rationale for the study approach but represent application of existing technology rather than methodological innovation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "3b1689ae-04fc-4770-b014-658501f07558",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior LC-MS work for SARS-CoV-2 detection and establishes the rationale for targeting NCAP. Prior studies demonstrated LC-MS detection of SARS-CoV-2 peptides but were hampered by matrix effects. NCAP is the most abundant viral protein (300-1000 copies/virion), making it an attractive target. The peptide AYNVTQAFGR was selected based on MRM response and immunoassay suitability, and is not affected by known viral mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 are supported by appropriate citations and experimental data. The selection of NCAP and the specific peptide AYNVTQAFGR is well-justified based on abundance and mutation stability, though the mutation analysis relies on database queries rather than experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "0bec82fc-b9de-4b5d-aef6-15db2de7d5c7",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The LC-MS method was characterized for analytical performance. Data processing used TargetLynx XS with threshold algorithms based on peak height, area, and ion ratios, requiring two MRM transitions for confirmation. The method showed linear dynamic range from 3 to 50,000 amol/\u00b5l (>4 orders), LLOQ of 3 amol/\u00b5l with precision \u226420% and bias \u00b120%, complete selectivity (no signal in negative samples), inter- and intra-day precision \u226420% CV, and peptide stability in autosampler for >48 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 are supported by experimental data shown in Figure 2 and Table 1. The analytical validation follows appropriate guidelines and demonstrates acceptable performance characteristics. The use of two MRM transitions and internal standards provides robust confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "689f83c6-278c-4b91-96e7-c1ba36995d5d",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Clinical sample analysis of 48 RT-PCR positive and 308 negative samples showed good correlation between LC-MS and RT-PCR (r=0.79), with similar turnaround times and quantitative readout corresponding to Ct equivalents of 21-34. Control pools (high: Ct<30, low: 30\u2264Ct<33) showed precision of 3.0% and 12.2% CV respectively. LC-MS data showed significant differentiation between positive and negative samples (p=0.00018, Mann-Whitney U test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C48 are supported by experimental data in Figure 3. The correlation of r=0.79 is moderate and the statistical significance is appropriately demonstrated. However, the correlation is not as strong as might be expected for a replacement diagnostic, and the study does not address whether this reflects true biological differences or analytical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "c8da59f5-d5ac-4777-891a-9d1f6243fbfe",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using RT-PCR as reference, the LC-MS method showed 83.3% sensitivity (95% CI: 70.4-91.3%) and 100% specificity (95% CI: 98.8-100%) across all samples, with strong agreement (kappa=0.9, 95% CI: 0.83-0.97). When restricted to samples above the LLOQ (Ct\u226430), sensitivity improved to 94.7% (95% CI: 82.7-98.5%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by data in Figure 4 and follow CLSI EP 12-A2 guidelines. The statistical analysis is appropriate. However, the sensitivity of 83.3% for all samples is concerning for a diagnostic test, and the improvement to 94.7% when restricting to Ct\u226430 indicates the method cannot reliably detect low viral loads. The 100% specificity is impressive but based on only 308 negative samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "d7f1a540-6223-4760-a2ea-f1c1f09188f9",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript discusses fundamental differences between RT-PCR and LC-MS: RT-PCR does not distinguish between infectious virus and non-infectious nucleic acids, while LC-MS detects viral proteins. Additionally, Ct values are not universally applicable as they differ between manufacturers and methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by appropriate citations. These represent important conceptual distinctions between the methods, though the manuscript does not experimentally validate whether protein detection better correlates with infectiousness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "60409d90-58bf-45a3-a60e-74e170965de8",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript argues that the combination of MS specificity with antibody enrichment provides advantages over RT-PCR and rapid tests. The SISCAPA method ensures high sensitivity and low false-positive risk through antibody enrichment, LC-MS separation and detection, and internal standards that enable accurate quantification and help distinguish false-positive peaks based on retention time and ion ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 are supported by the experimental data and established principles of the technology. The theoretical advantages are well-articulated, though the actual sensitivity (83.3% overall, 94.7% for Ct\u226430) suggests the practical performance does not fully realize these theoretical benefits for low viral loads.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "9b42fb2b-2ecb-47ab-9063-3c32fb820a60",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript speculates that sensitivity could be further improved by increasing sample load and that the method could be scaled to multiple viral protein targets by introducing additional anti-peptide antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C63 are speculative and not experimentally validated in this study. While plausible based on the technology, these represent future work rather than demonstrated capabilities. The feasibility and practical constraints of these improvements are not established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "34d532d4-f77b-4746-88c4-dad020bee898",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript concludes that SISCAPA technology and LC-MS-based methods represent an attractive route forward for future pandemic surveillance systems, with accuracy that would tolerate low levels of positive samples without compromising positive predictive value in large-scale screening, providing a next-generation platform to complement RT-PCR technologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C65 and C110 represent broad conclusions that extend beyond what the data directly support. While the 100% specificity is promising for low-prevalence screening, the 83.3% overall sensitivity and limitation to Ct\u226430 are significant constraints. The claim that this would not compromise positive predictive value requires modeling or additional data not presented. The characterization as 'next-generation' and suitable for 'future pandemic surveillance' is aspirational rather than demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "6ec21587-ecff-45f4-b9e2-2baa18b5fbf9",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study received ethical approval from the Link\u00f6ping Ethics Review Board (DNR 2020-06395), was conducted according to Helsinki Declaration principles, and obtained informed consent from all participants. Asymptomatic healthcare workers at an elderly care facility in Sweden were screened using self-collected three-point samples (throat, nasal, saliva) in PBS, transported within 8 hours, and heat-inactivated at 56\u00b0C for 30 min (not exceeding 60\u00b0C\u00b10.5\u00b0C) without affecting RT-PCR sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 describe appropriate ethical procedures and sample collection methods. The heat inactivation protocol is well-specified and validated for RT-PCR compatibility. The use of asymptomatic individuals is appropriate for the screening application but may not represent the full spectrum of clinical presentations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "9aae9905-6d6a-4281-9d98-bbf8a5de6bb5",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RT-PCR was performed using the Sansure Biotech Novel Coronavirus Nucleic Acid Diagnostic Kit according to FDA-EUA guidelines, detecting ORF-1ab (FAM) and N gene (ROX) with human RNase P internal control (Cy5). Samples were lysed at room temperature for \u226510 min, analyzed on a CFX96 system with 45 cycles, and interpreted as positive if FAM/ROX amplification with Ct<40, or negative if no FAM/ROX amplification with Cy5 Ct<40.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C80 provide detailed RT-PCR methodology following established protocols. The use of FDA-EUA approved kit and appropriate controls is sound. The Ct<40 cutoff is standard, though the manuscript later focuses on Ct\u226430 for LC-MS comparison, which is appropriate given the method's detection limits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "203522e9-3952-421e-b5de-78bde764377a",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The LC-MS sample preparation protocol involved: calibration using NCAP digest (serial dilution 2.2 pmol/\u00b5l to 3 amol/\u00b5l in pooled negative background); control pools from samples with Ct<30 (high) and 30\u2264Ct<33 (low); protein extraction with RapiGest and DTT at 56\u00b0C for 15 min; trypsin digestion at 37\u00b0C for 30 min; SIL peptide spiking; antibody-coupled magnetic bead enrichment for 1 hr; three washes with PBS/CHAPS buffer; and elution with formic acid/CHAPS buffer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C94 provide detailed methodology that appears technically sound. The use of pooled negative background for calibration is appropriate. The protocol is well-specified with temperatures, times, and reagent concentrations. However, the manuscript does not discuss potential matrix effects from the PBS swab medium or validate recovery efficiency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "55363a04-e05e-4846-9c72-3a2228cf902e",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "LC-MS analysis used 20 \u00b5l injection onto ACQUITY Premier Peptide BEH C18 column (2.1\u00d750 mm, 1.7 \u00b5m, 300 \u00c5) with gradient elution (5-28% B over 4.5 min) at 0.6 ml/min, total run time 5.7 min with 6.5 min injection-to-injection cycle. Detection used Xevo TQ-XS tandem MS in positive ESI mode (capillary 0.5 kV, source 150\u00b0C, desolvation 600\u00b0C), calibrated at unit mass resolution, with MRM acquisition for light and heavy labeled peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C101 provide comprehensive LC-MS instrumental parameters. The method is well-specified and uses appropriate modern instrumentation. The 6.5 min cycle time is competitive with RT-PCR when considering the batch processing capability, though the manuscript's claim of 'similar turnaround times' may be misleading as it doesn't account for the sample preparation time (3.5 hours total).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "7549be54-6654-4742-b39e-3287cfe85901",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Data processing used TargetLynx XS for signal processing, peak detection, and quantification including ion ratio calculations. Additional analysis used Python 3. Data were deposited to ProteomeXchange (PXD026366) and Panorama Public, including raw files, integrated peak areas, and chromatogram visualizations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C106 describe appropriate data processing and commendable data sharing practices. The deposition of raw data and processed results in public repositories supports reproducibility. However, the manuscript does not specify Python version, package versions, or provide analysis code, which limits full computational reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    },
+    {
+      "id": "2c1341fa-570c-411a-a874-2982b52298e6",
+      "content_id": "fc2bb08e-a05e-4d2b-8ad7-a7d94fe32f44",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study developed a scalable LC-MS analytical approach for detecting viral proteins based on peptide immuno-affinity enrichment. This multiplexed strategy using targeted proteomics is capable of precisely quantifying and confirming SARS-CoV-2 presence in PBS swab media from combined throat/nasopharynx/saliva samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 accurately summarize the method developed. The approach is demonstrated to work for the specific sample type and conditions tested. However, the claim of 'scalability' is not experimentally validated\u2014the study processed 356 samples but does not demonstrate throughput comparable to high-volume RT-PCR facilities or address cost-effectiveness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:46:25.323250Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9debfe91-129c-4b9b-9ea3-ee9d7f445fe3",
+      "result_id": "e44ac616-6fe3-4a1e-95a9-85c8375a5179"
+    },
+    {
+      "claim_id": "54eb1e1b-9120-4f22-b3b3-7c7ba9091fc5",
+      "result_id": "e44ac616-6fe3-4a1e-95a9-85c8375a5179"
+    },
+    {
+      "claim_id": "6ae9d6fa-e005-4fe2-b841-f96ed470c659",
+      "result_id": "e44ac616-6fe3-4a1e-95a9-85c8375a5179"
+    },
+    {
+      "claim_id": "578dddc2-9914-48ce-8551-b7e8f2fc6a6c",
+      "result_id": "e44ac616-6fe3-4a1e-95a9-85c8375a5179"
+    },
+    {
+      "claim_id": "8eb6c7bf-1cf1-4441-baf4-c6541c17a04c",
+      "result_id": "e44ac616-6fe3-4a1e-95a9-85c8375a5179"
+    },
+    {
+      "claim_id": "6dbe68f5-5422-46ff-97a3-03e7c326c3f8",
+      "result_id": "e44ac616-6fe3-4a1e-95a9-85c8375a5179"
+    },
+    {
+      "claim_id": "a84946e3-4200-4c5d-b7ff-a68d95ab9483",
+      "result_id": "e44ac616-6fe3-4a1e-95a9-85c8375a5179"
+    },
+    {
+      "claim_id": "526ce60f-ddc5-4844-abb3-5eb185c5c1a3",
+      "result_id": "e44ac616-6fe3-4a1e-95a9-85c8375a5179"
+    },
+    {
+      "claim_id": "5a1b4b99-b396-49ef-9563-5dcfcac9345d",
+      "result_id": "58d82f8e-0079-437d-887a-237a73bba97b"
+    },
+    {
+      "claim_id": "4a223c2f-523a-411d-b2c5-0afdf36d6e90",
+      "result_id": "58d82f8e-0079-437d-887a-237a73bba97b"
+    },
+    {
+      "claim_id": "b55cb526-d014-4c28-8e80-9edc6597d9b5",
+      "result_id": "58d82f8e-0079-437d-887a-237a73bba97b"
+    },
+    {
+      "claim_id": "035283e1-992e-4ede-992f-2001eb0f9c59",
+      "result_id": "58d82f8e-0079-437d-887a-237a73bba97b"
+    },
+    {
+      "claim_id": "52b13620-c424-4625-962b-37b966e01ff2",
+      "result_id": "58d82f8e-0079-437d-887a-237a73bba97b"
+    },
+    {
+      "claim_id": "1351356b-6647-401c-a770-2f3ca82c9efd",
+      "result_id": "ed98f5b8-72da-4ca4-8ed6-db4f783228db"
+    },
+    {
+      "claim_id": "452e3ce0-3479-4618-8646-63771ec38af2",
+      "result_id": "ed98f5b8-72da-4ca4-8ed6-db4f783228db"
+    },
+    {
+      "claim_id": "1cbfc883-b3d0-43ca-9cd8-307dc52907f6",
+      "result_id": "ed98f5b8-72da-4ca4-8ed6-db4f783228db"
+    },
+    {
+      "claim_id": "069d03c3-d304-4d11-893f-4be9fdcf7ad6",
+      "result_id": "ed98f5b8-72da-4ca4-8ed6-db4f783228db"
+    },
+    {
+      "claim_id": "64082374-2bff-40a7-8da5-81fd7bcdf4be",
+      "result_id": "087ce8df-e291-4234-a71b-0d4ed2d612ae"
+    },
+    {
+      "claim_id": "3846b210-97b8-488f-83f0-967c9aee6973",
+      "result_id": "087ce8df-e291-4234-a71b-0d4ed2d612ae"
+    },
+    {
+      "claim_id": "ac2e61c1-033c-4c55-ab2f-ffc9c278c99d",
+      "result_id": "087ce8df-e291-4234-a71b-0d4ed2d612ae"
+    },
+    {
+      "claim_id": "62e7f153-5925-421e-aa40-4ef2bd5c19bf",
+      "result_id": "087ce8df-e291-4234-a71b-0d4ed2d612ae"
+    },
+    {
+      "claim_id": "9a77c806-0b48-4635-b850-883c68184266",
+      "result_id": "087ce8df-e291-4234-a71b-0d4ed2d612ae"
+    },
+    {
+      "claim_id": "b7d56c16-7857-4980-8b5a-79e1cf861ad4",
+      "result_id": "087ce8df-e291-4234-a71b-0d4ed2d612ae"
+    },
+    {
+      "claim_id": "1e7f3d62-53c0-41cc-a7b5-b235445a15cf",
+      "result_id": "087ce8df-e291-4234-a71b-0d4ed2d612ae"
+    },
+    {
+      "claim_id": "b751fa09-ebc2-480b-a4dc-3feb37da1fde",
+      "result_id": "3b1689ae-04fc-4770-b014-658501f07558"
+    },
+    {
+      "claim_id": "414ac5fa-8e89-40aa-ae94-85eccbdbd4b5",
+      "result_id": "3b1689ae-04fc-4770-b014-658501f07558"
+    },
+    {
+      "claim_id": "bcccf192-eaa2-488e-84eb-55123ed35a59",
+      "result_id": "3b1689ae-04fc-4770-b014-658501f07558"
+    },
+    {
+      "claim_id": "aa440105-c508-44a4-b030-f807021f6d60",
+      "result_id": "3b1689ae-04fc-4770-b014-658501f07558"
+    },
+    {
+      "claim_id": "2aebf81c-7346-46b3-a37b-6e04642f3c2f",
+      "result_id": "3b1689ae-04fc-4770-b014-658501f07558"
+    },
+    {
+      "claim_id": "69a3dc4f-499d-4b0c-b739-f79b00de6952",
+      "result_id": "3b1689ae-04fc-4770-b014-658501f07558"
+    },
+    {
+      "claim_id": "0dfaa620-925e-4c98-99fa-f3b692ade1e2",
+      "result_id": "0bec82fc-b9de-4b5d-aef6-15db2de7d5c7"
+    },
+    {
+      "claim_id": "8d3e4725-999a-47c6-bec8-6382523fdf68",
+      "result_id": "0bec82fc-b9de-4b5d-aef6-15db2de7d5c7"
+    },
+    {
+      "claim_id": "936aaadf-26f7-4a2c-9ccd-78225a919d78",
+      "result_id": "0bec82fc-b9de-4b5d-aef6-15db2de7d5c7"
+    },
+    {
+      "claim_id": "8beea538-3aad-4020-9134-3a3143c8ee50",
+      "result_id": "0bec82fc-b9de-4b5d-aef6-15db2de7d5c7"
+    },
+    {
+      "claim_id": "c6cfc02d-bde3-48a5-9fb1-17e7efc213c6",
+      "result_id": "0bec82fc-b9de-4b5d-aef6-15db2de7d5c7"
+    },
+    {
+      "claim_id": "9c957d1a-ed5c-4f5c-9091-1fbd3c020949",
+      "result_id": "0bec82fc-b9de-4b5d-aef6-15db2de7d5c7"
+    },
+    {
+      "claim_id": "c71a0b48-099f-40f2-a038-5a731e4f88c4",
+      "result_id": "0bec82fc-b9de-4b5d-aef6-15db2de7d5c7"
+    },
+    {
+      "claim_id": "3ef7c922-e5c8-4c92-94f0-804cee3dabb0",
+      "result_id": "0bec82fc-b9de-4b5d-aef6-15db2de7d5c7"
+    },
+    {
+      "claim_id": "1207d622-99e7-4326-84fc-532dc26c4122",
+      "result_id": "689f83c6-278c-4b91-96e7-c1ba36995d5d"
+    },
+    {
+      "claim_id": "b2a8561b-9a71-4bee-985f-627311e9c4a4",
+      "result_id": "689f83c6-278c-4b91-96e7-c1ba36995d5d"
+    },
+    {
+      "claim_id": "c08f80e3-4ac2-4436-a90a-3a7f636edbe2",
+      "result_id": "689f83c6-278c-4b91-96e7-c1ba36995d5d"
+    },
+    {
+      "claim_id": "3bc768a5-976a-4a81-a911-d90d6f872ce2",
+      "result_id": "689f83c6-278c-4b91-96e7-c1ba36995d5d"
+    },
+    {
+      "claim_id": "ceb7da35-13ad-47b5-b66c-a561fddc1e17",
+      "result_id": "689f83c6-278c-4b91-96e7-c1ba36995d5d"
+    },
+    {
+      "claim_id": "73209f3b-44de-45d1-9df6-0dc8ad002476",
+      "result_id": "689f83c6-278c-4b91-96e7-c1ba36995d5d"
+    },
+    {
+      "claim_id": "e41da655-46ea-40a7-b879-93995da04b57",
+      "result_id": "689f83c6-278c-4b91-96e7-c1ba36995d5d"
+    },
+    {
+      "claim_id": "498e99ee-4030-4176-aadd-02ad07eb7331",
+      "result_id": "689f83c6-278c-4b91-96e7-c1ba36995d5d"
+    },
+    {
+      "claim_id": "dbe18d7a-d3ba-4b53-b1c7-923f9768e080",
+      "result_id": "c8da59f5-d5ac-4777-891a-9d1f6243fbfe"
+    },
+    {
+      "claim_id": "1db9799a-5a13-4bb2-83fd-c7025a3d3477",
+      "result_id": "c8da59f5-d5ac-4777-891a-9d1f6243fbfe"
+    },
+    {
+      "claim_id": "a3fa6067-548d-4331-9e5c-3bff8eee7259",
+      "result_id": "c8da59f5-d5ac-4777-891a-9d1f6243fbfe"
+    },
+    {
+      "claim_id": "ebf12a1a-7d38-4e02-ae67-15f320a04a7b",
+      "result_id": "c8da59f5-d5ac-4777-891a-9d1f6243fbfe"
+    },
+    {
+      "claim_id": "3a3da164-92e9-401b-9917-431c796aa3a2",
+      "result_id": "c8da59f5-d5ac-4777-891a-9d1f6243fbfe"
+    },
+    {
+      "claim_id": "ee7b3ec2-5433-4d40-aee0-20a8b9f4f319",
+      "result_id": "d7f1a540-6223-4760-a2ea-f1c1f09188f9"
+    },
+    {
+      "claim_id": "f50ba184-1558-4aa3-8815-6603388afb1b",
+      "result_id": "d7f1a540-6223-4760-a2ea-f1c1f09188f9"
+    },
+    {
+      "claim_id": "f7c4a34d-aad7-4814-a698-7cf8bdf81f29",
+      "result_id": "d7f1a540-6223-4760-a2ea-f1c1f09188f9"
+    },
+    {
+      "claim_id": "da28a406-601e-4ff4-ac24-9abd72ddd90f",
+      "result_id": "60409d90-58bf-45a3-a60e-74e170965de8"
+    },
+    {
+      "claim_id": "e7477977-5cad-441a-b98e-4871a1c64a15",
+      "result_id": "60409d90-58bf-45a3-a60e-74e170965de8"
+    },
+    {
+      "claim_id": "27b70e5e-269d-4162-83e0-ede88fb7f7e1",
+      "result_id": "60409d90-58bf-45a3-a60e-74e170965de8"
+    },
+    {
+      "claim_id": "5841799c-cc5d-42ed-8d7d-2926fb953960",
+      "result_id": "60409d90-58bf-45a3-a60e-74e170965de8"
+    },
+    {
+      "claim_id": "086ca75f-c985-4d90-a3fd-4e56ed6f25f7",
+      "result_id": "60409d90-58bf-45a3-a60e-74e170965de8"
+    },
+    {
+      "claim_id": "5b7a84ed-5d95-42a3-9bde-8b39f7e0c78e",
+      "result_id": "9b42fb2b-2ecb-47ab-9063-3c32fb820a60"
+    },
+    {
+      "claim_id": "2b34b4ab-f663-44cb-a591-15bb48893ce2",
+      "result_id": "9b42fb2b-2ecb-47ab-9063-3c32fb820a60"
+    },
+    {
+      "claim_id": "1ef682be-49bf-4ac0-9289-17c01689ccfb",
+      "result_id": "34d532d4-f77b-4746-88c4-dad020bee898"
+    },
+    {
+      "claim_id": "17ccd604-81f4-4fae-9401-800137af852f",
+      "result_id": "34d532d4-f77b-4746-88c4-dad020bee898"
+    },
+    {
+      "claim_id": "f2ba7fe4-8a45-495b-869c-2456856d7aad",
+      "result_id": "34d532d4-f77b-4746-88c4-dad020bee898"
+    },
+    {
+      "claim_id": "f6a5398f-a4ab-4af8-b535-56fba21d2e43",
+      "result_id": "6ec21587-ecff-45f4-b9e2-2baa18b5fbf9"
+    },
+    {
+      "claim_id": "c47e5a43-07ff-4e92-9ae9-e29f6967026e",
+      "result_id": "6ec21587-ecff-45f4-b9e2-2baa18b5fbf9"
+    },
+    {
+      "claim_id": "230036a1-ffc4-4ed7-8ec1-9e47792e3d0b",
+      "result_id": "6ec21587-ecff-45f4-b9e2-2baa18b5fbf9"
+    },
+    {
+      "claim_id": "662f3505-d866-44bf-bb3e-7d994146d1c2",
+      "result_id": "6ec21587-ecff-45f4-b9e2-2baa18b5fbf9"
+    },
+    {
+      "claim_id": "ca1df470-37c9-4fd7-a25a-d605ec9c79e0",
+      "result_id": "6ec21587-ecff-45f4-b9e2-2baa18b5fbf9"
+    },
+    {
+      "claim_id": "26344345-d36f-4dc9-b333-de837a9f8dca",
+      "result_id": "6ec21587-ecff-45f4-b9e2-2baa18b5fbf9"
+    },
+    {
+      "claim_id": "52fc4938-c44a-4736-b150-e90241038605",
+      "result_id": "6ec21587-ecff-45f4-b9e2-2baa18b5fbf9"
+    },
+    {
+      "claim_id": "1ffecd84-ec75-4e19-9165-b88c6557c420",
+      "result_id": "6ec21587-ecff-45f4-b9e2-2baa18b5fbf9"
+    },
+    {
+      "claim_id": "cdb768c8-a827-4f7c-b56f-3134e1bae917",
+      "result_id": "9aae9905-6d6a-4281-9d98-bbf8a5de6bb5"
+    },
+    {
+      "claim_id": "0e90de91-3131-4aea-ade6-846ffb6c82d8",
+      "result_id": "9aae9905-6d6a-4281-9d98-bbf8a5de6bb5"
+    },
+    {
+      "claim_id": "32647f38-7677-4b3d-b13f-16f71bde8545",
+      "result_id": "9aae9905-6d6a-4281-9d98-bbf8a5de6bb5"
+    },
+    {
+      "claim_id": "5f3a3cb6-777b-4692-9f32-a40587c97893",
+      "result_id": "9aae9905-6d6a-4281-9d98-bbf8a5de6bb5"
+    },
+    {
+      "claim_id": "4aee58c2-293b-4838-a6d3-290df048200e",
+      "result_id": "9aae9905-6d6a-4281-9d98-bbf8a5de6bb5"
+    },
+    {
+      "claim_id": "fe93a106-59a6-4a9c-9ce9-8010f1770af9",
+      "result_id": "9aae9905-6d6a-4281-9d98-bbf8a5de6bb5"
+    },
+    {
+      "claim_id": "0091d5fb-69b2-49a8-8967-da62ed2495e9",
+      "result_id": "9aae9905-6d6a-4281-9d98-bbf8a5de6bb5"
+    },
+    {
+      "claim_id": "b0665236-72a3-4d87-8a1e-ad1de8ad7174",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "7920836e-b13d-460f-8405-e91691d3cdf8",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "7e0528f2-b354-41c8-b32b-5643e7bb2101",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "b44031a0-2417-4f48-aaaa-b9c044f1acc4",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "28f8eb88-485c-4dee-b310-aa32400cdd12",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "e843cb30-f196-4aa9-9fbc-9179f961cccf",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "64dd0bf6-e7b7-4680-b3d5-6e345bc76e62",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "c3c678d0-513a-41da-8828-c478130148c7",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "537ecf5f-6b9b-468e-a149-4c3557d08269",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "f3854ab8-91d9-4d53-a308-5baf7a8376dc",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "33cb1b6e-f3a0-45a8-9e44-ff0639f97d8c",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "90cfd7fb-9307-4333-84d3-f5c5064dd517",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "7be689dc-2b9f-48a3-93d3-237b92500457",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "4bbf03e8-cd52-482f-911f-a3e5975abdf8",
+      "result_id": "203522e9-3952-421e-b5de-78bde764377a"
+    },
+    {
+      "claim_id": "c18f6e2b-2544-4153-b8d1-788bc50bd82b",
+      "result_id": "55363a04-e05e-4846-9c72-3a2228cf902e"
+    },
+    {
+      "claim_id": "b27ad9c0-e8c8-4ad1-b815-b1589cfbc72e",
+      "result_id": "55363a04-e05e-4846-9c72-3a2228cf902e"
+    },
+    {
+      "claim_id": "db887e6f-2b2d-4e63-9815-9c244a0b55e1",
+      "result_id": "55363a04-e05e-4846-9c72-3a2228cf902e"
+    },
+    {
+      "claim_id": "9671319d-61da-456e-ad42-0d367e223727",
+      "result_id": "55363a04-e05e-4846-9c72-3a2228cf902e"
+    },
+    {
+      "claim_id": "84c1ed3f-72b9-47ce-a04e-c3316bb8fb1e",
+      "result_id": "55363a04-e05e-4846-9c72-3a2228cf902e"
+    },
+    {
+      "claim_id": "02106f46-bcad-464f-92b0-008aa9df0d58",
+      "result_id": "55363a04-e05e-4846-9c72-3a2228cf902e"
+    },
+    {
+      "claim_id": "4045f31f-2666-4e43-9e4f-2f392599821e",
+      "result_id": "55363a04-e05e-4846-9c72-3a2228cf902e"
+    },
+    {
+      "claim_id": "064c712b-31fe-48c0-9e64-fd1a01fd0b03",
+      "result_id": "7549be54-6654-4742-b39e-3287cfe85901"
+    },
+    {
+      "claim_id": "3f2002de-4cd3-4711-a3ed-18e636066346",
+      "result_id": "7549be54-6654-4742-b39e-3287cfe85901"
+    },
+    {
+      "claim_id": "b5513a84-f3cc-4926-bd28-55be0a7492e4",
+      "result_id": "7549be54-6654-4742-b39e-3287cfe85901"
+    },
+    {
+      "claim_id": "00ef2123-b394-4e50-9a1a-e05de88750ec",
+      "result_id": "7549be54-6654-4742-b39e-3287cfe85901"
+    },
+    {
+      "claim_id": "c3de4e98-9d1c-40e7-930a-5acd27c5e78f",
+      "result_id": "7549be54-6654-4742-b39e-3287cfe85901"
+    },
+    {
+      "claim_id": "cb0889f0-eff8-41a9-8961-e7ec92e00f15",
+      "result_id": "2c1341fa-570c-411a-a874-2982b52298e6"
+    },
+    {
+      "claim_id": "f29bcb56-4d7c-462f-8b01-bb5c995d3e13",
+      "result_id": "2c1341fa-570c-411a-a874-2982b52298e6"
+    },
+    {
+      "claim_id": "891d7dc9-f644-456b-80d7-b5b3aec72efd",
+      "result_id": "2c1341fa-570c-411a-a874-2982b52298e6"
+    }
+  ],
+  "comparisons": []
+}

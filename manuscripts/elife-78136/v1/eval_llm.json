@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "SF3B1 mutations cause retention of IRAK4 exon 6, leading to overexpression of the IRAK4-long isoform. This was demonstrated through RNA-seq analysis of SF3B1 mutant MDS samples, validated by RT-PCR in a larger cohort, and confirmed using a splicing reporter assay showing that SF3B1-K700E directly mediates exon 6 inclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 provide converging evidence from multiple experimental approaches (RNA-seq, RT-PCR, and reporter assays) demonstrating that SF3B1 mutations lead to IRAK4 exon 6 retention. The data show statistical significance (Figure 1C) and direct causality through the reporter system (C10-C11). The progression from discovery to validation to mechanistic demonstration is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "IRAK4-long containing the full exon 6 is a stable, functionally active isoform that activates NF-\u03baB signaling, while shorter isoforms (S1 and S2) lacking portions of exon 6 are unstable and targeted for proteasomal degradation via K48-linked ubiquitination. Isogenic SF3B1 K700E cells show overexpression of IRAK4-L and increased p-p65 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 and C57-C58, C62-C64 provide comprehensive evidence for differential stability and activity of IRAK4 isoforms. The use of proteasome inhibitors (C16), ubiquitination assays (C17), and isogenic cell lines (C18) provides strong mechanistic support. The structural predictions (C62-C64) are reasonable inferences from sequence analysis, though experimental validation of these specific isoforms in primary cells would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "IRAK4-long, but not shorter isoforms, associates with MYD88 through its death domain, providing the mechanistic basis for selective activation of downstream signaling by the long isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 demonstrate differential MYD88 binding through co-immunoprecipitation experiments (Figure 2F). This provides a clear mechanistic explanation for why only IRAK4-long activates NF-\u03baB signaling. The inference in C20 is well-supported by established knowledge of MYD88-IRAK4 signaling and the experimental data showing selective interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C59"
+    ],
+    "result": "CDK2 is a novel substrate of TRAF6, undergoing K63-linked ubiquitination in SF3B1 mutant cells. This was demonstrated through sequence analysis identifying a TRAF6 binding motif in CDK2, structural modeling showing compatible binding, and experimental validation showing TRAF6/IRAK4-dependent K63 ubiquitination that is reduced in CDK2 mutants lacking the TRAF6 binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 and C59 provide a logical progression from prediction to validation. The computational docking (C25), overexpression studies (C26), mutagenesis (C27), and isogenic cell validation (C28) collectively support CDK2 as a TRAF6 substrate. However, the functional significance of CDK2 ubiquitination for the differentiation block could be more directly demonstrated. The connection between K63 ubiquitination and CDK2 function requires additional mechanistic detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "CDK2 inhibition increases hematopoietic colony formation and myeloid differentiation in SF3B1 mutant MDS samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 shows functional effects of CDK2 inhibition in three primary samples, but the small sample size (n=3) and lack of statistical analysis limit confidence. Additionally, the CDK2 inhibitors used (Dinaciclib and AT7519) have known off-target effects on other CDKs and kinases, making it unclear whether the observed effects are specifically due to CDK2 inhibition. Further validation with more specific approaches would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C56",
+      "C60",
+      "C70"
+    ],
+    "result": "IRAK4 inhibition with CA-4948 reduces NF-\u03baB activation, decreases inflammatory cytokine production, and promotes myeloid differentiation in SF3B1 mutant MDS samples without affecting healthy CD34+ cells. This was validated through both pharmacological inhibition and siRNA knockdown approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34, C56, C60, and C70 provide strong evidence for therapeutic effects of IRAK4 inhibition. The use of both pharmacological (CA-4948) and genetic (siRNA) approaches strengthens the conclusions. The selectivity for diseased versus healthy cells (C33) is important for therapeutic potential. However, CA-4948 also inhibits FLT3 and CLKs (C52), which complicates attribution of effects solely to IRAK4 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C53"
+    ],
+    "result": "Higher IRAK4-long expression correlates with worse clinical features in MDS patients (lower platelets, higher transfusion needs, higher blasts), and IRAK4 inhibition reduces MDS cell burden in xenograft models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C53 demonstrate clinical relevance through correlation with disease features (N=183 samples) and therapeutic efficacy in xenografts (5 samples). The xenograft data provide strong preclinical evidence, though the correlation analysis (C35) would benefit from multivariate analysis controlling for other prognostic factors. The statistical significance is reported for C35 (p<0.05) but details of the analysis are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C65"
+    ],
+    "result": "IRAK4-long is elevated in AML hematopoietic stem cells, particularly in adverse-risk patients with complex cytogenetics. The IRAK4 overexpression signature correlates with a published leukemic stem cell signature, and IRAK4 inhibition reduces disease-initiating activity in secondary transplants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C65 extend the findings to leukemic stem cells and demonstrate effects on disease-initiating capacity. The GSEA analysis (C38) showing concordance with the Eppert leukemic stem cell signature is compelling. The secondary transplant data (C39) provide functional evidence for effects on stem cell activity, though the number of samples tested is not clearly stated in the claim. This represents an important extension beyond bulk disease effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C61",
+      "C66"
+    ],
+    "result": "Background context establishing that SF3B1 is frequently mutated in MDS, that splicing mutations affect splicing broadly, that innate immune pathways are activated in MDS/AML, and that U2AF1 mutations also affect IRAK4 splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C40-C42, C45, C61, and C66 provide established background knowledge supported by appropriate citations. These claims set the context for the current work and are well-supported by prior literature. The connection to previous work on U2AF1 and IRAK4 (C5, C42) is particularly important for establishing the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Background knowledge about TRAF6 function, K63 ubiquitination, and MDS/AML disease characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C67-C69 represent established knowledge about signaling pathways and disease biology that provide necessary context. These are appropriately cited or represent standard knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "SF3B1 mutations lead to IRAK4-L production through exon 6 retention (distinct from U2AF1's exon 4 retention mechanism), suggesting IRAK4 pathway activation is a convergent and important functional event in MDS pathobiology across different splicing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C46-C48 synthesize the findings and place them in context with prior work on U2AF1. The convergence of two different splicing mutations on the same pathway (C44, C48) is a strong argument for functional importance. These interpretive claims are well-supported by the experimental data and represent reasonable inferences about disease mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "CA-4948 is in clinical trials for MDS/AML with preliminary evidence of tolerability and encouraging early efficacy in spliceosome mutant patients. The drug also inhibits FLT3 and CLKs, which may contribute to its anti-leukemic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C54 provide clinical context and preliminary clinical validation. The citations to clinical trial identifiers and early results (Garcia-Manero et al., 2021) support these claims. However, C50 and C51 rely on preliminary data that may not be peer-reviewed. The acknowledgment of off-target effects (C52) is important for interpreting the preclinical results.",
+    "result_type": "MINOR"
+  }
+]

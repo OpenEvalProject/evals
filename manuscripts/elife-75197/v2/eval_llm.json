@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Patient behavioral ratings of pain intensity from video stimuli were within the normal range when compared to 93 healthy controls. Patients showed correlation coefficients, slopes, and intercepts within the 2.5-97.5 percentiles of control distributions, with higher interpersonal agreement for Face than Hand stimuli, though average ratings were slightly higher for Hands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 provide convergent evidence from multiple statistical comparisons (correlation coefficients, slopes, intercepts) showing patients' ratings fell within normal ranges. The behavioral validation is well-controlled with age- and gender-matched controls (n=93), and statistical tests include both frequentist and Bayesian approaches with appropriate corrections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "LFP activity in the insula, specifically broadband power (20-190 Hz), correlates with perceived pain intensity. Out of 85 insular macrocontacts, 32% showed significant positive correlations with intensity ratings, which was significantly enriched compared to randomly selected brain electrodes. Activity scaled with ratings from 1.10-1.70s, with strongest effects for the two highest intensity ratings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 present a coherent set of findings with appropriate statistical support including cluster-based corrections, binomial tests (p1=5\u00d710^-15), and control analyses comparing insular to whole-brain electrodes (p1=4\u00d710^-5). The temporal dynamics and rating-dependent scaling are well-characterized with rmANOVA (F(2.445,205.348)=37.49, p=8\u00d710^-17) and planned comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Intensity coding in the insula shows differential temporal dynamics for Hand versus Face stimuli. Hand intensity coding occurs earlier (1.01-1.44s) than Face coding (1.75-1.98s). In the early period, only Hand stimuli show orderly BBP increases with intensity ratings, while in the late period both stimulus types show intensity coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C68 demonstrate stimulus-specific temporal profiles with appropriate statistical support (rmANOVA interaction F(2.183,102.621)=13.55, p=3\u00d710^-6). The planned comparisons in Table 3 provide detailed evidence for the differential scaling patterns. However, the unexpected J-shaped response for Hands (C63) is noted but not fully explained, suggesting complexity in the intensity coding that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "For Face stimuli, shape information (facial action units 4 and 7) extracted via automated software predicts patient ratings with high accuracy and shows temporal alignment with neural intensity coding at short lags (40-320ms). Motion information shows longer lags (560-1000ms), suggesting shape is the primary driver of Face intensity coding in the insula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 provide convergent evidence from PLSR analyses (p<10^-4), lagged correlation analyses, and psychophysical validation (Appendix 1). The use of automated facial action unit detection (FaceReader) provides objective quantification. The temporal lag analysis appropriately considers typical insular response latencies from prior literature, though the interpretation relies on inference about which feature drives the response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "For Hand stimuli, motion energy predicts pain ratings and correlates with BBP specifically during pain-relevant motion (belt slapping, 0-666ms of pain period) but not during innocuous motion (belt lifting). Subjective rating mediates the relationship between motion and BBP, with partial correlations showing rating remains significant after controlling for motion, but not vice versa. Optimal lags are very short (0-80ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C88 demonstrate context-dependent motion coding with appropriate temporal bin analyses (rmANOVA F(5,420)=2.9, p=0.014) and partial correlation analyses. The evidence that BBP correlates with motion only during pain-relevant periods (BF10>8.8) and that rating mediates the motion-BBP relationship is compelling. However, the very short lags (0-80ms) seem inconsistent with typical response latencies, which the authors acknowledge and attempt to explain through methodological considerations (C151-C154).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The insula contains a mixed organization of intensity coding locations showing stimulus preference. In the early period, 25% of sites show Hand intensity coding (above chance) while only 4% show Face coding (at chance). In the late period, both Hand (17%) and Face (18%) show above-chance intensity coding. Binomial tests confirm above-chance numbers of Hand-but-not-Face, Face-but-not-Hand, and dual-coding locations, with only weak overall correlation between Hand and Face intensity coding (rK=0.131).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 provide strong evidence for a mixed organization using appropriate binomial tests (all p1<10^-4) and Bayesian statistics. The spatial analysis is rigorous, with clear criteria for classifying locations (p1<0.05 for presence, BF+0<1/3 for absence). The finding of stimulus preference within simultaneously recorded sites in single patients (C160) strengthens the interpretation that this reflects true functional organization rather than individual differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Multivariate PLSR analysis shows that BBP patterns across 85 insular sites can decode perceived intensity with reasonable accuracy for Hands (rP=0.575, p1=9\u00d710^-4) and near-significant accuracy for Faces (rP=0.331, p1=0.058). Cross-decoding between stimulus types is above chance in both directions, but falls to insignificance when the five dual-coding sites are excluded, indicating intensity is represented through a mixture of stimulus-specific and stimulus-general patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 demonstrate appropriate use of cross-validated PLSR with leave-one-out testing and permutation-based significance testing. The critical finding that cross-decoding depends on dual-coding sites (C101) provides strong evidence for the mixed representation model. However, the near-significant result for Face decoding (p1=0.058) and the lower performance compared to Hands may reflect the behavioral differences in stimulus intensity ratings noted by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Hand intensity coding shows a spatial gradient in the insula, with more anterior locations (positive y-coordinates) showing stronger intensity coding. This anterior bias is confirmed by mixed linear model analysis (F(1,80.97)=13.23, p2=5\u00d710^-4) and is associated with increased resting-state connectivity to regions involved in action perception (cerebellum, inferior frontal gyrus) and pain processing (cingulate cortex). No clear spatial gradient was found for Face intensity coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 provide convergent evidence from coordinate-based analyses, mixed linear models controlling for patient effects, and resting-state connectivity analyses. The lack of right-left lateralization (BF10<1/3) is appropriately supported by Bayesian statistics. The connectivity findings (C107) are corrected for multiple comparisons (pFWE<0.05) and align with known functional networks. The absence of Face gradients may reflect the behavioral differences in stimulus ratings or true functional organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Independent fMRI data (n=23) shows that BOLD activity in the insula can predict perceived intensity for both Hands and Faces with similar performance. Both stimulus types show anterior gradients in the fMRI data. For Hands, iEEG BBP intensity coding correlates with fMRI parametric modulator t-values (rP=0.418, p1=3.4\u00d710^-6), but for Faces there is evidence of absence for this correlation. Stimulus preference (Hand>Face) is consistent across iEEG and fMRI modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 provide important cross-modal validation using independent fMRI data with appropriate PLSR cross-validation. The convergence between iEEG and fMRI for Hand stimuli (C113) and the consistency of stimulus preference across modalities (C115) strengthen confidence in the findings. However, the lack of correlation for Face stimuli (C114) and the differences in spatial organization between iEEG and fMRI for Faces suggest modality-specific factors or the influence of behavioral differences in stimulus ratings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Single-cell recordings from three patients yielded 28 candidate neurons, of which 13 were stimulus-responsive and 8 showed intensity coding. Among intensity-coding neurons, 4/8 coded for Faces and 5/8 for Hands (both above chance by binomial test). Using strict Bayesian criteria (BF+0<1/3), three Hand-but-not-Face and two Face-but-not-Hand coding cells were identified, with coexistence of both types within patient D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C127 provide the first single-neuron evidence for intensity coding in the human insula during pain observation. The binomial tests (Face: p1=0.003, BF+0=27; Hand: p1=3\u00d710^-4, BF+0=282) appropriately test whether the proportion of intensity-coding neurons exceeds chance. The finding of stimulus preference at the single-cell level within a single patient (C127) is particularly compelling. However, the small sample size (8 intensity-coding neurons from 3 patients) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "For Hand stimuli, intensity coding in single-cell spiking correlates with intensity coding in BBP from the same microwires (rK=0.57, p1=0.012, BF+0=7.69). For Face stimuli, only 1/5 microwires with spike intensity coding showed significant BBP intensity coding, with a trend toward correlation across wires (rK=0.34, p1=0.088, BF+0=1.63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 demonstrate appropriate comparison between spiking and LFP measures at the same recording sites. The significant correlation for Hands (C129) provides important validation that BBP reflects local spiking activity. The weaker relationship for Faces (C130-C131) is consistent with the overall pattern of weaker and less spatially organized Face intensity coding throughout the study, though the small sample size (10 microwires) limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The study provides evidence that neural activity in the insula encodes the intensity of others' pain across multiple frequency bands and at the single-neuron level. The insula appears to be recruited only for moderate-to-severe pain (ratings 5-8), not for mild pain (3-4) compared to minimal pain (1-2). This represents arguably the first evidence that intensity of others' pain is locally encoded in insular neurons rather than reflecting only feedback input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 appropriately summarize the major findings and their significance. The evidence for local encoding (C137) is supported by the broadband gamma and single-cell data, which are known to reflect local spiking activity rather than synaptic input. The threshold effect (C133-C134) is supported by the planned comparisons in Table 2. The comparison to prior work on self-experienced pain (C135) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The insula's response cannot be reduced to simple motion detection or general salience coding. BBP correlated with motion only during pain-relevant periods, and perceived intensity mediated the motion-BBP relationship. The finding of stimulus preference (Hand vs Face) within single patients argues against a purely salience-based explanation. Instead, different insular locations encode behaviorally relevant information with some specialization for stimulus type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144, C160-C163 provide important interpretive context supported by the temporal specificity of motion coding (C80-C81) and the within-patient stimulus preference (C127, C160). The argument against pure salience coding (C161) is logical but somewhat speculative. The proposed dual function (C163) reconciling empathy and salience is reasonable but remains a hypothesis requiring further testing with appropriate control stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The apparently short lags (0-80ms) between motion information and Hand intensity coding can be reconciled with typical insular response latencies (>200ms) by considering: (1) the BBP calculation window (8\u00d7 inverse frequency) may underestimate onset by up to 200ms, and (2) the lags reflect alignment of peaks rather than onsets, with motion onset (~920ms) actually preceding peak neural encoding (~1300ms) by ~400ms, consistent with typical latencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154 provide a thoughtful methodological explanation for an apparent discrepancy with prior literature. The explanation regarding the BBP calculation window (C151) is technically sound, and the distinction between onset and peak alignment (C152-C153) is well-illustrated in Figure 3i. The interpretation involving predictive coding (C154) is speculative but supported by citations. This represents appropriate scientific reasoning about methodological considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C164",
+      "C165"
+    ],
+    "result": "BBP for Hand stimuli showed a J-shaped rather than monotonic relationship with intensity ratings, with higher power for the lowest (1-2) than second-lowest (3-4) rating. This could potentially reflect a combination of neurons encoding intensity (monotonic increase) and prediction error (U-shaped), consistent with active inference frameworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C164 accurately describes an unexpected observation in the data (Figure 2h). However, the active inference interpretation (C165) is highly speculative and not directly tested. The J-shaped response could reflect various factors including stimulus properties, rating behavior, or neural coding schemes. The authors appropriately present this as speculation requiring future experiments with blocked intensity presentations to test the prediction error hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Despite efforts to match intensity, patients rated Hand stimuli as more intense than Face stimuli. This difference may have contributed to weaker and less spatially organized Face results in iEEG, though rating variance did not differ between conditions. In fMRI data where decoding performance was similar for both stimulus types, Face intensity coding showed clear anterior spatial organization, and meta-analyses show the insula is more reliably recruited by limb than facial pain stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C183 appropriately acknowledge a limitation and its potential impact on results. The behavioral difference (C178) is well-documented (Table 1), and the authors appropriately caution against overinterpreting the lack of Face spatial organization (C181). The fMRI validation (C182) and meta-analytic context (C183) provide important perspective. This represents good scientific practice in acknowledging limitations while contextualizing findings within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Additional findings include: theta power increases with perceived intensity; Hand intensity coding is enriched in anterior dorsal insula; this anterior bias is observed in both iEEG and fMRI; the location matches meta-analytic coordinates for limb pain observation (y=13, z=10); and locations with higher Hand intensity coding show increased resting-state connectivity with action perception and pain processing networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C175 report additional findings that support and extend the main results. The theta finding (C170) is mentioned but not detailed. The spatial findings (C171-C173) converge across modalities and align with meta-analyses. The connectivity findings (C174-C175) are appropriately corrected for multiple comparisons and provide functional context. These represent well-supported secondary findings that enrich the main conclusions.",
+    "result_type": "MINOR"
+  }
+]

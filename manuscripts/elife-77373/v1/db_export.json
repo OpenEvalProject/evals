@@ -1,0 +1,1517 @@
+{
+  "submission": {
+    "id": "a9768431-2666-42c3-b911-9cb4619e4f1e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:33:05.879070Z",
+    "updated_at": "2025-12-03T16:33:05.879070Z"
+  },
+  "content": [
+    {
+      "id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "submission_id": "a9768431-2666-42c3-b911-9cb4619e4f1e",
+      "content_type": "manuscript",
+      "content_text": "# Non-invasive classification of macrophage polarisation by 2P-FLIM and machine learning\n\n## Authors\n\n- Nuno GB Neto<sup>1</sup> ([ORCID: 0000-0001-5467-8720](https://orcid.org/0000-0001-5467-8720))\n- Sinead A O'Rourke<sup>1</sup>\n- Mimi Zhang<sup>4</sup>\n- Hannah K Fitzgerald<sup>3</sup>\n- Aisling Dunne<sup>3</sup>\n- Michael G Monaghan<sup>1</sup> ([ORCID: 0000-0002-5530-4998](https://orcid.org/0000-0002-5530-4998)) \u2020\n\n### Affiliations\n\n1. Department of Mechanical, Manufacturing and Biomedical Engineering, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))\n2. Trinity Centre for Biomedical Engineering, Trinity Biomedical Science Institute, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))\n3. School of Biochemistry & Immunology and School of Medicine, Trinity Biomedical Science Institute, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))\n4. School of Computer Science and Statistics, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))\n5. Advanced Materials for BioEngineering Research (AMBER) Centre, Trinity College Dublin and Royal College of Surgeons in Ireland Dublin Ireland ([ROR:01hxy9878](https://ror.org/01hxy9878))\n6. CURAM SFI Research Centre for Medical Devices, National University of Ireland Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn this study, we utilise fluorescence lifetime imaging of NAD(P)H-based cellular autofluorescence as a non-invasive modality to classify two contrasting states of human macrophages by proxy of their governing metabolic state. Macrophages derived from human blood-circulating monocytes were polarised using established protocols and metabolically challenged using small molecules to validate their responding metabolic actions in extracellular acidification and oxygen consumption. Large field-of-view images of individual polarised macrophages were obtained using fluorescence lifetime imaging microscopy (FLIM). These were challenged in real time with small-molecule perturbations of metabolism during imaging. We uncovered FLIM parameters that are pronounced under the action of carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP), which strongly stratifies the phenotype of polarised human macrophages; however, this performance is impacted by donor variability when analysing the data at a single-cell level. The stratification and parameters emanating from a full field-of-view and single-cell FLIM approach serve as the basis for machine learning models. Applying a random forests model, we identify three strongly governing FLIM parameters, achieving an area under the receiver operating characteristics curve (ROC-AUC) value of 0.944 and out-of-bag (OBB) error rate of 16.67% when classifying human macrophages in a full field-of-view image. To conclude, 2P-FLIM with the integration of machine learning models is showed to be a powerful technique for analysis of both human macrophage metabolism and polarisation at full FoV and single-cell level.\n\n## Introduction\n\nTwo-photon fluorescence lifetime imaging microscopy (2P-FLIM) is a non-destructive modality that can interrogate exogenous and endogenous fluorophores. 2P-FLIM provides high spatial and temporal resolution to image murine and human cell types, 2D and 3D cell cultures, and biopsies in vitro and in vivo (Skala et al., 2007, Okkelman et al., 2019, Neto et al., 2020). 2P-FLIM allows reduced nicotinamide adenine dinucleotide (NAD(P)H) and flavin adenine dinucleotide (FAD+) to be studied and quantified using 2P-FLIM, giving insight into cellular metabolism (Lakowicz et al., 1992; Skala et al., 2007, Neto et al., 2020). The average time for a fluorophore to return to the ground state from the excited state while emitting fluorescence is known as the fluorescence lifetime. NADH and NADPH fluorescence properties are identical, and hence NAD(P)H refers to these intracellular pools combined (Huang et al., 2002). NAD(P)H is noted as having a long fluorescence lifetime when enzyme-bound and a short fluorescence lifetime when free in the cytoplasm. NAD(P)H fluorescence properties offer extended information into NAD(P)H protein/enzyme binding (Lakowicz et al., 1992). 2P-FLIM facilitates the quantification of NAD(P)H fluorescence lifetimes and their respective proportions. In addition, 2P-FLIM can be used as a microscopy-based spatial approach and applied to limited cell numbers, which is beneficial in assessing limited sample numbers or validating metabolism-based therapies (Peterson et al., 2018; Shields et al., 2020).\n\nMacrophages are essential components of the host immune response and key regulators of homeostatic function. In addition to host defence, macrophages are intimately involved in tissue homeostasis and play a key role in pathologies including heart failure, diabetes, and cancer (Mosser and Edwards, 2008). Macrophages adopt specific polarisation states, ranging in a spectrum, to accomplish various functions and mechanisms of action. Here, classically activated (M1) and alternatively activated (M2) macrophages occupy opposite ends (Gordon, 2003; Mosser and Edwards, 2008). In vitro, M1 macrophage behaviour can be evoked using IFN\u03b3 and/or microbial products such as LPS. M1 macrophage phenotype is defined by secretion of a significant amount of pro-inflammatory cytokines: TNF\u03b1 and IL-1\u03b2 enhanced endocytosis and ability to kill intracellular pathogens (Adams, 1989; Martinez et al., 2008).\n\nM2 macrophage behaviour exists more heterogeneously and can be triggered by IL-4 or IL-13, IL1-\u03b2, TGF-\u03b2, IL-6, phagocytosis of apoptotic cells, or association with a tumour microenvironment, respectively, generating M2a, M2b, M2c, M2f, and tumour-associated macrophages (TAM) (Mantovani et al., 2002; Mantovani et al., 2017; Graney et al., 2020). M2 macrophages exhibit decreased expression of protein membrane markers, such as CD14 and CCR5, and increased fibronectin-1 production. In addition, M2 macrophages are also characterised by the downregulation of pro-inflammatory cytokines (Wang et al., 1998; Gratchev et al., 2001; Martinez et al., 2008). Most often, macrophage behaviour is assessed by endpoint assays using cytokine measurements, gene analysis, and staining of surface markers. However, there is a gathering shift towards non-invasive modalities to speed up this process and obtain spatio-temporal analysis. Two recent examples of this include the use of Raman microscopy to map the lipidomic spatial signature of polarised macrophages (Feuerer et al., 2021), and the use of average fluorescent lifetime parameters to discern murine macrophage phenotype (Alfonso-Garc\u00eda et al., 2016).\n\nWe use an imaging-based approach, primarily focusing on metabolic machinery characteristically employed by polarised human macrophages. Macrophage metabolism poses a huge potential in the next generation of therapeutics for inflammatory disease. Human macrophage function and metabolism are inextricably linked (Van den Bossche et al., 2017). IFN\u03b3-activated human macrophages (IFN\u03b3-M1) are primed for enhanced inflammatory responses by stabilising HIF1\u03b1 levels, activation of the JAK-STAT pathway, and increased production of IL-1\u03b2, all of which are dependent on enhanced levels of glycolysis (Wang et al., 2018). Alternatively activated human anti-inflammatory macrophages, most often observed in vitro through stimulation with IL-4 (IL-4-M2), are defined by an intact tricarboxylic acid cycle (TCA), enhanced OxPhos, increased fatty acid synthesis (FAS), and fatty acid oxidation (FAO) (O\u2019Neill et al., 2016, Van den Bossche et al., 2017). In a nutshell, IFN\u03b3-M1 macrophages are more active in glycolysis, while IL-4-M2 macrophages are more dependent on oxidative phosphorylation for their energy production. When assessing metabolism and bioenergetics, most methods are based on extracellular flux assays, measurement of cellular oxygen consumption, exogenous staining, radio-labelling nutrients, and gas chromatography-mass spectrometry (GC-MS). Metabolism probing methods require a substantial amount of sample processing yet still pose limitations due to short-lived oxidative metabolites (Vivekanandan-Giri et al., 2011; Koo et al., 2016; Fall et al., 2020; Ma et al., 2020).\n\n2P-FLIM imaging of NAD(P)H acquires five fluorescence lifetime variables (\u03c41, \u03c42, \u03b11, \u03b12, \u03c4avg) and one fluorescence intensity-based variable (optical redox ratio [ORR]) descriptive of the polarisation linked-metabolic state of IFN\u03b3-M1 and IL-4-M2 macrophage phenotypes. Furthermore, additional information can be obtained from these measurements by real-time perturbation of basal metabolism and metabolic capacity. To achieve this, sequential knockdown of intercellular pathways and uncomplexing of mitochondrial coupling is performed in this study via metabolic inhibitors.\n\nFor data visualisation purposes, we applied the Uniform Manifold Approximate and Projection (UMAP) technique, in favour over principal component analysis (PCA), due to its processing speed, capability to preserve the global and local structures of the data, and ability to use non-metric distance functions (McInnes et al., 2018). For in-depth statistical analysis, machine learning algorithms are employed for classification/supervised pattern recognition (Mohri and Rostamizadeh, 2012). Machine learning algorithms have been used to characterise DNA- and RNA-binding proteins, determine genetic and epigenetic contributions of antibody repertoire diversity, and classify chronic periodontitis patients based on their immune cell response to ex vivo stimulation with ligands (Alipanahi et al., 2015; Bolland et al., 2016; Culos et al., 2020). In addition, machine learning algorithms can be used to group samples into different classes (e.g., in this study IFN\u03b3-M1 vs. IL-4-M2 based on 2P-FLIM variables) whilst determining which variables are the most important for this task (Touw et al., 2013). For our work, we employed the random forests algorithm for the classification task due to its high prediction accuracy, robustness to outliers, and ability to obtain the relative importance of each variable (Breiman, 2001; Verikas et al., 2011). Another advantage of the random forests model is that we can use the out-of-bag (OOB) error estimate to determine the values of the hyper-parameters, no need to set aside an independent dataset for validation. This makes random forests especially suitable for small datasets, where we do not have additional data for validating the model. The hyper-parameters of the random forests model are the number of trees (ntree) and the number of variables selected for the best split at each node (mtry). The OOB error of the final optimal random forests model serves as the estimate of the model\u2019s prediction error.\n\nThe trained random forests model will be used to distinguish between the different populations of macrophages and to measure which 2P-FLIM variables are the most important for this differentiation. In our study, we used all data points obtained from both full field-of-view (FoV) and donor-specific single-cell images for training and validating the random forests model. Thus, there is no extra data available for testing our trained model. Therefore, to demonstrate the predictive ability and efficiency of the trained model, we calculated the area under the receiver operating characteristics curve (ROC-AUC), in which the specificity and sensitivity of the trained model are plotted. The ROC-AUC statistic is a performance evaluation metric for (binary) classification models. ROC curves plot the true positive rate against the false-positive rate at various threshold values. The AUC is the measure of the ability of a classifier to distinguish between two classes and is used as a summary of the ROC curve. An ROC-AUC value less than 0.5 suggests no discrimination, 0.7\u20130.8 is considered acceptable, 0.8\u20130.9 is considered excellent, and more than 0.9 is considered outstanding (Mandrekar, 2010). Similar applications of machine learning methods have been explored by Walsh et al. for classification of activated t-cells and Qian et al. for quality control of cardiomyocyte differentiation (Walsh et al., 2020, Qian et al., 2021).\n\nWe hypothesise that 2P-FLIM of NAD(P)H and FAD+ provides quantitative information to evaluate and identify human-derived macrophage polarisation by proxy of their metabolism. 2P-FLIM of NAD(P)H and FAD+ has strong clinical potential fuelled by the emergence of metabolic approaches to treat disease and inflammation. To test our hypothesis, we derived human macrophages from blood-circulating monocytes and polarised them into IFN\u03b3-M1 or IL-4-M2 macrophages. We confirmed human macrophage cytokine and gene expression-related polarisation, while human macrophage metabolic behaviour was assessed via traditional extracellular flux assays. Finally, 2P-FLIM was applied during which real-time responses of photonic variables to metabolism-challenging small molecules were measured. This study establishes 2P-FLIM as a method to discriminate IFN\u03b3-M1 and IL-4-M2 macrophages, which is most pronounced by macrophages\u2019 differential responses when treated with carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP). This allows the accurate classification of macrophage polarisation using machine learning methods, for example, the random forests model, and to evaluate single-cell heterogeneity. Our work reports, for the first time, the classification of human macrophages by random forests using data obtained from real-time metabolic perturbations triggered during 2P-FLIM.\n\n## Results\n\n### Macrophage polarisation with IFN\u03b3 and IL-4 induces metabolic reprograming\n\nHuman blood-derived macrophages were polarised by incubating in cell culture media containing IFN\u03b3 (M1) or IL-4 (M2) for 24 hr. Polarisation was confirmed using ELISA and RT-PCR. Cellular metabolic activity was analysed using a sequence of metabolic enzyme inhibitors, and the inhibitors\u2019 effect was measured by extracellular acidification ratio (ECAR), oxygen consumption ratio (OCR), and 2P-FLIM (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig1-v1.jpg)\n\n**Figure 1.:** Image created using biorender.com.\n\nA slightly higher amount of TNF\u03b1 production was obtained for IFN\u03b3-M1 when compared with IL-4-M2 macrophages. Regarding IL-10, a statistically higher production was measured in IL-4-M2 when compared with IFN\u03b3-M1 and untreated macrophages (Figure 2A and D). For gene expression, a higher amount of CXCL9 and a statistically significant increase in CXCL10 in IFN\u03b3-M1 macrophages were observed (Figure 2B and C). In addition, MRC1 and CCL13 were further expressed in IL-4-M2 macrophages when compared with untreated and IFN\u03b3-M1 macrophages (Figure 2E and F). IFN\u03b3-M1 macrophages have a higher dependence on aerobic glycolysis, whilst IL-4-M2 macrophages are more reliant on oxidative phosphorylation. We used ECAR and OCRs to certify this metabolic behaviour, which is linked to macrophage polarisation. For ECAR and OCR, we used four different metabolic modulators in succession, oligomycin, FCCP, rotenone + antimycin A (Rot+AA), and 2-deoxy-d-glucose (2-DG), to evaluate cellular metabolism (Figure 2). IFN\u03b3-M1 macrophages exhibited a higher ECAR and lower OCR in response to the treatments added, whilst IL-4-M2 and untreated macrophages had lower ECAR and higher OCR (Figure 2G and J). After plotting ECAR and OCR curves, the areas under the curves (AUC) were measured to reflect basal glycolysis, maximal glycolysis, basal respiration, and maximal respiration.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) ELISA of inflammatory cytokine TNF\u03b1 and anti-inflammatory IL-10 in IFN\u03b3-M1, IL-4-M2, and UT macrophages. (C\u2013F) Evaluation of CXCL9, MRC1, CXCL10, and CCL13 gene expression in IFN\u03b3-M1, IL-4-M2, and UT macrophages. (G,J ) Extracellular acidification ratio (ECAR) and oxygen consumption ratio (OCR) profile of IFN\u03b3-M1, IL-4-M2, and UT macrophages when treated sequentially with oligomycin, carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP), rotenone + antimycin A, and 2-deoxy-d-glucose (2-DG). (H, I, K, L) Area under the curve (AUC) values calculated from ECAR and OCR between each treatment. Data displayed as average \u00b1 SD. Statistical significance verified by one-way ANOVA with *p<0.05, **p<0.01, ***p<0.001 to show significance for N = 6 donors.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Primary human macrophages were left untreated (UT), treated with IFN\u03b3 (20 ng/ml), or IL-4 (20 ng/ml) for 24 hr. Cells were stained for M1 maturation surface markers CD80, CD86, and M2 surface markers CD163, CD206, and analysed by flow cytometry. (A\u2013D) Representative histograms depicting median fluorescence intensity (MFI) of surface markers. Bar graphs depict MFI as a percentage to the control (untreated cells) (N = 3). All data is represented as mean \u00b1 SEM and analysed by one-way ANOVA with Dunnett\u2019s multiple-comparisons test.\n\nIFN\u03b3-M1 macrophages have a statistically significant increase of basal and max glycolysis when compared with untreated macrophages (Figure 2H and I). In addition, all macrophage types have similar basal respiration, whilst IL-4-M2 macrophages have a statistically significant increase in max respiration when compared with untreated macrophages (Figure 2K and L).\n\n### 2P-FLIM captures metabolic shifts on IFN\u03b3 and IL-4-treated macrophages\n\n2P-FLIM harvests NAD(P)H and FAD+ autofluorescence to infer cellular metabolism. NAD(P)H enzyme-bound state is characterised by a longer fluorescence lifetime, whilst NAD(P)H free-state has a shorter fluorescence lifetime. NAD(P)H and FAD+ fluorescence intensities are measured in order to calculate the ORR (Equation 3). These fluorescence features enable the distinction between an OxPhos or glycolytic-dependent metabolism (Skala et al., 1992, Okkelman et al., 2019, Schaefer et al., 2019; Floudas et al., 2020; Neto et al., 2020; Walsh et al., 2020, Perottoni et al., 2021).\n\nFor this experiment, we seeded unpolarised macrophages in ibidi Luer \u03bc-slides in static conditions and polarised the macrophages using IFN\u03b3 or IL-4 for 24 hr. These macrophages are derived from the same donors as per those presented in Figure 2. Afterwards, we followed the same subjection of metabolic enzymatic inhibitors applied in the ECAR/OCR experiment in which we treated the macrophages with oligomycin, FCCP, Rot + AA, and 2-DG. During the time course of the experiments, the field of view was maintained so as to record single-cell metabolic variations (Figure 3A, Figure 3\u2014figure supplements 1 and 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-v1.jpg)\n\n**Figure 3.:** (A) Time-course imaging of representative (same field of view throughout) IFN\u03b3-M1 macrophages, scale bar: 100 \u03bcm. (B, C) Average fluorescence lifetime (\u03c4avg) and optical redox ratio (ORR) values for IFN\u03b3-M1 and IL-4-M2 when treated sequentially with oligomycin, carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP), rotenone + antimycin A and 2-deoxy-d-glucose (2-DG) of a representative donor. (D) z-score heatmap of 2P-FLIM acquired data for six donors separated by macrophage polarisation and metabolic inhibitor, each individual row corresponds to an imaging field. (E) Uniform Manifold Approximate and Projection (UMAP) plot of 2P-FLIM variables after each treatment each dot corresponds to an individual imaging field. (F) UMAP plot of 2P-FLIM variables after FCCP treatment, each dot corresponds to an individual imaging field. (G) Receiver-operator curve and area under curve values of random forests machine learning model applied to 2P-FLIM data after FCCP treatment. (H) 2P-FLIM weight features determined by mean decrease accuracy and mean decrease Gini of random forests model used to classify macrophages.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** All treatment images collected at the 30 min of treatment and color-coded for different NADH FLIM variables.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** All treatment images collected at the 30 min of treatment and color-coded for different NADH FLIM variables.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Basal phasor with values set at 3.4 ns (red) and 0.4 ns (green) and all donors basal FLIM data distribution. (B) Histogram of all donors normalised to pixel intensity in basal conditions. (C) Histogram distribution of a representative donor normalised to pixel intensity in basal conditions. (D) FCCP phasor with values set at 3.4 ns (red) and 0.4 ns (green) and all donors FCCP FLIM data distribution. (E) Histogram of all donors (N = 6) normalised to pixel intensity in FCCP conditions. (F) Histogram distribution of a representative donor normalised to pixel intensity in FCCP conditions. \u03a8 value is the non-overlapped area for both curves in each plot when compared with the total area occupied by both curves. A higher \u03a8 value determines a better segregation between datasets.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Principal component analysis (PCA) and t-SNE data visualisation of two-photon fluorescence lifetime imaging microscopy (2P-FLIM) variables obtained from full field of view (FoV) collected during the course of metabolic treatments (A, B). PCA data visualisation of 2P-FLIM variables obtained from full FoV collected during carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP) treatments and representation of 99.9% confidence ellipses derived from 3 standard deviations of the data presented for each group of samples (C). t-SNE data visualisation of 2P-FLIM variables obtained from full FoV collected during FCCP treatments (D).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp5-v1.jpg)\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) \u03c41, (B) \u03c42, (C) \u03b11, (D) \u03b12, (E) optical redox ratio (ORR) distribution based on NADH results, (F) ORR distribution based on FAD results, and (G) \u03c4avg. These values are obtained after background removal.\n\nWe derived the average fluorescence lifetime (\u03c4avg) and ORR of IFN\u03b3-M1 and IL-4-M2 macrophages from the full FoV of 2P-FLIM data and observed an increasing trend of \u03c4avg in response to the application metabolic enzymatic inhibitors. With the exception of 2-DG, in which a decrease of \u03c4avg was observed for both macrophage phenotypes (Figure 3B). Regarding ORR, there is a slight decreasing trend of ORR, followed by a raise in ORR with the 2-DG treatment for IFN\u03b3-M1 macrophages. For IL-4-M2 macrophages, there is a decrease in ORR with the oligomycin treatment, followed by stabilisation with FCCP and Rot + AA, and finally an increase elicited by 2-DG (Figure 3C). In addition, we utilised phasor analysis on the raw FLIM data. Here, we plotted the phasor maps while fixing the lifetimes at 3.4 ns and 0.4 ns as indicated in literature (Ranjit et al., 2018). Furthermore, we generated histogram plots that showcase the distribution of the data in the phasor plot as well as the difference between IFN\u03b3-M1 and IL-4-M2 macrophages (Figure 3\u2014figure supplement 3). We compiled all the full FoV 2P-FLIM variables: \u03c41, \u03c42, \u03b11, \u03b12, \u03c4avg, and ORR into a representative z-score heatmap, stratified according to macrophage type and metabolic inhibitors across all donors. IFN\u03b3-M1 macrophages have lower \u03c41, \u03c42, \u03c4avg, and ORR values when compared with IL-4-M2 macrophages (Figure 3D).\n\n### 2P-FLIM variables allow the classification of IFN\u03b3-M1 and IL-4-M2 macrophages\n\nUMAP was applied to full FoV 2P-FLIM variables associated with IFN\u03b3-M1 and IL-4-M2 macrophages as a data visualisation tool. The coordinates for each image were defined using a cosine distance function computed using the 2P-FLIM variables: \u03c4avg, \u03c41, \u03c42, \u03b11, \u03b12, and ORR (Figure 3E). UMAP representation of 2P-FLIM variables acquired during FCCP treatment provides a separation between IFN\u03b3-M1 and IL-4-M2 macrophages (Figure 3F). This segregation is also observed when applying PCA analysis on FCCP treated human macrophages. However, this separation is not observed for t-SNE analysis (Figure 3\u2014figure supplement 4).\n\nRandom forests classification models were applied to classify macrophage polarisation from 2P-FLIM variables when treated with FCCP (Table 1). To adequately train the random forests model, we removed the \u03b11 2P-FLIM variable as it exhibits a negative correlation with the \u03b12 variable (Figure 3\u2014figure supplement 5). ROC curves of our dataset reveal high accuracy for predicting macrophage polarisation in the full FOV during FCCP (AUC = 0.944), when using 2P-FLIM variables as predictors (Figure 3G).\n\n**Table 1.**\n Hyper-parameters, OBB, ROC-AUC, and confusion matrix of the trained random forests model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Donor (no. of data points)</th>\n      <th>ntree</th>\n      <th>mtry</th>\n      <th>OOB (%)</th>\n      <th>ROC-AUC</th>\n      <th>TP</th>\n      <th>FP</th>\n      <th>FN</th>\n      <th>TN</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>All donors \u2013 full FoV (36)</td>\n      <td>100</td>\n      <td>2</td>\n      <td>16.67</td>\n      <td>0.944</td>\n      <td>16</td>\n      <td>2</td>\n      <td>4</td>\n      <td>14</td>\n    </tr>\n  </tbody>\n</table>\n\n_ntree, number of trees; mtry, number of variables selected for the best split at each node; OBB, out-of-bag error; ROC-AUC, area under receiver operating characteristics curve; TP, true positive; FP, false positive; FN, false negative; TN, true negative._\n\nNext, the mean decrease accuracy and mean decrease Gini returned by the random forests model reveal that \u03c41, \u03c42, and \u03c4avg are the most important 2P-FLIM variables for macrophage classification and data segregation (Figure 3H). When using only \u03c41, \u03c42, and \u03c4avg as the 2P-FLIM predictors for random forests training, a high prediction accuracy was still achieved (ROC-AUC = 0.934) (Figure 3G).\n\n### 2P-FLIM classification models are sensitive to cell heterogeneity\n\nMacrophage polarisation heterogeneity at a single-cell level was evaluated within each donor in response to the FCCP treatment (Figure 4). Here, we utilised Cell Profiler to evaluate and track single-cell metabolic shifts (Figure 4A). A representative donor UMAP implies two clusters, one majorly occupied by IFN\u03b3-M1 macrophages and the other occupied by IL-4-M2 macrophages (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig4-v1.jpg)\n\n**Figure 4.:** (A) Single-cell analysis using a custom-built Cell Profiler script, scale bar = 100 \u00b5m. (B) Single-cell Uniform Manifold Approximate and Projection (UMAP) visualisation of a representative donor after carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP) treatment using 2P-FLIM variables. (C) Receiver operating characteristics curve (ROCs) of random forests models for classification of macrophages of all human donors used in this study. (D) Mean decrease in accuracy and (E) mean decrease in Gini of each 2P-FLIM variable returned by the random forests model.\n\nAfterwards, we trained a random forests model for each donor. The new random forests models were trained using \u03c4avg, \u03c41, \u03c42, \u03b12, and ORR as predictors, the measurements of which were obtained from single cells. The values of the hyper-parameters were decided according to the OBB estimate (Table 2). Subsequently, we evaluated the performance of the trained random forests models by plotting ROC-AUC curves (Figure 4C, Table 2). From Figure 4C and Table 2, it is noticeable that single-cell classification performance is affected by donor variability during the FCCP treatment. Donors D and E have the highest ROC-AUC values and lowest OOB errors. Finally, for the trained random forests models, we plotted the relative importance of each 2P-FLIM variable, and found that \u03c41, \u03c42, \u03c4avg, and \u03b12 are the most important variables for classifying macrophage type at a single-cell level (Figure 4D and E).\n\n**Table 2.**\n Hyper-parameters, OBB, ROC-AUC, and confusion matrix of donor-specific random forests models.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Donor (no. of data points)</th>\n      <th>ntree</th>\n      <th>mtry</th>\n      <th>OOB (%)</th>\n      <th>ROC-AUC</th>\n      <th>TP</th>\n      <th>FP</th>\n      <th>FN</th>\n      <th>TN</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A (170)</td>\n      <td>100</td>\n      <td>4</td>\n      <td>24.41</td>\n      <td>0.740</td>\n      <td>39</td>\n      <td>18</td>\n      <td>13</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>B (155)</td>\n      <td>150</td>\n      <td>2</td>\n      <td>38.79</td>\n      <td>0.650</td>\n      <td>28</td>\n      <td>27</td>\n      <td>18</td>\n      <td>43</td>\n    </tr>\n    <tr>\n      <td>C (232)</td>\n      <td>250</td>\n      <td>3</td>\n      <td>32.18</td>\n      <td>0.813</td>\n      <td>67</td>\n      <td>29</td>\n      <td>27</td>\n      <td>51</td>\n    </tr>\n    <tr>\n      <td>D (199)</td>\n      <td>400</td>\n      <td>4</td>\n      <td>10.07</td>\n      <td>0.968</td>\n      <td>76</td>\n      <td>5</td>\n      <td>10</td>\n      <td>58</td>\n    </tr>\n    <tr>\n      <td>E (179)</td>\n      <td>250</td>\n      <td>1</td>\n      <td>19.40</td>\n      <td>0.854</td>\n      <td>58</td>\n      <td>9</td>\n      <td>17</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>F (212)</td>\n      <td>250</td>\n      <td>1</td>\n      <td>26.42</td>\n      <td>0.801</td>\n      <td>101</td>\n      <td>2</td>\n      <td>40</td>\n      <td>16</td>\n    </tr>\n  </tbody>\n</table>\n\n_ntree, number of trees; mtry, number of variables selected for the best split at each node; OBB, out-of-bag error; ROC-AUC, area under receiver operating characteristics curve; TP, true positive; FP, false positive; FN, false negative; TN, true negative._\n\n## Discussion\n\nIn this study, we use macrophage polarisation as a model system to demonstrate the feasibility and effectiveness of the random forests model for classification, applied to 2P-FLIM parameters influenced by metabolic perturbations (Figure 1). The polarisation of human macrophages is often crudely described as two opposite phenotypes: classical activation (IFN\u03b3-M1-macrophages) and alternative activation (IL-4-M2 macrophages). The higher production of TNF\u03b1 in IFN\u03b3-treated human macrophages and low IL-10 production are evidence of a macrophage classical activation (Tokunaga et al., 2018; Figure 2A and B). In contrast, treating human macrophages with IL-4, an increase in IL-10 production and higher expression of MRC1 and CCL13, are characteristic of an alternative activation of macrophages (Martinez et al., 2006; Artyomov et al., 2016; Figure 2D\u2013F). Furthermore, we performed flow cytometry of polarised macrophages using antibodies to detect CD80, CD86, CD163, and CD206 surface markers, further validating the intended macrophage polarisation (Figure 2\u2014figure supplement 1). Extending from this, extracellular flux analysis was performed. Extracellular flux measurements revealed a higher acidification ratio (ECAR) and a lower OCR for IFN\u03b3-M1 macrophages during the different stages of metabolic inhibition when compared with IL-4-M2 macrophages (Figure 2G and J). By calculating the basal glycolysis rate and maximum glycolysis, IFN\u03b3-M1 macrophages presented higher glycolytic rates (Figure 2H and I). The acidification (from ECAR) is linked with the production of lactate as a by-product of glycolysis, which reduces extracellular pH (Wang et al., 2018). Regarding IL-4-M2 macrophages, a reduced ECAR and increased OCR during the extracellular flux treatments (Figure 2G and J), together with a higher max respiration potential, were observed when compared with untreated macrophages. However, no difference was observed at the basal respiration measures (Figure 2K and L). ECAR and OCR calculated results are associated with a higher dependence of OxPhos as a more active metabolic machinery in IL-4-M2 macrophages. In order to fuel the upregulation of the TCA cycle and the ETC, the mitochondria need to consume more oxygen at the complex IV site of the electron transport chain (Van den Bossche et al., 2015; O\u2019Neill et al., 2016).\n\nWe next sought to underline 2P-FLIM as a complimentary and, more advantageously, a non-invasive spatial evaluation of macrophage metabolism reflecting macrophage-induced polarisation. Recapitulating the sequence of metabolic enzyme inhibition which formed a basis of the extracellular flux analysis, sequential 2P-FLIM micrographs of IFN\u03b3- or IL-4-polarised macrophages were acquired (Figure 3A). A reduced \u03c4avg, observed with IFN\u03b3-M1 macrophages, reflects a higher relative amount of free NAD(P)H (which has characteristic short fluorescence lifetimes), indicative of glycolysis (Walsh et al., 2013; Perottoni et al., 2021). In contrast, IL-4-M2 macrophages had higher \u03c4avg-reflective of OxPhos due to increased proportion of longer lifetime, protein-bound NAD(P)H (Okkelman et al., 2019, Walsh et al., 2020; Figure 3B). Varying interpretations of ORR are reported in previous studies (Varone et al., 2014; Walsh et al., 2020), and for this study, we adopt a lower ORR reflecting a higher fraction of NAD(P)H and a lower FAD+ associated with upregulation of OxPhos (Equation 3; Neto et al., 2020). IL-4-M2 macrophages exhibited a lower ORR across the treatments in contrast with IFN\u03b3-M1 macrophages, validating a higher dependency of IL-4-M2 macrophages on OxPhos when compared with IFN\u03b3-M1 macrophages. A heatmap overviewing the 2P-FLIM output variables was compiled, showcasing the shifts promoted by the different treatments in both phenotype-directed human macrophages (Figure 3D). With IL-4-M2 macrophages, there is a noticeable increase in \u03c41, \u03c42, and \u03c4avg and an appreciable decrease in ORR when compared with IFN\u03b3-M1-treated macrophages. The trending increase of NAD(P)H fluorescence lifetimes is further exacerbated after treatment with FCCP in IL-4-M2 macrophages. Indeed, given the ability of FLIM to imaging and measure NAD(P)H and FAD+, others have employed small molecules to gain further information about the dynamics of metabolic machinery in states of disease and differentiation. For instance, during stem cell osteogenic differentiation, Guo et al. tested oligomycin A (mitochondrial respiration inhibitor) as an experimental treatment in parallel to standard osteogenic media. A decrease in NAD(P)H average lifetime was calculated reflective of reduced oxidative phosphorylation. In addition, oligomycin A treatment promoted an increase in lactate production, lower oxygen consumption, and lower osteogenic differentiation (Guo et al., 2015). The heterogeneous response towards metabolic inhibitors by IFN\u03b3-M1 or IL-4-M2 macrophages yields clustering patterns in the two-dimensional projected space via the UMAP method (Figure 3E). When analysing each treatment individually, measurements emanating from the FCCP treatment yielded the highest segregation across all donors between IFN\u03b3-M1 and IL-4-M2 macrophages (Figure 3F). In addition, our phasor analysis (Figure 3\u2014figure supplement 3) also demonstrates a higher segregation of IFN\u03b3-M1 and IL-4-M2 macrophages when using FFCP treatment. Albeit, the limitation in pre-defining values for the fluorescence lifetime variables such as \u03c41 and \u03c42 can mask important predictors for the classification problem.\n\nHigher NAD(P)H fluorescence lifetimes such as \u03c41, \u03c42, and \u03c4avg are attributable to two major factors: increases in NADPH concentrations and microenvironmental shifts (Blacker et al., 2014; Schaefer et al., 2019). FCCP functions as an uncoupler of mitochondria inner membrane allowing unhinged proton flux to the mitochondria matrix. Consequently, this proton flux causes a reduction of mitochondrial pH, increasing effectively the fluorescence lifetime of NAD(P)H. The unhinged proton flux due to FCCP compliments existing studies whereby Schaefer et al. reported an increased NAD(P)H fluorescence lifetime due to reduced mitochondria pH elicited by FCCP treatment (Blinova et al., 2005; Schaefer et al., 2017). Another consequence of FCCP treatment is an increase in ETC activity indicated by increased oxygen consumption of IL-4-M2 macrophages (Figure 2J). Increased ETC activity promotes an increase of NADH and FAD+ directly impacting the ORR. One would have expected the ORR to increase after the FCCP treatment as observed in IFN\u03b3 macrophages. However, for IL-4-M2 macrophages, the ORR begins to decrease. FCCP induction of maximal ETC activity increases the demand for NADH and FADH2 causing a concomitant increase of the FAO and TCA cycle activity already upregulated in IL-4-M2 macrophages (Ludtmann et al., 2014). This demand results in a reduced pool of FAD+ and an increase of NADH, effectively reducing ORR (Ludtmann et al., 2014; Akie and Cooper, 2015; Viola et al., 2019). The higher heterogeneity in FCCP response is due to the effect of FCCP on the mitochondrial membrane and the higher dependence of FAS/FAO on IL-4-M2 macrophages basally (O\u2019Neill et al., 2016). Blacker et al. reported the FCCP impact in great detail where, when seeking to separate NADH and NADPH fluorescence in live cells and tissues using FLIM, inhibiting mitochondrial oxidative phosphorylation in wild-type HEK293 cells using rotenone (10\u2009\u03bcM) or uncoupling using FCCP (1\u2009\u03bcM) (Blacker et al., 2014). The study of Blacker et al. provides excellent insights into NADH and NADPH dynamics and separation, and the treatment of FCCP has a similar effect on HEK293 cells as the IL-4-M2 macrophages reported in our study. Here, FCCP uncoupling promotes higher ETC, higher TCA activity impacting the ORR and, at the same time, a decreased mitochondrial pH increases the fluorescence lifetimes of NAD(P)H (Blinova et al., 2005; Schaefer et al., 2017). Regarding IFN\u03b3-M1 macrophages, their lower dependence on ETC, TCA, FAO, and lower mitochondria membrane potential while producing most of ATP by glycolysis makes the impact of FCCP on the mitochondria and fluorescence lifetimes less pronounced.\n\nRandom forests models were applied to study the endpoint variables of the 2P-FLIM obtained during the FCCP treatment of IFN\u03b3-M1 macrophages and IL-4-M2 macrophages. 2P-FLIM measurements contain a minimum of 24 cells per FOV and culminate in a total of 36 data points used for random forests training. For the trained random forests model, a low OBB error estimate and a high ROC-AUC value were achieved when classifying a population of IFN\u03b3-M1 and IL-4-M2 macrophages (Figure 3G and H, Table 1). When the random forests model was trained using only three predictors, \u03c41, \u03c42, and \u03c4avg, the ROC-AUC classification accuracy decreased slightly from 0.944 to 0.934 (Figure 3G). The feature importance ranking based on mean decrease in accuracy and mean decrease in Gini indicates that \u03c41, \u03c42, and \u03c4avg are the most important 2P-FLIM variables for classifying an IFN\u03b3-M1 or an IL-4-M2 macrophage when subjected to the FCCP treatment (Figure 3H). The relative importance of the three features, \u03c41, \u03c42, and \u03c4avg, implies that these FLIM features are divergent in IFN\u03b3-M1 and IL-4-M2 macrophages. This outcome agrees with our previous results showing that FCCP highly impacts the NAD(P)H fluorescence lifetimes in IFN\u03b3-M1 and IL-4-M2 macrophages (Figure 3D). The high predictive power of 2P-FLIM variables for classifying cell phenotype compliments the machine learning approach of Walsh et al., on classifying CD3+ and CD3+CD8+ T-cell activation (Walsh et al., 2020).\n\nPrecise regulation of macrophage activation state is key to understanding disease control, tissue homeostasis, and implant response, with this regulation shown to be directly related to macrophage intracellular metabolism (O\u2019Neill et al., 2016). Therefore, impaired macrophage metabolism results in compromised homeostasis such as the case of diabetes, the foreign body response to biomaterials, obesity, or cancer (Mantovani and Sica, 2010; McNelis and Olefsky, 2014). Depending on the investigation being applied, shifts observed in cellular metabolism, cytokine production, or gene expression are typically a cumulative output from a broad population. We investigated the clustering pattern of IFN\u03b3-M1 macrophages and IL-4-M2 macrophages using single-cell data within individual donors and found that the IFN\u03b3-M1 macrophage and IL-4-M2 macrophage appeared as separate clusters within each donor (Figure 4A and B). Classifying IFN\u03b3-M1 and IL-4-M2 macrophages at a single-cell level yielded some varied results, with four donors providing acceptable predicting performance (OOB < 31%; ROC-AUC > 0.75) (Figure 4C and D). There is some cell-to-cell variability which could stem from the uptake capacity of FCCP and other treatments in our experiments as well as the underlying health of the donors which is not available (Smiley et al., 1991; Stiebing et al., 2017). Nonetheless, for the four donors with the most superior performance during classification, \u03c41, \u03c42, \u03c4avg, and \u03b12 are the most relevant variables for the classification problem, which agrees with the case of full FoV analysis. Future efforts to improve single-cell classification include increasing the overall number of cells analysed to ensure a stronger classification. In addition, by observing phenotypic IFN\u03b3-M1 and IL-4-M2 macrophage cell surface markers (examples include CD80, CD86, CD163, and CD206, respectively) during the imaging process by immunofluorescence or other modes of tagging, it would be possible to improve the classification efficiency (Murray et al., 2014).\n\n2P-FLIM imaging has several advantages when compared with traditional metabolic assays and methods to classify and validate macrophage metabolism. 2P-FLIM enables spatial and temporal resolution in a non-invasive manner, allowing single-cell and cell-to-cell evaluations into cellular heterogeneity in a basal and interrogated mode. 2P-FLIM requires no fixation nor staining of cells and can be performed in real time with only a small number of cells. In this work, we demonstrated the feasibility of using 2P-FLIM as a tool to distinguish and classify opposing human macrophage polarisation states based on cellular metabolism and fluorescence lifetimes variables. Visualisation of the data showed a clear clustering pattern of IFN\u03b3-M1 and IL-4-M2 macrophages in response to FCCP during real-time imaging in a full FoV. The excellent performance of machine learning models, applied on the data extracted from the non-invasive technique, underlines further the efficiency of this workflow. This workflow can be easily adapted to non-invasively characterising macrophage polarisation in in vivo models and in vitro multicellular organoid models. These organoid models can be developed to study foreign body interactions, biomaterial assessment, pharmaceutical research and screening, and clinical applications such as disease diagnosis.\n\n## Materials and methods\n\n### Human blood monocyte-derived macrophage isolation\n\nThis study was approved by the research ethics committee of the School of Biochemistry and Immunology, Trinity College Dublin, and was conducted in accordance with the Declaration of Helsinki. Leucocyte-enriched buffy coats from anonymous healthy donors were obtained with permission from the Irish Blood Transfusion Board (IBTS), St. James\u2019s Hospital, Dublin. Donors provided informed written consent to the IBTS for their blood to be used for research purposes. PBMCs were isolated and differentiated into macrophages as described previously (Mahon et al., 2020). The purity of CD14+CD11b+ macrophages was assessed by flow cytometry and was routinely >95%.\n\n### Cytokine measurements\n\nMacrophages (1 \u00d7 106 cells/ml) were treated with IFN\u03b3 (20 ng/ml) or IL-4 (20 ng/ml) for 24 hr. Supernatants were harvested, and cytokine concentrations of TNF\u03b1 and IL-10 were quantified by ELISA (eBioscience) according to the manufacturer\u2019s protocol.\n\n### Real-time PCR\n\nMacrophages (1 \u00d7 106 cells/ml) were treated with IFN\u03b3 (20 ng/ml) or IL-4 (20 ng/ml) for 24 hr. RNA was extracted using High-Pure RNA Isolation Kits (Roche) and assessed for concentration and purity using the NanoDrop 2000c \u2013 UV-Vis spectrophotometer. RNA was equalised and reverse transcribed using the Applied Biosystems High-Capacity cDNA reverse transcription kit. Real-Time PCR Detection System (Bio-Rad Laboratories, CA) was used to detect mRNA expression of target genes. PCR reactions included iTaq Universal SYBR Green Supermix (Bio-Rad Laboratories), cDNA TaqMan fast universal PCR Master Mix and pre-designed TaqMan gene expression probes (Applied Biosystems) for CXCL9, CXCL10, MRC1, CCL13, and the housekeeping gene, 18S ribosomal RNA. The 2\u2013 \u0394\u0394CT method was used to analyse relative gene expression.\n\n### Seahorse analyser\n\nMacrophages were cultured at 1 \u00d7 106 cells/ml for 6 days prior to re-seeding at 2 \u00d7 105 cells/well in a Seahorse 96-well microplate and allowed to rest for 5 hr prior to stimulation with IFN\u03b3 (20 ng/ml) and IL-4 (20 ng/ml) for 24 hr. The Seahorse cartridge plate was hydrated with XF calibrant fluid and incubated in a non-CO2 incubator at 37\u00b0C for a minimum of 8 hr prior to use. Thirty minutes prior to placement into the Seahorse XF/XFe analyser, cell culture medium was replaced with complete XF assay medium (Seahorse Biosciences, supplemented with 10 mM glucose, 1 mM sodium pyruvate, 2 mM l-glutamine, and pH adjusted to 7.4) and incubated in a non-CO2 incubator at 37\u00b0C. Blank wells (XF assay medium only) were prepared without cells for subtracting the background OCR and ECAR during analysis. Oligomycin (1 mM, Cayman Chemicals), FCCP (1 mM, Santa Cruz Biotechnology), Rot (500 nM), and AA (500 nM) and 2-DG (25 mM, all Sigma-Aldrich) were prepared in XF assay medium and loaded into the appropriate injection ports on the cartridge plate and incubated for 10 min in a non-CO2 incubator at 37\u00b0C. OCR and ECAR were measured over time with sequential injections of oligomycin, FCCP, Rot, and AA and 2-DG. Analysis of results was performed using Wave software (Agilent Technologies). The rates of basal glycolysis, maximal glycolysis, basal respiration, and maximal respiration were calculated as detailed in the manufacturer\u2019s protocol and supplied in Table 3.\n\n**Table 3.**\n Calculation of basal glycolysis, max glycolytic, basal respiration, and max respiration for ECAR/OCR experimental setup.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Rate</th>\n      <th>Calculation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Basal glycolysis</td>\n      <td>Average ECAR values prior to oligomycin treatment \u2013 non-glycolytic ECAR</td>\n    </tr>\n    <tr>\n      <td>Max glycolysis</td>\n      <td>Average ECAR values after oligomycin and before FCCP treatment</td>\n    </tr>\n    <tr>\n      <td>Basal respiration</td>\n      <td>Average OCR values prior to oligomycin treatment \u2013 nonmitochondrial OCR</td>\n    </tr>\n    <tr>\n      <td>Max respiration</td>\n      <td>Average OCR values after FCCP and before rotenone/antimycin A treatment</td>\n    </tr>\n  </tbody>\n</table>\n\n_ECAR, extracellular acidification ratio; OCR, oxygen consumption ratio; FCCP, carbonyl cyanide-p-trifluoromethoxyphenylhydrazone._\n\n### Two-photon fluorescence lifetime imaging microscopy (2P-FLIM)\n\n2P-FLIM was performed on 24 hr-polarised macrophages seeded in ibidi Luer \u03bc-slides with a 0.8 mm channel height. 2P-FLIM was achieved using a custom upright (Olympus BX61WI) laser multiphoton microscopy system equipped with a pulsed (80 MHz) titanium: sapphire laser (Chameleon Ultra, Coherent, USA), water-immersion 25\u00d7 objective (Olympus, 1.05 NA), and temperature-controlled stage at 37\u00b0C. Two-photon excitation of NAD(P)H and FAD+ fluorescence was performed at the excitation wavelength of 760 and 800 nm, respectively. Several studies have reported that two-photon excitation in the range of 720\u2013760 nm can be used to selectively excite NAD(P)H, while for FAD+ a excitation wavelength above 900 nm is commonly used (Huang et al., 2002; Levitt et al., 2011). A 458/64 nm and 520/35 nm bandpass filter were used to isolate the NAD(P)H and FAD+ fluorescence emissions based on their emission spectra (Huang et al., 2002).\n\n512 \u00d7 512 pixel images were acquired with a pixel dwell time of 3.81 \u03bcs and 30 s collection time. A PicoHarp 300 TCSPC system operating in the time-tagged mode coupled with a photomultiplier detector assembly (PMA) hybrid detector (PicoQuanT GmbH, Germany) was used for fluorescence decay measurements, yielding 256 time bins per pixel. TCSPC requires a defined \u2018start,\u2019 provided by the electronics steering the laser pulse or a photodiode, and a defined \u2018stop\u2019 signal, realised by detection with single-photon sensitive detectors. The measuring of this time delay is repeated many times to account for the statistical variance of the fluorophore\u2019s emission. For more detailed information, the reader is referred elsewhere (Wahl et al., 2013).\n\nFluorescence lifetime images with their associated decay curves for NAD(P)H were obtained with a minimum of 1 \u00d7 106 photons peak. After imaging, the background noise was removed. This was performed by defining regions of interest (ROI) of the cells on the 2P-FLIM image. Consequently, lower values of photons/pixels are removed from analysis improving the signal-to-noise ratio (Figure 3\u2014figure supplement 6).\n\nThe decay curved was generated and fitted with a double-exponential decay without including the instrument response function (IRF) (Equation 1).\n\n$$\nIt=I0[\\alpha_{1}e^{\\frac{-t}{\\tau_{1}}}+\\alpha_{2}e^{\\frac{-t}{\\tau_{2}}}]+C\n$$\n\nI(t) represents the fluorescence intensity measured at time t after laser excitation; \u03b11 and \u03b12 represent the fraction of the overall signal proportion of a short and long component lifetime, respectively. \u03c41 and \u03c42 are the long and short lifetime components, respectively; C corresponds to background light. Chi-square statistical test was used to evaluate the goodness of multiexponential fit to the raw fluorescence decay data. In this study, all of the fluorescence lifetime fitting values with \u03c72 < 1.3 were considered as \u2018good\u2019 fits. For NAD(P)H, the double exponential decay was used to differentiate between the protein-bound (\u03c41) and free (\u03c42) NAD(P)H. The average fluorescence lifetime was calculated using Equation 2.\n\n$$\n\\tau_{avg}=\\frac{(\\tau_{1}\\times\\alpha_{1}+\\tau_{2}\\times\\alpha_{2})}{(\\alpha_{1}+\\alpha_{2})}\n$$\n\nIntensity-based images of NAD(P)H and FAD+ were acquired, and their ratio was calculated using Equation 3 to obtain the ORR.\n\n$$\nORR=\\frac{FAD^{+}}{NADPH}\n$$\n\nFrom the images acquired using 2P-FLIM, single-cell analysis was performed using a custom-made script on Cell Profiler (McQuin et al., 2018). The single-cell analysis was conducted in a similar way as the global 2P-FLIM analysis.\n\n### Macrophage classification and machine learning\n\nUMAP was used for data visualisation and exploratory analysis of the clustering patterns in the 2P-FLIM imaging datasets for both global- and single-cell analysis (McInnes et al., 2018). UMAP was implemented in Python, and the plots were obtained in GraphPad. The random forests model was applied to classify IFN\u03b3-M1 and IL-4-M2 macrophages in both full FoV and single-cell donor-specific approaches. Random forests classification was implemented in R. Random forests hyper-parameters include the number of decision trees in the forest, the number of features considered by each tree when splitting a node, and the maximal depth of each tree. The maximal depth of each tree was controlled by setting the maximal number of terminal nodes in each tree to be 8. The values of the other two hyper-parameters were determined through grid search according to the OBB error estimate (Tables 1 and 2). The \u03b11 variable was removed from the random forests model due to its deterministic relationship with the \u03b12 variable (Figure 3\u2014figure supplement 5). ROCs were plotted, and the AUC values were calculated. For full FoV approach, the training dataset was used for the global analysis due to limited data size. Whereas, for the single-cell donor approach, the overall dataset was divided 75% as training datasets and 25% as testing datasets. In addition, random forests feature selection was utilised to evaluate the weight of each 2P-FLIM variable to determine its relative importance in macrophage classification for both the overall and the single-cell datasets. Support vector machine (SVM) and logistic regression models were also implemented for comparing with the random forests model and yielded similar performance with 87.5% accuracy when dividing the full FoV datapoints into 80% training and 20% testing dataset. However, neither the SVM model nor the logistic model is able to provide information on the relative importance of the predictors, and they both require an independent dataset for model validation.\n\n### Statistics\n\nEach experiment was performed in at least four healthy donors (defined by N) with 3\u20134 technical replicates run for each experiment (defined by n), depending on the assay type. Normality tests were performed to determine the normal distribution of the data. For ELISA and PCR data, one-way ANOVA and Tukey\u2019s test were used for comparing more than two groups. For Seahorse data, repeated-measures one-way ANOVA was used to account for the variance in basal metabolism across donors. All statistical analyses were performed on GraphPad Prism 9.00 (GraphPad Software).\n",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "8e681932-6b12-47e4-92f6-9cabab2aae71",
+      "submission_id": "a9768431-2666-42c3-b911-9cb4619e4f1e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77373.sa0](https://doi.org/10.7554/eLife.77373.sa0)\n\nThe authors introduce a machine learning based classifier for M1 and M2 polarised macrophages based on autofluorescence lifetime parameters excited by two-photon excitation in the NAD(P)H emission band following during uncoupling of oxidative phosphorylation. They have identified a promising direction for use of metabolic imaging for macrophage classification.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77373.sa1](https://doi.org/10.7554/eLife.77373.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Non-Invasive classification of macrophage polarisation by 2P-FLIM and machine learning\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Michael L Dustin as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Sergi Padilla-Parra (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please, produce more data utilising the Phasor plot.\n\n2) Produce 2D graphs clearly showing the number of photons (per pixel) vs lifetime.\n\n3) Show all pictures of your cells with the different parameters.\n\n4) If photons are limited leading to artifacts, increase the resolution of all your images (utilise a higher magnification/higher NA objective) and collect more photons per cell.\n\n5) Figure 2 \u2013 Please indicate n number. Is this data from all 6 donors?\n\n6) Figure 3 \u2013 In D, E and F, please indicate what each bar or point represents. Is this single-cell, an imaging field or200 cells? Please indicate for each panel.\n\n7) The authors should make clear if the ROC AUC value of 0.944 is for single cells or a population? If not signal cell, how many cells are needed to reach this level?\n\n8) The authors cite Kr\u00f6ger et al.'s 2021 preprint that uses lifetime parameters to classify human macrophages in vivo. Are the results here consistent with this kind of accuracy without the application of metabolic inhibitors? In this case, does in vivo environment likely serve as a discriminative condition that might separate the cells by FLIM better than the excess of oxygen in the in vitro setting?\n\n9) The study could be strengthened further by looking at the phenotypic markers of polarisation at the single-cell level, for example, by immunofluorescence in a manner that could be correlated with the FLIM measurements. This might reveal how much the accuracy of the methods is related to some failure of macrophages to polarise in a population, rather than a true error in classification. This could be discussed as a future effort.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting the paper entitled \"Non-Invasive classification of macrophage polarisation by 2P-FLIM and machine learning\" for further consideration by eLife. Your revised article has been evaluated by a Senior Editor and a Reviewing Editor. We are sorry to say that we have decided that this submission will not be considered further for publication by eLife.\n\nWhile the revisions were appreciated, they reinforced concerns about S/N. Your response related to importance of machine learning the classification led to a deeper analysis of this machine learning approach, which also suggests several weaknesses. We hope both sets of comments will be helpful in going forward with development of a robust approach to this important and interesting problem.\n\nReviewer #1 (Recommendations for the authors):\n\nComments on machine learning approach-\n\nDoing large grid sweeps when cross-validating is not exactly best practice as you will be optimising for performance on the test set. Data should instead be split into train-test-val: grid sweeps should be evaluated on the test set, but final performance should be evaluated on a validation set. Otherwise, these parameters may have been overfitted to test set and may not generalise to other validation sets.\n\nline 110 \u2013 t-SNE cannot be used for dimension reduction as it doesn\u2019t learn a function that can be re-applied.\n\nGiven there only appear to be 6 variables used, PCA will likely be useful and faster than UMAP, and the principal components will be highly interpretable. The main utility of UMAP over PCA is that it is a non-linear transformation. PCA should still be explored to see what features make up the principal components.\n\n139 \u2013 ROC-AUC is a bit subjective based on the number of cases: true positive, false positive, true negative and false negative should be reported too.\n\nIn figure 3: is 3F a reapplication of the UMAP learned in E, or is it a new UMAP?\n\nFigure 4B does not at all look convincing: the M1 and M2 groups do not appear to be separated. Furthermore, was the UMAP used in this figure re-trained on this patient's data, or was it pre-trained on a different dataset? It is not clear.\n\nThere's a lot going on in figure 4: Was a new model trained for each patient, or was each patient tested on the same model? In either case, A variability of 0.937 ROC-AUC to 0.650 ROC-AUC, does not suggest that this classification model is robust.\n\nPerhaps most importantly, It is not apparent where this score of 0.944 comes from \u2013 is this the max of cross-validation or the mean? is it on a dataset that collates all the data, or only on a subset? In particular, there is no link to the findings shown in figure 4.\n\nThis could be extended by doing \u2018cross-validation\u2019 when one of the patients is held out each time and generalisation performance is evaluated on the held-out patient.\n\nLine 235: 'it is noticeable that single-cell classification performance is affected by donor variability during the FCCP 236 treatment' \u2013 this should be emphasised in the abstract \u2013 it is a weakness of the paper.\n\nIn Table 1 it looks like mtry and ntree are the wrong way around \u2013 having only 2-5 trees in a random forest is in no way stable, and given there are 6 features, mtry can not be more than 6 (instead of the reported range of 100 to 300).\n\nIf the researchers are doing cross-validation they should report the mean and standard deviation/S.E. for their ROC-AUC scores along with their TP/TN/FP/FN. It's not apparent if they've picked the highest ROC-AUC score they got in the cross-validations or the mean\n\ntheir analysis of feature importance is fairly ad-hoc: a method like SHAP should be explored.\n\nIt appears that in the fluorescence some features are combinations of other features.\n\nLine 486: if SVMs and logistic regressions have been done these must be reported along with their confidence intervals. Logistic regressions will also be highly interpretable. It does not appear cross-validation has been done on this data, however.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have performed a number of analysis to try to respond to my questions. They have produced the Phasor plot for some of the data and have also presented pixel by pixel images and the photon histograms which is really valuable to understand how reliable is the data.\n\nI have to say that after examining these data I am not convinced that the signal to noise and the limited photon collections is not affecting the results:\n\nFigure 3 supplement 1 all figures are the same!!! There is no difference in pixel by pixel values for all conditions! The same can be seen in Figure 3 supplement 2. All figures regardless treatment conditions look the same to me. In the case of the phasor plot the differences might come from S/N as the shift in the plot is minimal and might be equivalent to your error (a few ps). In Figure 3 Supplement 4, the average lifetime clearly shows that for lower number of photons you have a shift in the lifetime which suggests that your changes in lifetime are affected by your poor signal. If you are considering the average lifetime as the mean value from a double exponential, still this shows that your calculations are affected by poor photon collection. You might consider non-fitting approach at all (for instance photon arrival time) and the number of photons would still be important. This would be better shown in a graph in which you do not bin the average lifetimes to a particular lifetime value (histograms) but instead you plot directly each photon value versus its corresponding lifetime value (dispersion plot). If you do this pixel by pixel instead of averaging your results per cell you will get a bid distribution of lifetimes that are pretty much affected by poor photon collection and you will have to determine which is the minimal amount of photons that gives a reliable lifetime.\n\nI am sorry to say that this vision is strengthened when examining the pixel by pixel images provided with different treatments. No differences at all can be seen when taking a look at the different treatments (i.e. Olygomycin, FCCP\u2026). Even when comparing IL-4-M2 macrophages vs IFN\u03b3-M1 macrophages I could not see any significant difference.\n\nOverall, I do appreciate the effort in producing all these data and I understand that there might be some differences in lifetimes that are quantified. However, the impact of the S/N and the difficulties to deconvolve background noise from real signal as shown in the histograms and also the images puts in doubt the main hypothesis of the paper.\n",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c61fa230-d284-42c3-b5a8-a3c5bcab3180",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C1",
+      "claim": "2P-FLIM provides high spatial and temporal resolution to image murine and human cell types, 2D and 3D cell cultures, and biopsies in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "2P-FLIM provides high spatial and temporal resolution to image murine and human cell types, 2D and 3D cell cultures, and biopsies in vitro and in vivo (Skala et al., 2007, Okkelman et al., 2019, Neto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies that demonstrated these capabilities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "dd1dcb0b-93de-44fb-a935-d3ec69e4f2e3",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C2",
+      "claim": "2P-FLIM allows reduced nicotinamide adenine dinucleotide (NAD(P)H) and flavin adenine dinucleotide (FAD+) to be studied and quantified, giving insight into cellular metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "2P-FLIM allows reduced nicotinamide adenine dinucleotide (NAD(P)H) and flavin adenine dinucleotide (FAD+) to be studied and quantified using 2P-FLIM, giving insight into cellular metabolism (Lakowicz et al., 1992; Skala et al., 2007, Neto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies that established this methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "d14e1a96-ab88-4e6a-9e7a-1bc6fbc003cf",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C3",
+      "claim": "NAD(P)H is noted as having a long fluorescence lifetime when enzyme-bound and a short fluorescence lifetime when free in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "NAD(P)H is noted as having a long fluorescence lifetime when enzyme-bound and a short fluorescence lifetime when free in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about NAD(P)H fluorescence properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "2d5daa08-13de-4034-92c4-3a260f98dee7",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C4",
+      "claim": "NADH and NADPH fluorescence properties are identical.",
+      "claim_type": "EXPLICIT",
+      "source": "NADH and NADPH fluorescence properties are identical, and hence NAD(P)H refers to these intracellular pools combined (Huang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study that established this property.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "b76d9d81-eea1-4194-a42a-d1e358b8cea8",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C5",
+      "claim": "M1 macrophage phenotype is defined by secretion of a significant amount of pro-inflammatory cytokines: TNF\u03b1 and IL-1\u03b2 enhanced endocytosis and ability to kill intracellular pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "M1 macrophage phenotype is defined by secretion of a significant amount of pro-inflammatory cytokines: TNF\u03b1 and IL-1\u03b2 enhanced endocytosis and ability to kill intracellular pathogens (Adams, 1989; Martinez et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies that characterized M1 macrophages.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "1e751505-2216-4982-a644-25ded327208c",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C6",
+      "claim": "M2 macrophages exhibit decreased expression of protein membrane markers, such as CD14 and CCR5, and increased fibronectin-1 production.",
+      "claim_type": "EXPLICIT",
+      "source": "M2 macrophages exhibit decreased expression of protein membrane markers, such as CD14 and CCR5, and increased fibronectin-1 production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about M2 macrophage characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "9eece3ba-5317-45b5-81be-b95bf027ab6b",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C7",
+      "claim": "M2 macrophages are characterized by the downregulation of pro-inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, M2 macrophages are also characterised by the downregulation of pro-inflammatory cytokines (Wang et al., 1998; Gratchev et al., 2001; Martinez et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies that characterized M2 macrophages.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "7de80f93-c681-4da0-a00b-1a91fdf621d0",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C8",
+      "claim": "IFN\u03b3-activated human macrophages (IFN\u03b3-M1) are primed for enhanced inflammatory responses by stabilising HIF1\u03b1 levels, activation of the JAK-STAT pathway, and increased production of IL-1\u03b2, all of which are dependent on enhanced levels of glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b3-activated human macrophages (IFN\u03b3-M1) are primed for enhanced inflammatory responses by stabilising HIF1\u03b1 levels, activation of the JAK-STAT pathway, and increased production of IL-1\u03b2, all of which are dependent on enhanced levels of glycolysis (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study that established this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "bca171b1-b2e9-484e-8fc2-e713cdd39f4c",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C9",
+      "claim": "IL-4-M2 macrophages are defined by an intact tricarboxylic acid cycle (TCA), enhanced OxPhos, increased fatty acid synthesis (FAS), and fatty acid oxidation (FAO).",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively activated human anti-inflammatory macrophages, most often observed in vitro through stimulation with IL-4 (IL-4-M2), are defined by an intact tricarboxylic acid cycle (TCA), enhanced OxPhos, increased fatty acid synthesis (FAS), and fatty acid oxidation (FAO) (O'Neill et al., 2016, Van den Bossche et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies that characterized IL-4-M2 macrophages.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "b4428abf-429d-40fb-a7e0-cf909372cc60",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C10",
+      "claim": "IFN\u03b3-M1 macrophages are more active in glycolysis, while IL-4-M2 macrophages are more dependent on oxidative phosphorylation for their energy production.",
+      "claim_type": "EXPLICIT",
+      "source": "In a nutshell, IFN\u03b3-M1 macrophages are more active in glycolysis, while IL-4-M2 macrophages are more dependent on oxidative phosphorylation for their energy production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on established knowledge about macrophage metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "4aeea2c3-41c0-46f8-b871-488c0db64b76",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C11",
+      "claim": "A slightly higher amount of TNF\u03b1 production was obtained for IFN\u03b3-M1 when compared with IL-4-M2 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "A slightly higher amount of TNF\u03b1 production was obtained for IFN\u03b3-M1 when compared with IL-4-M2 macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "71d7bb06-0297-4399-98f0-6db39a4505c3",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C12",
+      "claim": "A statistically higher production of IL-10 was measured in IL-4-M2 when compared with IFN\u03b3-M1 and untreated macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding IL-10, a statistically higher production was measured in IL-4-M2 when compared with IFN\u03b3-M1 and untreated macrophages (Figure 2A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "468a993e-65eb-4290-9d2d-470469cfdd58",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C13",
+      "claim": "A higher amount of CXCL9 and a statistically significant increase in CXCL10 in IFN\u03b3-M1 macrophages were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "For gene expression, a higher amount of CXCL9 and a statistically significant increase in CXCL10 in IFN\u03b3-M1 macrophages were observed (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental gene expression data shown in Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "69d11a6c-fd03-4a24-95de-2fc4933a6700",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C14",
+      "claim": "MRC1 and CCL13 were further expressed in IL-4-M2 macrophages when compared with untreated and IFN\u03b3-M1 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MRC1 and CCL13 were further expressed in IL-4-M2 macrophages when compared with untreated and IFN\u03b3-M1 macrophages (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental gene expression data shown in Figures 2E and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "ec5750cb-2ad8-4488-89fc-6fec0d7a4711",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C15",
+      "claim": "IFN\u03b3-M1 macrophages exhibited a higher ECAR and lower OCR in response to the treatments added, whilst IL-4-M2 and untreated macrophages had lower ECAR and higher OCR.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b3-M1 macrophages exhibited a higher ECAR and lower OCR in response to the treatments added, whilst IL-4-M2 and untreated macrophages had lower ECAR and higher OCR (Figure 2G and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental metabolic flux data shown in Figures 2G and 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "348ab02b-6bef-4bd7-8f3e-83aeba7240e1",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C16",
+      "claim": "IFN\u03b3-M1 macrophages have a statistically significant increase of basal and max glycolysis when compared with untreated macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b3-M1 macrophages have a statistically significant increase of basal and max glycolysis when compared with untreated macrophages (Figure 2H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2H and 2I with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "39109378-96d1-461e-8a24-f751bd269c9c",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C17",
+      "claim": "IL-4-M2 macrophages have a statistically significant increase in max respiration when compared with untreated macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all macrophage types have similar basal respiration, whilst IL-4-M2 macrophages have a statistically significant increase in max respiration when compared with untreated macrophages (Figure 2K and L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2L with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "d2e47401-4060-4d27-8d85-801b6b9889d3",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C18",
+      "claim": "All macrophage types have similar basal respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all macrophage types have similar basal respiration, whilst IL-4-M2 macrophages have a statistically significant increase in max respiration when compared with untreated macrophages (Figure 2K and L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "0b71f0cd-0f81-4ba2-989e-1055ffa72bb5",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C19",
+      "claim": "IFN\u03b3-M1 macrophages have lower \u03c41, \u03c42, \u03c4avg, and ORR values when compared with IL-4-M2 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b3-M1 macrophages have lower \u03c41, \u03c42, \u03c4avg, and ORR values when compared with IL-4-M2 macrophages (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 2P-FLIM data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "a3785007-92b8-48c0-bd42-109ef1cf9667",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C20",
+      "claim": "UMAP representation of 2P-FLIM variables acquired during FCCP treatment provides a separation between IFN\u03b3-M1 and IL-4-M2 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "UMAP representation of 2P-FLIM variables acquired during FCCP treatment provides a separation between IFN\u03b3-M1 and IL-4-M2 macrophages (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by UMAP visualization shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "3f4bd432-8104-4cc2-b4f4-11e6121f77d7",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C21",
+      "claim": "Random forests classification models achieved an ROC-AUC value of 0.944 when classifying macrophage polarisation from 2P-FLIM variables when treated with FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "ROC curves of our dataset reveal high accuracy for predicting macrophage polarisation in the full FOV during FCCP (AUC = 0.944), when using 2P-FLIM variables as predictors (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by machine learning analysis results shown in Figure 3G and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "ce13ed6d-12cf-4429-af4b-1b160c80de27",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C22",
+      "claim": "The random forests model for full field-of-view analysis had an OOB error rate of 16.67%.",
+      "claim_type": "EXPLICIT",
+      "source": "All donors \u2013 full FoV (36)\t100\t2\t16.67\t0.944\t16\t2\t4\t14",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the machine learning model performance data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "96cf7cfb-68de-40ec-8012-a2de5698eb94",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C23",
+      "claim": "\u03c41, \u03c42, and \u03c4avg are the most important 2P-FLIM variables for macrophage classification and data segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the mean decrease accuracy and mean decrease Gini returned by the random forests model reveal that \u03c41, \u03c42, and \u03c4avg are the most important 2P-FLIM variables for macrophage classification and data segregation (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by feature importance analysis from the random forests model shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "8e5bb082-7189-4ac1-a929-7e494d4e8f95",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C24",
+      "claim": "When using only \u03c41, \u03c42, and \u03c4avg as the 2P-FLIM predictors for random forests training, a high prediction accuracy was still achieved (ROC-AUC = 0.934).",
+      "claim_type": "EXPLICIT",
+      "source": "When using only \u03c41, \u03c42, and \u03c4avg as the 2P-FLIM predictors for random forests training, a high prediction accuracy was still achieved (ROC-AUC = 0.934) (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by machine learning analysis results shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "df5cd675-d93f-442d-b1df-50a509524340",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C25",
+      "claim": "Single-cell classification performance is affected by donor variability during the FCCP treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "From Figure 4C and Table 2, it is noticeable that single-cell classification performance is affected by donor variability during the FCCP treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the variation in ROC-AUC values across donors shown in Figure 4C and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "5519f2dc-de71-43d0-82b3-b0e62b8d2ae2",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C26",
+      "claim": "Donors D and E have the highest ROC-AUC values and lowest OOB errors for single-cell classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Donors D and E have the highest ROC-AUC values and lowest OOB errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the donor-specific machine learning results shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "68fafd0d-a15b-4fe3-95a1-15e53e156669",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C27",
+      "claim": "\u03c41, \u03c42, \u03c4avg, and \u03b12 are the most important variables for classifying macrophage type at a single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, for the trained random forests models, we plotted the relative importance of each 2P-FLIM variable, and found that \u03c41, \u03c42, \u03c4avg, and \u03b12 are the most important variables for classifying macrophage type at a single-cell level (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by feature importance analysis from the random forests models shown in Figures 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "1020cbb0-8918-4467-b097-8db367a04d71",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C28",
+      "claim": "FCCP functions as an uncoupler of mitochondria inner membrane allowing unhinged proton flux to the mitochondria matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "FCCP functions as an uncoupler of mitochondria inner membrane allowing unhinged proton flux to the mitochondria matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of action of FCCP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "87c2ff88-606c-4145-b32b-8ac1a2f3ba5a",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C29",
+      "claim": "Proton flux due to FCCP causes a reduction of mitochondrial pH, increasing effectively the fluorescence lifetime of NAD(P)H.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, this proton flux causes a reduction of mitochondrial pH, increasing effectively the fluorescence lifetime of NAD(P)H.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the known mechanism of FCCP and is supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "58d2a55f-f8c4-40c2-a77e-4c8d30188757",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C30",
+      "claim": "Schaefer et al. reported an increased NAD(P)H fluorescence lifetime due to reduced mitochondria pH elicited by FCCP treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The unhinged proton flux due to FCCP compliments existing studies whereby Schaefer et al. reported an increased NAD(P)H fluorescence lifetime due to reduced mitochondria pH elicited by FCCP treatment (Blinova et al., 2005; Schaefer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "15664fbc-0ef3-4184-8192-211bb76fa8f5",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C31",
+      "claim": "FCCP treatment causes an increase in ETC activity indicated by increased oxygen consumption of IL-4-M2 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Another consequence of FCCP treatment is an increase in ETC activity indicated by increased oxygen consumption of IL-4-M2 macrophages (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "2f679702-6860-4a3b-b9bb-9011e31c3f21",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C32",
+      "claim": "FCCP induction of maximal ETC activity increases the demand for NADH and FADH2 causing a concomitant increase of the FAO and TCA cycle activity already upregulated in IL-4-M2 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "FCCP induction of maximal ETC activity increases the demand for NADH and FADH2 causing a concomitant increase of the FAO and TCA cycle activity already upregulated in IL-4-M2 macrophages (Ludtmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from metabolic pathways and is supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "0f68001a-7b65-4382-8330-d1e677954479",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C33",
+      "claim": "The increased demand for NADH and FADH2 due to FCCP results in a reduced pool of FAD+ and an increase of NADH, effectively reducing ORR.",
+      "claim_type": "EXPLICIT",
+      "source": "This demand results in a reduced pool of FAD+ and an increase of NADH, effectively reducing ORR (Ludtmann et al., 2014; Akie and Cooper, 2015; Viola et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from metabolic pathways and is supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "b5566b0a-630f-4c29-a0ee-b565e3b62d6d",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C34",
+      "claim": "The higher heterogeneity in FCCP response is due to the effect of FCCP on the mitochondrial membrane and the higher dependence of FAS/FAO on IL-4-M2 macrophages basally.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher heterogeneity in FCCP response is due to the effect of FCCP on the mitochondrial membrane and the higher dependence of FAS/FAO on IL-4-M2 macrophages basally (O'Neill et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed data and is supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "f6c78a38-dbc9-4110-8f30-7d3b90dc2975",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C35",
+      "claim": "IFN\u03b3-M1 macrophages' lower dependence on ETC, TCA, FAO, and lower mitochondria membrane potential while producing most of ATP by glycolysis makes the impact of FCCP on the mitochondria and fluorescence lifetimes less pronounced.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding IFN\u03b3-M1 macrophages, their lower dependence on ETC, TCA, FAO, and lower mitochondria membrane potential while producing most of ATP by glycolysis makes the impact of FCCP on the mitochondria and fluorescence lifetimes less pronounced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the metabolic characteristics of IFN\u03b3-M1 macrophages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "9fdc0cbb-2f14-4ecf-9d62-5b3d05df4441",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C36",
+      "claim": "2P-FLIM imaging has several advantages when compared with traditional metabolic assays and methods to classify and validate macrophage metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "2P-FLIM imaging has several advantages when compared with traditional metabolic assays and methods to classify and validate macrophage metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the advantages described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "12dd12ed-f02a-4910-9af1-5f2a3733c77a",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C37",
+      "claim": "2P-FLIM enables spatial and temporal resolution in a non-invasive manner, allowing single-cell and cell-to-cell evaluations into cellular heterogeneity in a basal and interrogated mode.",
+      "claim_type": "EXPLICIT",
+      "source": "2P-FLIM enables spatial and temporal resolution in a non-invasive manner, allowing single-cell and cell-to-cell evaluations into cellular heterogeneity in a basal and interrogated mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental approach and results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "843a82d2-f0e8-4812-a142-9127424e656c",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C38",
+      "claim": "2P-FLIM requires no fixation nor staining of cells and can be performed in real time with only a small number of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "2P-FLIM requires no fixation nor staining of cells and can be performed in real time with only a small number of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the advantages of 2P-FLIM methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "91d4f4c1-a043-476e-9c20-b5cc83c2b279",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C39",
+      "claim": "This study demonstrates the feasibility of using 2P-FLIM as a tool to distinguish and classify opposing human macrophage polarisation states based on cellular metabolism and fluorescence lifetimes variables.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we demonstrated the feasibility of using 2P-FLIM as a tool to distinguish and classify opposing human macrophage polarisation states based on cellular metabolism and fluorescence lifetimes variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by all the experimental data and analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "afdd3047-17e4-4ca6-8ef2-463f7eee7288",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C40",
+      "claim": "Visualisation of the data showed a clear clustering pattern of IFN\u03b3-M1 and IL-4-M2 macrophages in response to FCCP during real-time imaging in a full FoV.",
+      "claim_type": "EXPLICIT",
+      "source": "Visualisation of the data showed a clear clustering pattern of IFN\u03b3-M1 and IL-4-M2 macrophages in response to FCCP during real-time imaging in a full FoV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the UMAP visualization shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "83bb0215-8374-4b4e-8073-3d1edeadb28d",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C41",
+      "claim": "The excellent performance of machine learning models, applied on the data extracted from the non-invasive technique, underlines further the efficiency of this workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "The excellent performance of machine learning models, applied on the data extracted from the non-invasive technique, underlines further the efficiency of this workflow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the high ROC-AUC values and low OOB error rates achieved by the random forests models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "71617250-d1e5-485f-9b47-b190655fda17",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C42",
+      "claim": "This workflow can be easily adapted to non-invasively characterising macrophage polarisation in in vivo models and in vitro multicellular organoid models.",
+      "claim_type": "EXPLICIT",
+      "source": "This workflow can be easily adapted to non-invasively characterising macrophage polarisation in in vivo models and in vitro multicellular organoid models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential future applications of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "4ab773ff-bbab-4e6d-8387-6e4e944eb5c7",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C43",
+      "claim": "These organoid models can be developed to study foreign body interactions, biomaterial assessment, pharmaceutical research and screening, and clinical applications such as disease diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "These organoid models can be developed to study foreign body interactions, biomaterial assessment, pharmaceutical research and screening, and clinical applications such as disease diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential future applications of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "61044b11-d0e2-4e82-a634-e9a94ebad19c",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C44",
+      "claim": "The purity of CD14+CD11b+ macrophages was routinely >95%.",
+      "claim_type": "EXPLICIT",
+      "source": "The purity of CD14+CD11b+ macrophages was assessed by flow cytometry and was routinely >95%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry measurements performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "3dc47008-a6cc-46df-8d6b-a8e203cd87b0",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C45",
+      "claim": "All of the fluorescence lifetime fitting values with \u03c72 < 1.3 were considered as 'good' fits.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, all of the fluorescence lifetime fitting values with \u03c72 < 1.3 were considered as 'good' fits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological criterion established for data quality control in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "d3a16291-e2a0-43f0-b340-a9ba03a614a6",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C46",
+      "claim": "Two-photon excitation of NAD(P)H and FAD+ fluorescence was performed at the excitation wavelength of 760 and 800 nm, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon excitation of NAD(P)H and FAD+ fluorescence was performed at the excitation wavelength of 760 and 800 nm, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "e924b649-d6ed-4fc5-a76b-f6dd4aba9512",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C47",
+      "claim": "A 458/64 nm and 520/35 nm bandpass filter were used to isolate the NAD(P)H and FAD+ fluorescence emissions based on their emission spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "A 458/64 nm and 520/35 nm bandpass filter were used to isolate the NAD(P)H and FAD+ fluorescence emissions based on their emission spectra (Huang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental setup, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "514466a6-3e96-44dd-a6eb-6ac7a62bee1e",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C48",
+      "claim": "512 \u00d7 512 pixel images were acquired with a pixel dwell time of 3.81 \u03bcs and 30 s collection time.",
+      "claim_type": "EXPLICIT",
+      "source": "512 \u00d7 512 pixel images were acquired with a pixel dwell time of 3.81 \u03bcs and 30 s collection time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "7d792911-37b0-4c67-b7a2-b165c657c04d",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C49",
+      "claim": "Fluorescence lifetime images with their associated decay curves for NAD(P)H were obtained with a minimum of 1 \u00d7 106 photons peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence lifetime images with their associated decay curves for NAD(P)H were obtained with a minimum of 1 \u00d7 106 photons peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the data acquisition criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "76ca3cd2-d24f-48c3-9640-6c5aec403420",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C50",
+      "claim": "The \u03b11 variable was removed from the random forests model due to its deterministic relationship with the \u03b12 variable.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b11 variable was removed from the random forests model due to its deterministic relationship with the \u03b12 variable (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological decision supported by the correlation analysis shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "00152a6f-ab00-4de3-82dc-9e0bd4849d56",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C51",
+      "claim": "Support vector machine (SVM) and logistic regression models yielded similar performance with 87.5% accuracy when dividing the full FoV datapoints into 80% training and 20% testing dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Support vector machine (SVM) and logistic regression models were also implemented for comparing with the random forests model and yielded similar performance with 87.5% accuracy when dividing the full FoV datapoints into 80% training and 20% testing dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative machine learning analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "c49014c5-7c74-4fa8-bfa2-9cbbecc9610a",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C52",
+      "claim": "Neither the SVM model nor the logistic model is able to provide information on the relative importance of the predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither the SVM model nor the logistic model is able to provide information on the relative importance of the predictors, and they both require an independent dataset for model validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the limitations of SVM and logistic regression models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "0ad1cb14-6c78-4df7-b685-c3c6c0746333",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C53",
+      "claim": "Random forests is especially suitable for small datasets, where we do not have additional data for validating the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes random forests especially suitable for small datasets, where we do not have additional data for validating the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the advantages of random forests for small datasets.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "969d7d5f-54f6-4c05-a6e2-eeb01dc657ad",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C54",
+      "claim": "An ROC-AUC value less than 0.5 suggests no discrimination, 0.7\u20130.8 is considered acceptable, 0.8\u20130.9 is considered excellent, and more than 0.9 is considered outstanding.",
+      "claim_type": "EXPLICIT",
+      "source": "An ROC-AUC value less than 0.5 suggests no discrimination, 0.7\u20130.8 is considered acceptable, 0.8\u20130.9 is considered excellent, and more than 0.9 is considered outstanding (Mandrekar, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ROC-AUC interpretation, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "c952e111-89e0-4fdf-b58b-1c8ba2b86eb8",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C55",
+      "claim": "This study establishes 2P-FLIM as a method to discriminate IFN\u03b3-M1 and IL-4-M2 macrophages, which is most pronounced by macrophages' differential responses when treated with carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP).",
+      "claim_type": "EXPLICIT",
+      "source": "This study establishes 2P-FLIM as a method to discriminate IFN\u03b3-M1 and IL-4-M2 macrophages, which is most pronounced by macrophages' differential responses when treated with carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the experimental data showing best separation during FCCP treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "a8321344-812d-4c0a-add3-4a1831bb2d26",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C56",
+      "claim": "This work reports, for the first time, the classification of human macrophages by random forests using data obtained from real-time metabolic perturbations triggered during 2P-FLIM.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work reports, for the first time, the classification of human macrophages by random forests using data obtained from real-time metabolic perturbations triggered during 2P-FLIM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novelty claim based on the unique combination of methods used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "87b3e5cd-e919-4de1-9239-5107d59765a4",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C57",
+      "claim": "There is an increasing trend of \u03c4avg in response to the application metabolic enzymatic inhibitors, with the exception of 2-DG, in which a decrease of \u03c4avg was observed for both macrophage phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We derived the average fluorescence lifetime (\u03c4avg) and ORR of IFN\u03b3-M1 and IL-4-M2 macrophages from the full FoV of 2P-FLIM data and observed an increasing trend of \u03c4avg in response to the application metabolic enzymatic inhibitors. With the exception of 2-DG, in which a decrease of \u03c4avg was observed for both macrophage phenotypes (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the time-course data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "5828b3e3-bb12-49ac-963e-ff889cf575fb",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C58",
+      "claim": "There is a slight decreasing trend of ORR, followed by a raise in ORR with the 2-DG treatment for IFN\u03b3-M1 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding ORR, there is a slight decreasing trend of ORR, followed by a raise in ORR with the 2-DG treatment for IFN\u03b3-M1 macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the time-course data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "50700a68-b1be-4a7c-b99f-22fd0e33974e",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C59",
+      "claim": "For IL-4-M2 macrophages, there is a decrease in ORR with the oligomycin treatment, followed by stabilisation with FCCP and Rot + AA, and finally an increase elicited by 2-DG.",
+      "claim_type": "EXPLICIT",
+      "source": "For IL-4-M2 macrophages, there is a decrease in ORR with the oligomycin treatment, followed by stabilisation with FCCP and Rot + AA, and finally an increase elicited by 2-DG (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the time-course data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "e1c79945-3d7c-40d4-8fb3-d3d6c3b34b57",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C60",
+      "claim": "A reduced \u03c4avg, observed with IFN\u03b3-M1 macrophages, reflects a higher relative amount of free NAD(P)H (which has characteristic short fluorescence lifetimes), indicative of glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduced \u03c4avg, observed with IFN\u03b3-M1 macrophages, reflects a higher relative amount of free NAD(P)H (which has characteristic short fluorescence lifetimes), indicative of glycolysis (Walsh et al., 2013; Perottoni et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from FLIM data and is supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "ce8219a7-a2e6-4b2a-ade9-bbfcc631386b",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C61",
+      "claim": "IL-4-M2 macrophages had higher \u03c4avg-reflective of OxPhos due to increased proportion of longer lifetime, protein-bound NAD(P)H.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, IL-4-M2 macrophages had higher \u03c4avg-reflective of OxPhos due to increased proportion of longer lifetime, protein-bound NAD(P)H (Okkelman et al., 2019, Walsh et al., 2020; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from FLIM data and is supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "fcdf4587-e235-4815-994c-431b90a72770",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C62",
+      "claim": "A lower ORR reflects a higher fraction of NAD(P)H and a lower FAD+ associated with upregulation of OxPhos.",
+      "claim_type": "EXPLICIT",
+      "source": "Varying interpretations of ORR are reported in previous studies (Varone et al., 2014; Walsh et al., 2020), and for this study, we adopt a lower ORR reflecting a higher fraction of NAD(P)H and a lower FAD+ associated with upregulation of OxPhos (Equation 3; Neto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation adopted for this study, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "52db1b95-2d4c-4a9f-ad6e-f76df878c6d7",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C63",
+      "claim": "IL-4-M2 macrophages exhibited a lower ORR across the treatments in contrast with IFN\u03b3-M1 macrophages, validating a higher dependency of IL-4-M2 macrophages on OxPhos when compared with IFN\u03b3-M1 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-4-M2 macrophages exhibited a lower ORR across the treatments in contrast with IFN\u03b3-M1 macrophages, validating a higher dependency of IL-4-M2 macrophages on OxPhos when compared with IFN\u03b3-M1 macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the ORR data shown in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "acb79381-b45a-4439-a4f4-d879875a9e48",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C64",
+      "claim": "There is a noticeable increase in \u03c41, \u03c42, and \u03c4avg and an appreciable decrease in ORR in IL-4-M2 macrophages when compared with IFN\u03b3-M1-treated macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "With IL-4-M2 macrophages, there is a noticeable increase in \u03c41, \u03c42, and \u03c4avg and an appreciable decrease in ORR when compared with IFN\u03b3-M1-treated macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the heatmap data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "ec359a96-c910-4808-98e2-bd4a062d7edb",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C65",
+      "claim": "The trending increase of NAD(P)H fluorescence lifetimes is further exacerbated after treatment with FCCP in IL-4-M2 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The trending increase of NAD(P)H fluorescence lifetimes is further exacerbated after treatment with FCCP in IL-4-M2 macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the heatmap data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "19f9ff6a-c932-4374-8738-64355bb3b385",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C66",
+      "claim": "During stem cell osteogenic differentiation, Guo et al. tested oligomycin A (mitochondrial respiration inhibitor) as an experimental treatment in parallel to standard osteogenic media and observed a decrease in NAD(P)H average lifetime reflective of reduced oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, during stem cell osteogenic differentiation, Guo et al. tested oligomycin A (mitochondrial respiration inhibitor) as an experimental treatment in parallel to standard osteogenic media. A decrease in NAD(P)H average lifetime was calculated reflective of reduced oxidative phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "ea59f118-6807-4fd2-8efc-ebac82d24deb",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C67",
+      "claim": "Oligomycin A treatment promoted an increase in lactate production, lower oxygen consumption, and lower osteogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, oligomycin A treatment promoted an increase in lactate production, lower oxygen consumption, and lower osteogenic differentiation (Guo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "c454c123-6c58-4f3d-901d-ad3c6ed480d9",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C68",
+      "claim": "The separation between IFN\u03b3-M1 and IL-4-M2 macrophages is observed when applying PCA analysis on FCCP treated human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This segregation is also observed when applying PCA analysis on FCCP treated human macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the PCA visualization shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "c438bbb1-b656-42c3-b690-0c7670b4aa12",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C69",
+      "claim": "The separation between IFN\u03b3-M1 and IL-4-M2 macrophages is not observed for t-SNE analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this separation is not observed for t-SNE analysis (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the t-SNE visualization shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "21dbfbce-e058-4270-b0c0-7e9405dfce02",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C70",
+      "claim": "Phasor analysis demonstrates a higher segregation of IFN\u03b3-M1 and IL-4-M2 macrophages when using FCCP treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our phasor analysis (Figure 3\u2014figure supplement 3) also demonstrates a higher segregation of IFN\u03b3-M1 and IL-4-M2 macrophages when using FFCP treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phasor analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "a0efabf1-cb59-4bbf-8bb5-d4af2880eb0a",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C71",
+      "claim": "The limitation in pre-defining values for the fluorescence lifetime variables such as \u03c41 and \u03c42 can mask important predictors for the classification problem.",
+      "claim_type": "EXPLICIT",
+      "source": "Albeit, the limitation in pre-defining values for the fluorescence lifetime variables such as \u03c41 and \u03c42 can mask important predictors for the classification problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the limitations of phasor analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "dcf417be-bb38-4017-9817-782055503af9",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C72",
+      "claim": "Higher NAD(P)H fluorescence lifetimes such as \u03c41, \u03c42, and \u03c4avg are attributable to two major factors: increases in NADPH concentrations and microenvironmental shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher NAD(P)H fluorescence lifetimes such as \u03c41, \u03c42, and \u03c4avg are attributable to two major factors: increases in NADPH concentrations and microenvironmental shifts (Blacker et al., 2014; Schaefer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "54c10fa1-cb23-42e3-b9ad-0d88a7477679",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C73",
+      "claim": "There is some cell-to-cell variability which could stem from the uptake capacity of FCCP and other treatments in our experiments as well as the underlying health of the donors which is not available.",
+      "claim_type": "EXPLICIT",
+      "source": "There is some cell-to-cell variability which could stem from the uptake capacity of FCCP and other treatments in our experiments as well as the underlying health of the donors which is not available (Smiley et al., 1991; Stiebing et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential sources of variability, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "bb075843-c2e2-4c50-847a-7b3715b19209",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C74",
+      "claim": "Future efforts to improve single-cell classification include increasing the overall number of cells analysed to ensure a stronger classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Future efforts to improve single-cell classification include increasing the overall number of cells analysed to ensure a stronger classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about future improvements to the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "b09446de-f523-4e45-b8a8-e21e965ba025",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "claim_id": "C75",
+      "claim": "By observing phenotypic IFN\u03b3-M1 and IL-4-M2 macrophage cell surface markers during the imaging process by immunofluorescence or other modes of tagging, it would be possible to improve the classification efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, by observing phenotypic IFN\u03b3-M1 and IL-4-M2 macrophage cell surface markers (examples include CD80, CD86, CD163, and CD206, respectively) during the imaging process by immunofluorescence or other modes of tagging, it would be possible to improve the classification efficiency (Murray et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential improvements to the methodology, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2f2235da-15e6-41e9-96a7-8a420de83f0c",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IFN\u03b3-M1 and IL-4-M2 macrophages exhibit distinct cytokine and gene expression profiles. IFN\u03b3-M1 macrophages show slightly higher TNF\u03b1 production and significantly increased CXCL9 and CXCL10 expression, while IL-4-M2 macrophages demonstrate statistically higher IL-10 production and increased MRC1 and CCL13 expression compared to untreated and IFN\u03b3-M1 macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are supported by experimental data from ELISA and RT-PCR measurements (Figure 2A-F) with appropriate statistical testing. The cytokine and gene expression patterns are consistent with established M1/M2 polarization phenotypes and validate the polarization protocol used in the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "d51b8ac4-8df6-46e2-922d-7bf0b2b83928",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IFN\u03b3-M1 and IL-4-M2 macrophages display distinct metabolic profiles measured by extracellular flux analysis. IFN\u03b3-M1 macrophages exhibit higher ECAR and lower OCR with statistically significant increases in basal and maximal glycolysis. IL-4-M2 macrophages show lower ECAR and higher OCR with statistically significant increases in maximal respiration, while all macrophage types have similar basal respiration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are supported by Seahorse extracellular flux data (Figure 2G-L) with statistical significance demonstrated. The metabolic profiles align with established knowledge that M1 macrophages rely on glycolysis while M2 macrophages depend on oxidative phosphorylation. The use of repeated-measures ANOVA appropriately accounts for donor variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "d263a5ae-27cd-41d4-83ae-829ec00a467e",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "2P-FLIM measurements reveal distinct fluorescence lifetime parameters between IFN\u03b3-M1 and IL-4-M2 macrophages in response to metabolic inhibitors. IFN\u03b3-M1 macrophages show lower \u03c41, \u03c42, \u03c4avg, and ORR values compared to IL-4-M2 macrophages. The average fluorescence lifetime (\u03c4avg) increases with metabolic inhibitors except 2-DG, and ORR patterns differ between the two phenotypes, with IL-4-M2 showing lower ORR consistent with higher OxPhos dependency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C57-C65 are supported by 2P-FLIM data (Figures 3B-D) showing differential responses to metabolic perturbations. The interpretations linking reduced \u03c4avg to free NAD(P)H/glycolysis and higher \u03c4avg to protein-bound NAD(P)H/OxPhos are supported by citations. However, the ORR interpretation (C62) acknowledges varying definitions in literature, which introduces some uncertainty in the specific metabolic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "2e0b3ab1-43eb-4340-a72b-29785ce235da",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FCCP treatment provides the best separation between IFN\u03b3-M1 and IL-4-M2 macrophages across multiple visualization methods. UMAP and PCA analysis show clear clustering patterns during FCCP treatment, while t-SNE analysis does not show separation. Phasor analysis also demonstrates higher segregation with FCCP treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C40, C68-C70 are supported by visualization data (Figures 3E-F, Figure 3\u2014figure supplement 3-4). The consistent finding across UMAP, PCA, and phasor analysis that FCCP treatment provides optimal separation strengthens the conclusion. The failure of t-SNE to show separation is appropriately reported and does not undermine the overall finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "cca80642-acde-4399-90b4-7e80cbbaab4f",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Random forests classification achieves outstanding performance in distinguishing IFN\u03b3-M1 from IL-4-M2 macrophages using full field-of-view 2P-FLIM data during FCCP treatment. The model achieved ROC-AUC of 0.944 with 16.67% OOB error. Feature importance analysis identified \u03c41, \u03c42, and \u03c4avg as the most important variables, and using only these three predictors still achieved high accuracy (ROC-AUC = 0.934).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24, C41 are supported by machine learning analysis (Figure 3G-H, Table 1). The ROC-AUC value >0.9 is considered outstanding by established criteria (C54). The feature importance analysis provides biological insight into which FLIM parameters are most discriminative. The removal of \u03b11 due to collinearity with \u03b12 (C50) is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "2e68eb56-96ca-48a8-8526-ebf63fc5311d",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Single-cell classification performance is affected by donor variability during FCCP treatment. Donors D and E achieved the highest ROC-AUC values and lowest OOB errors. At the single-cell level, \u03c41, \u03c42, \u03c4avg, and \u03b12 are the most important variables for classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are supported by donor-specific analysis (Figure 4C, Table 2). The variation in performance across donors (ROC-AUC ranging from 0.650 to 0.968) is appropriately reported and discussed. The identification of important features at single-cell level is consistent with full FoV analysis, with the addition of \u03b12 as an important variable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "69611a8b-50b4-4a92-a440-9e4238c728bd",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FCCP treatment differentially affects IFN\u03b3-M1 and IL-4-M2 macrophages through its mechanism as a mitochondrial uncoupler. FCCP causes proton flux leading to reduced mitochondrial pH and increased NAD(P)H fluorescence lifetime. In IL-4-M2 macrophages, FCCP increases ETC activity and demand for NADH/FADH2, resulting in reduced FAD+ pool and decreased ORR. The impact is less pronounced in IFN\u03b3-M1 macrophages due to their lower dependence on mitochondrial metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C35 provide a mechanistic explanation for the observed FLIM differences, supported by citations and consistent with the experimental data. The reasoning linking FCCP's mechanism to the observed changes in fluorescence lifetimes and ORR is logical and well-supported by literature. However, these are largely inferential claims based on known mechanisms rather than direct measurements in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "ea2f065f-0678-4349-983a-2b0dd480753b",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "This study demonstrates the feasibility of using 2P-FLIM combined with machine learning to distinguish and classify opposing human macrophage polarization states based on cellular metabolism and fluorescence lifetime variables. The discrimination is most pronounced during FCCP treatment, and this represents the first application of random forests classification to human macrophages using real-time metabolic perturbations during 2P-FLIM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C55-C56 are overarching conclusions supported by the collective experimental data and analyses. The novelty claim (C56) regarding first-time application of this specific combination of methods appears reasonable given the literature context provided. The feasibility is demonstrated through the high classification accuracy achieved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "7e984c28-d6dc-4bfb-afb0-8c791bd1755a",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "2P-FLIM offers several advantages over traditional metabolic assays including spatial and temporal resolution, non-invasive imaging without fixation or staining, real-time analysis with small cell numbers, and single-cell heterogeneity assessment. The workflow can potentially be adapted to in vivo models and organoid systems for various applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C38 describe established advantages of 2P-FLIM that are demonstrated in this study. However, claims C42-C43 regarding future applications to in vivo models, organoids, and clinical applications are speculative and not validated in this work. While the methodology shows promise, these extensions would require additional validation studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "b2173259-8993-4e06-b55f-0117cc58b69b",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study employed rigorous methodological approaches including high-purity macrophage isolation (>95% CD14+CD11b+), appropriate 2P-FLIM imaging parameters, quality control criteria (\u03c7\u00b2 < 1.3 for good fits), and justified machine learning model selection. Random forests was chosen over SVM and logistic regression due to its suitability for small datasets and ability to provide feature importance without requiring independent validation data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C54 describe methodological details that are appropriately documented. The quality control criteria, imaging parameters, and machine learning model selection are well-justified. The comparison of different ML approaches (C51) and rationale for choosing random forests (C52-C53) demonstrate methodological rigor. The ROC-AUC interpretation criteria (C54) are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "dfbc6099-fdbc-4891-a93b-055f22da8529",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cell-to-cell variability in single-cell classification may stem from differential uptake capacity of FCCP and other treatments, as well as unknown donor health status. Future improvements could include analyzing more cells and incorporating phenotypic surface marker observation during imaging to improve classification efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C75 acknowledge limitations and propose future improvements. The speculation about sources of variability (C73) is reasonable but not directly tested. The proposed improvements (C74-C75) are logical suggestions but remain speculative without implementation and validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "4e105cda-1f7b-41ac-a57c-c7ea64a81edc",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "2P-FLIM is an established technique capable of imaging various cell types and biological samples with high spatial and temporal resolution, allowing quantification of NAD(P)H and FAD+ to assess cellular metabolism. NAD(P)H exhibits distinct fluorescence lifetimes when enzyme-bound (long) versus free (short), and NADH and NADPH have identical fluorescence properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 describe established knowledge about 2P-FLIM methodology and NAD(P)H fluorescence properties, supported by appropriate citations. These provide necessary background context for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "91a770fb-c492-4d1e-a34c-7466fddc478a",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "M1 and M2 macrophages represent opposing polarization states with distinct characteristics. M1 macrophages are characterized by pro-inflammatory cytokine secretion and enhanced glycolysis, while M2 macrophages exhibit downregulated pro-inflammatory cytokines, altered surface markers, and dependence on oxidative phosphorylation with intact TCA cycle and enhanced fatty acid metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 describe established knowledge about macrophage polarization phenotypes, supported by appropriate citations. These provide necessary biological context but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    },
+    {
+      "id": "740f66a7-949f-4813-bf0c-97e58add17e4",
+      "content_id": "3e0628c0-27c3-4c6c-a34b-4b01887d32bf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior studies have demonstrated that metabolic inhibitors like oligomycin A affect NAD(P)H fluorescence lifetimes during cellular differentiation, and that NAD(P)H fluorescence lifetimes are influenced by NADPH concentrations and microenvironmental shifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67, C72 cite relevant prior work that supports the interpretation of FLIM data in this study. These provide important context from the literature but do not represent findings from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:33:05.879070Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4aeea2c3-41c0-46f8-b871-488c0db64b76",
+      "result_id": "2f2235da-15e6-41e9-96a7-8a420de83f0c"
+    },
+    {
+      "claim_id": "71d7bb06-0297-4399-98f0-6db39a4505c3",
+      "result_id": "2f2235da-15e6-41e9-96a7-8a420de83f0c"
+    },
+    {
+      "claim_id": "468a993e-65eb-4290-9d2d-470469cfdd58",
+      "result_id": "2f2235da-15e6-41e9-96a7-8a420de83f0c"
+    },
+    {
+      "claim_id": "69d11a6c-fd03-4a24-95de-2fc4933a6700",
+      "result_id": "2f2235da-15e6-41e9-96a7-8a420de83f0c"
+    },
+    {
+      "claim_id": "ec5750cb-2ad8-4488-89fc-6fec0d7a4711",
+      "result_id": "d51b8ac4-8df6-46e2-922d-7bf0b2b83928"
+    },
+    {
+      "claim_id": "348ab02b-6bef-4bd7-8f3e-83aeba7240e1",
+      "result_id": "d51b8ac4-8df6-46e2-922d-7bf0b2b83928"
+    },
+    {
+      "claim_id": "39109378-96d1-461e-8a24-f751bd269c9c",
+      "result_id": "d51b8ac4-8df6-46e2-922d-7bf0b2b83928"
+    },
+    {
+      "claim_id": "d2e47401-4060-4d27-8d85-801b6b9889d3",
+      "result_id": "d51b8ac4-8df6-46e2-922d-7bf0b2b83928"
+    },
+    {
+      "claim_id": "0b71f0cd-0f81-4ba2-989e-1055ffa72bb5",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "87b3e5cd-e919-4de1-9239-5107d59765a4",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "5828b3e3-bb12-49ac-963e-ff889cf575fb",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "50700a68-b1be-4a7c-b99f-22fd0e33974e",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "e1c79945-3d7c-40d4-8fb3-d3d6c3b34b57",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "ce8219a7-a2e6-4b2a-ade9-bbfcc631386b",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "fcdf4587-e235-4815-994c-431b90a72770",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "52db1b95-2d4c-4a9f-ad6e-f76df878c6d7",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "acb79381-b45a-4439-a4f4-d879875a9e48",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "ec359a96-c910-4808-98e2-bd4a062d7edb",
+      "result_id": "d263a5ae-27cd-41d4-83ae-829ec00a467e"
+    },
+    {
+      "claim_id": "a3785007-92b8-48c0-bd42-109ef1cf9667",
+      "result_id": "2e0b3ab1-43eb-4340-a72b-29785ce235da"
+    },
+    {
+      "claim_id": "afdd3047-17e4-4ca6-8ef2-463f7eee7288",
+      "result_id": "2e0b3ab1-43eb-4340-a72b-29785ce235da"
+    },
+    {
+      "claim_id": "c454c123-6c58-4f3d-901d-ad3c6ed480d9",
+      "result_id": "2e0b3ab1-43eb-4340-a72b-29785ce235da"
+    },
+    {
+      "claim_id": "c438bbb1-b656-42c3-b690-0c7670b4aa12",
+      "result_id": "2e0b3ab1-43eb-4340-a72b-29785ce235da"
+    },
+    {
+      "claim_id": "21dbfbce-e058-4270-b0c0-7e9405dfce02",
+      "result_id": "2e0b3ab1-43eb-4340-a72b-29785ce235da"
+    },
+    {
+      "claim_id": "3f4bd432-8104-4cc2-b4f4-11e6121f77d7",
+      "result_id": "cca80642-acde-4399-90b4-7e80cbbaab4f"
+    },
+    {
+      "claim_id": "ce13ed6d-12cf-4429-af4b-1b160c80de27",
+      "result_id": "cca80642-acde-4399-90b4-7e80cbbaab4f"
+    },
+    {
+      "claim_id": "96cf7cfb-68de-40ec-8012-a2de5698eb94",
+      "result_id": "cca80642-acde-4399-90b4-7e80cbbaab4f"
+    },
+    {
+      "claim_id": "8e5bb082-7189-4ac1-a929-7e494d4e8f95",
+      "result_id": "cca80642-acde-4399-90b4-7e80cbbaab4f"
+    },
+    {
+      "claim_id": "83bb0215-8374-4b4e-8073-3d1edeadb28d",
+      "result_id": "cca80642-acde-4399-90b4-7e80cbbaab4f"
+    },
+    {
+      "claim_id": "df5cd675-d93f-442d-b1df-50a509524340",
+      "result_id": "2e68eb56-96ca-48a8-8526-ebf63fc5311d"
+    },
+    {
+      "claim_id": "5519f2dc-de71-43d0-82b3-b0e62b8d2ae2",
+      "result_id": "2e68eb56-96ca-48a8-8526-ebf63fc5311d"
+    },
+    {
+      "claim_id": "68fafd0d-a15b-4fe3-95a1-15e53e156669",
+      "result_id": "2e68eb56-96ca-48a8-8526-ebf63fc5311d"
+    },
+    {
+      "claim_id": "1020cbb0-8918-4467-b097-8db367a04d71",
+      "result_id": "69611a8b-50b4-4a92-a440-9e4238c728bd"
+    },
+    {
+      "claim_id": "87c2ff88-606c-4145-b32b-8ac1a2f3ba5a",
+      "result_id": "69611a8b-50b4-4a92-a440-9e4238c728bd"
+    },
+    {
+      "claim_id": "58d2a55f-f8c4-40c2-a77e-4c8d30188757",
+      "result_id": "69611a8b-50b4-4a92-a440-9e4238c728bd"
+    },
+    {
+      "claim_id": "15664fbc-0ef3-4184-8192-211bb76fa8f5",
+      "result_id": "69611a8b-50b4-4a92-a440-9e4238c728bd"
+    },
+    {
+      "claim_id": "2f679702-6860-4a3b-b9bb-9011e31c3f21",
+      "result_id": "69611a8b-50b4-4a92-a440-9e4238c728bd"
+    },
+    {
+      "claim_id": "0f68001a-7b65-4382-8330-d1e677954479",
+      "result_id": "69611a8b-50b4-4a92-a440-9e4238c728bd"
+    },
+    {
+      "claim_id": "b5566b0a-630f-4c29-a0ee-b565e3b62d6d",
+      "result_id": "69611a8b-50b4-4a92-a440-9e4238c728bd"
+    },
+    {
+      "claim_id": "f6c78a38-dbc9-4110-8f30-7d3b90dc2975",
+      "result_id": "69611a8b-50b4-4a92-a440-9e4238c728bd"
+    },
+    {
+      "claim_id": "91d4f4c1-a043-476e-9c20-b5cc83c2b279",
+      "result_id": "ea2f065f-0678-4349-983a-2b0dd480753b"
+    },
+    {
+      "claim_id": "c952e111-89e0-4fdf-b58b-1c8ba2b86eb8",
+      "result_id": "ea2f065f-0678-4349-983a-2b0dd480753b"
+    },
+    {
+      "claim_id": "a8321344-812d-4c0a-add3-4a1831bb2d26",
+      "result_id": "ea2f065f-0678-4349-983a-2b0dd480753b"
+    },
+    {
+      "claim_id": "9fdc0cbb-2f14-4ecf-9d62-5b3d05df4441",
+      "result_id": "7e984c28-d6dc-4bfb-afb0-8c791bd1755a"
+    },
+    {
+      "claim_id": "12dd12ed-f02a-4910-9af1-5f2a3733c77a",
+      "result_id": "7e984c28-d6dc-4bfb-afb0-8c791bd1755a"
+    },
+    {
+      "claim_id": "843a82d2-f0e8-4812-a142-9127424e656c",
+      "result_id": "7e984c28-d6dc-4bfb-afb0-8c791bd1755a"
+    },
+    {
+      "claim_id": "71617250-d1e5-485f-9b47-b190655fda17",
+      "result_id": "7e984c28-d6dc-4bfb-afb0-8c791bd1755a"
+    },
+    {
+      "claim_id": "4ab773ff-bbab-4e6d-8387-6e4e944eb5c7",
+      "result_id": "7e984c28-d6dc-4bfb-afb0-8c791bd1755a"
+    },
+    {
+      "claim_id": "61044b11-d0e2-4e82-a634-e9a94ebad19c",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "3dc47008-a6cc-46df-8d6b-a8e203cd87b0",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "d3a16291-e2a0-43f0-b340-a9ba03a614a6",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "e924b649-d6ed-4fc5-a76b-f6dd4aba9512",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "514466a6-3e96-44dd-a6eb-6ac7a62bee1e",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "7d792911-37b0-4c67-b7a2-b165c657c04d",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "76ca3cd2-d24f-48c3-9640-6c5aec403420",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "00152a6f-ab00-4de3-82dc-9e0bd4849d56",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "c49014c5-7c74-4fa8-bfa2-9cbbecc9610a",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "0ad1cb14-6c78-4df7-b685-c3c6c0746333",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "969d7d5f-54f6-4c05-a6e2-eeb01dc657ad",
+      "result_id": "b2173259-8993-4e06-b55f-0117cc58b69b"
+    },
+    {
+      "claim_id": "54c10fa1-cb23-42e3-b9ad-0d88a7477679",
+      "result_id": "dfbc6099-fdbc-4891-a93b-055f22da8529"
+    },
+    {
+      "claim_id": "bb075843-c2e2-4c50-847a-7b3715b19209",
+      "result_id": "dfbc6099-fdbc-4891-a93b-055f22da8529"
+    },
+    {
+      "claim_id": "b09446de-f523-4e45-b8a8-e21e965ba025",
+      "result_id": "dfbc6099-fdbc-4891-a93b-055f22da8529"
+    },
+    {
+      "claim_id": "c61fa230-d284-42c3-b5a8-a3c5bcab3180",
+      "result_id": "4e105cda-1f7b-41ac-a57c-c7ea64a81edc"
+    },
+    {
+      "claim_id": "dd1dcb0b-93de-44fb-a935-d3ec69e4f2e3",
+      "result_id": "4e105cda-1f7b-41ac-a57c-c7ea64a81edc"
+    },
+    {
+      "claim_id": "d14e1a96-ab88-4e6a-9e7a-1bc6fbc003cf",
+      "result_id": "4e105cda-1f7b-41ac-a57c-c7ea64a81edc"
+    },
+    {
+      "claim_id": "2d5daa08-13de-4034-92c4-3a260f98dee7",
+      "result_id": "4e105cda-1f7b-41ac-a57c-c7ea64a81edc"
+    },
+    {
+      "claim_id": "b76d9d81-eea1-4194-a42a-d1e358b8cea8",
+      "result_id": "91a770fb-c492-4d1e-a34c-7466fddc478a"
+    },
+    {
+      "claim_id": "1e751505-2216-4982-a644-25ded327208c",
+      "result_id": "91a770fb-c492-4d1e-a34c-7466fddc478a"
+    },
+    {
+      "claim_id": "9eece3ba-5317-45b5-81be-b95bf027ab6b",
+      "result_id": "91a770fb-c492-4d1e-a34c-7466fddc478a"
+    },
+    {
+      "claim_id": "7de80f93-c681-4da0-a00b-1a91fdf621d0",
+      "result_id": "91a770fb-c492-4d1e-a34c-7466fddc478a"
+    },
+    {
+      "claim_id": "bca171b1-b2e9-484e-8fc2-e713cdd39f4c",
+      "result_id": "91a770fb-c492-4d1e-a34c-7466fddc478a"
+    },
+    {
+      "claim_id": "b4428abf-429d-40fb-a7e0-cf909372cc60",
+      "result_id": "91a770fb-c492-4d1e-a34c-7466fddc478a"
+    },
+    {
+      "claim_id": "19f9ff6a-c932-4374-8738-64355bb3b385",
+      "result_id": "740f66a7-949f-4813-bf0c-97e58add17e4"
+    },
+    {
+      "claim_id": "ea59f118-6807-4fd2-8efc-ebac82d24deb",
+      "result_id": "740f66a7-949f-4813-bf0c-97e58add17e4"
+    },
+    {
+      "claim_id": "dcf417be-bb38-4017-9817-782055503af9",
+      "result_id": "740f66a7-949f-4813-bf0c-97e58add17e4"
+    }
+  ],
+  "comparisons": []
+}

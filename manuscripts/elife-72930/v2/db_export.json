@@ -1,0 +1,2260 @@
+{
+  "submission": {
+    "id": "69104ed3-ddbf-424a-81ca-b7dca081a4df",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:28:03.413024Z",
+    "updated_at": "2025-12-03T10:28:03.413024Z"
+  },
+  "content": [
+    {
+      "id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "submission_id": "69104ed3-ddbf-424a-81ca-b7dca081a4df",
+      "content_type": "manuscript",
+      "content_text": "# Development, validation, and application of a machine learning model to estimate salt consumption in 54 countries\n\n## Authors\n\n- Wilmer Cristobal Guzman-Vilca<sup>1</sup> ([ORCID: 0000-0002-2194-8496](https://orcid.org/0000-0002-2194-8496))\n- Manuel Castillo-Cara<sup>4</sup> ([ORCID: 0000-0002-2990-7090](https://orcid.org/0000-0002-2990-7090))\n- Rodrigo M Carrillo-Larco<sup>2</sup> ([ORCID: 0000-0002-2090-1856](https://orcid.org/0000-0002-2090-1856)) \u2020\n\n### Affiliations\n\n1. School of Medicine Alberto Hurtado, Universidad Peruana Cayetano Heredia Lima Peru\n2. CRONICAS Centre of Excellence in Chronic Diseases, Universidad Peruana Cayetano Heredia Lima Peru\n3. Sociedad Cient\u00edfica de Estudiantes de Medicina Cayetano Heredia (SOCEMCH), Universidad Peruana Cayetano Heredia Lima Peru\n4. Universidad de Lima Lima Peru\n5. Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nGlobal targets to reduce salt intake have been proposed, but their monitoring is challenged by the lack of population-based data on salt consumption. We developed a machine learning (ML) model to predict salt consumption at the population level based on simple predictors and applied this model to national surveys in 54 countries. We used 21 surveys with spot urine samples for the ML model derivation and validation; we developed a supervised ML regression model based on sex, age, weight, height, and systolic and diastolic blood pressure. We applied the ML model to 54 new surveys to quantify the mean salt consumption in the population. The pooled dataset in which we developed the ML model included 49,776 people. Overall, there were no substantial differences between the observed and ML-predicted mean salt intake (p<0.001). The pooled dataset where we applied the ML model included 166,677 people; the predicted mean salt consumption ranged from 6.8 g/day (95% CI: 6.8\u20136.8 g/day) in Eritrea to 10.0 g/day (95% CI: 9.9\u201310.0 g/day) in American Samoa. The countries with the highest predicted mean salt intake were in the Western Pacific. The lowest predicted intake was found in Africa. The country-specific predicted mean salt intake was within reasonable difference from the best available evidence. An ML model based on readily available predictors estimated daily salt consumption with good accuracy. This model could be used to predict mean salt consumption in the general population where urine samples are not available.\n\n## Introduction\n\nThe association between high sodium/salt intake and high blood pressure, a major risk factor of cardiovascular diseases (CVDs), is well-established (He et al., 2013; World Health Organization, 2021a; Poggio et al., 2015). More than 1.7 million CVD deaths were attributed to a diet high in sodium in 2019, with ~90% of these deaths occurring in low- and middle-income countries (LMICs) (GBD 2019 Risk Factors Collaborators, 2020; GBD Results Tool, 2021). Consequently, salt reduction has been included in international goals: the World Health Organization (WHO) recommendation of limiting salt consumption to <5 g/day (World Health Organization, 2021a), and the agreement by the WHO state members of a 30% relative reduction in mean population salt intake by 2025 (WHO. World Health Organization, 2021). Because available evidence suggests that sodium/salt consumption is higher than the global targets (Powles et al., 2013; Carrillo-Larco and Bernabe-Ortiz, 2020; Oyebode et al., 2016) we need timely and consistent data of sodium/salt consumption in the general population to track progress of salt reduction targets.\n\nGlobal efforts have been made to produce comparable estimates of sodium/salt intake for all countries (Powles et al., 2013). Similarly, researchers have summarized all the available evidence in specific world regions (Carrillo-Larco and Bernabe-Ortiz, 2020, Oyebode et al., 2016). Although the global endeavor was based on the gold standard method to assess sodium/salt intake (i.e., 24 hr urine sample), their estimates were up to 2010 (Powles et al., 2013). Therefore, robust and comparable sodium/salt intake estimates for all countries lack for the last 10 years. The regional endeavors summarized population-based evidence, yet they conducted study-level meta-analyses in which the original studies could have followed different laboratory methods, and they did not study all countries in the region. Therefore, comparability across studies could be limited and evidence lacks for many countries. Finding a method to estimate sodium/salt consumption in national samples leveraging on available data is needed to update and complement the existing evidence (Powles et al., 2013; Carrillo-Larco and Bernabe-Ortiz, 2020; Oyebode et al., 2016; Thout et al., 2019). Quantifying sodium/salt intake based on 24 hr urine samples is costly and burdensome, limiting its use in population-based studies or national health surveys. As an alternative, equations have been developed to estimate sodium/salt intake based on spot urine (SU) samples (Brown et al., 2013; Kawasaki et al., 1993; Toft et al., 2014; Tanaka et al., 2002). Although these equations may not deliver identical results to those based on 24 hr urine samples at the individual level, at the population level the difference between SU samples and 24 hr samples appears to be small (Huang et al., 2016; Santos et al., 2020). However, these equations have been used in few WHO STEPS and other national health surveys (World Health Organization, 2021b), leaving several countries without data to quantify the local sodium/salt consumption because they do not have access to SU samples (World Health Organization, 2021c).\n\nIf we could (accurately) estimate sodium/salt intake at the population level based on variables that are routinely available in national health surveys (e.g., weight or blood pressure), mean sodium/salt intake at the population level in countries that currently lack urine data (i.e., 24 hr or spot) could be computed using these available predictors. Advanced analytic techniques like machine learning (ML) could make accurate predictions and inform about the mean sodium/salt intake at the population level. We developed an ML predictive model to estimate mean salt intake at the population level (not at the individual level) using routinely available variables in national health surveys. We applied this ML model to other national health surveys without urine data to compute the mean salt intake in the general population.\n\n## Results\n\n### Study population for model derivation and validation\n\nThe pooled dataset included 49,776 people from 21 surveys in 19 countries (i.e., two countries, Bhutan and Mongolia, had two surveys) conducted between 2013 and 2019 (Appendix 1\u2014table 1). Overall, the mean age ranged from 33 (95% confidence interval [95% CI]: 33\u201334) years in Zambia to 43 (95% CI: 42\u201344) years in Belarus. The proportion of men ranged from 35.7% in Tonga to 61.4% in Solomon Islands. The mean SBP was lowest in Jordan (117.7 mmHg [95% CI: 115.7\u2013119.8 mmHg]) and highest in Belarus (134.6 mmHg [95% CI: 133.6\u2013135.5 mmHg]). The mean DBP was lowest in Chile (73.6 mmHg [95% CI: 72.5\u201374.6 mmHg]) and highest in Belarus (84.9 mmHg [95% CI: 84.4\u201385.5 mmHg]). The mean weight ranged from 54.6 kg (95% CI: 53.8\u201355.5 kg) in Nepal to 98.6 kg (95% CI: 97.7\u201399.5 kg) in Tonga. The mean height ranged from 1.55 m (95% CI: 1.55\u20131.56 m) in Nepal to 1.71 m (95% CI: 1.70\u20131.71 m) in Tokelau.\n\n### Observed and predicted mean salt intake during the ML model derivation and validation\n\nIn the test dataset including 20 WHO STEPS surveys and one national health survey (Chile) (i.e., 21 surveys in total), the observed mean salt intake computed as per the INTERSALT equation was higher in men than in women in all countries; it ranged from 8.5 g/day (95% CI: 8.2\u20138.8 g/day; Zambia) to 10.4 g/day (95% CI: 10.1\u201310.7 g/day; Azerbaijan) in men and from 6.8 g/day (95% CI: 6.7\u20136.8 g/day; Turkmenistan) to 8.3 g/day (95% CI: 8.0\u20138.6 g/day; Malawi) in women. Across countries, the predicted mean salt intake was also higher in men than in women. Results for each survey are presented in Figure 1 and Appendix 1\u2014table 2.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72930/elife-72930-fig1-v2.jpg)\n\n**Figure 1.:** Exact estimates (along with their 95% CI) are presented in Appendix 1\u2014table 2. These results were computed with the test dataset only. Results are for the HuR algorithm, which was the model with the best performance.\n\nThe mean observed salt intake was higher in people aged \u226530 years (7.9 g/day vs. 8.4 g/day, p<0.05 for independent t-test), and so was for people with raised blood pressure (\u2265140/90 mmHg) (8.7 g/day vs. 8.2 g/day, p<0.05). The mean salt consumption was also different across body mass index (BMI) categories (p<0.05 for ANOVA test). The same profile was found for predicted mean salt intake (Appendix 1\u2014table 3).\n\nIn men across all countries in the test dataset including 20 WHO STEPS surveys (representing 18 countries) and 1 national health survey (Chile), the mean difference between observed and predicted mean salt intake was \u20130.02 g/day (p<0.001 for paired t-test). Across all surveys, the positive mean difference farthest from zero was 0.54 g/day (Nepal, p<0.001 for paired t-test), and the negative mean difference farthest from zero was \u20131.31 g/day (Tonga, p<0.001 for paired t-test). The mean difference closest to zero was \u20130.03 g/day (Morocco, p=0.308 for paired t-test) (Appendix 1\u2014table 4).\n\nIn women across all countries in the test dataset including 20 WHO STEPS surveys (representing 18 countries) and 1 national health survey (Chile), the mean difference between the observed and predicted mean salt intake was 0.01 g/day (p<0.001 for paired t-test). The positive mean difference farthest from zero was 1.23 g/day (Malawi, p<0.001 for paired t-test) and the negative mean difference farthest from zero was in \u20131.22 g/day (Tonga, p<0.001 for paired t-test). The mean difference closest to zero was 0.01 g/day (Armenia, p=0.195 for paired t-test) (Appendix 1\u2014table 4).\n\nNone of the countries herein analyzed, regardless of the method of sodium intake assessment (i.e., observed or predicted), showed a mean salt intake below the WHO recommended level of <5 g/day (Figure 1, Appendix 1\u2014table 2). The same occurred for the mean salt intake estimates using the Kawasaki, Toft, and Tanaka formulas (Appendix 1\u2014table 5).\n\n### Implementation of the developed ML model to predict salt consumption in 54 countries\n\nThe pooled dataset where we applied the ML model included 166,677 people from 54 countries in 54 WHO STEPS surveys conducted between 2004 and 2018 (Appendix 1\u2014table 6). Overall, the mean age ranged from 31 (95% CI: 31\u201332) years in Ethiopia to 43 (95% CI: 40\u201347) years in Barbados. The proportion of men ranged from 17.2% in Eritrea to 63.8% in Timor-Leste. The mean SBP was lowest in Cambodia (116.2 mmHg [95% CI: 115.6\u2013116.9 mmHg]) and highest in Mozambique (138.7 mmHg [95% CI: 136.3\u2013141.0 mmHg]). The mean DBP was lowest in Cambodia (72.4 mmHg [95% CI: 71.8\u201373.0 mmHg]) and highest in Kyrgyzstan (86.8 mmHg [95% CI: 85.9\u201387.8 mmHg]). The mean weight ranged from 51.8 kg (95% CI: 51.2\u201352.4 kg) in Eritrea to 100.4 kg (95% CI: 100.1\u2013100.8 kg) in American Samoa. The mean height ranged from 1.54 m (95% CI: 1.54\u20131.55 m) in Lao People\u2019s Democratic Republic to 1.70 m (95% CI: 1.70\u20131.71 m) in British Virgin Islands.\n\nAcross the 54 countries, the overall predicted mean salt intake ranged from 6.8 g/day (95% CI: 6.8\u20136.8 g/day) in Eritrea to 10.0 g/day (95% CI: 9.9\u201310.0 g/day) in American Samoa. The mean was always higher in men than in women. None of the countries herein analyzed, regardless of sex, showed a predicted mean salt intake below the WHO recommended level of <5 g/day (Figure 2, Appendix 1\u2014table 7).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72930/elife-72930-fig2-v2.jpg)\n\n**Figure 2.:** Exact estimates (along with their 95% CI) are presented in Appendix 1\u2014table 7. Countries are presented in ascending order based on their overall mean salt intake (i.e., countries with the highest mean salt intake are at the bottom).\n\nIn men, the countries with the highest predicted mean salt intakes were Nauru (11.0 g/day), American Samoa and Cook Islands (both with 10.9 g/day), and Niue and Tuvalu (both with 10.4 g/day); remarkably, all of these countries are in the Western Pacific. In contrast, the lowest predicted mean salt intake in men was in Eritrea (8.3 g/day), Ethiopia (8.5 g/day), and Niger (8.6 g/day); remarkably, all of these countries are in Africa.\n\nIn women, the countries with the highest predicted mean salt intake were American Samoa (9.0 g/day), Nauru (8.8 g/day), and Cook Islands and Tuvalu (both with 8.7 g/day); all of these countries are in the Western Pacific. Conversely, the lowest predicted mean salt intake in women was in Eritrea (6.5 g/day), Ethiopia (6.6 g/day), and Niger (6.7 g/day); all of these countries are in Africa.\n\n## Discussion\n\n### Main findings\n\nThis work leveraged on 21 national health surveys and readily available predictors to develop an ML model to predict salt consumption; this model was then applied to national surveys in 54 countries. It should be noted that we analyzed SU samples. These are not the gold standard to assess salt consumption. Results should be interpreted in light of this limitation, considering that our model aimed to deliver estimates at the population level (not individual level) (Huang et al., 2016; Santos et al., 2020). The HuR ML algorithm yielded the predictions closest to the observed salt intake: the mean difference between predicted and observed salt consumption across surveys was \u20130.02 g/day in men and 0.01 g/day in women. We used this novel ML model to predict salt consumption in 54 countries, where the mean salt consumption ranged from 8.3 g/day (Eritrea) to 11.0 g/day (Nauru) in men; these numbers in women ranged from 6.5 g/day (Eritrea) to 9.0 g/day (American Samoa). This work aimed to elaborate on novel analytical tools to predict salt consumption where national surveys have not collected this information, limiting their ability to keep track of mean sodium consumption in the general population. Pending external independent validation, our model could be used in monitoring frameworks of salt consumption because most countries do not collect sodium samples in their national health surveys. Our model could contribute to the global surveillance of salt consumption, a relevant cardiometabolic risk factor (He et al., 2013; World Health Organization, 2021a; Poggio et al., 2015).\n\n### Public health implications\n\nML models have been used extensively to predict relevant clinical outcomes (e.g., mortality) and epidemiological indicators (e.g., forecasting COVID-19 cases) (Wang et al., 2020; Wynants et al., 2020; Groot et al., 2021; Watson et al., 2021; Mohan et al., 2021). Furthermore, ML algorithms have proven to be useful for understanding complex outcomes (e.g., identifying clusters of people with diabetes) based on simple predictors (e.g., BMI) in nationally representative survey data (Oh et al., 2019; Garc\u00eda de la Garza et al., 2021; Carrillo-Larco et al., 2021). Our work complements the current evidence on ML algorithms by demonstrating its use in a relevant field: population salt consumption. In so doing, we delivered a pragmatic tool that could be used to inform the surveillance of salt consumption in countries where national surveys do not objectively collect this information (e.g., SU samples). Moreover, this work provided preliminary evidence to update the global estimates of population-based sodium consumption (Powles et al., 2013) by informing about the mean sodium consumption in 54 countries. Our results suggest that mean salt consumption is above the WHO recommended level in all the 54 countries herein analyzed, and it was the highest among countries in the Western Pacific, and the lowest among countries in Africa. This finding, which is consistent with a global work (Powles et al., 2013), calls for urgent actions to reduce salt consumption in these 54 countries, especially those in the Western Pacific.\n\nWe do not believe that our \u2013 or any other \u2013 ML model should replace a comprehensive population-based nationally representative health survey with 24 hr or SU samples. However, until such surveys are available in many countries and periodically conducted, we could suggest using an estimation approach to shed lights about the mean salt consumption in the population. Our ML model seems to be a reasonably good alternative and could become a pragmatic tool for surveillance systems that keep track of sodium consumption in accordance with global goals (World Health Organization, 2021a; WHO. World Health Organization, 2021).\n\n### Research in context\n\nA global effort provided mean sodium/salt consumption estimates for 187 countries in 1990 and 2010 (Powles et al., 2013); they used 24 hr urine samples and dietary reports from surveys conducted in 66 countries. Unfortunately, their results were until 2010. Our results advanced this evidence by providing more recent salt consumption estimates because most of the surveys in which we applied our ML model were conducted after 2010 (Appendix 1\u2014table 6).\n\nCompared to the global estimates for the same countries in 2010, (Powles et al., 2013), our mean salt consumption estimates were very similar. For example, our 2010 mean salt consumption estimates for Cambodia, Eritrea, and the Gambia were 7.8 g/day, 6.8 g/day, and 8.1 g/day, whereas the estimates by Powles et al., 2013 were 11.0 g/day, 5.9 g/day, and 7.7 g/day (Appendix 1\u2014table 8; Powles et al., 2013). We further compared our estimates for surveys conducted between 2007 and 2013 (\u00b13 years around 2010) with the 2010 estimates provided by Powles et al., 2013, and our results were also within reasonable difference. The largest differences were in Tajikistan (8.5 by our ML model vs. 13.5 by Powles et al., 2013), as well as in Kyrgyzstan (8.6 vs. 13.4 by Powles et al., 2013) and Samoa (9.5 vs. 5.2 by Powles et al., 2013). It appears that our predictions were higher than those provided by Powles et al., 2013 in countries with presumably low salt consumption (e.g., Samoa); conversely, in countries with presumably high salt consumption (e.g., Kyrgyzstan), our predictions revealed smaller estimates than those by Powles et al., 2013 (Appendix 1\u2014table 8). These differences could be explained by the fact that our ML model was developed based on SU samples rather than 24 hr urine samples as Powles et al., 2013 did. Strong evidence indicates that estimates based on SU may overestimate salt intake at lower levels of consumption and underestimate salt intake at higher levels of consumption (Huang et al., 2016).\n\nIn addition to the global work by Powles et al., 2013, there are other reports from some specific countries. For example, a survey conducted between 2012 and 2016 with 24 hr urine samples in Fiji and Samoa showed that the mean salt consumption was 10.6 g/day and 7.1 g/day, respectively (Santos et al., 2019). The estimates from our ML model for Fiji (2011) and Samoa (2013) suggested that the mean salt consumption was 8.7 g/day and 9.5 g/day, respectively. A survey in Vanuatu in 2016 based on 24 hr urine sample informed that the mean salt intake was 5.9 g/day (Paterson et al., 2019); our estimate for the year 2011 was 8.4 g/day. In 2009 in Vietnam, a survey with SU samples revealed that the mean salt consumption was 9.9 g/day (Jensen et al., 2018); our prediction for the year 2015 was 7.9. These comparisons suggest that our ML-predicted estimates are plausible and close to the best available evidence.\n\nAlthough these comparisons do not validate our predictions in the 54 national surveys, they suggest that our salt consumption estimates are within reasonable distance from the best available evidence. Until better data are available (e.g., national survey with spot or 24 hr urine sample), our model could provide preliminary evidence to inform the national mean salt consumption. Careful interpretation is warranted to understand the strengths and limitations of our ML-based predictions.\n\n### Strengths and limitations\n\nWe followed sound and transparent methods to develop an ML model to predict salt consumption at the individual level. We leveraged on open-access national data collected following standard and consistent protocols (World Health Organization, 2021b; Departamento de Epidemiologia. Ministerio de Salud, 2021). Most of the surveys we analyzed were conducted after 2010, providing more recent evidence than the latest global effort to quantify salt consumption in all countries (Powles et al., 2013). Notwithstanding, we must acknowledge some limitations. First and foremost, urine data was based on a spot sample, which is not the gold standard (24 hr urine sample) to measure daily salt consumption. Future work should verify and advance our results using on 24 hr urine samples available in nationally representative samples; in the meantime, our work has led the foundations and hopefully sparked interest to use available data and novel analytical techniques to deliver estimates of salt consumption in the general population. While SU samples may not be the best approach to estimate salt consumption at the individual level, at the population level the means estimated based on SU samples and 24 hr urine samples are similar (Huang et al., 2016; Santos et al., 2020). Therefore, the limitation of using SU samples only may have had little impact on our mean estimates, which are the country level, not at the individual level. While this \u2013 reanalysis of SU sample rather than 24 hr urine samples \u2013 is a limitation of our work, it is also an observation showing the lack of nationally representative surveys with 24 hr urine samples available for independent reanalyses. Second, even though we analyzed 21 national surveys (representing 19 countries) to develop our ML model, the sample size could still be limited for a data-driven ML algorithm (i.e., 24,889 observations were included in model development). A larger and global work in which all relevant data sources are pooled is needed; while this endeavor takes place, our work has provided recent estimates of salt consumption at the population level in 54 countries. In this line, there are still countries that were not herein included. Researchers in these countries, along with local (e.g., ministries of health) and international health authorities (e.g., WHO), should conduct studies/surveys to collect data on salt consumption. This would inform global targets but also local needs and interventions.\n\nAn ML model based on readily available variables was accurate to predict daily salt consumption. This ML model applied to 54 national surveys with no urine samples to compute daily salt consumption revealed high levels of salt intake particularly in the Western Pacific region. Pending further validation, this ML model could be used to keep track of the overall sodium consumption where resources are not available to conduct national surveys with urine samples.\n\n## Methods\n\n### Study design\n\nThis is an individual-level data pooling ML analysis.\n\n### Data sources\n\nWe sought surveys that met these two criteria: (i) nationally representative health surveys (i.e., community or subnational surveys were not included); and (ii) surveys that were open access or that could be accessed without significant administrative burden (e.g., data sharing agreements that may involve institutional signatures).\n\nFirst, we downloaded 20 WHO STEPS surveys and 1 national health survey with SU samples; these surveys were used for the training, validation, and testing of the ML model. These 21 surveys represented 19 countries; two countries contributed with two surveys: Bhutan 2014 and 2019 as well as Mongolia 2013 and 2019. Second, we downloaded 54 new WHO STEPS surveys that had the variables included in the ML prediction model (see \u2018Variables\u2019 section), but did not have SU samples. The ML model herein developed was applied to these 54 surveys to estimate the mean salt consumption in the population.\n\nTo identify additional data sources, we searched the original publications included in one global analysis (Powles et al., 2013) and three systematic reviews about sodium/salt consumption at the population level (Carrillo-Larco and Bernabe-Ortiz, 2020; Oyebode et al., 2016; Thout et al., 2019). This search led to the identification of the national health survey included in the model derivation. All other data sources included in those references (Powles et al., 2013; Carrillo-Larco and Bernabe-Ortiz, 2020; Oyebode et al., 2016; Thout et al., 2019) did not meet our selection criteria.\n\nIn conclusion, our ML model was developed based on 21 surveys (20 WHO STEPS and 1 national health survey). Then, our ML model was applied to 54 WHO STEPS survey to compute the mean daily salt consumption at the population level.\n\nAccording to the World Bank classification (Appendix 1\u2014table 9), there were 9 high-income countries (2 in model derivation and 7 in model application), 16 low-income countries (1 in model derivation and 15 in model application), 26 lower-middle-income countries (9 in model derivation and 17 in model application), and 18 upper-middle-income countries (6 in model derivation and 12 model application). There were four countries (one in model derivation and three in model application) without income classification (British Virgin Islands, Cook Islands, Niue, and Tokelau).\n\n### Rationale\n\nWe hypothesized that an ML model could accurately predict salt consumption at the individual level, to then inform the overall mean in the underlying population. In addition, we endeavored to develop an ML model with simple predictors; that is, variables that are routinely available in national health surveys contrary to urine sample that are seldom collected in national health surveys. If the model were indeed accurate, then it could be applied to national surveys without urine samples but with the relevant predictors to inform about the mean salt consumption in the overall population. These model-driven estimates could be preliminary until a national health survey is conducted to study mean salt consumption with urine samples. Ideally, salt consumption should be informed by 24 hr urine samples, which are seldom available in large population-based and nationally representative health surveys. The fact that we analyzed SU samples is a limitation of our work, and the results should be interpreted accordingly. However, we aimed to develop an ML model that can be used to predict mean estimates at the population level, not at the individual level. In other words, our model should not be applied to a patient to estimate his/her salt consumption. We did not develop a diagnostic tool to replace SU or 24 hr urine samples. Our model should be applied to survey data to compute the mean sodium/salt consumption in the population (not in individuals). Empirical evidence suggests that, at the population level, mean estimates based on SU samples and on 24 hr urine samples are similar (Huang et al., 2016; Santos et al., 2020).\n\n### Variables\n\nThe predictors we used in the ML model were sex, age (years), weight (kg), height (m), systolic blood pressure (SBP, mmHg), and diastolic blood pressure (DBP, mmHg).\n\nThe analyzed surveys collect anthropometric and three blood pressure measurements. These are taken by trained fieldworkers following a standard protocol (World Health Organization, 2021b; Departamento de Epidemiologia. Ministerio de Salud, 2021). We used measured weight and height to compute the BMI (kg/m2). We used the mean SBP and mean DBP of the second and third blood pressure measurements (i.e., the first blood pressure measurement was discarded).\n\nThe outcome was salt intake as per the INTERSALT equation (Brown et al., 2013). We chose this equation because it has been used by WHO STEPS surveys. There is a specific INTERSALT equation for each sex, and they both include the following variables: age (years), BMI (kg/m2), SU sodium (mmol/L), and SU creatinine (mmol/L) (Brown et al., 2013). We used the following sex-specific formulas:\n\n$$\nMen:{23.51 +[0.45 x\u00a0Na_{SU}]-[3.09 x\u00a0Cr_{SU}]+[4.16 x BMI]+[0.22 x age]}\n$$\n\n\n\n$$\nWomen:{3.74 +[0.33 x\u00a0Na_{SU}]-[2.44 x\u00a0Cr_{SU}]+[2.42 x BMI]+[2.34 x age]-[0.03 x\u00a0age^{2}]}\n$$\n\nwhere the subscript SU indicates spot urine, Na is sodium, Cr is creatinine, and BMI is body mass index. Because some STEPS surveys had SU creatinine in mg/dL, these values were multiplied by 0.00884 to obtain SU creatinine in mmol/L. No conversion was needed for sodium in SU samples because all surveys herein included already had urinary sodium in mmol/L. The INTERSALT equation computes 24 hr sodium intake, which is then divided by 17.1 to obtain the salt intake in grams per day (g/d) (Brown et al., 2013). For descriptive purposes, we also computed salt intake based on the Kawasaki et al., 1993, Toft et al., 2014, and Tanaka et al., 2002 equations. Of note, our outcome variable was informed by SU samples and not by 24 hr urine samples (gold standard to assess salt consumption). Results should be interpreted according to this limitation.\n\n### Analysis\n\n#### Data preparation\n\nOur complete-case analysis was restricted to men and nonpregnant women aged between 15 and 69 years because of data availability. We dropped participants with implausible BMI levels (outside the range 10\u201380 kg/m2) or with implausible weight (outside the range 12\u2013300 kg) or height records (outside the range 1.00\u20132.50 m). Participants with SBP outside the range 70\u2013270 mmHg were discarded, and so were participants with DBP outside the range 30\u2013150 mmHg. We excluded records with SU creatinine <1.8 or > 32.7 mmol/L for males and <1.8 or >28.3 for females (Santos et al., 2019; Paterson et al., 2019). In addition, we excluded participants with estimated salt intake (using the four equations) above or below 3 standard deviations from the equation-specific mean (Appendix 1\u2014figure 1; Jensen et al., 2018). After completing data preparation, observations were randomly assigned from the pooled dataset (100%) into three datasets for the ML analysis: training dataset (50%), test dataset (30%), and validation dataset (20%).\n\n#### Machine learning modeling\n\nOur research aim was a regression problem where we had a known outcome attribute (salt consumption at the subject level). Therefore, we planned a supervised ML regression analysis. Details about the modeling process are available in the \u2018Extended methods\u2019 (Appendix 2). In brief, we designed a work pipeline with five steps. First, data analysis, where we dropped missing observations, we explored the available data to choose scaling and transformation methods to secure all variables were in the same scale or units, and we also planned transformations for categorical variables (e.g., one-hot encoding). Second, feature importance analysis, where we investigated the contribution of each predictor to the regression model through methods like Random Forest (RF) and Recursive Feature Elimination. The aim of this second step was to exclude any predictor that would not contribute to the regression model. Notably, all predictors (see \u2018Variables\u2019 section) chosen following expert knowledge were kept in the analysis (i.e., the feature importance analysis did not suggest the exclusion of any predictor). Third, data processing, having explored the available data (first step in the work pipeline), we implemented different scaling and transformation methods (e.g., Box-Cox, principal component analysis and polynomial features). Fourth, data modeling, where we implemented 10 ML algorithms: (i) linear regression (LiR); (ii) Hubber regressor (HuR); (iii) ridge regressor (RiR); (iv) multilayer perceptron (MLP); (v) support vector regressor (SVR); (vi) k-nearest neighbors (KNN); (vii) RF; (viii) gradient boost machine (GBM); (ix) extreme gradient boosting (XBG); and (x) a customized neural network. All these ML algorithms performed similarly, so the decision to choose one was postponed to the fifth (last) step in the work pipeline. Up to this point, we used the training and validations datasets. Five, forecasting of the predicted attribute in new data (i.e., data not used for model training); in this step, we used the test dataset to choose the model that yielded predictions closest to the observed salt intake. Results comparing the observed and the predicted salt intake were computed in the test dataset alone. For each country, we ran a paired t-test between the observed and predicted salt consumption, where a difference was deemed significant at a p<0.05. We also computed the absolute difference between the observed and predicted salt intake. We chose the HuR algorithm because it showed the mean difference closest to zero in both sexes combined (observed \u2013 predicted = 0) (Appendix 2\u2014table 2, Appendix 2\u2014figure 3) . All summary estimates (e.g., mean salt intake) were computed accounting for the complex survey design of the surveys included in the analysis.\n\n#### Application of the developed ML model\n\nHaving developed the ML model following the steps above described, we applied the model to 54 WHO STEPS national surveys that did not have urine samples but included the predictors in the ML model (see \u2018Variables\u2019 section). In each of these 54 surveys, we computed the mean daily salt intake accounting for the complex survey design. These surveys were preprocessed following the same procedures described in the \u2018Data preparation\u2019 section.\n\n#### Role of the funding source\n\nThe funder had no role in the study design, analysis, interpretation, or decision to publish. The authors are collectively responsible for the accuracy of the data. The arguments and opinions in this work are those of the authors alone, and do not represent the position of the institutions to which they belong.\n",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "cc2c4b28-72c9-4cd6-9633-f2a59c6d6807",
+      "submission_id": "69104ed3-ddbf-424a-81ca-b7dca081a4df",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gian Paolo Rossi, University of Padua Padua Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72930.sa0](https://doi.org/10.7554/eLife.72930.sa0)\n\nSalt intake is a major determinant of volume status, blood pressure values, and congestion, but its estimation is challenging because of the need of measuring 24-h urinary sodium excretion over a number of days, which is unfeasible in most countries. The demonstration of the feasibility of estimating accurately salt intake at the population level using artificial intelligence starting from simple and widely available variable is therefore important for epidemiological and intervention studies in which salt intake is a major player, particularly, but not only, in countries experiencing economic hardships.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Gian Paolo Rossi, University of Padua Padua Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72930.sa1](https://doi.org/10.7554/eLife.72930.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Estimating salt consumption in 49 low-and middle-income countries: Development, validation and application of a machine learning model\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Gian Paolo Rossi as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nBoth reviewers have found your manuscript of interest and potential relevance, as estimation of salt consumption by artificial intelligence in the population is a general problem. The Reviewers also agreed that this is more important for the low-mid income countries, which cannot afford measurements of sodium in a 24 hour urine collection or in a spot urinary sample. However, since the problem of estimating salt intake is not confined to such countries, a valuable addition that can increase the scientific merit of the study would be to provide data also on middle and high income countries.\n\nThey regarded as strengths of the study the development of a tool for estimating the sodium intake applicable to each country, particularly to those where it is difficult to collect urine specimens, and also the novel machine learning approach applied to 19 WHO STEPS surveys including more than 45,000 people.\n\nHowever, some methodological limitations were also noted, including the fact that your ML model was developed and validated using, as reference, data obtained from a 'golden' (spot urine samples), not a gold standard method (i.e. 24-hour urine sample). One Reviewer underlined that all equations, including the Intersalt's used as outcome in this study, can imply a bias in predicting 24h U-Na+ excretion, even with use of correction formulas (see Charlton KE, Schutte A et al., 2020). Hence, the finding that mean salt consumption predicted by the supervised ML model did not differ significantly from the mean observed value, should be validated with the Na+ intake determined by the 24h U-Na+ excretion.\n\nReviewer #1 (Recommendations for the authors):\n\nI find these results to be important. The manuscript is well written and the methodology seems to be correct. However, since the problem of estimating salt intake is not confined to low income countries, a valuable addition that can increase the scientific merit of the study would be to provide data also on middle and high income countries.\n\nReviewer #2 (Recommendations for the authors):\n\nIn this study Guzman-Vilca et al., investigated if a machine learning (ML) model based on predictors that are routinely available in large scale surveys could predict salt intake in low- and middle-income countries (LMICs), and could be an appropriate tool to estimate sodium/salt intake in the national health surveys.\n\nThis is an interesting study that moves from the need of estimating sodium intake in countries that have no access to urine samples, and exploits a novel method to pursue the aim. However, the study suffers a major methodological limitation that should be deeply considered.\n\nMajor criticisms:\n\nThe Authors trained, tested and validated the ML model using data obtained from \u2018golden standard\u2019 methods (spot urine samples), not a gold standard method as reference (i.e. 24-hour urine sample) as recommended by STARD (Bossuyt PM. Ann Intern Med 2003). Even though not updated, there are survey from LMICs considering 24h U-Na+ excretion. This is a methodological limitation that should be amended.\n\nMoreover, all equations, including the Intersalt used as outcome in this study, can implies a bias in predicting 24h U-Na+ excretion, even after using correction formulas (e.g. see Charlton KE, Schutte A et al., 2020). Hence, the mean salt consumption predicted by the supervised ML model, which was found not significantly different from the mean observed value, could be significantly different from the intake calculated with 24h U-Na+ excretion. Finally, the deviations from WHO recommendations (<5g daily) in the LMICs could be different from those resulting from the golden (not gold) standard approach-ML based model.\n\nThe quality of each survey, including the 19 surveys used for ML training and validation and those 49 used for estimating salt intake, should be preliminary evaluated using a validated scoring system before data processing as QUADAS-2. Quality could be crucial to understand differences between observed and predicted values.\n\nOnly a sub-analysis by sex was reported. It could be interesting to also evaluate how the ML model works at different ages, BP and BMI values.\n\nAge range 15-69. Data from old/very old people were not considered at all. It is unclear if the exclusion of old people is related to the STEPS templates that include limited classes of age, or not.\n\nFigure Pipeline Modeling Analysis. Please introduce abbreviations and provide a brief legend.\n\nLast Figure (number is missing). Please add number, title and legend; enlarge dots and text on the right.\n\nTables. Please remove decimals from SBP and DBP.\n",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0a813dc7-bbb5-4bf6-8463-d1b327b73d1c",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C1",
+      "claim": "More than 1.7 million CVD deaths were attributed to a diet high in sodium in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 1.7 million CVD deaths were attributed to a diet high in sodium in 2019, with ~90% of these deaths occurring in low- and middle-income countries (LMICs) (GBD 2019 Risk Factors Collaborators, 2020; GBD Results Tool, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to GBD 2019 Risk Factors Collaborators, 2020 and GBD Results Tool, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "89507c33-43b9-47c8-bef4-0922312715bd",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C2",
+      "claim": "Approximately 90% of CVD deaths attributed to high sodium diet occurred in low- and middle-income countries in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 1.7 million CVD deaths were attributed to a diet high in sodium in 2019, with ~90% of these deaths occurring in low- and middle-income countries (LMICs) (GBD 2019 Risk Factors Collaborators, 2020; GBD Results Tool, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to GBD 2019 Risk Factors Collaborators, 2020 and GBD Results Tool, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "79b000aa-63f3-4c8e-a7a5-762cd47310af",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C3",
+      "claim": "The WHO recommends limiting salt consumption to less than 5 g/day.",
+      "claim_type": "EXPLICIT",
+      "source": "the World Health Organization (WHO) recommendation of limiting salt consumption to <5 g/day (World Health Organization, 2021a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to World Health Organization, 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "9ea4a5e1-b37e-4d27-91f9-51490081cf8c",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C4",
+      "claim": "WHO state members agreed to a 30% relative reduction in mean population salt intake by 2025.",
+      "claim_type": "EXPLICIT",
+      "source": "the agreement by the WHO state members of a 30% relative reduction in mean population salt intake by 2025 (WHO. World Health Organization, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to WHO. World Health Organization, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "f3f177da-b097-45f5-9a8d-6550c666dcd6",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C5",
+      "claim": "Sodium/salt consumption is higher than global targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Because available evidence suggests that sodium/salt consumption is higher than the global targets (Powles et al., 2013; Carrillo-Larco and Bernabe-Ortiz, 2020; Oyebode et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Powles et al., 2013; Carrillo-Larco and Bernabe-Ortiz, 2020; Oyebode et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "47800a7e-8e7b-400d-8871-66f19dd05a1d",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C6",
+      "claim": "The association between high sodium/salt intake and high blood pressure is well-established.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between high sodium/salt intake and high blood pressure, a major risk factor of cardiovascular diseases (CVDs), is well-established (He et al., 2013; World Health Organization, 2021a; Poggio et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to He et al., 2013; World Health Organization, 2021a; Poggio et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "a811b6ba-0e5f-4f3b-b2dd-28a1cc8d2195",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C7",
+      "claim": "High blood pressure is a major risk factor of cardiovascular diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between high sodium/salt intake and high blood pressure, a major risk factor of cardiovascular diseases (CVDs), is well-established (He et al., 2013; World Health Organization, 2021a; Poggio et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established scientific knowledge and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "ce1da6ae-66a7-4619-8144-8ec88d59026d",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C8",
+      "claim": "The pooled dataset for ML model development included 49,776 people from 21 surveys in 19 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "The pooled dataset included 49,776 people from 21 surveys in 19 countries (i.e., two countries, Bhutan and Mongolia, had two surveys) conducted between 2013 and 2019 (Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study's pooled dataset as referenced in Appendix 1\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "ebff1f5b-fd16-4fec-bc46-b1b9734f914e",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C9",
+      "claim": "The surveys used for ML model development were conducted between 2013 and 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The pooled dataset included 49,776 people from 21 surveys in 19 countries (i.e., two countries, Bhutan and Mongolia, had two surveys) conducted between 2013 and 2019 (Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "00da64ac-2070-4198-a16f-f67e61ffe9d6",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C10",
+      "claim": "Bhutan and Mongolia each contributed two surveys to the model development dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The pooled dataset included 49,776 people from 21 surveys in 19 countries (i.e., two countries, Bhutan and Mongolia, had two surveys) conducted between 2013 and 2019 (Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "1ffc0bff-15ff-472d-820d-7170a917853f",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C11",
+      "claim": "The mean age in the pooled dataset ranged from 33 years in Zambia to 43 years in Belarus.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the mean age ranged from 33 (95% confidence interval [95% CI]: 33\u201334) years in Zambia to 43 (95% CI: 42\u201344) years in Belarus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study's pooled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "ca20f45b-2c26-4108-be92-f860e5f18bcc",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C12",
+      "claim": "The proportion of men in the pooled dataset ranged from 35.7% in Tonga to 61.4% in Solomon Islands.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of men ranged from 35.7% in Tonga to 61.4% in Solomon Islands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study's pooled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "c9c168cd-377a-4928-9d4a-f1dfde3d660f",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C13",
+      "claim": "The mean systolic blood pressure was lowest in Jordan at 117.7 mmHg and highest in Belarus at 134.6 mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean SBP was lowest in Jordan (117.7 mmHg [95% CI: 115.7\u2013119.8 mmHg]) and highest in Belarus (134.6 mmHg [95% CI: 133.6\u2013135.5 mmHg]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study's pooled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "7899d95f-f42f-4670-a4c2-20c71e3c405b",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C14",
+      "claim": "The mean diastolic blood pressure was lowest in Chile at 73.6 mmHg and highest in Belarus at 84.9 mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean DBP was lowest in Chile (73.6 mmHg [95% CI: 72.5\u201374.6 mmHg]) and highest in Belarus (84.9 mmHg [95% CI: 84.4\u201385.5 mmHg]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study's pooled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "eb5f204e-0ffb-49c6-a831-23cc1c623896",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C15",
+      "claim": "The mean weight in the pooled dataset ranged from 54.6 kg in Nepal to 98.6 kg in Tonga.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean weight ranged from 54.6 kg (95% CI: 53.8\u201355.5 kg) in Nepal to 98.6 kg (95% CI: 97.7\u201399.5 kg) in Tonga.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study's pooled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "e2df44dd-3376-4edf-878d-8e3e2b4e5823",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C16",
+      "claim": "The mean height in the pooled dataset ranged from 1.55 m in Nepal to 1.71 m in Tokelau.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean height ranged from 1.55 m (95% CI: 1.55\u20131.56 m) in Nepal to 1.71 m (95% CI: 1.70\u20131.71 m) in Tokelau.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study's pooled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "6f70e220-5905-4551-a37d-e6b4dcb304b5",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C17",
+      "claim": "The observed mean salt intake was higher in men than in women in all countries in the test dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In the test dataset including 20 WHO STEPS surveys and one national health survey (Chile) (i.e., 21 surveys in total), the observed mean salt intake computed as per the INTERSALT equation was higher in men than in women in all countries",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "860c0757-f793-4592-9466-18b9fc586967",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C18",
+      "claim": "The observed mean salt intake in men ranged from 8.5 g/day in Zambia to 10.4 g/day in Azerbaijan.",
+      "claim_type": "EXPLICIT",
+      "source": "it ranged from 8.5 g/day (95% CI: 8.2\u20138.8 g/day; Zambia) to 10.4 g/day (95% CI: 10.1\u201310.7 g/day; Azerbaijan) in men",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "d50ecd30-1c78-4ee2-a989-b3ac6985bfb1",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C19",
+      "claim": "The observed mean salt intake in women ranged from 6.8 g/day in Turkmenistan to 8.3 g/day in Malawi.",
+      "claim_type": "EXPLICIT",
+      "source": "from 6.8 g/day (95% CI: 6.7\u20136.8 g/day; Turkmenistan) to 8.3 g/day (95% CI: 8.0\u20138.6 g/day; Malawi) in women",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "4dc7c6eb-8c1c-4010-ab86-c35b6d6041ba",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C20",
+      "claim": "The predicted mean salt intake was higher in men than in women across countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Across countries, the predicted mean salt intake was also higher in men than in women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "f1024027-9100-4dcf-a25e-82d4a43bddd8",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C21",
+      "claim": "The mean observed salt intake was higher in people aged \u226530 years compared to younger people (7.9 g/day vs. 8.4 g/day, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean observed salt intake was higher in people aged \u226530 years (7.9 g/day vs. 8.4 g/day, p<0.05 for independent t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study with statistical testing (p<0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "3e46272d-5922-490f-a3c3-81e1b20a25f2",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C22",
+      "claim": "The mean salt consumption was higher in people with raised blood pressure (\u2265140/90 mmHg) compared to those without (8.7 g/day vs. 8.2 g/day, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "and so was for people with raised blood pressure (\u2265140/90 mmHg) (8.7 g/day vs. 8.2 g/day, p<0.05)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study with statistical testing (p<0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "e24db894-3a69-45a8-8291-d31fc442e33f",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C23",
+      "claim": "The mean salt consumption was different across body mass index categories (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean salt consumption was also different across body mass index (BMI) categories (p<0.05 for ANOVA test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study with statistical testing (p<0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "6faaf932-e812-4eae-9625-a39852136c77",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C24",
+      "claim": "In men across all countries in the test dataset, the mean difference between observed and predicted mean salt intake was \u20130.02 g/day (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In men across all countries in the test dataset including 20 WHO STEPS surveys (representing 18 countries) and 1 national health survey (Chile), the mean difference between observed and predicted mean salt intake was \u20130.02 g/day (p<0.001 for paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset with statistical testing (p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "fd084228-c66a-4f1a-965d-b51235f92b70",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C25",
+      "claim": "The largest positive mean difference between observed and predicted salt intake in men was 0.54 g/day in Nepal (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all surveys, the positive mean difference farthest from zero was 0.54 g/day (Nepal, p<0.001 for paired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset with statistical testing (p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "df80e7c3-707d-4639-9fb7-c971348a7e64",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C26",
+      "claim": "The largest negative mean difference between observed and predicted salt intake in men was \u20131.31 g/day in Tonga (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "and the negative mean difference farthest from zero was \u20131.31 g/day (Tonga, p<0.001 for paired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset with statistical testing (p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "8f9a4372-d609-42da-94d1-344d64711471",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C27",
+      "claim": "The mean difference closest to zero in men was \u20130.03 g/day in Morocco (p=0.308).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean difference closest to zero was \u20130.03 g/day (Morocco, p=0.308 for paired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset with statistical testing (p=0.308).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "a9f27318-97f2-427d-a2b9-a601986c4962",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C28",
+      "claim": "In women across all countries in the test dataset, the mean difference between observed and predicted mean salt intake was 0.01 g/day (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In women across all countries in the test dataset including 20 WHO STEPS surveys (representing 18 countries) and 1 national health survey (Chile), the mean difference between the observed and predicted mean salt intake was 0.01 g/day (p<0.001 for paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset with statistical testing (p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "2019948b-9082-44bd-a49e-6f801c2d6d36",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C29",
+      "claim": "The largest positive mean difference between observed and predicted salt intake in women was 1.23 g/day in Malawi (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The positive mean difference farthest from zero was 1.23 g/day (Malawi, p<0.001 for paired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset with statistical testing (p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "76417f71-e51b-4b73-ae6c-3a37532f7c51",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C30",
+      "claim": "The largest negative mean difference between observed and predicted salt intake in women was \u20131.22 g/day in Tonga (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "and the negative mean difference farthest from zero was in \u20131.22 g/day (Tonga, p<0.001 for paired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset with statistical testing (p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "9a863504-0150-4cde-aaa4-0d85e339b41e",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C31",
+      "claim": "The mean difference closest to zero in women was 0.01 g/day in Armenia (p=0.195).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean difference closest to zero was 0.01 g/day (Armenia, p=0.195 for paired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the test dataset with statistical testing (p=0.195).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "db389a0f-2763-47c5-ba8d-0c62e5660dd5",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C32",
+      "claim": "None of the countries analyzed showed a mean salt intake below the WHO recommended level of <5 g/day, regardless of the assessment method.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the countries herein analyzed, regardless of the method of sodium intake assessment (i.e., observed or predicted), showed a mean salt intake below the WHO recommended level of <5 g/day (Figure 1, Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from the test dataset as shown in Figure 1 and Appendix 1\u2014table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "b122b4b1-3095-4e6e-9efc-b397ee65cabb",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C33",
+      "claim": "The pooled dataset for ML model application included 166,677 people from 54 countries in 54 WHO STEPS surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "The pooled dataset where we applied the ML model included 166,677 people from 54 countries in 54 WHO STEPS surveys conducted between 2004 and 2018 (Appendix 1\u2014table 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "fb09d122-90fb-4231-a4bb-c26fc31e9a4a",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C34",
+      "claim": "The surveys for ML model application were conducted between 2004 and 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "The pooled dataset where we applied the ML model included 166,677 people from 54 countries in 54 WHO STEPS surveys conducted between 2004 and 2018 (Appendix 1\u2014table 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "6e654c2d-cf18-4677-81e6-bc54b5c5d2cc",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C35",
+      "claim": "In the application dataset, the mean age ranged from 31 years in Ethiopia to 43 years in Barbados.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the mean age ranged from 31 (95% CI: 31\u201332) years in Ethiopia to 43 (95% CI: 40\u201347) years in Barbados.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the application dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "7d17ecc8-c5e5-45d6-a547-2608a2290be8",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C36",
+      "claim": "In the application dataset, the proportion of men ranged from 17.2% in Eritrea to 63.8% in Timor-Leste.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of men ranged from 17.2% in Eritrea to 63.8% in Timor-Leste.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the application dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "fd1f6a30-af39-4001-8a67-fff7624141d8",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C37",
+      "claim": "In the application dataset, the mean systolic blood pressure was lowest in Cambodia at 116.2 mmHg and highest in Mozambique at 138.7 mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean SBP was lowest in Cambodia (116.2 mmHg [95% CI: 115.6\u2013116.9 mmHg]) and highest in Mozambique (138.7 mmHg [95% CI: 136.3\u2013141.0 mmHg]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the application dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "67ee96aa-ac4d-4c71-8991-fbb3af5bfbfe",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C38",
+      "claim": "In the application dataset, the mean diastolic blood pressure was lowest in Cambodia at 72.4 mmHg and highest in Kyrgyzstan at 86.8 mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean DBP was lowest in Cambodia (72.4 mmHg [95% CI: 71.8\u201373.0 mmHg]) and highest in Kyrgyzstan (86.8 mmHg [95% CI: 85.9\u201387.8 mmHg]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the application dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "d31f9d03-e027-48bf-a399-c6aebd6f5425",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C39",
+      "claim": "In the application dataset, the mean weight ranged from 51.8 kg in Eritrea to 100.4 kg in American Samoa.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean weight ranged from 51.8 kg (95% CI: 51.2\u201352.4 kg) in Eritrea to 100.4 kg (95% CI: 100.1\u2013100.8 kg) in American Samoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the application dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "f463016e-2b33-4d5a-b366-8806a73ad8df",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C40",
+      "claim": "In the application dataset, the mean height ranged from 1.54 m in Lao People's Democratic Republic to 1.70 m in British Virgin Islands.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean height ranged from 1.54 m (95% CI: 1.54\u20131.55 m) in Lao People's Democratic Republic to 1.70 m (95% CI: 1.70\u20131.71 m) in British Virgin Islands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the application dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "17a90b9d-1286-49ec-b36b-bce1ff2641b7",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C41",
+      "claim": "Across 54 countries, the overall predicted mean salt intake ranged from 6.8 g/day in Eritrea to 10.0 g/day in American Samoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the 54 countries, the overall predicted mean salt intake ranged from 6.8 g/day (95% CI: 6.8\u20136.8 g/day) in Eritrea to 10.0 g/day (95% CI: 9.9\u201310.0 g/day) in American Samoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "0f55c8f3-3a57-4387-a867-0d4e450b17ce",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C42",
+      "claim": "The predicted mean salt intake was always higher in men than in women across the 54 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean was always higher in men than in women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "b7b7c5dd-51a2-4567-bf4a-855b0a14b0e9",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C43",
+      "claim": "None of the 54 countries analyzed showed a predicted mean salt intake below the WHO recommended level of <5 g/day, regardless of sex.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the countries herein analyzed, regardless of sex, showed a predicted mean salt intake below the WHO recommended level of <5 g/day (Figure 2, Appendix 1\u2014table 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from the ML model application as shown in Figure 2 and Appendix 1\u2014table 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "61ce20b9-b578-4f6a-8986-c1dcba7fbcfb",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C44",
+      "claim": "In men, the countries with the highest predicted mean salt intakes were Nauru (11.0 g/day), American Samoa and Cook Islands (both 10.9 g/day), and Niue and Tuvalu (both 10.4 g/day).",
+      "claim_type": "EXPLICIT",
+      "source": "In men, the countries with the highest predicted mean salt intakes were Nauru (11.0 g/day), American Samoa and Cook Islands (both with 10.9 g/day), and Niue and Tuvalu (both with 10.4 g/day)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "c03e5dd6-75ce-4aad-9154-6cc2ce89a8ee",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C45",
+      "claim": "All countries with the highest predicted mean salt intake in men are in the Western Pacific region.",
+      "claim_type": "EXPLICIT",
+      "source": "remarkably, all of these countries are in the Western Pacific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application and geographical classification.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "224a4d91-17d0-444a-9b07-c04d9ca61d8f",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C46",
+      "claim": "In men, the lowest predicted mean salt intake was in Eritrea (8.3 g/day), Ethiopia (8.5 g/day), and Niger (8.6 g/day).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the lowest predicted mean salt intake in men was in Eritrea (8.3 g/day), Ethiopia (8.5 g/day), and Niger (8.6 g/day)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "7395e563-532e-4f59-9e5d-318dadc7f71f",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C47",
+      "claim": "All countries with the lowest predicted mean salt intake in men are in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "remarkably, all of these countries are in Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application and geographical classification.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "57bf87ce-1682-4bbd-94e0-24c2d3396a4e",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C48",
+      "claim": "In women, the countries with the highest predicted mean salt intake were American Samoa (9.0 g/day), Nauru (8.8 g/day), and Cook Islands and Tuvalu (both 8.7 g/day).",
+      "claim_type": "EXPLICIT",
+      "source": "In women, the countries with the highest predicted mean salt intake were American Samoa (9.0 g/day), Nauru (8.8 g/day), and Cook Islands and Tuvalu (both with 8.7 g/day)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "26c5bf11-1d5a-4c66-a5fc-6c39a53dd4ae",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C49",
+      "claim": "All countries with the highest predicted mean salt intake in women are in the Western Pacific region.",
+      "claim_type": "EXPLICIT",
+      "source": "all of these countries are in the Western Pacific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application and geographical classification.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "88e15993-72f1-4f8e-8a11-7c648d4999ce",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C50",
+      "claim": "In women, the lowest predicted mean salt intake was in Eritrea (6.5 g/day), Ethiopia (6.6 g/day), and Niger (6.7 g/day).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the lowest predicted mean salt intake in women was in Eritrea (6.5 g/day), Ethiopia (6.6 g/day), and Niger (6.7 g/day)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "77791aad-b202-43bc-91d4-1deed217ebb4",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C51",
+      "claim": "All countries with the lowest predicted mean salt intake in women are in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "all of these countries are in Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application and geographical classification.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "d8a75948-88c2-445c-802d-ad2bf1d9d7f1",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C52",
+      "claim": "The HuR ML algorithm yielded predictions closest to the observed salt intake.",
+      "claim_type": "EXPLICIT",
+      "source": "The HuR ML algorithm yielded the predictions closest to the observed salt intake: the mean difference between predicted and observed salt consumption across surveys was \u20130.02 g/day in men and 0.01 g/day in women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data comparing different ML algorithms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "18ac644e-a306-4a2f-ad32-afb2fb9c9641",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C53",
+      "claim": "ML models have been used extensively to predict relevant clinical outcomes and epidemiological indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "ML models have been used extensively to predict relevant clinical outcomes (e.g., mortality) and epidemiological indicators (e.g., forecasting COVID-19 cases) (Wang et al., 2020; Wynants et al., 2020; Groot et al., 2021; Watson et al., 2021; Mohan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wang et al., 2020; Wynants et al., 2020; Groot et al., 2021; Watson et al., 2021; Mohan et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "7e26f472-8ba8-42a1-a5dd-0b2529db9275",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C54",
+      "claim": "ML algorithms have proven useful for understanding complex outcomes based on simple predictors in nationally representative survey data.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ML algorithms have proven to be useful for understanding complex outcomes (e.g., identifying clusters of people with diabetes) based on simple predictors (e.g., BMI) in nationally representative survey data (Oh et al., 2019; Garc\u00eda de la Garza et al., 2021; Carrillo-Larco et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Oh et al., 2019; Garc\u00eda de la Garza et al., 2021; Carrillo-Larco et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "e4ed683d-8833-40b4-9dd9-be557062e74e",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C55",
+      "claim": "Mean salt consumption is above the WHO recommended level in all 54 countries analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that mean salt consumption is above the WHO recommended level in all the 54 countries herein analyzed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "3b5f34c4-a4db-4546-b561-ea2822c2d534",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C56",
+      "claim": "Mean salt consumption was highest among countries in the Western Pacific region.",
+      "claim_type": "EXPLICIT",
+      "source": "and it was the highest among countries in the Western Pacific, and the lowest among countries in Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "74e28f03-7123-4dab-8acc-6e1b5735ef5b",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C57",
+      "claim": "Mean salt consumption was lowest among countries in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "and it was the highest among countries in the Western Pacific, and the lowest among countries in Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "acfb2112-04fc-4833-9533-9689eca73ade",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C58",
+      "claim": "The finding that salt consumption is highest in the Western Pacific and lowest in Africa is consistent with a global work by Powles et al., 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding, which is consistent with a global work (Powles et al., 2013), calls for urgent actions to reduce salt consumption in these 54 countries, especially those in the Western Pacific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with cited work by Powles et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "35e62d95-20ad-4287-b8f8-0be013f671fd",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C59",
+      "claim": "A global effort by Powles et al., 2013 provided mean sodium/salt consumption estimates for 187 countries in 1990 and 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "A global effort provided mean sodium/salt consumption estimates for 187 countries in 1990 and 2010 (Powles et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Powles et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "8f67ea59-fd07-4b97-8eee-bb21bde858de",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C60",
+      "claim": "Powles et al., 2013 used 24 hr urine samples and dietary reports from surveys conducted in 66 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "they used 24 hr urine samples and dietary reports from surveys conducted in 66 countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Powles et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "133dcd50-4e7a-487c-bfc7-70712d2fcc17",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C61",
+      "claim": "The results from Powles et al., 2013 were until 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, their results were until 2010.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Powles et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "a800fc28-81b7-447e-8771-19c2607f525c",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C62",
+      "claim": "Most of the surveys in which the ML model was applied were conducted after 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results advanced this evidence by providing more recent salt consumption estimates because most of the surveys in which we applied our ML model were conducted after 2010 (Appendix 1\u2014table 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "e35e97c1-6696-4991-ae05-e9247241c48a",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C63",
+      "claim": "The 2010 mean salt consumption estimates for Cambodia, Eritrea, and the Gambia by the current study were 7.8 g/day, 6.8 g/day, and 8.1 g/day, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, our 2010 mean salt consumption estimates for Cambodia, Eritrea, and the Gambia were 7.8 g/day, 6.8 g/day, and 8.1 g/day",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "00d3ded5-db37-4ae7-a2fe-c5cdecf86bd8",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C64",
+      "claim": "The 2010 mean salt consumption estimates for Cambodia, Eritrea, and the Gambia by Powles et al., 2013 were 11.0 g/day, 5.9 g/day, and 7.7 g/day, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the estimates by Powles et al., 2013 were 11.0 g/day, 5.9 g/day, and 7.7 g/day (Appendix 1\u2014table 8; Powles et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Powles et al., 2013 and reference to Appendix 1\u2014table 8.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "d815692e-3d1f-41a9-a356-43258c01cbe2",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C65",
+      "claim": "The largest difference between the current study and Powles et al., 2013 was in Tajikistan (8.5 by ML model vs. 13.5 by Powles et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "The largest differences were in Tajikistan (8.5 by our ML model vs. 13.5 by Powles et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of data from the current study with Powles et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "983db785-e44b-4acb-9011-2b52ed8b864c",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C66",
+      "claim": "A survey conducted between 2012 and 2016 with 24 hr urine samples in Fiji and Samoa showed mean salt consumption of 10.6 g/day and 7.1 g/day, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a survey conducted between 2012 and 2016 with 24 hr urine samples in Fiji and Samoa showed that the mean salt consumption was 10.6 g/day and 7.1 g/day, respectively (Santos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Santos et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "330f6398-6bc8-413f-9a5c-9880594f6a3c",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C67",
+      "claim": "The ML model estimates for Fiji (2011) and Samoa (2013) suggested mean salt consumption of 8.7 g/day and 9.5 g/day, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimates from our ML model for Fiji (2011) and Samoa (2013) suggested that the mean salt consumption was 8.7 g/day and 9.5 g/day, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "99ad9858-9045-403a-b4eb-dec01bb7cb62",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C68",
+      "claim": "A survey in Vanuatu in 2016 based on 24 hr urine sample informed that the mean salt intake was 5.9 g/day.",
+      "claim_type": "EXPLICIT",
+      "source": "A survey in Vanuatu in 2016 based on 24 hr urine sample informed that the mean salt intake was 5.9 g/day (Paterson et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Paterson et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "42fdb670-24fc-48e1-956c-10196d9e23d1",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C69",
+      "claim": "The ML model estimate for Vanuatu in 2011 was 8.4 g/day.",
+      "claim_type": "EXPLICIT",
+      "source": "our estimate for the year 2011 was 8.4 g/day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "707f568b-445c-4caf-ab78-3307f0342286",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C70",
+      "claim": "In 2009 in Vietnam, a survey with spot urine samples revealed that the mean salt consumption was 9.9 g/day.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2009 in Vietnam, a survey with SU samples revealed that the mean salt consumption was 9.9 g/day (Jensen et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jensen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "93b34ee6-b8ff-4a3d-9282-ae14f37d0145",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C71",
+      "claim": "The ML model prediction for Vietnam in 2015 was 7.9 g/day.",
+      "claim_type": "EXPLICIT",
+      "source": "our prediction for the year 2015 was 7.9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "dd2c4a66-0382-4cf7-84ee-80510fdeed2a",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C72",
+      "claim": "At the population level, mean estimates based on spot urine samples and 24 hr urine samples are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "While SU samples may not be the best approach to estimate salt consumption at the individual level, at the population level the means estimated based on SU samples and 24 hr urine samples are similar (Huang et al., 2016; Santos et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Huang et al., 2016; Santos et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "a0b43890-7ceb-4eb7-9320-ed7e51fd8c7f",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C73",
+      "claim": "Spot urine samples may not be the best approach to estimate salt consumption at the individual level.",
+      "claim_type": "EXPLICIT",
+      "source": "While SU samples may not be the best approach to estimate salt consumption at the individual level",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established scientific knowledge and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "3c08ce3c-4e69-451e-9726-9d8c1a497d31",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C74",
+      "claim": "Estimates based on spot urine may overestimate salt intake at lower levels of consumption and underestimate salt intake at higher levels of consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong evidence indicates that estimates based on SU may overestimate salt intake at lower levels of consumption and underestimate salt intake at higher levels of consumption (Huang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Huang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "9f2e3cc7-d743-42e3-aecc-7530ae8c66a5",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C75",
+      "claim": "The ML model was developed based on spot urine samples rather than 24 hr urine samples.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences could be explained by the fact that our ML model was developed based on SU samples rather than 24 hr urine samples as Powles et al., 2013 did.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "6d74c63f-13c5-4c99-acaa-e6d0fe19dad1",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C76",
+      "claim": "The ML model was developed using 21 national surveys representing 19 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "even though we analyzed 21 national surveys (representing 19 countries) to develop our ML model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "ae7185b2-1657-4a2f-9694-e7f3050b3b89",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C77",
+      "claim": "24,889 observations were included in ML model development.",
+      "claim_type": "EXPLICIT",
+      "source": "the sample size could still be limited for a data-driven ML algorithm (i.e., 24,889 observations were included in model development).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "c03acade-e62f-49d6-93d2-684ac40af2cd",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C78",
+      "claim": "The study analyzed 20 WHO STEPS surveys and 1 national health survey with spot urine samples for ML model training, validation, and testing.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we downloaded 20 WHO STEPS surveys and 1 national health survey with SU samples; these surveys were used for the training, validation, and testing of the ML model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "201e515d-537d-4654-9907-f8a720498060",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C79",
+      "claim": "The study downloaded 54 new WHO STEPS surveys that had the ML model variables but did not have spot urine samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we downloaded 54 new WHO STEPS surveys that had the variables included in the ML prediction model (see 'Variables' section), but did not have SU samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "e11e371a-1896-4c86-8021-c52033e1b1de",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C80",
+      "claim": "The ML model was applied to 54 surveys to estimate mean salt consumption in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "The ML model herein developed was applied to these 54 surveys to estimate the mean salt consumption in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "e38f19fc-8457-4c62-8c15-330b0ec05b36",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C81",
+      "claim": "The predictors used in the ML model were sex, age, weight, height, systolic blood pressure, and diastolic blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictors we used in the ML model were sex, age (years), weight (kg), height (m), systolic blood pressure (SBP, mmHg), and diastolic blood pressure (DBP, mmHg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "6e539cae-6711-4669-bcbf-b9ebf2fe3718",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C82",
+      "claim": "The outcome was salt intake as per the INTERSALT equation.",
+      "claim_type": "EXPLICIT",
+      "source": "The outcome was salt intake as per the INTERSALT equation (Brown et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods and citation to Brown et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "b21f524d-4ab1-4721-9047-689131f0d39e",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C83",
+      "claim": "The INTERSALT equation has been used by WHO STEPS surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose this equation because it has been used by WHO STEPS surveys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by knowledge of WHO STEPS survey methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "3031a25c-c497-448a-8c5a-83f37555c683",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C84",
+      "claim": "The INTERSALT equation computes 24 hr sodium intake, which is then divided by 17.1 to obtain salt intake in grams per day.",
+      "claim_type": "EXPLICIT",
+      "source": "The INTERSALT equation computes 24 hr sodium intake, which is then divided by 17.1 to obtain the salt intake in grams per day (g/d) (Brown et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Brown et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "f452f734-ecaf-49bc-8033-ccccb7a7f666",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C85",
+      "claim": "The complete-case analysis was restricted to men and nonpregnant women aged between 15 and 69 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Our complete-case analysis was restricted to men and nonpregnant women aged between 15 and 69 years because of data availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "7b5cd63d-a399-422c-a7cb-e916bc910568",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C86",
+      "claim": "Participants with implausible BMI levels (outside the range 10\u201380 kg/m2) were dropped.",
+      "claim_type": "EXPLICIT",
+      "source": "We dropped participants with implausible BMI levels (outside the range 10\u201380 kg/m2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "8a57fcbc-3a9b-4860-ad4d-0b8b9ca954ab",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C87",
+      "claim": "Participants with implausible weight (outside the range 12\u2013300 kg) or height records (outside the range 1.00\u20132.50 m) were dropped.",
+      "claim_type": "EXPLICIT",
+      "source": "or with implausible weight (outside the range 12\u2013300 kg) or height records (outside the range 1.00\u20132.50 m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "82f3f6a6-2bb6-47ac-86ed-7f88fd7937aa",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C88",
+      "claim": "Participants with systolic blood pressure outside the range 70\u2013270 mmHg were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants with SBP outside the range 70\u2013270 mmHg were discarded",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "fc614c32-71ca-4416-a83b-22766b8042ba",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C89",
+      "claim": "Participants with diastolic blood pressure outside the range 30\u2013150 mmHg were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "and so were participants with DBP outside the range 30\u2013150 mmHg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "fddfd9a1-a896-4211-9317-2218a8e7330b",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C90",
+      "claim": "Records with spot urine creatinine <1.8 or >32.7 mmol/L for males and <1.8 or >28.3 for females were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded records with SU creatinine <1.8 or > 32.7 mmol/L for males and <1.8 or >28.3 for females (Santos et al., 2019; Paterson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods and citations to Santos et al., 2019; Paterson et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "86c23183-663b-4a2d-9d1b-3ca9dc5b6e36",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C91",
+      "claim": "Participants with estimated salt intake above or below 3 standard deviations from the equation-specific mean were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we excluded participants with estimated salt intake (using the four equations) above or below 3 standard deviations from the equation-specific mean (Appendix 1\u2014figure 1; Jensen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods and citation to Jensen et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "eb0ab933-5336-4fd1-a5a8-d5e3b0a00935",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C92",
+      "claim": "Observations were randomly assigned into training dataset (50%), test dataset (30%), and validation dataset (20%).",
+      "claim_type": "EXPLICIT",
+      "source": "After completing data preparation, observations were randomly assigned from the pooled dataset (100%) into three datasets for the ML analysis: training dataset (50%), test dataset (30%), and validation dataset (20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "34f8f16f-d45f-4496-bdbd-eb2a56ed0915",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C93",
+      "claim": "The research aim was a supervised ML regression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our research aim was a regression problem where we had a known outcome attribute (salt consumption at the subject level). Therefore, we planned a supervised ML regression analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "8574cede-f283-4ca7-8a7e-25fc6fec9bf6",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C94",
+      "claim": "Ten ML algorithms were implemented: linear regression, Hubber regressor, ridge regressor, multilayer perceptron, support vector regressor, k-nearest neighbors, random forest, gradient boost machine, extreme gradient boosting, and a customized neural network.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, data modeling, where we implemented 10 ML algorithms: (i) linear regression (LiR); (ii) Hubber regressor (HuR); (iii) ridge regressor (RiR); (iv) multilayer perceptron (MLP); (v) support vector regressor (SVR); (vi) k-nearest neighbors (KNN); (vii) RF; (viii) gradient boost machine (GBM); (ix) extreme gradient boosting (XBG); and (x) a customized neural network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "8fd1e916-f83f-47a9-a589-aff85e6e4599",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C95",
+      "claim": "All ML algorithms performed similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "All these ML algorithms performed similarly, so the decision to choose one was postponed to the fifth (last) step in the work pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "94ca185c-8ec1-4c22-96b3-cce95755b245",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C97",
+      "claim": "All summary estimates were computed accounting for the complex survey design of the surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "All summary estimates (e.g., mean salt intake) were computed accounting for the complex survey design of the surveys included in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the study methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "a75ab556-1471-494d-99d6-e6b29a20f6df",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C98",
+      "claim": "The funder had no role in the study design, analysis, interpretation, or decision to publish.",
+      "claim_type": "EXPLICIT",
+      "source": "The funder had no role in the study design, analysis, interpretation, or decision to publish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the study's funding and independence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "4319ac52-44df-49e4-a470-f99db8509e4d",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C99",
+      "claim": "Quantifying sodium/salt intake based on 24 hr urine samples is costly and burdensome.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying sodium/salt intake based on 24 hr urine samples is costly and burdensome, limiting its use in population-based studies or national health surveys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the practical challenges of 24 hr urine collection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "aac78034-0400-4eac-8079-22d60a3d37b4",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C100",
+      "claim": "Equations have been developed to estimate sodium/salt intake based on spot urine samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative, equations have been developed to estimate sodium/salt intake based on spot urine (SU) samples (Brown et al., 2013; Kawasaki et al., 1993; Toft et al., 2014; Tanaka et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brown et al., 2013; Kawasaki et al., 1993; Toft et al., 2014; Tanaka et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "e7815cce-abe1-418f-8fb4-c2c7ad6a598d",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C101",
+      "claim": "At the population level, the difference between spot urine samples and 24 hr samples appears to be small.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these equations may not deliver identical results to those based on 24 hr urine samples at the individual level, at the population level the difference between SU samples and 24 hr samples appears to be small (Huang et al., 2016; Santos et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Huang et al., 2016; Santos et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "34105dc4-fa11-42a8-951a-699c736f7024",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C102",
+      "claim": "Spot urine equations have been used in few WHO STEPS and other national health surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these equations have been used in few WHO STEPS and other national health surveys (World Health Organization, 2021b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to World Health Organization, 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "4ce1e1be-543f-482c-8707-ba7153f4ba33",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C103",
+      "claim": "Several countries lack data to quantify local sodium/salt consumption because they do not have access to spot urine samples.",
+      "claim_type": "EXPLICIT",
+      "source": "leaving several countries without data to quantify the local sodium/salt consumption because they do not have access to SU samples (World Health Organization, 2021c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to World Health Organization, 2021c.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "bf9c96e9-501e-470e-bbd7-ab484f0eaefb",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C104",
+      "claim": "There were 9 high-income countries in the study (2 in model derivation and 7 in model application).",
+      "claim_type": "EXPLICIT",
+      "source": "According to the World Bank classification (Appendix 1\u2014table 9), there were 9 high-income countries (2 in model derivation and 7 in model application)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "d8995699-9591-463f-85a9-94a06276ac0e",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C105",
+      "claim": "There were 16 low-income countries in the study (1 in model derivation and 15 in model application).",
+      "claim_type": "EXPLICIT",
+      "source": "16 low-income countries (1 in model derivation and 15 in model application)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "f97b301e-0a16-4da1-bd92-a42fd2acdcdb",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C106",
+      "claim": "There were 26 lower-middle-income countries in the study (9 in model derivation and 17 in model application).",
+      "claim_type": "EXPLICIT",
+      "source": "26 lower-middle-income countries (9 in model derivation and 17 in model application)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "2e96c41e-4495-4cfb-b353-4aad7e0e9293",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C107",
+      "claim": "There were 18 upper-middle-income countries in the study (6 in model derivation and 12 model application).",
+      "claim_type": "EXPLICIT",
+      "source": "and 18 upper-middle-income countries (6 in model derivation and 12 model application)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "1a88b1f1-cf5c-4e9d-8eb4-35e53eb751e7",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C108",
+      "claim": "There were four countries without income classification: British Virgin Islands, Cook Islands, Niue, and Tokelau.",
+      "claim_type": "EXPLICIT",
+      "source": "There were four countries (one in model derivation and three in model application) without income classification (British Virgin Islands, Cook Islands, Niue, and Tokelau).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study as referenced in Appendix 1\u2014table 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "fcad826e-2a9a-45ea-a457-89a2c323248a",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C109",
+      "claim": "The ML model should be applied to survey data to compute mean sodium/salt consumption in the population, not in individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model should be applied to survey data to compute the mean sodium/salt consumption in the population (not in individuals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the intended use of the ML model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "74f4f223-65a0-4bdb-88a2-785d886f2420",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C110",
+      "claim": "The ML model should not be applied to a patient to estimate his/her salt consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, our model should not be applied to a patient to estimate his/her salt consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the limitations of the ML model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "56f465d0-467b-4e0d-b916-59d2cb76ef1f",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C111",
+      "claim": "The ML model is not a diagnostic tool to replace spot urine or 24 hr urine samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not develop a diagnostic tool to replace SU or 24 hr urine samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about what the ML model is not intended to be.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "ff88e963-8d5a-4857-b229-3ba616eac950",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C112",
+      "claim": "The ML model could be used to predict mean salt consumption in the general population where urine samples are not available.",
+      "claim_type": "EXPLICIT",
+      "source": "An ML model based on readily available predictors estimated daily salt consumption with good accuracy. This model could be used to predict mean salt consumption in the general population where urine samples are not available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the study's findings and inference about potential applications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "8a214cb0-2808-443c-bdf8-f0c911a4ff4a",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C113",
+      "claim": "The country-specific predicted mean salt intake was within reasonable difference from the best available evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "The country-specific predicted mean salt intake was within reasonable difference from the best available evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparisons made in the manuscript between the ML predictions and published estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "512f5ab3-d099-48dd-8f90-aa8b8abbab7d",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C114",
+      "claim": "Overall, there were no substantial differences between the observed and ML-predicted mean salt intake (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, there were no substantial differences between the observed and ML-predicted mean salt intake (p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical testing of the data (p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "78398fea-a494-4117-904c-67c227014394",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C115",
+      "claim": "The predicted mean salt consumption ranged from 6.8 g/day in Eritrea to 10.0 g/day in American Samoa across 54 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "the predicted mean salt consumption ranged from 6.8 g/day (95% CI: 6.8\u20136.8 g/day) in Eritrea to 10.0 g/day (95% CI: 9.9\u201310.0 g/day) in American Samoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "65ec39d9-def3-43af-aec1-63aba8bfe94a",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C116",
+      "claim": "The countries with the highest predicted mean salt intake were in the Western Pacific.",
+      "claim_type": "EXPLICIT",
+      "source": "The countries with the highest predicted mean salt intake were in the Western Pacific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "7d6d8d2b-80aa-4686-a80d-3898c367226d",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "claim_id": "C117",
+      "claim": "The lowest predicted intake was found in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest predicted intake was found in Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the ML model application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3d45fe91-e144-4459-9df0-07f31ae91c34",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "High sodium intake is a major global health problem associated with cardiovascular disease mortality, particularly in low- and middle-income countries, with current consumption exceeding WHO targets of <5 g/day and requiring a 30% reduction by 2025.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 establish the public health context through appropriate citations to GBD 2019 data and WHO guidelines. These are well-established facts in the literature and provide valid motivation for the study. The claims are properly attributed to authoritative sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model development dataset comprised 49,776 individuals from 21 surveys across 19 countries (2013-2019), with substantial variation in demographic and physiological characteristics across populations (e.g., mean age 33-43 years, mean SBP 117.7-134.6 mmHg, mean weight 54.6-98.6 kg).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16 provide descriptive statistics for the training dataset with appropriate confidence intervals. The data appear plausible and are referenced to appendix tables. The sample size is adequate for descriptive purposes, though limitations for ML modeling are acknowledged elsewhere.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "a147a674-2b86-44e2-87c2-0e52663ae2b0",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Observed salt intake (via INTERSALT equation) in the test dataset showed consistent patterns: higher in men than women (8.5-10.4 g/day vs 6.8-8.3 g/day), higher in those \u226530 years old, higher in those with raised blood pressure, and varying by BMI category (all p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 report observed patterns in the test data with statistical significance testing. The sex differences and associations with age and blood pressure are biologically plausible and consistent with known physiology. Statistical tests are appropriately applied with p-values reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Huber regressor ML algorithm achieved high accuracy in predicting population-level salt intake, with mean differences between observed and predicted values of -0.02 g/day in men and 0.01 g/day in women across all test countries (p<0.001), though individual country differences ranged from -1.31 to +1.23 g/day.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24-C31, C52, and C114 report model performance metrics. While the overall mean differences are small, the interpretation of p<0.001 as indicating 'no substantial differences' is problematic\u2014statistical significance here actually indicates the differences ARE significant, contradicting the authors' interpretation. The large country-specific variations (>1 g/day) raise concerns about model reliability for individual countries. The claim that HuR performed best lacks comparative metrics for other algorithms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "4c6a6f23-08c7-40ba-89e5-c1d91811c2c0",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "No country in the test dataset showed mean salt intake below the WHO recommended level of <5 g/day using either observed or predicted methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by Figure 1 and appendix data. This finding is consistent with global literature on salt consumption and strengthens the public health rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "f0ab7cd5-2ff3-4f1d-9d86-554c1c41ed3e",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The ML model was applied to 166,677 individuals from 54 WHO STEPS surveys (2004-2018), representing diverse populations with wide ranges in demographic and physiological characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 describe the application dataset with appropriate descriptive statistics and confidence intervals. The sample size is substantial and the surveys span appropriate time periods, though temporal mismatch with training data (2013-2019 vs 2004-2018) could introduce bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "1f9d9878-2650-45f2-99cb-de7e47a84212",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ML-predicted mean salt intake across 54 countries ranged from 6.8 g/day (Eritrea) to 10.0 g/day (American Samoa), with highest consumption in Western Pacific countries and lowest in African countries; all countries exceeded WHO recommendations of <5 g/day, and men consistently showed higher intake than women.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C51 and C55-C57 present the main application results. While the geographic patterns are consistent with prior literature (C58), the predictions lack independent validation. The model was trained on spot urine samples (2013-2019) but applied to surveys from 2004-2018, creating temporal inconsistency. Country-specific predictions showing large deviations in the test set (C25-C30) raise concerns about reliability for individual countries. The claim that predictions are 'within reasonable difference' (C113) is subjective without defined thresholds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "412c54e9-b192-424f-a7ea-100fad7ae672",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study's predictions for 2010 were generally consistent with Powles et al. 2013 estimates (e.g., Cambodia 7.8 vs 11.0 g/day, Eritrea 6.8 vs 5.9 g/day), with largest discrepancies in Tajikistan (8.5 vs 13.5 g/day), and provide more recent estimates for most countries post-2010.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C65 compare results to prior literature. While some estimates are similar, substantial differences exist (e.g., 3.2 g/day difference in Cambodia, 5.0 g/day in Tajikistan). The authors attribute differences to spot vs 24-hour urine methods, but this doesn't fully explain the magnitude of discrepancies. The comparison provides some external validation but also highlights potential systematic biases in the ML approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "21f08d14-f4e2-4336-ab6e-64f2ab2c616a",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparisons with independent surveys showed mixed agreement: ML predictions were within 1-2.5 g/day of published estimates for Fiji, Samoa, Vanuatu, and Vietnam, though temporal mismatches complicate interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C71 provide additional external comparisons. The differences range from reasonable (Fiji: 8.7 vs 10.6 g/day) to concerning (Vanuatu: 8.4 vs 5.9 g/day, Vietnam: 7.9 vs 9.9 g/day). These comparisons involve different years and methods, limiting their value as validation. The authors don't provide systematic assessment of prediction accuracy across all available external data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "a8303844-0b0b-474b-af46-2d30a87f75e8",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study acknowledges that spot urine samples may overestimate salt intake at lower consumption levels and underestimate at higher levels, though population-level means from spot and 24-hour samples are reported to be similar in the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 appropriately acknowledge a key limitation. The citations support the claim about population-level similarity, though this doesn't eliminate individual-level errors that could affect ML model training. The directional bias (overestimation at low levels, underestimation at high levels) is consistent with the observed discrepancies with Powles et al. 2013.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "4617b4bf-cd1d-47f4-b3d6-434a4ba9fd08",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ML model was developed using 21 national surveys from 19 countries with 24,889 observations, which the authors acknowledge may be limited for a data-driven ML algorithm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 acknowledge sample size limitations. While 24,889 observations might seem adequate, the heterogeneity across 19 countries and the complexity of predicting salt intake from simple physiological variables suggest this may indeed be limiting. The authors appropriately identify this as a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "de47b094-c40f-4f3a-a1da-a75167eb5cec",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ML methodology involved training 10 algorithms (including Huber regressor, random forest, neural networks) on predictors of sex, age, weight, height, and blood pressure, with outcome defined by INTERSALT equation; data were split 50/30/20 for training/test/validation, with extensive preprocessing and exclusion criteria applied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C97 describe the methodology. While the approach appears systematic, critical details are missing: no performance metrics comparing the 10 algorithms (C95 states they 'performed similarly' without quantification), no discussion of hyperparameter tuning, no specification of random seeds for reproducibility, and insufficient justification for choosing HuR beyond 'closest to zero difference.' The exclusion criteria are reasonable but the 3-SD outlier removal (C91) after applying INTERSALT could remove valid extreme values. Survey weights are mentioned (C97) but implementation details are unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "219e04e8-ae12-4076-9c4f-926c6293d8c1",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ML models have been extensively used for predicting clinical outcomes and epidemiological indicators, and have proven useful for understanding complex outcomes from simple predictors in nationally representative surveys.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 provide appropriate context for ML applications in public health, supported by relevant citations. This establishes the methodological precedent for the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "dbfd9519-4edf-4c1c-83a2-3fff729bbbf8",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "24-hour urine collection is costly and burdensome, leading to development of spot urine equations that show small population-level differences from 24-hour samples, though spot urine methods are rarely used in WHO STEPS surveys, leaving many countries without salt consumption data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C103 establish the practical motivation for the study. The claims are well-supported by citations and represent accurate characterization of the data availability problem in global health surveillance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "d54888d4-1561-4b35-b54d-c24a352f05a6",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study included diverse country income levels: 9 high-income, 16 low-income, 26 lower-middle-income, and 18 upper-middle-income countries, with 4 countries unclassified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C108 describe the economic diversity of included countries. This is appropriately documented and shows reasonable global representation, though high-income countries are underrepresented in model development (2 of 19).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "2c45e668-f7fd-4a79-a6eb-481127607eb7",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors state the ML model should be used for population-level mean estimation only, not for individual-level prediction or as a diagnostic tool, and could be applied where urine samples are unavailable, with predictions within reasonable difference from available evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109-C113 describe intended use and limitations. While the authors appropriately caution against individual-level application, the claim that predictions are 'within reasonable difference' (C113) lacks objective criteria. The model's utility for population surveillance depends on accuracy that remains inadequately validated. The statement that it 'could be used' (C112) is conditional but may be overstated given the validation limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    },
+    {
+      "id": "3534b0ee-5f6b-4b0d-be18-6342d1df77a3",
+      "content_id": "563b0d67-cbff-42f2-aa4a-c8ea230af6a5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The funder had no role in study design, analysis, interpretation, or publication decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is a standard declaration of funding independence. No evidence suggests conflicts of interest.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:28:03.413024Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0a813dc7-bbb5-4bf6-8463-d1b327b73d1c",
+      "result_id": "3d45fe91-e144-4459-9df0-07f31ae91c34"
+    },
+    {
+      "claim_id": "89507c33-43b9-47c8-bef4-0922312715bd",
+      "result_id": "3d45fe91-e144-4459-9df0-07f31ae91c34"
+    },
+    {
+      "claim_id": "79b000aa-63f3-4c8e-a7a5-762cd47310af",
+      "result_id": "3d45fe91-e144-4459-9df0-07f31ae91c34"
+    },
+    {
+      "claim_id": "9ea4a5e1-b37e-4d27-91f9-51490081cf8c",
+      "result_id": "3d45fe91-e144-4459-9df0-07f31ae91c34"
+    },
+    {
+      "claim_id": "f3f177da-b097-45f5-9a8d-6550c666dcd6",
+      "result_id": "3d45fe91-e144-4459-9df0-07f31ae91c34"
+    },
+    {
+      "claim_id": "47800a7e-8e7b-400d-8871-66f19dd05a1d",
+      "result_id": "3d45fe91-e144-4459-9df0-07f31ae91c34"
+    },
+    {
+      "claim_id": "a811b6ba-0e5f-4f3b-b2dd-28a1cc8d2195",
+      "result_id": "3d45fe91-e144-4459-9df0-07f31ae91c34"
+    },
+    {
+      "claim_id": "ce1da6ae-66a7-4619-8144-8ec88d59026d",
+      "result_id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9"
+    },
+    {
+      "claim_id": "ebff1f5b-fd16-4fec-bc46-b1b9734f914e",
+      "result_id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9"
+    },
+    {
+      "claim_id": "00da64ac-2070-4198-a16f-f67e61ffe9d6",
+      "result_id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9"
+    },
+    {
+      "claim_id": "1ffc0bff-15ff-472d-820d-7170a917853f",
+      "result_id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9"
+    },
+    {
+      "claim_id": "ca20f45b-2c26-4108-be92-f860e5f18bcc",
+      "result_id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9"
+    },
+    {
+      "claim_id": "c9c168cd-377a-4928-9d4a-f1dfde3d660f",
+      "result_id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9"
+    },
+    {
+      "claim_id": "7899d95f-f42f-4670-a4c2-20c71e3c405b",
+      "result_id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9"
+    },
+    {
+      "claim_id": "eb5f204e-0ffb-49c6-a831-23cc1c623896",
+      "result_id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9"
+    },
+    {
+      "claim_id": "e2df44dd-3376-4edf-878d-8e3e2b4e5823",
+      "result_id": "5d2527e3-2adb-46ce-b4ec-0192b99646c9"
+    },
+    {
+      "claim_id": "6f70e220-5905-4551-a37d-e6b4dcb304b5",
+      "result_id": "a147a674-2b86-44e2-87c2-0e52663ae2b0"
+    },
+    {
+      "claim_id": "860c0757-f793-4592-9466-18b9fc586967",
+      "result_id": "a147a674-2b86-44e2-87c2-0e52663ae2b0"
+    },
+    {
+      "claim_id": "d50ecd30-1c78-4ee2-a989-b3ac6985bfb1",
+      "result_id": "a147a674-2b86-44e2-87c2-0e52663ae2b0"
+    },
+    {
+      "claim_id": "4dc7c6eb-8c1c-4010-ab86-c35b6d6041ba",
+      "result_id": "a147a674-2b86-44e2-87c2-0e52663ae2b0"
+    },
+    {
+      "claim_id": "f1024027-9100-4dcf-a25e-82d4a43bddd8",
+      "result_id": "a147a674-2b86-44e2-87c2-0e52663ae2b0"
+    },
+    {
+      "claim_id": "3e46272d-5922-490f-a3c3-81e1b20a25f2",
+      "result_id": "a147a674-2b86-44e2-87c2-0e52663ae2b0"
+    },
+    {
+      "claim_id": "e24db894-3a69-45a8-8291-d31fc442e33f",
+      "result_id": "a147a674-2b86-44e2-87c2-0e52663ae2b0"
+    },
+    {
+      "claim_id": "6faaf932-e812-4eae-9625-a39852136c77",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "fd084228-c66a-4f1a-965d-b51235f92b70",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "df80e7c3-707d-4639-9fb7-c971348a7e64",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "8f9a4372-d609-42da-94d1-344d64711471",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "a9f27318-97f2-427d-a2b9-a601986c4962",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "2019948b-9082-44bd-a49e-6f801c2d6d36",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "76417f71-e51b-4b73-ae6c-3a37532f7c51",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "9a863504-0150-4cde-aaa4-0d85e339b41e",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "d8a75948-88c2-445c-802d-ad2bf1d9d7f1",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "512f5ab3-d099-48dd-8f90-aa8b8abbab7d",
+      "result_id": "7922b7e8-aed0-4f93-80cb-433f0cc50d64"
+    },
+    {
+      "claim_id": "db389a0f-2763-47c5-ba8d-0c62e5660dd5",
+      "result_id": "4c6a6f23-08c7-40ba-89e5-c1d91811c2c0"
+    },
+    {
+      "claim_id": "b122b4b1-3095-4e6e-9efc-b397ee65cabb",
+      "result_id": "f0ab7cd5-2ff3-4f1d-9d86-554c1c41ed3e"
+    },
+    {
+      "claim_id": "fb09d122-90fb-4231-a4bb-c26fc31e9a4a",
+      "result_id": "f0ab7cd5-2ff3-4f1d-9d86-554c1c41ed3e"
+    },
+    {
+      "claim_id": "6e654c2d-cf18-4677-81e6-bc54b5c5d2cc",
+      "result_id": "f0ab7cd5-2ff3-4f1d-9d86-554c1c41ed3e"
+    },
+    {
+      "claim_id": "7d17ecc8-c5e5-45d6-a547-2608a2290be8",
+      "result_id": "f0ab7cd5-2ff3-4f1d-9d86-554c1c41ed3e"
+    },
+    {
+      "claim_id": "fd1f6a30-af39-4001-8a67-fff7624141d8",
+      "result_id": "f0ab7cd5-2ff3-4f1d-9d86-554c1c41ed3e"
+    },
+    {
+      "claim_id": "67ee96aa-ac4d-4c71-8991-fbb3af5bfbfe",
+      "result_id": "f0ab7cd5-2ff3-4f1d-9d86-554c1c41ed3e"
+    },
+    {
+      "claim_id": "d31f9d03-e027-48bf-a399-c6aebd6f5425",
+      "result_id": "f0ab7cd5-2ff3-4f1d-9d86-554c1c41ed3e"
+    },
+    {
+      "claim_id": "f463016e-2b33-4d5a-b366-8806a73ad8df",
+      "result_id": "f0ab7cd5-2ff3-4f1d-9d86-554c1c41ed3e"
+    },
+    {
+      "claim_id": "17a90b9d-1286-49ec-b36b-bce1ff2641b7",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "0f55c8f3-3a57-4387-a867-0d4e450b17ce",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "b7b7c5dd-51a2-4567-bf4a-855b0a14b0e9",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "61ce20b9-b578-4f6a-8986-c1dcba7fbcfb",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "c03e5dd6-75ce-4aad-9154-6cc2ce89a8ee",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "224a4d91-17d0-444a-9b07-c04d9ca61d8f",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "7395e563-532e-4f59-9e5d-318dadc7f71f",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "57bf87ce-1682-4bbd-94e0-24c2d3396a4e",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "26c5bf11-1d5a-4c66-a5fc-6c39a53dd4ae",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "88e15993-72f1-4f8e-8a11-7c648d4999ce",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "77791aad-b202-43bc-91d4-1deed217ebb4",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "e4ed683d-8833-40b4-9dd9-be557062e74e",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "3b5f34c4-a4db-4546-b561-ea2822c2d534",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "74e28f03-7123-4dab-8acc-6e1b5735ef5b",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "78398fea-a494-4117-904c-67c227014394",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "65ec39d9-def3-43af-aec1-63aba8bfe94a",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "7d6d8d2b-80aa-4686-a80d-3898c367226d",
+      "result_id": "1f9d9878-2650-45f2-99cb-de7e47a84212"
+    },
+    {
+      "claim_id": "acfb2112-04fc-4833-9533-9689eca73ade",
+      "result_id": "412c54e9-b192-424f-a7ea-100fad7ae672"
+    },
+    {
+      "claim_id": "35e62d95-20ad-4287-b8f8-0be013f671fd",
+      "result_id": "412c54e9-b192-424f-a7ea-100fad7ae672"
+    },
+    {
+      "claim_id": "8f67ea59-fd07-4b97-8eee-bb21bde858de",
+      "result_id": "412c54e9-b192-424f-a7ea-100fad7ae672"
+    },
+    {
+      "claim_id": "133dcd50-4e7a-487c-bfc7-70712d2fcc17",
+      "result_id": "412c54e9-b192-424f-a7ea-100fad7ae672"
+    },
+    {
+      "claim_id": "a800fc28-81b7-447e-8771-19c2607f525c",
+      "result_id": "412c54e9-b192-424f-a7ea-100fad7ae672"
+    },
+    {
+      "claim_id": "e35e97c1-6696-4991-ae05-e9247241c48a",
+      "result_id": "412c54e9-b192-424f-a7ea-100fad7ae672"
+    },
+    {
+      "claim_id": "00d3ded5-db37-4ae7-a2fe-c5cdecf86bd8",
+      "result_id": "412c54e9-b192-424f-a7ea-100fad7ae672"
+    },
+    {
+      "claim_id": "d815692e-3d1f-41a9-a356-43258c01cbe2",
+      "result_id": "412c54e9-b192-424f-a7ea-100fad7ae672"
+    },
+    {
+      "claim_id": "983db785-e44b-4acb-9011-2b52ed8b864c",
+      "result_id": "21f08d14-f4e2-4336-ab6e-64f2ab2c616a"
+    },
+    {
+      "claim_id": "330f6398-6bc8-413f-9a5c-9880594f6a3c",
+      "result_id": "21f08d14-f4e2-4336-ab6e-64f2ab2c616a"
+    },
+    {
+      "claim_id": "99ad9858-9045-403a-b4eb-dec01bb7cb62",
+      "result_id": "21f08d14-f4e2-4336-ab6e-64f2ab2c616a"
+    },
+    {
+      "claim_id": "42fdb670-24fc-48e1-956c-10196d9e23d1",
+      "result_id": "21f08d14-f4e2-4336-ab6e-64f2ab2c616a"
+    },
+    {
+      "claim_id": "707f568b-445c-4caf-ab78-3307f0342286",
+      "result_id": "21f08d14-f4e2-4336-ab6e-64f2ab2c616a"
+    },
+    {
+      "claim_id": "93b34ee6-b8ff-4a3d-9282-ae14f37d0145",
+      "result_id": "21f08d14-f4e2-4336-ab6e-64f2ab2c616a"
+    },
+    {
+      "claim_id": "dd2c4a66-0382-4cf7-84ee-80510fdeed2a",
+      "result_id": "a8303844-0b0b-474b-af46-2d30a87f75e8"
+    },
+    {
+      "claim_id": "a0b43890-7ceb-4eb7-9320-ed7e51fd8c7f",
+      "result_id": "a8303844-0b0b-474b-af46-2d30a87f75e8"
+    },
+    {
+      "claim_id": "3c08ce3c-4e69-451e-9726-9d8c1a497d31",
+      "result_id": "a8303844-0b0b-474b-af46-2d30a87f75e8"
+    },
+    {
+      "claim_id": "9f2e3cc7-d743-42e3-aecc-7530ae8c66a5",
+      "result_id": "a8303844-0b0b-474b-af46-2d30a87f75e8"
+    },
+    {
+      "claim_id": "6d74c63f-13c5-4c99-acaa-e6d0fe19dad1",
+      "result_id": "4617b4bf-cd1d-47f4-b3d6-434a4ba9fd08"
+    },
+    {
+      "claim_id": "ae7185b2-1657-4a2f-9694-e7f3050b3b89",
+      "result_id": "4617b4bf-cd1d-47f4-b3d6-434a4ba9fd08"
+    },
+    {
+      "claim_id": "c03acade-e62f-49d6-93d2-684ac40af2cd",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "201e515d-537d-4654-9907-f8a720498060",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "e11e371a-1896-4c86-8021-c52033e1b1de",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "e38f19fc-8457-4c62-8c15-330b0ec05b36",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "6e539cae-6711-4669-bcbf-b9ebf2fe3718",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "b21f524d-4ab1-4721-9047-689131f0d39e",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "3031a25c-c497-448a-8c5a-83f37555c683",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "f452f734-ecaf-49bc-8033-ccccb7a7f666",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "7b5cd63d-a399-422c-a7cb-e916bc910568",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "8a57fcbc-3a9b-4860-ad4d-0b8b9ca954ab",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "82f3f6a6-2bb6-47ac-86ed-7f88fd7937aa",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "fc614c32-71ca-4416-a83b-22766b8042ba",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "fddfd9a1-a896-4211-9317-2218a8e7330b",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "86c23183-663b-4a2d-9d1b-3ca9dc5b6e36",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "eb0ab933-5336-4fd1-a5a8-d5e3b0a00935",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "34f8f16f-d45f-4496-bdbd-eb2a56ed0915",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "8574cede-f283-4ca7-8a7e-25fc6fec9bf6",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "8fd1e916-f83f-47a9-a589-aff85e6e4599",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "94ca185c-8ec1-4c22-96b3-cce95755b245",
+      "result_id": "de47b094-c40f-4f3a-a1da-a75167eb5cec"
+    },
+    {
+      "claim_id": "18ac644e-a306-4a2f-ad32-afb2fb9c9641",
+      "result_id": "219e04e8-ae12-4076-9c4f-926c6293d8c1"
+    },
+    {
+      "claim_id": "7e26f472-8ba8-42a1-a5dd-0b2529db9275",
+      "result_id": "219e04e8-ae12-4076-9c4f-926c6293d8c1"
+    },
+    {
+      "claim_id": "4319ac52-44df-49e4-a470-f99db8509e4d",
+      "result_id": "dbfd9519-4edf-4c1c-83a2-3fff729bbbf8"
+    },
+    {
+      "claim_id": "aac78034-0400-4eac-8079-22d60a3d37b4",
+      "result_id": "dbfd9519-4edf-4c1c-83a2-3fff729bbbf8"
+    },
+    {
+      "claim_id": "e7815cce-abe1-418f-8fb4-c2c7ad6a598d",
+      "result_id": "dbfd9519-4edf-4c1c-83a2-3fff729bbbf8"
+    },
+    {
+      "claim_id": "34105dc4-fa11-42a8-951a-699c736f7024",
+      "result_id": "dbfd9519-4edf-4c1c-83a2-3fff729bbbf8"
+    },
+    {
+      "claim_id": "4ce1e1be-543f-482c-8707-ba7153f4ba33",
+      "result_id": "dbfd9519-4edf-4c1c-83a2-3fff729bbbf8"
+    },
+    {
+      "claim_id": "bf9c96e9-501e-470e-bbd7-ab484f0eaefb",
+      "result_id": "d54888d4-1561-4b35-b54d-c24a352f05a6"
+    },
+    {
+      "claim_id": "d8995699-9591-463f-85a9-94a06276ac0e",
+      "result_id": "d54888d4-1561-4b35-b54d-c24a352f05a6"
+    },
+    {
+      "claim_id": "f97b301e-0a16-4da1-bd92-a42fd2acdcdb",
+      "result_id": "d54888d4-1561-4b35-b54d-c24a352f05a6"
+    },
+    {
+      "claim_id": "2e96c41e-4495-4cfb-b353-4aad7e0e9293",
+      "result_id": "d54888d4-1561-4b35-b54d-c24a352f05a6"
+    },
+    {
+      "claim_id": "1a88b1f1-cf5c-4e9d-8eb4-35e53eb751e7",
+      "result_id": "d54888d4-1561-4b35-b54d-c24a352f05a6"
+    },
+    {
+      "claim_id": "fcad826e-2a9a-45ea-a457-89a2c323248a",
+      "result_id": "2c45e668-f7fd-4a79-a6eb-481127607eb7"
+    },
+    {
+      "claim_id": "74f4f223-65a0-4bdb-88a2-785d886f2420",
+      "result_id": "2c45e668-f7fd-4a79-a6eb-481127607eb7"
+    },
+    {
+      "claim_id": "56f465d0-467b-4e0d-b916-59d2cb76ef1f",
+      "result_id": "2c45e668-f7fd-4a79-a6eb-481127607eb7"
+    },
+    {
+      "claim_id": "ff88e963-8d5a-4857-b229-3ba616eac950",
+      "result_id": "2c45e668-f7fd-4a79-a6eb-481127607eb7"
+    },
+    {
+      "claim_id": "8a214cb0-2808-443c-bdf8-f0c911a4ff4a",
+      "result_id": "2c45e668-f7fd-4a79-a6eb-481127607eb7"
+    },
+    {
+      "claim_id": "a75ab556-1471-494d-99d6-e6b29a20f6df",
+      "result_id": "3534b0ee-5f6b-4b0d-be18-6342d1df77a3"
+    }
+  ],
+  "comparisons": []
+}

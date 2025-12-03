@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C33",
+      "C34",
+      "C38",
+      "C52",
+      "C118"
+    ],
+    "result": "The study develops a vortex dipole model to investigate bidirectional hydrodynamic coupling between fish and channel flow. The fish is modeled as a pair of point vortices in a 2D channel with background flow, treating the fish as an invasive sensor that both reacts to and influences the surrounding flow field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C33, C34, C38, C52, and C118 collectively establish the core modeling approach. The vortex dipole framework is clearly described, mathematically formulated, and represents a novel contribution by explicitly incorporating bidirectional fish-fluid coupling. The model formulation is internally consistent and builds on established fluid mechanics principles (method of images, potential flow theory).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CFD simulations validate the dipole model against full Navier-Stokes solutions for a giant danio swimming in a channel. The dipole model successfully captures key flow features including head-to-tail circulation and streamline compression near walls, with wake velocities less than 20% of anterior flow velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C69-C83 describe the CFD validation methodology and results. The comparison between dipole predictions and CFD simulations (Figure 3) demonstrates good qualitative agreement for the dominant flow features relevant to fish-wall interactions. The validation is appropriately scoped as 'first-order' analysis, acknowledging that viscous effects and wakes are neglected. Convergence analysis is referenced in Appendix 2, supporting computational rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C101",
+      "C102",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Mathematical analysis reveals that the fish dynamics reduce to a planar dynamical system for cross-stream position and orientation. The system predicts a critical flow speed threshold (controlled by dimensionless parameter \u03b2) above which upstream swimming becomes stable, accompanied by periodic cross-stream sweeping movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C101, C102, C122-C124 describe the key mathematical result. The reduction to a planar system is justified by the independence of dynamics from streamwise position. The existence of a critical threshold \u03b2* = \u03c0\u2074/32 is mathematically derived through stability analysis. The prediction of periodic oscillations follows from the neutral center stability of the upstream equilibrium. The mathematical derivations are detailed in the Materials and Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Stability analysis of equilibria is performed using linearization and eigenvalue analysis. For all dynamics, the state matrix has zero trace, so equilibria are either saddle points (unstable, negative determinant) or neutral centers (stable, positive determinant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 describe standard stability analysis methods correctly applied to the planar system. The zero-trace property is mathematically verified, and the classification of equilibria based on determinant sign is consistent with dynamical systems theory (supported by citation to Bakker, 1991). The mathematical derivations are provided in Materials and Methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C125",
+      "C134",
+      "C136",
+      "C182"
+    ],
+    "result": "The model predicts that rheotaxis can emerge through purely passive hydrodynamic mechanisms without any sensory feedback (\u03ba=0), provided flow speed and gradient are sufficiently large.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125, C134, C136, and C182 consistently state this prediction. Setting \u03ba=0 eliminates lateral line feedback, yet the model still predicts stable upstream swimming for \u03b2 > \u03b2*. This follows directly from the mathematical analysis where \u03b2 = \u03b1(1+\u03ba)/\u03c1\u00b2, so passive rheotaxis requires sufficiently large \u03b1 (flow speed and gradient) to compensate for \u03ba=0. The prediction is mathematically sound within the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C44",
+      "C45",
+      "C6"
+    ],
+    "result": "Model predictions of a critical flow speed threshold for rheotaxis find partial support in experimental literature. Several studies document threshold speeds or gradients above which fish successfully perform rheotaxis without visual cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C127, C44, C45, and C6 describe comparison with literature. The authors conducted a comprehensive literature review (Appendix 3) and found qualitative agreement with the threshold prediction. The 'partial support' qualification is appropriate given that experiments control only visual feedback while the model blocks all senses except lateral line. Parameter estimates in Table 1 show \u03b2 values spanning the critical threshold, consistent with observed rheotactic behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Direct experimental validation of the model is currently not possible because experiments only control visual feedback, while the model assumes all sensory modalities except lateral line are blocked. Eliminating all senses without compromising swimming ability is practically unfeasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 and C137-C139 acknowledge important limitations in comparing model with experiments. The reasoning is sound: water-motion cues can be accessed by tactile/cutaneous senses beyond lateral line (C131, supported by Coombs et al. 2020), and body-motion cues can be accessed by tactile/vestibular senses (C132). The practical challenges of complete sensory ablation are well-articulated (C139, supported by Coombs et al. 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors propose future experiments using robotic fish in open-loop operation (no sensory feedback) to test the passive rheotaxis prediction. Experimental parameters (flow speed, channel width, robot length) can be controlled to systematically vary \u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C150 outline a detailed experimental proposal. While the experimental design is thoughtful and addresses the validation gap, these are speculative suggestions for future work (all marked as SPECULATION evidence type). The feasibility and outcomes are uncertain. The proposal is scientifically sound but represents future work rather than completed research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C154",
+      "C155",
+      "C157"
+    ],
+    "result": "The model predicts that increasing lateral line feedback gain (\u03ba) broadens the stable region for rheotaxis, wider channels lower the critical speed threshold, and longer fish have lower thresholds. These predictions show qualitative agreement with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151, C152, C154, C155, and C157 describe model predictions compared with literature (Appendix 3). The predictions follow logically from the \u03b2 parameter dependence: \u03b2 = \u03b1(1+\u03ba)/\u03c1\u00b2, so increasing \u03ba or h (which decreases \u03c1) increases \u03b2, promoting stability. The 'qualitative agreement' and 'partial alignment' qualifications are appropriate given the model's simplifications and the presence of other senses in real experiments (C158).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The model predicts periodic cross-stream sweeping with frequency \u03c9\u2080 \u2248 (\u03c0\u00b2/2)\u03c1\u221a(\u03b2/\u03b2*-1), showing sublinear dependence on flow speed. This is in qualitative agreement with experiments by Elder and Coombs (2015) on Mexican tetra.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C162 describe the oscillation frequency prediction and comparison with experiments. The frequency formula (Equation 23) is mathematically derived from the linearized system. The sublinear dependence on flow speed follows from the square root relationship with \u03b2, which itself depends linearly on flow speed (through \u03b1). The comparison with Elder and Coombs (2015) data is appropriately qualified as 'qualitative agreement' given the weak positive tendency observed experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The model reveals a potential methodological oversight in laboratory rheotaxis studies: channel width has a modulatory effect on threshold speed and cross-stream frequency through bidirectional hydrodynamic interactions. This confounds comparison across studies and quantification of sensory modality roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C188 articulate a key implication of the model. The channel width effect follows directly from the model structure (\u03b2 depends on \u03c1 = r\u2080/h). The insight that narrow channels promote bidirectional interactions that mask background flow gradients (C156) is a logical consequence of the model. This represents an important contribution to experimental design considerations, though it is an inference from the model rather than direct experimental demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C41",
+      "C42",
+      "C43",
+      "C170"
+    ],
+    "result": "Bidirectional hydrodynamic interactions play a crucial role in rheotaxis, with fish acting as invasive sensors that both perturb and respond to the flow. This active manipulation of surroundings offers a pathway to overcome sensory deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C41-C43, and C170 emphasize the importance of bidirectional coupling. This conclusion is well-supported by the model structure (fish motion influences flow through dipole and images; flow influences fish through advection and turning) and the predictions that follow (threshold behavior, channel width effects). However, C8 characterizes this as an 'overlooked limitation' of existing paradigms, which is somewhat speculative since the practical significance depends on experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The model has limitations including neglect of fish elasticity and inertia, simplified linear lateral line feedback, and exclusion of other sensory modalities. Future work should incorporate dynamic/unsteady effects, refine feedback mechanisms through neurophysiological experiments, and develop multisensory frameworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C180 acknowledge model limitations and suggest future directions. The limitations are clearly stated and scientifically reasonable. The neglect of elasticity/inertia (C172) may affect transient predictions. The linear feedback assumption (C176) requires experimental validation. The suggestions for future work are appropriate and well-justified, though they represent speculation about research directions rather than completed work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C70",
+      "C97",
+      "C98"
+    ],
+    "result": "The flow is modeled as potential flow to capture mean flow physics while averaging turbulence contributions. This neglects boundary layers and viscous wakes but provides a first-order approximation suitable for analyzing fish-wall interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C70, C97, and C98 describe the fluid modeling assumptions. The potential flow approximation is standard for inviscid analysis and is justified as capturing mean flow features. The CFD validation (C81-C83) supports that the dipole model captures the dominant flow features relevant to rheotaxis. The limitations are clearly acknowledged, and the scope is appropriately defined as 'first-order analysis.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The model assumes fish inertia is negligible (instantaneous response to flow changes) and that lateral line feedback is based on circulation measurement in a region surrounding the fish, implemented as linear feedback \u03bb = K\u0393.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C86, C94-C96 describe key modeling assumptions. The negligible inertia assumption (C85) is supported by citation to Filella et al. 2018 but may affect accuracy for transient phenomena (C172). The circulation-based feedback hypothesis (C94) is supported by citations to Oteiza et al. 2017 and Burbano-L and Porfiri 2021, but the linear form is simplified and requires experimental validation (C176). The assumption is reasonable for a minimal model but represents a hypothesis rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C90",
+      "C93"
+    ],
+    "result": "The model predicts that channel walls have a retarding effect on fish swimming speed that increases near walls, and fish may turn toward or away from walls depending on parameters and orientation. This is not viscous drag but rather the impact of solid boundaries in potential flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C90, and C93 describe predictions about wall effects. These follow directly from the mathematical formulation (Equations 7-8). The retarding effect arises from the method of images in potential flow theory. The clarification that this is not viscous drag (C90) is important and correct. The turning behavior (C93) follows from the competition between wall-induced and background flow-induced turning rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "The T-dipole formulation is chosen based on theoretical consistency with vortex dynamics and intuition about flow physics. The fish is interpreted as a bluff body rotating due to differential drag on left/right sides, amplified by pectoral fins. Whether T-dipole or A-dipole is more accurate remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C196 justify the T-dipole choice and acknowledge uncertainty. The reasoning is transparent: T-dipole is consistent with vortex advection principles (C190) and has physical interpretation via differential drag (C191-C192). The acknowledgment that superiority over A-dipole is unclear (C194) is honest. The suggestion of CFD or robotic fish experiments for resolution (C196) is appropriate. The choice is justified but represents a modeling decision with inherent uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C207",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "Model parameters are estimated from literature: \u03c1\u00b2 \u2208 [10\u207b\u2074, 10\u207b\u00b2], \u03b1 \u2208 [0, 1], and \u03ba \u223c 10\u00b9 for high rheotactic performance. These estimates yield \u03b2 values spanning the critical threshold \u03b2* \u2248 3, consistent with observed rheotactic behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203, C204, C207, C210-C212 describe parameter estimation from literature data. The estimates are based on reasonable assumptions about fish swimming speeds (few body lengths/s), channel dimensions (3-10 body lengths wide), and tail beat amplitudes (0.2l). The range of \u03b2 values in Table 1 (from 0 to 256) encompasses the critical value, supporting the model's relevance to experimental observations. The estimation approach is transparent and appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

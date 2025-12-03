@@ -1,0 +1,1042 @@
+{
+  "submission": {
+    "id": "eb4f48b3-d574-4aac-89a4-218a160e6744",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:55:19.321380Z",
+    "updated_at": "2025-12-03T13:55:19.321380Z"
+  },
+  "content": [
+    {
+      "id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "submission_id": "eb4f48b3-d574-4aac-89a4-218a160e6744",
+      "content_type": "manuscript",
+      "content_text": "# The integrated stress response remodels the microtubule-organizing center to clear unfolded proteins following proteotoxic stress\n\n## Authors\n\n- Brian Hurwitz<sup>1</sup> ([ORCID: 0000-0002-1948-6317](https://orcid.org/0000-0002-1948-6317))\n- Nicola Guzzi<sup>1</sup> ([ORCID: 0000-0002-3898-8064](https://orcid.org/0000-0002-3898-8064))\n- Anita Gola<sup>1</sup>\n- Vincent F Fiore<sup>1</sup>\n- Ataman Sendoel<sup>2</sup>\n- Maria Nikolova<sup>1</sup>\n- Douglas Barrows<sup>3</sup>\n- Thomas S Carroll<sup>3</sup>\n- H Amalia Pasolli<sup>4</sup>\n- Elaine Fuchs<sup>1</sup> ([ORCID: 0000-0002-0978-5137](https://orcid.org/0000-0002-0978-5137)) \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, Robin Chemers Neustein Laboratory of Mammalian Cell Biology and Development, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))\n2. Institute for Regenerative Medicine, University of Zurich Zurich Switzerland\n3. Bioinformatics Resource Center, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))\n4. Electron Microscopy Resource Center, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCells encountering stressful situations activate the integrated stress response (ISR) pathway to limit protein synthesis and redirect translation to better cope. The ISR has also been implicated in cancers, but redundancies in the stress-sensing kinases that trigger the ISR have posed hurdles to dissecting physiological relevance. To overcome this challenge, we targeted the regulatory node of these kinases, namely, the S51 phosphorylation site of eukaryotic translation initiation factor eIF2\u03b1 and genetically replaced eIF2\u03b1 with eIF2\u03b1-S51A in mouse squamous cell carcinoma (SCC) stem cells of skin. While inconsequential under normal growth conditions, the vulnerability of this ISR-null state was unveiled when SCC stem cells experienced proteotoxic stress. Seeking mechanistic insights into the protective roles of the ISR, we combined ribosome profiling and functional approaches to identify and probe the functional importance of translational differences between ISR-competent and ISR-null SCC stem cells when exposed to proteotoxic stress. In doing so, we learned that the ISR redirects translation to centrosomal proteins that orchestrate the microtubule dynamics needed to efficiently concentrate unfolded proteins at the microtubule-organizing center so that they can be cleared by the perinuclear degradation machinery. Thus, rather than merely maintaining survival during proteotoxic stress, the ISR also functions in promoting cellular recovery once the stress has subsided. Remarkably, this molecular program is unique to transformed skin stem cells, hence exposing a vulnerability in cancer that could be exploited therapeutically.\n\n## Introduction\n\nEukaryotic cells rely on highly conserved pathways to dynamically control translational machinery in response to various stimuli. One such pathway, the integrated stress response (ISR), is triggered when one of four stress-sensing kinases becomes active: (1) heme-regulated inhibitor kinase (HRI) is activated by oxidative stress, such as arsenite; (2) protein kinase R (PKR) is activated by viral infections; (3) PKR-like endoplasmic reticulum kinase (PERK) is induced when unfolded proteins accumulate (proteotoxic stress) and when the endoplasmic reticulum (ER) becomes stressed; and (4) general control non-depressible 2 (GCN2) is induced in poor nutrient conditions, particularly amino acid deprivation (Costa-Mattioli and Walter, 2020; El-Naggar and Sorensen, 2018). Activation of any of these four kinases results in phosphorylation of serine 51 of eIF2\u03b1, a core component of the canonical translational initiation complex. Since phosphorated eIF2\u03b1 blocks the guanine nucleotide exchange factor eIF2B from stimulating the eIF2-GTP-methionyl-initiator tRNA ternary complex, the translation of housekeeping mRNAs is decelerated, and initiation of new protein synthesis is dampened. Concomitantly, non-canonical translational mechanisms emerge to synthesize key stress response proteins that help restore physiological balance to the cell and aid in survival (Figure 1A; Pakos-Zebrucka et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the integrated stress response pathway showing activating kinases, inhibitory phosphatases, and downstream effects. Mutation of eIF2\u03b1 serine 51 to alanine renders cells insensitive to the ISR activating kinases (\u2018ISR-null\u2019). (B) Reconstitution and knockout strategy to generate ISR-null SCC cell lines. Constructs encoding a myc-epitope tagged and CRISPR-Cas9-resistant eIF2\u03b1 (either S51 or S51A) are packaged into lentivirus and integrated into a parental SCC stem cell (SCC-SC) line. Following neomycin selection, CRISPR-Cas9 is delivered by RNP transfection to selectively knock out endogenous eIF2\u03b1 alleles. Clones grown from single cells are analyzed for knockout by deep sequencing the gRNA target locus. (C) Representative immunoblot confirms both the replacement of the endogenous eIF2\u03b1 with myc-tagged eIF2\u03b1 and the failure of cells expressing eIF2\u03b1-S51A to activate the ISR. Cells were treated with 100 \u03bcM sodium arsenite for 6 hr to induce oxidative stress. (D) ISR-competent cells induce eIF2\u03b1 phosphorylation upon stress. Representative immunoblot shows levels of eif2\u03b1 phosphorylation of cells treated with either 50 \u03bcM sodium arsenite, 100 ng/mL tunicamycin, or 100 nM bortezomib for 6 hr. Bar graph shows normalized levels of eIF2a phosphorylation \u00b1 SD in three independent biological experiments. *p<0.05, ***p<0.001 (t-test). (E) Bar graph shows normalized protein synthesis rates \u00b1 SD relative to vehicle-treated S51 SCC cells in S51 and S51A cells treated with either 50 \u03bcM sodium arsenite, 100 ng/mL tunicamycin, or 100 nM bortezomib for 6 hr in at least three independent biological experiments. *p<0.05, ns, no statistical significance (t-test). (F) ISR-null SCC cells are more sensitive to stress. Early signs of apoptosis are measured by Annexin-V binding in control and ISR-null cells treated with 5 \u03bcM sodium arsenite, 100 ng/mL tunicamycin, or 4 nM bortezomib for 24 hr. Bar graph shows percentage of Annexin-V-positive cells \u00b1 SD of N = 3 independent biological experiments. *p<0.05, **p<0.01, ns, no statistical significance (t-test). (G) Keratinocytes isolated from littermate controls were treated with 4 nM bortezomib for 24 hr. Wild-type (Tgfbr2fl/fl), pre-oncogenic (HrasG12V; Tgfbr2fl/fl), and SCC keratinocytes (HrasG12V; Tgfbr2\u0394/\u0394) were compared. Bar graph shows percentage of Annexin-V-positive cells \u00b1 SD in four independent biological replicates. ***p<0.001 (t-test).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) ISR-null cells show reduced capacity to activate the ISR as judged by global protein synthesis rate. No difference in protein synthesis rate was observed at steady state (vehicle-treated cells). ISR-WT and ISR-null cells are treated with 50 \u03bcM sodium arsenite (to induce oxidative stress), 100 ng/mL tunicamycin (to induce endoplasmic reticulum [ER] stress), or 100 nM bortezomib (to induce proteotoxic stress) for 6 hr followed by incubation with puromycin at 1 \u03bcM for 30 min and anti-puromycin immunoblot. (B) Representative immunoblot shows inhibition of mTORC1 pathway in both S51 and S51A cells upon stress. Cells were treated with either vehicle, 50 \u03bcM sodium arsenite, 100 ng/mL tunicamycin, or 100 nM bortezomib for 6 hr. Representative blots from two independent biological replicates are shown.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Bar graph shows no difference in viability in control and ISR-null cells at steady state in 3 independent biological replicates. Error bars denote SD. ns, no statistical significance (t-test). (B) Quantification of cell count over time demonstrates no difference in proliferation rate between ISR-competent and ISR-null cells. Representation of N = 4 experiments and n = 16 total technical replicates per condition, error bars denote SD of pooled technical replicates. (C) Representative brightfield microscopy images of control and ISR-null cells show similar morphology in the absence of stress. (D) ISR-null cells are more sensitive to stress. Representative fluorescence-activated cell sorting (FACS) plot show increased Annexin-V staining in ISR-null cells after 24 hr treatment with 5 \u03bcM sodium arsenite or 100 ng/mL tunicamycin.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Schematic of the experiment. Briefly keratinocytes from healthy control (Tgfbr2fl/fl), pre-oncogenic (HrasG12V; Tgfbr2fl/fl), or fully transformed (HrasG12V; Tgfbr2\u0394/\u0394) skin were isolated and incubated with 4 nM bortezomib for 24 hr, before evaluating percentage of apoptotic cells. Right: representative fluorescence-activated cell sorting (FACS) plot illustrate percentages of Annexin-V and DAPI-positive cells.\n\nThis paradoxical translational upregulation of a subset of mRNAs can be driven by several mechanisms, including (1) lowering the dependency on the cap-binding complex eIF4F (Schuster and Hsieh, 2019), (2) initiating non-canonical translation within 5\u2032 untranslated regions (5\u2032 UTRs) that harbor dynamic N6-methyladenosine (m6A) RNA modification sites and/or 5\u2032 upstream open reading frames (uORFs) (Sendoel et al., 2017; Starck et al., 2016; Zhou et al., 2018), and finally (3) directly recruiting translation factors and ribosomes to the 5\u2032 UTR of stress-responsive mRNAs (Guan et al., 2017). This selective repurposing of the translational machinery forms the foundation of a cellular stress response aimed at restoring homeostasis.\n\nThe best-studied translational target of the ISR is Atf4, encoding activating transcription factor 4 (ATF4), whose translation is repressed in homeostatic conditions by the presence of inhibitory uORFs in its 5\u2032 UTR. Upon stress, Atf4 translation is unleashed, and the newly synthesized protein mediates transcriptional upregulation of stress response genes, thus acting as a crucial regulator in the balance of cell death and survival. In fact, known ATF4 targets include both cytoprotective and apoptotic factors. That a single ISR target can have such diverging and context-specific roles highlights the complexity of the cellular stress response and indicates the possibility that the ISR might translationally regulate additional cellular programs to coordinate survival, adaptation, and recovery from stress.\n\nAt the interfaces of cellular proliferation, apoptosis, survival, and protein synthesis, the ISR has naturally emerged as an area of interest in cancer research. Although studies on the role of the ISR in cancer have been conflicting, the notion that the ISR is protective for cancer cells has gained traction in recent years (Ghaddar et al., 2021; Koromilas, 2015). This is in line with the observation that cancer cells experience hostile microenvironments characterized by nutrient deprivation and low oxygen availability. Additionally, the proliferative stress and elevated metabolic demands of cancer cells create an increased reliance on the cellular mechanisms that maintain proteostasis, a central function of the ISR (Cubillos-Ruiz et al., 2017). Indeed, proteasome inhibition as an anticancer therapy is aimed at exploiting this vulnerability. That said, although proteasome inhibitors have become the standard of care for multiple myeloma and mantle-cell lymphoma (Manasanch and Orlowski, 2017), this strategy has been less effective in solid tumors, suggesting that these tumors may utilize mechanisms that enable them to cope, survive, and recover in the face of proteotoxic stress, thereby evading therapeutics (Tian et al., 2021).\n\nIn this study, we focus on the most common and life-threatening solid tumors, squamous cell carcinomas (SCCs), which affect stratified squamous epithelia of the skin, esophagus, lung, and head and neck. To investigate the roles of the ISR in this cancer, we took advantage of our ability to culture the tumor-initiating stem cells from mouse skin SCCs and generated primary, clonal cell lines in which the endogenous eIF2\u03b1 alleles were replaced by myc-epitope tagged but otherwise fully functional versions of either wild-type eIF2\u03b1 or eIF2\u03b1-S51A (ISR-null). Although unable to mount an ISR in the face of stress, ISR-null SCC stem cells formed tumors that were similar in morphology and proliferation characteristics to controls. However, both in vivo and in vitro, when challenged with proteotoxic stress, ISR-null SCC cells fared considerably more poorly than their ISR-competent counterparts.\n\nWhile the HRI and PERK kinases have emerged as major players in sensing misfolded proteins (Abdel-Nour et al., 2019; Harding et al., 1999), a detailed understanding of how the ISR promotes proteostasis is lacking. To probe into the mechanisms that link the ISR to proteostasis, we coupled genetics, cell biology, pharmacological inhibitors, ribosomal profiling, and finally functional analyses. We traced the connection to a group of centrosomal proteins that become selectively translated in response to proteotoxic stress. We show that these proteins act by strengthening the organizing center for microtubule dynamics that are needed to efficiently amass unfolded proteins at the pericentrosomal locale, where they can be efficiently targeted for destruction and clearance. At the crux of this response is ATF5, a core component of the centrosome, which we found to be translationally upregulated selectively upon proteotoxic stress. Here, we unravel a cancer-specific mechanism in which ATF5 protects the microtubule-organizing center (MTOC) to promote cellular recovery and resistance to proteotoxic stress. Our findings add a new dimension, microtubule dynamics, to the role of the ISR not only in stress, but also in the recovery of cells to stress. In so doing, our findings also expose a hitherto unappreciated vulnerability of cancer cells that is unleashed when they are unable to mount an ISR in the face of proteotoxic stress.\n\n## Results\n\n### Activation of the ISR upon proteotoxic stress promotes survival in SCC cells\n\nIn order to directly test the role of the ISR in SCC cells, we generated eIF2\u03b1-S51A or \u2018ISR-null\u2019 cancer cells using a knockout and reconstitution strategy. For this purpose, we used an aggressive HrasG12V murine, primary-derived skin SCC line expressing an eGFP reporter (Yang et al., 2015). We transduced these cells with lentiviral constructs harboring a PGK promoter-driven cDNA encoding either the wild-type (S51) or phospho-dead (S51A) eIF2\u03b1 protein (encoded by the Eif2s1 locus) (Figure 1B). The Eif2s1 transgenes each contained a synonymous mutation in a protospacer adjacent motif (PAM) site that rendered it resistant to a guide RNA (gRNA) that could be used to specifically target the endogenous Eif2s1 gene for CRISPR/Cas9 deletion.\n\nCells transduced with the myc-tagged Eif2s1 constructs were transfected with liposomes harboring CRIPSR-Cas9/sgRNA ribonucleoproteins, which targeted the ablation of the endogenous Eif2s1 alleles, and thus left the myc-tagged S51 or S51A transgenes as the sole source of eIF2\u03b1 expression. Following ablation and reconstitution, single cells were isolated by fluorescence-activated cell sorting (FACS) and used to generate stable SCC clones. Successful targeting of the two endogenous Eif2s1 alleles was verified by genomic sequencing (Figure 1B).\n\nTwo of each S51 and S51A eIF2\u03b1 replacement clones were chosen for further study. In all assays presented in Figures 1 and 2, the clones of the same eIF2\u03b1 status grew and behaved similarly. Hence for the purposes of this study, we show the results on pooled clones displaying common genotypes. Immunoblot analyses revealed that total eIF2\u03b1 levels were comparable to the parental eIF2\u03b1 clone, and the replacement eIF2\u03b1 proteins exhibited the expected increase in size due to the epitope tag (Figure 1C). Importantly, when we treated these SCC lines with sodium arsenite to induce oxidative stress and activate the HRI kinase (Sendoel et al., 2017), we observed that like the parental clone, the stressed eIF2\u03b1 S51 cells displayed phospho-S51 immunolabeling, while the eIF2\u03b1 S51A clones were refractory to phosphorylation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig2-v2.jpg)\n\n**Figure 2.:** (A) Left: growth of tumor allografts derived from control or ISR-null squamous cell carcinoma (SCC) cells. Tumor volume is comparable between conditions. Error bars represent SEM from N = 16 tumors per condition. ns, no statistical significance (simple linear regression). Right: \u03b16-integrin and E-cadherin immunofluorescence of SCC on day 17 reveals that ISR-ablation does not impact tumor morphology. Boxed regions are shown at higher magnification images to the right of each image. Scale bar 100 \u03bcm. (B) Cleaved caspase 3 immunofluorescence of tumor sections reveals elevated apoptosis, a sign of increased sensitivity of ISR-null SCC tumors to proteotoxic stress (bortezomib treatment 1.2 mg/kg i.p. on days 13, 15, and 17). No significant difference in viability is observed in vehicle-treated SCC tumors. White arrows indicate cleaved caspase 3-positive cells. Bar graph on the right shows percentage of cleaved caspase 3-positive cells \u00b1 SD within the GFP+ tumor cells, in at least five independent tumors. * p<0.05, ns, no statistical significance (one-way ANOVA, multiple comparisons). Scale bar 100 \u03bcm. (C) Schematic of protein aggregate pulse-recovery experiments. Cells are treated with a saturating (100 nM) dose of bortezomib for 6 hr, a timepoint at which protein aggregates have accumulated, but cells are still viable. Bortezomib is washed from the media and cells are then monitored during the recovery phase. (D) Cellular proliferation during the protein aggregate recovery phase indicates that control cells regain proliferative capacity 24 hr prior to ISR-null cells. N = 4 biological replicates, n = 16 total technical replicates, error bars denote SD of technical replicates. ****p<0.0001 (two-way ANOVA, multiple comparisons). (E) Protein aggregates evaluated by anti-ubiquitin and K48-linked polyubiquitin immunoblot following cellular fractionation of soluble and insoluble proteins. Representative immunoblot of the insoluble fraction shows clearance of aggregates in control but not ISR-null cells at 24 hr. (F) Bar graph shows log2 fold change (FC) ubiquitin levels \u00b1 SD normalized over \u03b2-actin and relative to vehicle-treated control cells in at least two independent biological experiments. **p<0.01 (t-test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Bar graph shows tumor volume quantification \u00b1 SD on day 40 in mice transplanted with either control or ISR-null SCCs. A minimum of seven tumors per condition were quantified. ns, no statistical difference (t-test). (B) Secondary ex vivo control and ISR-null SCC cell lines were generated by fluorescence-activated cell sorting (FACS) isolation of day 35 tumors initiated and grown from transplantation of our primary control and ISR-null SCC lines. p-eIF2\u03b1 and ATF4 immunoblot following 4 hr treatment with 50 \u03bcM sodium arsenite shows that neither ISR-null clone (N = 2) has escaped ISR-ablation. This experiment rules out the trivial explanation that ISR-null SCC growth is due to \u2018escaper\u2019 cells that have reverted to a wild-type ISR state.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Schematic illustrates experimental design for our bortezomib pulse and recovery system. Cells are treated for 6 hr with 100 nM bortezomib and let to recover for 24 hr. Viability is assessed at two timepoints (0 hr recovery and 24 hr recovery) (B) Integrated stress response (ISR)-null cells show no difference in viability after a short (6 hr) pulse of 100 nM bortezomib. Bar graph shows percentage of live cells \u00b1 SD quantified as DAPI-negative cells by fluorescence-activated cell sorting (FACS) in three independent experiments. ns, no statistical significance (t-test). (C) ISR-null cells show no difference in viability after a 24 hr recovery from a 6 hr pulse of 100 nM bortezomib. Bar graph shows percentage of live cells \u00b1 SD quantified as DAPI-negative cells by FACS in three independent experiments. ns, no statistical significance (t-test).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Protein aggregates formation is dependent on newly synthesized proteins. Ubiquitin immunoblot in the radio-immunoprecipitation assay (RIPA)-insoluble fraction shows absence of protein aggregates in control cells either treated with 10 \u03bcM of the translation elongation inhibitor cycloheximide or 2 \u03bcg/mL of the translation initiation inhibitor harringtonine concomitantly with the bortezomib pulse. (B) Protein aggregates clearance is dependent on eIF2\u03b1 dephosphorylation. S51 squamous cell carcinoma (SCC) cells were treated concomitantly with bortezomib and 10 \u03bcM salubrinal to inhibit eIF2\u03b1 phosphatases. After 6 hr, cells were washed and let to recover for 24 hr in the presence of salubrinal. Representative immunoblot shows accumulation of protein aggregates in the RIPA-insoluble fraction of salubrinal-treated S51 cells. (C) Autophagy is only partially required to clear protein aggregates. Ubiquitin immunoblot in the RIPA-insoluble fraction shows partial accumulation of protein aggregates in the presence of 100 nM of the autophagy inhibitor bafilomycin A1. (D) PKR-like endoplasmic reticulum kinase (PERK) inhibition promotes aggregates formation in an integrated stress response (ISR)-independent manner. S51 and S51A cells were pretreated with 2.5 \u03bcM GSK2606414 for 1 hr prior to a 6 hr bortezomib pulse. Following wash, cells were let to recover for 24 hr in the presence of 2.5 \u03bcM GSK2606414. Representative immunoblot shows further increase in protein aggregates accumulation in both S51 and S51A cells.\n\nTaken together, these results underscored the efficacy of our knockout and replacement strategy, and verified the complete loss of eIF2\u03b1 phosphorylation at the heart of the ISR.\n\nTo further interrogate the functionality of our SCC lines in mounting an ISR, we analyzed eIF2 responsiveness to different types of stress. In all cases, our S51 cells showed a marked increase in phosphorylation following stress induction, albeit at different levels in response to distinct stresses (Figure 1D). As eIF2\u03b1 phosphorylation decommissions this canonical translational regulator and dampens protein synthesis rates, we also examined translational rates in response to the three stressors. Using puromycin incorporation as a gauge to measure nascent protein synthesis, we observed that indeed all three stressors dampened protein synthesis rates in our eIF2\u03b1 S51 SCC cells (Figure 1E, Figure 1\u2014figure supplement 1A). As expected, no ISR-dependent differences in protein synthesis were observed in unstressed cells. However, stressed S51A SCC cells failed to limit protein synthesis at the same rate as S51 SCC cells following exposure to oxidative stress or tunicamycin (which induces ER-stress through eIF2\u03b1-S51 phosphorylation by PERK kinase) (Figure 1E, Figure 1\u2014figure supplement 1A).\n\nBy contrast, the proteosome inhibitor bortezomib (a boronic acid dipeptide derivative) seemed refractory to ISR-dependent changes in protein synthesis rates. This was surprising as bortezomib acts by accumulating misfolded proteins, which in turn induce ER-stress and eIF2\u03b1-S51 phosphorylation (Figure 1D; Jiang and Wek, 2005; Suraweera et al., 2012; Yerlikaya and Okur, 2020). Suspecting alternative mechanisms, we first showed that bortezomib inhibited the mTORC1 pathway (Figure 1\u2014figure supplement 1B), suggesting that mTORC1 is primarily responsible for the global reduction in protein synthesis rates during proteotoxic stress response.\n\nWe next asked whether the ISR might be dispensable in our SCC cells exposed to proteotoxic stress. Under the serum-rich culture conditions used here, S51 and S51A SCC cells proliferated at comparable rates and showed no differences in viability (Figure 1\u2014figure supplement 2A and B). Analogously, the morphologies of these cells were indistinguishable under these conditions (Figure 1\u2014figure supplement 2C). However, upon exposure to proteotoxic stress, nearly 3\u00d7 more eIF2\u03b1-S51A cells were positive for the apoptotic marker Annexin-V over counterparts with an intact ISR. This sensitivity was even greater for bortezomib than for other stressors (Figure 1F, Figure 1\u2014figure supplement 2D). These findings unequivocally established the importance of the ISR in SCC cells faced with proteotoxic stress. However, its role in the process was not in dampening global protein synthesis, but rather in inducing a pro-survival program.\n\nWas this feature unique to transformed cells? To this end, we compared sensitivity to bortezomib in skin keratinocytes isolated from littermates: either wild-type control (Tgfbr2fl/fl), pre-oncogenic (HrasG12V; Tgfbr2fl/fl), or fully transformed (HrasG12V; Tgfbr2\u0394/\u0394). Interestingly in the presence of bortezomib, pre-oncogenic and fully transformed stem cells were significantly more resistant to cell death compared to wild-type stem cells (Figure 1G, Figure 1\u2014figure supplement 3A). Taken together, our collective data indicate that when faced with proteotoxic stress, SCC cells gain a fitness advantage as long as they can activate an ISR. Our data further implied that in proteotoxic stress the ISR\u2019s role in cancer cells seems to be to shift to a translational landscape that is more favorable for survival.\n\n### The ISR promotes efficient clearance of protein aggregates\n\nWhen epidermal stem cells acquire a single oncogenic mutation and will eventually progress to SCC, they activate alternative translational pathways suggestive of an ISR (Blanco et al., 2016; Sendoel et al., 2017). Intriguingly, however, when we injected our SCC cells into the skins of immunocompromised, athymic (Nude) mice, S51A and S51 SCC cells both formed tumors that grew similarly and showed similar morphologies (Figure 2A, Figure 2\u2014figure supplement 1A). This was not attributable to \u2018escapers\u2019 that had somehow circumvented the S51A mutation in vivo as FACS-sorted SCC stem cells from S51A tumors still displayed insensitivity to sodium arsenite-induced eIF2\u03b1 phosphorylation in contrast to their S51 counterparts (Figure 2\u2014figure supplement 1B).\n\nStrikingly, and consistent with our in vitro findings, when we treated our mice with bortezomib, the in vivo S51A SCC tumors exhibited significantly greater sensitivity to proteotoxic stress and apoptosis than their counterparts (Figure 2B). These findings were particularly relevant given that despite intense interest in proteasome inhibitors as a potential new line of cancer therapeutics, solid tumors have shown resistance to these drugs (Fournier et al., 2010; Manasanch and Orlowski, 2017). Taken together, our results raised the tantalizing possibility that, if the ISR is crippled in solid tumors, their tumor-propagating stem cells may acquire increasing sensitivity to added stress.\n\nWhile the ISR was known to be activated by unfolded proteins that accumulate upon proteasome inhibition (Figure 1D; Pakos-Zebrucka et al., 2016), it remained unclear how the ISR was protecting cancer cells against proteotoxic stress. To dissect the underlying mechanisms, we asked whether the ISR might participate in the cell recovery phase. To test this possibility, we established a two-step in vitro model of first triggering SCC cells to accumulate an excess of unfolded proteins and then allowing them to recover from the stress. To this end, we treated cultured control or ISR-null SCC cells in vitro with a saturating dose of bortezomib for 6 hr, at which point we washed the cells and switched to fresh media to allow cells to recover (Figure 2C). Following this bortezomib \u2018pulse,\u2019 control SCC cells with a competent ISR recovered and began to proliferate within 24\u201348 hr. In striking contrast, ISR-null SCC cells took a full 24 hr longer than their counterparts before they began to proliferate again (Figure 2D). Intriguingly, this could not be imputed to differences in viability on a short timescale since following this treatment regime, ISR-null and ISR-competent SCC stem cells displayed no difference in Annexin-V positivity either at 6 hr of bortezomib treatment or at 24 hr after recovery (Figure 2\u2014figure supplement 2A\u2013C).\n\nThe first step in targeting unfolded proteins for degradation is their ubiquitination (Smith et al., 2011). We therefore examined the clearance of ubiquitinated proteins in SCC cells recovering from proteotoxic stress. Following treatment with bortezomib, cells were lysed in radio-immunoprecipitation assay (RIPA) buffer, and soluble and insoluble proteins were then fractionated by centrifugation. Each fraction was normalized based on the protein concentration of the soluble fraction and then subjected to polyacrylamide gel electrophoresis and analyzed by anti-ubiquitin immunoblots.\n\nISR-null and control SCC cells responded similarly to bortezomib, displaying a rapid jump in ubiquitinated proteins within 6 hr of treatment (Figure 2E and F). After withdrawing bortezomib, however, the rate at which ubiquitinated proteins were cleared from the insoluble fraction was remarkably reduced in the ISR-null cells compared to control SCC cell lysates. As lysine 48-linked polyubiquitin is the specific mark of proteins targeted for proteasomal degradation (Thrower et al., 2000), we performed anti-K48-polyubiquitin immunoblot analyses (Figure 2E). These data confirmed that SCC cells that are unable to mount an ISR are not defective in their E3-ubiquitin-ligase system per se, but rather are impaired in their ability to efficiently clear proteins that are marked for proteosomal clearance.\n\nWe also used this assay to interrogate the source of the insoluble protein aggregates induced by bortezomib. To do so, we treated cells concurrently with cycloheximide, to block new protein synthesis and with bortezomib, to inhibit proteosome-mediated aggregated protein clearance. Inhibiting translation elongation with cyclohexamide or translation initiation with harringtonine almost entirely blocked the buildup of protein aggregates following 6 hr of bortezomib treatment. These data demonstrate that the aggregates in SCC cells treated with bortezomib originate from the accumulation of newly synthesized, unfolded proteins (Figure 2\u2014figure supplement 3A). Additionally, we found that the ability of a cell to resolve the ISR was required to promote clearance of protein aggregates. Thus, when ISR-competent cells were treated with salubrinal, a selective inhibitor of eIF2\u03b1 dephosphorylation, aberrant ubiquitinated aggregates accumulated following 24 hr of recovery from the bortezomib pulse (Figure 2\u2014figure supplement 3B).\n\nWe next addressed the extent to which the proteosome versus autophagy is responsible for the clearance of these ubiquitin-marked protein aggregates during the recovery phase following bortezomib treatment. To do so, we treated with bortezomib for 6 hr, and then after washing out the drug, we either allowed both pathways to participate in clearance or added bafilomycin A1 to block the autophagy pathway. As shown in Figure 2\u2014figure supplement 3C, BafA1 delayed recovery partially but not fully. Taken together, these data indicated that both autophagy and the proteasome cooperate in clearing these ubiquitin-marked protein aggregates during the recovery phase following proteotoxic stress.\n\nIntriguingly, PERK kinase was hyperactivated in our S51A cells (Figure 2\u2014figure supplement 3D). Given that PERK has other targets besides eIF2\u03b1 S51, we asked whether and how PERK signaling might be involved in clearing these protein aggregates. Indeed, inhibition of PERK signaling by GSK2606414 resulted in increased aggregate accumulation, but this appeared to be irrespective of the status of eIF2\u03b1. PERK participated in protein aggregate clearance independently of the ISR, suggesting that other PERK targets, possibly NRF2 (Pajares et al., 2017), may be involved. That said, it was notable that even when PERK was inhibited, ISR-null cells retained a higher accumulation of ubiquitin-positive aggregates when compared to ISR-competent cells (Figure 2\u2014figure supplement 3D). These data suggest that the phenotype observed is driven by an ISR-dependent mechanism that does not require PERK.\n\n### The ISR responds to proteotoxic stress by upregulating translation of centrosomal proteins\n\nWe next turned to explore how the ISR might be involved in the process of cellular recovery from proteotoxic stress. The delayed rate in protein aggregate clearance seen in ISR-null cells was not attributable to a higher rate of global protein synthesis as this was comparable to the ISR-competent control cells (Figure 1E, Figure 1\u2014figure supplement 1A). We therefore asked whether the ISR might be required to drive translation of select mRNAs upon proteotoxic stress, and if so, whether the proteins produced under such circumstances might give us clues into how the ISR functions in recovery. To this end, we performed ribosome profiling to landscape the ISR-mediated impact on translation during proteotoxic stress (Figure 3A; Ingolia et al., 2009; McGlincy and Ingolia, 2017).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of ribosome profiling experiment. N = 4 samples per condition of control or ISR-null cells were treated with or without 100 nM bortezomib for 4 hr. Cells were lysed in the presence of 100 \u03bcg/mL cycloheximide and total mRNA and ribosome-protected fragments (RPFs) were sequenced to analyze translational efficiency (TE) genome-wide. (B) Filtering strategy to identify a high-confidence list of translationally regulated mRNAs targeted by the ISR following protein aggregate stress. To identify translationally regulated mRNAs, a two-step approach was taken. First, genes with RPF of a fold change >1.5 and padj <0.05 (DESeq2 generalized linear model) were identified. Second, within this list, genes with TE fold change >1.5 were selected (red dots, panels C and D). Finally, ISR target genes are identified by the overlap of mRNAs with significantly upregulated translation in two comparisons: (1) ISR-competent-bort vs. ISR-competent-vehicle and (2) ISR-competent-bort vs. ISR-null-bort. (C) Dot plot shows TE log2 fold change vs. log2 mean transcript abundance genome-wide in ISR-competent-bort vs. ISR-competent-vehicle highlights both upregulated genes as well as a downregulated group of highly abundant transcripts (see legend in panel B). As expected, highly expressed housekeeping transcripts are translationally downregulated. (D) Dot plot shows RPF log2 fold change vs. total mRNA log2 fold change genome-wide in ISR-competent-bort vs. ISR-null-bort (see legend in panel B). (E) Pie chart shows high-confidence translational upregulated ISR targets. Overlap between translationally upregulated genes in (1) ISR-competent-bort vs. ISR-competent-vehicle and (2) ISR-competent-bort vs. ISR-null-bort is shown. (F) Z-scored heatmap of TEs for 24 genes translationally induced by the ISR. Centrosomal proteins are highlighted in green lettering. (G) Top Gene Ontology (GO) terms identified in categories of biological processes and cellular components using translationally induced genes by the ISR. Centrosomal proteins are enriched among cellular components. #p=0.061, *p<0.05, **p<0.01, ***p<0.001 (Benjamini test). (H) Representative RPF tracks for Atf5 reveal coding sequence translation are specifically induced in control cells treated with bortezomib. Atf5 coding sequence is shaded in red. (I) Representative immunoblot confirms ISR-dependent induction of ATF4 and ATF5 following protein aggregate stress.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Principal component analysis (PCA) plot shows variance of four independent replicates. Two major sources of variance are identified in our dataset: S51 vs. S51A (x-axis) and vehicle vs. bortezomib (y-axis). (B) Metagene analysis shows fraction of ribosome-protected fragment (RPF) reads \u00b1 SD respectively aligned to 5\u2032UTR, CDS, and 3\u2032UTR in at least three independent biological replicates. (C) Histograms show fraction of RPF reads \u00b1 SD corresponding to their length in nucleotides in at least three independent biological replicates. As expected, the majority of reads are found between 29 and 30 nt.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Bar graph shows log2 read counts of total RNA \u00b1 SD comparing vehicle and bortezomib-treated S51 cells in four independent biological replicates. While most mRNAs show no transcriptional differences (including all the identified centrosomal components), a few mRNAs show mild transcriptional upregulation (1 < log2FC < 2), while retaining significant increase in both ribosome occupancy (log2FC > 2.5 and padj < 0.01) and translational efficiency (log2 FC > 1). ns, no statistical difference, * log2FC > 1 and padj < 0.05 (DeSeq2). (B) Gene Ontology (GO) analysis shows top terms for biological processes and cellular components of 120 genes translationally downregulated by the integrated stress response (ISR). 120 genes are defined by the overlap of mRNAs with significantly downregulated translation in two comparisons: (1) ISR-competent-bort vs. ISR-competent-vehicle and (2) ISR-competent-bort vs. ISR-null-bort. (C) qPCR quantification of Atf5 and Atf4 mRNA levels \u00b1 SD in S51 and S51A cells either vehicle-treated or treated for 6 hr with bortezomib in four independent biological replicates. Data were normalized over Rps16.\n\nBriefly, we subjected control and ISR-null SCC cells to proteotoxic stress (bortezomib) or a vehicle control. Quadruplicate samples of each condition were then lysed in the presence of cycloheximide in order to preserve the ribosome location along transcripts. Total mRNAs were saved, and the remaining lysates were treated with RNase-I to digest away all mRNAs that were not protected by ribosomes. Total mRNAs and the ribosome-protected fragments (RPFs) were then prepared for deep sequencing, and the translational efficiency (TE) was analyzed by assessing the ratio of RPFs to total mRNA reads, genome-wide.\n\nReads were aligned to the mouse reference genome, and quality control was performed to confirm that we had successfully purified and sequenced RNA fragments that were protected by actively translating ribosomes. Technical replicates were found to co-vary within samples by subjecting them to principal component analysis (Figure 3\u2014figure supplement 1A). As a second quality control, metagene analysis was performed, which demonstrated that the majority of RPFs were found within coding segments, with relative peaks at the translation start and stop sites, as would be expected from a high-quality ribosome profiling dataset (Figure 3\u2014figure supplement 1B). The read lengths peaked between 29 and 32 nucleotides, corresponding to the correct length of mRNA protected by ribosomes from RNase-I digestion (McGlincy and Ingolia, 2017; Figure 3\u2014figure supplement 1C).\n\nHaving verified the efficacy of our data, we next focused on the translational response to proteotoxic stress in eIF2\u03b1-S51 control SCC cells bearing an intact ISR. To this end, we sought to identify mRNAs that displayed increased ribosome occupancy (RPF FC > 1.5 and padj(RPF) < 0.05) in bortezomib compared to vehicle-treated cells. To eliminate possible translational variances arising from transcriptional differences, we also normalized the RPF reads of each transcript according to total mRNA levels (Ingolia et al., 2009; McGlincy and Ingolia, 2017). This allowed us to identify genes with TEs (RPF/mRNA) that are sensitive to bortezomib, and whose translational changes are at the heart of ISR-mediated differences (Figure 3B). Interestingly, in our S51-SCC cells with an intact ISR, proteotoxic stress provoked the translational upregulation of 199 mRNAs (RPF FC > 1.5, padj (RPF) < 0.05, and TE FC > 1.5) (Figure 3C).\n\nNext, we performed the same analysis to compare ISR-competent and ISR-null cells upon proteotoxic stress. This revealed 167 mRNAs whose translational upregulation was dependent on the presence of an intact ISR (S51-bort vs. S51A-bort RPF FC > 1.5, padj (RPF) < 0.05, and TE FC > 1.5) (Figure 3D). These findings clearly showed that when SCC cells are refractory to proteotoxic stress-induced phosphorylation of eIF2\u03b1, their translational program is selectively perturbed.\n\nTo curate a list of specific ISR-targeted mRNAs, we identified genes for which the translation changed in response to bortezomib and only in cells with an intact ISR. To this end, we generated a Venn diagram, comparing (1) the 199 mRNAs translationally upregulated in control cells following bortezomib treatment, and (2) the 167 mRNAs that failed to be translationally upregulated by bortezomib when the ISR was crippled. By this criterion, 24 mRNAs surfaced as candidates for bona fide ISR translational targets and showed strong enrichment across all four sets of translational replicates of proteotoxic stress-induced SCC cells harboring an intact ISR (Figure 3E and F, Figure 3\u2014figure supplement 2A).\n\nWe used Gene Ontology enrichment analysis (GO-term) to ask if common biological processes or cellular components were translationally targeted by the ISR. As quality control, we first focused on the downregulated genes, resulting from the overlap of mRNA translationally downregulated upon bortezomib treatment in ISR-competent cells and that failed to be translationally downregulated in ISR-null cells. These 120 genes were clearly enriched in components of translational machinery, which is consistent with the known role of the ISR pathway in downregulating translation and housekeeping gene synthesis (Figure 3\u2014figure supplement 2B).\n\nNext, we performed GO-term analysis of the 24 upregulated ISR-targets (Figure 3G). Regulation of stress-induced transcription featured prominently in the top GO-terms for biological processes and was exemplified by the presence of ATF4, a well-established stress-induced transcriptional regulator that is activated in premalignant SCC cells by non-canonical translation when eIF2\u03b1 is phosphorylated (Sendoel et al., 2017). Most intriguing, however, were the top three GO-terms for cellular components: centrosomal proteins, MTOC proteins, and microtubule cytoskeletal proteins (Figure 3G and genes highlighted in green in Figure 3F).\n\nThe centrosome is the major cytoplasmic MTOC within interphase cells (Caviston and Holzbaur, 2006; Sanchez and Feldman, 2017; Woodruff et al., 2017). In SCC cells, like most other mammalian cells, the MTOC is located near the nucleus, where it is surrounded by pericentriolar proteins important for plus-ended microtubule growth towards the cell periphery. The polarity of microtubules establishes polarized transport, which, depending upon the motor protein involved, can occur either towards the minus ends at the MTOC or along the plus ends of the microtubules towards the focal adhesions.\n\nAlthough the ISR had not been previously found to regulate the microtubule cytoskeleton, we were intrigued by the possibility that the ISR was influencing microtubule dynamics in response to proteotoxic stress, which in turn might affect how efficiently proteins are cleared during the recovery phase. This possibility was all the more compelling because protein aggregate formation and clearance is known to depend on microtubule-dependent intracellular transport (Kopito, 2000). Of further intrigue was the mRNA for ATF5, which, like that for ATF4, displayed dramatic increases in translation in the absence of transcriptional upregulation and specifically in ISR-competent SCC cells exposed to proteotoxic stress (Figure 3H and I, Figure 3\u2014figure supplement 2C). This tight translational control is likely favored by the presence of inhibitory uORFs in the 5\u2032UTR of Atf5 (Figure 3H; Watatani et al., 2008).\n\n### The ISR protects centrosomal microtubule dynamics\n\nIntriguingly, ATF5 has been previously demonstrated to play a non-transcriptional role at the centrosome (Madarampalli et al., 2015), strengthening the hypothesis that ISR activation drives a subset of centrosomal proteins to bolster the response to proteotoxic stress and excessive protein aggregation. We therefore set out to evaluate how the centrosome and microtubule dynamics were changing in response to stress in SCC cells with or without an intact ISR.\n\nTo evaluate the status of the centrosome during stress, we performed immunofluorescence for centrosomal markers pericentrin (PCNT) and \u03b3-tubulin (TUBG1). Fluorescence intensities of both markers were significantly increased in control, but not ISR-null cells, and specifically during recovery from proteotoxic stress since no changes were observed in vehicle-treated cells or upon recovery from oxidative and ER stress (Figure 4A, Figure 4\u2014figure supplements 1 and 2A). Quantifications further revealed that the overall size of the MTOC was enlarged specifically during recovery from proteotoxic stress and only when the ISR was intact (Figure 4B and C). Additionally, enlargement of the MTOC was dependent on eIF2\u03b1 dephosphorylation, suggesting that while ISR-dependent synthesis of cytoskeletal proteins occurs early on during stress response, cellular recovery requires resolution of the ISR (Figure 4\u2014figure supplement 2B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Representative immunofluorescence images of S51 and S51A cells vehicle-treated or treated with a bortezomib pulse (100 nM, 6 hr) and let to recover for 4 hr. Immunolabeling is to highlight the centrosomal microtubule-organizing center (MTOC) (pericentrin, PCNT, and \u03b3-tubulin, TUBG1), and the cytoplasmic microtubules (\u03b1-tubulin, TUBA1A). Scale bar 10 \u03bcm. White arrows indicate centrosomal MTOCs. (B) Both volume and mean sum fluorescence intensity of MTOC markers are increased specifically in control cells recovering from protein aggregate stress. All data are visualized on a per centrosome basis from N = 2 independent experiments. ****p<0.0001, ns, no statistical significance (two-way ANOVA with multiple comparisons). (C) S51 squamous cell carcinoma (SCC) cells were treated with either vehicle, 50 \u03bcM sodium arsenite, 100 ng/\u03bcL tunicamycin, or 100 nM bortezomib for 6 hr, followed by a recovery period of 4 hr. MTOC volume and mean sum fluorescence intensity are plotted for two independent biological experiments. ****p<0.0001 (two-way ANOVA with multiple comparisons). (D) Schematic of microtubule recovery assay to assess the capacity of centrosomes to nucleate new microtubules following 4 hr recovery from protein aggregate stress. Cells with or without protein aggregates are treated with 13 \u03bcM nocodazole for 20 min to depolymerize microtubules. Nocodazole is washed from the media, and new microtubules are allowed to form during a 2 min incubation at room temperature. Cells are fixed and MTOCs (PCNT+) and cytoplasmic microtubules (TUBA1A) are quantified and analyzed by immunofluorescence. (E) Representative images of centrosomal microtubule nucleation following nocodazole wash out in control and ISR-null cells with or without protein aggregates. Centrosomal microtubule nucleation is analyzed by measuring \u03b1-tubulin signal at the centrosome, which is defined as the pericentrin-positive volume. White arrows indicate centrosomal MTOCs. Scale bar 5 \u03bcm. Quantification of mean centrosomal \u03b1-tubulin intensity indicates that control cells are partially protected against impaired microtubule dynamics during stress. N = 2 independent experiments. ****p<0.0001, ns, no statistical significance (two-way ANOVA with multiple comparisons). (F) Still images from live-imaging experiments show time-dependent growth of microtubule at the centrosome following nocodazole removal. S51 and S51A SCC cells were treated with a bortezomib pulse and let to recover for 4 hr prior to nocodazole treatment. Quantification on the right shows volume of SiR-tubulin-labeled microtubules growing from the centrosome. Each dot represents one cell. Data from two independent biological experiments are plotted. *p<0.05, ****p<0.0001, ns, no statistical significance (two-way ANOVA with multiple comparisons). Scale bar 10 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** High-magnification images show centrosomal MTOC by pericentrin and \u03b3-tubulin staining in S51 and S51A cells vehicle-treated or treated with a bortezomib pulse (100 nM, 6 hr) and let to recover for 4 hr. White arrows indicate MTOCs. Scale bar 10 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative immunofluorescence images show enlarged MTOC in bortezomib-treated cells and not in cells treated with sodium arsenite or tunicamycin. Cells were treated with either vehicle, 50 \u03bcM sodium arsenite, 100 ng/\u03bcL tunicamycin, or 100 nM bortezomib for 6 hr, followed by a recovery period of 4 hr. Scale bar 20 and 5 \u03bcm for inset magnification. (B) Immunofluorescence analysis of MTOC size in S51 cells treated with bortezomib and 10 \u03bcM salubrinal shows that MTOC enlargement depends on eIF2\u03b1 dephosphorylation. Scale bar 20 and 5 \u03bcm for inset magnification. Quantification shows MTOC volume and mean sum fluorescence intensity for pericentrin in at least two independent biological replicates. ***p<0.001 (t-test).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Representative immunofluorescence images show MTOC staining in keartinocytes isolated from healthy control (Tgfbr2fl/fl), pre-oncogenic (HrasG12V; Tgfbr2fl/fl), or fully transformed (HrasG12V; Tgfbr2\u0394/\u0394) skin. Cells were incubated with 100 nM bortezomib for 6 hr followed by a 4 hr recovery. Scale bar 20 and 10 \u03bcm for inset magnification. Quantification shows mean sum fluorescence intensity for pericentrin in two independent biological replicates. ****p<0.0001, ns, no statistical significance (t-test).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Representative images demonstrate complete depolymerization of microtubules by nocodazole and nucleation of new centrosomal microtubules following nocodazole wash. White arrows indicate centrosomal microtubule-organizing centers (MTOCs). Scale bar 5 \u03bcm. (B) Still images from live-imaging experiments show time-dependent growth of microtubule at the centrosome following nocodazole removal. S51 and S51A squamous cell carcinoma (SCC) cells were treated with 13 \u03bcm nocodazole for 20 min, washed, and placed on fresh media prior to imaging. Quantification on the right shows volume of SiR-tubulin-labeled microtubules growing from the centrosome. Each dot represents one cell. Data from two independent biological experiments are plotted. ns, no statistical significance (two-way ANOVA with multiple comparisons). Scale bar 20 \u03bcm.\n\nWhile pre-oncogenic and fully transformed keratinocytes both significantly increased MTOC size during the recovery phase from proteotoxic stress, keratinocytes isolated from littermate control mice failed to do so (Figure 4\u2014figure supplement 3). This is in line with the higher sensitivity to bortezomib of control cells (Figure 1G) and reinforces the idea that upon oncogenic transformation skin stem cells acquire an ISR-dependent pro-survival cellular program, which protects centrosomal dynamics.\n\nThe increased MTOC size was especially intriguing because the pericentriolar region that surrounds the MTOCs is a special site of protein catabolism within the cell, concentrating both autophagosome and lysosomes as well as proteasomes and proteins marked for degradation (Freed et al., 1999; Liu et al., 2016; Wigley et al., 1999). Moreover, although the highly transformed, long-passaged HeLa cell line lacks physiological relevance, it was notable that proteosome inhibition in these cells resulted in the accumulation of pericentriolar material, including pericentrin and \u03b3-tubulin (Didier et al., 2008). In light of these data, we became intrigued by the possibility that the ISR may be at the crux of reinforcing microtubule dynamics following proteotoxic stress to promote cellular recovery.\n\nIf our premise was valid, microtubule-dependent processes should be vulnerable when cells cannot trigger an ISR in the face of stressful situations. To evaluate microtubule dynamics during the recovery phase of our cells following proteotoxic stress exposure, we briefly interrupted existing microtubule assembly/disassembly dynamics with nocodazole and then examined nascent microtubule nucleation initiated from the centrosome (Figure 4D and E, Figure 4\u2014figure supplement 4A).\n\nIn the absence of stress, the ISR-null state was not associated with differences in MTOC-initiated microtubule dynamics (Figure 4E). In striking contrast, the vulnerability of microtubule dynamics in the ISR-null state became clear when we exposed our cells to proteotoxic stress and monitored the recovery process. Even after 4 hr of bortezomib recovery, microtubule growth from the MTOC was still markedly impaired in the ISR-null compared to control SCC cells (Figure 4E).\n\nTo better track microtubule dynamics, we treated S51 and S51A cells with SiR-tubulin, a cell-permeable, fluorescent dye based on the microtubule binding drug docetaxel. Live imaging of S51 and S51A cells showed no overt differences in the microtubule cytoskeleton of unstressed cells. However, when combined with nocodazole recovery, SiR-tubulin imaging revealed a significant delay in new microtubules nucleating from the centrosomes in S51A cells specifically during recovery from proteotoxic stress (Figure 4F, Figure 4\u2014figure supplement 4B, Figure 4\u2014video 1, Figure 4\u2014video 2). This is in agreement with our data showing that, while ISR-null SCC cells fare considerably worse than ISR-competent SCC cells in response to proteotoxic stress, they eventually recover (Figure 2D). Intriguingly, we also noticed that while the microtubules in ISR-competent SCC cells were mostly nucleating from the centrosomes, a majority of ISR-null SCC cells showed prominent non-centrosomal microtubule growth (Figure 4\u2014video 2) suggestive of a compensation mechanism to allow for cellular recovery. Overall, since microtubule dynamics were independent of the ISR in the unstressed state, these results suggested that the ISR is required to reinforce the microtubule dynamics involved in cellular recovery following proteotoxic stress.\n\n### The ISR is required for aggresome formation\n\nOur evidence that the ISR functions in protecting microtubule dynamics during proteotoxic stress was all the more compelling because of known role of microtubules in assembling ubiquitinated protein aggregates into larger membraneless structures called aggresomes (Johnston et al., 1998; Wigley et al., 1999). Through their ability to associate with proteasomes and autophagosomes, aggresomes appear to be a key intermediate in the clearance of improperly folded proteins.\n\nWith these insights in mind, and the general view that aggresomes function beneficially in cellular recovery from proteotoxic stress, we evaluated aggresome formation in our SCC cells following withdrawal of bortezomib (Figure 5A). To this end, we used immunofluorescence for p62/SQSTM1, a protein involved in shuttling ubiquitinated protein aggregates to the aggresome (Christian et al., 2010). As judged by convergence of intense anti-p62 immunofluorescence to a single large perinuclear spot within each S51 cell, misfolded protein aggregates began to coalesce into the aggresome soon after bortezomib withdrawal, peaking at approximately 8 hr into the recovery phase (Figure 5B, top panels). By 24 hr, the recovery phase appeared to be complete as the aggresome was no longer present (see quantifications at right). These findings were in good agreement with the clearance of ubiquitinated misfolded proteins that had accumulated during the proteosome block (Figure 2E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of aggresome formation assay. During recovery from proteotoxic stress, aggresome formation is assessed by anti-p62/SQSTM1 immunofluorescence, which appears as a well-defined, perinuclear puncta. (B) Time course of aggresome formation in control and ISR-null cells indicates diminished aggresome formation in cells with an ablated ISR. White arrows indicate aggresomes. Quantification of the percentage of aggresome-positive cells. N = 2 independent experiments with at least 145 cells quantified per condition. Error bars represent 95% confidence interval calculated by Wilson\u2019s method for confidence interval of a proportion. ****p<0.001 using two-sample Z-test for a proportion (comparisons: control vs. ISR-null at 4 and 8 hr). Scale bar 40 \u03bcm. (C) Aggresomes visualized at the ultrastructural level by transmission electron microscopy. In control cells, aggresomes characteristically appear as a perinuclear cluster of electron-dense granules and partially degraded organelles that often deform the nuclear membrane. Fewer aggresomes form in ISR-null cells, and those that do are smaller, more diffuse and rarely indent the nucleus. White arrow indicates nuclear envelope deformation. Scale bar 4 \u03bcm. Yellow shade in the zoomed-in images at the lower left highlights aggresomes and protein aggregates. Nu, nucleus. Cy, cytoplasm, Agg, aggresome. *Lipid droplet. Scale bar 1 \u03bcm. (D) Confocal immunofluorescence microscopy and 3D reconstruction to visualize the location of the aggresome in relation to the microtubule-organizing center (MTOC) (\u03b3-tubulin, TUBG1) and cytoplasmic microtubules (\u03b1-tubulin, TUBA1A). In control cells, aggresomes appear as dense p62-positive structures directly adjacent to the MTOC puncta. Representative cells from 8 hr post-bortezomib washout are shown. White arrow indicates MTOC. Scale bar 4 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Immunofluorescence images show reduced aggresome (p62 puncti) formation in S51 and S51A cells treated with 2.5 \u03bcM GSK2606414. Briefly, S51 and S51A cells were pretreated with GSK2606414 for 1 hr prior to a 6 hr bortezomib pulse. Following wash, cells were let to recover for 6 hr in the presence of GSK2606414. Bar graph shows percentage of cells with aggresomes in two independent biological replicates. *p<0.05 (ANOVA with multiple comparisons). Scale bar 20 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Transmission electron microscopy shows no difference at steady state between ISR-competent and ISR-null cells. No aggresomes are observed in the absence of bortezomib. Scale bar 2 \u03bcm. (B) Transmission electron microscopy shows aggresomes, which form in S51 cells during recovery from proteotoxic stress. Aggresomes are highlighted by a yellow shadow. As expected, aggresomes are perinuclear structures distorting the nucleus. Nu, nucleus. Cy, cytoplasm. Agg, aggresome. Scale bar 1 \u03bcm. (C) Transmission electron microscopy reveals swollen endoplasmic reticulum (ER) that is present in some of the ISR-null cells following proteotoxic stress. These cells are viable and do recover from stress, but their presence is indicative of ER stress and unfolded protein that accumulate in the ER as well as the cytoplasm. White arrows indicate ribosomes attached to the ER membranes. Scale bar 2 \u03bcm.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Transmission electron microscopy shows centrosomes in vehicle-treated S51 squamous cell carcinoma (SCC) cells. Centrosomes are highlighted by a red shadow. Nu, nucleus. Cy, cytoplasm. Centr, centrosome, * lipid droplet. Scale bar 2 \u03bcm and 600 nm. (B) Transmission electron microscopy shows accumulation of aggresomes at the centrosomes upon recovery from proteotoxic stress. S51 SCC cells treated with 100 nm bortezomib followed by 8 hr recovery period are shown. Aggresomes are highlighted by a yellow shadow. Centrosomes are highlighted by a red shadow. Scale bar 2 \u03bcm and 600 nm.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Formation of aggresomes is dependent on microtubule-mediated transport. Blocking microtubule dynamics by using 200 nM of paclitaxel inhibits aggresome formation. Graph shows percentage of cells with aggresomes as quantified by immunofluorescence in two independent biological experiments. (B) Aggresomes formation is dependent on microtubule-mediated transport. Microtubule polymerization was blocked adding 13 \u03bcM nocodazole at the time of bortezomib washout. Percentage of cells with aggresomes \u00b1 SD is quantified in two independent biological replicates.\n\nIn striking contrast to S51 cells, the S51A SCC cells lacking an intact ISR showed pronounced defects in their ability to clear misfolded proteins that had accumulated during bortezomib treatment. The rise in cytoplasmic p62 immunofluorescence during the proteosomal block indicated that small protein aggregates had formed in the S51A cells exposed to proteotoxic stress (Figure 5B, bottom panels). However, even at 8 hr after bortezomib withdrawal, only a few S51A cells displayed the bright perinuclear spot reflective of the aggresome. Moreover, while S51 SCC cells had cleared their protein aggregates by 24 hr after culturing in normal media, S51A SCC cells still exhibited anti-p62 coalescence, indicative of a marked delay in clearance of unfolded proteins. In agreement with our previous data that PERK signaling contributed to clearance of ubiquitinated proteins independently of the ISR (Figure 2\u2014figure supplement 3D), PERK inhibition resulted in a significant reduction in the percentage of cells forming aggresomes in both ISR-competent and ISR-null SCC cells (Figure 5\u2014figure supplement 1).\n\nFurther signs of cellular defects during the recovery process were evident at the ultrastructural level. After 8 hr of recovery, electron-dense protein aggregates pushing into the nucleus were observed in the perinuclear regions of S51 but not S51A SCC cells. These structures were absent in unstressed SCC cells. (Figure 5C, Figure 5\u2014figure supplement 2A\u2013C). Consistent with the notion that the aggresomes are trafficked via the microtubules, further analysis of our electron microscopy images revealed accumulation of membrane-less structure (i.e., aggresomes) at the centrosomes in S51 SCC cells during recovery from proteotoxic stress (Figure 5\u2014figure supplement 3A and B). Co-immunolabeling for p62 and \u03b3-tubulin confirmed that the perinuclear structures present in S51 cells were indeed aggresomes (Figure 5D). Moreover, S51 cells displayed signs of nuclear deformation, often observed during the aggresome clearance phase. By contrast, when detected in S51A cells, aggresomes tended to be small and less distinct. Moreover, S51A cells often displayed widespread vacuole-like structures, which have been reported to occur when the ER becomes overwhelmed with misfolded proteins (Mimnaugh et al., 2006; Figure 5\u2014figure supplement 2C).\n\nThe surprising dependence upon an intact ISR for SCC cells to form aggresomes during proteotoxic stress recovery led us to hypothesize that the ISR might function critically in sustaining the necessary microtubule dynamics that enables efficient transport of misfolded proteins to the MTOC, where they can then form aggresomes and be targeted for perinuclear proteosomal and autophagosomal clearance. To further challenge this relationship between microtubule dynamics and aggresome formation, we used the drug, paclitaxel, a chemotherapy that stabilizes microtubules while at the same time disrupts their dynamics. In line with our hypothesis, microtubule stabilization with paclitaxel potently blocked aggresome formation, phenocopying the ISR-null cells during this process (Figure 5\u2014figure supplement 4A). Blocking microtubules polymerization by treating cells with nocodazole had a similar effect and resulted in a significant reduction in aggresome formation (Figure 5\u2014figure supplement 4B).\n\n### The ISR is required for migration and focal adhesion homeostasis following protein aggregate stress\n\nDuring the course of our previous experiments, we made several observations regarding the cellular morphology, which supported the conclusion that the ISR was required to maintain proper microtubule dynamics in the face of protein aggregate stress. First, we noticed that control, but not ISR-null, cells went through a dramatic change in cell shape while recovering from aggregate stress. Specifically, control cells \u2018unspread,\u2019 becoming more compact and tall between 4 and 8 hr after washing out bortezomib, the timepoints correlating with peak aggresome formation. ISR-null cells, on the other hand, did not similarly round, and instead they maintained a flattened shape with some cells also forming elongated processes. Examples of these differences are shown in Figure 6\u2014figure supplement 1.\n\nThe long cellular extensions were reminiscent of that seen when keratinocytes displayed defects in the turnover of focal adhesions, a process that we had previously shown depends not only upon focal adhesion proteins (Schober et al., 2007), but also on the ability of microtubules to deliver turnover cargo to the focal adhesions (Wu et al., 2008). Specifically, microtubule-mediated cargo transport is essential for focal adhesion disassembly and cell migration (Ezratty et al., 2005; Yue et al., 2014). While the transport of protein aggregates to the centrosome involves minus end-directed molecular motors, transport to the focal adhesions requires plus end-directed motors. Reasoning that a defect in MTOC-mediated microtubule dynamics might affect both processes, we examined the focal adhesions in control and ISR-null cells following proteotoxic stress. As judged by immunofluorescence for vinculin, upon proteotoxic stress the ISR promoted a remodeling in cell morphology evident by diminished focal adhesion and F-actin staining. By contrast, ISR-null cells retained large focal adhesions suggestive of impaired cytoskeletal dynamics (Figure 6A; Geiger et al., 1984; Wu et al., 2008). This ISR-mediated difference was specific to stress and was not seen when control and ISR-null cells were cultured in normal media under unstressed conditions. By looking back at our ribosome profiling dataset, we found a significant enrichment of focal adhesion genes within mRNAs with reduced ribosome occupancy upon ISR induction (Figure 3\u2014figure supplement 2B). While further analysis will be needed to evaluate protein levels of focal adhesion components in the absence of an ISR, these data suggest that ISR-mediated translational control stands at the crux of these dramatic morphological changes by selectively upregulating microtubule dynamics and, at the same time, downregulating focal adhesion components.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig6-v2.jpg)\n\n**Figure 6.:** (A) Impaired focal adhesion dynamics in ISR-null cells. Immunofluorescence for vinculin and F-actin shows that during recovery from protein aggregate stress the ISR promotes the remodeling of focal adhesions. White arrows show characteristic long cellular extensions connected to enlarged focal adhesions in the ISR-null but not control cells recovering from protein aggregate stress. Consistent with the known role of microtubules in targeting focal adhesion turnover, these features resemble those of keratinocytes lacking microtubule-focal adhesion targeting proteins (Wu et al., 2008). Scale bar 10 \u03bcm. (B). Static frames from live imaging of zyxin-iRFP cells. White arrows show large (10 \u03bcm3 or greater) and stable (over the whole duration of imaging period) focal adhesion clusters. Bar graphs show total number of stable and large focal adhesion clusters per cell (left) and percentage of stable over total focal adhesion clusters (right) over a 14 min live-imaging time course. 3\u20135 cells were imaged per condition in two independent biological replicates. *p<0.05, ns, no statistical significance (t-test). (C) Live imaging of GFP-positive cells migrating in a scratch assay reveals loss of migratory capacity in ISR-null cells recovering from protein aggregate stress (6 hr of 100 nM bortezomib followed by wash). Scratch closure is quantified during an 8 hr interval, in N = 2 independent experiments with n = 3\u20135 technical replicates per condition. Bar graph shows percentage of scratch closure \u00b1 SD. *p<0.05, ns, no statistical significance (one-way ANOVA with multiple comparisons).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** ISR-competent or ISR-null cells are visualized via immunofluorescence by anti-GFP staining. Stress response in ISR-competent cells in vitro is characterized by a dramatic transient change in cell morphology, which is not observed in ISR-null cells.\n\nTo directly evaluate focal adhesion dynamics in our cells, we generated a zyxin-iRFP construct that would allow for live imaging of cells. Indeed, ISR-null SCC cells recovering from proteotoxic stress possessed large, stable focal adhesions that did not disassemble, rendering the cell immobile over the time frame, whereas control SCC cells disassembled their large focal adhesions and displayed considerable dynamics (Figure 6B, Figure 6\u2014video 1). To confirm these aberrant dynamics, we performed a scratch wound assay to induce cell migration following bortezomib treatment. In agreement with our previous data showing large and stable focal adhesion, ISR-null cells showed markedly impaired mobility relative to control cells and failed to migrate into the wound site (Figure 6C, Figure 6\u2014video 2, Figure 6\u2014video 3). Taken together, these results provided further evidence that in the absence of an ISR, SCC cells exposed to proteotoxic stress are slow to ignite the microtubule dynamics necessary for recovery.\n\n### ATF5 acts downstream of the ISR to promote aggresome formation and recovery from proteotoxic stress\n\nOur collective data strongly implicated the ISR in regulating microtubule dynamics with the purpose of promoting aggresome assembly and the efficient clearance of protein aggregates that accumulate during proteotoxic stress. Additionally, our analysis of ISR-dependent translational changes revealed a selective upregulation of centrosomal proteins upon proteotoxic stress (Figure 3G). In particular, we were intrigued by ATF5, which has been described as an integral component of the MTOC (Madarampalli et al., 2015). Strikingly, in contrast to ATF4 that is broadly induced to stress, we found that ATF5 is translated only during proteotoxic stress (Figure 7A). In agreement with the notion that ATF5 may play a selective role in clearance of protein aggregates, confocal microscopy revealed that upon recovery from proteotoxic stress ATF5 localized at the centrosome in ISR-competent SCC cells (Figure 7B). Hence, we reasoned that translational upregulation of ATF5 might be needed to regulate microtubule dynamics in the face of proteotoxic stress. To test this hypothesis, we engineered ISR-null cells to overexpress doxycycline-inducible, GFP-tagged ATF5 (Figure 7C, Figure 7\u2014figure supplement 1A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig7-v2.jpg)\n\n**Figure 7.:** (A) ATF5 is selectively upregulated upon proteotoxic stress in an ISR-dependent fashion. S51 and S51A were treated with either vehicle, 50 \u03bcM sodium arsenite, 100 ng/\u03bcL tunicamycin, or 100 nM bortezomib for 6 hr. Representative blots from three independent experiment are shown. (B) Confocal microscopy confirms previously reported ATF5 localization at the microtubule-organizing center (MTOC). Insets on the right show higher magnification images with merged (top) and ATF5 (middle) and \u03b3-tubulin (bottom) separately. (C) Immunoblot confirms ATF5 expression upon Dox administration (1 \u03bcg/mL for 24 hr) in proteotoxically stressed S51A-ATF5 cells where endogenous ATF5 translation is suppressed. (D) ATF5 expression partially rescues the ability of proteotoxically stressed ISR-null cells to clear ubiquitinated proteins. Representative immunoblot (of three independent biological replicates) shows level of ubiquitinated proteins in the radio-immunoprecipitation assay (RIPA)-insoluble fraction of S51, S51A, and S51A-ATF5 squamous cell carcinoma [SCC] cells in the absence or proteotoxic stress or following 24 hr recovery from a 6 hr bortezomib pulse. (E) Quantifications of experiments in (D). Bar graph shows ubiquitin levels \u00b1 SD at 24 hr recovery normalized over actin and relative to ubiquitin levels in untreated cells in three independent biological replicates. *p<0.05, ns, no statistical significance (one-way ANOVA with multiple comparisons). (F) ATF5 promotes aggresome formation. Aggresomes are visualized by p62/SQSTM1 immunofluorescence in SCC cells treated with a 6 hr bortezomib pulse followed by a 4 hr recovery period. White arrows point to aggresomes. Scale bar 30 \u03bcm. Bar graph shows percentage of cells with aggresomes \u00b1 SD in two independent biological replicates. Approximately 300 cells were quantified per each experiment. *p<0.05, ns, no statistical significance (one-way ANOVA with multiple comparisons). (G) ATF5 protects centrosomal MTOC dynamics. Centrosomal MTOC is visualized by pericentrin and \u03b3-tubulin immunofluorescence. Cells were treated with bortezomib for 6 hr and let to recover for 4 hr. Scale bar 10 \u03bcm. Bottom row shows higher magnification of the area highlighted in top row. White arrows indicate MTOCs. Scale bar 5 \u03bcm. Bar graph shows mean fluorescence intensity for pericentrin in two independent biological replicates. ****p<0.0001 (one-way ANOVA with multiple comparisons). (H) Representative immunoblot shows selective upregulation of ATF5 upon bortezomib in transformed keratinocytes. Cells were treated with either vehicle or 100 nM bortezomib for 6 hr. Representative blot of three independent experiment is shown. (I) ATF5 induction protects ISR-null cells from protein aggregates-induced cytotoxicity. Immunofluorescence shows SCC tumors (GFP+) after treatment with bortezomib (1.2 mg/kg i.p.). Cell death is quantified by cleaved caspase 3-positive cells. White arrows point to cleaved caspase 3-positive cells. Scale bar 50 \u03bcm. Bar graph shows percentage of cleaved caspase 3-positive cells per tumor \u00b1 SD in two independent biological replicates. *p<0.05, ns, no statistical significance (one-way ANOVA with multiple comparisons).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77780/elife-77780-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Schematic representation of rescue strategy to express a doxycycline-inducible GFP-tagged ATF5 in integrated stress response (ISR)-null squamous cell carcinoma (SCC) cells. (B) Schematic representation of knockdown strategy to inducibly reduce ATF5 levels in ISR-competent SCC cells. (C) Validation of ATF5 knockdown ISR-competent cells. Immunoblots shows ATF5 levels in cells pretreated with 1 \u03bcg/\u03bcL doxycycline for 48 hr and then treated with 100 nM bortezomib for 6 hr. (D) Immunoblot shows level of ubiquitinated protein aggregates in the radio-immunoprecipitation assay (RIPA)-insoluble fraction of indicated genotypes pretreated with doxycycline for 48 hr, treated with a bortezomib pulse for 6 hr and recovered for 24 hr. (E) Immunofluorescence analysis shows reduced aggresome formation (p62 puncti) in S51 cells knockdown for ATF5. Bar graph shows percentage of cells with aggresomes \u00b1 SD in two independent biological experiments. **p<0.01, ****p<0.0001 (ANOVA with multiple comparisons). (F) qPCR analysis shows Atf5 mRNA levels normalized over Rps16 \u00b1 SD in keratinocytes isolated from indicated genotypes in three independent biological replicates. ns, no statistical significance (ANOVA with multiple comparisons).\n\nTo probe whether ATF5 is needed to clear protein aggregates, we first examined the clearance of ubiquitinated proteins during the recovery phase following a pulse of bortezomib. Remarkably, expression of ATF5 significantly improved the ability of ISR-null cells to clear ubiquitinated proteins, as assessed by immunoblot of ubiquitinated proteins in the insoluble fraction of cells after 24 hr recovery from bortezomib (Figure 7D and E). Strikingly, this corresponded with a significant increase in aggresome formation, indicating that ISR-mediated ATF5 upregulation is needed to promote the retrograde transport of misfolded proteins and the subsequent accumulation of protein aggregates at the MTOC (Figure 7F). This effect was mediated via protection of microtubule dynamics as evidenced by increased pericentrin mean fluorescence intensity at the centrosome in ISR-null cells expressing ATF5 after recovery from bortezomib treatment (Figure 7G). Strengthening this mechanistic link, short-hairpin-RNA-mediated ATF5 knockdown in ISR-competent cells resulted in higher accumulation of ubiquitinated proteins and reduced aggresome formation during recovery from proteotoxic stress (Figure 7\u2014figure supplement 1B-E).\n\nBuilding on our previous findings that normal keratinocytes were more sensitive to bortezomib compared to their transformed counterpart and failed to protect MTOC dynamics during the recovery phase from proteotoxic stress (Figure 1G, Figure 4\u2014figure supplement 3), we asked whether ATF5 induction occurred only in the transformed state. In response to bortezomib, control keratinocytes mounted an ISR, as judged by eIF2\u03b1 phosphorylation, and upregulated ATF4 although at lower level compared to transformed cells. Yet, despite expressing similar levels of Atf5 mRNA, untransformed cells failed to induce Atf5 translation and showed no ATF5 protein expression (Figure 7H, Figure 7\u2014figure supplement 1F). These findings reinforce the notion that upon transformation SCC stem cells alter their ISR program to more efficiently recover from proteotoxic stress (Figure 7H, Figure 7\u2014figure supplement 1F).\n\nFinally, we asked whether ISR-mediated ATF5 induction promotes cell survival upon proteotoxic stress of SCC cells in vivo. To this end, we turned to our grafting model where ISR-null cells displayed increased sensitivity to proteasome inhibition. Consistent with our hypothesis, ATF5 expression rescued the selective sensitivity to bortezomib shown by ISR-null cells. This occurred in the absence of changes in viability in tumors at steady state (Figure 7I). Altogether, these data implicate ATF5 as a critical ISR target in SCC stem cells, which orchestrates microtubule dynamics to facilitate the clearance of protein aggregates and promote cell recovery upon proteotoxic stress.\n\n## Discussion\n\nAlthough a handful of reports have linked the actin cytoskeleton to eIF2\u03b1 dephosphorylation (Chambers et al., 2015; Chen et al., 2015), cytoskeletal regulation has not been viewed as a primary function of the ISR. In this study, we unearthed a novel and essential role for the ISR in regulating the cytoskeleton, specifically through preserving microtubule dynamics in stressful situations. This mechanism appears to be unique to proteotoxic stress and is required for cells to accomplish the necessary intracellular trafficking to efficiently clear misfolded proteins and prevent them from accumulating and overtaxing the ER.\n\nOur findings led us to the remarkable conclusion that the ISR is not only required to mount a stress response, but also to instruct cell function during recovery from stress. Although the existence of negative feedback loops that downregulate the ISR upon termination of stress has long been appreciated (Novoa et al., 2001), our data more clearly elucidate a specific role of the ISR during cellular recovery.\n\nBy temporally profiling the translational differences that arise when proteotoxically stressed SCC cells are unable to mount an ISR, we gained insights into the mechanisms underlying the ISR\u2019s importance. Specifically, we learned that when ISR-competent cells are exposed to proteotoxic stress, they redirect their translational machinery to a cohort of mRNAs encoding centrosomal proteins. We show that these proteins function in bolstering the MTOC and reinforcing its microtubule dynamics. This then facilitates efficient microtubule-mediated transport of misfolded proteins to the perinuclear space, where they can be assembled into aggresomes and targeted for ubiquitin-mediated degradation during the stress recovery phase. Indeed, as we showed, when eIF2\u03b1 cannot be phosphorylated and the ISR core is thereby crippled in proteotoxically stressed cells, the centrosomal proteins are not translated, and microtubule dynamics emanating from the MTOC are disrupted. As judged by deficiencies in the aggresome assembly and in focal adhesion turnover, both retrograde and anterior grade transport of microtubule cargo are slow to recover following stress, thereby impairing cell fitness. Compellingly, the ISR not only upregulates a subset of centrosomal proteins, but also downregulates focal adhesion components, surfacing a network of ISR-regulated cytoskeletal dynamics that directs morphological changes critical for cell recovery.\n\nMicrotubule trafficking is required for misfolded proteins to accumulate at the perinuclear space, and our results provided compelling evidence that the ISR functions in this process. However, our findings also pointed to a hitherto unappreciated role of the ISR in aggresome assembly specifically. Our studies revealed that this function is in part mediated by ATF5, a translational target of the ISR in proteotoxically stressed SCC cells and a previously documented structural component of the centrosomal MTOC (Madarampalli et al., 2015). We showed that during recovery from protein aggregate stress the MTOC size increases concomitantly with aggresome formation, and both of these events depend upon an intact ISR. Our data support a model in which ISR-mediated translational upregulation of centrosomal proteins, including ATF5, is required to remodel the MTOC and concentrate protein aggregates in the perinuclear space so that they can be degraded and cleared by proteosomes and autophagosomes.\n\nOur findings that Atf5 translational upregulation is limited to proteotoxic stress and unique to transformed skin stem cells is particularly intriguing. Atf5 possesses uORFs in its 5\u2032UTR that are known to regulate its translation, but it remains unclear which factors modulate their translation and promote synthesis of ATF5 protein. In this regard, it is curious that while bortezomib induced the lowest phosphorylation of eIF2\u03b1, it uniquely induced Atf5 translation. Together, these findings point to a view of the ISR as a dynamic program that can be finely tuned in the face of distinct stresses and cellular states. Finally, these data highlight a cancer-specific mechanism of recovery from proteotoxic stress, supporting the idea that the ISR contributes to therapy resistance in SCC.\n\nSeveral studies have provided tantalizing evidence that some cells may be able to asymmetrically partition their centrosomal aggregates when division resumes following proteotoxic stress, such that one daughter (e.g., a stem cell) remains healthy, while the other daughter inherits the aggregates and becomes slated to differentiate (Morrow et al., 2020; Rujano et al., 2006; Singhvi and Garriga, 2009). We did not see evidence for this in our SCC cells. Rather, there was a lag in cell cycle reentry such that proliferation began after aggregates were cleared, and this coupling was maintained in ISR-null cells (Figures 2D and 5B). This coupling was especially striking in comparing the behaviors of ISR-null vs. ISR-competent cells. Thus, during the recovery phase, ISR-null cells were delayed by >24 hr in both aggregate clearance and cell cycle re-entry. That said, when the ISR was crippled either in vivo or in vitro, SCC cells were jeopardized in their overall ability to survive proteotoxic stress. In this scenario, as a major regulator of cell survival in response to proteotoxic stress, our findings suggest that by coupling pharmacological inhibition of the ISR (Sidrauski et al., 2015) with proteosomal inhibitors such as bortezomib, such a regimen may find an Achilles heel for this family of difficult-to-treat cancers.\n\n### Ideas and speculation\n\nOur findings are also likely to have relevance for other diseases, including neurodegenerative diseases, which are driven by or associated with protein aggregates (Soto and Pritzkow, 2018). To date, the function of the ISR in neurodegenerative diseases has been attributed largely to the emergence of alternative translation pathways and to ATF4 transcriptional activity that drives expression of cytoplasmic chaperones and balances cell survival and cell death (Bond et al., 2020; Costa-Mattioli and Walter, 2020). In SCC cells, although it is possible that chaperones may be upregulated indirectly through ISR-driven transcription factors, these proteins did not emerge as major translational targets of the ISR in our ribosome profiling analysis. Moreover, since cells have parallel pathways, most notably the heat shock response, that can upregulate chaperones when needed (San Gil et al., 2017), it seems unlikely that chaperone induction would be ISR\u2019s sole function in maintaining proteostasis.\n\nThe necessity of an ISR-driven pathway for preserving centrosome dynamics during proteotoxic stress raises an important question regarding centrosome function in neurodegenerative disorders. If ISR-driven translation of centrosomal proteins is required to protect microtubule dynamics during stress, it follows that the accumulation of unfolded proteins should negatively impact the MTOC and/or its microtubule-associated dynamics. In Alzheimer\u2019s disease and other tauopathies, the microtubule-associated protein Tau is the main driver of the aggregates of neurofibrillary tangles that ensue, and this alone is likely to negatively impact microtubule-mediated trafficking in neurons (Ballatore et al., 2007). In addition, misfolded protein aggregates often inadvertently sequester properly folded cellular proteins, such as p62 and the disaggregase p97/VCP, which can exacerbate their toxic effects on cells (Donaldson et al., 2003; Olzscha et al., 2011; Yang and Hu, 2016). It seems plausible that misfolded protein aggregates might either sequester low-complexity centrosomal or pericentrosomal proteins (Woodruff et al., 2017), or structurally interfere with MTOC function. In fact, one study found that proteotoxic stress does indeed inhibit centrosome function in neurons (Didier et al., 2008), raising the question as to whether the ISR might also be involved in maintaining the MTOC of long-lived, nondividing neurons, which face a need for uniquely long-distance microtubule-mediated trafficking.\n\nIn summary, our work supports a model in which cancer cells rely upon the ISR to restore proteostasis following protein aggregate stress. By redirecting the translational machinery towards synthesizing proteins involved in enlarging the MTOC and bolstering microtubule dynamics, the ISR aids in the intracellular microtubule-mediated trafficking necessary to assemble aggresomes at the MTOC, where they can be efficiently targeted to the perinuclear protein degradation machinery.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>S51</td>\n      <td>This paper</td>\n      <td>-</td>\n      <td>ISR-competent (HRasG12VTgfbrII D/D)</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>S51A</td>\n      <td>This paper</td>\n      <td>-</td>\n      <td>ISR-null(HRasG12VTgfbrII D/D)</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>TgfbrII fl/fl</td>\n      <td>Yang et al., 2015</td>\n      <td>-</td>\n      <td>Keratinocytes</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>HRasG12VTgfbrII fl/fl</td>\n      <td>Yang et al., 2015</td>\n      <td>-</td>\n      <td>Keratinocytes</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>HRasG12VTgfbrII D/D</td>\n      <td>Yang et al., 2015</td>\n      <td>-</td>\n      <td>Keratinocytes</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO-PGK-eIF2a(S51)-Myctag-P2A-NeoR</td>\n      <td>This paper</td>\n      <td>-</td>\n      <td>LV construct to overexpress WT eIF2a</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO-PGK-eIF2a(S51A)-Myctag-P2A-NeoR</td>\n      <td>This paper</td>\n      <td>-</td>\n      <td>LV construct to overexpress ISR-null (S51A) eIF2a</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO-TRE-ATF5-GFPtag_UBC-rtTA3-IRES-PuroR</td>\n      <td>This paper</td>\n      <td>-</td>\n      <td>LV construct to overexpress ATF5</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO-TRE-RFP-shATF5.1UBC-rtTA3-IRES-PuroR</td>\n      <td>This paper;original Fellmann et al., 2013</td>\n      <td>-</td>\n      <td>LV construct to inducibly knockdown ATF5</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO-TRE-RFP-shATF5.2UBC-rtTA3-IRES-PuroR</td>\n      <td>This paper;original Fellmann et al., 2013</td>\n      <td>-</td>\n      <td>LV construct to inducibly knockdown ATF5</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>P-eIF2\u03b1(rabbit polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>44-728G</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Ubiquitin(rabbit polyclonal)</td>\n      <td>CST</td>\n      <td>58395</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ATF5(mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Sc377168</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ATF4(rabbit monoclonal)</td>\n      <td>CST</td>\n      <td>11815</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>p62(rabbit monoclonal)</td>\n      <td>CST</td>\n      <td>7695</td>\n      <td>1:250</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PCNT(rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Ab4448</td>\n      <td>1:250</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ATF5(rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Ab184923</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cl Casp 3(rabbit polyclonal)</td>\n      <td>CST</td>\n      <td>9661</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-Tubulin(rabbit monoclonal)</td>\n      <td>Bio-Rad</td>\n      <td>MCA77G</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b2-Actin(mouse monoclonal)</td>\n      <td>CST</td>\n      <td>3700</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Puromycin (mouse monoclonal)</td>\n      <td>MilliporeSigma</td>\n      <td>MABE343</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RiboCop v2</td>\n      <td>Lexogen</td>\n      <td>144</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SiR-tubulin</td>\n      <td>Spirochrome</td>\n      <td>SC002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>eIF2a gRNA</td>\n      <td>Target sequenceATATTCCAACAAGCTGACAT</td>\n      <td>IDT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Cas9</td>\n      <td>IDT</td>\n      <td>1081058</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium arsenite</td>\n      <td>VWR</td>\n      <td>BJ35000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tunicamycin</td>\n      <td>Sigma-Aldrich</td>\n      <td>T7765</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bortezomib</td>\n      <td>Calbiochem</td>\n      <td>T7765</td>\n      <td>5043140001</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cyclohexamide</td>\n      <td>MilliporeSigma</td>\n      <td>T7765</td>\n      <td>C7698</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rhodamine phalloidin</td>\n      <td>MilliporeSigma</td>\n      <td>R415</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Annexin-V PE</td>\n      <td>Thermo Fisher</td>\n      <td>A35111</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Annexin-V AF647</td>\n      <td>Thermo Fisher</td>\n      <td>A23204</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Salubrinal</td>\n      <td>Sigma</td>\n      <td>SML0951</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PERK Inhibitor I, GSK2606414</td>\n      <td>Sigma</td>\n      <td>516535</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bafilomycin A1 from Streptomyces griseus</td>\n      <td>MilliporeSigma</td>\n      <td>B1793</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nocodazole</td>\n      <td>Sigma</td>\n      <td>M1404</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Paclitaxel</td>\n      <td>MilliporeSigma</td>\n      <td>T7191</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### CRISPR cloning\n\nLentiviral particles containing the gene replacement construct, pLKO-PGK-eIF2\u03b1-mycTag-P2A-NeoR, were prepared by transfecting the lentiviral plasmid along with packaging plasmids into HEK293T cells, and viral supernatant was collected 48 hr post transfection. This construct was integrated into the genome of a clonal, parental primary SCC mouse line by incubating 100 \u03bcL with 0.1 mg/mL polybrene for 8 hr. 48 hr later, cells with the integrated construct were selected with 0.5 mg/mL neomycin selection for 2 days. Following selection, the endogenous allele was targeted for deletion using CRISPR-Cas9 RNP particles. The replacement allele had a synonymous mutation in the PAM site, rendering it resistant to this CRIPSR construct. CRISPR-Cas9 RNP particles targeting the endogenous allele were prepared as follows: eIF2\u03b1 gRNA (target sequence: ATATTCCAACAAGCTGACAT) was designed using GuideScan software (Perez et al., 2017) and complexed with ATTO550-tracrRNA and Cas9. All reagents were acquired from IDTdna\u2019s \u2018AltR system.\u2019 Duplexed gRNA:tracrRNA was prepared by mixing 1 \u03bcM of each component in IDTdna duplex buffer, heated to 95\u00b0C in a thermocycler and annealed by gradually lowering the temperature to 25\u00b0C at a rate of 0.1\u00b0C/s. Duplexed gRNA:tracrRNA was complexed with Cas9 by mixing 1 \u03bcM of the duplex with 1 \u03bcM Cas9 in OptiMEM (Thermo Fisher) and incubating at room temperature for 5 min.\n\nRNP complexes then were transfected into 60% confluent 12-well plates using RNAiMAX as follows: 30 \u03bcL of 1 \u03bcM RNP complexes were mixed with 4.8 \u03bcL RNAiMAX in 335 \u03bcL of optiMEM and RNP-lipid complexes were allowed to form for 15 min at room temperature. At the end of the incubation, 400 \u03bcL of complexes were added dropwise to cells, and media were changed 16 hr later. 48 hr after transfection, single cells were isolated using FACS as follows: cells were dissociated with trypsin (Gibco) and resuspended in 500 \u03bcL of FACS buffer (PBS supplemented with 5% FBS and 5 \u03bcM EDTA), and single, ATTO-550-positive cells were sorted using BD FACSAria cell sorter into wells of 96-well plates containing 100 \u03bcL of 50-50 mixture of fresh media and conditioned media. Clones that grew to confluency were transferred to 12-well plates, and following growth to confluency in 12-well plates, cells were dissociated with trypsin and frozen in freezing media supplemented with 10% FBS and 10% DMSO. At this stage, a small aliquot of cells (75% of the plate) was lysed in 200 \u03bcL of QuickExtract DNA Extraction solution (Lucigen) and gDNA was prepared by heating to 65\u00b0C for 10 minu followed by heat inactivation at 95\u00b0 C for 2 min. These gDNA samples were used for further analysis.\n\n### NGS analysis of CRISPR outcomes\n\nKnockout of the endogenous allele was evaluated using primers targeting a 300 basepair region of genomic DNA with the targeted locus in the middle of the amplicon. Primers had 5\u2032 overhangs with sequences compatible with the Illumina Nextera XT index primers (R: overhang: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG; L overhang: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG). Amplicons were generated with 1 \u03bcL of input gDNA and the NEB Phusion kit according to the manufacturer\u2019s instructions, and amplicons were isolated using Agencout Ampure XP beads (Beckman Coulter). A second barcoding PCR was performed using Nextera XT index primers as follows: 2 \u03bcL of cleaned amplicons were used as input, primers were added so that each isolated clone had a unique combination of left and right barcodes, and barcodes were added using an eight-cycle PCR reaction with 55\u00b0C annealing temp, again with the NEB Phusion kit, and the barcoded amplicons were cleaned and primer dimers were removed using Ampure XP beads. Amplicons were normalized to the same concentration, pooled, and sequenced using a single Illumina MiSeq Nano lane using the 250 basepair, paired end kit. Demultiplexed reads were analyzed and screened for indels using the RGEN Cas Analyzer (http://www.rgenome.net). A KO clone was confirmed if the only reads detected in that sample were indels that would create a frameshift.\n\n### Cell culture\n\nPrimary murine SCC cells were generated and cultured in E medium supplemented with 15% FBS and 50 mM CaCl2 as previously described (Yang et al., 2015). Cells were passaged three times per week, and passage numbers were maintained counting from the point of cell line generation. Frozen cell stocks were generated by freezing cells in complete media supplemented with 10% additional FBS and 10% DMSO. Primary keratinocytes used in this study have been previously characterized (Yang et al., 2015). Cells routinely tested negative for mycoplasma contamination. ATF5-GFP-overexpressing cells were generated by infecting ISR-null cells with ATF5-GFP lentivirus in the presence of 5 \u03bcg/mL polybrene. Infected cells were selected using 2 \u03bcg/mL puromycin for 5 days. Induction of ATF5 was induced using 1 \u03bcg/mL doxycycline at the time of plating for each experiment. ISR-competent cells with ATF5 knockdown were generated following the same protocol. Knockdown vectors were generated using the miR-E system (Fellmann et al., 2013).\n\n### Proliferation and cell viability assays\n\nFor proliferation assays, 2500\u20135000 cells were plated per well in clear-bottom, black optical 96-well plates (Nunc) and allowed to attach overnight. A baseline plate was collected the next day as a zero hour sample, and then plates were collected at 24, 48, and 72 hr after this timepoint. At the time of collection, media were washed and cells were fixed in 4% PFA in PBS for 10 min at room temperature. After fixation, PFA was washed with PBS and cells were stored in PBS at 4\u00b0C until the end of the experiment. Following collection of the final plate, nuclei were stained in all samples using 1 \u00b5g/mL DAPI in PBS for 5 min at room temperature. DAPI was washed and replaced with PBS, and nuclei were imaged on a Biotek Cytation 5 high-content imager, and cells were counted using Gen5 software. To measure cell death, single-cell-suspensions were washed once with PBS, stained with 3 \u03bcL of AnnexinV-PE or Annexin-V AF647 conjugates (Thermo Fisher) and 0.1 \u03bcg/ml DAPI (Thermo Fisher) in 100 \u03bcL of 1\u00d7 Annexin Binding Buffer (Thermo Fisher) for 15 min at room temperature. Data were collected using a BD LSR Fortessa X20 flow cytometer and analyzed using FlowJo software.\n\n### Measurement of translation rates\n\nCells were plated to 75% confluency in six-well plates. The next day cells were treated with 50 \u03bcM sodium arsenite, 100 ng/mL tunicamycin or 100 nM bortezomib, or a vehicle control and incubated at 37\u00b0C for 6 hr. At this time, 20 \u03bcM puromycin was supplemented to the media, and cells were incubated for 30 min. Cells were then lysed in RIPA buffer, and translation rates were evaluated by immunoblotting for puromycilated peptides using an anti-puromycin antibody.\n\n### Microtubule nucleation assay\n\nCells were plated to 50% confluency in glass slides (Millicell EZ, MilliporeSigma) and treated with 100 nM bortezomib or a vehicle control for 6 hr followed by a PBS wash and replacement with fresh media. 4 hr later, the media were supplemented with 13 \u03bcM nocodazole, and cells were incubated at 37\u00b0C for 20 min. At the end of the incubation, slides were washed and media were replaced with fresh, nocodazole-free media, and microtubules were allowed to recover during a 2 min incubation at room temperature. At this time, cells were fixed in 4% PFA for 10 min at room temperature. Additional control slides without nocodazole or with nocodazole and no recovery were fixed as controls. Slides were processed for immunofluorescence targeting \u03b1-tubulin, pericentrin, and \u03bb-tubulin, immunofluorescence signal was imaged by confocal microscopy, and microtubule nucleation rates were evaluated by quantifying the relative \u03b1-tubulin signal intensity within the centrosome region, which was defined using 3D volumetric assessment (Imaris) of pericentrin-positive volumes.\n\n### Live imaging of microtubule dynamics\n\nCells were plated in plastic-bottom optical slides (Ibidi 80826). After 24 hr, cells were treated with 100 nM bortezomib for 6 hr, followed by a PBS wash and a 4 hr recovery period in ELow media. 1 hr prior to imaging, fresh media containing 100 nM SiR-tubulin (Spirochrome SC002) and 10 \u03bcM verapamil (an efflux pump inhibitor) were added. Cells were placed in a spinning-disk Dragonfly chamber with prewarmed temperature set at 37\u00b0C and 5% CO2. Prior to imaging, cells were incubated with 13 \u03bcM nocodazole for 20 min, washed once with PBS and fresh media with 100 nM SiR-tubulin, and 10 \u03bcM verapamil was added. Images were acquired with a 1 \u03bcm z-stack every 2 s for 7 min with a 63\u00d7 oil objective, using Fusion imaging software. Videos were analyzed using Imaris software. Images from frames 1, 11, 21, 31, 41, 51, and 61 were extracted, and total volume of SiR-tubulin signal coming from centrosomes (as identified at frame 1) was calculated per each cell. For videos acquired on different days, frames were aligned on pseudotime, based on the start time of microtubule growth in S51 SCC cells. Experiment was performed in two independent biological replicates (each with two technical replicates).\n\n### Scratch assay\n\nCells were plated in plastic-bottom optical slides (Ibidi 80826) and allowed to reach confluency in 48 hr. At this time, cells were treated with 100 nM bortezomib or a vehicle control for 6 hr followed by PBS wash and replacement with fresh, drug-free media. At the time of wash, scratch wounds were manually created by gently scaping cells using a rubber cell scraper. Movement of wound-edge SCC cells was evaluated using time-lapse confocal microscopy of GFP signal (marking all cells) with images acquired every 2 min for 8 hr. Scratch closure was evaluated using Imaris software to measure the percentage of scratch closed by leading edge cells over the course of the experiment.\n\n### Tumor allografting\n\nSCC allografts were generated by intradermally injecting 1 \u00d7 105 SCC cells suspended in a 50:50 mix of PBS and growth-factor-reduced Matrigel (Corning, 356231) in an injection volume of 50 \u03bcL. Grafts were generated in the flanks of 6\u20138-week-old female (Nude) mice. Tumor dimensions were measured every 5 days using electronic calipers, and tumor volume was calculated using the formula V = 0.5 \u00d7 length \u00d7 width2. For tumor growth experiments, sample sizes of N = 8 were calculated to yield an 80% power to detect a significant (p<0.05) effect size of 50% assuming a standard deviation of 25%, conservative estimates based on past lab experience suggesting targeting ISR-related genes in SCC that yielded larger effect sizes (Sendoel et al., 2017). The experiment was performed twice ISR-competent and ISR-null using two different clones for each, with each experiment powered independently to 80%, yielding total sample size of N = 16 when pooling data. Experiments evaluating apoptosis in vivo were set up for 80% power to detect a significant (p<0.05) effect size of 66% with 25% SD, which yielded a minimum sample size of N = 4.\n\n### FACS isolation of ex vivo tumor cells\n\nTo sort SCC cells out of tumors formed from ISR-WT and ISR-null cells lines, day 35 tumors were dissected from the skin and finely minced in 0.25% of collagenase (Sigma) in HBSS (Gibco) solution. The tissue pieces were incubated at 37\u00b0C for 20 min by gently shaking. After a single wash with ice-cold PBS, the samples were further digested into single-cell suspension in 0.25% trypsin/EDTA (Gibco) for 10 min at 37\u00b0C. After neutralization with the FACS buffer (PBS supplemented with 4% FBS, 5 mM EDTA, and 1 mM HEPES), single-cell suspensions was then centrifuged, resuspended, and strained before preparing for staining. A cocktail of Abs for surface markers at the predetermined concentrations (CD31-APC 1:100, BioLegend; CD45-APC 1:200, BioLegend, CD117-APC 1:100, BioLegend; CD140a-APC 1:100, Thermo Fisher; CD29-APCe780, 1:250, Thermo Fisher, BioLegend) was prepared in the FACS buffer with 100 ng/mL DAPI. Sorting was performed using a BD FACSAria equipped with FACSDiva software to isolate a population of cells that was GFP-positive (pan-SCC), DAPI-negative (live), and APC-negative (dump gate to exclude immune cells, endothelial cells, and fibroblasts), and new cell lines were established from bulk populations of sorted cells.\n\n### Immunofluorescence/histology\n\nFor immunofluorescence of tumors, samples were fixed in 4% PFA for 1 hr at room temperature, dehydrated in 30% sucrose overnight at 4\u00b0C, and mounted into OCT blocks and frozen. 14-\u03bcm-thick sections were cut using a Leica cryostat deposited onto SuperFrost Plus slides (VWR). For immunofluorescence of cells in culture, cells were plated on glass slides (Millicell EZ, MilliporeSigma) coated with human plasma fibronectin (MilliporeSigma) diluted to 100 \u03bcg/mL in PBS. At the conclusion of experiments, samples were fixed with 4% PFA for 10 min at room temperature. Samples were permeabilized with 0.3% Triton-X100 in PBS and blocked using 2.5% normal donkey serum, 2.5% normal goat serum, 1% BSA, 2% fish gelatin, and 0.3% Triton X-100 in PBS. Primary antibodies were applied in blocking buffer overnight at 4\u00b0C. Samples were washed with 0.1% Triton X-100, and secondary antibodies with Alexa 488, Alexa 594, and Alexa 647 were applied for 1 hr at room temperature in blocking buffer containing 1 \u03bcg/mL DAPI. Slides were washed with 0.1% triton and mounted using Prolong Diamond Antifade Mountant with DAPI (Thermo Fisher).\n\n### Microscopy and image analysis\n\nMicroscopy of tumors and \u00d740 images of aggresomes and spreading cells were performed using an Axio Observer Z1 epifluorescence microscope equipped with a Hamamatsu ORCA-ER camera (Hamamatsu Photonics) and with an ApoTome.2 (Carl Zeiss) slider using a \u00d720 air, \u00d740 oil, or \u00d763 oil objective. The \u00d763 confocal microscopy images were collected on an Andor Dragonfly spinning disk imaging system with a Leica DMi8 Stand and cMOS Zyla camera. Images were analyzed in Fiji or Imaris. For fluorescence intensity measurements of tumors, GFP masks were generated and signal was measured within the mask. Aggresomes were manually counted as discrete p62-positive juxtanuclear puncta on maximum intensity Z-projections. Cell dimensions were calculated using the length measuring tool, and cell spreading was evaluated manually by observing for spread morphology. RGB images were generated with Fiji and saved as TIFF files. For 3D reconstructions and volumetric analyses of MTOCs, Imaris was used to generate 3D images, and volumes were generated to create 3D volumes encompassing the discrete puncta of pericentrin staining. Volume as well as summed pericentrin and \u03b3-tubulin fluorescence intensity were measured within these volumes.\n\n### Electron microscopy\n\nCells were fixed in a solution containing 4% PFA, 2% glutaraldehyde, and 2 mM CaCl2 in 0.1 M sodium cacadylate buffer (pH 7.2) for 1 hr at room temperature, and then placed at 4\u00b0C. Cells were next postfixed in 1% osium tetroxide and processed for Epon embedding; ultrathin sections (60\u201365 nm) were then counterstained with uranyl acetate and lead citrate, and images were acquired using a Tacnai G2-12 transmission electron microscope equipped with an AMT BioSprint29 digital camera.\n\n### Cell fractionation\n\nCells were lysed in RIPA buffer (20 mM Tris\u2013HCl, pH 8.0, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% Triton X-100, 0.5% sodium deoxycholate, 0.1% SDS) containing protease inhibitors (cOmplete Mini, Roche) and phosphatase inhibitors (PhosSTOP), and lysed for 10 min at room temperature. Membrane fraction was pelleted by centrifuging at 1000 \u00d7 g for 10 min at 4\u00b0C. The supernatant (cytosolic fraction) was transferred to new tubes, which were centrifuged at 20,000 \u00d7 g for 30 min at 4\u00b0C. The supernatant (RIPA-soluble fraction) was transferred to a new tube, and the pellets (RIPA-insoluble fractions) were washed with 300 \u03bcL of RIPA buffer, centrifuged 20,000 \u00d7 g for 10 min at 4\u00b0C, and then resuspended in 30 \u03bcL of 1\u00d7 LDS-\u03b2ME by vortexing vigorously and boiling at 98\u00b0C for 10 min. The protein concentration of the RIPA-soluble fraction was measured with a BCA (Pierce). RIPA-soluble fractions were mixed into 1\u00d7 LDS-\u03b2ME and protein concentration was normalized. The insoluble fractions were normalized by adding 1\u00d7 LDS-\u03b2Me so that the same volume corresponds to the same volume of insoluble-fraction lysate (e.g., insoluble fraction from 100 \u03bcg of cell lysate). Samples were run on immunoblots as previously described and probed for ubiquitin signal.\n\n### Western blotting\n\nCells were lysed with RIPA (20 mM Tris\u2013HCl, pH 8.0, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% Triton X-100, 0.5% deoxycholate, 0.1% SDS) containing protease inhibitors (cOmplete Mini, Roche) and phosphatase inhibitors (PhosSTOP). Lysates were clarified by centrifugation, and protein concentration of supernatants was evaluated using BCA (Pierce). Protein lysates were normalized, mixed with LDS (Thermo Fisher) and \u03b2-mercaptoethanol (Thermo Fisher), and denatured at 95\u00b0C for 5 min. Protein was separated by gel electrophoresis using 4\u201312% or 12% NuPAGE Bis-Tris gradient gels (Life Technologies) and transferred to nitrocellulose membranes (GE Healthcare, 0.45 \u03bcm). Membranes were blocked with 5% BSA in TBS supplemented with 0.1% Tween 20, and primary antibodies were stained overnight in blocking buffer at 4\u00b0C or 1 hr at room temperature, and HRP-conjugated secondary antibodies were stained for 1 hr at room temperature. Membranes were washed and then incubated with ECL plus chemiluminescent reagent (Pierce) for 30 s. Chemiluminescent signal was evaluated using CL-XPosure Film (Thermo Fisher).\n\n### Antibodies and counterstains\n\nThe following antibodies and dilutions were used for immunoblotting: 1/1000 \u03b2-actin (Cell Signaling Technologies, 3700); 1/1000 p-eIF2\u03b1 (Invitrogen, 44-728G); 1/5000 p-eIF2\u03b1 (Cell Signaling Technologies, 3597); 1/1000 eif2a (Cell Signaling Technologies, 9722); 1/3000 puromycin (MilliporeSigma MABE343); 1/1000 p62/SQSTM1 (Cell Signaling Technologies, 5114); 1/1000 Atf4 (Cell Signaling Technologies, 11815); 1/1000 ubiquitin (Cell Signaling Technologies, 58395); 1/1000 K48-linked polyubiquitin (Cell Signaling Technologies, 8081); 1/1000 Myc-tag (Abcam, ab32); 1/5000 \u03b1-tubulin (MilliporeSigma, T5168); 1/1000 P-S6K (Cell Signaling Technologies 2708); 1/1000 total S6K (Cell Signaling Technologies 9202); 1/1000 P-4EBP1-Thr37 (Cell Signaling Technologies 2855); 1/1000 Total 4EBP1 (Cell Signaling Technologies 9644); and 1/1000 Atf5 (Santa Cruz, sc377168). For immunofluorescence, the following antibodies and dilutions were used: 1/500 \u03b16-integrin (BD Biosciences, 555734); 1/500 GFP (Abcam, ab13970); 1/500 E-cadherin (Cell Signaling Technologies, 3195); 1/500 vinculin (MilliporeSigma, V9131); 1/250 p62/SQSTM (Cell Signaling Technologies, 7695); 1/500 \u03b1-tubulin (BD Biosciences, MCA77G); 1/500 \u03b3-tubulin (MilliporeSigma, T6557); 1/250 pericentrin (Abcam, ab4448); and 1/200 Atf5 (Abcam ab184923). Nuclei were counterstained with 1 \u03bcg/mL DAPI (Thermo Fisher), and F-actin was stained with 1/400 rhodamine or Alexa Fluor-488-conjugated phalloidin (Thermo Fisher).\n\n### Ribosome profiling and analysis\n\nTo perform ribosome profiling, we closely followed a recently published protocol (McGlincy and Ingolia, 2017). In short, cells were lysed in polysome buffer supplemented with 0.1 mg/mL cyclohexamide. Lysates were treated with 500 U of RNAse I (Epicentre) per 25 \u03bcg of RNA (quantified by Qubit Fluorimetry, Thermo Fisher), and RPFs were isolated using sephacryl S400 columns (GE Healthcare) in TE buffer. Ribosomes and RPFs were dissociated in Trizol (Invitrogen) and RNA was collected with protected fragments purified using Zymo Research DirectZol MiniPrep columns. RPFs were purified by running total RNA on a 15% TBE-Urea gel (Thermo Fisher) and cutting the region corresponding to 17\u201334 nucleotides. RNA was purified and precipitated, dephosphorylated with PNK (NEB), and ligated to preadenylated barcoded linker oligonucleotides, and then unligated linker was digested away with 25 U yeast 5\u2032-deadenylase (NEB) and 5 U RecJ exonuclease (Epicentre). Up to eight libraries were pooled, and rRNA was depleted using the Lexogen Ribocop V2 kit, and reverse transcription of RPF-linker fragments was performed in presence of 20 U Superase-IN (Invitrogen) and 200 U ProtoScript II (NEB). cDNAs were circularized using 100 U CircLigase I ssDNA ligase (Epicentre), and cDNA concentration was quantified by QPCR of cDNA compared to a standard curve of a reference sample. Libraries were amplified with Illumina-compatible barcoded primers and a 10-cycle PCR. DNA of the correct size (~160 bp) was isolated on TBE-PAGE gel, precipitated, and resuspended in TE buffer. Total mRNA samples were prepared in parallel, and mRNA was selected by rRNA depletion, and libraries were prepared using Illumina Ribozero kit.\n\nRibosome profiling and total RNA libraries were pooled and sequenced on a NovaSeq using the S1, 1 \u00d7 100 bp kit. Reads were demultiplexed, trimmed using FastX trimmer, and aligned to the mm10 reference genome using bowtie2. Sequences were counted in bins of 5\u2032 UTR, CDS, and 3\u2032 UTR as defined using plastid (https://plastid.readthedocs.io/en/latest/). Count data were analyzed using DESeq2 (Love et al., 2014), an R package designed for statistical analysis of gene counts generated from Illumina-based sequencing. For expression analysis of ribosome profiling data, only reads in the CDS were included and reads coming from the first 15 codons (45 bp) and last 5 codons (15 bp) were excluded. Additionally, only reads of size between 20\u201323 bp or 26\u201332 bp were counted. Gene lists were generated as described in the main text, first by filtering genes with significant differences in RPF read counts, and then genes that changed specifically at the translation level were identified as the subset of filtered genes with TE (TE = normalized RPF/normalized total RNA) fold changes greater than 1.5.\n\n### Data availability\n\nThe total mRNA and RPFs datasets generated during the ribosome profiling experiments performed in this study have been deposited to the Gene Expression Omnibus (GEO) repository with accession code GSE193945.\n",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "2b8a7d7e-d104-4af2-9012-3635c20e4670",
+      "submission_id": "eb4f48b3-d574-4aac-89a4-218a160e6744",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77780.sa0](https://doi.org/10.7554/eLife.77780.sa0)\n\nThis interesting study identifies why or how the integrated stress response pathway regulates cell recovery upon proteotoxic stress, which is especially interesting in cancer cells resistant to proteasome inhibitors. The authors conclude that translation initiation of mRNAs encoding microtubule cytoskeleton, centrosome, and ATF5 proteins is necessary to recover from proteotoxic stress. This article makes a strong contribution to the literature.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77780.sa1](https://doi.org/10.7554/eLife.77780.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The integrated stress response remodels the microtubule organizing center to clear unfolded proteins following proteotoxic stress\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. The reviews are overall positive about the work's suitability for eLife, but there is a need to address the reviewers' criticisms that will require extensive revisions. Due to the relevance of all the points in strengthening the work, all the reviewers' comments should be addressed. We look forward to receiving your revised manuscript,\n\nReviewer #1 (Recommendations for the authors):\n\n1) What happens to PERK activity in the context of S51A+bortezomib? It is very likely that PERK is activated which raises the question if the phenotypes the authors observe are mediated by an ISR-independent, but PERK-dependent mechanism. This could be answered by generating PERK KO cells in the S51A background.\n\n2) Lines 301-303 \u2013 What are the mRNA levels of the 199 translationally upregulated mRNAs? Do they change when cells undergo proteotoxic stress? The X-axis of Figure 3C appears to indicate a very wide variation in transcript abundance ranging from log2 2-14. It is prudent for the authors to show this data on a per gene basis to confirm that the changes are specifically at the translation level. In addition, Figures 3E and F \u2013 it would be good to show the mRNA levels of each of the 24 genes (a complementary heatmap).\n\n3) Figure 3E \u2013 the authors list p-values without a correction for multiple testing (FDR or padj). In my analysis of these 24 genes in DAVID GO, it appears that with the Benjamini test, these BPs and CCs are not statistically significant.\n\n4) Figure 3H and I. The author should establish that the effects they see are truly nucleated at the translational level by showing the mRNA levels of ATF5 between conditions in their RP data (Figure 3H). They should also QPCR for ATF5 for Figure 3I.\n\n5) Lines 493-499 \u2013 The RP data presented here does not indicate that the protein levels of these focal adhesion genes are actually down. This should be validated by western or MS.\n\n6) Is ATF5 translation specific to proteotoxic stress? Or it is generally responsive to eIF2alpha phosphorylation? Would be good to determine this using NaAs02 and Tunicamycin. There may be wider implications beyond proteotoxic stress.\n\n7) Why is ATF5 preferentially translated in the context of proteotoxic stress? Is there a functional cis-regulatory element within the 5' UTR that enables context-specific translation?\n\nReviewer #2 (Recommendations for the authors):\n\nThe findings from Hurwitz et al. expose a novel mechanism underlying the ISR in cancer cells that will be of interest to people in different fields. The presented data is convincing and statistically robust, clearly demonstrating the existence of the involvement of the MTOC in the process. Although the direct molecular connections between MTOCs and the destruction of the protein aggregates are questions for the future, and there are no significant weaknesses, adding some additional analyses will help to strengthen their conclusions.\n\n1. The authors generated valuable tools to study the ISR response by modifying elF4alpha, a major component of the canonical translational complex. The authors generated elF2alpha-myc and mutant elF2alphaS51-myc (ISR-null) expressing cells. Is the translation process in steady-state conditions comparable to the parental cells? It is indicated in the text (line 146), but the information is missing in Figure 1D.\n\n2. Ribosomal profiling approaches revealed enrichment in centrosomal proteins upon activation of the IRS compared to IRS null cells, suggesting an involvement of the centrosome and microtubule-dependent mechanism in a proficient IRS process. The authors indicate that microtubule dynamics decrease upon activation of the IRS. The authors made this claim after measuring the centrosome size and microtubule length after recovery from depolymerization. The data indeed suggest that microtubule dynamics decrease upon IRS. However, MT dynamics and turnover have not been formally tested. MT turnover analyses and growth at the MT ends would be necessary to validate it fully.\n\n3. The centrosome is the major MTOC, but other MTOCs coexist in the cells. Figure 7C shows the expression of ATF5 in other distinct areas within the cells besides the centrosome. Are the proteins identified in their ribosomal profiling localizing only at the centrosome?\n\n4. Are there any ultrastructural changes in the centrioles upon the induction of the IRS?\n\nReviewer #3 (Recommendations for the authors):\n\nHow the cells recovered from proteotoxic stress seems to be dependent on the canonical translation of ATF5, which when overexpressed in mutant S51A cells rescues the in vivo apoptotic and centrosome phenotype to wt cells at comparable levels. Yet the mechanistic link between ATF5, increased protein aggregate formation, increased microtubule and centrosome nucleation or migration is unclear.\n\nIn line with the previous question, one major effect of inhibiting the proteasome is blocking mitotic and cell cycle phases transitions due to its major role in the cell cycle. The study finds that using this proteasome inhibitor induces similar effects: differential expression of mRNAs encoding cell cycle, centrosome, or microtubule organizing centre. The question is whether other ISR inducting drugs can induce a similar mechanism or is only proteasome-dependent?\n\nThe authors show in the study that proteotoxic stress induced by inhibition of the proteasome using bortezomib activates a distinct translation program necessary for cell recovery which includes microtubule cytoskeleton, centrosome and ATF5 proteins and claim to be a global mechanism to recover from ISR. However, in figure 1D, the authors show that bortezomib induces little ISR induction compared to the mild protein inhibition effects induced upon bortezomib. In fact, tunicamycin and bortezomib or oxidative stress activate different kinases. Tunicamycin and bortezomib activate PERK pathway and oxidative stress activates HRI pathway. Is oxidative stress inducing a similar translation recovery program?\n\nOne question that remains unanswered is how cells re-activate canonical translation upon stress that allows them to recover? Is this phosphatase dependent? Can the cells recover from proteotoxic stress by inhibiting this mechanism?\n",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "538b6d41-fbc4-4b05-83c1-d0956aca1c91",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C1",
+      "claim": "The integrated stress response (ISR) is triggered when one of four stress-sensing kinases becomes active: HRI, PKR, PERK, and GCN2.",
+      "claim_type": "EXPLICIT",
+      "source": "One such pathway, the integrated stress response (ISR), is triggered when one of four stress-sensing kinases becomes active: (1) heme-regulated inhibitor kinase (HRI) is activated by oxidative stress, such as arsenite; (2) protein kinase R (PKR) is activated by viral infections; (3) PKR-like endoplasmic reticulum kinase (PERK) is induced when unfolded proteins accumulate (proteotoxic stress) and when the endoplasmic reticulum (ER) becomes stressed; and (4) general control non-depressible 2 (GCN2) is induced in poor nutrient conditions, particularly amino acid deprivation (Costa-Mattioli and Walter, 2020; El-Naggar and Sorensen, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Costa-Mattioli and Walter, 2020 and El-Naggar and Sorensen, 2018, which are referenced works in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "4ed61c9e-15fa-4c0e-8f95-656bcc6b93a3",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C2",
+      "claim": "Activation of any of the four ISR kinases results in phosphorylation of serine 51 of eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of any of these four kinases results in phosphorylation of serine 51 of eIF2\u03b1, a core component of the canonical translational initiation complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established mechanism in the ISR pathway, representing established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "78e3370d-7610-4871-9fe9-75acd1f73711",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C3",
+      "claim": "Phosphorylated eIF2\u03b1 blocks the guanine nucleotide exchange factor eIF2B from stimulating the eIF2-GTP-methionyl-initiator tRNA ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Since phosphorated eIF2\u03b1 blocks the guanine nucleotide exchange factor eIF2B from stimulating the eIF2-GTP-methionyl-initiator tRNA ternary complex, the translation of housekeeping mRNAs is decelerated, and initiation of new protein synthesis is dampened.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established molecular mechanism of ISR-mediated translational control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "9ee189dd-1ffe-4ded-a59d-88d6405a1280",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C4",
+      "claim": "ISR-competent SCC cells displayed phospho-S51 immunolabeling when treated with sodium arsenite, while eIF2\u03b1 S51A clones were refractory to phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when we treated these SCC lines with sodium arsenite to induce oxidative stress and activate the HRI kinase (Sendoel et al., 2017), we observed that like the parental clone, the stressed eIF2\u03b1 S51 cells displayed phospho-S51 immunolabeling, while the eIF2\u03b1 S51A clones were refractory to phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and cited work from Sendoel et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "96d442b6-6638-4e82-be95-a6fd1eae0851",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C5",
+      "claim": "All three stressors (sodium arsenite, tunicamycin, and bortezomib) dampened protein synthesis rates in eIF2\u03b1 S51 SCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using puromycin incorporation as a gauge to measure nascent protein synthesis, we observed that indeed all three stressors dampened protein synthesis rates in our eIF2\u03b1 S51 SCC cells (Figure 1E, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E and Figure 1\u2014figure supplement 1A using puromycin incorporation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "0306aec5-ad94-4ab2-aa44-fa38a31ab6ac",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C7",
+      "claim": "Bortezomib inhibited the mTORC1 pathway in both S51 and S51A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Suspecting alternative mechanisms, we first showed that bortezomib inhibited the mTORC1 pathway (Figure 1\u2014figure supplement 1B), suggesting that mTORC1 is primarily responsible for the global reduction in protein synthesis rates during proteotoxic stress response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "c46c064b-3f31-446c-b647-26ce1940e01c",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C8",
+      "claim": "Upon exposure to proteotoxic stress, nearly 3\u00d7 more eIF2\u03b1-S51A cells were positive for the apoptotic marker Annexin-V compared to cells with an intact ISR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon exposure to proteotoxic stress, nearly 3\u00d7 more eIF2\u03b1-S51A cells were positive for the apoptotic marker Annexin-V over counterparts with an intact ISR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "1bf71b05-7963-4f4b-a479-9957b903d727",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C9",
+      "claim": "Pre-oncogenic and fully transformed stem cells were significantly more resistant to bortezomib-induced cell death compared to wild-type stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly in the presence of bortezomib, pre-oncogenic and fully transformed stem cells were significantly more resistant to cell death compared to wild-type stem cells (Figure 1G, Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G and Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "2fec828f-4710-4268-8593-c028aedd460c",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C10",
+      "claim": "S51A and S51 SCC cells both formed tumors that grew similarly and showed similar morphologies when injected into immunocompromised mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, however, when we injected our SCC cells into the skins of immunocompromised, athymic (Nude) mice, S51A and S51 SCC cells both formed tumors that grew similarly and showed similar morphologies (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "3b8104f8-6e1d-47bd-a512-97c42b89a637",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C11",
+      "claim": "In vivo S51A SCC tumors exhibited significantly greater sensitivity to proteotoxic stress and apoptosis than their S51 counterparts when treated with bortezomib.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, and consistent with our in vitro findings, when we treated our mice with bortezomib, the in vivo S51A SCC tumors exhibited significantly greater sensitivity to proteotoxic stress and apoptosis than their counterparts (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "ffdda81a-a88a-4453-bd5f-6bb5879582e4",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C12",
+      "claim": "Control SCC cells with a competent ISR recovered and began to proliferate within 24\u201348 hr after bortezomib pulse, while ISR-null SCC cells took a full 24 hr longer.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this bortezomib 'pulse,' control SCC cells with a competent ISR recovered and began to proliferate within 24\u201348 hr. In striking contrast, ISR-null SCC cells took a full 24 hr longer than their counterparts before they began to proliferate again (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "8abe0473-452b-434b-aec0-f851770ef63e",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C13",
+      "claim": "The rate at which ubiquitinated proteins were cleared from the insoluble fraction was remarkably reduced in ISR-null cells compared to control SCC cells after withdrawing bortezomib.",
+      "claim_type": "EXPLICIT",
+      "source": "After withdrawing bortezomib, however, the rate at which ubiquitinated proteins were cleared from the insoluble fraction was remarkably reduced in the ISR-null cells compared to control SCC cell lysates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "deec412d-404a-4687-aa5e-c6799bbc47d2",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C14",
+      "claim": "Inhibiting translation elongation with cyclohexamide or translation initiation with harringtonine almost entirely blocked the buildup of protein aggregates following 6 hr of bortezomib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting translation elongation with cyclohexamide or translation initiation with harringtonine almost entirely blocked the buildup of protein aggregates following 6 hr of bortezomib treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "b98e4a1e-f5f8-4918-b2df-2c3e46650a62",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C15",
+      "claim": "When ISR-competent cells were treated with salubrinal, aberrant ubiquitinated aggregates accumulated following 24 hr of recovery from the bortezomib pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that the ability of a cell to resolve the ISR was required to promote clearance of protein aggregates. Thus, when ISR-competent cells were treated with salubrinal, a selective inhibitor of eIF2\u03b1 dephosphorylation, aberrant ubiquitinated aggregates accumulated following 24 hr of recovery from the bortezomib pulse (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "e636e71e-7cdd-4798-a59a-3cb16b973b9a",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C16",
+      "claim": "BafA1 delayed recovery from proteotoxic stress partially but not fully, indicating that both autophagy and the proteasome cooperate in clearing ubiquitin-marked protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2\u2014figure supplement 3C, BafA1 delayed recovery partially but not fully. Taken together, these data indicated that both autophagy and the proteasome cooperate in clearing these ubiquitin-marked protein aggregates during the recovery phase following proteotoxic stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "47b6b5e6-7da7-439f-a702-b93a0e62de8f",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C17",
+      "claim": "PERK participated in protein aggregate clearance independently of the ISR.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, inhibition of PERK signaling by GSK2606414 resulted in increased aggregate accumulation, but this appeared to be irrespective of the status of eIF2\u03b1. PERK participated in protein aggregate clearance independently of the ISR, suggesting that other PERK targets, possibly NRF2 (Pajares et al., 2017), may be involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3D and cited work from Pajares et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "dee57cb9-c4b3-4838-93cc-7eb8c3457db4",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C18",
+      "claim": "24 mRNAs surfaced as candidates for bona fide ISR translational targets and showed strong enrichment across all four sets of translational replicates of proteotoxic stress-induced SCC cells harboring an intact ISR.",
+      "claim_type": "EXPLICIT",
+      "source": "By this criterion, 24 mRNAs surfaced as candidates for bona fide ISR translational targets and showed strong enrichment across all four sets of translational replicates of proteotoxic stress-induced SCC cells harboring an intact ISR (Figure 3E and F, Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "63dcd801-965f-4c09-be8b-caaf90bf74fb",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C19",
+      "claim": "The top three GO-terms for cellular components among ISR translational targets were centrosomal proteins, MTOC proteins, and microtubule cytoskeletal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Most intriguing, however, were the top three GO-terms for cellular components: centrosomal proteins, MTOC proteins, and microtubule cytoskeletal proteins (Figure 3G and genes highlighted in green in Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Gene Ontology analysis shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "b0922de4-f215-42db-b04d-282e42afe8fc",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C20",
+      "claim": "ATF5 mRNA displayed dramatic increases in translation in the absence of transcriptional upregulation and specifically in ISR-competent SCC cells exposed to proteotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Of further intrigue was the mRNA for ATF5, which, like that for ATF4, displayed dramatic increases in translation in the absence of transcriptional upregulation and specifically in ISR-competent SCC cells exposed to proteotoxic stress (Figure 3H and I, Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 3H and I, and qPCR data in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "71844326-09ed-4ffd-9941-284d4201d25d",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C21",
+      "claim": "Fluorescence intensities of both pericentrin and \u03b3-tubulin were significantly increased in control, but not ISR-null cells, specifically during recovery from proteotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence intensities of both markers were significantly increased in control, but not ISR-null cells, and specifically during recovery from proteotoxic stress since no changes were observed in vehicle-treated cells or upon recovery from oxidative and ER stress (Figure 4A, Figure 4\u2014figure supplements 1 and 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 4A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "7b5daa64-9d70-457b-a6f9-f68d6569827c",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C22",
+      "claim": "The overall size of the MTOC was enlarged specifically during recovery from proteotoxic stress and only when the ISR was intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifications further revealed that the overall size of the MTOC was enlarged specifically during recovery from proteotoxic stress and only when the ISR was intact (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "7ddcc12c-e39b-43c1-bf50-48486ed4f0d7",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C23",
+      "claim": "Enlargement of the MTOC was dependent on eIF2\u03b1 dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, enlargement of the MTOC was dependent on eIF2\u03b1 dephosphorylation, suggesting that while ISR-dependent synthesis of cytoskeletal proteins occurs early on during stress response, cellular recovery requires resolution of the ISR (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "063ae031-508e-4226-a4ee-e29185956e3f",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C24",
+      "claim": "Pre-oncogenic and fully transformed keratinocytes both significantly increased MTOC size during the recovery phase from proteotoxic stress, while keratinocytes isolated from littermate control mice failed to do so.",
+      "claim_type": "EXPLICIT",
+      "source": "While pre-oncogenic and fully transformed keratinocytes both significantly increased MTOC size during the recovery phase from proteotoxic stress, keratinocytes isolated from littermate control mice failed to do so (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "602c0ca7-ecbe-4002-a25d-03dee8e94a99",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C25",
+      "claim": "Microtubule growth from the MTOC was markedly impaired in ISR-null compared to control SCC cells after 4 hr of bortezomib recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after 4 hr of bortezomib recovery, microtubule growth from the MTOC was still markedly impaired in the ISR-null compared to control SCC cells (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "70661415-baf7-4e7c-a46d-bd69b2080f1f",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C26",
+      "claim": "Live imaging revealed a significant delay in new microtubules nucleating from the centrosomes in S51A cells specifically during recovery from proteotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Live imaging of S51 and S51A cells showed no overt differences in the microtubule cytoskeleton of unstressed cells. However, when combined with nocodazole recovery, SiR-tubulin imaging revealed a significant delay in new microtubules nucleating from the centrosomes in S51A cells specifically during recovery from proteotoxic stress (Figure 4F, Figure 4\u2014figure supplement 4B, Figure 4\u2014video 1, Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live imaging data shown in Figure 4F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "65dd7552-c2ec-40fa-81be-4b9b9d4e8777",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C27",
+      "claim": "Misfolded protein aggregates began to coalesce into the aggresome soon after bortezomib withdrawal in S51 cells, peaking at approximately 8 hr into the recovery phase.",
+      "claim_type": "EXPLICIT",
+      "source": "As judged by convergence of intense anti-p62 immunofluorescence to a single large perinuclear spot within each S51 cell, misfolded protein aggregates began to coalesce into the aggresome soon after bortezomib withdrawal, peaking at approximately 8 hr into the recovery phase (Figure 5B, top panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "34a3c4f7-7b51-432f-aa24-47e06bf96b75",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C28",
+      "claim": "Only a few S51A cells displayed the bright perinuclear spot reflective of the aggresome at 8 hr after bortezomib withdrawal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even at 8 hr after bortezomib withdrawal, only a few S51A cells displayed the bright perinuclear spot reflective of the aggresome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "6a7a3c24-6f7f-40a2-9f01-6c39a4d02385",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C29",
+      "claim": "Electron-dense protein aggregates pushing into the nucleus were observed in the perinuclear regions of S51 but not S51A SCC cells after 8 hr of recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "After 8 hr of recovery, electron-dense protein aggregates pushing into the nucleus were observed in the perinuclear regions of S51 but not S51A SCC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electron microscopy data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "6a0d1816-8175-4fb3-904f-822a3083096f",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C30",
+      "claim": "Microtubule stabilization with paclitaxel potently blocked aggresome formation, phenocopying the ISR-null cells during this process.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our hypothesis, microtubule stabilization with paclitaxel potently blocked aggresome formation, phenocopying the ISR-null cells during this process (Figure 5\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "de35df9f-17a6-46d0-857e-ea95084bf0cc",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C31",
+      "claim": "Upon proteotoxic stress the ISR promoted a remodeling in cell morphology evident by diminished focal adhesion and F-actin staining.",
+      "claim_type": "EXPLICIT",
+      "source": "As judged by immunofluorescence for vinculin, upon proteotoxic stress the ISR promoted a remodeling in cell morphology evident by diminished focal adhesion and F-actin staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "aa4c7a02-69ca-4747-8261-4cea9a2ff126",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C32",
+      "claim": "ISR-null SCC cells recovering from proteotoxic stress possessed large, stable focal adhesions that did not disassemble, rendering the cell immobile.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ISR-null SCC cells recovering from proteotoxic stress possessed large, stable focal adhesions that did not disassemble, rendering the cell immobile over the time frame, whereas control SCC cells disassembled their large focal adhesions and displayed considerable dynamics (Figure 6B, Figure 6\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live imaging data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "618fc185-2246-4b09-9b5b-e9b79ce3fc31",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C33",
+      "claim": "ISR-null cells showed markedly impaired mobility relative to control cells and failed to migrate into the wound site in a scratch wound assay following bortezomib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm these aberrant dynamics, we performed a scratch wound assay to induce cell migration following bortezomib treatment. In agreement with our previous data showing large and stable focal adhesion, ISR-null cells showed markedly impaired mobility relative to control cells and failed to migrate into the wound site (Figure 6C, Figure 6\u2014video 2, Figure 6\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "67ca74bb-efed-4fc7-92eb-e5044b77b98e",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C34",
+      "claim": "ATF5 is translated only during proteotoxic stress, in contrast to ATF4 that is broadly induced to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in contrast to ATF4 that is broadly induced to stress, we found that ATF5 is translated only during proteotoxic stress (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "e8e9c6b3-0888-4630-a4ea-7fd0d22546b4",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C35",
+      "claim": "Upon recovery from proteotoxic stress ATF5 localized at the centrosome in ISR-competent SCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the notion that ATF5 may play a selective role in clearance of protein aggregates, confocal microscopy revealed that upon recovery from proteotoxic stress ATF5 localized at the centrosome in ISR-competent SCC cells (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "422964d9-c755-4601-be20-417258bdcad4",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C36",
+      "claim": "Expression of ATF5 significantly improved the ability of ISR-null cells to clear ubiquitinated proteins after 24 hr recovery from bortezomib.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, expression of ATF5 significantly improved the ability of ISR-null cells to clear ubiquitinated proteins, as assessed by immunoblot of ubiquitinated proteins in the insoluble fraction of cells after 24 hr recovery from bortezomib (Figure 7D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 7D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "5c599810-7c78-4ef6-8e81-6032c86300b8",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C37",
+      "claim": "ATF5 expression corresponded with a significant increase in aggresome formation in ISR-null cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, this corresponded with a significant increase in aggresome formation, indicating that ISR-mediated ATF5 upregulation is needed to promote the retrograde transport of misfolded proteins and the subsequent accumulation of protein aggregates at the MTOC (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "a845fa5a-9ef4-4c98-b8ed-edd400a61c65",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C38",
+      "claim": "ATF5 expression increased pericentrin mean fluorescence intensity at the centrosome in ISR-null cells after recovery from bortezomib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was mediated via protection of microtubule dynamics as evidenced by increased pericentrin mean fluorescence intensity at the centrosome in ISR-null cells expressing ATF5 after recovery from bortezomib treatment (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "c651f826-8a85-4264-9507-b8c5aa51f2fc",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C39",
+      "claim": "Short-hairpin-RNA-mediated ATF5 knockdown in ISR-competent cells resulted in higher accumulation of ubiquitinated proteins and reduced aggresome formation during recovery from proteotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Strengthening this mechanistic link, short-hairpin-RNA-mediated ATF5 knockdown in ISR-competent cells resulted in higher accumulation of ubiquitinated proteins and reduced aggresome formation during recovery from proteotoxic stress (Figure 7\u2014figure supplement 1B-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7\u2014figure supplement 1B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "d2833925-b107-4ebd-af1d-cf22a557daee",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C40",
+      "claim": "Control keratinocytes mounted an ISR in response to bortezomib but failed to induce Atf5 translation despite expressing similar levels of Atf5 mRNA compared to transformed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to bortezomib, control keratinocytes mounted an ISR, as judged by eIF2\u03b1 phosphorylation, and upregulated ATF4 although at lower level compared to transformed cells. Yet, despite expressing similar levels of Atf5 mRNA, untransformed cells failed to induce Atf5 translation and showed no ATF5 protein expression (Figure 7H, Figure 7\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot and qPCR data shown in Figure 7H and Figure 7\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "0db34c87-9a1e-42f0-a84e-637185fb8416",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C41",
+      "claim": "ATF5 expression rescued the selective sensitivity to bortezomib shown by ISR-null cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, ATF5 expression rescued the selective sensitivity to bortezomib shown by ISR-null cells. This occurred in the absence of changes in viability in tumors at steady state (Figure 7I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo experimental data shown in Figure 7I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "0867f134-faf7-40ae-a813-a1cf1fcc3bbc",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C42",
+      "claim": "The ISR is not only required to mount a stress response, but also to instruct cell function during recovery from stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings led us to the remarkable conclusion that the ISR is not only required to mount a stress response, but also to instruct cell function during recovery from stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the collective experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "f4ea306b-e363-407d-8849-c06344e2e43e",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C43",
+      "claim": "When ISR-competent cells are exposed to proteotoxic stress, they redirect their translational machinery to a cohort of mRNAs encoding centrosomal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we learned that when ISR-competent cells are exposed to proteotoxic stress, they redirect their translational machinery to a cohort of mRNAs encoding centrosomal proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "5f9463cb-909d-4a84-9e2d-17ee747a1fe6",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C44",
+      "claim": "Centrosomal proteins function in bolstering the MTOC and reinforcing its microtubule dynamics to facilitate efficient microtubule-mediated transport of misfolded proteins to the perinuclear space.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that these proteins function in bolstering the MTOC and reinforcing its microtubule dynamics. This then facilitates efficient microtubule-mediated transport of misfolded proteins to the perinuclear space, where they can be assembled into aggresomes and targeted for ubiquitin-mediated degradation during the stress recovery phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental findings including MTOC enlargement, microtubule dynamics assays, and aggresome formation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "f584c377-b8f8-44d1-aafc-d0842c5e54df",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C45",
+      "claim": "The ISR not only upregulates a subset of centrosomal proteins, but also downregulates focal adhesion components.",
+      "claim_type": "EXPLICIT",
+      "source": "Compellingly, the ISR not only upregulates a subset of centrosomal proteins, but also downregulates focal adhesion components, surfacing a network of ISR-regulated cytoskeletal dynamics that directs morphological changes critical for cell recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ribosome profiling data showing downregulation of focal adhesion genes and immunofluorescence data showing changes in focal adhesion morphology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "af5f64a8-de37-4b28-9e79-155f07ba4fb3",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C46",
+      "claim": "ISR-mediated translational upregulation of centrosomal proteins, including ATF5, is required to remodel the MTOC and concentrate protein aggregates in the perinuclear space.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support a model in which ISR-mediated translational upregulation of centrosomal proteins, including ATF5, is required to remodel the MTOC and concentrate protein aggregates in the perinuclear space so that they can be degraded and cleared by proteosomes and autophagosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model supported by multiple experimental findings including ribosome profiling, MTOC enlargement, aggresome formation, and ATF5 rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "05917475-253b-41af-b6c9-ad3d1a68f9b6",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "claim_id": "C47",
+      "claim": "Atf5 translational upregulation is limited to proteotoxic stress and unique to transformed skin stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings that Atf5 translational upregulation is limited to proteotoxic stress and unique to transformed skin stem cells is particularly intriguing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing ATF5 induction in control versus transformed keratinocytes shown in Figure 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7e223093-0c9c-4bf5-adaf-4893e6485a1e",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The ISR pathway is activated by four stress-sensing kinases (HRI, PKR, PERK, GCN2) that phosphorylate eIF2\u03b1 at serine 51, which blocks eIF2B and dampens canonical translation initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 describe well-established mechanisms of the ISR pathway supported by citations to authoritative reviews (Costa-Mattioli and Walter, 2020; El-Naggar and Sorensen, 2018). These are foundational concepts in the field with extensive prior validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "6af5d985-820d-48c5-a72e-84290131b9c4",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ISR-competent SCC cells (S51) show eIF2\u03b1 phosphorylation and reduced protein synthesis upon stress, while ISR-null cells (S51A) are refractory to phosphorylation. Bortezomib reduces protein synthesis through mTORC1 inhibition rather than ISR-dependent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are supported by immunoblot data (Figure 1C-E) and puromycin incorporation assays demonstrating the expected ISR response. Claim C7 is supported by mTORC1 pathway analysis (Figure 1\u2014figure supplement 1B), though the inference about mTORC1 being 'primarily responsible' could benefit from additional mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "fa2bc3e4-df9f-4fdc-9c3d-9725cb599011",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ISR-null cells show increased sensitivity to proteotoxic stress with 3\u00d7 more Annexin-V positive cells compared to ISR-competent cells. Transformed and pre-oncogenic keratinocytes are more resistant to bortezomib than wild-type cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 are supported by FACS data (Figure 1F-G) with appropriate statistical analysis. The experiments include proper controls and demonstrate a clear ISR-dependent protective effect against proteotoxic stress, establishing the functional importance of the ISR in cancer cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "90657645-a96c-4087-9e64-35ce10f1aa9c",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ISR-null and ISR-competent SCC cells form tumors with similar growth and morphology in vivo, but ISR-null tumors show significantly greater apoptosis when treated with bortezomib.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 are supported by in vivo tumor growth data (Figure 2A) and cleaved caspase 3 immunofluorescence (Figure 2B). The data demonstrate that while the ISR is dispensable for tumor formation under normal conditions, it becomes critical for survival under proteotoxic stress, with appropriate statistical analysis (N=16 tumors per condition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "0b769c5e-9151-4bd3-9c07-7e7200958875",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ISR-null cells show delayed recovery from proteotoxic stress, taking 24 hours longer to resume proliferation, and exhibit impaired clearance of ubiquitinated protein aggregates compared to ISR-competent cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by proliferation assays (Figure 2D) and biochemical fractionation with ubiquitin immunoblots (Figure 2E-F). The data clearly demonstrate ISR-dependent differences in recovery kinetics with appropriate replicates and statistical analysis, establishing a novel role for the ISR in the recovery phase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "ba1a3362-6fbb-4801-a1e8-163cc215a9f0",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Protein aggregates during bortezomib treatment originate from newly synthesized proteins and require both ISR activation and resolution for clearance. Both autophagy and proteasome pathways cooperate in aggregate clearance, while PERK contributes to clearance independently of the ISR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 are supported by pharmacological inhibitor experiments (Figure 2\u2014figure supplement 3A-D) using cyclohexamide, harringtonine, salubrinal, bafilomycin A1, and GSK2606414. The experiments appropriately dissect the contributions of different pathways, though the PERK-independent mechanism (C17) remains somewhat speculative regarding NRF2 involvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "c5300cc0-b117-4f1a-a184-46783ca5d4a5",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ribosome profiling identified 24 mRNAs as ISR translational targets during proteotoxic stress, enriched for centrosomal proteins, MTOC proteins, and microtubule cytoskeletal proteins. ATF5 mRNA shows dramatic translational upregulation specifically during proteotoxic stress in ISR-competent cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by rigorous ribosome profiling with quadruplicate samples, appropriate quality controls (Figure 3\u2014figure supplement 1), and stringent filtering criteria (RPF FC>1.5, padj<0.05, TE FC>1.5). The GO-term enrichment for centrosomal proteins is statistically significant and represents a novel finding. ATF5 data are confirmed by both ribosome profiling and qPCR/immunoblot validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "d1252015-a109-46ea-a09e-1a2126e6358c",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The MTOC enlarges specifically during recovery from proteotoxic stress in ISR-competent cells, as evidenced by increased pericentrin and \u03b3-tubulin fluorescence intensity and volume. This enlargement depends on eIF2\u03b1 dephosphorylation and occurs in transformed but not normal keratinocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by quantitative immunofluorescence microscopy (Figure 4A-C, supplementary figures) with appropriate volumetric analysis and statistical testing. The specificity for proteotoxic stress (not oxidative or ER stress) and dependence on ISR resolution (salubrinal experiments) strengthen the conclusions. The cancer-specific nature is demonstrated by comparing transformed and control keratinocytes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "56787859-adb5-4539-b428-480612ce6658",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Microtubule nucleation from the MTOC is impaired in ISR-null cells during recovery from proteotoxic stress, as shown by both fixed-cell nocodazole recovery assays and live imaging with SiR-tubulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by complementary approaches: fixed-cell immunofluorescence after nocodazole washout (Figure 4E) and live-cell imaging (Figure 4F, videos). The convergence of evidence from both methods strengthens the conclusion. The specificity for the stress recovery phase is clearly demonstrated, though the observation of non-centrosomal microtubule growth in ISR-null cells suggests compensatory mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "d8602519-808c-4c08-bf2f-eecae41f8685",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ISR-competent cells efficiently form aggresomes (perinuclear p62-positive structures) during recovery from proteotoxic stress, peaking at 8 hours, while ISR-null cells show impaired aggresome formation. Microtubule stabilization with paclitaxel blocks aggresome formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by time-course immunofluorescence (Figure 5B), electron microscopy (Figure 5C), and pharmacological validation with paclitaxel (Figure 5\u2014figure supplement 4A). The convergence of light and electron microscopy data provides strong evidence. The paclitaxel experiment directly tests the microtubule-dependence of aggresome formation, supporting the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "9bc2bb19-cf9c-4576-b323-2c931ed599d8",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ISR promotes remodeling of focal adhesions and cell morphology during proteotoxic stress recovery. ISR-null cells retain large, stable focal adhesions and show impaired migration in scratch wound assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by vinculin/F-actin immunofluorescence (Figure 6A), live imaging of zyxin-iRFP (Figure 6B), and scratch wound assays (Figure 6C). The data demonstrate ISR-dependent regulation of focal adhesion dynamics, consistent with the ribosome profiling data showing downregulation of focal adhesion genes. The functional consequence for cell migration is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "44ef154e-4cd1-4ec5-8a9c-0aadf36c9b92",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ATF5 is translated specifically during proteotoxic stress (not other stresses) and localizes to the centrosome. Exogenous ATF5 expression in ISR-null cells rescues protein aggregate clearance, aggresome formation, and MTOC protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by immunoblots showing stress-specific ATF5 induction (Figure 7A), confocal microscopy showing centrosomal localization (Figure 7B), and rescue experiments in ISR-null cells (Figure 7D-G). The rescue experiments provide strong evidence for ATF5's functional importance, though they represent overexpression rather than physiological levels. The data establish ATF5 as a key ISR effector.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "8bcb58ad-b923-4aa7-a94a-2827e2011ea6",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ATF5 knockdown in ISR-competent cells impairs aggregate clearance and aggresome formation. Normal keratinocytes fail to induce ATF5 translation despite mounting an ISR and expressing Atf5 mRNA. ATF5 expression rescues bortezomib sensitivity in ISR-null tumors in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by shRNA knockdown experiments (Figure 7\u2014figure supplement 1B-E), comparison of normal vs. transformed keratinocytes (Figure 7H), and in vivo rescue experiments (Figure 7I). The loss-of-function and gain-of-function experiments provide complementary evidence. The cancer-specific ATF5 induction is a key finding, though the mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "61981a56-0b40-4213-a3c9-e474bc858030",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The ISR functions not only in mounting stress responses but also in directing cellular recovery by redirecting translation to centrosomal proteins that bolster MTOC function and microtubule dynamics, while downregulating focal adhesion components to facilitate morphological changes and protein aggregate clearance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 represent the authors' integrated model synthesizing multiple experimental findings. The model is well-supported by the collective data including ribosome profiling, MTOC enlargement, microtubule dynamics assays, aggresome formation, and focal adhesion remodeling. The mechanistic links are logical and supported by pharmacological and genetic manipulations, though some aspects remain correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    },
+    {
+      "id": "6459d564-5a8a-45a5-836e-851892ea54d1",
+      "content_id": "4f354001-6dba-4ffa-96bc-69bc4334dae7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "ATF5 translational upregulation is limited to proteotoxic stress and unique to transformed skin stem cells compared to normal keratinocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by comparative analysis of ATF5 induction across different stress types (Figure 7A) and cell types (Figure 7H). The cancer-specific nature of ATF5 induction represents an important finding with potential therapeutic implications, though the underlying mechanism controlling this specificity remains to be elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:55:19.321380Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "538b6d41-fbc4-4b05-83c1-d0956aca1c91",
+      "result_id": "7e223093-0c9c-4bf5-adaf-4893e6485a1e"
+    },
+    {
+      "claim_id": "4ed61c9e-15fa-4c0e-8f95-656bcc6b93a3",
+      "result_id": "7e223093-0c9c-4bf5-adaf-4893e6485a1e"
+    },
+    {
+      "claim_id": "78e3370d-7610-4871-9fe9-75acd1f73711",
+      "result_id": "7e223093-0c9c-4bf5-adaf-4893e6485a1e"
+    },
+    {
+      "claim_id": "9ee189dd-1ffe-4ded-a59d-88d6405a1280",
+      "result_id": "6af5d985-820d-48c5-a72e-84290131b9c4"
+    },
+    {
+      "claim_id": "96d442b6-6638-4e82-be95-a6fd1eae0851",
+      "result_id": "6af5d985-820d-48c5-a72e-84290131b9c4"
+    },
+    {
+      "claim_id": "0306aec5-ad94-4ab2-aa44-fa38a31ab6ac",
+      "result_id": "6af5d985-820d-48c5-a72e-84290131b9c4"
+    },
+    {
+      "claim_id": "c46c064b-3f31-446c-b647-26ce1940e01c",
+      "result_id": "fa2bc3e4-df9f-4fdc-9c3d-9725cb599011"
+    },
+    {
+      "claim_id": "1bf71b05-7963-4f4b-a479-9957b903d727",
+      "result_id": "fa2bc3e4-df9f-4fdc-9c3d-9725cb599011"
+    },
+    {
+      "claim_id": "2fec828f-4710-4268-8593-c028aedd460c",
+      "result_id": "90657645-a96c-4087-9e64-35ce10f1aa9c"
+    },
+    {
+      "claim_id": "3b8104f8-6e1d-47bd-a512-97c42b89a637",
+      "result_id": "90657645-a96c-4087-9e64-35ce10f1aa9c"
+    },
+    {
+      "claim_id": "ffdda81a-a88a-4453-bd5f-6bb5879582e4",
+      "result_id": "0b769c5e-9151-4bd3-9c07-7e7200958875"
+    },
+    {
+      "claim_id": "8abe0473-452b-434b-aec0-f851770ef63e",
+      "result_id": "0b769c5e-9151-4bd3-9c07-7e7200958875"
+    },
+    {
+      "claim_id": "deec412d-404a-4687-aa5e-c6799bbc47d2",
+      "result_id": "ba1a3362-6fbb-4801-a1e8-163cc215a9f0"
+    },
+    {
+      "claim_id": "b98e4a1e-f5f8-4918-b2df-2c3e46650a62",
+      "result_id": "ba1a3362-6fbb-4801-a1e8-163cc215a9f0"
+    },
+    {
+      "claim_id": "e636e71e-7cdd-4798-a59a-3cb16b973b9a",
+      "result_id": "ba1a3362-6fbb-4801-a1e8-163cc215a9f0"
+    },
+    {
+      "claim_id": "47b6b5e6-7da7-439f-a702-b93a0e62de8f",
+      "result_id": "ba1a3362-6fbb-4801-a1e8-163cc215a9f0"
+    },
+    {
+      "claim_id": "dee57cb9-c4b3-4838-93cc-7eb8c3457db4",
+      "result_id": "c5300cc0-b117-4f1a-a184-46783ca5d4a5"
+    },
+    {
+      "claim_id": "63dcd801-965f-4c09-be8b-caaf90bf74fb",
+      "result_id": "c5300cc0-b117-4f1a-a184-46783ca5d4a5"
+    },
+    {
+      "claim_id": "b0922de4-f215-42db-b04d-282e42afe8fc",
+      "result_id": "c5300cc0-b117-4f1a-a184-46783ca5d4a5"
+    },
+    {
+      "claim_id": "71844326-09ed-4ffd-9941-284d4201d25d",
+      "result_id": "d1252015-a109-46ea-a09e-1a2126e6358c"
+    },
+    {
+      "claim_id": "7b5daa64-9d70-457b-a6f9-f68d6569827c",
+      "result_id": "d1252015-a109-46ea-a09e-1a2126e6358c"
+    },
+    {
+      "claim_id": "7ddcc12c-e39b-43c1-bf50-48486ed4f0d7",
+      "result_id": "d1252015-a109-46ea-a09e-1a2126e6358c"
+    },
+    {
+      "claim_id": "063ae031-508e-4226-a4ee-e29185956e3f",
+      "result_id": "d1252015-a109-46ea-a09e-1a2126e6358c"
+    },
+    {
+      "claim_id": "602c0ca7-ecbe-4002-a25d-03dee8e94a99",
+      "result_id": "56787859-adb5-4539-b428-480612ce6658"
+    },
+    {
+      "claim_id": "70661415-baf7-4e7c-a46d-bd69b2080f1f",
+      "result_id": "56787859-adb5-4539-b428-480612ce6658"
+    },
+    {
+      "claim_id": "65dd7552-c2ec-40fa-81be-4b9b9d4e8777",
+      "result_id": "d8602519-808c-4c08-bf2f-eecae41f8685"
+    },
+    {
+      "claim_id": "34a3c4f7-7b51-432f-aa24-47e06bf96b75",
+      "result_id": "d8602519-808c-4c08-bf2f-eecae41f8685"
+    },
+    {
+      "claim_id": "6a7a3c24-6f7f-40a2-9f01-6c39a4d02385",
+      "result_id": "d8602519-808c-4c08-bf2f-eecae41f8685"
+    },
+    {
+      "claim_id": "6a0d1816-8175-4fb3-904f-822a3083096f",
+      "result_id": "d8602519-808c-4c08-bf2f-eecae41f8685"
+    },
+    {
+      "claim_id": "de35df9f-17a6-46d0-857e-ea95084bf0cc",
+      "result_id": "9bc2bb19-cf9c-4576-b323-2c931ed599d8"
+    },
+    {
+      "claim_id": "aa4c7a02-69ca-4747-8261-4cea9a2ff126",
+      "result_id": "9bc2bb19-cf9c-4576-b323-2c931ed599d8"
+    },
+    {
+      "claim_id": "618fc185-2246-4b09-9b5b-e9b79ce3fc31",
+      "result_id": "9bc2bb19-cf9c-4576-b323-2c931ed599d8"
+    },
+    {
+      "claim_id": "67ca74bb-efed-4fc7-92eb-e5044b77b98e",
+      "result_id": "44ef154e-4cd1-4ec5-8a9c-0aadf36c9b92"
+    },
+    {
+      "claim_id": "e8e9c6b3-0888-4630-a4ea-7fd0d22546b4",
+      "result_id": "44ef154e-4cd1-4ec5-8a9c-0aadf36c9b92"
+    },
+    {
+      "claim_id": "422964d9-c755-4601-be20-417258bdcad4",
+      "result_id": "44ef154e-4cd1-4ec5-8a9c-0aadf36c9b92"
+    },
+    {
+      "claim_id": "5c599810-7c78-4ef6-8e81-6032c86300b8",
+      "result_id": "44ef154e-4cd1-4ec5-8a9c-0aadf36c9b92"
+    },
+    {
+      "claim_id": "a845fa5a-9ef4-4c98-b8ed-edd400a61c65",
+      "result_id": "44ef154e-4cd1-4ec5-8a9c-0aadf36c9b92"
+    },
+    {
+      "claim_id": "c651f826-8a85-4264-9507-b8c5aa51f2fc",
+      "result_id": "8bcb58ad-b923-4aa7-a94a-2827e2011ea6"
+    },
+    {
+      "claim_id": "d2833925-b107-4ebd-af1d-cf22a557daee",
+      "result_id": "8bcb58ad-b923-4aa7-a94a-2827e2011ea6"
+    },
+    {
+      "claim_id": "0db34c87-9a1e-42f0-a84e-637185fb8416",
+      "result_id": "8bcb58ad-b923-4aa7-a94a-2827e2011ea6"
+    },
+    {
+      "claim_id": "0867f134-faf7-40ae-a813-a1cf1fcc3bbc",
+      "result_id": "61981a56-0b40-4213-a3c9-e474bc858030"
+    },
+    {
+      "claim_id": "f4ea306b-e363-407d-8849-c06344e2e43e",
+      "result_id": "61981a56-0b40-4213-a3c9-e474bc858030"
+    },
+    {
+      "claim_id": "5f9463cb-909d-4a84-9e2d-17ee747a1fe6",
+      "result_id": "61981a56-0b40-4213-a3c9-e474bc858030"
+    },
+    {
+      "claim_id": "f584c377-b8f8-44d1-aafc-d0842c5e54df",
+      "result_id": "61981a56-0b40-4213-a3c9-e474bc858030"
+    },
+    {
+      "claim_id": "af5f64a8-de37-4b28-9e79-155f07ba4fb3",
+      "result_id": "61981a56-0b40-4213-a3c9-e474bc858030"
+    },
+    {
+      "claim_id": "05917475-253b-41af-b6c9-ad3d1a68f9b6",
+      "result_id": "6459d564-5a8a-45a5-836e-851892ea54d1"
+    }
+  ],
+  "comparisons": []
+}

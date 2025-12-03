@@ -1,0 +1,1003 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The study generated single-cell transcriptomes of approximately 67,000 region- and neurotransmitter/neuromodulator-identifiable cells from larval zebrafish brains.",
+    "claim_type": "EXPLICIT",
+    "source": "We generated single-cell transcriptomes of ~67,000 region- and neurotransmitter/neuromodulator-identifiable cells from larval zebrafish brains.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract and supported by the methods describing the collection and sequencing of cells from whole brain and specific brain regions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Hierarchical clustering based on effector gene profiles distinguished major brain cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "Hierarchical clustering based on effector gene profiles ('terminal features') distinguished major brain cell types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes performing hierarchical clustering using 1099 effector genes to classify 68 cell clusters into major cell types, as shown in Figure 1F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Sister clusters at hierarchical termini displayed similar terminal features.",
+    "claim_type": "EXPLICIT",
+    "source": "Sister clusters at hierarchical termini displayed similar terminal features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and verified through hierarchical clustering analysis and bootstrap re-sampling analysis using pvclust.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Glutamatergic/GABAergic sister clusters mostly expressed distinct transcription factor profiles (convergent pattern).",
+    "claim_type": "EXPLICIT",
+    "source": "Intriguingly, glutamatergic/GABAergic sister clusters mostly expressed distinct transcription factor (TF) profiles ('convergent pattern'), whereas neuromodulator-type sister clusters predominantly expressed the same TF profiles ('matched pattern').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript presents data from hierarchical sister cluster analysis and population-level statistical analysis showing that 7 out of 8 glutamatergic/GABAergic sister cluster pairs exhibited convergent pattern (Figure 3B).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Neuromodulator-type sister clusters predominantly expressed the same TF profiles (matched pattern).",
+    "claim_type": "EXPLICIT",
+    "source": "Intriguingly, glutamatergic/GABAergic sister clusters mostly expressed distinct transcription factor (TF) profiles ('convergent pattern'), whereas neuromodulator-type sister clusters predominantly expressed the same TF profiles ('matched pattern').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript shows that 5 out of 6 neuromodulator-type sister cluster pairs exhibited matched pattern (Figure 3E and Figure 3\u2014figure supplement 3J).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Glutamatergic/GABAergic clusters with similar TF profiles could display different terminal features (divergent pattern).",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, glutamatergic/GABAergic clusters with similar TF profiles could also display different terminal features ('divergent pattern').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript identifies 10 pairs of glutamatergic/GABAergic clusters that exhibited similar TF profiles but different effector gene profiles (Figure 3B, Figure 3\u2014figure supplement 4A).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "A library of RNA-binding proteins differentially marked divergent pair clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "It led us to identify a library of RNA-binding proteins that differentially marked divergent pair clusters, suggesting the post-transcriptional regulation of neuron diversification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "GO analysis of differentially expressed genes between divergent sister clusters revealed that many genes encoded RBPs (Figure 5A), and the manuscript provides a comprehensive list of these RBPs (Figure 5\u2014source data 1).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The larval zebrafish brain comprises approximately 100,000 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "The larval zebrafish brain comprises only about 100,000 cells, thus providing an outstanding vertebrate model for studying cell diversity within the entire brain, using single-cell transcriptome analysis with full cell coverage by the 10\u00d7 Genomics Platform.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction as established knowledge about zebrafish brain cell numbers.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The study obtained transcriptomes of 65,253 cells and selected 45,746 cells for further analysis after filtering.",
+    "claim_type": "EXPLICIT",
+    "source": "We obtained the transcriptomes of 65,253 cells and selected 45,746 cells for further analysis after filtering out low-quality data (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is directly stated in the results section describing the data processing pipeline.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "All cells were aggregated into 68 clusters using high-variance genes (n = 1402).",
+    "claim_type": "EXPLICIT",
+    "source": "Then aggregated all cells into 68 clusters using high-variance genes (n = 1402) in t-SNE plot (Figure 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 1A displaying the t-SNE plot with 68 numbered clusters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Most clusters had a high Jaccard index greater than 0.6, indicating robustness.",
+    "claim_type": "EXPLICIT",
+    "source": "The Jaccard index-based analysis showed that most clusters had a high Jaccard index greater than 0.6, indicating the robustness of these clusters (details in Materials and methods) (Tang et al., 2020) except for a few neuronal clusters from sub-OT (Clusters 52, 66), and non-neuronal clusters (neuroprogenitors: Clusters 37, 56; radial astrocytes: 65, Figure 1\u2014figure supplement 1E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes using the Jaccard index to evaluate cluster stability, with results shown in Figure 1\u2014figure supplement 1E, and cites the method from Tang et al., 2020.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Foxg1a, en2a, and hoxb3a were explicitly expressed in all cell types of the forebrain, optic tectum, and hindbrain, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, foxg1a, en2a, and hoxb3a were explicitly expressed in all cell types of the Fore, OT, and Hind, respectively (Figure 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 1D as a dot plot displaying expression levels of region-specific marker genes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Brain region-specific genes exhibited a conserved region-specific expression pattern in the mouse brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, these brain region-specific genes also exhibited a conserved region-specific expression pattern in the mouse brain (Hanks et al., 1995, Manzanares et al., 2001, Kumamoto and Hanashima, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references (Hanks et al., 1995, Manzanares et al., 2001, Kumamoto and Hanashima, 2017) to support the conservation of region-specific gene expression patterns across species.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The ratio of glutamatergic to GABAergic neurons was highest in the forebrain and lowest in the hindbrain.",
+    "claim_type": "EXPLICIT",
+    "source": "The ratio of glutamatergic to GABAergic neurons was the highest in the forebrain and lowest in the hindbrain, indicating that glutamatergic neurons predominantly belonged to the forebrain, whereas glycinergic neurons mainly resided in the hindbrain (Figure 1\u2014figure supplement 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and supported by pie charts in Figure 1\u2014figure supplement 2D showing the compositions of different neuron types in brain regions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The 68 clusters exhibited high overlap with their counterparts in the juvenile zebrafish brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the Lawson-Hanson algorithm for non-negative least squares (NNLS) analysis using cluster-specific marker genes (top 20, Figure 1\u2014source data 4) showed that these 68 clusters exhibited a high overlap with their counterparts in the juvenile zebrafish brain recently reported (Raj et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes using NNLS analysis to compare their data with previously published juvenile zebrafish data (Raj et al., 2018), with results shown in Figure 1E.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The brain at 8 dpf mostly represented cellular diversity in the juvenile brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, our analysis indicated that the brain at 8 dpf mostly represented cellular diversity in the juvenile brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is drawn from the NNLS analysis showing high correlation between 8 dpf and juvenile zebrafish brain cell clusters.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The majority of variable genes (78.4%, n = 1099) were effector genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, Gene Ontology (GO) analysis of 1402 variable genes used for the classification of all 68 clusters showed that the majority of these genes (78.4%, n = 1099) were effector genes, which could be classified as neuropeptides, receptors, transporters, ion channels, synaptic proteins, and cell adhesion molecules (Figure 1\u2014figure supplement 2G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and supported by GO analysis results shown in Figure 1\u2014figure supplement 2G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "All 68 clusters were first segregated into two groups: neuronal cells (48 clusters, 37,880 cells) and non-neuronal cells (20 clusters, 7866 cells).",
+    "claim_type": "EXPLICIT",
+    "source": "All 68 clusters were first segregated into two groups, neuronal cells (48 clusters, 37,880 cells) and non-neuronal cells (20 clusters, 7866 cells) (Figure 1F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the hierarchical dendrogram in Figure 1F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Branch IIa included 22 subclasses of excitatory glutamatergic neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Branch IIa included 22 subclasses of excitatory glutamatergic neurons (vgluta2a+-gad1b--glyt2-), whereas Branch IIb inhibitory neurons included 17 subclasses of GABAergic neurons (vgluta2a-/gad1b+) and 1 subclass of glycinergic neurons (vgluta2a--gad1b+-glyt2+, Cluster17, Figure 1\u2014source data 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text describing the hierarchical classification of neuronal cells based on neurotransmitter markers.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Using Tg (ETvmat2:GFP) transgenic fish, the study could examine transcriptomes of DA neurons, 5-HT neurons, and NE neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Using this fishline, we could examine transcriptomes of DA neurons, 5-hydroxytryptamine (5-HT) neurons, and norepinephrinergic (NE) neurons (Wen et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text and cites Wen et al., 2008 as the source for the transgenic line characterization.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "A total of 5368 vmat2-expressing cells were obtained and aggregated into 22 clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "After the filtering procedures described above, we obtained a total of 5368 vmat2-expressing cells (Materials and methods). The analysis aggregated these cells into 22 clusters in t-SNE plots (Figure 2B), more than those found using whole-brain samples (two DA, one 5-HT, and three ChAT; Figure 1\u2014source data 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 2B displaying the t-SNE plot with 22 numbered clusters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The majority of clusters (20/22) were stable using mean/median Jaccard index >0.6 as cutoff.",
+    "claim_type": "EXPLICIT",
+    "source": "To further validate the stability of clusters, we used the Jaccard index, which showed that the majority of clusters (20/22) were stable using mean/median Jaccard index >0.6 as cutoff (Figure 2\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and supported by the JaccardRainCloudPlot in Figure 2\u2014figure supplement 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The majority of 5-HT (8/14) and DA clusters (5/7) expressed GABAergic markers gad1b/gad2.",
+    "claim_type": "EXPLICIT",
+    "source": "Further examination of these neuromodulator clusters for their expression of specific neurotransmitters showed that the majority of 5-HT (8/14) and DA clusters (5/7) expressed GABAergic markers gad1b/gad2 (Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the dot plot in Figure 2C displaying expression of neurotransmitter markers.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "TF-based and effector gene-based trees were distinct in terms of matching node and tree distances (tree distance = 0.71).",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, TF-based and effector gene-based trees were distinct in terms of matching node (only one matching node: Clusters 9/61) and tree distances (tree distance = 0.71, Figure 3\u2014figure supplement 1B), suggesting that the effector gene-based sister clusters (Figure 3\u2014figure supplement 2A) might express different TF profiles.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and supported by the tree comparison analysis shown in Figure 3\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Out of 11 effector genes-based sister clusters, only one pair could be found in TF-based sister clusters (Clusters 9/61, 'matched pattern').",
+    "claim_type": "EXPLICIT",
+    "source": "We found out of 11 effector genes-based sister clusters, only one pairs could be found in TF-based sister clusters (Clusters 9/61, 'matched pattern', Figure 3\u2014figure supplement 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Ten effector gene-based sister clusters were separated in TF-based classification, suggesting neurons with similar terminal features mostly expressed different TF profiles ('convergent pattern').",
+    "claim_type": "EXPLICIT",
+    "source": "And other 10 effector gene-based sister clusters were separated in TF-based classification, suggesting that neurons with similar terminal features mostly expressed different TF profiles ('convergent pattern'; Figure 3\u2014figure supplement 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 2C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The population-level analysis identified 19 pairs of effector gene-based similar pair clusters, 5 with matched pattern and 14 with convergent pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "The population-level analysis identified 19 pairs of effector gene-based similar pair clusters, 5 with matched pattern and 14 with convergent pattern (Figure 3\u2014figure supplement 2D-G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and supported by scatter plots and tables in Figure 3\u2014figure supplement 2D-G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "By intersecting hierarchical sister cluster analysis and population-level statistical analysis, eight pairs of effector gene-based glutamatergic/GABAergic similar pair clusters were identified, one with matched pattern and seven with convergent pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "To overcome this discrepancy, we intersected the results from hierarchical sister cluster analysis and population-level statistical analysis, and identified eight pairs of effector gene-based glutamatergic/GABAergic similar pair clusters, one with matched pattern and seven with convergent pattern (Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Tectal glutamatergic Cluster 1 and hindbrain glutamatergic Cluster 31 shared effector gene profiles but differentially expressed TF profiles.",
+    "claim_type": "EXPLICIT",
+    "source": "The first case was a glutamatergic pair cluster from different brain regions: tectal glutamatergic Cluster 1 and hindbrain glutamatergic Cluster 31 shared effector gene profiles including camk2n1a/stmn4/cbln2b/olfm3a/cd63, but differentially expressed TF profiles, atf5b/bhlhe41/lhx1a and ddit3/cebpb/lef1, respectively (Figure 3C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text as an example of convergent pattern and shown in violin plots in Figure 3C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "GABAergic clusters in the forebrain (Cluster 36) and the sub-OT (Cluster 16) shared effector gene profiles but differentially expressed TF profiles.",
+    "claim_type": "EXPLICIT",
+    "source": "The second case was GABAergic pair cluster from different brain regions: GABAergic clusters in the forebrain (Cluster 36) and the sub-OT (Cluster 16) shared effector gene profiles mcl1a/cbln1/tspan18a/dusp5/ncaldb, but differentially expressed TF profiles, tbr1b/foxg1a/barhl2 and otpa/otpb/six6a, respectively (Figure 3D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text as an example of convergent pattern and shown in violin plots in Figure 3D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Using hierarchical sister cluster analysis, 5/8 of neuromodulator-type sister clusters matched with those defined by TF profiles ('matched pattern'), 3/8 sister clusters were found to be separated in TF-based classification ('convergent pattern').",
+    "claim_type": "EXPLICIT",
+    "source": "Using hierarchical sister cluster analysis, 5/8 of neuromodulator-type sister clusters matched with those defined by TF profiles ('matched pattern'), 3/8 sister cluster were found to be separated in TF-based classification ('convergent pattern', Figure 3\u2014figure supplement 3D-G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 3D-G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Population-level statistical analysis found eight pairs with matched pattern and one pair with convergent pattern for neuromodulator neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Then, we also performed the population-level statistical analysis using all genes or 80% genes (subsampling) to compare the landscape of TF and effector gene expression. We found eight pairs with matched pattern and one pair with convergent pattern (Figure 3\u2014figure supplement 3H-I).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 3H-I.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "By intersecting hierarchical sister cluster analysis and population-level statistical analysis, six pairs of similar neuromodulator pair clusters were identified, five with matched pattern, and one with convergent pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we intersected hierarchical sister cluster analysis and population-level statistical analysis, and identified six pairs of similar neuromodulator pair clusters, five with matched pattern, and one with convergent pattern (Figure 3\u2014figure supplement 3J-L).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 3J-L.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Neuromodulator pairs with similar effector gene profiles predominantly were 'matched' pattern, whereas neurotransmitter pairs with similar effector gene profiles mainly were 'convergent' pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "Together with the above results of neuromodulator-type and neurotransmitter types, our analysis showed that neuromodulator pairs with similar effector gene profiles predominantly were 'matched' pattern, whereas neurotransmitter pairs with similar effector gene profiles mainly were 'convergent' pattern (Figure 3E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the bar plot in Figure 3E comparing the proportions of different patterns.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The distance between TF-based and effector-based hierarchical tree of neuromodulator neurons (Tree distance = 0.38) was lower than that of glutamatergic/GABAergic neurons (tree distance = 0.71).",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, we performed global tree measurement using the R package 'TreeDist', and found that the distance between TF-based and effector-based hierarchical tree of neuromodulator neurons (Tree distance = 0.38, Figure 3\u2014figure supplement 3A-B) was lower than that of glutamatergic/GABAergic neurons (tree distance = 0.71, Figure 3\u2014figure supplement 1B), suggesting distinct TF regulatory logic of effector-based phenotypes between neurotransmitter-type and neuromodulator-type at the global level.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and supported by tree comparison analyses shown in Figure 3\u2014figure supplement 3A-B and Figure 3\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Thirteen pairs of sister clusters with similar TF profiles were separated in the effector gene-based classification (divergent pattern).",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, in glutamatergic/GABAergic neuronal classification, we surprisingly found that 13 pairs of sister clusters with similar TF profiles were separated in the effector gene-based classification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The population-level statistical analysis identified divergent pairs (n = 15) that were largely overlapped with those identified by hierarchical sister analysis (n = 10).",
+    "claim_type": "EXPLICIT",
+    "source": "Also, the population-level statistical analysis identified divergent pairs (n = 15, Figure 3\u2014figure supplement 4B) that were largely overlapped with those identified by hierarchical sister analysis (n = 10, Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 3B and Figure 3\u2014figure supplement 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Sub-tectal glutamatergic neurons (cluster 24) and hindbrain GABAergic neurons (cluster 17) shared similar TF profiles but expressed different effector gene profiles.",
+    "claim_type": "EXPLICIT",
+    "source": "For examples, sub-tectal glutamatergic neurons (cluster 24) and hindbrain GABAergic neurons (cluster 17) shared similar TF profiles id2a/pax2a/zfhx4/meis1b, but expressed different effector gene profiles, cpne4a/c1ql4b/slc5a7a and gad1b/slc6a1b/slc6a5, respectively (Figure 3F)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text as an example of divergent pattern and shown in violin plots in Figure 3F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Forebrain glutamatergic neurons (Cluster 30) and tectal GABAergic neurons (Cluster 11) shared TF profiles but had differentially expressed effector gene profiles.",
+    "claim_type": "EXPLICIT",
+    "source": "forebrain glutamatergic neurons (Cluster 30) and tectal GABAergic neurons (Cluster 11) shared TF profiles, bhlhe41/bcl11ba/mef2cb, but had differentially expressed effector gene profiles, adcyap1b/syt5b/rprml/gadd45bb, and kcnip1b/cxcl4/plxdc1, respectively (Figure 3G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text as an example of divergent pattern and shown in violin plots in Figure 3G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Analysis of 3,883 sorted tectal glutamatergic neurons yielded 11 clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "Analysis of 3, 883 sorted tectal glutamatergic neurons yielded 11 clusters (n = 11, Figure 4A), more than those identified from the whole-brain samples (n = 5, Figure 4\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the t-SNE plot in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The majority of tectal glutamatergic clusters (10/11) were stable using mean/median Jaccard index >0.6 as cutoff.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of clusters (10/11) were stable using mean/median Jaccard index >0.6 as cutoff (Figure 4\u2014figure supplement 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and supported by the JaccardRainCloudPlot in Figure 4\u2014figure supplement 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "A total of 574 tectal neurons were reconstructed from 263 zebrafish.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, using confocal imaging, we reconstructed a total of 574 tectal neurons (from 263 zebrafish, Figure 4\u2014source data 2) that expressed one of these six TFs (Figure 4\u2014figure supplement 1G).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text describing the morphological analysis of tectal neurons.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Tectal neurons were categorized into seven morphological subclasses: bi-stratified (n = 36), mono-stratified (n = 71), non-stratified (n = 318), necklace-like (n = 76), cross-hemispheric (n = 15), ascending (n = 18), and descending (n = 40).",
+    "claim_type": "EXPLICIT",
+    "source": "These neurons were categorized into seven morphological subclasses: bi-stratified (I, n = 36), mono-stratified (II, n = 71), non-stratified (III, n = 318), necklace-like (IV, n = 76), cross-hemispheric (V, n = 15), ascending (VI, n = 18), and descending (VII, n = 40) (Figure 4D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in representative images in Figure 4D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "All six TFs marked multiple morphological subclasses in a combinatorial manner, while each of seven morphological subclasses was marked by numerous TFs.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, all six TFs marked multiple morphological subclasses in a combinatorial manner, while each of seven morphological subclasses was marked by numerous TFs (Figure 4E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the matrix in Figure 4E displaying the expression of six TFs in seven morphological subclasses.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "GO analysis of differentially expressed genes between sister clusters with divergent pattern showed that many genes encoded RBPs.",
+    "claim_type": "EXPLICIT",
+    "source": "We then performed GO analysis of differentially expressed genes between sister clusters of 10 pairs with different terminal features but similar TF profiles ('divergent pattern'). We surprisingly found that many differentially expressed genes encoded RBPs (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the dot plot in Figure 5A highlighting the category of post-transcriptional regulators.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Two forebrain glutamatergic neuronal clusters (Clusters 7 and 38) shared similar TF profiles but had different effector gene profiles and RBPs.",
+    "claim_type": "EXPLICIT",
+    "source": "Here were two examples: two forebrain glutamatergic neuronal clusters (Clusters 7 and 38) shared the similar expression pattern of TF profiles eomesa/neurod1/tbr1b/foxg1a, but had different effector gene profiles and RBPs, rprma/stxbp1b/egfl6/khdrbs2/msi2b/rbm5 and nrgna/susp5/fam43b/qkia/larp6a, respectively",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text as an example of divergent pattern with differential RBP expression, shown in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "GABAergic neurons in hindbrain (Cluster 12) and sub-tectal (Cluster 16) shared TF profiles but differentially expressed effector genes and RBPs.",
+    "claim_type": "EXPLICIT",
+    "source": "GABAergic neurons in hindbrain (Cluster 12) and sub-tectal (Cluster 16) shared TF profiles, otpa/bhlhe41/id2a, but differentially expressed effector genes and RBPs, kctd4/rgs5b/cpne2/eif5a2/celf3a and slc6a1b/cplx2l /ndrg2/msi2b/rbfox1/msi2a, respectively (Figure 5B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text as an example of divergent pattern with differential RBP expression, shown in violin plots in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "RBP-encoded genes exhibited wide RNA functions, including capping, splicing, polyadenylation, transport, stability, and translation.",
+    "claim_type": "EXPLICIT",
+    "source": "These RBP-encoded genes exhibited wide RNA functions, including capping, splicing, polyadenylation, transport, stability, and translation (Figure 5C, Figure 5\u2014source data 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the 3D pie plot in Figure 5C displaying functional annotation of RBP genes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The number of RBPs that were specific to divergent pattern (n = 52 from 10 pairs) was much more than those specific to either matched pattern (n = 7 from one pair) or convergent pattern (n = 10 from seven pairs).",
+    "claim_type": "EXPLICIT",
+    "source": "Also, we found that the number of RBPs that were specific to divergent pattern (n = 52 from 10 pairs) was much more than those specific to either matched pattern (n = 7 from one pair) or convergent pattern (n = 10 from seven pairs, Figure 5\u2014figure supplement 1E-F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 5\u2014figure supplement 1E-F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "In terms of the number of pattern-specific RBPs per pair, RBPs showed preferential expressions in divergent pairs compared to convergent ones.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, in terms of the number of pattern-specific RBPs per pair, RBPs showed the preferential expressions in divergent pairs compared to convergent ones (Figure 5D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the bar plot in Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Divergent pattern-specific RBPs targeted significantly higher proportions of effector genes than matched and convergent pattern-specific RBPs.",
+    "claim_type": "EXPLICIT",
+    "source": "More importantly, divergent pattern-specific RBPs targeted significantly higher proportions of effector genes than matched and convergent pattern-specific RBPs (Figure 5E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the bar plot in Figure 5E displaying effector binding target proportion of pattern-specific RBPs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Rbfox1-encoded gene was differentially expressed in multiple neuronal clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, genes encoding well-known sequence-specific RBP Rbfox1-encoded gene was differentially expressed in multiple neuronal clusters, like 23/25, 27/54, 11/30, 13/24, 12/16, 2/3, and 7/38 (Figure 5\u2014source data 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text and supported by data in Figure 5\u2014source data 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Single RBPs were frequently present in multiple pair clusters (42.5%, 51/120).",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, we calculated the frequency of individual RBPs in marking all sister pair clusters with each of three patterns and found that single RBPs were frequently present in multiple pair clusters (42.5%, 51/120, Figure 5F), indicating that clusters mostly used RBPs in a combinatorial manner.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text and shown in the bar plot in Figure 5F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The study analyzed approximately 65,000 single cells from the whole-brain, specific brain regions, neurotransmitter/neuromodulator-defined neuronal populations of the 8 dpf larval zebrafish.",
+    "claim_type": "EXPLICIT",
+    "source": "This study analyzed ~65,000 single cells from the whole-brain, specific brain regions, neurotransmitter/neuromodulator-defined neuronal populations of the 8 dpf larval zebrafish (Figures 1A, 2B ,, 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the discussion section summarizing the scope of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The transcriptome analysis offered a close-to-full coverage of all cells (~100,000) in the zebrafish brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, our transcriptome analysis offered a close-to-full coverage of all cells (~100,000) in the zebrafish brain, providing multidimensional landscapes of TFs and post-transcriptional regulators in vertebrate whole-brain neuron classification (Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the discussion section, comparing the number of cells analyzed (~65,000) to the total number of cells in the zebrafish brain (~100,000).",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Sister pair clusters represent the finest molecularly defined neuronal subclasses based on effector gene profiles.",
+    "claim_type": "EXPLICIT",
+    "source": "These sister pair clusters represent the finest molecularly defined neuronal subclasses based on effector gene profiles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion section explaining the significance of analyzing sister clusters at hierarchical termini.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Phenotypic convergence is highly conserved from invertebrates to vertebrates.",
+    "claim_type": "EXPLICIT",
+    "source": "Combined with earlier findings of extensive phenotypic convergence of distinct neuron types in worms and flies (Gendrel et al., 2016; Konstantinides et al., 2018; Hobert and Kratsios, 2019), our findings in zebrafish strongly suggest that phenotypic convergence is highly conserved from invertebrates to vertebrates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is drawn by comparing the findings in zebrafish with previous studies in C. elegans and Drosophila cited in the text (Gendrel et al., 2016; Konstantinides et al., 2018; Hobert and Kratsios, 2019).",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Combinatorial TFs and post-transcriptional regulators could work in concert to determine neuronal types in the larval zebrafish brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, our findings suggest that combinatorial TFs and post-transcriptional regulators could work in concert to determine neuronal types in the larval zebrafish brain (Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This conclusion is stated in the discussion section and illustrated in the summary figure (Figure 6).",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Neurons with similar transcriptomic phenotypes could arise from two different brain regions through different TF programs.",
+    "claim_type": "EXPLICIT",
+    "source": "Putting this finding into the context of neuron-type evolution, it raises the possibility that different brain regions independently give rise to similar neurotransmitter phenotypes through different TF programs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative interpretation stated in the discussion section based on the observation that similar pair clusters can come from different brain regions.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The 68 cell subclasses identified for the larval zebrafish (8 dpf) were confirmed in another fish brain of the same age and were largely recapitulated by cell subclasses identified from the juvenile zebrafish (23\u201325 dpf).",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, the 68 cell subclasses that we have identified for the larval zebrafish (8 dpf) were confirmed in another fish brain of the same age and were largely recapitulated by cell subclasses identified from the juvenile zebrafish (23\u201325 dpf, Figure 1E and Figure 1\u2014figure supplement 2F; Raj et al., 2018).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the discussion section and supported by NNLS analysis results shown in Figure 1E and Figure 1\u2014figure supplement 2F, citing Raj et al., 2018.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Transcriptome-defined subclasses in the study largely represent stable neuronal subclasses.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, transcriptome-defined subclasses in our study indeed largely represent stable neuronal subclasses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is drawn in the discussion section based on the reproducibility of clusters across replicates and developmental stages, as well as morphological validation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Distinct TFs can determine neuronal types with similar neurotransmitter identities in C. elegans, arguing for phenotypic convergence.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, distinct TFs can determine neuronal types with similar neurotransmitter identities in the Caenorhabditis elegans, arguing for phenotypic convergence (Serrano-Saiz et al., 2013; Gendrel et al., 2016; Hobert and Kratsios, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and cites three references (Serrano-Saiz et al., 2013; Gendrel et al., 2016; Hobert and Kratsios, 2019) supporting the concept of phenotypic convergence in C. elegans.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Phenotypic convergence has been reported in Drosophila's optic lobe.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, this phenotypic convergence has also been reported in the Drosophila's optic lobe (Konstantinides et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and cites Konstantinides et al., 2018 as evidence for phenotypic convergence in Drosophila.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Previous scRNA analysis of the zebrafish nervous system has demonstrated the temporal dynamics of brain cell development.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous scRNA analysis of the zebrafish nervous system has elegantly demonstrated the temporal dynamics of brain cell development (Raj et al., 2018; Raj et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and cites two references (Raj et al., 2018; Raj et al., 2020) describing previous zebrafish scRNA-seq studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Rbfox1 is an activity-dependent splicing regulator important in the transition from neuroprogenitors to neurons and in interneuron subtype-specific splicing in the mouse cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies have elegantly revealed the importance of activity-dependent splicing regulator Rbfox1 in the transition from neuroprogenitors to neurons as well as in the interneuron subtype-specific splicing in the mouse cortex (Zhang et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section and cites Zhang et al., 2016 as the source for the functional characterization of Rbfox1.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Rbfox1 specifically recognizes UGCAUG motifs, which are often found at 5\u2032- and 3\u2032-regions of introns.",
+    "claim_type": "EXPLICIT",
+    "source": "Rbfox1 specifically recognizes UGCAUG motifs, which are often found at 5\u2032- and 3\u2032-regions of introns (Yui Jin, 2003; Vuong et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section and cites two references (Yui Jin, 2003; Vuong et al., 2018) describing the sequence specificity of Rbfox1.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Individual neuronal types could be well characterized by their transcriptomes.",
+    "claim_type": "EXPLICIT",
+    "source": "These studies have provided compelling evidence that individual neuronal types could be well characterized by their transcriptomes (Poulin et al., 2016; Tasic et al., 2018; Sugino et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and cites three references (Poulin et al., 2016; Tasic et al., 2018; Sugino et al., 2019) supporting the use of transcriptomes to characterize neuronal types.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "scRNA-seq analyses of half a million cells from the mouse brain showed that neurons could be classified by genes related to neuronal connectivity, synaptic transmission, and membrane conductance.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, scRNA-seq analyses of half a million cells from the mouse brain showed that neurons could be classified by genes related to neuronal connectivity, synaptic transmission, and membrane conductance (Zeisel et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and cites Zeisel et al., 2018 as the source for this finding in mouse brain.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The scRNA-seq analysis of nearly 200 genetically marked mouse neuronal populations showed that neurons could be classified by the expression level of various transcription factors, ion channels, synaptic proteins, and cell adhesion molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "Besides, the scRNA-seq analysis of nearly 200 genetically marked mouse neuronal populations also showed that neurons could be classified by the expression level of various transcription factors (TFs), ion channels, synaptic proteins, and cell adhesion molecules (Sugino et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and cites Sugino et al., 2019 as the source for this finding in mouse neuronal populations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Regulatory genes encode proteins involved in gene transcription and translation (e.g., TFs and post-transcriptional regulators).",
+    "claim_type": "EXPLICIT",
+    "source": "Regulatory genes encode proteins involved in gene transcription and translation (e.g., TFs and post-transcriptional regulators), while effector genes encode proteins serving specific neuronal terminal features (e.g., synaptic proteins, ion channels, transporters, and receptors) (Kratsios et al., 2015; Zeisel et al., 2015; Paul et al., 2017, Zeisel et al., 2018; Reilly et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This definition is stated in the introduction and cites five references (Kratsios et al., 2015; Zeisel et al., 2015; Paul et al., 2017, Zeisel et al., 2018; Reilly et al., 2020) supporting this classification.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Effector genes encode proteins serving specific neuronal terminal features (e.g., synaptic proteins, ion channels, transporters, and receptors).",
+    "claim_type": "EXPLICIT",
+    "source": "Regulatory genes encode proteins involved in gene transcription and translation (e.g., TFs and post-transcriptional regulators), while effector genes encode proteins serving specific neuronal terminal features (e.g., synaptic proteins, ion channels, transporters, and receptors) (Kratsios et al., 2015; Zeisel et al., 2015; Paul et al., 2017, Zeisel et al., 2018; Reilly et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This definition is stated in the introduction and cites five references (Kratsios et al., 2015; Zeisel et al., 2015; Paul et al., 2017, Zeisel et al., 2018; Reilly et al., 2020) supporting this classification.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Regulatory genes are critical for establishing and maintaining effector gene profiles that resulted in diverse neuronal types.",
+    "claim_type": "EXPLICIT",
+    "source": "Regulatory genes are critical for establishing and maintaining effector gene profiles that resulted in diverse neuronal types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction as a general principle of gene regulation in neuronal diversification.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Neuronal types could be well characterized by their features, including electrophysiological properties, neurotransmitter/modulator identity, synaptic connectivity, brain region identity, and cellular morphology.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies have indicated that neuronal types could be well characterized by their features, including electrophysiological properties, neurotransmitter/modulator identity, synaptic connectivity, brain region identity, and cellular morphology (Zeisel et al., 2015; Pandey et al., 2018; Zeisel et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and cites three references (Zeisel et al., 2015; Pandey et al., 2018; Zeisel et al., 2018) supporting these criteria for neuronal classification.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  }
+]

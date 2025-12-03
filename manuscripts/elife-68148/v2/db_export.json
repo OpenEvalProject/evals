@@ -1,0 +1,1810 @@
+{
+  "submission": {
+    "id": "1fc8321f-13d4-4e79-a9d9-f767e76f8749",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:34:25.471062Z",
+    "updated_at": "2025-12-03T11:34:25.471062Z"
+  },
+  "content": [
+    {
+      "id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "submission_id": "1fc8321f-13d4-4e79-a9d9-f767e76f8749",
+      "content_type": "manuscript",
+      "content_text": "# Quantitative transportomics identifies Kif5a as a major regulator of neurodegeneration\n\n## Authors\n\n- Sahil H Shah<sup>1</sup> ([ORCID: 0000-0002-6601-219X](https://orcid.org/0000-0002-6601-219X)) \u2020\n- Lucio M Schiapparelli<sup>2</sup>\n- Yuanhui Ma<sup>4</sup>\n- Satoshi Yokota<sup>1</sup> ([ORCID: 0000-0002-3727-7279](https://orcid.org/0000-0002-3727-7279))\n- Melissa Atkins<sup>1</sup>\n- Xin Xia<sup>1</sup>\n- Evan G Cameron<sup>1</sup>\n- Thanh Huang<sup>5</sup>\n- Sarah Saturday<sup>2</sup>\n- Catalina B Sun<sup>1</sup>\n- Cara Knasel<sup>1</sup>\n- Seth Blackshaw<sup>5</sup> ([ORCID: 0000-0002-1338-8476](https://orcid.org/0000-0002-1338-8476))\n- John R Yates<sup>4</sup> ([ORCID: 0000-0001-5267-1672](https://orcid.org/0000-0001-5267-1672))\n- Hollis T Cline<sup>2</sup> ([ORCID: 0000-0002-4887-9603](https://orcid.org/0000-0002-4887-9603))\n- Jeffrey L Goldberg<sup>1</sup> ([ORCID: 0000-0002-1390-7360](https://orcid.org/0000-0002-1390-7360))\n\n### Affiliations\n\n1. Byers Eye Institute and Spencer Center for Vision Research, Stanford University Palo Alto United States ([ROR:00f54p054](https://ror.org/00f54p054))\n2. Scripps Research, Neuroscience Department and the Dorris Neuroscience Center La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))\n3. Neuroscience Graduate Program and Medical Scientist Training Program, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n4. Scripps Research, Department of Molecular Medicine La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))\n5. Department of Neuroscience, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany neurons in the adult central nervous system, including retinal ganglion cells (RGCs), degenerate and die after injury. Early axon protein and organelle trafficking failure is a key component in many neurodegenerative disorders yet changes to axoplasmic transport in disease models have not been quantified. We analyzed early changes in the protein \u2018transportome\u2019 from RGC somas to their axons after optic nerve injury and identified transport failure of an anterograde motor protein Kif5a early in RGC degeneration. We demonstrated that manipulating Kif5a expression affects anterograde mitochondrial trafficking in RGCs and characterized axon transport in Kif5a knockout mice to identify proteins whose axon localization was Kif5a-dependent. Finally, we found that knockout of Kif5a in RGCs resulted in progressive RGC degeneration in the absence of injury. Together with expression data localizing Kif5a to human RGCs, these data identify Kif5a transport failure as a cause of RGC neurodegeneration and point to a mechanism for future therapeutics.\n\n## Introduction\n\nAdult mammalian central nervous system neurons often undergo cell death and axon degeneration after injury and in disease. Neurodegenerative diseases such as glaucoma and acute injuries such as after optic nerve trauma may result in irreversible retinal ganglion cell (RGC) loss. Mechanisms underlying this degeneration include intracellular events such as acute calcium influx into the axon (Kn\u00f6ferle et al., 2010), loss of constitutive axon survival factors like Nmnat2 (Gilley et al., 2015), inhibition of trophic survival and growth pathways, as with suppressors of cytokine signaling (e.g. Socs3) and ciliary neurotrophic factor (CTNF) signaling or Dusp14 and mitogen-activated protein kinases (Cai et al., 1999; Zhou et al., 2005; Leaver et al., 2006; Park et al., 2010; Galvao et al., 2018), and neuron-extrinsic degenerative signaling, such as from reactive astrocytes (Liddelow et al., 2017) and microglia. Major strides in understanding neurodegeneration in neurons including RGCs have been made in recent years, including transcriptomic (Yasuda et al., 2016), proteomic (Belin et al., 2015), and metabolomic (Sato et al., 2018) cellular changes.\n\nAxon transport failure has been pathophysiologically linked to RGC death in glaucoma, as well as to other neurodegenerative diseases such as amyotrophic lateral sclerosis (ALS) and Alzheimer\u2019s disease (Zhang et al., 2004; Nicolas et al., 2018). While changes described in transcriptional and gene-regulatory networks in neurons can be a proxy for changes in a neuron\u2019s or an axon\u2019s molecular components, it does not capture dynamics in expression or localization of proteins. Proteomics experiments in RGC somas have identified axon injury-induced pathways (Belin et al., 2015), but it is not known how molecular trafficking to the damaged optic nerve changes after injury. Unbiased temporal and spatial quantification of protein transport in vivo has presented technical challenges, including the overall low proportion of transported proteins, and the need to purify target axon proteins from surrounding mixed cellular populations.\n\nWe previously developed a mass spectrometry-compatible technique for characterizing the axon transportome in the visual system (Schiapparelli et al., 2019). Here, we adapt this technique to quantify changes in the axon transportome after optic nerve injury. We identify transport failure of a kinesin-1 motor protein, Kif5a, which we find expressed in human RGCs and also implicated in genetics of neurodegeneration outside the visual system (Tessa et al., 2008; Nicolas et al., 2018). We use transportome proteomics to identify proteins whose transport is dependent on Kif5a, and finally we validate the importance of Kif5a for adult RGC survival in vivo. Together this study adapts novel methods to identify Kif5a transport deficits as a contributor to RGC death after injury and offers new insights into kinesin motor cargo specificity.\n\n## Results\n\n### Pulsed NHS-biotin labels proteins for differential immunofluorescence and proteomics\n\nAfter optic nerve crush in rats, 65% of RGCs die within 1 week, while less than 1% die after 1 day (S\u00e1nchez-Migall\u00f3n et al., 2016). We were interested in identifying potential differences in axonally transported proteins after axon damage, but before cell death. In previous studies we used repeated daily intravitreal injections of N-hydroxysuccinimidobiotin (NHS-biotin) over a week in adult rats for steady-state mass spectrometry-based quantification of anterogradely transported proteins in the optic nerve (Schiapparelli et al., 2014; Schiapparelli et al., 2019). NHS-biotin covalently binds primary amines on proteins, principally lysines and N-terminal amino acids, adding a biotin group (Figure 1a), which is identifiable by the specific shift in peptide molecular weight in mass spectrometry or by immunodetection. Here, we adapted our NHS-biotin protocol to a 24 hr window to provide improved temporal resolution, favoring it over two alternative methods tested (Figure 1\u2014figure supplement 1), consistent with our goal to study early changes after optic nerve crush. Animals received two intravitreal injections, the first at the same time as optic nerve crush or sham surgery and a second 21 hr later, 3 hr before tissue collection, to capture both fast and slow axon transport. Although a variety of retinal proteins are labeled by intravitreal injection, dissection of the optic nerve isolates only proteins which have been transported from RGC somas into RGC axons (Figure 1b). Biotinylated, transported proteins were visualized with tyramide signal amplification in the control optic nerve and region of the injured optic nerve proximal to the crush site (Figure 1c). Notably, there was no biotin signal distal to the crush, confirming the disruption of protein transport and lack of biotin transfer out of axons after injury. Together these data indicate that this protocol results in protein labeling within RGC axons in the optic nerves in both the control and injury conditions, allowing targeted isolation and investigation of changes in RGC proteins transported into the optic nerve after injury.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig1-v2.jpg)\n\n**Figure 1.:** (a) NHS-biotin (biotin group in blue) reacts with primary amines adding a defined mass shift to tagged proteins. (b) NHS-biotin (blue) was injected before injury with a repeat injection 21 hr later. Biotinylated proteins in retinal ganglion cells (RGCs) transport down intact RGC axons in the optic nerve. The retinas and optic nerves were collected for tissue processing after 3 hr. (c) No biotinylated proteins were detected by immunofluorescence distal to the crush site. Scale bar, 100 \u00b5m. (d) Pearson\u2019s R correlation of proteomic replicates of control or optic nerve crush (ONC) samples (R = 0.805 and 0.914, respectively). (e) Ponceau S stain of protein from biotinylated retinas and optic nerves, with and without ONC, showing equivalent total protein. Molecular ladder labeled on left of blot. (f) Western blot of the same samples run in parallel, probing for biotin. ONC decreased biotinylated proteins to a greater extent in ON compared to retina. Molecular ladder labeled on left of blot.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) NHS-azide was injected into the vitreous space. Twenty-four hours later, retinal and optic nerve tissue was collected for either biochemistry or immunofluorescence. Right panels: We found labeled cells across the surface of the retina after a click reaction with an Alexa-488 alkyne but did not detect label in the optic nerve. Retina scale bar, 20 \u00b5m, ON scale bar, 100 \u00b5m. Left panel: With a biotin alkyne click reaction, we were able to detect proteins in the optic nerve and show that they decreased after optic nerve crush, compared to a low background without a biotin alkyne click reaction. Bands in the control lane (right) are endogenous biotin-bound proteins. (b) Biotin-beta-alanine was injected intravitreously or provided to HEK cells in culture. Left panel: Biotinylated proteins of different masses were detectable by western blot from HEK cells. Right panels: After 24 hr, biotin-beta-alanine was detected in sections through the optic nerve, compared to optic nerve from animals with intravitreal PBS injection. Scale bar, 100 \u00b5m. Both techniques are valuable for biochemistry and histology, although protein labeling with N-hydroxysuccinimidobiotin (NHS-biotin) was superior for mass spectrometry.\n\nWe used tandem mass spectrometry (MS/MS) combined with direct detection of biotin-containing tags enrichment to selectively isolate and identify biotinylated peptides. Directly measuring biotin mass shifts on lysine residues in peptides with MS/MS facilitates direct quantification of biotinylated proteins with improved specificity (Schiapparelli et al., 2014). To minimize variability and increase protein yield, we combined eight optic nerves of either control or injury conditions for each MS sample. During dissection, we included optic nerve fragments from the end of the orbit to the chiasm from both injured and sham operated samples to ensure comparable tissue processing. A total of six samples, three each of control or optic nerve crush, were run independently through MS/MS. We detected 206\u2013300 transported proteins with a range of detection of expression up to 300-fold normalized spectral abundance factor (NSAF) values. To assess reproducibility of the quantitative proteomics in each of these conditions, we used pairwise correlation of NSAF values which showed high correlation between replicates of both control and crush samples (Figure 1d, R = 0.805 and R = 0.914, respectively). These experiments show that reducing the labeling window to 24 hr and comparing changes in NSAF values allow relative quantification between two conditions with high correlation between replicates, even in this tight temporal window before widespread apoptosis after optic nerve injury.\n\n### Quantitative transportomics identifies specific proteins whose transport differs after injury\n\nTo ask whether protein transport into the optic nerve changed after injury, we measured the total protein abundance in control and injured retinas and optic nerve by electrophoresis, western blotting, and Ponceau S membrane staining. Total protein content was equivalent in optic nerve crush and control retinas and optic nerves, as expected given the short time between injury and tissue collection (Figure 1e). However, when we compared the biotinylated portion of total protein in crush or control conditions, we found a decrease in axon-transported protein after injury (Figure 1f), consistent with previous studies of total transport after injury (Quigley et al., 1979; McKerracher et al., 1990).\n\nTo test transport changes of individual proteins, we probed for Sncb, Gap43, and Arf3, neuronal proteins known to be transported down the optic nerve (Leon et al., 2000; Schiapparelli et al., 2019; Figure 2a). Four rat optic nerves were labeled and homogenized using the same protocol as above for proteomics, and then biotin-tagged proteins were immunoprecipitated with neutravidin-bound agarose beads. We compared retinal and optic nerve total proteins (input), as well as the biotinylated fraction pulled down by immunoprecipitation (IP), with and without injury. In the retina, there was little to no change in total protein levels (input, Figure 2a) or in the biotinylated fraction (IP, Figure 2a) in any of the three proteins, suggesting the abundance of these proteins is equivalent in the retinal cell bodies at this early time point after optic nerve injury. Sncb and Arf3 but not Gap43 showed significant decreases in transport into the optic nerve after injury (IP + vs. \u2013 crush, Figure 2a), and this decrease was significant even when normalizing to the decrease in total transported protein as captured in Figure 1f (normalized log2FC = \u22122.2 for Sncb, \u20131.3 for Arf3, n = 3). This suggests that deficits in transport of specific proteins occur within the first 24 hr after optic nerve injury before changes in total protein can be detected. These data exemplify the need for axon-specific, temporally restricted protein labeling to accurately assess early axon transportome changes in the degenerative process.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig2-v2.jpg)\n\n**Figure 2.:** (a) Immunoprecipitation (IP) of biotinylated protein from retinal and optic nerve samples, probed for Sncb, Gap43, or Arf3. Input of each sample on top row, subsequent IP of each sample on bottom row, for either optic nerve crush (ONC) samples or sham surgeries. (b) Volcano plot comparing biotinylated proteins from control versus ONC nerve samples. Normalized spectral abundance factor (NSAF) values for each sample type were averaged across three replicates. Proteins with an absolute fold change greater than 1.5, p-value less than 0.05, or both, are colored blue, gray, and red respectively. (c) Retinal cross-sections immunostained with Kif5a and DAPI showing localization of Kif5a in the retinal ganglion cell (RGC) layer (top) and RGC-specific marker RBPMS and Kif5a showing co-localization of Kif5a with RGCs (bottom). Scale bar, 100 \u00b5m. (d) Three replicates of biotin IPs probed with an antibody against Kif5a. Inputs are on the left. The IP was stripped and re-probed for biotin for a measurement of total biotinylated protein pulled down (not shown). (e) Quantification of the change in transported Kif5a compared to the change in total transported protein after ONC. One-sample, two-tailed t-test, p = 0.003, n = 3. The bar height and error bar represent the mean and 95% confidence interval respectively. ONC = optic nerve crush. (f) Average intraocular pressure after induction of glaucoma over time in two groups, one with sustained pressure elevation and one with only initial pressure elevation. (g) Quantitative changes in retinal protein synthesis 3 weeks after induction of glaucoma. 1143 and 1457 proteins were quantified in replicates 1 and 2, respectively. Log2 transformed normalized spectral ratios of glaucoma/control samples were plotted from lowest to highest. Newly synthesized Kif5a, detected by BONCAT and quantitative mass spectrometry, was decreased in both replicates, while Kif5b synthesis was unaffected.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Motor proteins as identified by DAVID 6.8 are highlighted in red. Out of these, only the transport of Kif5a was significantly changed after optic nerve crush. (b) Synthesis of Kif5 family members in the retina 3 weeks after glaucoma induction. Out of 921 proteins quantified in both samples, 43 proteins had significantly increased synthesis (red dots), while 30 proteins had significantly decreased synthesis (blue dots). Kif5a was significantly decreased (green dot, labeled) while Kif5b was not affected (green dot, labeled). Glaucoma/control spectral ratios from each sample normalized before analysis. Complete data in .\n\nWe then examined the transportome changes after optic nerve crush using mass spectrometry. We normalized relative abundance of detected proteins within each condition to determine whether specific proteins are transported down the axon in greater or lesser amount relative to the global transport rate, which was decreased. Individual protein transport was quantified using NSAF in injured or control conditions across three replicates containing eight optic nerves each (complete data in Figure 1\u2014source data 1). The relative log-normalized fold change of anterogradely transported proteins from RGC bodies to their axons in the optic nerve was visualized on a volcano plot (Figure 2b). Because mass spectrometry undersamples the total proteome and thus we did not want to filter too stringently, we analyzed proteins that had a log2 fold change of greater than 1.5 of relative abundance in the transportome, or a p-value < 0.05, or both. This identified several proteins that fell into three ontologies of identified function: cytoskeletal (Tmsbx, Tcp1, Tuba1a, Tuba1b, Tuba3a, Nefl, and Ina), protein synthesis (Impact), and protein transport (Kif5a). In the protein transport ontology, transport of Kif5a, a neuronal kinesin heavy chain motor protein, was significantly decreased. These data indicate that analyzing the dynamic axon transportome after optic nerve injury identifies acute changes in several protein synthesis and transport homeostatic mechanisms after axon injury.\n\nWe confirmed Kif5a expression is localized to RGCs in the mouse retina using immunohistochemistry (Figure 2c). We validated the mass spectrometry identification of Kif5a\u2019s reduced axon transport by biotin IP and quantitative western blot (Figure 2d). We normalized biotin-tagged Kif5a to each sample\u2019s total biotin-tagged protein (similar to that shown in Figure 1f), and compared injury versus control, which resulted in a significant decrease (about 2.5-fold) in Kif5a transport relative to the decrease in total axon transport after injury (Figure 2e), similar to the relative decrease detected by mass spectrometry. Importantly, we saw an equal amount of Kif5a in the retina with and without injury, suggesting that the cause of decreased axon transport is not due to changes in Kif5a abundance in the retina, but in fact reflects a specific anterograde transport deficit. Thus, both western blotting and biotinylated peptide-based mass spectrometry of the axon transportome corroborate Kif5a\u2019s reduced axon transport after optic nerve injury.\n\nKif5a, the only protein that met both significance and magnitude of change criteria, is a motor protein in the 45-member kinesin superfamily (Hirokawa et al., 2009). Kinesin-1 motors are composed of two heavy chain and two light chain proteins, where the heavy chains are any of Kif5a, Kif5b, and Kif5c. Of these, Kif5a and Kif5c are neuron-specific, and previously described to be expressed in RGCs (Rahman et al., 1999; Butowt and von Bartheld, 2007). When all motor proteins in our transportome data were examined (Figure 2\u2014figure supplement 1a), two findings stood out. First, another kinesin heavy chain, Kif5b, did not change in relative transport after injury, suggesting specificity in kinesin isoform transport failure. Second, transport of Klc1, a light chain partner of the heavy chain Kif5a, also was not reduced to the same extent as Kif5a. As kinesin and dynein work in tandem to regulate cargo transport (Hendricks et al., 2010), we examined whether there may be similar changes to dynein subunits. We did not discover any significant change in transport of both dynein subunits identified in our transportome, although more work may be needed to explore this question.\n\n### Synthesis of Kif5a, but not Kif5b, is decreased in glaucomatous injury\n\nWe also explored changes in Kif5a synthesis after axon injury expanding our investigation to another optic neuropathy, the circumlimbal suture model of glaucoma (Liu et al., 2015). Glaucoma is the leading cause of irreversible blindness worldwide and is similarly due to the dysfunction and death of RGCs and their axons. We used the noncanonical amino acid azidohomoalanine (AHA), which is incorporated into newly synthesized proteins in place of endogenous methionine during protein translation (Schiapparelli et al., 2014; McClatchy et al., 2015), to selectively quantify newly synthesized proteins over the same 24 hr time period as used in the previous experiments. Three weeks after induction of glaucoma (Figure 2f), AHA was injected twice in a 24 hr period as in the experiments described above. After tissue collection, AHA was tagged with biotin using click chemistry, and changes in newly synthesized proteins were quantified with MS/MS. In the retina, 43 proteins showed significant increased synthesis rates and 30 proteins showed significant decreased synthesis rates at this time point in glaucomatous optic neuropathy, normalized to controls. Among these, Kif5a showed decreased synthesis when normalized to the total newly synthesized proteome after induction of glaucoma, while Kif5b was relatively unchanged (Figure 2g, Figure 2\u2014figure supplement 1b, complete data in ). Together with the acute optic nerve trauma model, these data demonstrate the specificity of changes in synthesis and transport of Kif5a, as compared to other Kif5 isoforms, in both acute and chronic models of optic nerve disease.\n\n### Kif5 expression in human RGCs\n\nGiven the specificity of Kif5a transport failure into RGC axons after optic nerve injury, we wished to explore the expression of Kif5 mRNA isoforms in RGCs and other retinal cell types. We used single-cell RNA sequencing (scRNA-seq) data from both adult mouse and adult human retinas to determine retinal distribution of kinesin motors and conservation of patterning across species (Getter et al., 2019). We were able to cluster retinal cells into constituent cell types, including a putative RGC cluster (Figure 3a\u2013b). We found that Kif5a was enriched in the amacrine cell/RGC cluster of cells compared to other retinal cell types in both mouse and human, whereas Kif5b was expressed more ubiquitously across retinal cell types (Figure 3c\u2013d). The conservation of this RGC-enriched expression pattern for both mouse and human retinas further supports a model of kinesin specificity and function.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig3-v2.jpg)\n\n**Figure 3.:** (a,b) TSNE plot of cell clustering of single-cell RNA sequencing (scRNA-seq) from either an adult mouse retina or an adult human retina. Clusters defined by canonical cell-specific markers. (c,d) Expression of Kif5 genes across retinal cell types in either mouse or human retina. Kif5a shows highest levels of enrichment in the putative retinal ganglion cell (RGC) clusters in both species, followed by Kif5c enrichment. Kif5b, conversely, is more ubiquitous across the retina in both species, displaying both conservation of expression patterning across species and divergence of patterning among Kif5 family members. EC = endothelial cells, BC = bipolar cells, AC = amacrine cells, HC = horizonal cells, RPE = retinal pigment epithelium. Human scRNA-seq data available at GEO: GSE138002 and mouse scRNA-seq data available at GEO: GSE135406.\n\n### Transportomics of Kif5a knockout in RGCs\n\nGiven our finding of an association of early Kif5a transport decrease with optic nerve injury, we sought to understand the importance of Kif5a, and its associated cargoes, in RGC function. Discovering specific kinesin-dependent cargoes, for example, by mass spectrometry has not been undertaken, so we hypothesized that characterizing the optic nerve transportome with and without Kif5a should yield Kif5a-dependent cargo localization. For this approach, we used homozygous conditional floxed Kif5a adult mice (Figure 4\u2014figure supplement 1) as Kif5a knockout mice have seizures and die soon after birth (Xia et al., 2003; Nakajima et al., 2012). We delivered either cre-recombinase- or GFP-expressing adeno-associated virus (AAV) intravitreally to specifically knock out Kif5a in adult RGCs. One month after injection, there was almost a complete loss of Kif5a in the retina, and a complete loss in the optic nerve, with neither loss nor compensatory upregulation of Kif5c (Figure 4a). We confirmed this loss by immunofluorescence for Kif5a at 1 and 4 months after cre-mediated knockout (Figure 4b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig4-v2.jpg)\n\n**Figure 4.:** (a) Western blot validation of Kif5a KO 1 month after intravitreal cre-recombinase injection was apparent in whole retina and optic nerve lysates. Kif5c, a related kinesin, was unaffected by the loss of Kif5a. Cre-positive lanes are designated with a \u2018+\u2019, cre-negative lanes are designated with a \u2018-\u2019. Molecular weight on left of blots. (b) Wholemount retinas immunostained with an antibody against Kif5a show immunopositive retinal ganglion cell (RGC) axons projecting toward the optic nerve head. Loss of kif5a immunopositive fibers is detected 1 month and is even more pronounced at 4 months after adeno-associated virus (AAV)-cre injection. Scale bar, 50 \u00b5m. (c) Volcano plot comparing biotinylated proteins in the optic nerve 3 weeks after intravitreal AAV-GFP compared to AAV-Cre-GFP. Proteins with a log2 fold change decrease of greater than 2 after KO are shown in blue, and those which additionally had a p-value less than 0.5 are shown in red. (d) STRINGdb interaction diagram for all labeled proteins plus Kif5a create three networks incorporating 11/14 proteins (blue = decrease transport only, red = significantly decreased transport).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** PCR amplification of the Kif5a locus in transgenic conditional KO mice confirms the presence of a loxP base pair shift in hetero- and homozygous floxed animals.\n\nWe next explored the Kif5a-dependent transportome. As cre-recombinase requires additional time for expression, recombinase activity, and degradation of existing Kif5a protein, we used a longer time course (3 weeks) to identify the steady-state changes in transport due to Kif5a loss (Ahmed et al., 2004). In uninjured mice 3 weeks after intravitreal viral cre injection, we injected NHS-biotin intravitreally three times, each 24 hr apart, to assess changes in the axon transportome using MS/MS as above. This approach identified several proteins with decreased optic nerve axon transport after loss of Kif5a (Figure 4c), a number of which are implicated in neuronal injury response and neurodegeneration (complete data in Figure 4\u2014source data 1). Bin1, for example, was identified as an Alzheimer\u2019s disease locus through GWAS studies (Seshadri et al., 2010), and localizes to the axon initial segment and nodes of Ranvier acting downstream of c-myc, an injury-response transcription factor in RGCs (Belin et al., 2015). Sh3gl2, also known as endophilin A1, is enriched in synaptic terminals and interacts with synaptic proteins such as synaptojanin and regulates clathrin-mediated synaptic endocytosis (Milosevic et al., 2011). We asked whether the proteins whose transport depends on Kif5a expression interact with each other using STRING and were able to group many of these together into three protein-protein interaction networks (Figure 4d). Kif5a has already been directly tied to a few of these proteins (Ishida et al., 2015), and the presence of potential complexes of non-transported proteins many represent as yet undiscovered functions of Kif5a. Thus these data identify a network of proteins whose transport depends on Kif5a in RGC axons as well as more broadly establish an approach to identify the transportome of motor proteins in vivo.\n\n### Kif5a transport disruption affects anterograde mitochondrial transport in RGCs\n\nWe next compared the changes in protein transport seen in optic nerve crush versus Kif5a knockout. We do not expect these entire datasets to correlate given the difference in injury, time course, and model organism, and indeed they do not. However, when we specifically asked how deficits in protein transport after optic nerve crush compared to deficits in protein transport after Kif5a knockout, we find a group of proteins that fulfill both parameters. We focused on protein transport that decreased in both conditions as we hypothesize transport failure contributes to neurodegeneration in both conditions (complete data in Figure 5\u2014source data 1). Using Gene Ontology to cluster all proteins that decrease in transport in both optic nerve crush and Kif5a knockout, we discovered a significantly over-represented number of mitochondrial-associated genes in common (Figure 5a\u2013b). With this finding, we hypothesized that in both Kif5a transport failure after optic nerve crush and in Kif5a knockout that mitochondrial transport may be specifically downregulated. We tested this hypothesis in primary cultures of RGCs and measured the effect on mitochondrial transport through live cell imaging. AAV2-mediated Kif5a knockdown significantly reduced the average velocity of non-stationary mitochondria compared to an AAV2 scrambled shRNA virus, as shown in kymographs of mitochondrial transport (Figure 5c\u2013d). By quantifying the number of mitochondria transported in each direction, we found a significant reduction in anterograde transport (Figure 5e). Together, these findings support a model of anterograde mitochondrial trafficking failure in both Kif5a knockout and following optic nerve crush, suggesting a shared biology between injury and loss of Kif5a.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig5-v2.jpg)\n\n**Figure 5.:** (a) Log2 comparison of protein transport changes in Kif5a knockout (KO) compared to optic nerve crush. Proteins in the lower left quadrant are decreased in both conditions. Proteins in red are identified as associated with Gene Ontology (GO) cellular component \u2018mitochondrion\u2019. Proteins in black are non-mitochondrial. (b) Top GO cellular component ontologies for over-representation with shared hierarchy terms removed. \u2018Gene count\u2019 refers to number of genes in bottom left quadrant (decreased in transport after Kif5a KO and optic nerve crush [ONC]) out of total genes in common between the two datasets. Full enrichment list found in Figure 5\u2014source data 2. (c,f) Representative kymographs of mitochondrial movement in isolated E18 RGC neurites using MitoTracker deep red after viral delivery of either Kif5a shRNA or scramble shRNA (c) or Kif5a overexpression or GFP (f). Images captured by time-lapse confocal microscopy. (d,g) Quantification of average mitochondrial velocity. Each data point represents a single mitochondrion. Boxplot covers the interquartile range with median noted in white. Two-sample, two-tailed t-test, p < 0.0001 (cultures = 3; Kif5a KD mito = 100; neurons = 19, scramble mito = 117; neurons = 18), p = 0.002 (cultures = 3; Kif5a OE mito = 52; neurons = 13, GFP = 42; neurons = 22). (e,h) Proportion of retrogradely moving mitochondria versus anterogradely moving mitochondria. Fisher\u2019s exact test, p < 0.0001 (top), p = 0.0003 (bottom). (i) Representative example of wholemount retinas 2 weeks after ONC stained with RGC-specific marker RBPMS, after either intravitreal adeno-associated virus (AAV)-scramble-shRNA or AAV-HnRNPA1-shRNA injection. For both wholemount and inset: scale bar, 100 \u00b5m. (j) Quantification of RBPMS + cell density after ONC across entire retinal surface. Each point represents one retina (control n = 5, KD n = 4). Two-sample, two-tailed t-tests, p = 0.039.\n\nWe also tested whether exogenous expression of Kif5a could increase anterograde mitochondrial trafficking. Primary RGCs treated with an AAV2 Kif5a expression virus demonstrated significantly increased average velocity (Figure 5f\u2013g). We also found a significant increase in the fraction of anterogradely moving mitochondria compared to control (Figure 5h). Thus Kif5a expression is necessary for and can promote anterograde mitochondrial transport in mammalian RGCs.\n\nKif5a associates with several members of the HnRNP family, including HnRNPA1 (Kanai et al., 2004). HnRNPA1 has been shown to play a role in concentration-dependent stress granule formation in other neurodegenerative diseases including ALS (Kim et al., 2013; Molliex et al., 2015; Deshaies et al., 2018). Therefore, we hypothesized that HnRNPA1 knockdown may be deleterious for survival in the context of optic nerve degeneration. We injected a viral vector expressing either an shRNA construct targeting HnRNPA1 or an shRNA scramble construct 2 weeks prior to optic nerve injury and collected retinas 2 weeks after. HnRNPA1 knockdown significantly decreased RGC survival after injury (Figure 5i\u2013j). Together, these data further demonstrate the importance of Kif5a and its cargoes in regulation of RGC survival after neurodegenerative injury.\n\n### Kif5a knockout leads to progressive and dose-dependent RGC degeneration\n\nAs Kif5a knockout disrupts protein and perhaps mitochondrial transport in the optic nerve, we tested whether the loss of Kif5a affected RGC survival in the absence of optic nerve injury. Using either Kif5a or Kif5b floxed adult mice and intravitreal AAV-cre delivery, we quantified RGC survival using Brn3a, a nuclear RGC-specific marker, in retinal wholemounts (Figure 6a). RGC density did not change 1 month after Kif5b homozygous knockout (Figure 6\u2014figure supplement 1), but we detected a significant 44% decrease in RGC survival 1 month after Kif5a homozygous knockout. This Kif5a-dependent RGC death also led to significant optic nerve atrophy, confirming axonal degeneration in addition to RGC death (Figure 6b). We assayed gene dose dependency using a heterozygous Kif5afl/+ mouse line with AAV-cre and found a significant decrease of 22% RGC survival, about half of the cell death seen in the homozygous Kif5a knockout (Figure 6c; 1-2). To determine if only 44% of RGCs are susceptible to cell death or if Kif5a loss results in progressive degeneration, we aged a cohort of mice to 4 months after knockout and observed an almost complete loss of RGCs (Figure 6c; 3-4). To test whether this effect could be a downregulation of Brn3a, we also measured pattern electroretinograms for function of RGCs. Visual responses were almost completely lost 6 months after knockout, quantified by P50 to N95 amplitude (Figure 6d). These data indicate that the loss of a specific motor protein Kif5a, but not Kif5b, induces a progressive neurodegeneration as well as a dose-dependent neurodegeneration of RGCs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig6-v2.jpg)\n\n**Figure 6.:** (a) Representative example of wholemount Kif5afl/fl retinas stained with RGC-specific marker Brn3a, 4 months after either intravitreal adeno-associated virus (AAV)-GFP or AAV-Cre-GFP. Scale bar = 100 \u00b5m for both wholemount images and insets. (b) Quantification of the average diameter of optic nerve cross-section taken halfway between the optic nerve chiasm and optic nerve head in either control or Kif5a knockout (KO) animals (control n = 5, KO n = 5). Two-sample, two-tailed t-test, p = 0.001. (c) Quantification of Brn3a + cell density across entire wholemount retinal surface. Each point represents one retina. The graphs, from left to right, show pairwise comparisons between heterozygous Kif5a KO at 1 month after viral injection (control n = 8, KO n = 8), homozygous Kif5a KO at 1 month after viral injection (control n = 7, KO n = 6), homozygous Kif5a KO at 4 months after viral injection (control n = 5, KO n = 4), and a comparison of the three previous experiments normalized to their control population. C1-C3 are two-sample, two-tailed t-tests, p = 0.003, p = 0.008, and p < 0.0001, respectively. C4 is a one-way ANOVA with post hoc Sidak correction. Between the blue and red columns, p = 0.034. Between red and gold columns, p < 0.0001. The bar heights represent the mean, and the error bars represent the 95% confidence interval. (d) Pattern electroretinogram quantification from mice 6 months after Kif5a KO or control. On the left, the amplitude difference between the P50 peak and the N95 trough was quantified and compared with a two-sample, two-sided t-test (n = 3), p < 0.0001. The bar heights represent the mean, and the error bars represent the 95% confidence interval. On the right, the average traces of each condition are bold, with lighter shades \u00b1 SEM.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Quantification of RGC-specific marker Brn3a+ cell density across entire wholemount retinal surface. Each point represents one retina. Pairwise comparisons between homozygous Kif5b KO using Kif5bfl/fl with either AAV-GFP or AAV-Cre-GFP at 1 month after viral injection (control n=6, KO n=6). Two-sample, two-tailed t-test. (b) Representative example of wholemount Kif5bfl/fl retinas stained with Brn3a, an RGC-specific marker, 1 month after either AAV-GFP or AAV-Cre-GFP. Scale bar, 100 \u00b5m.\n\nWe next asked how overexpression of Kif5a would affect RGCs after injury. After validating that our overexpression construct could transport down the optic nerve and bind TUBB3 (Figure 7a), we measured the effects on RGC survival. Interestingly, while there were no changes in cell death 1 month post viral injection without injury (Figure 7b), there was a 33% decrease in RGC survival after optic nerve crush with Kif5a overexpression compared to control (Figure 7c\u2013d). Therefore, maintaining physiological levels of Kif5a transport\u2014and not above or below this level\u2014is crucial for RGC survival after injury.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68148/elife-68148-fig7-v2.jpg)\n\n**Figure 7.:** (a) Optic nerves were collected 2 weeks after intravitreal injection of adeno-associated virus (AAV)-Kif5a-FLAG. Immunoprecipitation showed the presence of FLAG-tagged protein at the molecular weight of Kif5a. Co-immunoprecipitation of \u03b2-III tubulin confirmed that overexpressed Kif5a transported to the optic nerve and bound to the cytoskeleton. (b) RGC survival was not affected 4 weeks after viral injection of Kif5a compared to a control GFP virus (control n = 6, OE n = 7). Two-tailed, two-sample, t-test. (c) Representative example of wholemount retinas stained with RBPMS, an RGC-specific marker, 2 weeks after optic nerve crush, injected with either AAV-GFP or AAV-Kif5a-FLAG 2 weeks before crush. Scale bar, 100 \u00b5m. (d) Quantification of RBPMS + cell density after optic nerve crush (ONC) across entire retinal surface. Each point represents one retina (control n = 7, OE n = 8). Two-sample, two-tailed t-tests, p < 0.0001.\n\n## Discussion\n\nIn diseases such as ALS and glaucoma, axon transport failure has long been proposed to contribute to the pathophysiology of neuronal cell death (Anderson and Hendrickson, 1974; Minckler et al., 1977; Quigley and Anderson, 1977). To increase our understanding of the degenerative process, here we quantify the axon transportome separated from surrounding optic nerve glial and other cells\u2019 proteomes, and for the first time describe specific changes in the complement of transported proteins after injury. Previous approaches to characterizing axon-specific protein responses to injury depended on physically extracting cytoplasm from axons in whole nerve preparations (Michaelevski et al., 2010), a technically challenging approach with inconsistent results noted by those authors. We previously established an in vivo protein biotinylation, mass spectrometry-based axon transportome approach which requires amine reactivity to study steady-state protein transport in the visual system. While this labeling method requires available amine-groups, previous work characterizing the types of proteins identified by NHS-biotin did not show any particular bias compared to unlabeled proteomics (Schiapparelli et al., 2014; Schiapparelli et al., 2019). Here, adapting this technique to NHS-biotin injections within a 24 hr window allowed us to capture spatial and temporal dynamics in axonal protein transport immediately following axon injury and contribute three major new findings.\n\nFirst, this improved temporal resolution quantitatively detected loss of specific proteins\u2019 transport before total protein changes are apparent, as seen comparing western blotting of whole tissue to IP of biotinylated proteins. In fact, many of the axonal changes that occur after injury may begin earlier than previously thought, with rapid changes to the axon transportome. Additional examination of the time course of axon transport changes in the period after injury or in other models of neurodegenerative diseases may now be addressed through such time-resolved quantitative proteomics in future studies. The tradeoff from increasing temporal resolution and dissecting the fraction of transported proteins from the surrounding milieu is a decrease in the total number of identified, labeled peptides available for quantification. Current, state-of-the-art mass spectrometers allowed discovery of some of the transportome changes, but not of transported proteins below the detection threshold. Future advances in proteomics will allow for deeper sequencing and likely to identification of additional biologically relevant transportomic changes.\n\nSecond, using this novel approach for quantifying axonal protein transport, we identify a specific transport failure of Kif5a in RGC axons early in the degenerative course following optic nerve injury. Disruptions to the kinesin motor protein family manifest in a variety of neurological diseases. Charcot-Marie-Tooth disease type 2A can be caused by mutations in Kif1b (Zhao et al., 2001), congenital fibrosis of the extraocular muscles can be caused by mutations in Kif21a, and a loss-of-function mutation in Kif5a motor domain can result in hereditary spastic paraplegia (Reid et al., 2002; Xia et al., 2003; Tessa et al., 2008; Morfini et al., 2009). Different loss-of-function mutations in Kif5a, all affecting the cargo binding domain, are causative in some cases of ALS (Brenner et al., 2018; Nicolas et al., 2018). In this study, we identified both acute transport failure of Kif5a, without a concomitant change in retinal abundance, after acute optic nerve injury and a decrease in new protein synthesis of Kif5a 3 weeks after initiation of a chronic glaucoma model. These orthogonal experiments using separate protein labeling paradigms both point toward downregulation of Kif5a as part of an overall maladaptive response of RGCs to injury.\n\nThird, these data open a new direction for study of transport biology, to better understand motor protein cargo specificity and physiology. The finding of Kif5a transport failure after injury is especially interesting given the relative lack of change in other motor proteins, such as Kif5b. Increasing evidence has shown that kinesin subtypes and adaptor proteins have at least partial cargo specificity (Chevalier-Larsen and Holzbaur, 2006), yet the extent of shared and specific cargo between kinesin proteins is not fully understood. Through IP and immunoisolation assays, several synaptic proteins such as Snap25, synaptotagmin, and syntaxin 1a have been identified as cargoes of the Kif5 family (Toda et al., 2008), but only a few proteins have been shown to be specific to Kif5a, such as GABARAP (Nakajima et al., 2012). Quantitative changes in cargo transport after the loss of a specific motor protein may give insight into the role of that motor, and future studies could expand on these data by directly comparing the axon transportome of different kinesin isoforms.\n\nSpecificity of function between these closely related motor proteins was also an important finding in these data. Kif5a loss, but not Kif5b loss, resulted in the progressive, dose-dependent degeneration of adult RGCs; this specificity mirrored the specificity of Kif5a\u2019s decreased axon transport detected after optic nerve injury, and the enrichment of Kif5a in mouse and human RGCs contrasted with the ubiquitous expression of Kif5b. Although overexpression of Kif5a did not increase RGC survival after injury, the conservation of RGC-enriched Kif5a expression across species suggests a strategy of manipulating Kif5a therapeutically to restore axonal transport after injury or in neurodegenerative diseases like glaucoma. This approach, along with further characterization of Kif5 expression in RGC subtypes, would be intriguing next steps in understanding motor protein biology.\n\nAlthough here we describe initial data on the axon transportome cargoes dependent on Kif5a for their RGC axon localization, we do not yet understand which cargoes of Kif5a contribute to optic neuropathy, especially in vivo. By quantifying the transportomic changes in an adult acute knockout model, it is possible that we identified only the subset of proteins whose transport was not adequately compensated by other mechanisms or motors. Indeed, bioinformatic analysis indicates that many of these protein cargoes have known interactions with each other, and several have previously been reported as associated with degenerative diseases in other systems. Another possibility is that these proteins, instead of being direct cargoes of Kif5a, are downregulated or mis-localized after Kif5a loss. Increased protein degradation would also contribute to decreased detection of biotinylated proteins, as detection of transported proteins is the net of protein transport and protein degradation. Finally, these data are limited to transported proteins. Kif5a can act as a motor for fast axonal transport of membranous organelles, slow axonal transport of proteins, and transport of neurofilaments (Xia et al., 2003). In addition, cargoes can include mRNA and related P-bodies and stress granules for local protein synthesis (Loschi et al., 2009; Oh et al., 2013). Our finding that knockdown of one such ribonucleoprotein cargo of Kif5a, HnRNPA1, results in exacerbated degeneration after injury suggests that the loss of Kif5a-dependent RNA and other organelle transport may also contribute to neurodegeneration. In particular, stress granules have been implicated in at least one form of glaucoma (Lachke et al., 2011), which combined with our data suggests exploring the role of both stress granules and mitochondria as disease-relevant Kif5a cargo as an exciting future direction.\n\nIndeed, the over-representation of mitochondrial-associated proteins demonstrating decreased axon transport in both of our datasets point toward a lack of mitochondrial transport after loss of Kif5a. The short time point assayed in our optic nerve injury model (24 hr) is consistent with the rapid halt of mitochondrial transport in RGC axon in an ocular hypertension/glaucoma model (Takihara et al., 2015). Kif5 motors regulate mitochondrial trafficking in Drosophila and mammalian hippocampal neurons through the adaptor proteins Milton and Miro (Glater et al., 2006; Macaskill et al., 2009). Mitochondrial localization in axons regulates both neuronal survival and axon regeneration. In Caenorhabditis elegans, mitochondria localize to injured axons during the normal course of regeneration (Han et al., 2016). In non-regenerating neurons, like mammalian RGCs, manipulating mitochondrial mobilization through overexpression of Armcx1 produces a similar survival and regenerative effect (Cartoni et al., 2016). Previous studies have shown that Kif5a may regulate mitochondrial transport in zebrafish (Campbell et al., 2014) and cultured hippocampal neurons (Chen and Sheng, 2013). However, it was not known if Kif5 motors regulate mitochondrial trafficking in RGC neurons in vitro or in vivo or if manipulating Kif5a alone is sufficient to affect mitochondrial transport, both hypotheses now supported with these new data. Combining these two findings, we hypothesize that targeted anterograde transport of mitochondria to the injured mammalian axon could potentially enhance the effects already seen with Armcx1-mediated mitochondrial mobilization. Overexpression of Kif5a in RGCs in vitro preferentially increases anterograde mitochondrial transport, increasing mitochondrial concentration in the axon, raising the question of whether overexpressing Kif5a in vivo would promote RGC survival. Interestingly, overexpression of Kif5a led to increased cell death after injury. However, Kif5a abundance in the retina is unchanged after optic nerve injury, suggesting that loss of optic nerve localization is specific to axon transport failure rather than to deficit of Kif5a expression itself. Regulation of kinesin transport is known to depend on phosphorylation states (Morfini et al., 2001), calcium-dependent inhibition by mitochondrial cargo (Wang and Schwarz, 2009), conformational state changes by kinesin light chains, inhibition by MAP2 at the axon initial segment (Gumy et al., 2017), and autoinhibition of the motor domain by inactive kinesin heavy chains (Cai et al., 2007). Removing autoinhibitory domains or truncation of the motor beyond the first coiled-coil domain creates constitutively active kinesins, potentially circumventing any inherent axonal inhibition (Yang et al., 2016). Future work specifically restoring anterograde protein and mitochondrial trafficking in the face of axonal injury, perhaps using constitutively active Kif5a mutants, could rescue cell death and provide therapeutic avenues to counter the neurodegenerative process.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Wild-type</td>\n      <td>The Jackson Laboratory</td>\n      <td>C57BL/6</td>\n      <td>Pooled sexes</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Kif5afl/fl</td>\n      <td>David Williams Laboratory</td>\n      <td>MMRRC:MMRRC_000224-UCD</td>\n      <td>Pooled sexes</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Kif5bfl/fl</td>\n      <td>David Williams Laboratory</td>\n      <td>JAX stock:008637</td>\n      <td>Pooled sexes</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Rattus norvegicus)</td>\n      <td>Wild-type</td>\n      <td>The Jackson Laboratory</td>\n      <td>Sprague-Dawley</td>\n      <td>Pooled sexes</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>HEK 293T</td>\n      <td>ATCC</td>\n      <td>293T</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Viral Vector AAV2-GFP</td>\n      <td>UPenn Vector Core</td>\n      <td>AV-2-PV0101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Viral Vector AAV2-cre-GFP</td>\n      <td>UPenn Vector Core</td>\n      <td>AV-2-PV2004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Viral Vector AAV2-Kif5a</td>\n      <td>This paper</td>\n      <td>VectorBuilder ID: https://en.vectorbuilder.com/vector/VB170708-1017enf.html</td>\n      <td>Sui Wang Laboratory; Vector Map from VectorBuilder</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Viral Vector AAV2-Kif5a shRNA</td>\n      <td>This paper</td>\n      <td>VectorBuilder ID:https://en.vectorbuilder.com/vector/VB180108-1217eru.html</td>\n      <td>Sui Wang Laboratory; Vector Map from VectorBuilder</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Kif5a</td>\n      <td>Abcam</td>\n      <td>Ab5628</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Kif5c</td>\n      <td>Abcam</td>\n      <td>Ab192883</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-biotin</td>\n      <td>Thermo</td>\n      <td>31852</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-FLAG</td>\n      <td>CST</td>\n      <td>14793S</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-B3Tubulin</td>\n      <td>CST</td>\n      <td>5568S</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-GAPDH</td>\n      <td>CST</td>\n      <td>2118</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-SNCB</td>\n      <td>Sigma</td>\n      <td>SAB1100305</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-GAP43</td>\n      <td>Novus</td>\n      <td>NB300</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-ARF3</td>\n      <td>Abcam</td>\n      <td>Ab154383</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse</td>\n      <td>Abcam</td>\n      <td>Ab6789</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit</td>\n      <td>Abcam</td>\n      <td>Ab6721</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-goat</td>\n      <td>Abcam</td>\n      <td>Ab97110</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-Brn3a</td>\n      <td>Millipore</td>\n      <td>MAB1585</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-RBPMS</td>\n      <td>PhosphoSolutions</td>\n      <td>1830-RBPMS</td>\n      <td>(1:300)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal lines\n\nC57BL/6 mice or Sprague-Dawley rats of either sex were used for all wild-type experiments. Kif5afl/fl and Kif5bfl/fl from a C57Bl/6 background were a gift from David Williams (Xia et al., 2003).\n\n### Intravitreal injection\n\nSprague-Dawley rats or mice (30\u201345 days of age) were used for all experiments. A microinjector pressure system (Picosprizer II) with a pulled glass micropipette in a micromanipulator was used to inject reagents intravitreally. For viral injections, mice were injected intravitreally with 1.5 \u03bcl volume of AAV2-GFP or AAV2-cre-GFP (UPenn Vector Core) (titers ranged from 0.5 to 1 \u00d7 1013 genome copies/ml). For in vivo biotinylation experiments, 5 mg of NHS-biotin (EZ-Link from Pierce) were dissolved in 300 \u03bcl of sterile DMSO immediately prior to use, as described previously (Schiapparelli et al., 2019). For in vivo AHA experiments, we injected each eye with \u223c5 \u03bcl of 400 mM AHA in PBS. Briefly, intravitreal injections (5 \u03bcl for rats, 1.5 \u03bcl for mice) were given to both eyes. The injections were given twice over 24 hr under deep anesthesia with either 0.5 mg/kg medetomidine and 75 mg/kg ketamine intraperitoneal, or 2% isoflurane under nose cone. The eyes were treated with topical antibiotics and analgesics.\n\n### Optic nerve crush\n\nUnder deep anesthesia, the optic nerve was exposed and crushed using fine forceps (Dumont #5) at 1.5 mm behind the optic nerve head for 5 s. Care was taken to avoid damaging the blood supply to the retina. Sham surgeries exposed the optic nerve, but no crush was given. All optic nerve crush procedures were performed by a surgeon blinded to the viral treatment. Postoperatively, animals were allowed to recover on a heating pad and were given subcutaneous injections of buprenorphine hydrochloride, 0.1 mg/kg, twice a day for 3 consecutive days to minimize discomfort.\n\n### Circumlimbal glaucoma model\n\nBaseline intraocular pressure (IOP) of adult rats was measured using a rebound tonometer (Tonolab; iCare, Helsinki, Finland) under inhaled isoflurane anesthesia. Eyes were randomized to either circumlimbal glaucoma or sham. To induce glaucoma, a circumlimbal suture (7/0, nylon) was tied around the eye 1.5 mm behind the limbus with five anchor points. In the glaucoma group, the suture was tied tightly, with intraoperative IOP measurements greater than 40 mmHg. In sham eyes, the suture was tied loosely. IOP measurements were taken every other day between 2 PM and 6PM under isoflurane anesthesia.\n\n### Pattern electroretinogram\n\nAnesthetized mice were placed on a feedback-controlled heating pad (TCAT-2LV, Physitemp Instruments Inc, Clifton, NJ) to maintain body temperate at 37\u00b0C. Simultaneous binocular PERG recording was completed with the Miami PERG system (Intelligent Hearing Systems, Miami, FL) according to published protocol (Chou et al., 2018). Eye drops were added as needed to prevent corneal drying (Systane Ultra Lubricant Eye Drops, Alcon Laboratories, Ft Worth, TX). The reference electrode was placed subcutaneously on the back of the head between the two ears and the ground electrode was placed at the root of the tail. The signal electrode was placed subcutaneously on the snout for the simultaneous acquisition of left and right eye responses. Two 14 cm \u00d7 14 cm LED-based screens were placed 10 cm in front of each eye. The pattern remained at a contrast of 85% and a luminance of 800 cd/m2, and consisted of four cycles of black-gray elements, with a spatial frequency of 0.052 c/d. Upon stimulation, the PERG signals were recorded by asynchronous binocular acquisition. Two consecutive recordings of 200 traces were averaged to achieve one readout. The first positive peak in the waveform was designated as P50 and the second negative peak as N95. The investigators who measured the amplitudes were blinded to the treatment of the samples.\n\n### Immunohistochemistry\n\nAt different time points after surgeries, animals were deeply anesthetized and transcardially perfused with 4% PFA in PBS. Optic nerves and retinas were dissected and fixed in 4% PFA for 1 hr and subsequently washed in PBS. Optic nerves were sequentially incubated in 15% and 30% sucrose at 4\u00b0C overnight before mounting in optimal cutting temperature mounting medium for sectioning. Retinas were kept in PBS at 4\u00b0C until ready for antibody staining. Retinas were incubated with mouse anti-Brn3a (1:100; Millipore, MAB1585) and rabbit anti-Rbpms (1:300; PhosphoSolutions, 1830-RBPMS), both specific markers of RGCs, and anti-Kif5a (1:300, Abcam ab5628). Secondary antibodies were Alexa Fluor 488-, 594-, or 647-conjugated, highly cross-adsorbed antibodies (1:500; Invitrogen). Wholemount retinal images were acquired using a laser scanning confocal microscope (Carl Zeiss 880 or Olympus FV500) and quantified by a researcher blinded to the experimental condition. Biotinylated optic nerves sections were incubated with 100 mM glycine in PBS for 2 hr and endogenous peroxidase activity was blocked with 0.5% of H2O2 and 1% normal goat serum (NGS) in PBS for \u00bd hr. Sections were blocked with 10% NGS in PBS for 1 hr and incubated overnight with ABC reagent (1 drop of A and 1 drop of B in 5 ml PBS with 1% NGS, Vector Lab). Signal was amplified using tyramide amplification system (TSA kit, PerkinElmer) conjugated to Alexa Fluor 488.\n\n### RGC quantification\n\nThe RBPMS quantification were performed in a masked fashion as previously described (Wang et al., 2015). Briefly, the retinas were divided into four quadrants, and one digital micrograph was taken from a fixed distance from the periphery of each of the four fields. Whole retina Brn3a was quantified using a semi-automated protocol in Velocity (PerkinElmer) and ImageJ in a masked fashion. Tiled images of entire retinal wholemounts were imported into ImageJ for quantification of total area. During this step, care was taken to remove sections of retina damaged during tissue processing. These modified images were then moved to Velocity, where \u2018Find object\u2019 using thresholds for minimum object size, intensity, and touching neighbors. Once the protocol was set for one randomly selected retina, it was applied to all retinas in the experiment.\n\n### FUNCAT\n\nNHS-Azide-injected samples were processed for click chemistry according to the following protocol, modified from previous studies (Dieterich et al., 2010; Hinz et al., 2012). Sections or wholemounts were transferred to Eppendorf tubes or six-well plates with reaction mixture composed of 100 \u03bcm tris[(1-benzyl-1H-1,2,3-triazol-4-yl)methyl]amine (TBTA, Sigma) dissolved in 4:1 tBuOH/DMSO (Sigma), 100 \u03bcm CuSO4 (Sigma), 1.25 \u03bcm Alexa Fluor 488 alkyne (Invitrogen), and 250 \u03bcm tris(2-carboxyethyl)phosphine (TCEP, Sigma). The reaction proceeded overnight at room temperature.\n\n### Biotin click reaction\n\nOptic nerves or retinas were lysed in 0.5% SDS in PBS plus a cocktail of endogenous protease inhibitors (Complete Protease Inhibitor Cocktail Tablets, Roche) by homogenizing and sonicating with 10 pulses using a tip sonicator (Sonic Dismembrator model 100, Fisher Scientific). Samples were boiled for 10 min and cooled to room temperature. Any remaining insoluble material was resuspended with additional sonication pulses. Protein concentration in the suspension was measured, and aliquots of 1.5 mg of protein suspension were transferred to eppendorf tubes. NHS-azide or AHA that was incorporated into proteins was labeled with PEG4 carboxamide-Propargyl Biotin (biotin-alkyne) (Invitrogen) by click chemistry reaction performed in the total protein suspension as described previously (Speers and Cravatt, 2009; Hulce et al., 2013). For AHA samples, click reactions were done using biotin-alkyne labeled with heavy stable carbon and nitrogen isotopes: biotin-beta-alanine-13C3,15N-alkyne [Biotin Propargyl amide] or light isotope forms of the alkyne (#7,884 and #7889, respectively; Setareh Biotech) in the different experimental groups. Centrifugation steps that can result in loss of NHS azide- or AHA-labeled material were avoided. For each reaction, an aliquot of 1.5 mg of protein suspension was used, adding PBS to reach 346 \u03bcl before adding the click reaction reagents. We added the following reagents in sequence, vigorously vortexing after each addition: 30 \u03bcl of 1.7 mM TBTA (Sigma) dissolved in 4:1 tert-butanol/DMSO (Sigma), 8 \u03bcl of 50 mM CuSO4 dissolved in ultrapure water (Sigma), 8 \u03bcl of 5 mM of PEG4 carboxamide-propargyl biotin (biotin-alkyne) (Invitrogen) dissolved in DMSO, and 8 \u03bcl of 50 mM TCEP (Sigma) dissolved in water. The click reactions were incubated at room temperature for 1\u20132 hr or overnight with gentle rotation at 4\u00b0C. After the completion of each click reaction, samples were aliquoted by transferring 200 \u03bcl of each click reaction suspension to 2 ml eppendorf tubes.\n\n### Fresh tissue collection\n\nRats or mice were euthanized with CO2 and decapitated for brain removal. The tissue was frozen immediately in isopentane in dry ice and stored at \u201380\u00b0C for biochemistry studies. Co-immunoprecipitation studies continued directly without freezing.\n\n### IP and western blot\n\nFor western blot, after defrosting frozen tissue the retinas or optic nerves were dissected and homogenized by sonication in 50\u2013100 \u00b5l RIPA Lysis Buffer with protease and phosphatase inhibitor cocktail (Holt, 78440). Samples were centrifuged at 10,000\u00d7 g for 10 min at 4\u00b0C, and the supernatants collected. Total protein concentration was determined using a BCA assay (Pierce BCA Protein Assay Kit 23225).\n\nTo purify biotinylated proteins for western blot validation, 0.8\u20132 mg of proteins from ON or retinal homogenates in a total volume of 1 ml were incubated with 30 \u03bcl neutravidin beads (Thermo) at 4\u00b0C overnight. The beads were then washed 6 times with 1 ml of RIPA buffer. The bound biotinylated proteins where eluted from the beads with 50 \u03bcl Laemmli sample buffer containing 2.5% of 2-mercaptoethanol.\n\nFor co-immunoprecipitation, retinas and optic nerves were mechanically homogenized in buffer (20 mmol/l HEPES, pH 7.4, 150 mmol/l NaCl, 5 mmol/l EDTA, 0.5% Triton, 50 mmol/l NaF, 1 mmol/l sodium orthovanadate, 1 mmol/l DTT, and protease inhibitors). After centrifugation at 10,000\u00d7 g for 10 min at 4\u00b0C, the clarified extracts were used for IP using appropriate antibodies (2 \u00b5g rabbit anti-FLAG, CST, 14793S) and 20 \u00b5l protein G sepharose (Millipore, Fastflow) for 3 hr to at 4\u00b0C. The beads were washed 3\u20135 times with lysis buffer, and the immunoprecipitated proteins were eluted with 2\u00d7 Laemmli buffer for western blotting.\n\nFor all electrophoresis, 10\u201330 \u00b5g of protein was loaded on a 4\u201320% Tris-Glycine Gel (Thermo Fisher Scientific XP04202) and transferred to an activated 0.2 \u00b5m PVDF membrane for immunoblotting. The membranes were saturated with Ponceau S stain for 5 min and imaged, before washing with ddH2O. The membranes were saturated with TBS 1\u00d7, 0.05% Tween-20, and 5% nonfat dry milk for 1 hr at room temperature, then incubated overnight at 4\u00b0C with rabbit anti-Kif5a (1:1000, Abcam, ab5628), rabbit anti-Kif5c (1:1000, Abcam, ab192883), goat anti-biotin (1:1000, Thermo, 31852), rabbit anti-FLAG (1:2000, CST, 14,793S), rabbit anti-\u03b2-III tubulin (1:2000, 5568S, CST), rabbit anti-GAPDH (1:2000, CST, 2118), rabbit anti-SNCB (1:1000, Sigma), rabbit anti-GAP43 (1:5000, Novus), rabbit-ARF3 (1:1000, Abcam). All membranes were washed with TBS-Tween between incubations. The membranes were then saturated with peroxidase-conjugated goat anti-mouse, anti-rabbit, or anti-goat (1:2000, Abcam, ab6789, ab6721, and ab97110) secondary antibodies for 3 hr at room temperature and revealed with SuperSignal West Femto Chemiluminescent Substrate using ImageQuant LAS4000. Stripping to ensure equal loading was done with ReBlot Plus Strong Antibody Stripping Solution (EMD Millipore 2504). All quantifications were done with ImageJ densitometry analysis.\n\n### In vitro cell culture\n\nHEK 293T cells were grown to 100% confluence in 75 or 150 cm2 flasks, dissociated, and resuspended with TrypLE, transferred to 15 ml falcon tubes, centrifuged for 5 min at 1000 rpm at room temperature, and washed three times in Dulbecco\u2019s modified PBS (DPBS, Gibco). Cells were incubated in suspension with 1 mg/ml of biotin-beta-alanine in 10 ml of DPBS at 4\u00b0C with gentle rotation. Cells were washed three times in DPBS, pelleted by centrifugation, and frozen on dry ice. The biotinylated cell pellets were homogenized in RIPA buffer containing 1% NP40, 0.5% sodium deoxycholate, 0.1% SDS, 150 mM NaCl, 1 mM EDTA, and 25 mM TrisHCl, pH 7.4. Lysates were rotated at 4\u00b0C for 30 min and centrifuged at 10,000 g for 10 min at 4\u00b0C to remove DNA and cell debris. After measuring the protein concentration using the DC Protein Assay Kit II (Bio-Rad), the lysates were aliquoted by transferring 1\u20132 mg of protein to 2 ml eppendorf tubes.\n\n### Mass spectrometry\n\nSoluble peptides were pressure-loaded onto a 250 \u00b5m i.d. capillary with a kasil frit containing 2 cm of 10 \u00b5m Jupiter C18-A material (Phenomenex) followed by 2 cm, 5 \u00b5m Partisphere strong cation exchanger (Whatman). This column was washed with Buffer A after loading. A 100 \u00b5m i.d. capillary with a 5 \u00b5m pulled tip packed with 15 cm, 4 \u00b5m Jupiter C18 material (Phenomenex) was attached to the loading column with a union and the entire split-column (loading column\u2013union\u2013analytical column) was placed in line with an Agilent 1100 quaternary HPLC (Palo Alto, Santa Clara, CA). For transportome analysis, the sample was analyzed using a modified four-step separation described previously (Washburn et al., 2001). The buffer solutions used were 5% acetonitrile/0.1% formic acid (Buffer A), 80% acetonitrile/0.1% formic acid (Buffer B), and 500 mM ammonium acetate/5% acetonitrile/0.1% formic acid (Buffer C). Step 1 consisted of a 35 min gradient from 0% to 55% Buffer B, a 5 min gradient from 55% to 70% Buffer B, 10 min 100% Buffer B and 27 min 100% Buffer A. Steps 2\u20133 had the following profile: 5 min of x% Buffer C with (100\u00d7)% buffer A, a 10 min Buffer A, a 5 min gradient from 0% to 15% Buffer B, a 70 min gradient from 15% to 55% Buffer B, a 5 min gradient from 55% to 100% Buffer B, a 5 min 100% Buffer B, and 20 min 100% Buffer A. The Buffer C percentages (X) were 10 and 40 for the steps 2\u20133, respectively. In the last step, the gradient contained: 5 min of 90% Buffer C with 10% Buffer B, a 10 min Buffer A, a 5 min gradient from 0% to 15% Buffer B, a 70 min gradient from 15% to 55% Buffer B, a 5 min gradient from 55% to 100% Buffer B, a 5 min 100% Buffer B, and 20 min 100% Buffer A. For whole proteome analysis, the sample was analyzed using a 11-step separation exactly described as above except the Buffer C percentages (X) were 10%, 15%, 20%, 30%, 40%, 50%, 60%, and 80% for the steps 2\u20139, respectively. In the last two steps (i.e. 10 and 11), the gradient contained: 1 min 100% Buffer A, 5 min of 100% Buffer C, a 5 min Buffer A, a 5 min gradient from 0% to 15% Buffer B, 70 min gradient from 15% to 55% Buffer B, 5 min gradient from 0% to 10% Buffer B, 75 min gradient from 10% to 45% Buffer B, 10 min 100% Buffer B, and 10 min 100% Buffer A. As peptides eluted from the microcapillary column, they were electrosprayed directly into a Velos mass spectrometer (Thermo Fisher) with the application of a distal 2.4 kV spray voltage. A cycle of one full-scan FT mass spectrum (300\u20132000 m/z) at 60,000 resolution followed by 20 data-dependent IT MS/MS spectra at a 35% normalized collision energy was repeated continuously throughout each step of the multidimensional separation. Application of mass spectrometer scan functions and HPLC solvent gradients were controlled by the Xcalibur data system.\n\n### MS data analysis\n\nMS2 (tandem mass spectra) was extracted from the XCalibur data system format (.RAW) into MS1 and MS2 formats using in-house software (RAW_Xtractor) (McDonald et al., 2004). MS2 remaining after filtering were searched with Prolucid (Xu et al., 2015) against the UniProt_rat_03-25-2014 or UniProt_mouse_20170219_04-17-2017 concatenated to a decoy database in which the sequence for each entry in the original database was reversed (Cociorva et al., 2007; Peng et al., 2002). All searches were parallelized and performed on a Beowulf computer cluster consisting of 100 1.2 GHz Athlon CPUs (Sadygov et al., 2002). No enzyme specificity was considered for any search. For NHS-biotin samples, the following modifications were searched for analysis for transportome analyses: a static modification of 57.02146 on cysteine for all analyses, a differential modification of 226.0776 on lysine for modified peptides. For AHA samples, the following modifications were searched: a static modification of 57.02146 on cysteine for all analyses, a differential modification of 523.2749 on methionine for AHA to detect the standard biotin-alkyne, and a differential modification of 351.1774 (heavy) and 347.1702 (light) on methionine to detect the different AHA isotope biotin-alkynes. Prolucid results were assembled and filtered using the DTASelect (version 2.0) program (Tabb et al., 2002; Cociorva et al., 2007). DTASelect 2.0 uses a linear discriminant analysis to dynamically set XCorr and DeltaCN thresholds for the entire dataset to achieve a user-specified false discovery rate (FDR). In DTASelect, the modified peptides were required to be partially tryptic, less than 10 ppm deviation from peptide match, and an FDR at the protein level of 0.01. The FDRs are estimated by the program from the number and quality of spectral matches to the decoy database. For all datasets, the protein FDR was <1% and the peptide FDR was <1%.\n\nThe Datasets from \u2018Control Rat Transportome\u2019, \u2018Optic Nerve Crush Rat Transportome\u2019, \u2018Control Mouse Transportome\u2019, and \u2018Kif5a KO Mouse Transportome\u2019 are composed of the total detected biotinylated proteins in 3, 3, 2, and 3 individual MS runs, respectively. Each sample was prepared by pooling tissue from 8 to 10 rats or 18 to 20 mice. NSAF was exported per UniProt accession ID for further quantitative analysis. Quantification was done using label-free analysis comparing spectral count in the different experimental groups with the Identification_STAT_COMPARE tool from IP2 software.\n\n### Human and mouse retina dissociation and scRNA-seq\n\nWe analyzed a subset of recently published data (Getter et al., 2019; Hoang et al., 2020; Lu et al., 2020) which may be referenced for a more complete methodology.\n\nBriefly, for tissue dissection and cell dissociation, a human globe from an 86-year-old Caucasian female who died of a myocardial infarction and had no known ocular disease other than cataracts was obtained from the Alabama Eye Bank (Birmingham, AL) and processed within 3.3 hr after death. The study was approved by the Johns Hopkins Institutional Review Board. The neural retina and RPE/choroid were dissected from the globe in ice-cold PBS. First, a circular incision was made on the sclera, behind the limbus, to remove the anterior parts, lens, and vitreous body. The neural retina was then peeled off from the eyecup and dissociated using the Papain Dissociation System (Worthington) following the manufacturer\u2019s instructions. RPE cells were dissociated from the eyecup by incubating with 2 ml of 0.05% EDTA (Thermo Fisher Scientific) for 20 min at 37\u00b0C. Dissociated cells were resuspended in ice-cold PBS, 0.04% BSA, and 0.5 units/\u03bcl RNase inhibitors.\n\nCD1 mice between 7 and 9 weeks of age were purchased from Charles River Laboratories (Wilmington, MA). All experimental procedures were pre-approved by the institutional animal care and use committee of the Johns Hopkins University School of Medicine. Mice were euthanized, and eye globes were removed and incubated in ice-cold PBS. Retinas were dissected, and cells were dissociated using the Papain Dissociation System. In total, four biological replicates were used for the mouse scRNA study. Each replicate contained four retinas from each of two male and two female mice. Dissociated cells were resuspended in ice-cold PBS, 0.04% BSA, and 0.5 units/\u03bcl RNase inhibitors. Cell count and viability were assessed by trypan blue staining.\n\nFor scRNA-seq, dissociated cells (\u223c10,000) were loaded into a 10\u00d7 Genomics Chromium Single Cell system (10\u00d7 Genomics, CA) using v2 chemistry following the manufacturer\u2019s instructions (Zheng et al., 2017). Libraries were pooled and sequenced on Illumina NextSeq with \u223c200 million reads per library. Sequencing results were processed through the Cell Ranger 2.1.1 pipeline (10\u00d7 Genomics) with default parameters. Seurat version 2.3.1 (Butler et al., 2018) was used to perform downstream analysis following the standard pipeline using cells with more than 200 genes and 1000 UMI counts, resulting in 16,659 mouse cells and 14,286 human cells. Samples were aggregated, and cell clusters were annotated based on previous literature (Kiser et al., 2019). A t-distributed stochastic neighbor-embedding dimension reduction was performed on the top principal components learned from high variance genes. Mclust version 5.4 was used to cluster cells in the t-distributed stochastic neighbor-embedding space, at which point cell type identity of clusters was assigned based on the expression of known marker genes for either retinal or nonretinal tissue.\n\n### Mitochondrial tracking in RGCs\n\nRGCs were purified from litters of E18 rats or mice as described previously (Moore et al., 2009). RGCs were seeded in low density as 2000 cells/cm2 on \u00b5-dish 35 mm (Ibidi) in definite media: Neurobasal (Life Technologies) supplemented with penicillin-streptomycin (100 U/ml; Sigma-Aldrich Corp.), insulin (5 \u00b5g/ml; Sigma-Aldrich Corp.), sodium pyruvate (1 mM; Sigma-Aldrich Corp.), L-glutamine (1 mM; Sigma-Aldrich Corp.), triiodothyronine (T3; 40 ng/ml; Sigma-Aldrich Corp.), N-acetyl cysteine (5 mg/ml; Sigma-Aldrich Corp.), B-27 Supplement (Gibco), Sato Supplement(1 \u00b5g/ml transferrin, 1 \u00b5g/ml BSA, 2 nM progesterone, 0.16 \u00b5g/ml putrescine, and 0.4 ng/ml sodium selenite), brain-derived neurotrophic factor (BDNF; 50 ng/ml; Peprotech, Rocky Hill, NJ), CTNF (10 ng/ml; Peprotech), forskolin (5 nM; Sigma-Aldrich Corp.), and basic fibroblast growth factor (10 ng/ml; Peprotech). After 24 hr, Kif5a or anti-Kif5a shRNA were transduced by AAV vector into the cultured RGCs (gift of Dr Sui Wang). After 5 days on the dish, mitochondria were labeled with 50 nM of MitoTracker Deep Red FM (Invitrogen) for 15 min and imaged every 1.5 s for 3 min by confocal microscope with incubation (LSM880, Zeiss). From the time-lapse images, we generated kymograph using ImageJ \u2018Multiple Kymograph\u2019 plug-in for ImageJ submitted by J Rietdorf and A Seitz (European Molecular Biology Laboratory, Heidelberg, Germany) to categorize mitochondrial state (stopped, fluttering, anterograde, and retrograde transport) and calculate speed of the transport as described previously (Yokota et al., 2015).\n\n### Protein-protein interaction analysis\n\nAll proteins labeled in Figure 3e plus Kif5a were input into STRINGdb (http://string-db.org) (Szklarczyk et al., 2017). Interactions sources included: textmining, experiments, databases, co-expression, neighborhood, gene fusion, and co-occurrence, with a medium 0.400 required interaction score. These data were exported into Cytoscape 3.7 for graphical organization.\n\n### Statistical analysis\n\nData were analyzed using R version 3.5.0 (The R Foundation for Statistical Computing) or Graphpad Prism 7 (GraphPad, San Diego, CA). For correlation between proteomic samples, significance testing used Pearson\u2019s correlation coefficient in package \u2018GGally\u2019. Quantitative proteomic comparisons of individual proteins were made using the \u2018t-test\u2019 function of the \u2018limma\u2019 package in R. For statistical comparison of Kif5a transport after optic nerve crush by western blot, a one-sample, two-sided t-test was used. For all other comparisons between two samples, two-sided unpaired t-tests were used. For group comparisons, ordinary one-way ANOVA with post-hoc Sidak correction was used.\n",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "fc52f391-bb1b-477d-9aa1-ede761b1ee81",
+      "submission_id": "1fc8321f-13d4-4e79-a9d9-f767e76f8749",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Paola Bovolenta, https://ror.org/02gfc7t72 CSIC-UAM Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68148.sa0](https://doi.org/10.7554/eLife.68148.sa0)\n\nThis study uses unbiased proteomics to determine which proteins are transported along the axon transportome in the context of optic nerve injury. Kif5a is identified as the most significantly downregulated protein in the transportome after injury. Knocking out Kif5a resulted in degeneration of the axon, suggesting that Kif5a is crucial for maintaining a healthy optic nerve. Further, optic nerve analyses of the Kif5a KO vs the control upon injury identified defective mitochondrial transport and defective hRNP transport that has been identified as a cause of neurodegeneration in ALS upper motor neurons.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Paola Bovolenta, https://ror.org/02gfc7t72 CSIC-UAM Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68148.sa1](https://doi.org/10.7554/eLife.68148.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Quantitative transportomics identifies Kif5a as a major regulator of neurodegeneration\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Zhigang He (Reviewer #1); Judith A. Steen (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted what we consider the essential revisions to address to help you prepare a revised submission.\n\nEssential revisions:\n\nThis study uses a proteomics-based method to quantify proteins that are transported along the axons and compare what happens to the \"transportome\" after optic nerve. The study identifies a number of downregulated proteins, among which Kif5a seems to be the most affected. The study thereafter used a number of approaches to investigate the role of Kif5a axon degeneration. The study is interesting and the methodology used in the study should be of value for the community, despite its limitation. Differential NHS-biotin uptake in the cell may in fact lead to bias in the protein labeling, with under representation of some proteins (e.g. Sncb and Arf3, described in the literature but not found in this study). Because of this limitation the authors should reanalyze their dataset and determine whether there are proteins that have been lost in their comparison, for example. Study limitations should also be discussed. Data should also explain better: for example, those related to Figure 5, which can lead to confusion.\n\n1. The results in Figure 2e suggested \"an equal amount of Kif5a in the retina with and without (crush) injury\". However, Kif5a synthesis is reduced in a glaucoma model (Figure 2f). The authors should discuss if expression and transport of Kif5a are differentially affected in these injury models.\n\n2. The proteomic data suggest specific regulation of Kif5a but not that of other Kifs by axotomy. Are axonal Kif subunit ratios altered after axotomy? A western blot of proximal optic nerve tissue should address this point.\n\n3. The data related to the glaucoma model do not fit well with other experiments perhaps because the labeling method is different. Does AHA show axonal Kif5a change after axotomy? These data could be moved to Supplementary information unless the authors can expand their analysis.\n\n4.Figure 2C and Figure 3 address distribution of protein and RNA, and seem somewhat redundant. It would be most useful to show mouse Kif5 immunohistology after ONC and in glaucoma. Human retinal immunohistology would add to the study more than the RNA profiles. The human data in Figure 3 are from one subject and would be better in a Supplemental Figure.\n\n5. How many neurons and how many separate cultures were studied to obtain the kymograph data of Figure 5c-h. The \"n\" should represent separate cultures (not separate organelles in the same dish or same neuron).\n\n6. In Figure 6, the optic nerve atrophies and loss of electrophysiological signals are expected but it is less clear why the ~50% reductions of Kif5a is important for cell survival. The authors should assess whether chronically deleted Kif5a heterozygous mice show progressive degeneration relative to WT.\n\n7. It is striking that Kif5a is the only identified axon transport protein, in light of the involvement of multiple proteins in regulating this important process. Is it possible that other proteins are less abundant (below detection levels)? The authors should examine their dataset to assess this possibility and add the results to the discussion.\n\n8. In Figure 2b, it is interesting to see some proteins' transport might be enhanced by injury. This seems a quite surprising finding as axonal injury has been usually linked to the down-regulation of axon transport. The authors should include some verification results and discuss possible mechanisms.\n\n9. For the Kif5a knockout proteome profile in Figure 4c, is down regulation of Kif5a identified? If not, that raises questions about the method robustness. In addition, it would be best for the text and any network analysis (Figure 4d) to focus exclusively on significantly altered expression rather than non-significant changes. Both 14-3-3 proteins (Ywhab) and CRMP proteins (Dpysl5) have been implicated in axon growth previously.\n\n10. The analysis in Figure 5a seems to show no correlation of KO and ONC responses. If the dots from all quadrants are considered, it would seem that there is no pattern at all, and a linear regression would be non-significant. This argues against a dominant role of Kif5a in crush response. Please discuss.Reviewer #1 (Recommendations for the authors):\n\nIn this manuscript, Shah et al., report their results of identifying Kif5a as a most affected protein of injury-induced axon transport in retinal ganglion cells (RGCs). The authors first describes a proteomics-based method (quantitative transportomics) of quantifying proteins that are synthesized in the cell bodies and transported along axon at different time points. With this method, the authors analyzed the effects of optic nerve injury on such axon transport and identified a list of most affected proteins. Among the injury-induced less transported proteins is Kif5a, which has been implicated in regulating anterograde axon transport. Further, the authors obtained additional evidence from a series of follow-up experiments to support the role of Kif5a as a critical regulator of neurodegeneration. Overall these results are largely convincing. The method described here and the obtained dataset should be valuable to the community.\n\nReviewer #2 (Recommendations for the authors):\n\nThis manuscript uses NHS-biotin injection into the vitreus followed by optic nerve profiling of biotin-labeled transported proteins with and without optic nerve crush, and reports that Kif5a is selectively down-regulated. This \"transportome\" profiling is a key strength of the study. A limitation of this approach is that the labeling method may tag proteins in a biased way that is based on NHS-biotin uptake, on protein subcellular localization and on Lys or N-terminus accessibility. Therefore, a number of proteins might be under-represented. In fact, the authors show reduced transport of Sncb and Arf3 as candidate proteins from the literature, but those proteins appear not to be detected in the profiling study.\n\nThe authors also profile the transportome of retinal ganglion cells after Kif5a conditional knockout without injury. Overlapping Kif5a KO protein changes with axotomy regulation suggest mitochondrial dysregulation. This observation leads to a characterization of mitochondrial axon transport in cultured RGC, showing reduced transport with Kif5a knockdown and greater with overexpression. This supports a role for Kif5a in organelle axon transport, though it is not clear whether this role is specific to certain cargoes versus others, nor whether there is a change in this Kif5a function after axotomy.\n\nFinally, the authors delete Kif5a selectively in the retina and assess late time points. They observe a slow degeneration of retinal ganglion cells over several months. As RGCs are lost the optic nerve is atrophied and electrophysiological signals are lost. Thus, Kif5a is required for adult RGC survival, independent of damage. However, it is not clear whether axotomy-induced partial reductions of Kif5a are required for cell death induced by axonal trauma. In fact, preliminary data show that Kif5a overexpression is associated with slightly greater RGC loss after axotomy. Thus, the role of Kif5a protein changes in RGC neurodegeneration after axotomy remains unclear.Reviewer #3 (Recommendations for the authors):\n\nThe authors have performed logical experiments, and their data support their conclusions.\n",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "847e7707-2666-4ace-83f4-4af7e925d106",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C1",
+      "claim": "65% of RGCs die within 1 week after optic nerve crush in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "After optic nerve crush in rats, 65% of RGCs die within 1 week, while less than 1% die after 1 day (S\u00e1nchez-Migall\u00f3n et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to S\u00e1nchez-Migall\u00f3n et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "821b9af4-7ab5-4aaf-b003-84796da7e571",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C2",
+      "claim": "Less than 1% of RGCs die after 1 day following optic nerve crush in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "After optic nerve crush in rats, 65% of RGCs die within 1 week, while less than 1% die after 1 day (S\u00e1nchez-Migall\u00f3n et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to S\u00e1nchez-Migall\u00f3n et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "a9143a51-ff16-4141-afae-0e4c1d1af416",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C3",
+      "claim": "NHS-biotin covalently binds primary amines on proteins, principally lysines and N-terminal amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "NHS-biotin covalently binds primary amines on proteins, principally lysines and N-terminal amino acids, adding a biotin group (Figure 1a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1a which shows the chemical reaction, and represents established knowledge about NHS-biotin chemistry.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "a19d527d-d108-4b90-b53b-2dd7fef7e834",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C4",
+      "claim": "There was no biotin signal distal to the crush site in injured optic nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there was no biotin signal distal to the crush, confirming the disruption of protein transport and lack of biotin transfer out of axons after injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "f339a005-dd10-4d78-b627-39e913b89249",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C5",
+      "claim": "The absence of biotin signal distal to the crush confirms disruption of protein transport after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there was no biotin signal distal to the crush, confirming the disruption of protein transport and lack of biotin transfer out of axons after injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of no biotin signal distal to the crush site.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "f0af90af-b123-4e1f-bf94-ae3876322d20",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C6",
+      "claim": "206\u2013300 transported proteins were detected with a range of expression up to 300-fold NSAF values.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected 206\u2013300 transported proteins with a range of detection of expression up to 300-fold normalized spectral abundance factor (NSAF) values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "40e485e0-0dcb-487f-aec0-0bada4e6a41d",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C7",
+      "claim": "Pairwise correlation of NSAF values showed high correlation between replicates of both control and crush samples (R = 0.805 and R = 0.914, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "To assess reproducibility of the quantitative proteomics in each of these conditions, we used pairwise correlation of NSAF values which showed high correlation between replicates of both control and crush samples (Figure 1d, R = 0.805 and R = 0.914, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "83450ee0-9185-4d22-bbe4-282d207bf07e",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C8",
+      "claim": "Total protein content was equivalent in optic nerve crush and control retinas and optic nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "Total protein content was equivalent in optic nerve crush and control retinas and optic nerves, as expected given the short time between injury and tissue collection (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Ponceau S staining shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "b0c9b658-1198-47d8-9df7-2690d7e9a15d",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C9",
+      "claim": "Biotinylated protein decreased in the optic nerve after injury compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we compared the biotinylated portion of total protein in crush or control conditions, we found a decrease in axon-transported protein after injury (Figure 1f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "803f1899-25b0-4d97-a706-6175824fb902",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C10",
+      "claim": "Sncb showed significant decrease in transport into the optic nerve after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Sncb and Arf3 but not Gap43 showed significant decreases in transport into the optic nerve after injury (IP + vs. \u2013 crush, Figure 2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation and western blot data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "55340492-08ca-4ca3-9b6a-e826b5269a1c",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C11",
+      "claim": "Arf3 showed significant decrease in transport into the optic nerve after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Sncb and Arf3 but not Gap43 showed significant decreases in transport into the optic nerve after injury (IP + vs. \u2013 crush, Figure 2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation and western blot data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "a96cbcb1-5507-466c-9cef-285dd43280c0",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C12",
+      "claim": "Gap43 did not show significant decrease in transport into the optic nerve after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Sncb and Arf3 but not Gap43 showed significant decreases in transport into the optic nerve after injury (IP + vs. \u2013 crush, Figure 2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation and western blot data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "e3c133e4-36d3-4751-808c-5d099038278d",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C13",
+      "claim": "The decrease in Sncb transport was significant even when normalizing to the decrease in total transported protein (normalized log2FC = \u22122.2).",
+      "claim_type": "EXPLICIT",
+      "source": "and this decrease was significant even when normalizing to the decrease in total transported protein as captured in Figure 1f (normalized log2FC = \u22122.2 for Sncb, \u20131.3 for Arf3, n = 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "9a5710d8-b36e-4ffc-bc18-bed6cbea1cbb",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C14",
+      "claim": "The decrease in Arf3 transport was significant even when normalizing to the decrease in total transported protein (normalized log2FC = \u22121.3).",
+      "claim_type": "EXPLICIT",
+      "source": "and this decrease was significant even when normalizing to the decrease in total transported protein as captured in Figure 1f (normalized log2FC = \u22122.2 for Sncb, \u20131.3 for Arf3, n = 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "d588ef06-0503-4945-ab93-556ac4cef6f5",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C15",
+      "claim": "Transport of Kif5a was significantly decreased after optic nerve crush.",
+      "claim_type": "EXPLICIT",
+      "source": "In the protein transport ontology, transport of Kif5a, a neuronal kinesin heavy chain motor protein, was significantly decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 2b and validated by western blot in Figure 2d-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "f693deda-3fd1-410e-893d-cbfc1312a17e",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C16",
+      "claim": "Kif5a is expressed in the mouse retinal ganglion cell layer.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed Kif5a expression is localized to RGCs in the mouse retina using immunohistochemistry (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "9317539b-034b-4b1c-9aae-0bb342f09020",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C17",
+      "claim": "Kif5a transport decreased about 2.5-fold relative to the decrease in total axon transport after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We normalized biotin-tagged Kif5a to each sample's total biotin-tagged protein (similar to that shown in Figure 1f), and compared injury versus control, which resulted in a significant decrease (about 2.5-fold) in Kif5a transport relative to the decrease in total axon transport after injury (Figure 2e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative western blot analysis shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "62a7a88f-53ee-4e60-b4f8-83db961aaa7c",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C18",
+      "claim": "Kif5a abundance in the retina was equal with and without injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we saw an equal amount of Kif5a in the retina with and without injury, suggesting that the cause of decreased axon transport is not due to changes in Kif5a abundance in the retina, but in fact reflects a specific anterograde transport deficit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "91a873f4-1b9d-40cc-83dd-228614a1e001",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C19",
+      "claim": "Kif5a is a motor protein in the 45-member kinesin superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "Kif5a, the only protein that met both significance and magnitude of change criteria, is a motor protein in the 45-member kinesin superfamily (Hirokawa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hirokawa et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "44589d9b-49e5-4c10-b06d-841d9e182ec0",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C20",
+      "claim": "Kinesin-1 motors are composed of two heavy chain and two light chain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-1 motors are composed of two heavy chain and two light chain proteins, where the heavy chains are any of Kif5a, Kif5b, and Kif5c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge about kinesin-1 motor structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "9b3a9fa6-6097-473d-a625-c95c39f30b93",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C21",
+      "claim": "Kif5a and Kif5c are neuron-specific kinesin heavy chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, Kif5a and Kif5c are neuron-specific, and previously described to be expressed in RGCs (Rahman et al., 1999; Butowt and von Bartheld, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Rahman et al., 1999 and Butowt and von Bartheld, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "c1b09eed-a51e-4b89-857e-a279dfa3dc00",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C22",
+      "claim": "Kif5b transport did not change in relative transport after optic nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "First, another kinesin heavy chain, Kif5b, did not change in relative transport after injury, suggesting specificity in kinesin isoform transport failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "e42a2089-7bdc-4b77-94f2-dc8e7bbb8634",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C23",
+      "claim": "Transport of Klc1 was not reduced to the same extent as Kif5a after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, transport of Klc1, a light chain partner of the heavy chain Kif5a, also was not reduced to the same extent as Kif5a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "e3d40d4f-0de3-4d79-b77e-6f62f8425b9a",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C24",
+      "claim": "No significant change in transport of both dynein subunits was discovered after optic nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not discover any significant change in transport of both dynein subunits identified in our transportome, although more work may be needed to explore this question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "1a50029b-9151-4858-b6fb-6a10acf479c8",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C25",
+      "claim": "Kif5a synthesis decreased in the retina 3 weeks after induction of glaucoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, Kif5a showed decreased synthesis when normalized to the total newly synthesized proteome after induction of glaucoma, while Kif5b was relatively unchanged (Figure 2g, Figure 2\u2014figure supplement 1b, complete data in ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by BONCAT and mass spectrometry data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "bd688a72-b567-43a1-a356-cde2533d0433",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C26",
+      "claim": "Kif5b synthesis was relatively unchanged 3 weeks after induction of glaucoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, Kif5a showed decreased synthesis when normalized to the total newly synthesized proteome after induction of glaucoma, while Kif5b was relatively unchanged (Figure 2g, Figure 2\u2014figure supplement 1b, complete data in ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by BONCAT and mass spectrometry data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "68cd8909-8433-4b59-91b4-60e59afa9961",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C27",
+      "claim": "Kif5a is enriched in the amacrine cell/RGC cluster of cells compared to other retinal cell types in both mouse and human retinas.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Kif5a was enriched in the amacrine cell/RGC cluster of cells compared to other retinal cell types in both mouse and human, whereas Kif5b was expressed more ubiquitously across retinal cell types (Figure 3c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by single-cell RNA sequencing data shown in Figure 3c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "d2405f89-a81c-4ec4-a4ec-ff501f92fc5b",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C28",
+      "claim": "Kif5b is expressed more ubiquitously across retinal cell types in both mouse and human retinas.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Kif5a was enriched in the amacrine cell/RGC cluster of cells compared to other retinal cell types in both mouse and human, whereas Kif5b was expressed more ubiquitously across retinal cell types (Figure 3c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by single-cell RNA sequencing data shown in Figure 3c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "0435385a-4158-4c7e-8a06-96a085ee7bec",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C29",
+      "claim": "There was almost a complete loss of Kif5a in the retina one month after AAV-cre injection in Kif5a floxed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "One month after injection, there was almost a complete loss of Kif5a in the retina, and a complete loss in the optic nerve, with neither loss nor compensatory upregulation of Kif5c (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "edce5bee-4f9f-423a-b839-b2678cce0f7c",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C30",
+      "claim": "There was a complete loss of Kif5a in the optic nerve one month after AAV-cre injection in Kif5a floxed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "One month after injection, there was almost a complete loss of Kif5a in the retina, and a complete loss in the optic nerve, with neither loss nor compensatory upregulation of Kif5c (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "dd91021e-de66-438f-9b7b-b633ad894d07",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C31",
+      "claim": "There was neither loss nor compensatory upregulation of Kif5c after Kif5a knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "One month after injection, there was almost a complete loss of Kif5a in the retina, and a complete loss in the optic nerve, with neither loss nor compensatory upregulation of Kif5c (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "2b3e74ca-b510-4092-a59a-e4f690ebdf8c",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C32",
+      "claim": "Bin1 was identified as an Alzheimer's disease locus through GWAS studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Bin1, for example, was identified as an Alzheimer's disease locus through GWAS studies (Seshadri et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Seshadri et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "dbc38317-24b7-48fd-b61f-e2d40d5481ce",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C33",
+      "claim": "Bin1 localizes to the axon initial segment and nodes of Ranvier.",
+      "claim_type": "EXPLICIT",
+      "source": "and localizes to the axon initial segment and nodes of Ranvier acting downstream of c-myc, an injury-response transcription factor in RGCs (Belin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Belin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "3d297f1f-c3dc-4254-9687-7065fe762391",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C34",
+      "claim": "Sh3gl2 is enriched in synaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Sh3gl2, also known as endophilin A1, is enriched in synaptic terminals and interacts with synaptic proteins such as synaptojanin and regulates clathrin-mediated synaptic endocytosis (Milosevic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Milosevic et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "0573fdc0-1db8-4f82-aab5-c5a6a3b84693",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C35",
+      "claim": "Sh3gl2 interacts with synaptic proteins such as synaptojanin.",
+      "claim_type": "EXPLICIT",
+      "source": "Sh3gl2, also known as endophilin A1, is enriched in synaptic terminals and interacts with synaptic proteins such as synaptojanin and regulates clathrin-mediated synaptic endocytosis (Milosevic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Milosevic et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "30ce61e3-1c75-4bd7-8fbb-83f11bdc8db0",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C36",
+      "claim": "Sh3gl2 regulates clathrin-mediated synaptic endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sh3gl2, also known as endophilin A1, is enriched in synaptic terminals and interacts with synaptic proteins such as synaptojanin and regulates clathrin-mediated synaptic endocytosis (Milosevic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Milosevic et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "97b9fd0a-18dd-4270-a119-6472b4728a6a",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C37",
+      "claim": "Mitochondrial-associated genes are significantly over-represented among proteins that decrease in transport in both optic nerve crush and Kif5a knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Gene Ontology to cluster all proteins that decrease in transport in both optic nerve crush and Kif5a knockout, we discovered a significantly over-represented number of mitochondrial-associated genes in common (Figure 5a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Gene Ontology analysis shown in Figure 5a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "cba00e4e-a277-4fc4-8d63-8a5a20850015",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C38",
+      "claim": "AAV2-mediated Kif5a knockdown significantly reduced the average velocity of non-stationary mitochondria compared to an AAV2 scrambled shRNA virus.",
+      "claim_type": "EXPLICIT",
+      "source": "AAV2-mediated Kif5a knockdown significantly reduced the average velocity of non-stationary mitochondria compared to an AAV2 scrambled shRNA virus, as shown in kymographs of mitochondrial transport (Figure 5c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live cell imaging data shown in Figure 5c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "0d820819-5960-4fad-9ec2-9179ad780311",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C39",
+      "claim": "Kif5a knockdown resulted in a significant reduction in anterograde mitochondrial transport.",
+      "claim_type": "EXPLICIT",
+      "source": "By quantifying the number of mitochondria transported in each direction, we found a significant reduction in anterograde transport (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of mitochondrial transport shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "a6a44bed-9344-4202-b98e-5fad7e1bd7e3",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C40",
+      "claim": "Primary RGCs treated with an AAV2 Kif5a expression virus demonstrated significantly increased average mitochondrial velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary RGCs treated with an AAV2 Kif5a expression virus demonstrated significantly increased average velocity (Figure 5f\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live cell imaging data shown in Figure 5f-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "10ae7103-f45f-492e-a904-a6198c809c23",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C41",
+      "claim": "Kif5a overexpression resulted in a significant increase in the fraction of anterogradely moving mitochondria compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a significant increase in the fraction of anterogradely moving mitochondria compared to control (Figure 5h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of mitochondrial transport shown in Figure 5h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "a1abf4dd-35be-491a-bc0d-c2bc6aa0f4c4",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C42",
+      "claim": "Kif5a expression is necessary for anterograde mitochondrial transport in mammalian RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus Kif5a expression is necessary for and can promote anterograde mitochondrial transport in mammalian RGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the knockdown and overexpression experiments shown in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "7a223c6d-2114-4bce-8838-06f2e3eb6b08",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C43",
+      "claim": "Kif5a can promote anterograde mitochondrial transport in mammalian RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus Kif5a expression is necessary for and can promote anterograde mitochondrial transport in mammalian RGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the knockdown and overexpression experiments shown in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "36bdc3d6-8396-4170-adfb-ddc2114dc7fb",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C44",
+      "claim": "Kif5a associates with several members of the HnRNP family, including HnRNPA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Kif5a associates with several members of the HnRNP family, including HnRNPA1 (Kanai et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kanai et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "35bd310c-971e-4582-93aa-05f873d10b6a",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C45",
+      "claim": "HnRNPA1 has been shown to play a role in concentration-dependent stress granule formation in other neurodegenerative diseases including ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "HnRNPA1 has been shown to play a role in concentration-dependent stress granule formation in other neurodegenerative diseases including ALS (Kim et al., 2013; Molliex et al., 2015; Deshaies et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kim et al., 2013; Molliex et al., 2015; Deshaies et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "782f7278-c078-4fab-8828-ed2cd832b888",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C46",
+      "claim": "HnRNPA1 knockdown significantly decreased RGC survival after optic nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "HnRNPA1 knockdown significantly decreased RGC survival after injury (Figure 5i\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RGC quantification data shown in Figure 5i-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "860ca8ea-ada6-464f-a6a5-b361529e01b1",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C47",
+      "claim": "RGC density did not change 1 month after Kif5b homozygous knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "RGC density did not change 1 month after Kif5b homozygous knockout (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RGC quantification data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "f6ac1345-95fc-46a8-9b56-27ff75825cb5",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C48",
+      "claim": "A significant 44% decrease in RGC survival was detected 1 month after Kif5a homozygous knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "but we detected a significant 44% decrease in RGC survival 1 month after Kif5a homozygous knockout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RGC quantification data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "db15a8f8-ccfe-420d-9bcb-e80525c1305b",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C49",
+      "claim": "Kif5a-dependent RGC death led to significant optic nerve atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "This Kif5a-dependent RGC death also led to significant optic nerve atrophy, confirming axonal degeneration in addition to RGC death (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by optic nerve diameter measurements shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "17603ab5-aa1f-46ed-9756-4fe363ea934d",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C50",
+      "claim": "A significant decrease of 22% RGC survival was found in heterozygous Kif5a knockout mice, about half of the cell death seen in the homozygous Kif5a knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "We assayed gene dose dependency using a heterozygous Kif5afl/+ mouse line with AAV-cre and found a significant decrease of 22% RGC survival, about half of the cell death seen in the homozygous Kif5a knockout (Figure 6c; 1-2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RGC quantification data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "546ed8a3-2fe8-4528-82e4-657991ab2c41",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C51",
+      "claim": "An almost complete loss of RGCs was observed 4 months after Kif5a knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if only 44% of RGCs are susceptible to cell death or if Kif5a loss results in progressive degeneration, we aged a cohort of mice to 4 months after knockout and observed an almost complete loss of RGCs (Figure 6c; 3-4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RGC quantification data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "ebea7d7d-1290-4925-a755-0b8069f49a9c",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C52",
+      "claim": "Visual responses were almost completely lost 6 months after Kif5a knockout, quantified by P50 to N95 amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this effect could be a downregulation of Brn3a, we also measured pattern electroretinograms for function of RGCs. Visual responses were almost completely lost 6 months after knockout, quantified by P50 to N95 amplitude (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pattern electroretinogram data shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "6db630d3-2afa-47e1-a48f-8ef01d9277cf",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C53",
+      "claim": "Loss of Kif5a induces a progressive neurodegeneration of RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the loss of a specific motor protein Kif5a, but not Kif5b, induces a progressive neurodegeneration as well as a dose-dependent neurodegeneration of RGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the time course data showing increasing RGC loss over time after Kif5a knockout.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "28254d38-9e7b-4ff5-a788-e9bd2001312f",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C54",
+      "claim": "Loss of Kif5a induces a dose-dependent neurodegeneration of RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the loss of a specific motor protein Kif5a, but not Kif5b, induces a progressive neurodegeneration as well as a dose-dependent neurodegeneration of RGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the heterozygous vs homozygous knockout data showing gene dose dependency.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "1fbc3550-3834-4231-83ed-01a05e007873",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C55",
+      "claim": "There were no changes in RGC cell death 1 month post viral injection of Kif5a overexpression without injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while there were no changes in cell death 1 month post viral injection without injury (Figure 7b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RGC quantification data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "f233fbd4-4ecd-4bb2-92c7-8df7a64db027",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C56",
+      "claim": "There was a 33% decrease in RGC survival after optic nerve crush with Kif5a overexpression compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "there was a 33% decrease in RGC survival after optic nerve crush with Kif5a overexpression compared to control (Figure 7c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RGC quantification data shown in Figure 7c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "e92a36ef-75ce-4585-bbbf-c3c8c52e2dfa",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C57",
+      "claim": "Maintaining physiological levels of Kif5a transport is crucial for RGC survival after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, maintaining physiological levels of Kif5a transport\u2014and not above or below this level\u2014is crucial for RGC survival after injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the finding that both loss and overexpression of Kif5a are detrimental to RGC survival after injury.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "5b130505-02d9-4b5e-b3c1-5db8a5547259",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C58",
+      "claim": "Axon transport failure has been pathophysiologically linked to RGC death in glaucoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Axon transport failure has been pathophysiologically linked to RGC death in glaucoma, as well as to other neurodegenerative diseases such as amyotrophic lateral sclerosis (ALS) and Alzheimer's disease (Zhang et al., 2004; Nicolas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Zhang et al., 2004 and Nicolas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "9dad04ab-ecba-44f8-b3b9-c1459dc1f0f7",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C59",
+      "claim": "Axon transport failure has been pathophysiologically linked to ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Axon transport failure has been pathophysiologically linked to RGC death in glaucoma, as well as to other neurodegenerative diseases such as amyotrophic lateral sclerosis (ALS) and Alzheimer's disease (Zhang et al., 2004; Nicolas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Zhang et al., 2004 and Nicolas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "2647d673-4b95-438f-bb66-1831b991b755",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C60",
+      "claim": "Axon transport failure has been pathophysiologically linked to Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Axon transport failure has been pathophysiologically linked to RGC death in glaucoma, as well as to other neurodegenerative diseases such as amyotrophic lateral sclerosis (ALS) and Alzheimer's disease (Zhang et al., 2004; Nicolas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Zhang et al., 2004 and Nicolas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "6a1a9ca6-e061-42ae-b818-76e7f6fd6919",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C61",
+      "claim": "Charcot-Marie-Tooth disease type 2A can be caused by mutations in Kif1b.",
+      "claim_type": "EXPLICIT",
+      "source": "Charcot-Marie-Tooth disease type 2A can be caused by mutations in Kif1b (Zhao et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhao et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "2f06debf-3bcc-4930-96b7-b07bbff30af9",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C62",
+      "claim": "Congenital fibrosis of the extraocular muscles can be caused by mutations in Kif21a.",
+      "claim_type": "EXPLICIT",
+      "source": "congenital fibrosis of the extraocular muscles can be caused by mutations in Kif21a",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "374c076e-d419-4233-9e54-87033b6e517f",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C63",
+      "claim": "A loss-of-function mutation in Kif5a motor domain can result in hereditary spastic paraplegia.",
+      "claim_type": "EXPLICIT",
+      "source": "and a loss-of-function mutation in Kif5a motor domain can result in hereditary spastic paraplegia (Reid et al., 2002; Xia et al., 2003; Tessa et al., 2008; Morfini et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Reid et al., 2002; Xia et al., 2003; Tessa et al., 2008; Morfini et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "cf413d05-a695-4916-ad51-c0e4172a4924",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C64",
+      "claim": "Different loss-of-function mutations in Kif5a, all affecting the cargo binding domain, are causative in some cases of ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Different loss-of-function mutations in Kif5a, all affecting the cargo binding domain, are causative in some cases of ALS (Brenner et al., 2018; Nicolas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brenner et al., 2018 and Nicolas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "16354f4b-9e9d-4f97-9d09-dca5f02802d2",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C65",
+      "claim": "Several synaptic proteins such as Snap25, synaptotagmin, and syntaxin 1a have been identified as cargoes of the Kif5 family.",
+      "claim_type": "EXPLICIT",
+      "source": "Through IP and immunoisolation assays, several synaptic proteins such as Snap25, synaptotagmin, and syntaxin 1a have been identified as cargoes of the Kif5 family (Toda et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Toda et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "4a408b9a-d9e4-437a-bba0-126f4a1d7ffd",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C66",
+      "claim": "GABARAP has been shown to be specific to Kif5a.",
+      "claim_type": "EXPLICIT",
+      "source": "but only a few proteins have been shown to be specific to Kif5a, such as GABARAP (Nakajima et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nakajima et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "019c3989-0950-414b-bec9-de94d986d206",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C67",
+      "claim": "Kif5 motors regulate mitochondrial trafficking in Drosophila through the adaptor proteins Milton and Miro.",
+      "claim_type": "EXPLICIT",
+      "source": "Kif5 motors regulate mitochondrial trafficking in Drosophila and mammalian hippocampal neurons through the adaptor proteins Milton and Miro (Glater et al., 2006; Macaskill et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Glater et al., 2006 and Macaskill et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "9131def1-088d-4499-be55-1ebd942b995a",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C68",
+      "claim": "Kif5 motors regulate mitochondrial trafficking in mammalian hippocampal neurons through the adaptor proteins Milton and Miro.",
+      "claim_type": "EXPLICIT",
+      "source": "Kif5 motors regulate mitochondrial trafficking in Drosophila and mammalian hippocampal neurons through the adaptor proteins Milton and Miro (Glater et al., 2006; Macaskill et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Glater et al., 2006 and Macaskill et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "8e9c26fe-4901-4dc2-9d2b-4dc723f650fe",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C69",
+      "claim": "Mitochondria localize to injured axons during the normal course of regeneration in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In Caenorhabditis elegans, mitochondria localize to injured axons during the normal course of regeneration (Han et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Han et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "63710022-3c21-484f-a89a-630af33b2d26",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C70",
+      "claim": "Manipulating mitochondrial mobilization through overexpression of Armcx1 produces survival and regenerative effects in mammalian RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In non-regenerating neurons, like mammalian RGCs, manipulating mitochondrial mobilization through overexpression of Armcx1 produces a similar survival and regenerative effect (Cartoni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cartoni et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "b763da82-3c44-4029-aa1e-4bcb0cbfdc0d",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C71",
+      "claim": "Kif5a may regulate mitochondrial transport in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that Kif5a may regulate mitochondrial transport in zebrafish (Campbell et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Campbell et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "0b1f9d96-437b-4a6b-82c0-7bfaf32a470a",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C72",
+      "claim": "Kif5a may regulate mitochondrial transport in cultured hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "and cultured hippocampal neurons (Chen and Sheng, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen and Sheng, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "a011685a-6403-4940-aaf5-1cfc0436c5c8",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C73",
+      "claim": "Regulation of kinesin transport depends on phosphorylation states.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of kinesin transport is known to depend on phosphorylation states (Morfini et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Morfini et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "3331e16b-c040-4311-9f3e-a5796c37db11",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C74",
+      "claim": "Regulation of kinesin transport depends on calcium-dependent inhibition by mitochondrial cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "calcium-dependent inhibition by mitochondrial cargo (Wang and Schwarz, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang and Schwarz, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "1f87360a-b3c8-4a13-b290-1937d3d4772a",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C75",
+      "claim": "Regulation of kinesin transport depends on conformational state changes by kinesin light chains.",
+      "claim_type": "EXPLICIT",
+      "source": "conformational state changes by kinesin light chains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge about kinesin regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "f8729219-03e2-4f41-8a44-76ae11d1be77",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C76",
+      "claim": "Regulation of kinesin transport depends on inhibition by MAP2 at the axon initial segment.",
+      "claim_type": "EXPLICIT",
+      "source": "inhibition by MAP2 at the axon initial segment (Gumy et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gumy et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "60d4f28a-23b7-4678-b522-95d658ded534",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C77",
+      "claim": "Regulation of kinesin transport depends on autoinhibition of the motor domain by inactive kinesin heavy chains.",
+      "claim_type": "EXPLICIT",
+      "source": "and autoinhibition of the motor domain by inactive kinesin heavy chains (Cai et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cai et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "8eaa430b-189e-4b55-a70b-84fa5ca908ea",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "claim_id": "C78",
+      "claim": "Removing autoinhibitory domains or truncation of the motor beyond the first coiled-coil domain creates constitutively active kinesins.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing autoinhibitory domains or truncation of the motor beyond the first coiled-coil domain creates constitutively active kinesins, potentially circumventing any inherent axonal inhibition (Yang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0684fbc9-6d8d-4b80-bd56-afafd56ae458",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the temporal dynamics of RGC death following optic nerve crush in rats, with 65% of RGCs dying within 1 week and less than 1% dying after 1 day.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are both supported by citation to S\u00e1nchez-Migall\u00f3n et al., 2016, establishing the temporal window for the experimental design. These claims provide essential context for the 24-hour labeling window used in subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "a77bbb0f-2fab-42f8-8caf-20d30527bfca",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NHS-biotin labeling successfully identifies transported proteins in RGC axons, with absence of biotin signal distal to the crush site confirming disruption of axonal protein transport after injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 are supported by established NHS-biotin chemistry (C3) and immunofluorescence data in Figure 1c (C4-C5). The absence of distal signal provides direct evidence of transport disruption, validating the experimental approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "89b7ad5b-0ab1-459d-9884-61a1f505200c",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The quantitative proteomics approach detected 206-300 transported proteins with high reproducibility between replicates (R = 0.805 for control, R = 0.914 for crush samples).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 are supported by mass spectrometry data with correlation analysis shown in Figure 1d. The high correlation coefficients demonstrate technical reproducibility, though the relatively modest number of detected proteins suggests the method may be limited by detection sensitivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "27aa2f2c-b8e5-45d4-a4b0-9d82697a4c8c",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Total protein content remained equivalent between control and injured samples at 24 hours, but biotinylated (transported) protein specifically decreased in the optic nerve after injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 are supported by Ponceau S staining (Figure 1e) and western blot analysis (Figure 1f). This demonstrates that the observed changes reflect specific transport deficits rather than general protein loss, strengthening the specificity of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "f32af514-f887-4a8e-b2fe-f413057b2f3b",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Specific proteins (Sncb and Arf3, but not Gap43) showed significant decreases in axonal transport after injury, even when normalized to total transported protein decrease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 are supported by immunoprecipitation and western blot data in Figure 2a with quantitative fold-change values. The differential effects on specific proteins (Sncb and Arf3 decreased, Gap43 unchanged) demonstrate protein-specific transport changes beyond global transport reduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "56f86b5f-6c03-4ba0-893e-0a2fe59bd856",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Kif5a transport into the optic nerve decreased approximately 2.5-fold after injury relative to total transport decrease, while Kif5a abundance in the retina remained unchanged, indicating a specific anterograde transport deficit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are supported by mass spectrometry (Figure 2b), immunohistochemistry (Figure 2c), and quantitative western blot analysis (Figure 2d-e). The unchanged retinal abundance with decreased axonal transport strongly supports a transport-specific mechanism rather than altered protein expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "089769fa-496f-477d-9525-960cad678f9e",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Kif5a is a neuron-specific kinesin heavy chain motor protein in the kinesin-1 family, which is composed of two heavy chains and two light chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by citations to established literature (Hirokawa et al., 2009; Rahman et al., 1999; Butowt and von Bartheld, 2007) and represent well-established knowledge about kinesin motor protein structure and expression patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "1f67b723-ff27-41bb-a743-513edc445b0e",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Transport of other motor proteins (Kif5b, Klc1, dynein subunits) did not show the same degree of change as Kif5a after optic nerve injury, suggesting specificity in motor protein transport failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by mass spectrometry data in Figure 2\u2014figure supplement 1a. The differential effects among closely related motor proteins strengthen the specificity of Kif5a transport failure, though the authors acknowledge that more work may be needed for dynein analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "0d4d24db-a5d5-48b0-8db8-d72ec21a4f8d",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In a chronic glaucoma model, Kif5a synthesis decreased in the retina 3 weeks after injury induction, while Kif5b synthesis remained relatively unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by BONCAT and mass spectrometry data shown in Figure 2g. This orthogonal approach using a different injury model and different labeling method (synthesis vs. transport) strengthens the conclusion that Kif5a is specifically affected in optic neuropathy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "57a7622c-ed5a-42aa-9128-c04fb5bf7730",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing data from mouse and human retinas show that Kif5a is enriched in the amacrine cell/RGC cluster, while Kif5b is expressed more ubiquitously across retinal cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by scRNA-seq data shown in Figure 3c-d. The conservation of this expression pattern across species (mouse and human) strengthens the biological relevance of Kif5a specificity in RGCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "c1b46904-b847-4556-8e80-52e1efbca3d0",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AAV-cre mediated knockout in Kif5a floxed mice resulted in almost complete loss of Kif5a in the retina and complete loss in the optic nerve one month after injection, without compensatory upregulation of Kif5c.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by western blot data (Figure 4a) and immunofluorescence (Figure 4b). The complete knockout in the optic nerve with lack of Kif5c compensation validates the specificity of the genetic manipulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "d2b479ba-f5b2-4982-bce7-d329d234f043",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Several proteins identified with decreased transport after Kif5a knockout have established roles in neurodegeneration and synaptic function, including Bin1 (Alzheimer's disease locus) and Sh3gl2/endophilin A1 (synaptic endocytosis).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by citations to established literature (Seshadri et al., 2010; Belin et al., 2015; Milosevic et al., 2011). These claims provide biological context for the identified Kif5a cargo proteins, though they represent prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "3ef198ed-8a0d-41e2-a3cd-8e1c7aa103e3",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Gene Ontology analysis revealed significant over-representation of mitochondrial-associated genes among proteins that decreased in transport in both optic nerve crush and Kif5a knockout conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by Gene Ontology analysis shown in Figure 5a-b. This bioinformatic analysis identifies a convergent mechanism between injury and genetic knockout, though the statistical significance of the enrichment and the specific p-values are not provided in the text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "32f4780c-cf66-491b-aa4d-a737ab5ff8dc",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Kif5a knockdown in primary RGC cultures significantly reduced the average velocity of non-stationary mitochondria and resulted in significant reduction in anterograde mitochondrial transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by live cell imaging data shown in Figure 5c-e with kymograph analysis. The functional validation in cultured RGCs provides direct mechanistic evidence linking Kif5a to mitochondrial transport, though sample sizes and statistical details are not fully specified in the claim text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "b6f7f481-9cad-4908-9c88-8101c8ed043b",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Kif5a overexpression in primary RGCs significantly increased average mitochondrial velocity and the fraction of anterogradely moving mitochondria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by live cell imaging data shown in Figure 5f-h. The gain-of-function experiments complement the loss-of-function data, providing bidirectional evidence for Kif5a's role in mitochondrial transport.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "013567b5-6476-482f-9704-61666d676d7d",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Kif5a expression is necessary for and can promote anterograde mitochondrial transport in mammalian RGCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are inferred from the combined knockdown (C38-C39) and overexpression (C40-C41) experiments. The bidirectional manipulation provides strong evidence for both necessity and sufficiency, though the claims represent interpretive conclusions rather than direct measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "731a65b9-1e06-414c-9b2f-49d3521df11e",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Kif5a associates with HnRNPA1, a ribonucleoprotein implicated in stress granule formation in neurodegenerative diseases including ALS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by citations to established literature (Kanai et al., 2004; Kim et al., 2013; Molliex et al., 2015; Deshaies et al., 2018). These claims provide context for investigating HnRNPA1 as a Kif5a cargo, though they represent prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "e5a406c9-ab48-4d2d-8ac8-b3cd73c49029",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "HnRNPA1 knockdown significantly decreased RGC survival after optic nerve injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by RGC quantification data shown in Figure 5i-j. This functional validation demonstrates that at least one Kif5a cargo protein (HnRNPA1) is important for RGC survival after injury, though the mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "d6d13379-0ffb-431b-b537-2ebac711414c",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Kif5a knockout, but not Kif5b knockout, resulted in significant RGC death (44% decrease at 1 month) and optic nerve atrophy, demonstrating isoform-specific effects on RGC survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by RGC quantification (Figure 6c, Figure 6\u2014figure supplement 1) and optic nerve diameter measurements (Figure 6b). The differential effects between Kif5a and Kif5b knockout provide strong evidence for isoform specificity, with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "e3c6bdfd-3285-45b3-954a-9d6220c05279",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Heterozygous Kif5a knockout resulted in 22% RGC loss, approximately half the cell death seen in homozygous knockout, demonstrating gene dose dependency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by RGC quantification data in Figure 6c. The dose-dependent effect strengthens the causal relationship between Kif5a levels and RGC survival, though the mechanism underlying the dose-response is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "237676d1-d807-47d4-b439-44a33f270fae",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Kif5a knockout resulted in progressive RGC degeneration, with almost complete loss of RGCs at 4 months and almost complete loss of visual responses at 6 months measured by pattern electroretinogram.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by RGC quantification (Figure 6c) and pattern electroretinogram data (Figure 6d). The progressive nature of degeneration and functional validation with ERG strengthen the conclusion that Kif5a loss causes genuine neurodegeneration rather than just marker downregulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "961cf542-25c8-4a53-b971-dcf924b3a76c",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Loss of Kif5a induces progressive and dose-dependent neurodegeneration of RGCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are inferred from the combined time course data (C51-C52) and heterozygous knockout data (C50). The integration of these findings supports both progressive and dose-dependent characteristics of Kif5a-mediated neurodegeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "be4c19ab-8a27-4dcd-85e9-a923ee6bb47e",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Kif5a overexpression did not affect RGC survival without injury but caused 33% decrease in RGC survival after optic nerve crush, suggesting that maintaining physiological Kif5a levels is crucial for RGC survival after injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by RGC quantification data in Figure 7b-d. The finding that both loss and gain of Kif5a are detrimental after injury suggests a critical balance, though the mechanism underlying the toxicity of overexpression is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "827ba139-d252-4049-a63b-c78f728addda",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Axon transport failure has been pathophysiologically linked to RGC death in glaucoma, ALS, and Alzheimer's disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by citations to Zhang et al., 2004 and Nicolas et al., 2018. These claims provide important context for the study but represent established knowledge from prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "cc0cf100-b03c-41f3-ab69-65a987b762c3",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Mutations in various kinesin motor proteins cause different neurological diseases: Kif1b mutations cause Charcot-Marie-Tooth disease type 2A, Kif21a mutations cause congenital fibrosis of extraocular muscles, and Kif5a mutations cause hereditary spastic paraplegia and some cases of ALS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 are supported by citations to established literature. These claims provide important context for the clinical relevance of kinesin motor proteins but represent prior knowledge rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "824093d8-4686-41b7-b391-e7aeb01add09",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Several synaptic proteins have been identified as cargoes of the Kif5 family, but only a few proteins like GABARAP have been shown to be specific to Kif5a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by citations to Toda et al., 2008 and Nakajima et al., 2012. These claims establish the limited prior knowledge about Kif5a-specific cargo, providing context for the novelty of the transportome approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "48ac6480-1800-4856-be32-1c345a894a07",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Kif5 motors regulate mitochondrial trafficking in Drosophila and mammalian hippocampal neurons through the adaptor proteins Milton and Miro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by citations to Glater et al., 2006 and Macaskill et al., 2009. These claims provide mechanistic context for mitochondrial transport regulation but represent prior knowledge from other systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "217fe31f-2a48-44d1-809f-0a5c2ad0a8aa",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Mitochondrial localization to injured axons occurs during regeneration in C. elegans, and manipulating mitochondrial mobilization through Armcx1 overexpression produces survival and regenerative effects in mammalian RGCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 are supported by citations to Han et al., 2016 and Cartoni et al., 2016. These claims provide important context for the functional significance of mitochondrial transport in axon injury and regeneration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "70157f4c-9f91-46e5-a474-353e2af28698",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "Previous studies have shown that Kif5a may regulate mitochondrial transport in zebrafish and cultured hippocampal neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 are supported by citations to Campbell et al., 2014 and Chen and Sheng, 2013. These claims establish prior evidence for Kif5a's role in mitochondrial transport in other systems, providing context for the RGC findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "8a48365d-7c00-4c19-a527-8fa88f3bf6dd",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R30",
+      "result_category": "llm",
+      "result": "Regulation of kinesin transport depends on multiple mechanisms including phosphorylation states, calcium-dependent inhibition, conformational changes by light chains, MAP2 inhibition at the axon initial segment, and autoinhibition by inactive heavy chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 are supported by citations to established literature (Morfini et al., 2001; Wang and Schwarz, 2009; Gumy et al., 2017; Cai et al., 2007). These claims provide mechanistic context for potential regulatory mechanisms but represent prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    },
+    {
+      "id": "7e3b6839-29e0-4f28-a1cc-8a08b1f19cbc",
+      "content_id": "fb98d3e7-40fd-4f94-be14-8946db06bacd",
+      "result_id": "R31",
+      "result_category": "llm",
+      "result": "Removing autoinhibitory domains or truncating the motor beyond the first coiled-coil domain creates constitutively active kinesins that potentially circumvent axonal inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is supported by citation to Yang et al., 2016. This claim provides context for potential therapeutic strategies to restore transport after injury, though it represents prior knowledge rather than a finding from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:34:25.471062Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "847e7707-2666-4ace-83f4-4af7e925d106",
+      "result_id": "0684fbc9-6d8d-4b80-bd56-afafd56ae458"
+    },
+    {
+      "claim_id": "821b9af4-7ab5-4aaf-b003-84796da7e571",
+      "result_id": "0684fbc9-6d8d-4b80-bd56-afafd56ae458"
+    },
+    {
+      "claim_id": "a9143a51-ff16-4141-afae-0e4c1d1af416",
+      "result_id": "a77bbb0f-2fab-42f8-8caf-20d30527bfca"
+    },
+    {
+      "claim_id": "a19d527d-d108-4b90-b53b-2dd7fef7e834",
+      "result_id": "a77bbb0f-2fab-42f8-8caf-20d30527bfca"
+    },
+    {
+      "claim_id": "f339a005-dd10-4d78-b627-39e913b89249",
+      "result_id": "a77bbb0f-2fab-42f8-8caf-20d30527bfca"
+    },
+    {
+      "claim_id": "f0af90af-b123-4e1f-bf94-ae3876322d20",
+      "result_id": "89b7ad5b-0ab1-459d-9884-61a1f505200c"
+    },
+    {
+      "claim_id": "40e485e0-0dcb-487f-aec0-0bada4e6a41d",
+      "result_id": "89b7ad5b-0ab1-459d-9884-61a1f505200c"
+    },
+    {
+      "claim_id": "83450ee0-9185-4d22-bbe4-282d207bf07e",
+      "result_id": "27aa2f2c-b8e5-45d4-a4b0-9d82697a4c8c"
+    },
+    {
+      "claim_id": "b0c9b658-1198-47d8-9df7-2690d7e9a15d",
+      "result_id": "27aa2f2c-b8e5-45d4-a4b0-9d82697a4c8c"
+    },
+    {
+      "claim_id": "803f1899-25b0-4d97-a706-6175824fb902",
+      "result_id": "f32af514-f887-4a8e-b2fe-f413057b2f3b"
+    },
+    {
+      "claim_id": "55340492-08ca-4ca3-9b6a-e826b5269a1c",
+      "result_id": "f32af514-f887-4a8e-b2fe-f413057b2f3b"
+    },
+    {
+      "claim_id": "a96cbcb1-5507-466c-9cef-285dd43280c0",
+      "result_id": "f32af514-f887-4a8e-b2fe-f413057b2f3b"
+    },
+    {
+      "claim_id": "e3c133e4-36d3-4751-808c-5d099038278d",
+      "result_id": "f32af514-f887-4a8e-b2fe-f413057b2f3b"
+    },
+    {
+      "claim_id": "9a5710d8-b36e-4ffc-bc18-bed6cbea1cbb",
+      "result_id": "f32af514-f887-4a8e-b2fe-f413057b2f3b"
+    },
+    {
+      "claim_id": "d588ef06-0503-4945-ab93-556ac4cef6f5",
+      "result_id": "56f86b5f-6c03-4ba0-893e-0a2fe59bd856"
+    },
+    {
+      "claim_id": "f693deda-3fd1-410e-893d-cbfc1312a17e",
+      "result_id": "56f86b5f-6c03-4ba0-893e-0a2fe59bd856"
+    },
+    {
+      "claim_id": "9317539b-034b-4b1c-9aae-0bb342f09020",
+      "result_id": "56f86b5f-6c03-4ba0-893e-0a2fe59bd856"
+    },
+    {
+      "claim_id": "62a7a88f-53ee-4e60-b4f8-83db961aaa7c",
+      "result_id": "56f86b5f-6c03-4ba0-893e-0a2fe59bd856"
+    },
+    {
+      "claim_id": "91a873f4-1b9d-40cc-83dd-228614a1e001",
+      "result_id": "089769fa-496f-477d-9525-960cad678f9e"
+    },
+    {
+      "claim_id": "44589d9b-49e5-4c10-b06d-841d9e182ec0",
+      "result_id": "089769fa-496f-477d-9525-960cad678f9e"
+    },
+    {
+      "claim_id": "9b3a9fa6-6097-473d-a625-c95c39f30b93",
+      "result_id": "089769fa-496f-477d-9525-960cad678f9e"
+    },
+    {
+      "claim_id": "c1b09eed-a51e-4b89-857e-a279dfa3dc00",
+      "result_id": "1f67b723-ff27-41bb-a743-513edc445b0e"
+    },
+    {
+      "claim_id": "e42a2089-7bdc-4b77-94f2-dc8e7bbb8634",
+      "result_id": "1f67b723-ff27-41bb-a743-513edc445b0e"
+    },
+    {
+      "claim_id": "e3d40d4f-0de3-4d79-b77e-6f62f8425b9a",
+      "result_id": "1f67b723-ff27-41bb-a743-513edc445b0e"
+    },
+    {
+      "claim_id": "1a50029b-9151-4858-b6fb-6a10acf479c8",
+      "result_id": "0d4d24db-a5d5-48b0-8db8-d72ec21a4f8d"
+    },
+    {
+      "claim_id": "bd688a72-b567-43a1-a356-cde2533d0433",
+      "result_id": "0d4d24db-a5d5-48b0-8db8-d72ec21a4f8d"
+    },
+    {
+      "claim_id": "68cd8909-8433-4b59-91b4-60e59afa9961",
+      "result_id": "57a7622c-ed5a-42aa-9128-c04fb5bf7730"
+    },
+    {
+      "claim_id": "d2405f89-a81c-4ec4-a4ec-ff501f92fc5b",
+      "result_id": "57a7622c-ed5a-42aa-9128-c04fb5bf7730"
+    },
+    {
+      "claim_id": "0435385a-4158-4c7e-8a06-96a085ee7bec",
+      "result_id": "c1b46904-b847-4556-8e80-52e1efbca3d0"
+    },
+    {
+      "claim_id": "edce5bee-4f9f-423a-b839-b2678cce0f7c",
+      "result_id": "c1b46904-b847-4556-8e80-52e1efbca3d0"
+    },
+    {
+      "claim_id": "dd91021e-de66-438f-9b7b-b633ad894d07",
+      "result_id": "c1b46904-b847-4556-8e80-52e1efbca3d0"
+    },
+    {
+      "claim_id": "2b3e74ca-b510-4092-a59a-e4f690ebdf8c",
+      "result_id": "d2b479ba-f5b2-4982-bce7-d329d234f043"
+    },
+    {
+      "claim_id": "dbc38317-24b7-48fd-b61f-e2d40d5481ce",
+      "result_id": "d2b479ba-f5b2-4982-bce7-d329d234f043"
+    },
+    {
+      "claim_id": "3d297f1f-c3dc-4254-9687-7065fe762391",
+      "result_id": "d2b479ba-f5b2-4982-bce7-d329d234f043"
+    },
+    {
+      "claim_id": "0573fdc0-1db8-4f82-aab5-c5a6a3b84693",
+      "result_id": "d2b479ba-f5b2-4982-bce7-d329d234f043"
+    },
+    {
+      "claim_id": "30ce61e3-1c75-4bd7-8fbb-83f11bdc8db0",
+      "result_id": "d2b479ba-f5b2-4982-bce7-d329d234f043"
+    },
+    {
+      "claim_id": "97b9fd0a-18dd-4270-a119-6472b4728a6a",
+      "result_id": "3ef198ed-8a0d-41e2-a3cd-8e1c7aa103e3"
+    },
+    {
+      "claim_id": "cba00e4e-a277-4fc4-8d63-8a5a20850015",
+      "result_id": "32f4780c-cf66-491b-aa4d-a737ab5ff8dc"
+    },
+    {
+      "claim_id": "0d820819-5960-4fad-9ec2-9179ad780311",
+      "result_id": "32f4780c-cf66-491b-aa4d-a737ab5ff8dc"
+    },
+    {
+      "claim_id": "a6a44bed-9344-4202-b98e-5fad7e1bd7e3",
+      "result_id": "b6f7f481-9cad-4908-9c88-8101c8ed043b"
+    },
+    {
+      "claim_id": "10ae7103-f45f-492e-a904-a6198c809c23",
+      "result_id": "b6f7f481-9cad-4908-9c88-8101c8ed043b"
+    },
+    {
+      "claim_id": "a1abf4dd-35be-491a-bc0d-c2bc6aa0f4c4",
+      "result_id": "013567b5-6476-482f-9704-61666d676d7d"
+    },
+    {
+      "claim_id": "7a223c6d-2114-4bce-8838-06f2e3eb6b08",
+      "result_id": "013567b5-6476-482f-9704-61666d676d7d"
+    },
+    {
+      "claim_id": "36bdc3d6-8396-4170-adfb-ddc2114dc7fb",
+      "result_id": "731a65b9-1e06-414c-9b2f-49d3521df11e"
+    },
+    {
+      "claim_id": "35bd310c-971e-4582-93aa-05f873d10b6a",
+      "result_id": "731a65b9-1e06-414c-9b2f-49d3521df11e"
+    },
+    {
+      "claim_id": "782f7278-c078-4fab-8828-ed2cd832b888",
+      "result_id": "e5a406c9-ab48-4d2d-8ac8-b3cd73c49029"
+    },
+    {
+      "claim_id": "860ca8ea-ada6-464f-a6a5-b361529e01b1",
+      "result_id": "d6d13379-0ffb-431b-b537-2ebac711414c"
+    },
+    {
+      "claim_id": "f6ac1345-95fc-46a8-9b56-27ff75825cb5",
+      "result_id": "d6d13379-0ffb-431b-b537-2ebac711414c"
+    },
+    {
+      "claim_id": "db15a8f8-ccfe-420d-9bcb-e80525c1305b",
+      "result_id": "d6d13379-0ffb-431b-b537-2ebac711414c"
+    },
+    {
+      "claim_id": "17603ab5-aa1f-46ed-9756-4fe363ea934d",
+      "result_id": "e3c6bdfd-3285-45b3-954a-9d6220c05279"
+    },
+    {
+      "claim_id": "546ed8a3-2fe8-4528-82e4-657991ab2c41",
+      "result_id": "237676d1-d807-47d4-b439-44a33f270fae"
+    },
+    {
+      "claim_id": "ebea7d7d-1290-4925-a755-0b8069f49a9c",
+      "result_id": "237676d1-d807-47d4-b439-44a33f270fae"
+    },
+    {
+      "claim_id": "6db630d3-2afa-47e1-a48f-8ef01d9277cf",
+      "result_id": "961cf542-25c8-4a53-b971-dcf924b3a76c"
+    },
+    {
+      "claim_id": "28254d38-9e7b-4ff5-a788-e9bd2001312f",
+      "result_id": "961cf542-25c8-4a53-b971-dcf924b3a76c"
+    },
+    {
+      "claim_id": "1fbc3550-3834-4231-83ed-01a05e007873",
+      "result_id": "be4c19ab-8a27-4dcd-85e9-a923ee6bb47e"
+    },
+    {
+      "claim_id": "f233fbd4-4ecd-4bb2-92c7-8df7a64db027",
+      "result_id": "be4c19ab-8a27-4dcd-85e9-a923ee6bb47e"
+    },
+    {
+      "claim_id": "e92a36ef-75ce-4585-bbbf-c3c8c52e2dfa",
+      "result_id": "be4c19ab-8a27-4dcd-85e9-a923ee6bb47e"
+    },
+    {
+      "claim_id": "5b130505-02d9-4b5e-b3c1-5db8a5547259",
+      "result_id": "827ba139-d252-4049-a63b-c78f728addda"
+    },
+    {
+      "claim_id": "9dad04ab-ecba-44f8-b3b9-c1459dc1f0f7",
+      "result_id": "827ba139-d252-4049-a63b-c78f728addda"
+    },
+    {
+      "claim_id": "2647d673-4b95-438f-bb66-1831b991b755",
+      "result_id": "827ba139-d252-4049-a63b-c78f728addda"
+    },
+    {
+      "claim_id": "6a1a9ca6-e061-42ae-b818-76e7f6fd6919",
+      "result_id": "cc0cf100-b03c-41f3-ab69-65a987b762c3"
+    },
+    {
+      "claim_id": "2f06debf-3bcc-4930-96b7-b07bbff30af9",
+      "result_id": "cc0cf100-b03c-41f3-ab69-65a987b762c3"
+    },
+    {
+      "claim_id": "374c076e-d419-4233-9e54-87033b6e517f",
+      "result_id": "cc0cf100-b03c-41f3-ab69-65a987b762c3"
+    },
+    {
+      "claim_id": "cf413d05-a695-4916-ad51-c0e4172a4924",
+      "result_id": "cc0cf100-b03c-41f3-ab69-65a987b762c3"
+    },
+    {
+      "claim_id": "16354f4b-9e9d-4f97-9d09-dca5f02802d2",
+      "result_id": "824093d8-4686-41b7-b391-e7aeb01add09"
+    },
+    {
+      "claim_id": "4a408b9a-d9e4-437a-bba0-126f4a1d7ffd",
+      "result_id": "824093d8-4686-41b7-b391-e7aeb01add09"
+    },
+    {
+      "claim_id": "019c3989-0950-414b-bec9-de94d986d206",
+      "result_id": "48ac6480-1800-4856-be32-1c345a894a07"
+    },
+    {
+      "claim_id": "9131def1-088d-4499-be55-1ebd942b995a",
+      "result_id": "48ac6480-1800-4856-be32-1c345a894a07"
+    },
+    {
+      "claim_id": "8e9c26fe-4901-4dc2-9d2b-4dc723f650fe",
+      "result_id": "217fe31f-2a48-44d1-809f-0a5c2ad0a8aa"
+    },
+    {
+      "claim_id": "63710022-3c21-484f-a89a-630af33b2d26",
+      "result_id": "217fe31f-2a48-44d1-809f-0a5c2ad0a8aa"
+    },
+    {
+      "claim_id": "b763da82-3c44-4029-aa1e-4bcb0cbfdc0d",
+      "result_id": "70157f4c-9f91-46e5-a474-353e2af28698"
+    },
+    {
+      "claim_id": "0b1f9d96-437b-4a6b-82c0-7bfaf32a470a",
+      "result_id": "70157f4c-9f91-46e5-a474-353e2af28698"
+    },
+    {
+      "claim_id": "a011685a-6403-4940-aaf5-1cfc0436c5c8",
+      "result_id": "8a48365d-7c00-4c19-a527-8fa88f3bf6dd"
+    },
+    {
+      "claim_id": "3331e16b-c040-4311-9f3e-a5796c37db11",
+      "result_id": "8a48365d-7c00-4c19-a527-8fa88f3bf6dd"
+    },
+    {
+      "claim_id": "1f87360a-b3c8-4a13-b290-1937d3d4772a",
+      "result_id": "8a48365d-7c00-4c19-a527-8fa88f3bf6dd"
+    },
+    {
+      "claim_id": "f8729219-03e2-4f41-8a44-76ae11d1be77",
+      "result_id": "8a48365d-7c00-4c19-a527-8fa88f3bf6dd"
+    },
+    {
+      "claim_id": "60d4f28a-23b7-4678-b522-95d658ded534",
+      "result_id": "8a48365d-7c00-4c19-a527-8fa88f3bf6dd"
+    },
+    {
+      "claim_id": "8eaa430b-189e-4b55-a70b-84fa5ca908ea",
+      "result_id": "7e3b6839-29e0-4f28-a1cc-8a08b1f19cbc"
+    }
+  ],
+  "comparisons": []
+}

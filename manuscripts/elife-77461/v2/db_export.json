@@ -1,0 +1,1704 @@
+{
+  "submission": {
+    "id": "491e95b0-dd85-464e-b8d3-215d5828895f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:28:36.845415Z",
+    "updated_at": "2025-12-03T14:28:36.845415Z"
+  },
+  "content": [
+    {
+      "id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "submission_id": "491e95b0-dd85-464e-b8d3-215d5828895f",
+      "content_type": "manuscript",
+      "content_text": "# BIRC6 modifies risk of invasive bacterial infection in Kenyan children\n\n## Authors\n\n- James J Gilchrist<sup>1</sup> ([ORCID: 0000-0003-2045-6788](https://orcid.org/0000-0003-2045-6788)) \u2020\n- Silvia N Kariuki<sup>4</sup>\n- James A Watson<sup>5</sup> ([ORCID: 0000-0001-5524-0325](https://orcid.org/0000-0001-5524-0325))\n- Gavin Band<sup>3</sup>\n- Sophie Uyoga<sup>4</sup>\n- Carolyne M Ndila<sup>4</sup>\n- Neema Mturi<sup>4</sup>\n- Salim Mwarumba<sup>4</sup>\n- Shebe Mohammed<sup>4</sup>\n- Moses Mosobo<sup>4</sup>\n- Kaur Alasoo<sup>7</sup> ([ORCID: 0000-0002-1761-8881](https://orcid.org/0000-0002-1761-8881))\n- Kirk A Rockett<sup>3</sup>\n- Alexander J Mentzer<sup>3</sup>\n- Dominic P Kwiatkowski<sup>3</sup>\n- Adrian VS Hill<sup>3</sup>\n- Kathryn Maitland<sup>4</sup> ([ORCID: 0000-0002-0007-0645](https://orcid.org/0000-0002-0007-0645))\n- J Anthony G Scott<sup>4</sup> ([ORCID: 0000-0001-7533-5006](https://orcid.org/0000-0001-7533-5006))\n- Thomas N Williams<sup>4</sup> ([ORCID: 0000-0003-4456-2382](https://orcid.org/0000-0003-4456-2382)) \u2020\n\n### Affiliations\n\n1. Department of Paediatrics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n2. MRC\u2013Weatherall Institute of Molecular Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n3. Wellcome Centre for Human Genetics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n4. KEMRI-Wellcome Trust Research Programme, Centre for Geographic Medicine Research-Coast Kilifi Kenya ([ROR:04r1cxt79](https://ror.org/04r1cxt79))\n5. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n6. Mahidol Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine, Mahidol University Bangkok Thailand ([ROR:01znkr924](https://ror.org/01znkr924))\n7. Institute of Computer Science, University of Tartu Tartu Estonia ([ROR:03z77qz90](https://ror.org/03z77qz90))\n8. Wellcome Sanger Institute Cambridge United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))\n9. The Jenner Institute, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n10. Division of Medicine, Imperial College London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n11. Department of Infectious Disease Epidemiology, London School of Hygiene & Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))\n12. Institute for Global Health Innovation, Department of Surgery and Cancer, Imperial College London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n\n\u2020 Corresponding author\n\n## Abstract\n\nInvasive bacterial disease is a major cause of morbidity and mortality in African children. Despite being caused by diverse pathogens, children with sepsis are clinically indistinguishable from one another. In spite of this, most genetic susceptibility loci for invasive infection that have been discovered to date are pathogen specific and are not therefore suggestive of a shared genetic architecture of bacterial sepsis. Here, we utilise probabilistic diagnostic models to identify children with a high probability of invasive bacterial disease among critically unwell Kenyan children with Plasmodium falciparum parasitaemia. We construct a joint dataset including 1445 bacteraemia cases and 1143 severe malaria cases, and population controls, among critically unwell Kenyan children that have previously been genotyped for human genetic variation. Using these data, we perform a cross-trait genome-wide association study of invasive bacterial infection, weighting cases according to their probability of bacterial disease. In doing so, we identify and validate a novel risk locus for invasive infection secondary to multiple bacterial pathogens, that has no apparent effect on malaria risk. The locus identified modifies splicing of BIRC6 in stimulated monocytes, implicating regulation of apoptosis and autophagy in the pathogenesis of sepsis in Kenyan children.\n\n## Introduction\n\nInvasive bacterial diseases are a major cause of child morbidity and mortality in Africa (Berkley et al., 2005). Although improved control measures, including the rollout of anti-bacterial conjugate vaccines (Cowgill et al., 2006; Silaba et al., 2019), have led to recent declines, the burden of conditions such as pneumonia, meningitis, and sepsis secondary to bacterial pathogens remains significant (Vos, 2020). A better understanding of the biology of invasive bacterial infections in African populations might help the development of novel interventions.\n\nSusceptibility to invasive bacterial infections varies widely between individuals. In African children, some of this variability is determined by acquired comorbidities such as HIV, malnutrition, and malaria (Berkley et al., 2005; Church and Maitland, 2014; Scott et al., 2011). However, the identification of common genetic variants as determinants of bacterial infection suggests that a significant portion of this variability is heritable. Many of these genetic susceptibility loci have pathogen-specific effects (Davila et al., 2010; Gilchrist et al., 2018; Rautanen et al., 2016), which is consistent with our understanding of infection susceptibility derived from primary immunodeficiencies. Key examples of pathogen specificity among primary immunodeficiencies include Mendelian susceptibility to mycobacterial disease and susceptibility to non-tuberculous mycobacteria and nontyphoidal Salmonella (Bustamante et al., 2014), terminal complement deficiencies and meningococcal disease (Figueroa et al., 1993), and IRAK4 deficiency and pneumococcal disease (Picard et al., 2007). A major exception to this is the rs334 A>T mutation in HBB (sickle haemoglobin), which is associated with raised and lowered risks of infection secondary to a broad range of pathogens among homozygotes (Williams et al., 2009) and heterozygotes (Scott et al., 2011), respectively. However, the effect sizes associated with sickle haemoglobin are extreme, being maintained in populations by balancing selection, and larger sample sizes will probably be needed for the discovery of new variants with multi-pathogen effects.\n\nBecause the clinical features of invasive bacterial infections and severe malaria are broadly similar (Bejon et al., 2007), it can be difficult to distinguish between severe illness caused by extensive sequestration of malaria parasites in the microvasculature (\u2018true\u2019 severe malaria) and bacterial sepsis in the presence of incidental parasitaemia on the basis of clinical features alone. This is made harder still by the fact that antibiotic pre-treatment and inadequate blood culture volumes mean that, even in settings with excellent diagnostic facilities, true invasive bacterial infections can often not be confirmed (Driscoll et al., 2017). Recently, we illustrated this clinical complexity through a study in which we used probabilistic models based on malaria-specific biomarkers to show that approximately one-third of children recruited to studies in Africa with a clinical diagnosis of severe malaria were actually suffering from other conditions (Watson et al., 2021a; Watson et al., 2021b).\n\nIn the current study, we extend this work to show that invasive bacterial infections are common in children admitted to hospital with a clinical diagnosis of severe malaria, but in whom biomarkers subsequently suggest that malaria was probably not the primary cause for their severe illness. We then construct a dataset of genome-wide genotyped samples from 5400 Kenyan children, comprising critically unwell Kenyan children with bacteraemia (Rautanen et al., 2016) and severe malaria (Band, 2019), and population controls. Using this dataset, we perform a genome-wide association study (GWAS) of invasive bacterial infection in Kenyan children, weighting cases according to the probability that their disease was mediated by a bacterial pathogen. In doing so, we increase our study power and identify BIRC6 as a novel genetic determinant of invasive bacterial disease in Kenyan children.\n\n## Results\n\n### Severe malaria probability and risk of bacteraemia\n\nChildren admitted to the high dependency ward of Kilifi County Hospital with a clinical diagnosis of severe malaria, defined as a severe febrile illness in the presence of Plasmodium falciparum parasitaemia (n=2200), between 11 June 1995 and 12 June 2008 were included in the study. While this definition is sensitive it is not specific, meaning that our study will have included some children with sepsis accompanied by incidental parasitaemia (Watson et al., 2021a). We therefore used two probabilistic models, which included either platelet counts and plasma PfHRP2 concentrations (Model 1, n=1400) or white blood cell and platelet counts (Model 2, n=2200), to determine the likelihood of \u2018true\u2019 severe malaria among these children. The estimated probabilities of \u2018true\u2019 severe malaria using each model were well correlated ($r=0.64$). Of 1400 children with a clinical diagnosis of severe malaria with measured plasma PfHRP2 concentrations, 425 (30.4%, Figure 1A and B) had a low probability (P(SM|Data)<0.5) of having \u2018true\u2019 severe malaria (941 of 2220 children using WBC and platelet count data, Figure 1\u2014figure supplement 1A and B). That is, while they presented with febrile illness and concomitant malaria parasitaemia, it is unlikely that their illnesses were directly attributable to malaria.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig1-v2.jpg)\n\n**Figure 1.:** (A) Distribution of PfHRP2 concentrations and platelet count among Kenyan children (n=1400) with a clinical diagnosis of severe malaria. Points are coloured according to the probability of \u2018true\u2019 severe malaria given the data. (B) Distribution of \u2018true\u2019 severe malaria probabilities estimated from platelet count and plasma PfHRP2 concentrations. (C) Platelets counts in children with a clinical diagnosis of severe malaria with and without concomitant bacteraemia. (D) PfHRP2 concentrations in children with a clinical diagnosis of severe malaria with and without concomitant bacteraemia. Box and whisker plots; boxes depict the upper and lower quartiles of the data, and whiskers depict the range of the data excluding outliers (outliers are defined as data-points\u2009>\u20091.5\u2009\u00d7\u2009the inter-quartile range from the upper or lower quartiles). Comparisons of platelet count and plasma PfHRP2 concentrations in children with and without bacteraemia were performed with logistic regression.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Distribution of white blood cell and platelet count among Kenyan children (n=2200) with a clinical diagnosis of severe malaria. Points are coloured according to the probability of \u2018true\u2019 severe malaria given the data. (B) Distribution of \u2018true\u2019 severe malaria probabilities estimated from platelet count and white blood cell count. (C) Platelets counts in children with a clinical diagnosis of severe malaria with and without concomitant bacteraemia. (D) White blood cell counts in children with a clinical diagnosis of severe malaria with and without concomitant bacteraemia. Box and whisker plots; boxes depict the upper and lower quartiles of the data, and whiskers depict the range of the data excluding outliers (outliers are defined as data-points\u2009>\u20091.5\u2009\u00d7\u2009the inter-quartile range from the upper or lower quartiles). Comparisons of platelet and white cell count in children with and without bacteraemia were performed with logistic regression.\n\nIn keeping with the hypothesis that a significant proportion of these critically unwell children represented culture-negative invasive bacterial disease (Figure 1), in-patient mortality was higher among children with a low than a high probability of \u2018true\u2019 severe malaria (Table 1; $OR_{model1}=1.57$, 95% CI $1.11-2.21$, $p=0.01$, 95% CI $1.60\u22122.72$, $p=4.91\\times10^{\u22128}$). This was also reflected in the rates of concurrent bacteraemia (Table 1; $OR_{model1}=2.92$, 95% CI $1.66-5.13$, $p=1.07\\times10^{\u22124}$, 95% CI $1.27-3.17$, $p=0.003$). Similarly, the constituents of Model 1 were each associated with blood culture positivity, both higher platelet counts (OR = 2.36, 95% CI 1.19\u20134.70, $p=0.014$) and lower PfHRP2 levels ($OR=0.52,95%\u00a0CI\u00a00.39\u20130.70$, $p=9.62\\times10^{\u22126}$) both being associated with the risk of coincident bacteraemia (Figure 1C and D). Conversely, white blood counts in isolation were not associated with risk of concurrent bacteraemia (Figure 1\u2014figure supplement 1). Plasma PfHRP2 is the single best biomarker for severe malaria (Hendriksen et al., 2012). In light of this, and given the greater enrichment for concurrent bacteraemia among children with a low probability of \u2018true\u2019 severe malaria as calculated by Model 1 than Model 2, we used Model 1 probabilities in downstream analyses where available (n=1400) and used Model 2 probabilities for all other cases (n=800).\n\n**Table 1.**\n Demographics and clinical characteristics of Kenyan children with severe malaria.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>Numbers</th>\n      <th>Sex (female)</th>\n      <th>Age (months)</th>\n      <th>Bacteraemia</th>\n      <th>Mortality</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">PfHRP2/Plt</td>\n      <td>Total (n=1400)</td>\n      <td>695 (49.6%)</td>\n      <td>29 (17\u201344)</td>\n      <td>51 (3.6%)</td>\n      <td>155 (11.1%)</td>\n    </tr>\n    <tr>\n      <td>P(SM|Data)&gt;0.5 (n=975)</td>\n      <td>497 (51.0%)</td>\n      <td>29 (18\u201345)</td>\n      <td>23 (2.4%)</td>\n      <td>94 (7.4%)</td>\n    </tr>\n    <tr>\n      <td>P(SM|Data)&lt;0.5 (n=425)</td>\n      <td>198 (46.6%)</td>\n      <td>28 (16\u201343)</td>\n      <td>28 (6.6%)</td>\n      <td>61 (14.4%)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">WBC/Plt</td>\n      <td>Total (n=2220)</td>\n      <td>1,074 (48.4%)</td>\n      <td>28 (15\u201343)</td>\n      <td>78 (3.5%)</td>\n      <td>256 (11.6%)</td>\n    </tr>\n    <tr>\n      <td>P(SM|Data)&gt;0.5 (n=1279)</td>\n      <td>623 (48.7%)</td>\n      <td>29 (17\u201344)</td>\n      <td>32 (2.5%)</td>\n      <td>106 (8.4%)</td>\n    </tr>\n    <tr>\n      <td>P(SM|Data)&lt;0.5 (n=941)</td>\n      <td>451 (47.9%)</td>\n      <td>25 (13\u201340)</td>\n      <td>46 (4.9%)</td>\n      <td>150 (15.9%)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Mortality reflects in-patient deaths. Figures are absolute numbers with percentages or interquartile ranges in parentheses. P(SM|Data) reflects the probability of \u2018true\u2019 severe malaria estimated from each model (PfHRP2/Platelet count, White blood cell count/Platelet count)._\n\n### GWAS of invasive bacterial disease in Kenyan children\n\nChildren with a clinical diagnosis of severe malaria but a low probability of having \u2018true\u2019 severe malaria are thus enriched for invasive bacterial disease. Using genome-wide genotyping data from cases of culture-confirmed bacteraemia and healthy controls, we estimated SNP heritability of bacteraemia in this population to be 19% (95% CI 3\u201335%, $p=0.0084$). Despite this, our GWAS of bacteraemia failed to identify genetic correlates of bacteraemia risk beyond the sickle cell locus (Rautanen et al., 2016). Motivated by these observations, we performed a GWAS of invasive bacterial infection in Kenyan children in which we included both children with culture-confirmed bacteraemia and children with a clinical diagnosis of severe malaria. Children admitted to Kilifi County Hospital between 1 August 1998 and 30 October 2010 with community-acquired bacteraemia were recruited to the study as well as children from the severe malaria study described above. Control children were recruited from the same population between 1 August 2006 and 30 December 2010 as described in detail previously (Scott et al., 2011).\n\nFollowing quality control measures (see Materials and methods), we included 1445 cases of culture-confirmed bacteraemia, 1143 cases of severe malaria, and 2812 control children in our current analysis (Table 2, Figure 2). To account for the varying proportion of invasive bacterial disease among severe malaria cases, we applied weights to our regression analysis to reflect the greater likelihood of invasive bacterial disease among children with a low probability of \u2018true\u2019 severe malaria (sample weight, $w=1\u2212P(SM|Data)$). Where PfHRP2 concentrations were available (n=909) we used PfHRP2 and platelet count to determine $P(SM|Data)$ while we used white cell and platelet counts (n=234) in cases where they were not available. Cases with culture-proven bacteraemia and control samples were assigned a sample weight of $w=1$. Inclusion of the six major principal components (PCs) of genotyping data and genotyping platform as covariates in the model adequately controlled for confounding variation ($\\lambda=1.0208$, Figure 3\u2014figure supplement 1). In that analysis we found evidence supporting an association between risk of invasive bacterial disease in Kenyan children and seven SNPs at a single locus on chromosome 2 (peak SNP: rs183868412:T, OR = 2.13, 95% CI 1.65\u20132.74, $p=4.64\\times10^{-9}$) (Figure 3, Table 3). Fine mapping of this association identified a credible set of seven SNPs with a 95% probability of containing the causal variant (Table 3), spanning a 212 kb region: chr2:32,402,640\u201332,614,746.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig2-v2.jpg)\n\n**Figure 2.:** Recruitment of severe malaria cases (n=1143), discovery analysis bacteraemia cases (n=1445), and replication analysis bacteraemia cases (n=434) between 1998 and 2010. The time period during which control samples (n=2812) were recruited is also highlighted (black bar). Sample numbers represent children with genome-wide genotype data, who passed quality control filters and were included in this study.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-v2.jpg)\n\n**Figure 3.:** Evidence for association with invasive bacterial disease at genotyped and imputed autosomal SNPs and indels (n=14,010,600) in Kenyan children (bacteraemia cases =1445, severe malaria cases =1143, controls = 2812). Association statistics represent additive association. The red, dashed line denotes $p=5\\times10^{-8}$.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Principal components of genome-wide genotyping data in discovery samples. Individuals are colour-coded according to genotyping platform; Affymetrix SNP 6.0 in purple, Illumina Omni 2.5M in orange. (B) Principal components of genome-wide genotyping data in discovery samples. Individuals are colour-coded according to self-reported ethnicity; Chonyi in red, Giriama in blue, Kauma in green, and other in grey. (C) Quantile-quantile plot of invasive bacterial infection in Kenyan children. QQ plot of weighted logistic regression genome-wide association study (GWAS) of invasive bacterial disease in Kenyan children (2588 cases, 2812 controls).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Outlier samples identified by ABERRANT (n=22) are highlighted (orange).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Comparison of effect sizes (odds ratios and 95% confidence intervals) of the rs183868412:T association with invasive bacterial infection in the combined analysis (bacteraemia cases = 1445, severe malaria cases = 1143, controls = 2812), and restricted to cases with weights calculated with PfHRP2 plasma concentration and platelet count (Model 1; bacteraemia cases = 1445, severe malaria cases = 909, controls = 2812) or white cell count and platelet count (Model 2; bacteraemia cases = 1445, severe malaria cases = 909, controls = 2812). Effect estimates were calculated with weighted logistic regression.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Pairwise genotyping concordance between samples genotyped on both Affymetrix SNP 6.0 and Illumina Omni 2.5M platforms.\n\n**Table 2.**\n Demographics and clinical characteristics of genome-wide association study (GWAS) study samples.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th colspan=\"2\">Severe malaria subtypes</th>\n      <th colspan=\"2\">Concurrent infection</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Numbers</td>\n      <td>Sex (female)</td>\n      <td>Age (months)</td>\n      <td>SMA</td>\n      <td>CM</td>\n      <td>Malaria</td>\n      <td>Bacteraemia</td>\n      <td>Mortality</td>\n    </tr>\n    <tr>\n      <td>Bacteraemia (overall)</td>\n      <td>1445</td>\n      <td>614 (43%)</td>\n      <td>14 (5\u201334)</td>\n      <td></td>\n      <td></td>\n      <td>94 (12%)</td>\n      <td></td>\n      <td>358 (26%)</td>\n    </tr>\n    <tr>\n      <td>Acinetobacter</td>\n      <td>118</td>\n      <td>45 (38%)</td>\n      <td>13 (3\u201328)</td>\n      <td></td>\n      <td></td>\n      <td>11 (13%)</td>\n      <td></td>\n      <td>12 (10%)</td>\n    </tr>\n    <tr>\n      <td>\u03b2-Haemolytic streptococci</td>\n      <td>130</td>\n      <td>60 (46%)</td>\n      <td>5 (1\u201320)</td>\n      <td></td>\n      <td></td>\n      <td>6 (8%)</td>\n      <td></td>\n      <td>37 (30%)</td>\n    </tr>\n    <tr>\n      <td>Escherichia coli</td>\n      <td>141</td>\n      <td>58 (41%)</td>\n      <td>11 (6\u201325)</td>\n      <td></td>\n      <td></td>\n      <td>12 (15%)</td>\n      <td></td>\n      <td>45 (34%)</td>\n    </tr>\n    <tr>\n      <td>Hib</td>\n      <td>113</td>\n      <td>53 (47%)</td>\n      <td>12 (5\u201325)</td>\n      <td></td>\n      <td></td>\n      <td>3 (8%)</td>\n      <td></td>\n      <td>29 (26%)</td>\n    </tr>\n    <tr>\n      <td>NTS</td>\n      <td>159</td>\n      <td>75 (47%)</td>\n      <td>15 (9\u201326)</td>\n      <td></td>\n      <td></td>\n      <td>15 (25%)</td>\n      <td></td>\n      <td>31 (20%)</td>\n    </tr>\n    <tr>\n      <td>Streptococcus pneumoniae</td>\n      <td>390</td>\n      <td>151 (39%)</td>\n      <td>23 (9\u201361)</td>\n      <td></td>\n      <td></td>\n      <td>20 (9%)</td>\n      <td></td>\n      <td>86 (23%)</td>\n    </tr>\n    <tr>\n      <td>Staphylococcus aureus</td>\n      <td>152</td>\n      <td>64 (42.1%)</td>\n      <td>26 (9\u201388)</td>\n      <td></td>\n      <td></td>\n      <td>15 (15%)</td>\n      <td></td>\n      <td>22 (15%)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>242</td>\n      <td>110 (46%)</td>\n      <td>10 (1\u201328)</td>\n      <td></td>\n      <td></td>\n      <td>10 (8%)</td>\n      <td></td>\n      <td>96 (41%)</td>\n    </tr>\n    <tr>\n      <td>Malaria (overall)</td>\n      <td>1143</td>\n      <td>559 (49%)</td>\n      <td>27 (16\u201341)</td>\n      <td>298 (26%)</td>\n      <td>697 (61%)</td>\n      <td></td>\n      <td>40 (4%)</td>\n      <td>140 (12%)</td>\n    </tr>\n    <tr>\n      <td>P(SM|Data)&lt;0.5</td>\n      <td>375</td>\n      <td>176 (47%)</td>\n      <td>28 (17\u201342)</td>\n      <td>62 (17%)</td>\n      <td>262 (70%)</td>\n      <td></td>\n      <td>23 (6%)</td>\n      <td>62 (17%)</td>\n    </tr>\n    <tr>\n      <td>P(SM|Data)&gt;0.5</td>\n      <td>768</td>\n      <td>383 (50%)</td>\n      <td>26 (15\u201340)</td>\n      <td>236 (31%)</td>\n      <td>435 (57%)</td>\n      <td></td>\n      <td>17 (2%)</td>\n      <td>17 (2%)</td>\n    </tr>\n    <tr>\n      <td>Controls (SNP 6.0)</td>\n      <td>1895</td>\n      <td>955 (50%)</td>\n      <td rowspan=\"2\">*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Controls (Omni 2.5M)</td>\n      <td>917</td>\n      <td>451 (49.2%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_P(SM|Data) reflects the probability of \u2018true\u2019 severe malaria estimated from PfHRP2 concentration and platelet count or white blood cell count and platelet count. Blood cultures were taken from all children severe malaria at admission. *Control children were recruited between 3 and 12 months of age and have been subject to longitudinal follow-up. SMA, severe malarial anaemia; CM, cerebral malaria._\n\n**Table 3.**\n 95% credible SNP set of invasive bacterial disease association.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>SNP</th>\n      <th>Effect allele</th>\n      <th>Chr</th>\n      <th>BP</th>\n      <th>MAF</th>\n      <th>Info score</th>\n      <th>OR (95% CI)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>rs183868412</td>\n      <td>T</td>\n      <td>2</td>\n      <td>32,478,169</td>\n      <td>0.021</td>\n      <td>0.956</td>\n      <td>2.13 (1.65\u20132.74)</td>\n      <td>4.64\u00d710-9</td>\n    </tr>\n    <tr>\n      <td>rs139827594</td>\n      <td>G</td>\n      <td>2</td>\n      <td>32,402,640</td>\n      <td>0.020</td>\n      <td>0.966</td>\n      <td>2.12 (1.65\u20132.73)</td>\n      <td>4.96\u00d710-9</td>\n    </tr>\n    <tr>\n      <td>rs144257579</td>\n      <td>G</td>\n      <td>2</td>\n      <td>32,507,619</td>\n      <td>0.021</td>\n      <td>0.954</td>\n      <td>2.11 (1.64\u20132.72)</td>\n      <td>6.82\u00d710-9</td>\n    </tr>\n    <tr>\n      <td>rs145056232</td>\n      <td>C</td>\n      <td>2</td>\n      <td>32,503,024</td>\n      <td>0.021</td>\n      <td>0.955</td>\n      <td>2.11 (1.64\u20132.72)</td>\n      <td>6.86\u00d710-9</td>\n    </tr>\n    <tr>\n      <td>rs145315025</td>\n      <td>G</td>\n      <td>2</td>\n      <td>32,502,654</td>\n      <td>0.021</td>\n      <td>0.955</td>\n      <td>2.11 (1.64\u20132.72)</td>\n      <td>6.87\u00d710-9</td>\n    </tr>\n    <tr>\n      <td>rs143909151</td>\n      <td>T</td>\n      <td>2</td>\n      <td>32,531,452</td>\n      <td>0.021</td>\n      <td>0.962</td>\n      <td>2.11 (1.64\u20132.71)</td>\n      <td>8.01\u00d710-9</td>\n    </tr>\n    <tr>\n      <td>rs150430979</td>\n      <td>T</td>\n      <td>2</td>\n      <td>32,614,746</td>\n      <td>0.021</td>\n      <td>0.955</td>\n      <td>2.11 (1.64\u20132.72)</td>\n      <td>8.18\u00d710-9</td>\n    </tr>\n  </tbody>\n</table>\n\n_MAF, minor allele frequency. CI, confidence interval. Genomic coordinates are GRCh38._\n\nTo address the possibility that the observed association at this locus is driven by confounding secondary to population structure, we used ABERRANT (Bellenguez et al., 2012) to define a set of outlier samples on the first two PCs of genotyping data (n=22, Figure 3\u2014figure supplement 2). These individuals are all genotyped on the Illumina Omni 2.5M array and are both cases and controls (15 and 7, respectively). While they are predominantly individuals with less common self-reported ethnicities in our study population (19 of 22 are not Giriama, Chonyi, or Kauma), they are not representative of a single self-reported ethnicity (the most common single ethnicity in this group is Digo, n=7). Excluding these samples from the association analysis at rs183868412:T did not significantly alter the association with invasive bacterial infection ($p=2.38\\times10^{-8}$, OR = 2.05, 95% CI 1.59\u20132.64). We further estimated the effect of rs183868412:T on invasive bacterial disease risk in four subpopulations defined by self-reported ethnicity (Giriama, $n=2,501$; Chonyi, $n=1,560$; Kauma, $n=472$; Other, $n=384$). Within each subpopulation, we tested for association between genotype and case status in a weighted logistic regression model, including platform as a categorial covariate (Table 4). The minor allele frequency (MAF) at rs183868412 ranged from 0.016 (Giriama) to 0.037 (Kauma), with no evidence of differentiation between subpopulations ($F_{S\u2062T}=0.001$). We observed consistent effect sizes in both of the major study subpopulations; Giriama (OR =1.97, 95% CI 1.30\u20133.01, $p=0.0015$) and Chonyi (OR = 2.18, 95% CI 1.34\u20133.54, $p=0.0017$) samples (Table 4), which together make up 83% of the study samples. Genotype at rs183868412 was also associated with invasive bacterial disease among the less common self-reported ethnicities grouped together (OR = 2.46, 95% CI 1.01\u20135.96, $p=0.047$). Genotype was not associated with invasive bacterial disease risk in the Kauma subpopulation, however the sample size in the stratum is very limited (154 cases, 318 controls) and may simply reflect insufficient power to detect an association.\n\n**Table 4.**\n Effect of rs183868412 genotype on risk of invasive bacterial disease stratifies by self-reported ethnicity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Discovery population</th>\n      <th></th>\n      <th></th>\n      <th>Numbers</th>\n      <th>Genotypes</th>\n      <th>MAF</th>\n      <th>OR (95% CI)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">Giriama</td>\n      <td rowspan=\"4\">Cases</td>\n      <td>Overall</td>\n      <td>1232</td>\n      <td>0/56/1176</td>\n      <td>0.023</td>\n      <td rowspan=\"5\">1.97 (1.30\u20133.01)</td>\n      <td rowspan=\"5\">p=0.0015</td>\n    </tr>\n    <tr>\n      <td>Bacteraemia</td>\n      <td>558</td>\n      <td>0/38/520</td>\n      <td>0.034</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&lt;0.5</td>\n      <td>199</td>\n      <td>0/12/187</td>\n      <td>0.030</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&gt;0.5</td>\n      <td>475</td>\n      <td>0/6/469</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td></td>\n      <td>1269</td>\n      <td>0/41/1228</td>\n      <td>0.016</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Chonyi</td>\n      <td rowspan=\"4\">Cases</td>\n      <td>Overall</td>\n      <td>503</td>\n      <td>0/38/465</td>\n      <td>0.038</td>\n      <td rowspan=\"5\">2.18 (1.34\u20133.54)</td>\n      <td rowspan=\"5\">p=0.0017</td>\n    </tr>\n    <tr>\n      <td>Bacteraemia</td>\n      <td>238</td>\n      <td>0/27/211</td>\n      <td>0.057</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&lt;0.5</td>\n      <td>105</td>\n      <td>0/4/101</td>\n      <td>0.019</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&gt;0.5</td>\n      <td>160</td>\n      <td>0/7/153</td>\n      <td>0.022</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td></td>\n      <td>1057</td>\n      <td>0/43/1014</td>\n      <td>0.020</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Kauma</td>\n      <td rowspan=\"4\">Cases</td>\n      <td>Overall</td>\n      <td>154</td>\n      <td>0/8/146</td>\n      <td>0.026</td>\n      <td rowspan=\"5\">1.20 (0.50\u20132.85)</td>\n      <td rowspan=\"5\">p=0.686</td>\n    </tr>\n    <tr>\n      <td>Bacteraemia</td>\n      <td>70</td>\n      <td>0/6/64</td>\n      <td>0.043</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&lt;0.5</td>\n      <td>25</td>\n      <td>0/1/24</td>\n      <td>0.020</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&gt;0.5</td>\n      <td>59</td>\n      <td>0/1/58</td>\n      <td>0.008</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td></td>\n      <td>318</td>\n      <td>0/20/298</td>\n      <td>0.031</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Other</td>\n      <td rowspan=\"4\">Cases</td>\n      <td>Overall</td>\n      <td>219</td>\n      <td>1/16/202</td>\n      <td>0.041</td>\n      <td rowspan=\"5\">2.46 (1.01\u20135.96)</td>\n      <td rowspan=\"5\">p=0.047</td>\n    </tr>\n    <tr>\n      <td>Bacteraemia</td>\n      <td>101</td>\n      <td>1/8/92</td>\n      <td>0.050</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&lt;0.5</td>\n      <td>38</td>\n      <td>0/5/33</td>\n      <td>0.066</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&gt;0.5</td>\n      <td>80</td>\n      <td>0/3/77</td>\n      <td>0.019</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td></td>\n      <td>165</td>\n      <td>0/7/158</td>\n      <td>0.021</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Total</td>\n      <td rowspan=\"4\">Cases</td>\n      <td>Overall</td>\n      <td>2588</td>\n      <td>3/164/2421</td>\n      <td>0.033</td>\n      <td rowspan=\"5\">2.13 (1.65\u20132.74)</td>\n      <td rowspan=\"5\">p=4.64\u00d710-9</td>\n    </tr>\n    <tr>\n      <td>Bacteraemia</td>\n      <td>1445</td>\n      <td>3/125/1317</td>\n      <td>0.045</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&lt;0.5</td>\n      <td>375</td>\n      <td>0/20/355</td>\n      <td>0.027</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&gt;0.5</td>\n      <td>768</td>\n      <td>0/19/749</td>\n      <td>0.012</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td></td>\n      <td>2812</td>\n      <td>0/111/2701</td>\n      <td>0.020</td>\n    </tr>\n  </tbody>\n</table>\n\n_Self-reported ethnicity data is missing in 482 samples (480 of which are cases). Effect estimates derived with weighted logistic regression. p(SM|Data) represent the probability of \u2018true\u2019 severe malaria estimated from plasma PfHRP2 concentration and platelet count (n=909) or white blood cell count and platelet count (n=234). OR, odds ratio. MAF, minor allele frequency. CI, confidence interval._\n\nTo assess whether our analysis could be affected by our choice of model to define severe malaria case weights, we restricted our analysis to samples with data available to calculate estimates for $P\u2062(S\u2062M|D\u2062a\u2062t\u2062a)$ using both Model 1 and Model 2 (n=909 severe malaria cases). We recalculated effect estimates for the rs183868412 association with invasive bacterial disease using each model alone. The association with invasive bacterial disease at rs183868412:T is robust to the choice of the model for case weights, with effect estimates derived using Model 1 alone (OR = 2.13, 95% CI 1.65\u20132.75, $p=6.92\\times10^{-9}$) and Model 2 alone (OR = 2.05, 95% CI 1.59\u20132.65, $p=2.63\\times10^{-8}$) being entirely consistent with those seen in the main analysis (Figure 3\u2014figure supplement 3). Moreover, restricting our analysis to cases of culture-confirmed bacteraemia, the effect estimate for bacteraemia risk observed in the discovery analysis (1445 cases, 2812 controls; OR = 2.12, 95% CI 1.60\u20132.82, $p=1.97\\times10^{-7}$) is consistent with that seen in the main model.\n\nWe sought to replicate evidence of association in our discovery analysis through use of an independent case-control collection of Kenyan children with bacteraemia (n=434) and healthy controls (n=1258) conducted in the same population. The peak trait-associated variants in the discovery analysis were well imputed in the replication data (rs183868412 imputation info score $=0.84$). In that analysis, we found evidence supporting the association at chromosome 2 with invasive bacterial disease (Figure 4, Table 5: rs183868412:T, OR = 2.85, 95% CI 1.54\u20135.28, $p=8.90\\times10^{-4}$). In a fixed effects meta-analysis, rs183868412:T was strongly associated with risk of invasive bacterial disease in Kenyan children: OR = 2.22, 95% CI 1.76\u20132.80, $p=2.35\\times10^{-11}$. That association was driven by children with culture-confirmed bacteraemia and critically unwell children with malaria parasites, but a low probability of \u2018true\u2019 severe malaria. In a stratified analysis (Figure 4, Table 5), rs183868412 was associated with culture-confirmed bacteraemia (OR = 2.12, 95% CI 1.60\u20132.82, $p=1.94\\times10^{-7}$) and critical illness with parasitaemia and with a low probability of \u2018true\u2019 severe malaria (P(SM|Data)<0.5: OR = 2.37, 95% CI 1.27\u20134.43, $p=6.82\\times10^{-3}$), but was not associated with risk of critical illness with a high probability of \u2018true\u2019 severe malaria (P(SM|Data)>0.5: $p=0.823$).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig4-v2.jpg)\n\n**Figure 4.:** (A) Regional association plot of invasive bacterial disease association at the BIRC6 locus in the discovery and replication analyses. SNPs are coloured according to linkage disequilibrium to rs183868412. Genomic coordinates are GRCh38. (B) Distribution of \u2018true\u2019 severe malaria probabilities among malaria cases estimated from plasma PfHRP2 concentration and platelet count (n=909) and white blood cell count and platelet count (n=234). (C) Odds ratios and 95% confidence intervals of rs183868412 association with disease stratified by malaria cases with high (p>0.5, red) and low (p<0.5, orange) probabilities of \u2018true\u2019 severe malaria and culture-proven invasive bacterial disease (blue). P(SM|Data) represents the probability of \u2018true\u2019 severe malaria estimated from plasma PfHRP2 concentration and platelet count (n=909) or white blood cell count and platelet count (n=234). Effect estimates were calculated with multinomial logisitic regression (SM - P.high, SM - P.low, Bacteraemia - disc) and logistic regression (Bacteraemia - rep).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Individuals are colour-coded according to self-reported ethnicity; Chonyi in red, Giriama in blue, Kauma in green, and other in grey.\n\n**Table 5.**\n Effect of rs183868412 genotype on risk of invasive bacterial disease in Kenyan children.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th>Numbers</th>\n      <th>Genotypes</th>\n      <th>MAF</th>\n      <th>OR (95% CI)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">Discovery</td>\n      <td rowspan=\"4\">Cases</td>\n      <td>Overall</td>\n      <td>2588</td>\n      <td>3/164/2421</td>\n      <td>0.033</td>\n      <td>2.13 (1.65\u20132.74)</td>\n      <td>p=4.64\u00d710-9</td>\n    </tr>\n    <tr>\n      <td>Bacteraemia*</td>\n      <td>1445</td>\n      <td>3/125/1317</td>\n      <td>0.045</td>\n      <td>2.12 (1.60\u20132.82)</td>\n      <td>p=1.94\u00d710-7</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&lt;0.5*</td>\n      <td>375</td>\n      <td>0/20/355</td>\n      <td>0.027</td>\n      <td>2.37 (1.27\u20134.43)</td>\n      <td>p=6.82\u00d710-3</td>\n    </tr>\n    <tr>\n      <td>SM \u2212 P(SM|Data)&gt;0.5*</td>\n      <td>768</td>\n      <td>0/19/749</td>\n      <td>0.012</td>\n      <td>1.07 (0.57\u20132.01)</td>\n      <td>p=0.823</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td></td>\n      <td>2812</td>\n      <td>0/111/2701</td>\n      <td>0.020</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Replication</td>\n      <td>Cases</td>\n      <td></td>\n      <td>434</td>\n      <td>0/24/410</td>\n      <td>0.028</td>\n      <td>2.85 (1.54\u20135.28)</td>\n      <td>p=8.90\u00d710-4</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td></td>\n      <td>1258</td>\n      <td>0/28/1230</td>\n      <td>0.011</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Meta-analysis</td>\n      <td>Cases</td>\n      <td></td>\n      <td>3022</td>\n      <td>3/188/2831</td>\n      <td>0.032</td>\n      <td>2.23 (1.76\u20132.80)</td>\n      <td>p=2.35\u00d710-11</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td></td>\n      <td>4070</td>\n      <td>0/139/3931</td>\n      <td>0.017</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Estimates derived from multinomial logistic regression model. P(SM|Data) represent the probability of \u2018true\u2019 severe malaria estimated from plasma PfHRP2 concentration and platelet count (n=909) or white blood cell count and platelet count (n=234). SM, severe malaria. MAF, minor allele frequency. CI, confidence interval._\n\n### rs183868412 is associated with risk of invasive bacterial disease secondary to diverse pathogens and is independent of malaria\n\nPrevious data describing the genetic risk of invasive bacterial disease in this population have identified pathogen-specific effects. To better-understand the range of pathogens to which genetic variation at BIRC6 modifies risk, we estimated the effect of rs183868412 on the risk of bacteraemia caused by the seven most common causative pathogens within this population (Figure 5A). In that analysis, the data best-supported a model in which genotype increases risk of bacteraemia caused by a broad range of pathogens, including bacteraemia secondary to pneumococcus, nontyphoidal Salmonellae, Escherichia coli, \u03b2-haemolytic streptococci, Staphylococcus aureus, and other less common pathogens grouped as a single stratum (log10 Bayes factor = 4.72). Genotype at rs183868412 similarly modified risk of bacteraemia in the neonatal period and in older children (log10 Bayes factor = 2.70, Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig5-v2.jpg)\n\n**Figure 5.:** Odds ratios and 95% confidence intervals of rs183868412 association with invasive bacterial disease stratified by pathogen (A), neonatal and non-neonatal sepsis (B), and bacteraemia with and without malaria parasitaemia (C). Odds ratios and 95% confidence intervals of rs183868412 association with invasive bacterial disease stratified by year (D), compared to age-standardised, annual malaria parasite prevalence in Kilifi, Kenya, as estimated from parasite prevalence among trauma admissions (E).We calculated effect estimates using multinomial logistic regression. We compared models of association across strata using a Bayesian approach (see Materials and methods). Strata associated with rs183868412 genotype in the most likely model in each analysis are highlighted in blue.\n\nMalaria infection results in increased risk of invasive bacterial disease secondary to a broad range of pathogens (Scott et al., 2011), and genetic determinants of malaria risk (e.g. sickle cell trait) modify risk of bacterial infection in malaria-endemic settings (Scott et al., 2011). The observation that, among children with a clinical diagnosis of severe malaria, risk of disease is only modified by rs183868412 in children with a low probability that their disease represents \u2018true\u2019 severe malaria (Figure 5) suggests that the effect of genetic variation at BIRC6 on invasive bacterial disease risk operates independently of malaria. In keeping with this, the data best-supports an effect of rs183868412 genotype on bacteraemia risk in children both with and without concomitant parasitaemia (log10 Bayes factor = 2.73, Figure 5C). In addition, unlike sickle cell trait (Scott et al., 2011), the increased risk of invasive bacterial infection conferred by rs183868412:T carriage in the study setting is stable across a period of declining malaria prevalence (Bayes factor = 8.7, Figure 5D).\n\n### Evidence of selection pressure and pleiotropy at rs183868412\n\nCommon genetic variation associated with a twofold increased risk of invasive bacterial infection in children, in particular across a broad range of pathogens, will be subject to considerable negative selection pressure. The derived allele rs183868412:T, associated with increased risk of invasive bacterial disease in Kenyan children, is absent in non-African populations (https://gnomad.broadinstitute.org). Within Africa, rs183868412:T is present in all nine African populations included in the MalariaGEN consortium project (Band, 2019; Table 6), MAFs ranging from 0.011 in The Gambia to 0.034 in Malawi. There is no evidence for within-Africa differentiation at rs183868412 ($p=0.601$) providing no support for a selective sweep at the locus. We further evaluated evidence for recent directional selection pressure, examining integrated haplotype scores (iHS) (Voight et al., 2006) in seven African populations included in the 1000 Genomes Project. In those data, there is no evidence to support recent selection at the locus (minimum rank $p=0.07$, maximum iHS = 1.3). Finally, to understand whether variation at this locus may be maintained in populations through beneficial effects on other traits, we examined evidence for pleiotropy at rs183868412 in a meta-analysis of GWAS data (Gurdasani et al., 2019) of 33 cardio-metabolic traits from Uganda, Ghana, Nigeria, South Africa, and Kenya (sample size ranging from 2671 to 14,126 individuals). In keeping with the MalariaGEN consortium project data, MAFs at rs183868412 range from 0.015 to 0.028. In these data there is no evidence for pleiotropy at the locus, with no evidence for an effect of rs183868412 on any of the 33 traits tested (minimum meta-analysis $p=0.078$). The explanation for the persistence of this polymorphism, therefore, remains an open question.\n\n**Table 6.**\n rs183868412 frequencies in Africa.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Population</th>\n      <th>Number</th>\n      <th>MAF</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gambia</td>\n      <td>2605</td>\n      <td>0.011</td>\n    </tr>\n    <tr>\n      <td>Mali</td>\n      <td>183</td>\n      <td>0.021</td>\n    </tr>\n    <tr>\n      <td>Burkina Faso</td>\n      <td>596</td>\n      <td>0.009</td>\n    </tr>\n    <tr>\n      <td>Ghana</td>\n      <td>320</td>\n      <td>0.014</td>\n    </tr>\n    <tr>\n      <td>Nigeria</td>\n      <td>22</td>\n      <td>0.024</td>\n    </tr>\n    <tr>\n      <td>Cameroon</td>\n      <td>685</td>\n      <td>0.031</td>\n    </tr>\n    <tr>\n      <td>Malawi</td>\n      <td>1317</td>\n      <td>0.034</td>\n    </tr>\n    <tr>\n      <td>Tanzania</td>\n      <td>402</td>\n      <td>0.028</td>\n    </tr>\n    <tr>\n      <td>Kenya</td>\n      <td>1681</td>\n      <td>0.017</td>\n    </tr>\n  </tbody>\n</table>\n\n_Numbers reflect healthy control samples. MAF, minor allele frequency._\n\n### rs183868412 is associated with alternative splicing of BIRC6 in stimulated monocytes\n\nTrait-associated genetic variation identified by GWAS is highly enriched for regulatory variation. The African specificity of the trait-associated variation identified here makes annotation with publicly available regulatory mapping data challenging. To investigate the regulatory function of rs183868412 in immune cells in African populations, we used eQTL Catalogue (https://www.ebi.ac.uk/eqtl) mapping data (Kerimov et al., 2021) from 100 African ancestry individuals in primary monocytes with and without innate stimulation (Quach et al., 2016); influenza A virus, LPS, Pam3CSK4 (synthetic lipoprotein and TLR1/2 agonist) and R848 (a TLR7/8 agonist). In this dataset, rs183868412 is well imputed ($r^{2}=0.998$), with an MAF of 0.05 (10 heterozygous individuals). We found no evidence for a regulatory effect of rs183868412 at the gene level in monocytes regardless of stimulation. We did, however, observe an effect of rs183868412 genotype on expression of a 12 bp BIRC6 exonic sequence (chr2:32,453,943\u201332,453,954, $p=1.18\\times10^{-5}$), with evidence for colocalisation of this eQTL with our GWAS signal (posterior probability of colocalisation, PP4 = 0.951, Figure 6). This effect was only observed following stimulation with Pam3CSK4 (Figure 6), with the bacteraemia risk allele, rs183868412:T, being associated with reduced expression of this sequence. That 12 bp sequence is associated with an alternative splicing event that results in extension of a BIRC6 exon. The 23rd exon (ENSE00001189810, chr2:32,453,808\u201332,453,942) of the canonical BIRC6 transcript, ENST00000421745.6, is 135 bp long and terminates immediately before the 12 bp sequence associated with rs183868412:T genotype. The 22nd exon (ENSE00003835010, chr2:32,453,808\u201332,453,942) of an alternative BIRC6 transcript, ENST00000648282.1, is 147 bp long, having the same start site but including the 12 bp sequence at its 3\u2019 end. Thus, increased risk of invasive bacterial disease may be associated with decreased expression of an alternative BIRC6 transcript in TLR1/2-stimulated monocytes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig6-v2.jpg)\n\n**Figure 6.:** (A) Betas and 95% confidence intervals of rs183868412 association with expression of a 12 bp BIRC6 exonic sequence (chr2:32,453,943\u201332,453,954) in monocytes. Monocytes are naive or stimulated with LPS (lipopolysaccharide), IAV (influenza A virus), Pam3CSK4, and R848. (B) Colocalisation of the BIRC6 exon eQTL in Pam3CSK4-stimulated monocytes colocalises with the risk locus for invasive bacterial disease ($PP4=0.951$). SNPs are coloured according to linkage disequilibrium to rs183868412. Effect estimates are calculated by linear regression.\n\n## Discussion\n\nIn this study, we have leveraged the close relationship between P. falciparum infection and bacteraemia in African children (Scott et al., 2011) to perform a GWAS of invasive bacterial infection in 5400 Kenyan children. We approached this by defining the probability with which each critically unwell child with a clinical diagnosis of severe malaria has a disease process directly mediated by malaria, that is \u2018true\u2019 severe malaria. We hypothesised that critically unwell children, with a low probability of having \u2018true\u2019 severe malaria, are enriched for invasive bacterial infections. We explored the validity of this approach, demonstrating that children with a low probability of \u2018true\u2019 severe malaria were indeed enriched for culture-proven bacteraemia and were at a higher risk of death than children with a higher probability. We therefore performed a GWAS weighting cases according to their likelihood of invasive bacterial disease. In doing so, we have identified and validated BIRC6 as a novel genetic susceptibility locus for all-cause invasive bacterial disease in Kenyan children.\n\nThe disease-associated locus modifies risk of invasive bacterial disease caused by a broad range of pathogens, including \u03b2-haemolytic streptococci, E. coli, nontyphoidal Salmonella, Streptococcus pneumoniae, and S. aureus. Moreover it modifies risk of invasive infection in both the neonatal period and in older children. Furthermore, in contrast to the rs334 HBB A>T mutation (Scott et al., 2011), rs183868412 modifies risk of invasive bacterial disease in a manner independent of malaria, with rs183868412:T carriage increasing risk of disease across a period of falling malaria transmission and in children with and without concurrent parasitaemia.\n\nWe further demonstrate that rs183868412 mediates risk of invasive bacterial disease through the modification of BIRC6 splicing in Pam3CSK4-stimulated monocytes. BIRC6 (Baculovirus inhibitor of apoptosis protein repeat containing 6), also known as BRUCE (BIR repeat containing ubiquitin-conjugating enzyme), encodes a large member of the inhibitor of apoptosis protein (IAP) family (Hauser et al., 1998). Members of the IAP family bind to cognate caspases, inhibiting their activity, and thereby cell death, through occlusion of their active site (Verhagen et al., 2001). A proportion of IAPs also contain an E3 ubiquitin ligase allowing both direct inhibition of caspases and targeting of caspases for proteasomal degradation (Verhagen et al., 2001). BIRC6 contains both inhibitor of apoptosis domains and an E2/E3 ubiquitin ligase, which function to inhibit apoptosis in response to a variety of stimuli, both by interaction with and degradation of caspase-9, but also through the ubiquitination and degradation of SMAC, an IAP antagonist (Hao et al., 2004; Bartke et al., 2004). BIRC6 also regulates autophagosome-lysosome fusion (Ebner et al., 2018), and ubiquitinates (and targets for degradation) LC3, a key effector of autophagosome formation. Thus, BIRC6 also acts as a negative regulator of autophagy (Jia and Bonifacino, 2019).\n\nIt is highly plausible that BIRC6 could determine susceptibility to invasive infection through either its regulation of apoptosis or autophagy (or both). Sepsis induces marked changes in apoptosis across a range of immune cells (Hotchkiss and Nicholson, 2006). There is markedly enhanced apoptosis in both dendritic cells (Hotchkiss et al., 2002) and in lymphocytes. Enhanced lymphocyte apoptosis is most striking in B cells and CD4+ T cells (Hotchkiss et al., 2001) which, at least in part, is mediated by caspase-9. The consequent lymphopoenia is correlated with both severity of sepsis and outcome (Le Tulzo et al., 2002). In addition to the direct effects of immune cell loss on the innate and adaptive immune responses to invasive infection, sepsis-induced apoptosis induces immune cell dysfunction, phagocytosis of apoptotic cells resulting in reduction in pro-inflammatory cytokine production, and cross-presentation of antigen from apoptotic cells to adaptive immune cells (Albert, 2004). In keeping with a role for regulators of apoptosis in the pathogenesis of sepsis, members of the IAP family, including NAIP/BIRC1 and BIRC3, are downregulated in immune cells in patients with sepsis, as is the BIRC6 ubiquitination target SMAC (Hoogerwerf et al., 2010). Autophagy contributes to the direct removal of intracellular pathogens and, through the degradation of invading organisms in autophagosomes, directs antigen presentation and pro-inflammatory cytokine secretion (Deretic et al., 2013). As above, BIRC6 regulates autophagy through its interaction with LC3, and overexpression of LC3B limits inflammation and tissue injury in a mouse model of sepsis (Lo et al., 2013).\n\nIn keeping with a role for BIRC6 in autophagy and apoptosis in sepsis, our data identify a role for genetic variation at BIRC6 in determining risk of invasive infection secondary to a broad range of bacteria. This is in contrast to previously published data describing susceptibility to invasive bacterial infection, which has highlighted a prominent role for genetic risk factors that are specific to single pathogens (Davila et al., 2010; Gilchrist et al., 2018; Rautanen et al., 2016). In this study, the derived allele (T) at rs183868412 was associated with increased risk of bacteraemia secondary to gram-positive (\u03b2-haemolytic streptococci, S. pneumoniae, and S. aureus) and gram-negative (E. coli, nontyphoidal Salmonella) pathogens, including intracellular and extracellular bacteria, and enteric and respiratory pathogens. Moreover, rs183868412 modified risk of bacteraemia in both the neonatal period, when infection is likely to be maternally derived, and in older children, when sources of community acquired infection will be more diverse. This modulation of invasive bacterial disease risk, despite diverse sources and routes of infection and diverse mechanisms of invasion, suggests a mechanism in which genetic variation at BIRC6 modifies risk of invasive infection downstream of initial mechanisms of infection and invasion. In an interesting parallel to this, common genetic variation at another ubiquitin-conjugating enzyme, UBE2U, has been shown to modify outcome in meningitis secondary to diverse pathogens in individuals of European ancestry (Lees et al., 2019).\n\nOur study has some important limitations. The African-specific nature of the trait-associated variation identified here limits our ability to comprehensively interrogate the effect of that variation in immune cells. The eQTL mapping data that we utilise here (Quach et al., 2016) is limited in that it allows us only to consider a single immune cell type. It is also important to note that there are relatively few African-ancestry individuals in the eQTL mapping data we utilise here, and the splicing signal at BIRC6 is based on only 10 individuals heterozygous for rs183868412:T. A more complete understanding of the role played by genetic variation at BIRC6 plays in the pathogenesis of sepsis in African children will require more detailed expression and functional studies in African populations. In addition, there is a paucity of large-scale genetic association studies performed in African populations. The African-specific nature of the variation identified in our study therefore limits our ability to explore pleiotropic effects at this locus. Allied to this, the low MAF of rs183868412 will result in very limited power to detect selection events at the locus. Larger and richer datasets detailing genetic variation in African populations will be required to explore the wider phenotypic consequences of variation at BIRC6. Our study uses plasma PfHRP2 concentrations to help identify children at low risk of \u2018true\u2019 severe malaria. Given the increasing frequency of pfhrp2 and pfhrp3 deletions in many settings, including in Africa (Agaba et al., 2019; Feleke et al., 2021; Gamboa et al., 2010), an understanding of the local prevalence of pfhrp2/3 deletions will be important in considering how to translate this model to other settings.\n\nTaken together, our data identify a role for BIRC6 in the pathogenesis of invasive bacterial infections in Kenyan children. By maximising our available sample size to include children with a high likelihood of invasive bacterial infection, but without culture-confirmed infection, we facilitate novel variant discovery and reveal a common genetic architecture of invasive bacterial disease secondary to diverse pathogens. In doing so, we expand our understanding of the biology of invasive infection in African children. In particular, these data inform our understanding of the biology shared by diverse bacterial infections causing a common clinical syndrome: sepsis.\n\n## Materials and methods\n\n### Study samples\n\nRecruitment of the severe malaria cases, bacteraemia cases, and healthy controls have been described in detail elsewhere (Ndila et al., 2018; Rautanen et al., 2016). In brief, children under 14 years admitted to the high dependency ward of Kilifi County Hospital with a clinical diagnosis of severe malaria, defined as P. falciparum parasites on blood film and at least one of reduced Blantyre Coma Score, severe anaemia (Hb < 50 g/L), evidence of respiratory distress, hypoglycaemia, or hyperparasitaemia were eligible for recruitment as cases of severe malaria. During the study period, all children admitted to hospital, with the exception of elective surgical admissions and minor trauma, had a blood sample taken for bacterial culture (BACTEC 9050 instrument, Becton Dickinson, Franklin Lakes, NJ). Children under 14 years in whom a pathogenic organism was identified in blood were eligible for study inclusion (Bacillus species, coryneform bacteria, coagulase-negative staphylococci, Staphylococcus saprophyticus, and Viridans group streptococci were considered contaminants). Control children were recruited between 3 and 12 months of age from consecutive live births from the population which Kilifi County Hospital serves. Control children have been subject to longitudinal follow-up. Following explanation of the study, written informed consent was obtained from the parent or guardian of each child included in the study. Ethical approval was obtained from the Kenya Medical Research Institute (KEMRI) National Scientific Steering and Research Committees (approval numbers: SCC1192 and SCC967) and the Oxford Tropical Research Ethics Committee (OxTREC, approval numbers: 020\u201306 and 014\u201301).\n\n### Models to define the probability of \u2018true\u2019 severe malaria\n\nAmong cases of severe malaria recruited to the study, we used probabilistic models to assign a probability of that child\u2019s clinical presentation being mediated by parasite sequestration, that is \u2018true\u2019 severe malaria, as described previously (Watson et al., 2021a; Watson et al., 2021b). Where available (n=1400), we used platelet counts and PfHRP2 concentrations to derive the probabilistic model. In cases where PfHRP2 concentration was not measured (n=800), we used white blood cell counts and platelet counts as input data to the model.\n\nFor both models (Model 1: PfHRP2/platelet counts; Model 2: platelet counts/white blood cell counts), the probabilities of \u2018true\u2019 severe malaria were derived by fitting parametric latent class models. These assumed that each patient had a binary latent state (true severe malaria versus not severe malaria). For Model 1, we assumed that in each latent state the data were distributed as a single bivariate normal distribution. For Model 2, the data did not fit well to a two-component bivariate normal (white blood cell counts have much weaker diagnostic value) so we assumed that the data had bivariate Student\u2019s t-distribution for the severe malaria state, and a flexible mixture of bivariates for the not severe malaria state.\n\n### Genotyping and imputation\n\nFor the discovery analysis, we utilised genotypes generated as part of GWASs of severe malaria (Band, 2019) and bacteraemia (Rautanen et al., 2016) previously reported in this population. Bacteraemia cases and controls were genotyped using the Affymetrix SNP 6.0 array and the severe malaria samples using the Illumina Omni 2.5M platform. SNP and sample quality control for both datasets are highly analogous, and have been described previously (Band, 2019; Rautanen et al., 2016). In brief, MalariaGEN SNP QC excluded poorly genotyped SNPs using the following metrics; SNP missingness >2.5%, MAF <1%, Hardy-Weinberg equilibrium (HWE) $p<1\\times10^{\u221220}$, plate effect $p<1\\times10^{\u22123}$, and a recall test quantifying changes in genotype following a re-clustering process $p<1\\times10^{\u22126}$. For Affymetrix-genotyped samples, SNP QC excluded poorly performing SNPs using the following metrics: SNP missingness > 2%, MAF < 1%, genotype probability (info) < 0.975, plate effect $p<1\\times10^{\u22126}$, and HWE $p<1\\times10^{\u221220}$. Sample QC on both platforms excluded sample outliers with respect to channel intensity, missingness, heterozygosity, population outliers, and duplicated samples (relatedness coefficient >0.75). In addition, for Affymetrix-genotyped samples, samples were excluded in cases of discordant sex as recorded in the clinical record and imputed from mean intensities from X and Y chromosome markers.\n\nTo facilitate combining datasets, we applied an additional set of cross-platform QC procedures. We defined a shared subset of SNPs genotyped and passing SNP QC on both platforms (n=167,108), observing high levels of genotype concordance (median concordance 0.993, Figure 3\u2014figure supplement 4) among the subset of samples genotyped on both platforms (n=1365). We used this shared SNP set to compute relatedness estimates and PCs in PLINK v1.90 (Chang et al., 2015). The major six PCs of shared genotypes differentiate self-reported ethnicity (Figure 3\u2014figure supplement 1) and are non-differential with respect to genotyping platform (Figure 3\u2014figure supplement 1). To harmonise QC across both platforms, we excluded MalariaGEN samples with discordant clinical and genetic sex (n=136). We further excluded one of duplicate or related sample pairs (relatedness coefficient >0.2) across platforms, retaining case samples where possible and excluding equal numbers of control samples genotyped on each platform (n=1973). Following QC, genotypes were phased using SHAPEIT2 (Delaneau et al., 2011), and untyped genotypes imputed genome-wide using IMPUTE2 (v2.3.2) (Howie et al., 2011; Howie et al., 2009) with 1000 Genomes Phase III as a reference panel. Following imputation, we excluded SNPs with imputation info scores < 0.5, MAF < 1% and HWE $p<1\\times10^{\u22125}$, applying each threshold for each platform and overall. Following SNP and sample QC, 14,010,600 autosomal SNPs and indels from 5400 samples (1445 bacteraemia cases, 1143 severe malaria cases, and 2812 control samples: 917 Illumina genotyped and 1895 Affymetrix genotyped) were taken forward as a combined discovery dataset for association analysis. Following QC and association analysis, we identified a further set of population outliers using ABERRANT (Bellenguez et al., 2012) for downstream sensitivity analysis.\n\n### Estimation of SNP heritability\n\nTo estimate SNP heritability of bacteraemia in this population, we used genome-wide genotyping data from culture-confirmed bacteraemia cases and healthy controls genotyped with the Affymetrix SNP 6.0 array. For this analysis we used directly typed markers passing quality control as described above (n = 783,094). In addition to the sample quality control applied above, we additionally excluded one individual from each sample pair with relatedness coefficient >0.05, leaving a final sample size of 2559 (1042 cases, 1517 controls). We estimated SNP heritability using GCTA-GREML (Yang et al., 2011). For transformation of the heritability estimate to the liability scale, we assumed a population prevalence for bacteraemia of 2% in this setting.\n\n### Association analysis and fine mapping\n\nIn the discovery analysis, we tested for association between genotype at each variant passing QC and invasive bacterial disease by logistic regression in an additive linear model. We used weighted logistic regression to reflect the probability of each case sample being a \u2018true\u2019 case of invasive bacterial infection. Cases of culture-confirmed bacteraemia were assigned a weight of 1, whereas cases of severe malaria were assigned weights of 1 \u2212 P(SM|Data), re-weighting the contribution of a case to the log-likelihood according to its probability of representing invasive bacterial infection. Control samples were assigned a weight of 1. Our regression thus assumes that the lower the probability of \u2018true\u2019 severe malaria, the greater the probability that a case represents culture-negative invasive bacterial disease. To control for confounding variation, we included the six major PCs of genotyping data and genotyping platform as covariates in the model. Weighted logistic regression was implemented using the glm function in R. As described previously (Watson et al., 2021a), standard errors were transformed to reflect the reduced effective sample size resulting from inclusion of sample weights in the model. We considered $p<5\\times10^{\u22128}$ to be significant.\n\nWe used a Bayesian approach to identify a set of SNPs with 95% probability of containing the causal variant at the trait-associated locus. Approximate Bayes factors (Wakefield, 2009) were calculated for each SNP in the region (a 200 kb surrounding rs183868412) with a prior distribution of $N(0,0.2^{2})$. All SNPs were considered equally likely to be the causal variant a priori. A set of SNPs with 95% probability of containing the causal SNP was defined as the smallest number of SNPs for which the summed posterior probabilities exceed 0.95.\n\n### Replication samples and analysis\n\nTo replicate our findings from the discovery analysis, we used a second sample set, recruited from the same population as the discovery samples. Replication case samples were cases of bacteraemia only, and did not include cases of severe malaria without culture-confirmed bacterial infection. Case samples were recruited between 1 August 1998 and 30 October 2010. As for the discovery case samples, children under 14 years with a bacterial pathogen isolated from blood on admission to hospital were eligible for recruitment to the study. As above, control samples were recruited as part of a birth cohort from the same population, with children recruited between the ages of 3 and 12 months. Genotyping and QC procedures for these samples have been described previously. In brief, study samples were genotyped using the Immunochip Consortium (Cortes and Brown, 2011) array (Illumina). Sample QC was performed as for the discovery samples (above), with duplicate control samples (samples common to MalariaGEN and Immunochip controls, n=78) being removed from the replication set. As above, relatedness estimates and PCs were computed in PLINK v1.90 (Chang et al., 2015; Figure 4\u2014figure supplement 1). SNP QC excluded the following variants: SNP missingness > 1%, MAF < 1%, and HWE $p<1\\times10^{\u221210}$. Following QC, 143,000 genotyped variants in 434 cases and 1258 control samples were taken forward for imputation. As above, imputation was performed with SHAPEIT2 (Delaneau et al., 2011) and IMPUTE2 (v2.3.2) (Howie et al., 2011; Howie et al., 2009) with 1000 Genomes Phase III as a reference panel.\n\nFollowing imputation, we further excluded poorly imputed (imputation info score < 0.5) and rare (MAF < 1%) variants and variants with HWE $p<1\\times10^{\u221210}$. At variants associated with invasive bacterial disease ($p<5\\times10^{\u22128}$) in the discovery analysis, we tested for association with bacteraemia case-control status using logistic regression in an additive model in SNPTEST v2.5.6 (Marchini et al., 2007). To exclude confounding variation, we included the major six PCs of genotyping data in the model. We considered evidence of association with bacteraemia in the replication samples with $p<0.05$ with the same direction of effect as in the discovery analysis to be significant.\n\n### Bayesian comparison of models of association\n\nAt the locus of interest, we used multinomial logistic regression, implemented in SNPTEST v2.5.6 (Marchini et al., 2007) to estimate the additive effect of genotype on risk of bacteraemia stratified by pathogen, bacteraemia in the neonatal and non-neonatal periods, bacteraemia with and without P. falciparum parasitaemia, and bacteraemia presenting at different time periods across a period of declining malaria transmission intensity. For these analyses we used only samples with culture-confirmed bacteraemia. In each case we used control status as the baseline stratum, and included the six major PCs of genotyping data to control for confounding variation as above.\n\nFor the pathogen-stratified analysis, we defined eight case strata among the discovery cases, one for each of the seven most commonly isolated organisms (Acinetobacter, n=118; \u03b2-haemolytic streptococci, n=130; E. coli, n=141; Haemophilus influenzae type b, n=113; nontyphoidal Salmonella, n=159; pneumococci, n=390; S. aureus, n=152) and one stratum for the remaining other organisms (n=242). For the neonatal/non-neonatal disease analysis, we stratified cases as presenting in the first 28 days of life (n=195) or beyond that (n=1245). For the analysis comparing bacteraemia with and without malaria, we stratified cases with (n=204) and without (n=1236) P. falciparum on their admission blood film. For each of these analysis, case strata were compared to Affymetrix-genotyped discovery control samples (n=1895) as a baseline stratum.\n\nFor the analysis stratified across year of admission, we defined case strata by grouping into six time periods according to their date of admission: 1998\u20132000 (n=498), 2001\u20132002 (n=349), 2003\u20132004 (n=467), 2005\u20132006 (n=310), 2007\u20132008 (n=237), 2009\u20132010 (n=111). For this analysis we used both discovery (Affymetrix) and replication (Immunochip) case and control samples. This allowed better coverage of the years later in the study, which were underrepresented in the discovery samples (the discovery median admission year is 2003, cf 2005 for the replication samples). In that analysis we used multinomial logistic regression in each cohort to estimate stratum-specific effects, combining these results in a fixed effects meta-analysis using BINGWA (Malaria Genomic Epidemiology Network et al., 2015).\n\nWe then compared models of association using a Bayesian approach (Rautanen et al., 2016), considering the following models:\n\nAdditional models consider each possible combination of a fixed effect size for associated strata and no association at other strata. For each model, we calculated approximate Bayes factors (Wakefield, 2009) and posterior probabilities, assuming each model to be equally likely a priori. Statistical analysis was performed in R.\n\n### eQTL mapping and colocalisation analysis\n\nWe used the eQTL Catalogue (Kerimov et al., 2021) mapping pipeline (https://github.com/eQTL-Catalogue/, Kerimov, 2022) to map eQTL in naive and stimulated monocytes (Quach et al., 2016). These data include bulk RNA-seq and genome-wide genotyping data from naive and stimulated primary monocytes isolated from individuals of European (n=100) and African (n=100) ancestry (Quach et al., 2016). Given the African-specific nature of variation at rs183868412, we performed eQTL mapping in this dataset restricting our analysis to samples of African ancestry. The eQTL Catalogue mapping pipeline has been described previously (Kerimov et al., 2021). In brief, sample genotypes (Illumina HumanOmni5-Quad genotyped) were pre-phased with Eagle v.2.4.1 (Loh et al., 2016) and genotypes imputed with Minimac4 v.1.0.2 (Das et al., 2016) using 1000 Genomes Phase III as a reference panel. Gene expression, exon expression, transcript usage, and transcriptional event usage were quantified from RNA-seq data using HISAT2 v.2.1.0 (Kim et al., 2019), DEXSeq v.1.18.4 (Anders et al., 2012), and Salmon v.0.13.1 (Patro et al., 2017). Nominal mapping in cis was performed for each phenotype for variants within a 1 Mb window of the start of each gene using FastQTL (Ongen et al., 2016), including six PCs of genotyping and phenotype data as covariates in the model.\n\nWe then used the R package coloc v5.1.0 (Giambartolomei et al., 2014) to identify evidence of causal variants shared by our bacterial disease-associated locus of interest and regulatory genetic variation identified in our eQTL mapping data. Coloc adopts a Bayesian approach to compare evidence for independent or shared association signals for two traits at a given genetic locus. We used the coloc.susie() command to allow colocalisation of multiple independent signals at a single locus for each trait. We considered evidence for colocalisation for each gene and exon within a 250 kb window of the peak association (rs183868412). We considered a posterior probability >0.8 supporting a shared causal locus to be significant.\n",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "eebf77a1-9ba0-4241-bfd6-172226dcf9f0",
+      "submission_id": "491e95b0-dd85-464e-b8d3-215d5828895f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alexander Young, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77461.sa0](https://doi.org/10.7554/eLife.77461.sa0)\n\nGilchrist et al. present evidence that a genetic variant in the BIRC6 gene increases the risk of invasive bacterial infection. This paper will be of interest to researchers working in areas relating to invasive bacterial infections, malaria, sepsis, and immunogenetics. The authors find evidence that the risk allele affects the splicing of BIRC6 in stimulated monocytes and that this may explain the association signal they found. Further investigations in African ancestry samples will be needed to elucidate the mechanism.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alexander Young, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77461.sa1](https://doi.org/10.7554/eLife.77461.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"BIRC6 modifies risk of invasive bacterial infection in Kenyan children\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Alexander Young as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Bavesh Kana as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Diederik van de Beek (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe manuscript describes the identification of a novel risk locus for bacteraemia. The risk locus identified is biologically interesting and the reviewers generally thought that the methods used were appropriate and conclusions supported by the data and analyses. However, the reviewers raised some points that need addressing:\n\n1) Please answer reviewer #1's questions pertaining to population stratification\n\n2) In relation to reviewer #3's comments, it would help readers of the manuscript to include a figure/table giving an overview of the cohorts used in the manuscript: what data was collected and when.\n\n3) Provide a more detailed justification for using model 2 over model 1, or provide sensitivity analyses comparing results using the two models.\n\n4) Comment on whether there is evidence for selection on the risk variant\n\nPlease also address other comments related to improving clarity and presentation.\n\nReviewer #1 (Recommendations for the authors):\n\nI have some questions about the controls for the population structure that were implemented.\n\nLooking at Figure 2 Supplements 2 and 3, it looks to me like PC1 is driven by the presence of ~20 individuals with 'other' ethnicity genotyped on Affymetrix. Do the authors know what is atypical about the ancestry of these samples? Could the authors perform a sensitivity analysis where individuals with outlying values on PC1 are removed from the discovery sample?\n\nWhy were 6 principal components used for the discovery sample but only 4 for the replication sample?\n\nTo give further confidence that the main result is not a result of population stratification, it would be helpful to see a table that gives the case-control counts as well as the counts of the rs183868412 alleles stratified by self-reported ethnicity. Related to this, is there any evidence for differentiation between ethnic groups on rs183868412?\n\nLine 322: 'excluded SNPs outside the following QC thresholds'. I found the language here very confusing, and is 'genotype probability (info) >0.975' the wrong way around?\n\nLine 336: what is IBD>0.2? Do you mean relatedness coefficient or kinship coefficient or something else? How many individuals were excluded based on this threshold?\n\nLine 399: 'the major principal components' -- please specify the number\n\nFor the analysis of eQTL data from Quach et al., were both European and African ancestries used? I found this somewhat unclear. What was the count of individuals with the rs183868412:T allele? And were any of them non-African? If both European and African ancestry individuals were used, I would suggest performing an equivalent analysis using only African ancestry individuals to avoid potential confounding with ancestry.\n\nReviewer #2 (Recommendations for the authors):\n\nIt seems surprising that a genotype with such an obviously deleterious effect can reach moderate frequency across multiple African populations. A comment on this seems appropriate. Might there be some favorable effect of the phenotype? Is there any evidence of recent selection? A full investigation of this question Obviously goes beyond the scope of this work but it should obviously help in interpreting the phenotype.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The authors make good arguments for lumping up data of malaria and bacteremia cases but it still feels a bit artificial. Please present sensitivity analyses for culture proven bacteremia cases only vs. controls (so leaving out the malaria cohort).\n\n2. Weighted analysis of malaria cases. This is an interesting approach. Differences between \"model 1\" and \"model 2\" should be better explained. Also, just stating we used model 1 for down analyses and model 2 for all other cases is clearly insufficient. Please provide data in more detail to back this up. Alternatively, provide sensitivity analyses using both models \u2013 if the outcome is robust using either model 1 and 2 will provide similar results. Please show and discuss.\n\n3. Heritability. The authors state in the intro that \"..suggests that a significant portion of this variability is heritable.\" Could the authors include an analysis of human SNP heritability for bacteremia in the manuscript?\n",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "624428b1-8c5d-41d1-a77a-7944120c6ce3",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C1",
+      "claim": "Invasive bacterial disease is a major cause of morbidity and mortality in African children.",
+      "claim_type": "EXPLICIT",
+      "source": "Invasive bacterial diseases are a major cause of child morbidity and mortality in Africa (Berkley et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Berkley et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "24ec0ab8-58a2-4dc6-84c3-dcf5e51c0653",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C2",
+      "claim": "Improved control measures, including the rollout of anti-bacterial conjugate vaccines, have led to recent declines in invasive bacterial disease burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Although improved control measures, including the rollout of anti-bacterial conjugate vaccines (Cowgill et al., 2006; Silaba et al., 2019), have led to recent declines, the burden of conditions such as pneumonia, meningitis, and sepsis secondary to bacterial pathogens remains significant (Vos, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cowgill et al., 2006; Silaba et al., 2019; and Vos, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "33b40c9b-132f-43d5-8ce3-608a085ed090",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C3",
+      "claim": "The burden of conditions such as pneumonia, meningitis, and sepsis secondary to bacterial pathogens remains significant in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Although improved control measures, including the rollout of anti-bacterial conjugate vaccines (Cowgill et al., 2006; Silaba et al., 2019), have led to recent declines, the burden of conditions such as pneumonia, meningitis, and sepsis secondary to bacterial pathogens remains significant (Vos, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vos, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "a4233c19-02f4-41f4-ba07-3dabfd3e614d",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C4",
+      "claim": "Susceptibility to invasive bacterial infections varies widely between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Susceptibility to invasive bacterial infections varies widely between individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "2be0a265-fef7-4e03-bd4f-adcf44fbbc49",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C5",
+      "claim": "In African children, some variability in susceptibility to invasive bacterial infections is determined by acquired comorbidities such as HIV, malnutrition, and malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "In African children, some of this variability is determined by acquired comorbidities such as HIV, malnutrition, and malaria (Berkley et al., 2005; Church and Maitland, 2014; Scott et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Berkley et al., 2005; Church and Maitland, 2014; Scott et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "dcf5ee90-f899-45b7-b016-c52cc611fee0",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C6",
+      "claim": "The identification of common genetic variants as determinants of bacterial infection suggests that a significant portion of variability in susceptibility is heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the identification of common genetic variants as determinants of bacterial infection suggests that a significant portion of this variability is heritable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from genetic variant identification studies",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "cb52d2ac-aca3-4103-ad69-b407ccafdc3f",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C7",
+      "claim": "Many genetic susceptibility loci for bacterial infection have pathogen-specific effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these genetic susceptibility loci have pathogen-specific effects (Davila et al., 2010; Gilchrist et al., 2018; Rautanen et al., 2016), which is consistent with our understanding of infection susceptibility derived from primary immunodeficiencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Davila et al., 2010; Gilchrist et al., 2018; Rautanen et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "a5b1ec01-4fb1-42c2-89fb-e745f09dae6b",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C8",
+      "claim": "Mendelian susceptibility to mycobacterial disease is an example of pathogen specificity among primary immunodeficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Key examples of pathogen specificity among primary immunodeficiencies include Mendelian susceptibility to mycobacterial disease and susceptibility to non-tuberculous mycobacteria and nontyphoidal Salmonella (Bustamante et al., 2014), terminal complement deficiencies and meningococcal disease (Figueroa et al., 1993), and IRAK4 deficiency and pneumococcal disease (Picard et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bustamante et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "68ad8d4f-73c9-48c6-bf3e-c0e6345884d1",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C9",
+      "claim": "Terminal complement deficiencies are associated with meningococcal disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Key examples of pathogen specificity among primary immunodeficiencies include Mendelian susceptibility to mycobacterial disease and susceptibility to non-tuberculous mycobacteria and nontyphoidal Salmonella (Bustamante et al., 2014), terminal complement deficiencies and meningococcal disease (Figueroa et al., 1993), and IRAK4 deficiency and pneumococcal disease (Picard et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Figueroa et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "fd9f1f03-9149-4e5a-914c-60c7fc6ac1dc",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C10",
+      "claim": "IRAK4 deficiency is associated with pneumococcal disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Key examples of pathogen specificity among primary immunodeficiencies include Mendelian susceptibility to mycobacterial disease and susceptibility to non-tuberculous mycobacteria and nontyphoidal Salmonella (Bustamante et al., 2014), terminal complement deficiencies and meningococcal disease (Figueroa et al., 1993), and IRAK4 deficiency and pneumococcal disease (Picard et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Picard et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "f5f82dc2-be5f-4ce6-99e1-76245da00338",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C11",
+      "claim": "The rs334 A>T mutation in HBB (sickle haemoglobin) is associated with raised and lowered risks of infection secondary to a broad range of pathogens among homozygotes and heterozygotes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "A major exception to this is the rs334 A>T mutation in HBB (sickle haemoglobin), which is associated with raised and lowered risks of infection secondary to a broad range of pathogens among homozygotes (Williams et al., 2009) and heterozygotes (Scott et al., 2011), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Williams et al., 2009 and Scott et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "744e8138-be66-43bc-8ded-a9e42d945ac2",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C12",
+      "claim": "The effect sizes associated with sickle haemoglobin are extreme, being maintained in populations by balancing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effect sizes associated with sickle haemoglobin are extreme, being maintained in populations by balancing selection, and larger sample sizes will probably be needed for the discovery of new variants with multi-pathogen effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of sickle cell genetics and population genetics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "9a07c408-e863-4eab-b988-3e7fe5daf12a",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C13",
+      "claim": "The clinical features of invasive bacterial infections and severe malaria are broadly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the clinical features of invasive bacterial infections and severe malaria are broadly similar (Bejon et al., 2007), it can be difficult to distinguish between severe illness caused by extensive sequestration of malaria parasites in the microvasculature ('true' severe malaria) and bacterial sepsis in the presence of incidental parasitaemia on the basis of clinical features alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bejon et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "910dd2b8-fa66-473b-8998-76574462177e",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C14",
+      "claim": "It can be difficult to distinguish between 'true' severe malaria and bacterial sepsis in the presence of incidental parasitaemia on the basis of clinical features alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the clinical features of invasive bacterial infections and severe malaria are broadly similar (Bejon et al., 2007), it can be difficult to distinguish between severe illness caused by extensive sequestration of malaria parasites in the microvasculature ('true' severe malaria) and bacterial sepsis in the presence of incidental parasitaemia on the basis of clinical features alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from clinical similarity and citation to Bejon et al., 2007",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "51199966-9560-46f3-9649-e4787659edc1",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C15",
+      "claim": "Antibiotic pre-treatment and inadequate blood culture volumes mean that true invasive bacterial infections can often not be confirmed even in settings with excellent diagnostic facilities.",
+      "claim_type": "EXPLICIT",
+      "source": "This is made harder still by the fact that antibiotic pre-treatment and inadequate blood culture volumes mean that, even in settings with excellent diagnostic facilities, true invasive bacterial infections can often not be confirmed (Driscoll et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Driscoll et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "223d6c0b-9add-430a-b7e6-028e2002c12d",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C16",
+      "claim": "Approximately one-third of children recruited to studies in Africa with a clinical diagnosis of severe malaria were actually suffering from other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we illustrated this clinical complexity through a study in which we used probabilistic models based on malaria-specific biomarkers to show that approximately one-third of children recruited to studies in Africa with a clinical diagnosis of severe malaria were actually suffering from other conditions (Watson et al., 2021a; Watson et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Watson et al., 2021a and Watson et al., 2021b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "55ab1d20-ff3b-48c5-b3d2-a414d70220ba",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C17",
+      "claim": "Invasive bacterial infections are common in children admitted to hospital with a clinical diagnosis of severe malaria, but in whom biomarkers subsequently suggest that malaria was probably not the primary cause for their severe illness.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we extend this work to show that invasive bacterial infections are common in children admitted to hospital with a clinical diagnosis of severe malaria, but in whom biomarkers subsequently suggest that malaria was probably not the primary cause for their severe illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "f02a117a-b2cc-4be7-967d-49af0d963277",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C18",
+      "claim": "A dataset of genome-wide genotyped samples from 5400 Kenyan children was constructed, comprising critically unwell Kenyan children with bacteraemia and severe malaria, and population controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We then construct a dataset of genome-wide genotyped samples from 5400 Kenyan children, comprising critically unwell Kenyan children with bacteraemia (Rautanen et al., 2016) and severe malaria (Band, 2019), and population controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data collection and methods described in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "fc77b6ae-634f-49f0-80a6-2670f58321ac",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C19",
+      "claim": "A genome-wide association study (GWAS) of invasive bacterial infection in Kenyan children was performed, weighting cases according to the probability that their disease was mediated by a bacterial pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this dataset, we perform a genome-wide association study (GWAS) of invasive bacterial infection in Kenyan children, weighting cases according to the probability that their disease was mediated by a bacterial pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on methods and analysis described in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "4800f1fd-051a-485e-a70e-56d936e9955c",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C20",
+      "claim": "BIRC6 was identified as a novel genetic determinant of invasive bacterial disease in Kenyan children.",
+      "claim_type": "EXPLICIT",
+      "source": "In doing so, we increase our study power and identify BIRC6 as a novel genetic determinant of invasive bacterial disease in Kenyan children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on GWAS results presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "52621f2f-ac69-460c-994a-a39e35360a43",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C21",
+      "claim": "Children admitted to the high dependency ward of Kilifi County Hospital with a clinical diagnosis of severe malaria between 11 June 1995 and 12 June 2008 were included in the study (n=2200).",
+      "claim_type": "EXPLICIT",
+      "source": "Children admitted to the high dependency ward of Kilifi County Hospital with a clinical diagnosis of severe malaria, defined as a severe febrile illness in the presence of Plasmodium falciparum parasitaemia (n=2200), between 11 June 1995 and 12 June 2008 were included in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on study recruitment data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "50f84cd4-fc02-4469-a2f1-71bcc6220d1b",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C22",
+      "claim": "The definition of severe malaria used in the study is sensitive but not specific, meaning that the study included some children with sepsis accompanied by incidental parasitaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "While this definition is sensitive it is not specific, meaning that our study will have included some children with sepsis accompanied by incidental parasitaemia (Watson et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the definition used and citation to Watson et al., 2021a",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "faedfd83-c0fb-49ff-a5c7-43206044f08b",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C23",
+      "claim": "Two probabilistic models were used to determine the likelihood of 'true' severe malaria among children with a clinical diagnosis of severe malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore used two probabilistic models, which included either platelet counts and plasma PfHRP2 concentrations (Model 1, n=1400) or white blood cell and platelet counts (Model 2, n=2200), to determine the likelihood of 'true' severe malaria among these children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on methods described in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "8f417a9d-089c-4470-9857-12328fda981b",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C25",
+      "claim": "Of 1400 children with a clinical diagnosis of severe malaria with measured plasma PfHRP2 concentrations, 425 (30.4%) had a low probability (P(SM|Data)<0.5) of having 'true' severe malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 1400 children with a clinical diagnosis of severe malaria with measured plasma PfHRP2 concentrations, 425 (30.4%, Figure 1A and B) had a low probability (P(SM|Data)<0.5) of having 'true' severe malaria (941 of 2220 children using WBC and platelet count data, Figure 1\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis and shown in Figure 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "ccb782b4-03b4-43b7-8b42-cb7280578dd8",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C30",
+      "claim": "White blood counts in isolation were not associated with risk of concurrent bacteraemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, white blood counts in isolation were not associated with risk of concurrent bacteraemia (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on statistical analysis shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "2148850f-5c83-4678-a6f6-2f74597caea1",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C32",
+      "claim": "The GWAS of bacteraemia failed to identify genetic correlates of bacteraemia risk beyond the sickle cell locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, our GWAS of bacteraemia failed to identify genetic correlates of bacteraemia risk beyond the sickle cell locus (Rautanen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on GWAS results and citation to Rautanen et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "2df4d0fb-840b-449f-9e3e-449b8ef7603c",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C33",
+      "claim": "Following quality control measures, 1445 cases of culture-confirmed bacteraemia, 1143 cases of severe malaria, and 2812 control children were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Following quality control measures (see Materials and methods), we included 1445 cases of culture-confirmed bacteraemia, 1143 cases of severe malaria, and 2812 control children in our current analysis (Table 2, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data after quality control, shown in Table 2 and Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "9a5f18fe-4f68-46cf-b30a-dd5860c0ff5b",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C37",
+      "claim": "Fine mapping of the association identified a credible set of seven SNPs with a 95% probability of containing the causal variant, spanning a 212 kb region: chr2:32,402,640\u201332,614,746.",
+      "claim_type": "EXPLICIT",
+      "source": "Fine mapping of this association identified a credible set of seven SNPs with a 95% probability of containing the causal variant (Table 3), spanning a 212 kb region: chr2:32,402,640\u201332,614,746.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on fine mapping analysis shown in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "ab36e509-471e-4475-9a80-c5d9fd2b5b06",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C42",
+      "claim": "Genotype was not associated with invasive bacterial disease risk in the Kauma subpopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotype was not associated with invasive bacterial disease risk in the Kauma subpopulation, however the sample size in the stratum is very limited (154 cases, 318 controls) and may simply reflect insufficient power to detect an association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on stratified analysis with limited sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "28e8b451-3552-46b0-96cd-2d8f0e470019",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C45",
+      "claim": "An independent case-control collection of Kenyan children with bacteraemia (n=434) and healthy controls (n=1258) was used for replication.",
+      "claim_type": "EXPLICIT",
+      "source": "We sought to replicate evidence of association in our discovery analysis through use of an independent case-control collection of Kenyan children with bacteraemia (n=434) and healthy controls (n=1258) conducted in the same population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on replication study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "798ffc9d-43f6-4e6d-ac35-6a47f76cfa1a",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C49",
+      "claim": "The association was driven by children with culture-confirmed bacteraemia and critically unwell children with malaria parasites, but a low probability of 'true' severe malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "That association was driven by children with culture-confirmed bacteraemia and critically unwell children with malaria parasites, but a low probability of 'true' severe malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on stratified analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "63aea2b9-c050-4aee-a25a-e75eb947571c",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C53",
+      "claim": "The data best-supported a model in which genotype increases risk of bacteraemia caused by a broad range of pathogens, including bacteraemia secondary to pneumococcus, nontyphoidal Salmonellae, Escherichia coli, \u03b2-haemolytic streptococci, Staphylococcus aureus, and other less common pathogens grouped as a single stratum (log10 Bayes factor = 4.72).",
+      "claim_type": "EXPLICIT",
+      "source": "In that analysis, the data best-supported a model in which genotype increases risk of bacteraemia caused by a broad range of pathogens, including bacteraemia secondary to pneumococcus, nontyphoidal Salmonellae, Escherichia coli, \u03b2-haemolytic streptococci, Staphylococcus aureus, and other less common pathogens grouped as a single stratum (log10 Bayes factor = 4.72).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Bayesian model comparison analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "82d9d0f2-e2c7-4774-af77-5c0b99ce2ee8",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C54",
+      "claim": "Genotype at rs183868412 similarly modified risk of bacteraemia in the neonatal period and in older children (log10 Bayes factor = 2.70).",
+      "claim_type": "EXPLICIT",
+      "source": "Genotype at rs183868412 similarly modified risk of bacteraemia in the neonatal period and in older children (log10 Bayes factor = 2.70, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Bayesian model comparison analysis shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "30572964-7f7b-4a21-8908-01206d6cb781",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C55",
+      "claim": "Malaria infection results in increased risk of invasive bacterial disease secondary to a broad range of pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria infection results in increased risk of invasive bacterial disease secondary to a broad range of pathogens (Scott et al., 2011), and genetic determinants of malaria risk (e.g. sickle cell trait) modify risk of bacterial infection in malaria-endemic settings (Scott et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Scott et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "a26a3419-87ff-42a4-808f-dddaf23eca55",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C56",
+      "claim": "Genetic determinants of malaria risk (e.g. sickle cell trait) modify risk of bacterial infection in malaria-endemic settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria infection results in increased risk of invasive bacterial disease secondary to a broad range of pathogens (Scott et al., 2011), and genetic determinants of malaria risk (e.g. sickle cell trait) modify risk of bacterial infection in malaria-endemic settings (Scott et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Scott et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "ac7d495e-4696-462b-8dd7-41b6988b5756",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C57",
+      "claim": "The effect of genetic variation at BIRC6 on invasive bacterial disease risk operates independently of malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that, among children with a clinical diagnosis of severe malaria, risk of disease is only modified by rs183868412 in children with a low probability that their disease represents 'true' severe malaria (Figure 5) suggests that the effect of genetic variation at BIRC6 on invasive bacterial disease risk operates independently of malaria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from stratified analysis shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "1f819260-e6b4-4b0b-80d0-7fd5c67f3a67",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C58",
+      "claim": "The data best-supports an effect of rs183868412 genotype on bacteraemia risk in children both with and without concomitant parasitaemia (log10 Bayes factor = 2.73).",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with this, the data best-supports an effect of rs183868412 genotype on bacteraemia risk in children both with and without concomitant parasitaemia (log10 Bayes factor = 2.73, Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Bayesian model comparison analysis shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "8af3f5ed-f17b-4f49-bc25-6f6f6e2c143e",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C59",
+      "claim": "Unlike sickle cell trait, the increased risk of invasive bacterial infection conferred by rs183868412:T carriage in the study setting is stable across a period of declining malaria prevalence (Bayes factor = 8.7).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, unlike sickle cell trait (Scott et al., 2011), the increased risk of invasive bacterial infection conferred by rs183868412:T carriage in the study setting is stable across a period of declining malaria prevalence (Bayes factor = 8.7, Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Bayesian model comparison analysis shown in Figure 5D and citation to Scott et al., 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "ff6da588-3f2c-47ef-95c1-fb7c28b466b5",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C60",
+      "claim": "The derived allele rs183868412:T, associated with increased risk of invasive bacterial disease in Kenyan children, is absent in non-African populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The derived allele rs183868412:T, associated with increased risk of invasive bacterial disease in Kenyan children, is absent in non-African populations (https://gnomad.broadinstitute.org).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from gnomAD database",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "7d9bdc13-e985-4304-8acb-5e0819bed9f8",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C61",
+      "claim": "Within Africa, rs183868412:T is present in all nine African populations included in the MalariaGEN consortium project, with MAFs ranging from 0.011 in The Gambia to 0.034 in Malawi.",
+      "claim_type": "EXPLICIT",
+      "source": "Within Africa, rs183868412:T is present in all nine African populations included in the MalariaGEN consortium project (Band, 2019; Table 6), MAFs ranging from 0.011 in The Gambia to 0.034 in Malawi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from MalariaGEN consortium shown in Table 6 and citation to Band, 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "7993f955-016a-43e2-9f1f-fe34416b2f06",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C65",
+      "claim": "rs183868412 is associated with alternative splicing of BIRC6 in stimulated monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "rs183868412 is associated with alternative splicing of BIRC6 in stimulated monocytes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on eQTL analysis described in the section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "39ceb6e7-39a7-43ca-90f1-9ad342fc0372",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C66",
+      "claim": "There was no evidence for a regulatory effect of rs183868412 at the gene level in monocytes regardless of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence for a regulatory effect of rs183868412 at the gene level in monocytes regardless of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on eQTL mapping analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "be7c709a-51b2-43ba-ad11-89bb817c0119",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C68",
+      "claim": "The effect of rs183868412 on BIRC6 exon expression was only observed following stimulation with Pam3CSK4.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was only observed following stimulation with Pam3CSK4 (Figure 6), with the bacteraemia risk allele, rs183868412:T, being associated with reduced expression of this sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on eQTL mapping analysis shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "00d30842-4108-45e0-ae4c-6db9bfa4bac1",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C69",
+      "claim": "The bacteraemia risk allele, rs183868412:T, is associated with reduced expression of the 12 bp BIRC6 exonic sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was only observed following stimulation with Pam3CSK4 (Figure 6), with the bacteraemia risk allele, rs183868412:T, being associated with reduced expression of this sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on eQTL mapping analysis shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "f2fb2ce2-43b0-4097-bcd1-eb44b2cbd6fe",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C70",
+      "claim": "Increased risk of invasive bacterial disease may be associated with decreased expression of an alternative BIRC6 transcript in TLR1/2-stimulated monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, increased risk of invasive bacterial disease may be associated with decreased expression of an alternative BIRC6 transcript in TLR1/2-stimulated monocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from eQTL and splicing analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "906d115b-5074-4f02-9c22-b6b4f44c8e78",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C71",
+      "claim": "BIRC6 (Baculovirus inhibitor of apoptosis protein repeat containing 6), also known as BRUCE (BIR repeat containing ubiquitin-conjugating enzyme), encodes a large member of the inhibitor of apoptosis protein (IAP) family.",
+      "claim_type": "EXPLICIT",
+      "source": "BIRC6 (Baculovirus inhibitor of apoptosis protein repeat containing 6), also known as BRUCE (BIR repeat containing ubiquitin-conjugating enzyme), encodes a large member of the inhibitor of apoptosis protein (IAP) family (Hauser et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hauser et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "785d9daa-2d12-4ba1-8d54-7a8a8a0a069e",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C72",
+      "claim": "Members of the IAP family bind to cognate caspases, inhibiting their activity through occlusion of their active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the IAP family bind to cognate caspases, inhibiting their activity, and thereby cell death, through occlusion of their active site (Verhagen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Verhagen et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "a5dcf66d-95d6-49e5-a317-d58827412d7a",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C73",
+      "claim": "A proportion of IAPs also contain an E3 ubiquitin ligase allowing both direct inhibition of caspases and targeting of caspases for proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "A proportion of IAPs also contain an E3 ubiquitin ligase allowing both direct inhibition of caspases and targeting of caspases for proteasomal degradation (Verhagen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Verhagen et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "0893ab0f-ad78-4381-a590-4a13012efaed",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C74",
+      "claim": "BIRC6 contains both inhibitor of apoptosis domains and an E2/E3 ubiquitin ligase, which function to inhibit apoptosis in response to a variety of stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "BIRC6 contains both inhibitor of apoptosis domains and an E2/E3 ubiquitin ligase, which function to inhibit apoptosis in response to a variety of stimuli, both by interaction with and degradation of caspase-9, but also through the ubiquitination and degradation of SMAC, an IAP antagonist (Hao et al., 2004; Bartke et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hao et al., 2004 and Bartke et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "a245ba5d-66c0-43f3-abaf-e3c904de42f5",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C75",
+      "claim": "BIRC6 regulates autophagosome-lysosome fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "BIRC6 also regulates autophagosome-lysosome fusion (Ebner et al., 2018), and ubiquitinates (and targets for degradation) LC3, a key effector of autophagosome formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ebner et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "e92a7a98-7cf1-4347-ae06-f586d703a0e9",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C76",
+      "claim": "BIRC6 ubiquitinates (and targets for degradation) LC3, a key effector of autophagosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "BIRC6 also regulates autophagosome-lysosome fusion (Ebner et al., 2018), and ubiquitinates (and targets for degradation) LC3, a key effector of autophagosome formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of BIRC6 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "f749a2e6-744c-46f5-aada-031b445f6448",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C77",
+      "claim": "BIRC6 acts as a negative regulator of autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, BIRC6 also acts as a negative regulator of autophagy (Jia and Bonifacino, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jia and Bonifacino, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "80e79090-1626-4f25-a6a1-a10803f26451",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C78",
+      "claim": "Sepsis induces marked changes in apoptosis across a range of immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Sepsis induces marked changes in apoptosis across a range of immune cells (Hotchkiss and Nicholson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hotchkiss and Nicholson, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "063e6e52-ca58-4721-8590-fdef48680deb",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C79",
+      "claim": "There is markedly enhanced apoptosis in both dendritic cells and in lymphocytes during sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "There is markedly enhanced apoptosis in both dendritic cells (Hotchkiss et al., 2002) and in lymphocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hotchkiss et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "8f66222f-b3a3-4a98-a5da-a15d676f0095",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C80",
+      "claim": "Enhanced lymphocyte apoptosis is most striking in B cells and CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced lymphocyte apoptosis is most striking in B cells and CD4+ T cells (Hotchkiss et al., 2001) which, at least in part, is mediated by caspase-9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hotchkiss et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "d2550d09-de6e-4c6e-8908-a0e305c049a3",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C81",
+      "claim": "The consequent lymphopoenia from sepsis-induced apoptosis is correlated with both severity of sepsis and outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "The consequent lymphopoenia is correlated with both severity of sepsis and outcome (Le Tulzo et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Le Tulzo et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "43befaaf-ba65-464d-bb58-24565c741c0e",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C82",
+      "claim": "Sepsis-induced apoptosis induces immune cell dysfunction, phagocytosis of apoptotic cells resulting in reduction in pro-inflammatory cytokine production, and cross-presentation of antigen from apoptotic cells to adaptive immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the direct effects of immune cell loss on the innate and adaptive immune responses to invasive infection, sepsis-induced apoptosis induces immune cell dysfunction, phagocytosis of apoptotic cells resulting in reduction in pro-inflammatory cytokine production, and cross-presentation of antigen from apoptotic cells to adaptive immune cells (Albert, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Albert, 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "d42f723e-a6c3-43c1-a99e-dd06cc9d3445",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C83",
+      "claim": "Members of the IAP family, including NAIP/BIRC1 and BIRC3, are downregulated in immune cells in patients with sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with a role for regulators of apoptosis in the pathogenesis of sepsis, members of the IAP family, including NAIP/BIRC1 and BIRC3, are downregulated in immune cells in patients with sepsis, as is the BIRC6 ubiquitination target SMAC (Hoogerwerf et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hoogerwerf et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "8937fe93-0902-42c2-8e20-5c1d19168ce9",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C84",
+      "claim": "The BIRC6 ubiquitination target SMAC is downregulated in immune cells in patients with sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with a role for regulators of apoptosis in the pathogenesis of sepsis, members of the IAP family, including NAIP/BIRC1 and BIRC3, are downregulated in immune cells in patients with sepsis, as is the BIRC6 ubiquitination target SMAC (Hoogerwerf et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hoogerwerf et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "79f31249-9b3d-412e-8709-c0cbd8dbc023",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C85",
+      "claim": "Autophagy contributes to the direct removal of intracellular pathogens and, through the degradation of invading organisms in autophagosomes, directs antigen presentation and pro-inflammatory cytokine secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagy contributes to the direct removal of intracellular pathogens and, through the degradation of invading organisms in autophagosomes, directs antigen presentation and pro-inflammatory cytokine secretion (Deretic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Deretic et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "08638bd2-487f-4607-b8bc-2d73734d9cf0",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C86",
+      "claim": "BIRC6 regulates autophagy through its interaction with LC3.",
+      "claim_type": "EXPLICIT",
+      "source": "As above, BIRC6 regulates autophagy through its interaction with LC3, and overexpression of LC3B limits inflammation and tissue injury in a mouse model of sepsis (Lo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge and citation to Lo et al., 2013",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "74a698e6-e31b-451b-ae93-fcf961f3da51",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C87",
+      "claim": "Overexpression of LC3B limits inflammation and tissue injury in a mouse model of sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "As above, BIRC6 regulates autophagy through its interaction with LC3, and overexpression of LC3B limits inflammation and tissue injury in a mouse model of sepsis (Lo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lo et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "796cefd7-6caf-49be-9755-4e0847a59936",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C88",
+      "claim": "Genetic variation at BIRC6 plays a role in determining risk of invasive infection secondary to a broad range of bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with a role for BIRC6 in autophagy and apoptosis in sepsis, our data identify a role for genetic variation at BIRC6 in determining risk of invasive infection secondary to a broad range of bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on GWAS and functional data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "089ef351-5718-47c8-a1fe-c6ac605d44af",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C89",
+      "claim": "Previously published data describing susceptibility to invasive bacterial infection has highlighted a prominent role for genetic risk factors that are specific to single pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to previously published data describing susceptibility to invasive bacterial infection, which has highlighted a prominent role for genetic risk factors that are specific to single pathogens (Davila et al., 2010; Gilchrist et al., 2018; Rautanen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Davila et al., 2010; Gilchrist et al., 2018; Rautanen et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "ff8c0459-6b06-44c0-9be6-642ef79322e6",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C90",
+      "claim": "The derived allele (T) at rs183868412 was associated with increased risk of bacteraemia secondary to gram-positive (\u03b2-haemolytic streptococci, S. pneumoniae, and S. aureus) and gram-negative (E. coli, nontyphoidal Salmonella) pathogens, including intracellular and extracellular bacteria, and enteric and respiratory pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, the derived allele (T) at rs183868412 was associated with increased risk of bacteraemia secondary to gram-positive (\u03b2-haemolytic streptococci, S. pneumoniae, and S. aureus) and gram-negative (E. coli, nontyphoidal Salmonella) pathogens, including intracellular and extracellular bacteria, and enteric and respiratory pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on pathogen-stratified analysis presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "46eab3b4-d99f-4779-9174-b43d68a8e077",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C91",
+      "claim": "rs183868412 modified risk of bacteraemia in both the neonatal period, when infection is likely to be maternally derived, and in older children, when sources of community acquired infection will be more diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, rs183868412 modified risk of bacteraemia in both the neonatal period, when infection is likely to be maternally derived, and in older children, when sources of community acquired infection will be more diverse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on age-stratified analysis presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "c36f03cb-f9e6-42c9-9f71-0d8a076d892e",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C92",
+      "claim": "The modulation of invasive bacterial disease risk by genetic variation at BIRC6, despite diverse sources and routes of infection and diverse mechanisms of invasion, suggests a mechanism in which genetic variation at BIRC6 modifies risk of invasive infection downstream of initial mechanisms of infection and invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "This modulation of invasive bacterial disease risk, despite diverse sources and routes of infection and diverse mechanisms of invasion, suggests a mechanism in which genetic variation at BIRC6 modifies risk of invasive infection downstream of initial mechanisms of infection and invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the broad pathogen effects observed",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "b0022e89-5b7a-4f6f-9366-ba53eb7c2286",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C93",
+      "claim": "Common genetic variation at another ubiquitin-conjugating enzyme, UBE2U, has been shown to modify outcome in meningitis secondary to diverse pathogens in individuals of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "In an interesting parallel to this, common genetic variation at another ubiquitin-conjugating enzyme, UBE2U, has been shown to modify outcome in meningitis secondary to diverse pathogens in individuals of European ancestry (Lees et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lees et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "046fcb97-288b-46b7-aba1-bd6aacfdd10f",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C94",
+      "claim": "The African-specific nature of the trait-associated variation identified limits the ability to comprehensively interrogate the effect of that variation in immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The African-specific nature of the trait-associated variation identified here limits our ability to comprehensively interrogate the effect of that variation in immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on discussion of study limitations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "0abdc23a-02de-4908-b736-03f52a48c95a",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C95",
+      "claim": "The eQTL mapping data utilized is limited in that it allows consideration of only a single immune cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "The eQTL mapping data that we utilise here (Quach et al., 2016) is limited in that it allows us only to consider a single immune cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on discussion of study limitations and citation to Quach et al., 2016",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "70d8fb19-afdf-4930-9400-f0e5f64b0e19",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C96",
+      "claim": "The splicing signal at BIRC6 is based on only 10 individuals heterozygous for rs183868412:T.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that there are relatively few African-ancestry individuals in the eQTL mapping data we utilise here, and the splicing signal at BIRC6 is based on only 10 individuals heterozygous for rs183868412:T.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on discussion of study limitations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "85ca28ee-0fa6-4659-8190-f5e24993b44d",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C97",
+      "claim": "There is a paucity of large-scale genetic association studies performed in African populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there is a paucity of large-scale genetic association studies performed in African populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on general knowledge of the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "79ea5058-27eb-4a43-9789-73da1d8c2c8c",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C98",
+      "claim": "The African-specific nature of the variation identified limits the ability to explore pleiotropic effects at this locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The African-specific nature of the variation identified in our study therefore limits our ability to explore pleiotropic effects at this locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on discussion of study limitations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "fa68fc50-736d-4bcb-a328-7c53d8cda2ed",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C99",
+      "claim": "The low MAF of rs183868412 will result in very limited power to detect selection events at the locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Allied to this, the low MAF of rs183868412 will result in very limited power to detect selection events at the locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from population genetics principles",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "9d25d40b-bc56-4b53-9ed2-6d56c71e4dc9",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C100",
+      "claim": "The study uses plasma PfHRP2 concentrations to help identify children at low risk of 'true' severe malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study uses plasma PfHRP2 concentrations to help identify children at low risk of 'true' severe malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on methods described in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "182e9000-687d-43e2-b276-57d0663d7de4",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C101",
+      "claim": "There is increasing frequency of pfhrp2 and pfhrp3 deletions in many settings, including in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the increasing frequency of pfhrp2 and pfhrp3 deletions in many settings, including in Africa (Agaba et al., 2019; Feleke et al., 2021; Gamboa et al., 2010), an understanding of the local prevalence of pfhrp2/3 deletions will be important in considering how to translate this model to other settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Agaba et al., 2019; Feleke et al., 2021; Gamboa et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "ebca2236-9eee-4178-884d-0fdc1bbb9687",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C102",
+      "claim": "The data identify a role for BIRC6 in the pathogenesis of invasive bacterial infections in Kenyan children.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data identify a role for BIRC6 in the pathogenesis of invasive bacterial infections in Kenyan children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the overall findings of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "4ad8b350-07ec-4d53-9b2d-7566073a75ee",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C103",
+      "claim": "By maximising available sample size to include children with a high likelihood of invasive bacterial infection, but without culture-confirmed infection, novel variant discovery is facilitated and a common genetic architecture of invasive bacterial disease secondary to diverse pathogens is revealed.",
+      "claim_type": "EXPLICIT",
+      "source": "By maximising our available sample size to include children with a high likelihood of invasive bacterial infection, but without culture-confirmed infection, we facilitate novel variant discovery and reveal a common genetic architecture of invasive bacterial disease secondary to diverse pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study design and findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "ac609375-a93a-4a2e-b8e0-a23fc85a6282",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C104",
+      "claim": "The data expand understanding of the biology of invasive infection in African children.",
+      "claim_type": "EXPLICIT",
+      "source": "In doing so, we expand our understanding of the biology of invasive infection in African children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the overall contribution of the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "cea94167-db49-4361-a201-485aa16b7b36",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "claim_id": "C105",
+      "claim": "The data inform understanding of the biology shared by diverse bacterial infections causing a common clinical syndrome: sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, these data inform our understanding of the biology shared by diverse bacterial infections causing a common clinical syndrome: sepsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the overall contribution of the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "77039541-4bb9-4f75-aab2-7c7fc50ca0e3",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Invasive bacterial disease is a major cause of morbidity and mortality in African children, with variability in susceptibility determined by both acquired comorbidities (HIV, malnutrition, malaria) and heritable genetic factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the background context for the study through citations to prior work. These claims about disease burden, comorbidities, and heritability are well-supported by appropriate references and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "28302c0d-20fb-4780-88c7-906e2be8ff97",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genetic susceptibility to bacterial infections is largely pathogen-specific, with the notable exception of sickle hemoglobin (HBB rs334), which affects risk across multiple pathogens but with extreme effect sizes maintained by balancing selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 summarize prior knowledge about genetic susceptibility to bacterial infections, supported by appropriate citations. The distinction between pathogen-specific effects and the multi-pathogen effect of sickle cell is well-established and provides important context for the novelty of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "19c33c4c-9ca1-4d6a-9dd5-b6b0f64cade0",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Clinical features of invasive bacterial infections and severe malaria are similar, making diagnosis difficult, and approximately one-third of children clinically diagnosed with severe malaria in Africa were actually suffering from other conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 establish the clinical challenge that motivates the study design. These claims are supported by appropriate citations including the authors' prior work (Watson et al., 2021a/b) and provide essential justification for the probabilistic modeling approach used in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "4a7bb053-4923-4934-a08b-033745a1f562",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using probabilistic models based on biomarkers (PfHRP2/platelet counts or WBC/platelet counts), 30.4% of 1400 children clinically diagnosed with severe malaria had low probability (P<0.5) of 'true' severe malaria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 describe the study population and probabilistic modeling approach. The methods are clearly described and the results are presented with appropriate data (Figure 1). The use of two models with different biomarkers provides robustness to the classification approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "ba8e59a7-f30d-427d-8f3d-0c91b1cd2aee",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Children with low probability of 'true' severe malaria are enriched for invasive bacterial infections, as evidenced by higher rates of concurrent bacteraemia and mortality, with platelet counts and PfHRP2 (but not white blood cell counts alone) associated with bacteraemia risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C30 validate the probabilistic classification by showing that children with low P(SM|Data) have higher bacteraemia rates and mortality. The statistical associations are clearly presented in Figure 1 and Table 1, supporting the use of this classification for case weighting in the GWAS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "7dc11d5c-8315-45ff-8f41-a56106369358",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A dataset of 5400 genome-wide genotyped Kenyan children (1445 bacteraemia cases, 1143 severe malaria cases, 2812 controls) was constructed, and despite 19% SNP heritability, previous GWAS of bacteraemia identified no genetic correlates beyond the sickle cell locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C32-C33 describe the study design and prior negative results. The dataset construction is well-documented in Table 2 and Figure 2. The SNP heritability estimate (19%, p=0.0084) provides strong justification for the genetic study, while the prior negative GWAS results motivate the novel weighted approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "2e4676e8-268d-483c-980c-cab98fd8fe65",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BIRC6 was identified as a novel genetic determinant of invasive bacterial disease through weighted GWAS, with fine mapping identifying a credible set of seven SNPs (95% probability of containing causal variant) spanning 212 kb at chr2:32,402,640-32,614,746.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C37 present the primary discovery. The association at rs183868412 (OR=2.13, p=4.64\u00d710\u207b\u2079) exceeds genome-wide significance and is clearly shown in Figure 3. Fine mapping results in Table 3 provide additional resolution. The weighted GWAS approach successfully identified a novel locus where traditional analysis failed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "d1f78f3b-7c25-4dae-81a5-c1d1dabeeacf",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genotype at rs183868412 was not associated with invasive bacterial disease risk in the Kauma subpopulation (154 cases, 318 controls).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 reports a null result in one ethnic subgroup. However, the authors appropriately note that the sample size is very limited and may reflect insufficient power rather than true lack of association. The claim is accurately stated but the interpretation remains uncertain due to power limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "98420580-7f53-4c49-9111-53d1186f67d8",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The rs183868412 association was replicated in an independent case-control collection (434 bacteraemia cases, 1258 controls) with OR=2.85 (p=8.90\u00d710\u207b\u2074), driven by culture-confirmed bacteraemia and children with low probability of 'true' severe malaria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C49 describe successful replication in an independent cohort. The replication OR (2.85) is consistent with discovery (2.13), and the stratified analysis (Figure 4C) confirms the association is specific to bacterial disease rather than malaria, validating the weighted GWAS approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "e8998bb7-7e8d-4a63-8951-6196ea732661",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The rs183868412 genotype increases risk of bacteraemia caused by diverse pathogens (pneumococcus, Salmonella, E. coli, streptococci, S. aureus) with similar effect in neonatal and older children (Bayes factors: 4.72 and 2.70 respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 demonstrate the broad pathogen effect using Bayesian model comparison. The analysis in Figure 5A-B shows consistent effects across multiple bacterial species and age groups. The Bayes factors provide strong statistical support for shared genetic architecture across diverse pathogens, a key novel finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "de8d2ce2-cf73-46e9-96f6-c3a58406d0ba",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The effect of rs183868412 on invasive bacterial disease operates independently of malaria, with similar effects in children with and without parasitaemia (Bayes factor=2.73) and stable risk across declining malaria prevalence (Bayes factor=8.7), unlike sickle cell trait.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 establish independence from malaria effects through multiple lines of evidence. The stratified analyses (Figure 5C-D) and Bayesian model comparisons provide strong support. The contrast with sickle cell trait (C59) is particularly important for establishing a novel mechanism distinct from malaria-mediated effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "21292014-83d8-4b89-bfd9-f3c662dea3bd",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The rs183868412:T allele is absent in non-African populations but present in all nine African populations studied (MAF 0.011-0.034), with no evidence of within-Africa differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 describe the population genetics of the variant using gnomAD and MalariaGEN data (Table 6). The African-specific nature is clearly documented, though the lack of differentiation and selection signals raises questions about how this deleterious allele is maintained in populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "137022fc-543a-40f0-962c-f26f7c9219ef",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "rs183868412 is associated with alternative splicing of BIRC6 specifically in Pam3CSK4-stimulated monocytes (p=1.18\u00d710\u207b\u2075, PP4=0.951), with the risk allele (T) associated with reduced expression of a 12 bp exonic sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C70 present functional evidence from eQTL analysis. While the colocalisation (PP4=0.951) is strong and the stimulus-specific effect is biologically plausible, C96 notes this is based on only 10 heterozygous individuals. The small sample size and single cell type (C95) limit confidence in the functional mechanism, though the direction of effect is consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "8653c2a6-b9bd-46b4-9fe1-2f6edc21b30c",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "BIRC6 encodes a member of the IAP family that inhibits apoptosis through caspase-9 interaction and SMAC degradation, and also negatively regulates autophagy through LC3 ubiquitination and autophagosome-lysosome fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 describe established BIRC6 biology supported by appropriate citations. This background provides biological plausibility for the genetic association, linking BIRC6 function to processes (apoptosis and autophagy) known to be important in sepsis pathogenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "6685bba2-005a-4a02-bb54-8ab98fa38083",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sepsis induces marked apoptosis in immune cells (particularly dendritic cells, B cells, and CD4+ T cells via caspase-9), resulting in lymphopenia correlated with disease severity, and IAP family members including BIRC6 targets are downregulated in sepsis patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C84 establish the biological relevance of apoptosis regulation in sepsis through multiple citations. This provides strong mechanistic rationale for how BIRC6 variation could affect bacterial disease susceptibility, linking the genetic finding to known sepsis pathophysiology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "4c71a4e9-b805-4a3b-b66c-5b242a03d6e8",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Autophagy contributes to pathogen clearance and immune signaling, BIRC6 regulates autophagy through LC3 interaction, and LC3B overexpression limits inflammation in mouse sepsis models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 establish autophagy as an alternative mechanism through which BIRC6 could affect bacterial disease susceptibility. The citations support each component, providing a second plausible biological pathway linking BIRC6 to sepsis outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "abc549c2-ccb3-4ce2-a72b-86f5bab8f4ae",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Genetic variation at BIRC6 modifies risk of invasive infection across diverse bacterial pathogens (gram-positive and gram-negative, intracellular and extracellular), age groups, and infection routes, suggesting a mechanism downstream of initial infection and invasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C92 synthesize the key findings and their implications. The broad pathogen effects (C90-C91) are well-supported by the stratified analyses in Figure 5. The inference about downstream mechanisms (C92) is reasonable given the diversity of pathogens and routes affected, contrasting with prior pathogen-specific findings (C89).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "5ebb2059-4672-46d7-9712-15bd9cff75f2",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Common genetic variation at another ubiquitin-conjugating enzyme (UBE2U) modifies outcome in meningitis secondary to diverse pathogens in Europeans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 provides a parallel example from the literature (Lees et al., 2019) of another ubiquitin-conjugating enzyme with multi-pathogen effects. This strengthens the biological plausibility of the BIRC6 findings and suggests a broader role for ubiquitination pathways in bacterial disease susceptibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "b61f821c-fcd6-4783-befa-f7f2acf2c807",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Study limitations include: African-specific variation limits functional interrogation and pleiotropy assessment; eQTL data restricted to single cell type with only 10 heterozygous individuals; low MAF limits selection detection; paucity of African GWAS limits comparative analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C99 appropriately acknowledge study limitations. These are honest assessments that do not invalidate the main findings but correctly identify areas requiring future work. The functional data limitations (C95-C96) are particularly important given the mechanistic claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "8595a481-16eb-4539-a383-331869c1107e",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study uses plasma PfHRP2 concentrations to identify children at low risk of 'true' severe malaria, but increasing pfhrp2/3 deletions in Africa may limit translation to other settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 acknowledge a methodological limitation regarding pfhrp2/3 deletions. This is an important caveat for generalizability, appropriately supported by citations (Agaba et al., 2019; Feleke et al., 2021; Gamboa et al., 2010), though it does not affect the validity of results in this study population.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    },
+    {
+      "id": "af90c12f-acaf-4989-b2ff-28bdcde61988",
+      "content_id": "3fb89a94-c9ad-460f-ac7b-e95c29efa2ba",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study identifies BIRC6's role in invasive bacterial infections in Kenyan children, reveals common genetic architecture across diverse pathogens through novel case-weighting methodology, and advances understanding of shared sepsis biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 summarize the study's contributions. The identification of BIRC6 (C102) is well-supported by the GWAS and replication data. The methodological innovation (C103) successfully increased power to detect a novel locus. The broader implications for sepsis biology (C104-C105) are reasonable inferences from the multi-pathogen effects observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:28:36.845415Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "624428b1-8c5d-41d1-a77a-7944120c6ce3",
+      "result_id": "77039541-4bb9-4f75-aab2-7c7fc50ca0e3"
+    },
+    {
+      "claim_id": "24ec0ab8-58a2-4dc6-84c3-dcf5e51c0653",
+      "result_id": "77039541-4bb9-4f75-aab2-7c7fc50ca0e3"
+    },
+    {
+      "claim_id": "33b40c9b-132f-43d5-8ce3-608a085ed090",
+      "result_id": "77039541-4bb9-4f75-aab2-7c7fc50ca0e3"
+    },
+    {
+      "claim_id": "a4233c19-02f4-41f4-ba07-3dabfd3e614d",
+      "result_id": "77039541-4bb9-4f75-aab2-7c7fc50ca0e3"
+    },
+    {
+      "claim_id": "2be0a265-fef7-4e03-bd4f-adcf44fbbc49",
+      "result_id": "77039541-4bb9-4f75-aab2-7c7fc50ca0e3"
+    },
+    {
+      "claim_id": "dcf5ee90-f899-45b7-b016-c52cc611fee0",
+      "result_id": "28302c0d-20fb-4780-88c7-906e2be8ff97"
+    },
+    {
+      "claim_id": "cb52d2ac-aca3-4103-ad69-b407ccafdc3f",
+      "result_id": "28302c0d-20fb-4780-88c7-906e2be8ff97"
+    },
+    {
+      "claim_id": "a5b1ec01-4fb1-42c2-89fb-e745f09dae6b",
+      "result_id": "28302c0d-20fb-4780-88c7-906e2be8ff97"
+    },
+    {
+      "claim_id": "68ad8d4f-73c9-48c6-bf3e-c0e6345884d1",
+      "result_id": "28302c0d-20fb-4780-88c7-906e2be8ff97"
+    },
+    {
+      "claim_id": "fd9f1f03-9149-4e5a-914c-60c7fc6ac1dc",
+      "result_id": "28302c0d-20fb-4780-88c7-906e2be8ff97"
+    },
+    {
+      "claim_id": "f5f82dc2-be5f-4ce6-99e1-76245da00338",
+      "result_id": "28302c0d-20fb-4780-88c7-906e2be8ff97"
+    },
+    {
+      "claim_id": "744e8138-be66-43bc-8ded-a9e42d945ac2",
+      "result_id": "28302c0d-20fb-4780-88c7-906e2be8ff97"
+    },
+    {
+      "claim_id": "9a07c408-e863-4eab-b988-3e7fe5daf12a",
+      "result_id": "19c33c4c-9ca1-4d6a-9dd5-b6b0f64cade0"
+    },
+    {
+      "claim_id": "910dd2b8-fa66-473b-8998-76574462177e",
+      "result_id": "19c33c4c-9ca1-4d6a-9dd5-b6b0f64cade0"
+    },
+    {
+      "claim_id": "51199966-9560-46f3-9649-e4787659edc1",
+      "result_id": "19c33c4c-9ca1-4d6a-9dd5-b6b0f64cade0"
+    },
+    {
+      "claim_id": "223d6c0b-9add-430a-b7e6-028e2002c12d",
+      "result_id": "19c33c4c-9ca1-4d6a-9dd5-b6b0f64cade0"
+    },
+    {
+      "claim_id": "52621f2f-ac69-460c-994a-a39e35360a43",
+      "result_id": "4a7bb053-4923-4934-a08b-033745a1f562"
+    },
+    {
+      "claim_id": "50f84cd4-fc02-4469-a2f1-71bcc6220d1b",
+      "result_id": "4a7bb053-4923-4934-a08b-033745a1f562"
+    },
+    {
+      "claim_id": "faedfd83-c0fb-49ff-a5c7-43206044f08b",
+      "result_id": "4a7bb053-4923-4934-a08b-033745a1f562"
+    },
+    {
+      "claim_id": "8f417a9d-089c-4470-9857-12328fda981b",
+      "result_id": "4a7bb053-4923-4934-a08b-033745a1f562"
+    },
+    {
+      "claim_id": "55ab1d20-ff3b-48c5-b3d2-a414d70220ba",
+      "result_id": "ba8e59a7-f30d-427d-8f3d-0c91b1cd2aee"
+    },
+    {
+      "claim_id": "ccb782b4-03b4-43b7-8b42-cb7280578dd8",
+      "result_id": "ba8e59a7-f30d-427d-8f3d-0c91b1cd2aee"
+    },
+    {
+      "claim_id": "f02a117a-b2cc-4be7-967d-49af0d963277",
+      "result_id": "7dc11d5c-8315-45ff-8f41-a56106369358"
+    },
+    {
+      "claim_id": "fc77b6ae-634f-49f0-80a6-2670f58321ac",
+      "result_id": "7dc11d5c-8315-45ff-8f41-a56106369358"
+    },
+    {
+      "claim_id": "2148850f-5c83-4678-a6f6-2f74597caea1",
+      "result_id": "7dc11d5c-8315-45ff-8f41-a56106369358"
+    },
+    {
+      "claim_id": "2df4d0fb-840b-449f-9e3e-449b8ef7603c",
+      "result_id": "7dc11d5c-8315-45ff-8f41-a56106369358"
+    },
+    {
+      "claim_id": "4800f1fd-051a-485e-a70e-56d936e9955c",
+      "result_id": "2e4676e8-268d-483c-980c-cab98fd8fe65"
+    },
+    {
+      "claim_id": "9a5f18fe-4f68-46cf-b30a-dd5860c0ff5b",
+      "result_id": "2e4676e8-268d-483c-980c-cab98fd8fe65"
+    },
+    {
+      "claim_id": "ab36e509-471e-4475-9a80-c5d9fd2b5b06",
+      "result_id": "d1f78f3b-7c25-4dae-81a5-c1d1dabeeacf"
+    },
+    {
+      "claim_id": "28e8b451-3552-46b0-96cd-2d8f0e470019",
+      "result_id": "98420580-7f53-4c49-9111-53d1186f67d8"
+    },
+    {
+      "claim_id": "798ffc9d-43f6-4e6d-ac35-6a47f76cfa1a",
+      "result_id": "98420580-7f53-4c49-9111-53d1186f67d8"
+    },
+    {
+      "claim_id": "63aea2b9-c050-4aee-a25a-e75eb947571c",
+      "result_id": "e8998bb7-7e8d-4a63-8951-6196ea732661"
+    },
+    {
+      "claim_id": "82d9d0f2-e2c7-4774-af77-5c0b99ce2ee8",
+      "result_id": "e8998bb7-7e8d-4a63-8951-6196ea732661"
+    },
+    {
+      "claim_id": "30572964-7f7b-4a21-8908-01206d6cb781",
+      "result_id": "de8d2ce2-cf73-46e9-96f6-c3a58406d0ba"
+    },
+    {
+      "claim_id": "a26a3419-87ff-42a4-808f-dddaf23eca55",
+      "result_id": "de8d2ce2-cf73-46e9-96f6-c3a58406d0ba"
+    },
+    {
+      "claim_id": "ac7d495e-4696-462b-8dd7-41b6988b5756",
+      "result_id": "de8d2ce2-cf73-46e9-96f6-c3a58406d0ba"
+    },
+    {
+      "claim_id": "1f819260-e6b4-4b0b-80d0-7fd5c67f3a67",
+      "result_id": "de8d2ce2-cf73-46e9-96f6-c3a58406d0ba"
+    },
+    {
+      "claim_id": "8af3f5ed-f17b-4f49-bc25-6f6f6e2c143e",
+      "result_id": "de8d2ce2-cf73-46e9-96f6-c3a58406d0ba"
+    },
+    {
+      "claim_id": "ff6da588-3f2c-47ef-95c1-fb7c28b466b5",
+      "result_id": "21292014-83d8-4b89-bfd9-f3c662dea3bd"
+    },
+    {
+      "claim_id": "7d9bdc13-e985-4304-8acb-5e0819bed9f8",
+      "result_id": "21292014-83d8-4b89-bfd9-f3c662dea3bd"
+    },
+    {
+      "claim_id": "7993f955-016a-43e2-9f1f-fe34416b2f06",
+      "result_id": "137022fc-543a-40f0-962c-f26f7c9219ef"
+    },
+    {
+      "claim_id": "39ceb6e7-39a7-43ca-90f1-9ad342fc0372",
+      "result_id": "137022fc-543a-40f0-962c-f26f7c9219ef"
+    },
+    {
+      "claim_id": "be7c709a-51b2-43ba-ad11-89bb817c0119",
+      "result_id": "137022fc-543a-40f0-962c-f26f7c9219ef"
+    },
+    {
+      "claim_id": "00d30842-4108-45e0-ae4c-6db9bfa4bac1",
+      "result_id": "137022fc-543a-40f0-962c-f26f7c9219ef"
+    },
+    {
+      "claim_id": "f2fb2ce2-43b0-4097-bcd1-eb44b2cbd6fe",
+      "result_id": "137022fc-543a-40f0-962c-f26f7c9219ef"
+    },
+    {
+      "claim_id": "906d115b-5074-4f02-9c22-b6b4f44c8e78",
+      "result_id": "8653c2a6-b9bd-46b4-9fe1-2f6edc21b30c"
+    },
+    {
+      "claim_id": "785d9daa-2d12-4ba1-8d54-7a8a8a0a069e",
+      "result_id": "8653c2a6-b9bd-46b4-9fe1-2f6edc21b30c"
+    },
+    {
+      "claim_id": "a5dcf66d-95d6-49e5-a317-d58827412d7a",
+      "result_id": "8653c2a6-b9bd-46b4-9fe1-2f6edc21b30c"
+    },
+    {
+      "claim_id": "0893ab0f-ad78-4381-a590-4a13012efaed",
+      "result_id": "8653c2a6-b9bd-46b4-9fe1-2f6edc21b30c"
+    },
+    {
+      "claim_id": "a245ba5d-66c0-43f3-abaf-e3c904de42f5",
+      "result_id": "8653c2a6-b9bd-46b4-9fe1-2f6edc21b30c"
+    },
+    {
+      "claim_id": "e92a7a98-7cf1-4347-ae06-f586d703a0e9",
+      "result_id": "8653c2a6-b9bd-46b4-9fe1-2f6edc21b30c"
+    },
+    {
+      "claim_id": "f749a2e6-744c-46f5-aada-031b445f6448",
+      "result_id": "8653c2a6-b9bd-46b4-9fe1-2f6edc21b30c"
+    },
+    {
+      "claim_id": "80e79090-1626-4f25-a6a1-a10803f26451",
+      "result_id": "6685bba2-005a-4a02-bb54-8ab98fa38083"
+    },
+    {
+      "claim_id": "063e6e52-ca58-4721-8590-fdef48680deb",
+      "result_id": "6685bba2-005a-4a02-bb54-8ab98fa38083"
+    },
+    {
+      "claim_id": "8f66222f-b3a3-4a98-a5da-a15d676f0095",
+      "result_id": "6685bba2-005a-4a02-bb54-8ab98fa38083"
+    },
+    {
+      "claim_id": "d2550d09-de6e-4c6e-8908-a0e305c049a3",
+      "result_id": "6685bba2-005a-4a02-bb54-8ab98fa38083"
+    },
+    {
+      "claim_id": "43befaaf-ba65-464d-bb58-24565c741c0e",
+      "result_id": "6685bba2-005a-4a02-bb54-8ab98fa38083"
+    },
+    {
+      "claim_id": "d42f723e-a6c3-43c1-a99e-dd06cc9d3445",
+      "result_id": "6685bba2-005a-4a02-bb54-8ab98fa38083"
+    },
+    {
+      "claim_id": "8937fe93-0902-42c2-8e20-5c1d19168ce9",
+      "result_id": "6685bba2-005a-4a02-bb54-8ab98fa38083"
+    },
+    {
+      "claim_id": "79f31249-9b3d-412e-8709-c0cbd8dbc023",
+      "result_id": "4c71a4e9-b805-4a3b-b66c-5b242a03d6e8"
+    },
+    {
+      "claim_id": "08638bd2-487f-4607-b8bc-2d73734d9cf0",
+      "result_id": "4c71a4e9-b805-4a3b-b66c-5b242a03d6e8"
+    },
+    {
+      "claim_id": "74a698e6-e31b-451b-ae93-fcf961f3da51",
+      "result_id": "4c71a4e9-b805-4a3b-b66c-5b242a03d6e8"
+    },
+    {
+      "claim_id": "796cefd7-6caf-49be-9755-4e0847a59936",
+      "result_id": "abc549c2-ccb3-4ce2-a72b-86f5bab8f4ae"
+    },
+    {
+      "claim_id": "089ef351-5718-47c8-a1fe-c6ac605d44af",
+      "result_id": "abc549c2-ccb3-4ce2-a72b-86f5bab8f4ae"
+    },
+    {
+      "claim_id": "ff8c0459-6b06-44c0-9be6-642ef79322e6",
+      "result_id": "abc549c2-ccb3-4ce2-a72b-86f5bab8f4ae"
+    },
+    {
+      "claim_id": "46eab3b4-d99f-4779-9174-b43d68a8e077",
+      "result_id": "abc549c2-ccb3-4ce2-a72b-86f5bab8f4ae"
+    },
+    {
+      "claim_id": "c36f03cb-f9e6-42c9-9f71-0d8a076d892e",
+      "result_id": "abc549c2-ccb3-4ce2-a72b-86f5bab8f4ae"
+    },
+    {
+      "claim_id": "b0022e89-5b7a-4f6f-9366-ba53eb7c2286",
+      "result_id": "5ebb2059-4672-46d7-9712-15bd9cff75f2"
+    },
+    {
+      "claim_id": "046fcb97-288b-46b7-aba1-bd6aacfdd10f",
+      "result_id": "b61f821c-fcd6-4783-befa-f7f2acf2c807"
+    },
+    {
+      "claim_id": "0abdc23a-02de-4908-b736-03f52a48c95a",
+      "result_id": "b61f821c-fcd6-4783-befa-f7f2acf2c807"
+    },
+    {
+      "claim_id": "70d8fb19-afdf-4930-9400-f0e5f64b0e19",
+      "result_id": "b61f821c-fcd6-4783-befa-f7f2acf2c807"
+    },
+    {
+      "claim_id": "85ca28ee-0fa6-4659-8190-f5e24993b44d",
+      "result_id": "b61f821c-fcd6-4783-befa-f7f2acf2c807"
+    },
+    {
+      "claim_id": "79ea5058-27eb-4a43-9789-73da1d8c2c8c",
+      "result_id": "b61f821c-fcd6-4783-befa-f7f2acf2c807"
+    },
+    {
+      "claim_id": "fa68fc50-736d-4bcb-a328-7c53d8cda2ed",
+      "result_id": "b61f821c-fcd6-4783-befa-f7f2acf2c807"
+    },
+    {
+      "claim_id": "9d25d40b-bc56-4b53-9ed2-6d56c71e4dc9",
+      "result_id": "8595a481-16eb-4539-a383-331869c1107e"
+    },
+    {
+      "claim_id": "182e9000-687d-43e2-b276-57d0663d7de4",
+      "result_id": "8595a481-16eb-4539-a383-331869c1107e"
+    },
+    {
+      "claim_id": "ebca2236-9eee-4178-884d-0fdc1bbb9687",
+      "result_id": "af90c12f-acaf-4989-b2ff-28bdcde61988"
+    },
+    {
+      "claim_id": "4ad8b350-07ec-4d53-9b2d-7566073a75ee",
+      "result_id": "af90c12f-acaf-4989-b2ff-28bdcde61988"
+    },
+    {
+      "claim_id": "ac609375-a93a-4a2e-b8e0-a23fc85a6282",
+      "result_id": "af90c12f-acaf-4989-b2ff-28bdcde61988"
+    },
+    {
+      "claim_id": "cea94167-db49-4361-a201-485aa16b7b36",
+      "result_id": "af90c12f-acaf-4989-b2ff-28bdcde61988"
+    }
+  ],
+  "comparisons": []
+}

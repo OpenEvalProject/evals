@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Mutations that promote DNA-RNA hybrid accumulation (hpr1\u0394 and rnh1\u0394 rnh201\u0394) cause high levels of plasmid loss when DNA breaks are induced at transcribed sites. This effect is transcription-dependent and can be suppressed by RNase H1 overexpression, indicating that DNA-RNA hybrids cause the plasmid loss phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C34 collectively demonstrate that plasmid loss is specifically elevated in hybrid-accumulating mutants under high transcription conditions (C25, C31) but not under low transcription (C24, C28) or without break induction (C26). The suppression by RNase H1 overexpression (C33) provides strong evidence that DNA-RNA hybrids are causally responsible for the phenotype (C34). The data are internally consistent across multiple experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "DNA-RNA hybrids interfere with repair of replication-born DSBs induced by FLPm. While physical analysis shows subtle repair defects in rnh1\u0394 rnh201\u0394 and hpr1\u0394 mutants under high transcription, genetic analysis reveals that the fold-increase of FLPm-induced recombination over spontaneous levels is much lower in these mutants, particularly under high transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C41 report a 'subtle but not significant' repair defect, which is statistically weak. The genetic analysis (C42-C44) shows elevated spontaneous recombination in mutants, making it difficult to detect induced recombination defects. The authors acknowledge this limitation and rely on fold-change analysis (C44), which is an indirect measure. The conclusion (C35) is reasonable but the supporting evidence is not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "DNA-RNA hybrids accumulate at sites undergoing replication-born DSBs in a transcription-dependent manner. DRIP-qPCR shows that rnh1\u0394 rnh201\u0394 causes a threefold increase in S9.6 signals specifically after FLPm induction, and this increase is transcription-dependent and RNase H-sensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 provide strong DRIP-qPCR evidence for hybrid accumulation at break sites. The specificity is demonstrated by: (1) dependence on FLPm induction (C46), (2) transcription-dependence (C47), (3) RNase H sensitivity (C49), and (4) absence of signal at control locus PDC1 (C50). The hpr1\u0394 background shows constitutive elevation (C45), consistent with its known role in preventing hybrids. Multiple controls support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C64"
+    ],
+    "result": "High levels of DNA-RNA hybrids formed at endonuclease-induced breaks (HO-induced) negatively interfere with DSB repair. Both rnh1\u0394 rnh201\u0394 and hpr1\u0394 mutants show decreased repair intermediate formation and reduced HO-induced recombination frequency under high transcription, which is partially suppressed by RNase H1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 demonstrate significant repair defects in hybrid-accumulating mutants using both physical (C54) and genetic (C55) assays. The partial suppression by RNase H1 overexpression (C56) provides strong evidence for causality. The TINV-FHO system achieves 50% DSB efficiency (C52), making it more robust than the FRT system. The convergence of multiple lines of evidence (physical repair, genetic recombination, RNase H rescue) strongly supports the conclusion that hybrids interfere with repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "DNA-RNA hybrids accumulate at both sides of endonuclease-induced breaks in a partially transcription-dependent manner. DRIP-qPCR shows a fourfold increase in S9.6 signals in wild-type cells upon HO induction, with further increases in rnh1\u0394 rnh201\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 provide strong DRIP-qPCR evidence for hybrid accumulation at HO-induced breaks. The detection of hybrids in wild-type cells (C58) is notable and indicates that the TINV-FHO system generates sufficient breaks to detect hybrids without requiring mutant backgrounds. The observation of hybrids on both sides of the break (C60-C61) is well-supported. The partial transcription-dependence (C62) and absence at control locus (C63) provide appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "DNA-RNA hybrids interfere with repair of chromosomal DSBs. In a diploid chromosomal system, FLP-induced recombination is 2.3-fold lower under high transcription in an RNase H1-sensitive manner, and DRIP-qPCR confirms hybrid accumulation at the chromosomal break site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 extend the findings from plasmid systems to chromosomes, addressing a potential limitation. The genetic data (C67) show clear transcription-dependent and RNase H-sensitive reduction in recombination. The DRIP-qPCR data (C69-C71) confirm hybrid accumulation with appropriate controls. This result is important for demonstrating that the findings are not artifacts of plasmid-based systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C73",
+      "C80",
+      "C85"
+    ],
+    "result": "DNA-RNA hybrids form fortuitously at DNA breaks during transcription and need to be removed to allow recombinational repair, rather than playing a positive role. This interference is observed for both plasmid and chromosomal recombination and is independent of whether the DSB is generated by endonucleolytic cleavage or by DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C73, C80, C85 represent the central model of the paper. The model is well-supported by the convergence of multiple experimental systems (plasmid and chromosomal, FLPm and HO-induced breaks) showing that hybrids interfere with repair. The suppression by RNase H overexpression and the lack of positive effects of transcription on HR frequencies support the 'fortuitous formation' model over the 'functional intermediate' model. The authors appropriately contrast their findings with conflicting literature (C80, C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C88"
+    ],
+    "result": "DNA breaks lead to DNA-RNA hybrids at both sides of the break due to pre-existing ongoing transcription rather than de novo RNA synthesis. This conclusion is supported by the transcription-dependence of hybrid formation and is independent of the origin of the DSB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C88 are well-supported by the transcription-dependence experiments (Figures 3b, 5e, 6e) showing that hybrids form only when transcription is active. The comparison of FLPm and HO-induced breaks (C88) strengthens the conclusion. Citation to supporting literature in human cells (C76) provides additional context. The authors appropriately distinguish their interpretation from alternative models proposing de novo synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Directing single-strand breaks to the transcribed or non-transcribed strand leads to DSBs that are repaired with the same efficiency, but repair intermediates appear slightly faster under high transcription. This may reflect increased accessibility of repair factors to transcribed regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by experimental data in Figures 2 and 4. The interpretation (C91-C92) is reasonable and supported by citations to previous work. This result provides nuance to the main findings by showing that transcription can have both positive (enhanced recruitment) and negative (hybrid formation) effects on repair. The data are clear though the effect is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "All conditions promoting DNA-RNA hybridization could potentially impair HR at transcribed regions. The mechanism may involve interference with DSB resection, and hybrids may need to be removed to allow loading of RPA and Rad51. The increased plasmid loss in mutants may result from HR defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93, C103-C106 are largely speculative (C103-C105 explicitly use 'could', 'might', 'envision'). While the speculation is reasonable and consistent with cited literature (C102), the manuscript does not directly test resection or RPA/Rad51 loading. Claim C106 is a reasonable inference but not directly demonstrated. These claims represent discussion and interpretation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C86",
+      "C87",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose that break-induced hybrids are incidental consequences of DNA breakage during transcription, and speculate about the roles of various factors in hybrid resolution and the compatibility of their model with other findings in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79, C86-C87, C94-C96 are explicitly speculative (using 'favor the idea', 'might', 'cannot discard', 'envision'). These represent discussion points and acknowledgment of study limitations rather than demonstrated results. While the speculation is reasonable and appropriately qualified, it does not constitute supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establishing the context of DSB repair mechanisms, the role of transcription in repair pathway choice, and the conflicting literature on the role of DNA-RNA hybrids at DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C23 represent established knowledge and literature review. These are appropriately cited and provide necessary context for the study. They are not novel findings but are accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C74",
+      "C77",
+      "C82",
+      "C84",
+      "C91",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C107"
+    ],
+    "result": "Various claims citing previous literature to support interpretations, provide context, or contrast with the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C74, C77, C82, C84, C91, C97-C102, C107 appropriately cite previous literature. These citations are used to contextualize findings, support interpretations, or highlight contrasts with other work. The citations appear appropriate and accurately represented based on the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C83"
+    ],
+    "result": "RNase H overexpression caused no defect in the repair systems, and transcription did not increase the frequency of HR after break induction in the systems used in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C83 are negative results that are important for the interpretation. C81 is supported by Figure 5 data showing no defect from RNase H overexpression. C83 is supported by data in Figures 2, 5, and 6 showing no increase in HR frequency with transcription. These negative results are important for arguing against the 'positive role' model for hybrids.",
+    "result_type": "MINOR"
+  }
+]

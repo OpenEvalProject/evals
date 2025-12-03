@@ -1,0 +1,430 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Current imaging systems face fundamental tradeoffs between field of view and resolution, preventing simultaneous observation of biological processes across multiple spatial scales. Complex biological systems span many orders of magnitude in spatial scale, but no single imaging system currently allows unrestricted access to all scales simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C10 establish the scientific motivation and gap in existing technology. These are well-supported by citations to established literature (C7, C8) and represent accepted knowledge about imaging system limitations (C9, C10). The claims accurately describe the problem the MCAM addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Existing approaches to imaging freely moving organisms have significant limitations. Head-fixation restricts natural behavior, while tracking microscopes are limited to single organisms and cannot scale to observe multiple organisms simultaneously at high resolution over large areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 are well-supported by multiple citations to published research. The limitations of head-fixation (C11-C12) and tracking microscopes (C13-C16) are documented in the cited literature. These claims accurately characterize the state of the field and establish context for the MCAM's advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Alternative imaging strategies including time-sequential scanning and reducing magnification have fundamental limitations. Time-sequential approaches cannot simultaneously observe living processes, while reducing magnification trades off spatial resolution and can miss morphological features and behavioral signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are supported by citations to published research and describe well-known limitations of existing approaches. The reasoning about why these approaches are inadequate for the target application is sound and logically consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Single-lens imaging systems face fundamental optical and practical limitations. Geometrical aberrations increase nonlinearly with lens diameter, requiring additional corrective lenses that increase cost and complexity. Most commercial microscope lenses transfer less than 50 megapixels, and even specialized gigapixel systems are prohibitively expensive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 are well-supported by citations to optical physics literature and technical specifications. The claim about the $168 million telescope camera (C29) provides concrete evidence of cost barriers. The logical progression from optical principles to practical limitations is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The MCAM is a scalable multi-camera array microscope that enables gigapixel-scale imaging with 18 \u03bcm resolution over hundreds of square centimeters. The system uses up to 96 cameras with overlapping fields of view, costs significantly less than alternatives, and can theoretically scale to arbitrarily large fields of view.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C30-C37 describe the core MCAM system and its capabilities. These are supported by technical specifications, cost data (C31, C54-C57), and demonstrations with multiple species (C5, C36). The claim of linear cost scaling (C30) is supported by the modular architecture. The theoretical scalability claim (C35) is appropriately qualified as theoretical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The MCAM hardware consists of 96 CMOS sensors (10 MP each, 1.4 \u03bcm pixels) arranged in an 8\u00d712 array with 19 mm pitch, using 25 mm focal length lenses. The system operates at 1 Hz in full-frame mode or 12 Hz in single-sensor mode, achieving 18 \u03bcm full-pitch resolution at 150 mm working distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 provide detailed technical specifications that are internally consistent and supported by the Methods section. The specifications are precise and verifiable. The frame rate limitations (C43, C46) are clearly stated. Resolution measurements (C48) are supported by Appendix 1\u2014figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The MCAM's depth of field is characterized by three measures: theoretical Rayleigh criterion of 0.28 mm, experimental axial range of 2.54 mm where resolution remains within 2\u00d7 of maximum, and contrast FWHM of 1.95 mm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide complementary measures of depth of field. C49 is a theoretical calculation, while C50-C51 are experimental measurements. The use of multiple metrics is appropriate for characterizing depth of field. The experimental measurements are stated to be in Appendix 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The MCAM design uses rectangular sensors to achieve 52% overlap along the longer dimension and <10% along the shorter dimension, ensuring any point is imaged by at least two cameras. The total component cost for 96 cameras is $14,352 ($30 per sensor, $75 per lens, $267 per FPGA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe the overlapping configuration that enables stitching and stereoscopic imaging. Claims C54-C57 provide detailed cost breakdown that supports the affordability claims. The arithmetic in C57 is verifiable: (96\u00d7$30) + (96\u00d7$75) + (16\u00d7$267) = $14,352.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The MCAM recorded continuously at 0.74 Hz for one hour, generating 2.5 TB of raw data and 1.17 TB of stitched data. The system achieves approximately 1 GB/s write speed using solid state drives, representing a significant speedup over previous gigapixel systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide concrete performance data from actual experiments. The data volumes are consistent with the stated specifications (96 cameras \u00d7 10 MP \u00d7 ~1 Hz). The comparison to prior work (C59) is supported by citation to Brady et al., 2012.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In MCAM images, 8 dpf zebrafish are captured by 9699\u00b12758 pixels (n=93), compared to less than 400 pixels with a 20 MP camera or ~100 pixels with a 3 MP camera covering the same field of view.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 provides quantitative data with sample size and standard deviation. Claims C61-C62 provide comparative calculations that demonstrate the MCAM's advantage. The comparisons are fair (same FOV) and the calculations are reasonable. Figure 1E provides visual confirmation of C62.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A Faster-RCNN object detection network was adapted for gigapixel-scale zebrafish detection. Because MCAM images are too large for standard GPU processing, the network was trained on image patches. Transfer learning with synthetic occlusion augmentation enabled accurate detection even when zebrafish occluded one another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 describe the object detection approach with appropriate technical detail. The challenge of GPU memory limitations (C110) is a known issue with gigapixel images. The use of synthetic occlusion (C111) is supported by citations and results shown in Appendix 1\u2014figure 5I and Video 3. The approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The MCAM's high resolution enabled individual identification of zebrafish younger than 21 days old by morphological differences, which has not been shown before. A Siamese neural network was trained to track individual fish across frames using melanophore patterns and body morphology. The resolution also enabled tail tracking and eye position measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 describe novel capabilities enabled by the MCAM's resolution. The novelty claim (C113) is appropriately qualified. The Siamese network approach (C114) is supported by Figure 2C showing clear clustering by individual identity. The behavioral measurements (C116) are demonstrated in Figures 2D-E. This represents a significant technical achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The MCAM's overlapping field-of-view configuration enables stereoscopic depth tracking with approximately 100 \u03bcm accuracy over a >5 mm depth range. The system uses scale-invariant feature transforms to match features between adjacent cameras and calculate depth from disparity, revealing 3D swim trajectories typically inaccessible without dual-view systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63, C117-C121 describe the stereoscopic depth tracking capability. The accuracy specification (C63) is supported by experimental validation in Appendix 1\u2014figure 7. The algorithm description (C120) is technically sound. Figure 2F-G demonstrates the capability with zebrafish 3D trajectories. This is a novel capability enabled by the MCAM architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The MCAM successfully imaged multiple model organisms including C. elegans at high resolution over large areas. Videos captured approximately 58,000 worms per frame at 450 pixels per worm. Previously unreported swarming behavior was observed in NYL2629 and unc-3 mutant strains but not in wildtype, demonstrating the MCAM's utility for studying collective behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C64-C68, C122-C124 demonstrate the MCAM's versatility across species. The quantitative data (C64) is substantial. The novel observations of swarming behavior (C65-C67) are clearly documented in Figure 3 and Videos 4-6. The negative control (C68) strengthens the findings. CNN-based segmentation (C123) and computer vision tracking (C124) demonstrate appropriate analysis methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Quantitative analysis of C. elegans revealed significant differences in worm and swarm density across strains. Wildtype had 154\u00b10.254 worms/cm\u00b2 and 1.85\u00b10.01 swarms/cm\u00b2, NYL2629 had 262\u00b11.126 worms/cm\u00b2 and 45.92\u00b10.073 swarms/cm\u00b2, and Unc3 had 36\u00b10.203 worms/cm\u00b2 and 10.65\u00b10.025 swarms/cm\u00b2. Despite higher worm density, wildtype formed significantly fewer swarms than Unc3 (p=2.3\u00d710\u207b\u2076\u2076, Cohen's d=0.96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 provide detailed quantitative data with appropriate statistics. The measurements are precise with small error bars. The statistical comparison (C131) uses appropriate tests (one-sided t-test) and reports both p-value and effect size. The large effect size and extremely small p-value indicate a robust finding. Figure 3E visualizes these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The MCAM is a useful tool for quantitative study of factors controlling social clustering and swarming in C. elegans. Recent research shows swarming behaviors are modulated by oxygen levels and animal density, and further investigation of the underlying causes is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 appropriately contextualize the findings with citations to recent literature and acknowledge that further investigation is needed. The claim that MCAM is useful for this research (C70) is supported by the demonstrated capabilities and quantitative data in Figure 3E.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The MCAM successfully imaged slime mold (Physarum polycephalum) behavior across multiple spatial and temporal scales, including maze traversal over 96 hours, growth and exploration over 46 hours in a petri dish, and cytoplasmic flow at higher frame rates in single-camera mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 demonstrate the MCAM's capability for time-lapse imaging and multi-scale observation. The maze traversal (C72) is shown in Figure 4A and Video 7. The 46-hour time-lapse (C73) is in Video 8. The cytoplasmic flow observation (C74) demonstrates the flexibility of single-camera mode. All observations are supported by appropriate citations to prior work on slime mold behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Carpenter ant activity levels are tightly locked to ambient light. When light and dark cycles were alternated, clear fluctuations in activity were observed, including dissolution of sleeping ant clusters and increased movement, as well as social interactions and grooming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 demonstrate the MCAM's capability for behavioral observation in social insects. The light-locked behavior (C75) is supported by citations. The observations (C76) are documented in Figure 4B and Video 10. The ability to resolve fine details like grooming demonstrates the system's resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The MCAM enabled observation of large-scale social behavioral patterns in adult Drosophila, including face-to-face interactions and wing mutations, while simultaneously resolving small features such as hairs on individual legs, grooming behavior, and sex determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 demonstrate the MCAM's multi-scale imaging capability with Drosophila. The observations are documented in Figure 4C and Video 11. The ability to simultaneously observe population-level behavior and individual-level morphology represents a key advantage of the MCAM approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C88"
+    ],
+    "result": "The MCAM enables fluorescence imaging of freely moving organisms, including dual-channel fluorescence acquisition using overlapping fields of view. Wide-field fluorescence video was captured of freely moving Drosophila larvae and zebrafish expressing genetically encoded calcium indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C88 describe the MCAM's fluorescence imaging capabilities. The demonstrations with GCaMP6-expressing organisms (C79-C80) show proof-of-concept. The dual-channel capability (C81) is a novel feature enabled by the overlapping FOV design. However, the authors appropriately note this requires further development (see C90, C97-C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The MCAM's parallelized imaging design overcomes limitations of single-objective systems, allowing high-resolution imaging over large fields of view. The system provides a novel, flexible arrangement compared to prior multi-microscope or multiscale lens designs, with adjustable camera number, frame rate, and working distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 summarize the MCAM's advantages and novelty. The comparison to prior work (C83) is supported by appropriate citations. The flexibility claims (C85-C86) are supported by the demonstrated operational modes. The overall assessment (C87) is justified by the demonstrated capabilities across multiple species and applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The MCAM's unique capabilities open new research directions. 3D tracking adds a new dimension to behavioral analysis, dual-channel fluorescence could enable novel experiments with further development, and overlapped sampling could facilitate applications like dense height map estimation via photogrammetric methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 are largely speculative about future applications. While C89 is supported by the demonstrated 3D tracking capability, C90 explicitly requires 'additional development and refinement,' and C91 is purely speculative ('likely a wide variety'). These are reasonable projections but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The current MCAM is limited to 1 Hz frame rate for gigapixel imaging, which is too slow for some applications like zebrafish swim kinematics. Multiple strategies are available or being explored to increase frame rates, including faster USB, distributed computing, alternative FPGA protocols, on-chip processing, and pixel binning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 honestly acknowledge current limitations and propose solutions. The 1 Hz limitation (C92) is clearly stated with comparison to prior work. The specific limitation for zebrafish kinematics (C93) is supported by citation. The proposed solutions (C94-C96) are technically reasonable, though C95-C96 are speculative about future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The MCAM's fluorescence imaging capabilities could be improved with higher sensitivity sensors, higher NA optics, improved ratiometric acquisition, and optical sectioning. With appropriate effort, the system could enable high-quality functional fluorescence imaging during free movement over macroscopic areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 are speculative about future improvements to fluorescence imaging. While the proposed improvements (C97-C98) are technically reasonable, they have not been demonstrated. The claim that the system 'could soon unlock' these capabilities (C99) is optimistic but not supported by current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The demonstrated 18 \u03bcm resolution is typically insufficient to resolve individual cells unless sparsely labeled. Tighter camera packing and updated optics may enable cellular-scale detail in future designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 honestly acknowledge resolution limitations. The assessment that 18 \u03bcm is insufficient for most cellular imaging (C100) is accurate. The suggestion for future improvement (C101) is reasonable but speculative. This represents appropriate acknowledgment of current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Large-area, high-resolution imaging has applications beyond model organism research, including industrial inspection, semiconductor metrology, pathology, and monitoring bacterial colonies and cell cultures. The MCAM platform could potentially be utilized for these applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 discuss potential applications beyond the demonstrated uses. The importance of large-area imaging in these fields (C102-C103) is supported by citations. The potential applications to pathology and cell culture (C104-C105) are appropriately qualified as speculative ('can unlock,' 'may be able to').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The MCAM fits within computational imaging approaches designed for post-processing rather than direct viewing. Improving processing software will be critical to realize the system's benefits. As sensor technology improves with on-chip processing, the parallelized architecture can overcome resolution/FOV tradeoffs while yielding manageable datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 appropriately contextualize the MCAM within computational imaging (C106, supported by citation). The emphasis on software development (C107) is justified given the massive data volumes. The forward-looking statement (C108) is appropriately qualified as anticipatory and supported by citations to on-chip processing technology.",
+    "result_type": "MINOR"
+  }
+]

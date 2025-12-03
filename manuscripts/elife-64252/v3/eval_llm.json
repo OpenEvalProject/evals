@@ -1,0 +1,389 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Transfected TIS granules recapitulate the mesh-like structure of endogenous TIS granules and show time-dependent changes in protein dynamics. At 5 hr post-transfection, TIS granules show 43% fluorescence recovery in 10 s, while at 16 hr they show only 20% recovery in 120 s, suggesting somewhat dynamic protein components despite irregular shape. This is reminiscent of L-bodies in frog oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 provide consistent FRAP data at different time points showing dynamic protein components in mesh-like structures, supported by imaging data in Figure 1A and Figure 1\u2014figure supplement 1A. The comparison to L-bodies (C34) is supported by citation. However, C35 appropriately notes that endogenous TIS granule properties remain unknown, as all experiments used tagged constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Point mutations disrupting RNA binding in TIS11B convert mesh-like assemblies into sphere-like condensates that are no longer intertwined with the ER, demonstrating that mesh-like organization requires mRNA recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are well-supported by data in Figure 1B and Figure 1\u2014figure supplement 1B-E showing multiple RNA-binding mutants (CC, FF, KK, RK) that disrupt mesh formation. The RNA oligonucleotide pulldown (Figure 1\u2014figure supplement 1C) confirms loss of RNA binding in mutants, establishing the causal link between RNA binding and mesh-like morphology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Chimeric proteins containing the TIS11B RNA-binding domain fused to different multivalent domains (SUMO-SIM or FUS-IDR) generate mesh-like condensates with highly mobile protein components in cells, demonstrating that mesh-like morphology is determined by the RNA-binding domain and does not require ER intertwinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 are strongly supported by systematic experiments with chimeric proteins shown in Figures 1C-E and Figure 1\u2014figure supplement 2. FRAP data (C44, Figure 1E) demonstrates dynamic protein components. RNA-FISH (C43, Figure 1\u2014figure supplement 2C) confirms functional RNA recruitment. The key conclusion that ER intertwinement is not necessary (C40) is well-supported by SUMO-SIM-TIS data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In vitro, FUS-TIS forms liquid-like sphere condensates that transform into mesh-like condensates upon addition of specific TIS11B target mRNA 3'UTRs (CD47, CD274, ELAVL1) but not control RNAs (FUS 3'UTR). The mesh-like condensates retain dynamic protein components as shown by FRAP, and network formation is an intrinsic RNA property that is concentration-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are well-supported by in vitro reconstitution data in Figures 2A-C and supplements. FRAP experiments (C50, Figure 2B) at 2 and 16 hr confirm dynamic proteins. Time-course data (C51) and concentration-dependence experiments (C52-C53) are shown in multiple figures. The specificity of RNA-induced network formation is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Network formation by RNAs is not solely determined by RNA length, as both network and sphere formation occur for RNAs shorter than 2000 nt. Within this size-restricted cohort, neither the number of AU-rich elements nor GC-content significantly influences network formation. RNA alone does not phase separate without protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by systematic testing of 19 additional RNAs (Figures 2D, 3A-C). Statistical analysis shows no significant difference in AU-rich elements (C56, Figure 3B) or GC-content (C57, Figure 3C) between sphere- and network-forming RNAs <2000 nt. Control experiments (C55, Figure 3\u2014figure supplement 2B) confirm RNA alone does not phase separate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "RNA structure predictions reveal a strong association between network formation and predicted 'unstructured-ness' of RNAs. Network-forming RNAs have large disordered regions (LDRs) with high normalized ensemble diversity (NED) values (>0.280), while sphere-forming RNAs are predominantly structured with low NED values (<0.265). NED values correctly predict sphere vs. network formation for 79% (19/24) of tested RNAs, and a loss-of-function mutant confirms that LDRs determine network formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 are strongly supported by RNAfold predictions (Figures 3D-F), experimental validation of 24 RNAs (C64, Figure 3G), and a loss-of-function experiment with TNFSF11 3'UTR mutant (C66, Figures 3H-I). The statistical significance (Mann-Whitney test, p<0.0003) for NED value differences (C61, Figure 3F) and high prediction accuracy (79%) provide robust support for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multiple network-forming RNAs work additively to induce network formation at physiologically relevant concentrations. The minimum concentration for network formation (20 nM for CD47 and ELAVL1 3'UTRs) is higher than estimated cellular mRNA concentrations (8 pM-8 nM), but mixing 10 mRNAs requires only 2 nM each, which is substantially lower than average cellular mRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by concentration-dependent experiments (Figure 2C) and RNA mixing experiments (Figure 4A-B). The comparison to cellular mRNA concentrations (C69) uses published estimates with appropriate citations. The additive effect (C71) is demonstrated by co-localization of fluorescently labeled RNAs (C70, Figure 4A) and successful network formation with mixed RNAs at low concentrations (C72, Figure 4B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Native gel electrophoresis demonstrates that network-forming RNAs with LDRs form higher-order intermolecular RNA-RNA interactions in vitro, appearing as high molecular weight species, while sphere-forming RNAs with strong local structures do not. The observed smear is not due to RNA degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are well-supported by native and denaturing gel electrophoresis data (Figure 5C). The appearance of high molecular weight species only with network-forming RNAs (C76) and intact RNA on denaturing gels (C77) provide strong evidence for intermolecular RNA-RNA interactions. The hypothesis (C75) is appropriately stated as such and tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In vitro reconstitution with engineered RNAs demonstrates that structured 3'UTRs (TLR8, MYC) generate sphere-like condensates, while the same RNAs with added dimerization elements (D1-TLR8-D2, D1-MYC-D2) that enable extensive RNA-RNA interactions induce mesh-like condensate formation, proving that an extensive multivalent RNA interaction network can drive mesh-like condensate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are strongly supported by the in vitro reconstitution experiment with engineered RNAs (Figure 5F and Figure 5\u2014figure supplement 1). Native gel electrophoresis (Figure 5E) confirms formation of crosslinked RNA networks with dimerization elements. This is a key proof-of-principle experiment demonstrating causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In vivo reconstitution using the MS2 system demonstrates that mesh-like condensates form when all required components are present (SUMO-SIM-MS2, TLR8/MYC 3'UTRs with MS2-binding sites and dimerization elements D1/D2). Omission of MS2-binding sites or MS2 coat protein completely prevents mesh-like condensate formation, while omission of dimerization elements results in predominantly sphere-like condensates, confirming that RNA recruitment is absolutely required and that extensive RNA interaction networks substantially increase mesh-like condensate formation in living cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 are strongly supported by systematic in vivo reconstitution experiments (Figure 6A-E) with appropriate controls. Quantification (Figure 6E) shows statistically significant differences (Mann-Whitney test, p=0.001). The experiments elegantly dissect the requirements for mesh-like condensate formation in cells, confirming the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Transcriptome-wide analysis shows that mRNAs with multiple AU-rich elements and HuR-binding sites have longer 3'UTRs and higher NED values. The RRM1/2 of HuR, when fused to multivalent domains (TIS11B N/C-terminus or FUS-IDR), is sufficient to generate mesh-like condensates, demonstrating that multiple chimeric proteins with different RNA-binding domains can form mesh-like condensates in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 are supported by transcriptome-wide analysis (Figure 6\u2014figure supplement 1A-D) with highly significant statistical tests (Kruskal-Wallis, p<10^-37 to p=0) and experimental validation with HuR chimeric proteins (Figures 6F-G). Table 1 summarizes multiple successful chimeric protein combinations, demonstrating generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Time-lapse imaging of condensate fusion reveals that condensates with structured RNAs (TLR8 3'UTR) fully fuse within 90 s, while condensates with LDR-containing RNAs (CD47 3'UTR) largely retain their shape, connect at contact sites, and grow into irregular assemblies. Despite filamentous morphology, protein components remain highly mobile as shown by FRAP at 2 and 16 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are well-supported by time-lapse confocal imaging (Figures 7A-C) showing distinct fusion behaviors. FRAP data (C98, Figure 2B and Figure 2\u2014figure supplement 1F) confirms protein mobility despite irregular shape. These observations provide mechanistic insight into how mesh-like condensates form and maintain dynamic protein components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "High-resolution imaging and FRAP experiments reveal that sphere-forming mRNAs are uniformly distributed and highly mobile within condensates, while network-forming mRNAs are unevenly distributed, form an underlying scaffold resembling a skeleton, and show no fluorescence recovery, supporting their role as a static RNA matrix for mesh-like condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are strongly supported by high-resolution confocal imaging (Figure 7D, Figure 7\u2014figure supplement 1A) and FRAP experiments on RNAs (Figure 7F, Figure 7\u2014figure supplement 1B). The contrasting behaviors of sphere-forming vs. network-forming RNAs provide compelling evidence for the RNA matrix model. Multiple RNAs of various lengths were tested, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Multivalent RNA-RNA interactions drive mesh-like condensate formation. Both mesh-like and sphere-like condensates contain RNAs, but different types: sphere-like condensates contain structured RNAs while mesh-like condensates contain RNAs with high multivalency that form pervasive intermolecular interactions. This characteristic FRAP behavior (dynamic proteins, non-dynamic RNAs) is also observed in naturally occurring L-bodies. RNA multivalency can be tested experimentally through native gel analysis, and the formation of multivalent RNA interaction networks is an emergent property of unstructured mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 represent well-supported summary conclusions from the entire study. The evidence spans in vitro reconstitution, in vivo experiments, FRAP data, native gels, and comparison to natural systems (L-bodies, C106). The claim about emergent properties (C110) is appropriately qualified as inference/speculation based on the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Predominantly structured RNAs that form extensive intermolecular interactions through dimerization motifs can form mesh-like condensates, as demonstrated by in vivo reconstitution. TIS11B target mRNAs (characterized by multiple AU-rich elements) have higher NED values than 3'UTRs without AU-rich elements, predicting that mRNAs enriched in TIS granules are less structured with higher tendency for multivalent RNA-RNA interactions, making an underlying RNA matrix likely responsible for TIS granule mesh-like morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by the in vivo reconstitution with dimerization elements (C112, Figure 6) and transcriptome-wide NED analysis (C113, Figure 6\u2014figure supplement 1A-B). However, C114 is appropriately qualified as prediction/speculation about endogenous TIS granules, as direct experimental evidence for the RNA matrix in endogenous TIS granules is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "3'UTRs may fulfill structural roles as scaffolding elements for cytoplasmic RNA granules, similar to lncRNAs in nuclear bodies. Both 3'UTRs and lncRNAs have similar AU-content and hexamer composition differing from coding regions, and higher AU-content is associated with decreased RNA structure and higher flexibility. Interacting 3'UTRs may scaffold additional cytoplasmic membraneless compartments beyond TIS granules and L-bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 represent reasonable inferences and speculation based on the study's findings. The comparison to lncRNAs (C116) and the connection between AU-content and RNA flexibility (C117) are supported by citation. Claims C115 and C118 are appropriately presented as speculation about broader implications, supported by the demonstrated scaffolding role in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Formation of filamentous and mesh-like condensates is not restricted to the chimeric proteins used in this study but has been observed by others. Different filamentous condensates have different material properties: some (like PR30 with poly-rA/poly-rU) are solid with arrested phase separation, while others are dynamic, with material properties regulated by the extent and strength of RNA-protein and RNA-RNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 appropriately place the current work in context of published literature with multiple citations. The comparison to PR30 condensates (C120-C121) highlights important differences in material properties. C122 represents a reasonable synthesis of observations from multiple systems, appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Mesh-like condensates have a larger surface-to-volume ratio compared to spherical condensates, giving them an advantage for surface reactions. The mesh-like shape of TIS granule network is necessary for its function during membrane protein translation, as translation in the TIGER domain enables protein complex formation and promotes trafficking to the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 are based on geometric principles and represent reasonable inferences. Claims C125-C126 are supported by citation to previous work (Ma and Mayr, 2018). However, the current study does not directly test whether mesh-like shape is necessary for TIS granule function\u2014this is inferred from previous work and the current structural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "One potential biological implication of intermolecular mRNA-mRNA interactions in TIS granules could be facilitating co-translational protein complex assembly. While the majority of protein complexes form co-translationally in yeast, the mechanism for bringing protein subunits into proximity is unclear. Physical interactions between LDRs in 3'UTRs may provide the necessary proximity of translating ribosomes and nascent peptide chains to promote complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C129 represent speculation about biological function. While C128 is supported by citation, C127 and C129 are explicitly presented as speculation without direct experimental evidence. This represents an interesting hypothesis for future work but is not tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The generation of mesh-like networks (membrane-enclosed or membraneless) is conceptually similar, resulting from the balance of two opposing forces: surface tension promoting fusion and an underlying matrix (RNA or protein) preventing full fusion. This interplay was observed in ER network reconstitution and is mimicked by phase-separated protein-RNA condensates, demonstrating that dynamic subcellular structures with complex shapes can be generated through phase separation without lipid membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 present a unifying model supported by the experimental data (Figure 7E) and comparison to ER network formation (C132, citation to Powers et al., 2017). The model (C131) is appropriately presented as a proposal based on fusion experiments and imaging data. The comparison between membrane-enclosed and membraneless networks (C133-C134) represents a valuable conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "TIS granules are mesh-like condensates that share a large surface area with the rough ER, are present in various cell types under physiological conditions, provide a translation environment for mRNAs with AU-rich elements in their 3'UTRs, and are important for membrane protein trafficking through the TIGER domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C13 describe established characteristics of TIS granules from prior work, appropriately supported by citations (Ma and Mayr, 2018; Mayr, 2019). These claims provide essential background context for the current study and are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on membraneless organelles and phase separation: Most known membraneless organelles are spherical (stress granules, P granules, nucleolus), but mesh-like condensates (TIS granules, FXR1 condensates, L-bodies) have been recently discovered. Many condensates contain protein and RNA, both contributing to multivalency. RNA can phase separate without protein and can promote or inhibit phase separation. Different phase separation systems have material properties ranging from liquid-like to solid, with surface tension promoting sphere formation. The prevailing view has been that non-spherical condensates must be gel-like or solid aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C25 provide comprehensive background on the field, all appropriately supported by multiple citations to published literature. These claims establish the context and prevailing paradigm that the current study challenges. The knowledge claims are accurate representations of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The study's main findings: In vitro and in vivo reconstitution revealed that minimal components for mesh-like condensates are a multivalent RNA-binding protein concentrating RNAs that form extensive intermolecular mRNA-mRNA interactions. mRNAs with large unstructured regions form a pervasive interaction network acting as condensate skeleton, preventing full fusion and driving formation of irregularly shaped organelles. The large surface area may promote interactions at surfaces and interfaces with other organelles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C26-C29 represent the core findings and conclusions of the study, well-supported by the comprehensive experimental evidence described in other result groups. These claims accurately summarize the major discoveries. C6 is appropriately qualified as speculation about functional consequences.",
+    "result_type": "MAJOR"
+  }
+]

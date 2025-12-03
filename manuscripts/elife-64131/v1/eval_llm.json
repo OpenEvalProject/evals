@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors identified a protruding acidic patch (PAP) on the exterior of the Rad51 presynaptic filament through structural analysis. This PAP consists of residues E205, E206, and D209 in S. pombe Rad51, is among the most negatively charged regions on the protein surface, and shows structural conservation in human and S. cerevisiae Rad51.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C51-C58 collectively demonstrate the identification and characterization of the PAP through homology modeling and structural analysis. The structural models show the PAP's location, charge distribution, and conservation across species. The analysis is based on established structural modeling approaches and comparison with published structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The rad51-E206A mutation specifically impairs Rad55-Rad57-dependent DNA repair without affecting Swi5-Sfr1-dependent repair. The E206A mutation reduces Rad51-Rad55-Rad57 complex formation in vivo, but this defect is suppressed by Swi5-Sfr1 through a mechanism that does not involve enhancing physical binding between Rad51 and Rad55-Rad57.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C75 provide converging genetic and biochemical evidence that E206A specifically affects Rad55-Rad57 function. The clonogenic survival assays (C59-C64), genetic suppression experiments (C65-C68), co-IP data (C71-C73), and protein stability controls (C69-C70) collectively support this conclusion. The epistasis analysis and suppression patterns are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Rad51-E206A retains intrinsic recombinase activity comparable to wild-type Rad51. The mutant protein binds DNA normally, hydrolyzes ATP at wild-type levels, performs strand exchange, and can be stimulated by Swi5-Sfr1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 demonstrate through multiple biochemical assays (EMSAs, ATPase assays, strand exchange assays) that the E206A mutation does not impair Rad51's core enzymatic functions. The data show comparable activity to wild-type across all tested parameters, supporting the conclusion that the mutation specifically affects protein-protein interactions rather than catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Neutralization of the PAP through the EED triple mutation (E205A, E206A, D209A) completely abolishes Rad51-dependent DNA repair. Individual mutations show varying severity (D209A > E206A > E205A), and charge-reversal mutations (E206K) phenocopy the complete neutralization. The PAP is important but not essential for Rad55-Rad57 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C96 demonstrate through genetic analysis, structural modeling, and co-IP experiments that PAP neutralization eliminates DNA repair function. The hierarchical contribution of individual residues (C90), the correlation between binding defects and phenotypic severity (C91-C92), and the charge-reversal data (C95-C96) provide strong support. The residual binding in rad51-EED (C94) appropriately qualifies the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The rad51-EED mutation causes a drastic reduction in Rad51 foci formation at DNA damage sites, comparable to rad57\u0394 sfr1\u0394 and rad52\u0394 mutants. This indicates that the severe DNA damage sensitivity of rad51-EED stems from defects in Rad51 recruitment to sites of DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by cytological analysis showing reduced Rad51 foci in rad51-EED. The comparison to rad57\u0394 sfr1\u0394 and rad52\u0394 provides appropriate context. However, the quantification method using semi-automated FIJI analysis should ideally be validated, and the number of nuclei analyzed (n values in Figure 5C) appears adequate for statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Rad51-EED retains intrinsic recombinase activity and can be stimulated by Swi5-Sfr1. Unexpectedly, Rad51-EED shows increased strand exchange activity compared to wild-type, indicating that PAP neutralization does not impair Rad51's catalytic function or its interaction with Swi5-Sfr1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 demonstrate through EMSAs and strand exchange assays that Rad51-EED maintains catalytic activity. The unexpected increase in activity (C101) is appropriately noted as unclear in mechanism (C102). The conclusion that the severe in vivo phenotype is not due to Swi5-Sfr1 defects (C103-C104) is supported by the biochemical data, though the subtle reduction in Swi5-Sfr1 binding (mentioned in text) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The PAP is essential for the Rad51-Rad52 interaction. While single and double mutations show varying effects, the EED triple mutation completely abolishes Rad51-Rad52 complex formation both in vivo and in vitro. The severe DNA damage sensitivity of rad51-EED is attributed to defects in interactions with both Rad55-Rad57 and Rad52.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 provide strong evidence through in vivo and in vitro co-IP experiments that the PAP is essential for Rad52 binding. The complete loss of interaction with Rad51-EED (C106, C110) in both contexts, combined with the graded effects of partial mutations (C105), supports the conclusion. The attribution of phenotypic severity to combined defects (C108) is logical given the individual interaction defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The PAP is important for the Rad51-Rad54 interaction. The EED mutation reduces Rad51-Rad54 co-IP by approximately threefold and renders Rad51 less sensitive to Rad54 stimulation, requiring approximately fourfold more Rad54 to achieve maximal strand exchange activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 demonstrate through in vitro co-IP and functional strand exchange assays that the PAP facilitates Rad54 interaction. The quantitative measurements (threefold reduction in binding, fourfold increase in Rad54 requirement) provide specific evidence. The functional consequence in strand exchange assays validates the biological relevance of the binding defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The PAP is a novel motif of Rad51 that is critically important for interactions with multiple auxiliary factors (Rad55-Rad57, Rad52, and Rad54). The authors propose that the PAP is a fundamental motif commonly utilized by recombination auxiliary factors to potentiate Rad51.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 represent the central conclusion of the manuscript, synthesizing the findings about PAP interactions with multiple auxiliary factors. The proposal that the PAP is a fundamental motif (C116) is well-supported by the demonstrated interactions with three different auxiliary factors and the severe phenotypic consequences of PAP neutralization. This is appropriately framed as a proposal/model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The PAP is conserved in eukaryotic Rad51/Dmc1 and archaeal RadA, but not in bacterial RecA. The authors postulate that the PAP may have evolved in organisms where the RecA-family recombinase is potentiated by multiple distinct auxiliary factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 are supported by structural and sequence analysis across multiple species. The evolutionary interpretation (C118) is appropriately presented as a postulate and is consistent with the observation that bacteria lack the auxiliary factors found in eukaryotes and archaea. The structural analysis of RecA showing differences from Rad51 supports the lack of PAP conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Swi5-Sfr1 can functionally compensate for defects in Rad51-Rad55-Rad57 physical association without enhancing complex formation. This finding contradicts the model that Rad55-Rad57 and Swi5-Sfr1 comprise independent sub-pathways, suggesting instead that they collaboratively promote Rad51-dependent DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 present an important mechanistic insight about the relationship between Rad55-Rad57 and Swi5-Sfr1. The suppression of rad51-E206A by Sfr1 without enhanced binding (C119, from C61-C62 and C73) supports functional compensation. The challenge to the independent sub-pathways model (C121) is justified by the genetic data, and the proposal of collaborative function (C122) is appropriately supported by current and cited evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The PAP is particularly important for auxiliary factors that employ Rad51 mimicry (FxxA motif insertion). The PAP's proximity to the FxxA binding site suggests it may participate in electrostatic interactions and serve as a landing pad to facilitate FxxA insertion. The authors anticipate that auxiliary factors contain basic patches near their FxxA motifs that interact with the PAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C128 present a mechanistic model for PAP function. While the differential effects on different auxiliary factors (C123) and structural proximity data (C124) provide support, the proposed electrostatic mechanism (C125-C126) and predicted basic patches (C127) are speculative. The model is plausible and consistent with available data, but lacks direct experimental validation of the proposed electrostatic interactions or identification of the predicted basic patches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Despite multiple auxiliary factors utilizing the same PAP motif, competition for Rad51 binding is avoided through temporal regulation and the presence of multiple PAP motifs in the Rad51 filament. The PAP is integral to Rad51's role in HR because it facilitates interactions with auxiliary factors involved in both early (Rad52, Rad55-Rad57) and late (Rad54) stages of DNA strand exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 address a logical question about potential competition for PAP binding. The temporal regulation argument (C130) is supported by cited literature about the order of auxiliary factor recruitment. The structural argument about multiple PAP sites (C131) is valid given the filamentous nature of Rad51. The conclusion about PAP's integral role (C132) is well-supported by the demonstrated interactions across multiple HR stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "The PAP is essential for HR in S. pombe, but the extent to which it is required in other organisms remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 appropriately summarize the scope and limitations of the study. The essentiality in S. pombe (C133) is well-demonstrated by the genetic data. The acknowledgment that conservation in other organisms requires further study (C134) is appropriate given that the functional studies were conducted only in S. pombe, despite structural conservation being observed.",
+    "result_type": "MINOR"
+  }
+]

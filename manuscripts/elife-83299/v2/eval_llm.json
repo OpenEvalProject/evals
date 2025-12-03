@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C28",
+      "C29",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "FBP is identified as an in vivo sentinel metabolite that mirrors glycolytic flux in PSM cells. FBP levels show strong linear correlation with glucose concentrations (45-fold increase from 0.5-10 mM glucose) and with lactate secretion, outperforming other metabolites in correlation strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24-C29, C94-C96 collectively demonstrate FBP as a sentinel metabolite through metabolomics data (GC-MS), correlation analyses, and lactate measurements. The use of lactate as a proxy for flux (C25) is reasonable given technical limitations, though direct flux measurements would strengthen conclusions. The linear correlation data and statistical significance (p<0.01) provide robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C99"
+    ],
+    "result": "FBP supplementation specifically impairs mesoderm segmentation and disrupts segmentation clock activity in a dose-dependent manner, while other glycolytic metabolites (F6P, 3PG, F1P) do not cause these effects. FBP is taken up by PSM cells as confirmed by 13C-tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C31-C37, C99 provide converging evidence from multiple experimental approaches (morphological analysis, in situ hybridization, real-time imaging, isotope tracing). The 13C-tracing data (C36, C99) addresses concerns about FBP permeability. Controls with other metabolites (F6P, 3PG, F1P) strengthen specificity claims. Dose-dependent effects and spatial specificity (C101-C102) argue against non-specific toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Genetic overexpression of cytoPFKFB3 increases glycolytic flux and FBP levels in a glucose-dose dependent manner, lifting the upper limit of FBP beyond control levels and indicating that Pfk carries a rate-limiting role for glycolytic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C43-C48, C51-C53 demonstrate successful genetic manipulation of glycolytic flux using the cytoPFKFB3 model. Metabolomics data (GC-MS, LC-MS) and lactate measurements provide quantitative support. The observation that FBP levels saturate in controls but not in cytoPFKFB3 embryos (C48-C50) supports the rate-limiting role of Pfk. The FBP/GP ratio data (C53) provides additional evidence of dysregulated flux.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "cytoPFKFB3 overexpression causes embryonic lethality when constitutive, and results in glucose-dose dependent impairment of somite formation and arrest of segmentation clock oscillations in PSM explants, while overall growth remains comparable to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 document developmental phenotypes with appropriate quantification (somite counts, explant size, real-time imaging). The glucose-dose dependency (C58) and tissue-specific effects (C60) strengthen the interpretation that phenotypes are flux-dependent rather than artifacts of overexpression. Sample sizes appear adequate (n values provided), though statistical tests are not always specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Increased glycolytic flux or FBP levels lead to suppression of Wnt signaling activity in PSM cells, as evidenced by downregulation of Wnt target genes in both cytoPFKFB3 embryos and FBP-supplemented explants, while FGF signaling remains largely unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C75 integrate multiple lines of evidence (in situ hybridization, RNA-seq) showing consistent Wnt pathway suppression. The transcriptome analysis (C65-C71) provides genome-wide support with appropriate statistical thresholds (adjusted p<0.01). The specificity for Wnt over FGF signaling (C64) and convergence between genetic and pharmacological approaches strengthen conclusions. However, the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C106",
+      "C107",
+      "C111",
+      "C112"
+    ],
+    "result": "The developmental phenotypes of cytoPFKFB3 overexpression are flux-dependent rather than artifacts of protein overexpression, as demonstrated by glucose-dose dependency and correlation with FBP levels. Effects occur even at physiological flux ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76, C106-C107, C111-C112 establish flux-dependency through dose-response relationships. The observation of effects at physiological FBP levels (C63, C112) is important but relies on limited data (30% of embryos at 2.0 mM glucose). The glucose-titration approach provides a clever way to modulate flux, though in vivo glucose concentrations may differ from culture conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The absence of obvious in vivo phenotype at E10.5 in cytoPFKFB3 embryos reflects low in vivo glucose concentrations. When exposed to higher glucose through whole embryo culture or maternal diabetes (Akita model), cytoPFKFB3 embryos show neural tube defects and developmental delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 provide in vivo validation using two complementary approaches (WEC and maternal diabetes model). The Akita model data (C80-C82) is particularly compelling with clear phenotypic differences (50% vs <10% NTDs). However, the inference about in vivo glucose levels (C77) relies on older literature (1975) and could benefit from direct measurements. Sample sizes are adequate but relatively small for the Akita experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C121",
+      "C122"
+    ],
+    "result": "Altered glycolytic flux and FBP levels change the subcellular localization of glycolytic enzymes, particularly causing depletion of Pfkl and Aldoa from nuclear-soluble fractions. This occurs only at high FBP levels and is glucose-dose dependent in cytoPFKFB3 embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C83-C93, C121-C122 present subcellular proteomics data with appropriate statistical analysis (adjusted p<0.05, fold-change thresholds). Western blot validation (C86, C89) confirms key findings. The glucose-dose dependency (C90-C91) strengthens mechanistic interpretation. However, functional consequences of protein relocalization are not demonstrated, limiting mechanistic understanding. The threshold effect (C122) is interesting but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C108",
+      "C109",
+      "C113",
+      "C115"
+    ],
+    "result": "FBP functions as a flux-signaling metabolite connecting glycolysis and PSM patterning, potentially through modulating subcellular protein localization. Flux regulation by Pfk is critical to maintain FBP levels within a range compatible with proper development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C108-C109, C113, C115 represent the authors' integrative model. While supported by correlative evidence from multiple experiments, the mechanistic link between FBP levels, protein localization, and Wnt signaling remains unclear. The proposal is reasonable but requires additional functional validation (e.g., rescue experiments, direct demonstration of FBP-protein interactions, functional consequences of protein relocalization).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C38",
+      "C39"
+    ],
+    "result": "PSM patterning proceeds normally at glucose concentrations from 0.5-12.5 mM, with defects appearing outside this range. Wnt target gene expression is anti-correlated with glucose concentration within the physiological range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C38-C39 establish the glucose tolerance range for PSM development and document gene expression responses. The qualitative assessment of 'normal' patterning (C26) could be more rigorously quantified. The anti-correlation with Wnt genes (C38-C39) is supported by NanoString data but represents a relatively small number of genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C104",
+      "C105"
+    ],
+    "result": "The cytoPFKFB3 transgenic mouse line represents a powerful genetic model to study glycolysis, as PFKFB3 generates F2,6BP (an allosteric activator of Pfk), and the cytoplasmic-localized mutant effectively activates glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C104-C105 describe the rationale and validation of the genetic model. The biochemical basis (C40) is well-established. Citations support the localization and function of the mutant (C41-C42). The comparison to previous approaches (C104) contextualizes the advance. This represents a valuable tool, though the claim of being 'powerful' (C105) is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "In control explants, FBP levels saturate and do not increase further when glucose concentration exceeds 10 mM or when supplemented with high F6P concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 document FBP saturation in control conditions, supporting the rate-limiting role of Pfk. The data are clear from metabolomics measurements. This observation is important for interpreting the cytoPFKFB3 phenotype but represents a supporting finding rather than a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The current study's findings differ from previous work (Oginuma et al. 2020) regarding the relationship between glycolysis and Wnt signaling, potentially due to different time points of analysis (3 hr vs 16 hr). Both studies support that Wnt signaling is responsive to glycolytic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 appropriately acknowledge discrepancies with prior work and propose a reasonable explanation based on timing differences. The 3-hour timepoint choice (C118) is justified for capturing primary responses. The convergence on Wnt responsiveness (C119) despite directional differences is appropriately noted. This represents good scientific practice in contextualizing findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "FBP effects are most pronounced in posterior, undifferentiated PSM cells, while anterior PSM cells maintain segmentation clock activity, arguing against non-specific toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 document spatial specificity of FBP effects using imaging data. The inference about specificity vs. toxicity (C103) is reasonable given the spatial pattern and lack of increased cell death (C32). This observation strengthens the interpretation of FBP as a signaling molecule rather than a toxic agent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C30",
+      "C97",
+      "C98",
+      "C100",
+      "C110",
+      "C114",
+      "C120",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Background and context claims about metabolite sensing, glycolysis in development, PSM patterning mechanisms, and FBP function in other organisms, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23, C30, C97-C98, C100, C110, C114, C120, C123, C125-C128 represent literature-based context. These are appropriately cited and provide necessary background. The citations appear accurate based on the references provided. These claims establish the conceptual framework but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Specific glycolytic reactions may occur in the nucleus to provide local sources of co-factors and substrates for post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is explicitly speculative ('one possibility is') and lacks direct experimental support in this study. While the observation of nuclear glycolytic enzymes (C83) is established, their functional role remains unclear. This represents a reasonable hypothesis for future investigation but should not be considered a supported result.",
+    "result_type": "MINOR"
+  }
+]

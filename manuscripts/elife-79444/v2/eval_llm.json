@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The authors developed an updated mathematical model of the HSR that explicitly incorporates protein synthesis and maturation, where heat shock reduces protein maturation rate leading to accumulation of newly synthesized proteins (NSPs) that titrate Hsp70 and activate the HSR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47-C50, and C146-C148 describe the development and mechanism of the updated model. The model structure is clearly defined with explicit equations provided in the Methods section, establishing a mechanistic framework for NSP-based HSR activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C149"
+    ],
+    "result": "The updated model successfully recapitulates the effect of reduced protein synthesis on HSR output, as validated by rapamycin pretreatment experiments showing substantial reduction in HSR activation during heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C149 are supported by both computational modeling (Figure 1D) and experimental validation (Figure 1E, Figure 1\u2014figure supplement 1). The model prediction matches experimental observations that rapamycin treatment reduces HSR output by ~40%, with both mRNA and protein reporter levels showing concordant reductions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The model incorporates Sis1 as a basal repressor of the HSR by promoting Hsp70-Hsf1 binding, successfully recapitulating HSR activation upon Sis1 depletion in the absence of stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C68-C69 are supported by both modeling (Figure 2C) and experimental data (Figure 2B) showing 2.5-fold HSR induction upon nuclear Sis1 depletion. Claims C65-C67 provide supporting evidence from prior literature. The model accurately captures the early time points of Sis1 depletion effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The model fails to capture sustained HSR activation at later time points following prolonged Sis1 depletion, suggesting additional proteostasis breakdown mechanisms not included in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 acknowledge a limitation of the model where experimental data shows sustained HSR activation beyond what the model predicts. This is appropriately identified as a model limitation with a plausible mechanistic explanation, demonstrating critical self-assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The model recapitulates experimental variability (~20%) across biological replicates by modulating a single parameter (protein synthesis rate), attributed to differences in metabolic state of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by experimental observations (Figure 2D) and modeling results (Figure 2E). The explanation that metabolic differences affect protein synthesis rates is biologically plausible, and the model successfully captures this variability by adjusting a single parameter, demonstrating model robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The model predicts and experiments confirm that the HSR is a dose-dependent response, with cells reaching different steady-state HSE-YFP levels proportional to heat shock temperature (35-41\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by experimental data (Figure 2F) and model predictions (Figure 2G) showing temperature-dependent HSR output without parameter changes. The agreement between model and experiment across multiple temperatures demonstrates predictive capability and validates the dose-dependent nature of the response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C53",
+      "C88",
+      "C101",
+      "C102",
+      "C112",
+      "C153"
+    ],
+    "result": "Sis1 induction is dispensable for HSR deactivation following heat shock, as demonstrated by genetic decoupling experiments showing that non-inducible Sis1 strains (2xSUP35pr-SIS1) display HSR dynamics indistinguishable from wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C52-C53, C88, C101-C102, C112, and C153 are strongly supported by multiple experimental conditions (Figure 3D-F, Figure 3\u2014figure supplement 1E-F). The 2xSUP35pr-SIS1 strain was properly validated (C89-C96) and tested under sustained heat shock, pulse-recovery, and double-pulse protocols, consistently showing wild-type HSR dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The 2xSUP35pr-SIS1 strain was successfully engineered to maintain basal Sis1 expression at wild-type levels while preventing heat shock induction, as validated by growth assays and reporter measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 describe the construction and validation of the non-inducible Sis1 strain. The strain characterization is thorough, showing that two copies of SUP35pr-SIS1 restore basal expression and growth to wild-type levels (Figure 3\u2014figure supplement 1A-D), providing a valid experimental system for testing Sis1 feedback.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C111"
+    ],
+    "result": "Hsp70 induction is required for HSR deactivation during sustained stress but is less important for rapid deactivation after short heat shock pulses, as shown by differential Hsp70\u0394FBL phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C105-C107, C110-C111 are supported by experimental data showing Hsp70\u0394FBL has prolonged HSR activation during sustained heat shock (Figure 3D) but normal deactivation after 30-min pulses (Figure 3E), with defects emerging only after longer 2-hr pulses (Figure 3\u2014figure supplement 1E-F). This reveals context-dependent feedback requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Pulse-labeling experiments reveal that newly synthesized Sis1 is induced slowly (detectable at 10 min) and localizes primarily to the nucleolar periphery away from Hsf1, while newly synthesized Hsp70 (Ssa1) is induced earlier (6 min) and partially colocalizes with Hsf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C115-C125 are supported by sophisticated pulse-labeling microscopy experiments (Figure 4B-F). The spatial and temporal differences between Sis1 and Ssa1 induction are quantitatively demonstrated, providing mechanistic insight into why Sis1 is dispensable for feedback. The colocalization analysis with Hsf1 is statistically significant (p=0.029, Figure 4F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C157"
+    ],
+    "result": "Hsf1-dependent transcriptional regulation of Sis1 is required for fitness in nonfermentable carbon sources, with the 2xSUP35pr-SIS1 strain showing reduced fitness at 37\u00b0C and failure to undergo diauxic shift, and substantially slower growth in EtOH/glycerol media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C127-C131, C157 are supported by quantitative growth assays (Figure 5A-B, Figure 5\u2014figure supplement 1A). The fitness defects are specific to conditions requiring metabolic flexibility, not general growth defects, as all strains grow comparably at 30\u00b0C in glucose (C126). The phenotype is robust and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The fitness defect in nonfermentable carbon sources is due to inability to downregulate Sis1 rather than inability to induce it, as demonstrated by the 1xSUP35pr-SIS1 strain rescuing growth in EtOH/glycerol while having slow growth in glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by the dose-response relationship between Sis1 expression levels and growth phenotypes (Figure 5\u2014figure supplement 1B). The 1xSUP35pr-SIS1 rescue and the exacerbation with additional Sis1 copies provide strong evidence that dynamic regulation, not absolute induction, is critical for fitness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Transcriptional regulation of Sis1 by Hsf1 promotes fitness by coordinating stress granules and carbon metabolism, with constitutive stress granules observed in 2xSUP35pr-SIS1 cells in both glucose and EtOH/glycerol media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C138-C141 are supported by Pab1-mKate imaging showing constitutive stress granule formation in 2xSUP35pr-SIS1 cells (Figure 5C). The link between Sis1 regulation, stress granules, and metabolic fitness is mechanistically plausible given Sis1's known role in stress granule regulation (C136-C137, C158), though the causal relationship could be further strengthened.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C58",
+      "C59",
+      "C60",
+      "C142",
+      "C163",
+      "C164"
+    ],
+    "result": "The overall model supports that NSPs signal the HSR by sequestering Sis1 and Hsp70, while induction of Hsp70\u2014but not Sis1\u2014attenuates the response, demonstrating that basal repression and deactivation mechanisms can be distinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C58-C60, C142, C163-C164 represent the integrated conclusions from all experimental and modeling results. The evidence collectively supports a refined model where the core Hsp70-Hsf1 feedback loop remains central, with Sis1 playing distinct roles in basal repression versus feedback regulation. This is a well-supported synthesis of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Possible explanations for why Sis1 induction is dispensable include that increased Hsp70 levels obviate the requirement for Sis1, basal Sis1 is sufficient, or another JDP may be required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154-C156 are speculative interpretations (marked as SPECULATION/INFERENCE) that propose alternative mechanisms but lack direct experimental evidence. These represent reasonable hypotheses for future investigation but are not tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C108",
+      "C109"
+    ],
+    "result": "Non-inducible Sis1 cells show normal HSR dynamics across various heat shock protocols including 30-min and 2-hr pulses with recovery, and double pulses with 2-hr recovery periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 and C108-C109 are supported by experimental data (Figure 3E-F, Figure 3\u2014figure supplement 1E) showing that 2xSUP35pr-SIS1 maintains wild-type HSR dynamics across multiple stress regimes. This comprehensive testing strengthens the conclusion that Sis1 induction is dispensable for feedback.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Sis1 plays roles in disaggregating stress-induced biomolecular condensates and may function as an orphan ribosomal protein chaperone at the nucleolar periphery, with regulation of Sis1 levels potentially controlling condensate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158 and C160 are supported by citations to prior work. Claims C159, C161-C162 are inferences from the current pulse-labeling data (Figure 4B, D) combined with prior knowledge. The peri-nucleolar localization observed is consistent with the proposed ribosomal protein chaperone function, though this remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Previous HSR models assumed heat-induced denaturation of mature proteins as the activation signal and simulated stress as instantaneous accumulation of unfolded proteins, but these models cannot account for reduced HSR output under conditions of reduced protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 accurately describe limitations of prior models (supported by citations) and provide context for why the updated model was needed. This represents a fair assessment of prior work and clearly motivates the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C166"
+    ],
+    "result": "The new model iteration brings us closer to a mechanistically accurate and predictive understanding of the HSR by incorporating NSP-based input and Sis1 in the regulatory circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C166 is a summary conclusion supported by the collective evidence showing the model successfully predicts multiple experimental outcomes including rapamycin effects, Sis1 depletion, temperature dose-response, and experimental variability. The model demonstrates both explanatory and predictive power.",
+    "result_type": "MAJOR"
+  }
+]

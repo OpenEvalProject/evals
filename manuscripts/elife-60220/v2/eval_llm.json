@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "FAIDR is a computational method that predicts diverse functions for intrinsically disordered regions (IDRs) and identifies molecular features important for those functions. The method uses LASSO regularization and an expectation-maximization algorithm to analyze evolutionary signatures (164 features derived from mean and variance of 82 molecular features across orthologous IDRs), automatically determining which IDRs are responsible for each function and which features are most informative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 describe the FAIDR method and its capabilities. The computational approach is well-documented with appropriate statistical methods (LASSO, E-M algorithm), and the evolutionary signatures are clearly defined. The method's implementation is described in sufficient detail with code availability (C99-C100), supporting reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "FAIDR achieves predictive performance comparable to or better than specialized predictors for mitochondrial targeting signals (Mitofates) and Cdc28 substrates (Condens), with an overall average cross-validation AUC of 0.81 across 23 diverse functions. Single-species features (AUC=0.77) perform significantly worse than evolutionary signatures (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by ROC curve comparisons (Figure 2) and cross-validation results (Figure 2\u2014supplement 1). The statistical comparison between single-species and evolutionary features is appropriately conducted with paired t-test. The held-out test set approach (20% of proteins) helps avoid overfitting, though potential circularity from protein-level annotations is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Hierarchical clustering of molecular features reveals biologically meaningful groupings, with related functions clustering together. Known associations are recovered (e.g., KEN boxes with signaling, PRK1 sites with actin patches, elevated pI with mitochondrial functions), and novel features are identified including threonine depletion in RNA-binding proteins and decreased lysine variance in stress granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C43 describe feature analysis results shown in Figure 3. The clustering analysis appropriately uses t-statistics from logistic regression. Known associations provide validation, while novel findings (C39, C40, C74, C75) are clearly stated as previously unreported. The biological interpretability of results strengthens confidence, though experimental validation of novel features is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Elevated isoelectric point and hydrophobicity are necessary for mitochondrial targeting function of the Cox15 N-terminal IDR. Mutating arginines to glutamic acid (lowering pI from 12.40 to 4.04) or reducing hydrophobicity both abolish mitochondrial localization in GFP-tagged Cox15 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C44-C52 are supported by systematic mutagenesis experiments with microscopy validation (Figure 4C, Figure 4\u2014supplement 1). The experimental design appropriately tests necessity by independently manipulating pI and hydrophobicity while minimally affecting the other property. DAPI co-staining provides additional validation of mitochondrial localization. Multiple imaging days strengthen reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Increasing isoelectric point in a synthetic IDR (simulated to lack functional sequence features) partially restores mitochondrial targeting. Eight amino acid changes raising pI from 10.2 to 12.2 in the simulated Cox15 IDR create a weak synthetic targeting signal, representing the first synthetic IDR designed for a specific biological function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53-C56, and C80-C82 demonstrate sufficiency of elevated pI through gain-of-function experiments. The simulated IDR appropriately serves as a negative control, preserving some features (N-terminal residues, cleavage site) but lacking sequence-distributed features. The partial rescue (Figure 4C) supports sufficiency, though the effect is weaker than wild-type. The novelty claim (C81) is reasonable but cannot be definitively verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71"
+    ],
+    "result": "FAIDR predicts transcription factor function for the N-terminal IDR of uncharacterized protein Mfg1, based on elevated variance in glutamine repeats. This prediction is consistent with Mfg1's known nuclear localization and regulation of FLO11 expression, and Mfg1 ranks among the top predictions alongside confirmed transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C59-C71 demonstrate FAIDR's application to uncharacterized proteins. The Mfg1 prediction is supported by: (1) high FAIDR probability ranking with known TFs (Figure 5A), (2) identification of relevant molecular features (glutamine repeat variance, Figure 5C), and (3) consistency with published data on Mfg1's nuclear localization and DNA binding activity (C65-C66). However, direct experimental validation of the predicted function is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Sequence similarity between training and test sets is minimal (5% of test IDRs have BLAST e-value <10\u207b\u2075 to training IDRs) and explains at most 3% of predictive power for mitochondrial targeting and 10% for CDK targets, with similar IDRs typically found in paralogous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 address potential circularity concerns through BLAST analysis. The low percentage of similar sequences and minimal contribution to predictive power support that FAIDR learns generalizable features rather than memorizing sequences. This analysis strengthens confidence in the method's validity, though the 10% contribution for CDK targets is non-negligible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C72",
+      "C85"
+    ],
+    "result": "Several speculative hypotheses are proposed: increased histidine in signaling may relate to histidine kinase signaling (C34), modulating glutamine repeats in Mfg1 may impact transcription function (C72), and including newly discovered features may improve FAIDR's predictive power (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34, C72, and C85 are explicitly stated as speculation or hypotheses by the authors. While these are reasonable predictions based on the data, they lack experimental validation and represent proposed future work rather than demonstrated results. C72 is particularly challenging to test experimentally because variance is an evolutionary feature that cannot be directly manipulated in a single sequence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establish that IDRs play key roles in cell biology, are abundant in eukaryotic proteomes, contain conserved sequence-distributed molecular features despite low sequence similarity, but are difficult to functionally annotate using traditional alignment-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C10 provide background context supported by appropriate citations to prior work. These establish the motivation for developing FAIDR and are consistent with established knowledge in the field. C1 specifically cites the authors' previous work (Zarin et al., 2019) which forms the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Single-species molecular features perform worse than evolutionary signatures (C73), and novel associations are identified including threonine depletion in RNA-binding proteins (C74) and decreased lysine variance in stress granules (C75). Additional context is provided about mitochondrial targeting signals having multiple important features beyond pI and hydrophobicity (C76-C79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 provide important context and discussion points. C73 is supported by Figure 2\u2014supplement 1 comparison. C74-C75 identify novel findings that warrant future experimental validation. C76-C79 appropriately acknowledge limitations and cite relevant literature on mitochondrial targeting complexity, demonstrating scientific rigor in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The Cox15 experiments demonstrate that functional associations revealed by FAIDR can be used to design mutations that alter phenotype in predictable ways, suggesting that a small number of molecular features may be necessary and sufficient for partially restoring some IDR functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 synthesize the Cox15 experimental results. The demonstration that both loss-of-function (C49, C51) and gain-of-function (C55) mutations produce predicted phenotypes supports these conclusions. However, the qualifier 'partially restoring' (C58) is important\u2014the synthetic signal is weaker than wild-type, indicating that additional features likely contribute to full function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C83",
+      "C84"
+    ],
+    "result": "FAIDR differs from existing methods by providing a general approach for diverse IDR functions rather than specialized predictors, with the goal of generating testable hypotheses about both function and important molecular features. The approach successfully associates diverse functions with the 82 molecular features included in evolutionary signatures, which were derived from literature review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 and C83-C84 describe FAIDR's positioning and scope. The distinction from specialized methods is valid based on the diversity of functions predicted (C24-C25). The goal statement (C69) is appropriate for a computational method. C83 is supported by cross-validation results. C84 acknowledges the literature-based feature selection, which is both a strength (interpretability) and limitation (potential bias).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "Methodological details describe data sources (SGD annotations, DISOPRED3 predictions, proteomics datasets), computational procedures (evolutionary signature calculation, null model definition), implementation (R/glmnet), and experimental protocols (microscopy, DAPI staining).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C105 provide essential methodological information. Data sources are appropriately cited, computational methods are described with sufficient detail for reproduction, and code/data availability is stated (C100-C101). The null model for evolutionary signatures (C92) is clearly defined. Experimental protocols (C102-C103) are standard and appropriate. The L2 penalty choice (C105) for numerical stability is reasonable.",
+    "result_type": "MINOR"
+  }
+]

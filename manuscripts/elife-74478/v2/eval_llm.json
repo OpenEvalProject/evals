@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C58",
+      "C59"
+    ],
+    "result": "A tetraplegic participant (NS) with a C3-C4 spinal cord injury sustained ~10 years prior was implanted with two 96-channel Utah arrays in left PC-IP and participated in a BCI study over 9 days across 6 weeks with appropriate ethical approval and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C19-C21, C58-C59 provide comprehensive documentation of participant characteristics, implant details, study timeline, and ethical compliance. These are straightforward descriptive claims with explicit documentation in the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C48"
+    ],
+    "result": "Participant NS achieved 86% online BCI finger control accuracy across 10 sessions, exceeding previous five-finger BCI studies, and could control individual fingers in various contexts including virtual reality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12, C48 are supported by experimental data showing high classification accuracy with appropriate statistical reporting (86% \u00b1 4% SD, chance = 17%). The comparison to prior work (C12) and demonstration in VR (C48) provide convergent evidence of robust control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C14"
+    ],
+    "result": "89% of recorded neurons were significantly tuned to individual finger movements, representing the first discovery of individual finger representations in PPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C14 are supported by statistical analysis with appropriate correction (p < 0.05, FDR-corrected) and comparison with prior literature showing previous work only examined whole-hand grasping in PPC. The novelty claim is appropriately contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C15",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The finger representational structure in participant NS matched able-bodied fMRI patterns significantly better than an unstructured model, was consistent across sessions, and was statistically typical compared to individual able-bodied participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C15, C26-C28 are supported by appropriate statistical comparisons using the WUC metric (p = 5.7 \u00d7 10\u207b\u2075), high inter-session correlation (r = 0.90 \u00b1 0.04), and permutation testing (p = 0.55). The methodology for constructing the able-bodied model from two independent fMRI studies (N=36 total) is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The representational structure did not trend toward the task-optimal unstructured model over time, and inter-finger distances for confused finger pairs (middle-ring, ring-pinky) did not increase despite these pairs accounting for 70% of classification errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are supported by appropriate statistical tests with Bayes factors indicating support for the null hypothesis (BF = 0.66 for trend, BF = 0.03 and 0.12 for distance changes). The analysis appropriately addresses the question of whether learning/adaptation occurred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C29"
+    ],
+    "result": "Neural activity exhibited dynamic representational structure with the muscle model emerging 170 ms earlier than the somatotopy model, consistent across sessions and matching the known delay between muscle activation and sensory feedback in able-bodied individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C29 are supported by time-resolved RSA with appropriate statistical testing (p = 0.002, Wilcoxon signed-rank test), consistency across sessions and task contexts, and comparison with established timing from the literature. The 170 ms difference is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C17",
+      "C18",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Motor representations in PPC reflect able-bodied patterns even after years of paralysis, remain stable without use, and BCIs can re-engage these preserved representations; pre-injury properties of brain regions affect BCI performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C17-C18, C44-C47 represent the main conclusions drawn from the convergent evidence of matching representational structure, stability over time, and successful BCI control. These inferences are well-supported by the data presented in the study, though they represent interpretations rather than direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The match between PC-IP spiking and MC fMRI could suggest PC-IP sends signals to MC; the somatotopy model is interpreted as preserved prediction of sensory consequences; sensory signals could arise from internal PPC computations or other structures like cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16, C40-C42 are explicitly speculative interpretations acknowledged by the authors. While plausible given the data and consistent with hypotheses about PPC function, these claims lack direct experimental validation and represent alternative explanations that cannot be distinguished with the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Reliable finger representations emerged from attempted movements (not overt motion) in a reaction-time task, with control analyses ruling out visual confounds by showing inability to decode gaze location during movement periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24, C49-C51 describe the experimental paradigm and control analyses. The inability to decode gaze location (C50) and poor classification during passive viewing provide important controls demonstrating that neural activity reflects motor intent rather than visual attention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The hand-usage model is multicollinear with muscle and somatotopy models (VIF = 20.9); model selection identified muscle + somatotopy as the best combination; hand-usage and muscle patterns are strongly correlated for individual finger movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 describe the statistical approach to handling multicollinearity and model selection. The VIF analysis appropriately identifies the problem, and the model selection procedure using cross-validation and the one-standard-error rule is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43"
+    ],
+    "result": "The manuscript contextualizes findings within established knowledge about PPC function, cortical plasticity, and prior BCI studies, noting debates about reorganization versus stability after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39, C43 represent background knowledge and literature review appropriately cited. These establish the scientific context and competing hypotheses (reorganization vs. stability) that motivate the study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The somatotopy model predicts neighboring fingers have similar activity patterns analogous to Gaussian receptive fields; the same PC-IP population encodes touch with Gaussian-like receptive fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 describe the theoretical basis of the somatotopy model and reference findings from another study with the same participant. The cross-reference to Chivukula et al. 2021 provides supporting evidence for the interpretation of the somatotopy model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Comprehensive methodological details are provided for neural recording, spike sorting, experimental design, task structure, unit selection, feature extraction, and classification procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C88 provide detailed methodological documentation. These are straightforward descriptive claims about procedures that are standard in the field. The level of detail appears sufficient for reproducibility, though some parameters (e.g., specific threshold values) are stated without extensive justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Detailed analytical methods are described for distance metrics, model construction, similarity measures, noise ceiling estimation, statistical testing, and temporal dynamics analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C92-C97, C99-C108 document the analytical pipeline with appropriate citations to established methods. The choice of WUC over Pearson correlation is justified (C99-C100), and the conservative approach to degrees of freedom (C103) is appropriate given the covariance structure of RDMs.",
+    "result_type": "MINOR"
+  }
+]

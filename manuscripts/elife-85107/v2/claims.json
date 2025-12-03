@@ -1,0 +1,2033 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The basal ganglia (BG) contribute to reinforcement learning (RL) and decision-making.",
+    "claim_type": "EXPLICIT",
+    "source": "The basal ganglia (BG) contribute to reinforcement learning (RL) and decision-making, but unlike artificial RL agents, it relies on complex circuitry and dynamic dopamine modulation of opponent striatal pathways to do so.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-established claim in the neuroscience literature, supported by the authors' citation of prior work throughout the manuscript.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The basal ganglia relies on complex circuitry and dynamic dopamine modulation of opponent striatal pathways for reinforcement learning and decision-making.",
+    "claim_type": "EXPLICIT",
+    "source": "The basal ganglia (BG) contribute to reinforcement learning (RL) and decision-making, but unlike artificial RL agents, it relies on complex circuitry and dynamic dopamine modulation of opponent striatal pathways to do so.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the biological literature and is the foundational premise of the OpAL* model developed in this manuscript.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "In OpAL*, learning induces opponent pathways to differentially emphasize the history of positive or negative outcomes for each action.",
+    "claim_type": "EXPLICIT",
+    "source": "In OpAL*, learning induces opponent pathways to differentially emphasize the history of positive or negative outcomes for each action.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a core feature of the OpAL* model as described by the authors and demonstrated through their simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Dynamic DA modulation amplifies the pathway most tuned for the task environment in OpAL*.",
+    "claim_type": "EXPLICIT",
+    "source": "Dynamic DA modulation then amplifies the pathway most tuned for the task environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key mechanism of the OpAL* model, demonstrated through the authors' simulations and theoretical analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The efficient coding mechanism in OpAL* avoids a vexing explore\u2013exploit tradeoff that plagues traditional RL models in sparse reward environments.",
+    "claim_type": "EXPLICIT",
+    "source": "This efficient coding mechanism avoids a vexing explore\u2013exploit tradeoff that plagues traditional RL models in sparse reward environments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the comparative simulations showing OpAL* outperforming Q-learning and UCB models, particularly in sparse reward environments.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "OpAL* exhibits robust advantages over alternative models, particularly in environments with sparse reward and large action spaces.",
+    "claim_type": "EXPLICIT",
+    "source": "OpAL* exhibits robust advantages over alternative models, particularly in environments with sparse reward and large action spaces.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through extensive grid search simulations comparing OpAL* to OpAL+, No Hebb, Q-learning, and UCB models across different environment types and complexities.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The advantages of OpAL* depend on opponent and nonlinear Hebbian plasticity mechanisms.",
+    "claim_type": "EXPLICIT",
+    "source": "These advantages depend on opponent and nonlinear Hebbian plasticity mechanisms previously thought to be pathological.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by comparing OpAL* to the No Hebb variant, which lacks the three-factor Hebbian term and shows reduced performance.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Opponent and nonlinear Hebbian plasticity mechanisms were previously thought to be pathological.",
+    "claim_type": "EXPLICIT",
+    "source": "These advantages depend on opponent and nonlinear Hebbian plasticity mechanisms previously thought to be pathological.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work (Wiecki et al., 2009; Beeler et al., 2012) showing that Hebbian plasticity is needed to capture pathological learning in DA-depleted states.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "OpAL* captures risky choice patterns arising from DA and environmental manipulations across species.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, OpAL* captures risky choice patterns arising from DA and environmental manipulations across species, suggesting that they result from a normative biological mechanism.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through simulations of rodent optogenetic data (Zalocusky et al., 2016), human drug studies (Rutledge et al., 2015), and economic choice data (Frydman and Jin, 2021).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Risky choice patterns arising from DA and environmental manipulations result from a normative biological mechanism.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, OpAL* captures risky choice patterns arising from DA and environmental manipulations across species, suggesting that they result from a normative biological mechanism.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the ability of OpAL*, which is designed based on normative principles, to capture these empirical patterns.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Striatal medium spiny neurons (MSNs) are subdivided into two major populations that respond in opponent ways to DA due to differential expression of D1 and D2 receptors.",
+    "claim_type": "EXPLICIT",
+    "source": "These models are based on the BG architecture in which striatal medium spiny neurons (MSNs) are subdivided into two major populations that respond in opponent ways to DA (due to differential expression of D1 and D2 receptors; Gerfen, 1992; Burke et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-established biological fact supported by the cited references.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Phasic DA signals convey reward prediction errors.",
+    "claim_type": "EXPLICIT",
+    "source": "Phasic DA signals convey reward prediction errors (Montague et al., 1996; Schultz et al., 1997), amplifying both activity and synaptic learning in D1 neurons, thereby promoting action selection based on reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a foundational finding in neuroscience supported by the cited references.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Phasic DA signals amplify both activity and synaptic learning in D1 neurons, thereby promoting action selection based on reward.",
+    "claim_type": "EXPLICIT",
+    "source": "Phasic DA signals convey reward prediction errors (Montague et al., 1996; Schultz et al., 1997), amplifying both activity and synaptic learning in D1 neurons, thereby promoting action selection based on reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references and is a core assumption of the OpAL/OpAL* models.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "When DA levels drop, activity is amplified in D2 neurons, promoting learning and choice that minimizes disappointment.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, when DA levels drop, activity is amplified in D2 neurons, promoting learning and choice that minimizes disappointment (Frank, 2005; Iino et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references and is a core assumption of the OpAL/OpAL* models.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "In OpAL*, one actor (representing the D1 pathway) has its representation strengthened by positive RPEs and weakened by negative RPEs.",
+    "claim_type": "EXPLICIT",
+    "source": "For each action, the representation according to one actor (representing the D1 pathway) is strengthened by positive RPEs and weakened by negative RPEs (encoded by dopamine burst and dips, respectively).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is explicitly stated in the text and illustrated in Figure 1A.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "In OpAL*, positive RPEs weaken and negative RPEs strengthen the second actor's action representations (representing the D2 pathway).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, positive RPEs weaken and negative RPEs strengthen the second actor's action representations (representing the D2 pathway).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is explicitly stated in the text and illustrated in Figure 1A.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "OpAL* modulates dopamine levels at the time of choice according to a 'meta-critic,' which tracks the value or 'richness' of the overall environment according to the agent's reward history agnostic to action history.",
+    "claim_type": "EXPLICIT",
+    "source": "Uniquely, OpAL* modulates dopamine levels at the time of choice according to a 'meta-critic,' which tracks the value or 'richness' of the overall environment according to the agent's reward history agnostic to action history.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a key innovation of OpAL* described in the text and illustrated in Figure 1A.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Changes in dopaminergic state affect the policy of OpAL due to its nonlinear and opponent dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "Changes in dopaminergic state (represented by the purple indicators) affect the policy of OpAL due to its nonlinear and opponent dynamics.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 1B and is a core mechanism of the model.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "OpAL* hypothesizes that modulating dopaminergic state by environmental richness is a normative mechanism for flexible weighting of G and N representations.",
+    "claim_type": "EXPLICIT",
+    "source": "OpAL* hypothesizes that modulating dopaminergic state by environmental richness is a normative mechanism for flexible weighting of these representations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is the central hypothesis of the paper, supported by the normative simulations showing performance advantages.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "In ecological settings, there are often multiple available actions, and rewards are sparse.",
+    "claim_type": "EXPLICIT",
+    "source": "In ecological settings, there are often multiple available actions, and rewards are sparse.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about natural environments that motivates the study.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "In machine learning, the combination of multiple available actions and sparse rewards is particularly vexing for reinforcement learning (RL) agents due to a difficult exploration/exploitation tradeoff.",
+    "claim_type": "EXPLICIT",
+    "source": "In machine learning, this combination is particularly vexing for reinforcement learning (RL) agents due to a difficult exploration/exploitation tradeoff (Sutton and Barto, 2018), and approaches to confront this problem typically require prior task-specific knowledge (Riedmiller et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-known challenge in machine learning supported by the cited references.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Approaches to confront the exploration/exploitation problem in sparse reward environments typically require prior task-specific knowledge.",
+    "claim_type": "EXPLICIT",
+    "source": "In machine learning, this combination is particularly vexing for reinforcement learning (RL) agents due to a difficult exploration/exploitation tradeoff (Sutton and Barto, 2018), and approaches to confront this problem typically require prior task-specific knowledge (Riedmiller et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Biological properties within the BG and DA system \u2013 specifically, the presence of opponent striatal pathways, nonlinear Hebbian plasticity, and dynamic changes in dopamine as a function of reward history \u2013 confer decision-making advantages relative to canonical RL models lacking these properties.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that biological properties within this system \u2013 specifically, the presence of opponent striatal pathways, nonlinear Hebbian plasticity, and dynamic changes in dopamine as a function of reward history \u2013 confer decision-making advantages relative to canonical RL models lacking these properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main finding of the paper, supported by extensive simulations comparing OpAL* to alternative models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The cortex 'proposes' candidate actions available for consideration, and the BG facilitates those that are most likely to maximize reward and minimize cost.",
+    "claim_type": "EXPLICIT",
+    "source": "In neural network models of such circuitry, the cortex 'proposes' candidate actions available for consideration, and the BG facilitates those that are most likely to maximize reward and minimize cost (Frank, 2005; Ratcliff and Frank, 2012; Franklin and Frank, 2015; Gurney et al., 2015; Dunovan and Verstynen, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical framework supported by the cited neural network models.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Striatal DA manipulations influence RL.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, striatal DA manipulations influence RL (Yttri and Dudman, 2016; Frank et al., 2004; Pessiglione et al., 2006), motivational vigor (Niv et al., 2007; Beeler et al., 2012; Hamid et al., 2016), cost\u2013benefit decisions about physical effort (Salamone et al., 2018), and risky decision-making.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited empirical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Striatal DA manipulations influence motivational vigor.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, striatal DA manipulations influence RL (Yttri and Dudman, 2016; Frank et al., 2004; Pessiglione et al., 2006), motivational vigor (Niv et al., 2007; Beeler et al., 2012; Hamid et al., 2016), cost\u2013benefit decisions about physical effort (Salamone et al., 2018), and risky decision-making.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited empirical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Striatal DA manipulations influence cost\u2013benefit decisions about physical effort.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, striatal DA manipulations influence RL (Yttri and Dudman, 2016; Frank et al., 2004; Pessiglione et al., 2006), motivational vigor (Niv et al., 2007; Beeler et al., 2012; Hamid et al., 2016), cost\u2013benefit decisions about physical effort (Salamone et al., 2018), and risky decision-making.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited empirical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "As striatal DA levels rise, humans and animals are more likely to select riskier options that offer greater potential payout than those with certain but smaller rewards.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, as striatal DA levels rise, humans and animals are more likely to select riskier options that offer greater potential payout than those with certain but smaller rewards (St Onge and Floresco, 2009; Zalocusky et al., 2016; Rutledge et al., 2015), an effect that has been causally linked to striatal D2 receptor-containing subpopulations (Zalocusky et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited empirical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The effect of increased DA on risky choice has been causally linked to striatal D2 receptor-containing subpopulations.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, as striatal DA levels rise, humans and animals are more likely to select riskier options that offer greater potential payout than those with certain but smaller rewards (St Onge and Floresco, 2009; Zalocusky et al., 2016; Rutledge et al., 2015), an effect that has been causally linked to striatal D2 receptor-containing subpopulations (Zalocusky et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited empirical study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "OpAL captures a wide variety of findings of DA and D1 vs. D2 manipulations across species.",
+    "claim_type": "EXPLICIT",
+    "source": "Two distinguishing features of OpAL (and its neural network inspiration), compared to more traditional RL models, are that (1) it relies on opponent D1/D2 actors that separately learn benefits and costs of actions rather than a single expected reward value for each action and (2) learning in such populations is acquired through nonlinear dynamics, mimicking three-factor Hebbian plasticity rules. This nonlinearity causes the two populations to evolve to specialize in discriminating between options of high or low reward value, respectively (Collins and Frank, 2014), as seen in Figure 1B. It is also needed to explain pathological conditions such as learned Parkinsonism, whereby low DA states induce hyperexcitability in D2 MSNs, driving aberrant plasticity and, in turn, progression of symptoms (Wiecki et al., 2009; Beeler et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references to the original OpAL model and related work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The nonlinearity in OpAL causes the two populations to evolve to specialize in discriminating between options of high or low reward value.",
+    "claim_type": "EXPLICIT",
+    "source": "This nonlinearity causes the two populations to evolve to specialize in discriminating between options of high or low reward value, respectively (Collins and Frank, 2014), as seen in Figure 1B.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 1B and supported by the cited reference.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The nonlinearity in OpAL is needed to explain pathological conditions such as learned Parkinsonism, whereby low DA states induce hyperexcitability in D2 MSNs, driving aberrant plasticity and, in turn, progression of symptoms.",
+    "claim_type": "EXPLICIT",
+    "source": "It is also needed to explain pathological conditions such as learned Parkinsonism, whereby low DA states induce hyperexcitability in D2 MSNs, driving aberrant plasticity and, in turn, progression of symptoms (Wiecki et al., 2009; Beeler et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Standard (nonbiological) RL models typically perform worse at selecting the optimal action in 'lean environments' with sparse rewards than they do in 'rich environments' with plentiful rewards.",
+    "claim_type": "EXPLICIT",
+    "source": "A clue to this question lies in the observation that standard (nonbiological) RL models typically perform worse at selecting the optimal action in 'lean environments' with sparse rewards than they do in 'rich environments' with plentiful rewards (Collins and Frank, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference and is a key motivation for the current work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The asymmetry in RL performance between rich and lean environments results from a difference in exploration/exploitation tradeoffs across such environments.",
+    "claim_type": "EXPLICIT",
+    "source": "This asymmetry results from a difference in exploration/exploitation tradeoffs across such environments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the analysis of RL behavior in different environments.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "In rich environments, an agent can benefit from overall higher levels of exploitation: once the optimal action is discovered, an agent can stop sampling alternative actions as it is not important to know their precise values.",
+    "claim_type": "EXPLICIT",
+    "source": "In rich environments, an agent can benefit from overall higher levels of exploitation: once the optimal action is discovered, an agent can stop sampling alternative actions as it is not important to know their precise values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about optimal behavior in rich environments.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "In lean environments, choosing the optimal action typically lowers its value (due to sparse rewards), to the point that it can drop below those of even more suboptimal actions.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, in lean environments, choosing the optimal action typically lowers its value (due to sparse rewards), to the point that it can drop below those of even more suboptimal actions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the dynamics of value estimation in lean environments with stochastic rewards.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "In lean environments, value estimation issues cause stochastic switching between options until the worst actions are reliably identified and avoided in the long run.",
+    "claim_type": "EXPLICIT",
+    "source": "This causes stochastic switching between options until the worst actions are reliably identified and avoided in the long run.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the consequences of value estimation issues in lean environments.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Biological agents do not have the luxury of tuning hyperparameters to optimize performance for a given environment because they cannot know whether they are in a rich or lean environment in advance and cannot modify hyperparameters accordingly.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, while in machine learning applications one can simply tune hyperparameters of an RL model to optimize performance for a given environment, biological agents do not have the luxury as they cannot know whether they are in a rich or lean environment in advance and cannot modify hyperparameters accordingly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the constraints faced by biological agents compared to machine learning applications.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "OpAL* dynamically adapts its dopaminergic state online as a function of learned reward history.",
+    "claim_type": "EXPLICIT",
+    "source": "We propose a new model, OpAL*, which dynamically adapts its dopaminergic state online as a function of learned reward history (as observed empirically; Hamid et al., 2016; Mohebi et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key feature of the OpAL* model, supported by the cited empirical observations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "OpAL* dynamically modulates its dopaminergic states in proportion to its estimates of 'environmental richness,' leading to high striatal DA motivational states in rich environments and lower DA states in lean environments with sparse rewards.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, OpAL* dynamically modulates its dopaminergic states in proportion to its estimates of 'environmental richness,' leading to high striatal DA motivational states in rich environments and lower DA states in lean environments with sparse rewards.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a core mechanism of the OpAL* model described in the text.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "OpAL* relies on a 'meta-critic' that evaluates the richness/sparseness of the environment as a whole.",
+    "claim_type": "EXPLICIT",
+    "source": "To do so, it relies on a 'meta-critic' that evaluates the richness/sparseness of the environment as a whole.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key component of the OpAL* model described in the text.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Initially, low confidence in the meta-critic leads the agent to rely equally on both actors, with more stochastic choice as they learn to specialize.",
+    "claim_type": "EXPLICIT",
+    "source": "Initially, low confidence in the meta-critic leads the agent to rely equally on both actors, with more stochastic choice as they learn to specialize.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a feature of the OpAL* model described in the text.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "After initial learning, OpAL*'s opponent and nonlinear representations serve to directly and quickly optimize the model's policy.",
+    "claim_type": "EXPLICIT",
+    "source": "Thereafter, OpAL*'s opponent and nonlinear representations serve to directly and quickly optimize the model's policy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key advantage of OpAL* described in the text and demonstrated in the simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Standard RL models that focus on learning the expected values of actions are slow to converge on the best policy, particularly as the number of alternative actions grows.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, standard RL models that focus on learning the expected values of actions are slow to converge on the best policy, particularly as the number of alternative actions grows.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the comparative simulations with Q-learning and UCB models.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The specialization of D1 and D2 pathways in OpAL* for discriminating between low rewarding and high rewarding options, rather than estimating veridical reward statistics, allows OpAL* to better equate performance in rich and lean environments.",
+    "claim_type": "EXPLICIT",
+    "source": "In this article, we demonstrate that the specialization of D1 and D2 pathways in OpAL* for discriminating between low rewarding and high rewarding options, rather than estimating veridical reward statistics, allows OpAL* to better equate performance in rich and lean environments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key finding of the paper demonstrated through the simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Dynamic modulation in OpAL* amplifies the D1 or D2 actor most well suited to discriminate amongst benefits or costs of choice options for the given environment, akin to an 'efficient coding' strategy typically studied in the domain of perception.",
+    "claim_type": "EXPLICIT",
+    "source": "This dynamic modulation amplifies the D1 or D2 actor most well suited to discriminate amongst benefits or costs of choice options for the given environment, akin to an 'efficient coding' strategy typically studied in the domain of perception (Barlow, 2012; Laughlin, 1981; Chalk et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* mechanism drawing an analogy to efficient coding in perception.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "OpAL*, across a wide range of parameter settings, exhibits robust advantages over Q-learning and upper confidence bound models across a range of environments with varying reward rates and complexity levels.",
+    "claim_type": "EXPLICIT",
+    "source": "We compared the performance of OpAL* to alternative BG models and to several alternative models typically used in machine learning (Q-learning and upper confidence bound models, the latter of which includes an explicit mechanism intended to optimize exploration). We find that OpAL*, across a wide range of parameter settings, exhibits robust advantages over these alternatives across a range of environments with varying reward rates and complexity levels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through extensive grid search simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The advantage of OpAL* depends on opponency, nonlinearity, and adaptive DA modulation.",
+    "claim_type": "EXPLICIT",
+    "source": "This advantage depends on opponency, nonlinearity, and adaptive DA modulation and is most prominent in lean environments with large action spaces, an ecologically probable environment which requires more adaptive navigation of explore\u2013exploit as outlined above.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by comparing OpAL* to variants lacking these features (OpAL+ and No Hebb).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The advantage of OpAL* is most prominent in lean environments with large action spaces.",
+    "claim_type": "EXPLICIT",
+    "source": "This advantage depends on opponency, nonlinearity, and adaptive DA modulation and is most prominent in lean environments with large action spaces, an ecologically probable environment which requires more adaptive navigation of explore\u2013exploit as outlined above.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulations showing increasing advantages with complexity in lean environments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "OpAL* addresses limitations of the original OpAL model highlighted by M\u00f6ller and Bogacz, 2019, while retaining key properties needed to capture a range of empirical data and afford the normative advantages.",
+    "claim_type": "EXPLICIT",
+    "source": "OpAL* also addresses limitations of the original OpAL model highlighted by M\u00f6ller and Bogacz, 2019, while retaining key properties needed to capture a range of empirical data and afford the normative advantages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is discussed in the 'Normalization and annealing' section and demonstrated in the simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "OpAL* can reproduce patterns in which dopaminergic drug administration selectively increases risky choices for gambles with potential gains in humans.",
+    "claim_type": "EXPLICIT",
+    "source": "In humans, we show that OpAL* can reproduce patterns in which dopaminergic drug administration selectively increases risky choices for gambles with potential gains (Rutledge et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulations of the Rutledge et al., 2015 data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "OpAL* accounts for the finding that when offered the very same safe and risky choice option, humans are more likely to gamble when that offer had been presented in the context of a richer reward distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, we show that even in the absence of biological manipulations, OpAL* also accounts for recently described economic choice patterns as a function of environmental richness. In particular, we simulate data showing that when offered the very same safe and risky choice option, humans are more likely to gamble when that offer had been presented in the context of a richer reward distribution (Frydman and Jin, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulations of the Frydman and Jin, 2021 data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The normative objective for policy optimization in OpAL*, while in general facilitating adaptive behavior and transitive preferences, can lead to irrational preferences when options appear in novel contexts differing in reward richness of initial learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, we show that the normative objective for policy optimization in OpAL*, while in general facilitating adaptive behavior and transitive preferences, can lead to irrational preferences when options appear in novel contexts differing in reward richness of initial learning, as observed empirically (Palminteri et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulations of the Palminteri et al., 2015 data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The Hebbian term is necessary for capturing a variety of behavioral data, including those associated with pathological aberrant learning in DA-elevated and depleted states.",
+    "claim_type": "EXPLICIT",
+    "source": "It is also necessary for capturing a variety of behavioral data, including those associated with pathological aberrant learning in DA-elevated and depleted states, whereby heightened striatal activity in either pathway amplifies learning that escalates over experience (Wiecki et al., 2009; Beeler et al., 2012; Collins and Frank, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The Hebbian property allows actors to better represent the probabilistic history of outcomes at the low and high ranges.",
+    "claim_type": "EXPLICIT",
+    "source": "As we shall see in the 'Mechanism' section below, this same property allows actors to better represent the probabilistic history of outcomes at the low and high ranges.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explained in detail in the Mechanism section.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "With extensive learning (particularly after the critic converges), the Hebbian term induces instability and decay in the G and N representations, such that they eventually converge to zero.",
+    "claim_type": "EXPLICIT",
+    "source": "However, with extensive learning (particularly after the critic converges), the Hebbian term induces instability and decay in the G and N representations, such that they eventually converge to zero (M\u00f6ller and Bogacz, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a limitation of the original OpAL model identified by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "OpAL* addresses the instability issue by adjusting learning rates as a function of uncertainty, stabilizing learned actor weights while also preserving their ability to flexibly adapt to change points.",
+    "claim_type": "EXPLICIT",
+    "source": "OpAL* addresses this issue by adjusting learning rates as a function of uncertainty, stabilizing learned actor weights while also preserving their ability to flexibly adapt to change points, and by normalizing the prediction error.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the OpAL* modifications.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "OpAL* addresses the instability issue by normalizing the prediction error.",
+    "claim_type": "EXPLICIT",
+    "source": "OpAL* addresses this issue by adjusting learning rates as a function of uncertainty, stabilizing learned actor weights while also preserving their ability to flexibly adapt to change points, and by normalizing the prediction error.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the OpAL* modifications.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The Hebbian term produces nonlinear dynamics in the two actors such that they are not redundant and instead specialize in discriminating between different reward probability ranges.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly for these findings and for the findings in this article, the Hebbian term produces nonlinear dynamics in the two actors such that they are not redundant and instead specialize in discriminating between different reward probability ranges (Figure 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 1B and is a key property of the model.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The meta-critic in OpAL* summarizes the contributions of various inputs that may regulate the DA system, including those from cortical sources such as orbitofrontal cortex and anterior cingulate.",
+    "claim_type": "EXPLICIT",
+    "source": "The meta-critic summarizes the contributions of various inputs that may regulate the DA system, including those from cortical sources such as orbitofrontal cortex and anterior cingulate, regions which have access to not only the mean reward values but also their confidence (Kepecs et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the biological inspiration for the meta-critic, supported by the cited reference.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Orbitofrontal cortex and anterior cingulate have access to not only the mean reward values but also their confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "The meta-critic summarizes the contributions of various inputs that may regulate the DA system, including those from cortical sources such as orbitofrontal cortex and anterior cingulate, regions which have access to not only the mean reward values but also their confidence (Kepecs et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Orbitofrontal cortex and anterior cingulate project to striatal cholinergic cells conveying information about environmental state.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, these regions also project to striatal cholinergic cells conveying information about environmental state (Stalnaker et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Striatal cholinergic cells locally regulate striatal DA release.",
+    "claim_type": "EXPLICIT",
+    "source": "These cholinergic cells in turn locally regulate striatal DA release (Adrover et al., 2020; Threlfell et al., 2012; Reynolds et al., 2022) in proportion to reward history (Mohebi et al., 2019), and may be sensitive to uncertainty (Franklin and Frank, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Striatal cholinergic cells regulate striatal DA release in proportion to reward history.",
+    "claim_type": "EXPLICIT",
+    "source": "These cholinergic cells in turn locally regulate striatal DA release (Adrover et al., 2020; Threlfell et al., 2012; Reynolds et al., 2022) in proportion to reward history (Mohebi et al., 2019), and may be sensitive to uncertainty (Franklin and Frank, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Striatal cholinergic cells may be sensitive to uncertainty.",
+    "claim_type": "EXPLICIT",
+    "source": "These cholinergic cells in turn locally regulate striatal DA release (Adrover et al., 2020; Threlfell et al., 2012; Reynolds et al., 2022) in proportion to reward history (Mohebi et al., 2019), and may be sensitive to uncertainty (Franklin and Frank, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "High DA amplifies the G actor's contributions to choice, increasing the action gap for high-probability options.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, high DA amplifies the G actor's contributions to choice, increasing the action gap for high-probability options.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 2 and explained in the text.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Low DA amplifies the N actor's contributions, increasing the action gap for low-probability options.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, low DA amplifies the N actor's contributions, increasing the action gap for low-probability options.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 2 and explained in the text.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "In the No Hebb variant, dopamine modulation does not change its discrimination performance across environments and the action gap for choice remains fixed.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, dopamine modulation does not change its discrimination performance across environments and the action gap for choice remains fixed (Figure 2, right; Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 2 and Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "OpAL* applies a transformation to the actor prediction errors such that they are normalized by the range of available reward values.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we apply a transformation to the actor prediction errors such that they are normalized by the range of available reward values (see Tobler et al., 2005 for evidence of such normalization in dopaminergic signals and Bavard et al., 2018 for evidence that humans use such range adaptation).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the OpAL* normalization mechanism, supported by the cited references.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Dopaminergic signals are normalized by the range of available reward values.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we apply a transformation to the actor prediction errors such that they are normalized by the range of available reward values (see Tobler et al., 2005 for evidence of such normalization in dopaminergic signals and Bavard et al., 2018 for evidence that humans use such range adaptation).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Humans use range adaptation in reward processing.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we apply a transformation to the actor prediction errors such that they are normalized by the range of available reward values (see Tobler et al., 2005 for evidence of such normalization in dopaminergic signals and Bavard et al., 2018 for evidence that humans use such range adaptation).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "In OpAL*, the actor learning rate is annealed with experience as a function of uncertainty within the OpAL* Bayesian meta-critic.",
+    "claim_type": "EXPLICIT",
+    "source": "Secondly, as is common in machine learning (Darken and Moody, 1990; Bengio, 2012), the actor learning rate is annealed with experience. Rather than simply decreasing the learning rate with time (which would make the agent insensitive to subsequent volatility in task conditions), we instead anneal actor learning rates as a function of uncertainty within the OpAL* Bayesian meta-critic.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the OpAL* annealing mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "As the variance of the meta-critic decreases, the agent is more certain about the environmental statistics, and the actor learning rate declines to stabilize learning.",
+    "claim_type": "EXPLICIT",
+    "source": "As the variance decreases, the agent is more certain about the environmental statistics, and the actor learning rate declines to stabilize learning (again see Franklin and Frank, 2015 for mechanisms of such uncertainty-based actor learning modulation).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the OpAL* annealing mechanism, supported by the cited reference.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "OpAL* robustly outperforms comparison models in both rich and lean environment types across parameter settings.",
+    "claim_type": "EXPLICIT",
+    "source": "Across parameter settings, OpAL* robustly outperforms comparison models in both environment types.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "OpAL* advantages in the lean environment over the OpAL+ model show an inverted-U relationship, whereby improvements are most prominent for mid-performing parameter combinations.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, OpAL* advantages in the lean environment over the OpAL+ model show an inverted-U relationship, whereby improvements are most prominent for mid-performing parameter combinations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The most prominent advantages of OpAL* relative to the No Hebb model occur in the lean environment, where the large majority of parameter combinations show advantages.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the most prominent advantages of OpAL* relative to the No Hebb model occur in the lean environment, where the large majority of parameter combinations show advantages (peaks in AUC differences in the positive range).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The lean environment requires sophisticated explore\u2013exploit tradeoffs that challenge standard RL models.",
+    "claim_type": "EXPLICIT",
+    "source": "As explored in detail in the 'Mechanism' section below, the lean environment requires sophisticated explore\u2013exploit tradeoffs that challenge standard RL models; the Hebbian term of OpAL* induces distortions in the N weights to quickly and preferentially avoid the most suboptimal actions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explained in detail in the Mechanism section.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The Hebbian term of OpAL* induces distortions in the N weights to quickly and preferentially avoid the most suboptimal actions.",
+    "claim_type": "EXPLICIT",
+    "source": "As explored in detail in the 'Mechanism' section below, the lean environment requires sophisticated explore\u2013exploit tradeoffs that challenge standard RL models; the Hebbian term of OpAL* induces distortions in the N weights to quickly and preferentially avoid the most suboptimal actions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explained in detail in the Mechanism section.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Dynamic DA modulation provides additional performance advantages (as evidenced by OpAL*'s performance over OpAL+), by exploiting the actor most suited for the environment, but relies on the Hebbian term to do so (as evident by OpAL*'s performance over No Hebb).",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, dynamic DA modulation provides additional performance advantages (as evidenced by OpAL*'s performance over OpAL+), by exploiting the actor most suited for the environment, but relies on the Hebbian term to do so (as evident by OpAL*'s performance over No Hebb).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the comparative simulation results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The OpAL* and OpAL+ models achieve roughly equivalent performance in rich and lean environments in the parameter range tested.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the OpAL* and OpAL+ models achieve roughly equivalent performance in rich and lean environments in this parameter range.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed in the simulation results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Standard RL models typically suffer in lean environments due to greater demands on exploration.",
+    "claim_type": "EXPLICIT",
+    "source": "As noted in the introduction, standard RL models typically suffer in lean environments due to greater demands on exploration (see below for comparisons to more traditional RL models); these simulations show that OpAL* and OpAL+ overcome this robustness limitation that the No Hebb model does not (maximum AUC around 80 for lean and 150 for rich), but OpAL*'s DA modulation contributes above and beyond the flexibility endowed by the opponent and nonlinearity of OpAL+.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about RL models supported by the simulations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "OpAL* and OpAL+ overcome the robustness limitation in lean environments that the No Hebb model does not.",
+    "claim_type": "EXPLICIT",
+    "source": "As noted in the introduction, standard RL models typically suffer in lean environments due to greater demands on exploration (see below for comparisons to more traditional RL models); these simulations show that OpAL* and OpAL+ overcome this robustness limitation that the No Hebb model does not (maximum AUC around 80 for lean and 150 for rich), but OpAL*'s DA modulation contributes above and beyond the flexibility endowed by the opponent and nonlinearity of OpAL+.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulation results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "OpAL*'s DA modulation contributes above and beyond the flexibility endowed by the opponent and nonlinearity of OpAL+.",
+    "claim_type": "EXPLICIT",
+    "source": "As noted in the introduction, standard RL models typically suffer in lean environments due to greater demands on exploration (see below for comparisons to more traditional RL models); these simulations show that OpAL* and OpAL+ overcome this robustness limitation that the No Hebb model does not (maximum AUC around 80 for lean and 150 for rich), but OpAL*'s DA modulation contributes above and beyond the flexibility endowed by the opponent and nonlinearity of OpAL+.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulation results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "OpAL*'s advantages grow monotonically with complexity, roughly doubling from low- to high-complexity levels in lean environments.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, OpAL*'s advantages grow monotonically with complexity, roughly doubling from low- to high-complexity levels in lean environments (Figure 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Q-learning is arguably the most commonly used learning algorithm in both machine learning and biological RL.",
+    "claim_type": "EXPLICIT",
+    "source": "We include Q-learning (Watkins and Dayan, 1992) as it is arguably the most commonly used learning algorithm in both machine learning and biological RL (Sutton and Barto, 2018; Li, 2018; Palminteri et al., 2015; Pessiglione et al., 2006; Frank et al., 2007a; Niv et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "A standard Q-learner shows lowered performance in lean environments compared to rich environments due to different exploration/exploitation requirements.",
+    "claim_type": "EXPLICIT",
+    "source": "As demonstrated in Collins and Frank, 2014, a standard Q-learner shows lowered performance in lean environments compared to rich environments due to different exploration/exploitation requirements (even when its parameters are optimized jointly across both environments).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The UCB algorithm provides a means for 'directed exploration' to options that have not been well-explored and hence the agent is unconfident about its values.",
+    "claim_type": "EXPLICIT",
+    "source": "The UCB algorithm provides a means for 'directed exploration' to options that have not been well-explored and hence the agent is unconfident about its values (see 'Materials and methods').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the UCB algorithm.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "UCB has access to the sample mean of experienced rewards for each option (i.e., it is an ideal observer).",
+    "claim_type": "EXPLICIT",
+    "source": "UCB further presents a particularly challenging benchmark because it has access to the sample mean of experienced rewards for each option (i.e., it is an ideal observer), whereas RL models and OpAL only have direct access to the most recent RPEs for weight updates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the UCB algorithm.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "RL models and OpAL only have direct access to the most recent RPEs for weight updates.",
+    "claim_type": "EXPLICIT",
+    "source": "UCB further presents a particularly challenging benchmark because it has access to the sample mean of experienced rewards for each option (i.e., it is an ideal observer), whereas RL models and OpAL only have direct access to the most recent RPEs for weight updates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the RL and OpAL models.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "Q-learning and UCB both lack the opponent characteristic of OpAL* (G and N); that is, they only learn a single decision value for each possible choice.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to serving as informative benchmarks, these models both lack the opponent characteristic of OpAL* (G and N); that is, they only learn a single decision value for each possible choice.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the Q-learning and UCB models.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "RL algorithms based on action values are guaranteed to converge to expected Q values for each option, but such convergence requires repeated sampling of each alternative action, impeding the ability to maximize returns in the interim.",
+    "claim_type": "EXPLICIT",
+    "source": "We reasoned that OpAL* might outperform these established models: while they are guaranteed to converge to expected Q values for each option, such convergence requires repeated sampling of each alternative action, impeding the ability to maximize returns in the interim.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the properties of value-based RL algorithms.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "The limitation of RL algorithms based on action values is well known in machine learning, leading to the greater reliance on policy gradient methods in recent years.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, this limitation of RL algorithms based on action values is well known in machine learning, leading to the greater reliance on policy gradient methods in recent years.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about trends in machine learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "OpAL* captured the selective effects of L-DOPA on gambling in gain trials.",
+    "claim_type": "EXPLICIT",
+    "source": "As hypothesized, OpAL* captured the selective effects of L-DOPA on gambling in gain trials.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 11A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "OpAL* captured the overall proportion of gambles chosen for different trial types in the Rutledge et al., 2015 study.",
+    "claim_type": "EXPLICIT",
+    "source": "It also captured the overall proportion of gambles chosen for different trial types (Figure 11A), as well as the correlation between effective dosage and difference in gambling on and off drug (Figure 11B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 11A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "OpAL* captured the correlation between effective dosage and difference in gambling on and off drug in the Rutledge et al., 2015 study.",
+    "claim_type": "EXPLICIT",
+    "source": "It also captured the overall proportion of gambles chosen for different trial types (Figure 11A), as well as the correlation between effective dosage and difference in gambling on and off drug (Figure 11B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 11B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "OpAL* predicts increased gambling on common trials in the Rich block relative to the Lean block, as found empirically by Frydman and Jin, 2021.",
+    "claim_type": "EXPLICIT",
+    "source": "As found empirically and in the authors' efficient coding model (Frydman and Jin, 2021), OpAL* predicts increased gambling on common trials in the Rich block relative to the Lean block.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 11D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "According to OpAL*, the increased gambling on common trials in rich environments reflects adaptively modulated DA levels in the Rich environment, which emphasized the benefits of the gamble during decision-making.",
+    "claim_type": "EXPLICIT",
+    "source": "According to OpAL*, this result reflects adaptively modulated DA levels in the Rich environment, which emphasized the benefits of the gamble during decision-making.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* simulation results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "OpAL*'s amplification of one striatal subpopulation over another can be considered a form of efficient coding.",
+    "claim_type": "EXPLICIT",
+    "source": "As will be discussed below, OpAL*'s amplification of one striatal subpopulation over another itself can be considered a form of efficient coding, offering a direct mechanistic explanation for recent findings in economic theory.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "A key objective of a Q-learner, by construction, is that Q values converge to the expected reward for each option.",
+    "claim_type": "EXPLICIT",
+    "source": "A key objective of a Q-learner, by construction, is that Q values converge to the expected reward for each option.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the Q-learning algorithm.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Before the Q-learning algorithm converges, the policy selects actions that will necessarily be influenced by misestimation errors.",
+    "claim_type": "EXPLICIT",
+    "source": "However, before the algorithm converges, the policy selects actions that will necessarily be influenced by misestimation errors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about Q-learning behavior.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Q value convergence is impeded when the agent has to select between multiple options via a stochastic choice policy.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, Q value convergence is impeded when the agent has to select between multiple options via a stochastic choice policy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about Q-learning behavior.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "Algorithms like Q-learning and UCB converge well when an option is well-sampled, but the speed and accuracy of this convergence are affected by stochastic sampling, leading to value estimation errors.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, algorithms like Q-learning and UCB converge well when an option is well-sampled, but the speed and accuracy of this convergence are affected by stochastic sampling, leading to value estimation errors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about Q-learning and UCB behavior.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Value estimation errors weaken the 'action gap': the gap between the expected reward value for the optimal action and that of the next best option.",
+    "claim_type": "EXPLICIT",
+    "source": "This issue is known to weaken the 'action gap': the gap between the expected reward value for the optimal action and that of the next best option (G. Bellemare et al., 2015), which in turn impedes performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "As a modified actor-critic, the actor propensities in OpAL* adjust to directly optimize performance, without representing the expected rewards for each action per se.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, as a modified actor-critic, the actor propensities in OpAL* adjust to directly optimize performance, without representing the expected rewards for each action per se.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the OpAL* model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "Opponent actor weights in OpAL* retain ordinal (but nonlinear) rankings of action\u2013outcome associations which can be used for action selection among novel pairs of actions.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, opponent actor weights retain ordinal (but nonlinear) rankings of action\u2013outcome associations which can be used for action selection among novel pairs of actions (Figure 1; Collins and Frank, 2014).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by Figure 1 and the cited reference.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Value misestimation errors and the action gap are particularly challenged in lean environments.",
+    "claim_type": "EXPLICIT",
+    "source": "Below we show that value misestimation errors and the action gap are particularly challenged in lean environments, and that OpAL* remedies this difference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the Mechanism section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "When an agent is given full counterfactual information about rewards for all actions irrespective of choice, the best and second best options in rich and lean environments converge quickly to their true targets and the action gap for both environments converges to the true value of 0.10 at similar rates.",
+    "claim_type": "EXPLICIT",
+    "source": "When an agent is given full counterfactual information about rewards for all actions irrespective of choice, the best and second best options in rich and lean environments converge quickly to their true targets (0.8 vs. 0.7 or 0.3 vs. 0.2, respectively) and the action gap for both environments converges to the true value of 0.10 at similar rates (Figure 8A, left).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 8A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "When an agent receives feedback only for actions it has chosen, both the action gap and convergence are impeded, with a stark difference in rich versus lean.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, when an agent receives feedback only for actions it has chosen, both the action gap and convergence are impeded, with a stark difference in rich versus lean (these differences are further amplified as more actions become available, see Figure 8\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 8A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The action gap in the rich environment is larger than that of the lean environment in Q-learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the action gap in the rich environment is larger than that of the lean environment (and even than that under full information).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 8A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "In the rich case, once the Q-learning agent begins exploiting the optimal action, its value converges while that of the second best option's value remains underestimated.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because in the rich case, once the agent begins exploiting the optimal action, its value converges (black line) while that of the second best option's value remains underestimated (gray line plateaus).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 8A and explained in the text.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "The lack of convergence for the suboptimal action in rich environments is actually helpful for an effective policy as its value remains closer to the initialization value and thereby increasing the action gap.",
+    "claim_type": "EXPLICIT",
+    "source": "This lack of convergence for the suboptimal action (0.7) is actually helpful for an effective policy as its value remains closer to the initialization value and thereby increasing the action gap.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about Q-learning behavior.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "In lean environments, as options are sampled, their values decrease, and repeated sampling of the best option could cause it to become estimated as undesirable relative to a less-explored (but truly suboptimal) action.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, as options in the lean environment are sampled, their values decrease, and repeated sampling of the best option (0.30) could cause it to become estimated as undesirable relative to a less-explored (but truly suboptimal) action.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about Q-learning behavior in lean environments.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Misestimation errors are particularly pernicious in a lean environment, preventing exploitation of the best options until all have sufficiently converged.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, misestimation errors are particularly pernicious in a lean environment, preventing exploitation of the best options until all have sufficiently converged.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about Q-learning behavior in lean environments.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The actors of OpAL* discriminate between the optimal and suboptimal actions well before the critic converges, and thus can rapidly optimize the policy.",
+    "claim_type": "EXPLICIT",
+    "source": "Meanwhile, the actors of OpAL* discriminate between the optimal and suboptimal actions well before the critic converges, and thus can rapidly optimize the policy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "The difference between OpAL* and value-based methods is related to the recent predominance of policy gradient methods over value-based algorithms in the deep RL literature, particularly in environments with sparse reward and large action spaces.",
+    "claim_type": "EXPLICIT",
+    "source": "This difference is related to the recent predominance of policy gradient methods over value-based algorithms in the deep RL literature, particularly in environments with sparse reward and large action spaces.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about trends in machine learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "Striatal signals conform more with policy update methods rather than action values.",
+    "claim_type": "EXPLICIT",
+    "source": "Work has also shown that striatal signals conform more with policy update methods rather than action values (Li and Daw, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Large action gaps are helpful for mitigating against estimation errors in the critic in deep RL settings.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, G. Bellemare et al., 2015 showed that large action gaps are helpful for mitigating against estimation errors in the critic in deep RL settings, implying that an OpAL* like approach might be useful in those contexts as well (but this remains to be tested).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "Violations of transitive preferences are observed specifically when choosing between actions that had been experienced in the context of expected loss versus expected gains.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, empirically, violations of such transitive preferences are observed specifically when choosing between actions that had been experienced in the context of expected loss versus expected gains (Gold et al., 2012; Palminteri et al., 2015; Geana et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "OpAL* captured the pattern of transitive preference violations because its policy had been optimized to prefer a frequent loss avoider in the loss context, and to avoid an infrequent winner in a gain context.",
+    "claim_type": "EXPLICIT",
+    "source": "Our model captured this pattern because its policy had been optimized to prefer a frequent loss avoider in the loss context, and to avoid an infrequent winner in a gain context (thus our account is similar in spirit to the model proposed by Palminteri et al., 2015, who used a Q-learning framework but wherein values are learned not in absolute terms, but relative to that of the other options).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulations of the Palminteri et al., 2015 data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The advantages exhibited by OpAL* depended on the nonlinear Hebbian mechanism.",
+    "claim_type": "EXPLICIT",
+    "source": "It is notable that the advantages exhibited by OpAL* depended on the nonlinear Hebbian mechanism.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by comparing OpAL* to the No Hebb variant.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "The Hebbian term was originally motivated by the biology of three-factor plasticity as implemented in the neural network version.",
+    "claim_type": "EXPLICIT",
+    "source": "While the Hebbian term was originally motivated by the biology of three-factor plasticity as implemented in the neural network version, it is also needed to capture findings in which D2 MSNs become increasingly potentiated as a result of pathological DA depletion or DA blockade, leading to aberrant behavioral learning and progression of Parkinsonism (Wiecki et al., 2009; Beeler et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "The Hebbian term is needed to capture findings in which D2 MSNs become increasingly potentiated as a result of pathological DA depletion or DA blockade, leading to aberrant behavioral learning and progression of Parkinsonism.",
+    "claim_type": "EXPLICIT",
+    "source": "While the Hebbian term was originally motivated by the biology of three-factor plasticity as implemented in the neural network version, it is also needed to capture findings in which D2 MSNs become increasingly potentiated as a result of pathological DA depletion or DA blockade, leading to aberrant behavioral learning and progression of Parkinsonism (Wiecki et al., 2009; Beeler et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "The same Hebbian-induced nonlinearity that is pathological in DA-depleted states affords adaptive performance in OpAL* when DA is not depleted or manipulated exogenously.",
+    "claim_type": "EXPLICIT",
+    "source": "Ironically, it is this same Hebbian-induced nonlinearity that affords adaptive performance in OpAL* when DA is not depleted or manipulated exogenously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "Nonlinear accumulation allows the actor weight updates to be more sensitive to the probabilistic history of outcomes, preventing the agent from switching back to suboptimal actions.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in the 'Mechanism' section, nonlinear accumulation allows the actor weight updates to be more sensitive to the probabilistic history of outcomes, preventing the agent from switching back to suboptimal actions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explained in the Mechanism section.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "This adaptive role for activity-dependent Hebbian plasticity beyond standard learning algorithms is complementary to recent observations that such mechanisms can be leveraged to improve beyond gradient descent in neural networks.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, this adaptive role for activity-dependent Hebbian plasticity beyond standard learning algorithms is complementary to recent observations that such mechanisms can be leveraged to improve beyond gradient descent in neural networks (Scott and Frank, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "The brain treats increases or decreases in dopamine as signaling presence in a richer or leaner state.",
+    "claim_type": "EXPLICIT",
+    "source": "In this perspective, the brain treats increases or decreases in dopamine as signaling presence in a richer or leaner state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "Changes in behavior with DA manipulations reflect an adaption to the perceived, artificial environmental change.",
+    "claim_type": "EXPLICIT",
+    "source": "Changes in behavior reflect an adaption to this perceived, artificial environmental change.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "A dopamine-depleted animal (or increased activity of D2 MSNs) would focus on costs of actions, whereas dopamine increases would increase attractiveness of risky actions.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, a dopamine-depleted animal (or increased activity of D2 MSNs in Zalocusky et al., 2016) would focus on costs of actions, whereas dopamine increases would increase attractiveness of risky actions (Rutledge et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* mechanism and is supported by the cited references.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "The well-known impact of exogenous DA modulation on risky decision-making may be a by-product of the endogenous adaptive mechanism in OpAL*.",
+    "claim_type": "EXPLICIT",
+    "source": "We reasoned that the well-known impact of exogenous DA modulation on risky decision-making (St Onge and Floresco, 2009; Zalocusky et al., 2016; Rutledge et al., 2015) may be a by-product of this endogenous adaptive mechanism, showing that OpAL* can be used to modulate appropriately when it is worth taking a risk (Figure 7).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* mechanism and is supported by the simulations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "OpAL* can be used to modulate appropriately when it is worth taking a risk.",
+    "claim_type": "EXPLICIT",
+    "source": "We reasoned that the well-known impact of exogenous DA modulation on risky decision-making (St Onge and Floresco, 2009; Zalocusky et al., 2016; Rutledge et al., 2015) may be a by-product of this endogenous adaptive mechanism, showing that OpAL* can be used to modulate appropriately when it is worth taking a risk (Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "Behavioral effects of D2-receptor activity and manipulation reflect unique predictions of OpAL*, including outcome-dependent risk-avoidance paired with increase of D2 activity following a loss.",
+    "claim_type": "EXPLICIT",
+    "source": "We then demonstrated how behavioral effects of D2-receptor activity and manipulation (Zalocusky et al., 2016) reflect unique predictions of OpAL*, including outcome-dependent risk-avoidance paired with increase of D2 activity following a loss (Figure 10A\u2013D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 10A-D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "Optogenetic stimulation of D2-expressing neurons induced decrease in risky choice in risk-seeking rodents in line with OpAL* predictions.",
+    "claim_type": "EXPLICIT",
+    "source": "In conjunction, optogenetic stimulation of D2-expressing neurons induced decrease in risky choice in risk-seeking rodents in line with OpAL* predictions (Figure 10E and F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 10E and F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "OpAL* can be used to capture changes in risk-taking by dopamine-enhancing medication in healthy human participants.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we showed that OpAL* can be used to capture changes in risk-taking by dopamine-enhancing medication in healthy human participants (Figure 11A and B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 11A and B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "Individual changes in risk preference may emerge from OpAL*'s adaptive mechanism.",
+    "claim_type": "EXPLICIT",
+    "source": "Our simulations highlighted how individual changes in risk preference may emerge from OpAL*'s adaptive mechanism.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* simulations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "Efficient coding suggests that resources should be reallocated according to features in an environment which occur more frequently.",
+    "claim_type": "EXPLICIT",
+    "source": "Efficient coding also suggests that resources should be reallocated according to features in an environment which occur more frequently (Simoncelli and Olshausen, 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "Participants are riskier in environments which have an increased frequency of large gamble payoffs.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent behavioral work has applied an efficient coding framework to risky choice paradigms, showing participants are riskier in environments which have an increased frequency of large gamble payoffs (Frydman and Jin, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "OpAL* provides a mechanistic account of findings showing that participants are riskier in environments with increased frequency of large gamble payoffs.",
+    "claim_type": "EXPLICIT",
+    "source": "Our model provides a mechanistic account of such findings that generalizes to broader behavioral implications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulations of the Frydman and Jin, 2021 data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "OpAL* predicts that if common trials were administered to include unfavorable gambles (gambles whose expected values are less than a certain option), people would more reliably select the certain outcome in the lean environment.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, while the authors did not test this pattern, OpAL* predicts that if common trials were administered to include unfavorable gambles (gambles whose expected values are less than a certain option), people would more reliably select the certain outcome in the lean environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction derived from the OpAL* mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "A limitation of the DA modulation mechanism in OpAL* is that its performance advantages depend on relatively accurate estimates of environmental richness.",
+    "claim_type": "EXPLICIT",
+    "source": "A limitation of the DA modulation mechanism is that its performance advantages depend on relatively accurate estimates of environmental richness.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the OpAL* mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "Performance of OpAL* can suffer with incorrect estimation of the environment richness.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, performance can suffer with incorrect estimation of the environment richness (Appendix 1\u2014figure 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Appendix 1\u2014figure 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "It is essential in OpAL* that DA modulation is dynamic across trials so as to reflect sufficient reward history before modulating opponency.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, it is essential in OpAL* that DA modulation is dynamic across trials so as to reflect sufficient reward history before modulating opponency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the OpAL* mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "For robust advantages, the critic estimation of environmental richness must be relatively confident before modulating DA.",
+    "claim_type": "EXPLICIT",
+    "source": "For robust advantages, the critic estimation of environmental richness must be relatively confident before modulating DA.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the OpAL* mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "The meta-critic mechanism in OpAL* provides an intermediate strategy between directed and random exploration, but at the level of actor (rather than action) selection.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, this mechanism provides an intermediate strategy between directed and random exploration (Wilson et al., 2014), but at the level of actor (rather than action) selection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the OpAL* mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "In OpAL*, the exploration strategy amounts to random exploration across both actors until the critic uncertainty is sufficiently reduced, at which point OpAL* exploits the actor most specialized to the task.",
+    "claim_type": "EXPLICIT",
+    "source": "In OpAL*, such a strategy amounts to random exploration across both actors until the critic uncertainty is sufficiently reduced, at which point OpAL* exploits the actor most specialized to the task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the OpAL* exploration mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C178",
+    "claim": "DA signals are not uniform across striatum.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, while OpAL* optimizes a single DA signal toward the actor most specialized to rich or lean environments, recent work also suggests that DA signals are not uniform across striatum (Hamid et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C179",
+    "claim": "DA signals can be tailored to striatal subregions specialized for a given task, keeping with a 'mixture of experts' model to support credit assignment.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, this work showed that DA signals can be tailored to striatal subregions specialized for a given task, keeping with a 'mixture of experts' model to support credit assignment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference (Hamid et al., 2021).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "DA manipulations can induce asymmetries in learning rates from positive and negative RPEs, which can, under some circumstances, be dissociated from choice effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, while our work focuses on asymmetries afforded in the choice function, DA manipulations can also induce asymmetries in learning rates from positive and negative RPEs (Frank et al., 2007a; Niv et al., 2012; Collins and Frank, 2014), which can, under some circumstances, be dissociated from choice effects (Collins and Frank, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited references.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "Asymmetries in learning rates can be optimized as a function of the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it is certainly possible that asymmetries in learning rates can also be optimized as a function of the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about future directions.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "Larger learning rates for positive than negative RPEs are beneficial in lean environments (and vice versa) by amplifying the less frequent signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, larger learning rates for positive than negative RPEs are beneficial in lean environments (and vice versa) by amplifying the less frequent signal (Caz\u00e9 and Caz\u00e9 and van der Meer, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the cited reference.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "Learning rate asymmetries do not address the issue with respect to exploration exploitation dilemmas that arise in lean environments, and do not capture the various findings in which DA manipulations affect performance and choice in the absence of outcomes.",
+    "claim_type": "EXPLICIT",
+    "source": "Such effects are not mutually exclusive with those described here, but note that they do not address the issue highlighted above with respect to exploration exploitation dilemmas that arise in lean environments, and do not capture the various findings (reviewed above) in which DA manipulations affect performance and choice in the absence of outcomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the limitations of learning rate asymmetries.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

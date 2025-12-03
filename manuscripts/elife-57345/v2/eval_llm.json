@@ -1,0 +1,141 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors established an in vitro model of hypoxia and re-oxygenation in iPSC-derived cardiomyocytes from 15 Yoruba individuals. iPSC-CMs were cultured at 10% oxygen (normoxia), subjected to 6 hours of 1% oxygen (hypoxia), followed by re-oxygenation for 6 or 24 hours. Oxygen levels were reproducibly controlled, and cytotoxicity and BNP levels increased following hypoxia and long-term re-oxygenation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 provide a comprehensive description of the experimental model with appropriate controls and validation. The cardiomyocyte purity (median 81%) was assessed by flow cytometry (C16), oxygen levels were reproducibly controlled (C19), and cellular stress was validated through cytotoxicity (p=0.01, C20) and BNP measurements (p=5\u00d710\u207b\u2076, C21). The experimental design is well-documented with technical replicates from three individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors identified thousands of differentially expressed genes in response to hypoxia and re-oxygenation. Using Cormotif analysis, 2,113 genes (17% of expressed genes) were classified as 'response genes' that change expression during the oxygen stress experiment. These response genes are enriched for genes previously identified in hypoxia response studies and for transcription-related gene ontology terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 describe a rigorous differential expression analysis with appropriate quality control (outlier removal, C22), filtering (C23), and statistical methods (FDR 10%, C24). The classification of response genes using Cormotif (C25) is validated by enrichment for previously identified hypoxia-responsive genes (p<2.2\u00d710\u207b\u00b9\u2076, C26) and transcription-related processes (p=1\u00d710\u207b\u00b9\u2079, C27). The statistical approaches and validation against prior work support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors identified 1,573 eGenes in at least one condition and 367 dynamic eQTLs that are classified as eQTLs in at least one but not all conditions. The approach to classify dynamic eQTLs is estimated to have a false discovery rate of 48%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the eQTL mapping using the Combined Haplotype Test is appropriate for small sample sizes (C28), the classification of dynamic eQTLs (C29) relies on somewhat arbitrary statistical cutoffs (q<0.1 in one condition, p>0.15 in others). The authors acknowledge a high FDR of 48% (C30), which means roughly half of the identified dynamic eQTLs may actually be eQTLs in multiple conditions if sample size were larger. This high FDR creates substantial uncertainty about which specific loci are truly dynamic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Dynamic eSNPs show limited overlap with GTEx heart tissue eQTLs compared to shared eSNPs. Only 9.8% of dynamic eSNP-eGene pairs are eQTLs in GTEx heart tissue, while shared eSNPs are significantly more likely to be heart tissue eQTLs (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 provide a clear comparison between dynamic and shared eQTLs using GTEx data. The statistical test (Chi-squared, p=0.01, C32) appropriately demonstrates that shared eSNPs are more likely to be detected in primary heart tissue than dynamic eSNPs. This supports the interpretation that the perturbation study reveals novel context-specific regulatory effects not captured in steady-state tissue samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Induced eGenes are enriched for response genes (p=0.01) and transcription factors. Transcription factors are significantly enriched among response genes (p<2\u00d710\u207b\u00b9\u2076) and among induced eGenes compared to baseline eGenes (p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate statistically significant enrichments with appropriate tests (Chi-squared tests with significant p-values). The enrichment of transcription factors among response genes (C34) and induced eGenes (C35) is biologically coherent and supported by specific examples (MITF, PPARA) with literature citations. The integration of differential expression and eQTL data provides mechanistic insight into dynamic gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors identified 831 differentially accessible chromatin regions (DARs) between hypoxia and short-term re-oxygenation. DARs are enriched for transcription start sites, active histone marks, HIF1\u03b1/HIF2\u03b1 binding sites, E2F4 binding sites, SINE elements, and CpG islands compared to constitutively accessible regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 describe comprehensive chromatin accessibility analysis with appropriate statistical methods (adaptive shrinkage, FSR<10%, C36). The enrichment analyses use appropriate statistical tests (Chi-squared, Fisher tests) with highly significant p-values. The integration with external datasets (ENCODE histone marks C39, HIF ChIP-seq C40, E2F4 ChIP-seq C41) provides orthogonal validation. However, the lack of DARs between normoxia and hypoxia (C36) is notable and suggests either insufficient power or that chromatin changes occur primarily during re-oxygenation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Response genes are more likely to have CpG island promoters than non-response genes (p=0.002), and DARs have lower median DNA methylation levels than all accessible regions (p<2.2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide statistically significant associations between genomic features and regulatory responses. The enrichment of CGI promoters in response genes (C44) and lower methylation in DARs (C45) are supported by appropriate statistical tests. These findings are biologically coherent with the hypothesis that CGI promoters allow rapid transcriptional responses to stimuli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "DNA methylation levels are largely stable during hypoxia and re-oxygenation. No differentially methylated CpGs were found across all 766,658 CpGs tested, though four DMCpGs were identified when restricting analysis to CpG islands. Variance explained by condition is much lower for DNA methylation (0.8%) than gene expression (6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 demonstrate minimal DNA methylation changes with appropriate statistical analysis (FDR 10%, C46). The variance partition analysis (C48) provides quantitative support for the conclusion that DNA methylation is less responsive to oxygen stress than gene expression. The identification of only four DMCpGs in CpG islands (C47) after restricting the test set suggests that DNA methylation changes are rare and require focused analysis. The lack of changes is a valid negative result supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Several dynamic eQTLs and eGenes are associated with cardiovascular disease traits and phenotypes. One dynamic eSNP is associated with varicose veins, six dynamic eGenes are implicated in MI/heart failure/stroke, and two loci (EIF2B2 and CARM1) show nominal associations with CAD or MI in GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C52 identify potential disease-relevant loci, but the evidence is limited. The associations are mostly nominal (not genome-wide significant, C51-C52), and the study population (Yoruba) differs from most GWAS populations (European), limiting direct SNP-level comparisons. The LD relationships (R\u00b2=0.96 for EIF2B2, R\u00b2=0.32 for CARM1) vary in strength. While the integration with GWAS is valuable, the high FDR for dynamic eQTL classification (48%, C30) and the nominal significance of GWAS associations create uncertainty about which specific loci are truly disease-relevant. Claim C53 is an inference that requires validation in additional studies.",
+    "result_type": "MAJOR"
+  }
+]

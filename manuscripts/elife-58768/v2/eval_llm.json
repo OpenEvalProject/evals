@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Both minimalistic and mechanistic MCAS models exhibit saturation behavior where peak activator concentration approaches a saturation point and basal substrate concentration declines to a limit as total protein amount increases. In mechanistic models, saturation is only seen for the limiting species (Bem1-GEF), while non-limiting species (Cdc42) show increasing cytoplasmic substrate levels. This saturation leads to slowed competition and eventual coexistence of polarity peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C27 collectively demonstrate saturation behavior in both minimalistic and mechanistic models through simulation data (Figure 1D-I). The mechanistic model shows differential behavior for limiting vs. non-limiting species (C24-C26), and competition time increases with saturation (C22, C27). The simulation results are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cytokinesis-defective cdc12-6 mutant yeast cells generate chains of connected cells with continuous cytoplasm. These larger cells progressively generate more simultaneous buds over successive cell cycles, with the fraction of multi-budded cells increasing dramatically in the third and fourth cycles. Similar outcomes were observed in iqg1 mutants, indicating the phenotype is not specific to septin mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 are well-supported by experimental data shown in Figure 2A-B and supplementary figures. The progression from single to multiple buds is clearly documented across cell cycles, and the phenotype is validated in multiple genetic backgrounds. The conclusion that larger cells trigger a transition from competition to coexistence (C38) follows logically from the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Diploid cdc12-6 cells have larger volume and wider necks than haploid cells, yet generate significantly more two-budded cells despite the wider necks that should facilitate diffusion. This demonstrates that multi-budded outcomes can be predominantly attributed to larger cell size rather than neck geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by quantitative data in Figure 2C-D showing volume, neck width, and budding frequency differences between haploids and diploids. The logic is sound: if neck width were the dominant factor, diploids with wider necks should show fewer multi-budded cells, but the opposite is observed. The photobleaching experiments (Figure 2\u2014figure supplement 2) further validate that neck geometry has only a mild effect on diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In cdc12-6 rsr1\u0394 cells, competition occurs both within and between cell compartments. The number of initial polarity sites correlates with cell length, and sites form at non-random positions preferring bud tips and mother cell locations. The distance between initial sites is highly variable, consistent with MCAS models lacking a preferred length scale. The probability of successful competition decreases as cells grow larger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by time-lapse imaging data (Figure 3) and quantitative analysis (Figure 4B-E). The correlation between cell length and initial site number (C46) is shown in Figure 4B, non-random positioning (C47) in Figure 4C, variable distances (C48) in Figure 4D, and decreased competition probability (C50) in Figure 4E. The consistency with MCAS model predictions (C49) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Doubling the gene copy number of CDC42, CDC24, and BEM1 together (but not individually) increases protein concentrations without affecting cell size or the number of initial polarity sites. However, among cells establishing two initial sites, the frequency of multi-polar outcomes is significantly increased, demonstrating that increasing polarity protein abundance is sufficient to decrease competition effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are well-supported by western blot data (Figure 4\u2014figure supplement 1), morphological measurements (Figure 4F-G), and budding frequency analysis (Figure 4H). The experimental design is sound, controlling for cell size while varying protein abundance. The statistical significance of the effect (C54) is stated and shown in Figure 4H. The conclusion (C55) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Equalization in MCAS models requires an indirect pathway from activator to substrate, not negative feedback per se. The key features are: (1) a new species produced from activator, (2) that produces substrate, and (3) is more mobile than the activator. The indirect substrate model demonstrates that equalization occurs when the larger peak is associated with higher basal substrate levels, driving flux toward the smaller peak. The mobility of the indirect substrate must surpass a threshold for equalization to occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C72 present a comprehensive theoretical analysis supported by simulations (Figure 5). The progression from testing different models (C56-C58) to developing the indirect substrate model (C60-C63) to characterizing its behavior (C64-C70) is logical and well-documented. The parameter space analysis (Figure 5H-I) validates the predictions about mobility thresholds (C66) and substrate level differences (C67-C70). The general principle (C71-C72) is well-supported by the systematic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Time-lapse imaging of CDC2438A cells (non-phosphorylatable GEF) with two initial polarity sites reveals that most cells exhibit either competition (15 cells) or coexistence (14 cells), with only three possible cases of equalization. Five cells showed 'aborted competition' where slow competition was curtailed by budding. These data suggest coexistence is the dominant mechanism for multipolar outcomes in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C84 are supported by detailed time-lapse imaging and quantification (Figure 6). The use of CDC2438A to eliminate oscillations (C76-C77) is well-justified. The classification of behaviors is based on quantitative tracking of Bem1 fluorescence at each site. However, the small sample size (32 cells total) and the uncertainty about the three equalization cases (C81) are appropriately acknowledged. The conclusion about coexistence being dominant (C84) is reasonable given the data, though the sample size limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study demonstrates three main findings: (1) yeast cells behave as predicted by MCAS models, producing multipolar outcomes as polarity protein amounts increase; (2) equalization requires indirect pathways from activator to substrate; and (3) coexistence is the dominant mechanism for multipolar outcomes in yeast cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are summary statements in the Discussion that accurately reflect the major findings supported by the experimental and modeling results. C85 is supported by the cytokinesis-defective cell experiments and gene dosage experiments. C86 is supported by the theoretical analysis of the indirect substrate model. C87 is supported by the time-lapse imaging of CDC2438A cells. These are appropriate high-level conclusions from the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establishing that Rho-family GTPases regulate cell polarity through MCAS models, which feature positive feedback, differential diffusion, and mass conservation. These models develop multiple initial polarity sites that compete, with competition slowing as concentrations approach saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 are background knowledge claims supported by appropriate citations to established literature. These provide the theoretical foundation for the study and are well-established in the field. The descriptions of MCAS model features (C13-C16) are accurate and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "In the mechanistic model of yeast polarity, GTP-Cdc42 recruits its own GEF through interactions with PAKs and Bem1, yielding positive feedback. Competition time increases as peaks saturate in this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 describe the mechanistic basis of the yeast polarity circuit and simulation results. C21 is well-supported by multiple citations to experimental work. C22 is supported by simulation data shown in Figure 1I. These are important supporting details for the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Based on modeling predictions, cells should switch from competition to coexistence as polarity activator amounts increase. Previous work showed that extreme overexpression leads to depolarization, but increasing cell size while keeping protein concentrations constant should lead to multi-budded cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are predictions and rationale for the experimental approach. C28 is a logical prediction from the modeling results. C29 is supported by appropriate citations to prior work. C30 is a reasonable experimental strategy supported by citations. These provide important context and justification for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Larger cell size could lead to multi-polar outcomes by affecting the number of initial polarity sites, subsequent competition between sites, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is a hypothesis stated to frame the subsequent experiments. It is a reasonable hypothesis that is then tested through the experiments described in the following sections. This is appropriate scientific reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Different classes of pattern-formation models predict increasing numbers of polarity sites with cell size through different mechanisms: classical Turing models through characteristic length scales, MCAS models through slowed competition and coexistence, and complex MCAS models through switches from competition to equalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are discussion points comparing different theoretical frameworks, appropriately supported by citations. These provide important context for interpreting the experimental results and are accurate representations of the different model classes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The number of initial polarity sites may reflect experimental system specifics rather than classical Turing behavior, and competition emerges as a consequence of mass conservation, suggesting MCAS models best fit the yeast system behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are interpretations of the experimental observations in the context of different theoretical frameworks. The reasoning is sound: the variable distance between sites (C48) is inconsistent with classical Turing models but consistent with MCAS models. The observation of competition supports MCAS models. These are appropriate inferences from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Aborted competition (where competition fails to complete before budding) is at odds with MCAS model predictions. This may indicate that the polarity circuit changes at bud emergence, possibly through cell cycle control by cyclin/CDK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 identify a discrepancy between observations and model predictions and propose a speculative explanation. While the observation of aborted competition (C82-C83) is supported by data, the explanation (C95) is explicitly speculative and supported only by citations suggesting plausible mechanisms. This represents an important limitation of the current models that requires future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "All multibudded cells had buds from different lobes, suggesting competition is more effective within lobes than between lobes, possibly due to geometrical narrowing at necks slightly retarding diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is an observation from the data. Claims C97-C98 are inferences and speculation based on this observation. While the observation is clear, the explanation is somewhat speculative. However, the photobleaching experiments (Figure 2\u2014figure supplement 2) do show a mild effect of neck geometry on diffusion, supporting the plausibility of this explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Saturation is the dominant factor determining competition timescale in minimalistic MCAS models, and these findings hold in more complex mechanistic models. In multi-component models, substrate depletion and activator profiles vary for different species, with saturation seen only for limiting species, and addition of one species can switch the identity of the limiting species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are discussion points synthesizing the modeling results and comparing minimalistic and mechanistic models. These are well-supported by the simulation data presented in Figure 1 and supplementary figures. The insights about limiting species behavior (C101-C104) are important for understanding multi-component systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Negative feedback is neither necessary nor sufficient for equalization. The key features enabling equalization are: production from activator, substrate production, and high mobility. Rapid mobility of the indirect substrate is essential, and at extreme mobility the system exhibits classical Turing behavior. In the limit of infinite diffusion, the mass-conserved system resembles non-mass-conserved models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 are discussion points elaborating on the theoretical findings about equalization. These are well-supported by the simulation results in Figure 5 and represent important theoretical insights. The connection to classical Turing models at high mobility (C109) and non-mass-conserved models at infinite diffusion (C110) provides valuable theoretical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The yeast polarity circuit has several species that could provide indirect pathways from activator to substrate, but few cases of equalization were detected, suggesting the physiological parameter space is not prone to equalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 connect the theoretical findings to the biological system. C111 is a reasonable inference based on knowledge of the yeast polarity circuit. C112 is supported by the time-lapse imaging data (Figure 6) showing only 3 possible equalization cases out of 32 cells. This is an appropriate interpretation of the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "MCAS circuits robustly produce desirable outcomes for morphogenetic systems, with cell size effectively controlling polarity site numbers. Various fungal species show correlations between cell size and polarity site numbers, suggesting this may be a general principle. Phenotypic diversity may be enabled by circuits that can switch between competition, coexistence, and equalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 are discussion points placing the findings in broader biological context. These are appropriately supported by citations to work in other systems (C115-C119). The speculation about phenotypic diversity (C120) is reasonable given the findings but is explicitly speculative. These provide important context for the significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "The study confirms that increasing polarity protein amounts in budding yeast results in multiple polarity sites and simultaneous budding, and elucidates a novel design principle for switching from competition to equalization among polarity sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are the main findings stated in the abstract. C4 is well-supported by the experimental data in Figures 2 and 4. C5 is supported by the theoretical analysis in Figure 5. These accurately summarize the major contributions of the work.",
+    "result_type": "MAJOR"
+  }
+]

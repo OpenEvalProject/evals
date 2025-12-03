@@ -1,0 +1,2198 @@
+{
+  "submission": {
+    "id": "f77da670-8942-441d-932b-7950d469b9e9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:04:55.479401Z",
+    "updated_at": "2025-12-03T01:04:55.479401Z"
+  },
+  "content": [
+    {
+      "id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "submission_id": "f77da670-8942-441d-932b-7950d469b9e9",
+      "content_type": "manuscript",
+      "content_text": "# Optogenetic control of gut bacterial metabolism to promote longevity\n\n## Authors\n\n- Lucas A Hartsough<sup>1</sup>\n- Mooncheol Park<sup>2</sup>\n- Matthew V Kotlajich<sup>1</sup>\n- John Tyler Lazar<sup>3</sup>\n- Bing Han<sup>2</sup>\n- Chih-Chun J Lin<sup>2</sup>\n- Elena Musteata<sup>5</sup>\n- Lauren Gambill<sup>5</sup> ([ORCID: 0000-0002-1490-2449](https://orcid.org/0000-0002-1490-2449))\n- Meng C Wang<sup>2</sup> ([ORCID: 0000-0002-5898-6007](https://orcid.org/0000-0002-5898-6007)) \u2020\n- Jeffrey J Tabor<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Bioengineering Houston United States\n2. Huffington Center on Aging Houston United States\n3. Department of Chemical and Biomolecular Engineering Houston United States\n4. Department of Molecular & Human Genetics, Baylor College of Medicine Houston United States\n5. Systems, Synthetic, and Physical Biology Program, Rice University Houston United States\n6. Howard Hughes Medical Institute Houston United States\n7. Department of Biosciences Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGut microbial metabolism is associated with host longevity. However, because it requires direct manipulation of microbial metabolism in situ, establishing a causal link between these two processes remains challenging. We demonstrate an optogenetic method to control gene expression and metabolite production from bacteria residing in the host gut. We genetically engineer an Escherichia coli strain that secretes colanic acid (CA) under the quantitative control of light. Using this optogenetically-controlled strain to induce CA production directly in the Caenorhabditis elegans gut, we reveal the local effect of CA in protecting intestinal mitochondria from stress-induced hyper-fragmentation. We also demonstrate that the lifespan-extending effect of this strain is positively correlated with the intensity of green light, indicating a dose-dependent CA benefit on the host. Thus, optogenetics can be used to achieve quantitative and temporal control of gut bacterial metabolism in order to reveal its local and systemic effects on host health and aging.\n\n## Introduction\n\nMicrobiome studies have identified correlations between bacteria and host aging (Kundu et al., 2017; O'Toole and Jeffery, 2015). For example, 16S rRNA and metagenomic DNA sequencing are used to associate the presence or abundance of specific bacteria to human centenarians (Biagi et al., 2016; Claesson et al., 2012; Claesson et al., 2011). However, given the complexity and heterogeneity of the human gut environment, these approaches are unable to elucidate how a specific microbial species contributes to longevity.\n\nThe nematode Caenorhabditis elegans has a short and easily-measured lifespan, features that have revolutionized our understanding of the molecular genetics of aging and longevity (Kenyon, 2010). Studies using C. elegans also provide mechanistic insight into the association between bacterial species and host longevity (Gusarov et al., 2013; Kim, 2013). Importantly, recent studies have revealed that bacterial metabolism can produce specific products to directly influence the aging process in the host C. elegans or modulate the effects of environmental cues on C. elegans lifespan (Cabreiro et al., 2013; Pryor et al., 2019; Virk et al., 2016). These findings highlight the significance of bacterial metabolism in regulating host physiology during the aging process and have inspired interest in directly manipulating bacterial metabolism in situ in the host gastrointestinal (GI) tract.\n\nIn several recent studies, researchers have administered antibiotic- or carbohydrate-based small molecule inducers to modulate gene expression from gut bacteria (Kotula et al., 2014; Lim et al., 2017; Mimee et al., 2015). While this approach can be used to perform in situ analyses of gut bacterial-host interactions (Lim et al., 2017), chemical effectors may have unwanted side-effects on host or microbial physiology and are subject to slow and poorly-controlled transport and degradation processes that ultimately limit their precision.\n\nOptogenetics combines light and genetically-engineered photoreceptors to enable unrivaled control of biological processes (Olson and Tabor, 2014). Previously, we and others have engineered photoreceptors that regulate bacterial gene expression in response to specific wavelengths of light (Levskaya et al., 2005; Li et al., 2020; Ohlendorf et al., 2012; Ong and Tabor, 2018; Ong et al., 2018; Ramakrishnan and Tabor, 2016; Ryu and Gomelsky, 2014; Schmidl et al., 2014). These photoreceptors have been used to achieve precise quantitative (Olson et al., 2017; Olson et al., 2014), temporal (Chait et al., 2017; Milias-Argeitis et al., 2016; Olson et al., 2017; Olson et al., 2014), and spatial (Chait et al., 2017; Levskaya et al., 2005; Ohlendorf et al., 2012; Tabor et al., 2011) control of bacterial gene expression in in vitro culture conditions. They have also been used to characterize and control transcriptional regulatory circuits (Chait et al., 2017; Olson et al., 2014; Tabor et al., 2009) and bacterial metabolic pathways (Fernandez-Rodriguez et al., 2017; Tandar et al., 2019) in vitro. Here, we hypothesized that optogenetic control of bacterial gene expression might provide a new way to fine-tune bacterial metabolism in the host GI tract with high temporal precision and no unwanted side-effects.\n\nWe address this possibility using the E. coli and C. elegans interaction model, an optically transparent system with known mechanistic links between bacterial metabolism and host longevity. In particular, CA is an exopolysaccharide synthesized and secreted by E. coli that can extend the lifespan of the host C. elegans by modulating mitochondrial dynamics (Han et al., 2017). First, we engineer E. coli strains that express fluorescent reporter proteins under control of our previously engineered green light-activated, red light de-activated two-component system CcaSR (Schmidl et al., 2014). We then expose worms carrying these engineered E. coli in their GI tracts to time-varying green and red light signals to demonstrate optical activation and de-activation of bacterial gene expression in worm gut. Next, we genetically engineer an E. coli strain that biosynthesizes CA under control of CcaSR, and utilize green light to induce CA production from this strain in the gut of the host C. elegans. Our experiments reveal that green light-induced CA from bacteria residing in the host gut is sufficient to modulate mitochondrial dynamics and lifespan. We use this approach to investigate the local effect of CA production on intestinal cells in a time-controlled manner and its systemic effect on organisms in a tunable way, neither of which is possible using the previous methods of administering purified CA to worms or feeding worms E. coli mutants that constitutively overproduce CA. This work paves the way for future studies of bacterial-host interactions with high temporal, spatial, and quantitative control without the shortcomings of chemical inducers.\n\n## Results\n\nTo demonstrate optogenetic control over gut bacterial gene expression, we first engineered E. coli strain LH01, wherein CcaSR controls expression of superfolder green fluorescent protein (sfgfp), and mcherry is expressed constitutively to facilitate identification of the bacteria (Figure 1a, Figure 1\u2014figure supplement 1, Supplementary file 1a, 1b). In LH01, green light-exposure switches CcaS to an active state in the presence of chromophore phycocyanobilin (PCB), wherein it phosphorylates the response regulator CcaR. Phosphorylated CcaR then activates transcription of sfgfp from the PcpcG2-172 output promoter. Red light reverts active CcaS to the inactive form, de-activating sfgfp expression (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig1-v1.jpg)\n\n**Figure 1.:** (a) Strain LH01, which harbors two plasmids: pSR43.6, which encodes the biosynthesis of the PCB chromophore, and pLH401, which encodes the CcaSR TCS with GFP as output and constitutive mCherry production. DNA element legend: origins of replication (circles), promoters (bent arrows), ribosome binding sites (semi-circles), open reading frames (block arrows), transcriptional terminators (vertical lines with flat tops). Protein legend: Dark green protein (CcaS), light green protein (CcaR), black circle (phosphoryl group). Signal legend: filled gray arrows (biochemical or biophysical process), open gray arrows (signal transduction). (b) Microscopy and cytometry workflows. All begin with worms fed bacteria grown in the precondition light condition. Microscopy samples were then paralyzed and imaged while exposed to the experimental light condition. Cytometry samples were washed and paralyzed, exposed to the experimental light condition, and finally homogenized before cytometry. (c) Fluorescence microscopy images 0 and 8 h after green light exposure in the step ON experiment. Scale bar: 10 \u03bcm. (d) Response dynamics in the step ON (green) and step OFF (red) microscopy experiments. Black: \u0394PCB strain (step ON experiment). Individual- (light lines) and multi-worm average (dark lines) data are shown. n\u00a0=\u00a07, 4, 6\u00a0worms for green, red, black data sets (measured over 2, 3, 1 days, respectively). Error bars: SEM. (e\u2013g) Flow cytometry histograms for response dynamics experiments. MEFL: molecules of equivalent fluorescein.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** All optogenetic strains carry our previously published CcaSR v2.0 system, which is encoded on plasmids (a) pSR43.6, (b) pSR58.6, (c) pLH401 (used for microscopy) and (d) pLH405 (used for cytometry) genetic device schematics. We replaced sfgfp with gfpmut3* in pLH405 as we hypothesized that the latter may be less stable and thus result in faster response dynamics. However, we observed no difference in dynamics. (e) Batch culture light responses of CcaSR v2.0 and all GFP reporter strains used in this study. GFP fluorescence was measured by flow cytometry. The dynamic range (ratio of GFP fluorescence in green versus red light) is shown above each data set. We note that CcaSR v2.0 exhibits 77-fold dynamic range in the reference strain BW29655 (\u0394envZ, \u0394ompR), which is similar to our previous measurement of this strain at 120-fold (Schmidl et al., 2014). The calculated fold-change is sensitive to fluctuations in the measured E. coli autofluorescence and red-light expression level, which likely explains the slight discrepancy. CcaSR v2.0 dynamic range increases slightly to 84.2-fold in \u2206rcsA (JW1935-1), which is used throughout this work, due to higher sfGFP expression in green light. The mCherry cassette in pLH401 decreases dynamic range to 38.3-fold due to higher leaky sfGFP expression in red light. In worms, the fold-change in response to green light decreases further to 5.52\u00a0\u00b1\u00a02.4 fold (Figure 1d). The use of gfpmut3* in pLH405 further decreases dynamic range to 13.5\u00a0\u00b1\u00a00.0 fold for reasons that are not clear, while in worms the fold-change is 8.63\u00a0\u00b1\u00a03.6 fold (Figure 1e). Data represent the mean of three independent, autofluorescence-subtracted, biological replicates acquired on three separate days. Error bars: standard deviation.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Strain LH05 (Supplementary file 1b), which expresses only mCherry, was fed to worms, isolated, and analyzed by flow cytometry to quantify E. coli autofluorescence through the FL1 (GFP) channel. To eliminate events corresponding to cytometer noise and autofluorescence of homogenized worm samples, three gates were then applied: (1) a density gate for the most homogeneous 75% of samples in forward scatter (FSC) vs side-scatter (SSC) (the area within the bold black line in the plots in Column 1), (2) a threshold gate on the FL1 (GFP) channel (marked by a red dashed line; Methods), and (3) a threshold gate for events exhibiting high FL3 (mCherry, red dashed line; Methods). (b) Applying these gates to samples from the step ON experiment (Figure 1e) reveals robust isolation of bacteria with a FSC/SSC profile consistent with our previous in vitro experiments24,47 and an increase in expression of GFPmut3* in response to green light. Ungated data are shown for comparison to gated data in all plots.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) LH03 and (b) LH04 (\u0394PCB) step ON results. (c) LH03 and (d) LH04 (\u0394PCB)\u00a0step OFF results. Each individual trajectory (faint lines) corresponds to a single biological replicate. A biological replicate comprises the homogenized contents of five worms collected on a single day. Each biological replicate on a given plot was run on a different day. Population medians taken across all trajectories are shown in bold (Methods). Data are composed of six and eight trajectories in the step ON and step OFF experiments, respectively. Error bars: SEM.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Worms were suspended in clear tubes containing M9Ce+Lev media and levamisole in the flow cytometry experiments. To demonstrate that bacterial cells outside the worm gut (e.g. on the exterior of the worm) do not respond to light in these conditions, samples of pre-conditioned bacteria from the NGM plates were suspended in the M9Ce+Lev or E. coli M9 media supplemented with casamino acids and glucose (M9Ec). These samples were then exposed to either green or red light for 8 hr, then measured via flow cytometry after the fluorophore maturation protocol (Methods). As expected, the bacterial populations are only responsive to light when grown in M9Ec and when the PCB operon is intact (strain JW1935-1/pLH405/pSR43.6, aka LH03). We conclude that the responses shown in data in Figure 1e\u2013f and Figure 1\u2014figure supplement 3 are not due to bacteria outside the worm, nor to bacteria that escape the worm over the course of the experiment, as such cells do not respond to light in the experimental buffer (M9Ce). Data represent 7, 6, 3, and 5 replicates (left); and 8, 3, 8, and 3 replicates (right) over 8 and 10 days, respectively; error bars: SEM. Individual data points for each condition are overlaid as white markers.\n\nWe then reared two groups of C. elegans from the larval to the adult stage on plates of LH01 under red or green light, respectively (Figure 1b). Next, we washed away external bacteria, applied the paralyzing agent levamisole to prevent expulsion of gut contents, and transferred the worms to agar pads. Finally, we switched the applied light color from red to green (step ON), or green to red (step OFF), and used epi-fluorescence microscopy to image the resulting changes in sfGFP and mCherry fluorescence in the gut lumen over time (Figure 1c). In the step ON experiment, sfGFP fluorescence in the worm gut lumen starts low, begins to increase within 2 hr, and reaches a saturated high level at 6 hr (Figure 1d). On the other hand, in the step OFF experiment, sfGFP fluorescence begins high, and decreases exponentially between hours 1\u20137 (Figure 1d). This light response is abolished when the PCB biosynthetic operon is removed (\u0394PCB) (Figure 1d), demonstrating that changes in sfGFP fluorescence are due to CcaSR photoswitching in the worm gut.\n\nNext, we used flow cytometry to analyze these bacterial light responses with single-cell resolution. Specifically, we reared worms on light sensing bacteria in red and green light as before, but then washed, paralyzed, and placed them into microtubes prior to light switching (Figure 1b). At several time points over the course of 8 hr, we homogenized the animals, harvested the gut contents, sorted bacterial cells, and measured fluorescence via flow cytometry. We observed that our engineered bacteria remain intact in the host gut (Figure 1\u2014figure supplement 2) and respond to light in a unimodal fashion (Figure 1e\u2013g). The temporal dynamics and PCB dependence of the gene expression responses recapitulate the microscopy results (Figure 1\u2014figure supplement 3). We also confirmed that residual bacteria on the exterior of worms do not contribute to the flow cytometry measurements (Figure 1\u2014figure supplement 4). Together, these microscopy and flow cytometry experiments demonstrate that we can use optogenetics to rapidly and reversibly induce gene expression of E. coli residing in the C. elegans gut.\n\nNext, we sought to utilize our optogenetic method to modulate the production of specific metabolites in bacteria residing in the gut of live hosts. Bacterial genes involved in the same metabolic process are often clustered into operons and co-regulated at the transcriptional level. We took advantage of this coordinated mode of regulation and chose the cps operon and its transcription activator RcsA for testing optogenetic control of bacterial metabolism. The cps operon in E. coli consists of 19 genes that encode enzymes required for the biosynthesis and secretion of CA (Torres-Cabassa and Gottesman, 1987), and CA-overproducing bacterial mutants \u0394lon and \u0394hns promote longevity in the host C. elegans (Han et al., 2017). To place CA biosynthesis under optogenetic control, we engineered E. coli strain MVK29 which lacks genomic rcsA, and expresses a heterologous copy of rcsA under the control of CcaSR (Figure 2a, Supplementary file 1a, 1b). We first examined whether MVK29 could respond to green light and induce CA production and secretion. To this end, we grew the strain in batch culture under red or green light and quantified supernatant CA levels. In red light, MVK29 secretes CA to concentrations below the limit of detection of the assay, similar to the \u0394rcsA mutant (Figure 2b). Green light, on the other hand, induces MVK29 to secrete high levels of CA, and removal of the PCB biosynthetic operon abolishes this response (Figure 2b). Moreover, mutation of the CcaS catalytic histidine to a non-functional alanine (H534A), or the CcaR phosphorylation site from an aspartic acid to a non-functional asparagine (D51N) abolishes detectable CA production (Figure 2b). Importantly, the level of secreted CA increases sigmoidally with the increasing intensity of green light (Figure 2c), which is consistent with the response of CcaSR (Schmidl et al., 2014). We conclude that we have placed CA production under the control of CcaSR, and that we can use light to tune the biosynthesis and secretion of bacterial metabolites.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig2-v1.jpg)\n\n**Figure 2.:** (a) Strain MVK29, harboring two plasmids: pSR43.6, which encodes the biosynthesis of the PCB chromophore, and pMK201.2, which includes rcsA under the optogenetic control of CcaSR. RcsA activates transcription of the CA biosynthetic operon, ultimately producing CA. (b) CA secretion levels for MVK29 and control strains exposed to red and green light. JW1935-1 is the E. coli rcsA background strain used in this study. N.D.: below assay limit of detection. (c) Green light intensity versus CA secretion level for MVK29. Data points represent three biological replicates collected on a single day. Dashed line: limit of detection. Error bars indicate standard deviation of the three biological replicates.\n\nWe then used this approach to study a gut bacterial metabolite-host interaction pathway in vivo. We first focused on cellular phenotypes in the worm gut that directly interact with bacteria and examined mitochondrial morphology that is known to be affected by CA (Han et al., 2017). Lon is an ATP-dependent protease that degrades RcsA, and its deletion mutant \u0394lon shows increased CA production (Han et al., 2017). When grown on \u0394lon mutant bacteria, worms exhibit elevated mitochondrial fragmentation in intestinal cells, similar to worms with CA supplementation (Han et al., 2017). To determine whether light-induced CA overproduction in MVK29 could affect the host as effectively as the CA overproduction caused by the \u0394lon mutant, we reared two different transgenic worm strains, expressing either mitochondrially-localized GFP (mito-GFP) or mitochondrially-localized RFP (mito-RFP) in the intestine (Supplementary file 1b), on the plate with MVK29 and exposed the plate to red light. For each worm strain, we continued to expose one group to red light but switched a second to green for an additional 6 hr (unparalyzed light-exposure, Figure 3a). After paralyzing the worms with levamisole, we immediately imaged intestinal cell mitochondrial morphology using confocal microscopy and categorized the morphology into the tubular, intermediate, or fragmented (Figure 3b). We found that green light increases mitochondrial fragmentation in MVK29-fed worms, but not in worms fed a MVK29 \u0394PCB control strain that does not respond to light (Figure 3c, Figure 3\u2014figure supplement 1). Thus, our light-inducible CA biosynthetic strain recapitulates the effect of the \u0394lon mutant or purified CA on the host.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig3-v1.jpg)\n\n**Figure 3.:** (a) Schematic of experiment for activating CA biosynthesis in situ using unparalyzed light-exposure conditions. (b) Representative images of the mitochondrial network of anterior intestinal cells visualized by either mitochondrially-localized GFP (mito-GFP) or RFP (mito-RFP) immediately distal to the pharynx are scored as fragmented, intermediate, or tubular. Scale bars: 5 \u03bcm. (c) Mitochondrial morphology profiles of intestinal cells in unparalyzed worms fed MVK29 while exposed to red or green light for 6 hr. (d) Schematic of experiment for activating CA biosynthesis in situ using paralyzed light-exposure conditions (e) Mitochondrial morphology profiles of intestinal cells in worms fed the indicated strain, and then paralyzed for 6 hr while exposed to red or green light. (f) Representative images of mitochondrial morphology in muscular cells, and the quantification of these images using worms fed the indicated strain, and then paralyzed for 6 hr while exposed to red or green light. The Chi-Squared Test of Homogeneity was used to calculate p-values between conditions in c, e, and f. Combined results are shown from multiple independent replicates and see Figure 3\u2014figure supplement 1 for data of each replicate.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Mitochondrial morphology profiles of intestinal cells in unparalyzed worms fed the indicated strain while exposed to red or green light for 6 hr. The combined result is presented in Figure 3c. (b,c) Mitochondrial morphology profiles of intestinal cells in worms fed the indicated strain, and then paralyzed for 6 hr while exposed to red or green light. The combined result is presented in Figure 3e. (d) Mitochondrial morphology profiles of muscle cells in worms fed the indicated strain, and then paralyzed for 6 hr while exposed to red or green light. The combined result is presented in Figure 3f. **p<0.01, ***p<0.001 by the Chi-Squared Test of Homogeneity.\n\nWe next set out to induce CA production directly from bacteria residing within the host gut and examine its effect on intestinal mitochondria. To this end, we removed worms from plates, washed away external bacteria, paralyzed them using levamisole to stop bacteria being expelled from the gut, exposed them to green or red light for 6 hr, and then imaged intestinal mitochondrial morphology using confocal microscopy (paralyzed light-exposure, Figure 3d). In these conditions, CA production is inactivated on the plate and worms are only exposed to CA produced from bacteria residing with the host gut. Unexpectedly, we found that 6 hr of levamisole treatment does not kill worms but leads to mitochondrial hyper-fragmentation in the intestine (Figure 3c,e), possibly due to the inhibitory effect of levamisole on mitochondrial NADH-oxidizing enzymes (K\u00f6hler and Bachmann, 1978) and its associated mitochondrial stress. This hyper-fragmentation phenotype was not observed in worms treated with levamisole less than 1 hr. This stress-induced fragmentation resembles mitochondrial changes related to aging and age-related neurodegenerative diseases (Cho et al., 2009; Exner et al., 2007; Sebasti\u00e1n et al., 2017). Interestingly, we found that green light exposure suppresses stress-induced hyperfragmentation in paralyzed worms bearing MVK29 in the gut (Figure 3e, Figure 3\u2014figure supplement 1). Importantly, we found no such effects in worms bearing the \u0394PCB, CcaS(H534A), CcaR(D51N) or \u0394rcsA mutant strains (Figure 3e, Figure 3\u2014figure supplement 1), suggesting that this protective effect is a result of light-induced CA overproduction in the gut. As a control using transgenic worms expressing mito-GFP in the muscle, we also examined muscular mitochondrial morphology under paralyzed light-exposure conditions. We found that 6 hr levamisole treatment induces mitochondrial hyper-fragmentation in the muscle as it does in the intestine, but that light-induced CA production from the gut bacteria does not protect muscular mitochondria against hyper-fragmentation (Figure 3f, Figure 3\u2014figure supplement 1). These results not only show that optogenetics can be utilized to induce CA secretion from gut-borne E. coli in vivo, but also reveal a local protective effect of CA on intestinal cells.\n\nFinally, we examined how the extent of light-induced CA production relates to host lifespan extension. We first confirmed that green-light-exposed MVK29 can induce CA overproduction to a level comparable to the \u0394lon mutant (Figure 4a, Figure 4\u2014figure supplement 1), and neither the \u0394lon nor the \u0394rcsA mutant responds to light (Figure 4a). Next, beginning at the day-1 adult stage, we exposed worms bearing MVK29 to red, or low and high green light intensities resulting in intermediate or saturating levels of CA secretion in vitro (Figure 2c, Figure 4\u2014figure supplement 1), and measured their lifespans. We found that green light exposure extends worm lifespan compared to red light exposure (Figure 4b). Furthermore, the extent of lifespan extension at high green light intensity is 1.7-fold higher than that at low intensity (Figure 4b, Supplementary file 1c), suggesting a dose-dependent effect. In parallel, we measured the lifespan of worms bearing the CA-overproducing \u0394lon mutant and showed that the lifespan extension caused by \u0394lon is independent of light exposure (Figure 4c). The extent of lifespan extension caused by \u0394lon is comparable to that caused by MVK29 (Figure 4b,c, Supplementary file 1c), which is consistent with the result that \u0394lon and green-light-exposed MVK29 induce CA overproduction to a similar level (Figure 4a). In addition, the lifespan of worms bearing the \u0394rcsA mutant is also light-independent and is comparable to that of MVK29 worms under red light (Figure 4d, Supplementary file 1c). These results suggest that optogenetic control is sufficient to induce bacterial production of pro-longevity compounds and improve host health. Unlike administration of a bacterial mutant, optogenetic control of bacterial metabolism can modulate a host-level phenotype in a dose-dependent manner.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig4-v1.jpg)\n\n**Figure 4.:** (a) Green light induces CA overproduction in MVK29 to a level comparable to the \u2206lon mutant, and neither the \u2206lon or the \u2206rcsA mutant changes its CA levels in response to the green light exposure. Green-H indicates a high green light intensity yielding high levels of CA production. **p<0.01 by student\u2019s t-test. Experiments were conducted at 26\u00b0C. (b) When exposed to green light, worms grown on MVK29 live longer than those exposed to red light, and the magnitude of lifespan extension correlates with green light intensity (p<0.0001 green vs. red, log-rank test). Green-L indicates a low level of green light intensity resulting in intermediate levels of CA production. Experiments were conducted at 26\u00b0C. (c\u2013d) The lifespans of worms grown on the \u2206lon (c) or the \u2206rcsA (d) controls are not affected by light condition (p>0.1 green vs. red, log-rank test). Experiments were conducted at 26\u00b0C.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56849/elife-56849-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Calibration of light intensities used to compare CA secretion levels from MVK29 to those from \u0394lon and \u0394rcsA in Figure 4. **p<0.01 by student\u2019s t-test.\n\n## Discussion\n\nOur method has broad applications for studying microbe-host interactions in situ. For example, we have identified about two dozen additional E. coli genes that are unrelated to CA biosynthesis and that enhance worm longevity when knocked out (Han et al., 2017), though the mechanisms by which they act remain largely unclear. By using light to induce their expression in the gut and measuring acute host responses such as changes in mitochondrial dynamics, the role of these genes in gut microbe-host interactions could be further explored. In another example, the quorum-sensing peptide CSF and nitric oxide, both of which are produced by Bacillus subtilis during biofilm formation, have been found to extend worm lifespan through downregulation of the insulin-like signaling pathway (Donato et al., 2017). We have recently ported CcaSR into B. subtilis and demonstrated that it enables rapid and precise control of gene expression dynamics (Castillo-Hair et al., 2019). The method we report here should enable optogenetic control of gene expression and metabolite production in B. subtilis and in situ studies of how this important Gram-positive model bacterium impacts longevity as well.\n\nMultiple photoreceptors could also be combined to study more complex microbe-host interaction pathways. Specifically, we and others have co-expressed CcaSR with independently-controllable blue/dark and red/far-red reversible light sensors to achieve simultaneous and independent control of the expression of up to three genes in the same bacterial cell (Fernandez-Rodriguez et al., 2017; Olson et al., 2017; Tabor et al., 2011). Such optogenetic multiplexing could be performed in situ and used to study potential synergistic, antagonistic, or other higher-order effects of multiple bacterial genes or pathways. A large number of eukaryotic photoreceptors have also been developed, enabling optical control of many cell- and neurobiological processes (Deisseroth, 2015; Gautier et al., 2014; Goglia and Toettcher, 2019; Leopold et al., 2018). Bacterial and eukaryotic photoreceptors could be combined to enable simultaneous optical manipulation of bacterial and host pathways to interrogate whether or how they interact. Optogenetics could also be used to manipulate bacterial and/or host pathways at specific locations within the gut to examine location- or tissue-dependent phenomena.\n\nFinally, optogenetic approaches could be extended to other bacteria or hosts. Although E. coli is an important model of Gram-negative bacteria, it is not a natural symbiont of C. elegans. Because E. coli does not stably colonize in the C. elegans gut, we have to paralyze worms to facilitate longer-term experiments. It would be interesting future work to port CcaSR or other bacterial photoreceptors into native C. elegans symbionts (Zhang et al., 2017) or pathogens (Couillault and Ewbank, 2002) and apply them for studying the physiological and pathological effects of bacterial symbionts in vivo in non-paralyzing hosts. Moreover, it is likely that light can also be used to control gut bacterial gene expression in other model hosts such as flies, zebrafish, or mammals. Red-shifted wavelengths and corresponding optogenetic tools (Ong et al., 2018; Ryu and Gomelsky, 2014) may prove superior for less optically transparent or larger animals. Overall, by enabling precision control of bacterial gene expression and metabolism in situ, we believe that optogenetics will greatly improve our understanding of a wide range of microbe-host interactions. In particular, through aiding the digestion of ingested food, intestinal bacteria alter their gene expression and metabolism and can consequently generate specific metabolites to influence other microbes and the host in close proximity. Understanding dynamic diet-microbe-host interplays demands a quantitative method to manipulate bacterial gene expression in a temporally controlled manner. For example, upon the supplementation of a specific food source, turning on or off a specific gene in bacteria and in turn examining molecular changes in the host would help reveal primary nodes in the complex diet-microbe-host network. Given their quantitative nature, rapid and reversible switching ability, and suitability for in vivo application, optogenetic approaches will provide a new toolbox for this area of research to decipher how mechanistically microbial genetic factors participate in those diet-microbe-host interplays and contribute to host health and diseases.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLH401</td>\n      <td>This paper</td>\n      <td>GenBank: MN617156</td>\n      <td>Constitutive ccaR expression, PcpcG2-172:sfgfp, constitutive mcherry expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLH405</td>\n      <td>This paper</td>\n      <td>GenBank: MN617157</td>\n      <td>PcpcG2-172:gfpmut3*, constitutive mcherry expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLH407</td>\n      <td>This paper</td>\n      <td>GenBank: MN617158</td>\n      <td>Constitutive mcherry expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLH412</td>\n      <td>This paper</td>\n      <td>GenBank: MN617159</td>\n      <td>Constitutive ccaS(H534A), ho1, and pcyA expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLH413</td>\n      <td>This paper</td>\n      <td>GenBank: MN617160</td>\n      <td>Constitutive ccaR(D51N) expression, PcpcG2-172:rcsA</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSR43.6</td>\n      <td>Schmidl et al., 2014</td>\n      <td>GenBank: MN617163</td>\n      <td>Constitutive expression of ccaS, ho1, and pcyA</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSR49.2</td>\n      <td>Schmidl et al., 2014</td>\n      <td>GenBank: MN617164</td>\n      <td>Constitutive expression of ccaS</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMVK201.2</td>\n      <td>This paper</td>\n      <td>GenBank: MN617161</td>\n      <td>Constitutive expression of ccaR, PcpcG2-172:rcsA</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMVK228</td>\n      <td>This paper</td>\n      <td>GenBank: MN617162</td>\n      <td>Constitutive expression of ccaS</td>\n    </tr>\n    <tr>\n      <td>Stain, strain background (Escherichia coli)</td>\n      <td>BW25113</td>\n      <td>Baba et al., 2006</td>\n      <td>CGSC#: 7626</td>\n      <td>Keio parent strain</td>\n    </tr>\n    <tr>\n      <td>Stain, strain background (Escherichia coli)</td>\n      <td>\u0394rcsA</td>\n      <td>Baba et al., 2006</td>\n      <td>CGSC: JW1935-1</td>\n      <td>Low CA production mutant from the Keio collection</td>\n    </tr>\n    <tr>\n      <td>Stain, strain background (E. coli)</td>\n      <td>\u0394lon</td>\n      <td>Baba et al., 2006</td>\n      <td>CGSC: JW0429-1</td>\n      <td>High CA production mutant from the Keio collection</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C.\u00a0elegans)</td>\n      <td>zu391</td>\n      <td>Hermann et al., 2005</td>\n      <td>CGC ID: JJ1271</td>\n      <td>glo-1(zu391) X</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C.\u00a0elegans)</td>\n      <td>zcIs17</td>\n      <td>Han et al., 2017</td>\n      <td>CGC ID: SJ4143</td>\n      <td>zcIs17[Pges-1::mito-GFP]</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C.\u00a0elegans)</td>\n      <td>zcIs14</td>\n      <td>Han et al., 2017</td>\n      <td>CGC ID: SJ4103</td>\n      <td>zcIs14[Pmyo-3::mito-GFP]</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C.\u00a0elegans)</td>\n      <td>MW2241</td>\n      <td>This paper</td>\n      <td></td>\n      <td>raxIs145[Pges-1::mito-RFP]</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C.\u00a0elegans)</td>\n      <td>e2117</td>\n      <td>Han et al., 2017</td>\n      <td>CGC ID: CB4121</td>\n      <td>sqt-3(e2117) V</td>\n    </tr>\n  </tbody>\n</table>\n\n### E. coli plasmids, strains, and media\n\nPlasmids used in this study are described in Supplementary file 1a. Genbank accession numbers are given in the Key Resources Table. All plasmids constructed in this study were assembled via Golden Gate cloning (Engler et al., 2009). Primers were ordered from IDT (Coralville, IA). Assembled plasmids were transformed into E. coli NEB10\u03b2 (New England Biolabs) for amplification and screening. All plasmid sequences were confirmed by Sanger sequencing (Genewiz; S. Plainfield, NJ). To construct pLH401 and pLH405, pSR58.6 (Schmidl et al., 2014) was modified by inserting an mCherry expression cassette composed of a constitutive promoter (J23114; http://parts.igem.org/Promoters/Catalog/Anderson), RBS (BBa_B0034; http://parts.igem.org/Part:BBa_B0034), mCherry, and a synthetic transcriptional terminator (L3S1P52 [Chen et al., 2013]). To construct pLH405, pLH401 was further modified by exchanging the superfolder GFP gene (sfgfp) for gfpmut3*. pMVK201.2 was built by modifying pSR58.6 to control expression of rcsA.\n\nAll E. coli strains are described in Supplementary file 1b. \u0394rcsA (JW1935-1) was obtained from the Coli Genetic Stock Center. \u0394lon (JW0429-1) was obtained from the Keio E. coli knockout library (Baba et al., 2006), a gift from the Herman lab. All E. coli strains were maintained in LB media supplemented with appropriate antibiotics (chloramphenicol 34 \u03bcg/mL, spectinomycin 100 \u03bcg/mL, kanamycin 100 \u03bcg/mL) in a shaking incubator at 37\u00b0C and 250 rpm unless otherwise noted.\n\n### C. elegans strains and media\n\nC. elegans strain information is listed in Supplementary file 1b and the Key Resources Table. JJ1271, SJ4143, SJ4103 and CB4121 were provided by the Caenorhabditis Genetics Center (University of Minnesota), which is funded by the NIH office of Research Infrastructure Programs (P40 OD010440). For generating the transgenic line MW2241, the N-terminal 55 amino acids sequence of tomm-20 is fused with RFP and 3XHA tags, and the fusion is cloned into a vector containing the ges-1 promoter. The DNA mixture is then injected into the gonad of young adult worms using the standard C. elegans microinjection protocol to generate transgenic strains carrying extrachromosomal arrays. The integrated transgenic strain is obtained by exposing the extrachromosomal line to 4000 rads of gamma irradiation in 5.9 min and backcrossed to wild type for more than 10 times. Worms were grown at 20\u00b0C on 1.7% NGM-agar plates in 60 mm Petri dishes inoculated with a lawn of E. coli (CGSC str. BW28357), as described in the CGC WormBook (wormbook.org), unless otherwise specified. The common strain E. coli OP50 was not used for worm feeding, as it produces approximately 50% more CA during normal growth than BW25113 (Han et al., 2017). M9 buffer for C. elegans (abbreviated M9Ce to distinguish from E. coli M9 media) was composed of 3 g KH2PO4, 6 g Na2HPO4, 5 g NaCl, 1 mL 1 M MgSO4, H2O to 1 L, and sterilized by autoclaving (wormbook.org).\n\n### Optogenetic control of CA production\n\nFor the experiments in Figures 2 and 3 mL starter cultures of appropriate E. coli strains were inoculated from a \u221280\u00b0C freezer and grown 12 hr at 37\u00b0C. These starters were diluted to OD600\u00a0=\u00a01\u00d710\u22122 in M9 minimal media (1x M9 salts, 0.4% w/v glucose, 0.2% w/v casamino acids, 2 mM MgSO4, 100 \u03bcM CaCl2) supplemented with appropriate antibiotics. The M9/cell mixtures were then distributed into 3 mL aliquots in 15 mL clear polystyrene culture tubes and grown at 37\u00b0C in a shaking incubator at 250 rpm while illuminated with the appropriate light wavelength and intensity, using the Light Tube Array (LTA) device (Gerhardt et al., 2016). After 22 hr, cultures were removed and iced to halt growth and the OD600 was measured. Culture samples were collected for CA quantification.\n\nFor CA quantification experiments in Figure 4 and Figure 4\u2014figure supplement 1, the same preculturing, dilutions, and media conditions were utilized. However, the Light Plate Apparatus (LPA), a 24 well-plate design of the LTA (Gerhardt et al., 2016), was used for red and green illumination of cultures. 1 mL cultures were aliquoted into wells of a 24-well plate that corresponded with programmed red and green light intensities. Cultures grew for 22 hr in a 26\u00b0C shaking incubator at 250 rpm. Following, plates were placed on ice for 10 min, and in parallel, OD600 for each condition was measured. Samples were then processed for CA quantification.\n\n### CA quantification\n\nWe adapted a previous CA quantification protocol (Dische, 1947; Dische and Shettles, 1948) that takes advantage of the fact that it is the only exopolysaccharide produced in our E. coli strains that incorporates fucose. In particular, we quantified the amount of fucose in cell-derived exopolysaccharides (EPS), and used that value as a proxy CA levels. First, EPS was liberated from cells by boiling 2 mL of culture for 15 min. in a 15 mL conical tube. The sample was then centrifuged in 1.5 mL Eppendorf tubes for 15 min. at 21,000 x g. Then, 0.7 mL of supernatant was dialyzed against water for at least 12 hr using Pur-A-Lyzer Midi 3500 dialysis mini-tubes (Sigma-Aldrich, PURD35100-1KT) to remove monomeric fucose from the sample.\n\nFucose monomers were then liberated from the EPS polymers by hydrolyzing 0.2 mL of dialyzed media with 0.9 mL of H2SO4 solution (6:1 v/v acid:water). This mixture was boiled in a 15 mL conical for 20 min and then cooled to room temperature. The absorbance at 396 nm and 427 nm was measured. Next, 25 \u03bcL of 1 M L-cysteine HCl was added and mixed thoroughly by pipetting. The absorbance at 396 nm and 427 nm was measured again. Simultaneously, absorbance measurements of L-fucose standards pre- and post-L-cysteine addition were also recorded. Absorbance change, given by D in the formula below, were used to compare the L-fucose standard samples to the dialyzed culture samples and estimate the L-fucose concentration in the dialyzed product.\n\n$$\nD=\u00a0((A_{post}^{396}\u2212A_{pre}^{396})\u2212(A_{post}^{427}\u2212A_{pre}^{427}))\n$$\n\n### Preparation of NGM-agar plates for worm feeding\n\n3 mL E. coli starter cultures were inoculated from \u221280\u00b0C freezer stocks and grown for 12 hr at 37\u00b0C. These starters were then diluted to OD600\u00a0=\u00a01\u00d710\u22126 in M9 minimal media supplemented with appropriate antibiotics. The M9/cell mixture was then distributed into 3 mL aliquots in 15 mL clear polystyrene culture tubes and grown at 37\u00b0C in a shaking incubator at 250 rpm while illuminated with the appropriate light in the LTA. Once cultures reached OD600\u00a0=\u00a00.1\u20130.4, tubes were iced for 10 min and subsequently concentrated to OD600\u00a0~\u00a020 by centrifugation (4\u00b0C, 4000 rpm, 10 min) and resuspension in fresh M9 media. 400\u2013600 \u03bcL of dense bacterial culture was then applied to sterile NGM-agar plates and allowed to dry in a dark room, or a room with green overhead safety lights if cultures were preconditioned in green light. Plates were wrapped in foil and refrigerated at 4\u00b0C for no more than 5 days until needed.\n\n### Time-lapse microscopy\n\nTo obtain age-synchronized worm cultures, axenized C. elegans (strain glo-1) eggs were isolated and allowed to arrest in L1 by starvation in M9 buffer (distinct from M9 media: 3 g KH2PO4, 6 g Na2HPO4, 5 g NaCl, 1 mL 1M MgSO4, and water to 1 L, sterilized by autoclaving at 121\u00b0C for 20 min) at room temperature for 12\u201318 hr. 10\u2013100 larvae were transferred to a previously prepared NGM-agar plate containing a lawn of the appropriate bacterial strain. The plate was then placed in a 20\u00b0C incubator and illuminated with appropriate optogenetic light provided by a single LED positioned 1 cm above the Petri dish. Adult worms were transferred to a fresh plate as necessary to maintain only a single generation.\n\nIndividual worms aged 1\u20133 days were removed from the dish and prepared for time-lapse epifluorescence imaging. A 1.5% agar pad was prepared using M9 buffer as previously described\u00a0(Ryu and Gomelsky, 2014), and punched into \u00bd\u201d circles with a hollow punch. A 4 \u03bcL droplet of 2 mM levamisole was deposited on a pad and five adult worms were transferred from the NGM plate to the droplet. An additional 4 \u03bcL of levamisole solution was added, and the worms were gently washed to remove external bacteria. Worms were then transferred to a fresh pad with a 4 \u03bcL droplet of levamisole solution, which was allowed to dry, thereby co-localizing and aligning the worms on the pad. The pad was then inverted and placed into a 13 mm disposable microscopy petri dish with a #1.5 coverslip on the bottom (Cell E and G; Houston, TX). Another coverslip was placed on the top of the pad in the dish to curtail evaporation.\n\nThe dish was then placed on the stage of a Nikon Eclipse Ti-E inverted epifluorescence microscope (Nikon Instruments, Inc; Melville, NY). Complete paralysis was induced by incubating the dish at room temperature (~23\u00b0C) for 30 min. Meanwhile, worms were exposed to appropriate preconditioning light supplied by a circular array of 8 LEDs (4 \u00d7 660 nm, 4 \u00d7 525 nm) mounted to the microscope condenser ring, about 2 cm above the Petri dish. Light was then switched from the preconditioning to the experimental wavelength, and worms were imaged periodically using 10x, 40x, and 60x objectives. For each time point, the LEDs were turned off and images acquired in the brightfield (DIC) and fluorescent channels. Afterwards, the LEDs were turned on again to maintain optogenetic control.\n\n### Epifluorescence image analysis\n\nAll epifluorescence images were analyzed using the Nikon Elements software package (Nikon Instruments, Inc; Melville, NY). The mCherry signal was used as a marker for the gut lumen, and only cells in this region were included in the analysis. Image ROIs were created by thresholding the sfGFP signal to identify the boundaries of cell populations. Out of focus regions were eliminated from analysis. The average sfGFP pixel intensity inside the ROIs was calculated and recorded for each time point.\n\n### Flow cytometry\n\n1\u20133-day-old glo-1 worms were prepared for flow cytometry of the microbiome constituents by washing, using a protocol adapted from previous work\u00a0(Portal-Celhay et al., 2012). Groups of 5 worms were washed 2x in a 5 \u03bcL droplet of lytic solution: C. elegans M9 buffer containing 2 mM levamisole, 1% Triton X-100, and 100 mg/mL ampicillin. The worms were then washed 2x in 5 \u03bcL droplets of M9 buffer containing 2 mM levamisole only. Finally, the worms were transferred to clear 0.5 mL Eppendorf tubes containing 50 \u03bcL of M9 buffer + 2 mM levamisole, ensuring that five worms were deposited in the liquid contained in each tube. Each tube was then exposed to light by placing it within one well of a 24-well plate (AWLS-303008, ArcticWhite LLC) atop a Light Plate Apparatus (LPA) containing green and red LEDs47 for 8 hr at room temperature. In separate control experiments, we demonstrated that any stray bacteria that may escape the worms over this period, or which were inadvertently added to the 50 \u03bcL of M9 buffer, are incapable of responding to optogenetic light (Figure 1\u2014figure supplement 4).\n\nAt the conclusion of the experiment, tubes were removed from the plate and immediately chilled in an ice slurry for 10 min in the dark. Worms were homogenized using an anodized steel probe sterilized between samples via 70% ethanol treatment and flame before being cooled.\n\nNext, we used our previous antibiotic-based fluorescent protein maturation protocol\u00a0(Olson et al., 2014) to allow unfolded proteins to mature while preventing the production of new protein. In particular, 250 \u03bcL PBS containing 500 mg/mL Rifampicin was added to the 50 \u03bcL homogenized worm samples and transferred to cytometry tubes. These tubes were incubated in a 37\u00b0C water bath for precisely 1 hr, then transferred back to an ice slurry.\n\nThese samples were measured on a BD FACScan flow cytometer. For gating, an FSC/SSC polygon gate was first created using non-fluorescent bacteria grown in vitro at 37\u00b0C (Figure 1\u2014figure supplement 2). Events outside this region were excluded as non-bacterial material. To isolate the engineered gut bacteria, only events with a high mCherry signal (FL3\u00a0>1200 a.u., FL3 gain: 999) were included (Figure 1\u2014figure supplement 4). Samples were measured until 20,000 events were recorded or the sample was exhausted.\n\n### Flow cytometry data analysis\n\nAll flow cytometry data (FCS format) were analyzed using FlowCal\u00a0(Castillo-Hair et al., 2016) and Python 2.7. We wrote a standard cytometry analysis workflow that truncated the initial and final 10 events to prevent cross-sample contamination, removed events from saturated detector bins at the ends of the detection range, and added 2D density gate on SSC/FSC retaining the densest 75% of events (Figure 1\u2014figure supplement 2). GFPmut3* fluorescence units were converted into standardized units of molecules of equivalent fluorescein (MEFL) using a fluorescent bead standard (Rainbow calibration standard; cat. no. RCP-30-20A, Spherotech, Inc) as described previously\u00a0(Castillo-Hair et al., 2016). Finally, to eliminate events associated with C. elegans autofluorescence (Figure 1\u2014figure supplement 2), any events in the region FL1 \u2264\u00a01200 MEFL were discarded.\n\n### Mitochondrial fragmentation assays\n\nSynchronized L1 worms (strain ges-1) were applied to NGM-agar plates containing bacterial strain BW25113 and allowed to develop until adulthood. This parental bacterial strain is used to allow all worms to develop at the same rate, avoiding any developmental/growth effects the experimental strains may exert on the worms. All experimental bacterial strains were preconditioned in red light with optogenetic light provided by a single LED positioned 1 cm above the Petri dish.\n\nAfter 3\u20135 days (between days 1\u20133 of adulthood), worms allocated for the experiment were transferred to experimental strains for approximately 60\u201390 min and exposed to red light to thoroughly inoculate the GI tract without inducing CcaSR. In the case of the unparalyzed worms, red or green light was then applied for an additional 6 hr. For the paralyzed worm experiments, 1.5% low-melt agar pads were prepared as described above and placed on individual slides. About 15 adult worms were transferred from the experimental strain Petri dish to an agar pad containing 10 \u03bcL of C. elegans M9 buffer + 2 mM levamisole (M9Ce+Lev), where worms were gently washed before being transferred to a fresh pad also containing 10 \u03bcL of M9Ce+Lev. The majority of M9Ce+Lev on the pad was allowed to evaporate, which causes the worms to align longitudinally before a cover slip was applied. Slides were then exposed to either red or green light by placing them under a single LED positioned 1 cm above the Petri dish for 6 hr. Afterward, intestinal and muscular cells were imaged using confocal microscopy (Olympus Fluoview 3000) in the brightfield and GFP/RFP channels.\n\n### Confocal microscopy image analysis\n\nAll confocal images for an experiment were randomized and the mitochondrial networks of each were blindly classified by another researcher independently as either tubular, fragmented, or intermediate. Tubular samples were marked by a high degree of network connectivity throughout. Fragmented samples were composed almost exclusively of isolated clusters of fluorescence with high circularity. Intermediate samples contained regions of both types. Scores were then de-randomized and aggregated. For each experimental strain, the red and green light conditions were compared for statistical significance using the chi-squared test of homogeneity.\n\n### Lifespan experiments\n\n3 mL starter cultures of \u0394lon, \u0394rcsA or MVK29 were inoculated from \u221280\u00b0C freezer stocks into LB supplemented with appropriate antibiotics and grown shaking for 12 hr at 37\u00b0C at 250 rpm. These cultures were diluted to OD600\u00a0=\u00a01\u00d710\u22126 in 27 mL M9 media supplemented with appropriate antibiotics. 1.5 mL of each M9/cell mixture was added to each of 18 wells on three 24-well plates and grown in 3 LPA devices under the appropriate light conditions at 37\u00b0C and 250 rpm. Once cultures reached OD600\u00a0=\u00a00.1\u20130.4, all tubes were iced for 10 min and subsequently concentrated 10 times by centrifugation (4\u00b0C, 4000 rpm, 10 min). Approximately, 50 \u03bcL of this dense bacterial culture was then applied to sterile NGM-agar plates with no antibiotics and allowed to dry in a dark room. The plates were then illuminated with the appropriate light wavelength and intensity for 16 hr at room temperature, and immediately used for lifespan assays.\n\nDuring the longitudinal lifespan assay, exposure to white light is limited to the minimal level. To reach this goal, the sqt-3(e2117) temperature sensitive mutant (Supplementary file 1b) was used to perform longitudinal analyses at 25\u00b0C, which avoids time-consuming animal transfer without interrupting normal reproduction. sqt-3(e2117) is a collagen mutant of C. elegans that reproduces normally but is embryonically lethal at 26\u00b0C and has been used previously in longitudinal studies (Han et al., 2017; Wang et al., 2014).\u00a0Worms were age-synchronized by bleach-based egg isolation followed by starvation in M9 buffer at the L1 stage for 36 hr. Synchronized L1 worms were grown on BW25113 E. coli at 15\u00b0C until the L4 stage, when worms were transferred to 24-well plates (~15 worms/well) with \u0394lon, \u0394rcsA or MVK29 (Supplementary file 1b). The plates were placed in LPA devices. LPA LEDs were programmed to illuminate wells with constant red (10 \u03bcmol/m2/s), low-intensity green (0.25 \u03bcmol/m2/s), or high-intensity green light (10 \u03bcmol/m2/s). The apparatus was then transferred to a 26\u00b0C incubator. The number of living worms remaining in each well was counted every day. Death was indicated by total cessation of movement in response to gentle mechanical stimulation. Statistical analyses were performed with SPSS (IBM Software) using Kaplan-Meier survival analysis and the log-rank test (Supplementary file 1c).\n",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "688ae642-f5a3-4893-b29b-aa1ebdd58b0a",
+      "submission_id": "f77da670-8942-441d-932b-7950d469b9e9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jan Gruber, Yale-NUS College Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56849.sa1](https://doi.org/10.7554/eLife.56849.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe reviewers and editors feel that the approach and techniques presented are exciting, with important future applications \u2013 especially given progress on extension the approach to e.g. B. subtilis. You convincingly demonstrate the utility and value of your novel optogenetic approach for investigating bacterial metabolism.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Optogenetic control of gut bacterial metabolism to promote longevity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: William Mair (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. We all feel that you when you resubmit the revised paper, it should be as a \"Tools and Resources\" paper rather than an article, given the methodological nature of your study.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nHartsough et al. present a method to optogenetically control the production of colanic acid (CA) from a genetically engineered E. coli strain. Using this E. coli strain as a feed for C. elegans, the authors show CA production directly in the animal gut and its local effects in altering mitochondrial dynamics in the gut. The authors corroborate findings from a previous publication from Han et al., 2017, showing effects on C. elegans lifespan and intestinal mitochondrial network.\n\nThe concept of modifying host biology via optogenetic control of gut flora is novel and would be fitting for the scope of eLife. However, the reviewers had some concerns regarding some of the claims regarding biological insights as presented. Given the current COVID-19 situation, we feel that asking for additional experiments and novel biological findings would be beyond the scope of a revision, but the reviewers suggested that additional data or edits may help clarify how this work is distinct from Han et al., 2017, why an optogenetic approach is better than the standard genetic approaches and what the strength and weaknesses of this approach are.\n\nEssential revisions:\n\n1) One of the key claims made by the authors is that the optogenetic approach allows for more fine scale control of metabolite production and further that they \"investigate how the lifespan extending effect of CA relates to CA levels\". However, aside from one ex vivo assay (Results, Figure 2B/C), the amount of CA being secreted (or taken up by the host) is not reported. The authors claim, but don't actually show a relationship of lifespan with CA level, just green-light intensity. The relative CA production levels of the engineered strains under green light vs. the over-producing mutants should ideally be quantified and both compared to realistic exposure levels in vivo of conventionally grown C. elegans. If this cannot be done without additional experiments, the authors should be careful to temper their claims here.\n\n2) A related concern is how do the authors know that the effects are not mediated by CA produced and secreted on plates. They attempt to answer this question using levamisole paralyzed worms \u2013 but the mitochondrial morphology of paralyzed worms seems very different (hyper fragmented, Figure 3D) form non-paralyzed \u2013 as the authors themselves concede. I agree that there appears to be some rescue effect in MVK29 exposed to green light \u2013 but it would be preferable to show benefits of in situ expression without the overlaying levamisole detriment.\n\n3) The mitochondrial fragmentation results are obviously motivated by the findings in Han et al., 2017, but are not well introduced/explained. In the fifth paragraph of the Results it is stated that exposure to light-induced CA secretion increases fragmentation. But in the next paragraph that light-induced CA secretion decreases mitochondrial fragmentation caused by levamisole treatment. The interpretation of these conflicting results-and their relevance to other systems lacking stress induced mitochondrial fragmentation-is unclear and should be more clearly discussed.\n\n4) In addition to local effects in the gut, were the authors able to see effects in distal tissues? An experiment investigating effects of light-induced CA production in the gut, affecting body wall muscle mitochondrial network similar to Han et al., 2017, could strengthen the current manuscript and show expected systemic effects of CA and not just local.\n\n5) This work relies on a non-standard gut microbe for C. elegans and requires that the animals be paralyzed to maintain colonization through measurement. This is addressed only in passing in the Discussion, but altogether still gives pause. Yes, E. coli is \"this important Gram-positive model bacterium,\" but it isn't in fact a very important bacterium to this host. Limitations and open questions that should be made explicitly are: Whether host uptake of metabolites produced by a symbiont would differ from that of a food source, whether/how this approach could be extended to bacteria other than E. coli and how such interactions might play out in a community context and whether / how optogenetics could be used to study this question.\n\n6) As a standard C. elegans feeding strain, OP50 is naturally lon deficient. Can the authors comment on the levels of CA production from their light-induced methods as compared to the regular OP50? If no such data is available, this should still be discussed.\n\n7) The authors make a claim regarding the relative magnitude of lifespan effects of purified CA vs. CA produced using their optogenetic approach. However, it appears that claim is based on comparison of lifespan effects with previously published results. Such comparisons are risky because differences in lab, feeding conditions, and strain. It would also have been preferable to have a CA \"fed\" control and it would further have been interesting to carry out a study of optogenetic induction in the presence of exogenous CA. In the absence of a CA fed control, the authors should be careful with their claims regarding effect size.\n\n8) There were some concerns over the exclusive use of GFP with a mito targeting sequence as the reporter because this only labels mitochondria if they are functionally importing the GFP. In addition there seems to be a lot of noise from intestinal gut granules and aggregates in Figure 3B. These data could be improved if an additional label of mitochondria was used \u2013 either a membrane marker or dye, in order to ensure the changes seen are reflecting changes to mitochondrial network morphology and not GFP aggregation, or non-mitochondrial localized GFP signal. The authors should be careful to make these limitations clear.\n\n9) Lifespan of control and treated animals in general appear shorter than would be expected. E.g. in Figure 4, the lifespan of worms fed the E. coli background strain JW1935-1 is considerably short. Can the authors comment on any previous studies with C. elegans lifespan on this strain and if this is expected? Are there other optogenetic background strains available?\n",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "de2719eb-acdc-4e17-a589-7b7f06908c89",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C1",
+      "claim": "Gut microbial metabolism is associated with host longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Gut microbial metabolism is associated with host longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general assertion about the relationship between gut microbial metabolism and host longevity, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "454e42b2-c380-4609-b099-87e8896bd80f",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C2",
+      "claim": "Establishing a causal link between gut microbial metabolism and host longevity requires direct manipulation of microbial metabolism in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because it requires direct manipulation of microbial metabolism in situ, establishing a causal link between these two processes remains challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological assertion about what is required to establish causality, based on scientific reasoning about experimental requirements.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "5b0cb039-02f8-4557-971c-f490df35c054",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C3",
+      "claim": "An optogenetic method can control gene expression and metabolite production from bacteria residing in the host gut.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate an optogenetic method to control gene expression and metabolite production from bacteria residing in the host gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented throughout the manuscript, including Figures 1-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "f67f99fb-6e85-4b97-96c9-9e3e2d72a4a3",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C4",
+      "claim": "An E. coli strain can be genetically engineered to secrete colanic acid under the quantitative control of light.",
+      "claim_type": "EXPLICIT",
+      "source": "We genetically engineer an Escherichia coli strain that secretes colanic acid (CA) under the quantitative control of light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing light-controlled CA production in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "7cca3778-0230-40ec-bc1a-757bcd6dcac6",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C5",
+      "claim": "Colanic acid produced in the C. elegans gut protects intestinal mitochondria from stress-induced hyper-fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this optogenetically-controlled strain to induce CA production directly in the Caenorhabditis elegans gut, we reveal the local effect of CA in protecting intestinal mitochondria from stress-induced hyper-fragmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 3 showing mitochondrial morphology changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "254dd486-7558-42f5-8ed3-9c4a1ac22044",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C6",
+      "claim": "The lifespan-extending effect of the optogenetically-controlled strain is positively correlated with the intensity of green light.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate that the lifespan-extending effect of this strain is positively correlated with the intensity of green light, indicating a dose-dependent CA benefit on the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 4b showing dose-dependent lifespan extension.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "d78ff696-95f1-47e1-93ff-1702a7c5a422",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C7",
+      "claim": "Optogenetics can achieve quantitative and temporal control of gut bacterial metabolism to reveal local and systemic effects on host health and aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, optogenetics can be used to achieve quantitative and temporal control of gut bacterial metabolism in order to reveal its local and systemic effects on host health and aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "553ab79b-ca8e-408f-9e9c-f4620bb6942c",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C8",
+      "claim": "16S rRNA and metagenomic DNA sequencing are used to associate the presence or abundance of specific bacteria to human centenarians.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 16S rRNA and metagenomic DNA sequencing are used to associate the presence or abundance of specific bacteria to human centenarians (Biagi et al., 2016; Claesson et al., 2012; Claesson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "175536c4-064e-43c5-9dfb-56df570fb31d",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C9",
+      "claim": "16S rRNA and metagenomic DNA sequencing approaches are unable to elucidate how a specific microbial species contributes to longevity given the complexity and heterogeneity of the human gut environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the complexity and heterogeneity of the human gut environment, these approaches are unable to elucidate how a specific microbial species contributes to longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of these methods based on the complexity of the system.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "a42cf7a0-7065-40f4-9bd1-b9ddbaa7f6a6",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C10",
+      "claim": "C. elegans has a short and easily-measured lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "The nematode Caenorhabditis elegans has a short and easily-measured lifespan, features that have revolutionized our understanding of the molecular genetics of aging and longevity (Kenyon, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans as a model organism, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "0fbb5906-7675-403f-bab9-f9ea91b19f3f",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C11",
+      "claim": "C. elegans has revolutionized our understanding of the molecular genetics of aging and longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "The nematode Caenorhabditis elegans has a short and easily-measured lifespan, features that have revolutionized our understanding of the molecular genetics of aging and longevity (Kenyon, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "42beaf3e-605d-465c-b8c7-76a7824d7428",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C12",
+      "claim": "Studies using C. elegans provide mechanistic insight into the association between bacterial species and host longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies using C. elegans also provide mechanistic insight into the association between bacterial species and host longevity (Gusarov et al., 2013; Kim, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "37408691-59fc-4401-949f-c1011ee43a04",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C13",
+      "claim": "Bacterial metabolism can produce specific products to directly influence the aging process in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, recent studies have revealed that bacterial metabolism can produce specific products to directly influence the aging process in the host C. elegans or modulate the effects of environmental cues on C. elegans lifespan (Cabreiro et al., 2013; Pryor et al., 2019; Virk et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "51717a4a-a640-4492-af27-8162a3896d30",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C14",
+      "claim": "Bacterial metabolism can modulate the effects of environmental cues on C. elegans lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, recent studies have revealed that bacterial metabolism can produce specific products to directly influence the aging process in the host C. elegans or modulate the effects of environmental cues on C. elegans lifespan (Cabreiro et al., 2013; Pryor et al., 2019; Virk et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "2587b37b-0511-414f-a545-bea62c0d3001",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C15",
+      "claim": "Bacterial metabolism is significant in regulating host physiology during the aging process.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings highlight the significance of bacterial metabolism in regulating host physiology during the aging process and have inspired interest in directly manipulating bacterial metabolism in situ in the host gastrointestinal (GI) tract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies about bacterial metabolism and aging.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c131a688-77b8-4943-b9da-5e4aa72b7e90",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C16",
+      "claim": "Researchers have administered antibiotic- or carbohydrate-based small molecule inducers to modulate gene expression from gut bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In several recent studies, researchers have administered antibiotic- or carbohydrate-based small molecule inducers to modulate gene expression from gut bacteria (Kotula et al., 2014; Lim et al., 2017; Mimee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c0730e54-79fb-4363-881b-75d62f49aebb",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C17",
+      "claim": "Chemical effectors may have unwanted side-effects on host or microbial physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "While this approach can be used to perform in situ analyses of gut bacterial-host interactions (Lim et al., 2017), chemical effectors may have unwanted side-effects on host or microbial physiology and are subject to slow and poorly-controlled transport and degradation processes that ultimately limit their precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential limitations of chemical inducers based on general knowledge of their properties.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "62976673-3a09-42a8-a641-703577efb25b",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C18",
+      "claim": "Chemical effectors are subject to slow and poorly-controlled transport and degradation processes that limit their precision.",
+      "claim_type": "EXPLICIT",
+      "source": "While this approach can be used to perform in situ analyses of gut bacterial-host interactions (Lim et al., 2017), chemical effectors may have unwanted side-effects on host or microbial physiology and are subject to slow and poorly-controlled transport and degradation processes that ultimately limit their precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about the behavior of chemical inducers in biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "db32b497-6309-4f05-a5b5-4180ecc818f4",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C19",
+      "claim": "Optogenetics combines light and genetically-engineered photoreceptors to enable control of biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetics combines light and genetically-engineered photoreceptors to enable unrivaled control of biological processes (Olson and Tabor, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about optogenetics, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c567ef4a-eac1-4f15-b66d-f87d0d42f162",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C20",
+      "claim": "Photoreceptors have been engineered that regulate bacterial gene expression in response to specific wavelengths of light.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we and others have engineered photoreceptors that regulate bacterial gene expression in response to specific wavelengths of light (Levskaya et al., 2005; Li et al., 2020; Ohlendorf et al., 2012; Ong and Tabor, 2018; Ong et al., 2018; Ramakrishnan and Tabor, 2016; Ryu and Gomelsky, 2014; Schmidl et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c8a541d3-2e1d-467f-8fbe-9a241c8ccb7f",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C21",
+      "claim": "Photoreceptors have been used to achieve precise quantitative control of bacterial gene expression in in vitro culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These photoreceptors have been used to achieve precise quantitative (Olson et al., 2017; Olson et al., 2014), temporal (Chait et al., 2017; Milias-Argeitis et al., 2016; Olson et al., 2017; Olson et al., 2014), and spatial (Chait et al., 2017; Levskaya et al., 2005; Ohlendorf et al., 2012; Tabor et al., 2011) control of bacterial gene expression in in vitro culture conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "489b982c-51c4-40e2-933d-67d719dcebe3",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C22",
+      "claim": "Photoreceptors have been used to achieve precise temporal control of bacterial gene expression in in vitro culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These photoreceptors have been used to achieve precise quantitative (Olson et al., 2017; Olson et al., 2014), temporal (Chait et al., 2017; Milias-Argeitis et al., 2016; Olson et al., 2017; Olson et al., 2014), and spatial (Chait et al., 2017; Levskaya et al., 2005; Ohlendorf et al., 2012; Tabor et al., 2011) control of bacterial gene expression in in vitro culture conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "1149aca8-5651-4137-9046-9ff54d7294c7",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C23",
+      "claim": "Photoreceptors have been used to achieve precise spatial control of bacterial gene expression in in vitro culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These photoreceptors have been used to achieve precise quantitative (Olson et al., 2017; Olson et al., 2014), temporal (Chait et al., 2017; Milias-Argeitis et al., 2016; Olson et al., 2017; Olson et al., 2014), and spatial (Chait et al., 2017; Levskaya et al., 2005; Ohlendorf et al., 2012; Tabor et al., 2011) control of bacterial gene expression in in vitro culture conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "ae6e3913-d32c-4341-8bb9-1ba96f69e71a",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C24",
+      "claim": "Photoreceptors have been used to characterize and control transcriptional regulatory circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "They have also been used to characterize and control transcriptional regulatory circuits (Chait et al., 2017; Olson et al., 2014; Tabor et al., 2009) and bacterial metabolic pathways (Fernandez-Rodriguez et al., 2017; Tandar et al., 2019) in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "2066b620-ddb0-461e-9c41-061671d79d04",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C25",
+      "claim": "Photoreceptors have been used to characterize and control bacterial metabolic pathways in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "They have also been used to characterize and control transcriptional regulatory circuits (Chait et al., 2017; Olson et al., 2014; Tabor et al., 2009) and bacterial metabolic pathways (Fernandez-Rodriguez et al., 2017; Tandar et al., 2019) in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "bd2473bf-571a-4ce5-b804-9d545eca6b25",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C26",
+      "claim": "The E. coli and C. elegans interaction model is an optically transparent system with known mechanistic links between bacterial metabolism and host longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "We address this possibility using the E. coli and C. elegans interaction model, an optically transparent system with known mechanistic links between bacterial metabolism and host longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about these model organisms and their interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "528dacfc-213c-4c62-9591-ea53253ed75e",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C27",
+      "claim": "Colanic acid is an exopolysaccharide synthesized and secreted by E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CA is an exopolysaccharide synthesized and secreted by E. coli that can extend the lifespan of the host C. elegans by modulating mitochondrial dynamics (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "2a167da4-1ba5-44fa-a421-3a3e214fbfb4",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C28",
+      "claim": "Colanic acid can extend the lifespan of C. elegans by modulating mitochondrial dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CA is an exopolysaccharide synthesized and secreted by E. coli that can extend the lifespan of the host C. elegans by modulating mitochondrial dynamics (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "14784970-a7a7-440d-862c-72cd33836e69",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C29",
+      "claim": "E. coli strains can be engineered to express fluorescent reporter proteins under control of the CcaSR two-component system.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we engineer E. coli strains that express fluorescent reporter proteins under control of our previously engineered green light-activated, red light de-activated two-component system CcaSR (Schmidl et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1 and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "cba551ca-5d6a-4922-b0db-1508480e4e2f",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C30",
+      "claim": "CcaSR is a green light-activated, red light de-activated two-component system.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we engineer E. coli strains that express fluorescent reporter proteins under control of our previously engineered green light-activated, red light de-activated two-component system CcaSR (Schmidl et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and experimental data in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "4f8965fa-d000-4c76-a4ef-52da70812958",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C31",
+      "claim": "Worms carrying engineered E. coli in their GI tracts can be exposed to time-varying green and red light signals to demonstrate optical activation and de-activation of bacterial gene expression in worm gut.",
+      "claim_type": "EXPLICIT",
+      "source": "We then expose worms carrying these engineered E. coli in their GI tracts to time-varying green and red light signals to demonstrate optical activation and de-activation of bacterial gene expression in worm gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "6184aa01-5388-4dba-9c95-17a478e9881b",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C32",
+      "claim": "Green light-induced CA from bacteria residing in the host gut is sufficient to modulate mitochondrial dynamics and lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments reveal that green light-induced CA from bacteria residing in the host gut is sufficient to modulate mitochondrial dynamics and lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "11113278-b866-467e-ad4f-825555539acd",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C33",
+      "claim": "In strain LH01, green light-exposure switches CcaS to an active state in the presence of chromophore phycocyanobilin (PCB).",
+      "claim_type": "EXPLICIT",
+      "source": "In LH01, green light-exposure switches CcaS to an active state in the presence of chromophore phycocyanobilin (PCB), wherein it phosphorylates the response regulator CcaR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known mechanism of CcaSR and experimental data showing light-dependent responses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "7cb0c9de-3e2c-4fa2-96b2-12201d4d725a",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C34",
+      "claim": "Active CcaS phosphorylates the response regulator CcaR.",
+      "claim_type": "EXPLICIT",
+      "source": "In LH01, green light-exposure switches CcaS to an active state in the presence of chromophore phycocyanobilin (PCB), wherein it phosphorylates the response regulator CcaR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known mechanism of two-component systems and CcaSR specifically.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "7b04010b-a502-4204-ba19-fffa8a946bfb",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C35",
+      "claim": "Phosphorylated CcaR activates transcription of sfgfp from the PcpcG2-172 output promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylated CcaR then activates transcription of sfgfp from the PcpcG2-172 output promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known mechanism of CcaSR and experimental data showing light-dependent sfGFP expression.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "352c9509-dba6-4a19-aab8-5da45c8d1031",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C36",
+      "claim": "Red light reverts active CcaS to the inactive form, de-activating sfgfp expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Red light reverts active CcaS to the inactive form, de-activating sfgfp expression (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known mechanism of CcaSR and experimental data showing light-dependent responses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "3d712e64-b6e7-4c11-a780-c2d1acfcdea6",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C37",
+      "claim": "In the step ON experiment, sfGFP fluorescence in the worm gut lumen starts low, begins to increase within 2 hr, and reaches a saturated high level at 6 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In the step ON experiment, sfGFP fluorescence in the worm gut lumen starts low, begins to increase within 2 hr, and reaches a saturated high level at 6 hr (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c1be528e-b0a1-4c94-bb08-97e1704c6926",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C38",
+      "claim": "In the step OFF experiment, sfGFP fluorescence begins high, and decreases exponentially between hours 1\u20137.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in the step OFF experiment, sfGFP fluorescence begins high, and decreases exponentially between hours 1\u20137 (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "1be58767-fb27-4410-8b33-8b24c56ecb4c",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C39",
+      "claim": "The light response is abolished when the PCB biosynthetic operon is removed (\u0394PCB).",
+      "claim_type": "EXPLICIT",
+      "source": "This light response is abolished when the PCB biosynthetic operon is removed (\u0394PCB) (Figure 1d), demonstrating that changes in sfGFP fluorescence are due to CcaSR photoswitching in the worm gut.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "7d2ba43b-0036-45bd-93ac-d9dcfe11becf",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C40",
+      "claim": "Changes in sfGFP fluorescence are due to CcaSR photoswitching in the worm gut.",
+      "claim_type": "EXPLICIT",
+      "source": "This light response is abolished when the PCB biosynthetic operon is removed (\u0394PCB) (Figure 1d), demonstrating that changes in sfGFP fluorescence are due to CcaSR photoswitching in the worm gut.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the \u0394PCB control experiment showing that the response requires the PCB chromophore.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "1f3c6f63-833e-47b8-a09e-aecd2c6b1580",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C41",
+      "claim": "Engineered bacteria remain intact in the host gut.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that our engineered bacteria remain intact in the host gut (Figure 1\u2014figure supplement 2) and respond to light in a unimodal fashion (Figure 1e\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "1e860c84-a4ae-43a6-9f04-088431add195",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C42",
+      "claim": "Engineered bacteria in the host gut respond to light in a unimodal fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that our engineered bacteria remain intact in the host gut (Figure 1\u2014figure supplement 2) and respond to light in a unimodal fashion (Figure 1e\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figures 1e-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "4af5fa81-d3e3-4f4d-b5c6-85f4deb91004",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C43",
+      "claim": "The temporal dynamics and PCB dependence of the gene expression responses measured by flow cytometry recapitulate the microscopy results.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal dynamics and PCB dependence of the gene expression responses recapitulate the microscopy results (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of data in Figure 1d and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "d7ba6370-b626-45e6-a74c-397245e96c9c",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C44",
+      "claim": "Residual bacteria on the exterior of worms do not contribute to the flow cytometry measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that residual bacteria on the exterior of worms do not contribute to the flow cytometry measurements (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiments shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "1d3f4aeb-33eb-4972-a2a6-71775b9e84a4",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C45",
+      "claim": "Optogenetics can be used to rapidly and reversibly induce gene expression of E. coli residing in the C. elegans gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these microscopy and flow cytometry experiments demonstrate that we can use optogenetics to rapidly and reversibly induce gene expression of E. coli residing in the C. elegans gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "9cff837a-65f4-4902-831c-129ade990b3c",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C46",
+      "claim": "Bacterial genes involved in the same metabolic process are often clustered into operons and co-regulated at the transcriptional level.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial genes involved in the same metabolic process are often clustered into operons and co-regulated at the transcriptional level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial gene organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "19cb0dac-f46d-4f27-81be-5ab83cbf2237",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C47",
+      "claim": "The cps operon in E. coli consists of 19 genes that encode enzymes required for the biosynthesis and secretion of CA.",
+      "claim_type": "EXPLICIT",
+      "source": "The cps operon in E. coli consists of 19 genes that encode enzymes required for the biosynthesis and secretion of CA (Torres-Cabassa and Gottesman, 1987), and CA-overproducing bacterial mutants \u0394lon and \u0394hns promote longevity in the host C. elegans (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "dd8dd17b-f93a-4eb8-a9f2-35bc4a461351",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C48",
+      "claim": "CA-overproducing bacterial mutants \u0394lon and \u0394hns promote longevity in the host C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The cps operon in E. coli consists of 19 genes that encode enzymes required for the biosynthesis and secretion of CA (Torres-Cabassa and Gottesman, 1987), and CA-overproducing bacterial mutants \u0394lon and \u0394hns promote longevity in the host C. elegans (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "7ed3db11-4c42-491b-83bf-cda1e0de4290",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C49",
+      "claim": "Strain MVK29 lacks genomic rcsA and expresses a heterologous copy of rcsA under the control of CcaSR.",
+      "claim_type": "EXPLICIT",
+      "source": "To place CA biosynthesis under optogenetic control, we engineered E. coli strain MVK29 which lacks genomic rcsA, and expresses a heterologous copy of rcsA under the control of CcaSR (Figure 2a, Supplementary file 1a, 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the genetic engineering performed, supported by Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "8f634fc6-f5b0-44ec-981c-736268a8b0c9",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C50",
+      "claim": "In red light, MVK29 secretes CA to concentrations below the limit of detection of the assay, similar to the \u0394rcsA mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In red light, MVK29 secretes CA to concentrations below the limit of detection of the assay, similar to the \u0394rcsA mutant (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "9ce76119-7d58-4e6d-bf66-61247e43453c",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C51",
+      "claim": "Green light induces MVK29 to secrete high levels of CA.",
+      "claim_type": "EXPLICIT",
+      "source": "Green light, on the other hand, induces MVK29 to secrete high levels of CA, and removal of the PCB biosynthetic operon abolishes this response (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "22f94e29-8ef1-4836-a683-fd132672ac7a",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C52",
+      "claim": "Removal of the PCB biosynthetic operon abolishes the green light-induced CA secretion response in MVK29.",
+      "claim_type": "EXPLICIT",
+      "source": "Green light, on the other hand, induces MVK29 to secrete high levels of CA, and removal of the PCB biosynthetic operon abolishes this response (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "098acaa4-641c-41fc-889c-76fe826cfdae",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C53",
+      "claim": "Mutation of the CcaS catalytic histidine to a non-functional alanine (H534A) abolishes detectable CA production.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mutation of the CcaS catalytic histidine to a non-functional alanine (H534A), or the CcaR phosphorylation site from an aspartic acid to a non-functional asparagine (D51N) abolishes detectable CA production (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "93581b9c-69a0-43c1-ab9a-12936455e068",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C54",
+      "claim": "Mutation of the CcaR phosphorylation site from an aspartic acid to a non-functional asparagine (D51N) abolishes detectable CA production.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mutation of the CcaS catalytic histidine to a non-functional alanine (H534A), or the CcaR phosphorylation site from an aspartic acid to a non-functional asparagine (D51N) abolishes detectable CA production (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c84122e4-f7e9-4245-b9c4-313f8295cee5",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C55",
+      "claim": "The level of secreted CA increases sigmoidally with the increasing intensity of green light.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the level of secreted CA increases sigmoidally with the increasing intensity of green light (Figure 2c), which is consistent with the response of CcaSR (Schmidl et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "1293436b-1369-4f7d-a00c-872cf35533ea",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C56",
+      "claim": "The sigmoidal increase in CA secretion with green light intensity is consistent with the response of CcaSR.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the level of secreted CA increases sigmoidally with the increasing intensity of green light (Figure 2c), which is consistent with the response of CcaSR (Schmidl et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison to previous characterization of CcaSR cited in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "f6902403-e648-4a07-8525-57806a925b73",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C57",
+      "claim": "CA production has been placed under the control of CcaSR.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that we have placed CA production under the control of CcaSR, and that we can use light to tune the biosynthesis and secretion of bacterial metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "f113b58e-9ac3-4d48-bf1e-fcd87799fcbc",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C58",
+      "claim": "Light can be used to tune the biosynthesis and secretion of bacterial metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that we have placed CA production under the control of CcaSR, and that we can use light to tune the biosynthesis and secretion of bacterial metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 2 showing dose-dependent CA production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "6a7d1c3e-a581-47e1-b639-8f5b471283cf",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C59",
+      "claim": "Lon is an ATP-dependent protease that degrades RcsA.",
+      "claim_type": "EXPLICIT",
+      "source": "Lon is an ATP-dependent protease that degrades RcsA, and its deletion mutant \u0394lon shows increased CA production (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "b9e0c2ad-a766-4e41-931b-a0ad95d509e1",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C60",
+      "claim": "The \u0394lon deletion mutant shows increased CA production.",
+      "claim_type": "EXPLICIT",
+      "source": "Lon is an ATP-dependent protease that degrades RcsA, and its deletion mutant \u0394lon shows increased CA production (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "bf2ec433-a85f-4fe7-bad2-44c0b4bc80de",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C61",
+      "claim": "When grown on \u0394lon mutant bacteria, worms exhibit elevated mitochondrial fragmentation in intestinal cells, similar to worms with CA supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "When grown on \u0394lon mutant bacteria, worms exhibit elevated mitochondrial fragmentation in intestinal cells, similar to worms with CA supplementation (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "a61067f1-5c1f-4a30-b989-7c30514c2a04",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C62",
+      "claim": "Green light increases mitochondrial fragmentation in MVK29-fed worms.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that green light increases mitochondrial fragmentation in MVK29-fed worms, but not in worms fed a MVK29 \u0394PCB control strain that does not respond to light (Figure 3c, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "6f00b3a9-3317-41bb-b3b8-5901f2c4b13f",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C63",
+      "claim": "Green light does not increase mitochondrial fragmentation in worms fed a MVK29 \u0394PCB control strain that does not respond to light.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that green light increases mitochondrial fragmentation in MVK29-fed worms, but not in worms fed a MVK29 \u0394PCB control strain that does not respond to light (Figure 3c, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "eec5226d-e5eb-4f82-9a33-2676dd51850d",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C64",
+      "claim": "The light-inducible CA biosynthetic strain recapitulates the effect of the \u0394lon mutant or purified CA on the host.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our light-inducible CA biosynthetic strain recapitulates the effect of the \u0394lon mutant or purified CA on the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the experimental results to previous work with \u0394lon and purified CA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "40100740-a5e3-4b17-9a34-541560b0c4ee",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C65",
+      "claim": "6 hr of levamisole treatment does not kill worms but leads to mitochondrial hyper-fragmentation in the intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that 6 hr of levamisole treatment does not kill worms but leads to mitochondrial hyper-fragmentation in the intestine (Figure 3c,e), possibly due to the inhibitory effect of levamisole on mitochondrial NADH-oxidizing enzymes (K\u00f6hler and Bachmann, 1978) and its associated mitochondrial stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figures 3c and 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "1079a136-b0cc-4dd1-9acb-262e95a6c1aa",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C66",
+      "claim": "Levamisole-induced mitochondrial hyper-fragmentation is possibly due to the inhibitory effect of levamisole on mitochondrial NADH-oxidizing enzymes and its associated mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that 6 hr of levamisole treatment does not kill worms but leads to mitochondrial hyper-fragmentation in the intestine (Figure 3c,e), possibly due to the inhibitory effect of levamisole on mitochondrial NADH-oxidizing enzymes (K\u00f6hler and Bachmann, 1978) and its associated mitochondrial stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation supported by citation to previous work on levamisole's effects.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "0e007d36-dd1c-449c-83aa-6d4b7cf80cff",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C67",
+      "claim": "Levamisole-induced mitochondrial hyper-fragmentation was not observed in worms treated with levamisole less than 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "This hyper-fragmentation phenotype was not observed in worms treated with levamisole less than 1 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments, though the specific data is not shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "5004b69c-2275-4205-ad90-f2b245399def",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C68",
+      "claim": "Stress-induced mitochondrial fragmentation resembles mitochondrial changes related to aging and age-related neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "This stress-induced fragmentation resembles mitochondrial changes related to aging and age-related neurodegenerative diseases (Cho et al., 2009; Exner et al., 2007; Sebasti\u00e1n et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "43057728-896f-4e3f-a4b1-a8f1fb55d8e4",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C69",
+      "claim": "Green light exposure suppresses stress-induced hyperfragmentation in paralyzed worms bearing MVK29 in the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that green light exposure suppresses stress-induced hyperfragmentation in paralyzed worms bearing MVK29 in the gut (Figure 3e, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "f7cd76eb-e3ea-430a-845e-ef60508caaf9",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C70",
+      "claim": "Green light does not suppress stress-induced hyperfragmentation in worms bearing the \u0394PCB, CcaS(H534A), CcaR(D51N) or \u0394rcsA mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found no such effects in worms bearing the \u0394PCB, CcaS(H534A), CcaR(D51N) or \u0394rcsA mutant strains (Figure 3e, Figure 3\u2014figure supplement 1), suggesting that this protective effect is a result of light-induced CA overproduction in the gut.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "402642d9-0795-4dbb-9fac-5754c7c511f8",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C71",
+      "claim": "The protective effect on mitochondrial fragmentation is a result of light-induced CA overproduction in the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found no such effects in worms bearing the \u0394PCB, CcaS(H534A), CcaR(D51N) or \u0394rcsA mutant strains (Figure 3e, Figure 3\u2014figure supplement 1), suggesting that this protective effect is a result of light-induced CA overproduction in the gut.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the control experiments showing that the effect requires functional CcaSR and CA production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "31030f85-4f2b-4735-a2c4-756539604cb9",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C72",
+      "claim": "6 hr levamisole treatment induces mitochondrial hyper-fragmentation in the muscle as it does in the intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 6 hr levamisole treatment induces mitochondrial hyper-fragmentation in the muscle as it does in the intestine, but that light-induced CA production from the gut bacteria does not protect muscular mitochondria against hyper-fragmentation (Figure 3f, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "6363a9b0-37b1-4a86-8727-c29f4bbc5085",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C73",
+      "claim": "Light-induced CA production from the gut bacteria does not protect muscular mitochondria against hyper-fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 6 hr levamisole treatment induces mitochondrial hyper-fragmentation in the muscle as it does in the intestine, but that light-induced CA production from the gut bacteria does not protect muscular mitochondria against hyper-fragmentation (Figure 3f, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "bc40aa6d-889c-4cbb-8770-46415a06030a",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C74",
+      "claim": "Optogenetics can be utilized to induce CA secretion from gut-borne E. coli in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results not only show that optogenetics can be utilized to induce CA secretion from gut-borne E. coli in vivo, but also reveal a local protective effect of CA on intestinal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "f896310a-4bf4-498d-b241-5daa94a5cdd5",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C75",
+      "claim": "CA has a local protective effect on intestinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results not only show that optogenetics can be utilized to induce CA secretion from gut-borne E. coli in vivo, but also reveal a local protective effect of CA on intestinal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing protection in intestinal but not muscle cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "eb183e9f-df68-4d97-a5cb-9865bbfeb0d8",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C76",
+      "claim": "Green-light-exposed MVK29 can induce CA overproduction to a level comparable to the \u0394lon mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed that green-light-exposed MVK29 can induce CA overproduction to a level comparable to the \u0394lon mutant (Figure 4a, Figure 4\u2014figure supplement 1), and neither the \u0394lon nor the \u0394rcsA mutant responds to light (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c904f29b-51cd-42f1-bef9-de5353aec599",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C77",
+      "claim": "Neither the \u0394lon nor the \u0394rcsA mutant responds to light.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed that green-light-exposed MVK29 can induce CA overproduction to a level comparable to the \u0394lon mutant (Figure 4a, Figure 4\u2014figure supplement 1), and neither the \u0394lon nor the \u0394rcsA mutant responds to light (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "e80762f1-a9ee-4523-a4c0-26a2c914dfe8",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C78",
+      "claim": "Green light exposure extends worm lifespan compared to red light exposure in worms bearing MVK29.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that green light exposure extends worm lifespan compared to red light exposure (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "8f76e914-de15-492d-92e1-952a9c04e744",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C79",
+      "claim": "The extent of lifespan extension at high green light intensity is 1.7-fold higher than that at low intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the extent of lifespan extension at high green light intensity is 1.7-fold higher than that at low intensity (Figure 4b, Supplementary file 1c), suggesting a dose-dependent effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4b and Supplementary file 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "fef7994a-01c7-46d8-a071-8c8dc6484053",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C80",
+      "claim": "The lifespan extension effect of MVK29 is dose-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the extent of lifespan extension at high green light intensity is 1.7-fold higher than that at low intensity (Figure 4b, Supplementary file 1c), suggesting a dose-dependent effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observation that higher light intensity produces greater lifespan extension.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "4b3254df-4059-4d2b-8092-b01adee30cb2",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C81",
+      "claim": "The lifespan extension caused by \u0394lon is independent of light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we measured the lifespan of worms bearing the CA-overproducing \u0394lon mutant and showed that the lifespan extension caused by \u0394lon is independent of light exposure (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "bdd911b5-cdd9-46b9-9977-e40c18184617",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C82",
+      "claim": "The extent of lifespan extension caused by \u0394lon is comparable to that caused by MVK29.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of lifespan extension caused by \u0394lon is comparable to that caused by MVK29 (Figure 4b,c, Supplementary file 1c), which is consistent with the result that \u0394lon and green-light-exposed MVK29 induce CA overproduction to a similar level (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of experimental data in Figures 4b and 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "89c13439-1087-4e52-989b-355af58a605a",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C83",
+      "claim": "\u0394lon and green-light-exposed MVK29 induce CA overproduction to a similar level.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of lifespan extension caused by \u0394lon is comparable to that caused by MVK29 (Figure 4b,c, Supplementary file 1c), which is consistent with the result that \u0394lon and green-light-exposed MVK29 induce CA overproduction to a similar level (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "41135cfa-3bde-4d34-9b22-e9a8e8279584",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C84",
+      "claim": "The lifespan of worms bearing the \u0394rcsA mutant is light-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the lifespan of worms bearing the \u0394rcsA mutant is also light-independent and is comparable to that of MVK29 worms under red light (Figure 4d, Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "1155552a-1443-4f7c-821f-dab1553ed2a6",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C85",
+      "claim": "The lifespan of worms bearing the \u0394rcsA mutant is comparable to that of MVK29 worms under red light.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the lifespan of worms bearing the \u0394rcsA mutant is also light-independent and is comparable to that of MVK29 worms under red light (Figure 4d, Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c8a546cf-a8af-45cd-9937-599d8085b048",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C86",
+      "claim": "Optogenetic control is sufficient to induce bacterial production of pro-longevity compounds and improve host health.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that optogenetic control is sufficient to induce bacterial production of pro-longevity compounds and improve host health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the lifespan extension data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "36417d3b-e85a-4819-a1f8-f20bcf62752b",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C87",
+      "claim": "Optogenetic control of bacterial metabolism can modulate a host-level phenotype in a dose-dependent manner, unlike administration of a bacterial mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike administration of a bacterial mutant, optogenetic control of bacterial metabolism can modulate a host-level phenotype in a dose-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the dose-dependent effects of MVK29 to the fixed effects of \u0394lon.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "ce996369-8ea6-46ec-b00c-28ec8b715eae",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C88",
+      "claim": "About two dozen E. coli genes unrelated to CA biosynthesis enhance worm longevity when knocked out.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we have identified about two dozen additional E. coli genes that are unrelated to CA biosynthesis and that enhance worm longevity when knocked out (Han et al., 2017), though the mechanisms by which they act remain largely unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "14540d2c-4e5b-46f3-9240-1869d4b99b87",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C89",
+      "claim": "The mechanisms by which about two dozen E. coli genes enhance worm longevity remain largely unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we have identified about two dozen additional E. coli genes that are unrelated to CA biosynthesis and that enhance worm longevity when knocked out (Han et al., 2017), though the mechanisms by which they act remain largely unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the current state of knowledge based on previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "200e89c4-6327-4362-898d-1e5970a5c542",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C90",
+      "claim": "The quorum-sensing peptide CSF and nitric oxide, both produced by Bacillus subtilis during biofilm formation, extend worm lifespan through downregulation of the insulin-like signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In another example, the quorum-sensing peptide CSF and nitric oxide, both of which are produced by Bacillus subtilis during biofilm formation, have been found to extend worm lifespan through downregulation of the insulin-like signaling pathway (Donato et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "988f24af-73b0-4c34-8147-cf6fea1281a5",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C91",
+      "claim": "CcaSR has been ported into B. subtilis and enables rapid and precise control of gene expression dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently ported CcaSR into B. subtilis and demonstrated that it enables rapid and precise control of gene expression dynamics (Castillo-Hair et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "4103fdc5-434f-4366-abb0-93bb586c512f",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C92",
+      "claim": "CcaSR can be co-expressed with independently-controllable blue/dark and red/far-red reversible light sensors to achieve simultaneous and independent control of the expression of up to three genes in the same bacterial cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we and others have co-expressed CcaSR with independently-controllable blue/dark and red/far-red reversible light sensors to achieve simultaneous and independent control of the expression of up to three genes in the same bacterial cell (Fernandez-Rodriguez et al., 2017; Olson et al., 2017; Tabor et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "e2858fab-7c19-445a-99c1-573485363d63",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C93",
+      "claim": "A large number of eukaryotic photoreceptors have been developed, enabling optical control of many cell- and neurobiological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "A large number of eukaryotic photoreceptors have also been developed, enabling optical control of many cell- and neurobiological processes (Deisseroth, 2015; Gautier et al., 2014; Goglia and Toettcher, 2019; Leopold et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "00e7b95e-1e5e-45b3-ac69-d35304bbf5e3",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C94",
+      "claim": "E. coli is an important model of Gram-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Although E. coli is an important model of Gram-negative bacteria, it is not a natural symbiont of C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. coli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "79c0c170-bc4c-48fb-90ae-3d7cd85a3f77",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C95",
+      "claim": "E. coli is not a natural symbiont of C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Although E. coli is an important model of Gram-negative bacteria, it is not a natural symbiont of C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the relationship between E. coli and C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "1f8bb21f-2d6a-453c-bd2e-ba51f21fc92a",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C96",
+      "claim": "E. coli does not stably colonize in the C. elegans gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Because E. coli does not stably colonize in the C. elegans gut, we have to paralyze worms to facilitate longer-term experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge about E. coli-C. elegans interactions and explains the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "51a9494f-fb4f-4df0-8216-0116438c3332",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C97",
+      "claim": "Worms must be paralyzed to facilitate longer-term experiments with E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Because E. coli does not stably colonize in the C. elegans gut, we have to paralyze worms to facilitate longer-term experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the experimental design based on the biology of the system.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "6636130b-8fab-4f38-aeac-c6e9d3f22d97",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C98",
+      "claim": "Light can be used to control gut bacterial gene expression in other model hosts such as flies, zebrafish, or mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is likely that light can also be used to control gut bacterial gene expression in other model hosts such as flies, zebrafish, or mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c1fe6afa-a8cd-4f5a-9fba-c27dd539bb08",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C99",
+      "claim": "Red-shifted wavelengths and corresponding optogenetic tools may prove superior for less optically transparent or larger animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Red-shifted wavelengths and corresponding optogenetic tools (Ong et al., 2018; Ryu and Gomelsky, 2014) may prove superior for less optically transparent or larger animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications, supported by citations to relevant tools.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "887275c6-1095-4be2-8f69-129a514a11bf",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C100",
+      "claim": "Optogenetics will greatly improve our understanding of a wide range of microbe-host interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, by enabling precision control of bacterial gene expression and metabolism in situ, we believe that optogenetics will greatly improve our understanding of a wide range of microbe-host interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the future impact of the technology.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "32f7f45b-6add-46ac-8563-c7b96867993e",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C101",
+      "claim": "Intestinal bacteria alter their gene expression and metabolism through aiding the digestion of ingested food and can consequently generate specific metabolites to influence other microbes and the host in close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, through aiding the digestion of ingested food, intestinal bacteria alter their gene expression and metabolism and can consequently generate specific metabolites to influence other microbes and the host in close proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about gut microbe-host interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "946eb028-5d36-4c9d-8944-fa18e36b0bc4",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C102",
+      "claim": "Understanding dynamic diet-microbe-host interplays demands a quantitative method to manipulate bacterial gene expression in a temporally controlled manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding dynamic diet-microbe-host interplays demands a quantitative method to manipulate bacterial gene expression in a temporally controlled manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about what is needed to study these complex interactions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "5edb7ee6-f950-4ead-a286-532621c7fd6b",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C103",
+      "claim": "Optogenetic approaches are quantitative, have rapid and reversible switching ability, and are suitable for in vivo application.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their quantitative nature, rapid and reversible switching ability, and suitability for in vivo application, optogenetic approaches will provide a new toolbox for this area of research to decipher how mechanistically microbial genetic factors participate in those diet-microbe-host interplays and contribute to host health and diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and properties of optogenetic systems demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "967d18dc-9506-4a10-b306-319c4df5897c",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C104",
+      "claim": "CcaSR v2.0 exhibits 77-fold dynamic range in the reference strain BW29655 (\u0394envZ, \u0394ompR).",
+      "claim_type": "EXPLICIT",
+      "source": "We note that CcaSR v2.0 exhibits 77-fold dynamic range in the reference strain BW29655 (\u0394envZ, \u0394ompR), which is similar to our previous measurement of this strain at 120-fold (Schmidl et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "88e145e4-605f-4d7d-b6a3-04e75b161332",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C105",
+      "claim": "CcaSR v2.0 dynamic range increases slightly to 84.2-fold in \u2206rcsA (JW1935-1) due to higher sfGFP expression in green light.",
+      "claim_type": "EXPLICIT",
+      "source": "CcaSR v2.0 dynamic range increases slightly to 84.2-fold in \u2206rcsA (JW1935-1), which is used throughout this work, due to higher sfGFP expression in green light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "3172f41a-1d98-4e40-adba-fa90c69b5517",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C106",
+      "claim": "The mCherry cassette in pLH401 decreases dynamic range to 38.3-fold due to higher leaky sfGFP expression in red light.",
+      "claim_type": "EXPLICIT",
+      "source": "The mCherry cassette in pLH401 decreases dynamic range to 38.3-fold due to higher leaky sfGFP expression in red light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "cd687e90-a1b5-413f-92da-820846e3347c",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C107",
+      "claim": "In worms, the fold-change in response to green light for pLH401 decreases to 5.52 \u00b1 2.4 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In worms, the fold-change in response to green light decreases further to 5.52 \u00b1 2.4 fold (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "f7597f41-4732-4b96-9980-7074b0db447f",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C108",
+      "claim": "The use of gfpmut3* in pLH405 decreases dynamic range to 13.5 \u00b1 0.0 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of gfpmut3* in pLH405 further decreases dynamic range to 13.5 \u00b1 0.0 fold for reasons that are not clear, while in worms the fold-change is 8.63 \u00b1 3.6 fold (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "a6d160a4-1b7d-4eee-b3f5-95f1200119e6",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C109",
+      "claim": "In worms, the fold-change for pLH405 is 8.63 \u00b1 3.6 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of gfpmut3* in pLH405 further decreases dynamic range to 13.5 \u00b1 0.0 fold for reasons that are not clear, while in worms the fold-change is 8.63 \u00b1 3.6 fold (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "39e77431-9892-4ce8-8ca6-e4f650db2bc2",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C110",
+      "claim": "Bacterial cells outside the worm gut do not respond to light in M9Ce+Lev media conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate that bacterial cells outside the worm gut (e.g. on the exterior of the worm) do not respond to light in these conditions, samples of pre-conditioned bacteria from the NGM plates were suspended in the M9Ce+Lev or E. coli M9 media supplemented with casamino acids and glucose (M9Ec).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "7a1131d7-b29b-464f-a581-0825c12ac4bf",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C111",
+      "claim": "Bacterial populations are only responsive to light when grown in M9Ec and when the PCB operon is intact.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the bacterial populations are only responsive to light when grown in M9Ec and when the PCB operon is intact (strain JW1935-1/pLH405/pSR43.6, aka LH03).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "62c0b9b8-a9f7-4938-a363-30eaee7bef3b",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C112",
+      "claim": "The responses shown in flow cytometry data are not due to bacteria outside the worm, nor to bacteria that escape the worm over the course of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the responses shown in data in Figure 1e\u2013f and Figure 1\u2014figure supplement 3 are not due to bacteria outside the worm, nor to bacteria that escape the worm over the course of the experiment, as such cells do not respond to light in the experimental buffer (M9Ce).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the control experiments in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "2f4655d8-fcf0-485a-870e-81d81d80f635",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C113",
+      "claim": "Levamisole has an inhibitory effect on mitochondrial NADH-oxidizing enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that 6 hr of levamisole treatment does not kill worms but leads to mitochondrial hyper-fragmentation in the intestine (Figure 3c,e), possibly due to the inhibitory effect of levamisole on mitochondrial NADH-oxidizing enzymes (K\u00f6hler and Bachmann, 1978) and its associated mitochondrial stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "7552b661-fe29-42c2-8353-437669e1cd0b",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C114",
+      "claim": "E. coli OP50 produces approximately 50% more CA during normal growth than BW25113.",
+      "claim_type": "EXPLICIT",
+      "source": "The common strain E. coli OP50 was not used for worm feeding, as it produces approximately 50% more CA during normal growth than BW25113 (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "db4b9fb3-ba81-41af-bdeb-7458abaac77e",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C115",
+      "claim": "Colanic acid is the only exopolysaccharide produced in the E. coli strains used that incorporates fucose.",
+      "claim_type": "EXPLICIT",
+      "source": "We adapted a previous CA quantification protocol (Dische, 1947; Dische and Shettles, 1948) that takes advantage of the fact that it is the only exopolysaccharide produced in our E. coli strains that incorporates fucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge about E. coli exopolysaccharide biosynthesis and supported by citations to the assay method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "35c5eae4-8536-4a4b-908d-a7b786b39140",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "claim_id": "C116",
+      "claim": "The sqt-3(e2117) temperature sensitive mutant reproduces normally but is embryonically lethal at 26\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "To reach this goal, the sqt-3(e2117) temperature sensitive mutant (Supplementary file 1b) was used to perform longitudinal analyses at 25\u00b0C, which avoids time-consuming animal transfer without interrupting normal reproduction. sqt-3(e2117) is a collagen mutant of C. elegans that reproduces normally but is embryonically lethal at 26\u00b0C and has been used previously in longitudinal studies (Han et al., 2017; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate optogenetic control of bacterial gene expression in the C. elegans gut using the CcaSR system. E. coli strain LH01 expressing sfGFP under CcaSR control shows rapid, reversible light-dependent gene expression changes in the worm gut, with fluorescence increasing within 2 hours of green light exposure and decreasing exponentially upon red light exposure. The response requires the PCB chromophore and is confirmed by both microscopy and flow cytometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C45 provide strong converging evidence from multiple experimental approaches (microscopy and flow cytometry) with appropriate controls (\u0394PCB mutant). The temporal dynamics are well-characterized, and controls demonstrate that responses are due to bacteria within the gut rather than external contamination. The mechanistic basis (CcaSR photoswitching) is established from prior work and validated here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "428bb608-aea9-4dee-a440-bda387ca7310",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors engineered E. coli strain MVK29 to produce colanic acid (CA) under optogenetic control by placing rcsA expression under CcaSR regulation. Green light induces high CA secretion while red light results in undetectable CA levels. The response is abolished by removing the PCB operon or mutating key residues in CcaS or CcaR. CA production increases sigmoidally with green light intensity, enabling dose-dependent control of bacterial metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C58 demonstrate successful optogenetic control of CA biosynthesis with appropriate genetic controls (\u0394PCB, CcaS H534A, CcaR D51N mutations) that establish specificity. The dose-response relationship (C55-C56) is consistent with known CcaSR properties. The CA quantification assay is adapted from established methods and validated against mutant controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "ced7a147-f58c-4da9-b686-0fcc57fbf4c5",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Light-induced CA production from MVK29 in the C. elegans gut increases mitochondrial fragmentation in intestinal cells, recapitulating the effect of the constitutive CA-overproducing \u0394lon mutant. Green light increases fragmentation in MVK29-fed worms but not in worms fed the \u0394PCB control strain, demonstrating that the effect requires light-inducible CA production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 show that optogenetically-induced CA production phenocopies the \u0394lon mutant effect on mitochondrial morphology. The \u0394PCB control (C63) establishes that the effect requires functional optogenetic control. The comparison to prior work on \u0394lon and purified CA (C61) provides validation. However, the mitochondrial fragmentation assay relies on subjective morphological classification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "41f2a57a-4fe3-4042-88f2-1d7115917691",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CA produced in the C. elegans gut protects intestinal mitochondria from levamisole-induced stress. Six hours of levamisole treatment causes mitochondrial hyper-fragmentation in both intestinal and muscle cells. Green light-induced CA production from MVK29 suppresses this fragmentation in intestinal cells but not in muscle cells, revealing a local protective effect of CA. The protective effect requires functional CcaSR and CA production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C75 demonstrate tissue-specific protection by CA using levamisole-induced stress as a model. Multiple genetic controls (\u0394PCB, CcaS H534A, CcaR D51N, \u0394rcsA) establish specificity (C70). The differential effect in intestine versus muscle (C72-C73) supports local action. However, the mechanism linking levamisole to mitochondrial fragmentation is speculative (C66), and the use of levamisole as a paralytic agent may confound interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "57e60f51-0158-4bd6-82b9-2d2155b32e50",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optogenetic control of CA production extends C. elegans lifespan in a dose-dependent manner. Green light exposure extends lifespan of worms bearing MVK29 compared to red light, with 1.7-fold greater extension at high versus low green light intensity. The lifespan extension is comparable to that caused by the constitutive CA-overproducing \u0394lon mutant and is independent of light in control strains (\u0394lon, \u0394rcsA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C87 demonstrate dose-dependent lifespan extension with appropriate controls. The comparison to \u0394lon (C81-C83) validates the approach, and the dose-response (C79-C80) demonstrates quantitative control not achievable with genetic mutants. However, the manuscript does not report sample sizes, statistical tests, or p-values for the lifespan experiments in the main text (only referenced in Supplementary file 1c). The use of the temperature-sensitive sqt-3 mutant background may affect generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "8d834d31-aaf9-41aa-b50b-0b79a09a6ef7",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The dynamic range of the CcaSR optogenetic system varies across different genetic backgrounds and reporter constructs. In vitro, CcaSR v2.0 shows 77-fold dynamic range in the reference strain, 84.2-fold in \u0394rcsA, and 38.3-fold with the mCherry cassette. In worms, the fold-change decreases to 5.52\u00b12.4 for pLH401 and 8.63\u00b13.6 for pLH405.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C109 provide systematic characterization of system performance across conditions. The data show substantial reduction in dynamic range in vivo compared to in vitro, which is important for interpreting results. However, the reasons for reduced performance in worms are not fully explained, and the high variability (large error bars) in worm measurements raises questions about reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "44348363-5787-44e7-b8f4-23ba173cc8ca",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bacteria outside the worm gut do not contribute to the observed light responses. Control experiments show that bacteria in M9Ce+Lev media (the experimental buffer) do not respond to light, while bacteria in M9Ec media with intact PCB operon do respond.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C112 address an important potential confound. The control experiments (Figure 1\u2014figure supplement 4) demonstrate that external bacteria or bacteria that escape during experiments do not contribute to measured responses. This validates that observed effects are due to bacteria within the gut.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "54cc69ef-4632-488d-9b7f-491557103bad",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors establish the rationale for their approach by reviewing prior work on gut microbiome-longevity associations and limitations of existing methods. They note that establishing causal links requires direct manipulation of microbial metabolism in situ, which is challenging with chemical inducers due to potential side effects and poor spatiotemporal control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 provide appropriate context from prior literature. The limitations of chemical inducers (C17-C18) are stated as general concerns rather than demonstrated experimentally, but are reasonable based on known properties of these compounds. The rationale for using C. elegans as a model system is well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors review prior work on optogenetics and the E. coli-C. elegans model system. Optogenetic tools have been used to achieve precise quantitative, temporal, and spatial control of bacterial gene expression in vitro. The E. coli-C. elegans system is optically transparent with known mechanistic links between bacterial metabolism (specifically colanic acid production) and host longevity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C28 accurately summarize prior work with appropriate citations. The characterization of the E. coli-C. elegans system (C26) and CA's role in longevity (C27-C28) are based on established literature, particularly Han et al. 2017, which is cited throughout.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide methodological details and background information about bacterial operons, the cps operon structure, CA-overproducing mutants, levamisole effects, E. coli strain differences, CA quantification methods, and the sqt-3 temperature-sensitive mutant used for lifespan assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48, C59-C61, C113-C116 provide necessary methodological context supported by appropriate citations. The CA quantification method (C115) is adapted from established protocols. The use of sqt-3 mutant (C116) is justified for longitudinal studies. These are primarily methodological details rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "d2d74619-6e03-41fa-ae86-1e1cef279aba",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss future applications and extensions of their approach, including studying other E. coli genes affecting longevity, using the method in B. subtilis, multiplexing with other optogenetic systems, extending to other host organisms, and addressing limitations of the current E. coli-C. elegans system. They propose that optogenetics will improve understanding of microbe-host interactions and diet-microbe-host interplays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C103 are primarily speculative statements about future applications (C98, C99, C100) or general discussion points. While the suggestions are reasonable based on the demonstrated proof-of-concept, they represent proposed future work rather than results from the current study. The limitations discussed (C94-C97) are acknowledged but not experimentally addressed. These claims do not constitute results that can be evaluated as supported or unsupported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    },
+    {
+      "id": "5d665f29-893f-4a2b-aac3-cacb515b38cf",
+      "content_id": "94e023c7-c15c-419e-a400-4878aad7fe60",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors demonstrate an optogenetic method to control bacterial gene expression and metabolite production in the host gut, specifically engineering E. coli to secrete colanic acid under light control. This approach reveals local protective effects on intestinal mitochondria and enables dose-dependent lifespan extension, demonstrating quantitative and temporal control of gut bacterial metabolism to study effects on host health and aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 and C32 represent the main conclusions of the work, which are well-supported by the experimental results detailed in other claim groups. These high-level summary claims integrate findings from gene expression control (C3), CA production (C4), mitochondrial protection (C5), dose-dependent lifespan extension (C6), and overall conclusions about the method's capabilities (C7, C32). The evidence from Figures 1-4 collectively supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:04:55.479401Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "14784970-a7a7-440d-862c-72cd33836e69",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "cba551ca-5d6a-4922-b0db-1508480e4e2f",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "4f8965fa-d000-4c76-a4ef-52da70812958",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "11113278-b866-467e-ad4f-825555539acd",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "7cb0c9de-3e2c-4fa2-96b2-12201d4d725a",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "7b04010b-a502-4204-ba19-fffa8a946bfb",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "352c9509-dba6-4a19-aab8-5da45c8d1031",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "3d712e64-b6e7-4c11-a780-c2d1acfcdea6",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "c1be528e-b0a1-4c94-bb08-97e1704c6926",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "1be58767-fb27-4410-8b33-8b24c56ecb4c",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "7d2ba43b-0036-45bd-93ac-d9dcfe11becf",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "1f3c6f63-833e-47b8-a09e-aecd2c6b1580",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "1e860c84-a4ae-43a6-9f04-088431add195",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "4af5fa81-d3e3-4f4d-b5c6-85f4deb91004",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "d7ba6370-b626-45e6-a74c-397245e96c9c",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "1d3f4aeb-33eb-4972-a2a6-71775b9e84a4",
+      "result_id": "e55056dd-c353-4b5a-ba2e-d4bf257aed49"
+    },
+    {
+      "claim_id": "7ed3db11-4c42-491b-83bf-cda1e0de4290",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "8f634fc6-f5b0-44ec-981c-736268a8b0c9",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "9ce76119-7d58-4e6d-bf66-61247e43453c",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "22f94e29-8ef1-4836-a683-fd132672ac7a",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "098acaa4-641c-41fc-889c-76fe826cfdae",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "93581b9c-69a0-43c1-ab9a-12936455e068",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "c84122e4-f7e9-4245-b9c4-313f8295cee5",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "1293436b-1369-4f7d-a00c-872cf35533ea",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "f6902403-e648-4a07-8525-57806a925b73",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "f113b58e-9ac3-4d48-bf1e-fcd87799fcbc",
+      "result_id": "428bb608-aea9-4dee-a440-bda387ca7310"
+    },
+    {
+      "claim_id": "a61067f1-5c1f-4a30-b989-7c30514c2a04",
+      "result_id": "ced7a147-f58c-4da9-b686-0fcc57fbf4c5"
+    },
+    {
+      "claim_id": "6f00b3a9-3317-41bb-b3b8-5901f2c4b13f",
+      "result_id": "ced7a147-f58c-4da9-b686-0fcc57fbf4c5"
+    },
+    {
+      "claim_id": "eec5226d-e5eb-4f82-9a33-2676dd51850d",
+      "result_id": "ced7a147-f58c-4da9-b686-0fcc57fbf4c5"
+    },
+    {
+      "claim_id": "6a7d1c3e-a581-47e1-b639-8f5b471283cf",
+      "result_id": "ced7a147-f58c-4da9-b686-0fcc57fbf4c5"
+    },
+    {
+      "claim_id": "b9e0c2ad-a766-4e41-931b-a0ad95d509e1",
+      "result_id": "ced7a147-f58c-4da9-b686-0fcc57fbf4c5"
+    },
+    {
+      "claim_id": "bf2ec433-a85f-4fe7-bad2-44c0b4bc80de",
+      "result_id": "ced7a147-f58c-4da9-b686-0fcc57fbf4c5"
+    },
+    {
+      "claim_id": "40100740-a5e3-4b17-9a34-541560b0c4ee",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "1079a136-b0cc-4dd1-9acb-262e95a6c1aa",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "0e007d36-dd1c-449c-83aa-6d4b7cf80cff",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "43057728-896f-4e3f-a4b1-a8f1fb55d8e4",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "f7cd76eb-e3ea-430a-845e-ef60508caaf9",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "402642d9-0795-4dbb-9fac-5754c7c511f8",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "31030f85-4f2b-4735-a2c4-756539604cb9",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "6363a9b0-37b1-4a86-8727-c29f4bbc5085",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "bc40aa6d-889c-4cbb-8770-46415a06030a",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "f896310a-4bf4-498d-b241-5daa94a5cdd5",
+      "result_id": "41f2a57a-4fe3-4042-88f2-1d7115917691"
+    },
+    {
+      "claim_id": "eb183e9f-df68-4d97-a5cb-9865bbfeb0d8",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "c904f29b-51cd-42f1-bef9-de5353aec599",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "e80762f1-a9ee-4523-a4c0-26a2c914dfe8",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "8f76e914-de15-492d-92e1-952a9c04e744",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "fef7994a-01c7-46d8-a071-8c8dc6484053",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "4b3254df-4059-4d2b-8092-b01adee30cb2",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "bdd911b5-cdd9-46b9-9977-e40c18184617",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "89c13439-1087-4e52-989b-355af58a605a",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "41135cfa-3bde-4d34-9b22-e9a8e8279584",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "1155552a-1443-4f7c-821f-dab1553ed2a6",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "c8a546cf-a8af-45cd-9937-599d8085b048",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "36417d3b-e85a-4819-a1f8-f20bcf62752b",
+      "result_id": "57e60f51-0158-4bd6-82b9-2d2155b32e50"
+    },
+    {
+      "claim_id": "967d18dc-9506-4a10-b306-319c4df5897c",
+      "result_id": "8d834d31-aaf9-41aa-b50b-0b79a09a6ef7"
+    },
+    {
+      "claim_id": "88e145e4-605f-4d7d-b6a3-04e75b161332",
+      "result_id": "8d834d31-aaf9-41aa-b50b-0b79a09a6ef7"
+    },
+    {
+      "claim_id": "3172f41a-1d98-4e40-adba-fa90c69b5517",
+      "result_id": "8d834d31-aaf9-41aa-b50b-0b79a09a6ef7"
+    },
+    {
+      "claim_id": "cd687e90-a1b5-413f-92da-820846e3347c",
+      "result_id": "8d834d31-aaf9-41aa-b50b-0b79a09a6ef7"
+    },
+    {
+      "claim_id": "f7597f41-4732-4b96-9980-7074b0db447f",
+      "result_id": "8d834d31-aaf9-41aa-b50b-0b79a09a6ef7"
+    },
+    {
+      "claim_id": "a6d160a4-1b7d-4eee-b3f5-95f1200119e6",
+      "result_id": "8d834d31-aaf9-41aa-b50b-0b79a09a6ef7"
+    },
+    {
+      "claim_id": "39e77431-9892-4ce8-8ca6-e4f650db2bc2",
+      "result_id": "44348363-5787-44e7-b8f4-23ba173cc8ca"
+    },
+    {
+      "claim_id": "7a1131d7-b29b-464f-a581-0825c12ac4bf",
+      "result_id": "44348363-5787-44e7-b8f4-23ba173cc8ca"
+    },
+    {
+      "claim_id": "62c0b9b8-a9f7-4938-a363-30eaee7bef3b",
+      "result_id": "44348363-5787-44e7-b8f4-23ba173cc8ca"
+    },
+    {
+      "claim_id": "de2719eb-acdc-4e17-a589-7b7f06908c89",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "454e42b2-c380-4609-b099-87e8896bd80f",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "553ab79b-ca8e-408f-9e9c-f4620bb6942c",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "175536c4-064e-43c5-9dfb-56df570fb31d",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "a42cf7a0-7065-40f4-9bd1-b9ddbaa7f6a6",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "0fbb5906-7675-403f-bab9-f9ea91b19f3f",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "42beaf3e-605d-465c-b8c7-76a7824d7428",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "37408691-59fc-4401-949f-c1011ee43a04",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "51717a4a-a640-4492-af27-8162a3896d30",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "2587b37b-0511-414f-a545-bea62c0d3001",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "c131a688-77b8-4943-b9da-5e4aa72b7e90",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "c0730e54-79fb-4363-881b-75d62f49aebb",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "62976673-3a09-42a8-a641-703577efb25b",
+      "result_id": "54cc69ef-4632-488d-9b7f-491557103bad"
+    },
+    {
+      "claim_id": "db32b497-6309-4f05-a5b5-4180ecc818f4",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "c567ef4a-eac1-4f15-b66d-f87d0d42f162",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "c8a541d3-2e1d-467f-8fbe-9a241c8ccb7f",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "489b982c-51c4-40e2-933d-67d719dcebe3",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "1149aca8-5651-4137-9046-9ff54d7294c7",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "ae6e3913-d32c-4341-8bb9-1ba96f69e71a",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "2066b620-ddb0-461e-9c41-061671d79d04",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "bd2473bf-571a-4ce5-b804-9d545eca6b25",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "528dacfc-213c-4c62-9591-ea53253ed75e",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "2a167da4-1ba5-44fa-a421-3a3e214fbfb4",
+      "result_id": "24e4238c-6da1-43c6-852e-8a97c40c7ba7"
+    },
+    {
+      "claim_id": "9cff837a-65f4-4902-831c-129ade990b3c",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "19cb0dac-f46d-4f27-81be-5ab83cbf2237",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "dd8dd17b-f93a-4eb8-a9f2-35bc4a461351",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "6a7d1c3e-a581-47e1-b639-8f5b471283cf",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "b9e0c2ad-a766-4e41-931b-a0ad95d509e1",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "bf2ec433-a85f-4fe7-bad2-44c0b4bc80de",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "2f4655d8-fcf0-485a-870e-81d81d80f635",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "7552b661-fe29-42c2-8353-437669e1cd0b",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "db4b9fb3-ba81-41af-bdeb-7458abaac77e",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "35c5eae4-8536-4a4b-908d-a7b786b39140",
+      "result_id": "c73defc2-3e8d-4cc3-81f3-e69d539f439c"
+    },
+    {
+      "claim_id": "ce996369-8ea6-46ec-b00c-28ec8b715eae",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "14540d2c-4e5b-46f3-9240-1869d4b99b87",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "200e89c4-6327-4362-898d-1e5970a5c542",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "988f24af-73b0-4c34-8147-cf6fea1281a5",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "4103fdc5-434f-4366-abb0-93bb586c512f",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "e2858fab-7c19-445a-99c1-573485363d63",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "00e7b95e-1e5e-45b3-ac69-d35304bbf5e3",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "79c0c170-bc4c-48fb-90ae-3d7cd85a3f77",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "1f8bb21f-2d6a-453c-bd2e-ba51f21fc92a",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "51a9494f-fb4f-4df0-8216-0116438c3332",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "6636130b-8fab-4f38-aeac-c6e9d3f22d97",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "c1fe6afa-a8cd-4f5a-9fba-c27dd539bb08",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "887275c6-1095-4be2-8f69-129a514a11bf",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "32f7f45b-6add-46ac-8563-c7b96867993e",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "946eb028-5d36-4c9d-8944-fa18e36b0bc4",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "5edb7ee6-f950-4ead-a286-532621c7fd6b",
+      "result_id": "d2d74619-6e03-41fa-ae86-1e1cef279aba"
+    },
+    {
+      "claim_id": "5b0cb039-02f8-4557-971c-f490df35c054",
+      "result_id": "5d665f29-893f-4a2b-aac3-cacb515b38cf"
+    },
+    {
+      "claim_id": "f67f99fb-6e85-4b97-96c9-9e3e2d72a4a3",
+      "result_id": "5d665f29-893f-4a2b-aac3-cacb515b38cf"
+    },
+    {
+      "claim_id": "7cca3778-0230-40ec-bc1a-757bcd6dcac6",
+      "result_id": "5d665f29-893f-4a2b-aac3-cacb515b38cf"
+    },
+    {
+      "claim_id": "254dd486-7558-42f5-8ed3-9c4a1ac22044",
+      "result_id": "5d665f29-893f-4a2b-aac3-cacb515b38cf"
+    },
+    {
+      "claim_id": "d78ff696-95f1-47e1-93ff-1702a7c5a422",
+      "result_id": "5d665f29-893f-4a2b-aac3-cacb515b38cf"
+    },
+    {
+      "claim_id": "6184aa01-5388-4dba-9c95-17a478e9881b",
+      "result_id": "5d665f29-893f-4a2b-aac3-cacb515b38cf"
+    }
+  ],
+  "comparisons": []
+}

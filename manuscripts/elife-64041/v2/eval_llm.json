@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A single dose of ketamine (10 mg/kg, i.p.) administered 4 hours before testing rescues escape behavior in mice that have undergone learned helplessness induction. This effect is specific to ketamine treatment (not observed with saline), not due to spontaneous fear extinction, and occurs in both the learning context and novel environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide converging evidence from the primary behavioral experiment and appropriate controls. The saline control (C40) rules out time-dependent spontaneous recovery, and context-independence (C42) demonstrates generalization. Statistical analyses appear appropriate with adequate sample sizes (n=24 mice for main experiment, n=5 for controls).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51"
+    ],
+    "result": "VTA dopaminergic neuron activity exhibits a biphasic response to aversive foot shocks at the start of learning (decrease during shock, increase after), which becomes blunted by the end of LH induction. Ketamine treatment restores these characteristic Ca2+ transient features in parallel with behavioral rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe systematic changes in VTA DA activity across learning phases with appropriate photometry controls (C47: GFP controls show no transients). The biphasic response is consistent with prior literature (C44). Statistical analyses show significant differences across conditions (Figure 1e, n=8 animals). However, the causal relationship between DA activity patterns and behavior requires additional support from the chemogenetic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Changes in VTA DA neuron activity during learned helplessness are not explained by alterations in locomotor behavior, as open-field locomotion did not differ across learning phases and DA activity was not associated with motion transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 provide important controls ruling out locomotor confounds. The comparison to prior literature (C50) appropriately contextualizes the finding that VTA (not SNc) DA neurons are not primarily involved in movement. Sample size is modest (n=5) but the lack of effect is clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In a weaker LH paradigm (wLH), distinct Ca2+ transient shapes are associated with escape (monophasic increase) versus failure (biphasic: decrease during shock, increase after) outcomes. After learning, these patterns become more similar due to reduction in failure-associated negative transients, which recover following ketamine treatment. Control experiments demonstrate that inescapable shock exposure is necessary for these changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C64 describe outcome-specific DA dynamics with appropriate controls (C54: no-induction controls; C62-C63: necessity of inescapable shocks; C64: saline controls). The wLH paradigm (48% vs 78% failure rate, p=0.0022) provides sufficient behavioral variance to separate escape and failure trials. Statistical analyses are appropriate (repeated measures ANOVA, n=12 animals for main analysis, n=6-9 for controls).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Individual differences in VTA DA activity predict both stress resilience and ketamine responsiveness. Larger baseline differences between escape and failure-associated Ca2+ transients (trace distance) correlate with fewer failures after wLH (R\u00b2=0.629) and stronger ketamine responses (R\u00b2=0.715).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 report correlational findings with moderate to strong effect sizes. The correlations are statistically significant (p<0.05) with reasonable sample sizes (n=11). However, these are purely correlational observations that do not establish causality. The predictive value is intriguing but would require prospective validation in independent cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Chemogenetic inhibition of VTA DA neurons (hM4Di + CNO) blocks ketamine's rescue of escape behavior when co-administered, but does not affect baseline escape behavior or LH induction itself. This effect is reversible, as ketamine alone on subsequent days successfully rescues behavior, and is not due to locomotor impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 provide strong causal evidence for DA involvement in ketamine's effects. The experimental design includes appropriate controls: Cre- littermates, locomotor assessment (C71), baseline behavior testing (C73), and sequential ketamine-only administration (C70). The finding that CNO alone doesn't affect baseline escape (C73, C75) is critical for interpretation. Sample sizes are adequate (n=7-8). However, potential off-target effects of CNO and the specificity of hM4Di expression should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Ex vivo application of ketamine (50 \u03bcM) to acute VTA brain slices does not alter spontaneous Ca2+ dynamics, firing rate, or synaptic inputs (EPSCs/IPSCs) in dopaminergic neurons, suggesting that in vivo effects are not mediated by direct cell-autonomous mechanisms in the VTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide convincing negative results from multiple complementary approaches (2-photon imaging: n=410 neurons; cell-attached: n=9 neurons; voltage clamp: n=17 EPSCs, n=12 IPSCs). The concentration used (50 \u03bcM) is appropriate for ex vivo studies. These findings effectively rule out direct VTA effects and motivate the circuit-level investigations. The inference (C79, C82) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Local infusion of ketamine into mPFC (but not PAG, PPTg, or VTA) rescues both escape behavior and VTA DA Ca2+ activity signatures after LH. ACSF infusion into mPFC does not produce these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 provide strong anatomical specificity through systematic comparison of multiple brain regions. The mPFC specificity is convincing (p<0.0001 vs other regions), and the ACSF control (C88) rules out mechanical effects. The parallel rescue of both behavior and VTA activity (C87) strengthens the circuit-level interpretation. Sample sizes are adequate (n=6 for photometry experiments). Infusion locations are verified histologically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Anatomical tracing reveals that the majority of VTA-projecting neurons in deep layers (5/6) of mPFC express Drd1a mRNA (68.7% in L5/6 vs 13.2% in L2/3), and these Drd1+ mPFC neurons send dense projections to VTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe anatomical connectivity using appropriate techniques (retrograde tracing + FISH, anterograde viral tracing). The layer-specific enrichment is quantified (n=2 animals, 1017 total RTB+ neurons counted). The consistency with prior literature (C93) provides additional support. However, the small sample size (n=2) for FISH quantification is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Systemic ketamine administration rapidly enhances population activity of mPFC Drd1+ neurons, likely through disinhibition by suppressing local inhibitory interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 reports direct photometry measurements (n=6 animals, significant increase 15-30 min post-injection, Figure 6\u2014supplement 1). However, C95's mechanistic interpretation is based entirely on citations to prior literature, not direct experimental evidence in this study. The inference is reasonable but not directly tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Chemogenetic activation of mPFC Drd1+ neurons (hM3Dq + CNO) mimics ketamine's behavioral effects, rescuing escape behavior within 2-4 hours after LH without altering locomotion. Conversely, chemogenetic inhibition (hM4Di) blocks ketamine's effects. These findings establish mPFC Drd1+ neurons as sufficient and necessary for ketamine's behavioral rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 provide strong bidirectional causal evidence. The gain-of-function (C96: n=10 Cre+, n=8 Cre-) and loss-of-function (C101) experiments converge on the same conclusion. Appropriate controls include Cre- littermates, locomotor assessment (C97), and c-fos validation (Figure 6h). The time course (2-4 hr) parallels ketamine's effects. The citation to prior work (C99-C100) provides additional context but is not essential to the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Summary of main findings: Aversive learning restructures VTA DA activity in a manner that correlates with behavioral outcomes and future ketamine sensitivity. Ketamine temporarily normalizes both DA signaling and behavior, with efficacy correlating with baseline DA activity features. Chemogenetic inhibition establishes causal necessity of DA signaling for ketamine's effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 synthesize the major findings. These summary statements are well-supported by the collective experimental evidence (behavioral data, photometry recordings, chemogenetic manipulations). The framework linking DA activity differences to escape tendency (C107) is a reasonable interpretation of the correlational data, though causality is only partially established through the chemogenetic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "The study observes substantial individual variability in both behavioral responses to LH (broad, non-bimodal distribution in n>130 mice) and VTA DA activity patterns, which correlate with future outcomes. The authors speculate that this variability may relate to early-life experience, genetic factors in DA signaling, and could serve as biomarkers for stress susceptibility and ketamine responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C114 accurately describe observed variability in the dataset. However, C115-C117 and C119 are speculative interpretations not directly tested in this study. The proposed mechanisms (early-life experience, genetic variability) are reasonable hypotheses based on cited literature but lack experimental support in the current work. The biomarker potential (C116) is intriguing but would require prospective validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Literature review establishing that mPFC is broadly involved in ketamine's effects through multiple mechanisms: rapid disinhibition of pyramidal neurons, longer-term increases in dendritic spine density, and modulation of multiple downstream brain regions. The activation of mPFC Drd1 neurons is established as important for ketamine's behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 accurately summarize prior literature with appropriate citations. C125 integrates the current study's findings with prior work. However, C126-C127 are speculative extensions about broader circuit effects not directly tested here. These claims provide important context but are not primary findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "VTA DA activity is not critical for innate escape actions (as chemogenetic suppression doesn't affect baseline behavior) but becomes important after LH. The authors predict that downstream DA release in NAc and amygdala is modulated after LH and ketamine treatment, based on the correlation between somatic DA activity and release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129-C130 are well-supported by the chemogenetic data (Figure 3f). However, C132 is a prediction based on cited literature (C131) rather than direct measurement. While the inference is reasonable given prior work showing correlation between somatic activity and release, direct measurement of DA release in projection targets would be needed to confirm this prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The study acknowledges VTA DA neuron heterogeneity based on projections and transcriptional profiles but did not distinguish responses based on these features. The authors argue that observed effects are sufficiently robust to be detected in a mixed DA population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 accurately cite prior literature on DA heterogeneity. C135 is a reasonable interpretation of the study's approach and findings\u2014the population-level effects are indeed robust (e.g., Figure 1e shows clear statistical differences). However, this represents a limitation, as projection-specific or molecularly-defined subpopulations might show distinct responses. The lack of subpopulation analysis limits mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors propose a circuit model where ketamine acts in mPFC to enhance Drd1+ neuron activity, which then drives VTA DA activity through excitatory glutamatergic projections. They hypothesize that this initial enhancement may be amplified within a recurrent mPFC-VTA circuit, potentially explaining sustained behavioral effects beyond ketamine's bioavailability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C143 cite extensive prior anatomical and functional literature establishing mPFC\u2192VTA connectivity and ketamine's effects on mPFC. C142-C143 summarize this study's findings. C144-C146 cite recent work from the same lab on DA-dependent spinogenesis. However, C147 is a hypothesis about recurrent amplification that is not directly tested. While the model is plausible and integrates multiple lines of evidence, the proposed recurrent amplification mechanism requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors speculate about alternative circuit mechanisms involving ventral hippocampus\u2192NAc and lateral habenula\u2192VTA pathways, and suggest that ketamine's effects likely result from synergistic actions across multiple brain regions and molecular pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C150 are speculative discussions of alternative mechanisms based on cited literature. While these are reasonable possibilities given prior work, they are not tested in the current study. C150's suggestion of synergistic multi-region effects is plausible but lacks direct experimental support. These represent interesting hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors discuss clinical implications, noting that dopaminergic drugs are first-line therapies for conditions comorbid with depression, and suggest that their findings on dopaminergic mediation of ketamine's effects may have implications for ketamine's efficacy in patients receiving various dopaminergic medications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C151 accurately states established clinical knowledge. C152 is a factual statement about FDA approval. However, C153 is speculation about clinical implications not tested in this study. While the mouse findings suggest potential drug interactions, translating these to clinical predictions requires caution. Human studies would be needed to test whether concurrent dopaminergic medications affect ketamine efficacy.",
+    "result_type": "MINOR"
+  }
+]

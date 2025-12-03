@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Single-cell RNA sequencing identified 14 distinct cardiac cell populations from 32,585 cells (16,490 control and 16,095 diabetic mice), with consistent expression patterns across individuals. Cell types were characterized by specific marker genes including fibroblasts (Pdgfra, Pcdh9, Bmper), endothelial cells (Pecam1, Ccdc85a, Btnl9), and macrophages (Fcgr1, F13a1, Adgre1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are well-supported by the scRNA-seq data presented in Figure 1 and supplementary files. The cell numbers, clustering approach, and marker gene identification are clearly documented with appropriate statistical methods and visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "HFD/STZ treatment induced significant transcriptomic changes across cardiac cell populations, particularly in fibroblasts, endothelial cells, endocardial cells, cardiomyocytes, and macrophages. Top upregulated genes included Pdk4, Angptl4, Txnip, Postn, Hmgcs2, and Ucp3, several of which are associated with heart failure. KEGG pathway analysis revealed enrichment in dilated cardiomyopathy, cardiac muscle contraction, and hypertrophic cardiomyopathy pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by differential expression analysis with appropriate statistical testing (Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36) and pathway enrichment analysis shown in Figure 1E and supplementary figures. The connection to heart failure is supported by citations to prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Analysis of unique differentially expressed genes (uni-DEGs) identified 2118 genes associated with major cardiac cell types, with 96.6% detected in cardiomyocytes, fibroblasts, macrophages, endothelial cells, and endocardial cells. GO analysis showed enrichment of collagen fibril organization and extracellular matrix remodeling terms in cardiac fibroblasts, indicating their key role in cardiac fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by differential expression analysis and GO enrichment analysis with appropriate statistical testing (FDR \u22640.05). The conclusion about fibroblasts' role in ECM remodeling is a reasonable inference from the GO enrichment data shown in Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Ligand-receptor interaction analysis revealed that endothelial and fibroblast clusters are prominent hubs for autocrine and paracrine signaling. In response to HFD/STZ-induced diabetes, intercellular signaling changed in all cardiac cells, with fibroblasts showing the greatest increase in the number of connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by ligand-receptor interaction network analysis shown in Figures 2C-G with appropriate statistical testing (FDR \u22640.01 for C29, FDR \u22640.05 for C30). The quantitative comparison of connection numbers across cell types provides clear evidence for the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "PPI network analysis identified Egfr and Pdgfra as top hub genes highly expressed in cardiac fibroblasts. In diabetic mice, Pdgfb and Pdgfd were upregulated in endothelial cells, Pdgfc in macrophages, and Efemp1 in epicardial cells, suggesting these ligand-receptor interactions contribute to myocardial fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by PPI network analysis and gene expression data with statistical testing (FDR \u22640.05, log2FC \u22650.36) shown in Figure 3. The conclusion in C35 is appropriately stated as a suggestion based on the ligand-receptor expression patterns, though it represents an inference requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Functional validation showed that HFD/STZ treatment significantly increased cardiac p-Pdgfra protein levels and collagen gene expression (Col1a1, Col3a1), which were attenuated by imatinib (Ima) treatment. Ima treatment also improved left ventricular function in diabetic mice, demonstrating that Pdgf(s)-Pdgfra interactions contribute to diabetic myocardial fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are well-supported by immunofluorescence, qRT-PCR, Masson staining, and echocardiography data with appropriate sample sizes (n=6 mice per group) and statistical significance testing. The conclusion in C41 is justified by the convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Unsupervised clustering of 6,416 fibroblasts revealed 10 distinct subpopulations, with subpopulation 3 forming a distinct cluster. Subpopulations 3 and 5, enriched for pro-fibrotic markers (Nppa, Clu, Postn, Cilp), were strongly involved in extracellular matrix remodeling and collagen synthesis based on GSVA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by clustering analysis, hierarchical clustering, and GSVA with appropriate statistical testing (FDR \u22640.05). The identification of pro-fibrotic subpopulations is based on established marker genes and functional enrichment analysis shown in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Transcription factor network analysis identified distinct regulons in fibroblast subpopulations. Subpopulation 3 was enriched for Hrc (involved in Ca2+ regulation), while subpopulation 5 was enriched for Postn (consistent with fibroblasts in cardiac hypertrophy models). Hmgb1-based networks were upregulated in Hrc-high and Postn-high fibroblast populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by differential expression analysis, regulon analysis (Figure 5A), and citations to prior literature. The characterization of fibroblast subpopulations by marker genes and transcription factor networks is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "HFD/STZ treatment induced transcriptional changes in all cardiac fibroblast subpopulations. Hrc-high fibroblasts showed enrichment of GO terms related to collagen fiber reorganization and extracellular matrix binding, with top enriched pathways associated with ECM organization, myocardial fibrosis, and fibroblast activation, identifying them as key cellular drivers of myocardial fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by differential expression analysis, GO enrichment, and pathway analysis with appropriate statistical testing (FDR \u22640.05, log2FC \u22650.36) shown in Figures 6A-B. The conclusion in C57 is a reasonable inference from the enrichment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "PPI network analysis of upregulated genes in Hrc-high fibroblasts identified Itgb1 as a top hub gene. Itgb1 ligands Lgals3bp and Fn1 were upregulated in diabetic hearts. AAV9-mediated Itgb1 knockdown (>80% reduction lasting >5 months) reduced collagen synthesis and deposition in diabetic mice, demonstrating that Itgb1 in Hrc-high fibroblasts contributes to myocardial fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are well-supported by PPI network analysis, gene expression data, and functional validation using AAV9-mediated knockdown with appropriate sample sizes (n=6 mice per group) and statistical significance (p<0.0001 for knockdown efficiency). The conclusion in C65 is justified by the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Validation in DB/DB diabetic mice confirmed that Pdgfra phosphorylation was significantly promoted and inhibited by Ima treatment. Hrc was highly expressed in fibroblasts (co-localized with Desmin) and inhibited by Ima treatment. Ima treatment significantly reduced collagen accumulation (Acta2, Col3a1), confirming the role of Pdgf(s)-Pdgfra axis in DB/DB diabetic myocardial fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by immunofluorescence and qRT-PCR data in an independent mouse model (DB/DB) with appropriate sample sizes (n=4-6 mice per group) and statistical significance. This validation strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Validation in female C57 diabetic mice confirmed Pdgfra phosphorylation activation and inhibition by Ima treatment, along with Hrc expression in fibroblasts. Ima treatment reduced collagen accumulation. Ligand-receptor interactions between macrophages, endothelial cells, and fibroblasts were confirmed, establishing this as a common mechanism promoting cardiac fibrosis in diabetes across multiple models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are supported by validation experiments in female mice with appropriate sample sizes (n=4-6 mice per group) and statistical testing. The conclusion in C79 about a common mechanism is justified by consistent findings across male C57, DB/DB, and female C57 models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The introduction establishes background knowledge about diabetes prevalence (537 million adults, >90% type 2), cardiac complications as leading causes of death, hyperglycemia as the key initiating factor of diabetic cardiomyopathy, characteristics of myocardial fibrosis, cardiac cell composition, and the importance of intercellular communication in heart homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 represent established knowledge in the field, supported by citations to prior literature where appropriate (C6-C9, C11-C12). These claims provide necessary context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C26",
+      "C50",
+      "C59",
+      "C60",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The manuscript cites prior literature to support claims about gene functions and disease associations, including roles of upregulated genes in heart failure, Ucp3 and Irf7 in cardiac pathology, Postn+ fibroblasts in cardiomyopathy models, ECM protein encoding genes, collagen synthesis genes, fibroblast functions, and receptor functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C26, C50, C59, C60, C83, C85-C88 are appropriately supported by citations to prior literature. These claims establish the context and significance of the findings but represent knowledge from previous work rather than novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C48",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript presents interpretive and speculative claims about pro-fibrotic markers, Hrc function, study achievements, Hrc-high fibroblast emergence, Postn+ fibroblast roles, and potential therapeutic targets. These represent conclusions and future directions based on the study findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44, C48, C80-C82, C84, C89-C90 include a mix of established knowledge (C44, C48), summary statements (C80-C81), inferences (C82), and speculative therapeutic implications (C84, C89-C90). While C80-C82 are supported by the data, C84, C89-C90 are appropriately stated as speculative but require further validation.",
+    "result_type": "MINOR"
+  }
+]

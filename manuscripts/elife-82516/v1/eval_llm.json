@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The revised phylogenetic method for detecting epistasis was validated through simulations. In simulations with positive epistasis, the method detected all 10 positively epistatic site pairs and 7 out of 10 negatively epistatic site pairs, with acceptable false discovery rates. The revised method outperformed alternative approaches and was selected for subsequent analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe simulation validation showing the revised method successfully detects both positive and negative epistasis with reasonable accuracy (all 10 positive pairs, 7/10 negative pairs detected). The method's superiority over alternatives and low false positive rates in control simulations support its selection for real data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C31",
+      "C32"
+    ],
+    "result": "46 sites in the SARS-CoV-2 spike protein formed 45 concordantly evolving site pairs (CSPs). These sites are significantly closer in protein structure than random pairs (mean distance 20.17 \u00c5 vs 36.71 \u00c5 expected, p=0.0004), with 43% of pairs in direct contact (within 5 \u00c5), indicating concordant evolution has a functional basis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C31-C32 present the primary finding of concordantly evolving sites with strong statistical support (p=0.0004) and structural validation. The significant enrichment of physically proximate sites among CSPs provides compelling evidence for functional coordination, though the inference of functional basis (C4) relies on structural proximity as a proxy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "73% (33/45) of concordantly evolving site pairs detected using IQ-TREE phylogeny were also detected using an alternative UShER phylogeny at 50% FDR, demonstrating robustness to phylogenetic uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 demonstrate methodological robustness by showing substantial overlap between results from two independent phylogenetic reconstruction methods. The 73% concordance rate indicates the signal is strong enough to overcome phylogenetic uncertainty for most detected pairs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C85",
+      "C86"
+    ],
+    "result": "Concordantly evolving sites form 13 connected components, with three dense structural clusters identified: Cluster I (sites 439-444) in the receptor binding motif affecting antibody neutralization; Cluster II (sites 356-360) in RBD with conformation-dependent contacts; and Cluster III (sites 63-261) in NTD domain including hypervariable loops involved in antibody binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38, C85-C86 characterize the structural organization of concordantly evolving sites with specific domain assignments and functional annotations supported by citations. The structural clustering and functional relevance are well-documented, though the functional significance relies partly on cited literature rather than direct experimental validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Nine discordantly evolving site pairs were detected where mutations at one site rarely occurred on specific allelic backgrounds at another site. For example, mutations Q675H and Q677H occurred mostly on wild-type N at site 501 and rarely on 501Y background, while mutations A653V and S982A occurred mostly on derived G at site 614.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C39-C41 describe discordant evolution patterns with specific examples. The detection of 9 pairs with 5 replicated on alternative phylogeny (C39) provides validation. The specific mutation patterns (C40-C41) are directly observable from phylogenetic data shown in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Analysis of non-consecutive mutations distinguished epistasis from episodic selection. For 12 concordant pairs (including all 10 in Cluster I), non-consecutive mutations cluster phylogenetically, suggesting episodic selection. However, 16 pairs show non-consecutive mutations that avoid each other or lack clustering, indicating positive epistasis cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 present a sophisticated analysis distinguishing epistasis from episodic selection using non-consecutive mutation patterns. The statistical approach is sound (z-scores with Benjamini-Hochberg correction), and the logic is clear: clustering of non-consecutive mutations suggests episodic selection, while their absence or repulsion suggests epistasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "For discordantly evolving pairs, analysis of non-consecutive mutations suggests pair (614, 653) represents episodic selection (mutations more distant than expected), while pairs (440, 681) and (501, 675) show evidence of negative epistasis (non-consecutive mutations closer than expected despite consecutive mutations repelling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 apply the same analytical framework to discordant pairs. The interpretation that closer-than-expected non-consecutive mutations combined with repelling consecutive mutations 'can only result from negative epistasis' (C48) is logically sound, though the certainty of this claim could be overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Concordantly evolving site pairs show significant overlap with high-scoring DCA pairs from sarbecovirus analysis. Three of 14 pairs in bCoV_S1_RBD domain, 2 of 15 in bCoV_S1_N domain, and 1 pair in CoV_S2_C domain were among high-scoring DCA pairs, with enrichment significant for bCoV_S1_RBD (p=4.7e-4) and bCoV_S1_N (p=3.2e-3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 demonstrate concordance between short-term SARS-CoV-2 evolution and long-term sarbecovirus coevolution using DCA. The statistical significance (Fisher's exact test) and specific overlap counts provide strong support, suggesting conserved structural constraints operate across evolutionary timescales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C64",
+      "C65"
+    ],
+    "result": "Lineage-defining sites of VOCs are enriched in concordantly evolving site pairs. Alpha VOC had 8/10 lineage-defining sites among concordantly evolving sites, Gamma had 7/12, and Omicron had 10/36. Statistical analysis showed all VOCs except Omicron had stronger signals of coordinated evolution for lineage-defining site pairs than other pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55, C57, C64-C65 demonstrate enrichment of VOC lineage-defining sites among concordantly evolving pairs. The statistical framework (rank comparison with permutations) is appropriate, and the finding holds across multiple VOCs. However, the Omicron exception (C64) and varying enrichment levels across VOCs suggest complexity in the relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C66",
+      "C67"
+    ],
+    "result": "For Alpha VOC, enrichment of concordantly evolving pairs among lineage-defining sites persists even when Alpha sequences are removed from the phylogeny, indicating the concordance is not due to clustering at VOC origin and suggesting VOC origin could have been facilitated by positive epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C66-C67 present a critical test distinguishing epistasis from clustering artifacts. The persistence of enrichment signal after pruning Alpha sequences (C66) provides strong evidence against clustering artifacts and supports the epistasis hypothesis (C7). This is a key result for inferring mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "For Beta, Delta, and Gamma VOCs, no enrichment of concordantly evolving pairs was detected after pruning the VOC clade. For Gamma, pairs of lineage-defining sites became depleted (p=0.0272), with the concordance signal mainly caused by reversions within the VOC clade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 show that unlike Alpha, other VOCs do not show epistasis-driven concordance when VOC sequences are removed. The Gamma depletion result (C69-C70) with visual confirmation in Figure 5 indicates the signal was due to within-clade reversions rather than pre-existing epistatic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Sites 440 and 681 (carrying Omicron mutations N440K and P681H) show discordant evolution, suggesting negative epistasis. Despite N440K's beneficial effects, its frequency in BA.1 was low (<75%) by end of 2021 while P681H reached 98%. The triple mutant N440K+P681H+N501Y increased to >98% prevalence by end of 2022, possibly due to compensatory mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C63 present an interesting case study of discordant evolution in Omicron. The discordant signal (C58) and frequency data (C60-C61) are well-supported. However, the inference of negative epistasis (C59) and the compensatory mutation explanation (C62, marked as speculation) require experimental validation. The cited weak negative epistasis between N440K and N501Y (C63) provides partial support but doesn't directly address the 440-681 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C62"
+    ],
+    "result": "Positive epistasis between accumulating mutations could have delayed assembly of advantageous mutation combinations in VOCs, with compensatory mutations potentially enabling later fixation of initially incompatible beneficial mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C62 present speculative interpretations (both marked as speculation in evidence_type) about epistasis delaying VOC assembly. While the discordant evolution data provide some support, the causal claim about 'delaying' assembly requires temporal dynamics analysis and experimental validation that are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The phylogenetic analysis used 7,348 representative sequences from 3.3 million GISAID genomes (downloaded 07.09.2021), clustered to allow up to 3 S-protein mutations per cluster. The dataset covered both neutral (Jan-Nov 2020) and adaptive (Dec 2020-May 2021) periods, with median sampling date of February 10, 2021. The final tree had 1,783 internal branches with 185 sites carrying \u22652 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 describe the dataset and phylogenetic construction. The methods are clearly documented with specific numbers and dates. The clustering approach and quality filtering are reasonable, though the choice of 3 mutations as clustering threshold is not justified. The temporal coverage claim (C77) appropriately cites supporting literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "SARS-CoV-2 evolution was largely neutral before November 2020 (except D614G fixation), but evidence for adaptive evolution accumulated since end of 2020. Multiple VOCs with increased fitness emerged (Alpha, Beta, Gamma, Delta), characterized by high divergence particularly at nonsynonymous sites, suggesting positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 provide background context about SARS-CoV-2 evolution, all supported by appropriate citations. These are well-established observations in the field that motivate the study. The claims accurately represent prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Eleven of 34 Omicron BA.1 lineage-defining S-protein mutations were characterized by strong purifying selection against ancestral amino acid changes, suggesting these mutations were previously individually deleterious. The high fitness of Omicron indicates a change in selection regime at these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 cite Martin et al. 2022 for the purifying selection observation (C16) and make reasonable inferences about individual deleteriousness (C17) and selection regime change (C18). The logic is sound: strong purifying selection implies deleteriousness, yet these mutations fixed in successful Omicron, suggesting changed selective context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Previous DCA studies of SARS-CoV-2 found limited epistasis in S-protein, likely due to low sequence divergence. However, DCA applied to related coronaviruses successfully predicted SARS-CoV-2 site variability, showing covariation in related viruses is relevant for predicting pathogen evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 accurately summarize prior work on DCA applications to SARS-CoV-2. The limitation of DCA for low-divergence sequences (C21-C22) is appropriately cited and provides methodological context for the current study's phylogenetic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Previous studies found epistatic interactions in SARS-CoV-2, including between N-protein NLS and S-protein RBD mutations. Experimental work showed Q498R mutation has minimal effect alone but increases ACE2 affinity 4-25 fold on N501Y background, with the double mutant showing up to 387-fold increase, enabling accumulation of destabilizing immune escape mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 cite prior experimental and computational work on epistasis. The Q498R/N501Y example (C27-C30) is well-documented experimentally and provides important context for interpreting the current phylogenetic findings. All claims are appropriately attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Functional effects of mutations at discordantly evolving sites are documented: N501Y increases ACE2 binding affinity up to 15-fold and infectivity; Q677H increases infectivity, syncytium formation, and vaccine escape; Q675H is predicted to increase furin binding; N440K increases ACE2 binding and affects antibody neutralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C89-C91 cite experimental or computational studies characterizing individual mutation effects. These provide functional context for the phylogenetic observations of discordant evolution. All claims are appropriately attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "NTD loop changes mediate Spike membrane fusion, cell entry, and extracellular stability. Signal peptide mutations can abrogate antibody neutralization by altering the cleavage site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 provide functional context for concordantly evolving sites in NTD loops and signal peptide, appropriately citing supporting literature. These help interpret the biological significance of detected coevolution patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "SARS-CoV-2 has adapted in a stepwise manner with multiple beneficial mutations accumulating rapidly at VOC origins, though the reasons are unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 states the motivating observation for the study. This is well-established in the field and accurately describes the VOC emergence pattern that the manuscript aims to explain through epistasis analysis.",
+    "result_type": "MINOR"
+  }
+]

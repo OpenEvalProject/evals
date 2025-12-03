@@ -1,0 +1,1942 @@
+{
+  "submission": {
+    "id": "f5f1028b-3c0d-416c-b078-77e9592d2b6a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:07:45.977124Z",
+    "updated_at": "2025-12-03T16:07:45.977124Z"
+  },
+  "content": [
+    {
+      "id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "submission_id": "f5f1028b-3c0d-416c-b078-77e9592d2b6a",
+      "content_type": "manuscript",
+      "content_text": "# S6K1 phosphorylates Cdk1 and MSH6 to regulate DNA repair\n\n## Authors\n\n- Adi Amar-Schwartz<sup>1</sup>\n- Vered Ben Hur<sup>1</sup>\n- Amina Jbara<sup>1</sup>\n- Yuval Cohen<sup>1</sup>\n- Georgina D Barnabas<sup>2</sup>\n- Eliran Arbib<sup>3</sup>\n- Zahava Siegfried<sup>1</sup> ([ORCID: 0000-0001-9649-7434](https://orcid.org/0000-0001-9649-7434))\n- Bayan Mashahreh<sup>1</sup> ([ORCID: 0000-0002-1667-1322](https://orcid.org/0000-0002-1667-1322))\n- Fouad Hassouna<sup>1</sup>\n- Asaf Shilo<sup>1</sup>\n- Mohammad Abu-Odeh<sup>3</sup>\n- Michael Berger<sup>3</sup> ([ORCID: 0000-0002-3469-0076](https://orcid.org/0000-0002-3469-0076))\n- Reuven Wiener<sup>1</sup>\n- Rami Aqeilan<sup>3</sup> ([ORCID: 0000-0002-6034-023X](https://orcid.org/0000-0002-6034-023X))\n- Tamar Geiger<sup>2</sup> ([ORCID: 0000-0002-9526-197X](https://orcid.org/0000-0002-9526-197X))\n- Rotem Karni<sup>1</sup> ([ORCID: 0000-0002-7552-9617](https://orcid.org/0000-0002-7552-9617)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology, the Institute for Medical Research Israel-Canada, Hebrew University-Hadassah Medical School Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))\n2. Department of Human Molecular Genetics and Biochemistry, Sackler Faculty of Medicine, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))\n3. Lautenberg Center for Immunology and Cancer Research, Department of Immunology and Cancer Research, the Institute for Medical Research Israel-Canada, Hebrew University-Hadassah Medical School Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mTORC1 substrate, S6 Kinase 1 (S6K1), is involved in the regulation of cell growth, ribosome biogenesis, glucose homeostasis, and adipogenesis. Accumulating evidence has suggested a role for mTORC1 signaling in the DNA damage response. This is mostly based on the findings that mTORC1 inhibitors sensitized cells to DNA damage. However, a direct role of the mTORC1-S6K1 signaling pathway in DNA repair and the mechanism by which this signaling pathway regulates DNA repair is unknown. In this study, we discovered a novel role for S6K1 in regulating DNA repair through the coordinated regulation of the cell cycle, homologous recombination (HR) DNA repair (HRR) and mismatch DNA repair (MMR) mechanisms. Here, we show that S6K1 orchestrates DNA repair by phosphorylation of Cdk1 at serine 39, causing G2/M cell cycle arrest enabling homologous recombination and by phosphorylation of MSH6 at serine 309, enhancing MMR. Moreover, breast cancer cells harboring RPS6KB1 gene amplification show increased resistance to several DNA damaging agents and S6K1 expression is associated with poor survival of breast cancer patients treated with chemotherapy. Our findings reveal an unexpected function of S6K1 in the DNA repair pathway, serving as a tumorigenic barrier by safeguarding genomic stability.\n\n## Introduction\n\nThe mTOR complex 1 (mTORC1) is a central regulator of cellular metabolism and biosynthesis, and is subjected to complex regulation by growth factors, nutrients, oxygen availability and cellular stress (Raught et al., 2004). When nutrients are available, mTORC1 phosphorylates its two main substrates, S6K1 (S6 Kinase 1) and 4E-BP1/2 (eukaryotic initiation factor 4E (eIF4E)-binding proteins 1 and 2), which are at the helm of cell growth, survival, translation, and proliferation (Mamane et al., 2006). Recent studies have pointed to a distinction between the mTORC1-S6K1 and the mTORC1-4EBP axes, arguing that the mTORC1-S6K1 axis regulates cell size and glucose metabolism with minor effects on translation and proliferation, while the mTORC1-4EBP axis appears to have a greater impact on translation, proliferation, and tumor formation (Dowling et al., 2010; Whittaker et al., 2010; Hsieh et al., 2010; von Manteuffel et al., 1997; Ben-Hur et al., 2013; Ruvinsky et al., 2005; Shima et al., 1998; Ruvinsky and Meyuhas, 2006; Pende et al., 2004).\n\nS6K1 is known for its ability to coordinate nutritional status and control cell growth (Ruvinsky et al., 2005; Shima et al., 1998; Magnuson et al., 2012) but its role in tumorigenesis remains elusive, even controversial. RPS6KB1, the gene encoding for S6K1, is located in chromosomal region 17q23 which is amplified in 8.8% of primary breast cancers (B\u00e4rlund et al., 2000). However, this amplification covers over 4 MB and contains nearly 50 genes (Sinclair et al., 2003) including Tbx2, PRKCA, Tlk2, TUBD1, and PPM1D, that are known for their correlation to breast cancer and/or contribution to oncogenic signaling (Sinclair et al., 2003; Olson et al., 2011; Abrahams et al., 2008; Lu et al., 2005; Ali et al., 2012; Groth et al., 2003; Xu et al., 2008; Monni et al., 2001), making estimation of the contribution of S6K1 amplification to the disease difficult. Our previous work had identified a cancer promoting alternative splicing switch that modulates between S6K1 long and short variants (Ben-Hur et al., 2013; Karni et al., 2007). While the short isoform of S6K1, which lacks kinase activity (termed here Iso-2), acts as an oncogenic driver and activates the mTORC1-4EBP axis, the long S6K1 variant (termed here S6K1) was shown to harbor tumor suppressive activity (Ben-Hur et al., 2013). This activity can only partially be explained by the known regulatory negative feedback loop of the Akt-mTORC1 signaling pathway mediated by S6K1 phosphorylation of the Insulin Receptor Substrate Protein 1 (IRS1) (Efeyan and Sabatini, 2010).\n\nThe mTORC1-S6K1 arm is best known for its role in nutrient-dependent signaling pathways underlying cell growth, and less for its role in DNA damage response (DDR). However, several reports have demonstrated that genotoxic stress regulates mTORC1 (Zhou et al., 2017). Sensing of DNA damage by mTORC1 is mediated through several pathways; Ras/MEK/ERK (Lai et al., 2010; Braunstein et al., 2009), ATM/LKB1/AMPK (Alexander et al., 2010) or other yet undiscovered mechanisms. mTOR inhibition has also been suggested to sensitize cancer cells to ionizing radiation (IR) or to interstrand cross-linkers (Albert et al., 2006; Cao et al., 2006; Shen et al., 2013; Bae-Jump et al., 2009). These reports suggest involvement of mTORC1 in DNA repair, though no formal proof has been established. Recently, it has been proposed that in response to double-strand breaks (DSBs), the mTORC1-S6K1 pathway transcriptionally regulates a key component of the Fanconi Anemia (FA) pathway ultimately reducing phosphorylated histone 2 A variant X (\u03b3-H2AX) (Shen et al., 2013), a well-known surrogate marker of DSBs (Bonner et al., 2008). It was also reported that the insulin\u2212IGF-1\u2212PI3K\u2212AKT pathway is implicated in DDR (Matsuoka et al., 2007) and S6K1, as well as Akt and other components of this pathway, were found to be phosphorylated on their ATM and ATR consensus sites in response to IR (Matsuoka et al., 2007). Finally, S6K1 itself was implicated in DDR. Cells from S6K1/S6K2 double knockout mice show increased DNA damage, without any stimulus, as detected by increased \u03b3-H2AX (Zhou et al., 2017).\n\nThe gene encoding for S6K1, RBS6KB1 is amplified in 8\u201310% of breast cancer tumors (B\u00e4rlund et al., 2000). However, we previously reported that the long kinase active isoform of S6K1 acts as a tumor suppressor in certain conditions when it is overexpressed while the short kinase-dead isoform promotes oncogenesis (Ben-Hur et al., 2013). These intriguing results are typical of genes that, on one hand, control an essential cellular process while, on the other hand, are an obstacle for certain cancer cells or reduce their fitness. BRCA1 and BRCA2 are good examples of genes whose loss promotes cancer development but also make the cancer cell vulnerable to DNA damage. Thus, we sought to examine if and how S6K1 is involved in the DNA damage response and in DNA damage repair. Using mass spectrometry analysis of proteins associated with S6K1, we identified interactions between S6K1 and components of the DNA repair machinery including; Proliferating Cell Nuclear Antigen (PCNA), MutS homolog 2 (MSH2), MutS homolog 6 (MSH6), Cyclin Dependent Kinase 1(Cdk1, also known as CDC2) and others. We demonstrate that the latter two (MSH6 and Cdk1) are direct substrates of S6K1. We show that S6K1 functions as a DNA damage checkpoint protein for both HRR and MMR mechanisms: Inducing G2/M cell cycle arrest by Cdk1 phosphorylation thus allowing HR repair and enhancing MMR by phosphorylating and activating MSH6. These findings suggest that the mTORC1-S6K1 axis may serve as an important path in modulating DDR to ensure genomic integrity during proliferation and upon exposure to increased DNA hazards.\n\n## Results\n\n### S6K1 protects cells from various DNA damaging agents\n\nSeveral reports have demonstrated that genotoxic stress regulates mTORC1 (B\u00e4rlund et al., 2000; Braunstein et al., 2009) and imply involvement of mTORC1 in resistance to DNA damage (Zhou et al., 2017; Albert et al., 2006; Cao et al., 2006; Shen et al., 2013). We set out to examine whether up-regulation of S6K1 expression protects cells from DNA damaging agents and confers resistance to chemotherapeutic drugs. To this end, we overexpressed either the full length active kinase S6K1 (S6K1) or the S6K1 short isoform (Iso-2) in S6K1/S6 K2 double knockout (S6K-/-) MEFs (Figure 1a and b). We compared viability and survival of these cells upon induction of DNA damage. Expression of S6K1 (but not Iso-2) rescued S6K-/- MEF cells from DNA damage induced cell death following treatment with either doxorubicin (Dox), \u03b3 irradiation, UV irradiation or neocarzinostatin (NCS) (Figure 1c\u2013j). Overexpression of S6K1 in MCF-10A cells protected, while its knockdown sensitized the cells to cell death following treatment with either Dox, \u03b3 irradiation, UV-irradiation, NCS or cisplatin (CDDP) (Figure 1\u2014figure supplement 1a-i). Moreover, inhibition of mTORC1 by rapamycin, inhibited the protective effect of S6K1 following Dox treatment (Figure 1k, Figure 1\u2014figure supplement 1k). These results suggest that S6K1 protects cells from different types of DNA damage in an mTORC1-dependent manner. Protection from DNA damage by S6K1 was accompanied by reduced histone H2AX serine 139 phosphorylation (\u03b3-H2AX), a surrogate marker for DSBs (B\u00e4rlund et al., 2000) while sensitization to DNA damaging agents following S6K1 knockdown was associated with higher levels of \u03b3-H2AX (Figure 1l and m, Figure 1\u2014figure supplement 1j). Under these experimental conditions we also observed reduced levels of cleaved caspase-3 and cleaved poly (ADP-ribose) polymerase 1)PARP-1(in cells overexpressing S6K1 (Figure 1l\u2013m, Figure 1\u2014figure supplement 1j). These results suggest that S6K1 confers resistance to various types of DNA damage.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig1-v1.jpg)\n\n**Figure 1.:** (a) Long (S6K1) and short (Iso-2) S6K1 isoform structure and domain organization with addition of Halo-tag (light blue ovals). Isoform Iso-2 lacks 6 out of 12 conserved regions of the kinase domain, a mTOR phosphorylation site at threonine 389 (T389), as well as the C terminal autoinhibitory domain (CTD). NLS (nuclear localization sequence), NTD (N terminal domain). (b) Western blot showing the expression of S6K1 in MEF wild type (WT), S6K-/- cells and S6K-/- cells transduced with retroviruses encoding either empty vector pBABE (pB(-)), S6K1 or Iso-2. (c,f,i) Trypan blue exclusion assay of MEF WT, S6K-/- and S6K-/- cells described in (b) treated with doxorubicin 8 \u03bcg/ml (DOX) for 24 hr (c) or 24 hr after either \u03b3 irradiation 5 Gy (f) or UVC 8 J/m2/s (i). Data represents means \u00b1 SD of six replicates. (d,e,g,h,j) Clonogenic survival assay of MEF WT, S6K-/- cells (d,g,h,j), and S6K-/- cells transduced with retroviruses encoding either empty vector pBABE (pB(-)), S6K1 or Iso-2 (e,g,h,j) treated with various concentrations of Dox (d,e), \u03b3 irradiation 1\u20135 Gy (g), UVC 6.5 J/m2/s (h) or various concentrations of neocarzinostatin (NCS) (j). Colonies were fixed and quantified after 14 days. Data represents means \u00b1 SD of at least three biological replicates. (k) Clonogenic survival assay of S6K-/- cells expressing either empty vector pBABE (pB(-))or S6K1. Cells were treated with various concentrations of doxorubicin (DOX) with and without 50 nM rapamycin (R). Data represents means \u00b1 SD of three biological triplicates. (l,m) Western blot analysis of MEF WT and S6K-/- cells (l) or cells described in (b) (m) 24 hours after irradiation with UVC 6.5 J/m2/s. Cleaved caspase 3 and \u03b3\u2212H2AX signals were quantified relative to GAPDH signal. * p<0.05, ** p<0.01, *** p<0.001. p values were calculated using Student\u2019s t-test (two-tailed). Data represents means \u00b1 SD of three biological triplicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Western blot showing the expression of S6K1 in MCF-10A cells transduced with retroviruses encoding either empty vector pBABE (pB(-)), S6K1, Iso-2 or empty vector mlp(-), S6K1-specific shRNAs (sh1, sh2). (b,c,f,g) Trypan blue exclusion assay of MCF-10A cells transduced with retroviruses encoding either empty vector pBABE (pB(-)), S6K1 or Iso-2 (b, f) or mlp(-), S6K1-specific shRNAs (sh1,sh2) (c, g) treated with either 8 mg/\u00b5l doxorubicin (DOX) for 24 hr (b,c) or 24 hr after exposure to UVC 8 J/m2/s (f,g). Data represents means \u00b1 SD of six replicates. (d,e,h) Clonogenic survival assay of MCF-10A cells over-expressing either S6K1 or Iso-2 (d,h) or MCF-10A cells expressing S6K1-specific shRNAs (sh1,sh2) (e,h). Cells were exposed to \u03b3 irradiation 1\u20135 Gy (d,e) or various concentrations of neocarzinostatin (NCS) (h). Colonies were fixed and quantified after 14 days. Data represents means \u00b1 SD of four replicates. (i) Clonogenic survival assay of MCF-10A cells transduced with the either empty vector pBABE (pB(-)), S6K1 or Iso-2 and treated with 10 mM cisplatin (CDDP) for 16 hr. Cells were seeded at either 3000 or 1500 cells/well. After 14 days, colonies were fixed and stained. Experiment was performed in triplicate. (j) Western blot analysis of MCF-10A cells transduced with retroviruses encoding either empty vector pBABE (pB(-), S6K1 or Iso-2 or mlp(-)), S6K1-specific shRNAs (sh1, sh2) 24 hr after irradiation with UVC 12 J/m2/s. (k) Western blot of U2OS cells transfected with either control Halo-tag vector (HT), S6K1 or Iso-2. Forty-eight hr after transfection the cells were either untreated (Control) or treated with either doxorubicin (DOX) (0.5 \u00b5g/ml) or doxorubicin and Rapamycin (100 nM) (Rapa +DOX). 3.5 hr after treatment cells were harvested and subjected to western blot. * p<0.05, ** p<0.01, *** p<0.001. p values were calculated using Student\u2019s t-test (two-tailed).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Kaplan-Meier survival plots of breast cancer patients treated with chemotherapy with relation to S6K1 expression in their tumors. Data using three different probe-sets from Affymetrix array are shown. (b) Kaplan-Meier survival plots of breast cancer patients not treated with chemotherapy with relation to S6K1 expression in their tumors. Data using three different probe-sets from Affymetrix array are shown. Data was taken from http://kmplot.com/analysis/. (c) Western blot showing the expression of S6K1 in four different breast cancer cell lines (BTB474, MCF7, SKBR3, and HCC70). (d,e) BTB474, MCF7, SKBR3, and HCC70 cells were exposed to either DMSO (vehicle), 25 mM cisplatin (CDDP) or 1 mg/ml doxorubicin (DOX) for 24 hr. Western-blot analysis (d) and trypan-blue exclusion assay (e) are shown. Data represents means \u00b1 SD of six replicates. *** p<0.001, comparing BTB474 cells to MCF7, SKBR3, or HCC70 cells. p values were calculated using Student\u2019s t-test (two-tailed).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a\u2013d) Western blot analysis of MCF-10A cells transduced with retroviruses encoding either empty vector pBABE (pB(-)), S6K1 or Iso-2 (a,b) or empty vector (mlp(-)), S6K1-specific shRNAs (sh1, sh2) (c,d). Cells were irradiated with either \u03b3-irradiation 5 Gray (a,c) or UVC 30 J/m2/s (b,d) and harvested 1 or 2 hr after irradiation. (e\u2013h) Western blot analysis of MEF S6K-/- cells and WT MEFs (g,h) or MEF S6K-/- cells transduced with retroviruses encoding either empty vector pBABE (pB(-)), S6K1 or Iso-2 (e,f). Cells were irradiated with either \u03b3-irradiation 5 Gray (e, g) or UVC 30 J/m2/s (f, h) and harvested 1 or 2 hr after irradiation. The quantitation is shown in a bar graph below each panel. Data represents means + SD of triplicates. *p<0.05 values were calculated using Student\u2019s t-test (two-tailed).\n\n### S6K1 expression is a marker for poor prognosis in breast cancer patients treated with chemotherapy and protects cells harboring RPS6KB1 amplification from chemotherapeutic damage\n\nIn order to determine if these findings reflect what has been reported in clinical data, we analyzed the correlation between S6K1 expression and probability of survival in two breast cancer patient populations: Patients treated with chemotherapy and patients that were never treated with chemotherapy. In breast cancer patients that were never exposed to chemotherapy, S6K1 expression had no correlation with probability of survival, while in the treated patient population S6K1 expression was a significant poor prognosis marker (Figure 1\u2014figure supplement 2a, b). These results led us to hypothesize that when S6K1 is up-regulated it confers drug resistance and reduces treatment efficacy resulting in reduced survival. Given that the gene encoding S6K1, RPS6KB1, is amplified in about 8\u201310% of breast cancer patients (B\u00e4rlund et al., 2000), we decided to examine the sensitivity of breast cancer cell lines, with and without RPS6KB1 amplification, to chemotherapeutic agents. Two breast cancer cell lines harboring RPS6KB1 amplification (MCF7, BT474) were compared to two breast cancer cell lines with low S6K1 expression (HCC70, SKBR3) for sensitivity to chemotherapeutic agents. Cells harboring an RPS6KB1 amplification were significantly more resistant to CDDP and doxorubicin treatments than cells with no amplification, as determined by trypan blue exclusion and Caspase 3 and PARP-1 cleavage, both markers of chemotherapy-induced apoptosis (Figure 1\u2014figure supplement 2c-e).\n\n### S6K1 does not affect ATM levels or phosphorylation state\n\nA previous study showed that S6K1/S6K2 signaling suppresses the levels of ATM by induction of miRNA RNA-18a and microRNA-421 and that mTOR/S6K inhibition or S6K1/2 knockout elevates ATM protein levels (Shen and Houghton, 2013). Thus, we examined ATM and p-ATM levels both in MEFs (WT, S6K-/-, and overexpression of S6K1 isoforms) and in MCF-10A cells (S6K1 knockdown by shRNAs, overexpression of S6K1 isoforms) before/after treatment with either gamma irradiation or UV (Figure 1\u2014figure supplement 3). We did not observe any change in ATM levels, due to a change in S6K1 levels, in any of the different cells or conditions we examined. We did detect, as expected, elevated ATM phosphorylation following DNA damage induction (Figure 1\u2014figure supplement 3). These results differ from what was reported by Shen and Houghton, 2013 regarding S6K1/2 knockout cells and suggest that, in our system, S6K1 effects on \u03b3-H2AX phosphorylation and DNA damage-induced cell death are not mediated by ATM signaling.\n\n### S6K1 interacts with DNA damage response components and phosphorylates Cdk1 and MSH6\n\nTo explore the possible mechanisms by which S6K1 protects cells from DNA damage, we sought to examine if S6K1 interacts directly with proteins involved in the DNA damage response and/or DNA repair. HEK293 cells were transfected with plasmids containing different S6K1 isoforms tethered to a halo-tag (HT) (Figure 1a, Materials and methods). Protein pulldown assays and two independent mass-spectrometry analyses were performed on these cells. As phosphorylation usually causes conformational changes of the substrate due to steric repulsion of the negatively charged phosphate groups, we hypothesized that the S6K1 kinase inactive variant (Ben-Hur et al., 2013), short isoform Iso-2, may have a stronger interaction with all putative substrates. We therefore included this isoform in the pulldown assay. Iso-2 has a truncated kinase domain and lacks the folded conformation created by the interaction with the auto-inhibitory C-terminal domain (CTD) (Magnuson et al., 2012), allowing availability of the N-terminal region for protein-protein interactions (Figure 1a). Combined proteomic analyses (described in detail in Materials and methods), identified approximately 400 putative interactors, of which 164 were identified by both mass-spectrometry pull-down assays (Figure 2\u2014figure supplement 1a, Supplementary file 1). As predicted, many more interactions were detected with the short isoform (Iso-2) than with S6K1 (Figure 2a, Supplementary file 1). Analysis of the S6K1 and Iso-2 bound proteins revealed proteins that participate in, and are responsible for, DNA repair, vesicular mediated transport and mitochondrial transport or mitochondrial electron transport (Supplementary file 1). These proteins included five known S6K1 interacting proteins from the literature (compiled in the BioGrid tool - https://thebiogrid.org/); S6K1, mTOR, UBL4A, XPO1, and HSP90AA1 (Figure 2\u2014figure supplement 1c, Supplementary file 2). A previous study that identified S6K1 and S6K2 interactors identified 21 high-scoring S6K1 interactions, of which two (S6K1, HSP90AA1) were also found in our study (Pavan et al., 2016; Figure 2\u2014figure supplement 1b, Supplementary file 2). We chose to focus on the set of proteins in the DNA damage response/repair module (Figure 2a). We validated the binding of several of these proteins to S6K1 by HT-pulldown followed by immunoblot (Figure 2b\u2013d) or reciprocal immunoprecipitation (Figure 2f, Figure 2\u2014figure supplement 1e-i). Indeed, Cdk1 and proteins of the MMR machinery, such as MutS\u03b1 complex (MSH2 and MSH6) and PCNA, were found to bind to either S6K1, Iso-2 or both and did not bind to HT control (Figure 2b\u2013f). This was observed in both HeLa cells, for proteins MSH2, PCNA, and MCM7 (Figure 2d) and HEK293 cells, for proteins MSH2 and PCNA (Figure 2b and c). Immunoblot of PCNA immunoprecipitated lysates showed interaction of PCNA with both S6K1 and Iso-2 in HEK293 cells (Figure 2f) and in HeLa cells (Figure 2\u2014figure supplement 1f, g). Immunoblot of MSH6 immunoprecipitated lysates showed interaction of MSH6 with Iso-2 in HeLa cells (Figure 2\u2014figure supplement 1h, i). Co-immunoprecipitation of Cdk1 only showed interaction with HT-Iso-2 (Figure 2e). It should be noted that the interaction with Iso-2 is stronger due to lack of steric repulsion caused by S6K1 phosphorylation. Taken together, these findings point towards a possible involvement of S6K1 in DDR signaling and/or DNA repair (Matsuoka et al., 2007; Polo and Jackson, 2011).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig2-v1.jpg)\n\n**Figure 2.:** (a) Venn diagram representing DNA damage response/repair proteins that bound specifically to HT-S6K1 isoforms in transfected HEK293 cells. Proteins marked in blue were validated by reciprocal immunoprecipitations. (b,c) Western blot of total lysate (L) and flow through (FT) of Halo-tag pulldown from HEK293 cells transfected with either Halo-tag expressing control vector (HT), HT-S6K1 (S6K1) or HT-Iso-2 (Iso-2) (b, left panel and c, upper panel). Western blot of Halo-tag pulldown from the same cells (b, right panel c, lower panel). (d) Western blot of total lysate (L) and flow through (FT) of Halo-tag pulldown from HeLa cells transfected with either Halo-tag expressing control vector (HT), HT-S6K1 (S6K1) or HT-Iso-2 (Iso-2) (upper panel). Western blot of Halo-tag pulldown from the same cells transfected with either Halo-tag expressing control vector (HT), S6K1 or Iso-2 (lower panel). (e) Western blot of total lysate from HEK293 cells co-transfected with either Halo-tag expressing control vector (HT), HT-S6K1 (S6K1) or HT-Iso-2 (Iso-2) and HA-Cdk1 (upper panel). Western blot of immunoprecipitation of lysates of these cells with anti-HA antibody (lower panel). (f). Western blot analysis of HEK293 cells transfected as described in b (left panel). Western blot of immunoprecipitation of lysates of these cells with anti-PCNA antibody (right panel).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Venn diagram representing the overlap of proteins identified in two independent proteomic analyses. Proteins bound to HT-S6K1 isoforms in HEK293 cells transfected with either HT, HT-S6K1, or HT-Iso-2 from Halo-tag pulldown assay were analyzed by Mass-spectrometry. The numbers represent the number of proteins which specifically bound to either of the HT-S6K1 isoforms and not to the HT control. Exp. 1 was performed using the conventional proteomic method (gel extracted samples) and Exp. 2 was performed using the \u2018on bead digestion\u2019 method. (b) Venn diagram representing the overlap of S6K1 interactors identified in this study (both S6K1 and Iso-2) and those reported in Pavan, et al. 2016 (Raught et al., 2004). Only high-scoring S6K1 interactions with SAINT probability (SP) >0.9 and/or containing potential phosphorylation site (RSRXXT/S) were used for comparison. (c) Venn diagram representing the overlap of S6K1 interactors identified in this study and BioGrid (Biological General Repository for Interaction Datasets https://thebiogrid.org/2). (d) Venn diagram representing the overlap of high-scoring S6K1 interactors identified in the Pavan study compared to BioGrid. (e) Western blot of total lysates (L) and flow through (FT) of HEK293 cells described used for proteomic analysis in Exp. 2 (triplicates). (f,g) HeLa cells transfected as described above were used for immunoprecipitation using PCNA antibody. Western blot analysis of total lysates (f) and immunoprecipitated proteins (g). (h,i) HeLa cells transfected as described above were used for immunoprecipitation using MSH6 antibody. Western blot analysis of total lysates (h) and immunoprecipitated proteins (i).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Non-radioactive in vitro kinase assay using recombinant His-S6K1 [T412E] and recombinant Uba5 (gift from the laboratory of Dr. Reuven Weiner). Reaction products were resolved by SDS-PAGE and analyzed by Western Blot using an antibody against the S6K1 phosphorylation motif (p-Akt substrate, RXXS) or an antibody to detect the recombinant proteins. (b) Protein sequence of Uba5. Arginines, serines and threonines are highlighted showing absence of an RXXS motif.\n\nMost of the DDR proteins are modified by phosphorylation upon DNA damage which facilitates their recruitment to damage sites and modulates their DNA repair activity (Polo and Jackson, 2011). Using the PhosphoNET browser (http://www.phosphonet.ca/default.aspx) we searched for putative S6K1 phosphorylation motifs RX(RXXS) (Ruvinsky and Meyuhas, 2006) in the validated S6K1 interacting proteins. Cdk1 and MSH6, but not PCNA, have multiple putative S6K1 phosphorylation sites (Supplementary file 3). To examine if Cdk1 and MSH6 are direct S6K1 substrates, we performed an in vitro kinase assay using full-length Cdk1 and truncated MSH6 recombinant proteins. The truncated MSH6 recombinant protein, comprising of amino acids 1\u2013718, contained the first three domains; the N-terminal disordered domain (NTR), mismatch binding domain and connector domain (Edelbrock et al., 2013). These regions have many predicted S6K1 phosphorylation sites (Supplementary file 3). The MSH6 NTR was also reported to regulate MMR downstream signaling of DNA damage mediators (Edelbrock et al., 2013; Gassman et al., 2011). We performed an in vitro kinase assay using radioactive 32P, incubating recombinant S6K1 alone or in combination with either Cdk1, MSH6 (Materials and methods) or ribosomal S6 protein (rpS6) as a positive control. In addition, we also performed this experiment, without radioactive 32P, using an antibody that recognizes the phosphorylation motif (RXXS) of the AGC kinase family to detect S6K1 specific phosphorylation. As shown by both radiolabeling and immunoblotting, S6K1 phosphorylated Cdk1 and MSH6 (Figure 3a and b). To eliminate the possibility of the presence of a contaminating protein, which may be acting as a kinase or substrate in our assay, we performed the in vitro kinase assay using recombinant Uba5 as a negative control. Uba5 does not contain any RXXS phosphorylation motifs but does have 26 serine and 19 threonine residues. In our assay S6K1 did not phosphorylate Uba5 (Figure 2\u2014figure supplement 2a, b). Co-transfection of MSH6 with S6K1 into HEK293 cells followed by MSH6 pull-down revealed enhanced phosphorylation of MSH6 on the RXXS motif, as shown by immunoblotting using the phospho-specific RXXS antibody (Figure 3c and d). Furthermore, co-transfection of Cdk1 with S6K1 into HEK293 cells followed by HA-Cdk1 pull-down revealed enhanced phosphorylation of Cdk1 on the RXXS motif, as shown by immunoblotting using the phospho-specific RXXS antibody (Figure 3e and f). It should be noted that phosphorylation levels are higher after treatment with UV (Figure 3e and f). These results suggest that Cdk1 and MSH6 are direct substrates of S6K1. Using mass-spectrometry on the recombinant proteins after an in vitro kinase assay, we detected Cdk1 phosphorylation on serine 39 and MSH6 phosphorylation on multiple serine and threonine residues (Supplementary file 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig3-v1.jpg)\n\n**Figure 3.:** (a) In vitro kinase assay using \u03b3-32P-ATP and recombinant His-S6K1 [T412E] with either recombinant His-Cdk1 (CDK1), or recombinant His-MSH6 (MSH6, 1-718aa fragment as described in Materials and methods) in the indicated combinations. First three panels show reaction products resolved by SDS-PAGE and visualized (the second and third panels are short and long exposures of the same membrane). The fourth panel shows the same membrane as the first panel probed with anti-Cdk1 antibody and detected by enhanced chemiluminescence. Nonspecific radioactive band is marked by <. (b) Non-radioactive in vitro kinase assay using recombinant His-S6K1 [T412E] with either recombinant GST-S6 (S6), His-Cdk1(Cdk1) or His-MSH6 (MSH6). Reaction products were resolved by SDS-PAGE and analyzed by Western Blot using an antibody against the S6K1 phosphorylation motif (p-Akt substrate, RXXS), or antibodies to detect the recombinant proteins. (c,d) Western blot analysis of HEK293 cells co-transfected with FLAG-MSH6 and S6K1 isoforms immunoprecipitated with anti-Flag beads. Phosphorylation of MSH6 was detected with p-Akt substrate antibody. Quantification of MSH6 phosphorylation is shown in the graph (d). (e,f) Western blot analysis of HEK293 cells co-transfected with HA-Cdk1 and S6K1 with and without UVC 30 J/m2 /s (UV) damage isoforms immunoprecipitated with anti-HA beads. Phosphorylation of Cdk1 was detected with p-Akt substrate antibody. Quantification of Cdk1 phosphorylation is shown in the graph (f). The experiment was repeated three times (biological replicate). ** p<0.01 p values were calculated using Student\u2019s t-test (two-tailed).\n\n### S6K1 enhances nuclear localization of MSH6 and reduces \u03b3-H2AX foci formation in the nucleus\n\nPrevious reports have shown the importance of post translational modifications in MutS\u03b1 cytoplasmic/nuclear shuttling Gassman et al., 2011; Christmann et al., 2002. The DDR proteins, which we identified as substrates of S6K1 (Figure 3), are mainly localized in the nucleus but can shuttle between the cytoplasm and the nucleus Hayes et al., 2009. We therefore examined the subcellular localization of S6K1 substrates upon induction of DNA damage. MCF-10A cells overexpressing S6K1, but not cells overexpressing Iso-2, showed enhanced nuclear localization of MSH6 and MSH2 after treatment with UV irradiation (Figure 4a and b). Although the trend was the same for MSH2 and MSH6, only changes in MSH6 subcellular localization were significant (Figure 4b). We did not detect any change in total MSH2 and MSH6 levels under these conditions in total cell extracts (Figure 4\u2014figure supplement 1a). In line with these results, cells with S6K1 knockdown showed reduced nuclear localization of MSH6 following UV irradiation (Figure 4c and d, Figure 4\u2014figure supplement 1b). These findings support a role for S6K1 in MMR regulation, by phosphorylation and nuclear translocation of MSH6.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig4-v1.jpg)\n\n**Figure 4.:** (a,b) MCF-10A cells transduced with either empty vector pBABE (pB(-)), S6K1 or Iso-2 were either untreated (control) or treated with UVC 30 J/m2 /sec (UV). Two hours after treatment cells were harvested, fractionated and subjected to western blot analysis. \u03b2-tubulin and SRSF1 served as a cytosol (C) and nuclear (N) markers, respectively. Quantification of the blot is shown in b. Data represents means \u00b1 SD of three experiments. (c,d) MCF-10A cells transduced with either empty vector (mlp(-)) or S6K1-specific shRNAs (sh1,sh2) were either untreated (control) or treated with UVC 30 J/m2 /s (UV). Two hours after treatment cells were harvested, fractionated and subjected to western blot analysis. \u03b2-tubulin and SRSF1 served as a cytosol (C) and nuclear (N) markers, respectively. Quantification of the blot is shown in d. Data represents means \u00b1 SD of three biological experiments. (e) U2OS cells transfected with either HT, HT-S6K1 (S6K1) or HT-Iso-2 (Iso-2) were either untreated (cont.) or exposed to UVC 30 J/m2 /sec (UV). After 2 hr, cells were fixed and stained with anti-Halo-tag fluorescence TMR Direct ligand and DAPI. Cells were visually scored using a fluorescent microscope for either nuclear staining (N) or cytoplasmic staining (C). (n=600 cells scored per transfection; 300 for control and 300 for UV treatment). p values were calculated using Student\u2019s t-test (two-tailed) from three biological replicate. (f) U2OS cells were transfected with HT-S6K1 and exposed to UVC 30 J/m2/s and fixed two hours later. Representative photograph of cells stained with anti-Halo-tag fluorescence TMR Direct ligand (red) and anti-\u03b3-H2Ax (green). Arrows point to S6K1 nuclear localization. Images were taken by Nikon-TL (\u00d720). * p<0.05, ** p<0.01. p Values were calculated using Student\u2019s t-test (two-tailed).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a,b) Western blot of MCF-10A cells transduced with either empty vector pBABE (pB(-)), S6K1, or Iso-2 (a) or MCF-10A cells transduced with either empty vector mlp (mlp(-)) or S6K1-specific shRNAs (sh1, 2) (b) with and without UVC 30 J/m2 /sec (UV) treatment. These are total lysates from the fractionation experiment shown in main Figure 4a and c. (c) MCF-10A cells transduced with either empty vector pBABE (pB(-)) or S6K1 were either untreated (control) or treated with UVC 30 J/m2 /sec (UV). Two hr after treatment, cells were harvested, fractionated, and subjected to western blot analysis. Caspase-2 and SRSF1 served as a cytosol (C) or nuclear (N) markers, respectively. (d) U2OS cells were transfected with control Halo-tag vector (HT), HT-S6K1 (HT-S6K1) or HT-Iso-2 (HT-Iso-2) and exposed to UVC 30 J/m2 /s. After 2 hr cells were fixed and stained with anti-Halo-tag fluorescence TMR Direct ligand (red) and DAPI. Images were taken by Nikon-TL (\u00d720). Representative images of experiment summarized in main Figure 4e. (e) Histogram representing the intensity of \u03b3-H2AX fluorescence in U2OS cells expressing HT, HT-S6K1 (S6K1) or HT-Iso-2 (Iso-2) positive cells related to experiment described in main Figure 4f. The intensity was calculated using the NIS-Elements AR software.\n\nS6K1 proteins exist as both long (p85) and short (p70) variants due to alternative translational start sites, created by an N\u2013terminal extension of 23 amino acids possessing a nuclear localization signal (NLS) (Grove et al., 1991; Fenton and Gout, 2011). Yet, S6K1 subcellular localization is mainly cytoplasmic with a few reports showing nucleo-cytoplasmic shuttling following adipogenic stimuli depending on mitogen activation or mTORC1 inhibition (Fenton and Gout, 2011; Rosner and Hengstschl\u00e4ger, 2011; Rosner et al., 2012). Subcellular fractionation of MCF-10A cells stably expressing S6K1 showed cytoplasmic localization of S6K1, and no visible nuclear localization of S6K1, both with and without DNA damage (Figure 4\u2014figure supplement 1c). In order to better visualize S6K1 subcellular localization following DNA damage, U2OS cells transfected with control vector (HT), S6K1 (HT-S6K1) or Iso-2 (HT-Iso-2) were stained with either HaloTag TMR-Direct or R110-Direct fluorescent ligands, following UV irradiation. Nuclear localization of S6K1 was enhanced following UV irradiation, while Halotag control vector or HT-Iso-2 subcellular localization did not change (Figure 4e, Figure 4\u2014figure supplement 1d). Co-staining of these cells for \u03b3-H2AX and S6K1 after UV induction showed inverse correlation between S6K1 expression and \u03b3-H2AX foci formation in the nucleus (Figure 4f, Figure 4\u2014figure supplement 1e). These results are in agreement with our previous observations; decreased levels of \u03b3-H2AX in S6K/- MEF cells overexpressing S6K1 after DNA damage (Figure 1l and m) and in MCF-10A cells overexpressing S6K1 after DNA damage (Figure 1\u2014figure supplement 1j). These results suggest that S6K1 nuclear localization may enhance DNA repair which, in turn, reduces \u03b3-H2AX.\n\n### S6K1 augments G2/M cell cycle arrest after DNA damage\n\nDNA damaging agents trigger G1/S, intra-S and G2/M cell-cycle checkpoints and cell cycle arrest, which is thought to increase the time available for DNA repair before replication or mitosis ensues (Jackson and Bartek, 2009). The Cdk1-cyclin B complex is the main target molecule of the G2/M cell cycle checkpoint (Smits and Medema, 2001). In light of the fact that we found that S6K1 binds to and phosphorylates Cdk1 on serine 39 (Figures 2 and 3, Supplementary file 4) we wanted to determine if this interaction/phosphorylation could induce DNA damage-mediated G2/M arrest (Yamane and Kinsella, 2005). In both MCF-10A and S6K-/- MEF cells re-expressing S6K1, an increase in the G2/M fraction was observed following \u03b3 irradiation treatment, compared to cells expressing either empty vector or Iso-2 (Figure 5a\u2013d, Figure 5\u2014figure supplement 1a, b). To better distinguish between the S/G2/M phases, we co-stained the cells with a mitosis-specific marker (p-H3 serine 10), late S phase marker (cyclin A) and G2 phase marker (cyclin B). The use of the cyclin A/B and p-H3 markers allowed us to distinguish between G2 and M fractions. It seems that S6K1/S6K2 are not essential for the G2/M checkpoint as S6K-/- MEFs are not completely defective in their G2/M arrest. However, S6K1 augments the G2 phase checkpoint to enhance cell cycle arrest upon DNA damage (Figure 5a\u2013d). These results strongly suggest that S6K1 participates in and affects genotoxic stress induced G2 arrest. To further examine the functional contribution of Cdk1 serine 39 phosphorylation by S6K1, we mutated this residue to alanine (39 A). S6K-/- MEFs over-expressing S6K1 transfected with Cdk1 39 A showed reduced G2/M arrest following \u03b3 irradiation, as compared to cells transfected with WT Cdk1 (Figure 5e and f). These results suggest that phosphorylation of Cdk1 on serine 39 is required for the induction of G2/M cell cycle arrest following induction of DNA damage by IR.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig5-v1.jpg)\n\n**Figure 5.:** (a\u2013d) MEF WT or S6K-/- cell populations transduced with retroviruses encoding either empty vector pBABE (pB(-)), S6K1, or Iso-2 were irradiated with ionizing radiation 2.5 Gy (IR) (a). Cells were stained with DAPI, anti-phospho-histone H3 Alexa488, anti-Cyclin B1 Alexa647 and anti-Cyclin A PE561. G1, S, and G2 separation displayed according to DAPI staining (b). Dual analysis of pH3 and DAPI distinguishes M phase (c). Plot was gated on S/G2/M. Dual analysis of cyclin A and cyclin B1 distinguishes between S, G2, M (d). (e,f) Cell cycle FACS analysis of S6K-/- cells expressing retroviruses encoding S6K1 transfected with HA-tagged WT CDK1 or HA-tagged mutant CDK1 39 A. Thirty-six hr after transfection cells were treated with IR 5 Gy. After 24 hr, the cells were subjected to FACS analysis (e). The percentage of cells in G1, S and G2/M are depicted in the graph(f). * p<0.05, p values were calculated using Student\u2019s t-test (two-tailed) from three biological replicate.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a,b) Cell cycle FACS analysis of MCF-10A cells transduced with retroviruses encoding either empty vector pBABE (pB(-)), S6K1 or Iso-2, 24 hr after UVC 12 J/m2/s treatment (a). The percentage of cells in G1, S, and G2/M are depicted in the graph (b).\n\n### S6K1 enhances homologous recombination, probably through Cdk1 phosphorylation\n\nAs the preferred repair pathway of double strand breaks in G2/M phase is homologous recombination (HR) (Kadyk and Hartwell, 1992; Johnson and Jasin, 2000; Ciccia and Elledge, 2010), we next sought to test whether S6K1 enhances HR using a system based on the combination of expression of the I-SceI endonuclease and a reporter cassette (Aparicio et al., 2014) (Figure 6a). U2OS cells expressing a DR-GFP reporter cassette containing mutant copies of GFP and the ISceI recognition sequence (here termed U2OS-DR-GFP cells) (Pierce et al., 1999; Shahar et al., 2012) were transfected with the ISceI endonuclease. ISceI expression induces DSBs, while HR of the two mutant GFP copies generates a functional GFP with an abolished ISceI site (Shahar et al., 2012). U2OS-DR-GFP cells were co-transfected with either HT-S6K1 or HT-Iso2 (or T7-tag S6K1/Iso-2) expression vector and the ISceI endonuclease. We observed increased GFP levels in the S6K1 expressing U2OS-DR-GFP cells as compared to control cells or Iso-2 expressing cells (Figure 6b) with no effects on cell cycle (Figure 6\u2014figure supplement 1a-d). The fact that Iso-2 failed to induce HR suggests that DNA repair induction is dependent on S6K1 kinase activity. We next knocked out S6K1 in the U2OS-DR-GFP cells by CRISPR/Cas9. Knockout of S6K1 reduced HR as compared to CRISPR control cells (Figure 6c). As a positive control we knocked down Rad51, an important component of HR, and as expected, these cells showed reduced HR (Figure 6d). In order to examine if phosphorylation of Cdk1 on serine 39 is crucial for HR, we transfected U2OS-DR-GFP cells with either WT Cdk1 or Cdk1 39 A. Cells transfected with Cdk1 39 A showed reduced HR, suggesting that this phosphorylation site is also important for proper HR (Figure 6e) with no change in cell cycle (Figure 6\u2014figure supplement 1e-h). Furthermore, when we introduced S6K1 to these cells there were no change in the HR effect (Figure 6f) with no change in cell cycle (Figure 6\u2014figure supplement 1i-l). Taken together, these results suggest that S6K1-mediated phosphorylation of Cdk1 on serine 39 is required to induce G2/M cell cycle arrest (Figure 5) and enable efficient HRR (Figure 6a\u2013f).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig6-v1.jpg)\n\n**Figure 6.:** (a) Schematic diagram of DSB reporter plasmid. SceGFP is a GFP gene that contains an I-SceI endonuclease site within the coding region. Cleavage of the I-SceI site in vivo and repair by HDR (Homologous Directed Repair) coupled by the downstream iGFP repeat results in GFP positive cells. (b) U2OS cells expressing DSB reporter plasmid (U2OS-DR-GFP) were co-transfected with ISceI and either Halo-tag empty vector (HT), HT-S6K1 or HT-Iso2. Western blot showing S6K1 expression (top panel). Cells were analyzed by FACS for GFP expression (bottom panel). (c) U2OS-DR-GFP cells knocked-out for S6K1 using CRISPR were transfected with ISceI. Western blot showing S6K1 expression (top panel). Cells were analyzed by FACS for GFP expression (bottom panel). (d) U2OS-DR-GFP cells transfected with either control siRNA (scr) or siRNA specific for Rad51 (siRad51) were co-transfected with ISceI. Western blot showing Rad51 expression (top panel). Cells were analyzed by FACS for GFP expression (bottom panel). (e) U2OS-DR-GFP cells were co-transfected with ISceI and WT CDK1 or mutant CDK1 39 A. Western blot showing HA tag expression (top panel). Cells were analyzed by FACS for GFP expression (bottom panel). (f) U2OS-DR-GFP cells were co-transfected with ISceI and S6K1 with either WT CDK1 or mutant CDK1 39 A. Western blot showing HA tag expression (top panel). Cells were analyzed by FACS for GFP expression (bottom panel). (g,h) Mismatch repair assay using MEF WT (WT) and S6K-/- cells (f) or S6K-/- cells stably expressing either empty vector (pB(-)), S6K1 or Iso-2 (g) transfected with EGFP heteroduplex plasmid. Forty-eight hr after transfection, cells were analyzed by FACS for GFP expression. (i) S6K-/- cells were co-transfected with either Flag-wild type MSH6 (WT), Flag-MSH6 mutant 309 A (309 A) or Flag-MSH6 mutant 309D (309D) and EGFP heteroduplex plasmid. Western blot showing Flag-tagged expression (top panel). Forty-eight hr after transfection, cells were analyzed by FACS for GFP expression (bottom panel). Data represents means \u00b1 SD of biological triplicates. *p<0.05 values were calculated using Student\u2019s t-test (two-tailed).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a\u2013l) Cell cycle FACS analysis of U2OS-DR-GFP cells expressing either HT, HT-S6K1 or HT-Iso2 (a-d, related to main Figure 6b), U2OS-DR-GFP cells expressing Cdk1 WT or Cdk1 39 A (e-h, related to main Figure 6e) or U2OS-DR-GFP co-expressing either Cdk1 WT or Cdk1 39 A with S6K1 (i-l, related to main Figure 6f). Cells were stained with DAPI, anti-phospho-histone H3 Alexa488, anti-Cyclin B1 Alexa647 and anti-Cyclin A PE561. G1, S, and G2 separation displayed according to DAPI staining (b,f,j). Dual analysis of pH3 and DAPI distinguishes M phase (d,h,l). Plots were gated on S/G2/M. Dual analysis of cyclin A and cyclin B1 distinguishess between S, G2, M (c,g,k).\n\n### S6K1 enhances mismatch DNA repair through MSH6 phosphorylation\n\nOur finding that S6K1 binds to MutS\u03b1 and PCNA, cofactors that function with the MMR complex (Jackson and Bartek, 2009; Moldovan et al., 2007; Figure 2b\u2013h, Figure 2\u2014figure supplement 1c-f), raised the possibility that S6K1 involvement in DNA repair is not restricted only to DSB repair but could also affect MMR. Furthermore, S6K1 phosphorylated MSH6 both in vitro and in cells (Figure 3) suggesting a direct regulation of this process. Accumulating evidence suggests that the MMR machinery also contributes to cell cycle arrest induced by DNA damage, as MutS\u03b1-deficient cells are defective in cell cycle arrest in response to multiple types of DNA damaging agents (Yan et al., 2001; Stojic et al., 2004). In order to determine if S6K1 is required for MMR, we employed an assay to measure MMR. In this assay, MMR activity is measured using a plasmid encoding heteroduplex enhanced green fluorescent protein (EGFP) that is expressed only if the G:T mismatch is correctly repaired (Zhou et al., 2009). We compared MMR activity of WT MEFs to S6K-/- MEFs. S6K-/- MEFs showed 10-fold lower level of MMR compared to WT cells (Figure 6g). To determine if introduction of S6K1 can restore MMR levels in S6K-/- MEFs, we transduced S6K-/- MEFs with either empty vector, S6K1 or Iso-2. S6K-/- MEF cells overexpressing S6K1 showed higher MMR activity compared to cells expressing either empty vector or Iso-2 (Figure 6h). Taken together, these results suggest that S6K1 promotes DNA repair, not only through HRR, but also through MMR. To examine if MSH6 phosphorylation by S6K1 can directly regulate MMR, we mutated S6K1 phosphorylation site serine 309 of MSH6 (Supplementary file 4) to either alanine (309 A) or aspartate (309D). While overexpression of WT MSH6 did not enhance MMR significantly, expression of the 309 A mutation inhibited MSH6 MMR activity and expression of the 309D mutation, which mimics the phosphorylated state, enhanced MSH6 MMR activity significantly (Figure 6i). To our knowledge this is the first demonstration that MSH6 phosphorylation on this site enhances its MMR activity. These results suggest that S6K1 directly enhances MMR activity by MSH6 phosphorylation on serine 309.\n\n### S6K1 phosphorylation of MSH6 309 affects its cellular localization\n\nIn order to further investigate the role of MSH6 phosphorylation by S6K1 at position 309, we transfected S6K-/- MEF cells with either Flag-MSH6 WT, Flag-MSH6 309 A or Flag-MSH6-309D mutants. We measure the localization of these constructs following UV irrigation. Nuclear localization of MSH6 309D was enhanced while MSH6 309 A was reduced following UV irradiation (Figure 7a and b). These results suggest that MSH6 phosphorylation on serine 309 is crucial for it\u2019s localization. Moreover, these results suggest that MSH6 phosphorylation on serine 309 enhances its MMR activity (Figure 6i) due to its enhanced nuclear localization (Figure 7a and b).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/79128/elife-79128-fig7-v1.jpg)\n\n**Figure 7.:** (a,b) MEF S6K -/- cells transfected with either Flag-MSH6 WT, MSH6 309 A or MSH6 309D were UV irradiated and fixed 2 hours later. Cells were stained using anti-Flag antibody and DAPI. Fluorescence was quantitated using NIS-element AR software. (c) Diagram depicting S6K1 entrance to the nucleus in response to DNA damaging agents. S6K1 phosphorylation of Cdk1 and MSH6 causes G2/M cell cycle arrest and affects DNA damage repair mechanisms.\n\n## Discussion\n\nThe mTORC1 signaling pathway regulates many cellular processes involved in cell growth, proliferation and survival which can promote tumorigenicity (Mamane et al., 2006; Hsieh et al., 2010; Ben-Hur et al., 2013; Dancey, 2010). Here, we identified a novel direct role for the mTORC1 substrate, S6K1, in regulating HRR and MMR through its interactions with two new putative substrates, Cdk1 and MSH6 (Figure 7c). This novel S6K1 function might explain how tumors of breast cancer patients with RPS6KB1 gene amplification may present as radiation and chemotherapy resistant.\n\n### Enhanced S6K1 expression protects cells from DNA damaging agents and correlates with poor survival of breast cancer patients treated with chemotherapy\n\nOur findings that S6K1 enhances cellular resistance to a variety of DNA insults, involving different types of damage response pathways and multiple repair mechanisms (Ciccia and Elledge, 2010), may have clinical relevance. Specifically, S6K1 knockdown or knockout sensitizes cells to treatments with UV radiation, NCS, IR, Dox, and cisplatin. Expression of S6K1 increased cell resistance to these genotoxic treatments and this was accompanied by reduced DNA damage, as detected by lower levels of \u03b3-H2AX, and reduced apoptosis, as detected by reduced cleaved caspase-3 and cleaved PARP1 (Figure 1 and Figure 1\u2014figure supplement 1). The prognostic value of this is supported by the finding that S6K1 expression level correlates with worse survival of breast cancer patients who received chemotherapy but not patients that were never treated with chemotherapy (Figure 1\u2014figure supplement 2a,b). Evidence for a causal relationship between S6K1 amplification and enhanced chemotherapy resistance is shown by the fact that breast cancer cell lines harboring RP6SKB1 amplification, and overexpression of S6K1, show enhanced resistance to chemotherapeutic agents compared to breast cancer cell lines with no amplification and low S6K1 expression (Figure 1\u2014figure supplement 2c-e).\n\nS6K2, the paralog enzyme, which is highly similar to S6K1 in its activities, might be involved in some of the interactions and activities we describe here for S6K1. S6K2 has been shown to share some common substrates with S6K1 (Pavan et al., 2016). Even though we cannot exclude the possibility that S6K2 mediates some of the described activities, the fact that S6K1 expression could rescue the phenotypes observed in S6K1 and S6K2 double knockout cells (Figures 1 and 4\u20146 and Figure 1\u2014figure supplement 1) and that S6K1 knockdown/knockout can mimic the phenotypes of the double knockout cells, suggests that S6K1, and not S6K2, is the prominent regulator of the DDR.\n\n### S6K1 interacts with DDR components and phosphorylates MSH6 and Cdk1\n\nExcept for several cytoplasmic substrates involved in translational regulation and signaling pathways (Laplante and Sabatini, 2012), very little is known about the cellular substrates of S6K1. Only recently, the first nuclear substrate of S6K1, H2B, was identified, connecting S6K1 with chromatin modulation in adipogenesis (Yi et al., 2016). Using a combination of pull-down assays and mass spectrometry, we have revealed novel and unexpected interactions between S6K1 and a number of DDR components (Figure 2, Figure 2\u2014figure supplement 1 and Supplementary file 1). A previous study by Pavan et al. identified several S6K1 and S6K2 interactors. However, none of the high-scoring S6K1 interactors reported were HRR or MMR components (Pavan et al., 2016). Among the low-scoring S6K1 interactors identified were PCNA and MSH6, but not CDK1 or MSH2. Three DDR related proteins identified in that study (PARP1, XRCC6, and XRCC5) bound only S6K2 but not S6K1 in an IP validation experiment (Pavan et al., 2016). We compared our S6K1 interactors with those identified in both Pavan et al. and a proteomic database and found surprisingly little overlap (Figure 2\u2014figure supplement 1). One explanation for this low overlap is that we analyzed, in addition to active S6K1, the interaction with a kinase-dead short isoform Iso-2 (p31), which is a naturally occurring kinase-dead version of S6K1. We also identified interactions with S6K1 K123 >A, a kinase-dead version of S6K1, which is identical in size and sequence to S6K1 and differs only in a lysine to alanine (K123A) substitution (Supplementary file 1). However, these results were not included in our final analysis. Both of these kinase-dead versions bind many more proteins than S6K1, possibly due to repulsion of S6K1 interactors by the negative charge added following phosphorylation. PCNA, one of S6K1 interactors, is known for its role in orchestrating many processes such as replication, DNA repair, cell cycle control and apoptosis Moldovan et al., 2007; Maga and Hubscher, 2003. Within the MMR system, PCNA is known to interact with MSH2 and MSH6 (Moldovan et al., 2007; De Biasio and Blanco, 2013). We show that two of the S6K1 interacting proteins, Cdk1 (Cdc2) and MSH6, are directly phosphorylated by S6K1 (Figure 3). Here, we assign S6K1 an additional nuclear function, regulation of DNA repair.\n\nIn addition to the in vitro phosphorylation assay (Figure 3a\u2013b), where S6K1 induced MSH6 phosphorylation, co-transfection of S6K1 with MSH6 enhanced its phosphorylation also in cells (Figure 3c\u2013d). We also observed phosphorylation of Cdk1 upon co-transfection with S6K1 in cells, which was enhanced upon treatment of cells with UV radiation (Figure 3e\u2013f).\n\n### Cdk1 phosphorylation at serine 39 coordinates G2/M cell cycle arrest and HRR\n\nWe show that S6K1 promotes G2/M cell cycle arrest (Figure 5, Figure 5\u2014figure supplement 1a,b) and increases HRR (Figure 6), the preferred error-free repair pathway in G2/M phase (Ciccia and Elledge, 2010; Farmer et al., 2005). The cell cycle is tightly regulated by Cdk-cyclin complexes. Specifically, the Cdk1-cyclinB complex controls the G2/M checkpoint (Johnson and Jasin, 2000). We further demonstrate that phosphorylation of Cdk1, by S6K1, correlates with G2/M cell cycle arrest following exposure IR (Figure 5). We provide the first evidence for Cdk1 phosphorylation on serine 39 by S6K1, and show that this phosphorylation enhances HRR, as its substitution to alanine inhibits HRR (Figure 6). Cdk1 is known to be phosphorylated on serine 39 by CK2 (Yamane and Kinsella, 2005), a vital player in DDR and cell survival (Edelbrock et al., 2013; Christmann et al., 2002; St-Denis and Litchfield, 2009), and this specific Cdk1 phosphorylation was also shown to be important for chemotherapy induced G2/M cell arrest (Yamane and Kinsella, 2005). According to our results, S6K1/S6K2 are not essential for the G2/M checkpoint (Figure 5a\u2013d). However, S6K1 augments the G2/M checkpoint to enhance cell cycle arrest upon DNA damage (Figure 5a\u2013d). This might be the mechanism by which S6K1 overexpression protects cells from DNA damage-induced cell death, while S6K1 knockout mice are viable with no obvious signs of DNA damage response problems. In addition, we do not exclude the fact that there are other kinases that phosphorylate Cdk1, such as CKII, and therefore it is reasonable that S6K-/- MEFs will still activate the G2/M checkpoint. The budding yeast Cdk1, Cdc28, has recently been shown to directly phosphorylate the essential homologous recombination repair proteins Rad51 and Rad52 (Lim et al., 2020). This connection, that probably occurs also in mammals, strengthens the suggestion that modulation of Cdk1 activity regulates HR. It is important to mention that previous studies have shown that Cdk1 can phosphorylate S6K1, inhibiting its activity (Kurabe et al., 2009). This raises the possibility that there is a positive feedback loop between Cdk1 and S6K1.\n\n### S6K1 enhances MMR by phosphorylation of MSH6 on serine 309\n\nThe MMR machinery signals directly to kinases such as ATR, CHK1 and CHK2 (Wang and Qin, 2003; Adamson et al., 2005; Lord and Ashworth, 2012), inducing several cascades in parallel, coordinating cell cycle checkpoints and DNA-repair activity (Stojic et al., 2004). MMR proteins not only signal to the repair mechanism but are also recruited by it; MSH2 and MSH6 have ATM and ATR phosphorylation motifs that undergo phosphorylation upon IR treatment (Matsuoka et al., 2007), and were shown to be recruited to sites of DNA damage upon UV irradiation (Chou et al., 2010). This evidence supports the existence of crosstalk between MMR proteins and DSB and SSB repair (Ciccia and Elledge, 2010) and illustrates MutS\u03b1 involvement in UV induced DDR. Here, we show that S6K1 interacts with MSH6 and MSH2 (MutS\u03b1), upregulating their nuclear localization and elevating MMR activity (Figures 2, 4 and 6 and Figure 2\u2014figure supplement 1). The MSH6 NTR contains a PIP box, three identified Nuclear Localization Signals (NLS) (Edelbrock et al., 2013; Gassman et al., 2011) and a PWWP domain for binding to chromatin or chromatin associated proteins (such as histones). We show S6K1 phosphorylation of MSH6 in that region on multiple serines (Figure 3 and Supplementary file 4). Some of these sites were reported to be mutated in familial colorectal cancer patients with germline MSH6 mutations and characterized by a low microsatellite instability phenotype. Moreover, point mutations in these residues were found to alter nuclear localization of MSH6 (Gassman et al., 2011; Kolodner et al., 1999). We show that S6K1 phosphorylates MSH6 on the serine cluster 252, 254, and 256, which is known to be phosphorylated also by CK2 (Edelbrock et al., 2013; Gassman et al., 2011; Kaliyaperumal et al., 2011) and serine 309 which is also phosphorylated by PKC (Polo and Jackson, 2011). To examine if serine 309 phosphorylation is directly involved in increased MMR activity observed in MEF S6K-/- cells overexpressing S6K1, we mutated this residue to either aspartate or alanine. Our results indicate that mutation of serine 309 to aspartate, which mimics the phosphorylated state, enhanced both MSH6 mediated repair activity (Figure 6i) and its nuclear localization (Figure 7). MutS\u03b1 phosphorylation by CK2 and PKC, has already been shown to be involved in its nuclear translocation, corroborating our findings of increased nuclear transport of MutS\u03b1 in S6K1 overexpressing MCF-10A cells and reduced nuclear localization following S6K1 knockdown (Figure 4a\u2013d). Although we detected S6K1 translocation into the nucleus following DNA damage (Figure 4e), we cannot rule out that the phosphorylation of MSH6 and CDK1 by S6K1 occurs in the cytoplasm, as these proteins shuttle between the cytoplasm and the nucleus.\n\nMMR-deficient cells are defective in cell cycle arrest in response to multiple types of DNA damaging agents Li, 2008. It is therefore reasonable to assume that S6K1 effects on cell cycle are mediated by both Cdk1 and MSH6 phosphorylation, two known proteins involved in MMR. S6K1 coordination of cell cycle arrest and DNA repair may also be attributed to phosphorylation of other proteins, in addition to MSH6 and Cdk1, which we identified as interacting with S6K1 but were not investigated further in this study. The fact that S6K1 protected from several types of DNA damaging agents suggests that, in addition to MMR and HHR, it might activate additional repair mechanisms. In conclusion, we show that S6K1 promotes both MMR and HRR activity (Figures 6\u20137) and both of these activities are dependent on S6K1 kinase activity (Figure 6e and i), revealing a novel role of S6K1 in DNA damage repair. These results suggest that activation of the mTOR pathway, following DNA damage, activates repair mechanisms through S6K1 kinase activity. Furthermore, it suggests that nutrient sensing is linked to the DNA repair machinery through the mTOR-S6K1 pathway (Figure 7).\n\n### Clinical implications\n\nIt is becoming increasingly clear that cancer drug resistance is not only mediated by genes that drive or facilitate malignancy but also by genes that maintain essential functions required by both normal and malignant cells. DNA repair is one of the best examples of a process essential for both normal and cancer cells, and as such, it is an Achilles heel for cancer cells. For example, mutations in the tumor suppressors BRCA1 and BRCA2, on one hand, cause enhanced susceptibility to development of breast and ovarian cancers, but on the other hand, tumors in mutant BRCA1 and BRCA2 carriers are extremely sensitive to DNA damaging drugs and to PARP inhibitors that eliminate their only functioning DNA repair arm (Magesa et al., 2000; Yin and Shen, 2008).\n\nRPS6KB1 gene amplification and overexpression is reported in about 8\u201310% of breast tumors and other cancers and correlates with poor prognosis (Sinclair et al., 2003; Bostner et al., 2015). Further clinical investigation is needed in order to establish if RPS6KB1 amplification or activation is a predictive biomarker for intrinsic resistance to DNA damaging therapies such as chemotherapy and irradiation. Our results suggest that patients with RPS6KB1 amplification will not benefit from chemotherapy or irradiation treatments. Alternatively, breast cancer patients with low RPS6KB1 copy number might be hypersensitive to these treatments and will benefit the most. Moreover, our results predict that inhibition of S6K1 in patients with RPS6KB1 amplification might enhance their response to chemotherapy. Several reports support our findings demonstrating that genotoxic stress regulates mTORC1, and that blockage of the Akt-mTORC1-S6K1 axis sensitizes cancer cells and tumors to radiation or chemotherapy (Braunstein et al., 2009; Alexander et al., 2010; Albert et al., 2006; Shen et al., 2013). We previously showed that several tumor types overexpress short inactive isoforms of S6K1 at the expense of the long isoform (Ben-Hur et al., 2013; Karni et al., 2007). Since the short isoforms are kinase-dead and do not enhance DNA repair or G2/M arrest following DNA damage (Figures 5 and 6), we hypothesize that tumors that show elevated levels of short S6K1 isoforms and low levels of long S6K1 isoforms will be more sensitive to DNA damaging agents, and possibly will show synthetic lethality using chemotherapy with PARP inhibitors.\n\n## Materials and methods\n\n### Cell lines\n\nMCF-10A(human breast epithelial cell line, ATCC) cells were grown in DMEM/F12 medium supplemented with 5% (v/v) horse serum, 50 ng/ml epidermal growth factor (EGF), 10 \u03bcg/ml insulin, 0.5 \u03bcg/ml hydrocortisone, 100 ng/ml cholera toxin, penicillin and streptomycin81. MCF-7 (human breast epithelial cell line,ATCC), HEK293 (Human embryonal kidney cells, ATCC), HeLa(human cervix adenocarcinoma,ATCC), U2OS (human bone cell line, Prof. Michal Goldberg), MEF WT (mouse embryonic fibroblast, ATCC) and MEF S6K-/- cells were grown in DMEM with 10% (v/v) fetal calf serum (FCS), penicillin and streptomycin. MEF S6K-/- cells were described previously (Pende et al., 2004; Pierce et al., 1999). BTB474 (human breast Ductal Carcinoma cell line, ATCC), SKBR3 (human breast Adenocarcinoma cell line, ATCC) and HCC70 (human breast Ductal Carcinom cell line, ATCC) cells were grown in RPMI with 10% (v/v) fetal calf serum (FCS), penicillin and streptomycin. MEF S6K-/- and MCF-10A cells were transduced with pBABE-puro retroviral vectors encoding T7-tagged S6K1 isoforms as described (Ben-Hur et al., 2013). MLP-puro-shRNAs vectors, MCF-10A cell transductants were selected with puromycin (2 \u03bcg/ml) as described (Ben-Hur et al., 2013). The cell lines tested negative for mycoplasma contamination. Cells were authenticated by STR profiling.\n\n### Halo tag cloning and pull down assay\n\nPrimers were designed using the Flexi Vector primer design tool http://www.promega.com/resources/tools/flexi-vector-primer-design-tool/ and cloning was performed using Flexi cloning protocol (Promega). Briefly, using directional cloning with SgfI at the N terminal and PmeI at the C terminal, the PCR products were subcloned into SgfI and PmeI digested Flexi acceptor vector (pFN21A). Halo Tag empty vector (G6591) was used as a control. Pull down was performed as described in the Halo tag technical manual TM342 (Promega). Briefly, HEK293 or HeLa cells were plated at a density of ~2.5\u20133 x 106 cells per 100 mm plate (70% confluency). The next day cells were transfected with 19\u201324 \u00b5g of Halo tag-fused S6K1 isoform plasmids using linear PEI. Forty-eight hr post transfection cells were washed with 10 ml cold PBS, manually scraped with 10 ml cold PBS, centrifuged 14,000 g at 4 C\u00b0 for 10 minutes and the cell pellet was frozen overnight at \u201380 C\u00b0. Pellets were thawed with lysis buffer (50 mM Tris pH 7.5, 150 mM NaCl, 1% Triton X100, 1 mg/ml Na-deoxycholate) supplemented with protease inhibitor (Promega cat #G6521). The bait is covalently bound through HaloTag to the beads and therefore cannot be detected by blotting.\n\n### Mass spectrometry\n\nCell pellets were thawed in Lysis buffer (50 mM Tris pH 7.5, 150 mM NaCl, 1% NP-40 supplemented with protease inhibitor cocktail (Promega cat #G6521)) and incubated on ice for 15 min. Lysates were passed through a 25 gauge needle and centrifuged at 14,000 g for 5 min at 4 \u00b0C. Clear lysates were transferred to a fresh tube containing 200 \u00b5l of HaloLink resin and binding was performed for 1 hr at room temperature. The beads were centrifuged at 800 g for 3 minutes and washed three times with Wash buffer 1 (0.1M Tris-HCl, 150 mM NaCl and 0.05% NP-40) and then three times with Wash buffer 2 (0.1M Tris-HCl, 150 mM NaCl). Laemmli buffer was added and samples were separated using SDS-PAGE. After staining of the acrylamide gel with GelCode blue (Thermo Fisher) each lane was cut into 3 pieces according to protein size and analyzed separately by LC-MS/MS. Alternatively, on bead digestion was performed by incubating beads (HaloLink resin) with 0.4 \u00b5g sequencing grade modified trypsin in 2 M urea and 1 mM DTT for 2 hr at room temperature. Following eluate collection, beads were washed again with 5 mM iodoacetamide in 2 M urea and collected to the same tubes. Eluates were incubated overnight at room temperature to complete digestion. Peptides were then purified on C18 StageTips. LC-MS/MS analysis was performed on the EASY-nLC1000 UHPLC coupled to the Q-Exactive mass spectrometer through an EASY-Spray ionization source (Thermo Scientific). Each sample was analyzed with a 4-hr gradient using a 50 cm EASY-Spray column (Thermo Scientific; Dionex). Raw MS/MS files were analyzed with the MaxQuant software, the Andromeda search engine and the label-free quantification (LFQ) algorithm. To extract proteins with significantly differential binding, we compared the LFQ-intensities of the various samples using t-tests between each sample relative to its control (Halo Tag empty) (permutation-based FDR <0.05).\n\n### Treatment with chemotherapeutic agents, UV irradiation, and \u03b3 irradiation\n\nOne day after cells were seeded the plates were washed once with PBS, the PBS was removed and cells were irradiated as described in the figure legends (6.5\u201330\u00a0J/m2/sec UVC or 1\u20135 Gy \u03b3 irradiation) and harvested as indicated. For treatment with chemotherapeutic agents cells were treated with either Doxorubicin 1\u20136 mg/ml (Sigma, cat #D1515), NCS 1\u2013150 ng/ml (Sigma, cat #N9162,) or CDDP 10 \u03bcM (Sigma, cat #C2210000) as described in the figure legends.\n\n### Immunoblotting\n\nCells were lysed in Laemmli buffer (10% glycerol, 0.05 M Tris pH 6.8, 5% \u03b2-mercaptoethanol, 3% SDS) at 90 C\u00b0. Primary antibodies used - Santa Cruz: \u03b2-actin (dilution 1:200, cat #1616), GAPDH (dilution 1:1000, cat #25778), MSH2 (dilution 1:200, cat #365052), HA (dilution 1:1000, cat #7392). Novagen: T7 tag (dilution 1:5000, cat #69522\u20134). BD Transduction Laboratories: Total S6K1-anti-p70 (dilution 1:250, cat #611261), MSH6 (dilution 1:250, cat #610919). Cell Signaling Technologies: phospho-S6K1 Thr389 (dilution 1:1000, cat #9205), p-S6 ser240/244 (dilution 1:1000, cat #2215), p-S6 ser235/236 (dilution 1:1000, cat #2211), total S6 (dilution 1:1000, cat #2217), PCNA (dilution 1:500, cat #2586), phospho-Akt substrate(RXRXXS/T) (dilution 1:500, cat #9614), cleaved caspase 3 (dilution 1:500, cat #9661), mTOR (dilution 1:1000, cat #2972), GFP (dilution 1:500, cat #2956), Cyclin A2 (dilution 1:1000, cat #4656), PARP1 (dilution 1:1000, cat #9542), phospho-histone H2A.X (Ser 139) (dilution 1:1000, cat # 9718), p-ATM(ser1981)(dilution 1:1000, cat #5883), ATM (dilution 1:1000, cat #2873). Promega: Halo Tag pAb (dilution 1:2000, cat #G9281). Sigma: \u03b2 tubulin (dilution 1:1000, cat #T8535), \u03b2-catenin (dilution 1:2000, cat #C7207). Millipore: MCM7 (dilution 1:1000, cat #MABE 188), p-CDK1 (dilution 1:900, cat #MABE 229). Abcam: CDK1(dilution 1:1000, cat #ab18), Caspase 2 (dilution 1:1000, cat #ab179520). Affinity biosciences: p-ATM(ser1987) (dilution 1:1000, cat #AF8410). SRSF1 (dilution 1:100, mAb AK96 culture supernatant). Secondary antibodies used were from Jackson ImmunoResearch (dilution 1:1000) Peroxidase AffiniPure Goat Anti-Mouse IgG (H+L) (cat #115-035-003), Peroxidase-AffiniPure Goat Anti-Rabbit IgG (cat #111-035-003) or Peroxidase-AffiniPure Donkey Anti-Goat IgG (H+L) (cat #705-035-003).\n\n### Immunoprecipitation (IP)\n\nHEK293 or HeLa cells were transfected with 24 \u00b5g plasmid DNA/100 mm plate of either Halo tag-S6K1 or Iso-2 plasmids and lysed 48 hours later in CHAPS buffer 84. A total of 800\u20131500 \u00b5g of total protein lysate was incubated overnight with 1 \u00b5g of either anti-PCNA, CDK1 or MSH6 antibody bound to 40 \u00b5l of 50% protein A+G sepharose beads or G-sepharose beads. After washing four times with CHAPS buffer, beads were incubated with 50 \u00b5l of 2 X Laemmli buffer, boiled and separated by SDS-PAGE. Secondary antibodies for immunoblotting after IP were: Rabbit true-blot (Rockland Laboratories, cat #18-88166-31) or mouse true-blot (Rockland Laboratories, cat #18-8817-31). These antibodies were used to avoid nonspecific bands caused by the heavy and light chain of the primary antibody. For IP of FLAG-MSH6, anti-FLAG beads were used (Sigma, cat #A2220).\n\n### Fluorescence microscopy\n\nCells were plated onto 12 well plate on coverslips. Halo tag TMR Direct Ligand (Promega, cat # G2991) was used for staining of Halo tag transfected fixed cells, according to manufacturer\u2019s protocol. Cells were co-stained using anti-phospho-histone H2A.X (Ser 139) (Cell Signaling, cat # 9718) and secondary antibody Goat anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488 (ThermoFisher #A11034). Cells were scored for \u2018nuclear staining\u2019 manually. Quantification was performed using NIS-Elements AR software.\n\n### Clonogenic assay\n\nMEF WT or MEF S6K-/- cells transduced with retroviruses encoding for S6K1 isoforms were seeded 800 cells/well in a six-well plate in triplicate. The next day, the cells were irradiated with either UV (6.5 J/m2/sec) or \u03b3 irradiation (1\u20135 Gy). After 14 days, colonies were fixed and stained with methylene blue as described previously (Karni et al., 2007) and the number of colonies in each well was calculated.\n\n### Trypan-blue exclusion assay\n\nCells were seeded 50,000 cells per well in a 12-well plate in triplicate. The following day media was replaced with media containing either 2\u20138 \u00b5g/ml of doxorubicin, 5 mM of CDDP or DMSO control or irradiated with either UV (8 J/m2/sec) or \u03b3 irradiation (5 Gy). After 48 hr, cells were trypsinized and spun down. Media and PBS wash were also collected. Cells were resuspended in HBSS and the percentage of dead cells was determined by 0.4% trypan blue staining and BioRad cell counter.\n\n### Subcellular fractionation assay\n\nMCF-10A cells transduced with viruses expressing either empty vector (EV), S6K1, Iso-2 or S6K1 specific shRNA were seeded (5x105 cells per 60 cm plate). Twenty-four hs later, the cells were subjected to UV (30 J/m2/s) and after 2 hr trypsinized, washed with cold PBS and centrifuged (1500 rpm for 5 min). The cells were resuspended in CE buffer (Hepes 10 mM, MgCl2 1.5 mM, KCl 10 mM) and incubated for 5 min on ice. Subsequently, cells were resuspended in CE buffer containing 0.2% NP-40, incubated for 5 min on ice and centrifuged at 4 \u00b0C (6500 rpm for 3 min). The supernatant was collected (CE) and the pellets were resuspended in NE buffer (Hepes 20 mM, MgCl2 1.5 mM, NaCl 420 mM, EDTA 0.2 mM and 25% glycerol). Next the tubes containing NE buffer were vortexed at maximal speed for 1 min and subjected to three freeze/thaw cycles. The supernatant was collected (NE). Both CE and NE lysates were analyzed by immunoblotting using the designated antibodies. SRSF1 and tubulin served as nuclear and cytoplasmic markers, respectively.\n\n### In vitro kinase assay\n\nIn vitro kinase assay was performed using recombinant proteins; S6K1 (University of Dundee, cat # DU784), S6 (Abnova, cat #H00006194-P01), CDK1 (Prospec, cat# pka-076) and MSH6 (aa1-718, as described in protein purification section). In brief, 300 ng of recombinant S6K1 was incubated alone or with 5 \u03bcg of either recombinant S6, CDK1 or MSH6 in 20 \u03bcl reaction buffer containing 20 \u03bcM cold ATP, 0.5 \u03bcCi \u03b3-32P-ATP, 30 mM MgCl2, 10 mM HEPES (pH 7.5), 50 mM EGTA, 10 mM \u03b2-glycerophosphate, 5 mM NaVO4, 50 mM \u03b2-mercaptoethanol, and 0.5 mM dithiothreitol (DTT). Reactions were shaken (1200 rpm) for 1 hr at 30 \u00b0C and neutralized by the addition of 18 \u03bcl 4\u00d7Laemmli buffer and heated for 5 min at 95 \u00b0C. Thirty \u03bcl of the final volume was separated by SDS-PAGE, transferred to nitrocellulose by western blotting and exposed to Typhoon FLA 7000 for detection of radioactive bands. After exposure, the membrane was probed with the indicated antibodies to visualize the recombinant proteins.\n\n### Protein purification\n\nHuman MSH6 (aa 1\u2013718) was cloned into pET-32a vector using primers: Forward 5'-GGCGCCATGGGATCCTCGCGACAGAGCACCCTGTA-3' and Reverse 5'-GATTCAAA GCGGCCGCCTAGCTGACTGTGTCAGAATCCA-3'. The proteins were expressed in Escherichia coli T7 Express (New England Biolabs) and grown in Luria-Bertani medium. Cultures were inoculated using 1% (v/v) of a saturated overnight culture and were grown at 37 \u00b0C to OD600 0.4\u20130.6. Proteins were induced at 16 \u00b0C overnight by addition of 150 \u03bcM isopropyl-\u03b2-D-thiogalactoside. Cells were harvested by centrifugation (6200\u00d7g, 15 min) and stored at \u221280 \u00b0C for later use. Proteins were purified by resuspending cell pellets in lysis buffer (50 mM sodium phosphate pH 8.0, 300 mM NaCl, 15 mM imidazole, and 5% glycerol) after adding 1 mM phenyl-methyl sulphonyl fluoride (PMSF). Cells were disrupted using a microfluidizer (Microfluidics), and the lysate was centrifuged at 68,900 g for 1 hr to remove cell debris. The lysates was subjected to Nickel gravity column using 5 ml His-Trap columns (GE Healthcare), and protein was eluted with 300 mM imidazole in column volumes. Fractions containing purified protein were pooled and dialyzed (20 mM Tris pH 7.8, 100 mM NaCl, and 5 mM \u03b2-mercaptoethanol) overnight at 4 \u00b0C. Fractions containing purified protein were concentrated and flash-frozen in liquid N2 before being stored at \u221280 \u00b0C.\n\n### Flow cytometry\n\nFor analysis of GFP and mCherry expression cells were harvested and centrifuged with PBS for 5 min at 1500\u00d7g. The pellets were resuspended in 1% BSA in PBS and subjected to flow cytometry (LSR-II Analyzer). Typically, 50,000 cells were counted.\n\nFor cell cycle analysis cells were harvested and centrifuged with cold PBS for 5 min at 1500\u00d7g. The cells were fixed with cold 100% ethanol and stored at \u201320 0C for several days. The cell pellets were incubated with RNase A 10 \u00b5g/ml (Sigma, cat #R5125) and stained with propidium iodide(PI) 5 \u00b5g/\u00b5l (Sigma, cat #P4170) and subjected to flow cytometry (LSR-II Analyzer). The analysis was performed using the FCS express 4 Flow cytometry software. For cyclin analysis cells were fixated using 1% PFA for 10 min in room temperature, then were permobilized using cold 100% methanol and stored in \u201320 \u00b0C for several days. The cell pellets were incubated for 30 min with PE anti-Cyclin A (1:500, BioLegend Cat: 644044), Alexa 488 anti pH3 (1:500, BioLegend Cat:650803) or Alexa 647 anti-Cyclin B1 (1:200, BioLegend Cat: 647906). DNA content were stained using DAPI.\n\n### Site-specific mutagenesis\n\nThe human CDK1 S39A mutation was introduced using Quickchange (Agilent, cat #600670) using specific primers: Forward 5'-AAAATCAGACTAGAAGCTGAAGAGGAAGGGGTT-3' and reverse 5'-AACCCCTTCCTCTTCAGCTTCTAGTCTGATTTT-3'. The mutated plasmids were confirmed by DNA sequencing of coding regions.\n\n### Mismatch repair assay\n\nThe mismatch repair assay was performed as described previously (Zhou et al., 2009) using plasmids pGEM5Z (+)-EGFP (Addgene, cat #65206) and p189 (Addgene, cat #65207). Cells were transfected using TransIT-X2 transfection reagent (Mirus, cat# MIR6000). In order to control for transfection efficiency cells were co-transfected with a plasmid expressing mCherry (pmCherry-C1). The number of GFP positive cells in each sample was divided by the number of mCherry positive cells. GFP and mCherry expression were measured using flow cytometry (LSR-II Analyzer).\n\n### Homologous recombination assay\n\nThe assay was performed as described previously using U2OS-DR-GFP cells and ISceI plasmid (Shahar et al., 2012). The ISceI plasmid, S6K1, Iso-2 and Cdk1 and its mutant plasmids were transfected into the cells using TransIT-X2 transfection reagent (Mirus, cat# MIR6000). siRNA oligonucleotides specific for Rad 51 were purchased from Sigma (ESIRNA HUMAN RAD51 EHU045521). The siRNA was transfected into cells using Lipofectamine 2000 (Invitrogen, cat #11668019). CRISPR/Cas9 system was used for knockout of S6K1 in U2OS-DR-GFP cells. The target gRNA oligonucleotide was subcloned into the pLenti CRISPR V2 plasmid and cells were transduced with lentivirus. The oligonucleotide sequence for the S6K1 guide (sgRPS6KB1) is 5'-CCATGAGGCGACGAAGGAGG-3'. In order to control for transfection efficiency we co-transfected with a plasmid expressing mCherry (pmCherry-C1). The number of GFP positive cells in each sample was divided by the number of mCherry positive cells. GFP and mCherry expression were measured using flow cytometry (LSR-II Analyzer).\n\n### Kaplan-Meier plot\n\nThe KM plots for breast cancer were created using Kaplan-Meier Plotter (kmplot.com) for the RPS6KB1 gene, using three Affymetrix probe sets (ID: 211578, 226660, 204171). The \u2018no chemotherapy\u2019 graph was created using \u2018systemically untreated patients\u2019 cohort category and the \u2018chemotherapy treated\u2019 graph was created using \u2018patients with the following systemic treatment\u2019 cohort category.\n\n### Statistical analysis\n\nAll data presented as histograms refer to a mean value \u00b1 SD of the total number (n=3\u20136) of independent biological experiments. An unpaired, two-tailed t test was used to determine p values.\n",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "ce3edcef-0bdd-48af-8263-be8a5b04bb18",
+      "submission_id": "f5f1028b-3c0d-416c-b078-77e9592d2b6a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79128.sa0](https://doi.org/10.7554/eLife.79128.sa0)\n\nThis study provides evidence for a novel function of S6K1 in DNA repair. The findings explain how amplification of RPS6KB1 gene, which encodes the S6K1 protein, in breast cancers is associated with a poor outcome after chemotherapy. The conclusions of the paper are well-supported by the experimental results. The proteomics data leading to the discovery of Cdk1 and Msh6 as targets of S6K1 are novel and important for the cancer research field.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79128.sa1](https://doi.org/10.7554/eLife.79128.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "897d71ca-6751-4305-9222-407df7340eda",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C1",
+      "claim": "S6K1 is a substrate of mTORC1 involved in regulation of cell growth, ribosome biogenesis, glucose homeostasis, and adipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The mTORC1 substrate, S6 Kinase 1 (S6K1), is involved in the regulation of cell growth, ribosome biogenesis, glucose homeostasis, and adipogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background information about S6K1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "5224ba59-3d84-4550-b4b7-5c97a31a60bd",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C2",
+      "claim": "mTORC1 inhibitors sensitize cells to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "This is mostly based on the findings that mTORC1 inhibitors sensitized cells to DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced as prior findings in the abstract.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "e5b9c374-d93a-4da5-afee-0de4f85b2afd",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C3",
+      "claim": "S6K1 regulates DNA repair through coordinated regulation of cell cycle, homologous recombination DNA repair, and mismatch DNA repair mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we discovered a novel role for S6K1 in regulating DNA repair through the coordinated regulation of the cell cycle, homologous recombination (HR) DNA repair (HRR) and mismatch DNA repair (MMR) mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "5f64c7dc-6265-4f13-a24e-b1ab3cc267f5",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C4",
+      "claim": "S6K1 phosphorylates Cdk1 at serine 39, causing G2/M cell cycle arrest enabling homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that S6K1 orchestrates DNA repair by phosphorylation of Cdk1 at serine 39, causing G2/M cell cycle arrest enabling homologous recombination and by phosphorylation of MSH6 at serine 309, enhancing MMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "077c697c-3df8-4328-8924-f97e5d7cbe44",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C5",
+      "claim": "S6K1 phosphorylates MSH6 at serine 309, enhancing mismatch repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that S6K1 orchestrates DNA repair by phosphorylation of Cdk1 at serine 39, causing G2/M cell cycle arrest enabling homologous recombination and by phosphorylation of MSH6 at serine 309, enhancing MMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "da569d32-72fb-4873-b032-3ae5253f20c3",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C6",
+      "claim": "Breast cancer cells harboring RPS6KB1 gene amplification show increased resistance to several DNA damaging agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, breast cancer cells harboring RPS6KB1 gene amplification show increased resistance to several DNA damaging agents and S6K1 expression is associated with poor survival of breast cancer patients treated with chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "46f3cc87-5dec-4e85-a91c-d39117617cc6",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C7",
+      "claim": "S6K1 expression is associated with poor survival of breast cancer patients treated with chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, breast cancer cells harboring RPS6KB1 gene amplification show increased resistance to several DNA damaging agents and S6K1 expression is associated with poor survival of breast cancer patients treated with chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by Kaplan-Meier survival analysis in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "8957c7ac-0366-4319-b58e-8c304b00df1c",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C8",
+      "claim": "mTORC1 phosphorylates S6K1 and 4E-BP1/2 when nutrients are available.",
+      "claim_type": "EXPLICIT",
+      "source": "When nutrients are available, mTORC1 phosphorylates its two main substrates, S6K1 (S6 Kinase 1) and 4E-BP1/2 (eukaryotic initiation factor 4E (eIF4E)-binding proteins 1 and 2), which are at the helm of cell growth, survival, translation, and proliferation (Mamane et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "1325ede0-bb28-458c-b14a-9fa5fb45b661",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C9",
+      "claim": "The mTORC1-S6K1 axis regulates cell size and glucose metabolism with minor effects on translation and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have pointed to a distinction between the mTORC1-S6K1 and the mTORC1-4EBP axes, arguing that the mTORC1-S6K1 axis regulates cell size and glucose metabolism with minor effects on translation and proliferation, while the mTORC1-4EBP axis appears to have a greater impact on translation, proliferation, and tumor formation (Dowling et al., 2010; Whittaker et al., 2010; Hsieh et al., 2010; von Manteuffel et al., 1997; Ben-Hur et al., 2013; Ruvinsky et al., 2005; Shima et al., 1998; Ruvinsky and Meyuhas, 2006; Pende et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as findings from recent studies with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "ce4fe5a6-ff8c-42f5-b6f1-5cbac3dcd9b6",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C10",
+      "claim": "The mTORC1-4EBP axis has a greater impact on translation, proliferation, and tumor formation than the mTORC1-S6K1 axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have pointed to a distinction between the mTORC1-S6K1 and the mTORC1-4EBP axes, arguing that the mTORC1-S6K1 axis regulates cell size and glucose metabolism with minor effects on translation and proliferation, while the mTORC1-4EBP axis appears to have a greater impact on translation, proliferation, and tumor formation (Dowling et al., 2010; Whittaker et al., 2010; Hsieh et al., 2010; von Manteuffel et al., 1997; Ben-Hur et al., 2013; Ruvinsky et al., 2005; Shima et al., 1998; Ruvinsky and Meyuhas, 2006; Pende et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as findings from recent studies with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "8fe1d41b-b866-4440-8bfe-5ecfded976d9",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C11",
+      "claim": "RPS6KB1 is located in chromosomal region 17q23 which is amplified in 8.8% of primary breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "RPS6KB1, the gene encoding for S6K1, is located in chromosomal region 17q23 which is amplified in 8.8% of primary breast cancers (B\u00e4rlund et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to B\u00e4rlund et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "21f16866-f9a3-44fa-9a41-b2cee1ea0637",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C12",
+      "claim": "The 17q23 amplification covers over 4 MB and contains nearly 50 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this amplification covers over 4 MB and contains nearly 50 genes (Sinclair et al., 2003) including Tbx2, PRKCA, Tlk2, TUBD1, and PPM1D, that are known for their correlation to breast cancer and/or contribution to oncogenic signaling (Sinclair et al., 2003; Olson et al., 2011; Abrahams et al., 2008; Lu et al., 2005; Ali et al., 2012; Groth et al., 2003; Xu et al., 2008; Monni et al., 2001), making estimation of the contribution of S6K1 amplification to the disease difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "14232558-df89-444a-bae9-42b905d669f0",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C13",
+      "claim": "The short isoform of S6K1 (Iso-2) lacks kinase activity and acts as an oncogenic driver.",
+      "claim_type": "EXPLICIT",
+      "source": "While the short isoform of S6K1, which lacks kinase activity (termed here Iso-2), acts as an oncogenic driver and activates the mTORC1-4EBP axis, the long S6K1 variant (termed here S6K1) was shown to harbor tumor suppressive activity (Ben-Hur et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from previous work with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "c36068f4-afaa-462d-ab48-9bc1b23e3a6f",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C14",
+      "claim": "The long S6K1 variant harbors tumor suppressive activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While the short isoform of S6K1, which lacks kinase activity (termed here Iso-2), acts as an oncogenic driver and activates the mTORC1-4EBP axis, the long S6K1 variant (termed here S6K1) was shown to harbor tumor suppressive activity (Ben-Hur et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from previous work with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "028fb4b0-57b4-43af-be03-8e4fe9f2c3ec",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C15",
+      "claim": "S6K1 phosphorylates IRS1 as part of a negative feedback loop in the Akt-mTORC1 signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This activity can only partially be explained by the known regulatory negative feedback loop of the Akt-mTORC1 signaling pathway mediated by S6K1 phosphorylation of the Insulin Receptor Substrate Protein 1 (IRS1) (Efeyan and Sabatini, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "3a7825f0-0b85-4a5a-8cf1-1529be22336b",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C16",
+      "claim": "Genotoxic stress regulates mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several reports have demonstrated that genotoxic stress regulates mTORC1 (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "c06ebd51-4eac-45cc-aaf6-f951fc8723a0",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C17",
+      "claim": "Sensing of DNA damage by mTORC1 is mediated through Ras/MEK/ERK, ATM/LKB1/AMPK, or other undiscovered mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensing of DNA damage by mTORC1 is mediated through several pathways; Ras/MEK/ERK (Lai et al., 2010; Braunstein et al., 2009), ATM/LKB1/AMPK (Alexander et al., 2010) or other yet undiscovered mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the pathways.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "ad159a5c-00c5-47e4-b012-5f01c29492e8",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C18",
+      "claim": "mTOR inhibition sensitizes cancer cells to ionizing radiation or interstrand cross-linkers.",
+      "claim_type": "EXPLICIT",
+      "source": "mTOR inhibition has also been suggested to sensitize cancer cells to ionizing radiation (IR) or to interstrand cross-linkers (Albert et al., 2006; Cao et al., 2006; Shen et al., 2013; Bae-Jump et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "d6c0ebf5-f1b6-4a8c-a1cc-f0d9240348db",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C19",
+      "claim": "The mTORC1-S6K1 pathway transcriptionally regulates a key component of the Fanconi Anemia pathway in response to double-strand breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been proposed that in response to double-strand breaks (DSBs), the mTORC1-S6K1 pathway transcriptionally regulates a key component of the Fanconi Anemia (FA) pathway ultimately reducing phosphorylated histone 2 A variant X (\u03b3-H2AX) (Shen et al., 2013), a well-known surrogate marker of DSBs (Bonner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "3abff36c-c683-4d75-b54b-0db82724c175",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C20",
+      "claim": "\u03b3-H2AX is a well-known surrogate marker of double-strand breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been proposed that in response to double-strand breaks (DSBs), the mTORC1-S6K1 pathway transcriptionally regulates a key component of the Fanconi Anemia (FA) pathway ultimately reducing phosphorylated histone 2 A variant X (\u03b3-H2AX) (Shen et al., 2013), a well-known surrogate marker of DSBs (Bonner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "bc7927d2-6f9f-40b0-8d3e-87aa73f0368f",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C21",
+      "claim": "S6K1 and other components of the insulin\u2212IGF-1\u2212PI3K\u2212AKT pathway are phosphorylated on their ATM and ATR consensus sites in response to ionizing radiation.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also reported that the insulin\u2212IGF-1\u2212PI3K\u2212AKT pathway is implicated in DDR (Matsuoka et al., 2007) and S6K1, as well as Akt and other components of this pathway, were found to be phosphorylated on their ATM and ATR consensus sites in response to IR (Matsuoka et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "5320e8c6-9b13-48ef-b7a9-3c6aa9c4da37",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C22",
+      "claim": "Cells from S6K1/S6K2 double knockout mice show increased DNA damage as detected by increased \u03b3-H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells from S6K1/S6K2 double knockout mice show increased DNA damage, without any stimulus, as detected by increased \u03b3-H2AX (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "634203ad-e4bf-45f7-8de4-9446cdf3e26a",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C23",
+      "claim": "RPS6KB1 is amplified in 8\u201310% of breast cancer tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene encoding for S6K1, RBS6KB1 is amplified in 8\u201310% of breast cancer tumors (B\u00e4rlund et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "3456a593-5ffc-4dcd-bfed-2ac18640d140",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C24",
+      "claim": "S6K1 interacts with PCNA, MSH2, MSH6, and Cdk1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mass spectrometry analysis of proteins associated with S6K1, we identified interactions between S6K1 and components of the DNA repair machinery including; Proliferating Cell Nuclear Antigen (PCNA), MutS homolog 2 (MSH2), MutS homolog 6 (MSH6), Cyclin Dependent Kinase 1(Cdk1, also known as CDC2) and others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from mass spectrometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "f4f827be-b922-4c2f-833c-e712263c13b6",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C25",
+      "claim": "MSH6 and Cdk1 are direct substrates of S6K1.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the latter two (MSH6 and Cdk1) are direct substrates of S6K1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "c9f64fa6-a7ef-4c95-a9c0-e1ea09b86798",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C26",
+      "claim": "S6K1 induces G2/M cell cycle arrest by Cdk1 phosphorylation, allowing homologous recombination repair.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that S6K1 functions as a DNA damage checkpoint protein for both HRR and MMR mechanisms: Inducing G2/M cell cycle arrest by Cdk1 phosphorylation thus allowing HR repair and enhancing MMR by phosphorylating and activating MSH6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "002bd7d0-23d5-4b19-8343-56b168dc818c",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C27",
+      "claim": "S6K1 enhances mismatch repair by phosphorylating and activating MSH6.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that S6K1 functions as a DNA damage checkpoint protein for both HRR and MMR mechanisms: Inducing G2/M cell cycle arrest by Cdk1 phosphorylation thus allowing HR repair and enhancing MMR by phosphorylating and activating MSH6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "a72d4b32-8aae-4ada-88f6-cecf0766c075",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C28",
+      "claim": "Expression of S6K1 rescued S6K-/- MEF cells from DNA damage induced cell death following treatment with doxorubicin.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of S6K1 (but not Iso-2) rescued S6K-/- MEF cells from DNA damage induced cell death following treatment with either doxorubicin (Dox), \u03b3 irradiation, UV irradiation or neocarzinostatin (NCS) (Figure 1c\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1c-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "0eaa3c02-674c-435b-9187-4f6469ce85ab",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C29",
+      "claim": "Expression of S6K1 rescued S6K-/- MEF cells from DNA damage induced cell death following treatment with \u03b3 irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of S6K1 (but not Iso-2) rescued S6K-/- MEF cells from DNA damage induced cell death following treatment with either doxorubicin (Dox), \u03b3 irradiation, UV irradiation or neocarzinostatin (NCS) (Figure 1c\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1c-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "9a95472a-93b2-48fd-ba03-3afd94e2d905",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C30",
+      "claim": "Expression of S6K1 rescued S6K-/- MEF cells from DNA damage induced cell death following treatment with UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of S6K1 (but not Iso-2) rescued S6K-/- MEF cells from DNA damage induced cell death following treatment with either doxorubicin (Dox), \u03b3 irradiation, UV irradiation or neocarzinostatin (NCS) (Figure 1c\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1c-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "2a7969f2-0d7d-47a8-8a85-dc7090c28e01",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C31",
+      "claim": "Expression of S6K1 rescued S6K-/- MEF cells from DNA damage induced cell death following treatment with neocarzinostatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of S6K1 (but not Iso-2) rescued S6K-/- MEF cells from DNA damage induced cell death following treatment with either doxorubicin (Dox), \u03b3 irradiation, UV irradiation or neocarzinostatin (NCS) (Figure 1c\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1c-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "4c38608c-5be0-4c7a-b599-f6c2fb234bb8",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C32",
+      "claim": "Overexpression of S6K1 in MCF-10A cells protected cells from DNA damage-induced cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of S6K1 in MCF-10A cells protected, while its knockdown sensitized the cells to cell death following treatment with either Dox, \u03b3 irradiation, UV-irradiation, NCS or cisplatin (CDDP) (Figure 1\u2014figure supplement 1a-i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 1a-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "482dbf5f-95db-46f1-965c-e76d81f87d20",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C33",
+      "claim": "Knockdown of S6K1 in MCF-10A cells sensitized cells to cell death following treatment with DNA damaging agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of S6K1 in MCF-10A cells protected, while its knockdown sensitized the cells to cell death following treatment with either Dox, \u03b3 irradiation, UV-irradiation, NCS or cisplatin (CDDP) (Figure 1\u2014figure supplement 1a-i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 1a-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "539b8715-46f9-4d80-af6b-afef0c110c08",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C34",
+      "claim": "Inhibition of mTORC1 by rapamycin inhibited the protective effect of S6K1 following doxorubicin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inhibition of mTORC1 by rapamycin, inhibited the protective effect of S6K1 following Dox treatment (Figure 1k, Figure 1\u2014figure supplement 1k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1k and Figure 1\u2014figure supplement 1k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "7e667024-1dd8-4f3b-96a1-3cbd63d7c624",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C35",
+      "claim": "S6K1 protects cells from different types of DNA damage in an mTORC1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that S6K1 protects cells from different types of DNA damage in an mTORC1-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "28fddeab-2caf-4f9e-92d7-b48a4c63bd5c",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C36",
+      "claim": "Protection from DNA damage by S6K1 was accompanied by reduced \u03b3-H2AX levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Protection from DNA damage by S6K1 was accompanied by reduced histone H2AX serine 139 phosphorylation (\u03b3-H2AX), a surrogate marker for DSBs (B\u00e4rlund et al., 2000) while sensitization to DNA damaging agents following S6K1 knockdown was associated with higher levels of \u03b3-H2AX (Figure 1l and m, Figure 1\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1l, m, and Figure 1\u2014figure supplement 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "1a9aa656-c595-408f-a6e3-e57429757647",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C37",
+      "claim": "Sensitization to DNA damaging agents following S6K1 knockdown was associated with higher levels of \u03b3-H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "Protection from DNA damage by S6K1 was accompanied by reduced histone H2AX serine 139 phosphorylation (\u03b3-H2AX), a surrogate marker for DSBs (B\u00e4rlund et al., 2000) while sensitization to DNA damaging agents following S6K1 knockdown was associated with higher levels of \u03b3-H2AX (Figure 1l and m, Figure 1\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1l, m, and Figure 1\u2014figure supplement 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "fcfa244d-d1f3-4cd3-af49-0cb7e602dbe3",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C38",
+      "claim": "Cells overexpressing S6K1 showed reduced levels of cleaved caspase-3 and cleaved PARP-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these experimental conditions we also observed reduced levels of cleaved caspase-3 and cleaved poly (ADP-ribose) polymerase 1)PARP-1(in cells overexpressing S6K1 (Figure 1l\u2013m, Figure 1\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1l-m and Figure 1\u2014figure supplement 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "067d24a4-4b64-4c9b-babc-f4c56fb4cd19",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C39",
+      "claim": "S6K1 confers resistance to various types of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that S6K1 confers resistance to various types of DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "cb4936e0-2814-4d48-8b60-9acfa5dd1151",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C40",
+      "claim": "S6K1 expression level correlates with worse survival of breast cancer patients who received chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, S6K1 knockdown or knockout sensitizes cells to treatments with UV radiation, NCS, IR, Dox, and cisplatin. Expression of S6K1 increased cell resistance to these genotoxic treatments and this was accompanied by reduced DNA damage, as detected by lower levels of \u03b3-H2AX, and reduced apoptosis, as detected by reduced cleaved caspase-3 and cleaved PARP1 (Figure 1 and Figure 1\u2014figure supplement 1). The prognostic value of this is supported by the finding that S6K1 expression level correlates with worse survival of breast cancer patients who received chemotherapy but not patients that were never treated with chemotherapy (Figure 1\u2014figure supplement 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Kaplan-Meier survival analysis in Figure 1\u2014figure supplement 2a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "a3f3de76-a01f-42d3-be8a-3398c5626d74",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C41",
+      "claim": "S6K1 expression level does not correlate with survival of breast cancer patients that were never treated with chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, S6K1 knockdown or knockout sensitizes cells to treatments with UV radiation, NCS, IR, Dox, and cisplatin. Expression of S6K1 increased cell resistance to these genotoxic treatments and this was accompanied by reduced DNA damage, as detected by lower levels of \u03b3-H2AX, and reduced apoptosis, as detected by reduced cleaved caspase-3 and cleaved PARP1 (Figure 1 and Figure 1\u2014figure supplement 1). The prognostic value of this is supported by the finding that S6K1 expression level correlates with worse survival of breast cancer patients who received chemotherapy but not patients that were never treated with chemotherapy (Figure 1\u2014figure supplement 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Kaplan-Meier survival analysis in Figure 1\u2014figure supplement 2a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "debf14de-b705-4e48-8673-25a5f7a1ab1c",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C42",
+      "claim": "Breast cancer cell lines harboring RPS6KB1 amplification show enhanced resistance to chemotherapeutic agents compared to breast cancer cell lines with no amplification and low S6K1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for a causal relationship between S6K1 amplification and enhanced chemotherapy resistance is shown by the fact that breast cancer cell lines harboring RP6SKB1 amplification, and overexpression of S6K1, show enhanced resistance to chemotherapeutic agents compared to breast cancer cell lines with no amplification and low S6K1 expression (Figure 1\u2014figure supplement 2c-e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 2c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "063afbe2-5a44-46f1-be60-75cae7a9439c",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C43",
+      "claim": "S6K1 does not affect ATM levels or phosphorylation state in the experimental system used.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any change in ATM levels, due to a change in S6K1 levels, in any of the different cells or conditions we examined. We did detect, as expected, elevated ATM phosphorylation following DNA damage induction (Figure 1\u2014figure supplement 3). These results differ from what was reported by Shen and Houghton, 2013 regarding S6K1/2 knockout cells and suggest that, in our system, S6K1 effects on \u03b3-H2AX phosphorylation and DNA damage-induced cell death are not mediated by ATM signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "85c86188-35da-433a-9e33-b6ae91a92c48",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C44",
+      "claim": "S6K1 effects on \u03b3-H2AX phosphorylation and DNA damage-induced cell death are not mediated by ATM signaling in the experimental system used.",
+      "claim_type": "EXPLICIT",
+      "source": "These results differ from what was reported by Shen and Houghton, 2013 regarding S6K1/2 knockout cells and suggest that, in our system, S6K1 effects on \u03b3-H2AX phosphorylation and DNA damage-induced cell death are not mediated by ATM signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "e33dec2d-5ca9-4f28-921e-be23f5f3f02a",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C45",
+      "claim": "Mass spectrometry analyses identified approximately 400 putative S6K1 interactors, of which 164 were identified by both assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined proteomic analyses (described in detail in Materials and methods), identified approximately 400 putative interactors, of which 164 were identified by both mass-spectrometry pull-down assays (Figure 2\u2014figure supplement 1a, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2\u2014figure supplement 1a and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "250c805f-ede7-43a6-8c52-2835e1d4b188",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C46",
+      "claim": "More interactions were detected with the short isoform (Iso-2) than with S6K1.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, many more interactions were detected with the short isoform (Iso-2) than with S6K1 (Figure 2a, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2a and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "f1f2e0c4-dcda-4ba9-a2b0-9680bde53192",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C47",
+      "claim": "S6K1 and Iso-2 bound proteins include proteins that participate in DNA repair, vesicular mediated transport, and mitochondrial transport or mitochondrial electron transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the S6K1 and Iso-2 bound proteins revealed proteins that participate in, and are responsible for, DNA repair, vesicular mediated transport and mitochondrial transport or mitochondrial electron transport (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on analysis of proteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "8acc08d9-83b6-4e65-994d-37e133ba11a2",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C48",
+      "claim": "Five known S6K1 interacting proteins from the literature (S6K1, mTOR, UBL4A, XPO1, and HSP90AA1) were identified in the proteomic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins included five known S6K1 interacting proteins from the literature (compiled in the BioGrid tool - https://thebiogrid.org/); S6K1, mTOR, UBL4A, XPO1, and HSP90AA1 (Figure 2\u2014figure supplement 1c, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2\u2014figure supplement 1c and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "0d359803-47a5-4249-8cc3-4a75493f32d1",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C49",
+      "claim": "Cdk1 and proteins of the MMR machinery (MutS\u03b1 complex and PCNA) bind to S6K1 or Iso-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Cdk1 and proteins of the MMR machinery, such as MutS\u03b1 complex (MSH2 and MSH6) and PCNA, were found to bind to either S6K1, Iso-2 or both and did not bind to HT control (Figure 2b\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2b-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "c722f87d-cda6-44a3-8a03-2a428b691cb7",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C50",
+      "claim": "Cdk1 and MSH6 have multiple putative S6K1 phosphorylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the PhosphoNET browser (http://www.phosphonet.ca/default.aspx) we searched for putative S6K1 phosphorylation motifs RX(RXXS) (Ruvinsky and Meyuhas, 2006) in the validated S6K1 interacting proteins. Cdk1 and MSH6, but not PCNA, have multiple putative S6K1 phosphorylation sites (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on bioinformatic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "7d8ef5f6-cd6e-41d8-a9f5-da26a02bd2ca",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C51",
+      "claim": "S6K1 phosphorylated Cdk1 and MSH6 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by both radiolabeling and immunoblotting, S6K1 phosphorylated Cdk1 and MSH6 (Figure 3a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "017771f9-8ff8-4dd3-9409-1edb06211837",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C52",
+      "claim": "S6K1 did not phosphorylate Uba5 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In our assay S6K1 did not phosphorylate Uba5 (Figure 2\u2014figure supplement 2a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2\u2014figure supplement 2a, b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "34e5f7dc-658f-401d-8e7d-f388dc143bdc",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C53",
+      "claim": "Co-transfection of MSH6 with S6K1 into HEK293 cells revealed enhanced phosphorylation of MSH6 on the RXXS motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-transfection of MSH6 with S6K1 into HEK293 cells followed by MSH6 pull-down revealed enhanced phosphorylation of MSH6 on the RXXS motif, as shown by immunoblotting using the phospho-specific RXXS antibody (Figure 3c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "8a26520a-27cf-402d-aa97-f6adf510d109",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C54",
+      "claim": "Co-transfection of Cdk1 with S6K1 into HEK293 cells revealed enhanced phosphorylation of Cdk1 on the RXXS motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, co-transfection of Cdk1 with S6K1 into HEK293 cells followed by HA-Cdk1 pull-down revealed enhanced phosphorylation of Cdk1 on the RXXS motif, as shown by immunoblotting using the phospho-specific RXXS antibody (Figure 3e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "73886df6-7b93-4a10-823a-ffc795b18939",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C55",
+      "claim": "Cdk1 phosphorylation levels are higher after treatment with UV.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that phosphorylation levels are higher after treatment with UV (Figure 3e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "183ca4ce-54b6-4842-8a02-f0e659388ed3",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C56",
+      "claim": "Cdk1 and MSH6 are direct substrates of S6K1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Cdk1 and MSH6 are direct substrates of S6K1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "6c010def-123c-4f23-ac4d-75a60dd144f2",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C57",
+      "claim": "S6K1 phosphorylates Cdk1 on serine 39.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mass-spectrometry on the recombinant proteins after an in vitro kinase assay, we detected Cdk1 phosphorylation on serine 39 and MSH6 phosphorylation on multiple serine and threonine residues (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on mass spectrometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "f42b23d0-58dd-46d7-82f0-8ee3632153d7",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C58",
+      "claim": "S6K1 phosphorylates MSH6 on multiple serine and threonine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mass-spectrometry on the recombinant proteins after an in vitro kinase assay, we detected Cdk1 phosphorylation on serine 39 and MSH6 phosphorylation on multiple serine and threonine residues (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on mass spectrometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "16ac7b91-797b-405b-903a-87bb7540ec50",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C59",
+      "claim": "MCF-10A cells overexpressing S6K1 showed enhanced nuclear localization of MSH6 and MSH2 after treatment with UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "MCF-10A cells overexpressing S6K1, but not cells overexpressing Iso-2, showed enhanced nuclear localization of MSH6 and MSH2 after treatment with UV irradiation (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "c10a98f3-61c5-4217-a8b0-c55f4b7dc97c",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C60",
+      "claim": "Only changes in MSH6 subcellular localization were significant, not MSH2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the trend was the same for MSH2 and MSH6, only changes in MSH6 subcellular localization were significant (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "57c88472-2f68-40bd-ad91-dbe95f64b262",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C61",
+      "claim": "S6K1 overexpression did not change total MSH2 and MSH6 levels in total cell extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect any change in total MSH2 and MSH6 levels under these conditions in total cell extracts (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "59accc48-d0bf-42e4-b9bb-870847e7419d",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C62",
+      "claim": "Cells with S6K1 knockdown showed reduced nuclear localization of MSH6 following UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these results, cells with S6K1 knockdown showed reduced nuclear localization of MSH6 following UV irradiation (Figure 4c and d, Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4c, d, and Figure 4\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "9a2a5c9e-a49e-4d97-9fff-734989324e6b",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C63",
+      "claim": "S6K1 has a role in MMR regulation by phosphorylation and nuclear translocation of MSH6.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support a role for S6K1 in MMR regulation, by phosphorylation and nuclear translocation of MSH6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "9bbaf55e-4b90-4286-89e2-4f303a4102ab",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C64",
+      "claim": "Nuclear localization of S6K1 was enhanced following UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear localization of S6K1 was enhanced following UV irradiation, while Halotag control vector or HT-Iso-2 subcellular localization did not change (Figure 4e, Figure 4\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4e and Figure 4\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "55aa60be-db87-4e37-937e-fc857160cf6d",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C65",
+      "claim": "There is an inverse correlation between S6K1 expression and \u03b3-H2AX foci formation in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-staining of these cells for \u03b3-H2AX and S6K1 after UV induction showed inverse correlation between S6K1 expression and \u03b3-H2AX foci formation in the nucleus (Figure 4f, Figure 4\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4f and Figure 4\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "cca752da-cea2-4093-aa6c-34139ac37589",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C66",
+      "claim": "S6K1 nuclear localization may enhance DNA repair which reduces \u03b3-H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that S6K1 nuclear localization may enhance DNA repair which, in turn, reduces \u03b3-H2AX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "3f0123f7-7a00-430b-b34b-342ab70cfc04",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C67",
+      "claim": "The Cdk1-cyclin B complex is the main target molecule of the G2/M cell cycle checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cdk1-cyclin B complex is the main target molecule of the G2/M cell cycle checkpoint (Smits and Medema, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "03964352-8117-4e2c-8930-70ed1100be92",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C68",
+      "claim": "An increase in the G2/M fraction was observed in MCF-10A and S6K-/- MEF cells re-expressing S6K1 following \u03b3 irradiation treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In both MCF-10A and S6K-/- MEF cells re-expressing S6K1, an increase in the G2/M fraction was observed following \u03b3 irradiation treatment, compared to cells expressing either empty vector or Iso-2 (Figure 5a\u2013d, Figure 5\u2014figure supplement 1a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5a-d and Figure 5\u2014figure supplement 1a, b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "1652faa1-69c9-4000-994a-0b3396d306db",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C69",
+      "claim": "S6K1 augments the G2 phase checkpoint to enhance cell cycle arrest upon DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems that S6K1/S6K2 are not essential for the G2/M checkpoint as S6K-/- MEFs are not completely defective in their G2/M arrest. However, S6K1 augments the G2 phase checkpoint to enhance cell cycle arrest upon DNA damage (Figure 5a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5a-d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "c91d3d76-b71f-45c9-97a6-a9de0757dc40",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C70",
+      "claim": "S6K1 participates in and affects genotoxic stress induced G2 arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that S6K1 participates in and affects genotoxic stress induced G2 arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "e761caff-0458-4fc5-9aa2-2a89d2a27b63",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C71",
+      "claim": "S6K-/- MEFs over-expressing S6K1 transfected with Cdk1 39A showed reduced G2/M arrest following \u03b3 irradiation compared to cells transfected with WT Cdk1.",
+      "claim_type": "EXPLICIT",
+      "source": "S6K-/- MEFs over-expressing S6K1 transfected with Cdk1 39 A showed reduced G2/M arrest following \u03b3 irradiation, as compared to cells transfected with WT Cdk1 (Figure 5e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "99d5b7b0-55a7-4bc9-853d-fad8259ec224",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C72",
+      "claim": "Phosphorylation of Cdk1 on serine 39 is required for the induction of G2/M cell cycle arrest following induction of DNA damage by ionizing radiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that phosphorylation of Cdk1 on serine 39 is required for the induction of G2/M cell cycle arrest following induction of DNA damage by IR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "171abef9-cc45-4eb0-9847-7d04427a2a9c",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C73",
+      "claim": "The preferred repair pathway of double strand breaks in G2/M phase is homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "As the preferred repair pathway of double strand breaks in G2/M phase is homologous recombination (HR) (Kadyk and Hartwell, 1992; Johnson and Jasin, 2000; Ciccia and Elledge, 2010), we next sought to test whether S6K1 enhances HR using a system based on the combination of expression of the I-SceI endonuclease and a reporter cassette (Aparicio et al., 2014) (Figure 6a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "e3ec9844-8974-44da-b7ae-8f362ce80b87",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C74",
+      "claim": "U2OS-DR-GFP cells co-transfected with S6K1 and ISceI showed increased GFP levels compared to control cells or Iso-2 expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed increased GFP levels in the S6K1 expressing U2OS-DR-GFP cells as compared to control cells or Iso-2 expressing cells (Figure 6b) with no effects on cell cycle (Figure 6\u2014figure supplement 1a-d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6b and Figure 6\u2014figure supplement 1a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "06c82381-6763-48da-95cf-7047d006c634",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C75",
+      "claim": "DNA repair induction is dependent on S6K1 kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that Iso-2 failed to induce HR suggests that DNA repair induction is dependent on S6K1 kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "f8d58947-3e7f-4dd6-ab38-d14a3608e928",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C76",
+      "claim": "Knockout of S6K1 in U2OS-DR-GFP cells reduced homologous recombination compared to CRISPR control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We next knocked out S6K1 in the U2OS-DR-GFP cells by CRISPR/Cas9. Knockout of S6K1 reduced HR as compared to CRISPR control cells (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "c0c60317-81f5-4c67-b87f-2b503ce792dd",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C77",
+      "claim": "Knockdown of Rad51 in U2OS-DR-GFP cells showed reduced homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control we knocked down Rad51, an important component of HR, and as expected, these cells showed reduced HR (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "aa52bd81-3acb-416f-8395-93475df263bd",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C78",
+      "claim": "U2OS-DR-GFP cells transfected with Cdk1 39A showed reduced homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to examine if phosphorylation of Cdk1 on serine 39 is crucial for HR, we transfected U2OS-DR-GFP cells with either WT Cdk1 or Cdk1 39 A. Cells transfected with Cdk1 39 A showed reduced HR, suggesting that this phosphorylation site is also important for proper HR (Figure 6e) with no change in cell cycle (Figure 6\u2014figure supplement 1e-h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6e and Figure 6\u2014figure supplement 1e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "7c67c054-e4b5-40c7-b23f-5ba782bae992",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C79",
+      "claim": "Phosphorylation of Cdk1 on serine 39 is important for proper homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells transfected with Cdk1 39 A showed reduced HR, suggesting that this phosphorylation site is also important for proper HR (Figure 6e) with no change in cell cycle (Figure 6\u2014figure supplement 1e-h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "05645f6b-dbf7-4d56-b3ab-f5c13f935d53",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C80",
+      "claim": "Introduction of S6K1 to U2OS-DR-GFP cells transfected with Cdk1 39A did not change the homologous recombination effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when we introduced S6K1 to these cells there were no change in the HR effect (Figure 6f) with no change in cell cycle (Figure 6\u2014figure supplement 1i-l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6f and Figure 6\u2014figure supplement 1i-l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "d8d580ba-7fc6-4c22-afe3-e8200a326d41",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C81",
+      "claim": "S6K1-mediated phosphorylation of Cdk1 on serine 39 is required to induce G2/M cell cycle arrest and enable efficient homologous recombination repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that S6K1-mediated phosphorylation of Cdk1 on serine 39 is required to induce G2/M cell cycle arrest (Figure 5) and enable efficient HRR (Figure 6a\u2013f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "9a98045c-3a8e-403d-a412-ca9e0175bade",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C82",
+      "claim": "S6K-/- MEFs show 10-fold lower level of mismatch repair compared to WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared MMR activity of WT MEFs to S6K-/- MEFs. S6K-/- MEFs showed 10-fold lower level of MMR compared to WT cells (Figure 6g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "b3c82732-70e5-4589-9833-9ea0c1c964dd",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C83",
+      "claim": "S6K-/- MEF cells overexpressing S6K1 showed higher mismatch repair activity compared to cells expressing either empty vector or Iso-2.",
+      "claim_type": "EXPLICIT",
+      "source": "S6K-/- MEF cells overexpressing S6K1 showed higher MMR activity compared to cells expressing either empty vector or Iso-2 (Figure 6h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "e5bc6905-0b04-4e95-9c11-3495a2ee55f7",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C84",
+      "claim": "S6K1 promotes DNA repair through both homologous recombination repair and mismatch repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that S6K1 promotes DNA repair, not only through HRR, but also through MMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "dca2e402-bce1-43fc-8593-161d5c42c835",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C85",
+      "claim": "Expression of MSH6 309A mutation inhibited MSH6 mismatch repair activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While overexpression of WT MSH6 did not enhance MMR significantly, expression of the 309 A mutation inhibited MSH6 MMR activity and expression of the 309D mutation, which mimics the phosphorylated state, enhanced MSH6 MMR activity significantly (Figure 6i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "5b3945df-6d98-4406-b047-87da652b5d55",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C86",
+      "claim": "Expression of MSH6 309D mutation enhanced MSH6 mismatch repair activity significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "While overexpression of WT MSH6 did not enhance MMR significantly, expression of the 309 A mutation inhibited MSH6 MMR activity and expression of the 309D mutation, which mimics the phosphorylated state, enhanced MSH6 MMR activity significantly (Figure 6i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "5a02c847-1605-4340-b3cc-cdc74dc4a110",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C87",
+      "claim": "This is the first demonstration that MSH6 phosphorylation on serine 309 enhances its mismatch repair activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge this is the first demonstration that MSH6 phosphorylation on this site enhances its MMR activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a claim by the authors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "bb52aa6d-ae3a-4ef2-bbb4-842f076b624f",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C88",
+      "claim": "S6K1 directly enhances mismatch repair activity by MSH6 phosphorylation on serine 309.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that S6K1 directly enhances MMR activity by MSH6 phosphorylation on serine 309.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "cab0baa4-7f51-46ca-bd16-227454be4690",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C89",
+      "claim": "Nuclear localization of MSH6 309D was enhanced while MSH6 309A was reduced following UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear localization of MSH6 309D was enhanced while MSH6 309 A was reduced following UV irradiation (Figure 7a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 7a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "ba3f7504-00c9-4162-9abb-89203286b9f6",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C90",
+      "claim": "MSH6 phosphorylation on serine 309 is crucial for its localization.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that MSH6 phosphorylation on serine 309 is crucial for it's localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "af596acc-9de7-4427-b757-964bd5d72fdc",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C91",
+      "claim": "MSH6 phosphorylation on serine 309 enhances its mismatch repair activity due to its enhanced nuclear localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these results suggest that MSH6 phosphorylation on serine 309 enhances its MMR activity (Figure 6i) due to its enhanced nuclear localization (Figure 7a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "77d31de5-7f8e-4d94-8b70-d0a50996021c",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C92",
+      "claim": "S6K1 has a novel direct role in regulating homologous recombination repair and mismatch repair through its interactions with Cdk1 and MSH6.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identified a novel direct role for the mTORC1 substrate, S6K1, in regulating HRR and MMR through its interactions with two new putative substrates, Cdk1 and MSH6 (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a summary of the main findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "3897cfdd-ac99-4a29-9397-0f5527ec5a3d",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C93",
+      "claim": "This novel S6K1 function might explain how tumors of breast cancer patients with RPS6KB1 gene amplification may present as radiation and chemotherapy resistant.",
+      "claim_type": "EXPLICIT",
+      "source": "This novel S6K1 function might explain how tumors of breast cancer patients with RPS6KB1 gene amplification may present as radiation and chemotherapy resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "27b5ad4e-120b-4f29-86f8-0632ce038bb1",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C94",
+      "claim": "S6K1 knockdown or knockout sensitizes cells to treatments with UV radiation, NCS, ionizing radiation, doxorubicin, and cisplatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, S6K1 knockdown or knockout sensitizes cells to treatments with UV radiation, NCS, IR, Dox, and cisplatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "af187fb1-76d4-4b78-ab9a-8a9253284508",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C95",
+      "claim": "Expression of S6K1 increased cell resistance to genotoxic treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of S6K1 increased cell resistance to these genotoxic treatments and this was accompanied by reduced DNA damage, as detected by lower levels of \u03b3-H2AX, and reduced apoptosis, as detected by reduced cleaved caspase-3 and cleaved PARP1 (Figure 1 and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "0ff5c539-efe0-418b-aa12-5a291ce4ad9b",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C96",
+      "claim": "Patients with RPS6KB1 amplification will not benefit from chemotherapy or irradiation treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that patients with RPS6KB1 amplification will not benefit from chemotherapy or irradiation treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "1e31fcb6-7b05-4af2-a7cc-d548eb43bc54",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C97",
+      "claim": "Breast cancer patients with low RPS6KB1 copy number might be hypersensitive to chemotherapy and irradiation treatments and will benefit the most.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, breast cancer patients with low RPS6KB1 copy number might be hypersensitive to these treatments and will benefit the most.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "a0bacca6-9901-4df1-8dc6-76830c8705a9",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C98",
+      "claim": "Inhibition of S6K1 in patients with RPS6KB1 amplification might enhance their response to chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our results predict that inhibition of S6K1 in patients with RPS6KB1 amplification might enhance their response to chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction based on the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "eafbedd3-e28d-4770-bb2a-16ff10c4b828",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C99",
+      "claim": "Blockage of the Akt-mTORC1-S6K1 axis sensitizes cancer cells and tumors to radiation or chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Several reports support our findings demonstrating that genotoxic stress regulates mTORC1, and that blockage of the Akt-mTORC1-S6K1 axis sensitizes cancer cells and tumors to radiation or chemotherapy (Braunstein et al., 2009; Alexander et al., 2010; Albert et al., 2006; Shen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "7c0fdd1e-d5fa-4d8b-a211-7767a9a968a0",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "claim_id": "C100",
+      "claim": "Tumors that show elevated levels of short S6K1 isoforms and low levels of long S6K1 isoforms will be more sensitive to DNA damaging agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the short isoforms are kinase-dead and do not enhance DNA repair or G2/M arrest following DNA damage (Figures 5 and 6), we hypothesize that tumors that show elevated levels of short S6K1 isoforms and low levels of long S6K1 isoforms will be more sensitive to DNA damaging agents, and possibly will show synthetic lethality using chemotherapy with PARP inhibitors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a hypothesis based on the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "40e71bcb-aa81-439f-b612-7d21bde01b64",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "S6K1 protects cells from various DNA damaging agents in an mTORC1-dependent manner. Expression of S6K1 (but not the kinase-dead Iso-2) rescued S6K-/- MEF cells from DNA damage-induced cell death following treatment with doxorubicin, \u03b3 irradiation, UV irradiation, or neocarzinostatin. Similar protective effects were observed in MCF-10A cells overexpressing S6K1, while S6K1 knockdown sensitized cells to these agents. Protection was accompanied by reduced \u03b3-H2AX levels and reduced apoptosis markers (cleaved caspase-3 and PARP-1), and was inhibited by rapamycin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C39, C94-C95 provide convergent evidence from multiple cell lines (MEF S6K-/-, MCF-10A), multiple DNA damaging agents (doxorubicin, \u03b3 irradiation, UV, NCS, cisplatin), and multiple assays (trypan blue exclusion, clonogenic survival, Western blot for \u03b3-H2AX and apoptosis markers). The rapamycin inhibition experiment (C34) supports mTORC1 dependence. The specificity for S6K1 (not Iso-2) supports kinase activity requirement. The data are internally consistent and well-replicated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "21cc814d-0dc7-4c28-8f82-1fca45879530",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "S6K1 expression correlates with poor survival in breast cancer patients treated with chemotherapy but not in untreated patients. Breast cancer cell lines harboring RPS6KB1 amplification show enhanced resistance to chemotherapeutic agents compared to cell lines without amplification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by Kaplan-Meier survival analysis using three different probe sets (Figure 1\u2014figure supplement 2a,b), showing differential correlation with chemotherapy treatment status. Claims C6-C7, C42 are supported by experimental data comparing cell lines with and without RPS6KB1 amplification (Figure 1\u2014figure supplement 2c-e). The clinical correlation is consistent with the experimental findings of chemoresistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "f4b93a0f-9854-4dfd-887a-a097ec2a1d75",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "S6K1 does not affect ATM levels or phosphorylation state in the experimental systems used, and S6K1 effects on \u03b3-H2AX phosphorylation and DNA damage-induced cell death are not mediated by ATM signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by Western blot data in Figure 1\u2014figure supplement 3 showing no change in ATM levels with S6K1 manipulation in multiple cell lines and conditions. This contradicts prior literature (Shen and Houghton, 2013) but is clearly demonstrated in the authors' system. The negative result is important for mechanistic understanding and is appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "61fae5fe-d1fc-4037-a0cf-ecab9955c307",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mass spectrometry analysis identified approximately 400 putative S6K1 interactors, with 164 identified by both assays. More interactions were detected with the kinase-dead short isoform (Iso-2) than with S6K1. S6K1 interacts with DNA repair proteins including PCNA, MSH2, MSH6, and Cdk1, as well as known interactors mTOR, UBL4A, XPO1, and HSP90AA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49, C24 are supported by mass spectrometry data (Figure 2\u2014figure supplement 1a, Supplementary file 1) and validated by co-immunoprecipitation experiments (Figure 2b-f). The greater interaction with Iso-2 is explained by the hypothesis that phosphorylation causes steric repulsion. The identification of known interactors validates the approach. The DNA repair protein interactions are novel and form the basis for subsequent mechanistic studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "S6K1 directly phosphorylates Cdk1 and MSH6 in vitro and in cells. Cdk1 and MSH6 have multiple putative S6K1 phosphorylation sites (RXXS motif). Mass spectrometry identified Cdk1 phosphorylation on serine 39 and MSH6 phosphorylation on multiple serine and threonine residues. S6K1 did not phosphorylate the negative control Uba5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C58, C25 are supported by multiple lines of evidence: bioinformatic prediction (PhosphoNET), in vitro kinase assays with radioactive 32P and phospho-specific antibodies (Figure 3a-b), co-transfection experiments in cells (Figure 3c-f), and mass spectrometry identification of specific phosphorylation sites (Supplementary file 3). The negative control with Uba5 (C52, Figure 2\u2014figure supplement 2) demonstrates specificity. The convergence of multiple independent methods strongly supports direct phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "667834fc-e5fb-466f-a95b-ca30cf90d6c9",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "S6K1 enhances nuclear localization of MSH6 (and to a lesser extent MSH2) following UV irradiation. MCF-10A cells overexpressing S6K1 showed enhanced nuclear localization of MSH6 and MSH2, with only MSH6 changes being statistically significant. S6K1 knockdown reduced MSH6 nuclear localization. Total MSH2 and MSH6 levels were unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 are supported by subcellular fractionation and Western blot analysis (Figure 4a-d, Figure 4\u2014figure supplement 1a-b). The specificity for MSH6 over MSH2 (C60) is appropriately noted. The lack of change in total protein levels (C61) indicates the effect is on localization, not expression. The bidirectional effects (overexpression vs. knockdown) strengthen the conclusion. The interpretation (C63) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "9873cb62-ecdf-4f56-9a56-8a5aadc86a6e",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "S6K1 nuclear localization is enhanced following UV irradiation, and there is an inverse correlation between S6K1 expression and \u03b3-H2AX foci formation in the nucleus. This suggests S6K1 nuclear localization may enhance DNA repair, reducing \u03b3-H2AX.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are supported by fluorescence microscopy data (Figure 4e-f, Figure 4\u2014figure supplement 1d-e). The nuclear translocation of S6K1 upon DNA damage (C64) is clearly demonstrated. The inverse correlation with \u03b3-H2AX foci (C65) is shown by co-staining and quantification. The interpretation (C66) is reasonable but remains somewhat speculative as it is correlative rather than mechanistic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "c8db7b69-597f-4255-83f4-3f5268993d81",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "S6K1 augments G2/M cell cycle arrest following DNA damage. An increase in G2/M fraction was observed in MCF-10A and S6K-/- MEF cells re-expressing S6K1 following \u03b3 irradiation. S6K1/S6K2 are not essential for the G2/M checkpoint but S6K1 augments it. Mutation of Cdk1 serine 39 to alanine reduced G2/M arrest, suggesting this phosphorylation is required for G2/M arrest following DNA damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 are supported by FACS analysis with multiple cell cycle markers (DAPI, pH3, cyclin A, cyclin B) in Figure 5a-f and Figure 5\u2014figure supplement 1a-b. The use of multiple markers to distinguish G2 from M phase strengthens the analysis. The Cdk1 S39A mutant experiment (C71-C72) provides functional evidence linking S6K1 phosphorylation of Cdk1 to cell cycle arrest. The conclusion that S6K1 augments but is not essential for the checkpoint (C69) is appropriately nuanced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "2c2644ca-af78-4c8d-9ea9-cc1bb7984038",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "S6K1 enhances homologous recombination (HR) in a kinase activity-dependent manner, likely through Cdk1 phosphorylation. U2OS-DR-GFP cells expressing S6K1 showed increased HR compared to control or Iso-2-expressing cells. S6K1 knockout reduced HR. Cdk1 S39A mutation reduced HR, and S6K1 overexpression could not rescue this defect, suggesting S6K1-mediated phosphorylation of Cdk1 on serine 39 is required for efficient HR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C81 are supported by the DR-GFP HR reporter assay (Figure 6a-f, Figure 6\u2014figure supplement 1). The specificity for S6K1 over Iso-2 (C75) demonstrates kinase dependence. The CRISPR knockout (C76) and Rad51 knockdown positive control (C77) validate the assay. The Cdk1 S39A experiments (C78-C80) provide strong evidence that this specific phosphorylation site is functionally important for HR. The epistasis experiment (C80) showing S6K1 cannot rescue Cdk1 S39A supports the model that Cdk1 acts downstream of S6K1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "694ca9a2-8fda-4687-bb44-8d8087b5d0f8",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "S6K1 enhances mismatch repair (MMR) through phosphorylation of MSH6 on serine 309. S6K-/- MEFs showed 10-fold lower MMR compared to WT cells. S6K1 (but not Iso-2) overexpression restored MMR activity. MSH6 S309A mutation inhibited MMR activity while S309D (phosphomimetic) enhanced it, demonstrating that phosphorylation at this site directly regulates MMR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C88 are supported by the heteroduplex EGFP MMR reporter assay (Figure 6g-i). The 10-fold difference between WT and S6K-/- cells (C82) is substantial. The rescue by S6K1 but not Iso-2 (C83) demonstrates kinase dependence. The MSH6 phosphomutant experiments (C85-C86) provide strong functional evidence that S309 phosphorylation directly regulates MMR activity. The claim of novelty (C87) cannot be fully evaluated without comprehensive literature review, but the functional data are convincing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "a07b7982-71d5-4098-8798-c0249ab0fae1",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MSH6 phosphorylation on serine 309 is crucial for its nuclear localization and enhances MMR activity through enhanced nuclear localization. MSH6 309D showed enhanced nuclear localization while 309A showed reduced localization following UV irradiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 are supported by fluorescence microscopy and quantification (Figure 7a-b). The phosphomimetic (309D) and non-phosphorylatable (309A) mutants show opposite effects on localization, consistent with phosphorylation regulating localization. The link between localization and MMR activity (C91) is reasonable given the data from both Figure 6i (MMR activity) and Figure 7a-b (localization), though the causal relationship is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "55ad9603-4712-4cbb-9da0-162128f8c79c",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "S6K1 has a novel direct role in regulating DNA repair through coordinated regulation of cell cycle, homologous recombination repair (HRR), and mismatch repair (MMR). S6K1 orchestrates DNA repair by phosphorylating Cdk1 at serine 39 (causing G2/M arrest enabling HR) and MSH6 at serine 309 (enhancing MMR).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C26-C27, C92 represent the main conclusions of the paper, synthesizing results from multiple experimental approaches. These claims are well-supported by the convergence of evidence from: (1) cell survival assays showing S6K1 protects from DNA damage, (2) proteomic identification of Cdk1 and MSH6 as interactors, (3) in vitro and cellular phosphorylation assays, (4) cell cycle analysis showing G2/M arrest, (5) HR reporter assays, (6) MMR reporter assays, and (7) localization studies. The mechanistic model is coherent and supported by functional data with phosphomutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "b75ce0a5-6ae7-462d-942d-fa78ab837c59",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The novel S6K1 function in DNA repair might explain radiation and chemotherapy resistance in breast cancer patients with RPS6KB1 amplification. Patients with RPS6KB1 amplification may not benefit from chemotherapy/irradiation, while those with low RPS6KB1 might be hypersensitive. Inhibition of S6K1 might enhance chemotherapy response in patients with amplification. Tumors with elevated short S6K1 isoforms and low long isoforms may be more sensitive to DNA damaging agents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93, C96-C98, C100 are speculative predictions based on the experimental findings. While the underlying experimental data are solid, these clinical predictions require prospective validation. The speculation is reasonable given the data showing: (1) S6K1 protects cells from DNA damage, (2) RPS6KB1 amplification correlates with poor survival in chemotherapy-treated patients, and (3) cell lines with amplification are more resistant. However, these remain hypotheses requiring clinical validation. The prediction about short vs. long isoforms (C100) is particularly speculative as it relies on prior work about isoform functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    },
+    {
+      "id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a",
+      "content_id": "b8a37c4b-1e86-42ec-87d9-c23b832c2370",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge claims about S6K1, mTORC1, DNA damage response, and related pathways from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C23, C67, C73, C99 represent established knowledge from prior literature, appropriately cited. These provide context for the current work. While the authors cannot be held responsible for the accuracy of all cited work, the citations appear appropriate and the background knowledge is generally well-established in the field. Claim C2 about mTORC1 inhibitors sensitizing cells to DNA damage is particularly relevant as it provides context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:45.977124Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a72d4b32-8aae-4ada-88f6-cecf0766c075",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "0eaa3c02-674c-435b-9187-4f6469ce85ab",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "9a95472a-93b2-48fd-ba03-3afd94e2d905",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "2a7969f2-0d7d-47a8-8a85-dc7090c28e01",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "4c38608c-5be0-4c7a-b599-f6c2fb234bb8",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "482dbf5f-95db-46f1-965c-e76d81f87d20",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "539b8715-46f9-4d80-af6b-afef0c110c08",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "7e667024-1dd8-4f3b-96a1-3cbd63d7c624",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "28fddeab-2caf-4f9e-92d7-b48a4c63bd5c",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "1a9aa656-c595-408f-a6e3-e57429757647",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "fcfa244d-d1f3-4cd3-af49-0cb7e602dbe3",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "067d24a4-4b64-4c9b-babc-f4c56fb4cd19",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "27b5ad4e-120b-4f29-86f8-0632ce038bb1",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "af187fb1-76d4-4b78-ab9a-8a9253284508",
+      "result_id": "40e71bcb-aa81-439f-b612-7d21bde01b64"
+    },
+    {
+      "claim_id": "cb4936e0-2814-4d48-8b60-9acfa5dd1151",
+      "result_id": "21cc814d-0dc7-4c28-8f82-1fca45879530"
+    },
+    {
+      "claim_id": "a3f3de76-a01f-42d3-be8a-3398c5626d74",
+      "result_id": "21cc814d-0dc7-4c28-8f82-1fca45879530"
+    },
+    {
+      "claim_id": "da569d32-72fb-4873-b032-3ae5253f20c3",
+      "result_id": "21cc814d-0dc7-4c28-8f82-1fca45879530"
+    },
+    {
+      "claim_id": "46f3cc87-5dec-4e85-a91c-d39117617cc6",
+      "result_id": "21cc814d-0dc7-4c28-8f82-1fca45879530"
+    },
+    {
+      "claim_id": "debf14de-b705-4e48-8673-25a5f7a1ab1c",
+      "result_id": "21cc814d-0dc7-4c28-8f82-1fca45879530"
+    },
+    {
+      "claim_id": "063afbe2-5a44-46f1-be60-75cae7a9439c",
+      "result_id": "f4b93a0f-9854-4dfd-887a-a097ec2a1d75"
+    },
+    {
+      "claim_id": "85c86188-35da-433a-9e33-b6ae91a92c48",
+      "result_id": "f4b93a0f-9854-4dfd-887a-a097ec2a1d75"
+    },
+    {
+      "claim_id": "e33dec2d-5ca9-4f28-921e-be23f5f3f02a",
+      "result_id": "61fae5fe-d1fc-4037-a0cf-ecab9955c307"
+    },
+    {
+      "claim_id": "250c805f-ede7-43a6-8c52-2835e1d4b188",
+      "result_id": "61fae5fe-d1fc-4037-a0cf-ecab9955c307"
+    },
+    {
+      "claim_id": "f1f2e0c4-dcda-4ba9-a2b0-9680bde53192",
+      "result_id": "61fae5fe-d1fc-4037-a0cf-ecab9955c307"
+    },
+    {
+      "claim_id": "8acc08d9-83b6-4e65-994d-37e133ba11a2",
+      "result_id": "61fae5fe-d1fc-4037-a0cf-ecab9955c307"
+    },
+    {
+      "claim_id": "0d359803-47a5-4249-8cc3-4a75493f32d1",
+      "result_id": "61fae5fe-d1fc-4037-a0cf-ecab9955c307"
+    },
+    {
+      "claim_id": "3456a593-5ffc-4dcd-bfed-2ac18640d140",
+      "result_id": "61fae5fe-d1fc-4037-a0cf-ecab9955c307"
+    },
+    {
+      "claim_id": "c722f87d-cda6-44a3-8a03-2a428b691cb7",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "7d8ef5f6-cd6e-41d8-a9f5-da26a02bd2ca",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "017771f9-8ff8-4dd3-9409-1edb06211837",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "34e5f7dc-658f-401d-8e7d-f388dc143bdc",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "8a26520a-27cf-402d-aa97-f6adf510d109",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "73886df6-7b93-4a10-823a-ffc795b18939",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "183ca4ce-54b6-4842-8a02-f0e659388ed3",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "6c010def-123c-4f23-ac4d-75a60dd144f2",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "f42b23d0-58dd-46d7-82f0-8ee3632153d7",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "f4f827be-b922-4c2f-833c-e712263c13b6",
+      "result_id": "c27c3f5f-3347-4f7a-9d3e-99983047b5a1"
+    },
+    {
+      "claim_id": "16ac7b91-797b-405b-903a-87bb7540ec50",
+      "result_id": "667834fc-e5fb-466f-a95b-ca30cf90d6c9"
+    },
+    {
+      "claim_id": "c10a98f3-61c5-4217-a8b0-c55f4b7dc97c",
+      "result_id": "667834fc-e5fb-466f-a95b-ca30cf90d6c9"
+    },
+    {
+      "claim_id": "57c88472-2f68-40bd-ad91-dbe95f64b262",
+      "result_id": "667834fc-e5fb-466f-a95b-ca30cf90d6c9"
+    },
+    {
+      "claim_id": "59accc48-d0bf-42e4-b9bb-870847e7419d",
+      "result_id": "667834fc-e5fb-466f-a95b-ca30cf90d6c9"
+    },
+    {
+      "claim_id": "9a2a5c9e-a49e-4d97-9fff-734989324e6b",
+      "result_id": "667834fc-e5fb-466f-a95b-ca30cf90d6c9"
+    },
+    {
+      "claim_id": "9bbaf55e-4b90-4286-89e2-4f303a4102ab",
+      "result_id": "9873cb62-ecdf-4f56-9a56-8a5aadc86a6e"
+    },
+    {
+      "claim_id": "55aa60be-db87-4e37-937e-fc857160cf6d",
+      "result_id": "9873cb62-ecdf-4f56-9a56-8a5aadc86a6e"
+    },
+    {
+      "claim_id": "cca752da-cea2-4093-aa6c-34139ac37589",
+      "result_id": "9873cb62-ecdf-4f56-9a56-8a5aadc86a6e"
+    },
+    {
+      "claim_id": "03964352-8117-4e2c-8930-70ed1100be92",
+      "result_id": "c8db7b69-597f-4255-83f4-3f5268993d81"
+    },
+    {
+      "claim_id": "1652faa1-69c9-4000-994a-0b3396d306db",
+      "result_id": "c8db7b69-597f-4255-83f4-3f5268993d81"
+    },
+    {
+      "claim_id": "c91d3d76-b71f-45c9-97a6-a9de0757dc40",
+      "result_id": "c8db7b69-597f-4255-83f4-3f5268993d81"
+    },
+    {
+      "claim_id": "e761caff-0458-4fc5-9aa2-2a89d2a27b63",
+      "result_id": "c8db7b69-597f-4255-83f4-3f5268993d81"
+    },
+    {
+      "claim_id": "99d5b7b0-55a7-4bc9-853d-fad8259ec224",
+      "result_id": "c8db7b69-597f-4255-83f4-3f5268993d81"
+    },
+    {
+      "claim_id": "e3ec9844-8974-44da-b7ae-8f362ce80b87",
+      "result_id": "2c2644ca-af78-4c8d-9ea9-cc1bb7984038"
+    },
+    {
+      "claim_id": "06c82381-6763-48da-95cf-7047d006c634",
+      "result_id": "2c2644ca-af78-4c8d-9ea9-cc1bb7984038"
+    },
+    {
+      "claim_id": "f8d58947-3e7f-4dd6-ab38-d14a3608e928",
+      "result_id": "2c2644ca-af78-4c8d-9ea9-cc1bb7984038"
+    },
+    {
+      "claim_id": "c0c60317-81f5-4c67-b87f-2b503ce792dd",
+      "result_id": "2c2644ca-af78-4c8d-9ea9-cc1bb7984038"
+    },
+    {
+      "claim_id": "aa52bd81-3acb-416f-8395-93475df263bd",
+      "result_id": "2c2644ca-af78-4c8d-9ea9-cc1bb7984038"
+    },
+    {
+      "claim_id": "7c67c054-e4b5-40c7-b23f-5ba782bae992",
+      "result_id": "2c2644ca-af78-4c8d-9ea9-cc1bb7984038"
+    },
+    {
+      "claim_id": "05645f6b-dbf7-4d56-b3ab-f5c13f935d53",
+      "result_id": "2c2644ca-af78-4c8d-9ea9-cc1bb7984038"
+    },
+    {
+      "claim_id": "d8d580ba-7fc6-4c22-afe3-e8200a326d41",
+      "result_id": "2c2644ca-af78-4c8d-9ea9-cc1bb7984038"
+    },
+    {
+      "claim_id": "9a98045c-3a8e-403d-a412-ca9e0175bade",
+      "result_id": "694ca9a2-8fda-4687-bb44-8d8087b5d0f8"
+    },
+    {
+      "claim_id": "b3c82732-70e5-4589-9833-9ea0c1c964dd",
+      "result_id": "694ca9a2-8fda-4687-bb44-8d8087b5d0f8"
+    },
+    {
+      "claim_id": "e5bc6905-0b04-4e95-9c11-3495a2ee55f7",
+      "result_id": "694ca9a2-8fda-4687-bb44-8d8087b5d0f8"
+    },
+    {
+      "claim_id": "dca2e402-bce1-43fc-8593-161d5c42c835",
+      "result_id": "694ca9a2-8fda-4687-bb44-8d8087b5d0f8"
+    },
+    {
+      "claim_id": "5b3945df-6d98-4406-b047-87da652b5d55",
+      "result_id": "694ca9a2-8fda-4687-bb44-8d8087b5d0f8"
+    },
+    {
+      "claim_id": "5a02c847-1605-4340-b3cc-cdc74dc4a110",
+      "result_id": "694ca9a2-8fda-4687-bb44-8d8087b5d0f8"
+    },
+    {
+      "claim_id": "bb52aa6d-ae3a-4ef2-bbb4-842f076b624f",
+      "result_id": "694ca9a2-8fda-4687-bb44-8d8087b5d0f8"
+    },
+    {
+      "claim_id": "cab0baa4-7f51-46ca-bd16-227454be4690",
+      "result_id": "a07b7982-71d5-4098-8798-c0249ab0fae1"
+    },
+    {
+      "claim_id": "ba3f7504-00c9-4162-9abb-89203286b9f6",
+      "result_id": "a07b7982-71d5-4098-8798-c0249ab0fae1"
+    },
+    {
+      "claim_id": "af596acc-9de7-4427-b757-964bd5d72fdc",
+      "result_id": "a07b7982-71d5-4098-8798-c0249ab0fae1"
+    },
+    {
+      "claim_id": "e5b9c374-d93a-4da5-afee-0de4f85b2afd",
+      "result_id": "55ad9603-4712-4cbb-9da0-162128f8c79c"
+    },
+    {
+      "claim_id": "5f64c7dc-6265-4f13-a24e-b1ab3cc267f5",
+      "result_id": "55ad9603-4712-4cbb-9da0-162128f8c79c"
+    },
+    {
+      "claim_id": "077c697c-3df8-4328-8924-f97e5d7cbe44",
+      "result_id": "55ad9603-4712-4cbb-9da0-162128f8c79c"
+    },
+    {
+      "claim_id": "c9f64fa6-a7ef-4c95-a9c0-e1ea09b86798",
+      "result_id": "55ad9603-4712-4cbb-9da0-162128f8c79c"
+    },
+    {
+      "claim_id": "002bd7d0-23d5-4b19-8343-56b168dc818c",
+      "result_id": "55ad9603-4712-4cbb-9da0-162128f8c79c"
+    },
+    {
+      "claim_id": "77d31de5-7f8e-4d94-8b70-d0a50996021c",
+      "result_id": "55ad9603-4712-4cbb-9da0-162128f8c79c"
+    },
+    {
+      "claim_id": "3897cfdd-ac99-4a29-9397-0f5527ec5a3d",
+      "result_id": "b75ce0a5-6ae7-462d-942d-fa78ab837c59"
+    },
+    {
+      "claim_id": "0ff5c539-efe0-418b-aa12-5a291ce4ad9b",
+      "result_id": "b75ce0a5-6ae7-462d-942d-fa78ab837c59"
+    },
+    {
+      "claim_id": "1e31fcb6-7b05-4af2-a7cc-d548eb43bc54",
+      "result_id": "b75ce0a5-6ae7-462d-942d-fa78ab837c59"
+    },
+    {
+      "claim_id": "a0bacca6-9901-4df1-8dc6-76830c8705a9",
+      "result_id": "b75ce0a5-6ae7-462d-942d-fa78ab837c59"
+    },
+    {
+      "claim_id": "7c0fdd1e-d5fa-4d8b-a211-7767a9a968a0",
+      "result_id": "b75ce0a5-6ae7-462d-942d-fa78ab837c59"
+    },
+    {
+      "claim_id": "897d71ca-6751-4305-9222-407df7340eda",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "8957c7ac-0366-4319-b58e-8c304b00df1c",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "1325ede0-bb28-458c-b14a-9fa5fb45b661",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "ce4fe5a6-ff8c-42f5-b6f1-5cbac3dcd9b6",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "8fe1d41b-b866-4440-8bfe-5ecfded976d9",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "21f16866-f9a3-44fa-9a41-b2cee1ea0637",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "14232558-df89-444a-bae9-42b905d669f0",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "c36068f4-afaa-462d-ab48-9bc1b23e3a6f",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "028fb4b0-57b4-43af-be03-8e4fe9f2c3ec",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "3a7825f0-0b85-4a5a-8cf1-1529be22336b",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "c06ebd51-4eac-45cc-aaf6-f951fc8723a0",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "ad159a5c-00c5-47e4-b012-5f01c29492e8",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "d6c0ebf5-f1b6-4a8c-a1cc-f0d9240348db",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "3abff36c-c683-4d75-b54b-0db82724c175",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "bc7927d2-6f9f-40b0-8d3e-87aa73f0368f",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "5320e8c6-9b13-48ef-b7a9-3c6aa9c4da37",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "634203ad-e4bf-45f7-8de4-9446cdf3e26a",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "3f0123f7-7a00-430b-b34b-342ab70cfc04",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "171abef9-cc45-4eb0-9847-7d04427a2a9c",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    },
+    {
+      "claim_id": "eafbedd3-e28d-4770-bb2a-16ff10c4b828",
+      "result_id": "6bee30ae-dc11-4c68-ac4c-a7d895aa380a"
+    }
+  ],
+  "comparisons": []
+}

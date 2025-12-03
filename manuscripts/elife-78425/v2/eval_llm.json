@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Connexin gene expression profiling in CRC cell lines reveals that GJB2 (Cx26) and GJB3 (Cx31) are constitutively expressed with unimodal distribution, while GJA1 (Cx43), GJA3 (Cx46), GJB1 (Cx32), GJB5 (Cx31.1), and GJC1 (Cx45) show bimodal distribution patterns. Fourteen cell lines were selected and categorized based on GJA1 and GJC1 expression levels for functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide comprehensive characterization of connexin expression across 79 CRC cell lines using microarray data, validated by TCGA datasets (C5), single-cell transcriptomics (C6), and protein-level Western blotting (C15). The use of Gaussian mixture modeling (C3) provides statistical rigor for distinguishing bimodal vs. unimodal distributions. The correlation analyses (C10-C11) and selection of cell lines for functional studies (C12-C14) are well-documented with appropriate controls (C16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Cx26 (GJB2) is the principal connexin mediating cell-to-cell communication in most CRC lines, as demonstrated by FRAP experiments showing calcein permeability that correlates with GJB2 expression. GJB2 knockdown ablates functional coupling, while GJB3 knockdown does not. Cx26 protein is uniformly expressed at cell-cell contacts, whereas Cx43 shows heterogeneous expression with distinct positive and negative subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C33 establish Cx26 as the primary mediator of gap junction communication through multiple complementary approaches: FRAP measurements (C17-C19), pharmacological inhibition with carbenoxolone (C18), siRNA knockdown experiments (C20-C22), CRISPR/Cas9 knockout (C29-C30), and immunofluorescence (C25-C27). The FAC-sorting experiment (C28) provides strong evidence for Cx43 heterogeneity. Controls with connexin-negative RKO cells (C16-C17) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "CellTracker dye diffusion experiments demonstrate that CRC cells establish functional gap junction coupling with molecular weight-dependent permeability. Dye exchange occurs preferentially in confluent cultures with extensive cell-cell contacts, and is absent in connexin-negative RKO cells. Importantly, FRAP-measured permeability does not predict steady-state equilibration, indicating that even weakly coupled cells can achieve dye equilibration given sufficient time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 provide robust evidence for gap junction-mediated dye exchange using multiple CellTracker dyes with different molecular weights. The key finding that FRAP permeability does not correlate with steady-state coupling coefficient (C38) is important but requires careful interpretation. The controls demonstrating reduced exchange at low density (C36) and no exchange in RKO cells (C37) are appropriate. The reasoning about membrane impermeability (C42) and dilution effects (C43) supporting gap junction-mediated transfer is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Flow cytometry experiments confirm extensive dye exchange (~60%) between coupled CRC cells in co-cultures but not in acutely mixed cell suspensions, demonstrating that small metabolites are expected to equilibrate across the continuous cytoplasmic compartment formed by gap junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 provide strong validation of dye exchange using an orthogonal method (flow cytometry). The critical control experiment with acutely mixed cells (C46) effectively rules out artifacts from cell lysis or extracellular dye transfer. The quantification of ~60% exchange (C47) provides a concrete measure of coupling efficiency. The inference that small metabolites will equilibrate (C49) is reasonable given the dye exchange data, though the actual metabolites are larger than the dyes tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SLC9A1 knockout cells lacking NHE1 activity show impaired pHi regulation in monoculture but are functionally rescued when co-cultured with wild-type cells through Cx26-dependent gap junction coupling. This rescue manifests as restored pHi recovery, normalized steady-state pHi, reduced pHi variability, and enhanced growth of knockout cells at the expense of wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C65 demonstrate metabolic rescue of SLC9A1-deficient cells through multiple complementary measurements: pHi recovery kinetics (C53-C55), steady-state pHi (C56-C58), pHi distribution analysis (C59-C62), and growth assays (C63-C64). The Cx26 dependence is established by GJB2 knockout controls (C58, C62). The experiments are well-controlled with appropriate use of cariporide to confirm NHE1 activity. However, the growth advantage of KO cells (C63-C64) could reflect reduced energy expenditure rather than direct metabolic rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "ALDOA-deficient DLD1 cells with impaired glycolysis show enhanced survival when co-cultured with wild-type cells in a Cx26-dependent manner. This rescue is specific to Cx26, as connexin-negative RKO cells and Cx43-expressing C10 cells fail to provide significant rescue. The heterogeneous expression of Cx43 may limit its rescue capacity to subpopulations of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C80 demonstrate metabolic rescue of glycolysis-deficient cells with appropriate controls. The inability to generate stable ALDOA knockout clones (C69) is consistent with essentiality but limits the experiments to transient knockdown within 6 days. The Cx26 dependence is established by GJB2 knockout (C73) and connexin-negative RKO controls (C74). The failure of C10 (Cx43) and NCIH747 (Cx31/Cx45) cells to rescue (C75-C77) suggests isoform specificity, though heterotypic channel formation was not directly tested. The enrichment of ALDOA-deficient cells at 3:1 ratio (C71) is striking but the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "NDUFS1-deficient SW1222 cells with blocked mitochondrial respiration show enhanced growth when co-cultured with wild-type cells in a Cx26-dependent, oxygen-dependent, and contact-dependent manner. The rescue is specific to Cx26-mediated coupling, as connexin-negative RKO cells, Cx43-expressing C10 cells, and Cx31/Cx45-expressing NCIH747 cells fail to provide rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C90 demonstrate metabolic rescue of respiration-deficient cells with comprehensive controls. The oxygen dependence (C87) provides strong mechanistic support that rescue involves oxidative phosphorylation products. The contact dependence (C85) and Cx26 dependence (C86) are well-established. The failure of heterotypic rescue with C10 (C89) and NCIH747 (C90) cells supports the interpretation that Cx26 homotypic channels are most effective, consistent with prior literature (Koval et al., 2014). The enrichment at 3:1 KO:WT ratio (C84) is consistent with the ALDOA experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In vivo xenograft experiments demonstrate that NDUFS1-deficient SW1222 cells show enhanced tumor growth when co-injected with wild-type DLD1 cells compared to GJB2-knockout DLD1 cells. Histological analysis confirms larger tumors with more GFP-positive clusters and greater GFP-positive area in the Cx26-competent condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 provide critical in vivo validation of the metabolic rescue phenomenon. The paired design (left vs. right flank in the same mouse) controls for inter-animal variability. The control showing that GJB2 knockout does not affect DLD1 growth or spheroid formation (C93) is important for ruling out confounding effects. The histological quantification (C95) provides objective measures of rescue. However, the analysis is limited to 6 mice, and the threshold for GFP-positive areas could introduce bias (though Figure 8\u2014supplement 1 shows robustness to threshold choice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "CRC cells establish a multicellular cytoplasmic continuum through connexin channels that enables diffusion and equilibration of small molecules. Cx26 is expressed in normal colorectal epithelium and retained in most CRC cell lines. Even weakly coupled monolayers can achieve solute equilibration at steady state, making this phenomenon significant even in cells with nominally low connexin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 synthesize the dye exchange findings into broader conclusions about metabolite equilibration. The observation that FRAP permeability does not predict steady-state equilibration (C102) is important for understanding the biological significance of weak coupling. The citation supporting Cx26 expression in normal epithelium (C100) provides context. However, the inference that metabolite equilibration is significant even with low connexin expression (C104) requires caution, as the time scales for equilibration may be too long to be physiologically relevant in rapidly changing microenvironments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Connexin-mediated diffusion is significant for cancer cell growth when it involves metabolites handled by enzymes or transporters. Loss-of-function mutations can be compensated by access to functional proteins in neighboring cells. Metabolic rescue occurs both in vitro and in vivo and is primarily mediated by Cx26, with Cx43 being less effective due to heterogeneous expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 synthesize the three metabolic rescue experiments (SLC9A1, ALDOA, NDUFS1) into general principles. The conclusion that Cx26 is most effective (C109, C111) is supported by the comparative experiments with different connexin isoforms. The observation about Cx43 heterogeneity limiting rescue (C110) is supported by the FAC-sorting data (C28) and the C10 rescue experiments (C75). However, the claim that rescue is 'significant for growth' (C105) may overstate the magnitude of effects observed in some experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Metabolic rescue by gap junctions provides a mechanism for cells with loss-of-function mutations in metabolite-handling genes to evade negative selection in tumors, explaining why some genes essential in vitro are not negatively selected in vivo. This mechanism is limited to genes handling diffusible solutes and cannot rescue mutations in genes encoding large proteins or neoantigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 present the central hypothesis and its implications for cancer evolution. The logic is sound: if metabolic rescue occurs in vivo (demonstrated in C91-C97), then mutations in metabolite-handling genes may not be negatively selected. The distinction between genes that can and cannot benefit from rescue (C116-C117) is important. However, the claim that this 'explains' the in vitro/in vivo discrepancy (C115) is somewhat overstated, as other mechanisms (e.g., metabolic cooperation through secreted factors, different nutrient availability) could also contribute. The citation to Zapata et al., 2018 (C118) supports the claim about negative selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Diffusive coupling between cells of contrasting genotype produces an emergent phenotype that is less distinct than the genotype, challenging the assumption that mutations act in a cell-autonomous fashion. In coupled systems, the unit under selection extends beyond a single cell, emphasizing the importance of measuring phenotypic variation in addition to genotypic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 present important conceptual implications for understanding the unit of selection in cancer. The observation that phenotype is 'blurred' relative to genotype (C122) is directly supported by the rescue experiments showing that KO and WT cells have similar phenotypes when coupled. The citation to Bertolaso and Dieli, 2017 (C126) provides theoretical support. However, the extent to which this phenomenon affects cancer evolution in vivo remains uncertain, as it depends on the prevalence of such mutations, the strength of coupling, and the spatial organization of tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Connexin genes are rarely mutated in cancer, which may reflect a protective role of cell-to-cell coupling. Therapeutic interventions targeting connexins may expose vulnerabilities and increase treatment efficacy, particularly for therapies with strong in vitro effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C129 present speculative implications for cancer biology and therapy. The observation that connexin genes are rarely mutated (C127, citing Zapata et al., 2018) is factual, but the interpretation that this reflects a 'protective role' (C128) is speculative and not directly tested. The therapeutic speculation (C129) is reasonable but requires experimental validation. These claims represent interesting hypotheses for future work rather than supported conclusions from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The study demonstrates that CRC cells are coupled by Cx26-assembled gap junctions and that cells with genetically inactivated metabolic functions (SLC9A1, ALDOA, NDUFS1) can be rescued through coupling with wild-type cells both in vitro and in vivo. This metabolic rescue reduces phenotypic heterogeneity relative to genotypic heterogeneity and explains why certain loss-of-function mutations in 'essential' genes do not influence human cancer growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C138 summarize the main findings and conclusions of the study. The demonstration of metabolic rescue for three different metabolic processes (C133) with both in vitro and in vivo validation (C134) is robust. The Cx26 dependence (C135) is well-established. The conclusion about phenotypic blurring (C136) is supported by the data. However, the claim that this 'explains' the in vitro/in vivo discrepancy (C138) is somewhat overstated, as the study demonstrates the phenomenon but does not quantitatively assess its prevalence or impact on cancer evolution in human tumors.",
+    "result_type": "MAJOR"
+  }
+]

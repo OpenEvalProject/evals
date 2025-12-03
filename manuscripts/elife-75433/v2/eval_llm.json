@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A4-tagged S\u0394TM trimers maintain near-native structure and function. The tagged trimers retained >50% antibody binding compared to untagged protein, with MAb362-IgG1 and 4A8 showing no significant loss. FCS measurements showed ACE2 binding affinity (KD ~8-12 nM) comparable to literature values for untagged protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 collectively demonstrate that the A4-tagging strategy preserves spike protein structure and function. The ELISA data (C30-C31) and FCS binding measurements (C33-C34) provide converging evidence that the tagged construct is suitable for functional studies, with binding affinities consistent with prior reports.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ACE2 binding stabilizes the RBD-up conformation of S\u0394TM D614 through conformational capture rather than induced fit. smFRET imaging revealed two FRET states (high ~0.65 for RBD-down, low ~0.35 for RBD-up). Unbound D614 showed 60% RBD-down and 40% RBD-up occupancy. ACE2 binding shifted this to 34% RBD-down and 66% RBD-up. Kinetic analysis showed ACE2 had minimal effect on kup (2.6\u21922.2 s\u207b\u00b9) but reduced kdown (3.8\u21921.3 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C45 present a coherent mechanistic picture supported by smFRET data and HMM kinetic analysis. The observation that ACE2 primarily affects kdown while leaving kup unchanged (C42-C43) directly supports the conformational capture mechanism (C44-C45). The data quality appears robust with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The D614G mutation shifts the conformational equilibrium toward the RBD-up state and reduces overall dynamics. Unbound D614G showed 59% RBD-up occupancy (vs 40% for D614) with reduced transition rates (kup=2.0 s\u207b\u00b9, kdown=1.6 s\u207b\u00b9). ACE2 binding further increased RBD-up occupancy to 69% by reducing kdown to 0.7 s\u207b\u00b9 while leaving kup unchanged, demonstrating additive effects of the mutation and ACE2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are well-supported by smFRET data showing consistent effects of D614G on RBD conformation. The kinetic analysis demonstrates that both D614G and ACE2 binding operate through similar mechanisms (reducing kdown), supporting the conclusion that they have additive effects. The data are consistent with cited structural studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "RBD-targeting mAbs stabilize the RBD-up conformation of D614 through conformational capture but have minimal effect on D614G. For D614, mAbs increased RBD-up occupancy (though less than ACE2) primarily by reducing kdown with minor effects on kup. For D614G, none of the RBD-directed mAbs significantly altered conformation, suggesting the mutation alone is sufficient for mAb binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by smFRET data showing differential effects of RBD-targeting mAbs on D614 vs D614G. The kinetic analysis (C57) demonstrates a mechanism similar to ACE2 binding. However, the lack of statistical significance for REGN10987 and S309 on D614 (C56) introduces some uncertainty about the generalizability of the findings across all RBD-targeting antibodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "NTD- and S2 stalk-targeting mAbs allosterically modulate RBD conformation through distinct mechanisms. The NTD-targeting mAb 4A8 showed modest effects on D614 (not statistically significant) and minimal effects on D614G. In contrast, stalk-targeting mAbs 1A9 and 2G12 significantly stabilized RBD-up for D614 by both reducing kdown and increasing kup, indicating active induction of conformational change rather than simple capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 demonstrate allosteric effects of antibodies binding distal to the RBD. The distinct kinetic signature of stalk-targeting mAbs (affecting both kup and kdown, C62) versus RBD/NTD-targeting mAbs (primarily affecting kdown) provides strong mechanistic evidence. The lack of statistical significance for some effects (C60, C64) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Antibodies that stabilize RBD-up without blocking the ACE2-binding site enhance ACE2 binding. FCS measurements showed MAb362IgA1 and REGN10987 blocked ACE2 binding as expected. S309 and 4A8 slightly enhanced binding to D614, while stalk-targeting mAbs 1A9 and 2G12 induced the greatest enhancement for both D614 and D614G. A very strong correlation (rs=0.9048, p=0.0046) was observed between RBD-up occupancy and ACE2 binding enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are well-supported by FCS data that directly complement the smFRET findings. The strong Spearman correlation (C70) provides quantitative support for the relationship between conformational modulation and ACE2 binding. The differential effects of various mAbs are consistent with their mechanisms of action determined by smFRET.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ACE2 binding occurs through conformational capture of a pre-existing RBD-up state rather than induced fit. Kinetic analysis showed ACE2 does not affect the rate of transition to RBD-up but captures and stabilizes this conformation by reducing the rate of transition back to RBD-down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 present the central mechanistic conclusion of the study, directly supported by the kinetic data from C40-C45 and C50-C51. The interpretation is consistent with structural data and represents a clear mechanistic insight. The conclusion is well-justified by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The intrinsic dynamics of spike protein control the rate or efficiency of membrane fusion during virus entry, with factors stabilizing RBD-up likely increasing fusion rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 represent speculative extrapolations from the conformational dynamics data to viral entry mechanisms. While the logic is reasonable, no direct measurements of membrane fusion or viral entry were performed. These claims require experimental validation through fusion assays or infectivity studies to be considered supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The D614G mutation enhances infectivity by stabilizing the RBD-up conformation through increased thermodynamic stability. The mutation reduces kdown, indicating increased activation energy for the down transition. ACE2 binding to D614G has additive effects, pushing equilibrium further toward RBD-up than either factor alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 are supported by the smFRET kinetic data and are consistent with cited structural and functional studies. The mechanistic interpretation linking thermodynamic stability to infectivity (C81) is reasonable given the data, though the direct connection to infectivity relies on literature rather than measurements in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The D614-K854 salt bridge destabilizes the RBD-up conformation, and the D614G mutation provides fitness advantage by mimicking receptor binding effects through disruption of this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 integrate structural knowledge (C89, supported by citations) with the functional data from this study. The interpretation that D614G mimics ACE2 binding (C91) is supported by the similar kinetic effects observed. However, this remains somewhat speculative as the precise structural mechanism was not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "A long-range allosteric connection exists between the RBD and fusion peptide region, suggesting a common mechanistic link between receptor binding and fusion peptide movement among class-I viral fusion proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by the observation that D614G (near the fusion peptide) affects RBD conformation, combined with analogous findings in other viral fusion proteins cited in the manuscript. The allosteric connection is demonstrated experimentally, though the broader evolutionary/mechanistic implications (C93) are more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "S1-targeting mAbs (RBD and NTD) capture the RBD-up conformation through thermodynamic stabilization, similar to ACE2. These mAbs primarily reduce kdown with minimal effect on kup. S309 had modest effects consistent with its ability to bind RBD in either conformation, and modestly destabilized RBD-up in D614G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by kinetic analysis showing S1-targeting mAbs operate through conformational capture. The modest effect of S309 (C96, C98) is consistent with structural data showing it can bind both conformations. The mechanistic interpretation is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "S309's mechanism of broad neutralization remains unclear but likely involves modulation of RBD position and downstream conformational changes related to membrane fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 acknowledges uncertainty about S309's neutralization mechanism while speculating about potential roles. The speculation is reasonable given the observed conformational effects, but without direct neutralization or fusion data in this study, the mechanism remains unclear. This is appropriately characterized as uncertain by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "S2-targeted mAbs induce RBD conformational changes by reducing activation energy for transition to the up state while also stabilizing it. Stalk-targeting mAbs 1A9 and 2G12, which bind near the hip hinge, allosterically modulate RBD position and enhance ACE2 binding, implicating the hip hinge as a critical allosteric control center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are supported by kinetic data showing S2-targeting mAbs have distinct effects (increasing kup and decreasing kdown) compared to S1-targeting antibodies. The structural information about epitope locations (C103-C105, from citations) combined with functional effects supports the conclusion about the hip hinge as an allosteric center (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "mAb CV3-25, which binds near the knee hinge, also promotes RBD-up conformation, providing additional support for allosteric centers in S2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by citations to other smFRET studies. While not original data from this manuscript, they provide important context supporting the broader conclusion about S2 allosteric centers. The claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Antibody combinations targeting diverse epitopes show potential for synergistic neutralization. Enhancement was observed with S309+S2E12, likely from combined conformational modulation and ACE2 blocking. Similar synergy might occur with 4A8 or stalk-targeting mAbs (1A9, 2G12) combined with RBM-directed mAbs, presenting a strategy for enhanced neutralization through combination therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C113 mix supported observations (C109, from citations) with speculation about potential therapeutic strategies (C111-C113). While the logic is sound based on the conformational data, no actual combination neutralization experiments were performed in this study. The therapeutic implications require experimental validation through neutralization assays or in vivo studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "D614G does not increase the rate of ACE2 binding to spike, suggesting additional RBD rearrangements (perhaps in the RBM) may be necessary beyond transition to the up conformation for full ACE2 engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by citations to prior studies. Claim C83 is reasonable speculation based on the observation that increased RBD-up occupancy doesn't correlate with faster ACE2 binding. However, the speculation about RBM rearrangements lacks direct experimental support in this study.",
+    "result_type": "MINOR"
+  }
+]

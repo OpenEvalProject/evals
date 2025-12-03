@@ -1,0 +1,2284 @@
+{
+  "submission": {
+    "id": "57b13e3c-5591-4559-b5e6-8fa7c7b2555d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:04:16.928552Z",
+    "updated_at": "2025-12-03T04:04:16.928552Z"
+  },
+  "content": [
+    {
+      "id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "submission_id": "57b13e3c-5591-4559-b5e6-8fa7c7b2555d",
+      "content_type": "manuscript",
+      "content_text": "# Vascular-derived SPARC and SerpinE1 regulate interneuron tangential migration and accelerate functional maturation of human stem cell-derived interneurons\n\n## Authors\n\n- Matthieu Genestine<sup>1</sup>\n- Daisy Ambriz<sup>1</sup>\n- Gregg W Crabtree<sup>2</sup>\n- Patrick Dummer<sup>1</sup>\n- Anna Molotkova<sup>1</sup>\n- Michael Quintero<sup>1</sup>\n- Angeliki Mela<sup>1</sup>\n- Saptarshi Biswas<sup>2</sup>\n- Huijuan Feng<sup>3</sup>\n- Chaolin Zhang<sup>3</sup> ([ORCID: 0000-0002-8310-7537](https://orcid.org/0000-0002-8310-7537))\n- Peter Canoll<sup>1</sup>\n- Gunnar Hargus<sup>1</sup>\n- Dritan Agalliu<sup>1</sup>\n- Joseph A Gogos<sup>4</sup>\n- Edmund Au<sup>1</sup> ([ORCID: 0000-0003-3190-9711](https://orcid.org/0000-0003-3190-9711)) \u2020\n\n### Affiliations\n\n1. Department of Pathology and Cell Biology, Columbia University New York United States\n2. Department of Neurology, Columbia University Irving Medical Center New York United States\n3. Department of Department of Systems Biology, Columbia University Irving Medical Center New York United States\n4. Department of Cellular Physiology and Biophysics, Columbia University New York United States\n5. Department of Neuroscience, Zuckerman Mind Brain and Behavior Institute, Columbia University New York United States\n6. Columbia Translational Neuroscience Initiative Scholar New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCortical interneurons establish inhibitory microcircuits throughout the neocortex and their dysfunction has been implicated in epilepsy and neuropsychiatric diseases. Developmentally, interneurons migrate from a distal progenitor domain in order to populate the neocortex \u2013 a process that occurs at a slower rate in humans than in mice. In this study, we sought to identify factors that regulate the rate of interneuron maturation across the two species. Using embryonic mouse development as a model system, we found that the process of initiating interneuron migration is regulated by blood vessels of the medial ganglionic eminence (MGE), an interneuron progenitor domain. We identified two endothelial cell-derived paracrine factors, SPARC and SerpinE1, that enhance interneuron migration in mouse MGE explants and organotypic cultures. Moreover, pre-treatment of human stem cell-derived interneurons (hSC-interneurons) with SPARC and SerpinE1 prior to transplantation into neonatal mouse cortex enhanced their migration and morphological elaboration in the host cortex. Further, SPARC and SerpinE1-treated hSC-interneurons also exhibited more mature electrophysiological characteristics compared to controls. Overall, our studies suggest a critical role for CNS vasculature in regulating interneuron developmental maturation in both mice and humans.\n\n## Introduction\n\nCortical interneurons are inhibitory, locally projecting cells that form a distributed network of repetitive circuits throughout the cortex (Kepecs and Fishell, 2014; Tremblay et al., 2016). To establish this distributed network, interneurons migrate from the ventral subpallium to arealize throughout the cortex in order to form connections with layered pyramidal neurons and other interneurons. The timescale for interneuron migration varies widely across species. The process lasts days in mice (Lavdas et al., 1999; Mar\u00edn and Rubenstein, 2001) and several months in humans (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013). This species difference extends to stem cell-derived interneurons where mouse ES-derived interneurons develop rapidly (Au et al., 2013; Maroof et al., 2010; McKenzie et al., 2019), while human stem cell-derived interneuron (hSC-interneuron) development is protracted (Nicholas et al., 2013; Shao et al., 2019). Indeed, this limitation has restricted the scope of analysis on hSC-interneurons, hampering detailed functional studies.\n\nIn this study, we sought to identify factors that regulate the timing of interneuron migration across species. Using embryonic mouse development as a model system, we found that interneuron migration coincides with vascularization of the medial ganglionic eminence (MGE), and that by manipulating the degree of MGE vascularization in vivo, it regulates the degree of interneuron migration into the cortex. Using an in vitro approach, we identified paracrine factors, SPARC and SerpinE1, produced by endothelial cells that enhance interneuron migration in mouse MGE explants and organotypic cultures. Given the slow developmental rate of hSC-interneurons, we tested whether SPARC and SerpinE1 treatment similarly induced migration in human cells. We found that treated hSC-interneurons xenografted into neonatal mouse cortex exhibited enhanced migration. Further, transplanted hSC-interneurons also showed greater morphological complexity, and more mature electrophysiological characteristics compared to controls. These data suggest that interneurons in mice and humans share a common vascular-based mechanism that regulates their developmental timing. And, by characterizing this process in mice, we were able to reverse-engineer our findings to accelerate functional maturation in human interneurons.\n\n## Results\n\nCortical interneurons are generated from a distal source (primarily the MGE) and undergo long-distance migration to their final destination in the neocortex. In the embryonic mouse, this developmental process is rapid: interneurons are generated starting ~e11 and robustly migrate into the cortex by e15 (Figure 1A;\u00a0Lavdas et al., 1999; Mar\u00edn and Rubenstein, 2001). As a result, it is tempting to assume that newly born interneurons automatically transition to a migratory state. As a counterexample, however, in human fetal development interneuron migration into the cortex is highly protracted. Previous studies have found that postmitotic interneurons slowly transition to a migratory state to populate the neocortex over the course of many weeks (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013). To confirm this, we examined interneurons in fetal cortical sections by immunohistochemistry for Dlx2 (an interneuron marker). Consistent with prior reports, we observed an increase in the density of Dlx2+ interneurons in the cortex over time (15 post-conception weeks [pcw] to 22 pcw) (Figure 1B, Figure 1\u2014figure supplement 1A,B). We hypothesized that the discrepancy between human and mouse interneuron development may be due to an external cue delivered to the MGE to promote interneuron migration. We therefore examined the developing mouse MGE (from e10.5 to e15.5) by histology and observed a striking increase in vascularization of the MGE and the underlying mantle region during the time period when mouse interneuron migration initiates (Figure 1C,D;\u00a0Daneman et al., 2009; Paredes et al., 2018). Similarly, we found that vascularization of human fetal MGE slowly increased with developmental age, with robust vascularization not occurring until after 20 pcw (Figure 1E, Figure 1\u2014figure supplement 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig1-v2.jpg)\n\n**Figure 1.:** (A) Coronal sections of Dlx6aCre; Ai9 embryonic mouse telencephalon over developmental time. tdTomato\u00a0+\u00a0interneurons progressively migrate into the cortex between e12 and e16. Cortex indicated by arrowheads. (B) Dlx2 immunohistochemistry (red) in human fetal cortex shows weeks-long progression of cortical interneurons migrating into cortex. (C) Representative images of isolectin labeling (green). (D) Quantification of isolectin\u00a0+\u00a0blood vessel staining as a percentage of MGE area for embryos ages e10.5\u2013e15.5. (E) CD31 immunohistochemistry in human MGE from various fetal ages. (F) Top row, coronal sections of e14.5 MGE. Blood vessels labeled with isolectin in wildtype control, Apcdd1 loss-of-function and Apcdd1 gain-of-function mutants. Bottom row, coronal sections of e14.5 embryonic brain labeled with calbindin to show migratory interneurons in isolectin in wildtype control, Apcdd1 loss-of-function and Apcdd1 gain-of-function mutants. (G, H) Quantification of isolectin\u00a0+\u00a0MGE vascularization; (G) isolectin\u00a0+\u00a0vessel labeling as a percentage of MGE surface area; (H) average vessel size in square microns. (I) Quantification of total interneurons migrating into cortex/20 \u03bcm section. Paired t-test, *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative immunostaining for Dlx2 (red) in coronal sections of human fetal brain at 15, 17, and 22 post-conception weeks (pcw). Red bar denotes marginal zone (MZ), orange bar denotes cortical plate (CP). (B) Quantification of Dlx2\u00a0+\u00a0interneuron cell density/mm2. (c) Dlx2 cell density (/mm2) present in MZ and CP. (C) Transverse sections of human fetal medial ganglionic eminence\u00a0(MGE) at 17, 19, and 24 pcw immunolabeled for CD31. Scale\u00a0bar denotes 200 \u03bcm.\u00a0(D) Adjacent 21 pcw section confirming tissue is MGE by Nkx2-1 immunohistochemistry (top), CD31 IHC (bottom).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic representation of MGE explant preparation. MGE is dissected from embryo and sectioned at 250 \u03bcm. (B) Interneuron migration in e11.5 MGE explants linear correlation with surface area of MGE explant. (C) e14.5 MGE explant cultured from Dlx6aCre; Ai9 embryo. Right, higher magnification of boxed region on left. Arrowheads show DAPI\u00a0+\u00a0cells that are tdTomato-negative. (D) Computer segmented DAPI+ nuclei prior to quantification.\u00a0(E) Representative DAPI-labeled MGE explants from embryos ages e10.5\u201314.5.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Coronal sections of (top) e13.5 and (bottom) e15.5 mouse telencephalon labeled with in situ hybridization antisense probe for Apcdd1. Higher magnifications of red boxed regions shows subpallium and is consistent with endothelial cell expression of Apcdd1. Scale bar denotes 100 \u03bcm.\n\nTo determine whether there is a causal relationship between MGE vascularization and interneuron migration, we examined Apcdd1 mutant mice (Mazzoni et al., 2017). Apcdd1, a negative regulator of Wnt/\u03b2-catenin signaling, is critical for CNS vascular development and blood-brain barrier maturation (Shimomura et al., 2010). We examined MGE vessel density and average vessel size in Apcdd1 GOF (an endothelial cell-specific transgenic gain-of-function) and LOF (whole animal null) mutants at e14.5 and found that, similar to the retina and cerebellum (Mazzoni et al., 2017), vascularization in the MGE is decreased in Apcdd1 GOF and increased in Apcdd1 LOF mice versus wildtype controls (Figure 1F\u2013H). To confirm that a whole animal Apcdd1 null was appropriate for analysis, we performed in situ hybridization for Apcdd1 and found that its expression is confined to vasculature in the embryonic mouse brain (Figure 1\u2014figure supplement 3). Importantly, fewer interneurons migrated into the cortex in Apcdd1 GOF mutants, in which vascularization was less extensive compared to wildtype controls. Conversely, a trend toward more calbindin\u00a0+\u00a0migrating interneurons were present in Apcdd1 LOF mutants (p=0.236, paired t-test) in which vessel size and density was greater (Figure 1I). These results suggest that the density of endothelial cells within neural tissue is a critical regulator\u00a0of interneuron migration.\n\nIn order to identify a mechanism by which this occurs, we used an MGE explant culture approach from mouse embryos to quantify the number of migrating neurons at various developmental stages (Figure 2A, Figure 1\u2014figure supplement 2A\u2013D). Given that the MGE is progressively vascularized from e10 to e15, we reasoned that MGE explant migration would increase with developmental age. We further reasoned that in early MGE explants that were not extensively vascularized, that mouse interneurons would be similarly immobile like human interneurons. To normalize for differences in MGE size at different ages, whole MGE tissue was dissected and sectioned at 250 \u03bcm. Then, the number of DAPI\u00a0+\u00a0migratory cells was normalized to the surface area of the MGE explant. Using this approach, we found a strong linear correlation between the number of migratory cells and MGE explant surface area (r2\u00a0=\u00a00.6829) (Figure 1\u2014figure supplement 2B). Further, we found that nearly all migratory DAPI\u00a0+\u00a0cells were interneurons using the Dlx6aCre driver line crossed to Ai9 in order to fate-map the migratory lineage (Monory et al., 2006;\u00a0Figure 1\u2014figure supplement 2C,D). Classic studies have shown that MGE explants at e14.5 and e15.5 exhibit robust interneuron migration within hours of initial plating (Bellion et al., 2005; Polleux et al., 2002; Wichterle et al., 1999). Consistently, we found that interneurons later timepoint MGE explants exhibited robust migration, whereas explants from earlier timepoints (e10.5\u2013e12.5) had a limited capacity to migrate (Figure 2B, Figure 1\u2014figure supplement 2E). One possibility is that interneurons possess an intrinsic timer such that, given sufficient time in culture, early timepoint explants would migrate to the same extent as older MGE explants. However, even when cultured for up to a week, early explants did not significantly migrate more after the first 48 hr (data not shown).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of MGE explant and organotypic slice preparation to assess interneuron migration in vitro. (B) Number of interneurons (normalized to MGE surface area) migrating from MGE explants from embryos ages e10.5\u2013e15.5. (C) Number of interneurons (normalized to MGE surface area) migrating from e11.5 and e14.5 MGE explants with or without primary culture endothelial cell conditioned medium (p-EndoCM) or immortalized endothelial cell line conditioned medium (EndoCM). (D) Number of interneurons (normalized to MGE SA) migrating from e11.5 MGE explants treated with control, EndoCM, HEK\u00a0293 conditioned medium (HEK\u00a0CM) or boiled EndoCM. (E) Representative images of DIV4 organotypic slice cultures without (control) or with EndoCM added. Right is higher magnification of boxed region on left. (F) Number of Dlx6aCre; Ai9 tdTomato\u00a0+\u00a0interneurons migrating into cortex over time in coronally\u00a0section organotypic slice cultures (DIV 0\u20134) with or without EndoCM treatment. (G) Size fractionation of EndoCM assayed for normalized interneuron migration from e11.5 MGE explants. Paired t-test, *p<0.05; **p<0.01; ***p<0.001.\n\nGiven the diffuse distribution of blood vessels in the MGE, the most likely mechanism is that endothelial cells produce a paracrine signal to induce interneuron migration. To test this directly, we prepared conditioned medium from primary cultures of embryonic brain ECs (primary culture endothelial cell\u00a0conditioned medium\u00a0[p-EndoCM]) and added it to e11.5 MGE explants. Consistent with our hypothesis, addition of p-EndoCM resulted in a robust increase in interneuron migration (Figure 2C). We found, however, that primary embryonic brain EC cultures introduced unwanted variability, and for subsequent experiments, we obtained EndoCM from an immortalized human EC line, HBEC5i (Wassmer et al., 2006). To further reduce inter-experimental variability, interneuron migration counts were normalized to within-experiment negative (untreated) controls. Hence, subsequent data is presented as fold-change in interneuron migration over controls. Similar to p-EndoCM, conditioned medium from HBEC-5i (EndoCM) also robustly increased e11.5 MGE explant migration (Figure 2C). Interestingly, e14.5 MGE migration was also significantly increased by EndoCM (Figure 2C). We next tested the effect of EndoCM on interneuron migration in an organotypic slice culture. Here, we used Dlx6aCre; Ai9\u00a0+\u00a0e11.5 embryos in order to visualize interneurons as they migrate within a coronal slice of telencephalon from the MGE into the cortex (Figure 2A,E). As with MGE explants, EndoCM also significantly increased the rate and overall number of interneurons that migrated into the cortex (Figure 2F). As a negative control, we tested the biological activity of conditioned medium from HEK 293 cells (HEK CM). HEK CM did not increase MGE explant migration at either age (Figure 2D). Moreover, we found that pre-boiling EndoCM eliminated its biological activity, suggesting a protein source as a regulator of interneuron migration (Figure 2D). Finally, we size-fractionated EndoCM and found that biological activity was strongly reduced between 30 and 100 kDa (Figure 2G).\n\nIn order to identify candidate proteins, we performed bulk RNA sequence analysis on HBEC5i and HEK cells. We screened the dataset for genes with the greatest differential expression, enriched in HBEC5i that produced proteins between 30 and 100 kDa, which were also secreted (Gene Ontology\u00a0[GO] term: extracellular space) (Figure 3\u2014figure supplement 1). After further curation to eliminate membrane-tethered molecules, we obtained a short list of 24 candidates (Supplementary file 1). We functionally tested a number of candidates, including VEGF-A (Barber et al., 2018) and follistatin; however, two proteins, SPARC and SerpinE1, exhibited the most robust biological activity in their ability to increase e11 MGE migration (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Parasaggital sections of e13.5 embryonic brain showing in situ hybridization signal for (A) SPARC* and (B) SerpinE1#. Insets for (a) and (b) are higher magnification or boxed regions showing medial ganglionic eminence\u00a0(MGE) expression. (C) Western blots of HEK\u00a0293 conditioned medium (HEK CM) (three replicates) and EndoCM (four replicates) for SPARC and SerpinE1. (D) Quantification of western band intensity for SPARC (green) and SerpinE1 (blue) in HEK CM and EndoCM. (E) Quantification of normalized interneuron migration from MGE explants treated with SPARC (filled green), SerpinE1 (filled blue) compared with control (filled black). (F) Quantification of normalized interneuron migration from MGE explants treated with EndoCM (filled red), EndoCM and SPARC function-blocking antibody (unfilled green), EndoCM and SerpinE1 small molecule inhibitor (unfilled blue), and EndoCM with combination of SPARC function-blocking antibody and SerpinE1 small molecule inhibitor (unfilled gray). (G) Number of Dlx6aCre; Ai9 tdTomato\u00a0+\u00a0interneurons migrating into cortex over time in coronally\u00a0section organotypic slice cultures (DIV 0\u20134) with or without EndoCM, SPARC or SerpinE1 treatment. (H) Similar organotypic slice culture experiments as in (G) with or without primary EndoCM (p-EndoCM), or p-EndoCM depleted with SPARC function-blocking antibody and SerpinE1 small molecule inhibitor, SK216. Paired t-test, *p<0.05; **p<0.01; ***p<0.001. * from Allen Brain Atlas (http://developingmouse.brain-map.org/); # from GenePaint (http://gp3.mpg.de).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Scatterplot of RNA-seq reads plotting log10(HEK 293) sample versus log10(HBEC5i) sample. Red dots are HBEC5i-enriched secreted factor hits. All other reads are gray dots. SerpinE1 circled in blue. SPARC circled in green.\n\nWe examined the expression of SPARC and SerpinE1 in e14.5 MGE through publicly\u00a0available expression databases (Allen Brain Atlas and GenePaint) and found that both were specifically expressed in the embryonic CNS vasculature (Figure 3A,B). We also confirmed by western blotting that SPARC and SerpinE1 were present in EndoCM at significantly higher levels compared to HEK292 CM (Figure 3C,D). We then added recombinant SPARC or SerpinE1 to MGE explants and found that cell migration was increased, in particular with SerpinE1 (Figure 3E). We then tested EndoCM in which SPARC and SerpinE1 activity were depleted. We used a function-blocking antibody for SPARC (Sweetwyne et al., 2004), whereas SerpinE1 activity was blocked with a small molecule inhibitor (SK216; Masuda et al., 2013). These reagents separately significantly reduced the capacity of EndoCM to increase e11.5 MGE migration (Figure 3F). However, inhibition of both SPARC and SerpinE1 does not reduce interneuron migration further, suggesting that the two molecules may act on intersecting pathways. Finally, we tested whether SPARC and SerpinE1 could increase interneuron migration in an organotypic slice over time. We found that both proteins significantly increased the rate and overall number of interneurons that migrated into the cortex over time (Figure 3G). Finally, we tested whether SPARC and SerpinE1 were active components in p-EndoCM. We found that p-EndoCM increased interneuron migration into the cortex in organotypic slice cultures over control and that the effect was abrogated by adding SPARC function-blocking antibody and SK216 to p-EndoCM (Figure 3H).\n\nPrevious studies have demonstrated that hSC-interneurons migrate and mature at a slow rate, reminiscent of the protracted time frame of interneuron development in the human fetus (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013). Given that SPARC and SerpinE1 elicit interneuron migration in e11.5 MGE explants and organotypic slice cultures, we tested whether these factors might similarly accelerate the developmental time\u00a0frame for hSC-interneurons. Using a pan-tdTomato expressing human iPSC line (CAG-tdTomato knocked into AAVS1 locus), we achieved efficient differentiation to ventral telencephalic identity using established protocols (Bagley et al., 2017;\u00a0Figure 4\u2014figure supplement 1A). hSC-interneuron differentiation was confirmed using AAV Dlx5/6-GFP (Dimidschstein et al., 2016;\u00a0Figure 4\u2014figure supplement 1B). At day 35 of differentiation (DIFF 35), ventral telencephalic organoids were treated with either SPARC, SerpinE1, or both for 14 days. At DIFF 49, we tested for hSC-interneuron migration by dissociating either untreated or SPARC/SerpinE1-treated organoids. Here, we further divided the groups: one group continued to be exposed to SPARC and SerpinE1 and the other was left untreated (Figure 4\u2014figure supplement 2A). We observed a significant increase in migratory distance in the group treated both before and afterward with SPARC and SerpinE1. Importantly, we observed an even greater biological effect when SPARC and Serpin were added to dissociated cells after pre-treatment (Figure 4\u2014figure supplement 2C). Thus, in subsequent xenograft experiments, SPARC and SerpinE1 were added as a pre-treatment for 14 days and also added to the cells at the time of transplantation.\n\nPrevious studies have xenografted hSC-interneurons into a more functionally relevant setting: neonatal mouse cortex. They found that functional maturation rate is prolonged, requiring ~7 months (Nicholas et al., 2013; Shao et al., 2019). We then tested the capacity of control and SPARC/SerpinE1-treated ventral organoids to integrate following xenotransplant into immune-compromised (NSG) mouse cortex. We first analyzed transplants 28 days post-engraftment. We confirmed that tdTomato\u00a0+\u00a0hSC interneurons were almost all Dlx2+ (Figure 4A) and also found that Combo-treated hSC-interneurons migrated significantly further than controls (Figure 4B,C). At 56 days post-transplantation, we traced and analyzed the morphologies of hSC-interneurons in 3D and found that they possessed longer processes and branched more extensively (Figure 4D, Figure 4\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-v2.jpg)\n\n**Figure 4.:** (A) Immunohistochemistry for Dlx2 (green), Dapi (blue), and tdTomato\u00a0+\u00a0hSC interneurons (red) near injection site 1 month post-transplant. (B) Representative images of coronal sections of host mouse cortex 1 month post-transplant of control untreated and SPARC/SerpinE1 pre-treated hSC-interneurons (asterisk denotes transplant site). Arrowheads show tdTomato\u00a0+\u00a0hSC interneurons migrating away from transplant site. (C) Quantification of migratory distance of hSC-interneurons from site of injection 1 month post-transplantation. (D) Quantification of hSC-interneuron morphology by average process length (left) and total number of neurite branches (right). (E\u2013O) Whole-cell recordings of hSC-interneurons 2 months post-transplant. Untreated control (blue), SPARC and SerpinE1 pre-treated (red). (E) Representative traces of spontaneous AP firing. (F) Evoked firing upon square pulse depolarization. (G) Representative traces of spontaneous miniature EPSCs. (H) Step recordings of sodium current. (I\u2013O) Quantitative measurements of (I) spontaneous mEPSC frequency (Hz), (J) AP threshold (mV) (p=0.0166), (K) sodium-to-potassium current ratio (p=0.0338), (L) resting membrane potential (p=0.12), (M) capacitance (p=0.067), (N) input resistance (p=0.0155), (O) tau (p=0.0239). Paired t-test, *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Time line for hSC differentiation to cortical interneuron fate. (B) Differentiation day (DIFF) 12 organoids sectioned at 16 \u03bcm are largely Oct4-negative and almost completely Pax6-positive, indicating successful neural differentiation. DIFF 25 organoids sectioned at 16 \u03bcm are FoxG1- and Nkx2-1-positive. DIFF 45 whole organoid labeled with AAV-Dlx5/6-eGFP shows efficient differentiation to interneuron cell fate.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Schematic of in vitro treatment groups for hSC-interneurons with SPARC and SerpinE1. (B) Example image of live tracking of hSC-interneurons plated as monolayer. (C) Quantification of hSC-interneuron treatment groups for total migratory distance over 48 hr. Paired t-test, *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Example of traced hSC-interneuron in cortex 2 months post-transplant. Primary neurite in red, secondary neurite in blue, tertiary neurite in yellow. (B, C) Representative traces of cell morphology for (B) untreated control and (C) SPARC/SerpinE1 pre-treated hSC-interneurons 2 months post-transplant. (D) Quantification of branch points in primary, secondary, and tertiary process for untreated control and SPARC/SerpinE1 pre-treated groups.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Untreated control (blue) and pre-treated (red) hSC-interneurons measured for (A) sodium current (pico-amps), (B) maximum number of action potentials (APs) elicited by square pulse depolarization, (C) maximum AP depolarization (milli-volts), (D) sodium-to-potassium peak current/max AP depolarization, (E) AP risetime, (F) AP width at half maximum amplitude (milliseconds).\n\nGiven the improvements in migration and morphology exhibited by treated hSC-interneurons, we tested their functional maturity by employing whole-cell recordings from tdTomato labeled transplanted cells in acute slices of frontal cortex 56 days post-transplant. Consistent with more mature neuronal function, recordings from treatment group neurons showed significantly reduced membrane input resistance, faster membrane time constants, more hyperpolarized action potential\u00a0(AP) thresholds, and increased ratios of voltage-gated sodium currents versus voltage-gated potassium currents (Figure 4E\u2013O). Additionally, other measures of neuronal maturity we tested appeared to collectively trend toward more mature functional phenotypes in the treatment group of neurons, albeit these were not statistically significant (Figure 4\u2014figure supplement 4). Specifically, treated cells appear to have larger membrane capacitances (p=0.067), more hyperpolarized resting potentials (p=0.12), larger voltage-gated sodium currents (p=0.20), faster AP rise rates (p=0.21), narrower APs (p=0.22), and generated a greater number of APs (p=0.24) (Figure 4\u2014figure supplement 4). Taken together, these electrophysiological profiles suggest that treated neurons may have an accelerated trajectory toward functional maturity.\n\n## Discussion\n\nCNS vascularization is a tightly regulated process that operates in tandem with neuronal and glial cell development (Paredes et al., 2018). Here, we demonstrate that not only does vascularization of mouse MGE coincide with interneuron migration, but it also plays a regulatory role since genetic manipulation of vascular pruning affects the number of interneurons migrating into the cortex. Further, two EC-derived paracrine factors SPARC and SerpinE1 induce increased interneuron migration as assessed by in vitro assays. Moreover, ablation of SPARC and SerpinE1 in immortalized or p-EndoCM\u00a0reduced its capacity increase in\u00a0interneuron migration. Having demonstrated a critical crosstalk between the neural and vascular compartments in mouse, we leveraged our findings to test if SPARC and SerpinE1 can accelerate hSC-interneuron maturation. We found that hSC-interneurons treated with SPARC and SerpinE1 also show a more robust migration both in vitro and upon xenotransplantation into host mouse cortex. Finally, xenografted hSC-interneurons also exhibit significantly more complex morphologies and more mature electrophysiological properties.\n\nOur findings support previous studies that have linked angiogenesis to pathfinding during interneuron tangential migration (Barber et al., 2018; Li et al., 2018) and MGE mitosis (Tan et al., 2016). Further, radial glia in the MGE undergo a transition during embryonic development where their pial endfeet detach and connect to MGE vasculature (Tan et al., 2016). In light of our data, it is tempting to speculate that this rearrangement allows for a more direct communication between ECs and interneurons, thereby facilitating their tangential migration into the cortex. Single-cell RNA-sequencing\u00a0(RNA-seq) in mouse indicates that SPARC expression is significantly enriched in brain endothelial cells versus other endothelial populations (log2-fold increase 3.97) (Hupe et al., 2017). In the same study, SerpinE1 expression increases in mouse brain endothelial cells, peaking at e14.5, which coincides with the timepoint where we observe robust migration in MGE explants. Both SPARC (Butler et al., 2016; Girard and Springer, 1995; Sage et al., 1989) and SerpinE1 (Canfield et al., 1989) are\u00a0expressed\u00a0in human endothelial cells.\n\nIn humans, interneuron migration during fetal development is a protracted process (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013). We found that hSC-interneurons exhibit greater migration and faster functional maturation when treated with vascular factors, SPARC and SerpinE1, suggesting that the maturation of CNS vasculature may similarly regulate the timing of human fetal interneurons migration. During human fetal development, both SPARC and SerpinE1 are expressed at low levels in subpallium at 8 and 9 pcw, and both peak in their expression in the cortex between 37 pcw and 1 year of age (Allen Institute BrainSpan Database, Developmental Transcriptome, https://www.brainspan.org/rnaseq/search/index.html). Further, the MGE (also known as the germinal matrix) is the primary site periventricular hemorrhages in prematurely\u00a0born babies (Luo et al., 2019). It has been hypothesized that this is due to newly formed (and thus weaker) vasculature in the MGE during the third trimester (Ballabh et al., 2004; Ballabh et al., 2007). As such, it is an appealing possibility that the timing of vascularization, which we posit to be the source of SPARC and SerpinE1 in the MGE, helps to coordinate species-specific aspects of neuronal maturation. Here, delayed vascularization in humans may serve a regulatory role in delaying interneuron migration until pyramidal neurons have achieved sufficient maturity to allow for interneuron circuit integration.\n\nWe identified SPARC and SerpinE1 as important proteins that account for most of the EndoCM activity. This is consistent with the described roles for both proteins in other systems. SPARC has been implicated in cell differentiation (Hrabchak et al., 2008; Stary et al., 2005) and migration (Arnold and Brekken, 2009). SPARC is also correlated with increased cancer metastasis and its increased expression in cancer stromal cells results in epithelial-to-mesenchymal transition by downregulation of E-cadherin and upregulation of N-cadherin (Nagaraju et al., 2014). SPARC can influence migration through integrins and integrin-linked kinases (Thomas et al., 2010) and by modulating the activity of matrix metalloproteases. Indeed integrin signaling also regulates interneuron migration during development (Stanco et al., 2009). SerpinE1 (also known as plasminogen activator inhibitor-1) is also implicated in cell migration through the uPA/urokinase pathway (Gr\u00f8ndahl-Hansen et al., 1993; Mahmood et al., 2018). The urokinase pathway has been linked to interneuron tangential migration by acting through the c-Met receptor and hepatocyte growth factor (Powell et al., 2001).\n\nIn addition to its effects on intracellular signaling, SPARC and SerpinE1 also modulate interactions between cells and extracellular matrix (ECM). As a matricellular protein, SPARC functions at the interface between cells and ECM. Reduced collagen levels are observed in SPARC null mice and there is compelling evidence that SPARC reduces cell adhesion to ECM, enabling an intermediate state of adhesion that is conducive to migration (DiMilla et al., 1991; Palecek et al., 1997). SerpinE1 also modulates ECM by binding to vitronectin. This interferes with its binding to integrin \u03b1V, resulting in\u00a0greater integrin \u03b1V-fibronectin binding and reduced cell adhesion. In the context of neural stem cells, the balance between integrin \u03b1V interactions with vitronectin and fibronectin helps to regulate self-renewal versus differentiation (Dai et al., 2016; Varun et al., 2017). Vitronectin has a similar role in regulating differentiation in cerebellar granule precursors (Hashimoto et al., 2016).\n\nTaken together, we hypothesize that SPARC and SerpinE1 act by tipping the balance toward cell differentiation and migration. SerpinE1 does so possibly by modulating uPA/urokinase signaling, which is active in the MGE (Powell et al., 2001) and possibly by interfering with integrin interactions with vitronectin. SPARC likely acts as an anti-adhesive factor that favors cell migration, as has been described for radially\u00a0migrating cortical neurons with SPARC-like 1 (Gongidi et al., 2004). In future, it will be important to study the molecular basis for how SPARC and SerpinE1 function in regulating interneuron differentiation and migration.\n\nOf note, we empirically determined that human ventral telencephalic organoids require ~14 days pre-treatment with SPARC and SerpinE1 before we could detect enhanced migration in vitro. This may reflect a human-specific difference in responding to endothelial cues compared with mouse interneurons that operate under a more compressed timescale. In fact, this may account for previous observations by Nicholas and colleagues that migration of hSC-interneurons into host mouse cortex occurs at a slow rate over 7 months (Nicholas et al., 2013). This may be explained by host vascularization of the xenograft, which has been shown to occur over a period of months (Mansour et al., 2018). We hypothesize that pre-treatment with SPARC and SerpinE1 allows our xenograft to bypass host vascularization as a means to trigger migration. Therefore, pre-treatment may prime hSC-interneurons to more rapidly integrate and mature into the host cortex. Of note, we found that levels of SPARC and SerpinE1 were detected a low levels in the mouse MGE at e14.5 (data not shown), consistent with in situ hybridization from Allen Institute and GenePaint (Figure 3A and B). This stood in contrast to the higher levels of SPARC and SerpinE1 used to elicit a biological effect in hSC-interneurons. We hypothesize that this is due to context. In culture, SPARC and SerpinE1 are added to the medium and must diffuse through Matrigel-embedded organoids to reach hSC-interneurons. This is in contrast to the embryonic microenvironment in which vasculature is in close contact with interneuron progenitors, and this configuration likely enhances the effects of SPARC and SerpinE1. A number of studies have utilized bioengineering to recapitulate the vascular microenvironment (Raghavendran et al., 2016; Shirure et al., 2017). Employing SPARC and SerpinE1 in such a context could potentially amplify the effects we demonstrated in this study.\n\nOur findings demonstrate the utility of priming hSC-interneurons for transplantation by pre-inducing them to adopt a migratory state. Although there are likely other impediments to overcome before hSC-interneurons are fully synchronized with the developmental timescale of host mouse cortex, our findings represent an important step toward harnessing the full potential of hSC-interneurons. Cortical interneurons are critical modulators of brain function (Kepecs and Fishell, 2014; Tremblay et al., 2016) and it is important to develop human interneuron models of disease (Catterall, 2018; Inan et al., 2013; Mar\u00edn, 2012; Rapanelli et al., 2017). Moreover, our pre-treated hSC-interneurons also exhibit more maturity in vitro, suggesting SPARC/SerpinE1 treatment may also be effective when applied to organoid and monolayer approaches. Finally, consistent with previous work (Karakatsani et al., 2019), paracrine cues derived from ECs may similarly regulate the development of other neuronal populations. As such, our study may well serve as a general strategy for inducing hSC-neuron functional maturation in other neuronal cell types such as pyramidal neurons.\n\n## Materials and methods\n\n### MGE explant migration assay\n\nSwiss Webster timed plugs were generated to obtain embryos ranging in age from e10.5 to e15.5. MGE was microdissected under sterile conditions into ice-cold Leibovitz\u2019s L15 medium (Gibco). MGE tissue was then quickly embedded into low melt agarose (4%) in Leibovitz\u2019s L15 medium (Gibco). Embedded blocks were sectioned at 250 \u03bcm using a vibratome (Leica VT1000). MGE slices were then individually transferred into four-well slides, then covered with 300 \u03bcL Matrigel (Corning) (1:1 dilution) in Neurobasal medium (Gibco). Slides were then transferred to 37\u00b0C incubator for 15 min to allow Matrigel to solidify. Then, 300 \u03bcL MGE medium containing Neurobasal medium, 2% B27, 1% N2, 1% Glutamax, and 1% penicillin/streptomycin was added on top of Matrigel. After 48 hr, MGE explants were fixed at room temperature in 4% paraformaldehyde/PBS for overnight and DAPI (2 ng/mL) was added to the chamber to label explants. Following one wash with PBS, MGE explants were imaged by confocal microscopy. Confocal images were analyzed using ImageJ plugin, a combination of background removing, cell counting, and maximum intensity in order to automatically segment and quantify DAPI\u00a0+\u00a0nuclei.\n\nThe following reagents were added to MGE explants diluted in overlying Matrigel:\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Working concentration</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>p-EndoCM</td>\n      <td>1:1</td>\n    </tr>\n    <tr>\n      <td>EndoCM</td>\n      <td>1:1</td>\n    </tr>\n    <tr>\n      <td>SPARC</td>\n      <td>50 ng/mL</td>\n    </tr>\n    <tr>\n      <td>SerpinE1</td>\n      <td>20 ng/mL</td>\n    </tr>\n    <tr>\n      <td>SPARC function-blocking antibody (mab 303;\u00a0Sweetwyne et al., 2004)</td>\n      <td>1:5</td>\n    </tr>\n    <tr>\n      <td>SK216\u00a0(Masuda et al., 2013)</td>\n      <td>100 \u03bcM</td>\n    </tr>\n  </tbody>\n</table>\n\nFor untreated controls, the appropriate vehicle at the same volume was added to x medium. Vehicle for p-EndoCM and EndoCM: Neurobasal; vehicle for SPARC: water; vehicle for SerpinE1: PBS; vehicle for SPARC function-blocking antibody: PBS; vehicle for SK216: water. For controls comparing different treatment groups, vehicle control results were pooled.\n\n### Apcdd1 mouse mutants\n\nApcdd1 LOF mutants were generated by crossing the Apcdd1 conditional allele (Turakainen et al., 2009) to the heat shock promoter Cre deleter line (Dietrich et al., 2000) to generate a whole animal null. The Apcdd1 GOF line was generated as described previously (Mazzoni et al., 2017) in which a transgenic mouse (TRE3-Apcdd1-IRES-mCherry) is crossed to Cadherin-5::tTa (Sun et al., 2005), which results in an endothelial cell-specific Apcdd1 GOF mutant. All mice share the same mixed 129 and C57BL/6J genetic background. We used mixed 129 and C57BL/6J mice as a wildtype control group for comparison.\n\n### Organotypic slice culture migration assay\n\nWe employed a modified protocol previously described\u00a0(Baffet et al., 2016). Briefly, Dlx6aCre; Ai9 e11.5 embryos were sac\u2019d and whole brain was isolated by microdissection in aCSF medium bubbled with O2. Brains were embedded in low melt agarose (4%) in aCSF medium and sectioned by vibratome at a thickness of 250 \u03bcm. Sections were imaged live daily by confocal microscopy. Images were analyzed using ImageJ plugin trackMate in order to automatically segment and quantify migrating interneurons in cortex.\n\n### Cell lines\n\nThree cell lines were used in this study: two immortalized lines, HEK 293\u00a0and HBEC-5i, and one human iPSC line, NCRM1, which was modified by CRISPR to knock-in tdTomato into the AAVS1 locus. All lines were routinely tested for mycoplasma and certified as negative prior to use in experiments.\n\n### Derivation of conditioned medium\n\nPrimary mouse BECs were purified from P7 wildtype brains as described (Daneman et al., 2010), plated on gelatin-coated T75 flask and grown to confluence in mouse endothelial cell media supplemented with growth factors (VEGF, EGF, FGF-2, insulin) and 10% FBS media (Cell Biologics; Catalog # M1168; Chicago, IL) as described (Mazzoni et al., 2017). To collect p-EndoCM, cells were rinsed with PBS and then medium was switched to Neurobasal and 1% Glutamax for 3 days. Supernatant was collected, centrifuged at 4000 \u00d7 g for 15 min, and filtered to remove cells. Then medium was concentrated using a 3000 kDa MWCO Centricon column (Millipore). Concentrated medium was stored at \u221280\u00b0C until use. Similarly, HBEC-5i cells were maintained in DMEM/F12, 10%\u00a0FBS, 40 \u03bcg/mL endothelial cell growth supplement medium, rinsed with PBS, and then switched to Neurobasal, 1% Glutamax medium for 3 days. EndoCM was similarly spun down, filtrated, and concentrated using 3000 kDa MWCO Centricon column (Millipore). Concentrated EndoCM was also stored at \u221280\u00b0C until use. For size fractionation experiments, 10, 50, and 100 kDa MWCO Centricon columns (Millipore) were used for media concentration. Control medium was unconditioned medium fractionated with 3000 kDa MWCO column. HEK 293 cells were maintained in DMEM, 10%\u00a0FBS, 1% Glutamax medium and switched to Neurobasal, 1% Glutamax medium following PBS rinses to collect HEK CM. It was also concentrated using 3000 kDa MWCO Centricon columns.\n\n### RNA sequence analysis\n\nHBEC-5i and HEK 293 cells were switched over to Neurobasal, 1% Glutamax medium in the same manner as if EndoCM and HEK CM were to be collected. Three days later, cells were harvested in Trizol and RNA was purified using directZol miniPrep kit (Zymo). Samples were quality-controlled and sequenced at Novogene using Illumina HigSeq/MiSeq with a sequencing depth of 20 million reads. Sequence data was then analyzed using DAVID to identify high confidence differentially\u00a0expressed hits of the appropriate molecular weight. These data were further screened by GO search term \u2018extracellular space\u2019 to identify secreted factors. Additional curation was performed to remove membrane-tethered proteins and pseudogenes in order to arrive at a short list of candidates (Supplementary file 1).\n\n### Immunohistochemistry and western blots\n\nImmunohistochemistry on Apcdd1 mutants were as described previously\u00a0(McKenzie et al., 2019). E14.5 Apcdd1 mutant and wildtype control brains were cryosectioned at 16 \u03bcm and immunolabeled with Alexa488-tagged isolectin (1:100; Thermo Fisher Scientific); calbindin (1:1000; ImmunoStar). Sections were acquired as tiled maximum projection images for analysis using FIJI for blood vessel quantification and ImageJ plugin cell counting for segmentation and calbindin\u00a0+\u00a0cell counts. Western blot antibodies: Goat-anti-SPARC (1:1000; R&DSystems) and rabbit-anti-SerpinE1 (1:1000; Abcam) were used to detect EndoCM and HEK CM concentrated medium, both loaded with 20 \u03bcL. Xenograft 50 \u03bcm sections were immunolabeled with anti-Dlx2 (1:1000; Millipore).\n\n### Human fetal cortical tissue\n\nWe obtained fetal tissue samples for research following induced termination of pregnancy for maternal indications. Sample collection followed the policies of the Columbia University Irving Medical Center Institutional Review Board. IRB waiver AAAS5541 was obtained for non-human subjects research, deemed medical waste.\n\n### Human stem cell differentiation\n\nParental human iPSC line (NCRM 1, NIH Common Fund Regenerative Medicine Program) was genetically altered by CRISPR-mediated targeting of AAVS1 locus to introduce floxed-stop CAG-boosted tdTomato donor DNA construct. EF1-alpha promotor-driven Cre recombinase was introduced episomally to generate pan-tdTomato\u00a0+\u00a0human iPSC line (pan-red line). The\u00a0pan-red line was differentiated toward ventral telencephalic fate using and adaptation of previously described methods\u00a0(Bagley et al., 2017; Xiang et al., 2017). In brief, pan-red hiPSCs were plated into ultra-low attachment u-bottom 96-well plates (9000 cells/well) in neural induction medium containing LDN-193189 (100 mM), SB431542 (10 mM), and XAV939 (10 mM) to form organoids for 10 days. From days 10\u00a0to\u00a017, cells changed to neuronal differentiation medium containing N2 and B27 (Invitrogen) with IWP2 (2.5 \u03bcM) and SAG (100 nM). From day 18 onward, neuronal differentiation medium also contains BDNF (20 \u03bcg/mL), cAMP (125 mM), and ascorbic acid (200 \u03bcg/mL). At day 35, SPARC (50 ng/mL) and SerpinE1 (20 ng/mL) are added for 14 days. At day 49, organoids are gently dissociated in EDTA for 5 min, then Acutase 15 min at 37\u00b0C for downstream experiments (in vitro migration assays and xenotransplants).\n\n### Xenograft migration and morphology analysis\n\nWe performed stereotactic intracranial injections into the right frontal subcortical white matter (coordinates from bregma: 1.0 mm right \u2013 1.0 mm front \u2013 1.0 mm deep) of NRG (NOD.Cg-Rag1tm1MomIl2rgtm1Wjl/SzJ, Jackson Laboratories) mouse pups at P6\u20139 as previously described, adapted for mouse pups\u00a0(Lei et al., 2011). We injected 12 P5/P6 NRG pups with control and 12 P5/P6 NRG pups with SPARC/SerpinE1-treated cells (~50,000 cells/injection). At 28 and 56 days post-injection, animals were sacrificed and brains were processed for analysis (below). All procedures were performed according to Columbia University IACUC protocol no. AC-AAAV0463.\n\nOne month post-transplant, host cortex was sectioned by vibratome at 50 \u03bcm. Migratory distance was assessed by scoring tdTomato\u00a0+\u00a0cell linear distance from graft site. Two months post-transplant, 300 \u03bcm vibratome sections were imaged by confocal microscopy to visualize tdTomato\u00a0+\u00a0cell morphology. Processes were traced using ImageJ plugin NeuronJ to assess neurite length and degree of branching.\n\n### Acute brain slice preparation and electrophysiology\n\nA more complete description of acute brain slice preparation and basic electrophysiology methods has been previously described (Crabtree et al., 2016; Crabtree et al., 2017).\n\nBriefly, mice were anesthetized with isoflurane, decapitated, and brains were removed quickly and chilled in ice-cold dissection solution, which contained the following (in mM): 195 sucrose, 10 NaCl, 2 NaH2PO4, 5 KCl, 10 glucose, 25 NaHCO3, 4 Mg2SO4, and 0.5 CaCl2, and was bubbled with 95%O2/5%CO2. Coronal brain slices (~300\u00a0\u00b5m) centered on the injection site of the transplanted stem\u00a0cell-derived neurons were cut using a vibratome (a region covering the PFC through the region\u00a0~1 mm caudal to the corpus callosum). After slicing, brain slices were immediately transferred to a recovery chamber and incubated at room temperature in recording solution for a minimum of 30 min before recording. Total time between decapitation and procedure end was typically 12\u201316 min.\n\nAt the time of recording, slices were transferred to a submerged recording chamber and continuously perfused with standard aCSF (Crabtree et al., 2016). Whole-cell patch-clamp recordings were made using borosilicate glass pipettes (initial resistance, 2.0\u20135.5 M\u03a9). An internal solution was used that contained the following (in mM): KMeSO4 145, HEPES 10, NaCl 10, CaCl2 1, MgCl2 1, EGTA 10, Mg-ATP 5, and Na2GTP 0.5, pH 7.2 with KOH. Solution junction potentials were small and were not corrected.\n\n### Basic electrophysiology\n\nRecordings employed an Axon 700B MultiClamp amplifier, CV-7B headstage, and a Digidata 1440A data acquisition system. All signals were acquired at 10 kHz (100\u00a0\u00b5s). With the exception of spontaneous synaptic recordings (filtered at 2 kHz), all other signals were filtered at 10 kHz. Cells targeted for recording were identified by red fluorescence. Confirmation of correctly targeted recordings was further validated by observation of a significant reduction in red fluorescent signal in the recorded cell at the end of the recording likely resulting from \u2018wash-out\u2019 of the indicator protein via the recording pipette solution.\n\n#### Current clamp recordings\n\nAll cells were forced to \u221270 mV with a small negative current of variable amplitude. Bridge-balance mode was employed to minimize voltage errors and artifacts.\n\nResting membrane potential was reported as the cell voltage in I\u00a0=\u00a00 mode observed shortly after whole-cell membrane rupture. The majority of cells were silent at rest leading to an uncomplicated reporting of Vrest. A minority of cells (typically more hyperpolarized cells), however, displayed spontaneous AP or AP-like events rendering Vrest measures somewhat ambiguous. In this subset, Vrest was estimated as the midpoint voltage between the AP threshold voltage and deepest hyperpolarization after the AP.\n\n#### Membrane time constant\n\nUsing small hyperpolarizing current steps, the region of the voltage response from 5 ms after the start of the step to 205 ms within the step was fitted with a single exponential using the standard Clampfit Chebyshev\u00a0method fitting routine. Accuracy of fits were further confirmed visually.\n\nAPs were elicited in cells forced to \u221270 mV with small (2.5\u20135 pA), incremental current steps of 500 ms duration. Unless otherwise\u00a0indicated, reported metrics assessed the first AP elicited from current step recordings.\n\n#### AP width\n\nThe first AP elicited from current step recordings was used for analysis. AP widths were measured using the standard Clampfit analysis routine \u2018half-width\u2019, the AP width at half-height, and reported as AP width.\n\n#### AP threshold\n\nThe first AP elicited from current step recordings was used for analysis. The voltage trace of this current step was converted to a time versus dV/dt plot and overlaid onto the original AP voltage trace. AP threshold was then determined visually as the first significant deviation of dV/dt from its baseline rate. All traces analyzed were assessed together in a single analysis session and all traces were displayed at the same time and dV/dt scale to avoid bias in threshold detection. A subset of traces were converted to \u2018phase-plane\u2019 plots (V versus dV/dt) to further validate threshold assignments.\n\nAP maximum rate of rise (dV/dt max) was determined using the standard Clampfit \u2018maximum rise slope\u2019 routine. As with other AP measures, the first AP elicited from current step recordings was used for analysis.\n\n#### Voltage clamp recordings\n\nAll cells were held at \u221270 mV unless otherwise noted. As cell resistances were high (typically\u00a0~1\u20132 G\u03a9), pipette series resistances were low (typically\u00a0<10 M\u03a9), and maximal elicited currents were relatively small (typically 1\u20133\u00a0nA), series resistance compensation was not employed. The cell capacitance reported is that reported by the 700B amplifier which is the fast component which represents contributions from the soma and proximal process compartments.\n\nVoltage-activated currents were elicited with incremental 100 ms voltage steps (from \u2212100 mV to\u00a0+50 mV) of 100 ms duration in cells held at \u221270 mV. Membrane resistance was determined from the current response of the voltage step to \u221280 mV (\u00b5V, \u221210 mV). Transient inward sodium currents were reported as the maximal sodium current elicited (I-Namax), typically observed at the step to \u221220 or \u221230 mV. Outward potassium currents were reported as the maximal potassium current elicited (I-Kmax) at the step to\u00a0+50 mV. The I-Na/I-K ratio was then derived from these two values.\n\nSpontaneous synaptic transmission was recorded from cells held at \u221270 mV in the absence of TTX. A standard recording duration of 3 min was employed. The observed synaptic events are likely dominated by glutamatergic synaptic events as the reversal potential for GABA-A currents of our solution combination was ~\u221260 mV. The frequency of synaptic events was highly variable between cells with some cells \u2018silent\u2019 (or nearly so) while other cells had synaptic event frequencies in excess of 20 Hz. Due to the extreme variability in these synaptic event profiles, herein we present only exemplary traces of the synaptic activity we observed.\n\n#### Statistics\n\nElectrophysiological parameters were compared with pairwise t-tests between conditions. t-Tests were one-tailed with a directional hypothesis of \u2018more maturity\u2019 of the metric in the treated group.\n",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "5a11fac1-d500-429b-865c-e12f7d1b2927",
+      "submission_id": "57b13e3c-5591-4559-b5e6-8fa7c7b2555d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joseph G Gleeson, Howard Hughes Medical Institute, The Rockefeller University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56063.sa1](https://doi.org/10.7554/eLife.56063.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors demonstrate the important role for vascular derived factors in the migration and maturation of sub cortically derived interneurons. The reviewers were enthusiastic about the work but had some criticisms that the authors have addressed fully in their revised version.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Vascular-Derived SPARC and SerpinE1 Regulate Interneuron Tangential Migration and Maturation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is 'in revision at eLife'. Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nIn this manuscript, Genestine et al. demonstrate that two endothelial cell-derived paracrine factors, SPARC and SerpinE1, enhance interneuron migration in mice and may facilitate rapid migration and maturation of human stem cell derived interneurons. Authors characterize embryonic vascularization of the median ganglionic eminence (MGE) and its effect on interneuron migration into the cortex. Following the observation that an increase in MGE vascularization closely coincides with this migration event, they demonstrate that endothelial cell conditioned media enhances interneuron motility in vitro. The authors then identify two secreted protein factors in the endothelial-conditioned media \u2013 SPARC and Serpin E1 \u2013 necessary and sufficient for increased interneuron migration in their in vitro system. In a subsequent series of experiments, the authors show that treatment of iPSC-derived human interneurons with these factors significantly enhances the cells' maturation and motility in a mouse xenograft. While the significance of CNS vasculature in regulating interneuron migration and maturation in mice is well established, the main advance provided by this study is the potential role of SPARC and SerpinE1 in accelerating human interneuron developmental maturation. In general, this study and its conclusions are supported by a complementary array of interneuron migration assays (in mice and transplanted hSC-INs) and whole cell electrophysiological recording of interneurons. But from a neurodevelopmental perspective the manuscript's central claim \u2013 that vascular-derived SPARC and SerpinE1 regulate interneuron migration \u2013 remains insufficiently supported. While the experiments presented hint at the existence of an exciting endothelial-neuronal interaction it falls short of establishing its operation in vivo.\n\nEssential revisions:\n\n1. Loss-of-function in vivo studies would be necessary to confidently establish a role for these secreted proteins. While this study provides some very interesting data, the authors have not shown that it is specifically vascular endothelial-derived SPARC and SerpinE1 that regulates interneuron migration and maturation. It is widely appreciated that primary brain endothelial cells rapidly de-differentiate and lose key aspects of their organotypic character when cultured in vitro. As a result, the generalizability of the SPARC and Serpin E1 phenotypes to an in vivo developmental setting cannot be assumed. The authors did not specifically block or delete the function of vascular-derived SPARC and SerpinE1. The authors test the requirement of vascular-derived SPARC and SerpinE1 by inhibiting the ability of endothelial conditioned media to induce migration of interneurons in explants. Unfortunately this experiment does not specifically block vascular-derived SPARC and SerpinE1 as there is evidence that SPARC is expressed by other cell types in the brain (astrocytes Kucukderily et al. 2011, 10.1073/pnas.1104977108, and figure 3A VZ/SVZ and 3B cortical VZ/SVZ). To show the requirement of endothelial SPARC and SerpinE1, the authors could do any of the following experiments: (A) generate conditioned media from mouse primary endothelial cells, deplete CM of SPARC, SerpinE1 or both, and compare if depleted CM induce less migration than intact CM in brain slices. (B) Test if conditional deletion of SPARC or SerpinE1 in endothelial cells prevents or reduces interneuron migration. There are floxed allele mice for SPARC (Ramu 2019, 10.1016/j.ebiom.2019.09.024) and SerpinE1 (Jiang 2017, doi.org/10.1111/acel.12643). (C) Instead strengthening the human work, so that in the end this work can at least advance our ability to accelerate human neuron differentiation process.\n\n2. A clear indication that endothelial cells is the source of the physiological levels of SPARC is needed. SPARC has been studied extensively in astrocytes which could be the source. What is the developmental pattern of expression of SPARC and SerpinE1 in human embryonic development? Do they correspond to the slow rate of interneuronal migration and maturation in human cortex. Publicly available database (e.g. Allen Brain) might have this information, or authors could potentially provide some simple experiments to address this.\n\n3. Is the amount of SPARC and SerpinE1 used in the treatment of hSC-Ins at physiologically relevant levels (either in the context of mouse or human cortex)?\n\n4. The authors do not attempt to explore a mechanism-of-action for the endothelial-derived cues they identify. Which receptors do they interface with to interact with interneurons? Broadly, what intracellular changes do they induce to promote a migratory state? At the very least, discussions of potential answers to these questions are needed for the work to represent a significant scientific advance.\n",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4385abf0-43ed-475f-8a26-99e51de8bc96",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C1",
+      "claim": "Cortical interneurons establish inhibitory microcircuits throughout the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical interneurons establish inhibitory microcircuits throughout the neocortex and their dysfunction has been implicated in epilepsy and neuropsychiatric diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about cortical interneurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "a03bf4fa-e7fd-47c2-a6c2-0b9d90d8e20e",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C2",
+      "claim": "Cortical interneuron dysfunction has been implicated in epilepsy and neuropsychiatric diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical interneurons establish inhibitory microcircuits throughout the neocortex and their dysfunction has been implicated in epilepsy and neuropsychiatric diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by references to prior literature on interneuron dysfunction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "a77b2ba6-7f57-4472-b108-c7fa6740ac92",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C3",
+      "claim": "Interneurons migrate from a distal progenitor domain to populate the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmentally, interneurons migrate from a distal progenitor domain in order to populate the neocortex \u2013 a process that occurs at a slower rate in humans than in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about interneuron development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "447a3dd6-f1a3-4327-9179-733d77b29213",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C4",
+      "claim": "Interneuron migration occurs at a slower rate in humans than in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmentally, interneurons migrate from a distal progenitor domain in order to populate the neocortex \u2013 a process that occurs at a slower rate in humans than in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on species differences in interneuron migration.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c1f3efd6-9387-4390-aa88-cbc0f0d88991",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C5",
+      "claim": "Blood vessels of the medial ganglionic eminence (MGE) regulate the process of initiating interneuron migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using embryonic mouse development as a model system, we found that the process of initiating interneuron migration is regulated by blood vessels of the medial ganglionic eminence (MGE), an interneuron progenitor domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "543275e0-8ebf-4f6c-bd9b-4fa1a059bbca",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C6",
+      "claim": "SPARC and SerpinE1 are endothelial cell-derived paracrine factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two endothelial cell-derived paracrine factors, SPARC and SerpinE1, that enhance interneuron migration in mouse MGE explants and organotypic cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data and western blot analysis showing expression in endothelial cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "7dbfc79e-8558-4f52-a497-3916d8b7bd65",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C7",
+      "claim": "SPARC and SerpinE1 enhance interneuron migration in mouse MGE explants and organotypic cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two endothelial cell-derived paracrine factors, SPARC and SerpinE1, that enhance interneuron migration in mouse MGE explants and organotypic cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from MGE explant and organotypic culture assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "bbef77f3-7cad-4e66-ae6b-a014c1a7d3f0",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C8",
+      "claim": "Pre-treatment of human stem cell-derived interneurons (hSC-interneurons) with SPARC and SerpinE1 prior to transplantation into neonatal mouse cortex enhanced their migration in the host cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, pre-treatment of human stem cell-derived interneurons (hSC-interneurons) with SPARC and SerpinE1 prior to transplantation into neonatal mouse cortex enhanced their migration and morphological elaboration in the host cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by xenograft experimental data showing increased migratory distance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "81c658d2-2234-4c83-9719-a7318946bec9",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C9",
+      "claim": "Pre-treatment of hSC-interneurons with SPARC and SerpinE1 enhanced their morphological elaboration in the host cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, pre-treatment of human stem cell-derived interneurons (hSC-interneurons) with SPARC and SerpinE1 prior to transplantation into neonatal mouse cortex enhanced their migration and morphological elaboration in the host cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by morphological analysis showing longer processes and more branches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "ac54f58b-812d-49be-b9a6-a211fe664ff8",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C10",
+      "claim": "SPARC and SerpinE1-treated hSC-interneurons exhibited more mature electrophysiological characteristics compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, SPARC and SerpinE1-treated hSC-interneurons also exhibited more mature electrophysiological characteristics compared to controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by whole-cell recording data showing multiple electrophysiological parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "de4d637e-3177-4a60-9bf0-7937c3114b35",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C11",
+      "claim": "CNS vasculature plays a critical role in regulating interneuron developmental maturation in both mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our studies suggest a critical role for CNS vasculature in regulating interneuron developmental maturation in both mice and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings in both mouse and human systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "4eb18c4a-2d8b-4dad-be18-0622748a8fc7",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C12",
+      "claim": "Interneuron migration lasts days in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The timescale for interneuron migration varies widely across species. The process lasts days in mice (Lavdas et al., 1999; Mar\u00edn and Rubenstein, 2001) and several months in humans (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "ab76867d-e580-4171-a05c-54cf585acc09",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C13",
+      "claim": "Interneuron migration lasts several months in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The timescale for interneuron migration varies widely across species. The process lasts days in mice (Lavdas et al., 1999; Mar\u00edn and Rubenstein, 2001) and several months in humans (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "40c9eb1e-53ce-4105-bc74-398c9bbac375",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C14",
+      "claim": "Mouse ES-derived interneurons develop rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "This species difference extends to stem cell-derived interneurons where mouse ES-derived interneurons develop rapidly (Au et al., 2013; Maroof et al., 2010; McKenzie et al., 2019), while human stem cell-derived interneuron (hSC-interneuron) development is protracted (Nicholas et al., 2013; Shao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "8b3b13bd-46d4-410d-9689-3f0f1e9bfc82",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C15",
+      "claim": "Human stem cell-derived interneuron (hSC-interneuron) development is protracted.",
+      "claim_type": "EXPLICIT",
+      "source": "This species difference extends to stem cell-derived interneurons where mouse ES-derived interneurons develop rapidly (Au et al., 2013; Maroof et al., 2010; McKenzie et al., 2019), while human stem cell-derived interneuron (hSC-interneuron) development is protracted (Nicholas et al., 2013; Shao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "79998271-741d-498b-8c7d-f2dbc2f5b3ab",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C16",
+      "claim": "The protracted development of hSC-interneurons has restricted the scope of analysis and hampered detailed functional studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this limitation has restricted the scope of analysis on hSC-interneurons, hampering detailed functional studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known slow development of hSC-interneurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c59fa1cc-3a63-4241-8b36-b0ef2781bf69",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C17",
+      "claim": "Interneuron migration coincides with vascularization of the medial ganglionic eminence (MGE).",
+      "claim_type": "EXPLICIT",
+      "source": "Using embryonic mouse development as a model system, we found that interneuron migration coincides with vascularization of the medial ganglionic eminence (MGE), and that by manipulating the degree of MGE vascularization in vivo, it regulates the degree of interneuron migration into the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histological analysis showing temporal correlation between vascularization and migration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "5bb99f11-75c5-4610-9cc3-ae38089c8a15",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C18",
+      "claim": "Manipulating the degree of MGE vascularization in vivo regulates the degree of interneuron migration into the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Using embryonic mouse development as a model system, we found that interneuron migration coincides with vascularization of the medial ganglionic eminence (MGE), and that by manipulating the degree of MGE vascularization in vivo, it regulates the degree of interneuron migration into the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from Apcdd1 mutant mice showing altered vascularization and migration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "8b3c448d-67f8-40b8-b7ed-aee32d4edae5",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C19",
+      "claim": "Interneurons in mice and humans share a common vascular-based mechanism that regulates their developmental timing.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that interneurons in mice and humans share a common vascular-based mechanism that regulates their developmental timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental findings in both species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "8bf5745d-3cf0-4266-92a4-31ba36e5e362",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C20",
+      "claim": "Interneurons are generated starting ~e11 in the embryonic mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In the embryonic mouse, this developmental process is rapid: interneurons are generated starting ~e11 and robustly migrate into the cortex by e15 (Figure 1A; Lavdas et al., 1999; Mar\u00edn and Rubenstein, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature and data shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "74730344-7195-4080-b002-e6e73d6b1138",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C21",
+      "claim": "Interneurons robustly migrate into the cortex by e15 in the embryonic mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In the embryonic mouse, this developmental process is rapid: interneurons are generated starting ~e11 and robustly migrate into the cortex by e15 (Figure 1A; Lavdas et al., 1999; Mar\u00edn and Rubenstein, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature and data shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "05966cf5-5894-4907-ab5f-6a773bf9540d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C22",
+      "claim": "In human fetal development, postmitotic interneurons slowly transition to a migratory state to populate the neocortex over the course of many weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have found that postmitotic interneurons slowly transition to a migratory state to populate the neocortex over the course of many weeks (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c14d8134-47c0-4efc-b6fa-e90dbb21588c",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C23",
+      "claim": "There is an increase in the density of Dlx2+ interneurons in the human fetal cortex over time (15 post-conception weeks [pcw] to 22 pcw).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior reports, we observed an increase in the density of Dlx2+ interneurons in the cortex over time (15 post-conception weeks [pcw] to 22 pcw) (Figure 1B, Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1B and Figure 1\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "a0a1995c-d90d-4db6-80ff-1a50330f6418",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C24",
+      "claim": "There is a striking increase in vascularization of the MGE and the underlying mantle region during the time period when mouse interneuron migration initiates (e10.5 to e15.5).",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore examined the developing mouse MGE (from e10.5 to e15.5) by histology and observed a striking increase in vascularization of the MGE and the underlying mantle region during the time period when mouse interneuron migration initiates (Figure 1C,D; Daneman et al., 2009; Paredes et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological data shown in Figure 1C,D and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "17a21d89-8163-4835-9e88-222d1a8aa365",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C25",
+      "claim": "Vascularization of human fetal MGE slowly increased with developmental age, with robust vascularization not occurring until after 20 pcw.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that vascularization of human fetal MGE slowly increased with developmental age, with robust vascularization not occurring until after 20 pcw (Figure 1E, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1E and Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "5f003ad9-958d-466a-a964-bc47e5850a97",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C26",
+      "claim": "Genetic manipulation of vascular pruning affects the number of interneurons migrating into the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that not only does vascularization of mouse MGE coincide with interneuron migration, but it also plays a regulatory role since genetic manipulation of vascular pruning affects the number of interneurons migrating into the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from Apcdd1 mutant mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "b109314d-7039-4a46-8236-1ab7ea86117e",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C27",
+      "claim": "Vascularization in the MGE is decreased in Apcdd1 GOF mice versus wildtype controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined MGE vessel density and average vessel size in Apcdd1 GOF (an endothelial cell-specific transgenic gain-of-function) and LOF (whole animal null) mutants at e14.5 and found that, similar to the retina and cerebellum (Mazzoni et al., 2017), vascularization in the MGE is decreased in Apcdd1 GOF and increased in Apcdd1 LOF mice versus wildtype controls (Figure 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification of isolectin staining shown in Figure 1F\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c6ab8d1a-3d88-4ba9-8bf8-6c390de50131",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C28",
+      "claim": "Vascularization in the MGE is increased in Apcdd1 LOF mice versus wildtype controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined MGE vessel density and average vessel size in Apcdd1 GOF (an endothelial cell-specific transgenic gain-of-function) and LOF (whole animal null) mutants at e14.5 and found that, similar to the retina and cerebellum (Mazzoni et al., 2017), vascularization in the MGE is decreased in Apcdd1 GOF and increased in Apcdd1 LOF mice versus wildtype controls (Figure 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification of isolectin staining shown in Figure 1F\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "13dc3e9d-4f66-4e7e-892f-4d483bfbc175",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C29",
+      "claim": "Fewer interneurons migrated into the cortex in Apcdd1 GOF mutants compared to wildtype controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, fewer interneurons migrated into the cortex in Apcdd1 GOF mutants, in which vascularization was less extensive compared to wildtype controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification of calbindin+ cells shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "91ec9ef5-9fba-49e4-b577-ad8c4317b54a",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C30",
+      "claim": "There is a trend toward more calbindin+ migrating interneurons in Apcdd1 LOF mutants (p=0.236, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a trend toward more calbindin + migrating interneurons were present in Apcdd1 LOF mutants (p=0.236, paired t-test) in which vessel size and density was greater (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 1I, though not statistically significant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "e5777e1a-51b5-407f-95c9-a0baae627bf3",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C31",
+      "claim": "The density of endothelial cells within neural tissue is a critical regulator of interneuron migration.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the density of endothelial cells within neural tissue is a critical regulator of interneuron migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the Apcdd1 mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "09938203-07fd-4795-89ed-f117e23f5891",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C32",
+      "claim": "Apcdd1 expression is confined to vasculature in the embryonic mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that a whole animal Apcdd1 null was appropriate for analysis, we performed in situ hybridization for Apcdd1 and found that its expression is confined to vasculature in the embryonic mouse brain (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "58a699e6-6c65-45b4-8788-e4e12b27c674",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C33",
+      "claim": "There is a strong linear correlation between the number of migratory cells and MGE explant surface area (r2 = 0.6829).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we found a strong linear correlation between the number of migratory cells and MGE explant surface area (r2 = 0.6829) (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "f4be1fa0-9814-49bd-984f-57aa24c317e2",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C34",
+      "claim": "Nearly all migratory DAPI+ cells in MGE explants are interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found that nearly all migratory DAPI + cells were interneurons using the Dlx6aCre driver line crossed to Ai9 in order to fate-map the migratory lineage (Monory et al., 2006; Figure 1\u2014figure supplement 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fate-mapping data shown in Figure 1\u2014figure supplement 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "ed87385f-ae3b-4c28-924f-ba93a27ccb4d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C35",
+      "claim": "Interneurons from later timepoint MGE explants exhibited robust migration, whereas explants from earlier timepoints (e10.5\u2013e12.5) had a limited capacity to migrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we found that interneurons later timepoint MGE explants exhibited robust migration, whereas explants from earlier timepoints (e10.5\u2013e12.5) had a limited capacity to migrate (Figure 2B, Figure 1\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 2B and Figure 1\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "bba99042-60b6-4d6f-98db-d499ce9e99ff",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C36",
+      "claim": "Early MGE explants did not significantly migrate more after the first 48 hr, even when cultured for up to a week.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even when cultured for up to a week, early explants did not significantly migrate more after the first 48 hr (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments, though data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c04573d6-183d-4520-b084-414b17eb2a7a",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C37",
+      "claim": "Endothelial cells produce a paracrine signal to induce interneuron migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the diffuse distribution of blood vessels in the MGE, the most likely mechanism is that endothelial cells produce a paracrine signal to induce interneuron migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the distribution of blood vessels and tested experimentally.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "a79571d6-3c0d-40f7-a301-32b0ecad821c",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C38",
+      "claim": "Addition of primary culture endothelial cell conditioned medium (p-EndoCM) resulted in a robust increase in interneuron migration from e11.5 MGE explants.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this directly, we prepared conditioned medium from primary cultures of embryonic brain ECs (primary culture endothelial cell conditioned medium [p-EndoCM]) and added it to e11.5 MGE explants. Consistent with our hypothesis, addition of p-EndoCM resulted in a robust increase in interneuron migration (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "77d27781-5aee-4485-9edd-7084c2633219",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C39",
+      "claim": "Conditioned medium from HBEC-5i (EndoCM) robustly increased e11.5 MGE explant migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to p-EndoCM, conditioned medium from HBEC-5i (EndoCM) also robustly increased e11.5 MGE explant migration (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "f7078c00-d22b-44df-85c7-8b7a972d75c2",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C40",
+      "claim": "EndoCM significantly increased e14.5 MGE migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, e14.5 MGE migration was also significantly increased by EndoCM (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "701b8b90-743a-4e7a-8c7d-f99e035bc1ba",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C41",
+      "claim": "EndoCM significantly increased the rate and overall number of interneurons that migrated into the cortex in organotypic slice cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "As with MGE explants, EndoCM also significantly increased the rate and overall number of interneurons that migrated into the cortex (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "98abaf2f-4caf-49b7-923b-383f10f73e2d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C42",
+      "claim": "Conditioned medium from HEK 293 cells (HEK CM) did not increase MGE explant migration at either e11.5 or e14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control, we tested the biological activity of conditioned medium from HEK 293 cells (HEK CM). HEK CM did not increase MGE explant migration at either age (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "e6806265-a70f-45c5-b868-8501b112cda5",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C43",
+      "claim": "Pre-boiling EndoCM eliminated its biological activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that pre-boiling EndoCM eliminated its biological activity, suggesting a protein source as a regulator of interneuron migration (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "88165fbe-3004-4ceb-afa7-fb8ce4796a44",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C44",
+      "claim": "The biological activity of EndoCM was strongly reduced between 30 and 100 kDa in size fractionation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we size-fractionated EndoCM and found that biological activity was strongly reduced between 30 and 100 kDa (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "0da8d7ab-6543-49b9-beec-fe34d376dcc2",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C45",
+      "claim": "SPARC is expressed in the embryonic CNS vasculature at e14.5 MGE.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the expression of SPARC and SerpinE1 in e14.5 MGE through publicly available expression databases (Allen Brain Atlas and GenePaint) and found that both were specifically expressed in the embryonic CNS vasculature (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "aa7a5530-752a-4455-973b-231942d12bfb",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C46",
+      "claim": "SerpinE1 is expressed in the embryonic CNS vasculature at e14.5 MGE.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the expression of SPARC and SerpinE1 in e14.5 MGE through publicly available expression databases (Allen Brain Atlas and GenePaint) and found that both were specifically expressed in the embryonic CNS vasculature (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "b0294f71-b120-462f-8cae-801c4a57381d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C47",
+      "claim": "SPARC and SerpinE1 were present in EndoCM at significantly higher levels compared to HEK292 CM.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed by western blotting that SPARC and SerpinE1 were present in EndoCM at significantly higher levels compared to HEK292 CM (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "81e0c53d-f1ff-4fd1-9d67-0d6e5befd4e3",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C48",
+      "claim": "Recombinant SPARC increased cell migration in MGE explants.",
+      "claim_type": "EXPLICIT",
+      "source": "We then added recombinant SPARC or SerpinE1 to MGE explants and found that cell migration was increased, in particular with SerpinE1 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "6740f943-845c-4c79-ad2c-c6432fc0a61b",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C49",
+      "claim": "Recombinant SerpinE1 increased cell migration in MGE explants, in particular more than SPARC.",
+      "claim_type": "EXPLICIT",
+      "source": "We then added recombinant SPARC or SerpinE1 to MGE explants and found that cell migration was increased, in particular with SerpinE1 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "bd89b235-8d6b-4e30-bedb-ead2d64c25a7",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C50",
+      "claim": "A function-blocking antibody for SPARC significantly reduced the capacity of EndoCM to increase e11.5 MGE migration.",
+      "claim_type": "EXPLICIT",
+      "source": "These reagents separately significantly reduced the capacity of EndoCM to increase e11.5 MGE migration (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c00b458d-12ff-47ec-8ec2-ada66dc7c89f",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C51",
+      "claim": "A small molecule inhibitor (SK216) for SerpinE1 significantly reduced the capacity of EndoCM to increase e11.5 MGE migration.",
+      "claim_type": "EXPLICIT",
+      "source": "These reagents separately significantly reduced the capacity of EndoCM to increase e11.5 MGE migration (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "739bd0fd-f7e6-45a6-9c48-867cdf2ce875",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C52",
+      "claim": "Inhibition of both SPARC and SerpinE1 does not reduce interneuron migration further than inhibiting either alone, suggesting that the two molecules may act on intersecting pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "However, inhibition of both SPARC and SerpinE1 does not reduce interneuron migration further, suggesting that the two molecules may act on intersecting pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of additive effect when both are inhibited.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "d5506f12-ecba-4622-8dfc-44dfa56500fe",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C53",
+      "claim": "SPARC significantly increased the rate and overall number of interneurons that migrated into the cortex over time in organotypic slice cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested whether SPARC and SerpinE1 could increase interneuron migration in an organotypic slice over time. We found that both proteins significantly increased the rate and overall number of interneurons that migrated into the cortex over time (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "4fa6a588-d201-41f9-96b5-6049d971bd70",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C54",
+      "claim": "SerpinE1 significantly increased the rate and overall number of interneurons that migrated into the cortex over time in organotypic slice cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested whether SPARC and SerpinE1 could increase interneuron migration in an organotypic slice over time. We found that both proteins significantly increased the rate and overall number of interneurons that migrated into the cortex over time (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "715e0cf9-fc93-4b24-a42f-c31bf8f82bb6",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C55",
+      "claim": "p-EndoCM increased interneuron migration into the cortex in organotypic slice cultures over control.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that p-EndoCM increased interneuron migration into the cortex in organotypic slice cultures over control and that the effect was abrogated by adding SPARC function-blocking antibody and SK216 to p-EndoCM (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "edd9ba6b-6eae-4d2e-a9bc-4e254d7e8a9d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C56",
+      "claim": "The effect of p-EndoCM on interneuron migration was abrogated by adding SPARC function-blocking antibody and SK216 to p-EndoCM.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that p-EndoCM increased interneuron migration into the cortex in organotypic slice cultures over control and that the effect was abrogated by adding SPARC function-blocking antibody and SK216 to p-EndoCM (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "d325819d-3894-4395-9e72-3803e357e0a6",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C57",
+      "claim": "hSC-interneurons migrate and mature at a slow rate, reminiscent of the protracted time frame of interneuron development in the human fetus.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that hSC-interneurons migrate and mature at a slow rate, reminiscent of the protracted time frame of interneuron development in the human fetus (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "e0c21f0a-ec01-4609-bb47-7ba9cc7321a5",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C58",
+      "claim": "There was a significant increase in migratory distance in hSC-interneurons treated both before and after dissociation with SPARC and SerpinE1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant increase in migratory distance in the group treated both before and afterward with SPARC and SerpinE1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "875959ef-4511-4c82-8994-bdb7d9525439",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C59",
+      "claim": "An even greater biological effect was observed when SPARC and Serpin were added to dissociated cells after pre-treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed an even greater biological effect when SPARC and Serpin were added to dissociated cells after pre-treatment (Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c68d0f31-54f8-4079-bdd0-9917b5757de8",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C60",
+      "claim": "Functional maturation rate of hSC-interneurons xenografted into neonatal mouse cortex is prolonged, requiring ~7 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have xenografted hSC-interneurons into a more functionally relevant setting: neonatal mouse cortex. They found that functional maturation rate is prolonged, requiring ~7 months (Nicholas et al., 2013; Shao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "ab33ac31-13ef-454a-ba29-1ca68348739d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C61",
+      "claim": "tdTomato+ hSC interneurons were almost all Dlx2+.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that tdTomato + hSC interneurons were almost all Dlx2+ (Figure 4A) and also found that Combo-treated hSC-interneurons migrated significantly further than controls (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "7638b79e-ccc2-425d-a300-5be99932c82b",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C62",
+      "claim": "Combo-treated hSC-interneurons migrated significantly further than controls 28 days post-engraftment.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that tdTomato + hSC interneurons were almost all Dlx2+ (Figure 4A) and also found that Combo-treated hSC-interneurons migrated significantly further than controls (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "4141a26e-c4fe-4707-b46a-762abf19f397",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C63",
+      "claim": "At 56 days post-transplantation, SPARC/SerpinE1-treated hSC-interneurons possessed longer processes and branched more extensively.",
+      "claim_type": "EXPLICIT",
+      "source": "At 56 days post-transplantation, we traced and analyzed the morphologies of hSC-interneurons in 3D and found that they possessed longer processes and branched more extensively (Figure 4D, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by morphological analysis shown in Figure 4D and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "61e0b9c6-68d3-4473-b78e-67f0ab65800a",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C64",
+      "claim": "Recordings from SPARC/SerpinE1 treatment group neurons showed significantly reduced membrane input resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with more mature neuronal function, recordings from treatment group neurons showed significantly reduced membrane input resistance, faster membrane time constants, more hyperpolarized action potential (AP) thresholds, and increased ratios of voltage-gated sodium currents versus voltage-gated potassium currents (Figure 4E\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4E\u2013O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "ffedb81b-e882-4811-8001-08920d3cb52f",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C65",
+      "claim": "Recordings from SPARC/SerpinE1 treatment group neurons showed faster membrane time constants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with more mature neuronal function, recordings from treatment group neurons showed significantly reduced membrane input resistance, faster membrane time constants, more hyperpolarized action potential (AP) thresholds, and increased ratios of voltage-gated sodium currents versus voltage-gated potassium currents (Figure 4E\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4E\u2013O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "8efa253c-57b4-4ea9-9fb3-2013937487bb",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C66",
+      "claim": "Recordings from SPARC/SerpinE1 treatment group neurons showed more hyperpolarized action potential (AP) thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with more mature neuronal function, recordings from treatment group neurons showed significantly reduced membrane input resistance, faster membrane time constants, more hyperpolarized action potential (AP) thresholds, and increased ratios of voltage-gated sodium currents versus voltage-gated potassium currents (Figure 4E\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4E\u2013O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "504aeb79-1d27-4d5c-9761-a85f8071d25d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C67",
+      "claim": "Recordings from SPARC/SerpinE1 treatment group neurons showed increased ratios of voltage-gated sodium currents versus voltage-gated potassium currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with more mature neuronal function, recordings from treatment group neurons showed significantly reduced membrane input resistance, faster membrane time constants, more hyperpolarized action potential (AP) thresholds, and increased ratios of voltage-gated sodium currents versus voltage-gated potassium currents (Figure 4E\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4E\u2013O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c1b370d7-a687-43fb-aaae-fdcfba4592bc",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C68",
+      "claim": "SPARC/SerpinE1-treated cells appear to have larger membrane capacitances (p=0.067).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, treated cells appear to have larger membrane capacitances (p=0.067), more hyperpolarized resting potentials (p=0.12), larger voltage-gated sodium currents (p=0.20), faster AP rise rates (p=0.21), narrower APs (p=0.22), and generated a greater number of APs (p=0.24) (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4\u2014figure supplement 4, though not statistically significant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "05b748e6-1dd1-40b5-8f5a-42ab8cf29d0d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C69",
+      "claim": "SPARC/SerpinE1-treated cells appear to have more hyperpolarized resting potentials (p=0.12).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, treated cells appear to have larger membrane capacitances (p=0.067), more hyperpolarized resting potentials (p=0.12), larger voltage-gated sodium currents (p=0.20), faster AP rise rates (p=0.21), narrower APs (p=0.22), and generated a greater number of APs (p=0.24) (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4\u2014figure supplement 4, though not statistically significant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "7ae1eaf2-5150-49eb-8d8f-49e83baffcb4",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C70",
+      "claim": "SPARC/SerpinE1-treated neurons may have an accelerated trajectory toward functional maturity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these electrophysiological profiles suggest that treated neurons may have an accelerated trajectory toward functional maturity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the electrophysiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "1752238a-cbdb-43a2-bb70-67bcbacf3622",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C71",
+      "claim": "Ablation of SPARC and SerpinE1 in immortalized or p-EndoCM reduced its capacity to increase interneuron migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, two EC-derived paracrine factors SPARC and SerpinE1 induce increased interneuron migration as assessed by in vitro assays. Moreover, ablation of SPARC and SerpinE1 in immortalized or p-EndoCM reduced its capacity increase in interneuron migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data using function-blocking antibodies and inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "15d1978d-fb9b-4595-a16e-f9e82963f7dc",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C72",
+      "claim": "Angiogenesis has been linked to pathfinding during interneuron tangential migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings support previous studies that have linked angiogenesis to pathfinding during interneuron tangential migration (Barber et al., 2018; Li et al., 2018) and MGE mitosis (Tan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "cfb74296-6914-487f-a097-34f2b4ff5268",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C73",
+      "claim": "Angiogenesis has been linked to MGE mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings support previous studies that have linked angiogenesis to pathfinding during interneuron tangential migration (Barber et al., 2018; Li et al., 2018) and MGE mitosis (Tan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "d927780a-3289-45ad-a6e5-258dfeb3cd7a",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C74",
+      "claim": "Radial glia in the MGE undergo a transition during embryonic development where their pial endfeet detach and connect to MGE vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, radial glia in the MGE undergo a transition during embryonic development where their pial endfeet detach and connect to MGE vasculature (Tan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c2426da0-cc83-4e1f-a8c9-43ae2a6bcaa2",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C75",
+      "claim": "SPARC expression is significantly enriched in brain endothelial cells versus other endothelial populations (log2-fold increase 3.97).",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNA-sequencing (RNA-seq) in mouse indicates that SPARC expression is significantly enriched in brain endothelial cells versus other endothelial populations (log2-fold increase 3.97) (Hupe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "03e2312d-7510-4406-a008-112b19898559",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C76",
+      "claim": "SerpinE1 expression increases in mouse brain endothelial cells, peaking at e14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same study, SerpinE1 expression increases in mouse brain endothelial cells, peaking at e14.5, which coincides with the timepoint where we observe robust migration in MGE explants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature and correlation with experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "f38df224-5937-4813-b093-8bafdc7a84cf",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C77",
+      "claim": "SPARC is expressed in human endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both SPARC (Butler et al., 2016; Girard and Springer, 1995; Sage et al., 1989) and SerpinE1 (Canfield et al., 1989) are expressed in human endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "5a6ef172-2c4b-4f51-9c63-896da19f9a73",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C78",
+      "claim": "SerpinE1 is expressed in human endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both SPARC (Butler et al., 2016; Girard and Springer, 1995; Sage et al., 1989) and SerpinE1 (Canfield et al., 1989) are expressed in human endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "363102cc-5743-464d-90b1-946192960bba",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C79",
+      "claim": "The maturation of CNS vasculature may regulate the timing of human fetal interneurons migration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that hSC-interneurons exhibit greater migration and faster functional maturation when treated with vascular factors, SPARC and SerpinE1, suggesting that the maturation of CNS vasculature may similarly regulate the timing of human fetal interneurons migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the experimental findings with hSC-interneurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "d9b23ea8-1d24-4586-8078-5b0293fe13c7",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C80",
+      "claim": "During human fetal development, both SPARC and SerpinE1 are expressed at low levels in subpallium at 8 and 9 pcw.",
+      "claim_type": "EXPLICIT",
+      "source": "During human fetal development, both SPARC and SerpinE1 are expressed at low levels in subpallium at 8 and 9 pcw, and both peak in their expression in the cortex between 37 pcw and 1 year of age (Allen Institute BrainSpan Database, Developmental Transcriptome, https://www.brainspan.org/rnaseq/search/index.html).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to a public database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "69d7b7ef-fc9e-4878-8216-1d6740a112ad",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C81",
+      "claim": "Both SPARC and SerpinE1 peak in their expression in the human cortex between 37 pcw and 1 year of age.",
+      "claim_type": "EXPLICIT",
+      "source": "During human fetal development, both SPARC and SerpinE1 are expressed at low levels in subpallium at 8 and 9 pcw, and both peak in their expression in the cortex between 37 pcw and 1 year of age (Allen Institute BrainSpan Database, Developmental Transcriptome, https://www.brainspan.org/rnaseq/search/index.html).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to a public database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "010506b9-ee88-4031-b139-2f2fb51bb2aa",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C82",
+      "claim": "The MGE (also known as the germinal matrix) is the primary site of periventricular hemorrhages in prematurely born babies.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the MGE (also known as the germinal matrix) is the primary site periventricular hemorrhages in prematurely born babies (Luo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "da8567a5-accc-492b-9743-e7526e4cdde9",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C83",
+      "claim": "Periventricular hemorrhages in the MGE are hypothesized to be due to newly formed (and thus weaker) vasculature in the MGE during the third trimester.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been hypothesized that this is due to newly formed (and thus weaker) vasculature in the MGE during the third trimester (Ballabh et al., 2004; Ballabh et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "1b2aaca4-6c49-4835-a870-0df93bc952a8",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C84",
+      "claim": "The timing of vascularization, which is the source of SPARC and SerpinE1 in the MGE, may help to coordinate species-specific aspects of neuronal maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, it is an appealing possibility that the timing of vascularization, which we posit to be the source of SPARC and SerpinE1 in the MGE, helps to coordinate species-specific aspects of neuronal maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "8a392001-fa5b-4b86-af37-8f58726ca0b9",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C85",
+      "claim": "Delayed vascularization in humans may serve a regulatory role in delaying interneuron migration until pyramidal neurons have achieved sufficient maturity to allow for interneuron circuit integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, delayed vascularization in humans may serve a regulatory role in delaying interneuron migration until pyramidal neurons have achieved sufficient maturity to allow for interneuron circuit integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the functional significance of delayed vascularization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "04b0ea91-890f-49c8-8a9b-6771fee50f2f",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C86",
+      "claim": "SPARC has been implicated in cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "SPARC has been implicated in cell differentiation (Hrabchak et al., 2008; Stary et al., 2005) and migration (Arnold and Brekken, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "b1af3c7f-24ac-4a0a-96ed-abe23636d785",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C87",
+      "claim": "SPARC has been implicated in cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "SPARC has been implicated in cell differentiation (Hrabchak et al., 2008; Stary et al., 2005) and migration (Arnold and Brekken, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "01233b5e-a2d3-4477-b640-b54dc3ed0055",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C88",
+      "claim": "SPARC is correlated with increased cancer metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "SPARC is also correlated with increased cancer metastasis and its increased expression in cancer stromal cells results in epithelial-to-mesenchymal transition by downregulation of E-cadherin and upregulation of N-cadherin (Nagaraju et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "1ae9abb3-f316-409d-a553-d3f3e4e5363d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C89",
+      "claim": "Increased expression of SPARC in cancer stromal cells results in epithelial-to-mesenchymal transition by downregulation of E-cadherin and upregulation of N-cadherin.",
+      "claim_type": "EXPLICIT",
+      "source": "SPARC is also correlated with increased cancer metastasis and its increased expression in cancer stromal cells results in epithelial-to-mesenchymal transition by downregulation of E-cadherin and upregulation of N-cadherin (Nagaraju et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "9ef851be-b5be-4275-b8ca-fa6fe5dd32ec",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C90",
+      "claim": "SPARC can influence migration through integrins and integrin-linked kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "SPARC can influence migration through integrins and integrin-linked kinases (Thomas et al., 2010) and by modulating the activity of matrix metalloproteases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "42dbd6f0-c795-47dd-bc2e-e17f39dc5a32",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C91",
+      "claim": "SPARC can influence migration by modulating the activity of matrix metalloproteases.",
+      "claim_type": "EXPLICIT",
+      "source": "SPARC can influence migration through integrins and integrin-linked kinases (Thomas et al., 2010) and by modulating the activity of matrix metalloproteases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by general knowledge about SPARC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "bf302446-27f8-456b-b345-3ec7c305910f",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C92",
+      "claim": "Integrin signaling regulates interneuron migration during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed integrin signaling also regulates interneuron migration during development (Stanco et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "4855d644-695a-48ec-8035-6c30777e2563",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C93",
+      "claim": "SerpinE1 is implicated in cell migration through the uPA/urokinase pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "SerpinE1 (also known as plasminogen activator inhibitor-1) is also implicated in cell migration through the uPA/urokinase pathway (Gr\u00f8ndahl-Hansen et al., 1993; Mahmood et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c9f85003-58b5-446d-a021-49caf0e2a4a9",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C94",
+      "claim": "The urokinase pathway has been linked to interneuron tangential migration by acting through the c-Met receptor and hepatocyte growth factor.",
+      "claim_type": "EXPLICIT",
+      "source": "The urokinase pathway has been linked to interneuron tangential migration by acting through the c-Met receptor and hepatocyte growth factor (Powell et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "f1e73cd6-fa0f-4223-86b5-a7e1d98e9063",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C95",
+      "claim": "SPARC functions at the interface between cells and ECM as a matricellular protein.",
+      "claim_type": "EXPLICIT",
+      "source": "As a matricellular protein, SPARC functions at the interface between cells and ECM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SPARC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "bed01dde-e511-486d-ba7e-3e03e695b32e",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C96",
+      "claim": "Reduced collagen levels are observed in SPARC null mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced collagen levels are observed in SPARC null mice and there is compelling evidence that SPARC reduces cell adhesion to ECM, enabling an intermediate state of adhesion that is conducive to migration (DiMilla et al., 1991; Palecek et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "14097268-b13c-420e-8fa3-187ca51df62c",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C97",
+      "claim": "SPARC reduces cell adhesion to ECM, enabling an intermediate state of adhesion that is conducive to migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced collagen levels are observed in SPARC null mice and there is compelling evidence that SPARC reduces cell adhesion to ECM, enabling an intermediate state of adhesion that is conducive to migration (DiMilla et al., 1991; Palecek et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "87f3a9b4-9fea-4fe5-871f-12ae85738a3b",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C98",
+      "claim": "SerpinE1 modulates ECM by binding to vitronectin.",
+      "claim_type": "EXPLICIT",
+      "source": "SerpinE1 also modulates ECM by binding to vitronectin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SerpinE1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "52676e67-dbcc-4d40-bfb8-df1e0b6a36d8",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C99",
+      "claim": "SerpinE1 binding to vitronectin interferes with vitronectin binding to integrin \u03b1V, resulting in greater integrin \u03b1V-fibronectin binding and reduced cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "This interferes with its binding to integrin \u03b1V, resulting in greater integrin \u03b1V-fibronectin binding and reduced cell adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SerpinE1 mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "e6edf94e-2bf1-4ddb-99a2-72a3831d983d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C100",
+      "claim": "The balance between integrin \u03b1V interactions with vitronectin and fibronectin helps to regulate neural stem cell self-renewal versus differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of neural stem cells, the balance between integrin \u03b1V interactions with vitronectin and fibronectin helps to regulate self-renewal versus differentiation (Dai et al., 2016; Varun et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "22851a8a-5b98-4cfe-9b23-efd55ec5ed28",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C101",
+      "claim": "Vitronectin has a role in regulating differentiation in cerebellar granule precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Vitronectin has a similar role in regulating differentiation in cerebellar granule precursors (Hashimoto et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "d82100e1-7e41-4a66-86cc-bec3a081cb53",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C102",
+      "claim": "SPARC and SerpinE1 act by tipping the balance toward cell differentiation and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we hypothesize that SPARC and SerpinE1 act by tipping the balance toward cell differentiation and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental findings and known mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "f20377b1-3b8e-41f7-b4b6-906b611dd5a9",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C103",
+      "claim": "Human ventral telencephalic organoids require ~14 days pre-treatment with SPARC and SerpinE1 before enhanced migration can be detected in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we empirically determined that human ventral telencephalic organoids require ~14 days pre-treatment with SPARC and SerpinE1 before we could detect enhanced migration in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "e6fed979-88c7-4c63-b7f9-6512632ecd01",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C104",
+      "claim": "The requirement for 14 days pre-treatment may reflect a human-specific difference in responding to endothelial cues compared with mouse interneurons that operate under a more compressed timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect a human-specific difference in responding to endothelial cues compared with mouse interneurons that operate under a more compressed timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental observation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "93c235ec-63c3-4e60-94cf-4c500c89593c",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C105",
+      "claim": "Migration of hSC-interneurons into host mouse cortex occurs at a slow rate over 7 months.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, this may account for previous observations by Nicholas and colleagues that migration of hSC-interneurons into host mouse cortex occurs at a slow rate over 7 months (Nicholas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "0f29235a-1eae-460d-aa0e-9e4fe719697a",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C106",
+      "claim": "Host vascularization of xenografts has been shown to occur over a period of months.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be explained by host vascularization of the xenograft, which has been shown to occur over a period of months (Mansour et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "dfaeb7c5-5b60-43d4-b804-2a416b1bbdd4",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C107",
+      "claim": "Pre-treatment with SPARC and SerpinE1 allows xenografts to bypass host vascularization as a means to trigger migration.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that pre-treatment with SPARC and SerpinE1 allows our xenograft to bypass host vascularization as a means to trigger migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis to explain the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "ed640f83-ab31-4845-afbc-aae69812a1a2",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C108",
+      "claim": "Pre-treatment may prime hSC-interneurons to more rapidly integrate and mature into the host cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, pre-treatment may prime hSC-interneurons to more rapidly integrate and mature into the host cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "a9a18f52-9cb6-45d3-bb89-063eea549f0a",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C109",
+      "claim": "Levels of SPARC and SerpinE1 were detected at low levels in the mouse MGE at e14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we found that levels of SPARC and SerpinE1 were detected a low levels in the mouse MGE at e14.5 (data not shown), consistent with in situ hybridization from Allen Institute and GenePaint (Figure 3A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations and public database data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "2d9e1f93-45a3-4d97-acba-b7bc12ffcfd6",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C110",
+      "claim": "The higher levels of SPARC and SerpinE1 used to elicit a biological effect in hSC-interneurons compared to endogenous levels is due to context differences between culture and embryonic microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that this is due to context. In culture, SPARC and SerpinE1 are added to the medium and must diffuse through Matrigel-embedded organoids to reach hSC-interneurons. This is in contrast to the embryonic microenvironment in which vasculature is in close contact with interneuron progenitors, and this configuration likely enhances the effects of SPARC and SerpinE1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis to explain the difference in effective concentrations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "2e7413df-4410-4111-919b-c61f54574b6d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C111",
+      "claim": "Employing SPARC and SerpinE1 in a bioengineered vascular microenvironment could potentially amplify the effects demonstrated in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have utilized bioengineering to recapitulate the vascular microenvironment (Raghavendran et al., 2016; Shirure et al., 2017). Employing SPARC and SerpinE1 in such a context could potentially amplify the effects we demonstrated in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future work based on prior bioengineering studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "386b1061-a7bb-4223-9ae3-2575db7c264b",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C112",
+      "claim": "Pre-treated hSC-interneurons exhibit more maturity in vitro, suggesting SPARC/SerpinE1 treatment may be effective when applied to organoid and monolayer approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our pre-treated hSC-interneurons also exhibit more maturity in vitro, suggesting SPARC/SerpinE1 treatment may also be effective when applied to organoid and monolayer approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the in vitro migration data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "3ff2d135-620c-4bbc-98e9-525a539e53c4",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C113",
+      "claim": "Paracrine cues derived from ECs may regulate the development of other neuronal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, consistent with previous work (Karakatsani et al., 2019), paracrine cues derived from ECs may similarly regulate the development of other neuronal populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on prior literature and the current findings.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "094f8eae-5a8c-40ae-89ee-e0aa802a1a81",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C114",
+      "claim": "This study may serve as a general strategy for inducing hSC-neuron functional maturation in other neuronal cell types such as pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our study may well serve as a general strategy for inducing hSC-neuron functional maturation in other neuronal cell types such as pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion about the broader applicability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "e218cf89-7b71-485a-8426-7caa8457637d",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C115",
+      "claim": "Apcdd1 is a negative regulator of Wnt/\u03b2-catenin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Apcdd1, a negative regulator of Wnt/\u03b2-catenin signaling, is critical for CNS vascular development and blood-brain barrier maturation (Shimomura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "a88c248c-aae1-4c74-8479-043742362ba4",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "claim_id": "C116",
+      "claim": "Apcdd1 is critical for CNS vascular development and blood-brain barrier maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Apcdd1, a negative regulator of Wnt/\u03b2-catenin signaling, is critical for CNS vascular development and blood-brain barrier maturation (Shimomura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "998416f6-effa-4520-8e23-ca3efc5c0a06",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Interneuron migration temporally coincides with vascularization of the MGE in both mouse and human development. In mice, vascularization of the MGE increases dramatically between e10.5 and e15.5, coinciding with the initiation of interneuron migration. In humans, MGE vascularization increases slowly with developmental age, with robust vascularization not occurring until after 20 pcw.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C24, and C25 are well-supported by histological data showing temporal correlation between vascularization and interneuron migration in both species (Figure 1C-E). The data demonstrate a clear developmental progression of vascularization that aligns with the timing of interneuron migration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "1180b97f-129b-4faf-9b35-f8ad966e6b43",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genetic manipulation of MGE vascularization using Apcdd1 mutants demonstrates a causal relationship between vascular density and interneuron migration. Apcdd1 GOF mutants show decreased MGE vascularization and fewer migrating interneurons, while Apcdd1 LOF mutants show increased vascularization with a trend toward more migrating interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C26-C32 are supported by quantitative data from Apcdd1 mutants (Figure 1F-I). The GOF result is statistically significant, while the LOF result shows a trend (p=0.236). The in situ hybridization data (C32) confirms vascular-specific expression, validating the use of whole-animal knockout. The correlation between vascular density and interneuron migration is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "ab09be40-5cf2-47d1-b083-288e1842fd84",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Endothelial cells produce secreted protein factors that induce interneuron migration in vitro. Early-stage MGE explants (e10.5-e12.5) have limited migratory capacity, but addition of endothelial cell conditioned medium (EndoCM) robustly increases migration. The active factors are heat-sensitive proteins between 30-100 kDa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C44 are well-supported by MGE explant and organotypic slice culture data (Figure 2). The developmental progression of migration capacity, the rescue by EndoCM, appropriate negative controls (HEK CM, boiled EndoCM), and size fractionation experiments provide converging evidence for endothelial-derived paracrine factors regulating interneuron migration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "17a32873-bd8d-4b7e-a04a-694d350d8701",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SPARC and SerpinE1 are endothelial cell-derived factors that enhance interneuron migration. Both proteins are expressed in embryonic CNS vasculature, present at higher levels in EndoCM versus control medium, and recombinant proteins increase MGE explant migration. Function-blocking antibodies and inhibitors reduce EndoCM activity, confirming their role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C45-C56, and C71 are strongly supported by multiple lines of evidence: RNA-seq identification, in situ hybridization showing vascular expression (Figure 3A-B), western blot confirmation (Figure 3C-D), gain-of-function experiments with recombinant proteins (Figure 3E), and loss-of-function experiments with blocking reagents (Figure 3F-H). The convergence of these approaches provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "a02f559d-d2f4-4bbc-ad2e-5f822c1b310c",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pre-treatment of hSC-interneurons with SPARC and SerpinE1 enhances their migration following xenotransplantation into neonatal mouse cortex. Treated cells migrated significantly further than controls at 28 days post-transplantation, with the greatest effect observed when treatment was applied both before and after dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C58-C59, C61-C62 are supported by in vitro migration assays (Figure 4\u2014supplement 2C) and xenograft experiments (Figure 4B-C). The data show statistically significant increases in migratory distance with treatment. The experimental design appropriately tests different treatment regimens.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "b17169ab-4e87-49a4-881a-a631ebc7cd22",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SPARC/SerpinE1-treated hSC-interneurons exhibit enhanced morphological elaboration in host cortex at 56 days post-transplantation, with longer processes and more extensive branching compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C63 are supported by 3D morphological tracing and quantification (Figure 4D, Figure 4\u2014supplement 3). The data demonstrate statistically significant increases in process length and branching complexity in treated cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "6caa1bb3-bb75-45d9-a489-df5f33fd0460",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SPARC/SerpinE1-treated hSC-interneurons display more mature electrophysiological characteristics at 56 days post-transplantation, including reduced input resistance, faster membrane time constants, more hyperpolarized AP thresholds, and increased sodium-to-potassium current ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C64-C67, and C70 are supported by whole-cell patch-clamp recordings (Figure 4E-O). Multiple electrophysiological parameters show statistically significant differences consistent with accelerated functional maturation. The interpretation that these changes reflect enhanced maturity is reasonable given the known developmental progression of these parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "a99b6c40-1e80-443b-adb0-915bd844987c",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SPARC/SerpinE1-treated hSC-interneurons show trends toward additional mature electrophysiological features including larger membrane capacitances (p=0.067) and more hyperpolarized resting potentials (p=0.12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 report trends that do not reach statistical significance. While these trends are consistent with the overall pattern of enhanced maturation, they cannot be considered definitively supported without reaching significance thresholds. Additional experiments or larger sample sizes would be needed to confirm these effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "779e4772-c847-42e3-a344-237c08fcbb59",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CNS vasculature plays a critical role in regulating interneuron developmental maturation through a conserved mechanism in both mice and humans, with vascular maturation potentially regulating the timing of human fetal interneuron migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C19, and C79 represent overarching conclusions supported by the collective experimental evidence from both mouse (vascularization timing, Apcdd1 mutants, MGE explants) and human systems (fetal tissue analysis, hSC-interneuron experiments). The cross-species conservation of the mechanism is demonstrated by the effectiveness of SPARC/SerpinE1 treatment in human cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "3c69c397-e9b1-4dbf-8ec0-3e009de05366",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The density of Dlx2+ interneurons in human fetal cortex increases over developmental time from 15 to 22 post-conception weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 is supported by immunohistochemistry data (Figure 1B, Figure 1\u2014supplement 1A-B) showing progressive increase in interneuron density in human fetal cortex. This confirms prior literature findings and establishes the protracted timeline of human interneuron migration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "3c08627b-182c-44c0-aa03-4eb79a765c72",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MGE explant migration assays show strong linear correlation between migratory cell number and explant surface area (r\u00b2=0.6829), with nearly all migratory cells being interneurons as confirmed by fate-mapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by quantification data (Figure 1\u2014supplement 2B) and fate-mapping experiments using Dlx6aCre;Ai9 mice (Figure 1\u2014supplement 2C-D). These methodological validations are important for establishing the reliability of the MGE explant assay used throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "b073586d-2f89-48b8-81db-f8d6a562855b",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Combined inhibition of SPARC and SerpinE1 does not further reduce interneuron migration beyond individual inhibition, suggesting the molecules may act on intersecting pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by the lack of additive effect when both inhibitors are used together (Figure 3F). This is a reasonable interpretation suggesting pathway convergence, though alternative explanations (e.g., maximal inhibition achieved with either alone) are possible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "3cad74de-9eab-4f06-9b48-2e3f9d0005d2",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Human ventral telencephalic organoids require approximately 14 days of pre-treatment with SPARC and SerpinE1 before enhanced migration can be detected, potentially reflecting human-specific differences in responding to endothelial cues compared to mouse interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C103 is supported by empirical observations from the experiments. Claim C104 represents a reasonable speculation based on the known species differences in developmental timescales. The 14-day requirement is an important practical finding for the methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "6e715608-c912-4a58-beca-3fef36a41eb7",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context on cortical interneurons: they establish inhibitory microcircuits, their dysfunction is implicated in disease, they migrate from distal progenitor domains, and migration occurs over days in mice versus months in humans. This species difference extends to stem cell-derived interneurons and has limited functional studies of hSC-interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C12-C16, C20-C22 represent established knowledge and literature-based context supported by appropriate citations. These provide the scientific foundation and motivation for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "20160257-048e-4bb6-95fe-912b9ed81865",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior literature context: hSC-interneurons migrate and mature slowly, reminiscent of human fetal development, and require approximately 7 months for functional maturation when xenografted into neonatal mouse cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C60 are supported by citations to prior literature and establish the baseline slow maturation rate that the current study aims to accelerate. These are important contextual claims but not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "26df90fb-c1f8-48e8-a959-1d938374e8ab",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion context from prior literature: angiogenesis has been linked to interneuron migration and MGE mitosis; radial glia undergo vascular-associated transitions; SPARC and SerpinE1 expression patterns and functions in various systems; mechanisms of action through integrins, ECM modulation, and signaling pathways; Apcdd1 function in vascular development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C101 and C115-C116 represent literature-based discussion points supported by appropriate citations. These contextualize the findings within existing knowledge but are not novel results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "c623e716-08a6-4fff-9fe2-077819b99112",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Speculative hypotheses and future directions: vascularization timing may coordinate species-specific neuronal maturation; delayed human vascularization may regulate developmental timing; SPARC/SerpinE1 act by promoting differentiation and migration; pre-treatment may bypass the need for host vascularization; bioengineered approaches could amplify effects; the strategy may apply to other neuronal types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C85, C102, C107-C108, C110-C111, C113-C114 represent speculative hypotheses and suggestions for future work. While these are reasonable interpretations and directions based on the data, they are explicitly speculative and not directly tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "ffe2dd78-f228-445d-bcc1-68d86d566843",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "SPARC and SerpinE1 levels are detected at low levels in mouse MGE at e14.5, and pre-treated hSC-interneurons exhibit more maturity in vitro, suggesting potential effectiveness in organoid and monolayer approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C109 is supported by experimental observations and public database data. Claim C112 is a reasonable inference from the in vitro migration data (Figure 4\u2014supplement 2C), though direct testing in organoid/monolayer systems would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    },
+    {
+      "id": "d3d4cffc-1861-415e-af76-2512ab01b801",
+      "content_id": "04f2fb1c-12c1-444f-b959-b954e278c5bd",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior literature context: migration of hSC-interneurons into host mouse cortex occurs slowly over 7 months, potentially explained by the slow timeline of host vascularization of xenografts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106 are supported by citations to prior literature and provide context for interpreting the accelerated migration observed with pre-treatment in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:04:16.928552Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c59fa1cc-3a63-4241-8b36-b0ef2781bf69",
+      "result_id": "998416f6-effa-4520-8e23-ca3efc5c0a06"
+    },
+    {
+      "claim_id": "a0a1995c-d90d-4db6-80ff-1a50330f6418",
+      "result_id": "998416f6-effa-4520-8e23-ca3efc5c0a06"
+    },
+    {
+      "claim_id": "17a21d89-8163-4835-9e88-222d1a8aa365",
+      "result_id": "998416f6-effa-4520-8e23-ca3efc5c0a06"
+    },
+    {
+      "claim_id": "5bb99f11-75c5-4610-9cc3-ae38089c8a15",
+      "result_id": "1180b97f-129b-4faf-9b35-f8ad966e6b43"
+    },
+    {
+      "claim_id": "5f003ad9-958d-466a-a964-bc47e5850a97",
+      "result_id": "1180b97f-129b-4faf-9b35-f8ad966e6b43"
+    },
+    {
+      "claim_id": "b109314d-7039-4a46-8236-1ab7ea86117e",
+      "result_id": "1180b97f-129b-4faf-9b35-f8ad966e6b43"
+    },
+    {
+      "claim_id": "c6ab8d1a-3d88-4ba9-8bf8-6c390de50131",
+      "result_id": "1180b97f-129b-4faf-9b35-f8ad966e6b43"
+    },
+    {
+      "claim_id": "13dc3e9d-4f66-4e7e-892f-4d483bfbc175",
+      "result_id": "1180b97f-129b-4faf-9b35-f8ad966e6b43"
+    },
+    {
+      "claim_id": "91ec9ef5-9fba-49e4-b577-ad8c4317b54a",
+      "result_id": "1180b97f-129b-4faf-9b35-f8ad966e6b43"
+    },
+    {
+      "claim_id": "e5777e1a-51b5-407f-95c9-a0baae627bf3",
+      "result_id": "1180b97f-129b-4faf-9b35-f8ad966e6b43"
+    },
+    {
+      "claim_id": "09938203-07fd-4795-89ed-f117e23f5891",
+      "result_id": "1180b97f-129b-4faf-9b35-f8ad966e6b43"
+    },
+    {
+      "claim_id": "ed87385f-ae3b-4c28-924f-ba93a27ccb4d",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "bba99042-60b6-4d6f-98db-d499ce9e99ff",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "c04573d6-183d-4520-b084-414b17eb2a7a",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "a79571d6-3c0d-40f7-a301-32b0ecad821c",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "77d27781-5aee-4485-9edd-7084c2633219",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "f7078c00-d22b-44df-85c7-8b7a972d75c2",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "701b8b90-743a-4e7a-8c7d-f99e035bc1ba",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "98abaf2f-4caf-49b7-923b-383f10f73e2d",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "e6806265-a70f-45c5-b868-8501b112cda5",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "88165fbe-3004-4ceb-afa7-fb8ce4796a44",
+      "result_id": "ab09be40-5cf2-47d1-b083-288e1842fd84"
+    },
+    {
+      "claim_id": "543275e0-8ebf-4f6c-bd9b-4fa1a059bbca",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "0da8d7ab-6543-49b9-beec-fe34d376dcc2",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "aa7a5530-752a-4455-973b-231942d12bfb",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "b0294f71-b120-462f-8cae-801c4a57381d",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "81e0c53d-f1ff-4fd1-9d67-0d6e5befd4e3",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "6740f943-845c-4c79-ad2c-c6432fc0a61b",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "bd89b235-8d6b-4e30-bedb-ead2d64c25a7",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "c00b458d-12ff-47ec-8ec2-ada66dc7c89f",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "739bd0fd-f7e6-45a6-9c48-867cdf2ce875",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "d5506f12-ecba-4622-8dfc-44dfa56500fe",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "4fa6a588-d201-41f9-96b5-6049d971bd70",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "715e0cf9-fc93-4b24-a42f-c31bf8f82bb6",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "edd9ba6b-6eae-4d2e-a9bc-4e254d7e8a9d",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "1752238a-cbdb-43a2-bb70-67bcbacf3622",
+      "result_id": "17a32873-bd8d-4b7e-a04a-694d350d8701"
+    },
+    {
+      "claim_id": "bbef77f3-7cad-4e66-ae6b-a014c1a7d3f0",
+      "result_id": "a02f559d-d2f4-4bbc-ad2e-5f822c1b310c"
+    },
+    {
+      "claim_id": "e0c21f0a-ec01-4609-bb47-7ba9cc7321a5",
+      "result_id": "a02f559d-d2f4-4bbc-ad2e-5f822c1b310c"
+    },
+    {
+      "claim_id": "875959ef-4511-4c82-8994-bdb7d9525439",
+      "result_id": "a02f559d-d2f4-4bbc-ad2e-5f822c1b310c"
+    },
+    {
+      "claim_id": "ab33ac31-13ef-454a-ba29-1ca68348739d",
+      "result_id": "a02f559d-d2f4-4bbc-ad2e-5f822c1b310c"
+    },
+    {
+      "claim_id": "7638b79e-ccc2-425d-a300-5be99932c82b",
+      "result_id": "a02f559d-d2f4-4bbc-ad2e-5f822c1b310c"
+    },
+    {
+      "claim_id": "81c658d2-2234-4c83-9719-a7318946bec9",
+      "result_id": "b17169ab-4e87-49a4-881a-a631ebc7cd22"
+    },
+    {
+      "claim_id": "4141a26e-c4fe-4707-b46a-762abf19f397",
+      "result_id": "b17169ab-4e87-49a4-881a-a631ebc7cd22"
+    },
+    {
+      "claim_id": "ac54f58b-812d-49be-b9a6-a211fe664ff8",
+      "result_id": "6caa1bb3-bb75-45d9-a489-df5f33fd0460"
+    },
+    {
+      "claim_id": "61e0b9c6-68d3-4473-b78e-67f0ab65800a",
+      "result_id": "6caa1bb3-bb75-45d9-a489-df5f33fd0460"
+    },
+    {
+      "claim_id": "ffedb81b-e882-4811-8001-08920d3cb52f",
+      "result_id": "6caa1bb3-bb75-45d9-a489-df5f33fd0460"
+    },
+    {
+      "claim_id": "8efa253c-57b4-4ea9-9fb3-2013937487bb",
+      "result_id": "6caa1bb3-bb75-45d9-a489-df5f33fd0460"
+    },
+    {
+      "claim_id": "504aeb79-1d27-4d5c-9761-a85f8071d25d",
+      "result_id": "6caa1bb3-bb75-45d9-a489-df5f33fd0460"
+    },
+    {
+      "claim_id": "7ae1eaf2-5150-49eb-8d8f-49e83baffcb4",
+      "result_id": "6caa1bb3-bb75-45d9-a489-df5f33fd0460"
+    },
+    {
+      "claim_id": "c1b370d7-a687-43fb-aaae-fdcfba4592bc",
+      "result_id": "a99b6c40-1e80-443b-adb0-915bd844987c"
+    },
+    {
+      "claim_id": "05b748e6-1dd1-40b5-8f5a-42ab8cf29d0d",
+      "result_id": "a99b6c40-1e80-443b-adb0-915bd844987c"
+    },
+    {
+      "claim_id": "de4d637e-3177-4a60-9bf0-7937c3114b35",
+      "result_id": "779e4772-c847-42e3-a344-237c08fcbb59"
+    },
+    {
+      "claim_id": "8b3c448d-67f8-40b8-b7ed-aee32d4edae5",
+      "result_id": "779e4772-c847-42e3-a344-237c08fcbb59"
+    },
+    {
+      "claim_id": "363102cc-5743-464d-90b1-946192960bba",
+      "result_id": "779e4772-c847-42e3-a344-237c08fcbb59"
+    },
+    {
+      "claim_id": "c14d8134-47c0-4efc-b6fa-e90dbb21588c",
+      "result_id": "3c69c397-e9b1-4dbf-8ec0-3e009de05366"
+    },
+    {
+      "claim_id": "58a699e6-6c65-45b4-8788-e4e12b27c674",
+      "result_id": "3c08627b-182c-44c0-aa03-4eb79a765c72"
+    },
+    {
+      "claim_id": "f4be1fa0-9814-49bd-984f-57aa24c317e2",
+      "result_id": "3c08627b-182c-44c0-aa03-4eb79a765c72"
+    },
+    {
+      "claim_id": "739bd0fd-f7e6-45a6-9c48-867cdf2ce875",
+      "result_id": "b073586d-2f89-48b8-81db-f8d6a562855b"
+    },
+    {
+      "claim_id": "f20377b1-3b8e-41f7-b4b6-906b611dd5a9",
+      "result_id": "3cad74de-9eab-4f06-9b48-2e3f9d0005d2"
+    },
+    {
+      "claim_id": "e6fed979-88c7-4c63-b7f9-6512632ecd01",
+      "result_id": "3cad74de-9eab-4f06-9b48-2e3f9d0005d2"
+    },
+    {
+      "claim_id": "4385abf0-43ed-475f-8a26-99e51de8bc96",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "a03bf4fa-e7fd-47c2-a6c2-0b9d90d8e20e",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "a77b2ba6-7f57-4472-b108-c7fa6740ac92",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "447a3dd6-f1a3-4327-9179-733d77b29213",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "4eb18c4a-2d8b-4dad-be18-0622748a8fc7",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "ab76867d-e580-4171-a05c-54cf585acc09",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "40c9eb1e-53ce-4105-bc74-398c9bbac375",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "8b3b13bd-46d4-410d-9689-3f0f1e9bfc82",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "79998271-741d-498b-8c7d-f2dbc2f5b3ab",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "8bf5745d-3cf0-4266-92a4-31ba36e5e362",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "74730344-7195-4080-b002-e6e73d6b1138",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "05966cf5-5894-4907-ab5f-6a773bf9540d",
+      "result_id": "6e715608-c912-4a58-beca-3fef36a41eb7"
+    },
+    {
+      "claim_id": "d325819d-3894-4395-9e72-3803e357e0a6",
+      "result_id": "20160257-048e-4bb6-95fe-912b9ed81865"
+    },
+    {
+      "claim_id": "c68d0f31-54f8-4079-bdd0-9917b5757de8",
+      "result_id": "20160257-048e-4bb6-95fe-912b9ed81865"
+    },
+    {
+      "claim_id": "15d1978d-fb9b-4595-a16e-f9e82963f7dc",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "cfb74296-6914-487f-a097-34f2b4ff5268",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "d927780a-3289-45ad-a6e5-258dfeb3cd7a",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "c2426da0-cc83-4e1f-a8c9-43ae2a6bcaa2",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "03e2312d-7510-4406-a008-112b19898559",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "f38df224-5937-4813-b093-8bafdc7a84cf",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "5a6ef172-2c4b-4f51-9c63-896da19f9a73",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "d9b23ea8-1d24-4586-8078-5b0293fe13c7",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "69d7b7ef-fc9e-4878-8216-1d6740a112ad",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "010506b9-ee88-4031-b139-2f2fb51bb2aa",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "da8567a5-accc-492b-9743-e7526e4cdde9",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "04b0ea91-890f-49c8-8a9b-6771fee50f2f",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "b1af3c7f-24ac-4a0a-96ed-abe23636d785",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "01233b5e-a2d3-4477-b640-b54dc3ed0055",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "1ae9abb3-f316-409d-a553-d3f3e4e5363d",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "9ef851be-b5be-4275-b8ca-fa6fe5dd32ec",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "42dbd6f0-c795-47dd-bc2e-e17f39dc5a32",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "bf302446-27f8-456b-b345-3ec7c305910f",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "4855d644-695a-48ec-8035-6c30777e2563",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "c9f85003-58b5-446d-a021-49caf0e2a4a9",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "f1e73cd6-fa0f-4223-86b5-a7e1d98e9063",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "bed01dde-e511-486d-ba7e-3e03e695b32e",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "14097268-b13c-420e-8fa3-187ca51df62c",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "87f3a9b4-9fea-4fe5-871f-12ae85738a3b",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "52676e67-dbcc-4d40-bfb8-df1e0b6a36d8",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "e6edf94e-2bf1-4ddb-99a2-72a3831d983d",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "22851a8a-5b98-4cfe-9b23-efd55ec5ed28",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "e218cf89-7b71-485a-8426-7caa8457637d",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "a88c248c-aae1-4c74-8479-043742362ba4",
+      "result_id": "26df90fb-c1f8-48e8-a959-1d938374e8ab"
+    },
+    {
+      "claim_id": "1b2aaca4-6c49-4835-a870-0df93bc952a8",
+      "result_id": "c623e716-08a6-4fff-9fe2-077819b99112"
+    },
+    {
+      "claim_id": "8a392001-fa5b-4b86-af37-8f58726ca0b9",
+      "result_id": "c623e716-08a6-4fff-9fe2-077819b99112"
+    },
+    {
+      "claim_id": "d82100e1-7e41-4a66-86cc-bec3a081cb53",
+      "result_id": "c623e716-08a6-4fff-9fe2-077819b99112"
+    },
+    {
+      "claim_id": "dfaeb7c5-5b60-43d4-b804-2a416b1bbdd4",
+      "result_id": "c623e716-08a6-4fff-9fe2-077819b99112"
+    },
+    {
+      "claim_id": "ed640f83-ab31-4845-afbc-aae69812a1a2",
+      "result_id": "c623e716-08a6-4fff-9fe2-077819b99112"
+    },
+    {
+      "claim_id": "2d9e1f93-45a3-4d97-acba-b7bc12ffcfd6",
+      "result_id": "c623e716-08a6-4fff-9fe2-077819b99112"
+    },
+    {
+      "claim_id": "2e7413df-4410-4111-919b-c61f54574b6d",
+      "result_id": "c623e716-08a6-4fff-9fe2-077819b99112"
+    },
+    {
+      "claim_id": "3ff2d135-620c-4bbc-98e9-525a539e53c4",
+      "result_id": "c623e716-08a6-4fff-9fe2-077819b99112"
+    },
+    {
+      "claim_id": "094f8eae-5a8c-40ae-89ee-e0aa802a1a81",
+      "result_id": "c623e716-08a6-4fff-9fe2-077819b99112"
+    },
+    {
+      "claim_id": "a9a18f52-9cb6-45d3-bb89-063eea549f0a",
+      "result_id": "ffe2dd78-f228-445d-bcc1-68d86d566843"
+    },
+    {
+      "claim_id": "386b1061-a7bb-4223-9ae3-2575db7c264b",
+      "result_id": "ffe2dd78-f228-445d-bcc1-68d86d566843"
+    },
+    {
+      "claim_id": "93c235ec-63c3-4e60-94cf-4c500c89593c",
+      "result_id": "d3d4cffc-1861-415e-af76-2512ab01b801"
+    },
+    {
+      "claim_id": "0f29235a-1eae-460d-aa0e-9e4fe719697a",
+      "result_id": "d3d4cffc-1861-415e-af76-2512ab01b801"
+    }
+  ],
+  "comparisons": []
+}

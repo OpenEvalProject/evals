@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Mice in constant darkness (DD) show a threefold increased susceptibility to LPS compared to light-dark (LD) conditions, with overall mortality increasing by more than 60%. Despite this increased susceptibility, circadian patterns in mortality persist in DD conditions (p=0.001), demonstrating that the circadian system controls LPS susceptibility independent of light-dark cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 provide converging experimental evidence from dose-response curves (Figure 1B) and time-of-day mortality experiments (Figure 1C) showing both increased overall mortality in DD and persistent circadian rhythms. Statistical significance is demonstrated (p=0.001 for DD), and the threefold increase in susceptibility is quantified with specific dosage comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Plasma cytokine levels after LPS challenge show up to twofold time-of-day differences with distinct circadian patterns. Cytokine profiles differ substantially between LD and DD conditions, with some cytokines showing phase shifts (IL-12p40 advanced 6 hr) or phase reversals (CXCL5), while others maintain consistent timing (IL-18). DD conditions increase sensitivity to endotoxin, leading to enhanced pro-inflammatory cytokine secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C53 are supported by comprehensive cytokine profiling data (Figure 1D-F) showing circadian patterns with statistical analysis. The phase relationships and amplitude changes between LD and DD conditions are documented, and the correlation between cytokine profiles and mortality patterns is demonstrated. However, the causal link between increased cytokine levels and mortality (C53) is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mortality in myBmal-KO mice remains dependent on circadian time of LPS administration, indicating that functional circadian clocks in myeloid cells are not required for time-of-day-dependent LPS sensitivity. However, overall susceptibility to LPS decreased twofold in myBmal-KO mice compared to wild-type, suggesting a tonic (non-temporal) role for myeloid BMAL1 in regulating LPS sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by experimental data from myBmal-KO mice (Figure 2A-D) showing persistent circadian mortality patterns despite clock disruption, combined with decreased overall susceptibility. The distinction between temporal and tonic roles is appropriately inferred from the data, with proper controls (LysM-Cre) to account for genetic background effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "myClock-KO mice show disrupted circadian oscillations in peritoneal cavity cells but not in SCN or lung tissue, confirming myeloid-specific clock disruption. Despite this disruption, mortality remains significantly time-of-day dependent (p=0.005), while overall susceptibility to LPS is strongly reduced compared to wild-type. These findings demonstrate that myeloid clocks are dispensable for time-of-day dependency in endotoxic shock but have a non-temporal, sensitizing role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 are supported by comprehensive molecular characterization (Figure 3A-E) showing successful clock disruption specifically in myeloid cells, combined with mortality data (Figure 3F-G) demonstrating persistent circadian patterns. The conclusion that myeloid clocks are dispensable for circadian mortality is well-supported by convergent evidence from both myBmal-KO and myClock-KO models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C82"
+    ],
+    "result": "Cytokine levels in plasma from myClock-KO mice still exhibit circadian patterns for TNF\u03b1, IL-18, and IL-10 (p-values=0.046, 0.001, 0.009 respectively), with patterns very similar to wild-type animals. This demonstrates that LPS-induced circadian cytokine responses do not depend on functional circadian clocks in cells of myeloid origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 and C82 are supported by experimental data (Figure 4A-B) showing persistent circadian cytokine patterns in myClock-KO mice with statistical significance. The comparison to wild-type patterns is documented, providing strong evidence that myeloid clocks are not required for circadian cytokine responses. This is a key finding that challenges the initial hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Correlation analysis across all conditions reveals that CCL7, MCP-1, and TNF\u03b1 levels positively correlate with mortality (p-values=0.0003, 0.0065, 0.0319), while IL-10 and IL-18 correlate negatively with mortality (p-values=0.0054, 0.0004). IL-18 shows an anti-phasic oscillation paralleling the protective cytokine IL-10, suggesting a protective role in endotoxic shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 and C104-C107 are supported by correlation analysis (Figure 4C) using time-of-day as an independent variable across multiple mouse models. The statistical significance is documented, and the protective role of IL-18 is supported by both negative correlation with mortality and phase relationship with IL-10. However, the protective role is correlative rather than causally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Immune cell trafficking shows complex, tissue-specific patterns in myeloid clock knockout mice. While splenic F4/80+ macrophages maintain time-of-day differences in both knockout strains, monocyte/macrophage numbers in blood lose circadian patterns in knockouts. The data suggest that myeloid cell traffic is regulated at multiple levels (cell-intrinsic, endothelial, site-specific) but do not support myeloid cell distribution as a main factor for time-of-day-dependent mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 and C110-C113 are supported by comprehensive FACS analysis (Figure 5B-E) showing tissue-specific and genotype-specific patterns. The conclusion that cell trafficking is not the main driver of circadian mortality is appropriately inferred from the complex and inconsistent patterns observed. However, the analysis is limited to two time points, which may miss important dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Local myeloid clocks do not account for time-of-day dependent mortality in endotoxic shock, but myeloid CLOCK and BMAL1 have a strong enhancing effect on overall susceptibility to LPS. This effect adds to the effect of light conditions, as both factors independently influence susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 represent the main conclusions of the study, supported by convergent evidence from multiple knockout models showing persistent circadian mortality patterns (temporal independence) combined with decreased overall susceptibility (tonic role). The additive effects of light conditions and myeloid clock genes are demonstrated by experiments in both LD and DD conditions across genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C4",
+      "C38"
+    ],
+    "result": "The large increase in susceptibility to endotoxic shock when mice are housed in DD compared to LD conditions is independent of functional myeloid clocks, as the relative increase is observed in both wild-type and myBmal-KO mice. This represents one of the most striking findings of the work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are supported by experimental data (Figures 1 and 2D) showing consistent increases in susceptibility across genotypes when switching from LD to DD. The independence from myeloid clocks is demonstrated by the similar effect in myBmal-KO mice. This finding has important implications for experimental design and clinical care.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The findings that myeloid CLOCK and BMAL1 enhance susceptibility to LPS conflict with some prior studies reporting attenuating effects of BMAL1 on inflammation, but align well with reports on clock mutant mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 appropriately acknowledge conflicts with prior literature (Curtis et al., 2015; Nguyen et al., 2013; Deng et al., 2018) while noting alignment with other work (Bellet et al., 2013). This honest assessment of discrepancies is important, though the authors note that explanations for these differences remain unsatisfying.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C77",
+      "C119"
+    ],
+    "result": "The authors speculate that systemic time-cues are sufficient to orchestrate innate immune response to LPS by driving immune functions such as cell trafficking and cytokine expression, potentially through local circadian clocks of non-hematopoietic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C77, and C119 are explicitly speculative interpretations of the findings. While the data demonstrate that myeloid clocks are not required for circadian patterns, the specific mechanisms driving these patterns remain untested. The speculation is reasonable given the findings but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C117"
+    ],
+    "result": "The authors speculate that circadian regulation of LPS pharmacokinetics or direct responses of non-myeloid cells (peritoneal mesothelial cells, adipocytes, adjacent organs) to LPS might contribute to time-of-day dependent mortality patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114, C115, and C117 are speculative interpretations about potential mechanisms. While these are plausible explanations for the observed phenomena, they are not directly tested in the manuscript. These represent important hypotheses for future investigation but cannot be evaluated as supported or unsupported based on the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The authors speculate that rhythmic light conditions, rather than light itself, promote survival in endotoxemia, with implications for animal housing conditions and intensive care unit health-care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 are speculative statements about future research directions and clinical implications. While the observation that DD increases mortality is well-supported, the specific mechanism (rhythmic vs. constant light) and clinical implications require further investigation. The speculation is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  }
+]

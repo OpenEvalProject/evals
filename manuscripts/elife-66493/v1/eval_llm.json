@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes that in animal oocytes and early embryos, poly(A)-tail length strongly influences translational efficiency (TE), but this coupling disappears later in development, representing a developmental transition in translational control that parallels the maternal-to-zygotic transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C15-C21 are well-supported by citations to prior work (Eichhorn et al., 2016; Lim et al., 2016; Subtelny et al., 2014) and represent established knowledge in the field. The developmental transition is documented across multiple species (fish, frogs, flies) and is a foundational observation that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Overexpressing PABPC in Xenopus oocytes specifically improved translation of short-tailed mRNAs while having little effect on long-tailed mRNAs, thereby diminishing coupling between tail length and TE. This demonstrates that strong coupling requires limiting PABPC, and that longer-tail mRNAs better compete for limiting PABPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C39-C51 are supported by multiple experimental approaches including in vitro translation assays (Figure 1B-C), oocyte injection experiments (Figure 1E-F), and controls showing mRNA stability (Figure 1\u2014figure supplement 1). The concentration-dependent effects of PABPC1 addition, the specificity for short-tailed mRNAs, and the requirement for a poly(A) tail provide strong converging evidence for the competition model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A PABPC1 mutant unable to bind eIF4G (M161A) diminished coupling by repressing translation of long-tailed reporters, suggesting the eIF4G-PABPC interaction is important for enhancing translation in frog oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by experimental data (Figure 1E) showing that the M161A mutant preferentially affects long-tailed mRNAs. The dominant-negative interpretation (C53) is reasonable given that the mutant would compete with endogenous PABPC for tail binding. However, additional controls with catalytically inactive mutants would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Transcriptome-wide analysis in frog oocytes confirmed strong coupling between poly(A)-tail length and TE (Rs=0.62), which was significantly diminished by overexpressing PABPC1 or ePAB (Rs=0.36-0.38). PABPC overexpression preferentially increased TE of short-tailed mRNAs and globally increased protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 are supported by comprehensive transcriptome-wide data (Figure 2A-F) including TAIL-seq, ribosome profiling, and metabolic labeling. The statistical analysis is appropriate (modified Dunn and Clark's z-test), and the preferential effect on short-tailed mRNAs is consistent across multiple measurements. The control with eGFP overexpression strengthens the conclusion that effects are PABPC-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "PAL-TRAP analysis revealed intragenic coupling between poly(A)-tail length and TE in frog oocytes, with 84.4% of genes showing enrichment of longer-tail isoforms in actively translating ribosomes. This enrichment was reduced by ePAB overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by the novel PAL-TRAP method (Figure 3), which provides intragenic resolution avoiding confounding effects of comparing different genes. The spike-in control (Nluc, C70) demonstrates that observed changes occur in vivo rather than during sample processing. The method is well-controlled and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Depleting PABPC in HeLa cells by siRNA knockdown increased correlation between tail length and TE, but only weakly (Rs=0.18 in double knockdown), much less than in frog oocytes (Rs=0.62), indicating that limiting PABPC alone is insufficient to establish strong coupling in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by siRNA knockdown experiments (Figure 4\u2014figure supplement 1) showing >90% depletion of PABPC1 and PABPC4. The weak correlation despite limiting PABPC is a key negative result that motivates investigation of additional requirements. The comparison across cell types and the statistical analysis are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "PABPC depletion in HeLa cells caused preferential destabilization of short-tailed mRNAs (10-135 nt range), with median tail lengths increasing by 17-39 nt. This destabilization was not due to impaired deadenylation but rather to loss of PABPC protection, as evidenced by reduced mRNA half-lives and lack of long-tail accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 are supported by multiple lines of evidence: TAIL-seq showing tail-length distributions (Figure 4A-B), northern blots for individual genes (Figure 4C), intragenic analysis (Figure 4D-E), and metabolic labeling for half-lives (Figure 4\u2014figure supplement 3). The mitochondrial mRNA controls (C78) and internal standards (Figure 4\u2014figure supplement 2C-D) validate the measurements. The conclusion that this represents a second requirement for coupling (C84) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Terminal uridylation by TUT4/TUT7 contributes to destabilization of short-tailed mRNAs in PABPC-depleted mammalian cells. Knockdown of TUT4/TUT7 partially restored short-tailed mRNAs and reduced terminal uridylation to background levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C95 are supported by rescue experiments using siRNA-resistant PABPC1 and TUT4/TUT7 knockdown (Figure 5A-C), and by direct measurement of terminal uridylation using modified PAL-seq (Figure 5D-F). The eIF4G-binding mutant rescue (C87-C88) provides insight into mechanism. The results are consistent across HeLa and HCT116 cells with different depletion methods (siRNA vs. AID).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Near-complete depletion of PABPC in HeLa and HCT116 cells had no detectable effect on global mRNA translational efficiency, with reduced protein synthesis fully explained by decreased mRNA levels. Even during rapid PABPC depletion, no coupling between tail length and TE was detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C107 are supported by ribosome profiling and RNA-seq showing TE distributions centered at zero (Figure 6A-B), puromycin incorporation assays (Figure 6C), polysome profiling (Figure 6\u2014figure supplement 1B), and time-course experiments with the AID system (Figure 6D-F). The rapid depletion kinetics (C101) and the observation that mRNAs are destabilized without prior TE reduction (C104) are particularly compelling. This identifies the third requirement for coupling (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Three fundamental molecular conditions must be met for strong coupling between poly(A)-tail length and TE: (1) PABPC must be limiting, (2) mRNAs lacking PABPC must be metabolically stable, and (3) PABPC must affect translational efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 synthesizes the major findings from the experimental results. Each of the three conditions is supported by distinct experimental evidence: limiting PABPC (C3-C6, C55-C62), mRNA stability (C75-C95), and PABPC effect on TE (C96-C107). The logic connecting these requirements is sound and the model (Figure 7) integrates the findings coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Quantitative analysis of PABPC stoichiometry in frog oocytes and embryos reveals that PABPC levels are sufficient to bind no more than half of available poly(A) sites in oocytes (~1-1.4\u00d710^11 PABPC molecules vs. ~2.8\u00d710^11 sites), and PABPC levels increase significantly during development, tripling by stage 12 when coupling begins to disappear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 combine new measurements (C112) with literature values (C113, C115-C117) to provide quantitative support for the limiting PABPC model. The agreement between the authors' measurements and prior estimates (Sagata et al., 1980; Cosson et al., 2002; Peshkin et al., 2019) strengthens confidence. The correlation between PABPC increase and loss of coupling (C116-C117) is consistent with the model, though causation is not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In oocytes and early embryos, mRNA decapping is uncoupled from deadenylation, decapping enzymes are expressed at low levels, and terminal uridylation activity is very low, explaining why short-tailed mRNAs survive despite limiting PABPC. Later in development, short-tailed mRNAs are protected by saturating PABPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are supported by citations to prior work (Gillian-Daniel et al., 1998; Ma et al., 2013; Chang et al., 2018; Morgan et al., 2017) and new data showing low terminal uridylation in frog oocytes (Figure 5\u2014figure supplement 1). The mechanistic explanation for how the second requirement is met in coupled systems is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Overall translation levels measured by polysome profiles are much lower in oocytes and early embryos than in later stages or mammalian cell lines, providing opportunity for PABPC's translation-activating effect to be more prominent. Previous studies showing PABPC promotes translation were often conducted in oocytes/embryos or in vitro with mixed results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are supported by polysome profile comparisons (Figure 3\u2014figure supplement 1A, Figure 6\u2014figure supplement 1B) and citations to prior work. The reconciliation of apparently contradictory literature (C127-C129) is thoughtful and acknowledges the context-dependence of PABPC function. However, the mechanistic basis for why low basal translation enables PABPC effects is not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "PABPC has context-dependent functions: in coupled systems (frog oocytes), PABPC promotes TE but not mRNA stability, while in uncoupled systems (mammalian cell lines), PABPC promotes mRNA stability but not TE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C130-C133 represent the central conclusion integrating all major findings. The context-dependent switch in PABPC function is supported by the comprehensive experimental evidence from both systems. The functional implications for gene regulation in different developmental contexts (C132-C133) are well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The context-dependent functions of PABPC explain why miRNAs primarily cause translational repression in early embryos (where PABPC affects TE) but primarily cause mRNA destabilization in later development and mammalian cells (where PABPC affects stability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 apply the findings to explain a well-documented phenomenon in miRNA biology. The mechanism (miRNA-mediated PABPC displacement and tail shortening) is supported by citations (Fabian et al., 2009; Giraldez et al., 2005; Bazzini et al., 2012; Guo et al., 2010). The explanation is logical and provides a unifying framework, though it remains somewhat speculative as the authors did not directly test miRNA effects in their systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The closed-loop model of mRNA circularization via eIF4G-PABPC interaction may be more prevalent in coupled systems (oocytes/embryos) than in uncoupled systems (mammalian cell lines), where PABPC depletion has minimal impact on TE and the eIF4G-PABPC interaction is dispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 synthesize the findings regarding the closed-loop model. The evidence that PABPC depletion doesn't affect TE in mammalian cells (C96-C100) supports the idea that closed-loop formation is not universal (C141). The citations to prior work showing dispensability in yeast and HEK293 cells (C142-C143) and importance in frog oocytes (C144) are appropriate. However, the conclusion remains somewhat speculative (C145) as the authors did not directly visualize or measure closed-loop formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background on PABPC: PABPCs are highly conserved RNA-binding proteins with high affinity for poly(A) sequences (Kd ~5 nM), requiring \u226512 As for efficient binding. They can interact with deadenylation complexes and have been implicated in both promoting and inhibiting various mRNA processes, with potentially variable stoichiometry in different contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C38 represent established knowledge from the literature, appropriately cited throughout. These provide necessary background for understanding the experimental work but do not constitute novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

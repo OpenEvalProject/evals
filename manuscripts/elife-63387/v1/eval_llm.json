@@ -1,0 +1,401 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "SepH is a conserved gene of unknown function in Streptomyces that is required for regular sporulation and localizes to division sites. The gene contains an N-terminal DUF3071 domain with a predicted HTH motif and is a direct target of sporulation regulators WhiAB, though it also localizes to vegetative cross-walls suggesting additional promoter regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are well-supported by bioinformatic analysis (C24-C26), cryo-SEM showing irregular sporulation in \u0394sepH (C27), fluorescence microscopy demonstrating co-localization with FtsZ (C28), and ChIP-seq data confirming WhiAB regulation (C29). The inference of additional promoter activity (C30-C31) is reasonable given the vegetative localization pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C32",
+      "C33",
+      "C47"
+    ],
+    "result": "SepH co-localizes with FtsZ at division sites and is required for both cross-wall formation and sporulation septation. SepH localization depends on FtsZ assembly, as it becomes cytoplasmic in \u0394ftsZ mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C47 are supported by fluorescence microscopy (Figure 1D), cryo-SEM (Figure 1C), and HADA labeling (Figure 2G). The FtsZ-dependence of SepH localization (C32-C33) is demonstrated by fluorescence microscopy and Western blot in \u0394ftsZ strains (Figure 1\u2014figure supplement 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In \u0394sepH mutants, Z-ladders display irregular spacing with some Z-rings failing to assemble, but the dynamics and architecture of successfully assembled Z-rings remain WT-like. FtsZ protein levels are unaffected by SepH deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by time-lapse microscopy and kymograph analysis (Figure 2B-D). Claims C38, C41 showing WT-like dynamics and width are supported by fluorescence intensity traces (Figure 2E) and width measurements (Figure 2F). FtsZ stability (C39-C40) is confirmed by Western blot (Figure 2\u2014figure supplement 2). The speculation about compensatory mechanisms (C42) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "SepH deletion dramatically reduces cross-wall formation in vegetative hyphae, resulting in longer hyphal compartments that are more susceptible to lysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is directly supported by HADA labeling data (Figure 2G). The inference that reduced cross-walls explain the lysis phenotype (C44, C46) is reasonable given established knowledge about cross-wall function (C45) and observed lysis in time-lapse experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The N-terminal DUF3071 domain is vital for SepH function and can partially restore sporulation when overexpressed, while the C-terminal domain alone is non-functional but contributes to full WT activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by complementation experiments with domain truncations analyzed by fluorescence microscopy and cryo-SEM (Figure 3). SepH-CTD fails to complement (C48, C51), SepH-NTD partially complements especially when overexpressed (C49-C50), leading to the reasonable inference that both domains contribute to full function (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SepH does not associate with the nucleoid or bind DNA, and does not play a direct role in chromosome segregation. The HTH motif is not involved in DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support these claims: SepH-YPet does not co-localize with HupA-mCherry (C53-C54, Figure 4A), no anucleate spores are observed in \u0394sepH (C55-C56, Figure 4B), ChIP-seq shows no enrichment (C57), DNase I footprinting shows no protection (C58), and EMSA shows no binding (C60). The inferences about HTH function (C61) and chromosome segregation (C62) are well-supported by this comprehensive negative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SepH oligomerizes and directly binds FtsZ through its N-terminal domain. The HTH motif is required for FtsZ interaction but not for SepH self-interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by yeast two-hybrid data (Figure 5A-B). SepH oligomerization and FtsZ binding are demonstrated (C64-C65), domain mapping shows NTD binds FtsZ while CTD does not (C67), and the G79P HTH mutant retains self-interaction but loses FtsZ binding (C68-C70), clearly demonstrating the HTH motif's role in FtsZ interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The SepH-G79P HTH mutant cannot restore WT sporulation and does not cause major structural changes. WT SepH, SepH-CTD, and SepH-G79P form tetramers while SepH-NTD forms dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by cryo-SEM (Figure 5\u2014figure supplement 2), C72 by CD spectroscopy (Figure 5\u2014figure supplement 3A), and C73-C74 by size exclusion chromatography (Figure 5\u2014figure supplement 3B). The data clearly demonstrate the oligomeric states and confirm the G79P mutation doesn't cause misfolding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "S. venezuelae FtsZ hydrolyzes GTP at 1.12 \u00b1 0.44 GTP/FtsZ/min. SepH does not hydrolyze GTP but moderately increases FtsZ GTPase activity in a domain-dependent manner. Cellular SepH levels are sixfold lower than FtsZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by GTPase assays (Figure 5D-E, Figure 5\u2014figure supplement 3C) and quantitative Western blot (Figure 5\u2014figure supplement 4). The data clearly show SepH's effect on FtsZ GTPase activity and establish physiologically relevant protein ratios for in vitro studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "SepH directly interacts with FtsZ in a GTPase-independent manner via the HTH motif. Co-sedimentation assays show SepH enhances FtsZ polymerization with GTP and co-sediments with FtsZ assembled with non-hydrolyzable GMPCCP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by co-sedimentation assays (Figure 5F, Figure 5\u2014figure supplement 5). The data show increased FtsZ pelleting with SepH (C82), reduced interaction with G79P mutant (C83), and robust co-sedimentation with GMPCCP (C85), supporting GTPase-independent interaction (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "SepH from S. venezuelae stimulates FtsZ protofilament formation but does not actively promote bundling. TEM shows FtsZ forms filaments with GTP that become more abundant with SepH, but no large bundles form at physiological ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by differential centrifugation (C88, Figure 6\u2014figure supplement 1) and TEM (C89-C96, Figure 6A-D, Figure 6\u2014figure supplement 2). The data clearly show increased filament abundance without bundling at 6:1 FtsZ:SepH ratio. The speculation about artificial stabilization at 1:1 ratio (C93) is appropriately qualified. The conclusion (C97) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "SepH stimulates FtsZ polymerization as measured by dynamic light scattering, leading to higher amplitude light scatter and faster depolymerization when GTP is limiting. SepH lowers FtsZ critical concentration from 1.43 to 1.11 \u03bcM, demonstrating promotion of reversible FtsZ protofilament assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by DLS experiments (Figure 6E-F, Figure 6\u2014figure supplement 3) and critical concentration measurements (Figure 6G). The data show SepH increases light scatter amplitude (C100), effects are domain-dependent (C105-C106), and the decline is due to depolymerization (C103-C104). The inference about increased filament ends and treadmilling (C110) is speculative but reasonable. The conclusion (C112) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "SepH is one of 24 conserved actinobacterial signature proteins, with 626 homologs identified exclusively in actinobacteria. The N-terminal DUF3071 domain including the HTH motif is highly conserved, along with two additional C-terminal motifs of unknown function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by phylogenetic analysis (C113-C118, Figure 7A) and sequence alignment (C119-C121, Figure 7\u2014figure supplement 1). The data clearly show actinobacteria-specific distribution, high conservation in Streptomycetales (>80% identity), and conserved sequence motifs. The speculation about motif function (C122) and species-specific evolution (C118) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "SepH from M. smegmatis (34% sequence identity to S. venezuelae SepH) can functionally complement the S. venezuelae \u0394sepH mutant, displays characteristic septal localization, and interacts with M. smegmatis FtsZ, supporting a universal role in actinobacterial cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by sequence comparison (C123), cryo-SEM and fluorescence microscopy showing complementation and localization (C124-C125, Figure 7B), and yeast two-hybrid showing SepHMs-FtsZMs interaction (C126, Figure 7C). The inference of universal function (C127) is well-supported by cross-species complementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "M. smegmatis SepH forms tetramers and dramatically stimulates FtsZMs polymerization. Unlike S. venezuelae SepH, SepHMs promotes lateral interactions between FtsZ filaments, leading to bundle formation that can be pelleted at low centrifugation speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by size exclusion chromatography (C128, Figure 7\u2014figure supplement 3), GTPase assays (C129, Figure 7\u2014figure supplement 4), DLS (C131, Figure 7D), TEM (C134, Figure 7E), and co-sedimentation at both high and low speeds (C135, Figure 7F). The data clearly demonstrate species-specific differences in SepH activity, with SepHMs promoting bundling while S. venezuelae SepH does not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "SepH is an actinomycete-specific positive regulator of Z-ring formation that plays a crucial role during early Z-ring assembly. SepH-mediated FtsZ assembly increases local FtsZ concentration, promoting spatial ordering, division-competent Z-ring formation, and efficient treadmilling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by the combined in vivo and in vitro data. Kymograph analysis shows Z-rings fail to assemble in \u0394sepH (C142, Figure 2C), contrasting with \u0394dynAB where assembled rings destabilize (C143). The model (C139-C140) is well-supported by in vitro data showing increased FtsZ polymerization and lowered critical concentration, though the connection to treadmilling is inferred from literature citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "Z-rings that successfully assemble in \u0394sepH mutants display similar dynamics and architecture to WT, possibly due to FtsZ molecules from failed assembly sites diffusing to and reinforcing neighboring Z-rings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C145 is supported by fluorescence intensity traces and width measurements (Figure 2E-F). However, the proposed compensatory mechanism (C146) is purely speculative with no direct experimental evidence. While the speculation is reasonable, it remains untested and alternative explanations are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "SepH is required for both vegetative cross-wall formation and sporulation septation in Streptomyces. Cross-wall formation is poorly understood and does not absolutely require core divisome proteins, but depends on FtsZ and SepH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims about cross-wall formation being poorly understood (C148) and not requiring all core proteins (C149) are supported by citations. SepH's requirement for cross-walls (C150) is demonstrated by HADA labeling (Figure 2G). The connection to lysis susceptibility (C151) is inferred but reasonable given established knowledge (C152). The conclusion (C153) is well-supported by combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The N-terminal DUF3071 domain containing the HTH motif is crucial for SepH function and FtsZ interaction. The C-terminal domain is required for tetramer formation, efficient localization, and influences overall activity, with two conserved motifs of unknown function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by complementation experiments (C155, Figures 3 and 5), mutational analysis (C157, Figure 5), size exclusion chromatography (C158, Figure 5\u2014figure supplement 3B), fluorescence microscopy (C158, Figure 3), TEM showing longer filaments with NTD alone (C159, Figure 6\u2014figure supplement 2D), and sequence alignment (C161, Figure 7\u2014figure supplement 1). The inference about CTD influence (C160) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "SepH homologs from S. venezuelae and M. smegmatis stimulate FtsZ nucleation and affect filament stability. Their biochemical properties are partially similar to ZapA and GpsB, with both promoting assembly and SepHMs additionally supporting bundling. Both form oligomers that may aid Z-ring condensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by DLS and TEM data (C162, Figures 6 and 7), with appropriate citations to ZapA and GpsB literature (C163-C167). The differences between species (C169-C170) are documented by GTPase assays. The inference about increased GTPase activity from more filament ends (C171) is reasonable. The call for structural studies (C172) is appropriate. Oligomerization (C174) is demonstrated by size exclusion chromatography.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "SepH plays a conserved and crucial role in actinobacterial cell division, including in human pathogens where it is essential. In S. venezuelae, while not essential, sepH deletion causes frequent lysis and inefficient sporulation. SepH functions to promote FtsZ polymerization, orchestrating assembly, stabilization, and activity at the onset of division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by the combined cytological, biochemical, and phylogenetic data (C175). The essentiality in pathogens (C176) is supported by citations. The S. venezuelae phenotype (C177) is demonstrated by time-lapse microscopy (Video 2). The summary conclusion (C178) is well-supported by all experimental data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "SepH from S. venezuelae and M. smegmatis interacts with FtsZ via a conserved HTH motif and stimulates FtsZ protofilament formation in vitro. M. smegmatis SepH additionally promotes lateral FtsZ filament interactions. SepH increases local FtsZ concentration to stimulate division-competent Z-ring assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are directly supported by yeast two-hybrid assays (Figure 5A-B), DLS (Figure 6E-F, Figure 7D), TEM (Figure 6D, Figure 7E), and co-sedimentation assays (Figure 7F). The proposed model (C21) is a reasonable inference from the combined in vivo phenotypes and in vitro biochemical data, though the connection to division competence is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

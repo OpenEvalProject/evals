@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Loss of Tsc1 in Purkinje cells leads to mTORC1 activation, as evidenced by increased soma size and phosphorylation of S6 in mutant PCs compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 provide converging immunocytochemical evidence from Figure 1a,b showing dim pS6 in control PCs and strong pS6 in mutant PCs, along with increased soma size. These observations are consistent with known mTORC1 signaling and validate the experimental model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Loss of Tsc1 in PCs results in widespread transcriptional downregulation, with 72% of 192 differentially expressed genes being downregulated and a statistically significant negative correlation between fold change and expression level (r=-0.14, p<2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 are supported by RNA-seq data from FACS-sorted PCs (N=4 per genotype) with appropriate statistical analysis. The bias toward downregulation is unexpected given mTORC1's known role in promoting transcription, but the data are clearly presented with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Downregulated transcripts in Tsc1-deficient PCs show reduced coverage at the 3' UTR compared to 5' UTR and coding sequence, suggesting increased 3'\u21925' RNA degradation, while upregulated genes show no such regional differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by coverage analysis of RNA-seq data (Figure 2a,b) with statistical significance (p<0.001, ANOVA with Tukey's post hoc). The differential effects between up- and downregulated genes strengthen the interpretation of distinct regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "978 transcripts with enhanced 3' UTR reduction are enriched for FMRP targets (p=2.59e-55), are significantly longer than similarly expressed genes (p=8.6e-5), are enriched in synaptic functions, and show specific enrichment in ASD risk genes (p=0.0048) but not intellectual disability or schizophrenia genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 are supported by multiple convergent analyses including gene ontology, FMRP target enrichment, transcript length analysis, and disease gene enrichment with appropriate statistical tests. The specificity for ASD genes is particularly notable and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "TRAP analysis of Tsc1-deficient PCs identified 165 differentially bound genes with nearly equal numbers showing increased and decreased ribosomal binding, and no overall bias toward downregulation of ribosome-bound mRNAs, contrasting with total RNA data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by TRAP RNA-seq data (N=3 per genotype) with appropriate validation of PC-specific GFP expression. The contrast between TRAP and total RNA results is clearly demonstrated and represents a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "1808 genes showed significantly increased translation efficiency (\u0394TE Z-score >4, p<3.2e-5), with 1131 showing increased \u0394TE in mutant PCs, demonstrating that mTOR activation through Tsc1 loss leads to increased translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by translation efficiency analysis comparing TRAP and total RNA data. The statistical approach using Z-scores from resampling is appropriate, though the lack of multiple testing correction is a limitation. The conclusion is consistent with known mTOR functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Predicted TOP genes (Yamashita et al.) showed significantly greater \u0394TE compared to all other genes (p=0.004) with increased ribosomal binding but unchanged total RNA abundance, while known TOP genes (Thoreen et al.) did not show significant increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by statistical analysis (Figure 4b,c). The discrepancy between predicted and known TOP genes is acknowledged and may reflect differences in TOP gene definitions or cell-type specificity. The p-value of 0.004 is modest and would not survive stringent multiple testing correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Genes with enhanced 3' UTR reduction show remarkably significant overlap with genes showing increased \u0394TE (p=2.08e-133), displaying downregulation at the transcript level with unchanged ribosomal binding, indicating increased relative ribosomal binding efficiency for FMRP-enriched targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are strongly supported by the extremely significant overlap (p=2.08e-133) and data in Figure 4e,f. This represents a key mechanistic finding linking transcript degradation to compensatory ribosomal binding changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Amplicon-based validation confirmed that 150 FMRP target genes were downregulated at the total mRNA level in mutant PCs but showed no significant change in ribosomal binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by orthogonal amplicon-based quantification (Figure 5a,b), which validates the RNA-seq and TRAP findings using a different technical approach. This strengthens confidence in the primary observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "FMRP target proteins DLG3, KIF3C, and SHANK2 showed significant reductions at the protein level in mutant cerebellum (p=0.017, p=0.023, p=0.047 respectively), suggesting that compensatory increases in ribosomal binding efficiency cannot overcome reduced transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by western blot (N=6 per genotype) and immunohistochemistry (N=4 per genotype) with statistical significance. However, the p-values are marginal and would benefit from larger sample sizes. The interpretation linking transcript, ribosome, and protein levels is logical but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Predicted 5' TOP genes (Cdk16, Rpl28) did not show significant changes at the protein level in mutant cerebellum, possibly due to dilution by expression in other cerebellar cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is supported by western blot data (Figure 6\u2014figure supplement 1), but C101 is speculative. The lack of protein-level changes could reflect technical limitations (whole cerebellum lysates diluting PC-specific changes), true biological compensation, or insufficient statistical power. PC-specific protein measurements would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C85"
+    ],
+    "result": "The authors hypothesize that increased 3'\u21925' RNA decay in mutant PCs may be mediated by the RNA exosome complex, potentially induced by mTORC1-stimulated ribosomal biogenesis, with 20 of 24 exosome-associated genes showing modest non-significant increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C80, and C85 are explicitly speculative hypotheses. While C80 provides some supporting data (modest increases in exosome genes), the increases are non-significant and the mechanistic link remains unproven. This represents a reasonable hypothesis for future investigation but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C91",
+      "C93"
+    ],
+    "result": "The authors propose that the primary abnormality is at the transcript level with compensatory ribosomal binding, potentially mediated by FMRP dysfunction facilitating transcript-ribosome binding despite reduced abundance and contributing to RNA degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86, C91, and C93 are interpretive inferences based on the data but remain mechanistically unproven. While the data show transcript reduction and maintained ribosomal binding, the causal relationships and role of FMRP dysfunction are speculative. Direct experiments manipulating FMRP or RNA degradation pathways would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C72",
+      "C107",
+      "C111",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors conclude that dysregulation of FMRP targets at the transcript level may drive PC dysfunction and synaptic abnormalities underlying abnormal social behavior in TSC, suggesting that treatments targeting FMRP pathways or RNA decay/ribosomal binding pathways may be beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C71, C72, C107, C111, C114, C115, and C116 are speculative conclusions and therapeutic proposals. While the molecular findings are well-supported, the causal links to PC dysfunction, synaptic abnormalities, and behavioral phenotypes are inferential. No behavioral data are presented in this study, and the connection relies on prior work (C2, C12). Functional validation would be required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C39",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Background and contextual claims about TSC, mTOR signaling, FMRP function, RNA degradation mechanisms, and prior studies are presented to frame the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C9-C20, C39, C73-C77, C79, C81-C84, C87-C90, C92, C94-C96, C99, C102-C106, C108-C110) are supported by appropriate citations to prior literature and represent established knowledge or prior findings. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

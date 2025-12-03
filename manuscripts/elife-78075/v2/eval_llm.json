@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C23",
+      "C24",
+      "C26",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors engineered S. cerevisiae with a synthetic dual-feedback circuit that controls potassium channel expression through phytohormones auxin and salicylate, producing macroscopically coordinated pulses of plasma membrane potential. This system enables control of ion channel expression on extended spatial-temporal scales in eukaryotic cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C23-C24, C26, C71-C72 collectively describe the main experimental approach and findings. The dual-feedback circuit design (C7, C40) is supported by experimental data in Figures 2 and 3, showing coordinated gene expression (C46-C48) and PMP changes (C53-C54, C73). The system successfully converts chemical inputs into dynamic ion channel expression across cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors previously developed a synthetic two-component circuit using bacterial regulators IacR and MarR that are inhibited by auxin and salicylate respectively, capable of coordinating gene expression in yeast on extended spatiotemporal scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 describe prior work that forms the foundation of the current study. These claims are supported by citation to P\u00e9rez-Garc\u00eda et al., 2021 and shown in Figure 1A. The circuit components and their regulation by phytohormones are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors used an engineered open bacterial potassium channel KcsA* with plasma membrane localization and degron sequences as the output module, tested in microfluidic devices with ThT as the optimal PMP reporter dye.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C83-C86, C89-C92 describe the methodological approach. KcsA* construction is supported by citations and shown in Figure 1B. ThT superiority over other dyes is demonstrated in Figure 1\u2014figure supplement 2A-C with potassium clamp experiments. Microfluidic device specifications are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C75"
+    ],
+    "result": "The open-loop circuit driving KcsA* showed noisy, weakly coupled ThT fluorescence fluctuations with ~50% synchronicity and broad period distribution, demonstrating insufficient robustness for macroscopic PMP control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39, C75 describe the open-loop system performance. Control strain shows no regular changes (C35, Figure 1D-E), while open-loop shows recognizable but noisy fluctuations (C36-C38, Figure 1F-I). The conclusion of insufficient robustness (C39) is justified by the quantitative data showing only 50% synchronicity and broad period distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors designed a dual-feedback circuit coupling IacR and MarR through positive and negative feedback loops. Computer modeling identified regimes demonstrating excitable dynamics, with transitions between steady state, excitability, and oscillations depending on the IacR-MarR deactivation ratio controlled by IAA and SA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 describe the dual-feedback circuit design and computational predictions. The circuit architecture is shown in Figure 2A. Computer simulations (Figure 2B, Figure 2\u2014figure supplement 1) demonstrate different dynamical regimes based on protein turnover ratios, providing theoretical foundation for the experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The dual-feedback circuit exhibits excitable-like dynamics with refractory periods and produces spatially coordinated pulses of dEGFP and KcsA-EGFP fluorescence under cyclic phytohormone stimulation (2 hr, 1 hr, 30 min periods), with ~95% of communities showing coordinated peaks in agreement with computational models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 describe the dual-feedback circuit performance. Excitable dynamics are demonstrated in Figure 2C and Figure 2\u2014figure supplements 3-4. Coordinated pulses are shown in Figure 2E-F with high synchronicity (~95%, C48, Figure 2I). KcsA-EGFP data (C49-C50, Figure 2\u2014figure supplement 7) confirms circuit control of ion channel expression. Experimental-computational agreement (C47) validates the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C73",
+      "C76"
+    ],
+    "result": "The dual-feedback circuit produces remarkably consistent cyclic bursts of ThT fluorescence across cell populations with robust temporal response, though faster stimulation frequencies show reduced robustness and visible amplitude variation. Dual-feedback integration significantly improves robustness compared to open-loop control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58, C73, C76 describe PMP dynamics with the dual-feedback circuit. Consistent ThT bursts are shown in Figure 3A-B with strong autocorrelation and synchronicity (C54, Figure 3C-D). Reduced robustness at faster frequencies (C55) and amplitude variation (C56-C57) are acknowledged limitations. The comparison to open-loop (C58, C76) demonstrates clear improvement in robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C74"
+    ],
+    "result": "The dual-feedback circuit successfully controls expression of the native yeast potassium channel TOK1* (engineered with degron), producing consistent ThT pulses similar to KcsA*, demonstrating generality of the approach for controlling both heterologous and native channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68, C74 describe TOK1* experiments. Background on TOK1 function is well-cited (C59-C64). TOK1* construction and experimental results (C65-C66, Figure 3G-H, Figure 3\u2014figure supplement 2) show consistent performance similar to KcsA*. The conclusion about generality (C67-C68) is justified by successful demonstration with both heterologous and native channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C69",
+      "C70"
+    ],
+    "result": "Ion channels play critical roles in electrical signaling across biological systems, and their expression is important in disease. While local control of ion channel activity has advanced, controlling ion channel expression on extended spatial-temporal scales remains challenging, with limited experimental models available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C9-C22, C69-C70 provide background context. These claims are supported by appropriate citations to established literature and accurately describe the state of the field, the importance of ion channels in disease, and the gap in current capabilities that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "This work enables transformation of clocked chemical cues into coordinated ion channel expression without cell-to-cell coupling, proposing that coherent changes in ion channel expression can adjust electrical activity on extended scales. The proof-of-concept study shows amplitude variability, requiring future improvements for therapeutic applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C82 discuss broader implications and future directions. While the experimental data support the basic concept (C77-C78), the therapeutic potential (C79, C82) remains speculative. The acknowledged limitations (C80) and need for future work (C81) indicate the system requires further development before clinical applications can be realized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "ThT shows near-linear fluorescence response to potassium concentration, while DIBAC4(3) and Dis-C3(3) show lower stability and more exponential decay with lower dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 describe dye comparison results shown in Figure 1\u2014figure supplement 2. The near-linear response of ThT and inferior performance of other dyes are clearly demonstrated in the potassium clamp experiments with quantitative measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "IacR and MarR are induced by galactose and repressed by auxin and salicylate respectively, with MarR tagged with ODC degron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 describe circuit component regulation shown in Figure 1A and supported by citations to P\u00e9rez-Garc\u00eda et al., 2021 and Takeuchi et al., 2008. These are well-documented features of the circuit design.",
+    "result_type": "MINOR"
+  }
+]

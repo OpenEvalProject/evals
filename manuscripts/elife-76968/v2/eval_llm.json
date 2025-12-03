@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C31",
+      "C32",
+      "C33",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors developed GLO-Bot, an automated robotic platform for high-throughput imaging of Arabidopsis root systems in soil. The system consists of a Cartesian gantry robot housing the GLO1 imaging system and can hold 84 rhizotrons (7 boxes \u00d7 12 rhizotrons each), with a maximum capacity of imaging 96 rhizotrons in 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26, C31-C33, C90-C91 collectively describe the GLO-Bot system design and capabilities. The physical system is documented with detailed schematics (Figure 1), capacity calculations are straightforward (7\u00d712=84), and the throughput claim (C51: 96 in 24hr) is explicitly stated. The system successfully automated the previously manual GLO-Roots workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors developed GLO-RIAv2, an improved image analysis pipeline that addresses signal variability and background noise through sequential image addition, alignment using Template Matching plugin, and iterative noise removal. Validation against manual tracing showed strong correlation with higher r\u00b2 values, higher slopes, and lower y-intercepts compared to the previous GLO-RIAv1 method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C34-C39, C92-C93 describe the image analysis pipeline development and validation. The workflow is clearly documented (Figure 2A), the validation is quantitative (Figure 2B shows comparison with manual SmartRoot tracing), and the improvements over GLO-RIAv1 are demonstrated empirically. The technical challenge (signal decay in older roots, C34) and solution (sequential addition, C35) are logically connected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C101"
+    ],
+    "result": "Time-lapse imaging of six Arabidopsis accessions from 9-31 days after sowing revealed unique RSA patterns for each accession. PCA showed time as the largest source of variation (PC1, 56.99%), with angle and depth-to-width ratios distinguishing accessions along PC2 (21.67%). Most traits stabilized by 28 DAS, and continuous imaging did not influence RSA traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46, C101 describe the six-accession pilot study results. The experimental design is clear (C40), PCA results are quantified (C42-C43), temporal dynamics are documented (C44-C45, Figure 3D), and the control experiment validates that imaging itself doesn't affect traits (C46, Figure 3\u2014figure supplement 3). The data support the conclusion that temporal resolution is important for detecting accession differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50",
+      "C28",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors created a GLO-Roots diversity panel of 93 Arabidopsis accessions (72 Swedish + 20 from extreme environments) transformed with the ProUBQ10:LUC2o reporter. All accessions were imaged from 14-28 DAS with six biological replicates, creating a unique temporal dataset of mature root systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C50, C28, C52-C53 describe the diversity panel creation and experimental design. The panel composition is documented (Figure 4A, Supplementary file 2), the transformation process is described (C47), and the imaging schedule is specified (C52). The six replicates provide adequate biological replication for the population size, though temporal replication rather than internal replication was used due to system capacity constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Analysis of the 93-accession diversity panel using fitted values from MCMCglmm models revealed that PC1 captures temporal variation while PC2 captures angle-related traits. Average root angle and depth-to-width ratio are negatively correlated. Temporal correlation analysis showed that average angle per day is highly correlated between consecutive days (r=0.99) but less correlated between early and late time points (r=0.56), indicating that some accessions change root angle over time while others remain stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 describe the statistical analysis and phenotypic relationships in the diversity panel. The MCMCglmm approach is appropriate for handling replicate noise in temporal data (C54), PCA results are clearly presented (C55-C56, Figure 5A), and the correlation analysis is quantified (C58-C59, Figure 5B). The inference about temporal stability (C60) is supported by the correlation data and specific examples (Figure 5C, E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C102",
+      "C103"
+    ],
+    "result": "GWAS analysis identified 29 significant SNPs (Bonferroni-corrected, MAF>0.05) across multiple RSA traits, indicating polygenic control. Average angle showed the highest heritability (H\u00b2=0.45) with 12 significant SNPs, while average angle per day had H\u00b2=0.31 with 8 significant SNPs. The authors acknowledge that the relatively small population size (93 accessions) and polygenic nature of traits may limit detection power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29, C61-C71, C102-C103 describe the GWAS results and genetic architecture. The analysis is appropriately conducted with Bonferroni correction and MAF filtering (C62-C63), heritability estimates are provided (C61, C68-C69), and the number of significant SNPs is clearly stated (C70-C71). The authors appropriately acknowledge limitations (C102-C103), which strengthens rather than weakens the result. The conclusion of polygenic control (C5, C67) is well-supported by finding 29 SNPs across multiple traits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "GWAS identified candidate genes potentially involved in RSA variation, including genes with similarity to phospholipases (associated with average angle traits), Cyclin A2;3 (associated with root depth), and a P-loop nucleoside triphosphate hydrolase (associated with depth-to-width ratio). The authors suggest these genes may influence root angle adjustment, root depth through cell cycle regulation, and gravitropism, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73, C76, C79 report specific GWAS hits, which are supported by the data. However, claims C75, C78, C81 are explicitly speculative interpretations based on gene annotations and expression patterns (C74, C77, C80 cite prior knowledge). The functional connections are plausible but unvalidated. The authors appropriately acknowledge (C105) that follow-up experiments are needed. Without functional validation, the mechanistic claims remain uncertain despite the statistical associations being real.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "RSA traits show significant correlations with climate variables, particularly temperature-related variables. Average angle per day correlates with mean diurnal temperature range (r=0.373, p=2.56\u00d710\u207b\u2074), with shallow-rooted accessions tending to originate from climates with larger daily temperature fluctuations. Clustering analysis divided accessions into three groups (consistently shallow, consistently deep, intermediate), which show geographic segregation consistent with climate being an important selective pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C30, C82-C88 describe climate correlations. The correlation analysis is quantified (C83) with appropriate statistics, the interpretation about shallow roots and temperature variability (C84) follows logically from the correlation, and the clustering analysis (C87) with geographic validation (C88, Figure 6C) provides convergent evidence. The correlation is modest but statistically significant, and the geographic pattern supports the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C115"
+    ],
+    "result": "Surprisingly, RSA traits showed low or non-significant correlations with total annual precipitation. The authors suggest this could be due to the limited number of accessions, the specific selective pressures on Swedish populations, well-watered growth conditions, or that temperature may be more important than precipitation as a selective pressure on Arabidopsis RSA. They note that future experiments in conditions mimicking native environments or environmental stresses are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111, C115 describe an unexpected negative result and its interpretation. The lack of correlation with precipitation (C109) is a valid finding, and the authors appropriately discuss multiple possible explanations (C110-C111) without over-interpreting. The suggestion for future work (C115) is reasonable. This is well-handled as a negative result with appropriate caveats about experimental design limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors note that A. thaliana's rapid linkage decay allows within-gene trait mapping, but recommend follow-up analyses including accession-specific gene expression, complementation, knock-out, and reporter assays to validate GWAS findings. They suggest the dataset provides resources for future studies including genetic analysis of principal components, multi-trait analyses, and structure-function modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are appropriate statements about future work. C104 correctly cites the genetic properties of A. thaliana, C105 appropriately recommends validation experiments, and C106 describes potential uses of the dataset. These are reasonable suggestions that acknowledge the limitations of GWAS and the value of the resource created.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors discuss potential improvements to the system, including machine learning for image segmentation, noting that bioluminescence has advantages for fine roots like Arabidopsis compared to RGB imaging. They suggest using homozygous luciferase lines or autonomous bioluminescence pathways could improve signal. Technical challenges included rhizotron handling errors, which were addressed by design modifications, and further improvements in robotics precision could increase throughput.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 discuss technical considerations and future improvements. The comparison of imaging modalities (C95-C96) is appropriately cited, suggestions for improvement (C97-C98) are reasonable based on the experience described, and the acknowledgment of technical challenges (C99) with solutions demonstrates iterative improvement. These are appropriate technical discussions for a methods-focused paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors contextualize their findings with ecological knowledge, noting that desert plants often have shallow root systems with advantages for capturing precipitation and accessing nutrients, which may improve survival in variable climates. They discuss that vapor pressure deficit (VPD), which drives transpiration, is exponentially related to temperature, and modern crops are susceptible to elevated VPD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108, C112-C114 provide ecological and physiological context for interpreting the climate correlations. These are appropriately cited statements of established knowledge (C107, C112-C114) and reasonable inferences connecting the observed patterns to ecological function (C108). This contextualizes the findings within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C25"
+    ],
+    "result": "The GLO-Roots system was previously developed to visualize soil-grown Arabidopsis root systems from germination to maturation using custom growth vessels, luminescence-based reporters, an imaging system, and image analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C25 accurately describe prior work (Rell\u00e1n-\u00c1lvarez et al., 2015) that forms the foundation for the current study. This is appropriately cited background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction provides established background on plant biology, root system architecture, root development, hormone regulation, and the challenges of studying roots. This includes the functions of shoot and root systems, the definition of RSA, root branching patterns, hormone regulation of root development, and the trade-offs between physiological relevance and throughput in existing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C24 are appropriately cited statements of established knowledge that provide context for the study. These are standard introductory material for a root biology paper and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Implementation of automation expands the number of individuals that can be phenotyped and the phenotypes that can be captured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is a general statement about automation in phenotyping that is appropriately cited and serves as motivation for the study.",
+    "result_type": "MINOR"
+  }
+]

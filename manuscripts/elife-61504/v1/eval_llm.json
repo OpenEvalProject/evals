@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study presents a simple, fast, cost-effective freshwater diagnostics workflow using portable nanopore sequencing technology, with optimized experimental protocols for multiplexed MinION usage. Surface water samples were collected at nine locations along a ~12 km reach of the River Cam at three time points (April, June, August 2018), with full-length 16S rRNA gene sequencing performed on all barcoded samples including negative and mock community controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C25, C27-C29, C115-C117 collectively describe the experimental design and workflow development. The methodology is well-documented in the Materials and Methods section, with appropriate controls (negative and mock communities), spatial sampling (9 locations), and temporal sampling (3 time points). The workflow is illustrated in Figure 1 and supported by detailed protocols.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C83"
+    ],
+    "result": "Twelve taxonomic classification tools for nanopore sequences were benchmarked using mock community and aquatic samples. Minimap2 achieved 99.68% correct classification of mock community taxa with 92.08% mean sequencing accuracy and the second-lowest RMSE, outperforming faster tools like Kraken 2 and Centrifuge. An Enterobacteriaceae overrepresentation was consistently observed across all methods, attributed to primer bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26, C30-C39, C83 describe a comprehensive benchmarking analysis shown in Figure 2 and supplementary figures. The quantitative metrics (99.68% alignment, 92.08% accuracy, RMSE values) are clearly presented. The primer bias interpretation (C30-C31) is supported by citation to Frank et al., 2008. The comparison across tools with performance metrics provides robust evidence for tool selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Sequencing of 30 river samples and controls yielded ~8.3 million sequences, with 82.9% taxonomically assigned to family level. Rarefaction at 37,000 reads preserved ~90% of taxon richness (Mantel test R=0.814, p=2.1\u00d710\u207b\u2074) but resulted in exclusion of 14 samples. The remaining 16 samples showed moderate microbial heterogeneity with Simpson index ranging 0.46-0.92, indicating low evenness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 describe the sequencing output and diversity analysis with specific quantitative metrics shown in Figure 3 and supplementary figures. The rarefaction approach is statistically validated with Mantel test, and the exclusion of 14 samples is transparently reported. The diversity metrics are appropriately calculated and interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Nanopore metagenomics depicted a dominant core microbiome across aquatic samples, with the most common families being Burkholderiaceae (40.0%), Spirosomaceae (17.7%), and NS11-12 marine group (12.5%). These families are commonly associated with aquatic environments, with Burkholderiaceae reads originating from typical freshwater genera. Biological replicates showed high concordance, indicating discernible spatiotemporal trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47-C52, C88-C90 describe the core microbiome characterization shown in Figure 4. The quantitative abundances are clearly presented, and the ecological interpretation is supported by established knowledge and genus-level analysis (Figure 4\u2014figure supplement 1). The replicate concordance provides validation of the approach. Citation to Rowe et al., 2016 supports prior findings in the same river.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Nanopore metagenomics depicted fine temporal gradients with marked time dependence, separating April samples from June/August. The strongest seasonal variation (PC3) derived from Carnobacteriaceae, which showed significantly higher abundance in colder April samples (11.3\u00b0C) compared to summer months (15.8-19.1\u00b0C), supported by mixture model analysis (p<0.01) and literature on cold-substrate association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C53-C57, C91-C93 describe temporal variation analysis shown in Figure 5. The PCA clearly separates time points, with statistical support from Kruskal-Wallis and mixture model tests. The Carnobacteriaceae-temperature correlation is supported by citation to Lawson and Caldwell, 2014. However, C93 appropriately notes this is speculative and requires consideration of confounding hydrochemical factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Significant temporal variation in water chemistry was observed, with spatial gradients of increasing sodium and chloride concentrations along the river reach, likely from anthropogenic inputs. The River Cam showed high TDS (mean 458 mg/L) and major ion signatures similar to heavily-impacted rivers, with enrichment in Na\u207a. PC1 of hydrochemical PCA showed strong temporal separation between spring and summer samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C118-C125 describe comprehensive hydrochemical analysis shown in Figure 6. The measurements are quantitative with appropriate analytical methods (ICP-OES, ion chromatography). The interpretation of anthropogenic pollution is supported by comparison with global river data (Gaillardet et al., 1999) and geological context. The temporal clustering is clearly demonstrated in PCA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The data featured relevant sewage signals in a public health context, with 21 potentially pathogenic and 8 wastewater-associated genera detected across river samples. Many signals were stronger downstream of urban sections and near wastewater treatment plant outflow. Arcobacter was the most prolific candidate pathogen genus, implicated in gastrointestinal infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C63-C68 describe pathogen detection shown in Figure 7. The genera lists are compiled from established databases (Jin et al., 2018; Wattam et al., 2017; Global Water Microbiome Consortium et al., 2019). The spatial patterns showing downstream enrichment are clearly visualized. However, the term 'sewage signals' is somewhat vague and the pathogenicity is potential rather than confirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C98"
+    ],
+    "result": "The data featured pathogen maps at species-level resolution through phylogenetic analysis. Legionella and Salmonella showed negligible harmful species, while Pseudomonas aeruginosa was detected at low abundance downstream. Leptospira analysis showed distinctly higher similarity to saprophytic rather than pathogenic species, validated by species-specific qPCR, confirming nanopore sequencing quality is sufficient for species-level bacterial monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C73-C80, C98 describe species-level pathogen characterization shown in Figure 8. The phylogenetic analyses appropriately distinguish pathogenic from non-pathogenic species using reference sequences. The qPCR validation (Supplementary file 5) provides critical orthogonal confirmation of the nanopore findings for Leptospira. The conclusion about sequencing quality (C80) is well-supported by the concordance between methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C96"
+    ],
+    "result": "The workflow allows robust assessment of both core microbiome and heterogeneous bacterial compositions in context of physical and hydrochemical parameters. The technology's ~92% sequencing accuracy enables designation of significant pathogen community shifts along rural-to-urban transitions. Targeted 16S rRNA gene MinION sequencing is a suitable complement to hydrochemical controls for pinpointing contaminated freshwater sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C96 are summary conclusions integrating multiple analyses. The combined bacterial composition (Figures 4-5) and hydrochemical data (Figure 6) support C81. The pathogen spatial patterns (Figures 7-8) with 92% accuracy support C82. However, these are interpretive claims that synthesize the data rather than direct observations. The evidence is strong but the conclusions are somewhat broad.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Using Minimap2, 16.2% of freshwater reads were assigned to species level, 65.6% to genus level, and 76.6% to family level, primarily encouraging automated analyses at genus or family level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 provide quantitative classification rates that are clearly stated in the Discussion. These metrics directly inform the appropriate taxonomic resolution for analysis. The values are consistent with the benchmarking results and appropriately guide the analytical approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Microbial DNA extraction protocols require careful optimization for freshwater sources. Membrane extraction from 400 mL River Cam water was sufficient (versus 10,000 mL in prior study). Yield variations negatively affected molar balance in barcoded runs, causing elevated June 2018 dropouts. MinION R9.4.1 flow cell throughput fluctuated by an order of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 describe methodological challenges and optimizations. The 400 mL vs 10,000 mL comparison (C101-C102) is supported by citation to Rowe et al., 2016. The June dropouts (C103) are evident in Figure 3a and Supplementary file 2. The throughput variation (C104) is documented in the sequencing output data. These are important practical considerations for the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C106"
+    ],
+    "result": "Total sequencing consumable costs were below \u00a34000, with individual processing at ~\u00a375 per sample. Costs could be reduced to ~\u00a320 per sample when pooling ~100 samples on a single flow cell. With ~5,000,000 read output, this would yield >37,000 sequences per sample, surpassing the conservative threshold for comparative analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129, C106 describe cost analysis detailed in Supplementary file 6. The calculations are straightforward and based on actual consumable costs and observed sequencing yields. The projection for 100-sample multiplexing (C128-C129) is a reasonable extrapolation from the data, though it assumes near-equimolar pooling which may be challenging in practice (as noted in C103).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Sample April-7 caused much taxonomic variation (PC1, 27.6% variance), characterized by unusual dominance of Caedibacteraceae and Halomonadaceae. Sample April-8 showed highly distinct composition with families nearly exclusively occurring in this sewage pipe outflow sample, including wastewater-associated bacteria (Haliangiaceae, Nitospiraceae, Rhodocyclaceae, Saprospiracea).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe outlier samples shown in Figure 5\u2014figure supplement 1 and Figure 7. The PCA clearly shows April-7 as an outlier along PC1. The wastewater-associated bacteria in April-8 are supported by citations to Nielsen et al., 2012 and Global Water Microbiome Consortium et al., 2019. These outliers are appropriately identified and characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Seasonal differences in bacterial composition can be expected due to increasing water temperatures, though additional changes may have been caused by alterations in river hydrochemistry and flow rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are interpretive statements about potential drivers of observed patterns. C58 is based on general ecological knowledge. C59 is inferred from correlation between hydrochemical changes (Figure 6) and bacterial composition changes (Figure 5). However, the causal relationships are not definitively established - these are correlations rather than controlled experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C99",
+      "C105",
+      "C108",
+      "C109",
+      "C114"
+    ],
+    "result": "Future improvements are anticipated: nanopore sequencing quality will likely improve through refined chemistries and algorithms, enabling better taxonomic classification. Future studies should combine nanopore metagenomics with targeted follow-up measurements of living pathogens. Real-time selective sequencing could improve barcode balances. Shotgun sequencing could bypass amplicon biases and enable monitoring of eukaryotes and viruses. Portable methods will democratize DNA sequencing access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87, C99, C105, C108-C109, C114 are speculative statements about future developments and recommendations. While supported by citations to relevant technological advances and alternative approaches, these are predictions and suggestions rather than findings from the current study. They represent reasonable extrapolations but cannot be evaluated as supported or unsupported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C94",
+      "C95",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The introduction contextualizes the study within existing knowledge about traditional microbiological testing, waterborne disease threats, environmental metagenomics capabilities and limitations, nanopore sequencing technology, and prior freshwater nanopore studies. Traditional methods are time-consuming and infrastructure-dependent, while metagenomics offers comprehensive profiling but typically requires expensive stationary equipment. Nanopore technology enables portable real-time sequencing but faces challenges with freshwater's low DNA input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C24, C94-C95, C110-C113 provide background context supported by appropriate citations. These establish the rationale for the study by describing limitations of existing approaches and capabilities of new technologies. The claims accurately represent cited literature and established knowledge in the field. This is standard introductory material rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

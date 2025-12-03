@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C24",
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The study constructed 1343 empirical social networks from wild great tits by tracking foraging associations at 62 feeder locations across 39 weekends over 3 years using RFID technology. Networks were temporally and spatially restricted (weekend-scale, location-specific) to capture relevant social connections for behavioral spread, with networks averaging 21.7 individuals (range: 10-77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology for network construction is well-documented with clear descriptions of data collection (C26, C29-C32), network inference methods using established techniques (C36-C39), and comprehensive descriptive statistics (C46-C50). The rationale for temporal and spatial restrictions is explicitly justified (C33), and the final dataset characteristics are clearly reported (C40, C47-C50).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Four social learning mechanisms were simulated on each network: simple rule (probability depends on sum/strength of connections to informed individuals), threshold rule (requires connections to informed individuals to surpass threshold a=5), proportion rule (depends on ratio of informed/uninformed connections), and conformity rule (disproportionate copying of majority, f=5). Each simulation was repeated 100 times with randomly selected demonstrators and social transmission strength s=5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The four learning rules are clearly defined with appropriate mathematical formulations and parameter specifications (C25, C41-C43). The simulation methodology is well-described including randomization procedures (C44) and replication strategy (C45). Parameter choices are stated explicitly, though justification for specific values (e.g., why s=5, a=5, f=5) is limited beyond stating they are \"appropriate for our study system.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C51",
+      "C52",
+      "C53",
+      "C69"
+    ],
+    "result": "Under simple and threshold learning rules (where adoption depends on sum/strength of connections to informed individuals), individuals with higher weighted degree and betweenness and lower clustering coefficients adopted behaviors faster. This relationship remained stable until approximately 75% of individuals were informed under the simple rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The results are clearly demonstrated through simulation data (C51-C52) with visual evidence in Figure 2. The finding aligns with theoretical predictions (C20, C69) and includes temporal dynamics showing when the relationship changes (C53). The claims are internally consistent and supported by the described methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C54",
+      "C70"
+    ],
+    "result": "Under proportion and conformity learning rules (where adoption depends on the ratio of informed to uninformed connections), there was little or no relationship between individual social network metrics and order of acquisition, contrasting with expectations that more social individuals adopt behaviors faster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is clearly stated (C21, C54) with supporting visual evidence (Figure 2). The finding is contextualized with human studies showing similar patterns (C70), strengthening the interpretation. This represents a key finding that challenges common assumptions about sociality and information acquisition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The simple rule showed the strongest correlations between network metrics and order of acquisition across all four models. The direction of relationships remained unchanged across different social transmission rates (s=1, 5, 10), though correlation strength increased with higher transmission rates for the simple rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis across models is supported by Figure 3 (C55) and sensitivity analyses (C56-C57, Figure 3 supplements). The robustness testing across parameter values strengthens confidence in the main findings, though the analysis is primarily descriptive rather than inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Network size modulated the relationship between individual sociality and order of acquisition. For simple and threshold rules, larger networks showed stronger correlations between network metrics and acquisition order. The weaker correlations in smaller networks may be due to reduced likelihood of social spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The network size effects are demonstrated through mixed-effects models (C58-C59, Figure 4, Supplementary file 1b) and supported by mechanistic interpretation (C90). The statistical approach appropriately accounts for nested structure (location, week, year as random effects). However, effect sizes are noted as small, particularly for complex contagions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C84",
+      "C85"
+    ],
+    "result": "The probability of social learning varied substantially across learning mechanisms and network sizes. Simple and proportion rules showed consistently high social transmission probability, while threshold and conformity rules showed limited social spread, especially in smaller networks (<20 individuals for threshold rule) or at initial transmission phases (conformity rule in larger networks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The probability analysis is well-supported by Figure 5 showing clear differences across models and network sizes (C60-C64). The mechanistic explanations for limited spread under threshold rules in small networks (C63, C84) and conformity rules initially in large networks (C64) are logically sound. Sensitivity analyses across parameter values (Figure 5 supplements) strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C102"
+    ],
+    "result": "The relationship between individual sociality and behavioral acquisition fundamentally depends on the underlying social learning mechanism, challenging the common assumption that sociality is universally linked to higher likelihood of acquiring information and adopting new behaviors in real-world networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the convergence of multiple simulation results (C20-C21, C51-C54, C58-C59) showing mechanism-dependent relationships. The claim appropriately synthesizes the major findings and is conservative in its interpretation. The use of empirical networks strengthens generalizability compared to artificial networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C103"
+    ],
+    "result": "Social transmission can be severely limited under certain learning rules (particularly threshold rules) and in networks of specific sizes, with near-zero probability of social learning in small networks (<20 individuals) under threshold rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitation of social spread is clearly demonstrated through probability analyses (Figure 5, C63-C64) showing mechanism- and size-dependent constraints. The finding has important implications for understanding when behaviors can versus cannot spread socially, though the specific threshold values tested may be somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Under certain learning mechanisms (conformity, proportion rules), high social connectivity can reduce rather than enhance behavioral adoption. Highly connected individuals may require stronger social signals or longer time for the majority of connections to become informed, while poorly connected individuals may be disadvantaged primarily under simple and threshold rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The counterintuitive finding is supported by simulation results (C54, C70) and contextualized with human studies (C71, C79). The asymmetry in costs/benefits of network position across learning rules (C80-C81) is demonstrated through the data, though some aspects involve inference beyond direct observation. The claims appropriately distinguish between different learning mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C86",
+      "C87"
+    ],
+    "result": "Behaviors following simple or proportion rules have higher likelihood of social spread even in initial phases, while behaviors following threshold or conformity rules require more asocial learning events initially. This may bias empirical research toward detecting simpler transmission processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The differential detectability of transmission processes (C86) is supported by probability analyses (C84-C85, Figure 5), but the speculation about bias in empirical research (C87) extends beyond the data. While logically plausible, this claim about what \"may\" occur in empirical research is not directly tested and represents informed speculation rather than demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In smaller networks, order of acquisition may be primarily predicted by direct connections to the demonstrator (\"who you know\"), while in larger networks, the number and extent of connections (\"how many you know\") may be more important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This interpretation of the network size effects (C91-C93) is presented as speculation (\"may suggest,\" \"may be\") and represents inference beyond the direct simulation results. While consistent with the observed weaker correlations in smaller networks (C90), the specific mechanism proposed is not directly tested. The distinction between \"who\" versus \"how many\" is conceptually interesting but requires additional analysis to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study acknowledges several limitations: individuals may differ in learning thresholds and social information use (potentially varying by dominance, sex, familiarity); simulations could not capture network changes resulting from behavioral adoption; individuals may revert to uninformed states; and network metrics are correlated, making it difficult to isolate independent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations are appropriately acknowledged with supporting citations for individual variation (C95-C96), dynamic network effects (C98-C99), and methodological constraints (C100-C101). These represent genuine limitations of the simulation approach, though they do not invalidate the main findings. The correlation among network metrics (C101) is documented in Supplementary file 1a.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction establishes that social learning enables behavioral spread through social networks, but little is known about how the relationship between sociality and information flow depends on specific learning mechanisms. Different learning rules (simple contagion vs. complex rules requiring multiple sources or majority adoption) can fundamentally alter predictions about which individuals adopt behaviors and transmission pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims are well-supported by appropriate citations to prior literature (C1-C3, C6, C9-C11, C13, C15, C17-C18) and establish clear knowledge gaps (C4, C11). The logical framework distinguishing simple from complex contagions (C7-C10, C14-C16) is sound and sets up the study rationale effectively. The claims about human studies (C17) appropriately contextualize expectations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C27",
+      "C28",
+      "C34"
+    ],
+    "result": "Great tits are an appropriate study species as small songbirds that forage in fission-fusion flocks during winter (mean lifespan 1.9 years), frequently use social information, and have demonstrated conformist learning in previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The species justification is well-supported by citations documenting relevant behaviors (C23, C28) and life history (C27). The reference to prior conformist learning studies (C34) strengthens the rationale for investigating different learning mechanisms in this species. The claims are factual and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C83",
+      "C104"
+    ],
+    "result": "The discussion contextualizes findings within broader theory: individual sociality impacts life history including information transmission; network structure heterogeneity affects transmission efficiency differently for simple versus complex contagions; and optimal social structures for information transmission depend on the specific learning mechanism and behavior type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion claims appropriately synthesize the study findings with broader literature on sociality (C67-C68), network structure effects (C74-C76), and optimal social organization (C77, C104). The comparison with prior simulation work (C83) is accurate. These claims represent appropriate contextualization rather than overinterpretation of the results.",
+    "result_type": "MINOR"
+  }
+]

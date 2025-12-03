@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C33",
+      "C42"
+    ],
+    "result": "The cryo-EM structure of active DiCas7-11 was determined at 2.82 \u00c5 resolution, revealing a half-moon shaped assembly with four Cas7-like domains forming a ridge and a Cas11-like domain at the center. The structure resolves most of the protein, the crRNA (\u221215 to +19), and partially cleaved target RNA (+19* to +2*), demonstrating that DiCas7-11 successfully processes pre-crRNA and cleaves target RNA under reactive conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C31, C33, and C42 are well-supported by the cryo-EM data presented in Figures 1 and 2, with appropriate resolution metrics (FSC curves in Figure 1\u2014figure supplement 2) and clear density maps. The structural observations are directly derived from experimental data with proper validation statistics provided in Supplementary file 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DiCas7-11 arranges its Cas7- and Cas11-like domains in an extended form resembling the backbone of multi-subunit Type III systems (LlCsm), but contains evolutionarily different domains that give rise to unique functionality. DiCas7-11 lacks domains equivalent to Csm4 and Cas10 subunits and their associated functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C34-C38 are supported by structural superposition data shown in Figure 1\u2014figure supplement 4, demonstrating clear structural homology with LlCsm while highlighting key differences. The r.m.s.d. values and visual comparisons provide quantitative and qualitative support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The first Cas7-like domain (C7L.1) nearly engulfs the last 15 nucleotides of the direct repeat in processing and recognition of crRNA. His43 is the critical catalytic residue for processing at position \u221215, employing a general acid-base catalysis mechanism. The processed 15-nt 5'-tag interacts extensively with C7L.1 through base-specific and backbone contacts, with the most extensive interactions at the conserved A(\u221212)-U(\u221211)-G(\u221210)-U(\u22129) tetranucleotide and a tight helical turn at C(\u22128)-A(\u22127)-C(\u22126)-G(\u22125).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C46-C81 are strongly supported by structural data in Figure 2a and biochemical validation in Figure 2b-d. The His43 mutation abolishing activity (C50) provides functional validation, and the 2'-deoxy modification experiments (C47) confirm the processing site. The extensive structural details of 5'-tag interactions are directly observable in the high-resolution structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A free-standing fragment of the first Cas7-like domain (fC7L.1, residues 1-238) retains most of the RNA processing activity and remains bound to cleaved pre-crRNA specifically, suggesting potential as a CRISPR tool for in vivo RNA tracking or purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C84-C87 are supported by experimental data in Figure 2c and Figure 2\u2014figure supplement 2. The fC7L.1 construct successfully processes pre-crRNA (albeit at slightly reduced efficiency) and shows specific binding in EMSA assays. However, C88 is speculative about future applications and requires additional validation in cellular systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The second and third Cas7-like domains mediate target RNA cleavage in a metal-dependent manner at two sites. Asp429 and Asp654 are positioned near the scissile phosphates at sites 1 and 2, respectively. The cleavage mechanism involves in-line geometry and generates 2',3'-cyclic products, though no Mg2+ ions are directly observed in the structure despite demonstrated metal dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C89-C101 are supported by structural data (Figure 3a) and biochemical assays (Figure 3b-c) showing EDTA inhibition and 2'-deoxy modification effects. The positioning of catalytic residues is well-documented. However, C101-C102 acknowledge a limitation: the absence of visible metal ions in the structure despite functional metal dependence creates some mechanistic uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In DiCas7-11, Asp429 is sufficient for metal-dependent cleavage at site 1, as Tyr360 mutation does not abolish site 1 cleavage. This contrasts with CsbCas7-11 where the equivalent Asp448 is not conserved and not required for site 1 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by mutagenesis data in Figure 3f showing that Y360A retains site 1 cleavage activity, and by comparison with published CsbCas7-11 data (C103). This demonstrates species-specific differences in catalytic mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "As few as 16 base pairs total and 2 base pairs on one flanking end can facilitate RNA cleavage, suggesting that both protein and crRNA:target pairing play significant roles in shaping the target RNA for cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by truncation experiments shown in Figure 3e, demonstrating that minimal base pairing is sufficient for cleavage activity. This provides insight into the minimal requirements for target recognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The long variable insertion to the fourth Cas7 domain (residues 979-1297) has little impact on RNA processing or targeting. A deletion mutant (DiCas7-11-\u0394int1) lacking residues 1009-1220 retains almost all RNA-guided target cleavage activity in vitro, suggesting the insertion domain is not essential for core enzymatic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C108-C111 are supported by focused classification cryo-EM analysis (Figure 4b) showing the insertion domain is not engaged with functional elements, and by biochemical data (Figure 4c) demonstrating that the deletion mutant retains activity. This provides strong evidence for the dispensability of this domain for in vitro activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C127"
+    ],
+    "result": "The successful deletion of the insertion domain and the functional fC7L.1 fragment suggest the possibility for engineering a compact and programmable RNA interference tool, providing proof-of-concept for engineering efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12 and C127 are speculative about future engineering applications. While the in vitro data (C111, C86) support the feasibility, the claims about developing practical tools require additional validation including in vivo testing, optimization of efficiency and specificity, and demonstration of advantages over existing systems. The current data provide proof-of-concept but not full validation of engineered tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Comparison with a recently published catalytically inactive DiCas7-11 structure (PDB: 7WAH) shows close overall agreement (0.918 \u00c5 r.m.s.d. for 8114 atoms), but the largest difference is in interactions with the first 5'-tag residue. The native U(\u221215) in the active structure interacts extensively with conserved residues including His43, while the non-native G(\u221215) in the inactive structure shows minimal interactions, suggesting U(\u221215) may be important for efficient processing but not for overall architecture or target-cleavage competency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 are supported by structural superposition data in Figure 2\u2014figure supplement 3, showing quantitative r.m.s.d. values and detailed comparison of the processing site. The interpretation that U(\u221215) is important for processing but not architecture (C120) is consistent with the deletion experiment (C62) showing U(\u221215) removal doesn't affect target cleavage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The 34-nt crRNA lies along the C7L ridge with its repeat region spanning C7L.1-C7L.2 and spacer region covering C7L.3-C7L.4. The first 18 nucleotides of target RNA remain base paired with the spacer region. The short span of the guide-target region on C7L domains explains the two sites of target cleavage, instead of four as in LlCsm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are directly supported by structural observations in Figures 1 and 3, with clear visualization of RNA positioning and comparison to LlCsm. The inference about cleavage site number (C45) is logical given the structural constraints and is consistent with prior biochemical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The histidine-mediated processing reaction may be assisted by nearby polar residues Tyr55 and Arg26. CsbCas7-11 contains threonine instead of His43 and phenylalanine instead of Tyr55, and does not process its crRNA at position \u221215, suggesting that precise processing may not be required for RNA interference activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 is speculative based on proximity without direct experimental validation. Claims C53-C54 are supported by cited literature, but C55 is an inference that requires additional experimental validation. The connection between CsbCas7-11's lack of precise processing and its functional activity needs more direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Cas7-11 allosterically activates the TPR-CHAT protease in a 3' PFS-dependent manner. The last two 5'-tag nucleotides, C(\u22121) and A(\u22122), are partially solvent-accessible and can potentially participate in PFS-mediated activation of TPR-CHAT activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is established from prior work but C83 is speculative. While the structural observation of solvent accessibility is valid, the functional connection to TPR-CHAT activation requires experimental validation. The current structure does not include TPR-CHAT, so the mechanistic link remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The structure and biochemical assays demonstrate that Cas7-11 has a minimal architecture required for programmable RNA cleavage. The covalent linkage of homologous units suggests an evolutionary advantage in dedicating Cas7-11 to RNA cleavage. Considering the collateral RNase activity of Cas13 and complexity of Csm/Cmr systems, Cas7-11 offers a desirable alternative for developing gene regulation tools, though efficiency and accuracy in mammalian cells remain to be improved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 is supported by the comprehensive structural and biochemical data. However, C122-C123 are speculative about evolutionary advantages and comparative utility without direct experimental evidence. Claims C124-C125 acknowledge current limitations based on prior work. Claim C126 is speculative about future applications. The overall assessment requires more direct comparative studies and in vivo validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C29",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background context on CRISPR-Cas systems: Type III-A/B (Csm/Cmr) are multi-subunit effectors that cleave target RNA at 6-nt intervals. Type VI (Cas13) is a smaller single-subunit effector. Cas7-11 (Type III-E) is a single-subunit effector with fused Cas7-like and Cas11-like segments that employs Cas7-like segments for cleavage, processes its own crRNA, and is insensitive to 3' PFS. Both Cas13 and Csm/Cmr have collateral nuclease activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C13-C24, C26-C27, C29, C39-C41 represent established knowledge from cited literature providing context for the current study. These are well-documented facts about CRISPR systems that frame the significance of the DiCas7-11 structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C28"
+    ],
+    "result": "Speculative claims about applications: Cas7-11 has potential applications in RNA interference and provides a desirable platform to develop RNA interference and editing tools. The Cas7-11-TPR-CHAT complex suggests potential for viral RNA-induced and protease-mediated antiviral immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C25, and C28 are speculative statements about future applications without direct experimental validation in the current study. While the structural and biochemical characterization provides a foundation, these application claims require additional development and testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C23"
+    ],
+    "result": "The structure of Cas7-11 obscures the distinction between multi-subunit Class 1 and single-subunit Class 2 CRISPR-Cas systems, making it a unique Type III CRISPR-Cas system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C23 are supported by the structural data showing that DiCas7-11 is a single polypeptide (Class 2-like) but contains multiple Cas7 and Cas11 domains arranged like multi-subunit systems (Class 1-like). This hybrid architecture is clearly demonstrated in the structure.",
+    "result_type": "MINOR"
+  }
+]

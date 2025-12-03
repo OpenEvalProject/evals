@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The study performed high-coverage (90X) whole genome sequencing on 81 semi-supercentenarians/supercentenarians (105+/110+, mean age 106.6\u00b11.6 years, born 1903-1909) and 36 geographically matched controls (mean age 68.0\u00b15.9 years) from Italy. Quality control resulted in final sample sizes of 81 cases and 36 controls with appropriate sequencing metrics (Ts/Tv ratios ~2.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C17, C78-C89 provide comprehensive methodological details about cohort composition, sequencing depth, quality metrics, and geographic distribution. The achieved coverage (~110X for cases, ~90.4X for controls) meets the stated target of 90X and falls within the recommended 75-100X range (C81). Quality metrics like Ts/Tv ratios are within expected ranges, indicating high-quality variant calling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C88"
+    ],
+    "result": "A validation cohort (Cohort 2) consisting of 333 Italian centenarians (mean age 100.4\u00b11.4 years) and 358 geographically matched controls (mean age 60.7\u00b17.2 years) was used for replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C88 clearly describe the validation cohort composition. The manuscript explicitly states this cohort was used for replication of findings from the discovery cohort, providing appropriate sample sizes and demographic information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26"
+    ],
+    "result": "Genome-wide association analysis identified five common variants in linkage disequilibrium (rs7456688, rs10257700, rs10279856, rs69685881, rs7805969) in the STK17A/COA1 region with significance after SLIDE correction (adjusted p-value<10%) but not at genome-wide significance (<5\u00d710\u207b\u2078). These variants replicated in Cohort 2 (p<0.05) and showed a U-shaped allele frequency pattern with highest frequency in 105+/110+. STK17A was the most significant gene in gene-based analysis in both cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the variants show consistent signals across cohorts (C21) and STK17A shows strong gene-based associations (C25, C26), the lack of genome-wide significance (C18) and reliance on a less stringent multiple testing correction (10% adjusted p-value, C19) weakens the strength of these associations. The genomic inflation factor of 1.02 (C20) suggests minimal population stratification. The U-shaped frequency pattern (C22) is interesting but requires functional validation. The small sample size (81 cases, 36 controls) limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Gene-based association analysis identified 179 significant genes (p<0.01) in Cohort 1, including two genes (APOC3 and PPARGC1A) previously described in the GenAge database of aging-related genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C23 reports 179 significant genes at p<0.01, which is a liberal threshold that does not account for multiple testing across ~20,000 genes. Only two genes (C24) were previously identified in aging studies, suggesting limited overlap with established longevity genes. Without validation in Cohort 2 for most genes and without appropriate multiple testing correction, these findings remain exploratory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C96"
+    ],
+    "result": "RiVIERA analysis identified four SNPs (rs10279856, rs3779059, rs849166, rs849175) as potential regulatory variants with credible scores >0. These SNPs are eQTLs for STK17A, COA1, and BLVRA genes, with genotypes most frequent in centenarians associated with increased STK17A expression in heart, lung, nerve, and thyroid, and reduced COA1 expression in multiple tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 and C96 provide convergent evidence from variant prioritization (RiVIERA) and functional annotation (GTEx eQTL data). The eQTL effects are tissue-specific and directionally consistent with the hypothesis that these variants affect gene expression. The use of established databases (GTEx) and appropriate bioinformatic tools strengthens these findings, though experimental validation would be needed to confirm causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Pathway analysis identified 24 KEGG pathways significantly enriched (FDR\u22640.05), including axon guidance, calcium signaling, glycine/serine/threonine metabolism, long-term potentiation, melanogenesis, PPAR signaling, and taste transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C32 report pathway enrichment results with appropriate FDR correction. However, pathway analysis is inherently exploratory and can be sensitive to the choice of background gene sets and pathway databases. The biological relevance of some pathways (e.g., taste transduction, melanogenesis) to extreme longevity is unclear. These findings require independent validation and mechanistic follow-up.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Haplotype-based analysis identified three significant haplotypes (p<5\u00d710\u207b\u2078) in the COA1 gene region, all less frequent in semi-supercentenarians than controls. The most significant haplotype (p=1.84\u00d710\u207b\u2078) was defined by 13 consecutive markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe haplotype analysis results that reach genome-wide significance (p<5\u00d710\u207b\u2078), which is more stringent than the single-variant analysis. The consistent direction of effect (all protective haplotypes less frequent in controls) and the use of appropriate phasing methods (Beagle) support these findings. However, the small sample size and lack of independent validation in Cohort 2 for haplotypes are limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C94"
+    ],
+    "result": "APOE-e4 showed no significant association with longevity in this Italian cohort, despite a trend toward reduced frequency in 105+/110+ (16%) compared to controls (22%). Only one of eight previously reported longevity variants (rs1042522 in TP53) showed nominal significance (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C94 report negative findings for APOE-e4 and limited replication of previously identified longevity variants. The lack of significance for APOE-e4 is consistent with its known population-specific effects and low frequency in Southern Italy. The failure to replicate most previously identified variants (C94) may reflect population specificity, insufficient power, or heterogeneity in longevity genetics. These negative results are appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Private mutation analysis identified 3,446,719 mutations exclusive to 105+/110+ individuals, of which 2,282,600 were rare (MAF\u22641% in gnomAD), 5,055 were predicted damaging by multiple databases, and 65 were classified as pathogenic/likely pathogenic in ClinVar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 describe the burden of private mutations in the longevity cohort. The presence of pathogenic variants (C38) in long-lived individuals is consistent with previous studies showing that centenarians carry disease-associated variants at similar frequencies to the general population. The use of multiple prediction databases and ClinVar annotations is appropriate, though the functional impact of these variants remains uncertain without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Rare variant analysis identified NME1 as the top hit (p=6\u00d710\u207b\u2075) when considering all rare variants, and PLEKHG4 as the most significant gene (p=0.0011) for rare damaging variants, with increased burden in controls but not in 105+/110+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C41 report rare variant associations using SKAT-O, an appropriate method for gene-based rare variant testing. However, neither association reaches genome-wide significance after correction for testing ~20,000 genes. The p-values (6\u00d710\u207b\u2075 and 0.0011) are suggestive but require validation. The biological interpretation linking NME1 to DNA repair (C67) and PLEKHG4 to neurodegeneration (C68-C69) is plausible but speculative without functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C97"
+    ],
+    "result": "Somatic mutation analysis in seven CHIP-associated genes (DNMT3A, TP53, ASXL1, TET2, SF3B1, PPM1D, JAK2) identified 147 mutations in 80 individuals. 105+/110+ showed significantly lower total somatic mutation burden compared to controls (Mann-Whitney p=0.00125), with median of 1 vs. 2 mutations. Significant differences were found for DNMT3A (p=9\u00d710\u207b\u2074) and ASXL1 (p=0.0167).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C47 report lower somatic mutation burden in 105+/110+ individuals. However, the manuscript acknowledges a critical limitation: 90X coverage is insufficient for optimal somatic mutation calling, which typically requires ~4000X (C98). The lower sensitivity to detect low allele fraction variants (C99) means the observed differences could reflect technical limitations rather than true biological differences. The age difference between groups (106 vs. 68 years) makes the finding paradoxical if real, as older individuals typically accumulate more somatic mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "The majority of somatic mutations in both 105+/110+ and controls were C>T substitutions, consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 describes the mutational signature observed, which is consistent with age-related mutagenesis and previous studies (citing Buscarlet et al., 2017). This finding validates the technical quality of the somatic mutation calling despite the coverage limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The prevalence of moderate and high impact somatic mutations across all seven genes was 10.13% in 105+/110+ and 0% in controls, but this difference was not statistically significant (Fisher's test p=0.1025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 reports a non-significant difference in high-impact mutations. The lack of significance despite the apparent difference (10.13% vs. 0%) likely reflects the small sample size (79 cases, 31 controls for somatic analysis per C97). This negative result is appropriately reported and interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "No significant differences in polygenic risk scores (PRS) for cardiovascular disease were found between 105+/110+ and controls (p>0.05) using five different published PRS models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 reports negative findings for CVD PRS across multiple published scores. This is consistent with previous studies showing that centenarians carry disease-associated variants at similar frequencies to the general population (C73). The use of multiple PRS models strengthens this negative finding, though the authors appropriately note limitations including population specificity of PRS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6",
+      "C55",
+      "C70",
+      "C72",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors conclude that 105+/110+ individuals are characterized by a genetic background associated with efficient DNA repair mechanisms (evidenced by germline variants and lower somatic mutation burden) and that DNA repair and clonal hematopoiesis are central mechanisms protecting from age-related diseases including CVD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C3, C4, C6, C55, C70, C72, C74, C76, C77 represent the main conclusions of the study. However, these conclusions are not fully supported by the data: (1) The germline associations with DNA repair genes (STK17A) do not reach genome-wide significance (C18); (2) The lower somatic mutation burden (C4, C70) is confounded by inadequate sequencing depth for somatic variant calling (C98, C99); (3) The lack of CVD PRS differences (C50) contradicts the claim of genetic protection from CVD; (4) The mechanistic link between identified variants and DNA repair is based on in silico predictions and literature rather than experimental validation. The conclusion that 105+/110+ escape CVD due to protection from somatic mutations rather than germline variants (C74) is speculative given the technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "STK17A is involved in DNA damage response, apoptosis, and ROS metabolism. Variants in this region have been associated with systemic lupus erythematosus (SLE), and reduced STK17A expression is observed in active SLE. The authors propose that genetic variants maintaining STK17A expression favor healthy aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C56-C57 synthesize literature on STK17A function and disease associations. The citations are appropriate and the biological interpretation is plausible. The connection to DNA repair across species (C57, citing Kowalczyk et al., 2020) provides evolutionary context. However, this remains a hypothesis (C55) requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "COA1 is a component of the MITRAC complex regulating cytochrome c oxidase assembly and mitochondrial respiratory chain complexes I and IV. This represents the first evidence of association between longevity and nuclear loci in a gene involved in mitochondrial dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 accurately describe COA1 function based on established knowledge. However, claim C60's assertion that this is the \"first evidence\" of such an association is difficult to verify and may be overstated. The association itself does not reach genome-wide significance in single-variant analysis (C18), though haplotype analysis shows stronger signals (C91-C93). The biological significance requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "BLVRA catalyzes conversion of biliverdin to bilirubin and provides cytoprotection through a redox cycle. BLVRA contributes to modulation of aging by adjusting cellular oxidative status and regulates inflammatory response by inhibiting TLR4 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 synthesize literature on BLVRA function with appropriate citations (Kim et al., 2011; Wegiel et al., 2011). The biological interpretation connecting BLVRA to aging through oxidative stress and inflammation is well-supported by prior work, though the specific role in extreme longevity requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "NME1 is a metastasis suppressor gene that regulates growth factor signaling pathways and has been recently shown to be recruited to double-strand breaks to promote DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 accurately describe NME1 function with appropriate citations (Steeg et al., 1988; Russell et al., 1998; Kaetzel et al., 2015). The connection to DNA repair (C67) is particularly relevant to the study's hypothesis, though the rare variant association (C39) requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "PLEKHG4 is associated with Spinocerebellar ataxia, with atrophic Purkinje cells showing cytoplasmic aggregates containing Puratrophin-1 and Spectrin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 accurately describe PLEKHG4's association with neurodegenerative disease, with appropriate citation (Ishikawa et al., 2005). The finding that controls have increased burden of damaging PLEKHG4 variants (C41) is consistent with protection from neurodegeneration in long-lived individuals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C71",
+      "C73"
+    ],
+    "result": "The manuscript cites prior literature on the genetics of longevity, heritability of extreme longevity, centenarians as a model of healthy aging, and associations between clonal hematopoiesis (CHIP) and cardiovascular disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16, C71, C73 accurately represent cited literature with appropriate references. These claims provide context for the study design and interpretation. The citations appear accurate and relevant to the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "This is the first whole genome sequencing study of extreme longevity at high coverage that allows somatic mutation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 asserts this is the first such study. While this may be true for the specific combination of extreme age (105+/110+), high coverage (90X), and somatic mutation analysis, the manuscript acknowledges that the coverage is insufficient for optimal somatic mutation calling (C98). Previous studies have performed WGS on centenarians and supercentenarians, though perhaps not with this specific design. The novelty claim should be more carefully qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "SNP rs623108 is in moderate LD (r\u00b2=0.58) with the five significant SNPs in Table 1 and correlates with STK17A expression in heart and thyroid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 and C96 provide additional evidence for the STK17A association through a linked SNP identified in previous work. The LD relationship and eQTL effects are appropriately documented using 1000 Genomes and GTEx data.",
+    "result_type": "MINOR"
+  }
+]

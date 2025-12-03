@@ -1,0 +1,168 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C19",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors developed COVID-19 CG, a web-based tool for tracking SARS-CoV-2 variants using GISAID data. The tool is open-source, scalable, and allows filtering by location, date, gene, and mutation, incorporating 665+ diagnostic primers/probes and processing data through a Snakemake pipeline with quality filtering and alignment to the WIV04 reference genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C8, C19, C45-C54, C57-C58 collectively describe the tool's design, implementation, and functionality with specific technical details about data processing, filtering criteria, and web infrastructure. The methodology is clearly documented with references to figures and open-source code availability, providing sufficient evidence for the tool's existence and capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C55",
+      "C56"
+    ],
+    "result": "SARS-CoV-2 genomic data has accumulated rapidly, with 400,000+ genomes by February 2020 and submission rates reaching ~50,000 genomes per month by January 2021 from 135 countries. There has been a steady increase in variants with more than six nonsynonymous mutations compared to the WIV04 reference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2-C4, C55-C56 present data on genome accumulation rates and variant diversity. However, C2 contains a likely error: 400,000+ genomes by February 2020 is implausible given the pandemic timeline (first cases in late 2019). This appears to be a typo for February 2021, creating uncertainty about data accuracy despite supporting figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Regional and temporal variation in SARS-CoV-2 RBD mutations is substantial. The S477N mutation became dominant in Australia (69% of genotypes) while remaining <6% globally; the N439K mutation appeared in Ireland at 42% frequency mid-July through September 2020; and the S477N mutation increased from 1% to 84% in Australian sequences from before June to June-December 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 present specific quantitative observations about mutation frequencies across different regions and time periods, all supported by Figure 2A-C. The data demonstrate clear geographic and temporal heterogeneity in mutation prevalence, which is well-documented with specific percentages and time frames.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "SNVs can impact diagnostic primer sensitivity, as demonstrated by the G29140T mutation causing ~30-fold reduction in amplicon production for the NIID_2019-nCoV_N_F2 primer. Using COVID-19 CG, the authors identified at least 10 additional primer pairs potentially at risk due to SNVs near the 3' ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24, C26 describe diagnostic primer vulnerabilities, with C20-C22 citing external validation (Vanaerschot et al., 2020) and C23-C24 presenting new findings from COVID-19 CG analysis supported by Figure 3A-K. The combination of cited evidence and new analysis provides strong support for the impact of SNVs on diagnostic sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The S477N mutation was first detected globally in Victoria, Australia on March 19, 2020 (lineage B.1.1.25) and became dominant in Australia between June-September 2020. Different co-occurring SNV patterns in Australia versus the UK suggest independent emergence of this mutation in the two lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 trace the emergence and spread of the S477N mutation with specific dates and locations, supported by Figure 5B-C. The inference of independent emergence (C33) is reasonably supported by the different co-occurring SNV patterns shown in C32, though the authors appropriately note caveats about sampling and sequencing errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior studies have demonstrated that single amino acid variants in SARS-CoV-2 spike can ablate antibody binding, with some escape variants already present at low frequency globally. These findings support the use of antibody cocktails targeting different epitopes to minimize mutational escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 accurately summarize findings from cited studies (Baum et al., 2020; Greaney et al., 2021) regarding antibody escape variants and therapeutic strategies. These are appropriately attributed to prior work and provide context for the importance of tracking mutations, though they represent background knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Lab-specific sequencing errors exist in GISAID genomes, often co-localizing with primer binding sites, but these errors are specific to particular labs and do not affect all genomes in the database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 acknowledge known data quality issues, with C27 citing Turakhia et al., 2020 and C28 providing a reasonable inference about the lab-specific nature of these errors. The authors appropriately incorporated warnings about these issues into their tool, demonstrating awareness of data limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Multiple non-biological factors including inconsistent sampling, sampling biases, founder population traits, superspreading events, and differential travel restrictions can influence the global distribution of SNVs rather than virus biological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 appropriately cites Grubaugh et al., 2020 to acknowledge important confounding factors in interpreting SNV distribution patterns. This represents a critical caveat for data interpretation and is appropriately emphasized by the authors with warnings in their tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Multiple complementary COVID-19 genomic analysis tools exist, including NextStrain, CoV-GLUE, UCSC SARS-CoV-2 Genome Browser, COVID-19 Viral Genome Analysis Pipeline, COVIDep, and others, each providing different functionalities for analyzing SARS-CoV-2 genomic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 accurately describe existing tools with appropriate citations, providing context for how COVID-19 CG complements the existing ecosystem. These descriptions appear accurate based on the cited references and establish the landscape of available resources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C13",
+      "C25"
+    ],
+    "result": "Background information is provided about the WIV04 reference genome, the importance of genomic surveillance for public health, Regeneron's therapeutic antibody development, and ARTIC primers for nanopore sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C13, C25 provide factual background information with appropriate citations where applicable. These are general knowledge claims that provide context but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  }
+]

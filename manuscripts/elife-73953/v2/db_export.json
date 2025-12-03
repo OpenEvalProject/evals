@@ -1,0 +1,1942 @@
+{
+  "submission": {
+    "id": "d2ac5264-9d69-46bc-aaca-426ccc1b1766",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:34:27.506410Z",
+    "updated_at": "2025-12-03T15:34:27.506410Z"
+  },
+  "content": [
+    {
+      "id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "submission_id": "d2ac5264-9d69-46bc-aaca-426ccc1b1766",
+      "content_type": "manuscript",
+      "content_text": "# Arbidol inhibits human esophageal squamous cell carcinoma growth in vitro and in vivo through suppressing ataxia telangiectasia and Rad3-related protein kinase\n\n## Authors\n\n- Ning Yang<sup>1</sup>\n- Xuebo Lu<sup>1</sup> ([ORCID: 0000-0001-9481-2568](https://orcid.org/0000-0001-9481-2568))\n- Yanan Jiang<sup>1</sup>\n- Lili Zhao<sup>1</sup>\n- Donghao Wang<sup>1</sup>\n- Yaxing Wei<sup>1</sup>\n- Yin Yu<sup>1</sup>\n- Myoung Ok Kim<sup>5</sup>\n- Kyle Vaughn Laster<sup>2</sup>\n- Xin Li<sup>1</sup>\n- Baoyin Yuan<sup>1</sup>\n- Zigang Dong<sup>1</sup> \u2020\n- Kangdong Liu<sup>1</sup> ([ORCID: 0000-0002-4425-5625](https://orcid.org/0000-0002-4425-5625)) \u2020\n\n### Affiliations\n\n1. Pathophysiology Department, The School of Basic Medical Sciences, Zhengzhou University Zhengzhou China ([ROR:04ypx8c21](https://ror.org/04ypx8c21))\n2. China-US Hormel Cancer Institute Zhengzhou China ([ROR:02dknqs67](https://ror.org/02dknqs67))\n3. Collaborative Innovation Center of Henan Province for Cancer Chemoprevention, Zhengzhou University Zhengzhou China ([ROR:04ypx8c21](https://ror.org/04ypx8c21))\n4. State Key Laboratory of Esophageal Cancer Prevention and Treatment Zhengzhou China\n5. Department of Animal Science and Biotechnology, Kyungpook National University Sangju Republic of Korea ([ROR:040c17130](https://ror.org/040c17130))\n6. Cancer Chemoprevention International Collaboration Laboratory Zhengzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman esophageal cancer has a global impact on human health due to its high incidence and mortality. Therefore, there is an urgent need to develop new drugs to treat or prevent the prominent pathological subtype of esophageal cancer, esophageal squamous cell carcinoma (ESCC). Based upon the screening of drugs approved by the Food and Drug Administration, we discovered that Arbidol could effectively inhibit the proliferation of human ESCC in vitro. Next, we conducted a series of cell-based assays and found that Arbidol treatment inhibited the proliferation and colony formation ability of ESCC cells and promoted G1-phase cell cycle arrest. Phosphoproteomics experiments, in vitro kinase assays and pull-down assays were subsequently performed in order to identify the underlying growth inhibitory mechanism. We verified that Arbidol is a potential ataxia telangiectasia and Rad3-related (ATR) inhibitor via binding to ATR kinase to reduce the phosphorylation and activation of minichromosome maintenance protein 2 at Ser108. Finally, we demonstrated Arbidol had the inhibitory effect of ESCC in vivo by a patient-derived xenograft model. All together, Arbidol inhibits the proliferation of ESCC in vitro and in vivo through the DNA replication pathway and is associated with the cell cycle.\n\n## Introduction\n\nHuman esophageal cancer is a malignant neoplasm with a high incidence worldwide, ranking eighth in global incidence and sixth in overall mortality (Bray et al., 2018; Zhang et al., 2021). It has two pathological types: esophageal squamous cell carcinoma (ESCC) and esophageal adenocarcinoma (Napier et al., 2014). ESCC is the main histological type and accounts for approximately 90% of esophageal cancers in China (Ke et al., 2019). Current treatment options for patients with ESCC are surgery, chemotherapy, and radiotherapy (Ha et al., 2020). However, the 5-year survival rate remains less than 20% (Pennathur et al., 2013). Therefore, there is an urgent need for effective therapeutic or chemopreventive agents to improve the survival rate of patients with ESCC.\n\nChemoprevention is a promising strategy to prevent the recurrence of cancer (Liu et al., 2008). In recent years, studies have found that certain non-steroidal anti-inflammatory drugs can be used for this purpose (Bacchi et al., 2012). For example, it was reported that aspirin was used for chemoprophylaxis of colorectal, prostate, and other cancers (Gronich and Rennert, 2013). Aside from non-steroidal anti-inflammatory drugs, other repurposed drugs also exhibit antitumor effects. Metformin, a hypoglycemic drug has been shown to have a preventive effect on lung cancer, gastric cancer, pancreatic cancer, breast cancer, ovarian cancer, colorectal cancer, liver cancer, and other cancers (Duncan and Schmidt, 2009; Morales and Morris, 2015). Therefore, it is likely that repurposing pre-existing Food and Drug Administration (FDA)-approved drugs could also be a promising strategy to prevent ESCC recurrence.\n\nWe screened a series of FDA-approved drugs and found that Arbidol has a significant inhibitory effect on the proliferation of ESCC cells. Arbidol is a broad-spectrum antiviral compound which is conventionally used for the prevention and treatment of influenza (Blaising et al., 2014). Its antiviral activity against a variety of DNA and RNA viruses is mainly based on disrupting key steps during the virus-cell interaction (Zhong et al., 2009). However, its role in cancer prevention or treatment has not been reported. Here, we identified that Arbidol is an inhibitor of the ataxia telangiectasia and Rad3-related (ATR) protein kinase.\n\nATR belongs to the phosphoinositide (PI) 3-kinase-related protein kinase (PI3KKs) family and one of its key functions is to regulate DNA replication (Mart\u00ednez et al., 2014; Qiu et al., 2018). ATR can phosphorylate the key replication protein minichromosome maintenance protein 2 (MCM2) on serine 108 in response to various forms of DNA damage and stalling of replication forks (Hae et al., 2004; Lecona and Fernandez-Capetillo, 2018). In recent years, ATR inhibitors have been used in many cancer investigations (Yuan et al., 2019), and their roles in cancer treatment have gradually been realized.\n\nWe performed mass spectrometry (MS) analysis of lysates derived from Arbidol-treated cells to investigate the proteomic and phosphoproteomic response upon treatment. Additionally, we performed in silico molecular docking on a panel of kinases to predict potential binding partners and clarify the drug\u2019s inhibitory mechanism. Our results showed that Arbidol inhibited ESCC growth via modulating the MCM2-ATR axis.\n\n## Results\n\n### Arbidol inhibits ESCC cell proliferation\n\nTo identify a drug able to inhibit ESCC cell proliferation, we conducted toxicity experiments using FDA-approved drug libraries and discovered that Arbidol (Figure 1a) effectively suppresses ESCC cell growth (Figure 1b). The IC50 values of Arbidol in KYSE150, KYSE450, and shantou human embryonic esophageal (SHEE) cells were 57.54, 54.72, and 87.63 \u03bcM at 24 hr and 26.37, 20.75 and 62.52 \u03bcM at 48 hr, respectively (Figure 1c). We found that Arbidol had a higher IC50 value in the SHEE immortalized esophageal epithelium cell line than in ESCC cells, which indicated that Arbidol had stronger toxicity in ESCC cells. To further evaluate the effect of Arbidol on ESCC growth, we treated KYSE150 and KYSE450 cells with different concentrations (0, 2.5, 5, 10, and 20 \u00b5M) of Arbidol (Figure 1d). The results indicated that Arbidol inhibited the proliferation of KYSE150 and KYSE450 cells in a dose-dependent manner. It is worth mentioning that we also performed toxicity and proliferation experiments on the SHEE human immortalized esophageal epithelial cell line and observed that the growth inhibitory effect was less pronounced. We next assessed whether treatment with Arbidol could impact anchorage-independent cell growth using the soft agar assay. The result showed that Arbidol inhibited anchorage-independent growth of KYSE150 and KYSE450 cells in a dose-dependent manner (Figure 1e). Finally, we used the colony-formation assay to determine whether Arbidol inhibited the proliferation of ESCC cell lines (Figure 1f). Similarly, the results indicated that Arbidol inhibited colony-formation in a dose-dependent manner. Collectively, these results suggested that Arbidol had a significant inhibitory effect on ESCC in vitro.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig1-v2.jpg)\n\n**Figure 1.:** (a) The structure of Arbidol. (b) KYSE150, KYSE450, and shantou human embryonic esophageal (SHEE) cell viability was detected by the IN Cell Analyzer. KYSE150 and KYSE450 cells were treated with different concentrations of Arbidol (0, 6.25, 12.5, 25, 50, and 100 \u03bcM) for 24 hr and 48 hr and evaluated by 4\u2019,6-diamidino-2-phenylindole. IC50 values were calculated by SPSS 24.0 software (IBM, USA). (c) KYSE150, KYSE450, and SHEE cells were treated with Arbidol (0, 6.25, 12.5, 25, 50, and 100 \u03bcM) at different concentrations as indicated for 24 hr and 48 hr. Cell viability was then determined by IN Cell Analyzer. (d) The effect of different concentrations of Arbidol (0, 2.5, 5, 10, and 20 \u03bcM) on SHEE, KYSE150, and KYSE450 cells for 0, 24, 48, 72, and 96 hr. Data were analyzed by homogeneity of variance and one-way analysis of variance (ANOVA). Asterisks indicate a significant decrease *p<0.05, **p<0.01, ***p<0.001, respectively. (e) Arbidol effectively inhibits anchorage-independent cell growth. Colony numbers were counted using an IN Cell Analyzer. Data were analyzed by homogeneity of variance and one-way ANOVA. Asterisks indicate a significant difference, *p<0.05, ** p<0.01, and ***p<0.001, n=3, compared with the control group. (f) Arbidol effectively inhibits colony formation in esophageal squamous cell carcinoma (ESCC) cell lines. KYSE150 (200/well) and KYSE450 (400/well) cells were seeded in 6-well plates and treated with different concentrations of Arbidol (0, 2.5, 5, 10, and 20 \u03bcM). The numbers of cell colonies were counted after 10\u201314 days. Data were analyzed by homogeneity of variance and one-way ANOVA. Asterisks indicate a significant difference, *p<0.05, ** p<0.01, and ***p<0.001, n=3, compared with the control group.\n\n### Phosphoproteomics reveals that Arbidol inhibits tumors through the MCM-ATR signaling pathway\n\nTo determine the specific inhibitory mechanism of Arbidol in ESCC, KYSE150 cells were treated with 20 \u03bcM Arbidol or dimethyl sulfoxide as control for 24 hr. Subsequently, MS was performed (Figure 2a). The MS proteomics data have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the iProX partner repository with the dataset identifier PXD034944. We identified 241 downregulated proteins and 340 downregulated sites. Next, we performed KEGG enrichment analysis using the quantified phosphate sites to query significantly downregulated pathways (Figure 2b and c). The DNA replication was identified as the key pathway affected. A heat map detailing phosphorylation site enrichment and KEGG pathway enrichment showed that the S108 site of MCM2 in the DNA replication pathway was significantly downregulated after Arbidol treatment (Figure 2d and e). The molecular profile of MCM2 S108 obtained using MS was displayed in Figure 2f. The results of the in silico analysis were verified by western blot (Figure 2g). The results of western blot confirmed the phosphoproteomics data and showed that MCM2 S108 phosphorylation was strongly inhibited after Arbidol treatment. To further investigate the specific targets of Arbidol, we first searched for proteins upstream of p-MCM2 Ser108 and found that Cdc7 and ATR can phosphorylate MCM2 (Ser108) (Charych et al., 2008; Cheng et al., 2017; Huang et al., 2019). However, pull-down results indicated that Cdc7 could not directly bind to Arbidol (Figure 2\u2014figure supplement 1). Next, we conducted an in-depth analysis of the recent quantitative human interaction group (pull-down MS), and utilized the kinase prediction tool (from phosphoproteomics data). We also used the chemical structure of Arbidol to predict targets using the SwissTargetPrediction. The results suggested that ATR kinase was a potential target of Arbidol.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig2-v2.jpg)\n\n**Figure 2.:** (a) The mass spectrometry workflow of phosphorylated proteomics analysis of KYSE150 cells after 24 hr treatment with Arbidol. (b) Histogram shows the regulation of phosphorylation sites compared to the control group. (c) The volcano plot shows that 375 phosphorylation sites changed significantly. (d) Kyoto Encyclopedia of Genes and Genome (KEGG) analysis indicated that three downregulated pathways were enriched. (e) Phosphorylation proteomics analysis of esophageal squamous cell carcinoma (ESCC) cell after 20 \u03bcM Arbidol treatment. The different phosphorylation sites were plotted as heat maps. (f) Distribution of peptide mass error and length of protein peptides identified in this study. (g) Western blot analysis shows that the phosphorylation of MCM2 S108 is markedly downregulated after 24 hr of Arbidol treatment.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The KYSE150 cell lysate (500 \u03bcg) was incubated with sepharose 4B beads conjugated with Arbidol or sepharose 4B beads alone. Western blot analysis was used to analyze the pull-down protein.\n\n### Arbidol targets ATR to affect DNA replication pathway in ESCC\n\nWe conducted a computational docking study using the molecular structures of Arbidol and ATR to determine optimal binding orientation. The results suggested that Arbidol could bind to ATR at the ASN 2346 and HIS 2361 residues (Figure 3a). Based on the sample information from pull-down MS, we found that 906 candidate targets were differentially represented between the control and treatment groups. Next, we verified that ATR, one of the targets, could bind to Arbidol through a pull-down assay in vitro and ex vivo (Figure 3b-d). To validate the results of the molecular docking, as well as to assess the contribution of ASN 2346 and HIS 2361 to the binding between Arbidol and ATR, we mutated these two residues and performed a pull-down assay. The results showed that the binding between Arbidol and ATR was less efficient after ATR was mutated (Figure 3e). In addition, the results of an in vitro kinase assay indicated that Arbidol treatment reduced MCM2 phosphorylation levels (Figure 3f, Figure 3\u2014figure supplement 1). The ATP competition assay further illustrated that Arbidol functions as an ATP-competitive inhibitor of ATR (Figure 3g). These results indicated that ATR was involved in the phosphorylation of MCM2, and that ATR inhibition induced by Arbidol treatment may affect the phosphorylation of MCM2.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig3-v2.jpg)\n\n**Figure 3.:** (a) Computational docking was used to identify the binding site of Arbidol and ATR. (b-d) Arbidol directly binds to ATR. The ATR pure protein (1 \u03bcg) (b) and esophageal squamous cell carcinoma (ESCC) cell lysate (500 \u03bcg) (c, d) were incubated with sepharose 4B beads conjugated with Arbidol or sepharose 4B beads alone. Western blot analysis was used to analyze the pull-down protein. (e) The Arbidol pull-down assay and amino acid site mutation of ATR protein. (f) In vitro kinase assay. Arbidol attenuated the phosphorylation of minichromosome maintenance 2 (MCM2) by inhibiting the kinase activity of ATR. Purified MCM2 protein was used as the substrate for the in vitro kinase assay with 200 ng active ATR (SignalChem) at room temperature for 15 min. (g) ATP competition assay. ATR pure protein (1 \u03bcg) was incubated for 16 hr with sepharose 4B beads conjugated with Arbidol, and with ATP (10 \u03bcg or 100 \u03bcg) or sepharose 4B beads alone. Western blot analysis was used to analyze the pull-down protein.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Coomassie blue-stained gel of purified minichromosome maintenance 2 (MCM2), the black arrow indicates MCM2. (b) Mutant ataxia telangiectasia and Rad3-related (ATR) protein purified by coomassie bright blue staining gel; wild type protein was loaded into the first lane, mutant ATR protein was loaded into the the second and third lanes.\n\n### Arbidol inhibits the proliferation of ESCC cells and arrests the cell cycle at G1-phase\n\nTo elucidate the functional pathways of ATR, a Gene set enrichment analysis (GSEA) was performed using our phosphoproteomics and proteomics datasets (Figure 4a, Figure 4\u2014figure supplement 1). We identified MCM2 as a candidate for further investigation as it was located downstream of ATR and was involved in cell cycle regulation. We then performed western blot and verified that the phosphorylation of MCM2 S108 decreased upon treatment with Arbidol in a dose-dependent manner (Figure 4b). Variations in DNA replication timing are often accompanied by changes in the cell cycle (Prioleau and MacAlpine, 2016). We used propidium iodide staining to examine the effect of Arbidol on cell cycle progression in KYSE150 and KYSE450 cells after treatment for 48 hr. Results showed that Arbidol strongly reduced the S-phase fraction and induced cell cycle arrest at the G1-phase in a dose-dependent manner (Figure 4c). Cyclin-dependent kinases (CDKs) play a primary role in tumor carcinogensis by dysregulating cell cycles. CDK2, CDK4 and CDK6 are expressed during interphase. CDK4 and CDK6 drive cell-cycle progression from G0 or G1-phase into S-phase. CDK2 controls the G1/S checkpoint of the cell cycle (Malumbres and Barbacid, 2009). To exclude that the G1-phase cycle block was triggered by the inhibition of the three interphase CDKs, we performed pull-down assays to investigate the potential binding between Arbidol and CDK2, CDK4, or CDK6 (Figure 4\u2014figure supplement 2a-c). Our results indicated that Arbidol did not bind with CDK2, CDK4, or CDK6 kinase. This strongly suggested that Arbidol specifically binds with ATR.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig4-v2.jpg)\n\n**Figure 4.:** (a) Gene Set Enrichment Analysis (GSEA) indicates the representation of the cell cycle pathway in both the phosphoproteomics and proteomics datasets. (b) The expression level of p-minichromosome maintenance 2 (MCM2) S108 decreases with increasing concentrations of Arbidol in KYSE150 and KYSE450 cells (0, 2.5, 5, 10, and 20 \u03bcM), as confirmed by western blot. (c) After 24 hr of Arbidol treatment, KYSE150 and KYSE450 cells were stained with propidium iodide (PI) and the cell cycle distribution was analyzed using flow cytometry. The quantitative cell cycle distribution data of KYSE150 cells were shown here. Data were analyzed by homogeneity of variance and one-way analysis of variance (ANOVA). *p<0.05, ** p<0.01, and ***p<0.001, n=3. ESCC: esophageal squamous cell carcinoma.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a, b) Gene set enrichment analysis (GSEA) included the phosphoproteomics (a) and proteomics (b) datasets. The black arrow indicates minichromosome maintenance 2 (MCM2) and ataxia telangiectasia and Rad3-related (ATR).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a, b, c) Arbidol did not bind directly to CDK2, CDK4, CDK6. Recombinant CDK2 protein (a) recombinant CDK4 protein (b) recombinant CDK6 protein (c) (500 \u03bcg) were incubated with sepharose 4B beads conjugated with Arbidol or sepharose 4B beads alone. Western blot analysis was used to analyze the pull-down protein. (d) Western blot results confirmed that the expression level of p-RB1 S249, S807, T826 were not associated with increasing concentrations of Arbidol in KYSE150 and KYSE450 cells (0, 2.5, 5, 10, and 20 \u03bcM).\n\nRB1, as a tumor suppressor, canonically regulates cell cycle progression and represents a downstream target for CDK4/6 or CDK2 inhibitors that are in clinical use (Knudsen et al., 2019). CDKs have been shown to initiate phosphorylation and inactivation of RB1, resulting in derepression of E2F-regulated genes. Phosphorylation of residues within the central pocket and c-terminal domains of RB1 (S249, T252, S356, S373, S608, S612, S780, S788, S795, S807, S811, T821, and S826) have been extensively studied. RB1 S249 is phosphorylated by CDK2, RB1 S807 and RB1 T826 is phosphorylated by CDKs to promote cell cycle progression (Janostiak et al., 2022). Therefore, to verify that Arbidol triggers the G1-phase blockade independent of the CDKs/RB signaling pathway, phosphorylated RB1 (S204, S807, and T826) abundance was measured by western blot in cells after Arbidol treatment. As expected, the levels of phosphorylated RB1 (S204, S807, and T826) were not altered after Arbidol treatment (Figure 4\u2014figure supplement 2d). These findings demonstrated that Arbidol induced G1-phase block through targeting ATR.\n\n### ATR knockdown reduces the growth of ESCC cells\n\nNext, we determined the correlation between ATR and MCM2 expression using the Bioanalysis website (https://www.aclbi.com/static/index.html#/). The results showed a high correlation between ATR and MCM2 transcript expression (Figure 5a). We next queried The Cancer Genome Atlas (TCGA) database (Tomczak et al., 2015) to analyze the transcript expression profile of ATR in esophageal cancer and normal tissues based on sample types or tumor history (Figure 5b). We also employed Timer 2.0 to analyze the expression status of ATR across tissue samples (Figure 5c). These results supported that high expression of ATR correlated with esophageal cancer. To determine the effect of ATR knockdown (KD) on the growth of esophageal cancer cells (KYSE150 and KYSE450), we established ATR stable KD cells and confirmed the expression of ATR protein by western blot. The results showed that the expressions of total ATR in sh ATR#1 and sh ATR#2 cells were greatly reduced (Figure 5d). We then examined the effect of ATR KD on the growth of esophageal cancer cells using a proliferation assay. The results showed that ATR KD significantly reduced the growth of ESCC cells (Figure 5e and f). To determine whether the growth reduction of ESCC cells observed upon treatment of Arbidol depended on the expression of ATR, we performed a proliferation assay using ATR KD cells treated with various concentrations (0, 2.5, 5, 10 and 20 \u00b5M) of Arbidol. The results indicated the inhibitory of effect Arbidol in ATR KD cells (KYSE 150 and KYSE 450) was reduced in a dose dependent manner compared to mock. These results indicated that the inhibitory effect of Arbidol was dependent on ATR (Figure 5g).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig5-v2.jpg)\n\n**Figure 5.:** (a) The correlation between ataxia telangiectasia and Rad3-related (ATR) and minichromosome maintenance 2 (MCM2) was detected by gene correlation analysis. (b) The Cancer Genome Atlas data results showing the expression of ATR in different cancer types, including esophageal cancer and normal tissue, as well as the statistical chart illustrating esophageal cancer classification. Statistical analyses were performed using R software v4.0.3 (R Foundation for Statistical Computing, Vienna, Austria). p-value of <0.05 was considered statistically significant. (c) The picture is from the results of bioassay on the association between ATR and pan-cancer on Timer 2.0, which includes esophageal cancer. Statistical analyses were performed using R software v4.0.3 (R Foundation for Statistical Computing, Vienna, Austria). The rank sum test detected two sets of data and a p-value of <0.05 is considered statistically significant. (d) KYSE150 and KYSE450 cell lines stably expressing knockdown (KD) shATR or mock were established. The expression of ATR and MCM2 S108 is confirmed by western blot. (e) The effect of ATR gene KD on the growth of esophageal cancer cells. The stable KD sh ATR cells were seeded into 96-well plates, fixed at 0, 24, 48, 72 hr, and stained with 4\u2032,6-diamidino-2-phenylindole, and analyzed by IN cell analyzer. Data were analyzed by homogeneity of variance and one-way analysis of variance (ANOVA). ***p<0.001, n=3. (f) The effect of ATR gene KD on the clonogenic potential of esophageal cancer cells. KYSE150 (200/well) and KYSE450 (400/well) cells were seeded on a 6-well plate. The number of cell colonies were counted after 15 days. Data were analyzed by homogeneity of variance and one-way analysis of variance (ANOVA). Asterisks indicate a significant difference, ***p<0.001, n=3, compared with the control group. (g) The effect of Arbidol on the growth of esophageal squamous cell carcinoma (ESCC) cells was evaluated in cells stably expressing sh ATR or cells stably expressing mock. After inoculating the cells for 12 hr, they were in the presence or absence of different concentrations of Arbidol, and analyzed with IN Cell Analyzer 96 hr later. Data were analyzed by homogeneity of variance and one-way analysis of variance (ANOVA). *p<0.05, ***p<0.001, ***p<0.001, n=3.\n\n### Arbidol inhibits tumor growth of ESCC patient-derived xenograft in vivo\n\nTo test whether Arbidol exerts an inhibitory effect on ESCC cells in vivo, we utilized an ESCC patient-derived xenograft (PDX) model (Figure 6a). The results of the experiment showed that Arbidol treatment effectively reduced tumor volume and weight of EG 20 xenografts (control group, n=7; low Arbidol group, n=7; high Arbidol group, n=7; Figure 6b). Importantly, no significant difference in body weights was observed between the control and experimental groups (Figure 6c-f). Compared with the control group, histological staining confirmed that Arbidol substantially impaired MCM2 S108 expression in the case of EG20 models, and reduced the expression levels of the Ki67 cell proliferation marker (Figure 6g).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73953/elife-73953-fig6-v2.jpg)\n\n**Figure 6.:** (a) Arbidol treatment protocol for esophageal squamous cell carcinoma (ESCC) patient-derived xenograft (PDX) models. (b) Tumor sizes of the EG20 xenografts were shown. Tumors were excised and weighed at the end of the experiment (36 days after treatment). (c) The effect of Arbidol inhibition on in vivo tumor growth was determined using ESCC PDX models: EG20. Mice (n=7 per group) were treated with vehicle (saline, oral administration, daily) or Arbidol (low = 100 mg/kg, high = 400 mg/kg, daily) for 36 days. Tumor volumes were measured every 3 days. Data were analyzed by homogeneity of variance and one-way analysis of variance (ANOVA). Data are presented as the mean, ****p<0.0001. (d) Tumor growth curve of single mouse grafted with EG20 is shown. n=7 per group. (e) Weight of mice treated with Arbidol. Data were analyzed by homogeneity of variance and one-way analysis of variance (ANOVA). *p<0.05, ***p<0.001. (f) Tumor volume of each group was shown, respectively, n=7 per group. (g) The expression of tumor proliferation markers Ki67 and target engagement was verified by immunohistochemical analysis of minichromosome maintenance 2 (MCM2) S108 expression in Arbidol-treated EG20 PDX mice, n=7 per group. Data were analyzed by homogeneity of variance and one-way ANOVA. *p<0.05, ***p<0.001, ****p<0.0001. Scale Bars: 50 \u03bcm.\n\n## Discussion\n\nThe 5-year survival rate of ESCC is less than 20% due to limited preventive methods after primary treatment. Chemoprevention is a promising strategy to reduce the recurrence of ESCC. Several NSAIDs and antimetabolites drugs have been shown to influence the recurrence rate of ESCC. However, few drugs have been successfully repurposed to clinically treat cancer (Xie et al., 2021). In the present study, we found that Arbidol had higher IC50 in immortalized esophageal epithelium cell line SHEE than in ESCC cells, which indicated that Arbidol had stronger toxicity in ESCC cells (Figure 1b and c). Furthermore, Arbidol significantly reduced ESCC cell proliferation, anchorage-dependent growth, and anchorage-independent growth in vitro (Figure 1d, e and f). Additionally, we used a PDX model to evaluate the inhibitory effect of Arbidol in vivo. Our results indicated that Arbidol treatment resulted in a significant reduction of tumor sizes and weights compared to the vehicle-treated group. Importantly, no significant differences in body weights were observed between the treatment and control groups, suggesting that Arbidol could be considered a promising chemoprevention drug against ESCC.\n\nATR is a key component of the targeted DNA damage response (DDR) (Jackson and Bartek, 2009), a new cancer treatment pathway which has broad prospects for tumor selectivity (Shi et al., 2018). ATR can phosphorylate proteins involved in DNA replication, DNA recombination and repair, and cell cycle regulation in response to DNA damage (Snedeker et al., 2017). Due to its extensive role in DDR, ATR inhibition has great potential in cancer treatment (Cheng et al., 2017; Jin et al., 2021; Lu et al., 2020). Therefore, suppressing ATR signal transduction by inhibitors may exert antitumor effects against ESCC (Gorecki et al., 2020).\n\nDNA replication occurs in all organisms that use DNA as their genetic material and their molecular basis of biological inheritance (Rozp\u0119dek et al., 2019). During DNA replication, a key component called the MCM complex binds to related proteins and provides the helicase activity that unwinds DNA at the origin of replication (Charrier et al., 2011; Kawamura et al., 2019). The MCM complex undergoes multisite phosphorylation to initiate replication during the transition from G1 to S-phase (Fei and Xu, 2018). MCM2, a component of the MCM complex, is required for the initiation and elongation stages of DNA replication; it is also a crucial target of the S-phase-promoting kinases (Montagnoli et al., 2006). Phosphorylation of MCM2 on S108 by ATR plays key role in the activation of prereplication complexes and to stabilize replication forks in response to replication stress (Thakur et al., 2022). Phosphorylation of MCM2 S108 by ATR, a mediator of the S-phase checkpoint, is increased upon stalled S-phase (Cortez et al., 2004). According to our findings, Arbidol treatment of ESCC cells resulted in decreased S-phase progression and G1-phase blockade. We further verified that Arbidol specifically bound with ATR and not with CDKs. We speculated that the S-phase ESCC cell fraction decreased followed by an increase in the G1-phase fraction after the phosphorylation levels of MCM2 S108 decreased. Therefore, Arbidol decreased the S-phase fraction of ESCC cells and initiated G1-phase blockade through the ATR/MCM2 signaling pathway.\n\nIn the present study, we identified that ATR is an upstream kinase of MCM2 using a predictive model based on multiple proteomic assays. ATR was found to be a target of Arbidol through pull-down and in vitro kinase assays (Figure 3b-f). We determined that Arbidol bound to ATR at ASN 2346 and HIS 2361 sites (Figure 3a), and that these residues were functionally important binding sites for the Arbidol and ATR interaction (Figure 3e). Additionally, these residues downregulated the phosphorylation level of MCM2 (Figure 4b) and affected ATR kinase activity, as well as the cell cycle (Figure 4c).\n\nAccording to our research, we found that Arbidol is a potential ATR inhibitor that effectively inhibits ESCC growth in vitro and in vivo. At present, the antitumor activity of ATR inhibitors has been observed in many preclinical studies, and the encouraging results of these studies have prompted clinicians to evaluate their effectiveness and safety in clinical trials (Leszczynska et al., 2016). Existing ATR inhibitors, such as AZD6738, VX-970/M6620 and BAY-1895344 are currently being tested in a series of clinical trials. Of the listed inhibitors, VX-970 is currently being investigated in a Phase I dose-escalation safety study for treating esophageal cancer and other solid cancers in combination with radiotherapy and chemotherapy (Shi et al., 2018). However, the development of effective and specific drugs that target ATR is proceeding slowly (Gavande et al., 2016). Compared with the development strategy of de novo synthesis, FDA-approved drugs usually provide pharmacokinetic and toxicity data and are more convenient for clinical translation.\n\nIn the present study, we verified the antitumor effects of Arbidol in vivo and in vitro; however, several factors should be further investigated prior to proceeding into the clinical setting. First, a greater number of ESCC cell lines and tissue samples should be used to verify the antitumor effects of Arbidol. PDX models have been shown to mimic several features of human cancer. Within the present study, a subcutaneously implanted tumor model is used. Nonetheless, it may be more ideal if an orthotopic transplantation tumor model is used in future studies. Next, immune responses within the model are neglected as severe combined immune deficiency (SCID) mice are used in ESCC PDX model. Finally, the antitumor efficacy of Arbidol is solely assessed in the in vivo experiments. However, additional preclinical experiments and clinical experiments are necessary for safety evaluation as an anticancer drug.\n\nIn summary, our research showed that Arbidol targets ATR, thereby attenuating ESCC proliferation in vitro and in vivo.\n\n## Materials and methods\n\n### Reagents\n\nArbidol was obtained from Beijing Ruitaibio Technology Co, Ltd (AT3360). ATR protein was purchased from SignalChem (No. A27-35G). Anti-rabbit ATR antibody was purchased from Cell Signaling Technology (13934 S). Anti-rabbit MCM2 (phosphoS108) antibody was purchased from Abcam (ab109271). Anti-rabbit MCM2 antibody was purchased from Abcam (ab108935).\n\n### Cell lines and cell culture\n\nHuman immortalized esophageal epithelium cell line SHEE cells were gifted from Professor Enmin Li of Shantou University. 293T cells and the human KYSE150 and KYSE450 ESCC cell lines were obtained from Cell Bank of the Chinese Academy of Sciences (Shanghai, China). The KYSE150 cells were maintained in RPMI-1640 medium supplemented with 10% fetal bovine serum (FBS) and 1% penicillin/streptomycin. KYSE450 cells were maintained in RPMI-1640/DMEM supplemented with 10% FBS and 1% penicillin/streptomycin. The 293T cells were maintained in RPMI-DMEM supplemented (10% FBS). Cell lines were maintained at 37\u00b0C under 5% CO2 in a humidified incubator. Each cell line was authenticated and periodically monitored for mycoplasma contamination.\n\n### Cell toxicity assay\n\nKYSE150 (8.0\u00d7103 cells/well) and KYSE450 (1.0\u00d7104 cells/well) cells were seeded into 96-well plates with 100 \u03bcL of complete growth medium (with 10% FBS) containing various concentrations of Arbidol (final concentration 0, 6.25, 12.5, 25, 50 and 100 \u03bcM) and incubated for 24 and 48 hr. The cells were fixed with 100 \u03bcL of 4% paraformaldehyde at room temperature for 30 min. Next, 100 \u03bcL of 4\u2019,6-diamidino-2-phenylindole (DAPI) solution was added to each well and the cells were incubated in the dark at 37\u00b0C for 20 min. The DAPI solution was subsequently discarded and the cells were washed twice with 1\u00d7phosphate buffered saline (PBS). Each well was then filled with 100 \u03bcL of fresh 1\u00d7PBS and high-content cell imaging analysis was used to photograph and analyze the number of cells (Yuan et al., 2019). The half-maximal inhibitory concentrations (IC50) values were calculated by SPSS 24.0 software (IBM, USA).\n\n### Cell proliferation assay\n\nKYSE150 (3.0\u00d7103 cells/well) and KYSE450 (4.0\u00d7103 cells/well) cells were seeded into 96-well plates with 100 \u03bcL of complete growth medium (10% FBS) containing various concentrations of Arbidol (final concentration 0, 2.5, 5, 10, and 20 \u03bcM) and incubated at 37\u00b0C and 5% CO2 for 24, 48, 72, and 96 hr. The cells were fixed with 4% paraformaldehyde at room temperature for 30 min. Next, 100 \u03bcL of DAPI solution was added to each well and the cells were incubated in the dark at 37\u00b0C for 20 min. The DAPI working solution was subsequently discarded and the cells were washed twice with 1\u00d7PBS. Each well was then filled with 100 \u03bcL of fresh 1\u00d7PBS and high-content cell imaging analysis was used to photograph and analyze the number of cells (Yuan et al., 2019).\n\n### Soft agar assay\n\nBasal medium eagle (Sigma-Aldrich, UK) supplemented with 10% FBS, 0.5% agarose, 9% sterile water, 1% glutamine, 0.1% gentamicin, and various concentrations of Arbidol (final concentration 0, 2.5, 5, 10, and 20 \u03bcM) were added to each well of a 6-well plate, at 3 mL per well. After 2 hr, cells (8\u00d7103 per well) were suspended in 10% FBS, 0.33% agar, 45% sterile water, 1% glutamine, 0.1% gentamicin, and various concentrations of Arbidol (0, 2.5, 5, 10, and 20 \u00b5M). The cell mixtures were then applied over the solidified bottom layer. The cells were incubated at 37\u00b0C and 5% CO2 for 8 days. Afterward, the number of colonies was counted using an In CellAnalyzer 6000.\n\n### Colony formation assay\n\nCells were plated into 6-well plates at 200 cells per well and allowed to adhere for 12\u201316 hr. Upon adherence, the cells were treated with various concentrations of Arbidol (0, 2.5, 5, 10, and 20 \u00b5M) for 10\u201314 days. The cell colonies were fixed with 4% triformol, stained with 0.1% crystal violet for 5 min, and then the number of colonies were counted.\n\n### Western blot analysis\n\nCells were treated with various concentrations of Arbidol for 24 hr. The culture medium was then discarded and the cells were washed with 1\u00d7PBS prior to collection in radio immunoprecipitation buffer supplemented with phenylmethylsulfonyl fluoride and phosphatase inhibitor cocktail. Cell lysates were incubated for 1 hr on ice, sonicated, and centrifuged for 30 min at 14,000 rpm and 4\u00b0C. Protein concentrations were determined using the bicinchoninate method. The protein samples were resolved via sodium dodecyl sulfate polyacrylamide gel electrophoresis and transferred onto polyvinylidene difluoride membranes in transfer buffer. The membranes were incubated with the indicated antibodies prior to detection using enhanced chemiluminescent reagent.\n\n### Pull-down assay\n\nActivated beads were suspended with 1 mM HCl, and a 40% dimethyl sulfoxide/H2O (v/v)-coupling buffer (0.5 M NaCl, pH 8.3) and then mixed with Arbidol (4 mg) prior to rotation overnight at 4\u00b0C. The beads were transferred to 0.1 M Tris-HCl buffer (pH 8.0) and again rotated overnight at 4\u00b0C. Finally, the beads were washed three times with 0.1 M acetate buffer (pH 4.0) containing 0.5 M NaCl followed by one additional wash with 0.1 M Tris-HCl (pH 8.0) containing 0.5 M NaCl (Steele et al., 2003).\n\n### Molecular docking assay\n\nThe 2D structure of Arbidol (PubChem CID: 131411) was downloaded from the PubChem website (https://pubchem.ncbi.nlm.nih.gov/). The crystal structure of ATR (5YZ0) was downloaded from the Protein Database (PDB) website (https://www.rcsb.org/). The water molecules and small molecule ligands in the structure were deleted prior to the addition of hydrogen atoms. Computational docking between Arbidol and ATR was performed using the AutoDock 4.2.6 software. The optimal complex was visualized using PyMOL (PyMOL molecular graphics system, version 2.3.4).\n\n### In vitro kinase assay\n\nMCM2 was the substrate ATR for the in vitro kinase assay, 200 ng active ATR (Signalchem) and purified MCM2 protein were incubated in 1\u00d7kinase buffer (25 mM Tris-HCl pH 7.5, 5 mM \u03b2-glycerophosphate, 2 mM DTT, 0.1 mM Na3VO4, 10 mM MgCl2, and 5 mM MnCl2) containing 200 \u03bcM ATP at 30\u00b0C for 30 min. The reaction was terminated by adding 6\u00d7protein loading buffer. The protein was detected by western blot.\n\n### Plasmids, transfection, and infection\n\nATR-specific short hairpin RNAs (shRNAs) were purchased from Sangon Biotech and then cloned into the pLKO.1 vector. The hairpin sequences used were as follows: sh ATR#1: 5\u2019-GCCGCTAATCTTCTAACATTA-3\u2019 sh ATR#2: 5\u2019-TAATGGTTCTTACTCGTATTA-3\u2019. To prepare ATR lentivirus particles, we used jetPRIME to transfect each viral plasmid and packaging plasmids (pMD2.G, psPAX2) into HEK293T cells according to the protocol recommended by the manufacturer. After 48 hr of incubation, the virus-enriched medium was collected and passed through a 0.45 \u03bcm sodium acetate filter. The viral medium was then supplemented with 8 \u03bcg/mL polyethylene and used to infect KYSE150 or KYSE450 cells. After 24 hr of incubation, cells were selected with puromycin (1 \u03bcg/mL) for 48 hr.\n\n### PDX model\n\nIn accordance with the guidelines of the Ethics Committee of Zhengzhou University (Zhengzhou, Henan, China), 6\u20138 week old severe combined immunodeficiency (SCID) female mice (Vital River Labs, Beijing, China) were used for patient-derived xenograft (PDX) model experiments. The EG 20 ESCC case was used for the PDX animal experiments. The tumors were divided into 0.1\u20130.2 g fragments and subcutaneously inoculated into the backs of SCID mice. The treatment regimens were initiated approximately two weeks after tumor inoculation. The mice were randomly divided into the following groups: control group, 100 mg/kg Arbidol treatment group, and 400 mg/kg Arbidol treatment group. Arbidol or dimethyl sulfoxide was administered to each mouse daily by oral gavage. The tumor volume and weight of each mouse were measured every 3 days. The tumor volumes were calculated according to the size of a single tumor and the following formula: tumor volume (mm3)=1/2\u00d7length \u00d7 width2 (Xie et al., 2021).\n\n### Cell cycle assay\n\nKYSE150 and KYSE450 cells were cultured in 6-well plates at a density of 8\u00d7105 and 1.2\u00d7106 cells/well, respectively. After serum starvation for 24 hr, the cells were treated with Arbidol (0, 2.5, 5, 10, and 20 \u00b5M). The cells were then harvested and fixed in 70% cold ethanol at 4\u00b0C overnight. After fixation, the cells were washed three times with PBS, stained with propidium iodide solution for approximately 30 min at room temperature, and analyzed using a FACScan flow cytometer. Data were analyzed with FlowJo software (Tree Star, Inc).\n\n### Liquid chromatography tandem mass spectrometry (lc-ms/ms) analysis\n\nThe peptide was dissolved in solvent A (0.1% formic acid and 2% acetonitrile in water) and separated using an ultra-high-performance liquid chromatography (UPLC) system (EASY-nLC 1000; Thermo Scientific). The gradient included an increase from 6 to 22% solvent B (0.1% formic acid in 90% acetonitrile) for 40 min, 22 to 35% solvent B for 12 min, 35 to 80% solvent B for 4 min, and rising to 80% solvent B for the last 4 min. A constant flow rate of 700 nL/min was used. The separated peptides were then ionized using a nanospray ionization ion source and analyzed using an Orbitrap Fusion (Thermo Scientific) MS. High-resolution Orbitrap was used to detect and analyze the precursor ions and secondary fragments of peptides. The m/z scan range of the full scan was 350\u20131550, and the complete peptide was detected in the Orbitrap at a resolution of 60,000. The scanning range of the secondary mass spectrometer was fixed at the starting point of 100 m/z, and the resolution was set to 15,000. After a full scan, the top 20 peptides with the highest signal intensity were selected to enter the high-energy collision dissociation library and fragmented using 35% of the fragmentation energy. A secondary MS was also performed.\n\n### Gene set enrichment analysis ( GSEA) for data processing\n\nThe GSEA v4.0.3 software package was used to integrate the proteome data set with Gene Set Enrichment Analysis (GSEA) and determine the difference in protein expression between the treatment and control groups. The mitochondrial protein complex genome (GO: 0098798) and the respiratory electron transport genome (R-HSA-611105) were selected for enrichment. Through previous functional annotations or experiments, GSEA determined the relevant gene set and sequenced the genes based on the degree of differential expression of the two samples. Gene set enrichment analysis detected changes in gene set expression and optimized, the results using p-value and false discovery rate (FDR) methods. Biological pathways with p<0.01 and FDR<0.25 were considered statistically significant.\n\n### Immunohistochemical (IHC) analysis\n\nThe IHC assay was carried out as described previously (Xie et al., 2021). Briefly, paraffin-embedded tissues (5 \u03bcm) were prepared for IHC analysis. The specimens were baked in a constant-temperature oven at 65\u00b0C for 2 hr, de-paraffinized, and rehydrated prior to antigen retrieval. All samples were treated with 3% H2O2 for 10 min in the dark to inactivate endogenous peroxidases. The slides were then incubated with specific antibodies overnight at 4\u00b0C. The tissue sections were washed three times with 1\u00d7 tris-buffered saline with 0.1% Tween 20 detergent and hybridized with the secondary antibody for 15 min at 37\u00b0C. After 3, 3'-diaminobenzidine (DAB) staining, all slides were stained with hematoxylin, dehydrated and mounted under glass coverslips.\n\n### Statistical analysis\n\nThe statistical significance of results was assessed using SPSS 24.0 software (IBM, USA) or R software v4.0.3 (R Foundation for Statistical Computing, Vienna, Austria). All quantitative results are expressed as mean \u00b1 SD. Statistically significant differences were calculated using the Student\u2019s t-test or one-way ANOVA. p<0.05 was considered statistically significant. *p<0.05, **p<0.01, and ***p<0.001.\n",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "25060241-1366-4b2f-8dfb-5483102e2d28",
+      "submission_id": "d2ac5264-9d69-46bc-aaca-426ccc1b1766",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wafik S El-Deiry, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73953.sa0](https://doi.org/10.7554/eLife.73953.sa0)\n\nThis manuscript will be of interest to a broad audience of cancer biologists, especially those interested in esophageal cancer or treatment strategies involving ATR inhibition. It provides novel information about how FDA-approved antiretroviral compound Arbidol is a potential ATR inhibitor, which is of interest in the treatment of multiple tumor types. The key claims of the manuscript are supported by in silico, in vitro, and in vivo data.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wafik S El-Deiry, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73953.sa1](https://doi.org/10.7554/eLife.73953.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Arbidol inhibits esophageal squamous cell carcinoma growth in vitro and in vivo through suppressing ataxia telangiectasia and Rad3-related protein kinase\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Wafik El-Deiry as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Haidan Liu (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Please address the comments of the two reviewers below. Please follow and address all comments below \u2013 Recommendations to Authors.\n\nReviewer #1 (Recommendation for the Authors):\n\n\u2013 Statistical methods used for each experiment should be detailed in each figure legend and in the 2.17 Statistical Analysis methods section. Additionally, please add sample size (n) values to each of the figure legends, including for in vitro data.\n\n\u2013 The authors need to mention the limitations of the study, especially concerning the in vivo experiment.\n\n\u2013 Methods of IC-50 determination and the software used should be included in the methods section of the manuscript. The authors should also acknowledge the implications of the high IC-50 of the compound in the ESCC cell lines examined.\n\n\u2013 Please clarify treatment dosing- Line 198 states that mice were divided into a \"100 mg/kg Arbidol hydrochloride treatment group, and 200-400 mg/kg Arbidol hydrochloride treatment group\" but figure 6 only shows 100 and 400 mg/kg groups. Also please state when the daily Arbidol hydrochloride treatment started for the in vivo experiment- was it on the day of tumor inoculation?\n\n\u2013 The authors state in Line 329 that their results in figure 5C support the idea that high expression of ATR correlates with decreased overall survival in esophageal cancer, but Figure 5 lacks survival data.\n\n\u2013 What was the treatment duration for the assay as described in Figure 3G? 2F? 3F?\n\n\u2013 In figure 5E, the legend says cells were fixed at \"0 h, 24 h, 48 h, 72 h, and 96 h\" but there is no data for the 96-hour timepoint.\n\n\u2013 Please show individual data points overlayed on top of the bar graphs for the following panels: 1E, 1F, 4C, 5F, 5G, 6G.\n\n\u2013 For Figure 2G please further elaborate on line 286 \"The peptide figure showed that the test conformed the standard\". Additionally, the font size in 2G is too small to be legible.\n\nReviewer #2 (Recommendation for the Authors):\n\nHowever, several issues need to be addressed:\n\n1. Since a G1 phase cycle block can be observed and this effect could be also triggered by the inhibition of CDKs, this possibility should be excluded.\n\n2. The authors described that Arbidol targets ATR protein to affect the DNA replication pathway and confirmed by cell cycle analysis. The authors need to give a more thorough discussion on the functional relationship between DNA replication and cell cycle.\n\n3. In Figure 3a, the binding of Arbidol to ATR at ASN 2361 residue is missing. The authors should include this residue.\n\n4. Figure 5g should include a clear description of the experiment performed.\n\n5. What is the p-value for \"****\" in Figures 6c and 6g?\n\n6. In Figures 1e and 6g, length unit should be \"50 \u03bcm\" but not \"50 \u03bcM\". Typo on line 252: \"*P < 0.05, **P < 0.01, ***P < 0.001\", \"P\" should be lower case. Typo on line 484: \"P <0.01\" should be \"**p <0.01\". The whole manuscript needs to be carefully checked.\n",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "edb2c938-9ac0-4efa-88bb-31ae9b3cc2a2",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C1",
+      "claim": "Human esophageal cancer ranks eighth in global incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Human esophageal cancer is a malignant neoplasm with a high incidence worldwide, ranking eighth in global incidence and sixth in overall mortality (Bray et al., 2018; Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bray et al., 2018 and Zhang et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "ef6ddc14-65f8-495a-b379-739577ffaf32",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C2",
+      "claim": "Human esophageal cancer ranks sixth in overall mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Human esophageal cancer is a malignant neoplasm with a high incidence worldwide, ranking eighth in global incidence and sixth in overall mortality (Bray et al., 2018; Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bray et al., 2018 and Zhang et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "f6992b47-9115-4784-b4fb-da00c1ac8265",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C3",
+      "claim": "Esophageal cancer has two pathological types: esophageal squamous cell carcinoma (ESCC) and esophageal adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "It has two pathological types: esophageal squamous cell carcinoma (ESCC) and esophageal adenocarcinoma (Napier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Napier et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "7c099f9a-95c5-4760-a93d-937a1db360c7",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C4",
+      "claim": "ESCC accounts for approximately 90% of esophageal cancers in China.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCC is the main histological type and accounts for approximately 90% of esophageal cancers in China (Ke et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ke et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "152e4b9e-a126-43b2-9493-90a2e15a2d0b",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C5",
+      "claim": "Current treatment options for patients with ESCC are surgery, chemotherapy, and radiotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Current treatment options for patients with ESCC are surgery, chemotherapy, and radiotherapy (Ha et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ha et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "23c0616a-8910-4cdf-97ce-707b4336fc5f",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C6",
+      "claim": "The 5-year survival rate for ESCC remains less than 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the 5-year survival rate remains less than 20% (Pennathur et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pennathur et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "5c20362b-a67a-49db-bfc5-6c24be0eb55d",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C7",
+      "claim": "Chemoprevention is a promising strategy to prevent the recurrence of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemoprevention is a promising strategy to prevent the recurrence of cancer (Liu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "0de7ec1e-0369-4542-8d79-16b6f0bdbc2d",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C8",
+      "claim": "Certain non-steroidal anti-inflammatory drugs can be used for cancer chemoprevention.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, studies have found that certain non-steroidal anti-inflammatory drugs can be used for this purpose (Bacchi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bacchi et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "98456ad6-b9ea-4949-81ac-7d49c117e53b",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C9",
+      "claim": "Aspirin was used for chemoprophylaxis of colorectal, prostate, and other cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it was reported that aspirin was used for chemoprophylaxis of colorectal, prostate, and other cancers (Gronich and Rennert, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gronich and Rennert, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "fec8b963-751a-476d-8607-09eea73318a5",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C10",
+      "claim": "Metformin has been shown to have a preventive effect on lung cancer, gastric cancer, pancreatic cancer, breast cancer, ovarian cancer, colorectal cancer, liver cancer, and other cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Metformin, a hypoglycemic drug has been shown to have a preventive effect on lung cancer, gastric cancer, pancreatic cancer, breast cancer, ovarian cancer, colorectal cancer, liver cancer, and other cancers (Duncan and Schmidt, 2009; Morales and Morris, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Duncan and Schmidt, 2009 and Morales and Morris, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "450095c1-d2da-4433-b76b-22dfb248eedb",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C11",
+      "claim": "Arbidol has a significant inhibitory effect on the proliferation of ESCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We screened a series of FDA-approved drugs and found that Arbidol has a significant inhibitory effect on the proliferation of ESCC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on screening experiments described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "6063c208-7908-4f38-a0fc-1dfaa1648755",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C12",
+      "claim": "Arbidol is a broad-spectrum antiviral compound which is conventionally used for the prevention and treatment of influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "Arbidol is a broad-spectrum antiviral compound which is conventionally used for the prevention and treatment of influenza (Blaising et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Blaising et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "7b116f8c-f1b3-4400-8d53-7dadd074b114",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C13",
+      "claim": "Arbidol's antiviral activity against a variety of DNA and RNA viruses is mainly based on disrupting key steps during the virus-cell interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Its antiviral activity against a variety of DNA and RNA viruses is mainly based on disrupting key steps during the virus-cell interaction (Zhong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhong et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "aee0e179-ad15-4d02-a49d-8b5c1e2004ba",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C14",
+      "claim": "Arbidol is an inhibitor of the ataxia telangiectasia and Rad3-related (ATR) protein kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identified that Arbidol is an inhibitor of the ataxia telangiectasia and Rad3-related (ATR) protein kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data including pull-down assays, in vitro kinase assays, and molecular docking presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "1506db9d-3805-4ca8-9d95-f3d5c1103553",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C15",
+      "claim": "ATR belongs to the phosphoinositide (PI) 3-kinase-related protein kinase (PI3KKs) family.",
+      "claim_type": "EXPLICIT",
+      "source": "ATR belongs to the phosphoinositide (PI) 3-kinase-related protein kinase (PI3KKs) family and one of its key functions is to regulate DNA replication (Mart\u00ednez et al., 2014; Qiu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mart\u00ednez et al., 2014 and Qiu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "33afa152-be0c-4ba8-ae14-0ceb4b77a7bc",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C16",
+      "claim": "One of ATR's key functions is to regulate DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "ATR belongs to the phosphoinositide (PI) 3-kinase-related protein kinase (PI3KKs) family and one of its key functions is to regulate DNA replication (Mart\u00ednez et al., 2014; Qiu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mart\u00ednez et al., 2014 and Qiu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "f73bff68-6e37-45d5-a831-72147c3008be",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C17",
+      "claim": "ATR can phosphorylate MCM2 on serine 108 in response to various forms of DNA damage and stalling of replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "ATR can phosphorylate the key replication protein minichromosome maintenance protein 2 (MCM2) on serine 108 in response to various forms of DNA damage and stalling of replication forks (Hae et al., 2004; Lecona and Fernandez-Capetillo, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hae et al., 2004 and Lecona and Fernandez-Capetillo, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "b6d2d694-3eaf-46e9-ba19-42f59bd37aec",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C18",
+      "claim": "ATR inhibitors have been used in many cancer investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, ATR inhibitors have been used in many cancer investigations (Yuan et al., 2019), and their roles in cancer treatment have gradually been realized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yuan et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "2a412ecc-30c1-4c23-b9c0-a2c17ce0d986",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C19",
+      "claim": "Arbidol inhibited ESCC growth via modulating the MCM2-ATR axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that Arbidol inhibited ESCC growth via modulating the MCM2-ATR axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data including phosphoproteomics, western blots, pull-down assays, and in vitro kinase assays presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "09b321c4-3b05-40ee-b0b9-b4c3e8576c30",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C20",
+      "claim": "The IC50 values of Arbidol in KYSE150 cells were 57.54 \u03bcM at 24 hr and 26.37 \u03bcM at 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The IC50 values of Arbidol in KYSE150, KYSE450, and shantou human embryonic esophageal (SHEE) cells were 57.54, 54.72, and 87.63 \u03bcM at 24 hr and 26.37, 20.75 and 62.52 \u03bcM at 48 hr, respectively (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on cell viability assays shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "90fa4bf5-4710-4927-abc2-f690dfb6fc3a",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C21",
+      "claim": "The IC50 values of Arbidol in KYSE450 cells were 54.72 \u03bcM at 24 hr and 20.75 \u03bcM at 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The IC50 values of Arbidol in KYSE150, KYSE450, and shantou human embryonic esophageal (SHEE) cells were 57.54, 54.72, and 87.63 \u03bcM at 24 hr and 26.37, 20.75 and 62.52 \u03bcM at 48 hr, respectively (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on cell viability assays shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "89b60ae0-6e05-415a-ba66-6b9fc3dd2645",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C22",
+      "claim": "The IC50 values of Arbidol in SHEE cells were 87.63 \u03bcM at 24 hr and 62.52 \u03bcM at 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The IC50 values of Arbidol in KYSE150, KYSE450, and shantou human embryonic esophageal (SHEE) cells were 57.54, 54.72, and 87.63 \u03bcM at 24 hr and 26.37, 20.75 and 62.52 \u03bcM at 48 hr, respectively (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on cell viability assays shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "d48aa2a3-57fa-4181-bca1-7afbfd33e083",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C23",
+      "claim": "Arbidol had a higher IC50 value in the SHEE immortalized esophageal epithelium cell line than in ESCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Arbidol had a higher IC50 value in the SHEE immortalized esophageal epithelium cell line than in ESCC cells, which indicated that Arbidol had stronger toxicity in ESCC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on IC50 values calculated from cell viability assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "fc81a5fb-959f-4a8f-8e52-149c447f039c",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C24",
+      "claim": "Arbidol had stronger toxicity in ESCC cells compared to SHEE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Arbidol had a higher IC50 value in the SHEE immortalized esophageal epithelium cell line than in ESCC cells, which indicated that Arbidol had stronger toxicity in ESCC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from IC50 values showing lower concentrations needed for ESCC cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "ef1eb2c2-c8ed-42c7-9517-191e3a04959a",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C25",
+      "claim": "Arbidol inhibited the proliferation of KYSE150 and KYSE450 cells in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that Arbidol inhibited the proliferation of KYSE150 and KYSE450 cells in a dose-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on proliferation assays shown in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "fb0b9739-b524-42d0-94ee-fd1a773ce225",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C26",
+      "claim": "Arbidol inhibited anchorage-independent growth of KYSE150 and KYSE450 cells in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that Arbidol inhibited anchorage-independent growth of KYSE150 and KYSE450 cells in a dose-dependent manner (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on soft agar assays shown in Figure 1e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "acea51d2-f78b-4a03-b5cf-e62448201b55",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C27",
+      "claim": "Arbidol inhibited colony-formation in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the results indicated that Arbidol inhibited colony-formation in a dose-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on colony formation assays shown in Figure 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "a5407bfc-21f8-4767-ac9e-52b9e2e1bf5e",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C28",
+      "claim": "Arbidol had a significant inhibitory effect on ESCC in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggested that Arbidol had a significant inhibitory effect on ESCC in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on multiple in vitro assays including proliferation, soft agar, and colony formation assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "3e1a7486-8636-40d8-8add-4664bbd33fbf",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C29",
+      "claim": "241 proteins were downregulated after Arbidol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 241 downregulated proteins and 340 downregulated sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mass spectrometry proteomics data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "72e3ad19-2317-4399-af7e-44341e60406b",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C30",
+      "claim": "340 phosphorylation sites were downregulated after Arbidol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 241 downregulated proteins and 340 downregulated sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mass spectrometry phosphoproteomics data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "56fcf0f5-f540-4c12-8dff-cc3bc00f1e86",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C31",
+      "claim": "DNA replication was identified as the key pathway affected by Arbidol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA replication was identified as the key pathway affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on KEGG enrichment analysis of phosphoproteomics data shown in Figure 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "e91ee3df-0dcd-44c8-b955-369a0a1555c7",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C32",
+      "claim": "The S108 site of MCM2 in the DNA replication pathway was significantly downregulated after Arbidol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "A heat map detailing phosphorylation site enrichment and KEGG pathway enrichment showed that the S108 site of MCM2 in the DNA replication pathway was significantly downregulated after Arbidol treatment (Figure 2d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on phosphoproteomics data shown in Figure 2d and e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "6c2530ee-9b45-4775-83b4-3ed8c0f45ac1",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C33",
+      "claim": "MCM2 S108 phosphorylation was strongly inhibited after Arbidol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of western blot confirmed the phosphoproteomics data and showed that MCM2 S108 phosphorylation was strongly inhibited after Arbidol treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on western blot data shown in Figure 2g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "855b9cb4-4f02-4462-99db-dbe1de79c4d2",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C34",
+      "claim": "Cdc7 and ATR can phosphorylate MCM2 (Ser108).",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate the specific targets of Arbidol, we first searched for proteins upstream of p-MCM2 Ser108 and found that Cdc7 and ATR can phosphorylate MCM2 (Ser108) (Charych et al., 2008; Cheng et al., 2017; Huang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Charych et al., 2008; Cheng et al., 2017; Huang et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "185ba10a-a174-4d2e-b8e1-4e23e14204ce",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C35",
+      "claim": "Cdc7 could not directly bind to Arbidol.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pull-down results indicated that Cdc7 could not directly bind to Arbidol (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on pull-down assay shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "df58d8f0-e37a-4f90-810b-23c8a8f33a56",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C36",
+      "claim": "ATR kinase was a potential target of Arbidol.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggested that ATR kinase was a potential target of Arbidol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on pull-down MS, kinase prediction tools, and SwissTargetPrediction analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "2f799474-2759-4fdf-a69e-0ba1058ad7f4",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C37",
+      "claim": "Arbidol could bind to ATR at the ASN 2346 and HIS 2361 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggested that Arbidol could bind to ATR at the ASN 2346 and HIS 2361 residues (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on computational docking study shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "394b5257-fd74-4768-b00c-5e38a3836298",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C38",
+      "claim": "906 candidate targets were differentially represented between the control and treatment groups in pull-down MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the sample information from pull-down MS, we found that 906 candidate targets were differentially represented between the control and treatment groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on pull-down mass spectrometry data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "dd2a872d-4e9c-47dd-859a-e86053694aef",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C39",
+      "claim": "ATR can bind to Arbidol through a pull-down assay in vitro and ex vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we verified that ATR, one of the targets, could bind to Arbidol through a pull-down assay in vitro and ex vivo (Figure 3b-d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on pull-down assays shown in Figure 3b-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "eb4d4d41-ac45-4103-a715-2e788d62066a",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C40",
+      "claim": "The binding between Arbidol and ATR was less efficient after ATR was mutated at ASN 2346 and HIS 2361.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the binding between Arbidol and ATR was less efficient after ATR was mutated (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on pull-down assay with mutated ATR shown in Figure 3e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "047f6a9a-20a0-4b73-9b8b-1752681e7cd9",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C41",
+      "claim": "Arbidol treatment reduced MCM2 phosphorylation levels in an in vitro kinase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the results of an in vitro kinase assay indicated that Arbidol treatment reduced MCM2 phosphorylation levels (Figure 3f, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on in vitro kinase assay shown in Figure 3f and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "7889e60d-9e86-48b3-80b5-6965fc5a9731",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C42",
+      "claim": "Arbidol functions as an ATP-competitive inhibitor of ATR.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATP competition assay further illustrated that Arbidol functions as an ATP-competitive inhibitor of ATR (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on ATP competition assay shown in Figure 3g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "ad49c1d9-dece-4826-a0d9-e53f69543ad3",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C43",
+      "claim": "ATR is involved in the phosphorylation of MCM2.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that ATR was involved in the phosphorylation of MCM2, and that ATR inhibition induced by Arbidol treatment may affect the phosphorylation of MCM2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on in vitro kinase assays and pull-down experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "c4741c0a-79ff-4150-be68-d11db72fb916",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C44",
+      "claim": "ATR inhibition induced by Arbidol treatment may affect the phosphorylation of MCM2.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that ATR was involved in the phosphorylation of MCM2, and that ATR inhibition induced by Arbidol treatment may affect the phosphorylation of MCM2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on in vitro kinase assays showing reduced MCM2 phosphorylation with Arbidol treatment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "674af3f2-1e71-4736-b02f-0514d9b575ed",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C45",
+      "claim": "The phosphorylation of MCM2 S108 decreased upon treatment with Arbidol in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed western blot and verified that the phosphorylation of MCM2 S108 decreased upon treatment with Arbidol in a dose-dependent manner (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on western blot data shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "6f23142d-75f9-4f78-a36d-1cd757e4f5a0",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C46",
+      "claim": "Variations in DNA replication timing are often accompanied by changes in the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Variations in DNA replication timing are often accompanied by changes in the cell cycle (Prioleau and MacAlpine, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Prioleau and MacAlpine, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "fb6daaed-00f9-4e78-b2b7-6444cd72310b",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C47",
+      "claim": "Arbidol strongly reduced the S-phase fraction and induced cell cycle arrest at the G1-phase in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that Arbidol strongly reduced the S-phase fraction and induced cell cycle arrest at the G1-phase in a dose-dependent manner (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on propidium iodide staining and flow cytometry analysis shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "9617c00b-68fd-4fdd-a69b-658d5cdcedb1",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C48",
+      "claim": "CDK2, CDK4 and CDK6 are expressed during interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "CDK2, CDK4 and CDK6 are expressed during interphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about cell cycle regulation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "7f3fe1e0-ee00-48c3-9cdf-7c5deb52ab2f",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C49",
+      "claim": "CDK4 and CDK6 drive cell-cycle progression from G0 or G1-phase into S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "CDK4 and CDK6 drive cell-cycle progression from G0 or G1-phase into S-phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about cell cycle regulation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "4dc60d1b-c607-4112-ac78-0d3515d8ffd0",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C50",
+      "claim": "CDK2 controls the G1/S checkpoint of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "CDK2 controls the G1/S checkpoint of the cell cycle (Malumbres and Barbacid, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Malumbres and Barbacid, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "99a9d31f-1edb-4629-8d9b-e5c048b4d6bd",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C51",
+      "claim": "Arbidol did not bind with CDK2, CDK4, or CDK6 kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that Arbidol did not bind with CDK2, CDK4, or CDK6 kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on pull-down assays shown in Figure 4\u2014figure supplement 2a-c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "46f3134f-b0b8-4b97-9709-876c24f07772",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C52",
+      "claim": "Arbidol specifically binds with ATR.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggested that Arbidol specifically binds with ATR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on pull-down assays showing binding to ATR but not to CDK2, CDK4, or CDK6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "9d4cab8d-644d-4930-8851-323823927269",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C53",
+      "claim": "RB1 is a tumor suppressor that canonically regulates cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "RB1, as a tumor suppressor, canonically regulates cell cycle progression and represents a downstream target for CDK4/6 or CDK2 inhibitors that are in clinical use (Knudsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Knudsen et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "ca8bb6c5-7e3f-4bcf-a9c5-93d1809245e6",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C54",
+      "claim": "CDKs initiate phosphorylation and inactivation of RB1, resulting in derepression of E2F-regulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "CDKs have been shown to initiate phosphorylation and inactivation of RB1, resulting in derepression of E2F-regulated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about RB1 regulation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "f962f449-5057-4157-97ef-80675e8c47cd",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C55",
+      "claim": "RB1 S249 is phosphorylated by CDK2.",
+      "claim_type": "EXPLICIT",
+      "source": "RB1 S249 is phosphorylated by CDK2, RB1 S807 and RB1 T826 is phosphorylated by CDKs to promote cell cycle progression (Janostiak et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Janostiak et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "925a12aa-3e2f-4382-a7b9-606610efea6c",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C56",
+      "claim": "RB1 S807 and RB1 T826 are phosphorylated by CDKs to promote cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "RB1 S249 is phosphorylated by CDK2, RB1 S807 and RB1 T826 is phosphorylated by CDKs to promote cell cycle progression (Janostiak et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Janostiak et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "e5917c24-e5ad-4985-8de4-641f5a60b9d4",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C57",
+      "claim": "The levels of phosphorylated RB1 (S204, S807, and T826) were not altered after Arbidol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the levels of phosphorylated RB1 (S204, S807, and T826) were not altered after Arbidol treatment (Figure 4\u2014figure supplement 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on western blot data shown in Figure 4\u2014figure supplement 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "ea824afd-9c2d-42b9-9a27-eab2bbd9fc8e",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C58",
+      "claim": "Arbidol induced G1-phase block through targeting ATR.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrated that Arbidol induced G1-phase block through targeting ATR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on cell cycle analysis and evidence that Arbidol does not affect CDK/RB signaling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "ad5294a9-2e34-4dee-ad07-10a97b5e18b2",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C59",
+      "claim": "There is a high correlation between ATR and MCM2 transcript expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed a high correlation between ATR and MCM2 transcript expression (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on gene correlation analysis shown in Figure 5a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "b767a3fc-cae4-499b-aded-81e55b02efb6",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C60",
+      "claim": "High expression of ATR correlated with esophageal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "These results supported that high expression of ATR correlated with esophageal cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on TCGA database analysis shown in Figure 5b and Timer 2.0 analysis shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "bd2f7c7c-2c02-4423-839e-e599d4e8df8f",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C61",
+      "claim": "The expressions of total ATR in sh ATR#1 and sh ATR#2 cells were greatly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the expressions of total ATR in sh ATR#1 and sh ATR#2 cells were greatly reduced (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on western blot data shown in Figure 5d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "6d2d027d-0f3d-4e24-b148-db700b7f1965",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C62",
+      "claim": "ATR knockdown significantly reduced the growth of ESCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that ATR KD significantly reduced the growth of ESCC cells (Figure 5e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on proliferation assays shown in Figure 5e and f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "aa84f2a7-ce7c-456c-b1fe-be895ff96a7e",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C63",
+      "claim": "The inhibitory effect of Arbidol in ATR KD cells was reduced in a dose dependent manner compared to mock.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated the inhibitory of effect Arbidol in ATR KD cells (KYSE 150 and KYSE 450) was reduced in a dose dependent manner compared to mock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on proliferation assays with ATR KD cells treated with Arbidol shown in Figure 5g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "0baed590-2b4c-4d35-87a0-cfd019ceba10",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C64",
+      "claim": "The inhibitory effect of Arbidol was dependent on ATR.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that the inhibitory effect of Arbidol was dependent on ATR (Figure 5g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on proliferation assays showing reduced Arbidol effect in ATR KD cells shown in Figure 5g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "d7cc1027-aa8d-4bcf-8091-83e769aaea3d",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C65",
+      "claim": "Arbidol treatment effectively reduced tumor volume and weight of EG 20 xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the experiment showed that Arbidol treatment effectively reduced tumor volume and weight of EG 20 xenografts (control group, n=7; low Arbidol group, n=7; high Arbidol group, n=7; Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on PDX model experiments shown in Figure 6b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "261aad36-81fe-477e-a64b-34bae7af0710",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C66",
+      "claim": "No significant difference in body weights was observed between the control and experimental groups in the PDX model.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no significant difference in body weights was observed between the control and experimental groups (Figure 6c-f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on body weight measurements shown in Figure 6c-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "4a33fac1-29c5-41e5-a8d9-4ae9082db337",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C67",
+      "claim": "Arbidol substantially impaired MCM2 S108 expression in the case of EG20 models.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the control group, histological staining confirmed that Arbidol substantially impaired MCM2 S108 expression in the case of EG20 models, and reduced the expression levels of the Ki67 cell proliferation marker (Figure 6g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on immunohistochemical analysis shown in Figure 6g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "1e387f94-55d7-4035-9e3b-2fa0a901cbac",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C68",
+      "claim": "Arbidol reduced the expression levels of the Ki67 cell proliferation marker in EG20 models.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the control group, histological staining confirmed that Arbidol substantially impaired MCM2 S108 expression in the case of EG20 models, and reduced the expression levels of the Ki67 cell proliferation marker (Figure 6g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on immunohistochemical analysis shown in Figure 6g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "9c5e5fec-e9d9-4194-bb51-c7ba3e92ffd2",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C69",
+      "claim": "The 5-year survival rate of ESCC is less than 20% due to limited preventive methods after primary treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5-year survival rate of ESCC is less than 20% due to limited preventive methods after primary treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established clinical knowledge and cited literature",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "49979240-b7fd-4a91-a060-002653fa7016",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C70",
+      "claim": "Arbidol had higher IC50 in immortalized esophageal epithelium cell line SHEE than in ESCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we found that Arbidol had higher IC50 in immortalized esophageal epithelium cell line SHEE than in ESCC cells, which indicated that Arbidol had stronger toxicity in ESCC cells (Figure 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on IC50 values shown in Figure 1b and c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "90bc5b30-4c0a-46db-9c23-65fc22f6ab60",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C71",
+      "claim": "Arbidol significantly reduced ESCC cell proliferation, anchorage-dependent growth, and anchorage-independent growth in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Arbidol significantly reduced ESCC cell proliferation, anchorage-dependent growth, and anchorage-independent growth in vitro (Figure 1d, e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on proliferation, colony formation, and soft agar assays shown in Figure 1d, e and f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "b3cf383e-5106-4b24-8251-6ec29cdcefd1",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C72",
+      "claim": "Arbidol treatment resulted in a significant reduction of tumor sizes and weights compared to the vehicle-treated group in the PDX model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that Arbidol treatment resulted in a significant reduction of tumor sizes and weights compared to the vehicle-treated group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on PDX model experiments shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "f3de4b5f-89b3-4535-aef9-df0b2df3b167",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C73",
+      "claim": "Arbidol could be considered a promising chemoprevention drug against ESCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no significant differences in body weights were observed between the treatment and control groups, suggesting that Arbidol could be considered a promising chemoprevention drug against ESCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on in vitro and in vivo experimental data showing efficacy without significant toxicity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "b2c25b86-e649-4831-b5c7-06702e47fd22",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C74",
+      "claim": "ATR is a key component of the targeted DNA damage response (DDR).",
+      "claim_type": "EXPLICIT",
+      "source": "ATR is a key component of the targeted DNA damage response (DDR) (Jackson and Bartek, 2009), a new cancer treatment pathway which has broad prospects for tumor selectivity (Shi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jackson and Bartek, 2009 and Shi et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "fe62a161-9272-43cd-b4a2-264eaf03d0ef",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C75",
+      "claim": "ATR can phosphorylate proteins involved in DNA replication, DNA recombination and repair, and cell cycle regulation in response to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "ATR can phosphorylate proteins involved in DNA replication, DNA recombination and repair, and cell cycle regulation in response to DNA damage (Snedeker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Snedeker et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "f2a6b373-aa4a-40b0-bd7c-36dfa607b8f2",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C76",
+      "claim": "ATR inhibition has great potential in cancer treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its extensive role in DDR, ATR inhibition has great potential in cancer treatment (Cheng et al., 2017; Jin et al., 2021; Lu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cheng et al., 2017; Jin et al., 2021; Lu et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "f7d4d9b9-ec50-4345-8da7-0a2286cad62b",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C77",
+      "claim": "Suppressing ATR signal transduction by inhibitors may exert antitumor effects against ESCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, suppressing ATR signal transduction by inhibitors may exert antitumor effects against ESCC (Gorecki et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gorecki et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "da30fbb2-989d-4716-b9b9-5d3e9db8b073",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C78",
+      "claim": "The MCM complex binds to related proteins and provides the helicase activity that unwinds DNA at the origin of replication.",
+      "claim_type": "EXPLICIT",
+      "source": "During DNA replication, a key component called the MCM complex binds to related proteins and provides the helicase activity that unwinds DNA at the origin of replication (Charrier et al., 2011; Kawamura et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Charrier et al., 2011 and Kawamura et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "6cd9d4f2-5805-4ad7-83a3-2a7d46c98675",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C79",
+      "claim": "The MCM complex undergoes multisite phosphorylation to initiate replication during the transition from G1 to S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The MCM complex undergoes multisite phosphorylation to initiate replication during the transition from G1 to S-phase (Fei and Xu, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fei and Xu, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "2d0b8660-fa7e-4974-b5ca-4ee9b49d86b6",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C80",
+      "claim": "MCM2 is required for the initiation and elongation stages of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "MCM2, a component of the MCM complex, is required for the initiation and elongation stages of DNA replication; it is also a crucial target of the S-phase-promoting kinases (Montagnoli et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Montagnoli et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "7e575bd4-89d6-48a8-910f-358a6d4461a7",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C81",
+      "claim": "Phosphorylation of MCM2 on S108 by ATR plays key role in the activation of prereplication complexes and to stabilize replication forks in response to replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of MCM2 on S108 by ATR plays key role in the activation of prereplication complexes and to stabilize replication forks in response to replication stress (Thakur et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thakur et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "a9e0ad29-f398-4855-96f0-87c4559cd122",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C82",
+      "claim": "Phosphorylation of MCM2 S108 by ATR is increased upon stalled S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of MCM2 S108 by ATR, a mediator of the S-phase checkpoint, is increased upon stalled S-phase (Cortez et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cortez et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "db2bb7d2-4310-44ab-ac28-9a2e9ef12f03",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C83",
+      "claim": "Arbidol treatment of ESCC cells resulted in decreased S-phase progression and G1-phase blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our findings, Arbidol treatment of ESCC cells resulted in decreased S-phase progression and G1-phase blockade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on cell cycle analysis shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "cfdc5f41-75ad-4160-a75c-e3b8f9eecae0",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C84",
+      "claim": "The S-phase ESCC cell fraction decreased followed by an increase in the G1-phase fraction after the phosphorylation levels of MCM2 S108 decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculated that the S-phase ESCC cell fraction decreased followed by an increase in the G1-phase fraction after the phosphorylation levels of MCM2 S108 decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on cell cycle analysis and MCM2 S108 phosphorylation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "2b585c9b-5b0a-49f3-af9a-141e64fdeee3",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C85",
+      "claim": "Arbidol decreased the S-phase fraction of ESCC cells and initiated G1-phase blockade through the ATR/MCM2 signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Arbidol decreased the S-phase fraction of ESCC cells and initiated G1-phase blockade through the ATR/MCM2 signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on cell cycle analysis, western blots, pull-down assays, and in vitro kinase assays",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "0076d455-2825-415f-9ed4-c3f083f4eb25",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C86",
+      "claim": "ATR was found to be a target of Arbidol through pull-down and in vitro kinase assays.",
+      "claim_type": "EXPLICIT",
+      "source": "ATR was found to be a target of Arbidol through pull-down and in vitro kinase assays (Figure 3b-f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on pull-down and in vitro kinase assays shown in Figure 3b-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "142d551a-e56d-4f8d-8b72-1bdc21aaa2cd",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C87",
+      "claim": "Arbidol bound to ATR at ASN 2346 and HIS 2361 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that Arbidol bound to ATR at ASN 2346 and HIS 2361 sites (Figure 3a), and that these residues were functionally important binding sites for the Arbidol and ATR interaction (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on computational docking shown in Figure 3a and mutational analysis shown in Figure 3e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "08049014-645f-497d-9bdc-5e891667c134",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C88",
+      "claim": "ASN 2346 and HIS 2361 residues were functionally important binding sites for the Arbidol and ATR interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that Arbidol bound to ATR at ASN 2346 and HIS 2361 sites (Figure 3a), and that these residues were functionally important binding sites for the Arbidol and ATR interaction (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on mutational analysis showing reduced binding when these residues are mutated, shown in Figure 3e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "9736786f-53cc-4794-a079-12db74cefe24",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C89",
+      "claim": "The antitumor activity of ATR inhibitors has been observed in many preclinical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, the antitumor activity of ATR inhibitors has been observed in many preclinical studies, and the encouraging results of these studies have prompted clinicians to evaluate their effectiveness and safety in clinical trials (Leszczynska et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leszczynska et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "74d302a5-66fc-45ad-bd76-d1d73c3b7937",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C90",
+      "claim": "AZD6738, VX-970/M6620 and BAY-1895344 are currently being tested in a series of clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing ATR inhibitors, such as AZD6738, VX-970/M6620 and BAY-1895344 are currently being tested in a series of clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about ongoing clinical trials",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "502580f2-cdbb-4c40-96b9-7098d5dd3660",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C91",
+      "claim": "VX-970 is currently being investigated in a Phase I dose-escalation safety study for treating esophageal cancer and other solid cancers in combination with radiotherapy and chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the listed inhibitors, VX-970 is currently being investigated in a Phase I dose-escalation safety study for treating esophageal cancer and other solid cancers in combination with radiotherapy and chemotherapy (Shi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shi et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "a46a8593-c93a-4349-9d79-c709a22f6b9c",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C92",
+      "claim": "The development of effective and specific drugs that target ATR is proceeding slowly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the development of effective and specific drugs that target ATR is proceeding slowly (Gavande et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gavande et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "14659006-5bfb-41be-a0cc-4e76c6ff0659",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C93",
+      "claim": "FDA-approved drugs usually provide pharmacokinetic and toxicity data and are more convenient for clinical translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the development strategy of de novo synthesis, FDA-approved drugs usually provide pharmacokinetic and toxicity data and are more convenient for clinical translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about drug development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "50e0e55f-393e-44bf-8e22-4759a247b529",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C94",
+      "claim": "PDX models have been shown to mimic several features of human cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "PDX models have been shown to mimic several features of human cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about PDX models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "48471d0c-a201-467d-a94e-a510125a0f85",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C95",
+      "claim": "Arbidol inhibits human esophageal squamous cell carcinoma growth in vitro and in vivo through suppressing ataxia telangiectasia and Rad3-related protein kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our research showed that Arbidol targets ATR, thereby attenuating ESCC proliferation in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comprehensive experimental data including in vitro assays, phosphoproteomics, pull-down assays, in vitro kinase assays, and PDX model experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "1a4f1efe-b0c8-4479-8070-ecb4a0e6c1bf",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C96",
+      "claim": "Arbidol inhibits the proliferation of ESCC in vitro and in vivo through the DNA replication pathway and is associated with the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, Arbidol inhibits the proliferation of ESCC in vitro and in vivo through the DNA replication pathway and is associated with the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comprehensive experimental data including phosphoproteomics showing DNA replication pathway enrichment, cell cycle analysis, and in vivo PDX experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "46405949-fe4b-498c-a451-be6c18d2173c",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C97",
+      "claim": "Arbidol could effectively inhibit the proliferation of human ESCC in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Based upon the screening of drugs approved by the Food and Drug Administration, we discovered that Arbidol could effectively inhibit the proliferation of human ESCC in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on FDA-approved drug screening and subsequent in vitro assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "e309dac6-5371-4323-bb20-15b8ea4f69fa",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C98",
+      "claim": "Arbidol treatment inhibited the proliferation and colony formation ability of ESCC cells and promoted G1-phase cell cycle arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we conducted a series of cell-based assays and found that Arbidol treatment inhibited the proliferation and colony formation ability of ESCC cells and promoted G1-phase cell cycle arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on proliferation assays, colony formation assays, and cell cycle analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "06c24a48-6b32-46a0-9d53-26cf0db45240",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C99",
+      "claim": "Arbidol is a potential ataxia telangiectasia and Rad3-related (ATR) inhibitor via binding to ATR kinase to reduce the phosphorylation and activation of minichromosome maintenance protein 2 at Ser108.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that Arbidol is a potential ataxia telangiectasia and Rad3-related (ATR) inhibitor via binding to ATR kinase to reduce the phosphorylation and activation of minichromosome maintenance protein 2 at Ser108.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on phosphoproteomics, pull-down assays, in vitro kinase assays, and western blots",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "f239d59f-a79a-4572-9674-d329216e1f66",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "claim_id": "C100",
+      "claim": "Arbidol had the inhibitory effect of ESCC in vivo by a patient-derived xenograft model.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrated Arbidol had the inhibitory effect of ESCC in vivo by a patient-derived xenograft model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on PDX model experiments showing reduced tumor volume and weight",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f8c6c588-e25f-4010-b27a-824116db3a45",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Arbidol inhibits ESCC cell proliferation, colony formation, and anchorage-independent growth in vitro with preferential toxicity toward cancer cells. IC50 values in ESCC cell lines (KYSE150: 57.54 \u03bcM at 24h, 26.37 \u03bcM at 48h; KYSE450: 54.72 \u03bcM at 24h, 20.75 \u03bcM at 48h) were lower than in normal esophageal cells (SHEE: 87.63 \u03bcM at 24h, 62.52 \u03bcM at 48h), and Arbidol dose-dependently inhibited proliferation, soft agar colony formation, and anchorage-dependent colony formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C28, C70-C71 are well-supported by multiple complementary in vitro assays (IC50 determination, proliferation, soft agar, colony formation) shown in Figure 1. The data consistently demonstrate dose-dependent inhibition across multiple ESCC cell lines with appropriate controls. Statistical analyses are reported and the preferential toxicity toward cancer cells is supported by comparative IC50 values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "f6edfb51-938d-481d-aa8a-864a19fc6b8f",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phosphoproteomics analysis reveals that Arbidol treatment downregulates 241 proteins and 340 phosphorylation sites, with DNA replication identified as the key affected pathway. MCM2 S108 phosphorylation was significantly downregulated after Arbidol treatment, confirmed by both mass spectrometry and western blot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 are supported by comprehensive phosphoproteomics data (Figure 2) with appropriate KEGG pathway enrichment analysis and orthogonal validation by western blot. The mass spectrometry data have been deposited in a public repository (PXD034944), enhancing reproducibility. The convergence of unbiased proteomics and targeted validation strengthens these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Arbidol directly binds to ATR kinase at ASN 2346 and HIS 2361 residues. This was demonstrated through computational docking, pull-down mass spectrometry identifying 906 candidate targets, direct pull-down assays with purified ATR protein and cell lysates, and site-directed mutagenesis showing reduced binding when these residues are mutated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C36-C40, C86-C88 are well-supported by multiple orthogonal approaches including computational docking (Figure 3a), pull-down MS, in vitro pull-down assays with purified protein (Figure 3b-d), and functional validation through mutagenesis (Figure 3e). The convergence of computational prediction, biochemical binding assays, and mutational analysis provides strong evidence for direct ATR-Arbidol interaction at the specified residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "a0fb553b-357e-44e3-926c-a7d3feb74cc2",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Arbidol inhibits ATR kinase activity as an ATP-competitive inhibitor, reducing MCM2 phosphorylation. In vitro kinase assays demonstrate that Arbidol treatment reduces MCM2 phosphorylation levels, and ATP competition assays confirm that Arbidol functions as an ATP-competitive inhibitor of ATR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44, C99 are supported by direct biochemical evidence from in vitro kinase assays (Figure 3f) and ATP competition assays (Figure 3g). The demonstration that Arbidol reduces ATR-mediated MCM2 phosphorylation in a cell-free system and competes with ATP provides strong mechanistic evidence. However, the kinetic parameters (Ki, IC50 for kinase activity) are not reported, which would strengthen the characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "10f931ab-10b9-480e-bb2e-a2987cdf4e6d",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Arbidol induces G1-phase cell cycle arrest and reduces S-phase progression in ESCC cells in a dose-dependent manner. Western blot analysis shows dose-dependent reduction in MCM2 S108 phosphorylation, and flow cytometry demonstrates that Arbidol strongly reduces the S-phase fraction while increasing G1-phase arrest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C47, C83, C98 are supported by western blot data (Figure 4b) and flow cytometry analysis (Figure 4c) showing dose-dependent effects on cell cycle distribution. The data are consistent across two ESCC cell lines with appropriate statistical analysis. The connection between reduced MCM2 phosphorylation and cell cycle arrest is mechanistically plausible given MCM2's role in DNA replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "2e348bab-f12f-4d6a-b888-c15e23626496",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Arbidol specifically targets ATR rather than other cell cycle kinases (CDK2, CDK4, CDK6), and the G1-phase arrest occurs independently of the CDK/RB1 signaling pathway. Pull-down assays show no binding to CDK2, CDK4, or CDK6, and phosphorylated RB1 levels (S204, S807, T826) remain unchanged after Arbidol treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C57-C58 are supported by negative control experiments (Figure 4\u2014figure supplement 2) showing lack of binding to CDKs and unchanged RB1 phosphorylation. These controls are important for establishing specificity and ruling out alternative mechanisms for the observed G1 arrest. The logic connecting these observations to ATR-specific targeting is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "7cd2e370-801a-4a17-8433-7843f74500b6",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ATR expression correlates with esophageal cancer and is functionally important for ESCC cell growth. Bioinformatic analysis shows high correlation between ATR and MCM2 expression and elevated ATR in esophageal cancer. ATR knockdown significantly reduces ESCC cell growth, and the inhibitory effect of Arbidol is reduced in ATR knockdown cells, demonstrating that Arbidol's effects are ATR-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 are supported by bioinformatic analysis (Figure 5a-c), genetic knockdown experiments (Figure 5d-f), and rescue experiments (Figure 5g). The demonstration that ATR knockdown phenocopies Arbidol treatment and that Arbidol's effects are diminished in ATR knockdown cells provides strong genetic evidence for on-target activity. The use of two independent shRNAs strengthens confidence in the specificity of the knockdown effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "22ddcd96-51db-452e-81fa-06038bd0d526",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Arbidol inhibits ESCC tumor growth in vivo using a patient-derived xenograft (PDX) model. Treatment with Arbidol (100 mg/kg and 400 mg/kg) effectively reduced tumor volume and weight without affecting body weight. Immunohistochemical analysis confirmed reduced MCM2 S108 phosphorylation and Ki67 proliferation marker expression in treated tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68, C72, C100 are supported by PDX model experiments (Figure 6) with appropriate group sizes (n=7 per group), dose-response relationship, and histological validation. The lack of body weight changes suggests acceptable tolerability. However, the study uses only one PDX model (EG20), which limits generalizability. Additional PDX models or cell line xenografts would strengthen the in vivo evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "369fb4e2-49ba-45f2-b2f0-75311cd450f8",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Arbidol inhibits ESCC growth through the ATR/MCM2 signaling axis, affecting DNA replication and cell cycle progression. The authors propose that Arbidol binds ATR, reduces MCM2 S108 phosphorylation, decreases S-phase progression, and induces G1-phase arrest, ultimately inhibiting ESCC proliferation in vitro and in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C84-C85, C95-C96 represent the integrated mechanistic model supported by the collective evidence from phosphoproteomics, biochemical binding assays, kinase assays, cell cycle analysis, genetic validation, and in vivo studies. While C84 is explicitly labeled as speculation by the authors, the overall model is well-supported by the convergence of multiple lines of evidence. The mechanistic pathway from ATR inhibition to reduced MCM2 phosphorylation to cell cycle arrest is biologically plausible and experimentally supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "d70ea494-a043-41cf-bd72-98f2876f1df7",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Both Cdc7 and ATR can phosphorylate MCM2 at Ser108, but Cdc7 does not directly bind to Arbidol. Pull-down assays demonstrated that while ATR binds Arbidol, Cdc7 does not, helping to identify ATR as the relevant target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by literature citations for the ability of both kinases to phosphorylate MCM2 S108, and by experimental data (Figure 2\u2014figure supplement 1) showing lack of Cdc7 binding to Arbidol. This negative control is important for narrowing down the mechanism and identifying ATR as the specific target.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "58f2d2a5-9641-4561-a811-68c62cc52746",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Arbidol could be considered a promising chemoprevention drug against ESCC based on its efficacy in vitro and in vivo without significant toxicity (no body weight changes in treated animals).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C73 represents a translational conclusion that extends beyond the presented data. While the in vitro and in vivo efficacy data are solid, and the lack of body weight changes is encouraging, comprehensive toxicity assessment, pharmacokinetic studies, and clinical trials would be required to support this claim. The concentrations used in vitro (IC50 ~20-60 \u03bcM) are relatively high, raising questions about achievable therapeutic concentrations in humans. This represents a reasonable hypothesis for future work rather than a supported conclusion from the current study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "eaa73ead-f71f-4069-a5f1-97cb43385826",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing the clinical significance of ESCC, current treatment approaches, and the rationale for drug repurposing. These include epidemiological data on esophageal cancer incidence and mortality, the prevalence of ESCC in China, current treatment options, poor survival rates, and examples of successful drug repurposing for cancer chemoprevention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 are background/contextual claims supported by appropriate literature citations. These establish the clinical need and rationale for the study. While we cannot verify the accuracy of all cited sources, the claims are consistent with general knowledge about ESCC epidemiology and treatment, and the citations appear appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about ATR, MCM2, cell cycle regulation, and the therapeutic potential of ATR inhibitors. These include ATR's role in DNA replication and damage response, MCM2's function in DNA replication, the role of CDKs and RB1 in cell cycle control, and the status of ATR inhibitors in clinical development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18, C46, C48-C50, C53-C56, C74-C82, C89-C94 are background/mechanistic claims supported by appropriate literature citations. These provide the biological context for interpreting the experimental findings. The claims are consistent with established knowledge in the field and are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    },
+    {
+      "id": "d1b3edf2-517b-4d4c-84f6-14992349475a",
+      "content_id": "2b02bd94-4226-42f4-89a4-37716f82ef47",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Arbidol was identified through FDA-approved drug screening as an effective inhibitor of ESCC proliferation in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 is supported by the described screening approach and subsequent validation experiments. However, details about the screening methodology, library size, hit selection criteria, and other hits identified are not provided, which limits full evaluation of the screening approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:34:27.506410Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "09b321c4-3b05-40ee-b0b9-b4c3e8576c30",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "90fa4bf5-4710-4927-abc2-f690dfb6fc3a",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "89b60ae0-6e05-415a-ba66-6b9fc3dd2645",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "d48aa2a3-57fa-4181-bca1-7afbfd33e083",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "fc81a5fb-959f-4a8f-8e52-149c447f039c",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "ef1eb2c2-c8ed-42c7-9517-191e3a04959a",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "fb0b9739-b524-42d0-94ee-fd1a773ce225",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "acea51d2-f78b-4a03-b5cf-e62448201b55",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "a5407bfc-21f8-4767-ac9e-52b9e2e1bf5e",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "49979240-b7fd-4a91-a060-002653fa7016",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "90bc5b30-4c0a-46db-9c23-65fc22f6ab60",
+      "result_id": "f8c6c588-e25f-4010-b27a-824116db3a45"
+    },
+    {
+      "claim_id": "3e1a7486-8636-40d8-8add-4664bbd33fbf",
+      "result_id": "f6edfb51-938d-481d-aa8a-864a19fc6b8f"
+    },
+    {
+      "claim_id": "72e3ad19-2317-4399-af7e-44341e60406b",
+      "result_id": "f6edfb51-938d-481d-aa8a-864a19fc6b8f"
+    },
+    {
+      "claim_id": "56fcf0f5-f540-4c12-8dff-cc3bc00f1e86",
+      "result_id": "f6edfb51-938d-481d-aa8a-864a19fc6b8f"
+    },
+    {
+      "claim_id": "e91ee3df-0dcd-44c8-b955-369a0a1555c7",
+      "result_id": "f6edfb51-938d-481d-aa8a-864a19fc6b8f"
+    },
+    {
+      "claim_id": "6c2530ee-9b45-4775-83b4-3ed8c0f45ac1",
+      "result_id": "f6edfb51-938d-481d-aa8a-864a19fc6b8f"
+    },
+    {
+      "claim_id": "aee0e179-ad15-4d02-a49d-8b5c1e2004ba",
+      "result_id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0"
+    },
+    {
+      "claim_id": "df58d8f0-e37a-4f90-810b-23c8a8f33a56",
+      "result_id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0"
+    },
+    {
+      "claim_id": "2f799474-2759-4fdf-a69e-0ba1058ad7f4",
+      "result_id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0"
+    },
+    {
+      "claim_id": "394b5257-fd74-4768-b00c-5e38a3836298",
+      "result_id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0"
+    },
+    {
+      "claim_id": "dd2a872d-4e9c-47dd-859a-e86053694aef",
+      "result_id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0"
+    },
+    {
+      "claim_id": "eb4d4d41-ac45-4103-a715-2e788d62066a",
+      "result_id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0"
+    },
+    {
+      "claim_id": "0076d455-2825-415f-9ed4-c3f083f4eb25",
+      "result_id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0"
+    },
+    {
+      "claim_id": "142d551a-e56d-4f8d-8b72-1bdc21aaa2cd",
+      "result_id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0"
+    },
+    {
+      "claim_id": "08049014-645f-497d-9bdc-5e891667c134",
+      "result_id": "857e0e3f-bba1-4a91-8a61-8d13480c6ad0"
+    },
+    {
+      "claim_id": "047f6a9a-20a0-4b73-9b8b-1752681e7cd9",
+      "result_id": "a0fb553b-357e-44e3-926c-a7d3feb74cc2"
+    },
+    {
+      "claim_id": "7889e60d-9e86-48b3-80b5-6965fc5a9731",
+      "result_id": "a0fb553b-357e-44e3-926c-a7d3feb74cc2"
+    },
+    {
+      "claim_id": "ad49c1d9-dece-4826-a0d9-e53f69543ad3",
+      "result_id": "a0fb553b-357e-44e3-926c-a7d3feb74cc2"
+    },
+    {
+      "claim_id": "c4741c0a-79ff-4150-be68-d11db72fb916",
+      "result_id": "a0fb553b-357e-44e3-926c-a7d3feb74cc2"
+    },
+    {
+      "claim_id": "06c24a48-6b32-46a0-9d53-26cf0db45240",
+      "result_id": "a0fb553b-357e-44e3-926c-a7d3feb74cc2"
+    },
+    {
+      "claim_id": "674af3f2-1e71-4736-b02f-0514d9b575ed",
+      "result_id": "10f931ab-10b9-480e-bb2e-a2987cdf4e6d"
+    },
+    {
+      "claim_id": "fb6daaed-00f9-4e78-b2b7-6444cd72310b",
+      "result_id": "10f931ab-10b9-480e-bb2e-a2987cdf4e6d"
+    },
+    {
+      "claim_id": "db2bb7d2-4310-44ab-ac28-9a2e9ef12f03",
+      "result_id": "10f931ab-10b9-480e-bb2e-a2987cdf4e6d"
+    },
+    {
+      "claim_id": "e309dac6-5371-4323-bb20-15b8ea4f69fa",
+      "result_id": "10f931ab-10b9-480e-bb2e-a2987cdf4e6d"
+    },
+    {
+      "claim_id": "99a9d31f-1edb-4629-8d9b-e5c048b4d6bd",
+      "result_id": "2e348bab-f12f-4d6a-b888-c15e23626496"
+    },
+    {
+      "claim_id": "46f3134f-b0b8-4b97-9709-876c24f07772",
+      "result_id": "2e348bab-f12f-4d6a-b888-c15e23626496"
+    },
+    {
+      "claim_id": "e5917c24-e5ad-4985-8de4-641f5a60b9d4",
+      "result_id": "2e348bab-f12f-4d6a-b888-c15e23626496"
+    },
+    {
+      "claim_id": "ea824afd-9c2d-42b9-9a27-eab2bbd9fc8e",
+      "result_id": "2e348bab-f12f-4d6a-b888-c15e23626496"
+    },
+    {
+      "claim_id": "ad5294a9-2e34-4dee-ad07-10a97b5e18b2",
+      "result_id": "7cd2e370-801a-4a17-8433-7843f74500b6"
+    },
+    {
+      "claim_id": "b767a3fc-cae4-499b-aded-81e55b02efb6",
+      "result_id": "7cd2e370-801a-4a17-8433-7843f74500b6"
+    },
+    {
+      "claim_id": "bd2f7c7c-2c02-4423-839e-e599d4e8df8f",
+      "result_id": "7cd2e370-801a-4a17-8433-7843f74500b6"
+    },
+    {
+      "claim_id": "6d2d027d-0f3d-4e24-b148-db700b7f1965",
+      "result_id": "7cd2e370-801a-4a17-8433-7843f74500b6"
+    },
+    {
+      "claim_id": "aa84f2a7-ce7c-456c-b1fe-be895ff96a7e",
+      "result_id": "7cd2e370-801a-4a17-8433-7843f74500b6"
+    },
+    {
+      "claim_id": "0baed590-2b4c-4d35-87a0-cfd019ceba10",
+      "result_id": "7cd2e370-801a-4a17-8433-7843f74500b6"
+    },
+    {
+      "claim_id": "d7cc1027-aa8d-4bcf-8091-83e769aaea3d",
+      "result_id": "22ddcd96-51db-452e-81fa-06038bd0d526"
+    },
+    {
+      "claim_id": "261aad36-81fe-477e-a64b-34bae7af0710",
+      "result_id": "22ddcd96-51db-452e-81fa-06038bd0d526"
+    },
+    {
+      "claim_id": "4a33fac1-29c5-41e5-a8d9-4ae9082db337",
+      "result_id": "22ddcd96-51db-452e-81fa-06038bd0d526"
+    },
+    {
+      "claim_id": "1e387f94-55d7-4035-9e3b-2fa0a901cbac",
+      "result_id": "22ddcd96-51db-452e-81fa-06038bd0d526"
+    },
+    {
+      "claim_id": "b3cf383e-5106-4b24-8251-6ec29cdcefd1",
+      "result_id": "22ddcd96-51db-452e-81fa-06038bd0d526"
+    },
+    {
+      "claim_id": "f239d59f-a79a-4572-9674-d329216e1f66",
+      "result_id": "22ddcd96-51db-452e-81fa-06038bd0d526"
+    },
+    {
+      "claim_id": "2a412ecc-30c1-4c23-b9c0-a2c17ce0d986",
+      "result_id": "369fb4e2-49ba-45f2-b2f0-75311cd450f8"
+    },
+    {
+      "claim_id": "cfdc5f41-75ad-4160-a75c-e3b8f9eecae0",
+      "result_id": "369fb4e2-49ba-45f2-b2f0-75311cd450f8"
+    },
+    {
+      "claim_id": "2b585c9b-5b0a-49f3-af9a-141e64fdeee3",
+      "result_id": "369fb4e2-49ba-45f2-b2f0-75311cd450f8"
+    },
+    {
+      "claim_id": "48471d0c-a201-467d-a94e-a510125a0f85",
+      "result_id": "369fb4e2-49ba-45f2-b2f0-75311cd450f8"
+    },
+    {
+      "claim_id": "1a4f1efe-b0c8-4479-8070-ecb4a0e6c1bf",
+      "result_id": "369fb4e2-49ba-45f2-b2f0-75311cd450f8"
+    },
+    {
+      "claim_id": "855b9cb4-4f02-4462-99db-dbe1de79c4d2",
+      "result_id": "d70ea494-a043-41cf-bd72-98f2876f1df7"
+    },
+    {
+      "claim_id": "185ba10a-a174-4d2e-b8e1-4e23e14204ce",
+      "result_id": "d70ea494-a043-41cf-bd72-98f2876f1df7"
+    },
+    {
+      "claim_id": "f3de4b5f-89b3-4535-aef9-df0b2df3b167",
+      "result_id": "58f2d2a5-9641-4561-a811-68c62cc52746"
+    },
+    {
+      "claim_id": "edb2c938-9ac0-4efa-88bb-31ae9b3cc2a2",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "ef6ddc14-65f8-495a-b379-739577ffaf32",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "f6992b47-9115-4784-b4fb-da00c1ac8265",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "7c099f9a-95c5-4760-a93d-937a1db360c7",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "152e4b9e-a126-43b2-9493-90a2e15a2d0b",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "23c0616a-8910-4cdf-97ce-707b4336fc5f",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "5c20362b-a67a-49db-bfc5-6c24be0eb55d",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "0de7ec1e-0369-4542-8d79-16b6f0bdbc2d",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "98456ad6-b9ea-4949-81ac-7d49c117e53b",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "fec8b963-751a-476d-8607-09eea73318a5",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "450095c1-d2da-4433-b76b-22dfb248eedb",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "6063c208-7908-4f38-a0fc-1dfaa1648755",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "7b116f8c-f1b3-4400-8d53-7dadd074b114",
+      "result_id": "eaa73ead-f71f-4069-a5f1-97cb43385826"
+    },
+    {
+      "claim_id": "1506db9d-3805-4ca8-9d95-f3d5c1103553",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "33afa152-be0c-4ba8-ae14-0ceb4b77a7bc",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "f73bff68-6e37-45d5-a831-72147c3008be",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "b6d2d694-3eaf-46e9-ba19-42f59bd37aec",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "6f23142d-75f9-4f78-a36d-1cd757e4f5a0",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "9617c00b-68fd-4fdd-a69b-658d5cdcedb1",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "7f3fe1e0-ee00-48c3-9cdf-7c5deb52ab2f",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "4dc60d1b-c607-4112-ac78-0d3515d8ffd0",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "9d4cab8d-644d-4930-8851-323823927269",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "ca8bb6c5-7e3f-4bcf-a9c5-93d1809245e6",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "f962f449-5057-4157-97ef-80675e8c47cd",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "925a12aa-3e2f-4382-a7b9-606610efea6c",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "b2c25b86-e649-4831-b5c7-06702e47fd22",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "fe62a161-9272-43cd-b4a2-264eaf03d0ef",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "f2a6b373-aa4a-40b0-bd7c-36dfa607b8f2",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "f7d4d9b9-ec50-4345-8da7-0a2286cad62b",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "da30fbb2-989d-4716-b9b9-5d3e9db8b073",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "6cd9d4f2-5805-4ad7-83a3-2a7d46c98675",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "2d0b8660-fa7e-4974-b5ca-4ee9b49d86b6",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "7e575bd4-89d6-48a8-910f-358a6d4461a7",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "a9e0ad29-f398-4855-96f0-87c4559cd122",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "9736786f-53cc-4794-a079-12db74cefe24",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "74d302a5-66fc-45ad-bd76-d1d73c3b7937",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "502580f2-cdbb-4c40-96b9-7098d5dd3660",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "a46a8593-c93a-4349-9d79-c709a22f6b9c",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "14659006-5bfb-41be-a0cc-4e76c6ff0659",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "50e0e55f-393e-44bf-8e22-4759a247b529",
+      "result_id": "948cbb65-6a1d-4ce5-b1a0-d6252f44cc79"
+    },
+    {
+      "claim_id": "46405949-fe4b-498c-a451-be6c18d2173c",
+      "result_id": "d1b3edf2-517b-4d4c-84f6-14992349475a"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2412 @@
+{
+  "submission": {
+    "id": "3f681ed2-a209-4637-b5b1-71a1a1d565bd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:34:57.436608Z",
+    "updated_at": "2025-12-03T01:34:57.436608Z"
+  },
+  "content": [
+    {
+      "id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "submission_id": "3f681ed2-a209-4637-b5b1-71a1a1d565bd",
+      "content_type": "manuscript",
+      "content_text": "# Random access parallel microscopy\n\n## Authors\n\n- Mishal Ashraf<sup>1</sup>\n- Sharika Mohanan<sup>2</sup>\n- Byu Ri Sim<sup>1</sup>\n- Anthony Tam<sup>1</sup>\n- Kiamehr Rahemipour<sup>1</sup>\n- Denis Brousseau<sup>3</sup>\n- Simon Thibault<sup>3</sup>\n- Alexander D Corbett<sup>2</sup> ([ORCID: 0000-0003-1645-5475](https://orcid.org/0000-0003-1645-5475)) \u2020\n- Gil Bub<sup>1</sup> ([ORCID: 0000-0002-5304-0036](https://orcid.org/0000-0002-5304-0036)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, MGill University Montreal Canada\n2. Department of Physics and Astronomy, University of Exeter Exeter United Kingdom\n3. Department of Physics, Engineering Physics and Optics, Universit\u00e9 Laval Laval Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe introduce a random-access parallel (RAP) imaging modality that uses a novel design inspired by a Newtonian telescope to image multiple spatially separated samples without moving parts or robotics. This scheme enables near-simultaneous image capture of multiple petri dishes and random-access imaging with sub-millisecond switching times at the full resolution of the camera. This enables the RAP system to capture long-duration records from different samples in parallel, which is not possible using conventional automated microscopes. The system is demonstrated by continuously imaging multiple cardiac monolayer and Caenorhabditis elegans preparations.\n\n## Introduction\n\nConventional multi-sample imaging modalities either require movement of the sample to the focal plane of the imaging system (Klimas et al., 2016; Yemini et al., 2013; Kopljar et al., 2017; Hortigon-Vinagre et al., 2018), movement of the imaging system itself (Likitlersuang et al., 2012; Hansen et al., 2010), or use a wide-field approach to capture several samples in one frame (Larsch et al., 2013; Taute et al., 2015). Schemes that move the sample or the imaging system can be mechanically complex and are inherently slow, while wide-field imaging systems have poor light collection efficiency and resolution compared to systems that image a single sample at a given time point. An important limitation of current imaging modalities is that they cannot continuously monitor several samples unless they are in the same field of view. As many experiments require continuous long-term records in spatially separated samples, they cannot benefit from these high-throughput techniques.\n\nThe random-access parallel\u00a0(RAP) system uses a large parabolic reflector and objective lenses positioned at their focal distances above each sample. A fast light-emitting diode (LED) array sequentially illuminates samples to generate images that are captured with a single camera placed at the focal point of the reflector. This optical configuration allows each sample to fill a sensor\u2019s field of view. Since each LED illuminates a single sample and LED switch times are very fast, images from spatially separated samples can be captured at rates limited only by the camera\u2019s frame rate or the system\u2019s ability to store data. RAP enables effectively simultaneous continuous recordings of different samples by switching LEDs at very fast rates. We demonstrate the system in two low-magnification, low-resolution settings using single-element lenses and other easily sourced components.\n\n## Results\n\nOur current prototypes (Figure 1A) use fast machine vision complementary metal-oxide semiconductor cameras and commercially available LED arrays controlled by Arduino microcontrollers, which can rapidly switch between LEDs at kHz rates. A single-element plano-convex lens is placed above each sample, so that collimated light is projected to a 100 mm focal length parabolic reflector, which then creates an image on the detector. The bright-field nature of the illumination used in this design allows images to be captured with sub-millisecond exposure times. The camera is synchronized with the LED array via a transistor\u2013transistor logic\u00a0(TTL) signal from the microcontroller, so that a single frame is captured when any LED is on. This setup can rapidly switch to image any dish under the parabolic reflector without moving the sample or camera. In addition, the system can acquire data from several dishes near-simultaneously by trading-off the number of samples for frame rate: for example, if a 500 fps camera is used, 50 dishes can be captured at 10 fps, or any two dishes can be recorded at 250 fps (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56426/elife-56426-fig1-v3.jpg)\n\n**Figure 1.:** (A) The random-access imaging system uses a parabolic reflector to image samples directly on a fast machine vision camera located at the focal point of the mirror (f M).\u00a0Single-element plano-convex lenses are used as objectives, with samples positioned at their focal point (f L). Samples are sequentially illuminated using a LED array controlled by an Arduino microcontroller: a sample is only projected on the sensor when its corresponding LED is \u2018on\u2019. See Figure 1\u2014figure supplement 1 and Table 1 for details. (B) (top) Sample s, is captured at time t, on frame f. For a total of n samples, each sample is captured once every n frames; (bottom) a smaller subset of samples can be imaged at higher temporal resolution by reducing the number of LEDs activated by the microcontroller. (C) Image magnification: the chief ray (dashed line) arrives at the detector plane at an incidence angle \u03b8 which increases with lateral displacement, y. The image is stretched in the direction parallel to y by a factor of L/l. (D) The image is isotopically magnified as the distance between the mirror and the image increases (V2>V1) as y increases. (E) The combined magnification, MC, shows the impact of the combined transformation on the magnification in both image dimensions (y' parallel to y, and x' orthogonal to y). Red dots (measured) and dashes (predicted) show magnification in y', and blue dots (measured) and dashes (predicted) show magnification in x', inset shows Images of a grid (200 \u03bcm pitch) taken with y\u00a0=\u00a070 mm, left is the uncorrected image and right shows the correct image using Equation 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56426/elife-56426-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Two configurations, constructed from a combination of Thorlabs optical components (Thorlabs ER series 6 mm rods) and 3D printed parts, were used to collect the data.\u00a0Both configurations use the same parabolic reflector held at three points by optical rails (Thorlabs XE25) attached to a breadboard. Configuration 1 allows for adjustable focus for each sample by sliding a 3D printed lens holder along 6 mm diameter rods; Configuration 2 has an array of lenses at a fixed vertical position and focus is achieved by moving the samples (here a single 96-well plate).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56426/elife-56426-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** USAF targets (clear pattern on a chrome background)\u00a0imaged using 25 mm, 100 mm focal length plano-convex lens positioned 100 mm above the sample as an objective and the 100 mm focal length parabolic mirror to refocus the image (A, with a zoomed and flipped version of the same image shown in B) or a second 25 mm diameter, 100 mm focal length lens to refocus the image on the sensor (C, shown at same scale as B).\u00a0The axial distance of the objective to the centre of the parabolic reflector is 40 mm (images A and B). The large square in the centre right in both close-up images is 140 \u00d7 140 \u03bcm. The sensor used is a 640 \u00d7 480 pixel camera with 4.8 \u00d7 4.8 \u03bcm pixels.\n\n**Table 1.**\n Configuration details.See Figure 1\u2014figure supplement 1 for additional details.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Configuration 1</th>\n      <th>Configuration 2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Camera</td>\n      <td>Basler acA640-750um, 750 maximum fps, with 640 \u00d7 480, 4.8 \u00d7 4.8 \u03bcm pixels</td>\n      <td>Basler acA1300-200um, 202 maximum fps, with 1280 \u00d7 1024, 4.8 \u00d7 4.8 \u03bcm pixels</td>\n    </tr>\n    <tr>\n      <td>Lenses</td>\n      <td>Edmund Optics 25 mm diameter,\u00a0100 mm focal length (NA\u00a0=\u00a00.124)</td>\n      <td>Edmund Optics 6 mm diameter, 72 mm focal length (NA\u00a0=\u00a00.04)</td>\n    </tr>\n    <tr>\n      <td>LED array</td>\n      <td>Adafruit DotStar 8 \u00d7 32 LED matrix</td>\n      <td>2\u00d7 Adafruit NeoPixel 40 LED Shields</td>\n    </tr>\n    <tr>\n      <td>Sample location</td>\n      <td>Four samples equidistant (~40 mm) from the optical axis.</td>\n      <td>Up to 76 wells in a 96-well plate (Figure 3A).</td>\n    </tr>\n    <tr>\n      <td>Frame rate</td>\n      <td>Images captured at 160 fps for four sample (Figure 2A\u2013C and 40.0 fps/sample) or 60 fps for four samples (Figure 2D\u2013F and 15 fps/sample).</td>\n      <td>Images captured at 120 fps for eight samples (Figure 3 and 15 fps/sample). Different sampling rates are shown in Video 1.</td>\n    </tr>\n    <tr>\n      <td>Usage notes</td>\n      <td colspan=\"2\">Vibrations in cardiac experiments were damped by using Sorbothane isolators (Thorlabs AV5), and room light was blocked using black aluminium foil (Thorlabs BFK12). We use a 640 \u00d7 512 pixel ROI for the camera in Configuration 2 as the illumination spot is smaller than the camera FOV. Camera placement obscures 12 wells in the 96-well plate imaged in Configuration 2 (see Figure 3A), and the use of two commercial 40 element LED arrays precludes imaging all wells in a 96-well plate as the LEDs are permanently mounted on a board that is too large to be tiled without leaving gaps. In addition, some wells (marked in Figure 3A) were inadvertently obscured by hardware between the sample and objective lenses for the motion quantification experiment in Figure 3; however, the number of imaged wells was considered to be sufficient to demonstrate the utility of the RAP system.</td>\n    </tr>\n  </tbody>\n</table>\n\nThe high NA\u00a0and large field of view offered by parabolic mirrors have made them very attractive to imaging applications beyond the field of astronomy. However, parabolic mirrors introduce off-axis aberrations, which corrupt any widefield image formed (Rumsey, 1971; Wynne, 1972). This has resulted in compromises, such as restricting imaging to the focal region and then stage\u00a0scanning the sample (Lieb and Meixner, 2001), which have limited its use to niche applications. In our design, transillumination from LEDs far from the sample and collimation from the objective lens results in mostly collimated light being refocused by the parabolic mirror, avoiding the introduction of significant aberrations. The illumination of the sample by a\u00a0partially spatially coherent source (Deng and Chu, 2017) produces greyscale images, and in our studies, it is the change in this intensity that is of interest.\n\nPropagation-based phase contrast in our imaging system is generated when collimated light from the LED is diffracted by the sample. Light that remains in the collection cone of the objective lens is then refocused on the sensor by the parabolic reflector at an oblique angle (Figure 1C). As a result of this angle, the image moves through focus from one side of the detector plane to the other. The region over which the image is in focus is determined by the depth of focus of the parabolic mirror. The distance along the chief ray ($D_{f}$)\u00a0between the image at either side of the detector is given by $D_{f}=D_{s}sin\u2061\\theta$, where $D_{s}$ is the width of the sensor and $\\theta$ is the angle of the chief ray. For our system, $D_{s}$ is 2.4 mm, and $\\theta$ is always less than 60 degrees, so $D_{f}$ is always less than 2 mm and the entire image therefore remains inside the Rayleigh length of the parabolic focus.\n\nImages are subject to two transformations: (1) a stretch due to the image meeting the camera plane obliquely and (2) a small variation in magnification as a function of the separation between the optical axes of the objective lens and the parabolic reflector. These image transformations can be compensated by post-processing the captured images using equations derived from geometric optics as described below.\n\nLight from the sample arrives at the detector plane at an incidence angle \u03b8, which increases with lateral displacement between objective and mirror axes, y (Figure 1C). As the image itself is formed normal to the chief ray, the detector plane captures a geometric projection of the image which is stretched in the direction of y. The magnitude of the stretch is given by\n\n$$\nS=\\frac{1}{cos[2\u00a0tan^{\u22121}(\\frac{y}{2f_{M}})]}\n$$\n\nwhere S is the magnitude of the stretch in one axis, y is the lateral displacement, and fM is the focal length of the parabolic mirror. In addition, there is also a small variation in magnification, which is the same in both image dimensions (y' parallel to displacement y, and x' orthogonal to y) due to the distance between the parabolic mirror surface and the focal point (V) increasing as a function of y (Figure 1D). The magnification is then given by the ratio of V to the focal length of the objective lens, fL. As V(y) can be calculated precisely for a parabola, the magnification M can be written as function of y, fL, and mirror focal length, fM:\n\n$$\nM=\\frac{1}{f_{L}}{y^{2}+(f_{M}\u2212\\frac{y^{2}}{4f_{M}})^{2}}^{\\frac{1}{2}}\n$$\n\nThe combined magnification (MC\u00a0=\u00a0M\u00a0\u00d7\u00a0S) from global scaling and geometric projection along the x' and y' dimensions is shown together with measured results in Figure 1E.\n\nWe demonstrate the system using two popular biological models that may benefit from capturing images in parallel. Cultured cardiac monolayer preparations (Tung and Zhang, 2006; Shaheen et al., 2017) are used to study arrhythmogenesis in controlled settings and are subject to intense research due to their potential for screening compounds for personalized medicine. Caenorhabditis elegans are used as model organisms to study the genetics of aging and biological clocks (Hekimi and Guarente, 2003) and, due to highly conserved neurological pathways between mammals and invertebrates, are now used for neuroprotective compound screening (Larsch et al., 2013). Both model systems are ideally imaged continuously over long periods to capture dynamics (Larsch et al., 2013; Kucera et al., 2000), which is not possible in automated microscopy platforms that move samples or the optical path. The preparations were imaged using four 25 mm diameter, 100 mm focal length lenses (see Materials\u00a0and\u00a0methods: Configuration 1). Figure 2A shows recordings from four dishes imaged in parallel containing monolayer cultures of neonatal cardiac cells at 40 fps per dish. Here, motion is tracked by measuring the absolute value of intensity changes for each pixel over a six-frame window (Burton et al., 2015). Intensity vs time plots (Figure 2B) highlight different temporal dynamics in each preparation, and an activation map from one of the dishes shows conduction velocity and wave direction data (Figure 2C). C. elegans can similarly be imaged, here at 15 fps for four dishes over a period of 5 min (Figure 2D\u2013F). C. elegans motion paths (Figure 2D), which are often used to quantify worm behaviour, can be extracted from each image series using open-source software packages.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56426/elife-56426-fig2-v3.jpg)\n\n**Figure 2.:** (A) Four cardiac monolayer preparations in four separate petri dishes are imaged in parallel at 40 fps/dish. (B) Activity vs time plots obtained from the four dishes show different temporal dynamics, where double peaks in each trace correspond to contraction and relaxation within a 20 \u00d7 20 pixel ROI (see Materials\u00a0and\u00a0methods); (C) an activation map from the second dish (blue trace in B) can be used to determine wave velocity and speed; (D) four C. elegans dishes imaged in parallel at 15 fps/dish; (E) images from one dish every 30 frames (2 s intervals) shows C. elegans motion; (F) the location of five worms in each dish was tracked from data recorded at 15 fps over 250 frames using open-source wrMTrck (Nussbaum-Krammer et al., 2015) software. Dots in different colours (blue, cyan, green, and red) show the tracked positions from plates 1\u20134, respectively. Each image in (A), (D), and (E) shows a 2 \u00d7 2 mm field of view.\n\nWe validate the potential for RAP to be used in a higher-throughput imaging application by measuring motion in C. elegans mitochondrial mutant nuo-6(qm200) (Yang and Hekimi, 2010), which have a slower swimming rate (frequency of thrashing) than that of the wild-type C. elegans. Mutant and wild-type C. elegans were loaded into a 96-well plate containing liquid media and imaged by using an array of 76\u00a06 mm diameter, 72 mm focal length lenses positioned above each well (see Materials\u00a0and\u00a0methods: Configuration 2). Instead of measuring thrashing frequency directly, motion was quantified by measuring the fraction of pixels per frame that display a change in intensity of over 25% for 100 sequential frames captured at 15 fps/well (see Materials\u00a0and\u00a0methods: Image processing). In this experiment, the frame rate of the camera is limited to 120 fps (see Materials\u00a0and\u00a0methods: Practical considerations and Video 1), allowing us to image eight\u00a0wells in parallel at 15 fps/well. Eighty wells (76 active and four blank wells \u2013 see Figure 3A) are imaged by measuring 100 frames from each well in a row of\u00a0eight wells in parallel (800 frames/row) before moving to the next row, until all 80 wells are imaged (a total of 8000 frames). The system quantified decreased activity in nuo-6(qm200),\u00a0which is consistent with published results (Yang and Hekimi, 2010; Figure 3B). The time needed to perform this assay is just over 1 min (8000 frames/120 fps\u00a0=\u00a067 s).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56426/elife-56426-fig3-v3.jpg)\n\n**Figure 3.:** Images are captured at 120 fps, which is split over multiple wells as shown in Video 1.\u00a0(A) The position of the active detection sites (magenta) relative to the camera (green), which obscures a portion of the 96-well plate: Wells obscured by hardware are denoted by an \u2018X\u2019 symbol (see Materials\u00a0and\u00a0methods: Table 1), wells with wild-type C. elegans (WT, \u2018+\u2019 symbol) and mutant (nuo-6(qm200), \u2018\u2212\u2019 symbol). (B) Motion analysis comparing wild type (magenta dots) to mitochondrial mutant nuo-6(qm200) (blue dots): wells in each row are imaged in parallel (eight wells at 15 fps per well), and net motion is estimated in each well by summing absolute differences in pixel intensities in sequential frames (see Materials\u00a0and\u00a0methods: Image analysis).\u00a0This estimate confirms that the imaging system can detect significant differences between the two strains (averages shown by diamond and square symbols, two-tailed t-test p=0.01), which is consistent with published results (Yang and Hekimi, 2010). (C) Focal plane wavelength dependence: details from two fields of view (dashed green and orange squares) in the same image appear in or out of focus depending on whether imaged using a red or blue LED (see Video 2 and Figure 3\u2014figure supplement 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56426/elife-56426-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Images from all wells(A\u2013H) for row 10, illuminated using a blue and red LEDs for Configuration 2 imaging C.\u00a0elegans in liquid media. Images are in better focus when illuminated with the red LED for wells (G), (F), and (E) and the blue LED for wells (H),\u00a0(D),\u00a0(C),\u00a0(B), and (A). Images for each channel are taken 8.3 ms apart, and the 16 images from eight wells are sampled at 7.5 fps. Each image is 512 \u00d7 512 pixels and is not transformed other than brightness adjustment in wells (B) and (A) for clarity. The inset in (H) shows a close\u00a0up to highlight the focal plane difference between the two channels.\n\n![Video 1.](https://cdn.elifesciences.org/articles/56426/elife-56426-video1.mp4.jpg)\n\nA limitation of our current implementations of RAP is that focusing individual wells is impractical when there are more than few (i.e. four as in Figure 2) active samples. For System 2 (76 wells), the objective lenses had a depth of focus of 1 mm, which is sufficient tolerance to accommodate most of the wells imaged. Small variations in lens focal length, variability in printed parts, and variations in tissue culture plates result in well-to-well variations in image quality as samples may not be perfectly in focus. While we were able to resolve C. elegans and measure activity in all wells, images are noticeably blurred in about half of the wells, and in some cases, some objects in a single well are better focused than others. This situation can be mitigated by changing the LED colour, as the single-element lenses used in our system show variations in focal length as a function of wavelength (Figure 3C and Video 2). Optical simulations using ray tracing software Configuration 2 confirm that the focal plane can be shifted by 0.981 \u03bcm by switching LED colour from red to blue (see Materials\u00a0and\u00a0methods). Rapid colour switching (i.e. alternating image capture between red and blue LEDs) may be used to increase data set quality at the expense of decreasing the framerate\u00a0per\u00a0well (as was done in Figure 3\u2014figure supplement 1) or the number of wells that can be imaged in parallel, as twice the number of images per well are required.\n\n![Video 2.](https://cdn.elifesciences.org/articles/56426/elife-56426-video2.mp4.jpg)\n\n## Discussion\n\nThe push to develop new high-throughput screening modalities (Abraham et al., 2004; Oheim, 2007) has resulted in several innovative approaches, ranging from the use of flatbed scanners for slowly varying preparations (Stroustrup et al., 2013), to wide-field methods that incorporate computational image reconstruction (Taute et al., 2015; Zheng et al., 2013), to \u2018on-chip\u2019 imaging systems that plate samples directly on a sensor (Zheng et al., 2011; G\u00f6r\u00f6cs and Ozcan, 2013; Cui et al., 2008; Greenbaum et al., 2012; Greenbaum et al., 2013). Despite these advances, methods that accommodate a biologists\u2019 typical workflow\u00a0\u2013 for\u00a0example comparing multiple experimental samples plated in different petri dishes \u2013 depend on automation of conventional microscopes.\n\nAutomated microscopes excel at applications where data can be acquired from samples sequentially as a single high-numerical-aperture (NA) objective is used. While a RAP system could be built using high-NA, high-magnification optics, this likely would require that each objective lens is independently actuatable in order to achieve focus which poses practical limits on the number of imaged wells. RAP systems can be used to speed up conventional imaging tasks in low-magnification settings by capturing data from different samples in parallel (as was done in Figure 3). However, here the speed increase afforded by RAP must be weighed against the many benefits of using a mature technology such as the automated widefield microscope (see Table 2 for a comparison between these systems). RAP systems are better suited for dynamic experiments where multiple continuous long-duration recordings are the primary requirement. For example, rhythms in cultured cardiac tissue evolve over hours (Kim et al., 2009) or even days (Woo et al., 2008; Burridge et al., 2016), but display fast transitions between states (e.g. initiation or termination of re-entry Bub et al., 1998), necessitating continuous measurement. In these experiments, moving between samples would result in missed data. RAP overcomes these constraints by reducing transit times between samples to less than a millisecond without the use of automation or relying on a widefield imaging approach, while allowing for an optimized field of view.\n\n**Table 2.**\n Comparison between conventional and RAP imaging systems.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Conventional microscope</th>\n      <th>RAP microscope</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Resolution</td>\n      <td>NA\u00a0=\u00a00.025 (1\u00d7) to 0.95 (40\u00d7)</td>\n      <td>NA\u00a0=\u00a00.04 and 0.124 (1.4\u00d7\u00a0and 1\u00d7)</td>\n    </tr>\n    <tr>\n      <td>Image quality</td>\n      <td>Optimal (multi-element objectives correct for most aberrations)</td>\n      <td>Moderate (single-element lenses used as objectives display spherical and other aberrations)</td>\n    </tr>\n    <tr>\n      <td>Modalities</td>\n      <td>Bright-field, phase contrast, DIC, fluorescence</td>\n      <td>Bright-field, multi-sample</td>\n    </tr>\n    <tr>\n      <td>Scan time*</td>\n      <td>~8 min (no autofocus) ~11 min (with autofocus)\u2020</td>\n      <td>1 min (no focus) 2 min (LED colour switching)</td>\n    </tr>\n    <tr>\n      <td>Focal drift</td>\n      <td>Moderate to low (due to the use of a heavy machined platform, with further improvements afforded to autofocus systems)</td>\n      <td>Moderate to high (focal plane drift is expected due to light, 3D printed parts, but its impact can be mitigated by LED colour switching)</td>\n    </tr>\n    <tr>\n      <td>Cost</td>\n      <td>High (~$30,000 with automated x,y,z stages)</td>\n      <td>Low ($1750\u2013$3250)\u2021</td>\n    </tr>\n    <tr>\n      <td>Automation\u00a7</td>\n      <td>Good (many automated microscopes are fully programmable)</td>\n      <td>Unknown (fully programmable, but not validated as part of a conventional high-throughput workflow)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Scan time is estimated for measuring the 72 unobstructed wells in a 96-well plate to allow direct comparison to the data in Figure 3. The estimate is based on moving serially between wells with a transit time of 0.5 s and imaging 100 frames at 15\u00a0fps. Examples from the literature vary considerably (e.g. up to one hour using 3D printed automation technologies, due to limitations in hardware communication speeds: see Schneidereit et al., 2017).\u2020We assume the autofocus algorithm takes on average 2.5 s (see Geusebroek et al., 2000).\u2021The cost for the RAP system depends on the number of objective lenses used: Configuration 1\u00a0costs approximately $1750, while Configuration 2 (with 76 wells) costs approximately $3,250, as the cost for the cameras in both configurations are similar (~$400). Costs are in USD.\u00a7\u2018Automation\u2019 refers to a system\u2019s ability to be integrated into robotic workflows. Conventional automated microscopes are core components of high-throughput screening platforms with sample and drug delivery capabilities. While our system is in principle compatible with these technologies (e.g. by leveraging existing open-source software, see Booth et al., 2018), it has not been tested in these settings._\n\n## Materials and methods\n\n### Sample preparation and imaging\n\nWild-type C. elegans were maintained in standard 35 mm petri dishes in 5\u20138 mm of agar seeded with E. coli for the data in Figure 2. For Figure 3, the mitochondrial mutant nuo-6(qm200) (Yang and Hekimi, 2010) was used along with wild-type C. elegans. Here, C. elegans were transferred to 96-well plates by washing adults off NGM plates in M9 buffer, washed once to remove E. coli, and resuspended in fresh M9 buffer. Fifty\u00a0microlitres\u00a0of this worm suspension was loaded into a 96-well, flat-bottom assay plate (Corning, Costar), excluding half of row five and all wells in rows 6 and 7 as shown in Figure 3A, as these wells were either obscured by sensor hardware or not illuminated by the two 40-element LED arrays (see Configuration 2\u00a0in Table 1 below). Wells are filled with M9 buffer and covered with a glass coverslip to reduce refraction artefacts at the meniscus interface at well borders. For additional details, see Hekimi and Guarente, 2003. All experiments involving C. elegans were imaged at room temperature. Cardiac monolayer cultures were prepared from ventricular cells isolated from 7\u00a0day old chick embryos: cells were plated within 1 cm glass rings in 35 mm petri dishes as described in Bub et al., 1998. Cardiac monolayers were imaged in a stage top incubator (Okolabs) at 36\u00b0C and at 5% CO2 in maintenance media.\n\n### Optical setup\n\nA parabolic reflector (220 mm diameter, 100 mm focal length, Edmund Optics) was mounted 300 mm above a breadboard. The camera sensor and electronics (acA640-750um for data collection in Figure 2, acA1300-200um for data collection in Figure 3, Basler AG) were mounted in a PLA\u00a0(polylactic acid) housing without a c-mount thread to allow image formation from light at oblique angles and positioned at the focal point of the parabola. Biological samples were positioned 50 mm above a LED array (DotStar 8 \u00d7\u00a032 LED matrix for Figure 2 or two NeoPixel 40 LED Shields for Figure 3, Adafruit Industries). Plano-convex lenses (25 mm diameter, 100 mm focal length for Figure 2, 6 mm diameter, 72 mm focal length for Figure 3, Edmund Optics) were positioned at their focal lengths above each sample. Axial alignment tolerances were set by the depth of field ($DOF$) of the lenses, calculated to be 0.9 mm using the approximation: $DOF=(2u^{2}Nc)/f^{2}$ where the subject distance, u=f, the f-number, N=12, and the circle of confusion c, was set to be twice the lateral resolution (18 \u03bcm). The LED array was controlled by an ATmega328P microcontroller (Arduino Uno, Arduino.cc) using the FastLED 3.2 open-source library and custom code (Source code 1 and 2, in conjunction with free Basler Pylon Viewer software) to synchronize the camera with each LED via a TTL trigger pulse. Custom parts were printed with a Prusa I3 MK2S printer; STL files with an image of the setup showing their use is provided in \u2018stl_files.zip\u2019. Table 1\u00a0summarizes features of the two systems.\n\n### Image processing\n\nWe find that image brightness drops with increased objective lateral distance and that images are subject to aberrations at the edges. To offset these effects, captured images shown in Figures 2 and 3 are cropped (480 \u00d7 480 pixels for Configuration 1, and 640 \u00d7 512 for\u00a0Configuration 2) and rescaled (so that maximum and minimum pixel intensity values fall between 0 and 255). Dye-free visualization of cardiac activity (Figure 2B) is carried out by applying a running background subtraction followed by an absolute value operation on each pixel:\n\n$$\nP_{t}i,j=|P_{t}i,j-P_{t-n}i,j|\n$$\n\nwhere $P_{t}i,j$\u00a0is the value of pixel p at location i,j at time t and $P_{t-n}i,j$\u00a0is the value of the same pixel at an earlier frame (typically six\u00a0frames apart: see Burton et al., 2015) for details on this technique). Intensity vs time plots of averaged pixels in a 20 \u00d7\u00a020 pixel region of interest show double spikes corresponding to contraction followed by relaxation (Figure 2B). Activation maps (Figure 2C) are generated as previously described (Burton et al., 2015). Motion (Figure 3B) is quantified by finding the magnitude of the intensity change between co-localized pixels in sequential images, counting the number of pixels where the magnitude of the change is over 65 intensity units (25% of the intensity range of the image), and dividing the total by the number of analysed frames. We note that while this algorithm yields results that\u00a0are consistent with published manual measurements of thrashing frequency (see figure 2j in Yang and Hekimi, 2010), there is no direct correspondence between this metric and specific behaviours (head movement, posture changes, etc.). However, the documented difference in the activity of the two strains we use would predict the difference in the metric that we observe and can be used as a validation of the imaging method to track movement over time.\n\n### Practical considerations\n\nThe camera used in Figure 2 was chosen for its high frame rate as we were interested in imaging cardiac activity, which in our experience requires 40\u00a0fps acquisition speeds. The small field of view imposed by the sensor (640 \u00d7 480 pixels at 4.8 microns per pixel giving a 3 \u00d7 2.3 mm\u00a0FOV for the 1\u00d7 imaging scheme used in Figure 2) was considered reasonable as the field imaged by the 25 mm lens was larger than the sensor, ensuring that the sensor will always capture useful data. In contrast, the system used in Figure 3 used smaller 6 mm lenses, and a relatively small 4 mm diameter spot was projected on the sensor. Small changes in lens angle and position (which proved to be hard to control using our consumer grade desktop 3D printer) result in up to a millimetre well-to-well variation for position of the image on the sensor. We therefore opted to use a higher resolution camera with a larger sensor to ensure that the image would reliably fall on the sensor. While this choice lowers the number of frames that can be continuously saved to disk, we considered this to be an acceptable trade-off as the frame rate needed to image C. elegans motion is relatively modest. Future designs will use precision (e.g.CNC (computer numerical control) machined) lens holders that\u00a0would reduce these variations by an order of magnitude.\n\nThe imaging scheme captures data at a maximum rate that depends on the camera as well as the system\u2019s ability to save data continuously to disk. Our system\u2019s hard drive is capable of continuously saving to disk at 150 MB/second. The camera used in Configuration\u00a02\u00a0has a resolution of 1280 \u00d7 1024 pixels, which generates 1.25-MB images: the 150 MB/second limit therefore imposes a sustained base frame rate of 120 fps (150 MB/second/1.25MB\u00a0=\u00a0120 fps). C. elegans motion can be adequately quantified when imaging at 15 fps, allowing us to image eight\u00a0wells (120\u00a0fps/15\u00a0fps) in parallel. A faster hard drive (e.g. an SSD) or RAID array would significantly increase throughput.\n\nWe note that RAP has been validated in low-magnification, bright-field settings that\u00a0have relaxed constraints relative to microscopy applications that may require high magnification with optimized resolution and high light throughput (e.g. fluorescence microscopy). Rather, our designs aim to maximize the number of independent samples that can be imaged in parallel. We therefore opt to use inexpensive components and minimize the device\u2019s footprint, allowing us to either increase the number of samples captured by a single system or alternatively \u2013 as large parabolic reflectors may not be practical in a lab setting \u2013 duplicate the system to increase total capacity.\n\nThe use of low-magnification optics in our current implementation is not a defining property of RAP, as higher NA, high-magnification optics could be used. In the same way that the objective lens is not limited by the tube lens in a conventional microscope, the choice of the objective lenses in the RAP microscope is not limited by the parabolic mirror. The NA\u00a0(and resolving power) of the implementations described above to demonstrate RAP microscopy are consistent with other low-magnification systems. Conventional bright-field 1\u00d7 microscope objective lenses have NAs close to that of Configuration 2 (e.g. the Zeiss 1\u00d7 Plan Neofluar commercial objective has an NA of 0.025, and the Thorlabs TL1X-SAP 1\u00d7 objective has an NA of 0.03), and research stereo macroscopes have NAs close to that of Configuration 1 (e.g. the NA is 0.11 for an Olympus SZX10 at 1\u00d7), but can be higher in specialized macroscope systems. As is the case with conventional microscope designs, a high-magnification RAP system would likely require a mechanism for finely adjusting objective heights to keep each sample in focus, as the depth of field of the objective lenses would be reduced. While the resolution of a RAP system is similar to conventional microscopes, RAP systems differ from conventional microscopes in several respects. Table 2 summarizes some key differences between a conventional automated widefield imaging microscope and the two RAP systems implemented in this publication. We note that higher performance RAP systems (e.g. faster disks, a faster camera, corrected optics) would display improved performance.\n\n### Optical model validation\n\nTo validate the optical model of the imaging system (Equations 1 and 2), an opaque grid with a 200 \u03bcm pitch (#58607, Edmund Optics) was used as a test sample. Images of grid sample were captured using an objective lens with its optic axis separated from that of the mirror by distances shown in Figure 1E. Rescaling the images by the factor given in Equation 1 recovers the image of the square grid.\n\n### Optical resolution comparison\n\nTo compare the performance of RAP (Configuration 1) to a conventional on-axis imaging system, the parabolic mirror was replaced by a plano-convex lens with the same 100 mm focal length and aligned co-axially with the objective lens and sample. A qualitative comparison of images of a US Air Force chart showed that image resolution degradation in the RAP system, caused by off-axis aberrations in the parabolic mirror, is relatively modest for small (<40 mm) axial distances (Figure 1\u2014figure supplement 2).\n\nIn addition, images of an optically opaque grid were captured on the Configuration 2\u00a0system for a variety of off-axis distances. The intensity contrast (the ratio of the darkest region in the gridline to the intensity in the adjacent transmissive region) was used to infer the lateral extent of the optical point spread function (PSF) by comparison to a computational model. The model calculated the anticipated contrast as a function of PSF width (PSF FWHM, see below) using a simple convolution. As the original width of the gridline was known (20 \u03bcm, equivalent to 25 line pairs/mm), this relationship could then be used to estimate the lateral PSF width for a given intensity contrast (Table 3). The theoretical lateral resolution of a 6 mm diameter, 72 mm focal length lens was calculated to be: $PSFXY=0.6*\\lambda/NA=9.1\\mum$ when using the centre emission wavelength of 622.5 nm from the Adafruit Neopixel red LEDs. Estimated lateral PSF widths varied from 13.4 to 21.6 microns over the full range of axial distances used in the 96-well experiment, with performance falling as a function of axial distance.\n\n**Table 3.**\n Comparison of image quality (intensity contrast and estimated lateral width of the point spread function) for varying distances from the optic axis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Off-axis distance (mm)</th>\n      <th>Contrast at 25 lp/mm</th>\n      <th>Estimated FWHM (\u03bcm)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>22.16</td>\n      <td>4.50</td>\n      <td>14.9</td>\n    </tr>\n    <tr>\n      <td>29.96</td>\n      <td>6.52</td>\n      <td>13.4</td>\n    </tr>\n    <tr>\n      <td>38.48</td>\n      <td>6.06</td>\n      <td>13.7</td>\n    </tr>\n    <tr>\n      <td>45.04</td>\n      <td>3.62</td>\n      <td>16.0</td>\n    </tr>\n    <tr>\n      <td>53.90</td>\n      <td>3.27</td>\n      <td>16.6</td>\n    </tr>\n    <tr>\n      <td>60.46</td>\n      <td>2.101</td>\n      <td>20.3</td>\n    </tr>\n    <tr>\n      <td>66.84</td>\n      <td>1.88</td>\n      <td>21.6</td>\n    </tr>\n  </tbody>\n</table>\n\n### Optical simulations\n\nThe chromatic focal shift observed in the experiments was confirmed using optical simulations (Zemax OpticStudio 18.1). The shift in the back focal plane, solved for marginal rays at a particular wavelength, was calculated. For the plano-convex lens used in Configuration 2 (Edmund Optics #45\u2013696), this focal shift was found to be 981 \u03bcm when switching from a red (622 nm) to blue (469 nm) LED.\n",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "f15a3a8f-835d-468a-885f-e6fba3d4d338",
+      "submission_id": "3f681ed2-a209-4637-b5b1-71a1a1d565bd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan Ewbank, Aix Marseille Universit\u00e9, INSERM, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56426.sa1](https://doi.org/10.7554/eLife.56426.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe clarifications that you have made now allow readers to judge for themselves the utility of this novel imaging modality. While the current system falls short of providing truly continuous high-speed (i.e. > 10 fps) imaging of 80-96 wells, it clearly has great potential for multiple applications.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Solid state high throughput screening microscopy\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Didier Stainier as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Didier Marguet (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \u201cin revision at eLifeeLife\u201d. Please let us know if you would like to pursue this option.\n\nThe reviewers all recognised the originality of your solution to perform high throughput imaging without moving parts. They do have some serious reservations, primarily regarding the evaluation of the quality and utility of the technique and in addition to the other points raised, consider it essential that you address the following:\n\n\u2013 The standard topics for any new microscope paper: \"objective\" numerical aperture, image resolution, optical aberration, and camera sensor size, together with the specific aspects related to this technique, including dependence on homogeneous illumination, and sensitivity to maintenance of F2 distance.\n\n\u2013 A substantial expansion of the scope of the data presented, to provide readers with sufficient evidence with which to evaluate the quality of the technique, including proof of principal with a 96-well plate assay.\n\n\u2013 A direct quantitative comparison with existing HTS imaging solutions.\n\nReviewer #1:\n\nAshraf and colleagues describe an approach to perform high throughput screening imaging without moving parts. The setup is original and offers to experimentalists the flexibility to record quasi-simultaneously stacks of images of multiple samples at the full field of resolution of the camera. The optical aberration inherent to the use of a parabolic mirror are mostly overcome by collimating light from the objective lens. The images require a post-processing in two steps for taking into account the image stretching on the detector and the variation in magnification due to the variation of the distance between the mirror and the image. Two applications illustrate the potential of the solid-state HTS.\n\nTo my opinion, the following points need to be clarified:\n\n\u2013 How homogeneous is the field of illumination with a single LED? Especially for a large field of illumination, a non-homogeneous illumination would compromise the quantifications.\n\n\u2013 The accuracy of this ssHTS is related to the robustness at keeping the distance F2 constant between samples. In other words, how sensitive is the image acquisition to the potential variation in the F2 distance between samples as well as within a single large field of view?\n\n\u2013 The magnification Mc must be explained.\n\n\u2013 Is the post-processing compensation applied only in the y-direction?\n\nAssuming that such publication aims to disseminate the use of an ssHTS setup to a wide scientific community, I find the description of the setup as well as the applied image post-processing rather succinct, even with the 3D printing and source codes information.\n\nReviewer #2:\n\nAstronomers have spent centuries learning how to image the night sky with limited sensor hardware. Ashraf et al. present an ingenious adaptation of a technology developed for telescopes-parabolic reflectors-for imaging biological samples. In principle, the approach seems like it could be incredibly useful across a wide range of applications where multiple samples must be imaged in tandem. By placing multiple samples under a single parabolic reflector, multiplexing of samples and imaging hardware can be accomplished without sample-handling robots or moving cameras. The authors highlight two applications: cardiac cells in culture and free-moving nematodes.\n\nThe authors explain the theory behind their technique in a clear and convincing way. However, the biggest challenge in most imaging projects is making the theory work in practice. In its current form, the manuscript falls far short of demonstrating the practical usefulness of parabolic mirrors for imaging biological samples. The authors include only a small amount of image data-for the nematode work, this consists of eight images collected from two plate regions. Data of this scope cannot provide readers or reviewers with sufficient evidence with which to evaluate the quality of the technique.\n\n1) The images shown-are they typical or are they the best possible images that can be collected from the device? The authors do not provide any quantitative evaluation of the quality of their images, in absolute terms or relative to existing methods, with which to understand the practical performance of parabolic mirrors. The authors should estimate the spatial resolution and dynamic range that can be obtained in practice with the devices, and evaluate how such image quality metrics vary across the entire field of view. Does performance degrade towards the edge of the mirror? Does performance degrade over time, as devices become de-calibrated with use?\n\n2) The manuscript is additionally weakened by the absence of a non-trivial measurement made with the device. Pilot experiments are included, demonstrating that images can be collected. However, no evidence is provided to show that these images can be used to compare samples and draw biological conclusions from them. A more convincing proof-of-principle would involve the measurement of some non-trivial biological difference between samples measured with the device, either confirming previous work or discovering something new.\n\n3) The authors highlight the comparative simplicity of their method: it eliminates the need for motorized samples or cameras. However, this simplicity must come at some: for example a substantially increased use of space or perhaps an increase in delicate calibration required, or equipment price. If a 0.25 meter mirror is required to measure four C. elegans plates, how large a mirror would be required to measure 16 plates-the number that can typically be measured using a flatbed scanner? The authors could also expand greatly on other practical issues: for example, is a dedicated imaging table required to align mirrors and samples? Readers would benefit from a clearer evaluation of the practical trade-offs in deploying parabolic mirrors in a laboratory setting relative to other imaging approaches.\n\nReviewer #3:\n\nThe authors present a cool new idea: using a large parabolic reflector in combination with a macroscopic lens array and rapidly modulated LED array to enable fast image multiplexing between spatially separated samples. I believe that there may be interesting applications that would benefit from this capability, although the authors have not clearly demonstrated one. The paper is short, and light on discussion, details, and data.\n\n1) The manuscript does not discuss several standard, key topics for any new microscope paper: \"objective\" numerical aperture, image resolution, optical aberration (other than distortion, which is discussed), and camera sensor size.\n\n2) Why was an array of low-performance singlet lenses used? With that selection, the image quality cannot be good. Can the system not be paired with an array of objectives or higher performance multielement lenses?\n\n3) Fluorescence imaging is not discussed or demonstrated but would obviously increase the impact of the microscope. At least some discussion would be helpful.\n\n4) Actual HTS applications are almost always implemented in microtiter plates (e.g. a 96-well plate) to reduce reagent costs and enable automated pipetting, etc. I do not believe anyone would implement HTS in thousands of petri dishes. The paper would be strengthened substantially by a demonstration of simultaneous recording from all (or a large subset) of the wells in a 96-well plate. It's not clear whether this is possible due to the blind spot in the center of the parabolic mirror's field of view that is blocked by the camera.\n\n5) One of the primary motivations for this approach is given in the first paragraph as: \"wide-field imaging systems [which capture multiple samples in one frame] have poor light collection efficiency and resolution compared to systems that image a single sample at a given time point.\" With a f = 100 mm singlet lens, the light collection efficiency of the demonstrated microscope is also low (estimated NA = 0.12) and the resolution is unimpressive with the high-aberration lens and 1x magnification. They demonstrated only trans-illumination applications (e.g. phase contrast), where light collection efficiency is not important. I believe a fancy photography lens mounted directly on a many-megapixel camera set to image all or part of a microtiter plate could likely outperform their system in throughput and simplicity, at least for the demonstrated applications of cardiomyocytes and C. elegans.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Solid state high throughput screening microscopy\" for further consideration by eLife. Your revised article has been evaluated by Didier Stainier (Senior Editor) and a Reviewing Editor following review and discussion by the three original reviewers.\n\nOverall, the reviewers recognised that this setup could be useful for readers looking for an inexpensive bright-field imaging setup for multi-well imaging without fluorescence. They agree that you have provided substantial additional data and analysis that support your claim that parabolic reflectors can be useful for studying many samples in a parallel. The new images and videos of a 96-well plate were judged compelling. In particular, the prospect of focusing samples simply by adjusting the wavelength of illumination was thought an important step towards the goal of designing a \"solid-state\" imaging apparatus with no moving parts.\n\nNevertheless, although the reviewers were satisfied that you had addressed most or all of the material points, they had considerable reservations about the way in which these improvements were presented and could not support publication of the manuscript in its present form. Indeed, there are numerous lacunae and parts where the writing is not at all clear and leads to confusion about how the system functions and what its limits are. Please find below a summary of their most important comments and a series of points made by individual reviewers, all of which would need to be addressed in a revised manuscript. If this would require a further round of experimental work, then I am afraid that we will not be able to consider your work for publication.\n\nThe description of the 96-well plate data was considered both terse and vague, leaving unclear several aspects of experimental design and interpretation.\n\n\u2013 If no samples were loaded into columns 6 and 7 of the 96 well plate because of the use of 40 LED arrays, this should be stated explicitly.\n\n\u2013 What was the exact reason for not imaging in column 4 of row E or row 1F.\n\nThese discrepancies between the theoretically predicted function of the device and its practical performance must be clarified.\n\nIf these issues do not reflect technical limitation of the device, you would need to demonstrate that these columns/wells can be imaged just like the others (i.e. this is a criterion for rejection).\n\nThe details about acquisition are so poorly described that one reviewer wrote, \"why not leverage those capabilities to scan 33 wells in parallel at 15 Hz rather than one well at a time at 15 Hz?\". This illustrates how you have failed to convey clearly that the system captures data from multiple wells in parallel at 120-500 fps. One video does show how 120 fps can be divided up across 80 wells, and it is illustrated in Figure 1, but these details need to be explicitly stated in the text. In Figure 2, a faster (500 fps) camera of lower resolution is used. As well as making all acquisition details clearer, you will need to provide an explicit discussion of camera choice, and any trade-off between image resolution and speed. Additionally, you need to address another technical limitation and trade-off, namely rates of acquisition and data transfer so that the possibility (and cost) of implementation in a HTS setting (see below) is clear.\n\nThe center of the optical system is intrinsically blind since space is required to position the detector. This point is implicit and must be documented as a function of the magnification.\n\nThe microscope resolution in the 15 \u2013 20 \u00b5m range is poor relative to the sub-micron resolution of a traditional microscope. It is probably not good enough, for example, to tell individual mammalian cells apart in a confluent monolayer. This will limit the range of potential applications. Thus the spatial resolution needs to be stated in the Abstract or Introduction, not buried deep in the Materials and methods. Further, you will need to include a detailed comparison with a standard commercial widefield microscope with a scanning stage (resolution, imaging modalities, scan time, defocusing over time, cost, integration into robotic workflows). If you wish to claim HTS capacity, the comparison should also include a dedicated commercial HCS/HTS system, and the many other features needed for HTS (e.g. see https://www.ncbi.nlm.nih.gov/books/NBK558077/).\n\nAlternatively, in the absence of easy incorporation of the system in an automated setting, at a time when HTS can mean >50,000 tests/day, \"High Throughput\" should be removed from the title (\"multi-sample\" or \"multi-well\" would be better), and any suggestion in the text that your system is HTS-compatible seriously toned down. Equally, given the very different uses in optics or electronics of the term \"solid-state\", you should avoid it in the title, replacing it, for example by, \"with no moving parts\".\n\nThere was also a general consensus that your design is not a Newtonian telescope, which has two mirrors instead of a single mirror as in this design. The reviewers recommend changing \"novel Newtonian telescope design\" to \"large on-axis parabolic mirror design\", \"parabolic reflector\", or something similar that is clearer and more accurate. Including a phrase like \"inspired by a Newtonian telescope\" would be acceptable.\n\nFurther points made by individual reviewers:\n\n1) The authors compare wild-type C. elegans to nuo-6 mutants. The authors are vague and qualitative in their descriptions of movement. Nuo-6 mutants are predicted to \"move less frequently\" than wildtype. This is confusing, as C. elegans generally exhibit some degree of continuous movement as long as they remain alive, involving body postural changes, head movements, or pharyngeal pumping. Are the authors referring to the frequency of a particular type of movement? For the purposes of this paper, the authors probably do not need to alter their imaging pipeline, but they should be substantially more specific about which behavior their method is measuring.\n\n2) Many nematode behaviors change in response to stimulation with light, physical stimulus, or immersion in liquid. Other behaviors are suppressed by long periods spent immersed in un-mixed liquids. It remains difficult to interpret the authors' results without additional information describing how the light and culturing conditions they are use influences nematode behavior and how this influences their results. In particular, the behavioral difference observed between day 1, 2 and 3 could be expected as a technical artifact (i.e., in the absence of any underlying aging process) if nematodes remained in the same wells for multiple days.\n\n3) The authors observe a difference in activity between nuo-6 and wild-type animals, and also between young animals and old animals. However, discussion of this is surprisingly qualitative given the quantitative thinking found elsewhere in the paper. Are the observed differences in movement approximately the same magnitude as what would be expected given previous results? Why is a significant difference between the two strains observed only on day one and three, but not day two?\n\n4) The Figure 1 caption uses fM and fL while Figure 1 uses F1 and F2. Please make consistent.\n\n5) Equation 2 is not fully displayed.\n\n6) Introduction: Please give some concrete examples of experiments that require continuous long-term recording where low-resolution brightfield imaging would be the appropriate readout modality.\n\n7) Introduction: The phrase \"high resolution\" is misleading, as the 15-22 \u00b5m resolution of this microscope would be considered very low resolution by most microscopists. Please insert the actual resolution here.\n\n8) Results: I would not call this a high light collection efficiency design, as most standard microscopes have higher efficiency. Light collection efficiency is not very important here, so please change the language to be less contentious.\n\n9) Results: Calling an LED source spatially coherent is really straining the definition. Please use different language.\n\n10) Materials and methods: Something is wrong or confusing about the depth of focus discussion. Please cite a source for the equations and clearly define all variables. If u = f as you indicate in the text, then DOF=2c\u22600.9 mm, which was stated in the text. The f-number does not appear in the equation you have, but the discussion seems to indicate that it is important (as would be expected).\n\n11) Figure 2 legend: should be \"(blue trace in B)\"\n\n12) Figure 3 legend: duplicated text \"C) Focal plane\u2026.\"\n\n13) The authors limit their discussion of statistical analysis of animal movement to the legend of Figure three. This analysis would seem more natural to include either in the main text or in a dedicated statistical methods section\n\n14) Provide more precise references to allow others to set up an ssHTS system; see for example the references for LEDs.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Random Access Parallel Microscopy\" for further consideration by eLife. Your revised article has been evaluated by Didier Stainier (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe authors stress that one of the principal interests of the system is the capacity for rapid and continuous imaging. They write, \"captures data 15 fps/well by measuring groups of eight wells in parallel\". Then they write, \"As the system captures data from multiple wells in quick succession at a rate of 120 fps, the time needed to acquire 100 frames for each of the 76 wells for this assay is just over one minute\". They need to be more explicit. When they are capturing data from 76 wells, then are they imaging each well at ca. 1.5 fps? As it stands, a reader might understand that they are switching between groups of eight wells, imaging one group at 15 fps/well, then moving to the next group after capturing 100 frames (6.7 seconds). If this were the case, then they would return to image the first group after a minute, so their system would not be continuous. This clearly requires clarification.\n",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bf93cdf4-15f8-46bc-9bba-f8a316026f03",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C1",
+      "claim": "The RAP imaging modality uses a novel design inspired by a Newtonian telescope to image multiple spatially separated samples without moving parts or robotics.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduce a random-access parallel (RAP) imaging modality that uses a novel design inspired by a Newtonian telescope to image multiple spatially separated samples without moving parts or robotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a description of the system design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "277afc37-9c10-41eb-96d9-3064d4109ff0",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C2",
+      "claim": "The RAP system enables near-simultaneous image capture of multiple petri dishes.",
+      "claim_type": "EXPLICIT",
+      "source": "This scheme enables near-simultaneous image capture of multiple petri dishes and random-access imaging with sub-millisecond switching times at the full resolution of the camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This capability is stated in the abstract and demonstrated in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "8d30f726-809d-4e41-9650-88dfccd0d709",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C3",
+      "claim": "The RAP system has sub-millisecond switching times at the full resolution of the camera.",
+      "claim_type": "EXPLICIT",
+      "source": "This scheme enables near-simultaneous image capture of multiple petri dishes and random-access imaging with sub-millisecond switching times at the full resolution of the camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a performance characteristic.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "671aefd1-86ad-4782-bafb-ac21e244eb44",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C4",
+      "claim": "The RAP system enables capture of long-duration records from different samples in parallel, which is not possible using conventional automated microscopes.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables the RAP system to capture long-duration records from different samples in parallel, which is not possible using conventional automated microscopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage over conventional systems in the abstract.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "086d7ff3-855c-4ff1-9178-942b025da312",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C5",
+      "claim": "Conventional multi-sample imaging modalities require movement of the sample to the focal plane of the imaging system.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional multi-sample imaging modalities either require movement of the sample to the focal plane of the imaging system (Klimas et al., 2016; Yemini et al., 2013; Kopljar et al., 2017; Hortigon-Vinagre et al., 2018), movement of the imaging system itself (Likitlersuang et al., 2012; Hansen et al., 2010), or use a wide-field approach to capture several samples in one frame (Larsch et al., 2013; Taute et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "1fc960a4-03d9-4485-ba8a-dc1d5d664a71",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C6",
+      "claim": "Conventional multi-sample imaging modalities require movement of the imaging system itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional multi-sample imaging modalities either require movement of the sample to the focal plane of the imaging system (Klimas et al., 2016; Yemini et al., 2013; Kopljar et al., 2017; Hortigon-Vinagre et al., 2018), movement of the imaging system itself (Likitlersuang et al., 2012; Hansen et al., 2010), or use a wide-field approach to capture several samples in one frame (Larsch et al., 2013; Taute et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "7855cc41-162e-40b2-9c35-0382f8194112",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C7",
+      "claim": "Conventional multi-sample imaging modalities use a wide-field approach to capture several samples in one frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional multi-sample imaging modalities either require movement of the sample to the focal plane of the imaging system (Klimas et al., 2016; Yemini et al., 2013; Kopljar et al., 2017; Hortigon-Vinagre et al., 2018), movement of the imaging system itself (Likitlersuang et al., 2012; Hansen et al., 2010), or use a wide-field approach to capture several samples in one frame (Larsch et al., 2013; Taute et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "45d20017-8975-4acf-89b4-6f33ca72426a",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C8",
+      "claim": "Schemes that move the sample or the imaging system can be mechanically complex and are inherently slow.",
+      "claim_type": "EXPLICIT",
+      "source": "Schemes that move the sample or the imaging system can be mechanically complex and are inherently slow, while wide-field imaging systems have poor light collection efficiency and resolution compared to systems that image a single sample at a given time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of conventional approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b5cc5722-7e27-46b6-87b0-ec5b68388909",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C9",
+      "claim": "Wide-field imaging systems have poor light collection efficiency and resolution compared to systems that image a single sample at a given time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Schemes that move the sample or the imaging system can be mechanically complex and are inherently slow, while wide-field imaging systems have poor light collection efficiency and resolution compared to systems that image a single sample at a given time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of wide-field approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "85ae3c2c-3afb-416b-88c1-bc5e50b58867",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C10",
+      "claim": "Current imaging modalities cannot continuously monitor several samples unless they are in the same field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "An important limitation of current imaging modalities is that they cannot continuously monitor several samples unless they are in the same field of view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key limitation that RAP addresses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "3b404297-7c28-4672-bc9c-c5cdf2a74230",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C11",
+      "claim": "Many experiments require continuous long-term records in spatially separated samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As many experiments require continuous long-term records in spatially separated samples, they cannot benefit from these high-throughput techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a motivation for the RAP system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "a885a184-009b-4f47-bd42-ab16d90aadac",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C12",
+      "claim": "The RAP system uses a large parabolic reflector and objective lenses positioned at their focal distances above each sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The random-access parallel (RAP) system uses a large parabolic reflector and objective lenses positioned at their focal distances above each sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optical configuration of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "f15d2248-ca5f-4d6f-afcd-047491a669a6",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C13",
+      "claim": "A fast LED array sequentially illuminates samples to generate images that are captured with a single camera placed at the focal point of the reflector.",
+      "claim_type": "EXPLICIT",
+      "source": "A fast light-emitting diode (LED) array sequentially illuminates samples to generate images that are captured with a single camera placed at the focal point of the reflector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the illumination and detection scheme.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "017f4704-bf9f-43ef-9a3e-baa6327d4ece",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C14",
+      "claim": "The optical configuration allows each sample to fill a sensor's field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "This optical configuration allows each sample to fill a sensor's field of view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the optical design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "428dafc0-54f2-46ed-a943-702fa9d2a748",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C15",
+      "claim": "LED switch times are very fast.",
+      "claim_type": "EXPLICIT",
+      "source": "Since each LED illuminates a single sample and LED switch times are very fast, images from spatially separated samples can be captured at rates limited only by the camera's frame rate or the system's ability to store data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the LEDs used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b122bdb8-b5e3-4584-b030-1e3d6ad9e2bd",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C16",
+      "claim": "Images from spatially separated samples can be captured at rates limited only by the camera's frame rate or the system's ability to store data.",
+      "claim_type": "EXPLICIT",
+      "source": "Since each LED illuminates a single sample and LED switch times are very fast, images from spatially separated samples can be captured at rates limited only by the camera's frame rate or the system's ability to store data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a performance characteristic of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "85ec8ae0-7dde-4e60-8fd9-2484c3632c68",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C17",
+      "claim": "RAP enables effectively simultaneous continuous recordings of different samples by switching LEDs at very fast rates.",
+      "claim_type": "EXPLICIT",
+      "source": "RAP enables effectively simultaneous continuous recordings of different samples by switching LEDs at very fast rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key capability of the system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b50fa578-b827-489f-bc37-d02a17968ac5",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C18",
+      "claim": "The current prototypes use fast machine vision complementary metal-oxide semiconductor cameras.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current prototypes (Figure 1A) use fast machine vision complementary metal-oxide semiconductor cameras and commercially available LED arrays controlled by Arduino microcontrollers, which can rapidly switch between LEDs at kHz rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the hardware used in the prototypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "f0879478-3814-43ee-a69f-debd84670e26",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C19",
+      "claim": "The current prototypes use commercially available LED arrays controlled by Arduino microcontrollers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current prototypes (Figure 1A) use fast machine vision complementary metal-oxide semiconductor cameras and commercially available LED arrays controlled by Arduino microcontrollers, which can rapidly switch between LEDs at kHz rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the hardware used in the prototypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "98f1cf89-ad40-47c2-a61e-82b13a0619c3",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C20",
+      "claim": "Arduino microcontrollers can rapidly switch between LEDs at kHz rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current prototypes (Figure 1A) use fast machine vision complementary metal-oxide semiconductor cameras and commercially available LED arrays controlled by Arduino microcontrollers, which can rapidly switch between LEDs at kHz rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a capability of the control system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "7256de46-bcc9-44b8-8fc8-560ba878ff3b",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C21",
+      "claim": "A single-element plano-convex lens is placed above each sample, so that collimated light is projected to a 100 mm focal length parabolic reflector.",
+      "claim_type": "EXPLICIT",
+      "source": "A single-element plano-convex lens is placed above each sample, so that collimated light is projected to a 100 mm focal length parabolic reflector, which then creates an image on the detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optical path in the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "4cae8e92-1463-46fc-bab1-332c1e516ee7",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C22",
+      "claim": "The parabolic reflector creates an image on the detector.",
+      "claim_type": "EXPLICIT",
+      "source": "A single-element plano-convex lens is placed above each sample, so that collimated light is projected to a 100 mm focal length parabolic reflector, which then creates an image on the detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image formation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "0b516203-c0e1-4624-b372-4484f9aa6d18",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C23",
+      "claim": "The bright-field nature of the illumination allows images to be captured with sub-millisecond exposure times.",
+      "claim_type": "EXPLICIT",
+      "source": "The bright-field nature of the illumination used in this design allows images to be captured with sub-millisecond exposure times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the illumination scheme.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "cc17d805-ae2d-4328-ac2e-4fd27b93d6a0",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C24",
+      "claim": "The camera is synchronized with the LED array via a TTL signal from the microcontroller.",
+      "claim_type": "EXPLICIT",
+      "source": "The camera is synchronized with the LED array via a transistor\u2013transistor logic (TTL) signal from the microcontroller, so that a single frame is captured when any LED is on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the synchronization mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "d061273b-8562-4ac5-a6fd-6925a14651d4",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C25",
+      "claim": "A single frame is captured when any LED is on.",
+      "claim_type": "EXPLICIT",
+      "source": "The camera is synchronized with the LED array via a transistor\u2013transistor logic (TTL) signal from the microcontroller, so that a single frame is captured when any LED is on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image capture timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "daad6f48-cfea-4fe2-b6c4-e57d4840a7c0",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C26",
+      "claim": "The setup can rapidly switch to image any dish under the parabolic reflector without moving the sample or camera.",
+      "claim_type": "EXPLICIT",
+      "source": "This setup can rapidly switch to image any dish under the parabolic reflector without moving the sample or camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key feature of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "f9116dda-b0c2-4b8f-ab9d-8ee00235eff6",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C27",
+      "claim": "The system can acquire data from several dishes near-simultaneously by trading-off the number of samples for frame rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the system can acquire data from several dishes near-simultaneously by trading-off the number of samples for frame rate: for example, if a 500 fps camera is used, 50 dishes can be captured at 10 fps, or any two dishes can be recorded at 250 fps (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the trade-off between number of samples and frame rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "8a595a7c-9599-463a-ac4e-37f354af55ce",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C28",
+      "claim": "If a 500 fps camera is used, 50 dishes can be captured at 10 fps.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the system can acquire data from several dishes near-simultaneously by trading-off the number of samples for frame rate: for example, if a 500 fps camera is used, 50 dishes can be captured at 10 fps, or any two dishes can be recorded at 250 fps (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is given as an example of the frame rate trade-off.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "8207a53d-59dc-4215-a224-7e11b7b5dc24",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C29",
+      "claim": "If a 500 fps camera is used, any two dishes can be recorded at 250 fps.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the system can acquire data from several dishes near-simultaneously by trading-off the number of samples for frame rate: for example, if a 500 fps camera is used, 50 dishes can be captured at 10 fps, or any two dishes can be recorded at 250 fps (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is given as an example of the frame rate trade-off.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "e9a0e833-efa8-44ea-922f-201050211442",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C30",
+      "claim": "The high NA and large field of view offered by parabolic mirrors have made them attractive to imaging applications beyond astronomy.",
+      "claim_type": "EXPLICIT",
+      "source": "The high NA and large field of view offered by parabolic mirrors have made them very attractive to imaging applications beyond the field of astronomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background on parabolic mirrors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "8b1cc925-80be-4b8f-ac5e-d8106cfe8638",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C31",
+      "claim": "Parabolic mirrors introduce off-axis aberrations, which corrupt any widefield image formed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, parabolic mirrors introduce off-axis aberrations, which corrupt any widefield image formed (Rumsey, 1971; Wynne, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "cae77185-a81b-4177-9cb4-9af05ad97836",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C32",
+      "claim": "Off-axis aberrations in parabolic mirrors have resulted in compromises such as restricting imaging to the focal region and then stage scanning the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "This has resulted in compromises, such as restricting imaging to the focal region and then stage scanning the sample (Lieb and Meixner, 2001), which have limited its use to niche applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "66b9ece2-7da8-40fb-a0f7-5b4364bfb748",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C33",
+      "claim": "In the RAP design, transillumination from LEDs far from the sample and collimation from the objective lens results in mostly collimated light being refocused by the parabolic mirror, avoiding the introduction of significant aberrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In our design, transillumination from LEDs far from the sample and collimation from the objective lens results in mostly collimated light being refocused by the parabolic mirror, avoiding the introduction of significant aberrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains how the RAP design mitigates aberrations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "c49ba499-1c5e-482d-addc-87a89992c3d9",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C34",
+      "claim": "The illumination of the sample by a partially spatially coherent source produces greyscale images.",
+      "claim_type": "EXPLICIT",
+      "source": "The illumination of the sample by a partially spatially coherent source (Deng and Chu, 2017) produces greyscale images, and in our studies, it is the change in this intensity that is of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim about the illumination source.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "88ef96cd-f8e3-4050-b984-dcf9fc4bf2f9",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C35",
+      "claim": "Propagation-based phase contrast in the RAP imaging system is generated when collimated light from the LED is diffracted by the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Propagation-based phase contrast in our imaging system is generated when collimated light from the LED is diffracted by the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of phase contrast generation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b13348a6-91a5-4225-9484-35dff9d5772b",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C36",
+      "claim": "Light that remains in the collection cone of the objective lens is refocused on the sensor by the parabolic reflector at an oblique angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Light that remains in the collection cone of the objective lens is then refocused on the sensor by the parabolic reflector at an oblique angle (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the optical path with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "58cec914-d8e6-4e14-a9dd-b13285853303",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C37",
+      "claim": "As a result of the oblique angle, the image moves through focus from one side of the detector plane to the other.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this angle, the image moves through focus from one side of the detector plane to the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an optical effect of the oblique angle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "3e45f9bd-a183-49a2-a9d6-ba62bb4950f2",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C38",
+      "claim": "The region over which the image is in focus is determined by the depth of focus of the parabolic mirror.",
+      "claim_type": "EXPLICIT",
+      "source": "The region over which the image is in focus is determined by the depth of focus of the parabolic mirror.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the optical system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "e5f9b286-0f36-4463-bccc-ff0cc3087d58",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C41",
+      "claim": "Images are subject to a stretch due to the image meeting the camera plane obliquely.",
+      "claim_type": "EXPLICIT",
+      "source": "Images are subject to two transformations: (1) a stretch due to the image meeting the camera plane obliquely and (2) a small variation in magnification as a function of the separation between the optical axes of the objective lens and the parabolic reflector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one of the image transformations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "259dbd36-f0f4-456e-b6cd-da6142fc70cb",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C42",
+      "claim": "Images are subject to a small variation in magnification as a function of the separation between the optical axes of the objective lens and the parabolic reflector.",
+      "claim_type": "EXPLICIT",
+      "source": "Images are subject to two transformations: (1) a stretch due to the image meeting the camera plane obliquely and (2) a small variation in magnification as a function of the separation between the optical axes of the objective lens and the parabolic reflector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the second image transformation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "c354cdee-a867-4fb1-80a5-a8acf955f776",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C43",
+      "claim": "Image transformations can be compensated by post-processing the captured images using equations derived from geometric optics.",
+      "claim_type": "EXPLICIT",
+      "source": "These image transformations can be compensated by post-processing the captured images using equations derived from geometric optics as described below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a method for correcting image distortions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "12c9fd47-b204-4da8-9799-27cffcb2df26",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C46",
+      "claim": "Cultured cardiac monolayer preparations are used to study arrhythmogenesis in controlled settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultured cardiac monolayer preparations (Tung and Zhang, 2006; Shaheen et al., 2017) are used to study arrhythmogenesis in controlled settings and are subject to intense research due to their potential for screening compounds for personalized medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "ac19eb3d-ae92-4be0-9499-d572e4c503ad",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C47",
+      "claim": "Cultured cardiac monolayer preparations are subject to intense research due to their potential for screening compounds for personalized medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultured cardiac monolayer preparations (Tung and Zhang, 2006; Shaheen et al., 2017) are used to study arrhythmogenesis in controlled settings and are subject to intense research due to their potential for screening compounds for personalized medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "0597cf3a-e1bd-434b-8390-bcf60c38d867",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C48",
+      "claim": "C. elegans are used as model organisms to study the genetics of aging and biological clocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans are used as model organisms to study the genetics of aging and biological clocks (Hekimi and Guarente, 2003) and, due to highly conserved neurological pathways between mammals and invertebrates, are now used for neuroprotective compound screening (Larsch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "5075d6bc-97e6-4c57-92dd-b83b7cef80bc",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C49",
+      "claim": "C. elegans are used for neuroprotective compound screening due to highly conserved neurological pathways between mammals and invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans are used as model organisms to study the genetics of aging and biological clocks (Hekimi and Guarente, 2003) and, due to highly conserved neurological pathways between mammals and invertebrates, are now used for neuroprotective compound screening (Larsch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "e758f573-8a8f-4f67-96df-091ba95e23b6",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C50",
+      "claim": "Both cardiac monolayer and C. elegans model systems are ideally imaged continuously over long periods to capture dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Both model systems are ideally imaged continuously over long periods to capture dynamics (Larsch et al., 2013; Kucera et al., 2000), which is not possible in automated microscopy platforms that move samples or the optical path.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "4d54bc0d-ad59-4e24-b7df-5bf7cd587985",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C51",
+      "claim": "Continuous long-term imaging of cardiac monolayer and C. elegans is not possible in automated microscopy platforms that move samples or the optical path.",
+      "claim_type": "EXPLICIT",
+      "source": "Both model systems are ideally imaged continuously over long periods to capture dynamics (Larsch et al., 2013; Kucera et al., 2000), which is not possible in automated microscopy platforms that move samples or the optical path.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of automated microscopy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "2a34aaf1-b12f-4fce-a197-257d777fd5d2",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C52",
+      "claim": "Four cardiac monolayer preparations in four separate petri dishes were imaged in parallel at 40 fps/dish.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2A shows recordings from four dishes imaged in parallel containing monolayer cultures of neonatal cardiac cells at 40 fps per dish.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "6e490199-0050-4dac-ba52-01c419a285a3",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C53",
+      "claim": "Motion in cardiac monolayers is tracked by measuring the absolute value of intensity changes for each pixel over a six-frame window.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, motion is tracked by measuring the absolute value of intensity changes for each pixel over a six-frame window (Burton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the method.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "cd53ee68-d195-42c6-9d66-372dd5918b25",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C54",
+      "claim": "Intensity vs time plots highlight different temporal dynamics in each cardiac preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intensity vs time plots (Figure 2B) highlight different temporal dynamics in each preparation, and an activation map from one of the dishes shows conduction velocity and wave direction data (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "e09a4858-c0ba-4bef-abde-910a45bc109c",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C55",
+      "claim": "An activation map from one of the cardiac dishes shows conduction velocity and wave direction data.",
+      "claim_type": "EXPLICIT",
+      "source": "Intensity vs time plots (Figure 2B) highlight different temporal dynamics in each preparation, and an activation map from one of the dishes shows conduction velocity and wave direction data (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "6c4b35ef-06df-4078-b0fb-efcebf5c803e",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C56",
+      "claim": "C. elegans were imaged at 15 fps for four dishes over a period of 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans can similarly be imaged, here at 15 fps for four dishes over a period of 5 min (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "3b103314-0050-43c6-bac2-b772a66b6045",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C57",
+      "claim": "C. elegans motion paths can be extracted from each image series using open-source software packages.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans motion paths (Figure 2D), which are often used to quantify worm behaviour, can be extracted from each image series using open-source software packages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "aa06a4e5-3787-49cc-9d93-b31cd63c563a",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C58",
+      "claim": "The RAP system was validated by measuring motion in C. elegans mitochondrial mutant nuo-6(qm200).",
+      "claim_type": "EXPLICIT",
+      "source": "We validate the potential for RAP to be used in a higher-throughput imaging application by measuring motion in C. elegans mitochondrial mutant nuo-6(qm200) (Yang and Hekimi, 2010), which have a slower swimming rate (frequency of thrashing) than that of the wild-type C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation experiment.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "187b1b0d-71a2-4304-869e-3a75e3960b97",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C59",
+      "claim": "C. elegans mitochondrial mutant nuo-6(qm200) have a slower swimming rate than wild-type C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "We validate the potential for RAP to be used in a higher-throughput imaging application by measuring motion in C. elegans mitochondrial mutant nuo-6(qm200) (Yang and Hekimi, 2010), which have a slower swimming rate (frequency of thrashing) than that of the wild-type C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "c192acdb-c177-46e9-9c07-01b745df2776",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C60",
+      "claim": "Mutant and wild-type C. elegans were loaded into a 96-well plate containing liquid media and imaged using an array of 76 6 mm diameter, 72 mm focal length lenses.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant and wild-type C. elegans were loaded into a 96-well plate containing liquid media and imaged by using an array of 76 6 mm diameter, 72 mm focal length lenses positioned above each well (see Materials and methods: Configuration 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "39aeaa05-e297-4e30-a948-16ac6ce85161",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C61",
+      "claim": "Motion was quantified by measuring the fraction of pixels per frame that display a change in intensity of over 25% for 100 sequential frames captured at 15 fps/well.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of measuring thrashing frequency directly, motion was quantified by measuring the fraction of pixels per frame that display a change in intensity of over 25% for 100 sequential frames captured at 15 fps/well (see Materials and methods: Image processing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the motion quantification method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "42636f7c-21be-47d1-8071-9f4365398652",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C62",
+      "claim": "The frame rate of the camera is limited to 120 fps in the C. elegans experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In this experiment, the frame rate of the camera is limited to 120 fps (see Materials and methods: Practical considerations and Video 1), allowing us to image eight wells in parallel at 15 fps/well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "da181ca5-f0c6-49dc-b222-27082a78c2da",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C63",
+      "claim": "The system allows imaging of eight wells in parallel at 15 fps/well.",
+      "claim_type": "EXPLICIT",
+      "source": "In this experiment, the frame rate of the camera is limited to 120 fps (see Materials and methods: Practical considerations and Video 1), allowing us to image eight wells in parallel at 15 fps/well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the camera frame rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "c14ed8bb-2022-4462-8020-5ca271a7d68a",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C64",
+      "claim": "The system quantified decreased activity in nuo-6(qm200), which is consistent with published results.",
+      "claim_type": "EXPLICIT",
+      "source": "The system quantified decreased activity in nuo-6(qm200), which is consistent with published results (Yang and Hekimi, 2010; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "222b6dd0-6760-40fd-b3fa-62c886653a2e",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C65",
+      "claim": "The time needed to perform the 96-well plate assay is just over 1 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The time needed to perform this assay is just over 1 min (8000 frames/120 fps = 67 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the number of frames and frame rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "563d8563-96e9-49f5-904c-f07ab37072fe",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C66",
+      "claim": "A limitation of the current RAP implementations is that focusing individual wells is impractical when there are more than a few active samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of our current implementations of RAP is that focusing individual wells is impractical when there are more than few (i.e. four as in Figure 2) active samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "514c3c14-c970-482f-9d31-600bd83cb263",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C67",
+      "claim": "For System 2 (76 wells), the objective lenses had a depth of focus of 1 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "For System 2 (76 wells), the objective lenses had a depth of focus of 1 mm, which is sufficient tolerance to accommodate most of the wells imaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the lenses used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "59846aed-7afc-4fd1-a565-15cb42854f70",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C69",
+      "claim": "Images are noticeably blurred in about half of the wells in the 76-well experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "While we were able to resolve C. elegans and measure activity in all wells, images are noticeably blurred in about half of the wells, and in some cases, some objects in a single well are better focused than others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "4c991997-ea45-4f2a-8b6a-24bc0c72609c",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C70",
+      "claim": "The focal plane can be shifted by changing the LED colour, as single-element lenses show variations in focal length as a function of wavelength.",
+      "claim_type": "EXPLICIT",
+      "source": "This situation can be mitigated by changing the LED colour, as the single-element lenses used in our system show variations in focal length as a function of wavelength (Figure 3C and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3C and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "dfa40245-ad70-4e10-a95e-ac0295d38bf4",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C71",
+      "claim": "Optical simulations using ray tracing software confirm that the focal plane can be shifted by 0.981 \u03bcm by switching LED colour from red to blue.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical simulations using ray tracing software Configuration 2 confirm that the focal plane can be shifted by 0.981 \u03bcm by switching LED colour from red to blue (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from optical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "c9cd6016-05e4-4204-a823-5195d0ddedd0",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C72",
+      "claim": "Rapid colour switching may be used to increase data set quality at the expense of decreasing the framerate per well or the number of wells that can be imaged in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid colour switching (i.e. alternating image capture between red and blue LEDs) may be used to increase data set quality at the expense of decreasing the framerate per well (as was done in Figure 3\u2014figure supplement 1) or the number of wells that can be imaged in parallel, as twice the number of images per well are required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential strategy with a trade-off.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "cbe2debb-1d7f-47c2-a2ec-b922cb936a10",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C73",
+      "claim": "The push to develop new high-throughput screening modalities has resulted in several innovative approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The push to develop new high-throughput screening modalities (Abraham et al., 2004; Oheim, 2007) has resulted in several innovative approaches, ranging from the use of flatbed scanners for slowly varying preparations (Stroustrup et al., 2013), to wide-field methods that incorporate computational image reconstruction (Taute et al., 2015; Zheng et al., 2013), to 'on-chip' imaging systems that plate samples directly on a sensor (Zheng et al., 2011; G\u00f6r\u00f6cs and Ozcan, 2013; Cui et al., 2008; Greenbaum et al., 2012; Greenbaum et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "ad327263-a046-465e-9a16-fde0aff274d1",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C74",
+      "claim": "Methods that accommodate a biologists' typical workflow depend on automation of conventional microscopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these advances, methods that accommodate a biologists' typical workflow \u2013 for example comparing multiple experimental samples plated in different petri dishes \u2013 depend on automation of conventional microscopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "c80c8f33-08a5-485b-88a0-1231d03ff775",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C75",
+      "claim": "Automated microscopes excel at applications where data can be acquired from samples sequentially as a single high-NA objective is used.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated microscopes excel at applications where data can be acquired from samples sequentially as a single high-numerical-aperture (NA) objective is used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of automated microscopes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "4206b15a-2ba8-42b9-92df-67fec962093b",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C76",
+      "claim": "A RAP system could be built using high-NA, high-magnification optics.",
+      "claim_type": "EXPLICIT",
+      "source": "While a RAP system could be built using high-NA, high-magnification optics, this likely would require that each objective lens is independently actuatable in order to achieve focus which poses practical limits on the number of imaged wells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility with practical limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "242c704a-f998-40e0-8e2f-561711006ada",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C77",
+      "claim": "RAP systems can be used to speed up conventional imaging tasks in low-magnification settings by capturing data from different samples in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "RAP systems can be used to speed up conventional imaging tasks in low-magnification settings by capturing data from different samples in parallel (as was done in Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application with reference to Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b1c42fd9-b4e3-4262-9fed-dea72e5bbded",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C78",
+      "claim": "RAP systems are better suited for dynamic experiments where multiple continuous long-duration recordings are the primary requirement.",
+      "claim_type": "EXPLICIT",
+      "source": "RAP systems are better suited for dynamic experiments where multiple continuous long-duration recordings are the primary requirement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the primary use case for RAP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "7aa41570-99a1-4d88-af36-1a9458892900",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C79",
+      "claim": "Rhythms in cultured cardiac tissue evolve over hours or even days.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, rhythms in cultured cardiac tissue evolve over hours (Kim et al., 2009) or even days (Woo et al., 2008; Burridge et al., 2016), but display fast transitions between states (e.g. initiation or termination of re-entry Bub et al., 1998), necessitating continuous measurement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "d376ea81-f6d1-4d80-a51d-f53f68ee8b0e",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C80",
+      "claim": "Cultured cardiac tissue displays fast transitions between states, necessitating continuous measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, rhythms in cultured cardiac tissue evolve over hours (Kim et al., 2009) or even days (Woo et al., 2008; Burridge et al., 2016), but display fast transitions between states (e.g. initiation or termination of re-entry Bub et al., 1998), necessitating continuous measurement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "d9284223-34f6-457f-aa9a-d585e95e0f19",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C81",
+      "claim": "Moving between samples in cardiac tissue experiments would result in missed data.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, moving between samples would result in missed data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of conventional approaches for cardiac imaging.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "cc1233f2-c4f7-496e-a6b1-39fc98df4426",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C82",
+      "claim": "RAP overcomes the constraint of missed data by reducing transit times between samples to less than a millisecond without the use of automation or relying on a widefield imaging approach.",
+      "claim_type": "EXPLICIT",
+      "source": "RAP overcomes these constraints by reducing transit times between samples to less than a millisecond without the use of automation or relying on a widefield imaging approach, while allowing for an optimized field of view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage of RAP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "2c00a0cd-d1f2-4d3c-8bd6-54bd5c792d3f",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C83",
+      "claim": "The NA of Configuration 2 is 0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "Edmund Optics 6 mm diameter, 72 mm focal length (NA = 0.04)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "d806691b-4341-4e30-b50c-671a5d44e22a",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C84",
+      "claim": "The NA of Configuration 1 is 0.124.",
+      "claim_type": "EXPLICIT",
+      "source": "Edmund Optics 25 mm diameter, 100 mm focal length (NA = 0.124)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "ef2ee41e-e630-4dda-b981-f3bf44748977",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C85",
+      "claim": "Conventional bright-field 1\u00d7 microscope objective lenses have NAs close to that of Configuration 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional bright-field 1\u00d7 microscope objective lenses have NAs close to that of Configuration 2 (e.g. the Zeiss 1\u00d7 Plan Neofluar commercial objective has an NA of 0.025, and the Thorlabs TL1X-SAP 1\u00d7 objective has an NA of 0.03), and research stereo macroscopes have NAs close to that of Configuration 1 (e.g. the NA is 0.11 for an Olympus SZX10 at 1\u00d7), but can be higher in specialized macroscope systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with examples from commercial systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "c65fe933-75c0-4a25-8395-7ef2748a7afd",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C86",
+      "claim": "Research stereo macroscopes have NAs close to that of Configuration 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional bright-field 1\u00d7 microscope objective lenses have NAs close to that of Configuration 2 (e.g. the Zeiss 1\u00d7 Plan Neofluar commercial objective has an NA of 0.025, and the Thorlabs TL1X-SAP 1\u00d7 objective has an NA of 0.03), and research stereo macroscopes have NAs close to that of Configuration 1 (e.g. the NA is 0.11 for an Olympus SZX10 at 1\u00d7), but can be higher in specialized macroscope systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with an example from a commercial system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "04c3eca3-7792-4c77-b3f3-af59fb8e8647",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C87",
+      "claim": "A high-magnification RAP system would likely require a mechanism for finely adjusting objective heights to keep each sample in focus.",
+      "claim_type": "EXPLICIT",
+      "source": "As is the case with conventional microscope designs, a high-magnification RAP system would likely require a mechanism for finely adjusting objective heights to keep each sample in focus, as the depth of field of the objective lenses would be reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for high-magnification RAP systems.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "6573cf14-65e7-40b3-b9c2-7912eb165abd",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C88",
+      "claim": "The resolution of a RAP system is similar to conventional microscopes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the resolution of a RAP system is similar to conventional microscopes, RAP systems differ from conventional microscopes in several respects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to conventional microscopes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "9b1931d4-37e0-4543-9204-ac8f144f5c1f",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C89",
+      "claim": "Configuration 1 costs approximately $1750.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost for the RAP system depends on the number of objective lenses used: Configuration 1 costs approximately $1750, while Configuration 2 (with 76 wells) costs approximately $3,250, as the cost for the cameras in both configurations are similar (~$400).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 2 footnote.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "a3b7faf9-7f0e-4817-bfc2-18bc04d1cd0b",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C90",
+      "claim": "Configuration 2 (with 76 wells) costs approximately $3,250.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost for the RAP system depends on the number of objective lenses used: Configuration 1 costs approximately $1750, while Configuration 2 (with 76 wells) costs approximately $3,250, as the cost for the cameras in both configurations are similar (~$400).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 2 footnote.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "67c95b1b-4343-4963-b174-91dfe229bb52",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C91",
+      "claim": "Wild-type C. elegans were maintained in standard 35 mm petri dishes in 5\u20138 mm of agar seeded with E. coli for the data in Figure 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type C. elegans were maintained in standard 35 mm petri dishes in 5\u20138 mm of agar seeded with E. coli for the data in Figure 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "1c65d9ea-b1be-46b3-abb6-a521e9689f98",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C92",
+      "claim": "For Figure 3, the mitochondrial mutant nuo-6(qm200) was used along with wild-type C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "For Figure 3, the mitochondrial mutant nuo-6(qm200) (Yang and Hekimi, 2010) was used along with wild-type C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the samples used in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "a7ae640f-08ad-4a40-9afb-47d216a978f1",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C93",
+      "claim": "C. elegans were transferred to 96-well plates by washing adults off NGM plates in M9 buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, C. elegans were transferred to 96-well plates by washing adults off NGM plates in M9 buffer, washed once to remove E. coli, and resuspended in fresh M9 buffer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "859e5fb9-8561-4505-b882-d2d3fc45fdec",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C94",
+      "claim": "All experiments involving C. elegans were imaged at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments involving C. elegans were imaged at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "cc8426d9-644c-4c1b-afeb-885f6167fa06",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C95",
+      "claim": "Cardiac monolayer cultures were prepared from ventricular cells isolated from 7 day old chick embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac monolayer cultures were prepared from ventricular cells isolated from 7 day old chick embryos: cells were plated within 1 cm glass rings in 35 mm petri dishes as described in Bub et al., 1998.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation method with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "8f198c14-1d88-4d40-b0be-369d7013add6",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C96",
+      "claim": "Cardiac monolayers were imaged in a stage top incubator at 36\u00b0C and at 5% CO2 in maintenance media.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac monolayers were imaged in a stage top incubator (Okolabs) at 36\u00b0C and at 5% CO2 in maintenance media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "df33d699-18ff-4bdd-9337-71b9194b84d5",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C97",
+      "claim": "A parabolic reflector (220 mm diameter, 100 mm focal length) was mounted 300 mm above a breadboard.",
+      "claim_type": "EXPLICIT",
+      "source": "A parabolic reflector (220 mm diameter, 100 mm focal length, Edmund Optics) was mounted 300 mm above a breadboard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optical setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "3b8a6e61-043b-4593-ab0c-c91b292d7d5a",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C98",
+      "claim": "The camera sensor and electronics were positioned at the focal point of the parabola.",
+      "claim_type": "EXPLICIT",
+      "source": "The camera sensor and electronics (acA640-750um for data collection in Figure 2, acA1300-200um for data collection in Figure 3, Basler AG) were mounted in a PLA (polylactic acid) housing without a c-mount thread to allow image formation from light at oblique angles and positioned at the focal point of the parabola.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the camera positioning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b1274a5d-9536-47ca-85a2-e0e9230719c7",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C99",
+      "claim": "Biological samples were positioned 50 mm above a LED array.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological samples were positioned 50 mm above a LED array (DotStar 8 \u00d7 32 LED matrix for Figure 2 or two NeoPixel 40 LED Shields for Figure 3, Adafruit Industries).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample positioning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "7f2473b9-602f-45a8-99fd-e3a2f602cf5b",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C101",
+      "claim": "The LED array was controlled by an ATmega328P microcontroller.",
+      "claim_type": "EXPLICIT",
+      "source": "The LED array was controlled by an ATmega328P microcontroller (Arduino Uno, Arduino.cc) using the FastLED 3.2 open-source library and custom code (Source code 1 and 2, in conjunction with free Basler Pylon Viewer software) to synchronize the camera with each LED via a TTL trigger pulse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "85758cd4-7568-474e-84ba-1ecdb8ba86ad",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C102",
+      "claim": "Captured images shown in Figures 2 and 3 are cropped and rescaled.",
+      "claim_type": "EXPLICIT",
+      "source": "To offset these effects, captured images shown in Figures 2 and 3 are cropped (480 \u00d7 480 pixels for Configuration 1, and 640 \u00d7 512 for Configuration 2) and rescaled (so that maximum and minimum pixel intensity values fall between 0 and 255).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image processing applied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "5520bd7f-440e-452e-b931-62f0aba705c5",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C103",
+      "claim": "Dye-free visualization of cardiac activity is carried out by applying a running background subtraction followed by an absolute value operation on each pixel.",
+      "claim_type": "EXPLICIT",
+      "source": "Dye-free visualization of cardiac activity (Figure 2B) is carried out by applying a running background subtraction followed by an absolute value operation on each pixel:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "3bea5078-3196-4a7f-a3cc-e6ba040d5abe",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C104",
+      "claim": "Intensity vs time plots of averaged pixels in a 20 \u00d7 20 pixel region of interest show double spikes corresponding to contraction followed by relaxation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intensity vs time plots of averaged pixels in a 20 \u00d7 20 pixel region of interest show double spikes corresponding to contraction followed by relaxation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "9acf494c-1b09-4201-9b93-e229cdc4317c",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C105",
+      "claim": "Activation maps are generated as previously described by Burton et al., 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation maps (Figure 2C) are generated as previously described (Burton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "47acc36c-6b63-4400-9788-244eb8f35cfd",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C106",
+      "claim": "The camera used in Figure 2 was chosen for its high frame rate as cardiac activity requires 40 fps acquisition speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "The camera used in Figure 2 was chosen for its high frame rate as we were interested in imaging cardiac activity, which in our experience requires 40 fps acquisition speeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the camera choice for cardiac imaging.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "eb9003da-28c7-4a40-842c-5005cbac330d",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C107",
+      "claim": "The imaging scheme captures data at a maximum rate that depends on the camera as well as the system's ability to save data continuously to disk.",
+      "claim_type": "EXPLICIT",
+      "source": "The imaging scheme captures data at a maximum rate that depends on the camera as well as the system's ability to save data continuously to disk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "1577360c-a665-4459-8bc7-3c4abaa52d19",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C108",
+      "claim": "The system's hard drive is capable of continuously saving to disk at 150 MB/second.",
+      "claim_type": "EXPLICIT",
+      "source": "Our system's hard drive is capable of continuously saving to disk at 150 MB/second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data storage capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "05ab42c9-d899-47d4-9da1-05654b006a33",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C109",
+      "claim": "The camera used in Configuration 2 has a resolution of 1280 \u00d7 1024 pixels, which generates 1.25-MB images.",
+      "claim_type": "EXPLICIT",
+      "source": "The camera used in Configuration 2 has a resolution of 1280 \u00d7 1024 pixels, which generates 1.25-MB images: the 150 MB/second limit therefore imposes a sustained base frame rate of 120 fps (150 MB/second/1.25MB = 120 fps).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a calculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "0ef9a30b-fd04-4b6e-8a7b-a40f11a37885",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C110",
+      "claim": "C. elegans motion can be adequately quantified when imaging at 15 fps.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans motion can be adequately quantified when imaging at 15 fps, allowing us to image eight wells (120 fps/15 fps) in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for C. elegans imaging.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "1567a6d2-90fe-45d8-800e-5524408fcd10",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C111",
+      "claim": "A faster hard drive or RAID array would significantly increase throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "A faster hard drive (e.g. an SSD) or RAID array would significantly increase throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "abeff8f8-2096-470f-8968-323009d0650d",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C112",
+      "claim": "RAP has been validated in low-magnification, bright-field settings that have relaxed constraints relative to microscopy applications that may require high magnification with optimized resolution and high light throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that RAP has been validated in low-magnification, bright-field settings that have relaxed constraints relative to microscopy applications that may require high magnification with optimized resolution and high light throughput (e.g. fluorescence microscopy).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of validation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "bcc9a892-2ac3-4279-b763-ccf45a5471a0",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C113",
+      "claim": "The designs aim to maximize the number of independent samples that can be imaged in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, our designs aim to maximize the number of independent samples that can be imaged in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design goal.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "71cfcaba-b6a4-4d49-9f8e-5486f573f05b",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C114",
+      "claim": "The designs opt to use inexpensive components and minimize the device's footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore opt to use inexpensive components and minimize the device's footprint, allowing us to either increase the number of samples captured by a single system or alternatively \u2013 as large parabolic reflectors may not be practical in a lab setting \u2013 duplicate the system to increase total capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design philosophy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "0b62b57d-ba11-4593-a5a7-caa83dc3aa63",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C115",
+      "claim": "The use of low-magnification optics in the current implementation is not a defining property of RAP.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of low-magnification optics in our current implementation is not a defining property of RAP, as higher NA, high-magnification optics could be used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies that RAP is not limited to low magnification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b3c115c3-53f5-4af5-bd5e-1953784c8bf8",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C116",
+      "claim": "The choice of the objective lenses in the RAP microscope is not limited by the parabolic mirror.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same way that the objective lens is not limited by the tube lens in a conventional microscope, the choice of the objective lenses in the RAP microscope is not limited by the parabolic mirror.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an analogy to conventional microscopes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "0954f243-0a03-4dc2-bb26-e1821f1e3129",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C117",
+      "claim": "The NA of the implementations described are consistent with other low-magnification systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The NA (and resolving power) of the implementations described above to demonstrate RAP microscopy are consistent with other low-magnification systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to other systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "d0ab4af9-481a-48d9-8bf4-5f1285108596",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C118",
+      "claim": "To validate the optical model, an opaque grid with a 200 \u03bcm pitch was used as a test sample.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate the optical model of the imaging system (Equations 1 and 2), an opaque grid with a 200 \u03bcm pitch (#58607, Edmund Optics) was used as a test sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "384d1a53-07d5-489a-a8ec-a7a13d15a447",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C119",
+      "claim": "Rescaling the images by the factor given in Equation 1 recovers the image of the square grid.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescaling the images by the factor given in Equation 1 recovers the image of the square grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "615bb63f-bb12-4e76-8790-e5fb258bb1f9",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C120",
+      "claim": "To compare the performance of RAP to a conventional on-axis imaging system, the parabolic mirror was replaced by a plano-convex lens with the same 100 mm focal length.",
+      "claim_type": "EXPLICIT",
+      "source": "To compare the performance of RAP (Configuration 1) to a conventional on-axis imaging system, the parabolic mirror was replaced by a plano-convex lens with the same 100 mm focal length and aligned co-axially with the objective lens and sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the comparison method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "ce5adf77-bda8-427d-8f01-39bb5190670a",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C121",
+      "claim": "A qualitative comparison of images of a US Air Force chart showed that image resolution degradation in the RAP system is relatively modest for small (<40 mm) axial distances.",
+      "claim_type": "EXPLICIT",
+      "source": "A qualitative comparison of images of a US Air Force chart showed that image resolution degradation in the RAP system, caused by off-axis aberrations in the parabolic mirror, is relatively modest for small (<40 mm) axial distances (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "682c11c0-741d-418a-b7a5-50dab1321cf1",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C122",
+      "claim": "The intensity contrast was used to infer the lateral extent of the optical PSF by comparison to a computational model.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensity contrast (the ratio of the darkest region in the gridline to the intensity in the adjacent transmissive region) was used to infer the lateral extent of the optical point spread function (PSF) by comparison to a computational model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b4f59170-00ab-4b98-95ce-c32c67ef5667",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C124",
+      "claim": "Estimated lateral PSF widths varied from 13.4 to 21.6 microns over the full range of axial distances used in the 96-well experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated lateral PSF widths varied from 13.4 to 21.6 microns over the full range of axial distances used in the 96-well experiment, with performance falling as a function of axial distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "53db2223-fc7a-47db-a2d5-ee86404484b9",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C125",
+      "claim": "Performance falls as a function of axial distance in the 96-well experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated lateral PSF widths varied from 13.4 to 21.6 microns over the full range of axial distances used in the 96-well experiment, with performance falling as a function of axial distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "9ecb379e-2e15-405c-8b63-58e6d9797853",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C126",
+      "claim": "The chromatic focal shift observed in the experiments was confirmed using optical simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatic focal shift observed in the experiments was confirmed using optical simulations (Zemax OpticStudio 18.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b33ee9ef-7adb-4e7c-94e3-b0fc302c6eba",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C127",
+      "claim": "For the plano-convex lens used in Configuration 2, the focal shift was found to be 981 \u03bcm when switching from a red (622 nm) to blue (469 nm) LED.",
+      "claim_type": "EXPLICIT",
+      "source": "For the plano-convex lens used in Configuration 2 (Edmund Optics #45\u2013696), this focal shift was found to be 981 \u03bcm when switching from a red (622 nm) to blue (469 nm) LED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from optical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "d3407d4c-84db-4f15-9319-d2e877425de4",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C128",
+      "claim": "The RAP system was demonstrated by continuously imaging multiple cardiac monolayer and C. elegans preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "The system is demonstrated by continuously imaging multiple cardiac monolayer and Caenorhabditis elegans preparations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "e385ccdd-f063-4b89-b3a2-eadd884420c4",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "claim_id": "C129",
+      "claim": "The RAP system detected significant differences between wild-type and nuo-6(qm200) C. elegans strains (two-tailed t-test p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "This estimate confirms that the imaging system can detect significant differences between the two strains (averages shown by diamond and square symbols, two-tailed t-test p=0.01), which is consistent with published results (Yang and Hekimi, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B with statistical analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "75c7ce6a-7176-48dc-99be-3a5e3845597b",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The RAP system uses a parabolic reflector and objective lenses positioned at focal distances above samples, with LED arrays sequentially illuminating samples to generate images captured by a single camera at the reflector's focal point. The system achieves sub-millisecond exposure times and can rapidly switch between samples without moving parts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C14, C18-C26 collectively describe the core optical design and hardware implementation of the RAP system. The design is well-documented with specific component details (C18-C20), optical configuration (C21-C22), and performance characteristics (C23). Figure 1A provides visual confirmation of the system architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "57175999-e647-47cb-9e08-06bf68f7968f",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The RAP system enables near-simultaneous imaging of multiple samples with sub-millisecond switching times, with frame rates limited only by camera speed or data storage capacity. The system can trade off number of samples for frame rate (e.g., 50 dishes at 10 fps or 2 dishes at 250 fps with a 500 fps camera).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C15-C17, C27-C29 describe the temporal performance of the RAP system. The sub-millisecond switching claim (C3) is supported by the fast LED switching capability (C15, C20). The frame rate trade-off examples (C28-C29) are mathematically consistent and demonstrated in Figure 1B. However, the specific 500 fps camera examples are theoretical calculations rather than empirically demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The RAP design mitigates off-axis aberrations through transillumination and collimation, resulting in mostly collimated light being refocused by the parabolic mirror. Images undergo geometric transformations (stretch and magnification variation) that can be corrected through post-processing using equations derived from geometric optics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C35-C38, C41-C43, C118-C119 describe the optical principles and image correction methods. The aberration mitigation strategy (C33) is explained theoretically. The geometric transformations are mathematically described with equations provided in the text. Validation using a 200 \u03bcm pitch grid (C118-C119) confirms the correction model works in practice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b3f782a1-3050-440d-a15f-131b2b2a3692",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The RAP system successfully imaged four cardiac monolayer preparations in parallel at 40 fps per dish, tracking motion through intensity changes and generating activation maps showing conduction velocity and wave direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55, C91, C95-C96, C103-C106, C128 describe the cardiac imaging demonstration. The experimental setup is well-documented (C95-C96), the imaging parameters are specified (C52), and the analysis methods are cited (C53, C103, C105). Figure 2A-C provides visual evidence of the results including temporal dynamics and activation maps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "4d57cd2b-b0ac-4f68-8545-5c1963f1d1a7",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The RAP system imaged C. elegans in four dishes at 15 fps over 5 minutes, with motion paths extractable using open-source software packages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57, C91, C94, C128 describe the C. elegans imaging demonstration. The experimental conditions are specified (C91, C94), imaging parameters are stated (C56), and Figure 2D-F shows the results including motion tracking. The claim about extracting motion paths using open-source software (C57) is demonstrated but the specific software is not validated in this work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The RAP system validated its utility for high-throughput screening by measuring motion differences between wild-type and nuo-6(qm200) C. elegans mutants in a 96-well plate, detecting significant differences (p=0.01) in approximately 67 seconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C65, C92-C93, C129 describe the validation experiment. The experimental design is clearly specified (C60-C61), statistical analysis is provided (C129), and results are consistent with published data (C64). Figure 3B shows the quantitative comparison. The motion quantification method (C61) is indirect but appropriate for the system's capabilities. The time calculation (C65) is mathematically correct.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "b472a46d-ef7c-42e6-9276-d4fc074b6db2",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A limitation of the RAP system is difficulty focusing individual wells when imaging many samples, with images noticeably blurred in about half of 76 wells. This can be partially mitigated by chromatic focal shifting using different LED colors (981 \u03bcm shift from red to blue), though at the cost of reduced frame rate or sample number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67, C69-C72, C126-C127 honestly describe system limitations and mitigation strategies. The focusing limitation (C66, C69) is clearly stated with quantitative assessment. The chromatic focal shift solution (C70-C71) is supported by both experimental observation (Figure 3C, Video 2) and optical simulations (C126-C127). The trade-offs of the mitigation strategy (C72) are appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "859110b1-0b8f-4172-a9dd-7096221ad7eb",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison to conventional on-axis imaging showed that RAP system resolution degradation from off-axis aberrations is relatively modest for small axial distances (<40 mm), with estimated lateral PSF widths varying from 13.4 to 21.6 microns over the full range of axial distances in the 96-well experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C120-C122, C124-C125 describe optical performance characterization. The comparison method is appropriate (C120), qualitative assessment is shown in Figure 1\u2014figure supplement 2 (C121), and quantitative PSF analysis is provided (C122, C124). The performance degradation with axial distance (C125) is documented in Table 3. However, the comparison is qualitative for the USAF chart and the PSF estimation relies on a computational model rather than direct measurement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "d7458842-f5fa-4461-8b86-6b8c63420c69",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The RAP system addresses a key limitation of conventional microscopy by enabling continuous long-duration recordings from spatially separated samples, which is particularly important for dynamic experiments like cardiac tissue imaging where rhythms evolve over hours/days but display fast transitions requiring continuous measurement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C10-C11, C50-C51, C78-C82 articulate the motivation and application niche for RAP. The limitation of conventional systems (C10-C11, C51) is well-established. The cardiac tissue example (C79-C80) is supported by citations. The claim that RAP enables what conventional systems cannot (C4, C82) is supported by the demonstrated capabilities, though the absolute statement may be overstated as some specialized systems might achieve similar goals through different means.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "cca6cdf6-9a94-4721-a930-3288cd39a0c8",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Conventional multi-sample imaging modalities require sample or system movement (which is mechanically complex and slow) or use wide-field approaches (which have poor light collection efficiency and resolution).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 characterize limitations of conventional approaches. These are supported by citations (C5-C7) and represent generally accepted knowledge in the field (C8-C9). However, the characterizations are somewhat broad and may not apply equally to all conventional systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "a4c9dcd6-c632-4a3d-bb90-8bb4810a250e",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Parabolic mirrors offer high NA and large field of view but introduce off-axis aberrations that have limited their use to niche applications requiring compromises like restricting imaging to the focal region with stage scanning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 provide background on parabolic mirrors in imaging. These are supported by citations to prior work (C31-C32) and represent established knowledge. This contextualizes why the RAP approach is novel.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "4093ebc8-414e-470f-98e2-34f37a82df3e",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cardiac monolayer preparations and C. elegans are important model systems for studying arrhythmogenesis and aging/biological clocks respectively, with applications in personalized medicine screening and neuroprotective compound screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 provide biological context for the applications. These are well-supported by citations to prior work and represent established knowledge in the field. This justifies the choice of model systems for demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "81042736-0c0a-48cf-8c2d-e898d63939fc",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Despite innovative high-throughput screening approaches, methods accommodating typical biological workflows depend on automated conventional microscopes. While RAP could use high-NA optics, this would require independently actuatable objectives, limiting well numbers. RAP can speed up low-magnification tasks by parallel imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 discuss the context and positioning of RAP relative to other approaches. The characterization of the field (C73-C74) is supported by citations. The discussion of RAP's potential and limitations (C76-C77) is appropriately speculative and acknowledges trade-offs. The comparison to automated microscopes (C75) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "759e7cbe-eb57-49fe-957d-ecf3d6bd32c3",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The NA of RAP configurations (0.04 and 0.124) are comparable to conventional 1\u00d7 microscope objectives and stereo macroscopes, with resolution similar to conventional microscopes at these magnifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86, C88, C117 compare RAP optical performance to conventional systems. The NA values are stated in Table 1 (C83-C84) and comparisons to commercial systems are provided with specific examples (C85-C86). The resolution comparison (C88) is supported by the optical characterization data. This appropriately contextualizes RAP performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "0ec2cf39-c1e1-463d-ac81-bf4e3e7b99df",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Configuration 1 costs approximately $1,750 and Configuration 2 costs approximately $3,250.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 provide cost information stated in Table 2. These are straightforward factual claims about the prototype costs. The low cost is a notable advantage of the system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "a2eea7dd-9685-42fe-8f88-ce8d399f353d",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The optical setup uses a 220 mm diameter, 100 mm focal length parabolic reflector mounted 300 mm above a breadboard, with the camera at the focal point and samples 50 mm above LED arrays. Images are cropped and rescaled for presentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99, C101-C102 provide detailed hardware specifications. These are straightforward descriptions of the experimental setup with specific measurements and component details. The image processing (C102) is standard practice for presentation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "6f9bc154-c581-49a5-a48f-3fc012d1d9fa",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The imaging system's maximum data capture rate is limited by camera frame rate and disk write speed (150 MB/s), resulting in a 120 fps base rate for the 1280\u00d71024 camera. C. elegans motion can be adequately quantified at 15 fps, allowing 8 parallel wells. Faster storage would increase throughput.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C111 describe practical performance limitations. The calculations are mathematically correct (C109) and the frame rate requirements are stated based on experience (C110). The disk speed limitation (C108) is a practical constraint. The suggestion for improvement (C111) is reasonable speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "869eea28-6190-4d7d-b239-4cac1b304531",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "RAP has been validated in low-magnification, bright-field settings with relaxed constraints. The design aims to maximize parallel sample imaging using inexpensive components with minimal footprint. Low-magnification optics are not a defining property of RAP, as the objective lens choice is not limited by the parabolic mirror.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C116 appropriately scope the validation and discuss design philosophy. The acknowledgment of validation scope (C112) is honest. The design goals (C113-C114) are clearly stated. The clarification that RAP is not inherently limited to low magnification (C115-C116) is important for understanding the technology's potential, though high-magnification implementations are not demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "955aedc1-8566-4a41-a4ed-2e02500850a4",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The illumination by a partially spatially coherent source produces greyscale images, with intensity changes being the measurement of interest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 describes the imaging modality with citation support. This is a straightforward characterization of the image formation mechanism appropriate for the bright-field approach used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    },
+    {
+      "id": "8f5fc278-dcb8-4182-8b1c-bc15b9e6bfb2",
+      "content_id": "5a62b347-6c48-4dea-953b-094f965c2a91",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "A high-magnification RAP system would likely require a mechanism for finely adjusting objective heights to maintain focus due to reduced depth of field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 is speculative about future high-magnification implementations. While the reasoning is sound (reduced depth of field at high magnification requires better focus control), this is not demonstrated or validated. The claim is appropriately hedged with 'likely would require.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:57.436608Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf93cdf4-15f8-46bc-9bba-f8a316026f03",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "a885a184-009b-4f47-bd42-ab16d90aadac",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "f15d2248-ca5f-4d6f-afcd-047491a669a6",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "017f4704-bf9f-43ef-9a3e-baa6327d4ece",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "b50fa578-b827-489f-bc37-d02a17968ac5",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "f0879478-3814-43ee-a69f-debd84670e26",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "98f1cf89-ad40-47c2-a61e-82b13a0619c3",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "7256de46-bcc9-44b8-8fc8-560ba878ff3b",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "4cae8e92-1463-46fc-bab1-332c1e516ee7",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "0b516203-c0e1-4624-b372-4484f9aa6d18",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "cc17d805-ae2d-4328-ac2e-4fd27b93d6a0",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "d061273b-8562-4ac5-a6fd-6925a14651d4",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "daad6f48-cfea-4fe2-b6c4-e57d4840a7c0",
+      "result_id": "75c7ce6a-7176-48dc-99be-3a5e3845597b"
+    },
+    {
+      "claim_id": "277afc37-9c10-41eb-96d9-3064d4109ff0",
+      "result_id": "57175999-e647-47cb-9e08-06bf68f7968f"
+    },
+    {
+      "claim_id": "8d30f726-809d-4e41-9650-88dfccd0d709",
+      "result_id": "57175999-e647-47cb-9e08-06bf68f7968f"
+    },
+    {
+      "claim_id": "428dafc0-54f2-46ed-a943-702fa9d2a748",
+      "result_id": "57175999-e647-47cb-9e08-06bf68f7968f"
+    },
+    {
+      "claim_id": "b122bdb8-b5e3-4584-b030-1e3d6ad9e2bd",
+      "result_id": "57175999-e647-47cb-9e08-06bf68f7968f"
+    },
+    {
+      "claim_id": "85ec8ae0-7dde-4e60-8fd9-2484c3632c68",
+      "result_id": "57175999-e647-47cb-9e08-06bf68f7968f"
+    },
+    {
+      "claim_id": "f9116dda-b0c2-4b8f-ab9d-8ee00235eff6",
+      "result_id": "57175999-e647-47cb-9e08-06bf68f7968f"
+    },
+    {
+      "claim_id": "8a595a7c-9599-463a-ac4e-37f354af55ce",
+      "result_id": "57175999-e647-47cb-9e08-06bf68f7968f"
+    },
+    {
+      "claim_id": "8207a53d-59dc-4215-a224-7e11b7b5dc24",
+      "result_id": "57175999-e647-47cb-9e08-06bf68f7968f"
+    },
+    {
+      "claim_id": "66b9ece2-7da8-40fb-a0f7-5b4364bfb748",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "88ef96cd-f8e3-4050-b984-dcf9fc4bf2f9",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "b13348a6-91a5-4225-9484-35dff9d5772b",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "58cec914-d8e6-4e14-a9dd-b13285853303",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "3e45f9bd-a183-49a2-a9d6-ba62bb4950f2",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "e5f9b286-0f36-4463-bccc-ff0cc3087d58",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "259dbd36-f0f4-456e-b6cd-da6142fc70cb",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "c354cdee-a867-4fb1-80a5-a8acf955f776",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "d0ab4af9-481a-48d9-8bf4-5f1285108596",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "384d1a53-07d5-489a-a8ec-a7a13d15a447",
+      "result_id": "b6aedb29-2f16-4bcf-a0bb-25a38216ddc2"
+    },
+    {
+      "claim_id": "2a34aaf1-b12f-4fce-a197-257d777fd5d2",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "6e490199-0050-4dac-ba52-01c419a285a3",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "cd53ee68-d195-42c6-9d66-372dd5918b25",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "e09a4858-c0ba-4bef-abde-910a45bc109c",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "67c95b1b-4343-4963-b174-91dfe229bb52",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "cc8426d9-644c-4c1b-afeb-885f6167fa06",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "8f198c14-1d88-4d40-b0be-369d7013add6",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "5520bd7f-440e-452e-b931-62f0aba705c5",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "3bea5078-3196-4a7f-a3cc-e6ba040d5abe",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "9acf494c-1b09-4201-9b93-e229cdc4317c",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "47acc36c-6b63-4400-9788-244eb8f35cfd",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "d3407d4c-84db-4f15-9319-d2e877425de4",
+      "result_id": "b3f782a1-3050-440d-a15f-131b2b2a3692"
+    },
+    {
+      "claim_id": "6c4b35ef-06df-4078-b0fb-efcebf5c803e",
+      "result_id": "4d57cd2b-b0ac-4f68-8545-5c1963f1d1a7"
+    },
+    {
+      "claim_id": "3b103314-0050-43c6-bac2-b772a66b6045",
+      "result_id": "4d57cd2b-b0ac-4f68-8545-5c1963f1d1a7"
+    },
+    {
+      "claim_id": "67c95b1b-4343-4963-b174-91dfe229bb52",
+      "result_id": "4d57cd2b-b0ac-4f68-8545-5c1963f1d1a7"
+    },
+    {
+      "claim_id": "859e5fb9-8561-4505-b882-d2d3fc45fdec",
+      "result_id": "4d57cd2b-b0ac-4f68-8545-5c1963f1d1a7"
+    },
+    {
+      "claim_id": "d3407d4c-84db-4f15-9319-d2e877425de4",
+      "result_id": "4d57cd2b-b0ac-4f68-8545-5c1963f1d1a7"
+    },
+    {
+      "claim_id": "aa06a4e5-3787-49cc-9d93-b31cd63c563a",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "187b1b0d-71a2-4304-869e-3a75e3960b97",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "c192acdb-c177-46e9-9c07-01b745df2776",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "39aeaa05-e297-4e30-a948-16ac6ce85161",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "42636f7c-21be-47d1-8071-9f4365398652",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "da181ca5-f0c6-49dc-b222-27082a78c2da",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "c14ed8bb-2022-4462-8020-5ca271a7d68a",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "222b6dd0-6760-40fd-b3fa-62c886653a2e",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "1c65d9ea-b1be-46b3-abb6-a521e9689f98",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "a7ae640f-08ad-4a40-9afb-47d216a978f1",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "e385ccdd-f063-4b89-b3a2-eadd884420c4",
+      "result_id": "c4154fc9-f183-47eb-893f-a6eb6d783cc4"
+    },
+    {
+      "claim_id": "563d8563-96e9-49f5-904c-f07ab37072fe",
+      "result_id": "b472a46d-ef7c-42e6-9276-d4fc074b6db2"
+    },
+    {
+      "claim_id": "514c3c14-c970-482f-9d31-600bd83cb263",
+      "result_id": "b472a46d-ef7c-42e6-9276-d4fc074b6db2"
+    },
+    {
+      "claim_id": "59846aed-7afc-4fd1-a565-15cb42854f70",
+      "result_id": "b472a46d-ef7c-42e6-9276-d4fc074b6db2"
+    },
+    {
+      "claim_id": "4c991997-ea45-4f2a-8b6a-24bc0c72609c",
+      "result_id": "b472a46d-ef7c-42e6-9276-d4fc074b6db2"
+    },
+    {
+      "claim_id": "dfa40245-ad70-4e10-a95e-ac0295d38bf4",
+      "result_id": "b472a46d-ef7c-42e6-9276-d4fc074b6db2"
+    },
+    {
+      "claim_id": "c9cd6016-05e4-4204-a823-5195d0ddedd0",
+      "result_id": "b472a46d-ef7c-42e6-9276-d4fc074b6db2"
+    },
+    {
+      "claim_id": "9ecb379e-2e15-405c-8b63-58e6d9797853",
+      "result_id": "b472a46d-ef7c-42e6-9276-d4fc074b6db2"
+    },
+    {
+      "claim_id": "b33ee9ef-7adb-4e7c-94e3-b0fc302c6eba",
+      "result_id": "b472a46d-ef7c-42e6-9276-d4fc074b6db2"
+    },
+    {
+      "claim_id": "615bb63f-bb12-4e76-8790-e5fb258bb1f9",
+      "result_id": "859110b1-0b8f-4172-a9dd-7096221ad7eb"
+    },
+    {
+      "claim_id": "ce5adf77-bda8-427d-8f01-39bb5190670a",
+      "result_id": "859110b1-0b8f-4172-a9dd-7096221ad7eb"
+    },
+    {
+      "claim_id": "682c11c0-741d-418a-b7a5-50dab1321cf1",
+      "result_id": "859110b1-0b8f-4172-a9dd-7096221ad7eb"
+    },
+    {
+      "claim_id": "b4f59170-00ab-4b98-95ce-c32c67ef5667",
+      "result_id": "859110b1-0b8f-4172-a9dd-7096221ad7eb"
+    },
+    {
+      "claim_id": "53db2223-fc7a-47db-a2d5-ee86404484b9",
+      "result_id": "859110b1-0b8f-4172-a9dd-7096221ad7eb"
+    },
+    {
+      "claim_id": "671aefd1-86ad-4782-bafb-ac21e244eb44",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "85ae3c2c-3afb-416b-88c1-bc5e50b58867",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "3b404297-7c28-4672-bc9c-c5cdf2a74230",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "e758f573-8a8f-4f67-96df-091ba95e23b6",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "4d54bc0d-ad59-4e24-b7df-5bf7cd587985",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "b1c42fd9-b4e3-4262-9fed-dea72e5bbded",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "7aa41570-99a1-4d88-af36-1a9458892900",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "d376ea81-f6d1-4d80-a51d-f53f68ee8b0e",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "d9284223-34f6-457f-aa9a-d585e95e0f19",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "cc1233f2-c4f7-496e-a6b1-39fc98df4426",
+      "result_id": "d7458842-f5fa-4461-8b86-6b8c63420c69"
+    },
+    {
+      "claim_id": "086d7ff3-855c-4ff1-9178-942b025da312",
+      "result_id": "cca6cdf6-9a94-4721-a930-3288cd39a0c8"
+    },
+    {
+      "claim_id": "1fc960a4-03d9-4485-ba8a-dc1d5d664a71",
+      "result_id": "cca6cdf6-9a94-4721-a930-3288cd39a0c8"
+    },
+    {
+      "claim_id": "7855cc41-162e-40b2-9c35-0382f8194112",
+      "result_id": "cca6cdf6-9a94-4721-a930-3288cd39a0c8"
+    },
+    {
+      "claim_id": "45d20017-8975-4acf-89b4-6f33ca72426a",
+      "result_id": "cca6cdf6-9a94-4721-a930-3288cd39a0c8"
+    },
+    {
+      "claim_id": "b5cc5722-7e27-46b6-87b0-ec5b68388909",
+      "result_id": "cca6cdf6-9a94-4721-a930-3288cd39a0c8"
+    },
+    {
+      "claim_id": "e9a0e833-efa8-44ea-922f-201050211442",
+      "result_id": "a4c9dcd6-c632-4a3d-bb90-8bb4810a250e"
+    },
+    {
+      "claim_id": "8b1cc925-80be-4b8f-ac5e-d8106cfe8638",
+      "result_id": "a4c9dcd6-c632-4a3d-bb90-8bb4810a250e"
+    },
+    {
+      "claim_id": "cae77185-a81b-4177-9cb4-9af05ad97836",
+      "result_id": "a4c9dcd6-c632-4a3d-bb90-8bb4810a250e"
+    },
+    {
+      "claim_id": "12c9fd47-b204-4da8-9799-27cffcb2df26",
+      "result_id": "4093ebc8-414e-470f-98e2-34f37a82df3e"
+    },
+    {
+      "claim_id": "ac19eb3d-ae92-4be0-9499-d572e4c503ad",
+      "result_id": "4093ebc8-414e-470f-98e2-34f37a82df3e"
+    },
+    {
+      "claim_id": "0597cf3a-e1bd-434b-8390-bcf60c38d867",
+      "result_id": "4093ebc8-414e-470f-98e2-34f37a82df3e"
+    },
+    {
+      "claim_id": "5075d6bc-97e6-4c57-92dd-b83b7cef80bc",
+      "result_id": "4093ebc8-414e-470f-98e2-34f37a82df3e"
+    },
+    {
+      "claim_id": "cbe2debb-1d7f-47c2-a2ec-b922cb936a10",
+      "result_id": "81042736-0c0a-48cf-8c2d-e898d63939fc"
+    },
+    {
+      "claim_id": "ad327263-a046-465e-9a16-fde0aff274d1",
+      "result_id": "81042736-0c0a-48cf-8c2d-e898d63939fc"
+    },
+    {
+      "claim_id": "c80c8f33-08a5-485b-88a0-1231d03ff775",
+      "result_id": "81042736-0c0a-48cf-8c2d-e898d63939fc"
+    },
+    {
+      "claim_id": "4206b15a-2ba8-42b9-92df-67fec962093b",
+      "result_id": "81042736-0c0a-48cf-8c2d-e898d63939fc"
+    },
+    {
+      "claim_id": "242c704a-f998-40e0-8e2f-561711006ada",
+      "result_id": "81042736-0c0a-48cf-8c2d-e898d63939fc"
+    },
+    {
+      "claim_id": "2c00a0cd-d1f2-4d3c-8bd6-54bd5c792d3f",
+      "result_id": "759e7cbe-eb57-49fe-957d-ecf3d6bd32c3"
+    },
+    {
+      "claim_id": "d806691b-4341-4e30-b50c-671a5d44e22a",
+      "result_id": "759e7cbe-eb57-49fe-957d-ecf3d6bd32c3"
+    },
+    {
+      "claim_id": "ef2ee41e-e630-4dda-b981-f3bf44748977",
+      "result_id": "759e7cbe-eb57-49fe-957d-ecf3d6bd32c3"
+    },
+    {
+      "claim_id": "c65fe933-75c0-4a25-8395-7ef2748a7afd",
+      "result_id": "759e7cbe-eb57-49fe-957d-ecf3d6bd32c3"
+    },
+    {
+      "claim_id": "6573cf14-65e7-40b3-b9c2-7912eb165abd",
+      "result_id": "759e7cbe-eb57-49fe-957d-ecf3d6bd32c3"
+    },
+    {
+      "claim_id": "0954f243-0a03-4dc2-bb26-e1821f1e3129",
+      "result_id": "759e7cbe-eb57-49fe-957d-ecf3d6bd32c3"
+    },
+    {
+      "claim_id": "9b1931d4-37e0-4543-9204-ac8f144f5c1f",
+      "result_id": "0ec2cf39-c1e1-463d-ac81-bf4e3e7b99df"
+    },
+    {
+      "claim_id": "a3b7faf9-7f0e-4817-bfc2-18bc04d1cd0b",
+      "result_id": "0ec2cf39-c1e1-463d-ac81-bf4e3e7b99df"
+    },
+    {
+      "claim_id": "df33d699-18ff-4bdd-9337-71b9194b84d5",
+      "result_id": "a2eea7dd-9685-42fe-8f88-ce8d399f353d"
+    },
+    {
+      "claim_id": "3b8a6e61-043b-4593-ab0c-c91b292d7d5a",
+      "result_id": "a2eea7dd-9685-42fe-8f88-ce8d399f353d"
+    },
+    {
+      "claim_id": "b1274a5d-9536-47ca-85a2-e0e9230719c7",
+      "result_id": "a2eea7dd-9685-42fe-8f88-ce8d399f353d"
+    },
+    {
+      "claim_id": "7f2473b9-602f-45a8-99fd-e3a2f602cf5b",
+      "result_id": "a2eea7dd-9685-42fe-8f88-ce8d399f353d"
+    },
+    {
+      "claim_id": "85758cd4-7568-474e-84ba-1ecdb8ba86ad",
+      "result_id": "a2eea7dd-9685-42fe-8f88-ce8d399f353d"
+    },
+    {
+      "claim_id": "eb9003da-28c7-4a40-842c-5005cbac330d",
+      "result_id": "6f9bc154-c581-49a5-a48f-3fc012d1d9fa"
+    },
+    {
+      "claim_id": "1577360c-a665-4459-8bc7-3c4abaa52d19",
+      "result_id": "6f9bc154-c581-49a5-a48f-3fc012d1d9fa"
+    },
+    {
+      "claim_id": "05ab42c9-d899-47d4-9da1-05654b006a33",
+      "result_id": "6f9bc154-c581-49a5-a48f-3fc012d1d9fa"
+    },
+    {
+      "claim_id": "0ef9a30b-fd04-4b6e-8a7b-a40f11a37885",
+      "result_id": "6f9bc154-c581-49a5-a48f-3fc012d1d9fa"
+    },
+    {
+      "claim_id": "1567a6d2-90fe-45d8-800e-5524408fcd10",
+      "result_id": "6f9bc154-c581-49a5-a48f-3fc012d1d9fa"
+    },
+    {
+      "claim_id": "abeff8f8-2096-470f-8968-323009d0650d",
+      "result_id": "869eea28-6190-4d7d-b239-4cac1b304531"
+    },
+    {
+      "claim_id": "bcc9a892-2ac3-4279-b763-ccf45a5471a0",
+      "result_id": "869eea28-6190-4d7d-b239-4cac1b304531"
+    },
+    {
+      "claim_id": "71cfcaba-b6a4-4d49-9f8e-5486f573f05b",
+      "result_id": "869eea28-6190-4d7d-b239-4cac1b304531"
+    },
+    {
+      "claim_id": "0b62b57d-ba11-4593-a5a7-caa83dc3aa63",
+      "result_id": "869eea28-6190-4d7d-b239-4cac1b304531"
+    },
+    {
+      "claim_id": "b3c115c3-53f5-4af5-bd5e-1953784c8bf8",
+      "result_id": "869eea28-6190-4d7d-b239-4cac1b304531"
+    },
+    {
+      "claim_id": "c49ba499-1c5e-482d-addc-87a89992c3d9",
+      "result_id": "955aedc1-8566-4a41-a4ed-2e02500850a4"
+    },
+    {
+      "claim_id": "04c3eca3-7792-4c77-b3f3-af59fb8e8647",
+      "result_id": "8f5fc278-dcb8-4182-8b1c-bc15b9e6bfb2"
+    }
+  ],
+  "comparisons": []
+}

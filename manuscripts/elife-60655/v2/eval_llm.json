@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C109"
+    ],
+    "result": "MSHA pili are evenly distributed along the cell length with 3-7 pili per cell (most frequently 4), and the number of pili shows a linear relationship with cell length, indicating constant length density. Typical pili are 0.4-1.2 \u03bcm in length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 and C109 are well-supported by direct fluorescence imaging, 3D reconstruction, and statistical analysis of 110-368 cells shown in Figures 1b-c. The quantitative measurements and linear correlation analysis provide strong evidence for the distribution pattern and size characteristics of MSHA pili.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C96"
+    ],
+    "result": "Under the experimental conditions used, MSHA pili growth was observed but no retraction events were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C96 are supported by direct observation from double-color labeling experiments (Figure 1\u2014figure supplement 3) and the absence of gradual cell body fluorescence that would indicate pilin internalization. The negative result is appropriately qualified to the specific experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Wild-type V. cholerae in LB+MC exhibits both roaming (Rg=19.5 \u03bcm, speed=1.7 \u03bcm/s) and orbiting (Rg=1.6 \u03bcm, speed=1.1 \u03bcm/s) behaviors, with both phenotypes making momentary pauses where speed slows down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are well-supported by quantitative tracking data shown in Figure 2 and Videos 1-2. The measurements of radius of gyration and speed are directly obtained from cell trajectories, and the pauses are clearly visible in 3D speed plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "MSHA pili act as a brake by transiently attaching to surfaces, causing momentary pauses. Pili can stretch during attachment and different pili dynamically switch as attachment points during cell body rotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are strongly supported by direct fluorescence visualization showing pili-surface contact, stretching, and dynamic switching (Figure 2e, Figure 2\u2014figure supplement 2, Videos 2-3). This provides the first direct observational evidence for the braking mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "When adhesion is sufficiently strong, a single anchoring MSHA pilus can deflect cell trajectory into circular motion. The estimated upper bound force on the pilus is ~50 pN in LB+MC and ~3 pN in water, both below the 100 pN force pili can sustain. This anchoring eventually leads to irreversible attachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by direct observation (Video 4) and theoretical force calculations using resistive force theory. The force estimates are reasonable given the measured viscosity and rotation rates, though they represent upper bounds. The comparison with known pili force tolerance validates the plausibility of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The landing process includes three phases: running (cells swim with roaming/orbiting), lingering (paused or tethered states), and attaching (motionless on surface). Flagellum-cell body misalignments change motion direction, and upon attachment some pili attach firmly while others fluctuate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are well-supported by systematic observation and classification of cell behavior patterns shown in Figure 3a and Videos 5-6. The three-phase model is clearly demonstrated through tracking individual cells through the complete landing sequence with simultaneous visualization of pili and flagellum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Transitions occur between running and lingering phases. The running phase has higher probability of transitioning to paused state (~78%) than tethered state (~22%). The tethered state shows similar transition probabilities to running (45%) and paused (55%) states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by quantitative analysis of 666 transition events shown in Figure 3c. The conditional probability measurements provide statistical characterization of the landing dynamics, though the sample size and statistical significance testing could be more explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In the running phase, cell body rotation period is distributed between 0.25-2 s (centered at ~0.7 s, rate ~1.5 Hz) in LB+MC. Swimming speed linearly increases with rotation rate with slope |v/\u03c9c|=2.48\u00b10.04 \u03bcm/radian.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are well-supported by statistical analysis of 416 rotation events from 54 cells (Figure 4a) and linear fitting of speed vs. rotation rate data from 47 cells (Figure 4b). The linear relationship is clearly demonstrated with quantified slope and error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Tethered cells perform circular motion around the attachment point with direction switching between CCW and CW. Angular velocity is roughly constant during each interval. Standing tethered cells rotate faster (8.5\u00b11.9 rad/s) than lying ones (3.0\u00b12.1 rad/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by direct observation and quantitative measurements from tracking tethered cells (Figure 4c-e, Video 7). The statistical comparison between vertical (38 intervals, 5 cells) and horizontal (241 intervals, 25 cells) tethering is clearly demonstrated, though the sample size for vertical tethering is relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C106"
+    ],
+    "result": "MSHA pili can attach to surfaces along their entire length, not just at the tip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C106 are supported by direct observation from Video 8 showing pilus attachment along its length. This is a novel finding that contrasts with other bacterial pili systems and has important implications for adhesion mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "After cell attachment, the flagellum frequently continues to rotate for some period before eventually stopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by direct observation from Videos 5 and 9. This observation provides insight into the temporal dynamics of flagellar motor activity during the attachment process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C112"
+    ],
+    "result": "LB+MC is a non-Newtonian fluid with shear-dependent viscosity (~0.2 Pa\u00b7s) and higher storage modulus than loss modulus. An 18.7% mucin solution shows similar viscoelastic behavior. LB+MC better simulates intestinal mucus environment compared to Newtonian Ficoll solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C112 are well-supported by rheological measurements shown in Figure 6. The comparison between LB+MC, actual mucin solution, and Ficoll validates LB+MC as an appropriate model system for studying bacterial behavior in viscoelastic environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Wild-type cells demonstrate roaming and orbiting in both 2% LB and LB+MC, indicating these motilities are robust against viscoelastic environment. However, average speed is reduced ~22-fold for WT (86.7\u00b132.9 to 3.8\u00b12.6 \u03bcm/s) and ~12-fold for \u0394mshA (80.0\u00b115.0 to 6.5\u00b11.4 \u03bcm/s) in LB+MC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by direct observation and speed measurements from cell tracking (Figure 5a). The dramatic speed reduction in viscoelastic medium is well-documented, though the different fold-changes between WT and \u0394mshA suggest differential effects of pili presence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C108"
+    ],
+    "result": "In LB+MC, WT cells land quickly with more tethered motion and smaller Rg, while \u0394mshA cells show prolonged orbiting and similar Rg to 2% LB. The ratio of mean path lengths (\u0394mshA/WT) is ~1.8 in LB+MC vs ~0.8 in 2% LB and ~0.75 in 20% Ficoll. This indicates MSHA pili's braking/anchoring role is more apparent in viscoelastic non-Newtonian fluids than viscous Newtonian fluids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C87 and C108 are well-supported by comparative analysis across different fluid types shown in Figure 5. The key finding that loss of MSHA pili has greater effect in viscoelastic medium is demonstrated through multiple metrics (Rg, path length ratios, trajectory patterns). Statistical significance is shown with appropriate tests (Figure 5d).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The MshAT70C point mutation does not affect MSHA pilus function, as demonstrated by similar hemagglutination behavior to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by hemagglutination assay results (Figure 1\u2014figure supplement 4). This validation is critical for ensuring that the cysteine substitution used for labeling does not alter pili function, though additional functional assays could strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Cell body rotation is required to balance flagellar torque during swimming. As the cell body rotates, different MSHA pili take turns approaching and receding from the surface, with switching of attached pili continuing to slow motion and change direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by established knowledge of bacterial swimming mechanics and direct observation of pili switching behavior. The logical inference connecting cell body rotation to pili switching is sound and consistent with the observed dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C100",
+      "C101"
+    ],
+    "result": "The homogeneous distribution of MSHA pili may be more efficient at slowing tilted cell bodies by increasing surface encounter probability. Cells can enhance adhesion strength by increasing both segment length and number of adhered pili, facilitating irreversible attachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91, C100, and C101 are reasonable inferences from the observed pili distribution and adhesion behavior, but they remain speculative without direct experimental validation. Comparative experiments with bacteria having different pili distributions or quantitative adhesion strength measurements would be needed to fully support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Progressive twisting of surface-attached pilus fiber during circular motion may gradually cause motion to stop by pulling the cell body closer to the surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is explicitly presented as a speculative mechanism inferred from observed tethered motion dynamics. While plausible, this mechanism lacks direct experimental evidence such as measurements of pilus twisting or cell-surface distance changes during tethered motion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims about V. cholerae biology, bacterial appendages, and intestinal mucus properties based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 are standard background information supported by appropriate citations to established literature. These provide necessary context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C110",
+      "C113"
+    ],
+    "result": "Additional background and comparative claims about bacterial biofilm formation, near-surface swimming, pili in other species, and prior methodologies based on literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C94-C95, C97-C99, C102-C105, C110, and C113 are appropriately cited background information that contextualizes the current findings within the broader literature. These are not novel results but provide important comparative context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Summary claim that MSHA pili act as brake and anchor during cell landing through the three-phase process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is a high-level summary of the major findings supported by the collective evidence from claims about pili distribution, braking behavior, anchoring, and the three-phase landing process. This represents the central conclusion of the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

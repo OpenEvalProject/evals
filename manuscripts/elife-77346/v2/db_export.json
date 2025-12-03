@@ -1,0 +1,1547 @@
+{
+  "submission": {
+    "id": "2ed3c7c5-6c97-43d7-8f34-ab183cf55956",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:33:26.288813Z",
+    "updated_at": "2025-12-03T13:33:26.288813Z"
+  },
+  "content": [
+    {
+      "id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "submission_id": "2ed3c7c5-6c97-43d7-8f34-ab183cf55956",
+      "content_type": "manuscript",
+      "content_text": "# Ancestral reconstruction of duplicated signaling proteins reveals the evolution of signaling specificity\n\n## Authors\n\n- Isabel Nocedal<sup>1</sup> ([ORCID: 0000-0002-4706-1113](https://orcid.org/0000-0002-4706-1113))\n- Michael T Laub<sup>1</sup> ([ORCID: 0000-0002-8288-7607](https://orcid.org/0000-0002-8288-7607)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n2. Howard Hughes Medical Institute, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nGene duplication is crucial to generating novel signaling pathways during evolution. However, it remains unclear how the redundant proteins produced by gene duplication ultimately acquire new interaction specificities to establish insulated paralogous signaling pathways. Here, we used ancestral sequence reconstruction to resurrect and characterize a bacterial two-component signaling system that duplicated in \u03b1-proteobacteria. We determined the interaction specificities of the signaling proteins that existed before and immediately after this duplication event and then identified key mutations responsible for establishing specificity in the two systems. Just three mutations, in only two of the four interacting proteins, were sufficient to establish specificity of the extant systems. Some of these mutations weakened interactions between paralogous systems to limit crosstalk. However, others strengthened interactions within a system, indicating that the ancestral interaction, although functional, had the potential to be strengthened. Our work suggests that protein-protein interactions with such latent potential may be highly amenable to duplication and divergence.\n\n## Introduction\n\nProtein-protein interactions are critical for most cellular functions, including signal transduction pathways. Notably, many protein interaction domains in signaling proteins are members of large paralogous families. For example, in mammals there are dozens of SH2, SH3, and PDZ domains that each mediate a variety of protein-protein interactions (Pawson, 2004). These paralogous proteins arise through a process of gene or domain duplication, which enables organisms, on an evolutionary timescale, to rapidly expand their signaling repertoires (Alm et al., 2006; Corrochano et al., 2016). However, the use of paralogous proteins and domains comes at a cost, requiring cells to avoid deleterious crosstalk between highly similar proteins and domains (Bradley and Beltrao, 2019; Capra et al., 2012; Siryaporn and Goulian, 2008; Zarrinpar et al., 2003). How the process of duplication and divergence unfolds at a molecular level to ensure the specificity of paralogous signaling proteins is not clear.\n\nThe precise mutations required to produce highly specific protein-protein interactions upon duplication is largely unexplored, in part because the underlying duplication events that produced most extant paralogs were ancient events. One approach to tackling this problem involves ancestral protein reconstruction, which uses the phylogenies of extant proteins to infer the sequences of ancient proteins (Hochberg and Thornton, 2017). This approach has been powerfully applied to examine the evolution of protein-ligand interactions (Voordeckers et al., 2012), such as steroid hormones and their receptors (Bridgham et al., 2009; Bridgham et al., 2006), transcription factor-DNA interactions (Baker et al., 2013; McKeown et al., 2014; Starr et al., 2017), and protein-drug interactions (Wilson et al., 2015). There have been fewer studies applying ancestral protein reconstruction to protein-protein interactions (Holinski et al., 2017; Laursen et al., 2021; Wheeler et al., 2018; Wheeler and Harms, 2021), with most focusing on resurrecting the mutations that impact protein oligomerization (Hochberg et al., 2020; Pillai et al., 2020).\n\nWe sought to understand how paralogous protein-protein interactions arise through duplication and divergence, focusing on bacterial two-component signaling pathways. Two-component signaling systems typically consist of a sensor histidine kinase (HK) that autophosphorylates upon signal recognition, and then transfers a phosphoryl group to a cognate response regulator (RR) that can trigger an intracellular response, frequently through changes in gene expression (Figure 1A; Buschiazzo and Trajtenberg, 2019; Capra and Laub, 2012). Most bacteria encode dozens of these systems, with each system usually insulated from every other paralogous system (Galperin, 2005; Koretke et al., 2000; Skerker et al., 2005). Crosstalk between systems appears relatively rare, and has been shown to produce fitness defects when introduced artificially (Capra et al., 2012), likely due to the decreased ability of a given HK to activate a given RR (Rowland and Deeds, 2014). The specificity of the HK-RR interaction is determined primarily through molecular recognition, with a relatively small number of amino acids in both the histidine kinase and response regulator promoting the cognate interaction and preventing unwanted crosstalk with non-cognate proteins (Capra et al., 2012; Skerker et al., 2008).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig1-v2.jpg)\n\n**Figure 1.:** (A) Two-component signal transduction. A sensor histidine kinase autophosphorylates upon activation and transfers a phosphoryl group to a cognate response regulator to activate an intracellular response. (B) Two models for acquisition of paralog specificity after duplication of an interacting histidine kinase (HK) and response regulator (RR). Model 1: both proteins in one system acquire compensatory mutations that maintain their interaction while preventing interaction with the other system. Model 2: all four proteins acquire mutations that prevent crosstalk between systems. (C) Phylogenetic species tree of proteobacteria inferred from 27 ribosomal protein sequences showing distribution of EnvZ-OmpR homologs and related systems. Scale bar indicates substitutions per site. (D) In vitro phosphotransfer specificity of C. crescentus EnvZ and OmpR paralogs. Purified histidine kinase (cytoplasmic domain only) was autophosphorylated and then mixed with a given purified response regulator and incubated for the time indicated. At t=0 a single upper band corresponds to the autophosphorylated HK. At subsequent time points, a second, lower band corresponding to the RR appears as the kinase transfers its phosphoryl group leading to depletion of the autophosphorylated HK. At longer time points phosphatase activity of the HK can lead to disappearance of the phosphorylated RR. (E) Quantification of phosphorylated HK over time in (D). Values were normalized to t=0 for each HK-RR pair. Lines represent mean (n=2) and dots represent independent replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) (Top) Comparison of C. crescentus EnvZ1 (CC1181) and EnvZ2 (CC2932) domain structure, with sequence identity indicated below each domain (TM=transmembrane domain, DHp=dimerization and histidine phosphotransfer domain, HAMP=histidine kinases, adenylyl cyclases, methyl-accepting chemotaxis proteins, and phosphatases domain, CA=catalytic and ATP binding domain). (Bottom) Comparison of C. crescentus OmpR1 (CC1182) and OmpR2 (CC2931) domain structure, with sequence identity indicated below each domain (RD=receiver domain, DBD=DNA-binding domain). (B) Coomassie blue stain (left) and autoradiograph image of SDS-PAGE showing phosphotransfer from C. crescentus EnvZ1 to mixed C. crescentus OmpR1 and OmpR2. Arrows indicate identity of each protein as determined by Coomassie stain.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Phosphorylation of all described histidine kinases with no response regulator added for 30-min timecourse.\n\nDespite their prevalence in bacterial genomes and the prior identification of the key specificity-determining residues, it remains unclear how crosstalk between recently duplicated HK-RR pairs is eliminated to establish two insulated pathways. While previous work demonstrated how extant proteins can be rewired to recognize different substrates (Capra et al., 2010; Skerker et al., 2008), it is unclear whether duplicated systems resolve crosstalk in a similar way. In particular, it is not known how many of the four proteins involved must acquire mutations to insulate the two protein-protein interfaces. In principle, there are two general models for how interacting proteins could evolve specificity after a duplication event (note that HK-RR systems are typically co-operonic and likely duplicate as an operon) (Figure 1B). In the first model, mutations could occur in both proteins of one system to retain their compatibility with each other while rendering them incompatible with proteins in the other system, leading to insulated pathways. This model is akin to neofunctionalization, in which a new, unique interface evolves in one paralogous system. In the second model, changes in all four proteins, perhaps each of smaller magnitude, could be required to insulate these systems. This model could represent neofunctionalization of both systems or subfunctionalization, where the functions of an ancestral protein are divided between paralogs.\n\nHere, we use ancestral protein reconstruction to resurrect extinct HK and RR proteins that existed prior to a two-component system duplication event. By characterizing these ancestors, as well as mutational intermediates that descended from them, we elucidate the likely mutational trajectories taken by these proteins that resulted in the insulation of their protein-protein interfaces. We find that just three mutations can largely account for the establishment of specificity in the two pathways. Unexpectedly, these three mutations occur in the HK of one system and the RR of the other. The mutations that arise in one of the HKs serve mainly to prevent crosstalk to the RR of the other system whereas the mutation that arises in the RR serves both to prevent crosstalk and promote interaction with its cognate HK, suggesting that the HK-RR system that existed pre-duplication had the potential for faster phosphotransfer. By exploiting this latent ability to improve the interaction, along with the emergence of mutations that directly block crosstalk, these two HK-RR systems evolved specificity. Thus, our results reveal the likely mutational trajectory responsible for the rapid establishment of specificity in paralogous proteins immediately post-duplication.\n\n## Results\n\n### EnvZ/OmpR has undergone duplication and diversification in \u03b1-proteobacteria\n\nEnvZ-OmpR is a widespread two-component signaling system that has been best characterized in E. coli (Cai and Inouye, 2002). Many, though not all, \u03b1-proteobacteria contain two paralogous EnvZ-OmpR systems that appear to descend from a duplication that occurred in a basal \u03b1-proteobacterium (Figure 1C). In Caulobacter crescentus these two systems are CC1181-1182 and CC2932-2931, which we hereafter refer to as EnvZ1-OmpR1 and EnvZ2-OmpR2. These systems share less than 50% sequence identity, with particularly high divergence in the sensory domains (Figure 1\u2014figure supplement 1A). The duplication of EnvZ-OmpR in \u03b1-proteobacteria correlates with an absence of the related two-component signaling systems RstAB and CpxAR, which are highly conserved in the \u03b3-proteobacteria (Figure 1C).\n\nTo determine the specificity of the EnvZ1-OmpR1 and EnvZ2-OmpR2 systems at the level of phosphotransfer, we used biochemical assays with purified proteins in vitro. For EnvZ1 and EnvZ2, we purified the cytoplasmic, catalytic domains (DHp and CA) of each kinase fused to an N-terminal MBP-His6 tag. For OmpR1 and OmpR2, we purified each full-length response regulator harboring an N-terminal Trx-His6 domain. To assess phosphotransfer, a given histidine kinase was first incubated with [\u03b3-32P]-ATP to drive autophosphorylation and then mixed at a 1:4 molar ratio with a response regulator of interest. Samples taken at various time points were examined by SDS-PAGE. At t=0, before adding a response regulator, there was a single band corresponding to the autophosphorylated kinase. At subsequent time points, a second band appeared as the kinase transferred its phosphoryl group to the response regulator; efficient transfer eventually led to depletion of the autophosphorylated kinase. Histidine kinases are typically bifunctional, such that when not autophosphorylated they can drive the dephosphorylation of a response regulator. This activity usually occurs on a slower timescale than phosphotransfer, and explains why the bands corresponding to phosphorylated response regulator often decreased at later time points in our assays (Figure 1D).\n\nUsing these in vitro phosphotransfer assays, we first tested the specificity of each paralogous system from C. crescentus. EnvZ1 transferred rapidly to OmpR1, its cognate response regulator, with phosphorylated OmpR1 detected after 10 s and autophosphorylated EnvZ depleted by 5 min (Figure 1D, top left). Autophosphorylated EnvZ1 also transferred to OmpR2, but less efficiently as indicated by the slower accumulation of phosphorylated OmpR2 and slower depletion of autophosphorylated EnvZ1, with nearly full depletion occurring only by 30 min (Figure 1D, top right). Similar patterns were observed for EnvZ2, which transferred very rapidly to OmpR2, but quite slowly to OmpR1 (Figure 1D).\n\nTo compare the rates of transfer from different histidine kinases, we quantified the level of autophosphorylated kinase in each phosphotransfer reaction over time (Figure 1E). The rate at which the autophosphorylated kinase decreases is a proxy for the rate of phosphotransfer. (Each histidine kinase is stably phosphorylated over 30 min (Figure 1\u2014figure supplement 2)). By this measure, each EnvZ paralog exhibited a clear preference for its cognate response regulator (Figure 1E). Although EnvZ1 shows a weaker preference for its cognate response regulator in these assays than does EnvZ2, EnvZ1 showed a strong preference for OmpR1 in an in vitro competition assay (Figure 1\u2014figure supplement 1B), and even modest substrate preferences in vitro can result in significant in vivo insulation (Capra et al., 2012; McClune et al., 2019). We conclude that each histidine kinase has a preference for its cognate, co-operonic response regulator compared to the paralogous response regulator. Further, these results indicated that since the duplication event that created the EnvZ-OmpR paralogs in \u03b1-proteobacteria, each protein-protein interaction has diverged to generate paralog specificity.\n\n### Ancestral protein reconstruction reveals early acquisition of paralog specificity\n\nTo determine the evolutionary trajectory that resulted in the diversification and phosphotransfer insulation of the EnvZ-OmpR paralogs in \u03b1-proteobacteria, we used ancestral protein reconstruction to infer the sequences of the ancestral proteins. A maximum likelihood phylogeny was inferred for 200 matched pairs of cognate histidine kinase-response regulators from the EnvZ-OmpR family and other closely related two-component signaling system families (Figure 2A; full phylogeny in Figure 2\u2014figure supplement 1). This matched HK-RR phylogeny was found to be largely concordant with phylogenies based on HK or RR sequences alone (Figure 2\u2014figure supplement 2). Based on the matched HK-RR phylogeny, we identified the maximum a posteriori EnvZ (catalytic domains only) and OmpR sequences immediately prior to the duplication, and immediately after the duplication (Figure 2B\u2013C; full alignments in Figure 2\u2014figure supplement 3A\u2013B). This duplication event was quite ancient, having occurred near the origin of the \u03b1-proteobacteria ~1900 million years (Ma) ago (Wang and Luo, 2021), and these ancestral sequences share only ~50% identity with the extant proteins in C. crescentus (Figure 3\u2014figure supplement 2A\u2013B). The last common ancestral proteins from which both EnvZ-OmpR paralogs descend will be referred to as ancHK and ancRR, while ancHK1-ancRR1 refers to the ancestor of all EnvZ1-OmpR1 proteins and ancHK2-ancRR2 is the ancestor of all EnvZ2-OmpR2 (Figure 2A). Each ancestor was reconstructed with high confidence, with mean posterior probabilities >0.8 (ancHK=0.85, ancRR=0.88, ancHK1=0.87, ancRR1=0.91, ancHK2=0.81, ancRR2=0.85; Figure 3\u2014figure supplement 2C). Furthermore, the sequences generated from the matched phylogeny were highly similar to those generated from an ancestral reconstruction of HK or RR sequences individually (Figure 2\u2014figure supplements 4 and 5). Each of the reconstructed ancestral sequences was cloned, expressed, and then purified, as above.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig2-v2.jpg)\n\n**Figure 2.:** (A) Simplified phylogenetic tree of merged, matched EnvZ and OmpR sequences. Number of sequences in each clade indicated. Node support indicated by approximate likelihood ratio statistic (* indicates >10, ** indicates >100). Circles represent reconstructed ancestral protein pairs. Scale bar represents substitutions per site. For complete phylogeny, see Figure 2\u2014figure supplement 1. (B\u2013C) Multiple sequence alignment of EnvZ DHp domains (B) and OmpR receiver domains (C) from extant C. crescentus paralogs, ancHK-ancRR, ancHK1-ancRR1, ancHK2-ancRR2, and extant E. coli EnvZ-OmpR sequences. Residues conserved in both C. crescentus paralogs and all ancestors highlighted in grey; residues previously shown to strongly covary and dicatate specificity in E. coli EnvZ (Capra et al., 2010) highlighted in yellow. Secondary structure elements, based on AlphaFold prediction of the ancHK-ancRR complex shown below alignment. Posterior probabilities of reconstructed ancestral sequences at these positions shown for ancHK-RR (yellow), ancHK1-RR1 (blue), and ancHK2-RR2 (green) with most likely residue indicated by respective colors, and second most likely shown in grey. Dashed white line indicates posterior probability of 0.2, the threshold for identifying sites to be alternatively reconstructed (see Figure 2\u2014figure supplement 4 and 5). (D) Phosphotransfer from autophosphorylated ancHK to ancRR.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Full phylogeny of matched, merged EnvZ and OmpR sequences and related two-component systems RstBA, CpxAR, and MprBA. Node support shown as approximate likelihood ratio statistic. Sequence identifiers from ProGenomes database (Mende et al., 2017). Reconstructed ancestral nodes indicated by colored circles. Scale bar represents substitutions per site.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Simplified phylogenetic tree of EnvZ (A) and OmpR sequences (B) based on non-merged multiple sequence alignments. Number of sequences in each clade indicated. Node support indicated by approximate likelihood ratio statistic (* indicates >10, ** indicates >100). Scale bar represents substitutions per site.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A\u2013B) Multiple sequence alignment of EnvZ (DHp and CA domains) (A) and OmpR full protein (B) from extant C. crescentus paralogs, ancHK-ancRR, ancHK1-ancRR1, and ancHK2-ancRR2, and extant E. coli EnvZ and OmpR sequences. Residues conserved in both C. crescentus paralogs and all ancestors highlighted in grey; residues previously shown to strongly covary and dicatate specificity in E. coli EnvZ (Capra et al., 2010) highlighted in yellow. Secondary structure elements, based on AlphaFold prediction of ancHK-ancRR complex, shown below alignment. Posterior probabilities of reconstructed ancestral sequences at these positions shown for ancHK-ancRR (yellow), ancHK1-ancRR1 (blue), and ancHK2-ancRR2 (green) with most likely residue indicated by respective colors, and second most likely shown in grey. Dashed white line indicates posterior probability of 0.2, the threshold for identifying sites to be alternatively reconstructed (see Figure 2\u2014figure supplement 4).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Comparison of ancHK (A), ancHK1 (B), and ancHK2 (C) sequences reconstructed using merged HK-RR alignment (ancHK, ancHK1, ancHK2), HK-only alignment (ancHK*, ancHK1*, ancHK2*), and merged HK-RR alignment with alternative \u201cAltAll\u201d residues (ancHKalt, ancHK1alt, ancHK2alt). Positions that differ between original ancestor (first line) and HK-only ancestor (second line) indicated with asterisks; positions that differ between original ancestor (first line) and AltAll ancestor (third line) indicated with asterisks.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Comparison of ancRR (A), ancRR1 (B), and ancRR2 (C) sequences reconstructed using merged HK-RR alignment (ancRR, ancRR1, ancRR2), RR-only alignment (ancRR*, ancRR1*, ancRR2*), and merged HK-RR alignment with alternative \u201cAltAll\u201d residues (ancRRalt, ancRR1alt, ancRR2alt). Positions that differ between original ancestor (first line) and RR-only ancestor (second line) indicated with asterisks; positions that differ between original ancestor (first line) and AltAll ancestor (third line) indicated with asterisks.\n\nWe first tested our ancestral proteins for activity in our in vitro phosphotransfer experiments, and found that all show clear activity in this assay, indicating that the inferred ancestors represent functional histidine kinases and response regulators. Importantly, we observed transfer from ancHK to ancRR (Figure 2D), indicating that even for our most ancient reconstructions we generated proteins capable of interacting and engaging in a productive phosphotransfer event.\n\nWe next sought to determine whether specificity, at the level of phosphotransfer, had emerged immediately after the duplication event in ancHK1-ancRR1 and ancHK2-ancRR2, systems that share ~70% identity (Figure 3\u2014figure supplement 2B). To do so, we measured phosphotransfer in vitro from autophosphorylated ancHK1 and ancHK2 to ancRR1 and ancRR2 (Figure 3A). We found that each ancestral kinase robustly phosphorylated its reconstructed cognate partner, with complete transfer for ancHK1-ancRR1 after 5 min and almost complete transfer for ancHK2-ancRR2 after 5 min. In contrast, each kinase showed slower transfer to the non-cognate regulator. Similar to their orthologous counterparts in C. crescentus, ancHK2 showed a stronger cognate preference, with very little transfer to ancRR1 observed at 5 min. While ancHK1 transfers more rapidly to its non-cognate regulator than ancHK2 transfers to its non-cognate regulator, a clear preference was still observed after 5 min, with autophosphorylated ancHK1 fully depleted after mixing with ancRR1 but not fully depleted when mixed with ancRR2. These results indicated that phosphotransfer specificity was established in ancHK-ancRR1 and ancHK-ancRR2 shortly after the duplication of ancHK-ancRR.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig3-v2.jpg)\n\n**Figure 3.:** (A) Phosphotransfer from ancHK1 and ancHK2 to ancRR1 and ancRR2. (B) Phosphotransfer from ancHK to ancRR1 and ancRR2. (C) Quantification of the phosphorylated HKs indicated over time for (A) and (B) for transfer to ancRR1 (left) and ancRR2 (right). Lines represent mean (n=2) and dots represent independent replicates. (D) Phosphotransfer from ancHK1 and ancHK2 to ancRR. (E) Quantification of phosphorylated HK over time from (A) and (D) for transfer from ancHK1 (left) and ancHK2 (right) to the RRs indicated. (F) Estimate of substrate specificity for all ancestors. The ratio of specificity constants (kcat/kM) was determined for each HK or RR using the initial rate of phosphotransfer to one protein relative to another. Blue indicates a preference for ancHK1 (for RRs) or ancRR1 (for HKs), green represents a preference for ancHK2 (for RRs) or ancRR2 (for HKs), and white indicates no preference. Numbers indicate fold-preference (ratio of specificity constants).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Comparison of all 5-timepoint phosphotransfer reactions from ancHK, ancHK1, ancHK2, Cc EnvZ1, Cc EnvZ2, and ancHK1 +L26F to ancRR, ancRR1, ancRR2, Cc OmpR1, and Cc OmpR2. Timepoints shown are 0, 10 s, 30 s, 5 min, 30 min. (B) Comparison of all 3-timepoint phosphotransfer reactions from ancHK, ancHK1, ancHK2, ancHK + R27Q, ancHK + R27Q + E29A, and ancHK + E29A to ancRR, ancRR1, ancRR2, and ancRR + R11E. Timepoints shown are 0, 2 min, 5 min.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Number of amino acid changes between various ancestors and extant C. crescentus proteins for EnvZ (left) and OmpR (right). Total reconstructed HK length=206 amino acids, RR length=227 amino acids. (B) Sequence identity comparison between various ancestors and extant C. crescentus proteins for EnvZ (left) and OmpR (right). (C) Distribution of posterior probabilities of maximum a posteriori states for all reconstructed ancestral proteins, with mean probability indicated. (D) Phosphotransfer for alternatively reconstructed ancestors, incorporating the second most probable residue at all sites where the probability for this residue was >0.2. Alternative ancestors show similar properties to primary ancestors, with the exception of slower transfer to ancRR and ancRR1, perhaps due to decreased stability of these reconstructed proteins. (E) Quantification of normalized phosphorylated HK from (D). (F) Estimate of substrate specificity for alternative ancestors (left) and primary ancestors (right; copied from Figure 3F for comparison here). Blue indicates a preference for ancHK1-ancRR1, green indicates a preference for ancHK2-ancRR2, and white indicates no preference. Black numbers indicate fold-preference (ratio of specificity constants), while pink numbers indicate ratios of fold-preference. Ratios of fold-preference are consistent between alternative ancestors and primary ancestors, while absolute values differ most notably between HKs, with all three alternative HKs having stronger preferences for ancRR2 due to slower overall transfer observed for ancRR-alt and ancRR1-alt.\n\nTo determine which of the proteins acquired mutations that prevented crosstalk between paralogous systems, we first examined the phosphotransfer properties of ancHK and ancRR. We found that ancHK transferred robustly to ancRR (Figure 2D), as well as to ancRR1 and ancRR2 (Figure 3B), and that ancHK1 and ancHK2 both transferred robustly to ancRR (Figure 3D). We then compared the ability of ancestral histidine kinases pre- and post-duplication to transfer to a given post-duplication response regulator. We found that transfer from either ancHK or ancHK1 to ancRR2 was similar (Figure 3C, right), suggesting that ancHK1 did not acquire mutations to prevent crosstalk with ancRR2. In contrast, we found that ancHK2 transferred to ancRR1 much more slowly than did ancHK (Figure 3C, left), suggesting that ancHK2 must have acquired mutations post-duplication that prevent crosstalk with ancRR1 (all transfers shown together in Figure 3\u2014figure supplement 1).\n\nWe then compared the ability of ancRR, ancRR1, and ancRR2 to be phosphorylated by ancHK1, finding that ancRR was not phosphorylated more rapidly than ancRR2 (Figure 3E, left), indicating that ancRR2 did not acquire mutations that prevent crosstalk with ancHK1. We also compared the ability of ancRR, ancRR1, and ancRR2 to be phosphorylated by ancHK2 (Figure 3E, right). In this case, we find that ancRR1 was phosphorylated much more slowly than ancRR, indicating that ancRR1 must have acquired mutations that prevent crosstalk with ancHK2. These findings were robust to phylogenetic uncertainty, as we observed a similar pattern with the alternative ancestors (Figure 3\u2014figure supplement 2D-E). We concluded that of the two response regulators produced by a duplication of ancRR only ancRR1 acquired mutations promoting insulation of the two paralogous pathways.\n\nTo quantify the change in specificity among ancestral proteins, we measured initial rates of phosphotransfer to estimate ratios of specificity constants. For a given histidine kinase, the ratio of specificity constants (kcat/kM) for two response regulators represents an approximate measure of substrate specificity, and likewise for a given response regulator the ratio of transfer from two different histidine kinases represents an approximate measure of specificity. Comparing the ratios of specificity constants of the ancestral histidine kinases (Figure 3F), we found that both ancHK and ancHK1 showed little kinetic preference, whereas ancHK2 showed an ~28-fold kinetic preference for ancRR2 relative to ancRR1, supporting the idea that the kinetic preference of ancHK1 did not change significantly post-duplication while that of ancHK2 did. For the response regulators, we observed the opposite pattern, with both ancRR and ancRR2 showing modest kinetic preferences for transfer from ancHK2 (~1.5 and 1.8-fold, respectively) and ancRR1 showing a strong preference for ancHK1 (~4.5 fold) (Figure 3F). Taken all together, our results indicate that just two of the four paralogs, ancHK2 and ancRR1, acquired mutations that significantly alter their protein-protein interaction specificity in order to prevent crosstalk between the paralogous systems.\n\nReconstructing ancestral proteins is inherently probabilistic, and there is a degree of uncertainty associated with any reconstructed protein. To ensure that our conclusions were robust to this uncertainty, we reconstructed \u2018AltAll\u2019 alternative sequences for the six pre- and post-duplication ancestors using a previously described method (Eick et al., 2017). In short, for every position at which multiple residues had posterior probabilities >20%, the second most likely residue was included. These alternative ancestors were then tested for their ability to transfer to each other (Figure 3\u2014figure supplement 2D). Some of the alternative ancestors transferred more slowly than the primary ancestors. However, as with the primary ancestors, we found that just two of the alternative ancestors, ancHK2-alt and ancRR1-alt, showed significantly different transfer specificity when compared to the pre-duplication ancestors (Figure 3\u2014figure supplement 2E\u2013F). This finding supports our conclusion that mutations in just two of the four paralogs were responsible for the insulation of these pathways.\n\n### A small set of mutations was sufficient to insulate ancestral paralogs\n\nTo identify the individual mutations responsible for the change in specificity of ancHK2, we compared the sequence of ancHK to that of ancHK1 and ancHK2, focusing on six positions previously shown to strongly covary between histidine kinases and response regulators and to dictate the specificity of E. coli EnvZ-OmpR (Capra et al., 2010). Only two of these positions differ between ancHK and ancHK2: positions 27 and 29, which have changed from an arginine and glutamate to a glutamine and alanine, respectively (Figure 4A). To determine if these mutations are paralog-specific, and thus likely to be important in insulating these systems, we compared the amino acids at these two positions in all identified extant EnvZ1 and EnvZ2 orthologs (a much larger set of sequences than was used for our ancestral reconstructions). This analysis indicated that both positions are indeed strongly paralog specific. At position 27, arginine is present in >90% of 1,886 EnvZ1 sequences but in none of the 822 EnvZ2 sequences, for which >90% of sequences feature either glutamine, glutamate, or serine (Figure 4B). At position 29, the negatively charged residues glutamate and aspartate are present in >90% of EnvZ1 sequences but <10% of EnvZ2 sequences, where alanine is present in >85% of sequences (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig4-v2.jpg)\n\n**Figure 4.:** (A) Sequences of ancHK, ancHK1, and ancHK2 for regions primarily involved in molecular recognition. Dots indicate conservation compared to ancHK. Residues previously shown to be strongly coevolving and important for specificity of E. coli EnvZ-OmpR highlighted in yellow, and secondary structure elements predicted by AlphaFold indicated below sequence. (B) Sequence logos for HK positions 27 and 29 in 1,886 identified EnvZ1 paralogs and 822 identified EnvZ2 paralogs, with height indicating frequency of each amino acid. (C) Same as (A) but for ancRR, ancRR1, and ancRR2. (D) Same as (B) but for positions 11 and 12 in OmpR. (E) Phosphotransfer from ancHK, ancHK with the mutations indicated, and ancHK2 to ancRR1 at 0, 2 and 5 minute timepoints. (F). Phosphotransfer from ancHK2 to ancRR, ancRR + R11E, and ancRR1. (G). Phosphotransfer from ancHK + R27Q + E29A to ancRR + R11E. (H\u2013I) Quantification of normalized phosphorylated HK from (E) and (F). Lines represent mean (n=2) and dots represent independent replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Phosphotransfer from the histidine kinases indicated to the response regulators indicated at 0, 2, and 5-min timepoints. (B) Quantification of normalized phosphorylated ancHK, ancHK2, and mutants during transfer to ancRR2.\n\nA similar analysis was performed to identify possible causal mutations in the evolution of ancRR1 specificity. Only two of the key positions were found to differ between ancRR and ancRR1 (Figure 4C), and only one of these, position 11, showed broad paralog specificity (Figure 4D). At this position, arginine is present in >90% of OmpR2 sequences and <1% of OmpR1 sequences. Instead, negatively charged glutamate and aspartate are present in >60% of OmpR1 sequences (Figure 4D). Importantly, all three of these potential key residues (27 and 29 in the kinase and 11 in the response regulator) were well supported positions in the reconstructed ancestors (Figure 2B\u2013C), with none of them meeting the criteria for alternative reconstruction in the \u2018AltAll\u2019 alternative ancestors.\n\nTo determine if these positions were responsible for the insulation of the paralogous systems, we tested the effect of substitutions at these positions in ancHK and ancRR. We first introduced the substitutions R27Q and E29A separately and together into ancHK and measured phosphotransfer to ancRR1 (Figure 4E). Relative to the parental protein, ancHK, both individual substitutions slowed transfer to ancRR1, with significantly less transfer observed at 2 min. When combined, these two substitutions decreased transfer to ancRR1 further, with a rate of transfer now comparable to that observed with ancHK2 (Figure 4E, H). These substitutions did not have a significant effect on transfer to ancRR2 (Figure 4\u2014figure supplement 1A, B). Thus, these two substitutions alone are sufficient to slow transfer from ancHK to ancRR1 and likely account for the major changes in ancHK2 that occurred post-duplication to help drive the insulation of the two paralogous pathways.\n\nWe then tested the effect of the substitution R11E in ancRR on transfer from ancHK2 (Figure 4F). We found that introducing this single substitution into ancRR was sufficient to significantly slow transfer from ancHK2, with a rate of transfer very similar to that seen for ancHK2 to ancRR1 (Figure 4F, I). Finally, we examined all three of these substitutions together by testing transfer from ancHK(R27Q, E29A) to ancRR(R11E), finding very slow transfer (Figure 4G), as seen with ancHK2 and ancRR1. Together, these results demonstrate that just three mutations \u2013 two in ancHK and one in ancRR \u2013 are sufficient to confer specificity to these EnvZ-OmpR paralogs at the level of phosphotransfer. Further, these results indicate that changes in just two of the four proteins, ancHK2 and ancRR1, which are notably not cognate partners, were required to insulate these systems (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig5-v2.jpg)\n\n**Figure 5.:** (A) Phosphotransfer from ancHK1 (left) and ancHK (right) to ancRR, ancRR + R11E, and ancRR1 at 0, 2, and 5-min timepoints. (B) Quantification of normalized phosphorylated HK from (A). (C) Model for insulation of EnvZ-OmpR paralogs in \u03b1-proteobacteria. Thickness of the black arrows indicates relative strength of a given interaction. Mutations that prevent crosstalk between paralogs indicated in pink; mutations that improve cognate interaction indicated in orange. (D) Predicted ancHK-ancRR1 complex structure from AlphaFold2. Inset: putative salt bridge between arginine 27 in ancHK and glutamate 11 in ancRR1 indicated by dashed line.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Per-residue local Distance Difference Test (lDDT) for ancHK-ancRR1 complex. Positions 1\u2013211 are ancHK monomer 1, positions 211\u2013422 are ancHK monomer 2, and positions 422\u2013600 are ancRR1. Best 5 models shown; rank 1 model shown in Figure 5.\n\n### Ancestral interaction was not optimized for rapid phosphotransfer\n\nAlthough our results are sufficient to explain how ancHK2 developed paralog specificity, it remained unclear how ancHK1 developed its specificity after duplication. While ancHK1 exhibits more crosstalk than ancHK2, it does exhibit a slight kinetic preference for ancRR1 over ancRR2 (Figure 3A). Because there were no differences in the six strongly covarying residues between ancHK and ancHK1 or between ancRR and ancRR2 (Figure 4A), we hypothesized that mutations in ancRR1 must have been responsible for this specificity change. Indeed, when we introduced the substitution R11E into ancRR, we observed slower transfer from ancHK2, as already noted (Figure 4F, I), as well as faster transfer from both ancHK1 and ancHK (Figure 5A\u2013B). This result suggests that a single mutation in ancRR was sufficient to both improve the ancestral interaction and help prevent crosstalk with the new paralog ancHK2 (Figure 5C). This finding further suggests that the ancestral ancHK-ancRR interaction was not optimized for the most rapid possible phosphotransfer, and that ancHK1 evolved a preference for ancRR1 by simply improving the ancHK1-ancRR1 interaction such that this transfer outcompetes crosstalk to ancRR2.\n\nTo better understand why the R11E mutation in ancRR might improve phosphotransfer from ancHK, we used AlphaFold2 (Jumper et al., 2021) to predict the structure of the ancHK-ancRR and ancHK-ancRR1 complexes (Figure 5D). These structures suggested that substituting an arginine at position 11 in ancRR with a glutamate enables ancRR1 to form a salt bridge with R27 in ancHK and ancHK1. The emergence of this salt bridge may explain why the R11E substitution improves the interaction of ancRR1 with ancHK and ancHK1.\n\nAlthough we observed, and can largely account for, paralog specificity in the ancestors that arise shortly after the duplication event, the extant proteins in C. crescentus exhibit more paralog specificity (Figure 1D), suggesting that subsequent mutations further insulated these paralogous protein interfaces. In particular, we observed only a weak preference of ancHK1 for ancRR1 relative to ancRR2 (Figure 3A), while C. crescentus EnvZ1 has a much stronger preference for its cognate partner (Figure 1D). To identify residues in C. crescentus EnvZ1 that may have provided additional specificity, we compared the sequences of ancHK1 and C. crescentus EnvZ1 and identified two mutations in the strongly covarying residues (positions 26 and 30) that differ (Figure 6A). When we looked at the identity of these residues in close relatives of C. crescentus, the Caulobacteraceae, we find that one of these positions \u2013 position 26 \u2013 is highly conserved in this clade, with a phenylalanine in the Caulobacteraceae compared to a leucine in the ancHK1 ancestor (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77346/elife-77346-fig6-v2.jpg)\n\n**Figure 6.:** (A) Sequences of DHp domain for ancHK1 and C. crescentus EnvZ1 shown as in Figure 4A. (B) Sequence logos for HK positions 26 and 30 in 1886 identified EnvZ1 paralogs and 32 EnvZ1 paralogs from Caulobacteraceae species, with height indicating frequency of each amino acid. (C) Phosphotransfer from ancHK1, ancHK1 + L26F, and C. crescentus EnvZ1 to C. crescentus OmpR1 (left) and C. crescentus OmpR2 (right). (D) Quantification of normalized phosphorylated HK from (C). (E) Expanded, simplified phylogeny of \u03b1-proteobacterial EnvZ-OmpR paralogs showing origins of key historical mutations leading to C. crescentus and whether they affect crosstalk (pink) and/or cognate interaction (orange).\n\nWhen we introduced this substitution into ancHK1, we observed faster transfer to C. crescentus OmpR1 (Figure 6C), recapitulating the behavior observed for C. crescentus EnvZ1 (Figure 6D). This mutation had a smaller effect on transfer to C. crescentus OmpR2 (Figure 6C, D), although it also slowed transfer to this non-cognate partner. This finding suggests that a leucine to phenylalanine substitution in the lineage leading from ancHK1 to EnvZ1 provided further insulation of the two paralogous systems (Figure 6E). This observation also supports the model that insulation of the two paralogous systems was accomplished primarily by improving the cognate ancHK1-ancRR1 interaction and breaking the non-cognate ancHK2-ancRR1 interaction (Figure 5C).\n\n## Discussion\n\n### Ancestral sequence reconstruction of protein-protein interactions\n\nAncestral sequence reconstruction has been used to interrogate the evolutionary history of a variety of protein functions, including DNA binding (Anderson et al., 2015; McKeown et al., 2014), small molecule binding (Bridgham et al., 2009; Bridgham et al., 2006), oligomerization (Hochberg et al., 2020; Pillai et al., 2020), and enzymatic activity (Boucher et al., 2014; Howard et al., 2014). But little has been done to investigate how gene duplication events impact protein-protein interactions. Here, we showed that this technique can be used to simultaneously reconstruct two interacting proteins, and we used these ancestors along with mutational intermediates to determine the evolutionary trajectory that allowed for the generation of new, insulated protein interaction interfaces.\n\nIn the case where a two-component signaling system, usually encoded as a bicistronic operon, is duplicated, two paralogous protein interaction interfaces are generated. If these two interaction interfaces are to ultimately support two separate signaling pathways, they must acquire mutations that somehow prevent detrimental crosstalk and ensure interaction specificity. For all two-component systems, and indeed for virtually all protein-protein interactions, the mutational trajectories responsible for establishing such specificity in paralogs post-duplication are unknown. Generally speaking, specificity can be generated via either (i) mutations in one of the paralogous systems such that the interacting proteins maintain their interaction while eliminating interaction with the paralogous system or (ii) mutations in proteins from both systems to generate specificity of both paralogous interfaces. In the case of the EnvZ/OmpR duplication in \u03b1-protebacteria, our results support the latter model that mutations in both paralogous systems were required to insulate these interfaces. Somewhat surprisingly, however, we found that changes in just two proteins (ancHK2 and ancRR1) were sufficient to establish specificity, rather than changes to all four proteins. This finding suggests that both protein interaction interfaces were impacted by the duplication event, and that a new two-component signaling system was not generated entirely via neofunctionalization of one system. Instead, proteins from both systems had to change to generate signaling specificity. It remains unclear if this mode of diversification represents the norm for duplicated two-component signaling systems, or duplicated interacting proteins more generally. Further characterization of ancestral interacting proteins will be required to determine whether this mechanism of insulation is commonplace.\n\n### A small set of substitutions was sufficient to generate insulated protein interfaces\n\nPrevious work has shown that a small number of historical substitutions can have significant consequences for the specificity of protein binding to DNA (McKeown et al., 2014), protein binding to small molecules (Bridgham et al., 2006), and protein multimerization (Finnigan et al., 2012; Pillai et al., 2020). For two-component signaling systems, substitutions in just a few key residues of the histidine kinase or response regulator can significantly alter the specificity of their interactions and generate new synthetic insulated protein-protein interactions (Capra et al., 2010; McClune et al., 2019; Skerker et al., 2008). However, it remained unclear if such small sets of mutations were sufficient to establish specificity upon a gene duplication event, and whether the ancestral mutations that drove paralog insulation involve the same residues involved in rewiring the specificities of extant two-component systems. We found that, for the EnvZ-OmpR paralogs in \u03b1-proteobacteria, just three key ancestral substitutions (R27Q and E29A in ancHK2, and R11E in ancRR1) were indeed sufficient to establish specificity upon duplication, with one additional subsequent mutation (L26F in ancHK1) sufficient to establish specificity that resembles the specificity observed in the extant C. crescentus systems. These findings indicate that new, insulated two-component signaling pathways can readily evolve via gene duplication and the subsequent accumulation of just a few key substitutions.\n\nThe insulation of the paralogous ancHK1-ancRR1 and ancHK2-ancRR2 interfaces was primarily accomplished by weakening the interaction between ancHK2 and ancRR1, as well as strengthening the interaction between ancHK1 and ancRR1. This evolutionary path relied on the fact that the ancestral interaction, ancHK-ancRR, was not fully optimized for rapid phosphotransfer. Although this interaction was likely fully functional prior to the duplication event, the ability of the R11E substitution in ancHK to increase the rate of transfer from ancHK (and ancHK1) allowed the diversification of these paralogous interfaces by strengthening one of the two cognate interactions. We speculate that other two-component signaling systems and other protein-protein interactions that are similarly non-optimal may be particularly well-suited to duplication and divergence. It is worth noting that we cannot rule out the possibility that the lack of optimality we see in the ancestral sequences may be due to errors in the ancestral sequence reconstruction. However, we believe this is unlikely as we have identified two independent mutations (R11E in ancRR and L26F in ancHK1) that improve the ancHK1-ancRR1 interface.\n\n### How novel protein-protein interactions evolve\n\nBoth selection and neutral drift are important in the generation of evolutionary novelty. For two-component signaling systems, it remains an open question whether the changes that result in insulation of these systems generally accumulate slowly over evolutionary time through drift, or whether strong selection drives insulation of these systems. In the case of \u03b1-proteobacterial EnvZ-OmpR systems, we found that after a gene duplication event there was a rapid change in just a few key residues that dictate protein interaction specificity. Subsequent to this burst of changes, there were many mutations that accumulated in these paralogous proteins, but these mutations do not seem to have made major contributions to the insulation of these systems. This sequence of events suggests that strong selection against crosstalk occurs immediately post-duplication followed by long periods of relative stasis in the key specificity-determining residues and neutral accumulation of changes elsewhere in these proteins.\n\nWe have determined the likely evolutionary trajectory that resulted in the diversification of the two paralogous EnvZ-OmpR paralogous systems in \u03b1-proteobacteria. In this case, a small set of mutations in two non-cognate proteins was largely sufficient to establish insulation of the two pathways. Whether similar trajectories have been followed to establish other paralogous two-component signaling pathways remains an open question, but it seems unlikely that a single model will account for the mechanism of divergence of these systems in general. Our work also focused entirely on the two systems that were produced by a duplication event. However, prior work has indicated that the avoidance of crosstalk with other, existing paralogs following a duplication event can also select for changes in specificity residues (Capra et al., 2012). Further studies of how paralogs emerge, using similar ancestral reconstruction methods as used here, promises to shed more light on the general principles and mechanisms by which two-component signaling pathways, and other protein-protein interactions found throughout biology, evolve.\n\n## Methods\n\n### Ancestral protein reconstructions\n\nEnvZ and OmpR homologs from the ProGenomes database (Mende et al., 2020) were identified using HMMER (Eddy, 2011). Cognate histidine kinase and response regulator pairs were matched based on genome proximity, with only adjacent genes matched. Clusters of HK-RR genomic sequences, where it was difficult to identify cognate pairs, were removed from the analysis. Protein sequences were then merged into a concatenated sequence for each matched pair. A subset of representative merged sequences (200 total) were aligned with MUSCLE (Edgar, 2004), the N-terminal sensory domain from EnvZ was removed, and sequences were re-aligned with MUSCLE. The best fit evolutionary model was selected using ModelTest (Darriba et al., 2020) and the Akaike Information Criterion (LG +gamma) and a maximum likelihood phylogeny was inferred using PhyML 3.3.3 (Guindon et al., 2010). Node support was evaluated using the approximate likelihood ratio test statistic (in PhyML); tree was rooted on Actinobacteria EnvZ-OmpR homologs MprBA. Ancestral sequences were then reconstructed using the codeml package in PAML 4.8 (Yang, 2007) using the maximum likelihood phylogeny (full DNA sequences for all reconstructed ancestors in Supplementary file 1). This process was repeated with the HK-only and RR-only alignments to determine individual phylogenies (Figure 2\u2014figure supplement 2) and ancestral sequences based on these phylogenies (Figure 2\u2014figure supplements 4 and 5). To account for uncertainty in the reconstructions, ambiguously reconstructed sites were identified as those at which multiple residues had posterior probabilities >0.2 (Eick et al., 2012). For each ancestral protein, an alternative ancestor was generated by incorporating the second highest likelihood residue at all ambiguous sites (Figure 3\u2014figure supplement 2, full sequences in Supplementary file 1).\n\n### Identification of paralog-specific and species-specific residues\n\nTo identify paralog-specific residues in a larger set of EnvZ-OmpR sequences, a merged concatenated HMMER-aligned sequence was generated for all matched protein pairs identified using HMMER and genome proximity, as described above (~11,000 total sequences). A phylogenetic tree was constructed using FastTree (Price et al., 2009) and EnvZ1-OmpR1 and EnvZ2-OmpR2 paralogs were classified based on clade identity. To identify Caulobacteraceae-specific EnvZ1 residues in this same set of sequences, EnvZ1 paralogs were identified that were members of the Caulobacteraceae based on species classification from the ProGenomes database (Mende et al., 2017).\n\n### Species tree\n\nTo determine the distribution of EnvZ-OmpR paralogs, a proteobacterial species tree was generated based on a concatenated alignment of 27 ribosomal protein genes (rpsD, rplD, rpsC, rplF, rpsK, rplA, rplI, rpsG, rplP, rplX, rpsH, rplJ, rplK, rplT, rplM, rpsI, rplB, rplV, rpsE, rplO, rpsA, rpsB, rpmE2, rpsF, rpsT, rplU, rplQ) (Hug et al., 2016). HMMER was used to identify and align orthologs of these genes from the ProGenomes Database. The concatenated alignment was manually trimmed to remove positions represented in <50% of sequences and positions with <25% conservation, and a tree was generated using FastTree, and rooted on Cyanobacteria (Supplementary file 2). EnvZ-OmpR distribution was determined by identifying matched EnvZ-OmpR pairs from the protein phylogeny described above. Visual inspection of a species tree generated in Parks et al., 2018 suggests that use of this newer tree would likely not change our results.\n\n### Protein expression and purification\n\nExpression and purification of EnvZ and OmpR and ancestral proteins was carried out as previously described (Skerker et al., 2005). Briefly, the cytoplasmic domains (DHp and CA) of EnvZ were purified fused to an N-terminal MBP-His6 tag; full-length OmpR was purified fused to an N-terminal Trx-His6 domain. Both proteins were expressed in BL21(DE3) cells and purified on a Ni2+-NTA column.\n\n### Phosphotransfer assays\n\nPhosphotransfer experiments were carried out as previously described (Skerker et al., 2005). Briefly, a given histidine kinase was first autophosphorylated with [\u03b3-32P]-ATP (Perkin Elmer) for 90 min at 30 \u00b0C to drive autophosphorylation and then mixed at a 1:4 molar ratio with a response regulator (1 \u03bcM EnvZ, 4 \u03bcM OmpR). Reactions were incubated at 30 \u00b0C and stopped at relevant timepoints by adding 4 x Laemmli buffer with 8% 2-mercaptoethanol. Products were separated by SDS-PAGE (BioRad Any kD Mini-PROTEAN TGX Gel), exposed to a phosphor screen, and quantified with a Typhoon scanner (GE Healthcare) at 50 \u03bcm resolution. A representative image of two independent experiments is shown in figures. Images were quantified using ImageQuant, with rolling ball background subtraction (radius=200), and normalized to t=0 lane for each HK-RR pair. To quantify kinetic preferences, initial rates of phosphotransfer were determined. (Skerker et al., 2008). Initial rates were determined by measuring the rate of loss of phosphorylated kinase between 0 and 30 s for cognate substrates, and between 0 and 5 min for all other HK-RR pairs. For in vitro competition experiments, for increased visibility of RR bands, autophosphorylated C. crescentus EnvZ1 was mixed with C. crescentus OmpR1 and OmpR2 at a 2:1 molar ratio (8 \u03bcM EnvZ, 4 \u03bcM OmpR1, 4 \u03bcM OmpR2). After exposure to a phosphor screen, the gel was stained with Coomassie brilliant blue to distinguish response regulators by size.\n\n### Protein structure prediction\n\nThe predicted structure of the ancHK-ancRR and ancHK-ancRR1 complexes was generated using AlphaFold2 (Jumper et al., 2021), modeling the histidine kinase as a homodimer and the response regulator as a monomer (Figure 5\u2014source data 2). Default parameters were used (MSA method: mmseqs2, pair mode: unpaired, number of models: 5, max recycles: 3).\n",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "e73a0d6c-e06d-4fdd-998b-cfa33e602a9b",
+      "submission_id": "2ed3c7c5-6c97-43d7-8f34-ab183cf55956",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karina B Xavier, https://ror.org/04b08hq31 Instituto Gulbenkian de Ci\u00eancia Portugal\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77346.sa0](https://doi.org/10.7554/eLife.77346.sa0)\n\nIt is thought that gene duplications are a major factor driving the emergence and expansion of paralogous proteins, but how redundant proteins evolve to acquire new interaction specificities is poorly understood. Here the authors focused on understanding how specificity evolves in signaling pathways involving bacterial two-component systems. They identify three residues involved in preventing cross-talk between non-cognate pairs of two pairs of paralogous proteins. Remarkably, they show that changes in these 3 residues were sufficient for the establishment of specificity and establishment of insulation of two signaling pathways following a duplication event.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Karina B Xavier, https://ror.org/04b08hq31 Instituto Gulbenkian de Ci\u00eancia Portugal\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77346.sa1](https://doi.org/10.7554/eLife.77346.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Ancestral reconstruction of duplicated signaling proteins reveals the evolution of signaling specificity\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, including Karina B Xavier as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Sara Sawyer as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. In general, all four reviewers found the manuscript solid and the results exciting, and thus suitable for publication for eLife. However, there is still a major point that needs additional clarification. Below is a list of essential revisions to help improve the clarity of the work. Additionally, you can also find at the end of this letter the separate \"recommendations for the authors\" written by each of the reviewers which should help to improve the manuscript and to understand the rationale of each of the reviewers. We hope you will use this information to improve your manuscript, but you do not need to reply to each of the individual comments from the reviewers, you only need to reply the essential points summarized here.\n\nEssential revisions:\n\n1) Reviewer 3 raises concerns about the approach used in the present study for the ancestral sequence reconstruction and proposes an alternative approach. We recommend that the authors consider/discuss the approach proposed (see first weakness raised by reviewer #3). It is unclear if this approach will change the results significantly, and if so, if additional experiments would be needed. It is important that the authors clarify this point by responding to this letter, while preparing a revised submission. Depending on the results additional experiments might be needed. In the case that additional experiments are necessary, we invite you to respond with a proposed plan for the additional experiments required to revise the manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\nI found the paper clear and technically sound. I have no major recommendations.\n\nReviewer #2 (Recommendations for the authors):\n\n1) The authors' propose (based on their data for EnvZ-OmpR) that \"strong selection against crosstalk occurs immediately post-duplication followed by long periods of relative stasis.\" I agree with this interpretation, but feel it would be bolstered by more biological context. It would be helpful to include a description of the biological role of EnvZ-OmpR, and some discussion regarding the possible fitness costs of cross-talk (or conversely, fitness benefits conferred by evolving a new paralogous pair).\n\n2) The authors state that the extant EnvZ-OmpR pairs (EnvZ1-OmpR1 and EnvZ2-OmpR2) are only 50% identical to each other and that the ancestral sequences are only 50% identical to the extant sequences. However, I would appreciate more discussion of sequence identity early in the results section entitled 'Ancestral protein reconstruction reveals early acquisition of paralog specificity'. In particular, how identical are ancHK1-ancRR1 to ancHK2-ancRR2, and how identical are these two pairs to ancHK-ancRR?\n\nReviewer #3 (Recommendations for the authors):\n\nI have a number of suggestions on the presentation:\n\n1. I found myself flipping back and forth between Fig 2, Fig 3, Fig 4, Fig S5 a lot. It might make the overall patterns clearer to summarize the various specificities in a large HK x RR graphic. Maybe have ancHK, ancHK1, ancHK2, ancHK+R27Q/E29A on the left and ancRR, ancRR1, ancRR2, ancRR+R11E on the top? You could either show results with gels, or maybe with a heat map where intensity represents activity?\n\n2. On Fig 3F and S4 the fold-preference color scale threw me off for a bit. I think this is because the mutation/arrow side of the graphic encodes HK/RR vertically and fold preference horizontally; the color bar encodes fold preference vertically. Maybe put color bar horizontal on the bottom?\n\n3. You mentioned alternate reconstructions on p. 9, but didn't introduce those alternate reconstructions until p. 11. Maybe add a sentence about alternate reconstruction to the initial description of ASR?\n\n4. The supports were illegible in Fig S2. In the main text, the \"*\" notation works for your aLRT. In the supplement, it would be helpful to see the raw values, at least for the main ancestors.\n\n5. Related to #4, it would be helpful to report the mean posterior probabilities for the ancestors in the main text, rather than making readers dig through Fig S4.\n\nReviewer #4 (Recommendations for the authors):\n\n1) The authors used a rather outdated approach to building the bacterial species tree (Hug et al., 2016). A more robust, standardized bacterial taxonomy is available (DH Park et al., 2018 Nat Biotech), including download options (https://gtdb.ecogenomic.org/). This should not affect the overall results, given the fact that relationships on the class level (alphaproteobacteria) revealed by the two methods should be similar, but it might be worth checking.\n\n2) Fig. 1C suggests that both paralogous systems are the subject to gene loss in a somewhat equal manner. However, in Fig. 2A (and Suppl. Fig. 2), the number of sequences in EnvZ2-OmpR2 cluster is twice smaller than in EnvZ1-OmpR1 cluster. How representative Cluster 2 is compared to Cluster 1? Was there a sporadic loss throughout alphaproteobacteria or is the system missing from a specific, rather large clade? The latter potentially might skew the comparison.\n\n3) Suppl. Fig. 2: ancestors of EnvZ2-OmpR2 should be labeled as \"ancHK2-ancRR2\" (in green).\n",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a7119f06-d122-4d48-8379-0fcbd8575bb2",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C1",
+      "claim": "Gene duplication is crucial to generating novel signaling pathways during evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene duplication is crucial to generating novel signaling pathways during evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that reflects established scientific consensus about the role of gene duplication in evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "68ae352a-716d-424a-a707-35c968cff394",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C2",
+      "claim": "Just three mutations, in only two of the four interacting proteins, were sufficient to establish specificity of the extant systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Just three mutations, in only two of the four interacting proteins, were sufficient to establish specificity of the extant systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "48004535-605d-414b-942f-33efcf902c8c",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C3",
+      "claim": "Some mutations weakened interactions between paralogous systems to limit crosstalk.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these mutations weakened interactions between paralogous systems to limit crosstalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by phosphotransfer assay data showing reduced interaction rates between specific protein pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "76d3bb8c-9d3d-47c5-bff8-cb860fa93730",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C4",
+      "claim": "Some mutations strengthened interactions within a system, indicating that the ancestral interaction had the potential to be strengthened.",
+      "claim_type": "EXPLICIT",
+      "source": "However, others strengthened interactions within a system, indicating that the ancestral interaction, although functional, had the potential to be strengthened.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing increased phosphotransfer rates with specific mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "24a6a516-b47d-4e64-b8f4-5d8fa30b902d",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C5",
+      "claim": "In mammals there are dozens of SH2, SH3, and PDZ domains that each mediate a variety of protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in mammals there are dozens of SH2, SH3, and PDZ domains that each mediate a variety of protein-protein interactions (Pawson, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "9772b65d-03f5-444b-93e6-a0ee49292012",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C6",
+      "claim": "Paralogous proteins arise through a process of gene or domain duplication, which enables organisms to rapidly expand their signaling repertoires.",
+      "claim_type": "EXPLICIT",
+      "source": "These paralogous proteins arise through a process of gene or domain duplication, which enables organisms, on an evolutionary timescale, to rapidly expand their signaling repertoires (Alm et al., 2006; Corrochano et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "fd41baa1-14c9-4f14-8d39-5f4cf99303cc",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C7",
+      "claim": "The use of paralogous proteins and domains requires cells to avoid deleterious crosstalk between highly similar proteins and domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of paralogous proteins and domains comes at a cost, requiring cells to avoid deleterious crosstalk between highly similar proteins and domains (Bradley and Beltrao, 2019; Capra et al., 2012; Siryaporn and Goulian, 2008; Zarrinpar et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "9decae7d-01f0-41bc-9058-42e67128bd8d",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C8",
+      "claim": "Two-component signaling systems typically consist of a sensor histidine kinase that autophosphorylates upon signal recognition, and then transfers a phosphoryl group to a cognate response regulator.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-component signaling systems typically consist of a sensor histidine kinase (HK) that autophosphorylates upon signal recognition, and then transfers a phosphoryl group to a cognate response regulator (RR) that can trigger an intracellular response, frequently through changes in gene expression (Figure 1A; Buschiazzo and Trajtenberg, 2019; Capra and Laub, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior work and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "d1eeb4b1-450e-4e8e-9bb5-ae89c6555455",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C9",
+      "claim": "Most bacteria encode dozens of two-component signaling systems, with each system usually insulated from every other paralogous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Most bacteria encode dozens of these systems, with each system usually insulated from every other paralogous system (Galperin, 2005; Koretke et al., 2000; Skerker et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "e5238ff7-d40d-4673-a7a8-aa10eb08729b",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C10",
+      "claim": "Crosstalk between two-component systems appears relatively rare and has been shown to produce fitness defects when introduced artificially.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosstalk between systems appears relatively rare, and has been shown to produce fitness defects when introduced artificially (Capra et al., 2012), likely due to the decreased ability of a given HK to activate a given RR (Rowland and Deeds, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "ac974681-90dc-4c32-ad3c-818f2aab6ce2",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C11",
+      "claim": "The specificity of the HK-RR interaction is determined primarily through molecular recognition, with a relatively small number of amino acids promoting the cognate interaction and preventing unwanted crosstalk.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of the HK-RR interaction is determined primarily through molecular recognition, with a relatively small number of amino acids in both the histidine kinase and response regulator promoting the cognate interaction and preventing unwanted crosstalk with non-cognate proteins (Capra et al., 2012; Skerker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "a9e7fdac-6081-40b3-a3f3-1ce249aab308",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C12",
+      "claim": "Many \u03b1-proteobacteria contain two paralogous EnvZ-OmpR systems that appear to descend from a duplication that occurred in a basal \u03b1-proteobacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "Many, though not all, \u03b1-proteobacteria contain two paralogous EnvZ-OmpR systems that appear to descend from a duplication that occurred in a basal \u03b1-proteobacterium (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phylogenetic analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "3bbf7ade-fbdd-407d-9fa6-723bdbb66b04",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C13",
+      "claim": "In Caulobacter crescentus the two EnvZ-OmpR systems are CC1181-1182 and CC2932-2931.",
+      "claim_type": "EXPLICIT",
+      "source": "In Caulobacter crescentus these two systems are CC1181-1182 and CC2932-2931, which we hereafter refer to as EnvZ1-OmpR1 and EnvZ2-OmpR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the specific gene identifiers in C. crescentus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "62ef977d-2c2e-48de-b004-1754ecd4e10e",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C14",
+      "claim": "The EnvZ-OmpR systems in C. crescentus share less than 50% sequence identity, with particularly high divergence in the sensory domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These systems share less than 50% sequence identity, with particularly high divergence in the sensory domains (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence comparison data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "ecdfb423-2c72-461d-8b14-18498394e323",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C15",
+      "claim": "The duplication of EnvZ-OmpR in \u03b1-proteobacteria correlates with an absence of the related two-component signaling systems RstAB and CpxAR.",
+      "claim_type": "EXPLICIT",
+      "source": "The duplication of EnvZ-OmpR in \u03b1-proteobacteria correlates with an absence of the related two-component signaling systems RstAB and CpxAR, which are highly conserved in the \u03b3-proteobacteria (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phylogenetic distribution data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "b8398c9c-9de0-4a3c-9a0a-99fc7fdc9830",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C16",
+      "claim": "EnvZ1 transferred rapidly to OmpR1, with phosphorylated OmpR1 detected after 10 s and autophosphorylated EnvZ depleted by 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "EnvZ1 transferred rapidly to OmpR1, its cognate response regulator, with phosphorylated OmpR1 detected after 10 s and autophosphorylated EnvZ depleted by 5 min (Figure 1D, top left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "5cfa9c9e-2df6-413c-8cf3-2013daf69359",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C17",
+      "claim": "Autophosphorylated EnvZ1 transferred to OmpR2 less efficiently than to OmpR1, with nearly full depletion occurring only by 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophosphorylated EnvZ1 also transferred to OmpR2, but less efficiently as indicated by the slower accumulation of phosphorylated OmpR2 and slower depletion of autophosphorylated EnvZ1, with nearly full depletion occurring only by 30 min (Figure 1D, top right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "6cbe96d6-8f70-489d-b8ab-43b1e15d5312",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C18",
+      "claim": "Each EnvZ paralog exhibited a clear preference for its cognate response regulator.",
+      "claim_type": "EXPLICIT",
+      "source": "By this measure, each EnvZ paralog exhibited a clear preference for its cognate response regulator (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantified phosphotransfer data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "c504222e-1443-4509-95cc-378a8ee34eef",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C19",
+      "claim": "EnvZ1 showed a strong preference for OmpR1 in an in vitro competition assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EnvZ1 shows a weaker preference for its cognate response regulator in these assays than does EnvZ2, EnvZ1 showed a strong preference for OmpR1 in an in vitro competition assay (Figure 1\u2014figure supplement 1B), and even modest substrate preferences in vitro can result in significant in vivo insulation (Capra et al., 2012; McClune et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by competition assay data in Figure 1\u2014figure supplement 1B and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "a89dac4f-c339-4b79-8068-806a733a6126",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C20",
+      "claim": "A maximum likelihood phylogeny was inferred for 200 matched pairs of cognate histidine kinase-response regulators from the EnvZ-OmpR family and other closely related two-component signaling system families.",
+      "claim_type": "EXPLICIT",
+      "source": "A maximum likelihood phylogeny was inferred for 200 matched pairs of cognate histidine kinase-response regulators from the EnvZ-OmpR family and other closely related two-component signaling system families (Figure 2A; full phylogeny in Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the phylogenetic analysis method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "9570a0da-b4f2-4674-8dc3-1d00b4e08693",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C21",
+      "claim": "The matched HK-RR phylogeny was found to be largely concordant with phylogenies based on HK or RR sequences alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This matched HK-RR phylogeny was found to be largely concordant with phylogenies based on HK or RR sequences alone (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of phylogenies shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "f5991203-f4c8-46cd-ba94-470094ddbe23",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C22",
+      "claim": "The duplication event that created the EnvZ-OmpR paralogs occurred near the origin of the \u03b1-proteobacteria ~1900 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "This duplication event was quite ancient, having occurred near the origin of the \u03b1-proteobacteria ~1900 million years (Ma) ago (Wang and Luo, 2021), and these ancestral sequences share only ~50% identity with the extant proteins in C. crescentus (Figure 3\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to prior work on bacterial evolution timing and sequence identity data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "39e8b2f9-720d-46ae-a1dc-8041ea6dc76f",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C23",
+      "claim": "Each ancestral protein was reconstructed with high confidence, with mean posterior probabilities >0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "Each ancestor was reconstructed with high confidence, with mean posterior probabilities >0.8 (ancHK=0.85, ancRR=0.88, ancHK1=0.87, ancRR1=0.91, ancHK2=0.81, ancRR2=0.85; Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by posterior probability data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "62713a69-38d4-4b88-a8ff-a0fc7c2e28e6",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C24",
+      "claim": "All reconstructed ancestral proteins show clear activity in phosphotransfer assays, indicating that the inferred ancestors represent functional histidine kinases and response regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "We first tested our ancestral proteins for activity in our in vitro phosphotransfer experiments, and found that all show clear activity in this assay, indicating that the inferred ancestors represent functional histidine kinases and response regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phosphotransfer assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "826f2b28-6741-485d-a422-9358998032f0",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C25",
+      "claim": "Transfer was observed from ancHK to ancRR, indicating that the most ancient reconstructions generated proteins capable of interacting and engaging in a productive phosphotransfer event.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed transfer from ancHK to ancRR (Figure 2D), indicating that even for our most ancient reconstructions we generated proteins capable of interacting and engaging in a productive phosphotransfer event.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "b09f3ed0-7335-40b0-9bb0-7dff26cf04b0",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C26",
+      "claim": "Phosphotransfer specificity was established in ancHK1-ancRR1 and ancHK2-ancRR2 shortly after the duplication of ancHK-ancRR.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that phosphotransfer specificity was established in ancHK-ancRR1 and ancHK-ancRR2 shortly after the duplication of ancHK-ancRR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on phosphotransfer assay data showing differential transfer rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "0f25651a-0583-49fc-9de3-c5c8ee54f422",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C27",
+      "claim": "ancHK1 did not acquire mutations to prevent crosstalk with ancRR2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that transfer from either ancHK or ancHK1 to ancRR2 was similar (Figure 3C, right), suggesting that ancHK1 did not acquire mutations to prevent crosstalk with ancRR2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "d4596749-6447-4554-98b9-6903766c4c33",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C28",
+      "claim": "ancHK2 acquired mutations post-duplication that prevent crosstalk with ancRR1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that ancHK2 transferred to ancRR1 much more slowly than did ancHK (Figure 3C, left), suggesting that ancHK2 must have acquired mutations post-duplication that prevent crosstalk with ancRR1 (all transfers shown together in Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "c4504dd9-017f-4a31-a9cb-836222809943",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C29",
+      "claim": "ancRR2 did not acquire mutations that prevent crosstalk with ancHK1.",
+      "claim_type": "EXPLICIT",
+      "source": "We then compared the ability of ancRR, ancRR1, and ancRR2 to be phosphorylated by ancHK1, finding that ancRR was not phosphorylated more rapidly than ancRR2 (Figure 3E, left), indicating that ancRR2 did not acquire mutations that prevent crosstalk with ancHK1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "9c7984cf-0eb2-486d-a2a4-1fc17d7071cf",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C30",
+      "claim": "ancRR1 acquired mutations that prevent crosstalk with ancHK2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also compared the ability of ancRR, ancRR1, and ancRR2 to be phosphorylated by ancHK2 (Figure 3E, right). In this case, we find that ancRR1 was phosphorylated much more slowly than ancRR, indicating that ancRR1 must have acquired mutations that prevent crosstalk with ancHK2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "b3e141a5-8ffa-4d3d-8c6c-0b6af78d863c",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C31",
+      "claim": "Only two of the four paralogs, ancHK2 and ancRR1, acquired mutations that significantly alter their protein-protein interaction specificity to prevent crosstalk between the paralogous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken all together, our results indicate that just two of the four paralogs, ancHK2 and ancRR1, acquired mutations that significantly alter their protein-protein interaction specificity in order to prevent crosstalk between the paralogous systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the phosphotransfer assay data comparing ancestral proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "ed74c6d2-f1cb-436e-9d5d-6b27ecf719eb",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C32",
+      "claim": "ancHK2 showed an ~28-fold kinetic preference for ancRR2 relative to ancRR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the ratios of specificity constants of the ancestral histidine kinases (Figure 3F), we found that both ancHK and ancHK1 showed little kinetic preference, whereas ancHK2 showed an ~28-fold kinetic preference for ancRR2 relative to ancRR1, supporting the idea that the kinetic preference of ancHK1 did not change significantly post-duplication while that of ancHK2 did.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantified kinetic data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "fa18fa09-e8be-4aa3-8149-99a3c23d2bc9",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C33",
+      "claim": "ancRR1 showed a strong preference for ancHK1 (~4.5 fold).",
+      "claim_type": "EXPLICIT",
+      "source": "For the response regulators, we observed the opposite pattern, with both ancRR and ancRR2 showing modest kinetic preferences for transfer from ancHK2 (~1.5 and 1.8-fold, respectively) and ancRR1 showing a strong preference for ancHK1 (~4.5 fold) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantified kinetic data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "033210e8-6acd-4c27-86ff-7a7614af797e",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C34",
+      "claim": "Only two positions (27 and 29) in the key specificity-determining residues differ between ancHK and ancHK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Only two of these positions differ between ancHK and ancHK2: positions 27 and 29, which have changed from an arginine and glutamate to a glutamine and alanine, respectively (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "58f590d1-e1d2-4265-8a5c-fb2629d3f80a",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C35",
+      "claim": "At position 27, arginine is present in >90% of 1,886 EnvZ1 sequences but in none of the 822 EnvZ2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "At position 27, arginine is present in >90% of 1,886 EnvZ1 sequences but in none of the 822 EnvZ2 sequences, for which >90% of sequences feature either glutamine, glutamate, or serine (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "1dd2aa9b-924a-4e18-ad3f-92fd5f8e0b17",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C36",
+      "claim": "At position 29, the negatively charged residues glutamate and aspartate are present in >90% of EnvZ1 sequences but <10% of EnvZ2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "At position 29, the negatively charged residues glutamate and aspartate are present in >90% of EnvZ1 sequences but <10% of EnvZ2 sequences, where alanine is present in >85% of sequences (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "2e7a34d9-fbeb-42fc-91b6-2f21207692fb",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C37",
+      "claim": "Only one position (position 11) in the key specificity-determining residues showed broad paralog specificity between ancRR and ancRR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Only two of the key positions were found to differ between ancRR and ancRR1 (Figure 4C), and only one of these, position 11, showed broad paralog specificity (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment and logo data shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "f71b5f48-a2de-44bd-8ced-28236c3760a9",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C38",
+      "claim": "At position 11, arginine is present in >90% of OmpR2 sequences and <1% of OmpR1 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "At this position, arginine is present in >90% of OmpR2 sequences and <1% of OmpR1 sequences. Instead, negatively charged glutamate and aspartate are present in >60% of OmpR1 sequences (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "e91d70ff-3380-46f4-bd4d-4e183870c7df",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C39",
+      "claim": "The substitutions R27Q and E29A in ancHK, both individually and together, slowed transfer to ancRR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the parental protein, ancHK, both individual substitutions slowed transfer to ancRR1, with significantly less transfer observed at 2 min. When combined, these two substitutions decreased transfer to ancRR1 further, with a rate of transfer now comparable to that observed with ancHK2 (Figure 4E, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 4E and 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "e49ef566-4f17-45d5-aff7-af1690c34477",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C40",
+      "claim": "The substitutions R27Q and E29A in ancHK did not have a significant effect on transfer to ancRR2.",
+      "claim_type": "EXPLICIT",
+      "source": "These substitutions did not have a significant effect on transfer to ancRR2 (Figure 4\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 4\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "eb2e7367-aca6-4569-bcf0-36dc89522d12",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C41",
+      "claim": "The two substitutions R27Q and E29A in ancHK are sufficient to slow transfer from ancHK to ancRR1 and likely account for the major changes in ancHK2 that occurred post-duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these two substitutions alone are sufficient to slow transfer from ancHK to ancRR1 and likely account for the major changes in ancHK2 that occurred post-duplication to help drive the insulation of the two paralogous pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the phosphotransfer assay data with mutant proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "23b8839c-57b5-4f6b-951e-745c47168a5d",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C42",
+      "claim": "Introducing the substitution R11E into ancRR was sufficient to significantly slow transfer from ancHK2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that introducing this single substitution into ancRR was sufficient to significantly slow transfer from ancHK2, with a rate of transfer very similar to that seen for ancHK2 to ancRR1 (Figure 4F, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 4F and 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "dad4aa4b-5689-4bd5-9c7e-4c5519734d4e",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C44",
+      "claim": "Changes in just two of the four proteins, ancHK2 and ancRR1, which are not cognate partners, were required to insulate these systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these results indicate that changes in just two of the four proteins, ancHK2 and ancRR1, which are notably not cognate partners, were required to insulate these systems (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on the mutational analysis data and illustrated in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "8f9425b0-34c9-4854-910a-50270d2d8055",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C45",
+      "claim": "The R11E substitution in ancRR improved transfer from both ancHK1 and ancHK.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we introduced the substitution R11E into ancRR, we observed slower transfer from ancHK2, as already noted (Figure 4F, I), as well as faster transfer from both ancHK1 and ancHK (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figures 4F, 4I, 5A, and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "df65077a-3f77-4771-9606-bf0242fb5037",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C46",
+      "claim": "A single mutation in ancRR was sufficient to both improve the ancestral interaction and help prevent crosstalk with the new paralog ancHK2.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that a single mutation in ancRR was sufficient to both improve the ancestral interaction and help prevent crosstalk with the new paralog ancHK2 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on the phosphotransfer assay data with the R11E mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "f69af8bd-ec7f-4a1f-9a29-0c5498781a25",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C47",
+      "claim": "The ancestral ancHK-ancRR interaction was not optimized for the most rapid possible phosphotransfer.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding further suggests that the ancestral ancHK-ancRR interaction was not optimized for the most rapid possible phosphotransfer, and that ancHK1 evolved a preference for ancRR1 by simply improving the ancHK1-ancRR1 interaction such that this transfer outcompetes crosstalk to ancRR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the observation that the R11E mutation improved transfer rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "40d99ed3-ad30-428f-937c-44ca09c85f07",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C48",
+      "claim": "Substituting an arginine at position 11 in ancRR with a glutamate enables ancRR1 to form a salt bridge with R27 in ancHK and ancHK1.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures suggested that substituting an arginine at position 11 in ancRR with a glutamate enables ancRR1 to form a salt bridge with R27 in ancHK and ancHK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on AlphaFold2 structure predictions of the protein complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "a0f4a2e3-31dc-41e6-ab2b-bfafeba7f35c",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C49",
+      "claim": "The emergence of a salt bridge between E11 in ancRR1 and R27 in ancHK may explain why the R11E substitution improves the interaction of ancRR1 with ancHK and ancHK1.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of this salt bridge may explain why the R11E substitution improves the interaction of ancRR1 with ancHK and ancHK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural prediction and phosphotransfer data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "5c4a0a92-586e-4981-92ca-877841050781",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C50",
+      "claim": "The extant proteins in C. crescentus exhibit more paralog specificity than the ancestors that arise shortly after the duplication event, suggesting that subsequent mutations further insulated these paralogous protein interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed, and can largely account for, paralog specificity in the ancestors that arise shortly after the duplication event, the extant proteins in C. crescentus exhibit more paralog specificity (Figure 1D), suggesting that subsequent mutations further insulated these paralogous protein interfaces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of phosphotransfer data between ancestral and extant proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "f9dce3d7-7340-48f3-817c-b9d235dfec3f",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C51",
+      "claim": "Position 26 is highly conserved in the Caulobacteraceae, with a phenylalanine in the Caulobacteraceae compared to a leucine in the ancHK1 ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "When we looked at the identity of these residues in close relatives of C. crescentus, the Caulobacteraceae, we find that one of these positions \u2013 position 26 \u2013 is highly conserved in this clade, with a phenylalanine in the Caulobacteraceae compared to a leucine in the ancHK1 ancestor (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "6447f985-bbd3-4e85-a310-0f7c9a520cf7",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C52",
+      "claim": "The L26F substitution in ancHK1 resulted in faster transfer to C. crescentus OmpR1, recapitulating the behavior observed for C. crescentus EnvZ1.",
+      "claim_type": "EXPLICIT",
+      "source": "When we introduced this substitution into ancHK1, we observed faster transfer to C. crescentus OmpR1 (Figure 6C), recapitulating the behavior observed for C. crescentus EnvZ1 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "8cad2d56-104c-4e65-811b-c0bf66b11ea5",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C53",
+      "claim": "The L26F mutation had a smaller effect on transfer to C. crescentus OmpR2, although it also slowed transfer to this non-cognate partner.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation had a smaller effect on transfer to C. crescentus OmpR2 (Figure 6C, D), although it also slowed transfer to this non-cognate partner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphotransfer assay data shown in Figure 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "b849d6a0-5dd3-4516-9e01-6785f99ee961",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C54",
+      "claim": "A leucine to phenylalanine substitution in the lineage leading from ancHK1 to EnvZ1 provided further insulation of the two paralogous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that a leucine to phenylalanine substitution in the lineage leading from ancHK1 to EnvZ1 provided further insulation of the two paralogous systems (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on the phosphotransfer data with the L26F mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "164f83dd-a4c1-4416-a2c6-9b70e7d79f08",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C55",
+      "claim": "Insulation of the two paralogous systems was accomplished primarily by improving the cognate ancHK1-ancRR1 interaction and breaking the non-cognate ancHK2-ancRR1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation also supports the model that insulation of the two paralogous systems was accomplished primarily by improving the cognate ancHK1-ancRR1 interaction and breaking the non-cognate ancHK2-ancRR1 interaction (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model supported by the combined mutational analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "33eee886-da34-45dc-a106-15eb33b3da88",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C56",
+      "claim": "Ancestral sequence reconstruction can be used to simultaneously reconstruct two interacting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we showed that this technique can be used to simultaneously reconstruct two interacting proteins, and we used these ancestors along with mutational intermediates to determine the evolutionary trajectory that allowed for the generation of new, insulated protein interaction interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim supported by the successful reconstruction and characterization of ancestral protein pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "41238e01-9927-4e96-aa70-7e38d4c2c4ea",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C57",
+      "claim": "Mutations in both paralogous systems were required to insulate the EnvZ/OmpR interfaces in \u03b1-proteobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the EnvZ/OmpR duplication in \u03b1-protebacteria, our results support the latter model that mutations in both paralogous systems were required to insulate these interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the finding that mutations in both ancHK2 and ancRR1 were necessary.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "13ce7440-53c8-4a12-b6b6-a6c3d2b0e333",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C58",
+      "claim": "Changes in just two proteins (ancHK2 and ancRR1) were sufficient to establish specificity, rather than changes to all four proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Somewhat surprisingly, however, we found that changes in just two proteins (ancHK2 and ancRR1) were sufficient to establish specificity, rather than changes to all four proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by the mutational analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "4fdb91fa-c410-4543-9926-bfdb49ef967a",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C59",
+      "claim": "Both protein interaction interfaces were impacted by the duplication event, and a new two-component signaling system was not generated entirely via neofunctionalization of one system.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that both protein interaction interfaces were impacted by the duplication event, and that a new two-component signaling system was not generated entirely via neofunctionalization of one system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the finding that mutations occurred in proteins from both paralogous systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "6ea02a27-26a7-4061-b1f3-687343692868",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C60",
+      "claim": "Just a few key substitutions can have significant consequences for the specificity of protein binding to DNA, protein binding to small molecules, and protein multimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that a small number of historical substitutions can have significant consequences for the specificity of protein binding to DNA (McKeown et al., 2014), protein binding to small molecules (Bridgham et al., 2006), and protein multimerization (Finnigan et al., 2012; Pillai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "77e1cfa5-33af-450d-a244-e8552a0f3020",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C61",
+      "claim": "Substitutions in just a few key residues of the histidine kinase or response regulator can significantly alter the specificity of their interactions and generate new synthetic insulated protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "For two-component signaling systems, substitutions in just a few key residues of the histidine kinase or response regulator can significantly alter the specificity of their interactions and generate new synthetic insulated protein-protein interactions (Capra et al., 2010; McClune et al., 2019; Skerker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "5b2749b9-16c4-4fff-8214-3c309f62e204",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C62",
+      "claim": "For the EnvZ-OmpR paralogs in \u03b1-proteobacteria, just three key ancestral substitutions (R27Q and E29A in ancHK2, and R11E in ancRR1) were sufficient to establish specificity upon duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, for the EnvZ-OmpR paralogs in \u03b1-proteobacteria, just three key ancestral substitutions (R27Q and E29A in ancHK2, and R11E in ancRR1) were indeed sufficient to establish specificity upon duplication, with one additional subsequent mutation (L26F in ancHK1) sufficient to establish specificity that resembles the specificity observed in the extant C. crescentus systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by the mutational analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "084e4e1a-a999-4537-9ec6-c55ab532d57f",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C63",
+      "claim": "New, insulated two-component signaling pathways can readily evolve via gene duplication and the subsequent accumulation of just a few key substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that new, insulated two-component signaling pathways can readily evolve via gene duplication and the subsequent accumulation of just a few key substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "fe5f864c-a53c-4a27-a7fe-787c338007b6",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C64",
+      "claim": "The insulation of the paralogous ancHK1-ancRR1 and ancHK2-ancRR2 interfaces was primarily accomplished by weakening the interaction between ancHK2 and ancRR1, as well as strengthening the interaction between ancHK1 and ancRR1.",
+      "claim_type": "EXPLICIT",
+      "source": "The insulation of the paralogous ancHK1-ancRR1 and ancHK2-ancRR2 interfaces was primarily accomplished by weakening the interaction between ancHK2 and ancRR1, as well as strengthening the interaction between ancHK1 and ancRR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the mechanisms identified through the mutational analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "9c330b54-8903-4831-9858-efead3baa621",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C65",
+      "claim": "The ancestral interaction ancHK-ancRR was not fully optimized for rapid phosphotransfer.",
+      "claim_type": "EXPLICIT",
+      "source": "This evolutionary path relied on the fact that the ancestral interaction, ancHK-ancRR, was not fully optimized for rapid phosphotransfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the R11E mutation improved transfer rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "627ff41a-8a7b-4d00-a538-51e9ee4ec060",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C66",
+      "claim": "Protein-protein interactions that are non-optimal may be particularly well-suited to duplication and divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that other two-component signaling systems and other protein-protein interactions that are similarly non-optimal may be particularly well-suited to duplication and divergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "6c2b081e-e503-4980-ae24-ea1f4ce242c8",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C67",
+      "claim": "Strong selection against crosstalk occurs immediately post-duplication followed by long periods of relative stasis in the key specificity-determining residues and neutral accumulation of changes elsewhere in these proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This sequence of events suggests that strong selection against crosstalk occurs immediately post-duplication followed by long periods of relative stasis in the key specificity-determining residues and neutral accumulation of changes elsewhere in these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the evolutionary pattern observed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "7d6c0b1b-7d5e-4ecf-9bb9-329beb739bbf",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C68",
+      "claim": "A small set of mutations in two non-cognate proteins was largely sufficient to establish insulation of the two EnvZ-OmpR pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We have determined the likely evolutionary trajectory that resulted in the diversification of the two paralogous EnvZ-OmpR paralogous systems in \u03b1-proteobacteria. In this case, a small set of mutations in two non-cognate proteins was largely sufficient to establish insulation of the two pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "df3414bf-771a-4e5b-a99c-688373c49cbb",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C69",
+      "claim": "It is unlikely that a single model will account for the mechanism of divergence of two-component systems in general.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether similar trajectories have been followed to establish other paralogous two-component signaling pathways remains an open question, but it seems unlikely that a single model will account for the mechanism of divergence of these systems in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the generalizability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "c82bf782-e299-44f5-a1b2-73548035b051",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C70",
+      "claim": "The avoidance of crosstalk with other, existing paralogs following a duplication event can also select for changes in specificity residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work also focused entirely on the two systems that were produced by a duplication event. However, prior work has indicated that the avoidance of crosstalk with other, existing paralogs following a duplication event can also select for changes in specificity residues (Capra et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "da203356-4108-492c-8d37-6cb21048f977",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C71",
+      "claim": "EnvZ and OmpR homologs from the ProGenomes database were identified using HMMER.",
+      "claim_type": "EXPLICIT",
+      "source": "EnvZ and OmpR homologs from the ProGenomes database (Mende et al., 2020) were identified using HMMER (Eddy, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "cb0488a7-13d1-487f-a3b4-f296f78f02c7",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C72",
+      "claim": "Cognate histidine kinase and response regulator pairs were matched based on genome proximity, with only adjacent genes matched.",
+      "claim_type": "EXPLICIT",
+      "source": "Cognate histidine kinase and response regulator pairs were matched based on genome proximity, with only adjacent genes matched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "61a3cfd6-ca8f-4497-a604-2a77bee7ac58",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C73",
+      "claim": "The best fit evolutionary model was selected using ModelTest and the Akaike Information Criterion (LG +gamma).",
+      "claim_type": "EXPLICIT",
+      "source": "The best fit evolutionary model was selected using ModelTest (Darriba et al., 2020) and the Akaike Information Criterion (LG +gamma) and a maximum likelihood phylogeny was inferred using PhyML 3.3.3 (Guindon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "0234ec10-95f7-4a2a-ae05-5b36bafdef78",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C74",
+      "claim": "Ancestral sequences were reconstructed using the codeml package in PAML 4.8.",
+      "claim_type": "EXPLICIT",
+      "source": "Ancestral sequences were then reconstructed using the codeml package in PAML 4.8 (Yang, 2007) using the maximum likelihood phylogeny (full DNA sequences for all reconstructed ancestors in Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "ff3c0f60-4b27-456b-8cd2-fc9ee540960f",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C75",
+      "claim": "Ambiguously reconstructed sites were identified as those at which multiple residues had posterior probabilities >0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for uncertainty in the reconstructions, ambiguously reconstructed sites were identified as those at which multiple residues had posterior probabilities >0.2 (Eick et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "ffeb53c3-aac5-43af-8326-b8e81aac947a",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C76",
+      "claim": "The cytoplasmic domains (DHp and CA) of EnvZ were purified fused to an N-terminal MBP-His6 tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the cytoplasmic domains (DHp and CA) of EnvZ were purified fused to an N-terminal MBP-His6 tag; full-length OmpR was purified fused to an N-terminal Trx-His6 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "836148c7-6c16-4661-9b11-5fc469e2c663",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C77",
+      "claim": "Full-length OmpR was purified fused to an N-terminal Trx-His6 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the cytoplasmic domains (DHp and CA) of EnvZ were purified fused to an N-terminal MBP-His6 tag; full-length OmpR was purified fused to an N-terminal Trx-His6 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "60728250-d6de-489c-9f62-143123af7f56",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C78",
+      "claim": "Both EnvZ and OmpR proteins were expressed in BL21(DE3) cells and purified on a Ni2+-NTA column.",
+      "claim_type": "EXPLICIT",
+      "source": "Both proteins were expressed in BL21(DE3) cells and purified on a Ni2+-NTA column.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "3746fdb7-58b1-4094-90d6-058f9b0d2bb4",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C79",
+      "claim": "A given histidine kinase was first autophosphorylated with [\u03b3-32P]-ATP for 90 min at 30 \u00b0C and then mixed at a 1:4 molar ratio with a response regulator.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, a given histidine kinase was first autophosphorylated with [\u03b3-32P]-ATP (Perkin Elmer) for 90 min at 30 \u00b0C to drive autophosphorylation and then mixed at a 1:4 molar ratio with a response regulator (1 \u03bcM EnvZ, 4 \u03bcM OmpR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "f038f9d1-487c-4ed3-8325-72cb915f11b2",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "claim_id": "C80",
+      "claim": "The predicted structure of the ancHK-ancRR and ancHK-ancRR1 complexes was generated using AlphaFold2.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted structure of the ancHK-ancRR and ancHK-ancRR1 complexes was generated using AlphaFold2 (Jumper et al., 2021), modeling the histidine kinase as a homodimer and the response regulator as a monomer (Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fd85d11b-f687-43d2-8b87-8b74576b9d9e",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The extant EnvZ-OmpR paralogs in C. crescentus exhibit phosphotransfer specificity, with each histidine kinase showing a clear preference for its cognate response regulator. EnvZ1 and EnvZ2 transfer phosphoryl groups more rapidly to their cognate partners (OmpR1 and OmpR2, respectively) than to non-cognate partners, as demonstrated by in vitro phosphotransfer assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C19 collectively demonstrate that the extant C. crescentus EnvZ-OmpR paralogs exhibit specificity through phosphotransfer assays (C16-C18) and competition experiments (C19). The phylogenetic evidence (C12) and sequence divergence data (C14-C15) provide context for this specificity. The experimental data in Figures 1D-E directly support the specificity claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "7702b006-d5c7-449b-abe4-f4c6ca9ffcdc",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ancestral protein reconstruction successfully generated functional ancestral histidine kinases and response regulators that existed before and after the duplication event ~1900 million years ago. All reconstructed ancestors showed clear phosphotransfer activity, including the most ancient ancHK-ancRR pair, and were reconstructed with high confidence (mean posterior probabilities >0.8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 describe the ancestral reconstruction methodology and validation. The high posterior probabilities (C23), functional activity in phosphotransfer assays (C24-C25), and concordance between different phylogenetic approaches (C21) provide strong support for the quality of the reconstructions. The methods are well-documented (C20, C71-C75).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "deaee00b-959c-4826-8949-7d0a5452fb05",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phosphotransfer specificity was established shortly after duplication, with only two of the four paralogs (ancHK2 and ancRR1) acquiring mutations that significantly altered their interaction specificity. ancHK2 showed ~28-fold kinetic preference for ancRR2 over ancRR1, while ancRR1 showed ~4.5-fold preference for ancHK1 over ancHK2. In contrast, ancHK1 and ancRR2 did not acquire mutations preventing crosstalk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 present a coherent model supported by systematic phosphotransfer experiments comparing ancestral proteins (Figures 3A-F). The quantitative kinetic data (C32-C33) and comparative transfer experiments (C27-C30) provide strong evidence that specificity arose through mutations in only two proteins. The conclusion (C31) is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "b10ecbbf-a7d7-4c40-a199-38526a014498",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Three key mutations (R27Q and E29A in ancHK2, and R11E in ancRR1) were sufficient to establish specificity between the paralogous systems. These mutations occur in only two of the four proteins (ancHK2 and ancRR1, which are not cognate partners). The R27Q and E29A substitutions in ancHK slowed transfer to ancRR1 without affecting transfer to ancRR2, while R11E in ancRR slowed transfer from ancHK2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C44 identify specific mutations responsible for specificity through sequence analysis (C34-C38) and mutagenesis experiments (C39-C42). The sequence conservation data from >1800 sequences (C35-C36, C38) and the functional validation through site-directed mutagenesis (Figure 4E-I) provide strong support. The conclusion that only three mutations in two proteins are sufficient (C44) is directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "002b708c-9c79-4803-96c4-6bb3a10e2673",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The R11E substitution in ancRR both improved the ancestral ancHK-ancRR interaction and prevented crosstalk with ancHK2, indicating that the ancestral interaction was not optimized for rapid phosphotransfer. Structural modeling suggests this mutation enables formation of a salt bridge between E11 in ancRR1 and R27 in ancHK/ancHK1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 demonstrate dual functionality of the R11E mutation through phosphotransfer experiments (C45, Figure 5A-B) and structural modeling (C48-C49, Figure 5D). The observation that this mutation both improves cognate interaction and prevents crosstalk (C46) is well-supported by experimental data. The structural explanation (C48-C49) is based on AlphaFold2 predictions, which provide a plausible mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "9c78dafe-8ab1-4226-a88d-e7fc18d1149e",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Additional mutations beyond the initial three continued to refine specificity. A leucine to phenylalanine substitution at position 26 (L26F) in the lineage from ancHK1 to C. crescentus EnvZ1 provided further insulation by improving cognate transfer to OmpR1 and reducing non-cognate transfer to OmpR2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 identify subsequent evolutionary refinements through sequence analysis (C51) and mutagenesis (C52-C53, Figure 6C-D). The observation that extant proteins show greater specificity than immediate post-duplication ancestors (C50) is supported by comparing Figures 1D and 3A. The L26F mutation's effects are experimentally validated (C52-C53).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "e904d286-1b4a-44f1-931f-923540c18159",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study's main finding is that just three mutations in two non-cognate proteins were sufficient to establish specificity of the duplicated EnvZ-OmpR systems. Insulation was accomplished through both weakening non-cognate interactions (ancHK2-ancRR1) and strengthening cognate interactions (ancHK1-ancRR1), exploiting the fact that the ancestral interaction was not fully optimized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C62-C65, and C68 summarize the study's central findings. These conclusions are well-supported by the comprehensive experimental data on ancestral proteins and site-directed mutants. The dual mechanism of specificity evolution (weakening and strengthening interactions, C3-C4, C64) is directly demonstrated through the mutagenesis experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "c1673037-2d2d-48d6-97a7-dd552cf7c3e3",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ancestral sequence reconstruction can successfully reconstruct interacting protein pairs to determine evolutionary trajectories. For the EnvZ-OmpR duplication, mutations in both paralogous systems (specifically ancHK2 and ancRR1) were required for insulation, representing a model where both interfaces were impacted rather than complete neofunctionalization of one system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 present methodological and conceptual conclusions. The successful reconstruction and characterization of interacting ancestral protein pairs (C56) is demonstrated throughout the study. The finding that mutations in both systems were required (C57-C58) is supported by the experimental data showing changes in ancHK2 and ancRR1. The interpretation regarding neofunctionalization (C59) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "18b7dbdb-a0e1-40ba-aefc-f4cbf5c9ba38",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that protein-protein interactions that are non-optimal may be particularly well-suited to duplication and divergence, and that strong selection against crosstalk occurs immediately post-duplication followed by long periods of stasis. They note that a single model may not account for divergence of two-component systems in general.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66, C67, and C69 are explicitly speculative statements (C66, C69) or interpretations (C67) that extend beyond the direct experimental evidence. While these speculations are reasonable given the findings, they represent hypotheses that would require additional studies of other systems to validate. The authors appropriately frame these as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "019fd93f-c65b-44b1-897a-49bca83a0247",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study employed standard methods for ancestral reconstruction (HMMER, PAML, PhyML) and protein characterization (expression in E. coli, Ni-NTA purification, phosphotransfer assays with radiolabeled ATP, AlphaFold2 structure prediction). Cognate HK-RR pairs were matched based on genome proximity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C80 describe methodological details that are standard and well-established in the field. The methods are clearly documented and appropriate for the study's goals. The use of genome proximity to match cognate pairs (C72) is a reasonable approach for two-component systems that are typically co-operonic.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    },
+    {
+      "id": "529373d1-2939-4ed9-a8d8-a912f252807c",
+      "content_id": "7c8393b7-de61-452a-a64b-aa042921a2e4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about gene duplication, paralogous proteins, two-component signaling systems, and prior work on protein specificity evolution. These claims provide context for the study but are primarily based on citations to prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C11, C60-C61, and C70 present established background knowledge supported by appropriate citations to prior literature. These claims accurately represent the current understanding in the field and provide necessary context for the study. The citations appear appropriate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:33:26.288813Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a9e7fdac-6081-40b3-a3f3-1ce249aab308",
+      "result_id": "fd85d11b-f687-43d2-8b87-8b74576b9d9e"
+    },
+    {
+      "claim_id": "3bbf7ade-fbdd-407d-9fa6-723bdbb66b04",
+      "result_id": "fd85d11b-f687-43d2-8b87-8b74576b9d9e"
+    },
+    {
+      "claim_id": "62ef977d-2c2e-48de-b004-1754ecd4e10e",
+      "result_id": "fd85d11b-f687-43d2-8b87-8b74576b9d9e"
+    },
+    {
+      "claim_id": "ecdfb423-2c72-461d-8b14-18498394e323",
+      "result_id": "fd85d11b-f687-43d2-8b87-8b74576b9d9e"
+    },
+    {
+      "claim_id": "b8398c9c-9de0-4a3c-9a0a-99fc7fdc9830",
+      "result_id": "fd85d11b-f687-43d2-8b87-8b74576b9d9e"
+    },
+    {
+      "claim_id": "5cfa9c9e-2df6-413c-8cf3-2013daf69359",
+      "result_id": "fd85d11b-f687-43d2-8b87-8b74576b9d9e"
+    },
+    {
+      "claim_id": "6cbe96d6-8f70-489d-b8ab-43b1e15d5312",
+      "result_id": "fd85d11b-f687-43d2-8b87-8b74576b9d9e"
+    },
+    {
+      "claim_id": "c504222e-1443-4509-95cc-378a8ee34eef",
+      "result_id": "fd85d11b-f687-43d2-8b87-8b74576b9d9e"
+    },
+    {
+      "claim_id": "a89dac4f-c339-4b79-8068-806a733a6126",
+      "result_id": "7702b006-d5c7-449b-abe4-f4c6ca9ffcdc"
+    },
+    {
+      "claim_id": "9570a0da-b4f2-4674-8dc3-1d00b4e08693",
+      "result_id": "7702b006-d5c7-449b-abe4-f4c6ca9ffcdc"
+    },
+    {
+      "claim_id": "f5991203-f4c8-46cd-ba94-470094ddbe23",
+      "result_id": "7702b006-d5c7-449b-abe4-f4c6ca9ffcdc"
+    },
+    {
+      "claim_id": "39e8b2f9-720d-46ae-a1dc-8041ea6dc76f",
+      "result_id": "7702b006-d5c7-449b-abe4-f4c6ca9ffcdc"
+    },
+    {
+      "claim_id": "62713a69-38d4-4b88-a8ff-a0fc7c2e28e6",
+      "result_id": "7702b006-d5c7-449b-abe4-f4c6ca9ffcdc"
+    },
+    {
+      "claim_id": "826f2b28-6741-485d-a422-9358998032f0",
+      "result_id": "7702b006-d5c7-449b-abe4-f4c6ca9ffcdc"
+    },
+    {
+      "claim_id": "b09f3ed0-7335-40b0-9bb0-7dff26cf04b0",
+      "result_id": "deaee00b-959c-4826-8949-7d0a5452fb05"
+    },
+    {
+      "claim_id": "0f25651a-0583-49fc-9de3-c5c8ee54f422",
+      "result_id": "deaee00b-959c-4826-8949-7d0a5452fb05"
+    },
+    {
+      "claim_id": "d4596749-6447-4554-98b9-6903766c4c33",
+      "result_id": "deaee00b-959c-4826-8949-7d0a5452fb05"
+    },
+    {
+      "claim_id": "c4504dd9-017f-4a31-a9cb-836222809943",
+      "result_id": "deaee00b-959c-4826-8949-7d0a5452fb05"
+    },
+    {
+      "claim_id": "9c7984cf-0eb2-486d-a2a4-1fc17d7071cf",
+      "result_id": "deaee00b-959c-4826-8949-7d0a5452fb05"
+    },
+    {
+      "claim_id": "b3e141a5-8ffa-4d3d-8c6c-0b6af78d863c",
+      "result_id": "deaee00b-959c-4826-8949-7d0a5452fb05"
+    },
+    {
+      "claim_id": "ed74c6d2-f1cb-436e-9d5d-6b27ecf719eb",
+      "result_id": "deaee00b-959c-4826-8949-7d0a5452fb05"
+    },
+    {
+      "claim_id": "fa18fa09-e8be-4aa3-8149-99a3c23d2bc9",
+      "result_id": "deaee00b-959c-4826-8949-7d0a5452fb05"
+    },
+    {
+      "claim_id": "033210e8-6acd-4c27-86ff-7a7614af797e",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "58f590d1-e1d2-4265-8a5c-fb2629d3f80a",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "1dd2aa9b-924a-4e18-ad3f-92fd5f8e0b17",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "2e7a34d9-fbeb-42fc-91b6-2f21207692fb",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "f71b5f48-a2de-44bd-8ced-28236c3760a9",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "e91d70ff-3380-46f4-bd4d-4e183870c7df",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "e49ef566-4f17-45d5-aff7-af1690c34477",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "eb2e7367-aca6-4569-bcf0-36dc89522d12",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "23b8839c-57b5-4f6b-951e-745c47168a5d",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "dad4aa4b-5689-4bd5-9c7e-4c5519734d4e",
+      "result_id": "b10ecbbf-a7d7-4c40-a199-38526a014498"
+    },
+    {
+      "claim_id": "8f9425b0-34c9-4854-910a-50270d2d8055",
+      "result_id": "002b708c-9c79-4803-96c4-6bb3a10e2673"
+    },
+    {
+      "claim_id": "df65077a-3f77-4771-9606-bf0242fb5037",
+      "result_id": "002b708c-9c79-4803-96c4-6bb3a10e2673"
+    },
+    {
+      "claim_id": "f69af8bd-ec7f-4a1f-9a29-0c5498781a25",
+      "result_id": "002b708c-9c79-4803-96c4-6bb3a10e2673"
+    },
+    {
+      "claim_id": "40d99ed3-ad30-428f-937c-44ca09c85f07",
+      "result_id": "002b708c-9c79-4803-96c4-6bb3a10e2673"
+    },
+    {
+      "claim_id": "a0f4a2e3-31dc-41e6-ab2b-bfafeba7f35c",
+      "result_id": "002b708c-9c79-4803-96c4-6bb3a10e2673"
+    },
+    {
+      "claim_id": "5c4a0a92-586e-4981-92ca-877841050781",
+      "result_id": "9c78dafe-8ab1-4226-a88d-e7fc18d1149e"
+    },
+    {
+      "claim_id": "f9dce3d7-7340-48f3-817c-b9d235dfec3f",
+      "result_id": "9c78dafe-8ab1-4226-a88d-e7fc18d1149e"
+    },
+    {
+      "claim_id": "6447f985-bbd3-4e85-a310-0f7c9a520cf7",
+      "result_id": "9c78dafe-8ab1-4226-a88d-e7fc18d1149e"
+    },
+    {
+      "claim_id": "8cad2d56-104c-4e65-811b-c0bf66b11ea5",
+      "result_id": "9c78dafe-8ab1-4226-a88d-e7fc18d1149e"
+    },
+    {
+      "claim_id": "b849d6a0-5dd3-4516-9e01-6785f99ee961",
+      "result_id": "9c78dafe-8ab1-4226-a88d-e7fc18d1149e"
+    },
+    {
+      "claim_id": "164f83dd-a4c1-4416-a2c6-9b70e7d79f08",
+      "result_id": "9c78dafe-8ab1-4226-a88d-e7fc18d1149e"
+    },
+    {
+      "claim_id": "68ae352a-716d-424a-a707-35c968cff394",
+      "result_id": "e904d286-1b4a-44f1-931f-923540c18159"
+    },
+    {
+      "claim_id": "48004535-605d-414b-942f-33efcf902c8c",
+      "result_id": "e904d286-1b4a-44f1-931f-923540c18159"
+    },
+    {
+      "claim_id": "76d3bb8c-9d3d-47c5-bff8-cb860fa93730",
+      "result_id": "e904d286-1b4a-44f1-931f-923540c18159"
+    },
+    {
+      "claim_id": "5b2749b9-16c4-4fff-8214-3c309f62e204",
+      "result_id": "e904d286-1b4a-44f1-931f-923540c18159"
+    },
+    {
+      "claim_id": "084e4e1a-a999-4537-9ec6-c55ab532d57f",
+      "result_id": "e904d286-1b4a-44f1-931f-923540c18159"
+    },
+    {
+      "claim_id": "fe5f864c-a53c-4a27-a7fe-787c338007b6",
+      "result_id": "e904d286-1b4a-44f1-931f-923540c18159"
+    },
+    {
+      "claim_id": "9c330b54-8903-4831-9858-efead3baa621",
+      "result_id": "e904d286-1b4a-44f1-931f-923540c18159"
+    },
+    {
+      "claim_id": "7d6c0b1b-7d5e-4ecf-9bb9-329beb739bbf",
+      "result_id": "e904d286-1b4a-44f1-931f-923540c18159"
+    },
+    {
+      "claim_id": "33eee886-da34-45dc-a106-15eb33b3da88",
+      "result_id": "c1673037-2d2d-48d6-97a7-dd552cf7c3e3"
+    },
+    {
+      "claim_id": "41238e01-9927-4e96-aa70-7e38d4c2c4ea",
+      "result_id": "c1673037-2d2d-48d6-97a7-dd552cf7c3e3"
+    },
+    {
+      "claim_id": "13ce7440-53c8-4a12-b6b6-a6c3d2b0e333",
+      "result_id": "c1673037-2d2d-48d6-97a7-dd552cf7c3e3"
+    },
+    {
+      "claim_id": "4fdb91fa-c410-4543-9926-bfdb49ef967a",
+      "result_id": "c1673037-2d2d-48d6-97a7-dd552cf7c3e3"
+    },
+    {
+      "claim_id": "627ff41a-8a7b-4d00-a538-51e9ee4ec060",
+      "result_id": "18b7dbdb-a0e1-40ba-aefc-f4cbf5c9ba38"
+    },
+    {
+      "claim_id": "6c2b081e-e503-4980-ae24-ea1f4ce242c8",
+      "result_id": "18b7dbdb-a0e1-40ba-aefc-f4cbf5c9ba38"
+    },
+    {
+      "claim_id": "df3414bf-771a-4e5b-a99c-688373c49cbb",
+      "result_id": "18b7dbdb-a0e1-40ba-aefc-f4cbf5c9ba38"
+    },
+    {
+      "claim_id": "da203356-4108-492c-8d37-6cb21048f977",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "cb0488a7-13d1-487f-a3b4-f296f78f02c7",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "61a3cfd6-ca8f-4497-a604-2a77bee7ac58",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "0234ec10-95f7-4a2a-ae05-5b36bafdef78",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "ff3c0f60-4b27-456b-8cd2-fc9ee540960f",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "ffeb53c3-aac5-43af-8326-b8e81aac947a",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "836148c7-6c16-4661-9b11-5fc469e2c663",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "60728250-d6de-489c-9f62-143123af7f56",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "3746fdb7-58b1-4094-90d6-058f9b0d2bb4",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "f038f9d1-487c-4ed3-8325-72cb915f11b2",
+      "result_id": "019fd93f-c65b-44b1-897a-49bca83a0247"
+    },
+    {
+      "claim_id": "a7119f06-d122-4d48-8379-0fcbd8575bb2",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "24a6a516-b47d-4e64-b8f4-5d8fa30b902d",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "9772b65d-03f5-444b-93e6-a0ee49292012",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "fd41baa1-14c9-4f14-8d39-5f4cf99303cc",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "9decae7d-01f0-41bc-9058-42e67128bd8d",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "d1eeb4b1-450e-4e8e-9bb5-ae89c6555455",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "e5238ff7-d40d-4673-a7a8-aa10eb08729b",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "ac974681-90dc-4c32-ad3c-818f2aab6ce2",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "6ea02a27-26a7-4061-b1f3-687343692868",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "77e1cfa5-33af-450d-a244-e8552a0f3020",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    },
+    {
+      "claim_id": "c82bf782-e299-44f5-a1b2-73548035b051",
+      "result_id": "529373d1-2939-4ed9-a8d8-a912f252807c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2045 @@
+{
+  "submission": {
+    "id": "f4f098cf-ecbb-48fa-be0f-c39c996030b9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:27:03.344340Z",
+    "updated_at": "2025-12-03T07:27:03.344340Z"
+  },
+  "content": [
+    {
+      "id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "submission_id": "f4f098cf-ecbb-48fa-be0f-c39c996030b9",
+      "content_type": "manuscript",
+      "content_text": "# Epigenome-wide analysis of DNA methylation and coronary heart disease: a nested case-control study\n\n## Authors\n\n- Jiahui Si<sup>1</sup> ([ORCID: 0000-0003-0827-4973](https://orcid.org/0000-0003-0827-4973))\n- Songchun Yang<sup>1</sup>\n- Dianjianyi Sun<sup>1</sup>\n- Canqing Yu<sup>1</sup> ([ORCID: 0000-0002-0019-0014](https://orcid.org/0000-0002-0019-0014))\n- Yu Guo<sup>3</sup>\n- Yifei Lin<sup>4</sup>\n- Iona Y Millwood<sup>5</sup>\n- Robin G Walters<sup>5</sup>\n- Ling Yang<sup>5</sup>\n- Yiping Chen<sup>5</sup>\n- Huaidong Du<sup>5</sup>\n- Yujie Hua<sup>7</sup>\n- Jingchao Liu<sup>8</sup>\n- Junshi Chen<sup>9</sup>\n- Zhengming Chen<sup>6</sup>\n- Wei Chen<sup>10</sup>\n- Jun Lv<sup>1</sup> ([ORCID: 0000-0001-7916-3870](https://orcid.org/0000-0001-7916-3870)) \u2020\n- Liming Liang<sup>2</sup> \u2020\n- Liming Li<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Epidemiology and Biostatistics, School of Public Health, Peking University Health Science Center Beijing China\n2. Departments of Epidemiology and Biostatistics, Harvard T.H. Chan School of Public Health Boston United States\n3. Chinese Academy of Medical Sciences Beijing China\n4. Department of Urology, West China Hospital, Sichuan University Chengdu China\n5. Medical Research Council Population Health Research Unit at the University of Oxford Oxford United Kingdom\n6. Clinical Trial Service Unit & Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, University of Oxford Oxford United Kingdom\n7. NCDs Prevention and Control Department, Suzhou CDC Jiangsu China\n8. NCDs Prevention and Control Department, Wuzhong CDC Jiangsu China\n9. China National Center for Food Safety Risk Assessment Beijing China\n10. Department of Epidemiology, School of Public Health and Tropical Medicine, Tulane University New Orleans United States\n11. Key Laboratory of Molecular Cardiovascular Sciences (Peking University), Ministry of Education Beijing China\n12. Peking University Institute of Environmental Medicine Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Identifying environmentally responsive genetic loci where DNA methylation is associated with coronary heart disease (CHD) may reveal novel pathways or therapeutic targets for CHD. We conducted the first prospective epigenome-wide analysis of DNA methylation in relation to incident CHD in the Asian population.Methods:We did a nested case-control study comprising incident CHD cases and 1:1 matched controls who were identified from the 10 year follow-up of the China Kadoorie Biobank. Methylation level of baseline blood leukocyte DNA was measured by Infinium Methylation EPIC BeadChip. We performed the single cytosine-phosphate-guanine (CpG) site association analysis and network approach to identify CHD-associated CpG sites and co-methylation gene module.Results:After quality control, 982 participants (mean age 50.1 years) were retained. Methylation level at 25 CpG sites across the genome was associated with incident CHD (genome-wide false discovery rate [FDR] < 0.05 or module-specific FDR < 0.01). One SD increase in methylation level of identified CpGs was associated with differences in CHD risk, ranging from a 47 % decrease to a 118 % increase. Mediation analyses revealed 28.5 % of the excessed CHD risk associated with smoking was mediated by methylation level at the promoter region of ANKS1A gene (P for mediation effect = 0.036). Methylation level at the promoter region of SNX30 was associated with blood pressure and subsequent risk of CHD, with the mediating proportion to be 7.7 % (P = 0.003) via systolic blood pressure and 6.4 % (P = 0.006) via diastolic blood pressure. Network analysis revealed a co-methylation module associated with CHD.Conclusions:We identified novel blood methylation alterations associated with incident CHD in the Asian population and provided evidence of the possible role of epigenetic regulations in the smoking- and blood pressure-related pathways to CHD risk.Funding:This work was supported by National Natural Science Foundation of China (81390544 and 91846303). The CKB baseline survey and the first re-survey were supported by a grant from the Kadoorie Charitable Foundation in Hong Kong. The long-term follow-up is supported by grants from the UK Wellcome Trust (202922/Z/16/Z, 088158/Z/09/Z, 104085/Z/14/Z), grant (2016YFC0900500, 2016YFC0900501, 2016YFC0900504, 2016YFC1303904) from the National Key R&D Program of China, and Chinese Ministry of Science and Technology (2011BAI09B01).\n\n## Introduction\n\nCoronary heart disease (CHD) is one of the leading causes of morbidity and mortality worldwide (GBD 2017 Causes of Death Collaborators, 2018). Despite known environmental risk factors and the identification of genetic variations, a considerable proportion of the observed CHD risk remains unexplained (Deloukas et al., 2013).\n\nMethylation at cytosine-phosphate-guanine (CpG) dinucleotides is a common epigenetic modification of DNA (Deaton and Bird, 2011), which forms an interface between the genotype and the environment (Rosa-Garrido et al., 2018). DNA methylation are responsive to environmental stimuli and unhealthy lifestyles, including smoking (McCartney et al., 2018), alcohol consumption (Liu et al., 2018), and obesity (Wahl et al., 2017). This makes DNA methylation a potential biomarker of environmental-related and lifestyle-driven diseases of adulthood, for example, metabolic dysfunction (including hypertension (Richard et al., 2017), diabetes (Chambers et al., 2015), and atherogenic dyslipidemia (Irvin et al., 2014). Unhealthy lifestyles, together with metabolic dysfunction, will further increase the risk of cardiovascular disease. Investigating the environmentally responsive DNA methylation change linked to CHD could gain insights into the underlying mechanisms and identify novel clinical biomarkers and therapeutic targets of CHD.\n\nPrevious epigenome-wide analysis of DNA methylation and CHD was characterized by small sample size (Silvio et al., 2014; Nakatochi et al., 2017; Guarrera et al., 2015; Sharma et al., 2014; Li et al., 2017; Yamada et al., 2014), based in primarily Western countries (Silvio et al., 2014; Guarrera et al., 2015; Yamada et al., 2014; Golareh et al., 2019; Liu et al., 2017; Fern\u00e1ndez-Sanl\u00e9s et al., 2018; Rask-Andersen et al., 2016), focusing on selective genomic regions (Guarrera et al., 2015; Sharma et al., 2014), or the cross-sectional nature of findings which precludes establishment of any temporal relationship (Silvio et al., 2014; Nakatochi et al., 2017; Sharma et al., 2014; Li et al., 2017; Yamada et al., 2014; Liu et al., 2017; Fern\u00e1ndez-Sanl\u00e9s et al., 2018; Rask-Andersen et al., 2016). Only a few prospective studies were conducted in the white populations (Guarrera et al., 2015; Golareh et al., 2019).\n\nWe examined the association between epigenome-wide methylation of blood-derived DNA and CHD risk over the next 10 years, by comparing prospectively ascertained CHD cases with 1:1 matched controls in the China Kadoorie Biobank (CKB). We then examined the relationships between the identified CHD-associated methylation sites and cardiovascular risk factors, and further identified potential pathway by causal mediation analysis. The overall analysis flowchart is provided in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68671/elife-68671-fig1-v3.jpg)\n\n## Materials and methods\n\n### Study population\n\nThe CKB is a prospective cohort of 512,715 adults aged 30\u201379 years from 10 geographically diverse areas across China (five urban and five rural areas) since 2004\u20132008. Details of the study design, survey methods, and long-term follow-up have been given elsewhere (Chen et al., 2011). Briefly, all participants completed laptop-based questionnaires (including sociodemographic, lifestyle factors, and medical and medication history) and physical measurements (including body weight, height, and blood pressure). Participants also provided a 10 ml random blood sample for an immediate on-site test of random plasma glucose and long-term storage, with the time since last meal recorded. Mortality and morbidity during follow-up were identified through linkage with local death and disease registries, with the national health insurance system, and by active follow-up if necessary (i.e., visiting local communities or directly contacting participants).\n\n### Study design\n\nBaseline DNA methylation was measured for 494 CHD cases, whose CHD occurred during the follow-up period until 31 December 2015, and 494 matched controls. All these participants were free of heart disease, stroke, or cancer at baseline. They also had clinical chemistry measured for baseline plasma sample, including total cholesterol (TC), low-density lipoprotein cholesterol (LDL-C), high-density lipoprotein cholesterol (HDL-C), and triglycerides (TG) (Wolfson Laboratory at University of Oxford, UK).\n\nIncident CHD cases were defined as fatal ischemic heart disease (IHD) coded as ICD-10 I20-I25 and nonfatal acute myocardial infarction coded as I21. The diagnosis adjudication has finished for 134 reported cases by a review of hospital medical records. Overall, 90 % of the diagnoses of CHD were confirmed. Cases were excluded if they have developed malignant neoplasms (C00-C97) or cerebrovascular diseases (I60-I69) during follow-up. Each case was individually matched to one control who was free of IHD, malignant neoplasms, or cerebrovascular diseases throughout follow-up. Controls were matched to cases by birth year ( \u00b1 3 years), age at baseline ( \u00b1 3 years), sex, study area, hours fasting prior to blood draw (0- < 6, 6- < 8, 8- < 10, and \u226510 hours) at baseline.\n\n### Measurement of DNA methylation\n\nFor 494 pairs of CHD cases and controls, epigenome-wide methylation level of baseline blood leukocyte DNA was measured by Infinium Methylation EPIC BeadChip (Illumina, USA), which interrogates ~850,000 CpG sites (BGI, China). Although the laboratory staff were blinded to case/control status, the cases and controls were not strictly randomized on arrays.\n\nWe used minfi package (RRID:SCR_012830) to process methylation data. CpG sites were excluded if they: (1) were assayed SNPs rather than CpGs (n = 59); (2) had bead count <3 in 5 % of samples (n = 1,644), or had >1% of samples with a detection P > 0.05 (n = 2,536); (3) were overlapped with SNPs in the 1,000 Genome Project (20130502 release) with minor allele frequency in Eastern Asian population >0.05 at the target CpGs sites, single base extension sites of Type I probe, or the probe body (Pidsley et al., 2016); (4) possibly cross-hybridized to other genomic locations (Pidsley et al., 2016) (3 and 4 contained 132,762 sites in total). Samples were excluded if they (1) were outliers detected by multidimensional scaling analysis (n = 0); (2) were sex mixed-up samples (n = 2); (3) had missing rate >0.01 across CpG sites (n = 2); (4) were measured in a distinct study batch (n = 2).\n\nAfter quality control, 982 of 988 samples with 747,726 CpG sites were retained. Also, we randomly chose 11 samples (one sample per plate) for duplicate measurements. The correlation for duplicate measurements on the same sample ranged from 0.992 to 0.997.\n\n### Assessment of covariates\n\nIn the baseline questionnaire, for smoking, we asked frequency, type, and amount of tobacco smoked per day for ever smokers, and reason to quit for former smokers. We included former smokers who stopped smoking for illness in the current smoker category to avoid misleadingly elevated risk. We then calculated the current average number of cigarette equivalents consumed per day. For alcohol consumption, we asked drinking frequency on a week, type of alcoholic beverage, and volume of alcohol consumed on a typical drinking day. We calculated average pure alcohol volume consumed per day. For physical activity, we asked the usual type and duration of activities. The daily level of physical activity was calculated by multiplying the metabolic equivalent tasks (METs) value for a particular type of physical activity by hours spent on that activity per day and summing the MET-hours for all activities. For dietary habit, we used a short qualitative food frequency questionnaire to assess habitual intakes of 12 conventional food groups, that are mainly addressed in the Chinese dietary guidelines (2016). We then calculated a diet score: consuming fresh vegetables and fruits every day, red meat <7 days/week, soybean products \u2265 4 days/week, fish \u22651 day/week, and coarse grains \u2265 4 days/week, each item as one score. We then summed the above six scores for the total diet score. Trained staff measured weight and height with calibrated instruments. Body mass index (BMI) was calculated as weight in kilograms divided by the square of the height in meters.\n\n### Statistical analysis\n\n#### Single DNA methylation marker and incident CHD\n\nIn the epigenome-wide analysis, raw methylation matrices were normalized using the dasen method in the wateRmelon package (RRID:SCR_001296). Linear regression was applied for single-marker tests, with the beta-values of methylation as dependent variables, CHD as an indicator, and age (years), sex (male or female), 10 study area, fasting time (< 8 or \u2265 8 hr), education level (no formal or primary school, middle or high school, technical school or college or higher), marital status (married or not), smoking (current average number of cigarette equivalents consumed per day), alcohol consumption (average pure alcohol volume consumed per day), physical activity (MET-hours), diet score (continuous variable ranging from 0 to 6), and BMI (kg/m2) as covariates. To quantify latent factors, including the effects of unobserved batch effects, cell compositions, and other unmeasured confounding factors, we used smart surrogate variable analysis by the smartSVA package (Chen et al., 2017). This method has been reported to be a fast and robust method for removing batch effects and preserve power (Br\u00e4gelmann and Lorenzo Bermejo, 2019). Variables considered in the smart surrogate variable (SV) analysis included case or control status and all covariates. A total of 56 SVs were generated and also included as covariates in the above model. We used false discovery rate (FDR) < 0.05 to determine epigenome-wide significant CpGs in relation to CHD. We annotated CpGs to genes based on official EPIC array annotation file from Illumina, 2017.\n\nIn sensitivity analysis, we excluded 100 participants who reported usage of blood pressure-lowering drugs at baseline to avoid potential confounding effect caused by medications.\n\n#### Weighted gene co-methylation network and incident CHD\n\nWe also used the network approach to first identify CHD related co-methylation network module and then CHD related CpGs within the discovered module. We used weighted gene co-methylation network analysis (R package WGCNA, RRID:SCR_003302) to identify potential co-thylation network related to CHD. To ensure computation feasibility, we selected the top 20,000 CHD-associated CpGs from single-marker tests. This is about the maximum number of CpGs the WGCNA package can handle on our high performance computing cluster. Two samples were outliers and excluded during sample clustering. We used the function \u201cblockwiseModules\u201d with a minimum module size of 30 sites to construct network automatically. Modules were created and merged with the mergeCutHeight set to 0.25. We then identified modules that were statistically significantly associated with CHD using the module eigengene (the first principal component of the given module), with the same set of covariates as in the individual CpG association analysis. After detection of CHD associated modules, we performed the visualization of network modules and its hub gene to depict the connection among the annotated genes by VisANT 5.0 (http://visant.bu.edu/). Because the module was rather large, we restricted the genes used in the visualization to the annotated genes of the 24 CpGs with module-specific FDR < 0.01.\n\nTo ensure the selection of top 20,000 CpGs did not inflate the false positives of CHD-module association, we carried out a permutation-based test by shuffling the case-control status and re-selected top 20,000 CpGs based on the permuted data to construct module and test for association with CHD. In the permutation test, we found no inflated false positives due to the selection of top 20,000 CpGs (the most significant module has P > 0.032, Figure 2\u2014figure supplement 1).\n\nFor CHD-associated modules (P < 0.05/the number of modules, Bonferroni correction), we performed gene enrichment analysis using the list of annotated genes from this module (DAVID, https://david.ncifcrf.gov/) (Huang et al., 2007), and further determined the significant CHD related CpGs within the module (module-specific FDR < 0.01). For CHD-associated loci, we further fitted logistic regression adjusting for the same set of covariates and all SVs to interpret the effect size better.\n\n#### Association between CHD-associated CpGs and aardiovascular risk factors\n\nWe investigated the associations between lifestyle factors and CHD-associated CpGs, with the methylation value as the outcome. Lifestyle factors included smoking, alcohol consumption, physical activity, dietary habit, and BMI.\n\nIf the lifestyle-methylation association suggests marginal significance (P < 0.05), we performed causal mediation analysis using parametric regression models, achieved by paramed package in STATA (RRID:SCR_012763). Two models were estimated for each CpG: (1) a model for the mediator (methylation level as a continuous variable) conditional on exposure (the corresponding lifestyle factor) and covariates (age, sex, study area, fasting time, education level, marital status, the other four lifestyle factors, and batch); (2) a model for the risk of CHD conditional on exposure, the mediator, and covariates. We allowed for the presence of exposure-mediator interactions in the outcome regression model.\n\nWe aimed to calculate how much of the CHD risk associated with lifestyle factors (total effect, TE) was attributable to mediating effect of methylation level at a specific locus (natural indirect effect, NIE). The proportion attributable to the NIE was calculated as NIE divided by TE on log odds scale, with 0 indicating no mediation effect.\n\nWe also investigated the association between CHD-associated CpGs and cardiometabolic traits, with the cardiometabolic traits as the outcome. Cardiometabolic traits included systolic blood pressure (SBP), diastolic blood pressure (DBP), blood lipid level (TC, LDL-C, HDL-C, and TG), and random glucose.\n\nFor CpGs which were statistically significantly associated with any of the cardiometabolic traits, we calculated the mediation effect of methylation level on CHD through a specific cardiometabolic trait. Two models were estimated for each CpG: (1) a model for the mediator (the corresponding cardiometabolic risk factor) conditional on exposure (methylation level) and covariates (age, sex, study area, fasting time, education level, marital status, five lifestyle factors, and batch); (2) a model for the risk of CHD conditional on exposure, the mediator, and covariates.\n\nIn the analysis of blood pressure, we added 15 and 10 mmHg to the measured SBP and DBP respectively among participants who reported usage of blood pressure-lowering medications. In the analysis of random glucose, we additionally adjusted for treatment of diabetes at baseline.\n\nWe adjusted batch IDs instead of SVs in CpGs-CHD risk factor association analysis and the corresponding mediation analysis because SVs adjustment was more appropriate when the methylation value was treated as the outcome.\n\n## Results\n\nBaseline DNA methylation was measured for 494 CHD cases and 494 matched controls. After quality control, we inculded 491 cases free of CHD at baseline and developing CHD during follow up and 491 controls free of CHD at baseline and follow up and matched for birth year, age at baseline, sex, study area, and area, hours fasting prior to blood draw.\n\nThe mean age was 50.6 \u00b1 7.6 years for incident CHD cases and 49.5 \u00b1 7.3 years for matched controls. Compared with control participants, the CHD cases were more likely to be daily smokers, have unhealthy dietary habits, and have higher BMI. CHD cases also had a higher prevalence of hypertension and diabetes and worse lipid profile at baseline (Table 1).\n\n**Table 1.**\n Age-, sex- and study area-adjusted baseline characteristics of 982 participants according to the case or control status.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Baseline characteristics</th>\n      <th>Cases(n = 491)</th>\n      <th>Controls(n = 491)</th>\n      <th>P value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age, year</td>\n      <td>50.6</td>\n      <td>49.5</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Female, %</td>\n      <td>43.6</td>\n      <td>43.6</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Urban area, %</td>\n      <td>20.6</td>\n      <td>20.6</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Middle school and above, %</td>\n      <td>43.4</td>\n      <td>45.6</td>\n      <td>0.730</td>\n    </tr>\n    <tr>\n      <td>Married, %</td>\n      <td>90.4</td>\n      <td>94.7</td>\n      <td>0.028</td>\n    </tr>\n    <tr>\n      <td>Family history of heart attack, %</td>\n      <td>6.9</td>\n      <td>4.7</td>\n      <td>0.127</td>\n    </tr>\n    <tr>\n      <td>Fasting time, h</td>\n      <td>4.0</td>\n      <td>4.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Lifestyle factors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Daily tobacco smoker, %</td>\n      <td>46.6</td>\n      <td>40.3</td>\n      <td>0.004</td>\n    </tr>\n    <tr>\n      <td>Daily alcohol drinker, %</td>\n      <td>9.0</td>\n      <td>10.0</td>\n      <td>0.455</td>\n    </tr>\n    <tr>\n      <td>Physical activity, MET-h/day</td>\n      <td>22.0</td>\n      <td>23.9</td>\n      <td>0.097</td>\n    </tr>\n    <tr>\n      <td>Diet score</td>\n      <td>2.3</td>\n      <td>2.5</td>\n      <td>0.001</td>\n    </tr>\n    <tr>\n      <td>Vegetables 7 days/week, %</td>\n      <td>92.7</td>\n      <td>91.0</td>\n      <td>0.278</td>\n    </tr>\n    <tr>\n      <td>Fruit 7 days/week, %</td>\n      <td>9.4</td>\n      <td>13.8</td>\n      <td>0.030</td>\n    </tr>\n    <tr>\n      <td>Read meat &lt;7 days/week, %</td>\n      <td>79.2</td>\n      <td>80.0</td>\n      <td>0.600</td>\n    </tr>\n    <tr>\n      <td>Soybean product \u22654 days/week, %</td>\n      <td>5.9</td>\n      <td>9.6</td>\n      <td>0.026</td>\n    </tr>\n    <tr>\n      <td>Fish \u22651 days/week, %</td>\n      <td>24.6</td>\n      <td>28.9</td>\n      <td>0.022</td>\n    </tr>\n    <tr>\n      <td>Coarse grains \u2265 4 days/week, %</td>\n      <td>22.8</td>\n      <td>24.6</td>\n      <td>0.047</td>\n    </tr>\n    <tr>\n      <td>Body mass index, kg/m2</td>\n      <td>23.9</td>\n      <td>23.3</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>Metabolic risk factors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Prevalent hypertension, %</td>\n      <td>52.5</td>\n      <td>29.9</td>\n      <td>&lt; 0.001</td>\n    </tr>\n    <tr>\n      <td>Prevalent diabetes, %</td>\n      <td>10.0</td>\n      <td>4.5</td>\n      <td>0.004</td>\n    </tr>\n    <tr>\n      <td>Blood lipids</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total cholesterol, mmol/L</td>\n      <td>4.69</td>\n      <td>4.52</td>\n      <td>0.005</td>\n    </tr>\n    <tr>\n      <td>LDL-C, mmol/L</td>\n      <td>2.35</td>\n      <td>2.21</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>HDL-C, mmol/L</td>\n      <td>1.22</td>\n      <td>1.18</td>\n      <td>0.025</td>\n    </tr>\n    <tr>\n      <td>Triglyceride, mmol/L</td>\n      <td>2.20</td>\n      <td>2.01</td>\n      <td>0.064</td>\n    </tr>\n  </tbody>\n</table>\n\n_The results are presented as means or percentages. P values were not showed for matched factors. MET = metabolic equivalent of task; LDL-C = low-density lipoprotein cholesterol; HDL-C = high-density lipoprotein cholesterol._\n\n### Association between single DNA methylation marker and incident CHD\n\nEWAS revealed an excess of association across a range of P thresholds (Supplementary file 2A). The genomic inflation factor was 1.09 after adjustment for covariates and surrogate variables (SV). The Quantile-Quantile plot (Q-Q plot) indicated little residual confounding (Supplementary file 2B). Methylation markers at two genetic regions were associated with incident CHD at FDR < 0.05 (Table 2 and Supplementary file 2B). The corresponding p-value of the FDR = 0.05 threshold was 2.01E-07. The adjusted difference (standard error, SE) in methylation level between cases and controls was \u20130.003 (0.0006) for cg23398826 (P = 1.57E-08), which was annotated to SNX30. The SD of the beta value of cg23398826 was 0.008. The odds ratio (OR) (95% confidence interval [CI]) for incident CHD was 0.56 (0.45, 0.70) per SD increase in methylation level at cg23398826. The corresponding adjusted difference (SE) for cg02386575 was 0.006 (0.0011; P = 9.61E-08), annotated to IMPDH2 and QRICH1 (Table 2). The SD was 0.016. The OR (95% CI) for per SD increase in cg02386575 was 2.00 (1.57, 2.56).\n\n**Table 2.**\n Associations of 25 significant CpGs with the risk of coronary heart disease.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Chr</th>\n      <th rowspan=\"2\">Position(hg19)</th>\n      <th rowspan=\"2\">CpG</th>\n      <th rowspan=\"2\">SD</th>\n      <th rowspan=\"2\">Gene</th>\n      <th rowspan=\"2\">Relation to gene</th>\n      <th colspan=\"3\">EWAS</th>\n      <th>WGCNA*</th>\n      <th rowspan=\"2\">Odds Ratio\u2020 (95% CI)</th>\n    </tr>\n    <tr>\n      <th>\u03b2\u2021</th>\n      <th>P</th>\n      <th>FDR</th>\n      <th>Module-specific FDR</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>9</td>\n      <td>115513036</td>\n      <td>cg23398826</td>\n      <td>0.008</td>\n      <td>SNX30</td>\n      <td>TSS200</td>\n      <td>\u20130.003</td>\n      <td>1.57E-08</td>\n      <td>0.012</td>\n      <td>1.05E-04</td>\n      <td>0.56 (0.45, 0.70)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">3</td>\n      <td rowspan=\"2\">49068057</td>\n      <td rowspan=\"2\">cg02386575</td>\n      <td rowspan=\"2\">0.016</td>\n      <td>IMPDH2</td>\n      <td>TSS1500</td>\n      <td rowspan=\"2\">0.006</td>\n      <td rowspan=\"2\">9.61E-08</td>\n      <td rowspan=\"2\">0.036</td>\n      <td rowspan=\"2\">2.02E-04</td>\n      <td rowspan=\"2\">2.00 (1.57, 2.56)</td>\n    </tr>\n    <tr>\n      <td>QRICH1</td>\n      <td>Body</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>37329330</td>\n      <td>cg10400937</td>\n      <td>0.007</td>\n      <td>ZNF790</td>\n      <td>TSS200</td>\n      <td>0.002</td>\n      <td>1.09E-05</td>\n      <td>0.288</td>\n      <td>0.009</td>\n      <td>1.53 (1.24, 1.89)</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>131758671</td>\n      <td>cg20562821</td>\n      <td>0.022</td>\n      <td colspan=\"2\">(RPS6P20 \u00a7)</td>\n      <td>0.005</td>\n      <td>2.42E-05</td>\n      <td>0.288</td>\n      <td>0.009</td>\n      <td>1.72 (1.28, 2.31)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">6</td>\n      <td rowspan=\"2\">34855635</td>\n      <td rowspan=\"2\">cg08106661</td>\n      <td rowspan=\"2\">0.016</td>\n      <td>TAF11</td>\n      <td>1stExon</td>\n      <td rowspan=\"2\">0.003</td>\n      <td rowspan=\"2\">3.16E-05</td>\n      <td rowspan=\"2\">0.305</td>\n      <td rowspan=\"2\">0.009</td>\n      <td rowspan=\"2\">1.87 (1.35, 2.59)</td>\n    </tr>\n    <tr>\n      <td>ANKS1A</td>\n      <td>TSS1500</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>153203211</td>\n      <td>cg11630610</td>\n      <td>0.019</td>\n      <td colspan=\"2\">(MIR584\u00a7)</td>\n      <td>0.005</td>\n      <td>3.83E-05</td>\n      <td>0.329</td>\n      <td>0.009</td>\n      <td>1.77 (1.36, 2.32)</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>8426319</td>\n      <td>cg20302171</td>\n      <td>0.018</td>\n      <td>RERE</td>\n      <td>5'UTR</td>\n      <td>\u20130.004</td>\n      <td>4.29E-05</td>\n      <td>0.340</td>\n      <td>0.009</td>\n      <td>0.55 (0.42, 0.73)</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>63909324</td>\n      <td>cg26334131</td>\n      <td>0.025</td>\n      <td>MACROD1</td>\n      <td>Body</td>\n      <td>\u20130.005</td>\n      <td>4.44E-05</td>\n      <td>0.340</td>\n      <td>0.009</td>\n      <td>0.53 (0.38, 0.73)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">20</td>\n      <td rowspan=\"2\">2444631</td>\n      <td rowspan=\"2\">cg07560408</td>\n      <td rowspan=\"2\">0.018</td>\n      <td>SNORD119</td>\n      <td>TSS1500</td>\n      <td rowspan=\"2\">\u20130.005</td>\n      <td rowspan=\"2\">4.46E-05</td>\n      <td rowspan=\"2\">0.340</td>\n      <td rowspan=\"2\">0.009</td>\n      <td rowspan=\"2\">0.60 (0.47, 0.77)</td>\n    </tr>\n    <tr>\n      <td>SNRPB</td>\n      <td>Body</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>46522185</td>\n      <td>cg21210537</td>\n      <td>0.027</td>\n      <td>MIR769</td>\n      <td>TSS200</td>\n      <td>0.004</td>\n      <td>4.85E-05</td>\n      <td>0.356</td>\n      <td>0.009</td>\n      <td>2.18 (1.47, 3.23)</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>60546782</td>\n      <td>cg15833447</td>\n      <td>0.021</td>\n      <td colspan=\"2\">(TAF4\u00a7)</td>\n      <td>0.006</td>\n      <td>5.55E-05</td>\n      <td>0.375</td>\n      <td>0.009</td>\n      <td>1.50 (1.20, 1.88)</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>94963255</td>\n      <td>cg02591826</td>\n      <td>0.005</td>\n      <td>LOC100129203</td>\n      <td>TSS200</td>\n      <td>0.002</td>\n      <td>5.70E-05</td>\n      <td>0.375</td>\n      <td>0.009</td>\n      <td>1.52 (1.23, 1.87)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">7</td>\n      <td rowspan=\"2\">100861083</td>\n      <td rowspan=\"2\">cg16639138</td>\n      <td rowspan=\"2\">0.006</td>\n      <td>ZNHIT1</td>\n      <td>5'UTR/1stExon</td>\n      <td rowspan=\"2\">0.002</td>\n      <td rowspan=\"2\">6.46E-05</td>\n      <td rowspan=\"2\">0.375</td>\n      <td rowspan=\"2\">0.009</td>\n      <td rowspan=\"2\">1.52 (1.24, 1.86)</td>\n    </tr>\n    <tr>\n      <td>PLOD3</td>\n      <td>TSS200</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>27863042</td>\n      <td>cg01545454</td>\n      <td>0.007</td>\n      <td colspan=\"2\">(HIST1H2BO\u00a7)</td>\n      <td>0.002</td>\n      <td>7.29E-05</td>\n      <td>0.378</td>\n      <td>0.009</td>\n      <td>1.64 (1.26, 2.13)</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>203242409</td>\n      <td>cg07219103</td>\n      <td>0.008</td>\n      <td colspan=\"2\">(CHIT1\u00a7)</td>\n      <td>0.002</td>\n      <td>7.35E-05</td>\n      <td>0.378</td>\n      <td>0.009</td>\n      <td>1.78 (1.28, 2.47)</td>\n    </tr>\n    <tr>\n      <td>22</td>\n      <td>23994996</td>\n      <td>cg05681643</td>\n      <td>0.018</td>\n      <td>GUSBP11</td>\n      <td>Body</td>\n      <td>0.004</td>\n      <td>7.42E-05</td>\n      <td>0.378</td>\n      <td>0.009</td>\n      <td>1.60 (1.24, 2.08)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>88991375</td>\n      <td>cg06358566</td>\n      <td>0.009</td>\n      <td>RPIA</td>\n      <td>1stExon</td>\n      <td>\u20130.002</td>\n      <td>7.74E-05</td>\n      <td>0.385</td>\n      <td>0.009</td>\n      <td>0.62 (0.48, 0.80)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>162273185</td>\n      <td>cg19583211</td>\n      <td>0.016</td>\n      <td>TBR1</td>\n      <td>1stExon</td>\n      <td>\u20130.003</td>\n      <td>7.97E-05</td>\n      <td>0.385</td>\n      <td>0.009</td>\n      <td>0.56 (0.41, 0.77)</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>3613189</td>\n      <td>cg10643850</td>\n      <td>0.025</td>\n      <td>ATRN</td>\n      <td>Body</td>\n      <td>0.004</td>\n      <td>8.04E-05</td>\n      <td>0.385</td>\n      <td>0.009</td>\n      <td>1.97 (1.37, 2.82)</td>\n    </tr>\n    <tr>\n      <td>17</td>\n      <td>17460905</td>\n      <td>cg13311494</td>\n      <td>0.016</td>\n      <td>PEMT</td>\n      <td>Body</td>\n      <td>\u20130.005</td>\n      <td>8.50E-05</td>\n      <td>0.397</td>\n      <td>0.009</td>\n      <td>0.64 (0.52, 0.79)</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>179852195</td>\n      <td>cg11754670</td>\n      <td>0.009</td>\n      <td>TOR1AIP1</td>\n      <td>Body</td>\n      <td>0.001</td>\n      <td>8.84E-05</td>\n      <td>0.398</td>\n      <td>0.009</td>\n      <td>2.04 (1.40, 2.97)</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>74928935</td>\n      <td>cg05740632</td>\n      <td>0.014</td>\n      <td>EDC3</td>\n      <td>Body</td>\n      <td>\u20130.004</td>\n      <td>9.07E-05</td>\n      <td>0.398</td>\n      <td>0.009</td>\n      <td>0.62 (0.49, 0.78)</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>1972510</td>\n      <td>cg08484100</td>\n      <td>0.023</td>\n      <td>MRPL23</td>\n      <td>Body</td>\n      <td>\u20130.004</td>\n      <td>9.19E-05</td>\n      <td>0.398</td>\n      <td>0.009</td>\n      <td>0.54 (0.40, 0.74)</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>52822428</td>\n      <td>cg24792179</td>\n      <td>0.019</td>\n      <td>CC2D1B</td>\n      <td>Body</td>\n      <td>0.004</td>\n      <td>9.87E-05</td>\n      <td>0.410</td>\n      <td>0.009</td>\n      <td>1.79 (1.36, 2.35)</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>68973036</td>\n      <td>cg22794712</td>\n      <td>0.021</td>\n      <td colspan=\"2\">(LOC100507468\u00a7)</td>\n      <td>\u20130.006</td>\n      <td>1.10E-04</td>\n      <td>0.413</td>\n      <td>0.010</td>\n      <td>0.63 (0.50, 0.80)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*cg23398826 in the Turquoise module, all other CpGs in the Brown module.\u2020Odds ratios were for per standard deviation increase in DNA methylation level.\u2021Effect sizes were calculated based on normalized methylation values, denoting the methylation difference between cases and controls.\u00a7For inter-genic CpG sites, R package FDb.InfiniumMethylation.hg19 was used to locate the nearest annotated gene.CpG = cytosine-phosphoguanine site; Chr = chromosome; EWAS = epigenome wide association; WGCNA = weighted gene co-methylation network analysis; FDR = false discovery rate; CI = confidence interval; TSS200 = within 200 bp from transcription start site; TSS1500 = within 1500 bp from transcription start site; Body = the CpG is in gene body; 1stExon = the first exon; and UTR = untranslated region._\n\n### Association between weighted gene co-methylation network and CHD risk\n\nWe used weighted gene co-methylation network analysis (WGCNA) (Langfelder and Horvath, 2008) to identify potential co-methylation network related to CHD. This method can be used for identifying clusters of highly correlated co-methylation genes and relating modules to external sample traits to find biologically or clinically significant modules. Two samples were outliers and excluded during the sample clustering step. We included 491 cases and 489 controls in the following analysis. A total of five modules were produced in the clustering step of WGCNA (Figure 2). One module (called: Brown module), containing 2,106 CpG sites, was associated with incident CHD after adjustment for covariates and all SVs (P < 0.05/the number of modules, P = 6.41E-08).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68671/elife-68671-fig2-v3.jpg)\n\n**Figure 2.:** Correlation coefficient and -log10(P) (inside the bracket) were reported; the degree of -log10(p) is illustrated with the color legend. Linear regressions were fitted with inverse normal transformed module eigengene (ME) as dependent variables; coronary heart disease (CHD1) as indicator; and age, sex, education, marital status, smoking (SMK), drinking (DRK), physical activity (PA1 and PA2 as the second and third tertile respectively), diet score, body mass index, fasting time, study area and all surrogate variables as covariates.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68671/elife-68671-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Correlation coefficient and -log10(P) (inside the bracket) were reported; the degree of -log10(P) is illustrated with the color legend. Linear regressions were fitted with inverse normal transformed module eigengene (ME) as dependent variables; shuffled case and control status (Permutation_case) as indicator; and age, sex, education, marital status, smoking (SMK), drinking (DRK), physical activity (PA1 and PA2 as the second and third tertile, respectively), diet score, body mass index (BMI), fasting time, study area and all surrogate variables as covariates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68671/elife-68671-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Genes in the center are the hub genes, pairwise correlation: 0.10\u20131.\n\nGene enrichment analysis of the annotated genes of 2106 CpG sites in this module revealed six annotation clusters with at least one term having an FDR < 0.05 (Supplementary file 2C). These annotation clusters were significantly enriched in terms associated with intracellular signaling (zinc-finger, pleckstrin homology domains, C2 domains, and protein kinase activity) and transcription regulation. Annotated genes in this module were also enriched in genes associated with tobacco use disorder, stroke, and kidney disease (the Genetic Association Database). We performed the visualization of the Brown module (Hu et al., 2008) and found CpGs annotated to ZNF790, CC2D1B, TBR1, RERE, and PLXNB2 had the most connections with other genes (Figure 2\u2014figure supplement 2).\n\nWithin the Brown module, 24 CpGs were significantly associated with CHD (module-specific FDR < 0.01), with P ranging from 1.10E-04\u20139.61E-08 (Table 2). Together with two CpGs identified from single-maker tests, a total of 25 CpGs were associated with CHD, with OR (95 % confidence interval) ranging from 0.53 (0.38, 0.73) for cg26334131 to 2.18 (1.47, 3.23) for cg21210537 (Table 2).\n\n### CHD-associated CpGs and cardiovascular risk factors\n\nMethylation level at cg08106661 was associated with the average number of cigarette equivalents per day (effect size = 1.50E-04, SE = 4.67E-05, P = 0.001; Table 3). Further mediation analysis revealed that 28.5 % of the smoking-associated CHD risk was mediated through methylation level at cg08106661 (P = 0.036). We also found three loci associated with diet score and two loci associated with BMI, but no statistically significant mediation effect was noted (P > 0.05). Alcohol consumption and physical activity were not associated with any of the CHD-associated CpGs (Table 3 and Table 3\u2014source data 1).\n\n**Table 3.**\n Associations between lifestyle factors and methylation level of identified CpGs, and the risk of coronary heart disease mediated through methylation level of CpG sites.Table 3\u2014source data 1.Association between lifestyle factors and identified CpGs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th rowspan=\"2\">Effect size(SE)</th>\n      <th rowspan=\"2\">P</th>\n      <th colspan=\"2\">Mediation effect</th>\n    </tr>\n    <tr>\n      <th>Proportion mediated, %</th>\n      <th>P</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Smoking, no. of cigarettes/day</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cg08106661</td>\n      <td>1.50E-04 (4.67E-05)</td>\n      <td>0.001</td>\n      <td>28.50</td>\n      <td>0.036</td>\n    </tr>\n    <tr>\n      <td>Diet score (ranging 0-6)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cg21210537</td>\n      <td>3.60E-03 (1.27E-03)</td>\n      <td>0.005</td>\n      <td>4.66</td>\n      <td>0.206</td>\n    </tr>\n    <tr>\n      <td>cg10643850</td>\n      <td>2.57E-03 (1.26E-03)</td>\n      <td>0.042</td>\n      <td>-6.91</td>\n      <td>0.088</td>\n    </tr>\n    <tr>\n      <td>cg05740632</td>\n      <td>1.37E-03 (6.88E-04)</td>\n      <td>0.047</td>\n      <td>11.30</td>\n      <td>0.068</td>\n    </tr>\n    <tr>\n      <td>Body mass index, kg/m2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cg20302171</td>\n      <td>3.90E-04 (1.67E-04)</td>\n      <td>0.020</td>\n      <td>-2.87</td>\n      <td>0.267</td>\n    </tr>\n    <tr>\n      <td>cg08484100</td>\n      <td>4.17E-04 (2.10E-04)</td>\n      <td>0.048</td>\n      <td>-1.91</td>\n      <td>0.373</td>\n    </tr>\n  </tbody>\n</table>\n\n_Linear regression was fitted by including all five lifestyle factors (smoking, alcohol consumption, physical activity, diet score, and body mass index) simultaneously in the same model, with methylation values as dependent variables, and age, sex, study area, fasting time, education level, marital status and batch as covariates. CpG = cytosine-phosphoguanine site; SE = standard error. Alcohol consumption and physical activity were not associated with any of the coronary heart disease-associated CpGs. Details were reported in the Table 3\u2014source data 1._\n\nCompared with participants in the bottom quartile of methylation level at cg23398826, those in the top quartile had 6.4 (SE 2.1) mmHg lower SBP (P = 0.003) and 3.6 (1.2) mmHg lower DBP (P = 0.003). The proportions of reduced CHD risk associated with cg23398826 mediated by SBP and DBP were 7.65 % (P = 0.003) and 6.39 % (P = 0.006), respectively (Table 4, Table 4\u2014source data 1 and Table 4\u2014source data 2). The analysis also showed statistically significant mediation of methylation level at cg13311494 (annotated to PEMT) on CHD risk through SBP and DBP, with the mediation proportions of 15.61% and 12.38%, respectively. Four TC-related (Table 4 and Table 4\u2014source data 3), six LDL-C related (Table 4 and Table 4\u2014source data 4), two HDL-C related (Table 4 and Table 4\u2014source data 5), and six random glucose-related (Table 4 and Table 4\u2014source data 6) CpGs had P for trend <0.05. However, no statistically significant mediation effect was shown for the associations between corresponding methylation level on CHD through these traits. TG was not associated with any of the CHD-associated CpGs (Table 4\u2014source data 7).\n\n**Table 4.**\n Associations between quartile methylation level of identified CpGs and cardiometabolic traits, and the risk of coronary heart disease mediated through different cardiometabolic traits.Table 4\u2014source data 1.Association between quartile methylation level of identified CpGs and systolic blood pressure (mmHg).Table 4\u2014source data 2.Association between quartile methylation level of identified CpGs and diastolic blood pressure (mmHg).Table 4\u2014source data 3.Association between quartile methylation level of identified CpGs and total cholesterol (mmol/L).Table 4\u2014source data 4.Association between quartile methylation level of identified CpGs and cholesterol in low-density lipoprotein (mmol/L).Table 4\u2014source data 5.Association between quartile methylation level of identified CpGs and cholesterol in high-density lipoprotein (mmol/L).Table 4\u2014source data 6.Association between quartile methylation level of identified CpGs and random glucose (mmol/L).Table 4\u2014source data 7.Association between quartile methylation level of identified CpGs and triglyceride (mmol/L).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"2\">Quartile 1 vs. 4</th>\n      <th rowspan=\"2\">P for trend</th>\n      <th colspan=\"2\">Mediation effect</th>\n    </tr>\n    <tr>\n      <th>Effect size(SE)*</th>\n      <th>P</th>\n      <th>Proportion mediated, %</th>\n      <th>P</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Systolic blood pressure\u2020, mmHg</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cg23398826</td>\n      <td>-6.410 (2.118)</td>\n      <td>0.003</td>\n      <td>&lt;0.001</td>\n      <td>7.65</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>cg13311494</td>\n      <td>-6.580 (2.122)</td>\n      <td>0.002</td>\n      <td>0.020</td>\n      <td>15.61</td>\n      <td>0.031</td>\n    </tr>\n    <tr>\n      <td>Diastolic blood pressure\u2020, mmHg</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cg23398826</td>\n      <td>-3.574 (1.218)</td>\n      <td>0.003</td>\n      <td>&lt;0.001</td>\n      <td>6.39</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>cg13311494</td>\n      <td>-3.650 (1.221)</td>\n      <td>0.003</td>\n      <td>0.029</td>\n      <td>12.38</td>\n      <td>0.045</td>\n    </tr>\n    <tr>\n      <td>Total cholesterol, mmol/L</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cg26334131</td>\n      <td>0.197 (0.089)</td>\n      <td>0.026</td>\n      <td>0.003</td>\n      <td>-31.62</td>\n      <td>0.168</td>\n    </tr>\n    <tr>\n      <td>cg05740632</td>\n      <td>0.163 (0.089)</td>\n      <td>0.066</td>\n      <td>0.013</td>\n      <td>-3.21</td>\n      <td>0.126</td>\n    </tr>\n    <tr>\n      <td>cg21210537</td>\n      <td>0.175 (0.094)</td>\n      <td>0.064</td>\n      <td>0.027</td>\n      <td>-8.19</td>\n      <td>0.197</td>\n    </tr>\n    <tr>\n      <td>cg19583211</td>\n      <td>-0.064 (0.088)</td>\n      <td>0.466</td>\n      <td>0.047</td>\n      <td>2.73</td>\n      <td>0.270</td>\n    </tr>\n    <tr>\n      <td>Cholesterol in LDL, mmol/L</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cg26334131</td>\n      <td>0.110 (0.063)</td>\n      <td>0.079</td>\n      <td>0.007</td>\n      <td>-32.14</td>\n      <td>0.135</td>\n    </tr>\n    <tr>\n      <td>cg20302171</td>\n      <td>0.107 (0.063)</td>\n      <td>0.09</td>\n      <td>0.029</td>\n      <td>-10.48</td>\n      <td>0.161</td>\n    </tr>\n    <tr>\n      <td>cg05740632</td>\n      <td>0.109 (0.063)</td>\n      <td>0.083</td>\n      <td>0.019</td>\n      <td>-3.38</td>\n      <td>0.110</td>\n    </tr>\n    <tr>\n      <td>cg19583211</td>\n      <td>-0.078 (0.062)</td>\n      <td>0.208</td>\n      <td>0.020</td>\n      <td>3.60</td>\n      <td>0.210</td>\n    </tr>\n    <tr>\n      <td>cg13311494</td>\n      <td>-0.117 (0.062)</td>\n      <td>0.06</td>\n      <td>0.027</td>\n      <td>3.70</td>\n      <td>0.208</td>\n    </tr>\n    <tr>\n      <td>cg21210537</td>\n      <td>0.126 (0.067)</td>\n      <td>0.059</td>\n      <td>0.044</td>\n      <td>-8.55</td>\n      <td>0.177</td>\n    </tr>\n    <tr>\n      <td>Cholesterol in HDL, mmol/L</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cg15833447</td>\n      <td>0.037 (0.026)</td>\n      <td>0.154</td>\n      <td>0.013</td>\n      <td>-10.77</td>\n      <td>0.180</td>\n    </tr>\n    <tr>\n      <td>cg21210537</td>\n      <td>0.040 (0.027)</td>\n      <td>0.146</td>\n      <td>0.019</td>\n      <td>7.30</td>\n      <td>0.235</td>\n    </tr>\n    <tr>\n      <td>Random blood glucose\u2021, mmol/L</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cg10400937</td>\n      <td>0.551 (0.231)</td>\n      <td>0.017</td>\n      <td>0.003</td>\n      <td>6.72</td>\n      <td>0.107</td>\n    </tr>\n    <tr>\n      <td>cg01545454</td>\n      <td>0.203 (0.234)</td>\n      <td>0.385</td>\n      <td>0.006</td>\n      <td>9.58</td>\n      <td>0.097</td>\n    </tr>\n    <tr>\n      <td>cg11754670</td>\n      <td>0.466 (0.236)</td>\n      <td>0.049</td>\n      <td>0.005</td>\n      <td>36.39</td>\n      <td>0.086</td>\n    </tr>\n    <tr>\n      <td>cg26334131</td>\n      <td>-0.517 (0.234)</td>\n      <td>0.028</td>\n      <td>0.018</td>\n      <td>32.70</td>\n      <td>0.109</td>\n    </tr>\n    <tr>\n      <td>cg07219103</td>\n      <td>0.578 (0.244)</td>\n      <td>0.018</td>\n      <td>0.032</td>\n      <td>6.17</td>\n      <td>0.135</td>\n    </tr>\n    <tr>\n      <td>cg20302171</td>\n      <td>-0.556 (0.234)</td>\n      <td>0.018</td>\n      <td>0.027</td>\n      <td>15.77</td>\n      <td>0.123</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Effect sizes denoted the differences of metabolic traits between the top and bottom quartile methylation level. Details of other quartiles were reported in the Table 4\u2014source data 1.\u2020We added 15 and 10 mmHg to the measured systolic blood pressure and diastolic blood pressure respectively among participants who reported usage of blood pressure-lowering medications.\u2021Additionally adjusted for treatment of diabetes (yes or no) at baseline. Multivariable model was adjusted for: age, sex, education level, marital status, smoking, drinking, physical activity, dietary score, body mass index, fasting time, study area, and batch. The CpGs which were significantly associated with any metabolic risk factors were reported. Details of other CpGs were reported in the Supplementary tables. CpG = cytosine-phosphoguanine site; SE = standard error; LDL = low-density lipoprotein; HDL = high-density lipoprotein._\n\nTo test the robustness of the findings, we restricted both CpGs-CHD and CpGs-SBP/DBP analyses to participants without the usage of blood pressure-lowering drugs at baseline (n = 880). The association magnitudes of methylation level with CHD were mostly unchanged (Supplementary file 2D). Such restriction slightly attenuated the association of methylation level at cg23398826 and cg13311494 with SBP and DBP (Supplementary file 2E and F). In the association analyses of 25 CHD-associated CpGs and cardiovascular risk factors, we also performed smart SVA for each trait. Adjustment for all SVs instead of batch did not change the association materially (Table 4\u2014source data 1; Table 4\u2014source data 2; Table 4\u2014source data 3; Table 4\u2014source data 4; Table 4\u2014source data 5; Table 4\u2014source data 6; Table 4\u2014source data 7).\n\n## Discussion\n\nIn this prospective study of middle-aged Chinese, we found methylation at 25 CpGs across the genome were associated with incident CHD risk over the next 10 years. One SD increase in methylation level of identified CpGs was associated with differences in CHD risk, ranging from a 47 % decrease (cg26334131) to a 118 % increase (cg21210537) in CHD risk. Further mediation analyses revealed two potential pathways to CHD risk, one with methylation at cg08106661 mediating the impact of smoking, and the other with blood pressure mediating the impact of methylation at cg23398826 and cg13311494. One co-methylation network suggested a role for intracellular signaling in CHD risk.\n\nWe summarized the annotated or nearest annotated gene of the identified CHD-associated CpGs in our study and the previous GWAS findings (Supplementary file 2G). Four of the total 25 identified CpGs map to genes that have been reported in association with cardiovascular disease in previous GWAS studies. CpG cg08106661 maps to the ANKS1A (Ankyrin repeat and SAM domain-containing protein 1 A) gene with critical roles in regulating the epidermal growth factor receptor (EGFR). Activation of EGFR has been implicated in endothelial dysfunction, atherogenesis, and cardiac remodeling (Makki et al., 2013). SNPs in ANKS1A have been consistently linked to CHD and smoking behaviour in different populations (Dichgans et al., 2014; Charmet et al., 2018; Schunkert et al., 2011). Furthermore, our mediation analysis noted that more than 25 % of the increased CHD risk related to smoking was mediated through methylation level at cg08106661. Our results provide evidence that smoking-induced epigenetic modification of DNA may play an important part in the underlying pathway from smoking to CHD.\n\nFive identified CHD-associated CpG loci were linked to blood pressure in previous GWAS studies. CpG cg23398826 was located within 200 bp from the transcription start site of the SNX30 (Sorting Nexin 30) gene, a member of the sorting nexin family which plays a vital role in endocytic trafficking. The perturbation of this process may lead to impaired homeostatic responses and possibly disease states, including cardiovascular disease (Yang et al., 1979). SNX30 has been reported in a GWAS of DBP night-to-day ratio (Rimpel\u00e4 et al., 2018). The methylation level at CpG cg23398826 was found to be associated with SBP and DBP in our study. Further mediation analysis showed that blood pressure mediated ~10 % of the reduced CHD risk related to methylation at cg23398826, suggesting that such epigenetic regulation might exert an important influence on blood pressure and subsequent risk of CHD. However, methylation level and blood pressure were both measured at baseline. We note that directional association between methylation and blood pressure is still unknown.\n\nWGCNA identified one CHD-associated gene co-methylation network. Gene members of this network were enriched in several protein domains, molecule function, and pathways that are involved in intracellular signaling. Cells can respond to the environment and extracellular cues by this vital mechanism (Schulman, 2013). One previous study using an in vitro model of cardiac hypertrophy revealed that differentially methylated promoters were involved in the intracellular signaling process (Stenzig et al., 2015). Nevertheless, these findings could only be interpreted as a possible functional indication and may stimulate future studies in translating these findings toward a better understanding of disease mechanisms.\n\nPrevious epigenome-wide studies of CHD in Asian population were all cross-sectional design with relatively small sample size (Nakatochi et al., 2017; Sharma et al., 2014; Li et al., 2017), in which the changes in DNA methylation at identified CpGs might be a result of disease state. Only two studies have employed prospective design (Guarrera et al., 2015; Golareh et al., 2019). One of them used a meta-analysis of nine population-based cohorts from the US and Europe (11,461 participants, mean age 64 years, mean follow-up time 11.2 years) to analyze CHD-associated DNA methylation at a single-nucleotide resolution (Golareh et al., 2019). Based on HumanMethylation450 BeadChip data, methylation levels at 52 CpG sites were identified to be associated with incident CHD or myocardial infarction. Differences in the nature of study design, genetic background and age distribution of the study population, follow-up time, and coverage of CpG sites might explain that our findings did not overlap with the previous CHD EWAS in either Asian or European population. Three identified loci in the present study could be replicated at the gene level (ANKS1A, RERE, and EDC3), by a small study which investigated differential DNA methylation loci using 15 donor-matched healthy and atherosclerotic human aorta samples in Spain (Silvio et al., 2014). Similar DNA methylation patterns at certain genes might be consistent in blood leukocytes and atherosclerotic lesions during the development of CHD.\n\nOur study is by far the first prospective and the largest EWAS of CHD in the Asian population. The prospective design allowed us to identify loci where changes in DNA methylation potentially predict the risk of future CHD. The use of the latest DNA methylation array that covers over 850,000 CpG methylation sites provides extensive coverage of CpG islands, genes, and enhancer, however, also increases the burden of multiple hypothesis testing. The causal mediation analysis was added to help understand the functional potential of identified loci.\n\nOur study has limitations. Although we have made a comprehensive adjustment for preselected potential confounders and also used the recommended SVA method to remove the unknown confounding effect, residual confounding is still possible. However, the potential inflation due to unadjusted confounding effect was small as indicated by the Q-Q plot. The cases and controls were not randomized on arrays. Adjusting batch effect may lose power to some extent. Future studies with samples at multiple time points preceding CHD onset are expected to provide insights into the role of dynamic changes of methylation and expression level in the progress of CHD.\n\nWe presented novel findings on associations of leukocyte DNA methylation at 25 CpGs with CHD risk over the next ten years among Chinese. Our findings also suggested the possible role of epigenetic regulations in the pathways to CHD risk, through or from lifestyle and cardiometabolic factors. Studies are warranted to validate our findings, elucidate the functional mechanisms of newly identified CpGs, and further translate our findings toward preventive or clinical implications.\n",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "0088185a-a071-435b-a421-71c53c8dc9ca",
+      "submission_id": "f4f098cf-ecbb-48fa-be0f-c39c996030b9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward D Janus, University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68671.sa1](https://doi.org/10.7554/eLife.68671.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors present the first large long term study in a non white population of the association between epigenetic changes and coronary heart disease risk over ten years. In this well conducted study there are novel findings for the increased risk of smoking and for impact on blood pressure. This advances our overall knowledge of epigenetic regulation in the pathways to coronary heart disease.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Epigenome-wide analysis of DNA methylation and coronary heart disease: a nested case-control study\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Edward D Janus as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Matthias Barton as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ida Karlsson (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe overall comments from the three reviewers are reproduced below. The paper is excellent. We have provided a list of comments and request you consider these in providing your revision.\n\nSuggested recommendations:\n\n1) Starting with the main concern, the lack of replication is of course an issue (as in most EWASs). Could you compare the top hits from the largest previous EWAS of incident CHD, to see if the direction of effect is similar and if the significance is suggestive in your data? That would tell us a little bit more about the comparability.\n\n2) It would be helpful if some of the methods (and sample description) were provided along with the results, to better follow along the findings (without having to go to the end to read the results first). I found Figure 1 helpful in understanding the results and suggest that it could be presented with the results instead of the methods.\n\n3) Some minor clarifications and justifications I would find helpful as a reader:\n\na. I am not very familiar with the co-methylation network approach. Could you provide a brief overview of the method (preferably along with the results)? As the majority of the findings stem from this method, a justification of its robustness would be helpful.\n\nb. I agree with what you say in the discussion, that it is not possible to say what direction mediation works, but it would be good with a sentence to explain the reason of the directions selected to study mediation.\n\nc. The sample selection: I assume you aimed to capture severe cases by including only fatal IHD or nonfatal MI counted as CHD? Why were individuals with neoplasms or cerebrovascular disease excluded?\n\n4) A couple of questions regarding the statistical analyses:\n\na. The analysis description for single CpG sites only says linear regression. Were the analyses not matched for case-control status (i.e. conditional linear regression), and if so why not? That should be the more powerful and robust approach.\n\nb. In relation to that, why adjust for the matching variables?\n\nc. I am slightly worried about overadjustment, especially in the mediation analyses as several of the lifestyle covariates are likely correlated (e.g. physical activity and BMI). Might including these adjustments in the mediation analyses mask an effect? And for the main analyses, did you also test a simpler model with only basic adjustments for comparison?\n\n5) Please check the number of incident cases and controls so the numbers are consistent in the abstract, figure 1, introduction, results etc. The numbers as currently shown vary slightly from 489 to 494.\n\n6) In the first paragraph of the Results section please expand as the readers won't all look at the methodology section. See also (2) above.\n\nSuggest \u2013 491 cases free of CHD at baseline and developing CHD during follow up and 491 controls free of CHD at baseline and follow up and matched for age, gender, region and timing of blood sampling\u2026\n\n7) Table 1. Please show statistical significance p value for prevalent hypertension and diabetes and for lipids.\n\n8) line 122, can you be specific about items related \"healthy lifestyle\" and are they known risk factors for CHD?\n\n9) line 126, in my opinion, the genomic inflation factor is not helpful here as it is not a good indicator for EWAS. It is because CpGs are more much correlated than SNPs, and the inflation factor is very much dependent on the trait.\n\n10) Line 130: The difference \"-0.003\" between cases and controls is very small and hard to detect. Can you also show the SD of the two CpGs, or simply plot their distributions in cases and controls.\n\n11) Line 144: Why do you use \"probe\" not \"CpG\" in this paragraph?\n\n12) Line 156 change none to no.\n\n13) Line 242: Did you compare the maximum follow-up time and age distribution in the other two prospective publications? I believe the choice of different follow-up time can be an important factor as we are not sure how long it takes CpGs to have effects on CHD.\n\n14) Line 312: \"lab staff were blinded\" does it also mean the cases and controls were randomized on arrays/batches. This is important as we don't want to lose study power by adjusting batch effect.\n\n15) Line 365: Remove the repeated sentence \"A total of 56 SVs were generated.\"\n\n16) Line 434: How were cellular compositions controlled when you could not use SV here?\n\n17) Can you also report the corresponding p-value of the FDR 0.05 threshold?\n\n18) If you used \u03b2-values of DNA methylation in the analysis, please state it.Reviewer #1:\n\nThe authors examine the association between genome wide epigenetic changes and coronary heart disease in an effort to further explore the residual risk not explained by known risk factors\n\nThe major strengths are that this is a large longitudinal study over 10 years in non whites that is Chinese. Earlier studies have used small samples, been primarily in Western countries, have focused on selective genomic regions rather than the whole genome and with a few exceptions have been cross sectional which precludes establishment of a temporal and potentially causative relationship.\n\nNo major weaknesses are apparent. There has been a comprehensive effort to exclude confounders. In limitations the possibility of some residual confounders is noted.\n\nIn this well conducted study there are novel findings for impact of DNA methylation at 25 cytosine phosphate-guanine (CpG) dinucleotides, predominantly novel, on CHD risk; for the increased risk of smoking (25% mediated by methylation at one specific site) and for impact on blood pressure and intracellular signaling as well.\n\nThe authors have achieved their aims and the results support their conclusions.\n\nThis study advances our overall knowledge of epigenetic regulation in the pathways to coronary heart diseaseReviewer #2:\n\nThis study used a matched case-control design to study the prospective effect of DNA methylation on coronary heart disease. The study data included 491 cases and 491 controls which can provide enough statistical power. The authors used proper statistical methods to achieve their aims, and the results support their conclusions. This study will contribute to our better understanding of the effect of DNA methylation on coronary heart disease.\n\nReviewer #3:\n\nThe authors present a thorough and very well-written EWAS of incident CHD in 491 cases and 491 matched controls. The sample was drawn from the China Kadoorie Biobank, with 10-years of follow-up, and the data had rich baseline information in addition to DNA methylation measures. Single site association analyses identified two sites (FDR p-value <0.05), and a network approach 24 sites (module-specific FDR<0.01; one site overlapping with single site associations). They further conducted mediation analyses, testing a wide range of cardiometabolic and lifestyle factors, and found evidence of mediation effects at some of the sites in relation to smoking and blood pressure. A weakness is that which is common to most EWASs, namely the lack of replication. However, the issue also highlights the importance of further studies in the field. The prospective nature as well as the Asian population further strengthens the importance, as both aspects are largely lacking in the field.\n\nThe methodology is sound and support the conclusions of the paper. I especially appreciate the addition of mediation analyses, as it provides a better understanding of potential biological pathways.\n",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e0267da4-b598-4bcd-a301-d8032bfecf41",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C1",
+      "claim": "Coronary heart disease (CHD) is one of the leading causes of morbidity and mortality worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Coronary heart disease (CHD) is one of the leading causes of morbidity and mortality worldwide (GBD 2017 Causes of Death Collaborators, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to GBD 2017 Causes of Death Collaborators, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "af4c4558-024f-4c86-9588-c84cb1c6407a",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C2",
+      "claim": "A considerable proportion of the observed CHD risk remains unexplained despite known environmental risk factors and the identification of genetic variations.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite known environmental risk factors and the identification of genetic variations, a considerable proportion of the observed CHD risk remains unexplained (Deloukas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Deloukas et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "b14a4cc9-ba85-4db2-b47d-8236f0d7b806",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C3",
+      "claim": "Methylation at cytosine-phosphate-guanine (CpG) dinucleotides is a common epigenetic modification of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation at cytosine-phosphate-guanine (CpG) dinucleotides is a common epigenetic modification of DNA (Deaton and Bird, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Deaton and Bird, 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d4894b34-d69d-4b80-be51-c43a6adc827e",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C4",
+      "claim": "DNA methylation forms an interface between the genotype and the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "which forms an interface between the genotype and the environment (Rosa-Garrido et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rosa-Garrido et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "3e310479-b8c0-4e42-93e4-242332fc2e09",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C5",
+      "claim": "DNA methylation is responsive to smoking.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation are responsive to environmental stimuli and unhealthy lifestyles, including smoking (McCartney et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McCartney et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "c7c5d2eb-1f02-4ba7-ba17-43bd0a41f9f3",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C6",
+      "claim": "DNA methylation is responsive to alcohol consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation are responsive to environmental stimuli and unhealthy lifestyles, including smoking (McCartney et al., 2018), alcohol consumption (Liu et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "89b42823-7c25-4e61-8cda-1055f163a484",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C7",
+      "claim": "DNA methylation is responsive to obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation are responsive to environmental stimuli and unhealthy lifestyles, including smoking (McCartney et al., 2018), alcohol consumption (Liu et al., 2018), and obesity (Wahl et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wahl et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "29644f40-344c-4c04-85c0-1001025a4696",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C9",
+      "claim": "DNA methylation is associated with hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes DNA methylation a potential biomarker of environmental-related and lifestyle-driven diseases of adulthood, for example, metabolic dysfunction (including hypertension (Richard et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Richard et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "b0fce5f9-535f-4b8c-b197-5213943b4a34",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C10",
+      "claim": "DNA methylation is associated with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes DNA methylation a potential biomarker of environmental-related and lifestyle-driven diseases of adulthood, for example, metabolic dysfunction (including hypertension (Richard et al., 2017), diabetes (Chambers et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chambers et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "a9a23528-030c-46f4-ad40-bbfcf90854ca",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C12",
+      "claim": "Previous epigenome-wide analysis of DNA methylation and CHD was characterized by small sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous epigenome-wide analysis of DNA methylation and CHD was characterized by small sample size (Silvio et al., 2014; Nakatochi et al., 2017; Guarrera et al., 2015; Sharma et al., 2014; Li et al., 2017; Yamada et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "db2e741d-8533-47b9-9f82-9856f655c406",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C13",
+      "claim": "Previous epigenome-wide analysis of DNA methylation and CHD was based primarily in Western countries.",
+      "claim_type": "EXPLICIT",
+      "source": "based in primarily Western countries (Silvio et al., 2014; Guarrera et al., 2015; Yamada et al., 2014; Golareh et al., 2019; Liu et al., 2017; Fern\u00e1ndez-Sanl\u00e9s et al., 2018; Rask-Andersen et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "9055c63b-4f8e-48db-9329-1cc9e9a284de",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C14",
+      "claim": "Only a few prospective studies on DNA methylation and CHD were conducted in white populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a few prospective studies were conducted in the white populations (Guarrera et al., 2015; Golareh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Guarrera et al., 2015; Golareh et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "647c9fe6-616a-4404-b559-524e5488130f",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C15",
+      "claim": "The China Kadoorie Biobank (CKB) is a prospective cohort of 512,715 adults aged 30\u201379 years from 10 geographically diverse areas across China.",
+      "claim_type": "EXPLICIT",
+      "source": "The CKB is a prospective cohort of 512,715 adults aged 30\u201379 years from 10 geographically diverse areas across China (five urban and five rural areas) since 2004\u20132008.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study population characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "e854ee18-1f52-48dd-98e4-f7230bfb1375",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C16",
+      "claim": "After quality control, 982 participants with mean age 50.1 years were retained in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control, 982 participants (mean age 50.1 years) were retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the final sample size and characteristics after quality control",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "a68fe27b-d10c-4e3c-85ac-8a0ce6327f5d",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C17",
+      "claim": "Methylation level at 25 CpG sites across the genome was associated with incident CHD at genome-wide false discovery rate (FDR) < 0.05 or module-specific FDR < 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation level at 25 CpG sites across the genome was associated with incident CHD (genome-wide false discovery rate [FDR] < 0.05 or module-specific FDR < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the primary finding from the epigenome-wide analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "1f091c2d-b879-4a7e-9882-3d6cd1157295",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C18",
+      "claim": "One SD increase in methylation level of identified CpGs was associated with differences in CHD risk, ranging from a 47% decrease to a 118% increase.",
+      "claim_type": "EXPLICIT",
+      "source": "One SD increase in methylation level of identified CpGs was associated with differences in CHD risk, ranging from a 47 % decrease to a 118 % increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the range of effect sizes for the identified CpGs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "e15a62a2-e230-456f-ae93-af7c553d4fc3",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C19",
+      "claim": "28.5% of the excess CHD risk associated with smoking was mediated by methylation level at the promoter region of ANKS1A gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Mediation analyses revealed 28.5 % of the excessed CHD risk associated with smoking was mediated by methylation level at the promoter region of ANKS1A gene (P for mediation effect = 0.036).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation analysis result with P-value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "fedf8a84-77e9-49a5-9866-bfb216053d2c",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C20",
+      "claim": "Methylation level at the promoter region of SNX30 was associated with blood pressure and subsequent risk of CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation level at the promoter region of SNX30 was associated with blood pressure and subsequent risk of CHD, with the mediating proportion to be 7.7 % (P = 0.003) via systolic blood pressure and 6.4 % (P = 0.006) via diastolic blood pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the association and mediation analysis results with P-values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "4f425832-8b04-4a1f-9b04-5a3c8d1f2c11",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C21",
+      "claim": "7.7% of the CHD risk associated with SNX30 methylation was mediated via systolic blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation level at the promoter region of SNX30 was associated with blood pressure and subsequent risk of CHD, with the mediating proportion to be 7.7 % (P = 0.003) via systolic blood pressure",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation proportion with P-value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "94c4fdc9-ea74-49d9-92f4-b6ed172e7c9f",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C22",
+      "claim": "6.4% of the CHD risk associated with SNX30 methylation was mediated via diastolic blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation level at the promoter region of SNX30 was associated with blood pressure and subsequent risk of CHD, with the mediating proportion to be 7.7 % (P = 0.003) via systolic blood pressure and 6.4 % (P = 0.006) via diastolic blood pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation proportion with P-value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "3d42384f-32c5-467c-9baf-2fd677001808",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C23",
+      "claim": "Network analysis revealed a co-methylation module associated with CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Network analysis revealed a co-methylation module associated with CHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the finding from network analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "fe00e9f5-0a8e-4a55-b08b-6102fc0d5d12",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C24",
+      "claim": "Baseline DNA methylation was measured for 494 CHD cases and 494 matched controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Baseline DNA methylation was measured for 494 CHD cases, whose CHD occurred during the follow-up period until 31 December 2015, and 494 matched controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design and sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "bf922527-8ee6-495e-99bb-e1e9135f7aca",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C25",
+      "claim": "All participants were free of heart disease, stroke, or cancer at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "All these participants were free of heart disease, stroke, or cancer at baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the inclusion criteria for the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "4fc38a62-6129-4621-9533-918723f82785",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C26",
+      "claim": "Incident CHD cases were defined as fatal ischemic heart disease (IHD) coded as ICD-10 I20-I25 and nonfatal acute myocardial infarction coded as I21.",
+      "claim_type": "EXPLICIT",
+      "source": "Incident CHD cases were defined as fatal ischemic heart disease (IHD) coded as ICD-10 I20-I25 and nonfatal acute myocardial infarction coded as I21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Defines the outcome measure using ICD-10 codes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d9c24c0a-7216-4081-80f7-5ea6260455fa",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C27",
+      "claim": "90% of the diagnoses of CHD were confirmed by review of hospital medical records.",
+      "claim_type": "EXPLICIT",
+      "source": "The diagnosis adjudication has finished for 134 reported cases by a review of hospital medical records. Overall, 90 % of the diagnoses of CHD were confirmed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the validation rate of CHD diagnoses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "a79e307e-3ac0-4b9d-a297-7755ab0809d8",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C28",
+      "claim": "Epigenome-wide methylation level of baseline blood leukocyte DNA was measured by Infinium Methylation EPIC BeadChip.",
+      "claim_type": "EXPLICIT",
+      "source": "For 494 pairs of CHD cases and controls, epigenome-wide methylation level of baseline blood leukocyte DNA was measured by Infinium Methylation EPIC BeadChip (Illumina, USA), which interrogates ~850,000 CpG sites (BGI, China).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the methylation measurement method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "4efc0a39-30b6-42b1-aef9-ebbf5d99f7fa",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C29",
+      "claim": "The Infinium Methylation EPIC BeadChip interrogates approximately 850,000 CpG sites.",
+      "claim_type": "EXPLICIT",
+      "source": "For 494 pairs of CHD cases and controls, epigenome-wide methylation level of baseline blood leukocyte DNA was measured by Infinium Methylation EPIC BeadChip (Illumina, USA), which interrogates ~850,000 CpG sites (BGI, China).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the coverage of the methylation array",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "8e12c84c-9c1f-42eb-a88f-7b5ebd67a83c",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C30",
+      "claim": "After quality control, 982 of 988 samples with 747,726 CpG sites were retained.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control, 982 of 988 samples with 747,726 CpG sites were retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the final sample and CpG site numbers after quality control",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "7a6cd0d9-bb73-474f-ab5b-f54a03e346bc",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C31",
+      "claim": "The correlation for duplicate measurements on the same sample ranged from 0.992 to 0.997.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we randomly chose 11 samples (one sample per plate) for duplicate measurements. The correlation for duplicate measurements on the same sample ranged from 0.992 to 0.997.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the technical reproducibility of the methylation measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "9228b981-33c9-47d8-b1f4-7e1aef27e39f",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C32",
+      "claim": "The mean age was 50.6 \u00b1 7.6 years for incident CHD cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age was 50.6 \u00b1 7.6 years for incident CHD cases and 49.5 \u00b1 7.3 years for matched controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mean age of CHD cases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "1322d712-3077-4831-a41f-7328b33b1a55",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C33",
+      "claim": "The mean age was 49.5 \u00b1 7.3 years for matched controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age was 50.6 \u00b1 7.6 years for incident CHD cases and 49.5 \u00b1 7.3 years for matched controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mean age of controls",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "f802498c-7451-42f8-849c-68d54c6f7e0b",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C34",
+      "claim": "CHD cases were more likely to be daily smokers compared with control participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with control participants, the CHD cases were more likely to be daily smokers, have unhealthy dietary habits, and have higher BMI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the comparison of baseline characteristics between cases and controls",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "47fd2fca-1f08-43dc-91bb-66c8fc4fa8cd",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C35",
+      "claim": "CHD cases were more likely to have unhealthy dietary habits compared with control participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with control participants, the CHD cases were more likely to be daily smokers, have unhealthy dietary habits, and have higher BMI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the comparison of baseline characteristics between cases and controls",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "43219aae-58b0-44c1-b42b-943447320410",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C36",
+      "claim": "CHD cases had higher BMI compared with control participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with control participants, the CHD cases were more likely to be daily smokers, have unhealthy dietary habits, and have higher BMI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the comparison of baseline characteristics between cases and controls",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "479f1886-8068-4fe5-8dfe-6d72cb2a775d",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C37",
+      "claim": "CHD cases had a higher prevalence of hypertension at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "CHD cases also had a higher prevalence of hypertension and diabetes and worse lipid profile at baseline (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the comparison of baseline characteristics between cases and controls, with reference to Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "f0194355-c5a0-4f18-b7ea-7a63759fdf81",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C38",
+      "claim": "CHD cases had a higher prevalence of diabetes at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "CHD cases also had a higher prevalence of hypertension and diabetes and worse lipid profile at baseline (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the comparison of baseline characteristics between cases and controls, with reference to Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "ded5e4a9-de26-4352-993c-bc1f16e8aaa5",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C39",
+      "claim": "CHD cases had worse lipid profile at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "CHD cases also had a higher prevalence of hypertension and diabetes and worse lipid profile at baseline (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the comparison of baseline characteristics between cases and controls, with reference to Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "331ab93e-82ab-49c0-a116-903c3a7d2063",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C40",
+      "claim": "The genomic inflation factor was 1.09 after adjustment for covariates and surrogate variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomic inflation factor was 1.09 after adjustment for covariates and surrogate variables (SV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the genomic inflation factor as a measure of potential confounding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "7bd51c14-07fb-47b2-9bdb-a9b3f79c1be1",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C41",
+      "claim": "Methylation markers at two genetic regions were associated with incident CHD at FDR < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation markers at two genetic regions were associated with incident CHD at FDR < 0.05 (Table 2 and Supplementary file 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the primary finding from single-marker tests",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "c9e4088e-802e-432a-bc52-6b96cae6fd25",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C42",
+      "claim": "The adjusted difference in methylation level between cases and controls was \u20130.003 (0.0006) for cg23398826 (P = 1.57E-08).",
+      "claim_type": "EXPLICIT",
+      "source": "The adjusted difference (standard error, SE) in methylation level between cases and controls was \u20130.003 (0.0006) for cg23398826 (P = 1.57E-08), which was annotated to SNX30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the effect size and P-value for cg23398826",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "aad51012-5a0b-4c23-b595-dc4a0a81e32f",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C43",
+      "claim": "cg23398826 was annotated to SNX30.",
+      "claim_type": "EXPLICIT",
+      "source": "The adjusted difference (standard error, SE) in methylation level between cases and controls was \u20130.003 (0.0006) for cg23398826 (P = 1.57E-08), which was annotated to SNX30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the gene annotation for cg23398826",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d221b639-cfea-47d8-b5f0-ce9c3a6cabc6",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C44",
+      "claim": "The odds ratio for incident CHD was 0.56 (0.45, 0.70) per SD increase in methylation level at cg23398826.",
+      "claim_type": "EXPLICIT",
+      "source": "The odds ratio (OR) (95% confidence interval [CI]) for incident CHD was 0.56 (0.45, 0.70) per SD increase in methylation level at cg23398826.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the odds ratio and confidence interval for cg23398826",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "88841657-116e-446d-aa25-20cb38cc95ac",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C45",
+      "claim": "The adjusted difference in methylation level between cases and controls for cg02386575 was 0.006 (0.0011; P = 9.61E-08).",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding adjusted difference (SE) for cg02386575 was 0.006 (0.0011; P = 9.61E-08), annotated to IMPDH2 and QRICH1 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the effect size and P-value for cg02386575",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "f84e90a5-6a91-4bf4-a96a-0580f670195b",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C46",
+      "claim": "cg02386575 was annotated to IMPDH2 and QRICH1.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding adjusted difference (SE) for cg02386575 was 0.006 (0.0011; P = 9.61E-08), annotated to IMPDH2 and QRICH1 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the gene annotation for cg02386575",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "005028b0-3dbe-4c91-ac08-94dc337b9663",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C47",
+      "claim": "The odds ratio for per SD increase in cg02386575 was 2.00 (1.57, 2.56).",
+      "claim_type": "EXPLICIT",
+      "source": "The OR (95% CI) for per SD increase in cg02386575 was 2.00 (1.57, 2.56).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the odds ratio and confidence interval for cg02386575",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "24b5341c-ef53-4c69-8adf-b8ccf5d6ecd9",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C48",
+      "claim": "A total of five modules were produced in the clustering step of WGCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of five modules were produced in the clustering step of WGCNA (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports the result of WGCNA clustering with reference to Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "3a98c337-f9dc-4116-b4d3-8d3ea32480fe",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C49",
+      "claim": "One module (Brown module) containing 2,106 CpG sites was associated with incident CHD after adjustment for covariates and all SVs (P = 6.41E-08).",
+      "claim_type": "EXPLICIT",
+      "source": "One module (called: Brown module), containing 2,106 CpG sites, was associated with incident CHD after adjustment for covariates and all SVs (P < 0.05/the number of modules, P = 6.41E-08).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the association of the Brown module with CHD",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "21106aff-d2d1-437e-a0c5-416d45b17bc5",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C50",
+      "claim": "Gene enrichment analysis of the annotated genes of 2106 CpG sites in the Brown module revealed six annotation clusters with at least one term having an FDR < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene enrichment analysis of the annotated genes of 2106 CpG sites in this module revealed six annotation clusters with at least one term having an FDR < 0.05 (Supplementary file 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the gene enrichment analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "864f2e9d-9316-480d-a064-a00afe4e539e",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C51",
+      "claim": "Annotation clusters were significantly enriched in terms associated with intracellular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These annotation clusters were significantly enriched in terms associated with intracellular signaling (zinc-finger, pleckstrin homology domains, C2 domains, and protein kinase activity) and transcription regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the functional enrichment of the Brown module",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "f89dcc5b-d6a5-4973-a2ea-e3eb9237ca13",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C52",
+      "claim": "Annotation clusters were significantly enriched in terms associated with transcription regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These annotation clusters were significantly enriched in terms associated with intracellular signaling (zinc-finger, pleckstrin homology domains, C2 domains, and protein kinase activity) and transcription regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the functional enrichment of the Brown module",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "98eb0dea-b725-4897-b13f-2dedf7ccee06",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C53",
+      "claim": "Annotated genes in the Brown module were enriched in genes associated with tobacco use disorder, stroke, and kidney disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Annotated genes in this module were also enriched in genes associated with tobacco use disorder, stroke, and kidney disease (the Genetic Association Database).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the disease association enrichment from the Genetic Association Database",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "32a81ef2-cc4c-41ac-9c69-fcb227f103e3",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C54",
+      "claim": "Within the Brown module, 24 CpGs were significantly associated with CHD (module-specific FDR < 0.01), with P ranging from 1.10E-04\u20139.61E-08.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the Brown module, 24 CpGs were significantly associated with CHD (module-specific FDR < 0.01), with P ranging from 1.10E-04\u20139.61E-08 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of significant CpGs within the Brown module",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "11e0fb5b-2ad9-4aa6-814d-120496236ea3",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C55",
+      "claim": "Together with two CpGs identified from single-maker tests, a total of 25 CpGs were associated with CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with two CpGs identified from single-maker tests, a total of 25 CpGs were associated with CHD, with OR (95 % confidence interval) ranging from 0.53 (0.38, 0.73) for cg26334131 to 2.18 (1.47, 3.23) for cg21210537 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the total number of significant CpGs identified",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "fa9e2b20-e691-42c9-94e1-b175096c59f5",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C56",
+      "claim": "The odds ratio for CHD ranged from 0.53 (0.38, 0.73) for cg26334131 to 2.18 (1.47, 3.23) for cg21210537.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with two CpGs identified from single-maker tests, a total of 25 CpGs were associated with CHD, with OR (95 % confidence interval) ranging from 0.53 (0.38, 0.73) for cg26334131 to 2.18 (1.47, 3.23) for cg21210537 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the range of odds ratios for the identified CpGs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "3ef8734d-10d8-44aa-a49f-cdcf4942660e",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C57",
+      "claim": "Methylation level at cg08106661 was associated with the average number of cigarette equivalents per day (effect size = 1.50E-04, SE = 4.67E-05, P = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation level at cg08106661 was associated with the average number of cigarette equivalents per day (effect size = 1.50E-04, SE = 4.67E-05, P = 0.001; Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the association between cg08106661 and smoking",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "334b697a-f9dd-4db0-b9ec-6e4644d93924",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C58",
+      "claim": "28.5% of the smoking-associated CHD risk was mediated through methylation level at cg08106661 (P = 0.036).",
+      "claim_type": "EXPLICIT",
+      "source": "Further mediation analysis revealed that 28.5 % of the smoking-associated CHD risk was mediated through methylation level at cg08106661 (P = 0.036).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "cc5098c3-5108-4b50-a3a5-74ddaac64714",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C59",
+      "claim": "Three loci were associated with diet score.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found three loci associated with diet score and two loci associated with BMI, but no statistically significant mediation effect was noted (P > 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the association with diet score",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "1d6dfe9f-b744-4872-aede-c95d4c1d593b",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C60",
+      "claim": "Two loci were associated with BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found three loci associated with diet score and two loci associated with BMI, but no statistically significant mediation effect was noted (P > 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the association with BMI",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "48587d2d-c718-4e21-9a2c-04ef27325120",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C61",
+      "claim": "No statistically significant mediation effect was noted for diet score and BMI (P > 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found three loci associated with diet score and two loci associated with BMI, but no statistically significant mediation effect was noted (P > 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the lack of significant mediation effect",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "f4e1f698-dffb-4c60-aa22-2c1c9da4e79a",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C62",
+      "claim": "Participants in the top quartile of methylation level at cg23398826 had 6.4 (SE 2.1) mmHg lower SBP compared with those in the bottom quartile (P = 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with participants in the bottom quartile of methylation level at cg23398826, those in the top quartile had 6.4 (SE 2.1) mmHg lower SBP (P = 0.003) and 3.6 (1.2) mmHg lower DBP (P = 0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the association between cg23398826 and systolic blood pressure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "f3bde9b7-8ce0-457e-830d-1dc788fe83f2",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C63",
+      "claim": "Participants in the top quartile of methylation level at cg23398826 had 3.6 (1.2) mmHg lower DBP compared with those in the bottom quartile (P = 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with participants in the bottom quartile of methylation level at cg23398826, those in the top quartile had 6.4 (SE 2.1) mmHg lower SBP (P = 0.003) and 3.6 (1.2) mmHg lower DBP (P = 0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the association between cg23398826 and diastolic blood pressure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "7cfdbd91-9a12-4bc1-a65a-a8c170906c7d",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C64",
+      "claim": "The proportion of reduced CHD risk associated with cg23398826 mediated by SBP was 7.65% (P = 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "The proportions of reduced CHD risk associated with cg23398826 mediated by SBP and DBP were 7.65 % (P = 0.003) and 6.39 % (P = 0.006), respectively (Table 4, Table 4\u2014source data 1 and Table 4\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation proportion for SBP",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d1b11625-3fee-497a-bea7-970d026a45a3",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C65",
+      "claim": "The proportion of reduced CHD risk associated with cg23398826 mediated by DBP was 6.39% (P = 0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "The proportions of reduced CHD risk associated with cg23398826 mediated by SBP and DBP were 7.65 % (P = 0.003) and 6.39 % (P = 0.006), respectively (Table 4, Table 4\u2014source data 1 and Table 4\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation proportion for DBP",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d25ab603-afa6-4857-bb24-6a11782416c2",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C66",
+      "claim": "Methylation level at cg13311494 (annotated to PEMT) showed statistically significant mediation on CHD risk through SBP with a mediation proportion of 15.61%.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis also showed statistically significant mediation of methylation level at cg13311494 (annotated to PEMT) on CHD risk through SBP and DBP, with the mediation proportions of 15.61% and 12.38%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation proportion for SBP",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "ca7d4697-1e85-4838-8302-c9cb29219355",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C67",
+      "claim": "Methylation level at cg13311494 (annotated to PEMT) showed statistically significant mediation on CHD risk through DBP with a mediation proportion of 12.38%.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis also showed statistically significant mediation of methylation level at cg13311494 (annotated to PEMT) on CHD risk through SBP and DBP, with the mediation proportions of 15.61% and 12.38%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation proportion for DBP",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "a04a0a6b-1024-40c2-a25f-562fc6bc6971",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C68",
+      "claim": "Four of the total 25 identified CpGs map to genes that have been reported in association with cardiovascular disease in previous GWAS studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the total 25 identified CpGs map to genes that have been reported in association with cardiovascular disease in previous GWAS studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Compares findings with previous GWAS studies",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "0a6c4661-7b58-468b-80f1-daf684e6daec",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C69",
+      "claim": "CpG cg08106661 maps to the ANKS1A gene with critical roles in regulating the epidermal growth factor receptor (EGFR).",
+      "claim_type": "EXPLICIT",
+      "source": "CpG cg08106661 maps to the ANKS1A (Ankyrin repeat and SAM domain-containing protein 1 A) gene with critical roles in regulating the epidermal growth factor receptor (EGFR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the biological function of ANKS1A",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "b82f4f3e-3165-41a4-9e13-70cef529d659",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C70",
+      "claim": "Activation of EGFR has been implicated in endothelial dysfunction, atherogenesis, and cardiac remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of EGFR has been implicated in endothelial dysfunction, atherogenesis, and cardiac remodeling (Makki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Makki et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "99a74b8c-db4e-4e4d-bce1-184cd43f66c0",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C71",
+      "claim": "SNPs in ANKS1A have been consistently linked to CHD and smoking behaviour in different populations.",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs in ANKS1A have been consistently linked to CHD and smoking behaviour in different populations (Dichgans et al., 2014; Charmet et al., 2018; Schunkert et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dichgans et al., 2014; Charmet et al., 2018; Schunkert et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "0792dc3d-4bc8-4c0f-9832-42dd92736aac",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C72",
+      "claim": "More than 25% of the increased CHD risk related to smoking was mediated through methylation level at cg08106661.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our mediation analysis noted that more than 25 % of the increased CHD risk related to smoking was mediated through methylation level at cg08106661.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "bbd8c811-fd10-42a7-ab54-107c89287383",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C73",
+      "claim": "Smoking-induced epigenetic modification of DNA may play an important part in the underlying pathway from smoking to CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide evidence that smoking-induced epigenetic modification of DNA may play an important part in the underlying pathway from smoking to CHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the mediation analysis results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "8d5535c7-a25f-4f7a-8f93-a2558631e455",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C74",
+      "claim": "Five identified CHD-associated CpG loci were linked to blood pressure in previous GWAS studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Five identified CHD-associated CpG loci were linked to blood pressure in previous GWAS studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Compares findings with previous GWAS studies",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "8a54b1e7-ba96-43c4-935b-56a27456097a",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C75",
+      "claim": "CpG cg23398826 was located within 200 bp from the transcription start site of the SNX30 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "CpG cg23398826 was located within 200 bp from the transcription start site of the SNX30 (Sorting Nexin 30) gene, a member of the sorting nexin family which plays a vital role in endocytic trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the genomic location of cg23398826",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d0e6a52a-ef9d-4511-9322-148d0cf40b65",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C76",
+      "claim": "SNX30 is a member of the sorting nexin family which plays a vital role in endocytic trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "CpG cg23398826 was located within 200 bp from the transcription start site of the SNX30 (Sorting Nexin 30) gene, a member of the sorting nexin family which plays a vital role in endocytic trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the biological function of SNX30",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "a08f078e-bce8-4089-95d2-47c2d0d623ab",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C77",
+      "claim": "Perturbation of endocytic trafficking may lead to impaired homeostatic responses and possibly disease states, including cardiovascular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The perturbation of this process may lead to impaired homeostatic responses and possibly disease states, including cardiovascular disease (Yang et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yang et al., 1979",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "94419597-9f5e-4fc7-898a-1f4e7b6299e6",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C78",
+      "claim": "SNX30 has been reported in a GWAS of DBP night-to-day ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "SNX30 has been reported in a GWAS of DBP night-to-day ratio (Rimpel\u00e4 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rimpel\u00e4 et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "bcafc212-9386-4114-87f5-1b5837365794",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C79",
+      "claim": "Blood pressure mediated approximately 10% of the reduced CHD risk related to methylation at cg23398826.",
+      "claim_type": "EXPLICIT",
+      "source": "Further mediation analysis showed that blood pressure mediated ~10 % of the reduced CHD risk related to methylation at cg23398826, suggesting that such epigenetic regulation might exert an important influence on blood pressure and subsequent risk of CHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the mediation analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "c7a25eaf-9e4e-484d-a46c-0ff1b19a9aa7",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C80",
+      "claim": "Epigenetic regulation at cg23398826 might exert an important influence on blood pressure and subsequent risk of CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Further mediation analysis showed that blood pressure mediated ~10 % of the reduced CHD risk related to methylation at cg23398826, suggesting that such epigenetic regulation might exert an important influence on blood pressure and subsequent risk of CHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the mediation analysis results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "aa2e1fbf-ff21-451b-a216-5b40821fd894",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C81",
+      "claim": "Gene members of the CHD-associated co-methylation network were enriched in several protein domains, molecule function, and pathways that are involved in intracellular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene members of this network were enriched in several protein domains, molecule function, and pathways that are involved in intracellular signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the functional enrichment of the network",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "89398b4a-c078-4f33-80be-a76b67a0fa82",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C82",
+      "claim": "Cells can respond to the environment and extracellular cues by intracellular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells can respond to the environment and extracellular cues by this vital mechanism (Schulman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schulman, 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "527b2070-48fd-4e62-bd14-702fd3c45516",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C83",
+      "claim": "A previous study using an in vitro model of cardiac hypertrophy revealed that differentially methylated promoters were involved in the intracellular signaling process.",
+      "claim_type": "EXPLICIT",
+      "source": "One previous study using an in vitro model of cardiac hypertrophy revealed that differentially methylated promoters were involved in the intracellular signaling process (Stenzig et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stenzig et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "67675824-2906-4924-9aa0-46614879f4ba",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C84",
+      "claim": "Previous epigenome-wide studies of CHD in Asian population were all cross-sectional design with relatively small sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous epigenome-wide studies of CHD in Asian population were all cross-sectional design with relatively small sample size (Nakatochi et al., 2017; Sharma et al., 2014; Li et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nakatochi et al., 2017; Sharma et al., 2014; Li et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "610fe7c9-c558-4c80-91d1-267b71386754",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C85",
+      "claim": "In cross-sectional studies, the changes in DNA methylation at identified CpGs might be a result of disease state.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous epigenome-wide studies of CHD in Asian population were all cross-sectional design with relatively small sample size (Nakatochi et al., 2017; Sharma et al., 2014; Li et al., 2017), in which the changes in DNA methylation at identified CpGs might be a result of disease state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discusses the limitation of cross-sectional design",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "7d809993-35c5-4738-a0e3-afda4d9899bd",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C86",
+      "claim": "One prospective study used a meta-analysis of nine population-based cohorts from the US and Europe (11,461 participants, mean age 64 years, mean follow-up time 11.2 years) to analyze CHD-associated DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "One of them used a meta-analysis of nine population-based cohorts from the US and Europe (11,461 participants, mean age 64 years, mean follow-up time 11.2 years) to analyze CHD-associated DNA methylation at a single-nucleotide resolution (Golareh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Golareh et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "bc5214af-c667-47a4-a145-4c816a89215d",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C87",
+      "claim": "Based on HumanMethylation450 BeadChip data, methylation levels at 52 CpG sites were identified to be associated with incident CHD or myocardial infarction in a previous meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on HumanMethylation450 BeadChip data, methylation levels at 52 CpG sites were identified to be associated with incident CHD or myocardial infarction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports findings from a previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "45d98851-6429-4307-8927-9382c77cc32c",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C88",
+      "claim": "Three identified loci in the present study could be replicated at the gene level (ANKS1A, RERE, and EDC3) by a small study which investigated differential DNA methylation loci using 15 donor-matched healthy and atherosclerotic human aorta samples in Spain.",
+      "claim_type": "EXPLICIT",
+      "source": "Three identified loci in the present study could be replicated at the gene level (ANKS1A, RERE, and EDC3), by a small study which investigated differential DNA methylation loci using 15 donor-matched healthy and atherosclerotic human aorta samples in Spain (Silvio et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Silvio et al., 2014",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "67303304-3923-4690-8a81-f1c3336f935d",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C89",
+      "claim": "Similar DNA methylation patterns at certain genes might be consistent in blood leukocytes and atherosclerotic lesions during the development of CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar DNA methylation patterns at certain genes might be consistent in blood leukocytes and atherosclerotic lesions during the development of CHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the replication findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "494fbb00-6a9e-47a7-9ac2-7f78f1d89f9f",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C90",
+      "claim": "This study is the first prospective and the largest EWAS of CHD in the Asian population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study is by far the first prospective and the largest EWAS of CHD in the Asian population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claims novelty of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "b24b2882-d6d8-4361-b9b8-e79e0dfe1a70",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C91",
+      "claim": "The prospective design allowed identification of loci where changes in DNA methylation potentially predict the risk of future CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "The prospective design allowed us to identify loci where changes in DNA methylation potentially predict the risk of future CHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discusses the advantage of prospective design",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "5746f808-479c-45e3-b6ee-44a445752b36",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C92",
+      "claim": "The use of the latest DNA methylation array that covers over 850,000 CpG methylation sites provides extensive coverage of CpG islands, genes, and enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of the latest DNA methylation array that covers over 850,000 CpG methylation sites provides extensive coverage of CpG islands, genes, and enhancer, however, also increases the burden of multiple hypothesis testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discusses the advantage of the EPIC array",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "ed23346a-52b6-4d49-9815-fe91b33c586d",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C93",
+      "claim": "The use of the latest DNA methylation array increases the burden of multiple hypothesis testing.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of the latest DNA methylation array that covers over 850,000 CpG methylation sites provides extensive coverage of CpG islands, genes, and enhancer, however, also increases the burden of multiple hypothesis testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discusses the limitation of the EPIC array",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "0a6d3f45-1b23-47e8-b652-5bc14f04fa7b",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C94",
+      "claim": "Residual confounding is still possible despite comprehensive adjustment for preselected potential confounders and use of SVA method.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we have made a comprehensive adjustment for preselected potential confounders and also used the recommended SVA method to remove the unknown confounding effect, residual confounding is still possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledges a limitation of the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d581813f-286b-4f16-a2e4-c92814f6479e",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C95",
+      "claim": "The potential inflation due to unadjusted confounding effect was small as indicated by the Q-Q plot.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the potential inflation due to unadjusted confounding effect was small as indicated by the Q-Q plot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the assessment of confounding using Q-Q plot",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "b326d14e-9e48-4bc9-8004-13b132050f49",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C96",
+      "claim": "The cases and controls were not randomized on arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "The cases and controls were not randomized on arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledges a limitation of the study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "054ba650-5b29-4a46-8784-46265f3fb584",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C97",
+      "claim": "Adjusting batch effect may lose power to some extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjusting batch effect may lose power to some extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discusses a limitation of the analytical approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "2402e152-8961-471d-8127-78518967e6a8",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C98",
+      "claim": "Future studies with samples at multiple time points preceding CHD onset are expected to provide insights into the role of dynamic changes of methylation and expression level in the progress of CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Future studies with samples at multiple time points preceding CHD onset are expected to provide insights into the role of dynamic changes of methylation and expression level in the progress of CHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Suggests future research directions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "68922495-005a-41df-b808-05711ddc0321",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C99",
+      "claim": "The study identified novel findings on associations of leukocyte DNA methylation at 25 CpGs with CHD risk over the next ten years among Chinese.",
+      "claim_type": "EXPLICIT",
+      "source": "We presented novel findings on associations of leukocyte DNA methylation at 25 CpGs with CHD risk over the next ten years among Chinese.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summarizes the main finding of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "1f62c54f-7bf9-4c8e-8222-88b5fe957ebf",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C100",
+      "claim": "The findings suggested the possible role of epigenetic regulations in the pathways to CHD risk, through or from lifestyle and cardiometabolic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also suggested the possible role of epigenetic regulations in the pathways to CHD risk, through or from lifestyle and cardiometabolic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summarizes the interpretation of findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "6fd913b8-6e10-4f90-9f4e-b819f5b0f001",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C101",
+      "claim": "Studies are warranted to validate the findings, elucidate the functional mechanisms of newly identified CpGs, and further translate findings toward preventive or clinical implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies are warranted to validate our findings, elucidate the functional mechanisms of newly identified CpGs, and further translate our findings toward preventive or clinical implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Suggests future research directions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d9af9bec-8c35-4481-aa4e-058a2eaf06aa",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C102",
+      "claim": "491 cases were free of CHD at baseline and developed CHD during follow up.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control, we inculded 491 cases free of CHD at baseline and developing CHD during follow up and 491 controls free of CHD at baseline and follow up and matched for birth year, age at baseline, sex, study area, and area, hours fasting prior to blood draw.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the final study sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "7bbadf88-c8a9-4a51-908d-af6f0d66c35e",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C103",
+      "claim": "491 controls were free of CHD at baseline and follow up.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control, we inculded 491 cases free of CHD at baseline and developing CHD during follow up and 491 controls free of CHD at baseline and follow up and matched for birth year, age at baseline, sex, study area, and area, hours fasting prior to blood draw.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the final study sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "4b1d6489-d944-4dc8-b319-ba968fe2028e",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C104",
+      "claim": "Controls were matched for birth year, age at baseline, sex, study area, and hours fasting prior to blood draw.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control, we inculded 491 cases free of CHD at baseline and developing CHD during follow up and 491 controls free of CHD at baseline and follow up and matched for birth year, age at baseline, sex, study area, and area, hours fasting prior to blood draw.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the matching criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "29188951-32d5-4b37-b43e-f70a266ac397",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C105",
+      "claim": "CpGs annotated to ZNF790, CC2D1B, TBR1, RERE, and PLXNB2 had the most connections with other genes in the Brown module.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed the visualization of the Brown module (Hu et al., 2008) and found CpGs annotated to ZNF790, CC2D1B, TBR1, RERE, and PLXNB2 had the most connections with other genes (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports the network analysis result with reference to Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "05a68977-7bbf-4de4-a90a-f5d6ab57445b",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C106",
+      "claim": "Two samples were outliers and excluded during sample clustering in WGCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Two samples were outliers and excluded during sample clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the sample exclusion during WGCNA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "955ac4d2-8606-4e8c-9bcd-43049e90ae90",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "claim_id": "C107",
+      "claim": "491 cases and 489 controls were included in the WGCNA analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We included 491 cases and 489 controls in the following analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the sample size for WGCNA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study is a nested case-control design within the China Kadoorie Biobank (CKB) prospective cohort. After quality control, 491 incident CHD cases and 491 matched controls were included, with DNA methylation measured using the Infinium Methylation EPIC BeadChip covering ~850,000 CpG sites, resulting in 747,726 CpG sites retained after QC. Technical reproducibility was high (correlation 0.992-0.997), and 90% of CHD diagnoses were confirmed by medical record review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The study design and methodology are well-documented with appropriate quality control measures (C24-C31). The nested case-control design within a prospective cohort is appropriate for the research question. Technical validation through duplicate measurements shows excellent reproducibility, and outcome validation through medical record review demonstrates high accuracy (C27, C31). Sample sizes and matching criteria are clearly specified (C102-C104).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "030b25a7-4a8c-4fda-a1cb-1562394b6937",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Baseline characteristics showed that CHD cases (mean age 50.6\u00b17.6 years) had significantly higher prevalence of cardiovascular risk factors compared to controls (mean age 49.5\u00b17.3 years), including higher rates of smoking, unhealthy dietary habits, higher BMI, hypertension, diabetes, and worse lipid profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The baseline characteristics are clearly reported with appropriate statistical comparisons between cases and controls (C32-C39). The differences in risk factors between cases and controls are consistent with established CHD epidemiology, supporting the validity of case ascertainment. These findings provide important context for interpreting the methylation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "5cc47ec2-9f57-43f2-9866-f015cfbeb476",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-marker EWAS identified two CpG sites significantly associated with incident CHD at FDR<0.05: cg23398826 (annotated to SNX30, OR=0.56 per SD, P=1.57E-08) and cg02386575 (annotated to IMPDH2/QRICH1, OR=2.00 per SD, P=9.61E-08). The genomic inflation factor was 1.09, indicating minimal residual confounding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The single-marker analysis is appropriately conducted with comprehensive covariate adjustment and surrogate variable analysis (C40-C47). The genomic inflation factor of 1.09 suggests adequate control of confounding (C40). The two identified CpG sites meet stringent genome-wide significance thresholds (FDR<0.05), and effect sizes are substantial and precisely estimated with confidence intervals provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d00b47bc-365a-4d9d-9046-67d62c4b164e",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "WGCNA identified five co-methylation modules, with the Brown module (2,106 CpG sites) significantly associated with incident CHD (P=6.41E-08). Within this module, 24 CpGs were significantly associated with CHD at module-specific FDR<0.01. Gene enrichment analysis revealed significant enrichment for intracellular signaling, transcription regulation, and associations with tobacco use disorder, stroke, and kidney disease. Combined with single-marker results, 25 total CpGs were identified with ORs ranging from 0.53 to 2.18.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The WGCNA approach is methodologically sound with appropriate permutation testing to control false positives (C48-C56, C105-C107). The Brown module shows strong statistical association with CHD, and functional enrichment analysis provides biological plausibility (C50-C53). The identification of hub genes (ZNF790, CC2D1B, TBR1, RERE, PLXNB2) adds network-level insights. The combined approach of single-marker and network analysis strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "4f4a1688-5196-43a8-8e22-9f6bee198a91",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Methylation at cg08106661 (ANKS1A) was associated with smoking intensity (P=0.001), and mediation analysis revealed that 28.5% of smoking-associated CHD risk was mediated through methylation at this site (P=0.036). Three loci were associated with diet score and two with BMI, but no significant mediation effects were observed for these lifestyle factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The association between cg08106661 methylation and smoking is statistically significant with appropriate effect size reporting (C57). The mediation analysis is properly conducted with significant mediation proportion (C58). The lack of significant mediation for diet and BMI is appropriately reported (C59-C61), demonstrating selective rather than universal mediation effects, which increases confidence in the smoking-methylation pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "3999f375-ed92-4fb1-a10b-2cc13338cebd",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Methylation at cg23398826 (SNX30) was associated with lower blood pressure (6.4 mmHg lower SBP and 3.6 mmHg lower DBP in top vs. bottom quartile, both P=0.003). Mediation analysis showed that 7.65% of CHD risk associated with cg23398826 was mediated via SBP (P=0.003) and 6.39% via DBP (P=0.006). Similar mediation effects were observed for cg13311494 (PEMT) through SBP (15.61%) and DBP (12.38%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The associations between methylation and blood pressure are statistically significant with clinically meaningful effect sizes (C62-C63). The mediation analyses are properly conducted with significant P-values for both SBP and DBP pathways (C64-C67). The consistency of findings across two CpG sites (cg23398826 and cg13311494) strengthens the evidence for blood pressure as a mediator. However, the cross-sectional measurement of methylation and blood pressure limits causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "8bab3758-d5af-419b-8f28-1c3bdfab405a",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Four of 25 identified CpGs map to genes previously associated with cardiovascular disease in GWAS. Specifically, cg08106661 maps to ANKS1A, which regulates EGFR\u2014a pathway implicated in endothelial dysfunction and atherogenesis. SNPs in ANKS1A have been linked to CHD and smoking behavior. More than 25% of smoking-associated CHD risk was mediated through methylation at cg08106661, suggesting smoking-induced epigenetic modification plays an important role in the pathway from smoking to CHD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The biological interpretation is well-supported by prior GWAS findings and mechanistic knowledge (C68-C71). The mediation analysis provides quantitative evidence for the smoking-methylation-CHD pathway (C72). The interpretation that smoking-induced epigenetic modification plays a role in CHD pathogenesis is reasonable given the data (C73), though the claim remains somewhat speculative without experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "2cfe2ff3-1eda-4732-8efb-e4d5b51d2c83",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Five CHD-associated CpG loci were linked to blood pressure in previous GWAS. cg23398826 is located in the promoter region of SNX30, a sorting nexin family member involved in endocytic trafficking. SNX30 has been associated with DBP night-to-day ratio in GWAS. Blood pressure mediated ~10% of the reduced CHD risk related to cg23398826 methylation, suggesting epigenetic regulation at this locus influences blood pressure and subsequent CHD risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The connection to prior GWAS findings strengthens the biological plausibility (C74, C78). The genomic location and functional annotation of SNX30 are clearly described (C75-C77). The mediation analysis provides quantitative evidence for the blood pressure pathway (C79). However, the interpretation that epigenetic regulation influences blood pressure and CHD risk (C80) is somewhat speculative given the cross-sectional measurement of methylation and blood pressure, limiting causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "d8e3d977-19b8-450e-bcdc-9209b22e9fc7",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The CHD-associated co-methylation network (Brown module) was enriched for genes involved in intracellular signaling pathways. Intracellular signaling is a vital mechanism by which cells respond to environmental cues, and a previous in vitro study of cardiac hypertrophy found differentially methylated promoters involved in intracellular signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional enrichment analysis is appropriately conducted and shows significant enrichment for intracellular signaling (C81). The biological interpretation is supported by established knowledge about cellular signaling (C82) and prior experimental evidence (C83). However, the functional implications remain somewhat speculative without direct experimental validation in the context of CHD.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "5e001efb-bf3b-440b-b6d5-55014e1ee176",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous Asian EWAS of CHD were cross-sectional with small sample sizes, limiting causal inference. A large prospective meta-analysis in European populations (11,461 participants) identified 52 CpG sites associated with CHD using the 450K array. Three genes identified in the current study (ANKS1A, RERE, EDC3) were replicated at the gene level in a small study of atherosclerotic aorta samples, suggesting consistent methylation patterns in blood leukocytes and atherosclerotic lesions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison with prior studies is well-documented with appropriate citations (C84-C88). The acknowledgment of differences in study design, population, and array platform provides context for the lack of direct CpG-level replication. The gene-level replication in atherosclerotic tissue (C88) provides some validation, though the interpretation of consistent patterns between blood and tissue (C89) remains speculative without direct comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "ce5ed0db-fc97-4020-b512-b4d0819083e6",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "This is the first prospective and largest EWAS of CHD in the Asian population. The prospective design allows identification of methylation changes that potentially predict future CHD risk. The EPIC array provides extensive coverage of CpG islands, genes, and enhancers (~850,000 sites), though this increases the multiple testing burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claim of being the first prospective and largest Asian EWAS is supported by the literature review (C90). The advantage of prospective design for temporal inference is correctly stated (C91). The description of EPIC array coverage and the acknowledgment of increased multiple testing burden are accurate (C92-C93). The study appropriately addresses multiple testing through FDR correction and network-based approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "1a5c52b3-7547-49db-8051-a6274e3d76ce",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Despite comprehensive adjustment for covariates and use of surrogate variable analysis, residual confounding remains possible. However, the Q-Q plot indicated minimal inflation (genomic inflation factor 1.09). Cases and controls were not randomized on arrays, and adjusting for batch effects may reduce statistical power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The acknowledgment of potential residual confounding is appropriate and scientifically honest (C94). The Q-Q plot evidence for minimal inflation provides reassurance (C95). The limitations regarding array randomization and batch effect adjustment are clearly stated (C96-C97). These limitations are common in large-scale methylation studies and do not fundamentally undermine the findings given the multiple lines of evidence and validation approaches used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CHD is a leading cause of morbidity and mortality worldwide, with considerable unexplained risk despite known genetic and environmental factors. DNA methylation, a common epigenetic modification, forms an interface between genotype and environment and is responsive to smoking, alcohol, obesity, and associated with hypertension and diabetes. Previous EWAS of CHD were characterized by small sample sizes, Western populations, and limited prospective studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are well-supported by appropriate citations to established literature (C1-C14). The claims accurately represent the current state of knowledge regarding CHD epidemiology, DNA methylation biology, and limitations of prior EWAS studies. This provides appropriate context and justification for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In 982 participants (mean age 50.1 years), methylation at 25 CpG sites was associated with incident CHD (FDR<0.05 or module-specific FDR<0.01), with effect sizes ranging from 47% decreased to 118% increased CHD risk per SD methylation change. Mediation analyses revealed 28.5% of smoking-associated CHD risk was mediated by ANKS1A methylation, and 7.7% and 6.4% of SNX30 methylation-associated CHD risk was mediated via SBP and DBP, respectively. Network analysis identified a CHD-associated co-methylation module. These findings suggest epigenetic regulations play a role in pathways to CHD risk through lifestyle and cardiometabolic factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This summary accurately represents the main findings of the study (C16-C23, C99-C100). The statistical evidence is strong with appropriate multiple testing correction, and the mediation analyses provide mechanistic insights. The interpretation that epigenetic regulation plays a role in CHD pathways is reasonable given the data, though somewhat speculative without experimental validation. The prospective design strengthens causal inference compared to cross-sectional studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    },
+    {
+      "id": "34ae9324-4074-404a-b2d0-4a63d5f1a2e4",
+      "content_id": "3dea997d-15d7-4513-9009-ca82dfe022a3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Future studies with samples at multiple time points preceding CHD onset are needed to understand dynamic changes in methylation and expression during CHD progression. Studies are warranted to validate findings, elucidate functional mechanisms of identified CpGs, and translate findings toward preventive or clinical implications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These recommendations for future research are appropriate and well-justified (C98, C101). The call for longitudinal methylation measurements addresses a key limitation of single-timepoint assessment. The need for validation, mechanistic studies, and clinical translation is standard and appropriate for discovery-phase EWAS research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:03.344340Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "647c9fe6-616a-4404-b559-524e5488130f",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "fe00e9f5-0a8e-4a55-b08b-6102fc0d5d12",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "bf922527-8ee6-495e-99bb-e1e9135f7aca",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "4fc38a62-6129-4621-9533-918723f82785",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "d9c24c0a-7216-4081-80f7-5ea6260455fa",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "a79e307e-3ac0-4b9d-a297-7755ab0809d8",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "4efc0a39-30b6-42b1-aef9-ebbf5d99f7fa",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "8e12c84c-9c1f-42eb-a88f-7b5ebd67a83c",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "7a6cd0d9-bb73-474f-ab5b-f54a03e346bc",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "d9af9bec-8c35-4481-aa4e-058a2eaf06aa",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "7bbadf88-c8a9-4a51-908d-af6f0d66c35e",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "4b1d6489-d944-4dc8-b319-ba968fe2028e",
+      "result_id": "68f832e2-00f4-4556-b8a6-6b2d9598ae19"
+    },
+    {
+      "claim_id": "9228b981-33c9-47d8-b1f4-7e1aef27e39f",
+      "result_id": "030b25a7-4a8c-4fda-a1cb-1562394b6937"
+    },
+    {
+      "claim_id": "1322d712-3077-4831-a41f-7328b33b1a55",
+      "result_id": "030b25a7-4a8c-4fda-a1cb-1562394b6937"
+    },
+    {
+      "claim_id": "f802498c-7451-42f8-849c-68d54c6f7e0b",
+      "result_id": "030b25a7-4a8c-4fda-a1cb-1562394b6937"
+    },
+    {
+      "claim_id": "47fd2fca-1f08-43dc-91bb-66c8fc4fa8cd",
+      "result_id": "030b25a7-4a8c-4fda-a1cb-1562394b6937"
+    },
+    {
+      "claim_id": "43219aae-58b0-44c1-b42b-943447320410",
+      "result_id": "030b25a7-4a8c-4fda-a1cb-1562394b6937"
+    },
+    {
+      "claim_id": "479f1886-8068-4fe5-8dfe-6d72cb2a775d",
+      "result_id": "030b25a7-4a8c-4fda-a1cb-1562394b6937"
+    },
+    {
+      "claim_id": "f0194355-c5a0-4f18-b7ea-7a63759fdf81",
+      "result_id": "030b25a7-4a8c-4fda-a1cb-1562394b6937"
+    },
+    {
+      "claim_id": "ded5e4a9-de26-4352-993c-bc1f16e8aaa5",
+      "result_id": "030b25a7-4a8c-4fda-a1cb-1562394b6937"
+    },
+    {
+      "claim_id": "331ab93e-82ab-49c0-a116-903c3a7d2063",
+      "result_id": "5cc47ec2-9f57-43f2-9866-f015cfbeb476"
+    },
+    {
+      "claim_id": "7bd51c14-07fb-47b2-9bdb-a9b3f79c1be1",
+      "result_id": "5cc47ec2-9f57-43f2-9866-f015cfbeb476"
+    },
+    {
+      "claim_id": "c9e4088e-802e-432a-bc52-6b96cae6fd25",
+      "result_id": "5cc47ec2-9f57-43f2-9866-f015cfbeb476"
+    },
+    {
+      "claim_id": "aad51012-5a0b-4c23-b595-dc4a0a81e32f",
+      "result_id": "5cc47ec2-9f57-43f2-9866-f015cfbeb476"
+    },
+    {
+      "claim_id": "d221b639-cfea-47d8-b5f0-ce9c3a6cabc6",
+      "result_id": "5cc47ec2-9f57-43f2-9866-f015cfbeb476"
+    },
+    {
+      "claim_id": "88841657-116e-446d-aa25-20cb38cc95ac",
+      "result_id": "5cc47ec2-9f57-43f2-9866-f015cfbeb476"
+    },
+    {
+      "claim_id": "f84e90a5-6a91-4bf4-a96a-0580f670195b",
+      "result_id": "5cc47ec2-9f57-43f2-9866-f015cfbeb476"
+    },
+    {
+      "claim_id": "005028b0-3dbe-4c91-ac08-94dc337b9663",
+      "result_id": "5cc47ec2-9f57-43f2-9866-f015cfbeb476"
+    },
+    {
+      "claim_id": "24b5341c-ef53-4c69-8adf-b8ccf5d6ecd9",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "3a98c337-f9dc-4116-b4d3-8d3ea32480fe",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "21106aff-d2d1-437e-a0c5-416d45b17bc5",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "864f2e9d-9316-480d-a064-a00afe4e539e",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "f89dcc5b-d6a5-4973-a2ea-e3eb9237ca13",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "98eb0dea-b725-4897-b13f-2dedf7ccee06",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "32a81ef2-cc4c-41ac-9c69-fcb227f103e3",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "11e0fb5b-2ad9-4aa6-814d-120496236ea3",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "fa9e2b20-e691-42c9-94e1-b175096c59f5",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "29188951-32d5-4b37-b43e-f70a266ac397",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "05a68977-7bbf-4de4-a90a-f5d6ab57445b",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "955ac4d2-8606-4e8c-9bcd-43049e90ae90",
+      "result_id": "d00b47bc-365a-4d9d-9046-67d62c4b164e"
+    },
+    {
+      "claim_id": "3ef8734d-10d8-44aa-a49f-cdcf4942660e",
+      "result_id": "4f4a1688-5196-43a8-8e22-9f6bee198a91"
+    },
+    {
+      "claim_id": "334b697a-f9dd-4db0-b9ec-6e4644d93924",
+      "result_id": "4f4a1688-5196-43a8-8e22-9f6bee198a91"
+    },
+    {
+      "claim_id": "cc5098c3-5108-4b50-a3a5-74ddaac64714",
+      "result_id": "4f4a1688-5196-43a8-8e22-9f6bee198a91"
+    },
+    {
+      "claim_id": "1d6dfe9f-b744-4872-aede-c95d4c1d593b",
+      "result_id": "4f4a1688-5196-43a8-8e22-9f6bee198a91"
+    },
+    {
+      "claim_id": "48587d2d-c718-4e21-9a2c-04ef27325120",
+      "result_id": "4f4a1688-5196-43a8-8e22-9f6bee198a91"
+    },
+    {
+      "claim_id": "f4e1f698-dffb-4c60-aa22-2c1c9da4e79a",
+      "result_id": "3999f375-ed92-4fb1-a10b-2cc13338cebd"
+    },
+    {
+      "claim_id": "f3bde9b7-8ce0-457e-830d-1dc788fe83f2",
+      "result_id": "3999f375-ed92-4fb1-a10b-2cc13338cebd"
+    },
+    {
+      "claim_id": "7cfdbd91-9a12-4bc1-a65a-a8c170906c7d",
+      "result_id": "3999f375-ed92-4fb1-a10b-2cc13338cebd"
+    },
+    {
+      "claim_id": "d1b11625-3fee-497a-bea7-970d026a45a3",
+      "result_id": "3999f375-ed92-4fb1-a10b-2cc13338cebd"
+    },
+    {
+      "claim_id": "d25ab603-afa6-4857-bb24-6a11782416c2",
+      "result_id": "3999f375-ed92-4fb1-a10b-2cc13338cebd"
+    },
+    {
+      "claim_id": "ca7d4697-1e85-4838-8302-c9cb29219355",
+      "result_id": "3999f375-ed92-4fb1-a10b-2cc13338cebd"
+    },
+    {
+      "claim_id": "a04a0a6b-1024-40c2-a25f-562fc6bc6971",
+      "result_id": "8bab3758-d5af-419b-8f28-1c3bdfab405a"
+    },
+    {
+      "claim_id": "0a6c4661-7b58-468b-80f1-daf684e6daec",
+      "result_id": "8bab3758-d5af-419b-8f28-1c3bdfab405a"
+    },
+    {
+      "claim_id": "b82f4f3e-3165-41a4-9e13-70cef529d659",
+      "result_id": "8bab3758-d5af-419b-8f28-1c3bdfab405a"
+    },
+    {
+      "claim_id": "99a74b8c-db4e-4e4d-bce1-184cd43f66c0",
+      "result_id": "8bab3758-d5af-419b-8f28-1c3bdfab405a"
+    },
+    {
+      "claim_id": "0792dc3d-4bc8-4c0f-9832-42dd92736aac",
+      "result_id": "8bab3758-d5af-419b-8f28-1c3bdfab405a"
+    },
+    {
+      "claim_id": "bbd8c811-fd10-42a7-ab54-107c89287383",
+      "result_id": "8bab3758-d5af-419b-8f28-1c3bdfab405a"
+    },
+    {
+      "claim_id": "8d5535c7-a25f-4f7a-8f93-a2558631e455",
+      "result_id": "2cfe2ff3-1eda-4732-8efb-e4d5b51d2c83"
+    },
+    {
+      "claim_id": "8a54b1e7-ba96-43c4-935b-56a27456097a",
+      "result_id": "2cfe2ff3-1eda-4732-8efb-e4d5b51d2c83"
+    },
+    {
+      "claim_id": "d0e6a52a-ef9d-4511-9322-148d0cf40b65",
+      "result_id": "2cfe2ff3-1eda-4732-8efb-e4d5b51d2c83"
+    },
+    {
+      "claim_id": "a08f078e-bce8-4089-95d2-47c2d0d623ab",
+      "result_id": "2cfe2ff3-1eda-4732-8efb-e4d5b51d2c83"
+    },
+    {
+      "claim_id": "94419597-9f5e-4fc7-898a-1f4e7b6299e6",
+      "result_id": "2cfe2ff3-1eda-4732-8efb-e4d5b51d2c83"
+    },
+    {
+      "claim_id": "bcafc212-9386-4114-87f5-1b5837365794",
+      "result_id": "2cfe2ff3-1eda-4732-8efb-e4d5b51d2c83"
+    },
+    {
+      "claim_id": "c7a25eaf-9e4e-484d-a46c-0ff1b19a9aa7",
+      "result_id": "2cfe2ff3-1eda-4732-8efb-e4d5b51d2c83"
+    },
+    {
+      "claim_id": "aa2e1fbf-ff21-451b-a216-5b40821fd894",
+      "result_id": "d8e3d977-19b8-450e-bcdc-9209b22e9fc7"
+    },
+    {
+      "claim_id": "89398b4a-c078-4f33-80be-a76b67a0fa82",
+      "result_id": "d8e3d977-19b8-450e-bcdc-9209b22e9fc7"
+    },
+    {
+      "claim_id": "527b2070-48fd-4e62-bd14-702fd3c45516",
+      "result_id": "d8e3d977-19b8-450e-bcdc-9209b22e9fc7"
+    },
+    {
+      "claim_id": "67675824-2906-4924-9aa0-46614879f4ba",
+      "result_id": "5e001efb-bf3b-440b-b6d5-55014e1ee176"
+    },
+    {
+      "claim_id": "610fe7c9-c558-4c80-91d1-267b71386754",
+      "result_id": "5e001efb-bf3b-440b-b6d5-55014e1ee176"
+    },
+    {
+      "claim_id": "7d809993-35c5-4738-a0e3-afda4d9899bd",
+      "result_id": "5e001efb-bf3b-440b-b6d5-55014e1ee176"
+    },
+    {
+      "claim_id": "bc5214af-c667-47a4-a145-4c816a89215d",
+      "result_id": "5e001efb-bf3b-440b-b6d5-55014e1ee176"
+    },
+    {
+      "claim_id": "45d98851-6429-4307-8927-9382c77cc32c",
+      "result_id": "5e001efb-bf3b-440b-b6d5-55014e1ee176"
+    },
+    {
+      "claim_id": "67303304-3923-4690-8a81-f1c3336f935d",
+      "result_id": "5e001efb-bf3b-440b-b6d5-55014e1ee176"
+    },
+    {
+      "claim_id": "494fbb00-6a9e-47a7-9ac2-7f78f1d89f9f",
+      "result_id": "ce5ed0db-fc97-4020-b512-b4d0819083e6"
+    },
+    {
+      "claim_id": "b24b2882-d6d8-4361-b9b8-e79e0dfe1a70",
+      "result_id": "ce5ed0db-fc97-4020-b512-b4d0819083e6"
+    },
+    {
+      "claim_id": "5746f808-479c-45e3-b6ee-44a445752b36",
+      "result_id": "ce5ed0db-fc97-4020-b512-b4d0819083e6"
+    },
+    {
+      "claim_id": "ed23346a-52b6-4d49-9815-fe91b33c586d",
+      "result_id": "ce5ed0db-fc97-4020-b512-b4d0819083e6"
+    },
+    {
+      "claim_id": "0a6d3f45-1b23-47e8-b652-5bc14f04fa7b",
+      "result_id": "1a5c52b3-7547-49db-8051-a6274e3d76ce"
+    },
+    {
+      "claim_id": "d581813f-286b-4f16-a2e4-c92814f6479e",
+      "result_id": "1a5c52b3-7547-49db-8051-a6274e3d76ce"
+    },
+    {
+      "claim_id": "b326d14e-9e48-4bc9-8004-13b132050f49",
+      "result_id": "1a5c52b3-7547-49db-8051-a6274e3d76ce"
+    },
+    {
+      "claim_id": "054ba650-5b29-4a46-8784-46265f3fb584",
+      "result_id": "1a5c52b3-7547-49db-8051-a6274e3d76ce"
+    },
+    {
+      "claim_id": "e0267da4-b598-4bcd-a301-d8032bfecf41",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "af4c4558-024f-4c86-9588-c84cb1c6407a",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "b14a4cc9-ba85-4db2-b47d-8236f0d7b806",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "d4894b34-d69d-4b80-be51-c43a6adc827e",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "3e310479-b8c0-4e42-93e4-242332fc2e09",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "c7c5d2eb-1f02-4ba7-ba17-43bd0a41f9f3",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "89b42823-7c25-4e61-8cda-1055f163a484",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "29644f40-344c-4c04-85c0-1001025a4696",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "b0fce5f9-535f-4b8c-b197-5213943b4a34",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "a9a23528-030c-46f4-ad40-bbfcf90854ca",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "db2e741d-8533-47b9-9f82-9856f655c406",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "9055c63b-4f8e-48db-9329-1cc9e9a284de",
+      "result_id": "af80bfb9-cede-4b51-adad-b5d94a43b8c1"
+    },
+    {
+      "claim_id": "e854ee18-1f52-48dd-98e4-f7230bfb1375",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "a68fe27b-d10c-4e3c-85ac-8a0ce6327f5d",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "1f091c2d-b879-4a7e-9882-3d6cd1157295",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "e15a62a2-e230-456f-ae93-af7c553d4fc3",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "fedf8a84-77e9-49a5-9866-bfb216053d2c",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "4f425832-8b04-4a1f-9b04-5a3c8d1f2c11",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "94c4fdc9-ea74-49d9-92f4-b6ed172e7c9f",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "3d42384f-32c5-467c-9baf-2fd677001808",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "68922495-005a-41df-b808-05711ddc0321",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "1f62c54f-7bf9-4c8e-8222-88b5fe957ebf",
+      "result_id": "84f856fa-96ef-4aee-bf38-b4f90a2a0f4e"
+    },
+    {
+      "claim_id": "2402e152-8961-471d-8127-78518967e6a8",
+      "result_id": "34ae9324-4074-404a-b2d0-4a63d5f1a2e4"
+    },
+    {
+      "claim_id": "6fd913b8-6e10-4f90-9f4e-b819f5b0f001",
+      "result_id": "34ae9324-4074-404a-b2d0-4a63d5f1a2e4"
+    }
+  ],
+  "comparisons": []
+}

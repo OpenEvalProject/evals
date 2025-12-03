@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study used 432 Merino sheep (262 ear punch samples from New Zealand, 168 blood samples from South Australia) and quantified DNA methylation using a custom 38K probe array with 33,136 probes predicted to be complementary to sheep sequences. Two ear samples from intact males were excluded by quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide clear methodological details about sample collection and processing. The numbers are explicitly stated, tissue sources are documented, and quality control exclusions are reported. These are straightforward descriptive claims about study design that are well-supported by the manuscript text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Hierarchical clustering revealed two major clusters based on tissue source (blood vs. ear). Global average CpG methylation in ear tissue showed a small progressive increase with age, but this trend was not observed in blood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 describe initial data characterization showing tissue-specific clustering and differential methylation patterns. The manuscript provides figure references (Figure 1\u2014figure supplement 1A, B) supporting these observations. These are basic quality control and exploratory analyses that are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Individual CpG sites showed correlations with age ranging from -0.63 to 0.68. Highly age-correlated probes were found in developmental genes including FGF8 (r=0.64, p=1.38E-51), PAX6 (r=0.62, p=2.71E-47), PAX5 (r=0.59, p=5.75E-43), and HOXC4 (r=0.59, p=4.47E-43). The top 500 positively age-correlated CpGs were enriched for transcription-related and DNA binding processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 describe age-associated methylation patterns at specific genes with strong statistical support. The correlation values and p-values are explicitly provided, and the biological interpretation (enrichment for transcription-related processes) is supported by ontology analysis. The identification of developmental genes as age-associated is biologically plausible and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Tissue of origin showed considerable differences in age-associated methylation, consistent with other epigenetic clock studies. Sex and castration status produced fewer group-specific differences, with 45 shared sites between sexes in blood and 84 shared sites in ear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe tissue and sex-specific methylation patterns with appropriate citations to prior work (Horvath, 2013; Issa, 2014). The specific numbers of shared sites are provided and referenced to supplementary figures. The comparison to existing literature strengthens the validity of these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "A CpG in the second intron of IGF1 (cg18266944) becomes rapidly hypomethylated in ear following birth before leveling off post-adolescence (r=-0.60, p=7.43E-15). IGF1 is a key determinant of growth and aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 identify an age-associated methylation change in IGF1, a well-established aging-related gene. The statistical support is strong (p=7.43E-15), and the biological relevance is supported by citations (Junnila et al., 2013; Laron, 2001). The developmental pattern (rapid change followed by plateau) is consistent with IGF1's known role in growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The multi-tissue epigenetic clock included 185 CpG sites and achieved a median absolute error (MAE) of 5.1 months with an age correlation of 0.95 using leave-one-out cross-validation. This represents 3.5-4.2% of the expected sheep lifespan (10-12 years), comparable to human (3.5%) and mouse (5%) clocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 describe the primary epigenetic clock with clear performance metrics validated by LOOCV. The comparison to other species' clocks (with appropriate citations) provides context for evaluating performance. The error as a percentage of lifespan is a reasonable normalization approach. The statistical validation appears appropriate for this type of predictive model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The ear clock outperformed the blood clock in LOOCV analysis (0.97 vs. 0.75 correlation). The blood clock's lower performance is likely driven by fewer samples and overrepresentation of young individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 compare tissue-specific clock performance with plausible explanations for differences. The correlation values are explicitly stated. The interpretation regarding sample size and age distribution is reasonable, though the manuscript acknowledges tissue heterogeneity as an alternative explanation. The claims are appropriately cautious in their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Two dual-species (human-sheep) clocks were constructed: one estimating chronological age in years (MAE=16.53 months for both species, 4.74 months for sheep only) and one estimating relative age as a ratio to maximum lifespan (MAE=0.020 for both species, 0.021 for sheep only). Maximum lifespans were defined as 22.8 years for sheep and 122.5 years for humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 describe dual-species clock construction with clear performance metrics. The use of relative age normalized to maximum lifespan is a valid approach for cross-species comparison. The MAE values are provided for both combined and sheep-only analyses. The maximum lifespan values are explicitly stated and appear reasonable based on the anAge database citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Intact and castrated males showed equivalent epigenetic age as juveniles, but castrates showed slowed epigenetic aging beyond the yearling stage. In sheep >18 months old, castrates had significantly reduced epigenetic age compared to intact males (p=0.018), with mature castrates being on average 3.1 months epigenetically younger. This was corroborated using the dual-species clock (p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 present the key finding regarding castration effects on epigenetic aging with appropriate statistical support (p=0.018, confirmed by independent clock p=0.04). The age-dependent effect (no difference in juveniles, significant difference in adults) is clearly documented. The use of two independent clocks for validation strengthens the conclusion. Sample sizes appear adequate for the statistical tests used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "4,694 androgen-sensitive differentially methylated probes (asDMPs) were identified showing different rates of age-dependent methylation between castrated and intact males. These asDMPs are evenly distributed across autosomes and sex chromosomes. Several sites become progressively hypomethylated in intact males with age but maintain consistent methylation in castrates and females. Of the top 50 asDMPs, 48 showed hypomethylation in intact males, and many were linked to known AR-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 identify androgen-sensitive methylation sites with clear statistical criteria. The chromosomal distribution analysis addresses potential X-chromosome confounding. The directional bias (48/50 showing hypomethylation) is striking and well-documented. The connection to known AR-regulated genes (with citation to Jin et al., 2013) provides biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "AR binds to 28/50 (56%) of the top asDMPs, with all 14 most significant asDMPs showing AR binding. The observed/expected enrichment for AR binding was 9.9-fold (p<0.001), with NR3C1 showing 6.7-fold enrichment. Other TFs (ESR1, PR, CEBP, FOXA1) showed >2-fold enrichment. High enrichment was limited to the top 150 asDMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 provide strong evidence for AR involvement using Cistrome data with appropriate statistical validation (1000 bootstrap replicates for background). The 9.9-fold enrichment with p<0.001 is compelling. The identification of related hormone receptors and co-factors is biologically coherent. The observation that enrichment is limited to top asDMPs suggests specificity rather than artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The asDMP in MKLN1 (the most differentially aging site between castrates and intact males) overlaps with AR binding, DNase I hypersensitivity peaks, H3K27ac histone marks, and shows good vertebrate conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 describes multiple converging lines of evidence for regulatory activity at the MKLN1 asDMP. The combination of AR binding, open chromatin markers (DNase hypersensitivity, H3K27ac), and evolutionary conservation provides strong support for functional significance. Figure 5C is referenced showing these features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Intact juvenile males were heavier than castrates. The most prominent asDMPs showed opposite associations with body mass in intact males (negative) versus castrates (positive). This indicates that methylation divergence at asDMP sites occurs early, coinciding with phenotypic dimorphism and before epigenetic age differences manifest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 connect early androgen effects to methylation changes. The body mass difference is documented with statistical support (p<0.001 from Figure 4\u2014figure supplement 2A). The opposite associations with mass in intact vs. castrated males are intriguing and suggest early programming effects. The interpretation about timing is reasonable given the data showing no epigenetic age difference in juveniles (C42) despite methylation differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In mouse, the MKLN1 probe (cg21524116) showed male-specific hypomethylation in muscle, tail, and kidney, but not in blood, cerebellum, cortex, and liver. AR expression is significantly higher in tissues showing male-specific hypomethylation (muscle, kidney, skin epidermis) compared to tissues without this pattern (cerebellum, cortex, liver).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 demonstrate cross-species conservation of androgen-sensitive methylation at MKLN1 with tissue-specificity correlating with AR expression. The use of published mouse expression data (Su et al., 2002) to explain tissue-specific patterns is appropriate. The correlation between AR expression and methylation sensitivity provides mechanistic insight. Statistical significance is reported for the AR expression comparison (p=0.007 from Figure 6C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "In Phyllostomus and Pteropus bat genera, male-specific hypomethylation of MKLN1 was present in skin. This implies that androgen-dependent alterations in DNA methylation age association exist in a wide range of mammalian species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 extend the conservation analysis to bats using published data (Wilkinson et al., 2021). The observation of similar patterns in divergent mammalian lineages (sheep, mouse, bat) supports broad conservation. However, the inference of 'wide range' is based on limited taxonomic sampling. The claim is appropriately cautious ('at least to some extent') but could benefit from more species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The sheep epigenetic clock estimates chronological age with MAE of 5.1 months (3.5-4.2% of lifespan). Castration causes delayed intrinsic aging with an average reduction of 3.1 months in epigenetic age. This delayed aging in castrates is consistent with castrated males outliving intact animals of both sexes in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 summarize the main findings in the Discussion. The clock performance is well-established from earlier results. The castration effect is statistically supported (C44). The connection to survival data from Jewell (1997) provides external validation, though the manuscript appropriately notes that behavioral factors may also contribute to survival differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The degree of age deceleration in castrated males is dependent on chronological age, with an additional 1.2 months deceleration in animals >2.9 years old. No difference was seen in animals <18 months. This implies cumulative effects of androgen exposure on the epigenome and aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe age-dependent effects of castration with specific quantitative values. The observation of increasing deceleration with age and no effect in young animals is clearly documented. The interpretation of cumulative effects is reasonable given the data pattern, though alternative explanations (e.g., threshold effects, developmental timing) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Similar age-dependent deceleration has been observed in calorie-restricted mice. Intact male sheep have greater body mass than castrates, consistent with farming practice. In rats, pre-pubertal castration causes greater lifespan extension than post-pubertal castration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide comparative context from other species and interventions. The citations to calorie restriction studies (Petkovich et al., 2017), farming practices (Seideman et al., 1982), and rat castration timing (Talbert and Hamilton, 1965) are appropriate. These comparisons strengthen the biological interpretation of the sheep findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Loss of ovarian hormone production in mice and humans accelerates the epigenetic clock, opposite to the effect of male castration. Male and female sex hormones differentially regulate epigenetic aging in directly opposing ways, consistent with sex-specific life history strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 synthesize findings about sex hormone effects on aging. The citations to ovariectomy/menopause studies (Levine et al., 2016; Stubbs et al., 2017) support the opposing effects claim. The interpretation regarding life history strategies is speculative but biologically plausible and appropriately framed as an interpretation rather than established fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Castrated males exhibit a feminized methylation profile at androgen-sensitive sites. Unlike human blood studies, sex-specific CpG sites in sheep are not predominantly X-linked but are distributed evenly throughout the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe the feminization of methylation patterns in castrates with appropriate comparison to human studies (McCartney et al., 2019). The chromosomal distribution analysis (Figure 4\u2014figure supplement 1A) addresses an important potential confound. The species difference in X-chromosome involvement is interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "NR3C1 (glucocorticoid receptor) has been linked to longevity and shares homology with AR. CEBP directly binds AR in prostate cells. FOXA1 regulates estrogen receptor, AR, and GR binding, and aids in ESR1-mediated GR recruitment. AR agonist treatment reprograms FOXA1 and ESR binding in breast cancer models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 describe transcription factor interactions with appropriate citations. These claims establish biological context for the observed TF enrichments at asDMPs. The citations (Olczak et al., 2019; Agoulnik et al., 2003; Carroll et al., 2005; Hurtado et al., 2011; Sahu et al., 2013; Karmakar et al., 2013; Ponnusamy et al., 2019) support the stated relationships. This provides mechanistic plausibility for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Variable methylation at AR target genes has been reported in humans with androgen insensitivity syndrome. MKLN1 androgen-dependence has been previously reported, and MKLN1-containing complexes regulate lifespan in C. elegans, though no links to mammalian longevity are yet known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide additional context for MKLN1 findings with appropriate citations (Ammerpohl et al., 2013; Jin et al., 2013; Hamilton et al., 2005; Liu et al., 2020). The acknowledgment that mammalian longevity links are unknown is appropriately cautious. The C. elegans connection is intriguing but the evolutionary distance limits direct inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "MKLN1 and other asDMPs represent potential biomarkers of androgen exposure over long time periods in mammals. Identification of age-dependent androgen-sensitive methylation patterns uncovers novel mechanisms explaining male-accelerated aging in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 are speculative conclusions that require additional validation. C93 explicitly acknowledges the need for testing in more species and tissues. C94's claim of 'novel mechanisms' is somewhat overstated\u2014the findings identify specific loci and patterns but don't fully establish causative mechanisms. The manuscript appropriately notes that 'these changes may not promote aging per se.' More work is needed to establish whether these methylation changes are drivers or consequences of aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Background claims establishing: sheep as a model organism, sex-specific lifespan differences in mammals, epigenetic clocks as aging biomarkers, effects of castration and hormone loss on lifespan across species, and the novelty of examining castration effects on male epigenetic aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C109 provide background context with appropriate citations to establish the study's rationale. These are primarily literature review claims that accurately represent prior work. The citations appear appropriate and the characterization of the field's knowledge gaps (C105) justifies the study. These claims establish context rather than present new findings.",
+    "result_type": "MINOR"
+  }
+]

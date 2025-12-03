@@ -1,0 +1,1770 @@
+{
+  "submission": {
+    "id": "c2aabc98-08ad-4783-a01b-9ad34ccef458",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:53:56.910164Z",
+    "updated_at": "2025-12-03T02:53:56.910164Z"
+  },
+  "content": [
+    {
+      "id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "submission_id": "c2aabc98-08ad-4783-a01b-9ad34ccef458",
+      "content_type": "manuscript",
+      "content_text": "# Local genetic context shapes the function of a gene regulatory network\n\n## Authors\n\n- Anna Nagy-Staron<sup>1</sup> ([ORCID: 0000-0002-1391-8377](https://orcid.org/0000-0002-1391-8377)) \u2020\n- Kathrin Tomasek<sup>1</sup> ([ORCID: 0000-0003-3768-877X](https://orcid.org/0000-0003-3768-877X))\n- Caroline Caruso Carter<sup>1</sup> ([ORCID: 0000-0002-0475-856X](https://orcid.org/0000-0002-0475-856X))\n- Elisabeth Sonnleitner<sup>2</sup>\n- Bor Kav\u010di\u010d<sup>1</sup> ([ORCID: 0000-0001-6041-254X](https://orcid.org/0000-0001-6041-254X))\n- Tiago Paix\u00e3o<sup>1</sup>\n- Calin C Guet<sup>1</sup> ([ORCID: 0000-0001-6220-2052](https://orcid.org/0000-0001-6220-2052)) \u2020\n\n### Affiliations\n\n1. Institute of Science and Technology Austria Klosterneuburg Austria\n2. Department of Microbiology Immunobiology and Genetics, Max F. Perutz Laboratories, Center Of Molecular Biology, University of Vienna Vienna Austria\n\n\u2020 Corresponding author\n\n## Abstract\n\nGene expression levels are influenced by multiple coexisting molecular mechanisms. Some of these interactions such as those of transcription factors and promoters have been studied extensively. However, predicting phenotypes of gene regulatory networks (GRNs) remains a major challenge. Here, we use a well-defined synthetic GRN to study in Escherichia coli how network phenotypes depend on local genetic context, i.e. the genetic neighborhood of a transcription factor and its relative position. We show that one GRN with fixed topology can display not only quantitatively but also qualitatively different phenotypes, depending solely on the local genetic context of its components. Transcriptional read-through is the main molecular mechanism that places one transcriptional unit (TU) within two separate regulons without the need for complex regulatory sequences. We propose that relative order of individual TUs, with its potential for combinatorial complexity, plays an important role in shaping phenotypes of GRNs.\n\n## Introduction\n\nChanges in regulatory connections between individual transcriptional units (TUs) or, in other words, the rewiring of gene regulatory networks (GRNs), is a major genetic mechanism underlying phenotypic diversity (Shubin et al., 2009; Wagner and Lynch, 2010; Wray, 2007). A lot of effort has been put into understanding how mutations in transcription factors and their DNA binding sites within promoter regions influence GRN behavior, plasticity, and evolution (Babu et al., 2004; Balaji et al., 2007; Chen et al., 2012; Igler et al., 2018; Isalan et al., 2008; Nocedal et al., 2017). However, we are still unable to predict GRN phenotypes from first principles (Browning and Busby, 2016).\n\nGenes and the genetic elements that regulate them, promoters, are arranged in a linear manner on chromosomes. Thus they are embedded into a larger genetic context, represented by the changing genetic background of the rest of the genomic sequence or by their specific physical location on the chromosome. The genetic context in which GRNs find themselves in, influences and modulates the way these respond to the environment and interact with other GRNs and it also shapes the interactions within the GRN itself (Cardinale and Arkin, 2012; Chan et al., 2005; Steinrueck and Guet, 2017; Tas et al., 2021; Wu and Rao, 2010). In bacteria, gene expression levels are thought to be determined by RNA polymerase recognizing promoter sequences and subsequently initiating transcription, which is the key step at which a large part of transcriptional regulation takes place (Browning and Busby, 2004). However, context effects resulting from occupying a particular location within the genome can significantly alter expression levels (Junier, 2014; Lagomarsino et al., 2015; Scholz et al., 2019). Distance to the origin of replication influences transcription levels due to gene dosage effects, the presence of transcriptionally active and silent regions, as well as spatial and temporal variation in DNA superhelicity, while collisions between DNA replication and transcription influence gene expression levels differently on leading and lagging strands (Beckwith et al., 1966; Bryant et al., 2014; Mirkin et al., 2006; Sobetzko et al., 2012; Vora et al., 2009). At a local scale, transcriptional interference, transcription-coupled DNA supercoiling, presence of cis-antisense RNA, as well as transcriptional read-through, all link together the expression of neighboring TUs (Cambray et al., 2013; Georg and Hess, 2011; Liu and Wang, 1987; Reynolds et al., 1992; Shearwin et al., 2005; Wu and Fang, 2003). Within operons, number, length, and order of genes can all affect gene expression (Jacob and Monod, 1961; Lim et al., 2011; Zipser, 1969). All of these factors that can individually modulate gene expression vary simultaneously across the genome, with potential for significant combinatorial effects (Meyer et al., 2018; Scholz et al., 2019).\n\nWhile these multiple local context-dependent mechanisms are known to modulate gene expression, the qualitative phenotype of a GRN is often thought to be defined solely by the network topology and the gene expression levels of GRN components (Babu et al., 2004; Mangan et al., 2003; Payne and Wagner, 2015), and thus determined simply by the promoter sequences, independent of the physical location of the genes. One of the reasons for this assumption is the belief that cis-regulatory changes are less pleiotropic than changes to the protein itself (Prud'homme et al., 2006), although some have questioned this (Stern and Orgogozo, 2008). However, other non-coding genetic factors such as transcriptional read-through or supercoiling have the potential to change gene expression with the same pleiotropic freedom as cis-regulatory changes. Here, we ask how the immediate local genetic context outside of individual TUs of a GRN can alter both the qualitative and quantitative phenotype of a network, and how many phenotypes are accessible for this particular GRN, while the network topology per se remains unchanged. In order to keep the number of genetic interactions to a minimum, we chose to study a synthetic GRN. This tractable system allows for a simplified description of more complex naturally occurring GRNs, where a large number of inherently complex interactions make such a question very difficult to answer experimentally (Mukherji and van Oudenaarden, 2009; Wolf and Arkin, 2003). Here, we shuffle individual TUs (understood here as the unit formed by: the mRNA coding sequence, the promoter driving its expression and the transcriptional terminator marking the end of the transcribed sequence) of a GRN. In doing so, we alter solely the local genetic context, while keeping the actual interactions (topology) within the GRN unchanged and thus the number of interactions to a tractable minimum. We then define the phenotype of the GRN as the levels of gene expression measured across four different environments, defined by the presence or absence of two different chemical inducers that alter the binding state of two different well-characterized transcription factors. Qualitative phenotypes are here based on a set of binary output values for each input state, therefore defining different logical operators (e.g. NOR, ON, OFF) (for details see Threshold for assigning a phenotype to individual GRNs). Quantitative phenotypes are defined as a set of four expression values varying continuously within one particular behavior. In this way, we systematically explore the space of possible phenotypes of the GRN and thereby we can disentangle the effects of local genetic context from multiple other factors that can affect gene expression levels.\n\n## Results\n\nOur GRN (Figure 1A) is composed of the genes coding for three of the best characterized repressors: LacI, TetR, and lambda CI (abbreviations used throughout the text: L, T, and C, respectively), and the promoters they control, Plac, Ptet, and PR. The three repressor genes are transcriptionally interconnected into a GRN, with LacI repressing both tetR and its own expression, and TetR repressing expression of cI. The controlled promoters are synthetic variants of the PL promoter of phage lambda with two tet or lac operator sites located in the direct vicinity of the \u221235 and \u221210 promoter elements (Lutz and Bujard, 1997). The binding state of TetR and LacI changes in the presence of inducers: anhydrotetracycline (aTc) and isopropyl \u03b2-D-thiogalactopyranoside (IPTG), respectively. A yfp gene, expressed from a CI-controlled PR promoter, serves as output. The yfp gene is located separately from the rest of the genetic circuit at a transcriptionally insulated locus on the chromosome (attB site of phage P21). In our synthetic system, each individual promoter and transcription factor gene it controls are separated from the neighboring one by a strong transcriptional terminator T1 of the rrnB gene (Orosz et al., 1991), forming an individual TU (Figure 1B). We chose T1 as one of the strongest transcriptional terminators in E. coli to transcriptionally insulate individual TUs from one another (Cambray et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig1-v3.jpg)\n\n**Figure 1.:** (A)\u00a0Diagram of interactions between the three independent transcriptional units\u00a0(TUs) encoding for the repressors, lacI, tetR, and cI, their respective inducers isopropyl \u03b2-D-thiogalactopyranoside (IPTG) and anhydrotetracycline (aTc), and the promoters they control, with yfp as the GRN output (left). Phenotype of this GRN as predicted by our mathematical model (right). (B) Genetic architecture of TU permutations of GRN plasmid (left). Cartoon of TU permutations (right). Abbreviations used throughout the text: C stands for cI, L for lacI, and T for tetR. Letter r denotes reverse orientation. (C and D) Fluorescence of cells carrying a representative subset of different TU permutations of the GRN plasmid. A binary output value (On or Off) was assigned to each environment which thus defines a logical operation: NOT (aTc) in panel (C) and NOR in panel\u00a0(D). Graphs show means and error bars standard deviations for three independent biological replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0The topology of network interactions used in the model, along with the equations that model them. Term in red represents transcriptional read-through.\u00a0(B) Two examples of transcriptional read-through. In the first example (top), transcription of lacI leads to transcriptional read-through into tetR and cI. This is modeled by additive terms for the rate of transcription of both tetR and cI. In the second example (bottom), expression of cI leads to transcriptional read-through into tetR. Because lacI is on the opposite strand from tetR, expression of tetR is assumed not to influence expression of lacI. (C) Range of values that fit the experimental results. Contour plot for a parameter scan for K in [0,0.5] and \u03bc in [0,1], both with a step size of 0.05. For K in [0,0.21] and \u03bc in [0.4,1], both parameters were scanned with a step size of 0.01. Lighter colors mean higher number of networks correctly fitted.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Fluorescence of cells carrying 26 different TU permutations of the GRN plasmid, grouped in pairs differing only in orientation with respect to plasmid backbone. Graphs show means and error bars standard deviations for three independent biological replicates. Shading marks strains which behave as predicted by the mathematical model incorporating transcriptional read-through (gray, A), white boxes denote strains which do not (B).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Fluorescence of cells carrying 11 different transcriptional unit\u00a0(TU) permutations of the GRN plasmid, grouped in pairs differing only in orientation with respect to plasmid backbone. Shading marks strains which behave as predicted by the mathematical model incorporating transcriptional read-through (gray), white boxes denote strains which do not. (A) GRNs in which pairs do not show consistent phenotype, indicating influence of plasmid-encoded elements. (B) Pairs in which only one GRN was cloned, making comparison impossible. Graphs show means and error bars standard deviations for three independent biological replicates.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A)\u00a0Fluorescence of cells carrying a promoterless yfp gene cloned adjacent to the origin of replication, ori. (B) Fluorescence of cells carrying Ptet-yfp cloned in two orientations relative to ori and kanR measured in a strain carrying chromosomally encoded tetR. (A and\u00a0B) Strains were exposed to isopropyl \u03b2-D-thiogalactopyranoside (IPTG) or grown without inducers. Genetic architecture of relevant plasmid fragment is given above the graph. Promoters are marked as bent arrows, terminators are represented by vertical bars and a circle. Graphs show means and error bars standard deviations for three independent biological replicates.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A)\u00a0Definition of the logic operations. The\u00a0presence or absence of inducer is indicated with + and \u2212, and output by On and Off. (B) Histogram shows the fraction of networks that can be assigned to a given phenotype depending on threshold. The threshold we used to assign phenotypes is marked with a dashed line.\n\n### Phenotype of GRN depends on local genetic context despite identical topology\n\nWe asked whether the local genetic context can influence the phenotype of this GRN. First, we developed a simple mathematical model of the mechanistic basis of gene expression for this specific network topology (Figure 1\u2014figure supplement 1A). This model tracks the concentrations of all three repressors as their respective promoter activities are influenced by their known specific network interactions. The predicted phenotype of our GRN will depend on the presence of aTc, but not on the presence of IPTG (Figure 1A). We wanted to test if this phenotype is independent of the relative TU order and orientation, and we aimed to build plasmids with all possible 48 relative TU order permutations with fixed positions (Riordan, 2003) such that: (i) every TU can occupy any of the three positions, (ii) every TU is present only once, (iii) both forward and reverse orientations are possible, and (iv) network topology stays the same (Figure 1B). To facilitate comparisons among all GRNs we used a threshold on the expression of the YFP output for assigning a binary output value to each environment and so defined a phenotype the GRN can achieve (for thresholds used to assign a particular phenotype to individual networks, see Supplementary material).\n\nThe phenotype of strains carrying the resulting 37 plasmids (multiple attempts to clone eleven of the TU order permutations failed, see Supplemental material) varied widely both quantitatively and qualitatively (Figure 1C,D, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 3). More than half (20) of the tested GRN permutations showed a phenotype which was qualitatively different than what was predicted ab initio. We also observed multiple quantitative differences in expression levels within one class of logical phenotypes (e.g. permutations CLT, CTLr, TrCL, and LTrCr; Figure 1C).\n\n### GRN phenotype is influenced by local genetic context independently of the replicon\n\nWe then asked how and why the changes in relative order of individual TUs affect the phenotype of the GRN, although network topology and individual genetic components of the GRN (i.e. individual TUs) remain unchanged. In order to disentangle the specific interactions between network components we focused on six GRNs which differ in relative TU order but not in gene orientation. These six GRNs show two qualitatively different phenotypes (NOR and NOT [aTc]; Figure 2A, upper panel). In four out of six strains (LCT, LTC, TCL, and TLC), induction with IPTG shifted yfp expression levels to the OFF state. These population-level findings are also observed at the single cell level (Figure 2A, lower panel). We tested to what extent our observation from plasmid-based TUs apply to chromosomally located GRNs by integrating three networks with varying TU order (CTL, LCT, and TLC) at a transcriptionally insulated chromosomal locus (attB site of phage HK022). In line with the plasmid-based GRNs, these strains also showed a dependency of phenotype on relative TU order, demonstrating that this is not an effect related to plasmid localization of our GRN (Figure 2B). When lacI, tetR, and cI are integrated at separate, transcriptionally insulated loci on the bacterial chromosome, the network phenotype is identical with the one predicted ab initio from its topology, confirming that it is the transcription of neighboring genes that changes the network\u2019s phenotype (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig2-v3.jpg)\n\n**Figure 2.:** Fluorescence of cells carrying six different TU permutations of the gene regulatory network\u00a0(GRN) on a plasmid (A), three GRN variants integrated on the chromosome at the phage HK022 attachment site (B), and with each of the repressor genes integrated at separate chromosomal loci (C). Graphs show population level fluorescence measurements of strains exposed to: no inducer, anhydrotetracycline (aTc), isopropyl \u03b2-D-thiogalactopyranoside (IPTG), or a combination of aTc and IPTG (as indicated). Graph shows mean and standard deviations for three independent biological replicates. Flow cytometry histograms of cell fluorescence show 10,000 gated events, corresponding to YFP expressed in a given strain grown without (blue) and with IPTG (yellow). For each strain and condition, three biological replicates are shown. Relative TU order of the three repressors is shown under the respective graphs.\n\n### Differences in cI expression lead to phenotypes that depend on relative TU order\n\nTo elucidate the molecular basis of the observed phenotypic variability, we first asked whether the relative TU order-dependent differences in phenotypes can be traced back to changes in levels of cI gene expression. We isolated total RNA from strains differing in relative position of the cI gene (CLT and TLC) grown in the absence or presence of IPTG, and quantified cI transcript levels using RT-qPCR. cI expression after IPTG induction in strain TLC was over 10-fold higher than in strain CLT (Figure 3A), suggesting that the differences in yfp fluorescence were indeed due to differences in cI expression. In order to corroborate our findings at the mRNA level with protein expression levels, we replaced the cI gene in strains CLT and TLC with yfp, and confirmed relative gene order effects on yfp expression directly (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig3-v3.jpg)\n\n**Figure 3.:** (A)\u00a0RT-qPCR analysis of cI expression. RT-qPCR was performed, using cI-specific primers. The induction ratios were calculated relative to the uninduced strain CLT. (B) YFP levels measured in strains VLT and TLV which carry a yfp reporter (V) under control of Ptet and differ only in relative TU order. (C) Heatmaps show PR promoter activity in six strains carrying plasmids differing in relative TU order (left) and activity of Ptet present in trans in the same strains on a second plasmid (right). (D) Relative TU order effects depend on expression from the lac promoter in isopropyl \u03b2-D-thiogalactopyranoside (IPTG)-dependent manner. Strains CLT and TLC were grown in the\u00a0presence of different concentrations of IPTG. (B\u2013D) Strains were exposed to anhydrotetracycline (aTc), IPTG, or a combination of aTc and IPTG (as indicated). For reasons of clarity, in (C) the highest expression level for each strain was individually normalized. Graphs show means and error bars standard deviations for three independent biological replicates.\n\nExpression of the cI gene in our GRN is controlled by TetR (Figure 1A). Thus differences in cI expression levels between the different relative TU order variants can be due to (i) global changes in gene expression of Ptet controlled genes, which propagate to changes in expression of cI; or (ii) local effects, such as transcriptional read-through or changes in supercoiling levels. To distinguish between these two possibilities, we measured the activity of the promoter driving cI expression by supplying Ptet-cfp in trans on a second plasmid. In all six strains with different relative TU order, Ptet activity was strongly induced with aTc, while no Ptet activation was observed after IPTG induction (Figure 3C). This indicates that cI expression observed after IPTG induction is not due to global removal of TetR repression, but rather due to a local effect on cI gene expression. Furthermore, levels of TetR-dependent repression do not depend on relative TU order. This local effect depends on gene expression from the lac promoter in an IPTG-dependent manner (Figure 3D).\n\n### Transcriptional read-through is the molecular mechanism underlying context-dependent GRN phenotype\n\nWe hypothesized that transcriptional read-through would be consistent with the context-dependent effects we measured. We observed that in the cases when the cI gene is at the second or third position of the GRN (Figure 1B), transcriptional read-through from upstream TUs (tetR and/or lacI) may be enough to transcribe cI despite TetR-dependent repression, and in turn shut down PR activity in response to IPTG (see also Supplemental material for effects of transcriptional read-through into tetR and lacI). We asked whether the potential for transcriptional read-through, together with the knowledge about the individual genetic components of this network, is enough to unambiguously predict the phenotype of the GRN permutation variants we built. For this purpose, we added the effects of transcriptional read-through to our mathematical model such that promoter activities were now influenced not only by network interactions but also by the activity of neighboring genes (Figure 1\u2014figure supplement 1B).\n\nTo facilitate the analysis of numerous GRNs we divided the 48 possible TU permutations into 24 pairs that differ only in orientation with respect to the plasmid backbone (Figure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3). 26 networks/13 pairs showed the same phenotype in both orientations (Figure 1\u2014figure supplement 2), eight networks/four pairs showed different phenotype in each orientation (Figure 1\u2014figure supplement 3A), for three networks no corresponding pair was cloned (Figure 1\u2014figure supplement 3B) and eight networks/four pairs were not cloned.\n\nFor networks showing the same phenotype in both orientations we assumed there is no significant influence of plasmid backbone elements (Figure 1\u2014figure supplement 2). Here, the model including transcriptional read-through agreed for 20 networks/10 pairs (Figure 1\u2014figure supplement 2A) and did not agree with six networks/three pairs (Figure 1\u2014figure supplement 2B). A null-model that did not account for transcriptional read-through failed to predict the observed differences in phenotypes.\n\nOur experimental approach to test the transcriptional read-through hypothesis is based on the premise that transcriptional read-through does not depend on a functional promoter of a downstream gene, in contrast to supercoiling- or RNAP concentration-dependent effects. Therefore, if GRN behavior is due to transcriptional read-through, mutating the Ptet promoter should not affect the responsiveness to IPTG. We tested this prediction by introducing two point mutations into the \u221210 element of Ptet in a number of different strains (Figure 4A and Figure 4\u2014figure supplement 1). These two point mutations render Ptet inactive and therefore prevent transcription from this promoter (Figure 4\u2014figure supplement 2). The phenotype in the absence of any inducers and with only IPTG was identical to the phenotype in the original strains, thus confirming that cI expression is initiated at an upstream promoter (Figure 4B and Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig4-v3.jpg)\n\n**Figure 4.:** (A)\u00a0Genetic architecture of plasmid fragments encoding three repressors in strains TLC and TLC-10 (carrying mutations in the \u221210 promoter element of Ptet). Promoters are marked as bent arrows, terminators are represented by vertical bars and a circle, monocistronic transcripts are represented by solid arrows, predicted read-through transcripts by dashed arrows (left). Interaction diagrams within the two gene regulatory networks\u00a0(GRNs). Solid lines represent interactions between transcription factors and the promoters they control, dashed line represents effects resulting from local genetic context (right). (B) Fluorescence of cells carrying TLC plasmid with either Ptet or Ptet carrying a mutation in the \u221210 promoter element (TLC-10) grown in the\u00a0presence or absence of anhydrotetracycline (aTc) and isopropyl \u03b2-D-thiogalactopyranoside\u00a0(IPTG). We expected that if GRN behavior is due to transcriptional read-through, mutating the Ptet promoter should not affect the responsiveness to IPTG. If, on the other hand, expression of cI was driven only by Ptet, mutating the \u221210 promoter element should lead to an ALL ON phenotype. Lack of repression in strains with Ptet-10 variant after aTc induction further confirms that this promoter variant is inactive. Graph shows means and error bars standard deviations for three independent biological replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Genetic architecture of plasmid fragments encoding three repressors in strains LCT and TrCrLr (A), TCL and LrCrTr (B), TLC and CrLrTr (C), and their derivatives carrying mutations in the \u221210 promoter element of Ptet, together with fluorescence of cells carrying these plasmids grown in the\u00a0presence or absence of anhydrotetracycline (aTc) and isopropyl \u03b2-D-thiogalactopyranoside (IPTG). We expected that if gene regulatory network\u00a0(GRN) behavior is due to transcriptional read-through, mutating the Ptet promoter should not affect the responsiveness to IPTG. If, on the other hand, expression of cI was driven only by Ptet, mutating the \u221210 promoter element should lead to an ALL ON phenotype. Lack of repression in strains with Ptet-10 variant after aTc induction further confirms that this promoter variant is inactive. Monocistronic transcripts are represented by solid arrows, predicted read-through transcripts by dashed arrows. Graph shows means and error bars standard deviations for three independent biological replicates.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Fluorescence of cells carrying either wild-type Ptet or Ptet with two point mutations in the \u221210 element driving yfp expression. Strains were grown without inducers. Graphs show means and error bars standard deviations for three independent biological replicates.\n\nIf the mechanism behind different phenotypes is transcriptional read-through, change of the terminator strength should lead to a change in phenotype. We have chosen network TLC in which our model predicted that a change of terminator strength will lead to alter the phenotype. In this GRN we exchanged the T1 terminator preceding cI to either a stronger double T1T2 terminator of the rrnB locus, or to the weaker Tcrp and TtonB terminators (Cambray et al., 2013). Change from T1 to T1T2 changes the phenotype of the network to the one predicted by the model and observed when single transcription factors are incorporated in separate loci on the chromosome (Figure 5A). Change from T1 to either Tcrp or TtonB leads to a completely OFF phenotype, as expected when transcriptional read-through through weaker terminators leads to expression of cI in all four conditions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig5-v3.jpg)\n\n**Figure 5.:** (A)\u00a0Genetic architecture of plasmid fragments encoding three repressors in strains TLC with different terminators: T1, T1T2, Tcrp, or TtonB, preceding cI, and fluorescence of cells carrying these plasmids grown in\u00a0the presence or absence of anhydrotetracycline (aTc) and isopropyl \u03b2-D-thiogalactopyranoside (IPTG). (B) Genetic architecture of plasmid fragments encoding three repressors in strains LCT with either T1 or a double Tcrp-T1 terminator, and fluorescence of cells carrying these plasmids grown in\u00a0the presence or absence of aTc and IPTG. (A and B) Promoters are marked as bent arrows, terminators are represented by vertical bars and a circle, operators as rectangles, monocistronic transcripts are represented by solid arrows, predicted read-through transcripts by dashed arrows. Increasing line thickness corresponds to increasing amount of transcript. Graph shows means and error bars standard deviations for three independent biological replicates.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)\u00a0Schematic representation of the plasmid fragments encoding three repressors in strains TLC, TLTcrpC, and TLTtonBC. Shading marks regions which differ between the three gene regulatory networks\u00a0(GRNs). (B) Northern blot analysis of cI, lacI, and kanR expression. Seven micrograms of total RNA (\u2212, no induction; +, with isopropyl \u03b2-D-thiogalactopyranoside [IPTG] induction) was loaded on a formaldehyde gel, and northern blot analysis was performed as described in Materials and methods. NC \u2013 negative control, strain carrying network plasmid not encoding any transcription factor genes. Ethidium bromide staining of 23S and 16S rRNA is shown as a loading control.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Fluorescence of cells carrying DNA fragments located on gene regulatory network\u00a0(GRN) plasmids between lacI and cI, and encoding T1, Tcrp, and TtonB, cloned in front of a promoterless yfp gene, and compared to Ptet activity. Graphs show means and error bars standard deviations for three independent biological replicates.\n\nRead-through transcripts, i.e. transcripts of more than one gene, can be detected by northern blotting. We isolated total RNA from strains with T1, Tcrp, and TtonB grown in the absence or presence of IPTG, and visualized transcripts on northern blot (Figure 5\u2014figure supplement 1). We expected to detect lacI transcripts in all strains, and in case of transcriptional read-through, longer transcripts encompassing both lacI and cI. No read-through transcript starting in tetR was expected, since the T1 terminator separating tetR from lacI carries a RNaseE recognition site in its stem (Apirion and Miczak, 1993; Szeber\u00e9nyi et al., 1984), which makes it impossible to distinguish between read-through transcripts and transcripts originating from individual promoters. The same is true for the strain harboring T1 terminators only, in which we expected to see only single gene transcripts.\n\nWe detected read-through transcripts encompassing both lacI and cI in strains carrying Tcrp and TtonB, thus directly demonstrating transcriptional read-through in these two strains. We also detected fragments encompassing only the cI gene. This may suggest RNA processing at a cryptic RNase site, or additional effects, such as dislodgement of repressor by RNA polymerase passing through the terminator (Palmer et al., 2011). To rule out the emergence of unpredicted promoters, we fused the junctions between lacI and cI, encompassing T1, Tcrp, and TtonB terminators in front of YFP, but did not detect any significant increase in fluorescence (Figure 5\u2014figure supplement 2).\n\nIn order to check whether a combination of two terminators would act additively on stopping transcriptional read-through, we inserted the weaker crp terminator in front of T1 terminator in a different GRN, LCT, resulting in network LcrpT1CT. This network showed an intermediate phenotype, consistent with predicted decrease in cI expression (Figure 5B).\n\nTaken together, these results strongly support that transcriptional read-through is the molecular mechanism underlying the relative TU dependent phenotypes we observe, and thus the different logic phenotypes our GRN can achieve.\n\n### Interplay of several molecular mechanisms shapes GRN phenotype\n\nEight networks (four pairs) showed different phenotypes in each orientation and in all cases one phenotype from the pair was supported by our model while the other was not. This suggests that there was a significant influence of the plasmid backbone elements. Just like the individual TUs constituting our GRN, TUs located on the plasmid backbone (namely the kanamycin resistance gene kanR and repA in the plasmid origin of replication) also have the potential to influence expression of neighboring TUs, and hence the GRN phenotype. To rule out transcriptional read-through from the repA gene located at the plasmid origin of replication, we cloned a promoterless yfp gene downstream of repA; however, we did not detect any significant change in fluorescence (Figure 1\u2014figure supplement 4A). We noticed that there is a slight change in repression of Ptet depending on the relative orientation to the plasmid backbone (Figure 1\u2014figure supplement 4B). Since supercoiling can influence gene expression, especially of plasmid-located genes, we also expect supercoiling\u2013mediated effects to modulate expression and thus influence phenotypes of our GRN (Sobetzko, 2016; Yeung et al., 2017).\n\n### Local genetic context modulates regulation of lac promoter\n\nOur simplified synthetic system allowed us to observe the effects of local genetic context created in a systematic manner by arranging transcription factor genes next to one another on a plasmid (Figure 2A) or the chromosome (Figure 2B). We also decided to test our findings in a native regulatory network of E. coli composed of one transcription factor \u2013 LacI, and the promoter it controls, Plac, and asked whether native local genetic context has the potential to modulate its phenotype. Using a \u0394lacI \u0394lacZYA genetic background we inserted the lac promoter driving yfp expression in a transcriptionally insulated locus (phage \u03bb attachment site, attB) and the lac repressor, lacI, into one of three loci on the right replichore (Figure 6A). Subsequently, we measured gene expression from the lac promoter, Plac, in these three strains by monitoring yfp fluorescence levels after treatment with increasing IPTG concentrations. The shape of the induction curve was considered to be the network\u2019s phenotype. It should be stressed that the lacI gene (under control of its native promoter) was inserted only into non-coding chromosomal regions, shortly after an endogenous terminator. The loci for insertion were chosen such that genes downstream of the terminator were non-essential and in the same orientation as the genes upstream. Chosen terminators were of different strengths: strong, middle, and weak (D. Toledo Aparicio, M. Lagator, and A. Nagy-Staron, personal communication, September 2019) and were located in close vicinity (39\u2019\u201343\u2019 on MG1655 chromosome) to avoid gene dosage and transcription factor \u2013 promoter distance effects (Block et al., 2012; Kuhlman and Cox, 2012). Moreover, the growth medium (and hence cell growth rate) was chosen such as to further minimize gene dosage effects (Block et al., 2012). To assess whether genomic location affected response to IPTG, we measured yfp fluorescence reporting on Plac expression levels at several points along the IPTG concentration gradient. If lacI is inserted after a weaker terminator, expression from lac promoter is lower for a range of IPTG concentrations as compared to strain where lacI is inserted after a strong terminator (Figure 6B). We conducted an analysis of variance (ANOVA) to compare the effect of genomic localization on Plac activity. There was a significant effect for five IPTG concentrations tested, and post hoc comparisons using the Tukey test were performed (Figure 6\u2014figure supplement 1). We also directly assessed the amount of lacI transcript in these three strains using RT-qPCR and saw differences in expression levels consistent with the observed Plac induction curves (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig6-v3.jpg)\n\n**Figure 6.:** (A)\u00a0Diagram of interactions between LacI repressor and the promoter it represses, as well as genetic architecture of the DNA fragments integrated into MG1655 \u0394lacI \u0394lacZYA strain. Promoters are marked as bent arrows, terminators are represented by vertical bars and a circle, operators as rectangles. (B) Plac activity in cells carrying lacI inserted at different loci after a weak (yeaH), medium (flhC), and strong (asnT) terminator grown in different concentrations of isopropyl \u03b2-D-thiogalactopyranoside (IPTG). yfp levels were measured in exponentially growing cells. Graph shows means for at least three independent biological replicates. (C) RT-qPCR quantification of lacI transcript in strains described above. RT-qPCR was performed, using lacI-specific primers. The induction ratios were calculated relative to the strain with insertion in yeaH locus. (D) Ethidium bromide-stained 1% agarose gel of PCR products obtained with primers spanning the intergenic region between the upstream gene (yeaH, flhC, or asnT) and lacI. Templates for PCR were: chromosomal DNA (gDNA), cDNA as used for RT-qPCR above, and RNA.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Bars are mean values, circles individual measurements. Error bars are standard deviations. Stars indicate strains that significantly differ from each other (*p<0.05, **p<0.005, ***p<0.0005, ****p<0.0001).\n\nIn this minimal network consisting of a transcription factor and the promoter it controls, the network phenotype is indeed modulated only by the endogenous local genetic context, likely due to varying levels of transcriptional read-through into the lacI gene. To verify this, we performed PCR on cDNA from the three strains, using primers spanning the intergenic regions upstream of lacI (Figure 6D). In all three cases, a DNA band corresponding to the amplification of the cDNA spanning the intergenic region was obtained, confirming read-through transcription into lacI from the upstream gene (no band was obtained with RNA as template). This corroborates our findings that genetic context of network elements can modulate network phenotype and that any kind of chromosomal rearrangement has the potential to alter network output.\n\n## Discussion\n\nBy comprehensively shuffling the relative TU order in a synthetic GRN, we show that local genetic context can significantly influence the phenotype of GRNs both quantitatively and qualitatively, and thus can qualitatively and quantitatively change the function a GRN performs. Hence, the phenotype of a GRN cannot be fully understood without reference to the local genetic context of its individual network components. We find that our GRN can access multiple phenotypes by simply shuffling the relative order of TUs without any changes in promoters and coding sequence. Thus, changes in regulatory connections between single regulons can be achieved solely by changes in local genetic context, which represent a category of mutations that is to be contrasted from single base pair mutations. The local genetic context is not limited to proximal transcription factors which are part of the same GRN, like our synthetic plasmid system that represents the most direct example. In fact, the local context effects and in particular transcriptional read-through can occur anywhere on the chromosome (Figure 6), indicating that any chromosomal rearrangement has the potential to alter not only the expression levels of a gene but importantly also the function of a GRN.\n\nLocal genetic context of a TU can change after a deletion, duplication, insertion, inversion, or translocation event (Periwal and Scaria, 2015). These mutational events are often mediated by mobile genetic elements, and their rates depend on the type of mobile element, the precise genomic location as well as the organism (D\u00edaz-Maldonado et al., 2015; Periwal and Scaria, 2015; Steinrueck and Guet, 2017). Reported rates span a wide range (from 10\u22123 to 10\u22128 per cell per generation), but are typically orders of magnitude higher than rates of point mutations (Hudson et al., 2002; Saito et al., 2010; Sousa et al., 2013; Tomanek et al., 2020). Given this elevated frequency of small- and large-scale genomic rearrangements in various bacterial species, changes in local genetic context have the potential to shape bacterial phenotypes even in the\u00a0absence of sequence changes. Specific local genetic contexts could have arisen in response to selection for changes in gene expression levels. Indeed, genomic rearrangements were found to significantly change expression patterns in numerous organisms, including E. coli, Bordetella pertussis,\u00a0and Lactobacillus rhamnosus (Brinig et al., 2006; Douillard et al., 2016; Raeside et al., 2014; Weigand et al., 2017). It needs to be stressed that the impact of local genetic context of GRN elements on fitness will strongly depend on the network\u2019s output. Examples of how even a small effect can be strongly amplified further downstream in a regulatory network are the regulatory circuit governing lysogenic and lytic states of phage lambda, or the processes behind entry into sporulation or genetic competence in Bacillus subtilis (Dubnau and Losick, 2006; Narula et al., 2012; Ptashne, 2004; Smits et al., 2005).\n\nGrowing evidence has been emerging that transcriptional read-through is widespread (Cambray et al., 2013; Conway et al., 2014; Lalanne et al., 2018; Yan et al., 2018). This raises the question of whether (potentially ubiquitous) the lack of clearly defined gene and operon boundaries can be disruptive, or alternatively if this lack of precise functional boundaries is used for the benefit of the cell. The answer is likely gene-specific, reflecting the complexity of the numerous molecular mechanisms acting at the level of a single gene. On one hand, in order to impact the phenotype, transcriptional read-through into neighboring genes needs to reach an effective threshold, and increases in expression levels can be down-regulated post-transcriptionally (Lalanne et al., 2018). On the other hand, fitness benefits have been observed in strains with global changes in Rho-dependent termination levels (Freddolino et al., 2012; Lee and Helmann, 2014; Steinrueck and Guet, 2017; Tenaillon et al., 2012), and it is likely that local transcriptional read-through at specific intrinsic terminators is also beneficial under certain conditions. As rates of transcriptional read-through can be condition-dependent (Yan et al., 2018), there are many complex molecular interactions left to disentangle regarding the fitness effects, whether beneficial or detrimental, of inefficient transcriptional termination.\n\nWe find that transcriptional read-through is an important molecular mechanism behind the effects we observe in our synthetic GRN system. Changes in the strength of transcriptional termination generally require just a small number of mutations, often only individual point mutations (San Millan et al., 2009; Schuster et al., 1994; Weigand et al., 2017). Importantly, despite our synthetic GRN having been designed to restrict transcriptional read-through by using a single very strong transcriptional terminator, we observed a variety of phenotypes our GRN can access (Cambray et al., 2013). Naturally occurring transcriptional terminators cover a wide range of efficiencies and hence have potential to create a large number of regulatory connections between neighboring TUs (Cambray et al., 2013; Reynolds et al., 1992).\n\nMost studies on chromosomal position effects focus explicitly on molecular mechanisms other than transcriptional read-through by insulating a reporter system with strong terminators (Berger et al., 2016; Block et al., 2012; Sousa et al., 1997). Given the fact that endogenous terminators vary widely in their efficiency, we argue that transcriptional read-through from neighboring genes is an inherent component of chromosomal position effects. It can significantly add to other genetic context-dependent effects resulting from gene dosage or DNA supercoiling. Such complex interplay of mechanisms can be seen in our synthetic genetic system, as not all phenotypes we see can be explained by transcriptional read-through alone and there are likely other molecular mechanisms of a more global nature influencing the phenotypes of our GRN. This observation highlights how challenging it is to disentangle all of the complex genetic interactions even in a very simplified synthetic GRN built out of the best-characterized transcription factors. Using simple synthetic systems helps to dissect and understand the dynamics of more intricate and complex cellular interactions, following the tradition of simple model systems that have been powerful throughout the history of molecular biology. Understanding of how synthetic genetic systems behave can be greatly aided by modeling approaches. However, often times the mathematical models can be complex in their implementation and thus difficult to interpret. As we show here, simple, minimalistic models can give important insights into fundamental biological mechanisms. Moreover, transcriptional read-through is a component rarely included in the modeling of GRNs. Yet, its effect can be readily added into any modeling framework.\n\nGene expression and its regulation are influenced by multiple coexisting molecular mechanisms, through the concerted action of DNA binding proteins, including RNA polymerase, transcription factors, topoisomerases, and nucleoid-associated proteins acting at different levels of organization: from short promoter sequences to mega-base large DNA macro-domains (Junier, 2014; Lagomarsino et al., 2015). Here, we show that the local genetic context created by the relative TU order can act as one of the genetic mechanisms shaping regulatory connections in regulons (Figure 7). Changes in local genetic context have the potential to place an individual TU into two independent regulons without the need to evolve complex regulatory elements. Transcriptional read-through, by enabling a diversity of gene expression profiles to be accessed by shuffling of individual TUs, may be one of the mechanisms shaping the evolutionary dynamics of bacterial genomes. Indeed, the fact that gene expression levels of one gene can be influenced by the gene expression levels of its immediate neighbor has important consequences for the evolution of operons. For a long time it has been debated whether any selective advantage is gained from the physical proximity of two TUs and how this physical proximity can be maintained before common transcription factor-based transcriptional regulation can evolve (Lawrence and Roth, 1996). We suggest that physical proximity alone can result in increased co-expression due to transcriptional read-through and thus can be advantageous by changing gene expression patterns without the need for any changes in promoter sequences or to the specificity of transcription factors. Indeed, correlated expression of genes reaching beyond the level of an operon has been recently observed (Junier et al., 2016; Junier and Rivoire, 2016). Our results also have important implications for comparative genomics, as sequence conservation does not necessarily equal functional conservation. Finally, there is a lesson for engineering living systems, as our results underscore the importance of understanding how nature itself can compute with GRNs (Guet et al., 2002; Kwok, 2010).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/65993/elife-65993-fig7-v3.jpg)\n\n**Figure 7.:** (A)\u00a0Diagram of interactions within our gene regulatory network\u00a0(GRN) in two different transcriptional unit\u00a0(TU) arrangements: CLT and TLC. (B) Regulatory patterns in two regulons with overlapping components. Genes Gene1 and Gene2 are regulated via transcription factor-operator interactions with regulator TF1. Gene Gene3 is regulated by TF2 binding and by TF1 via local genetic context effects. (A and B) Solid lines represent interactions between transcription factors and the promoters they control, dashed line represents effects resulting from local genetic context. Promoters are marked as bent arrows, terminators are represented by vertical bars and a circle.\n\nThe simple synthetic and endogenous examples of GRNs we studied here show how local genetic context can be a source of phenotypic diversity in GRNs, as the expression of a single gene or operon can be linked to levels and patterns of gene expression of its immediate chromosomal neighborhood. Systematic studies that utilize simple synthetic systems offer the promise of understanding how the genetic elements interact and result in the diversity of phenotypes we observe.\n\n## Materials and methods\n\n### Predicted effects of transcriptional read-through into each of the TFs\n\nIn our synthetic GRN, repressor-encoding genes are separated by identical T1 terminators. Transcriptional read-through can in principle happen at any terminator. This scenario is also incorporated in our model. However, in our experimental approach we focused only on read-through into cI, which is the network element that directly regulates the level of the measured output yfp by binding to its promoter PR (Figure 1A). Transcriptional read-through into tetR or lacI from cI would happen only after induction with aTc, when output is insensitive to\u00a0the presence of LacI and TetR. Transcriptional read-through from lacI into tetR can only increase expression of tetR, which even without this effect fully represses Ptet. Transcriptional read-through from tetR into lacI could potentially make a difference when strains are grown without IPTG, but due to the negative feedback loop and tight repression of Ptet these effects are likely too subtle to be visible in our set-up. Thus, for the particular network topology of this study, any changes in levels of LacI and TetR due to transcriptional read-through cannot impact in any way the level of YFP.\n\n### Threshold for assigning a phenotype to individual GRNs\n\nFigure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3 show fluorescence levels of all the strains carrying different TU order permutations of our network. To define a phenotype that each of the GRNs can achieve, we assign a binary output value for each input state. For each strain, fluorescence was normalized to the highest expression level at the given time point. The OFF state was defined as at least threefold repression compared to the highest ON state. Moreover, the minimal ON value in each GRN was required to be at least threefold greater than the maximal OFF value. A distribution of logical phenotypes for a varying threshold can be seen in Figure 1\u2014figure supplement 5. In the mathematical model, the same procedure is followed. Expression values coming from the mathematical model are normalized by the highest expression value and then a threshold is applied to determine ON and OFF states. The threshold value is constant across all gene orders and orientations.\n\n### Cloning of 48 TU order permutations\n\nDespite repeated attempts, cloning of 11 of the 48 TU order permutations failed. Eight of them were not clonable in either orientation with respect to the plasmid backbone. For three networks, we were able to clone only one orientation (Figure 1\u2014figure supplement 3B). Generally, we experienced increased difficulties in cloning GRNs where TUs were not oriented in one direction, which may at least in part be traced back to a number of highly homologous sequences in our plasmids.\n\n### A model for the impact of transcriptional read-through on gene expression\n\nIn order to test the mechanistic basis of the changes in gene expression caused by changes in TU order and orientation, we developed a mathematical model that takes into account transcriptional read-through between adjacent TUs. The basic scheme is depicted in Figure 1\u2014figure supplement 1. We model the rate of transcript production by a constant term (ki, the constitutive expression rate of the promoter), and an input dependent term that models the repression by other components $(\u2212(1\u2212I)\\frac{X}{K_{X}+X})$ and a degradation term (-\u03b4 X).\n\n$$\n\\frac{dL}{dt}=k_{L}\u2212(1\u2212I_{1})\\frac{L}{K_{L}+L}\u2212\\deltaL+r_{\u03c7}^{L}\\frac{dT}{dt}=k_{L}\u2212(1\u2212I_{1})\\frac{L}{K_{L}+L}\u2212\\deltaL+r_{\u03c7}^{T}\\frac{dC}{dt}=k_{C}\u2212(1\u2212I_{2})\\frac{L}{K_{T}+L}\u2212\\deltaL+r_{\u03c7}^{C}\n$$\n\nL, T, and C correspond to lacI, tetR, and cI, respectively, I1 and I2 correspond to the presence or absence of IPTG and aTc, respectively. I1 and I2 can take only one of two values, 0 or 1. It should be noted that lacI and tetR share the same promoter and are therefore controlled by the same rates of production.\n\nImportantly, we include a term $r_{\u03c7}$ that models transcriptional read-through. This term takes into account the order and orientation of the specific gene network. When two genes, A and B, are adjacent to each other and share the same orientation this term will take the values $r_{A\u2192B\u2192}^{A}=0$ for gene A and $r_{A\u2192B\u2192}^{A}=\\muA^{\u2032}$ for gene B, where A\u2019 corresponds to the rate of transcription of gene A $(k_{A}\u2212(1\u2212Ix)\\frac{A}{K_{A}+A})$. The output of the network is an inverse threshold function of the expression level of cI, so that the output is ON if cI expression is below the threshold $\\tau$ and OFF if above it.\n\nIn order to obtain the function realized by each of the networks, this system of differential equations is solved for the steady state for the four possible states of the I1 and I2 (0,0), (0,1), (1,0), and (1,1). For each network, the expression levels are normalized by the state with the highest expression and then a threshold is applied to the expression level of cI to determine if the network is in an ON or OFF state (see above). For mathematical simplicity and to reduce the number of free parameters we assumed: kL = kC\u00a0=\u00a01, \u03b4\u00a0=\u00a01, KL = KT = K, leaving essentially two free parameters: the half-repression point K and the read-through rate \u03bc.\n\nIn order to obtain the parameters region that allows this system of ordinary differentials equations to fit the experimental data, we performed a grid search in these two parameters. The results for $\\tau$ =\u00a02/5 can be seen on Figure 1\u2014figure supplement 1C.\n\n### Bacterial strains and growth conditions\n\nAll strains used in this study are derivatives of E. coli MG1655 and are listed in Supplementary file 1. Plasmids are listed in Supplementary file 3. Strain and plasmid construction is described in detail below. M9CA+glycerol medium (1\u00d7 M9 salts, 0.5% glycerol, 2 mM MgSO4, 0.1 mM CaCl2, 0.5% casamino acids) was routinely used for bacterial growth unless otherwise stated. Selective media contained ampicillin at 100 \u03bcg ml\u22121, kanamycin at 50 \u03bcg ml\u22121 (for plasmid located resistance cassette) or 25 \u03bcg ml\u22121 (for chromosomally located resistance cassette), and chloramphenicol at 15 \u03bcg ml\u22121. Solid media additionally contained 1.5% (w/v) agar. IPTG was used at 1 mM unless stated otherwise, aTc at 100 ng ml\u22121.\n\n### Strain and plasmid construction\n\nAll strains and plasmids used in this study are listed in Supplementary file 1 and Supplementary file 3, respectively. Strain used for measuring GRN behavior was based on TB201, which is an E. coli MG1655 derivative carrying a attP21::PR-yfp allele. \u0394lacI785::kanR and \u0394lacZ4787::rrnB-3 alleles were transduced (P1) into TB201 from JW0336, and the KanR marker removed (pCP20 [Cherepanov and Wackernagel, 1995]), resulting in strain ASE023. recA gene of strain ASE023 was in-frame deleted using \u03bb Red recombination (Datta et al., 2006). KanR marker was amplified from pKD13 (Datsenko and Wanner, 2000) and introduced into the recA gene of ASE023. KanR cassette was subsequently removed (pCP20 [Cherepanov and Wackernagel, 1995]) resulting in strain KT131. Strain KT132 was used for measuring behavior of networks containing yfp instead of cI and was constructed as described above, with the parent strain being MG1655 instead of TB201. Strain Frag1B was used to supply constitutively expressed tetR encoded on the chromosome and measure orientation-dependent repression of PLtetO1.\n\nPlasmids were constructed by using standard cloning techniques (Sambrook and Russell, 2001) with enzymes and buffers from New England Biolabs, according to the respective protocols. All primer sequences used for this study are listed in Supplementary file 2. For cloning and plasmid propagation E. coli Frag1D was grown routinely in lysogeny broth (LB) at 30\u00b0C with agitation (240 rpm). All plasmids and strains were verified by sequencing.\n\nTo facilitate directional cloning of the DNA fragments, and at the same time reduce the background of clones containing empty plasmids, we inserted a DNA fragment encoding mCherry flanked with BglI sites into the cloning vector. This facilitated isolation of completely cut vector as well as identification of background clones on a plate due to their fluorescence. The fragment encoding mCherry was amplified from vector pBS3Clux (Radeck et al., 2013) and cloned into PstI and SmaI sites of vector pLA2 (Haldimann and Wanner, 2001), creating plasmid pAS017. The plasmid used for cloning of GRN permutations, pAS019, was constructed by amplifying the vector backbone (consisting of kanamycin resistance cassette, and SC101* origin of replication) of pZS*2R-gfp and inserting the BglI sites-flanked mCherry cassette from pAS017 into its ScaI and EcoRI sites.\n\nFragments encoding PLlacO1-tetR, PLlacO1-lacI, and PLtetO1-cI were amplified from the original D052 plasmid (Guet et al., 2002) and cloned into XhoI and XbaI sites of vector pZS*12-gfp (simultaneously removing the gfp cassette), resulting in plasmids pAS014, pAS015, and pAS016, respectively. All three repressors are tagged with ssrA degradation tag to reduce the half-life of the proteins (Keiler et al., 1996).\n\nFor construction of the set of gene order permutations, fragments containing PLlacO1-tetR, PLlacO1-lacI, and PLtetO1-cI were amplified from pAS014, pAS015, and pAS016, respectively. The fragment containing PLtetO1-yfp was amplified from pZS*11-yfp. The primers were designed to create BglI restriction sites flanking the genes so that directional and ordered cloning was possible. Equimolar amounts of the fragments were ligated using T4 DNA ligase. The respective trimer was purified from an agarose gel and cloned into BglI sites of pAS019, resulting in plasmids pN1-54. pKT10, the empty control plasmid, was constructed by removing mCherry from pAS019 using XhoI and SalI and ligating the compatible overhangs. Mutations in the \u221210 promoter element of plasmids pAS016 and pZS*11-yfp were introduced by site-directed mutagenesis. Primer design and mutagenesis were performed according to the manufacturer\u2019s instructions for the QuikChange II site-directed mutagenesis kit (Agilent Technologies) resulting in plasmids pAS023 and pAS024. Plasmid pAS023 served as template for construction of network plasmids with Ptet-10 mutation (pAS026, pAS045-7, and pAS050-1). Terminators T1T2, Tcrp, and TtonB were cloned into XbaI site of plasmid pAS015, resulting in plasmids pAS020, pAS021, and pAS038, respectively. These plasmids served as template for construction of network plasmids with exchanged terminators (pAS039, pAS040, pAS053, and pAS055). Promoterless yfp gene and PLtetO1-yfp were amplified from pZS*11-yfp and cloned with BglI into pAS019 resulting in plasmids pAS035, pAS036, and pAS037. DNA fragments between repressor genes containing terminators T1, Tcrp, and TtonB were cloned into plasmid pAS035, resulting in plasmids pAS041, pAS042, and pAS043, respectively.\n\nStrains with GRNs PLtetO1-cI-PLlacO1-tetR-PLlacO1-lacI (CTL), PLlacO1-lacI-PLtetO1-cI-PLlacO1-tetR (LCT), and PLlacO1-tetR-PLlacO1-lacI-PLtetO1-cI (TLC) integrated into the chromosome were constructed using \u03bb Red recombination (Datta et al., 2006). Appropriate fragments including KanR cassette were amplified from plasmids pN2, pN3, and pN6 and integrated into phage HK022 attachment site of ASE023 resulting in strains ASE031, ASE032, and ASE033, respectively. Strain with three repressors integrated into separate loci on the chromosome originated from strain KT131, which was subsequently transformed with plasmids pKT12 (carrying PLlacO1-lacI and integrating into phage HK022 attachment site), and pAS022 (carrying PLlacO1-tetR and integrating into phage \u03bb attachment site). Both pKT12 and pAS022 are based on modified CRIM plasmids (Haldimann and Wanner, 2001; Ple\u0161ka et al., 2016). After each round of transformation, the CamR marker was removed (pCP20 [Cherepanov and Wackernagel, 1995]). The PLtetO1-cI fragment was integrated into old locus using \u03bb Red recombination (Datta et al., 2006), resulting in strain ASE030.\n\nStrain with Plac(-131-410)-yfp originated from HG105, which is an E. coli MG1655 derivative carrying a \u0394lacZYA \u0394lacI allele (Garcia et al., 2011). HG105 was transformed with plasmid pCC01 (carrying Plac(-131-410)-yfp and integrating into phage \u03bb attachment site) resulting in strain ASE039. pCC01 is based on modified CRIM plasmid (Haldimann and Wanner, 2001; Ple\u0161ka et al., 2016). CamR marker was subsequently removed (pCP20 [Cherepanov and Wackernagel, 1995]). To facilitate transduction of lacI gene, CamR cassette was integrated downstream of lacI in strain MG1655 using \u03bb Red recombination (Datta et al., 2006), resulting in strain ASE041. lacI gene and CamR cassette were then integrated into flhC, yeaH, and asnT loci, followed by CamR cassette removal, resulting in strains ASE046, ASE047, and ASE048, respectively.\n\n### Fluorescence assays\n\nYFP fluorescence of E. coli strains harboring different permutational GRN variants was assayed using a Synergy H1 microplate reader (BioTek). Strains were grown in a 96-well plate at 30\u00b0C with aeration on a microplate shaker in the dark. Routinely, M9CA+glycerol medium was used. Strains ASE031, ASE032, and ASE033 were grown in LB. Overnight cultures started from single colonies were diluted 1:1000 into fresh medium (supplemented with aTc and/or IPTG as indicated) and grown to reach exponential phase. OD600 and fluorescence (excitation 515, emission 545; endpoint-reads; gain 90; emission side: bottom) were recorded. For strains grown in LB, cells were centrifuged and resuspended in PBS (supplemented with 1 mM MgSO4 and 0.1 CaCl2[Tomasek et al., 2018]) prior to measurements. Specific fluorescence activity is given by the raw fluorescence output normalized by cell density. For GRN permutations fluorescence is reported normalized to the fully unrepressed PR promoter.\n\n### Total RNA purification\n\nStrains were inoculated from single colonies and grown in 10 ml M9CA+glycerol medium for 8 hr with aeration in the dark. Total RNA was extracted from approximately 5\u00a0\u00d7\u00a0108 cells using RNAprotect Bacteria reagent and RNeasy Mini kit (Qiagen). Briefly, after removal of the growth medium the cells were resuspended in 500 \u00b5l M9CA+glycerol medium and two volumes of RNAprotect Bacteria reagent. Thereafter cells were enzymatically lysed and digested with lysozyme and Proteinase K according to the manufacturer\u2019s recommendation.\n\nThe extracted total RNA was purified from residual plasmid DNA using the DNA-free DNA removal kit (Thermo Fisher Scientific) using 4 U rDNase at 37\u00b0C for 1 hr in total. First two U rDNAse were added and after 30 min two more units were added for another 30 min incubation time. The RNA concentration was measured using the NanoDrop 200 UV-Vis spectrophotometer (NanoDrop products, Wilmington, DE) and the integrity of the purified RNA was verified on an agarose gel. RNA purity was verified using 1\u00d7 OneTaq 2\u00d7 master mix and 0.2 \u00b5M primers KTp38 and KTp39 for plasmid networks and primers AS271-2, AS277, and AS280 for chromosomal lacI strains running an end-point PCR.\n\n### cDNA preparation and quantitative real-time PCR\n\ncDNA was reverse transcribed using the iScript cDNA synthesis kit (BioRad) supplemented with random hexamers. 1 \u03bcg total RNA was used as template in a 20 \u00b5l reaction yielding approximately 50 ng/\u00b5l cDNA. As no reverse transcriptase control the reverse transcriptase reaction was performed with all components except the reverse transcriptase to verify the absence of DNA contaminations. The products of the reverse transcriptase reaction were column purified.\n\nMeasurement of transcript abundance was performed by quantitative real-time RT-PCR using the GoTaq qPCR Master Mix (Promega, Mannheim, D) supplemented with SYBR Green according to the manufacturer\u2019s procedure with minor modifications. 100 pg cDNA for plasmid networks and 500 pg of cDNA for chromosomal strains were\u00a0used. Primer pairs (Supplementary file 2) were designed to quantify the transcription level of cI and lacI. Expression of the kanamycin resistance marker on the network plasmids and cysG on the chromosome were monitored as constitutive references. The qPCR reaction was carried out on the BIO-RAD qPCR C1000 system using 0.3 \u00b5M of the respective primers for cI and kanR amplification and 0.3 \u00b5M and 0.9 \u00b5M of the respective primers for lacI and cysG amplification at an annealing temperature of 62\u00b0C. The amplification efficiency, the linearity, including the slope and the R2, and specificity of each primer pair were determined by amplifying experimental triplicates of a serially dilution mixture of pN1 plasmid or genomic DNA of one of the chromosomal strains (1 ng to 1 pg). Using the conditions mentioned above the amplification efficiency was almost equal for all primer pairs. Expression of cI and lacI was calculated as fold changes using the comparative CT method (\u0394\u0394CT) (Livak and Schmittgen, 2001).\n\n### Northern blot assay\n\nAfter overnight ethanol precipitation (0.1 vol 1\u00a0M sodium acetate, 2.5 vol ethanol) 10 \u00b5g of total RNA was denatured with 2\u00d7 RNA loading buffer (4% 10\u00d7 TBE-DEPC, 0.02% xylene cyanol, 0.02% bromophenol blue, 94% formamide) for 15 min at 65\u00b0C. The high range RNA molecular weight marker (RiboRuler High Range RNA Ladder, Thermo Fisher Scientific) was dephosphorylated with FastAP Thermosensitive Alkaline Phosphatase (Thermo Fisher Scientific) and 5\u2019-end labeled with \u03b3\u221232P-ATP and T4 Polynucleotide Kinase (Thermo Fisher Scientific) according to the manufacturer\u2019s instructions. The denatured RNA samples and high range RNA molecular weight marker were separated on a 1.2% denaturing agarose gel (1.2\u00d7 MOPS, 19.4% formaldehyde; running buffer: 1\u00d7 MOPS, 16.2% formaldehyde) for 2 hr. After rinsing the gel three times with DEPC water the RNA was blotted onto a Nylon membrane (Hybond-N+, GE Healthcare, Amersham, UK) overnight using 20\u00d7 SSC (3 M NaCl, 0.3 M sodium citrate). The membrane was exposed to UV light, rinsed with 6\u00d7 SSC, and again exposed to UV before pre-hybridizing for 2 hr at 55\u00b0C. The pre-hybridization solution contains 0.04% BSA, 0.04% PVP, 0.04% Ficoll, 10 mM EDTA, 5\u00d7 SSC, 0.2% SDS, 0.1% dextran, and 0.1 mg ml\u22121 salmon sperm DNA. Hybridization was performed overnight at 55\u00b0C using 2 pmol of cI and lacI specific 32P 5\u2019-end labeled oligonucleotides, respectively. The probes were labeled using \u03b3\u221232P-ATP and 10 U T7 polynucleotide kinase (Thermo Fisher Scientific) for 1 hr at 37\u00b0C and column purified afterwards. The hybridization solution was identical to the pre-hybridization solution but without dextran and salmon sperm DNA. After rinsing two times with 0.5\u00d7\u00a0SSC and washing 20 min with 1\u00d7 SSC + 0.1% SDS and 15 min with 0.5\u00d7 SSC + 0.1% SDS, the membrane was dried for 30 min at room temperature. The blot was exposed up to several days, and the hybridization signals were detected using Phosphorimager from Molecular Dynamics. As reference signal for normalization the kanamycin resistant gene on the network plasmids was used.\n\n### FACS\n\nFlow cytometry was performed on a FACSCanto II analyzer (BD Biosciences, San Jose, CA). Sensitivity of the lasers was determined within the daily setup using BD FACS 7-color setup beads. For scatter detection the 488 nm laser was used: the forward scatter (FSC) detector was set to 560 V, and\u00a0the side scatter (SSC) detector was set to 374 V. Both signals were collected through a 488/10 nm band-pass filter. Cells were plotted on a log scale with thresholding on FSC and SSC at 1000. The green emission from the FITC-H channel was collected through a 530/30 nm band-pass filter using 488 nm laser and the detector was set to 473 V. The fluorescence signal observed from a physiologically distinct subpopulation, gated on FSC-H and SSC-H, was biexponentially transformed. Cells were grown as for fluorescence population measurements, and after 6 hr of growth 15 \u00b5l aliquots was frozen overnight adding 15 \u00b5l 30% glycerol in M9 buffer (1\u00d7\u00a0M9 salts with Ca/Mg). After thawing, the samples were diluted in cold M9 buffer to reach an event rate of approximately 500 events/s at medium flow rate. 20,000 events were recorded using high throughput sampler (HTS). The mean fluorescence of approximately 10,000 gated cells similar in size and shape (FSC-H) and cellular complexity (SSC-H) was determined. Events were gated and values were extracted using FlowJo software (version 10.0.7, FlowJo LLC, Tree Star).\n\n### Statistical analysis\n\nTo analyze yfp fluorescence data measured to assess whether genomic location affected response to IPTG, we conducted an analysis of variance (ANOVA) at each concentration separately, with the measured fluorescence as the response factor and the genomic concentration as the fixed factor (Supplementary file 4). We followed up these with a series of Tukey\u2019s multiple comparisons tests performed separately for each IPTG concentration, to directly compare the expression levels between genomic locations (Figure 6\u2014figure supplement 1).\n",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "da2d0a13-7f97-4e94-85c0-15eb052a7442",
+      "submission_id": "c2aabc98-08ad-4783-a01b-9ad34ccef458",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Paul B Rainey, Max Planck Institute for Evolutionary Biology Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65993.sa1](https://doi.org/10.7554/eLife.65993.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe really enjoyed this insight into the complexities of even simply gene regulatory networks, which you show are nowhere near as simple as we thought. Indeed, We think insights into the effects of transcriptional read-through will interest many concerned with the connection between genotype and phenotype.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Local genetic context shapes the function of a gene regulatory network\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after considerable consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nIt was not easy coming to this decision. All reviewers and the reviewing editor found much merit in the work. Particularly appreciated was the extensive generation of gene combinations and evidence of effects on the GRN. But the agreed position among the reviewers that more was required in order to rise about the bar necessary for publication in eLife. In particular, all felt that lack of insight into the molecular basis of the observed effects amounted to a significant shortcoming.\n\nRecognising that this is something that could be overcome there was discussion as to whether this could be achieved within a two-month window. Of course all recognised that in the time of covid this is an unrealistic time frame, but nonetheless, it was felt that significant additional work was required. This said, we would be happy to consider a fresh resubmission at some future time if the authors were able to deliver additional information as to the effect of the GRN on transcriptional read-through.\n\nReviewer #1:\n\nI flipped about with this manuscript, from mildly enthusiastic to very enthusiastic; back and forth. On balance though, I think it provides useful additional understanding of factors affecting the evolution of GRN. Like amplification, and various structural changes, those affecting the relative placement of genes can have unrecognised effects.\n\nThe work itself is thorough and clean. A very simple contrived construct is used and the various permutations of possible gene placements are comprehensively analysed. The work in chromosomal context is very nice, and especially so the work placing the three genes in separate chromosomal locations.\n\nWhere I was left hanging was with regard to the molecular mechanism. I buy the data showing that the mechanism involves transcriptional read-through, but the reader is left with no additional understanding. The obvious unaddressed question is why does transcriptional read through occur given otherwise identical terminators?\n\nReviewer #2:\n\nThe authors describe an issue well-known to synthetic biologist who are trying to build synthetic gene circuits in a predictive manner, namely context-dependent effects. More specifically, they are focusing on the order of the individual transcriptional units of a circuit and observe different behaviours, not only quantitatively, but also qualitatively. I like the approach of using a synthetic circuit, I think it is interesting to quantify such an effect in more detail and also to put it into an evolutionary context. However, I did not enjoy the manuscript as much as I was hoping for after reading the Abstract, due to following reasons:\n\n1) Very little thought was put into making the figures self-explanatory. I had to go several times for and back between text, figure and figure captions to understand what is actually shown, how the experimental results compare to the expectations and how the results compare across the different systems. Some extra schemes might help here. This applies to all of the figures, but I will explain it in more detail for Figure 1 and Figure 4\n\nFigure 1A: Explain and show in detail what phenotype is expected. Maybe use the mathematical model used later to illustrate the expression level of each involved protein under all conditions. As the networks involve a negative feedback loop, I find this non-trivial. The expected behaviour will depend on the repression strength of lacI. B. also label the prompters. C: instead of only the labels \"CfLfTf\" etc, add the small schemes, including labelling.\n\nFigure 4A: Add the interactions into the scheme and the expected behaviours for each case (with/without readthrough). Also include YFP in this scheme. This might be trivial for the authors, but it is not for a reader, who has not worked years on that project\n\nThe figures would also be easier to read if you used some colours.\n\n2) The experimental evidence for the author's conclusion that transcriptional read-through is the main factor for some of the unexpected phenotypes is rather slim. The only evidence is Figure 4. I would like to see more evidence. They say a RNAse site prevents it to detect in Western blotting. But as the system is synthetic, it is very simple to remove that site. Moreover, they should insert about 10 different terminators and use qPCR or RNAseq to quantify the read-through in order to get an idea how wide-spread this phenomenon is. It would also be easy to put multiple terminators in a row and see if that recovers the expected behaviour. The beauty of a synthetic system is that those experiment are done in few weeks. (Of course not if the lab is shut down due to COVID-19\u2026)\n\nWe observed that it is very easy to get unwanted promoter in sequences. That is supported by literature that shows that is very easy to get promoters from random sequences. Could this be an alternative explanation? Please discuss whether and how this can be distinguished from read-through?\n\n3) The effect in the native circuit is rather modest. Is this even significant? No statistical test was performed. Again, the read-through should be quantified by qPCR or RNAseq.\n\nReviewer #3:\n\nOverall, there are some conceptual issues with the study, as presented. The study does demonstrate physical context of genes does impact outputs. However, there are some issues.\n\nThe research and findings are not well placed in the field. There are a number of notable studies that have examined physical location of genes and their impact on regulatory networks and/or physiological outputs using natural and synthetic systems. For example, phage T7 was refactored and these synthetic T7 phages have notable differences in infectivity, etc. from their WT T7 counterpart (Chan, 2005). Additionally, a study by Wu and Rao (2010) has examined the impacts of genetic arrangement on the outputs of autoregulatory circuits. There are several other similar studies, beyond the few cited in this manuscript. How this approach builds on these studies is not made very clear.\n\nThe study seems to have honed in on one particular aspect that may affect a regulatory network \u2013 transcriptional readthrough. This seems to be explanatory for this system, and is likely a direct use of using very strong promoters (P_L derivatives). Use of such strong promoters, regardless of the efficiency of a terminator, will result in significant amounts of readthrough. How transcriptional readthrough generally contributes to regulatory networks is debatable. The data presented to support the importance of readthrough (Figure 5), while possibly statistically significant, does not provide convincing evidence for strong effects. Building on this point, how frequently are transcription factors in a multicomponent network encoded in close proximity? Would transcriptional readthrough provide any explanation as to the broader patterns we see in genome structure \u2013 even for E. coli?\n\nThere is very little explanation for why readthrough into cI has such strong effects, when readthrough into lacI or tetR have smaller (or no) effects on network behavior. Are these effects on cI strongest because CI is most proximal to your output (YFP production)? Do these effects correlate in any way to DNA binding affinity of each transcription factor?\n",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5e1cdca6-22fa-493a-acd2-0d6ae6149798",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C1",
+      "claim": "Gene expression levels are influenced by multiple coexisting molecular mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression levels are influenced by multiple coexisting molecular mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that reflects established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "8c52f99c-2154-4b99-b919-bfff107041b7",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C2",
+      "claim": "Predicting phenotypes of gene regulatory networks (GRNs) remains a major challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "However, predicting phenotypes of gene regulatory networks (GRNs) remains a major challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of the field as acknowledged in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "9faf61e2-8d21-4588-8707-52564fc65240",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C3",
+      "claim": "One GRN with fixed topology can display not only quantitatively but also qualitatively different phenotypes, depending solely on the local genetic context of its components.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that one GRN with fixed topology can display not only quantitatively but also qualitatively different phenotypes, depending solely on the local genetic context of its components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "12d35ca7-a5c2-47d7-8fc1-84e6e1e12130",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C4",
+      "claim": "Transcriptional read-through is the main molecular mechanism that places one transcriptional unit (TU) within two separate regulons without the need for complex regulatory sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional read-through is the main molecular mechanism that places one transcriptional unit (TU) within two separate regulons without the need for complex regulatory sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion supported by experimental data including promoter mutations, terminator strength variations, and Northern blot analysis shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "39d4056d-fe3f-4a38-8a48-2cfe6302578e",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C5",
+      "claim": "Relative order of individual TUs, with its potential for combinatorial complexity, plays an important role in shaping phenotypes of GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that relative order of individual TUs, with its potential for combinatorial complexity, plays an important role in shaping phenotypes of GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation based on the experimental findings throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "2b9ac1bf-0bd2-4045-9f02-bfc747256da7",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C6",
+      "claim": "Changes in regulatory connections between individual transcriptional units (TUs) or, in other words, the rewiring of gene regulatory networks (GRNs), is a major genetic mechanism underlying phenotypic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in regulatory connections between individual transcriptional units (TUs) or, in other words, the rewiring of gene regulatory networks (GRNs), is a major genetic mechanism underlying phenotypic diversity (Shubin et al., 2009; Wagner and Lynch, 2010; Wray, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "7aa537f5-07e6-4e44-b15a-f8f3c6c28871",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C7",
+      "claim": "We are still unable to predict GRN phenotypes from first principles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we are still unable to predict GRN phenotypes from first principles (Browning and Busby, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "a7c32c03-1306-49a2-8d68-28f5e6c3ff83",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C8",
+      "claim": "Genes and the genetic elements that regulate them, promoters, are arranged in a linear manner on chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes and the genetic elements that regulate them, promoters, are arranged in a linear manner on chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about chromosome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "cf90e2ce-c2ec-4461-bf99-d859bfae9566",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C9",
+      "claim": "The genetic context in which GRNs find themselves in, influences and modulates the way these respond to the environment and interact with other GRNs and it also shapes the interactions within the GRN itself.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic context in which GRNs find themselves in, influences and modulates the way these respond to the environment and interact with other GRNs and it also shapes the interactions within the GRN itself (Cardinale and Arkin, 2012; Chan et al., 2005; Steinrueck and Guet, 2017; Tas et al., 2021; Wu and Rao, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "e10feb4e-c223-40fb-b919-699e15e225d6",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C10",
+      "claim": "In bacteria, gene expression levels are thought to be determined by RNA polymerase recognizing promoter sequences and subsequently initiating transcription, which is the key step at which a large part of transcriptional regulation takes place.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria, gene expression levels are thought to be determined by RNA polymerase recognizing promoter sequences and subsequently initiating transcription, which is the key step at which a large part of transcriptional regulation takes place (Browning and Busby, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "a3489618-5091-41e7-a944-8ee84ac854a6",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C11",
+      "claim": "Context effects resulting from occupying a particular location within the genome can significantly alter expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, context effects resulting from occupying a particular location within the genome can significantly alter expression levels (Junier, 2014; Lagomarsino et al., 2015; Scholz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "c49bc317-0bf4-4770-8173-8e4096373a64",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C12",
+      "claim": "Distance to the origin of replication influences transcription levels due to gene dosage effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Distance to the origin of replication influences transcription levels due to gene dosage effects, the presence of transcriptionally active and silent regions, as well as spatial and temporal variation in DNA superhelicity, while collisions between DNA replication and transcription influence gene expression levels differently on leading and lagging strands (Beckwith et al., 1966; Bryant et al., 2014; Mirkin et al., 2006; Sobetzko et al., 2012; Vora et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "2c31466c-95f1-4dec-8fe1-4bb3ed5852d5",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C13",
+      "claim": "At a local scale, transcriptional interference, transcription-coupled DNA supercoiling, presence of cis-antisense RNA, as well as transcriptional read-through, all link together the expression of neighboring TUs.",
+      "claim_type": "EXPLICIT",
+      "source": "At a local scale, transcriptional interference, transcription-coupled DNA supercoiling, presence of cis-antisense RNA, as well as transcriptional read-through, all link together the expression of neighboring TUs (Cambray et al., 2013; Georg and Hess, 2011; Liu and Wang, 1987; Reynolds et al., 1992; Shearwin et al., 2005; Wu and Fang, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "d012a694-c5cb-4135-b6cd-27a1da384f85",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C14",
+      "claim": "Within operons, number, length, and order of genes can all affect gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Within operons, number, length, and order of genes can all affect gene expression (Jacob and Monod, 1961; Lim et al., 2011; Zipser, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "a4cfa285-6535-41cc-9de9-f13e3c4a47c5",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C15",
+      "claim": "The qualitative phenotype of a GRN is often thought to be defined solely by the network topology and the gene expression levels of GRN components.",
+      "claim_type": "EXPLICIT",
+      "source": "While these multiple local context-dependent mechanisms are known to modulate gene expression, the qualitative phenotype of a GRN is often thought to be defined solely by the network topology and the gene expression levels of GRN components (Babu et al., 2004; Mangan et al., 2003; Payne and Wagner, 2015), and thus determined simply by the promoter sequences, independent of the physical location of the genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature and represents a common assumption in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "2331ee6f-17f3-434d-af4e-9323a642c8df",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C16",
+      "claim": "Cis-regulatory changes are believed to be less pleiotropic than changes to the protein itself.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the reasons for this assumption is the belief that cis-regulatory changes are less pleiotropic than changes to the protein itself (Prud'homme et al., 2006), although some have questioned this (Stern and Orgogozo, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature, including both supporting and questioning views.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "b277775a-0c65-427b-9b56-cb64943d1339",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C17",
+      "claim": "The GRN studied is composed of the genes coding for three of the best characterized repressors: LacI, TetR, and lambda CI.",
+      "claim_type": "EXPLICIT",
+      "source": "Our GRN (Figure 1A) is composed of the genes coding for three of the best characterized repressors: LacI, TetR, and lambda CI (abbreviations used throughout the text: L, T, and C, respectively), and the promoters they control, Plac, Ptet, and PR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental system used in the study, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "4ed90f33-08d0-446f-858c-555398fb2e37",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C18",
+      "claim": "The three repressor genes are transcriptionally interconnected into a GRN, with LacI repressing both tetR and its own expression, and TetR repressing expression of cI.",
+      "claim_type": "EXPLICIT",
+      "source": "The three repressor genes are transcriptionally interconnected into a GRN, with LacI repressing both tetR and its own expression, and TetR repressing expression of cI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the network topology of the experimental system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "96ef64b6-5a8d-4e60-8cfe-b24afd2ecef3",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C19",
+      "claim": "The binding state of TetR and LacI changes in the presence of inducers: anhydrotetracycline (aTc) and isopropyl \u03b2-D-thiogalactopyranoside (IPTG), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding state of TetR and LacI changes in the presence of inducers: anhydrotetracycline (aTc) and isopropyl \u03b2-D-thiogalactopyranoside (IPTG), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about these well-characterized transcription factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "59d9d6b5-0a24-4808-8069-ebbc2f3c999a",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C20",
+      "claim": "A yfp gene, expressed from a CI-controlled PR promoter, serves as output.",
+      "claim_type": "EXPLICIT",
+      "source": "A yfp gene, expressed from a CI-controlled PR promoter, serves as output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "68856d95-70ff-4a57-8f49-b63ecffb0a9e",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C21",
+      "claim": "The yfp gene is located separately from the rest of the genetic circuit at a transcriptionally insulated locus on the chromosome (attB site of phage P21).",
+      "claim_type": "EXPLICIT",
+      "source": "The yfp gene is located separately from the rest of the genetic circuit at a transcriptionally insulated locus on the chromosome (attB site of phage P21).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "6ea9e39d-00d8-4fa2-b1eb-0a447f6e1154",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C22",
+      "claim": "Each individual promoter and transcription factor gene it controls are separated from the neighboring one by a strong transcriptional terminator T1 of the rrnB gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In our synthetic system, each individual promoter and transcription factor gene it controls are separated from the neighboring one by a strong transcriptional terminator T1 of the rrnB gene (Orosz et al., 1991), forming an individual TU (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental system design with citation support for the terminator.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "2b5bd1e7-a09f-41f2-94df-6618f2d8fa29",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C23",
+      "claim": "T1 is one of the strongest transcriptional terminators in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose T1 as one of the strongest transcriptional terminators in E. coli to transcriptionally insulate individual TUs from one another (Cambray et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "14618120-f633-4aac-aad5-d15a0ebc0189",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C24",
+      "claim": "The phenotype of strains carrying 37 plasmids with different TU permutations varied widely both quantitatively and qualitatively.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype of strains carrying the resulting 37 plasmids (multiple attempts to clone eleven of the TU order permutations failed, see Supplemental material) varied widely both quantitatively and qualitatively (Figure 1C,D, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "29d18e64-f0bb-4799-a5d6-3aacdf290a1e",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C25",
+      "claim": "More than half (20) of the tested GRN permutations showed a phenotype which was qualitatively different than what was predicted ab initio.",
+      "claim_type": "EXPLICIT",
+      "source": "More than half (20) of the tested GRN permutations showed a phenotype which was qualitatively different than what was predicted ab initio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "9a448218-671b-4fce-a9de-0b916c9a614d",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C26",
+      "claim": "Multiple quantitative differences in expression levels were observed within one class of logical phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed multiple quantitative differences in expression levels within one class of logical phenotypes (e.g. permutations CLT, CTLr, TrCL, and LTrCr; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "209bdbab-aea7-4f6d-b77c-fb11fb89c076",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C27",
+      "claim": "In four out of six strains (LCT, LTC, TCL, and TLC), induction with IPTG shifted yfp expression levels to the OFF state.",
+      "claim_type": "EXPLICIT",
+      "source": "In four out of six strains (LCT, LTC, TCL, and TLC), induction with IPTG shifted yfp expression levels to the OFF state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "eb204e4c-f5ef-41f4-98c8-e8869a5bbca5",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C28",
+      "claim": "Population-level findings are also observed at the single cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "These population-level findings are also observed at the single cell level (Figure 2A, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "dbc66729-1415-4a5e-9a97-97910ab1e9bc",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C29",
+      "claim": "Chromosomally located GRNs with varying TU order showed a dependency of phenotype on relative TU order.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested to what extent our observation from plasmid-based TUs apply to chromosomally located GRNs by integrating three networks with varying TU order (CTL, LCT, and TLC) at a transcriptionally insulated chromosomal locus (attB site of phage HK022). In line with the plasmid-based GRNs, these strains also showed a dependency of phenotype on relative TU order, demonstrating that this is not an effect related to plasmid localization of our GRN (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "4e55799c-afe1-439d-80ae-bced6f62f98b",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C30",
+      "claim": "When lacI, tetR, and cI are integrated at separate, transcriptionally insulated loci on the bacterial chromosome, the network phenotype is identical with the one predicted ab initio from its topology.",
+      "claim_type": "EXPLICIT",
+      "source": "When lacI, tetR, and cI are integrated at separate, transcriptionally insulated loci on the bacterial chromosome, the network phenotype is identical with the one predicted ab initio from its topology, confirming that it is the transcription of neighboring genes that changes the network's phenotype (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and provides evidence for the role of neighboring genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "c078187e-8c24-4bb3-a64f-dde619e7da83",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C31",
+      "claim": "cI expression after IPTG induction in strain TLC was over 10-fold higher than in strain CLT.",
+      "claim_type": "EXPLICIT",
+      "source": "cI expression after IPTG induction in strain TLC was over 10-fold higher than in strain CLT (Figure 3A), suggesting that the differences in yfp fluorescence were indeed due to differences in cI expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "777eb880-665d-4997-99fb-b60a28a6cf02",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C32",
+      "claim": "In all six strains with different relative TU order, Ptet activity was strongly induced with aTc, while no Ptet activation was observed after IPTG induction.",
+      "claim_type": "EXPLICIT",
+      "source": "In all six strains with different relative TU order, Ptet activity was strongly induced with aTc, while no Ptet activation was observed after IPTG induction (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "15092b65-071c-4f79-ba34-0bf55a1e246d",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C33",
+      "claim": "cI expression observed after IPTG induction is not due to global removal of TetR repression, but rather due to a local effect on cI gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that cI expression observed after IPTG induction is not due to global removal of TetR repression, but rather due to a local effect on cI gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing that Ptet activity does not change with IPTG.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "a9046830-dbcb-410d-a3ca-d5ca280047c8",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C34",
+      "claim": "Levels of TetR-dependent repression do not depend on relative TU order.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, levels of TetR-dependent repression do not depend on relative TU order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "386e0fc7-efe4-4a82-bb0c-a3db0f7ee125",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C35",
+      "claim": "The local effect on cI expression depends on gene expression from the lac promoter in an IPTG-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This local effect depends on gene expression from the lac promoter in an IPTG-dependent manner (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "363fb694-17a3-46f2-aac4-9d5a5da08f42",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C36",
+      "claim": "The model including transcriptional read-through agreed for 20 networks/10 pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "For networks showing the same phenotype in both orientations we assumed there is no significant influence of plasmid backbone elements (Figure 1\u2014figure supplement 2). Here, the model including transcriptional read-through agreed for 20 networks/10 pairs (Figure 1\u2014figure supplement 2A) and did not agree with six networks/three pairs (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative summary of model predictions compared to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "343478be-caf2-40f6-8a98-3d3976ce664d",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C37",
+      "claim": "A null-model that did not account for transcriptional read-through failed to predict the observed differences in phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "A null-model that did not account for transcriptional read-through failed to predict the observed differences in phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "8d891644-4c74-4d53-a570-d42fbb4de821",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C38",
+      "claim": "If GRN behavior is due to transcriptional read-through, mutating the Ptet promoter should not affect the responsiveness to IPTG.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if GRN behavior is due to transcriptional read-through, mutating the Ptet promoter should not affect the responsiveness to IPTG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the transcriptional read-through hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "93d59c65-05b7-4323-9fe3-4aa886c503d4",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C39",
+      "claim": "Two point mutations in the \u221210 element of Ptet render Ptet inactive and prevent transcription from this promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "These two point mutations render Ptet inactive and therefore prevent transcription from this promoter (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "562ab5f0-f3e0-48cf-bb13-e72498e846b8",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C40",
+      "claim": "The phenotype in the absence of any inducers and with only IPTG was identical to the phenotype in the original strains after introducing mutations into the \u221210 element of Ptet.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype in the absence of any inducers and with only IPTG was identical to the phenotype in the original strains, thus confirming that cI expression is initiated at an upstream promoter (Figure 4B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "ccb4bbbc-0058-4bb0-a6b6-119396d16abc",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C41",
+      "claim": "Change from T1 to T1T2 changes the phenotype of the network to the one predicted by the model and observed when single transcription factors are incorporated in separate loci on the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Change from T1 to T1T2 changes the phenotype of the network to the one predicted by the model and observed when single transcription factors are incorporated in separate loci on the chromosome (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "b0097c72-3d83-46f4-aab1-c6988846d8aa",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C42",
+      "claim": "Change from T1 to either Tcrp or TtonB leads to a completely OFF phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Change from T1 to either Tcrp or TtonB leads to a completely OFF phenotype, as expected when transcriptional read-through through weaker terminators leads to expression of cI in all four conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A and is consistent with the transcriptional read-through hypothesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "8ac2ef2c-042d-4ed4-9bc0-d998d223d90d",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C43",
+      "claim": "Read-through transcripts encompassing both lacI and cI were detected in strains carrying Tcrp and TtonB.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected read-through transcripts encompassing both lacI and cI in strains carrying Tcrp and TtonB, thus directly demonstrating transcriptional read-through in these two strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "666532bb-0144-4802-92ad-c07b92f11be1",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C44",
+      "claim": "A combination of two terminators (crp terminator in front of T1 terminator) in network LCT resulted in an intermediate phenotype, consistent with predicted decrease in cI expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to check whether a combination of two terminators would act additively on stopping transcriptional read-through, we inserted the weaker crp terminator in front of T1 terminator in a different GRN, LCT, resulting in network LcrpT1CT. This network showed an intermediate phenotype, consistent with predicted decrease in cI expression (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "8b6509be-3b71-4d9d-bd29-008a39893e30",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C45",
+      "claim": "These results strongly support that transcriptional read-through is the molecular mechanism underlying the relative TU dependent phenotypes observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results strongly support that transcriptional read-through is the molecular mechanism underlying the relative TU dependent phenotypes we observe, and thus the different logic phenotypes our GRN can achieve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple lines of experimental evidence including promoter mutations, terminator strength variations, and Northern blot analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "988f52b0-c05b-4453-bf0d-432bdb913a08",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C46",
+      "claim": "Eight networks (four pairs) showed different phenotypes in each orientation and in all cases one phenotype from the pair was supported by the model while the other was not.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight networks (four pairs) showed different phenotypes in each orientation and in all cases one phenotype from the pair was supported by our model while the other was not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental results shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "a5f71283-8459-4a03-820f-2079529960cb",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C47",
+      "claim": "There is a significant influence of the plasmid backbone elements on some network phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that there was a significant influence of the plasmid backbone elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that some network pairs showed different phenotypes in different orientations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "6cb45257-9301-47ba-8455-ab5d4b3cc682",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C48",
+      "claim": "TUs located on the plasmid backbone (namely the kanamycin resistance gene kanR and repA in the plasmid origin of replication) have the potential to influence expression of neighboring TUs.",
+      "claim_type": "EXPLICIT",
+      "source": "Just like the individual TUs constituting our GRN, TUs located on the plasmid backbone (namely the kanamycin resistance gene kanR and repA in the plasmid origin of replication) also have the potential to influence expression of neighboring TUs, and hence the GRN phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of orientation-dependent effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "89fc2194-d191-4bbb-b673-8e67ba36aebd",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C49",
+      "claim": "There is a slight change in repression of Ptet depending on the relative orientation to the plasmid backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that there is a slight change in repression of Ptet depending on the relative orientation to the plasmid backbone (Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "1bfa8f3a-321a-4670-9932-4880e98fc0d7",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C50",
+      "claim": "Supercoiling can influence gene expression, especially of plasmid-located genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since supercoiling can influence gene expression, especially of plasmid-located genes, we also expect supercoiling\u2013mediated effects to modulate expression and thus influence phenotypes of our GRN (Sobetzko, 2016; Yeung et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "c8bd270b-847e-4ace-9118-cca08c447c7c",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C51",
+      "claim": "If lacI is inserted after a weaker terminator, expression from lac promoter is lower for a range of IPTG concentrations as compared to strain where lacI is inserted after a strong terminator.",
+      "claim_type": "EXPLICIT",
+      "source": "If lacI is inserted after a weaker terminator, expression from lac promoter is lower for a range of IPTG concentrations as compared to strain where lacI is inserted after a strong terminator (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "4bd82fea-d42e-4baf-b716-73b12bbf27ac",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C52",
+      "claim": "There was a significant effect of genomic localization on Plac activity for five IPTG concentrations tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted an analysis of variance (ANOVA) to compare the effect of genomic localization on Plac activity. There was a significant effect for five IPTG concentrations tested, and post hoc comparisons using the Tukey test were performed (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "615bcebd-9679-4ad0-ae69-c612bd13c9ab",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C53",
+      "claim": "Differences in lacI transcript levels were observed in the three strains with lacI inserted at different loci, consistent with the observed Plac induction curves.",
+      "claim_type": "EXPLICIT",
+      "source": "We also directly assessed the amount of lacI transcript in these three strains using RT-qPCR and saw differences in expression levels consistent with the observed Plac induction curves (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "54c7c2e2-ed6a-4ca3-91df-46defe6db583",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C54",
+      "claim": "A DNA band corresponding to the amplification of the cDNA spanning the intergenic region was obtained in all three strains, confirming read-through transcription into lacI from the upstream gene.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify this, we performed PCR on cDNA from the three strains, using primers spanning the intergenic regions upstream of lacI (Figure 6D). In all three cases, a DNA band corresponding to the amplification of the cDNA spanning the intergenic region was obtained, confirming read-through transcription into lacI from the upstream gene (no band was obtained with RNA as template).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCR data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "f75fa318-503b-4051-bd96-3f8c8c24e99e",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C55",
+      "claim": "Local genetic context can significantly influence the phenotype of GRNs both quantitatively and qualitatively.",
+      "claim_type": "EXPLICIT",
+      "source": "By comprehensively shuffling the relative TU order in a synthetic GRN, we show that local genetic context can significantly influence the phenotype of GRNs both quantitatively and qualitatively, and thus can qualitatively and quantitatively change the function a GRN performs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "3901df69-a4fd-471e-b376-bc7325712ea0",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C56",
+      "claim": "The phenotype of a GRN cannot be fully understood without reference to the local genetic context of its individual network components.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the phenotype of a GRN cannot be fully understood without reference to the local genetic context of its individual network components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "f2ac216e-5da4-4b96-b44c-0e4e9f384c37",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C57",
+      "claim": "The GRN can access multiple phenotypes by simply shuffling the relative order of TUs without any changes in promoters and coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that our GRN can access multiple phenotypes by simply shuffling the relative order of TUs without any changes in promoters and coding sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "7de05f95-7348-416f-803c-bbb092c1cf76",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C58",
+      "claim": "Changes in regulatory connections between single regulons can be achieved solely by changes in local genetic context.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, changes in regulatory connections between single regulons can be achieved solely by changes in local genetic context, which represent a category of mutations that is to be contrasted from single base pair mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "ed27ff55-7df3-4249-8f2b-d8d21a57272c",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C59",
+      "claim": "The local context effects and in particular transcriptional read-through can occur anywhere on the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the local context effects and in particular transcriptional read-through can occur anywhere on the chromosome (Figure 6), indicating that any chromosomal rearrangement has the potential to alter not only the expression levels of a gene but importantly also the function of a GRN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "0da54a13-4ba9-4a08-89eb-a2672d225e1f",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C60",
+      "claim": "Local genetic context of a TU can change after a deletion, duplication, insertion, inversion, or translocation event.",
+      "claim_type": "EXPLICIT",
+      "source": "Local genetic context of a TU can change after a deletion, duplication, insertion, inversion, or translocation event (Periwal and Scaria, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "dd70f6ff-b295-43af-851c-a8add987c9c0",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C61",
+      "claim": "Mutational events that change local genetic context are often mediated by mobile genetic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutational events are often mediated by mobile genetic elements, and their rates depend on the type of mobile element, the precise genomic location as well as the organism (D\u00edaz-Maldonado et al., 2015; Periwal and Scaria, 2015; Steinrueck and Guet, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "8b4d5f54-0de4-4172-b81f-e27c09f4c81d",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C62",
+      "claim": "Reported rates of genomic rearrangements span a wide range (from 10\u22123 to 10\u22128 per cell per generation), but are typically orders of magnitude higher than rates of point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported rates span a wide range (from 10\u22123 to 10\u22128 per cell per generation), but are typically orders of magnitude higher than rates of point mutations (Hudson et al., 2002; Saito et al., 2010; Sousa et al., 2013; Tomanek et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "9d9cfad5-bdcb-4423-8cce-c698795ffa60",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C63",
+      "claim": "Changes in local genetic context have the potential to shape bacterial phenotypes even in the absence of sequence changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this elevated frequency of small- and large-scale genomic rearrangements in various bacterial species, changes in local genetic context have the potential to shape bacterial phenotypes even in the absence of sequence changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and cited literature on rearrangement rates.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "dd2c156d-0fae-4bfd-95d6-82c30495a3b3",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C64",
+      "claim": "Genomic rearrangements were found to significantly change expression patterns in numerous organisms, including E. coli, Bordetella pertussis, and Lactobacillus rhamnosus.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, genomic rearrangements were found to significantly change expression patterns in numerous organisms, including E. coli, Bordetella pertussis, and Lactobacillus rhamnosus (Brinig et al., 2006; Douillard et al., 2016; Raeside et al., 2014; Weigand et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "4b2e88c4-c531-4ff7-a3b6-8745e8eacc99",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C65",
+      "claim": "Growing evidence has been emerging that transcriptional read-through is widespread.",
+      "claim_type": "EXPLICIT",
+      "source": "Growing evidence has been emerging that transcriptional read-through is widespread (Cambray et al., 2013; Conway et al., 2014; Lalanne et al., 2018; Yan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "e49ef91d-4d40-46fd-bfd3-66803ee2da60",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C66",
+      "claim": "In order to impact the phenotype, transcriptional read-through into neighboring genes needs to reach an effective threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "On one hand, in order to impact the phenotype, transcriptional read-through into neighboring genes needs to reach an effective threshold, and increases in expression levels can be down-regulated post-transcriptionally (Lalanne et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "f71eec1c-252e-4657-8c6c-79ec5d10005f",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C67",
+      "claim": "Fitness benefits have been observed in strains with global changes in Rho-dependent termination levels.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, fitness benefits have been observed in strains with global changes in Rho-dependent termination levels (Freddolino et al., 2012; Lee and Helmann, 2014; Steinrueck and Guet, 2017; Tenaillon et al., 2012), and it is likely that local transcriptional read-through at specific intrinsic terminators is also beneficial under certain conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "869af885-97af-4448-956a-42a686b21694",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C68",
+      "claim": "Rates of transcriptional read-through can be condition-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "As rates of transcriptional read-through can be condition-dependent (Yan et al., 2018), there are many complex molecular interactions left to disentangle regarding the fitness effects, whether beneficial or detrimental, of inefficient transcriptional termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "b948c826-250e-4037-842f-dac7f97008ef",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C69",
+      "claim": "Changes in the strength of transcriptional termination generally require just a small number of mutations, often only individual point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the strength of transcriptional termination generally require just a small number of mutations, often only individual point mutations (San Millan et al., 2009; Schuster et al., 1994; Weigand et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "ca33cb10-602a-4e62-bb4f-776cfaf66334",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C70",
+      "claim": "Despite the synthetic GRN having been designed to restrict transcriptional read-through by using a single very strong transcriptional terminator, a variety of phenotypes were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, despite our synthetic GRN having been designed to restrict transcriptional read-through by using a single very strong transcriptional terminator, we observed a variety of phenotypes our GRN can access (Cambray et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "a5cea5f5-be0b-4df6-8a1d-0a743f205281",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C71",
+      "claim": "Naturally occurring transcriptional terminators cover a wide range of efficiencies and hence have potential to create a large number of regulatory connections between neighboring TUs.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally occurring transcriptional terminators cover a wide range of efficiencies and hence have potential to create a large number of regulatory connections between neighboring TUs (Cambray et al., 2013; Reynolds et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "ea3dc474-408e-4545-919a-47bd95b01419",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C72",
+      "claim": "Most studies on chromosomal position effects focus explicitly on molecular mechanisms other than transcriptional read-through by insulating a reporter system with strong terminators.",
+      "claim_type": "EXPLICIT",
+      "source": "Most studies on chromosomal position effects focus explicitly on molecular mechanisms other than transcriptional read-through by insulating a reporter system with strong terminators (Berger et al., 2016; Block et al., 2012; Sousa et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "c83ab331-f130-4ee1-9359-e29b2fae1154",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C73",
+      "claim": "Transcriptional read-through from neighboring genes is an inherent component of chromosomal position effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the fact that endogenous terminators vary widely in their efficiency, we argue that transcriptional read-through from neighboring genes is an inherent component of chromosomal position effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument based on the experimental findings and knowledge about terminator efficiency.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "95d9793c-0b92-44b7-a5d9-7b8d7dfb4938",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C74",
+      "claim": "Not all phenotypes observed can be explained by transcriptional read-through alone and there are likely other molecular mechanisms of a more global nature influencing the phenotypes of the GRN.",
+      "claim_type": "EXPLICIT",
+      "source": "Such complex interplay of mechanisms can be seen in our synthetic genetic system, as not all phenotypes we see can be explained by transcriptional read-through alone and there are likely other molecular mechanisms of a more global nature influencing the phenotypes of our GRN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that some network phenotypes were not explained by the transcriptional read-through model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "9e432d07-1b8a-48ce-8dc4-e5973a973027",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C75",
+      "claim": "Transcriptional read-through is a component rarely included in the modeling of GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, transcriptional read-through is a component rarely included in the modeling of GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of GRN modeling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "df282bae-388e-4868-a49f-1eb09ffb2f82",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C76",
+      "claim": "The effect of transcriptional read-through can be readily added into any modeling framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, its effect can be readily added into any modeling framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the mathematical model developed in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "5c90fe21-c01d-4c52-8040-a100b7dc775c",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C77",
+      "claim": "The local genetic context created by the relative TU order can act as one of the genetic mechanisms shaping regulatory connections in regulons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the local genetic context created by the relative TU order can act as one of the genetic mechanisms shaping regulatory connections in regulons (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary conclusion of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "ed3e58dd-74bd-418d-8581-6de5033748c3",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C78",
+      "claim": "Changes in local genetic context have the potential to place an individual TU into two independent regulons without the need to evolve complex regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in local genetic context have the potential to place an individual TU into two independent regulons without the need to evolve complex regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "c7c6887c-293e-46f2-95ce-75ad4a05767d",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C79",
+      "claim": "Transcriptional read-through, by enabling a diversity of gene expression profiles to be accessed by shuffling of individual TUs, may be one of the mechanisms shaping the evolutionary dynamics of bacterial genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional read-through, by enabling a diversity of gene expression profiles to be accessed by shuffling of individual TUs, may be one of the mechanisms shaping the evolutionary dynamics of bacterial genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "c933ee2f-1cbe-4a8e-af74-6ebe95cc9303",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C80",
+      "claim": "Physical proximity alone can result in increased co-expression due to transcriptional read-through and thus can be advantageous by changing gene expression patterns without the need for any changes in promoter sequences or to the specificity of transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that physical proximity alone can result in increased co-expression due to transcriptional read-through and thus can be advantageous by changing gene expression patterns without the need for any changes in promoter sequences or to the specificity of transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on the experimental findings and their implications for operon evolution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "cc34295d-4b23-43b3-99e6-2e927378dac9",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C81",
+      "claim": "Correlated expression of genes reaching beyond the level of an operon has been recently observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, correlated expression of genes reaching beyond the level of an operon has been recently observed (Junier et al., 2016; Junier and Rivoire, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "8047f806-b277-49ee-ba4f-a850ca8a7416",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C82",
+      "claim": "Sequence conservation does not necessarily equal functional conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also have important implications for comparative genomics, as sequence conservation does not necessarily equal functional conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication drawn from the experimental findings showing that identical sequences can have different functions depending on local genetic context.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "12d517b8-2815-440b-adf5-5c045bf84e12",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C83",
+      "claim": "The three repressors in the synthetic GRN are tagged with ssrA degradation tag to reduce the half-life of the proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "All three repressors are tagged with ssrA degradation tag to reduce the half-life of the proteins (Keiler et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system design with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "221de1c5-cfe8-4abd-82b7-bf77b10da9d3",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C84",
+      "claim": "Multiple attempts to clone eleven of the TU order permutations failed.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype of strains carrying the resulting 37 plasmids (multiple attempts to clone eleven of the TU order permutations failed, see Supplemental material) varied widely both quantitatively and qualitatively (Figure 1C,D, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental challenges encountered.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "68344ea9-e576-40ad-b35f-f12c14f5090a",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C85",
+      "claim": "Eight of the failed cloning attempts were not clonable in either orientation with respect to the plasmid backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight of them were not clonable in either orientation with respect to the plasmid backbone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental challenges encountered.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "236071bc-e5cf-4267-a112-36462185ed63",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C86",
+      "claim": "Increased difficulties were experienced in cloning GRNs where TUs were not oriented in one direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, we experienced increased difficulties in cloning GRNs where TUs were not oriented in one direction, which may at least in part be traced back to a number of highly homologous sequences in our plasmids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about experimental challenges with a proposed explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "1e1ece94-fd1e-4d98-81f1-d4a60ddba3d5",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C87",
+      "claim": "26 networks/13 pairs showed the same phenotype in both orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "26 networks/13 pairs showed the same phenotype in both orientations (Figure 1\u2014figure supplement 2), eight networks/four pairs showed different phenotype in each orientation (Figure 1\u2014figure supplement 3A), for three networks no corresponding pair was cloned (Figure 1\u2014figure supplement 3B) and eight networks/four pairs were not cloned.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative summary of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "ec9bd1ca-9581-4a11-a6d2-453e0599dd80",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "claim_id": "C88",
+      "claim": "The controlled promoters in the synthetic GRN are synthetic variants of the PL promoter of phage lambda with two tet or lac operator sites located in the direct vicinity of the \u221235 and \u221210 promoter elements.",
+      "claim_type": "EXPLICIT",
+      "source": "The controlled promoters are synthetic variants of the PL promoter of phage lambda with two tet or lac operator sites located in the direct vicinity of the \u221235 and \u221210 promoter elements (Lutz and Bujard, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system design with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a0f2c5f1-9f21-4d19-b653-73c402e178e6",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A synthetic GRN with fixed topology displays both quantitatively and qualitatively different phenotypes depending solely on the local genetic context (relative TU order) of its components. Of 37 tested TU permutations, more than half (20) showed qualitatively different phenotypes than predicted ab initio, and quantitative differences were observed within phenotype classes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24, C25, C26, C55, and C57 collectively demonstrate that local genetic context significantly influences GRN phenotypes. The experimental data from 37 plasmid-based TU permutations (Figures 1C-D, Figure 1\u2014figure supplements 2-3) provide strong evidence for both qualitative and quantitative phenotypic variation despite identical network topology and genetic components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "eb0c04f2-6dab-4113-9055-291f78bfd380",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The dependency of GRN phenotype on relative TU order is independent of plasmid localization. Chromosomally integrated GRNs with varying TU order showed phenotype dependency on TU order, while GRNs with components at separate chromosomal loci showed the predicted phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C30 are supported by experimental data from chromosomally integrated networks (Figure 2B-C). The observation that separated components yield predicted phenotypes while adjacent components show context-dependent phenotypes provides strong evidence that transcription of neighboring genes, not plasmid effects, drives phenotypic variation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Transcriptional read-through is the main molecular mechanism underlying context-dependent GRN phenotypes. Multiple lines of evidence support this: (1) cI expression differences correlate with phenotypic differences, (2) Ptet activity does not change with IPTG, indicating local rather than global effects, (3) Ptet promoter mutations do not affect IPTG responsiveness, (4) terminator strength variations predictably alter phenotypes, and (5) Northern blots directly detect read-through transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C31-C45 provide converging experimental evidence for transcriptional read-through as the mechanism. RT-qPCR (Figure 3A), promoter mutation experiments (Figure 4), terminator strength variations (Figure 5A-B), and Northern blot detection of read-through transcripts (Figure 5\u2014figure supplement 1) collectively provide strong support for this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "72ad8d6f-0ab4-40a3-bece-4a4ee5faccbc",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A mathematical model incorporating transcriptional read-through successfully predicts phenotypes for 20 out of 26 network pairs showing consistent orientation-independent phenotypes, while a null model without read-through fails to predict observed differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36 and C37 are supported by the modeling results shown in Figure 1\u2014figure supplements 1-2. The model incorporating transcriptional read-through agrees with experimental data for 20/26 networks (77%), demonstrating that this mechanism can quantitatively account for most observed phenotypic variation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "7808224b-cb9f-4a9a-83b2-1fa3bfdcce08",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Local genetic context effects, specifically transcriptional read-through, occur at native chromosomal locations. When lacI is inserted at different chromosomal loci after terminators of varying strength, Plac activity varies in an IPTG concentration-dependent manner, with statistical significance at five IPTG concentrations tested. PCR detection of read-through transcripts confirms the mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 and C59 are supported by experimental data from chromosomally integrated lacI at three different loci (Figure 6). ANOVA analysis shows significant effects of genomic localization (Figure 6\u2014figure supplement 1), RT-qPCR confirms transcript level differences (Figure 6C), and PCR detects read-through transcripts (Figure 6D), demonstrating that context effects occur genome-wide.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "9ee077f1-20e1-467a-af03-27f721a0c3bf",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Not all phenotypes can be explained by transcriptional read-through alone. Eight network pairs showed orientation-dependent phenotypes, with plasmid backbone elements (kanR, repA) and potentially supercoiling effects contributing to phenotypic variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 and C74 acknowledge limitations of the transcriptional read-through model. The observation that 8/37 networks show orientation-dependent effects (Figure 1\u2014figure supplement 3A) and that Ptet repression varies with plasmid orientation (Figure 1\u2014figure supplement 4B) indicates additional mechanisms contribute to phenotypic variation, demonstrating appropriate scientific caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "c28c3f68-55f6-4b8c-a08d-c7d999bbe677",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The relative order of individual TUs plays an important role in shaping GRN phenotypes, and changes in local genetic context can alter regulatory connections between regulons without requiring complex regulatory elements or changes in promoter sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C56, C58, C77, and C78 represent the primary conceptual conclusions of the study. These are well-supported by the comprehensive experimental evidence showing that TU order alone determines phenotype (Figures 1-6), and that transcriptional read-through provides a simple mechanism for creating regulatory connections without evolving new transcription factor binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "234a3454-dae7-4daf-acf0-547c54612922",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The synthetic GRN system consists of three well-characterized repressors (LacI, TetR, lambda CI) with defined network topology, where each TU is separated by the strong T1 terminator, the output (yfp) is chromosomally located at a transcriptionally insulated site, and repressors are tagged with ssrA degradation tags.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23, C83, and C88 describe the experimental system design. These are straightforward descriptions of the constructed system with appropriate citations for established components (T1 terminator, ssrA tag, promoter variants), and the system design is clearly illustrated in Figure 1A-B.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "cde65c04-be25-407e-9882-232f74e28944",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In four out of six strains with different TU orders (LCT, LTC, TCL, TLC), IPTG induction shifted yfp expression to the OFF state, and these population-level findings were confirmed at the single-cell level by flow cytometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C28 are supported by experimental data in Figure 2A showing both population-level fluorescence measurements and flow cytometry histograms. This provides evidence for the robustness of the phenotypic observations across different measurement scales.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "3b6c472c-8199-42ac-9939-63e46c947351",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Of 48 possible TU permutations, 37 were successfully cloned, with 11 failing despite multiple attempts. Eight failed in both orientations, and cloning difficulties were greater for networks where TUs were not oriented in one direction, possibly due to highly homologous sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 describe experimental challenges and outcomes. The quantitative summary of cloning success (37/48) and the categorization of network pairs by phenotype consistency (Figure 1\u2014figure supplements 2-3) are clearly documented, providing transparency about experimental limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background and motivation: Gene expression is influenced by multiple mechanisms, predicting GRN phenotypes remains challenging, and while local genetic context is known to affect expression, GRN phenotypes are often assumed to depend solely on network topology and promoter sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C6-C16 establish the scientific context and motivation for the study. These are appropriately supported by citations to relevant literature and represent accurate characterizations of the field's current understanding and challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "f7dccb6a-da02-436b-bfc1-7e29745d0180",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Local genetic context can change through genomic rearrangements (deletions, duplications, insertions, inversions, translocations) mediated by mobile genetic elements, occurring at rates (10\u207b\u00b3 to 10\u207b\u2078 per cell per generation) typically orders of magnitude higher than point mutations. Such rearrangements have been found to significantly change expression patterns in multiple bacterial species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are well-supported by citations to relevant literature documenting genomic rearrangement rates and their effects on gene expression. These claims appropriately contextualize the experimental findings within broader evolutionary and genomic perspectives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "b0ab5df2-c7d2-4507-a8cb-f5bd57360a4e",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Transcriptional read-through is widespread, can be condition-dependent, and terminators vary widely in efficiency. Changes in terminator strength can occur through single point mutations. Despite using a strong terminator (T1) designed to prevent read-through, the synthetic GRN accessed multiple phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C71 are supported by citations to relevant literature and by the experimental observation (C70) that even with the strong T1 terminator, phenotypic variation was observed. This appropriately contextualizes the findings and acknowledges both the prevalence and functional significance of transcriptional read-through.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "f1fe433e-1e59-4a85-a870-73126cbe9b04",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Most studies on chromosomal position effects explicitly avoid transcriptional read-through by using strong terminators, but given that endogenous terminators vary widely in efficiency, transcriptional read-through from neighboring genes is an inherent component of chromosomal position effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72 and C73 are supported by citations documenting how position effect studies typically use strong terminators, and the argument that read-through is an inherent component of position effects logically follows from the experimental findings and knowledge about terminator efficiency variation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "bfd849bb-f2ec-446e-932a-6aed2bd6a9cb",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Transcriptional read-through is rarely included in GRN modeling, but its effect can be readily added to any modeling framework, as demonstrated by the mathematical model developed in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C76 are supported by the successful development and application of a mathematical model incorporating transcriptional read-through (Figure 1\u2014figure supplement 1). The model's ability to predict 20/26 network phenotypes demonstrates the feasibility of incorporating this mechanism into modeling frameworks.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    },
+    {
+      "id": "5f1d46bf-27ef-426b-ae6e-38c5245bfcb4",
+      "content_id": "d69faff1-310f-4bd8-aa84-25a38d4b53c3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Transcriptional read-through may be one mechanism shaping bacterial genome evolution by enabling diverse expression profiles through TU shuffling. Physical proximity alone can increase co-expression without requiring changes in promoter sequences or transcription factor specificity, with implications for operon evolution and comparative genomics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C82 represent speculative extensions of the experimental findings to evolutionary implications. While the experimental data support the mechanism of transcriptional read-through, the evolutionary significance and role in operon evolution remain hypothetical. Claim C81 provides some support through citations, but direct experimental evidence for these evolutionary implications is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:56.910164Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9faf61e2-8d21-4588-8707-52564fc65240",
+      "result_id": "a0f2c5f1-9f21-4d19-b653-73c402e178e6"
+    },
+    {
+      "claim_id": "14618120-f633-4aac-aad5-d15a0ebc0189",
+      "result_id": "a0f2c5f1-9f21-4d19-b653-73c402e178e6"
+    },
+    {
+      "claim_id": "29d18e64-f0bb-4799-a5d6-3aacdf290a1e",
+      "result_id": "a0f2c5f1-9f21-4d19-b653-73c402e178e6"
+    },
+    {
+      "claim_id": "9a448218-671b-4fce-a9de-0b916c9a614d",
+      "result_id": "a0f2c5f1-9f21-4d19-b653-73c402e178e6"
+    },
+    {
+      "claim_id": "f75fa318-503b-4051-bd96-3f8c8c24e99e",
+      "result_id": "a0f2c5f1-9f21-4d19-b653-73c402e178e6"
+    },
+    {
+      "claim_id": "f2ac216e-5da4-4b96-b44c-0e4e9f384c37",
+      "result_id": "a0f2c5f1-9f21-4d19-b653-73c402e178e6"
+    },
+    {
+      "claim_id": "dbc66729-1415-4a5e-9a97-97910ab1e9bc",
+      "result_id": "eb0c04f2-6dab-4113-9055-291f78bfd380"
+    },
+    {
+      "claim_id": "4e55799c-afe1-439d-80ae-bced6f62f98b",
+      "result_id": "eb0c04f2-6dab-4113-9055-291f78bfd380"
+    },
+    {
+      "claim_id": "12d35ca7-a5c2-47d7-8fc1-84e6e1e12130",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "c078187e-8c24-4bb3-a64f-dde619e7da83",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "777eb880-665d-4997-99fb-b60a28a6cf02",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "15092b65-071c-4f79-ba34-0bf55a1e246d",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "a9046830-dbcb-410d-a3ca-d5ca280047c8",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "386e0fc7-efe4-4a82-bb0c-a3db0f7ee125",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "8d891644-4c74-4d53-a570-d42fbb4de821",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "93d59c65-05b7-4323-9fe3-4aa886c503d4",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "562ab5f0-f3e0-48cf-bb13-e72498e846b8",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "ccb4bbbc-0058-4bb0-a6b6-119396d16abc",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "b0097c72-3d83-46f4-aab1-c6988846d8aa",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "8ac2ef2c-042d-4ed4-9bc0-d998d223d90d",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "666532bb-0144-4802-92ad-c07b92f11be1",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "8b6509be-3b71-4d9d-bd29-008a39893e30",
+      "result_id": "a9924bd2-8d6b-4a32-91e0-e80b21160c0f"
+    },
+    {
+      "claim_id": "363fb694-17a3-46f2-aac4-9d5a5da08f42",
+      "result_id": "72ad8d6f-0ab4-40a3-bece-4a4ee5faccbc"
+    },
+    {
+      "claim_id": "343478be-caf2-40f6-8a98-3d3976ce664d",
+      "result_id": "72ad8d6f-0ab4-40a3-bece-4a4ee5faccbc"
+    },
+    {
+      "claim_id": "c8bd270b-847e-4ace-9118-cca08c447c7c",
+      "result_id": "7808224b-cb9f-4a9a-83b2-1fa3bfdcce08"
+    },
+    {
+      "claim_id": "4bd82fea-d42e-4baf-b716-73b12bbf27ac",
+      "result_id": "7808224b-cb9f-4a9a-83b2-1fa3bfdcce08"
+    },
+    {
+      "claim_id": "615bcebd-9679-4ad0-ae69-c612bd13c9ab",
+      "result_id": "7808224b-cb9f-4a9a-83b2-1fa3bfdcce08"
+    },
+    {
+      "claim_id": "54c7c2e2-ed6a-4ca3-91df-46defe6db583",
+      "result_id": "7808224b-cb9f-4a9a-83b2-1fa3bfdcce08"
+    },
+    {
+      "claim_id": "ed27ff55-7df3-4249-8f2b-d8d21a57272c",
+      "result_id": "7808224b-cb9f-4a9a-83b2-1fa3bfdcce08"
+    },
+    {
+      "claim_id": "988f52b0-c05b-4453-bf0d-432bdb913a08",
+      "result_id": "9ee077f1-20e1-467a-af03-27f721a0c3bf"
+    },
+    {
+      "claim_id": "a5f71283-8459-4a03-820f-2079529960cb",
+      "result_id": "9ee077f1-20e1-467a-af03-27f721a0c3bf"
+    },
+    {
+      "claim_id": "6cb45257-9301-47ba-8455-ab5d4b3cc682",
+      "result_id": "9ee077f1-20e1-467a-af03-27f721a0c3bf"
+    },
+    {
+      "claim_id": "89fc2194-d191-4bbb-b673-8e67ba36aebd",
+      "result_id": "9ee077f1-20e1-467a-af03-27f721a0c3bf"
+    },
+    {
+      "claim_id": "1bfa8f3a-321a-4670-9932-4880e98fc0d7",
+      "result_id": "9ee077f1-20e1-467a-af03-27f721a0c3bf"
+    },
+    {
+      "claim_id": "95d9793c-0b92-44b7-a5d9-7b8d7dfb4938",
+      "result_id": "9ee077f1-20e1-467a-af03-27f721a0c3bf"
+    },
+    {
+      "claim_id": "39d4056d-fe3f-4a38-8a48-2cfe6302578e",
+      "result_id": "c28c3f68-55f6-4b8c-a08d-c7d999bbe677"
+    },
+    {
+      "claim_id": "3901df69-a4fd-471e-b376-bc7325712ea0",
+      "result_id": "c28c3f68-55f6-4b8c-a08d-c7d999bbe677"
+    },
+    {
+      "claim_id": "7de05f95-7348-416f-803c-bbb092c1cf76",
+      "result_id": "c28c3f68-55f6-4b8c-a08d-c7d999bbe677"
+    },
+    {
+      "claim_id": "5c90fe21-c01d-4c52-8040-a100b7dc775c",
+      "result_id": "c28c3f68-55f6-4b8c-a08d-c7d999bbe677"
+    },
+    {
+      "claim_id": "ed3e58dd-74bd-418d-8581-6de5033748c3",
+      "result_id": "c28c3f68-55f6-4b8c-a08d-c7d999bbe677"
+    },
+    {
+      "claim_id": "b277775a-0c65-427b-9b56-cb64943d1339",
+      "result_id": "234a3454-dae7-4daf-acf0-547c54612922"
+    },
+    {
+      "claim_id": "4ed90f33-08d0-446f-858c-555398fb2e37",
+      "result_id": "234a3454-dae7-4daf-acf0-547c54612922"
+    },
+    {
+      "claim_id": "96ef64b6-5a8d-4e60-8cfe-b24afd2ecef3",
+      "result_id": "234a3454-dae7-4daf-acf0-547c54612922"
+    },
+    {
+      "claim_id": "59d9d6b5-0a24-4808-8069-ebbc2f3c999a",
+      "result_id": "234a3454-dae7-4daf-acf0-547c54612922"
+    },
+    {
+      "claim_id": "68856d95-70ff-4a57-8f49-b63ecffb0a9e",
+      "result_id": "234a3454-dae7-4daf-acf0-547c54612922"
+    },
+    {
+      "claim_id": "6ea9e39d-00d8-4fa2-b1eb-0a447f6e1154",
+      "result_id": "234a3454-dae7-4daf-acf0-547c54612922"
+    },
+    {
+      "claim_id": "2b5bd1e7-a09f-41f2-94df-6618f2d8fa29",
+      "result_id": "234a3454-dae7-4daf-acf0-547c54612922"
+    },
+    {
+      "claim_id": "12d517b8-2815-440b-adf5-5c045bf84e12",
+      "result_id": "234a3454-dae7-4daf-acf0-547c54612922"
+    },
+    {
+      "claim_id": "ec9bd1ca-9581-4a11-a6d2-453e0599dd80",
+      "result_id": "234a3454-dae7-4daf-acf0-547c54612922"
+    },
+    {
+      "claim_id": "209bdbab-aea7-4f6d-b77c-fb11fb89c076",
+      "result_id": "cde65c04-be25-407e-9882-232f74e28944"
+    },
+    {
+      "claim_id": "eb204e4c-f5ef-41f4-98c8-e8869a5bbca5",
+      "result_id": "cde65c04-be25-407e-9882-232f74e28944"
+    },
+    {
+      "claim_id": "221de1c5-cfe8-4abd-82b7-bf77b10da9d3",
+      "result_id": "3b6c472c-8199-42ac-9939-63e46c947351"
+    },
+    {
+      "claim_id": "68344ea9-e576-40ad-b35f-f12c14f5090a",
+      "result_id": "3b6c472c-8199-42ac-9939-63e46c947351"
+    },
+    {
+      "claim_id": "236071bc-e5cf-4267-a112-36462185ed63",
+      "result_id": "3b6c472c-8199-42ac-9939-63e46c947351"
+    },
+    {
+      "claim_id": "1e1ece94-fd1e-4d98-81f1-d4a60ddba3d5",
+      "result_id": "3b6c472c-8199-42ac-9939-63e46c947351"
+    },
+    {
+      "claim_id": "5e1cdca6-22fa-493a-acd2-0d6ae6149798",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "8c52f99c-2154-4b99-b919-bfff107041b7",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "2b9ac1bf-0bd2-4045-9f02-bfc747256da7",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "7aa537f5-07e6-4e44-b15a-f8f3c6c28871",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "a7c32c03-1306-49a2-8d68-28f5e6c3ff83",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "cf90e2ce-c2ec-4461-bf99-d859bfae9566",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "e10feb4e-c223-40fb-b919-699e15e225d6",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "a3489618-5091-41e7-a944-8ee84ac854a6",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "c49bc317-0bf4-4770-8173-8e4096373a64",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "2c31466c-95f1-4dec-8fe1-4bb3ed5852d5",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "d012a694-c5cb-4135-b6cd-27a1da384f85",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "a4cfa285-6535-41cc-9de9-f13e3c4a47c5",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "2331ee6f-17f3-434d-af4e-9323a642c8df",
+      "result_id": "e1bcbd0d-cd32-48af-b073-2067a3d14cff"
+    },
+    {
+      "claim_id": "0da54a13-4ba9-4a08-89eb-a2672d225e1f",
+      "result_id": "f7dccb6a-da02-436b-bfc1-7e29745d0180"
+    },
+    {
+      "claim_id": "dd70f6ff-b295-43af-851c-a8add987c9c0",
+      "result_id": "f7dccb6a-da02-436b-bfc1-7e29745d0180"
+    },
+    {
+      "claim_id": "8b4d5f54-0de4-4172-b81f-e27c09f4c81d",
+      "result_id": "f7dccb6a-da02-436b-bfc1-7e29745d0180"
+    },
+    {
+      "claim_id": "9d9cfad5-bdcb-4423-8cce-c698795ffa60",
+      "result_id": "f7dccb6a-da02-436b-bfc1-7e29745d0180"
+    },
+    {
+      "claim_id": "dd2c156d-0fae-4bfd-95d6-82c30495a3b3",
+      "result_id": "f7dccb6a-da02-436b-bfc1-7e29745d0180"
+    },
+    {
+      "claim_id": "4b2e88c4-c531-4ff7-a3b6-8745e8eacc99",
+      "result_id": "b0ab5df2-c7d2-4507-a8cb-f5bd57360a4e"
+    },
+    {
+      "claim_id": "e49ef91d-4d40-46fd-bfd3-66803ee2da60",
+      "result_id": "b0ab5df2-c7d2-4507-a8cb-f5bd57360a4e"
+    },
+    {
+      "claim_id": "f71eec1c-252e-4657-8c6c-79ec5d10005f",
+      "result_id": "b0ab5df2-c7d2-4507-a8cb-f5bd57360a4e"
+    },
+    {
+      "claim_id": "869af885-97af-4448-956a-42a686b21694",
+      "result_id": "b0ab5df2-c7d2-4507-a8cb-f5bd57360a4e"
+    },
+    {
+      "claim_id": "b948c826-250e-4037-842f-dac7f97008ef",
+      "result_id": "b0ab5df2-c7d2-4507-a8cb-f5bd57360a4e"
+    },
+    {
+      "claim_id": "ca33cb10-602a-4e62-bb4f-776cfaf66334",
+      "result_id": "b0ab5df2-c7d2-4507-a8cb-f5bd57360a4e"
+    },
+    {
+      "claim_id": "a5cea5f5-be0b-4df6-8a1d-0a743f205281",
+      "result_id": "b0ab5df2-c7d2-4507-a8cb-f5bd57360a4e"
+    },
+    {
+      "claim_id": "ea3dc474-408e-4545-919a-47bd95b01419",
+      "result_id": "f1fe433e-1e59-4a85-a870-73126cbe9b04"
+    },
+    {
+      "claim_id": "c83ab331-f130-4ee1-9359-e29b2fae1154",
+      "result_id": "f1fe433e-1e59-4a85-a870-73126cbe9b04"
+    },
+    {
+      "claim_id": "9e432d07-1b8a-48ce-8dc4-e5973a973027",
+      "result_id": "bfd849bb-f2ec-446e-932a-6aed2bd6a9cb"
+    },
+    {
+      "claim_id": "df282bae-388e-4868-a49f-1eb09ffb2f82",
+      "result_id": "bfd849bb-f2ec-446e-932a-6aed2bd6a9cb"
+    },
+    {
+      "claim_id": "c7c6887c-293e-46f2-95ce-75ad4a05767d",
+      "result_id": "5f1d46bf-27ef-426b-ae6e-38c5245bfcb4"
+    },
+    {
+      "claim_id": "c933ee2f-1cbe-4a8e-af74-6ebe95cc9303",
+      "result_id": "5f1d46bf-27ef-426b-ae6e-38c5245bfcb4"
+    },
+    {
+      "claim_id": "cc34295d-4b23-43b3-99e6-2e927378dac9",
+      "result_id": "5f1d46bf-27ef-426b-ae6e-38c5245bfcb4"
+    },
+    {
+      "claim_id": "8047f806-b277-49ee-ba4f-a850ca8a7416",
+      "result_id": "5f1d46bf-27ef-426b-ae6e-38c5245bfcb4"
+    }
+  ],
+  "comparisons": []
+}

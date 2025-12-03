@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C94",
+      "C97"
+    ],
+    "result": "The MOM task successfully evokes vigilance decrements with increasing miss rates and slower reaction times over time in the Monitoring condition compared to the Active condition, validating it as an effective tool for studying vigilance in situations resembling modern monitoring environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 provide converging behavioral evidence showing differential performance patterns between Active and Monitoring conditions over time, with statistical support (BF >3). The task design (C39-C40) allows separation of vigilance-specific effects from general time-on-task effects. The validation is well-supported by the data patterns shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C64"
+    ],
+    "result": "Direction of approach information can be successfully decoded from MEG signals and shows a strong main effect of attention but no sustained effects of target frequency or time on task, indicating vigilance conditions had little impact on this less task-relevant information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 provide consistent evidence from Bayesian ANOVA analyses showing strong attention effects (BF >3) but no sustained effects of target frequency or time on task (BF <1/3 for null). The pattern is coherent and well-supported by Figure 3A data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C65",
+      "C66"
+    ],
+    "result": "Distance to object information shows a strong main effect of attention at all distances, no main effect of time on task, but a specific interaction between target frequency and time on task at one 80ms time-window (distance 13), where coding declined in late Monitoring blocks but improved in late Active blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C54-C58 provide statistical evidence for the interaction (BF = 6.7 at distance 13), the authors themselves note this is only moderate evidence at a single time-window and caution against overinterpretation (C56). The effect is subtle and requires replication. The claim of a 'neural correlate for behavioral vigilance decrements' (C66) is speculative given the limited evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Neural decoding results replicate after standard eye-artifact removal, and while eye movements differ systematically between attention conditions, the main vigilance decrement effects in decoding are not primarily driven by eye movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide convergent evidence: replication after artifact removal (C59), systematic eye movement differences only for attention conditions (C60-C61), and absence of eye movement differences for the critical vigilance decrement effects (C63). However, the authors acknowledge that artifact removal is imperfect and residual effects cannot be fully ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Informational connectivity between peri-occipital and peri-frontal areas shows strong evidence for higher connectivity in Attended versus Unattended conditions (BF = 6.5e3), but no effect of target frequency and insufficient evidence for time on task effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 provide clear statistical evidence from Bayesian ANOVA showing strong attention effects on connectivity. The finding is consistent with previous research (C73) and well-supported by Figure 4B data. The lack of target frequency and time on task effects is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C96"
+    ],
+    "result": "Informational connectivity shows moderate evidence for no difference between correct and miss trials (BF = 0.11), contrasting with previous findings using univariate connectivity measures in auditory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 provide clear statistical evidence (BF = 0.11) for no connectivity differences on error trials. The contrast with previous work (C75) is appropriately noted. However, the authors acknowledge this may reflect properties of the informational connectivity measure (C104-C105) rather than absence of any connectivity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "On miss trials, distance to object information (task-relevant) is significantly reduced compared to correct trials (BF >3 across all distances), while direction of approach information (less task-relevant) shows noisier but not noticeably attenuated representation. Individual trial analysis shows only a minority (<24%) of miss trials are as informative as the least informative correct trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 provide converging evidence from multiple analyses: group-level decoding differences (C78-C79), individual trial distributions (C80-C82), and quantification of overlap (C83). The differential effects on task-relevant versus less-relevant information (C100-C101) are well-documented in Figure 5. The statistical support is strong (BF >3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "False alarm trials show similar patterns to miss trials with noisy direction of approach information and at-chance distance to object information, suggesting both error types may be caused by impaired information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 note similarity between false alarm and miss trial patterns, but the interpretation is explicitly speculative (C86: 'may suggest'). The analysis collapsed across three types of false alarms (C87), which may obscure important differences. More detailed analysis would be needed to support the claim of a common mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "A novel error prediction method using accumulated classifier accuracies can predict behavioral outcomes (correct vs. miss) with 59% accuracy as early as 80ms after stimulus onset (1160ms before response), increasing to 65.4% as the dot approaches the center. The method generalizes across participants using a threshold of ~0.4 SD below validation accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide detailed evidence for the prediction method with strong statistical support (BF >10). The method shows above-chance prediction early (C90: 59% vs. 50% chance) and improves over time (C91). Cross-participant generalization (C92) is demonstrated. The prediction accuracy (C116: 65%) is comparable to previous studies (C115). The evidence is well-documented in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C98"
+    ],
+    "result": "Neural coding is stronger for attended compared to distractor information, extending previous findings to moving displays where participants monitor multiple objects simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C98 summarize the attention effects on neural coding, which are well-supported by the detailed evidence in earlier claims (C49-C50, C54). The extension to moving displays (C98) is appropriately contextualized with citations to previous work. This is a clear replication and extension of established findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The informational connectivity method follows recent shifts from univariate to multivariate analyses, measuring similarity in information coding between brain areas across conditions, which is less affected by absolute activity values and can detect connectivity missed by univariate methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 provide appropriate methodological context with citations to recent literature. The advantages of multivariate over univariate connectivity (C108, C110) are supported by cited work. This represents a methodological contribution that is well-grounded in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The error prediction method only uses correct trials for training, making it plausible for real-world situations and allowing direct testing of whether neural representations of correct trials contain information less observable in miss trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 describe methodological advantages that are logically sound and supported by the implementation. The real-world applicability argument (C111) is reasonable given typical trial distributions. This represents a valid methodological innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The relative stability of direction of approach representations might reflect large visual differences between stimuli, while differences in distance coding might reflect task relevance and/or reliance on subtle visual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103 are explicitly speculative explanations (using 'might reflect') for observed patterns. While plausible, these interpretations are not directly tested and represent post-hoc reasoning. Additional experiments would be needed to distinguish between the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The study tested 21 right-handed participants with MEG recording at 1000 Hz, using a task with specific timing parameters (dots moving for ~1226ms to deflection, ~410ms to collision), with 1920 total trials across 30 blocks (15 Active with 50% targets, 15 Monitoring with 6.2% targets).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C137 provide detailed methodological information about participants, apparatus, and task parameters. These are straightforward descriptive claims about the experimental design that are internally consistent and appropriately detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The decoding analysis used 10-fold cross-validation with LDA classifiers, decoding direction every 5ms and distance in 15 equally-spaced 80ms windows. Trials were allocated to folds without splitting constituent samples to avoid autocorrelation effects, and distance decoding concatenated left/right approaches to isolate distance information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C151 describe the decoding methodology in detail. The procedures to avoid confounds (C138-C139 for eye artifacts, C148-C149 for autocorrelation, C147 for direction effects) are appropriate. The cross-validation approach (C140) is standard. The methodology is sound and well-described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The informational connectivity analysis correlates RDMs between peri-occipital and peri-frontal areas using Spearman's rank correlation, reflecting similarity of distance encoding patterns across conditions. Trial numbers were equalized by subsampling to avoid bias in correct vs. miss comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C160 describe the connectivity analysis methodology. The approach is clearly explained with appropriate considerations (C153-C156) and proper controls for bias (C159-C160). The methodology is sound and appropriately implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The error prediction method uses a three-step procedure: training 105 classifiers on 80% of correct trials, determining a threshold using validation trials (10% of correct trials), and testing on the remaining correct trials and miss trials using accumulated classifier accuracies. The optimal threshold was 0.4 (\u00b10.07) SD below validation accuracy, determined using leave-one-participant-out cross-validation to avoid circularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C174 provide detailed description of the prediction methodology. The three-step procedure is clearly explained (C161-C166), the accumulation procedure is justified (C169-C173), and circularity is avoided through proper cross-validation (C168). The methodology is rigorous and well-designed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Bayesian analyses used Jeffrey-Zellner-Siow priors from the Cauchy distribution, with standard interpretation thresholds (BF >10 or <1/10 for strong evidence, >3 or <1/3 for moderate evidence). The priors are data-driven and invariant to linear transformations, reducing bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C179 describe the statistical approach with appropriate citations to standards (C175-C176) and prior specifications (C178-C179). The use of Bayesian methods with standard interpretation criteria is appropriate and well-justified.",
+    "result_type": "MINOR"
+  }
+]

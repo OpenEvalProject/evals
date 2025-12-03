@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Optogenetic stimulation of the pontine nuclei (PN) during a cued reaching task impaired reaching performance by degrading precision, accuracy, duration, and success rate, but typically did not block movement initiation. Specific effects included overreaching (15/45 sessions), increased lift-to-grab duration (27/45 sessions), reduced movement initiation probability (5/45 sessions), reduced success rate (14/45 sessions), and increased endpoint dispersion (17/45 sessions), with at least one effect observed in 32/45 sessions from 14/15 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C79-C88 provide converging behavioral evidence from multiple sessions and mice showing that PN stimulation impairs reaching kinematics without typically blocking movement initiation. The quantitative data across sessions (e.g., 15/45, 27/45, etc.) and statistical corrections (Benjamini-Hochberg, q<0.05) support the conclusion that PN perturbation degrades movement quality rather than preventing movement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Deep cerebellar nuclei (DCN) neural activity during reaching was largely preserved during PN stimulation, with most neurons (131/139) showing positive correlations (median 0.62) between control and laser trials. While subtle modulations occurred, the overall pattern of movement-related activity remained intact, suggesting that PN stimulation did not severely disrupt DCN activity patterns during reaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C89-C99 demonstrate through correlation analyses and firing rate comparisons that DCN activity patterns during movement were preserved despite PN stimulation. The high median correlation (0.62) and the fact that 131/139 neurons showed positive correlations provide strong quantitative support. The claim is further supported by statistical tests (permutation tests, q<0.05) and visualization of neural activity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Motor cortical activity during reaching was largely preserved during PN stimulation, with most neurons (965/1012) showing positive correlations (median 0.67) between control and laser trials. Cortical activity was modulated by PN stimulation, particularly in PN-tagged neurons, with effects correlated with laser-only responses immediately before movement onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C100-C108 provide strong evidence through correlation analyses showing that motor cortical activity patterns were preserved during PN stimulation. The high median correlation (0.67) and the large proportion of neurons with positive correlations (965/1012) support this conclusion. Statistical validation (permutation tests, q<0.05) and the observation that PN-tagged neurons showed larger differences strengthen the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C138",
+      "C139"
+    ],
+    "result": "Neural decoding analysis revealed that differences in hand velocity between control and PN stimulation conditions predicted from neural activity (both cortical and DCN) were correlated with observed velocity differences. Decoded velocity differences qualitatively matched observed differences, with positive correlations across sessions for cortical decoders in all directions and for DCN decoders in the lateral direction. This demonstrates that PN perturbation altered dimensions of cortical and DCN activity related to arm kinematics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C122-C130, C138-C139 provide strong evidence through decoding analyses that neural activity changes predict behavioral changes. The qualitative matching of decoded and observed velocity differences, positive correlations across sessions, and the fact that a balanced decoder yielded similar performance on both trial types (C128) support the conclusion. The R\u00b2 values (0.55 for cortex, 0.54 for DCN) demonstrate good decoding performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C140",
+      "C155"
+    ],
+    "result": "The authors conclude that while the total output of motor cortex drives reaching movements, the cortico-cerebellar loop selectively contributes to small adjustments that fine-tune the movement, rather than driving the movement itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C140, and C155 represent the main interpretive conclusion of the study. This conclusion is well-supported by the converging evidence from behavioral experiments (PN stimulation impairs but doesn't block movement), neural recordings (activity patterns largely preserved), and decoding analyses (neural changes predict kinematic changes). The interpretation is consistent with prior literature and the experimental data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Recordings from 129 pontine nuclei (PN) neurons during reaching revealed that 30/129 neurons responded to optogenetic motor cortex stimulation within 20 ms. PN neurons exhibited diverse activity patterns during the task, with GLM analysis showing that cue-related weights were typically larger than reach-related weights (p=2.2e-9). No differences were found between cortex-tagged and untagged neurons in reach or cue weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 provide detailed characterization of PN neural activity during reaching. The data are supported by electrophysiological recordings, statistical analyses (GLM, signed-rank tests), and appropriate corrections for multiple comparisons. The latency analysis (C45) and the comparison between tagged and untagged neurons (C48-C49) strengthen the characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Among 80 PN neurons tested with 2s motor cortex stimulation, 26 maintained elevated firing rates while 12 showed sustained decreases. Some decreases were not preceded by transient excitation, suggesting feedforward inhibition rather than post-burst hyperpolarization, indicating that motor cortex may suppress PN neurons through polysynaptic inhibitory routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide evidence for diverse PN responses to cortical stimulation, including potential feedforward inhibition. The inference about feedforward inhibition (C54-C55) is reasonable given the observation that some decreases lack preceding excitation, though the mechanism remains speculative. The data are supported by experimental recordings and appropriate statistical tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "PN stimulation entrained multiunit activity in cerebellar cortex at 40 Hz. Recordings from 23 Purkinje cells showed diverse responses including tonic excitation and phasic inhibition. Most Purkinje cells (14/23) were rhythmically entrained to 40 Hz PN stimulation, though entrainment was relatively weak (mean resultant length 0.059).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 characterize Purkinje cell responses to PN stimulation. The data are supported by electrophysiological recordings, statistical tests (Rayleigh test, q<0.05), and quantitative measures of entrainment. The observation of weak entrainment is appropriately qualified and supported by the mean resultant length calculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Recordings from 139 DCN neurons during PN stimulation revealed diverse responses including sustained/transient excitation/inhibition and slow ramps. Most DCN neurons (92/139) were significantly entrained to 40 Hz PN stimulation, with much stronger entrainment than Purkinje cells (mean resultant lengths 0.224 vs 0.059, p=4.8e-6). The DCN population peak phase lagged Purkinje cells by 95\u00b0 (6.6 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 provide detailed characterization of DCN responses to PN stimulation. The data are well-supported by electrophysiological recordings, statistical tests (Rayleigh test, rank sum test), and quantitative measures of entrainment. The comparison with Purkinje cells and the phase lag analysis strengthen the characterization of signal propagation through the cerebellar circuit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PN stimulation evoked neural responses in 107/848 motor cortical neurons, mostly consisting of transient firing rate increases (94 neurons) with a few decreases (13 neurons). Motor cortical responses occurred later than cerebellar responses, with spike count changes detected in 5%, 25%, and 50% of modulated cortical cells within 21, 37, and 63 ms, compared to 10, 15, 19 ms for Purkinje cells and 13, 20, 25 ms for DCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 characterize motor cortical responses to PN stimulation and compare latencies across brain regions. The data are supported by electrophysiological recordings and latency analyses. The comparison of response latencies across regions provides evidence for the temporal sequence of signal propagation through the cortico-cerebellar loop.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Both PN-tagged and non-tagged motor cortical neurons exhibited lift-locked increases and decreases in firing rate, but firing rate increases were much more common among tagged neurons (chi-square test, p=1.26e-8). Among neurons with firing rate increases, PN-tagged neurons increased their activity earlier and had larger peaks than non-tagged neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 demonstrate differential responses between PN-tagged and non-tagged cortical neurons during reaching. The data are supported by electrophysiological recordings, statistical tests (chi-square test), and comparison with prior literature (Nashef et al., 2018). The findings suggest that the ponto-cerebellar pathway contributes to early responses in tagged cortical neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Canonical correlation analysis (CCA) between motor cortex and DCN during reaching found two pairs of canonical variates that were strongly correlated (0.58-0.88) and together accounted for 49-64% of variance in cortex and 51-70% in DCN. Between a quarter and a half of variance in each region was explained by the other region (25-50% DCN by cortex, 26-47% cortex by DCN). PN perturbation had a limited effect on this similarity, with only small differences between CCA using laser vs control trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 demonstrate strong correlations between cortical and DCN population activity during reaching using CCA. The analysis is appropriate for assessing population-level similarity, and the results are well-quantified. The finding that PN perturbation has limited effect on this similarity (C115-C116) is consistent with the preservation of activity patterns observed in individual neuron analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Cortical and DCN decoders showed comparable performance in decoding hand velocity (mean R\u00b2=0.55 and 0.54, respectively). In simultaneous recordings, adding DCN activity to the cortical decoder improved performance only marginally (R\u00b2=0.78 vs 0.77), suggesting that the two populations carry similar information about hand velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 demonstrate that cortical and DCN populations carry similar information about hand velocity through decoding analyses. The comparable decoder performance and minimal improvement from combining both regions support this conclusion. However, the interpretation (C121) should be qualified by the constraints of the single-target reaching task, as noted in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Optogenetic PN stimulation evoked sustained firing rate increases in Purkinje cells (likely driven by granule cells) and transient decreases (possibly reflecting feedforward inhibition from molecular layer interneurons). In DCN, some neurons showed complementary motifs of transient excitation and sustained inhibition (consistent with Purkinje cell inhibition), while others showed sustained increases (possibly reflecting PN collateral excitation). The strong DCN entrainment suggests the corticonuclear projection may amplify periodic inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 characterize signal transformation through the cerebellar circuit. The data are supported by electrophysiological recordings and entrainment analyses. The mechanistic interpretations (C141-C144) are reasonable inferences based on known circuit anatomy, though they remain speculative without direct circuit manipulation. The comparison to prior work (Person and Raman, 2012) in C145 strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Responses to PN stimulation were observed in fewer cortical than cerebellar neurons, suggesting the cerebello-cortical pathway attenuates PN signals. Cortical responses were more transient than DCN responses, suggesting temporal filtering of steady-state DCN firing rate changes. PN stimulation mainly produced increases in cortical firing rates, contrasting with diverse DCN responses. Overall, the cerebellum provides temporally filtered feedback to selectively modulate a subpopulation of cortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 characterize signal transformation properties of the cerebello-cortical pathway. The inferences are well-supported by comparisons of response properties across regions (number of responsive neurons, response dynamics, response diversity). The conclusion about temporal filtering and selective modulation (C149) is a reasonable synthesis of the observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The study demonstrates that perturbation of a single source of mossy fiber input (PN, which overlaps with sensory inputs) impairs reaching, going beyond previous studies of direct cerebellar manipulation. The PN receive extensive cortical input and project selectively to the cerebellum, providing an anatomical bottleneck that allows selective disruption of cortico-cerebellar communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 describe the experimental strategy and its advantages. The approach is well-justified by anatomical knowledge (C136) and represents a methodological advance over prior work (C135). The inference that perturbing PN selectively disrupts cortico-cerebellar communication (C137) is supported by the anatomical specificity of PN projections, though some caveats about non-cortical PN inputs should be noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The range of behavioral effects from PN stimulation resembles dysmetria in spinocerebellar ataxia patients. Prior studies in primates, cats, and mice have shown that cerebellar perturbations produce similar impairments in reaching, including increased variability, mistargeting, and altered velocity/endpoint metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154 place the current findings in the context of prior literature on cerebellar contributions to reaching. The comparisons to prior work are appropriate and well-cited. The consistency across species and perturbation methods strengthens the interpretation that the cortico-cerebellar loop is necessary for fine-tuning reaching kinematics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Both DCN and cortex receive inputs from multiple pathways that do not include PN. These other pathways, not directly influenced by PN perturbation, may override aberrant PN activity and entrain relatively normal activity in DCN and cortex. Potential inputs to DCN include sensory streams (external cuneate nucleus) and motor inputs (red nucleus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C158 propose a mechanism to explain why neural activity patterns were largely preserved despite PN perturbation. While the anatomical knowledge about alternative pathways is well-established (C156, C158), the speculation that these pathways override PN perturbation (C157) lacks direct experimental support. This remains a plausible hypothesis that would require additional experiments to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Motor cortex controls the arm through projections to diverse targets, and motor cortical output is necessary for driving the arm toward the target. Prior work has shown that stroke/disease affecting motor cortex causes arm weakness/paralysis in humans, experimental perturbations disrupt reaching in animals, and optogenetic silencing of motor cortex blocks reaching in mice. However, projection-specific manipulations are challenging due to technical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C8-C13 establish the background and motivation for the study. These claims are well-supported by citations to prior literature and represent established knowledge in the field. The technical challenges noted (C12-C13) appropriately motivate the experimental approach of targeting the PN as an anatomical bottleneck.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The manuscript provides extensive background on cortico-cerebellar anatomy and prior work on cerebellar contributions to reaching. This includes the anatomical organization of the cortico-ponto-cerebellar pathway, cerebellar circuitry, cerebellar projections, and prior studies showing cerebellar involvement in reaching and the effects of cerebellar perturbations on behavior and neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C42 establish the anatomical and functional background for the study. These claims are well-supported by citations to prior literature and represent established knowledge. The comprehensive background appropriately motivates the experimental questions and approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Prior work has shown that silencing motor cortex blocks reaching, but motor cortical output is routed to many targets. Individual pyramidal tract neurons frequently project to several targets, including both PN and spinal cord, making it challenging to disentangle the function of specific output channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 establish the rationale for the experimental approach. These claims are well-supported by citations to prior literature and represent established anatomical and functional knowledge. The challenge of disentangling projection-specific functions appropriately motivates the targeting of PN as an anatomical bottleneck.",
+    "result_type": "MINOR"
+  }
+]

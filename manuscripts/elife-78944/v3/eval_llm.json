@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "NET-seq was performed in 41 S. cerevisiae deletion strains lacking known elongation regulators, with all strains analyzed in at least biological duplicate. Replicates were highly correlated (R\u00b2\u22650.75) and performed independently by different researchers at different times in different strain isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C29-C31 establish the experimental design with appropriate replication and demonstrate reproducibility through high correlation values and independent execution. The R\u00b2\u22650.75 threshold for replicate correlation is reasonable for biological experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Loss of each transcription regulatory factor had unique impacts on gene expression, with over 90% of differentially transcribed genes identified in fewer than nine deletion strains and 41% differentially transcribed in only a single strain. Similarly, 90% of enriched GO pathways were identified in fewer than five deletion strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by quantitative differential expression and GO enrichment analyses shown in Figures 1B-D. The data demonstrate that each factor has largely distinct effects on transcription, though the statistical methods for differential expression (DESeq2) and GO enrichment are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Specific GO terms were enriched in deletion strains consistent with known factor functions, including 'DNA replication-independent chromatin organization' in hpc2\u0394, 'CAF-1 complex' in cac1/2/3\u0394, 'Cvt complex' in 17 strains, and 'membrane biogenesis' in 12 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 report specific GO enrichment results with statistical support (e.g., p-adjusted=0.021 for C37). These findings are consistent with known functions of the deleted factors and provide validation of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Antisense transcription varies highly across deletion strains, with wild-type levels near the middle of the dynamic range. Loss of 20 factors decreased antisense transcription while loss of 14 factors increased it, indicating that wild-type antisense transcription is balanced by opposing regulatory influences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C44, C112-C114 are supported by quantitative analysis shown in Figure 2C and related data. The finding that wild-type falls in the middle of the range across deletions supports the conclusion of balanced regulation, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Different deletion strains showed distinct spatial patterns of antisense transcription changes: dst1\u0394 increased antisense primarily at 3' ends, set2\u0394 increased it uniformly across genes, and eaf1\u0394 increased it within genes but not at 3' ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by heatmap analysis shown in Figures 2D-F. These spatial patterns suggest different mechanisms of antisense regulation by different factors, though the underlying mechanisms are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49"
+    ],
+    "result": "Antisense transcription in itself does not affect sense transcription at the same locus, as demonstrated by lack of correlation between antisense and sense transcriptional outputs across all strains (Pearson r values ranging from -0.22 to 0.36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-C49 are supported by correlation analysis shown in Figure 2\u2014figure supplement 1B-C. The weak correlations across multiple regulatory contexts argue against a general direct effect of antisense on sense transcription, though specific gene-level effects cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Different sets of factors regulate Pol II density peaks at key RNA processing sites (TSS, poly(A) sites, splice sites). Loss of Dst1 dramatically increased pausing at TSS in both sense and antisense directions, while different Ccr4-Not subunits had distinct effects on poly(A) site pausing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50-C55 are supported by metagene analysis shown in Figures 3A-D and supplements. The data demonstrate that different factors control pausing at different locations, though the molecular mechanisms are not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Loss of CAF-1 complex components (Cac1, Cac2, Cac3) led to pronounced Pol II peaks at splice sites and a modest but significant increase in splicing (p=0.02), suggesting CAF-1 links Pol II pausing with splicing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C58, C119-C121 are supported by pausing index and splicing analysis (Figures 3E-F, supplement 1E-F). However, the splicing increase is modest and the mechanistic connection (C121) is speculative. The p-value of 0.02 is marginally significant and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C116"
+    ],
+    "result": "Pausing indices vary independently across different gene regions (TSS, poly(A) sites, splice sites), with poor correlation between indices at different locations (R\u00b2\u22640.10), suggesting different mechanisms regulate Pol II pausing at different points during elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C116 are supported by correlation analysis shown in Figure 3\u2014figure supplement 2A. The lack of correlation between pausing at different sites argues for distinct regulatory mechanisms, though this is an inference from correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C117",
+      "C118"
+    ],
+    "result": "TSS pausing indices correlated strongly with antisense pausing indices across deletion strains (R\u00b2=0.56, p<0.001), with 9 of the top 10 TSS pausing strains also in the top 10 for antisense pausing. This suggests a checkpoint early in transcription in both sense and antisense directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C117-C118 are supported by correlation analysis shown in Figure 3J-M. The strong correlation and overlap in top strains support the conclusion of coordinated regulation, though the 'checkpoint' interpretation (C118) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Factors that modulate pausing at splice sites tended to affect both 5' and 3' sites overall (R\u00b2=0.87, p<0.001), but not at the same intron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by correlation analysis shown in Figure 3K. The high correlation for overall effects but lack of per-intron correlation suggests global rather than local regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Approximately one-third of initially called pause sites were reproducible between replicates (IDR\u22641%). In wild-type, pause sites occurred every 33 bp on average. Loss of Rsc30 increased pause site reads to 33% (vs 21% in wild-type), while loss of elongation factors like Spt4 and Dst1 decreased pause site density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C70-C73 are supported by pause site analysis shown in Figure 4 and supplements. The IDR approach is appropriate for identifying reproducible sites. The finding that elongation factors decrease pause site density is counterintuitive but may reflect detection of stereotypical vs. non-stereotypical pausing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Deletion strains showed distinct patterns of pause site usage. Related factors (Rad6, Ubp8, Paf1, Cdc73 involved in H2B ubiquitination; Isw1, Isw2, Chd1 chromatin remodelers) showed clustered pause sites, while other remodeler families (INO80, SWR1, SWI/SNF) showed distinct patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C77, C80-C83 are supported by clustering analysis shown in Figure 4D. The clustering of functionally related factors supports the biological relevance of the pause site patterns, with appropriate citations to prior work on factor functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Pause sites in wild-type were distributed evenly across gene bodies, but deletion strains showed altered distributions. DST1 deletion doubled 5' pause sites, rpb4\u0394 and ubp8\u0394 increased 3' pause sites, consistent with known roles of these factors in transcription elongation and termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 are supported by pause site location analysis shown in Figure 4E and related data. The findings are consistent with known factor functions (supported by citations C87, C89), though the mechanistic interpretations (C88) are somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Pol II pause sites are associated with specific DNA sequences and shapes. Real pause sites showed 3.4-fold enrichment at TAT trinucleotides and low helix twist values. Three significant motifs were identified in wild-type, with 13 of 26 motifs across strains matching known transcription factor binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C90-C96 are supported by sequence and motif analysis shown in Figure 5A-D. The enrichment of specific sequences and DNA shapes at pause sites is statistically significant, though the conclusion that pause sites are 'primarily determined' by DNA sequence (C4) may overstate the case given other contributing factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "A random forest classifier using 51 chromatin and DNA features achieved AUC=0.85 for classifying wild-type pause sites. DNA sequence and shape were the most important features, though 35 of 42 numeric features differed significantly between real and shuffled pause sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99, C101-C104 are supported by machine learning analysis shown in Figure 5E-F and supplements. The AUC of 0.85 indicates good but not perfect classification, supporting the conclusion that multiple features contribute to pause site determination. The methods are appropriate though parameter optimization details could be clearer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Random forest models achieved AUC\u22650.78 across all deletion strains. For some strains (cdc39\u0394, dst1\u0394, ubp8\u0394), chromatin modifications were more important than DNA sequence. Transfer learning showed variable performance (AUC 0.53-0.82), with dst1\u0394-trained models performing poorly on other strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 are supported by machine learning analysis shown in Figure 6. The transfer learning results appropriately demonstrate that pause site determinants vary across regulatory contexts. The poor performance of dst1\u0394 models is consistent with known downstream-shifted pause sites (C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C111"
+    ],
+    "result": "A diverse array of factors regulate transcription elongation by precisely balancing Pol II activity. For all transcriptional phenotypes analyzed, wild-type fell in the middle of the dynamic range across deletion strains, revealing intricate balance of transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7, C111 represent the main conclusions of the study, supported by the collective findings on differential expression, antisense transcription, pausing indices, and pause site patterns. The observation that wild-type consistently falls in the middle of the range is a key finding supporting the 'balance' model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The possibility of tight control of antisense transcription indicates that regulatory mechanisms can exist where antisense transcription impacts sense transcription, consistent with previously described mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is an inference that contradicts the finding in C6 that antisense does not generally affect sense transcription. While the claim is hedged ('can exist') and cites prior work, the current study does not demonstrate such mechanisms, making this conclusion uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The authors propose that the DNA template presents a varying energy landscape to elongating Pol II through sequence variation, and that nucleosome positions alter this landscape by modulating pausing energetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123 represent a proposed model based on the machine learning results. While the model is reasonable given the data showing importance of DNA sequence/shape and chromatin features, it remains speculative without direct experimental validation of the 'energy landscape' concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Based on E. coli RNA polymerase behavior, the authors infer that Pol II likely pauses ubiquitously across gene bodies in noncanonical ways that would not lead to detectable NET-seq signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by citations to E. coli studies and represent a reasonable inference. This interpretation helps explain why loss of elongation factors decreases stereotypical pause site density\u2014they may facilitate other aspects of elongation not captured by pause site detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Some transcription factor binding sites are enriched near pause sites, indicating a possible role for DNA binding proteins in Pol II pausing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by motif analysis showing that 13 of 26 identified motifs match known transcription factor binding sites (C95). However, the causal role of transcription factors in pausing remains to be demonstrated experimentally.",
+    "result_type": "MINOR"
+  }
+]

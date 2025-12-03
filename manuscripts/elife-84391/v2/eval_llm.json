@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Cas9 and gRNA can be enriched in exosomes by tethering Cas9 to CD63 via a streptavidin-biotin binding protein system, and both cargo molecules are sequestered within the exosome lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 demonstrate successful enrichment of Cas9 and gRNA in exosomes using the CD63-tethering strategy, with immunoblot (C1, C3) and qPCR data (C2, C4) showing ~15-fold enrichment. Protease and nuclease protection assays (C5) confirm luminal localization. The experimental design and controls are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C89"
+    ],
+    "result": "Exosome-mediated delivery of Cas9/gRNA is highly inefficient for functional gene editing, despite successful internalization of exosomes into recipient cells, likely due to inefficient fusion of exosomes with endosomal membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15 and C89 collectively demonstrate that while the reporter system works (C6: 100-fold increase with direct transfection), exosome delivery achieves only 50% increase (C7) versus 70-fold with plasmid (C8). Exosomes are internalized (C11) but fail to deliver functional Cas9 (C12). Transwell and conditioned medium experiments (C13-C14) support the fusion limitation hypothesis (C15). The conclusion is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C90",
+      "C91"
+    ],
+    "result": "Cell-cell contact enables highly efficient Cas9/gRNA transfer between co-cultured cells, with HEK293T-MDA-MB-231 pairs showing optimal transfer (~60-fold increase) that is independent of CD63-tethering and increases with time and donor:acceptor ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20, C90-C91 demonstrate efficient transfer with cell contact using the luciferase reporter system. The data show substantial transfer in most cell combinations except HEK293T-HEK293T (C16, C20), with HEK293T-MDA-MB-231 optimal (C17: ~60-fold). Time-course (C19) and dose-response (C20) data support the robustness of the finding. The lack of CD63-tethering requirement (C18) is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A split-GFP assay independently confirms intercellular cargo transfer occurs in ~6% of cells from HEK293T to MDA-MB-231 and ~0.5% in the reverse direction, with no transfer between HEK293T cells, and demonstrates that exosome-mediated transfer is ~300-fold less efficient than cell-cell contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 provide independent validation using split-GFP. Flow cytometry data (C22-C23) quantify bidirectional transfer with appropriate controls (C24). The comparison of exosome delivery (0.02%, C27) versus co-culture (6%, C22) provides strong quantitative evidence for inefficient exosome fusion (C28). The trifluorescence system elegantly distinguishes donor and acceptor cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C93"
+    ],
+    "result": "Cas9 transfer between cells is independent of clathrin-mediated and caveolin-mediated endocytosis, as demonstrated by pharmacological inhibition and genetic knockdown experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C93 show that endocytosis inhibitors (chlorpromazine, LY294002, wortmannin) and siRNA knockdowns of endocytic machinery (clathrin, AP-2, caveolin, flotillin 2) do not block Cas9 transfer while effectively blocking transferrin uptake. The controls demonstrating blocked endocytosis are critical and appropriately included. The conclusion that endocytosis is not required (C32) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C92"
+    ],
+    "result": "Cas9 transfer depends on F-actin and is modulated by actin regulatory proteins (Arp2/3 complex and formin), with latrunculin treatment and actin knockdown substantially blocking transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 and C92 demonstrate actin dependence using multiple approaches: latrunculin A/B treatment (C33), actin shRNA knockdown (C34-C35), and inhibition of actin regulators (C36-C37). The differential effects in donor versus acceptor cells (C35-C36) provide mechanistic insight. The data converge on actin-dependent tubular structures as the transfer mechanism (C38-C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C94"
+    ],
+    "result": "Live-cell imaging and correlative light-electron microscopy reveal that cargo transfer occurs through open-ended membrane tubular connections (2-4 \u03bcm diameter) between HEK293T and MDA-MB-231 cells, with 8 open-ended connections found in 120 tubule-cell contacts (~6.7%), matching the frequency of functional transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 and C94 provide compelling structural evidence for open-ended tubular connections using multiple imaging modalities. Live-cell imaging (C40-C42) shows dynamic tubule formation and cargo movement. CLEM (C45-C46) confirms membrane continuity and organelle presence at junctions. The quantitative correlation (C48-C49) between structural observations (~6.7% open-ended) and functional transfer (~6% by split-GFP) strongly supports the mechanism. The distinction from TNTs (C47) is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C95"
+    ],
+    "result": "HEK293T cells form close-ended tubular connections with each other that are structurally similar to connections with MDA-MB-231 cells but lack cytoplasmic continuity and do not support cargo transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C95 demonstrate that HEK293T-HEK293T pairs form tubules but lack functional transfer. Live-cell imaging (C51) and CLEM (C52) show close-ended connections without membrane fusion. The quantification (C53: 0/120 open-ended) contrasts sharply with HEK293T-MDA-MB-231 pairs (8/120). This negative control is critical for establishing cell-type specificity of the fusion mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Cargo transfer requires open-ended tubular connections formed by plasma membrane fusion, with the fusogen potentially contributed by either donor or acceptor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 synthesizes the structural and functional data to propose a fusion-dependent mechanism. This inference is well-supported by the correlation between open-ended connections and transfer (C48-C49) and the absence of both in HEK293T-HEK293T pairs (C50-C53). The claim appropriately acknowledges that the fusogen source is not yet determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Syncytins are endogenous retroviral envelope glycoproteins that function as fusogens in mammals, with syncytin-1 and syncytin-2 in humans, syncytin-A and -B in mice, and established receptors ASCT-2, MFSD2, and Ly6e.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 establish the background knowledge about syncytins through appropriate citations to primary literature. These are well-established facts in the field (Blaise et al., 2003; Mi et al., 2000; Dupressoir et al., 2005; Peng et al., 2007; Blond et al., 2000; Esnault et al., 2008; Bacquin et al., 2017; Bjerregaard et al., 2006). This provides essential context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Syncytin-1 and syncytin-2 are expressed in multiple cell lines tested, with syncytin-2 showing more apparent furin processing than syncytin-1, and MDA-MB-231 cells having lower syncytin-1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 characterize baseline syncytin expression using immunoblotting. The observation of differential processing (C62) is based on protein mobility patterns, which is a reasonable inference but could benefit from direct furin inhibition experiments. The lower syncytin-1 in MDA-MB-231 (C63) is clearly shown in the immunoblot data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C96"
+    ],
+    "result": "Syncytin-2 knockdown in MDA-MB-231 acceptor cells dramatically reduces Cas9 transfer, with syncytin-1 knockdown having a smaller effect, and mouse syncytin-A partially rescuing the knockdown phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C96 demonstrate syncytin requirement using CRISPRi knockdown. The differential effects of syncytin-1 versus syncytin-2 (C65) suggest syncytin-2 is more important in this system. The rescue by mouse syncytin-A (C66) provides strong evidence for functional conservation and specificity. The controls for dCas9 expression levels are appropriate (described in methods and Figure 7 supplement).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C97",
+      "C98"
+    ],
+    "result": "Full-length syncytin-A rescues Cas9 transfer in syncytin-depleted cells, while truncated versions fail to rescue and act as dominant negatives, demonstrating that intact syncytin structure is required for fusion activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C97-C98 use structure-function analysis to demonstrate domain requirements. The rescue by full-length but not truncated syncytin-A (C67, C97) supports functional specificity. The dominant-negative effect of truncations (C68) suggests they may interfere with endogenous syncytin function, providing additional mechanistic insight. The multiple truncations tested strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Syncytin depletion in HEK293T donor cells has a modest effect (~30% reduction) on Cas9 transfer, much smaller than the effect of syncytin-2 depletion in MDA-MB-231 acceptor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 demonstrate cell-type-specific syncytin requirements. The smaller effect in HEK293T donors (C69) versus MDA-MB-231 acceptors (C65) suggests the acceptor cell syncytin is more critical. This asymmetry is important for understanding the mechanism and is well-supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Ectopic expression of syncytin-A in HEK293T acceptor cells partially enables Cas9 transfer from HEK293T donors (4-fold increase), though less effectively than with MDA-MB-231 acceptors (30-fold), suggesting functional syncytin is limiting in HEK293T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 provide gain-of-function evidence that syncytin-A can partially rescue the HEK293T-HEK293T transfer defect. The modest effect (C72) compared to MDA-MB-231 acceptors suggests additional factors may be limiting in HEK293T cells. The inference that functional syncytin is limited in HEK293T (C73) is reasonable but could reflect other differences (receptor levels, trafficking, etc.).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Syncytin-2 knockdown in MDA-MB-231 cells prevents formation of open-ended tubular connections with HEK293T cells, with only 1 open-ended connection found in 120 contacts versus 8/120 in control cells, demonstrating that syncytin-2 is required for membrane fusion at tubule-cell junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 provide critical structural validation of the syncytin requirement. Live-cell imaging (C74) and CLEM (C75) show persistent close-ended connections with syncytin-2 knockdown. The quantification (C76: 1/120 vs 8/120 in controls) directly links syncytin-2 to membrane fusion. This is the strongest evidence that syncytin-2 mediates the fusion event required for cargo transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "GFP-tagged syncytins localize primarily to intracellular compartments with some surface expression, and cell surface biotinylation detects both precursor and furin-processed forms at the plasma membrane, though most syncytin remains in the secretory pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 characterize syncytin trafficking and localization. Immunofluorescence (C78, C81) shows reticular patterns and some surface localization. Biotinylation (C79) confirms surface exposure of processed forms. The interpretation that most protein is in the secretory pathway (C80, C83) is reasonable based on the predominance of full-length protein in total lysates versus processed forms at the surface. The localization to cell-cell junctions (C81) is particularly relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "MFSD2A (syncytin-2 receptor) knockdown reduces Cas9 transfer in both HEK293T donor cells (5-6 fold reduction) and MDA-MB-231 acceptor cells (3-4 fold reduction), indicating MFSD2A plays roles in both cell types and may mediate transfer among MDA-MB-231 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 demonstrate receptor requirement using siRNA knockdown. The effects in both donor and acceptor cells (C84-C85) suggest MFSD2A functions bidirectionally, consistent with its role as syncytin-2 receptor. The inference about MDA-MB-231 to MDA-MB-231 transfer (C87) is reasonable given the earlier observation of self-transfer (C26). However, the mechanism by which receptor knockdown in donor cells affects transfer could be better explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "MFSD2A localizes to the cell surface in both endogenous and GFP-tagged forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 demonstrates appropriate localization of the syncytin-2 receptor using immunofluorescence. This is important for establishing that MFSD2A is positioned to interact with syncytin-2 at sites of cell-cell contact. The data are straightforward and well-supported by the imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Syncytin serves as the fusogen responsible for formation of open-ended connections between cells that enable intercellular cargo transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 synthesizes the major findings into a mechanistic model. This conclusion is well-supported by converging evidence: syncytin-2 knockdown blocks both functional transfer (C64-C65) and open-ended connection formation (C74-C77), syncytin-A rescues transfer (C66-C67), and the receptor MFSD2A is required (C84-C87). The model integrates structural and functional data effectively.",
+    "result_type": "MAJOR"
+  }
+]

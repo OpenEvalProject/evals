@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "DWORF directly activates SERCA by increasing its maximal activity (Vmax) 1.7-fold without affecting calcium affinity (KCa), as measured in reconstituted membrane vesicles at a ~1-2 DWORF:SERCA molar ratio. This activation level is comparable to the small-molecule activator CDN1163.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 provide converging biochemical evidence from reconstituted membranes showing DWORF increases SERCA turnover rate across calcium concentrations (C24), increases Vmax 1.7-fold (C25) with specific numerical values, without affecting KCa (C27), comparable to CDN1163 (C26). The data in Figure 2 directly support these quantitative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "DWORF increases SERCA-dependent calcium reuptake in living cells, nearly doubling ER calcium uptake rate across physiological ER calcium loads, increasing maximum ER calcium load, and enhancing frequency and amplitude of spontaneous calcium waves. These effects are opposite to PLN inhibition and occur independently of PLN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 and C81-C85 provide comprehensive cellular evidence from the HEK293 cardiomimetic system. DWORF co-localizes with SERCA in ER (C29, C81), doubles calcium uptake rate (C31), increases ER calcium load (C33, C35, C82), and enhances calcium wave properties (C36, C38). Effects are opposite to PLN (C30, C37, C83) and independent of PLN (C32). Data from Figures 3 and 4 strongly support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C47",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "DWORF exhibits calcium-dependent binding to SERCA with increased affinity at high calcium concentrations, opposite to PLN which shows decreased affinity at high calcium. This inverted calcium dependence suggests DWORF preferentially interacts with calcium-bound SERCA conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C87-C89 present FRET data showing opposing calcium-dependent binding behaviors: PLN affinity decreases with high calcium (C46, C87) while DWORF affinity increases (C47, C88). Figure 5 provides quantitative KD measurements supporting this inverted calcium dependence. The inference that DWORF prefers calcium-bound conformations (C89) is well-supported by the binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C99"
+    ],
+    "result": "DWORF adopts a helix-linker-helix structure with a discontinuous transmembrane domain (residues 17-35) featuring a break at Pro15, and an N-terminal amphipathic helix (residues 1-13) that lies along the membrane surface, as determined by MD simulations and computational predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 and C99 describe DWORF structure based on MD simulations (Figure 6) and computational predictions. Both starting models converged on helix-linker-helix structure (C48-C49), supported by secondary structure predictions (C50-C51) and hydrophobic moment analysis (C52-C53). The structural features distinguish DWORF from PLN's continuous helix (C54-C55). The 4 \u03bcs MD simulations provide substantial computational evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C63",
+      "C107",
+      "C108"
+    ],
+    "result": "DWORF modulates the local lipid bilayer in the vicinity of SERCA's inhibitory groove and calcium access funnel, with more pronounced effects on the cytoplasmic side of the membrane, as revealed by MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C63, C107-C108 describe bilayer modulation effects observed in MD simulations. Figure 7B and 8C show local membrane thickness changes around DWORF. The observation that modulation is more pronounced on the cytoplasmic side (C108) where it could impact M1/M2 helices is supported by the simulation data, though the functional implications remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In the SERCA-DWORF molecular model, DWORF binds stably to SERCA's inhibitory groove through specific interactions including Pro15/Ile16 with Trp107 on M2, Tyr31 with Pro952/Ile956 on M9, and extensive hydrophobic contacts along the groove.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C62 describe specific molecular interactions from the SERCA-DWORF model (Figure 8). While the MD simulations show stable binding in 2 of 3 replicates (C59), and specific residue contacts are identified (C60-C62), the authors acknowledge this is a computational model without experimental structural validation. The model is plausible but requires experimental confirmation (e.g., mutagenesis, structural biology).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "Pro15 is critical for DWORF activation of SERCA, as the Pro15-Ala mutant abolishes enhanced calcium dynamics. Pro15 occurs at a location corresponding to the inhibitory residue Asn34 in PLN, and DWORF's discontinuous helix structure lacking this asparagine explains why DWORF does not inhibit SERCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 provides experimental validation that Pro15 is functionally important, as the P15A mutant abolishes DWORF's effects (Figure 9C). Claims C102, C104-C105 provide structural rationale: Pro15 aligns with PLN's critical Asn34 (C102), but DWORF lacks this and other inhibitory residues (C104), and the discontinuous helix is inconsistent with inhibitory features (C105). The mutagenesis data combined with structural analysis strongly support this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C68",
+      "C69",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "DWORF and PLN have opposing functional effects on SERCA: PLN primarily alters calcium affinity while DWORF primarily alters maximal activity. These distinct but complementary functions represent a previously unknown regulatory axis for fine-tuning SERCA-dependent calcium homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C66, C68-C69, and C75-C77 synthesize the study's main conclusions. The opposing effects are well-documented: PLN decreases calcium affinity (C75) while DWORF increases Vmax (C76) without affecting affinity. The conclusion that these represent complementary regulatory mechanisms (C77, C69) is well-supported by the combined biochemical, cellular, and biophysical data presented throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "The calcium-dependent increase in DWORF-SERCA affinity suggests DWORF would compete more effectively with PLN when calcium is elevated, and that DWORF preferentially stabilizes SERCA states populated during calcium elevations, thereby enhancing kinetics of rate-limiting steps in the transport cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91, C93-C94 present mechanistic inferences connecting the FRET binding data to functional outcomes. While the inverted calcium dependence is well-established (supported by C47, C88), the proposed mechanisms\u2014that DWORF competes more effectively at high calcium (C90), stabilizes calcium-elevated states (C93), and enhances rate-limiting steps (C94)\u2014are logical inferences but lack direct experimental validation. These remain plausible hypotheses requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "The displacement of PLN, absence of key inhibitory interactions (Leu31 and Asn34), and perturbation of the membrane bilayer provide rationales for the higher maximal activity of SERCA in the presence of DWORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 synthesizes multiple lines of evidence: PLN displacement is established from prior work (C67), absence of inhibitory residues is supported by structural analysis (C104-C105), and bilayer perturbation is shown by MD simulations (C63, C107-C108). The Pro15 mutagenesis data (C65) validates the importance of the structural break. These converging lines of evidence support the proposed mechanism for DWORF activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C14",
+      "C17",
+      "C18"
+    ],
+    "result": "SERCA maintains a 2000-fold calcium gradient in the sarco-endoplasmic reticulum and plays a critical role in muscle contraction-relaxation cycles. In cardiac muscle, SERCA2a is the primary isoform and is regulated by the inhibitor phospholamban (PLN), which decreases SERCA's apparent calcium affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10, C14, C17-C18 present established background knowledge about SERCA and PLN function. These are well-documented facts in the field, appropriately cited, and provide necessary context for the study. No novel claims are made here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C67"
+    ],
+    "result": "DWORF was recently discovered as a SERCA-binding protein with weak sequence similarity to PLN and sarcolipin. Prior studies reported that DWORF increases SERCA activity by displacing PLN from the inhibitory groove.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C23, C67 summarize prior work on DWORF discovery and initial characterization. These are appropriately cited to Nelson et al. 2016 and Makarewich et al. 2018. The sequence similarity observation (C22) is shown in Figure 1. This provides essential background but represents prior work, not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C86",
+      "C92"
+    ],
+    "result": "PLN binds to SERCA in a groove formed by transmembrane segments M2, M6, and M9, and acts as a competitive inhibitor of calcium binding. PLN remains associated with SERCA even at high calcium but with reduced affinity, preferentially binding conformations that prevail at low calcium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45, C86, C92 describe established knowledge about PLN-SERCA interactions, appropriately cited to prior structural and functional studies. These provide necessary mechanistic context for understanding DWORF's distinct behavior but do not represent novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "HEK293 cells co-expressing SERCA2a and RyR2 serve as a cardiomimetic system for evaluating SERCA-dependent calcium handling. This system generates periodic calcium waves similar to cardiomyocytes and lacks endogenous SERCA regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe the cellular model system used in the study. This is established methodology from prior work (Bovo et al. 2019) and represents a technical approach rather than a novel finding. The system is appropriate for the experiments conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The membrane reconstitution system is well-suited for measuring SERCA ATPase activity and calcium transport with regulatory subunits. Previous DWORF studies focused on apparent calcium affinity rather than maximal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe methodological context and prior study focus. C72 is supported by multiple citations establishing the reconstitution approach. C73 accurately characterizes prior DWORF studies (Nelson et al. 2016, Makarewich et al. 2018). These provide methodological justification but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Previous DWORF overexpression studies in mice showed increased peak systolic calcium transient amplitude and SR calcium load. These findings are consistent with a dual mechanism including direct SERCA activation by DWORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 accurately summarizes prior in vivo studies (Nelson et al. 2016, Makarewich et al. 2018). Claim C71 reinterprets these findings in light of the current study's discovery of direct activation. While C71 is an inference, it reasonably connects prior observations to the new mechanism. This represents reinterpretation of existing data rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C103"
+    ],
+    "result": "PLN and sarcolipin (SLN) form continuous transmembrane helices with well-defined membrane orientations. PLN has a longer cytoplasmic domain than SLN and DWORF. Asn34 of PLN (Asn11 in SLN) is an essential residue for SERCA inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98, C103 present established structural knowledge about PLN and SLN from prior NMR and X-ray crystallography studies, appropriately cited. These provide comparative context for understanding DWORF's unique structure but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The current hypothesis from prior work is that DWORF binds to the inhibitory groove and displaces PLN, and that DWORF and PLN have similar affinities for SERCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 accurately summarize the prevailing model from prior studies (Nelson et al. 2016, Singh et al. 2019). This provides context for the study's new findings but represents prior hypotheses rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Modulation of the lipid bilayer by PLN has been previously proposed as a mechanism for enhancing SERCA maximal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 cites prior work (Glaves et al. 2019) proposing bilayer modulation as a mechanism. This provides theoretical context for interpreting DWORF's bilayer effects but represents prior hypothesis rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C19",
+      "C20"
+    ],
+    "result": "Disordered calcium handling underlies various diseases including cardiomyopathies, skeletal muscle disorders, and neurological diseases. Defects in SERCA activity are associated with heart failure. PLN inhibition is relieved by PKA phosphorylation via \u03b2-adrenergic signaling and prevents SR calcium overload under resting conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C15-C16, C19-C20 present established clinical and physiological context, appropriately cited to prior literature. These provide disease relevance and physiological background but represent general knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C56",
+      "C58"
+    ],
+    "result": "In the DWORF molecular model, hydrophobic residues orient toward the lipid bilayer while hydrophilic residues are exposed to aqueous solvent. The juxtamembrane helix formation suggests DWORF may mimic some structural features of PLN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C58 describe expected properties of amphipathic helices (C56) and draw structural comparisons to PLN (C58). While based on the MD simulations, these are relatively straightforward observations about amphipathic helix behavior. The suggestion that DWORF mimics PLN features (C58) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The magnitude of Vmax increase with DWORF (~1.7-fold) is similar to that seen with the small-molecule SERCA activator CDN1163 (~1.5-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 makes a quantitative comparison between DWORF and CDN1163 effects, supported by data in Figure 2C and citation to Kang et al. 2016. This comparison provides context for the magnitude of DWORF's effect but is a secondary observation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Calcium release via RyR2 is known to depend on ER calcium load, which is determined by SERCA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 states established knowledge about the relationship between SERCA activity, ER calcium load, and RyR2-mediated release. This provides mechanistic context for interpreting the calcium wave experiments but represents general knowledge.",
+    "result_type": "MINOR"
+  }
+]

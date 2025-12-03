@@ -1,0 +1,2480 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "3DeeCellTracker is a deep learning-based software pipeline for segmenting and tracking cells in 3D time lapse images.",
+    "claim_type": "EXPLICIT",
+    "source": "We developed a deep learning-based software pipeline, 3DeeCellTracker, by integrating multiple existing and new techniques including deep learning for tracking.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract as the main contribution of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "With only one volume of training data, one initial correction, and a few parameter changes, 3DeeCellTracker successfully segmented and tracked ~100 cells in both semi-immobilized and 'straightened' freely moving worm's brain.",
+    "claim_type": "EXPLICIT",
+    "source": "With only one volume of training data, one initial correction, and a few parameter changes, 3DeeCellTracker successfully segmented and tracked ~100 cells in both semi-immobilized and 'straightened' freely moving worm's brain, in a naturally beating zebrafish heart, and ~1000 cells in a 3D cultured tumor spheroid.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "3DeeCellTracker successfully tracked cells in a naturally beating zebrafish heart.",
+    "claim_type": "EXPLICIT",
+    "source": "With only one volume of training data, one initial correction, and a few parameter changes, 3DeeCellTracker successfully segmented and tracked ~100 cells in both semi-immobilized and 'straightened' freely moving worm's brain, in a naturally beating zebrafish heart, and ~1000 cells in a 3D cultured tumor spheroid.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and demonstrated with experimental data in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "3DeeCellTracker successfully tracked ~1000 cells in a 3D cultured tumor spheroid.",
+    "claim_type": "EXPLICIT",
+    "source": "With only one volume of training data, one initial correction, and a few parameter changes, 3DeeCellTracker successfully segmented and tracked ~100 cells in both semi-immobilized and 'straightened' freely moving worm's brain, in a naturally beating zebrafish heart, and ~1000 cells in a 3D cultured tumor spheroid.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and demonstrated with experimental data showing tracking of 901 cells in the tumor spheroid dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "3DeeCellTracker tracked 90\u2013100% of the cells in most cases, which is comparable or superior to previous results.",
+    "claim_type": "EXPLICIT",
+    "source": "While these datasets were imaged with highly divergent optical systems, our method tracked 90\u2013100% of the cells in most cases, which is comparable or superior to previous results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by tracking accuracy data presented throughout the results section and comparison with other methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Processing cells in 3D + T images has remained difficult, especially when cells cannot be clearly separated and/or their movements are relatively large.",
+    "claim_type": "EXPLICIT",
+    "source": "However, processing cells in 3D + T images has remained difficult, especially when cells cannot be clearly separated and/or their movements are relatively large, such as cells in deforming organs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as background knowledge about the challenges in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "For processing objects in 3D + T images, two steps are required: segmentation and tracking.",
+    "claim_type": "EXPLICIT",
+    "source": "For processing objects in 3D + T images, the following two steps are required: (1) segmentation: segmenting the regions of interest in each 3D image into individual objects (Figure 1\u2014figure supplement 1, left) and (2) tracking: linking an object in a particular volume to the same object in the temporally adjacent volume (Figure 1\u2014figure supplement 1, right).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fundamental requirement for processing 3D + T images.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Programs optimized for processing images in particular conditions have been developed for segmenting and tracking cells of deforming organs in 3D + T images.",
+    "claim_type": "EXPLICIT",
+    "source": "For segmenting and tracking (hereafter collectively called 'tracking') cells of deforming organs in 3D + T images, programs optimized for processing images in particular conditions have been developed (Schr\u00f6del et al., 2013; Toyoshima et al., 2016; Venkatachalam et al., 2016; Nguyen et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work in the field.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Previous methods for tracking cells in 3D + T images cannot be used under conditions other than those for which they were designed, at least without a loss in processing efficiency.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these methods cannot be used under conditions other than those for which they were designed, at least without a loss in processing efficiency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of previous methods based on the authors' understanding of the field.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "3D + T images, especially those obtained under challenging conditions, can be efficiently processed only when customized software is developed specifically for those images.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, 3D + T images, especially those obtained under challenging conditions, can be efficiently processed only when customized software is developed specifically for those images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a consequence of the limitations of previous methods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Changes in lighting could require the re-optimization of parameters for segmentation and tracking in 2D image processing.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, even in 2D image processing, changes in lighting could require the re-optimization of parameters for segmentation and tracking (Egnor and Branson, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Deep learning methods use an artificial neural network with multiple layers to process complex data and automatically optimize a number of parameters from training data.",
+    "claim_type": "EXPLICIT",
+    "source": "Deep learning methods use an artificial neural network with multiple layers, that is, a deep network, to process complex data and automatically optimize a number of parameters from training data, which allows users to easily apply a single method to images obtained under different conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of deep learning methods based on established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Deep learning methods have outperformed conventional methods in some image processing tasks such as image classification.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to this flexibility, deep learning methods have outperformed conventional methods in some image processing tasks such as image classification (LeCun et al., 2015; Krizhevsky et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work demonstrating the superiority of deep learning in certain tasks.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Deep learning methods are used mostly for segmentation and/or object detection, but not for tracking because of the difficulty in preparing training data.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, deep learning methods are used mostly for segmentation and/or object detection, but not for tracking because of the difficulty in preparing training data (Moen et al., 2019): Correctly tracking a number of objects manually to obtain training data, especially from 3D + T images recorded over long period of time, is extremely challenging.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of applying deep learning to tracking, supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "3DeeCellTracker is a new pipeline utilizing deep learning techniques in segmentation and, for the first time to the authors' knowledge, in tracking of cells in 3D + T images.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we developed 3DeeCellTracker, a new pipeline utilizing deep learning techniques in segmentation and, for the first time to our knowledge, in tracking of cells in 3D + T images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a key contribution of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The problem of training data preparation for tracking was solved by creating a synthetic dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We solved the problem of training data preparation for tracking by creating a synthetic dataset (see below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a methodological innovation and is described in detail in the methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "3DeeCellTracker was implemented on a desktop PC to efficiently and flexibly track cells over hundreds of volumes of 3D + T images recorded under highly divergent optical or imaging conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "3DeeCellTracker was implemented on a desktop PC to efficiently and flexibly track cells over hundreds of volumes of 3D + T images recorded under highly divergent optical or imaging conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a feature of the method and demonstrated through the various datasets analyzed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Using only one volume for training and one initial correction, 3DeeCellTracker efficiently tracked 100\u2013150 neurons in the brains of semi-immobilized or 'straightened' freely moving Caenorhabditis elegans roundworms from four image datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Using only one volume for training and one initial correction, 3DeeCellTracker efficiently tracked 100\u2013150 neurons in the brains of semi-immobilized or 'straightened' (special pre-processing step based on the worm's posture) freely moving Caenorhabditis elegans roundworms from four image datasets, obtained using spinning disk confocal systems in three different laboratories.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and supported by experimental results in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The four worm datasets were obtained using spinning disk confocal systems in three different laboratories.",
+    "claim_type": "EXPLICIT",
+    "source": "Using only one volume for training and one initial correction, 3DeeCellTracker efficiently tracked 100\u2013150 neurons in the brains of semi-immobilized or 'straightened' (special pre-processing step based on the worm's posture) freely moving Caenorhabditis elegans roundworms from four image datasets, obtained using spinning disk confocal systems in three different laboratories.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and details are provided in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "3DeeCellTracker tracked ~100 cells in the naturally beating heart of a zebrafish larva monitored using swept confocally aligned planar excitation (SCAPE) microscopy.",
+    "claim_type": "EXPLICIT",
+    "source": "With a few modifications, 3DeeCellTracker also tracked ~100 cells in the naturally beating heart of a zebrafish larva monitored using swept confocally aligned planar excitation (SCAPE) microscopy, a novel oblique light sheet microscope system for very rapid 3D + T imaging (Bouchard et al., 2015; Voleti et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and demonstrated with experimental data in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "SCAPE microscopy is a novel oblique light sheet microscope system for very rapid 3D + T imaging.",
+    "claim_type": "EXPLICIT",
+    "source": "With a few modifications, 3DeeCellTracker also tracked ~100 cells in the naturally beating heart of a zebrafish larva monitored using swept confocally aligned planar excitation (SCAPE) microscopy, a novel oblique light sheet microscope system for very rapid 3D + T imaging (Bouchard et al., 2015; Voleti et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with citations to previous work describing the SCAPE system.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "3DeeCellTracker tracked ~900 cells in a cultured 3D tumor spheroid, which were imaged with a two photon microscope system.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, 3DeeCellTracker tracked ~900 cells in a cultured 3D tumor spheroid, which were imaged with a two photon microscope system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and demonstrated with experimental data in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "3DeeCellTracker provided robust tracking results from real datasets as well as from degenerated datasets, which differed in terms of signal-to-noise ratios, cell movements, and resolutions along the z-axis.",
+    "claim_type": "EXPLICIT",
+    "source": "Our pipeline provided robust tracking results from the above-mentioned real datasets as well as from degenerated datasets, which differed in terms of signal-to-noise ratios, cell movements, and resolutions along the z-axis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and demonstrated with experimental data in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "3DeeCellTracker's performance was better in terms of the tracking results than those from recently developed 2D/3D tracking software running on a desktop PC.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, 3DeeCellTracker's performance was better in terms of the tracking results than those from recently developed 2D/3D tracking software running on a desktop PC, and comparable to software running on \ufeffa high-performance computing cluster (Toyoshima et al., 2016; Nguyen et al., 2017; Bannon et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and supported by comparison data in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "3DeeCellTracker's performance was comparable to software running on a high-performance computing cluster.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, 3DeeCellTracker's performance was better in terms of the tracking results than those from recently developed 2D/3D tracking software running on a desktop PC, and comparable to software running on \ufeffa high-performance computing cluster (Toyoshima et al., 2016; Nguyen et al., 2017; Bannon et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and supported by comparison data in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The worm's neurons exhibited complex activity patterns in the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, by using the positional information of the tracked cells, we extracted dynamics of the cells: the worm's neurons exhibited complex activity patterns in the brain, the zebrafish heart cells exhibited activities synchronized with heart chamber movement, and the tumor spheroid cells exhibited spontaneous activities without stimulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and demonstrated with extracted activity data in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The zebrafish heart cells exhibited activities synchronized with heart chamber movement.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, by using the positional information of the tracked cells, we extracted dynamics of the cells: the worm's neurons exhibited complex activity patterns in the brain, the zebrafish heart cells exhibited activities synchronized with heart chamber movement, and the tumor spheroid cells exhibited spontaneous activities without stimulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and demonstrated with extracted activity data in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The tumor spheroid cells exhibited spontaneous activities without stimulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, by using the positional information of the tracked cells, we extracted dynamics of the cells: the worm's neurons exhibited complex activity patterns in the brain, the zebrafish heart cells exhibited activities synchronized with heart chamber movement, and the tumor spheroid cells exhibited spontaneous activities without stimulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and demonstrated with extracted activity data in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "3DeeCellTracker integrates novel and existing techniques.",
+    "claim_type": "EXPLICIT",
+    "source": "We developed a new pipeline, 3DeeCellTracker, which integrates novel and existing techniques (Figure 1A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section of the results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "3DeeCellTracker performs automatic segmentation of cells in all 3D + T images using 3D U-Net.",
+    "claim_type": "EXPLICIT",
+    "source": "After preprocessing (see Materials and methods), it performs automatic segmentation of cells in all 3D + T images using 3D U-Net for classifying individual voxels into cell or non-cell categories (Ronneberger et al., 2015; \u00c7i\u00e7ek et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section and described in detail in the methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "3D U-Net classifies individual voxels into cell or non-cell categories.",
+    "claim_type": "EXPLICIT",
+    "source": "After preprocessing (see Materials and methods), it performs automatic segmentation of cells in all 3D + T images using 3D U-Net for classifying individual voxels into cell or non-cell categories (Ronneberger et al., 2015; \u00c7i\u00e7ek et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section with citations to the original U-Net papers.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Continuous regions of 'cell' voxels are separated into individual cell regions using the watershed method.",
+    "claim_type": "EXPLICIT",
+    "source": "Continuous regions of 'cell' voxels are separated into individual cell regions using the watershed method (Beucher and Meyer, 1993), and then numbered.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section with a citation to the watershed method.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The segmented cells are manually corrected only in the first volume of 3D images.",
+    "claim_type": "EXPLICIT",
+    "source": "The segmented cells are manually corrected only in the first volume of 3D images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section as part of the pipeline procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "3DeeCellTracker uses a feedforward network (FFN) to predict cell positions based on spatial patterns of cells maintained between previous and current images.",
+    "claim_type": "EXPLICIT",
+    "source": "In the following 3D tracking step, we considerably increased the efficiency by introducing a deep learning technique, feedforward network (FFN), to predict cell positions based on spatial patterns of cells maintained between previous and current images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section as a key innovation of the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The predicted positions from FFN are corrected with a non-rigid point set registration method called PR-GLS.",
+    "claim_type": "EXPLICIT",
+    "source": "The predicted positions are corrected with a non-rigid point set registration method called PR-GLS (Ma et al., 2016) and by our custom method to obtain precise cell locations, which are critical for extracting the accurate dynamics of cellular signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section with a citation to the PR-GLS method.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The 3D U-Net is pre-trained using manually confirmed data from a single 3D image volume.",
+    "claim_type": "EXPLICIT",
+    "source": "The 3D U-Net and the FFN are pre-trained using manually confirmed data or synthetic data (Figure 1B,C) from a single 3D image volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section and described in detail in the methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The FFN is pre-trained using synthetic data from a single 3D image volume.",
+    "claim_type": "EXPLICIT",
+    "source": "The 3D U-Net and the FFN are pre-trained using manually confirmed data or synthetic data (Figure 1B,C) from a single 3D image volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section and described in detail in the methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The keys to the method are the use of simulation to produce large amounts of training data for the FFN and the carefully designed post-processing methods for the FFN.",
+    "claim_type": "EXPLICIT",
+    "source": "The keys to our method are the use of simulation to produce large amounts of training data for the FFN and the carefully designed post-processing methods for the FFN, which result in the flexible and robust tracking of moving cells in very different 3D + T datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the overview section as the key innovations of the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The U-Net can generate precise segmentation under diverse imaging conditions and can be trained with very few annotated images.",
+    "claim_type": "EXPLICIT",
+    "source": "The U-Net can generate precise segmentation under diverse imaging conditions and can be trained with very few annotated images (e.g. only one 3D image volume in this study; see Figure 1B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the segmentation section and demonstrated through the experiments.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The pre-processed images of the first volume are used to train the 3D U-Net.",
+    "claim_type": "EXPLICIT",
+    "source": "The pre-processed images of the first volume are used to train the 3D U-Net (Figure 1B), and the trained U-net is then used for the segmentation of cells in all the following volumes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the segmentation section as part of the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Once trained on one dataset, the 3D U-Net can be directly reused for different datasets obtained under similar optical conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Once trained on one dataset, the 3D U-Net can be directly reused for different datasets obtained under similar optical conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the segmentation section as a feature of the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "FFN matches temporally adjacent cells based on the distance pattern between each cell and its 20 surrounding cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We used FFN to match temporally adjacent cells based on the distance pattern between each cell and its 20 surrounding cells (Figure 2B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the tracking section as part of the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Deep network techniques had not been used previously for cell tracking because they require large amounts of training data that are difficult to prepare manually.",
+    "claim_type": "EXPLICIT",
+    "source": "Although deep network techniques are expected to produce superior cell tracking results, the method had not been used previously because it requires large amounts of training data. These data are difficult to prepare manually, especially for 3D + T images, as validating and correcting large numbers of cell positions over time by switching multiple layers along the z axis is virtually impossible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the tracking section as the motivation for using synthetic data.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "More than 500,000,000 synthetic training data points were generated by simulating cell movements.",
+    "claim_type": "EXPLICIT",
+    "source": "To solve this difficulty in preparing training data for FFN, we generated >500,000,000 synthetic training data points by simulating cell movements (see Figure 2\u2014figure supplement 2 and Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the tracking section and described in detail in the methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "FFN generates more accurate initial matchings than FPFH.",
+    "claim_type": "EXPLICIT",
+    "source": "Originally, PR-GLS was used in conjunction with the FPFH method to predict cell positions (Ma et al., 2016); however, our FFN generates more accurate initial matchings than FPFH (Figure 2\u2014figure supplement 3A and B), and our combination of FFN + PR-GLS generates more accurate predictions of cell positions than the FPFH + PR-GLS or the classic affine alignment (Myronenko et al., 2006) does (Figure 2\u2014figure supplement 3C and D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the tracking section and supported by comparison data in Figure 2\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The combination of FFN + PR-GLS generates more accurate predictions of cell positions than FPFH + PR-GLS or classic affine alignment.",
+    "claim_type": "EXPLICIT",
+    "source": "Originally, PR-GLS was used in conjunction with the FPFH method to predict cell positions (Ma et al., 2016); however, our FFN generates more accurate initial matchings than FPFH (Figure 2\u2014figure supplement 3A and B), and our combination of FFN + PR-GLS generates more accurate predictions of cell positions than the FPFH + PR-GLS or the classic affine alignment (Myronenko et al., 2006) does (Figure 2\u2014figure supplement 3C and D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the tracking section and supported by comparison data in Figure 2\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The estimated positions from FFN + PR-GLS are accurately corrected to compensate for their differences by utilizing information from local cell regions contained in the 3D U-Net output.",
+    "claim_type": "EXPLICIT",
+    "source": "To overcome these errors, the estimated positions are accurately corrected to compensate for their differences by utilizing information from local cell regions contained in the 3D U-Net output (Figure 2C, panel 5, Figure 2\u2014figure supplement 4, and Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the tracking section and illustrated in Figure 2\u2014figure supplement 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "C. elegans has been used as a model for imaging all neuronal activities in the brain owing to its small brain, transparent body, complete description of all connections of 302 neurons, feasibility in the use of genetically encoded calcium indicators, and the capability of perception, memory, and decision-making in its small brain.",
+    "claim_type": "EXPLICIT",
+    "source": "C. elegans has been used as a model for imaging all neuronal activities in the brain ('whole brain imaging') owing to its small brain (~40 \u00b5m3 in an adult) in a transparent body, the complete description of all connections of 302 neurons, feasibility in the use of genetically encoded calcium indicators (GECI), and the capability of perception, memory, and decision-making in its small brain (de Bono and Maricq, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as background knowledge with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Whole brain imaging of C. elegans has been reported from several laboratories, and the most popular optical system currently is the spinning disk confocal system.",
+    "claim_type": "EXPLICIT",
+    "source": "Whole brain imaging of C. elegans has been reported from several laboratories, and the most popular optical system currently is the spinning disk confocal system, for which each laboratory has developed their own tracking software (Schr\u00f6del et al., 2013; Toyoshima et al., 2016; Venkatachalam et al., 2016; Nguyen et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as background knowledge with citations to previous work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "In dataset worm #1a, 164 neurons were manually confirmed in the head in the first volume of 3D + T images.",
+    "claim_type": "EXPLICIT",
+    "source": "After segmentation, we manually confirmed 164 neurons in the head in the first volume of 3D + T images, in which the distribution of cell signals was mostly, but not completely, separated from the background signals (dataset worm #1a; see Figure 3A\u2013C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "In dataset worm #1a, the method tracked all the neurons in all 171 volumes except for those that moved out of the field of view of the camera.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method tracked all the neurons in all 171 volumes except for those that moved out of the field of view of the camera (Figure 3D\u2013F, Figure 3\u2014video 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "When RM is small, searching for the closest cell is the simplest method to find the new position of a given cell in the next volume.",
+    "claim_type": "EXPLICIT",
+    "source": "When RM is small, searching for the closest cell is the simplest method to find the new position of a given cell in the next volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section as an explanation of the RM metric.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "A simple approach of searching for the closest cell may lead to tracking errors when RM \u22650.5.",
+    "claim_type": "EXPLICIT",
+    "source": "However, such a simple approach may lead to tracking errors when RM \u22650.5 (Figure 4 and Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and illustrated in Figure 4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Most of the cell RM values were \u22640.5 in the worm #1 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Although most of the cell RM values were \u22640.5 in the worm #1 dataset (Figure 3B, bottom), other datasets had cells with RM \u22650.5; nevertheless, these were also successfully tracked by our program (see below).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The method achieved 100% tracking accuracy in dataset worm #1b without changing any parameters aside from the noise level.",
+    "claim_type": "EXPLICIT",
+    "source": "We also tested worm #1b dataset, obtained from the same strain with worm #1a (Figure 3\u2014figure supplement 1), in which we again achieved 100% tracking accuracy without changing any parameters aside from the noise level (see Tables 1 and 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 3\u2014figure supplement 1 and Tables 1 and 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The method achieved a 100% accuracy of tracking in dataset worm #2.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method again achieved a 100% accuracy of tracking and extracted calcium signals from all 101 neurons even though this dataset differs considerably from the worm #1 dataset in terms of nuclear marker intensity and movement patterns (Figure 3\u2014figure supplement 2A\u2013F, Figure 3\u2014video 2 and Figure 5\u2014video 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 3\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "More neurons were detected using the method than using the original method in dataset worm #2 (approximately 90 neurons or less).",
+    "claim_type": "EXPLICIT",
+    "source": "It should be noted that more neurons were detected using our method than using the original method (approximately 90 neurons or less) (Nguyen et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section with a citation to the original study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "In dataset worm #3, the worm was loosely constrained in a microfluidic device and not anesthetized, thus exhibited larger head deformations and cell displacements between volumes (by a factor of approximately three times) compared to the worm #1 and #2 datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "In this case, the worm was loosely constrained in a microfluidic device and not anesthetized, thus exhibited larger head deformations and cell displacements between volumes (by a factor of approximately three times) compared to the worm #1 and #2 datasets (Figure 3\u2014figure supplement 3A and B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 3\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Dataset worm #3 had a lower resolution (half the resolution in the x and y directions) compared to worm #1 and #2 datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, this dataset had a lower resolution (half the resolution in the x and y directions).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section as a characteristic of dataset worm #3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "With a few parameter modifications, the method correctly tracked 171/175 (=98%) of the neurons in dataset worm #3.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, with a few parameter modifications (Table 2 and Materials and methods), our method correctly tracked 171/175 (=98%) of the neurons (Figure 3\u2014figure supplement 3C\u2013F and Figure 3\u2014video 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 3\u2014figure supplement 3 and Table 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The result in dataset worm #3 was comparable to that of the original report, in which 171 out of 198 neurons were tracked without error.",
+    "claim_type": "EXPLICIT",
+    "source": "Our result was comparable to that of the original report, in which 171 out of 198 neurons were tracked without error (Toyoshima et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section with a citation to the original study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Nguyen et al. developed a method to track neurons in a freely moving worm, in which the deformation of the brain and the movements of neurons are considerably larger than those occurring in semi-immobilized worms.",
+    "claim_type": "EXPLICIT",
+    "source": "To reveal the relationships between neuronal activities and animal behavior, Nguyen et al., developed a method to track neurons in a freely moving worm, in which the deformation of the brain and the movements of neurons are considerably larger than those occurring in semi-immobilized worms (Nguyen et al., 2016; Nguyen et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section with citations to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The method by Nguyen et al. for tracking neurons in freely moving worms requires a high-performance scientific computing cluster running on up to 200 cores simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "Although this method is powerful, it requires a high-performance scientific computing cluster running on up to 200 cores simultaneously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section as a limitation of the previous method.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "3DeeCellTracker segmented and tracked 113 cells in the initial 500 volumes from the worm #4 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "With a few modifications (see Materials and methods), we used 3DeeCellTracker to segment and track 113 cells in the initial 500 volumes from the worm #4 dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The images in worm #4 dataset were preprocessed by the straightening method, which is necessary for the current method.",
+    "claim_type": "EXPLICIT",
+    "source": "Here we analyzed the images preprocessed by the straightening method (Nguyen et al., 2017), which is necessary for our current method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section with a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "In worm #4 dataset, many cell movements were comparable to the distances between cells, that is, RM \u22650.5.",
+    "claim_type": "EXPLICIT",
+    "source": "Even after the straightening, the cell movements were quite large, with many comparable to the distances between cells, that is, RM \u22650.5 (Figure 6A and B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "In worm #4 dataset, 90 cells were visually inspected while the remaining 23 were not checked because of difficulties arising from weak intensities/photobleaching and/or the cells being in dense regions.",
+    "claim_type": "EXPLICIT",
+    "source": "We visually inspected the tracking of 90 cells while the remaining 23 were not checked because of difficulties arising from weak intensities/photobleaching and/or the cells being in dense regions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "In the original report of worm #4 dataset, 70 cells were inspected.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that 70 cells were inspected in the original report (Nguyen et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section with a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "In single mode, 66 out of 90 cells (73%) were correctly tracked without errors in worm #4 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that 66 out of 90 cells (73%) were correctly tracked without errors (Figure 6D\u2013F, single mode), which is acceptable but not ideal.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "In ensemble mode, multiple predictions of cell positions are made from different previous time points, and the final prediction is taken as the average of these predictions.",
+    "claim_type": "EXPLICIT",
+    "source": "To further improve our method for the larger cell movements, we developed a new mode, in which multiple predictions of cell positions are made from different previous time points, and the final prediction is taken as the average of these predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section as a methodological innovation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "In ensemble mode, 66 cells were correctly tracked without errors, and the remaining 24 cells were correctly tracked in most volumes (94%\u201398.2%) in worm #4 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "When applying the ensemble mode, we again found 66 cells correctly tracked without errors, and that the remaining 24 cells were correctly tracked in most volumes (94%\u201398.2%).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The ensemble mode correctly tracked 44,905 out of 45,000 cell movements (99.8%) in worm #4 dataset, a result at least comparable to that in the original report.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, the ensemble mode correctly tracked 44,905 out of 45,000 cell movements (99.8%), a result at least comparable to that in the original report (Nguyen et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section with a citation to the original study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Large movements, including ones along the z-axis (across ~30 layers), occurred frequently in worm #4 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "From the trajectories of two example cells, we found that large movements, including ones along the z-axis (across ~30 layers), occurred frequently (Figure 6G), demonstrating the excellent performance of our method on a desktop PC in this challenging dataset containing considerably large scale movements.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 6G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The ensemble mode requires longer times for the tracking than the single mode (10 versus 2 min/volume, respectively).",
+    "claim_type": "EXPLICIT",
+    "source": "However, because the ensemble mode requires longer times for the tracking than the single mode (10 versus 2 min/volume, respectively), we used the single mode in the following analyses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The zebrafish dataset includes both large cells with stronger intensities that are easy to segment and small cells with weaker intensities that are difficult to segment.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset includes both large cells with stronger intensities that are easy to segment and small cells with weaker intensities that are difficult to segment (Figure 7B, top and middle).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The photobleaching in the zebrafish dataset made it challenging to detect and track the weak intensity cells in the later part of the imaging.",
+    "claim_type": "EXPLICIT",
+    "source": "The photobleaching in the dataset made it challenging to detect and track the weak intensity cells in the later part of the imaging, because of the substantial overlap between the small cell signals and background signals (Figure 7B; Figure 7\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 7B and Figure 7\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The weak intensity in the zebrafish dataset is unavoidable because of the extremely quick scanning rate of the SCAPE system (10,568 frames per second).",
+    "claim_type": "EXPLICIT",
+    "source": "This weak intensity is unavoidable because of the extremely quick scanning rate of the system (10,568 frames per second).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section as an explanation for the weak intensity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The rapid beating of the zebrafish heart caused relatively large movements of all the cells in the x-y-z directions.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the rapid beating of the heart caused relatively large movements of all the cells in the x-y-z directions (Figure 7B, bottom; Figure 7\u2014video 1; see below), making cell tracking more challenging than that for worm #1\u20133, which predominantly moved in the x-y plane.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "98 cells were manually confirmed in the first volume of the zebrafish dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "After segmentation, we manually confirmed 98 cells in the first volume and tracked them automatically (Figure 7C and D; Figure 7\u2014video 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Among the 30 larger cells in the zebrafish dataset, 26 of them (87%) were correctly tracked in all 1000 volumes.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that among the 30 larger cells (size: 157\u2013836 voxels) with higher intensities, 26 of them (87%) were correctly tracked in all 1000 volumes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "When including smaller cells, 66 out of 98 cells (67%) were correctly tracked in the zebrafish dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Even though the smaller cells with lower intensities were more difficult to track, when including them, we still correctly tracked 66 out of 98 cells (67%) (Figure 7E and F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The pipeline procedures for the zebrafish data were not optimized, except for a few parameter changes.",
+    "claim_type": "EXPLICIT",
+    "source": "It should be noted that we did not optimize the pipeline procedures for the zebrafish data, except for a few parameter changes (Table 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The tracked movements of two example cells in the zebrafish dataset showed regular oscillations in 3D space (x, y, and z axes), consistent with the regular beating movement of the heart.",
+    "claim_type": "EXPLICIT",
+    "source": "The tracked movements of two example cells showed regular oscillations in 3D space (x, y, and z axes; Figure 7G), consistent with the regular beating movement of the heart.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 7G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The calcium signals in the zebrafish heart cells were largely synchronized with the beating cycles.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 7H and I, the calcium signals were largely synchronized with the beating cycles.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 7H and I.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "3D MCTS is increasingly being used for drug screening because of its similarity to tumor cells in vivo.",
+    "claim_type": "EXPLICIT",
+    "source": "3D MCTS is increasingly being used for drug screening because of its similarity to tumor cells in vivo (Riedl et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as background knowledge with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The tumor spheroid dataset shows normal distributions of intensities and movements but includes a much larger number of cells than either the worm brain or the zebrafish heart dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset shows normal distributions of intensities and movements but includes a much larger number of cells than either the worm brain or the zebrafish heart dataset (Figure 8A and B; Figure 8\u2014video 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 8.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Cell division and death occurred during the imaging of the tumor spheroid dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, cell division and death occurred during the imaging.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The method segmented and tracked 901 cells in the tumor spheroid dataset, of which 894 cells were visually inspected.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method segmented and tracked 901 cells, of which we visually inspected the tracking results of 894 cells (the remaining seven cells were found to have segmentation errors in volume #1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "869 out of 894 cells (97%) were correctly tracked in the tumor spheroid dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We excluded the cells that experienced cell death or cell division after such events occurred, and found that 869 out of 894 cells (97%) were correctly tracked (Figure 8C\u2013E, Figure 8\u2014video 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 8.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The spheroid as a whole moved downwards, although each cell moved in a different direction.",
+    "claim_type": "EXPLICIT",
+    "source": "We also found that the spheroid as a whole moved downwards, although each cell moved in a different direction (Figure 8G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 8G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The method achieved a low error rate (6/175 = 3%) in the sd = 60 noise condition for worm #3 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "In the sd = 60 condition, the intensities of non-cell and cell regions overlapped to a greater extent (Figure 9B), and image quality appeared poorer than that of the original image (Figure 9A). Nevertheless, our method achieved a low error rate (6/175 = 3%; Figure 9C\u2013E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The method achieved an acceptable error rate (16/175 = 9%, that is, 91% correct) in the sd = 140 noise condition for worm #3 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Even in the sd = 140 condition, in which the intensities overlapped extensively (Figure 9B) and the image quality was quite poor (Figure 9A), our method achieved an acceptable error rate (16/175 = 9%, that is, 91% correct; Figure 9C\u2013E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The tracking error rate was much lower than the segmentation error rate (16/175 vs 57/175, respectively) in the sd = 140 condition, indicating that the FFN-based tracking method can compensate for errors in cell segmentation.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that the tracking error rate was much lower than the segmentation error rate (16/175 vs 57/175, respectively; Figure 9\u2014figure supplement 1), indicating that our FFN-based tracking method can compensate for errors in cell segmentation.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 9\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The error rate in the 1/3 vol condition was acceptable (14/175 = 8%, i.e. 92% correct) for worm #3 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, the error rate in the 1/3 vol condition was acceptable (14/175 = 8%, i.e. 92% correct), while the error rate in the 1/5 vol condition was relatively high (25/175 = 14%, i.e. 86% correct).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The error rate in the 1/5 vol condition was relatively high (25/175 = 14%, i.e. 86% correct) for worm #3 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, the error rate in the 1/3 vol condition was acceptable (14/175 = 8%, i.e. 92% correct), while the error rate in the 1/5 vol condition was relatively high (25/175 = 14%, i.e. 86% correct).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "5, 16, 25, and 668 cells in worm #1a, #1b, and #3, and tumor spheroid datasets, respectively, showed cross-layer movements along the z-axis.",
+    "claim_type": "EXPLICIT",
+    "source": "We confirmed that 5, 16, 25, and 668 cells in worm #1a, #1b, and #3, and tumor spheroid datasets, respectively, showed cross-layer movements along the z-axis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The method correctly tracked all cells that showed cross-layer movements along the z-axis.",
+    "claim_type": "EXPLICIT",
+    "source": "Still, our method correctly tracked all of those cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "When the zebrafish image resolution in the z-axis was reduced by sum binning with a shrink factor = 2, the method was able to correctly track 80% of the 30 larger cells and 53% of all 98 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Even when the zebrafish image resolution in the z-axis was reduced by sum binning with a shrink factor = 2, our method was able to correctly track a majority of the cells (80% of the 30 larger cells and 53% of all 98 cells; Table 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section and shown in Table 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "DeepCell 2.0 tracked ~10% of cells properly on worm brain datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "On our worm brain datasets, DeepCell 2.0 tracked ~10% of cells properly (Figure 11A, Figure 11\u2014figure supplement 1A, Figure 11\u2014video 1, and Table 4); this is probably because the tracking algorithm of DeepCell 2.0 is optimized for the movements associated with cell divisions, but not for quickly deforming organs.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 11 and Table 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Toyoshima's method tracked ~90% of the original worm #3 neurons but only ~10% of the degenerated 'worm #3, 1/5 sampling'.",
+    "claim_type": "EXPLICIT",
+    "source": "Toyoshima's method tracked ~90% of the original worm #3 neurons but only ~10% of the degenerated 'worm #3, 1/5 sampling' (Figure 11B, Figure 11\u2014figure supplement 1B, and Table 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the results section and shown in Figure 11 and Table 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "When tested on the zebrafish dataset, Toyoshima's method was able to detect only 76 cells, and missed some weak-intensity cells, performing worse than the authors' method (detected 98 cells).",
+    "claim_type": "EXPLICIT",
+    "source": "When tested on the zebrafish dataset, Toyoshima's method was able to detect only 76 cells, and missed some weak-intensity cells, performing worse than our method (detected 98 cells).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Of the 76 cells detected by Toyoshima's method in the zebrafish dataset, 21 were incorrectly tracked from the first volume.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the detected 76 cells, 21 were incorrectly tracked from the first volume, probably because their method automatically re-fits the cell shape using a Gaussian distribution after segmentation, which can lead to a failure when fitting weak-intensity cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The authors' method was found comparable to or more efficient in terms of runtime than DeepCell 2.0 and Toyoshima's methods.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, our method was found comparable to or more efficient in terms of runtime than DeepCell 2.0 and Toyoshima's methods (Table 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the results section and shown in Table 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The high accuracy and robustness of the method is based on its use of FFN, a deep learning technique, together with its post-processing methods for tracking.",
+    "claim_type": "EXPLICIT",
+    "source": "We consider that the high accuracy and robustness of our method is based on its use of FFN, a deep learning technique, together with its post-processing methods for tracking (Figure 2\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the discussion as an interpretation of the results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The method worked well in all the diverse conditions tested with only minor modifications.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, our method worked well in all the diverse conditions tested with only minor modifications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion as a summary of the results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Under constant imaging conditions, the method can be directly reused without modifying any parameters except for the noise level.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, under constant imaging conditions, our method can be directly reused without modifying any parameters except for the noise level (Tables 1 and 2), making it convenient for end-users.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion and shown in Tables 1 and 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The number of parameters to be manually determined is much smaller in the authors' method than in conventional methods due to its use of deep learning.",
+    "claim_type": "EXPLICIT",
+    "source": "The number of parameters to be manually determined is much smaller in our method than in conventional methods (Table 1) due to its use of deep learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion and shown in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Manual annotation usually takes 2\u20133 hr for 150\u2013200 cells, and the network can be automatically trained in 1\u20132 hr on the authors' desktop PC with a single GPU.",
+    "claim_type": "EXPLICIT",
+    "source": "For re-training the 3D U-Net, manual annotation usually takes 2\u20133 hr for 150\u2013200 cells, and the network can be automatically trained in 1\u20132 hr on our desktop PC with a single GPU.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "The parameters can be quickly modified (within 1 hr) following the guide provided in the GitHub repository.",
+    "claim_type": "EXPLICIT",
+    "source": "The parameters can be quickly modified (within 1 hr) following the guide we have provided in the GitHub repository.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "The problem of weak intensity and photobleaching remains to be solved.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, the problem of weak intensity and photobleaching remains to be solved.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion as a limitation of the current method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "The authors developed 3DeeCellTracker mainly using semi-immobilized worm datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "We developed 3DeeCellTracker mainly using semi-immobilized worm datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "3DeeCellTracker successfully processed 3D + T images of a zebrafish dataset obtained using the SCAPE 2.0 system.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it also successfully processed 3D + T images of a zebrafish dataset obtained using the SCAPE 2.0 system (Voleti et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion with a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The SCAPE system is quite different from the spinning disk confocal system used for worm datasets in resolution, z-depth, and applied optical sectioning principle.",
+    "claim_type": "EXPLICIT",
+    "source": "This system is quite different from the spinning disk confocal system used for worm datasets in resolution, z-depth, and applied optical sectioning principle (Bouchard et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The authors tracked 3D + T images obtained from the SCAPE system by simply modifying a few parameters, which allowed them to obtain an acceptable result (87% of large cells correctly tracked).",
+    "claim_type": "EXPLICIT",
+    "source": "In this study we tracked 3D + T images obtained from the SCAPE system by simply modifying a few parameters, which allowed us to obtained an acceptable result (87% of large cells correctly tracked).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The method cannot track cells that are dividing or fusing, or many cells that enter the field of view during the recording.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method cannot track cells that are dividing or fusing, or many cells that enter the field of view during the recording.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion as a limitation of the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The authors consider this to be the first report on a pipeline that efficiently and flexibly tracks moving cells in 3D + T images from multiple, substantially different datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "We consider this to be the first report on a pipeline that efficiently and flexibly tracks moving cells in 3D + T images from multiple, substantially different datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the discussion as a summary of the contribution.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "The image processing task was performed on a personal computer with an Intel Core i7-6800K CPU @ 3.40 GHz x 12 processor, 16 GB of RAM, and an Ubuntu 16.04 LTS 64-bit operating system.",
+    "claim_type": "EXPLICIT",
+    "source": "Our image processing task was performed on a personal computer with an Intel Core i7-6800K CPU @ 3.40 GHz x 12 processor, 16 GB of RAM, and an Ubuntu 16.04 LTS 64-bit operating system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "The neural networks were trained and implemented with an NVIDIA GeForce GTX 1080 GPU (8 GB).",
+    "claim_type": "EXPLICIT",
+    "source": "We trained and implemented the neural networks with an NVIDIA GeForce GTX 1080 GPU (8 GB).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Local contrast normalization was applied through a sliding window (27 \u00d7 27 \u00d7 3 voxels) so that all cells had similar intensities.",
+    "claim_type": "EXPLICIT",
+    "source": "To solve this problem, we applied local contrast normalization (Goodfellow et al., 2017) through a sliding window (27 \u00d7 27 \u00d7 3 voxels) so that all cells had similar intensities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section with a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "The authors used different structures of 3D U-Net for different imaging conditions, in order to capture as much information as possible of each cell within the limitations of the GPU memory.",
+    "claim_type": "EXPLICIT",
+    "source": "We used different structures of 3D U-Net for different imaging conditions, in order to capture as much information as possible of each cell within the limitations of the GPU memory.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "The same structure of 3D U-Net can be reused on different datasets because of the flexibility of deep learning methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Such modification of the U-Net structures is preferred but not necessary. The same structure can be reused on different datasets because of the flexibility of deep learning methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The authors trained six 3D U-Nets for different datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we trained six 3D U-Nets: (1) for datasets worm #1 and #2, (2) for dataset worm #3, (3) for freely moving dataset worm #4, (4) for the zebrafish dataset, (5) for the dataset tumor spheroid, and (6) for the binned zebrafish dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Each 3D U-Net used one 3D image for training.",
+    "claim_type": "EXPLICIT",
+    "source": "Each 3D U-Net used one 3D image for training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "The same trained 3D U-Net was used for datasets worm #1 and #2, even though these datasets are substantially different with respect to signal intensity and cell movements.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that, although datasets worm #1 and #2 are substantially different with respect to signal intensity and cell movements, the same trained 3D U-Net was used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "The authors used the binary cross-entropy as the loss function to train the 3D U-Net.",
+    "claim_type": "EXPLICIT",
+    "source": "We used the binary cross-entropy as the loss function to train the 3D U-Net.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "The authors increased the training data by data augmentation using random affine transformations.",
+    "claim_type": "EXPLICIT",
+    "source": "To improve the 3D U-Net performance, we increased the training data by data augmentation: We applied random affine transformations to the annotated 3D images by 'ImageDataGenerator' class in Keras.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Watershed segmentation was applied twice; the first application was 2D watershed segmentation for each x-y plane, and the second application was 3D watershed segmentation for the entire 3D space.",
+    "claim_type": "EXPLICIT",
+    "source": "Watershed segmentation was applied twice; the first application was 2D watershed segmentation for each x-y plane, and the second application was 3D watershed segmentation for the entire 3D space.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Two segmentations were required because the resolutions in the x-y plane and the z-dimension differed.",
+    "claim_type": "EXPLICIT",
+    "source": "Two segmentations were required because the resolutions in the x-y plane and the z-dimension differed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section as an explanation for the two-step watershed.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The authors designed a three-layer feedforward network (FFN) to improve the initial match.",
+    "claim_type": "EXPLICIT",
+    "source": "We thus designed a three-layer feedforward network (FFN) to improve the initial match (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The three-layer structure generated good match results comparable with those of more complex structures with four or six layers.",
+    "claim_type": "EXPLICIT",
+    "source": "The three-layer structure generated good match results comparable with those of more complex structures with four or six layers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Each point in the FFN was represented by the normalized positions of the 20 nearest neighboring points.",
+    "claim_type": "EXPLICIT",
+    "source": "Each point was represented by the normalized positions of the 20 nearest neighboring points (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "The authors only trained one FFN based on one original image of dataset worm #3 and used the network in all the datasets including worms, zebrafish and tumor spheroid.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we only trained one FFN based on one original image of dataset worm #3 and used the network in all the datasets including worms, zebrafish and tumor spheroid.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "The authors created a synthetic training dataset by applying random affine transformations to a point set and adding small random movements to each point.",
+    "claim_type": "EXPLICIT",
+    "source": "To train the network, we first performed segmentation on a single volume of dataset worm #3 and obtained a point set for the centers of all cells. Because we required a large number of matched point sets for training, and because manually matching point sets is time-consuming and impractical, we created an synthetic training dataset by applying random affine transformations to the point set described above and adding small random movements to each point according to following equations:",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "The authors used 576,000 newly generated pairs of points A and B for training the FFN.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we used 576,000 newly generated pairs of points A and B for training the FFN (Figure 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "The authors used binary cross-entropy as the loss function to train the FFN.",
+    "claim_type": "EXPLICIT",
+    "source": "We used binary cross-entropy as the loss function to train the FFN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "In most datasets, the initial match was calculated only once (by the FFN) before the EM steps were performed.",
+    "claim_type": "EXPLICIT",
+    "source": "In the original study, the initial match (by FPFH) was recalculated during the EM iterations; however, in most datasets, we calculated the initial match only once (by the FFN) before the EM steps were performed, which did not cause problems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "For the dataset worm #4 with very large movements, the initial matching by FFN was recalculated after every 10 iterations, in order to improve accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Only for the dataset worm #4 with very large movements, we recalculated initial matching by FFN after every 10 iterations, in order to improve accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "In the ensemble mode, the authors calculated an average of up to 20 predictions from previous time points.",
+    "claim_type": "EXPLICIT",
+    "source": "In the ensemble mode, we calculated an average of up to 20 predictions from previous time points.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "The runtime including segmentation and tracking for worm #4 was approximately 30 volume/h in the single mode and 6 volumes/h in the ensemble mode.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, the runtime including segmentation and tracking for worm #4 was approximately 30 volume/h in the single mode and 6 volumes/h in the ensemble mode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "The authors manually corrected the segmentation only in volume #1.",
+    "claim_type": "EXPLICIT",
+    "source": "We manually corrected the segmentation only in volume #1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "The overall error rates depend on the image quality, but the authors usually found that around 10% of cells required manual correction which usually took 2\u20133 hr (for 100\u2013200 cells).",
+    "claim_type": "EXPLICIT",
+    "source": "The overall error rates depend on the image quality, but we usually found that around 10% of cells required manual correction which usually took 2\u20133 hr (for 100\u2013200 cells).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The authors counted the tracking errors of all cells by visually inspecting the tracking results in each volume.",
+    "claim_type": "EXPLICIT",
+    "source": "We counted the tracking errors of all cells by visually inspecting the tracking results in each volume (Figure 1\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "The authors defined the 'relative movement' (RM) of cell A at time t as: RM = (movement of cell A from t-1 to t) / (distance between cell A and its closest neighboring cell at t).",
+    "claim_type": "EXPLICIT",
+    "source": "To evaluate how challenging each cell movement is, we defined the 'relative movement' (RM) of cell A at time t as: RM = (movement of cell A from t-1 to t) / (distance between cell A and its closest neighboring cell at t).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "Movements with RM \u22650.5 are more challenging than movements with RM <0.5.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we argue that movements with RM \u22650.5 are more challenging than movements with RM <0.5.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section as an interpretation of the RM metric.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "After having tracked the worm's neurons from the first volume to the last volume, the authors extracted activities from the regions corresponding to each neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "After having tracked the worm's neurons from the first volume to the last volume, we extracted activities from the regions corresponding to each neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "The activity was computed as GCaMP5G/tdTomato in dataset worm #1.",
+    "claim_type": "EXPLICIT",
+    "source": "By measuring the mean intensities of each neuron in both channels corresponding to the GECI and the positional markers, the activity was computed as GCaMP5G/tdTomato in dataset worm #1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "The authors tested DeepCell 2.0 using two layers of images (z = 9 and z = 16) from worm dataset #3.",
+    "claim_type": "EXPLICIT",
+    "source": "Because DeepCell 2.0 currently only supports tracking cells in 2D datasets, we tested it using two layers of images (z = 9 and z = 16) from worm dataset #3, which include relatively large numbers of cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The authors supplied DeepCell 2.0 with the precise segmentations from their method in order to focus on comparing the performance of the tracking algorithms.",
+    "claim_type": "EXPLICIT",
+    "source": "We supplied DeepCell 2.0 with the precise segmentations from our method in order to focus on comparing the performance of the tracking algorithms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "The authors tested Toyoshima's software using two worm datasets and one zebrafish dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We tested Toyoshima's software using two worm datasets and one zebrafish dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "For the zebrafish dataset, the authors only tested the initial 100 volumes because Toyoshima's method required a longer time for the imaging processing than theirs did.",
+    "claim_type": "EXPLICIT",
+    "source": "For the zebrafish dataset, we only tested the initial 100 volumes because their method required a longer time for the imaging processing than ours did (see Table 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "The initial matching using the custom feedforward network is performed in a pairwise fashion, so the time complexity is O(n2), where n is the number of detected cells.",
+    "claim_type": "EXPLICIT",
+    "source": "In our method, the initial matching using our custom feedforward network is performed in a pairwise fashion, so the time complexity is O(n2), where n is the number of detected cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "The strain lite-1(xu7) was used to reduce the blue light-induced activation of the worm's sensory system.",
+    "claim_type": "EXPLICIT",
+    "source": "The strain lite-1(xu7) was used to reduce the blue light-induced activation of the worm's sensory system (Liu et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "The authors used four worm datasets in this study.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we used four worm datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "The 3D images in datasets worm #1 and #2 were obtained using the authors' custom-made microscope system, OSB3D.",
+    "claim_type": "EXPLICIT",
+    "source": "The 3D images in datasets worm #1 and #2 were obtained using our custom-made microscope system, OSB3D (see below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "The 3D + T images of the dataset worm #3 were published previously with the worm strain JN2101.",
+    "claim_type": "EXPLICIT",
+    "source": "The 3D + T images of the dataset worm #3 were published previously with the worm strain JN2101 Is[H20p::NLS4::mCherry]; Ex[tax-4p::NLS-YC2.60, lin-44p::GFP] (Toyoshima et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "The 3D + T images of the freely moving worm dataset (worm #4) were published previously with the worm strain AML14.",
+    "claim_type": "EXPLICIT",
+    "source": "The 3D + T images of the freely moving worm dataset (worm #4) were published previously with the worm strain AML14 (Nguyen et al., 2016; Nguyen et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section with citations.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "In three (#79, #135, and #406) out of the 500 volumes of the worm #4 dataset, most of the cells disappeared from the volume or a large amount of noise occurred, which rendered the dataset impossible to analyze.",
+    "claim_type": "EXPLICIT",
+    "source": "In three (#79, #135, and #406) out of the 500 volumes of the worm #4 dataset, most of the cells disappeared from the volume or a large amount of noise occurred, which rendered the dataset impossible to analyze.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "These volumes were manually skipped for tracking, that is the cells were assumed not moved from the previous volumes.",
+    "claim_type": "EXPLICIT",
+    "source": "These volumes were therefore manually skipped for tracking, that is the cells were assumed not moved from the previous volumes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "The authors upgraded their robotic microscope system to a 3D version.",
+    "claim_type": "EXPLICIT",
+    "source": "We upgraded our robotic microscope system (Tanimoto et al., 2017) to a 3D version.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "The excitation light was a 488 nm laser from OBIS 488\u201360 LS (Coherent).",
+    "claim_type": "EXPLICIT",
+    "source": "The excitation light was a 488 nm laser from OBIS 488\u201360 LS (Coherent) that was introduced into a confocal unit with a filter wheel controller (CSU-X1 and CSU-X1CU, respectively; Yokogawa, Japan) to increase the rotation speed to 5,000 rpm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "The laser power was set to 60 mW (100%).",
+    "claim_type": "EXPLICIT",
+    "source": "The laser power was set to 60 mW (100%).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "For 3D imaging, the z-position of the objective lens was regulated by a piezo objective positioner (P-721) with a piezo controller (E665) and the PIMikroMove software (PI, Germany).",
+    "claim_type": "EXPLICIT",
+    "source": "For 3D imaging, the z-position of the objective lens was regulated by a piezo objective positioner (P-721) with a piezo controller (E665) and the PIMikroMove software (PI, Germany).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "The timings of the piezo movement and the image capture were regulated by synchronized external edge triggers from an Arduino Uno (Arduino, Italy) using 35 ms intervals for each step, in which the image capture was 29.9 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "The timings of the piezo movement and the image capture were regulated by synchronized external edge triggers from an Arduino Uno (Arduino, Italy) using 35 ms intervals for each step, in which the image capture was 29.9 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "For each step, the piezo moved 1.5 \u00b5m, and one cycle consisted of 29 steps.",
+    "claim_type": "EXPLICIT",
+    "source": "For each step, the piezo moved 1.5 \u00b5m, and one cycle consisted of 29 steps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "The authors discarded the top-most step because it frequently deviated from the correct position, and used the remaining 28 steps.",
+    "claim_type": "EXPLICIT",
+    "source": "We discarded the top-most step because it frequently deviated from the correct position, and we used the remaining 28 steps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "One 3D image was 42 \u00b5m in length along the z-axis.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that one 3D image was 42 \u00b5m in length along the z-axis, which was determined based on the typical diameters of neuronal cell bodies (2\u20133 \u00b5m) and of a young adult worm's body (30\u201340 \u00b5m).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "Each cycle required 1015 ms; thus, one 3D image was obtained per second.",
+    "claim_type": "EXPLICIT",
+    "source": "Each cycle required 1015 ms; thus, one 3D image was obtained per second.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "Sample preparation and imaging of the zebrafish heart cells have been described previously.",
+    "claim_type": "EXPLICIT",
+    "source": "Sample preparation and imaging have been described previously (Voleti et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section with a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "GCaMP and dsRed were expressed in the cytosol and the nuclei of myocardial cells, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "In brief, GCaMP and dsRed were expressed in the cytosol and the nuclei of myocardial cells, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "The 3D coordinates obtained from this study were used to extract calcium dynamics in the cells in the previous study.",
+    "claim_type": "EXPLICIT",
+    "source": "The 3D coordinates obtained from this study were used to extract calcium dynamics in the cells in the previous study (Voleti et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "The tumor spheroid was cultured according to the previous procedures.",
+    "claim_type": "EXPLICIT",
+    "source": "The tumor spheroid was cultured according to the previous procedures (Vinci et al., 2012; Yamaguchi et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section with citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "A suspension of HeLa cells expressing the FRET-type ERK sensor EKAREV-NLS was added to a PrimeSurface 96 well plate for 3D cell culture at a density of 1200 cells/well.",
+    "claim_type": "EXPLICIT",
+    "source": "In brief, a suspension of HeLa cells (RRID:CVCL_0030, RCB0007, Riken Cell Bank; certified as mycoplasma-free and authenticated by using STR profiling) expressing the FRET-type ERK sensor EKAREV-NLS (Komatsu et al., 2011) was added to a PrimeSurface 96 well plate (MS-9096U, Sumitomo Bakelite) for 3D cell culture at a density of 1200 cells/well.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section with citations.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "The 3D + T images of the spheroid were recorded using a two-photon microscope equipped with a water-immersion objective lens and a high-sensitivity gallium arsenide phosphide (GaAsP) detector.",
+    "claim_type": "EXPLICIT",
+    "source": "The 3D + T images of the spheroid were recorded using a two-photon microscope equipped with a water-immersion objective lens (N25X-APO-MP 25x CFI APO LWD objective, Nikon) and a high-sensitivity gallium arsenide phosphide (GaAsP) detector (A1R-MP+, Nikon).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "An 820 nm optical pulse generated by a Ti:Sapphire laser was used for the excitation.",
+    "claim_type": "EXPLICIT",
+    "source": "An 820 nm optical pulse generated by a Ti:Sapphire laser was used for the excitation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "Each step size was 4 \u00b5m along the z-axis, and each volume comprised of 54 steps, requiring 5 min for recording.",
+    "claim_type": "EXPLICIT",
+    "source": "Each step size was 4 \u00b5m along the z-axis, and each volume comprised of 54 steps, requiring 5 min for recording.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "Cells that experienced cell death or cell division were excluded manually after the events when evaluating the tracking accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells that experienced cell death or cell division were excluded manually after the events when evaluating the tracking accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "The code for tracking cells and for training neural networks, the demo data, the pre-trained weights of the neural networks, and instructions for installation and use of the code are available in http://ssbd.qbic.riken.jp/set/20190602/ (Demos190610.zip).",
+    "claim_type": "EXPLICIT",
+    "source": "The code for tracking cells and for training neural networks, the demo data, the pre-trained weights of the neural networks, and instructions for installation and use of the code are available in http://ssbd.qbic.riken.jp/set/20190602/ (Demos190610.zip).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C178",
+    "claim": "An updated version of the code can be found in https://github.com/WenChentao/3DeeCellTracker.",
+    "claim_type": "EXPLICIT",
+    "source": "An updated version of the code can be found in https://github.com/WenChentao/3DeeCellTracker.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C179",
+    "claim": "In the original version of the paper, the authors tracked the datasets by their original version of programs based on the package '3DeeCellTracker 0.2'.",
+    "claim_type": "EXPLICIT",
+    "source": "In the original version of the paper, we tracked the datasets by our original version of programs based on the package \"3DeeCellTracker 0.2\" (see the version information at https://pypi.org/project/3DeeCellTracker/#history).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the note in proof.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "The runtime for the tracking process was not optimized at that time, which sometimes could lead to a long runtime for tracking, especially in the ensemble mode and/or when the cell number is large.",
+    "claim_type": "EXPLICIT",
+    "source": "The runtime for the tracking process was not optimized at that time, which sometimes could lead to a long runtime for tracking, especially in the ensemble mode and/or when the cell number is large.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the note in proof.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "The authors improved the performance of the codes related to 'FFN' and 'PR-GLS' using the vectorization techniques available in the 'NumPy' package in Python.",
+    "claim_type": "EXPLICIT",
+    "source": "To solve these two issues, we first improved the performance of the codes related to \"FFN\" and \"PR-GLS\" using the vectorization techniques available in the \"NumPy\" package in Python.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the note in proof.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "The new program accelerated the speed by 1.7\u20136.8 times in the tested datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, our new program accelerated the speed by 1.7\u20136.8 times in the tested datasets (Table 6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the note in proof and shown in Table 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "The acceleration was especially pronounced in ensemble mode (worm #4) and when the cell number is large (3D tumor spheroid).",
+    "claim_type": "EXPLICIT",
+    "source": "Such acceleration was especially pronounced in ensemble mode (worm #4) and when the cell number is large (3D tumor spheroid).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the note in proof.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C184",
+    "claim": "The authors simplified the program by moving the details into the package.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, we simplified the program by moving the details into the package.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the note in proof.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C185",
+    "claim": "Users can track cells by simply running a few commands in Jupyter notebooks.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, users can track cells by simply running a few commands in Jupyter notebooks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the note in proof.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C186",
+    "claim": "The authors added new functions to show the intermediate results of segmentation and tracking so that users can now use these results to guide their setup of the segmentation/tracking parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "We also added new functions to show the intermediate results of segmentation and tracking so that users can now use these results to guide their setup of the segmentation/tracking parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the note in proof.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

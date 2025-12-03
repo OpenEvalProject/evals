@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes the scientific context and motivation for developing SNAIL technology. Recent single-cell sequencing has revealed extreme cellular diversity in the brain, including over a hundred distinct neuronal populations and specialized GABAergic neuron subpopulations. Current approaches for engineering cell type-specific technologies are low yield and involve intensive screening, while chromatin accessibility is a noisy approximation for enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C10 are well-supported by multiple citations to published work establishing the field context. Claims C14-C15 about limitations of chromatin accessibility are stated as known issues in the field and provide clear motivation for the machine learning approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "SNAIL is presented as an improved virus-based strategy that leverages machine learning to identify DNA sequence features conferring cell type-specific gene activation. Unlike the prior cSNAIL technology that requires Cre activation, SNAIL probes are stand-alone AAVs driven by machine learning-selected enhancer sequences with an affinity purification-compatible reporter, enabling use in wild-type mice, primates, and other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C18-C20 clearly describe the SNAIL technology and its advantages. The distinction from cSNAIL (C19) is well-articulated. Claim C16 represents the hypothesis tested in the study. These claims establish the conceptual framework that is validated by subsequent experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Support vector machines (SVMs) using gapped k-mer sequence features successfully discriminate between broad cell type classes. Models for neuron vs. astrocyte and excitatory vs. inhibitory neurons achieved high performance (auROC 0.93-0.95, auPRC 0.82-0.98). The models correctly classified known cell type-specific promoter sequences (Gfap, Camk2a, Dlx) according to their empirically validated activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 report strong quantitative performance metrics with appropriate statistical measures (auROC, auPRC). Claims C31-C35 provide important validation by showing the models correctly classify known promoters with established cell type specificity, demonstrating biological relevance of the learned features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Machine learning models successfully discriminate PV+ neuron-specific enhancer sequences from other neuron subtypes. Population-derived SVMs comparing PV+ vs. PV-, PV+ vs. excitatory neurons, and PV+ vs. VIP+ neurons achieved high accuracy (auROC 0.87-0.93, auPRC 0.79-0.96), demonstrating that OCR sequence information is sufficient to distinguish cell type-specific activity even at the neuron subtype level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe the comprehensive modeling strategy with multiple data sources and comparisons. Claims C41-C43 report strong quantitative performance. The inference in C44 is well-supported by the high model performance across multiple neuron subtype comparisons, though the claim is somewhat broad given it's based on PV+ neuron data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Multiple machine learning approaches and data modalities successfully identify PV+ neuron-specific sequences. CNNs achieved high accuracy (auROC 0.95-0.96, auPRC 0.76-0.97), and single-nucleus-derived SVMs performed comparably to population-derived models (auROC 0.89-0.93, auPRC 0.72-0.92). Models built from different data sources identified similar sequence contributions, with highly correlated scores for individual sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C49 report strong quantitative performance for CNNs and snATAC-seq-derived models. Claims C50-C51 demonstrate important cross-validation between approaches. The consistency across methods and data sources strengthens confidence in the biological relevance of identified sequence features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Machine learning models successfully predict in vivo PV+ AAV specificity better than differential accessibility alone. When evaluated on 34 externally validated enhancers, SVM scores were predictive of PV+ specificity (p=0.008), while log2 fold difference showed only weak association (p=0.069). Among high log2 fold difference sequences, only SVM score remained associated with specificity (p=0.057 vs. p=0.601).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 show the models correctly identify extreme cases (lowest and highest specificity enhancers). Claims C55-C58 provide statistical evidence that SVM scores outperform simple differential accessibility, particularly for sequences with high fold differences where false positives are problematic. This validates the added value of machine learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Two PV+ neuron-specific enhancer candidates (SC1 and SC2) were selected based on machine learning predictions and cloned into SNAIL vectors. SC1 was the highest-ranked candidate among 1755 PV+ neuron-specific sequences, while SC2 was in the 90th percentile. The sequences were predicted to have PV+ specificity due to specific transcription factor binding motifs including Mef2, Esrrg, Nkx28, and Lhx6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 clearly establish the selection criteria and ranking. Claims C60-C61 provide mechanistic interpretation of why these sequences were predicted to work. Claims C64-C65 describe the experimental implementation. The selection of two candidates at different confidence levels (top vs. 90th percentile) represents good experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "SC1 and SC2 SNAIL probes successfully target PV+ neurons in mouse cortex with high specificity. When delivered via AAV-PHP.eB systemic injection, SC1 and SC2 showed 70-74% specificity for Pvalb+ neurons, representing an 11-fold enrichment over Ef1a promoter and nearly 2-fold enrichment over the Pvalb-2A-Cre/Ai14 transgenic strain. The probes labeled 71-73% of Pvalb+ neurons, consistent with expected AAV-PHP.eB transduction efficiency (55-70%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 report the key experimental validation with quantitative specificity and sensitivity measurements. The comparison to both negative control (Ef1a) and gold standard (transgenic mice) in C69-C70 is rigorous. Claim C72 appropriately contextualizes the labeling rate relative to known AAV transduction limits. The results strongly validate the machine learning predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ATAC-seq on SNAIL-isolated nuclei confirms molecular enrichment for PV+ neurons. SC1 and SC2 samples clustered with known PV+ samples by PCA (84% variance on PC1) and showed highly reproducible PV+ signatures at the Pvalb locus. Correlation analysis showed SC1 and SC2 achieved very high correlation with cSNAIL PV+ samples (Pearson 0.81-0.85, Spearman 0.79-0.84), approaching the upper limit set by replicate cSNAIL batches (0.86/0.85) and far exceeding the Ef1a control (0.38/0.26).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 demonstrate clear separation of PV+ from PV- samples using orthogonal molecular data. Claims C78-C81 provide rigorous quantitative benchmarking with appropriate upper and lower bounds. The high correlations validate that SNAIL probes capture the same cell population as the transgenic-based gold standard, providing strong molecular confirmation of the immunohistochemistry results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "SC1 and SC2 SNAIL probes show high specificity for PV+ inhibitory interneurons based on single-nucleus cluster analysis. SC1, SC2, and cSNAIL-isolated OCRs were each significantly enriched for PV+ cluster markers (34-47% overlap, p=0), while Ef1a showed no enrichment (4%, p=1). Notably, SC1 and SC2 showed no enrichment for any other cluster including SST+ neurons (\u22642%, p>0.1), suggesting they target a stricter subset than the Pvalb-2A-Cre strain, which showed 8% overlap with excitatory L5 PT markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide strong statistical evidence for PV+ enrichment with appropriate controls. Claims C85-C87 reveal an important finding that SNAIL probes may be more specific than the transgenic line, avoiding labeling of layer 5 excitatory neurons that express Pvalb. This demonstrates a potential advantage of the enhancer-based approach over gene promoter-based transgenic strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "PV+ neurons in different brain regions show substantial chromatin accessibility differences despite common developmental origin. Thousands of differentially accessible OCRs were identified between cortex, striatum, and GPe PV+ neurons (padj<0.01, |log2FC|>1), with region-specific enrichment for distinct transcription factor binding motifs including Mef2 (cortex), Tgif1 (striatum), and Lhx3/Pou5f1/Esrrg/Pax3 (GPe, 6654 unique OCRs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 establish the biological context and quantify regional differences. Claims C91, C95, C97-C98 identify specific molecular signatures with appropriate statistical thresholds. The findings are well-supported by the data and provide important biological context for understanding the generalizability of cortex-trained models to other brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "SC1 and SC2 SNAIL probes generalize to subcortical brain regions with varying robustness. Models showed high correlation between cortex and striatum (Pearson=0.73, Spearman=0.72) but low correlation between cortex and GPe (Pearson=0.25, Spearman=0.24). SC1 and SC2 ATAC-seq correlations with cSNAIL were lower in striatum (0.71-0.82) and GPe (0.68-0.73) than cortex (0.81-0.85), but substantially higher than Ef1a controls, suggesting the probes generalize but may not be as robust outside the cortical context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 quantify the relationship between regional models. Claims C102-C103 show decreased but still substantial performance in subcortical regions. The inference in C104 is appropriately cautious given the data. The results demonstrate both the potential and limitations of cross-region generalization for cortex-trained enhancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Model interpretation identified 14 transcription factor binding motif families contributing to PV+ neuron-specific enhancer activation. The largest cluster (23 motifs) included Esrrg and Rora, key factors in the Pgc1a transcriptional program regulating Pvalb expression and mitochondrial function. The second-largest cluster (16 motifs) matched Mef2 family members. Additional clusters included Lhx6 (MGE interneuron differentiation), and motifs specific to PV+ vs. VIP+ comparisons (Stat6, Nkx28, Cux2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 and C111 report the computational motif discovery results. Claims C108-C110, C113, and C115 connect identified motifs to known PV+ neuron biology through appropriate citations. The biological coherence of identified motifs with known PV+ neuron developmental and functional programs provides strong validation of the machine learning approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Sequence-level interpretation reveals specific motifs driving SC1 and SC2 activity. SC1 contains two central Esrrg motifs that are high contributors across all models. SC2 contains a central Mef2 motif and an Esrrg motif with shared importance across models, with features resembling successful probe E29. In silico disruption of Esrrg and Mef2 motifs in SC1 or SC2 sharply decreased predicted PV+ specificity across SVMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 identify specific sequence features with reference to figures. Claim C120 provides computational validation through motif disruption experiments. While the disruption results are in silico only (not experimentally validated), they provide mechanistic insight into sequence determinants of specificity and are appropriately presented as computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Human PV+ neuron models trained on single-nucleus data from human cortex achieve reasonable performance (auROC 0.73-0.83, auPRC 0.68-0.81) and show correlated predictions with mouse models, suggesting shared PV+ neuron-specific enhancer sequence features between species. SC1 was among the highest-scoring candidates in both mouse and human SVMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 report human model performance with appropriate caveats about smaller dataset size. Claim C123 demonstrates cross-species consistency in learned features. Claim C124 identifies SC1 as a promising cross-species candidate. The results support the potential for cross-species probe design, though the human models show somewhat lower performance than mouse models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "SC1 SNAIL probe shows PV+ neuron enrichment in rhesus macaque cortex with spatial variation in specificity. Following intracranial AAV injection, high Sun1GFP expression with PV+ neuron enrichment was observed. Precision varied with viral load: 22% near injection center vs. 67% at periphery. Recall was high at injection center (98% of PV+ neurons transduced) and remained substantial at periphery (75%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C129 report preliminary primate validation results. The spatial variation in specificity (C127) suggests dose-dependent effects that complicate interpretation. The lower precision at high viral load (22% at center) raises questions about off-target expression. While the peripheral results (67% precision, 75% recall) are more promising, the limited experimental detail (single animal, single probe, single region) and lack of statistical analysis make this preliminary evidence requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The SNAIL framework incorporating machine learning classifiers improves enhancer pre-selection efficiency compared to existing approaches. On externally tested PV+ enhancer AAVs, average SVM scores were more predictive of PV+-specific expression than log2 fold difference, sequence conservation, or accessibility conservation. The authors propose this approach will improve throughput of targeted AAV development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 establishes the problem context with appropriate citations. Claim C131 describes the SNAIL approach. Claim C132 provides comparative validation against alternative prioritization methods. Claim C133 is appropriately framed as a belief/speculation about future impact. The comparative analysis strengthens the case for machine learning-based selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Sequence patterns learned by PV+ models reflect known PV+ neuron biology and suggest combinatorial regulation. Common motifs (Esrrg, Mef2, Lhx6) are important for PV+ interneuron specification and maintenance. While Esrrg and Lhx6 show restricted expression patterns, Mef2 is widely expressed, suggesting combinatorial interactions between abundant and cell type-specific transcription factor binding events specify PV+ enhancer activation. Multiple direct comparisons between target and other cell types proved particularly useful for screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 summarize key findings with appropriate citations. Claims C136-C138 provide biological context about TF expression patterns. Claim C139 offers a reasonable mechanistic interpretation given the expression patterns. Claim C140 summarizes a methodological insight. The biological coherence of findings with known PV+ neuron biology validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "SC1 and SC2 SNAIL probes provide a viable alternative to transgenic technology with potential advantages. The Sun1GFP tag enables nuclei purification for molecular assays, which is more efficient than single-nucleus sequencing for targeted hypotheses. The probes showed high molecular agreement with Pvalb-2A-Cre mice and may be more specific to inhibitory interneurons. SC1 shows sequence characteristics consistent with primate PV+ activation and biased expression in macaque PV+ neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 describe technical advantages that are well-supported by the ATAC-seq validation data. Claim C143 is appropriately speculative about potential applications. Claims C144-C146 summarize key findings about probe performance and cross-species potential. The claims appropriately balance demonstrated results with potential applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The manuscript discusses advantages and limitations of AAV-based approaches compared to transgenic technologies. AAVs provide flexibility and scalability but require 2-4 weeks for expression, limiting use in young animals. Transduction efficiency limitations and potential context-dependent enhancer activity are acknowledged. Machine learning prioritization of characteristic sequences may minimize risks of activity fluctuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 provide balanced discussion of known advantages and limitations of AAV approaches, appropriately supported by general knowledge and citations. Claim C153 offers reasonable speculation about how the SNAIL approach might mitigate some limitations. This represents appropriate contextualization of the technology within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The manuscript discusses potential future applications and extensions of SNAIL technology. Proposed applications include cross-species cell type isolation, targeting previously unexplored cell types identifiable in snATAC-seq, region-specific probe design, disease state targeting, and circuit manipulation through expression of optogenetic or chemogenetic tools. High evolutionary conservation in enhancer activity rules supports cross-species applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C160 appropriately present speculative future applications based on the demonstrated proof-of-concept. Claim C155 provides supporting evidence for cross-species potential through citations. These forward-looking claims are appropriately framed as possibilities rather than demonstrated results and represent reasonable extensions of the validated approach.",
+    "result_type": "MINOR"
+  }
+]

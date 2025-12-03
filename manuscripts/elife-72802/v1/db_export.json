@@ -1,0 +1,1569 @@
+{
+  "submission": {
+    "id": "91e86610-c5fd-4b7e-a0bb-a2b5df6a556c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:42:19.791233Z",
+    "updated_at": "2025-12-03T15:42:19.791233Z"
+  },
+  "content": [
+    {
+      "id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "submission_id": "91e86610-c5fd-4b7e-a0bb-a2b5df6a556c",
+      "content_type": "manuscript",
+      "content_text": "# 3D optogenetic control of arteriole diameter in vivo\n\n## Authors\n\n- Philip J O'Herron<sup>1</sup> ([ORCID: 0000-0002-8137-9432](https://orcid.org/0000-0002-8137-9432)) \u2020\n- David A Hartmann<sup>2</sup>\n- Kun Xie<sup>1</sup>\n- Prakash Kara<sup>2</sup> ([ORCID: 0000-0002-4285-1634](https://orcid.org/0000-0002-4285-1634))\n- Andy Y Shih<sup>2</sup>\n\n### Affiliations\n\n1. Department of Physiology, Augusta University Augusta United States ([ROR:012mef835](https://ror.org/012mef835))\n2. Department of Neuroscience, Medical University of South Carolina Charleston United States ([ROR:012jban78](https://ror.org/012jban78))\n3. Department of Neurology & Neurological Sciences, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n4. Department of Neuroscience, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n5. Center for Magnetic Resonance Research, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n6. Center for Developmental Biology and Regenerative Medicine, Seattle Children\u2019s Research Institute Seattle United States ([ROR:01njes783](https://ror.org/01njes783))\n7. Department of Bioengineering, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n8. Department of Pediatrics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nModulation of brain arteriole diameter is critical for maintaining cerebral blood pressure and controlling regional hyperemia during neural activity. However, studies of hemodynamic function in health and disease have lacked a method to control arteriole diameter independently with high spatiotemporal resolution. Here, we describe an all-optical approach to manipulate and monitor brain arteriole contractility in mice in three dimensions using combined in vivo two-photon optogenetics and imaging. The expression of the red-shifted excitatory opsin, ReaChR, in vascular smooth muscle cells enabled rapid and repeated vasoconstriction controlled by brief light pulses. Two-photon activation of ReaChR using a spatial light modulator produced highly localized constrictions when targeted to individual arterioles within the neocortex. We demonstrate the utility of this method for examining arteriole contractile dynamics and creating transient focal blood flow reductions. Additionally, we show that optogenetic constriction can be used to reshape vasodilatory responses to sensory stimulation, providing a valuable tool to dissociate blood flow changes from neural activity.\n\n## Introduction\n\nThe brain is a metabolically demanding organ, consuming 20% of the body\u2019s energy supply despite being only 2% of its weight (Clark and Sokoloff, 1999; Raichle and Gusnard, 2002). To ensure an adequate supply of oxygen and nutrients, brain arterioles dilate transiently in response to local increases in neural activity \u2013 a process called functional hyperemia (Iadecola, 2017). These vascular dynamics underlie hemodynamic imaging techniques used to map regional neural activity, such as blood oxygenation level-dependent functional magnetic resonance imaging (BOLD fMRI) (Logothetis and Wandell, 2004; Vanzetta et al., 2014; Raichle and Mintun, 2006; Howarth et al., 2021). Arteriole dynamics are also crucial in buffering the brain from fluctuations in systemic blood pressure (autoregulation), and in driving clearance of metabolic waste products from the brain along perivascular spaces (Cipolla, 2009; Zhao et al., 2015; Iadecola, 2017; Presa et al., 2020; van Veluw et al., 2020; Rasmussen et al., 2021). Proper regulation of arteriole dynamics is essential to healthy brain function, as deterioration of neurovascular coupling, cerebral perfusion, and brain clearance contributes to the pathogenesis of many neurologic disorders (Gorelick et al., 2011; Iadecola, 2013; Snyder et al., 2015; Sweeney et al., 2018; Rasmussen et al., 2021). Thus, there is widespread interest in understanding vascular dynamics and how neural activity interacts with and shapes hemodynamic responses.\n\nIn vivo studies of functional hyperemia typically engage vascular dynamics indirectly by activating neurons (e.g., with sensory stimulation), which in turn leads to the hemodynamic response. This makes it difficult to study intrinsic properties of the blood vessels independent from neuronal activity and neurovascular coupling pathways. For instance, impaired vascular responses in disease may be due to reduced neural activity, altered neurovascular coupling, or loss of compliance in the vascular wall. Similarly, the kinetics of arterial contraction and relaxation in vivo cannot be understood independently of the kinetics of the neurovascular coupling mechanisms. The need to modulate arteriole diameter and/or blood flow independently from neural activation has led to the use of pharmacological approaches or systemic manipulations (such as a CO2 challenge or modulation of systemic blood pressure) (Kara and Friedlander, 1999; Leithner et al., 2010; Tarantini et al., 2015; Masamoto and Vazquez, 2018). However, these methods do not provide spatiotemporal specificity for microvessels in the brain. Intracortical injection of vasoactive substances improves spatial specificity (Cai et al., 2018), but remains low throughput and can act on nonvascular cell types. Due to these limitations, there is a need for methods to directly activate the microvasculature with high spatiotemporal resolution.\n\nRecently, optogenetic techniques have been developed to control vessel diameter with light by expressing opsins in smooth muscle cells. Most studies to date have used wide-field activation of ChR2 with visible wavelength light. However, this technique affects vessels over a large region and predominantly activates the superficial vasculature, limiting the spatial resolution achieved (Wu et al., 2015; Zhang et al., 2015; Rorsman et al., 2018). Some studies have improved the spatial resolution of optogenetics by using visible wavelength lasers to create a focal point of activation, but this also activates primarily surface vessels (Hill et al., 2015; Mateo et al., 2017; Nelson et al., 2020). Achieving greater imaging depths has been attempted with fiber bundle probes (Kim et al., 2017) but this reduces imaging resolution and causes tissue damage. Two-photon optogenetic activation allows deeper imaging and more precise spatial control than single-photon activation. This method has been used to activate ChR2 in mural cells to examine contractility with single-vessel resolution (Hill et al., 2015; Tong et al., 2020a; Hartmann et al., 2021). However, imaging and excitation in these studies required use of the same laser, limiting the ability to separate regions of stimulation from observation. Further, these studies used the original ChR2 (H134R) variant, and opsins with improved two-photon cross-sections have since become available.\n\nHere, we introduce an approach to constrict cerebral arterioles with high spatiotemporal resolution up to hundreds of microns below the surface. We use the red-shifted opsin ReaChR (Lin et al., 2013) which has strong photocurrents and a long activation wavelength well suited for two-photon stimulation. This method allows for constriction of individual or multiple branches of pial or penetrating arterioles by driving cell-specific depolarization of smooth muscle cells. By combining dual-light paths and independent focusing of the excitation and imaging lasers, we constricted vessels independently from the depth of the imaging plane, making this a useful tool to manipulate and monitor vessel diameter in three dimensions. This approach is advantageous over ChR2 activation of vascular smooth muscle because it can manipulate single vessels over larger cortical depths, and longer wavelengths of light are less likely to create spurious vascular changes independent of opsin expression (Rungta et al., 2017).\n\n## Results\n\nReaChR potently depolarizes cells when illuminated with red light (Lin et al., 2013), and exhibits peak two-photon activation efficiency at ~1000 nm (Chaigneau et al., 2016). This makes it ideal for combined two-photon activation and imaging of cerebrovasculature, similar to the all-optical methods developed to activate neurons in vivo using long-wavelength light (~1040 nm) while simultaneously imaging with shorter wavelengths (~800\u2013950 nm) (Packer et al., 2015; Carrillo-Reid et al., 2016; Shemesh et al., 2017; Mardinly et al., 2018; Marshel et al., 2019). To selectively express ReaChR in mural cells, we crossed floxed ReaChR reporter mice with PDGFR\u03b2-Cre mice (see Methods; Figure 1A), which allows expression of ReaChR tagged with mCitrine in vascular smooth muscle cells and pericytes, with negligible off-target expression in neurons or astrocytes (Hartmann et al., 2015; Figure 1B). We imaged vasoconstrictive responses with two-photon microscopy while depolarizing the vascular mural cells either with a pulsed 1040 nm laser for two-photon activation, or a 594 nm light-emitting diode (LED) for single-photon activation (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig1-v1.jpg)\n\n**Figure 1.:** (A) Crossing the PDGFR\u03b2-Cre line with a floxed ReaChR (tagged with mCitrine) line leads to expression of the opsin in vascular mural cells. Mural cells can then be depolarized with single-photon excitation using a 594 nm LED or two-photon excitation with a fixed 1040-nm pulsed laser. Studies with control mice (see Figure 5\u2014figure supplement 1) followed a similar strategy except only YFP was expressed in the cytosol of mural cells. (B) Maximal projection image of cortical vessels from the mouse line created in panel A. The vascular lumen is labeled with Texas Red-dextran and the green in the vessel walls shows the expression of ReaChR-mCitrine. A = pial arteriole, V = pial venule. (C) Imaging equipment \u2013 the Ultima 2P-Plus from Bruker (see Methods for details). Imaging laser (IL), stimulation laser (SL), Pockel cells (PC), spatial light modulator (SLM), galvonometer mirrors (G/G), electro-tunable lens (ETL), resonant scanning/galvonometer mirrors (R/G), combining dichroic (CD), primary dichroic (PD), light-emitting diode (LED), short-pass mirror (SP), band-pass mirror (BP), photo-multiplier tubes (PMTs), epifluorescence module (EPI).\n\n### Single-photon activation of ReaChR in vessel walls produces widespread vasoconstriction\n\nWe first examined ReaChR activation with single-photon stimulation using a 594 nm LED to stimulate vessels broadly across the cranial window. We found that a single 100 ms pulse of light led to the rapid and widespread constriction of pial arterioles, which then relaxed back to baseline values within 30 s of activation (Figure 2A\u2013D; Video 1). We also observed a weaker constriction (~2\u20133%) in the pial venules (Figure 2A\u2013D). Although some expression of the opsin was seen in venous mural cells (Figure 1B), the venous response was likely a passive deflation due to widespread reduction in blood flow caused by arteriole constriction given its slower time-course relative to arterioles (Masamoto and Vazquez, 2018).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cortical surface vessels labeled with fluorescein isothiocyanate (FITC) dextran. Arterioles (A) and venules (V) are marked. (B) Difference image created by subtracting the average of 4 s of data frames following stimulation (2.5\u20136.5 s after onset) from the average before stimulation (0\u20134 s before onset). Blue lines on vessel walls opposite each other indicate reduced brightness showing where constriction occurred. Vessels with yellow on one side and blue on the other indicate XY shifts in the image between the two intervals. Units are difference in arbitrary brightness values. (C) Time courses of vessel diameter changes. Colored lines correspond to cross-sections in panel A, with arterioles in varying shades of red and venules in shades of blue. Vertical gray band is optical stimulation interval (100 ms pulse). (D) Population average of 13 surface arterioles (red) and 10 surface venules (blue) from three mice stimulated with a single 100 ms pulse from the LED. Population constriction from 1 to 5 s following stimulation pulse: Arterioles = 11.1 \u00b1 1%; Venules = 0.7 \u00b1 0.2% (mean \u00b1 standard error of the mean [SEM]). (E) Images of a penetrating arteriole 100 \u00b5m deep (top) and 300 \u00b5m deep (bottom) in the cortex. Colored cross-sections correspond to time course traces in F and H. (F) A single train of LED light pulses (5 pulses, 100 ms, with 100 ms between) evoked strong constriction at both depths. (G) Population average constriction of five penetrating arterioles from three mice to a single 100 ms pulse (8.6 \u00b1 1.7%). (H) We maintained vasoconstriction with repeated stimulation trains (5 pulses, 100 ms, 100 ms interpulse interval, 4 s between trains). Six trains were applied to the vessel at 300 \u00b5m and 10 to the vessel at 100 \u00b5m. (I) Population average of 11 vessels (pial and penetrating arterioles were combined as responses were similar) from three mice to 90 s of continual LED light pulses (100 ms pulses, 0.4 Hz).\n\n![Video 1.](https://cdn.elifesciences.org/articles/72802/elife-72802-video1.mp4.jpg)\n\n**Video 1.:** Image is looking down at pial surface vessels in the neocortex labeled with fluorescein isothiocyanate (FITC) dextran. A single 100 ms pulse from the 549 nm LED was used to stimulate the vessels. In this and other videos, the dark flash indicates the time of the optical stimulation. The image darkens because the detectors are briefly blocked by mechanical shutters to protect them from the intense stimulation light. This and subsequent videos are presented at 4\u00d7 real time. Video is 755 \u03bcm x 755 \u03bcm window.\n\nWe also observed that penetrating arterioles at least 300 \u00b5m deep in the cortex constricted with single-photon activation (Figure 2E\u2013G; Video 2). When we applied repeated trains of 100 ms pulses, we were able to sustain penetrating arteriole constriction at 10\u201320% below baseline levels for over a minute while simultaneously imaging in between each pulse train (Figure 2H, I; Video 3). To demonstrate that constricted arterioles reduced downstream microvascular flow, we performed a line scan on a penetrating arteriole and the first branch of the arteriole\u2013capillary transition (ACT) zone (85 \u00b5m deep in the tissue), to gather a measurement of blood flow to the capillary bed (Figure 3). The number of red blood cells (seen as dark streaks in the line scan) was greatly reduced in the branch within 1 s of stimulation and flow completely stopped for approximately 2 s before returning to normal by 6.5 s poststimulation (Figure 3B). The penetrating arteriole rapidly constricted and the flow also stopped briefly around 2 s poststimulation (Figure 3B). Altogether, these results show that single-photon activation of ReaChR in smooth muscle cells causes rapid and robust vasoconstriction and reduced blood flow to the parenchyma.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig3-v1.jpg)\n\n**Figure 3.:** (A) Image of penetrating arteriole with an arteriole\u2013capillary transition branch 85 \u00b5m below the surface. Line scans were acquired to measure the diameter of the arteriole (green segment) and the flow of the transition branch (red segment). A train of pulses (10 pulses, 100 ms, with 100 ms between) was delivered over the cranial window from the light-emitting diode (LED) (594 nm). (B) Line-scan data from seven time points during the run. Y-Axis is time with each row being a single scan of the laser line. X-Axis is distance along the line. The left set of panels shows the diameter data (the green segment in A) with the green bars indicating the prestimulus diameter. The right panels show the flow (the red segment in A) with each dot representing a single RBC passing through the segment (the dark streaks). The orange arrows indicate the interval when the light stimulus was applied. Numbers below each panel give the diameter of the penetrating arteriole and the flux and blood velocity for the transitional vessel. The arteriole constricts and flow is briefly eliminated (absence of dark spots in diameter segment at 2 s) before returning as the arteriole dilates back to the baseline level. Flow is reduced in the transition branch and then drops to zero (absence of dark streaks) before slowly recovering. Scale bars: time axis: 25 ms; distance axis: 25 \u00b5m.\n\n![Video 2.](https://cdn.elifesciences.org/articles/72802/elife-72802-video2.mp4.jpg)\n\n**Video 2.:** 5 pulses, 100 ms duration with 100 ms in between were presented. Video is a 378 \u03bcm x 378 \u03bcm window.\n\n![Video 3.](https://cdn.elifesciences.org/articles/72802/elife-72802-video3.mp4.jpg)\n\n**Video 3.:** Power and duration of pulses as in Video 2.\n\n### Two-photon activation of ReaChR-expressing mural cells produces focal vasoconstrictions\n\nTwo-photon light provides greater spatial resolution and targeting of deeper vessels compared to the single-photon activation achieved with the LED. To investigate the spatial control achievable with two-photon optogenetic activation of arterioles, we used a spatial light modulator (SLM) (Chen et al., 2018; Yang and Yuste, 2018) to split a single 1040 nm stimulation beam into multiple beamlets that could be focused on specific locations of interest. With this method, vasoconstriction was evoked only when the stimulation spots were contacting the vessel wall (Figure 4A\u2013E). No vasoconstriction was evoked when the edges of the stimulation spots were 10 \u00b5m from the vessel wall, indicating high spatial precision in the X\u2013Y plane. Stimulating pial arterioles led to robust constrictions that were constrained to a few tens of microns around the stimulation spots. We were able to constrict two neighboring branches of a pial arteriole, separated by ~100 \u00b5m, independently with no overlap of constrictive responses (Figure 4F\u2013I; Videos 4 and 5). We also used this spatial precision to directly target venules independently of arterioles. Venule branches did not constrict to two-photon activation (Figure 4\u2014figure supplement 1), supporting our assertion that the constriction seen earlier with single-photon activation (Figure 2B\u2013D) was likely a passive effect of the widespread arteriolar constriction.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013E) XY-precision of photostimulation. (A) Image of surface vessels labeled with Texas Red-dextran in an opsin mouse that were photostimulated with spots in different positions relative to the vessel wall. Dashed rectangle indicates region in inset on the difference image panels (B\u2013D). Three spot positions were used: (B) spots centered on vessel walls, (C) spot edges on vessel walls, and (D) spot centers one diameter away from vessel walls. Difference images as in Figure 2. Red circles indicate the location and size of the spots, white asterisks indicate spot centers. (E) Time courses of diameter changes based on spot position. Average of three vessels, five repetitions each. Error bands are standard deviation (SD). Total laser power was ~130 mW divided between the six spots. Mean constriction for the three conditions was 7.6%, 4.8%, and 0.0% for B, C, and D respectively, with standard error of the mean (SEM) <1% for all three conditions. (F\u2013I) Stimulation of different surface branches leads to isolated constriction. (F) Surface vasculature labeled with Texas Red-dextran. Colored circles indicate size/location of stimulation spots and correspond to time course plots in G, H. For G, total laser power was ~90 mW. For H, total power was ~70 mW. (G, H) Left panels: Difference images showing constriction (blue lines on both sides of vessel) only near stimulation points. Right panels: Time courses of diameter change for the two different stimulations: Error bands are SD across five (G) or four (H) repetitions. Vertical gray band is stimulation interval (100 ms). (I) Population average constriction of vessel segments when targeted (red) or not (blue). N = 8 vessels in 3 animals. Average total power per vessel was 138 mW (range 90\u2013250 mW). Population mean \u00b1 SEM from 1 to 5 s following stimulation: Targeted arterioles = 6.5 \u00b1 1%; Untargeted = 0.3 \u00b1 0.4%. (J\u2013M) Stimulation of penetrating arterioles with single-vessel precision. (J) Two penetrating arterioles 200 \u00b5m below the cortical surface. Left panels: Difference images when stimulating arteriole #1 (K) or arteriole #2 (L). Each arteriole was stimulated with a total power ~110 mW. Right panels: Time courses of diameter change of the vessels indicated in the left panels. Data presented as mean and SD across seven repetitions. (M) Population average constriction of penetrating arterioles when targeted with stimulation (red) and when not targeted (blue). N = 9 vessels in 3 animals. Average total power applied to each vessel was 130 mW (range 80\u2013190 mW). Population mean \u00b1 SEM from 1.5 to 4.5 s following stimulation. Targeted arterioles = 3.8 \u00b1 0.6%; Untargeted = 0.7 \u00b1 0.3%.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Because venules showed small constriction to the full-field (single-photon) optogenetic stimulation (Figure 2B\u2013D), we also tested the vessels with two-photon stimulation (1045 nm) targeted to individual vessel segments in separate runs. Colored circles indicate size and locations of stimulation spots and correspond to time courses in B. (B) Time courses of diameter change following two-photon activation. Vertical gray band is optical stimulation interval (100 ms pulse). Arterioles were stimulated with ~110 mW total power. Venules were stimulated with up to ~330 mW and still no constriction was observed. (C) Population average time course for surface arterioles (red) and venules (blue). Arterioles N = 8 vessels from 3 mice; Venules N = 8 vessels from same 3 mice. Four to six spots, 20\u201325 \u03bcm in size were scanned on each vessel. Average total power for arterioles was 138 mW (range 90\u2013250) and for venules was 245 mW (range 90\u2013330). Population mean \u00b1 standard error of the mean (SEM) from 1 to 5 s following stimulation: Arterioles = 6.5 \u00b1 1%; Venules = 0.4 \u00b1 0.1%. (D) Magnified view of the site of the red circles in A to show spiral pattern that was used to stimulate vessels. Circles are used throughout the paper for simplicity, but all spots were scanned in a five-spiral pattern to activate more opsin molecules.\n\n![Video 4.](https://cdn.elifesciences.org/articles/72802/elife-72802-video4.mp4.jpg)\n\n**Video 4.:** The spatial light modulator (SLM) focused six spots at the location indicated by the red arrow. The total stimulation power was ~200 mW spread over the six spots with three adjacent spots on either side of the vessel. Each spot was scanned in a 12-\u00b5m diameter spiral for 100 ms. The white arrow is for comparison with Video 5. Vessels are labeled with Texas Red-dextran. Video is a 240 \u03bcm x 240 \u03bcm window.\n\n![Video 5.](https://cdn.elifesciences.org/articles/72802/elife-72802-video5.mp4.jpg)\n\n**Video 5.:** Total power was ~75 mW spread out over three spots positioned on the branch stub and three off-target spots. The white arrow indicates the location stimulated in Video 4 for comparison.\n\nTwo-photon stimulation also allows targeting of individual vessels deeper in the cortex. We imaged a region with two penetrating arterioles 200 \u00b5m below the cortical surface. By splitting the stimulation beam and positioning spots over each vessel, we were able to constrict each vessel independently of the other (Figure 4J\u2013M), showing precise control of vascular diameter between neighboring penetrating arterioles.\n\n### Minimal spread of constriction along pial arterioles regardless of laser power\n\nWe next assessed the spatial precision of constriction along the length of the vessel. The difference images in Figure 4B, C and G, H demonstrated that there was very limited spread of the constriction beyond the stimulation spots. We tested the effect of laser power on the spatial spread of constriction by stimulating with a broad range of power levels. We found that increasing the laser power led to a small increase in the spread of constriction. For example, a 30-fold increase in power (from 5 to 150 mW total power) led to ~threefold increase in the spread of constriction (from ~25 to ~75 \u00b5m) (Figure 5A\u2013H). Increasing the power to ~230 mW at this site led to damage of the vessel wall. Although the threshold for damage varied depending on vessel size and the number and arrangement of the stimulation spots, we frequently observed that high powers (typically >200 mW total across four to six spots) on pial arterioles caused i.v. dye extravasation, and this was occasionally accompanied by widespread vasoconstriction (Figure 5\u2014video 1). Laser-induced vascular injury was also sometimes observed at very high powers (>250 mW) in control mice expressing only YFP in mural cells (see Figure 5\u2014videos 2; 3). However, at laser powers routinely used to induce vasoconstriction in ReaChR mice (<200 mW), we never observed constrictions in control mice (Figure 5\u2014figure supplement 1; Figure 5\u2014videos 4; 5). This confirms that the focal constrictions seen at lower laser powers are ReaChR dependent and not attributable to direct effects of light on blood vessels (Rungta et al., 2017; Rorsman et al., 2018).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig5-v1.jpg)\n\n**Figure 5.:** (A) Vessels labeled with Texas Red-dextran. Red circles show spot size and location. Two spots off the vessel were to maintain similar power levels per spot compared to other runs (not shown). (B\u2013D) Difference images for three different power levels (values indicate total power of all four spots). (E\u2013G) Time courses of diameter change at the three power levels in B\u2013D at different distances along the arteriole from the center of stimulation. (H) Summary of constriction at all power levels tested across different distances. Average constriction from 1 to 5 s following stimulation onset (higher numbers/yellow color indicates greater constriction). (I) Population average from three vessels in three mice of constriction at different power levels and distances from stimulation location. Six spots were placed on vessels (15 \u00b5m, three on each side of vessel).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Control mice expressed yellow fluorescent protein (YFP) under control of the PDGFR\u03b2 promoter. Vessels labeled with Texas Red-dextran. White circles show spot size and location for two-photon optogenetic activation. (B) Difference image for the maximum power level used (value indicates total power of all six spots). (C) Time courses of diameter change at the maximum power level at different distances from the center of stimulation for the location with four spots on the arteriole. (D) Summary of constriction at all power levels tested across different distances (color scale similar to Figure 5I for comparison). Even at very high powers, no constriction was seen. Population average for spatial light modulator (SLM) stimulation of penetrating arterioles (E) and surface arterioles (F), and prolonged, repeated light-emitting diode (LED) stimulation of surface and penetrating vessels combined (100 ms pulses, 0.25\u20130.43 Hz, 80\u2013116 s) (G). N = 5 vessels from 2 mice (E), 19 vessels from 2 mice (F), and 16 vessels from 3 mice (G).\n\n### Stimulation power influences the axial resolution of photoactivation\n\nThe precision of two-photon photoactivation in 3D also depends on the resolution in the axial dimension, where the point-spread-function is larger than in the lateral dimension (Rickgauer and Tank, 2009; Packer et al., 2015). To measure the axial resolution, we used the SLM to position stimulation spots at multiple depth planes above and below a pial arteriole while imaging the center of the arteriole (Figure 6A, B). When spots were focused 100 \u00b5m above or below the vessel at 115 mW total power, the vessel constricted approximately 25\u201335% of the magnitude caused by direct stimulation of the vessel. At 150 \u00b5m below the vessel, constriction dropped to ~10% (Figure 6C, D). Constriction was greater when the stimulation was above the pial surface than when it was deeper in the tissue, likely due to increased light scattering when penetrating the cortical tissue (Figure 6D \u2013 compare \u2018above pia\u2019 with \u2018parenchyma\u2019).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic of imaging setup for measuring the axial resolution of two-photon activation. The objective focused the imaging beam on a pial arteriole at the cortical surface. The dashed lines indicate various focal planes of the stimulation laser generated by the spatial light modulator (SLM). In the experiment, stimulation spots were focused from 200 \u00b5m above to 200 \u00b5m below the imaging plane in 50 \u00b5m steps. (B) Projection of surface vasculature labeled with Texas Red-dextran. Red circles indicate size and XY position of stimulation spots in varying depth planes. Total power was ~115 mW. (C) Time courses of diameter changes following stimulation at different depths from the surface. Mean and standard deviation (SD) across eight repetitions. Equidistant planes above and below the surface were averaged together for visibility. (D) Constriction amount at the different depths computed as the average change in diameter across repetitions from 1 to 5 s following the stimulation pulse. Error bars are SD across eight repetitions. (E) Axial resolution at three different total power levels averaged across three surface arterioles from three mice. Error bands are SD across vessels. (F) Influence of stimulation spot location at different depths. 115 mW total power. N = 4 surface arterioles from 4 mice. For the \u2018Off wall\u2019 condition, 200 mW total power was also used at the 200 \u00b5m depth.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Schematic of a test to ensure the SLM focal plane was calibrated correctly. We focused the imaging laser beam in the middle of a fluorescent Chroma slide. We then used the SLM to place the stimulation laser at three different focal planes (the dashed lines). In separate runs, three stimulation spots (15 \u00b5m diameter) were focused 200 \u00b5m above, 200 \u00b5m below, or at the imaging plane, and high powers were delivered to bleach the fluorophore in the slide. Z-stacks were subsequently obtained with the imaging laser around one spot at each of the stimulation depths to determine the spread of the bleaching (and hence the spread of photostimulation). (B) XZ projections from the fluorescent slide. The region of photo-bleaching in the axial (Z) dimension was the same regardless of the SLM focus depth. Scale bars are 15 \u00b5m for both the axial and lateral dimensions.\n\nTo ensure that the SLM was accurately focusing the laser power throughout the depth range, we bleached a fluorescent slide with SLM stimulation at the imaging plane and 200 \u00b5m above and below the imaging plane. This confirmed that the region of excitation was accurately shaped and placed regardless of the SLM focal plane (Figure 6\u2014figure supplement 1).\n\nNext, we tested the effect of laser power on the axial range of constriction. While the higher laser power used in Figure 6C, D showed substantial axial spread, lower laser powers (20\u201344 mW) resulted in pial arteriole constriction which was almost exclusively restricted to the stimulation plane, although the magnitude of the constrictive response was reduced (Figure 6E).\n\nAn important consideration in determining out-of-focal-plane activation, is that the cone of light extends laterally outside of the focal plane. This could lead to a greater lateral spread of activation outside the focal plane than seen within the plane in Figure 4E. Therefore, we repeated the lateral resolution test with high laser power (115 mW) at different depth planes. When the stimulation spots were laterally offset from the vessel wall, vasoconstriction was greater when stimulating 50\u2013150 \u00b5m below the imaging plane than in the imaging plane. However, just a 10-\u00b5m lateral offset resulted in very small vasoconstriction at all depths except when very high power levels were used (200 mW) (Figure 6F).\n\nThus, for precise 3D targeting of vasoconstriction, care must be taken to avoid unwanted activation of vessels within the light cone but outside the focal plane. The range of out-of-focus activation will depend not only on the laser power applied, but also on the objective used, the orientation of the vessel relative to the light cone, and the size of the arteriole.\n\n### Vasoconstriction in the axial plane along penetrating arterioles\n\nWe next measured the spread of constriction in the axial plane through penetrating arterioles. We stimulated penetrating arterioles 200 \u00b5m below the surface with a range of powers and imaged in the stimulation plane and 150\u2013175 \u00b5m superficial to that plane (Figure 7A\u2013C). We found that lower powers (20\u201330 mW) could constrict penetrating arterioles in the stimulation plane with little spread to the superficial plane. With moderate powers (~70 mW), near maximal constriction could be achieved but this led to ~50% constriction in the superficial plane. With higher power (>150 mW), near maximal constriction could be achieved in both planes. Since penetrating arterioles supply columns of cortical microvasculature (Shih et al., 2013), the use of high powers to constrict a large span of the penetrating arteriole could be useful for modulating blood flow to a column of cortical tissue in a reversible manner (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig7-v1.jpg)\n\n**Figure 7.:** (A) Penetrating arterioles were stimulated using the spatial light modulator (SLM) (100 ms light pulse) 200 \u00b5m below the surface while imaging was performed at the stimulation plane (top) or 150\u2013175 \u00b5m above the stimulation plane (bottom). (B) Average constriction from 0.5 to 3.5 s after stimulation across a range of powers. Three 15 \u00b5m diameter spots were placed on each arteriole and the total power to vessel is reported. (C) Time course of constriction at the stimulation plane and above the stimulation plane for penetrating arterioles at three different stimulation power levels. Data for B and C are average and standard deviation (seven repetitions) of four arterioles from two mice.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Three penetrating arterioles were stimulated 170 \u00b5m below the surface while imaging at the cortical surface (A), in the stimulation plane (B), or 300 \u00b5m below the surface (C). Center-left panels show the Z-projection from the surface to 300 \u00b5m deep (A) or the single imaging plane (B, C). The red circles in A and C indicate the location of the three penetrating arterioles at the stimulation plane 170 \u00b5m below the surface. In B, the circles indicate the size and location of the stimulation spots. Total laser power to each arteriole was ~100 mW. Center-right panels are difference images. Right panels are time courses of constriction in the three vessels.\n\n### Optogenetic vasoconstriction is slower and smaller in microvessels\n\nPrevious work has shown that prolonged optogenetic stimulation of pericytes expressing ChR2 leads to slow constriction of capillaries (Nelson et al., 2020; Hartmann et al., 2021). We therefore tested the efficacy of ReaChR for optogenetic constriction of pericytes. We divided vessels into three categories: penetrating arterioles (zero order; covered by \u03b1-smooth muscle actin (SMA)-positive smooth muscle cells), ACT vessels (branch orders 1\u20134; covered by \u03b1-SMA-positive ensheathing pericytes), and capillaries (branch orders 5\u20139; covered by \u03b1-SMA-low/undetectable capillary pericytes)(Figure 8A; Hartmann et al., 2021). Brief pulses of single-photon excitation with the 594 nm LED led to ~14% constriction of penetrating arterioles, ~5% constriction of ACT vessels, and a small ~1% constriction of capillaries (Figure 8B). Single pulses of two-photon stimulation, which elicited robust constriction in penetrating arterioles, led to minimal (~1%) constriction of ACT vessels and no constriction in capillaries (Figure 8C). To determine if more prolonged stimulation of ReaChR would induce constriction, we applied repeated pulses of light with the SLM for 40 s (Figure 8D). While ACT vessels constricted by ~3\u20134%, capillaries still showed negligible constriction. We then considered the duty cycle of stimulation. Our prior studies stimulated pericytes using line scanning for near constant laser stimulation (Hartmann et al., 2021), whereas the SLM pulses used here were 100 ms with 0.5\u20131.5 s between pulses. Continuous line-scan stimulation at 1045 nm led to rapid constriction in penetrating arterioles and slower constrictions in the other vessel categories (Figure 8E). Consistent with our prior findings (Hartmann et al., 2021), capillaries exhibited a gradual constriction over 60 s of stimulation. ACT vessels exhibited a more rapid constriction in the early phase. Constriction of both capillaries and ACT vessels reached a maximum of ~10% (Figure 8E). These results show that near continuous stimulation provided by line scans is necessary to constrict the smallest microvessels.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig8-v1.jpg)\n\n**Figure 8.:** (A) Schematic showing three microvascular zones examined with different stimulation paradigms. (B) Time course of constriction during a single 100 ms light-emitting diode (LED) pulse (N = 4 penetrating arterioles, N = 6 arteriole\u2013capillary transition (ACT) vessels, and N = 9 capillaries). (C) Time course of constriction during a single 100 ms pulse using the spatial light modulator (SLM) (100\u2013130 mW total power on each vessel) (N = 7 penetrating arterioles, N = 5 ACT vessels, and N = 4 capillaries). (D) Time course of constriction to repeated SLM pulses (100 ms pulses, 0.8\u20131.8 Hz, 40 s) (N = 3 penetrating arterioles, N = 6 ACT vessels, and N = 5 capillaries). (E) Time course of constriction to continuous line scanning (N = 9 penetrating arterioles, N = 24 ACT vessels, and N = 15 capillaries). Image collection and photoexcitation were simultaneously achieved with 1040 nm line scanning across vessels. Laser power varied from 10 to 120 mW with higher powers used for deeper vessels.\n\n### Faster vasoconstriction with mural cell activation of ReaChR compared to ChR2\n\nWe next compared the contractile kinetics of mural cells expressing ReaChR with our previous data from mice expressing ChR2 in mural cells (Hartmann et al., 2021; Figure 9A, B). We computed the rate of constriction over the first 10 s of stimulation for capillaries and ACT vessels (Figure 9C). Since penetrating arterioles expressing ReaChR constricted rapidly and their responses had nearly plateaued by 10 s, we computed the rate of constriction for the first 5 s of stimulation for the penetrating arterioles (Figure 9C). Capillaries showed similar, slow contractile dynamics with both opsins, but ACT vessels and penetrating arterioles exhibited more rapid initial constriction with ReaChR compared to ChR2 vessels.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig9-v1.jpg)\n\n**Figure 9.:** (A) Time course of constriction of three vessel classes covered by different mural cell types (ChR2 data from Hartmann et al., 2021; ReaChR data from line-scan stimulation in Figure 8E). Error bands are standard error of the mean (SEM). Peak constriction time for penetrating arterioles: ReaChR = 14.5 s, ChR2 = 26 s. (B) Inset showing zoomed view of the first 10 s of data. (C) Rate of diameter change for each vessel computed over the first 10 s for capillaries and arteriole\u2013capillary transition (ACT) vessels, and over the first 5 s for penetrating arterioles. Black squares and error bars are mean and SEM. Mean values by group: Capillaries (\u22120.012 to \u22120.010 \u00b5m s\u22121 for ReaChR and ChR2, respectively); Transitional vessels (\u22120.10 to \u22120.03 \u00b5m s\u22121); Penetrating arterioles (\u22121.31 to \u22120.40 \u00b5m s\u22121). Results from one-way analysis of variance (ANOVA) on opsin type for each vessel class are shown.\n\n### Optogenetic vasoconstriction is attainable in awake animals\n\nTo ensure that vessels could also be precisely targeted in awake animals, we replicated some key findings in awake mice. As in the anesthetized animals, brief pulses of light from the LED evoked rapid robust constrictions and the constrictions could be maintained with repeated light pulses (Figure 10A, B). Additionally, two-photon activation provided single-vessel precision of vasoconstriction (Figure 10C). In general, there was a slight decrease in constriction amplitude and faster return-to-baseline in awake versus anesthetized animals.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig10-v1.jpg)\n\n**Figure 10.:** (A) Constriction of surface arterioles in awake and anesthetized mice to a 100 ms pulse from the light-emitting diode (LED). Anesthetized data from Figure 2D. Awake: N = 16 vessels in 2 animals. Population mean \u00b1 standard error of the mean (SEM) from 1 to 5 s following stimulation: 6.5 \u00b1 0.6%. (B) Constriction to prolonged repeated pulses (100 ms, 0.43\u20130.6 Hz, 56\u2013145 s). Since different stimulus durations were used across animals, the time courses are aligned by onset and then by offset. N = 14 vessels from 7 animals. Anesthetized data from Figure 2I. (C) Single-vessel precision in awake animals. Average constriction of 14 vessels from 3 animals to a 100 ms pulse of two-photon stimulation using the spatial light modulator (SLM) when targeted with the light (red) and when not targeted (green). Population mean \u00b1 SEM: Targeted arterioles = 4.3 \u00b1 0.5%; Not targeted = 0.3 \u00b1 0.5%. Anesthetized data from Figure 4I.\n\n### Use of optogenetic stimulation to modulate sensory-evoked dilation\n\nWe next examined the utility of this technique to directly modulate the physiological dynamics of brain arterioles, thereby providing a novel means to dissociate vascular and neuronal responses in processes such as functional hyperemia and vasomotion. Modulation of physiological dynamics is possible because optogenetic activation of mural cells evokes rapid contraction within hundreds of milliseconds (Figure 11\u2014figure supplement 1), compared to the slower dynamics of neurovascular coupling, which occurs on the order of seconds (Silva et al., 2000; Hillman, 2014). We directly compared the response latency of optogenetically evoked constriction to visually evoked dilation in the same penetrating arterioles, and found much faster responses to the optogenetic stimulation (0.6 s to reach 25% of peak constriction) than to the visual stimulus (3.4 s to 25% peak dilation; Figure 11A \u2013 magenta vs. blue).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig11-v1.jpg)\n\n**Figure 11.:** (A) Pairing optogenetic stimulation with visual stimulation leads to reduced (green) or eliminated (red) visually evoked dilations compared to visual stimulation alone (blue). Vertical gray band at time 0 is optogenetic stimulation interval (100 ms) and black horizontal bars indicate visual stimulation duration (5 or 2 s, corresponding to long and short, respectively). Vertical dashed line at 9 s indicates time point of images shown in B. (B) Single-frame images showing penetrating arteriole 9 s after stimulus onset for the conditions with visual stimulation. Colored lines indicate the computed diameter of the vessel cross-section in the image.\n\n![Figure 11\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig11-figsupp1-v1.jpg)\n\n**Figure 11\u2014figure supplement 1.:** Time course of average of five arterioles that were imaged at high speed (15 Hz) to determine onset latency. Error band is standard deviation across runs. Blue curve is the fit to the data (see Methods). Vertical gray band is 100 ms light pulse. Right panel: Zoomed in view of plot around onset time for better visualization. Onset latency was computed as the point where the linear phase of the fit (baseline level) transitioned to the exponential phase (266 ms; 95% CI: 109\u2013423 ms).\n\n![Figure 11\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72802/elife-72802-fig11-figsupp2-v1.jpg)\n\n**Figure 11\u2014figure supplement 2.:** Population average (10 arterioles in 6 animals) diameter change to visual stimuli alone (blue) and when combined with optogenetic pulses (red: 1\u20133 100 ms pulses). Vertical gray band is the interval of the initial optogenetic stimulation pulse. Horizontal gray band is visual stimulus duration. The dashed right end indicates the range over which the visual stimuli ended in different animals (5\u20138 s). For a given vessel, the visual stimulus duration was the same in both conditions.\n\nAs a proof-of-principle experiment, we determined whether optogenetically driven constriction could alter sensory-evoked vasodilation. We presented 5 s of visual stimulation together with a brief 100 ms pulse of optogenetic stimulation. This led to a rapid constriction of the vessel followed by a dilation that was lower in amplitude than the dilation to the sensory stimulus alone (Figure 11A, B, green vs. blue). By reducing the visual stimulus duration from 5 to 2 s, the same light pulse completely suppressed the dilation phase of the vascular response following the initial rapid constriction (Figure 11A, B, red vs. blue). Similarly, using multiple pulses of light during the visual stimulation was also sufficient to eliminate the sensory-evoked vasodilation, as shown in population data across animals (Figure 11\u2014figure supplement 2). Thus, vasodilation to a sensory stimulus can be negated by optogenetic \u2018clamping\u2019 of arteriole diameter.\n\n## Discussion\n\nBuilding on techniques recently developed for all-optical interrogation of neurons (Packer et al., 2015; Carrillo-Reid et al., 2016; Marshel et al., 2019), we introduce a technique for all-optical interrogation of the brain vasculature. We expressed the red-shifted opsin ReaChR in vascular mural cells to control arteriole diameter rapidly and reversibly over a range of spatiotemporal scales in vivo. Single-photon activation produced widespread vasoconstriction across the full cranial window, whereas two-photon activation provided single-vessel control of constriction in 3D. Single brief pulses of light could produce robust vasoconstriction with rapid onset, and repeated light pulses could maintain prolonged constriction. Optical stimulation of mural cells expressing ReaChR is therefore a powerful approach for studying arteriole vasoconstriction and the spatiotemporal modulation of cortical blood flow, and for dissociating neuronal and vascular activity in complex processes such as neurovascular coupling and vasomotion.\n\nPrior studies have used the original variant of channelrhodopsin, ChR2 (H134R), to achieve vasoconstriction in vascular mural cells in vivo. One- and two-photon activation of ChR2 led to the gradual constriction of arterioles, requiring >20 s to reach a minimum diameter with near-constant activation (Hill et al., 2015; Tong et al., 2020a; Hartmann et al., 2021). In contrast, continuous activation of ReaChR in penetrating arterioles (using laser line scanning) led to a more rapid constriction, reaching a minimum in <15 s, that was greater in amplitude and returned to baseline more quickly. This suggests that ReaChR is superior to ChR2 for two-photon optogenetic studies of the vasculature, likely because of the higher photocurrent amplitude in ReaChR, compared to ChR2 (H134R), at their respective optimal excitation wavelengths (Lin et al., 2013). The improved tissue penetration of 1040 nm light used to activate ReaChR may also increase stimulation efficiency for parenchymal vessels (Chaigneau et al., 2016).\n\nReaChR is among the most potent red-shifted opsins for two-photon activation as shown in neurons (Chen et al., 2019), and its availability as a floxed mouse line allows vascular targeting experiments. Mural cells are not easily transduced in vivo using viral approaches. An additional advantage is that the optimal activation wavelength of ReaChR (>1000 nm) does not substantially interfere with imaging of common fluorophores, whereas two-photon ChR2 activation occurs around the imaging wavelengths used for calcium indicators such as Oregon Green or GCaMP (Prakash et al., 2012). This feature facilitates independent imaging of neural activity and vascular stimulation with separate laser lines.\n\nThe highly localized constriction seen following a focal activation differs from vasodilation responses seen during functional hyperemia. Following focal activation of neural tissue, vasodilatory signals propagate several millimeters from the activation site (Iadecola et al., 1997; Chen et al., 2011). This long-range propagation of dilation is attributed to endothelial cell signaling through gap junctions (Chen et al., 2014; Longden et al., 2017; Zechariah et al., 2020), and influences the spatial precision of vascular imaging (e.g., fMRI) signals (O\u2019Herron et al., 2016; Rungta et al., 2018; Drew, 2019). The lack of propagation seen when directly activating smooth muscle cells supports the notion that endothelial rather than smooth muscle cells mediate the long-range propagation of signals through vessel walls. However, differences in the propagation characteristics of hyperpolarizing (dilatory) versus depolarizing (constrictive) signals along the vascular wall may also play a role in the propagation range of the signals.\n\nWe anticipate that this technique will be useful for studies requiring assessment of vascular dynamics in vivo. The ability to directly modulate vessel diameter and blood flow levels with high spatiotemporal precision could be useful for understanding vascular wall kinetics. We have shown that it is possible to study the contractile kinetics of different vessel types within the microvascular network. Our data confirm the distinct kinetics across arterioles, ACT, capillary and venous zones, with slow contraction occurring in capillaries covered by \u03b1SMA-low/undetectable pericytes. These slow kinetics have implications for how contraction of capillary pericytes contribute to blood flow regulation, which is relevant to maintenance of basal capillary flow and flow heterogeneity (Hartmann et al., 2021; Berthiaume et al., 2022; Hartmann et al., 2022).\n\nThe ability to concurrently monitor neural and/or astrocytic activity alongside vessels during vascular manipulation opens additional opportunities to study questions on neuro\u2013glia\u2013vascular coupling. For example, offsetting stimulus-evoked dilations (Figure 11) while monitoring neural activity can shed light on how neuronal function depends on functional hyperemia (Moore and Cao, 2008). Neural circuits are extremely complex with many different subtypes of neurons playing different roles. These subtypes have been shown to have different metabolic sensitivities and thus, may be differentially affected by blocking functional hyperemia (Kann, 2016). Additionally, the energy budgets of different cellular functions within neurons are quite different (Howarth et al., 2012) and reducing available energy by blocking functional hyperemia could lead to differing degrees of dysfunction across key cellular processes (e.g., re-establishing the membrane potential, recycling neurotransmitters). These changes could lead to altered circuit activity which could have profound consequences for neural processing. Furthermore, it has been shown that there is a steep gradient of oxygen moving away from penetrating arterioles, and so neurons at greater distances from vessels may be differentially affected by blocking the hyperemic response (Devor et al., 2011).\n\nOptical control of arteriole tone can also be used to study \u2018vasculo-neuronal coupling\u2019, a process where alteration in vessel tone modifies neural and astrocyte signals. Theoretical (Moore and Cao, 2008) and brain slice (Kim et al., 2016) studies have proposed the existence of such processes. The direct, precise control of vessel diameter afforded by optogenetics provides a tool to study neuro\u2013glia\u2013vascular interactions in vivo. In addition, the role of vasomotion in clearance of metabolic waste through perivascular pathways could also be studied in more detail with spatiotemporal modulation of arteriole diameter in vivo (van Veluw et al., 2020).\n\nImpaired functional hyperemia is seen in numerous neurologic diseases, including acute injuries caused by ischemia (Summers et al., 2017), and during progressive, age-related pathologies such as cerebral amyloid angiopathy and other small vessel diseases (Niwa et al., 2002; Park et al., 2014). It is currently difficult to pinpoint the basis of impaired neurovascular responses, as defects could arise from loss of neuronal activation, vascular reactivity, coupling between these two processes, or a combination thereof. The ability to selectively block the vascular response with optogenetics provides cleaner access for probing neurovascular physiology and pathophysiology in vivo, independent of neural activity.\n\n## Materials and methods\n\nExperiments were performed at the Medical University of South Carolina (MUSC) and Augusta University (AU). All surgical and experimental procedures were approved by the Institutional Animal Care and Use Committees of the Universities (current AU protocol #0982).\n\n### Animals\n\nMice were generated at our Institutions by crossing heterozygous PDGFR\u03b2-Cre male mice (courtesy of Dr. Volkhard Lindner, Maine Medical Center Research Institute) with heterozygous female opsin mice (floxed ReaChR-mCitrine; Jackson Laboratories: Strain #026294). Control mice were generated by crossing the same PDGFR\u03b2-Cre males with Ai3 females (floxed YFP; Jackson Laboratories: Strain #007903). Bigenic progeny from these crosses displayed green fluorescence in the vasculature under blue illumination in tail snips or ear punches. Male and female mice were used aged 2\u201312 months.\n\n### Surgeries\n\nMice were anesthetized with a bolus infusion of fentanyl citrate (0.04\u20130.05 mg kg\u22121), midazolam (4\u20135 mg kg\u22121), and dexmedetomidine (0.20\u20130.25 mg kg\u22121) several hours after an intramuscular injection (0.03 ml) of dexamethasone sodium phosphate (4 mg ml\u22121). The heart and respiration rates of the animals were continually monitored throughout the surgeries using pulse oximetry (PhysioSuite, Kent Scientific). The scalp was excised, the skull cleaned, and a custom-made head-plate was fixed to the skull with C&B MetaBond quick adhesive cement (Parkell; S380). Craniotomies (2\u20133 mm) were opened over the primary visual cortex centered approximately 2.5 mm lateral to the lambda suture and 1\u20131.5 mm anterior to the transverse sinus. Craniotomies were sealed with a glass coverslip consisting of a round 3 mm glass coverslip (Warner Instruments; 64-0720 (CS-3R)) glued to a round 4 mm coverslip (Warner Instruments; 64-0724 (CS-4R)) with UV-cured optical glue (Norland Products; 7110). The coverslip was positioned with the 3 mm side placed directly over the cortical surface, while the 4 mm coverslip laid on the skull at the edges of the craniotomy. An instant adhesive (Loctite Instant Adhesive 495) was carefully dispensed along the edge of the 4 mm coverslip to secure it to the skull, taking care not to allow any spillover onto the brain. Lastly, the area around the cranial window was sealed with dental cement. Animals were given at least 3 weeks to recover and to ensure the window would be optically clear before imaging took place.\n\n### Animal imaging\n\nDuring imaging sessions, mice were anesthetized with ~30 \u00b5l chlorprothixene (1 mg ml\u22121, intramuscular) and low levels of isoflurane (\u22640.8%). Heart rate and respiration rate were continuously monitored to ensure consistent anesthetic depth and animals were kept on a heating pad to maintain body temperature. Either fluorescein isothiocyanate (FITC) dextran (MW = 2000 kDa) or Texas Red (70 kDa) dextran (5% [wt/vol] in saline) was injected retro-orbitally (20\u201340 \u00b5l) under an initial high level of isoflurane (>2%). When visual stimuli were presented, the injections were in the eye not being stimulated by the computer display monitor. Isoflurane levels were returned to \u22640.8% for at least 15 min before data collection began.\n\n### Awake imaging\n\nAnimals were gradually acclimated to awake head restraint on a treadmill allowing for voluntary locomotion. Imaging experiments were conducted following a minimum of 2 weeks of training. Animals were briefly anesthetized with >2% isoflurane while the retro-orbital injection of the vascular dye was performed. We then allowed 15 min to recover before beginning the imaging.\n\n#### Equipment\n\nImaging data were collected using the Ultima 2P-Plus two-photon microscope system (Bruker Corporation \u2013 see Figure 1C). At MUSC we used a beta version of the Ultima 2P-Plus. The major differences from the full version at AU were that the beta version did not have the 594 nm LED for single-photon stimulation or the electro-tunable lens (ETL). At MUSC, an Insight X2 (Spectra-Physics, MKS Instruments Inc) was used for imaging and a FemtoTrain (Spectra-Physics: 1040 nm, ~3.5 W average power; <370 fs pulse width; >350 nJ pulse energy) was used for optogenetic stimulation. At AU we used the tunable line from the Insight X3 (Spectra-Physics) for imaging and the fixed 1045 nm line (~4 W average power; <170 fs pulse width; ~44 nJ pulse energy) from the same laser for stimulation. Dedicated fixed wavelength lasers used for two-photon optogenetics typically have lower repetition rates and higher pulse powers than imaging lasers like the Insight X3. Nevertheless, despite the lower pulse energy, the fixed line from the Insight X3 was sufficient to evoke constrictions \u2013 even deep in the cortex. No differences were observed in the results obtained at the two institutions and so results were combined.\n\nPockels Cells (350-80, Conoptics) were used to control laser power. The stimulation beam was passed through an SLM (HSP512-1064, Meadowlark Optics) to create three-dimensional activation patterns. A dichroic mirror (reflectance band from 1010 to 1070 nm) combined the two lasers downstream of the galvanometer mirrors. Imaging was performed using Nikon objectives (CFI75 LWD 16X W and CFI75 Apochromat 25XC W 1300).\n\nBecause of the intensity of the stimulation light (for both single- and two-photon illumination) and the potential for extremely bright fluorescence from excitation via the stimulation laser, the PMT detectors were fitted with fast mechanical shutters which block incoming light during the optical stimulation periods. This is seen in all the videos as a brief dimming of the image when the stimulation light is on. Our strategy was to use brief stimulation intervals at low repetition rates to allow sufficient data on arteriole diameter to be measured between stimulus pulses.\n\nThe LED on the Ultima 2P-Plus was positioned in the light path on the collection side of the primary dichroic (Figure 1C). To send this light to the objective, a cube was positioned in the path between the PMT and the objective containing both a mirror that reflects a band of light around the LED wavelength (570\u2013605 nm) and a filter that blocks red light from reaching the PMT detectors (near-zero transmission band from 575 to 605 nm). This resulted in a modest reduction of the Texas Red signal in this mode.\n\n#### Optical stimulation\n\n##### A. Single-photon\n\nFor single-photon stimulation, we used a 594 nm LED. We used 100ms pulses of light. When a train of pulses was given, there were 100 ms between pulses. Details of the pulse timing are given in the figure legends.\n\n##### B. Two-photon\n\nFor two-photon stimulation, we used the SLM to split the stimulation laser beam into multiple spots (or beamlets). Each stimulation spot was spiraled over a small region (12\u201325 \u00b5m, five revolutions, one time per light pulse, see Figure 4\u2014figure supplement 1D) using the galvanometer mirrors to increase the area of activation (Packer et al., 2015; Carrillo-Reid et al., 2016). Single 100 ms pulses were typically used. Laser powers were typically 50\u2013200 mW per vessel, spread over four to six spots for pial arterioles, and two to three spots for penetrating arterioles. Although higher powers led to damage of vessel walls and dye leakage on the surface in pial arterioles, even the highest powers we used (>300 mW per vessel) in penetrating arterioles caused no visible damage or leakage. To determine the power of the stimulation spots, we used a power meter while presenting random patterns of four and six spots. It is not feasible to calibrate the power in each spot separately, and we therefore divided the overall power by the number of spots to obtain an estimate of the power of each spot. The total power varied somewhat (typically <10%) from pattern to pattern and the amount of power each spot receives depends on its position on the SLM (Mardinly et al., 2018). Since it was not possible to know what spot pattern was required until we were positioning them on the vessels, the exact power applied to each vessel in each experiment is an estimate.\n\n### Optical imaging\n\nImages were usually collected using resonant scanning mode at 3.75 frames s\u22121, except for Figure 11\u2014figure supplement 1 (15 frames s\u22121). Vessels were imaged at 875 nm when labeled with Texas Red-dextran and 800 nm when imaged with FITC dextran.\n\nAlthough 920 nm is in the tail of the activation spectrum for red-shifted opsins like ReaChR (Chaigneau et al., 2016), wavelengths in this range are typically used in all-optical (activation and imaging) neural approaches (Packer et al., 2015; Carrillo-Reid et al., 2016; Marshel et al., 2019). These previous studies reported that low laser powers for imaging prevents photo-activation from the imaging laser. We typically imaged Texas Red at 875 nm and saw no evidence that the imaging laser led to vasoconstriction. When we imaged at 920 nm, we did see slight constrictions in pial arterioles with moderate power levels (>20 mW), but under normal conditions, the vascular dye was sufficiently bright to reduce imaging power below these levels and eliminate constriction caused by the imaging laser. The possibility of constriction due to the imaging laser is important to keep in mind when choosing an opsin/indicator combination. Although more sensitive opsins are usually desirable because less light is needed to activate them and the stimulation beam can be split into more beamlets, it will also make the cells more readily activated by the imaging laser.\n\nIt is also important to consider the effects of the emitted fluorescence on the opsin. Texas Red emission overlaps the excitation peak for single-photon activation of ReaChR. This feature was elegantly used in a recent study as a method for spatially precise single-photon excitation (Tong et al., 2020b; Tong et al., 2020a). While we did not see evidence of a constant constriction during imaging caused by the emission of Texas Red (further constriction was always possible and vessels did not rapidly constrict at the start of an imaging run), the constriction seen with higher imaging powers that we attributed to imaging laser activation may have at least in part been caused by indirect actions of Texas Red emission on ReaChR.\n\n### Visual stimuli\n\nDrifting square-wave grating stimuli were presented on a 17-inch LCD monitor. The gratings were presented at 100% contrast, 30 cd m\u22122 mean luminance, 1.5 Hz temporal frequency, and 0.04 cycles/degree. The visual stimulus and the optogenetic pulses were both controlled by the imaging software, ensuring that the onset of both stimulation types were synchronized.\n\n### Data analysis\n\nData were analyzed in Matlab (Mathworks) and ImageJ (National Institutes of Health). Blood vessel diameters were computed frame-by-frame using custom Matlab scripts (O\u2019Herron et al., 2016; O\u2019Herron et al., 2020; https://github.com/poherron/Vessel-Diameter-Code (copy archived at swh:1:rev:0d0dbe783ae4c9d61f5e40eee0b00814395586d7; O\u2019Herron, 2022). Diameters were normalized by the average of 15 frames prior to stimulation onset. Repetitions were aligned by the onset of the optical stimulation when averaged together. The latency of constriction (Figure 11\u2014figure supplement 1) was computed using the Curve Fitting toolbox in Matlab. A two-phase equation was fit to the diameter time-course data (see O\u2019Herron and von der Heydt, 2011), where phase one was a constant (the baseline diameter) and phase two was an exponential curve (following the constriction phase of the response). The fit is given by:\n\n$A.phase\u00a0one\u00a0(t)+[A+C(exp(\u2212(t\u2212t_{1})/\\tau)\u2212C)].phase\u00a0two\u00a0(t)$\n\nwhere phase one (t) = ${1\u00a0for\u00a0t<t_{1}0\u00a0else}$ and phase two (t) = ${1\u00a0for\u00a0t_{1}\\leqt<2\u00a0seconds0\u00a0else}$.\n\nA is a constant representing the baseline value (nearly 0), C is the amplitude of the exponential, and \u03c4 is its time constant. The time point where the fit switches between the two phases is the parameter t1, which gives the onset latency. The data to fit are cut off at 2 s which was determined by eye to be near the rising phase of the response.\n",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "f1f1a00c-02f5-4568-a21c-13e079afd630",
+      "submission_id": "91e86610-c5fd-4b7e-a0bb-a2b5df6a556c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark T Nelson, https://ror.org/0155zta11 University of Vermont United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72802.sa0](https://doi.org/10.7554/eLife.72802.sa0)\n\nThis paper will likely be of keen interest to researchers investigating vasculo-neuronal coupling \u2013 a proposed signaling mode opposite that of the more widely studied neuro-vascular coupling process. The optogenetics method described, inspired by methodology developed for interrogating ensembles of neurons, effectively enables simultaneous manipulation and monitoring of brain arteriole contractility in three dimensions.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mark T Nelson, https://ror.org/0155zta11 University of Vermont United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72802.sa1](https://doi.org/10.7554/eLife.72802.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Precise, 3-D optogenetic control of the diameter of single arterioles in vivo\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Mark T Nelson as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Ronald Calabrese as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Anna Devor (Reviewer #2); Ravi Rungta (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The red-shifted opsin, ReaChR, represents an improvement over opsins used in previously described 3D neuronal activation/monitoring systems. In particular, brief single-photon stimulation (100 ms) of ReaChR led to rapid, robust arteriole constrictions throughout the activation volume, whereas a previous generation ChR2 opsin required stimulation for seconds to achieve slowly appearing constrictions.\n\n2. Single-photon stimulation was capable of completing stopping blood flow in a \"first order pre-capillary branch\". (Not clear what is meant by the phrase \"pre-capillary branch\"; anatomically, penetrating arterioles feed capillary branches.) While this speaks to the effectiveness of the method, it also highlights potential supraphysiological effects of stimulation and the importance of titrating stimulus intensity/duration to achieve physiologically meaningful responses.\n\n3. In assessing effects of laser power, the authors assert that \"increasing the laser power only slightly expanded the range of constriction\". This seems a bit of an overstatement, given that increasing power (30-fold) had a greater effect on the spread (3x) than the magnitude (2x) of the response.\n\n4. The suggestion that penetrating brain arterioles possess a mechanism for upstream conduction of constrictive responses is intriguing (although this intrigue is tempered by the lack of experimental support for the operation of such a mechanism in the brain microvasculature).\n\n5. The authors' premise for comparing contractile kinetics with sensory-evoked kinetics has issues. In attempting to use the kinetics of optogenetic-induced constriction to infer something about the kinetics of sensory-evoked dilation, they are implicitly assuming that the kinetics of contraction and dilation processes intrinsic to mural cells are the same. This is highlighted by their use of the phrase \"kinetics of the vasculature\", which elides the possibility that dilation and contraction kinetics intrinsic to mural cells are different. Support for this latter possibility is provided by a previous report on renal afferent arterioles showing that the kinetics of myogenic constriction in arterioles are \"substantially faster\" than those of dilation (PMID: 24173354). Thus, their data do not rule out the possibility that the delay between sensory stimulation and vascular response reflects a slower intrinsic dilatory response rather than the time course of neurovascular coupling mechanisms. Furthermore, arterioles have an internal elastic lamina (IEL), which also determines the rates and degree of constriction and dilation. The IEL ends with the arterioles, and vessels with ensheathing contractile pericytes (and downstream) lack the constraints of the IEL.\n\n6. It's not at all clear how overriding sensory-evoked dilation with optogenetically generated constriction provides a means for distinguishing neural activity from vascular responses. In particular, it is not clear how performing this maneuver while monitoring neuronal activity can provide the suggested insight into \"aspects\" of functional hyperemia that are essential to neuronal function beyond the relatively trivial observation that there is a point at which blood flow is too low to support continued neuronal activity.\n\n7. Presentation of high vs. low numerical aperture (NA) effects on X-Y and Z resolution is muddled. For high NA, the authors emphasize that the spread of constricting effects is greater in the Z plane than the X-Y plane. For low NA, they note \"constrictions over a larger Z-range\" (apparently compared to high NA but not clear), without indicating what the spread is in the X-Y plane. This leaves an apples-to-oranges comparison: greater spread in the Z plane compared with X-Y plane for low NA on the one hand versus greater spread in the Z plane with high NA compared with spread in the Z plane with low NA on the other. Need to show the same data for low and high NA (or make the rationale for the comparisons they do show clearer).\n\n8. The authors write in very vague terms about potential applications of their methodology. They should make a greater effort to think through possible experimental applications and clearly present them.\n\n9. Given the chronic nature of the optical window, it is not clear why imaging was done under anesthesia. This point requires explanation. There is a concern that targeting of the vessel wall not possible in awake animals due to brain motion. If yes, that would be a serious limitation of the methodology.\n\n10. A major limitation of the technique is the poor axial point spread function of the SLM ReaChR activation. Although it is to be expected that the axial PSF is worst than the lateral PSF, the results are quite dramatic (with arteriole constriction being triggered when the SLM pattern is focused 150um from the arteriole, and at equivalent magnitude 200um away with the 0.8NA objective Figure 5-1). I think these experiments are important, but it would be helpful to provide some more control experiments to further characterize and help resolve the reason for this effect.\n\n11. The bleach spots from their control experiment with the SLM focused 200um above or below the imaging plane, are not nearly the same size as the large axial PSF of the evoked constriction. One difference between the bleaching experiment and the SLM stimulation is that in the case of the SLM stimulation multiple spots are generated. Would it be possible to perform the bleaching control using the exact multi-spot pattern used for the experiments to ensure the multi spot pattern is not causing the SLM to generate a weird pattern in the z-plane?\n\n12. Is it possible that there is still some 1-photon activation of ReaChR at 1040nm? This may be unlikely, but from the spectrum I found (Lin et al., 2013, PMID: 23995068), it was only tested up to 650 nm and the spectrum is quite broad with significant current evoked at all wavelengths tested.\n\n13. If it is truly due to 2P activation generated within the cone of light, then this suggests that far higher power than necessary is being used (see work by Rickgauer and Tank \u2013 PMID: 19706471). In Figure 4 for example, the authors are able to trigger a nice local constriction with 5mW total spot power (>20 times less than is being used in the other experiments). If the same axial precision experiments are done with lower power does the constriction \"PSF\" decrease in width? Consistent with this idea, what is the result if the authors bypass the SLM and make a point scan 200um above the vessel at 115mW? Do they still trigger a constriction due to excitation with the cone of light? Finally, if the authors perform the experiment in Figure 3D (where they show nice xy precesion) and were then to move the focus of the SLM up in the z-plane, would they maintain this lateral specificity across the z-plane? It is important to properly characterize this axial \"PSF\" to establish power limitations for future studies.\n\n14. Also as stated in the public review, although the authors state numbers of mice tested in the figure legends, the paper seems to be mostly composed of representative examples without quantification of the results across the other mice on which the method was tested. It is important to provide the average numbers and variability of all the experiments (either directly in the figures, or in the main text). Without this information, it is not possible to get a sense of reproducibility and variability.\n\n15. The authors make comparisons between ReaChR and ChR2, although vascular dynamics are not directly compared between the 2 opsins using the same stimulation paradigm (e.g. line 94, This robust constriction (~20% from baseline level) to such a brief light stimulation is in stark contrast to activation with ChR2, where sustained stimulation over seconds was required for slow constrictions to appear (Hill et al., 2015; Tong et al., 2020a; Hartmann et al., 2021)), Although I appreciate that ReaChR may be preferable, the difference in kinetics of their vascular response is likely predominantly due to the nature of the stimulation (raster scanning vs. flood illumination or SLM) used here, rather than a difference in the opsin (ReaChR vs ChR2) as stated in this sentence. Supporting this thought, previous work has indeed shown rapid dilations and constrictions induced by activation of excitatory and inhibitory opsins with single photon epi-illumination (e.g. Abe et al., 2021, PMID: 34320360; Mateo et al., 2017, PMID: 29107517). The authors should modify the text appropriately. It would also be a nice (although not ultimately necessary) addition to compare their results with the SLM to raster / line scanning 2P activation of ReaChR on arterioles.\n\n16. The mouse line used in this paper results in ReaChR expression in pericytes in addition to SMCs. The study would benefit from a brief description of what happens when they stimulate capillary pericytes with the SLM in comparison to their recently published results (Hartmann et al., 2021 \u2013 Nat Neurosci)?\n",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cf96d4aa-df3c-4449-b404-0b2c4451029f",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C1",
+      "claim": "The brain consumes 20% of the body's energy supply despite being only 2% of its weight.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain is a metabolically demanding organ, consuming 20% of the body's energy supply despite being only 2% of its weight (Clark and Sokoloff, 1999; Raichle and Gusnard, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Clark and Sokoloff, 1999 and Raichle and Gusnard, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "faabea05-83c9-41c9-8b6f-6d96e75b300e",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C2",
+      "claim": "Brain arterioles dilate transiently in response to local increases in neural activity, a process called functional hyperemia.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure an adequate supply of oxygen and nutrients, brain arterioles dilate transiently in response to local increases in neural activity \u2013 a process called functional hyperemia (Iadecola, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Iadecola, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "cfc7a08a-a0e5-4a07-af78-1828d9a409b1",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C3",
+      "claim": "Vascular dynamics underlie hemodynamic imaging techniques such as BOLD fMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "These vascular dynamics underlie hemodynamic imaging techniques used to map regional neural activity, such as blood oxygenation level-dependent functional magnetic resonance imaging (BOLD fMRI) (Logothetis and Wandell, 2004; Vanzetta et al., 2014; Raichle and Mintun, 2006; Howarth et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies on hemodynamic imaging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "5a3af642-f37f-4e88-bfc4-38b663bd03d1",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C4",
+      "claim": "Arteriole dynamics are crucial in buffering the brain from fluctuations in systemic blood pressure (autoregulation).",
+      "claim_type": "EXPLICIT",
+      "source": "Arteriole dynamics are also crucial in buffering the brain from fluctuations in systemic blood pressure (autoregulation), and in driving clearance of metabolic waste products from the brain along perivascular spaces (Cipolla, 2009; Zhao et al., 2015; Iadecola, 2017; Presa et al., 2020; van Veluw et al., 2020; Rasmussen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "9cb6ed4a-8862-43f5-b2b9-7ed422e0b820",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C5",
+      "claim": "Arteriole dynamics drive clearance of metabolic waste products from the brain along perivascular spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Arteriole dynamics are also crucial in buffering the brain from fluctuations in systemic blood pressure (autoregulation), and in driving clearance of metabolic waste products from the brain along perivascular spaces (Cipolla, 2009; Zhao et al., 2015; Iadecola, 2017; Presa et al., 2020; van Veluw et al., 2020; Rasmussen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "7d6e3352-a80c-45a3-92df-06c03ee93499",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C6",
+      "claim": "Deterioration of neurovascular coupling, cerebral perfusion, and brain clearance contributes to the pathogenesis of many neurologic disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Proper regulation of arteriole dynamics is essential to healthy brain function, as deterioration of neurovascular coupling, cerebral perfusion, and brain clearance contributes to the pathogenesis of many neurologic disorders (Gorelick et al., 2011; Iadecola, 2013; Snyder et al., 2015; Sweeney et al., 2018; Rasmussen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies on neurologic disorders.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "94f710e5-e6b0-4f73-97de-67579596e8ea",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C7",
+      "claim": "In vivo studies of functional hyperemia typically engage vascular dynamics indirectly by activating neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo studies of functional hyperemia typically engage vascular dynamics indirectly by activating neurons (e.g., with sensory stimulation), which in turn leads to the hemodynamic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about how functional hyperemia studies are conducted.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "671584fa-5d3b-4f88-bf18-d9d6067e9929",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C8",
+      "claim": "Impaired vascular responses in disease may be due to reduced neural activity, altered neurovascular coupling, or loss of compliance in the vascular wall.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, impaired vascular responses in disease may be due to reduced neural activity, altered neurovascular coupling, or loss of compliance in the vascular wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference about potential causes of impaired vascular responses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "411a8b28-4266-4b7e-a62e-f728451bb588",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C9",
+      "claim": "Pharmacological approaches or systemic manipulations do not provide spatiotemporal specificity for microvessels in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The need to modulate arteriole diameter and/or blood flow independently from neural activation has led to the use of pharmacological approaches or systemic manipulations (such as a CO2 challenge or modulation of systemic blood pressure) (Kara and Friedlander, 1999; Leithner et al., 2010; Tarantini et al., 2015; Masamoto and Vazquez, 2018). However, these methods do not provide spatiotemporal specificity for microvessels in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations and logical inference about the limitations of these methods.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "b86663c9-4758-41e3-8226-d36afa18685d",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C10",
+      "claim": "Intracortical injection of vasoactive substances improves spatial specificity but remains low throughput and can act on nonvascular cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracortical injection of vasoactive substances improves spatial specificity (Cai et al., 2018), but remains low throughput and can act on nonvascular cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation and inference about the limitations of this method.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "117f8427-34c7-4c1a-bc69-136e4979e9d3",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C11",
+      "claim": "Wide-field activation of ChR2 with visible wavelength light affects vessels over a large region and predominantly activates the superficial vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "Most studies to date have used wide-field activation of ChR2 with visible wavelength light. However, this technique affects vessels over a large region and predominantly activates the superficial vasculature, limiting the spatial resolution achieved (Wu et al., 2015; Zhang et al., 2015; Rorsman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies using ChR2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "fd838e4c-7eb6-43f0-a712-868156d0e3bd",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C12",
+      "claim": "Two-photon optogenetic activation allows deeper imaging and more precise spatial control than single-photon activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon optogenetic activation allows deeper imaging and more precise spatial control than single-photon activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about two-photon versus single-photon techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "b0ca1547-4a61-4b72-80ff-4c0cab9bfab6",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C13",
+      "claim": "ReaChR potently depolarizes cells when illuminated with red light.",
+      "claim_type": "EXPLICIT",
+      "source": "ReaChR potently depolarizes cells when illuminated with red light (Lin et al., 2013), and exhibits peak two-photon activation efficiency at ~1000 nm (Chaigneau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "e44b509a-27b5-46b3-b8c9-670ea4dc5e3e",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C14",
+      "claim": "ReaChR exhibits peak two-photon activation efficiency at ~1000 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "ReaChR potently depolarizes cells when illuminated with red light (Lin et al., 2013), and exhibits peak two-photon activation efficiency at ~1000 nm (Chaigneau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chaigneau et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "32dd5ffc-d98d-4d17-bb25-fd74e2dc280a",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C15",
+      "claim": "PDGFR\u03b2-Cre mice allow expression of ReaChR in vascular smooth muscle cells and pericytes with negligible off-target expression in neurons or astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "To selectively express ReaChR in mural cells, we crossed floxed ReaChR reporter mice with PDGFR\u03b2-Cre mice (see Methods; Figure 1A), which allows expression of ReaChR tagged with mCitrine in vascular smooth muscle cells and pericytes, with negligible off-target expression in neurons or astrocytes (Hartmann et al., 2015; Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hartmann et al., 2015 and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "24ce2606-cd36-42bd-9631-69995ea4dcfc",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C16",
+      "claim": "A single 100 ms pulse of 594 nm LED light led to rapid and widespread constriction of pial arterioles.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a single 100 ms pulse of light led to the rapid and widespread constriction of pial arterioles, which then relaxed back to baseline values within 30 s of activation (Figure 2A\u2013D; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A-D and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "6003ff07-64ef-4eae-905c-f7057f530bf9",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C17",
+      "claim": "Pial arterioles relaxed back to baseline values within 30 s of activation following a single 100 ms pulse of light.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a single 100 ms pulse of light led to the rapid and widespread constriction of pial arterioles, which then relaxed back to baseline values within 30 s of activation (Figure 2A\u2013D; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A-D and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "4d0f9493-988e-4da2-b5d7-22671b71c53f",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C18",
+      "claim": "A weaker constriction (~2\u20133%) was observed in pial venules following single-photon activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a weaker constriction (~2\u20133%) in the pial venules (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "f1f2c9b9-ff37-4b14-87ec-91e1e84c8b1f",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C19",
+      "claim": "The venous response was likely a passive deflation due to widespread reduction in blood flow caused by arteriole constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although some expression of the opsin was seen in venous mural cells (Figure 1B), the venous response was likely a passive deflation due to widespread reduction in blood flow caused by arteriole constriction given its slower time-course relative to arterioles (Masamoto and Vazquez, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data and supported by a citation to Masamoto and Vazquez, 2018.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "7ae563ba-df3e-4040-8a0f-8b34fd2d9eaa",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C20",
+      "claim": "Penetrating arterioles at least 300 \u00b5m deep in the cortex constricted with single-photon activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that penetrating arterioles at least 300 \u00b5m deep in the cortex constricted with single-photon activation (Figure 2E\u2013G; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E-G and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "c8dd4290-7c0b-451b-9aa0-518bb4806610",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C21",
+      "claim": "Repeated trains of 100 ms pulses sustained penetrating arteriole constriction at 10\u201320% below baseline levels for over a minute.",
+      "claim_type": "EXPLICIT",
+      "source": "When we applied repeated trains of 100 ms pulses, we were able to sustain penetrating arteriole constriction at 10\u201320% below baseline levels for over a minute while simultaneously imaging in between each pulse train (Figure 2H, I; Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2H, I and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "49d3b1c7-908a-45d5-97db-b9c3c90d6477",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C22",
+      "claim": "Single-photon activation of ReaChR in smooth muscle cells causes rapid and robust vasoconstriction and reduced blood flow to the parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results show that single-photon activation of ReaChR in smooth muscle cells causes rapid and robust vasoconstriction and reduced blood flow to the parenchyma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental data presented in the preceding sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "c1014381-ed1e-4ec0-b75b-890db2c4a4ca",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C23",
+      "claim": "Vasoconstriction was evoked only when the stimulation spots were contacting the vessel wall.",
+      "claim_type": "EXPLICIT",
+      "source": "With this method, vasoconstriction was evoked only when the stimulation spots were contacting the vessel wall (Figure 4A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "69dc9987-4023-440f-a0d4-41a7ecc1bf12",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C24",
+      "claim": "No vasoconstriction was evoked when the edges of the stimulation spots were 10 \u00b5m from the vessel wall.",
+      "claim_type": "EXPLICIT",
+      "source": "No vasoconstriction was evoked when the edges of the stimulation spots were 10 \u00b5m from the vessel wall, indicating high spatial precision in the X\u2013Y plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "c1755829-2337-451e-8464-b0124361a1e9",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C25",
+      "claim": "Two neighboring branches of a pial arteriole, separated by ~100 \u00b5m, could be constricted independently with no overlap of constrictive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to constrict two neighboring branches of a pial arteriole, separated by ~100 \u00b5m, independently with no overlap of constrictive responses (Figure 4F\u2013I; Videos 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F-I and Videos 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "595e0b2e-4167-4faf-907d-76410bacb072",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C26",
+      "claim": "Venule branches did not constrict to two-photon activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also used this spatial precision to directly target venules independently of arterioles. Venule branches did not constrict to two-photon activation (Figure 4\u2014figure supplement 1), supporting our assertion that the constriction seen earlier with single-photon activation (Figure 2B\u2013D) was likely a passive effect of the widespread arteriolar constriction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "a8c72421-9468-441b-91d6-6a9734f7ef45",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C27",
+      "claim": "Individual penetrating arterioles 200 \u00b5m below the cortical surface could be constricted independently of neighboring arterioles.",
+      "claim_type": "EXPLICIT",
+      "source": "We imaged a region with two penetrating arterioles 200 \u00b5m below the cortical surface. By splitting the stimulation beam and positioning spots over each vessel, we were able to constrict each vessel independently of the other (Figure 4J\u2013M), showing precise control of vascular diameter between neighboring penetrating arterioles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4J-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "dc346cff-42e7-42a3-b927-c0f4f8557f9b",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C28",
+      "claim": "A 30-fold increase in power (from 5 to 150 mW total power) led to ~threefold increase in the spread of constriction (from ~25 to ~75 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that increasing the laser power led to a small increase in the spread of constriction. For example, a 30-fold increase in power (from 5 to 150 mW total power) led to ~threefold increase in the spread of constriction (from ~25 to ~75 \u00b5m) (Figure 5A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "24ac3be2-3bc0-47c6-ae26-5f15371278b3",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C29",
+      "claim": "High powers (typically >200 mW total across four to six spots) on pial arterioles frequently caused i.v. dye extravasation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the threshold for damage varied depending on vessel size and the number and arrangement of the stimulation spots, we frequently observed that high powers (typically >200 mW total across four to six spots) on pial arterioles caused i.v. dye extravasation, and this was occasionally accompanied by widespread vasoconstriction (Figure 5\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations and Figure 5\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "5cd1d985-f427-4466-aad1-25bc4acee1af",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C30",
+      "claim": "At laser powers routinely used to induce vasoconstriction in ReaChR mice (<200 mW), no constrictions were observed in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at laser powers routinely used to induce vasoconstriction in ReaChR mice (<200 mW), we never observed constrictions in control mice (Figure 5\u2014figure supplement 1; Figure 5\u2014videos 4; 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1 and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "b4f38a6b-c13d-424d-8abb-51fc8e869598",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C31",
+      "claim": "Focal constrictions seen at lower laser powers are ReaChR dependent and not attributable to direct effects of light on blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that the focal constrictions seen at lower laser powers are ReaChR dependent and not attributable to direct effects of light on blood vessels (Rungta et al., 2017; Rorsman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "8bb31d6e-cbcc-4080-bbfe-5762ef0a391f",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C32",
+      "claim": "When spots were focused 100 \u00b5m above or below the vessel at 115 mW total power, the vessel constricted approximately 25\u201335% of the magnitude caused by direct stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "When spots were focused 100 \u00b5m above or below the vessel at 115 mW total power, the vessel constricted approximately 25\u201335% of the magnitude caused by direct stimulation of the vessel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "de3e7eab-c0b7-4c5d-91c4-d696c6d881ef",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C33",
+      "claim": "At 150 \u00b5m below the vessel, constriction dropped to ~10%.",
+      "claim_type": "EXPLICIT",
+      "source": "At 150 \u00b5m below the vessel, constriction dropped to ~10% (Figure 6C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "e17ddd50-11a2-4637-98b4-6b59407c45cb",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C34",
+      "claim": "Constriction was greater when the stimulation was above the pial surface than when it was deeper in the tissue, likely due to increased light scattering when penetrating the cortical tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Constriction was greater when the stimulation was above the pial surface than when it was deeper in the tissue, likely due to increased light scattering when penetrating the cortical tissue (Figure 6D \u2013 compare 'above pia' with 'parenchyma').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 6D and inference about light scattering.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "29114583-f018-49ec-af80-0c34b3e7275d",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C35",
+      "claim": "Lower laser powers (20\u201344 mW) resulted in pial arteriole constriction which was almost exclusively restricted to the stimulation plane.",
+      "claim_type": "EXPLICIT",
+      "source": "While the higher laser power used in Figure 6C, D showed substantial axial spread, lower laser powers (20\u201344 mW) resulted in pial arteriole constriction which was almost exclusively restricted to the stimulation plane, although the magnitude of the constrictive response was reduced (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "842bd037-4318-4c16-b05e-edcccc1cee59",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C36",
+      "claim": "When the stimulation spots were laterally offset from the vessel wall, vasoconstriction was greater when stimulating 50\u2013150 \u00b5m below the imaging plane than in the imaging plane.",
+      "claim_type": "EXPLICIT",
+      "source": "When the stimulation spots were laterally offset from the vessel wall, vasoconstriction was greater when stimulating 50\u2013150 \u00b5m below the imaging plane than in the imaging plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "7163a6ee-e219-4de9-bf90-8a9f328ea66d",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C37",
+      "claim": "Lower powers (20\u201330 mW) could constrict penetrating arterioles in the stimulation plane with little spread to the superficial plane.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lower powers (20\u201330 mW) could constrict penetrating arterioles in the stimulation plane with little spread to the superficial plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "46342d47-3367-49f2-85de-84173770cf30",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C38",
+      "claim": "With moderate powers (~70 mW), near maximal constriction could be achieved but this led to ~50% constriction in the superficial plane.",
+      "claim_type": "EXPLICIT",
+      "source": "With moderate powers (~70 mW), near maximal constriction could be achieved but this led to ~50% constriction in the superficial plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "ffd2fb9a-3075-4a29-a51f-c79246910466",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C39",
+      "claim": "With higher power (>150 mW), near maximal constriction could be achieved in both planes.",
+      "claim_type": "EXPLICIT",
+      "source": "With higher power (>150 mW), near maximal constriction could be achieved in both planes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "2efbf050-d9af-4f53-bab4-4f58148b7ec0",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C40",
+      "claim": "Brief pulses of single-photon excitation with the 594 nm LED led to ~14% constriction of penetrating arterioles, ~5% constriction of ACT vessels, and a small ~1% constriction of capillaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief pulses of single-photon excitation with the 594 nm LED led to ~14% constriction of penetrating arterioles, ~5% constriction of ACT vessels, and a small ~1% constriction of capillaries (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "dbae0778-44af-4d02-a95a-d95a74e9df9e",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C41",
+      "claim": "Single pulses of two-photon stimulation led to minimal (~1%) constriction of ACT vessels and no constriction in capillaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Single pulses of two-photon stimulation, which elicited robust constriction in penetrating arterioles, led to minimal (~1%) constriction of ACT vessels and no constriction in capillaries (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "5b2d79e0-b78d-49e6-bf18-6cbbe53c9931",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C42",
+      "claim": "Repeated pulses of light with the SLM for 40 s led to ~3\u20134% constriction in ACT vessels and negligible constriction in capillaries.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if more prolonged stimulation of ReaChR would induce constriction, we applied repeated pulses of light with the SLM for 40 s (Figure 8D). While ACT vessels constricted by ~3\u20134%, capillaries still showed negligible constriction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "c8789022-1b5e-4314-b728-36aa65498c5c",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C43",
+      "claim": "Continuous line-scan stimulation at 1045 nm led to rapid constriction in penetrating arterioles and slower constrictions in ACT vessels and capillaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous line-scan stimulation at 1045 nm led to rapid constriction in penetrating arterioles and slower constrictions in the other vessel categories (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "42515cd1-0203-4915-b32a-8759222f98df",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C44",
+      "claim": "Capillaries exhibited a gradual constriction over 60 s of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our prior findings (Hartmann et al., 2021), capillaries exhibited a gradual constriction over 60 s of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "c58d3ce9-f298-4936-b574-876bacc997f3",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C45",
+      "claim": "Constriction of both capillaries and ACT vessels reached a maximum of ~10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Constriction of both capillaries and ACT vessels reached a maximum of ~10% (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "5d280ded-c71b-4193-98ae-1f33d1d623a0",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C46",
+      "claim": "Near continuous stimulation provided by line scans is necessary to constrict the smallest microvessels.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that near continuous stimulation provided by line scans is necessary to constrict the smallest microvessels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "cd90a9f6-60d1-4d80-9f4a-caa1bc9ce7ca",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C47",
+      "claim": "Capillaries showed similar, slow contractile dynamics with both ReaChR and ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Capillaries showed similar, slow contractile dynamics with both opsins, but ACT vessels and penetrating arterioles exhibited more rapid initial constriction with ReaChR compared to ChR2 vessels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of experimental data from ReaChR and ChR2 mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "6404198c-4c84-4d68-a4ef-a2aa88c409c0",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C48",
+      "claim": "ACT vessels and penetrating arterioles exhibited more rapid initial constriction with ReaChR compared to ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Capillaries showed similar, slow contractile dynamics with both opsins, but ACT vessels and penetrating arterioles exhibited more rapid initial constriction with ReaChR compared to ChR2 vessels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of experimental data from ReaChR and ChR2 mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "f0f9c338-d487-4cc1-b300-e76a66de81e1",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C49",
+      "claim": "Brief pulses of light from the LED evoked rapid robust constrictions in awake animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the anesthetized animals, brief pulses of light from the LED evoked rapid robust constrictions and the constrictions could be maintained with repeated light pulses (Figure 10A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 10A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "cc32b9e7-a4e9-48be-801a-9c741fb98770",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C50",
+      "claim": "Two-photon activation provided single-vessel precision of vasoconstriction in awake animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, two-photon activation provided single-vessel precision of vasoconstriction (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "7f192390-44d1-4f5a-832b-6093411cf3e1",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C51",
+      "claim": "There was a slight decrease in constriction amplitude and faster return-to-baseline in awake versus anesthetized animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, there was a slight decrease in constriction amplitude and faster return-to-baseline in awake versus anesthetized animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of experimental data from awake and anesthetized animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "0c9e8b79-666a-4a7e-ace8-ca38aa2ba2ea",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C52",
+      "claim": "Optogenetic activation of mural cells evokes rapid contraction within hundreds of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Modulation of physiological dynamics is possible because optogenetic activation of mural cells evokes rapid contraction within hundreds of milliseconds (Figure 11\u2014figure supplement 1), compared to the slower dynamics of neurovascular coupling, which occurs on the order of seconds (Silva et al., 2000; Hillman, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 11\u2014figure supplement 1 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "a4d60382-1c9c-4ad4-98bb-0e2c6f28d0a0",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C53",
+      "claim": "Neurovascular coupling occurs on the order of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Modulation of physiological dynamics is possible because optogenetic activation of mural cells evokes rapid contraction within hundreds of milliseconds (Figure 11\u2014figure supplement 1), compared to the slower dynamics of neurovascular coupling, which occurs on the order of seconds (Silva et al., 2000; Hillman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Silva et al., 2000 and Hillman, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "f9fc7f1d-27c7-4839-95a5-8ce2db7a797b",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C54",
+      "claim": "Optogenetic stimulation showed much faster response latency (0.6 s to reach 25% of peak constriction) than visual stimulation (3.4 s to 25% peak dilation).",
+      "claim_type": "EXPLICIT",
+      "source": "We directly compared the response latency of optogenetically evoked constriction to visually evoked dilation in the same penetrating arterioles, and found much faster responses to the optogenetic stimulation (0.6 s to reach 25% of peak constriction) than to the visual stimulus (3.4 s to 25% peak dilation; Figure 11A \u2013 magenta vs. blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 11A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "bc0d0e95-1be3-4325-b6da-aca1a0330936",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C55",
+      "claim": "A 100 ms pulse of optogenetic stimulation combined with 5 s of visual stimulation led to a rapid constriction followed by a dilation that was lower in amplitude than the dilation to the sensory stimulus alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We presented 5 s of visual stimulation together with a brief 100 ms pulse of optogenetic stimulation. This led to a rapid constriction of the vessel followed by a dilation that was lower in amplitude than the dilation to the sensory stimulus alone (Figure 11A, B, green vs. blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 11A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "f100c030-61eb-4bdb-9a91-640c48a6823f",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C56",
+      "claim": "Reducing the visual stimulus duration from 5 to 2 s with the same light pulse completely suppressed the dilation phase of the vascular response.",
+      "claim_type": "EXPLICIT",
+      "source": "By reducing the visual stimulus duration from 5 to 2 s, the same light pulse completely suppressed the dilation phase of the vascular response following the initial rapid constriction (Figure 11A, B, red vs. blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 11A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "41e98b52-98b8-4e35-bb16-8a2f9e3cf1e7",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C57",
+      "claim": "Using multiple pulses of light during the visual stimulation was sufficient to eliminate the sensory-evoked vasodilation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, using multiple pulses of light during the visual stimulation was also sufficient to eliminate the sensory-evoked vasodilation, as shown in population data across animals (Figure 11\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 11\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "8cea9324-7e1f-405e-a7be-411069770a6a",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C58",
+      "claim": "Vasodilation to a sensory stimulus can be negated by optogenetic 'clamping' of arteriole diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, vasodilation to a sensory stimulus can be negated by optogenetic 'clamping' of arteriole diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "687f93e2-395d-489b-ba17-926666ecf5c1",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C59",
+      "claim": "ReaChR is superior to ChR2 for two-photon optogenetic studies of the vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that ReaChR is superior to ChR2 for two-photon optogenetic studies of the vasculature, likely because of the higher photocurrent amplitude in ReaChR, compared to ChR2 (H134R), at their respective optimal excitation wavelengths (Lin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "4f4e5720-e5cf-47bb-aab4-b9c3ecc1e486",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C60",
+      "claim": "The improved tissue penetration of 1040 nm light used to activate ReaChR may increase stimulation efficiency for parenchymal vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "The improved tissue penetration of 1040 nm light used to activate ReaChR may also increase stimulation efficiency for parenchymal vessels (Chaigneau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "0af7ec4c-836b-413e-8fae-5c5bbcc51b1d",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C61",
+      "claim": "The optimal activation wavelength of ReaChR (>1000 nm) does not substantially interfere with imaging of common fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional advantage is that the optimal activation wavelength of ReaChR (>1000 nm) does not substantially interfere with imaging of common fluorophores, whereas two-photon ChR2 activation occurs around the imaging wavelengths used for calcium indicators such as Oregon Green or GCaMP (Prakash et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge about wavelengths and supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "5f104c73-1551-4e24-83df-b5a39b412ca6",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C62",
+      "claim": "The highly localized constriction seen following focal activation differs from vasodilation responses seen during functional hyperemia.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly localized constriction seen following a focal activation differs from vasodilation responses seen during functional hyperemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "3681554d-64be-4491-b7bd-aca09133adf3",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C63",
+      "claim": "Following focal activation of neural tissue, vasodilatory signals propagate several millimeters from the activation site.",
+      "claim_type": "EXPLICIT",
+      "source": "Following focal activation of neural tissue, vasodilatory signals propagate several millimeters from the activation site (Iadecola et al., 1997; Chen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Iadecola et al., 1997 and Chen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "683d1328-0e30-495a-914d-f6aa87472065",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C64",
+      "claim": "Long-range propagation of dilation is attributed to endothelial cell signaling through gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "This long-range propagation of dilation is attributed to endothelial cell signaling through gap junctions (Chen et al., 2014; Longden et al., 2017; Zechariah et al., 2020), and influences the spatial precision of vascular imaging (e.g., fMRI) signals (O'Herron et al., 2016; Rungta et al., 2018; Drew, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "b83f4cd2-1883-4e00-ad09-8c4415449bc8",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C65",
+      "claim": "The lack of propagation seen when directly activating smooth muscle cells supports the notion that endothelial rather than smooth muscle cells mediate the long-range propagation of signals through vessel walls.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of propagation seen when directly activating smooth muscle cells supports the notion that endothelial rather than smooth muscle cells mediate the long-range propagation of signals through vessel walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "b61175be-6793-44b7-9c17-a154fe3058f7",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C66",
+      "claim": "Differences in the propagation characteristics of hyperpolarizing (dilatory) versus depolarizing (constrictive) signals along the vascular wall may play a role in the propagation range of the signals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, differences in the propagation characteristics of hyperpolarizing (dilatory) versus depolarizing (constrictive) signals along the vascular wall may also play a role in the propagation range of the signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "30d80ab8-9103-4d7c-9ecd-82f8d0047f82",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C67",
+      "claim": "The ability to directly modulate vessel diameter and blood flow levels with high spatiotemporal precision could be useful for understanding vascular wall kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to directly modulate vessel diameter and blood flow levels with high spatiotemporal precision could be useful for understanding vascular wall kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "326d990a-ca58-4cc7-84f7-9f42dbbfa082",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C68",
+      "claim": "Slow kinetics of capillary pericyte contraction have implications for how contraction of capillary pericytes contribute to blood flow regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These slow kinetics have implications for how contraction of capillary pericytes contribute to blood flow regulation, which is relevant to maintenance of basal capillary flow and flow heterogeneity (Hartmann et al., 2021; Berthiaume et al., 2022; Hartmann et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "bbc92afb-c553-4eaa-9c2b-3a243e16b566",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C69",
+      "claim": "Offsetting stimulus-evoked dilations while monitoring neural activity can shed light on how neuronal function depends on functional hyperemia.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, offsetting stimulus-evoked dilations (Figure 11) while monitoring neural activity can shed light on how neuronal function depends on functional hyperemia (Moore and Cao, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications and supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "65fa5711-54a9-466c-8b95-4ebd5bdedd6c",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C70",
+      "claim": "Different subtypes of neurons have different metabolic sensitivities and may be differentially affected by blocking functional hyperemia.",
+      "claim_type": "EXPLICIT",
+      "source": "These subtypes have been shown to have different metabolic sensitivities and thus, may be differentially affected by blocking functional hyperemia (Kann, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "83a162d5-2a18-4a9c-bb90-bb1ddca0b3a8",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C71",
+      "claim": "There is a steep gradient of oxygen moving away from penetrating arterioles.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been shown that there is a steep gradient of oxygen moving away from penetrating arterioles, and so neurons at greater distances from vessels may be differentially affected by blocking the hyperemic response (Devor et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Devor et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "bd3bad2c-c1e0-4e50-aeee-180771feb2b9",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C72",
+      "claim": "Optical control of arteriole tone can be used to study 'vasculo-neuronal coupling', a process where alteration in vessel tone modifies neural and astrocyte signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical control of arteriole tone can also be used to study 'vasculo-neuronal coupling', a process where alteration in vessel tone modifies neural and astrocyte signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "2b0f6645-3206-4ddc-bee9-bf9a80604a5a",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C73",
+      "claim": "Theoretical and brain slice studies have proposed the existence of vasculo-neuronal coupling processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical (Moore and Cao, 2008) and brain slice (Kim et al., 2016) studies have proposed the existence of such processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Moore and Cao, 2008 and Kim et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "10ec6a3b-8d24-4d86-be5c-e0ef22431e83",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C74",
+      "claim": "The role of vasomotion in clearance of metabolic waste through perivascular pathways could be studied with spatiotemporal modulation of arteriole diameter in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the role of vasomotion in clearance of metabolic waste through perivascular pathways could also be studied in more detail with spatiotemporal modulation of arteriole diameter in vivo (van Veluw et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications and supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "892000ac-917c-499b-b6a5-52f0ae77c0fe",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C75",
+      "claim": "Impaired functional hyperemia is seen in numerous neurologic diseases, including acute injuries caused by ischemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Impaired functional hyperemia is seen in numerous neurologic diseases, including acute injuries caused by ischemia (Summers et al., 2017), and during progressive, age-related pathologies such as cerebral amyloid angiopathy and other small vessel diseases (Niwa et al., 2002; Park et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "e2733222-b496-47d4-88f7-868dcc161e1b",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C76",
+      "claim": "It is currently difficult to pinpoint the basis of impaired neurovascular responses, as defects could arise from loss of neuronal activation, vascular reactivity, coupling between these two processes, or a combination thereof.",
+      "claim_type": "EXPLICIT",
+      "source": "It is currently difficult to pinpoint the basis of impaired neurovascular responses, as defects could arise from loss of neuronal activation, vascular reactivity, coupling between these two processes, or a combination thereof.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference about the complexity of neurovascular responses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "5da1d076-d5f5-4cb0-a065-a3a2172225ff",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "claim_id": "C77",
+      "claim": "The ability to selectively block the vascular response with optogenetics provides cleaner access for probing neurovascular physiology and pathophysiology in vivo, independent of neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to selectively block the vascular response with optogenetics provides cleaner access for probing neurovascular physiology and pathophysiology in vivo, independent of neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the utility of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a7813440-52d5-4b8d-a5da-859e720d0be6",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the physiological importance of arteriole dynamics in brain function. Brain arterioles dilate in response to neural activity (functional hyperemia), regulate blood pressure (autoregulation), and drive metabolic waste clearance. Deterioration of these processes contributes to neurologic disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are well-supported by multiple citations to established literature. These claims provide essential background context for the study and are appropriately referenced to prior work in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "32f9ab47-5704-48bc-9efa-672a972444c9",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Existing methods for studying vascular dynamics have significant limitations. Current approaches either lack spatiotemporal specificity (pharmacological/systemic manipulations, wide-field ChR2 activation) or have low throughput and off-target effects (intracortical injections).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 accurately describe limitations of existing methods and are supported by appropriate citations. These claims establish the rationale for developing the new optogenetic approach presented in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "40c21f89-15e1-4cb0-9be1-8f6f8287300f",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ReaChR is an optimal opsin for two-photon optogenetic control of vasculature. ReaChR exhibits peak two-photon activation at ~1000 nm and can be selectively expressed in vascular smooth muscle cells and pericytes using PDGFR\u03b2-Cre mice with negligible off-target expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 are supported by citations and experimental data (Figure 1B). The characterization of ReaChR properties and cell-type specificity provides the foundation for the experimental approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "7dd7fff4-66a8-49dc-bad6-5990b3b3373e",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single-photon activation of ReaChR produces rapid, widespread vasoconstriction. A single 100 ms LED pulse caused rapid constriction of pial and penetrating arterioles (up to 300 \u03bcm deep) that relaxed within 30 s. Repeated pulses sustained constriction for over a minute, reducing blood flow to the parenchyma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 are well-supported by experimental data in Figures 2 and 3, including time courses, population averages, and blood flow measurements. The data demonstrate robust and reproducible vasoconstriction with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "30b2d844-12b4-4daa-aad6-3f6784da0a39",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two-photon activation provides single-vessel spatial precision. Vasoconstriction occurred only when stimulation spots contacted vessel walls (not at 10 \u03bcm distance). Neighboring arteriole branches (~100 \u03bcm apart) could be constricted independently, and venules did not respond to two-photon activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 are strongly supported by experimental data in Figure 4, including difference images, time courses, and population averages. The spatial precision is convincingly demonstrated with appropriate controls showing no off-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "46b00d9d-6b74-459d-8bca-85fc4480e822",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Laser power affects spatial spread of constriction with defined damage thresholds. A 30-fold power increase (5-150 mW) led to ~3-fold increase in constriction spread (25-75 \u03bcm). Powers >200 mW caused vessel damage, but at routine powers (<200 mW), constrictions were ReaChR-dependent with no effects in control mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by systematic power titration experiments (Figure 5) and appropriate controls using YFP-expressing mice. The characterization of power-dependent effects and damage thresholds is important for establishing safe operating parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "d698630d-8c2e-443e-9582-4d0239a6148b",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Axial resolution of two-photon activation depends on laser power and tissue depth. At 115 mW, vessels constricted 25-35% of maximum when stimulated 100 \u03bcm off-target, dropping to ~10% at 150 \u03bcm. Lower powers (20-44 mW) restricted constriction almost exclusively to the stimulation plane. Light scattering in tissue affected axial spread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by systematic depth experiments (Figure 6) with appropriate calibration controls (Figure 6\u2014supplement 1). The characterization of axial resolution is thorough and identifies important technical considerations for 3D targeting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "668da234-7f64-4cdf-900b-7accd31c6991",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Power titration enables control of penetrating arteriole constriction across cortical depths. Lower powers (20-30 mW) constricted vessels in the stimulation plane with minimal superficial spread. Moderate powers (~70 mW) achieved near-maximal constriction at depth with ~50% superficial constriction. High powers (>150 mW) produced maximal constriction in both planes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by experimental data in Figure 7 showing systematic power-dependent effects across imaging planes. This demonstrates practical control over the spatial extent of vascular manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "6ddbeed4-b090-4fbd-83fc-e40a2ccdd4e4",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Microvessel constriction requires prolonged, near-continuous stimulation. Single LED pulses constricted penetrating arterioles (~14%) more than ACT vessels (~5%) or capillaries (~1%). Single two-photon pulses had minimal effect on ACT vessels and capillaries. Continuous line-scan stimulation was necessary to achieve ~10% constriction in capillaries and ACT vessels over 60 s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 are supported by systematic comparison of stimulation paradigms across vessel types (Figure 8). The data clearly demonstrate differential responsiveness of vessel types and identify stimulation requirements for smaller vessels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "35cdf253-55b7-48ec-abb7-4267a9999f9d",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ReaChR produces faster vasoconstriction than ChR2 in arterioles. Capillaries showed similar slow dynamics with both opsins, but ACT vessels and penetrating arterioles exhibited more rapid initial constriction with ReaChR compared to ChR2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by direct comparison with prior ChR2 data (Figure 9) with appropriate statistical analysis. This demonstrates the advantage of ReaChR for vascular optogenetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "f7c29ad2-7b5f-4f95-999e-41e58299d8c3",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Optogenetic vasoconstriction is achievable in awake animals with similar precision. Both LED and two-photon activation produced robust, spatially precise constrictions in awake mice, though with slightly reduced amplitude and faster recovery compared to anesthetized animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by experimental data in Figure 10 comparing awake and anesthetized conditions. This demonstrates the applicability of the method to physiologically relevant awake preparations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "6f195b6a-2360-4fe2-9a6d-b807b163c320",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Optogenetic constriction can modulate sensory-evoked vasodilation. Optogenetic activation produced rapid constriction (0.6 s to 25% peak) compared to slower visual stimulus-evoked dilation (3.4 s). Combining optogenetic pulses with visual stimulation reduced or eliminated sensory-evoked vasodilation depending on stimulus duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 are supported by experimental data in Figure 11 showing direct comparison of response kinetics and successful modulation of sensory responses. This demonstrates a key application of the method for dissociating vascular and neural responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "f10f771f-7c0c-4b7a-982c-577ffb29c890",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ReaChR offers multiple advantages over ChR2 for vascular optogenetics. ReaChR is superior due to higher photocurrent amplitude, better tissue penetration at 1040 nm, and minimal interference with common fluorophore imaging wavelengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by experimental comparisons (Figure 9) and appropriate citations. The advantages are logically inferred from the data and established opsin properties, though C60 is somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "124f80a4-921f-4737-bceb-c2c847d378e4",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Localized optogenetic constriction differs from propagating vasodilation in functional hyperemia. Direct smooth muscle activation produced highly localized constriction without propagation, supporting the role of endothelial cells (not smooth muscle) in long-range signal propagation through gap junctions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by experimental observations and appropriate citations. C66 is speculative but reasonable. The comparison provides mechanistic insight into vascular signaling pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    },
+    {
+      "id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4",
+      "content_id": "41f43e50-1b75-47ba-a41c-e3d0c009f6b4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The optogenetic method enables multiple applications for studying neurovascular physiology and pathophysiology. Potential applications include understanding vascular kinetics, investigating neurovascular coupling, studying vasculo-neuronal coupling, examining metabolic waste clearance, and dissecting mechanisms of impaired vascular responses in disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C77 are largely speculative about future applications, though supported by appropriate citations and logical reasoning. While the potential applications are well-justified, they represent proposed future work rather than demonstrated results in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:42:19.791233Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cf96d4aa-df3c-4449-b404-0b2c4451029f",
+      "result_id": "a7813440-52d5-4b8d-a5da-859e720d0be6"
+    },
+    {
+      "claim_id": "faabea05-83c9-41c9-8b6f-6d96e75b300e",
+      "result_id": "a7813440-52d5-4b8d-a5da-859e720d0be6"
+    },
+    {
+      "claim_id": "cfc7a08a-a0e5-4a07-af78-1828d9a409b1",
+      "result_id": "a7813440-52d5-4b8d-a5da-859e720d0be6"
+    },
+    {
+      "claim_id": "5a3af642-f37f-4e88-bfc4-38b663bd03d1",
+      "result_id": "a7813440-52d5-4b8d-a5da-859e720d0be6"
+    },
+    {
+      "claim_id": "9cb6ed4a-8862-43f5-b2b9-7ed422e0b820",
+      "result_id": "a7813440-52d5-4b8d-a5da-859e720d0be6"
+    },
+    {
+      "claim_id": "7d6e3352-a80c-45a3-92df-06c03ee93499",
+      "result_id": "a7813440-52d5-4b8d-a5da-859e720d0be6"
+    },
+    {
+      "claim_id": "94f710e5-e6b0-4f73-97de-67579596e8ea",
+      "result_id": "32f9ab47-5704-48bc-9efa-672a972444c9"
+    },
+    {
+      "claim_id": "671584fa-5d3b-4f88-bf18-d9d6067e9929",
+      "result_id": "32f9ab47-5704-48bc-9efa-672a972444c9"
+    },
+    {
+      "claim_id": "411a8b28-4266-4b7e-a62e-f728451bb588",
+      "result_id": "32f9ab47-5704-48bc-9efa-672a972444c9"
+    },
+    {
+      "claim_id": "b86663c9-4758-41e3-8226-d36afa18685d",
+      "result_id": "32f9ab47-5704-48bc-9efa-672a972444c9"
+    },
+    {
+      "claim_id": "117f8427-34c7-4c1a-bc69-136e4979e9d3",
+      "result_id": "32f9ab47-5704-48bc-9efa-672a972444c9"
+    },
+    {
+      "claim_id": "fd838e4c-7eb6-43f0-a712-868156d0e3bd",
+      "result_id": "40c21f89-15e1-4cb0-9be1-8f6f8287300f"
+    },
+    {
+      "claim_id": "b0ca1547-4a61-4b72-80ff-4c0cab9bfab6",
+      "result_id": "40c21f89-15e1-4cb0-9be1-8f6f8287300f"
+    },
+    {
+      "claim_id": "e44b509a-27b5-46b3-b8c9-670ea4dc5e3e",
+      "result_id": "40c21f89-15e1-4cb0-9be1-8f6f8287300f"
+    },
+    {
+      "claim_id": "32dd5ffc-d98d-4d17-bb25-fd74e2dc280a",
+      "result_id": "40c21f89-15e1-4cb0-9be1-8f6f8287300f"
+    },
+    {
+      "claim_id": "24ce2606-cd36-42bd-9631-69995ea4dcfc",
+      "result_id": "7dd7fff4-66a8-49dc-bad6-5990b3b3373e"
+    },
+    {
+      "claim_id": "6003ff07-64ef-4eae-905c-f7057f530bf9",
+      "result_id": "7dd7fff4-66a8-49dc-bad6-5990b3b3373e"
+    },
+    {
+      "claim_id": "4d0f9493-988e-4da2-b5d7-22671b71c53f",
+      "result_id": "7dd7fff4-66a8-49dc-bad6-5990b3b3373e"
+    },
+    {
+      "claim_id": "f1f2c9b9-ff37-4b14-87ec-91e1e84c8b1f",
+      "result_id": "7dd7fff4-66a8-49dc-bad6-5990b3b3373e"
+    },
+    {
+      "claim_id": "7ae563ba-df3e-4040-8a0f-8b34fd2d9eaa",
+      "result_id": "7dd7fff4-66a8-49dc-bad6-5990b3b3373e"
+    },
+    {
+      "claim_id": "c8dd4290-7c0b-451b-9aa0-518bb4806610",
+      "result_id": "7dd7fff4-66a8-49dc-bad6-5990b3b3373e"
+    },
+    {
+      "claim_id": "49d3b1c7-908a-45d5-97db-b9c3c90d6477",
+      "result_id": "7dd7fff4-66a8-49dc-bad6-5990b3b3373e"
+    },
+    {
+      "claim_id": "c1014381-ed1e-4ec0-b75b-890db2c4a4ca",
+      "result_id": "30b2d844-12b4-4daa-aad6-3f6784da0a39"
+    },
+    {
+      "claim_id": "69dc9987-4023-440f-a0d4-41a7ecc1bf12",
+      "result_id": "30b2d844-12b4-4daa-aad6-3f6784da0a39"
+    },
+    {
+      "claim_id": "c1755829-2337-451e-8464-b0124361a1e9",
+      "result_id": "30b2d844-12b4-4daa-aad6-3f6784da0a39"
+    },
+    {
+      "claim_id": "595e0b2e-4167-4faf-907d-76410bacb072",
+      "result_id": "30b2d844-12b4-4daa-aad6-3f6784da0a39"
+    },
+    {
+      "claim_id": "a8c72421-9468-441b-91d6-6a9734f7ef45",
+      "result_id": "30b2d844-12b4-4daa-aad6-3f6784da0a39"
+    },
+    {
+      "claim_id": "dc346cff-42e7-42a3-b927-c0f4f8557f9b",
+      "result_id": "46b00d9d-6b74-459d-8bca-85fc4480e822"
+    },
+    {
+      "claim_id": "24ac3be2-3bc0-47c6-ae26-5f15371278b3",
+      "result_id": "46b00d9d-6b74-459d-8bca-85fc4480e822"
+    },
+    {
+      "claim_id": "5cd1d985-f427-4466-aad1-25bc4acee1af",
+      "result_id": "46b00d9d-6b74-459d-8bca-85fc4480e822"
+    },
+    {
+      "claim_id": "b4f38a6b-c13d-424d-8abb-51fc8e869598",
+      "result_id": "46b00d9d-6b74-459d-8bca-85fc4480e822"
+    },
+    {
+      "claim_id": "8bb31d6e-cbcc-4080-bbfe-5762ef0a391f",
+      "result_id": "d698630d-8c2e-443e-9582-4d0239a6148b"
+    },
+    {
+      "claim_id": "de3e7eab-c0b7-4c5d-91c4-d696c6d881ef",
+      "result_id": "d698630d-8c2e-443e-9582-4d0239a6148b"
+    },
+    {
+      "claim_id": "e17ddd50-11a2-4637-98b4-6b59407c45cb",
+      "result_id": "d698630d-8c2e-443e-9582-4d0239a6148b"
+    },
+    {
+      "claim_id": "29114583-f018-49ec-af80-0c34b3e7275d",
+      "result_id": "d698630d-8c2e-443e-9582-4d0239a6148b"
+    },
+    {
+      "claim_id": "842bd037-4318-4c16-b05e-edcccc1cee59",
+      "result_id": "d698630d-8c2e-443e-9582-4d0239a6148b"
+    },
+    {
+      "claim_id": "7163a6ee-e219-4de9-bf90-8a9f328ea66d",
+      "result_id": "668da234-7f64-4cdf-900b-7accd31c6991"
+    },
+    {
+      "claim_id": "46342d47-3367-49f2-85de-84173770cf30",
+      "result_id": "668da234-7f64-4cdf-900b-7accd31c6991"
+    },
+    {
+      "claim_id": "ffd2fb9a-3075-4a29-a51f-c79246910466",
+      "result_id": "668da234-7f64-4cdf-900b-7accd31c6991"
+    },
+    {
+      "claim_id": "2efbf050-d9af-4f53-bab4-4f58148b7ec0",
+      "result_id": "6ddbeed4-b090-4fbd-83fc-e40a2ccdd4e4"
+    },
+    {
+      "claim_id": "dbae0778-44af-4d02-a95a-d95a74e9df9e",
+      "result_id": "6ddbeed4-b090-4fbd-83fc-e40a2ccdd4e4"
+    },
+    {
+      "claim_id": "5b2d79e0-b78d-49e6-bf18-6cbbe53c9931",
+      "result_id": "6ddbeed4-b090-4fbd-83fc-e40a2ccdd4e4"
+    },
+    {
+      "claim_id": "c8789022-1b5e-4314-b728-36aa65498c5c",
+      "result_id": "6ddbeed4-b090-4fbd-83fc-e40a2ccdd4e4"
+    },
+    {
+      "claim_id": "42515cd1-0203-4915-b32a-8759222f98df",
+      "result_id": "6ddbeed4-b090-4fbd-83fc-e40a2ccdd4e4"
+    },
+    {
+      "claim_id": "c58d3ce9-f298-4936-b574-876bacc997f3",
+      "result_id": "6ddbeed4-b090-4fbd-83fc-e40a2ccdd4e4"
+    },
+    {
+      "claim_id": "5d280ded-c71b-4193-98ae-1f33d1d623a0",
+      "result_id": "6ddbeed4-b090-4fbd-83fc-e40a2ccdd4e4"
+    },
+    {
+      "claim_id": "cd90a9f6-60d1-4d80-9f4a-caa1bc9ce7ca",
+      "result_id": "35cdf253-55b7-48ec-abb7-4267a9999f9d"
+    },
+    {
+      "claim_id": "6404198c-4c84-4d68-a4ef-a2aa88c409c0",
+      "result_id": "35cdf253-55b7-48ec-abb7-4267a9999f9d"
+    },
+    {
+      "claim_id": "f0f9c338-d487-4cc1-b300-e76a66de81e1",
+      "result_id": "f7c29ad2-7b5f-4f95-999e-41e58299d8c3"
+    },
+    {
+      "claim_id": "cc32b9e7-a4e9-48be-801a-9c741fb98770",
+      "result_id": "f7c29ad2-7b5f-4f95-999e-41e58299d8c3"
+    },
+    {
+      "claim_id": "7f192390-44d1-4f5a-832b-6093411cf3e1",
+      "result_id": "f7c29ad2-7b5f-4f95-999e-41e58299d8c3"
+    },
+    {
+      "claim_id": "0c9e8b79-666a-4a7e-ace8-ca38aa2ba2ea",
+      "result_id": "6f195b6a-2360-4fe2-9a6d-b807b163c320"
+    },
+    {
+      "claim_id": "a4d60382-1c9c-4ad4-98bb-0e2c6f28d0a0",
+      "result_id": "6f195b6a-2360-4fe2-9a6d-b807b163c320"
+    },
+    {
+      "claim_id": "f9fc7f1d-27c7-4839-95a5-8ce2db7a797b",
+      "result_id": "6f195b6a-2360-4fe2-9a6d-b807b163c320"
+    },
+    {
+      "claim_id": "bc0d0e95-1be3-4325-b6da-aca1a0330936",
+      "result_id": "6f195b6a-2360-4fe2-9a6d-b807b163c320"
+    },
+    {
+      "claim_id": "f100c030-61eb-4bdb-9a91-640c48a6823f",
+      "result_id": "6f195b6a-2360-4fe2-9a6d-b807b163c320"
+    },
+    {
+      "claim_id": "41e98b52-98b8-4e35-bb16-8a2f9e3cf1e7",
+      "result_id": "6f195b6a-2360-4fe2-9a6d-b807b163c320"
+    },
+    {
+      "claim_id": "8cea9324-7e1f-405e-a7be-411069770a6a",
+      "result_id": "6f195b6a-2360-4fe2-9a6d-b807b163c320"
+    },
+    {
+      "claim_id": "687f93e2-395d-489b-ba17-926666ecf5c1",
+      "result_id": "f10f771f-7c0c-4b7a-982c-577ffb29c890"
+    },
+    {
+      "claim_id": "4f4e5720-e5cf-47bb-aab4-b9c3ecc1e486",
+      "result_id": "f10f771f-7c0c-4b7a-982c-577ffb29c890"
+    },
+    {
+      "claim_id": "0af7ec4c-836b-413e-8fae-5c5bbcc51b1d",
+      "result_id": "f10f771f-7c0c-4b7a-982c-577ffb29c890"
+    },
+    {
+      "claim_id": "5f104c73-1551-4e24-83df-b5a39b412ca6",
+      "result_id": "124f80a4-921f-4737-bceb-c2c847d378e4"
+    },
+    {
+      "claim_id": "3681554d-64be-4491-b7bd-aca09133adf3",
+      "result_id": "124f80a4-921f-4737-bceb-c2c847d378e4"
+    },
+    {
+      "claim_id": "683d1328-0e30-495a-914d-f6aa87472065",
+      "result_id": "124f80a4-921f-4737-bceb-c2c847d378e4"
+    },
+    {
+      "claim_id": "b83f4cd2-1883-4e00-ad09-8c4415449bc8",
+      "result_id": "124f80a4-921f-4737-bceb-c2c847d378e4"
+    },
+    {
+      "claim_id": "b61175be-6793-44b7-9c17-a154fe3058f7",
+      "result_id": "124f80a4-921f-4737-bceb-c2c847d378e4"
+    },
+    {
+      "claim_id": "30d80ab8-9103-4d7c-9ecd-82f8d0047f82",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "326d990a-ca58-4cc7-84f7-9f42dbbfa082",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "bbc92afb-c553-4eaa-9c2b-3a243e16b566",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "65fa5711-54a9-466c-8b95-4ebd5bdedd6c",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "83a162d5-2a18-4a9c-bb90-bb1ddca0b3a8",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "bd3bad2c-c1e0-4e50-aeee-180771feb2b9",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "2b0f6645-3206-4ddc-bee9-bf9a80604a5a",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "10ec6a3b-8d24-4d86-be5c-e0ef22431e83",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "892000ac-917c-499b-b6a5-52f0ae77c0fe",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "e2733222-b496-47d4-88f7-868dcc161e1b",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    },
+    {
+      "claim_id": "5da1d076-d5f5-4cb0-a065-a3a2172225ff",
+      "result_id": "b6cdbec3-0f3c-47fe-bb82-9819c58030a4"
+    }
+  ],
+  "comparisons": []
+}

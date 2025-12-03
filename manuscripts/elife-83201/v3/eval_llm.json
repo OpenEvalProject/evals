@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The PLATCOV trial is an open-label, randomized, controlled adaptive platform trial designed to assess antiviral activity in early COVID-19 by measuring viral clearance rates from frequent oropharyngeal swabs. The trial enrolled patients aged 18-50 with early symptomatic COVID-19, randomizing them to ivermectin (600 \u03bcg/kg daily for 7 days), casirivimab/imdevimab, or no study drug, with viral clearance rate as the primary outcome measured using Bayesian hierarchical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C43, C100-C105 collectively describe a well-designed trial with appropriate methodology, clear inclusion/exclusion criteria, validated viral load measurement techniques, and prespecified statistical analysis plans. The trial design, ethical approvals, and methodological details are explicitly stated and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C64",
+      "C82",
+      "C97"
+    ],
+    "result": "High-dose ivermectin (median 550 \u03bcg/kg/day for 7 days) showed no measurable antiviral activity in early symptomatic COVID-19. In 45 ivermectin-treated patients versus 41 controls, viral clearance was 9.1% slower (95% CI -27.2% to +11.8%), meeting the prespecified futility threshold of <12.5% acceleration. Despite achieving high plasma concentrations (2.6-fold higher bioavailability than healthy volunteers), there was no relationship between ivermectin exposure and viral clearance rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C10, C54, C56, C64, C82, C97 provide converging evidence that ivermectin lacks antiviral activity. The trial met its prespecified futility stopping rule with adequate sample size (n=86 total), the confidence interval excludes clinically meaningful benefit, and pharmacokinetic data confirm adequate drug exposure. The conclusion is well-supported by the primary outcome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C55",
+      "C57",
+      "C59",
+      "C73",
+      "C106"
+    ],
+    "result": "In a preliminary analysis of 10 patients with Delta variant infection, casirivimab/imdevimab (600 mg/600 mg IV) accelerated viral clearance by 52.3% (95% CI +7.0% to +115.1%) compared to controls, shortening clearance half-life by 6.5 hours (95% CI -12.0 to -1.1 hours).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C55, C57, C59, C73, C106 report positive results for casirivimab/imdevimab, but the analysis is explicitly described as preliminary with only 10 patients, all with Delta variant. The small sample size, lack of blinding for this subset, and variant-specific nature limit confidence in the generalizability of these findings, though they serve to validate the trial methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C74",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C98"
+    ],
+    "result": "Pharmacometric evaluation of viral clearance rate using frequent serial oropharyngeal qPCR measurements is an efficient, well-tolerated method for assessing SARS-CoV-2 antiviral therapeutics in vivo. This approach requires an order of magnitude fewer patients than time-to-clearance endpoints and has applicability beyond COVID-19 to other respiratory viral infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C74, C80-C84, C98 are supported by the trial's successful demonstration that the methodology could exclude meaningful ivermectin benefit with only 86 patients and detect casirivimab/imdevimab activity with 10 patients. The frequent sampling was well-tolerated (C66, C84), and the approach builds on established antiviral assessment methods. However, broader applicability (C98) remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C114"
+    ],
+    "result": "There were no apparent differences in viral clearance rates across SARS-CoV-2 variants (Delta, Omicron BA.1, BA.2), though baseline viral loads differed: Omicron BA.2 had 3.6-fold higher baseline loads (95% CI 1.4-9.4) and BA.1 had 0.4-fold lower loads (95% CI 0.1-1.1) compared to Delta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C114 describe variant-specific findings with appropriate statistical adjustment. The observation that clearance rates were similar across variants despite different baseline loads is internally consistent and supported by the covariate-adjusted models shown in Figure 4 supplements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C63",
+      "C108"
+    ],
+    "result": "Substantial inter-individual variability in viral clearance was observed (half-life range 7-42 hours in controls), but multiple analytical models (linear, nonlinear, covariate-adjusted) showed excellent agreement in treatment effect estimates, with the nonlinear model providing the best fit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C63, C108 are supported by Figure 5 showing individual variability and Figure 4 supplement 3 demonstrating model concordance. The consistency across models strengthens confidence in the primary findings despite biological variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C107",
+      "C109",
+      "C110"
+    ],
+    "result": "Ivermectin pharmacokinetics showed significantly higher plasma concentrations than predicted from healthy volunteer data, with mean relative bioavailability of 2.6. Drug exposures were summarized as AUC0-72 and Cmax using a previously validated two-compartment model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C107, C109-C110 describe pharmacokinetic findings with appropriate methodology (validated HPLC-MS/MS, established PK model). The higher bioavailability in patients versus healthy volunteers is plausible given COVID-19 pathophysiology, and adequate drug exposure strengthens the conclusion that lack of efficacy is not due to insufficient dosing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The trial procedures were well-tolerated. Six patients reported transient visual disturbances with ivermectin (three withdrew), which resolved quickly after discontinuation with no residual abnormalities on ophthalmology review. All three serious adverse events occurred in the no study drug arm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 provide consistent safety data. The visual disturbances with ivermectin are a known adverse effect at high doses, and their reversibility is well-documented. However, the open-label design (C96) limits interpretation of subjective adverse events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C115",
+      "C116"
+    ],
+    "result": "Multiple clinical trials have shown associations between accelerated viral clearance and improved clinical outcomes for monoclonal antibodies, molnupiravir, and nirmatrelvir. While the PINETREE study did not find this association for remdesivir using infrequent sampling, subsequent PLATCOV data with frequent sampling demonstrated remdesivir does accelerate viral clearance, supporting viral clearance as a surrogate endpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88, C115-C116 synthesize evidence from multiple cited trials to support viral clearance as a surrogate endpoint. The explanation that infrequent sampling reduced precision (C115) reconciles apparently contradictory findings and is methodologically sound. The weight of evidence supports the relationship, though more data are needed for full validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior work established that monoclonal antibodies are effective but expensive and vulnerable to mutations; molnupiravir and nirmatrelvir show efficacy but lack widespread availability; and ivermectin showed in vitro activity leading to widespread use despite questionable clinical trial quality. The TOGETHER trial found no benefit with low-dose ivermectin (400 \u03bcg/kg/day for 3 days), motivating evaluation of higher doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C22 accurately summarize prior literature with appropriate citations. The characterization of existing evidence provides appropriate context for the current study, though the authors' interpretation of ivermectin's weak in vitro activity (C20) as justification for high-dose evaluation is reasonable but not universally accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C117"
+    ],
+    "result": "Uncertainty remains about repurposed antivirals for COVID-19. Effective antivirals work best early in infection, while anti-inflammatory agents benefit later disease. Most efficacy trials were conducted in high-risk, unvaccinated populations with now-extinct variants. The trial's 12.5% futility threshold was based on known antivirals providing 30-50% acceleration, but does not exclude smaller effects or non-antiviral benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79, C89-C92, C117 provide appropriate context and acknowledge study limitations. The discussion of timing of interventions (C76-C77) is well-established, and the acknowledgment that the trial cannot exclude small effects (C91-C92) is scientifically appropriate. The limitation regarding generalizability to current variants and vaccinated populations (C117) is valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The trial has several limitations: uncertainty about optimal sampling frequency, substantial variability in serial viral loads, inability of qPCR to distinguish live from dead virus, and lack of blinding compromising safety assessments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 appropriately acknowledge methodological limitations. The inability to distinguish live virus (C95) is an inherent limitation of PCR-based methods, and the open-label design (C96) does compromise subjective outcome assessment. These are honest and appropriate limitations to disclose.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "All analyses were conducted in R version 4.0.2 with Bayesian model fitting in Stan via rstan. Code and data are openly accessible on GitHub with archived version.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 provide appropriate computational reproducibility information. The specification of software versions and public data/code availability meets current standards for reproducible research.",
+    "result_type": "MINOR"
+  }
+]

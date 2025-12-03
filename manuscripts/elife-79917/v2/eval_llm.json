@@ -1,0 +1,508 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "NaV1.1 (Scn1a) is ubiquitously expressed in proprioceptors and myelinated neurons, but shows low expression in nociceptors. RNAscope analysis revealed that 93% of myelinated neurons and 100% of genetically identified proprioceptors express Scn1a mRNA, while only 24% of CGRP+ peptidergic nociceptors and 3% of Mrgprd+ non-peptidergic nociceptors express this channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by RNAscope data with clear quantification shown in Figures 1A-D. The methodology using genetic reporters (PvalbAi14) and specific markers (NFH, CGRP, Mrgprd) provides robust cell-type identification. Sample sizes appear adequate (n=153-877 cells), and the pie chart quantifications clearly show the percentage of positive cells in each population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "NaV1.1, NaV1.6, and NaV1.7 are all ubiquitously expressed in proprioceptors, but NaV1.1 shows the most consistent and highest expression levels. All three channels are present in 100% of proprioceptors, but NaV1.1 has the lowest coefficient of variation (75.6 vs 97.3 for NaV1.6 and 88.1 for NaV1.7) and significantly higher average integrated density (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 are supported by comprehensive RNAscope analysis shown in Figures 1-2. The use of coefficient of variation to assess expression consistency is appropriate, and the statistical comparison of integrated densities (Kruskal-Wallis with Dunn's post-hoc) is properly conducted. The data converge to show NaV1.1 as the dominant and most consistently expressed isoform in proprioceptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Serial pharmacological blockade reveals that NaV1.1 is the dominant functional sodium channel subtype in proprioceptors, comprising 44.8% of the whole-cell sodium current. NaV1.6 and NaV1.7 contribute 14.5% and 32.9% respectively, with 7.8% remaining unblocked due to incomplete drug efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by well-designed serial pharmacological experiments (Figure 2F-G) using selective antagonists. The experimental logic is sound: blocking NaV1.1 first, then NaV1.6 (accounting for partial NaV1.1 block by AH-TTX), then NaV1.7, and finally TTX. However, a caveat exists: ICA 121431 may also block NaV1.3, which could be upregulated in culture (acknowledged by authors in C104-C105). This doesn't invalidate the result but introduces uncertainty about the precise contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Proprioceptor sodium currents exhibit characteristic biophysical properties including voltage-dependent activation (V50 = -38.7 mV), inactivation (midpoint = -64.5 mV), rapid recovery from fast inactivation (\u03c4 = 0.54 ms with >50% recovery at 0.5 ms), and slow entry into slow inactivation (\u03c4 = 928.6 ms with >50% channels available after 2000 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 are supported by standard voltage-clamp protocols shown in Figure 3. The biophysical characterization is comprehensive and uses appropriate methods (Boltzmann fitting, exponential curve fitting). Sample sizes appear adequate (n=6-12 cells for different protocols). These represent the first reported biophysical properties of proprioceptor sodium currents, as stated by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Pharmacological blockade of NaV1.1 with ICA 121431 significantly reduces proprioceptor sodium current density from ~-140 to ~-75 pA/pF (p=0.0003) and slows current decay kinetics from 0.6 to 1.0 ms (p=0.0007), without affecting rise time. The ICA-sensitive component has an average tau of 0.4 ms and current density of -96 pA/pF, with substantial variability across cells (-28 to -263 pA/pF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by voltage-clamp data in Figure 4A-E with appropriate statistical tests (Wilcoxon matched-pairs). The wide distribution of ICA-sensitive current densities (C30) is an important observation suggesting proprioceptor subtype heterogeneity. However, the caveat about potential NaV1.3 blockade (C104-C105) applies here as well, though the authors address this with experiments in Scn1a-cKO neurons showing only a small residual ICA effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Pharmacological inhibition of NaV1.1 significantly impairs proprioceptor intrinsic excitability, reducing the number of evoked action potentials in most cells, decreasing action potential amplitude (p=0.0420) and threshold (p=0.0186), and increasing action potential width (p=0.0068). However, 25% of proprioceptors (5 cells) with low firing rates were insensitive to ICA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by current-clamp experiments in Figure 4F-K with appropriate paired statistical tests. The observation that 25% of cells are ICA-insensitive (C32) is important and suggests proprioceptor subtype heterogeneity. The changes in action potential properties are consistent with loss of a fast-gating sodium channel. Sample size (n=20 cells) is adequate for these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Scn1a-cKO mice display profound motor abnormalities including ataxic-like tremors, abnormal limb positioning, and paw clasping, which are absent in Scn1a-floxed controls and Scn1a-Het mice. These phenotypes are visible and documented in videos and images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by behavioral observations documented in Videos 1-3 and Figure 5A. The phenotypes are clearly visible and distinct from controls. The observation that heterozygous animals do not show these overt motor abnormalities (C40) is important for distinguishing severity of phenotypes. The use of both sexes strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In the open-field test, both Scn1a-cKO and Scn1a-Het mice show significant motor deficits compared to controls, traveling less distance and moving slower (p<0.01 for both genotypes). However, time spent moving and time in center are unchanged, suggesting gross motor function and anxiety-like behavior are intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by open-field behavioral data in Figure 5B-F with appropriate statistical tests (one-way ANOVA with Dunnett's post-hoc). The finding that heterozygous animals show deficits in this assay (C43-C44) is particularly important, demonstrating haploinsufficiency. Sample sizes are adequate (N=6-15 animals). The lack of effect on time moving (C45) and center time (C46) helps rule out confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "On the rotarod test, Scn1a-cKO mice perform significantly worse than Scn1a-floxed and Scn1a-Het mice, maintaining position for only 41 seconds on average by day 3. In contrast, Scn1a-Het mice perform similarly to controls, indicating no haploinsufficiency in this assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by rotarod data in Figure 5G-H with appropriate statistical tests (two-way mixed-design ANOVA with Dunnett's post-hoc). The differential effect between open-field and rotarod for heterozygous animals is intriguing and suggests these assays measure different aspects of motor function. Sample sizes are adequate (N=11-20 animals). The lack of haploinsufficiency in rotarod contrasts with open-field results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "No sex-dependent differences were observed in either open-field or rotarod behavioral tests, indicating that motor deficits in Scn1a-cKO and Scn1a-Het mice are consistent across sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by sex-stratified analysis shown in Figure 5\u2014figure supplement 1. The inclusion of both sexes and explicit testing for sex differences strengthens the study. Sample sizes appear adequate (males n=10-18, females n=17-24 depending on test).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The PirtCre driver selectively targets sensory neurons, with little-to-no neuronal TdTomato expression in spinal cord but strong labeling in DRG somata and axons, confirming the specificity of the genetic model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by immunohistochemistry data in Figure 5\u2014figure supplement 2. This is an important control demonstrating that the behavioral phenotypes are due to sensory neuron-specific deletion rather than CNS effects. The imaging is clear and convincing, though quantification would strengthen the claim. Sample size (N=3 mice, n=30 sections) is adequate for this qualitative assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Loss of NaV1.1 does not affect proprioceptor development, as the number of Pvalb+/Runx3+ proprioceptors per DRG section is unchanged between Scn1a-floxed, Scn1a-Het, and Scn1a-cKO mice (p=0.3824 and p=0.1665 respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by RNAscope quantification in Figure 6 using appropriate markers (Pvalb and Runx3) for mature proprioceptors. Statistical analysis (Kruskal-Wallis with Dunn's post-hoc) is appropriate. Sample sizes are adequate (n=17-18 sections). This is an important control ruling out developmental defects as the cause of behavioral phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Muscle spindle morphology is normal in Scn1a-cKO mice, with no qualitative differences observed between genotypes, similar to findings in conditional Piezo2-knockout animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by muscle spindle whole mount analysis in Figure 6\u2014figure supplement 1. The comparison to Piezo2-knockout animals (Woo et al., 2015) provides useful context. However, the analysis is qualitative rather than quantitative, which limits the strength of the conclusion. Sample sizes are adequate (n=7-9 spindles). Quantitative morphometric analysis would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Proprioceptive innervation of spinal motor neurons is intact in Scn1a-cKO mice, with no significant decrease in VGLUT1 puncta density on ChAT+ neurons compared to controls (p>0.9999 for Het, p=0.4573 for cKO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by quantitative immunohistochemistry in Figure 7 with appropriate statistical analysis (Kruskal-Wallis with Dunn's post-hoc). The methodology of analyzing large ChAT+ neurons (>400 \u03bcm\u00b2) to bias toward \u03b1-motor neurons is reasonable. Sample sizes are excellent (n=92-102 neurons). This is an important control ruling out gross connectivity defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Ex vivo muscle afferent recordings reveal that loss of NaV1.1 severely impairs static stretch sensitivity in proprioceptors. Afferents from Scn1a-Het and Scn1a-cKO mice show inconsistent firing during the 4-second hold phase of stretch, with significantly increased coefficient of variation of interspike intervals (p=0.015). Almost all control afferents fire consistently throughout stretch, while knockout afferents show action potential failures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are strongly supported by ex vivo recordings in Figure 8A-D with appropriate statistical analysis (two-way ANOVA). The use of coefficient of variation to quantify firing inconsistency is appropriate. Sample sizes are adequate (n=10-12 afferents per genotype). The finding that both heterozygous and homozygous knockouts show similar deficits is important for demonstrating haploinsufficiency at the cellular level. The pie charts clearly show the proportion of afferents with consistent vs. inconsistent firing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Dynamic sensitivity of proprioceptor afferents is preserved in Scn1a-cKO mice, with maximum firing frequency during the rampup phase (Dynamic Peak) being independent of genotype (p=0.0633) and even trending slightly higher in knockout afferents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by ex vivo recordings in Figure 8E with appropriate statistical analysis (two-way ANOVA). The preservation of dynamic sensitivity while static sensitivity is impaired is a key finding that suggests NaV1.1 has a specific role in sustained firing rather than transient responses. The p-value of 0.0633 is close to significance, and the trend toward higher dynamic peak in knockouts is interesting but requires cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Proprioceptor afferents lacking NaV1.1 can entrain to sinusoidal vibration as effectively as control afferents, maintaining firing throughout 9-second vibrations at frequencies up to 100 Hz. Firing rates during vibration are not significantly different between genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by ex vivo recordings during sinusoidal vibration in Figure 9 and Tables 1-3. Statistical analysis is appropriate (one-way ANOVA and Kruskal-Wallis). Sample sizes are adequate (n=9-11 afferents). The contrast between impaired static firing and preserved dynamic/vibratory responses is striking and supports the authors' model that NaV1.1 is specifically required for sustained firing during static stretch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "NaV1.1 is a dominant functional sodium channel subtype in proprioceptors, as inferred from its contribution of 44.8% to the whole-cell sodium current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is a reasonable inference from the pharmacological data (C12), though the term 'dominant' could be debated since NaV1.1 comprises less than half of the total current. However, it is the single largest contributor among the three isoforms examined. The caveat about potential NaV1.3 blockade should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "NaV1.1 is specifically required for transmission of receptor potentials generated during sustained muscle stretch, while other NaV isoforms and Piezo2 are sufficient for responses to transient stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is a well-supported inference from the ex vivo recordings showing impaired static but preserved dynamic sensitivity (C57-C66). The model is consistent with all the electrophysiological data. However, this is an interpretive claim rather than directly demonstrated, as the authors did not directly measure receptor potentials or manipulate Piezo2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "NaV1.1 shows haploinsufficiency in sensory neurons for both proprioceptor function and motor behaviors, as demonstrated by similar impairments in Scn1a-Het and Scn1a-cKO mice in ex vivo recordings and open-field tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is strongly supported by convergent evidence from ex vivo recordings (C57-C61) and open-field behavior (C43-C44). The haploinsufficiency is clearly demonstrated at both cellular and behavioral levels. However, it's important to note that haploinsufficiency was not observed in the rotarod test (C47), suggesting task-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Sensory neuron dysfunction contributes to the clinical manifestations of neurological disorders in which NaV1.1 function is compromised, as suggested by the motor deficits observed in mouse models and the known presentation of motor delays and ataxia in human patients with NaV1.1 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is a reasonable inference connecting the mouse data to human disease, but it remains speculative. The authors provide evidence that sensory neuron-specific loss of NaV1.1 causes motor deficits in mice, and cite literature showing human patients with NaV1.1 mutations have motor problems (C86). However, direct evidence that sensory neuron dysfunction contributes to human disease phenotypes is lacking. This is an important hypothesis-generating result that requires future validation in human studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "NaV1.1 is essential for mammalian proprioceptive signaling and behaviors, representing the first evidence for this role of the channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by the comprehensive set of data including expression analysis (C1-C11), electrophysiology (C12-C35, C57-C66), and behavior (C36-C49). The convergent evidence from multiple experimental approaches strongly supports this conclusion. The claim of being 'first evidence' appears accurate based on the literature review provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Some proprioceptor subtypes rely more heavily on NaV1.6 and NaV1.7 for electrical activity, as inferred from the observation that 25% of recorded proprioceptors were insensitive to ICA 121431 and had lower intrinsic excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a reasonable inference from the observation that 25% of proprioceptors were ICA-insensitive (C32). The correlation with lower firing rates supports the interpretation. However, this is based on a small number of cells (5 out of 20) and could benefit from additional characterization of these ICA-insensitive cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "NaV1.1 has a specific role in proprioceptor responses to static muscle movement, as evidenced by clear deficits in static stretch sensitivity but preserved dynamic sensitivity and ability to entrain to vibrations up to 100 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is strongly supported by the ex vivo recording data (C57-C66). The dissociation between static and dynamic responses is clear and reproducible. The authors appropriately acknowledge the caveat about potential NaV1.3 involvement in cultured neurons, but the in vivo recordings from Scn1a-cKO afferents confirm the specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The motor behavioral deficits in Scn1a-cKO mice are likely due to reduced static sensitivity of proprioceptor afferents rather than developmental abnormalities, as proprioceptor number, muscle spindle morphology, and spinal connectivity are all normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is well-supported by the combination of normal developmental markers (C54-C56) and clear functional deficits (C57-C66). The logic is sound: since development is normal but function is impaired, the behavioral deficits likely result from functional impairment. However, this remains an inference, and other functional deficits not examined (e.g., in Golgi tendon organs, acknowledged in C103) could also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The authors propose a model where Piezo2 and other NaV isoforms (NaV1.6, NaV1.7) are sufficient for dynamic/vibratory responses, while NaV1.1 is specifically required for maintaining firing during prolonged static stretch when Piezo2 presumably inactivates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 represent a mechanistic model that is well-supported by the data, though it includes speculative elements (e.g., the timing of Piezo2 inactivation). The model is consistent with all experimental observations and provides a coherent framework for understanding NaV1.1's role. However, direct testing of Piezo2 inactivation kinetics during stretch would strengthen the model. The model is appropriately presented as a proposal rather than proven fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "NaV1.1 is critical for muscle spindle afferent mechanotransduction, as evidenced by the overt behavioral deficits in Scn1a-cKO mice despite normal development and connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by the convergent evidence from behavior, electrophysiology, and developmental analyses. The term 'critical' is justified by the severity of the phenotype. However, the authors acknowledge that other channels (glutamate receptors, ASIC, ENaC) also contribute to proprioception (C99-C101), so NaV1.1 is critical but not the only important component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Alterations in Golgi tendon organ (GTO) function likely contribute to the behavioral deficits in Scn1a-cKO mice, given the ubiquitous expression of NaV1.1 in all proprioceptors and the importance of GTO feedback to motor control, though this was not directly measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C103 is speculative and acknowledged as such by the authors. While the reasoning is sound (NaV1.1 is expressed in all proprioceptors including GTOs, and GTOs are important for motor control), the lack of direct functional measurements of GTOs makes this uncertain. This represents an important limitation and direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Loss of less than a quarter of the proprioceptor sodium current is sufficient to impair proprioceptor responsiveness to muscle stretch, as inferred from the similar deficits in heterozygous and homozygous knockouts despite heterozygotes presumably having ~50% NaV1.1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is a reasonable inference from the haploinsufficiency data (C57-C61, C90). The logic is that if heterozygotes have ~50% NaV1.1 expression and NaV1.1 comprises ~45% of total sodium current, then heterozygotes lose ~22.5% of total current. The similar functional deficits in Het and cKO suggest this level of loss is sufficient to impair function. However, this assumes linear relationships between gene dosage, protein expression, and current, which may not hold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Some clinical manifestations of epilepsy associated with NaV1.1 mutations may result from unreliable coding by peripheral proprioceptors rather than solely from CNS dysfunction, as suggested by the motor deficits in sensory neuron-specific knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is a speculative but well-reasoned inference. The authors show that sensory neuron-specific loss of NaV1.1 causes motor deficits in mice, and cite literature showing epilepsy patients with NaV1.1 mutations have motor problems traditionally attributed to cerebellar dysfunction (C86-C87). This suggests peripheral contributions may be underappreciated. However, this remains a hypothesis requiring validation in human studies or models that can dissect peripheral vs. central contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "ICA 121431 also blocks NaV1.3 channels, which may be upregulated in cultured DRG neurons. A small but significant ICA-sensitive current (p=0.0041) was observed in Scn1a-cKO neurons, suggesting some contribution of NaV1.3 to the ICA effect in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 represent an important caveat acknowledged by the authors. The data in Figure 4\u2014figure supplement 1 show a small residual ICA effect in Scn1a-cKO neurons, supporting the possibility of NaV1.3 involvement. This is appropriately disclosed and doesn't invalidate the main findings, as the ex vivo recordings from Scn1a-cKO afferents (which don't involve culture) confirm the role of NaV1.1. The authors could have strengthened this by testing NaV1.3 expression in cultured vs. fresh neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The authors propose that amplification of the receptor potential by NaV1.1 is necessary to maintain firing during held stretch, with Piezo2 and other mechanosensitive channels providing sufficient initial depolarization to trigger firing at the heminode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is a mechanistic model supported by the data, particularly the dissociation between preserved dynamic and impaired static responses. The model is consistent with prior work showing NaV1.1 localization to muscle spindle endings (C114). However, this is an interpretive framework rather than directly demonstrated mechanism. Direct measurements of receptor potentials and NaV1.1 localization in the specific experimental animals would strengthen this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose that glutamate plays a general role in maintaining excitability in proprioceptor afferents, while NaV1.1 is specifically required for reliable action potential generation at heminodes during static stimuli, based on comparison with published glutamate knockout data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C117 are speculative comparisons with published work (Than et al., 2021). While the comparison is interesting and the reasoning is plausible, the differences in phenotypes (patchy firing in NaV1.1 knockouts vs. firing only at stretch onset in glutamate knockouts) could have multiple explanations. Direct experimental comparison or combined manipulations would be needed to test this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C99",
+      "C100",
+      "C101",
+      "C106",
+      "C107",
+      "C110",
+      "C112",
+      "C114",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors provide extensive literature context establishing prior knowledge about NaV1.1 in brain disease, peripheral sensory neurons, pain signaling, and other cell types, as well as the roles of other channels in proprioception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C67-C87, C99-C101, C106-C107, C110, C112, C114, C120-C121) are citations of published literature and established knowledge. They are appropriately referenced and provide important context for the study. The accuracy of these citations would need to be verified against the original sources, but they appear to be standard and well-accepted findings in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C108",
+      "C113",
+      "C118",
+      "C119",
+      "C122"
+    ],
+    "result": "The authors propose several speculative mechanisms and hypotheses including: functional NaV1.1 protein may only be upregulated in tactile neurons during pathological states; distinct proprioceptor subclasses may rely on different NaV channel combinations; NaV1.1 along the axon could be essential for sustained firing; upregulation of other channels may compensate for NaV1.1 loss in dynamic responses; and loss of NaV1.1 may cause proprioceptive afferents to 'mis-wire' to inappropriate motor neuron pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108, C113, C118, C119, and C122 are explicitly speculative hypotheses proposed by the authors. They are reasonable interpretations of the data and represent important directions for future research, but they lack direct experimental support in the current study. The authors appropriately present these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1327 @@
+{
+  "submission": {
+    "id": "28676198-4dc3-4446-9c0a-d42ca02a4154",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:40:23.403570Z",
+    "updated_at": "2025-12-03T09:40:23.403570Z"
+  },
+  "content": [
+    {
+      "id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "submission_id": "28676198-4dc3-4446-9c0a-d42ca02a4154",
+      "content_type": "manuscript",
+      "content_text": "# In silico-labeled ghost cytometry\n\n## Authors\n\n- Masashi Ugawa<sup>1</sup> ([ORCID: 0000-0002-7196-5737](https://orcid.org/0000-0002-7196-5737))\n- Yoko Kawamura<sup>1</sup>\n- Keisuke Toda<sup>1</sup>\n- Kazuki Teranishi<sup>1</sup>\n- Hikari Morita<sup>1</sup>\n- Hiroaki Adachi<sup>1</sup>\n- Ryo Tamoto<sup>1</sup> ([ORCID: 0000-0003-0626-1888](https://orcid.org/0000-0003-0626-1888))\n- Hiroko Nomaru<sup>1</sup>\n- Keiji Nakagawa<sup>1</sup>\n- Keiki Sugimoto<sup>1</sup>\n- Evgeniia Borisova<sup>4</sup>\n- Yuri An<sup>4</sup>\n- Yusuke Konishi<sup>5</sup>\n- Seiichiro Tabata<sup>5</sup>\n- Soji Morishita<sup>6</sup>\n- Misa Imai<sup>6</sup>\n- Tomoiku Takaku<sup>6</sup>\n- Marito Araki<sup>6</sup>\n- Norio Komatsu<sup>6</sup>\n- Yohei Hayashi<sup>4</sup> ([ORCID: 0000-0001-5490-7052](https://orcid.org/0000-0001-5490-7052))\n- Issei Sato<sup>1</sup>\n- Ryoichi Horisaki<sup>1</sup>\n- Hiroyuki Noji<sup>3</sup>\n- Sadao Ota<sup>1</sup> ([ORCID: 0000-0001-6004-488X](https://orcid.org/0000-0001-6004-488X)) \u2020\n\n### Affiliations\n\n1. Thinkcyte Inc Tokyo Japan\n2. Center for Advanced Intelligence Project, RIKEN Tokyo Japan\n3. The University of Tokyo Tokyo Japan\n4. BioResource Research Center, RIKEN Tsukuba Japan\n5. Sysmex Corporation Kobe Japan\n6. Juntendo University Tokyo Japan\n7. PRESTO, Japan Science and Technology Agency Kawaguchi Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nCharacterization and isolation of a large population of cells are indispensable procedures in biological sciences. Flow cytometry is one of the standards that offers a method to characterize and isolate cells at high throughput. When performing flow cytometry, cells are molecularly stained with fluorescent labels to adopt biomolecular specificity which is essential for characterizing cells. However, molecular staining is costly and its chemical toxicity can cause side effects to the cells which becomes a critical issue when the cells are used downstream as medical products or for further analysis. Here, we introduce a high-throughput stain-free flow cytometry called in silico-labeled ghost cytometry which characterizes and sorts cells using machine-predicted labels. Instead of detecting molecular stains, we use machine learning to derive the molecular labels from compressive data obtained with diffractive and scattering imaging methods. By directly using the compressive \u2018imaging\u2019 data, our system can accurately assign the designated label to each cell in real time and perform sorting based on this judgment. With this method, we were able to distinguish different cell states, cell types derived from human induced pluripotent stem (iPS) cells, and subtypes of peripheral white blood cells using only stain-free modalities. Our method will find applications in cell manufacturing for regenerative medicine as well as in cell-based medical diagnostic assays in which fluorescence labeling of the cells is undesirable.\n\n## Introduction\n\nCharacterization and isolation of a large number of single live cells are of critical importance in life sciences and medicine (Dean et al., 2005; Dudley et al., 2002; Fraietta et al., 2018; Knoepfler, 2009; Reya et al., 2001). During qualitative or quantitative characterization of cells, it is most popular to use molecular staining such as those adopting antibody-antigen binding, where fluorescent markers are physically added (Brown and Wittwer, 2000). Combined with a magnetic or flow-based sorting system, this enables selective isolation of the cells of interest at high throughput (Herzenberg et al., 1976; Miltenyi et al., 1990; Shapiro, 2005). However, molecular staining has numerous disadvantages: the staining process is costly in terms of both time and money; number of detectable markers with fluorescence detection are limited by the spectral overlap of fluorophores (Perfetto et al., 2004); multiple spectral compensation is complex and time consuming (Roederer, 2001); immunocytochemistry staining is inconsistent due to the wide variability of antibodies (Burry, 2011; Weigert et al., 1970); and molecular staining potentially causes side effects to the cells by chemical toxicity (Fried et al., 1982; Patil et al., 2018; Progatzky et al., 2013). These disadvantages become an issue in medical applications. For instance, when producing cell therapy products, the chemical toxicity of molecular staining may affect the final product. Another example is that, during medical diagnosis, the labor and financial cost limits the tests to be used in only large hospitals that can afford them.\n\nOn the other hand, microscopic image-based cell classification of unstained cells is free from such limitations of molecular labeling and is a promising approach for evaluating cell functions or potentials in fields such as cell manufacturing (Buggenthin et al., 2017; Chang et al., 2017; Niioka et al., 2018). Although unstained cell images were thought to lack specific biomolecular information, recent studies (Christiansen et al., 2018; Ounkomol et al., 2018) revealed the potentiality of bridging between images and molecular labels: prediction of labels from imaging information or \u2018in silico labeling.\u2019 However, these approaches utilizing conventional microscopes sacrifice the high throughput and sorting capability which exist in molecular labeling methods (Han et al., 2016; Lindstr\u00f6m, 2012). This restriction arises from the fact that the acquisition of microscopy images is slow, and the processing of high-content images is even slower (Pepperkok and Ellenberg, 2006). Especially, to achieve real-time image-based cell analysis and isolation at high throughput, the processing speed becomes one of the substantial bottlenecks (Han et al., 2016; Nitta et al., 2018). In contrast, conventional flow-based cell sorting systems that process simple cell information such as total fluorescence intensity fast enough to operate at around 10,000 cells/s (Sutermaster and Darling, 2019).\n\nTo achieve in silico-labeling-based cell classification at high throughput, we hypothesized that we do not need to construct the two-dimensional (2D) or three-dimensional \u2018images\u2019 for computationally predicting the labels. Previously, we have demonstrated ghost cytometry, an \u2018imaging\u2019 cytometry that is able to predict cell types based on fluorescence signals encoded with morphological information of cells (Ota et al., 2018). However, the usage of fluorescence staining was inevitable and, therefore, could not suffice applications where cell staining is unfavorable. In this work, we developed a biologically supervised imaging cytometry method free from fluorescence labels called in silico-labeled ghost cytometry (iSGC) while we do not intend to produce any full 2D images in this work to prioritize the speed, we use terms of image or imaging for simplicity. This method performs ultrafast real-time prediction of biological labels by machine learning-based analysis of compressively measured image information of cells in a processing time of down to the order of microseconds on a field-programmable gate array (FPGA). Herein, the machine learning models are pre-trained by the stain-free imaging data and biological labels obtained by fluorescence staining; afterward, it becomes able to predict the biological labels without the measurement of fluorescence labeling. In other words, iSGC performs high-throughput flow cytometry without fluorescence stains but as if cells are fluorescently stained.\n\n## Results\n\n### Principle of iSGC and cell sorting\n\nIn iSGC, morphological information of the cells is obtained with a stain-free compressive ghost imaging technique which we call diffractive ghost motion imaging (dGMI). Similar to previously reported fluorescence ghost cytometry (Ota et al., 2018), an imaging waveform is obtained from cells passing through a structured illumination at a speed where the signal width is shorter than 100 \u00b5s (Figure 1\u2014figure supplement 1E). However, instead of collecting the whole photons with a bucket detector, to perform stain-free imaging, one to several fringe patterns in the diffractive speckle pattern from the transmitted light are acquired with a single-pixel detector (Figure 1\u2014figure supplement 1). While full image reconstruction was demonstrated either with iterative acquisition using different structured illuminations or structured masks with a single-pixel detector (Horisaki et al., 2017a; Horisaki et al., 2017b), iSGC adopts a reduced acquisition for performing high-speed cell classification (Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2).\n\nFigure 1 depicts an overall workflow that enables biologically supervised in silico labeling of ultrafast dGMI signals without image production. We first prepare a training data set by simultaneously acquiring the dGMI waveform and the fluorescence label from each cell. We then train the machine classifier using this data set of biologically labeled waveforms. Once the classifier is trained, in turn, it is able to predict the fluorescence label from the stain-free imaging waveform. As a proof-of-concept demonstration, we here performed iSGC with two cell-line samples of HeLa S3 cells and MIA PaCa-2 cells (Figure 2). The two cell lines are similar in size (Figure 2A) and mixed at equal concentration with only one of them stained with green fluorescence using LIVE/DEAD Fixable Green Dead Cell Stain (Invitrogen) (Figure 2B). This mixture was hydrodynamically focused and flowed through the structured illumination within a microfluidic channel, where the dGMI waveform and green fluorescence of the cells were obtained simultaneously. Using the training data set comprised of the stain-free dGMI waveforms and the fluorescence labels, we trained a classifier based on support vector machine (SVM) (Boser et al., 1992). SVMs are stable in terms of optimization, and their generalization abilities are sufficiently analyzed on the basis of statistical learning theory. When the trained classifier was implemented on a FPGA, it judged the cells in real time using only the stain-free dGMI waveforms and then enabled subsequent sorting of the cells according to the judgment (Figure 1B). The actual time lapsed during the judgment for a single cell with the FPGA was 6.0 \u00b5s. In iSGC, using a high-content modality, the classifier can find a decision boundary in a higher-dimensional space and is able to make decisions based on the complex information. As a result, iSGC was able to infer the fluorescence label corresponding to the cell type in this first case from a fluorescence-free measurement at a high area under the receiver operating characteristic curve (AUC) of 0.963 for cells flowed after training (Figure 2C and D). In the actual sorting process, iSGC classified the cells at an accuracy of 0.917 according to the FPGA classifier (Figure 2\u2014figure supplement 1C), and the purity of the actual sorted cells was 97.3% (Figure 2E). In contrast, such accurate and high-speed classification and selection are challenging using existing flow cytometers that rely on low-content stain-free data such as forward scatter (FSC), side scatter (SSC), or back scatter (BSC), which is SSC\u2019s analogy and can be used interchangeably with SSC (Figure 1\u2014figure supplement 2). Using only FSC and SSC, the SVM-based classifier can only draw a decision boundary in 2D space, and the classification had an AUC of only 0.936\u00b10.005 (gray dashed line in Figure 2\u2014figure supplement 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig1-v1.jpg)\n\n**Figure 1.:** (A) First, the training data set is prepared by simultaneously acquiring the stain-free waveform and the fluorescence signal from each cell. Using the fluorescence intensity obtained from the fluorescence signal, each cell is labeled as positive or negative according to a defined threshold of the fluorescence intensity. The machine classifier is trained using this data set comprised of stain-free waveforms and fluorescence labels. (B) Once trained, in turn, the classifier can predict the fluorescence label in silico from the stain-free waveforms and sort the cells upon this prediction in real time. iSGC, in silico-labeled ghost cytometry.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of dGMI. A structured illumination is created using a coherent light at the focus of an objective. After the focus, the coherent light spreads out and creates a speckle pattern due to diffraction. At a substantial length away from the focus, the speckle pattern is large enough so that with an iris, a single to a few fringe patterns can be obtained while the rest is blocked. This small portion of the original speckle pattern is detected with a PMT. When a cell passes through the structured illumination, the phase and intensity changes in the transmitted light result in a change in the speckle pattern. This leads to a change in the intensity of the light detected at the PMT. Therefore, from the modulation of the detected signal, the phase and intensity information of the cell can be obtained. (B) Schematic of ssGMI. A structured illumination is created using a coherent light at the focus of an objective. Similar to the fluorescence in previously reported ghost cytometry (Ota et al., 2018), when the cell passes through the structured illumination, the side scatter resulting from the overlap of the cell with the structured illumination is directed orthogonal to the illumination light path. This is collected with a lens and detected by a PMT (see also Figure 1\u2014figure supplement 3). In the case of bsGMI, the scattered light is collected behind the objective using a knife-edge mirror to separate from the illumination path (Figure 1\u2014figure supplement 2). (C) Image of a structured illumination used for dGMI and ssGMI, obtained using a fluorescence film and a camera. (D) Image of a speckle pattern for dGMI, obtained using a camera. (E, F) Actual signal waveform of dGMI (E) and ssGMI (F). In both cases, the image of the cell cannot be obtained from the signal because the information from the cell is reduced for high throughput. bsGMI, back scatter ghost motion imaging; dGMI, diffractive ghost motion imaging, PMT, photomultiplier tube; ssGMI,side scatter ghost motion imaging.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic of BSC. An illumination laser is focused onto a cell in flow. The BSC from a cell is obtained from the same side of the sample as the illumination. A mirror is used to separate the illumination laser and the BSC light. A BSC signal is similar to SSC, and BSC is used in place of SSC when it is difficult to position a collecting lens next to the channel and orthogonal to the illumination light, for instance, when using a microfluidic device. (B) Schematic of bsGMI and fsGMI. For bsGMI and fsGMI, a similar concept to BSC and FSC, respectively, is used except the illumination is a structured illumination. A bsGMI signal is similar to ssGMI, and bsGMI is used in place of ssGMI for the same reason as BSC. BSC, back scatter; bcGMI, XXX; FSC, forward scatter; fsGMi, XXX; SSC, side scatter.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** dGMI was measured using a structured illumination created with a 405 nm laser source (Stradus 405-250, Vortran). The structured illumination was combined with other light sources using a dichroic mirror (DM1, ZT405rdc, Chroma) and focused on the flow channel using a 20\u00d7 objective (OBJ1, UPLSAPO 20\u00d7, Olympus). The transmitted structured illumination was collected with a 10\u00d7 objective (OBJ2, UPLFLN 10\u00d7, Olympus) and separated from other transmitted light using a dichroic mirror (DM6, ZT405rdc, Chroma). This was further passed through a 20\u00d7 objective (OBJ3, UPLSAPO 20\u00d7), and in front of the objective at a distance of ~350 mm, an iris was put at an aperture size of ~3 mm. The light that entered the iris was detected with a PMT (PMT4) with a bandpass filter (405 nm, ET405/10\u00d7, Chroma) in front of it. ssGMI was measured using the same structured illumination as dGMI. However, instead of collecting the transmitted light, the scattered light from the flow channel orthogonal to the illumination light was collected using a plano-convex lens (f=50 mm, Thorlabs). Then it was separated from other scattered light using a dichroic mirror (DM7, ZT405rdc, Chroma) and detected with a PMT (PMT5) with a bandpass filter (ET405/10\u00d7, Chroma) in front of it. Fluorescence labels for training and validation were measured with either the 405 nm structured illumination, a 488 nm laser (Cobolt), or a 635 nm laser (Stradus 637-140, Vortran). The 488 nm laser and 637 nm laser were combined with a dichroic mirror (DM3, ZT488rdc), reflected with another dichroic mirror (DM2, ZT405/488/635rpc) for separating the returning fluorescence light, and combined with the 405 nm structured illumination with DM1. The three light sources were focused on the flow channel using OBJ1. The fluorescence was collected using the same objective and passed through DM1 and DM2. This was further separated into different colors with dichroic mirrors DM4 and DM5 and detected using PMTs (PMT1, PMT2, and PMT3) with different bandpass filters (ET440/40\u00d7, ET525/50m, ET675/50m, respectively, all from Chroma) in front of them. In the case of WBC differential classification, a similar setup for four-color detection using three dichroic mirrors and four PMTs was used. Forward scatter (FSC) and side scatter (SSC) for triggering acquisition and initial cell population gating were measured using the 488 nm laser or the 637 nm laser. The figure is depicted for the case of the 488 nm laser. For the FSC, from the flow channel, the transmitted 488 nm light was collected with OBJ2 and passed through DM6. Then the main transmitted beam was blocked with an obscuration bar, and the scattered light that came around the obscuration bar was collected with a lens and detected with a photodetector (PDA100A, Thorlabs) with a bandpass filter (ZET488/10\u00d7, Chroma) in front of it. For the SSC, the scattered light from the flow orthogonal to the illumination light was collected using a plano-convex lens (f=50 mm, Thorlabs). Then it was passed through DM7 and collected with a PMT (PMT6) with a bandpass filter (ZET488/10\u00d7, Chroma) in front of it. dGMI, diffractive ghost motion imaging; iSGC, in silico-labeled ghost cytometry; PMT, photomultiplier tube; ssGMI, XXX.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig2-v1.jpg)\n\n**Figure 2.:** (A) Histogram of FSC for HeLa S3 (blue) and MIA PaCa-2 (red) cells. The intensity of FSC reflects the size of cells. There is a large overlap of the two cell-line populations, showing that the two cell lines are similar in size. (B) Fluorescence intensity evaluation of HeLa S3 and MIA PaCa-2 cells before sorting. The population with lower green fluorescence intensity corresponds to HeLa S3 cells while the population with higher fluorescence intensity corresponds to MIA PaCa-2 cells. (C) SVM score histogram for the classification of HeLa S3 and MIA PaCa-2 cells obtained by iSGC as in silico-predicted labels during sorting. Blue and red colors assigned in the histogram correspond to the cells labeled as HeLa S3 and MIA PaCa-2 cells, respectively, derived from the green fluorescence obtained simultaneously for validation. The dashed line shows the decision boundary by the SVM. (D) A receiver operating characteristic curve for the classification of HeLa S3 and MIA PaCa-2 cells using dGMI during sorting. The AUC for the classification with dGMI was 0.963, showing a high classification ability. (E) Fluorescence intensity evaluation of HeLa S3 and MIA PaCa-2 cells after sorting. The concentration of MIA PaCa-2 cells was enriched from 60.3% (B) to 97.3% (E). dGMI, diffractive ghost motion imaging; FSC, forward scatter; iSGC, in silico-labeled ghost cytometry; SVM, support vector machine.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scatter plot of FSC and SSC for HeLa S3 (blue) and MIA PaCa-2 (red) cells. (B) ROC curve for the SVM-based classification of HeLa S3 and MIA PaCa-2 cells using dGMI during sorting (blue solid line) and FSC and SSC intensities (gray dashed line). The AUC for the classification with dGMI was 0.963, showing a high classification ability, whereas the AUC for the classification with FSC and SSC intensities was 0.936\u00b10.005, showing limited performance. (C) Confusion matrix for the classification of HeLa S3 and MIA PaCa-2 cells during sorting. The classification accuracy is 0.917, and the purity of MIA PaCa-2 cells derived from only the classification is 94.7%. We assume that the purity of the sorted cells (97.3%) slightly deviates from this due to sorting errors and statistical errors. dGMI, diffractive ghost motion imaging; FSC, forward scatter; iSGC, in silico-labeled ghost cytometry; ROC, receiver operating characteristic; SSC, side scatter; SVM, support vector machine.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** FSC/SSC scatter plots used for removing debris and doublets (top panels) and fluorescence histogram for Fixable Green used for labeling positive (right) and negative (left) cells (bottom panels) before sorting and after sorting.\n\n### Classification of induced pluripotent stem cell (iPSC)-derived cells\n\niSGC exhibits its significant potential in cell manufacturing processes in applications including regenerative medicine and cell therapy, wherein the quality of cells has to be monitored and controlled from various aspects including viability, purity, and identity based on cell type and differentiation states (Kolkundkar, 2014; Morgan et al., 2006; Segers and Lee, 2008; Yoshihara et al., 2017). We here demonstrate the iSGC-based cell analysis in a cell production line using human iPSCs. The production line starts from thawing frozen-preserved iPSCs which are then passed through multiple differentiation steps, leading to the final cell product. Throughout this production line, monitoring viability, liveliness, expressions states, and purity of the cell population, and often their selective enrichment are of critical importance. Up to now, these examinations have required molecular staining, which is often toxic to cells and, if not toxic, the cells can be affected, for instance, by immune response (Progatzky et al., 2013). Thereby, we introduce iSGC as a promising method for stain-free analysis and purification in future cell manufacturing.\n\nAs a start, we demonstrated that iSGC can distinguish dead and apoptotic cells from live cells at high accuracy. This is essential in monitoring the population for quality control; checking if the cells under production are healthy (Campbell et al., 2015; Kolkundkar, 2014). It is known that using FSC and SSC (or FSC and BSC), dead cells are distinguishable but apoptotic cells are difficult to distinguish from live cells at high accuracy (Darzynkiewicz et al., 1992; Dive et al., 1992; Shapiro, 2005; Zamai et al., 1993). In this experiment, we performed a viability and apoptosis analysis of cultured human iPSCs. As shown in Figure 3A, the training label was created using the fluorescence intensity of propidium iodide (PI) and Annexin V, indicators of dead and apoptotic cells, respectively. With these labels, the training data set of pairs of a waveform and label was prepared. To enable effective classification of cells, especially in dead cell discrimination, here, we introduce other stain-free modalities called side scatter GMI (ssGMI) and back scatter GMI (bsGMI) (Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2), which are SSC and BSC variants, respectively, of their fluorescence waveform counterpart in ghost cytometry. Using dGMI and bsGMI modalities for iSGC, it was able to distinguish dead and apoptotic cells from live cells with an AUC of 0.998\u00b10.002 and 0.877\u00b10.007 (Figure 3D,E blue solid lines in Figure 3\u2014figure supplement 1D and E). In contrast, using the FSC and BSC data with the same labels for SVM-based classification, conventional flow cytometry can only achieve a limited performance of 0.973\u00b10.007 and 0.779\u00b10.011 (gray dashed lines in Figure 3\u2014figure supplement 1D and E). Especially, between apoptotic and live cells, both populations overlap in the FSC-BSC scatter plot (Figure 3C), and with conventional gating in the FSC-BSC scatter plot (Hawley and Hawley, 2004) (region within the red line in Figure 3B), apoptotic cells cannot be excluded from live cells. Using iSGC, we can distinguish apoptotic cells from live cells within this gate with an AUC of 0.891\u00b10.012 (Figure 3F, blue solid line in Figure 3\u2014figure supplement 1F). Therefore, we show that iSGC can classify cells that conventional stain-free scattering intensity-based methods fail to distinguish, proving its significant potentials in monitoring cell viability.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig3-v1.jpg)\n\n**Figure 3.:** (A). Scatter plot of PI and Annexin V for iPSCs. The population within the blue, red, and orange regions were labeled as live, dead, and apoptotic cells, respectively. (B). Scatter plot of FSC and BSC for iPSCs without exclusion of debris and doublets. (C). Scatter plot of FSC and BSC for each labeled iPSC populations. The blue, red, and orange dots each correspond to live, dead, and apoptotic cells, respectively. All populations, which are previously shown in (B), are gated prior to labeling for removing debris and doublets (Figure 3\u2014figure supplement 1A and Figure 3\u2014figure supplement 2). In the plot, the live and dead populations have distinct separation, but the live and apoptotic populations overlap. (D\u2013F) SVM score histograms for the iSGC-based classification of dead cells from live cells (D), apoptotic cells from live cells (E), and apoptotic cells from live cells within the red region in the scatter plot (B, F). The colors correspond to the labels in (A). All histograms are the best result of 10 times random sampling. The AUCs for each classification were 0.999 (D), 0.885 (E), and 0.904 (F). The mean and standard deviation of AUCs for the 10 trials in each condition were 0.998\u00b10.002, 0.877\u00b10.007, and 0.891\u00b10.012, respectively (Figure 3\u2014figure supplement 1, D, E, and F). BSC, back scatter; FSC, forward scatter; iPSC, induced pluripotent stem cell; iSGC, in silico-labeled ghost cytometry; PI, propidium iodide; SVM, support vector machine.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Scatter plot of FSC and BSC intensities. Orange dashed line corresponds to the region used to label the cells in Figure 3A. Red solid line is the same region as the red line in Figure 3B. (B, C) Confusion matrices for the SVM-based classification of live, dead and apoptotic cells using dGMI and ssGMI (B) and FSC and SSC (C), derived by the sum of all trials from 10 times random sampling. The macro-average F1-scores were 0.842\u00b10.006 (B) and 0.759\u00b10.006 (C). (D\u2013F). ROC curves for the classification of live versus dead cells (D), live versus apoptotic cells (E), and live versus apoptotic cells within the region of red line in (A). (F) Blue solid lines correspond to the SVM-based classification with dGMI and bsGMI, and gray dashed lines correspond to the SVM-based classification with FSC and BSC. Each line represents the mean, and the shaded area around each line represents the standard deviation for 10 trials. The AUCs of the blue solid line and the gray dashed line are 0.997\u00b10.002 and 0.974\u00b10.007, respectively, in (D), 0.878\u00b10.007 and 0.779\u00b10.011, respectively, in (E), and 0.892\u00b10.012 and 0.777\u00b10.012, respectively, in (F). BSC, back scatter; bsGMI, XXX; dGMI, diffractive ghost motion imaging; FSC, forward scatter; iPSC, induced pluripotent stem cell; iSGC, in silico-labeled ghost cytometry; ROC, receiver operating characteristic; ssGMI, XXX; SVM, support vector machine.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** FSC/BSC (left panel) and FSC height/width (middle panel) scatter plots used for removing debris and doublets, and fluorescence scatter plot of Annexin V-FITC and PI (right panel) for labeling live (blue), dead (red), and apoptotic (green) cells. The region in the red line is the same region as the red line in Figure 3B and Figure 3\u2014figure supplement 1. BSC, back scatter; FSC, forward scatter; iSGC, in silico-labeled ghost cytometry; iPSC, induced pluripotent stem cell; PI, propidium iodide.\n\nNext, we demonstrated that the iSGC can classify undifferentiated cells from differentiated ones, an important process in the cell production line. This is critical because remaining undifferentiated cells can eventually cause the tumor formation after their transplantation (Ben-David and Benvenisty, 2011; Knoepfler, 2009). Here, we compared undifferentiated human iPSCs with differentiated cells\u2014neuroectodermal cells (NECs) and hepatic endodermal cells (HECs), both derived from the same iPSCs. In the training process, the cells were labeled with an undifferentiation marker which only stains the iPSCs that are undifferentiated. The training label was created by staining the cells with rBC2LCN-635, a fluorescent probe for indicating undifferentiated cells (Onuma et al., 2013; Figure 4A and B and Figure 4\u2014figure supplement 1, A and B). Using dGMI and ssGMI waveforms of each cell type labeled by the undifferentiation marker as training data set, the classifier distinguished iPSCs and NECs with an AUC of 0.929\u00b10.008 (Figure 4D and Figure 4\u2014figure supplement 1D), and iPSCs and HECs with an AUC of 0.942\u00b10.007 (Figure 4E and Figure 4\u2014figure supplement 1E), showing its high classification capability. In contrast, using only both FSC and SSC information, the AUCs for the SVM-based classification of each pair of cell types were limited to 0.856\u00b10.009 and 0.697\u00b10.016 (Figure 4\u2014figure supplement 1, D and E), respectively.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C). Histograms of rBC2LCN-635 fluorescence intensity for a mixture of NECs (orange) and iPSCs (violet) (A), a mixture of HECs (red) and iPSCs (violet) (B), and a histogram of CellMask Green intensity for a mixture of RPE cells (light green) and retinoblastoma (green) (C). These markers were used for discriminating cells in a training data set. (D\u2013F). SVM score histogram for the iSGC-based classification of NECs and iPSCs (D), HECs and iPSCs (E), and RPE cells and retinoblastoma (F) with dGMI and ssGMI. The colors correspond to the labels in (A), (B), and (C) used for validation. All histograms are the best result of 10 times random sampling. The AUCs for each classification were 0.943 (D), 0.951 (E), and 0.998 (F). The mean and standard deviation of AUCs for the 10 trials in each condition were 0.929\u00b10.008, 0.942\u00b10.007, and 0.994\u00b10.002, respectively (Figure 4\u2014figure supplement 1, D, E, and F). dGMI, diffractive ghost motion imaging; HEC, hepatic endodermal cell; iPSC, induced pluripotent stem cell; iSGC, in silico-labeled ghost cytometry; NEC, neuroectodermal cell; RPE, retinal pigment epithelium; ssGMI, side scatter ghost motion imaging; SVM, support vector machine.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013C) Scatter plots of fluorescence intensity of Calcein AM and rBC2LCN-635 for the mixture of iPSCs and NECs (A) and iPSCs and HECs (B), and scatter plot of fluorescence intensity of CellMask Green and PI for mixture of RPE cells and retinoblastomas (C). The region in each plot is the actual gating used to label each type of cells and to exclude dead cells. (D\u2013F) ROC curve for the classification of iPSCs and NECs (D), iPSCs and HECs (E), and RPE cells and retinoblastomas (F). Blue solid lines indicate the SVM-based classification using dGMI and ssGMI, and gray dashed lines indicate the SVM-based classification using FSC and SSC intensities. All ROC curves are means of 10 times random sampling. Each line represents the mean, and the shaded area around each line represents the standard deviation for 10 trials. The AUCs of the blue solid line and the gray dashed line are 0.929\u00b10.008 and 0.857\u00b10.009, respectively, in (D), 0.943\u00b10.007 and 0.698\u00b10.016, respectively, in (E), and 0.994\u00b10.002 and 0.966\u00b10.004, respectively, in (F). dGMI, diffractive ghost motion imaging; HEC, hepatic endodermal cell; iPSC, induced pluripotent stem cell; iSGC, in silico-labeled ghost cytometry; NEC, neuroectodermal cell; PI, propidium iodide; ROC, receiver operating characteristic; RPE, retinal pigment epithelium; ssGMI, XXX; SVM, support vector machine.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** FSC/SSC (top-left panel) and FSC height/width (top-right panel) scatter plots used for removing debris and doublets, FSC and Calcein AM fluorescence scatter plot (bottom-left panel) for removing dead cells, and fluorescence scatter plot of Calcein AM and rBC2LCN-635 (bottom-right panel) for labeling undifferentiated (red) and differentiated (blue) cells. FSC, forward scatter; iPSC, induced pluripotent stem cell; iSGC, in silico-labeled ghost cytometry; NEC, neuroectodermal cell; SSC, side scatter.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** FSC/SSC (top-left panel) and FSC height/width (top-right panel) scatter plots used for removing debris and doublets, FSC and Calcein AM fluorescence scatter plot (bottom-left panel) for removing dead cells, and fluorescence scatter plot of Calcein AM and rBC2LCN-635 (bottom-right panel) for labeling undifferentiated (red) and differentiated (blue) cells. FSC, forward scatter; HEC, hepatic endodermal cell; iPSC, induced pluripotent stem cell; iSGC, in silico-labeled ghost cytometry; SSC, side scatter.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** FSC/SSC (left panel) and FSC height/width (middle panel) scatter plots used for removing debris and doublets and fluorescence scatter plot of CellMask Green and PI (right panel) for simultaneously removing dead cells and labeling RPE cells (blue) and retinoblastomas (red). FSC, forward scatter; iSGC, in silico-labeled ghost cytometry; PI, propidium iodide; RPE, retinal pigment epithelium; SSC, side scatter.\n\nIn addition, we also demonstrated that iSGC can be used to further purify cells of final products by distinguishing contaminating cancer cells. In the final stage of production, the discrimination of contaminants at high accuracy is necessary to remove potentially cancerous cells, which may lead to tumors after their transplantation. We chose retinal pigment epithelium (RPE) cells, the first iPSC-derived cells tested clinically, as a product of regenerative medicine (Cyranoski, 2017; Cyranoski, 2014; Garber, 2015; Mandai et al., 2017). We applied our method for classifying a mixed population of RPE cells and Y-79 retinoblastoma cells, model epithelial cancer cells that can potentially remain in the RPE cells (Reid et al., 1974). Only the retinoblastoma cells were stained with CellMask Green Plasma Membrane Stain (Invitrogen) prior to mixing the two cell populations. Using dGMI and ssGMI waveforms labeled based on the intensity of CellMask Green as training data set (Figure 4C and Figure 4\u2014figure supplement 1C), the AUC for classification of RPE cells with Y-79 cells was 0.994\u00b10.002 (Figure 4F and Figure 4\u2014figure supplement 1F). In contrast, simultaneously using FSC and SSC information for the SVM-based classification, the AUC was limited to 0.966\u00b10.004 (Figure 4\u2014figure supplement 1F). This difference becomes substantial when purifying RPE cells at a low false positive rate, or low number of overlooked cancer cells. For instance, to achieve a false positive rate of less than 1%, 92% of the RPE cells can be recovered with iSGC but only 52% of the RPE cells can be recovered with FSC and SSC (see Materials and methods). Therefore, iSGC can be used to distinguish and remove cancerous cells from the final products of cell manufacturing at high sensitivity and specificity compared to conventional stain-free methods.\n\n### White blood cell differentiation\n\nOther than cell manufacturing, iSGC can be used for medical diagnosis based on cell classification. For example, peripheral white blood cell (WBC) differential count is necessary for the diagnosis of diseases such as inflammatory states, sepsis, allergy, and hematologic malignancies (Blumenreich, 1990; Roussel et al., 2012). The current reference method is a 400 cell count performed manually under a microscope (Cherian et al., 2010; Hubl et al., 1997; Roussel et al., 2012; Roussel et al., 2010). However, not only is this labor-intensive and does require skilled technicians, but may also limit accuracy and precision because of the examination of small number of cells and the subjective distinction of cells (Cherian et al., 2010; Hubl et al., 1997; Roussel et al., 2012; Roussel et al., 2010). Recently, studies have been ongoing to replace the reference method with flow cytometry (Cherian et al., 2010; Hubl et al., 1997; Roussel et al., 2012; Roussel et al., 2010). Still, because one CD marker can differentiate only one cell type at the most, using antibodies for multiple CD markers expands the cost of diagnostic tests to be performed as a routine basis. With iSGC, peripheral WBC differential counting can be performed based on the morphology of the cells without CD markers, but objectively and with thousands of cells.\n\nHere, we demonstrate stain-free peripheral WBC differential classification with iSGC using healthy blood samples spiked with model CD45+ hematopoietic stem cells (HSCs). To train and validate our system, the WBCs were stained with five fluorochrome-conjugated monoclonal antibodies that each bind to one of these types of CD markers; CD45, CD123, CD14, CD16, and CD34. Using these markers, the cells were labeled as neutrophils, lymphocytes, monocytes, eosinophils, basophils, or HSCs (Figure 5A), corresponding to a widely performed, five-part peripheral WBC differential (Hubl et al., 1997; Roussel et al., 2010) and HSC enumeration (Brocklebank and Sparrow, 2001; Venditti et al., 1999). Here, we additionally utilized two other stain-free modalities which we call forward scatter GMI (fsGMI) and bright field GMI (bfGMI), which are analogs to forward scattering in flow cytometry and bright field images in microscopy, respectively, to improve classification performance (Figure 1\u2014figure supplement 2). Also, convolutional neural network (CNN) was adopted to build a classifier for this sorting-free task. After training the iSGC classifier with the CD-marker-based labels, we predicted the peripheral WBCs as one of the cell types using dGMI, bsGMI, fsGMI, bfGMI, FSC, and BSC modalities. When we performed the classification for two donors in an intra-donor manner by training a model using data from one donor and applying it to data from the same donor, macro-average F1-scores of 0.906\u00b10.003 and 0.906\u00b10.002 were obtained, respectively (Figure 5B and Figure 5\u2014figure supplement 1A). Moreover, when we performed the classification for the same two donors in an inter-donor manner by training a model using a data set from one donor and applying it to a data set from another donor, and vice versa, macro-average F1-scores of 0.901\u00b10.002 and 0.884\u00b10.004 were obtained, respectively (Figure 5C and Figure 5\u2014figure supplement 1B). Slight false negatives can be seen for basophils, which can be thought to be due to their limited number in the population used for training and testing the model. In the proportion of each cell in the population (Figure 5D and E) and the flow cytometry scatter plot (Figure 5F,G and H) compared to the CD-marker-based labeling, the predictions made by iSGC performed well across samples. The class ratio by CD marker and prediction were in good agreement for both intra- and inter-donor predictions, even if the predictions included cells that were not gated and were difficult to clearly label (Figure 5). Therefore, we demonstrate that iSGC has the potential to replace CD markers for typical five-part peripheral WBC differential classification.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig5-v1.jpg)\n\n**Figure 5.:** (A) Flow-cytometry scatter plots used for gating and labeling WBCs. (B, C) Confusion matrix for the classification of peripheral WBCs. The training and classification were performed using a sample from the same donor (intra-donor) for (B) and samples from different donors (inter-donor) for (C). The macro-average F1-scores were 0.911 and 0.904 for (B) and (C), respectively. (D, E) Proportion of each cell type by CD-marker-based labels, iSGC-predicted labels for cells that were gated and given the ground truth labels in (A), and iSGC-predicted labels for all cells including those that were not gated in (A). Similar to (B) and (C), the training and classification were performed in an intra-donor manner for (D) and an inter-donor manner for (E). (F\u2013H). Scatter plot of CD45 and BSC for all WBC. The colors in each plot correspond to CD-marker-based labels (F), iSGC-predicted labels trained, and predicted in an intra-donor manner (G), and iSGC-predicted labels trained and predicted in an inter-donor manner (H). The colors in (G) and (H) correspond to the same labels as (F). BSC, back scatter; iSGC, in silico-labeled ghost cytometry; WBC, white blood cell.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A, B) Confusion matrix for the classification of peripheral WBCs performed on the donor blood sample used for training in Figure 5C and E. The training and classification were performed in an intra-donor manner for (A) and in an inter-donor manner for (B). The macro-average F1-scores were 0.907 and 0.890 for (A) and (B), respectively. These values are in close correspondence with those in Figure 5B and C. (C, D) Proportion of each cell type by CD-marker-based labels and iSGC-predicted labels for cells that were gated and given the ground truth labels, and iSGC-predicted labels for all cells including those that were not gated. Similar to (A) and (B), the training and classification were performed in an intra-donor manner for (C) and an inter-donor manner for (D). iSGC, in silico-labeled ghost cytometry; WBC, white blood cell.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** FSC/BSC (top-left panel) and FSC width/height (top-middle panel) scatter plots were used for removing debris and doublets. The rest of the panels correspond to the scatter plots in Figure 5A. First, CD34-PerCP/CD123-APC (top-right panel) was used to gate basophils. The non-basophils were then plotted on a CD16-FITC/CD14-PE scatter plot (second row, left panel) to gate monocytes. The non-monocytes were then plotted on a CD34-PerCP/BSC scatter plot (second row, middle panel) to gate the CD34+ hematopoietic stem cells (HSCs). The non-HSCs were then plotted on a CD45-APC-Cy7-H/BSC scatter plot (second row, right panel) to gate lymphocytes (lower right gate) and granulocytes (upper-left gate). The granulocytes were then plotted on a CD16-FITC/CD45-APC-Cy7-A plot (bottom-left panel) to gate eosinophils (upper-left gate) and neutrophils (lower-right gate). BSC, back scatter; FSC, forward scatter; iSGC, in silico-labeled ghost cytometry; WBC, white blood cell.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67660/elife-67660-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** FSC/BSC (top-left panel) and FSC width/height (top-middle panel) scatter plots were used for removing debris and doublets. The rest of the panels correspond to the scatter plots in Figure 5A. First, CD34-PerCP/CD123-APC (top-right panel) was used to gate basophils. The non-basophils were then plotted on a CD16-FITC/CD14-PE scatter plot (second row, left panel) to gate monocytes. The non-monocytes were then plotted on a CD34-PerCP/BSC scatter plot (second row, middle panel) to gate the CD34+ hematopoietic stem cells (HSCs). The non-HSCs were then plotted on a CD45-APC-Cy7-H/BSC scatter plot (second row, right panel) to gate lymphocytes (lower right gate) and granulocytes (upper-left gate). The granulocytes were then plotted on a CD16-FITC/CD45-APC-Cy7-A plot (bottom-left panel) to gate eosinophils (upper-left gate) and neutrophils (lower-right gate). BSC, back scatter; FSC, forward scatter; iSGC, in silico-labeled ghost cytometry; WBC, white blood cell.\n\n## Discussion\n\nThe advantage of iSGC over conventional label-free flow cytometry modalities with a scalar quantity is that it measures more detailed information of cells for a more accurate cell selection. For instance, with conventional FSC and SSC, each modality yields a single scaler value, and therefore, even combined, the gating is only in a 2D space. However, iSGC utilizes a waveform containing over 100 points and performs classification in this high-dimensional space. While it is difficult for humans to perceive such high-dimensional data, employing machine learning allows us to directly interpret them and perform classification fast enough to enable high-throughput sorting.\n\nBecause iSGC utilizes \u2018image\u2019 information, which is a generic indicator of cell morphology just as the 2D cell images, it shares the limitations and advantages with other image-based cell classification methods. For example, iSGC often shows poor classification performances when morphological differences are not easily visually recognizable between cells to be classified. From our experiences, differentiation of CD4 and CD8 T cells are one example which have been challenging to both ghost cytometry and our eyes. On the other hand, transferability of a model can be advantageous: a model developed using different data can be applied to a new sample or application in general, just as those using 2D images can be applied to a new sample or application. Moreover, the iSGC machine is currently equipped with a self-calibration system for controlling the position of flow streams of cells relative to the illumination pattern, which is analogous to a situation where objects come to the same position in the 2D images, consequently enhancing the robustness of models over a long time or between experiments. This is evidenced by the good results of inter-donor classification of the six cell types.\n\nIn addition to the modalities of conventional FSC and SSC, dGMI, fsGMI, bsGMI, ssGMI, and bfGMI, we used in this work, the concept of iSGC is not limited to those\u2014other label-free modalities with high dimensions can also be used and combined. For example, imaging techniques such as holography may be able to be adapted for iSGC. What is critical is that such modalities are acquired so that the data can be processed quickly for classification. In the case of holography, the reconstruction of the object image from compressive measurements have been demonstrated (Brady et al., 2009; Lim et al., 2011; Marim et al., 2010), These holographic measurements may be further compressed for classifying the cells based on iSGC.\n\nThe potential applications of this method are similar to those of other image-based cell classification, including purification and quality control of cell manufacturing products and diagnostic tests using blood cells, as we demonstrated in this work. These include image-based classification of cell types (Yoon et al., 2017), differentiated cells (Zhang et al., 2018), cancer cells (Teramoto et al., 2019), and WBCs (Lippeveld et al., 2019). The advantage over conventional image-based cell classification is that iSGC is able to perform cell classification at higher throughputs which is necessary for analyzing large populations of cells in manufacturing (Sutermaster and Darling, 2019) and in diagnostic tests where rare cell detection is often required. Furthermore, in contrast to microscopy image-based cell classification, iSGC-based high-throughput enrichment of the desired cells allows us to use them for their downstream uses in manufacturing as well as molecular assays in further detailed analysis (Gr\u00fcn and van Oudenaarden, 2015).\n\nFinally, the concept of iSGC can be used with a variety of ground truth labels. Depending on the characteristics of cell populations and the purpose of classifications, ground truth labels in training data sets can be prepared with various surface markers, genetic reporters (Zhang et al., 2014), and functional assays (Barros et al., 2009). Furthermore, if we have separated cell populations showing characteristics such as responder versus non-responder cells (Belzeaux et al., 2012), or disease versus healthy cells, they can be used as a label training a model to classify and selectively sort the unknown cells. In addition, it is often the case that molecular labels suitable as ground truth labels are unavailable or less-biased clustering of the morphological information is preferred. One approach for this issue is to use the same high-dimensional modalities for clustering cells based on morphological information via dimension reduction and then adopt these visualized clusters as new labels for training the supervised learning model in iSGC.\n\nIn conclusion, we have developed a high-speed, stain-free cytometry that predicts labels based on compressive imaging information without image reconstruction. This staining-free technology will find its applications in a wide range of medical fields such as cell manufacturing in regenerative cell therapy and blood cell enumeration and differentiation in clinical diagnosis. The key to this technology is in turning imaging modalities that are incomprehensible to humans practical for cell characterization by using machine learning to correlate them to biological labels. In the current era where machines can outperform humans, we believe in the potential of utilizing modalities that are machine suitable, rather than human suitable, and that such concept will accelerate not only the field of flow cytometry, but also other areas of science.\n\n## Materials and methods\n\n### Electronics\n\nAll photomultiplier tubes (PMTs) used in this work were purchased from Hamamatsu Photonics Inc PMTs of 10 MHz with built-in amplifier (H10723-210 MOD, MOD2, H10723-Y2, A2, MOD2) were used for detecting the dGMI, ssGMI, bsGMI, and fsGMI signals, while PMTs of 200 kHz (H10723-20 Y1, H10723-20 MOD, H10723-210 Y1), 1MHz (H10723-210 MOD3, H10723-20 MOD3), or 10MHz (H10723-210 MOD2) were used to detect fluorescence signals, SSC, and BSC signals. FSC signals were obtained using either a photodetector (PDA100A or PDA100A2, Thorlabs) or a PMT of 200 kHz (H10723-20 MOD, H10723-20-01). Multi-pixel photon counter (MPPC, S13360-6075CS) from Hamamatsu photonics Inc was used to detect the bfGMI. The direct current of dGMI, fsGMI, bfGMI, ssGMI, and FSC signals were cut with an electronic high-pass filter. The PMT signals were recorded with electronic filters using a digitizer (M2i.4932-Exp, Spectrum, Germany) or an FPGA development board (TR4, Terasic) with a homemade analog/digital converter. The digitizer and/or FPGA continually collected a fixed length of signal segments from each color channel at the same time, with a fixed trigger condition applied to the FSC signals.\n\n### Reagents\n\nAll reagents were purchased from either FUJIFILM Wako Pure Chemical Corporation, Sigma-Aldrich, or Invitrogen unless otherwise specified. D-PBS (-) (Wako) was used for phosphate-buffered saline (PBS) solution. LIVE/DEAD Fixable Green Dead Cell Stain (Invitrogen) was used by dissolving the solid product in a single vial for 40 assays in 50 \u00b5l of dimethyl sulfoxide (DMSO). Pierce 16% Formaldehyde (w/v), Methanol-free (Thermo Fisher Scientific) was used as a fixation reagent.\n\nD-MEM (High Glucose) with L-Glutamine, Phenol Red, and Sodium Pyruvate (Wako) with 10% fetal bovine serum (FBS, Biowest) and 1% Penicillin-Streptomycin (Wako) was used as the HeLa S3 and MIA PaCa-2 cell culture medium. RPMI 1640 medium (Gibco) with 20% FBS (Biowest) and 1% Penicillin-Streptomycin (Wako) was used as the Y-79 cell culture medium. Stem Fit AK02N (Ajinomoto) with all supplements and with 10 \u00b5M Y-27632 (Wako) and 0.25 \u00b5g/cm2 iMatrix-511 silk (Nippi) or iMatrix-511 (Nippi), and 1% Penicillin-Streptomycin (Wako) was used as the iPSC culture medium. Stem Fit AK02N without supplement C and with 10 \u00b5M SB431542 (Wako) and 10 \u00b5M DMH1 (Wako) was used as the NEC differentiation medium. Stem Fit AK02N without supplement C and with 10 ng/ml Activin A (Wako) and 3 \u00b5M CHIR99021 (Wako) was used as endodermal differentiation medium. StemSure DMEM (Wako) with 20% StemSure Serum Replacement (Wako), 1% L-alanyl L-glutamine solution (Nacalai Tesque), 1% Monothioglycerol solution (Wako), 1% MEM non-essential amino acids solution (Nacalai Tesque), and 1% DMSO (Sigma-Aldrich) was used as the HEC differentiation medium. RPMI1640 (FUJIFILM Wako) with 10% FBS (HyClone) and 1% Penicillin-Streptomycin (Wako) was used for thawing the frozen mobilized peripheral blood (MPB) CD34+ stem/progenitor cells.\n\n### Cell preparations\n\nMIA PaCa-2 cells were purchased from RIKEN BRC CELL BANK. HeLa S3 cells, Y-79 retinoblastoma cells were purchased from JCRB Cell Bank. The human iPSCs used were GM25256 iPSCs (Hayashi et al., 2016) either obtained from Dr. Bruce Conklin at Gladstone Institutes or purchased from Coriell Institute. Informed consent for the usage of these cells for research was obtained from the cell line donor. RPE cells were provided from HEALIOS K.K. upon permission of use. The usage of iPSCs for the derivation of RPE cells was approved by the ethics committee of HEALIOS. Informed consent for the usage of these iPSCs was obtained by Lonza. MIA PaCa-2 cells, HeLa S3 cells, and both iPSCs were authenticated with short tandem repeat tests and confirmed mycoplasma negative. Y-79 was authenticated and confirmed mycoplasma negative by the supplier. The collection of peripheral blood samples from healthy donors was conducted in accordance with the Declaration of Helsinki and approved by the ethics committee of Juntendo University School of Medicine (IRB#2019091). Mobilized Peripheral Blood CD34+ Stem/Progenitor cells (HSCs) (M34C-1) were purchased from HemaCare. Written informed consent was obtained prior to the collection of samples.\n\nThe GM25256 iPSCs were seeded at 2500 cells/cm2 in the iPSC culture medium after each passage. The medium was changed to the same medium without Y-27632 or iMatrix-511 on days 1, 3, and 5. On day 7, the cell samples were collected to be analyzed by flow cytometry.\n\nNECs were differentiated from the above iPSCs with the following procedures. iPSCs were seeded at 2500 cells/cm2 in iPS culture medium (day 0). On day 1, the medium was exchanged to NEC differentiation medium. The medium was changed to the same medium on days 3 and 5. On day 7, the cell samples were collected to be analyzed with iSGC.\n\nHECs were differentiated from the above iPSCs with the following procedures. iPSCs were seeded at 2500 cells/cm2 in iPS culture medium (day 0). On day 1, the medium was exchanged to endoderm differentiation medium. On day 3, the medium was changed to the same medium. On day 5, the medium was exchanged to HEC differentiation medium. On day 7, the cell samples were collected to be analyzed with iSGC.\n\nRPE cells were differentiated from feeder-free hiPSCs established at Lonza, Walkersville according to published protocols (Baghbaderani et al., 2015). The hiPSCs were maintained on iMatix-511 (Nippi) with TeSR-E8 medium (StemCell Technologies). To differentiate into neural ectoderm lineage, hiPSCs were cultured with GMEM (Thermo Fisher Scientific) supplemented 20% KnockOut Serum Replacement (Thermo Fisher Scientific), SB431542 and LDN193189 (Surmacz et al., 2012). SB431542 and LDN193189 were purchased from FUJIFILM Wako chemical. Then neural ectodermal progenitor cells were differentiated into RPE cells (Kuroda et al., 2019). After differentiation, RPE cells were cultured on a laminin-coated 12-well plate. 43.2 \u00b5l of 0.5 mg/ml iMatrix-511 (Nippi) was added to 12 ml of PBS, and 1 ml of the solution was added to each well. The well plate was incubated at 37\u00b0C under 5% CO2 for 2 hr, and the PBS was removed before use. The thawed RPE cells were seeded onto this laminin-coated well plate and were cultured using an RPE culture medium provided by HEALIOS. The medium was changed every 2 days. The RPE cells were cultured for 8 weeks after thawing before the analysis with iSGC.\n\n### Experimental conditions for iSGC\n\nThe cells were flowed through either a quartz flow cell (Hamamatsu) or a polydimethylsiloxane (PDMS)-based microfluidic device using a customized pressure pump and/or a syringe pump (KD Scientific). The quartz flow cell had a channel cross-section dimension of either 250\u00d7500, 250\u00d7250, or 150\u00d7150 \u00b5m2 at the measurement position, and when using this, the sheath fluid (IsoFlow, Beckman Coulter) was driven at a pressure of about 25, 85, or 305 kPa, respectively. The PDMS device had a channel with a cross-section dimension of 37\u00d750 \u00b5m2 at the measurement position, and when using this, the sheath flow was driven at a pressure of about 185 kPa. The sample fluid was driven at a flow rate between 10 and 40 \u00b5l/min.\n\nFor the binary classification of the cells, an SVM algorithm using either linear or radial basis function kernel was used. The regularization coefficient and kernel coefficient in the SVM were tuned by grid search. Except for the classification and sorting of HeLa S3 and MIA PaCa-2 cells in Figure 2, all trainings and validations of the algorithms were performed using equal amounts of samples for each class label, and the accuracies, receiver operating characteristic (ROC) curves, AUCs, and the macro-average F1-scores were validated with 10 times random sampling and presented with the mean and standard deviation of the 10 trials. The number of samples was determined as sufficient amount to perform learning and evaluation of the SVM model. SVM score histograms in Figures 3 and 4 were derived from the trials with the best AUC. The mean and standard deviation of AUCs in the caption of Figure 3 in the main text were derived from the 10 AUCs, whereas the means and standard deviations of AUCs in Figure 3\u2014figure supplement 1 and Figure 4\u2014figure supplement 1 were derived from the mean ROC curve. Therefore, the AUCs will slightly alter. All data and codes are available on Zenodo (Ugawa et al., 2021).\n\nFor the multiclass classification of six subtypes of WBC, we created a CNN model with two types of feature inputs. For input, we used both waveforms and scalar features derived from GMI (fsGMI, bsGMI, dGMI, and bfGMI) and FSC, BSC features, respectively. bfGMI was obtained by focusing the image plane on the detector. Our model includes five convolutional layers, one fully connected layer, and one softmax layer. Each convolutional layer is followed by batch normalization, rectified linear unit (ReLU), and max pooling layers. Waveforms were used as inputs for the convolutional layer. Scalar features were concatenated to the previous outputs of the fully connected layer. For training, categorical cross-entropy was used as a loss function. The model was trained for 500 epochs with Adam optimizer with a learning rate of 0.00001 and batch size of 1024. If the validation loss did not improve in 30 epochs, we stopped training and adopted the weights with the best validation loss. The macro-average F1-scores were validated with 10-fold stratified splitting of training data and presented with the mean and standard deviation of 10 folds. Confusion matrices and predictive labels for quantifying the in-sample class ratios were derived from the folds with the best macro-average F1-scores. Detailed information such as number of cells from donors are available in the data and codes on Zenodo (Ugawa et al., 2021). The number of cells was determined as sufficient amount to perform learning and evaluation of the CNN model.\n\nThe throughput of iSGC was deduced with the following procedures. Assuming that cells are evenly spaced with a distance equal to the length of the structured illumination (Figure 1\u2014figure supplement 1), resulting in consecutive acquisition of the waveforms, the throughput of iSGC in this ideal condition can be estimated as the inverse of the acquisition time. For instance, if the acquisition time is 100 \u00b5s per cell, the throughput can be estimated as 10,000 cells/s. Such estimation of throughput based on acquisition time is often adopted in imaging cytometry (Diebold et al., 2013; Han et al., 2016; Han and Lo, 2015).\n\n### Classification and sorting of HeLa S3 cells and MIA PaCa-2 cells\n\nHeLa S3 and MIA PaCa-2 cells were detached from the culture flask using trypsin. After washing with PBS solution, cells in each suspension were fixed with 1% formaldehyde in PBS for 15 min. The cells were subsequently washed with PBS solution. To the MIA PaCa-2 cells, a combined solution with 4 \u00b5l of Fixable Green DMSO solution and 200 \u00b5l of 1% Tween 20 (Sigma-Aldrich) in PBS was added. To the HeLa S3 cells, a combined solution with 4 \u00b5l of DMSO and 200 \u00b5l of 1% Tween 20 in PBS was added. Both cells were incubated for 60 min at room temperature and subsequently washed with PBS solution. Each cell suspension was then mixed to be allowed to flow through the iSGC sorter system comprised of a cell-sorting microfluidic device similar to one previously reported (Ota et al., 2018). The SVM used for sorting was trained with 300 cells of each cell type. The training data was created with consecutive waveforms obtained from the mixed sample.\n\nA portion of this mixed cell suspension was used to measure the FSC, SSC, and fluorescence intensity of the presort mixture by using JSAN (Bay bioscience) to obtain Figure 2A and B and dashed line of Figure 2\u2014figure supplement 1B. Total of 6000 events were measured, from which 5558 cells were gated with FSC-SSC. Within this population, a threshold was drawn for the green fluorescence intensity to obtain 3350 positive cells and 2208 negative cells. After collecting the sorted suspension from the iSGC sorter, the FSC, SSC, and green fluorescence intensity were measured using JSAN to confirm the purity and obtain Figure 2E. Total of 6000 events were measured, from which 5193 cells were gated with FSC-SSC. Within this population, a threshold was drawn for the green fluorescence intensity to obtain 5054 positive cells and 139 negative cells. The SVM scores in Figure 2C, the blue solid line in Figure 2D, and the confusion matrix in Figure 2\u2014figure supplement 1C were reproduced from the saved SVM parameters of the FPGA and the obtained waveform during sorting. Full gating procedures are available in Figure 2\u2014figure supplement 2.\n\n### Classification of live, dead, and apoptotic iPSCs\n\nFor dissociating iPSCs, the culture medium for the iPSCs was changed to 0.5 mM ethylenediaminetetraacetic acid (EDTA) in PBS solution and incubated for 3\u20135 min. Then medium was changed back to iPSC culture medium, and the cells were detached using a cell scraper. After washing with binding buffer, the cells were stained with PI (Medical & Biological Laboratories) and Annexin V-FITC (Medical & Biological Laboratories) for 15 min and then allowed to flow through the iSGC system without washing. The cells were first gated using the FSC-BSC scatter plot to remove debris (Figure 3\u2014figure supplement 1A) and then gated using the FSC height versus width scatter plot to remove doublets. The gated cells were further gated and labeled as live, dead, or apoptotic cells (Figure 3A) according to the fluorescence intensity of PI and Annexin V-FITC. Within this data, 1000 cells selected randomly (without overlap) with equal number of cells for each label were used as training and testing data. Full gating procedures are available in Figure 3\u2014figure supplement 2.\n\n### Classification of undifferentiated and differentiated cells\n\nFor dissociating iPSCs, NECs, and HECs, the culture medium for these cells was changed to 0.5 mM EDTA in PBS solution and incubated for 3 min. Then, the cells were detached from the culture flask using a cell scraper. After washing with buffer solution (0.1% FBS, 0.5 mM EDTA in D-PBS), each was stained with Calcein AM (Dojindo) and rBC2LCN-635 (Wako), both at a concentration of 1 \u00b5g/ml, for 60 min on ice and then washed with buffer solution. For the classification of undifferentiated cells (iPSCs) and differentiated cells (NECs or HECs), each of the cells was mixed at equal concentration. The mixed suspension was allowed to flow through the iSGC system. The cells were first gated using FSC-SSC scatter plot to remove dead cells and debris, then gated using the FSC height versus width scatter plot to remove doublets, and again gated using FSC-Calcein AM scatter plot to remove remaining dead cells. The gated cells were further gated and labeled as undifferentiated or differentiated cells according to the fluorescence intensity of rBC2LCN-635 and Calcein AM (Figure 4\u2014figure supplement 1A and B). Within this data, 5000 and 1000 cells selected randomly (without overlap) with equal number of undifferentiated and differentiated cells were used as training and testing data, respectively. Full gating procedures are available in Figure 4\u2014figure supplement 2 and Figure 4\u2014figure supplement 3.\n\n### Classification of RPE and retinoblastoma cells\n\nRPE cells were detached from the well plate using trypsin (provided by HEALIOS). Y-79 retinoblastoma cells were taken out from the culture flask by pipetting. After washing each cell with PBS solution, 1 ml of PBS with 1 \u00b5l of CellMask Green Plasma Membrane Stain (Invitrogen) was added to the pellet of Y-79 cells and was incubated at 37\u00b0C for 15 min. After staining, the cells were washed with PBS solution and PI was added. The RPE cells and Y-79 cells were mixed before being allowed to flow through the iSGC system. The cells were first gated using FSC-SSC scatter plot to remove dead cells and debris, then gated using the FSC height versus width scatter plot to remove doublets. The gated cells were further gated and labeled as RPE cells or retinoblastomas according to the fluorescence intensity of CellMask Green and PI (Figure 4\u2014figure supplement 1C). Within this data, 5000 and 1000 cells selected randomly (without overlap) with equal numbers of RPE cells and retinoblastomas were used as training and testing data, respectively. Full gating procedures are available in Figure 4\u2014figure supplement 4.\n\nThe recovery rate, which is equivalent to the true positive rate, of RPE cells was determined from the mean ROC curve obtained from 10 times random sampling (Figure 4\u2014figure supplement 1C). At a false positive rate of 0.01, the true positive rate was 0.92 and 0.52 for the classification with iSGC and with FSC/SSC, respectively. In actual scenarios, the number of cancer cells will be substantially fewer than the number of RPE cells. Still, the true positive rates and false positive rates will be equal to the case where the numbers of cells are equal.\n\n### Differential classification of WBCs\n\nFresh peripheral blood samples from two healthy volunteers were drawn into tubes containing EDTA. The samples were stained by adding fluorochrome-conjugated monoclonal antibodies and protecting them from light for 15 min at room temperature. The antibodies used were: FITC anti-human CD16 (302006, Lot no. B319858, BioLegend), PE anti-human CD14 (367104, Lot no. B274117, BioLegend), APC/Cy7 anti-human CD45 (304014, Lot no. B325539, BioLegend), added at 40\u00d7 dilution and APC anti-human CD123 (306012, Lot no. B309938, BioLegend) added at 20\u00d7 dilution. The frozen mobilized peripheral blood CD34+ hematopoietic stem/progenitor cells (HSCs) were thawed by immediately placing them into a 37\u2103 water bath and transferring them into a pre-warmed growth medium (RPMI1640 with 10% FBS and 1% Penicillin-Streptomycin). Then the cells were stained by adding fluorochrome-conjugated monoclonal antibodies and protecting them from light for 30 min at room temperature. The antibodies used here were APC/Cy7 anti-human CD45 (304014, Lot no. B325539, BioLegend) added at 13\u00d7 dilution and PerCP anti-human CD34 (343520, Lot no. B266937, BioLegend) added at 10\u00d7 dilution. Next, all three samples were lysed for 10 min with a freshly prepared working solution of Lysing Solution (349202, BD Bioscience). After removing the supernatant, the samples were washed with PBS containing 2% bovine serum albumin (BSA).\n\nEach healthy blood sample was spiked with the CD34+ HSCs so that the ratio of HSCs was less than 10%. The final concentration of each spiked sample was adjusted to about 5\u00d7105 cells/ml in PBS containing 2% BSA and allowed to flow through the iSGC analyzer system. The total events were gated using FSC-BSC scatter plot to remove dead cells and debris, then gated using the FSC height versus width scatter plot to remove doublets. WBC subtypes were subsequently gated in the order of basophils, monocytes, HSCs, lymphocytes, neutrophils, and eosinophils based on well-established gating schemes (Fujimoto et al., 2000; Han et al., 2008; Hubl et al., 1996; Roussel et al., 2012; Roussel et al., 2010; Venditti et al., 1999). For validation, a portion of each spiked sample was measured with JSAN (Bay bioscience). After gating the cells, each set of cell types were split into 70% training data and 30% test data. For training the model, 10-fold stratified cross validation was used. Classification was performed on the whole test data. Full gating procedures are available in Figure 5\u2014figure supplement 2 and Figure 5\u2014figure supplement 3.\n",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "f2ed15a3-c828-465d-8aba-285d39ee809c",
+      "submission_id": "28676198-4dc3-4446-9c0a-d42ca02a4154",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jameel Iqbal, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67660.sa0](https://doi.org/10.7554/eLife.67660.sa0)\n\nThis paper explores a novel approve to sorting cells without the use of fluorescent labeling using a light diffraction method called ghost cytometry. This paper first demonstrates this capability with commercial cell lines and then sorting hematopoietic cells from a patient sample.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jameel Iqbal, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67660.sa1](https://doi.org/10.7554/eLife.67660.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"In silico-labeled ghost cytometry\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Gregory R. Johnson (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Address all the comments from the two reviewers; there are concerns regarding applicability and limitations brought up by both reviewers.\n\n2) Reviewer two noted that the presentation could be improved to enhance readability.\n\nReviewer #1:\n\nThis novel technique provides a method of cell sorting without the conventional use of fluorescent probes which can effect cell viability. They also showed that ghost cytometry can differentiate between live and apoptotic cells giving a more accurate reflection of cell viability. Retaining specimen viability is particularly important for obtaining cell lines and for therapeutic applications such BM transplant or CAR T therapy.\n\nThis paper also demonstrates the ability to generate an accurate white cell differential which could have diagnostic utility to potentially replace manual counts which has interobserver biases. However, this paper did not demonstrate the capacity to differentiate B and T cells, count blasts or detect pathologic hematopoietic cells. It would be interesting to see if this platform could identify cells of different levels maturity as hematopoietic pathologies lie all along the maturation spectrum.\n\nWhile separating cells at different levels of maturation was demonstrated in cell lines, this is differentiating undifferentiated cells from terminally differentiated cells and does not demonstrate intermediate stages of differentiation.\n\nCD34 should probably have been added to the flow panel to demonstrate if ghost cytometry can count blasts. A white cell differential is incomplete without this capacity.\n\nAnother marker that would have been helpful would be using CD138 for plasma cells. Plasma cells are known to be inaccurately counted by flow cytometry. Demonstrating an accurate plasma cell count on ghost cytometry compared to a manual differential could have provided a potential area of superiority diagnostically of ghost cytometry compared to flow cytometry.\n\nThe white cell differential was also only done on one patient. Having several patient samples should have been used to validate this method.\n\nReviewer #2:\n\nFlow cytometry typically relies on images and/or multiple chemical labels to identify cellular phenotypes. By training a machine-learning based model on a ground-truth labeled dataset, Ugawa et al. demonstrate that some cellular phenotypes can be accurately determined from a one-dimensional waveform of a cell passing through a field of structured illumination without the use of chemical labels. In combination with ultra-fast cell sorting this method opens the door for tasks where sorted cells may be utilized for downstream applications where staining is undesirable. This manuscript adds to growing number of applications of \"in silico labeling\" where machine-learning models can be utilized to predict chemical labels from unlabeled samples.\n\nOverall, the approach is well described and the results are promising. The authors evaluate their methods with diverse tasks, but the evaluation procedure may not reflect real-world deployment of such a method.\n\nThe manuscript demonstrates the performance of several cell-phenotype classification tasks. After sample preparation, the cells are stained and cell-phenotype labels are assigned according to gates based on ground-truth stain read-out, whereas cells falling outside of the gates are discarded. The labels of the gated cells, in conjunction with their GMI signals are used as training and test data for the machine learning models, and the test results are reported. \"Discarded\" cells based on the ground-truth stains are not represented in the classification results. If a model were trained and applied to a new sample, those \"discarded\" populations will be presented to the classifier. The evaluation presented here likely would not reflect the performance of the model relative to a new sample.\n\nAs described in the methods, the training and test data are derived from the same sample. If such a model were to be implemented, intra-experiment variation may play a significant role in the accuracy of these results. It is therefore difficult to determine how this method would function when deployed in other settings.\n\nI feel that several points may be addressed to significantly improve the manuscript:\n\nThe inclusion of a \"discarded\" label in the classification results, or otherwise address the \"discarded\" population problem. Without such, it is very difficult to evaluate the results presented here.\n\nEvaluation of whether the model would generalize well to new samples.\n\nIt is not clear what the limitations of this method are. Are there applications where iSGC falls flat? Can we apply multiple models from different data to a new application?\n\nOverall the discussion of flow versus image cytometry (starting at line 60) could be improved. Some claims are without reference, and discussions about the time scales of signal analysis in flow and image cytometry would be useful for more general audiences.\n\nSome of the claims about future applications of these methods seem very strong. It would be useful to provide perspectives from other manuscripts that support discussion of future applications.\n\nThere are some compression artifacts in the scatter plot figures that make them difficult to read.\n\nIt may be worth considering a more colorblind friendly or perceptually-uniform color map for figures as well.\n\nThe \"b\" in the description of figure 5 should be a \"(B)\"\n",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "195c3b7e-e747-4b65-9e4c-b48ea906ccc9",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C1",
+      "claim": "Flow cytometry is one of the standards that offers a method to characterize and isolate cells at high throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry is one of the standards that offers a method to characterize and isolate cells at high throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about flow cytometry that is part of established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "3a234169-5697-4765-b476-1ecfffc3eac8",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C2",
+      "claim": "Molecular staining is costly and its chemical toxicity can cause side effects to the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, molecular staining is costly and its chemical toxicity can cause side effects to the cells which becomes a critical issue when the cells are used downstream as medical products or for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction section discussing disadvantages of molecular staining.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "e81501d3-e2e2-4c32-9f9f-f27573fdd1f7",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C3",
+      "claim": "iSGC uses machine learning to derive molecular labels from compressive data obtained with diffractive and scattering imaging methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of detecting molecular stains, we use machine learning to derive the molecular labels from compressive data obtained with diffractive and scattering imaging methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the method presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "408209b3-170b-44c8-be0c-ad7c68778acc",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C4",
+      "claim": "iSGC was able to distinguish different cell states, cell types derived from human induced pluripotent stem (iPS) cells, and subtypes of peripheral white blood cells using only stain-free modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "With this method, we were able to distinguish different cell states, cell types derived from human induced pluripotent stem (iPS) cells, and subtypes of peripheral white blood cells using only stain-free modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental results presented in Figures 2-5 of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "fb9c480e-83f9-4a82-8b67-bc854a7dd832",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C5",
+      "claim": "Molecular staining has numerous disadvantages including cost in terms of both time and money.",
+      "claim_type": "EXPLICIT",
+      "source": "However, molecular staining has numerous disadvantages: the staining process is costly in terms of both time and money; number of detectable markers with fluorescence detection are limited by the spectral overlap of fluorophores (Perfetto et al., 2004); multiple spectral compensation is complex and time consuming (Roederer, 2001); immunocytochemistry staining is inconsistent due to the wide variability of antibodies (Burry, 2011; Weigert et al., 1970); and molecular staining potentially causes side effects to the cells by chemical toxicity (Fried et al., 1982; Patil et al., 2018; Progatzky et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "86c1a037-872a-405c-84d6-1696c948c7b8",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C6",
+      "claim": "The number of detectable markers with fluorescence detection are limited by the spectral overlap of fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "However, molecular staining has numerous disadvantages: the staining process is costly in terms of both time and money; number of detectable markers with fluorescence detection are limited by the spectral overlap of fluorophores (Perfetto et al., 2004); multiple spectral compensation is complex and time consuming (Roederer, 2001); immunocytochemistry staining is inconsistent due to the wide variability of antibodies (Burry, 2011; Weigert et al., 1970); and molecular staining potentially causes side effects to the cells by chemical toxicity (Fried et al., 1982; Patil et al., 2018; Progatzky et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Perfetto et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "a8b6c6f8-6500-44c4-b4b9-48740a8c503a",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C7",
+      "claim": "Multiple spectral compensation is complex and time consuming.",
+      "claim_type": "EXPLICIT",
+      "source": "However, molecular staining has numerous disadvantages: the staining process is costly in terms of both time and money; number of detectable markers with fluorescence detection are limited by the spectral overlap of fluorophores (Perfetto et al., 2004); multiple spectral compensation is complex and time consuming (Roederer, 2001); immunocytochemistry staining is inconsistent due to the wide variability of antibodies (Burry, 2011; Weigert et al., 1970); and molecular staining potentially causes side effects to the cells by chemical toxicity (Fried et al., 1982; Patil et al., 2018; Progatzky et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Roederer, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "8959ecf6-6c3d-4ab5-b498-bdf47a252b1a",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C8",
+      "claim": "Immunocytochemistry staining is inconsistent due to the wide variability of antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, molecular staining has numerous disadvantages: the staining process is costly in terms of both time and money; number of detectable markers with fluorescence detection are limited by the spectral overlap of fluorophores (Perfetto et al., 2004); multiple spectral compensation is complex and time consuming (Roederer, 2001); immunocytochemistry staining is inconsistent due to the wide variability of antibodies (Burry, 2011; Weigert et al., 1970); and molecular staining potentially causes side effects to the cells by chemical toxicity (Fried et al., 1982; Patil et al., 2018; Progatzky et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Burry, 2011 and Weigert et al., 1970.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "cf7b76f5-7ccb-4aaa-998b-0d37b9ef1931",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C9",
+      "claim": "Molecular staining potentially causes side effects to the cells by chemical toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, molecular staining has numerous disadvantages: the staining process is costly in terms of both time and money; number of detectable markers with fluorescence detection are limited by the spectral overlap of fluorophores (Perfetto et al., 2004); multiple spectral compensation is complex and time consuming (Roederer, 2001); immunocytochemistry staining is inconsistent due to the wide variability of antibodies (Burry, 2011; Weigert et al., 1970); and molecular staining potentially causes side effects to the cells by chemical toxicity (Fried et al., 1982; Patil et al., 2018; Progatzky et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fried et al., 1982; Patil et al., 2018; Progatzky et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "0a42226c-5997-4775-b3e4-c0441f8e2310",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C10",
+      "claim": "Recent studies revealed the potentiality of bridging between images and molecular labels through prediction of labels from imaging information or 'in silico labeling.'",
+      "claim_type": "EXPLICIT",
+      "source": "Although unstained cell images were thought to lack specific biomolecular information, recent studies (Christiansen et al., 2018; Ounkomol et al., 2018) revealed the potentiality of bridging between images and molecular labels: prediction of labels from imaging information or 'in silico labeling.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Christiansen et al., 2018 and Ounkomol et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "cdf4a1d4-99a6-44e2-a92b-dec64b09cbd0",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C11",
+      "claim": "Conventional microscope-based approaches utilizing in silico labeling sacrifice the high throughput and sorting capability which exist in molecular labeling methods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these approaches utilizing conventional microscopes sacrifice the high throughput and sorting capability which exist in molecular labeling methods (Han et al., 2016; Lindstr\u00f6m, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Han et al., 2016 and Lindstr\u00f6m, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "70cf3809-73c1-46df-9baa-09ca83866e5a",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C12",
+      "claim": "The acquisition of microscopy images is slow, and the processing of high-content images is even slower.",
+      "claim_type": "EXPLICIT",
+      "source": "This restriction arises from the fact that the acquisition of microscopy images is slow, and the processing of high-content images is even slower (Pepperkok and Ellenberg, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pepperkok and Ellenberg, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "8538762c-8900-4331-ba8e-2ebfa05128db",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C13",
+      "claim": "Conventional flow-based cell sorting systems process simple cell information fast enough to operate at around 10,000 cells/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, conventional flow-based cell sorting systems that process simple cell information such as total fluorescence intensity fast enough to operate at around 10,000 cells/s (Sutermaster and Darling, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sutermaster and Darling, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "6beb85e7-b298-4b89-9a55-4d0c8659049a",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C14",
+      "claim": "Ghost cytometry is an 'imaging' cytometry that is able to predict cell types based on fluorescence signals encoded with morphological information of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we have demonstrated ghost cytometry, an 'imaging' cytometry that is able to predict cell types based on fluorescence signals encoded with morphological information of cells (Ota et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ota et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "07b1c6e6-42f2-4df7-8338-8ffb177bbf70",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C15",
+      "claim": "Previous ghost cytometry required fluorescence staining.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the usage of fluorescence staining was inevitable and, therefore, could not suffice applications where cell staining is unfavorable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the previous ghost cytometry method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "8c0922c3-4213-4eb0-9b68-70d411cc774d",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C16",
+      "claim": "iSGC performs ultrafast real-time prediction of biological labels by machine learning-based analysis of compressively measured image information of cells in a processing time of down to the order of microseconds on a field-programmable gate array (FPGA).",
+      "claim_type": "EXPLICIT",
+      "source": "This method performs ultrafast real-time prediction of biological labels by machine learning-based analysis of compressively measured image information of cells in a processing time of down to the order of microseconds on a field-programmable gate array (FPGA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the method's performance characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "22bae3ef-f1cf-489d-8035-69376a9a6d60",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C17",
+      "claim": "In iSGC, machine learning models are pre-trained by the stain-free imaging data and biological labels obtained by fluorescence staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein, the machine learning models are pre-trained by the stain-free imaging data and biological labels obtained by fluorescence staining; afterward, it becomes able to predict the biological labels without the measurement of fluorescence labeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training procedure of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "ead586a1-6aec-423e-b362-75bf77189a60",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C18",
+      "claim": "An imaging waveform is obtained from cells passing through a structured illumination at a speed where the signal width is shorter than 100 \u00b5s.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to previously reported fluorescence ghost cytometry (Ota et al., 2018), an imaging waveform is obtained from cells passing through a structured illumination at a speed where the signal width is shorter than 100 \u00b5s (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a technical description of the method supported by reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "4a854a0d-ff01-46ab-a204-3115150378a5",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C19",
+      "claim": "In iSGC, one to several fringe patterns in the diffractive speckle pattern from the transmitted light are acquired with a single-pixel detector.",
+      "claim_type": "EXPLICIT",
+      "source": "However, instead of collecting the whole photons with a bucket detector, to perform stain-free imaging, one to several fringe patterns in the diffractive speckle pattern from the transmitted light are acquired with a single-pixel detector (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a technical aspect of the method with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "3217297e-b29d-4f7a-b9b4-02eb5e64f78f",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C20",
+      "claim": "iSGC adopts a reduced acquisition for performing high-speed cell classification.",
+      "claim_type": "EXPLICIT",
+      "source": "While full image reconstruction was demonstrated either with iterative acquisition using different structured illuminations or structured masks with a single-pixel detector (Horisaki et al., 2017a; Horisaki et al., 2017b), iSGC adopts a reduced acquisition for performing high-speed cell classification (Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the approach taken in iSGC with citations to related work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "12ba7e73-f322-4ca4-a4c1-4392514ab42a",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C21",
+      "claim": "HeLa S3 cells and MIA PaCa-2 cells are similar in size.",
+      "claim_type": "EXPLICIT",
+      "source": "The two cell lines are similar in size (Figure 2A) and mixed at equal concentration with only one of them stained with green fluorescence using LIVE/DEAD Fixable Green Dead Cell Stain (Invitrogen) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "d23cbd73-82da-46ba-82a1-99be2c500ae5",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C22",
+      "claim": "The actual time lapsed during the judgment for a single cell with the FPGA was 6.0 \u00b5s.",
+      "claim_type": "EXPLICIT",
+      "source": "The actual time lapsed during the judgment for a single cell with the FPGA was 6.0 \u00b5s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement of processing time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "2f45db12-316a-4baf-947c-25ffd13acd08",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C23",
+      "claim": "iSGC was able to infer the fluorescence label corresponding to the cell type from a fluorescence-free measurement at a high area under the receiver operating characteristic curve (AUC) of 0.963 for cells flowed after training.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, iSGC was able to infer the fluorescence label corresponding to the cell type in this first case from a fluorescence-free measurement at a high area under the receiver operating characteristic curve (AUC) of 0.963 for cells flowed after training (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "d6d23585-9349-4cf6-bcd1-4cfb96e4c4c6",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C24",
+      "claim": "iSGC classified the cells at an accuracy of 0.917 according to the FPGA classifier.",
+      "claim_type": "EXPLICIT",
+      "source": "In the actual sorting process, iSGC classified the cells at an accuracy of 0.917 according to the FPGA classifier (Figure 2\u2014figure supplement 1C), and the purity of the actual sorted cells was 97.3% (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "2340d25f-d3d8-4950-91f2-a3b8abfa52e0",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C25",
+      "claim": "The purity of the actual sorted cells was 97.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the actual sorting process, iSGC classified the cells at an accuracy of 0.917 according to the FPGA classifier (Figure 2\u2014figure supplement 1C), and the purity of the actual sorted cells was 97.3% (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "3b25048f-bf48-4520-a18e-b18f54794d58",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C26",
+      "claim": "Using only FSC and SSC, the SVM-based classifier had an AUC of only 0.936\u00b10.005.",
+      "claim_type": "EXPLICIT",
+      "source": "Using only FSC and SSC, the SVM-based classifier can only draw a decision boundary in 2D space, and the classification had an AUC of only 0.936\u00b10.005 (gray dashed line in Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "6527a265-921c-4555-8634-90399f77b876",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C27",
+      "claim": "Using FSC and SSC, dead cells are distinguishable but apoptotic cells are difficult to distinguish from live cells at high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that using FSC and SSC (or FSC and BSC), dead cells are distinguishable but apoptotic cells are difficult to distinguish from live cells at high accuracy (Darzynkiewicz et al., 1992; Dive et al., 1992; Shapiro, 2005; Zamai et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "303d942e-3e29-4d02-bca9-33b29b62ccf9",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C28",
+      "claim": "Using dGMI and bsGMI modalities for iSGC, it was able to distinguish dead and apoptotic cells from live cells with an AUC of 0.998\u00b10.002 and 0.877\u00b10.007.",
+      "claim_type": "EXPLICIT",
+      "source": "Using dGMI and bsGMI modalities for iSGC, it was able to distinguish dead and apoptotic cells from live cells with an AUC of 0.998\u00b10.002 and 0.877\u00b10.007 (Figure 3D,E blue solid lines in Figure 3\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3D, E and Figure 3\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "2a12ac26-b062-47f2-b9da-ae3045cd339a",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C29",
+      "claim": "Using the FSC and BSC data with the same labels for SVM-based classification, conventional flow cytometry can only achieve a limited performance of 0.973\u00b10.007 and 0.779\u00b10.011.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, using the FSC and BSC data with the same labels for SVM-based classification, conventional flow cytometry can only achieve a limited performance of 0.973\u00b10.007 and 0.779\u00b10.011 (gray dashed lines in Figure 3\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "131348d8-8707-4aac-b1d0-e6a7d4bf870b",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C30",
+      "claim": "Using conventional gating in the FSC-BSC scatter plot, apoptotic cells cannot be excluded from live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially, between apoptotic and live cells, both populations overlap in the FSC-BSC scatter plot (Figure 3C), and with conventional gating in the FSC-BSC scatter plot (Hawley and Hawley, 2004) (region within the red line in Figure 3B), apoptotic cells cannot be excluded from live cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 3B and 3C and citation to Hawley and Hawley, 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "2d41aad1-4efe-41cc-a151-427e3992de31",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C31",
+      "claim": "Using iSGC, apoptotic cells can be distinguished from live cells within the conventional gate with an AUC of 0.891\u00b10.012.",
+      "claim_type": "EXPLICIT",
+      "source": "Using iSGC, we can distinguish apoptotic cells from live cells within this gate with an AUC of 0.891\u00b10.012 (Figure 3F, blue solid line in Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F and Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "9154d74d-74b0-49b8-b589-0a55cb9c6b08",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C32",
+      "claim": "Remaining undifferentiated cells can eventually cause tumor formation after their transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is critical because remaining undifferentiated cells can eventually cause the tumor formation after their transplantation (Ben-David and Benvenisty, 2011; Knoepfler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ben-David and Benvenisty, 2011 and Knoepfler, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "e182c3bb-4508-4de6-bb0c-ee66c9ceed48",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C33",
+      "claim": "Using dGMI and ssGMI waveforms, the classifier distinguished iPSCs and NECs with an AUC of 0.929\u00b10.008.",
+      "claim_type": "EXPLICIT",
+      "source": "Using dGMI and ssGMI waveforms of each cell type labeled by the undifferentiation marker as training data set, the classifier distinguished iPSCs and NECs with an AUC of 0.929\u00b10.008 (Figure 4D and Figure 4\u2014figure supplement 1D), and iPSCs and HECs with an AUC of 0.942\u00b10.007 (Figure 4E and Figure 4\u2014figure supplement 1E), showing its high classification capability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D and Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "9fd197c1-1d18-41d1-8644-11b4766843b0",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C34",
+      "claim": "Using dGMI and ssGMI waveforms, the classifier distinguished iPSCs and HECs with an AUC of 0.942\u00b10.007.",
+      "claim_type": "EXPLICIT",
+      "source": "Using dGMI and ssGMI waveforms of each cell type labeled by the undifferentiation marker as training data set, the classifier distinguished iPSCs and NECs with an AUC of 0.929\u00b10.008 (Figure 4D and Figure 4\u2014figure supplement 1D), and iPSCs and HECs with an AUC of 0.942\u00b10.007 (Figure 4E and Figure 4\u2014figure supplement 1E), showing its high classification capability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E and Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "fc6bf0c0-11f9-4d7b-ad3e-840fba93947d",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C35",
+      "claim": "Using only both FSC and SSC information, the AUCs for the SVM-based classification of iPSCs and NECs, and iPSCs and HECs were limited to 0.856\u00b10.009 and 0.697\u00b10.016.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, using only both FSC and SSC information, the AUCs for the SVM-based classification of each pair of cell types were limited to 0.856\u00b10.009 and 0.697\u00b10.016 (Figure 4\u2014figure supplement 1, D and E), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "70dd701a-6d47-4205-b88f-7a4dec818cb4",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C36",
+      "claim": "RPE cells are the first iPSC-derived cells tested clinically.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose retinal pigment epithelium (RPE) cells, the first iPSC-derived cells tested clinically, as a product of regenerative medicine (Cyranoski, 2017; Cyranoski, 2014; Garber, 2015; Mandai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cyranoski, 2017; Cyranoski, 2014; Garber, 2015; Mandai et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "7de4ddb4-f2e2-4959-b8b0-3852461a2dbe",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C37",
+      "claim": "The AUC for classification of RPE cells with Y-79 cells was 0.994\u00b10.002.",
+      "claim_type": "EXPLICIT",
+      "source": "Using dGMI and ssGMI waveforms labeled based on the intensity of CellMask Green as training data set (Figure 4C and Figure 4\u2014figure supplement 1C), the AUC for classification of RPE cells with Y-79 cells was 0.994\u00b10.002 (Figure 4F and Figure 4\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4F and Figure 4\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "c4104e73-40b7-41ec-8887-91a745139d8d",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C38",
+      "claim": "Using FSC and SSC information for the SVM-based classification of RPE cells with Y-79 cells, the AUC was limited to 0.966\u00b10.004.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, simultaneously using FSC and SSC information for the SVM-based classification, the AUC was limited to 0.966\u00b10.004 (Figure 4\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "a76bc476-275a-4d81-bf33-58036609b455",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C39",
+      "claim": "To achieve a false positive rate of less than 1%, 92% of the RPE cells can be recovered with iSGC but only 52% of the RPE cells can be recovered with FSC and SSC.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, to achieve a false positive rate of less than 1%, 92% of the RPE cells can be recovered with iSGC but only 52% of the RPE cells can be recovered with FSC and SSC (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from analysis of the ROC curves as described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "6a25ed34-6c59-46d5-9ba6-3458584cc9fb",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C40",
+      "claim": "Peripheral white blood cell (WBC) differential count is necessary for the diagnosis of diseases such as inflammatory states, sepsis, allergy, and hematologic malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, peripheral white blood cell (WBC) differential count is necessary for the diagnosis of diseases such as inflammatory states, sepsis, allergy, and hematologic malignancies (Blumenreich, 1990; Roussel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Blumenreich, 1990 and Roussel et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "fe525ed6-4b58-4e50-a857-92355d0b5b98",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C41",
+      "claim": "The current reference method for WBC differential is a 400 cell count performed manually under a microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "The current reference method is a 400 cell count performed manually under a microscope (Cherian et al., 2010; Hubl et al., 1997; Roussel et al., 2012; Roussel et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cherian et al., 2010; Hubl et al., 1997; Roussel et al., 2012; Roussel et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "01d65bf2-aff9-4558-b9bc-589e6d69ad9b",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C42",
+      "claim": "When classification was performed for two donors in an intra-donor manner, macro-average F1-scores of 0.906\u00b10.003 and 0.906\u00b10.002 were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "When we performed the classification for two donors in an intra-donor manner by training a model using data from one donor and applying it to data from the same donor, macro-average F1-scores of 0.906\u00b10.003 and 0.906\u00b10.002 were obtained, respectively (Figure 5B and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "f2a309b1-bdde-42c2-b170-c84a0dd73310",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C43",
+      "claim": "When classification was performed for two donors in an inter-donor manner, macro-average F1-scores of 0.901\u00b10.002 and 0.884\u00b10.004 were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when we performed the classification for the same two donors in an inter-donor manner by training a model using a data set from one donor and applying it to a data set from another donor, and vice versa, macro-average F1-scores of 0.901\u00b10.002 and 0.884\u00b10.004 were obtained, respectively (Figure 5C and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "bb6903f0-0dfd-4640-b3ea-391b5a11ad03",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C44",
+      "claim": "The advantage of iSGC over conventional label-free flow cytometry modalities with a scalar quantity is that it measures more detailed information of cells for a more accurate cell selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of iSGC over conventional label-free flow cytometry modalities with a scalar quantity is that it measures more detailed information of cells for a more accurate cell selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results comparing iSGC to conventional methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "58f3f396-0ff6-4057-aed6-df13b8a3da16",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C45",
+      "claim": "With conventional FSC and SSC, each modality yields a single scaler value, and therefore, even combined, the gating is only in a 2D space.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, with conventional FSC and SSC, each modality yields a single scaler value, and therefore, even combined, the gating is only in a 2D space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the limitations of conventional flow cytometry based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "d2e77dcf-19db-4cc5-9d31-2f721d650766",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C46",
+      "claim": "iSGC utilizes a waveform containing over 100 points and performs classification in this high-dimensional space.",
+      "claim_type": "EXPLICIT",
+      "source": "However, iSGC utilizes a waveform containing over 100 points and performs classification in this high-dimensional space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the technical characteristics of the iSGC method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "9e2d04f7-6fd1-499b-91ea-3d67807a9776",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C47",
+      "claim": "iSGC often shows poor classification performances when morphological differences are not easily visually recognizable between cells to be classified.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, iSGC often shows poor classification performances when morphological differences are not easily visually recognizable between cells to be classified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the limitations of the method based on the authors' experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "4683aa8d-a774-4aee-ac44-5a028607f0b8",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C48",
+      "claim": "Differentiation of CD4 and CD8 T cells has been challenging to both ghost cytometry and visual inspection.",
+      "claim_type": "EXPLICIT",
+      "source": "From our experiences, differentiation of CD4 and CD8 T cells are one example which have been challenging to both ghost cytometry and our eyes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' experimental experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "b80b0288-7549-4735-8ce0-e403afd843e3",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C49",
+      "claim": "A model developed using different data can be applied to a new sample or application in general.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, transferability of a model can be advantageous: a model developed using different data can be applied to a new sample or application in general, just as those using 2D images can be applied to a new sample or application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the potential advantages of the method based on inference from the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "ab61ff05-d61c-487d-bd00-6c5cfee99843",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C50",
+      "claim": "The iSGC machine is currently equipped with a self-calibration system for controlling the position of flow streams of cells relative to the illumination pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the iSGC machine is currently equipped with a self-calibration system for controlling the position of flow streams of cells relative to the illumination pattern, which is analogous to a situation where objects come to the same position in the 2D images, consequently enhancing the robustness of models over a long time or between experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a technical feature of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "3f817b0a-1870-4dd8-9cbf-08c0fc9aa08c",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C51",
+      "claim": "The good results of inter-donor classification of the six cell types provide evidence for the robustness of models.",
+      "claim_type": "IMPLICIT",
+      "source": "This is evidenced by the good results of inter-donor classification of the six cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results of inter-donor classification.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "b384af1a-c31e-4a8a-bcbc-e8cc23828577",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C52",
+      "claim": "The concept of iSGC is not limited to the modalities used in this work\u2014other label-free modalities with high dimensions can also be used and combined.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the modalities of conventional FSC and SSC, dGMI, fsGMI, bsGMI, ssGMI, and bfGMI, we used in this work, the concept of iSGC is not limited to those\u2014other label-free modalities with high dimensions can also be used and combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the potential extensibility of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "97fc27af-479a-463c-8ffa-a4173c612f4f",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C53",
+      "claim": "Holographic measurements may be further compressed for classifying the cells based on iSGC.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of holography, the reconstruction of the object image from compressive measurements have been demonstrated (Brady et al., 2009; Lim et al., 2011; Marim et al., 2010), These holographic measurements may be further compressed for classifying the cells based on iSGC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications, supported by citations to prior work on holography.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "c5b8fc24-dc09-4483-8074-2c09fc40eda0",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C54",
+      "claim": "The potential applications of iSGC include purification and quality control of cell manufacturing products and diagnostic tests using blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The potential applications of this method are similar to those of other image-based cell classification, including purification and quality control of cell manufacturing products and diagnostic tests using blood cells, as we demonstrated in this work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of potential applications based on the demonstrated results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "5941ff0f-d880-4000-86b1-e4e9a1d6039f",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C55",
+      "claim": "The advantage of iSGC over conventional image-based cell classification is that iSGC is able to perform cell classification at higher throughputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage over conventional image-based cell classification is that iSGC is able to perform cell classification at higher throughputs which is necessary for analyzing large populations of cells in manufacturing (Sutermaster and Darling, 2019) and in diagnostic tests where rare cell detection is often required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to other methods with citation to support the importance of high throughput.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "fa8504f0-c02f-4777-b961-eefade19a3f9",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C56",
+      "claim": "In contrast to microscopy image-based cell classification, iSGC-based high-throughput enrichment of the desired cells allows their use for downstream uses in manufacturing as well as molecular assays in further detailed analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in contrast to microscopy image-based cell classification, iSGC-based high-throughput enrichment of the desired cells allows us to use them for their downstream uses in manufacturing as well as molecular assays in further detailed analysis (Gr\u00fcn and van Oudenaarden, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of advantages with citation to support the importance of downstream analysis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "3d3076b6-4a36-4fa3-9cc9-4d88f4ffd8ee",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C57",
+      "claim": "The concept of iSGC can be used with a variety of ground truth labels.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the concept of iSGC can be used with a variety of ground truth labels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the flexibility of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "b19a16b0-7c5b-413b-bbcd-31291a352cec",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C58",
+      "claim": "Ground truth labels in training data sets can be prepared with various surface markers, genetic reporters, and functional assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the characteristics of cell populations and the purpose of classifications, ground truth labels in training data sets can be prepared with various surface markers, genetic reporters (Zhang et al., 2014), and functional assays (Barros et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of potential labeling strategies with citations to support the feasibility.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "020e242e-6bfe-4cfb-8481-9906be7baa99",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C59",
+      "claim": "Separated cell populations showing characteristics such as responder versus non-responder cells, or disease versus healthy cells, can be used as labels for training a model.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, if we have separated cell populations showing characteristics such as responder versus non-responder cells (Belzeaux et al., 2012), or disease versus healthy cells, they can be used as a label training a model to classify and selectively sort the unknown cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of potential applications with citation to support the concept.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "861cb9c7-2209-4817-9f7d-9f626b834c24",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C60",
+      "claim": "One approach when molecular labels suitable as ground truth labels are unavailable is to use the same high-dimensional modalities for clustering cells based on morphological information via dimension reduction and then adopt these visualized clusters as new labels for training the supervised learning model in iSGC.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is often the case that molecular labels suitable as ground truth labels are unavailable or less-biased clustering of the morphological information is preferred. One approach for this issue is to use the same high-dimensional modalities for clustering cells based on morphological information via dimension reduction and then adopt these visualized clusters as new labels for training the supervised learning model in iSGC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of potential alternative approaches when labels are unavailable.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "d94dddeb-1d9d-4b58-9a0e-48aab6c661ee",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C61",
+      "claim": "iSGC is a high-speed, stain-free cytometry that predicts labels based on compressive imaging information without image reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have developed a high-speed, stain-free cytometry that predicts labels based on compressive imaging information without image reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the method developed in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "b7649328-d37b-4a5e-b3c1-df7547e0c270",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C62",
+      "claim": "This staining-free technology will find its applications in a wide range of medical fields such as cell manufacturing in regenerative cell therapy and blood cell enumeration and differentiation in clinical diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This staining-free technology will find its applications in a wide range of medical fields such as cell manufacturing in regenerative cell therapy and blood cell enumeration and differentiation in clinical diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of potential future applications based on the demonstrated capabilities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "f913c1d6-365b-46d8-91fb-a9f7e8b61e73",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "claim_id": "C63",
+      "claim": "The key to this technology is in turning imaging modalities that are incomprehensible to humans practical for cell characterization by using machine learning to correlate them to biological labels.",
+      "claim_type": "EXPLICIT",
+      "source": "The key to this technology is in turning imaging modalities that are incomprehensible to humans practical for cell characterization by using machine learning to correlate them to biological labels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual summary of the approach taken in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "41cd20ea-dfa7-4303-8a98-dce07fa4f47d",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed iSGC, a method that uses machine learning to predict biological labels from compressive stain-free imaging data (diffractive and scattering modalities) without full image reconstruction, achieving microsecond-scale processing times on FPGA hardware.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C16-C20, C61, and C63 collectively describe the core technical approach of iSGC. The method is well-documented with technical specifications (C18, C19, C22), training procedures (C17), and conceptual framework (C63). The compressive imaging approach and real-time processing capability are demonstrated through experimental implementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "0593e819-6215-4649-87d9-8150ed586573",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "iSGC successfully classified two similar-sized cell lines (HeLa S3 and MIA PaCa-2) with high accuracy (AUC=0.963, classification accuracy=0.917, sorted purity=97.3%) and processing time of 6.0 \u00b5s per cell, outperforming conventional FSC/SSC-based classification (AUC=0.936\u00b10.005).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 provide converging evidence from multiple metrics (AUC, accuracy, purity) with appropriate comparisons to conventional methods. The experimental data in Figures 2 and supplements support the quantitative claims. However, the manuscript notes this used only 300 cells per type for training, which is relatively small but appears sufficient for this binary classification task.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "3b4a048c-9206-4467-931d-61b8405fe713",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "iSGC distinguished live, dead, and apoptotic iPSCs with superior performance (AUC=0.998\u00b10.002 for dead vs live, 0.877\u00b10.007 for apoptotic vs live) compared to conventional FSC/BSC methods (AUC=0.973\u00b10.007 and 0.779\u00b10.011), including within conventional gates where apoptotic cells cannot be excluded using FSC/BSC alone (AUC=0.891\u00b10.012).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are well-supported by experimental data with appropriate statistical reporting (mean\u00b1SD from 10 trials). The comparison to established knowledge (C27) and conventional methods (C29) strengthens the result. The ability to distinguish apoptotic cells within conventional gates (C30-C31) demonstrates a clear advantage over existing methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "2458d8b5-7649-40bd-a08b-987a61c2a4c7",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "iSGC classified undifferentiated iPSCs from differentiated cells (NECs and HECs) with high accuracy (AUC=0.929\u00b10.008 and 0.942\u00b10.007, respectively), substantially outperforming FSC/SSC-based classification (AUC=0.856\u00b10.009 and 0.697\u00b10.016).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 provide quantitative performance metrics with appropriate statistical reporting. The biological motivation (C32) is well-cited. The substantial improvement over conventional methods, particularly for iPSC vs HEC classification, demonstrates the method's utility for quality control in cell manufacturing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "f37edebb-6bb3-4380-bb6c-ea7c2299a376",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "iSGC classified RPE cells from retinoblastoma cells with very high accuracy (AUC=0.994\u00b10.002), enabling 92% recovery at <1% false positive rate compared to only 52% recovery with FSC/SSC, demonstrating utility for purifying clinical cell products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 provide strong quantitative evidence with appropriate comparisons. The recovery rate analysis (C39) is particularly relevant for practical applications. The choice of RPE cells (C36) is well-motivated by clinical relevance. The substantial difference in recovery rates at low false positive rates is clinically meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "4ba1066e-0251-4898-b841-d96605d461b7",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "iSGC performed six-way classification of white blood cell subtypes with high accuracy in both intra-donor (F1=0.906\u00b10.003 and 0.906\u00b10.002) and inter-donor (F1=0.901\u00b10.002 and 0.884\u00b10.004) settings, demonstrating model transferability across donors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 provide strong evidence for WBC classification with appropriate statistical reporting. The inter-donor validation (C43) is particularly important for demonstrating generalizability. The clinical motivation (C40-C41) is well-established. However, the manuscript notes limited basophil numbers may have affected performance, and no direct comparison to conventional methods is provided for this multiclass task.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "50dcc22c-efc0-4415-bcd4-29d577d7a785",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "iSGC's advantage over conventional flow cytometry stems from using high-dimensional waveform data (>100 points) rather than scalar FSC/SSC values, enabling classification in high-dimensional space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 provide a clear conceptual explanation supported by the experimental comparisons throughout the manuscript. The consistent superior performance of iSGC over FSC/SSC methods across multiple cell types validates this interpretation. This is a logical inference well-supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "f77e3462-5e5e-41e9-81ae-34a0582bce3b",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "iSGC shows poor performance when morphological differences between cells are not visually recognizable, as exemplified by the difficulty in distinguishing CD4 and CD8 T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C48 describe limitations based on the authors' experience but lack quantitative data or systematic evaluation. While this is a reasonable limitation given the method's reliance on morphological information, no experimental evidence is provided to support the specific claim about CD4/CD8 T cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "90463b2d-f088-4808-81a7-97f8d76aff1e",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "iSGC models demonstrate transferability across samples and robustness over time, supported by self-calibration systems and inter-donor classification results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by the inter-donor WBC classification results (C43) and the technical description of the self-calibration system (C50). The good inter-donor performance provides evidence for model robustness, though long-term stability data are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "b23bacb5-d707-4298-b6a4-651fc9b2751a",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Molecular staining in flow cytometry has multiple disadvantages including cost, time, spectral limitations, complexity, inconsistency, and potential cellular toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C5-C9 establish the motivation for developing stain-free methods. These are well-supported by citations to prior literature and represent established knowledge in the field. This provides appropriate context for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "0883441a-c209-4f25-988f-f797fd339878",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work on in silico labeling using conventional microscopy sacrifices throughput (~10,000 cells/s for flow cytometry vs slow microscopy), and previous ghost cytometry required fluorescence staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 establish the gap in existing methods that iSGC addresses. These are well-supported by citations and provide clear motivation for the current work. The throughput comparison (C13) is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "672291c0-8d8a-40ab-9698-ad4a30ec3de6",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The iSGC concept could potentially be extended to other high-dimensional label-free modalities including holographic measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C53 are speculative about future extensions. While the conceptual argument is reasonable and holography citations are provided (C53), no experimental evidence is presented. These represent potential future directions rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "c9a9ead0-4738-4374-97f5-11ff7437fb46",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "iSGC's potential applications include cell manufacturing and diagnostics, with advantages over conventional image-based methods in throughput and ability to use sorted cells downstream.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 discuss applications supported by the demonstrated results (C4). The throughput advantage is well-established through the microsecond processing times (C22). The ability to sort cells for downstream use is a logical consequence of the flow-based approach, though not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "ced8c7c0-f102-4de2-aab0-a24872ef605a",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "iSGC can potentially be trained with various ground truth labels including surface markers, genetic reporters, functional assays, or unsupervised clustering when molecular labels are unavailable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C60 discuss potential labeling strategies but are largely speculative. While the concepts are reasonable and some are supported by citations (C58-C59), no experimental validation of these alternative labeling approaches is provided. The unsupervised clustering approach (C60) is particularly speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    },
+    {
+      "id": "89f979db-5a79-485c-845a-c8672406cf68",
+      "content_id": "95e9f9c8-9e40-4045-aed0-6833d38d6cc6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "iSGC will find applications in regenerative cell therapy manufacturing and clinical diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 is a forward-looking statement about future applications. While the demonstrated results support the technical feasibility, actual clinical implementation would require additional validation, regulatory approval, and demonstration of clinical utility beyond the proof-of-concept experiments presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:40:23.403570Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e81501d3-e2e2-4c32-9f9f-f27573fdd1f7",
+      "result_id": "41cd20ea-dfa7-4303-8a98-dce07fa4f47d"
+    },
+    {
+      "claim_id": "8c0922c3-4213-4eb0-9b68-70d411cc774d",
+      "result_id": "41cd20ea-dfa7-4303-8a98-dce07fa4f47d"
+    },
+    {
+      "claim_id": "22bae3ef-f1cf-489d-8035-69376a9a6d60",
+      "result_id": "41cd20ea-dfa7-4303-8a98-dce07fa4f47d"
+    },
+    {
+      "claim_id": "ead586a1-6aec-423e-b362-75bf77189a60",
+      "result_id": "41cd20ea-dfa7-4303-8a98-dce07fa4f47d"
+    },
+    {
+      "claim_id": "4a854a0d-ff01-46ab-a204-3115150378a5",
+      "result_id": "41cd20ea-dfa7-4303-8a98-dce07fa4f47d"
+    },
+    {
+      "claim_id": "3217297e-b29d-4f7a-b9b4-02eb5e64f78f",
+      "result_id": "41cd20ea-dfa7-4303-8a98-dce07fa4f47d"
+    },
+    {
+      "claim_id": "d94dddeb-1d9d-4b58-9a0e-48aab6c661ee",
+      "result_id": "41cd20ea-dfa7-4303-8a98-dce07fa4f47d"
+    },
+    {
+      "claim_id": "f913c1d6-365b-46d8-91fb-a9f7e8b61e73",
+      "result_id": "41cd20ea-dfa7-4303-8a98-dce07fa4f47d"
+    },
+    {
+      "claim_id": "12ba7e73-f322-4ca4-a4c1-4392514ab42a",
+      "result_id": "0593e819-6215-4649-87d9-8150ed586573"
+    },
+    {
+      "claim_id": "d23cbd73-82da-46ba-82a1-99be2c500ae5",
+      "result_id": "0593e819-6215-4649-87d9-8150ed586573"
+    },
+    {
+      "claim_id": "2f45db12-316a-4baf-947c-25ffd13acd08",
+      "result_id": "0593e819-6215-4649-87d9-8150ed586573"
+    },
+    {
+      "claim_id": "d6d23585-9349-4cf6-bcd1-4cfb96e4c4c6",
+      "result_id": "0593e819-6215-4649-87d9-8150ed586573"
+    },
+    {
+      "claim_id": "2340d25f-d3d8-4950-91f2-a3b8abfa52e0",
+      "result_id": "0593e819-6215-4649-87d9-8150ed586573"
+    },
+    {
+      "claim_id": "3b25048f-bf48-4520-a18e-b18f54794d58",
+      "result_id": "0593e819-6215-4649-87d9-8150ed586573"
+    },
+    {
+      "claim_id": "6527a265-921c-4555-8634-90399f77b876",
+      "result_id": "3b4a048c-9206-4467-931d-61b8405fe713"
+    },
+    {
+      "claim_id": "303d942e-3e29-4d02-bca9-33b29b62ccf9",
+      "result_id": "3b4a048c-9206-4467-931d-61b8405fe713"
+    },
+    {
+      "claim_id": "2a12ac26-b062-47f2-b9da-ae3045cd339a",
+      "result_id": "3b4a048c-9206-4467-931d-61b8405fe713"
+    },
+    {
+      "claim_id": "131348d8-8707-4aac-b1d0-e6a7d4bf870b",
+      "result_id": "3b4a048c-9206-4467-931d-61b8405fe713"
+    },
+    {
+      "claim_id": "2d41aad1-4efe-41cc-a151-427e3992de31",
+      "result_id": "3b4a048c-9206-4467-931d-61b8405fe713"
+    },
+    {
+      "claim_id": "9154d74d-74b0-49b8-b589-0a55cb9c6b08",
+      "result_id": "2458d8b5-7649-40bd-a08b-987a61c2a4c7"
+    },
+    {
+      "claim_id": "e182c3bb-4508-4de6-bb0c-ee66c9ceed48",
+      "result_id": "2458d8b5-7649-40bd-a08b-987a61c2a4c7"
+    },
+    {
+      "claim_id": "9fd197c1-1d18-41d1-8644-11b4766843b0",
+      "result_id": "2458d8b5-7649-40bd-a08b-987a61c2a4c7"
+    },
+    {
+      "claim_id": "fc6bf0c0-11f9-4d7b-ad3e-840fba93947d",
+      "result_id": "2458d8b5-7649-40bd-a08b-987a61c2a4c7"
+    },
+    {
+      "claim_id": "70dd701a-6d47-4205-b88f-7a4dec818cb4",
+      "result_id": "f37edebb-6bb3-4380-bb6c-ea7c2299a376"
+    },
+    {
+      "claim_id": "7de4ddb4-f2e2-4959-b8b0-3852461a2dbe",
+      "result_id": "f37edebb-6bb3-4380-bb6c-ea7c2299a376"
+    },
+    {
+      "claim_id": "c4104e73-40b7-41ec-8887-91a745139d8d",
+      "result_id": "f37edebb-6bb3-4380-bb6c-ea7c2299a376"
+    },
+    {
+      "claim_id": "a76bc476-275a-4d81-bf33-58036609b455",
+      "result_id": "f37edebb-6bb3-4380-bb6c-ea7c2299a376"
+    },
+    {
+      "claim_id": "6a25ed34-6c59-46d5-9ba6-3458584cc9fb",
+      "result_id": "4ba1066e-0251-4898-b841-d96605d461b7"
+    },
+    {
+      "claim_id": "fe525ed6-4b58-4e50-a857-92355d0b5b98",
+      "result_id": "4ba1066e-0251-4898-b841-d96605d461b7"
+    },
+    {
+      "claim_id": "01d65bf2-aff9-4558-b9bc-589e6d69ad9b",
+      "result_id": "4ba1066e-0251-4898-b841-d96605d461b7"
+    },
+    {
+      "claim_id": "f2a309b1-bdde-42c2-b170-c84a0dd73310",
+      "result_id": "4ba1066e-0251-4898-b841-d96605d461b7"
+    },
+    {
+      "claim_id": "bb6903f0-0dfd-4640-b3ea-391b5a11ad03",
+      "result_id": "50dcc22c-efc0-4415-bcd4-29d577d7a785"
+    },
+    {
+      "claim_id": "58f3f396-0ff6-4057-aed6-df13b8a3da16",
+      "result_id": "50dcc22c-efc0-4415-bcd4-29d577d7a785"
+    },
+    {
+      "claim_id": "d2e77dcf-19db-4cc5-9d31-2f721d650766",
+      "result_id": "50dcc22c-efc0-4415-bcd4-29d577d7a785"
+    },
+    {
+      "claim_id": "9e2d04f7-6fd1-499b-91ea-3d67807a9776",
+      "result_id": "f77e3462-5e5e-41e9-81ae-34a0582bce3b"
+    },
+    {
+      "claim_id": "4683aa8d-a774-4aee-ac44-5a028607f0b8",
+      "result_id": "f77e3462-5e5e-41e9-81ae-34a0582bce3b"
+    },
+    {
+      "claim_id": "b80b0288-7549-4735-8ce0-e403afd843e3",
+      "result_id": "90463b2d-f088-4808-81a7-97f8d76aff1e"
+    },
+    {
+      "claim_id": "ab61ff05-d61c-487d-bd00-6c5cfee99843",
+      "result_id": "90463b2d-f088-4808-81a7-97f8d76aff1e"
+    },
+    {
+      "claim_id": "3f817b0a-1870-4dd8-9cbf-08c0fc9aa08c",
+      "result_id": "90463b2d-f088-4808-81a7-97f8d76aff1e"
+    },
+    {
+      "claim_id": "195c3b7e-e747-4b65-9e4c-b48ea906ccc9",
+      "result_id": "b23bacb5-d707-4298-b6a4-651fc9b2751a"
+    },
+    {
+      "claim_id": "3a234169-5697-4765-b476-1ecfffc3eac8",
+      "result_id": "b23bacb5-d707-4298-b6a4-651fc9b2751a"
+    },
+    {
+      "claim_id": "fb9c480e-83f9-4a82-8b67-bc854a7dd832",
+      "result_id": "b23bacb5-d707-4298-b6a4-651fc9b2751a"
+    },
+    {
+      "claim_id": "86c1a037-872a-405c-84d6-1696c948c7b8",
+      "result_id": "b23bacb5-d707-4298-b6a4-651fc9b2751a"
+    },
+    {
+      "claim_id": "a8b6c6f8-6500-44c4-b4b9-48740a8c503a",
+      "result_id": "b23bacb5-d707-4298-b6a4-651fc9b2751a"
+    },
+    {
+      "claim_id": "8959ecf6-6c3d-4ab5-b498-bdf47a252b1a",
+      "result_id": "b23bacb5-d707-4298-b6a4-651fc9b2751a"
+    },
+    {
+      "claim_id": "cf7b76f5-7ccb-4aaa-998b-0d37b9ef1931",
+      "result_id": "b23bacb5-d707-4298-b6a4-651fc9b2751a"
+    },
+    {
+      "claim_id": "0a42226c-5997-4775-b3e4-c0441f8e2310",
+      "result_id": "0883441a-c209-4f25-988f-f797fd339878"
+    },
+    {
+      "claim_id": "cdf4a1d4-99a6-44e2-a92b-dec64b09cbd0",
+      "result_id": "0883441a-c209-4f25-988f-f797fd339878"
+    },
+    {
+      "claim_id": "70cf3809-73c1-46df-9baa-09ca83866e5a",
+      "result_id": "0883441a-c209-4f25-988f-f797fd339878"
+    },
+    {
+      "claim_id": "8538762c-8900-4331-ba8e-2ebfa05128db",
+      "result_id": "0883441a-c209-4f25-988f-f797fd339878"
+    },
+    {
+      "claim_id": "6beb85e7-b298-4b89-9a55-4d0c8659049a",
+      "result_id": "0883441a-c209-4f25-988f-f797fd339878"
+    },
+    {
+      "claim_id": "07b1c6e6-42f2-4df7-8338-8ffb177bbf70",
+      "result_id": "0883441a-c209-4f25-988f-f797fd339878"
+    },
+    {
+      "claim_id": "b384af1a-c31e-4a8a-bcbc-e8cc23828577",
+      "result_id": "672291c0-8d8a-40ab-9698-ad4a30ec3de6"
+    },
+    {
+      "claim_id": "97fc27af-479a-463c-8ffa-a4173c612f4f",
+      "result_id": "672291c0-8d8a-40ab-9698-ad4a30ec3de6"
+    },
+    {
+      "claim_id": "c5b8fc24-dc09-4483-8074-2c09fc40eda0",
+      "result_id": "c9a9ead0-4738-4374-97f5-11ff7437fb46"
+    },
+    {
+      "claim_id": "5941ff0f-d880-4000-86b1-e4e9a1d6039f",
+      "result_id": "c9a9ead0-4738-4374-97f5-11ff7437fb46"
+    },
+    {
+      "claim_id": "fa8504f0-c02f-4777-b961-eefade19a3f9",
+      "result_id": "c9a9ead0-4738-4374-97f5-11ff7437fb46"
+    },
+    {
+      "claim_id": "3d3076b6-4a36-4fa3-9cc9-4d88f4ffd8ee",
+      "result_id": "ced8c7c0-f102-4de2-aab0-a24872ef605a"
+    },
+    {
+      "claim_id": "b19a16b0-7c5b-413b-bbcd-31291a352cec",
+      "result_id": "ced8c7c0-f102-4de2-aab0-a24872ef605a"
+    },
+    {
+      "claim_id": "020e242e-6bfe-4cfb-8481-9906be7baa99",
+      "result_id": "ced8c7c0-f102-4de2-aab0-a24872ef605a"
+    },
+    {
+      "claim_id": "861cb9c7-2209-4817-9f7d-9f626b834c24",
+      "result_id": "ced8c7c0-f102-4de2-aab0-a24872ef605a"
+    },
+    {
+      "claim_id": "b7649328-d37b-4a5e-b3c1-df7547e0c270",
+      "result_id": "89f979db-5a79-485c-845a-c8672406cf68"
+    }
+  ],
+  "comparisons": []
+}

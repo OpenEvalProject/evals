@@ -1,0 +1,1605 @@
+{
+  "submission": {
+    "id": "0a5ceac6-87cf-4cb1-9b08-304186fdbeff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:38:52.636971Z",
+    "updated_at": "2025-12-03T17:38:52.636971Z"
+  },
+  "content": [
+    {
+      "id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "submission_id": "0a5ceac6-87cf-4cb1-9b08-304186fdbeff",
+      "content_type": "manuscript",
+      "content_text": "# Glycine inhibits NINJ1 membrane clustering to suppress plasma membrane rupture in cell death\n\n## Authors\n\n- Jazlyn P Borges<sup>1</sup>\n- Ragnhild SR S\u00e6tra<sup>2</sup> ([ORCID: 0000-0002-8248-0460](https://orcid.org/0000-0002-8248-0460))\n- Allen Volchuk<sup>3</sup>\n- Marit Bugge<sup>2</sup>\n- Pascal Devant<sup>4</sup> ([ORCID: 0000-0001-9743-6764](https://orcid.org/0000-0001-9743-6764))\n- Bj\u00f8rnar Sporsheim<sup>2</sup>\n- Bridget R Kilburn<sup>1</sup> ([ORCID: 0000-0002-0171-9370](https://orcid.org/0000-0002-0171-9370))\n- Charles L Evavold<sup>5</sup> ([ORCID: 0000-0003-3913-5626](https://orcid.org/0000-0003-3913-5626))\n- Jonathan C Kagan<sup>4</sup> ([ORCID: 0000-0003-2364-2746](https://orcid.org/0000-0003-2364-2746))\n- Neil M Goldenberg<sup>3</sup> ([ORCID: 0000-0003-2785-1852](https://orcid.org/0000-0003-2785-1852))\n- Trude Helen Flo<sup>2</sup> ([ORCID: 0000-0002-2569-0381](https://orcid.org/0000-0002-2569-0381))\n- Benjamin Ethan Steinberg<sup>1</sup> ([ORCID: 0000-0002-3070-0548](https://orcid.org/0000-0002-3070-0548)) \u2020\n\n### Affiliations\n\n1. Program in Neuroscience and Mental Health, Hospital for Sick Children Toronto Canada ([ROR:057q4rt57](https://ror.org/057q4rt57))\n2. Centre of Molecular Inflammation Research, Department of Clinical and Molecular Medicine, Faculty of Medicine and Health Sciences, Norwegian University of Science and Technology Trondheim Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))\n3. Program in Cell Biology, Hospital for Sick Children Toronto Canada ([ROR:057q4rt57](https://ror.org/057q4rt57))\n4. Division of Gastroenterology, Boston Children's Hospital and Harvard Medical School Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))\n5. Ragon Institute of MGH, MIT and Harvard Boston United States ([ROR:053r20n13](https://ror.org/053r20n13))\n6. Department of Anesthesia and Pain Medicine, Hospital for Sick Children Toronto Canada ([ROR:057q4rt57](https://ror.org/057q4rt57))\n7. Department of Anesthesiology and Pain Medicine, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFirst recognized more than 30 years ago, glycine protects cells against rupture from diverse types of injury. This robust and widely observed effect has been speculated to target a late downstream process common to multiple modes of tissue injury. The molecular target of glycine that mediates cytoprotection, however, remains elusive. Here, we show that glycine works at the level of NINJ1, a newly identified executioner of plasma membrane rupture in pyroptosis, necrosis, and post-apoptosis lysis. NINJ1 is thought to cluster within the plasma membrane to cause cell rupture. We demonstrate that the execution of pyroptotic cell rupture is similar for human and mouse NINJ1 and that NINJ1 knockout functionally and morphologically phenocopies glycine cytoprotection in macrophages undergoing lytic cell death. Next, we show that glycine prevents NINJ1 clustering by either direct or indirect mechanisms. In pyroptosis, glycine preserves cellular integrity but does not affect upstream inflammasome activities or accompanying energetic cell death. By positioning NINJ1 clustering as a glycine target, our data resolve a long-standing mechanism for glycine-mediated cytoprotection. This new understanding will inform the development of cell preservation strategies to counter pathologic lytic cell death.\n\n## Introduction\n\nThe amino acid glycine has long been known to protect cells against plasma membrane rupture induced by a diverse set of injurious stimuli. This cytoprotective effect was first described in 1987, where glycine was found to protect renal tubular cells against hypoxic injury (Weinberg et al., 1987). Since, similar observations have been replicated across immune, parenchymal, endothelial, and neuronal cell types in multiple injury models (reviewed in Weinberg et al., 2016). These include the lytic cell death pathways pyroptosis (Loomis et al., 2019; Volchuk et al., 2020) and necrosis (Estacion et al., 2003).\n\nWhile the robust cytoprotective effects of glycine are widespread, the molecular target and mechanism by which glycine protects cells and tissues remain elusive. Many cellular processes have been investigated but ultimately ruled out as underlying this phenomenon (Weinberg et al., 2016). These include glycine or ATP metabolic pathways (Weinberg et al., 1991), intracellular calcium or pH regulation (Weinberg et al., 1994), cytoskeleton stabilization (Chen et al., 1997), and chloride conductance (Loomis et al., 2019). It has been speculated that glycine targets a membrane receptor but is unlikely to involve canonical glycine receptors (Loomis et al., 2019; Weinberg et al., 2016). Lastly, as a cytoprotective agent, glycine has oftentimes been described as an osmoprotectant (Fink and Cookson, 2006). However, its small size should generally allow free passage through the large membrane conduits involved in lytic cell death pathways, such as the gasdermin D pores formed during pyroptosis that are known to allow transport of small proteins and ions across lipid bilayers (Evavold et al., 2018; Heilig et al., 2018; Xia et al., 2021). The free permeability of the plasma membrane to glycine through large conduits or amino acid transporters would negate a protective osmotic effect. Moreover, it remains unknown whether glycine\u2019s cytoprotective effect is through an extracellular or intracellular mode of action and, therefore, whether glycine\u2019s entry into the cell is required for cytoprotection. A mechanistic knowledge of how glycine preserves cellular integrity would inform the development of cell and tissue preservation strategies. This mechanistic understanding of glycine cytoprotection has clear clinical implications, such as for limiting inflammation in ischemia-reperfusion injuries where multiple lytic cell death pathways are activated to cause tissue damage and morbidity (Del Re et al., 2019).\n\nGiven how widely observed the phenomenon is, it stands to reason that glycine targets a late downstream process common to multiple tissue injury models. Notably, the transmembrane protein ninjurin-1 (NINJ1) was recently identified as the common executioner of plasma membrane rupture in pyroptosis, necrosis, and post-apoptosis lysis (Kayagaki et al., 2021). Post-apoptosis lysis refers to the cell membrane rupture that occurs when phagocytes are unable to scavenge apoptotic cells that have otherwise completed the apoptotic program (Silva, 2010). NINJ1 is a 16 kilodalton protein with two transmembrane regions that reside in the plasma membrane with prior reports, suggesting a function in cell adhesion (Araki et al., 1997; Araki and Milbrandt, 1996). NINJ1 has been implicated in multiple inflammatory conditions, such as nerve injury, atherosclerosis, ischemic brain injury, and tumorigenesis (Araki and Milbrandt, 1996; Jeon et al., 2020; Kim et al., 2020; Yang et al., 2017). The mechanism by which NINJ1 mediates lytic cell death coincides with its clustering within the plasma membrane, and this multimerization is required for membrane disruption by an unknown mechanism (Kayagaki et al., 2021).\n\nHere, we hypothesized that glycine targets NINJ1 to mediate its cytoprotective effect. We first demonstrate that NINJ1 knockout or silencing functionally and morphologically phenocopies glycine cytoprotection in mouse and human primary macrophages stimulated to undergo various forms of lytic cell death. Next, we show that glycine treatment prevents NINJ1 clustering within the plasma membrane, thereby preserving its integrity without affecting upstream programmed cell death signaling. By identifying NINJ1-dependent plasma membrane rupture as a glycine target, our data help resolve a long-standing mechanism of glycine cytoprotection.\n\n## Results\n\n### NINJ1 deficiency functionally and morphologically phenocopies glycine cytoprotection\n\nThe published literature suggests a potential association between NINJ1 and glycine given that NINJ1 knockout and glycine treatment protect cells against a common set of lytic cell death pathways. Moreover, in pyroptosis, both allow for IL-1\u03b2 secretion through the gasdermin D pore while preventing final membrane lysis (Kayagaki et al., 2021; Volchuk et al., 2020). We first sought to extend these associations by further characterizing functional and morphological similarities between NINJ1 knockout and glycine cytoprotection in pyroptosis, necrosis, and post-apoptosis lysis.\n\nUsing a CRISPR-Cas9 system, we generated a NINJ1 knockout cell line in mouse immortalized bone marrow-derived macrophages (iBMDMs; Figure 1A). Pyroptosis was induced in LPS(lipopolysaccharide)-primed wildtype and NINJ1 knockout iBMDM with nigericin (20 \u00b5M, 2 hr) in the absence or presence of 5 mM glycine. Glycine treatment at 5 mM was based on the reported literature (Loomis et al., 2019; Volchuk et al., 2020) and a dose-finding study (Figure 1\u2014figure supplement 1). We performed a colorimetric assay to test for LDH release, a common marker of cell rupture. Both NINJ1 knockout and glycine treatment in wildtype iBMDM protected against cytotoxicity (Figure 1B). Similarly, cell membrane integrity was preserved following apoptosis (Figure 1C) and necrosis (Figure 1D) induced with venetoclax (25 \u00b5M, 16 hr) and pneumolysin (0.5 \u00b5g/mL, 15 min), respectively. Importantly, in NINJ1 knockout macrophages, treatment with glycine during lytic cell death did not confer any additional protection against cell lysis, suggesting that these distinct perturbations affect the same process (Figure 1B\u2013D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig1-v3.jpg)\n\n**Figure 1.:** (A) Immunoblot analysis demonstrating NINJ1 knockout in immortalized bone marrow-derived macrophage (iBMDM). GAPDH(glyceraldehyde-3-phosphate dehydrogenase) is presented as a loading control. (B\u2013D) Wildtype and NINJ1 knockout iBMDM were induced to undergo pyroptosis (LPS + nigericin), post-apoptosis lysis (secondary necrosis; venetoclax, ABT-199), or necrosis (pneumolysin) with or without 5 mM glycine treatment. Cytotoxicity was evaluated by measuring the levels of LDH in the supernatant. Cytotoxicity decreased in glycine-treated wildtype cells comparably to NINJ1 knockout across each of (B) pyroptosis, (C) post-apoptosis lysis, and (D) necrosis. Glycine treatment of NINJ1 KO cells provided no additional protection to knockout cells treated without glycine. Data are expressed as supernatant LDH as a % of total LDH from lysates and supernatants, from n\u2009=\u20093 independent experiments for each cell death type. Individual data points are shown along with their mean. * p<0.05 by ANOVA with Tukey\u2019s multiple comparison correction. (E) LPS-primed wildtype iBMDM induced to undergo pyroptosis in the presence of glycine demonstrate similar plasma membrane ballooning to NINJ1 knockout iBMDM induced to undergo pyroptosis. Membrane ballooning is shown in live cells labeled with the plasma membrane dye FM4-64. The corresponding brightfield image is shown in the inset. Scale bar 15 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Primary LPS-primed mouse bone marrow-derived macrophage (BMDM) were treated for 90 min with increasing concentrations of glycine or the indicated concentrations of alanine, serine, or valine prior to induction of pyroptosis with nigericin as described in the main text. Supernatant LDH levels were measured 30 min later as a marker of cytotoxicity. (A) Glycine dose-dependently inhibits rupture of pyroptotic mouse BMDM with an IC50 between 1 and 2 mM, consistent with the published literature (Loomis et al., 2019). Experiment done in duplicate. (B) Glycine confers greater cytoprotection compared with alanine >> serine, valine as measured by LDH release. (C) BN-PAGE for NINJ1 shows that amino acid treatment limits NINJ1 aggregation in pyroptosis with a similar hierarchy of glycine > alanine > serine, valine.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Using a CRISPR-Cas9 system, Ninj1 was knocked out of a RAW mouse macrophage cell line engineered to constitutively express ASC (RAW-ASC) and therefore have the capacity to undergo pyroptosis. (A) Western blot demonstrating NINJ1 knockout compared with the parental line. GAPDH is shown as a loading control. (B) Wildtype and NINJ1 knockout cells were induced to undergo pyroptosis with LPS + nigericin treatment with or without glycine. Supernatant LDH was evaluated as a marker of cytotoxicity by colorimetric assay. Cytotoxicity was decreased in glycine-treated (5 mM) wildtype cells comparably to NINJ1 knockout. Glycine (5 mM) treatment of NINJ1 KO cells provided no additional protection to knockout cells without glycine. * p<0.05 by two-sided ANOVA with Tukey\u2019s multiple comparison correction. (C) LPS-primed wildtype RAW-ASC induced to undergo pyroptosis in the presence of glycine demonstrate similar plasma membrane ballooning to NINJ1 knockout RAW-ASC cells induced to undergo pyroptosis. Membrane ballooning is shown in live cells labeled with the plasma membrane dye FM4-64. Scale bar 20 \u00b5m. (D) Native-PAGE analysis of endogenous NINJ1 in RAW-ASC macrophages demonstrates a shift to high molecular weight aggregate upon pyroptosis stimulation, which is abrogated by glycine treatment.\n\nWhen visualizing glycine-treated pyroptotic macrophages, we observed prominent plasma membrane ballooning (Figure 1E). This impressive morphology was comparable to that of LPS-primed NINJ1 knockout macrophages stimulated to undergo pyroptosis with nigericin, which we (Figure 1E) and others (Kayagaki et al., 2021) have observed. Together, these functional and morphologic similarities buttress the association between glycine cytoprotection and NINJ1-mediated plasma membrane rupture.\n\nTo further corroborate the above findings, we conducted pyroptosis assays in RAW mouse macrophages reconstituted with the inflammasome adaptor ASC (hereafter referred to as RAW-ASC). NINJ1 protein expression was ablated through CRISPR-Cas9 targeting as compared with the parental line (Figure 1\u2014figure supplement 2A). Pyroptosis stimulation in this orthogonal murine macrophage model demonstrates NINJ1 deficiency functionally (Figure 1\u2014figure supplement 2B) and morphologically (Figure 1\u2014figure supplement 2C) phenocopies glycine treatment as was seen in the iBMDM system.\n\nHuman NINJ1 is 90% homologous to the mouse protein and was shown to be toxic when overexpressed in HEK293T cells (Kayagaki et al., 2021), but it is not known if endogenous NINJ1 is activated and mediates plasma membrane rupture in human cells undergoing programmed cell death. We knocked down NINJ1 in primary human monocyte-derived macrophages (hMDMs) using siRNA specific to NINJ1 (siNINJ1) and compared to non-targeting control siRNA (siCtrl) with an efficiency approaching 70% (Figure 4\u2014figure supplement 2A). Both NINJ1 knockdown and glycine (50 mM; Figure 2\u2014figure supplement 1) independently and completely prevented pyroptosis (LDH release) induced by nigericin (20 \u00b5M, 2 hr) in LPS-primed hMDMs. Notably, again there was no additional effect with combined NINJ1 deficiency and glycine treatment arguing that NINJ1 and glycine are involved in the same process in primary human cell death pathways (Figure 2A). In contrast, human macrophages induced to undergo necroptosis (zVAD 20 \u00b5M + SMAC mimetic BV6 10 \u00b5M followed by TNF 10 ng/mL) were unprotected by glycine treatment (Figure 2\u2014figure supplement 2), consistent with the observation that Ninj1 knockout does not confer protection in necroptosis likely due to sufficient cytolytic activity of MLKL pores (Kayagaki et al., 2021). Like mouse macrophages, both siNINJ1 and glycine sustained the ballooned morphology of pyroptotic hMDMs (Figure 2B). While pyroptotic human macrophages maintained their plasma membrane integrity in the presence of glycine as demonstrated by suppressed LDH release, we next confirmed that they had nevertheless lost viability as measured by the loss of mitochondrial membrane potential and cellular ATP content (Figure 2\u2014figure supplement 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig2-v3.jpg)\n\n**Figure 2.:** Primary hMDMs were treated with siRNA targeting NINJ1 (siNINJ1) or non-targeted control (siCtrl). (A) Wildtype and NINJ1-silenced hMDMs were LPS-primed and induced to undergo pyroptosis (nigericin) with or without 50 mM glycine. LDH release in the supernatants was measured to assess cytotoxicity. Cytotoxicity was reduced in glycine-treated wildtype cells, as well as in NINJ1-silenced cells. Glycine treatment did not yield additional protection from pyroptotic cell death in NINJ1-silenced cells. Data are expressed as % of LDH in supernatant from siCtrl-treated cells stimulated to undergo pyroptosis from n=4 independent donors. Data points from each donor are shown along with their mean and SD. **** p<0.0001 by two-way ANOVA with Tukey\u2019s multiple comparison correction. (B) Nigericin- and glycine-treated LPS-primed wildtype hMDMs show similar ballooning morphology as nigericin-treated LPS-primed NINJ1-silenced hMDMs. Membrane ballooning is shown in live cells labeled with the plasma membrane dye FM1-43. The corresponding brightfield image is shown in the inset. Scale bar 20 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Primary human macrophages were pre-incubated with increasing doses of glycine and primed with LPS (1 \u00b5g/mL) for 3 hr before addition of nigericin (20 \u00b5M). Levels of LDH and IL-1\u03b2 in supernatants were measured 2 hr later as described in the main text. Experiment done in triplicate.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Primary human macrophages pre-treated or not with glycine (50 mM), pan-caspase inhibitor zVAD (25 \u00b5M), and SMAC mimetic BV6 (10 \u00b5M) for 30 min before stimulation with TNF (10 ng/mL). Supernatant LDH levels were measured 4 hr later as a measure of cytotoxicity. **** p<0.0001, *** p<0.001 by two-way ANOVA with Tukey\u2019s multiple comparison correction. ns = not significant.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Human monocyte-derived macrophages (hMDMs) were either left untreated or pre-treated with glycine (50 mM) and primed with 1 \u03bcg/mL LPS before stimulation with nigericin (20.7 \u00b5M). To assay cell viability, the mitochondrial membrane potential sensitive dye tetramethylrhodamine ethyl ester (TMRE) perchlorate was added, and images were taken every 30 min overnight. (A) Representative images of TMRE staining (green) from two independent experiments where the second includes CellTracker Deep Red dye as a cellular marker (red, lower panel). Scale bars 100 \u00b5m. (B) TMRE intensity decreases, and cells die prior to ballooning in cells undergoing pyroptosis (30 min between images shown, except last image which shows the same cell at 18 hr). (C) Frequency of TMRE positive cells, (D) LDH release, and (E) ATP content at indicated time points. Results from two to three independent experiments are shown in (C\u2013E) with different symbols for individual donors.\n\nTogether, these data using macrophage models from mouse and human demonstrate that genetic deletion or silencing of NINJ1 functionally and morphologically parallels glycine-mediated cytoprotection.\n\n### Glycine targets NINJ1 clustering to prevent membrane rupture\n\nWe therefore next posited that glycine targets NINJ1 as part of its cytoprotective effect. The working model of NINJ1-mediated membrane rupture involves its clustering within the plasma membrane (Kayagaki et al., 2021). Point mutants (e.g. K45Q and A59P) that prevent membrane rupture also fail to cluster upon induction of pyroptosis (Kayagaki et al., 2021), further reinforcing a connection between the clustering process and the capacity of NINJ1 to rupture membranes. To establish whether glycine directly interferes with NINJ1-mediated cell death, we next evaluated the effect of glycine treatment on NINJ1 clustering during cell lysis in pyroptosis, post-apoptosis lysis, and necrosis.\n\nUsing a biochemical native-PAGE approach that maintains native protein interactions, endogenous NINJ1 of otherwise untreated primary mouse bone marrow-derived macrophages (BMDM) migrates at approximately 40 kDa, potentially indicative of NINJ1 dimers or trimers in unstimulated cells (Figure 3A) and consistent with its known ability to form homotypic interactions (Bae et al., 2017). By native-PAGE, a band of approximately 160\u2013200 kDa is also observed in the basal state, suggesting that higher-order multimers of NINJ1 consistent with decamers or higher-order multimers may also be present in the plasma membrane of unstimulated macrophages (Figure 3A). In response to pyroptosis (nigericin in LPS-primed BMDM), necrosis (pneumolysin), and apoptosis (venetoclax) induction in primary BMDM, the endogenous NINJ1 signal shifts to a high molecular weight aggregate, suggestive of a clustering process. Importantly, this shift is completely abrogated by glycine treatment (Figure 3A). Using this same native-PAGE approach, glycine treatment of primary hMDMs (Figure 4A) and mouse RAW-ASC cells (Figure 1\u2014figure supplement 1D) undergoing pyroptosis prevented the shift of NINJ1 to a high molecular weight band. Finally, glycine inhibited NINJ1 oligomerization and pyroptotic lysis (as measured by LDH release) in LPS-primed and nigericin-treated human macrophages derived from induced pluripotent stem cells (iPSCs) derived macrophages (iPSDMs) without impairing secretion of IL-1\u03b2, confirming previous findings that glycine acts downstream of GSDMD pore formation (Figure 4\u2014figure supplement 2B\u2013D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig3-v3.jpg)\n\n**Figure 3.:** (A) Primary bone marrow-derived macrophage (BMDM) was induced to undergo pyroptosis (nigericin), apoptosis (venetoclax, ABT-199), or necrosis (pneumolysin) with or without glycine treatment. Native-PAGE analysis of endogenous NINJ1 demonstrates a shift to high molecular weight aggregate upon cell death stimulation, which is abrogated by glycine treatment. (B) Total internal reflection microscopy of NINJ1 in LPS-primed primary BMDM reveals that endogenous NINJ1 resides in discrete puncta within the plasma membrane. Cell membrane outline (dotted white line) was determined using fluorescently labeled cholera toxin subunit B (not shown) as a plasma membrane marker. Scale bar 20 \u00b5m. Inset shows magnified area demarcated by the white box. Anti-mouse NINJ1 antibody validation for immunofluorescence is provided in Figure 3\u2014figure supplement 1. Quantification of the density (C) and mean fluorescence intensity (D) of NINJ1 puncta in LPS-primed primary macrophages at baseline or stimulated to undergo pyroptosis (nigericin 20 \u00b5M for 30 min) without or with glycine (5 mM). NINJ1 puncta become less dense and brighter upon pyroptosis induction, consistent with NINJ1 plasma membrane clustering. Glycine limits this redistribution. Violin plot of NINJ1 puncta density from three pooled independent experiments. Data points superimposed on the violin plots are the mean NINJ1 puncta densities for the three independent experiments (10\u201323 cells measured per replicate with >675 NINJ1 puncta identified per replicate). Bars represent mean \u00b1 SEM of the NINJ1 densities for the n=3 independent experiments. * p<0.05, ** p<0.01, and **** p<0.0001 by Kruskal\u2013Wallis test with Dunn\u2019s multiple comparison correction. (E) Representative confocal (top) and stimulated emission depletion (STED; bottom) images of LPS-primed primary mouse bone marrow-derived macrophage (BMDM) at baseline or stimulated to undergo pyroptosis (nigericin 20 \u00b5M for 30 min) without or with glycine (5 mM). Full-width at half maximum of identified NINJ1 puncta shows a resolution of 271\u00b198 nm and 63\u00b18 nm (mean \u00b1 SD) for standard confocal and STED microscopy, respectively. Scale bar 0.5 \u00b5m; inset scale bar 20 \u00b5m. (F\u2013G) Quantification of the normalized NINJ1 puncta density (F) and mean fluorescence intensity (G) from the STED images. The NINJ1 puncta become less dense with a corresponding increase in fluorescence intensity upon pyroptosis induction, consistent with NINJ1 plasma membrane clustering. Glycine limits these effects. Violin plot of the individual NINJ1 puncta from three pooled independent experiments (8\u201314 cells per replicate with >4964 NINJ1 puncta identified per replicate). Bars represent mean \u00b1 SEM of the NINJ1 densities for the n=3 independent experiments. * p<0.05 and **** p<0.0001 by Kruskal\u2013Wallis test with Dunn\u2019s multiple comparison correction.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Wildtype and Ninj1 knockout primary mouse bone marrow-derived macrophage (BMDM) were fixed and stained with or without the rabbit anti-mouse NINJ1 monoclonal antibody as described in the main text prior to imaging by total internal reflection fluorescence (TIRF) microscopy. The cell plasma membrane was stained using fluorescent cholera toxin subunit B (CTxB). Scale bar 15 \u03bcm.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig4-v3.jpg)\n\n**Figure 4.:** (A) Native-PAGE analysis of endogenous NINJ1 from human monocyte-derived macrophages (hMDMs) stimulated to undergo pyroptosis displays a shift to higher molecular weight, which is abrogated by glycine treatment. NINJ1 levels are almost absent in siNINJ1-treated cells (quantification in Figure 4\u2014figure supplement 2A), and no shift is seen after LPS and nigericin treatment. (B) Total internal reflection fluorescence (TIRF) microscopy of LPS-primed primary hMDMs shows endogenous NINJ1 in discrete plasma membrane puncta. Cell membrane outline (dotted white line) was determined using fluorescently labeled cholera toxin subunit B (not shown) as a plasma membrane marker. Scale bar 20 \u03bcm. Anti-human NINJ1 antibody validation for immunofluorescence is provided in Figure 4\u2014figure supplement 1. Quantification of the NINJ1 puncta density (C) and fluorescence intensity (D) in LPS-primed hMDMs at baseline or stimulated to undergo pyroptosis (nigericin 20.7 \u03bcM for 2 hr) without or with glycine (50 mM). Violin plot of NINJ1 puncta density and intensity quantified from images of cells from four independent donors. Mean of NINJ1 puncta densities from three cells per donor per condition shown as superimposed datapoints (different symbols are used for individual donors) along with median and quartiles for each condition.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** LPS and nigericin treated human monocyte-derived macrophages (hMDMs) were fixed and stained with the indicated antibodies as described in the main text prior to imaging by total internal reflection fluorescence (TIRF) microscopy. (A) Cells were stained with mouse anti-human NINJ1 (IgG2b) Ab or a control Ab (mouse IgG2a) followed by fluorescent rabbit anti-mouse Ab. The cell plasma membrane was stained using fluorescent cholera toxin subunit B (CTxB). (B) In a separate experiment, cells were stained with mouse anti-human NINJ1 (IgG2b) Ab or no primary Ab, followed by fluorescent rabbit anti-mouse Ab. Scale bars 20 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Quantification of NINJ1 native-PAGE signal from unstimulated human monocyte-derived macrophage (hMDM) lysates confirm NINJ1 silencing in siNINJ1-treated cells compared to siCtrl-treated cells. (B\u2013D) iPSDMs were LPS-primed and stimulated to undergo pyroptosis with nigericin in the presence or absence of 50 mM glycine. (B) Native-PAGE analysis of endogenous NINJ1 in iPSDMs display a shift to higher molecular weight when cells are stimulated to undergo pyroptosis, which is abrogated by glycine pretreatment. (C) LDH release was measured in the supernatants to assess cell rupture and was reduced with glycine co-treatment. Data are expressed as % of LDH in supernatant from LPS and nigericin-treated cells in n=3 independent experiments. Data points from each experiment is shown along with their mean and SD. (D) IL-1\u03b2 release from pyroptotic cells was not altered by the presence of glycine. Data points from three technical replicates from one experiment are shown along with their mean and SD.\n\nTo corroborate these biochemical findings, we proceeded to evaluate native NINJ1 oligomerization within the plasma membrane by total internal reflection fluorescence (TIRF) microscopy in primary BMDM and hMDMs induced to undergo pyroptosis. TIRF microscopy allows for the preferential excitation of a thin (~150 nm) layer that includes the ventral plasma membrane of adherent cells, thereby eliminating background fluorescence from structures outside this focal plane (e.g. endomembrane compartments). In LPS-primed BMDMs and hMDMs, NINJ1 appears in discrete, small puncta that are diffusely distributed across the plasma membrane in both cell types (Figure 3B, Figure 4B). Upon induction of pyroptosis, the density of these puncta decreases, and their intensity increases (Figure 3C\u2013D, Figure 4C\u2013D), consistent with the clustering or aggregation of the low-order multimers into high-order oligomers as seen on the native PAGE (Figure 3A, Figure 4A). Co-treatment with glycine abrogates the formation of these clusters (Figure 3B\u2013D, Figure 4B\u2013D).\n\nWhile the use of TIRF microscopy allowed us to localize our evaluation of NINJ1 clustering to the plasma membrane, it inadequately resolved the spatial clustering due to its diffraction limitation. To partially overcome this limitation, we next probed NINJ1 membrane clustering using stimulated emission depletion (STED), a super-resolution fluorescence microscopy approach, in primary BMDM. With STED, we improved upon the resolution from a full-width half-maximum by confocal microscopy of 271\u00b198 nm to 63\u00b18 nm (Figure 3E). In the basal state, NINJ1 was observed in small discrete puncta, which decreased in density (Figure 3F) and increased in intensity (Figure 3G) upon pyroptosis induction with nigericin. Co-treatment with glycine (5 mM) limited clustering (Figure 3F\u2013G). Together, our biochemical and microscopy-based data are consistent with the notion that during pyroptosis, low-order NINJ1 oligomers cluster within the plasma membrane, a phenomenon suppressed by glycine.\n\n### Glycine targets NINJ1 clustering to confer cytoprotection independently of upstream programmed lytic cell death signaling\n\nThus far, our data do not rule out the possibility that glycine is able to target proteins upstream of NINJ1 in pyroptosis. To test whether this is indeed the case, we evaluated caspase-1 activation, GSDMD processing, and IL-1\u03b2 processing and secretion in iBMDM induced with nigericin with and without 5 mM glycine. Co-treatment with glycine had no effect on these upstream processes (Figure 5A\u2013B), supporting the hypothesis that the target of glycine is downstream and independent of GSDMD activation and oligomerization. To confirm that glycine interferes with NINJ1-mediated cellular rupture independent of upstream signaling pathways, we generated a doxycycline-inducible NINJ1 overexpression system in mouse macrophages (Figure 5\u2014figure supplement 1) based on the rationale that sufficient overexpression of NINJ1 can drive spontaneous lysis as seen in 293T systems (Kayagaki et al., 2021). Using this cell-based system, we demonstrate that glycine dose-dependently suppresses NINJ1-mediated cell rupture independent of activation of upstream programmed cell death pathway activation (Figure 5C). Expression of N-terminal GSDMD using a similar inducible system was able to trigger a glycine-inhibitable cellular rupture (Figure 5D). To further address glycine\u2019s mode of action, we evaluated glycine\u2019s effect on NINJ1 clustering biochemically and found that glycine suppresses NINJ1 clustering when NINJ1 is overexpressed (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013B) Wildtype immortalized bone marrow-derived macrophage (iBMDM) was primed with 1 \u03bcg/mL LPS for 4 hr or left unprimed before stimulation of primed cells with 20 \u03bcM nigericin for 2 hr in the presence or absence of 5 mM glycine. (A) Processing of GSDMD, caspase-1, and IL-1\u03b2 was assessed by western blot. (B) Release of IL-1\u03b2 into the cell culture supernatant was quantified by ELISA. ELISA results show mean \u00b1 SEM of three independent experiments. Western blots are representative of three independent experiments. ***p<0.001 and ****p<0.0001 by one-way ANOVA with Tukey\u2019s multiple comparison correction. (C\u2013D) Glycine dose-dependently inhibits plasma membrane rupture in mouse macrophages overexpressing NINJ1 or the N-terminal fragment of GSDMD. iBMDMs with doxycycline-inducible expression of FLAG-tagged NINJ1 (C) or the N-terminal fragment of GSDMD fused to BFP(blue fluorescent protein) (D) were incubated with 2 \u00b5g/mL doxycycline and increasing concentrations of glycine for 12 hr or 8 hr, respectively, before analyses of cell rupture (LDH release) and protein expression. Left: LDH release in supernatants relative to full lysis controls. Middle: frequencies of NINJ1-FLAG-positive or GSDMD-NT-BFP-positive cells. Right: surface expression of NINJ1-FLAG or GSDMD-NT-BFP by mean fluorescence intensity. * p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 by two-sided ANOVA with Tukey\u2019s multiple comparison correction. (E) HeLa cells were transiently transfected with HA-tagged mouse NINJ1 in the presence or absence of glycine (5 mM). Native-PAGE analysis of ectopically expressed NINJ1 demonstrates a shift to high molecular weight aggregate, which is abrogated by glycine treatment. (F) Large unilamellar vesicles (LUVs; gray circles) were made containing 25 mM carboxyfluorescein (CF) at which the CF fluorescence self-quenches. NINJ1 \u03b1-helix peptide (corresponding to amino acids 40\u201369 of human NINJ1) is added to the LUV suspension. Ruptured LUV release CF, which no longer self-quenches. The resulting increase in fluorescence is monitored using a spectrofluorometer. Detergent is added to rupture all remaining liposomes to capture the maximum attainable fluorescence. LUV rupture by N-terminus NINJ1 \u03b1-helix without and with glycine (50 mM), scrambled NINJ1 \u03b1-helix peptide, or the cytolytic yeast peptide candidalysin compared to vehicle. Glycine does not prevent LUV rupture by the N-terminal NINJ1 \u03b1-helix. * p<0.05 by ANOVA with Tukey\u2019s multiple comparison correction.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Two clonal cell lines expressing FLAG-NINJ1 under a doxy-inducible promoter or the parental Cas9 + iBMDM cell line were treated with 2 \u00b5g/mL of doxycycline for the indicated times. (A) Expression of FLAG-NINJ1 in whole cell lysates was analyzed by western blot. (B) Cell membrane rupture was assessed by LDH assay. (C) Membrane permeabilization over time was analyzed by PI(propidium iodide) staining. (D\u2013F) Cell surface expression of FLAG-NINJ1 and plasma membrane permeabilization (Sytox Blue positive) was analyzed by flow cytometry.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78609/elife-78609-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) CD spectrum of NINJ1 amino acids 40\u201369 (HYASKKSAAESMLDIALLMANASQLKAVVE) shows the characteristic pattern of an \u03b1-helix with two downward deflections at 207 nm and 222 nm. (B) CD spectra of the human NINJ1 \u03b1-helix co-incubated with glycine titrated between 0 and 20 mM indicate that the helical secondary structure is generally insensitive to glycine.\n\nWe next turned our attention to the purported amphipathic \u03b1-helix in the NINJ1 N-terminus (residues 40\u201369 of human NINJ1), which others have shown to be necessary for NINJ1-mediated plasma membrane rupture (Kayagaki et al., 2021). Circular dichroism (CD) of the \u03b1-helix at varying glycine concentrations between 0 and 20 mM did not affect the CD spectrum, indicating that at the trialed concentrations, glycine did not alter the stability of the helical secondary structure of this region of the NINJ1 N-terminus (Figure 5\u2014figure supplement 2). We then functionally evaluated whether glycine interferes with the membrane lytic function of the helix using a reconstituted liposomal rupture assay. In this system, we demonstrate that while the \u03b1-helix was able to rupture liposomes, glycine did not interfere with this effect (Figure 5F). These data suggest that glycine can block full-length NINJ1 clustering and membrane rupture in cellulo but that additional unknown players may be affected within cells, or the mode of action is separate from the minimally sufficient lytic \u03b1-helix of the NINJ1 N-terminus as shown by intact liposome rupture.\n\n## Discussion\n\nThe protective effect of glycine treatment is a pervasive feature of many cell death pathways, yet the mechanism of action was previously unknown. Here, we position the plasma membrane clustering of the pan-death protein NINJ1 as an elusive glycine target that mediates cytoprotection.\n\nIn our studies, we focused on fundamental cell death pathways in both mouse and human macrophages and show that glycine prevents NINJ1 clustering, a process required for plasma membrane rupture. Necroptosis represents another programmed cell death pathway, important to inflammatory responses, pathogen detection, and tissue repair (Bertheloot et al., 2021). Unlike pyroptosis, necrosis, and post-apoptosis lysis, NINJ1 does not appear to be needed for necroptosis-induced plasma membrane rupture (Kayagaki et al., 2021), potentially due to the membrane-disrupting capacity of the necroptosis MLKL pore (Flores-Romero et al., 2020). This is particularly notable as glycine does not prevent TNF-induced necroptosis (Figure 2\u2014figure supplement 2 and Chen et al., 2014), further buttressing the association between NINJ1 and glycine.\n\nOur data demonstrate that glycine treatment and genetic ablation or silencing of NINJ1 yield similar functional and morphological outcomes in both human and mouse macrophages subjected to lytic cell death programs. Mechanistically, our data suggest that glycine cytoprotection results from interference with NINJ1 clustering within the plasma membrane. This finding is further supported by the observations that (1) glycine treatment of NINJ1 knockout cells confers no additional protection against cellular rupture; (2) glycine cytoprotection is independent of upstream programmed lytic cell death signaling; and (3) amino acids structurally similar to glycine inhibit NINJ1 clustering and membrane rupture with the same potency hierarchy as previously reported for glycine cytoprotection in pyroptosis (Figure 1\u2014figure supplement 1B\u2013C and Loomis et al., 2019).\n\nThe mechanism by which glycine interferes with NINJ1 clustering can be either direct or indirect. Our in vitro CD studies and liposomal rupture system, respectively, indicate that glycine does not interfere with the secondary structure or lytic function of the NINJ1 \u03b1-helix. It remains plausible that glycine still interacts directly with this domain or other components of the NINJ1 N-terminus in cells to interfere with NINJ1 clustering, consistent with our presented data. Alternatively, glycine may act on an unidentified intermediate that modulates NINJ1 clustering within the plasma membrane. Our data in pyroptotic cells suggest that such an intermediate would reside between active GSDMD and NINJ1. In an indirect model, any of a plasma membrane-associated protein, membrane lipid, or cellular metabolic pathway could be the target. In addition, it remains unclear whether glycine\u2019s cytoprotective activity occurs on the intracellular or extracellular side of the plasma membrane. To the best of our knowledge, there is no direct evidence to suggest whether glycine\u2019s cytoprotective effect is specifically mediated from the intracellular or extracellular side. Both extracellular (Weinberg et al., 2016) and intracellular (R\u00fchl and Broz, 2022) sites of action have been proposed. Our in vitro data suggest that glycine is not acting directly on the N-terminal \u03b1-helix, which is thought to be extracellular; however, we do not otherwise delineate the topology of glycine\u2019s mechanism of action.\n\nDefining the site of action would provide insight into the molecular mechanism by which glycine inhibits NINJ1 clustering in the plasma membrane and ultimately help determine whether glycine directly or indirectly engages NINJ1. Indeed, how NINJ1 is activated by lytic cell death pathways, its clustering trigger, and method of plasma membrane disruption also remain important and outstanding questions in the field. Due to the ubiquity of lytic cell death pathways in human health and disease and the potency of glycine cytoprotection, answers to these questions will greatly advance the development of therapeutics against pathologic conditions associated with aberrant lytic cell death pathways.\n\n## Materials and methods\n\n### Cells\n\nPrimary BMDMs were harvested from the femurs and tibia of wildtype mixed-sex cohorts of C57Bl/6 mice. The ends of cleaned bones were cut and centrifuged to collect bone marrow into sterile PBS. The cell suspension was washed with PBS and plated in DMEM with 10 ng/mL M-CSF (315-02; Peprotech Inc, Cranbury, NJ, USA). Following 5 days of culture, the BMDM were detached from the dishes with TBS with 5 mM EDTA, resuspended in fresh DMEM, and plated. ASC-expressing RAW264.7 mouse macrophages (RAW-ASC; raw-asc, InvivoGen, San Diego, CA, USA) are engineered to stably express murine ASC, which is absent in the parental RAW 264.7 macrophage cell line (Pelegrin et al., 2008) and therefore are able to undergo pyroptosis. iBMDM expressing Cas9 was obtained from Dr Jonathan Kagan (Boston Children\u2019s Hospital, Boston) and described previously (Evavold et al., 2018). Cell lines were authenticated and negative for mycoplasma contamination.\n\n#### Isolation and differentiation of human primary macrophages\n\nBuffy coats and pooled serum from healthy donors were provided by the blood bank at St. Olavs Hospital (Trondheim, Norway), after informed consent and with approval by the Regional Committee for Medical and Health Research Ethics (No. 2009/2245). Peripheral blood mononuclear cells were isolated by density gradient using Lymphoprep (Axis-Shield Diagnostics, StemCell Technologies, Cologne, Germany) according to the manufacturer\u2019s instructions. Monocytes were selected by \u03b1-CD14 bead isolation (Miltenyi Biotech, Lund, Sweden) and seeded in RPMI 1640 supplemented with 10% serum and 10 recombinant macrophage colony-stimulating factor (M-CSF; R&D Systems, Minneapolis, MN, USA) for 3 days. At day 3, the medium was replaced with RPMI 1640 without M-CSF, and siRNA treatment was initiated.\n\n#### iPSDMs culture and production\n\niPSCs were obtained from European Bank for induced pluripotent Stem Cells (EBiSC, https://ebisc.org/about/bank), distributed by the European Cell Culture Collection of Public Health England (Department of Health, United Kingdom). iPSCs were maintained in Vitronectin XF (StemCell Technologies) coated plates with mTeSR Plus medium (StemCell Technologies). Cells were passaged with ReLeSR (StemCell Technologies) and plated in media containing 10 \u03bcM Rho-kinase inhibitor Y-27632 (StemCell Technologies). Embryonic body (EB) formation and myeloid differentiation are based on and adapted from a previously reported protocol (van Wilgenburg et al., 2013). Briefly, iPSCs were washed with PBS before Versene (Gibco-Thermo Fisher, Waltham, MA, USA) was added and cells incubated at 37\u00b0C for 5 min to generate a single cell suspension of iPSCs. Cells were counted, washed with PBS, and resuspended to a final concentration of 10,000 cells/50 \u03bcL in EB media: mTeSR Plus medium (StemCell Technologies), 50 ng/mL BMP-4 (R&D Systems, 315 BP-010), 20 ng/mL SCF (R&D Systems, 255-SC-050), and 50 ng/mL VEGF (R&D Systems, 293-VE-050). Cell suspension, supplemented with 10 \u03bcM Y-27632, was added into a 384-well Spheroid Microplate (Corning. #3830), 50 \u00b5L/well. The microplate was centrifuged at 1000 RPM for 3 min, and incubated at 37\u00b0C, 5% CO2 for 4 days. EBs were fed at day 2 by adding 50 \u03bcL of fresh EB medium. After 4 days, EBs were harvested and seeded into a gelatin coated T175 flask in X-VIVO-15 (Lonza) media, supplemented with 100 ng/mL M-CSF (Preprotech, 300\u201325), 25 ng/mL IL-3 (Preprotech, 200\u201303), 2 mM glutamax (Gibco-Thermo Fisher), and 0.055 mM \u03b2-mercaptoethanol (Gibco-Thermo Fisher). Media was changed every week, and EB-culture was renewed after 4 months. Monocytes produced were routinely checked with regards to phenotype using a defined flow cytometry panel of expected surface markers. Monocytes were harvested once a week and differentiated into macrophages in RPMI 1640 with 10% fetal calf serum and 100 ng/mL M-CSF for 5\u20137 days.\n\n### NINJ1 knock-out cell line generation and siRNA silencing of NINJ1\n\nRAW-ASC and iBMDM cells were transfected with custom CRISPR gRNA plasmid DNA (U6-gRNA:CMV-Cas-9\u20132 A-tGFP; Sigma-Aldrich, Oakville, Canada) using FuGENE HD transfection reagent (Promega, Madison, WI, USA). The Ninj1 target region sequence was GCCAACAAGAAGAGCGCTG. 24 hr later, the cells were FACS sorted for GFP into 96 well plates. Individual colonies were expanded and tested for NINJ1 expression by western blot. NINJ1 knockdown in hMDMs was performed by siRNA using Lipofectamine RNAiMAX (Invitrogen, Waltham, MA, USA) according to the manufacturer\u2019s instructions. Cells were transfected with 20 nM pooled siRNA against NINJ1 (Thermo Scientific, HSS107188, HSS107190, HSS181529) or non-silencing control siRNA (Qiagen, Hilden, Germany, 1027310). hMDMs were siRNA-treated two times (day 3 and day 5) before medium was changed to RPMI with 1% serum (day 6), and cells were allowed to rest overnight prior to stimulation. Knockdown of NINJ1 was confirmed by western blotting.\n\n### Generation of N-terminal HA-NINJ1 construct and cellular expression\n\nPCR reactions were performed using ConeAmp HiFi master mix (Takara). Primers for mouse Ninj1 (insert) PCR reaction were: forward primer 5\u2019gat tac gct gag tcg ggc act gag ga3\u2019 and reverse primer 5\u2019ctc ggt acc cta ctg ccg ggg cgc ca3\u2019. Template DNA for the PCR reaction was mouse Ninj1 cDNA clone from Origene (Cat. No. MR225037). The template vector pcDNA3.1-HA was obtained from Addgene. Primers for pcDNA3.1-HA PCR (vector) reaction were: forward primer 5\u2019cgg cag tag ggt acc gag ctc gga3\u2019 and reverse primer 5\u2019gcc cga ctc agc gta atc tgg aac atc3\u2019. PCR reaction products were cleaned up using the NucleoSpin PCR Clean-up kit (Macherey-Nagel). The PCR products contained 18 bp overlapping regions between the pcDNA3.1-HA tag vector and the mouse NINJ1 insert. This allows for fusion of the insert and vector using the In-Fusion Snap Assembly EcoDry Cloning Kit (Takara, 638954) and transformation into Stellar competent bacterial cells (Takara). DNA sequencing with CMV-F primer confirmed Ninj1 insertion into the pcDNA3.1-HA vector and that NINJ1 was in-frame with the N-terminal HA-tag. HeLa cells (ATCC #CCL-2) were transfected with pcDNA 3.1HA-NINJ1 using Fugene HD transfection reagent (Promega) according to the manufacturer\u2019s protocol.\n\n### Inducible iBMDM-doxy-moNINJ1 system\n\niBMDMs with doxycycline-inducible expression of the N-terminal fragment of GSDMD fused to BFP are published (Evavold et al., 2021). We used the same stock of iBMDMs from Cas9-expressing mice in which the TET3G transactivator protein had introduced previously (Evavold et al., 2021) to generate cell lines with dox-inducible expression of NINJ1 carrying an N-terminal FLAG-tag. cDNA encoding full-length murine NINJ1 was ordered as a gBlock from Integrated DNA Techologies. This sequence was amplified by PCR to append an N-terminal FLAG-tag and cloned into pRETROX-TRE3G (TakaraBio) using BamHI and NotI restriction sites and into pMSCV IRES EGFP using NotI and SalI restriction sites. To introduce dox-inducible FLAG-NINJ1, 2.5\u00d7106 Platinum-GP retrovirus packaging cells were seeded in a TC-treated 10 cm dish. On the next day, cells were transfected with 3 \u03bcg pCMV-VSV-G and 9 \u03bcg pRETROX-TRE3G encoding FLAG-NINJ1 using Lipofectamine 2000. After 18 hr, media was exchanged to 6 mL of fresh complete DMEM. The same day, 0.5\u00d7106 Cas9- and TET3G-expressing iBMDMs were seeded per well of 6-well plate. The next day, retroviral supernatant was harvested and filtered through 0.45 \u03bcm syringe filter, supplemented with polybrene (1:2000; EMD Millipore), and spun onto cells (1250 g, 30\u00b0C, 1 hr). 6 mL of fresh cDMEM were added to retrovirus packaging cells, and spinfection was repeated the next day. 3 days after the second transduction, transduced cells were selected by growth in complete DMEM including 1.5 mg/mL G-418 and 10 \u03bcg/mL puromycin. To ensure maximal transgene expression, which correlates with the ability of FLAG-NINJ1 to induce cell death and lysis, FLAG-NINJ1 was also stably overexpressed in these cells using retroviral transduction with an MSCV(murine stem cell virus) retrovirus. Retrovirus production and spinfections were performed as described above, only using pMSCV IRES EGFP-FLAG-NINJ1 instead of pRETROX-TRE3G construct. Cells were then sorted on a BD Melody cell sorter for maximal EGFP expression (top 5\u201310%). Clonal cell lines were derived by limited serial dilution.\n\n1\u00d7105 cells per well in a black 96-well plate in DMEM (Gibco)/10% FBS(fetal bovine serum) (R&D, S11550) were induced with 2 \u00b5g/mL doxycycline (Sigma-Aldrich) in the presence or absence of increasing concentrations of glycine (Sigma-Aldrich 67126) in a total volume of 200 \u03bcL for 8 hr (iBMDM GSDMD-NT) or 12 hr (iBMDM FLAG-NINJ1) before supernatants were harvested for LDH-assay (Invitrogen) and cells detached (PBS/4 mM EDTA) for flow cytometry (Becton Dickinson Fortessa). iBMDM GSDMD-NT express BFP and were analyzed directly; iBMDM NINJ1 were stained with anti-FLAG APC antibody (1:100, Abcam Ab 72569; RRID: AB_1310127) in PBS/2% FBS, 2.5 mM EDTA on ice and washed once before analysis.\n\n### Pyroptosis, apoptosis, necrosis, and necroptosis induction\n\nPyroptosis was activated in BMDM primed with (0.5 \u00b5g/mL) LPS from Escherichia coli serotype 055:B5, which was first reconstituted at a stock concentration of 1 mg/mL. In primary BMDM, after 4.5 hr of LPS priming, pyroptosis was induced with 20 \u00b5M nigericin (Sigma N7143; stock 10 mM in ethanol) for 30 min. iBMDM were primed with LPS for 3 hr, followed by pyroptosis induction with 10 \u00b5M nigericin for 2 hr. Apoptosis was induced in non-primed macrophages using the Bcl-2 inhibitor venetoclax (ABT-199; Tocris, Bristol, United Kingdom; 6960) at 25 \u00b5M for 16 hr. Necrosis was induced by treating non-primed macrophages with pneumolysin (0.5 \u03bcg/mL) for 15 min in iBMDM or 45 min in primary BMDM. Pneumolysin was obtained from Dr John Brumell (Hospital for Sick Children, Toronto). In hMDMs, pyroptosis was induced by priming with 1 \u03bcg/mL LPS from E. coli serotype 0111:B4 for 2 hr, followed by stimulation with 20.7 \u03bcM nigericin (Invivogen tlrl-nig; stock 5 mg/mL in ethanol) for 2 hr and 15 min. Necroptosis was induced by treating cells with pan-caspase inhibitor zVAD (25 uM, Invivogen, tlrl-vad) and SMAC mimetic BV6 (10 uM, Invivogen, inh-bv6) for 30 min, before stimulation with recombinant human TNF-\u03b1 (10 ng/mL, Peprotech, 300\u201301 A) for 4 hr. iPSDMs were stimulated with 200 ng/mL LPS for 3 hr and 20.7 \u03bcM nigericin for 1\u20131.5 hr.\n\nWhere indicated, mouse cells were treated with 5 mM glycine (Sigma, G7126) at the time of cell death induction. Human cells were pretreated with glycine (Millipore, Burlington, MA, USA; 104201) at a concentration of 50 mM for at least 10 min before stimuli was added.\n\n### LDH assay\n\nBMDM were seeded at 200,000 cells per well in 12-well plates, treated as indicated, and cytotoxicity assayed by LDH release assay the following day. At the end of the incubations, cell culture supernatants were collected, cleared of debris by centrifugation for 5 min at 500\u00d7 g. The cells were washed once with PBS then lysed in lysis buffer provided in the LDH assay kit (Invitrogen C20300). Supernatants and lysates were assayed for LDH using an LDH colorimetric assay kit as per the manufacturer\u2019s instructions (Invitrogen C20300). hMDMs were seeded at 500,000 cells per well in 12-well plates and differentiated as described above. iPSDMs were seeded at 180,000\u2013450,000 cells per well in 12-well plates and differentiated as described above. After cells were stimulated as described in figure legends, supernatants were harvested, and LDH release was assayed (Invitrogen C20301). Briefly, equal amounts of supernatant and reaction mixture were mixed and incubated for 30 min, followed by absorbance reads at 490 and 680 nm. To calculate the LDH release, the 680 nm background was subtracted from the 490 nm absorbance reads before further processing.\n\n### Western blot cleavage GSDMD, caspase-1, and IL-1\u03b2\n\niBMDMs were seeded at 106 cells per well in 12-well plates overnight, primed with 1 \u03bcg/mL E. coli LPS (Enzo; Serotype O111:B4) for 4 hr, or left unprimed before stimulation with 20 \u03bcM of nigericin (Invivogen) in 500 \u03bcL Opti-MEM (Gibco) with no serum. After 2 hr, 50 \u03bcL of supernatant was collected for analysis by ELISA. 125 \u03bcL of concentrated 5\u00d7 SDS loading buffer with reducing agent TCEP(tris(2-carboxyethyl)phosphine) was added to each well to stop the reaction. This treatment ensured the capture of proteins in both the supernatant and the cell lysates for western blot analysis. Proteins were separated by SDS-PAGE and detected by western blot using primary antibodies against GSDMD (Abcam ab209845; RRID: #AB_2783550), Caspase-1 (Adipogen AG-20B-0042-C100; RRID: #AB_2755041), pro-IL-1\u03b2 (Genetex GTX74034; RRID: #AB_378141), and actin (Sigma A5441; RRID: #AB_476744).\n\n### Mitochondrial membrane potential and cellular ATP measurements\n\nhMDMs were differentiated at 30,000 cells per well in glass-bottom 96-well plates (Cellvis, P96-1.5H-N). Parallel plates were prepared for live-cell imaging and LDH + CellTiter Glo analysis. hMDMs were either left untreated or pre-treated with glycine (50 mM) and primed with 1 \u03bcg/mL LPS (E. coli serotype 0111:B4) in RPMI complemented with 1% fetal calf serum for 3 hr before stimulation with 20.7 \u03bcM of nigericin (Invivogen). Tetramethylrhodamine ethyl ester perchlorate (TMRE, 200 or 10 nM, Sigma-Aldrich) was added to cells before the plates were placed in a heated incubator (37\u00b0C, 5% CO2), and images were taken every 30 min over 18 or 22 hr (two independent experiments). In the second experiment, at the end of LPS priming, cells were labeled with CellTracker Deep Red (0.5 \u03bcM Invitrogen) for 15 min and washed before addition of fresh medium with TMRE (10 nM) with or without LPS, nigericin, and glycine. In parallel plates treated identically, supernatants were harvested and assayed for LDH, and cellular ATP was measured using CellTiterGlo (Promega) at 0, 2, 6, and 18/22 hr.\n\n### Fluorescence microscopy\n\nMouse macrophages were cultured on 18 mm glass coverslips in 12-well plates at 150,000 cells per well. Cells were treated as indicated in the figure legends, washed with PBS, fixed in 4% paraformaldehyde (PFA) in PBS at room temperature for 15 min, and permeabilized with 0.1% Tween-20. Cells were then blocked in PBS supplemented with 10% donkey serum and 0.1% Tween-20 for 1 hr at room temperature prior to overnight incubation with primary antibody at 4\u00b0C. Rabbit monoclonal anti-mouse NINJ1 was used at 10 \u03bcg/mL. Next, cells were washed three times with PBS supplemented with 10% donkey serum prior to the addition of secondary antibody at room temperature for 1 hr. In validation studies of the rabbit anti-mouse NINJ1 monoclonal antibody, cells were stained with and without the primary antibody prior to application of the secondary antibody. Nuclei were labeled using DAPI containing mounting medium (ProLong Diamond Antifade Mountant, Invitrogen P36961). For total internal reflection microscopy, cells were co-stained with recombinant Cholera toxin subunit B conjugated to Fluor488 (Invitrogen C34775) at 1 \u03bcg/mL for less than 1 min prior to fixing and staining for NINJ1 as described above. The Cholera toxin subunit B served as a membrane marker to optimize plasma membrane visualization. TIRF imaging of mouse macrophages was conducted on a Zeiss Axio Observer Z1 microscope with a 100\u00d7 objective and Andor iXon3 885 detector. For STED microscopy, primary mouse macrophages were cultured on 1.5 H 18 mm glass coverslips (Marienfeld) in 12-well plates at 150,000 cells per well. After treatments as indicated in the figure legend, cells were washed with PBS, then fixed in 4% PFA in PBS for 10\u201315 min at room temperature. Following fixation, cells were washed, then permeabilized in 0.1% Tween-20. Cells were blocked in in PBS supplemented with 10% donkey serum and 0.1% Tween-20 for 1 hr at room temperature, followed by primary antibody incubation in blocking solution overnight at 4\u00b0C. Rabbit monoclonal anti-mouse NINJ1 was used at 10 \u00b5g/mL. The next day, cells were incubated with Cy3-conjugated secondary antibody (diluted 1:100) in 1% serum in PBST for 1 hr at room temperature. After final washes, coverslips were mounted onto glass slides using ProLong Diamond Antifade Mountant (Invitrogen, P36965). STED microscopy was performed using a Leica TCS SP8 STED 3\u00d7 microscope using HyD detectors and a 100\u00d7/1.4 oil objective. Samples labeled with Cy3-conjugated secondary antibody were excited using a white light laser at 554 nm. Emissions were time-gated 1.30\u20136.00 ns. A 1.5 W depletion laser at 660 nm was used at 70% maximal power. Images were acquired and deconvolved using Leica LAS X software with Lightning Deconvolution with an xy pixel size of 12.62 nm. For all fluorescence microscopy in mouse macrophages, rabbit monoclonal anti-mouse NINJ1 was obtained from Drs Nobuhiko Kayagaki and Vishva Dixit (Genentech Inc, San Francisco, CA, USA). Where indicated, images of live cell morphology were captured using the epifluorescence mode and with FM 4\u201364 (Invitrogen, T3166) added right before imaging.\n\nHuman primary macrophages were differentiated at 30,000 cells per well in glass-bottom 96-well plates (Cellvis, P96-1.5H-N). After stimuli, the cells were washed with PBS and thereafter stained with Cholera toxin subunit B Alexa Fluor 488 conjugate at 1 \u03bcg/mL in PBS for less than 1 min. Cells were then fixed in 4% PFA in PBS at room temperature for 15 min, followed by washing three times with PBS. We permeabilized the cells with PBS containing 0.01% saponin for 10 min at room temperature and thereafter blocked with PBS/0.01% saponin/20% pooled human serum for 3 hr. Cells were either left unstained or incubated with anti-human NINJ1 antibody (mouse IgG2b, R&D Systems, MAB5105, RRID: AB_11128852) or a control Ab (mouse IgG2a, Serotec, MCA929F; RRID: AB_322271) at 10 \u03bcg/mL in PBS/0,01% saponin/1% pooled human serum at 4\u00b0C for 41 hr and then washed three times with PBS/0.01% saponin/1% pooled human serum. Following this, we incubated the cells with far-red fluorescent rabbit anti-mouse antibody (Invitrogen, A27029, RRID: AB_2536092) at 2 \u03bcg/mL in PBS/0.01% saponin/1% pooled human serum at room temperature for 1 hr. Cells were washed three times with PBS/0.01% saponin/1% pooled human serum and thereafter three times with PBS before imaging. TIRF imaging of human macrophages was done on a Zeiss TIRF 3 microscope with a 63\u00d7 objective and a Hamamatsu ORCA Fusion sCMOS detector. Images of morphology in live cells were captured using the epifluorescence mode and with FM 1\u201343 (Invitrogen, T3163) added at 5 \u03bcg/mL right before imaging.\n\nFor TMRE experiments, human macrophages were imaged using a Zeiss TIRF III (Carl Zeiss GmbH, Jena) equipped with an alpha Plan-Apochromat 100\u00d7/1.46 oil-immersion objective and a Hamamatsu ORCA-Fusion (C14440-20UP) CMOS camera. A Plan-Apochromat 10\u00d7/0.45 air objective was used for the time series experiments. TMRE was excited by a Colibri.2 470 nm LED, and the emission was detected between 510\u2013542 nm. CellTracker Deep Red was excited by a 638 nm diode laser, and the emission was detected between 665 and 711 nm. Image processing was done in FIJI (Schindelin et al., 2012). Automatic counting of TMRE-positive cells was done in CellProfiler v.4.2.4 (Stirling et al., 2021) by using the IdentifyPrimaryObjects module with either Maximum Cross-Entropy adaptive thresholding or Otsu thresholding, and settings were optimized for each dataset to enhance accuracy.\n\n### Native and SDS-PAGE of NINJ1\n\nMouse macrophages were lysed with native-PAGE lysis buffer (150 mM NaCl, 1% Digitonin, 50 mM Tris pH7.5, and 1\u00d7 Complete Protease Inhibitor). Following centrifugation at 20,800\u00d7 g for 30 min, lysates were mixed with 4\u00d7 NativePAGE sample buffer and Coomassie G-250 (ThermoFisher) and resolved using NativePAGE 3\u201312% gels. For SDS-PAGE, cells were washed with 1\u00d7 PBS and lysed in RIPA lysis buffer containing protease inhibitors (Protease inhibitor tablet, Pierce A32955). Proteins were resolved using NuPAGE 4\u201312% Bis-Tris gels (Invitrogen), transferred to PVDF(polyvinylidene difluoride) membranes, and immunoblotted. For HA-NINJ1 overexpression experiments, rabbit monoclonal anti-HA (Cell Signaling Technology, Inc, Danvers, MA, USA; #3724; RRID: AB_1549585) was used. GAPDH (Santa Cruz Biotechnology, Dallas, TX, USA; sc-25778; RRID: AB_10167668 1:1000) was used for a loading control.\n\nhMDMs and iPSDMs were lysed with 1\u00d7 NativePAGE Sample Buffer containing 1% Digitonin. After centrifugation at 21,000\u00d7 g for 30 min, protein concentration of lysates was measured using Pierce BCA Protein Assay Kit (ThermoFisher) to ensure equal loading of proteins. For Native-PAGE on hMDMs, lysates were mixed with Novex Tris-Glycine Native Sample Buffer (Invitrogen) and resolved using Novex 4\u201312% Tris-Glycine gels (Invitrogen). For Native-PAGE on human iPSDMs, lysates were mixed with Coomassie G-250 (ThermoFisher) and resolved using NativePAGE 3\u201312% Bis-Tris gels (Invitrogen). For SDS-PAGE, lysates were mixed with DTT(dithiothreitol) and NuPAGE LDS sample buffer (Invitrogen), denatured for 5 min at 95 \u00b0C, and resolved using NuPAGE 4\u201312% Bis-Tris gels (Invitrogen). Proteins were transferred to PVDF membranes and immunoblotted. NINJ1 (R&D Systems, MAB5105, RRID: AB_11128852) was used to determine NINJ1 expression, while \u03b2-actin (Cell Signaling Technology, Danvers, MA, USA; Cat# 8457, RRID: AB_10950489) was used as loading control.\n\n### Cytokine measurements\n\nSupernatants from human iPSDMs and mouse iBMDM were assessed for IL-1\u03b2 (R&D Systems, DY201 or Invitrogen 88\u20137013, respectively) by ELISA according to the protocol of the manufacturer.\n\n### Large unilamellar vesicle rupture assay\n\nTo generate large unilamellar vesicles (LUVs), 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC, Avanti Polar Lipids) and 1,2-dioleoyl-sn-glycero-3-phospho-l-serine (sodium salt) (DOPS, Avanti Polar Lipids) were first prepared at 80% DOPC and 20% DOPS, freeze dried, and hydrated with a solution containing 25 mM 6-carboxyfluorescein. The suspension was bath sonicated, freeze-thawed, and extruded (Avanti Mini Extruder) using a Nucleopore 0.1 \u03bcm membrane (Whatman) to yield LUVs, which were washed three times in PBS to remove excess 6-carboxyfluorescein. At this concentration, the fluorescence of 6-carboxyflurescein self-quenches. With liposomal rupture, the 6-carboxyfluorescein is released into the bathing solution, thereby releasing the self-quenching with fluorescence monitored in a spectrofluorometer. The liposomal rupture assay was setup by mixing equal amounts of the prepared LUVs with 0.4 mg/mL human NINJ1 \u03b1-helix region peptide (HYASKKSAAESMLDIALLMANASQLKAVVE; GenScript Biotech Corporation) with either vehicle or glycine (50 mM) in PBS buffer. Where indicated, a sequence-scrambled analog peptide (IAAAAMKMYLANSLEHAKSLKVVLASQDS; GenScript Biotech Corporation) was used as a negative control for the human NINJ1 \u03b1-helix region peptide. Following 45 min, all liposomes were then ruptured by adding Triton X-100 and the maximum fluorescence (cargo release) recorded. The results were converted to percentage cargo release and background control subtracted. The lytic yeast peptide candidalysin (SIIGIIMGILGNIPQVIQIIMSIVKAFKGNK; Peptide Protein Research) was used as an additional positive control.\n\n### Circular dichroism\n\nThe secondary structure of the human NINJ1 \u03b1-helix region (amino acids 40\u201369; HYASKKSAAESMLDIALLMANASQLKAVVE; GenScript Biotech Corporation) was measured using a Jasco J-1500 spectropolarimeter. For this assay, peptide solutions from a 10 mg/mL stock in 5% DMSO in ddH2O were diluted to 0.2 mg/mL in buffer (20 mM sodium phosphate, pH 7.4, 10 mM NaCl, and 1% sodium dodecyl sulfate) with the final peptide concentration determined using a bicinchoninic acid (BCA) protein assay. NINJ1 helix peptide was titrated with glycine between 0 and 20 mM. 250 \u00b5L of the glycine titrated human NINJ1 helix peptide solutions were pipetted into 1 mm path length quartz CD cuvettes, capped, and placed in the Peltier temperature-controlled CD sample holder for analysis. A corresponding buffer blank spectrum was subtracted out from the sample datasets. In all conditions, spectra were recorded between 260 and 190 nm using 50 nm/min scanning speed, 0.5 nm data pitch, 1 s DIT, and 1 nm bandwidth. Between 3 and 20 accumulations were averaged. The CD studies were performed at the Structural and Biophysical Core Facility, The Hospital for Sick Children, Toronto, Canada.\n\n### Quantification and statistics\n\nTIRF and STED microscopy images of mouse macrophages were analyzed in Imaris (Oxford Instruments, Abingdon, United Kingdom) software. The Spot tool was used to identify NINJ1 puncta with parameters (estimated puncta XY diameter, region type, and quality filter) set using images from the LPS-primed group and applied to all samples across all experiments. Cells were contoured using the surfaces tool to measure cell area. The density of NINJ1 puncta was calculated on a per-cell basis by dividing the total number of puncta within the contoured plasma membrane area. TIRF microscopy images of human primary macrophages were analyzed in FIJI, applying thresholds (triangle algorithm) and using the analyze particles tool to segment cells in the Cholera toxin subunit B channel. The find maxima command was used to identify NINJ1 puncta within these cell outlines, and the measurement tool was used to measure the area of the cell outlines. The density of NINJ1 puncta was calculated on a per-cell basis by dividing the number of puncta within a cell outline with its area.\n\nStatistical testing was calculated using Prism 8.3.1 or 9.0 (GraphPad Software Inc, La Jolla, CA, USA). Experiments with more than two groups were tested using ANOVA with Tukey\u2019s multiple comparison test. Unless otherwise indicated, presented data are representative of at least three independent experiments or donors and are provided as mean \u00b1 SEM. All collected data was analyzed. Unless otherwise specified, for non-quantitative data, such as western blots, experiments were replicated three times with representative images shown in the figures.\n\n### Animal and human studies\n\nAll animal studies were approved by the Hospital for Sick Children Animal Care Committee (AUP #47781). All human studies were conducted according to the principles expressed in the Helsinki Declaration and approved by the Regional Committee for Medical and Health Research Ethics (No. 2009/2245). Informed consent was obtained from all subjects prior to sample collection.\n",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "146071b8-96b5-4bb9-b7b6-cf2dc650bea6",
+      "submission_id": "0a5ceac6-87cf-4cb1-9b08-304186fdbeff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carla V Rothlin, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78609.sa0](https://doi.org/10.7554/eLife.78609.sa0)\n\nIt's been widely known that the amino acid Glycine can work as a cytoprotectant and inhibit cell death-associated plasma membrane rupture. However, a long-standing question has been: how does Glycine cytoprotection work? In this manuscript, the authors demonstrate that Glycine treatment inhibits the clustering of NINJ1 to preserve membrane integrity, which provides a significant advance in the cell death field.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Carla V Rothlin, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78609.sa1](https://doi.org/10.7554/eLife.78609.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Glycine targets NINJ1-mediated plasma membrane rupture to provide cytoprotection\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Nancy Carrasco as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers appreciate the importance of the topic. However, they all raise significant concerns with regards to the lack of mechanistic understanding provided on how Glycine inhibition of NINJ1-mediated plasma membrane rupture? This is of great significance and should be explored.\n\n1 \u2013 Is there a direct interaction between Glycine and NINJ1?\n\n2 \u2013 Can the authors provide evidence on the mechanism/s by which Glycine prevents NINJ1 oligomerization?\n\nPlease make note of the specific comments from the reviewers below.\n\nReviewer #1 (Recommendations for the authors):\n\nWhat is the mechanism of Glycine inhibition of NINJ1-mediated plasma membrane rupture? Is the mechanism direct or indirect? To increase the impact of the work, the authors would have to show the direct binding of Glycine to NINJ1 and provide biochemical/ structural insights into how Glycine inhibits NINJ1. Direct binding can be measured by SPR analysis using full or partial length NINJ1 protein. Other amino acids that were previously shown to be cytoprotective (i.e. Serine) should be included in this SPR study as well. If inhibition by Glycine is actually indirect, further exploration of this mechanism would need to be provided.\n\nReviewer #2 (Recommendations for the authors):\n\nAlthough the authors show that glycine inhibits the formation of large NINJ1 oligomers in cells, their study does not show any direct interaction of glycine with NINJ1 or shed light on the mechanism of NINJ1-mediated cell rupture.\n\n(1) The authors initiated this study by assessing the functional and morphological similarities between NINJ1 knockout and glycine treatment during different types of cell death in both human and murine cells. This requires careful kinetics and concentration-dependent experiments, which this paper falls short of. Besides, the staining patterns with plasma membrane dye exhibited obvious differences between NINJ1 knockout and glycine treatment, although the cells in both conditions showed intact plasma membrane (Figure 1E).\n\n(2) Although NINJ1 has been identified as the key mediator of plasma membrane rupture by forming oligomers on the cell membrane, it remains unknown how NINJ1 is activated and executes its membrane-rupturing function. The authors found glycine treatment blocks NINJ1 oligomerization, which indicates glycine inhibits the activation of NINJ1 during cell death. Thus, besides NINJ1 itself, upstream regulators or co-factors of NINJ1 may be targeted and inactivated upon glycine treatment. Dissecting how NINJ1 inhibition occurs in the presence of glycine would further substantiate the authors' hypothesis proposed in this study, and meanwhile may also delineate the mechanism of how NINJ1 is activated in response to cell death signals.\n\n(3) Biophysical methods to demonstrate a direct in vitro interaction of NINJ1 with glycine, modification of NINJ1 by glycine, or effectiveness of glycine in minimizing leakage of liposomes containing NINJ1 would greatly add to the story and determine whether glycine's effect requires other molecules.\n\n(4) The imaging used in the manuscript is not state-of-the-art and does not take advantage of higher resolution methods available that could be used to visualize NINj1 clustering on pyroptotic balloons and examine how it is altered by glycine.\n\n(5) The native gels seem to indicate 2 NINJ1 bands in control cells that are not dying \u2013 the ~40 kD band mentioned a higher band (~200 KD) that might correspond to higher order multimers observed in the control cells.\n\n(6) It would be useful to use necroptotic cells throughout as a negative control for glycine effects.\n\nReviewer #3 (Recommendations for the authors):\n\nWhile the work in this manuscript may suggest a possible link between the cytoprotective function of glycine and NINJ1, in its current form the manuscript is largely correlative and does not provide definitive evidence to support the conclusion being made. Substantial experimentation is necessary to demonstrate the direct link between glycine treatment and the prevention of Ninj1 oligomerization.\n\n1. Figure 1E \u2013 why are cellular contents nearly completely gone in the NINJ1 knockout cells treated with glycine? I would think that the NINJ1-knockout would have no phenotype in response to glycine treatment, as they both presumably go through the same pathway (ie the presence and absence of glycine in knockout cells should not matter for the morphology of the cells). Can the authors clarify this? The authors claim that the morphology of cells treated with glycine and cells genetically deficient in Ninj1 is the same but it does not seem that this is the case.\n\n2. The use of microscopy, particularly TIRF, to investigate NINJ1 surface dynamics and oligomerization is nice. However, the microscopy in figures 1E, and 2B needs further quantification, as it is quite difficult to determine similarities or differences between panels. Quantification of the microscopy images would be important to allow this. In 2B in particular we see one panel and one close-up inset that basically shows a single cell for each condition, and no untreated condition is shown. This is not sufficient data to make a conclusion about the distribution of NINJ1 under these conditions.\n\n3. What is the evidence that the cells remain viable with the morphology seen in Figure 1E in the presence of glycine or NINJ1 deficiency? Are the cells capable of carrying out biological functions in this state, or are the cells no longer metabolically active, but retain some level of membrane integrity and retain their cellular contents (like LDH and HMGB1)?\n\n4. Prior studies demonstrate that NINJ1 does not contribute to cell lysis during necroptosis. Glycine is likewise not reported to play a role in protective responses after necroptosis. It is therefore surprising that this manuscript finds a role for NINJ1 and glycine in cytoprotection in the setting of necroptosis. This should be clarified and further investigated to account for the possible discrepancy if the authors wish to include necroptosis studies here.\n\n5. The authors report that glycine limits NINJ1 oligomerization. What is the effect of glycine on GSDMD cleavage and oligomerization? In the absence of this data, it is not possible to definitively conclude that the effect of glycine is only on NINJ1.\n\n6. The microscopy describing NINJ1 distribution in the presence of glycine is difficult to parse \u2013 it is unclear why the reduction in the number of NINJ1 puncta should be indicative of NINJ1 oligomerization. Again, images in Figure 3B need to be quantified, and it should also be made clear how the assay being quantified is linked to NINJ1 function. The authors quantify the density of puncta. It seems to me that the diameter or volume of the individual puncta should be increased as a relative indicator of aggregation. Is this possible to quantify? A control cell surface protein that would not be expected to behave this way under these conditions is critical in these experiments. In the absence of such a control it is not possible to conclude that the effect of LPS+nigericin on NINJ1 is specific, nor is it possible to conclude the effect of glycine on NINJ1 oligomerization is specific. In general negative controls for the specificity of glycine for NINJ1 in these assays is important to include in order to strengthen the conclusions being made here.\n\n7. The authors are using the effect of glycine on NINJ1 to make the conclusion that the cytoprotective effect of glycine is mediated by interference with NINJ1 oligomerization. However, in their current form, the data are largely correlative. Definitive data to support this conclusion require demonstrating that forced oligomerization of NINJ1 in the presence of glycine restores the release of LDH and other cellular contents or a similar type of experiment that can definitively demonstrate that glycine limits cell lysis by directly regulating NINJ1 oligomerization.\n\n8. It would be important to demonstrate in the authors' hands under the same conditions described here, what are the effect of glycine treatment on other parts of the pyroptosis pathway \u2013 casp1 cleavage, gsdmd processing and cleavage, pro-IL-1b levels, and IL-1b secretion.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Glycine targets NINJ1-mediated plasma membrane rupture to provide cytoprotection\" for further consideration by eLife. Your revised article has been evaluated by Carla Rothlin (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been significantly improved but there are some remaining issues that need to be addressed before publication, as outlined below:\n\nPlease take note of the specific recommendations of Reviewers 1 and 2 below to revise your manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\nThe submitted manuscript reveals that the amino acid, glycine, a known inhibitor of pyroptosis-related plasma membrane rupture, can block NINJ1-dependent plasma membrane rupture, either through direct or indirect mechanisms, perhaps at the level of NINJ1 clustering.\n\nThis manuscript confirms that glycine, a known weak inhibitor of pyroptosis-related cellular plasma membrane rupture (IC50 1.6-1.8\u2009mM, PMID: 30975978), can inhibit NINJ1 clustering and consequent plasma membrane rupture.\n\nNew Supplement 3 data confirms that glycine does not inhibit pyroptosis (GSDMD-dependent cell death), which is consistent with previous observations in Ninj1-deficient cells (PMID: 33472215).\n\nThe mechanism of action for glycine inhibition, however, remains unclear from this manuscript; yet it is likely to be an indirect mechanism, as suggested from previous reports showing inhibitory activity of other amino acids (including alanine and serine (PMID: 30975978)).\n\nSpecific feedback\n\nThe authors made a herculean effort to revise the manuscript and diligently responded to reviewers\u2019 feedback with new data. However, the mechanism of action through which glycine inhibits plasma membrane rupture is still not clear. Glycine inhibition could be mediated directly or indirectly through NINJ1.\n\nI could recommend the publication if the authors revise the following points.\n\n1. In the abstract, add the following or similar sentences.\n\nGlycine prevents NINJ1 clustering either directly or indirectly.\n\nGlycine does not prevent pyroptosis.\n\n2. In the revised manuscript, include the alanine amino acid data (which is currently only used for rebuttal) and discuss the possible indirect mechanisms of action by glycine.\n\n\"its small size should generally allow free passage through the large membrane conduits involved in lytic cell death pathways, such as the gasdermin D pores formed during pyroptosis that are known to allow transport of small proteins and ions across lipid bilayers.\"\n\nDoes glycine need to be inside cells to block cell lysis? What is the evidence? This should be discussed with a citation. Amino acid transporter or another mechanism may contribute to the glycine intake.\n\nReviewer #2 (Recommendations for the authors):\n\nThe resubmission has addressed the reviewers' concerns and greatly improved the quality of the manuscript. Although the authors still have not identified the molecular basis of glycine inhibition of cell membrane bursting, they have now clearly shown that glycine only acts at the final step of Ninj1 clustering and membrane disruption, independently of the upstream steps of inflammasome activation and gasdermin pore formation.\n\nHowever, their conclusion that Ninj1 is the target of glycine is not warranted by their data. In particular (1) their failed attempts to show a physical association of glycine with Ninj1 and (2) the lack of inhibition of Ninj1-mediated liposome leakage, but inhibition of Ninj1-mediated cell membrane rupture in cells, strongly argue that something else in the cellular membrane or associated with it (but not in the liposomes) is affected by glycine that then affects Ninj1 clustering.\n\nIt seems highly likely that identifying the target and mechanism behind glycine inhibition will be a very risky project with no easy solution. Therefore the experiments in this paper have gone about as far as they can and provide some very useful and well-controlled data for tackling this difficult project. I, therefore, think that the manuscript is suitable for publication with the current data. However, I feel strongly that the paper needs to be revised to\n\n(1) discuss all the experimental methods that didn't show a physical association of glycine with Ninj1 (I don't think the negative data needs to be shown).\n\n(2) remove the statements in the abstract and discussion that \"Ninj1 is the target of glycine\".\n\n(3) emphasize that glycine does not inhibit lysosomal membrane perturbing properties of Ninj1 which suggests that a cellular Ninj1- and plasma membrane-associated molecule is likely the target of glycine.\n\n(4) discuss any ideas about how glycine could be working (if you have them) and discuss what approaches could be used to identify the glycine target.\n\nA more precise title would be a good idea (such as \"Glycine inhibits NINJ1 membrane clustering to suppress plasma membrane rupture in cell death\").\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have thoroughly and comprehensively addressed the comments, and the conclusions of the manuscript is significantly strengthened. The revised manuscript provides new insight into how glycine limits cell lysis and extends our understanding of the mechanisms of NINJ1-mediated cellular rupture. I have no further concerns or comments.\n",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e71faa67-3909-4fec-b708-90a35b385b10",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C1",
+      "claim": "Glycine protects cells against rupture from diverse types of injury, a phenomenon first recognized more than 30 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "First recognized more than 30 years ago, glycine protects cells against rupture from diverse types of injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weinberg et al., 1987 in the Introduction section",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "368e5efc-50dc-46fb-968d-afc07abb4c9f",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C2",
+      "claim": "Glycine cytoprotection was first described in 1987 where glycine was found to protect renal tubular cells against hypoxic injury.",
+      "claim_type": "EXPLICIT",
+      "source": "This cytoprotective effect was first described in 1987, where glycine was found to protect renal tubular cells against hypoxic injury (Weinberg et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weinberg et al., 1987",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "32b95a28-9d22-4f5f-9539-3ca1f699a084",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C3",
+      "claim": "Similar glycine cytoprotective observations have been replicated across immune, parenchymal, endothelial, and neuronal cell types in multiple injury models.",
+      "claim_type": "EXPLICIT",
+      "source": "Since, similar observations have been replicated across immune, parenchymal, endothelial, and neuronal cell types in multiple injury models (reviewed in Weinberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review by Weinberg et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "a6e735cb-8eef-4a65-9139-d0ff3bab594c",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C4",
+      "claim": "Glycine protects cells in the lytic cell death pathways pyroptosis and necrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the lytic cell death pathways pyroptosis (Loomis et al., 2019; Volchuk et al., 2020) and necrosis (Estacion et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Loomis et al., 2019; Volchuk et al., 2020; and Estacion et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "97125d18-fb66-46c7-9150-492b3e7d74b2",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C5",
+      "claim": "The molecular target and mechanism by which glycine protects cells and tissues remain elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "While the robust cytoprotective effects of glycine are widespread, the molecular target and mechanism by which glycine protects cells and tissues remain elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap in the Introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "52151a34-d6a0-475f-acb3-4bc27ab969d6",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C6",
+      "claim": "Glycine or ATP metabolic pathways have been ruled out as underlying the glycine cytoprotection phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "These include glycine or ATP metabolic pathways (Weinberg et al., 1991), intracellular calcium or pH regulation (Weinberg et al., 1994), cytoskeleton stabilization (Chen et al., 1997), and chloride conductance (Loomis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Weinberg et al., 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "0b49a61b-0527-4f79-8cfa-0f387398c94d",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C7",
+      "claim": "Intracellular calcium or pH regulation have been ruled out as underlying the glycine cytoprotection phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "These include glycine or ATP metabolic pathways (Weinberg et al., 1991), intracellular calcium or pH regulation (Weinberg et al., 1994), cytoskeleton stabilization (Chen et al., 1997), and chloride conductance (Loomis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weinberg et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "be3ca868-d15c-46c8-a4a4-559212b08143",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C8",
+      "claim": "Cytoskeleton stabilization has been ruled out as underlying the glycine cytoprotection phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "These include glycine or ATP metabolic pathways (Weinberg et al., 1991), intracellular calcium or pH regulation (Weinberg et al., 1994), cytoskeleton stabilization (Chen et al., 1997), and chloride conductance (Loomis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "2f373d15-492a-4212-81ac-a26c2d2f5740",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C9",
+      "claim": "Chloride conductance has been ruled out as underlying the glycine cytoprotection phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "These include glycine or ATP metabolic pathways (Weinberg et al., 1991), intracellular calcium or pH regulation (Weinberg et al., 1994), cytoskeleton stabilization (Chen et al., 1997), and chloride conductance (Loomis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Loomis et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "2c418828-1940-4853-8a3f-237493552b63",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C10",
+      "claim": "It has been speculated that glycine targets a membrane receptor but is unlikely to involve canonical glycine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been speculated that glycine targets a membrane receptor but is unlikely to involve canonical glycine receptors (Loomis et al., 2019; Weinberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Loomis et al., 2019 and Weinberg et al., 2016",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "a0daee08-e36e-4654-9a37-6128fc839342",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C11",
+      "claim": "Glycine has oftentimes been described as an osmoprotectant.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, as a cytoprotective agent, glycine has oftentimes been described as an osmoprotectant (Fink and Cookson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fink and Cookson, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "f6c3c51a-3197-4537-a0bb-e660b68848f4",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C12",
+      "claim": "Gasdermin D pores formed during pyroptosis allow transport of small proteins and ions across lipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its small size should generally allow free passage through the large membrane conduits involved in lytic cell death pathways, such as the gasdermin D pores formed during pyroptosis that are known to allow transport of small proteins and ions across lipid bilayers (Evavold et al., 2018; Heilig et al., 2018; Xia et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Evavold et al., 2018; Heilig et al., 2018; Xia et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "34603bf4-4113-463c-b179-f379fc32d8ff",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C13",
+      "claim": "It remains unknown whether glycine's cytoprotective effect is through an extracellular or intracellular mode of action.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it remains unknown whether glycine's cytoprotective effect is through an extracellular or intracellular mode of action and, therefore, whether glycine's entry into the cell is required for cytoprotection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap in the Introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "f9fe9a9b-c7c9-40ce-874b-999cf8c979cf",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C14",
+      "claim": "NINJ1 was recently identified as the common executioner of plasma membrane rupture in pyroptosis, necrosis, and post-apoptosis lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the transmembrane protein ninjurin-1 (NINJ1) was recently identified as the common executioner of plasma membrane rupture in pyroptosis, necrosis, and post-apoptosis lysis (Kayagaki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "91552ef5-a78f-49db-8aa9-2d2f3aa4374a",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C15",
+      "claim": "Post-apoptosis lysis refers to the cell membrane rupture that occurs when phagocytes are unable to scavenge apoptotic cells that have otherwise completed the apoptotic program.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-apoptosis lysis refers to the cell membrane rupture that occurs when phagocytes are unable to scavenge apoptotic cells that have otherwise completed the apoptotic program (Silva, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Silva, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "6d7041ba-f7c1-4cb3-9230-e7101bd4d378",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C16",
+      "claim": "NINJ1 is a 16 kilodalton protein with two transmembrane regions that reside in the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "NINJ1 is a 16 kilodalton protein with two transmembrane regions that reside in the plasma membrane with prior reports, suggesting a function in cell adhesion (Araki et al., 1997; Araki and Milbrandt, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Araki et al., 1997 and Araki and Milbrandt, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "d3325638-f47e-49e8-8d14-c1ff47c7c461",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C17",
+      "claim": "Prior reports suggest NINJ1 has a function in cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "NINJ1 is a 16 kilodalton protein with two transmembrane regions that reside in the plasma membrane with prior reports, suggesting a function in cell adhesion (Araki et al., 1997; Araki and Milbrandt, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Araki et al., 1997 and Araki and Milbrandt, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "6d3c7a8f-cfc6-402d-a170-d11c62b39e94",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C18",
+      "claim": "NINJ1 has been implicated in multiple inflammatory conditions, such as nerve injury, atherosclerosis, ischemic brain injury, and tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "NINJ1 has been implicated in multiple inflammatory conditions, such as nerve injury, atherosclerosis, ischemic brain injury, and tumorigenesis (Araki and Milbrandt, 1996; Jeon et al., 2020; Kim et al., 2020; Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Araki and Milbrandt, 1996; Jeon et al., 2020; Kim et al., 2020; Yang et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "4f6bd740-1bdd-44d9-8610-2dd605082578",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C19",
+      "claim": "The mechanism by which NINJ1 mediates lytic cell death coincides with its clustering within the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which NINJ1 mediates lytic cell death coincides with its clustering within the plasma membrane, and this multimerization is required for membrane disruption by an unknown mechanism (Kayagaki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "f87efa92-4a29-4936-b536-aac00f2be8b1",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C20",
+      "claim": "NINJ1 multimerization is required for membrane disruption by an unknown mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which NINJ1 mediates lytic cell death coincides with its clustering within the plasma membrane, and this multimerization is required for membrane disruption by an unknown mechanism (Kayagaki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "7db56e85-27cd-400a-861b-ec841befc160",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C21",
+      "claim": "NINJ1 knockout and glycine treatment protect cells against a common set of lytic cell death pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The published literature suggests a potential association between NINJ1 and glycine given that NINJ1 knockout and glycine treatment protect cells against a common set of lytic cell death pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from published literature as stated in the text",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "590d1fd6-13ce-4e93-9188-8fceb9910d25",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C22",
+      "claim": "In pyroptosis, both NINJ1 knockout and glycine treatment allow for IL-1\u03b2 secretion through the gasdermin D pore while preventing final membrane lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in pyroptosis, both allow for IL-1\u03b2 secretion through the gasdermin D pore while preventing final membrane lysis (Kayagaki et al., 2021; Volchuk et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kayagaki et al., 2021 and Volchuk et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "c1cc15d7-2b1c-4bfc-9eba-17833814d389",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C23",
+      "claim": "NINJ1 knockout in iBMDM protects against pyroptotic cytotoxicity as measured by LDH release.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyroptosis was induced in LPS(lipopolysaccharide)-primed wildtype and NINJ1 knockout iBMDM with nigericin (20 \u00b5M, 2 hr) in the absence or presence of 5 mM glycine. Glycine treatment at 5 mM was based on the reported literature (Loomis et al., 2019; Volchuk et al., 2020) and a dose-finding study (Figure 1\u2014figure supplement 1). We performed a colorimetric assay to test for LDH release, a common marker of cell rupture. Both NINJ1 knockout and glycine treatment in wildtype iBMDM protected against cytotoxicity (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B and citations to Loomis et al., 2019 and Volchuk et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "fdf90005-20b0-4f6a-8151-25f83ca9b3df",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C24",
+      "claim": "Glycine treatment at 5 mM protects wildtype iBMDM against pyroptotic cytotoxicity as measured by LDH release.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyroptosis was induced in LPS(lipopolysaccharide)-primed wildtype and NINJ1 knockout iBMDM with nigericin (20 \u00b5M, 2 hr) in the absence or presence of 5 mM glycine. Glycine treatment at 5 mM was based on the reported literature (Loomis et al., 2019; Volchuk et al., 2020) and a dose-finding study (Figure 1\u2014figure supplement 1). We performed a colorimetric assay to test for LDH release, a common marker of cell rupture. Both NINJ1 knockout and glycine treatment in wildtype iBMDM protected against cytotoxicity (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B and citations to Loomis et al., 2019 and Volchuk et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "b502b560-d877-46af-9116-9241e753028b",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C25",
+      "claim": "NINJ1 knockout and glycine treatment preserve cell membrane integrity following apoptosis induced with venetoclax.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, cell membrane integrity was preserved following apoptosis (Figure 1C) and necrosis (Figure 1D) induced with venetoclax (25 \u00b5M, 16 hr) and pneumolysin (0.5 \u00b5g/mL, 15 min), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "034d4384-f710-4e02-b21e-d3aae5895cbb",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C26",
+      "claim": "NINJ1 knockout and glycine treatment preserve cell membrane integrity following necrosis induced with pneumolysin.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, cell membrane integrity was preserved following apoptosis (Figure 1C) and necrosis (Figure 1D) induced with venetoclax (25 \u00b5M, 16 hr) and pneumolysin (0.5 \u00b5g/mL, 15 min), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "9901f9bb-409d-4759-a1ea-6da1e6f55aec",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C27",
+      "claim": "In NINJ1 knockout macrophages, treatment with glycine during lytic cell death does not confer any additional protection against cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in NINJ1 knockout macrophages, treatment with glycine during lytic cell death did not confer any additional protection against cell lysis, suggesting that these distinct perturbations affect the same process (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 1B-D",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "a2e15ffa-631e-4208-8f79-6ef4aa8ebe72",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C28",
+      "claim": "LPS-primed wildtype iBMDM induced to undergo pyroptosis in the presence of glycine demonstrate similar plasma membrane ballooning to NINJ1 knockout iBMDM induced to undergo pyroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "When visualizing glycine-treated pyroptotic macrophages, we observed prominent plasma membrane ballooning (Figure 1E). This impressive morphology was comparable to that of LPS-primed NINJ1 knockout macrophages stimulated to undergo pyroptosis with nigericin, which we (Figure 1E) and others (Kayagaki et al., 2021) have observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E and citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "dc7268ce-6942-48b4-9a1b-54a915e4eed6",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C29",
+      "claim": "Glycine dose-dependently inhibits rupture of pyroptotic mouse BMDM with an IC50 between 1 and 2 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycine dose-dependently inhibits rupture of pyroptotic mouse BMDM with an IC50 between 1 and 2 mM, consistent with the published literature (Loomis et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1A and citation to Loomis et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "5965640b-096c-41f3-8139-14bb1be05262",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C30",
+      "claim": "Glycine confers greater cytoprotection compared with alanine, serine, and valine as measured by LDH release.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycine confers greater cytoprotection compared with alanine >> serine, valine as measured by LDH release.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "93b43a12-6a1c-4ac7-9f4f-c633261c9347",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C31",
+      "claim": "Amino acid treatment limits NINJ1 aggregation in pyroptosis with a hierarchy of glycine > alanine > serine, valine.",
+      "claim_type": "EXPLICIT",
+      "source": "BN-PAGE for NINJ1 shows that amino acid treatment limits NINJ1 aggregation in pyroptosis with a similar hierarchy of glycine > alanine > serine, valine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "885d7d3b-15f0-4416-a990-6e7381b27987",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C32",
+      "claim": "NINJ1 deficiency in RAW-ASC macrophages functionally phenocopies glycine treatment in pyroptosis as measured by LDH release.",
+      "claim_type": "EXPLICIT",
+      "source": "To further corroborate the above findings, we conducted pyroptosis assays in RAW mouse macrophages reconstituted with the inflammasome adaptor ASC (hereafter referred to as RAW-ASC). NINJ1 protein expression was ablated through CRISPR-Cas9 targeting as compared with the parental line (Figure 1\u2014figure supplement 2A). Pyroptosis stimulation in this orthogonal murine macrophage model demonstrates NINJ1 deficiency functionally (Figure 1\u2014figure supplement 2B) and morphologically (Figure 1\u2014figure supplement 2C) phenocopies glycine treatment as was seen in the iBMDM system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "684602a6-5288-44b4-b82e-46bfe02e3985",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C33",
+      "claim": "NINJ1 deficiency in RAW-ASC macrophages morphologically phenocopies glycine treatment in pyroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "To further corroborate the above findings, we conducted pyroptosis assays in RAW mouse macrophages reconstituted with the inflammasome adaptor ASC (hereafter referred to as RAW-ASC). NINJ1 protein expression was ablated through CRISPR-Cas9 targeting as compared with the parental line (Figure 1\u2014figure supplement 2A). Pyroptosis stimulation in this orthogonal murine macrophage model demonstrates NINJ1 deficiency functionally (Figure 1\u2014figure supplement 2B) and morphologically (Figure 1\u2014figure supplement 2C) phenocopies glycine treatment as was seen in the iBMDM system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "571a06ae-ce4a-44a7-b3c3-17cd4f13101b",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C34",
+      "claim": "Native-PAGE analysis of endogenous NINJ1 in RAW-ASC macrophages demonstrates a shift to high molecular weight aggregate upon pyroptosis stimulation, which is abrogated by glycine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Native-PAGE analysis of endogenous NINJ1 in RAW-ASC macrophages demonstrates a shift to high molecular weight aggregate upon pyroptosis stimulation, which is abrogated by glycine treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "2ea76e47-5634-42ae-8a14-fec98dc52aeb",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C35",
+      "claim": "Human NINJ1 is 90% homologous to the mouse protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Human NINJ1 is 90% homologous to the mouse protein and was shown to be toxic when overexpressed in HEK293T cells (Kayagaki et al., 2021), but it is not known if endogenous NINJ1 is activated and mediates plasma membrane rupture in human cells undergoing programmed cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "0126223e-ec23-48f6-a099-7f5bbc53d405",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C36",
+      "claim": "Human NINJ1 was shown to be toxic when overexpressed in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Human NINJ1 is 90% homologous to the mouse protein and was shown to be toxic when overexpressed in HEK293T cells (Kayagaki et al., 2021), but it is not known if endogenous NINJ1 is activated and mediates plasma membrane rupture in human cells undergoing programmed cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "5365754a-867d-4a05-97b6-e969fa0380c4",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C37",
+      "claim": "It is not known if endogenous NINJ1 is activated and mediates plasma membrane rupture in human cells undergoing programmed cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Human NINJ1 is 90% homologous to the mouse protein and was shown to be toxic when overexpressed in HEK293T cells (Kayagaki et al., 2021), but it is not known if endogenous NINJ1 is activated and mediates plasma membrane rupture in human cells undergoing programmed cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "082d03f6-1d11-4ba5-8084-ad87f8457068",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C38",
+      "claim": "NINJ1 knockdown in primary human monocyte-derived macrophages prevents pyroptosis-induced LDH release.",
+      "claim_type": "EXPLICIT",
+      "source": "We knocked down NINJ1 in primary human monocyte-derived macrophages (hMDMs) using siRNA specific to NINJ1 (siNINJ1) and compared to non-targeting control siRNA (siCtrl) with an efficiency approaching 70% (Figure 4\u2014figure supplement 2A). Both NINJ1 knockdown and glycine (50 mM; Figure 2\u2014figure supplement 1) independently and completely prevented pyroptosis (LDH release) induced by nigericin (20 \u00b5M, 2 hr) in LPS-primed hMDMs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A and Figure 4\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "217ff1e5-8594-4769-8829-760de005903d",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C39",
+      "claim": "Glycine at 50 mM prevents pyroptosis-induced LDH release in primary human monocyte-derived macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "We knocked down NINJ1 in primary human monocyte-derived macrophages (hMDMs) using siRNA specific to NINJ1 (siNINJ1) and compared to non-targeting control siRNA (siCtrl) with an efficiency approaching 70% (Figure 4\u2014figure supplement 2A). Both NINJ1 knockdown and glycine (50 mM; Figure 2\u2014figure supplement 1) independently and completely prevented pyroptosis (LDH release) induced by nigericin (20 \u00b5M, 2 hr) in LPS-primed hMDMs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "953be5ec-3b18-408d-9083-c0a08c541c9a",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C40",
+      "claim": "There is no additional effect with combined NINJ1 deficiency and glycine treatment in human macrophages undergoing pyroptosis, arguing that NINJ1 and glycine are involved in the same process.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, again there was no additional effect with combined NINJ1 deficiency and glycine treatment arguing that NINJ1 and glycine are involved in the same process in primary human cell death pathways (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "eebd8ed3-e13f-4b65-9122-7d1bb6a0f56d",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C41",
+      "claim": "Human macrophages induced to undergo necroptosis are unprotected by glycine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, human macrophages induced to undergo necroptosis (zVAD 20 \u00b5M + SMAC mimetic BV6 10 \u00b5M followed by TNF 10 ng/mL) were unprotected by glycine treatment (Figure 2\u2014figure supplement 2), consistent with the observation that Ninj1 knockout does not confer protection in necroptosis likely due to sufficient cytolytic activity of MLKL pores (Kayagaki et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 2 and citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "52f6bce9-7263-4d47-b50f-a4a1991c3ca0",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C42",
+      "claim": "Ninj1 knockout does not confer protection in necroptosis likely due to sufficient cytolytic activity of MLKL pores.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, human macrophages induced to undergo necroptosis (zVAD 20 \u00b5M + SMAC mimetic BV6 10 \u00b5M followed by TNF 10 ng/mL) were unprotected by glycine treatment (Figure 2\u2014figure supplement 2), consistent with the observation that Ninj1 knockout does not confer protection in necroptosis likely due to sufficient cytolytic activity of MLKL pores (Kayagaki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "d47cd37f-e327-4d8c-9dbe-54d335bb4aa3",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C43",
+      "claim": "Both siNINJ1 and glycine sustain the ballooned morphology of pyroptotic human monocyte-derived macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Like mouse macrophages, both siNINJ1 and glycine sustained the ballooned morphology of pyroptotic hMDMs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "ad573616-a684-41fb-b168-d13f496848b6",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C44",
+      "claim": "Pyroptotic human macrophages maintained their plasma membrane integrity in the presence of glycine but lost viability as measured by the loss of mitochondrial membrane potential and cellular ATP content.",
+      "claim_type": "EXPLICIT",
+      "source": "While pyroptotic human macrophages maintained their plasma membrane integrity in the presence of glycine as demonstrated by suppressed LDH release, we next confirmed that they had nevertheless lost viability as measured by the loss of mitochondrial membrane potential and cellular ATP content (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "4602a9f4-22ce-407e-8c49-2edfae2b2fb9",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C45",
+      "claim": "The working model of NINJ1-mediated membrane rupture involves its clustering within the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore next posited that glycine targets NINJ1 as part of its cytoprotective effect. The working model of NINJ1-mediated membrane rupture involves its clustering within the plasma membrane (Kayagaki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "7b4ed495-c15d-4afa-a566-68ef08655e40",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C46",
+      "claim": "Point mutants (e.g. K45Q and A59P) that prevent membrane rupture also fail to cluster upon induction of pyroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutants (e.g. K45Q and A59P) that prevent membrane rupture also fail to cluster upon induction of pyroptosis (Kayagaki et al., 2021), further reinforcing a connection between the clustering process and the capacity of NINJ1 to rupture membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "e9af361d-b064-4566-b620-79e467a53610",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C47",
+      "claim": "Endogenous NINJ1 of otherwise untreated primary mouse bone marrow-derived macrophages migrates at approximately 40 kDa by native-PAGE, potentially indicative of NINJ1 dimers or trimers in unstimulated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a biochemical native-PAGE approach that maintains native protein interactions, endogenous NINJ1 of otherwise untreated primary mouse bone marrow-derived macrophages (BMDM) migrates at approximately 40 kDa, potentially indicative of NINJ1 dimers or trimers in unstimulated cells (Figure 3A) and consistent with its known ability to form homotypic interactions (Bae et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A and citation to Bae et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "cdfc7aa2-c7ac-4761-b668-6ca52dc0818c",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C48",
+      "claim": "A band of approximately 160\u2013200 kDa is observed by native-PAGE in the basal state, suggesting that higher-order multimers of NINJ1 consistent with decamers or higher-order multimers may be present in the plasma membrane of unstimulated macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "By native-PAGE, a band of approximately 160\u2013200 kDa is also observed in the basal state, suggesting that higher-order multimers of NINJ1 consistent with decamers or higher-order multimers may also be present in the plasma membrane of unstimulated macrophages (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "bf4055a7-ef3d-44bf-9bd2-e070dd0ae17c",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C49",
+      "claim": "In response to pyroptosis, necrosis, and apoptosis induction in primary BMDM, the endogenous NINJ1 signal shifts to a high molecular weight aggregate, suggestive of a clustering process.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to pyroptosis (nigericin in LPS-primed BMDM), necrosis (pneumolysin), and apoptosis (venetoclax) induction in primary BMDM, the endogenous NINJ1 signal shifts to a high molecular weight aggregate, suggestive of a clustering process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "edc08203-cf31-4162-a9fd-da30b6636b6b",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C50",
+      "claim": "Glycine treatment abrogates the shift of endogenous NINJ1 to a high molecular weight aggregate in pyroptosis, necrosis, and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to pyroptosis (nigericin in LPS-primed BMDM), necrosis (pneumolysin), and apoptosis (venetoclax) induction in primary BMDM, the endogenous NINJ1 signal shifts to a high molecular weight aggregate, suggestive of a clustering process. Importantly, this shift is completely abrogated by glycine treatment (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "6dbe5189-afc7-42b3-8761-8e2c42605537",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C51",
+      "claim": "Glycine treatment of primary hMDMs undergoing pyroptosis prevents the shift of NINJ1 to a high molecular weight band by native-PAGE.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this same native-PAGE approach, glycine treatment of primary hMDMs (Figure 4A) and mouse RAW-ASC cells (Figure 1\u2014figure supplement 1D) undergoing pyroptosis prevented the shift of NINJ1 to a high molecular weight band.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "360049a4-0f2d-4049-a463-e6455f416497",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C52",
+      "claim": "Glycine inhibits NINJ1 oligomerization and pyroptotic lysis in LPS-primed and nigericin-treated human macrophages derived from induced pluripotent stem cells without impairing secretion of IL-1\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, glycine inhibited NINJ1 oligomerization and pyroptotic lysis (as measured by LDH release) in LPS-primed and nigericin-treated human macrophages derived from induced pluripotent stem cells (iPSCs) derived macrophages (iPSDMs) without impairing secretion of IL-1\u03b2, confirming previous findings that glycine acts downstream of GSDMD pore formation (Figure 4\u2014figure supplement 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 2B\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "eb36f825-ee44-4ea8-a4e6-7c96298b2964",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C53",
+      "claim": "Endogenous NINJ1 resides in discrete puncta within the plasma membrane of LPS-primed primary BMDM as observed by total internal reflection microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "To corroborate these biochemical findings, we proceeded to evaluate native NINJ1 oligomerization within the plasma membrane by total internal reflection fluorescence (TIRF) microscopy in primary BMDM and hMDMs induced to undergo pyroptosis. TIRF microscopy allows for the preferential excitation of a thin (~150 nm) layer that includes the ventral plasma membrane of adherent cells, thereby eliminating background fluorescence from structures outside this focal plane (e.g. endomembrane compartments). In LPS-primed BMDMs and hMDMs, NINJ1 appears in discrete, small puncta that are diffusely distributed across the plasma membrane in both cell types (Figure 3B, Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "0a6bbf6f-3fc0-4fd7-b9d0-d6421a42b1c4",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C54",
+      "claim": "Upon induction of pyroptosis, the density of NINJ1 puncta decreases and their intensity increases, consistent with the clustering or aggregation of the low-order multimers into high-order oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon induction of pyroptosis, the density of these puncta decreases, and their intensity increases (Figure 3C\u2013D, Figure 4C\u2013D), consistent with the clustering or aggregation of the low-order multimers into high-order oligomers as seen on the native PAGE (Figure 3A, Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 3C-D, 4C-D, 3A, and 4A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "e8ec05c9-d445-4ff5-9b44-6d0c6e465668",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C55",
+      "claim": "Co-treatment with glycine abrogates the formation of NINJ1 clusters in pyroptosis as observed by TIRF microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-treatment with glycine abrogates the formation of these clusters (Figure 3B\u2013D, Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 3B-D and 4B-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "25024095-fe14-42b7-8013-c7b9fbc89650",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C56",
+      "claim": "STED microscopy improved resolution from a full-width half-maximum by confocal microscopy of 271\u00b198 nm to 63\u00b18 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "To partially overcome this limitation, we next probed NINJ1 membrane clustering using stimulated emission depletion (STED), a super-resolution fluorescence microscopy approach, in primary BMDM. With STED, we improved upon the resolution from a full-width half-maximum by confocal microscopy of 271\u00b198 nm to 63\u00b18 nm (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "f1c9b756-1ef3-4fb3-b7b3-6014765fd45b",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C57",
+      "claim": "In the basal state, NINJ1 was observed in small discrete puncta by STED microscopy, which decreased in density and increased in intensity upon pyroptosis induction with nigericin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the basal state, NINJ1 was observed in small discrete puncta, which decreased in density (Figure 3F) and increased in intensity (Figure 3G) upon pyroptosis induction with nigericin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 3F and 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "a80edb1a-9587-43bc-a6f9-952f0fbbb01e",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C58",
+      "claim": "Co-treatment with glycine (5 mM) limited NINJ1 clustering in pyroptosis as observed by STED microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-treatment with glycine (5 mM) limited clustering (Figure 3F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 3F-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "98f55238-80eb-4725-b75b-1bd1a8284b5f",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C59",
+      "claim": "Co-treatment with glycine has no effect on caspase-1 activation, GSDMD processing, and IL-1\u03b2 processing and secretion in iBMDM induced with nigericin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, our data do not rule out the possibility that glycine is able to target proteins upstream of NINJ1 in pyroptosis. To test whether this is indeed the case, we evaluated caspase-1 activation, GSDMD processing, and IL-1\u03b2 processing and secretion in iBMDM induced with nigericin with and without 5 mM glycine. Co-treatment with glycine had no effect on these upstream processes (Figure 5A\u2013B), supporting the hypothesis that the target of glycine is downstream and independent of GSDMD activation and oligomerization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 5A-B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "b0733c89-6ad1-4fe0-bbbf-2696d66bb94e",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C60",
+      "claim": "Glycine dose-dependently suppresses NINJ1-mediated cell rupture independent of activation of upstream programmed cell death pathway activation.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that glycine interferes with NINJ1-mediated cellular rupture independent of upstream signaling pathways, we generated a doxycycline-inducible NINJ1 overexpression system in mouse macrophages (Figure 5\u2014figure supplement 1) based on the rationale that sufficient overexpression of NINJ1 can drive spontaneous lysis as seen in 293T systems (Kayagaki et al., 2021). Using this cell-based system, we demonstrate that glycine dose-dependently suppresses NINJ1-mediated cell rupture independent of activation of upstream programmed cell death pathway activation (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C and citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "46f7eb51-bb6c-4a1c-a81c-90c17d51400e",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C61",
+      "claim": "Expression of N-terminal GSDMD using an inducible system triggers a glycine-inhibitable cellular rupture.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of N-terminal GSDMD using a similar inducible system was able to trigger a glycine-inhibitable cellular rupture (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "b42500e9-c7f1-4a1e-a7e4-15c92f38a8bd",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C62",
+      "claim": "Glycine suppresses NINJ1 clustering when NINJ1 is overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "To further address glycine's mode of action, we evaluated glycine's effect on NINJ1 clustering biochemically and found that glycine suppresses NINJ1 clustering when NINJ1 is overexpressed (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "1e284198-a59a-4723-87ff-9d3297e82cf8",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C63",
+      "claim": "Circular dichroism of the NINJ1 \u03b1-helix at varying glycine concentrations between 0 and 20 mM did not affect the CD spectrum, indicating that glycine did not alter the stability of the helical secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We next turned our attention to the purported amphipathic \u03b1-helix in the NINJ1 N-terminus (residues 40\u201369 of human NINJ1), which others have shown to be necessary for NINJ1-mediated plasma membrane rupture (Kayagaki et al., 2021). Circular dichroism (CD) of the \u03b1-helix at varying glycine concentrations between 0 and 20 mM did not affect the CD spectrum, indicating that at the trialed concentrations, glycine did not alter the stability of the helical secondary structure of this region of the NINJ1 N-terminus (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 2 and citation to Kayagaki et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "e1ec9763-ded8-4fb5-b3b3-982e0ed22bf2",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C64",
+      "claim": "The NINJ1 \u03b1-helix was able to rupture liposomes, but glycine did not interfere with this effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We then functionally evaluated whether glycine interferes with the membrane lytic function of the helix using a reconstituted liposomal rupture assay. In this system, we demonstrate that while the \u03b1-helix was able to rupture liposomes, glycine did not interfere with this effect (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "76a0e0ec-6df0-4115-ac63-b28605dbf749",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C65",
+      "claim": "Glycine can block full-length NINJ1 clustering and membrane rupture in cellulo but additional unknown players may be affected within cells, or the mode of action is separate from the minimally sufficient lytic \u03b1-helix of the NINJ1 N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that glycine can block full-length NINJ1 clustering and membrane rupture in cellulo but that additional unknown players may be affected within cells, or the mode of action is separate from the minimally sufficient lytic \u03b1-helix of the NINJ1 N-terminus as shown by intact liposome rupture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the experimental data on liposome rupture and cellular studies",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "86b03aa2-705c-4312-9731-3c4329f23104",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C66",
+      "claim": "Glycine treatment and genetic ablation or silencing of NINJ1 yield similar functional and morphological outcomes in both human and mouse macrophages subjected to lytic cell death programs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that glycine treatment and genetic ablation or silencing of NINJ1 yield similar functional and morphological outcomes in both human and mouse macrophages subjected to lytic cell death programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on the experimental data presented throughout the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "49173326-a967-4d01-97c1-fb7677951e71",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C67",
+      "claim": "Glycine cytoprotection results from interference with NINJ1 clustering within the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, our data suggest that glycine cytoprotection results from interference with NINJ1 clustering within the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on the experimental data presented throughout the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "2f548d2b-9b40-4c4b-aac0-d54b69f2490f",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C68",
+      "claim": "The mechanism by which glycine interferes with NINJ1 clustering can be either direct or indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which glycine interferes with NINJ1 clustering can be either direct or indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a possibility in the Discussion",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "8276d45f-f82f-4fa0-9dd9-35e6afa3d70c",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C69",
+      "claim": "Glycine does not interfere with the secondary structure or lytic function of the NINJ1 \u03b1-helix based on in vitro CD studies and liposomal rupture system.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro CD studies and liposomal rupture system, respectively, indicate that glycine does not interfere with the secondary structure or lytic function of the NINJ1 \u03b1-helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from CD studies and liposomal rupture assays",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "d11191f8-ac64-4eb2-9421-d55fee134ef1",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C70",
+      "claim": "It remains plausible that glycine interacts directly with the NINJ1 \u03b1-helix domain or other components of the NINJ1 N-terminus in cells to interfere with NINJ1 clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains plausible that glycine still interacts directly with this domain or other components of the NINJ1 N-terminus in cells to interfere with NINJ1 clustering, consistent with our presented data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a possibility in the Discussion",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "597459af-973c-40f6-a180-d9ab6c848c47",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C71",
+      "claim": "Glycine may act on an unidentified intermediate that modulates NINJ1 clustering within the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, glycine may act on an unidentified intermediate that modulates NINJ1 clustering within the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a possibility in the Discussion",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "5c37ff14-d8a0-488d-b0f3-21187fce2aac",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C72",
+      "claim": "In pyroptotic cells, an intermediate between active GSDMD and NINJ1 could be the target of glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data in pyroptotic cells suggest that such an intermediate would reside between active GSDMD and NINJ1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental data showing glycine does not affect GSDMD processing",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "ba661d65-2757-477a-a9d4-27ef01b80202",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C73",
+      "claim": "It remains unclear whether glycine's cytoprotective activity occurs on the intracellular or extracellular side of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it remains unclear whether glycine's cytoprotective activity occurs on the intracellular or extracellular side of the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap in the Discussion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "061ff7f5-930b-4d4e-8ccb-d72693c591a7",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C74",
+      "claim": "There is no direct evidence to suggest whether glycine's cytoprotective effect is specifically mediated from the intracellular or extracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, there is no direct evidence to suggest whether glycine's cytoprotective effect is specifically mediated from the intracellular or extracellular side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap in the Discussion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "cf53ca96-18e6-4926-9a9a-c95425cce284",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "claim_id": "C75",
+      "claim": "Both extracellular and intracellular sites of action for glycine have been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Both extracellular (Weinberg et al., 2016) and intracellular (R\u00fchl and Broz, 2022) sites of action have been proposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Weinberg et al., 2016 and R\u00fchl and Broz, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8047d842-2044-4d81-8986-6c2343ffd81c",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that glycine protects cells against rupture in diverse lytic cell death pathways (pyroptosis, necrosis, apoptosis), but the molecular target and mechanism remain unknown despite ruling out multiple cellular processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 accurately summarize the state of knowledge from prior literature regarding glycine cytoprotection. These claims are supported by appropriate citations and establish the knowledge gap that motivates the current study. The claims correctly identify what has been ruled out and what remains unknown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NINJ1 is a recently identified executioner of plasma membrane rupture in multiple lytic cell death pathways, and published literature suggests a potential association between NINJ1 and glycine based on overlapping protective effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C22 accurately describe prior work on NINJ1 and establish the rationale for investigating a connection between NINJ1 and glycine. The claims are supported by appropriate citations and correctly identify the overlap in protective effects that motivates the hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "94613c0b-3d2d-42f0-aa1d-2680b347cb06",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NINJ1 knockout and glycine treatment (5 mM) independently protect mouse iBMDM against pyroptosis, apoptosis, and necrosis as measured by LDH release, with no additive effect when combined, and both produce similar ballooned cell morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 are well-supported by experimental data in Figure 1B-E showing functional and morphological phenocopying. The lack of additive effect (C27) is critical evidence that glycine and NINJ1 act in the same pathway. Statistical significance is shown, and the morphological observations are consistent with prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "fdf48d6a-680b-4536-98c8-d641cd04f40a",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Glycine dose-dependently inhibits pyroptotic rupture with IC50 of 1-2 mM, and amino acids show a hierarchy of cytoprotection (glycine > alanine > serine, valine) that correlates with their ability to limit NINJ1 aggregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by dose-response data (Figure 1\u2014figure supplement 1A-C) and establish structure-activity relationships. The correlation between cytoprotection and NINJ1 aggregation inhibition across different amino acids strengthens the mechanistic link between glycine and NINJ1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "4fd96f7b-1f0e-4b76-8622-ffa8815949e3",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NINJ1 deficiency in RAW-ASC macrophages functionally and morphologically phenocopies glycine treatment in pyroptosis, and native-PAGE shows glycine abrogates NINJ1 aggregation in this system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by data in Figure 1\u2014figure supplement 2B-D using an orthogonal cell system. This replication in a different macrophage model strengthens the generalizability of the findings and provides additional biochemical evidence for glycine's effect on NINJ1 clustering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "92590602-296b-4ee3-ac3c-ab2dd99b88fd",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Human NINJ1 is 90% homologous to mouse NINJ1 and is toxic when overexpressed, but it was unknown whether endogenous human NINJ1 mediates plasma membrane rupture in programmed cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 accurately describe prior knowledge about human NINJ1 and identify a knowledge gap. These claims are supported by appropriate citations and establish the rationale for testing the role of endogenous human NINJ1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "7c758200-bffe-4767-8f9e-7c3f90221d02",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In primary human macrophages, NINJ1 knockdown and glycine (50 mM) independently prevent pyroptosis-induced LDH release with no additive effect, sustain ballooned morphology, and preserve plasma membrane integrity while cells lose viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40, C43-C44 are supported by experimental data in Figures 2A-B and Figure 2\u2014figure supplement 3. The demonstration that the glycine-NINJ1 relationship holds in primary human cells is important for translational relevance. The viability data (C44) confirms that glycine prevents lysis but not upstream cell death signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "c528f613-c8f5-4f06-b04a-b7c972fe6e4a",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Human macrophages undergoing necroptosis are unprotected by glycine, consistent with NINJ1 knockout not conferring protection in necroptosis due to sufficient cytolytic activity of MLKL pores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by data in Figure 2\u2014figure supplement 2 and citation to prior work. This negative control is important as it shows specificity of the glycine-NINJ1 mechanism and is consistent with the known biology of necroptosis where MLKL pores are sufficient for lysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "080cc7b0-77ba-4367-b497-52da2a66add8",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The working model of NINJ1-mediated membrane rupture involves clustering within the plasma membrane, and point mutants that prevent rupture also fail to cluster.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 accurately describe the established model from prior work (Kayagaki et al., 2021) and provide the mechanistic framework for investigating glycine's effect on NINJ1 clustering.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "c118e39b-839e-4b6a-b77d-443760bbef55",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Native-PAGE analysis shows endogenous NINJ1 in unstimulated mouse BMDM migrates at ~40 kDa and ~160-200 kDa, shifts to high molecular weight aggregates upon pyroptosis, necrosis, and apoptosis induction, and this shift is completely abrogated by glycine treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by biochemical data in Figure 3A. The native-PAGE approach provides direct evidence that glycine prevents NINJ1 clustering across multiple cell death modalities. The interpretation of oligomeric states is reasonable given the known molecular weight of NINJ1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "66c0b0f5-1495-49e9-8452-bae38af617e4",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Glycine prevents NINJ1 oligomerization in primary human macrophages and iPSC-derived macrophages undergoing pyroptosis without impairing IL-1\u03b2 secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by data in Figure 4A and Figure 4\u2014figure supplement 2B-D. The demonstration in multiple human cell types strengthens generalizability, and the IL-1\u03b2 secretion data confirms glycine acts downstream of GSDMD pore formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "a19d1b75-76d7-4412-a7c1-4b91bde30f17",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TIRF microscopy shows endogenous NINJ1 resides in discrete puncta in the plasma membrane of LPS-primed macrophages, and upon pyroptosis induction, puncta density decreases while intensity increases (consistent with clustering), which is abrogated by glycine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by TIRF microscopy data in Figures 3B-D and 4B-D for both mouse and human cells. The microscopy provides spatial confirmation of the biochemical clustering data and shows glycine prevents this redistribution. Statistical analysis is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "8d3aac23-75a1-4eb8-834f-1eea346545dd",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "STED super-resolution microscopy improved resolution to 63\u00b18 nm and confirmed that NINJ1 puncta decrease in density and increase in intensity upon pyroptosis, which is limited by glycine treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by STED microscopy data in Figures 3E-G. The super-resolution approach overcomes diffraction limitations of standard microscopy and provides higher-confidence spatial data on NINJ1 clustering. The resolution improvement is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "86ad5b89-c588-4893-ab65-9ad04a228ba7",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Glycine has no effect on caspase-1 activation, GSDMD processing, or IL-1\u03b2 processing and secretion in pyroptotic iBMDM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by western blot and ELISA data in Figures 5A-B. This is critical evidence that glycine acts downstream of inflammasome activation and GSDMD pore formation, positioning NINJ1 as the target rather than upstream signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "5790c451-01ee-4019-b26c-4b0293efea27",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In doxycycline-inducible overexpression systems, glycine dose-dependently suppresses NINJ1-mediated and GSDMD-NT-mediated cell rupture independent of upstream cell death signaling, and glycine suppresses NINJ1 clustering when overexpressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by data in Figures 5C-E using inducible overexpression systems. This approach elegantly demonstrates that glycine can act on NINJ1 independently of upstream cell death pathways, strengthening the mechanistic link. The dose-response is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "ddac166f-1b8a-4a84-b185-91e4abccebc3",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Circular dichroism shows glycine (0-20 mM) does not alter the helical secondary structure of the NINJ1 \u03b1-helix (residues 40-69), and in liposomal rupture assays, the \u03b1-helix ruptures liposomes but glycine does not interfere with this effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by CD spectroscopy (Figure 5\u2014figure supplement 2) and liposomal rupture data (Figure 5F). These in vitro experiments suggest glycine does not directly affect the \u03b1-helix structure or lytic function, though the authors appropriately note this doesn't rule out direct interaction in cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "13fd5438-81ea-4284-b78d-000bc6e05f6e",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Glycine can block full-length NINJ1 clustering and membrane rupture in cells, but additional unknown players may be affected or the mode of action is separate from the minimally sufficient lytic \u03b1-helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is a reasonable inference from the combined cellular and in vitro data (C63-C64). The authors appropriately acknowledge uncertainty about whether glycine acts directly on NINJ1 or through an intermediate, given the disconnect between cellular and liposomal results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "c0acb642-aaa1-4b2a-9e37-ecf2d1e4ef59",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Glycine treatment and genetic ablation/silencing of NINJ1 yield similar functional and morphological outcomes in human and mouse macrophages, and glycine cytoprotection results from interference with NINJ1 clustering within the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are summary statements supported by the totality of experimental evidence presented. The convergence of functional, morphological, biochemical, and microscopy data across multiple cell types and death modalities strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "94013d81-4ee9-455b-8948-909da04da1f7",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The mechanism by which glycine interferes with NINJ1 clustering can be direct or indirect; in vitro data suggest glycine doesn't affect the \u03b1-helix structure/function, but direct interaction in cells remains plausible, or glycine may act on an unidentified intermediate between GSDMD and NINJ1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 appropriately acknowledge mechanistic uncertainty while being consistent with the data. The authors correctly identify that the in vitro liposome data don't rule out direct NINJ1 interaction in cells, and they appropriately speculate about possible intermediates based on the pyroptosis data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    },
+    {
+      "id": "b68e5970-cd73-42f1-9627-13342a617177",
+      "content_id": "37b90838-e57d-4a08-a1c1-a153e2ea8390",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "It remains unclear whether glycine's cytoprotective activity occurs on the intracellular or extracellular side of the plasma membrane, with both sites of action having been proposed in prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 appropriately identify a remaining knowledge gap and cite relevant prior proposals. The authors correctly note that their data don't resolve this question, which is an honest assessment of the study's limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:38:52.636971Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e71faa67-3909-4fec-b708-90a35b385b10",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "368e5efc-50dc-46fb-968d-afc07abb4c9f",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "32b95a28-9d22-4f5f-9539-3ca1f699a084",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "a6e735cb-8eef-4a65-9139-d0ff3bab594c",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "97125d18-fb66-46c7-9150-492b3e7d74b2",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "52151a34-d6a0-475f-acb3-4bc27ab969d6",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "0b49a61b-0527-4f79-8cfa-0f387398c94d",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "be3ca868-d15c-46c8-a4a4-559212b08143",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "2f373d15-492a-4212-81ac-a26c2d2f5740",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "2c418828-1940-4853-8a3f-237493552b63",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "a0daee08-e36e-4654-9a37-6128fc839342",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "f6c3c51a-3197-4537-a0bb-e660b68848f4",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "34603bf4-4113-463c-b179-f379fc32d8ff",
+      "result_id": "8047d842-2044-4d81-8986-6c2343ffd81c"
+    },
+    {
+      "claim_id": "f9fe9a9b-c7c9-40ce-874b-999cf8c979cf",
+      "result_id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8"
+    },
+    {
+      "claim_id": "91552ef5-a78f-49db-8aa9-2d2f3aa4374a",
+      "result_id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8"
+    },
+    {
+      "claim_id": "6d7041ba-f7c1-4cb3-9230-e7101bd4d378",
+      "result_id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8"
+    },
+    {
+      "claim_id": "d3325638-f47e-49e8-8d14-c1ff47c7c461",
+      "result_id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8"
+    },
+    {
+      "claim_id": "6d3c7a8f-cfc6-402d-a170-d11c62b39e94",
+      "result_id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8"
+    },
+    {
+      "claim_id": "4f6bd740-1bdd-44d9-8610-2dd605082578",
+      "result_id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8"
+    },
+    {
+      "claim_id": "f87efa92-4a29-4936-b536-aac00f2be8b1",
+      "result_id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8"
+    },
+    {
+      "claim_id": "7db56e85-27cd-400a-861b-ec841befc160",
+      "result_id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8"
+    },
+    {
+      "claim_id": "590d1fd6-13ce-4e93-9188-8fceb9910d25",
+      "result_id": "d8e746fe-dff7-4d6d-b01a-1b559671c1b8"
+    },
+    {
+      "claim_id": "c1cc15d7-2b1c-4bfc-9eba-17833814d389",
+      "result_id": "94613c0b-3d2d-42f0-aa1d-2680b347cb06"
+    },
+    {
+      "claim_id": "fdf90005-20b0-4f6a-8151-25f83ca9b3df",
+      "result_id": "94613c0b-3d2d-42f0-aa1d-2680b347cb06"
+    },
+    {
+      "claim_id": "b502b560-d877-46af-9116-9241e753028b",
+      "result_id": "94613c0b-3d2d-42f0-aa1d-2680b347cb06"
+    },
+    {
+      "claim_id": "034d4384-f710-4e02-b21e-d3aae5895cbb",
+      "result_id": "94613c0b-3d2d-42f0-aa1d-2680b347cb06"
+    },
+    {
+      "claim_id": "9901f9bb-409d-4759-a1ea-6da1e6f55aec",
+      "result_id": "94613c0b-3d2d-42f0-aa1d-2680b347cb06"
+    },
+    {
+      "claim_id": "a2e15ffa-631e-4208-8f79-6ef4aa8ebe72",
+      "result_id": "94613c0b-3d2d-42f0-aa1d-2680b347cb06"
+    },
+    {
+      "claim_id": "dc7268ce-6942-48b4-9a1b-54a915e4eed6",
+      "result_id": "fdf48d6a-680b-4536-98c8-d641cd04f40a"
+    },
+    {
+      "claim_id": "5965640b-096c-41f3-8139-14bb1be05262",
+      "result_id": "fdf48d6a-680b-4536-98c8-d641cd04f40a"
+    },
+    {
+      "claim_id": "93b43a12-6a1c-4ac7-9f4f-c633261c9347",
+      "result_id": "fdf48d6a-680b-4536-98c8-d641cd04f40a"
+    },
+    {
+      "claim_id": "885d7d3b-15f0-4416-a990-6e7381b27987",
+      "result_id": "4fd96f7b-1f0e-4b76-8622-ffa8815949e3"
+    },
+    {
+      "claim_id": "684602a6-5288-44b4-b82e-46bfe02e3985",
+      "result_id": "4fd96f7b-1f0e-4b76-8622-ffa8815949e3"
+    },
+    {
+      "claim_id": "571a06ae-ce4a-44a7-b3c3-17cd4f13101b",
+      "result_id": "4fd96f7b-1f0e-4b76-8622-ffa8815949e3"
+    },
+    {
+      "claim_id": "2ea76e47-5634-42ae-8a14-fec98dc52aeb",
+      "result_id": "92590602-296b-4ee3-ac3c-ab2dd99b88fd"
+    },
+    {
+      "claim_id": "0126223e-ec23-48f6-a099-7f5bbc53d405",
+      "result_id": "92590602-296b-4ee3-ac3c-ab2dd99b88fd"
+    },
+    {
+      "claim_id": "5365754a-867d-4a05-97b6-e969fa0380c4",
+      "result_id": "92590602-296b-4ee3-ac3c-ab2dd99b88fd"
+    },
+    {
+      "claim_id": "082d03f6-1d11-4ba5-8084-ad87f8457068",
+      "result_id": "7c758200-bffe-4767-8f9e-7c3f90221d02"
+    },
+    {
+      "claim_id": "217ff1e5-8594-4769-8829-760de005903d",
+      "result_id": "7c758200-bffe-4767-8f9e-7c3f90221d02"
+    },
+    {
+      "claim_id": "953be5ec-3b18-408d-9083-c0a08c541c9a",
+      "result_id": "7c758200-bffe-4767-8f9e-7c3f90221d02"
+    },
+    {
+      "claim_id": "d47cd37f-e327-4d8c-9dbe-54d335bb4aa3",
+      "result_id": "7c758200-bffe-4767-8f9e-7c3f90221d02"
+    },
+    {
+      "claim_id": "ad573616-a684-41fb-b168-d13f496848b6",
+      "result_id": "7c758200-bffe-4767-8f9e-7c3f90221d02"
+    },
+    {
+      "claim_id": "eebd8ed3-e13f-4b65-9122-7d1bb6a0f56d",
+      "result_id": "c528f613-c8f5-4f06-b04a-b7c972fe6e4a"
+    },
+    {
+      "claim_id": "52f6bce9-7263-4d47-b50f-a4a1991c3ca0",
+      "result_id": "c528f613-c8f5-4f06-b04a-b7c972fe6e4a"
+    },
+    {
+      "claim_id": "4602a9f4-22ce-407e-8c49-2edfae2b2fb9",
+      "result_id": "080cc7b0-77ba-4367-b497-52da2a66add8"
+    },
+    {
+      "claim_id": "7b4ed495-c15d-4afa-a566-68ef08655e40",
+      "result_id": "080cc7b0-77ba-4367-b497-52da2a66add8"
+    },
+    {
+      "claim_id": "e9af361d-b064-4566-b620-79e467a53610",
+      "result_id": "c118e39b-839e-4b6a-b77d-443760bbef55"
+    },
+    {
+      "claim_id": "cdfc7aa2-c7ac-4761-b668-6ca52dc0818c",
+      "result_id": "c118e39b-839e-4b6a-b77d-443760bbef55"
+    },
+    {
+      "claim_id": "bf4055a7-ef3d-44bf-9bd2-e070dd0ae17c",
+      "result_id": "c118e39b-839e-4b6a-b77d-443760bbef55"
+    },
+    {
+      "claim_id": "edc08203-cf31-4162-a9fd-da30b6636b6b",
+      "result_id": "c118e39b-839e-4b6a-b77d-443760bbef55"
+    },
+    {
+      "claim_id": "6dbe5189-afc7-42b3-8761-8e2c42605537",
+      "result_id": "66c0b0f5-1495-49e9-8452-bae38af617e4"
+    },
+    {
+      "claim_id": "360049a4-0f2d-4049-a463-e6455f416497",
+      "result_id": "66c0b0f5-1495-49e9-8452-bae38af617e4"
+    },
+    {
+      "claim_id": "eb36f825-ee44-4ea8-a4e6-7c96298b2964",
+      "result_id": "a19d1b75-76d7-4412-a7c1-4b91bde30f17"
+    },
+    {
+      "claim_id": "0a6bbf6f-3fc0-4fd7-b9d0-d6421a42b1c4",
+      "result_id": "a19d1b75-76d7-4412-a7c1-4b91bde30f17"
+    },
+    {
+      "claim_id": "e8ec05c9-d445-4ff5-9b44-6d0c6e465668",
+      "result_id": "a19d1b75-76d7-4412-a7c1-4b91bde30f17"
+    },
+    {
+      "claim_id": "25024095-fe14-42b7-8013-c7b9fbc89650",
+      "result_id": "8d3aac23-75a1-4eb8-834f-1eea346545dd"
+    },
+    {
+      "claim_id": "f1c9b756-1ef3-4fb3-b7b3-6014765fd45b",
+      "result_id": "8d3aac23-75a1-4eb8-834f-1eea346545dd"
+    },
+    {
+      "claim_id": "a80edb1a-9587-43bc-a6f9-952f0fbbb01e",
+      "result_id": "8d3aac23-75a1-4eb8-834f-1eea346545dd"
+    },
+    {
+      "claim_id": "98f55238-80eb-4725-b75b-1bd1a8284b5f",
+      "result_id": "86ad5b89-c588-4893-ab65-9ad04a228ba7"
+    },
+    {
+      "claim_id": "b0733c89-6ad1-4fe0-bbbf-2696d66bb94e",
+      "result_id": "5790c451-01ee-4019-b26c-4b0293efea27"
+    },
+    {
+      "claim_id": "46f7eb51-bb6c-4a1c-a81c-90c17d51400e",
+      "result_id": "5790c451-01ee-4019-b26c-4b0293efea27"
+    },
+    {
+      "claim_id": "b42500e9-c7f1-4a1e-a7e4-15c92f38a8bd",
+      "result_id": "5790c451-01ee-4019-b26c-4b0293efea27"
+    },
+    {
+      "claim_id": "1e284198-a59a-4723-87ff-9d3297e82cf8",
+      "result_id": "ddac166f-1b8a-4a84-b185-91e4abccebc3"
+    },
+    {
+      "claim_id": "e1ec9763-ded8-4fb5-b3b3-982e0ed22bf2",
+      "result_id": "ddac166f-1b8a-4a84-b185-91e4abccebc3"
+    },
+    {
+      "claim_id": "76a0e0ec-6df0-4115-ac63-b28605dbf749",
+      "result_id": "13fd5438-81ea-4284-b78d-000bc6e05f6e"
+    },
+    {
+      "claim_id": "86b03aa2-705c-4312-9731-3c4329f23104",
+      "result_id": "c0acb642-aaa1-4b2a-9e37-ecf2d1e4ef59"
+    },
+    {
+      "claim_id": "49173326-a967-4d01-97c1-fb7677951e71",
+      "result_id": "c0acb642-aaa1-4b2a-9e37-ecf2d1e4ef59"
+    },
+    {
+      "claim_id": "2f548d2b-9b40-4c4b-aac0-d54b69f2490f",
+      "result_id": "94013d81-4ee9-455b-8948-909da04da1f7"
+    },
+    {
+      "claim_id": "8276d45f-f82f-4fa0-9dd9-35e6afa3d70c",
+      "result_id": "94013d81-4ee9-455b-8948-909da04da1f7"
+    },
+    {
+      "claim_id": "d11191f8-ac64-4eb2-9421-d55fee134ef1",
+      "result_id": "94013d81-4ee9-455b-8948-909da04da1f7"
+    },
+    {
+      "claim_id": "597459af-973c-40f6-a180-d9ab6c848c47",
+      "result_id": "94013d81-4ee9-455b-8948-909da04da1f7"
+    },
+    {
+      "claim_id": "5c37ff14-d8a0-488d-b0f3-21187fce2aac",
+      "result_id": "94013d81-4ee9-455b-8948-909da04da1f7"
+    },
+    {
+      "claim_id": "ba661d65-2757-477a-a9d4-27ef01b80202",
+      "result_id": "b68e5970-cd73-42f1-9627-13342a617177"
+    },
+    {
+      "claim_id": "061ff7f5-930b-4d4e-8ccb-d72693c591a7",
+      "result_id": "b68e5970-cd73-42f1-9627-13342a617177"
+    },
+    {
+      "claim_id": "cf53ca96-18e6-4926-9a9a-c95425cce284",
+      "result_id": "b68e5970-cd73-42f1-9627-13342a617177"
+    }
+  ],
+  "comparisons": []
+}

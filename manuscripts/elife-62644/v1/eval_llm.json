@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Nutrient limitation has minimal impact on N-glycan branching and O-GlcNAcylation in PDA cells. While glucose and glutamine restriction suppressed L-PHA binding in colon cancer cells (C29, C30), no consistent changes were observed in PDA cell lines under glucose or glutamine limitation (C31). O-GlcNAcylation was minimally altered by glutamine restriction and showed variable responses to glucose limitation (C32, C33). TMG treatment demonstrated that glutamine restriction does not limit the capacity to add O-GlcNAc modifications (C34, C35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are well-supported by experimental data from flow cytometry (L-PHA binding) and western blots (O-GlcNAc levels) across multiple cell lines and conditions. The TMG experiment (C34-C35) provides strong evidence that the enzymatic capacity for O-GlcNAcylation is maintained under glutamine restriction, supporting the interpretation that UDP-GlcNAc pools are sustained through alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "UDP-GlcNAc abundance is maintained or increased during glutamine restriction despite decreased GlcN-6-P levels. In PANC-1 cells, GlcN-6-P decreased while UDP-GlcNAc was maintained (C36, C37). In MIA PaCa-2 cells, UDP-GlcNAc actually increased (C38). In contrast, glucose restriction led to decreased UDP-GlcNAc (C39), suggesting glutamine limitation triggers a specific adaptive response (C40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by HPLC-MS metabolite measurements in multiple cell lines. However, C40 is speculative and represents an interpretation rather than direct evidence. The contrast between glutamine and glucose restriction effects is well-documented, but the mechanism of the proposed adaptive response requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Glutamine restriction suppresses de novo hexosamine and nucleotide synthesis. Isotope tracing with 13C-glucose showed markedly reduced labeling of the glucosamine ring in GlcNAc-P and UDP-GlcNAc (C41, C42), as well as the ribose component of UDP-GlcNAc (C43). UTP labeling from glucose was also suppressed (C44) despite maintained or increased UTP levels (C45), suggesting nucleoside salvage contributes to maintaining nucleotide pools (C46, C47). UCK1/2 knockdown reduced UDP, UTP, and UDP-GlcNAc levels, confirming the role of nucleoside salvage (C48, C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 are well-supported by comprehensive isotope tracing experiments and siRNA knockdown studies. The data clearly demonstrate suppression of de novo synthesis pathways and provide strong evidence for nucleoside salvage. Claims C46 and C47 involve some speculation but are supported by the UCK1/2 knockdown experiments (C48, C49) and prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "GALE and GNE do not facilitate bypass pathways for UDP-GlcNAc synthesis. Silencing of GALE or GNE did not reduce UDP-GlcNAc labeling from glucose (C51), indicating these enzymes are unlikely to mediate alternative pathways (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by siRNA knockdown experiments with isotope tracing. The negative result appropriately rules out potential alternative pathways through UDP-GalNAc or sialic acid biosynthesis, strengthening the conclusion that salvage pathways are responsible for maintaining UDP-GlcNAc.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "GlcNAc availability increases and NAGK is regulated under glutamine restriction. UDP-GlcNAc abundance is maintained despite reduced de novo synthesis (C53). Intracellular GlcNAc levels increase upon glutamine restriction (C57). NAGK mRNA expression increased in low glutamine (C58) and in some cell lines in low glucose (C59). GFPT1 expression was also induced (C60, C61). NAGK protein levels did not increase concordantly with mRNA (C62), but a mobility shift suggesting post-translational modification was observed (C63, C64). These data indicate increased GlcNAc availability and NAGK regulation under low glutamine (C65, C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C66 are supported by metabolite measurements, gene expression analysis, and western blots. The observation of NAGK regulation through potential phosphorylation (C63, C64) is somewhat speculative but supported by the mobility shift data. The overall conclusion that NAGK is subject to regulation under nutrient stress is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "NAGK mediates GlcNAc salvage into UDP-GlcNAc pools. 13C-GlcNAc was efficiently salvaged in control cells, and this was suppressed by NAGK deletion (C67, C68). GALK2 silencing further suppressed salvage in NAGK KO cells (C69). In NAGK KO cells, glucose-dependent labeling of the glucosamine ring increased (C70) but not the ribose component (C71), indicating compensatory increase in de novo hexosamine synthesis when salvage is blocked (C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are strongly supported by isotope tracing experiments with 13C-GlcNAc and 13C-glucose in NAGK knockout cells. The reciprocal relationship between salvage and de novo synthesis provides compelling evidence for NAGK's role in GlcNAc salvage. The GALK2 experiments (C69) suggest a minor compensatory role for this enzyme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "NAGK deletion alters hexosamine metabolite levels with compensatory changes. In PANC-1 NAGK KO cells, GlcN-P increased (C73), GlcNAc-P was modestly reduced (C74), and UDP-GlcNAc was maintained (C75). In MIA PaCa-2 cells, GlcNAc-P was markedly suppressed but UDP-GlcNAc was maintained (C76, C77). Under glutamine restriction, GlcN-P decreased in both control and KO cells (C78), GlcNAc-P decreased further in KO cells (C79), GlcNAc abundance increased (C80), and UDP-GlcNAc was modestly reduced in KO cells (C81). GALK2 silencing did not further suppress UDP-GlcNAc (C82, C83), demonstrating NAGK-dependent salvage (C84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C84 are supported by comprehensive metabolite measurements in NAGK knockout cells under various conditions. The data demonstrate complex metabolic compensation with cell line-specific differences. The conclusion that NAGK mediates GlcNAc salvage (C84) is well-supported, though the role of GALK2 (C82, C83) remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "NAGK deletion has minimal effect on cell proliferation in nutrient-replete conditions but impairs survival under severe glutamine restriction in some cell lines. Minimal differences in growth were observed between NAGK KO and control cells in 2D and 3D culture with 4 mM glutamine (C85). MIA PaCa-2 KO cells died more quickly in 0.05 mM glutamine (C86), but PANC-1 KO cells did not show this effect (C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by proliferation assay data. The cell line-specific differences in response to glutamine restriction are clearly documented. However, the lack of effect in PANC-1 cells (C87) suggests that the role of NAGK in cell survival under nutrient stress may be context-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "NAGK and GFPT1 expression are elevated in human PDA tumors. Analysis of publicly available datasets showed NAGK expression increased in tumor tissue relative to normal pancreas (C88). GFPT1 expression was also increased (C89), while PGM3 and UAP1 did not show significant increases (C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by analysis of multiple publicly available gene expression datasets (GEO and TCGA). The statistical analysis appears appropriate (one-way ANOVA, p<0.01). The selective upregulation of NAGK and GFPT1 but not other HBP enzymes is noteworthy and supports the biological significance of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "NAGK deletion impairs tumor growth in vivo with altered tumor composition. Final tumor volume and weight were markedly reduced in NAGK KO xenografts (C91). Initial growth was comparable, but KO tumors stopped growing or shrank while controls continued growing (C92). KO tumors showed increased L-PHA signal (C93), indicating altered glycosylation (C94), and increased \u03b1-SMA (C95), suggesting changes in stromal composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by in vivo xenograft experiments with appropriate sample sizes (n=8 per group). The tumor growth kinetics (C92) provide important mechanistic insight. The increased L-PHA and \u03b1-SMA in KO tumors (C93-C95) suggest complex changes in tumor biology, though the interpretation requires caution as these could reflect altered cellular composition rather than direct effects of NAGK loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "NAGK becomes important as tumors outgrow their nutrient supply. The data suggest NAGK is dispensable when nutrients are abundant but becomes more important as tumors outgrow their nutrient supply and depend on scavenging (C96), indicating NAGK-mediated hexosamine salvage supports tumor growth in vivo (C97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C97 represent interpretations of the in vivo tumor growth data. While C97 is reasonably supported by the overall findings, C96 is highly speculative. The biphasic tumor growth pattern is consistent with this interpretation, but direct evidence for nutrient limitation in the tumors or increased scavenging is not provided. Additional experiments measuring nutrient levels or scavenging markers in tumors would be needed to fully support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Potential sources of salvaged GlcNAc include intracellular recycling and environmental scavenging. GlcNAc may derive from O-GlcNAc removal or glycoconjugate breakdown (C98) or from the environment (C99). Macropinocytosis is a key feature of PDA (C100) and could provide GlcNAc through protein scavenging (C101, C102). ECM components like hyaluronic acid may also provide GlcNAc (C103). A co-submitted manuscript identifies HA as a major source (C104), suggesting NAGK is important in contexts of high GlcNAc availability and nutrient deprivation (C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C105 are largely speculative (C98, C99, C102, C103, C105) or cite prior work (C100, C101, C104). While the speculation is reasonable and supported by the co-submitted manuscript (C104), direct experimental evidence for the sources of salvaged GlcNAc in this study is lacking. This represents an important area for future investigation but is not directly demonstrated by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "UDP-GlcNAc has multiple important roles in cancer biology and represents a therapeutic target. UDP-GlcNAc is required for glycosylation, homeostasis, and preventing ER stress (C106). Elevated O-GlcNAc in cancers may drive pro-tumorigenic programs (C107). In PDA, CA19-9 is a biomarker with functional roles (C108, C109). HA increases in PDA (C110) and PDA cells can produce it (C111). Fibroblast depletion studies suggest tumor cells produce HA (C112, C113). Hyaluronidase treatment can improve drug delivery (C114) though a clinical trial showed no survival benefit (C115). DON treatment depletes HA/collagen and sensitizes tumors to immunotherapy (C116, C117), suggesting therapeutic potential (C118). PGM3 inhibitors showed efficacy in PDA and breast cancer models (C119, C120).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C120 are primarily based on prior literature (citations) and established knowledge. These claims provide important context for the study but do not represent new findings. The citations appear appropriate and the synthesis of prior work is reasonable. Claims C107 and C118 involve some speculation about therapeutic implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The physiological role of NAGK and GlcNAc salvage remains poorly understood. In non-cancerous hematopoietic cells, substantial UDP-GlcNAc remains unlabeled from glucose (C121), suggesting salvage contributes in various cell types (C122). GFPT1 is required for embryonic development but NAGK knockout embryos are viable (C123, C124), and NAGK deficiency has not been characterized in postnatal mice (C125). GlcNAc salvage may be dispensable in healthy tissues (C126) but important in proliferating, nutrient-limited tumors (C127).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C127 combine prior literature (C121, C123, C124) with speculation about physiological roles (C122, C126, C127). The observation that NAGK knockout embryos are viable (C124) is important but the lack of postnatal characterization (C125) limits conclusions. Claims C126 and C127 are speculative interpretations that require further experimental validation in appropriate model systems.",
+    "result_type": "MINOR"
+  }
+]

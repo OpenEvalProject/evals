@@ -1,0 +1,1903 @@
+{
+  "submission": {
+    "id": "ad16c7d2-7eef-44e3-9f4f-05a9a75320b0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:51:34.943775Z",
+    "updated_at": "2025-12-03T17:51:34.943775Z"
+  },
+  "content": [
+    {
+      "id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "submission_id": "ad16c7d2-7eef-44e3-9f4f-05a9a75320b0",
+      "content_type": "manuscript",
+      "content_text": "# The missing link between genetic association and regulatory function\n\n## Authors\n\n- Noah J Connally<sup>1</sup> ([ORCID: 0000-0003-3818-6739](https://orcid.org/0000-0003-3818-6739)) \u2020\n- Sumaiya Nazeen<sup>1</sup>\n- Daniel Lee<sup>1</sup>\n- Huwenbo Shi<sup>3</sup>\n- John Stamatoyannopoulos<sup>6</sup>\n- Sung Chun<sup>7</sup>\n- Chris Cotsapas<sup>3</sup> \u2020\n- Christopher A Cassa<sup>2</sup> \u2020\n- Shamil R Sunyaev<sup>1</sup> ([ORCID: 0000-0001-5715-5677](https://orcid.org/0000-0001-5715-5677)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Informatics, Harvard Medical School Boston United States\n2. Brigham and Women\u2019s Hospital, Division of Genetics, Harvard Medical School Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))\n3. Program in Medical and Population Genetics, Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))\n4. Brigham and Women\u2019s Hospital, Department of Neurology, Harvard Medical School Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))\n5. Department of Epidemiology, Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n6. Altius Institute Seattle United States\n7. Division of Pulmonary Medicine, Boston Children\u2019s Hospital Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))\n8. Department of Neurology, Yale Medical School New Haven United States\n9. Department of Genetics, Yale Medical School New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe genetic basis of most traits is highly polygenic and dominated by non-coding alleles. It is widely assumed that such alleles exert small regulatory effects on the expression of cis-linked genes. However, despite the availability of gene expression and epigenomic datasets, few variant-to-gene links have emerged. It is unclear whether these sparse results are due to limitations in available data and methods, or to deficiencies in the underlying assumed model. To better distinguish between these possibilities, we identified 220 gene\u2013trait pairs in which protein-coding variants influence a complex trait or its Mendelian cognate. Despite the presence of expression quantitative trait loci near most GWAS associations, by applying a gene-based approach we found limited evidence that the baseline expression of trait-related genes explains GWAS associations, whether using colocalization methods (8% of genes implicated), transcription-wide association (2% of genes implicated), or a combination of regulatory annotations and distance (4% of genes implicated). These results contradict the hypothesis that most complex trait-associated variants coincide with homeostatic expression QTLs, suggesting that better models are needed. The field must confront this deficit and pursue this \u2018missing regulation.\u2019\n\n## Introduction\n\nModern complex trait genetics has uncovered surprises at every turn, including the paucity of associations between traits and coding variants of large effect, and the \u2018mystery of missing heritability,\u2019 in which no combination of common and rare variants can explain a large fraction of trait heritability (Manolio et al., 2009). Further work has revealed unexpectedly high polygenicity for most human traits and very small effect sizes for individual variants. Enrichment analyses have demonstrated that a large fraction of heritability resides in regions with gene regulatory potential, predominantly tissue-specific accessible chromatin and enhancer elements, suggesting that trait-associated variants influence gene regulation (Maurano et al., 2012; Trynka et al., 2013; Gusev et al., 2014). Furthermore, genes in trait-associated loci are more likely to have genetic variants that affect their expression levels (expression quantitative trait loci, or eQTLs), and the variants with the strongest trait associations are more likely also to be associated with transcript abundance of at least one proximal gene (Nicolae et al., 2010). Combined, these observations have led to the inference that most trait-associated variants are eQTLs, and their effects arise from altering transcript abundance, rather than protein sequence. Equivalent sQTL (splice QTL) analyses of exon usage data have revealed a more modest overlap with trait-associated alleles, suggesting that a fraction of trait-associated variants influence splicing, and hence the relative abundance of different transcript isoforms, rather than overall expression levels. The genetic variant causing expression changes may lie outside the locus and involve a knock-on effect on gene regulation, with the variant altering transcript abundances for genes elsewhere in the genome (a trans-eQTL), but the consensus view is that trans-eQTLs are typically mediated by the variant influencing a gene in the region (a cis-eQTL) (GTEx Consortium, 2020). Thus, a model has emerged in which most trait-associated variants influence proximal gene regulation.\n\nHere we argue that this unembellished model\u2014in which genome-wide association study (GWAS) peaks are mediated by the effects on the homeostatic expression assayed in tissue samples\u2014is the exception rather than the rule. We highlight the challenges of current strategies linking GWAS variants to genes and call for a reevaluation of the basic model in favor of more complex models possibly involving context-specificity with respect to cell types, developmental stages, cell states, or the constancy of expression effects.\n\nOur argument begins with several observations that challenge the unembellished model. One challenge is the difference between spatial distributions of eQTLs, which are dramatically enriched in close proximity to genes, and GWAS peaks, which are usually farther away (Stranger et al., 2007; Farh et al., 2015; Mostafavi et al., 2022). Another is that expression levels mediate a minority of complex trait heritability (Yao et al., 2020). Finally, many studies have designed tools for colocalization analysis: a test of whether GWAS and eQTL associations are due to the same set of variants, not merely distinct variants in linkage disequilibrium. If the model is correct, most trait associations should also be eQTLs, but across studies, only 5\u201340% of trait associations colocalize with eQTLs (Giambartolomei et al., 2014; Chun et al., 2017; Giambartolomei et al., 2018; Hormozdiari et al., 2016).\n\nDespite the doubts raised, the fact that most GWAS peaks do not colocalize with eQTLs cannot disprove the predominant, unembellished model. In a sense, negative colocalization results are confusing because their hypothesis is too broad. If we predict merely that GWAS peaks will colocalize with some genes\u2019 expression, it is not clear what is meant by a peak\u2019s failure to colocalize with any individual gene\u2019s expression.\n\nThus, a narrower, more testable hypothesis requires identifying genes we believe a priori are biologically relevant to the GWAS trait. If these trait-linked genes have nearby GWAS peaks and eQTLs, failure to colocalize would be a meaningful negative result. Earlier studies tested all GWAS peaks; when a peak has no colocalization, the model is inconclusive. But trait-linked genes that fail to colocalize reveal that our method for detecting non-coding variation is, with current data, incompatible with our model for understanding it.\n\nWith this distinction in mind, we created a set of trait-associated genes capable of supporting or contradicting the model of non-coding GWAS associations acting as eQTLs. For this purpose, the selection of genes becomes extremely important. Because the model attempts to explain the genetic relationship between traits and gene expression, true positives cannot be selected based on measurements of genetic association to traits (GWAS) or expression (eQTL mapping). With this restriction, one source of true positives is to identify genes that are both in loci associated with a complex trait and are also known to harbor coding mutations tied to a related Mendelian trait or the same complex trait. Using a model not based on expression, Mendelian genes are enriched in common-variant heritability for cognate complex traits (Weiner et al., 2022). The genes and their coding variants may be detected in familial studies of cognate Mendelian disorders or by aggregation in a burden test on the same complex phenotypes as GWAS (Backman et al., 2021).\n\nFor genes whose coding variants can cause detectable phenotypic change, the strong expectation is that a variant of small effect influences the gene identified by its rare coding variants. As an example, APOE and LDLR are both low-density lipoprotein receptor genes (Schneider et al., 1981; Goldstein and Brown, 1973). Coding variants in APOE and LDLR can lead to the Mendelian disorder familial hypercholesterolemia (Goldstein and Brown, 1973; Cenarro et al., 2016). Even in the absence of a Mendelian coding variant, experiments in animal models have found that the overexpression of these genes reduces cholesterol levels (Shimano et al., 1992a; Shimano et al., 1992b; Kawashiri et al., 2001). GWAS on human subjects have found significant associations near APOE and LDLR, so it seems reasonable to suspect that any non-coding effects in these loci may be mediated by these genes. This general relationship between Mendelian and complex traits is supported by several lines of evidence summarized in Appendix 1.\n\n## Results\n\nTo test the model that trait-associated variants influence baseline gene expression, we assembled a list of putatively causative genes for seven polygenic common traits with available large-scale GWAS data, each of which also has an extreme form in which coding variants of large effect alter one or more genes with well-characterized biology (Table 1). Our selection included four common diseases: type II diabetes (T2D) (Mahajan et al., 2018), where early-onset familial forms are caused by rare coding mutations (insulin-independent MODY; neonatal diabetes; maternally inherited diabetes and deafness; familial partial lipodystrophy); ulcerative colitis (UC) and Crohn disease (CD) (Liu et al., 2015; Goyette et al., 2015), which have Mendelian pediatric forms characterized by severity of presentation; and breast cancer (BC) (Zhang et al., 2020), where germline coding mutations (e.g., BRCA1) or somatic tissue (e.g., PIK3CA) are sufficient for disease. We also chose three quantitative traits: low- and high-density lipoprotein levels (LDL and HDL); and height. Between known Mendelian genes and those from Backman et al., 2021, our analysis included 220 unique gene-trait pairs (Figure 1).\n\n**Table 1.**\n Putatively causative Mendelian genes.Each gene includes reference(s) to the known biological role of its coding variants, as established in familial studies, in vitro experiments, and/or animal models. Genes from Backman et al., 2021 are not included here, but can be found in Figure 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Phenotype</th>\n      <th>Genes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Low-density lipoprotein</td>\n      <td>APOB Soria et al., 1989; Pullinger et al., 1995\u2009APOC2 Hegele et al., 1991\u2009APOE de Knijff et al., 1994\u2009LDLR Brown and Goldstein, 1976\u2009LPL Heizmann et al., 1991; Clee et al., 2001\u2009PCSK9 Abifadel et al., 2003</td>\n    </tr>\n    <tr>\n      <td>High-density lipoprotein</td>\n      <td>ABCA1\u2009Brooks-Wilson et al., 1999; Bodzioch et al., 1999; Rust et al., 1999; Ordovas et al., 1986\u2009APOA1\u2009Ordovas et al., 1986\u2009CETP\u2009Glueck et al., 1975\u2009LIPC Isaacs et al., 2004; Grarup et al., 2008; Iijima et al., 2008\u2009LIPG Yamakawa-Kobayashi et al., 2003\u2009PLTP Jiang et al., 1999\u2009SCARB1 Tai et al., 2003; McCarthy et al., 2003</td>\n    </tr>\n    <tr>\n      <td>Height</td>\n      <td>ANTXR1 Str\u00e1neck\u00fd et al., 2013; Bayram et al., 2014\u2009ATR O\u2019Driscoll et al., 2003; Ogi et al., 2012\u2009BLM Ellis et al., 1995; Foucault et al., 1997\u2009CDC6 Bicknell et al., 2011a\u2009CDT1 Bicknell et al., 2011a; Guernsey et al., 2011\u2009CENPJ AlDosari et al., 2010\u2009COL1A1 Wallis et al., 1990\u2009COL1A2 Spotila et al., 1992; De Paepe et al., 1997\u2009COMP Briggs et al., 1995; Mabuchi et al., 2003\u2009CREBBP Menke et al., 2016; Menke et al., 2018; Angius et al., 2019\u2009DNA2 Shaheen et al., 2014\u2009EP300 Woods et al., 2014; Tsai et al., 2011\u2009EVC Polymeropoulos et al., 1996; Ruiz-Perez et al., 2003\u2009EVC2 Ruiz-Perez et al., 2003; Galdzicka et al., 2002\u2009BN1 Faivre et al., 2003; Le Goff et al., 2011; Horn and Robinson, 2011; Takenouchi et al., 2013\u2009FGFR3 Hyland et al., 2003; Toydemir et al., 2006; Makrythanasis et al., 2014\u2009FKBP10 Alanay et al., 2010; Kelley et al., 2011; Barnes et al., 2013\u2009HR Berg et al., 1993; Woods et al., 1996; Goddard et al., 1995; Ayling et al., 1997\u2009KRAS Aoki et al., 2005; Schubbert et al., 2006; Carta et al., 2006\u2009NBN Varon et al., 1998; Tanzanella et al., 2003\u2009NIPBL Tonkin et al., 2004; Krantz et al., 2004\u2009ORC1 Bicknell et al., 2011a; Guernsey et al., 2011; Bicknell et al., 2011b\u2009RC4 Guernsey et al., 2011; Bicknell et al., 2011b\u2009ORC6L Bicknell et al., 2011a; de Munnik et al., 2012\u2009PCNT Rauch et al., 2008; Griffith et al., 2008; Piane et al., 2009\u2009PLOD2 van der Slot et al., 2003; HaVinh et al., 2004; Puig-Herv\u00e1s et al., 2012\u2009PTPN11 Tartaglia et al., 2001; Maheshwari et al., 2002; Kosaki et al., 2002\u2009RAD21 Deardorff et al., 2012; Kruszka et al., 2019; Goel and Parasivam, 2020\u2009RAF1 Pandit et al., 2007; Razzaque et al., 2007\u2009RECQL4 Lindor et al., 2000; Beghini et al., 2003; Wang et al., 2003\u2009RIT1 Aoki et al., 2013; Bertola et al., 2014; Gos et al., 2014\u2009ROR2 Afzal et al., 2000; van Bokhoven, 2000; Tufan et al., 2005\u2009SLC26A2 H\u00e4stbacka et al., 1993; Rossi and Superti-Furga, 2001; Barreda-Bonis et al., 2018\u2009SMAD4 Le Goff et al., 2012; Caputo et al., 2012; Lindor et al., 2012\u2009SRCAP Hood et al., 2012; Le Goff et al., 2013\u2009WRN Yu et al., 1996; Goto et al., 1997; Yu, 1997</td>\n    </tr>\n    <tr>\n      <td>Crohn disease</td>\n      <td>ATG16L1 Hampe et al., 2007\u2009CARD9 Rivas et al., 2011\u2009IL10 Fowler, 2005\u2009IL10RA Gasche et al., 2003; Mao et al., 2012\u2009IL10RB Glocker et al., 2009; Begue et al., 2011\u2009IL23R Duerr et al., 2006; Libioulle et al., 2007; Glas et al., 2007\u2009IRGM McCarroll et al., 2008; Craddock et al., 2010; Prescott et al., 2010\u2009NOD2 Ogura et al., 2001; Hugot et al., 2001\u2009PRDM1 Ellinghaus et al., 2013\u2009PTPN22 Diaz-Gallo et al., 2011</td>\n    </tr>\n    <tr>\n      <td>Ulcerative colitis</td>\n      <td>ATG16L1 Fowler et al., 2008\u2009CARD9 Rivas et al., 2011\u2009IL23R Glas et al., 2007; Fisher et al., 2008\u2009IRGM McCarroll et al., 2008\u2009PRDM1 Ellinghaus et al., 2013\u2009PTPN22 Diaz-Gallo et al., 2011\u2009RNF186 Rivas et al., 2016; Beaudoin et al., 2013</td>\n    </tr>\n    <tr>\n      <td>Type II diabetes</td>\n      <td>ABCC8 Reis et al., 2000\u2009BLK Borowiec et al., 2009\u2009CEL Bengtsson-Ellmark et al., 2004; Raeder et al., 2006\u2009EIF2AK3 Harding et al., 2001; Brickwood et al., 2003; Durocher et al., 2006\u2009GATA4 Shaw-Smith, 2014\u2009GATA6 Yorifuji et al., 2012; De Franco et al., 2013\u2009GCK Froguel et al., 1993\u2009GLIS3 Sen\u00e9e et al., 2006\u2009HNF1A Yamagata et al., 1996b; Vaxillaire et al., 1997\u2009HNF1B Horikawa et al., 1997; Lindner et al., 1999\u2009HNF4A Yamagata et al., 1996a; Stoffel and Duncan, 1997\u2009IER3IP1 Poulton et al., 2011; Abdel-Salam et al., 2012; Shalev et al., 2014\u2009INS St\u00f8y et al., 2007\u2009KCNJ11 Hani et al., 1998; Gloyn et al., 2004\u2009jKLF11 Neve et al., 2005\u2009LMNA Cao and Hegele, 2000\u2009NEUROD1 Malecki et al., 1999\u2009NEUROG3 Gradwohl et al., 2000; Rubio-Cabezas et al., 2011; Pinney et al., 2011\u2009PAX4 Shimajiri et al., 2001; Mauvais-Jarvis et al., 2004; Plengvidhya et al., 2007\u2009PDX1 Stoffers et al., 1997; Macfarlane et al., 1999; Hani et al., 1999\u2009PPARG Deeb et al., 1998; Savage et al., 2002\u2009PTF1A Sellick et al., 2004\u2009RFX6 Smith, 2010; Sansbury et al., 2015\u2009SLC19A2 Labay et al., 1999, Oishi et al., 2002; Shaw-Smith et al., 2012\u2009SLC2A2 Laukkanen et al., 2005; Sansbury et al., 2012\u2009WFS1 Strom et al., 1998; Hardy et al., 1999; Khanim et al., 2001\u2009ZFP57 Mackay et al., 2008; Boonen et al., 2013</td>\n    </tr>\n    <tr>\n      <td>Breast cancer (selected using MutPanning; Dietlein et al., 2020)</td>\n      <td>AKT1ARID1AATMBRCA1BRCA2CBFBCDH1CDKN1BCHEK2CTCFERBB2ESR1FGFR2FOXA1GATA3GPS2HS6ST1KMT2CKRASLRRC37A3MAP2K4MAP3K1NCOR1NF1NUP93PALB2PIK3CAPTENRB1RUNX1SF3B1STK11TBX3TP53ZFP36L1</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74970/elife-74970-fig1-v2.jpg)\n\n**Figure 1.:** The leftmost column in each half of the plot displays the entire group of putatively causative genes for our Mendelian set of genes and our (Backman et al., 2021) set of genes, respectively, as well as noting how many are unique to each set or shared between the two sets. The second column in each half indicates how many genes from each set have a nearby GWAS peak or have both a nearby GWAS peak and an expression QTL (eQTL). The remaining columns indicate how many genes were identified through colocalization, transcriptome-wide association studies (TWAS), or chromatin methods, while noting how many of these genes are unique vs. shared between the Mendelian and Backman sets.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74970/elife-74970-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) As the window around GWAS peaks shrinks, the enrichment of Mendelian genes within the window becomes increasingly significant, while the enrichment of non-matching trait pairs used as controls (gray lines; permutation test described in 'Materials and methods') is not consistently increased. Some controls achieve nominal significance (dotted horizontal line), but none reach significance once multiple testing is corrected for (solid horizontal line). (B) As above, but for genes from Backman et al., 2021. (C) The combined gene lists from parts (A) and (B). Note that, accounting for multiple test correction (based on the total number of tests across all panels), height does not reach significance using the Mendelian gene list, while T2D is barely significant using the Backman list. However, combining the lists increases power and demonstrates significance for all traits.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74970/elife-74970-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** By using the Bayesian method MASH to update our measurements of eQTLs based on tissues with similar expression patterns, we increased the number of colocalizations found. However, even in tissues in which the number of genes identified increased substantially, we did not meaningfully increase the number of putatively causative genes identified.\n\nIn well-powered GWAS, even relatively rare large-effect coding alleles (mutations in BRCA1 that cause breast cancer, for instance) may be detectable as an association to common variants, which could make the effect of a coding variant appear to be regulatory instead. To account for this possibility, we computed association statistics in each GWAS locus conditional on coding variants. We applied a direct conditional test to datasets with available individual-level genotype data (height, LDL, HDL); for those studies without available genotype data, we computed conditional associations from summary statistics using COJO (Yang et al., 2011; Yang et al., 2012; \u2018Materials and methods\u2019). With both methods, the resulting GWAS associations should reflect only non-coding variants.\n\nAfter controlling for coding variation, we examined whether these genes are more likely than chance to be in close proximity to variants associated with the polygenic form of each trait. In agreement with existing literature (Freund et al., 2018), we observe a significant enrichment for all traits in our combined Mendelian and Backman et al., 2021 gene sets (Figure 1\u2014figure supplement 1).\n\nOf our 220 genes, 147 (67%) fell within 1 Mb of a GWAS locus for the cognate complex trait, over three times as many as the 43 predicted by a random null model (95% confidence interval: 31.5\u201354.5). Our window of 1 Mb represents roughly the upper bound for distances identified between enhancer\u2013promoter pairs, but most pairs are closer (Nasser et al., 2021), so we would expect enrichment to increase as the window around genes decreases; this proves to be the case. At a distance of 100 kb, we find 104 putatively causative genes (47%), though the null model predicts only 11 (95% CI 4.5\u201317.0), an order-of-magnitude enrichment (Figure 1\u2014figure supplement 1). Given their known causal roles in the severe forms of each phenotype, these results suggest that the 147 genes near GWAS signals are likely to be the targets of trait-associated non-coding variants. For example, we see a significant GWAS association between breast cancer risk and variants in the estrogen receptor (ESR1) locus even after controlling for coding variation; the baseline expression model would thus predict that non-coding risk alleles alter ESR1 expression to drive breast cancer risk.\n\nWe next looked for evidence that the trait-associated variants were also altering the expression of our 147 genes in relevant tissues. Controlling for the number of tests we conducted, 134 (91.1%) of these genes had an eQTL in at least one relevant tissue at a false discovery rate (FDR) of Q < 0.05 (\u2018Materials and methods\u2019). If these variants act through changes in gene expression, phenotypic associations should be driven by some of the same variants as eQTLs in relevant tissue types. We therefore looked for co-localization between our GWAS signals and eQTLs in relevant tissues (Table 2) drawn from the GTEx Project using three well-documented methods: coloc (Giambartolomei et al., 2014), JLIM (Chun et al., 2017), and eCAVIAR (Hormozdiari et al., 2016). We found support for the colocalization of trait and eQTL association for only 7 genes out of 147 (4.8%) for coloc; 10/147 (6.8%) for JLIM; and 8/147 (5.4%) for eCAVIAR. Accounting for overlap, this represents only 18/220 putatively causative genes (8.2%) or 18/147 (12.2%) putatively causative genes near GWAS peaks, even without full multiple-hypothesis testing correction (\u2018Materials and methods\u2019), which is not obviously better than random chance. We note that prior estimates of the fraction of GWAS associations colocalizing with eQTLs (25\u201340%; Giambartolomei et al., 2014; Chun et al., 2017; Hormozdiari et al., 2016; Wen et al., 2017) do not directly evaluate the ability to find causative genes. By contrast, our estimate of the number of putatively causative genes that colocalize with eQTLs tests the consistency of our knowledge, models, and data.\n\n**Table 2.**\n Tissue-trait pairs.Tissues were selected for each trait based on a priori knowledge of disease biology.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mendelian trait</th>\n      <th>GWAS trait</th>\n      <th>Tissues examined</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Breast cancer</td>\n      <td>Breast cancer</td>\n      <td>Breast mammary tissue</td>\n    </tr>\n    <tr>\n      <td>Crohn disease</td>\n      <td>Crohn disease</td>\n      <td>Small intestine terminal ileumColon sigmoidColon transverse</td>\n    </tr>\n    <tr>\n      <td>Ulcerative colitis</td>\n      <td>Ulcerative colitis</td>\n      <td>Small intestine terminal ileumColon sigmoidColon transverse</td>\n    </tr>\n    <tr>\n      <td>DyslipidemiaHyperlipidemiaTangier\u2019s disease</td>\n      <td>High-density lipoprotein</td>\n      <td>LiverAdipose (subcutaneous)Whole blood</td>\n    </tr>\n    <tr>\n      <td>DyslipidemiaHyperlipidemia</td>\n      <td>Low-density lipoprotein</td>\n      <td>LiverAdipose (subcutaneous)Whole blood</td>\n    </tr>\n    <tr>\n      <td>Mendelian short stature</td>\n      <td>Height</td>\n      <td>Skeletal muscle</td>\n    </tr>\n    <tr>\n      <td>Monogenic diabetes</td>\n      <td>Type II diabetes</td>\n      <td>PancreasSkeletal muscleAdipose (subcutaneous)Small intestine terminal ileum</td>\n    </tr>\n  </tbody>\n</table>\n\nA potential weakness of our approach is the restriction of our search to predefined tissues. We believe this is necessary in order to avoid the disadvantages of testing each gene\u2013trait pair in each tissue\u2014either a large number of false positives or a severe multiple-testing correction that may lead to false negatives. However, restricting to the set of tissues with a known biological role and available expression data almost certainly leaves out tissues with relevance in certain contexts. Some of the tissues we do use have smaller sample sizes, limiting their power to detect eQTLs with smaller effects.\n\nTo address potential shortcomings from the available sample of tissue contexts, we incorporated the Multivariate Adaptive Shrinkage Method (MASH) (Urbut et al., 2019). MASH is a Bayesian method that takes genetic association summary statistics measured across a variety of conditions and, by determining patterns of similarity across conditions, updates the summary statistics of each individual condition. In our case, if an eQTL is difficult to find in a tissue of interest, incorporating information from other tissues may help us detect it. Unlike meta-analysis, this method generates summary statistics that still correspond to a specific tissue.\n\nWe ran MASH on every locus used in our earlier analysis using data from all non-brain GTEx tissues (\u2018Materials and methods\u2019). Rerunning coloc with these modified statistics increased the number of GWAS-eQTL colocalizations across all genes by 26% (from 389 to 489). However, the 100 new colocalizations identified only four additional putatively causative genes (Figure 1\u2014figure supplement 2). These results indicate that tissue-type selection was not the limiting factor in our analysis.\n\nTranscriptome-wide association studies (TWAS) (Gamazon et al., 2015; Gusev et al., 2016; Mancuso et al., 2017; Barbeira et al., 2018) are another class of methods applied to identify causative genes under GWAS peaks using gene expression. TWAS measures genetic correlation between traits and is not designed to avoid correlations caused by LD, which gives it higher power in the case of allelic heterogeneity or poorly typed causative variants (Wainberg et al., 2019). However, while sensitive, TWAS analyses typically yield expansive result sets that include many false positives and are sensitive to the number of tissue types (Wainberg et al., 2019). Results from the FUSION implementation of TWAS (Mancuso et al., 2017) across all tissues identified our putatively causative genes as likely tied to the GWAS peak in 66/220 loci (30%). However, only 4/220 (1.8%) genes were identified by FUSION when we restricted the analysis to relevant tissues.\n\nGiven the paucity of expression-mediated GWAS peaks, we asked whether GWAS variants in our study loci reside in likely regulatory sites. Taking the 128 genes in the Mendelian subset of putatively causative genes, we fine-mapped each nearby GWAS association using the SuSiE algorithm (Wang et al., 2020b). For 37 of these genes, we identified at least one high-confidence fine-mapped variant (defined as a variant with posterior inclusion probability, or PIP, greater than 0.7) within 100 kb of the transcription start site. We tested whether these fine-mapped variants fall within (i) regulatory DNA marked by DNase I hypersensitive sites (DHS) Meuleman et al., 2020; (ii) a narrowly mapped active histone modification feature (H3K27ac, H3K4me1, or H3K4me3; Nasser et al., 2021); or (iii) sites marked as an \u2018enhancer\u2019 by ChromHMM (Ernst and Kellis, 2012; Ernst and Kellis, 2017; \u2018Materials and methods\u2019). As many as 32/37 (86%) genes identified this way have a fine-mapped variants within a candidate regulatory region across all the tissue types examined, or 25/37 (68%) when restricting to trait-relevant tissues (Figure 2); (Supplementary file 1 and Supplementary file 2). Despite this strong evidence that these GWAS associations arise from effects on regulatory DNA, only 5/25 loci (20%) demonstrably correspond to expression effects in our eQTL analysis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74970/elife-74970-fig2-v2.jpg)\n\n**Figure 2.:** Columns 'Mend' and 'Backman' indicate whether a gene is from the Mendelian set of putatively causative genes, the Backman et al. set, or both. Subsequent columns indicate whether a gene was identified as a hit using each of our methods: JLIM, coloc, eCaviar, transcriptome-wide association studies (TWAS), and chromatin analysis.\n\nIn order to more analogously compare our regulatory feature analysis to our eQTL analysis, we computed \u2018activity-by-distance\u2019 (ABD)\u2014a simplification of the 'activity-by-contact' method that provides a measure connecting a distal regulatory region to a target gene (Nasser et al., 2021; Fulco et al., 2019; 'Materials and methods' Figure 3). Taking each locus\u2019s feature with the highest ABD score, we implicate 5/37 (14%) of our Mendelian subset of genes. As such, even when a GWAS association and trait-relevant gene are in the same locus, they are difficult to link, whether using eQTLs or current approaches to integrating chromatin data with target genes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74970/elife-74970-fig3-v2.jpg)\n\n**Figure 3.:** Following the fine-mapping of GWAS variants, three parallel methods were used. The first identified fine-mapped variants falling within regions annotated as enhancers by ChromHMM. The second identified variants within histone modification features and evaluated their relevance using an activity-by-distance (ABD) score that combined the strength of the feature (i.e., the strength of the acetylation or methylation peak) with its genomic distance to the gene of interest ('Materials and methods'). The third repeated both of these\u2014checking for fine-mapped variants within a region and calculating the ABD score\u2014for DNase I hypersensitivity sites.\n\n## Discussion\n\nOverall, our results are strongly consistent with the idea that complex traits are governed by non-coding genetic variants whose effects on phenotype are mediated by their contribution to the regulation of nearby genes. However, these same results are inconsistent with a model that such effects on gene regulation arise from the genetic influences on baseline gene expression that are captured by eQTLs.\n\nThe enrichment of putatively causative genes\u2014selected based on existing biological knowledge\u2014near GWAS peaks supports their role in complex traits. Additionally, the enrichment of fine-mapped GWAS variants in likely regulatory regions marked by DHS and other chromatin features lends support to the general model of GWAS associations arising from effects on gene regulation and expression. However, the inability of varied statistical methods to connect GWAS associations and expression argues against the idea that the causative GWAS variants exert their effects via the homeostatic or blended effects on gene expression that are captured by bulk-tissue eQTLs of the sort discovered by broad expression-data collection projects.\n\nMany explanations have been suggested for the limited success of expression-centric methods to explain the mechanisms of GWAS variants. Undirected, broad approaches\u2014including most GWAS-eQTL linking studies\u2014are designed to be largely independent of a priori biological knowledge and hypotheses. This unconstrained focus is ideal for discovery because it delivers the largest number of positive findings, but it is ill-suited for providing explanations for negative results\u2014when you do not know what you were looking for, it is hard to explain why you did not find it. By testing only loci for which there is a strongly suspected contributing gene, we were better able to distinguish which factors might prevent us from identifying GWAS-to-gene links using expression alone.\n\nAs a result, we conclude that a number of explanations often considered when evaluating expression-based variant-to-gene methods are not applicable in the context we examined. These include (i) non-expression-mediated mechanisms, (ii) lack of statistical power for GWAS, (iii) the absence of eQTLs for relevant genes, (iv) and underpowered methods for linking expression to GWAS (Table 3).\n\n**Table 3.**\n Proposed explanations for negative results under the unembellished model.Many explanations have been proposed for GWAS associations that are not explained by cis-QTLs. This table details the explanations inconsistent with our results, which are explained in the left column and addressed on the right. Explanations involving more detailed models of gene regulation can be found in Table 4. Two of the explanations addressed here involve violations of the assumptions of our and other expression-based complex trait studies. If coding and non-coding variants affect fundamentally different biological pathways, or if trait associations rarely depend on cis-eQTLs, our methods of mapping regulation to traits would have nothing to uncover. Even in the presence of eQTL-driven trait associations, insufficient power to detect trait associations, to detect eQTL associations, or to link the two would result in predominantly negative results.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Violated assumptions</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genes implicated via coding variants are irrelevant for non-coding associations</td>\n      <td>Our genes are enriched for GWAS associations even after removing the effects of coding variantsLoss-of-function variants, which underlie many Mendelian-trait genes, can be thought of as large-effect eQTLsGenes identified from Backman et al., 2021 are not based on cognate phenotypes, but the same complex phenotypes as GWAS</td>\n    </tr>\n    <tr>\n      <td>Regulatory mechanisms other than cis-eQTLs</td>\n      <td>Splice QTLs are consistently found to explain less phenotypic variance than eQTLs, and they cannot explain the many GWAS associations that fall within intergenic regionsTrans-eQTLs are believed to rely on their effects as cis-eQTLs for other genes; the few exceptions to this model (e.g., CTCF binding sites) are not broadly applicable</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Insufficient power</td>\n    </tr>\n    <tr>\n      <td>Lack of GWAS power</td>\n      <td>GWAS have been shown to have sufficient power to identify small effects even in rare variants2/3 of the genes we used have nearby GWAS associations, reflecting a strong enrichment and indicating that GWAS discovery is not a limiting factorOur analysis is conditioned on the presence of GWAS associations</td>\n    </tr>\n    <tr>\n      <td>Lack of eQTL mapping power</td>\n      <td>GTEx is well powered for eQTL discovery in bulk tissue GTEx Consortium, 2020; Gamazon et al., 201593% of our genes have a mapped cis-eQTL in a relevant tissue</td>\n    </tr>\n    <tr>\n      <td>Lack of power for colocalization and TWAS methods</td>\n      <td>Simulations show that colocalization and TWAS methods are well-powered Chun et al., 2017; Giambartolomei et al., 2018; Hormozdiari et al., 2016; Gusev et al., 2016; Hukku et al., 2021They are robust to levels of LD mismatch higher than what would be expected given our datasets Chun et al., 2017; Wainberg et al., 2019; Hukku et al., 2021Some, though not all, of the methods are robust to allelic heterogeneity Chun et al., 2017; Wainberg et al., 2019</td>\n    </tr>\n  </tbody>\n</table>\n\n_eQTL = expression QTL; TWAS = transcriptome-wide association studies._\n\nOur results suggest that there remains to be discovered a major component connecting variants to gene expression, which we term 'missing regulation.' We propose that this currently lacking component could be exposed by considering more nuanced experimental and analytical models of gene expression. One likely model involves context-dependent gene expression\u2014expression whose relevant effects are confined to (i) particular refined cell types or anatomical partitions, or (ii) cell states such as responses to perturbations, whether exogenous (e.g., environmental change) or endogenous (e.g., cell differentiation). A complementary model may incorporate heterogeneity of gene expression or the variance of expression across relatively short time scales. These models and others may depend on or be augmented by thresholding or buffering of variant effects, which may produce changes in gene expression with nonlinear effects on phenotype. A summary of proposed models can be found in Table 4.\n\n**Table 4.**\n Explaining negative results with more nuanced models of gene regulation.To reconcile an expression-based model with our observations requires us to both explain the absence of trait-linked eQTLs as well as explaining away the inconsequence of eQTLs for trait-linked genes. The left-hand side lists additions or changes to the unembellished model, while the right-hand side contains explanations of the models and current relevant research.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Extended models of gene regulation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Context dependency:a context-specific eQTL, invisible in bulk tissues analyzed to date, replaces or supplements the bulk tissue homeostatic eQTL</td>\n      <td>Cell type Dobbyn et al., 2018; Zhang et al., 2018; Schmiedel et al., 2018; Glastonbury et al., 2019; Rai et al., 2020; Findley et al., 2021; Neavin et al., 2021; Ota et al., 2021; Patel et al., 2021; Bryois et al., 2021; Arvanitis et al., 2022; Oelen et al., 2022; Perez et al., 2022; Schmiedel et al., 2022; Yazar et al., 2022Only a subset of cell types in the tissue contribute to the GWAS phenotype.An eQTL specific to such a cell type is causative for the phenotype.The eQTL either cannot be detected in bulk tissue because of the cell type\u2019s low prevalenceThe appropriate cellular or anatomical context has not yet been analyzed</td>\n    </tr>\n    <tr>\n      <td>Developmental timing Dobbyn et al., 2018; Strober et al., 2019; Cuomo et al., 2020; Bonder et al., 2021; Jerber et al., 2021; Ayg\u00fcn et al., 2022; Elorbany et al., 2022The GWAS phenotype depends on a specific point in cell/tissue development or differentiationeQTLs present at the correct interval contribute to phenotype, but eQTLs observed at other points do not</td>\n    </tr>\n    <tr>\n      <td>Cell state or environment Findley et al., 2021; Ota et al., 2021; Oelen et al., 2022; Schmiedel et al., 2022; Huh and Paulsson, 2011; Knowles et al., 2017; Kim-Hellmuth et al., 2017; Balliu et al., 2021; Mu et al., 2021; Ward et al., 2021; Nathan et al., 2022; Baca et al., 2022The causative eQTL has effects that are undetectable in steady-state expression under normal conditionsIt may activate only in response to a specific environmental condition, such as immune activation or a metabolic shift</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Nonlinear or non-homeostatic:the relationship between eQTL and genotype is indirect</td>\n      <td>Nonlinearity Fu et al., 2009; Dori-Bachash et al., 2011; Ghazalpour et al., 2011; Pai et al., 2012; Vogel and Marcotte, 2012; Khan et al., 2013; Wu et al., 2013; McManus et al., 2014; Albert and Kruglyak, 2015; Bader et al., 2015; Battle et al., 2015; Cenik et al., 2015; McManus et al., 2015; Pai et al., 2015; Schafer et al., 2015; Chick et al., 2016; Liu et al., 2016; Schaefke et al., 2018; Buccitelli and Selbach, 2020; Wang et al., 2020a; Kusnadi et al., 2022There may be buffering that prevents a change in expression from producing a change in protein levelsExpression below a certain level may not influence phenotype, rendering small eQTLs irrelevant</td>\n    </tr>\n    <tr>\n      <td>Steady-state expression may be a poor model Pedraza and Paulsson, 2008; Raj and van Oudenaarden, 2008; Shahrezaei and Swain, 2008; Larson et al., 2009; Raj and van Oudenaarden, 2009; Suter et al., 2011; Dar et al., 2012; Vi\u00f1uelas et al., 2013; Kumar et al., 2015; Nicolas et al., 2017; Qiu et al., 2019; Wang et al., 2020cPhenotype may depend on the kinetics of expression, which could be cyclical or follow some other patternExpression may be stochastic, such that only a random subset of cells display the relevant expression pattern at any one time</td>\n    </tr>\n  </tbody>\n</table>\n\n_eQTL = expression QTL._\n\nWe propose that finding the 'missing regulation' will require not only identifying novel eQTLs explaining GWAS peaks, but also explaining the phenotypic irrelevance of 'red herring eQTLs'\u2014that is, eQTLs for putatively causative genes that fall near GWAS peaks but do not colocalize with them. Above, we use the example genes APOE and LDLR. Both these genes harbor coding variants causing Mendelian hypercholesterolemia, and both have non-coding variants that GWAS have tied to LDL levels. Both have eQTLs in trait-relevant tissues. For APOE, these points cohere into an explanation: the LDL association is an eQTL for the lipid-binding gene. But for LDLR\u2014and for most genes\u2014the association, the mechanism, and the gene cannot be tied together.\n\nImportantly, our results do not diminish the importance or general utility of eQTLs. Rather, they suggest that current models are deficient in two respects: (i) they fail to unify trait-associated non-coding variants with known trait-associated genes, and (ii) they fail to explain the non-effects of identified 'red herring' eQTLs. These deficiencies highlight a need for new approaches to the role of gene regulation in complex traits.\n\nOne long-standing goal of GWAS has been to discover genes contributing to complex traits (Manolio et al., 2009; Farh et al., 2015), but low rates of positive findings for expression-based variant-to-gene methods have constrained this possibility (Chun et al., 2017; Baird et al., 2021). Among other challenges, this has limited the benefit of GWAS and expression data for disease-gene mapping and drug discovery (Baird et al., 2021; Umans et al., 2021). Another practical question raised is the value of current large-scale public datasets. Compared to genotypes, expression data are relatively difficult to collect, particularly from specialized cell contexts. If the most relevant models are shown to depend on effects not observable in homeostatic eQTL mapping, the field may need to consider prioritizing other biological contexts and forms of expression data.\n\n## Materials and methods\n\n### Gene selection\n\nBy manual literature search, we selected 128 genes harboring large-effect-size coding variants for one of the seven phenotypes (Table 1; specifically, we selected 128 gene\u2013trait pairs, representing 121 unique genes). These genes were identified using familial studies, rare disease exome-sequencing analyses, and, for breast cancer, using the MutPanning method (Dietlein et al., 2020) (citations for each gene are included in Table 1). Review papers, as well as the OMIM database (McKusick-nathans institute of genetic medicine, 2021), were generally used as starting points, but an examination of the original literature was needed to confirm genes\u2019 suitability. For example, though SMC3 is known to cause Cornelia de Lange syndrome, which is characterized in part by short stature, SMC3 mutations lead to a milder form of the syndrome, usually without a marked reduction in stature (Deardorff et al., 2007). Several of these phenotypes\u2014height, HDL, cholesterol, breast cancer, and type II diabetes\u2014were also analyzed in Backman et al., 2021, which, through burden testing, identified a total of 110 genes; after accounting for overlaps, this increased our set of putatively causative genes to 220.\n\nThe inclusion of genes from Backman et al. ensures that our results are not dependent on an undetected bias in our selection. The set of genes chosen from familial studies offered the advantage that it was selected based on independent methods and data distinct from the large-scale genotyping studies that have characterized the GWAS era. The tradeoff to this was the impossibility of selecting genes through a fully systematic and non-arbitrary process. Because this work was performed in the UKBB, there is some overlap between their data and ours. However, our work did not use exomes, and most of the variants driving their findings are too rare to influence GWAS results. When this is not the case, our decision to condition on coding variants should make the effects used in our work independent from their findings.\n\n### Identifying coding variants\n\nBecause GWAS sample sizes are large enough to detect the low-frequency coding variants used to select some of our genes, it is possible that a coding variant would distort the association signal of nearby eQTLs. To minimize this concern, we removed the effects of coding variants on GWAS. Many variants can fall within coding sequences in rare splice variants, so it is important to remove only those variants that appear commonly as coding. These coding variants were selected based on the pext (proportion of expression across transcripts) data (Cummings et al., 2020). Two filters were used. First, we removed genes whose expression in a trait-relevant tissue was below 50% of their maximum expression across tissues. Second, we removed variants that fell within the coding sequence of less than 25% of splice isoforms in that tissue. The remaining variants were used to correct GWAS signal, as explained below. The code for this analysis, and all other quantitative analyses in this paper, can be accessed at https://github.com/NJC12/missing_link_association_function (NJC12, 2023; copy archived at swh:1:rev:46d9072b7cc13f6532203d1494eec4d0f634e092).\n\n### GWAS\n\nFor height, LDL cholesterol, and HDL cholesterol, GWAS were performed using genotypic and phenotypic data from the UKBB. In order to avoid confounding, we restricted our sample to the 337K unrelated individuals with genetically determined British ancestry identified by Bycroft et al., 2017. The GWAS were run using Plink 2.0 (Chang et al., 2015), with the covariates age, sex, body mass index (for LDL and HDL only), 10 principal components, and coding variants.\n\n### Conditional analysis\n\nBecause UKBB has limited power for breast cancer, Crohn disease, ulcerative colitis, and type II diabetes, we used publicly available summary statistics. The Conditional and Joint Analysis (COJO) (Yang et al., 2011; Yang et al., 2012) program can condition summary statistics on selected variants\u2014in our case, coding variants\u2014by using an LD reference panel. For this reference, we used TOPMed subjects of European ancestry (Taliun et al., 2021). The ancestry of these subjects was confirmed with FastPCA (Galinsky et al., 2016a; Galinsky et al., 2016b), and the relevant data were extracted using bcftools (Danecek et al., 2021). Our conditional GWAS data are available at doi:10.5061/dryad.612jm644q.\n\n### Enrichment analysis\n\nAt each distance, the number of Mendelian and non-Mendelian genes within that window around GWAS peaks are counted. p-Values were calculated using Fisher\u2019s exact test (Figure 1, Figure 1\u2014figure supplement 1). Because Mendelian genes may be unusually important beyond our chosen traits, we conduct a set of controls by measuring the enrichment of non-matching Mendelian and complex traits (CD genes and BC GWAS; BC genes and LDL GWAS; LDL genes and UC GWAS; UC genes and height GWAS; height genes and T2D GWAS; T2D genes and HDL GWAS; HDL genes and CD GWAS).\n\n### eQTL detection\n\neQTL summary statistics were taken from GTEx v7. Some methods detect colocalization with variants that are individually significant, but would not pass a genome-wide threshold (Chun et al., 2017). Because we tested only a subset of genes, we used the Benjamini\u2013Hochberg method (Benjamini and Hochberg, 1995) to calculate the FDR based on the number of tests we conducted multiplied by a correction factor to account for variants that are tested in combination with a gene but are not reported (a factor of 20 closely matched the genome-wide FDR results for GTEx). With this method, 204/220 (93%) of our genes displayed an eQTL, including 134/147 genes with a nearby GWAS peak (91%). Even using the FDR statistics of the GTEx project\u2014which are based on the assumption of testing every gene in every tissue\u2014107/220 (49%) of our genes and 76/147 (52%) of genes near GWAS peaks had an eQTL at Q < 0.05.\n\n### Colocalization\n\nJLIM (Chun et al., 2017) was run using GWAS summary statistics and GTEx v7 genotypes and phenotypes for the tissues listed in Table 2. Coloc (Giambartolomei et al., 2014) was run using GWAS and GTEx v7 summary statistics for the same tissues. eCAVIAR (Hormozdiari et al., 2016) was run using GWAS and GTEx v7 summary statistics for these tissues, and a reference dataset of LD from UKBB (Weissbrod et al., 2020). MASH was run incorporating data from all non-brain tissues, and coloc was rerun using the adjusted values for the same tissues as before.\n\n### MASH\n\nMASH was applied to all GTEx tissues using the mashr R-package (Urbut et al., 2019). We restricted this model to non-brain tissues\u2014which include all of our trait-selected tissues\u2014due to the known tendency of brain and non-brain tissues to cluster separately in expression analysis (Battle et al., 2017; Park et al., 2017; Gamazon et al., 2019).\n\n### Fusion (TWAS)\n\nWe used the FUSION implementation of TWAS, which accounts for the possibility of multiple cis-eQTLs linked to the trait-associated variant by jointly calling sets of genes predicted to include the causative gene, to interrogate our 220 loci (Mancuso et al., 2017). FUSION included our putatively causative genes in the set identified as likely relevant to the GWAS peak in 66/220 loci (30%). However, interpretation of this TWAS result is difficult. For many complex traits, TWAS returns a large number of findings (e.g., >150 for LDL cholesterol and >4800 for height). This is in part due to the multiple genes jointly returned at a locus and can also be a result of the large number of tissues and cell types included in the implementation of FUSION. Most hits are found in tissues without any clear relevance to the trait and absent in relevant tissues\u2014LDL, for example, has more TWAS associations between expression and eQTL in prostate adenocarcinoma (24 genes associated), brain prefrontal cortex (23 genes associated), and transformed fibroblasts (21 genes associated) than it does in adipose (16 genes associated), blood (11 genes associated), or liver (5 genes associated). Individual genes were often identified as hits in multiple tissues, but with an inconsistent direction of effect\u2014that is, increased gene expression correlated with an increase in the quantitative trait or disease risk in some tissues, but a decrease in others, which suggests that the gene in question may not be the one whose expression contributes to the complex trait. Because of this possibility and the known biological role of many of our genes, we restricted our results to tissues with established relevance to our traits.\n\n### Fine-mapping GWAS hits\n\nWe fine-mapped the GWAS variants located within \u00b1100 kb of our putatively causative genes by applying the SuSiE algorithm (Wang et al., 2020b) on the unconditional summary statistics from the GWAS of breast cancer, Crohn disease, ulcerative colitis, type II diabetes, height, LDL cholesterol, and HDL cholesterol. An LD reference panel from UKBB subjects of European ancestry was used for this analysis. Fine-mapped variants were annotated using snpEff (v4.3t). Only non-coding variants were kept for further analysis.\n\n### Functional genomic annotation of fine-mapped hits\n\nWe projected fine-mapped GWAS variants onto active regions of the genome, identified using three alternative approaches: (i) histone modification features, (ii) DHS, and (iii) ChromHMM enhancers.\n\nFirst, we looked at three histone modification marks, namely, acetylation of histone H3 lysine 27 residues (H3K27ac), mono-methylation of histone H3 lysine 4 residues (H3K4me1), and tri-methylation of lysine 4 residues (H3K4me3) from the Roadmap Epigenomics Project (Wainberg et al., 2019) to identify functional enhancers, which are key contributors of tissue-specific gene regulation. We downloaded imputed narrowPeak sets for H3K27ac, H3K4me1, and H3K4me3 from the Roadmap Epigenomics Project (Wainberg et al., 2019) ftp site (available here) for 14 different tissue types (Supplementary file 1). For each tissue type, we extracted the narrow peaks that are within \u00b15 Mb of our putatively causative genes. Then following the approach described in Fulco et al. Barbeira et al., 2018, we extended the 150 bp narrow peaks by 175 bp on both sides to arrive at candidate features of 500 bp in length. All features mapping to blacklisted regions (https://sites.google.com/site/anshul kundaje/projects/blacklists) were removed (Kundaje et al., 2015). The remaining features were re-centered around the peak and overlapping features were merged to give the final set of features per histone modification track. The mean activity/strength of a feature (AF) was calculated by taking the geometric mean of the corresponding peak strengths from H3K27ac, H3K4me1, and H3K4me3 marks. We then combined these activity measurements with the linear distances between the features and the transcription start sites of causative genes to compute ABD scores (a simplified version of ABC scores Barbeira et al., 2018) for gene\u2013feature pairs using the following formula:\n\n$$\nABDscore_{F,G}=\\frac{A_{F}\\times1/d_{F,G}}{\\sumallfwithin\\pm5MbofGA_{f}\\times1/d_{f,G}}\n$$\n\nThe ABD score can be thought of as a measure of the contribution of a feature, F to the combined regulatory on gene, G. A high ABD score may serve as a proxy for an increased specificity between a chromatin feature and the gene of interest. We projected the fine-mapped variants onto the chromatin features in different tissue types to assess whether there is an enrichment of likely causal GWAS hits in regulatory features near our putatively causative genes. Both proximity (genomic distance) and specificity (ABD scores) were considered to determine the regulatory contribution of the fine-mapped hits.\n\nNext, we looked at the DHS that are considered to be generic markers of the regulatory DNA and can contain genetic variations associated with traits and diseases (Meuleman et al., 2020). We downloaded the index of human DHS along with biosample metadata from https://www.meuleman.org/research/dhsindex/. The index was in hg38 coordinates, which were converted to hg19 coordinates using the online version of the hgLiftOver package (https://genome.ucsc.edu/cgi-bin/hgLiftOver). We created a DHS index for each tissue type relevant to the traits and diseases we analyzed by including all DHS that are present in at least one biosample from a certain tissue type (Supplementary file 2). We then selected DHS that lie within \u00b1100 kb of the TSS of our putatively causative genes. Since DHS are of variable widths, we recentered the summits in a 350 bp window and merged overlapping sites in the same way as we did for other chromatin marks. We calculated the mean activity (AF) by averaging the strengths of all the merged sites. Next, we calculated the activity by distance score for each DHS and gene pair using the same formula described above. Finally, for each fine-mapped variant, we identified all DHS that fall within \u00b1100 kb of the variant.\n\nFinally, we used in silico chromatin state predictions (chromHMM core 15-state model Wainberg et al., 2019) for relevant tissue types (Supplementary file 1) to identify active enhancer regions in the genome. Tissue-specific chromHMM annotations were downloaded from the Roadmap Epigenomics Project Wainberg et al., 2019 ftp site (available here). We considered a fine-mapped variant to fall in an enhancer region if it was housed within a chromHMM segment described as either enhancer, or bivalent enhancer, or genic enhancer. Since chromHMM annotations are not accompanied by activity measurements, the ABD approach could not be applied here.\n",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "4582488d-ce19-4204-881e-8cedbcdca35d",
+      "submission_id": "ad16c7d2-7eef-44e3-9f4f-05a9a75320b0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan Flint, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74970.sa0](https://doi.org/10.7554/eLife.74970.sa0)\n\nThe findings reported here are important because they address the issue of how complex traits arise from their genetic underpinnings. There is an assumption that genetically mediated variation in transcript abundance, usually detected via analysis of expressed quantitative trait loci, is key to this process, but we lack robust evidence in support of that view. This article finds limited evidence that the baseline expression of trait-related genes explains the associations between complex traits and genetic variants (as identified from genome-wide association studies), leading to the view that the field needs to confront a problem of 'missing regulation.'\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jonathan Flint, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74970.sa1](https://doi.org/10.7554/eLife.74970.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The missing link between genetic association and regulatory function\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Molly Przeworski as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll the reviewers agreed that you've identified important concerns regarding the hypothesis that the majority of genetic variants contributing to complex traits act by the altering transcript abundance. However we would like you to address the following points:\n\n1) Most importantly, we're not convinced you've chosen an appropriate set of genes to make your case. Your assumption that Mendelian and cognate complex traits share the same set of causal genes needs further justification. One possibility might be to use as a starting point the association between GWAS and rare variant analyses reported in the UK biobank data\n\nhttps://doi.org/10.1038/s41586-021-04103-z\n\nand/or data from the recent study of obesity (https://www.science.org/doi/10.1126/). The enrichments reported in those papers are higher than the Cell paper you quote, and would provide a set of genes that are not selected on the basis of Mendelian large effects.\n\n2) If you choose to focus on the 143 genes from Mendelian genetics then there are a number of issues you need to resolve.\n\n(i) why are candidate genes were not enriched in the GWAS regions for height and breast cancer?\n\n(ii) we suggest you quantify the number of genes in the GWAS regions expected to be found if the 143 genes had been randomly selected. Correcting the observed number of genes for that expected by chance (e.g., subtracting the observed number by that expected by chance), the proportion of candidate genes in the GWAS regions is likely to be small.\n\n3) Tissue context. The tissues listed in Table 2 omit some that are relevant to the phenotype (such as bone for height (Finucane et al. 2015 NG)). Expanding this list and selecting appropriate tissues might substantially alter your conclusions. Among the 84 putatively causative genes that overlap GWAS signals, the number that overlap is reduced substantially when restricting analysis to the selected tissues for each trait. If genes function only in the relevant tissues, using bulk expression data loses power, but is unlikely to give false positives. Thus, it is possible that for the traits analysed, not all relevant tissues are selected, so that only a fraction of genes identified in the bulk expression analysis can be replicated in the tissue-specific analysis.\n\n4) How much do both LD differences between GWAS and eQTL samples and the presence of allelic heterogeneity contribute to the observed low colocalization rate? While we agree that power for locus detection is probably not a big issue, sample size differences betweenGWAS and GTEx datasets might make small differences in LD between the two samples cause a statistical separation of the signals, even when trait phenotype and gene expression truly share a causal variant.\n\nThe presence of more than one causal variant with allelic heterogeneity at the locus may also play a part in the failure of colocalization. Consider two causal variants for the complex trait, one regulating the target gene and the other regulating another gene in co-expression. Potentially, the presence of the second causal variant would diminish the colocalization probability at the target gene.\n\nOne possible way to deal with these issues is to perform simulations to quantify the influence of tissue-specific expression effects, LD differences between eQTL and well-powered GWAS, and allelic heterogeneity. At the least, we think you should discuss the problems we raise here in some detail.\n\n5) TWAS results. While only 6% of the putatively causative genes are identified by TWAS with the correct direction of effect, this number is misleading as one may interpret it as meaning that only 6% of the functionally relevant genes are regulated by trait-associated variants. In fact, 46% of the genes are detected by TWAS, but only 11% are confirmed in their selected tissues, among which about half (5/9) have correct direction of effect. The result could be due to the selection of relevant tissues, or it may reflect a nonlinear relationship between expression and trait or the presence of cell type heterogeneity within a tissue. Again we think a more nuanced discussion of this issue is important.\n\nReviewer #1 (Recommendations for the authors):\n\nThe number of traits examined (seven or nine) limits the generalizability of the findings. The study would strongly benefit from adding more traits. In addition, the study would benefit from the inclusion of results from the few available cell-type-specific/dependent eQTLs from single-cell or deconvolved bulk RNA-Seq experiments.\n",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9328cb5b-354d-43a0-8d0e-bc43f12b21ba",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C1",
+      "claim": "The genetic basis of most traits is highly polygenic and dominated by non-coding alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic basis of most traits is highly polygenic and dominated by non-coding alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific consensus in the field of complex trait genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "fb98dcb6-4298-43a7-8b6b-9305ab94ee59",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C2",
+      "claim": "It is widely assumed that non-coding alleles exert small regulatory effects on the expression of cis-linked genes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely assumed that such alleles exert small regulatory effects on the expression of cis-linked genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a prevailing assumption in the field, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "330f7dd9-ea27-4ad3-9ba7-8585d24ac50b",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C3",
+      "claim": "220 gene\u2013trait pairs were identified in which protein-coding variants influence a complex trait or its Mendelian cognate.",
+      "claim_type": "EXPLICIT",
+      "source": "To better distinguish between these possibilities, we identified 220 gene\u2013trait pairs in which protein-coding variants influence a complex trait or its Mendelian cognate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data collection and analysis described in the manuscript, including Table 1 and references to Backman et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "042bb75e-5f9c-49ff-ba39-65f3fb893b16",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C4",
+      "claim": "Expression quantitative trait loci are present near most GWAS associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the presence of expression quantitative trait loci near most GWAS associations, by applying a gene-based approach we found limited evidence that the baseline expression of trait-related genes explains GWAS associations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis showing 91.1% of genes near GWAS peaks had eQTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "e32c61f7-dab5-4a73-9d3c-644706f0b546",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C5",
+      "claim": "Only 8% of putatively causative genes were implicated by colocalization methods.",
+      "claim_type": "EXPLICIT",
+      "source": "by applying a gene-based approach we found limited evidence that the baseline expression of trait-related genes explains GWAS associations, whether using colocalization methods (8% of genes implicated)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the colocalization analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "bcd10daf-2692-49e6-abe1-ac8c9f474107",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C6",
+      "claim": "Only 2% of putatively causative genes were implicated by transcription-wide association studies.",
+      "claim_type": "EXPLICIT",
+      "source": "transcription-wide association (2% of genes implicated)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the TWAS analysis results when restricted to relevant tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "6a468328-446d-4692-9d36-ab74a1cd7fda",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C7",
+      "claim": "Only 4% of putatively causative genes were implicated by a combination of regulatory annotations and distance.",
+      "claim_type": "EXPLICIT",
+      "source": "or a combination of regulatory annotations and distance (4% of genes implicated)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the chromatin analysis results using activity-by-distance scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "4de8beb2-5d7c-4d6b-995f-2a1b1ede4325",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C8",
+      "claim": "These results contradict the hypothesis that most complex trait-associated variants coincide with homeostatic expression QTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results contradict the hypothesis that most complex trait-associated variants coincide with homeostatic expression QTLs, suggesting that better models are needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the low rates of colocalization and TWAS findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "32c0ce23-02f5-48db-82ca-d32156df6497",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C9",
+      "claim": "The 'mystery of missing heritability' refers to the inability of common and rare variants to explain a large fraction of trait heritability.",
+      "claim_type": "EXPLICIT",
+      "source": "the 'mystery of missing heritability,' in which no combination of common and rare variants can explain a large fraction of trait heritability (Manolio et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Manolio et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "d826a23b-eff8-4995-9c30-b24f3b4c1e65",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C10",
+      "claim": "Most human traits exhibit unexpectedly high polygenicity with very small effect sizes for individual variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Further work has revealed unexpectedly high polygenicity for most human traits and very small effect sizes for individual variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge from the field of complex trait genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "f5eac999-ef2a-40a4-b648-a790a6c82206",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C11",
+      "claim": "A large fraction of heritability resides in regions with gene regulatory potential, predominantly tissue-specific accessible chromatin and enhancer elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichment analyses have demonstrated that a large fraction of heritability resides in regions with gene regulatory potential, predominantly tissue-specific accessible chromatin and enhancer elements, suggesting that trait-associated variants influence gene regulation (Maurano et al., 2012; Trynka et al., 2013; Gusev et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies (Maurano et al., 2012; Trynka et al., 2013; Gusev et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "39eb9709-5549-4087-9d88-cc103e08cb3f",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C12",
+      "claim": "Genes in trait-associated loci are more likely to have genetic variants that affect their expression levels (eQTLs).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, genes in trait-associated loci are more likely to have genetic variants that affect their expression levels (expression quantitative trait loci, or eQTLs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge from eQTL studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "1ad070f8-4d48-47b7-ac4a-3479e0a7c624",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C13",
+      "claim": "Variants with the strongest trait associations are more likely to be associated with transcript abundance of at least one proximal gene.",
+      "claim_type": "EXPLICIT",
+      "source": "and the variants with the strongest trait associations are more likely also to be associated with transcript abundance of at least one proximal gene (Nicolae et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Nicolae et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "79ba7ae3-22c7-47a9-9530-bdcc397e23a7",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C14",
+      "claim": "A model has emerged in which most trait-associated variants influence proximal gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a model has emerged in which most trait-associated variants influence proximal gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the prevailing model in the field based on accumulated evidence.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "4c874544-7025-4311-a0a0-9dce3151e82c",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C15",
+      "claim": "The unembellished model in which GWAS peaks are mediated by effects on homeostatic expression assayed in tissue samples is the exception rather than the rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we argue that this unembellished model\u2014in which genome-wide association study (GWAS) peaks are mediated by the effects on the homeostatic expression assayed in tissue samples\u2014is the exception rather than the rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main argument of the paper, inferred from the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "3259ca31-8b86-4e76-82a0-95de9e2d5491",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C16",
+      "claim": "There is a difference between spatial distributions of eQTLs and GWAS peaks, with eQTLs dramatically enriched in close proximity to genes while GWAS peaks are usually farther away.",
+      "claim_type": "EXPLICIT",
+      "source": "One challenge is the difference between spatial distributions of eQTLs, which are dramatically enriched in close proximity to genes, and GWAS peaks, which are usually farther away (Stranger et al., 2007; Farh et al., 2015; Mostafavi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies (Stranger et al., 2007; Farh et al., 2015; Mostafavi et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "e5ddf1fc-8a99-4383-8c4a-772e30c43d28",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C17",
+      "claim": "Expression levels mediate a minority of complex trait heritability.",
+      "claim_type": "EXPLICIT",
+      "source": "Another is that expression levels mediate a minority of complex trait heritability (Yao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yao et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "4aa0cdf9-619a-4580-99ee-3902d1622ad8",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C18",
+      "claim": "Only 5\u201340% of trait associations colocalize with eQTLs across studies.",
+      "claim_type": "EXPLICIT",
+      "source": "If the model is correct, most trait associations should also be eQTLs, but across studies, only 5\u201340% of trait associations colocalize with eQTLs (Giambartolomei et al., 2014; Chun et al., 2017; Giambartolomei et al., 2018; Hormozdiari et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple colocalization studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "a623beff-1609-4dde-b197-3c5a75bbc158",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C19",
+      "claim": "Genes whose coding variants can cause detectable phenotypic change are expected to be influenced by variants of small effect.",
+      "claim_type": "EXPLICIT",
+      "source": "For genes whose coding variants can cause detectable phenotypic change, the strong expectation is that a variant of small effect influences the gene identified by its rare coding variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on biological reasoning and inference from the relationship between Mendelian and complex traits.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "06d6bb41-3705-4428-9b2a-3bdbe29f8c83",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C20",
+      "claim": "APOE and LDLR are both low-density lipoprotein receptor genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, APOE and LDLR are both low-density lipoprotein receptor genes (Schneider et al., 1981; Goldstein and Brown, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schneider et al., 1981 and Goldstein and Brown, 1973.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "862000e7-24c1-4235-b010-c8402c076cd5",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C21",
+      "claim": "Coding variants in APOE and LDLR can lead to the Mendelian disorder familial hypercholesterolemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Coding variants in APOE and LDLR can lead to the Mendelian disorder familial hypercholesterolemia (Goldstein and Brown, 1973; Cenarro et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Goldstein and Brown, 1973 and Cenarro et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "beb86b19-ad44-48de-a2b7-419b6c8a4b27",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C22",
+      "claim": "Overexpression of APOE and LDLR in animal models reduces cholesterol levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the absence of a Mendelian coding variant, experiments in animal models have found that the overexpression of these genes reduces cholesterol levels (Shimano et al., 1992a; Shimano et al., 1992b; Kawashiri et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies in animal models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "b38477c8-0739-4742-b3b0-1b60b1f5c6d1",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C23",
+      "claim": "GWAS on human subjects have found significant associations near APOE and LDLR.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS on human subjects have found significant associations near APOE and LDLR",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established GWAS findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "f3a9f78a-a284-4b70-959a-c5deb1119133",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C24",
+      "claim": "The analysis included four common diseases: type II diabetes, ulcerative colitis, Crohn disease, and breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our selection included four common diseases: type II diabetes (T2D) (Mahajan et al., 2018), where early-onset familial forms are caused by rare coding mutations (insulin-independent MODY; neonatal diabetes; maternally inherited diabetes and deafness; familial partial lipodystrophy); ulcerative colitis (UC) and Crohn disease (CD) (Liu et al., 2015; Goyette et al., 2015), which have Mendelian pediatric forms characterized by severity of presentation; and breast cancer (BC) (Zhang et al., 2020), where germline coding mutations (e.g., BRCA1) or somatic tissue (e.g., PIK3CA) are sufficient for disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and data sources used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "0de4e563-55ce-4f0d-89a9-ec1d9b2d3d93",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C25",
+      "claim": "The analysis included three quantitative traits: low- and high-density lipoprotein levels and height.",
+      "claim_type": "EXPLICIT",
+      "source": "We also chose three quantitative traits: low- and high-density lipoprotein levels (LDL and HDL); and height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "c1d20e17-5a26-4a87-bb6e-b8ca858484d7",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C26",
+      "claim": "The analysis included 220 unique gene-trait pairs between known Mendelian genes and those from Backman et al., 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Between known Mendelian genes and those from Backman et al., 2021, our analysis included 220 unique gene-trait pairs (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data collection described and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "2e84cb0b-6142-4568-912c-5b5625f0eec8",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C27",
+      "claim": "147 out of 220 genes (67%) fell within 1 Mb of a GWAS locus for the cognate complex trait.",
+      "claim_type": "EXPLICIT",
+      "source": "Of our 220 genes, 147 (67%) fell within 1 Mb of a GWAS locus for the cognate complex trait, over three times as many as the 43 predicted by a random null model (95% confidence interval: 31.5\u201354.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "112cac55-346b-42b7-8467-9c4271a4ad44",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C28",
+      "claim": "The enrichment of putatively causative genes near GWAS peaks is over three times higher than predicted by a random null model.",
+      "claim_type": "EXPLICIT",
+      "source": "Of our 220 genes, 147 (67%) fell within 1 Mb of a GWAS locus for the cognate complex trait, over three times as many as the 43 predicted by a random null model (95% confidence interval: 31.5\u201354.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical comparison to a null model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "01cd7989-4b4d-44a4-8bb5-3d690e3398ec",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C29",
+      "claim": "At a distance of 100 kb, 104 putatively causative genes (47%) were found near GWAS peaks, while the null model predicts only 11.",
+      "claim_type": "EXPLICIT",
+      "source": "At a distance of 100 kb, we find 104 putatively causative genes (47%), though the null model predicts only 11 (95% CI 4.5\u201317.0), an order-of-magnitude enrichment (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the enrichment analysis results shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "f6f01d0e-f2b1-4540-844c-4ba698015ebe",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C30",
+      "claim": "The enrichment of putatively causative genes near GWAS peaks represents an order-of-magnitude enrichment at 100 kb distance.",
+      "claim_type": "EXPLICIT",
+      "source": "At a distance of 100 kb, we find 104 putatively causative genes (47%), though the null model predicts only 11 (95% CI 4.5\u201317.0), an order-of-magnitude enrichment (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis comparing observed to expected values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "3d5c1642-7d1d-4656-a761-ffe198fade71",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C31",
+      "claim": "134 out of 147 genes (91.1%) near GWAS peaks had an eQTL in at least one relevant tissue at FDR Q < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Controlling for the number of tests we conducted, 134 (91.1%) of these genes had an eQTL in at least one relevant tissue at a false discovery rate (FDR) of Q < 0.05 ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the eQTL detection analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "7904b51e-9d21-4814-a37b-6934a2e47163",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C32",
+      "claim": "Only 7 genes out of 147 (4.8%) showed colocalization of trait and eQTL association using coloc.",
+      "claim_type": "EXPLICIT",
+      "source": "We found support for the colocalization of trait and eQTL association for only 7 genes out of 147 (4.8%) for coloc",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the colocalization analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "41208c38-d382-41b4-9c09-c56d24ffebee",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C33",
+      "claim": "Only 10 genes out of 147 (6.8%) showed colocalization of trait and eQTL association using JLIM.",
+      "claim_type": "EXPLICIT",
+      "source": "10/147 (6.8%) for JLIM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the colocalization analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "b380da70-554d-4537-b7aa-2a015c1c5959",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C34",
+      "claim": "Only 8 genes out of 147 (5.4%) showed colocalization of trait and eQTL association using eCAVIAR.",
+      "claim_type": "EXPLICIT",
+      "source": "and 8/147 (5.4%) for eCAVIAR",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the colocalization analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "bd278323-3403-4366-9f3c-ff2bd2e4afd8",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C35",
+      "claim": "Accounting for overlap, only 18 out of 220 putatively causative genes (8.2%) showed colocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for overlap, this represents only 18/220 putatively causative genes (8.2%) or 18/147 (12.2%) putatively causative genes near GWAS peaks",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the combined colocalization analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "cad3511f-ae92-43ec-a805-091bed979b65",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C36",
+      "claim": "Prior estimates suggest 25\u201340% of GWAS associations colocalize with eQTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that prior estimates of the fraction of GWAS associations colocalizing with eQTLs (25\u201340%; Giambartolomei et al., 2014; Chun et al., 2017; Hormozdiari et al., 2016; Wen et al., 2017) do not directly evaluate the ability to find causative genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "74eec97b-cc5c-4fd2-a384-c17e80954d59",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C37",
+      "claim": "MASH increased the number of GWAS-eQTL colocalizations across all genes by 26% (from 389 to 489).",
+      "claim_type": "EXPLICIT",
+      "source": "Rerunning coloc with these modified statistics increased the number of GWAS-eQTL colocalizations across all genes by 26% (from 389 to 489).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the MASH analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "72f51c04-ae0b-4b96-9f1a-35bde0674fbe",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C38",
+      "claim": "The 100 new colocalizations identified by MASH identified only four additional putatively causative genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the 100 new colocalizations identified only four additional putatively causative genes (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the MASH analysis results shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "332c9d3a-a81d-4ae3-b31c-c77ecac9e2cb",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C39",
+      "claim": "Tissue-type selection was not the limiting factor in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that tissue-type selection was not the limiting factor in our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the MASH results showing minimal improvement in identifying putatively causative genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "23e82f9b-dde0-4662-8c36-60cb89635c8b",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C40",
+      "claim": "FUSION TWAS identified putatively causative genes as likely tied to the GWAS peak in 66 out of 220 loci (30%).",
+      "claim_type": "EXPLICIT",
+      "source": "FUSION included our putatively causative genes in the set identified as likely relevant to the GWAS peak in 66/220 loci (30%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the TWAS analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "2df0674b-a8fa-4157-a280-8f810760dff0",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C41",
+      "claim": "Only 4 out of 220 genes (1.8%) were identified by FUSION when restricted to relevant tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only 4/220 (1.8%) genes were identified by FUSION when we restricted the analysis to relevant tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the tissue-restricted TWAS analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "56d9dc24-5289-4af4-8f91-b10227ede572",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C42",
+      "claim": "For 37 genes in the Mendelian subset, at least one high-confidence fine-mapped variant (PIP > 0.7) was identified within 100 kb of the transcription start site.",
+      "claim_type": "EXPLICIT",
+      "source": "For 37 of these genes, we identified at least one high-confidence fine-mapped variant (defined as a variant with posterior inclusion probability, or PIP, greater than 0.7) within 100 kb of the transcription start site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the fine-mapping analysis using SuSiE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "036fdbd0-dcaa-4683-96ef-7d7585f82690",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C43",
+      "claim": "32 out of 37 genes (86%) have a fine-mapped variant within a candidate regulatory region across all tissue types examined.",
+      "claim_type": "EXPLICIT",
+      "source": "As many as 32/37 (86%) genes identified this way have a fine-mapped variants within a candidate regulatory region across all the tissue types examined",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the functional genomic annotation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "466f8f8f-5048-4dcc-af35-bbed301ae4dd",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C44",
+      "claim": "25 out of 37 genes (68%) have a fine-mapped variant within a candidate regulatory region when restricting to trait-relevant tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "or 25/37 (68%) when restricting to trait-relevant tissues (Figure 2); (Supplementary file 1 and Supplementary file 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the tissue-restricted functional genomic annotation analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "9a462d47-c680-40d2-8fe2-901f6d7d141a",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C45",
+      "claim": "Only 5 out of 25 loci (20%) with fine-mapped variants in regulatory regions demonstrably correspond to expression effects in eQTL analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this strong evidence that these GWAS associations arise from effects on regulatory DNA, only 5/25 loci (20%) demonstrably correspond to expression effects in our eQTL analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by comparing the regulatory annotation results with eQTL colocalization results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "b2d7c5b7-7fcd-43a0-9492-fb2c0c5fbf9a",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C46",
+      "claim": "Using activity-by-distance scores, 5 out of 37 genes (14%) from the Mendelian subset were implicated.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking each locus's feature with the highest ABD score, we implicate 5/37 (14%) of our Mendelian subset of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the ABD score analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "59bc366c-82c0-41d4-91b7-acc9c6771e9e",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C47",
+      "claim": "The results are strongly consistent with the idea that complex traits are governed by non-coding genetic variants whose effects on phenotype are mediated by their contribution to the regulation of nearby genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results are strongly consistent with the idea that complex traits are governed by non-coding genetic variants whose effects on phenotype are mediated by their contribution to the regulation of nearby genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment of putatively causative genes near GWAS peaks and the presence of regulatory features.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "e6c425b0-33ae-41da-8c37-6f2c6eabfab1",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C48",
+      "claim": "The results are inconsistent with a model that effects on gene regulation arise from genetic influences on baseline gene expression captured by eQTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these same results are inconsistent with a model that such effects on gene regulation arise from the genetic influences on baseline gene expression that are captured by eQTLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low rates of colocalization between GWAS peaks and eQTLs for putatively causative genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "d48067ea-f110-46dc-8960-67077be16878",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C49",
+      "claim": "The enrichment of putatively causative genes near GWAS peaks supports their role in complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of putatively causative genes\u2014selected based on existing biological knowledge\u2014near GWAS peaks supports their role in complex traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "fd586b1a-7309-49cd-85a9-7b5b444c2edb",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C50",
+      "claim": "The enrichment of fine-mapped GWAS variants in likely regulatory regions supports the general model of GWAS associations arising from effects on gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the enrichment of fine-mapped GWAS variants in likely regulatory regions marked by DHS and other chromatin features lends support to the general model of GWAS associations arising from effects on gene regulation and expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional genomic annotation analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "e1edef38-28db-48a1-b3f5-461dff47f4d4",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C51",
+      "claim": "The inability of varied statistical methods to connect GWAS associations and expression argues against the idea that causative GWAS variants exert their effects via homeostatic or blended effects on gene expression captured by bulk-tissue eQTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the inability of varied statistical methods to connect GWAS associations and expression argues against the idea that the causative GWAS variants exert their effects via the homeostatic or blended effects on gene expression that are captured by bulk-tissue eQTLs of the sort discovered by broad expression-data collection projects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low success rates of colocalization and TWAS methods.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "fb21bdc5-a985-4e82-b2fb-18d675178bdc",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C52",
+      "claim": "Non-expression-mediated mechanisms are not applicable as an explanation for the negative results in the context examined.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we conclude that a number of explanations often considered when evaluating expression-based variant-to-gene methods are not applicable in the context we examined. These include (i) non-expression-mediated mechanisms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the study design and results, particularly the enrichment of regulatory features.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "27019b0c-4907-4c49-b33c-4d73e54c9d1f",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C53",
+      "claim": "Lack of statistical power for GWAS is not applicable as an explanation for the negative results in the context examined.",
+      "claim_type": "EXPLICIT",
+      "source": "These include (i) non-expression-mediated mechanisms, (ii) lack of statistical power for GWAS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that 67% of genes were near GWAS peaks, indicating sufficient GWAS power.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "a86bea37-24e2-4806-b763-a61da2735c7f",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C54",
+      "claim": "The absence of eQTLs for relevant genes is not applicable as an explanation for the negative results in the context examined.",
+      "claim_type": "EXPLICIT",
+      "source": "These include (i) non-expression-mediated mechanisms, (ii) lack of statistical power for GWAS, (iii) the absence of eQTLs for relevant genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that 91.1% of genes near GWAS peaks had eQTLs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "562c08a2-3ae7-44dd-af43-de2d70dfb91d",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C55",
+      "claim": "Underpowered methods for linking expression to GWAS are not applicable as an explanation for the negative results in the context examined.",
+      "claim_type": "EXPLICIT",
+      "source": "These include (i) non-expression-mediated mechanisms, (ii) lack of statistical power for GWAS, (iii) the absence of eQTLs for relevant genes, (iv) and underpowered methods for linking expression to GWAS (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the use of multiple well-powered methods and the consistency of negative results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "f5e2bcd6-cea2-4b63-91f8-676ac25f1aaa",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C56",
+      "claim": "There remains to be discovered a major component connecting variants to gene expression, termed 'missing regulation.'",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that there remains to be discovered a major component connecting variants to gene expression, which we term 'missing regulation.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the gap between GWAS associations and eQTL colocalization.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "b4a1152b-9454-4d41-aacb-4dd6a55365a5",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C57",
+      "claim": "The 'missing regulation' could be exposed by considering context-dependent gene expression confined to particular refined cell types or anatomical partitions.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that this currently lacking component could be exposed by considering more nuanced experimental and analytical models of gene expression. One likely model involves context-dependent gene expression\u2014expression whose relevant effects are confined to (i) particular refined cell types or anatomical partitions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the negative results and known limitations of bulk tissue analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "881693bf-38a3-4b57-8dd0-8654e6bb9f3a",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C58",
+      "claim": "The 'missing regulation' could be exposed by considering context-dependent gene expression confined to cell states such as responses to perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "or (ii) cell states such as responses to perturbations, whether exogenous (e.g., environmental change) or endogenous (e.g., cell differentiation)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the negative results and known limitations of homeostatic expression analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "bcdebe79-1df1-4378-8b44-9a0c6398f763",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C59",
+      "claim": "A complementary model may incorporate heterogeneity of gene expression or the variance of expression across relatively short time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "A complementary model may incorporate heterogeneity of gene expression or the variance of expression across relatively short time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal for alternative models of gene regulation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "994e1c55-6318-4f7d-889a-72323778c30a",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C60",
+      "claim": "Models may depend on or be augmented by thresholding or buffering of variant effects, which may produce changes in gene expression with nonlinear effects on phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "These models and others may depend on or be augmented by thresholding or buffering of variant effects, which may produce changes in gene expression with nonlinear effects on phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal for mechanisms that could explain the disconnect between eQTLs and phenotypes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "d65bde7a-a813-47fb-ba9f-4e7781e6d11e",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C61",
+      "claim": "Low rates of positive findings for expression-based variant-to-gene methods have constrained the discovery of genes contributing to complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "One long-standing goal of GWAS has been to discover genes contributing to complex traits (Manolio et al., 2009; Farh et al., 2015), but low rates of positive findings for expression-based variant-to-gene methods have constrained this possibility (Chun et al., 2017; Baird et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies documenting the challenges in gene discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "2589cf1e-64ac-4ec2-8f54-6347b723939b",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C62",
+      "claim": "The challenges in linking GWAS to genes have limited the benefit of GWAS and expression data for disease-gene mapping and drug discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other challenges, this has limited the benefit of GWAS and expression data for disease-gene mapping and drug discovery (Baird et al., 2021; Umans et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on the applications of GWAS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "a9ff23b1-7984-4378-82df-ef7cc41eddce",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C63",
+      "claim": "If the most relevant models depend on effects not observable in homeostatic eQTL mapping, the field may need to prioritize other biological contexts and forms of expression data.",
+      "claim_type": "EXPLICIT",
+      "source": "If the most relevant models are shown to depend on effects not observable in homeostatic eQTL mapping, the field may need to consider prioritizing other biological contexts and forms of expression data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative recommendation based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "a5be56cf-11bd-4bef-89fc-0cd479e7aef5",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C64",
+      "claim": "128 genes harboring large-effect-size coding variants were selected by manual literature search for one of seven phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "By manual literature search, we selected 128 genes harboring large-effect-size coding variants for one of the seven phenotypes (Table 1; specifically, we selected 128 gene\u2013trait pairs, representing 121 unique genes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for gene selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "540402bc-957a-402f-93d4-61afec31b04a",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C65",
+      "claim": "For breast cancer, genes were selected using the MutPanning method.",
+      "claim_type": "EXPLICIT",
+      "source": "and, for breast cancer, using the MutPanning method (Dietlein et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for breast cancer gene selection, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "39282d85-2eac-4471-bec5-e3f22f1590b8",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C66",
+      "claim": "The inclusion of genes from Backman et al. ensures that results are not dependent on an undetected bias in gene selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The inclusion of genes from Backman et al. ensures that our results are not dependent on an undetected bias in our selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for including an independent gene set.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "a88eab6c-183e-4b64-817f-15ec06614601",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C67",
+      "claim": "GWAS sample sizes are large enough to detect low-frequency coding variants used to select some of the genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because GWAS sample sizes are large enough to detect the low-frequency coding variants used to select some of our genes, it is possible that a coding variant would distort the association signal of nearby eQTLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of GWAS power and study design considerations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "15c5f9eb-9763-4e13-843d-c24a5af4847b",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C68",
+      "claim": "The effects of coding variants on GWAS were removed to minimize the concern that coding variants would distort the association signal of nearby eQTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize this concern, we removed the effects of coding variants on GWAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach to address a potential confound.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "6407a625-4b6a-410f-922d-91d1da226548",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C69",
+      "claim": "For height, LDL cholesterol, and HDL cholesterol, GWAS were performed using genotypic and phenotypic data from the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "For height, LDL cholesterol, and HDL cholesterol, GWAS were performed using genotypic and phenotypic data from the UKBB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources and methods used for GWAS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "e32d8762-a55b-4333-9b4d-400cc8bc9e35",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C70",
+      "claim": "The GWAS sample was restricted to 337K unrelated individuals with genetically determined British ancestry to avoid confounding.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to avoid confounding, we restricted our sample to the 337K unrelated individuals with genetically determined British ancestry identified by Bycroft et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample selection criteria, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "c10a6987-9fa7-4f99-b0f1-f0d18ad13d5a",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C71",
+      "claim": "For breast cancer, Crohn disease, ulcerative colitis, and type II diabetes, publicly available summary statistics were used because UK Biobank has limited power for these traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Because UKBB has limited power for breast cancer, Crohn disease, ulcerative colitis, and type II diabetes, we used publicly available summary statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for using external GWAS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "7f584c52-1197-4951-beda-2317244ac4c2",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C72",
+      "claim": "COJO can condition summary statistics on selected variants by using an LD reference panel.",
+      "claim_type": "EXPLICIT",
+      "source": "The Conditional and Joint Analysis (COJO) (Yang et al., 2011; Yang et al., 2012) program can condition summary statistics on selected variants\u2014in our case, coding variants\u2014by using an LD reference panel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for conditional analysis, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "284f9373-0a8b-43a6-bd1d-e3232939fb92",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C73",
+      "claim": "TOPMed subjects of European ancestry were used as an LD reference panel for COJO.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reference, we used TOPMed subjects of European ancestry (Taliun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reference panel used, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "2f393a06-9e58-40d9-b499-57af4168a918",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C74",
+      "claim": "eQTL summary statistics were taken from GTEx v7.",
+      "claim_type": "EXPLICIT",
+      "source": "eQTL summary statistics were taken from GTEx v7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for eQTL analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "eb5a8c67-0f6e-4d2f-be8f-2cacad74f09f",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C75",
+      "claim": "Using the Benjamini-Hochberg method with appropriate correction, 204 out of 220 genes (93%) displayed an eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "With this method, 204/220 (93%) of our genes displayed an eQTL, including 134/147 genes with a nearby GWAS peak (91%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the eQTL detection analysis using adjusted FDR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "528db8a0-61ab-45cf-9835-b578874c4025",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C76",
+      "claim": "Using GTEx project FDR statistics, 107 out of 220 genes (49%) had an eQTL at Q < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Even using the FDR statistics of the GTEx project\u2014which are based on the assumption of testing every gene in every tissue\u2014107/220 (49%) of our genes and 76/147 (52%) of genes near GWAS peaks had an eQTL at Q < 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the eQTL detection analysis using GTEx FDR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "e031c80e-f0f4-4df1-a1de-041aa5b87634",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C77",
+      "claim": "JLIM was run using GWAS summary statistics and GTEx v7 genotypes and phenotypes for trait-relevant tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "JLIM (Chun et al., 2017) was run using GWAS summary statistics and GTEx v7 genotypes and phenotypes for the tissues listed in Table 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for colocalization analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "5e2c37fc-3ede-4e2b-b8d8-e4c62ef5797d",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C78",
+      "claim": "Coloc was run using GWAS and GTEx v7 summary statistics for trait-relevant tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Coloc (Giambartolomei et al., 2014) was run using GWAS and GTEx v7 summary statistics for the same tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for colocalization analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "326c24f9-0a7c-4239-aebb-2ddf7f79b403",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C79",
+      "claim": "eCAVIAR was run using GWAS and GTEx v7 summary statistics and a reference dataset of LD from UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "eCAVIAR (Hormozdiari et al., 2016) was run using GWAS and GTEx v7 summary statistics for these tissues, and a reference dataset of LD from UKBB (Weissbrod et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for colocalization analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "23a53ff6-e867-44b9-b07d-eb7fc44b0ceb",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C80",
+      "claim": "MASH was applied to all GTEx tissues using the mashr R-package.",
+      "claim_type": "EXPLICIT",
+      "source": "MASH was applied to all GTEx tissues using the mashr R-package (Urbut et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for MASH analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "3e3a1cea-fc01-4945-9188-ea3b40a373d1",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C81",
+      "claim": "MASH was restricted to non-brain tissues due to the known tendency of brain and non-brain tissues to cluster separately in expression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We restricted this model to non-brain tissues\u2014which include all of our trait-selected tissues\u2014due to the known tendency of brain and non-brain tissues to cluster separately in expression analysis (Battle et al., 2017; Park et al., 2017; Gamazon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for tissue selection in MASH, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "53ad00b6-3360-412d-933d-6b3668cd6aac",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C82",
+      "claim": "For many complex traits, TWAS returns a large number of findings (e.g., >150 for LDL cholesterol and >4800 for height).",
+      "claim_type": "EXPLICIT",
+      "source": "For many complex traits, TWAS returns a large number of findings (e.g., >150 for LDL cholesterol and >4800 for height).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the TWAS analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "27824c04-a9f8-4222-a977-1a4ab61a2812",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C83",
+      "claim": "Most TWAS hits are found in tissues without clear relevance to the trait.",
+      "claim_type": "EXPLICIT",
+      "source": "Most hits are found in tissues without any clear relevance to the trait and absent in relevant tissues\u2014LDL, for example, has more TWAS associations between expression and eQTL in prostate adenocarcinoma (24 genes associated), brain prefrontal cortex (23 genes associated), and transformed fibroblasts (21 genes associated) than it does in adipose (16 genes associated), blood (11 genes associated), or liver (5 genes associated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the TWAS analysis results showing tissue distribution of hits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "30e791db-93f3-43ec-8d14-77136af54a24",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C84",
+      "claim": "Individual genes identified by TWAS often show inconsistent direction of effect across tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual genes were often identified as hits in multiple tissues, but with an inconsistent direction of effect\u2014that is, increased gene expression correlated with an increase in the quantitative trait or disease risk in some tissues, but a decrease in others",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the TWAS analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "23b39709-2814-41f6-a6c1-fee0679462f0",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C85",
+      "claim": "GWAS variants were fine-mapped using the SuSiE algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "We fine-mapped the GWAS variants located within \u00b1100 kb of our putatively causative genes by applying the SuSiE algorithm (Wang et al., 2020b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for fine-mapping, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "38e0856a-7fc4-4ec9-99fb-6e0c0ee19cbb",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C86",
+      "claim": "An LD reference panel from UK Biobank subjects of European ancestry was used for fine-mapping analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "An LD reference panel from UKBB subjects of European ancestry was used for this analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reference panel used for fine-mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "13ff88e0-986b-47f3-bfe5-799d5f2259b6",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C87",
+      "claim": "Fine-mapped variants were projected onto active regions of the genome identified using histone modification features, DHS, and ChromHMM enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "We projected fine-mapped GWAS variants onto active regions of the genome, identified using three alternative approaches: (i) histone modification features, (ii) DHS, and (iii) ChromHMM enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for functional genomic annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "9cec9271-4b63-4658-b1fc-8771b20af20f",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C88",
+      "claim": "Imputed narrowPeak sets for H3K27ac, H3K4me1, and H3K4me3 were downloaded from the Roadmap Epigenomics Project for 14 different tissue types.",
+      "claim_type": "EXPLICIT",
+      "source": "We downloaded imputed narrowPeak sets for H3K27ac, H3K4me1, and H3K4me3 from the Roadmap Epigenomics Project (Wainberg et al., 2019) ftp site (available here) for 14 different tissue types (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources for histone modification analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "18b8ed13-81f6-4fd3-abff-281d5b083e1b",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C89",
+      "claim": "The mean activity of a feature was calculated by taking the geometric mean of the corresponding peak strengths from H3K27ac, H3K4me1, and H3K4me3 marks.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean activity/strength of a feature (AF) was calculated by taking the geometric mean of the corresponding peak strengths from H3K27ac, H3K4me1, and H3K4me3 marks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for calculating feature activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "a847f96b-2c05-4902-a4c1-afe9a4fff55e",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C90",
+      "claim": "Activity-by-distance scores were computed for gene-feature pairs by combining activity measurements with linear distances between features and transcription start sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We then combined these activity measurements with the linear distances between the features and the transcription start sites of causative genes to compute ABD scores (a simplified version of ABC scores Barbeira et al., 2018) for gene\u2013feature pairs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for computing ABD scores, with reference to ABC scores.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "eb0bc204-c81d-4756-92b8-919dc6691e4f",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C91",
+      "claim": "A high ABD score may serve as a proxy for increased specificity between a chromatin feature and the gene of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "A high ABD score may serve as a proxy for an increased specificity between a chromatin feature and the gene of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the interpretation of ABD scores.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "014ee5f5-3496-40e6-b941-acac1d9d7270",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C92",
+      "claim": "The DHS index was downloaded from https://www.meuleman.org/research/dhsindex/.",
+      "claim_type": "EXPLICIT",
+      "source": "We downloaded the index of human DHS along with biosample metadata from https://www.meuleman.org/research/dhsindex/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for DHS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "b371f2a7-9c07-4130-9806-bf7859514a37",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C93",
+      "claim": "The DHS index coordinates were converted from hg38 to hg19 using hgLiftOver.",
+      "claim_type": "EXPLICIT",
+      "source": "The index was in hg38 coordinates, which were converted to hg19 coordinates using the online version of the hgLiftOver package (https://genome.ucsc.edu/cgi-bin/hgLiftOver).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "494eaf25-f1c1-476f-afca-b30ae297c602",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C94",
+      "claim": "Tissue-specific chromHMM annotations were downloaded from the Roadmap Epigenomics Project.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue-specific chromHMM annotations were downloaded from the Roadmap Epigenomics Project Wainberg et al., 2019 ftp site (available here).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for ChromHMM analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "d2fdc47c-6efb-46d3-8141-c0d4390a12fa",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "claim_id": "C95",
+      "claim": "A fine-mapped variant was considered to fall in an enhancer region if it was housed within a chromHMM segment described as enhancer, bivalent enhancer, or genic enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered a fine-mapped variant to fall in an enhancer region if it was housed within a chromHMM segment described as either enhancer, or bivalent enhancer, or genic enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the criteria for identifying variants in enhancer regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "36c2b1ee-5462-4ddf-a35d-e27116262dc3",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study identified 220 gene-trait pairs where protein-coding variants influence complex traits or their Mendelian cognates, combining 128 manually curated Mendelian genes with 110 genes from Backman et al., 2021 across seven phenotypes (four diseases and three quantitative traits).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24-C26, and C64-C66 describe the gene selection methodology and resulting dataset. The approach is well-documented with clear inclusion criteria, appropriate citations, and validation through an independent gene set (Backman et al.) to control for selection bias. The methodology is transparent and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "2af3dbde-37d0-4d26-96b1-b0eb6cdc300e",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Putatively causative genes show significant enrichment near GWAS peaks: 67% (147/220) within 1 Mb (3\u00d7 expected) and 47% (104/220) within 100 kb (10\u00d7 expected, compared to null model predictions of 43 and 11 genes respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 present enrichment analysis with appropriate statistical comparisons to null models and confidence intervals. The order-of-magnitude enrichment at 100 kb and decreasing enrichment with distance support the biological plausibility of these genes as GWAS targets. Figure 1 supplement 1 provides supporting visualization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "53dff8aa-d4f3-4a45-b581-64df58fee635",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Most putatively causative genes near GWAS peaks (91.1%, 134/147) have detectable eQTLs in at least one relevant tissue at FDR Q < 0.05 using adjusted multiple testing correction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31, C75-C76 demonstrate high eQTL detection rates using appropriate FDR correction methods. The authors transparently report results under both their adjusted correction (93% overall, 91% near peaks) and standard GTEx FDR (49% overall, 52% near peaks), showing robustness. This establishes that lack of eQTL detection is not the limiting factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "cdee0604-2f31-422c-a211-8f1ebf040aad",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Colocalization methods identify very few putatively causative genes: only 4.8% (7/147) by coloc, 6.8% (10/147) by JLIM, and 5.4% (8/147) by eCAVIAR, totaling 8.2% (18/220) accounting for overlap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C32-C35 report consistent low colocalization rates across three independent methods. The use of multiple well-established colocalization approaches strengthens the finding. However, the claim that this is 'not obviously better than random chance' (C35) lacks formal statistical testing against a null distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "5d6296e2-4ff0-4419-83e7-c2164342623d",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MASH analysis, which leverages cross-tissue information, increased overall GWAS-eQTL colocalizations by 26% (389 to 489) but identified only four additional putatively causative genes, indicating tissue selection was not the limiting factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 describe a methodologically sound sensitivity analysis using MASH to address potential tissue-specificity limitations. The modest improvement in identifying putatively causative genes despite substantial increase in total colocalizations supports the inference that tissue selection is not the primary issue. Figure 1 supplement 2 provides supporting data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "00bc5e1f-c69e-435c-888a-904c99d797f7",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TWAS identified 30% (66/220) of putatively causative genes across all tissues, but only 1.8% (4/220) when restricted to trait-relevant tissues, with most hits occurring in biologically irrelevant tissues and showing inconsistent effect directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C40-C41, C82-C84 demonstrate the limitations of TWAS for identifying causative genes. The dramatic reduction from 30% to 1.8% when restricting to relevant tissues, combined with evidence of tissue-irrelevant hits and inconsistent effect directions, appropriately justifies the authors' skepticism. However, the restriction to 'relevant tissues' introduces subjective judgment that could affect results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "a50ff824-a48a-44fb-86be-2edea03ed0b5",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Among 37 genes with high-confidence fine-mapped variants (PIP > 0.7) within 100 kb, 68% (25/37) have variants in regulatory regions in trait-relevant tissues, but only 20% (5/25) show corresponding eQTL effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 demonstrate a critical disconnect: fine-mapped GWAS variants fall in regulatory regions but don't colocalize with eQTLs. The use of SuSiE for fine-mapping and multiple chromatin annotation approaches (histone marks, DHS, ChromHMM) is methodologically sound. This finding is central to the paper's argument about 'missing regulation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "ea9bdd1c-bb2b-4572-9dff-ac25adf35872",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Activity-by-distance (ABD) scoring, which combines chromatin feature activity with genomic distance, implicated only 14% (5/37) of Mendelian subset genes, similar to the low rate observed with eQTL colocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C87-C91 describe the ABD methodology and results. The approach is a simplified version of ABC scores and appropriately documented. The low success rate (14%) parallels the eQTL findings, strengthening the overall conclusion. However, ABD is acknowledged as a simplification, and the authors don't fully validate whether this approximation is appropriate for their analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "60db3a3c-c7d6-4fd5-b767-715b57df04f7",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The results contradict the hypothesis that most complex trait-associated variants coincide with homeostatic expression QTLs, while supporting that non-coding variants mediate effects through gene regulation via mechanisms not captured by bulk-tissue eQTLs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C15, C47-C51 present the paper's central conclusion. The inference is well-supported by the convergent negative results from multiple methods (colocalization, TWAS, chromatin analysis) despite high eQTL detection rates and enrichment of variants in regulatory regions. The logic is sound: regulatory features are present but don't manifest as detectable homeostatic eQTLs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "54a16157-7294-4783-bab5-cfcf5d010357",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Common explanations for negative expression-based findings\u2014non-expression mechanisms, insufficient GWAS power, absence of eQTLs, and underpowered methods\u2014are ruled out as applicable to this study's context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 systematically address alternative explanations. The logic is sound: 67% of genes near GWAS peaks (C53), 91% with eQTLs (C54), enrichment in regulatory regions (C52), and use of multiple well-powered methods (C55) collectively rule out these explanations. However, the claim about method power (C55) relies partly on simulations from cited papers rather than power calculations specific to this dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "bacd9249-de04-475d-bfcb-139d4d6078c4",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose 'missing regulation' as a major undiscovered component connecting variants to gene expression, potentially involving context-dependent expression (cell-type or state-specific), expression heterogeneity/variance, or nonlinear effects through thresholding/buffering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C60 present speculative proposals for explaining the negative findings. While these hypotheses are reasonable given the data, they remain untested speculation (as indicated by 'SPECULATION' evidence type). The proposals are well-motivated by the results but represent future research directions rather than demonstrated findings. No data in the current study directly supports these specific mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "395a73c8-e138-4144-89b1-a872628afb8b",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GWAS analyses were conditioned on coding variants using direct conditional tests (UK Biobank traits) or COJO (publicly available summary statistics) to remove potential confounding effects of large-effect coding variants on non-coding association signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 describe appropriate methodology to address a key confound. The use of COJO for summary statistics and direct conditioning for individual-level data is standard practice. The TOPMed reference panel for LD is appropriate. The restriction to British ancestry (C70) appropriately controls for population stratification. This methodological rigor strengthens the study's conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "bf2b0414-8417-464e-8b1c-0d7271459811",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study is motivated by established knowledge that complex traits are highly polygenic with non-coding variants in regulatory regions, yet only 5-40% of GWAS associations colocalize with eQTLs, and expression mediates only a minority of heritability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C14, C16-C18 establish the scientific context through citations to established literature. These background claims are well-supported by appropriate references and represent accurate characterization of the field's current understanding. This context appropriately motivates the study's research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "cf54067d-96c7-48ba-aa67-93a737a598df",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The rationale for gene selection is based on the principle that genes whose coding variants cause phenotypic change should also be influenced by small-effect non-coding variants, exemplified by APOE and LDLR in cholesterol regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 establish the biological rationale for the study design. The APOE/LDLR example is well-documented with appropriate citations (C20-C22) and illustrates the expected relationship between Mendelian and complex trait genetics. This reasoning is biologically sound and supported by the enrichment results (C27-C30).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "3c1b3d7b-66ed-44b6-9695-2815653b283c",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior estimates of 25-40% GWAS-eQTL colocalization do not directly evaluate the ability to find causative genes, distinguishing this study's approach from previous work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 makes an important methodological distinction. The authors correctly note that genome-wide colocalization rates don't test whether methods can identify known causative genes. This justifies their gene-centric approach and explains why their 8% rate differs from prior estimates. The logic is sound and the citations appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "edff0303-fe4e-485e-b271-d1d7fbe4a4ca",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The challenges in linking GWAS variants to genes have constrained gene discovery and limited applications in disease-gene mapping and drug discovery, potentially requiring the field to prioritize alternative biological contexts and expression data types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 discuss implications and future directions. C61-C62 are supported by appropriate citations documenting these challenges. C63 is a conditional recommendation ('if...may need to') that logically follows from the study's findings but remains speculative about future research priorities. The claims appropriately frame the broader significance of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    },
+    {
+      "id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168",
+      "content_id": "ca993ad8-b5a8-405f-9132-d666f2df3f9d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study employed standard data sources (GTEx v7 for eQTLs, UK Biobank for LD reference, Roadmap Epigenomics for chromatin data) and established computational methods (JLIM, coloc, eCAVIAR, MASH, SuSiE) with appropriate parameters and quality control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C77-C81, C85-C86, C92-C95 document data sources and computational methods. All are standard, well-established resources and tools with appropriate citations. The methods are clearly described and reproducible. The restriction of MASH to non-brain tissues (C81) is justified by cited evidence of brain/non-brain clustering. These methodological details support the reliability of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:34.943775Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "330f7dd9-ea27-4ad3-9ba7-8585d24ac50b",
+      "result_id": "36c2b1ee-5462-4ddf-a35d-e27116262dc3"
+    },
+    {
+      "claim_id": "f3a9f78a-a284-4b70-959a-c5deb1119133",
+      "result_id": "36c2b1ee-5462-4ddf-a35d-e27116262dc3"
+    },
+    {
+      "claim_id": "0de4e563-55ce-4f0d-89a9-ec1d9b2d3d93",
+      "result_id": "36c2b1ee-5462-4ddf-a35d-e27116262dc3"
+    },
+    {
+      "claim_id": "c1d20e17-5a26-4a87-bb6e-b8ca858484d7",
+      "result_id": "36c2b1ee-5462-4ddf-a35d-e27116262dc3"
+    },
+    {
+      "claim_id": "a5be56cf-11bd-4bef-89fc-0cd479e7aef5",
+      "result_id": "36c2b1ee-5462-4ddf-a35d-e27116262dc3"
+    },
+    {
+      "claim_id": "540402bc-957a-402f-93d4-61afec31b04a",
+      "result_id": "36c2b1ee-5462-4ddf-a35d-e27116262dc3"
+    },
+    {
+      "claim_id": "39282d85-2eac-4471-bec5-e3f22f1590b8",
+      "result_id": "36c2b1ee-5462-4ddf-a35d-e27116262dc3"
+    },
+    {
+      "claim_id": "2e84cb0b-6142-4568-912c-5b5625f0eec8",
+      "result_id": "2af3dbde-37d0-4d26-96b1-b0eb6cdc300e"
+    },
+    {
+      "claim_id": "112cac55-346b-42b7-8467-9c4271a4ad44",
+      "result_id": "2af3dbde-37d0-4d26-96b1-b0eb6cdc300e"
+    },
+    {
+      "claim_id": "01cd7989-4b4d-44a4-8bb5-3d690e3398ec",
+      "result_id": "2af3dbde-37d0-4d26-96b1-b0eb6cdc300e"
+    },
+    {
+      "claim_id": "f6f01d0e-f2b1-4540-844c-4ba698015ebe",
+      "result_id": "2af3dbde-37d0-4d26-96b1-b0eb6cdc300e"
+    },
+    {
+      "claim_id": "042bb75e-5f9c-49ff-ba39-65f3fb893b16",
+      "result_id": "53dff8aa-d4f3-4a45-b581-64df58fee635"
+    },
+    {
+      "claim_id": "3d5c1642-7d1d-4656-a761-ffe198fade71",
+      "result_id": "53dff8aa-d4f3-4a45-b581-64df58fee635"
+    },
+    {
+      "claim_id": "eb5a8c67-0f6e-4d2f-be8f-2cacad74f09f",
+      "result_id": "53dff8aa-d4f3-4a45-b581-64df58fee635"
+    },
+    {
+      "claim_id": "528db8a0-61ab-45cf-9835-b578874c4025",
+      "result_id": "53dff8aa-d4f3-4a45-b581-64df58fee635"
+    },
+    {
+      "claim_id": "e32c61f7-dab5-4a73-9d3c-644706f0b546",
+      "result_id": "cdee0604-2f31-422c-a211-8f1ebf040aad"
+    },
+    {
+      "claim_id": "bcd10daf-2692-49e6-abe1-ac8c9f474107",
+      "result_id": "cdee0604-2f31-422c-a211-8f1ebf040aad"
+    },
+    {
+      "claim_id": "7904b51e-9d21-4814-a37b-6934a2e47163",
+      "result_id": "cdee0604-2f31-422c-a211-8f1ebf040aad"
+    },
+    {
+      "claim_id": "41208c38-d382-41b4-9c09-c56d24ffebee",
+      "result_id": "cdee0604-2f31-422c-a211-8f1ebf040aad"
+    },
+    {
+      "claim_id": "b380da70-554d-4537-b7aa-2a015c1c5959",
+      "result_id": "cdee0604-2f31-422c-a211-8f1ebf040aad"
+    },
+    {
+      "claim_id": "bd278323-3403-4366-9f3c-ff2bd2e4afd8",
+      "result_id": "cdee0604-2f31-422c-a211-8f1ebf040aad"
+    },
+    {
+      "claim_id": "74eec97b-cc5c-4fd2-a384-c17e80954d59",
+      "result_id": "5d6296e2-4ff0-4419-83e7-c2164342623d"
+    },
+    {
+      "claim_id": "72f51c04-ae0b-4b96-9f1a-35bde0674fbe",
+      "result_id": "5d6296e2-4ff0-4419-83e7-c2164342623d"
+    },
+    {
+      "claim_id": "332c9d3a-a81d-4ae3-b31c-c77ecac9e2cb",
+      "result_id": "5d6296e2-4ff0-4419-83e7-c2164342623d"
+    },
+    {
+      "claim_id": "6a468328-446d-4692-9d36-ab74a1cd7fda",
+      "result_id": "00bc5e1f-c69e-435c-888a-904c99d797f7"
+    },
+    {
+      "claim_id": "23e82f9b-dde0-4662-8c36-60cb89635c8b",
+      "result_id": "00bc5e1f-c69e-435c-888a-904c99d797f7"
+    },
+    {
+      "claim_id": "2df0674b-a8fa-4157-a280-8f810760dff0",
+      "result_id": "00bc5e1f-c69e-435c-888a-904c99d797f7"
+    },
+    {
+      "claim_id": "53ad00b6-3360-412d-933d-6b3668cd6aac",
+      "result_id": "00bc5e1f-c69e-435c-888a-904c99d797f7"
+    },
+    {
+      "claim_id": "27824c04-a9f8-4222-a977-1a4ab61a2812",
+      "result_id": "00bc5e1f-c69e-435c-888a-904c99d797f7"
+    },
+    {
+      "claim_id": "30e791db-93f3-43ec-8d14-77136af54a24",
+      "result_id": "00bc5e1f-c69e-435c-888a-904c99d797f7"
+    },
+    {
+      "claim_id": "56d9dc24-5289-4af4-8f91-b10227ede572",
+      "result_id": "a50ff824-a48a-44fb-86be-2edea03ed0b5"
+    },
+    {
+      "claim_id": "036fdbd0-dcaa-4683-96ef-7d7585f82690",
+      "result_id": "a50ff824-a48a-44fb-86be-2edea03ed0b5"
+    },
+    {
+      "claim_id": "466f8f8f-5048-4dcc-af35-bbed301ae4dd",
+      "result_id": "a50ff824-a48a-44fb-86be-2edea03ed0b5"
+    },
+    {
+      "claim_id": "9a462d47-c680-40d2-8fe2-901f6d7d141a",
+      "result_id": "a50ff824-a48a-44fb-86be-2edea03ed0b5"
+    },
+    {
+      "claim_id": "b2d7c5b7-7fcd-43a0-9492-fb2c0c5fbf9a",
+      "result_id": "ea9bdd1c-bb2b-4572-9dff-ac25adf35872"
+    },
+    {
+      "claim_id": "13ff88e0-986b-47f3-bfe5-799d5f2259b6",
+      "result_id": "ea9bdd1c-bb2b-4572-9dff-ac25adf35872"
+    },
+    {
+      "claim_id": "9cec9271-4b63-4658-b1fc-8771b20af20f",
+      "result_id": "ea9bdd1c-bb2b-4572-9dff-ac25adf35872"
+    },
+    {
+      "claim_id": "18b8ed13-81f6-4fd3-abff-281d5b083e1b",
+      "result_id": "ea9bdd1c-bb2b-4572-9dff-ac25adf35872"
+    },
+    {
+      "claim_id": "a847f96b-2c05-4902-a4c1-afe9a4fff55e",
+      "result_id": "ea9bdd1c-bb2b-4572-9dff-ac25adf35872"
+    },
+    {
+      "claim_id": "eb0bc204-c81d-4756-92b8-919dc6691e4f",
+      "result_id": "ea9bdd1c-bb2b-4572-9dff-ac25adf35872"
+    },
+    {
+      "claim_id": "4de8beb2-5d7c-4d6b-995f-2a1b1ede4325",
+      "result_id": "60db3a3c-c7d6-4fd5-b767-715b57df04f7"
+    },
+    {
+      "claim_id": "4c874544-7025-4311-a0a0-9dce3151e82c",
+      "result_id": "60db3a3c-c7d6-4fd5-b767-715b57df04f7"
+    },
+    {
+      "claim_id": "59bc366c-82c0-41d4-91b7-acc9c6771e9e",
+      "result_id": "60db3a3c-c7d6-4fd5-b767-715b57df04f7"
+    },
+    {
+      "claim_id": "e6c425b0-33ae-41da-8c37-6f2c6eabfab1",
+      "result_id": "60db3a3c-c7d6-4fd5-b767-715b57df04f7"
+    },
+    {
+      "claim_id": "d48067ea-f110-46dc-8960-67077be16878",
+      "result_id": "60db3a3c-c7d6-4fd5-b767-715b57df04f7"
+    },
+    {
+      "claim_id": "fd586b1a-7309-49cd-85a9-7b5b444c2edb",
+      "result_id": "60db3a3c-c7d6-4fd5-b767-715b57df04f7"
+    },
+    {
+      "claim_id": "e1edef38-28db-48a1-b3f5-461dff47f4d4",
+      "result_id": "60db3a3c-c7d6-4fd5-b767-715b57df04f7"
+    },
+    {
+      "claim_id": "fb21bdc5-a985-4e82-b2fb-18d675178bdc",
+      "result_id": "54a16157-7294-4783-bab5-cfcf5d010357"
+    },
+    {
+      "claim_id": "27019b0c-4907-4c49-b33c-4d73e54c9d1f",
+      "result_id": "54a16157-7294-4783-bab5-cfcf5d010357"
+    },
+    {
+      "claim_id": "a86bea37-24e2-4806-b763-a61da2735c7f",
+      "result_id": "54a16157-7294-4783-bab5-cfcf5d010357"
+    },
+    {
+      "claim_id": "562c08a2-3ae7-44dd-af43-de2d70dfb91d",
+      "result_id": "54a16157-7294-4783-bab5-cfcf5d010357"
+    },
+    {
+      "claim_id": "f5e2bcd6-cea2-4b63-91f8-676ac25f1aaa",
+      "result_id": "bacd9249-de04-475d-bfcb-139d4d6078c4"
+    },
+    {
+      "claim_id": "b4a1152b-9454-4d41-aacb-4dd6a55365a5",
+      "result_id": "bacd9249-de04-475d-bfcb-139d4d6078c4"
+    },
+    {
+      "claim_id": "881693bf-38a3-4b57-8dd0-8654e6bb9f3a",
+      "result_id": "bacd9249-de04-475d-bfcb-139d4d6078c4"
+    },
+    {
+      "claim_id": "bcdebe79-1df1-4378-8b44-9a0c6398f763",
+      "result_id": "bacd9249-de04-475d-bfcb-139d4d6078c4"
+    },
+    {
+      "claim_id": "994e1c55-6318-4f7d-889a-72323778c30a",
+      "result_id": "bacd9249-de04-475d-bfcb-139d4d6078c4"
+    },
+    {
+      "claim_id": "a88eab6c-183e-4b64-817f-15ec06614601",
+      "result_id": "395a73c8-e138-4144-89b1-a872628afb8b"
+    },
+    {
+      "claim_id": "15c5f9eb-9763-4e13-843d-c24a5af4847b",
+      "result_id": "395a73c8-e138-4144-89b1-a872628afb8b"
+    },
+    {
+      "claim_id": "6407a625-4b6a-410f-922d-91d1da226548",
+      "result_id": "395a73c8-e138-4144-89b1-a872628afb8b"
+    },
+    {
+      "claim_id": "e32d8762-a55b-4333-9b4d-400cc8bc9e35",
+      "result_id": "395a73c8-e138-4144-89b1-a872628afb8b"
+    },
+    {
+      "claim_id": "c10a6987-9fa7-4f99-b0f1-f0d18ad13d5a",
+      "result_id": "395a73c8-e138-4144-89b1-a872628afb8b"
+    },
+    {
+      "claim_id": "7f584c52-1197-4951-beda-2317244ac4c2",
+      "result_id": "395a73c8-e138-4144-89b1-a872628afb8b"
+    },
+    {
+      "claim_id": "284f9373-0a8b-43a6-bd1d-e3232939fb92",
+      "result_id": "395a73c8-e138-4144-89b1-a872628afb8b"
+    },
+    {
+      "claim_id": "9328cb5b-354d-43a0-8d0e-bc43f12b21ba",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "fb98dcb6-4298-43a7-8b6b-9305ab94ee59",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "32c0ce23-02f5-48db-82ca-d32156df6497",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "d826a23b-eff8-4995-9c30-b24f3b4c1e65",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "f5eac999-ef2a-40a4-b648-a790a6c82206",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "39eb9709-5549-4087-9d88-cc103e08cb3f",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "1ad070f8-4d48-47b7-ac4a-3479e0a7c624",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "79ba7ae3-22c7-47a9-9530-bdcc397e23a7",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "3259ca31-8b86-4e76-82a0-95de9e2d5491",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "e5ddf1fc-8a99-4383-8c4a-772e30c43d28",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "4aa0cdf9-619a-4580-99ee-3902d1622ad8",
+      "result_id": "bf2b0414-8417-464e-8b1c-0d7271459811"
+    },
+    {
+      "claim_id": "a623beff-1609-4dde-b197-3c5a75bbc158",
+      "result_id": "cf54067d-96c7-48ba-aa67-93a737a598df"
+    },
+    {
+      "claim_id": "06d6bb41-3705-4428-9b2a-3bdbe29f8c83",
+      "result_id": "cf54067d-96c7-48ba-aa67-93a737a598df"
+    },
+    {
+      "claim_id": "862000e7-24c1-4235-b010-c8402c076cd5",
+      "result_id": "cf54067d-96c7-48ba-aa67-93a737a598df"
+    },
+    {
+      "claim_id": "beb86b19-ad44-48de-a2b7-419b6c8a4b27",
+      "result_id": "cf54067d-96c7-48ba-aa67-93a737a598df"
+    },
+    {
+      "claim_id": "b38477c8-0739-4742-b3b0-1b60b1f5c6d1",
+      "result_id": "cf54067d-96c7-48ba-aa67-93a737a598df"
+    },
+    {
+      "claim_id": "cad3511f-ae92-43ec-a805-091bed979b65",
+      "result_id": "3c1b3d7b-66ed-44b6-9695-2815653b283c"
+    },
+    {
+      "claim_id": "d65bde7a-a813-47fb-ba9f-4e7781e6d11e",
+      "result_id": "edff0303-fe4e-485e-b271-d1d7fbe4a4ca"
+    },
+    {
+      "claim_id": "2589cf1e-64ac-4ec2-8f54-6347b723939b",
+      "result_id": "edff0303-fe4e-485e-b271-d1d7fbe4a4ca"
+    },
+    {
+      "claim_id": "a9ff23b1-7984-4378-82df-ef7cc41eddce",
+      "result_id": "edff0303-fe4e-485e-b271-d1d7fbe4a4ca"
+    },
+    {
+      "claim_id": "2f393a06-9e58-40d9-b499-57af4168a918",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "e031c80e-f0f4-4df1-a1de-041aa5b87634",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "5e2c37fc-3ede-4e2b-b8d8-e4c62ef5797d",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "326c24f9-0a7c-4239-aebb-2ddf7f79b403",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "23a53ff6-e867-44b9-b07d-eb7fc44b0ceb",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "3e3a1cea-fc01-4945-9188-ea3b40a373d1",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "23b39709-2814-41f6-a6c1-fee0679462f0",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "38e0856a-7fc4-4ec9-99fb-6e0c0ee19cbb",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "014ee5f5-3496-40e6-b941-acac1d9d7270",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "b371f2a7-9c07-4130-9806-bf7859514a37",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "494eaf25-f1c1-476f-afca-b30ae297c602",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    },
+    {
+      "claim_id": "d2fdc47c-6efb-46d3-8141-c0d4390a12fa",
+      "result_id": "57eb8bac-dd9a-40ac-a356-8dc5239a6168"
+    }
+  ],
+  "comparisons": []
+}

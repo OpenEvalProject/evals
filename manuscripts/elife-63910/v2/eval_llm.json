@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors established a long-term evolution experiment with 205 S. cerevisiae populations (124 haploid and 81 diploid) evolved for ~10,000 generations across three environments (YPD 30\u00b0C, SC 30\u00b0C, SC 37\u00b0C) using batch culture with daily dilutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C14 provide comprehensive experimental design details including population numbers, ploidy types, environments, culture conditions, and population losses. The methodology is clearly described with specific dilution ratios and generation counts, providing a well-documented experimental framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C73",
+      "C74"
+    ],
+    "result": "Most populations exhibited declining adaptability with rapid fitness increases in early generations followed by slower adaptation, though some diploid populations in SC 30\u00b0C showed an initial slow period followed by rapid fitness increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15, C16, C73, C74 describe fitness trajectory patterns supported by Figure 2 data. The general pattern of declining adaptability is well-documented across most populations, with the exception of specific diploid populations showing alternative dynamics. Statistical support and visual evidence strengthen these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Haploid populations gained more fitness than diploid populations on average (p<0.02), with diploids having higher ancestral fitness in all environments. MATa haploids evolved more rapidly than MAT\u03b1 haploids in SC 30\u00b0C (p<0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 present statistically significant findings with p-values and cite consistent prior work. The observations are supported by Figure 2 data and Mann-Whitney U tests. The interpretation considers both Haldane's sieve and declining adaptability as potential explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C76"
+    ],
+    "result": "Mutations accumulated steadily through time across all sequenced populations, with populations fixing mutations linearly even late in the experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21, C76 describe the temporal pattern of mutation accumulation supported by Figure 3 sequencing data. The steady, linear accumulation of fixed mutations is clearly demonstrated across 90 focal populations over six timepoints, providing strong evidence for continuous molecular evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Widespread genetic parallelism was observed at the gene and pathway level, with populations predictably adapting through mutations in the adenine biosynthesis pathway, sterility-associated genes, and negative regulators of the Ras pathway, though only one case of nucleotide-level parallelism (ade2-1 reversions) was found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35-C36, C77-C79 demonstrate parallelism supported by Figure 5-6 data showing excess high-multiplicity genes and GO term enrichment. The distinction between gene/pathway-level parallelism (widespread) and nucleotide-level parallelism (rare) is well-documented. Statistical analyses and null model comparisons strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Historical contingency was observed through over-dispersion of mutations ('coupon collecting') and elevated mutual information between multi-hit genes (p=0.036), indicating that mutations in certain genes affect the likelihood of mutations in others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52-C55 present statistical evidence for contingency through over-dispersion analysis and mutual information calculations (Figure 7 supplements). The p=0.036 for total mutual information provides modest but significant support, though individual gene pairs lack sufficient power for detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C24",
+      "C80",
+      "C81"
+    ],
+    "result": "No long-term coexistence of lineages or populations with highly elevated mutation rates were observed, contrasting with findings from the E. coli LTEE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C23-C24, C80-C81 report negative findings supported by Figure 3 data showing continuous fixation without stable coexistence. The contrast with LTEE is appropriately contextualized with claim C82 noting that even in LTEE, these phenomena took time to emerge. The absence of evidence is well-documented through sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Populations with dramatically elevated mutation rates were not observed, with only one potential mutator event (P1E11) showing a modest increase in indel mutations likely due to an MSH3 mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C32-C34 document the absence of strong mutator phenotypes with Figure 3B and Figure 4 supplement 2 showing no sudden increases in mutation accumulation rates. The single exception (P1E11) is characterized as modest, contrasting with the dramatic increases seen in LTEE. The evidence is thorough and appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "MATa populations showed consistently higher mutation accumulation rates than MAT\u03b1 or diploid populations, likely due to a TSA1 G146S mutation in the MATa ancestor that increases mutation rate approximately 5-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 present a clear causal chain from observation (higher mutation rate in MATa) to hypothesis (TSA1 mutation) to experimental validation (Figure 4 supplement 1 fluctuation assays). The lower dN/dS ratio in MATa populations (significant in SC 37\u00b0C, p<0.01) supports increased hitchhiking. The reconstruction and validation in BY4741 background strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Fixed mutations showed dN/dS ratios near one, with approximately 45-50% missense, 40-45% synonymous/noncoding, and 5-10% nonsense/indel mutations across strains and environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe the distribution and selection signatures of fixed mutations supported by Figure 4A-B. The dN/dS near one is interpreted as balance between beneficial selection and hitchhiking/purifying selection. The consistency across environments and strains strengthens these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C59",
+      "C60",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Evolution in diploid populations involved both fixation of heterozygous mutations and frequent loss-of-heterozygosity (LOH) events, with LOH patterns affected by both recombination hotspots (e.g., rDNA array on chromosome XII) and selection for recessive beneficial mutations (e.g., ADE pathway mutations). Haldane's sieve slowed diploid adaptation but could be bypassed through LOH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C59-C60, C89-C92 describe diploid-specific evolutionary dynamics supported by Figure 8A showing genome-wide LOH patterns and Figure 3 showing ADE pathway dynamics. The dual role of recombination rates and selection in shaping LOH patterns is well-documented. The ADE pathway provides a clear example of how LOH bypasses Haldane's sieve, though haploids still fixed these mutations earlier.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "Diploid populations accumulated substantial recessive deleterious load, with heterozygously fixed mutations including a large percentage of high-impact mutations in essential genes and higher proportions of high-impact mutations in non-essential genes compared to haploid or homozygous diploid fixations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C61-C62 present evidence for deleterious load supported by Figure 8B-C showing enrichment of high-impact mutations in essential genes among heterozygous fixations. The comparison across haploid, diploid LOH, and diploid non-LOH categories is systematic. However, C58 notes that genetic reconstructions or backcrossing would be needed for full characterization, appropriately qualifying the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The W303 ancestral strain carries an ade2-1 mutation causing toxic AIR accumulation. Almost all populations fixed loss-of-function mutations upstream of ADE2 to prevent toxicity, while five populations fixed rare reversion mutations restoring ADE2 function, achieving higher fitness. The rarity of reversions (6/205 populations) reflects the small mutational target size of single-codon reversion versus multiple genes for upstream loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 describe the ADE pathway dynamics supported by Figure 3A, Figure 6, Figure 7, and prior work (C45-C46 cite Kokina et al. 2014, Sharma et al. 2003, Rojas Echenique et al. 2019). The fitness landscape interpretation (Figure 7B) and target size explanation for reversion rarity are well-reasoned. The observation that reversion populations don't fix upstream LOF mutations (C50) provides internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C93"
+    ],
+    "result": "A few populations experienced dramatic fitness increases due to ade2-1 reversion mutations, with 4 of 6 such populations being diploids, suggesting that Haldane's sieve provided diploids more time to find this rare beneficial mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C93 connect the high-fitness populations (marked with asterisks in Figure 2) to ADE2 reversions and note the diploid enrichment. The interpretation that slower diploid adaptation provided more time to search mutational space is creative and plausible, though somewhat speculative. The observation is well-documented but the mechanistic explanation could benefit from additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Most multi-hit genes showed mutations distributed across strains and environments, but several genes showed strain- or environment-specific enrichment (e.g., SRS2 and LCB3 in SC 37\u00b0C, CCW12 in diploids).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe patterns of parallelism specificity supported by Figure 6 and statistical tests described in methods. The identification of environment- and strain-specific effects uses appropriate likelihood ratio tests with multiple hypothesis correction. Examples are clearly documented in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Some genes with 10 or more hits had no high-impact mutations fixed, with several being essential genes, suggesting selection for change- or gain-of-function rather than loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 identifies an important exception to the general pattern of loss-of-function mutations in multi-hit genes, supported by Figure 6 data. The inference about change- or gain-of-function is reasonable but would benefit from functional validation. The observation is well-documented but the mechanistic interpretation remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Only one focal haploid population underwent whole genome duplication during the experiment, contrasting with previous studies showing frequent diploidization in evolving haploid yeast populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 report a surprising negative finding supported by Figure 8 supplements 1-2 showing ploidy analysis. The contrast with prior work (Gerstein et al. 2006, Fisher et al. 2018, Harari et al. 2018) is appropriately noted. The low frequency could reflect experimental conditions (unshaken cultures, specific environments) but the observation is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "CCW12 is a candidate for overdominance, with preferential hits in diploids and only 2 of 17 fixed mutations losing heterozygosity, though prior work (Leu et al. 2020) found mixed evidence for overdominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 present CCW12 as a candidate for overdominance based on diploid enrichment and low LOH rate (Figure 6). However, C63 is explicitly speculative and C64 notes that Leu et al. 2020 did not detect overdominance in reconstructions. The evidence is suggestive but insufficient to confirm overdominance without genetic reconstructions, as acknowledged in C58.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The mitochondria was maintained in all populations, but frequent loss or loss-of-function occurred in the 2-micron plasmid and killer virus components. By generation ~10,000, 89/90 populations lost killing ability, with loss occurring most rapidly at high temperature, likely due to segregation/replication failure and toxin inactivation at elevated temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe extrachromosomal element dynamics supported by Figure 9A showing killer phenotype loss and citations to prior work. The temperature effect is consistent with previous studies (Jerison et al. 2020, Woods and Bevan 1968, Weinstein et al. 1993). The mechanistic explanations are well-supported by literature, though the authors did not sequence viral genomes to confirm the mechanism in their populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The 2-micron plasmid was lost less frequently in diploid strains and most consistently and rapidly in the high-temperature environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 describe 2-micron plasmid dynamics supported by Figure 9B. The patterns parallel killer virus loss, suggesting similar temperature sensitivity. The diploid effect is interesting but not mechanistically explained. The observations are well-documented through copy number analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22",
+      "C75"
+    ],
+    "result": "Clonal interference was frequently observed, with groups of mutations rising to high frequency and then declining due to competition with other lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C75 describe clonal interference patterns supported by Figure 3A allele frequency trajectories showing multiple competing lineages. The observation is consistent with theoretical expectations for asexual populations of this size and is well-documented across multiple populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Mutations in negative regulators of the Ras pathway are commonly observed in yeast evolution experiments and have been shown to be beneficial in similar environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 contextualizes findings with prior literature (Rojas Echenique et al. 2019, Kryazhimskiy et al. 2014, Lang et al. 2013, Venkataram et al. 2016). This is appropriate citation of established knowledge in the field and helps interpret the parallelism observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The lack of mutator lineages and stable coexistence in this experiment, compared to the LTEE, may reflect differences in mutation rate, balance of beneficial/deleterious mutations, metabolic pathway architecture, population size effects on drift, or other organism/environment-specific factors, suggesting these phenomena may not be as general as the LTEE suggested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C88 present multiple hypotheses for differences from LTEE, appropriately noting the speculative nature (C83, C85, C86 are marked as speculation/inference). While the hypotheses are reasonable and cite relevant theory (Swings et al. 2017, Kryazhimskiy et al. 2014, Good and Desai 2016), they remain untested. The conclusion about generality (C88) is appropriately qualified but goes beyond what the negative findings alone can support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Long-term adaptation to constant environments can be characterized by widespread clonal interference, contingency, and steady molecular evolution despite slowing fitness increases, with dominance and LOH playing important roles in diploid evolution. However, the generality of conclusions about evolution of mutation rates and stable coexistence is questioned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 synthesize the major conclusions of the study. C94 and C95 are well-supported by the collective evidence from fitness trajectories, sequencing data, and diploid-specific analyses. C96 appropriately questions generality based on the contrast with LTEE, though this conclusion is somewhat limited by the negative nature of the findings and lack of mechanistic resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "The LTEE has been conducted for over 30 years and 70,000 generations with 12 E. coli populations in the same constant environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 accurately describe the LTEE with appropriate citation (Lenski 2017). This provides essential context for comparing the current yeast experiment to the most prominent long-term evolution experiment.",
+    "result_type": "MINOR"
+  }
+]

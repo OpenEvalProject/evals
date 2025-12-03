@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11"
+    ],
+    "result": "The MCUcx is a Ca2+-selective channel composed of five subunit types: MCU and EMRE span the inner mitochondrial membrane, while MICU1, MICU2, and MICU3 reside in the intermembrane space. The functioning channel is a dimer composed of two MCU/EMRE pores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C11 describe the structural composition of MCUcx based on established knowledge and recent structural studies. These are well-supported by multiple citations to prior work and represent accepted understanding of the MCUcx architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C18"
+    ],
+    "result": "DRP1-KO MEFs express all principal MCU complex subunits, the MCUcx remains intact in isolated mitoplasts with the same composition as intact mitochondria, and MCUcx currents can be rescued by ectopic expression of MCU and EMRE in knockout cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, and C18 are supported by Western blot data (Figure 1\u2014figure supplement 1), co-immunoprecipitation data (Figure 1\u2014figure supplement 2F), and rescue experiments (Figure 1B and C). These validate the experimental system used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C19"
+    ],
+    "result": "In the absence of extramitochondrial Ca2+, there is outward Na+ current through MCUcx due to Na+ efflux from the matrix. When Ca2+ is present, it enters the selectivity filter to block Na+ permeation. MCU-mediated Na+ current depends on the presence of MCU and EMRE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, and C19 are supported by patch-clamp recordings (Figure 1A, D, E) and are consistent with prior work on MCUcx selectivity. The demonstration of Na+ current as a tool to assess channel function is a key methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "There is a Ca2+ uptake threshold around 400 nM in WT cells that is largely absent in MICU1-KO cells. However, MCUcx conductance is increased at low [Ca2+]i but decreased at high [Ca2+]i in MICU1-KO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by Ca2+ imaging (Figure 1F, G) and conductance measurements (Figure 1I). The observation of decreased conductance at high [Ca2+]i in MICU1-KO is inconsistent with the plug hypothesis and motivates the study's main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "WT mitoplasts have ICa current densities roughly twice those of MICU1-KO mitoplasts, while MICU2-KO and MICU3-KO show similar currents to WT. EMRE expression is reduced in MICU1-KO, but EMRE overexpression does not rescue the ICa reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by patch-clamp recordings (Figure 2A, B), Western blots (Figure 2\u2014figure supplement 1D-F), and rescue experiments (Figure 2\u2014figure supplement 1G-I). This demonstrates that the ICa reduction in MICU1-KO is not due to reduced EMRE expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Na+ current through MCUcx is indistinguishable between WT and MICU1-KO, but the ICa/INa ratio decreases approximately twice in MICU1-KO. This reduction cannot be explained by altered ion binding affinities. MICU1 enhances MCU current at high [Ca2+]i and does not occlude the channel at low [Ca2+]i.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by patch-clamp recordings (Figure 2C-F) and inhibition experiments (Figure 2\u2014figure supplement 2A, B). The use of Na+ current as an internal control is a key strength, demonstrating that MICU1 does not physically occlude the pore.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Depletion of Ca2+ and Mg2+ using EDTA enables Na+ influx via MCUcx that depolarizes \u0394\u03a8m to the same extent in WT and MICU1-KO. This demonstrates that MICUs do not plug the MCUcx channel at low [Ca2+]i; instead, MICUs potentiate MCUcx activity at elevated [Ca2+]i.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by membrane potential measurements (Figure 2G-I). The observation that Na+ influx causes similar depolarization in WT and MICU1-KO provides strong evidence against the plug hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Expression of MICU1 restores ICa to WT levels in MICU1-KO, but mut-EF-MICU1 (with non-functional EF hands) fails to do so. This confirms that Ca2+ binding to the EF hands of MICU1 is indispensable for ICa potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by Western blots (Figure 3A) and rescue experiments (Figure 3B). The EF hand mutant experiments provide strong evidence for the mechanism of MICU1-mediated potentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ICa is not significantly affected in MICU2-KO due to compensation by MICU1 homodimers. mut-EF-MICU2 overexpression displaces MICU1 from homodimers, decreasing functional EF hands and reducing ICa potentiation. MICU2, along with MICU1, is responsible for allosteric potentiation of MCU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by patch-clamp recordings (Figure 3C), Western blots (Figure 3\u2014figure supplement 1A), and functional data combined with structural evidence from multiple citations. The interpretation is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "ICa is not affected in MICU3-KO mitoplasts, and overexpression of MICU3 or mut-EF-MICU3 has no effect on ICa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by patch-clamp recordings (Figure 3D). This is consistent with MICU3 being a minor protein in the cell line used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ICa activation and deactivation upon rapid [Ca2+]i changes are immediate (\u03c4 ~0.4 ms) and not altered in MICU1-KO. The kinetics of Ca2+ binding to MICU's EF hands and resultant conformational changes are fast enough for mitochondria to rapidly track [Ca2+]i changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by fast solution exchange experiments (Figure 3E, F). The kinetics data demonstrate that MICU-mediated potentiation does not introduce significant delays in MCUcx response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "No outward ICa is observed in WT or MICU1-KO when 2 mM [Ca2+]m is present. MICUs are not responsible for the inward rectification of MCUcx; it is an inherent property of the pore proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 are supported by rectification experiments (Figure 3G). This clarifies that MICUs do not contribute to the rectification property of MCUcx.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "ICa amplitude is unchanged when [Ca2+]m is set at Ca2+-free, 400 nM, or 400 \u00b5M. MCUcx is not regulated by matrix Ca2+; MICUs only impart regulation by cytosolic Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C49 are supported by patch-clamp recordings (Figure 3\u2014figure supplement 1B-C). This contradicts a previous report and clarifies the site of MICU regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Binding of cytosolic Ca2+ to EF hands of MICU subunits allosterically potentiates MCUcx currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is a summary conclusion supported by the EF hand mutant experiments (C35-C40). This is a central finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "MCUcx exhibits multiple single-channel conductance levels. Open probability increases with IMM hyperpolarization. Single-channel amplitude is unchanged in MICU1-KO, but open probability decreases ~2-3 fold, resulting in significantly different time-averaged currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by single-channel recordings (Figure 4A-E). The single-channel data provide the mechanistic explanation for the whole-cell current differences observed in MICU1-KO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "When Na+ is the permeating ion (Ca2+-free conditions), there are no significant differences in open probability or time-averaged currents between WT and MICU1-KO. In the Ca2+-bound state, MICUs potentiate MCU current by increasing open probability; in the absence of Ca2+, MICUs do not affect pore activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by single-channel recordings with Na+ (Figure 5A-E). This provides strong mechanistic evidence that MICU potentiation is Ca2+-dependent and does not involve physical occlusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Mn2+ current is solely mediated by MCUcx and is ~7-fold smaller than Ca2+ current. In MICU1-KO, both IMn and ICa are reduced to a similar extent, and the IMn/ICa ratio is unchanged. MICU1 does not differentially regulate IMn and ICa; it potentiates MCUcx in the presence of both ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by patch-clamp recordings (Figure 6A-I). This contradicts the hypothesis that MICU1 determines MCUcx preference for Ca2+ over Mn2+ and demonstrates that MICU1 potentiates both currents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Mn2+ slows Ca2+ permeation due to tighter binding and longer dwell time in the pore, explaining why IMn is smaller than ICa. The ICa and IMn phenotypes of MICU1-KO are the same; MICU1 does not determine MCUcx preference for Ca2+ over Mn2+. Permeation of both ions is enhanced by MICU1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by experimental data (Figure 6E, F, J) and are consistent with prior work on ion channel permeation. The interpretation provides a mechanistic explanation for the Mn2+ results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ICa is inhibited by Mg2+, primarily at low micromolar [Ca2+]i. ICa in WT remains about double that in MICU1-KO regardless of [Mg2+]. Mg2+ inhibits ICa with similar IC50 in WT and MICU1-KO. The potentiating effect of MICU1 does not depend on [Mg2+]; Mg2+ exerts its inhibitory effect at the pore, not through MICUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by patch-clamp recordings (Figure 7B-D). This demonstrates that Mg2+ and MICU1 act through independent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mg2+ binds within the MCUcx selectivity filter formed by Asp and Glu residues, likely at the outermost Asp binding site with a hydration shell. This binding occludes the pore without allowing Mg2+ permeation. Mg2+ is a pore blocker that competes with Ca2+ at resting [Ca2+]i, partially explaining low mitochondrial Ca2+ uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C83 are partially supported by competitive inhibition data (Figure 7B) and structural citations, but C80 and C81 are speculative. The proposed mechanism is plausible but lacks direct structural or mutational evidence. Additional experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The primary function of MICU subunits is to potentiate MCUcx activity as cytosolic Ca2+ is elevated and binds to MICU's EF hands. At low [Ca2+]i, MCUcx is in a lower open probability mode; as [Ca2+]i increases, MICUs increase open probability. MICUs likely achieve this by interacting with EMRE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C85 are the main conclusions of the study, well-supported by all experimental data. Claim C86 is speculative but based on structural studies. The overall conclusion is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The inward rectification property of MCUcx is independent of MICUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by rectification experiments (Figure 3G). This clarifies a property of MCUcx.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "There is no evidence for regulation of MCUcx activity by matrix [Ca2+].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by experiments (Figure 3\u2014figure supplement 1B-C) and contradicts a previous report. This clarifies the site of Ca2+ regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The MCUcx pore is not occluded or plugged by MICUs in the absence or presence of extramitochondrial Ca2+. Instead, MICUs potentiate MCUcx activity as extramitochondrial Ca2+ is elevated by modifying gating properties to increase open state probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 represent the central findings of the manuscript, supported by extensive patch-clamp data (whole-cell and single-channel), Na+ current measurements, membrane potential studies, and EF hand mutant experiments. The evidence converges to refute the plug hypothesis and establish a potentiation mechanism.",
+    "result_type": "MAJOR"
+  }
+]

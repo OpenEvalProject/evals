@@ -1,0 +1,1363 @@
+{
+  "submission": {
+    "id": "7233d571-1abf-4431-8253-0df545a35524",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:55:43.977836Z",
+    "updated_at": "2025-12-03T19:55:43.977836Z"
+  },
+  "content": [
+    {
+      "id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "submission_id": "7233d571-1abf-4431-8253-0df545a35524",
+      "content_type": "manuscript",
+      "content_text": "# Regulatory and coding sequences of TRNP1 co-evolve with brain size and cortical folding in mammals\n\n## Authors\n\n- Zane Kliesmete<sup>1</sup>\n- Lucas Esteban Wange<sup>1</sup>\n- Beate Vieth<sup>1</sup>\n- Miriam Esgleas<sup>2</sup>\n- Jessica Radmer<sup>1</sup>\n- Matthias H\u00fclsmann<sup>1</sup>\n- Johanna Geuder<sup>1</sup>\n- Daniel Richter<sup>1</sup>\n- Mari Ohnuki<sup>1</sup>\n- Magdelena G\u00f6tz<sup>2</sup>\n- Ines Hellmann<sup>1</sup> ([ORCID: 0000-0003-0588-1313](https://orcid.org/0000-0003-0588-1313)) \u2020\n- Wolfgang Enard<sup>1</sup> ([ORCID: 0000-0002-4056-0550](https://orcid.org/0000-0002-4056-0550)) \u2020\n\n### Affiliations\n\n1. Anthropology and Human Genomics, Faculty of Biology, Ludwig-Maximilians-Universit\u00e4t Munich Germany ([ROR:05591te55](https://ror.org/05591te55))\n2. Physiological Genomics, BioMedical Center - BMC, Ludwig-Maximilians-Universit\u00e4t Munich Germany ([ROR:05591te55](https://ror.org/05591te55))\n3. Institute for Stem Cell Research, Helmholtz Zentrum M\u00fcnchen, Germany Research Center for Environmental Health Munich Germany ([ROR:00cfam450](https://ror.org/00cfam450))\n4. Department of Environmental Microbiology, Eawag D\u00fcbendorf Switzerland\n5. Department of Environmental Systems Science, ETH Zurich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n6. SYNERGY, Excellence Cluster of Systems Neurology, BioMedical Center (BMC), Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Munich Germany ([ROR:05591te55](https://ror.org/05591te55))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBrain size and cortical folding have increased and decreased recurrently during mammalian evolution. Identifying genetic elements whose sequence or functional properties co-evolve with these traits can provide unique information on evolutionary and developmental mechanisms. A good candidate for such a comparative approach is TRNP1, as it controls proliferation of neural progenitors in mice and ferrets. Here, we investigate the contribution of both regulatory and coding sequences of TRNP1 to brain size and cortical folding in over 30 mammals. We find that the rate of TRNP1 protein evolution (\u03c9) significantly correlates with brain size, slightly less with cortical folding and much less with body size. This brain correlation is stronger than for >95% of random control proteins. This co-evolution is likely affecting TRNP1 activity, as we find that TRNP1 from species with larger brains and more cortical folding induce higher proliferation rates in neural stem cells. Furthermore, we compare the activity of putative cis-regulatory elements (CREs) of TRNP1 in a massively parallel reporter assay and identify one CRE that likely co-evolves with cortical folding in Old World monkeys and apes. Our analyses indicate that coding and regulatory changes that increased TRNP1 activity were positively selected either as a cause or a consequence of increases in brain size and cortical folding. They also provide an example how phylogenetic approaches can inform biological mechanisms, especially when combined with molecular phenotypes across several species.\n\n## Introduction\n\nUnderstanding the genetic basis of complex phenotypes within and across species is central for biology. Brain phenotypes \u2013 even when as simple as size or folding \u2013 are of particular interest to many fields, because they are linked to cognitive abilities, which are of particular interest to humans (Reader et al., 2011; DeCasien et al., 2022).\n\nBrain size and cortical folding show extensive variation across mammals, including recurrent independent increases and decreases (Montgomery et al., 2016; Boddy et al., 2012; Lewitus et al., 2013; Smaers et al., 2021). For example, most rodents have a small brain and an unfolded cortex (Kelava et al., 2013), while carnivores, cetaceans, and primates generally have enlarged and folded cortices, peaking in dolphin and human. Also within primates these traits vary, showing an increase on the great ape branch, but also decreases in several New World monkey species. Using comparative, that is, phylogenetic, approaches across primates and mammals, these variations have been correlated with different life history traits, such as longevity, diet, or energetic constraints (DeCasien et al., 2017; DeCasien et al., 2022; Heldstab et al., 2022) revealing underlying ecological factors that drive selection for larger brains.\n\nThe underlying genetic and cellular factors that are associated with these evolutionary variations in brain size and folding have not been studied across such large phylogenies. However, observational and experimental studies, especially in mice, but increasingly also in other systems like the ferret, macaques and humans, have led to major insights into the genetic and cellular mechanisms of cortical development (Pinson and Huttner, 2021; Del-Valle-Anton and Borrell, 2022; Villalba et al., 2021). Briefly, proliferation of neuroepithelial stem cells (NECs) that have contacts with the apical surface and basal lamina leads to the formation of the neuroepithelium during early development. NECs then become Pax6-positive apical radial glia cells (aRGCs), that continue to self-amplify before producing basal progenitors (BPs). BPs include basal radial glia cells (bRGCs) that remain Pax6 positive, loose the apical contact, and \u2013 depending on the species \u2013 can also self-amplify before eventually producing neurons. The extent of proliferation of all these neural progenitors is also influenced by their cell cycle length where a short cell cycle leads to more cycles of symmetric divisions, a delayed onset of neurogenesis, and subsequently to more neurons and a bigger cortex. Notably, proliferation of bRGCs at a particular cortical location is thought to be crucial to generate a cortical fold at this location. Hence, genes that influence the proliferation of these neural progenitors to evolutionary changes in brain size and folding.\n\nThe major focus in this respect has been on identifying and functionally characterizing genetic changes on the human or primate lineage. For example, the human-specific gene ARHGAP11B was found to induce bRGC proliferation and folding in cortices of mice, ferrets, and marmosets (Florio et al., 2015; Kalebic et al., 2018; Heide et al., 2020). Other examples include an amino acid substitution specific to modern humans in TKTL1 (Pinson et al., 2022), human-specific NOTCH2 paralogs (Fiddes et al., 2018; Suzuki et al., 2018), the primate-specific genes TMEM14B and TBC1D3 (Liu et al., 2017; Ju et al., 2016), and an enhancer of FZD8, a receptor of the Wnt pathway (Boyd et al., 2015). While mechanistically convincing, it is unclear whether the proposed evolutionary link can be generalized as only one evolutionary lineage is investigated. Conversely, comparative approaches that correlate sequence changes with brain size changes have investigated more evolutionary lineages (Boddy et al., 2017; Montgomery et al., 2016), but these studies lack mechanistic evidence and are limited to the analysis of protein-coding regions. Here, we combine mechanistic and phylogenetic approaches to study TRNP1, a gene that is known to be important for cortical growth and folding by influencing aRGC and bRGC proliferation and differentiation in mice (Stahl et al., 2013; Pilz et al., 2013; Kerimoglu et al., 2021) and ferrets (Mart\u00ednez-Mart\u00ednez et al., 2016).\n\nOn a cellular level, expressing Trnp1 in neural stem cells (NSCs) isolated from mouse cortices induces phase separation, accelerates mitosis, and increases proliferation (Stahl et al., 2013; Esgleas et al., 2020). Increasing Trnp1 expression by in utero electroporation in mice and ferrets (embryonic day 13 [E13] in mice) leads to increased proliferation of aRGCs (Stahl et al., 2013; Mart\u00ednez-Mart\u00ednez et al., 2016). Decreasing Trnp1 expression levels in mice or ferrets (E13) reduces aRGC proliferation, increases their differentiation into BPs, and induces cortical folding (Stahl et al., 2013; Pilz et al., 2013; Mart\u00ednez-Mart\u00ednez et al., 2016). Notably, increasing Trnp1 expression levels by in utero electroporation at E14.5 increases bRGC proliferation (Kerimoglu et al., 2021) and also induces cortical folding.\n\nHence, Trnp1 levels can alter proliferation and differentiation of neural progenitors and in turn alter brain size and folding in mice and ferrets. However, whether genetic changes in TRNP1 did alter cortical size and folding during mammalian evolution is unclear. Here, we analyse the evolution of TRNP1 regulatory and coding sequences across mammals and investigate their link to the evolution of brain size and cortical folding.\n\n## Results\n\n### TRNP1 amino acid substitution rates co-evolve with rates of change in brain size and cortical folding in mammals\n\nWe experimentally and computationally collected (Camacho et al., 2009) and aligned (L\u00f6ytynoja, 2021) 45 mammalian TRNP1 coding sequences, including dolphin and 18 primates (99.0% completeness, Figure 1\u2014figure supplement 1A). For 30 of those species, we could also compile estimates for brain size and cortical folding, as well as body mass as a potentially confounding parameter (Figure 1A; Supplementary file 1c). We quantify brain size as its weight and cortical folding as the ratio of the cortical surface over the perimeter of the brain surface, the gyrification index (GI), where a GI $=1$ indicates a completely smooth brain and a GI gt1 indicates higher levels of cortical folding (Zilles et al., 1989). This phenotypic data together with the coding sequences are the basis for our investigation in the evolutionary relation between the rate of TRNP1 protein evolution and the evolution of brain size and gyrification.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig1-v1.jpg)\n\n**Figure 1.:** (A) Mammalian species for which body mass, brain size, gyrification index (GI) measurements, and TRNP1 coding sequences were available (n=30)(Figure 1\u2014figure supplement 1). Log2-transformed units: body mass and brain size in kg; GI is a ratio (cortical surface/perimeter of the brain surface). (B) Estimated marginal and partial correlation between \u03c9 of TRNP1 and the three traits using Coevol (Lartillot and Poujol, 2011). Size indicates posterior probability (pp). (C) TRNP1 protein substitution rates (\u03c9) significantly correlate with brain size ($r=0.83$, $p\u2062p$ = 0.97).(D) The average correlation across 124 control proteins with brain size ($r\u00af$=0.10). (E) TRNP1 \u03c9 correlation with GI compared to the average across control proteins. (F) TRNP1 \u03c9 correlation with body mass compared to the average across control proteins. (C, D, E, F) Error bars indicate standard errors. (G) Distribution of partial correlations between \u03c9 and brain size of the control proteins and TRNP1. (H) Distribution of partial correlations between \u03c9 and GI of the control proteins and TRNP1. (I) Scheme of the mouse TRNP1 protein (223 amino acids [AAs]) with intrinsically disordered regions (orange) and sites (red lines) subject to positive selection in mammals (\u03c9 > 1, $pp>0.95$Figure 1\u2014figure supplement 1). Letter size of the depicted AAs represents the abundance of AAs at the positively selected sites.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Multiple alignment of 45 TRNP1-coding sequences (99.0% completeness) using phylogeny-aware aligner PRANK. The alignment is 735 bases long, which translates to 245 amino acids (AAs). For comparison: human TRNP1 coding sequence is 227 AA long, whereas mouse \u2013 223 AAs. (B) Sites under positive selection across the phylogenetic tree according to PAML M8 site model (in total 9.8% of sites with \u03c9>1, likelihood ratio test (LRT), p-value < 0.001). The depicted sites had a posterior probability Pr(\u03c9 > 1) > 0.95 according to naive empirical Bayes analysis. Colours of the amino acids indicate their relatedness in biochemical properties. Sites with light-grey background and a dash indicate indels.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Posterior probabilities of the associations are depicted in brackets.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) A flowchart depicting the selection of comparable control proteins to infer the average protein correlation rate with the included phenotypes across the mammalian phylogeny of 30 species. 1088 1-exon protein sequences with a comparable length to TRNP1 were available in human CCDS, 132 of which had good full-length alignment quality across the 30 species, a log(dS) tree length less than 3\u00d7 SD away from the average and all belong to a different gene. 124 of these converged between the three Coevol runs. RBB \u2013 reciprocal best blat. (B) TRNP1 and 132 control proteins show comparable synonymous substitution rates (log(dS), top) and protein evolution rates (\u03c9, middle), inferred using PAML branch free-ratios model. All included proteins have high-quality full-length alignments (bottom), quantified as the mean relative tree length across all alignment positions per protein. Brown lines indicate TRNP1, black dashed lines \u2013 the average across all proteins, black dotted lines \u2013 median across all proteins. (C) Marginal and partial correlation distribution of 125 proteins, including TRNP1, with the three phenotypes: brain size, gyrification index (GI), and body mass inferred using Coevol. Dashed lines indicate the average across all proteins.\n\nThe ratio of the non-synonymous (non-neutral) and the synonymous substitution rates, $\\omega$, is easily accessible and hence one of the most widespread measures of selection on protein-coding sequences, despite its limitations (Yang, 2006; Nei et al., 2000). In the absence of additional evidence, only an $\\omega>1$ can be interpreted as proof of positive selection. However, an $\\omega$gt1 requires many recurrent selective events and hence is underpowered to detect moderate amounts of positive selection. Therefore, it has become common practice to identify increases of $\\omega$ on certain branches or subtrees relative to the remainder of the tree. For our question, we are analyzing the variation of $\\omega$ across branches. To this end, we use the software Coevol that allows estimating the co-variance between rates of phenotypic and evolutionary sequence changes ($\\omega$), while both types of information go into the optimization of branch length estimates of the underlying phylogenetic tree (Lartillot and Poujol, 2011). This allows to detect a correlation between the strength of selection ($\\omega$) and a phenotypic trait. The question remains whether this correlation is directly caused by selection on that trait, or what we observe are indirect effects. This is not uncommon, because the strength of selection depends on the effective population size ($N_{e}$) of a species, which is often linked to life history traits and body size (Ohta, 1987; Lynch and Walsh, 2007). For example, species with a large body size tend to have a small $N_{e}$ and thus a low efficacy of selection (Figuet et al., 2016; Lartillot and Poujol, 2011). With purifying selection being the dominant force in protein sequence evolution, we would thus expect a positive correlation between $\\omega$ and body size due to indirect effects of $N_{e}$. However, in contrast to directed selection on one trait which is targeted to specific genes, a lower efficacy in purifying selection due to $N_{e}$ will have an impact on all genes.\n\nTherefore, we compiled a set of control genes in the same 30 species for which we have TRNP1 sequences and phenotypic data. We started with all human autosomal genes that \u2013 as TRNP1 \u2013 have only one coding exon (n=1997; Human CCDS; Pujar et al., 2018) and a similar length (n=1088; 291\u2013999 bp vs. 682 bp of TRNP1). For 133 (12.3%) of these we could find full-length high-quality one-to-one orthologous sequences for all 30 species (Figure 1\u2014figure supplement 3A; Supplementary file 1f; Materials and methods). To ensure the quality of the resulting multiple sequence alignments, all of them were manually inspected. Based on the overall tree length we removed one outlier ($\\sigma_{log(dS)}>3$) leaving us with 132 control proteins that are well comparable to TRNP1 with respect to tree length, alignment quality, and \u03c9 (Figure 1\u2014figure supplement 3B). Eight rather conserved genes (six with \u03c9<0.04 and two with $\\omega$<0.19) did not show an acceptable parameter convergence between runs of Coevol, leaving 124 control genes well comparable to TRNP1 (Supplementary file 1f). If a species such as human or dolphin evolved a large, gyrified brain due to positive selection on TRNP1, we expect those lineages to show an increased rate of phenotype (brain size and GI) change and an increased $\\omega$. If this pattern is consistent across the majority of branches, Coevol would infer a positive correlation between $\\omega$ and the trait. Moreover, if this correlation is stronger than that for the average control protein, we can exclude that this is solely due to variation in the efficacy of selection.\n\nIndeed, we find that \u03c9 of TRNP1 positively correlates with brain size (r=0.83; p=0.97), GI (r=0.75; p=0.98), and also body mass (r=0.76; p=0.97) and that these correlations are stronger than those of the average control protein (Figure 1C\u2013F, Figure 1\u2014figure supplement 3C), showing that the interaction between TRNP1 and the phenotypes goes beyond pure efficacy of selection effects. All three traits are highly correlated with one another. It is well known that brain and body size are not independent, and the same is true for GI and brain size (Montgomery et al., 2016; Smaers et al., 2021). To disentangle which trait is most likely to be causal for the observed correlation with \u03c9, we compare the partial correlations and find that brain size has the highest partial correlation (r=0.4), followed by GI (r=0.34), while the partial correlation with body mass (r=0.19) has a much larger drop compared to the marginals (Figure 1B, Figure 1\u2014figure supplement 3C), making selection on brain size and/or GI the more likely causes for the variation in \u03c9. This said, TRNP1 is unlikely to be the sole evolutionary modifier of such an important and complex phenotype as brain size and gyrification. Because our control proteins represent a random selection of genes that based on sequence properties should give us comparable power to detect a link to these phenotypes, we can use the distribution of partial correlations of \u03c9 of the controls with brain size and GI to gauge the relative importance of TRNP1 for brain evolution (Figure 1G and H; Supplementary file 1g). We find that TRNP1 protein evolution is among 4.0% and 6.4% of the most correlated proteins for brain size and GI, respectively.\n\nHaving established that the rate of protein evolution of TRNP1 is linked to brain size evolution, we now want to pinpoint the relevant sites or domains in the protein to facilitate further functional studies. Using the site model of PAML (Yang, 1997), we find 9.8% of the codons to show signs of recurrent positive selection (i.e., $\\omega>1$, site models M8 vs. M7, $\u03c7^{2}p$-value <0.001, df = 2). Eight codons with a selection signature could be pinpointed with high confidence (Supplementary file 1d). Seven out of those eight reside within the first intrinsically disordered region (IDR) and one in the second IDR of the protein (Figure 1I; Figure 1\u2014figure supplement 1B). The IDRs of TRNP1 are thought to mediate homotypic and heterotypic protein-protein interactions and are relevant for TRNP1-dependent phase separation, nuclear compartment size regulation, and M\u2010phase length regulation (Esgleas et al., 2020). Hence, the positively selected sites indicate that these IDR-mediated TRNP1 functions were repeatedly adapted during mammalian evolution and the identified sites are candidates for further functional studies.\n\n### TRNP1 proliferative activity co-evolves with brain size and cortical folding in mammals\n\nNext, we investigated whether the correlation between TRNP1 protein evolution and cortical phenotypes can be linked to functional properties of TRNP1 at a cellular level. A central property of TRNP1 is to promote proliferation of aRGC (Stahl et al., 2013; Esgleas et al., 2020) and also of BPs (Kerimoglu et al., 2021). This proliferative activity can be assessed in an in vitro assay in which TRNP1 is transfected into NSCs isolated from E14 mouse cortices (Stahl et al., 2013; Esgleas et al., 2020).\n\nTo compare TRNP1 orthologues in this assay, we synthesized and cloned the TRNP1 coding sequence of human, rhesus macaque, galago, mouse, and dolphin that cover the observed range of $\\omega$ (Figure 1C). After co-transfection with green fluorescent protein (GFP), we quantified the number of proliferating (Ki67+, GFP+) over all transfected (GFP+) NSCs for each TRNP1 orthologue in \u22657 replicates (Figure 2A and B). We confirmed that TRNP1 transfection does increase proliferation compared to a GFP-only control (p-value $<2\\times10^{\u221216}$; Figure 2\u2014figure supplement 1A) as shown in previous studies (Stahl et al., 2013; Esgleas et al., 2020). Remarkably, the proportion of proliferating cells was highest in cells transfected with dolphin TRNP1 followed by human, which was significantly higher than the two other primates, galago and macaque (Figure 2C; Figure 2\u2014figure supplement 1B; Supplementary file 2a-c). Indeed, the proliferative activity of TRNP1 is a significant predictor for brain size (BH-adjusted p-value = 0.0018, $R^{2}=0.89$) and GI (BH-adjusted p-value = 0.016, $R^{2}=0.69$) of its species of origin (phylogenetic generalized least squares [PGLS], likelihood ratio test [LRT]; Figure 2C). Note that the three primates and the dolphin are phylogenetically equally distant to the mouse (Figure 2C) and hence a bias due to the murine assay system cannot explain the observed correlations with brain size and GI. Hence, these results further support that the TRNP1 protein co-evolves with brain size and cortical folding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig2-v1.jpg)\n\n**Figure 2.:** (A) Five different TRNP1 orthologues were transfected into neural stem cells (NSCs) isolated from cerebral cortices of 14-day-old mouse embryos and proliferation rates were assessed after 48 hr using Ki67 immunostaining as proliferation marker and green fluorescent protein (GFP) as transfection marker in 7\u201312 independent biological replicates. (B) Representative image of the transfected cortical NSCs immunostained for GFP and Ki67. Arrows indicate three transfected cells of which two (solid arrows) are Ki67-positive (Figure 2\u2014figure supplement 1). (C) Induced proliferation in NSCs transfected with TRNP1 orthologues from five different species (Supplementary file 2). Proliferation rates are a significant predictor for brain size ($\u03c7^{2}$=10.04, df = 1, BH-adjusted p-value = 0.0018 = 11.75 \u00b1 2.412, $R^{2}$ = 0.89) and GI ($\u03c7^{2}$=5.85, df = 1, BH-adjusted p-value = 0.016 = 16.97 \u00b1 6.568, $R^{2}$ = 0.69) in the respective species (phylogenetic generalized least squares [PGLS], likelihood ratio test [LRT]). Error bars indicate standard errors. Included species: human (Homo sapiens), rhesus macaque (Macaca mulatta), northern greater galago (Otolemur garnettii), house mouse (Mus musculus), common bottlenose dolphin (Tursiops truncatus).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Proliferation induced in neural stem cells (NSCs) transfected with TRNP1 (all TRNP1 orthologues combined) compared to the control NSCs transfected only with green fluorescent protein (GFP). TRNP1 presence in NSCs significantly increases the proliferation rates (TRNP1: 0.53 (\u00b10.02), control: 0.34 (\u00b10.02), df = 57). (B) Proliferation induced in NSCs transfected with TRNP1 orthologous from five different species (Supplementary file 2). (A), (B) Bars indicate standard errors of logistic regression and asterisks indicate the significance of pairwise comparisons (Tukey test, p-value: <0.1, *<0.05, **<0.001, ****<2e-16).\n\n### Activity of a cis-regulatory element of TRNP1 likely co-evolves with cortical folding in catarrhines\n\nExperimental manipulation of Trnp1 expression levels alters proliferation and differentiation of aRGC and bRGC in mice and ferrets (Stahl et al., 2013; Mart\u00ednez-Mart\u00ednez et al., 2016; Kerimoglu et al., 2021). Therefore, we next investigated whether changes in TRNP1 regulation may also be associated with the evolution of cortical folding and brain size by analyzing co-variation in the activity of TRNP1 associated cis-regulatory elements (CREs), using massively parallel reporter assays (MPRAs). To this end, a library of putative regulatory sequences is cloned into a reporter vector and their activity is quantified simultaneously by the expression levels of element-specific barcodes (Inoue and Ahituv, 2015). To identify putative CREs of TRNP1, we used DNase hypersensitive sites (DHS) from human foetal brain (Bernstein et al., 2010) and found three upstream CREs, the promoter-including exon 1, an intron CRE, one CRE overlapping the second exon, and one downstream CRE (Figure 3A). We obtained the orthologous sequences of the human CREs using a reciprocal best blat (RBB) strategy across additional mammalian species either from genome databases or by sequencing, yielding a total of 351 putative CREs in a panel of 75 mammalian species (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig3-v1.jpg)\n\n**Figure 3.:** (A) Experimental setup of the massively parallel reporter assay (MPRA). Regulatory activity of seven putative TRNP1 CREs from 75 species were assayed in neural progenitor cells (NPCs) derived from human and cynomolgus macaque induced pluripotent stem cells. (Figure 3\u2014figure supplement 1). (B) Fraction of the detected CRE tiles in the plasmid library per species across regions. The detection rates are unbiased and uniformly distributed across species and clades with only one extreme outlier Dipodomys ordii. (C) Fraction of the detected CRE tiles in the plasmid library per region across species. (D) Log-transformed total regulatory activity per CRE in human NPCs across species with available brain size and gyrification index (GI) measurements (n=45). (E) Total activity per CRE across species. Exon 1 (E1), intron (I), and the downstream (D) regions are more active and longer than other regions. (B, C, E) Each box represents the median and first and third quartiles with the whiskers indicating the furthest value no further than 1.5 * IQR from the box. Individual points indicate outliers. Figure 3\u2014figure supplement 2 (F) Regulatory activity of the intron CRE is weakly associated with gyrification across mammals (phylogenetic generalized least squares [PGLS], likelihood ratio test [LRT] p-value=0.097, R2=0.07, n=37) and strongest across great apes and Old World monkeys, that is, catarrhines (PGLS, LRT p-value=0.003, R2=0.58, n=10).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Species for which the regions were inferred based on DNase hypersensitive sites (DHS) from embryonic brain (Bernstein et al., 2010) are marked in bold and black: human (H. sapiens) and mouse (M. musculus). These species do not show extreme differences in length compared to others (human: 5/7, mouse: 3/5 regions within the 10% and 90% quantiles). The orthologous CRE sequence length differs strongly between primate and non-primate species, being on average 1.8\u20132.8 times longer in the primate species than in the other mammals.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Pairwise correlation of the log2-transformed cis-regulatory element (CRE) tile activity between the three transduced cell lines: human 1, human 2, and macaque. Pearson\u2019s $r$ is specified in the brackets of figure titles. (B) Pairwise correlation of the log2-transformed summarized activity per CRE region between cell lines. Pearson\u2019s $r$ is specified in the brackets of figure titles.\n\nDue to limitations in the length of oligonucleotide synthesis, we split each orthologous putative CRE into highly overlapping, 94 bp fragments. The resulting 4950 sequence tiles were synthesized together with a barcode unique for each tile. From those, we constructed a complex and unbiased lentiviral plasmid library containing at least 4251 (86%) CRE sequence tiles (Figure 3B and C). Next, we stably transduced this library into neural progenitor cells (NPCs) derived from two humans and one cynomolgus macaque (Geuder et al., 2021). We calculated the activity per CRE sequence tile as the read-normalized reporter gene expression over the read-normalized input plasmid DNA (Figure 3A, Materials and methods). Finally, we use the per-tile activities (Figure 3\u2014figure supplement 2A) to reconstruct the activities of the putative CREs. To this end, we summed all tile sequence activities for a given CRE while correcting for the built-in sequence overlap (Figure 3D; Materials and methods). CRE activities correlate well within the two human NPC lines and between the human and cynomolgus macaque NPC lines, indicating that the assay is robust across replicates and species (Pearson\u2019s $r$ 0.85\u20130.88; Figure 3\u2014figure supplement 2B). The CREs covering exon 1, the intron, and the CRE downstream of TRNP1 show the highest total activity across species while the CREs upstream of TRNP1 show the lowest activity (Figure 3E).\n\nNext, we tested whether CRE activity is associated with either brain size or GI across the 45 of the 75 mammalian species for which these phenotypes were available (Figure 3D). None of the CREs showed a significant association with brain size or GI (PGLS, LRT uncorrected p-value > 0.05) and only the intron CRE had a tendency to be positively associated with gyrification (PGLS, uncorrected LRT p-value=0.097, Figure 3F, left; Supplementary file 3b). Our power to detect such associations might be considerably lower than for coding sequences also because regulatory elements have a high turn-over rate (Danko et al., 2018; Berthelot et al., 2018; Huber et al., 2020). Hence, we expect that some orthologous DNA sequences that are CREs in one species do not function as CREs in others and can even be lost. The latter effect might explain why the sequences orthologous to human CREs are shorter in non-primate species more distantly related to humans (Figure 3\u2014figure supplement 1). So phylogenetic comparisons of regulatory elements might be more powerful when restricted to species closely related to the species from which the CRE annotation is derived (humans in our case). Indeed, when we restrict our analysis to the catarrhine clade that encompasses Old World monkeys, great apes, and humans, the association between intron CRE activity and GI becomes considerably stronger (PGLS, uncorrected LRT p-value=0.003, Bonferroni-corrected for seven regions p-value=0.02, Figure 3F, right; Supplementary file 3). To validate that our model results are rather specific, we generated a null distribution for the observed correlation across catharrines, permuting the activities of all other CREs of this study. In agreement with our model results, we find 8/1000 (0.8%) of the random CRE combinations to have such a significant association of p \u2264 0.003. Moreover, the intron CRE activity-GI association was consistently detected across all three cell lines including the cynomolgus macaque NPCs (Supplementary file 3). Furthermore, Reilly et al. compared enhancer activity by histone modifications in the developing cortex of humans, rhesus macaques, and mice and found a gain in activity on the human lineage in a region overlapping the intron CRE (Reilly et al., 2015). Thus, while the statistical evidence from our MPRA data alone is limited, we consider the GI association in catarrhines together with the additional evidence from Reilly et al., 2015, strong enough to warrant a more detailed analysis of the intron CRE.\n\n### Transcription factors with binding site enrichment on intron CREs regulate cell proliferation and are candidates to explain the observed activity across catarrhines\n\nReasoning that differences in CRE activities will likely be mediated by differences in their interactions with transcription factors (TF), we analysed the sequence evolution of putative TF binding sites (Figure 4A). First, we performed RNA-seq on the same samples that were used for the MPRA. Notably, also TRNP1 was expressed (Figure 4B), supporting the relevance of our cellular system. Moreover, TRNP1 expression was significantly higher in human NPC lines than that of cynomolgus macaque\u2019s (BH-adjusted p-value <0.05, Figure 4\u2014figure supplement 1A\u2013C), consistent with higher intron CRE activity. Among the 392 expressed TFs with known binding motifs, we identified 22 with an excess of binding sites (Frith et al., 2003) within the catarrhine intron CRE sequences (Figure 4B and D). In agreement with TRNP1 itself being involved in the regulation of cell proliferation (Volpe et al., 2006; Stahl et al., 2013; Esgleas et al., 2020), these 22 TFs are enriched in biological processes regulating cell proliferation, neuron apoptotic process, and hormone levels (Gene Ontology, Fisher\u2019s exact p-value <0.05, background: 392 expressed TFs; Figure 4C; Supplementary file 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig4-v1.jpg)\n\n**Figure 4.:** (A) Orthologous intron CRE sequences show different regulatory activities under the same cellular conditions, suggesting variation in cis regulation across species. (B) Variance-stabilized expression in neural progenitor cells (NPCs) of TRNP1 and the 22 TFs with enriched binding sites (motif weight \u2265 1) on the intron CREs. Each box represents the median, first and third quartiles with the whiskers indicating the furthest value no further than 1.5 * IQR from the box. Points indicate individual expression values. Vertical line indicates average expression across all 392 TFs (5.58), grey area: standard deviation (1.61). (C) Eight top enriched biological processes (Gene Ontology, Fisher\u2019s exact test p-value <0.05) of the 22 TFs. Background: all expressed TFs (392). (D) Variation in binding scores of the enriched TFs across catarrhines. Heatmaps indicate standardized binding scores (grey), gyrification index (GI) values (blue) and intron CRE activities (yellow) from the respective species. TF background colour indicates gene ontology assignment of the TFs to the two most significant biological processes. The bottom panel indicates the spatial position of the top binding site (motif score >3) for each TF on the human sequence. (E) Binding scores of three TFs (CTCF, ZBTB26, SOX8) are the best candidates to explain intron CRE activity, whereas only CTCF binding shows an association with the GI (phylogenetic generalized least squares [PGLS], likelihood ratio test [LRT] p-value <0.05). (F) Predicted intron CRE activity by the binding scores of the three TFs vs. the measured intron CRE activity across catarrhines.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Variance-stabilized expression of TRNP1. (B) Expression ranks of TRNP1. (C) Differential expression results between the three cell lines. Colour indicates significant differential expression using Benjamini-Hochberg adjusted p-value cutoff of 0.05.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83593/elife-83593-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** TAD boundary (blue) ends just upstream of the TRNP1 exon 1 in human germinal zone (gestational week 8, Hi-C) (Won et al., 2016). In agreement, CTCF ChIP-seq peak was detected within intron (I) CRE (neural progenitor cells [NPCs]). Another nearby CTCF binding site that is bound by CTCF is in the upstream 1 (U1) CRE sequence (ENCODE Project Consortium (2012)). Histonemark H3K27ac (light brown) and H3K4me2 (dark brown) data from human developing cortex (gestational week 7, Reilly et al., 2015).\n\nTo further prioritize these 22 TFs, we used the motif binding scores in the 10 catarrhine intron CREs to predict the observed intron CRE activity in the MPRA and to predict the GI of the respective species. We found three TFs (CTCF, ZBTB26, SOX8) to be the best candidates to explain the variation in the intron CRE activity and one TF (CTCF) to co-vary with GI (PGLS, uncorrected LRT p-value <0.05, Figure 4D\u2013F). While the statistical support for this association is not strong, which is expected given that we were screening 22 candidate TFs in only 10 species, CTCF ChIP-seq data from the relevant cell types suggests that this particular CTCF binding site is indeed bound by CTCF in human NPCs (ChiP-seq, Encode Project Consortium, 2012, Figure 4\u2014figure supplement 2). Moreover, HiC data show a topologically associated domain (TAD) boundary just upstream of TRNP1 in the germinal zone of the developing human brain (postconception week 8, Won et al., 2016). Hence, variations in the binding strength of CTCF across species might likely have consequences for the stability of the TAD boundary and TRNP1 expression, affecting the associated phenotypes given its crucial role for brain development (Stahl et al., 2013).\n\nIn summary, we find a suggestive correlation between the activity of the intron CRE and gyrification in catarrhines, indicating that also regulatory changes of TRNP1 might have contributed to the evolution of gyrification.\n\n## Discussion\n\nPrevious studies in mice and ferrets have elucidated mechanisms how Trnp1 is necessary for proliferation and differentiation of neural progenitors and how it could contribute to the evolution of brain size and cortical folding. We applied phylogenetic methods to explore associations between sequence and trait evolution and found that the rate of protein evolution and the proliferative activity of TRNP1 positively correlate with brain size and gyrification in mammals. Moreover, we find tentative evidence that the activity of a regulatory element in the intron of TRNP1 might be associated with gyrification in catarrhines. At the sequence level, such a correlation could also be caused by confounding factors that affect the efficacy of natural selection such as the effective population size (Ohta, 1987; Lynch and Walsh, 2007). However, body size \u2013 a reasonable proxy for effective population size (Figuet et al., 2016; Lartillot and Poujol, 2011) \u2013 correlates much less with TRNP1 protein evolution than brain size or gyrification. Even more convincingly, the correlation of TRNP1 with brain size and gyrification is much stronger than the average correlation of these traits with the evolution of other proteins, that would have had to experience the same population size changes. Furthermore, it is unclear how an increased proliferative activity of TRNP1 or an increased CRE activity could be caused by a reduced efficacy of selection or other confounding factors. Together with the known role of TRNP1 in brain development, we think that the observed correlations are best interpreted as co-evolution of TRNP1 activity with brain size and gyrification, that is, that more active TRNP1 alleles were selected because they were advantageous to increase brain size and/or gyrification.\n\nOf note, the effect of structural changes appears stronger than the effect of regulatory changes. This is contrary to the notion that regulatory changes should be the more likely targets of selection as they are more cell-type specific (Carroll, 2008) (but see also Hoekstra and Coyne, 2007). However, current measures of regulatory activity are inherently less precise than counting amino acid changes, which will necessarily deflate the estimated association strength (Danko et al., 2018; Berthelot et al., 2018; Huber et al., 2020). Not only is gene regulation cell-type and time-dependent, but regulatory elements also evolve much faster, making a comprehensive and informative comparison across large phylogenies much more difficult. Moreover, while MPRAs function well in deciphering the regulatory activities of individual CREs, they are still limited in their in vivo interpretation. In any case, our analysis suggests that evolution likely combined both regulatory and structural evolution to modulate TRNP1 activity.\n\nThe MPRA also allowed to identify TFs that have a binding site enrichment to the intron CRE and are likely direct regulators of TRNP1. These include INSM1 (Tavano et al., 2018), which also has been shown to control NEC-to-neural-progenitor transition, as well as other relevant factors with increased activity in human neural stem and progenitor cells during early cortical development compared to later stages, such as TFAP2A, NFIC, TCF3, KLF12, and again INSM1 (Trevino et al., 2021; de la Torre-Ubieta et al., 2018). Among the enriched TFs that bind to the intron CRE, CTCF had the strongest association with gyrification. Although CTCF is best known for its insulating properties, it can also act as transcriptional activator and recruit co-factors in a lineage-specific manner (Arzate-Mej\u00eda et al., 2018). In neural progenitors, CTCF loss causes severe impairment in proliferative capacity through the increase in premature cell cycle exit, which results in drastically reduced progenitor pool and early differentiation (Watson et al., 2014). The overlapping molecular roles of TRNP1 and CTCF in neural progenitors support the possibility that TRNP1 is among the cell-fate determinants downstream of CTCF (Wu et al., 2006; Delgado-Olgu\u00edn et al., 2011). Differences between species in CTCF binding strength and/or length to the intron CRE might have direct consequences for the binding of additional TFs, TRNP1 expression, and the resulting progenitor pool. However, the effects of CTCF binding in vitro and in vivo might differ and the exact mechanism, including the developmental timing and cellular context in which this might be relevant, is yet to be disentangled.\n\nIndependent from the mechanisms and independent whether caused by regulatory or structural changes, it is relevant how an increased TRNP1 activity could alter brain development. When overexpressing Trnp1 in aRGCs of developing mice (E13) and ferrets (E30), aRGC proliferation increases (Stahl et al., 2013; Pilz et al., 2013; Mart\u00ednez-Mart\u00ednez et al., 2016). Similarly, overexpression of Trnp1 increases proliferation in vitro in NSCs (Stahl et al., 2013; Esgleas et al., 2020) or breast cancer cells (Volpe et al., 2006). Hence, TRNP1 evolution could contribute to evolving a larger brain by increasing the pool of aRGCs. In addition, increases in brain size and especially increases in cortical folding are highly dependent on increases in proliferation of BPs, in particular bRGCs (Pinson and Huttner, 2021; Del-Valle-Anton and Borrell, 2022; Villalba et al., 2021). Remarkably, recent evidence indicates that Trnp1 could be important also for the proliferation of BPs (Kerimoglu et al., 2021): Firstly, in contrast to non-proliferating BPs from mice, proliferating BPs from human do express TRNP1 (Kerimoglu et al., 2021). Furthermore, when activating expression of Trnp1 using CRISPRa at E14.5, more proliferating BPs and induction of cortical folding is observed (Kerimoglu et al., 2021). Hence, a more active TRNP1 can increase proliferation in aRGCs and BPs and this could cause the observed co-evolution with brain size and cortical folding. TRNP1 is the first case where analyses of protein sequence, regulatory activity, and protein activity across a larger phylogeny have been combined to investigate the role of a candidate gene in brain evolution. Functional evidence from evolutionary changes on the human lineage, for example, for ARHGAP11B and NOTCH2NL, but also phylogenetic evidence from correlating sequence changes with brain size changes (Montgomery et al., 2016; Boddy et al., 2017) indicate that a substantial number of genes could adapt their function when brain size changes in mammalian lineages. Improved genome assemblies (Rhie et al., 2021) will decisively improve phylogenetic approaches (Cavassim et al., 2022; Stephan et al., 2022; Jourjine and Hoekstra, 2021; Smith et al., 2020). In combination with the increased possibilities for functional assays due to DNA synthesis (Chari and Church, 2017) and comparative cellular resources across many species (Enard, 2012; Housman and Gilad, 2020; Geuder et al., 2021), this offers exciting possibilities to study the genetic basis of complex phenotypes within and across species.\n\n## Materials and methods\n\n### Sample collection and cell culture\n\n#### Mouse strain and handling\n\nMouse handling and experimental procedures were performed in accordance with German and European Union guidelines and were approved by the State of upper Bavaria. All efforts were made to minimize suffering and number of animals. Two- to three-month female C57BL/6J wild-type mice were maintained in specific pathogen-free conditions in the animal facility, in 12:12 hr light/dark cycles and bred under standard housing conditions in the animal facility of the Helmholtz Center Munich and the Biomedical Center Munich. The day of the vaginal plug was considered E0.\n\n#### Primary cerebral cortex harvesting and culture\n\nE14 mouse (M. musculus) cerebral cortices were dissected, removing the ganglionic eminence, the olfactory bulb, the hippocampal anlage, and the meninges. Cells were mechanically dissociated with a fire polish Pasteur pipette. Cells were then seeded onto poly-D-lysine (PDL)-coated glass coverslips in DMEM-GlutaMAX (Dulbeccos\u2019s modified Eagles\u2019s medium) supplemented with 10% foetal calf serum (FCS) and 100 \u00b5g/mL Pen. Strep. and cultured at 37\u00b0C in a 5% CO2 incubator.\n\n#### Culture of HEK293T cells\n\nHEK 293T cells (H. sapiens) were grown in DMEM supplemented with 10% FCS and 1% Pen. Strep. Cells were cultured in 10 cm flat-bottom dishes at 37\u00b0C in a 5% CO2 environment and split every 2\u20133 days in a 1:10 ratio using 5 mL PBS to wash and 0.5 mL 0.25% Trypsin to detach the cells.\n\n#### Culture of Neuro-2A cells\n\nNeuro-2A cells (N2A) (ATCC; CCL-131, M. musculus) were cultured in Eagle\u2019s minimum essential medium (Thermo Fisher Scientific) with 10% FCS (Thermo Fisher Scientific) at 37\u00b0C in a 5% CO2 incubator and split every 2\u20133 days in a 1:5 ratio using 5 mL PBS (Thermo Fisher Scientific) to wash and 0.5 mL 0.25% Trypsin (Thermo Fisher Scientific) to detach the cells.\n\n#### Culture of neural progenitor cells\n\nNeural progenitor cells of two human (H. sapiens) and one cynomolgus monkey (M. fascicularis) cell line (Geuder et al., 2021) were cultured at 37\u00b0C in a 5% CO2 incubator on Geltrex (Thermo Fisher Scientific) in DMEM F12 (Fisher Scientific) supplemented with 2 mM GlutaMAX-I (Fisher Scientific), 20 ng/\u00b5L bFGF (Peprotech), 20 ng/\u00b5L hEGF (Miltenyi Biotec), 2% B-27 supplement (50\u00d7) minus vitamin A (Gibco), 1% N2 supplement 100\u00d7 (Gibco), 200 \u03bcM L-ascorbic acid 2-phosphate (Sigma), and 100 \u03bcg/mL penicillin-streptomycin (Pen. Strep.) with medium change every second day. For passaging, NPCs were washed with PBS and then incubated with TrypLE Select (Thermo Fisher Scientific) for 5 min at 37\u00b0C. Culture medium was added and cells were centrifuged at 200 \u00d7 g for 5 min. Supernatant was replaced by fresh culture medium and cells were transferred to a new Geltrex-coated dish. The cells were split every 2\u20133 days in a ratio of 1:3. All cell lines have been authenticated using RNA sequencing (RNA-seq), see Geuder et al., 2021, and the current study. Mycoplasma is regularly tested for using PCR-based test.\n\n### Sequencing of TRNP1 for primate species\n\n#### Identification of CREs of TRNP1\n\nDHS in the proximity to TRNP1 (25 kb upstream, 3 kb downstream) were identified in human foetal brain and mouse embryonic brain DNase-seq datasets (Vierstra et al., 2014; Bernstein et al., 2010) downloaded from NCBI\u2019s Sequence Read Archive (see Appendix 1\u2014key resources table ). Reads were mapped to human genome version hg19 and mouse genome version mm10 using NextGenMap with default parameters (NGM; version 0.0.1) (Sedlazeck et al., 2013). Peaks were identified with Hotspot version 4.0.0 using default parameters (John et al., 2011). Overlapping peaks were merged, and the union per species was taken as putative CREs of TRNP1 (Supplementary file 3a). The orthologous regions of human TRNP1 DNase peaks in 49 mammalian species were identified with reciprocal best hit using BLAT (v. 35x1) (Kent, 2002). Firstly, sequences of human TRNP1 DNase peaks were extended by 50 bases down- and upstream of the peak and the best matching sequence per peak region were identified with BLAT using the following settings: -t=DNA -q=DNA -stepSize=5 -repMatch=2253 -minScore=0 -minIdentity=0 -extendThroughN. These sequences were aligned back to hg19 using the same settings as above. The resulting best matching hits were considered reciprocal best hits if they fell into the original human TRNP1 CREs. In total, 351 putative TRNP1 CRE sequences were identified, including human, mouse, and orthologous sequences.\n\n#### Cross-species primer design for sequencing\n\nWe sequenced TRNP1 coding sequences in six primates for which reference genome assemblies were either unavailable or very sparse and the ferret (Mustela putorius furo) where the sequence was incomplete (see Supplementary file 1a). For the missing primate sequences we used NCBI\u2019s tool Primer Blast (Ye et al., 2012) with the human TRNP1 gene locus as a reference. Primer specificity was confirmed using the predicted templates in 12 other primate species available in Primer Blast. Following primers were used as they worked reliably in all six species (forward primer, GGGAGGAGTAAACACGAGCC; reverse primer, AGCCAGGTCATTCACAGTGG). For the ferret sequence, the genome sequence (MusPutFur1.0,) contained a gap in the TRNP1 coding sequence leading to a truncated protein. To recover the full sequence of TRNP1 we used the conserved sequence 5\u2019 of the gap and 3\u2019 of the gap as input for primer blast (primer sequences can be found in the analysis GitHub, see Data availability).\n\nIn order to obtain TRNP1 CREs for the other primate species, we designed primers using primux (Hysom et al., 2012) based on the species with the best genome assemblies and subsequently tested them in closely related species in multiplexed PCRs. A detailed list of designed primer pairs per CRE and reference genome can be found in the analysis GitHub (see Data availability).\n\n#### Sequencing of target regions for primate species\n\nPrimate gDNAs were obtained from Deutsches Primaten Zentrum, DKFZ, and MPI Leipzig (see Supplementary file 1b). Depending on concentration, gDNAs were whole genome amplified prior to sequencing library preparation using GenomiPhi V2 Amplification Kit (Sigma). After amplification, gDNAs were cleaned up using SPRI beads (CleaNA). Both TRNP1 coding regions and CREs were resequenced starting with a touchdown PCR to amplify the target region followed by a ligation and Nextera XT library construction. TRNP1 coding regions were sequenced as 250 bases paired end with dual indexing on an Illumina MiSeq, the CRE libraries libraries were sequenced 50 bp paired end on an Illumina HiSeq 1500.\n\n#### Assembly of sequenced regions\n\nReads were demultiplexed using deML (Renaud et al., 2015). The resulting sequences per species were subsequently trimmed to remove PCR handles using cutadapt (version 1.6) (Martin, 2011). For sequence reconstruction, Trinity (version 2.0.6) in reference-guided mode was used (Grabherr et al., 2011). The reference here is defined as the mapping of sequences to the closest reference genome with NGM (version 0.0.1) (Sedlazeck et al., 2013). Furthermore, read normalization was enabled and a minimal contig length of 500 was set. The sequence identity of the assembled contigs was validated by BLAT (Kent, 2002) alignment to the closest reference TRNP1 as well as to the human TRNP1. The assembled sequence with the highest similarity and expected length was selected per species.\n\nThe same strategy was applied to the resequenced ferret genomic sequence, except that we used bwa-mem2 (Vasimuddin et al., 2019) for mapping and for the assembly with Trinity we set minimal contig length to 300 (reference genome musFur1). Only the part covering the 3\u2019 end (specifically, the last 107 AAs) was successfully assembled, however, luckily, MusFur1 genome assembly already provides a good-quality assembly for the 5\u2019 end of the protein. The overlapping 36 AAs (108 nucleotides) between both sources had a 100% agreement on the nucleotide sequence level, hence we collapsed the sequences from both sources to yield a full-length protein-coding sequence. In a neighbour joining tree, where we included the nucleotide sequences from all 30 mammalian TRNP1 orthologues, ferret sequence was placed within the other carnivore sequences (between cat and a branch leading to seal, sea lion) as expected given the phylogenetic relationships of these species.\n\n#### TRNP1 coding sequence retrieval and alignment\n\nHuman TRNP1 protein sequence was retrieved from UniProt database (UniProt Consortium, 2019) under accession number Q6NT89. We used the human TRNP1 in a tblastn (Camacho et al., 2009) search of genomes from 45 species, without any repeat masking specified in Supplementary file 1a (R-package rBLAST version 0.99.2). The resulting sequences were re-aligned with PRANK (L\u00f6ytynoja, 2021) (version 150803), using the mammalian tree from Bininda-Emonds et al., 2007.\n\n#### Control gene set selection and alignment\n\nControl genes were selected using consensus coding sequence (CCDS) dataset for human GRCh38.p12 genome (35,138 coding sequences, release 23) (Pujar et al., 2018). RBB (Kent, 2002) strategy was applied to identify the orthologous sequences in the other 29 species using -q=prot -t=dnax blat settings. We picked the best matching sequence per CDS in each species using a score based on the BLOSUM62 substitution matrix (Henikoff and Henikoff, 1992) and gapOpening = 3, gapExtension = 1 penalties, and requiring at least 30% of the human sequence to be found in the other species. This sequence was extracted and the same strategy was applied when blatting the orthologous sequence to the human genome. If the target sequence with the best score overlaps at least 10% of the original CDS positions, it was kept. To have a comparable gene set to TRNP1 in terms of statistical power and alignment quality, we selected all genes that had a similar human coding sequence length as TRNP1 (\u2265291 and \u2264999 nucleotides) and 1 coding exon (322 out of the total of 1088 1-exon similar-length candidates prior to RBB). If RBB returned multiple matches per species per sequence with the same highest alignment score to the human sequence, we kept these only if the matching sequences were identical, which resulted in 274 genes. We further filtered for genes with all orthologous sequences of length at least 50% and below 200% relative to the length of the respective human protein-coding orthologue (257 genes). These were aligned using PRANK (L\u00f6ytynoja, 2021) as for TRNP1, and manually inspected. One hundred and twelve alignments were optimal, and we could get additional 22 high-quality alignments by searching orthologues in additional genome versions using the previously described RBB strategy (gorilla gorGor5.fa, dolphin GCF_011762595.1_mTurTru1, wild boar GCF_000003025.6_Sscrofa11.1, rhesus macaque GCF_003339765.1_Mmul_10, olive baboon GCA_000264685.2_Panu_3.0) and redoing the alignment. Gene TREX1 turned out to have two CCDS included: CCDS2769.1, CCDS59451.1. As these are not independent, we randomly kept only one CCDS (CCDS2769.1). Alignment information content per protein-coding sequence (TRNP1 and 133 controls) was quantified as the average total branch length reduction across positions as a result of gaps using the following formula:\n\n$$\n\\lambda\u00af_{red}=\\frac{1}{p}\\sumi=1p\\frac{\\lambda_{i}}{\\lambda_{t}},\n$$\n\nwhere i to p is alignment position, $\\lambda_{i}$ is the total branch length at position i, $\\lambda_{t}$ is the total branch length of the full 30 species tree. All branch lengths were taken from the pruned mammalian tree from Bininda-Emonds et al., 2007. This information per protein can be found in Supplementary file 1f, column AlnInfoContent.\n\n### Evolutionary sequence analysis\n\nFor all evolutionary analyses, the pruned mammalian tree from Bininda-Emonds et al., 2007, was provided to the respective program.\n\n#### Estimation of the total tree length for dS and dN/dS\n\nProgram codeml from PAML software (Yang, 1997) (version 4.8) was used to obtain the total tree length for dS and dN. dN/dS was calculated as the ratio between the two parameters. Branch free-ratio model was ran on TRNP1 and 133 control protein-coding sequences using the following settings seqtype = 1, CodonFreq = 2, clock = 0, aaDist = 0, model = 1. We required the log(dS) tree length to be <3\u00d7 SD away from the average, leading to the exclusion of one protein CCDS34575.1, resulting in a set containing 132 control sequence alignments and TRNP1.\n\n#### Inferring correlated evolution using Coevol\n\nCoevol (Lartillot and Poujol, 2011) (version 1.4) was utilized to infer the covariance between TRNP1 and control protein evolutionary rate $\\omega$ with three morphological traits (brain size, GI, and body mass) across species (Supplementary file 1c). Coevol is a Bayesian phylogenetic approach that jointly models substitution rates and continuous trait changes as a multivariate Brownian motion, yielding an estimate of the correlation structure between these variables, while reconstructing divergence times and ancestral traits. Simultaneous parameter estimation within the same framework helps avoiding error propagation.\n\nFor each model, the MCMC was run three times for at least 10,000 cycles, using the first 1000 as burn-in. For TRNP1 and 124 control proteins all parameters have a relative difference <0.3 and effective size >50, indicating good convergence, 8 control proteins did not reach convergence and were thereby excluded from further analyses. We report the average posterior probabilities ($p\u2062p$), the average marginal and partial correlations of the full model (Supplementary file 1e) and the separate models where including only either one of the three traits (Supplementary file 1e). The PP for a negative correlation are given by $1-p\u2062p$. These were back-calculated to make them directly comparable, independently of the correlation direction, that is, higher $p\u2062p$ means more statistical support for the respective correlation.\n\n#### Identification of sites under positive selection\n\nProgram codeml from PAML software (Yang, 1997) (version 4.8) was used to infer whether a significant proportion of TRNP1 protein sites evolve under positive selection across the phylogeny of 45 species, setting seqtype = 1, CodonFreq = 2, clock = 0, aaDist = 0, model = 0. Site models M8 (NSsites = 8) and M7 (NSsites = 7) were compared (Yang et al., 2000), that allow $\\omega$ to vary among sites across the phylogenetic tree, but not between branches. M7 and M8 are nested with M8 allowing for sites under positive selection with $\\omega_{s}$. LRT with 2 degrees of freedom was used to compare these models. Naive empirical Bayes (NEB) analysis was used to identify the specific sites under positive selection (Pr($\\omega>1$)>0.95).\n\n### Proliferation assay\n\n#### Plasmid construction\n\nThe five TRNP1 orthologous sequences containing the restriction sites BamHI and XhoI were synthesized by GeneScript. All plasmids for expression were first cloned into a pENTR1a gateway plasmid described in Stahl et al., 2013, and then into a Gateway (Invitrogen) form of pCAG-GFP (kind gift of Paolo Malatesta). The gateway LR-reaction system was used to then sub-clone the different TRNP1 orthologues into the pCAG destination vectors.\n\n#### Primary cerebral cortex transfection\n\nPrimary cerebral cortex cultures were established as outlined under experimental model and subject details. Plasmids were transfected with Lipofectamine 2000 (Life Technologies) according to the manufacturer\u2019s instruction 2 hr after seeding the cells onto PDL-coated coverslips. One day later cells were washed with phosphate buffered saline (PBS) and then fixed in 4% paraformaldehyde (PFA) in PBS and processed for immunostaining.\n\n#### Immunostaining\n\nCells plated on PDL-coated glass coverslips were blocked with 2% BSA, 0.5% Triton-X (in PBS) for 1 hr prior to immunostaining. Primary antibodies (chicken alpha-GFP, Aves Labs: GFP-1010 and rabbit alpha-Ki67, abcam: ab92742) were applied in blocking solution overnight at 4\u00b0C. Fluorescent secondary antibodies were applied in blocking solution for 1 hr at room temperature. DAPI (4\u2019,6-diamidin-2-phenylindol, Sigma) was used to visualize nuclei. Stained cells were mounted in Aqua Polymount (Polysciences). All secondary antibodies were purchased from Life Technologies. Representative high-quality images were taken using an Olympus FV1000 confocal laser\u2010scanning microscope using 20\u00d7/0.85 NA water immersion objective. Images used for quantification were taken using an epifluorescence microscope (Zeiss, Axio ImagerM2) equipped with a 20\u00d7/0.8 NA and 63\u00d7/1.25 NA oil immersion objectives. Postimage processing with regard to brightness and contrast was carried out where appropriate to improve visualization, in a pairwise manner.\n\n#### Proliferation rate calculation using logistic regression\n\nThe proportion of successfully transfected cells that proliferate under each condition (Ki67-positive/GFP-positive) was modeled using logistic regression (R-package stats (version 4.0.3), glm function) with logit link function $l\u2062o\u2062g\u2062i\u2062t\u2062(p)=l\u2062o\u2062g\u2062(\\frac{p}{1-p}),$ for $0\\leqp\\leq1,$ where $p$ is the probability of success. The absolute number of GFP-positive cells were added as weights. Model selection was done using LRT within ANOVA function from stats. Adding the donor mouse as a batch improved the models (Supplementary file 2a).\n\nTo back-calculate the absolute proliferation probability (i.e., rate) under each condition, intercept of the respective model was set to zero and the inverse logit function $\\frac{e^{\\beta_{i}\u2062X_{i}}}{1+e^{\\beta_{i}\u2062X_{i}}}$ was used, where $i$ indicates condition (Supplementary file 2b). Two-sided multiple comparisons of means between the conditions of interest were performed using glht function (Tukey test, user-defined contrasts) from R package multcomp (version 1.4-13) (Supplementary file 2c).\n\n#### Phylogenetic modeling of proliferation rates using generalized least squares\n\nThe association between the induced proliferation rates for each TRNP1 orthologue and the brain size or GI of the respective species was analysed using generalized least squares (R-package nlme, version 3.1-143), while correcting for the expected correlation structure due to phylogenetic relation between the species. The expected correlation matrix for the continuous trait was generated using a Brownian motion (Felsenstein, 1985; Martins and Hansen, 1997) (ape [version 5.4], using function corBrownian). The full model was compared to a null model using the LRT. Residual $R^{2}$ values were calculated using R2.resid function from R package RR2 (version 1.0.2).\n\n### Massively parallel reporter assay\n\n#### MPRA library design\n\nA total of 351 potential TRNP1 CRE sequences were identified as outlined before. Based on these, the MPRA oligos were designed as 94mers, where larger sequences were covered by sliding window by 40 bases, resulting in 4950 oligonucleotide sequences, that are flanked by upstream and downstream priming sites and KpnI/Xbal restriction cut sites as in the original publication (Melnikov et al., 2012). Barcode tag sequences were designed so that they contain all four nucleotides at least once, do not contain stretches of four identical nucleotides, do not contain microRNA seed sequences (retrieved from microRNA Bioconductor R package, version 1.28.0), and do not contain restriction cut site sequences for KpnI nor Xbal. The full library of designed oligonucleotides can be found on GitHub (see Data availability).\n\n#### MPRA library construction\n\nWe modified the original MPRA protocol (Melnikov et al., 2012) by using a lentiviral delivery system as previously described (Inoue et al., 2017), introducing GFP instead of nanoluciferase and changing the sequencing library preparation strategy. In brief, oligonucleotide sequences (Custom Array) were amplified using emulsion PCR (Micellula Kit, roboklon) and introduced into the pMPRA plasmid as described previously. The nanoluciferase sequence used in the original publication was replaced by EGFP using Gibson cloning and subsequent insertion into the enhancer library using restriction enzyme digest as in the original publication. Using SFiI the assembled library was transferred into a suitable lentiviral vector (pMPRAlenti1, Addgene #61600).\n\nPrimer sequences and plasmids used in the MPRA can be found in the analysis GitHub (see Data availability). To ensure maximum library complexity, transformations that involved the CRE library were performed using electroporation (NEB 10-beta electrocompetent Escherichia coli), in all other cloning steps chemically competent E. coli (NEB 5-alpha) were used.\n\nLentiviral particles were produced according to standard methods in HEK 293T cells (Dull et al., 1998). The MPRA library was co-transfected with third generation lentiviral plasmids (pMDLg/pRRE, pRSV-Rev, pMD2.G; Addgene #12251, #12253, #12259) using Lipofectamine 3000. The lentiviral particle containing supernatant was harvested 48 hr post transfection and filtered using 0.45 \u03bcm PES syringe filters. Viral titer was determined by infecting N2A cells (ATCC CCL-131) and counting GFP-positive cells. To this end, N2A cells were infected with a 50/50 volume ratio of viral supernatant to cell suspension with addition of 8 \u03bcg/mL Polybrene. Cells were exposed to the lentiviral particles for 24 hr until medium was exchanged. Selection was performed using blasticidin starting 48 hr after infection.\n\n#### MPRA lentiviral transduction\n\nThe transduction of the MPRA library was performed in triplicates on two H. sapiens and one M. fascicularis NPC lines generated as described previously (Geuder et al., 2021). 2.5 \u00d7 105 NPCs per line and replicate were dissociated, dissolved in 500 \u00b5L cell culture medium containing 8 \u03bcg/mL Polybrene and incubated with virus at MOI 12.7 for 1 hr at 37\u00b0C in suspension (Nakai et al., 2018). Thereafter, cells were seeded on Geltrex and cultured as described above. Virus containing medium was replaced the next day and cells were cultured for additional 24 hr. Cells were collected, lysed in 100 \u03bcL TRI reagent, and frozen at \u201380\u00b0C.\n\n#### MPRA sequencing library generation\n\nAs input control for RNA expression, DNA amplicon libraries were constructed using 100\u2013500 pg plasmid DNA. Library preparation was performed in two successive PCRs. A first PCR introduced the 5\u2019 transposase mosaic end using overhang primers, this was used in the second PCR (Index PCR) to add a library-specific index sequence and Illumina Flow Cell adapters. The Adapter PCR was performed in triplicates using DreamTaq polymerase (Thermo Fisher Scientific). Subsequently 1\u20135 ng of the Adapter PCR product were subjected to the Index PCR using Q5 polymerase.\n\nTotal RNA from NPCs was extracted using the Direct-zol RNA Microprep Kit (Zymo Research). Five hundred ng of RNA were subjected to reverse transcription using Maxima H Minus RT (Thermo Fisher Scientific) with oligo-dT primers. Fifty ng of cDNA were used for library preparation and processed as described for plasmid DNA.\n\nPlasmid and cDNA libraries were pooled and quality was evaluated using capillary gel electrophoresis (Agilent Bioanalyzer 2100). Sequencing was performed on an Illumina HiSeq 1500 instrument using a single-index, 50 bp, paired-end protocol.\n\n#### MPRA data processing and analysis\n\nMPRA reads were demultiplexed with deML (Renaud et al., 2015) using i5 and i7 adapter indices from Illumina. Next, we removed barcodes with low sequence quality, requiring a minimum Phred quality score of 10 for all bases of the barcode (zUMIs, fqfilter.pl script; Parekh et al., 2018). Furthermore, we removed reads that had mismatches to the constant region (the first 20 bases of the GFP sequence TCTAGAGTCGCGGCCTTACT). The remaining reads that matched one of the known CRE-tile barcodes were tallied up resulting in a count table. Next, we filtered out CRE tiles that had been detected in only one of the three input plasmid library replicates (4202/4950). Counts per million were calculated per CRE tile per library (median counts: \u223c900k range: 590\u20131050k). Macaque replicate 3 was excluded due to its unusually low correlation with the other samples (Pearson\u2019s r). The final regulatory activity for each CRE tile per cell line was calculated as:\n\n$$\na_{i}=\\frac{median(CPM_{i})}{median(CPM_{i})_{p}},\n$$\n\nwhere $a$ is regulatory activity, $i$ indicates CRE tile, and $p$ is the input plasmid library. Median was calculated across the replicates from each cell line.\n\nGiven that each tile was overlapping with two other tiles upstream and two downstream, we calculated the total regulatory activity per CRE region in a coverage-sensitive manner, that is, for each position in the original sequence, mean per-bp-activity across the detected tiles covering it was calculated. The final CRE region activity is the sum across all base positions.\n\n$$\na_{r}=\\sumb=1k\\frac{1}{n}\\sumi=1n\\frac{a_{i}}{l_{i}},\n$$\n\nwhere ar is regulatory activity of CRE region $r$, $b=1,\u2026,k$ is the base position of region $r$, $i,...,n$ are tiles overlapping the position $b$, ai is tile activity from Equation 1 and li is tile length. CRE activity and brain phenotypes were associated with one another using PGLS analysis (see above). The number of species varied for each phenotype-CRE pair (brain size: min. 37 for exon 1, max. 48 for intron and downstream regions; GI: min. 32 for exon2, max. 37 for intron), therefore the activity of each of the seven CRE regions was used separately to predict either GI or brain size of the respective species.\n\n### TF analysis\n\n#### RNA-seq library generation\n\nRNA-seq was performed using the prime-seq method (Janjic et al., 2022). The full prime-seq protocol including primer sequences can be found at protocols.io (https://www.protocols.io/view/prime-seq-s9veh66). Here, we used 10 ng of the isolated RNA from the MPRA experiment and subjected it to the prime-seq protocol. Sequencing was performed on an Illumina HiSeq 1500 instrument with the following setup: read 1 16 bases, read 2 50 bases, and i7 index read 8 bases.\n\n#### RNA-seq data processing\n\nBulk RNA-seq data was generated from the same nine samples (three cell lines, three biological replicates each) that were assayed in the MPRA. Raw read fastq files were pre-processed using zUMIs (version 2.4.5b) (Parekh et al., 2018) together with STAR (version STAR_2.6.1c) (Dobin et al., 2013) to generate expression count tables for barcoded UMI data. Reads were mapped to human reference genome (hg38, Ensembl annotation GRCh38.84). Further filtering was applied keeping genes that were detected in at least 7/9 samples and had on average more than 7 counts, resulting in 17,306 genes. For further analysis, we used normalized and variance stabilized expression estimates as provided by DESeq2 (Love et al., 2014), using a model ~0+ clone. Differential expression testing between clone pairs was carried out using Benjamini and Hochberg-corrected Wald test as implemented in DESeq2.\n\n#### TFBS motif analysis on the intron CRE sequence\n\nTF position frequency matrices were retrieved from JASPAR CORE 2020 (Fornes et al., 2020), including only non-redundant vertebrate motifs (746 in total). These were filtered for the expression in our NPC RNA-seq data, leaving 392 TFs with 462 motifs in total.\n\nA hidden Markov model-based program Cluster-Buster (Frith et al., 2003) (compiled on 13 June 2019) was used to infer the enriched TF binding motifs on the intron sequence. Firstly, the auxiliary program Cluster-Trainer was used to find the optimal gap parameter between motifs of the same cluster and to obtain weights for each TF based on their motif abundance per kb across catharrine intron CREs from 10 species with available GI measurements. Weights for each motif suggested by Cluster-Trainer were supplied to Cluster-Buster that we used to find clusters of regulatory binding sites and to infer the enrichment score for each motif on each intron sequence. The program was run with the following parameters: \u2013g3 \u2013c5 \u2013m3.\n\nTo identify the most likely regulators of TRNP1 that bind to its intron sequence and might influence the evolution of gyrification, we filtered for the motifs that were most abundant across the intron sequences (Cluster-Trainer weights >1). These motifs were distinct from one another (mean pairwise distance 0.72). Gene set enrichment analysis contrasting the TFs with the highest binding potential with the other expressed TFs was conducted using the Bioconductor package topGO (Alexa, 2009) (version 2.40.0) (Supplementary file 3), setting the following parameters: ontology=\u2018BP\u2019, nodeSize = 20, algorithm = \u2018elim\u2019, statistic = \u2018fisher\u2019. PGLS model was applied as previously described, using Cluster-Buster binding scores across catharrine intron CRE sequences as predictors and predicting either intron activity or GI from the respective species. The relevance of the three TFs that were associated with intron activity was then tested using an additive model and comparing the model likelihoods with reduced models where either of these were dropped.\n\n#### Retrieving public data\n\nAnnotations and coordinates of enhancers showing gained activity in humans based on H3K27ac and H3K4me2 histone marks were downloaded from GSE63648 (Reilly et al., 2015) as bed files from the section Supplementary files.\n\nCTCF ChiP-seq data from human neural progenitor cells (line H9) was retrieved from ENCODE (Encode Project Consortium, 2012) (doi:10.17989/ENCSR125NBL). All samples were consistent regarding TRNP1 CTCF ChIP-seq landscape. We depict read distribution using BigWig file of sample ENCFF896TQG.\n\nHuman Hi-C data (Won et al., 2016) on TAD positions in germinal zone at week 8 was retrieved as a coordinate file in bed format using GEO accession GSE77565.\n\n### Quantification and statistical analysis\n\nData visualizations and statistical analysis was performed using R (version 4.0) (R Development Core Team, 2019). Details of the statistical tests performed in this study can be found in the main text as well as the Materials and methods section and Supplementary files 1\u20133. For display items all relevant parameters like sample size (n), type of statistical test, significance thresholds, degrees of freedom, as well as standard deviations can be found in the figure legends.\n\n### Resource availability\n\n#### Lead contact\n\nFurther information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Wolfgang Enard (enard@bio.lmu.de).\n\n#### Materials availability\n\nPlasmids and cell lines used in this work will be available upon request.\n",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "2b519429-b0d7-4ff7-95d2-c836dee23163",
+      "submission_id": "7233d571-1abf-4431-8253-0df545a35524",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jenny Tung, https://ror.org/00py81415 Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83593.sa0](https://doi.org/10.7554/eLife.83593.sa0)\n\nThis is an important paper that combines comparative analysis and experimental assays to investigate the role of protein-coding and regulatory changes at TRNP1 in mammalian brain evolution. The evidence supporting a contribution of TRNP1 is convincing, although the strength of the link between protein-coding changes and trait evolution is stronger and more readily interpretable than the data on gene regulation. The work will be of interest to researchers interested in mammalian evolution, brain evolution, and evolutionary genetics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jenny Tung, https://ror.org/00py81415 Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83593.sa1](https://doi.org/10.7554/eLife.83593.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Regulatory and coding sequences of TRNP1 co-evolve with brain size and cortical folding in mammals\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Detlef Weigel as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The reviewers appreciated the effort to investigate both coding and regulatory changes and feel the MPRA study was well-designed. However, because the results of the MPRA are somewhat unclear (and necessarily incomplete as a test of regulatory function), please temper your conclusions accordingly. Additionally, clarify how you dealt with the multiple testing burden.\n\n2) Please address the outstanding questions about the appropriateness of the background set of genes used for comparison of brain phenotype-evolutionary rate correlations. This could take the form of additional analysis, or minimally a discussion of the potential limitations and/or biases of the set you used.\n\nReviewer #1 (Recommendations for the authors):\n\nI think this paper makes an important contribution to the literature. Genomic analyses that control for phylogenetic context/non-independence remain rare (at least in primates), and the integration of functional genomic analysis and experimentation is an important strength. I have a few concerns, however:\n\n1. I am unclear on your interpretation of the correlation between brain size/gyrification and the rate of protein evolution-specifically, why a positive correlation should necessarily be expected. While comparative analyses often analyze correlated evolution between two traits (e.g., brain size and diet), this analysis seems more like analyzing the correlation between brain size and lineage-specific change in diet. If we assume that TRNP1 is a major driver of brain size, and selection on brain size fully accounts for selection on the gene, then the big-brained descendants of a big-brained ancestor might show strongly conserved patterns of evolution (small values of omega) rather than additional evidence for lineage-specific positive selection. In other words, whether selection for big brains translates to evidence for positive versus purifying selection on the sequence (i.e., the value of omega) would seem to depend on ancestral state. It would be helpful to readers if you can outline your hypotheses and predictions here more explicitly, including your expectations related to lineage-specific rates.\n\n2. On a related note, I appreciate the attempt to find a matched set of control genes for the protein molecular evolution analysis; clearly this is difficult. However, I am not entirely convinced that the control genes are an appropriate background set (although I am also not sure how to identify one). Because one of the main filters for identifying these genes was to find genes where homologues can be readily identified, without the additional curation/sequencing done for TRNP1, they are likely to be enriched for genes evolving under constraint within mammals-so they may control for demographic differences, but not for the interaction of Ne with positive selection. This appears to be the case based on Figure 1\u2014figure supplement 3, where most genes show no evidence of sites under positive selection. The comparison therefore works as a null for testing for positive selection, but not as an ideal null for testing whether patterns of positive selection correlate with a brain size/gyrification, as intended here (since most genes don't show the same pattern of positive selection).\n\n3. In Figure 1 C and D and lines 104-105, the strongly attenuated slope in the control genes line is because you are taking the average across control genes for each species. The comparison I think you want is whether the slope for TRNP1 is an outlier relative to the slopes calculated for each of the control genes, not relative to the slope calculated for their average, which will inevitably be attenuated. I think this is the result you report in lines 106-109, but it should also be what is visualized in Figure 1C-1D to avoid overemphasizing the difference between TRNP1 and the control gene distribution (by taking the average, the distribution is not apparent). On a related note: are the results in these figures and text controlled for phylogenetic non-independence? I ask in part because it seems like a lot of the signal is being driven by haplorrhine primates.\n\n4. You show, in a very nice result, that neural stem cell proliferation rate is correlated with brain size and gyrification index. Given that your evidence for the protein evolution-trait link is based on lineage-specific omega, is proliferation rate therefore correlated with omega?\n\n5. Line 189 (and related to the question below about the directional relationship between TRNP1 expression and brain morphology) draws on the MPRA results to argue that the expression regulation of TRNP1 co-evolves with cortical folding. Is TRNP1 indeed more highly expressed in catarrhines with higher GI values (i.e., is this result consistent with a prediction from the literature?).\n\nReviewer #3 (Recommendations for the authors):\n\nI would suggest that the authors address the following points:\n\n1. Protein evolution rate analyses: I found Fig1S3 surprising, as it seems that about half of all control proteins used by the authors also evolve under positive selection. This seems unlikely high, and suggests that either the alignments contain errors and require cleaning, or the false discovery rate is inadequately corrected for in this analysis. Additionally, it was not always clear to me when the authors use either branch or site tests \u2013 I assume that the evolutionary rate analyses use unconstrained branch models, but this does not appear in the methods. In this case, can branch length confound the signal? I would expect that the estimation of omega in human, for example, is less reliable than e.g. dolphin, where the terminal branch is much longer.\n\n2. Throughout the paper, it is unclear how multiple testing was corrected for. In some cases this does not matter, but it does for example when the authors investigate correlations between CRE activity and brain phenotypes at multiple sites. The likelihood of finding one spurious correlation increases rapidly when multiple CREs are tested, and in this case the authors cannot fall back on control regions to estimate the probability of observing such a correlation from background data, as they do for the gene evolution analyses. It may not be possible to control for this, but this should be explicitly acknowledged, and the conclusions toned down as a consequence.\n\n3. I do not think it is surprising that an enhancer active in brain contains an excess of binding sites for TFs involved in neuronal proliferation, especially as I don't fully understand the display of Figure 4C (what does \"Fisher's p\" mean? P-value of Fisher's exact test \u2013 which would mean that these enrichments are not actually significant? What does \"significant/annotated\" mean?). The evidence that CTCF binding sites are stronger in catarrhines is weak \u2013 again, it is not clear to me how multiple testing was corrected for here, and the probability of spuriously finding one TF with a correlation out of 22 is high. I would suggest discussing this more explicitly, and toning down the discussion on CTCF as I am unconvinced that this signal is specific.\n\n4. Spotted a few typos that need correcting e.g. line 111 \"showed higher a significant\"; line 122 \"orthologoues\"; also some in the methods which should be caught by a spellcheck editor.\n",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6bdd84b4-f9db-4908-be1c-a44869bdec67",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C1",
+      "claim": "TRNP1 controls proliferation of neural progenitors in mice and ferrets.",
+      "claim_type": "EXPLICIT",
+      "source": "A good candidate for such a comparative approach is TRNP1, as it controls proliferation of neural progenitors in mice and ferrets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited as established knowledge in the abstract",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "1e32fe4d-830d-45bc-9d48-5aa19a5dd364",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C2",
+      "claim": "The rate of TRNP1 protein evolution (\u03c9) significantly correlates with brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the rate of TRNP1 protein evolution (\u03c9) significantly correlates with brain size, slightly less with cortical folding and much less with body size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by Coevol analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "048795cc-0e4d-467c-8d99-2ef65edae12d",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C3",
+      "claim": "The brain correlation of TRNP1 protein evolution is stronger than for >95% of random control proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This brain correlation is stronger than for >95% of random control proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by comparison with 124 control proteins",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "252fb3b0-833b-484a-8780-d7eff03d85f7",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C4",
+      "claim": "TRNP1 from species with larger brains and more cortical folding induce higher proliferation rates in neural stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This co-evolution is likely affecting TRNP1 activity, as we find that TRNP1 from species with larger brains and more cortical folding induce higher proliferation rates in neural stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by proliferation assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "eab9d2bb-8e19-47be-ab8d-ebfd30100bfd",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C5",
+      "claim": "One CRE of TRNP1 likely co-evolves with cortical folding in Old World monkeys and apes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we compare the activity of putative cis-regulatory elements (CREs) of TRNP1 in a massively parallel reporter assay and identify one CRE that likely co-evolves with cortical folding in Old World monkeys and apes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by MPRA data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "fa78fbb2-0a9f-46d7-a6e9-ca6ddf23116c",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C6",
+      "claim": "Coding and regulatory changes that increased TRNP1 activity were positively selected either as a cause or a consequence of increases in brain size and cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses indicate that coding and regulatory changes that increased TRNP1 activity were positively selected either as a cause or a consequence of increases in brain size and cortical folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as conclusion in abstract based on multiple lines of evidence",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "ad7131a3-cca5-46f7-a441-a6101a4c124f",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C7",
+      "claim": "Brain size and cortical folding show extensive variation across mammals, including recurrent independent increases and decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain size and cortical folding show extensive variation across mammals, including recurrent independent increases and decreases (Montgomery et al., 2016; Boddy et al., 2012; Lewitus et al., 2013; Smaers et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "0a0d0057-0cb6-408f-a9a5-0c1e688d1d80",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C8",
+      "claim": "Most rodents have a small brain and an unfolded cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, most rodents have a small brain and an unfolded cortex (Kelava et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "475700db-2120-4858-b171-574b49d92251",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C9",
+      "claim": "Carnivores, cetaceans, and primates generally have enlarged and folded cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "while carnivores, cetaceans, and primates generally have enlarged and folded cortices, peaking in dolphin and human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as general knowledge in introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "4bf5ed4d-9f1e-432e-b9da-882a55dee539",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C10",
+      "claim": "Expressing Trnp1 in neural stem cells isolated from mouse cortices induces phase separation, accelerates mitosis, and increases proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "On a cellular level, expressing Trnp1 in neural stem cells (NSCs) isolated from mouse cortices induces phase separation, accelerates mitosis, and increases proliferation (Stahl et al., 2013; Esgleas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "a2dc8c93-ac67-4536-bc46-7917f2ab77fc",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C11",
+      "claim": "Increasing Trnp1 expression by in utero electroporation in mice and ferrets leads to increased proliferation of aRGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing Trnp1 expression by in utero electroporation in mice and ferrets (embryonic day 13 [E13] in mice) leads to increased proliferation of aRGCs (Stahl et al., 2013; Mart\u00ednez-Mart\u00ednez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "02fdbd6e-6252-4c42-8419-d2367676c70e",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C12",
+      "claim": "Decreasing Trnp1 expression levels in mice or ferrets reduces aRGC proliferation, increases their differentiation into BPs, and induces cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreasing Trnp1 expression levels in mice or ferrets (E13) reduces aRGC proliferation, increases their differentiation into BPs, and induces cortical folding (Stahl et al., 2013; Pilz et al., 2013; Mart\u00ednez-Mart\u00ednez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "5ea08536-5cc0-4095-9fe8-8876e1558bbf",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C13",
+      "claim": "Increasing Trnp1 expression levels by in utero electroporation at E14.5 increases bRGC proliferation and induces cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, increasing Trnp1 expression levels by in utero electroporation at E14.5 increases bRGC proliferation (Kerimoglu et al., 2021) and also induces cortical folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "03498e0d-61d4-4a70-bcce-c752e179e9a6",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C14",
+      "claim": "45 mammalian TRNP1 coding sequences were collected and aligned with 99.0% completeness.",
+      "claim_type": "EXPLICIT",
+      "source": "We experimentally and computationally collected (Camacho et al., 2009) and aligned (L\u00f6ytynoja, 2021) 45 mammalian TRNP1 coding sequences, including dolphin and 18 primates (99.0% completeness, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in methods and results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "2ee17a6a-527d-4a53-9e14-be284ad71779",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C15",
+      "claim": "Brain size and cortical folding estimates were compiled for 30 mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "For 30 of those species, we could also compile estimates for brain size and cortical folding, as well as body mass as a potentially confounding parameter (Figure 1A; Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "c99b0815-1393-4a25-9819-8fc8cf2d82c7",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C17",
+      "claim": "\u03c9 of TRNP1 positively correlates with brain size (r=0.83; p=0.97).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that \u03c9 of TRNP1 positively correlates with brain size (r=0.83; p=0.97), GI (r=0.75; p=0.98), and also body mass (r=0.76; p=0.97)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from Coevol analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "a39a4e36-625a-4dfb-b89f-e6bc94af1b52",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C18",
+      "claim": "\u03c9 of TRNP1 positively correlates with GI (r=0.75; p=0.98).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that \u03c9 of TRNP1 positively correlates with brain size (r=0.83; p=0.97), GI (r=0.75; p=0.98), and also body mass (r=0.76; p=0.97)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from Coevol analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "d95cd44e-2989-4e17-9e04-0b9d288f9797",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C19",
+      "claim": "\u03c9 of TRNP1 positively correlates with body mass (r=0.76; p=0.97).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that \u03c9 of TRNP1 positively correlates with brain size (r=0.83; p=0.97), GI (r=0.75; p=0.98), and also body mass (r=0.76; p=0.97)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from Coevol analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "b5f4d963-25c1-4db9-bfd1-a55eff192c0a",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C20",
+      "claim": "The correlations of TRNP1 \u03c9 with brain size, GI, and body mass are stronger than those of the average control protein.",
+      "claim_type": "EXPLICIT",
+      "source": "and that these correlations are stronger than those of the average control protein (Figure 1C\u2013F, Figure 1\u2014figure supplement 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison with 124 control proteins shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "ac85975e-24ae-4627-9c3b-e78a96ed3aeb",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C21",
+      "claim": "Brain size has the highest partial correlation with TRNP1 \u03c9 (r=0.4).",
+      "claim_type": "EXPLICIT",
+      "source": "To disentangle which trait is most likely to be causal for the observed correlation with \u03c9, we compare the partial correlations and find that brain size has the highest partial correlation (r=0.4), followed by GI (r=0.34), while the partial correlation with body mass (r=0.19) has a much larger drop compared to the marginals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis results from Coevol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "ec7717c0-c601-4c24-b536-ef3c3c361a44",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C22",
+      "claim": "TRNP1 protein evolution is among 4.0% of the most correlated proteins for brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that TRNP1 protein evolution is among 4.0% and 6.4% of the most correlated proteins for brain size and GI, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with control protein distribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "bed35129-b539-4337-bb96-403bae30e7fe",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C23",
+      "claim": "TRNP1 protein evolution is among 6.4% of the most correlated proteins for GI.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that TRNP1 protein evolution is among 4.0% and 6.4% of the most correlated proteins for brain size and GI, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with control protein distribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "394735f9-8aaf-4416-82af-98e91875d1c6",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C25",
+      "claim": "Eight codons in TRNP1 with a selection signature could be pinpointed with high confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight codons with a selection signature could be pinpointed with high confidence (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "PAML analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "d82f6bd2-6207-4300-97d4-494fc6c967d9",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C26",
+      "claim": "Seven out of eight positively selected codons in TRNP1 reside within the first intrinsically disordered region (IDR).",
+      "claim_type": "EXPLICIT",
+      "source": "Seven out of those eight reside within the first intrinsically disordered region (IDR) and one in the second IDR of the protein (Figure 1I; Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis results shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "05ebc194-71b5-409b-82cb-c288d03374ad",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C27",
+      "claim": "The IDRs of TRNP1 are thought to mediate homotypic and heterotypic protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The IDRs of TRNP1 are thought to mediate homotypic and heterotypic protein-protein interactions and are relevant for TRNP1-dependent phase separation, nuclear compartment size regulation, and M\u2010phase length regulation (Esgleas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "41039193-39ae-49df-b463-e4d4866c46ae",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C29",
+      "claim": "The proportion of proliferating cells was highest in cells transfected with dolphin TRNP1 followed by human.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the proportion of proliferating cells was highest in cells transfected with dolphin TRNP1 followed by human, which was significantly higher than the two other primates, galago and macaque (Figure 2C; Figure 2\u2014figure supplement 1B; Supplementary file 2a-c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental results from proliferation assay",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "da5b540a-cebc-4ad2-9ef1-be8d1cd38589",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C32",
+      "claim": "Three upstream CREs, the promoter-including exon 1, an intron CRE, one CRE overlapping the second exon, and one downstream CRE were identified for TRNP1.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify putative CREs of TRNP1, we used DNase hypersensitive sites (DHS) from human foetal brain (Bernstein et al., 2010) and found three upstream CREs, the promoter-including exon 1, an intron CRE, one CRE overlapping the second exon, and one downstream CRE (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Identification from DNase-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "80638be5-cf94-485d-81c8-d9e25b2c9129",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C33",
+      "claim": "A total of 351 putative CREs of TRNP1 were obtained in a panel of 75 mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the orthologous sequences of the human CREs using a reciprocal best blat (RBB) strategy across additional mammalian species either from genome databases or by sequencing, yielding a total of 351 putative CREs in a panel of 75 mammalian species (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in methods and results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "ef85ee76-bb75-4b9f-8609-8ef8587fcaf0",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C34",
+      "claim": "The MPRA plasmid library contained at least 4251 (86%) CRE sequence tiles.",
+      "claim_type": "EXPLICIT",
+      "source": "From those, we constructed a complex and unbiased lentiviral plasmid library containing at least 4251 (86%) CRE sequence tiles (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MPRA library construction results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "33633cca-7d25-4ac9-81a0-281dd76d13dc",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C36",
+      "claim": "The CREs covering exon 1, the intron, and the CRE downstream of TRNP1 show the highest total activity across species.",
+      "claim_type": "EXPLICIT",
+      "source": "The CREs covering exon 1, the intron, and the CRE downstream of TRNP1 show the highest total activity across species while the CREs upstream of TRNP1 show the lowest activity (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MPRA activity measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "faba4060-ab6b-497a-8d72-00951cb4aba4",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C37",
+      "claim": "The intron CRE had a tendency to be positively associated with gyrification (PGLS, uncorrected LRT p-value=0.097).",
+      "claim_type": "EXPLICIT",
+      "source": "None of the CREs showed a significant association with brain size or GI (PGLS, LRT uncorrected p-value > 0.05) and only the intron CRE had a tendency to be positively associated with gyrification (PGLS, uncorrected LRT p-value=0.097, Figure 3F, left; Supplementary file 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PGLS analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "14182a24-7e93-4636-aaf5-d1a0bfd5526b",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C38",
+      "claim": "When restricted to the catarrhine clade, the association between intron CRE activity and GI becomes considerably stronger (PGLS, uncorrected LRT p-value=0.003, Bonferroni-corrected p-value=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we restrict our analysis to the catarrhine clade that encompasses Old World monkeys, great apes, and humans, the association between intron CRE activity and GI becomes considerably stronger (PGLS, uncorrected LRT p-value=0.003, Bonferroni-corrected for seven regions p-value=0.02, Figure 3F, right; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PGLS analysis restricted to catarrhines",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "81caf635-fa6c-4f9a-9fdd-9010f5b32f2a",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C39",
+      "claim": "8/1000 (0.8%) of random CRE combinations have an association with GI as significant as the intron CRE (p \u2264 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "To validate that our model results are rather specific, we generated a null distribution for the observed correlation across catharrines, permuting the activities of all other CREs of this study. In agreement with our model results, we find 8/1000 (0.8%) of the random CRE combinations to have such a significant association of p \u2264 0.003.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Permutation test results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "fd6a8d0b-c75a-4073-bb0a-3ed534405055",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C40",
+      "claim": "Reilly et al. found a gain in enhancer activity on the human lineage in a region overlapping the intron CRE.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Reilly et al. compared enhancer activity by histone modifications in the developing cortex of humans, rhesus macaques, and mice and found a gain in activity on the human lineage in a region overlapping the intron CRE (Reilly et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "8f2d3d08-5cac-4054-8cc4-4579599572d7",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C41",
+      "claim": "TRNP1 was expressed in the NPC samples used for MPRA.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, also TRNP1 was expressed (Figure 4B), supporting the relevance of our cellular system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "0dbfd658-daa4-407d-b64e-4f16b8dba579",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C42",
+      "claim": "TRNP1 expression was significantly higher in human NPC lines than that of cynomolgus macaque's (BH-adjusted p-value <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TRNP1 expression was significantly higher in human NPC lines than that of cynomolgus macaque's (BH-adjusted p-value <0.05, Figure 4\u2014figure supplement 1A\u2013C), consistent with higher intron CRE activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA-seq differential expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "d848f511-e9fd-4c1d-8d3b-81b1e528acc3",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C43",
+      "claim": "22 transcription factors with an excess of binding sites within the catarrhine intron CRE sequences were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 392 expressed TFs with known binding motifs, we identified 22 with an excess of binding sites (Frith et al., 2003) within the catarrhine intron CRE sequences (Figure 4B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "TF binding site analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "00f190f1-71bc-499b-8204-e57a8fbd5112",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C44",
+      "claim": "The 22 TFs with enriched binding sites are enriched in biological processes regulating cell proliferation, neuron apoptotic process, and hormone levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with TRNP1 itself being involved in the regulation of cell proliferation (Volpe et al., 2006; Stahl et al., 2013; Esgleas et al., 2020), these 22 TFs are enriched in biological processes regulating cell proliferation, neuron apoptotic process, and hormone levels (Gene Ontology, Fisher's exact p-value <0.05, background: 392 expressed TFs; Figure 4C; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "3f00e8ea-20be-4cd1-acea-fb6291a18c84",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C45",
+      "claim": "Three TFs (CTCF, ZBTB26, SOX8) are the best candidates to explain the variation in the intron CRE activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found three TFs (CTCF, ZBTB26, SOX8) to be the best candidates to explain the variation in the intron CRE activity and one TF (CTCF) to co-vary with GI (PGLS, uncorrected LRT p-value <0.05, Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PGLS modeling of TF binding scores",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "475836ea-4f0f-49e4-8d20-78eaa56861ea",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C46",
+      "claim": "CTCF binding scores co-vary with GI (PGLS, uncorrected LRT p-value <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found three TFs (CTCF, ZBTB26, SOX8) to be the best candidates to explain the variation in the intron CRE activity and one TF (CTCF) to co-vary with GI (PGLS, uncorrected LRT p-value <0.05, Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PGLS modeling of TF binding scores",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "faea8aca-6c28-458a-9181-ee4506d1b843",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C47",
+      "claim": "CTCF ChIP-seq data suggests that the CTCF binding site in the intron CRE is bound by CTCF in human NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "While the statistical support for this association is not strong, which is expected given that we were screening 22 candidate TFs in only 10 species, CTCF ChIP-seq data from the relevant cell types suggests that this particular CTCF binding site is indeed bound by CTCF in human NPCs (ChiP-seq, Encode Project Consortium, 2012, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-seq data from ENCODE",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "c7e8c676-7464-41ac-97e5-716a6070c69c",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C48",
+      "claim": "HiC data show a topologically associated domain (TAD) boundary just upstream of TRNP1 in the germinal zone of the developing human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, HiC data show a topologically associated domain (TAD) boundary just upstream of TRNP1 in the germinal zone of the developing human brain (postconception week 8, Won et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "a1c06fc1-9825-4d05-8413-3b689f55fd3b",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C49",
+      "claim": "The rate of protein evolution and the proliferative activity of TRNP1 positively correlate with brain size and gyrification in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied phylogenetic methods to explore associations between sequence and trait evolution and found that the rate of protein evolution and the proliferative activity of TRNP1 positively correlate with brain size and gyrification in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of results in discussion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "b1ed53b4-bcf3-449e-a8d2-d900822b2a50",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C50",
+      "claim": "Body size correlates much less with TRNP1 protein evolution than brain size or gyrification.",
+      "claim_type": "EXPLICIT",
+      "source": "However, body size \u2013 a reasonable proxy for effective population size (Figuet et al., 2016; Lartillot and Poujol, 2011) \u2013 correlates much less with TRNP1 protein evolution than brain size or gyrification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of correlation strengths from Coevol analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "3ef0c1db-f7db-44f7-acb8-c24b33827223",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C51",
+      "claim": "The correlation of TRNP1 with brain size and gyrification is much stronger than the average correlation of these traits with the evolution of other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Even more convincingly, the correlation of TRNP1 with brain size and gyrification is much stronger than the average correlation of these traits with the evolution of other proteins, that would have had to experience the same population size changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with 124 control proteins",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "591032bf-80d1-4787-99fa-8eb93c6f1560",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C52",
+      "claim": "The observed correlations are best interpreted as co-evolution of TRNP1 activity with brain size and gyrification.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the known role of TRNP1 in brain development, we think that the observed correlations are best interpreted as co-evolution of TRNP1 activity with brain size and gyrification, that is, that more active TRNP1 alleles were selected because they were advantageous to increase brain size and/or gyrification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of results in discussion",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "1e9c3298-fe98-4a6b-9ad1-477a9f9f21b6",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C53",
+      "claim": "The effect of structural changes in TRNP1 appears stronger than the effect of regulatory changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the effect of structural changes appears stronger than the effect of regulatory changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of correlation strengths in discussion",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "daddf7d0-2215-4060-8f45-88ddae730ce6",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C54",
+      "claim": "Current measures of regulatory activity are inherently less precise than counting amino acid changes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, current measures of regulatory activity are inherently less precise than counting amino acid changes, which will necessarily deflate the estimated association strength (Danko et al., 2018; Berthelot et al., 2018; Huber et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "71ac9a95-8a75-4c04-b07d-02beb2df8130",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C55",
+      "claim": "INSM1 controls NEC-to-neural-progenitor transition.",
+      "claim_type": "EXPLICIT",
+      "source": "These include INSM1 (Tavano et al., 2018), which also has been shown to control NEC-to-neural-progenitor transition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "3793ac7a-7a44-4d66-9aef-75af9418d640",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C56",
+      "claim": "TFAP2A, NFIC, TCF3, KLF12, and INSM1 have increased activity in human neural stem and progenitor cells during early cortical development compared to later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as other relevant factors with increased activity in human neural stem and progenitor cells during early cortical development compared to later stages, such as TFAP2A, NFIC, TCF3, KLF12, and again INSM1 (Trevino et al., 2021; de la Torre-Ubieta et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "d11fa60c-e2a5-4cfc-b1fe-65aab20086a5",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C57",
+      "claim": "CTCF can act as transcriptional activator and recruit co-factors in a lineage-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CTCF is best known for its insulating properties, it can also act as transcriptional activator and recruit co-factors in a lineage-specific manner (Arzate-Mej\u00eda et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "33d08619-f3e7-4263-b6c0-4bc1f114792c",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C58",
+      "claim": "In neural progenitors, CTCF loss causes severe impairment in proliferative capacity through the increase in premature cell cycle exit.",
+      "claim_type": "EXPLICIT",
+      "source": "In neural progenitors, CTCF loss causes severe impairment in proliferative capacity through the increase in premature cell cycle exit, which results in drastically reduced progenitor pool and early differentiation (Watson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "6ea35629-f4f1-4d6f-b778-5c4bcfb9cccc",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C59",
+      "claim": "When overexpressing Trnp1 in aRGCs of developing mice (E13) and ferrets (E30), aRGC proliferation increases.",
+      "claim_type": "EXPLICIT",
+      "source": "When overexpressing Trnp1 in aRGCs of developing mice (E13) and ferrets (E30), aRGC proliferation increases (Stahl et al., 2013; Pilz et al., 2013; Mart\u00ednez-Mart\u00ednez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "311bb4b7-f8f6-47b9-b12a-503c2a04f004",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C60",
+      "claim": "Overexpression of Trnp1 increases proliferation in vitro in NSCs or breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, overexpression of Trnp1 increases proliferation in vitro in NSCs (Stahl et al., 2013; Esgleas et al., 2020) or breast cancer cells (Volpe et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "9a57d6db-4c58-47a2-845c-9c55ea5f6cd1",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C61",
+      "claim": "Increases in brain size and especially increases in cortical folding are highly dependent on increases in proliferation of BPs, in particular bRGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, increases in brain size and especially increases in cortical folding are highly dependent on increases in proliferation of BPs, in particular bRGCs (Pinson and Huttner, 2021; Del-Valle-Anton and Borrell, 2022; Villalba et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "98b83974-0473-413f-946b-de69457fb7fc",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C62",
+      "claim": "In contrast to non-proliferating BPs from mice, proliferating BPs from human do express TRNP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, in contrast to non-proliferating BPs from mice, proliferating BPs from human do express TRNP1 (Kerimoglu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "a6400248-ca88-4ea2-ad71-6eda23b630fc",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C63",
+      "claim": "When activating expression of Trnp1 using CRISPRa at E14.5, more proliferating BPs and induction of cortical folding is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when activating expression of Trnp1 using CRISPRa at E14.5, more proliferating BPs and induction of cortical folding is observed (Kerimoglu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "8a625f78-81f7-41af-a070-7eca9aa94ecf",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C64",
+      "claim": "A more active TRNP1 can increase proliferation in aRGCs and BPs and this could cause the observed co-evolution with brain size and cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, a more active TRNP1 can increase proliferation in aRGCs and BPs and this could cause the observed co-evolution with brain size and cortical folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from cited evidence and current study results",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "178a68cb-c1bb-48eb-963c-aaa9d0c46a77",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C65",
+      "claim": "TRNP1 is the first case where analyses of protein sequence, regulatory activity, and protein activity across a larger phylogeny have been combined to investigate the role of a candidate gene in brain evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "TRNP1 is the first case where analyses of protein sequence, regulatory activity, and protein activity across a larger phylogeny have been combined to investigate the role of a candidate gene in brain evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "7a847ad1-e5b5-4b94-bd20-66172c26d890",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C66",
+      "claim": "Proliferation of bRGCs at a particular cortical location is thought to be crucial to generate a cortical fold at this location.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, proliferation of bRGCs at a particular cortical location is thought to be crucial to generate a cortical fold at this location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "76d4040a-97ce-463b-9782-cdc510f8f59c",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C67",
+      "claim": "The human-specific gene ARHGAP11B was found to induce bRGC proliferation and folding in cortices of mice, ferrets, and marmosets.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the human-specific gene ARHGAP11B was found to induce bRGC proliferation and folding in cortices of mice, ferrets, and marmosets (Florio et al., 2015; Kalebic et al., 2018; Heide et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "9cb7c4e2-53cb-4228-85f6-a6c0a97e3ebb",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C68",
+      "claim": "An amino acid substitution specific to modern humans in TKTL1 affects brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples include an amino acid substitution specific to modern humans in TKTL1 (Pinson et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "e9f457f0-046b-442d-acc3-891938f47b54",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C69",
+      "claim": "Human-specific NOTCH2 paralogs affect brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "human-specific NOTCH2 paralogs (Fiddes et al., 2018; Suzuki et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "8eaba842-30ae-47f6-815d-de7e63a436f9",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C70",
+      "claim": "The primate-specific genes TMEM14B and TBC1D3 affect brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "the primate-specific genes TMEM14B and TBC1D3 (Liu et al., 2017; Ju et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "a172c2c7-e87d-4807-8172-c4686195adcd",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C71",
+      "claim": "An enhancer of FZD8, a receptor of the Wnt pathway, affects brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "and an enhancer of FZD8, a receptor of the Wnt pathway (Boyd et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from reference",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "2539ba57-edc4-451f-a358-61172598178a",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C72",
+      "claim": "Proliferation of neuroepithelial stem cells (NECs) that have contacts with the apical surface and basal lamina leads to the formation of the neuroepithelium during early development.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, proliferation of neuroepithelial stem cells (NECs) that have contacts with the apical surface and basal lamina leads to the formation of the neuroepithelium during early development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "6f91da00-c192-4405-baac-8b4358ffbb4d",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C73",
+      "claim": "NECs become Pax6-positive apical radial glia cells (aRGCs), that continue to self-amplify before producing basal progenitors (BPs).",
+      "claim_type": "EXPLICIT",
+      "source": "NECs then become Pax6-positive apical radial glia cells (aRGCs), that continue to self-amplify before producing basal progenitors (BPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "5f2b93a8-427a-4877-8a68-69e7a427a355",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C74",
+      "claim": "BPs include basal radial glia cells (bRGCs) that remain Pax6 positive, loose the apical contact, and can self-amplify before eventually producing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "BPs include basal radial glia cells (bRGCs) that remain Pax6 positive, loose the apical contact, and \u2013 depending on the species \u2013 can also self-amplify before eventually producing neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "6943b1fb-03b2-43e8-be11-3809dd8481f1",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "claim_id": "C75",
+      "claim": "A short cell cycle leads to more cycles of symmetric divisions, a delayed onset of neurogenesis, and subsequently to more neurons and a bigger cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of proliferation of all these neural progenitors is also influenced by their cell cycle length where a short cell cycle leads to more cycles of symmetric divisions, a delayed onset of neurogenesis, and subsequently to more neurons and a bigger cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "72c87c4a-4c81-4799-b6a9-f3700a383640",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TRNP1 protein evolution rate (\u03c9) significantly correlates with brain size (r=0.83, pp=0.97) and gyrification index (r=0.75, pp=0.98), with brain size showing the highest partial correlation (r=0.4). These correlations are stronger than for >95% of control proteins, and body mass shows much weaker correlation, indicating TRNP1 co-evolves specifically with brain traits rather than general body size effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C17-C23 provide consistent statistical evidence from Coevol analysis showing significant correlations between TRNP1 \u03c9 and brain phenotypes. The comparison with 124 control proteins (C3, C20, C51) effectively controls for confounding factors like effective population size. Partial correlation analysis (C21) appropriately disentangles the relative contributions of correlated traits. The statistical framework is sound and the conclusions are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "5ca709e3-baa2-4828-936f-58f2168cd031",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Eight codons in TRNP1 show signatures of positive selection, with seven residing in the first intrinsically disordered region (IDR) and one in the second IDR. These IDRs mediate protein-protein interactions and are relevant for TRNP1-dependent phase separation and cell cycle regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 report PAML analysis results identifying positively selected sites with appropriate statistical thresholds (Pr(\u03c9>1)>0.95). The localization of selected sites to functionally important IDRs (C27, cited from prior work) provides biological context. The methods are standard and appropriately applied for detecting positive selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "9eb72113-10ef-4e87-a5e8-cbe5782875f6",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TRNP1 orthologues from species with larger brains induce higher proliferation rates in neural stem cells. Dolphin TRNP1 induced the highest proliferation, followed by human, both significantly higher than galago and macaque. Proliferation rates significantly predict brain size (R\u00b2=0.89, BH-adjusted p=0.0018) and GI (R\u00b2=0.69, BH-adjusted p=0.016).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C29 present experimental proliferation assay data with appropriate statistical analysis (logistic regression, PGLS). The phylogenetic correction (PGLS) properly accounts for non-independence of species data. Sample sizes appear adequate (7-12 replicates per condition), and the correlation between functional activity and phenotypes is statistically significant. The experimental design appropriately tests the functional consequences of sequence evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "4d956e2a-4796-4ce9-843f-a82368bdbffc",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The intron CRE of TRNP1 shows association with gyrification that becomes considerably stronger when restricted to catarrhines (PGLS p=0.003, Bonferroni-corrected p=0.02). Permutation testing shows only 0.8% of random CRE combinations achieve comparable significance. Independent evidence from Reilly et al. shows gain of enhancer activity in this region on the human lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C37-C38 show the association is not significant across all mammals (p=0.097) but becomes significant in catarrhines. While the authors provide justification for clade-specific analysis (regulatory element turnover), this post-hoc restriction raises concerns about multiple testing. The permutation test (C39) and independent corroboration (C40) provide some support, but the statistical evidence remains marginal. The Bonferroni correction for 7 regions is appropriate, but the initial non-significant result and subsequent clade restriction weaken confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "6e504f45-628c-4fc2-81e1-eb8e49b77e73",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Twenty-two transcription factors with enriched binding sites in the catarrhine intron CRE were identified, enriched for biological processes regulating cell proliferation. Three TFs (CTCF, ZBTB26, SOX8) best explain intron CRE activity variation, with CTCF binding scores co-varying with GI. ChIP-seq and Hi-C data support CTCF binding at this site in human NPCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C46 present TF binding site analysis with appropriate enrichment methods. However, the statistical support is explicitly acknowledged as weak (screening 22 TFs in only 10 species, uncorrected p<0.05). The supporting ChIP-seq (C47) and Hi-C data (C48) from independent sources strengthen the CTCF hypothesis, but these are correlative. The small sample size (n=10 catarrhines) limits statistical power, and multiple testing across 22 TFs without correction is concerning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "054d4381-fb07-45d5-9d8a-709dc74d3072",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study compiled 45 mammalian TRNP1 coding sequences (99% complete) and phenotypic data for 30 species. Seven putative CREs were identified using DNase-seq, with 351 orthologous sequences obtained across 75 species. An MPRA library of 4251 CRE tiles (86% of designed) was constructed and tested, showing exon 1, intron, and downstream CREs have highest activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15, C32-C34, C36 describe data collection and MPRA methodology. The sequence collection methods (BLAST, RBB) are standard and appropriate. The MPRA library construction achieved good representation (86% of designed tiles). Activity measurements are internally consistent across replicates (Figure 3\u2014figure supplement 2). The methods are well-documented and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "ad3d8011-8634-474d-986f-9164c3a92e06",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TRNP1 was expressed in the NPC samples used for MPRA, with significantly higher expression in human NPC lines compared to cynomolgus macaque (BH-adjusted p<0.05), consistent with higher intron CRE activity in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 present RNA-seq data showing TRNP1 expression in the relevant cell system with appropriate differential expression analysis (DESeq2, BH correction). The consistency between expression levels and CRE activity strengthens the biological relevance of the MPRA system. The statistical methods are standard and appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "54f9962b-21d2-4566-9aff-4582b00c47ed",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors conclude that coding and regulatory changes that increased TRNP1 activity were positively selected as a cause or consequence of increases in brain size and cortical folding. They interpret the correlations as co-evolution of TRNP1 activity with brain traits, with structural changes appearing stronger than regulatory changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C52-C53, C64 represent interpretive conclusions synthesizing multiple lines of evidence: protein evolution correlations (C2, C17-C23), functional activity data (C4, C29), and regulatory element analysis (C37-C38). The authors appropriately acknowledge uncertainty about causality ('either as a cause or a consequence') and provide mechanistic reasoning based on prior work (C10-C13, C59-C63). The interpretation is cautious and well-supported by the convergent evidence, though the regulatory evidence is weaker than the coding sequence evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript cites extensive prior work establishing: TRNP1's role in neural progenitor proliferation in mice and ferrets; brain development mechanisms involving NECs, aRGCs, and bRGCs; examples of genes affecting brain evolution (ARHGAP11B, TKTL1, NOTCH2, etc.); and roles of identified transcription factors in neural development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C13, C55-C63, C66-C75 cite established knowledge from the literature with appropriate references. These provide essential context for the current study. The citations appear accurate and relevant, establishing the biological framework and prior functional evidence for TRNP1's role in brain development. These are appropriately used to motivate and interpret the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    },
+    {
+      "id": "1db76e25-b22a-48a1-99b2-6d00ecc5a2c4",
+      "content_id": "d7f72983-8472-4963-b3e3-e3ffcbe2e3b2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors note that current measures of regulatory activity are inherently less precise than counting amino acid changes, which deflates estimated association strength. They claim TRNP1 is the first case combining protein sequence, regulatory activity, and protein activity analyses across a larger phylogeny to investigate a candidate gene in brain evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 appropriately acknowledges methodological limitations of regulatory element analysis with supporting citations. Claim C65 makes a priority claim about the integrative approach. While difficult to verify exhaustively, the combination of phylogenetic protein evolution analysis, MPRA across many species, and functional assays does appear novel in scope for brain evolution studies. The acknowledgment of limitations is scientifically appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:55:43.977836Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1e32fe4d-830d-45bc-9d48-5aa19a5dd364",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "048795cc-0e4d-467c-8d99-2ef65edae12d",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "c99b0815-1393-4a25-9819-8fc8cf2d82c7",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "a39a4e36-625a-4dfb-b89f-e6bc94af1b52",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "d95cd44e-2989-4e17-9e04-0b9d288f9797",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "b5f4d963-25c1-4db9-bfd1-a55eff192c0a",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "ac85975e-24ae-4627-9c3b-e78a96ed3aeb",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "ec7717c0-c601-4c24-b536-ef3c3c361a44",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "bed35129-b539-4337-bb96-403bae30e7fe",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "b1ed53b4-bcf3-449e-a8d2-d900822b2a50",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "3ef0c1db-f7db-44f7-acb8-c24b33827223",
+      "result_id": "72c87c4a-4c81-4799-b6a9-f3700a383640"
+    },
+    {
+      "claim_id": "394735f9-8aaf-4416-82af-98e91875d1c6",
+      "result_id": "5ca709e3-baa2-4828-936f-58f2168cd031"
+    },
+    {
+      "claim_id": "d82f6bd2-6207-4300-97d4-494fc6c967d9",
+      "result_id": "5ca709e3-baa2-4828-936f-58f2168cd031"
+    },
+    {
+      "claim_id": "05ebc194-71b5-409b-82cb-c288d03374ad",
+      "result_id": "5ca709e3-baa2-4828-936f-58f2168cd031"
+    },
+    {
+      "claim_id": "252fb3b0-833b-484a-8780-d7eff03d85f7",
+      "result_id": "9eb72113-10ef-4e87-a5e8-cbe5782875f6"
+    },
+    {
+      "claim_id": "41039193-39ae-49df-b463-e4d4866c46ae",
+      "result_id": "9eb72113-10ef-4e87-a5e8-cbe5782875f6"
+    },
+    {
+      "claim_id": "a1c06fc1-9825-4d05-8413-3b689f55fd3b",
+      "result_id": "9eb72113-10ef-4e87-a5e8-cbe5782875f6"
+    },
+    {
+      "claim_id": "eab9d2bb-8e19-47be-ab8d-ebfd30100bfd",
+      "result_id": "4d956e2a-4796-4ce9-843f-a82368bdbffc"
+    },
+    {
+      "claim_id": "faba4060-ab6b-497a-8d72-00951cb4aba4",
+      "result_id": "4d956e2a-4796-4ce9-843f-a82368bdbffc"
+    },
+    {
+      "claim_id": "14182a24-7e93-4636-aaf5-d1a0bfd5526b",
+      "result_id": "4d956e2a-4796-4ce9-843f-a82368bdbffc"
+    },
+    {
+      "claim_id": "81caf635-fa6c-4f9a-9fdd-9010f5b32f2a",
+      "result_id": "4d956e2a-4796-4ce9-843f-a82368bdbffc"
+    },
+    {
+      "claim_id": "fd6a8d0b-c75a-4073-bb0a-3ed534405055",
+      "result_id": "4d956e2a-4796-4ce9-843f-a82368bdbffc"
+    },
+    {
+      "claim_id": "d848f511-e9fd-4c1d-8d3b-81b1e528acc3",
+      "result_id": "6e504f45-628c-4fc2-81e1-eb8e49b77e73"
+    },
+    {
+      "claim_id": "00f190f1-71bc-499b-8204-e57a8fbd5112",
+      "result_id": "6e504f45-628c-4fc2-81e1-eb8e49b77e73"
+    },
+    {
+      "claim_id": "3f00e8ea-20be-4cd1-acea-fb6291a18c84",
+      "result_id": "6e504f45-628c-4fc2-81e1-eb8e49b77e73"
+    },
+    {
+      "claim_id": "475836ea-4f0f-49e4-8d20-78eaa56861ea",
+      "result_id": "6e504f45-628c-4fc2-81e1-eb8e49b77e73"
+    },
+    {
+      "claim_id": "faea8aca-6c28-458a-9181-ee4506d1b843",
+      "result_id": "6e504f45-628c-4fc2-81e1-eb8e49b77e73"
+    },
+    {
+      "claim_id": "c7e8c676-7464-41ac-97e5-716a6070c69c",
+      "result_id": "6e504f45-628c-4fc2-81e1-eb8e49b77e73"
+    },
+    {
+      "claim_id": "03498e0d-61d4-4a70-bcce-c752e179e9a6",
+      "result_id": "054d4381-fb07-45d5-9d8a-709dc74d3072"
+    },
+    {
+      "claim_id": "2ee17a6a-527d-4a53-9e14-be284ad71779",
+      "result_id": "054d4381-fb07-45d5-9d8a-709dc74d3072"
+    },
+    {
+      "claim_id": "da5b540a-cebc-4ad2-9ef1-be8d1cd38589",
+      "result_id": "054d4381-fb07-45d5-9d8a-709dc74d3072"
+    },
+    {
+      "claim_id": "80638be5-cf94-485d-81c8-d9e25b2c9129",
+      "result_id": "054d4381-fb07-45d5-9d8a-709dc74d3072"
+    },
+    {
+      "claim_id": "ef85ee76-bb75-4b9f-8609-8ef8587fcaf0",
+      "result_id": "054d4381-fb07-45d5-9d8a-709dc74d3072"
+    },
+    {
+      "claim_id": "33633cca-7d25-4ac9-81a0-281dd76d13dc",
+      "result_id": "054d4381-fb07-45d5-9d8a-709dc74d3072"
+    },
+    {
+      "claim_id": "8f2d3d08-5cac-4054-8cc4-4579599572d7",
+      "result_id": "ad3d8011-8634-474d-986f-9164c3a92e06"
+    },
+    {
+      "claim_id": "0dbfd658-daa4-407d-b64e-4f16b8dba579",
+      "result_id": "ad3d8011-8634-474d-986f-9164c3a92e06"
+    },
+    {
+      "claim_id": "fa78fbb2-0a9f-46d7-a6e9-ca6ddf23116c",
+      "result_id": "54f9962b-21d2-4566-9aff-4582b00c47ed"
+    },
+    {
+      "claim_id": "591032bf-80d1-4787-99fa-8eb93c6f1560",
+      "result_id": "54f9962b-21d2-4566-9aff-4582b00c47ed"
+    },
+    {
+      "claim_id": "1e9c3298-fe98-4a6b-9ad1-477a9f9f21b6",
+      "result_id": "54f9962b-21d2-4566-9aff-4582b00c47ed"
+    },
+    {
+      "claim_id": "8a625f78-81f7-41af-a070-7eca9aa94ecf",
+      "result_id": "54f9962b-21d2-4566-9aff-4582b00c47ed"
+    },
+    {
+      "claim_id": "6bdd84b4-f9db-4908-be1c-a44869bdec67",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "ad7131a3-cca5-46f7-a441-a6101a4c124f",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "0a0d0057-0cb6-408f-a9a5-0c1e688d1d80",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "475700db-2120-4858-b171-574b49d92251",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "4bf5ed4d-9f1e-432e-b9da-882a55dee539",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "a2dc8c93-ac67-4536-bc46-7917f2ab77fc",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "02fdbd6e-6252-4c42-8419-d2367676c70e",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "5ea08536-5cc0-4095-9fe8-8876e1558bbf",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "71ac9a95-8a75-4c04-b07d-02beb2df8130",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "3793ac7a-7a44-4d66-9aef-75af9418d640",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "d11fa60c-e2a5-4cfc-b1fe-65aab20086a5",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "33d08619-f3e7-4263-b6c0-4bc1f114792c",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "6ea35629-f4f1-4d6f-b778-5c4bcfb9cccc",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "311bb4b7-f8f6-47b9-b12a-503c2a04f004",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "9a57d6db-4c58-47a2-845c-9c55ea5f6cd1",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "98b83974-0473-413f-946b-de69457fb7fc",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "a6400248-ca88-4ea2-ad71-6eda23b630fc",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "7a847ad1-e5b5-4b94-bd20-66172c26d890",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "76d4040a-97ce-463b-9782-cdc510f8f59c",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "9cb7c4e2-53cb-4228-85f6-a6c0a97e3ebb",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "e9f457f0-046b-442d-acc3-891938f47b54",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "8eaba842-30ae-47f6-815d-de7e63a436f9",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "a172c2c7-e87d-4807-8172-c4686195adcd",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "2539ba57-edc4-451f-a358-61172598178a",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "6f91da00-c192-4405-baac-8b4358ffbb4d",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "5f2b93a8-427a-4877-8a68-69e7a427a355",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "6943b1fb-03b2-43e8-be11-3809dd8481f1",
+      "result_id": "e2c310ca-c7c3-41d1-ad12-7420e7081bb3"
+    },
+    {
+      "claim_id": "daddf7d0-2215-4060-8f45-88ddae730ce6",
+      "result_id": "1db76e25-b22a-48a1-99b2-6d00ecc5a2c4"
+    },
+    {
+      "claim_id": "178a68cb-c1bb-48eb-963c-aaa9d0c46a77",
+      "result_id": "1db76e25-b22a-48a1-99b2-6d00ecc5a2c4"
+    }
+  ],
+  "comparisons": []
+}

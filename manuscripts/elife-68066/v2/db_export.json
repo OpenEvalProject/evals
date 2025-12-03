@@ -1,0 +1,1719 @@
+{
+  "submission": {
+    "id": "49181018-30a5-45ac-8c68-8a44e217e3d4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:28:25.935898Z",
+    "updated_at": "2025-12-03T06:28:25.935898Z"
+  },
+  "content": [
+    {
+      "id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "submission_id": "49181018-30a5-45ac-8c68-8a44e217e3d4",
+      "content_type": "manuscript",
+      "content_text": "# An oscillating computational model can track pseudo-rhythmic speech by using linguistic predictions\n\n## Authors\n\n- Sanne ten Oever<sup>1</sup> ([ORCID: 0000-0001-7547-5842](https://orcid.org/0000-0001-7547-5842)) \u2020\n- Andrea E Martin<sup>1</sup> ([ORCID: 0000-0002-3395-7234](https://orcid.org/0000-0002-3395-7234))\n\n### Affiliations\n\n1. Language and Computation in Neural Systems group, Max Planck Institute for Psycholinguistics Nijmegen Netherlands\n2. Donders Centre for Cognitive Neuroimaging, Radboud University Nijmegen Netherlands\n3. Department of Cognitive Neuroscience, Faculty of Psychology and Neuroscience, Maastricht University Maastricht Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeuronal oscillations putatively track speech in order to optimize sensory processing. However, it is unclear how isochronous brain oscillations can track pseudo-rhythmic speech input. Here we propose that oscillations can track pseudo-rhythmic speech when considering that speech time is dependent on content-based predictions flowing from internal language models. We show that temporal dynamics of speech are dependent on the predictability of words in a sentence. A computational model including oscillations, feedback, and inhibition is able to track pseudo-rhythmic speech input. As the model processes, it generates temporal phase codes, which are a candidate mechanism for carrying information forward in time. The model is optimally sensitive to the natural temporal speech dynamics and can explain empirical data on temporal speech illusions. Our results suggest that speech tracking does not have to rely only on the acoustics but could also exploit ongoing interactions between oscillations and constraints flowing from internal language models.\n\n## Introduction\n\nSpeech is a biological signal that is characterized by a plethora of temporal information. The temporal relationship between subsequent speech units allows for the online tracking of speech in order to optimize processing at relevant moments in time (Jones and Boltz, 1989; Large and Jones, 1999; Giraud and Poeppel, 2012; Ghitza and Greenberg, 2009; Ding et al., 2017; Arvaniti, 2009; Poeppel, 2003). Neural oscillations are a putative index of such tracking (Giraud and Poeppel, 2012; Schroeder and Lakatos, 2009). The existing evidence for neural tracking of the speech envelope is consistent with such a functional interpretation (Luo et al., 2013; Keitel et al., 2018). In these accounts, the most excitable optimal phase of an oscillation is aligned with the most informative time\u00a0point within a rhythmic input stream (Schroeder and Lakatos, 2009; Lakatos et al., 2008; Henry and Obleser, 2012; Herrmann et al., 2013; Obleser and Kayser, 2019). However, the range of onset time difference between speech units seems more variable than fixed oscillations can account for (Rimmele et al., 2018; Nolan and Jeon, 2014; Jadoul et al., 2016). As such, it remains an open question how is it possible that oscillations can track a signal that is at best only pseudo-rhythmic (Nolan and Jeon, 2014).\n\nOscillatory accounts tend to focus on the prediction in the sense of predicting \u2018when\u2019, rather than predicting \u2018what\u2019: oscillations function to align the optimal moment of processing given that timing is predictable in a rhythmic input structure. If rhythmicity in the input stream is violated, oscillations must be modulated to retain optimal alignment to incoming information. This can be achieved through phase resets (Rimmele et al., 2018; Meyer, 2018), direct\u00a0coupling of the acoustics to oscillations (Poeppel and Assaneo, 2020), or the use of many oscillators at different frequencies (Large and Jones, 1999). However, the optimal or effective time of processing stimulus input might not only depend on when you predict something to occur, but also depend\u00a0on what stimulus is actually being processed (Ten Oever et al., 2013; Martin, 2016; Rosen, 1992; deen et al., 2017).\n\nWhat and when are not independent, and certainly not from the brain\u2019s-eye-view. If continuous input arrives to a node in an oscillatory network, the exact phase at which this node reaches threshold activation does not only depend on the strength of the input, but also depend\u00a0on how sensitive this node was to start with. Sensitivity of a node in a language network (or any neural network) is naturally affected by predictions in the what domain generated by an internal language model (Martin, 2020; Marslen-Wilson, 1987; Lau et al., 2008; Nieuwland, 2019). We define internal language model as the individually acquired statistical and structural knowledge of language stored in the brain. A virtue of such an internal language model is that it can predict the most likely future input based on the currently presented speech information. If a language model creates strong predictions, we call it a strong model. In contrast, a weak model creates no or little predictions about future input (note that the strength of individual predictions depends not only on the capability of the system to create a prediction, but also on the available information). If a node represents a speech unit that is likely to be spoken next, a strong internal language model will sensitize this node and it will therefore be active earlier, that is, on a less excitable phase of the oscillation. In the domain of working memory, this type of phase precession has been shown in rat hippocampus (O'Keefe and Recce, 1993; Malhotra et al., 2012) and more recently in human electroencephalography (Bahramisharif et al., 2018). In speech, phase of activation and perceived content are also associated (Ten Oever and Sack, 2015; Kayser et al., 2016; Di Liberto et al., 2015; Ten Oever et al., 2016; Th\u00e9z\u00e9 et al., 2020), and phase has been implicated in tracking of higher-level linguistic structure (Meyer, 2018; Brennan and Martin, 2020; Kaufeld et al., 2020a). However, the direct link between phase and the predictability flowing from a language model has yet to be established.\n\nThe time of speaking/speed of processing is not only a consequence of how predictable a speech unit is within a stream, but also a cue for the interpretation of this unit. For example, phoneme categorization depends on timing (e.g., voice onsets, difference between voiced and unvoiced phonemes), and there are timing constraints on syllable durations (e.g., the theta syllable Poeppel and Assaneo, 2020; Ghitza, 2013) that affect intelligibility (Ghitza, 2012). Even the delay between mouth movements and speech audio can influence syllabic categorizations (Ten Oever et al., 2013). Most oscillatory models use oscillations for parsing, but not as a temporal code for content (Panzeri et al., 2015; Kayser et al., 2009; Mehta et al., 2002; Lisman and Jensen, 2013). However, the time or phase of presentation does influence content perception. This is evident from two temporal speech phenomena. In the first phenomena, the interpretation of an ambiguous short /\u03b1/ or long vowel /a:/ depends on speech rate (in Dutch; Reinisch and Sjerps, 2013; K\u00f6sem et al., 2018; Bosker and Reinisch, 2015). Specifically, when speech rates are fast the stimulus is interpreted as a long vowel and vice versa for slow rates. However, modulating the entrainment rate effectively changes the phase at which the target stimulus \u2013 which is presented at a constant speech rate \u2013 arrives (but this could not be confirmed in Bosker and K\u00f6sem, 2017). A second speech phenomena shows the direct phase-dependency of content (Ten Oever and Sack, 2015; Ten Oever et al., 2016). Ambiguous /da/-/ga/ stimuli will be interpreted as a /da/ on one phase and a /ga/ on another phase. This was confirmed in both a EEG and a behavioral study. An oscillatory theory of speech tracking should account for how temporal properties in the input stream can alter what is perceived.\n\nIn the speech production literature, there is strong evidence that the onset times (as well as duration) of an uttered word is modulated by the frequency of that word in the language (O'Malley and Besner, 2008; Monsell, 1991; Monsell et al., 1989; Powers, 1998; Piantadosi, 2014) showing that internal language models modulate the access to or sensitivity of a word node (Martin, 2020; Hagoort, 2017). This word-frequency effect relates to the access to a single word. However, it is likely that during ongoing speech internal language models use the full context to estimate upcoming words (Beattie and Butterworth, 1979; Pluymaekers et al., 2005a; Lehiste, 1972). If so, the predictability of a word in context should provide additional modulations on speech time. Therefore, we predict that words with a high predictability in the producer\u2019s language model should be uttered relatively early. In this way, word-to-word onset times map to the predictability level of that word within the internal model. Thus, not only the processing time depends on the predictability of a word (faster processing for predictable words; see Gwilliams et al., 2020; Deacon et al., 1995, and Aubanel and Schwartz, 2020 showing that speech time in noise matters), but also the production time (earlier uttering of predicted words).\n\nLanguage comprehension involves the mapping of speech units from a producer\u2019s internal model to the speech units of the receiver\u2019s internal model. In other words, one will only understand what someone else is writing or saying if one\u2019s language model is sufficiently similar to the speakers (and if we speak in Dutch, fewer people will understand us). If the producer\u2019s and receiver\u2019s internal language model have roughly matching top-down constrains, they should similarly influence the speed of processing (either in production or perception; Figure 1A\u2013C). Therefore, if predictable words arrive earlier (due to high predictability in the producer\u2019s internal model), the receiver also expects the content of this word to match one of the more predictable ones from their own internal model (Figure 1C). Thus, the phase of arrival depends on the internal model of the producer and the expected phase of arrival depends on the internal model of the receiver (Figure 1D). If this is true, pseudo-rhythmicity is fully natural to the brain, and it provides a means to use time or arrival phase as a content indicator. It also allows the receiver to be sensitive to less predictable words when they arrive relatively late. Current oscillatory models of speech parsing do not integrate the constraints flowing from an internal linguistic model into the temporal structure of the brain response. It is therefore an open question whether the oscillatory model the brain employs is actually attuned to the temporal variations in natural speech.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig1-v2.jpg)\n\n**Figure 1.:** (A) Isochronous production and expectation when there is a weak internal model (even distribution of node activation). All speech units arrive around the most excitable phase. (B) When the internal model of the producer does not align with the model of the receiver temporal alignment and optimal communication fails. (C) When both producer and receiver have a strong internal model, speech is non-isochronous and not aligned to the most excitable phase, but fully expected by the brain. (D) Expected time is a constraint distribution in\u00a0which the\u00a0center can be shifted due to linguistic constraints.\n\nHere, we propose that neural oscillations can track pseudo-rhythmic speech by taking into account that speech timing is a function of linguistic constrains. As such we need to demonstrate that speech statistics are influenced by linguistic constrains as well as showing how oscillations can be sensitive to this property in speech. We approach this hypothesis as follows: First, we demonstrate that in natural speech timing depends on linguistics predictions (temporal speech properties). Then, we model how oscillations can be sensitive to these linguistic predictions (modeling speech tracking). Finally, we validate that this model is optimally sensitive to the natural temporal properties in speech and displays temporal speech illusions (model validation). Our results reveal that tracking of speech needs to be viewed as an interaction between ongoing oscillations as well as constraints flowing from an internal language model (Martin, 2016; Martin, 2020). In this way, oscillations do not have to shift their phase after every speech unit and can remain at a relatively stable frequency as long as the internal model of the speaker matches the internal model of the perceiver.\n\n## Results\n\n### Temporal speech properties\n\n#### Word frequency influences word duration\n\nTo extract the temporal properties in naturally spoken speech we used the Corpus Gesproken Nederlands (CGN; [Version 2.0.3; 2014]). This corpus consists of elaborated annotations of over 900 hr of spoken Dutch and Flemish words. We focus here on the subset of the data of which onset and offset timings were manually annotated at the word level in Dutch. Cleaning of the data included removing all dashes and backslashes. Only words were included that were part of a Dutch word2vec embedding (github.com/coosto/dutch-word-embeddings;\u00a0Nieuwenhuijse, 2018; needed for later modeling) and required to have a frequency of at least 10 in the corpus. All other words were replaced with an <unknown> label. This resulted in 574,726 annotated words with 3096 unique words. Two thousand and forty-eight of the words were recognized in the Dutch Wordforms database in CELEX (Version 3.1) in order to extract the word frequency as well as the number of syllables per word (later needed to fit a regression model). Mean word duration was 0.392 s, with an average standard deviation of 0.094 s (Figure 2\u2014figure supplement 1). By splitting up the data in sequences of 10 sequential words, we could extract the average word, syllable, and character rate (Figure 2\u2014figure supplements 2 and 3). The reported rates fall within the generally reported ranges for syllables (5.2 Hz) and words (3.7 Hz; Ding et al., 2017; Pellegrino and Coup\u00e9, 2011).\n\nWe predict that knowledge about the language statistics influences the duration of speech units. As such we predict that more prevalent words will have on average a shorter duration (also reported in Monsell et al., 1989). In Figure 2A,\u00a0the duration of several mono- and bi-syllabic words are listed with their word frequency. From these examples, it seems that words with higher word frequency generally have a shorter duration. To test this statistically we entered word frequency in an ordinary least square regression with number of syllables as control. Both number of syllables (coefficient = 0.1008, t(2843) = 75.47, p<0.001) as well as word frequency (coefficient = \u22120.022, t(2843) = \u221213.94, p<0.001) significantly influence the duration of the word. Adding an interaction term did not significantly improve the model (F (1,2843) = 1.320, p=0.251; Figure 2B,C). The effect is so strong that words with a low frequency can last three times as long as high-frequency words (even within mono-syllabic words). This indicates that word frequency could be an important part of an internal model that influences word duration.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig2-v2.jpg)\n\n**Figure 2.:** (A) Example of mono- and bi-syllabic words of different word frequencies in brackets (van=from, zijn=be, snel=fast, stem=voice, hebben=have, eten=eating, volgend=next, toekomst=future). Text in the graph indicates the mean word duration. (B) Relationship between word frequency and duration. Darker colors mean more values. (C) same as (B) but separately for mono- and bi-syllabic words. (D) Relationship character amount and word duration. The longer the words, the longer the duration (left). The increase in word duration does not follow a fixed number per character as duration as measured by rate increases. (E) same as (D) but for number of syllables. Red dots indicate the mean.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig2-figsupp3-v2.jpg)\n\nThe previous analysis probed us to expand on the relationship between word duration and length of the words. Obviously, there is a strong correlation between word length and mean word duration (number of characters 0.824, p<0.001; number of syllables: \u03c1 = 0.808, p<0.001; for number of syllables already shown above; Figure 2D,E). In contrast, this correlation is present, but much lower for the standard deviation of word duration (number of characters: \u03c1 = 0.269, p<0.001; number of syllables: \u03c1 = 0.292, p<0.001). Finding a strong correlation does not imply that for every time unit increase in the word length, the duration of the word also increases with the same time unit, i.e., bi-syllabic words do not necessarily have to last twice as long as mono-syllabic words. Therefore, we recalculated word duration to a rate unit considering the number of syllables/characters of the word. Thus, a 250 ms mono- versus bi-syllabic word would have a rate of 4 versus 8 Hz, respectively. Then we correlated character/syllabic rate with word duration. If word duration increases monotonically with character/syllable length, there should be no correlation. We found that the syllabic rate varies between 3 and 8 Hz as previously reported (Figure 2E, right; Ding et al., 2017; Pellegrino and Coup\u00e9, 2011). However, the more syllables there are in a word, the higher this rate (\u03c1 = 0.676, p<0.001). This increase was less strong for the character rate (\u03c1 = 0.499, p<0.001; Figure 2D, right).\n\nThese results show that the syllabic/character rate depends on the number of characters /syllables within a word and is not an independent temporal unit (Ghitza, 2013). This effect is easy to explain when assuming that the prediction strength of an internal model influences word duration: transitional probabilities of syllables are simply more constrained within a word than across words (Thompson and Newport, 2007). This will reduce the time it takes to utter/perceive any syllable which is later in a word. In the current model, we focus on words (based on the availability of word2vec embedding used to calculate contextual predictabilities based on a RNN) instead of syllables, so we will not test this prediction for syllables, but instead we can investigate the effect of transitional probabilities and other statistical regularities flowing from internal models across words (see next section and [Jadoul et al., 2016] for statistical regularities in syllabic processing).\n\n#### Word-by-word predictability predicts word onset differences\n\nThe brain\u2019s internal model likely provides predictions about what linguistic features and representations, and possibly about which specific units, such as words, to expect next when listening to ongoing speech (Martin, 2016; Martin, 2020). As such, it is also expected that word-by-word onset delays are shorter for words that fit the internal model (i.e., those that are expected; Beattie and Butterworth, 1979). To investigate this possibility, we created a simplified version of an internal model predicting the next word using recurrent neural nets (RNN). We trained an RNN to predict the next word from ongoing sentences (Figure 3A). The model consisted of an embedding layer (pretrained; github.com/coosto/dutch-word-embeddings), a recurrent layer with a tanh activation function, and a dense output layer with a softmax activation. To prevent overfitting, we added a 0.2 dropout to the recurrent layers and the output layer. An Adam optimizer was used at a 0.001 learning rate and a batch size of 32. We investigated four different recurrent layers (GRU and LSTM at either 128 or 300 units; see Figure 3\u2014figure supplement 1). The final model we use here includes a LSTM with 300 units. Input data consistent of 10 sequential words (label encoding) within the corpus (of a single speaker; shifting the sentences by one word at a time), and an output consisted of a single word. A maximum of four unknown labeled words (words not included in the word2vec estimations. Four was chosen as it was <50% of the words) was allowed in the input, but not in output. Validation consisted of a randomly chosen 2% of the data.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sequences of 10 words were entered in an RNN in order to predict the content of the next word. Three examples are provided of input data with the label (bold word) and probability output for three different words. The regression model showed a relation between the duration of last word in the sequence and the predictability of the next word such that words were systematically shorter when the next word was more predictable according to the RNN output (illustrated here with the shorted black boxes). (B) Regression line estimated at mean value of word duration and bigram. (C) Scatterplot of prediction and onset difference of data within \u00b1 0.5 standard deviation of word duration and bigram. Note that for (B) and (C), the axes are linear on the transformed values. (D) Regression line for the correlation between logarithm of variance of the prediction and theta power. (E) None-transformed distribution of variance of the predictions (within a sentence). Translation of the sentences in (A) from top to bottom: \u2018... that it has for me and while you have no answer [on]\u2019, \u2018... the only real hope for us humans is a firm and [sure]\u2019, \u2018... a couple of glass doors in front and then it would not have been [in]\u2019.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Probability is defined as the mean of the model output value at the node representing the next word.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** RNN prediction dependent on the current word (left), previous word (middle), or sentence position (right). Words with generally high average RNN prediction were for current words \u2018je\u2019,\u2019te\u2019,\u2019ik\u2019,\u2019de\u2019,\u2019van\u2019 (\u2018you\u2019,\u2019to\u2019,\u2019I\u2019,\u2019the\u2019,\u2019from\u2019) and previous words \u2018dan\u2019,\u2019met\u2019,\u2019ook\u2019,\u2019voor\u2019,\u2019op\u2019 (\u2018than\u2019,\u2019with\u2019,\u2019also\u2019,\u2019for\u2019,\u2019on\u2019). The later the position the stronger the RNN prediction on average.\n\nThe output of the RNN reflects a probability distribution in which the values of the RNN sum up to one and each word has its own predicted value (Figure 3A; see Figure 3\u2014figure supplement 2 for differences across words and sentence position). As such we can extract the predicted value of the uttered word and relate the RNN prediction with the stimulus onset delay relative to the previous word. We entered word prediction in a regression using the stimulus onset difference between the current word in the sentence and the previous word (i.e., onset difference of words). We added the control variables bigram (using the NLTK toolbox based on the training data only), frequency of previous word, syllable rate (rate of the full sentence input), and mean duration of previous word (all variables that can account for part of the variance that affects the duration of the last word). We only used the test data (total of 7361 sentences, excluding all words in which the previous word (W-1) was not present in Celex. 4837 sentences). Many of the variables were skewed to the right; therefore, we transformed the data accordingly (see Table 1; results were robust to changes in these transformation).\n\n**Table 1.**\n Summary of regression model for logarithm of onset difference of words.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable</th>\n      <th>Trans</th>\n      <th>B</th>\n      <th>\u03b2</th>\n      <th>SE</th>\n      <th>t</th>\n      <th>p</th>\n      <th>VIF</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Intercept</td>\n      <td>x</td>\n      <td>0.9719</td>\n      <td></td>\n      <td>0.049</td>\n      <td>19.764</td>\n      <td>&lt;0.001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>RNN prediction</td>\n      <td>x (1/6)</td>\n      <td>\u22120.3370</td>\n      <td>\u22120.0862</td>\n      <td>0.047</td>\n      <td>\u22127.163</td>\n      <td>&lt;0.001</td>\n      <td>1.5</td>\n    </tr>\n    <tr>\n      <td>Bigram</td>\n      <td>log(x)</td>\n      <td>\u22120.0118</td>\n      <td>\u22120.0316</td>\n      <td>0.005</td>\n      <td>\u22122.424</td>\n      <td>0.015</td>\n      <td>1.8</td>\n    </tr>\n    <tr>\n      <td>Word frequency W-1</td>\n      <td>x</td>\n      <td>0.0049</td>\n      <td>0.0076</td>\n      <td>0.009</td>\n      <td>0.546</td>\n      <td>0.585</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>Mean duration W-1</td>\n      <td>log(x)</td>\n      <td>1.1206</td>\n      <td>0.7003</td>\n      <td>0.022</td>\n      <td>50.326</td>\n      <td>&lt;0.001</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>Syllable Rate</td>\n      <td>x</td>\n      <td>\u22120.1033</td>\n      <td>\u22120.2245</td>\n      <td>0.004</td>\n      <td>\u221223.014</td>\n      <td>&lt;0.001</td>\n      <td>1.0</td>\n    </tr>\n  </tbody>\n</table>\n\n_Model R2 = 0.542. Trans = transformation, W-1 = previous word, B = unstandardized\u00a0coefficient, \u03b2 = standardized coefficient, SE = standard error, t = t value, p = p value,\u00a0VIF = variance inflation factor._\n\nAll predictors except word frequency of the previous word showed a significant effect (Table 1). The variance explained by word frequency was likely captured by the mean duration variable of the previous word, which is correlated to word frequency. The RNN predictor could capture more variance than the bigram model, suggesting that word duration is modulated by the level of predictability within a fuller context than just the conditional probability of the current word given the previous word (Figure 3B,C). Importantly, it was necessary to use the trained RNN model as a predictor; entering the RNN predictions after the first training cycle (of a total of 100) did not results in a significant predictor (t(4837) = \u22121.191, p=0.234). Also adding the predictor word frequency of the current word did not add significant information to the model (F(1, 4830) = 0.2048, p=0.651). These results suggest that words are systematically lengthened (or pauses are added. However, the same predictors are also significant when excluding sentences containing pauses) when the next word is not strongly predicted by the internal model. We also investigate whether RNN predictions have an influence on the duration of the word that has to be uttered. We found no effect on the duration (Supporting Table 1).\n\n#### Sentence isochrony depends on prediction variance\n\nIn the previous section, we investigated word-to-word onsets, but did not investigate how this influences the temporal properties within a full sentence. In a regular sentence, predictability values change from word-to-word. Based on the previous results, it is expected that overall sentences with a more stable predictability level (sequential words are equally predictable) should be more isochronous than sentences in which the predictability shifts from high to low. This prediction is based on the observation that when predictions are equal the expected shift is the same, while for varying predictions, temporal shifts vary (Figure 3B,C).\n\nTo test this hypothesis, we extracted the RNN prediction for 10 subsequent words. Then we extracted the variance of the prediction across those 10 words and extracted the word onset itself. We created a time course at which word onset were set to 1 (at a sampling rate of 100 Hz). Then we performed an fast Fourier transform\u00a0(FFT) and extracted z-transformed power values over a 0\u201315 Hz interval. The power at the maximum power value with the theta range (3\u20138 Hz) was extracted. These max z-scores were correlated with the log transform of the variance (to normalize the skewed variance distribution; Figure 3E). We found a weak, but significant negative correlation (r = \u22120.062, p<0.001; Figure 3D) in line with our hypothesis. This suggests that the more variable the predictions within a sentence, the lower the peak power value is. When we repeated the analysis on the envelope, we did not find a significant effect.\n\n## Materials and methods\n\n### Speech Tracking in a Model Constrained Oscillatory Network\n\nIn order to investigate how much of these duration effects can be explained using an oscillator model, we created the model Speech Tracking in a Model Constrained Oscillatory Network (STiMCON). STiMCON in its current form will not be exhaustive; however, it can extract how much an oscillating network can cope with asynchronies by using its own internal model illustrating how the brain\u2019s language model and speech timing interact (Guest and Martin, 2021). The current model is capable of explaining how top-down predictions can influence the processing time as well as provide an explanation for two known temporal illusions in speech.\n\nSTiMCON consists of a network of semantic nodes of which the activation A of each level in the model l is governed by:\n\n$$\nA_{l,T}=C_{l-1\u2192l}*A_{l-1,T}+C_{l+1\u2192l}*A_{l+1,T}+inhibTa+osc(T)\n$$\n\nin which C represents the connectivity patterns between different hierarchical levels, T the time in a sentence, and Ta the vector of times of an individual node in an inhibition function (in milliseconds). The inhibition function is a gate function:\n\n$$\ninhib(Ta)={\u22123\u2217BaseInhib,Ta\u00a0<l3\u2217BaseInhib,20\\leqTa<100BaseInhib,Ta>100\n$$\n\nin which BaseInhib is a constant for the base level of inhibition (negative value, set to \u22120.2). As such nodes are by default inhibited, as soon as they get activated above threshold (activation threshold set at 1) Ta sets to zero. Then, the node will have suprathreshold activation, which after 20 ms returns to increased inhibition until the base level of inhibition is returned. These values are set to reflect early excitation and longer lasting inhibition, which are only loosely related to neurophysiological time scales. The oscillation is a constant oscillator:\n\n$$\nosc(T)=Am\u2217e^{2\\pii\\omegaT+i\\phi}\n$$\n\nin which Am is the amplitude of the oscillator, \u03c9 the frequency, and \u03c6 the phase offset. As such we assume a stable oscillator which is already aligned to the average speech rate (see Rimmele et al., 2018; Poeppel and Assaneo, 2020 for phase alignment models). The model used for the current simulation has one an input layer (l\u22121 level) and one single layer of semantic word nodes (l level) that receives feedback from a higher level layer (l+1 level). As such only the word (l) level is modeled according to Equation 1\u20133 and the other levels form fixed input and feedback connection patterns. Even though the feedback influences the activity at the word level, it does not cause a phase reset as the phase of the oscillation does not change in response to this feedback.\n\n### Language models influence time of activation\n\nTo illustrate how STiMCON can explain how processing time depends on the prediction of internal language models, we instantiated a language model that had only seen three sentences and five words presented at different probabilities (I eat cake at 0.5 probability, I eat nice cake at 0.3 probability, I eat very nice cake at 0.2 probability; Table 2). While in the brain the prediction should add up to 1, we can assume that the probability is spread across a big number of word nodes of the full language model and therefore neglectable. This language model will serve as the feedback arriving from the l+1-level to the l-level. The l-level consists of five nodes that each represent one of the words and receives proportional feedback from l+1 according to Table 2 with a delay of 0.9*\u03c9 seconds, which then decays at 0.01 unit per millisecond and influences the l-level at a proportion of 1.5. The 0.9*\u03c9 was defined as we hypothesized that onset time would be loosely predicted around on oscillatory cycle, but to be prepared for input slightly earlier (which of course happens for predictable stimuli), we set it to 0.9 times the length of the cycle. The decay is needed and set such that the feedback would continue around a full theta cycle. The proportion was set empirically such to ensure that strong feedback did cause suprathreshold activation at the active node. The feedback is only initiated when supra-activation arrives due to l\u22121-level bottom-up input. Each word at the l\u22121-level input is modeled as a linearly function to the individual nodes lasting length of 125 ms (half a cycle, ranging from 0 to 1 arbitrary units). As such, the input is not the acoustic input itself but rather reflects a linear increase representing the increasing confidence of a word representing the specific node. \u03c6 is set such that the peak of a 4 Hz oscillation aligns to the peak of sensory input of the first word. Sensory input is presented at a base stimulus onset asynchrony of 250 ms (i.e., 4 Hz).\n\n**Table 2.**\n Example of a language model.This model has seen three sentences at different probabilities. Rows represent the prediction for the next word, e.g., /I/ predicts /eat/ at a probability of 1, but after /eat/ there is a wider distribution.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>I</th>\n      <th>Eat</th>\n      <th>Very</th>\n      <th>Nice</th>\n      <th>Cake</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>I</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>eat</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0.2</td>\n      <td>0.3</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <td>very</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>nice</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>cake</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\nWhen we present this model with different sensory inputs at an isochronous rhythm of 4 Hz, it is evident that the timing at which different nodes reach activation depends on the level of feedback that is provided (Figure 4). For example, while the /I/-node needs a while to get activated after the initial sensory input, the /eat/-node is activated earlier as it is pre-activated due to feedback. After presenting /eat/, the feedback arrives at three different nodes and the activation timing depends on the stimulus that is presented (earlier activation for /cake/ compared to /very/).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig4-v2.jpg)\n\n**Figure 4.:** For the supra-threshold activation dark red indicates activation which included input from l+1 as well as l1, orange indicates activation due to l+1 input. Feedback at different strengths causes phase dependent activation (left). Suprathreshold activation is reached earlier when a highly predicted stimulus (right) arrives, compared to a mid-level predicted stimulus (middle).\n\n### Time of presentation influences processing efficiency\n\nTo investigate how the time of presentation influences the processing efficiency, we presented the model with /I eat XXX/ in which the last word was varied in content (Figure 5A; either /I/, /very/, /nice/, or /cake/), intensity (linearly ranging from 0 to 1), and onset delay (ranging between \u2212125 and +125 ms\u00a0relative to isochronous presentation). We extracted the time at which the node matching the stimulus presentation reached activation threshold first (relative to stimulus onset and relative to isochronous presentation).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig5-v2.jpg)\n\n**Figure 5.:** (A) Input given to the model. Sensory input is varied in intensity and timing. We extract the time of activation relative to stimulus onset (supra-time) and relative to isochrony onset. (B) Time of presentation influences efficiency. Outcome variable is the time at which the node reached threshold activation (supra-time). The dashed line is presented to ease comparison between the four content types. White indicates that threshold is never reached. (C) Same as (B), but estimated at a threshold of 0.53 showing that oscillations regulate feedforward timing. Panel (C) shows that the earlier the stimuli are presented (on a weaker point of the ongoing oscillation), the longer it takes until supra-threshold activation is reached. This figure shows that timing relative to the ongoing oscillation is regulated such that the stimulus activation timing is closer to isochronous. Line discontinuities are a consequence of stimuli never reaching threshold for a specific node.\n\nFigure 5B shows the output. When there is no feedback (i.e., at the first word /I/ presentation), a classical efficiency map can be found in which processing is most optimal (possible at lowest stimulus intensities) at isochronous (in phase with the stimulus rate) presentation and then drops to either side. For nodes that have feedback, input processing is possible at earlier times relative to isochronous presentation and parametrically varies with prediction strength (earlier for /cake/ at 0.5 probability, then /very/ at 0.2 probability). Additionally, the activation function is asymmetric. This is a consequence of the interaction between the supra-activation caused by the feedback and the sensory input. As soon as supra-activation is reached due to the feedback, sensory input at any intensity will reach supra-activity (thus at early stages of the linearly increasing confidence of the input). This is why for the /very/ stimulus activation is still reached at later delays compared to /nice/ and /cake/ as the /very/-node reaches supra-activation due to feedback at a later time point. In regular circumstances, we would of course always want to process speech, also when it arrives at a less excitable phase. Note, however, that the current stimulus intensities were picked to exactly extract the threshold responses. When we increase our intensity range above 2.1, nodes will always get activated even on the lowest excitable phase of the oscillation.\n\nWhen we investigate timing differences in stimulus presentation, it is important to also consider what this means for the timing in the brain. Before, we showed that the amount of prediction can influence timing in our model. It is also evident that the earlier a stimulus was presented the more time it took (relative to the stimulus) for the nodes to reach threshold (more yellow colors for earlier delays). This is a consequence of the oscillation still being at a relatively low excitability point at stimulus onset for stimuli that are presented early during the cycle. However, when we translate these activation threshold timing to the timing of the ongoing oscillation, the variation is strongly reduced (Figure 5C). A stimulus timing that varies between 130 ms (e.g., from \u221259 to +72 in the /cake/ line; excluding the non-linear section of the line) only reaches the first supra-threshold response with 19 ms variation in the model (translating to a reduction of 53\u20138% of the cycle of the ongoing oscillation, i.e., a 1:6.9 ratio). This means that within this model (and any oscillating model) the activation of nodes is robust to some timing variation in the environment. This effect seemed weaker when no prediction was present (for the /I/ stimulus this ratio was around 1:3.5. Note that when determining the /cake/ range using the full line the ratio would be 1:3.4).\n\n### Top-down interactions can provide rhythmic processing for non-isochronous stimulus input\n\nThe previous simulation demonstrate that oscillations provide a temporal filter and the processing at the word layer can actually be closer to isochronous than what can be solely extracted from the stimulus input. Next, we investigated whether dependent on changes in top-down prediction, processing within the model will be more or less rhythmic. To do this, we create stimulus input of 10 sequential words at a base rate of 4 Hz to the model with constant (Figure 6A; low at 0 and high at 0.8 predictability) or alternating word-to-word predictability. For the alternating conditions, word-to-word predictability alternates between low and high (sequences which word are predicted at 0 or 0.8 predictability, respectively) or shift from high to low. For this simulation, we used Gaussian sensory input (with a standard deviation of 42 ms aligning the mean at the peak of the ongoing oscillation; see Figure 6\u2014figure supplement 1 for output with linear sensory input). Then, we vary the onset time of the odd words in the sequence (shifting from \u2212100 up to +100 ms) and the stimulus intensity (from 0.2 to 1.5). We extracted the overall activity of the model and computed the FFT of the created time course (using a Hanning taper only including data from 0.5 to 2.5 s to exclude the onset responses). From this FFT, we extracted the peak activation at the stimulation rate of 4 Hz.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig6-v2.jpg)\n\n**Figure 6.:** (A) We presented the model with repeating (A,\u00a0B) stimuli with varying internal models. We extracted the power spectra and peak activity at various odd stimulus offsets and stimulus intensities. (B) Strength of 4 Hz power depends on predictability in the stream. When predictability is alternated between low and high, activation is more rhythmic when the predictable odd stimulus arrives earlier and vice versa. (C) Power across different internal models at intensity of 0.8 and 1.0 (different visualization than B). (D) Magnitude spectra at three different odd word offsets at 1.0 intensity. To more clearly illustrate the differences, the magnitude to the power of 20 is plotted.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Conventions of panel A, B are the same as in Figure 6C,D,\u00a0respectively.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Overall activation for individual nodes and summed activation. (B) Overall summed activation as time course. (C) Power spectra of the different delays and conditions. Dependent on the\u00a0internal language model, the power is stronger at the -33 ms\u00a0or 33 ms delay condition.\n\nThe first thing that is evident is that the model with no content predictions has overall lowest power, but has the strongest 4 Hz response around isochronous presentation (odd word offset of 0 ms) at high stimulus intensities (Figure 6B\u2013D) following closely the acoustic input. Adding overall high predictability increases the power, but also here the power seems symmetric around zero. The spectra of the alternating predictability conditions look different. For the low to high predictability condition, the curve seems to be shifted to the left such that 4 Hz power is strongest when the predictable odd stimulus is shifted to an earlier time point (low\u2013high condition). This is reversed for the high\u2013low condition. At middle stimulus intensities, there is a specific temporal specificity window at which the 4 Hz power is particularly strong. This window is earlier for the low\u2013high than the high\u2013low alternation (Figure 6C,D and Figure 6\u2014figure supplement 2). The effect only occurs at specific middle-intensity combination as at high intensities the stimulus dominates the responses and at low intensities the stimulus does not reach threshold activation. These results show that even though stimulus input is non-isochronous, the interaction with the internal model can still create a potential isochronous structure in the brain (see Meyer et al., 2019; Meyer et al., 2020). Note that the direction in which the brain response is more isochronous matches with the natural onset delays in speech (shorter onset delays for more predictable stimuli).\n\n### Model validation\n\n#### STiMCON\u2019s sinusoidal modulations of RNN predictions is optimally sensitive to natural onset delays\n\nNext, we aimed to investigated whether STiMCON would be optimally sensitive to speech input timings found naturally in speech. Therefore, we tried to fit STIMCON\u2019s expected word-to-word onset differences to the word-to-word onset differences we found in the CGN. At a stable level of intensity of the input and inhibition, the only aspect that changes the timing of the interaction between top-down predictions and bottom-up input within STiMCON is the ongoing oscillation. Considering that we only want to model for individual words how much the prediction\u00a0$(C_{l+1\u2192l}*A_{l+1,T}$) influences the expected timing we can set the contribution of the other factors from Equation (1) to zero remaining with the relative contribution of prediction:\n\n$$\nC_{l+1\u2192l}\u2217A_{l+1,T}=topdowninfluence=\u2212osc(T)\n$$\n\nWe can solve this formula in order to investigate the expected relative time shift (T) in processing that is a consequence of the strength of the prediction (ignoring that in the exact timing will also depend on the strength of the input and inhibition):\n\n$$\nrelativetimeshift=\\frac{1}{2\\pi\\omega}(arcsin\u2061(\\frac{C_{l+1\u2192l}\u2217A_{l+1,T}}{\u2212Am})\u2212\\phi)\n$$\n\n\u03c9 was set as the syllable rate for each sentence, and\u00a0Am and \u03c6 were systematically varied. We fitted a linear model between the STiMCON\u2019s expected time and the actual word-to-word onset differences. This model was similar to the model described in the section Word-by-word predictability predicts word onset differences and included the predictor syllable\u00a0rate and duration of the previous word. However, as we were interested in how well non-transformed data matches the natural onset timings, we did not perform any normalization besides Equation (5). As this might involve violating some of the assumptions of the ordinary least square fit, we estimate model performance by repeating the regression 1000 times fitting it on 90% of the data (only including the test data from the RNN) and extracting R2 from the remaining 10%.\n\nResults show a modulation of the R2 dependent on the amplitude and phase offset of the oscillation (Figure 7A). This was stronger than a model in which transformation in Equation (5) was not applied (R2for a model with no transfomation was 0.389). This suggests that STiMCON expected time durations matches the actual word-by-word duration. This was even more strongly so for specific oscillatory alignments (around \u22120.25\u03c0 offset), suggesting an optimal alignment phase relative to the ongoing oscillation is needed for optimal tracking (Giraud and Poeppel, 2012; Schroeder and Lakatos, 2009). Interestingly, the optimal transformation seemed to automatically alter a highly skewed prediction distribution (Figure 7B) toward a more normal distribution of relative time shifts (Figure 7C). Note that the current prediction only operated on the word node (to which we have the RNN predictions), while full temporal shifts are probably better explained by word, syllabic, and phrasal predictions.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig7-v2.jpg)\n\n**Figure 7.:** (A) Phase offset and amplitude of the oscillation modulate the fit to the word-to-word onset durations. (B) Histogram of the predictions created by the deep neural net. (C) Histogram of the relative time shift transformation at phase of \u22120.15\u03c0 and amplitude of 1.5.\n\n#### STiMCON can explain perceptual effects in speech processing\n\nDue to the differential feedback strength and the inhibition after suprathreshold feedback stimulation, STiMCON is more sensitive to lower predictable stimuli at phases later in the oscillatory cycle. This property can explain two illusions that have been reported in the literature, specifically, the observation that the interpretation of ambiguous input depends on the phase of presentation (Ten Oever and Sack, 2015; Kayser et al., 2016; Ten Oever et al., 2020) and on speech rate (Bosker and Reinisch, 2015). The only assumption that has to be made is that there is an uneven base prediction balance between the ways the ambiguous stimulus can be interpreted.\n\nThe empirical data we aim to model comprises an experiment in which ambiguous syllables, which\u00a0could either be interpreted as /da/ or /ga/, were presented (Ten Oever and Sack, 2015). In one of the experiments in this study, broadband simuli were presented at specific rates to entrain ongoing oscillations. After the last entrainment stimulus, an ambiguous /daga/ stimulus was presented at different delays (covering two cycles of the presentation rate at 12 different steps), putatively reflecting different oscillatory phases. Dependent on the delay of stimulation participants perceived either /da/ or /ga/, suggesting that phase modulates the percept of the participants. Besides this behavioral experiment, the authors also demonstrated that the same temporal dynamics were present when looking at ongoing EEG data, showing that the phase of ongoing oscillations at the onset of ambiguous stimulus presentation determined the percept (Ten Oever and Sack, 2015).\n\nTo illustrate that STiMCON is capable of showing a phase (or delay) dependent effect, we use an internal language model similar to our original model (Table 2). The model consists of four nodes (N1, N2, Nda, and Nga). N1 and N2 represent nodes responsive to two stimulus S1 and S2 that function as entrainment stimuli. N1 activation predicts a second unspecific stimulus (S2) represented by N2 at a predictability of 1. N2 activation predicts either da or ga at 0.2 and 0.1 probability, respectively. This uneven prediction of /da/ and /ga/ is justified as /da/ is more prevalent in the Dutch language as /ga/ (Zuidema, 2010), and it thus has a higher predicted level of occurring. Then, we present STiMCON (same parameters as before) with /S1 S2 XXX/. XXX is varied to have different proportion of the stimulus /da/ and /ga/ (ranging from 0% /da/ to 100% /ga/ in 12 times steps; these reflect relative proportions that sum up to one such that at 30% the intensity of /da/ would be at max 0.3 and of /ga/ 0.7) and is the onset is varied relate to the second to last word. We extract the time that a node reaches suprathreshold activity after stimulus onset. If both nodes were active at the same time, the node with the highest total activation was chosen. Results showed that for some ambiguous stimuli, the delay determines which node is activated first, modulating the ultimate percept of the participant (Figure 8A, also see Figure 8\u2014figure supplement 1A). The same type of simulation can explain how speech rate can influence perception (Figure 8\u2014figure supplement 1B; but see Bosker and K\u00f6sem, 2017).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig8-v2.jpg)\n\n**Figure 8.:** (A) Modulations due to ambiguous input at different times. Illustration of the node that is active first. Different proportions of the /da/ stimulus show activation timing modulations at different delays. (B) Summary of the model and the parameters altered for the empirical fits in (C) and (D). (C). R2 for the grid search fit of the full model using the first active node as outcome variable, a model without inhibition (no inhib), without uneven feedback (no fb), or without an oscillation (no os). The right panel shows the fit of the full model on the rectified behavioral data of Ten Oever and Sack, 2015. Blue crossed indicate rectified data and red lines indicate the fit. (D) is the same as (C) but using the average activity instead of the first active node. Removing the oscillation results in an R2 less than 0.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Model activation of two example delays for the fitting (Figure 8A). (B) Modulations due to ambiguous input at different speech rates. Illustration of the node that is active first. Different proportions of the /da/ stimulus show activation timing modulations at different speech rates. Conventions are the same as Figure 8.\n\nTo further scrutinize on this effect, we fitted our model to the behavioral data of Ten Oever and Sack, 2015. As we used an iterative approach in the simulations of the model, we optimized the model using a grid search. We varied the parameters of proportion of the stimulus being /da/ or /ga/ (ranging between 10:5:80%), the onset time of the feedback (0.1:0.1:1.0 cycle), the speed of the feedback decay (0:0.01:0.1), and a temporal offset of the final sound to account for the time it takes to interpret a specific ambiguous syllable (ranging between \u22120.05:0.01:0.05 s). Our first outcome variable was the node that show the first suprathreshold activation (Nda = 1, Nga = 0). If both nodes were active at the same time, the node with the highest total activates was chosen. If both nodes had equal activation or never reached threshold activation, we coded the outcome to 0.5 (i.e., fully ambiguous). These outcomes were fitted to the behavioral data of the 6.25 Hz and 10 Hz presentation rate (the two rates showing a significant modulation of the percept). This data was normalized to have a range between 0\u00a0and\u00a01 to account for the model outcomes being binary (0, 0.5, or 1). As a second outcome measure, we also extracted the relative activity of the /da/ and /ga/ nodes by subtracting their activity and dividing by the summed activity. The activity was calculated as the average activity over a window of 500 ms after stimulus onset and the final time\u00a0course was normalized between 0 and 1.\n\nFor the first node activation analysis, we found that our model could fit the data at an average explained variance of 43% (30% and 58% for 6.25 Hz and 10 Hz, respectively; Figure 8C,D). For the average activity analysis, we found a fit with 83% explained variance. Compared to the original sinus fit, this explained variance was higher for the average activation analysis (40% for three parameter sinus fit [amplitude, phase offset, and mean]). Note that for the first node activation analysis, our fit cannot account for variance ranging between 0\u20130.5 and 0.5\u20131, while the sinus fit can do this. If we correct for this (by setting the sinus fit to the closest 0, 0.5, or 1 value and doing a grid search to optimize the fitting), the average fit of the sinus is 21%. Comparing the fits of the rectified sinus versus the first node activation reveals an average Akaike information criterion\u00a0of the model and sinus fits of \u221227.0 and \u221224.1, respectively. For the average activation analysis, this was \u221241.5 versus \u221227.8, respectively. This overall suggests that the STiMCON model has the better fit. Thus, STiMCON does better than a fixed-frequency sinus fit. This is a likely consequence of the sinus fit not being able to explain the dampening of the oscillation later (i.e., the perception bias is stronger for shorter compared to longer delays).\n\nFinally, we investigated the relevance of the three key features of our model for this fit: inhibition, feedback, and oscillations (Figure 8B). We repeated the grid search fit but set either the inhibition to zero, the feedback matrix equal for both /da/ and /ga/ (both 0.15), or the oscillation at an amplitude of zero. Results showed for both outcome measures that the full model showed the best performance. Without the oscillation, the models could not even fit better than the mean of the model (R2 < 0). Removing the feedback had a negative influence on both the outcome measures, dropping the performance. Removing the inhibition reduced performance for both outcome measures, but more strongly on the average activation compared to the first active node model. This suggest that all features (with potentially to a lesser extend the inhibition) are required to model the data, suggesting that oscillatory tracking is dependent on linguistic constrains flowing from the internal language model.\n\n## Discussion\n\nIn the current paper, we combined an oscillating computational model with a proxy for linguistic knowledge, an internal language model, in order to investigate the model\u2019s processing capacity for onset timing differences in natural speech. We show that word-to-word speech onset differences in natural speech are indeed related to predictions flowing from the internal language model (estimated through an RNN). Fixed oscillations aligned to the mean speech rate are robust against natural temporal variations and even optimized for temporal variations that match the predictions flowing from the internal model. Strikingly, when the pseudo-rhythmicity in speech matches the predictions of the internal model, responses were more rhythmic for matched pseudo-rhythmic compared to isochronous speech input. Our model is optimally sensitive to natural speech variations, can explain phase-dependent speech categorization behavior (Ten Oever and Sack, 2015; Th\u00e9z\u00e9 et al., 2020; Reinisch and Sjerps, 2013; Ten Oever et al., 2020), and naturally comprises a neural phase code (Panzeri et al., 2015; Mehta et al., 2002; Lisman and Jensen, 2013). These results show that part of the pseudo-rhythmicity of speech is expected by the brain and it is even optimized to process it in this manner, but only when it follows the internal model.\n\nSpeech timing is variable, and in order to understand how the brain tracks this pseudo-rhythmic signal, we need a better understanding of how this variability arises. Here, we isolated one of the components explaining speech time variation, namely, constraints that are posed by an internal language model. This goes beyond extracting the average speech rate (Ding et al., 2017; Poeppel and Assaneo, 2020; Pellegrino and Coup\u00e9, 2011) and might be key to understanding how a predictive brain uses temporal cues. We show that speech timing depends on the predictions made from an internal language model, even when those predictions are highly reduced to be as simple as word predictability. While syllables generally follow a theta rhythm, there is a systematic increase in syllabic rate as soon as more syllables are in a word. This is likely a consequence of the higher close probability of syllables within a word which reduces the onset differences of the later uttered syllables (Thompson and Newport, 2007). However, an oscillatory model constrained by an internal language model is sensitive to these temporal variations, it is actually capable of processing them optimally.\n\nThe oscillatory model we here pose has three components: oscillations, feedback, and inhibition. The oscillations allow for the parsing of speech and provide windows in which information is processed (Giraud and Poeppel, 2012; Ghitza, 2012; Peelle and Davis, 2012; Martin and Doumas, 2017). Importantly, the oscillation acts as a temporal filter, such that the activation time of any incoming signal will be confined to the high excitable window and thereby is relatively robust against small temporal variations (Figure 5C). The feedback allows for differential activation time dependent on the sensory input (Figure 5B). As a consequence, the model is more sensitive to higher predictable speech input and therefore active earlier on the duty cycle (this also means that oscillations are less robust against temporal variations when the feedback is very strong). The inhibition allows for the network to be more sensitive to less predictable speech units when they arrive later (the higher predictable nodes get inhibited at some point on the oscillation; best illustrated by the simulation in Figure 8A). In this way, speech is ordered along the duty cycle according to its predictability (Lisman and Jensen, 2013; Jensen et al., 2012). The feedback in combination with an oscillatory model can explain speech rate and phase-dependent content effects. Moreover, it is an automatic temporal code that can use time of activation as a cue for content (Mehta et al., 2002). Note that previously we have interpreted the /daga/ phase-dependent effect as a mapping of differences between natural audio-visual onset delays of the two syllabic types onto oscillatory phase (Ten Oever et al., 2013; Ten Oever and Sack, 2015). However, the current interpretation is not mutually exclusive with this delay-to-phase mapping as audio-visual delays could be bigger for less frequent syllables. The three components in the model are common brain mechanisms (Malhotra et al., 2012; Mehta et al., 2002; Buzs\u00e1ki and Draguhn, 2004; Bastos et al., 2012; Michalareas et al., 2016; Lisman, 2005) and follow many previously proposed organization principles (e.g., temporal coding and parsing of information). While we implement these components on an abstract level (not veridical to the exact parameters of neuronal interactions), they illustrate how oscillations, feedback, and inhibition interact to optimize sensitivity to natural pseudo-rhythmic speech.\n\nThe current model is not exhaustive and does not provide a complete explanation of all the details of speech processing in the brain. For example, it is likely that the primary auditory cortex is still mostly modulated by the acoustic pseudo-rhythmic input and only later brain areas follow more closely the constraints posed by the language model of the brain. Moreover, we now focus on the word level, while many tracking studies have shown the importance of syllabic temporal structure (Giraud and Poeppel, 2012; Ghitza, 2012; Luo and Poeppel, 2007) as well as the role of higher order linguistic temporal dynamics (Meyer et al., 2019; Kaufeld et al., 2020b). It is likely that predictive mechanisms also operate on these higher linguistic levels as well as on syllabic levels. It is known, for example, that syllables are shortened when the following syllabic content is known versus producing syllables in isolation (Pluymaekers et al., 2005a; Lehiste, 1972). Interactions also occur as syllables part of more frequent words are generally shortened (Pluymaekers et al., 2005b). Therefore, more hierarchical levels need to be added to the current model (but this is possible following Equation (1)). Moreover, the current model does not allow for phase or frequency shifts. This was intentional in order to investigate how much a fixed oscillator could explain. We show that onset times matching the predictions from the internal model can be explained by a fixed oscillator processing pseudo-rhythmic input. However, when the internal model and the onset timings do not match, the internal model phase and/or frequency shift are still required and need to be incorporated (see e.g. Rimmele et al., 2018; Poeppel and Assaneo, 2020).\n\nWe aimed to show that a stable oscillator can be sensitive to temporal pseudo-rhythmicities when these shifts match predictions from an internal linguistic model (causing higher sensitivity to these nodes). In this way, we show that temporal dynamics in speech and the brain cannot be isolated from processing the content of speech. This is in\u00a0contrast with other models that try to explain how the brain deals with pseudo-rhythmicity in speech (Giraud and Poeppel, 2012; Rimmele et al., 2018; Doelling et al., 2019). While some of these models discuss that higher-level linguistic processing can modulate the timing of ongoing oscillations (Rimmele et al., 2018), they typically do not consider that in the speech signal itself the content or predictability of a word relates to the timing of this word. Phase resetting models typically deal with pseudo-rhythmicity by shifting the phase of ongoing oscillations in response to a word that is offset to the mean frequency of the input (Giraud and Poeppel, 2012; Doelling et al., 2019). We believe that this cannot explain how the brain uses what/when dependencies in the environment to infer the content of the word (e.g., later words are likely a less predictable word).\u00a0Our current model does not have an explanation of how the brain can actually entrain to an average speech rate. This is much better described in dynamical systems theories in which this is a consequence of the coupling strength between internal oscillations and speech acoustics (Doelling et al., 2019; Assaneo et al., 2021). However, these models do not take top-down predictive processing into account. Therefore, the best way forward is likely to extend coupling between brain oscillations and speech acoustics (Poeppel and Assaneo, 2020), with the coupling of brain oscillations to brain activity patterns of internal models (Cumin and Unsworth, 2007).\n\nIn the current paper, we use an RNN to represent the internal model of the brain. However, it is unlikely that the RNN captures the wide complexities of the language model in the brain. The decades-long debates about the origin of a language model in the brain remains ongoing and controversial. Utilizing the RNN as a proxy for our internal language model makes a tacit assumption that language is fundamentally statistical or associative in nature, and does not posit the derivation or generation of knowledge of grammar from the input (Chater, 2001; McClelland and Elman, 1986). In contrast, our brain could as well store knowledge of language that functions as fundamental interpretation principles to guide our understanding of language input (Martin, 2016; Martin, 2020; Hagoort, 2017; Martin and Doumas, 2017; Friederici, 2011). Knowledge of language and linguistic structure could be acquired through an internal self-supervised comparison process extracted from environmental invariants and statistical regularities from the stimulus input (Martin and Doumas, 2019; Doumas et al., 2008; Doumas and Martin, 2018). Future research should investigate which language model can better account for the temporal variations found in speech.\n\nA natural feature of our model is that time can act as a cue for content implemented as a phase code (Lisman and Jensen, 2013; Jensen et al., 2012). This code unravels as an ordered list of predictability strength of the internal model. This idea diverges from the idea that entrainment should align to the most excitable phase of the oscillation with the highest energy in the acoustics (Giraud and Poeppel, 2012; Rimmele et al., 2018). Instead, this type of phase coding could increase the brain representational space to separate information content (Lisman and Jensen, 2013; Panzeri et al., 2001). We predict that if speech nodes have a different base activity, ambiguous stimulus interpretation should dependent on the time/phase of presentation (see Ten Oever and Sack, 2015; Ten Oever et al., 2020). Indeed, we could model two temporal speech illusions (Figure 8, Figure 8\u2014figure supplement 1). There have also been null results regarding the influence of phase on ambiguous stimulus interpretation (Bosker and K\u00f6sem, 2017; K\u00f6sem et al., 2016). For the speech rate effect, when modifying the time of presentation with a neutral entrainer (summed sinusoidals with random phase), no obvious phase effect was reported (Bosker and K\u00f6sem, 2017). A second null result relates to a study where participants were specifically instructed to maintain a specific perception in different blocks which likely increases the pre-activation and thereby the phase (K\u00f6sem et al., 2016). Future studies need to investigate the use of temporal/phase codes to disambiguate speech input and specifically use predictions in their design.\n\nThe temporal dynamics of speech signals needs to be integrated with the temporal dynamics of brain signals. However, it is unnecessary (and unlikely) that the exact duration of speech matches with the exact duration of brain processes. Temporal expansion or squeezing of stimulus inputs occur regularly in the brain (Eagleman et al., 2005; Pariyadath and Eagleman, 2007), and this temporal morphing also maps to duration (Eagleman, 2008; Terao et al., 2008; Ulrich et al., 2006) or order illusions (Vroomen and Keetels, 2010). Our model predicts increased rhythmic responses for non-isochronous speech matching the internal model. The perceived rhythmicity of speech could therefore also be an illusion generated by a rhythmic brain signal somewhere in the brain.\n\nWhen investigating the pseudo-rhythmicity in speech, it is important to identify situations where speech is actually more isochronous. Two examples are the production of lists (Jefferson, 1990) and infant-directed speech (Fernald, 2000). In both these examples, it is clear that a strong internal predictive language model is lacking either on the producer\u2019s or on the receiver\u2019s side, respectively. The infant-directed speech also illustrates that a producer might proactively adapt its speech rhythm to the expectations of the internal model of the receiver to align better with the predictions from the receiver\u2019s model (Figure 9B; similar to when you are speaking to somebody that is just learning a new language). Other examples in which speech is more isochronous is during poems, during emotional conversation (Hawkins, 2014), and in noisy situations (Bosker and Cooke, 2018). While speculative, it is conceivable that in these circumstances one puts more weight on a different level of hierarchy than the internal linguistic model. In the case of poems and emotional conversation, an emotional route might get more weight in processing. In the case of noisy situations, stimulus input has to pass the first hierarchical level of the primary auditory cortex which effectively gets more weight than the internal model.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig9-v2.jpg)\n\n**Figure 9.:** (A) Acoustics signals will be more isochronous when a producer has a weak versus a strong internal model (top right). When the producer\u2019s strong model matches the receiver\u2019s model, the brain response will be more isochronous for less isochronous acoustic input. (B) When a producer realizes the model of the receiver is weak, it might transform its model and thereby their speech timing to match the receiver\u2019s expectations.\n\n### Conclusions\n\nWe argued that pseudo-rhythmicity in speech is in part a consequence of top-down predictions flowing from an internal model of language. This pseudo-rhythmicity is created by a speaker and expected by a receiver if they have overlapping internal language models. Oscillatory tracking of this signal does not need to be hampered by the pseudo-rhythmicity, but can use temporal variations as a cue to extract content information since the phase of activation parametrically relates to the likelihood of an input relative to the internal model. Brain responses can even be more isochronous to pseudo-rhythmic compared to isochronous speech if they follow the temporal delays imposed by the internal model. This account provides various testable predictions which, we list in Table 3 and Figure 9. We believe that by integrating neuroscientific explanations of speech tracking with linguistic models of language processing (Martin, 2016; Martin, 2020), we can improve to explain temporal speech dynamics. This will ultimately aid our understanding of language in the brain and provide a means to improve temporal properties in speech synthesis.\n\n**Table 3.**\n Predictions from the current model.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>When there is a flat constraint distribution over an utterance (e.g., when probabilities are uniform over the utterance), the acoustics of speech should naturally be more isochronous (Figures 9A\u00a0and 3D,E).</td>\n    </tr>\n    <tr>\n      <td>If speech timing matches the internal language model, brain responses should be more isochronous even if the acoustics are not (Figure 9A).</td>\n    </tr>\n    <tr>\n      <td>The more similar the internal language models of two speakers, the more effective they are in \u2018entraining\u2019 each other\u2019s brain.</td>\n    </tr>\n    <tr>\n      <td>If speakers suspect their listener to have a flatter constraint distribution than themselves (e.g., the environment is noisy, or the speakers are in a second language context), they adjust to the distribution by speaking more isochronous (Figure 9B).</td>\n    </tr>\n    <tr>\n      <td>One adjusts the weight of the constraint distribution to a hierarchical level when needed. For example, when there is noise, participants adjust to the rhythm of primary auditory cortex instead of higher order language models. As a consequence, they speak more isochronous.</td>\n    </tr>\n    <tr>\n      <td>The theoretical account provides various predictions that are listed in this table.</td>\n    </tr>\n  </tbody>\n</table>\n\n### Code availability statement\n\nCode for the creation of the main figures is\u00a0available\u00a0on\u00a0GitHub (Ten Oever & Martin, 2021; copy archived at swh:1:rev:873a2bf5c79fe2f828e72e14ef74db409d387854).\n",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "51da203e-e72b-4b73-a6ca-06d0928cc0bb",
+      "submission_id": "49181018-30a5-45ac-8c68-8a44e217e3d4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anne K\u00f6sem, Lyon Neuroscience Research Center France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68066.sa1](https://doi.org/10.7554/eLife.68066.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe manuscript is of broad interest to readers in the field of speech recognition and neural oscillations. The authors provide a computational model which, in addition to feedforward acoustic input, incorporates linguistic predictions as feedback, allowing a fixed oscillator to process non-isochronous speech. The model is tested extensively by applying it to a linguistic corpus, EEG and behavioral data. The article gives new insights to the ongoing debate about the role of neural oscillations and predictability in speech recognition.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Oscillatory tracking of pseudo-rhythmic speech is constrained by linguistic predictions\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Anne K\u00f6sem as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Andrew King as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Johanna Rimmele (Reviewer #2); Keith Doelling (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers had a very positive assessment of the manuscript. They find the described work highly novel and interesting. However, they also find the manuscript quite dense and complex, and suggest some clarifications in the description of the model and in the methods.\n\nPlease find a list of the recommendations below.\n\nReviewer #1 (Recommendations for the authors):\n\n1. First of all, I think that the concept of \"internal language model\" should be defined and described in more detail in the introduction. What does it mean when it is weak and when it is strong, for the producer and for the receiver?\n\n2. It is still not fully clear to me what kind of information the internal oscillation is entraining to in the model. From Figure 1, it seems that the oscillation is driven by the acoustics only, but the phase of processing of linguistic units depends on their predictability.\n\n3. If acoustic information arrives at the most excitable phase of the neural oscillation (as described in figure 1), and if predictability makes words arrive earlier, does it entail that more predictable words arrive at less excitable phases of the neural oscillation? What would be the computational advantage of this mechanism?\n\n4. What is \"stimulus intensity\" in figure 5? Does it reflect volume or SNR?\n\n5. Similarly what is \"amplitude\" in Figure 6?\n\n6. L. 376-L. 439 \"N2 activation predicts either da or ga at 0.2 and 0.1 probability respectively.\" Please explain why the probabilities are not equal in the model, same for l. 445 \"intensity of /da/ would be at max 0.3. and of /ga/ 0.7\".\n\n7. Table 3: I feel that the first prediction is not actually a prediction, but a result of the article, as the first data shows that \"The more predictable a word, the earlier this word is uttered.\"\n\n8. Table 3 and Figure 8A: I think that the second prediction that \"When there is a flat constraint distribution over an utterance (e.g., when probabilities are uniform over the utterance) the acoustics of speech should naturally be more rhythmic (Figure 8A).\" could be tested with the current data. In the speech corpus, are sentences with lower linguistic constraints more rhythmic?\n\n9. Table 3: \"If speech timing matches the internal language model, brain responses should be more rhythmic even if the acoustics are not (Figure 8A).\" What do the authors mean by \"more rhythmic\"? Does it mean the brain follows more accurately the acoustics? Does it generate stronger internal rhythms that are distinct from the acoustic temporal structure?\n\n10. Figure 5 C: \"Strength of 4 Hz power\": what is the frequency bandwidth?\n\n11. Figure 5 D: \" Slice of D\", Slice of C?\n\n12. L 442: \"propotions \u00bb -> proportions.\n\n13. Abstract: \"Our results reveal that speech tracking does not only rely on the input acoustics but instead entails an interaction between oscillations and constraints flowing from internal language model \" I think this claim is too strong, considering that the article does not present direct electrophysiological evidence.\n\nReviewer #2 (Recommendations for the authors):\n\n1. In the model the predictability is computed at the word-level, while the oscillator operates at the syllable level. The authors show different duration effects for syllables within words, likely related to predictability. Is there any consequence of this mismatch of scales?\n\n2. Furthermore, could the authors clarify whether or not and how they think the model mechanism is different from top-down phase reset (e.g. l. 41). It seems that the excitability cycle at the intermediate word-level is shifted from being aligned to the 4 Hz oscillator though the linguistic feedback from layer l+1. Would that indicate a phase resetting at the word-level layer through the feedback?\n\n3. The model shows how linguistic predictability can affect neuronal excitability in an oscillatory model, allowing to improve the processing of non-isochronous speech. I do not fully understand the claim that the linguistic predictability makes the processing (at the word-level) more isochronous, and why such isochronicity is crucial.\n\n4. The authors showed that word frequency affects the duration of a word. Now the RNN model relates the predictability of a word (output) to the duration of the previous word W-1 (l. 187). Didn't one expect from Figure 1B that the duration of the actually predicted word is affected? How are these two effects related?\n\n5. Title: is \"constrained\" the right word here, rather \"modulated\"? As we can process non-predictable speech.\n\n6. See l. 129: \"In this way, oscillations do not have to shift their phase after every speech unit and can remain at a relatively stable frequency as long as the internal model of the speaker matches the internal model of the perceiver.\" It seems to me that in the model the authors introduce, the phase-shifting still occurs. Even though the oscillator component is fixed, the activation threshold fluctuations at the word-level are \"shifted\" due to the feedback. So there is no feedforward phase-reset, however, a phase-reset due to feedback?\n\n7. l. 219: why was bigrams added as control variable?\n\n8. l. 233 in l. 142 it says that only 2848 words were present in CELEX. Where the 4837 sentences consisting of the 2848 words?\n\n9. Figure 2 D,E the labeling with \u03c1 and p is confusing, I'd at least state consistently both, so one sees the difference.\n\n10. Table 1 legend: could you add why the specific transformations were performed?\n\n11. l. 204: the \u03b2 coefficient is rather small compared to the duration of W-1 effect. The dependent variable onset-to-onset should be strongly correlated with the W-1 duration. I wonder if this is a problem?\n\n12. l. 249: what is meant with \"after the first epoch\"?\n\n13. l. 254: how local were these lengthening effects? Did the predictability based on the trained RNN strongly vary across words or rather vary on a larger scale i.e. full sentences being less predictable than others?\n\n14. l. 268: Could you explain where the constants are coming from: like the 20 and 100 ms windows for inhibition and the values -0.2 and -3. The function inhibit(ta) is not clear to me. What is the output when Ta is 0 versus 1?\n\n15. Figure 4: the legend is very short, adding some description what the figure illustrates would make it easier to follow. The small differences in early/late activation are hard to see, particularly for the 4th row. Maybe it would help to add lines?\n\n16. Figure 5 B: could you clarify the effect at late stim times relative to isochronous, i.e. why the supra time relative to isochronous decreases for highly predictable stimuli. I assume this is to the inhibition function?\n\n17. How is the connectivity between layers defined? Is it symmetric for feedforward and feedback?\n\n18. l. 294/l. 205: \"with a delay of 0.9*\u03c9 seconds, which then decays at 0.01 unit per millisecond and influences the l-level at a proportion of 1.5.\" where are the constants coming from?\n\n19. l. 347: \"the processing itself can actually be closer to isochronous than what can be solely extracted from the stimulus\". This refers to Figure 5 D I assume. Did you directly compare the acoustics and the model output with respect to isochrony?\n\n20. l. 437-438: I am not fully understanding these choices: why is N1 represented by N2? Why is the probability of da and ga uneaven, and why are there nodes for da and ga (Nda, Nga) plus a node N2 which predicts both with different probability?\n\n21. Figure 5: why is the power of the high-high predictable condition the lowest. Is this an artifact of the oscillator in the model being fixed at 4 Hz or related to the inhibition function? High-high should like low-low result in rather regular, but faster acoustics?\n\n22. l. 600: \"The perceived rhythmicity\" In my view speech has been suggested to be quasi-rhythmic, as (1) some consistency in syllable duration has been observed within/across languages, and (2) as (quasi-)rhythmicity seemed a requirement to explain how segmentation of speech based on oscillations could work in the absence of simple segmentation cues (i.e. pauses between syllables). While one can ask when something is \"rhythmic enough\" to be called rhythmic, I don't understand why this is related to \"perceived rhythmicity\".\n\n23. l. 604: interesting thought!\n\nReviewer #3 (Recommendations for the authors):\n\n1. An important question is how the authors relate these findings to the Giraud and Poeppel, 2012 proposal which really focuses on the syllable. Would you alter the hypothesis to focus on the word level? Or remain at the syllable level and speed up and low down the oscillator depending on the predictability of each word? It would be interesting to hear the authors thoughts on how to manage the juxtaposition of syllable and word processing in this framework.\n\n2. The authors describe the STiMCON model as having an oscillator with frequency set to the average stimulus rate of the sentence. But how an oscillator can achieve this on its own (without the hand of its overloads) is unclear particularly given a pseudo-rhythmic input. The authors freely accept this limitation. However, it is worth noting that the ability for an oscillator mechanism to do this under pseudorhythmic context is more complicated than it might seem, particularly once we include that the stimulus rate might change from the beginning to the end of a sentence and across an entire discourse.\n\n3. The analysis of the naturalistic dataset shows a nice correlation between the estimated time shifts predicted by the model and the true naturalistic deviations. However, I find it surprising that there is so little deviation across the parameters of the oscillator (Figure 6A). What should we take from the fact that an oscillator aligned in anti-phase from the with the stimulus (which would presumably show the phase code only stimulus offsets), still shows a near equal correlation with true timing deviations. Furthermore, while the R2 shows that the predictions of the model co-vary with the true values, I'm curious to know how accurately they are predicted overall (in terms of mean squared error for example). Does the model account for deviations from rhythmicity of the right magnitude?\n\n4. Lastly, it is unclear to what extent the oscillator is necessary to find this relative time shift. A model comparison between the predictions of the STiMCON and the RNN predictions on their own (\u00e0 la Figure 3) would help to show how much the addition of the oscillation improves our predictions. Perhaps this is what is meant by the \"non-transformed R2\" but this is unclear.\n\n5. Figure 7 shows a striking result demonstrating how the model can be used to explain an interesting finding that phase of an oscillation can bias perception towards da or ga. The initial papers consider this result to be explained by delays in onset between visual and auditory stimuli whereas this result explains it in terms of the statistical likelihood each syllable. It is a nice reframing which helps me to better understand the previous result.\n\n6. The authors show that syllable lengths are determined in part by the predictability of the word it is a part of. While the authors have reasonably restricted themselves to a single hierarchical level, the point invites the question as to whether all hierarchical levels are governed by similar processes. Should syllables accelerate from beginning to end of a word? Or in more or less predictable phrases?\n\n7. Figure 5 shows how an oscillator mechanism can force pseudo-rhythmic stimuli into a more rhythmic code. The authors note that this can be done either by slowing responses to early stimuli and quickening responses to later ones, or by dropping (nodes don't reach threshold) stimuli too far outside the range of the oscillation. The first is an interesting mechanism, the second is potentially detrimental to processing (although it could be used as a means for filtering out noise). The authors should make clear how much deviation is required to invoke the dropping out mechanism and how this threshold relates to the naturalistic case. This would give the reader a clearer view of the flexibility of this model.\n\n8. I found Figure 5 very difficult to understand and had to read and read it multiple times to feel like I could get a handle on it. I struggled to get a handle on why supra time was shorter and shorter the later the stimulus was activated. It should reverse at some point as the phase goes back into lower excitability, right? The current wording is very unclear on this point. In addition, the low-high, high-low analysis is unclear because the nature of the stimuli is unclear. I think an added figure panel to show how these stimuli are generated and manipulated would go a long way here.\n\n9. The prediction of behavioral data in Figure 7 is striking but the methods could be improved. Currently, the authors bin the output of the model to be 0, 0.5 or 1 which requires some maneuvering to effectively compare it with the sinewave model. They could instead use a continuous measure (either lag of activation between da and ga, or activation difference) as a feature in a logistic regression to predict the human subject behavior.\n\n10. I'm not sure but I think there is a typo in line 383-384. The parameter for feedback should read Cl+1\u25ca l * Al+1,T. Note the + sign instead of the -. Or I have misunderstood something important.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Tracking of pseudo-rhythmic speech is modulated by linguistic predictions in an oscillating computational model\" for further consideration by eLife. Your revised article has been evaluated by Andrew King (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been greatly improved, and only these issues need to be addressed, as outlined below:\n\nReviewer #2 (Recommendations for the authors):\n\nI want to thank the authors for the great effort revising the manuscript. The manuscript has much improved. I only have some final small comments.\n\nDetailed comments\n\nl. 273-275: In my opinion: This is because the oscillator is set as a rigid oscillator in the model that is not affected by the word level layer activation; however, as the authors already discuss this topic, this is just a comment.\n\nl. 344: \"the processing itself\" I'd specify: \"the processing at the word layer\".\n\nl. 557/558: Rimmele et al., (2018) do discuss that besides the motor system, predictions from higher-level linguistic processing might affect auditory cortex neuronal oscillations through phase resetting. Top-down predictions affecting auditory cortex oscillations is one of the main claims of the paper. Thus, this paper seems not a good example for proposals that exclude when-to-what interactions. In my view the claims are rather consistent with the ones proposed here, although Rimmele et al., do not detail the mechanism and differ from the current proposal in that they suggest phase resetting. Could you clarify?\n\nl 584 ff.: \"This idea diverges from the idea that entrainment should per definition occur on the most excitable phase of the oscillation [3,15].\" Maybe rephrase: \"This idea diverges from the idea that entrainment should align the most excitable phase of the oscillation with the highest energy in the acoustics [3,15].\"\n\nl. 431: \"The model consists of four nodes (N1, N2, Nda, and Nga) at which N1 activation predicts a second unspecific stimulus (S2) represented by N2 at a predictability of 1. N2 activation predicts either da or ga at 0.2 and 0.1 probability respectively.\"\n\nThis is still hard to understand for me. E.g. What is S2, is this either da or ga, wouldn't their probability have to add up to 1?\n\nWording\n\nl. 175/176: sth is wrong with the sentence.\n\nl. 544: \"higher and syllabic\"? (sounds like sth is wrong in the wording)\n\nl. 546: \"within more frequency\" (more frequent or higher frequency?)\n",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bb8ee3a2-7c84-4e05-a708-ecc45948f1eb",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C1",
+      "claim": "Neuronal oscillations putatively track speech in order to optimize sensory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal oscillations putatively track speech in order to optimize sensory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that references established theory in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "1f8fb297-045e-4aaa-b68b-7069100a8fe8",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C2",
+      "claim": "It is unclear how isochronous brain oscillations can track pseudo-rhythmic speech input.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unclear how isochronous brain oscillations can track pseudo-rhythmic speech input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in current understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "6e757d06-8cd5-48bb-a5e5-cccaadaf1496",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C3",
+      "claim": "Speech time is dependent on content-based predictions flowing from internal language models.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we propose that oscillations can track pseudo-rhythmic speech when considering that speech time is dependent on content-based predictions flowing from internal language models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "09428522-805d-4716-b894-0a74c87d8103",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C4",
+      "claim": "Temporal dynamics of speech are dependent on the predictability of words in a sentence.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that temporal dynamics of speech are dependent on the predictability of words in a sentence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the corpus analysis presented in the Results section showing relationships between word predictability and timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "24a263a7-8add-4ea9-88ca-26e49a946f20",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C5",
+      "claim": "A computational model including oscillations, feedback, and inhibition is able to track pseudo-rhythmic speech input.",
+      "claim_type": "EXPLICIT",
+      "source": "A computational model including oscillations, feedback, and inhibition is able to track pseudo-rhythmic speech input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the STiMCON model simulations presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "226afb48-c1f3-4bf3-a9f3-8bbadd4a32cb",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C6",
+      "claim": "The model generates temporal phase codes as it processes, which are a candidate mechanism for carrying information forward in time.",
+      "claim_type": "EXPLICIT",
+      "source": "As the model processes, it generates temporal phase codes, which are a candidate mechanism for carrying information forward in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through model simulations demonstrating phase-dependent activation patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "847b53cf-00fb-4af3-9e33-839ebc1ab407",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C7",
+      "claim": "The model is optimally sensitive to the natural temporal speech dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is optimally sensitive to the natural temporal speech dynamics and can explain empirical data on temporal speech illusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the model validation showing optimal fit at specific oscillatory parameters (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "3278df61-deac-4017-9670-ef978992b0b9",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C8",
+      "claim": "The model can explain empirical data on temporal speech illusions.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is optimally sensitive to the natural temporal speech dynamics and can explain empirical data on temporal speech illusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through fitting the model to behavioral data from Ten Oever and Sack, 2015 (Figure 8).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "e847900d-9ccc-45af-ade0-f56c414195ae",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C9",
+      "claim": "The temporal relationship between subsequent speech units allows for the online tracking of speech in order to optimize processing at relevant moments in time.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal relationship between subsequent speech units allows for the online tracking of speech in order to optimize processing at relevant moments in time (Jones and Boltz, 1989; Large and Jones, 1999; Giraud and Poeppel, 2012; Ghitza and Greenberg, 2009; Ding et al., 2017; Arvaniti, 2009; Poeppel, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "0b3b8068-7da3-4d52-8506-30247c24306d",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C10",
+      "claim": "Neural oscillations are a putative index of speech tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural oscillations are a putative index of such tracking (Giraud and Poeppel, 2012; Schroeder and Lakatos, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "96b93282-7a11-441a-b6a7-98e909b873b6",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C11",
+      "claim": "The range of onset time difference between speech units seems more variable than fixed oscillations can account for.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the range of onset time difference between speech units seems more variable than fixed oscillations can account for (Rimmele et al., 2018; Nolan and Jeon, 2014; Jadoul et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "3153dde1-8ec5-46b0-8f00-8f0267741e16",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C12",
+      "claim": "Word frequency significantly influences word duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Both number of syllables (coefficient = 0.1008, t(2843) = 75.47, p<0.001) as well as word frequency (coefficient = \u22120.022, t(2843) = \u221213.94, p<0.001) significantly influence the duration of the word.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regression analysis on the CGN corpus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "f604cfd9-9695-46e9-acc0-3eb22e0c027b",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C13",
+      "claim": "Number of syllables significantly influences word duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Both number of syllables (coefficient = 0.1008, t(2843) = 75.47, p<0.001) as well as word frequency (coefficient = \u22120.022, t(2843) = \u221213.94, p<0.001) significantly influence the duration of the word.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regression analysis on the CGN corpus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "9ca6eec1-eced-44f0-8dda-d85ee14396d7",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C14",
+      "claim": "Words with a low frequency can last three times as long as high-frequency words even within mono-syllabic words.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect is so strong that words with a low frequency can last three times as long as high-frequency words (even within mono-syllabic words).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the corpus analysis presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "dda13859-e2fa-4f13-a96d-9eb0fed95cc1",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C15",
+      "claim": "The syllabic rate varies between 3 and 8 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the syllabic rate varies between 3 and 8 Hz as previously reported (Figure 2E, right; Ding et al., 2017; Pellegrino and Coup\u00e9, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2E and is consistent with prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "47800d58-58b3-49bd-b2ba-c5c71e34008e",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C16",
+      "claim": "The more syllables there are in a word, the higher the syllabic rate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the more syllables there are in a word, the higher this rate (\u03c1 = 0.676, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis of the corpus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "e384e846-c234-4d87-9b64-6eaf523c56ff",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C17",
+      "claim": "RNN prediction is a significant predictor of word onset differences.",
+      "claim_type": "EXPLICIT",
+      "source": "All predictors except word frequency of the previous word showed a significant effect (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the regression analysis presented in Table 1, where RNN prediction has t(4837) = \u22127.163, p<0.001.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "39af35a0-90ce-4010-becc-fb27c3ce10ec",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C18",
+      "claim": "The RNN predictor captures more variance than the bigram model in predicting word onset differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNN predictor could capture more variance than the bigram model, suggesting that word duration is modulated by the level of predictability within a fuller context than just the conditional probability of the current word given the previous word (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the regression analysis comparing RNN and bigram predictors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "1f072ce6-1f3e-4f6b-a4ec-c1aec2899388",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C19",
+      "claim": "Words are systematically lengthened when the next word is not strongly predicted by the internal model.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that words are systematically lengthened (or pauses are added. However, the same predictors are also significant when excluding sentences containing pauses) when the next word is not strongly predicted by the internal model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the regression analysis showing negative relationship between RNN prediction and onset differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "502321e5-d560-4cbb-b96a-f84a8a76e9b3",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C20",
+      "claim": "There is a significant negative correlation between variance of RNN predictions within a sentence and theta power.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a weak, but significant negative correlation (r = \u22120.062, p<0.001; Figure 3D) in line with our hypothesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through correlation analysis of prediction variance and FFT power.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "d2e4da6b-eb68-4803-8b07-14a31083ef34",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C21",
+      "claim": "The more variable the predictions within a sentence, the lower the peak power value.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the more variable the predictions within a sentence, the lower the peak power value is.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the negative correlation between prediction variance and theta power.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "32629394-a008-40db-b480-069c7a9b2c29",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C22",
+      "claim": "The timing at which different nodes reach activation depends on the level of feedback provided in the STiMCON model.",
+      "claim_type": "EXPLICIT",
+      "source": "When we present this model with different sensory inputs at an isochronous rhythm of 4 Hz, it is evident that the timing at which different nodes reach activation depends on the level of feedback that is provided (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "dc6665d1-13bb-4ab7-9ec5-5a2bfa6a6b89",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C23",
+      "claim": "Within the STiMCON model, the activation of nodes is robust to some timing variation in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that within this model (and any oscillating model) the activation of nodes is robust to some timing variation in the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations showing that timing variation in input results in smaller variation in activation timing (1:6.9 ratio).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "87ac8a64-616a-421b-95ca-85a349a8a139",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C24",
+      "claim": "A stimulus timing that varies between 130 ms only reaches the first supra-threshold response with 19 ms variation in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "A stimulus timing that varies between 130 ms (e.g., from \u221259 to +72 in the /cake/ line; excluding the non-linear section of the line) only reaches the first supra-threshold response with 19 ms variation in the model (translating to a reduction of 53\u20138% of the cycle of the ongoing oscillation, i.e., a 1:6.9 ratio).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model simulations shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "b4bc9239-ad22-4a5e-bbd6-bd0e71436789",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C25",
+      "claim": "The model with no content predictions has overall lowest power but has the strongest 4 Hz response around isochronous presentation at high stimulus intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "The first thing that is evident is that the model with no content predictions has overall lowest power, but has the strongest 4 Hz response around isochronous presentation (odd word offset of 0 ms) at high stimulus intensities (Figure 6B\u2013D) following closely the acoustic input.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through FFT analysis of model outputs in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "bf33a785-49a1-4f0b-a7f0-b5515af9f4f1",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C26",
+      "claim": "For the low to high predictability condition, 4 Hz power is strongest when the predictable odd stimulus is shifted to an earlier time point.",
+      "claim_type": "EXPLICIT",
+      "source": "For the low to high predictability condition, the curve seems to be shifted to the left such that 4 Hz power is strongest when the predictable odd stimulus is shifted to an earlier time point (low\u2013high condition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the model simulations presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "371c098f-6157-4646-9b05-e35368c1c925",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C27",
+      "claim": "Even though stimulus input is non-isochronous, the interaction with the internal model can still create a potential isochronous structure in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that even though stimulus input is non-isochronous, the interaction with the internal model can still create a potential isochronous structure in the brain (see Meyer et al., 2019; Meyer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model simulations showing stronger rhythmic responses to matched pseudo-rhythmic input.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "f4f797af-8959-42ba-9591-506351583143",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C28",
+      "claim": "STiMCON's expected word-to-word onset differences can be fitted to the word-to-word onset differences found in the CGN corpus.",
+      "claim_type": "EXPLICIT",
+      "source": "Results show a modulation of the R2 dependent on the amplitude and phase offset of the oscillation (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through regression analysis fitting model predictions to corpus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "504a79fd-1e3d-4344-b6e8-da13901feed4",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C29",
+      "claim": "The optimal transformation of RNN predictions through the oscillatory model automatically alters a highly skewed prediction distribution toward a more normal distribution of relative time shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the optimal transformation seemed to automatically alter a highly skewed prediction distribution (Figure 7B) toward a more normal distribution of relative time shifts (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through comparison of distributions in Figure 7B and 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "abf5b45d-6d7b-494b-9a3a-1b7c669a5c2c",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C30",
+      "claim": "STiMCON can show a phase-dependent effect on which node is activated first for ambiguous stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that for some ambiguous stimuli, the delay determines which node is activated first, modulating the ultimate percept of the participant (Figure 8A, also see Figure 8\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through model simulations of ambiguous /da/-/ga/ stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "4323299b-f50e-4951-a403-54c1937e5b1d",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C31",
+      "claim": "The STiMCON model can fit behavioral data from Ten Oever and Sack, 2015 at an average explained variance of 43% for first node activation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first node activation analysis, we found that our model could fit the data at an average explained variance of 43% (30% and 58% for 6.25 Hz and 10 Hz, respectively; Figure 8C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through grid search fitting of model parameters to empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "27213d28-ca3a-4181-9cd1-8fb98c82afb8",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C32",
+      "claim": "For the average activity analysis, the STiMCON model achieved a fit with 83% explained variance.",
+      "claim_type": "EXPLICIT",
+      "source": "For the average activity analysis, we found a fit with 83% explained variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through grid search fitting of model parameters to empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "bea3cf48-542e-4f96-8bce-29ac373d78d2",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C33",
+      "claim": "STiMCON does better than a fixed-frequency sinus fit in explaining temporal speech illusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, STiMCON does better than a fixed-frequency sinus fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through comparison of Akaike information criterion values between the model and sinus fits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "909c116f-0991-4099-9b8f-e2c353b57bb3",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C34",
+      "claim": "All three key features of the model (inhibition, feedback, and oscillations) are required to fit the empirical data on temporal speech illusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed for both outcome measures that the full model showed the best performance. Without the oscillation, the models could not even fit better than the mean of the model (R2 < 0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through ablation analysis removing each component and comparing model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "9294036c-06bc-4e47-8168-95ec40a66cf6",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C35",
+      "claim": "Mean word duration in the CGN corpus was 0.392 s with an average standard deviation of 0.094 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean word duration was 0.392 s, with an average standard deviation of 0.094 s (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the corpus analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "305b7944-0f23-4069-8d8c-24e1df75031a",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C36",
+      "claim": "The reported speech rates fall within the generally reported ranges for syllables (5.2 Hz) and words (3.7 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The reported rates fall within the generally reported ranges for syllables (5.2 Hz) and words (3.7 Hz; Ding et al., 2017; Pellegrino and Coup\u00e9, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the corpus analysis results to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "a1ff2e73-ad78-4ceb-b012-53df3b1e46f2",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C37",
+      "claim": "Adding an interaction term between word frequency and number of syllables did not significantly improve the regression model.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding an interaction term did not significantly improve the model (F (1,2843) = 1.320, p=0.251; Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through statistical testing of the regression model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "c3e6e48e-f9bf-4f90-b5de-37a61afd5283",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C38",
+      "claim": "There is a strong correlation between word length and mean word duration for number of characters (\u03c1 = 0.824, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Obviously, there is a strong correlation between word length and mean word duration (number of characters 0.824, p<0.001; number of syllables: \u03c1 = 0.808, p<0.001; for number of syllables already shown above; Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through correlation analysis of the corpus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "81998910-820c-4924-bb34-18939a8051d8",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C39",
+      "claim": "There is a strong correlation between word length and mean word duration for number of syllables (\u03c1 = 0.808, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Obviously, there is a strong correlation between word length and mean word duration (number of characters 0.824, p<0.001; number of syllables: \u03c1 = 0.808, p<0.001; for number of syllables already shown above; Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through correlation analysis of the corpus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "38d2696b-93f2-4841-93c7-40c380a10a1c",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C40",
+      "claim": "The correlation between word length and standard deviation of word duration is much lower than for mean duration (number of characters: \u03c1 = 0.269, p<0.001; number of syllables: \u03c1 = 0.292, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, this correlation is present, but much lower for the standard deviation of word duration (number of characters: \u03c1 = 0.269, p<0.001; number of syllables: \u03c1 = 0.292, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through correlation analysis of the corpus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "1a1b89f3-8782-42f8-ad27-15fed77bd440",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C41",
+      "claim": "The increase in character rate with word length was less strong (\u03c1 = 0.499, p<0.001) than for syllabic rate.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was less strong for the character rate (\u03c1 = 0.499, p<0.001; Figure 2D, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through correlation analysis of the corpus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "5d105f4e-03c3-42d2-9f47-b02db0dd3cbf",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C42",
+      "claim": "The syllabic/character rate depends on the number of characters/syllables within a word and is not an independent temporal unit.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the syllabic/character rate depends on the number of characters /syllables within a word and is not an independent temporal unit (Ghitza, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation analyses showing rate increases with word length.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "a3d7d058-fa73-4696-ae67-f9d429c53f10",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C43",
+      "claim": "Using the trained RNN model as a predictor was necessary; entering RNN predictions after the first training cycle did not result in a significant predictor.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it was necessary to use the trained RNN model as a predictor; entering the RNN predictions after the first training cycle (of a total of 100) did not results in a significant predictor (t(4837) = \u22121.191, p=0.234).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through regression analysis comparing trained vs. untrained RNN predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "59ff19d3-76da-429f-8ec7-f6b95cdbed16",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C44",
+      "claim": "Adding word frequency of the current word did not add significant information to the regression model.",
+      "claim_type": "EXPLICIT",
+      "source": "Also adding the predictor word frequency of the current word did not add significant information to the model (F(1, 4830) = 0.2048, p=0.651).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through statistical testing of the regression model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "5c6e4d33-39cb-4ccd-9773-0a3ae13526d2",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C45",
+      "claim": "RNN predictions have no effect on the duration of the word that has to be uttered.",
+      "claim_type": "EXPLICIT",
+      "source": "We also investigate whether RNN predictions have an influence on the duration of the word that has to be uttered. We found no effect on the duration (Supporting Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through regression analysis testing the effect of RNN predictions on word duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "02a1f0cb-7096-4c3d-9a49-c8b8265b33ab",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C46",
+      "claim": "When repeating the sentence isochrony analysis on the envelope, no significant effect was found.",
+      "claim_type": "EXPLICIT",
+      "source": "When we repeated the analysis on the envelope, we did not find a significant effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a null result from the analysis of prediction variance and envelope power.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "7ca4cd50-50c7-460a-ad0d-41f6cba60ca3",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C47",
+      "claim": "The CGN corpus consists of elaborated annotations of over 900 hr of spoken Dutch and Flemish words.",
+      "claim_type": "EXPLICIT",
+      "source": "This corpus consists of elaborated annotations of over 900 hr of spoken Dutch and Flemish words.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data source used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "2bff1e0d-5acf-4a92-85d7-3259ab821ede",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C48",
+      "claim": "The cleaned CGN dataset resulted in 574,726 annotated words with 3096 unique words.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 574,726 annotated words with 3096 unique words.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the processed corpus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "01a3dba8-6070-48a3-8a81-4a7166a72367",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C49",
+      "claim": "2,048 of the words were recognized in the Dutch Wordforms database in CELEX.",
+      "claim_type": "EXPLICIT",
+      "source": "Two thousand and forty-eight of the words were recognized in the Dutch Wordforms database in CELEX (Version 3.1) in order to extract the word frequency as well as the number of syllables per word (later needed to fit a regression model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "4b836653-c983-4c50-a1a1-b671ca5ae493",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C50",
+      "claim": "The final RNN model includes an LSTM with 300 units.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model we use here includes a LSTM with 300 units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the architecture of the RNN model used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "43f8e445-1b8f-4343-82a0-815488d25500",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C51",
+      "claim": "The RNN model consisted of an embedding layer, a recurrent layer with a tanh activation function, and a dense output layer with a softmax activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The model consisted of an embedding layer (pretrained; github.com/coosto/dutch-word-embeddings), a recurrent layer with a tanh activation function, and a dense output layer with a softmax activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the architecture of the RNN model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "83428da9-cf74-4424-ac19-337ab98e6475",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C52",
+      "claim": "Pseudo-rhythmicity is fully natural to the brain when speech timing depends on internal language models.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the phase of arrival depends on the internal model of the producer and the expected phase of arrival depends on the internal model of the receiver (Figure 1D). If this is true, pseudo-rhythmicity is fully natural to the brain, and it provides a means to use time or arrival phase as a content indicator.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical inference from the proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "d2cde6da-7469-48a7-87fb-19824ad28102",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C53",
+      "claim": "Current oscillatory models of speech parsing do not integrate the constraints flowing from an internal linguistic model into the temporal structure of the brain response.",
+      "claim_type": "EXPLICIT",
+      "source": "Current oscillatory models of speech parsing do not integrate the constraints flowing from an internal linguistic model into the temporal structure of the brain response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of existing models in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "450e7c0e-90c6-404d-a7df-0188603b0ef4",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C54",
+      "claim": "The primary auditory cortex is likely still mostly modulated by the acoustic pseudo-rhythmic input and only later brain areas follow more closely the constraints posed by the language model of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is likely that the primary auditory cortex is still mostly modulated by the acoustic pseudo-rhythmic input and only later brain areas follow more closely the constraints posed by the language model of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the neural implementation of the proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "5fd12919-44b1-4cf9-8213-91f7f0e871a2",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C55",
+      "claim": "Predictive mechanisms likely operate on syllabic levels as well as higher linguistic levels.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that predictive mechanisms also operate on these higher linguistic levels as well as on syllabic levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the generalizability of the proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "17bb7cd2-93e9-4401-bce7-6cae63e4e66b",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C56",
+      "claim": "Syllables are shortened when the following syllabic content is known versus producing syllables in isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known, for example, that syllables are shortened when the following syllabic content is known versus producing syllables in isolation (Pluymaekers et al., 2005a; Lehiste, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "87f75423-f228-4d55-88e3-bd39320b5ebe",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C57",
+      "claim": "Syllables part of more frequent words are generally shortened.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions also occur as syllables part of more frequent words are generally shortened (Pluymaekers et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "0a821065-d2be-4806-bfb9-f12cd6554569",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C58",
+      "claim": "When the internal model and the onset timings do not match, internal model phase and/or frequency shifts are still required.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the internal model and the onset timings do not match, the internal model phase and/or frequency shift are still required and need to be incorporated (see e.g. Rimmele et al., 2018; Poeppel and Assaneo, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the current model and suggestion for future work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "f7fa0e2e-a6b3-4472-b8bf-cf5b1a8df5b2",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C59",
+      "claim": "Phase resetting models typically deal with pseudo-rhythmicity by shifting the phase of ongoing oscillations in response to a word that is offset to the mean frequency of the input.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase resetting models typically deal with pseudo-rhythmicity by shifting the phase of ongoing oscillations in response to a word that is offset to the mean frequency of the input (Giraud and Poeppel, 2012; Doelling et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes alternative models in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "862c4b59-d212-4428-8818-d30dcdef2e12",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C60",
+      "claim": "Phase resetting models cannot explain how the brain uses what/when dependencies in the environment to infer the content of the word.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that this cannot explain how the brain uses what/when dependencies in the environment to infer the content of the word (e.g., later words are likely a less predictable word).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of alternative models based on theoretical reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "dfb30e80-53bb-434d-9620-c488344d2b8d",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C61",
+      "claim": "The best way forward is likely to extend coupling between brain oscillations and speech acoustics with the coupling of brain oscillations to brain activity patterns of internal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the best way forward is likely to extend coupling between brain oscillations and speech acoustics (Poeppel and Assaneo, 2020), with the coupling of brain oscillations to brain activity patterns of internal models (Cumin and Unsworth, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future theoretical development.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "cff1b99a-feb0-4ed9-b1b9-18c88717fa60",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C62",
+      "claim": "It is unlikely that the RNN captures the wide complexities of the language model in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unlikely that the RNN captures the wide complexities of the language model in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the RNN as a proxy for internal language models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "d0eee00c-656f-4399-9006-33ecd4edda06",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C63",
+      "claim": "Utilizing the RNN as a proxy for internal language model makes a tacit assumption that language is fundamentally statistical or associative in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing the RNN as a proxy for our internal language model makes a tacit assumption that language is fundamentally statistical or associative in nature, and does not posit the derivation or generation of knowledge of grammar from the input (Chater, 2001; McClelland and Elman, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical discussion of the assumptions underlying the modeling approach.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "662d8739-9a20-4c15-9da2-e65233608dea",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C64",
+      "claim": "A natural feature of the STiMCON model is that time can act as a cue for content implemented as a phase code.",
+      "claim_type": "EXPLICIT",
+      "source": "A natural feature of our model is that time can act as a cue for content implemented as a phase code (Lisman and Jensen, 2013; Jensen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the model demonstrated through simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "3bfc74f7-df93-42e8-83a4-1f28681f0a7a",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C65",
+      "claim": "The phase code in the STiMCON model unravels as an ordered list of predictability strength of the internal model.",
+      "claim_type": "EXPLICIT",
+      "source": "This code unravels as an ordered list of predictability strength of the internal model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the model demonstrated through simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "daca1cc9-b18d-4c6d-a12d-c6d2faa0ccd9",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C66",
+      "claim": "If speech nodes have a different base activity, ambiguous stimulus interpretation should depend on the time/phase of presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that if speech nodes have a different base activity, ambiguous stimulus interpretation should dependent on the time/phase of presentation (see Ten Oever and Sack, 2015; Ten Oever et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model that is supported by cited empirical work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "aa329c3a-98f5-48c1-890e-708d203ddfb0",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C67",
+      "claim": "When modifying the time of presentation with a neutral entrainer, no obvious phase effect was reported.",
+      "claim_type": "EXPLICIT",
+      "source": "For the speech rate effect, when modifying the time of presentation with a neutral entrainer (summed sinusoidals with random phase), no obvious phase effect was reported (Bosker and K\u00f6sem, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a null result from prior empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "64fa0bc1-6bd9-49c9-aea6-f5feceba8ff7",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C68",
+      "claim": "The temporal dynamics of speech signals needs to be integrated with the temporal dynamics of brain signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal dynamics of speech signals needs to be integrated with the temporal dynamics of brain signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the approach taken in the paper.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "7ed803ad-a27e-41b4-ad35-46c2727309b8",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C69",
+      "claim": "It is unnecessary and unlikely that the exact duration of speech matches with the exact duration of brain processes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unnecessary (and unlikely) that the exact duration of speech matches with the exact duration of brain processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement based on knowledge of temporal processing in the brain.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "25919495-0f08-4582-a138-d09555d63313",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C70",
+      "claim": "Temporal expansion or squeezing of stimulus inputs occur regularly in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal expansion or squeezing of stimulus inputs occur regularly in the brain (Eagleman et al., 2005; Pariyadath and Eagleman, 2007), and this temporal morphing also maps to duration (Eagleman, 2008; Terao et al., 2008; Ulrich et al., 2006) or order illusions (Vroomen and Keetels, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior empirical work on temporal perception.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "1f81b23e-baf6-4e20-912e-949519dd27fa",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C71",
+      "claim": "The STiMCON model predicts increased rhythmic responses for non-isochronous speech matching the internal model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts increased rhythmic responses for non-isochronous speech matching the internal model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model demonstrated through simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "df20f4f7-38c3-4cc9-afb9-3ba234a77d5a",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C72",
+      "claim": "The perceived rhythmicity of speech could be an illusion generated by a rhythmic brain signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The perceived rhythmicity of speech could therefore also be an illusion generated by a rhythmic brain signal somewhere in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the model results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "dfd6d33b-0d62-448c-9648-caabe51f327a",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C73",
+      "claim": "Speech is more isochronous during production of lists.",
+      "claim_type": "EXPLICIT",
+      "source": "Two examples are the production of lists (Jefferson, 1990) and infant-directed speech (Fernald, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "7fad35be-0f14-4c56-8333-79fe91b8e4c1",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C74",
+      "claim": "Speech is more isochronous during infant-directed speech.",
+      "claim_type": "EXPLICIT",
+      "source": "Two examples are the production of lists (Jefferson, 1990) and infant-directed speech (Fernald, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "a3ac2290-7ad0-49ff-9910-1a9bb21ab407",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C75",
+      "claim": "Speech is more isochronous during poems, during emotional conversation, and in noisy situations.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples in which speech is more isochronous is during poems, during emotional conversation (Hawkins, 2014), and in noisy situations (Bosker and Cooke, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "b6dbef06-19a2-4721-933e-61682924d1bb",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C76",
+      "claim": "A producer might proactively adapt its speech rhythm to the expectations of the internal model of the receiver to align better with the predictions from the receiver's model.",
+      "claim_type": "EXPLICIT",
+      "source": "The infant-directed speech also illustrates that a producer might proactively adapt its speech rhythm to the expectations of the internal model of the receiver to align better with the predictions from the receiver's model (Figure 9B; similar to when you are speaking to somebody that is just learning a new language).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation based on the theoretical framework and examples from infant-directed speech.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "1674e9ce-d2e4-4f18-97d7-df090442635e",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C77",
+      "claim": "When there is a flat constraint distribution over an utterance, the acoustics of speech should naturally be more isochronous.",
+      "claim_type": "EXPLICIT",
+      "source": "When there is a flat constraint distribution over an utterance (e.g., when probabilities are uniform over the utterance), the acoustics of speech should naturally be more isochronous (Figures 9A and 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the model supported by the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "a4bc834e-3df3-45a7-8135-8f671937df1d",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C78",
+      "claim": "If speech timing matches the internal language model, brain responses should be more isochronous even if the acoustics are not.",
+      "claim_type": "EXPLICIT",
+      "source": "If speech timing matches the internal language model, brain responses should be more isochronous even if the acoustics are not (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the model supported by the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "6ca5a284-627c-4156-b9c3-c05dcabb5a75",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C79",
+      "claim": "The more similar the internal language models of two speakers, the more effective they are in 'entraining' each other's brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The more similar the internal language models of two speakers, the more effective they are in 'entraining' each other's brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical framework.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "6493d05f-3a96-47ff-9e1a-bbb0c9f622cd",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C80",
+      "claim": "If speakers suspect their listener to have a flatter constraint distribution than themselves, they adjust to the distribution by speaking more isochronous.",
+      "claim_type": "EXPLICIT",
+      "source": "If speakers suspect their listener to have a flatter constraint distribution than themselves (e.g., the environment is noisy, or the speakers are in a second language context), they adjust to the distribution by speaking more isochronous (Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the theoretical framework.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "05ffa850-78ee-4950-9854-b5960b95de35",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C81",
+      "claim": "One adjusts the weight of the constraint distribution to a hierarchical level when needed, such as adjusting to the rhythm of primary auditory cortex instead of higher order language models when there is noise.",
+      "claim_type": "EXPLICIT",
+      "source": "One adjusts the weight of the constraint distribution to a hierarchical level when needed. For example, when there is noise, participants adjust to the rhythm of primary auditory cortex instead of higher order language models. As a consequence, they speak more isochronous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how the proposed mechanism might operate in different contexts.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "1bcf3ae6-8c1d-49e7-bccd-ae20473ebedb",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C82",
+      "claim": "Pseudo-rhythmicity in speech is in part a consequence of top-down predictions flowing from an internal model of language.",
+      "claim_type": "EXPLICIT",
+      "source": "We argued that pseudo-rhythmicity in speech is in part a consequence of top-down predictions flowing from an internal model of language.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the paper supported by corpus analysis and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "6f06a139-2b7c-4d6f-9378-16568831d085",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C83",
+      "claim": "Pseudo-rhythmicity is created by a speaker and expected by a receiver if they have overlapping internal language models.",
+      "claim_type": "EXPLICIT",
+      "source": "This pseudo-rhythmicity is created by a speaker and expected by a receiver if they have overlapping internal language models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical framework and modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "0456dbe0-85b5-41d3-b464-6cf04b39a628",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C84",
+      "claim": "Oscillatory tracking of pseudo-rhythmic speech does not need to be hampered by the pseudo-rhythmicity, but can use temporal variations as a cue to extract content information.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillatory tracking of this signal does not need to be hampered by the pseudo-rhythmicity, but can use temporal variations as a cue to extract content information since the phase of activation parametrically relates to the likelihood of an input relative to the internal model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "b358e1a8-0ec1-411b-acd5-fa884ed56e1d",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "claim_id": "C85",
+      "claim": "Brain responses can be more isochronous to pseudo-rhythmic compared to isochronous speech if they follow the temporal delays imposed by the internal model.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain responses can even be more isochronous to pseudo-rhythmic compared to isochronous speech if they follow the temporal delays imposed by the internal model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Word frequency and number of syllables significantly influence word duration in natural speech. Analysis of the CGN corpus shows that both word frequency (coefficient = \u22120.022, t(2843) = \u221213.94, p<0.001) and number of syllables (coefficient = 0.1008, t(2843) = 75.47, p<0.001) significantly predict word duration, with low-frequency words lasting up to three times longer than high-frequency words even within mono-syllabic words.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 and C35-C41 provide converging evidence from regression analysis and descriptive statistics on the CGN corpus. The statistical tests are appropriate (ordinary least squares regression with adequate sample size), effect sizes are substantial, and the results are internally consistent across multiple measures (word frequency, syllables, characters). The lack of significant interaction term (C37) is appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "ce0ecf17-b568-4f17-819f-8973ebf9c2bb",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Syllabic rate varies between 3-8 Hz and increases with the number of syllables within a word (\u03c1 = 0.676, p<0.001), demonstrating that syllabic/character rate is not an independent temporal unit but depends on word length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 and C42 are supported by correlation analysis of corpus data with appropriate statistical tests. The finding that syllabic rate increases with word length is well-documented with strong correlation coefficients and is consistent with prior literature (C15 cites Ding et al., 2017; Pellegrino and Coup\u00e9, 2011). The inference in C42 about syllabic rate not being independent is logically derived from the correlation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "e4f8962c-7499-45b3-9568-3fd55f06122d",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RNN predictions of word predictability significantly predict word-to-word onset differences (t(4837) = \u22127.163, p<0.001), capturing more variance than bigram models. Words are systematically lengthened when the next word is not strongly predicted by the internal model, though RNN predictions do not affect the duration of the current word being uttered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 and C43-C45 are supported by regression analysis with appropriate controls (bigram, word frequency, syllable rate, mean duration). The requirement for a trained RNN (C43) validates that the effect is not spurious. The null results (C44-C45) are appropriately reported. However, the R\u00b2 of the full model is not reported, making it difficult to assess overall model fit. The negative coefficient for RNN prediction is consistent with the hypothesis that predictable words arrive earlier.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "4ec5a14b-9032-4bfa-b8a6-571d2c73b01c",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "There is a weak but significant negative correlation (r = \u22120.062, p<0.001) between variance of RNN predictions within a sentence and theta power, suggesting that sentences with more variable predictions are less isochronous. This effect was not found when analyzing the envelope.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C20-C21 report a statistically significant but very weak correlation (r = \u22120.062), which explains less than 0.4% of variance. While the p-value is significant, the effect size is minimal and may not be practically meaningful. The null result for envelope analysis (C46) raises questions about the specificity of the effect. The analysis method (FFT on word onset timecourse) is reasonable but the weak effect size limits confidence in the interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "02574757-e7e2-47df-ad0f-46feb45f73a8",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The STiMCON model demonstrates that activation timing depends on feedback level and that oscillations provide temporal filtering, reducing input timing variation by a ratio of approximately 1:6.9 (130 ms input variation results in only 19 ms variation in activation timing).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by model simulations with clear quantitative results. The temporal filtering property is a natural consequence of the oscillatory dynamics and is demonstrated through systematic parameter variation. The 1:6.9 ratio is explicitly calculated from simulation data (Figure 5C). However, the model parameters (oscillation amplitude, feedback strength, inhibition) are not fully justified from neurophysiological constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "626ab9f7-c366-4994-b361-b59a05fe7877",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Model simulations show that when predictability alternates between low and high, 4 Hz power is strongest when the predictable stimulus is shifted to an earlier time point, demonstrating that interaction with the internal model can create isochronous structure in the brain even when stimulus input is non-isochronous.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are supported by FFT analysis of model outputs (Figure 6) showing differential responses to matched vs. mismatched pseudo-rhythmic input. The finding that brain responses can be more rhythmic to pseudo-rhythmic input matching predictions is a key theoretical prediction. However, the model uses simplified assumptions (fixed oscillator, simplified language model) that limit generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "f79b9d32-bc3d-4c2b-9b8f-7995c193acfc",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "STiMCON's expected word-to-word onset differences can be fitted to CGN corpus data with R\u00b2 modulated by oscillation amplitude and phase offset. The optimal transformation automatically converts a highly skewed RNN prediction distribution to a more normal distribution of relative time shifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by regression analysis fitting model predictions to corpus data (Figure 7). The finding of optimal phase alignment (around \u22120.25\u03c0 offset) is consistent with oscillatory tracking theories. The transformation of skewed to normal distribution is an interesting emergent property. However, the absolute R\u00b2 values are not clearly reported, and the model only operates at the word level, not accounting for syllabic or phrasal predictions as acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "207c1c0c-8276-4584-8dd0-2c295fab889d",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "STiMCON can explain temporal speech illusions from Ten Oever and Sack (2015) with 43% explained variance for first node activation and 83% for average activity analysis, outperforming fixed-frequency sinus fits. All three model components (oscillations, feedback, inhibition) are required for optimal fit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by systematic grid search fitting and ablation analysis. The model achieves reasonable fits to empirical data (43% and 83% R\u00b2) and outperforms simpler alternatives based on AIC. The ablation analysis (C34) demonstrates that all three components are necessary. However, the grid search approach involves multiple free parameters (proportion, feedback onset, decay, temporal offset) which could lead to overfitting. The comparison to rectified sinus fit (C33) is appropriate but the rectification procedure may disadvantage the sinus model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "f75768a2-a0c6-48f7-b6f3-03fa939f0941",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study used the CGN corpus (over 900 hr of Dutch/Flemish speech) resulting in 574,726 annotated words with 3096 unique words, and trained an RNN with LSTM (300 units) including embedding, recurrent, and dense layers to model internal language predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 describe the data sources and model architecture. These are straightforward methodological descriptions that are internally consistent. The corpus size is substantial, and the RNN architecture is standard. However, the cleaning procedure (removing words not in word2vec, requiring frequency \u226510) may introduce selection bias toward more common words.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "e6f69567-d288-4364-a0f1-0cc98c2eef49",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose and demonstrate that oscillations can track pseudo-rhythmic speech when speech timing depends on content-based predictions from internal language models. A computational model (STiMCON) including oscillations, feedback, and inhibition successfully tracks pseudo-rhythmic speech, generates temporal phase codes, is optimally sensitive to natural speech dynamics, and explains temporal speech illusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 represent the main thesis and findings of the paper. These are supported by converging evidence from corpus analysis (C4), computational modeling (C5), phase code demonstrations (C6), optimal parameter fitting (C7), and behavioral data fitting (C8). The integration of linguistic predictions with oscillatory dynamics is novel and well-demonstrated. However, the model makes simplifying assumptions (fixed oscillator, word-level only, simplified language model) that limit its completeness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "17b5e074-8c2c-46eb-afb7-ff809339558d",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss theoretical implications and limitations: pseudo-rhythmicity is natural when speech timing depends on internal models; current oscillatory models don't integrate linguistic constraints; the model likely applies hierarchically; the RNN is an imperfect proxy for brain language models; and future work should integrate oscillation-acoustic coupling with oscillation-internal model coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C63 represent theoretical discussion, limitations, and future directions. These are appropriately speculative (C54, C55, C58, C61, C62) and acknowledge model limitations (C53, C58, C62, C63). The critique of alternative models (C59-C60) is reasonable but somewhat speculative. The discussion appropriately contextualizes the work within existing literature and identifies clear limitations and future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "372db2d1-9a99-4097-85c9-7b71a53153f7",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The STiMCON model naturally implements temporal phase codes where time acts as a content cue, with phase codes reflecting ordered predictability strength. The model predicts phase-dependent interpretation of ambiguous stimuli, consistent with some empirical findings but not others.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 describe emergent properties of the model supported by simulations and consistent with cited empirical work. The phase code is a natural consequence of differential feedback and oscillatory dynamics. However, C67 notes null results in the literature that are inconsistent with the model's predictions, which appropriately acknowledges limitations. The phase code mechanism is theoretically interesting but requires further empirical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "81cc8321-ccff-411b-a9fe-8bbce9470dad",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors argue that temporal dynamics of speech and brain signals must be integrated, though exact durations need not match. The model predicts increased rhythmic responses for non-isochronous speech matching internal models, and perceived speech rhythmicity could be a brain-generated illusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 present theoretical arguments supported by model predictions (C71) and citations to temporal perception literature (C70). The argument that exact timing need not match (C69) is reasonable given known temporal distortions in perception. The speculation about rhythmicity as illusion (C72) is appropriately tentative and follows logically from the model results. These claims are more speculative but well-grounded in the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "c83df491-36d5-49d7-bf83-5f084783693a",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model generates predictions about when speech should be more isochronous (lists, infant-directed speech, poems, emotional conversation, noisy situations) based on weak vs. strong internal models. Producers may adapt speech rhythm to match receiver expectations, and speakers adjust to different hierarchical levels when needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 cite empirical examples of more isochronous speech, while C76-C81 present predictions from the theoretical framework. The predictions are logically derived from the model and consistent with cited examples. However, these are largely post-hoc explanations (C73-C75) and untested predictions (C76-C81) that require empirical validation. The predictions are testable and specific, which is a strength.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "25f65c8d-098e-4365-a20c-59c1c6db29b4",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors conclude that pseudo-rhythmicity in speech is partly a consequence of top-down predictions from internal language models, created by speakers and expected by receivers with overlapping models. Oscillatory tracking can use temporal variations as content cues, and brain responses can be more isochronous to pseudo-rhythmic than isochronous speech when following internal model delays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 represent the main conclusions, supported by corpus analysis (C82), modeling results (C83-C85), and the integration of empirical and computational findings. The conclusions are appropriately qualified ('in part' in C82) and follow logically from the presented evidence. However, the conclusions are based on a simplified model and limited empirical validation, so generalizability remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    },
+    {
+      "id": "5ea7464e-c073-4e36-9ef3-797437fffd35",
+      "content_id": "99d510a7-cee9-4674-a9cb-69d713f0df6d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work establishes that temporal relationships between speech units allow online tracking to optimize processing, with neural oscillations as a putative tracking mechanism. However, the range of onset time differences in speech appears more variable than fixed oscillations can account for.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 summarize established knowledge from prior literature with appropriate citations. These claims accurately represent the state of the field and identify the key problem the paper addresses. The citations are appropriate and the characterization of the literature appears accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:28:25.935898Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3153dde1-8ec5-46b0-8f00-8f0267741e16",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "f604cfd9-9695-46e9-acc0-3eb22e0c027b",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "9ca6eec1-eced-44f0-8dda-d85ee14396d7",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "9294036c-06bc-4e47-8168-95ec40a66cf6",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "305b7944-0f23-4069-8d8c-24e1df75031a",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "a1ff2e73-ad78-4ceb-b012-53df3b1e46f2",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "c3e6e48e-f9bf-4f90-b5de-37a61afd5283",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "81998910-820c-4924-bb34-18939a8051d8",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "38d2696b-93f2-4841-93c7-40c380a10a1c",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "1a1b89f3-8782-42f8-ad27-15fed77bd440",
+      "result_id": "95feaa0c-53cb-4ac6-a6fa-58a932004e37"
+    },
+    {
+      "claim_id": "dda13859-e2fa-4f13-a96d-9eb0fed95cc1",
+      "result_id": "ce0ecf17-b568-4f17-819f-8973ebf9c2bb"
+    },
+    {
+      "claim_id": "47800d58-58b3-49bd-b2ba-c5c71e34008e",
+      "result_id": "ce0ecf17-b568-4f17-819f-8973ebf9c2bb"
+    },
+    {
+      "claim_id": "5d105f4e-03c3-42d2-9f47-b02db0dd3cbf",
+      "result_id": "ce0ecf17-b568-4f17-819f-8973ebf9c2bb"
+    },
+    {
+      "claim_id": "e384e846-c234-4d87-9b64-6eaf523c56ff",
+      "result_id": "e4f8962c-7499-45b3-9568-3fd55f06122d"
+    },
+    {
+      "claim_id": "39af35a0-90ce-4010-becc-fb27c3ce10ec",
+      "result_id": "e4f8962c-7499-45b3-9568-3fd55f06122d"
+    },
+    {
+      "claim_id": "1f072ce6-1f3e-4f6b-a4ec-c1aec2899388",
+      "result_id": "e4f8962c-7499-45b3-9568-3fd55f06122d"
+    },
+    {
+      "claim_id": "a3d7d058-fa73-4696-ae67-f9d429c53f10",
+      "result_id": "e4f8962c-7499-45b3-9568-3fd55f06122d"
+    },
+    {
+      "claim_id": "59ff19d3-76da-429f-8ec7-f6b95cdbed16",
+      "result_id": "e4f8962c-7499-45b3-9568-3fd55f06122d"
+    },
+    {
+      "claim_id": "5c6e4d33-39cb-4ccd-9773-0a3ae13526d2",
+      "result_id": "e4f8962c-7499-45b3-9568-3fd55f06122d"
+    },
+    {
+      "claim_id": "502321e5-d560-4cbb-b96a-f84a8a76e9b3",
+      "result_id": "4ec5a14b-9032-4bfa-b8a6-571d2c73b01c"
+    },
+    {
+      "claim_id": "d2e4da6b-eb68-4803-8b07-14a31083ef34",
+      "result_id": "4ec5a14b-9032-4bfa-b8a6-571d2c73b01c"
+    },
+    {
+      "claim_id": "02a1f0cb-7096-4c3d-9a49-c8b8265b33ab",
+      "result_id": "4ec5a14b-9032-4bfa-b8a6-571d2c73b01c"
+    },
+    {
+      "claim_id": "32629394-a008-40db-b480-069c7a9b2c29",
+      "result_id": "02574757-e7e2-47df-ad0f-46feb45f73a8"
+    },
+    {
+      "claim_id": "dc6665d1-13bb-4ab7-9ec5-5a2bfa6a6b89",
+      "result_id": "02574757-e7e2-47df-ad0f-46feb45f73a8"
+    },
+    {
+      "claim_id": "87ac8a64-616a-421b-95ca-85a349a8a139",
+      "result_id": "02574757-e7e2-47df-ad0f-46feb45f73a8"
+    },
+    {
+      "claim_id": "b4bc9239-ad22-4a5e-bbd6-bd0e71436789",
+      "result_id": "626ab9f7-c366-4994-b361-b59a05fe7877"
+    },
+    {
+      "claim_id": "bf33a785-49a1-4f0b-a7f0-b5515af9f4f1",
+      "result_id": "626ab9f7-c366-4994-b361-b59a05fe7877"
+    },
+    {
+      "claim_id": "371c098f-6157-4646-9b05-e35368c1c925",
+      "result_id": "626ab9f7-c366-4994-b361-b59a05fe7877"
+    },
+    {
+      "claim_id": "f4f797af-8959-42ba-9591-506351583143",
+      "result_id": "f79b9d32-bc3d-4c2b-9b8f-7995c193acfc"
+    },
+    {
+      "claim_id": "504a79fd-1e3d-4344-b6e8-da13901feed4",
+      "result_id": "f79b9d32-bc3d-4c2b-9b8f-7995c193acfc"
+    },
+    {
+      "claim_id": "abf5b45d-6d7b-494b-9a3a-1b7c669a5c2c",
+      "result_id": "207c1c0c-8276-4584-8dd0-2c295fab889d"
+    },
+    {
+      "claim_id": "4323299b-f50e-4951-a403-54c1937e5b1d",
+      "result_id": "207c1c0c-8276-4584-8dd0-2c295fab889d"
+    },
+    {
+      "claim_id": "27213d28-ca3a-4181-9cd1-8fb98c82afb8",
+      "result_id": "207c1c0c-8276-4584-8dd0-2c295fab889d"
+    },
+    {
+      "claim_id": "bea3cf48-542e-4f96-8bce-29ac373d78d2",
+      "result_id": "207c1c0c-8276-4584-8dd0-2c295fab889d"
+    },
+    {
+      "claim_id": "909c116f-0991-4099-9b8f-e2c353b57bb3",
+      "result_id": "207c1c0c-8276-4584-8dd0-2c295fab889d"
+    },
+    {
+      "claim_id": "7ca4cd50-50c7-460a-ad0d-41f6cba60ca3",
+      "result_id": "f75768a2-a0c6-48f7-b6f3-03fa939f0941"
+    },
+    {
+      "claim_id": "2bff1e0d-5acf-4a92-85d7-3259ab821ede",
+      "result_id": "f75768a2-a0c6-48f7-b6f3-03fa939f0941"
+    },
+    {
+      "claim_id": "01a3dba8-6070-48a3-8a81-4a7166a72367",
+      "result_id": "f75768a2-a0c6-48f7-b6f3-03fa939f0941"
+    },
+    {
+      "claim_id": "4b836653-c983-4c50-a1a1-b671ca5ae493",
+      "result_id": "f75768a2-a0c6-48f7-b6f3-03fa939f0941"
+    },
+    {
+      "claim_id": "43f8e445-1b8f-4343-82a0-815488d25500",
+      "result_id": "f75768a2-a0c6-48f7-b6f3-03fa939f0941"
+    },
+    {
+      "claim_id": "bb8ee3a2-7c84-4e05-a708-ecc45948f1eb",
+      "result_id": "e6f69567-d288-4364-a0f1-0cc98c2eef49"
+    },
+    {
+      "claim_id": "1f8fb297-045e-4aaa-b68b-7069100a8fe8",
+      "result_id": "e6f69567-d288-4364-a0f1-0cc98c2eef49"
+    },
+    {
+      "claim_id": "6e757d06-8cd5-48bb-a5e5-cccaadaf1496",
+      "result_id": "e6f69567-d288-4364-a0f1-0cc98c2eef49"
+    },
+    {
+      "claim_id": "09428522-805d-4716-b894-0a74c87d8103",
+      "result_id": "e6f69567-d288-4364-a0f1-0cc98c2eef49"
+    },
+    {
+      "claim_id": "24a263a7-8add-4ea9-88ca-26e49a946f20",
+      "result_id": "e6f69567-d288-4364-a0f1-0cc98c2eef49"
+    },
+    {
+      "claim_id": "226afb48-c1f3-4bf3-a9f3-8bbadd4a32cb",
+      "result_id": "e6f69567-d288-4364-a0f1-0cc98c2eef49"
+    },
+    {
+      "claim_id": "847b53cf-00fb-4af3-9e33-839ebc1ab407",
+      "result_id": "e6f69567-d288-4364-a0f1-0cc98c2eef49"
+    },
+    {
+      "claim_id": "3278df61-deac-4017-9670-ef978992b0b9",
+      "result_id": "e6f69567-d288-4364-a0f1-0cc98c2eef49"
+    },
+    {
+      "claim_id": "83428da9-cf74-4424-ac19-337ab98e6475",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "d2cde6da-7469-48a7-87fb-19824ad28102",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "450e7c0e-90c6-404d-a7df-0188603b0ef4",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "5fd12919-44b1-4cf9-8213-91f7f0e871a2",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "17bb7cd2-93e9-4401-bce7-6cae63e4e66b",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "87f75423-f228-4d55-88e3-bd39320b5ebe",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "0a821065-d2be-4806-bfb9-f12cd6554569",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "f7fa0e2e-a6b3-4472-b8bf-cf5b1a8df5b2",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "862c4b59-d212-4428-8818-d30dcdef2e12",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "dfb30e80-53bb-434d-9620-c488344d2b8d",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "cff1b99a-feb0-4ed9-b1b9-18c88717fa60",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "d0eee00c-656f-4399-9006-33ecd4edda06",
+      "result_id": "17b5e074-8c2c-46eb-afb7-ff809339558d"
+    },
+    {
+      "claim_id": "662d8739-9a20-4c15-9da2-e65233608dea",
+      "result_id": "372db2d1-9a99-4097-85c9-7b71a53153f7"
+    },
+    {
+      "claim_id": "3bfc74f7-df93-42e8-83a4-1f28681f0a7a",
+      "result_id": "372db2d1-9a99-4097-85c9-7b71a53153f7"
+    },
+    {
+      "claim_id": "daca1cc9-b18d-4c6d-a12d-c6d2faa0ccd9",
+      "result_id": "372db2d1-9a99-4097-85c9-7b71a53153f7"
+    },
+    {
+      "claim_id": "aa329c3a-98f5-48c1-890e-708d203ddfb0",
+      "result_id": "372db2d1-9a99-4097-85c9-7b71a53153f7"
+    },
+    {
+      "claim_id": "64fa0bc1-6bd9-49c9-aea6-f5feceba8ff7",
+      "result_id": "81cc8321-ccff-411b-a9fe-8bbce9470dad"
+    },
+    {
+      "claim_id": "7ed803ad-a27e-41b4-ad35-46c2727309b8",
+      "result_id": "81cc8321-ccff-411b-a9fe-8bbce9470dad"
+    },
+    {
+      "claim_id": "25919495-0f08-4582-a138-d09555d63313",
+      "result_id": "81cc8321-ccff-411b-a9fe-8bbce9470dad"
+    },
+    {
+      "claim_id": "1f81b23e-baf6-4e20-912e-949519dd27fa",
+      "result_id": "81cc8321-ccff-411b-a9fe-8bbce9470dad"
+    },
+    {
+      "claim_id": "df20f4f7-38c3-4cc9-afb9-3ba234a77d5a",
+      "result_id": "81cc8321-ccff-411b-a9fe-8bbce9470dad"
+    },
+    {
+      "claim_id": "dfd6d33b-0d62-448c-9648-caabe51f327a",
+      "result_id": "c83df491-36d5-49d7-bf83-5f084783693a"
+    },
+    {
+      "claim_id": "7fad35be-0f14-4c56-8333-79fe91b8e4c1",
+      "result_id": "c83df491-36d5-49d7-bf83-5f084783693a"
+    },
+    {
+      "claim_id": "a3ac2290-7ad0-49ff-9910-1a9bb21ab407",
+      "result_id": "c83df491-36d5-49d7-bf83-5f084783693a"
+    },
+    {
+      "claim_id": "b6dbef06-19a2-4721-933e-61682924d1bb",
+      "result_id": "c83df491-36d5-49d7-bf83-5f084783693a"
+    },
+    {
+      "claim_id": "1674e9ce-d2e4-4f18-97d7-df090442635e",
+      "result_id": "c83df491-36d5-49d7-bf83-5f084783693a"
+    },
+    {
+      "claim_id": "a4bc834e-3df3-45a7-8135-8f671937df1d",
+      "result_id": "c83df491-36d5-49d7-bf83-5f084783693a"
+    },
+    {
+      "claim_id": "6ca5a284-627c-4156-b9c3-c05dcabb5a75",
+      "result_id": "c83df491-36d5-49d7-bf83-5f084783693a"
+    },
+    {
+      "claim_id": "6493d05f-3a96-47ff-9e1a-bbb0c9f622cd",
+      "result_id": "c83df491-36d5-49d7-bf83-5f084783693a"
+    },
+    {
+      "claim_id": "05ffa850-78ee-4950-9854-b5960b95de35",
+      "result_id": "c83df491-36d5-49d7-bf83-5f084783693a"
+    },
+    {
+      "claim_id": "1bcf3ae6-8c1d-49e7-bccd-ae20473ebedb",
+      "result_id": "25f65c8d-098e-4365-a20c-59c1c6db29b4"
+    },
+    {
+      "claim_id": "6f06a139-2b7c-4d6f-9378-16568831d085",
+      "result_id": "25f65c8d-098e-4365-a20c-59c1c6db29b4"
+    },
+    {
+      "claim_id": "0456dbe0-85b5-41d3-b464-6cf04b39a628",
+      "result_id": "25f65c8d-098e-4365-a20c-59c1c6db29b4"
+    },
+    {
+      "claim_id": "b358e1a8-0ec1-411b-acd5-fa884ed56e1d",
+      "result_id": "25f65c8d-098e-4365-a20c-59c1c6db29b4"
+    },
+    {
+      "claim_id": "e847900d-9ccc-45af-ade0-f56c414195ae",
+      "result_id": "5ea7464e-c073-4e36-9ef3-797437fffd35"
+    },
+    {
+      "claim_id": "0b3b8068-7da3-4d52-8506-30247c24306d",
+      "result_id": "5ea7464e-c073-4e36-9ef3-797437fffd35"
+    },
+    {
+      "claim_id": "96b93282-7a11-441a-b6a7-98e909b873b6",
+      "result_id": "5ea7464e-c073-4e36-9ef3-797437fffd35"
+    }
+  ],
+  "comparisons": []
+}

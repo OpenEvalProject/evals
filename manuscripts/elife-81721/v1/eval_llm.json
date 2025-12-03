@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C105",
+      "C106"
+    ],
+    "result": "LAMP1- and RAB7-tagged organelles move significantly faster than NPY-tagged organelles in both anterograde and retrograde directions in vivo. Quantitative measurements show LAMP1 at 2.37 \u00b5m/s (anterograde) and 1.48 \u00b5m/s (retrograde) versus NPY at 1.51 \u00b5m/s and 1.11 \u00b5m/s, respectively. RAB7 shows similar speeds to LAMP1 (2.34 \u00b5m/s anterograde, 1.37 \u00b5m/s retrograde).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C52-C55, C65-C68, C105-C106 provide consistent quantitative measurements from dual-color two-photon imaging experiments (Figures 2C, 4C, 8) with statistical significance testing (Kolmogorov-Smirnov test, p<0.001). The data are internally consistent across multiple experimental replicates and clearly demonstrate differential transport speeds between organelle types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C56",
+      "C57",
+      "C69",
+      "C107"
+    ],
+    "result": "NPY-tagged organelles show more selective anterograde transport (61% anterograde) compared to LAMP1 (54%) and RAB7 (approximately equal bidirectional transport). This indicates distinct directional preferences among different organelle classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C56-C57, C69, C107 are supported by relative flux measurements shown in Figures 2D and 4D. The quantitative data clearly demonstrate directional bias differences between NPY-tagged DCVs and endo-lysosomal markers, with consistent measurements across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C108"
+    ],
+    "result": "NPY-tagged organelles (DCVs) slow down and pause at synapses, with this effect being specific to retrograde transport. Quantitative analysis shows 50% more pauses than predicted by chance within 0.5 \u00b5m of synapses, and significantly slower speeds in synaptic regions (radius 0.5 and 1.5 \u00b5m) for retrograde but not anterograde transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C75-C80, C108 are supported by co-localization experiments with Synapsin-mScarlet (Figure 5) and statistical analysis using linear mixed effect models (p<0.05). The directional specificity (retrograde only) is clearly demonstrated in Figures 5G-H. The synapse identification method using Synapsin is well-validated (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C91",
+      "C92",
+      "C93",
+      "C109"
+    ],
+    "result": "NPY-tagged organelle transport speed shows a complex relationship with spontaneous calcium activity in vivo, with significantly lower speed during rest when including a 30-second window after activity (p<0.05). This represents a delayed effect rather than immediate arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C91-C93, C109 are supported by axoGCaMP calcium imaging experiments (Figure 6F) with statistical testing using linear mixed effect models. However, the complexity of the relationship is acknowledged (C86-C90 show no immediate effect), and the interpretation requires careful windowing of activity periods. The result contrasts with prior in vitro findings (C13, C81) but is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C110"
+    ],
+    "result": "Electrical stimulation in acute brain slices increases NPY-tagged organelle transport speed during stimulation (1.02 \u00b5m/s) compared to after (0.90 \u00b5m/s, p=0.0002), with the effect being significant for anterograde transport. This confirms activity-dependent modulation of DCV transport ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C96-C100, C102-C103, C110 are supported by slice stimulation experiments (Figure 7D) with clear statistical significance. The lack of significance between before and during (C100) is explained by higher intrinsic activity variation (C95, C101), which is a reasonable interpretation. The directional specificity (C102) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The faster average direction of LAMP1-tagged organelle transport consistently corresponds to the microtubule plus-end direction (anterograde), as verified by co-expression with MacF18-GFP. This validates the directional assignment used throughout the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C61-C63 are supported by MacF18 co-expression experiments (Figure 3B-D) showing consistent directional correspondence in every axon examined. This provides critical validation for the directional assignments used in all other experiments and addresses a key methodological concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C64",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Moving NPY-tagged organelles show virtually no overlap with LAMP1- or RAB7-tagged organelles in dual-color imaging, indicating these markers label distinct organelle classes (DCVs versus endo-lysosomal organelles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C64, C125-C127 are supported by direct observation in dual-color imaging experiments (Figures 2, 4). The lack of co-localization is clearly stated and provides important evidence for organelle identity. However, the analysis is qualitative ('virtually no overlap', 'barely any overlay') rather than quantitative, which is a minor limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C70",
+      "C71"
+    ],
+    "result": "Absolute flux measurements show 0.052 NPY-tagged and 0.035 LAMP1-tagged organelles per \u00b5m axon per minute in one experiment, and 0.025 NPY and 0.017 RAB7 organelles per \u00b5m per minute in another experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C70-C71 provide quantitative flux measurements from Figures 2E and 4E. However, the substantial difference in NPY flux between experiments (0.052 vs 0.025) raises questions about experimental variability or biological variation that are not addressed. The measurements are presented without error bars or statistical comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C72"
+    ],
+    "result": "Pausing behavior differs between experiments: NPY and LAMP1 show similar pausing (0.127 vs 0.13) in one experiment, while NPY pauses more than RAB7 (0.22 vs 0.085) in another experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60 and C72 present contradictory patterns of pausing behavior for NPY between experiments. C60 shows NPY pausing similarly to LAMP1, while C72 shows NPY pausing much more than RAB7. This inconsistency is not explained and may reflect experimental variability, different analysis methods, or biological variation. Statistical significance is only reported for C72 (Figure 4F).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "NPYsd (signaling-dead variant) co-localizes with endogenous DCV markers chromogranin A and B to the same degree as wildtype NPY in cultured hippocampal neurons, indicating the mutations do not affect packaging or localization to DCVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by co-localization analysis in Figure 6\u2014figure supplement 1B-D showing no significant difference in Pearson's or Manders' correlation coefficients between NPY and NPYsd. This validates the use of NPYsd in activity experiments (C82) to avoid confounding effects of released NPY.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C133",
+      "C135",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Comparison with literature shows that in vivo velocities for NPY-tagged DCVs are slightly faster than in vitro studies in anterograde direction, LAMP1 velocities are similar to the highest in vitro values, while RAB7 velocities are considerably higher in vivo than reported in vitro. Trafficking speeds for DCVs and LAMP1 are consistent across model systems, but substantial differences exist for RAB7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130, C133, C135, C138-C140 are supported by systematic comparison with literature values compiled in Table 1 (C128-C129, C131-C132, C134, C137). The comparison is thorough and identifies important differences between in vivo and in vitro systems, particularly for RAB7. However, the interpretation relies on literature accuracy and comparability across different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Spontaneous axonal calcium activity occurs in bouts (10% of time active), and immediate comparison of speeds during versus rest shows no significant overall difference, though opposing trends exist for anterograde (faster during activity) versus retrograde (slower during activity) transport. Adding 5 seconds after activity shows similar non-significant patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 accurately describe the complex temporal patterns observed in Figure 6C-E. The lack of immediate significant effects (C86-C87, C90) is clearly stated and contrasts with the delayed effect seen with 30-second windows (C91-C92). The opposing directional trends (C88-C89) are important observations even without statistical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C41",
+      "C104"
+    ],
+    "result": "Prior to this study, organelle trafficking properties had not been systematically investigated in the intact mammalian brain, though different organelles exhibit distinct properties in vitro. Detailed motility data for axonal organelles other than mitochondria in adult functional circuits were largely missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C41, C104 accurately describe the knowledge gap that motivates the study. These are background claims supported by the literature context (C37-C40 show recent mitochondria studies in vivo). The claims establish the novelty and importance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors acknowledge that overexpression of organelle markers might influence organelle identity, abundance, and localization, but argue their in vivo approach promotes selective analysis of organelles traveling into distal axons. They note that only some LAMP1-tagged organelles may be degradative lysosomes, and that RAB7 and LAMP1 might partially overlap but likely label at least partially different subpopulations based on trafficking differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113, C122-C124 represent appropriate acknowledgment of methodological limitations and careful interpretation of marker specificity. These are reasonable caveats supported by literature discussion (C117-C121) and observed trafficking differences (C124). The interpretation is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C148",
+      "C149",
+      "C150",
+      "C153",
+      "C154"
+    ],
+    "result": "The authors propose that observed speed differences could be explained by modulation of microtubule-based transport at multiple levels (motor activation, adapter protein interactions), and that multiple mechanisms could operate in parallel on different DCV subpopulations, potentially obscuring more direct effects of activity. Differences from in vitro studies could reflect model system differences and integration of multiple mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C145, C148-C150, C153-C154 are speculative explanations (all marked as SPECULATION in evidence_type) for observed phenomena. While these are reasonable hypotheses based on known biology (C141-C142, C146-C147, C151-C152), they lack direct experimental support in this study. These represent discussion points rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

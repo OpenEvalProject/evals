@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors developed a class of neural encoding models based on mixture models and exponential families that can be fit with expectation-maximization. The model extends Poisson mixtures to capture both over- and under-dispersed response variability using Conway-Maxwell Poisson distributions and introduces explicit stimulus-dependence to capture changes in response statistics across stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C21, C22, C32, and C33 collectively establish the methodological framework. The exponential family formulation is demonstrated mathematically in the Materials and methods section (C32, C33), the EM fitting procedure is described and validated (C4), and the extensions for variability (C21) and stimulus-dependence (C22) are both theoretically justified and empirically demonstrated in Figures 1-4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The proposed mixture models capture diverse variability and covariability in recordings from macaque primary visual cortex. CB mixtures accurately captured both over- and under-dispersed single-neuron variability, while IP mixtures were limited by mathematical constraints. Both models captured pairwise noise correlation structure qualitatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26, C27, C47-C51 are supported by experimental results in Figures 2 and 3 showing model fits to awake (43 neurons) and anaesthetized (70 neurons) V1 data. The CB mixture's superiority in capturing individual variability is demonstrated quantitatively (Figure 2A-B), and the mathematical limitations of IP mixtures are explained through Equation 6. Both models captured correlation structure (Figure 3A-D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C82",
+      "C93",
+      "C94"
+    ],
+    "result": "The proposed models facilitate accurate Bayesian decoding of neural responses. On awake V1 data, CMs performed statistically indistinguishably from artificial neural networks while using two orders of magnitude fewer parameters. On anaesthetized data, minimal CMs approached ANN performance and significantly exceeded simpler baseline models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28, C72-C77, C81-C82, C93-C94 are strongly supported by Table 3 showing 10-fold cross-validated log-posterior probabilities. The CMs achieved average log-posteriors of -0.206 (awake) and -0.441 (anaesthetized) compared to ANNs at -0.200 and -0.426, while using ~1,700-2,700 parameters versus ~400,000-527,000 for ANNs. Statistical comparisons with baseline models are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C23",
+      "C89",
+      "C90",
+      "C95",
+      "C96"
+    ],
+    "result": "The proposed models provide closed-form expressions for Fisher information that can be used to study neural coding analytically and obtain model-based estimates from data. For minimal CMs, the Fisher information equals the linear Fisher information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C23, C89, C90, C95, C96 are supported by the analytical derivation in the Materials and methods section (Equations 18-19) showing that FI can be expressed as a function of the covariance matrix and stimulus-dependent parameters. The empirical validation showed relative errors of -12.8%\u00b118.6% (awake) and -9.1%\u00b122.4% (anaesthetized) when estimating FI from 500 samples, demonstrating practical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Minimal CB-CMs can express complex, stimulus-dependent response statistics and can be recovered from realistic amounts of synthetic data using EM. The learned model captured tuning curves (r\u00b2=0.998), orientation-dependent index probabilities, correlation matrices, and Fano factors nearly indistinguishably from ground truth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C62, C54, C56-C60 are supported by Figure 4 showing recovery of a ground truth CB-CM with 20 neurons and 5 components from 2000 synthetic samples. The tuning curves, index probabilities, correlation structure, and Fano factors of the learned model closely matched ground truth across different stimulus orientations, demonstrating both the expressiveness and learnability of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Different CM variants achieve comparable encoding performance and substantially outperform independent Poisson baselines. CB models consistently outperform IP counterparts with fewer parameters. Discrete CB-CMs achieved high performance on both datasets, while von Mises and maximal CMs showed dataset-specific advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 are supported by Table 2 and Figure 5 showing 10-fold cross-validated information gain. All CM variants achieved information gains of 2.0-2.4 nats/trial (awake) and 8.8-9.5 nats/trial (anaesthetized) compared to 0 for independent Poisson models. The performance-parameter trade-offs are clearly demonstrated, with CB models achieving better performance with fewer parameters than IP models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C104",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "CMs can effectively approximate information-limiting correlations, a fundamental property of population codes. The learned IP-CM captured how trial-to-trial variability results in random shifts of peak neural activity that limit information, with the optimal posterior maintaining significant probability on the true stimulus while suboptimal posteriors do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C104, C111-C115 are supported by Figure 6 showing that an IP-CM fit to an information-limited source model (with sensory noise) captured the saturation of Fisher information near the precision of sensory noise. The latent structure analysis (Figure 6B-F) demonstrates how the model represents information-limiting correlations through stimulus-dependent mixture components that shift population activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C97",
+      "C102",
+      "C103"
+    ],
+    "result": "The model is compatible with the theory of probabilistic population coding. Constrained CMs are equivalent to exponential families with linear sufficient statistics (EFLSSs), allowing linear probabilistic population coding theory to be applied to CMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C97, C102, C103 are supported by the theoretical derivation in the section on constrained conditional mixtures showing that minimal CMs with constant log-partition functions can be expressed in EFLSS form (Equation 4). This mathematical equivalence is rigorously demonstrated, establishing the connection between the statistical model and theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Although factor analysis is better at capturing second-order statistics in training data, IP and CB mixtures achieve comparable predictive performance on held-out data. Factor analysis-based Bayesian decoders performed poorly and inconsistently, occasionally assigning zero probability to true stimuli, possibly because CMs capture higher-order structure that FA cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C78-C80 are supported by results in Appendix 1 and Appendix 2. The comparison shows that while FA fits training data better, mixture models generalize comparably. The FA decoder's failure mode (assigning zero probability to true stimuli) is documented, and preliminary evidence for higher-order structure capture is presented, though the authors acknowledge this as preliminary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The mathematical foundations of the model are based on Poisson and Conway-Maxwell Poisson distributions. IP mixtures can model arbitrary covariability but neurons are always over-dispersed due to coupling between means and variances. CB mixtures break this coupling and can exhibit under-dispersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 establish the mathematical properties of the model components. These are well-established properties of Poisson and CoM-Poisson distributions (C34-C37, supported by citations), and the properties of IP mixtures (C38-C41) are derived mathematically in Equations 5-7 and demonstrated in Figure 1. The mathematical derivations are rigorous and the properties are correctly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "IP mixtures are similar to factor analysis in that both can be fine-tuned to capture covariance arbitrarily well, but IP mixtures have means and variances coupled through shared parameters while FA has distinct parameters for means and diagonal variances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 correctly characterize the relationship between IP mixtures and factor analysis. The structural similarity (both use low-rank plus diagonal covariance representations) and key difference (parameter coupling) are accurately described and supported by the mathematical formulation in Equation 6 and citation to Bishop (2006).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Neurons respond selectively to stimuli defining a neural code, and noise correlations significantly impact information content especially in large populations. Statistical encoding models are often outperformed by direct decoding models when validated as Bayesian decoders, indicating they miss key statistics of the neural code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C11 establish the scientific context and motivation. These are well-established principles in neuroscience supported by extensive citations to prior work (Zohary et al., 1994; Abbott and Dayan, 1999; Moreno-Bote et al., 2014; Graf et al., 2011; Walker et al., 2020, among others). The claims accurately represent the current state of knowledge in neural coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Existing approaches to modeling neural populations have various limitations. Pairwise maximum entropy models work for binary spike-counts, GLMs for dynamic recordings, but many theories use unbounded spike-counts. Extensions of GLMs and factor analysis methods have unclear support for Bayesian decoding. Poisson mixtures are established for individual neurons and multivariate count data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 accurately survey the literature on existing modeling approaches and their limitations. Each claim is supported by appropriate citations to prior work. The characterization of limitations (e.g., C16, C18) is appropriately cautious, noting what 'seems' to be the case or is 'unknown' rather than making definitive unsupported claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C53"
+    ],
+    "result": "The model learns low-dimensional representations of stimulus-driven neural activity. By restricting stimulus-dependence to baseline parameters, the model can capture rich stimulus-dependent response structure while bounding complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C53 are supported by the latent structure analysis in Figure 4C-D showing orientation-dependent index probabilities, and by the theoretical argument that baseline parameters influence both index probabilities and all component distributions. The low-dimensional nature is demonstrated through the small number of mixture components (5-40) needed to achieve good performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C92"
+    ],
+    "result": "Although modeling individual variability is not essential for effective Bayesian decoding, doing so results in a more parsimonious model. IP-CMs can recover and interpolate approximate Fisher information of ground-truth populations from modest amounts of data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by the comparison in Table 3 showing CB-CM achieves marginally better performance with fewer parameters than IP-CM. Claim C92 is supported by the FI estimation results showing relative errors of -12.8%\u00b118.6% and -9.1%\u00b122.4% from 500 samples. Both inferences are reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Fisher information is an upper bound on average posterior precision and is widely adopted in theoretical and experimental studies. Linear Fisher information is a linear approximation corresponding to the optimal unbiased linear decoder accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 accurately describe established theoretical concepts in neural coding. These are well-known properties of Fisher information supported by appropriate citations (Brunel and Nadal, 1998; Seri\u00e8s et al., 2004; Kanitscheider et al., 2015a) and extensive literature (Abbott and Dayan, 1999; Beck et al., 2011b; Ecker et al., 2014, among others).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "A CB mixture can exhibit under-dispersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is directly demonstrated in Figure 1E showing a CB mixture with Fano factor less than 1. This is a straightforward demonstration of a key property of the CB mixture model that distinguishes it from IP mixtures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C30",
+      "C103",
+      "C116",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C129",
+      "C130",
+      "C133",
+      "C135"
+    ],
+    "result": "The model could be used for various theoretical and experimental applications including studying coding properties of neural circuits, validating theoretical hypotheses, incorporating experimental variables, making predictions about perception and behavior, extending to continuous latent variables, integrating with models of higher cortical areas, and applications outside neuroscience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30, C103, C116, C119, C120, C122-C126, C129, C130, C133, C135 are speculative statements about potential future applications. While these are reasonable extrapolations based on the demonstrated capabilities of the model, they represent possibilities rather than demonstrated results. The authors appropriately use conditional language ('could', 'might', 'may') to indicate these are prospective rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The framework is particularly relevant for probabilistic theories of neural coding based on exponential families, which have been difficult to validate quantitatively due to lack of compatible statistical models that can handle correlated activity in large populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117 and C118 accurately characterize the relevance of the work and limitations of prior approaches. The statement about difficulty validating exponential family theories is supported by the lack of prior models with the required properties, and the relevance is established through the demonstrated compatibility with LPPC theory (claims C29, C102).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C134"
+    ],
+    "result": "Various experimental variables affect neural covariability and could be incorporated into CMs. Finite mixture models are used because they are analytically tractable. The stimulus-dependence can be implemented with arbitrary parametric functions including deep neural networks, and CMs can incorporate history-dependence. High-dimensional count data exists in fields outside neuroscience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121, C127, C128, C131, C132, C134 make factual statements about experimental findings (C121, supported by citations), methodological choices (C127, C128), model capabilities (C131, C132 with C132 demonstrated in Appendix 4), and data types in other fields (C134, supported by citation). These are accurate characterizations.",
+    "result_type": "MINOR"
+  }
+]

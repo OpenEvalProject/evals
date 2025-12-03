@@ -1,0 +1,1772 @@
+{
+  "submission": {
+    "id": "76222ee1-b3d7-4200-aac6-b67a567949b7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:14:00.688412Z",
+    "updated_at": "2025-12-03T17:14:00.688412Z"
+  },
+  "content": [
+    {
+      "id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "submission_id": "76222ee1-b3d7-4200-aac6-b67a567949b7",
+      "content_type": "manuscript",
+      "content_text": "# Reevaluation of Piezo1 as a gut RNA sensor\n\n## Authors\n\n- Alec R Nickolls<sup>1</sup> ([ORCID: 0000-0002-7399-4304](https://orcid.org/0000-0002-7399-4304))\n- Gabrielle S O'Brien<sup>1</sup>\n- Sarah Shnayder<sup>1</sup>\n- Yunxiao Zhang<sup>2</sup>\n- Maximilian Nagel<sup>1</sup>\n- Ardem Patapoutian<sup>2</sup> ([ORCID: 0000-0003-0726-7034](https://orcid.org/0000-0003-0726-7034))\n- Alexander T Chesler<sup>1</sup> ([ORCID: 0000-0002-3131-0728](https://orcid.org/0000-0002-3131-0728)) \u2020\n\n### Affiliations\n\n1. National Center for Complementary and Integrative Health, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))\n2. Department of Neuroscience, Howard Hughes Medical Institute, Dorris Neuroscience Center, Scripps Research Institute San Diego United States ([ROR:02dxx6824](https://ror.org/02dxx6824))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPiezo1 is a stretch-gated ion channel required for mechanosensation in many organ systems. Recent findings point to a new role for Piezo1 in the gut, suggesting that it is a sensor of microbial single-stranded RNA (ssRNA) rather than mechanical force. If true, this would redefine the scope of Piezo biology. Here, we sought to replicate the central finding that fecal ssRNA is a natural agonist of Piezo1. While we observe that fecal extracts and ssRNA can stimulate calcium influx in certain cell lines, this response is independent of Piezo1. Additionally, sterilized dietary extracts devoid of gut biome RNA show similar cell line-specific stimulatory activity to fecal extracts. Together, our data highlight potential confounds inherent to gut-derived extracts, exclude Piezo1 as a receptor for ssRNA in the gut, and support a dedicated role for Piezo channels in mechanosensing.\n\n## Introduction\n\nPiezo proteins are mechanically gated ion channels that transduce changes in plasma membrane tension into electrical current (Ridone et al., 2019; Szczot et al., 2021). There are two members in the mammalian Piezo family: Piezo1 and Piezo2 (Coste et al., 2010). Piezo1 is expressed in many tissues, including the cardiovascular, hematopoietic, and skeletal systems (Jiang et al., 2021; Li et al., 2014; Retailleau et al., 2015; Rode et al., 2017; Sun et al., 2019; Wang et al., 2016). Specifically, Piezo1 mediates the mechanical sensing of fluid flow and is required for normal development and function of lymph and blood vessels (Li et al., 2014; Liu et al., 2020; Nonomura et al., 2018; Ranade et al., 2014b). Additionally, many blood cell types depend on Piezo1 for shear force sensing and volume regulation (Cahalan et al., 2015; Cinar et al., 2015; Faucherre et al., 2014; Solis et al., 2019). These vascular functions are particularly evident in the clinical manifestation of Piezo1 mutations in humans (Albuisson et al., 2013; Bae et al., 2013; Fotiou et al., 2015; Glogowska et al., 2017; Lukacs et al., 2015). Piezo1 also regulates the formation and maintenance of bone and cartilage through mechanical load sensing (Hendrickx et al., 2021; Lee et al., 2014; Li et al., 2019; Sun et al., 2019; Wang et al., 2020; Zhou et al., 2020). In other organ systems, the role of Piezo1 is currently less well-defined, but it is known to function as a mechanosensor in neural stem cells and certain epithelial and mesenchymal cell types (Eisenhoffer et al., 2012; Martins et al., 2016; Miyamoto et al., 2014; Pathak et al., 2014; Sugimoto et al., 2017). By contrast, the homologous Piezo2 is expressed at its highest levels in the somatosensory system, vagal-nodose complex, and specialized epithelial cells (Chiu et al., 2014; Kupari et al., 2019; Nguyen et al., 2017; Usoskin et al., 2015; Wang et al., 2017; Woo et al., 2014). Piezo2 is responsible for detecting gentle touch, vibration, and proprioception in mice and humans (Chesler et al., 2016; Ranade et al., 2014a; Woo et al., 2015).\n\nMany extrinsic factors can influence Piezo mechanosensitivity, including membrane tension, membrane voltage, cytoskeletal integrity, extracellular matrix contact, cyclic adenosine monophosphate signaling, and phosphatidylinositol second messenger pathways (Borbiro et al., 2015; Dubin et al., 2012; Gaub and M\u00fcller, 2017; Moroni et al., 2018; Narayanan et al., 2018; Romero et al., 2019; Romero et al., 2020). In addition to this list, it stands to reason that there could be ligands of Piezo channels that modulate or even directly evoke channel gating. Indeed, high-throughput drug screens have generated the synthetic small molecules called Yoda1, Jedi1, and Jedi2, which act as allosteric modulators of Piezo1 by stabilizing its open conformation (Botello-Smith et al., 2019; Syeda et al., 2015; Wang et al., 2018).\n\nA recent study provided the first evidence of endogenous ligands for Piezo channels (Sugisawa et al., 2020). Remarkably, it was shown that Piezo1 functions as a ligand-gated ion channel to sense single-stranded RNAs (ssRNAs). It was proposed that bioactive ssRNAs are produced by the gut microbiome, and that these molecules function through Piezo1 channels to alter serotonin production and trigger a physiological cascade that impacts bone homeostasis. Considering that ssRNAs might be generated and released under a variety of circumstances, the scientific field will have to radically rethink the role of Piezo1 not only in the gut but throughout the body. It also suggests that perhaps Piezo2 can be gated by these types of molecules. Piezo2 is expressed by sensory and vagal neurons targeting the skin and other organ systems with diverse microbiomes that are also sites of viral infections and colonization by pathogenic bacteria or fungi (Chiu et al., 2014; Kupari et al., 2019; Nguyen et al., 2017; Usoskin et al., 2015; Wang et al., 2017; Woo et al., 2014). Therefore, we set out to use calcium imaging and electrophysiological recordings to investigate how ssRNAs derived from the gut influence Piezo channel function.\n\n## Results\n\n### ssRNA40 does not alter calcium activity or mechanotransduction in N2a cells\n\nssRNA40 is a synthetic 20-mer ssRNA oligonucleotide derived from the human immunodeficiency virus (HIV) genome (Heil et al., 2004). ssRNA40 is classically known as an agonist for the immune surveillance toll-like receptors 7 and 8 in mice and humans, respectively (Heil et al., 2004; Zhang et al., 2018). However, it was recently reported that ssRNA40 also shows agonist activity toward the mechanosensitive ion channel Piezo1 (Sugisawa et al., 2020). To test this finding, we first used the Neuro-2a (N2a) mouse neuroblastoma cell line since these cells natively express Piezo1 (Coste et al., 2010) and were reported to conduct a Piezo1-dependent current in the presence of ssRNA40 (Sugisawa et al., 2020).\n\nFor measuring Piezo1 activity during exposure to ssRNA40, we performed in vitro fluorescent calcium imaging on N2a cell cultures with the Fluo-4 AM ester dye. Using ssRNA40 from the same supplier and dosage as prior studies (10 \u00b5g/mL) (Sugisawa et al., 2020), we found that application of ssRNA40 did not elicit a detectable increase in fluorescence, even when the imaging time frame was extended up to 3 min (Figure 1A and Video 1). As a positive control for Piezo1 activation, we used Yoda1, which is known to induce Piezo1-dependent calcium transients (Syeda et al., 2015). A 30 \u00b5M Yoda1 triggered a dramatic calcium influx over the course of ~1 min in virtually all N2a cells (Figure 1A\u2013C). This was followed by application of ionomycin, a potent calcium ionophore, as a further positive control to elicit maximal calcium influx in all cells. For negative controls, we tested the vehicle solution alone to observe mechanosensitive flow responses and also tested ssRNA41 to examine sequence-specific effects of ssRNA (Figure 1A\u2013C). ssRNA41 is the same length and sequence as ssRNA40, except all uridine residues are substituted with adenosine; unlike ssRNA40, this molecule is not a TLR7/8 agonist (Heil et al., 2004). After autofluorescence subtraction, there was no significant difference in N2a cell calcium activity between these negative controls and ssRNA40 (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig1-v2.jpg)\n\n**Figure 1.:** (A) Fluo-4 calcium imaging of N2a cells during exposure to different treatments, representative of \u22653 independent recordings for each condition. The magnitude of the change in fluorescence (\u0394F) is represented on a fire color scale and is superimposed on a grayscale baseline fluorescence image. Cells were exposed to buffer only (vehicle) or 10 \u00b5g/mL ssRNA40 or ssRNA41 for up to 3 min, followed by 30 \u00b5M Yoda1 and 10 \u00b5M ionomycin. Scale bar is 200 \u00b5m. (B) Example calcium imaging traces of vehicle, ssRNA40, or ssRNA41, as well as Yoda1 and ionomycin control treatments. Fluorescence values are shown as \u0394F normalized to the initial fluorescence (\u0394F/F0). n = 50 cells plotted as mean \u00b1 95% CI. (C) Quantification of calcium responses to different treatments. n = 50 cells per condition. Error bars indicate mean \u00b1 95% CI. One-way ANOVA with Bonferroni correction: not significant (n.s.) p\u22650.05, **** p<0.0001. (D) Example whole-cell voltage-clamp recordings of N2a cells during mechanical stimulation. Top traces indicate the magnitude of plasma membrane indentation in 1 \u00b5m steps, and bottom traces show whole-cell currents elicited by the stimuli. Vehicle, 10 \u00b5g/mL ssRNA40, or 30 \u00b5M Yoda1 were bath-applied 10 min prior to recording. (E) Piezo1 current versus membrane indentation to illustrate stimulus\u2013response relationships. n = 7\u201310 cells per condition are plotted to show the mean current per level of indentation, with error bars indicating the standard error of the mean (SEM). (F) Quantification of mechanically evoked current amplitude, threshold, and inactivation. n = 7\u201310 cells per condition. Error bars represent mean \u00b1 95% CI. One-way ANOVA with Bonferroni correction: n.s. p\u22650.05, *p<0.05, ***p<0.001, ****p<0.0001.\n\n![Video 1.](https://cdn.elifesciences.org/articles/83346/elife-83346-video1.mp4.jpg)\n\n**Video 1.:** 5 min time-lapse recording of fluo-4 AM fluorescence in N2a cells during sequential exposure to 10 \u00b5g/mL ssRNA40, 30 \u00b5M Yoda1, and 10 \u00b5M ionomycin. 1 s of video is equivalent to 30 s of real time.\n\nIn addition to directly activating Piezo1, ssRNA40 was reported to delay the inactivation of Piezo1 mechanically evoked currents (Sugisawa et al., 2020), similar to Yoda1 (Syeda et al., 2015). We tested this claim by whole-cell voltage-clamp recordings of N2a cells during simultaneous mechanical stimulation of the plasma membrane. Mechanical stimuli were administered with a nanomotor probe to indent the cell surface in 1 \u00b5m increments (Video 2). The stimulation elicited a rapidly inactivating inward current, which is characteristic of the Piezo family of ion channels (Figure 1D). As expected, including 30 \u00b5M Yoda1 in the external bath solution resulted in a reduced apparent mechanical activation threshold and a prolonged inactivation phase of the currents (Figure 1D\u2013F). By contrast, 10 \u00b5g/mL ssRNA40 in the bath solution showed no measurable change from the vehicle control on the amplitude, activation threshold, or inactivation rate of mechanically evoked currents (Figure 1D\u2013F).\n\n![Video 2.](https://cdn.elifesciences.org/articles/83346/elife-83346-video2.mp4.jpg)\n\n**Video 2.:** A HEK293 cell during simultaneous mechanical stimulation and whole-cell current recording. The patch pipette (left) is sealed onto the plasma membrane, and the mechanical probe (right) indents the cell membrane to evoke Piezo1 activity. The video depicts a single 5 \u00b5m indentation as part of a larger train of step-wise indentations from 1 to 10 \u00b5m.\n\n### ssRNA40 does not activate Piezo1-transfected HEK293 cells\n\nCompared to the Piezo1 agonist activity of Yoda1, ssRNA40 was reported to have a relatively small effect size (Sugisawa et al., 2020). We were concerned that such a small effect size could have been overlooked in our initial experiments, given the relatively low functional expression of Piezo1 in N2a cells. Therefore, we also examined the effects of ssRNA on Piezo1 channels expressed at high levels via transient transfection of human embryonic kidney 293 (HEK293) cells. We performed calcium imaging to compare the responses of native versus Piezo1-transfected HEK293 cells during exposure to vehicle, ssRNA40, or ssRNA41 (Figure 2A and B). Each imaging trial was followed by stimulation with Yoda1 and ionomycin as positive controls for Piezo1 response and maximal response, respectively. There was a noticeable but nonsignificant calcium response of untransfected cells to Yoda1 (Figure 2C), consistent with a previous report that HEK293 cells express very low but detectable levels of human Piezo1 (Dubin et al., 2017). However, in both untransfected and Piezo1-transfected conditions, we found no significant calcium activity between vehicle, ssRNA40, and ssRNA41 (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig2-v2.jpg)\n\n**Figure 2.:** (A) Fluo-4 calcium imaging of HEK293 cells, with or without transfection of mouse Piezo1, representative of \u22653 independent recordings for each condition. Treatment concentrations are 10 \u00b5g/mL ssRNA40 or ssRNA41, 30 \u00b5M Yoda1, and 10 \u00b5M ionomycin. Scale bar is 200 \u00b5m. (B) Example calcium imaging traces of Piezo1-transfected HEK293 cells during different treatments. Yoda1 was applied 90 s after any given RNA sample, and only cells that responded to Yoda1 (presumably Piezo1-transfected) were analyzed. Transfection efficiency was generally >60% of the cell culture. n = 50 cells plotted as mean \u00b1 95% CI. (C) Quantification of HEK293 cell calcium responses. n = 50 cells per condition plotted as mean \u00b1 95% CI. One-way ANOVA with Bonferroni correction: n.s. p\u22650.05, ****p<0.0001. (D) Dose\u2013response curve of ssRNA40 treatment on Piezo1-transfected GCaMP6s-expressing HEK293 cells. After 1 min of baseline measurement, ssRNA40 was administered for 3 min followed by ionomycin for 1 min. A random selection of cells was analyzed from each recording. The responses are normalized, with the ionomycin response being \u0394F/F0 = 1. n = 25 cells per dose plotted as mean \u00b1 95% CI. One-way ANOVA with Bonferroni correction: n.s. p\u22650.05.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Fluorescence imaging plate reader (FLIPR) assay on HEK293 Piezo1-KO cells, with or without transfection of human Piezo1. Treatment concentrations are 5 \u00b5g/mL ssRNA40 and 5 \u00b5M Yoda1. n = 4 wells per condition plotted as mean \u00b1 SEM. (B) Quantification of FLIPR calcium recordings of ssRNA40 dose\u2013response and its effect on Yoda1 response. n = 4 wells per condition plotted as mean \u00b1 SEM. Pairwise comparisons between untransfected and transfected recordings using multiple unpaired t-tests with 5% false discovery rate: n.s. p\u22650.05, ****p<0.0001.\n\nPrior studies used between 5 and 20 \u00b5g/mL ssRNA40 in their experiments (Heil et al., 2004; Lehmann et al., 2012; Shibata et al., 2016; Sugisawa et al., 2020). For that reason, our above experiments used 10 \u00b5g/mL ssRNA40. However, to explore whether ssRNA40 has a dose\u2013response effect on Piezo1, we performed calcium imaging on Piezo1-transfected HEK293 cells during exposure to different concentrations of ssRNA40. Using a log scale range from 0.05 to 50 \u00b5g/mL, we did not observe significant calcium influx triggered by ssRNA40 at any concentration (Figure 2D).\n\nAn inability to replicate a finding could reflect unappreciated nuances in how two groups conduct the experiments. To address this possibility, we tested whether ssRNA40 could activate Piezo1 in a completely independent laboratory using a distinct cell line, a different methodology, and separately sourced reagents. For these studies, we used a Piezo1-knockout (Piezo1-KO) genetic background HEK293 cell line (Dubin et al., 2017). Importantly, this is the identical cell line used in the originally published ssRNA experiments on Piezo1 (Sugisawa et al., 2020). We recorded the calcium response to ssRNA40 with or without Piezo1 transfection using a fluorescence imaging plate reader (FLIPR) calcium flux screening platform. Several ssRNA40 concentrations were tested from 0.312 to 5 \u00b5g/mL followed by Yoda1 as a positive control. We compared untransfected cells to cells transfected with either mouse Piezo1 or human Piezo1 (Figure 2\u2014figure supplement 1). No increase in calcium was detected throughout exposure to ssRNA40, and there were no significant differences between transfected and untransfected cells or across the various ssRNA40 concentrations (Figure 2\u2014figure supplement 1). To examine whether ssRNA40 might more subtly potentiate Piezo1 activity, we checked whether the response to 5 \u00b5M Yoda1 was increased after exposure to ssRNA40. However, we found no change in the Yoda1 response following treatment with vehicle or different ssRNA40 concentrations (Figure 2\u2014figure supplement 1). Together, these data independently corroborate our previous observations that ssRNA40 does not activate Piezo1 directly or modulate its mechanotransduction in either N2a cells or HEK293 cells.\n\n### Fecal and dietary extracts activate HEK293 cells independently of Piezo1\n\nThe concept that ssRNA can activate Piezo1 originally arose from screening components of mouse feces and led to the hypothesis that compounds produced by the gut microbiome directly influence Piezo1 function. It was reported that both crude fecal extracts and purified fecal RNA elicit a calcium influx in Piezo1-transfected HEK293 cells (Sugisawa et al., 2020). Although the synthetic ssRNA40 molecule did not activate Piezo1 in our hands, it remained possible that fecal preparations could show agonist activity. We homogenized and diluted mouse fecal matter to 100 mg/mL and filtered it through a 0.45 \u00b5m mesh to eliminate any undissolved sample. Pipetting this solution onto cells resulted in extremely high autofluorescence that precluded calcium imaging. However, we found that the autofluorescence was mostly eliminated if the feces were diluted to at least 5 mg/mL \u2013 we refer to this diluted filtered sample as \u2018fecal extract.\u2019 Applying fecal extract to Piezo1-transfected HEK293 cells triggered a substantial calcium response (Figure 3A and Video 3). More dilute preparations of extract yielded little or no calcium influx. Interestingly, across several imaging trials, we noticed that the response to 5 mg/mL fecal extract was variable; not all cells in the field of view would necessarily respond, and the response onset was often 30\u201360 s after the fecal extract was first added (Figure 3A and B). Notably, however, we also found that untransfected HEK293 cells had a similar calcium response to fecal extract, suggesting that fecal extracts may trigger calcium influx via a Piezo1-independent mechanism (Figure 3A and B). This was confirmed by applying fecal extract to Piezo1-KO HEK293 cells, which still responded despite the complete absence of Piezo1 (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig3-v2.jpg)\n\n**Figure 3.:** (A) GCaMP6s calcium imaging of HEK293 cells during exposure to 5 mg/mL fecal extract, with or without Piezo1 transfection, representative of \u22653 independent recordings for each condition. Scale bar is 200 \u00b5m. (B) Example calcium imaging traces of HEK293 cell responses to fecal extract. n = 50 cells per condition plotted as mean \u00b1 95% CI. (C) Agarose gel showing the nucleic acid content of 50 \u00b5g/mL purified fecal RNA and 100 mg/mL crude fecal extract. 50 \u00b5g/mL of ssRNA40 and ssRNA41 were used as positive controls since they are pure RNA samples of a defined mass and sequence. Ringer\u2019s solution was used as vehicle negative control. Treating the samples with RNase A eliminated the low-molecular-weight nucleic acid (<500 bp). The crude fecal extract additionally had a high-molecular-weight smear (500\u20135000 bp) that was unaffected by RNase A treatment, which is likely DNA. (D) Quantification of Piezo1-transfected HEK293 cell responses to 5 mg/mL fecal extracts that were untreated (control), heat-treated (mock), or heat + RNase A-treated (RNase), as well as 10 \u00b5g/mL fecal RNA. The \u0394F/F0 values are normalized, with the ionomycin response being \u0394F/F0 = 1. n = 50 cells per condition plotted as mean \u00b1 95% CI. Kruskal\u2013Wallis with Dunn\u2019s multiple-comparisons test: n.s. p\u22650.05, ****p<0.0001. (E) GCaMP6s calcium imaging of HEK293 cells during exposure to 5 mg/mL dietary extract, with or without Piezo1 transfection, representative of \u22652 independent recordings for each condition Scale bar is 200 \u00b5m. (F) Example calcium imaging traces of HEK293 cell responses to dietary extract. n = 50 cells per condition plotted as mean \u00b1 95% CI.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Fluorescence imaging plate reader (FLIPR) assays on HEK293 Piezo1-KO cells, with or without transfection of human Piezo1. Each treatment condition was followed up with ionomycin to elicit maximum response for normalization (not shown). Treatment concentrations are 5 mg/mL fecal or dietary extract, 5 \u00b5M Yoda1, and 10 \u00b5M ionomycin. n = 4 wells per condition plotted as mean \u00b1 SEM. (B) Quantification of FLIPR calcium recordings for different treatments. n = 4 wells per condition plotted as mean \u00b1 SEM. Kruskal\u2013Wallis with Dunn\u2019s multiple-comparisons test: n.s. p\u22650.05, **p<0.01.\n\n![Video 3.](https://cdn.elifesciences.org/articles/83346/elife-83346-video3.mp4.jpg)\n\n**Video 3.:** 5 min time lapse of GCaMP6s fluorescence in HEK293 cells during exposure to 5 mg/mL fecal extract and then 10 \u00b5M ionomycin. 1 s of video is equivalent to 30 s of real time.\n\nCrude fecal extracts are complex biochemical mixtures that include products from the microbiome. To test the contribution of bacterial RNA in the calcium response of HEK293 cells to fecal extract, we purified these nucleic acids (Figure 3C) from our samples and tested whether they activated Piezo1. In contrast to the total extract, we did not observe a detectable calcium influx with 10 \u00b5g/mL fecal RNA \u2013 the same concentration used in other studies (Figure 3D; Sugisawa et al., 2020). We additionally extracted fecal RNA using the same kit and procedure as prior studies (Sugisawa et al., 2020), but this sample likewise failed to induce any activity (see \u2018Materials and methods\u2019). We then performed the reciprocal experiment by treating fecal extracts with the ssRNA-degrading enzyme RNase A. Both RNase-treated and untreated fecal extracts activated Piezo1-transfected HEK293 cells to a similar degree (Figure 3D). Together, these experiments demonstrate that fecal extracts can stimulate calcium influx in HEK293 cells, but this effect is unlikely to be mediated by RNA and, regardless, the activity does not depend on Piezo1.\n\nTo disentangle possible sources of activation in our fecal extracts, we evaluated whether anything in the mouse diet might stimulate HEK293 cell calcium influx. We reasoned that separately testing the food input would eliminate host and microbial factors found in the fecal output. Mouse chow pellets were dissolved and filtered to prepare a dietary extract by the same method as the previous fecal extracts. Surprisingly, applying 5 mg/mL dietary extract to HEK293 cells produced a substantial calcium response (Figure 3E). This activation occurred in both untransfected and Piezo1-transfected cells. Similar to fecal extract, the dietary extract often activated only a subset of cells (Figure 3E and Video 4). The timing of the response onset was also variable but tended to occur earlier compared to fecal extract (Figure 3F). Dietary extract also activated Piezo1-KO HEK293 cells, confirming that Piezo1 is dispensable for the response to the extract (Figure 3\u2014figure supplement 1). To verify that the dietary and fecal extracts were not activating cells in a nonspecific way by changing the osmolality or pH, we confirmed that these properties were not substantially altered between control solutions and the crude extracts (see \u2018Materials and methods\u2019). These results suggest that an element of the mouse diet, if present in fecal matter, could be a confounding factor when studying active compounds derived from the host gut or resident microbiota in calcium imaging assays.\n\n![Video 4.](https://cdn.elifesciences.org/articles/83346/elife-83346-video4.mp4.jpg)\n\n**Video 4.:** 5 min time lapse of GCaMP6s fluorescence in HEK293 cells during exposure to 5 mg/mL dietary extract and then 10 \u00b5M ionomycin. 1 s of video is equivalent to 30 s of real time.\n\nPiezo1 is a nonselective ion channel that inactivates quickly (within 10\u201330 ms) (Coste et al., 2010). Therefore, calcium imaging is not the most sensitive readout of channel gating. To more definitively confirm that fecal extracts and ssRNA are not affecting Piezo1 activity, we carried out a series of whole-cell voltage-clamp recordings on Piezo1-transfected HEK293 cells. The cells were mechanically stimulated in the presence of ssRNA40 or fecal extract (Figure 4A). As negative and positive controls for Piezo1 agonism, vehicle solution and Yoda1 were used, respectively. Across all conditions, the maximum whole-cell Piezo1 current evoked by mechanical stimulation was not substantially different. By contrast, Yoda1 significantly lowered the apparent mechanical threshold for Piezo1 activation and delayed channel inactivation as expected (Figure 4B and C; Syeda et al., 2015). Together, our results do not provide evidence for even a limited effect of either ssRNA40 or fecal extracts on the biophysical properties of Piezo1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example whole-cell voltage-clamp recordings of Piezo1-transfected HEK293 cells during mechanical stimulation. Top traces indicate the magnitude of plasma membrane indentation in 1 \u00b5m steps, and bottom traces show whole-cell currents elicited by the stimuli. Vehicle, 10 \u00b5g/mL ssRNA40, 5 mg/mL fecal extract, or 30 \u00b5M Yoda1 were bath-applied 5 min prior to recording. (B) Piezo1 current versus membrane indentation demonstrates the stimulus\u2013response relationships across conditions. n = 8\u201319 cells per condition are shown as mean \u00b1 SEM. (C) Quantification of mechanically evoked current amplitude, threshold, and inactivation. Individual cell responses are plotted: n = 14 vehicle, n = 8 ssRNA40, n = 19 fecal extract, and n = 10 Yoda1. Error bars represent mean \u00b1 95% CI. One-way ANOVA with Bonferroni correction: n.s. p\u22650.05, *p<0.05.\n\n### Calcium response to fecal and dietary extracts is cell line-specific\n\nWe were concerned about the potential confounding effects of fecal/dietary extract-induced activation of HEK293 cells and wondered whether this effect extended to other commonly used cell lines in the field. Piezo1 was originally discovered in N2a cells (Coste et al., 2010), and this cell line continues to be frequently used for in vitro work on Piezo1 (Geng et al., 2020; Ridone et al., 2020; Romero et al., 2019). Therefore, we compared N2a and HEK293 cells, with or without Piezo1 transfection, during treatment with fecal/dietary extracts. Since Piezo1 is endogenously expressed in wildtype N2a cells, we performed these experiments on a Piezo1-KO N2a cell line (Moroni et al., 2018).\n\nThe untransfected N2a Piezo1-KO cells showed no calcium response to Yoda1 treatment, confirming an absence of Piezo1 (Figure 5A). Conversely, N2a Piezo1-KO cells that were transfected with Piezo1 showed a large calcium response to Yoda1, confirming an efficient transfection. Interestingly, unlike HEK293 cells, N2a cells did not respond to either fecal or dietary extracts (Figure 5A). Moreover, Piezo1 transfection did not endow N2a cells with sensitivity to either of these extracts (Figure 5B). From these data, we conclude that neither fecal extracts nor RNA derived from the gut microbiome can activate Piezo1. Instead, fecal/dietary extract sensitivity appears to be linked to other cell line-specific factors found in HEK293 cells but not N2a cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig5-v2.jpg)\n\n**Figure 5.:** (A) Calcium imaging of N2a Piezo1-KO cells and HEK293 cells, with or without Piezo1 transfection, representative of \u22652 independent recordings for each condition. Fluo-4 or GCaMP6s were used to image the N2a cells or HEK293 cells, respectively. Treatment concentrations are 5 mg/mL fecal or dietary extract, 30 \u00b5M Yoda1, or 10 \u00b5M ionomycin. Scale bar is 200 \u00b5m. (B) Quantification of calcium responses. n = 25 cells per condition plotted as mean \u00b1 95% CI. Pairwise comparisons between untransfected and transfected recordings using Kruskal\u2013Wallis with Dunn\u2019s multiple-comparisons test: n.s. p\u22650.05, **** p<0.0001.\n\n### RNA activates RIN14B cells independently of Piezo1\n\nConsidering that RNA-sensing by Piezo1 was originally investigated in the gut (Sugisawa et al., 2020), we sought to continue our exploration of the effect of ssRNAs in a physiologically relevant cell line, RIN14B. This pancreatic endocrine cell line is commonly used to model gut enterochromaffin cell function and natively expresses Piezo1 (Nozawa et al., 2009; Sugisawa et al., 2020). To examine the effect of ssRNAs on these cells, we performed calcium imaging in RIN14B cells transfected with GCaMP6s. We measured the change in fluorescence following addition of vehicle, ssRNA40, ssRNA41, fecal RNA, or Yoda1. Each imaging trial was followed by application of ionomycin to determine maximal fluorescence. As expected from previous experiments, the vehicle caused no significant change (Figure 6A-C). However, ssRNA40 and ssRNA41 elicited a noticeable calcium response in RIN14B cells, unlike in N2a or HEK293 cells (Figure 6\u2014figure supplement 1). Fecal RNA also elicited a calcium response, similar in magnitude to that caused by ssRNA40 and ssRNA41 (Figure 6D-F and Video 5). In comparison, Yoda1 led to a significantly larger increase in fluorescence, consistent with endogenous expression of Piezo1 in RIN14B cells (Figure 6G-I).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013C) Calcium imaging of RIN14B cell activity during application of negative control vehicle with and without gadolinium inhibition of Piezo1. Gadolinium visibly reduced spontaneous calcium transients. (D\u2013F) RIN14B cell calcium influx in response to fecal RNA, with and without gadolinium. (G\u2013I) RIN14B cell calcium influx in response to the positive control Piezo1 agonist Yoda1, which is blocked by gadolinium. The calcium imaging was performed on GCaMP6s-transfected cells. GCaMP6s calcium responses were measured during stimulation with 25 \u00b5g/mL fecal RNA, 15 \u00b5M Yoda1, and 10 \u00b5M ionomycin. To block Piezo1, 30 \u00b5M gadolinium was preincubated on the cells for 5 min and included throughout the calcium imaging recording. Line graphs represent mean \u00b1 95% CI of a single recording each of n = 50 cells. Bar graphs represent n = 100\u2013150 cells from \u22652 independent recordings for each condition, with fluorescence values normalized to the response to ionomycin = 1.0, and the bars indicate mean \u00b1 95% CI. Pairwise comparisons between untreated and gadolinium (Gd3+)-treated recordings using Kruskal\u2013Wallis with Dunn\u2019s multiple-comparisons test: *p<0.05, ****p<0.0001. The scale bar for the microscope images is 100 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Calcium imaging of ssRNA40 and ssRNA41 responses in RIN14B cells loaded with Fluo-4 AM, representative of \u22653 independent recordings for each condition. Cells were stimulated with 25 \u00b5g/mL ssRNA40 or ssRNA41 and 10 \u00b5M ionomycin. The mean \u0394F/F0 \u00b1 95% CI is shown for a single recording each of n = 50 cells. (B) To block Trpa1, 10 \u00b5M A-967079 was preincubated on the cells for 5 min and included throughout the calcium imaging recording. 10 \u00b5M AITC was used as a positive control for Trpa1 activation. Bar graphs represent n = 50\u2013200 cells from 1 to 4 independent recordings for each condition, with fluorescence values normalized to the response to ionomycin = 1.0, and the bars indicate mean \u00b1 95% CI. Pairwise comparisons between untreated and A-967079-treated recordings using Kruskal\u2013Wallis with Dunn\u2019s multiple\u2013comparisons test: n.s. p\u22650.05, ****p<0.0001.\n\n![Video 5.](https://cdn.elifesciences.org/articles/83346/elife-83346-video5.mp4.jpg)\n\n**Video 5.:** 5 min time lapse of GCaMP6s fluorescence in RIN14B cells during exposure to 25 \u00b5g/mL fecal RNA and then 10 \u00b5M ionomycin. 1 s of video is equivalent to 30 s of real time.\n\nTo investigate the dependency between the RNA-evoked response and Piezo1 function in these cells, we performed calcium imaging on RIN14B cells in the presence of gadolinium. Gadolinium is a broad inhibitor of stretch-activated cation channels including Piezo1 (Coste et al., 2010). Cells were exposed first to gadolinium and then to either vehicle, fecal RNA, or Yoda1. At baseline, we noticed general effects of gadolinium on the excitability of RIN14B cells, evident by reduced spontaneous calcium transients during vehicle application (Figure 6B and C). Notably, gadolinium did not diminish the response to fecal RNA, but it seemed to have a nonspecific effect on the decay rate of the calcium signal (Figure 6E and F). Gadolinium completely abolished the Yoda1 response, confirming successful Piezo1 inhibition (Figure 6H and I). Together, these experiments demonstrate that while RIN14B cells do respond to a variety of ssRNAs, their response is not dependent on Piezo1.\n\nIn addition to Piezo1, RIN14B cells and gut enterochromaffin cells express the electrophile receptor Trpa1 (Bellono et al., 2017; Nozawa et al., 2009). We speculated that Trpa1 may be responsible for the RNA-induced calcium response, considering that Trpa1 has been reported to respond to extracellular microRNAs (Park et al., 2014). To test this, we performed calcium imaging on RIN14B cells in the presence of a Trpa1 inhibitor, A-967079. As expected, the Trpa1 inhibitor blocked the calcium response following addition of allyl isothiocyanate (AITC), an electrophilic Trpa1 agonist (Figure 6\u2014figure supplement 1). However, the Trpa1 inhibitor did not significantly diminish the calcium response following addition of ssRNA40 or ssRNA41 (Figure 6\u2014figure supplement 1), indicating that the RNA-induced response is not dependent on Trpa1.\n\nTo facilitate a better understanding of the molecular basis for extracellular ssRNA-sensing, we performed single-nuclei RNA sequencing on RIN14B cells. Algorithmic clustering of individual nuclear transcriptomes did not reveal any clear transcriptomic subpopulations. However, there is clearly heterogeneity when examining the prevalence of individual transcripts from cell to cell, which may stem from true biological heterogeneity within the cell line or from technical limitations in our sequencing approach (Supplementary file 1). As a starting point for identifying candidate ssRNA receptors, we compiled a gene list based on gene ontology annotations for ion channels, cation transmembrane transporters, and G protein-coupled receptors (Table 1). The rough expression prevalence of each gene is conveyed as the fraction of cells in which that gene\u2019s transcripts were detected. Additionally, we have made the entire sequencing dataset available as an open resource for investigating RIN14B cell gene expression (Gene Expression Omnibus [GEO], GSE213903). We anticipate these data will be useful for more deeply assessing the fidelity of the RIN14B line as a model of gut enterochromaffin cells.\n\n**Table 1.**\n Ion channels and G protein-coupled receptors (GPCRs) in RIN14B cells.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>\u2018Ion channel activity\u2019 genes</th>\n      <th>Percent of cells expressing gene</th>\n      <th></th>\n      <th>\u2018GPCR activity\u2019 genes</th>\n      <th>Percent of cells expressing gene</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Asic1</td>\n      <td>19.5</td>\n      <td></td>\n      <td>Adgra2</td>\n      <td>7.7</td>\n    </tr>\n    <tr>\n      <td>Asic2</td>\n      <td>42.7</td>\n      <td></td>\n      <td>Adgra3</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Chrna7</td>\n      <td>7.7</td>\n      <td></td>\n      <td>Adgrb2</td>\n      <td>9.2</td>\n    </tr>\n    <tr>\n      <td>Clcn3</td>\n      <td>42.1</td>\n      <td></td>\n      <td>Adgrb3</td>\n      <td>51</td>\n    </tr>\n    <tr>\n      <td>Gabrb3</td>\n      <td>16</td>\n      <td></td>\n      <td>Adgrg1</td>\n      <td>16.9</td>\n    </tr>\n    <tr>\n      <td>Kcnd3</td>\n      <td>13.5</td>\n      <td></td>\n      <td>Adgrg4</td>\n      <td>15.8</td>\n    </tr>\n    <tr>\n      <td>Kcnh2</td>\n      <td>8.6</td>\n      <td></td>\n      <td>Adgrl1</td>\n      <td>22.1</td>\n    </tr>\n    <tr>\n      <td>Kcnk3</td>\n      <td>12.3</td>\n      <td></td>\n      <td>Adgrl2</td>\n      <td>37.2</td>\n    </tr>\n    <tr>\n      <td>Mcub</td>\n      <td>37.5</td>\n      <td></td>\n      <td>Adgrl3</td>\n      <td>61.3</td>\n    </tr>\n    <tr>\n      <td>Tmem120a</td>\n      <td>16.3</td>\n      <td></td>\n      <td>Adgrv1</td>\n      <td>9.2</td>\n    </tr>\n    <tr>\n      <td>Trpa1</td>\n      <td>15.2</td>\n      <td></td>\n      <td>Celsr2</td>\n      <td>9.2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Celsr3</td>\n      <td>10.9</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Glp1r</td>\n      <td>56.4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">\u2018Cation transmembrane transport\u2019 genes</td>\n      <td rowspan=\"3\">Percent of cells expressing gene</td>\n      <td></td>\n      <td>Gpr146</td>\n      <td>10.9</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Gpr158</td>\n      <td>53.6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Gpr176</td>\n      <td>9.7</td>\n    </tr>\n    <tr>\n      <td>Ano10</td>\n      <td>10.6</td>\n      <td></td>\n      <td>Gpr6</td>\n      <td>28.7</td>\n    </tr>\n    <tr>\n      <td>Atp13a1</td>\n      <td>18.6</td>\n      <td></td>\n      <td>Gprc5b</td>\n      <td>14.3</td>\n    </tr>\n    <tr>\n      <td>Atp13a3</td>\n      <td>30.7</td>\n      <td></td>\n      <td>Gprc5c</td>\n      <td>19.8</td>\n    </tr>\n    <tr>\n      <td>Atp1b1</td>\n      <td>17.2</td>\n      <td></td>\n      <td>Grm1</td>\n      <td>23.5</td>\n    </tr>\n    <tr>\n      <td>Cnga1</td>\n      <td>8.9</td>\n      <td></td>\n      <td>Lgr4</td>\n      <td>19.8</td>\n    </tr>\n    <tr>\n      <td>Grina</td>\n      <td>10.6</td>\n      <td></td>\n      <td>Lpar6</td>\n      <td>9.7</td>\n    </tr>\n    <tr>\n      <td>Mcoln1</td>\n      <td>16.9</td>\n      <td></td>\n      <td>Oxtr</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Nalcn</td>\n      <td>9.5</td>\n      <td></td>\n      <td>Tas1r2</td>\n      <td>20.6</td>\n    </tr>\n    <tr>\n      <td>Pex5l</td>\n      <td>63</td>\n      <td></td>\n      <td>Tm2d1</td>\n      <td>22.9</td>\n    </tr>\n    <tr>\n      <td>Piezo1</td>\n      <td>9.2</td>\n      <td></td>\n      <td>Tpra1</td>\n      <td>9.2</td>\n    </tr>\n    <tr>\n      <td>Slc29a4</td>\n      <td>9.2</td>\n      <td></td>\n      <td>Vom2r44</td>\n      <td>9.5</td>\n    </tr>\n    <tr>\n      <td>Slc30a7</td>\n      <td>38.4</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Slc30a9</td>\n      <td>71.1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Slc41a2</td>\n      <td>16.6</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tmem63a</td>\n      <td>13.2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tmem63b</td>\n      <td>35.5</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tmem63c</td>\n      <td>36.4</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tomm40</td>\n      <td>11.2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Trpm3</td>\n      <td>49.3</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Trpm7</td>\n      <td>65.9</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Unc80</td>\n      <td>41.3</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nIn this study, we set out to confirm the discovery that Piezo1 is a sensor of fecal microbiome ssRNA. We were not able to detect ssRNA-evoked changes in Piezo1 activity with in vitro calcium imaging and electrophysiological recordings. Instead, we present evidence that ssRNAs and fecal extracts can stimulate calcium influx in cultured cells, but this calcium activity depends on the cell line being used, rather than Piezo1 function. An unexpected finding is that dietary extracts can elicit calcium influx similar to fecal extracts. We also observed differential effects of fecal/dietary extracts between mouse colonies in different facilities, with some preparations showing more or less activity. This highlights the importance of controlling for elements of the diet when working with gut-derived samples.\n\nOur data leave open questions regarding the sources of Piezo1 activation and possible functional roles for ssRNAs in the gut. Interestingly, our observation that the enterochromaffin model cell line RIN14B responds to ssRNAs corroborates the recent evidence that there exists a gut-resident RNA receptor (Sugisawa et al., 2020). However, we are unable to reproduce the finding that Piezo1 is an RNA receptor, and we propose that Piezo1 is more likely functioning as a mechanosensor in the gut, as has been shown in many other tissues (Murthy et al., 2017; Syeda, 2021; Zhao et al., 2019).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>C57BL/6</td>\n      <td>Jax</td>\n      <td>Strain # 000664</td>\n      <td>Maintained in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Other (rodent chow)</td>\n      <td>Dietary extract</td>\n      <td>LabDiet</td>\n      <td>Prolab RMH 1800 5LL2</td>\n      <td>Autoclaved in Chesler lab and used in Chesler and Patapoutian labs</td>\n    </tr>\n    <tr>\n      <td>Biological sample (rodent feces)</td>\n      <td>Fecal extract</td>\n      <td>This study</td>\n      <td>Derived from C57BL/6 mice</td>\n      <td>Freshly isolated in Chesler lab and used in Chesler and Patapoutian labs</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Neuro-2a cells</td>\n      <td>ATCC</td>\n      <td>CCL-131</td>\n      <td>Maintained in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Piezo1-KO Neuro-2a cells</td>\n      <td>Max Delbr\u00fcck Center for Molecular Medicine; Moroni et al., 2018</td>\n      <td></td>\n      <td>Maintained in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293 cells</td>\n      <td>ATCC</td>\n      <td>CRL-1573</td>\n      <td>Maintained in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>PIEZO1-KO HEK293 cells</td>\n      <td>Scripps Research; Dubin et al., 2017</td>\n      <td></td>\n      <td>Maintained in Patapoutian lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>GCaMP6s HEK293 cells</td>\n      <td>This study</td>\n      <td>Derived from the Flp-In T-Rex 293 cell line (Thermo Fisher, R78007)</td>\n      <td>Maintained in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (Rattus norvegicus)</td>\n      <td>RIN14B cells</td>\n      <td>ATCC</td>\n      <td>CRL-2059</td>\n      <td>Maintained in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CMV-mPiezo1-IRES-eGFP</td>\n      <td>Addgene</td>\n      <td>80925</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CMV-mPiezo1</td>\n      <td>This study</td>\n      <td>Derived from pcDNA5-FRT (Thermo Fisher, V601020)</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CMV-hPIEZO1</td>\n      <td>This study</td>\n      <td>Derived in A. Patapoutian lab</td>\n      <td>Used in Patapoutian lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CMV-GCaMP6s</td>\n      <td>Addgene</td>\n      <td>40753</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLV-CMV-GCaMP6s-PGK-Hyg</td>\n      <td>This study</td>\n      <td>Derived from pLV-CMV-PGK-Hyg (Cellomics Technology, LVR-1046)</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ssRNA40</td>\n      <td>Invivogen</td>\n      <td>A40-41-02</td>\n      <td>Used in Chesler and Patapoutian labs</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ssRNA41</td>\n      <td>Invivogen</td>\n      <td>A41-41-02</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Yoda1</td>\n      <td>Sigma-Aldrich</td>\n      <td>SML558-5MG</td>\n      <td>Used in Chesler and Patapoutian labs</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ionomycin</td>\n      <td>Sigma-Aldrich</td>\n      <td>I0634</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Gadolinium (III) chloride</td>\n      <td>Sigma-Aldrich</td>\n      <td>439770</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>AITC</td>\n      <td>Sigma-Aldrich</td>\n      <td>377430</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>A-967979</td>\n      <td>Sigma-Aldrich</td>\n      <td>SML0085</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fluo-4 AM dye</td>\n      <td>Fisher Scientific</td>\n      <td>F14201</td>\n      <td>Used in Chesler lab</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fluo-8 AM dye</td>\n      <td>AAT Bioquest</td>\n      <td>21080</td>\n      <td>Used in Patapoutian lab</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nAll experiments involving mice adhered to the animal usage guidelines set by the National Institutes of Health (NIH) and were first approved by the National Institute of Neurological Disorders and Stroke (NINDS) Animal Care and Use Committee. Equal numbers of male/female wildtype C57BL/6J mice between the ages of 6 weeks and 1 year were used. The mice were housed in an AAALAC International accredited pathogen-free facility with ad libitum access to food and water. Water was purified by reverse osmosis and then UV-treated and chlorinated at 15\u201318 ppm such that after 2 weeks the chlorine concentration was \u22652 ppm. The diet consisted purely of the chemically defined Prolab RMH 1800 (LabDiet, 5LL2) autoclaved rodent chow.\n\n### Cell lines\n\nCell lines were purchased from the ATCC biobank, acquired by MTA through their origin laboratory, or generated in this study. The following cell lines were used in the study: wildtype N2a cells (ATCC, CCL-131), Piezo1-KO N2a cells (Moroni et al., 2018), wildtype HEK293 cells (ATCC, CRL-1573), PIEZO1-KO HEK293 cells (Dubin et al., 2017), GCaMP6s HEK293 cells (this study), and RIN14B cells (ATCC, CRL-2059) (Nozawa et al., 2009). Cell lines were authenticated by morphological and functional testing (i.e., electrophysiology and calcium imaging). The cells were confirmed to be mycoplasma-free prior to using them in experiments. All cell lines were maintained on polystyrene culture plates (Fisher Scientific, 07-200-80) in a 5% CO2 humidified incubator at 37\u00b0C. The growth medium was changed every 2\u20133 days and consisted of RPMI-1640 (for the RIN14B cells) (Fisher Scientific, 11-875-093) or otherwise DMEM/F12 (Fisher Scientific, 11330032) supplemented with 10% fetal bovine serum (Fisher Scientific, 26140079). Cells were passaged when they reached confluence, which was roughly twice per week, and all cultures that were used for experiments were not propagated beyond 20 passages. For passaging, cells were rinsed in PBS (Fisher Scientific, 10010023) and then incubated in Accutase (Fisher Scientific, 00-4555-56) for ~5 min at 37\u00b0C to detach. Cells were collected in a 15 mL tube (Fisher Scientific, 12-565-268) and centrifuged at 300 rcf for 3 min to pellet. The supernatant was aspirated, and cells were resuspended in growth medium followed by plating in new polystyrene plates. Typical dilution ratios for passaging were between 1:3 and 1:20.\n\n### Generating GCaMP6s stable HEK293 cells\n\nGCaMP6s was generated by a custom gene synthesis service (Epoch Life Science) and subcloned into a pLV-CMV-PGK-Hyg lentiviral vector (Cellomics Technology, LVR-1046) to make pLV-CMV-GCaMP6s-PGK-Hyg. This vector was used to produce lentiviral particles (Vigene Biosciences). Then, wildtype HEK293 cells (ATCC, CRL-1573) were infected in regular growth medium with 5 \u00b5g/mL polybrene (Sigma-Aldrich, TR-1003-G) and the lentivirus at a multiplicity of infection of five viral particles per cell. Transduction was allowed to occur overnight. The cells were then replated, and 48 hr later 100 \u00b5g/mL Hygromycin B was added to initiate antibiotic selection. After 2 weeks of culture and passaging, a hygromycin-resistant polyclonal GCaMP6s stable HEK293 cell line was isolated.\n\n### Plasmid transfection\n\nWildtype HEK293, GCaMP6s HEK293, Piezo1-KO N2a, and RIN14B cells were used in transfection experiments. Other cell lines were used untransfected to examine endogenously expressed Piezo1 (wildtype N2a cells) or were used in FLIPR experiments described further below (PIEZO1-KO HEK293 cells). Cells were seeded in 24-well plates 24\u201372 hr before transfection. Transfection was performed when the cells were at ~70% confluence using 500 ng plasmid DNA and the Lipofectamine 3000 kit (Fisher Scientific, L3000001) following the manufacturer\u2019s instructions. The following plasmids were used in the study: CMV-mPiezo1-IRES-eGFP, CMV-mPiezo1, and CMV-GCaMP6s. CMV-mPiezo1-IRES-eGFP was a gift from Ardem Patapoutian (Addgene plasmid #80925; http://n2t.net/addgene:80925) and was used for all electrophysiological recordings. CMV-mPiezo1 was previously generated in-house by subcloning mouse Piezo1 into the pcDNA5/FRT expression vector (Fisher Scientific, V601020) \u2013 this plasmid was used for all calcium imaging of Piezo1 activity. CMV-GCaMP6s was a gift from Douglas Kim and the GENIE Project (Addgene plasmid #40753; http://n2t.net/addgene:40753) and was used for calcium imaging of RIN14B cells.\n\n### Calcium imaging\n\nRinger\u2019s solution was used for all physiological assays, consisting of 133 mM NaCl, 3 mM KCl, 2.5 mM CaCl2, 1 mM MgCl2, 10 mM glucose, 10 mM HEPES, and 40.9 mM sucrose (all from Sigma-Aldrich) dissolved in water. The pH was adjusted to 7.3 with 1 M NaOH, and the osmolality was ~330 mmol/kg. Calcium influx was visualized in N2a cells and HEK293 cells using Fluo-4 AM dye (Fisher Scientific, F14201) or the GCaMP6s HEK293 cell line described above. For Fluo-4 AM imaging, 50 \u00b5g Fluo-4 AM was dissolved in 44 \u00b5L DMSO (Sigma-Aldrich, D2650) and mixed with 9 \u00b5L Pluronic F-127 (Fisher Scientific, P-3000MP) by vortexing. Then, 50 \u00b5L of this mixture was diluted in 14.3 mL Ringer\u2019s solution to make the \u2018loading solution.\u2019 Cells cultured in eight-chamber slides (Fisher Scientific, 177445PK) were first rinsed with Ringer\u2019s solution and then incubated in loading solution for 1 hr light-protected at room temperature. After 1 hr, the loading solution was removed, the cells were rinsed with Ringer\u2019s solution, and then immediately imaged in Ringer\u2019s solution using a pco.panda sCMOS back-illuminated camera at 3 frames/s with an Olympus IX73 inverted microscope and \u00d710 air objective. Videos were recorded and saved using pco.camware software. Solutions containing different compounds were added and removed via micropipette during video recording while maintaining the same volume (150 \u00b5L) in the chamber. Stock solutions of all compounds were dissolved and prepared following the manufacturer\u2019s instructions, and the final concentration used in each experiment can be found in each figure legend. The following commercially available compounds were used in the study: ssRNA40 (Invivogen, A40-41-02), ssRNA41 (Invivogen, A41-41-02), Yoda1 (Sigma-Aldrich, SML558-5MG), AITC (Sigma-Aldrich, 377430), gadolinium(III) chloride (Sigma-Aldrich, 439770), A-967979 (Sigma-Aldrich, SML0085), and ionomycin (Sigma-Aldrich, I0634).\n\nFiji software was used to import and analyze video files from pco.camware software (pco). The Template Matching and Slice Alignment plugin was used to align all video frames to correct for any drift (Tseng et al., 2011). For creating still-frame images, a grayscale baseline image was generated from an average of the first 10 frames of the recording. Separately, a fire-scale standard deviation Z-projection was generated from the frames where the cells were exposed to a specific treatment. The Z-projection image was then overlaid on top of the grayscale baseline image to visualize which cells responded to a given treatment. Supplemental videos were made from the raw recordings and exported at 10 frames/s so that 1 s of video is equivalent to 30 s of real time.\n\nFor quantifying responses, cellular regions of interest (ROIs) were drawn around randomly selected individual cells and used to measure the mean pixel intensity per frame. In cases where only certain regions within the field of view showed calcium influx, such as with poor fluid dispersion or the variable activation seen with fecal/dietary extracts, the ROI selection was restricted to this region of activation. We found that dissolved ssRNA40 and crude extracts produced substantial autofluorescence, which could be a confounding factor when analyzing calcium imaging recordings. However, a standard image background subtraction procedure effectively eliminated most of the fluorescence artifacts. This was accomplished by drawing an additional set of 10 background ROIs per recording that were in cell-free areas in the field of view. The mean pixel intensities were exported to Microsoft Excel software for normalization and quantification. An average of the background ROI values was subtracted from each cellular ROI frame-by-frame to correct for artifactual changes in background fluorescence. These values were then used to calculate the \u0394F/F0 for each cell. The mean pixel intensity of the first 10 frames was averaged to yield F0, and then F0 was subtracted from each frame\u2019s pixel intensity on a frame-by-frame basis to determine \u0394F. Dividing \u0394F by F0 (\u0394F/F0) normalized each cell\u2019s change in calcium fluorescence to its baseline level of fluorescence.\n\nTo quantify the maximal response to different treatments, the peak \u0394F/F0 from within the treatment exposure timeframe was selected for each cell. All recordings ended with ionomycin treatment to elicit maximum calcium influx for normalization purposes. In cases where two different recordings showed significantly different ionomycin responses, the \u0394F/F0 for experimental treatments was normalized a percentage of the peak ionomycin response. \u0394F/F0 values were exported to GraphPad 8.0 (Prism) for visualization and graphing. An n = 25\u201350 cells was analyzed for each calcium imaging recording and are representative of at least three independently performed transfections and recording sessions per condition.\n\n### Electrophysiology\n\nN2a cells and HEK293 cells were plated in 35 mm dishes (Fisher Scientific, 353001) ~24 hr prior to recording, and the next day they were rinsed once in Ringer\u2019s solution before recording in Ringer\u2019s solution. Patch-clamp recordings were performed in whole-cell voltage-clamp mode by glass micropipette electrodes that were pulled and polished to 2\u20136 M\u03a9 resistance. The pipette was filled with internal solution consisting of 133 mM CsCl, 1 mM CaCl2, 1 mM MgCl2, 5 mM EGTA, 10 mM HEPES, 4 mM Mg-ATP, 0.4 mM Na2-GTP, 43.8 mM sucrose (all from Sigma-Aldrich). Internal solution pH was adjusted to 7.3 with 1 M CsOH, and the osmolality was ~320 mmol/kg. After establishing a G\u03a9 seal with the patch pipette on a cell membrane and breaking into whole-cell configuration, cells were held at \u201380 mV and mechanically stimulated with a separate glass-polished probe to elicit Piezo1 currents. The probe was a micropipette that was heat-polished to seal the tip until rounded with a width of 3\u20135 \u00b5m. The probe was attached to a piezoelectric translator (Physik Instrumente, P841.20) and mounted on a micromanipulator (Sutter Instrument, MP-225) at 45\u00b0 angle to the cell surface. To stimulate the cells, the probe was maneuvered to rest ~1 \u00b5m above the cell surface and then sequentially indented for 200 ms in 1 \u00b5m increments from 1 to 10 \u00b5m with a 2 ms ramp time. Each indentation was separated by 2 s. Whole-cell currents were measured by a Multiclamp 700b amplifier (Molecular Devices) and digitized by a Digidata 1550 (Molecular Devices) at 100 kHz and then low-pass filtered at 10 kHz. The signals were saved digitally using Clampex 11.1 software (Molecular Devices).\n\nClampfit 11.1 software (Molecular Devices) was used to analyze the electrophysiological recordings. Any whole-cell recording showing a static leak current >200 pA was discarded from analysis due to poor patch seal quality. Additionally, cells with a peak mechanically evoked current <30 pA were considered nonresponders and discarded since these currents are near the baseline noise level and their kinetics could not be reliably analyzed. Additionally, cells with a peak current >4000 pA were discarded due to the abnormally high values and generally unhealthy swelled morphology of such cells. Finally, recordings were discarded if the patch pipette seal broke before three consecutive mechanically evoked responses because low indentation responses have distinct kinetics that bias analysis. In the end, an equal number of recordings (5\u20137) were discarded from each condition (from a total of 15\u201325 attempted cells/condition), with no apparent systematic bias toward any of the control or ssRNA conditions. The remaining recordings (one per cell) were filtered at 1 kHz and thresholded to 0 pA. The maximal current was measured by the largest amplitude response before patch breakage or by reaching 10 \u00b5m membrane indentation, whichever came first. This same response was then used to approximate the time constant of inactivation (tau) by calculating the time taken to decay 63.2% back to baseline. The mechanical activation threshold was determined by the level of membrane indentation (\u00b5m) to elicit the first current response peak (pA) above the baseline level of noise. No systematic differences were observed for baseline noise level or maximum membrane indentation between conditions. Values were exported from Clampfit 11.1 to GraphPad 8.0 (Prism) for visualization and graphing. A minimum of n = 7 cells were analyzed per recording condition.\n\n### FLIPR assay\n\nPIEZO1-KO HEK293 or wildtype HEK293 cells were grown in Dulbecco\u2019s modified Eagle\u2019s medium containing 4.5 mg/mL glucose, 10% fetal bovine serum, and 1\u00d7 pen/strep. Cells were plated in 6-well plates and transfected using Lipofectamine 2000 (Thermo Fisher Scientific) according to the manufacturer\u2019s instructions. Human PIEZO1 fused to IRES-TdTomato or mouse Piezo1 fused to IRES-GFP was transfected at 2 \u00b5g per well (6-well plate) for FLIPR. One day after transfection, the cells were dissociated from 6-well plates with trypsin and re-seeded into a 384-well plate, at 20,000 cells per well. The plate was then cultured for 1 day before washing with assay buffer (1\u00d7 HBSS, 10 mM HEPES, pH 7.4) in a ELx405 CW plate washer (BioTek Instruments). The cells were then incubated with 1.25 \u00b5M calcium indicator Fluo-8 AM (AAT Bioquest) in the assay buffer at 37\u00b0C for 1 hr. After washing out excess dye, fluorescence was measured on a FLIPR Tetra upon treatment with various reagents. A 1 mM stock solution of Yoda1 in dimethyl sulfoxide (DMSO) was used, resulting in a final concentration of 5 \u00b5M Yoda1 and 0.5% DMSO in the assay. The effect of ssRNA40 was tested at concentrations of 5, 2.5, 1.25, and 0.625 \u00b5g/mL. Ionomycin was added to 10 \u00b5M concentration as a final normalization. All measurements were taken from four biological replicates (four different wells in 384-well plate).\n\n### Crude extract preparations\n\nFresh mouse feces were gathered by gently holding the mouse over a sterile 1.5 mL tube and collecting the fecal matter directly into the tube as it was excreted. Feces from 10 to 20 adult mice were pooled together, diluted to 0.1 g/mL in Ringer\u2019s solution, and homogenized using a sterile mortar and pestle. The sample was then centrifuged at 300 rcf for 3 min to pellet any remaining undissolved fecal matter and then sequentially filtered through 100, 40, and finally 0.45 \u00b5m mesh membranes (Fisher Scientific, SLHAR33SS) to produce the \u2018fecal extract.\u2019 Because this extract was strongly autofluorescent during calcium imaging, the fecal extract was further diluted 1:20 in Ringer\u2019s solution from its original 0.1 g/mL to a final concentration of 5 mg/mL when applying it to cell cultures. Dietary extracts were prepared in identical fashion to fecal extracts, with the exception that mouse food pellets were first crushed in a dry state using mortar and pestle and then transferred to Ringer\u2019s solution (0.1 g/mL).\n\nFour different fecal extract preparations and three different dietary extract preparations were independently made and tested over the course of the study at the NIH. A separate set of fecal and dietary extracts were prepared from mice at Scripps/HHMI. The NIH-sourced extracts showed substantially more stimulatory activity on HEK293 cells when tested in parallel with the Scripps/HHMI extracts, indicating possible differences owing to the specific mouse colony and commercial diet source. For RNase treatment of fecal extracts, RNase A (Fisher Scientific, EN0531) was added at a final concentration of 500 \u00b5g/mL to the 0.1 g/mL fecal extract and incubated at 37\u00b0C for 30 min. Mock-treated fecal extracts were handled in the same way but without addition of RNase A. The RNase- and mock-treated fecal extracts were then used for calcium imaging on Piezo1-transfected HEK293 cells at a final concentration of 5 mg feces per mL.\n\nTo check whether the fecal and dietary extracts were nonspecifically activating cells due to changes in osmolality or pH, these properties were examined in extracts that were diluted to the working concentration of 5 mg/mL in Ringer\u2019s solution. The control Ringer\u2019s solution that was tested had an osmolality of ~336 mmol/kg and 7.5 pH. In comparison, fecal extract was ~332 mmol/kg and 7.5 pH, and dietary extract was ~334 mmol/kg and 7.5 pH. These measurements indicate that the extracts did not substantially affect the osmolality or pH of the solutions.\n\n### Fecal RNA purification\n\nRNA was extracted from mouse feces by a standard phenol/chloroform protocol. Then, 500 \u00b5L TRIzol (Fisher Scientific, 15596026) was added per 50 mg feces and homogenized using an RNase-free tube and plunger (Takara, 9791A). Also, 100 \u00b5L chloroform (Sigma-Aldrich) was then added per 500 \u00b5L TRIzol, vortexed vigorously followed by 3 min incubation at room temperature, and centrifuged at 12,000 rcf for 10 min at 4\u00b0C. The aqueous layer was transferred to a clean tube and the RNA was extracted using the miRNeasy kit (QIAGEN, 217004) following the manufacturer\u2019s instructions. The RNA content of the samples was measured using a NanoDrop (Fisher Scientific, ND-2000), confirming an ~2.0 ratio of 260/280 nm absorbance. These purified RNA samples yielded ~300 ng/\u00b5L RNA, while RNA in the crude fecal extracts was below the detection range of the NanoDrop. The samples were separated on an agarose gel and examined for nucleic acid content. The purified fecal RNA manifested as a smear, ranging from short oligonucleotides tens of base pairs (bp) in size up to 300 bp (Figure 3C). To confirm that the samples were in fact RNA and not DNA, fecal extracts and purified fecal RNA were treated with 500 \u00b5g/mL RNase A (Fisher Scientific, EN0531) for 30 min at 37\u00b0C before running on an agarose gel (Figure 3C). The fecal RNA was then tested on Piezo1-transfected HEK293 cells at a final concentration of 10 \u00b5g/mL, which was the same concentration used in the Sugisawa study (Figure 3D).\n\nAdditionally, fecal RNA was purified using the same methodology and NucleoSpin TriPrep kit (Macherey-Nagel, 740966.10) as in the Sugisawa study, following the manufacturer\u2019s instructions. Then, 350 \u00b5L buffer RP1 was added per 50 mg feces, and the samples were homogenized using an RNase-free tube and plunger (Takara, 9791A) and vortexed for 5 s. A wide-bore pipette was then used to transfer the samples to a NucleoSpin filter, and the RNA was washed and extracted following the TriPrep protocol. RNA concentration was 100\u2013200 ng/\u00b5L, and the purity was confirmed by an ~2.0 ratio of 260/280 nm absorbance via NanoDrop. Applying these purified fecal RNA samples at a final concentration of 10 \u00b5g/mL did not elicit calcium influx in Piezo1-transfected HEK293 cells.\n\n### Single-nuclei RNA sequencing\n\nRIN14B cells were put on ice, washed with chilled PBS, and then lysed with chilled Nuclei EZ lysis buffer (Sigma-Aldrich, NUC-101). Single cells were isolated with a 40 \u00b5m filter and pelleted in a centrifuge for 8 min, 800 rcf, 4\u00b0C. The nuclei were resuspended using PBS with 1% BSA and counted using a hemocytometer with trypan blue viability dye. The nuclei were centrifuged and resuspended at an appropriate volume for the 10X Chromium system (10X Genomics). The nuclei were counted once more to check the number and quality before proceeding with 10X Chromium processing and library construction as per the manufacturer\u2019s instructions. Next Gen sequencing with a Chromium V2 chemistry was carried out on an Illumina NextSeq 500. Illumina NextSeq 500 pre-mRNA sequencing data were aligned to the Rattus norvegicus genome using CellRanger. The data were then analyzed with Seurat V3.0 as described previously (Butler et al., 2018).\n\n### Statistical analysis\n\nAll data were first tested for normality using the Shapiro\u2013Wilk test. Normally distributed data were analyzed by one-way ANOVA with Bonferroni multiple-comparisons correction, and non-normally distributed data were analyzed by Kruskal\u2013Wallis test with Dunn\u2019s multiple-comparisons correction. Statistical significance was determined by a p-value<0.05. The degree of statistical significance is indicated in each figure legend using asterisks. One cell equals one biological replicate for calcium imaging and electrophysiology experiments. The n number of biological replicates for each condition are representative of at least three separately run experiments. The n and error bar definitions are reported in each figure legend. No power analyses were done to determine sample sizes a priori, but our sample sizes adhere to those reported in similar previous studies (Sugisawa et al., 2020). All graphing and statistical testing was performed using GraphPad 8.0 software (Prism), and figures were assembled using Adobe Illustrator 2021.\n",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "83cf2ec8-2aa6-454f-9a4d-7e27ef488889",
+      "submission_id": "76222ee1-b3d7-4200-aac6-b67a567949b7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon T Sack, https://ror.org/05rrcem69 University of California Davis School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83346.sa0](https://doi.org/10.7554/eLife.83346.sa0)\n\nThis is an important study that resolves a controversy about a proposed molecular linkage between the fields of mechanobiology and RNA signaling. While prior research had claimed that a specific mechanosensitive ion channel in the gut responds to a specific fecal RNA, this study provides compelling evidence that the mechanosensitive ion channel does not respond to the RNA.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jon T Sack, https://ror.org/05rrcem69 University of California Davis School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83346.sa1](https://doi.org/10.7554/eLife.83346.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Reevaluation of Piezo1 as a gut RNA sensor\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Please consider the suggestions made by reviewers #1 and #3.\n\nReviewer #1 (Recommendations for the authors):\n\nIdeally, this article should be published in Cell (in response to Sugisawa et al., 2020), but eLife is also a very appropriate place for it. I have only a few suggestions to improve what I find is already a very good manuscript.\n\n1. Figures 1 and 4 should include panels displaying the peak current vs the poke indentation displacement to better illustrate the various stimulus-response relationships.\n\n2. Figure 1b should include a raw trace for the vehicle treatment condition, in addition to the raw traces for the ssRNA40 and ssRNA41 treatments.\n\n3. It would be a much better resource for future work aimed at identifying the rector for ssRNA, if the authors obtain transcriptomic profiles for ssRNA-sensing RIN14b cells and the non-ssRNA sensitive N2A cells, and compute genes that are differentially expressed. In addition, it would help to not limit this candidate list to known receptors, but to extend it to all putative transmembrane proteins (e.g. 2 predicted TM domains). This request is not within the major scope of this work, but please consider doing it.\n\n4. In the final paragraph of the results the authors state that \"algorithmic clustering of individual nuclear transcriptomes revealed a homogenous cell culture population without any meaningful transcriptomic sub-populations\", but then analyze expression levels \"as a fraction of cells\". This seems contradictory and confusing. Please clarify whether or not the population of cells is indeed homogenous and/or why this analysis needs to be done 'as a fraction of cells'.\n\nReviewer #2 (Recommendations for the authors):\n\nUsing calcium imaging and electrophysiology, the authors in this study have systematically examined the previously reported finding that the mechanical activation ion channel Piezo1 might be directly activated by a gut RNA sensor. The experiments have been carefully designed and proper controls have been included. It is compelling that the present study disputed the previous finding that ssRNA can specifically activate Piezo1 independent of mechanical stimulation. The conclusion from the present study is well supported by the data. The reviewer supports the publication of the current manuscript.\n\nReviewer #3 (Recommendations for the authors):\n\nI have only two concerns:\n\nIn the abstract and introduction, the authors refer to Sugisawa et al's finding regarding ssRNA4 and Piezo1 interaction as \"provocative\". I agree that the report was met with great skepticism, but was it really provocative? It is entirely up to the authors to keep the wording as is though.\n\nLine 66 \u2013 \"it was shown that Piezo1 in the mouse gut is not activated by mechanical forces\" to my recollection, the authors of the disputed study never claimed that Piezo1 is not activated by force, they maintained, erroneously, that Piezo1 is activated by ssRNA. Please clarify.\n",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0e0d0b29-6f20-44ef-b110-5d44612f103f",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C1",
+      "claim": "Piezo1 is a stretch-gated ion channel required for mechanosensation in many organ systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 is a stretch-gated ion channel required for mechanosensation in many organ systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about Piezo1 function that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "6d49bf84-4bb5-4f88-9d95-34b20263dda1",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C2",
+      "claim": "Recent findings suggest that Piezo1 is a sensor of microbial single-stranded RNA (ssRNA) rather than mechanical force.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent findings point to a new role for Piezo1 in the gut, suggesting that it is a sensor of microbial single-stranded RNA (ssRNA) rather than mechanical force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior published findings (Sugisawa et al., 2020) that the authors are attempting to replicate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "99ca4fc7-817b-4746-9480-9eb0d74d2a28",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C3",
+      "claim": "Fecal extracts and ssRNA can stimulate calcium influx in certain cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observe that fecal extracts and ssRNA can stimulate calcium influx in certain cell lines, this response is independent of Piezo1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by calcium imaging data presented in the manuscript showing responses in specific cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "aecaa094-73fe-4b9a-924d-09113b8de6b0",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C4",
+      "claim": "The calcium response to fecal extracts and ssRNA is independent of Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observe that fecal extracts and ssRNA can stimulate calcium influx in certain cell lines, this response is independent of Piezo1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments using Piezo1-KO cells and comparing transfected vs untransfected cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "1b6b8e91-9d3e-49d4-89e4-a91f6853df42",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C5",
+      "claim": "Sterilized dietary extracts devoid of gut biome RNA show similar cell line-specific stimulatory activity to fecal extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, sterilized dietary extracts devoid of gut biome RNA show similar cell line-specific stimulatory activity to fecal extracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging experiments comparing dietary and fecal extracts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "a1cf9d4c-7ac2-41ce-a6f6-ee9a75083f34",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C6",
+      "claim": "Piezo1 is not a receptor for ssRNA in the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data highlight potential confounds inherent to gut-derived extracts, exclude Piezo1 as a receptor for ssRNA in the gut, and support a dedicated role for Piezo channels in mechanosensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the negative results from multiple experimental approaches in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "ad7effb3-9489-4c98-bb44-cd12c839584f",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C7",
+      "claim": "Piezo channels have a dedicated role in mechanosensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data highlight potential confounds inherent to gut-derived extracts, exclude Piezo1 as a receptor for ssRNA in the gut, and support a dedicated role for Piezo channels in mechanosensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' data and established knowledge about Piezo channel function.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "368a9751-de43-47af-83fc-49b67bef7dec",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C8",
+      "claim": "Piezo proteins transduce changes in plasma membrane tension into electrical current.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo proteins are mechanically gated ion channels that transduce changes in plasma membrane tension into electrical current (Ridone et al., 2019; Szczot et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "1fbbd03e-dda8-452d-beda-80b6afac447e",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C9",
+      "claim": "There are two members in the mammalian Piezo family: Piezo1 and Piezo2.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two members in the mammalian Piezo family: Piezo1 and Piezo2 (Coste et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original discovery paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "8fedb7da-826b-41b7-9e84-333d770df9f1",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C10",
+      "claim": "Piezo1 is expressed in many tissues, including the cardiovascular, hematopoietic, and skeletal systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 is expressed in many tissues, including the cardiovascular, hematopoietic, and skeletal systems (Jiang et al., 2021; Li et al., 2014; Retailleau et al., 2015; Rode et al., 2017; Sun et al., 2019; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "4eef6658-9078-43a1-98d9-21729d6e1549",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C11",
+      "claim": "Piezo1 mediates the mechanical sensing of fluid flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Piezo1 mediates the mechanical sensing of fluid flow and is required for normal development and function of lymph and blood vessels (Li et al., 2014; Liu et al., 2020; Nonomura et al., 2018; Ranade et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "bc1c8a2e-fa70-43c1-8911-00292a7c4a60",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C12",
+      "claim": "Piezo1 is required for normal development and function of lymph and blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Piezo1 mediates the mechanical sensing of fluid flow and is required for normal development and function of lymph and blood vessels (Li et al., 2014; Liu et al., 2020; Nonomura et al., 2018; Ranade et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "215e726d-59c5-49e9-8f14-a222e86a9181",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C13",
+      "claim": "Many blood cell types depend on Piezo1 for shear force sensing and volume regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, many blood cell types depend on Piezo1 for shear force sensing and volume regulation (Cahalan et al., 2015; Cinar et al., 2015; Faucherre et al., 2014; Solis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "6f214b68-9f81-4620-8805-6fbcf1700ee5",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C14",
+      "claim": "Vascular functions of Piezo1 are evident in the clinical manifestation of Piezo1 mutations in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "These vascular functions are particularly evident in the clinical manifestation of Piezo1 mutations in humans (Albuisson et al., 2013; Bae et al., 2013; Fotiou et al., 2015; Glogowska et al., 2017; Lukacs et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "b260599e-3647-4c82-bb57-410ae6450243",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C15",
+      "claim": "Piezo1 regulates the formation and maintenance of bone and cartilage through mechanical load sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 also regulates the formation and maintenance of bone and cartilage through mechanical load sensing (Hendrickx et al., 2021; Lee et al., 2014; Li et al., 2019; Sun et al., 2019; Wang et al., 2020; Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "7719ff93-4a84-44fe-9022-ec5f926402ef",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C16",
+      "claim": "Piezo1 functions as a mechanosensor in neural stem cells and certain epithelial and mesenchymal cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "In other organ systems, the role of Piezo1 is currently less well-defined, but it is known to function as a mechanosensor in neural stem cells and certain epithelial and mesenchymal cell types (Eisenhoffer et al., 2012; Martins et al., 2016; Miyamoto et al., 2014; Pathak et al., 2014; Sugimoto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "d16c4ca0-d3ea-498e-ac64-72bb1cc4bcfa",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C17",
+      "claim": "Piezo2 is expressed at its highest levels in the somatosensory system, vagal-nodose complex, and specialized epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the homologous Piezo2 is expressed at its highest levels in the somatosensory system, vagal-nodose complex, and specialized epithelial cells (Chiu et al., 2014; Kupari et al., 2019; Nguyen et al., 2017; Usoskin et al., 2015; Wang et al., 2017; Woo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "8b6c843a-a3a3-4616-81d8-135acb7088e6",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C18",
+      "claim": "Piezo2 is responsible for detecting gentle touch, vibration, and proprioception in mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo2 is responsible for detecting gentle touch, vibration, and proprioception in mice and humans (Chesler et al., 2016; Ranade et al., 2014a; Woo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "8ba8285b-d48c-4470-91c8-dc2b76d1557f",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C19",
+      "claim": "Many extrinsic factors can influence Piezo mechanosensitivity, including membrane tension, membrane voltage, cytoskeletal integrity, extracellular matrix contact, cyclic adenosine monophosphate signaling, and phosphatidylinositol second messenger pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Many extrinsic factors can influence Piezo mechanosensitivity, including membrane tension, membrane voltage, cytoskeletal integrity, extracellular matrix contact, cyclic adenosine monophosphate signaling, and phosphatidylinositol second messenger pathways (Borbiro et al., 2015; Dubin et al., 2012; Gaub and M\u00fcller, 2017; Moroni et al., 2018; Narayanan et al., 2018; Romero et al., 2019; Romero et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "b15a1cf2-6587-4c88-a63d-9f4f200cb550",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C20",
+      "claim": "High-throughput drug screens have generated synthetic small molecules called Yoda1, Jedi1, and Jedi2, which act as allosteric modulators of Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, high-throughput drug screens have generated the synthetic small molecules called Yoda1, Jedi1, and Jedi2, which act as allosteric modulators of Piezo1 by stabilizing its open conformation (Botello-Smith et al., 2019; Syeda et al., 2015; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "c6731421-ada0-47db-bad9-3dad01630c18",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C21",
+      "claim": "Yoda1, Jedi1, and Jedi2 stabilize the open conformation of Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, high-throughput drug screens have generated the synthetic small molecules called Yoda1, Jedi1, and Jedi2, which act as allosteric modulators of Piezo1 by stabilizing its open conformation (Botello-Smith et al., 2019; Syeda et al., 2015; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "02aba2a7-d9b5-4b66-a8e8-9628e63323c1",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C22",
+      "claim": "A recent study provided the first evidence of endogenous ligands for Piezo channels.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study provided the first evidence of endogenous ligands for Piezo channels (Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Sugisawa study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "2032f2fd-f993-4a1b-bc74-6eea3b491eb3",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C23",
+      "claim": "It was shown that Piezo1 functions as a ligand-gated ion channel to sense single-stranded RNAs (ssRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, it was shown that Piezo1 functions as a ligand-gated ion channel to sense single-stranded RNAs (ssRNAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to the findings from the Sugisawa study that the authors are attempting to replicate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "0187f6db-0909-480e-95b3-542314f813b4",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C24",
+      "claim": "It was proposed that bioactive ssRNAs are produced by the gut microbiome and function through Piezo1 channels to alter serotonin production and trigger a physiological cascade that impacts bone homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "It was proposed that bioactive ssRNAs are produced by the gut microbiome, and that these molecules function through Piezo1 channels to alter serotonin production and trigger a physiological cascade that impacts bone homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to the hypothesis from the Sugisawa study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "18c52d55-54dc-4840-a7aa-fd804856a202",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C25",
+      "claim": "ssRNA40 is a synthetic 20-mer ssRNA oligonucleotide derived from the human immunodeficiency virus (HIV) genome.",
+      "claim_type": "EXPLICIT",
+      "source": "ssRNA40 is a synthetic 20-mer ssRNA oligonucleotide derived from the human immunodeficiency virus (HIV) genome (Heil et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original characterization of ssRNA40.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "21e56c83-6f1b-40c6-87d7-b04f9dd8c0d0",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C26",
+      "claim": "ssRNA40 is an agonist for the immune surveillance toll-like receptors 7 and 8 in mice and humans, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "ssRNA40 is classically known as an agonist for the immune surveillance toll-like receptors 7 and 8 in mice and humans, respectively (Heil et al., 2004; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "d4eedad2-29af-4d0c-985d-b2c35cbb3c71",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C27",
+      "claim": "It was recently reported that ssRNA40 shows agonist activity toward the mechanosensitive ion channel Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was recently reported that ssRNA40 also shows agonist activity toward the mechanosensitive ion channel Piezo1 (Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the Sugisawa study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "066ea2a1-d073-44b0-a4cc-cdd526536400",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C28",
+      "claim": "N2a cells natively express Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this finding, we first used the Neuro-2a (N2a) mouse neuroblastoma cell line since these cells natively express Piezo1 (Coste et al., 2010) and were reported to conduct a Piezo1-dependent current in the presence of ssRNA40 (Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "95063aa6-93b6-4869-b6ab-41c78c050585",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C29",
+      "claim": "N2a cells were reported to conduct a Piezo1-dependent current in the presence of ssRNA40.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this finding, we first used the Neuro-2a (N2a) mouse neuroblastoma cell line since these cells natively express Piezo1 (Coste et al., 2010) and were reported to conduct a Piezo1-dependent current in the presence of ssRNA40 (Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the Sugisawa study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "51b1e98b-549d-42d0-847f-7f5a65c17988",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C30",
+      "claim": "Application of ssRNA40 did not elicit a detectable increase in fluorescence in N2a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ssRNA40 from the same supplier and dosage as prior studies (10 \u00b5g/mL) (Sugisawa et al., 2020), we found that application of ssRNA40 did not elicit a detectable increase in fluorescence, even when the imaging time frame was extended up to 3 min (Figure 1A and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "097e754e-223b-46ea-b3f6-eaa89ec52907",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C31",
+      "claim": "Yoda1 is known to induce Piezo1-dependent calcium transients.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control for Piezo1 activation, we used Yoda1, which is known to induce Piezo1-dependent calcium transients (Syeda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "776f4c8d-1504-48ad-8fb6-0960fa47b6a5",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C32",
+      "claim": "30 \u00b5M Yoda1 triggered a dramatic calcium influx over the course of ~1 min in virtually all N2a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A 30 \u00b5M Yoda1 triggered a dramatic calcium influx over the course of ~1 min in virtually all N2a cells (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "96a24b14-7d1e-4d23-816c-ae4d60994d41",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C33",
+      "claim": "ssRNA41 is the same length and sequence as ssRNA40, except all uridine residues are substituted with adenosine.",
+      "claim_type": "EXPLICIT",
+      "source": "ssRNA41 is the same length and sequence as ssRNA40, except all uridine residues are substituted with adenosine; unlike ssRNA40, this molecule is not a TLR7/8 agonist (Heil et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original characterization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "b00d465c-d91b-43c3-a48e-ccd2b385e0d2",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C34",
+      "claim": "ssRNA41 is not a TLR7/8 agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "ssRNA41 is the same length and sequence as ssRNA40, except all uridine residues are substituted with adenosine; unlike ssRNA40, this molecule is not a TLR7/8 agonist (Heil et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original characterization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "67c3b7f6-dfad-4b7f-9a1f-7d8711fef964",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C35",
+      "claim": "There was no significant difference in N2a cell calcium activity between vehicle controls and ssRNA40.",
+      "claim_type": "EXPLICIT",
+      "source": "After autofluorescence subtraction, there was no significant difference in N2a cell calcium activity between these negative controls and ssRNA40 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "c4424153-84ba-432e-945a-6919320432de",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C36",
+      "claim": "ssRNA40 was reported to delay the inactivation of Piezo1 mechanically evoked currents.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to directly activating Piezo1, ssRNA40 was reported to delay the inactivation of Piezo1 mechanically evoked currents (Sugisawa et al., 2020), similar to Yoda1 (Syeda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the Sugisawa study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "ce7821fe-d88c-4526-8afb-9d6a7d4b3c1c",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C37",
+      "claim": "Yoda1 delays the inactivation of Piezo1 mechanically evoked currents.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to directly activating Piezo1, ssRNA40 was reported to delay the inactivation of Piezo1 mechanically evoked currents (Sugisawa et al., 2020), similar to Yoda1 (Syeda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "e4a45b85-a2a7-4b47-99b2-8daafdede15a",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C38",
+      "claim": "Mechanical stimulation of N2a cells elicited a rapidly inactivating inward current, which is characteristic of the Piezo family of ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation elicited a rapidly inactivating inward current, which is characteristic of the Piezo family of ion channels (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 1D and established knowledge about Piezo channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "47f25a2f-a0f9-4f10-be86-4ad323c4c029",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C39",
+      "claim": "30 \u00b5M Yoda1 in the external bath solution resulted in a reduced apparent mechanical activation threshold and a prolonged inactivation phase of the currents in N2a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, including 30 \u00b5M Yoda1 in the external bath solution resulted in a reduced apparent mechanical activation threshold and a prolonged inactivation phase of the currents (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "ac646d22-beea-4304-b11f-6efd703633d2",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C40",
+      "claim": "10 \u00b5g/mL ssRNA40 in the bath solution showed no measurable change from the vehicle control on the amplitude, activation threshold, or inactivation rate of mechanically evoked currents in N2a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 10 \u00b5g/mL ssRNA40 in the bath solution showed no measurable change from the vehicle control on the amplitude, activation threshold, or inactivation rate of mechanically evoked currents (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "ea553817-e46e-4d14-b463-9a653435dfc5",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C41",
+      "claim": "ssRNA40 was reported to have a relatively small effect size compared to the Piezo1 agonist activity of Yoda1.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the Piezo1 agonist activity of Yoda1, ssRNA40 was reported to have a relatively small effect size (Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the Sugisawa study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "ed6f7ef0-82c7-4e3d-97b6-101e191a8fd9",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C42",
+      "claim": "HEK293 cells express very low but detectable levels of human Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a noticeable but nonsignificant calcium response of untransfected cells to Yoda1 (Figure 2C), consistent with a previous report that HEK293 cells express very low but detectable levels of human Piezo1 (Dubin et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to prior research and data shown in Figure 2C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "99e9ec0e-454a-41e5-b046-14ee96c8520a",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C43",
+      "claim": "In both untransfected and Piezo1-transfected HEK293 cells, there was no significant calcium activity between vehicle, ssRNA40, and ssRNA41.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in both untransfected and Piezo1-transfected conditions, we found no significant calcium activity between vehicle, ssRNA40, and ssRNA41 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "1ef9e1e9-3bb4-4879-9755-a83ff0da1d08",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C44",
+      "claim": "Prior studies used between 5 and 20 \u00b5g/mL ssRNA40 in their experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies used between 5 and 20 \u00b5g/mL ssRNA40 in their experiments (Heil et al., 2004; Lehmann et al., 2012; Shibata et al., 2016; Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "bc819f93-d9f4-465a-b2b5-1225bacbb7b9",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C45",
+      "claim": "ssRNA40 did not trigger significant calcium influx in Piezo1-transfected HEK293 cells at any concentration from 0.05 to 50 \u00b5g/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a log scale range from 0.05 to 50 \u00b5g/mL, we did not observe significant calcium influx triggered by ssRNA40 at any concentration (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "222f6259-d46f-4768-acf9-4ebf616dc057",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C46",
+      "claim": "The Piezo1-KO HEK293 cell line used in this study is the identical cell line used in the originally published ssRNA experiments on Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this is the identical cell line used in the originally published ssRNA experiments on Piezo1 (Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Sugisawa study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "bc18d8c5-0740-4ed2-8f6d-e9d5438ea9ba",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C47",
+      "claim": "No increase in calcium was detected in PIEZO1-KO HEK293 cells throughout exposure to ssRNA40, and there were no significant differences between transfected and untransfected cells or across the various ssRNA40 concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "No increase in calcium was detected throughout exposure to ssRNA40, and there were no significant differences between transfected and untransfected cells or across the various ssRNA40 concentrations (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FLIPR data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "a784da33-4f37-41c3-81de-ddba65aea183",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C48",
+      "claim": "There was no change in the Yoda1 response following treatment with vehicle or different ssRNA40 concentrations in PIEZO1-KO HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found no change in the Yoda1 response following treatment with vehicle or different ssRNA40 concentrations (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FLIPR data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "dc1629db-adee-4b7a-950a-9ec232f5a709",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C49",
+      "claim": "ssRNA40 does not activate Piezo1 directly or modulate its mechanotransduction in either N2a cells or HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data independently corroborate our previous observations that ssRNA40 does not activate Piezo1 directly or modulate its mechanotransduction in either N2a cells or HEK293 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the combined negative results from multiple experimental approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "8231bd3c-2513-4a53-81d7-26bb62d2d6af",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C50",
+      "claim": "Both crude fecal extracts and purified fecal RNA were reported to elicit a calcium influx in Piezo1-transfected HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that both crude fecal extracts and purified fecal RNA elicit a calcium influx in Piezo1-transfected HEK293 cells (Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the Sugisawa study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "c5fca94f-7aad-4c57-8018-414d914ce141",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C51",
+      "claim": "Applying fecal extract to Piezo1-transfected HEK293 cells triggered a substantial calcium response.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying fecal extract to Piezo1-transfected HEK293 cells triggered a substantial calcium response (Figure 3A and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "1db0bcea-f62e-4482-9193-66e4ffbf013f",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C52",
+      "claim": "The response to 5 mg/mL fecal extract was variable; not all cells in the field of view would necessarily respond, and the response onset was often 30\u201360 s after the fecal extract was first added.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, across several imaging trials, we noticed that the response to 5 mg/mL fecal extract was variable; not all cells in the field of view would necessarily respond, and the response onset was often 30\u201360 s after the fecal extract was first added (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "37aea4ce-62ad-4560-a91b-ad9f8dcc57cd",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C53",
+      "claim": "Untransfected HEK293 cells had a similar calcium response to fecal extract as Piezo1-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, we also found that untransfected HEK293 cells had a similar calcium response to fecal extract, suggesting that fecal extracts may trigger calcium influx via a Piezo1-independent mechanism (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "1e3ff577-333c-4414-aa0c-ff49dce35b5a",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C54",
+      "claim": "Fecal extracts trigger calcium influx via a Piezo1-independent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, we also found that untransfected HEK293 cells had a similar calcium response to fecal extract, suggesting that fecal extracts may trigger calcium influx via a Piezo1-independent mechanism (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that untransfected cells respond similarly to transfected cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "a422ec9d-98c8-46a2-8b2a-23c1ed0a5107",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C55",
+      "claim": "Piezo1-KO HEK293 cells responded to fecal extract despite the complete absence of Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "This was confirmed by applying fecal extract to Piezo1-KO HEK293 cells, which still responded despite the complete absence of Piezo1 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "9b213ed6-0d13-4870-8b80-9e736f6cfddb",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C56",
+      "claim": "Purified fecal RNA at 10 \u00b5g/mL did not induce a detectable calcium influx in Piezo1-transfected HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the total extract, we did not observe a detectable calcium influx with 10 \u00b5g/mL fecal RNA \u2013 the same concentration used in other studies (Figure 3D; Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "9f1461e3-f208-41bb-ab7a-6289b8605792",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C57",
+      "claim": "Both RNase-treated and untreated fecal extracts activated Piezo1-transfected HEK293 cells to a similar degree.",
+      "claim_type": "EXPLICIT",
+      "source": "Both RNase-treated and untreated fecal extracts activated Piezo1-transfected HEK293 cells to a similar degree (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "af294297-77fa-4bf0-a5af-522a2bb0d9b7",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C58",
+      "claim": "Fecal extracts can stimulate calcium influx in HEK293 cells, but this effect is unlikely to be mediated by RNA and does not depend on Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments demonstrate that fecal extracts can stimulate calcium influx in HEK293 cells, but this effect is unlikely to be mediated by RNA and, regardless, the activity does not depend on Piezo1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the RNase treatment and Piezo1-KO experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "32075ca3-5140-4a7c-af53-052aed4ad54b",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C59",
+      "claim": "Applying 5 mg/mL dietary extract to HEK293 cells produced a substantial calcium response.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, applying 5 mg/mL dietary extract to HEK293 cells produced a substantial calcium response (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "6ff1712a-ae6b-46e9-b3df-bb8d6e7e15c8",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C60",
+      "claim": "Dietary extract activation occurred in both untransfected and Piezo1-transfected HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation occurred in both untransfected and Piezo1-transfected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "814690cd-1ea1-4895-be53-6129d4782773",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C61",
+      "claim": "Dietary extract often activated only a subset of HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to fecal extract, the dietary extract often activated only a subset of cells (Figure 3E and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "6d793a52-58c4-4c15-a29a-88bd61fed0a8",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C62",
+      "claim": "The timing of the response onset to dietary extract was variable but tended to occur earlier compared to fecal extract.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of the response onset was also variable but tended to occur earlier compared to fecal extract (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "d6f5f91a-2275-41ac-9ae8-002b39d79b01",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C63",
+      "claim": "Dietary extract activated Piezo1-KO HEK293 cells, confirming that Piezo1 is dispensable for the response to the extract.",
+      "claim_type": "EXPLICIT",
+      "source": "Dietary extract also activated Piezo1-KO HEK293 cells, confirming that Piezo1 is dispensable for the response to the extract (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "2ed8aefe-7866-41d3-b749-e4cf0278bff1",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C64",
+      "claim": "The osmolality and pH of fecal and dietary extracts were not substantially altered compared to control Ringer's solution.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that the dietary and fecal extracts were not activating cells in a nonspecific way by changing the osmolality or pH, we confirmed that these properties were not substantially altered between control solutions and the crude extracts (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by measurements described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "9a530c27-d358-4ddd-9636-644bbda47927",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C65",
+      "claim": "An element of the mouse diet, if present in fecal matter, could be a confounding factor when studying active compounds derived from the host gut or resident microbiota in calcium imaging assays.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that an element of the mouse diet, if present in fecal matter, could be a confounding factor when studying active compounds derived from the host gut or resident microbiota in calcium imaging assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dietary extracts activate cells similarly to fecal extracts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "332b8483-4bbd-4516-901c-7af70a1bcf8a",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C66",
+      "claim": "Piezo1 is a nonselective ion channel that inactivates quickly (within 10\u201330 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 is a nonselective ion channel that inactivates quickly (within 10\u201330 ms) (Coste et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original discovery paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "456d6329-2772-4e82-aadc-1a9de0b2f1a3",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C67",
+      "claim": "The maximum whole-cell Piezo1 current evoked by mechanical stimulation was not substantially different across vehicle, ssRNA40, fecal extract, and Yoda1 conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all conditions, the maximum whole-cell Piezo1 current evoked by mechanical stimulation was not substantially different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "039fcb7a-081b-45d9-a163-e7e1b3ea930f",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C68",
+      "claim": "Yoda1 significantly lowered the apparent mechanical threshold for Piezo1 activation and delayed channel inactivation in Piezo1-transfected HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Yoda1 significantly lowered the apparent mechanical threshold for Piezo1 activation and delayed channel inactivation as expected (Figure 4B and C; Syeda et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4B and C and citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "1df30ef0-00aa-4139-b436-5c3af1057e73",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C69",
+      "claim": "The results do not provide evidence for even a limited effect of either ssRNA40 or fecal extracts on the biophysical properties of Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results do not provide evidence for even a limited effect of either ssRNA40 or fecal extracts on the biophysical properties of Piezo1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the electrophysiology data showing no changes in Piezo1 properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "55e15fbd-b646-4a26-9537-14e2174e7672",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C70",
+      "claim": "Piezo1 was originally discovered in N2a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 was originally discovered in N2a cells (Coste et al., 2010), and this cell line continues to be frequently used for in vitro work on Piezo1 (Geng et al., 2020; Ridone et al., 2020; Romero et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "8c66ff15-3256-469c-b1fc-2960df369b5d",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C71",
+      "claim": "N2a cells continue to be frequently used for in vitro work on Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 was originally discovered in N2a cells (Coste et al., 2010), and this cell line continues to be frequently used for in vitro work on Piezo1 (Geng et al., 2020; Ridone et al., 2020; Romero et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent research using N2a cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "98b522ec-b9c9-441a-836d-6c0ccef65fd8",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C72",
+      "claim": "Untransfected N2a Piezo1-KO cells showed no calcium response to Yoda1 treatment, confirming an absence of Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "The untransfected N2a Piezo1-KO cells showed no calcium response to Yoda1 treatment, confirming an absence of Piezo1 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "87a39ebb-b7e6-42c4-a30d-491b5e89ff51",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C73",
+      "claim": "N2a Piezo1-KO cells that were transfected with Piezo1 showed a large calcium response to Yoda1, confirming an efficient transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, N2a Piezo1-KO cells that were transfected with Piezo1 showed a large calcium response to Yoda1, confirming an efficient transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "132fa04c-f6f1-4a11-95a8-fb8ebea36d86",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C74",
+      "claim": "Unlike HEK293 cells, N2a cells did not respond to either fecal or dietary extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, unlike HEK293 cells, N2a cells did not respond to either fecal or dietary extracts (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "766cf971-dabe-4572-b5d4-4154bcf3b844",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C75",
+      "claim": "Piezo1 transfection did not endow N2a cells with sensitivity to fecal or dietary extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Piezo1 transfection did not endow N2a cells with sensitivity to either of these extracts (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "1fb688d9-4a75-42a0-8825-832100bae636",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C76",
+      "claim": "Neither fecal extracts nor RNA derived from the gut microbiome can activate Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "From these data, we conclude that neither fecal extracts nor RNA derived from the gut microbiome can activate Piezo1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the combined negative results from multiple cell lines and experimental approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "6ae8f073-6bbb-4e81-bba4-dc36e5eeda2b",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C77",
+      "claim": "Fecal/dietary extract sensitivity appears to be linked to other cell line-specific factors found in HEK293 cells but not N2a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, fecal/dietary extract sensitivity appears to be linked to other cell line-specific factors found in HEK293 cells but not N2a cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential responses between HEK293 and N2a cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "7167bf57-5982-49de-9972-413293895a67",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C78",
+      "claim": "RIN14B is a pancreatic endocrine cell line commonly used to model gut enterochromaffin cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "This pancreatic endocrine cell line is commonly used to model gut enterochromaffin cell function and natively expresses Piezo1 (Nozawa et al., 2009; Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "bc5f9d1a-6032-4851-bf58-4578ad8fed51",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C79",
+      "claim": "RIN14B cells natively express Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "This pancreatic endocrine cell line is commonly used to model gut enterochromaffin cell function and natively expresses Piezo1 (Nozawa et al., 2009; Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "911c3b03-b3c6-462a-b081-5d3c420117a9",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C80",
+      "claim": "ssRNA40 and ssRNA41 elicited a noticeable calcium response in RIN14B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ssRNA40 and ssRNA41 elicited a noticeable calcium response in RIN14B cells, unlike in N2a or HEK293 cells (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "c94fbebb-ce86-49fc-af4e-c2379a9a00dd",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C81",
+      "claim": "Fecal RNA elicited a calcium response in RIN14B cells, similar in magnitude to that caused by ssRNA40 and ssRNA41.",
+      "claim_type": "EXPLICIT",
+      "source": "Fecal RNA also elicited a calcium response, similar in magnitude to that caused by ssRNA40 and ssRNA41 (Figure 6D-F and Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "437f9158-6618-4e72-b456-e1789ecb4732",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C82",
+      "claim": "Yoda1 led to a significantly larger increase in fluorescence in RIN14B cells compared to ssRNA40, ssRNA41, and fecal RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, Yoda1 led to a significantly larger increase in fluorescence, consistent with endogenous expression of Piezo1 in RIN14B cells (Figure 6G-I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "06ad9c97-1c70-4bb0-bf32-7c37fd259262",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C83",
+      "claim": "Gadolinium is a broad inhibitor of stretch-activated cation channels including Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Gadolinium is a broad inhibitor of stretch-activated cation channels including Piezo1 (Coste et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "407a67d2-cd19-4201-a71a-038475bc1e79",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C84",
+      "claim": "Gadolinium reduced spontaneous calcium transients in RIN14B cells during vehicle application.",
+      "claim_type": "EXPLICIT",
+      "source": "At baseline, we noticed general effects of gadolinium on the excitability of RIN14B cells, evident by reduced spontaneous calcium transients during vehicle application (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "9931820f-8e7c-44d4-a315-a2a279f0965f",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C85",
+      "claim": "Gadolinium did not diminish the response to fecal RNA in RIN14B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, gadolinium did not diminish the response to fecal RNA, but it seemed to have a nonspecific effect on the decay rate of the calcium signal (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "c1d8cac8-bac5-4137-a325-175ff3a01c14",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C86",
+      "claim": "Gadolinium completely abolished the Yoda1 response in RIN14B cells, confirming successful Piezo1 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Gadolinium completely abolished the Yoda1 response, confirming successful Piezo1 inhibition (Figure 6H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "a97268d7-112d-4d1b-ac06-585c933ed31a",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C87",
+      "claim": "RIN14B cells respond to a variety of ssRNAs, but their response is not dependent on Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments demonstrate that while RIN14B cells do respond to a variety of ssRNAs, their response is not dependent on Piezo1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the gadolinium inhibition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "3b6d7a0c-a9d3-4557-8af3-731f0301ff89",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C88",
+      "claim": "RIN14B cells and gut enterochromaffin cells express the electrophile receptor Trpa1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to Piezo1, RIN14B cells and gut enterochromaffin cells express the electrophile receptor Trpa1 (Bellono et al., 2017; Nozawa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "17a9d992-6dda-40ed-ae8d-7e769f92baf6",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C89",
+      "claim": "Trpa1 has been reported to respond to extracellular microRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculated that Trpa1 may be responsible for the RNA-induced calcium response, considering that Trpa1 has been reported to respond to extracellular microRNAs (Park et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "7773e2d9-d45f-46a4-87e0-bf812f7fc7b7",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C90",
+      "claim": "The Trpa1 inhibitor A-967079 blocked the calcium response following addition of allyl isothiocyanate (AITC) in RIN14B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the Trpa1 inhibitor blocked the calcium response following addition of allyl isothiocyanate (AITC), an electrophilic Trpa1 agonist (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "5d37e924-fa9b-452d-82b8-1239a12d6307",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C91",
+      "claim": "The Trpa1 inhibitor did not significantly diminish the calcium response following addition of ssRNA40 or ssRNA41 in RIN14B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Trpa1 inhibitor did not significantly diminish the calcium response following addition of ssRNA40 or ssRNA41 (Figure 6\u2014figure supplement 1), indicating that the RNA-induced response is not dependent on Trpa1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "0082f4b0-5164-4f28-852a-03e6dc75bfbb",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C92",
+      "claim": "The RNA-induced response in RIN14B cells is not dependent on Trpa1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Trpa1 inhibitor did not significantly diminish the calcium response following addition of ssRNA40 or ssRNA41 (Figure 6\u2014figure supplement 1), indicating that the RNA-induced response is not dependent on Trpa1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of effect of Trpa1 inhibition on ssRNA responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "bfa9cb75-be3d-44aa-bf16-cf019462ca3b",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C93",
+      "claim": "Algorithmic clustering of individual nuclear transcriptomes from RIN14B cells did not reveal any clear transcriptomic subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Algorithmic clustering of individual nuclear transcriptomes did not reveal any clear transcriptomic subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of single-nuclei RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "90f7ffc6-cb5d-4f42-9efe-455253916b36",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C94",
+      "claim": "There is heterogeneity in the prevalence of individual transcripts from cell to cell in RIN14B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is clearly heterogeneity when examining the prevalence of individual transcripts from cell to cell, which may stem from true biological heterogeneity within the cell line or from technical limitations in our sequencing approach (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of single-nuclei RNA sequencing data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "2426c223-f2c7-4678-853d-f30ff4c761ff",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C95",
+      "claim": "The authors were not able to detect ssRNA-evoked changes in Piezo1 activity with in vitro calcium imaging and electrophysiological recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we set out to confirm the discovery that Piezo1 is a sensor of fecal microbiome ssRNA. We were not able to detect ssRNA-evoked changes in Piezo1 activity with in vitro calcium imaging and electrophysiological recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion based on all the negative results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "e3c93613-d550-4550-8fbb-6b8bac2aad74",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C96",
+      "claim": "ssRNAs and fecal extracts can stimulate calcium influx in cultured cells, but this calcium activity depends on the cell line being used, rather than Piezo1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we present evidence that ssRNAs and fecal extracts can stimulate calcium influx in cultured cells, but this calcium activity depends on the cell line being used, rather than Piezo1 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the differential responses observed across different cell lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "fd32be92-a25f-4e0f-955d-5f017d2e2287",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C97",
+      "claim": "Dietary extracts can elicit calcium influx similar to fecal extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "An unexpected finding is that dietary extracts can elicit calcium influx similar to fecal extracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data comparing dietary and fecal extracts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "c0d58ae5-1053-485a-9752-b85c81eb71cc",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C98",
+      "claim": "Different mouse colonies in different facilities showed differential effects of fecal/dietary extracts, with some preparations showing more or less activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed differential effects of fecal/dietary extracts between mouse colonies in different facilities, with some preparations showing more or less activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparing extracts prepared from mice at NIH versus Scripps/HHMI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "daaf1919-bc0a-46bb-9f26-0248648c13b3",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C99",
+      "claim": "It is important to control for elements of the diet when working with gut-derived samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights the importance of controlling for elements of the diet when working with gut-derived samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dietary extracts can confound results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "19e57c24-93cf-4ee7-984a-43f7b90c3f59",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C100",
+      "claim": "The observation that the enterochromaffin model cell line RIN14B responds to ssRNAs corroborates recent evidence that there exists a gut-resident RNA receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our observation that the enterochromaffin model cell line RIN14B responds to ssRNAs corroborates the recent evidence that there exists a gut-resident RNA receptor (Sugisawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the RIN14B calcium imaging data and citation to the Sugisawa study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "1d710176-6e35-43b6-ab8b-a9439922e6d2",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C101",
+      "claim": "The authors are unable to reproduce the finding that Piezo1 is an RNA receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we are unable to reproduce the finding that Piezo1 is an RNA receptor, and we propose that Piezo1 is more likely functioning as a mechanosensor in the gut, as has been shown in many other tissues (Murthy et al., 2017; Syeda, 2021; Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion based on all the negative results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "3e52fee5-c34f-4245-ba74-dbe598e5e37a",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "claim_id": "C102",
+      "claim": "Piezo1 is more likely functioning as a mechanosensor in the gut, as has been shown in many other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we are unable to reproduce the finding that Piezo1 is an RNA receptor, and we propose that Piezo1 is more likely functioning as a mechanosensor in the gut, as has been shown in many other tissues (Murthy et al., 2017; Syeda, 2021; Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' negative results and citations to prior research on Piezo1 mechanosensing.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6f02e0fa-06e0-427c-abe4-ef7e64862709",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ssRNA40 does not activate or modulate Piezo1 in N2a cells. Calcium imaging showed no response to ssRNA40 (C30, C35), and electrophysiology demonstrated that ssRNA40 did not alter mechanically-evoked Piezo1 currents, while Yoda1 produced expected effects (C38-C40, C49).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent assays (calcium imaging and patch-clamp electrophysiology) with appropriate positive controls (Yoda1, ionomycin) and negative controls (vehicle, ssRNA41) consistently show no effect of ssRNA40 on Piezo1 activity in N2a cells. The data are internally consistent and methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "6fd71126-a0c1-490b-92bd-369d00b5b952",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ssRNA40 does not activate Piezo1-transfected HEK293 cells across a wide concentration range. Neither untransfected nor Piezo1-transfected HEK293 cells showed calcium responses to ssRNA40 at concentrations from 0.05 to 50 \u00b5g/mL (C43, C45), and FLIPR assays in PIEZO1-KO cells confirmed no response to ssRNA40 or potentiation of Yoda1 responses (C47, C48).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The use of multiple cell lines (wildtype HEK293, Piezo1-transfected, and PIEZO1-KO), multiple assay platforms (calcium imaging and FLIPR), dose-response testing, and replication in an independent laboratory with the identical cell line used in the original study (C46) provide strong converging evidence. The lack of response across all conditions is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "9a0a5e23-1e3f-4811-916e-ef1b94a31aee",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ssRNA40 and fecal extracts do not alter the biophysical properties of Piezo1 in HEK293 cells. Whole-cell patch-clamp recordings showed no changes in maximum current, activation threshold, or inactivation kinetics with ssRNA40 or fecal extract treatment, while Yoda1 produced expected modulation (C67-C69).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Electrophysiology is the gold standard for assessing ion channel function. The data show clear positive control effects (Yoda1) while ssRNA40 and fecal extracts have no effect on any measured parameter. The methodology is appropriate and the conclusions are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "2fae4b3a-6b4b-46b6-a616-567e6e73cd9a",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Fecal extracts activate HEK293 cells independently of Piezo1 and RNA content. Fecal extracts triggered calcium responses in both untransfected and Piezo1-transfected HEK293 cells (C51-C53), and responses persisted in PIEZO1-KO cells (C55). Purified fecal RNA did not induce responses (C56), and RNase treatment did not eliminate fecal extract activity (C57, C58).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The use of Piezo1-KO cells provides definitive evidence that the response is Piezo1-independent. The RNase treatment and comparison with purified RNA demonstrate that RNA is not the active component. The variable response patterns (C52) suggest complex extract composition. Controls for osmolality and pH (C64) rule out nonspecific activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "6f8abc2e-4096-4820-a3b6-2226f8b0c9bb",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dietary extracts activate HEK293 cells similarly to fecal extracts, independent of Piezo1. Dietary extracts produced substantial calcium responses in both untransfected and Piezo1-transfected HEK293 cells (C59-C61), persisted in PIEZO1-KO cells (C63), and showed similar patterns to fecal extracts (C62, C97), suggesting dietary components confound fecal extract studies (C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a critical control experiment that reveals a major confound in the original study. The similarity between dietary and fecal extract responses, combined with Piezo1-independence demonstrated in KO cells, strongly supports the conclusion. This finding has important implications for interpreting gut-derived extract studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "5623407f-1a56-488e-925e-a943e7a480fa",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "N2a cells do not respond to fecal or dietary extracts regardless of Piezo1 expression. N2a Piezo1-KO cells showed no response to extracts but responded appropriately to Yoda1 when transfected with Piezo1 (C72-C75), demonstrating that extract sensitivity is cell line-specific rather than Piezo1-dependent (C76, C77).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The differential response between HEK293 and N2a cells to the same extracts, despite both expressing functional Piezo1 (confirmed by Yoda1 responses), provides strong evidence that the extract responses are mediated by cell line-specific factors unrelated to Piezo1. This is a well-controlled comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "53874676-3e31-4379-a4d2-e7f54fb4052d",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RIN14B cells respond to ssRNAs and fecal RNA, but this response is independent of Piezo1. ssRNA40, ssRNA41, and fecal RNA elicited calcium responses in RIN14B cells (C80, C81), but gadolinium blocked Yoda1 responses while not affecting fecal RNA responses (C84-C86), demonstrating Piezo1-independence (C87).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The pharmacological approach using gadolinium as a Piezo1 inhibitor is appropriate, with clear positive control (Yoda1 blockade) demonstrating effective inhibition. The selective blockade of Yoda1 but not RNA responses provides strong evidence for Piezo1-independence. However, gadolinium's non-selectivity (C83) and effects on baseline excitability (C84) are acknowledged limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "dee8e546-c8b5-4d93-829d-9e15a0c9a0c3",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ssRNA response in RIN14B cells is not mediated by Trpa1. The Trpa1 inhibitor A-967079 blocked AITC responses but did not diminish ssRNA40 or ssRNA41 responses (C90-C92).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The positive control (AITC blockade) demonstrates effective Trpa1 inhibition, and the lack of effect on ssRNA responses rules out Trpa1 as the mediator. This is a straightforward pharmacological experiment with appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "f160d3b3-ccb3-4933-b173-43c0dc7d3a8e",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors conclude that Piezo1 is not a receptor for ssRNA in the gut. Multiple experimental approaches failed to detect ssRNA-evoked changes in Piezo1 activity (C95), and calcium responses to ssRNAs and fecal extracts are cell line-dependent rather than Piezo1-dependent (C96, C101, C6, C76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion is well-supported by the convergence of multiple independent lines of evidence: (1) no ssRNA40 effects in N2a or HEK293 cells with calcium imaging or electrophysiology, (2) responses persist in Piezo1-KO cells, (3) differential responses between cell lines despite Piezo1 expression, (4) pharmacological inhibition studies in RIN14B cells. The replication attempt was rigorous and used the same reagents, concentrations, and even the same cell line as the original study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "0e0b0be1-8c43-47aa-a2e2-4c79d74fbec7",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Fecal and dietary extract activity varies between mouse colonies from different facilities, highlighting the importance of controlling for dietary elements in gut-derived samples (C98, C99).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation of differential activity between NIH and Scripps/HHMI extracts is reported but not extensively characterized. While this supports the conclusion about the importance of dietary controls, the limited data prevent deeper mechanistic understanding. This is an important practical observation for the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "8ce58f26-add8-4397-bee5-c43cfed2add1",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that Piezo1 functions as a mechanosensor in the gut rather than an RNA receptor, while acknowledging that RIN14B responses to ssRNAs suggest the existence of a gut-resident RNA receptor (C100, C102, C7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The negative results regarding Piezo1 as an RNA receptor are well-supported. The proposal that Piezo1 functions as a mechanosensor in the gut is supported by the authors' data excluding RNA-sensing and by extensive prior literature (C8-C18). The acknowledgment of RIN14B responses (C100) appropriately recognizes that an RNA receptor may exist, just not Piezo1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    },
+    {
+      "id": "be1b6802-8549-4d44-8470-83d109a402f4",
+      "content_id": "21620dbc-4dd0-4f5e-9556-ca8c583cbe5a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Single-nuclei RNA sequencing of RIN14B cells revealed transcriptional heterogeneity but no clear subpopulations (C93, C94).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sequencing data are presented as a resource (Table 1, Supplementary file 1, GEO accession) and the analysis is straightforward. The authors appropriately acknowledge that heterogeneity could reflect biological variation or technical limitations. This is a useful resource but does not directly address the main question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:14:00.688412Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "51b1e98b-549d-42d0-847f-7f5a65c17988",
+      "result_id": "6f02e0fa-06e0-427c-abe4-ef7e64862709"
+    },
+    {
+      "claim_id": "67c3b7f6-dfad-4b7f-9a1f-7d8711fef964",
+      "result_id": "6f02e0fa-06e0-427c-abe4-ef7e64862709"
+    },
+    {
+      "claim_id": "e4a45b85-a2a7-4b47-99b2-8daafdede15a",
+      "result_id": "6f02e0fa-06e0-427c-abe4-ef7e64862709"
+    },
+    {
+      "claim_id": "47f25a2f-a0f9-4f10-be86-4ad323c4c029",
+      "result_id": "6f02e0fa-06e0-427c-abe4-ef7e64862709"
+    },
+    {
+      "claim_id": "ac646d22-beea-4304-b11f-6efd703633d2",
+      "result_id": "6f02e0fa-06e0-427c-abe4-ef7e64862709"
+    },
+    {
+      "claim_id": "dc1629db-adee-4b7a-950a-9ec232f5a709",
+      "result_id": "6f02e0fa-06e0-427c-abe4-ef7e64862709"
+    },
+    {
+      "claim_id": "99e9ec0e-454a-41e5-b046-14ee96c8520a",
+      "result_id": "6fd71126-a0c1-490b-92bd-369d00b5b952"
+    },
+    {
+      "claim_id": "bc819f93-d9f4-465a-b2b5-1225bacbb7b9",
+      "result_id": "6fd71126-a0c1-490b-92bd-369d00b5b952"
+    },
+    {
+      "claim_id": "bc18d8c5-0740-4ed2-8f6d-e9d5438ea9ba",
+      "result_id": "6fd71126-a0c1-490b-92bd-369d00b5b952"
+    },
+    {
+      "claim_id": "a784da33-4f37-41c3-81de-ddba65aea183",
+      "result_id": "6fd71126-a0c1-490b-92bd-369d00b5b952"
+    },
+    {
+      "claim_id": "dc1629db-adee-4b7a-950a-9ec232f5a709",
+      "result_id": "6fd71126-a0c1-490b-92bd-369d00b5b952"
+    },
+    {
+      "claim_id": "456d6329-2772-4e82-aadc-1a9de0b2f1a3",
+      "result_id": "9a0a5e23-1e3f-4811-916e-ef1b94a31aee"
+    },
+    {
+      "claim_id": "039fcb7a-081b-45d9-a163-e7e1b3ea930f",
+      "result_id": "9a0a5e23-1e3f-4811-916e-ef1b94a31aee"
+    },
+    {
+      "claim_id": "1df30ef0-00aa-4139-b436-5c3af1057e73",
+      "result_id": "9a0a5e23-1e3f-4811-916e-ef1b94a31aee"
+    },
+    {
+      "claim_id": "c5fca94f-7aad-4c57-8018-414d914ce141",
+      "result_id": "2fae4b3a-6b4b-46b6-a616-567e6e73cd9a"
+    },
+    {
+      "claim_id": "1db0bcea-f62e-4482-9193-66e4ffbf013f",
+      "result_id": "2fae4b3a-6b4b-46b6-a616-567e6e73cd9a"
+    },
+    {
+      "claim_id": "37aea4ce-62ad-4560-a91b-ad9f8dcc57cd",
+      "result_id": "2fae4b3a-6b4b-46b6-a616-567e6e73cd9a"
+    },
+    {
+      "claim_id": "1e3ff577-333c-4414-aa0c-ff49dce35b5a",
+      "result_id": "2fae4b3a-6b4b-46b6-a616-567e6e73cd9a"
+    },
+    {
+      "claim_id": "a422ec9d-98c8-46a2-8b2a-23c1ed0a5107",
+      "result_id": "2fae4b3a-6b4b-46b6-a616-567e6e73cd9a"
+    },
+    {
+      "claim_id": "9b213ed6-0d13-4870-8b80-9e736f6cfddb",
+      "result_id": "2fae4b3a-6b4b-46b6-a616-567e6e73cd9a"
+    },
+    {
+      "claim_id": "9f1461e3-f208-41bb-ab7a-6289b8605792",
+      "result_id": "2fae4b3a-6b4b-46b6-a616-567e6e73cd9a"
+    },
+    {
+      "claim_id": "af294297-77fa-4bf0-a5af-522a2bb0d9b7",
+      "result_id": "2fae4b3a-6b4b-46b6-a616-567e6e73cd9a"
+    },
+    {
+      "claim_id": "32075ca3-5140-4a7c-af53-052aed4ad54b",
+      "result_id": "6f8abc2e-4096-4820-a3b6-2226f8b0c9bb"
+    },
+    {
+      "claim_id": "6ff1712a-ae6b-46e9-b3df-bb8d6e7e15c8",
+      "result_id": "6f8abc2e-4096-4820-a3b6-2226f8b0c9bb"
+    },
+    {
+      "claim_id": "814690cd-1ea1-4895-be53-6129d4782773",
+      "result_id": "6f8abc2e-4096-4820-a3b6-2226f8b0c9bb"
+    },
+    {
+      "claim_id": "6d793a52-58c4-4c15-a29a-88bd61fed0a8",
+      "result_id": "6f8abc2e-4096-4820-a3b6-2226f8b0c9bb"
+    },
+    {
+      "claim_id": "d6f5f91a-2275-41ac-9ae8-002b39d79b01",
+      "result_id": "6f8abc2e-4096-4820-a3b6-2226f8b0c9bb"
+    },
+    {
+      "claim_id": "9a530c27-d358-4ddd-9636-644bbda47927",
+      "result_id": "6f8abc2e-4096-4820-a3b6-2226f8b0c9bb"
+    },
+    {
+      "claim_id": "fd32be92-a25f-4e0f-955d-5f017d2e2287",
+      "result_id": "6f8abc2e-4096-4820-a3b6-2226f8b0c9bb"
+    },
+    {
+      "claim_id": "98b522ec-b9c9-441a-836d-6c0ccef65fd8",
+      "result_id": "5623407f-1a56-488e-925e-a943e7a480fa"
+    },
+    {
+      "claim_id": "87a39ebb-b7e6-42c4-a30d-491b5e89ff51",
+      "result_id": "5623407f-1a56-488e-925e-a943e7a480fa"
+    },
+    {
+      "claim_id": "132fa04c-f6f1-4a11-95a8-fb8ebea36d86",
+      "result_id": "5623407f-1a56-488e-925e-a943e7a480fa"
+    },
+    {
+      "claim_id": "766cf971-dabe-4572-b5d4-4154bcf3b844",
+      "result_id": "5623407f-1a56-488e-925e-a943e7a480fa"
+    },
+    {
+      "claim_id": "1fb688d9-4a75-42a0-8825-832100bae636",
+      "result_id": "5623407f-1a56-488e-925e-a943e7a480fa"
+    },
+    {
+      "claim_id": "6ae8f073-6bbb-4e81-bba4-dc36e5eeda2b",
+      "result_id": "5623407f-1a56-488e-925e-a943e7a480fa"
+    },
+    {
+      "claim_id": "911c3b03-b3c6-462a-b081-5d3c420117a9",
+      "result_id": "53874676-3e31-4379-a4d2-e7f54fb4052d"
+    },
+    {
+      "claim_id": "c94fbebb-ce86-49fc-af4e-c2379a9a00dd",
+      "result_id": "53874676-3e31-4379-a4d2-e7f54fb4052d"
+    },
+    {
+      "claim_id": "437f9158-6618-4e72-b456-e1789ecb4732",
+      "result_id": "53874676-3e31-4379-a4d2-e7f54fb4052d"
+    },
+    {
+      "claim_id": "407a67d2-cd19-4201-a71a-038475bc1e79",
+      "result_id": "53874676-3e31-4379-a4d2-e7f54fb4052d"
+    },
+    {
+      "claim_id": "9931820f-8e7c-44d4-a315-a2a279f0965f",
+      "result_id": "53874676-3e31-4379-a4d2-e7f54fb4052d"
+    },
+    {
+      "claim_id": "c1d8cac8-bac5-4137-a325-175ff3a01c14",
+      "result_id": "53874676-3e31-4379-a4d2-e7f54fb4052d"
+    },
+    {
+      "claim_id": "a97268d7-112d-4d1b-ac06-585c933ed31a",
+      "result_id": "53874676-3e31-4379-a4d2-e7f54fb4052d"
+    },
+    {
+      "claim_id": "7773e2d9-d45f-46a4-87e0-bf812f7fc7b7",
+      "result_id": "dee8e546-c8b5-4d93-829d-9e15a0c9a0c3"
+    },
+    {
+      "claim_id": "5d37e924-fa9b-452d-82b8-1239a12d6307",
+      "result_id": "dee8e546-c8b5-4d93-829d-9e15a0c9a0c3"
+    },
+    {
+      "claim_id": "0082f4b0-5164-4f28-852a-03e6dc75bfbb",
+      "result_id": "dee8e546-c8b5-4d93-829d-9e15a0c9a0c3"
+    },
+    {
+      "claim_id": "2426c223-f2c7-4678-853d-f30ff4c761ff",
+      "result_id": "f160d3b3-ccb3-4933-b173-43c0dc7d3a8e"
+    },
+    {
+      "claim_id": "e3c93613-d550-4550-8fbb-6b8bac2aad74",
+      "result_id": "f160d3b3-ccb3-4933-b173-43c0dc7d3a8e"
+    },
+    {
+      "claim_id": "1d710176-6e35-43b6-ab8b-a9439922e6d2",
+      "result_id": "f160d3b3-ccb3-4933-b173-43c0dc7d3a8e"
+    },
+    {
+      "claim_id": "a1cf9d4c-7ac2-41ce-a6f6-ee9a75083f34",
+      "result_id": "f160d3b3-ccb3-4933-b173-43c0dc7d3a8e"
+    },
+    {
+      "claim_id": "1fb688d9-4a75-42a0-8825-832100bae636",
+      "result_id": "f160d3b3-ccb3-4933-b173-43c0dc7d3a8e"
+    },
+    {
+      "claim_id": "c0d58ae5-1053-485a-9752-b85c81eb71cc",
+      "result_id": "0e0b0be1-8c43-47aa-a2e2-4c79d74fbec7"
+    },
+    {
+      "claim_id": "daaf1919-bc0a-46bb-9f26-0248648c13b3",
+      "result_id": "0e0b0be1-8c43-47aa-a2e2-4c79d74fbec7"
+    },
+    {
+      "claim_id": "19e57c24-93cf-4ee7-984a-43f7b90c3f59",
+      "result_id": "8ce58f26-add8-4397-bee5-c43cfed2add1"
+    },
+    {
+      "claim_id": "3e52fee5-c34f-4245-ba74-dbe598e5e37a",
+      "result_id": "8ce58f26-add8-4397-bee5-c43cfed2add1"
+    },
+    {
+      "claim_id": "ad7effb3-9489-4c98-bb44-cd12c839584f",
+      "result_id": "8ce58f26-add8-4397-bee5-c43cfed2add1"
+    },
+    {
+      "claim_id": "bfa9cb75-be3d-44aa-bf16-cf019462ca3b",
+      "result_id": "be1b6802-8549-4d44-8470-83d109a402f4"
+    },
+    {
+      "claim_id": "90f7ffc6-cb5d-4f42-9efe-455253916b36",
+      "result_id": "be1b6802-8549-4d44-8470-83d109a402f4"
+    }
+  ],
+  "comparisons": []
+}

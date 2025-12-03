@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study characterized 1,280 SARS-CoV-2 infections from an NBA occupational health cohort between June 2020 and January 2022 using serial RT-qPCR testing with combined nasal and oropharyngeal swabs. The cohort included individuals with varied vaccination statuses (828 boosted, 529 primary course completed, 13 unvaccinated) and variant infections (878 Omicron BA.1, 180 Delta, 222 other), with 70.5% of infections being symptomatic. None received antiviral treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C12, C15-C19, C106-C110 provide comprehensive descriptive statistics about the study cohort, methodology, and infection characteristics. These are directly measured quantities from the dataset with appropriate sample sizes and clear definitions. The data collection and characterization methods are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "Among individuals detected partway through infection, 51.0% (95% CrI: 48.3-53.6%) remained potentially infectious (Ct <30) at day 5 post-detection, with this proportion decreasing to 9.37% by day 10. In the frequent testing group, 65.4% remained potentially infectious at day 5. Low Ct values were sometimes maintained for up to two weeks, and nearly half of individuals had potentially infectious viral loads five days after detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C26, C65, C67-C68 present quantitative findings from logistic regression models with appropriate credible intervals. The results are consistent across different detection groups and supported by Figure 1A showing individual viral trajectories. The finding that many individuals remain potentially infectious beyond 5 days is well-supported by the data and consistent with cited prior studies (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Viral rebounds were rare under stringent definitions (0.7% with 3+ days Ct \u226530 followed by 3+ days Ct <30), but more common with less stringent criteria (3.0% with 2+ days). Rebounds were more frequent in Omicron BA.1 infections (4.10%) and boosted individuals (6.48%) compared to earlier pandemic phases (~1%). The frequency depends on rebound definition, and results may represent a lower bound due to testing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C29, C72-C75 provide quantitative rebound frequencies with appropriate statistical testing (chi-squared tests with p<0.05). The authors appropriately acknowledge that rebound frequency is definition-dependent and that testing cessation after clearance may lead to underestimation. Table 2 systematically explores multiple definitions. However, the lack of culturable virus data (C76) and limited symptom recurrence data (C77) are acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57"
+    ],
+    "result": "High antibody titers against the ancestral SARS-CoV-2 strain (measured in 979 individuals, median 162 days post-vaccination) predicted lower peak viral loads and shorter infection durations. Among Omicron BA.1 infections, boosted individuals with low antibody titers (<250 AU/ml) had the longest duration of Ct <30. Antibody titers were lowest among Omicron BA.1-infected boosted individuals, suggesting high-titer individuals were less likely to be infected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42-C49, C51-C53, C56-C57 present findings from antibody titer analyses with clear sample sizes and appropriate stratification. Figure 3 supports the relationship between antibody titers and viral kinetics. The authors appropriately acknowledge limitations regarding the timing of titer measurements (C97) and that WA1 titers correlate poorly with Omicron protection (C98, C22). Sensitivity analyses (C50) strengthen the findings by controlling for potential confounding from waning immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C54",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Among Omicron BA.1 infections, boosted individuals had lower pre-booster antibody titers and longer clearance times (8.4 vs 6.2 days) than non-boosted individuals. Boosted individuals who had breakthrough infections tended to have low antibody titers after their initial vaccine course. Test positivity lasted longer for boosted individuals regardless of symptom status, suggesting low antibody titers conferred increased infection risk and slower viral clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C54, C80-C82 present a counterintuitive finding that is well-supported by both logistic regression and viral kinetic models, with appropriate credible intervals. The interpretation (C82) is reasonable given the data showing boosted individuals who were infected had lower pre-boost titers. However, this is an observational finding subject to selection bias\u2014boosted individuals with high titers may have been protected from infection entirely. The authors appropriately acknowledge this in their interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C62",
+      "C63",
+      "C64",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Older individuals (>50 years) demonstrated longer viral clearance times than younger individuals (<30 years) by 2-3 days, regardless of variant and immune status. Boosted individuals were typically older (mean 37.6 vs 31.3 years), but the effect of longer clearance in boosted individuals persisted within each age group, including those <30 years. Both age and booster status independently explained variation in clearance duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C62-C64, C85-C89 address age as a potential confounder through stratified analyses. The finding that both age and booster status independently affect clearance time is supported by regression models that include both factors (Figure 2B, Appendix tables). The authors appropriately acknowledge prior conflicting evidence (C83-C84) and demonstrate their finding holds after controlling for age. The stratified analyses showing effects within age groups strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Models incorporating exposure history, variant, and age improved prediction of Ct <30 status over time compared to baseline models (AUC 91.4% vs 90.5% in delayed detection group), but the improvement was modest. The best model included cumulative exposures, variant, and age, but differences in classification accuracy among models were small. Individual-level variation dominated over exposure history effects in predicting infectiousness trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34, C113-C116 present model comparison results with appropriate cross-validation. The finding that exposure history provides limited predictive value despite explaining mean kinetics is important and well-supported. However, the modest improvements in classification accuracy (1-3%) raise questions about clinical utility. The conclusion that individual variation dominates (C34, C116) is reasonable given the small differences between models, though the authors could have explored additional sources of variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Viral proliferation times and peak viral RNA were similar between boosted and non-boosted Omicron BA.1 infections, and proliferation times were similar across variants and antibody titers. Among individuals with low antibody titers, symptomatic infections showed higher peak viral RNA and longer clearance times, while high-titer individuals had similar kinetics regardless of symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C58-C61 present findings from viral kinetic models with references to appendix tables. The interaction between antibody titer and symptom status (C60-C61) is interesting and biologically plausible. However, the viral kinetic model is semi-mechanistic and makes assumptions about exponential growth/decay that may not fully capture biological complexity. The findings are internally consistent with the logistic regression results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C20",
+      "C21",
+      "C22",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study used Ct <30 as a threshold for potential infectiousness based on antigen sensitivity and virus culture studies, though this is acknowledged as an imperfect proxy. The study did not test for infectious virus directly, and findings are based on Ct values from combined nasal and oropharyngeal swabs. The 250 AU/ml antibody titer cutoff was chosen as a conservative threshold for lower infection risk with Delta/wildtype but does not predict Omicron infection risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C20-C22, C93-C95 describe methodological choices and their limitations. The authors appropriately cite prior work supporting the Ct <30 threshold (C13-C14) while acknowledging it is imperfect (C95). The limitation that culturable virus was not measured (C93) is significant, as Ct values may not directly correlate with infectiousness, especially for Omicron. The antibody titer cutoff rationale is explained (C20-C21) with appropriate caveats (C22).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C79"
+    ],
+    "result": "Vaccination provides protection against SARS-CoV-2 through reduced infection rates and faster viral clearance. Individuals with two vaccine doses prior to pre-Delta/pre-Omicron infection cleared faster than unvaccinated individuals. Boosting reduced infection rates in the cohort, and boosted individuals were less likely to be infected with Omicron BA.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C38, C79 are supported by citations to prior work (C35, C38, C79) and by data from the current study (C36). However, C36 has a very small sample size (N=12 vaccinated vs N=209 unvaccinated) which limits confidence in this specific comparison. The claims about booster effectiveness (C38, C79) rely on external citations rather than being primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C78",
+      "C101",
+      "C102",
+      "C118"
+    ],
+    "result": "The findings suggest test-based rather than time-based isolation protocols may be warranted, symptom monitoring after clearing isolation may be necessary for rebound infections, and SARS-CoV-2 control measures may be better informed by direct immune status measurements than vaccination/infection history proxies. Testing these hypotheses will require diverse cohorts and Omicron-specific antibody tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69, C78, C101-C102, C118 are recommendations and future directions based on the study findings. While the recommendations are reasonable given the data (many individuals remain Ct <30 beyond 5 days, rebounds occur, antibody titers predict outcomes), they represent interpretations and policy suggestions rather than direct findings. The recommendation for test-based protocols (C69) is logical but would require validation studies. The suggestion that immune measurements outperform vaccination history (C101) is supported by the data but requires prospective validation (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The cohort is not representative of the general population (predominantly male, young, includes athletes), though key findings were preserved after excluding players. Some infections may have been undetected, antibody titers were measured at a single time point with varying intervals post-vaccination, and titers were against WA1 spike which correlates poorly with Omicron protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C96-C98 acknowledge important study limitations. The authors appropriately recognize generalizability concerns (C91) and performed sensitivity analyses excluding players (C92). The limitations regarding undetected infections (C96), antibody measurement timing (C97), and WA1 vs Omicron specificity (C98) are significant and honestly reported. These limitations appropriately temper the interpretation of antibody titer findings, particularly for Omicron infections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Viral trajectories varied substantially across individuals regardless of variant. Most symptomatic individuals were detected around symptom onset (median 0-1 days), and symptom onset preceded peak Ct by a median of 2-3 days depending on detection group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 describe temporal relationships between detection, symptoms, and viral kinetics with appropriate sample sizes and references to figures. The finding of substantial individual variation (C103) is visually evident in Figure 1A. The timing relationships (C104-C105) are clearly quantified with medians and sample sizes, providing useful context for interpreting the viral kinetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C66",
+      "C70",
+      "C71",
+      "C83",
+      "C84"
+    ],
+    "result": "Prior research has established that viral shedding influences infectiousness, test positivity affects isolation policies, rebounds occur after antiviral treatment, most viral kinetics studies predate Omicron's emergence, and older individuals take longer to clear infection. However, rebound frequency without antivirals was previously unclear, and age effects on viral kinetics have shown conflicting results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10, C66, C70-C71, C83-C84 summarize prior literature with appropriate citations. These claims accurately represent the state of knowledge and identify gaps (C71) that the current study addresses. The acknowledgment of conflicting prior evidence on age effects (C84) demonstrates appropriate engagement with the literature. These background claims provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C76",
+      "C77",
+      "C99",
+      "C100",
+      "C117"
+    ],
+    "result": "The trend of longer Ct <30 duration in boosted, low-titer Omicron BA.1 infections was maintained in sensitivity analyses. Variants and immune statuses interact in unexpected ways to produce varying viral kinetics. Since booster vaccination protects against infection, longer clearance in infected boosted individuals may reflect less effective immune responses that increase infection risk and reduce clearance rate. Continued monitoring in diverse cohorts is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C76-C77, C99-C100, C117 include sensitivity analyses (C50), acknowledged limitations (C76-C77), summary interpretations (C99), and recommendations (C100, C117). The sensitivity analyses strengthen confidence in the antibody titer findings. The interpretation (C117) is reasonable but somewhat speculative\u2014it's a hypothesis to explain the counterintuitive finding rather than a directly tested mechanism. The recommendation for continued monitoring (C100) is appropriate given the evolving pandemic landscape.",
+    "result_type": "MINOR"
+  }
+]

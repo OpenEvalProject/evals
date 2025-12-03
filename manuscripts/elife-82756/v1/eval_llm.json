@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "CATHARSiS, a novel spatial template-matching algorithm, reliably detects calcium transients in densely labeled tissue with high precision and temporal accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 collectively demonstrate that CATHARSiS achieves 100% recall on simulated data (C18), ~95% recall on empirical data (C20), significantly higher precision than mean \u0394F-based methods (C21), and low temporal delays in both simulated (-0.3\u00b10.0 frames, C19) and empirical (0.9\u00b10.1 frames, C22) data. The validation includes both ground-truth simulations and consensus expert annotation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "CA1 pyramidal cells undergo a transient period of firing equalization during the second postnatal week (P11), characterized by increased mean calcium transient frequencies, narrower frequency distributions, and Poisson-like firing irregularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 provide converging quantitative evidence: mean CaT frequencies increase 2.5-fold from P4 to P11 (C23), frequency distributions show minimal skewness at P11 (C24), Gini coefficients reach a minimum at P11 (C25, C28), and CV2 values approach 1 at P11 indicating Poisson-like firing (C26, C27). All findings are supported by statistical analyses shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "CA1 undergoes a transient period of enhanced network burstiness during the second postnatal week (P11), with peak burst time fraction, oscillatory dynamics at 0.1-0.5 Hz, and a progressive transition from discontinuous to continuous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C42 provide comprehensive characterization of network bursts across development. At P11, the network shows peak burst time fraction (C37), distinct oscillatory frequency (C35, C36), larger burst size than P18 (C39), higher neuronal participation rates (C40, C41), and emergence of continuous activity (C33, C34). These findings are robust to various burst detection parameters (C42) and supported by quantitative analyses in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Enhanced network burstiness at P11 reflects increased population coupling but decreased pairwise neuronal correlations, with weak spatial confinement of activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 demonstrate that population coupling peaks at P11 (C43) due to more coupled cells (C44), while pairwise STTCs decline from P4 to P11 (C46) despite similar fractions of correlated pairs (C45). The inference that pairwise correlations don't explain increased burstiness (C47) is logically supported. Weak distance-dependency of correlations (C48) is quantified with Spearman correlations shown in Figure 4H.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Recurring cellular activation patterns (motifs) are least stable at P11, with lowest global similarity, fewest motifs, and lowest repetition rates, becoming more stable only after eye opening at P18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 provide consistent evidence from motif analysis: global similarity is lowest at P11 (C49), fewer motifs are detected at P11 (C51), and motif repetition rates peak at P18 (C52). The inference about random recruitment at P11 (C50) and stabilization after environmental exploration (C53) are logically supported by the quantitative data in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Nitrous oxide reduces movement periods without affecting respiration or heart rate, and has minimal effects on network burst properties while moderately increasing pairwise and population coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 demonstrate through paired comparisons that N2O reduces movement (C54), preserves vital signs (C55), causes slight increases in CaT frequencies (C56), maintains burst dynamics (C57), but increases correlated neuron pairs (C58) and population coupling (C59). The paired experimental design (n=12 FOVs from 6 mice) and statistical analyses in Figure 6 support these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "A bi-stable STP-RNN model demonstrates state-dependent input processing, where the network can generate simulated network bursts from the silent state through intrinsic instability dynamics, requiring specific input ratios to pyramidal cells and interneurons for state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 describe the computational model's behavior with supporting simulations in Figures 7-8. The model shows differential input processing at silent vs. active states (C61-C63), mechanistic basis through amplification domains (C64), and input ratio dependencies for state transitions (C65, C67). The modeling approach is mathematically described and simulations are reproducible, though validation against additional experimental data would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The bi-stable network model exhibits an internal deadline for state transitions determined by transient stable fixed points, with simulated network burst size depending on inter-pulse interval and synaptic depression recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 describe the temporal dynamics of state transitions in the model. The deadline mechanism (C68-C70), its dependence on transient fixed points (C72), and the relationship between inter-pulse interval, burst size, and synaptic depression (C73-C75) are demonstrated through systematic simulations in Figure 8. The mechanistic explanations are consistent with the model's mathematical structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C85"
+    ],
+    "result": "The bi-stable STP-RNN model with inhibitory GABA is more plausible than mono-stable alternatives, operates in an inhibition-stabilized network regime at P11, and identifies the second postnatal week as a key transitional period in CA1 maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 synthesize the modeling results. The bi-stable model's superiority over mono-stable alternatives (C76) is argued based on computational flexibility and biological plausibility shown in Figure 9\u2014supplement 1. The ISN regime accessibility (C77-C79) and its relationship to burst size (C81) are demonstrated in Figure 9. However, the inference that inhibitory strength changes alone cannot explain enhanced burstiness (C82) and the synthesis about the transitional period (C85) rely on model assumptions that would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Network burstiness peaks after the emergence of synaptic inhibition in the second postnatal week, reflecting network bi-stability and input-discrimination learning prior to environmental exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8 represent the main conclusions of the study. The experimental finding of peak burstiness at P11 (C2) and increased population coupling (C3) are well-supported by data. The computational modeling identifies bi-stability as the underlying mechanism (C6, C7). However, the interpretation about input-discrimination learning (C8) is speculative and based on modeling inferences rather than direct experimental evidence of learning or discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CA1 network activity acquires adult-like characteristics by P18, with network bursts potentially serving developmental functions in synaptic competition, pruning, and efficient coding before environmental exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C94 synthesize developmental trajectories and propose functional roles. While C88-C89 are supported by the developmental data and citations, claims C90-C94 are largely speculative interpretations about the functional roles of network bursts in synaptogenesis, synaptic pruning, and efficient coding. These hypotheses are supported by citations to relevant literature but lack direct experimental evidence from this study demonstrating causal relationships between bursts and these developmental processes.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors review prior work on automated scientific discovery and robotic cell culture systems, noting that existing fixed-process automation apparatuses lack the flexibility and precision necessary for comprehensive parameter searching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide appropriate context from prior work with citations and identify a gap in existing robotic cell culture systems (C7). These background claims are well-supported by the cited literature and establish the motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Cell culture differentiation protocols are sensitive to physical manipulation parameters and require weeks to months of processing, making robotic systems with high precision and repeatability ideal for parameter optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 establish the rationale for using robotic systems in cell culture optimization. The claims about cell culture sensitivity (C8, C10, C11) are supported by citations, while claims about robotic advantages (C12-C15) are based on general knowledge about robotic capabilities. The logical connection is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors developed an autonomous robotic search system combining a Maholo LabDroid with an AI system using batch Bayesian optimization to search for optimal iPSC-RPE cell culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 describe the system architecture and approach. The description is clear and internally consistent, with appropriate references to the protocol source (C19, Mandai et al. 2017) and the optimization methodology (C23-C24). The system components are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The LabDroid successfully executed the iPSC-RPE differentiation protocol in baseline experiments with 48 wells across 8 plates, detecting pigmented cells in all wells, though the naive transplantation of the manual protocol resulted in insufficient induction efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe the baseline experimental setup and results with specific quantitative data (C31-C32: scores of 0.44\u00b10.03 and 0.33\u00b10.02). Claim C33 confirms successful execution. Claims C34-C35 acknowledge limitations and provide rationale for optimization, which is appropriate scientific reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C58",
+      "C60"
+    ],
+    "result": "Seven parameters were selected for optimization based on previous cell culture studies, expert opinions, and preliminary simulations to ensure feasibility with available resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C58, and C60 describe the parameter selection process. The approach is reasonable and the authors acknowledge the constraint of limiting to seven parameters (C58) while noting other parameters could be considered (C59). The selection methodology (C60) is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Three rounds of optimization progressively improved pigmentation scores from 0.86 (round 1) to 0.83 (round 2) to 0.91 (round 3), with parameters converging toward higher scores as visualized by PLS analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C42 report optimization results across three rounds. However, there is an inconsistency: the highest score decreased from round 1 (0.86) to round 2 (0.83) before increasing in round 3 (0.91), which contradicts the claim of progressive improvement. While C42 shows overall convergence via PLS, the round-by-round maximum scores do not show monotonic improvement. Additional analysis of the distribution of scores would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Validation experiments confirmed that all five top conditions from round 3 produced statistically significantly higher pigmentation scores (0.71-0.81) than pre-optimized conditions (0.43\u00b10.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 report validation results with appropriate statistical analysis (two-way ANOVA with SNK post-hoc tests, p<0.001). The validation used n=3 replicates per condition, which is adequate for this type of analysis. The results clearly demonstrate improvement over baseline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C45",
+      "C46"
+    ],
+    "result": "The robotic AI system explored 143 conditions from 200 million possible combinations in 111 days of experimentation (compressed to 185 calendar days), achieving 88% better iPSC-RPE production than pre-optimized culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26-C27 report 88% improvement, but the basis for this calculation is unclear. The validation data (C43-C44) shows the best condition achieved 0.81\u00b10.02 vs. 0.43\u00b10.02 pre-optimized, which is approximately 88% higher. However, this appears to compare mean values without accounting for variability. The claim about 200 million combinations (C26) needs clarification on how this was calculated from 7 parameters with varying ranges. The time compression claim (C45-C46) is supported but the relationship between 111 days and 185 days requires clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Robot-manufactured iPSC-RPE cells expressed characteristic RPE marker genes (BEST1, RPE65, CRALBP), secreted VEGF and PEDF, and showed ZO-1 expression in MITF-positive cells, fulfilling criteria for regenerative medicine research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 report biological validation results with appropriate molecular and cellular assays (RT-PCR, ELISA, immunohistochemistry). The results are compared to clinical study criteria (C50, citing Mandai et al. 2017), providing appropriate context. The validation is comprehensive and supports the functional quality of the optimized cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The Bayesian optimization module used Gaussian process regression with ARD-RBF kernel, assumed observation noise with variance 0.0039, employed Expected Improvement as the acquisition function, and implemented a novel Batch Contextual Local Penalization (BCLP) policy for batch query generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 describe the computational methodology with appropriate technical detail. The noise model (C76) is based on experimental data (Figure 2E). The acquisition function choice (C77) is standard and well-cited. The BCLP method (C78-C79) is described as a novel extension of local penalization for contextual parameters, which is appropriate for the experimental constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The LabDroid executed 365 jobs with 93.973% success rate and 75,039 commands with 99.963% success rate, demonstrating high reliability of the robotic system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide detailed performance metrics for the robotic system. The high success rates (93.973% for jobs, 99.963% for commands) demonstrate system reliability. The data are specific and verifiable, supporting the feasibility of long-term autonomous operation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The pigmentation score was chosen as the evaluation metric because it represents a necessary (though not sufficient) criterion for clinical transplantation, measuring the number of cells above a pigmentation threshold rather than individual cell pigmentation intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 discuss the rationale and limitations of the pigmentation score. The authors appropriately acknowledge that pigmentation alone is insufficient for full quality assessment (C64) and that single-cell omics would provide more accurate evaluation (C67). This transparent discussion of limitations strengthens the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C84"
+    ],
+    "result": "The autonomous robotic AI system drastically accelerates systematic and unbiased exploration of experimental search space for cell culture optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C84 represent the main conclusions. These are supported by the experimental results showing successful optimization (C37-C44), biological validation (C47-C50), and time compression (C45-C46). The conclusion is appropriately qualified and supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "The approach can potentially be applied to other cell culture protocols, but requires consideration of robot requirements (flexibility, reliability, accuracy), parameter selection constraints, and protocol-specific optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 discuss generalizability and limitations. The authors appropriately note that the approach may not be optimal for different protocols (C53) and discuss requirements for adaptation (C54-C56). This balanced discussion of applicability and constraints is scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Future improvements could include replacing the pigmentation score with a transcriptome-based quality index similar to the stemness index used for stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 propose future directions based on analogous work in stem cells (C68, citing Gulati et al. 2020). This is appropriate speculation grounded in existing methodology and represents a reasonable path for improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The hiPSC line 253G1 derived from human dermal fibroblasts was used, with periodic negative mycoplasma testing throughout the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 describe cell line provenance and quality control. The cell line is properly cited (Nakagawa et al. 2008) and obtained from a reputable source (RIKEN BRC). Mycoplasma testing (C71) is appropriate quality control for cell culture studies.",
+    "result_type": "MINOR"
+  }
+]

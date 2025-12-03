@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29"
+    ],
+    "result": "The authors developed a method combining holographic microscopy with deep learning (RU-Net and WAC-Net) to rapidly determine 3D position and dry mass of individual microplankton over extended time periods. The method was evaluated on nine plankton species and enables tracking of single cells throughout their lifetime, quantifying feeding events and cell divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C29 collectively describe the development and validation of the holographic microscopy + deep learning method. The experimental demonstrations on nine species (C19), the technical implementation details (C25-C27, C29), and the demonstrated capabilities for tracking individual cells (C20-C24) provide strong converging evidence. The method's capabilities are directly demonstrated through the feeding and division experiments presented in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C34",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The holographic method's dry mass estimates agree well with volume-to-carbon relationships (394\u00b1123 pg vs 338\u00b1126 pg for O. marina) and are validated by elemental analysis (453 pg). Unlike volume-to-carbon methods, the holographic approach can tag dry mass to individual cells and accounts for nutritional status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C34 provide quantitative validation showing agreement between methods, with elemental analysis confirming realistic values. Claims C32, C60-C62 establish advantages over existing methods. The convergence of three independent measurement approaches (holographic, volume-to-carbon, elemental analysis) with reasonable agreement supports the accuracy of the new method, though some discrepancies exist (30% difference noted in C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44",
+      "C45"
+    ],
+    "result": "The method quantifies individual feeding events by measuring dry mass transfer from prey to predator. In feeding experiments, the predator's post-feeding mass increase (234\u00b15 pg - 204\u00b15 pg = 30 pg) closely matched the prey dry mass (26\u00b11 pg), indicating complete consumption. Across 26 feeding events, predator mass increase correlated strongly with prey mass (\u03c1=0.794).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide direct measurements showing mass conservation during feeding, with C40-C41 making the key inference that mass balance indicates complete consumption. The correlation across 26 events (C44) strengthens this conclusion. The measurements are internally consistent and the mass balance provides strong evidence for the interpretation. However, the inference of 'complete consumption' (C41) assumes no mass loss during feeding, which is reasonable but not directly verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "Long-term monitoring of T. weissflogii revealed asymmetric biomass division where daughter cells receive unequal proportions of mother cell biomass (326\u00b11 pg and 110\u00b11 pg from 433\u00b12 pg parent). Division events occur when parent cells reach 310-436 pg (mean ~378 pg), representing the first tip-off value prediction for division based on dry mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 describe the experimental observations of asymmetric division with specific quantitative measurements. C49, C51 establish the novel finding of biomass asymmetry (beyond previously known size asymmetry, C50). C55-C56 claim novelty in predicting division thresholds. The measurements show mass conservation (sum of daughters \u2248 parent mass) and are internally consistent. The claim of novelty (C56) is an inference about the literature that cannot be fully verified from the manuscript alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The observed asymmetric biomass division in T. weissflogii is larger than expected from volume alone, suggesting unequal biomass division may be more common in protozoans than previously perceived. This extends beyond the known reductive cell cycle in diatoms and physiological asymmetry in bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C69 establish context from prior work, while C70-C71 make new inferences. C70 compares observed biomass differences to volume-based expectations, but lacks quantitative analysis of this comparison. C71 is explicitly speculative ('may be more common') and extrapolates from a single species to protozoans generally. The inference is reasonable but requires additional species and quantitative analysis to be well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The combination of holographic microscopy and deep learning provides a nondestructive, minimally invasive method that outperforms traditional methods in speed and individual resolution while rivaling their precision and accuracy. The method enables quantitative assessment of trophic interactions throughout the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C102-C107 summarize the method's advantages and performance. These are supported by the experimental demonstrations (feeding and division events) and validation experiments (comparison with volume-to-carbon and elemental analysis). However, the claims about 'outperforming' (C104) and 'many orders of magnitude faster' (C106) lack specific quantitative comparisons with traditional holographic processing times. The speed claim is partially supported by training times (C109-C110) but inference times are not reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Holographic microscopy overcomes limitations of traditional tracking techniques (2D traces, loss of cells at intersections or out of focus) by providing 3D positioning that facilitates trajectory linking and enables detailed observations of cell-cell interactions without requiring dilution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 establish limitations of traditional methods (supported by C72 citation). Claims C74-C77 describe advantages of holographic microscopy, representing established knowledge about the technique (C74) and reasonable inferences from demonstrated capabilities (C75-C76). The feeding event experiments (Figure 3, Video 1-2) demonstrate 3D tracking through cell interactions, supporting these claims. However, C76 describes potential applications not fully demonstrated in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The method has limitations (coherence length restricts observable volume to ~200\u03bcm with LED source) but can be extended by using laser sources for greater depth or modified for different organism sizes (bacteria to small crustaceans) and integrated with rotating stages or microfluidic channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78-C79 accurately describe a limitation and the current setup. Claims C80-C82 propose future modifications and applications but are speculative (C81-C82 explicitly use 'can be' and 'could be'). These are reasonable extrapolations based on the principles of the technique, but are not demonstrated in the current work. The claims represent potential rather than validated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The method is particularly suitable for studying micro-zooplankton grazing and mixotrophy. It can quantify uptake of particulate and dissolved matter, assess primary production, and explore mixotrophy levels under different conditions by monitoring dry mass changes in factorial combinations of light and organic substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C91 establish the importance of mixotrophy and grazing studies (supported by citations). C92 claims capability for both particulate and dissolved matter, but only particulate uptake is demonstrated (Figure 3). Claims C93-C96 describe potential applications for studying mixotrophy and primary production, but these are largely speculative (C94 uses 'will allow', C95-C96 describe how the method 'can be applied'). Only C95 references actual data (Figure 4), but that experiment doesn't explicitly test the proposed application. These represent promising future directions rather than validated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Individual-level observations have been key to ecological theory development in copepods, revealing selective feeding, sensory capabilities, and foraging strategies. Similar individual-level observations of protozoans have the potential to catalyze insights into microbial food-web interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 establish the value of individual-level observations in copepod ecology (supported by citations). C101 draws an analogy to suggest similar value for protozoan studies. This is a reasonable inference supported by the demonstrated capabilities of the method, though C101 is explicitly speculative ('have the potential'). The analogy is well-founded given the successful demonstrations of individual tracking and feeding quantification in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Current methods for studying marine microbial food webs rely on indirect measurements and ensemble averages (satellite imaging, dilution experiments, volume-to-carbon relationships) that have significant limitations including assumptions that are often violated, inability to detect individual cell variability, and >50% deviation in volume-to-carbon relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 establish the context and limitations of current methods, all supported by appropriate citations (C2-C5, C7-C11) or representing established knowledge (C1, C6, C12). These claims accurately characterize the state of the field and motivate the need for the new method. The citations appear appropriate and the characterization of limitations is consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Holographic microscopy can extract 3D position and mass from interference patterns and has been applied to microbial studies for particle size distributions, but its full potential for quantitative investigation of individual plankton growth and feeding over prolonged times has not been exploited due to computationally expensive data processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 describe established capabilities of holographic microscopy (supported by citations C14-C15). Claims C16-C17 assess gaps in the field and computational limitations. C16 is an inference about the literature that appears reasonable given the novelty of the current work. C17 represents established knowledge about computational costs of holographic processing. These claims effectively motivate the innovation of combining holography with deep learning.",
+    "result_type": "MINOR"
+  }
+]

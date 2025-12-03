@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Approximately 860 well-isolated units were recorded across 13 urethane-anesthetized rats (averaging 66\u00b18 units per trial, ~2 units per electrode). Spontaneously active units were broadly distributed throughout the dorsoventral extent of the spinal gray matter, with significant regional differences: dDH contained significantly more units than sDH or VH (F=6.368, p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide converging evidence from spike sorting validation, anatomical distribution analysis, and statistical testing. The unit counts are consistent with wave_clus validation studies, and the regional distribution shows appropriate statistical analysis with post-hoc testing. The finding of widespread spontaneous activity is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In urethane-anesthetized rats, 4.2\u00b10.8% of unit pairs exhibited significantly correlated temporal discharge patterns. Functional connectivity was observed at all dorsoventral depths, within each anatomical region, and between all regions. Within-region connections (68.9%) significantly exceeded between-region connections (31.1%, p<0.0001), with a main effect of anatomical region (F=9.277, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 are supported by appropriate correlation analyses with Benjamini-Hochberg correction for multiple comparisons. The statistical tests are properly specified with F-statistics and p-values. The finding of connectivity spanning sensory and motor regions is a key novel result, though the authors appropriately acknowledge interpretive challenges regarding the lower-than-predicted between-region connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The deep dorsal horn (dDH) contained the highest proportion of most connected nodes (35.4\u00b14.6%) compared to sDH (14.1\u00b14.3%), IG (27.4\u00b14.4%), or VH (23.0\u00b13.9%), driving a significant main effect of anatomical region (F=4.333, p=0.009).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by appropriate statistical analysis. However, the authors acknowledge that dDH comprised a larger dorsoventral extent with more electrodes, which contributes to this finding. The result is valid but requires contextual interpretation regarding electrode distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Putative excitatory and inhibitory connections were identified with distinct spatial and temporal profiles. The dDH showed balanced excitation/inhibition, while VH showed highest inhibitory proportion (37.8\u00b19.0%). Mean excitatory latency (6.4\u00b10.6 ms) was significantly longer than inhibitory latency (2.7\u00b10.4 ms, p=0.0003), with both including latencies consistent with mono-, di-, and polysynaptic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C58 present interesting findings, but the inference of connection polarity from extracellular recordings is challenging and acknowledged by the authors. The normalized cross-correlation approach (Pastore et al., 2018) is cited but the limitations are significant\u2014particularly for detecting inhibition, which requires stable high firing rates. The very short latencies (0-1 ms) are appropriately interpreted as likely reflecting shared presynaptic input rather than direct connections. The spatial distribution differences may partially reflect methodological limitations rather than purely physiological features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In isoflurane-anesthetized rats (N=9), 484 well-isolated units were recorded (~51\u00b12 units per trial). Despite isoflurane's preferential depression of ventral horn cells, spontaneous activity persisted throughout all regions including IG and VH. The spatial distribution of connectivity was remarkably consistent with urethane, showing no systematic differences between anesthetics (F=0.369, p=0.949 for interaction; F=0.631, p=0.436 for main effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C77 provide strong evidence that the connectivity patterns are not artifacts of a specific anesthetic agent. The comparison between urethane (which preferentially depresses dorsal structures) and isoflurane (which preferentially depresses ventral structures) is a well-designed control. Statistical analyses appropriately test for interactions and main effects. The consistency across anesthetics strengthens the conclusion of intrinsic spinal network activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The spatiotemporal profiles of excitatory and inhibitory connections were consistent across urethane and isoflurane cohorts. No main effect of anesthetic or interaction was found for excitatory (drug: F=0.030, p=0.865) or inhibitory (drug: F=0.611, p=0.444) connection proportions. Connection latencies also did not differ between cohorts (excitatory: p=0.8188; inhibitory: p=0.5389), though inhibitory latencies were shorter than excitatory in both cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 demonstrate robustness of the temporal connectivity patterns across anesthetic conditions. The statistical tests are appropriate two-way repeated measures ANOVAs. However, the same caveats about inferring connection polarity from extracellular recordings apply here as in the urethane-only analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C113",
+      "C114"
+    ],
+    "result": "Comparison with synthetic datasets (spike times jittered by \u00b15 ms or \u00b150 ms, repeated 1000\u00d7) revealed that observed functional connectivity significantly exceeded random expectations. In both cohorts, synthetic datasets showed ~2.6-2.7% connectivity versus 4.2\u00b10.8% (urethane) and 3.9\u00b11.3% (isoflurane) observed (p=0.0053 and p=0.0033, respectively). This represents ~105% more connected pairs than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87, C113-C114 employ an appropriate and rigorous control analysis. The jittering approach (Amarasingham et al., 2012; Fujisawa et al., 2008) is well-established for testing whether observed correlations exceed chance levels while preserving firing rate statistics. The finding that observed connectivity always exceeded synthetic controls in every animal strengthens the conclusion of non-random network activity. The statistical comparisons are properly conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C116"
+    ],
+    "result": "The spatial topology of connectivity differed significantly from random predictions. Observed data showed significantly more within-region connections (68.9% vs. 26.3%, p<0.0001) and fewer between-region connections (31.1% vs. 73.7%, p<0.0001) than synthetic controls. Significant region-by-cohort interactions were found in both urethane (F=16.168, p<0.0001) and isoflurane (F=11.561, p<0.0001) datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95, C116 demonstrate that connectivity topology is non-random. The comparison to theoretical predictions based on electrode distribution is methodologically sound. The authors appropriately acknowledge interpretive challenges: the true proportion of spontaneously active neurons is unknown, and technical factors (e.g., difficulty recording from sDH) may bias results. Nevertheless, the statistical evidence for non-random topology is strong, even if the specific proportions require careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Peripheral nerve recordings (N=2 rats) showed no spontaneous action potential discharge in the sciatic nerve during periods without sensory stimulation. ENG amplitude during evoked sensory transmission was 16.7\u00d7 greater (peak) and 3.09\u00d7 greater (average) than spontaneous baseline. Lidocaine nerve block did not alter spontaneous baseline ENG, confirming minimal latent afferent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 provide critical control data addressing whether observed spinal activity could be driven by latent afferent input. The nerve recordings clearly show quiescent baseline activity and dramatic increases during sensory stimulation. The lidocaine block experiment is well-designed, confirming that spontaneous baseline reflects true absence of afferent activity rather than low-level ongoing transmission. However, the sample size is small (N=2), which limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C115",
+      "C122"
+    ],
+    "result": "The study demonstrates that spontaneous functional connectivity links sensory- and motor-dominant regions of the spinal cord during unconsciousness, with >20% of connections spanning these regions. This connectivity could not be explained by latent afferent activity or random spiking, supporting the view that the spinal cord possesses intrinsic networks active during unconsciousness\u2014a fundamental property of complex neural systems not confined to supraspinal networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C103, C105-C107, C115, C122 represent the primary conclusions of the manuscript. These are well-supported by the convergence of evidence: (1) widespread spontaneous activity across regions, (2) significant connectivity between sensory and motor areas, (3) connectivity exceeding random expectations, (4) consistency across two anesthetic agents, (5) absence of significant peripheral afferent input, and (6) non-random spatial topology. The authors appropriately acknowledge limitations and alternative interpretations, but the overall conclusion is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C56"
+    ],
+    "result": "Connection latencies compatible with mono- and disynaptic interactions were documented, with both excitatory and inhibitory connections showing latencies consistent with direct synaptic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C56 are supported by the latency distribution data shown in Figures 5e and 7f. The presence of short-latency connections (including some <1 ms, likely reflecting shared input) provides evidence for potential direct synaptic interactions. However, functional connectivity analysis cannot definitively establish monosynaptic connections\u2014this would require techniques like cross-correlation with jitter correction or optogenetic approaches. The claim is appropriately hedged as 'compatible with' rather than 'demonstrating.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C23",
+      "C26",
+      "C27",
+      "C120",
+      "C121"
+    ],
+    "result": "The observed activity is consistent with the hypothesis that salient, experience-dependent patterns of neural transmission are reactivated during unconsciousness, potentially shaping circuit-level connectivity and behavior through a spinal replay mechanism analogous to hippocampal replay during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9, C23, C26-C27, C120-C121 present an interesting hypothesis but are explicitly speculative. The authors appropriately frame this as 'consistent with' rather than 'demonstrating.' While the presence of functional connectivity during unconsciousness is necessary for such a mechanism, the current study does not test whether patterns reflect prior experience, whether they are reactivated, or whether they influence plasticity. This would require experiments comparing connectivity before/after specific behavioral training or injury paradigms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Experiments employed 24 adult male Sprague-Dawley rats divided into two cohorts: 15 received urethane anesthesia (1.2 g/kg i.p.) and 9 received isoflurane (2-4% in O\u2082). Recordings used dual-shank microelectrode arrays with 32 contacts (16 per shank, 100 \u03bcm spacing, 1-4 k\u03a9 impedance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe the experimental design and are directly stated in the methods. The electrode specifications are appropriate for single-unit recording, and the use of two anesthetic agents is a strength of the design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Urethane profoundly depresses dorsal root ganglia activity but has less effect on deep gray matter (IG, VH), while isoflurane more potently depresses ventral horn activity with a dorsal-to-ventral gradient. Motor threshold measurements confirmed greater VH depression by isoflurane (20.4 \u03bcA) than urethane (14.0 \u03bcA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by citations to prior work (C59-C64) and by direct experimental measurements (C65). This provides important context for interpreting the persistence of activity across both anesthetic conditions and strengthens the argument against anesthetic-specific artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "In the experimental preparation, proprioceptive afferent input (Ia, Ib, Group II fibers) would be minimal because muscle length was held constant, muscles were not developing tension, and joints were in neutral positions. Physical deafferentation was avoided because it could paradoxically increase discharge in residual dorsal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 provide important methodological context. The reasoning about minimal proprioceptive input is sound given the experimental conditions. The decision to avoid physical deafferentation is justified by citation (C111), though this means some minimal afferent input cannot be completely ruled out. The peripheral nerve recordings (C96-C102) provide the strongest evidence that afferent input was indeed minimal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The superficial dorsal horn (sDH) is challenging to study with implanted electrodes due to proximity to insertion site, small/fragile cells, and preponderance of nociceptive circuits not engaged in this protocol. Nevertheless, approximately one in five observed connections spanned sensory-dominant and motor-dominant regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 acknowledge important technical limitations while reiterating a key finding. The authors appropriately recognize that sDH undersampling may contribute to the lower-than-predicted between-region connectivity, but emphasize that substantial sensory-motor connectivity was still observed. This transparent discussion of limitations strengthens the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C104"
+    ],
+    "result": "The manuscript establishes context by reviewing prior work on brain resting-state networks, preliminary spinal fMRI studies showing bilateral dorsal/ventral horn connectivity, and gaps in knowledge regarding single-unit spinal connectivity, its relationship to BOLD signals, and potential functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C25, C104 provide appropriate background and context from the literature. The citations appear accurate and the knowledge gaps are clearly identified. This establishes the rationale for the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C32",
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors developed a state space model that characterizes hippocampal replay during SWRs as a mixture of three movement dynamics (stationary, continuous, and fragmented) using 2 ms time bins and acausal decoding. The model is robust to parameter choices, interpretable with well-defined parameters, flexible (works with sorted/clusterless spikes and 1D/2D positions), and provides moment-by-moment estimates of position and dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C32-C33, C39-C41, C81-C84, C134-C138, C141-C144 collectively describe the model development and validation. The model is validated on simulated data (C32), shown to be insensitive to parameter choices over a reasonable range (C33), and successfully applied to real data. The mathematical framework is clearly specified in the Materials and methods, and the model's properties are demonstrated through multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C22",
+      "C28",
+      "C29",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The large majority of SWRs (86-89% depending on threshold) contain spatially coherent content, with only 14% containing spatially incoherent structure. This finding is validated through shuffle controls showing significantly different results when spatial information is disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C20, C22, C28-C29, C47-C49 provide converging evidence from multiple analyses. The classification is supported by quantitative metrics (percentage classified, HPD region size), statistical tests (p=2.2e-16 for HPD comparison), and two types of shuffle controls that both show significantly different results from real data (p=0.02). The robustness to threshold changes (0.80 vs 0.95) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C30",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Many replay events progress at real-world speeds rather than accelerated speeds, with stationary-continuous mixtures being the most common category (42% of classified SWRs). These slower-moving representations constitute the majority of SWRs, challenging the notion that replay necessarily proceeds at ~20x normal speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23-C25, C30, C50-C53, C85, C87-C89 provide detailed characterization of replay speeds. The finding is supported by quantitative data on prevalence (42% stationary-continuous mixtures vs 19% continuous), duration measurements (median 73 ms vs 94 ms), speed estimates (median 17 cm/s for runs), and distance from animal (mean 52 cm). The consistency across multiple metrics and the large sample size (21,433 classified SWRs) support this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C54",
+      "C55",
+      "C90",
+      "C91",
+      "C96"
+    ],
+    "result": "Stationary events representing single locations are common in adult rats (23% of classified SWRs), with ~7% representing non-local positions (>30 cm from animal), most commonly at reward wells or choice points. These events persist for substantial durations (median 54 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C54-C55, C90-C91, C96 characterize stationary replay events. The prevalence is well-documented (23% of classified SWRs, 7% non-local), with specific spatial preferences identified (reward wells, choice points). This directly contradicts prior claims (C14, C95) that such events only occur in young animals, and the finding is supported by data from 10 adult rats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C132"
+    ],
+    "result": "Clusterless decoding provides longer spatial extent and narrower posterior probability estimates compared to sorted spike decoding by utilizing information from neurons farther from tetrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C132 describe advantages of clusterless decoding. The comparison is demonstrated in Figure 2, showing that clusterless decoding captures more spatial information. The explanation (C35) that this reflects access to a larger data pool is reasonable given the methodological difference. However, the magnitude of improvement is not quantified statistically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "The decoder accurately tracks animal position during movement with a median error of 7 cm (5-9 cm 95% CI) using 2 ms time bins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 provides validation of the encoding model. The small error (7 cm) with tight confidence intervals, obtained through five-fold cross-validation, demonstrates the model can accurately decode position. This is comparable to other studies and validates the approach for subsequent replay analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Multiple control analyses demonstrate that slower dynamics (stationary and stationary-continuous mixtures) are not artifacts of low spiking, interneuron activity, or animal movement. These events show comparable multiunit rates, involve multiple tetrodes, have durations longer than typical bursts, and persist when restricting to low movement speeds or excluding putative interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C67 present a comprehensive set of control analyses addressing potential confounds. Each control (multiunit rates, tetrode participation, spike width filtering, sorted spike analysis, movement speed restriction, ISI analysis) is independently supportive. The convergence of multiple independent controls strongly supports that the slower dynamics represent genuine replay phenomena rather than artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Standard replay detection methods (Radon transform, linear regression) identify fewer events as significant (~12% overall) and estimate faster speeds compared to the state space decoder and MAP methods. Methods making more assumptions about replay structure yield different conclusions about event prevalence and dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80 systematically compare different decoding approaches. The quantitative comparisons (12% significant overall, 31% for continuous events, 8% for stationary) are clearly stated. The explanation that linear methods impose smoothing and constant-speed assumptions is well-supported by the data in Figure 6. This demonstrates that methodological choices substantially impact conclusions about replay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "The study analyzed data from 10 male Long Evans rats (4-9 months old) performing a W-track spatial alternation task, with recordings from CA1, CA2, and CA3. SWRs were detected using a permissive threshold (z-score > 2 SD for \u226515 ms, speed < 4 cm/s) and classified into five categories based on probability thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C42-C44, C46 describe the experimental design and methods. These are straightforward methodological details that are clearly stated and internally consistent. The permissive threshold approach is justified and the classification scheme is well-defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "When using only CA1 tetrodes for decoding, similar proportions of dynamics were obtained as when using all tetrodes (CA1, CA2, CA3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 addresses whether mixing hippocampal subfields affects results. The control analysis (Figure 5\u2014figure supplement 2E) shows similar results with CA1 only, supporting that the findings are not artifacts of combining subfields. This is a useful control given known differences between CA1 and CA3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The findings challenge the long-held notion that hippocampal replay necessarily proceeds at ~20x animal speed. Previous studies found 5-45% of SWRs significant using single linear fits, but these methods are sensitive to event boundaries and cannot capture variable speeds within events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C103-C108 contextualize the current findings relative to prior work. The comparison is fair and well-supported by the data. The explanation for differences (linear fits vs. variable speed model, sensitivity to event boundaries) is logical and demonstrated in the results. However, C94 includes speculation about functional implications that goes beyond the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims about hippocampal replay establish that: SWRs contain reactivation of place cells; previous work identified replay at ~20x speed in a minority (5-45%) of SWRs; some studies reported stationary representations, with conflicting reports about whether these occur only in young animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 summarize established knowledge and prior findings with appropriate citations. These provide context for the current work. The citations appear accurate based on the references provided, though detailed verification of each cited claim would require examining the original papers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Contrary to Farooq and Dragoi (2019), stationary representations do not disappear in adult rats but are very common, occurring in 23% of classified SWRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 directly address a conflict with prior work. The current data (23% stationary events in adult rats) clearly contradicts the prior claim of 'chance' levels in adults. The authors suggest the difference stems from restrictive decoding models and definitions of 'chance' levels. This is a reasonable explanation, though direct comparison with the Farooq and Dragoi methods would strengthen the argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Initial replay studies focused on distinguishing structured from random spiking, but significance criteria used do not necessarily indicate spatial structure or memory-relevant events. The current method aims to identify structure and capture complex dynamics to determine what information replay provides for memory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 provide conceptual framing distinguishing the current approach from prior work. The critique of prior methods (C99) is reasonable\u2014showing non-random structure doesn't prove spatial coherence or functional relevance. The current findings (C101-C102) support this distinction by showing most events contain spatial structure but only 19% are continuous throughout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The model reconciles conflicting prior reports by showing that replay speeds are log-normally distributed on average, with a small subset containing definitive jumps. The ability to identify different dynamics within the same SWR allows detection of both Brownian-like diffusion and systematic jumps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 explain how the current findings reconcile apparently conflicting prior results from Stella et al. (2019) and Pfeiffer and Foster (2015). The explanation is logical and supported by the data showing both continuous and fragmented dynamics. However, direct quantitative comparison with the specific metrics used in those prior studies would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C124",
+      "C125"
+    ],
+    "result": "Hypotheses about functional implications: slow dynamics may engage specific downstream patterns and allow updating of specific locations without full trajectories; events with multiple dynamics may bind experiences; different dynamics may be supported by different subcircuits (CA3-CA1 vs MEC-CA1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C118, C120-C121, C124-C125 are explicitly speculative hypotheses about functional implications and circuit mechanisms. While these are reasonable hypotheses motivated by prior work (citations to Jadhav et al., Yu et al., Yamamoto and Tonegawa, Oliva et al.), they are not tested in the current study. These represent interesting directions for future work but are not supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C119",
+      "C122",
+      "C123"
+    ],
+    "result": "Prior findings from other studies: Louie and Wilson (2001) found REM sleep activity correlated with running on seconds timescale; Wang et al. (2020) showed individual theta cycles have different dynamics; Yamamoto and Tonegawa (2017) found blocking MEC\u2192CA1 shortened replay; Oliva et al. (2018) showed MEC layer 2/3 activity before longer SWRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C119, C122-C123 cite specific findings from other studies with appropriate references. These are used to contextualize the current findings and generate hypotheses. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The moment-by-moment characterization enables identifying transitions between dynamics as periods of interest. The permissive threshold approach was critical for identifying immobility-associated events in prior work. SWR sizes follow a unimodal, long-tailed distribution rather than distinct classes, so high thresholds can exclude real events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 discuss methodological implications. C126 is supported by the model design. C127 is a reasonable suggestion for future work. C128-C131 are supported by citation to Yu et al. (2017) and provide justification for the permissive threshold approach. The argument about event size distributions is well-founded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C139",
+      "C140",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Future applications and extensions: modern spike sorting may reduce differences between sorted and clusterless approaches; the method could be applied to movement periods, pre-experience sequences, other environments, task conditions, and other covariates; the approach has potential for broader understanding of neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133, C139-C140, C150-C154 describe potential future applications and extensions. These are reasonable suggestions based on the model's flexibility, but they are speculative and not demonstrated in the current work. C133 is a reasonable speculation about future technology. The other claims represent interesting possibilities but require future work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Code availability and reproducibility: replay decoding code has typically not been accessible, limiting reproducibility. The authors made their code publicly available as an easily installable Python package with tutorials to facilitate reuse and enable richer analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 address code availability and reproducibility. C145-C146 make reasonable critiques about the field. C147-C148 are verifiable statements about code release with specific URLs provided. C149 is a reasonable conclusion about the benefits of state-space models. This represents good scientific practice for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

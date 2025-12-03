@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C32"
+    ],
+    "result": "DHPR(N617D) remains Ca2+ impermeant even under conditions known to augment L-type Ca2+ currents, including Bay K 8644 administration, strong depolarizations, and prolonged depolarizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C20-C26, and C32 collectively demonstrate through multiple experimental protocols (Bay K 8644, strong depolarizations to +90 mV, and 2 s depolarizations) that DHPR(N617D) does not conduct Ca2+ under any current-enhancing conditions tested, while wt DHPR shows robust Ca2+ currents. The data are internally consistent with appropriate controls and statistical significance (p<0.001 to p<0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "DHPR(N617D) does not conduct Na+ currents under near-physiological conditions (150 mM external Na+, 1-10 mM Ca2+), as confirmed by nifedipine insensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C43-C45 demonstrate through patch-clamp recordings and pharmacological blockade with nifedipine that DHPR(N617D) does not mediate Na+ currents. The nifedipine insensitivity (C44, p>0.05) provides strong evidence that observed currents are not through DHPR(N617D), supporting the conclusion in C45.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DHPR(N617D) exhibits 4.2-fold higher Ca2+ pore-binding affinity (IC50 = 372.8 nM) compared to wt DHPR (IC50 = 1.57 \u00b5M), as demonstrated by Ca2+ block of Li+ current experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 present a comprehensive dose-response analysis with appropriate statistical testing (p<0.001 to p<0.01) and confidence intervals. The Li+ current experiments (C47-C49) show progressive Ca2+-dependent block, nifedipine sensitivity confirms DHPR mediation (C50-C51), and the IC50 determination (C52-C53) is well-supported by the data in Table 1 and Figure 3d. The Hill coefficient difference (C55) adds mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "Molecular dynamics and metadynamics simulations demonstrate that wt DHPR allows Ca2+-Ca2+ repulsion and ion passage through the EEEE locus, while DHPR(N617D) exhibits ~8-fold higher energy barrier (122 \u00b1 20 vs 15 \u00b1 4 kcal/mol) with Ca2+ ions stabilized at both DCS and EEEE loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 and C86-C91 present computational evidence that complements the experimental findings. The simulations show mechanistic differences between wt and mutant channels with statistically significant energy barriers (p<0.001, C90-C91). The simulations are appropriately described with methods (equilibration, metadynamics parameters) and replicate numbers (n=5), though validation against experimental structures or independent computational methods would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C76",
+      "C77",
+      "C78",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A molecular model proposes cooperativity between the DCS locus (outer pore) and EEEE locus (central pore), where the N617D mutation increases Ca2+ binding affinity at the DCS locus, preventing Ca2+ mobilization and the Ca2+-Ca2+ repulsion mechanism required for conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C76-C85 present a mechanistic model integrating experimental and computational data. The model is supported by the IC50 shift (C14, C53-C54), simulation data (C79-C91), and prior literature on Ca2+ channel selectivity. While the model involves inference and speculation (C77, C84), it is well-grounded in the experimental observations and provides a coherent explanation for the phenotypic differences between DHPR(N617D) and DHPR(E1014K).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C46",
+      "C57",
+      "C58"
+    ],
+    "result": "DHPR(E1014K) conducts Cs+, Na+, and K+ currents and has lost ion selectivity, contrasting with DHPR(N617D) which maintains selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C46, C57-C58 are supported by citations to multiple previous studies (Bannister and Beam, 2011; Lee et al., 2015; Beqollari et al., 2018; Dirksen and Beam, 1999; Schredelseker et al., 2010; Dayal et al., 2017) and data presented in Figures 1-2. This establishes the key functional difference between the two mutants that explains their divergent phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "K+ efflux through DHPR(E1014K) may exacerbate muscle fatigability and induce aberrant membrane excitability, potentially explaining the muscle aberrations in EK but not ncDHPR mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 are speculative (evidence_type includes SPECULATION and INFERENCE) and rely on inference from K+ conductance properties and phenotypic differences. While the hypothesis is plausible and grounded in established muscle physiology (C59), direct experimental evidence linking K+ efflux to the observed phenotypes is lacking. The authors appropriately use cautious language ('may', 'might', 'expected').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript describes established models of Ca2+ channel selectivity and permeation, including the EEEE locus high-affinity binding, two-site mechanism, and the DCS locus role in defining Ca2+ conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 accurately summarize well-established knowledge from the literature (Yang et al., 1993; Ellinor et al., 1995; Sather and McCleskey, 2003; Cens et al., 2007; Williamson and Sather, 1999). These are appropriately cited background claims that provide the foundation for the authors' model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The EIIIK mutation (E1014K) drastically reduces Ca2+ pore binding affinity to mM range, abolishing Ca2+ selectivity and conductance through loss of the Ca2+-Ca2+ repulsion mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 integrate prior literature (Yang et al., 1993; Bannister and Beam, 2011; Lee et al., 2015; Beqollari et al., 2018; Dirksen and Beam, 1999) with inference to explain the DHPR(E1014K) phenotype. The mechanism is well-supported by the cited studies showing low-affinity Ca2+ binding and loss of selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The lower Hill coefficient in DHPR(N617D) compared to wt DHPR reflects less dynamic Ca2+ interactions in the mutant pore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 provide mechanistic interpretation of the Hill coefficient difference (C55). The interpretation is grounded in established understanding of Hill coefficients as interaction/cooperativity measures (C93, Prinz, 2010) and is consistent with the proposed model of static vs. dynamic Ca2+ binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The N617D mutation evolved in teleost fishes following the teleost-specific third round of gene duplication, as part of evolutionary modifications for faster muscle contractions in the aquatic environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by citations to previous work (Schredelseker et al., 2010; Dayal et al., 2017; Schr\u00f6tter et al., 2017; Meyer and Van de Peer, 2005; Glasauer and Neuhauss, 2014; Dayal et al., 2019). These claims provide evolutionary context for the N617D mutation and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The zebrafish slow muscle DHPR(E292Q) mutation in the EEEE locus abolishes Ca2+ conductance through a mechanism similar to DHPR(E1014K), with appropriate Ca2+ pore-affinity existing in a narrow range (0.37-3.2 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 integrate prior work (Schredelseker et al., 2010; Yang et al., 1993; Bannister and Beam, 2011; Grabner et al., 1998) with current data to define the permissive range for Ca2+ conductance. The inference about the E292Q mechanism (C105-C107) is reasonable based on the established model, though it is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "In phylogenetically advanced teleost species, the D296K mutation in the DCS locus blocks Ca2+ conductance by preventing Ca2+ attraction to the DCS locus, supporting the importance of the DCS locus for Ca2+ currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 are supported by citations to previous work (Schredelseker et al., 2010) showing that the D296K mutation abolishes Ca2+ currents. The mechanistic interpretation (C112-C114) is based on inference from the proposed model but is consistent with the experimental observation. This provides additional support for the DCS-EEEE cooperativity model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Skeletal muscle EC coupling is Ca2+-influx-independent and operates through DICR, contrasting with cardiac CICR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C8 accurately describe well-established concepts in muscle physiology, supported by foundational citations (Armstrong et al., 1972; Schneider and Chandler, 1973; Rios and Brum, 1987; Lamb, 2000; Endo, 1977; Palade and Gy\u00f6rke, 1993; Bers, 2002). These provide essential background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Two mouse models with Ca2+ non-conducting DHPRs, DHPR(N617D) and DHPR(E1014K), show contradictory phenotypes despite both blocking Ca2+ influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C9-C12 accurately describe the motivation for the study, citing the relevant prior work (Lee et al., 2015; Dayal et al., 2017; Georgiou et al., 2015; Schredelseker et al., 2010; Bannister and Beam, 2011; Beqollari et al., 2018). This establishes the scientific problem addressed by the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "L-type Ca2+ channels undergo mode 2 gating in response to DHP agonists or strong/prolonged depolarizations, but neither DHPR pore mutant (N617D or E1014K) can be forced into Ca2+ conducting mode by these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 and C33-C35 describe established L-type Ca2+ channel behavior (Hess et al., 1984; Wilkens et al., 2001; Pietrobon and Hess, 1990; Bannister and Beam, 2013) and integrate this with current and prior data (Eltit et al., 2012; Lee et al., 2015; Dayal et al., 2017; Bannister and Beam, 2011) to conclude that the pore mutants cannot be forced into conducting mode.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Rapidly activating/inactivating inward currents in ncDHPR myotubes are attributable to endogenous NaV channels, while slow outward currents are residual K+ currents through KV channels, not DHPR(N617D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide appropriate interpretation of contaminating currents based on kinetics, TEA+ sensitivity, and linear I-V relationship (R\u00b2=0.97-0.99), with citations to relevant literature (Numann et al., 1994; Bannister and Beam, 2011; Lee et al., 2015; Beqollari et al., 2018; DiFranco and Vergara, 2011). This is important for ruling out alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Atypical high-affinity Ca2+ binding to the mutant DHPR(N617D) pore is incompatible with Ca2+ conductance, supporting a pore occlusion mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is a reasonable inference from the experimental data showing high-affinity Ca2+ binding (C14, C53-C54) and lack of Ca2+ conductance (C13, C32). This conclusion integrates the experimental observations into a coherent mechanistic explanation.",
+    "result_type": "MAJOR"
+  }
+]
